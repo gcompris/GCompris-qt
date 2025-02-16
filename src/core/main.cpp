@@ -19,7 +19,10 @@
 #include <QSettings>
 #include <QOpenGLContext>
 
+#include "config.h"
+#ifdef WITH_RCC
 #include "GComprisPlugin.h"
+#endif
 #include "ApplicationInfo.h"
 #include "ActivityInfoTree.h"
 #include "DownloadManager.h"
@@ -129,8 +132,10 @@ int main(int argc, char *argv[])
 
     parser.process(app);
 
+#ifdef WITH_RCC
     GComprisPlugin plugin;
     plugin.registerTypes("core");
+#endif
     ActivityInfoTree::registerResources();
 
     // Tell media players to stop playing, it's GCompris time
@@ -290,13 +295,13 @@ int main(int argc, char *argv[])
     ActivityInfoTree::getInstance()->initialize(&engine);
 
     if (parser.isSet(exportActivitiesAsSQL)) {
-        ActivityInfoTree *menuTree(qobject_cast<ActivityInfoTree *>(ActivityInfoTree::menuTreeProvider(&engine, nullptr)));
+        ActivityInfoTree *menuTree(qobject_cast<ActivityInfoTree *>(ActivityInfoTree::create(&engine, nullptr)));
         menuTree->exportAsSQL();
         return 0;
     }
 
     if (parser.isSet(clListActivities)) {
-        ActivityInfoTree *menuTree(qobject_cast<ActivityInfoTree *>(ActivityInfoTree::menuTreeProvider(&engine, nullptr)));
+        ActivityInfoTree *menuTree(qobject_cast<ActivityInfoTree *>(ActivityInfoTree::create(&engine, nullptr)));
         menuTree->listActivities();
         return 0;
     }

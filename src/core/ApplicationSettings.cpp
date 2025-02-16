@@ -505,8 +505,8 @@ bool ApplicationSettings::useExternalWordset()
     return DownloadManager::getInstance()->isDataRegistered("words-webp");
 }
 
-QObject *ApplicationSettings::applicationSettingsProvider(QQmlEngine *engine,
-                                                          QJSEngine *scriptEngine)
+ApplicationSettings *ApplicationSettings::create(QQmlEngine *engine,
+                                                 QJSEngine *scriptEngine)
 {
     Q_UNUSED(engine)
     Q_UNUSED(scriptEngine)

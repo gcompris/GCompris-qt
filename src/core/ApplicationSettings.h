@@ -13,6 +13,7 @@
 
 #include <QObject>
 #include <QQmlEngine>
+#include <QtQml/qqmlregistration.h>
 
 #include <QSettings>
 #include <QStandardPaths>
@@ -54,7 +55,10 @@
 class ApplicationSettings : public QObject
 {
     Q_OBJECT
-
+#ifndef WITH_RCC
+    QML_ELEMENT
+    QML_SINGLETON
+#endif
     /* General group */
 
     /**
@@ -283,8 +287,8 @@ public:
         }
         return m_instance;
     }
-    static QObject *applicationSettingsProvider(QQmlEngine *engine,
-                                                QJSEngine *scriptEngine);
+    static ApplicationSettings *create(QQmlEngine *engine,
+                                       QJSEngine *scriptEngine);
 
     bool isAudioVoicesEnabled() const { return m_isAudioVoicesEnabled; }
     void setIsAudioVoicesEnabled(const bool newMode)

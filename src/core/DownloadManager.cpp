@@ -72,8 +72,8 @@ DownloadManager *DownloadManager::getInstance()
     return _instance;
 }
 
-QObject *DownloadManager::downloadManagerProvider(QQmlEngine *engine,
-                                                  QJSEngine *scriptEngine)
+DownloadManager *DownloadManager::create(QQmlEngine *engine,
+                                         QJSEngine *scriptEngine)
 {
     Q_UNUSED(engine)
     Q_UNUSED(scriptEngine)

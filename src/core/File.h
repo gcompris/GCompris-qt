@@ -13,7 +13,8 @@
 
 #include <QObject>
 #include <QString>
-
+#include <QtQml/qqmlregistration.h>
+#include <config.h>
 /**
  * @class File
  * @short A helper component for accessing local files from QML.
@@ -23,7 +24,9 @@
 class File : public QObject
 {
     Q_OBJECT
-
+#ifndef WITH_RCC
+    QML_ELEMENT
+#endif
     /**
      * Filename
      *

@@ -93,8 +93,8 @@ void GSynth::stopAudio(int note) {
     m_generator->noteOff(1, note);
 }
 
-QObject *GSynth::synthProvider(QQmlEngine *engine,
-                               QJSEngine *scriptEngine)
+GSynth *GSynth::create(QQmlEngine *engine,
+                       QJSEngine *scriptEngine)
 {
     Q_UNUSED(engine)
     Q_UNUSED(scriptEngine)

@@ -32,8 +32,6 @@ set(gcompris_SRCS
   Directory.h
   DownloadManager.cpp
   DownloadManager.h
-  GComprisPlugin.cpp
-  GComprisPlugin.h
   main.cpp
   config.h.in
   synth/ADSRenvelope.cpp
@@ -51,6 +49,9 @@ set(gcompris_SRCS
   synth/waveform.cpp
   synth/waveform.h
 )
+if(WITH_RCC)
+  list(APPEND gcompris_SRCS GComprisPlugin.cpp GComprisPlugin.h)
+endif()
 
 if(ANDROID)
   list(APPEND gcompris_SRCS ApplicationAndroid.cpp)

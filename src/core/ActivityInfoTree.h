@@ -14,10 +14,16 @@
 #include <QQmlEngine>
 #include <QList>
 #include <QDir>
+#include <QtQml/qqmlregistration.h>
+#include <config.h>
 
 class ActivityInfoTree : public QObject
 {
     Q_OBJECT
+#ifndef WITH_RCC
+    QML_ELEMENT
+    QML_SINGLETON
+#endif
     Q_PROPERTY(ActivityInfo *rootMenu READ getRootMenu CONSTANT)
     Q_PROPERTY(QQmlListProperty<ActivityInfo> menuTreeFull READ getMenuTreeFull CONSTANT)
     Q_PROPERTY(QQmlListProperty<ActivityInfo> menuTree READ menuTree NOTIFY menuTreeChanged)
@@ -101,7 +107,7 @@ private:
 
 public:
     static void registerResources();
-    static QObject *menuTreeProvider(QQmlEngine *engine, QJSEngine *scriptEngine);
+    static ActivityInfoTree *create(QQmlEngine *engine, QJSEngine *scriptEngine);
     void exportAsSQL();
     void listActivities();
     bool launchedActivityMissGivenDifficulty() const;
