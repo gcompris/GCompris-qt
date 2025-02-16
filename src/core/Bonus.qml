@@ -74,7 +74,7 @@ Image {
 
     Connections {
         target: activityBackground
-        function onStop() { haltBonus(); }
+        function onStop() { bonus.haltBonus(); }
     }
 
     /// @cond INTERNAL_DOCS
@@ -217,7 +217,7 @@ Image {
         onStopped: {
             bonus.stop();
             if(!bonus.bonusStopped)
-                bonus.isWin ? win() : loose();
+                bonus.isWin ? bonus.win() : bonus.loose();
         }
     }
 

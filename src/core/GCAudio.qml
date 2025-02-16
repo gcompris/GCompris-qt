@@ -246,7 +246,7 @@ Item {
         onErrorOccurred: (error, errorString) => {
             // This file cannot be played, remove it from the source asap
             source = ""
-            if(files.length) {
+            if(gcaudio.files.length) {
                 silenceTimer.start()
             }
             else {
@@ -257,7 +257,7 @@ Item {
             if(playbackState !== MediaPlayer.StoppedState) {
                 return;
             }
-            if(files.length) {
+            if(gcaudio.files.length) {
                 silenceTimer.start()
             }
             else {
@@ -277,7 +277,7 @@ Item {
             return value;
         }
         onMetaDataChanged: {
-            if(isBackgroundMusic && audio.activeAudioTrack != -1) {
+            if(gcaudio.isBackgroundMusic && audio.activeAudioTrack != -1) {
                 var title = getMetadata(MediaMetaData.Title);
                 var contributingArtist = getMetadata(MediaMetaData.ContributingArtist);
                 var copyright = getMetadata(MediaMetaData.Copyright);
@@ -296,7 +296,7 @@ Item {
         repeat: false
         onTriggered: {
             interval = 0
-            _playNextFile()
+            gcaudio._playNextFile()
         }
     }
 

@@ -7,6 +7,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import core 1.0
 
@@ -106,7 +108,7 @@ Item {
             height: labelText.height
             GCText {
                 id: labelText
-                text: label
+                text: gccombobox.label
                 anchors.verticalCenter: parent.verticalCenter
                 width: comboColumn.width
                 fontSize: mediumSize
@@ -126,7 +128,7 @@ Item {
             GCText {
                 id: currentTextBox
                 anchors.centerIn: parent
-                text: currentText
+                text: gccombobox.currentText
                 color: GCStyle.darkText
                 fontSize: mediumSize
                 fontSizeMode: Text.Fit
@@ -156,7 +158,7 @@ Item {
         height: if(parent) parent.height
         color: GCStyle.configBg
 
-        parent: boxBackground
+        parent: gccombobox.boxBackground
         z: 100
         focus: visible
 
@@ -164,7 +166,7 @@ Item {
         // (ctrl+F should still resize the window for example)
         Keys.onPressed: (event) => {
             if(event.key !== Qt.Key_Back) {
-                boxBackground.currentActivity.Keys.onPressed(event)
+                gccombobox.boxBackground.currentActivity.Keys.onPressed(event)
             }
         }
         Keys.onReleased: (event) => {
@@ -202,18 +204,18 @@ Item {
 
         // Don't accept the list value, restore previous value
         function discardChange() {
-            if(isModelArray) {
-                for(var i = 0 ; i < model.count ; ++ i) {
-                    if(model[currentIndex].text === currentText) {
-                        currentIndex = i;
+            if(gccombobox.isModelArray) {
+                for(var i = 0 ; i < gccombobox.model.count ; ++ i) {
+                    if(gccombobox.model[gccombobox.currentIndex].text === gccombobox.currentText) {
+                        gccombobox.currentIndex = i;
                         break;
                     }
                 }
             }
             else {
-                for(var i = 0 ; i < model.length ; ++ i) {
-                    if(model.get(currentIndex).text === currentText) {
-                        currentIndex = i;
+                for(var i = 0 ; i < gccombobox.model.length ; ++ i) {
+                    if(gccombobox.model.get(gccombobox.currentIndex).text === gccombobox.currentText) {
+                        gccombobox.currentIndex = i;
                         break;
                     }
                 }
@@ -222,8 +224,8 @@ Item {
 
         // Accept the change. Updates the currentIndex and text of the button
         function acceptChange() {
-            currentIndex = gridview.currentIndex;
-            currentText = isModelArray ? model[currentIndex].text : (model && model.get(currentIndex) ? model.get(currentIndex).text : "")
+            gccombobox.currentIndex = gridview.currentIndex;
+            gccombobox.currentText = gccombobox.isModelArray ? gccombobox.model[gccombobox.currentIndex].text : (gccombobox.model && gccombobox.model.get(gccombobox.currentIndex) ? gccombobox.model.get(gccombobox.currentIndex).text : "")
         }
 
         function hidePopUpAndRestoreFocus() {
@@ -245,7 +247,7 @@ Item {
 
             GCText {
                 id: textDescription
-                text: label
+                text: gccombobox.label
                 width: headerDescription.width - (discardIcon.width + discardIcon.anchors.margins) * 2
                 height: 50 * ApplicationInfo.ratio
                 anchors.centerIn: headerDescription
@@ -303,7 +305,9 @@ Item {
                     id: gridItem
                     width: gridview.cellWidth
                     height: gridview.cellHeight
-                    property bool itemSelected : GridView.isCurrentItem
+                    required property var modelData
+                    required property int index
+                    property bool itemSelected: GridView.isCurrentItem
                     Rectangle {
                         id: itemBg
                         width: parent.width - radius
@@ -325,7 +329,7 @@ Item {
                     }
                     GCText {
                         id: textValue
-                        text: isModelArray ? modelData.text : model.text
+                        text: gridItem.modelData.text
                         anchors.centerIn: parent
                         height: itemBg.height
                         width: itemBg.width - isSelectedIcon.width * 2 - GCStyle.baseMargins
@@ -338,7 +342,7 @@ Item {
                     MouseArea {
                         anchors.fill: parent
                         onClicked: {
-                            currentIndex = index
+                            gccombobox.currentIndex = gridItem.index
                             popup.acceptChange();
                             popup.hidePopUpAndRestoreFocus();
                         }

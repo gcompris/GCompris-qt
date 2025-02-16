@@ -27,7 +27,7 @@ DialogBackground {
     visible: false
     title: activityInfo.title
 
-    property QtObject activityInfo: ActivityInfoTree.currentActivity
+    property ActivityInfo activityInfo: ActivityInfoTree.currentActivity
 
     function getIcon() {
         if(activityInfo.icon) {

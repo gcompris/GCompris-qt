@@ -239,7 +239,7 @@ Item {
                     radius: item.radius
                     anchors.centerIn: parent
                 }
-                opacity: isVisible(index)
+                opacity: item.isVisible(index)
 
                 Behavior on opacity { PropertyAnimation { duration: 200 } }
             }

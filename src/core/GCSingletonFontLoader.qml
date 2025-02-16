@@ -22,7 +22,7 @@ pragma Singleton
  * @sa ApplicationSettings.isEmbeddedFont, ApplicationSettings.font
  */
 QtObject {
-    property QtObject fontLoader: FontLoader {
+    property FontLoader fontLoader: FontLoader {
         id: sourceLoader
         // Set default embedded font name to avoid FontLoader.Error
         source: "resource/fonts/Andika-R.ttf"

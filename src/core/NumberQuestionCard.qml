@@ -25,25 +25,30 @@ Item {
     property bool selected: false
     property int cardSize: Math.min(width, height)
 
+    required property string value
+    required property bool visibility
+    required property bool clickable
+    required property bool isSignSymbol
+
     signal clicked
 
     Rectangle {
         id: cardBg
-        height: selected ? cardSize * 0.9 : cardSize * 0.7
+        height: numberCard.selected ? numberCard.cardSize * 0.9 : numberCard.cardSize * 0.7
         width: height
-        color: isSignSymbol || !clickable ? "transparent" : GCStyle.whiteBg
-        border.color: isSignSymbol || !clickable ? "transparent" : GCStyle.blueBorder
-        border.width: selected ? GCStyle.thickerBorder : GCStyle.thinBorder
+        color: numberCard.isSignSymbol || !numberCard.clickable ? "transparent" : GCStyle.whiteBg
+        border.color: numberCard.isSignSymbol || !numberCard.clickable ? "transparent" : GCStyle.blueBorder
+        border.width: numberCard.selected ? GCStyle.thickerBorder : GCStyle.thinBorder
         radius: GCStyle.halfMargins
         anchors.centerIn: parent
     }
     GCText {
         id: numberText
-        width: isSignSymbol ? numberCard.height : cardBg.height
-        height: isSignSymbol ? numberCard.width : cardBg.height
+        width: numberCard.isSignSymbol ? numberCard.height : cardBg.height
+        height: numberCard.isSignSymbol ? numberCard.width : cardBg.height
         anchors.centerIn: parent
         color: GCStyle.darkText
-        text: value
+        text: numberCard.value
         fontSize: Math.max(1, height) // avoid value of 0 during init
         fontSizeMode: Text.Fit
         verticalAlignment: Text.AlignVCenter
@@ -54,7 +59,7 @@ Item {
         width: numberCard.height
         height: numberCard.height
         anchors.centerIn: parent
-        enabled: clickable
+        enabled: numberCard.clickable
         onClicked: {
             numberCard.clicked();
         }

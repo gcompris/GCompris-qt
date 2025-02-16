@@ -9,7 +9,6 @@
  */
 import QtQuick
 import core 1.0
-import "qrc:/gcompris/src/core/core.js" as Core
 
 /**
  * The base QML component for activities in GCompris.
@@ -73,7 +72,7 @@ Item {
      *
      * Populated automatically during activity-loading.
      */
-    property QtObject activityInfo
+    property ActivityInfo activityInfo
 
     /**
      * type:GCAudio

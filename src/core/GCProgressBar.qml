@@ -25,7 +25,7 @@ ProgressBar {
         width: progressbar.width
         color: GCStyle.lightBg
         border.color: GCStyle.whiteBorder
-        border.width: borderSize
+        border.width: progressbar.borderSize
     }
     contentItem: Item {
         implicitWidth: 200
@@ -41,7 +41,7 @@ ProgressBar {
         GCText {
             id: progressbarText
             anchors.centerIn: parent
-            visible: displayText
+            visible: progressbar.displayText
             fontSize: smallSize
             font.bold: true
             color: GCStyle.darkText

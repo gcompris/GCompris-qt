@@ -44,10 +44,10 @@ CheckBox {
         "qrc:/gcompris/src/core/resource/cancel" + suffix
     }
     contentItem: GCText {
-        anchors.left: indicator.right
+        anchors.left: checkBox.indicator.right
         anchors.leftMargin: GCStyle.halfMargins
         anchors.right: checkBox.right
-        fontSize: labelTextFontSize
+        fontSize: checkBox.labelTextFontSize
         text: checkBox.text
         wrapMode: Text.WordWrap
     }

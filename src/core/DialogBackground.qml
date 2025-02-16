@@ -130,8 +130,8 @@ Rectangle {
 
                 Image {
                     id: iconImage
-                    source: contentIcon
-                    visible: contentIcon != ""
+                    source: dialogBackground.contentIcon
+                    visible: dialogBackground.contentIcon != ""
                     width: 100 * ApplicationInfo.ratio
                     height: visible ? iconImage.width : 0
                     sourceSize.width: iconImage.width
@@ -143,7 +143,7 @@ Rectangle {
 
                 GCText {
                     id: textContent
-                    text: instructionStyle + "<body>" + content + "</body>"
+                    text: instructionStyle + "<body>" + dialogBackground.content + "</body>"
                     width: flick.width
                     height: flick.height - button0.height
                     anchors.top: iconImage.bottom

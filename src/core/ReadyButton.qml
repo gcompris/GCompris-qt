@@ -61,7 +61,7 @@ Rectangle {
 
     GCText {
         id: iAmReadyText
-        color: themes[theme].textColor
+        color: iAmReady.themes[iAmReady.theme].textColor
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.verticalCenter: parent.verticalCenter
         font.bold: true

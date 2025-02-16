@@ -7,6 +7,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import core 1.0
 
@@ -35,14 +37,14 @@ Item {
      *
      * Default keys-rectangle color used unless the user provides another.
      */
-    property var colours: ["#ec8748", "#eceb48", "#7fec48", "#48d3ec","#ee5f5f"]
+    property list<string> colours: ["#ec8748", "#eceb48", "#7fec48", "#48d3ec","#ee5f5f"]
 
     /**
      * type:list
      *
      * Default sequence of numbers displayed unless the user provides another.
      */
-    property var numbers: [0, 1, 2, 3, 4]
+    property list<int> numbers: [0, 1, 2, 3, 4]
 
     /**
      * type:string
@@ -139,16 +141,18 @@ Item {
 
     Column {
         id: leftPanel
-        width: columnWidth
+        width: containerPanel.columnWidth
         height: parent.height - 90 * ApplicationInfo.ratio
 
         Repeater {
             model: 5
 
             Rectangle{
+                id: leftRect
+                required property int index
                 width: parent.width
                 height: parent.height * 0.2
-                color: colours[index]
+                color: containerPanel.colours[leftRect.index]
                 border.color: Qt.darker(color)
                 border.width: GCStyle.thinBorder
 
@@ -160,7 +164,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                     font.bold: true
-                    text: numbers[index]
+                    text: containerPanel.numbers[leftRect.index]
                 }
 
                 MouseArea {
@@ -170,16 +174,16 @@ Item {
                              containerPanel.opacity > 0 && containerPanel.enableInput
 
                     onClicked: {
-                        if(answer.length < maxDigit)
-                            answer += numbers[index]
+                        if(containerPanel.answer.length < containerPanel.maxDigit)
+                            containerPanel.answer += containerPanel.numbers[leftRect.index]
                     }
                     onPressed: {
-                        leftPanel.children[index].color = Qt.lighter(colours[index])
-                        leftPanel.children[index].border.width = GCStyle.midBorder
+                        leftPanel.children[leftRect.index].color = Qt.lighter(containerPanel.colours[leftRect.index])
+                        leftPanel.children[leftRect.index].border.width = GCStyle.midBorder
                     }
                     onReleased: {
-                        leftPanel.children[index].color = colours[index]
-                        leftPanel.children[index].border.width = GCStyle.thinBorder
+                        leftPanel.children[leftRect.index].color = containerPanel.colours[leftRect.index]
+                        leftPanel.children[leftRect.index].border.width = GCStyle.thinBorder
                     }
                 }
             }
@@ -208,10 +212,10 @@ Item {
 
             MouseArea {
                 anchors.fill: parent
-                enabled: answer.length && answer.indexOf(containerPanel.decimalPoint) == -1
+                enabled: containerPanel.answer.length && containerPanel.answer.indexOf(containerPanel.decimalPoint) == -1
 
                 onClicked: {
-                    answer += containerPanel.decimalPoint
+                    containerPanel.answer += containerPanel.decimalPoint
                 }
 
                 onPressed: {
@@ -229,17 +233,19 @@ Item {
 
     Column {
         id: rightPanel
-        width: columnWidth
+        width: containerPanel.columnWidth
         height: parent.height - 90 * ApplicationInfo.ratio
-        x: parent.width - columnWidth
+        x: parent.width - containerPanel.columnWidth
 
         Repeater {
             model: 5
 
             Rectangle {
+                id: rightRect
+                required property int index
                 width: parent.width
                 height: parent.height * 0.2
-                color: colours[index]
+                color: containerPanel.colours[index]
                 border.color: Qt.darker(color)
                 border.width: GCStyle.thinBorder
 
@@ -251,7 +257,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                     font.bold: true
-                    text: numbers[index] + 5
+                    text: containerPanel.numbers[rightRect.index] + 5
                 }
                 MouseArea {
                     anchors.fill: parent
@@ -260,16 +266,16 @@ Item {
                              containerPanel.opacity > 0
 
                     onClicked: {
-                        if(answer.length < maxDigit)
-                            answer += numbers[index] + 5
+                        if(containerPanel.answer.length < containerPanel.maxDigit)
+                            containerPanel.answer += containerPanel.numbers[rightRect.index] + 5
                     }
                     onPressed: {
-                        rightPanel.children[index].color = Qt.lighter(colours[index])
-                        rightPanel.children[index].border.width = GCStyle.midBorder
+                        rightPanel.children[rightRect.index].color = Qt.lighter(containerPanel.colours[rightRect.index])
+                        rightPanel.children[rightRect.index].border.width = GCStyle.midBorder
                     }
                     onReleased: {
-                        rightPanel.children[index].color = colours[index]
-                        rightPanel.children[index].border.width = GCStyle.thinBorder
+                        rightPanel.children[rightRect.index].color = containerPanel.colours[rightRect.index]
+                        rightPanel.children[rightRect.index].border.width = GCStyle.thinBorder
                     }
                 }
             }
@@ -301,7 +307,7 @@ Item {
                          containerPanel.enableInput
 
                 onClicked: {
-                    answer = answer.substring(0,answer.length - 1)
+                    containerPanel.answer = containerPanel.answer.substring(0, containerPanel.answer.length - 1)
                 }
                 onPressed: {
                     backspaceButton.color = Qt.lighter(GCStyle.whiteBg)

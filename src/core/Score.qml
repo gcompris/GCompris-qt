@@ -118,7 +118,7 @@ Rectangle {
 
     Connections {
         target: activity
-        function onStop() { stopWinAnimation(); }
+        function onStop() { score.stopWinAnimation(); }
     }
 
     color: GCStyle.lightTransparentBg

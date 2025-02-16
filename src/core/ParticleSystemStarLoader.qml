@@ -22,6 +22,7 @@ import core 1.0
  * @sa ParticleSystemStar ApplicationInfo.hasShader
  */
 Loader {
+    id: particleSystemStarLoader
     anchors.fill: parent
     active: ApplicationInfo.hasShader
 
@@ -41,11 +42,11 @@ Loader {
 
     Timer {
         id: stopParticleSystem
-        interval: (item && item.emitter) ? item.emitter.lifeSpan + item.emitter.lifeSpanVariation : 0
+        interval: (particleSystemStarLoader.item && particleSystemStarLoader.item.emitter) ? particleSystemStarLoader.item.emitter.lifeSpan + particleSystemStarLoader.item.emitter.lifeSpanVariation : 0
         repeat: false
         onTriggered: {
-            item.stop()
-            item.opacity = 0
+            particleSystemStarLoader.item.stop()
+            particleSystemStarLoader.item.opacity = 0
         }
     }
     onLoaded: item.particleClip = clip

@@ -7,6 +7,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import core 1.0
 
@@ -45,7 +47,7 @@ Rectangle {
     readonly property string title: currentActivity ? qsTr("%1 settings").arg(currentActivity.title) : ""
 
     property var difficultiesModel: []
-    property QtObject currentActivity
+    property ActivityInfo currentActivity
 
     property var chosenLevels: []
 
@@ -203,7 +205,7 @@ Rectangle {
             GCButton {
                 id: datasetVisibleButton
                 text: qsTr("Dataset")
-                enabled: hasDataset
+                enabled: dialogChooseLevel.hasDataset
                 height: parent.height
                 width: titleRectangle.width * 0.45
                 opacity: enabled ? 1 : 0
@@ -216,7 +218,7 @@ Rectangle {
             GCButton {
                 id: optionsVisibleButton
                 text: qsTr("Options")
-                enabled: hasConfig
+                enabled: dialogChooseLevel.hasConfig
                 height: parent.height
                 width: datasetVisibleButton.width
                 opacity: enabled ? 1 : 0
@@ -250,7 +252,7 @@ Rectangle {
                     id: configLoader
                     visible: !datasetVisibleButton.selected
                     active: optionsVisibleButton.enabled
-                    source: active ? "qrc:/gcompris/src/activities/"+activityName+"/ActivityConfig.qml" : ""
+                    source: active ? "qrc:/gcompris/src/activities/"+dialogChooseLevel.activityName+"/ActivityConfig.qml" : ""
 
                     // Load configuration at start of activity
                     // in the menu, it's done when the visibility property
@@ -287,13 +289,15 @@ Rectangle {
                     Repeater {
                         id: difficultiesRepeater
                         delegate: Row {
+                            id: row
+                            required property var modelData
                             height: datasetVisibleButton.selected ? objective.height : 0
                             visible: modelData.enabled
                             spacing: GCStyle.halfMargins
                             Image {
                                 id: difficultyIcon
                                 source: "qrc:/gcompris/src/core/resource/difficulty" +
-                                modelData.difficulty + ".svg";
+                                row.modelData.difficulty + ".svg";
                                 sourceSize.height: objective.indicatorImageHeight
                                 sourceSize.width: height
                                 anchors.top: objective.top
@@ -301,17 +305,17 @@ Rectangle {
                             GCDialogCheckBox {
                                 id: objective
                                 width: datasetOptionsRow.width - difficultyIcon.width - 2 * flick.anchors.margins - indicatorImageHeight
-                                text: modelData.objective
-                                checked: chosenLevels.indexOf(modelData.level) != -1
+                                text: row.modelData.objective
+                                checked: dialogChooseLevel.chosenLevels.indexOf(row.modelData.level) != -1
                                 onVisibleChanged: {
-                                    if(visible) checked = (chosenLevels.indexOf(modelData.level) != -1)
+                                    if(visible) checked = (dialogChooseLevel.chosenLevels.indexOf(row.modelData.level) != -1)
                                 }
                                 onClicked: {
                                     if(checked) {
-                                        chosenLevels.push(modelData.level)
+                                        dialogChooseLevel.chosenLevels.push(row.modelData.level)
                                     }
-                                    else if(chosenLevels.length > 1) {
-                                        chosenLevels.splice(chosenLevels.indexOf(modelData.level), 1)
+                                    else if(dialogChooseLevel.chosenLevels.length > 1) {
+                                        dialogChooseLevel.chosenLevels.splice(dialogChooseLevel.chosenLevels.indexOf(row.modelData.level), 1)
                                     }
                                     else {
                                         // At least one must be selected
@@ -349,7 +353,7 @@ Rectangle {
                 height: parent.height
                 width: titleRectangle.width * 0.25
                 theme: "settingsButton"
-                onClicked: close();
+                onClicked: dialogChooseLevel.close();
             }
             GCButton {
                 id: saveButton
@@ -358,11 +362,11 @@ Rectangle {
                 width: titleRectangle.width * 0.25
                 theme: "settingsButton"
                 onClicked: {
-                    saveData();
-                    if (inMenu === false) {
-                        startActivity();
+                    dialogChooseLevel.saveData();
+                    if (dialogChooseLevel.inMenu === false) {
+                        dialogChooseLevel.startActivity();
                     }
-                    close();
+                    dialogChooseLevel.close();
                 }
             }
             GCButton {
@@ -370,11 +374,11 @@ Rectangle {
                 text: qsTr("Save and start")
                 height: parent.height
                 width: titleRectangle.width * 0.4
-                visible: inMenu === true
+                visible: dialogChooseLevel.inMenu === true
                 theme: "settingsButton"
                 onClicked: {
-                    saveData();
-                    startActivity();
+                    dialogChooseLevel.saveData();
+                    dialogChooseLevel.startActivity();
                 }
             }
         }

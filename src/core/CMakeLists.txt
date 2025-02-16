@@ -162,7 +162,11 @@ else()
     ${core_qml_files}
     RESOURCES
     ${core_resources_files}
+    SOURCES
+    ${gcompris_SRCS}
+    OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib/qml/core
     )
+  target_link_libraries(core PRIVATE ${used_qt_modules})
   target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} core)
 endif()
 

@@ -54,7 +54,7 @@ Rectangle {
         NumberAnimation { target: errorRectangle; property: "opacity"; to: 1; duration: 200 }
         PauseAnimation { duration: 1000 }
         NumberAnimation { target: errorRectangle; property: "opacity"; to: 0; duration: 200 }
-        ScriptAction { script: releaseControls() }
+        ScriptAction { script: errorRectangle.releaseControls() }
     }
     function releaseControls() {
         return;

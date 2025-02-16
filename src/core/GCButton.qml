@@ -117,10 +117,10 @@ Button {
     
     background: Rectangle {
         border.width: buttonControl.activeFocus || buttonControl.selected ? GCStyle.midBorder : GCStyle.thinnestBorder
-        border.color: themes[theme].borderColor
+        border.color: buttonControl.themes[buttonControl.theme].borderColor
         radius: GCStyle.halfMargins
-        color: (buttonControl.pressed || buttonControl.down ? themes[theme].pressedColor :
-                (buttonControl.selected ? themes[theme].focusColor : themes[theme].backgroundColor))
+        color: (buttonControl.pressed || buttonControl.down ? buttonControl.themes[buttonControl.theme].pressedColor :
+                (buttonControl.selected ? buttonControl.themes[buttonControl.theme].focusColor : buttonControl.themes[buttonControl.theme].backgroundColor))
     }
     contentItem: Item {
         id: labelItem
@@ -130,22 +130,22 @@ Button {
 
         GCText {
             id: labelText
-            color: themes[theme].textColor
+            color: buttonControl.themes[buttonControl.theme].textColor
             text: buttonControl.text
-            fontSize: textSizes[textSize].fontSize
-            font.bold: textSizes[textSize].fontBold
+            fontSize: buttonControl.textSizes[buttonControl.textSize].fontSize
+            font.bold: buttonControl.textSizes[buttonControl.textSize].fontBold
             anchors.fill: parent
             anchors.margins: GCStyle.halfMargins
-            anchors.rightMargin: rightIconSize > 0 ? rightIconSize :  GCStyle.halfMargins // if there's a rightIconSize, it must handle the rightMargin
+            anchors.rightMargin: buttonControl.rightIconSize > 0 ? buttonControl.rightIconSize :  GCStyle.halfMargins // if there's a rightIconSize, it must handle the rightMargin
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             wrapMode: Text.WordWrap
             fontSizeMode: Text.Fit
 
             Component.onCompleted: {
-                if (fixedFontSize > 0) {
+                if (buttonControl.fixedFontSize > 0) {
                     labelText.fixFontSize = true;
-                    labelText.fontSize = fixedFontSize;
+                    labelText.fontSize = buttonControl.fixedFontSize;
                 }
             }
         }
