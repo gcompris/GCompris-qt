@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "magic-hat-minus/magic-hat-minus.svg"
   author: "Thibaut ROMAIN &lt;thibrom@gmail.com&gt;"
   //: Activity title
-  title: qsTr("The magician hat")
+  title: qsTr("The magician hat (subtraction)")
   //: Help title
   description: qsTr("Calculate how many stars are under the magic hat.")
 //  intro: "Click on the hat. How many stars are still hiding under the hat."
