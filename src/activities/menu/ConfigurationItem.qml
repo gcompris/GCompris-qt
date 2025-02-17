@@ -30,7 +30,7 @@ Item {
 
     Column {
         id: contentColumn
-        spacing: 10 * ApplicationInfo.ratio
+        spacing: GCStyle.baseMargins
         width: parent.width
 
         move: Transition {
@@ -123,7 +123,7 @@ Item {
         Flow {
             id: voicesRow
             width: dialogConfig.contentWidth
-            spacing: 5 * ApplicationInfo.ratio
+            spacing: GCStyle.halfMargins
 
             property bool haveLocalResource: false
 
@@ -149,7 +149,7 @@ Item {
 
             GCButton {
                 id: voicesButton
-                height: 30 * ApplicationInfo.ratio
+                height: GCStyle.smallButtonHeight
                 width: dialogConfig.contentWidth
                 visible: ApplicationInfo.isDownloadAllowed
                 text: voicesRow.haveLocalResource ? qsTr("Check for updates") :
@@ -196,7 +196,6 @@ Item {
 
         GCSlider {
             id: audioEffectsVolumeSlider
-            width: 250 * ApplicationInfo.ratio
             to: 10
             from: 0
             value: audioEffectsVolume * 10
@@ -206,7 +205,7 @@ Item {
 
         GCButton {
             id: backgroundMusicButton
-            height: 30 * ApplicationInfo.ratio
+            height: GCStyle.smallButtonHeight
             width: dialogConfig.contentWidth
             visible: ApplicationInfo.isDownloadAllowed
             text: qsTr("Download background music")
@@ -236,13 +235,13 @@ Item {
         }
 
         Row {
-            height: 30 * ApplicationInfo.ratio
-            width: background.width * 0.8
-            spacing: 5 * ApplicationInfo.ratio
+            height: GCStyle.smallButtonHeight
+            width: dialogConfig.contentWidth
+            spacing: GCStyle.halfMargins
             GCButton {
                 id: backgroundMusicName
                 height: parent.height
-                width: parent.width - 35 * ApplicationInfo.ratio
+                width: parent.width - parent.spacing - nextMusicButton.width
                 text: {
                     if(backgroundMusic.playbackState !== MediaPlayer.PlayingState || backgroundMusic.muted)
                         return qsTr("Not playing")
@@ -258,8 +257,9 @@ Item {
                 }
             }
             Image {
+                id: nextMusicButton
                 source: "qrc:/gcompris/src/core/resource/bar_next.svg"
-                height: 30 * ApplicationInfo.ratio
+                height: parent.height
                 sourceSize.width: height
                 visible: (backgroundMusic.playbackState === MediaPlayer.PlayingState && !backgroundMusic.muted)
                 MouseArea {
@@ -280,7 +280,6 @@ Item {
 
         GCSlider {
             id: backgroundMusicVolumeSlider
-            width: 250 * ApplicationInfo.ratio
             to: 10
             from: 0
             value: backgroundMusicVolume * 10
@@ -314,7 +313,7 @@ Item {
 
         GCButton {
             id: wordsetButton
-            height: 30 * ApplicationInfo.ratio
+            height: GCStyle.smallButtonHeight
             width: dialogConfig.contentWidth
             visible: ApplicationInfo.isDownloadAllowed
             text: qsTr("Download full word image set")
@@ -383,11 +382,10 @@ Item {
         }
 
         Flow {
-            spacing: 5
+            spacing: GCStyle.halfMargins
             width: dialogConfig.contentWidth
             GCSlider {
                 id: baseFontSizeSlider
-                width: 250 * ApplicationInfo.ratio
                 to: ApplicationSettings.baseFontSizeMax
                 from: ApplicationSettings.baseFontSizeMin
                 value: baseFontSize
@@ -395,7 +393,7 @@ Item {
                 wheelEnabled: false
             }
             GCButton {
-                height: 30 * ApplicationInfo.ratio
+                height: GCStyle.smallButtonHeight
                 text: qsTr("Default");
                 onClicked: baseFontSizeSlider.value = 0.0
             }
@@ -417,11 +415,10 @@ Item {
         }
 
         Flow {
-            spacing: 5
+            spacing: GCStyle.halfMargins
             width: dialogConfig.contentWidth
             GCSlider {
                 id: fontLetterSpacingSlider
-                width: 250 * ApplicationInfo.ratio
                 to: ApplicationSettings.fontLetterSpacingMax
                 from: ApplicationSettings.fontLetterSpacingMin
                 value: fontLetterSpacing
@@ -429,7 +426,7 @@ Item {
                 wheelEnabled: false
             }
             GCButton {
-                height: 30 * ApplicationInfo.ratio
+                height: GCStyle.smallButtonHeight
                 text: qsTr("Default");
                 onClicked: fontLetterSpacingSlider.value = ApplicationSettings.fontLetterSpacingMin
             }

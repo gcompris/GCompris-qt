@@ -17,9 +17,7 @@ import "qrc:/gcompris/src/core/core.js" as Core
 
 Rectangle {
     id: dialogBackground
-    color: "#696da3"
-    border.color: "black"
-    border.width: 1
+    color: GCStyle.configBg
     z: 10000
     anchors.fill: parent
     visible: false
@@ -40,199 +38,190 @@ Rectangle {
     onClose: parent.forceActiveFocus();
 
     property bool horizontalLayout: dialogBackground.width >= dialogBackground.height
-    property int margin30: Math.round(30 * ApplicationInfo.ratio)
 
-    Row {
-        spacing: 2
-        Item { width: 10; height: 1 }
+    Column {
+        spacing: GCStyle.halfMargins
+        anchors.top: parent.top
+        anchors.topMargin: GCStyle.baseMargins
+        anchors.horizontalCenter: parent.horizontalCenter
+        width: dialogBackground.width - 2 * GCStyle.baseMargins
+        Rectangle {
+            id: titleRectangle
+            color: GCStyle.lightBg
+            radius: GCStyle.baseMargins
+            width: parent.width
+            height:  Math.max(title.height, cancel.height) + GCStyle.baseMargins
 
-        Column {
-            spacing: 10
-            anchors.top: parent.top
-            Item { width: 1; height: 10 }
-            Rectangle {
-                id: titleRectangle
-                color: "#e6e6e6"
-                radius: 6.0
-                width: dialogBackground.width - 30
-                height: title.height * 1.2
-                border.color: "black"
-                border.width: 2
-
-                GCText {
-                    id: title
-                    text: qsTr("Background music")
-                    width: dialogBackground.width - 30
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    color: "black"
-                    fontSize: 20
-                    font.weight: Font.DemiBold
-                    wrapMode: Text.WordWrap
-                }
+            GCText {
+                id: title
+                text: qsTr("Background music")
+                width: titleRectangle.width - (cancel.width + cancel.anchors.margins) * 2
+                height: 50 * ApplicationInfo.ratio
+                anchors.horizontalCenter: titleRectangle.horizontalCenter
+                anchors.verticalCenter: titleRectangle.verticalCenter
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                fontSizeMode: Text.Fit
+                minimumPointSize: 7
+                fontSize: largeSize
+                font.weight: Font.DemiBold
+                wrapMode: Text.WordWrap
             }
+            // The cancel button
+            GCButtonCancel {
+                id: cancel
+                anchors.top: undefined
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.margins: GCStyle.tinyMargins
+                onClose: dialogBackground.close()
+            }
+        }
 
-            Rectangle {
-                color: "#e6e6e6"
-                radius: 6.0
-                width: dialogBackground.width - 30
-                height: dialogBackground.height - 100
-                border.color: "black"
-                border.width: 2
-                anchors.margins: 100
+        Rectangle {
+            color: GCStyle.lightTransparentBg
+            radius: GCStyle.baseMargins
+            width: parent.width
+            height: dialogBackground.height - (2 * parent.anchors.topMargin) - titleRectangle.height - parent.spacing
+            border.color: GCStyle.whiteBorder
+            border.width: GCStyle.midBorder
 
-                Flickable {
-                    id: flickableList
-                    anchors.fill: parent
-                    anchors.margins: 10 * ApplicationInfo.ratio
-                    contentHeight: musicGrid.height + musicInfo.height + margin30
-                    flickableDirection: Flickable.VerticalFlick
-                    maximumFlickVelocity: dialogBackground.height
-                    boundsBehavior: Flickable.StopAtBounds
-                    clip: true
+            Flickable {
+                id: flick
+                anchors.fill: parent
+                anchors.margins: GCStyle.baseMargins
+                contentHeight: musicGrid.height + musicInfo.height + 70 * ApplicationInfo.ratio
+                flickableDirection: Flickable.VerticalFlick
+                maximumFlickVelocity: dialogBackground.height
+                boundsBehavior: Flickable.StopAtBounds
+                clip: true
 
-                    Flow {
-                        id: musicGrid
-                        width: parent.width
-                        spacing: 10 * ApplicationInfo.ratio
-                        anchors.horizontalCenter: parent.horizontalCenter
+                Grid {
+                    id: musicGrid
+                    width: parent.width + GCStyle.halfMargins
+                    spacing: GCStyle.halfMargins
 
-                        Repeater {
-                            model: dialogActivityConfig.configItem ? dialogActivityConfig.configItem.allBackgroundMusic : 0
+                    Repeater {
+                        model: dialogActivityConfig.configItem ? dialogActivityConfig.configItem.allBackgroundMusic : 0
 
-                            Item {
-                                width: (musicGrid.width - margin30)  * 0.33
-                                height: title.height * 2
+                        Item {
+                            width: Math.floor((musicGrid.width - GCStyle.baseMargins) / 3)
+                            height: title.height
 
-                                GCButton {
-                                    text: modelData.slice(0, modelData.lastIndexOf('.'))
+                            GCButton {
+                                text: modelData.slice(0, modelData.lastIndexOf('.'))
+                                width: parent.width - GCStyle.halfMargins
+                                height: parent.height - GCStyle.halfMargins
+                                theme: "dark"
+                                rightIconSize: selectedIcon.height + GCStyle.baseMargins
 
-                                    onClicked: {
-                                        if(dialogActivityConfig.configItem.filteredBackgroundMusic.indexOf(modelData) == -1) {
-                                            // Keep the filtered playlist sorted w.r.t to their positions in "allBackgroundMusic" to maintain their playing order
-                                            var musicOriginalPosition = dialogActivityConfig.configItem.allBackgroundMusic.indexOf(modelData)
-                                            var i = 0
-                                            while(i < dialogActivityConfig.configItem.filteredBackgroundMusic.length) {
-                                                var filteredMusicName = dialogActivityConfig.configItem.filteredBackgroundMusic[i]
-                                                if(dialogActivityConfig.configItem.allBackgroundMusic.indexOf(filteredMusicName) >  musicOriginalPosition)
-                                                    break
-                                                i++
-                                            }
-                                            dialogActivityConfig.configItem.filteredBackgroundMusic.splice(i, 0, modelData)
+                                onClicked: {
+                                    if(dialogActivityConfig.configItem.filteredBackgroundMusic.indexOf(modelData) == -1) {
+                                        // Keep the filtered playlist sorted w.r.t to their positions in "allBackgroundMusic" to maintain their playing order
+                                        var musicOriginalPosition = dialogActivityConfig.configItem.allBackgroundMusic.indexOf(modelData)
+                                        var i = 0
+                                        while(i < dialogActivityConfig.configItem.filteredBackgroundMusic.length) {
+                                            var filteredMusicName = dialogActivityConfig.configItem.filteredBackgroundMusic[i]
+                                            if(dialogActivityConfig.configItem.allBackgroundMusic.indexOf(filteredMusicName) >  musicOriginalPosition)
+                                                break
+                                            i++
                                         }
-                                        else {
-                                            dialogActivityConfig.configItem.filteredBackgroundMusic.splice(dialogActivityConfig.configItem.filteredBackgroundMusic.indexOf(modelData), 1)
-                                            if(dialogActivityConfig.configItem.filteredBackgroundMusic == 0) {
-                                                dialogActivityConfig.configItem.filteredBackgroundMusic.push(modelData)
-                                                selectedIcon.visible = false
-                                                Core.showMessageDialog(dialogBackground,
-                                                    qsTr("Disable the background music if you don't want to play them."),
-                                                    "", null,
-                                                    "", null,
-                                                    null
-                                                );
-                                            }
+                                        dialogActivityConfig.configItem.filteredBackgroundMusic.splice(i, 0, modelData)
+                                    }
+                                    else {
+                                        dialogActivityConfig.configItem.filteredBackgroundMusic.splice(dialogActivityConfig.configItem.filteredBackgroundMusic.indexOf(modelData), 1)
+                                        if(dialogActivityConfig.configItem.filteredBackgroundMusic == 0) {
+                                            dialogActivityConfig.configItem.filteredBackgroundMusic.push(modelData)
+                                            selectedIcon.visible = false
+                                            Core.showMessageDialog(dialogBackground,
+                                                qsTr("Disable the background music if you don't want to play them."),
+                                                "", null,
+                                                "", null,
+                                                null
+                                            );
                                         }
-
-                                        selectedIcon.visible = !selectedIcon.visible
                                     }
-                                    width: parent.width
-                                    height: parent.height * 0.8
-                                    theme: "dark"
 
-                                    Image {
-                                        id: selectedIcon
-                                        source: "qrc:/gcompris/src/core/resource/apply.svg"
-                                        sourceSize.width: height
-                                        sourceSize.height: height
-                                        width: height
-                                        height: parent.height / 4
-                                        anchors.bottom: parent.bottom
-                                        anchors.right: parent.right
-                                        anchors.margins: 2
-                                        visible: dialogActivityConfig.configItem.filteredBackgroundMusic ? dialogActivityConfig.configItem.filteredBackgroundMusic.indexOf(modelData) != -1 : false
-                                    }
+                                    selectedIcon.visible = !selectedIcon.visible
+                                }
+
+                                Image {
+                                    id: selectedIcon
+                                    source: "qrc:/gcompris/src/core/resource/apply.svg"
+                                    height: parent.height * 0.5
+                                    width: height
+                                    sourceSize.width: width
+                                    sourceSize.height: height
+                                    anchors.verticalCenter: parent.verticalCenter
+                                    anchors.right: parent.right
+                                    anchors.margins: GCStyle.halfMargins
+                                    visible: dialogActivityConfig.configItem.filteredBackgroundMusic ? dialogActivityConfig.configItem.filteredBackgroundMusic.indexOf(modelData) != -1 : false
                                 }
                             }
                         }
                     }
+                }
 
-                    Column {
-                        id: musicInfo
-                        spacing: 10 * ApplicationInfo.ratio
+                Column {
+                    id: musicInfo
+                    spacing: GCStyle.baseMargins
+                    width: parent.width
+                    anchors.top: musicGrid.bottom
+                    anchors.leftMargin: GCStyle.baseMargins
+                    visible: backgroundMusic.playbackState === MediaPlayer.PlayingState && !backgroundMusic.muted
+                    GCText {
+                        //: Current background music playing
+                        text: qsTr("Now Playing:")
                         width: parent.width
-                        anchors.top: musicGrid.bottom
-                        anchors.leftMargin: 20
-                        visible: backgroundMusic.playbackState === MediaPlayer.PlayingState && !backgroundMusic.muted
-                        GCText {
-                            //: Current background music playing
-                            text: qsTr("Now Playing:")
-                            width: dialogBackground.width - 30
-                            horizontalAlignment: Text.AlignHCenter
-                            color: "black"
-                            fontSize: mediumSize
-                            wrapMode: Text.WordWrap
-                        }
-                        GCText {
-                            //: Title of the current background music playing
-                            text: qsTr("Title: %1").arg(backgroundMusic.metaDataMusic[0])
-                            width: dialogBackground.width - 30
-                            horizontalAlignment: Text.AlignLeft
-                            color: "black"
-                            fontSize: smallSize
-                            wrapMode: Text.WordWrap
-                        }
-                        GCText {
-                            //: Artist of the current background music playing
-                            text: qsTr("Artist: %1").arg(backgroundMusic.metaDataMusic[1])
-                            width: dialogBackground.width - 30
-                            horizontalAlignment: Text.AlignLeft
-                            color: "black"
-                            fontSize: smallSize
-                            wrapMode: Text.WordWrap
-                        }
-                        GCText {
-                            //: Year of the current background music playing
-                            text: qsTr("Year: %1").arg(backgroundMusic.metaDataMusic[2])
-                            width: dialogBackground.width - 30
-                            horizontalAlignment: Text.AlignLeft
-                            color: "black"
-                            fontSize: smallSize
-                            wrapMode: Text.WordWrap
-                        }
-                        GCText {
-                            //: Copyright of the current background music playing
-                            text: qsTr("Copyright: %1").arg(backgroundMusic.metaDataMusic[3])
-                            width: dialogBackground.width - 30
-                            horizontalAlignment: Text.AlignLeft
-                            color: "black"
-                            fontSize: smallSize
-                            wrapMode: Text.WordWrap
-                        }
+                        horizontalAlignment: Text.AlignHCenter
+                        fontSize: mediumSize
+                        wrapMode: Text.WordWrap
+                    }
+                    GCText {
+                        //: Title of the current background music playing
+                        text: qsTr("Title: %1").arg(backgroundMusic.metaDataMusic[0])
+                        width: parent.width
+                        horizontalAlignment: Text.AlignLeft
+                        fontSize: smallSize
+                        wrapMode: Text.WordWrap
+                    }
+                    GCText {
+                        //: Artist of the current background music playing
+                        text: qsTr("Artist: %1").arg(backgroundMusic.metaDataMusic[1])
+                        width: parent.width
+                        horizontalAlignment: Text.AlignLeft
+                        fontSize: smallSize
+                        wrapMode: Text.WordWrap
+                    }
+                    GCText {
+                        //: Year of the current background music playing
+                        text: qsTr("Year: %1").arg(backgroundMusic.metaDataMusic[2])
+                        width: parent.width
+                        horizontalAlignment: Text.AlignLeft
+                        fontSize: smallSize
+                        wrapMode: Text.WordWrap
+                    }
+                    GCText {
+                        //: Copyright of the current background music playing
+                        text: qsTr("Copyright: %1").arg(backgroundMusic.metaDataMusic[3])
+                        width: parent.width
+                        horizontalAlignment: Text.AlignLeft
+                        fontSize: smallSize
+                        wrapMode: Text.WordWrap
                     }
                 }
-                // The scroll buttons
-                GCButtonScroll {
-                    id: scrollMusicList
-                    anchors.right: parent.right
-                    anchors.rightMargin: 5 * ApplicationInfo.ratio
-                    anchors.bottom: flickableList.bottom
-                    anchors.bottomMargin: 30 * ApplicationInfo.ratio
-                    width: parent.width / 20
-                    height: width * heightRatio
-                    onUp: flickableList.flick(0, 1400)
-                    onDown: flickableList.flick(0, -1400)
-                    upVisible: flickableList.atYBeginning ? false : true
-                    downVisible: flickableList.atYEnd ? false : true
-                }
             }
-            Item { width: 1; height: 10 }
-        }
-    }
-
-    GCButtonCancel {
-        onClose: {
-            parent.close()
+            // The scroll buttons
+            GCButtonScroll {
+                id: scrollItem
+                anchors.right: parent.right
+                anchors.rightMargin: GCStyle.halfMargins
+                anchors.bottom: flick.bottom
+                anchors.bottomMargin: GCStyle.halfMargins
+                onUp: flick.flick(0, 1000)
+                onDown: flick.flick(0, -1000)
+                upVisible: flick.atYBeginning ? false : true
+                downVisible: flick.atYEnd ? false : true
+            }
         }
     }
 }
