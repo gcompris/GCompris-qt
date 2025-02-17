@@ -28,6 +28,9 @@ QtObject {
     readonly property int thinBorder: Math.max(1, 2 * ApplicationInfo.ratio)
     readonly property int thinnestBorder: Math.max(1, ApplicationInfo.ratio)
 
+    // small button's height in menu config page
+    readonly property int smallButtonHeight: 30 * ApplicationInfo.ratio
+
     // border colors
     readonly property color whiteBorder: "#ffffff"
     readonly property color darkBorder: "#373737"
