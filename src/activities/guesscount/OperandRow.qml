@@ -16,19 +16,19 @@ Row {
     id: operandRow
     property alias repeater: repeater
     property int rowSum
-    spacing: background.baseMargins
+    spacing: activityBackground.baseMargins
     Rectangle {
         id: operands
         width: parent.width * 0.3
         height: parent.height
-        radius: background.baseMargins
+        radius: activityBackground.baseMargins
         color: "#E8E8E8"
         border.color: "#75D21B"  //green
-        border.width: background.tileBorder
+        border.width: activityBackground.tileBorder
 
         GCText {
             anchors.fill: parent
-            anchors.margins: 2 * background.tileBorder
+            anchors.margins: 2 * activityBackground.tileBorder
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
             fontSize: mediumSize
@@ -42,7 +42,7 @@ Row {
             id: root
             type: "operands"
             width: Math.min(70 * ApplicationInfo.ratio,
-                            (operandRow.width - operands.width) * 0.2 - background.baseMargins)
+                            (operandRow.width - operands.width) * 0.2 - activityBackground.baseMargins)
             height: operandRow.height
         }
     }

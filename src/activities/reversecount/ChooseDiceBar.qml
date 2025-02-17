@@ -43,7 +43,7 @@ Item {
             id: ok
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
             width: Math.min(75 * ApplicationInfo.ratio,
-                            Math.min((chooseDiceBar.width - background.baseMargin) * 0.33),
+                            Math.min((chooseDiceBar.width - activityBackground.baseMargin) * 0.33),
                             chooseDiceBar.height)
             visible: true
             anchors {

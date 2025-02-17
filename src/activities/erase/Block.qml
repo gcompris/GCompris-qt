@@ -16,7 +16,7 @@ Image {
     id: block
     property Item main
     property Item bar
-    property Item background
+    property Item blockBackground
     property double ix
     property double iy
     property int nbx
@@ -35,7 +35,7 @@ Image {
     property int counter: 0
 
     function getMultipleOfRatioToAdjustHeight(): real {
-        return (background.width >= background.height + 40 * ApplicationInfo.ratio) ? 0.125 : 0.625
+        return (blockBackground.width >= blockBackground.height + 40 * ApplicationInfo.ratio) ? 0.125 : 0.625
     }
 
     onEnter: {

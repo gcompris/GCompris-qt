@@ -94,7 +94,7 @@ Image {
     }
 
     function reinitBall() {
-        x = background.width * 0.5 - width * 0.5;
+        x = activityBackground.width * 0.5 - width * 0.5;
         y = leftHand.y + leftHand.height * 0.5 - height * 0.5;
         ball.scale = initScale;
         ball.rotation = 0;

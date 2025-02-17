@@ -172,10 +172,10 @@ function getDropIndex(x) {
         if(x < xVal && index == 0) {
             return 0;
         }
-        else if((xVal + itemWidth + items.background.width * 0.0025) <= x && index == (count - 1)) {
+        else if((xVal + itemWidth + items.activityBackground.width * 0.0025) <= x && index == (count - 1)) {
             return count;
         }
-        else if(xVal <= x && x < (xVal + itemWidth + items.background.width * 0.0025)) {
+        else if(xVal <= x && x < (xVal + itemWidth + items.activityBackground.width * 0.0025)) {
             return index + 1;
         }
     }

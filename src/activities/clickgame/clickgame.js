@@ -208,7 +208,7 @@ var levelProperty = [
 var currentImageId = 0
 var items
 var activity
-var background
+var activityBackground
 var bar
 var bonus
 
@@ -218,9 +218,9 @@ var isActivityStopped = false
 var createdFishes
 var component = Qt.createComponent("qrc:/gcompris/src/activities/clickgame/Fish.qml");
 
-function start(activity_, background_, bar_, bonus_, items_) {
+function start(activity_, activityBackground_, bar_, bonus_, items_) {
     activity = activity_
-    background = background_
+    activityBackground = activityBackground_
     bar = bar_
     bonus = bonus_
     items = items_
@@ -240,7 +240,7 @@ function initLevel() {
         return;
 
     destroyFishes();
-    background.source = "qrc:/gcompris/src/activities/clickgame/resource/sea" +
+    activityBackground.source = "qrc:/gcompris/src/activities/clickgame/resource/sea" +
             (items.currentLevel + 1) + ".webp"
     var nbFish = levelProperty[items.currentLevel].nbFish
     createdFishes = new Array(nbFish)
@@ -264,12 +264,12 @@ function createFish(minDuration) {
     var fishSource = fishes[Math.floor(Math.random() * fishes.length)]
     var minY = items.score.y + items.score.height
     var maxY = bar.y - fishSource.height - bar.height
-    var maxX = background.width - fishSource.width
+    var maxX = activityBackground.width - fishSource.width
     var fish = component.createObject(
-                background,
+                activityBackground,
                 {
                     "activity": activity,
-                    "background": background,
+                    "activityBackground": activityBackground,
                     "bar": bar,
                     "y": (Math.random() * (maxY - minY + 1)) + minY,
                     "x": (Math.random() * (maxX + 1)),
@@ -278,8 +278,8 @@ function createFish(minDuration) {
                     "source": "qrc:/gcompris/src/activities/clickgame/resource/" +
                               fishSource.imgName,
                     "frameCount": fishSource.nbFrame,
-                    "xSpeed": (background.width + fishSource.width * 1.1 * GCompris.ApplicationInfo.ratio) / (minDuration + Math.floor(Math.random() * 500)),
-                    "ySpeed": (background.height + fishSource.height * 1.1 * GCompris.ApplicationInfo.ratio) / (minDuration * 2 + Math.floor(Math.random() * 500))
+                    "xSpeed": (activityBackground.width + fishSource.width * 1.1 * GCompris.ApplicationInfo.ratio) / (minDuration + Math.floor(Math.random() * 500)),
+                    "ySpeed": (activityBackground.height + fishSource.height * 1.1 * GCompris.ApplicationInfo.ratio) / (minDuration * 2 + Math.floor(Math.random() * 500))
                 });
     if (fish === null) {
         // Error Handling

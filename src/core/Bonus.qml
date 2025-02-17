@@ -73,7 +73,7 @@ Image {
     signal loose
 
     Connections {
-        target: background
+        target: activityBackground
         function onStop() { haltBonus(); }
     }
 

@@ -18,7 +18,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
         anchors.fill: parent
         fillMode: Image.PreserveAspectCrop
@@ -35,7 +35,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property int currentSubLevel: 0
             property int numberOfSubLevel: 0
@@ -89,21 +89,21 @@ ActivityBase {
         Rectangle {
             id: instructionArea
             opacity: 1
-            radius: background.baseMargins
+            radius: activityBackground.baseMargins
             color: "#373737"
             height: 40 * ApplicationInfo.ratio
-            width: Math.min(320 * ApplicationInfo.ratio, parent.width - 2 * background.baseMargins)
+            width: Math.min(320 * ApplicationInfo.ratio, parent.width - 2 * activityBackground.baseMargins)
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
-            anchors.topMargin: background.baseMargins
+            anchors.topMargin: activityBackground.baseMargins
 
             GCText {
                 id: instruction
                 wrapMode: TextEdit.WordWrap
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                height: parent.height - background.baseMargins
-                width: parent.width - 2 * background.baseMargins
+                height: parent.height - activityBackground.baseMargins
+                width: parent.width - 2 * activityBackground.baseMargins
                 fontSizeMode: Text.Fit
                 color: 'white'
                 anchors.centerIn: instructionArea
@@ -114,11 +114,11 @@ ActivityBase {
         Item {
             id: layoutArea
             anchors.top: instructionArea.bottom
-            anchors.bottom: background.bottom
+            anchors.bottom: activityBackground.bottom
             anchors.bottomMargin: 1.2 * bar.height
-            anchors.left: background.left
-            anchors.right: background.right
-            anchors.margins: background.baseMargins
+            anchors.left: activityBackground.left
+            anchors.right: activityBackground.right
+            anchors.margins: activityBackground.baseMargins
         }
 
         ListModel { id: rulerModel }
@@ -130,17 +130,17 @@ ActivityBase {
             anchors.right: layoutArea.right
             height: Math.min(120 * ApplicationInfo.ratio, layoutArea.height * 0.4)
             color: "#e9e9e9"
-            radius: background.baseMargins
+            radius: activityBackground.baseMargins
             property real rulerWidth: rulerView.width - leftLimit.width
             property real rulerModelWidth: ruler.width / (rulerModel.count - 1)
             Column {
                 id: rulerViewColumn
                 width: rulerView.rulerWidth
-                height: parent.height - background.baseMargins - leftLimit.contentHeight
+                height: parent.height - activityBackground.baseMargins - leftLimit.contentHeight
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.horizontalCenterOffset: rulerView.rulerModelWidth * ((items.orientation === Qt.LeftToRight) ? -0.5 : 0.5)
                 anchors.top: parent.top
-                anchors.topMargin: background.baseMargins
+                anchors.topMargin: activityBackground.baseMargins
                 Row {
                     id: cursor
                     z: 100
@@ -233,7 +233,7 @@ ActivityBase {
 
         Rectangle {
             anchors.centerIn: leftLimit
-            width: background.baseMargins
+            width: activityBackground.baseMargins
             height: leftLimit.contentHeight
             color: "#e9e9e9"
         }
@@ -251,7 +251,7 @@ ActivityBase {
 
         Rectangle {
             anchors.centerIn: rightLimit
-            width: background.baseMargins
+            width: activityBackground.baseMargins
             height: rightLimit.contentHeight
             color: "#e9e9e9"
         }
@@ -303,9 +303,9 @@ ActivityBase {
             width: childrenRect.width
             height: layoutArea.height - rulerView.height - anchors.topMargin
             anchors.top: rulerView.bottom
-            anchors.topMargin: background.baseMargins * 2
+            anchors.topMargin: activityBackground.baseMargins * 2
             anchors.horizontalCenter: parent.horizontalCenter
-            spacing: background.baseMargins
+            spacing: activityBackground.baseMargins
             Image {
                 id: leftButton
                 source: 'qrc:/gcompris/src/core/resource/arrow_left.svg'
@@ -337,7 +337,7 @@ ActivityBase {
                 width: 80 * ApplicationInfo.ratio
                 height: 40 * ApplicationInfo.ratio
                 color: "white"
-                radius: background.baseMargins
+                radius: activityBackground.baseMargins
                 anchors.verticalCenter: leftButton.verticalCenter
                 visible: (activityMode === "number2tick")
                 GCText {
@@ -461,8 +461,8 @@ ActivityBase {
                 home()
             }
             onStartActivity: {
-                background.stop()
-                background.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 
@@ -476,10 +476,10 @@ ActivityBase {
             numberOfSubLevels: items.numberOfSubLevel
             currentSubLevel: items.currentSubLevel
             anchors.top: undefined
-            anchors.bottom: background.bottom
+            anchors.bottom: activityBackground.bottom
             anchors.bottomMargin: bar.height * 1.5
-            anchors.right: background.right
-            anchors.rightMargin: background.baseMargins
+            anchors.right: activityBackground.right
+            anchors.rightMargin: activityBackground.baseMargins
             onStop: Activity.nextSubLevel()
         }
 
@@ -499,7 +499,7 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             width: Math.min(70 * ApplicationInfo.ratio, tools.height * 0.4)
             anchors.bottom: score.top
-            anchors.bottomMargin: background.baseMargins
+            anchors.bottomMargin: activityBackground.baseMargins
             anchors.horizontalCenter: score.horizontalCenter
             onClicked: Activity.checkResult()
             visible: (items.cursor.children[items.solutionGrad].textValue !== "") || (activityMode === "number2tick")

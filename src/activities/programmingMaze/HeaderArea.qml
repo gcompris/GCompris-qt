@@ -14,8 +14,8 @@ import "../../core"
 
 Rectangle {
     id: header
-    width: background.width * 0.4
-    height: background.height / 10
+    width: activityBackground.width * 0.4
+    height: activityBackground.height / 10
     radius: 8 * ApplicationInfo.ratio
     border.width: 2 * ApplicationInfo.ratio
     border.color: "#a6d8ea"

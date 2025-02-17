@@ -23,7 +23,7 @@ ActivityBase {
     isMusicalActivity: true
 
     pageComponent: Rectangle {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         color: "#ABCDEF"
         signal start
@@ -82,7 +82,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias goodAnswerSound: goodAnswerSound
             property alias badAnswerSound: badAnswerSound
             property alias multipleStaff: multipleStaff
@@ -100,7 +100,7 @@ ActivityBase {
 
         onStart: {
             if(!ApplicationSettings.isAudioVoicesEnabled || !ApplicationSettings.isAudioEffectsEnabled) {
-                    background.audioDisabled = true;
+                    activityBackground.audioDisabled = true;
             }
             Activity.start(items);
         }
@@ -166,18 +166,18 @@ ActivityBase {
 
         Score {
             id: score
-            anchors.top: background.top
+            anchors.top: activityBackground.top
             anchors.bottom: undefined
             numberOfSubLevels: 5
-            width: background.horizontalLayout ? parent.width / 10 : (parent.width - instruction.x - instruction.width - 1.5 * anchors.rightMargin)
+            width: activityBackground.horizontalLayout ? parent.width / 10 : (parent.width - instruction.x - instruction.width - 1.5 * anchors.rightMargin)
             onStop: Activity.nextSubLevel()
         }
 
         Rectangle {
             id: instruction
             radius: 10
-            width: background.width * 0.6
-            height: background.height / 9
+            width: activityBackground.width * 0.6
+            height: activityBackground.height / 9
             anchors.horizontalCenter: parent.horizontalCenter
             opacity: 0.8
             border.width: 6
@@ -200,15 +200,15 @@ ActivityBase {
 
         MultipleStaff {
             id: multipleStaff
-            width: background.horizontalLayout ? parent.width * 0.5 : parent.width * 0.8
-            height: background.horizontalLayout ? parent.height * 0.85 : parent.height * 0.58
+            width: activityBackground.horizontalLayout ? parent.width * 0.5 : parent.width * 0.8
+            height: activityBackground.horizontalLayout ? parent.height * 0.85 : parent.height * 0.58
             nbStaves: 1
             clef: clefType
             coloredNotes: (items.mode === "coloredNotes") ? ['C', 'D', 'E', 'F', 'G', 'A', 'B'] : []
             isFlickable: false
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: instruction.bottom
-            anchors.topMargin: background.horizontalLayout ? parent.height * 0.02 : parent.height * 0.15
+            anchors.topMargin: activityBackground.horizontalLayout ? parent.height * 0.02 : parent.height * 0.15
             onNoteClicked: {
                 playNoteAudio(musicElementModel.get(noteIndex).noteName_, musicElementModel.get(noteIndex).noteType_,  musicElementModel.get(noteIndex).soundPitch_)
             }
@@ -217,7 +217,7 @@ ActivityBase {
 
         PianoOctaveKeyboard {
             id: piano
-            width: background.horizontalLayout ? parent.width * 0.5 : parent.width * 0.7
+            width: activityBackground.horizontalLayout ? parent.width * 0.5 : parent.width * 0.7
             height: parent.height * 0.3
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: bar.top
@@ -242,8 +242,8 @@ ActivityBase {
             color: "white"
             opacity: 0.5
             radius: 10
-            y: background.horizontalLayout ? piano.y : multipleStaff.y / 2 + instruction.height - height / 2
-            x: background.horizontalLayout ? multipleStaff.x + multipleStaff.width + 25 : background.width / 2 - width / 2
+            y: activityBackground.horizontalLayout ? piano.y : multipleStaff.y / 2 + instruction.height - height / 2
+            x: activityBackground.horizontalLayout ? multipleStaff.x + multipleStaff.width + 25 : activityBackground.width / 2 - width / 2
         }
 
         OptionsRow {
@@ -312,12 +312,12 @@ ActivityBase {
                 button2Text: qsTr("Continue")
                 onButton1Hit: activity.home();
                 onClose: {
-                    background.audioDisabled = false;
+                    activityBackground.audioDisabled = false;
                 }
             }
             anchors.fill: parent
             focus: true
-            active: background.audioDisabled
+            active: activityBackground.audioDisabled
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
     }

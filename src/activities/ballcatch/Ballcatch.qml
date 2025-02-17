@@ -26,7 +26,7 @@ ActivityBase {
     }
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         signal start
         signal stop
         focus: true
@@ -44,7 +44,7 @@ ActivityBase {
         }
         QtObject {
             id: items
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias ball: ball
             property alias smudgeSound: smudgeSound
@@ -107,25 +107,25 @@ ActivityBase {
 
         Image {
             id: tux
-            x: background.width * 0.5 - width * 0.5
-            y: background.height * 0.6 - height
-            sourceSize.height: Math.min(background.height * 0.3, 200 * ApplicationInfo.ratio)
+            x: activityBackground.width * 0.5 - width * 0.5
+            y: activityBackground.height * 0.6 - height
+            sourceSize.height: Math.min(activityBackground.height * 0.3, 200 * ApplicationInfo.ratio)
             source: "qrc:/gcompris/src/activities/ballcatch/resource/tux.svg"
             Behavior on opacity { PropertyAnimation { easing.type: Easing.InQuad; duration: 250 } }
         }
 
         Image {
             id: leftHand
-            x: Math.max(0, background.width * 0.5 - width * 2)
-            y: background.height * 0.5
+            x: Math.max(0, activityBackground.width * 0.5 - width * 2)
+            y: activityBackground.height * 0.5
             z: 5
-            sourceSize.height: Math.min(Math.min(background.width * 0.25, background.height * 0.25), 150 * ApplicationInfo.ratio)
+            sourceSize.height: Math.min(Math.min(activityBackground.width * 0.25, activityBackground.height * 0.25), 150 * ApplicationInfo.ratio)
             source: "qrc:/gcompris/src/activities/ballcatch/resource/hand.svg"
 
             NumberAnimation {
                 id: leftHandAnimation
                 target: leftHand; property: "x";
-                to: background.width * 0.5 - leftHand.width - 5;
+                to: activityBackground.width * 0.5 - leftHand.width - 5;
                 duration: 1000
                 easing.type: Easing.InOutQuad
             }
@@ -137,8 +137,8 @@ ActivityBase {
 
             function reinitPosition() {
                 leftHandAnimation.stop();
-                leftHand.x = Math.max(0, background.width * 0.5 - width * 2);
-                leftHand.y = background.height * 0.5;
+                leftHand.x = Math.max(0, activityBackground.width * 0.5 - width * 2);
+                leftHand.y = activityBackground.height * 0.5;
             }
 
             MultiPointTouchArea {
@@ -158,8 +158,8 @@ ActivityBase {
         Image {
             id: rightHand
             mirror: true
-            x: Math.min(background.width * 0.5 + width, background.width - width);
-            y: background.height * 0.5
+            x: Math.min(activityBackground.width * 0.5 + width, activityBackground.width - width);
+            y: activityBackground.height * 0.5
             z: 5
             sourceSize.height: leftHand.sourceSize.height
             source: "qrc:/gcompris/src/activities/ballcatch/resource/hand.svg"
@@ -171,14 +171,14 @@ ActivityBase {
 
             function reinitPosition() {
                 rightHandAnimation.stop();
-                rightHand.x = Math.min(background.width * 0.5 + width, background.width - width);
-                rightHand.y = background.height * 0.5;
+                rightHand.x = Math.min(activityBackground.width * 0.5 + width, activityBackground.width - width);
+                rightHand.y = activityBackground.height * 0.5;
             }
 
             NumberAnimation {
                 id: rightHandAnimation
                 target: rightHand; property: "x";
-                to: background.width * 0.5 + 5;
+                to: activityBackground.width * 0.5 + 5;
                 duration: 1000;
                 easing.type: Easing.InOutQuad
             }
@@ -199,10 +199,10 @@ ActivityBase {
         Image {
             id: leftShift
             z: 10
-            x: background.width * 0.2 - width * 0.5
-            y: background.height * 0.5 - height
+            x: activityBackground.width * 0.2 - width * 0.5
+            y: activityBackground.height * 0.5 - height
             source: "qrc:/gcompris/src/activities/ballcatch/resource/arrow_key.svg"
-            sourceSize.width: Math.min(100 * ApplicationInfo.ratio, Math.min(background.height * 0.2, background.width * 0.2))
+            sourceSize.width: Math.min(100 * ApplicationInfo.ratio, Math.min(activityBackground.height * 0.2, activityBackground.width * 0.2))
             opacity: items.leftPressed ? 1 : 0.5
             visible: !ApplicationInfo.isMobile
         }
@@ -211,7 +211,7 @@ ActivityBase {
             id: rightShift
             z: 10
             mirror: true
-            x: background.width * 0.8 - width * 0.5
+            x: activityBackground.width * 0.8 - width * 0.5
             y: leftShift.y
             source: "qrc:/gcompris/src/activities/ballcatch/resource/arrow_key.svg"
             sourceSize.width: leftShift.sourceSize.width

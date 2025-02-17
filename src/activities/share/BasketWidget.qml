@@ -16,8 +16,8 @@ WidgetOption {
     availableItems: ""
 
     releaseElement: function() {
-        var newCoordinate = widget.mapToItem(background, element.x, element.y)
-        if (background.contains(newCoordinate.x, newCoordinate.y, grid)) {
+        var newCoordinate = widget.mapToItem(activityBackground, element.x, element.y)
+        if (activityBackground.contains(newCoordinate.x, newCoordinate.y, grid)) {
             if (widget.canDrag) {
                 widget.canDrag = false
                 widget.element.opacity = 0.6

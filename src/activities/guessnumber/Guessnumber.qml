@@ -23,7 +23,7 @@ ActivityBase {
     property alias currentActivity: activity.activityInfo
 
     pageComponent: Rectangle {
-        id: background
+        id: activityBackground
         color: "#5a3820"
 
         readonly property int baseMargins: 10 * ApplicationInfo.ratio
@@ -41,7 +41,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias helico: helico
@@ -51,7 +51,7 @@ ActivityBase {
             readonly property var levels: activity.datasets.length !== 0 ? activity.datasets : null
             property int currentMax: 0
             property alias numpad: numpad
-            property int maxSize: background.height * 0.16
+            property int maxSize: activityBackground.height * 0.16
             property int size: 70 * ApplicationInfo.ratio
         }
 
@@ -90,20 +90,20 @@ ActivityBase {
         Rectangle {
             id: textAreaBg
             anchors.centerIn: textArea
-            width: textArea.contentWidth + 2 * background.baseMargins
-            height: textArea.contentHeight + background.baseMargins
+            width: textArea.contentWidth + 2 * activityBackground.baseMargins
+            height: textArea.contentHeight + activityBackground.baseMargins
             color: "#373737"
-            radius: background.baseMargins
+            radius: activityBackground.baseMargins
         }
 
         GCText {
             id: textArea
             anchors.top: parent.top
-            anchors.topMargin: background.baseMargins
+            anchors.topMargin: activityBackground.baseMargins
             anchors.left: parent.left
-            anchors.leftMargin: numpad.columnWidth + background.baseMargins
+            anchors.leftMargin: numpad.columnWidth + activityBackground.baseMargins
             anchors.right: parent.right
-            anchors.rightMargin: numpad.columnWidth + background.baseMargins
+            anchors.rightMargin: numpad.columnWidth + activityBackground.baseMargins
             height: 25 * ApplicationInfo.ratio
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
@@ -117,9 +117,9 @@ ActivityBase {
         AnswerArea {
             id: answerArea
             anchors.top: textAreaBg.bottom
-            anchors.topMargin: background.baseMargins
+            anchors.topMargin: activityBackground.baseMargins
             anchors.right: textArea.right
-            anchors.rightMargin: background.baseMargins
+            anchors.rightMargin: activityBackground.baseMargins
             width: textArea.width * 0.3
             height: textArea.height
 
@@ -128,21 +128,21 @@ ActivityBase {
         Rectangle {
             id: userInfoBg
             anchors.centerIn: userInfo
-            width: userInfo.contentWidth + 2 * background.baseMargins
-            height: userInfo.contentHeight + background.baseMargins
+            width: userInfo.contentWidth + 2 * activityBackground.baseMargins
+            height: userInfo.contentHeight + activityBackground.baseMargins
             visible: userInfo.text != ""
             color: "#f2f2f2"
-            radius: background.baseMargins
+            radius: activityBackground.baseMargins
         }
 
         GCText {
             id: userInfo
             anchors.top: textAreaBg.bottom
-            anchors.topMargin: background.baseMargins
+            anchors.topMargin: activityBackground.baseMargins
             anchors.left: textArea.left
-            anchors.leftMargin: background.baseMargins
+            anchors.leftMargin: activityBackground.baseMargins
             anchors.right: answerArea.left
-            anchors.rightMargin: background.baseMargins
+            anchors.rightMargin: activityBackground.baseMargins
             height: answerArea.height
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
@@ -190,8 +190,8 @@ ActivityBase {
                 home()
             }
             onStartActivity: {
-                background.stop()
-                background.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 

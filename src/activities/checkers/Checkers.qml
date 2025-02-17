@@ -27,7 +27,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
         signal start
@@ -42,11 +42,11 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property var barHeightAddon: ApplicationSettings.isBarHidden ? textMessage.height : bar.height
-            property bool isPortrait: (background.height >= background.width)
+            property bool isPortrait: (activityBackground.height >= activityBackground.width)
             property int cellSize: boardBg.width * 0.098
             property var fen: activity.fen
             property bool twoPlayer: activity.twoPlayers
@@ -177,15 +177,15 @@ ActivityBase {
 
         Rectangle {
             id: layoutArea
-            width: background.width
-            height: background.height - textMessage.height - items.barHeightAddon * 1.1
+            width: activityBackground.width
+            height: activityBackground.height - textMessage.height - items.barHeightAddon * 1.1
             opacity: 0
-            anchors.horizontalCenter: background.horizontalCenter
+            anchors.horizontalCenter: activityBackground.horizontalCenter
         }
 
         Rectangle {
             id: controlsArea
-            anchors.left: background.left
+            anchors.left: activityBackground.left
             anchors.right: boardBg.left
             anchors.top: boardBg.top
             anchors.bottom: boardBg.bottom
@@ -197,8 +197,8 @@ ActivityBase {
                 name: "portraitLayout"; when: items.isPortrait
                 PropertyChanges {
                     layoutArea {
-                        width: background.width * 0.86
-                        height: background.height - textMessage.height - bar.height * 1.1
+                        width: activityBackground.width * 0.86
+                        height: activityBackground.height - textMessage.height - bar.height * 1.1
                     }
                 }
                 PropertyChanges {
@@ -229,8 +229,8 @@ ActivityBase {
                 name: "horizontalLayout"; when: !items.isPortrait
                 PropertyChanges {
                     layoutArea {
-                        width: background.width
-                        height: background.height - textMessage.height - items.barHeightAddon * 1.1
+                        width: activityBackground.width
+                        height: activityBackground.height - textMessage.height - items.barHeightAddon * 1.1
                     }
                 }
                 PropertyChanges {

@@ -77,10 +77,10 @@ function stop() {
 function initLevel() {
     stop();
     items.planetFrequency = levels[items.currentLevel].planetFrequency;
-    items.background.initSpace();
+    items.activityBackground.initSpace();
     items.explosion.hide();
     items.spaceship.opacity = 100;
-    items.spaceshipX = items.background.width * 0.5;
+    items.spaceshipX = items.activityBackground.width * 0.5;
     items.stationDown.stop();
     items.station.y = -items.station.height;
     controlSpeed = 0.2 * (items.currentLevel * 0.25 + 1);

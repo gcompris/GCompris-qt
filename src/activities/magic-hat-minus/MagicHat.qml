@@ -24,7 +24,7 @@ ActivityBase {
     property string mode: "minus"
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: Activity.url + "background.svg"
         sourceSize.width: width
@@ -55,7 +55,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias smudgeSound: smudgeSound
             property int currentLevel: activity.currentLevel
             readonly property var levels: activity.datasets
@@ -76,10 +76,10 @@ ActivityBase {
         Item {
             id: layoutArea
             anchors.fill: parent
-            anchors.margins: background.baseMargins
-            anchors.topMargin: 5 * background.baseMargins
-            anchors.bottomMargin: background.horizontalLayout ? bar.height * 1.5 :
-                                    bar.height * 1.5 + theHat.height + background.baseMargins
+            anchors.margins: activityBackground.baseMargins
+            anchors.topMargin: 5 * activityBackground.baseMargins
+            anchors.bottomMargin: activityBackground.horizontalLayout ? bar.height * 1.5 :
+                                    bar.height * 1.5 + theHat.height + activityBackground.baseMargins
 
             Image {
                 // The math operation
@@ -87,8 +87,8 @@ ActivityBase {
                 source: mode == "minus" ? Activity.url + "minus.svg" :
                 Activity.url + "plus.svg"
                 anchors.right: operationLayout.left
-                anchors.rightMargin: background.baseMargins
-                width: background.starSize
+                anchors.rightMargin: activityBackground.baseMargins
+                width: activityBackground.starSize
                 height: width
                 sourceSize.width: width
                 y: secondRow.y
@@ -99,17 +99,17 @@ ActivityBase {
                 anchors {
                     top: parent.top
                     horizontalCenter: parent.horizontalCenter
-                    horizontalCenterOffset: (operatorImage.width + background.baseMargins) * 0.5
+                    horizontalCenterOffset: (operatorImage.width + activityBackground.baseMargins) * 0.5
                 }
                 width: items.coefficientVisible ?
-                    (background.starSize + background.halfMargins) * 11 + background.starSize :
-                    (background.starSize + background.halfMargins) * 10
+                    (activityBackground.starSize + activityBackground.halfMargins) * 11 + activityBackground.starSize :
+                    (activityBackground.starSize + activityBackground.halfMargins) * 10
                 height: parent.height
-                spacing: background.baseMargins
+                spacing: activityBackground.baseMargins
                 Column {
                     id: firstRow
-                    height: background.starSize * 3 + background.halfMargins * 2
-                    spacing: background.halfMargins
+                    height: activityBackground.starSize * 3 + activityBackground.halfMargins * 2
+                    spacing: activityBackground.halfMargins
                     z: 10
                     Repeater {
                         id: repeaterFirstRow
@@ -128,7 +128,7 @@ ActivityBase {
                 Column {
                     id: secondRow
                     height: firstRow.height
-                    spacing: background.halfMargins
+                    spacing: activityBackground.halfMargins
                     z: 9
                     Repeater {
                         id: repeaterSecondRow
@@ -146,16 +146,16 @@ ActivityBase {
                 }
 
                 Rectangle {
-                    x: - background.halfMargins * 0.5
+                    x: - activityBackground.halfMargins * 0.5
                     width: operationLayout.width
-                    height: background.halfMargins
+                    height: activityBackground.halfMargins
                     color: "white"
                 }
 
                 Column {
                     id: answerRow
                     height: firstRow.height
-                    spacing: background.halfMargins
+                    spacing: activityBackground.halfMargins
                     Repeater {
                         id: repeaterAnswerRow
                         model: 3
@@ -187,8 +187,8 @@ ActivityBase {
                 home()
             }
             onStartActivity: {
-                background.stop()
-                background.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 
@@ -217,9 +217,9 @@ ActivityBase {
             anchors.bottom: parent.bottom
             anchors.bottomMargin: bar.height * 1.5
             x: Math.max(20 * ApplicationInfo.ratio, operationLayout.x * 0.5 - width * 0.5)
-            height: Math.min(100 * ApplicationInfo.ratio, (background.height - anchors.bottomMargin) * 0.2)
+            height: Math.min(100 * ApplicationInfo.ratio, (activityBackground.height - anchors.bottomMargin) * 0.2)
             width: height
-            starsSize: background.starSize
+            starsSize: activityBackground.starSize
         }
 
         BarButton {
@@ -240,11 +240,11 @@ ActivityBase {
 
         Rectangle {
             id: introTextBG
-            width: introText.contentWidth + 2 * background.baseMargins
-            height: introText.contentHeight + background.baseMargins
+            width: introText.contentWidth + 2 * activityBackground.baseMargins
+            height: introText.contentHeight + activityBackground.baseMargins
             anchors.centerIn: introText
             color: "#373737"
-            radius: background.baseMargins
+            radius: activityBackground.baseMargins
             visible: introText.visible
         }
 

@@ -22,7 +22,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: Activity.url + "background.svg"
         fillMode: Image.PreserveAspectCrop
         sourceSize.width: width
@@ -39,7 +39,7 @@ ActivityBase {
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias waterSound: waterSound
             property alias darkenSound: darkenSound
             property alias fireman: fireman
@@ -170,7 +170,7 @@ ActivityBase {
                         if(items.currentLock <= part.index && !Activity.movedOut) {
                             items.currentLock = part.index
                             if(items.currentLock >= items.lastLock) {
-                                background.win()
+                                activityBackground.win()
                                 waterSound.play()
                             } else {
                                 Activity.playAudioFx()

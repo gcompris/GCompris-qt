@@ -21,10 +21,10 @@ Item {
 
     Rectangle {
         anchors.centerIn: hiddenText
-        width: hiddenText.contentWidth + 2 * background.baseMargins
-        height: hiddenText.contentHeight + background.baseMargins
+        width: hiddenText.contentWidth + 2 * activityBackground.baseMargins
+        height: hiddenText.contentHeight + activityBackground.baseMargins
         color: "#f2f2f2"
-        radius: background.baseMargins
+        radius: activityBackground.baseMargins
     }
 
     GCText {

@@ -34,8 +34,8 @@ Item {
     onHideToolbar: toolButton.showToolBar = false
 
     property int minIconWidth: listWidget.hori ?
-        Math.min((background.width - items.toolsMargin) / 6 - 10 * ApplicationInfo.ratio, 70 * ApplicationInfo.ratio) :
-        Math.min((background.height - items.toolsMargin - bar.height * 2 - 10 * ApplicationInfo.ratio) / 6, 70 * ApplicationInfo.ratio)
+        Math.min((activityBackground.width - items.toolsMargin) / 6 - 10 * ApplicationInfo.ratio, 70 * ApplicationInfo.ratio) :
+        Math.min((activityBackground.height - items.toolsMargin - bar.height * 2 - 10 * ApplicationInfo.ratio) / 6, 70 * ApplicationInfo.ratio)
 
     ListModel {
         id: mymodel
@@ -44,7 +44,7 @@ Item {
     Grid {
         id: view
         width: listWidget.hori ? inputComponentsContainer.width : 2 * bar.height
-        height: listWidget.hori ? background.height - 2 * bar.height : bar.height
+        height: listWidget.hori ? activityBackground.height - 2 * bar.height : bar.height
         spacing: 5
         z: 20
         columns: listWidget.hori ? 1 : nbItemsByGroup + 2

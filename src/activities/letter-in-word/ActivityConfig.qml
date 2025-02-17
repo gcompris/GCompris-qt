@@ -15,7 +15,7 @@ import "qrc:/gcompris/src/core/core.js" as Core
 
 Item {
     id: activityConfiguration
-    property Item background
+    property Item activityBackground
     property alias localeBox: localeBox
     property string locale: "system"
     property alias normalModeConfig: normalModeConfig
@@ -52,7 +52,7 @@ Item {
         GCComboBox {
             id: letterCaseBox
             label: qsTr("Select the case for the letters to search")
-            background: activityConfiguration.background
+            activityBackground: activityConfiguration.activityBackground
             model: [
             {"text": qsTr("Mixed Case"), "value": Font.MixedCase},
             {"text": qsTr("Upper Case"), "value": Font.AllUppercase},
@@ -65,7 +65,7 @@ Item {
         GCComboBox {
             id: localeBox
             model: langs.languages
-            background: activityConfiguration.background
+            activityBackground: activityConfiguration.activityBackground
             label: qsTr("Select your locale")
         }
     }

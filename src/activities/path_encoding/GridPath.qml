@@ -21,7 +21,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Rectangle {
-        id: background
+        id: activityBackground
         color: "#42993E"
         anchors.fill: parent
         signal start
@@ -50,7 +50,7 @@ ActivityBase {
             property alias movesGridView: moveBar.movesGridView
             property alias mapListModel: mapListModel
             property alias movesListModel: movesListModel
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
         }
@@ -252,13 +252,13 @@ ActivityBase {
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
                 // restart activity on saving
-                background.start()
+                activityBackground.start()
             }
             onClose: {
                 home()
             }
             onStartActivity: {
-                background.start()
+                activityBackground.start()
             }
         }
 

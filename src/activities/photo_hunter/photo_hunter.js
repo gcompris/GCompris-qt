@@ -89,7 +89,7 @@ function stop() {
 }
 
 function initLevel() {
-    items.background.startedHelp = false
+    items.activityBackground.startedHelp = false
     setUp()
 }
 
@@ -145,7 +145,7 @@ function photoClicked(item, index) {
 
         // all good; check if all the differences have been spotted
         item.good++
-        items.background.checkAnswer()
+        items.activityBackground.checkAnswer()
     }
 }
 

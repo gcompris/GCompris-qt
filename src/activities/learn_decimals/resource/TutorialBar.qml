@@ -13,8 +13,8 @@ import GCompris 1.0
 
 Item {
     id: tutorialBar
-    width: background.horizontalLayout ? tutorialBar.cellSize * 10 : tutorialBar.cellSize
-    height: background.horizontalLayout ? tutorialBar.cellSize : tutorialBar.cellSize * 10
+    width: activityBackground.horizontalLayout ? tutorialBar.cellSize * 10 : tutorialBar.cellSize
+    height: activityBackground.horizontalLayout ? tutorialBar.cellSize : tutorialBar.cellSize * 10
     property int cellSize: 10
 
     property alias model: rowRepeater.model
@@ -24,7 +24,7 @@ Item {
         anchors.fill: parent
         rows: 10
         columns: 10
-        flow: background.horizontalLayout ? Grid.LeftToRight : Grid.TopToBottom
+        flow: activityBackground.horizontalLayout ? Grid.LeftToRight : Grid.TopToBottom
 
         Repeater {
             id: rowRepeater

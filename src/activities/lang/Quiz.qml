@@ -21,7 +21,7 @@ Item {
     id: quiz
     opacity: 0
 
-    property alias background: background
+    property alias activityBackground: activityBackground
     property alias bonus: bonus
     property alias score: score
     property alias wordImage: wordImage
@@ -30,7 +30,7 @@ Item {
     property alias wordListView: wordListView
     property alias parser: parser
     property var goodWord
-    property bool horizontalLayout: background.width >= background.height
+    property bool horizontalLayout: activityBackground.width >= activityBackground.height
     property bool buttonsBlocked: false
 
     function init(loadedItems_, wordList_, mode_) {
@@ -40,7 +40,7 @@ Item {
     }
 
     function restoreFocus() {
-        background.forceActiveFocus();
+        activityBackground.forceActiveFocus();
     }
 
     onGoodWordChanged: Activity.playWord(goodWord.voice)
@@ -48,7 +48,7 @@ Item {
     Behavior on opacity { PropertyAnimation { duration: 200 } }
 
     Item {
-        id: background
+        id: activityBackground
         anchors.fill: parent
 
         property bool keyNavigation: false
@@ -116,11 +116,11 @@ Item {
             Item {
                 id: imageContainer
                 width: quiz.horizontalLayout
-                       ? background.width  - wordListView.width - gridId.spacing * 3
+                       ? activityBackground.width  - wordListView.width - gridId.spacing * 3
                        : wordListView.width
                 height: quiz.horizontalLayout
                         ? wordListView.height
-                        : background.height - bar.height - wordListView.height - gridId.spacing * 3
+                        : activityBackground.height - bar.height - wordListView.height - gridId.spacing * 3
 
                 Rectangle {
                     id: imageFrame
@@ -180,11 +180,11 @@ Item {
             ListView {
                 id: wordListView
                 width: quiz.horizontalLayout
-                       ? background.width * 0.55
-                       : background.width - gridId.anchors.margins * 2
+                       ? activityBackground.width * 0.55
+                       : activityBackground.width - gridId.anchors.margins * 2
                 height: quiz.horizontalLayout
-                        ? background.height - bar.height
-                        : (background.height - bar.height) * 0.6
+                        ? activityBackground.height - bar.height
+                        : (activityBackground.height - bar.height) * 0.6
                 spacing: 2 * ApplicationInfo.ratio
                 orientation: Qt.Vertical
                 verticalLayoutDirection: ListView.TopToBottom
@@ -197,7 +197,7 @@ Item {
                     height: wordListView.buttonHeight
                     color: "#AAFFFFFF"
                     radius: 5
-                    visible: background.keyNavigation
+                    visible: activityBackground.keyNavigation
                     y: wordListView.currentItem ? wordListView.currentItem.y : 0
                     Behavior on y {
                         SpringAnimation {

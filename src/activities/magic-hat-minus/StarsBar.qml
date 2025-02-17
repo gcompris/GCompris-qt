@@ -13,7 +13,7 @@ import "../../core"
 
 Item {
     id: item
-    height: background.starSize
+    height: activityBackground.starSize
     property int barGroupIndex
     property int barIndex
     property int nbStarsOn: 0
@@ -27,7 +27,7 @@ Item {
     Row {
         id: rowlayout
         height: parent.height
-        spacing: background.halfMargins
+        spacing: activityBackground.halfMargins
         GCText {
             id: text
             visible: items.coefficientVisible
@@ -38,8 +38,8 @@ Item {
             fontSizeMode: Text.Fit
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
-            width: background.starSize * 2
-            height: background.starSize
+            width: activityBackground.starSize * 2
+            height: activityBackground.starSize
             color: "white"
         }
         Repeater {
@@ -47,8 +47,8 @@ Item {
             model: item.opacity == 1 ? 10 : 0
             Item {
                 id: star
-                width: background.starSize
-                height: background.starSize
+                width: activityBackground.starSize
+                height: activityBackground.starSize
                 property alias starFixed: starFixed
                 property alias starToMove: starToMove
                 Star {

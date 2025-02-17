@@ -25,7 +25,7 @@ ActivityBase {
     property string url: "qrc:/gcompris/src/activities/submarine/resource/"
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: url + "background.svg"
         anchors.fill: parent
         sourceSize.height: parent.height
@@ -36,7 +36,7 @@ ActivityBase {
         onVisibleChanged: visible ? physicalWorld.running = true :
                                     physicalWorld.running = false
 
-        property bool hori: background.width >= background.height
+        property bool hori: activityBackground.width >= activityBackground.height
 
         signal start
         signal stop
@@ -95,7 +95,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias crown: crown
@@ -152,17 +152,17 @@ ActivityBase {
         Item {
             id: waterLevel
             x: 0
-            y: background.height / 15
+            y: activityBackground.height / 15
         }
 
         Rectangle {
             id: maximumWaterDepth
 
-            width: background.width
+            width: activityBackground.width
             height: 10
             color: "transparent"
 
-            y: background.height * 0.65
+            y: activityBackground.height * 0.65
 
             Body {
                 id: maxDepthBody
@@ -306,7 +306,7 @@ ActivityBase {
                 }else {
                     depthToMove = yPosition - submarineImage.y
                 }
-                submarine.velocity.y = ballastTankDiveSpeed * (depthToMove / background.width)
+                submarine.velocity.y = ballastTankDiveSpeed * (depthToMove / activityBackground.width)
             }
 
             Timer {
@@ -373,7 +373,7 @@ ActivityBase {
                 property int currentWaterLevel: bar.level < 7 ? centralBallastTank.waterLevel : leftBallastTank.waterLevel + rightBallastTank.waterLevel
                 property int totalWaterLevel: bar.level < 7 ? centralBallastTank.maxWaterLevel : leftBallastTank.maxWaterLevel + rightBallastTank.maxWaterLevel
 
-                width: background.width / 9
+                width: activityBackground.width / 9
                 sourceSize.width: submarineImage.width
                 fillMode: Image.PreserveAspectFit
 
@@ -383,7 +383,7 @@ ActivityBase {
                 }
 
                 onXChanged: {
-                    if (submarineImage.x >= background.width) {
+                    if (submarineImage.x >= activityBackground.width) {
                         Activity.finishLevel(true)
                     }
                 }
@@ -548,14 +548,14 @@ ActivityBase {
         Rectangle {
             id: upperGate
             visible: (bar.level > 1) ? true : false
-            width: background.width / 18
-            height: isGateOpen ? background.height * (5 / 36) : background.height * (5 / 12) + 4
+            width: activityBackground.width / 18
+            height: isGateOpen ? activityBackground.height * (5 / 36) : activityBackground.height * (5 / 12) + 4
             y: -2
             z: 2
             color: "#9E948A"
             border.color: "#766C62"
             border.width: 2
-            anchors.right: background.right
+            anchors.right: activityBackground.right
             anchors.rightMargin: -2
 
             property bool isGateOpen: false
@@ -591,13 +591,13 @@ ActivityBase {
             id: lowerGate
             z: 1
             visible: upperGate.visible
-            width: background.width / 18
-            height: background.height * (5 / 12) - subSchemaImage.height / 1.4
-            y: background.height * (5 / 12)
+            width: activityBackground.width / 18
+            height: activityBackground.height * (5 / 12) - subSchemaImage.height / 1.4
+            y: activityBackground.height * (5 / 12)
             color: "#9E948A"
             border.color: "#766C62"
             border.width: 2
-            anchors.right:background.right
+            anchors.right:activityBackground.right
             anchors.rightMargin: -2
 
             Body {
@@ -623,10 +623,10 @@ ActivityBase {
 
         Rectangle {
             id: subSchemaImage
-            width: background.width/1.3
-            height: background.height/4
-            x: background.width/9
-            y: background.height/1.5
+            width: activityBackground.width/1.3
+            height: activityBackground.height/4
+            x: activityBackground.width/9
+            y: activityBackground.height/1.5
             visible: false
         }
 
@@ -653,8 +653,8 @@ ActivityBase {
                 upperGate.isGateOpen = false
             }
 
-            x: background.width / 2
-            y: background.height - (subSchemaImage.height * 2)
+            x: activityBackground.width / 2
+            y: activityBackground.height - (subSchemaImage.height * 2)
             z: 1
 
             Body {
@@ -687,13 +687,13 @@ ActivityBase {
             z: 1
 
             leftLimit: 0
-            rightLimit: background.width - whale.width - (upperGate.visible ? upperGate.width : 0)
+            rightLimit: activityBackground.width - whale.width - (upperGate.visible ? upperGate.width : 0)
         }
 
         Image {
             id: ship
 
-            width: background.width / 9
+            width: activityBackground.width / 9
             sourceSize.width: ship.width
             fillMode: Image.PreserveAspectFit
 
@@ -706,7 +706,7 @@ ActivityBase {
 
             property bool movingLeft: true
             property bool collided: false
-            property real initialXPosition: background.width - ship.width - (upperGate.visible ? upperGate.width : 0)
+            property real initialXPosition: activityBackground.width - ship.width - (upperGate.visible ? upperGate.width : 0)
             property real horizontalSpeed: 1
 
             function reset() {
@@ -754,7 +754,7 @@ ActivityBase {
                 if (x <= 0) {
                     rotateShipLeft.start()
                     movingLeft = false
-                } else if (x >= background.width - ship.width - (upperGate.visible ? upperGate.width : 0)) {
+                } else if (x >= activityBackground.width - ship.width - (upperGate.visible ? upperGate.width : 0)) {
                     rotateShipRight.start()
                     movingLeft = true
                 }
@@ -786,7 +786,7 @@ ActivityBase {
 
         Image {
             id: rock2
-            width: background.width / 6
+            width: activityBackground.width / 6
             height: rock2.width * 0.48
             z: 5
 
@@ -880,8 +880,8 @@ ActivityBase {
 
         Image {
             id: rock3
-            width: background.width 
-            height: background.height * 0.25
+            width: activityBackground.width 
+            height: activityBackground.height * 0.25
             sourceSize.width: rock3.width
             sourceSize.height: rock3.height
 
@@ -911,37 +911,37 @@ ActivityBase {
         Controls {
             id: controls
             z: 10
-            enginePosition.x: background.width * 0.1
+            enginePosition.x: activityBackground.width * 0.1
             enginePosition.y: buttonPlusY + buttonSize * 0.2
-            engineWidth: background.width / 8
+            engineWidth: activityBackground.width / 8
             engineHeight: hori ? buttonSize * 1.8 : buttonSize * 2.5
             submarineHorizontalSpeed: submarine.currentFinalVelocity * 1000
 
             leftTankVisible: bar.level >= 7 ? true : false
-            leftBallastTankPosition.x: background.width * 0.35
+            leftBallastTankPosition.x: activityBackground.width * 0.35
             leftBallastTankPosition.y: enginePosition.y
-            leftBallastTankWidth: background.width / 8
+            leftBallastTankWidth: activityBackground.width / 8
             leftBallastTankHeight: engineHeight
 
             centralTankVisible:  bar.level < 7 ? true : false
-            centralBallastTankPosition.x: background.width * 0.45
+            centralBallastTankPosition.x: activityBackground.width * 0.45
             centralBallastTankPosition.y: enginePosition.y
-            centralBallastTankWidth: background.width / 8
+            centralBallastTankWidth: activityBackground.width / 8
             centralBallastTankHeight: engineHeight
 
             rightTankVisible:  bar.level >= 7 ? true : false
-            rightBallastTankPosition.x: background.width * 0.6
+            rightBallastTankPosition.x: activityBackground.width * 0.6
             rightBallastTankPosition.y: enginePosition.y
-            rightBallastTankWidth: background.width / 8
+            rightBallastTankWidth: activityBackground.width / 8
             rightBallastTankHeight: engineHeight
 
             divingPlaneVisible: true
-            divingPlanePosition.x: background.width * 0.8
+            divingPlanePosition.x: activityBackground.width * 0.8
             divingPlanePosition.y: enginePosition.y + (engineHeight * 0.5) - (divingPlaneHeight * 0.5)
-            divingPlaneWidth: hori ? background.width * 0.08 : background.width * 0.12
+            divingPlaneWidth: hori ? activityBackground.width * 0.08 : activityBackground.width * 0.12
             divingPlaneHeight: divingPlaneWidth * 0.33
             buttonSize: hori ? subSchemaImage.height * 0.3 : subSchemaImage.height * 0.2
-            buttonPlusY: hori ? background.height * 0.61 : background.height * 0.63
+            buttonPlusY: hori ? activityBackground.height * 0.61 : activityBackground.height * 0.63
             buttonMinusY: enginePosition.y + engineHeight - buttonSize * 0.8
         }
 

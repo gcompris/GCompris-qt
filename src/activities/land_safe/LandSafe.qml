@@ -37,7 +37,7 @@ ActivityBase {
                          Activity.initLevel();
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
 
         source: Activity.baseUrl + "/background.svg";
         anchors.centerIn: parent
@@ -89,7 +89,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias bar: bar
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
@@ -120,7 +120,7 @@ ActivityBase {
             property string fuelText: "100"
             property double lastVelocity: 0.0
             property double gravity: 0.0
-            property double scale: background.height / 400
+            property double scale: activityBackground.height / 400
             property double zoom: 1.0
             property bool onScreenControls: /* items.world.running && */ true
         }
@@ -170,15 +170,15 @@ ActivityBase {
                 } else
                     items.fuel = 100;
                 items.fuelText = Activity.minimum3Chars(items.fuel);
-                if (items.rocket.x > background.width)
+                if (items.rocket.x > activityBackground.width)
                     items.rocket.x = -items.rocket.width;
                 if (items.rocket.x < -items.rocket.width)
-                    items.rocket.x = background.width;
+                    items.rocket.x = activityBackground.width;
 
                 if (items.rocket.y < 0)
-                    background.changeZoom(items.zoom / 2);
+                    activityBackground.changeZoom(items.zoom / 2);
                 else if (Activity.zoomStack.length > 0 && items.altitude < Activity.zoomStack[0]-1)
-                    background.changeZoom(items.zoom * 2);
+                    activityBackground.changeZoom(items.zoom * 2);
             }
         }
 
@@ -564,13 +564,13 @@ ActivityBase {
         Item {
             id: osdWrapper
 
-            anchors.right: background.right
+            anchors.right: activityBackground.right
             anchors.rightMargin: 10 * ApplicationInfo.ratio
             anchors.bottom: bar.top
             anchors.bottomMargin: 20 * ApplicationInfo.ratio
-            anchors.top: background.top
+            anchors.top: activityBackground.top
             width: 200
-            height: background.height
+            height: activityBackground.height
             z: 2
             property int itemsMargin: 6 * ApplicationInfo.ratio
 
@@ -653,7 +653,7 @@ ActivityBase {
 
         Column {
             id: upDownControl
-            anchors.right: background.right
+            anchors.right: activityBackground.right
             anchors.rightMargin: accelerometer.width
             anchors.bottom: bar.top
             anchors.bottomMargin: 32 * ApplicationInfo.ratio + gravityText.height + planetText.height
@@ -735,8 +735,8 @@ ActivityBase {
                 home();
             }
             onStartActivity: {
-                background.stop();
-                background.start();
+                activityBackground.stop();
+                activityBackground.start();
             }
         }
 
@@ -776,7 +776,7 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
             width: 75 * ApplicationInfo.ratio
             visible: false
-            anchors.centerIn: background
+            anchors.centerIn: activityBackground
             onClicked: {
                 visible = false;
                 items.world.running = true;

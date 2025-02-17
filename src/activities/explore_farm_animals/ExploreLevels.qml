@@ -31,7 +31,7 @@ ActivityBase {
     isMusicalActivity: needsVoices
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
         width: parent.width
         height: parent.height
@@ -50,7 +50,7 @@ ActivityBase {
             source: dataset.item.backgroundImage
             sourceSize.width: width
             sourceSize.height: width
-            width: 3000 * background.playRatio
+            width: 3000 * activityBackground.playRatio
             height: width
             anchors.centerIn: parent
         }
@@ -113,7 +113,7 @@ ActivityBase {
             Activity.start(items, url, numberOfLevels)
             if(activity.needsVoices === true) {
                 if(!ApplicationSettings.isAudioVoicesEnabled || !ApplicationSettings.isAudioEffectsEnabled)
-                    background.audioDisabled = true
+                    activityBackground.audioDisabled = true
             }
         }
         onStop: { Activity.stop() }
@@ -229,10 +229,10 @@ ActivityBase {
             AnimalLevels {
                 questionId: index
                 source: dataset.item.tab[index].image
-                x: Math.round(background.playX + background.playWidth * dataset.item.tab[index].x - width / 2)
-                y: Math.round(background.playY + background.playHeight * dataset.item.tab[index].y - height / 2)
-                width: Math.round(background.playWidth * dataset.item.tab[index].width)
-                height: Math.round(background.playHeight * dataset.item.tab[index].height)
+                x: Math.round(activityBackground.playX + activityBackground.playWidth * dataset.item.tab[index].x - width / 2)
+                y: Math.round(activityBackground.playY + activityBackground.playHeight * dataset.item.tab[index].y - height / 2)
+                width: Math.round(activityBackground.playWidth * dataset.item.tab[index].width)
+                height: Math.round(activityBackground.playHeight * dataset.item.tab[index].height)
                 title: dataset.item.tab[index].title
                 description: dataset.item.tab[index].text
                 imageSource: dataset.item.tab[index].image2
@@ -254,8 +254,8 @@ ActivityBase {
 
         AnimalDescriptionLevels {
             id: descriptionPanel
-            width: background.width
-            height: background.height - bar.height * 1.2
+            width: activityBackground.width
+            height: activityBackground.height - bar.height * 1.2
             z: instruction.z + 1
         }
 
@@ -333,12 +333,12 @@ ActivityBase {
                 button2Text: qsTr("Continue")
                 onButton1Hit: activity.home();
                 onClose: {
-                    background.audioDisabled = false;
+                    activityBackground.audioDisabled = false;
                 }
             }
             anchors.fill: parent
             focus: true
-            active: background.audioDisabled
+            active: activityBackground.audioDisabled
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
     }

@@ -31,7 +31,7 @@ ActivityBase {
     }
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: "qrc:/gcompris/src/activities/braille_alphabets/resource/background.svg"
         fillMode: Image.PreserveAspectCrop
         sourceSize.width: Math.max(parent.width, parent.height)
@@ -58,7 +58,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
@@ -246,17 +246,17 @@ ActivityBase {
 
         Rectangle {
             id: questionArea
-            anchors.top: background.top
-            anchors.left: background.left
-            anchors.right: background.right
-            anchors.margins: background.layoutMargins
+            anchors.top: activityBackground.top
+            anchors.left: activityBackground.left
+            anchors.right: activityBackground.right
+            anchors.margins: activityBackground.layoutMargins
             color: "#f2f2f2"
-            radius: background.layoutMargins
+            radius: activityBackground.layoutMargins
             height: questionLabel.height + 20 * ApplicationInfo.ratio
             Rectangle {
                 anchors.centerIn: parent
-                width: parent.width - background.layoutMargins
-                height: parent.height - background.layoutMargins
+                width: parent.width - activityBackground.layoutMargins
+                height: parent.height - activityBackground.layoutMargins
                 color: "#f2f2f2"
                 radius: parent.radius
                 border.width: 3 * ApplicationInfo.ratio
@@ -276,11 +276,11 @@ ActivityBase {
         Rectangle {
             id: inputArea
             anchors.top: questionArea.bottom
-            anchors.left: background.left
-            anchors.margins: background.layoutMargins
+            anchors.left: activityBackground.left
+            anchors.margins: activityBackground.layoutMargins
             color: "#f2f2f2"
-            radius: background.layoutMargins
-            width: questionArea.width * 0.5 - background.layoutMargins * 0.5
+            radius: activityBackground.layoutMargins
+            width: questionArea.width * 0.5 - activityBackground.layoutMargins * 0.5
             height: textInput.height
             border.width: 1 * ApplicationInfo.ratio
             border.color: "#9fb8e3"
@@ -344,12 +344,12 @@ ActivityBase {
         Rectangle {
             id: feedbackArea
             anchors.top: questionArea.bottom
-            anchors.margins: background.layoutMargins
-            anchors.right: background.right
+            anchors.margins: activityBackground.layoutMargins
+            anchors.right: activityBackground.right
             width: inputArea.width
             height: inputArea.height
             color: "#f2f2f2"
-            radius: background.layoutMargins
+            radius: activityBackground.layoutMargins
             border.width: 1 * ApplicationInfo.ratio
             border.color: "#9fb8e3"
 
@@ -376,7 +376,7 @@ ActivityBase {
         Item {
             id: layoutArea
             anchors.top: feedbackArea.bottom
-            anchors.topMargin: background.layoutMargins
+            anchors.topMargin: activityBackground.layoutMargins
             anchors.left: inputArea.left
             anchors.right: feedbackArea.right
             anchors.bottom: bar.top
@@ -388,10 +388,10 @@ ActivityBase {
             visible: repeatItem.visible
             anchors.verticalCenter: layoutArea.verticalCenter
             anchors.right: repeatItem.left
-            anchors.rightMargin: background.layoutMargins
+            anchors.rightMargin: activityBackground.layoutMargins
             height: Math.min(70 * ApplicationInfo.ratio, layoutArea.height)
             width: height
-            radius:background.layoutMargins
+            radius:activityBackground.layoutMargins
             color: "#f2f2f2"
             border.width: 1 * ApplicationInfo.ratio
             border.color: "#9fb8e3"
@@ -514,8 +514,8 @@ ActivityBase {
                 home()
             }
             onStartActivity: {
-                background.stop()
-                background.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 
@@ -629,7 +629,7 @@ ActivityBase {
             anchors {
                 verticalCenter: layoutArea.verticalCenter
                 right: showMapButton.left
-                rightMargin: background.layoutMargins
+                rightMargin: activityBackground.layoutMargins
             }
             mouseArea.enabled: ledContainer.phraseRunning == false
             mouseArea.hoverEnabled: ledContainer.phraseRunning == false
@@ -664,7 +664,7 @@ ActivityBase {
             visible: !firstScreen.visible
             anchors.right: score.left
             anchors.verticalCenter: layoutArea.verticalCenter
-            anchors.rightMargin: background.layoutMargins
+            anchors.rightMargin: activityBackground.layoutMargins
             enabled: !items.buttonsBlocked
             width: ledContainer.height
             onClicked: items.check()
@@ -676,7 +676,7 @@ ActivityBase {
             visible: !firstScreen.visible
             anchors.right: okButton.left
             anchors.verticalCenter: layoutArea.verticalCenter
-            anchors.rightMargin: background.layoutMargins
+            anchors.rightMargin: activityBackground.layoutMargins
             enabled: !items.buttonsBlocked
             width: ledContainer.height
             onClicked: {

@@ -51,7 +51,7 @@ Item {
                     Activity.items.currentLock = part.index
                     if(Activity.items.currentLock >= Activity.items.lastLock) {
                         Activity.items.waterSound.play()
-                        Activity.items.background.win()
+                        Activity.items.activityBackground.win()
                     } else {
                         Activity.playAudioFx();
                     }

@@ -42,7 +42,7 @@ function initLevel() {
     tuxCollision = false
     /* Increase size of TUX for each level */
     items.tux.sourceSize.height = 10 * (5 + 2 * items.bar.level) * GCompris.ApplicationInfo.ratio
-    moveTux(items.background.height)
+    moveTux(items.activityBackground.height)
 }
 
 function nextLevel() {
@@ -105,7 +105,7 @@ function drawLine(x1, y1, x2, y2){
 /* Tux moves up and down, called in initlevel() */
 function moveTux(height){
     items.moveUp.to = 0
-    items.moveDown.to = items.background.height * 0.75 - items.tux.height
+    items.moveDown.to = items.activityBackground.height * 0.75 - items.tux.height
     items.moveTux.restart()
 }
 

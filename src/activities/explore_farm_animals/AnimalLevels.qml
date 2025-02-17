@@ -52,7 +52,7 @@ Image {
         id: star
         anchors.verticalCenter: animalImg.bottom
         anchors.horizontalCenter: animalImg.horizontalCenter
-        width: background.playWidth * 0.05
+        width: activityBackground.playWidth * 0.05
         height: width
         visible: false
         source:"qrc:/gcompris/src/core/resource/star.png"
@@ -85,7 +85,7 @@ Image {
                     items.progressbar.playWinAnimation();
                     items.goodAnswerSound.play();
                 } else {
-                    var errorPosition = background.mapFromItem(animalImg, animalImg.width * 0.5, animalImg.height * 0.5)
+                    var errorPosition = activityBackground.mapFromItem(animalImg, animalImg.width * 0.5, animalImg.height * 0.5)
                     items.errorRectangle.x = errorPosition.x;
                     items.errorRectangle.y = errorPosition.y;
                     items.errorRectangle.startAnimation();

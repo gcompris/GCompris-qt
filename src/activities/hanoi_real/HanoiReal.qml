@@ -25,7 +25,7 @@ ActivityBase {
     property string activityMode: "real"
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: Activity.url + "background.svg"
         sourceSize.width: width
         sourceSize.height: height
@@ -42,7 +42,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias discRepeater: discRepeater
@@ -143,7 +143,7 @@ ActivityBase {
                     enabled: disc.mouseEnabled && !items.hasWon
                     anchors.centerIn: parent
                     width: Activity.getDiscWidth(0)
-                    height: background.height
+                    height: activityBackground.height
                     drag.target: parent
                     drag.axis: Drag.XandYAxis
                     hoverEnabled: true
@@ -169,7 +169,7 @@ ActivityBase {
         Grid {
             // do columns if mobile?
             rows: 1
-            columnSpacing: (background.width - towerModel.model * towerModel.itemAt(0).width) / (items.towerModel.model+1)
+            columnSpacing: (activityBackground.width - towerModel.model * towerModel.itemAt(0).width) / (items.towerModel.model+1)
 
             anchors {
                 bottom: instruction.top
@@ -198,9 +198,9 @@ ActivityBase {
                             Activity.url + "disc_support-green.svg"
                         else
                             Activity.url + "disc_support.svg"
-                        width: background.width / (towerModel.model + 2.5)
+                        width: activityBackground.width / (towerModel.model + 2.5)
                         fillMode: Image.Stretch
-                        height: background.height - instruction.height - 2 * bar.height
+                        height: activityBackground.height - instruction.height - 2 * bar.height
                         sourceSize.width: width
                         sourceSize.height: height
                     }

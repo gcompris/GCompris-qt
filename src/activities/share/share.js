@@ -48,17 +48,17 @@ function setUp() {
         items.instruction.text = subLevelData.instruction
         items.nbSubLevel = levelData[items.currentLevel].length
 
-        items.background.currentCandies = items.totalGirls * subLevelData.placedInGirls +
+        items.activityBackground.currentCandies = items.totalGirls * subLevelData.placedInGirls +
                 items.totalBoys * subLevelData.placedInBoys
 
-        items.background.placedInGirls = subLevelData.placedInGirls
-        items.background.placedInBoys = subLevelData.placedInBoys
+        items.activityBackground.placedInGirls = subLevelData.placedInGirls
+        items.activityBackground.placedInBoys = subLevelData.placedInBoys
 
-        items.background.rest = items.totalCandies -
+        items.activityBackground.rest = items.totalCandies -
                 Math.floor(items.totalCandies / items.totalChildren) * (items.totalBoys+items.totalGirls)
         items.basketWidget.element.opacity = (subLevelData.forceShowBasket === true ||
-                                              items.background.rest !== 0) ? 1 : 0
-        items.background.wrongMove.visible = false
+                                              items.activityBackground.rest !== 0) ? 1 : 0
+        items.activityBackground.wrongMove.visible = false
     }
     else {
         // create random (guided) levels
@@ -79,18 +79,18 @@ function setUp() {
 
         // depending on the levels configuration, add candies from start in a child rectangle
         if (subLevelData.alreadyPlaced === false) {
-            items.background.placedInGirls = 0
-            items.background.placedInBoys = 0
-            items.background.currentCandies = 0
+            items.activityBackground.placedInGirls = 0
+            items.activityBackground.placedInBoys = 0
+            items.activityBackground.currentCandies = 0
         }
         else {
-            items.background.currentCandies = items.totalCandies * 2
+            items.activityBackground.currentCandies = items.totalCandies * 2
             // Place randomly between 0 and 3 candies for each child
-            while (items.background.currentCandies > items.totalCandies / 3) {
-                items.background.placedInGirls = Math.floor(Math.random() * 3)
-                items.background.placedInBoys = Math.floor(Math.random() * 3)
-                items.background.currentCandies = items.totalGirls * items.background.placedInGirls
-                        + items.totalBoys * items.background.placedInBoys
+            while (items.activityBackground.currentCandies > items.totalCandies / 3) {
+                items.activityBackground.placedInGirls = Math.floor(Math.random() * 3)
+                items.activityBackground.placedInBoys = Math.floor(Math.random() * 3)
+                items.activityBackground.currentCandies = items.totalGirls * items.activityBackground.placedInGirls
+                        + items.totalBoys * items.activityBackground.placedInBoys
             }
         }
         //~ singular "Place %n boy "
@@ -103,15 +103,15 @@ function setUp() {
 
         //~ singular Then split %n candy equally between them.
         //~ plural Then split %n candies equally between them.
-        items.instruction.text += qsTr("Then split %n pieces of candy equally between them.", "Third part of Place %n boy(s) and %n girl(s) in the center. Then split %n pieces of candy equally between them.", items.totalCandies - items.background.currentCandies);
+        items.instruction.text += qsTr("Then split %n pieces of candy equally between them.", "Third part of Place %n boy(s) and %n girl(s) in the center. Then split %n pieces of candy equally between them.", items.totalCandies - items.activityBackground.currentCandies);
 
 
-        items.background.rest = items.totalCandies -
+        items.activityBackground.rest = items.totalCandies -
                 Math.floor(items.totalCandies / items.totalChildren) * (items.totalBoys+items.totalGirls)
 
         items.basketWidget.element.opacity = 1
 
-        items.background.wrongMove.visible = false;
+        items.activityBackground.wrongMove.visible = false;
 
         saveVariables()
     }
@@ -119,9 +119,9 @@ function setUp() {
 }
 
 function resetBoard() {
-    items.background.currentGirls = 0
-    items.background.currentBoys = 0
-    items.background.resetCandy()
+    items.activityBackground.currentGirls = 0
+    items.activityBackground.currentBoys = 0
+    items.activityBackground.resetCandy()
 
     items.acceptCandy = false
     items.instruction.opacity = 1
@@ -137,7 +137,7 @@ function resetBoard() {
 
     items.candyWidget.canDrag = true
     items.candyWidget.element.opacity = 1
-    if (items.totalCandies - items.background.currentCandies == 0)
+    if (items.totalCandies - items.activityBackground.currentCandies == 0)
         items.candyWidget.element.opacity = 0.6
 
     items.basketWidget.canDrag = true
@@ -148,18 +148,18 @@ function saveVariables() {
     savedTotalBoys = items.totalBoys
     savedTotalGirls = items.totalGirls
     savedTotalCandies = items.totalCandies
-    savedPlacedInGirls = items.background.placedInGirls
-    savedPlacedInBoys = items.background.placedInBoys
-    savedCurrentCandies = items.background.currentCandies
+    savedPlacedInGirls = items.activityBackground.placedInGirls
+    savedPlacedInBoys = items.activityBackground.placedInBoys
+    savedCurrentCandies = items.activityBackground.currentCandies
 }
 
 function loadVariables() {
     items.totalBoys = savedTotalBoys
     items.totalGirls = savedTotalGirls
     items.totalCandies = savedTotalCandies
-    items.background.placedInGirls = savedPlacedInGirls
-    items.background.placedInBoys = savedPlacedInBoys
-    items.background.currentCandies = savedCurrentCandies
+    items.activityBackground.placedInGirls = savedPlacedInGirls
+    items.activityBackground.placedInBoys = savedPlacedInBoys
+    items.activityBackground.currentCandies = savedCurrentCandies
 }
 
 function reloadRandom() {
@@ -170,7 +170,7 @@ function reloadRandom() {
         loadVariables()
         resetBoard()
 
-        items.background.rest = items.totalCandies -
+        items.activityBackground.rest = items.totalCandies -
                 Math.floor(items.totalCandies / items.totalChildren) * (items.totalBoys+items.totalGirls)
         items.basketWidget.element.opacity = 1
     }

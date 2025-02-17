@@ -28,7 +28,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: activity.dataSetUrl+"background.svg"
         fillMode: Image.PreserveAspectCrop
         anchors.fill: parent
@@ -48,7 +48,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias winSound: winSound
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
@@ -120,10 +120,10 @@ ActivityBase {
 
         Item {
             id: layoutArea
-            anchors.top: background.top
+            anchors.top: activityBackground.top
             anchors.bottom: bar.top
-            anchors.left: background.left
-            anchors.right: background.right
+            anchors.left: activityBackground.left
+            anchors.right: activityBackground.right
             anchors.bottomMargin: bar.height * 0.2
         }
 
@@ -157,7 +157,7 @@ ActivityBase {
                 margins: 5 * ApplicationInfo.ratio
             }
 
-            width: background.portrait ? (layoutArea.width - crane_vertical.width) * 0.8 : ((layoutArea.width - anchors.margins * 2 - crane_vertical.width) * 0.5 ) * 0.9
+            width: activityBackground.portrait ? (layoutArea.width - crane_vertical.width) * 0.8 : ((layoutArea.width - anchors.margins * 2 - crane_vertical.width) * 0.5 ) * 0.9
         }
 
         Rectangle {
@@ -319,10 +319,10 @@ ActivityBase {
             z: 1
 
             anchors {
-                left: background.portrait ? boardBg.left : crane_vertical.right
-                top: background.portrait ? crane_body.bottom : background.inLine ? boardBg.top : parent.top
-                topMargin: background.portrait ? boardBg.anchors.margins : background.inLine ? 0 : crane_top.height * 1.5
-                leftMargin: background.portrait ? 0 : boardBg.anchors.margins * 1.2
+                left: activityBackground.portrait ? boardBg.left : crane_vertical.right
+                top: activityBackground.portrait ? crane_body.bottom : activityBackground.inLine ? boardBg.top : parent.top
+                topMargin: activityBackground.portrait ? boardBg.anchors.margins : activityBackground.inLine ? 0 : crane_top.height * 1.5
+                leftMargin: activityBackground.portrait ? 0 : boardBg.anchors.margins * 1.2
                 margins: boardBg.anchors.margins
             }
 
@@ -386,7 +386,7 @@ ActivityBase {
             id: crane_top
             source: activity.dataSetUrl+"crane_up.svg"
             sourceSize.width: width
-            width: background.portrait ? layoutArea.width * 0.8: layoutArea.width * 0.5
+            width: activityBackground.portrait ? layoutArea.width * 0.8: layoutArea.width * 0.5
             fillMode: Image.PreserveAspectFit
             z: 4
             anchors {
@@ -405,8 +405,8 @@ ActivityBase {
             anchors {
                 top: crane_top.top
                 bottom: crane_body.verticalCenter
-                right: background.portrait ? layoutArea.right : layoutArea.horizontalCenter
-                rightMargin: background.portrait ? width / 2 : - width / 2
+                right: activityBackground.portrait ? layoutArea.right : layoutArea.horizontalCenter
+                rightMargin: activityBackground.portrait ? width / 2 : - width / 2
                 topMargin: boardBg.anchors.margins
             }
         }
@@ -418,7 +418,7 @@ ActivityBase {
             height: bar.height
             sourceSize.height: height
             fillMode: Image.PreserveAspectFit
-            mirror: background.portrait ? true : false
+            mirror: activityBackground.portrait ? true : false
             anchors.verticalCenterOffset: crane_top.height * 0.5
         }
 
@@ -486,7 +486,7 @@ ActivityBase {
         states: [
             State {
                 name: "horizontal"
-                when: !background.portrait
+                when: !activityBackground.portrait
                 PropertyChanges {
                     crane_command {
                         width: boardBg.width
@@ -517,7 +517,7 @@ ActivityBase {
             },
             State {
                 name: "vertical"
-                when: background.portrait
+                when: activityBackground.portrait
                 PropertyChanges {
                     crane_command {
                         width: undefined
@@ -568,8 +568,8 @@ ActivityBase {
             }
 
             onStartActivity: {
-                background.stop()
-                background.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 

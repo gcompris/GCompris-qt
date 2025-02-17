@@ -28,7 +28,7 @@ ActivityBase {
     }
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: "qrc:/gcompris/src/activities/menu/resource/background.svg"
         fillMode: Image.PreserveAspectCrop
@@ -53,7 +53,7 @@ ActivityBase {
             property alias clickSound: clickSound
             property alias typedText: typedText
             property alias textinput: textinput
-            property alias locale: background.locale
+            property alias locale: activityBackground.locale
             property alias fileId: fileId
         }
 
@@ -76,10 +76,10 @@ ActivityBase {
 
         Item {
             id: layoutArea
-            anchors.top: background.top
+            anchors.top: activityBackground.top
             anchors.bottom: bar.top
-            anchors.left: background.left
-            anchors.right: background.right
+            anchors.left: activityBackground.left
+            anchors.right: activityBackground.right
 
             MouseArea {
                 anchors.fill: parent

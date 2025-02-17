@@ -27,8 +27,8 @@ Item {
     property string wantedColor: "1"
     state: "Init"
 
-    width: background.starSize
-    height: background.starSize
+    width: activityBackground.starSize
+    height: activityBackground.starSize
 
     MouseArea {
         id: mouseArea

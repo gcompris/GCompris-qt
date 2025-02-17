@@ -109,7 +109,7 @@ Item {
     }
 
     Rectangle {
-        id: background
+        id: activityBackground
         anchors.fill: parent
 
         File {
@@ -129,7 +129,7 @@ Item {
             anchors.leftMargin: 10 * ApplicationInfo.ratio
             anchors.topMargin: 20 * ApplicationInfo.ratio
             spacing: 5 * ApplicationInfo.ratio
-            width: (background.width - mapWrapper.width - props.wallSize - 20 * ApplicationInfo.ratio) / 2
+            width: (activityBackground.width - mapWrapper.width - props.wallSize - 20 * ApplicationInfo.ratio) / 2
             height: parent.height
 //            anchors.topMargin: 20
 
@@ -388,8 +388,8 @@ Item {
             property double margin: 20
             property int columns: props.columns
             property int rows: props.rows
-            property double length: Math.min(background.height -
-                    2*mapWrapper.margin, background.width - 2*mapWrapper.margin);
+            property double length: Math.min(activityBackground.height -
+                    2*mapWrapper.margin, activityBackground.width - 2*mapWrapper.margin);
 
             color: "#E3DEDB"
 

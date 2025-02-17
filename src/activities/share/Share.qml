@@ -18,7 +18,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Rectangle {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         color: "#abcdef"
         signal start
@@ -34,7 +34,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
@@ -54,7 +54,7 @@ ActivityBase {
             property int totalChildren: totalBoys + totalGirls
             readonly property var levels: activity.datasets
             property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
-            property int cellSize: Math.round(Math.min(background.width / 12, background.height / (11 + barHeightAddon)))
+            property int cellSize: Math.round(Math.min(activityBackground.width / 12, activityBackground.height / (11 + barHeightAddon)))
             property alias repeaterDropAreas: repeaterDropAreas
             property int maxNumberOfCandiesPerWidget: 6
             property bool buttonsBlocked: false
@@ -63,7 +63,7 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        property bool vert: background.width >= background.height
+        property bool vert: activityBackground.width >= activityBackground.height
         property int currentBoys: 0
         property int currentGirls: 0
         property int currentCandies: 0
@@ -87,7 +87,7 @@ ActivityBase {
 
         //check if the answer is correct
         function check() {
-            background.resetCandy()
+            activityBackground.resetCandy()
             items.buttonsBlocked = true
 
             var ok = 0
@@ -136,23 +136,23 @@ ActivityBase {
             property var basket: leftWidget.mapFromItem(basketWidget, basketWidget.element.x, basketWidget.element.y)
 
             //show that the widget can be dropped here
-            color: background.contains(boy.x, boy.y, grid) ||
-                   background.contains(girl.x, girl.y, grid) ||
-                   background.contains(basket.x, basket.y, grid) ? "#d5e6f7" : "transparent"
+            color: activityBackground.contains(boy.x, boy.y, grid) ||
+                   activityBackground.contains(girl.x, girl.y, grid) ||
+                   activityBackground.contains(basket.x, basket.y, grid) ? "#d5e6f7" : "transparent"
 
             anchors {
-                top: background.vert ? parent.top : leftWidget.bottom
-                left: background.vert ? leftWidget.right : parent.left
+                top: activityBackground.vert ? parent.top : leftWidget.bottom
+                left: activityBackground.vert ? leftWidget.right : parent.left
                 topMargin: 20
                 leftMargin: 20
             }
 
-            width: background.vert ?
-                       background.width - leftWidget.width - 40 : background.width - 40
+            width: activityBackground.vert ?
+                       activityBackground.width - leftWidget.width - 40 : activityBackground.width - 40
             height: ApplicationSettings.isBarHidden ?
-                        background.height : background.vert ?
-                            background.height - (bar.height * 1.1) :
-                            background.height - (bar.height * 1.1) - leftWidget.height
+                        activityBackground.height : activityBackground.vert ?
+                            activityBackground.height - (bar.height * 1.1) :
+                            activityBackground.height - (bar.height * 1.1) - leftWidget.height
 
             //shows/hides the Instruction
             MouseArea {
@@ -231,13 +231,13 @@ ActivityBase {
         GCText {
             id: instructionTxt
             anchors {
-                top: background.vert ? parent.top : leftWidget.bottom
+                top: activityBackground.vert ? parent.top : leftWidget.bottom
                 topMargin: 10
                 horizontalCenter: grid.horizontalCenter
             }
             opacity: instruction.opacity
             z: instruction.z
-            fontSize: background.vert ? regularSize : smallSize
+            fontSize: activityBackground.vert ? regularSize : smallSize
             color: "white"
             horizontalAlignment: Text.AlignHCenter
             width: Math.max(Math.min(parent.width * 0.8, text.length * 8), parent.width * 0.3)
@@ -247,10 +247,10 @@ ActivityBase {
         //left widget, with girl/boy/candy/basket widgets in a grid
         Rectangle {
             id: leftWidget
-            width: background.vert ?
-                       items.cellSize * 2.04 : background.width
-            height: background.vert ?
-                        background.height : items.cellSize * 2.04
+            width: activityBackground.vert ?
+                       items.cellSize * 2.04 : activityBackground.width
+            height: activityBackground.vert ?
+                        activityBackground.height : items.cellSize * 2.04
             color: "#5a9de0"
             border.color: "#3f81c4"
             border.width: 4
@@ -262,10 +262,10 @@ ActivityBase {
                 x: 10
                 y: 10
 
-                width: background.vert ? leftWidget.width : 3 * bar.height
-                height: background.vert ? background.height - 2 * bar.height : bar.height
+                width: activityBackground.vert ? leftWidget.width : 3 * bar.height
+                height: activityBackground.vert ? activityBackground.height - 2 * bar.height : bar.height
                 spacing: 10
-                columns: background.vert ? 1 : 6
+                columns: activityBackground.vert ? 1 : 6
 
                 //ok button
                 Image {
@@ -280,7 +280,7 @@ ActivityBase {
                         enabled: !items.buttonsBlocked
                         onPressed: okButton.opacity = 0.6
                         onReleased: okButton.opacity = 1
-                        onClicked: background.check()
+                        onClicked: activityBackground.check()
                     }
                 }
 
@@ -289,8 +289,8 @@ ActivityBase {
                     name: "girl"
                     total: items.totalGirls
                     visible: items.totalGirls !== 0
-                    current: background.currentGirls
-                    placedInChild: background.placedInGirls
+                    current: activityBackground.currentGirls
+                    placedInChild: activityBackground.placedInGirls
                 }
 
                 ChildWidget {
@@ -298,8 +298,8 @@ ActivityBase {
                     name: "boy"
                     visible: items.totalBoys !== 0
                     total: items.totalBoys
-                    current: background.currentBoys
-                    placedInChild: background.placedInBoys
+                    current: activityBackground.currentBoys
+                    placedInChild: activityBackground.placedInBoys
                 }
                 
                 BasketWidget {
@@ -309,8 +309,8 @@ ActivityBase {
                 CandyWidget {
                     id: candyWidget
                     total: items.totalCandies
-                    current: background.currentCandies
-                    element.opacity: background.easyMode ? 1 : 0
+                    current: activityBackground.currentCandies
+                    element.opacity: activityBackground.easyMode ? 1 : 0
                 }
 
                 Image {
@@ -369,12 +369,12 @@ ActivityBase {
             }
             onLoadData: {
                 if(activityData && activityData["mode"]) {
-                    background.easyMode = (activityData["mode"] === "true");
+                    activityBackground.easyMode = (activityData["mode"] === "true");
                 }
             }
             onStartActivity: {
-                background.stop();
-                background.start()
+                activityBackground.stop();
+                activityBackground.start()
             }
 
             onClose: home()
@@ -414,11 +414,11 @@ ActivityBase {
             anchors {
                 left: undefined
                 right: leftWidget.right
-                bottom: background.vert ? bar.top : leftWidget.bottom
+                bottom: activityBackground.vert ? bar.top : leftWidget.bottom
                 margins: 3 * ApplicationInfo.ratio
             }
             width: girlWidget.width
-            height: background.vert ? (girlWidget.height * 0.8) : girlWidget.height
+            height: activityBackground.vert ? (girlWidget.height * 0.8) : girlWidget.height
             numberOfSubLevels: items.nbSubLevel
             currentSubLevel: 0
             onStop: Activity.nextSubLevel()

@@ -19,7 +19,7 @@ ActivityBase {
     onStart: focus = true;
 
     pageComponent: Rectangle {
-        id: background
+        id: activityBackground
         color: "#abcdef"
         focus: true
         signal start
@@ -213,7 +213,7 @@ ActivityBase {
 
         Score {
             id: score
-            anchors.top: background.top
+            anchors.top: activityBackground.top
             anchors.topMargin: parent.height * 0.01
             anchors.bottom: undefined
             onStop: Activity.displayNextHand()

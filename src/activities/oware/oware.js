@@ -222,7 +222,7 @@ function nextClockwise(lastPos) {
 }
 
 function getGlobalPos(component) {
-    if(!component || component.id === "background")
+    if(!component || component.id === "activityBackground")
         return [0, 0]
 
     var pos = getGlobalPos(component.parent)

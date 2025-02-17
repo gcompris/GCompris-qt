@@ -21,12 +21,12 @@ ActivityBase {
 
     onStart: focus = true
     onStop: {}
-    property bool isHorizontal: background.width >= background.height
+    property bool isHorizontal: activityBackground.width >= activityBackground.height
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: Activity.resourceURL + "railroad-bg.svg"
-        sourceSize.height: background.height
+        sourceSize.height: activityBackground.height
         fillMode: Image.PreserveAspectCrop
         anchors.horizontalCenter: parent.horizontalCenter
 
@@ -42,7 +42,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel 
             property alias bonus: bonus
             property alias score: score
@@ -130,16 +130,16 @@ ActivityBase {
         // Top Display Area
         Rectangle {
             id: topDisplayArea
-            width: background.width
-            height: background.height * 0.2
+            width: activityBackground.width
+            height: activityBackground.height * 0.2
             anchors.bottom: sampleList.top
             color: 'transparent'
             z: 1
 
             GridView {
                 id: answerZone
-                readonly property int levelCellWidth: isHorizontal ? background.width / (listModel.count > 5 ? 7.2 : 5.66) :
-                                                                                               background.width / ((listModel.count > 5) ? 7.1 : 5)
+                readonly property int levelCellWidth: isHorizontal ? activityBackground.width / (listModel.count > 5 ? 7.2 : 5.66) :
+                                                                                               activityBackground.width / ((listModel.count > 5) ? 7.1 : 5)
                 readonly property int levelCellHeight: levelCellWidth * 0.42
                 width: parent.width
                 height: levelCellHeight
@@ -158,7 +158,7 @@ ActivityBase {
                     function checkDrop(dragItem) {
                         // Checks the drop location of this wagon
                         var globalCoordinates = dragItem.mapToItem(answerZone, 0, 0)
-                        if(globalCoordinates.y <= ((background.height / 12.5) + (background.height / 8))) {
+                        if(globalCoordinates.y <= ((activityBackground.height / 12.5) + (activityBackground.height / 8))) {
                             var dropIndex = Activity.getDropIndex(globalCoordinates.x)
 
                             if(dropIndex > (listModel.count - 1)) {
@@ -168,7 +168,7 @@ ActivityBase {
                             listModel.move(listModel.count - 1, dropIndex, 1)
                             opacity = 1
                         }
-                        if(globalCoordinates.y > (background.height / 8)) {
+                        if(globalCoordinates.y > (activityBackground.height / 8)) {
                             // Remove it if dropped in the lower section
                             smudgeSound.play()
                             listModel.remove(listModel.count - 1)
@@ -232,7 +232,7 @@ ActivityBase {
                 }
 
                 onXChanged: {
-                    if(answerZone.x >= background.width) {
+                    if(answerZone.x >= activityBackground.width) {
                         trainAnimationTimer.stop()
                         animateFlow.stop();
                         listModel.clear();
@@ -246,7 +246,7 @@ ActivityBase {
                     target: answerZone
                     properties: "x"
                     from: answerZone.x
-                    to: background.width
+                    to: activityBackground.width
                     duration: 4000
                     easing.type: Easing.InExpo
                     loops: 1
@@ -364,13 +364,13 @@ ActivityBase {
         GridView {
             id: sampleList
             visible: items.memoryMode
-            y: background.height * 0.2
+            y: activityBackground.height * 0.2
             z: 5
-            width: background.width
-            height: background.height * 0.8
+            width: activityBackground.width
+            height: activityBackground.height * 0.8
             anchors.margins: 20
             cellWidth: width / columnCount
-            cellHeight: isHorizontal ? background.height / 7 : background.height / 7.5
+            cellHeight: isHorizontal ? activityBackground.height / 7 : activityBackground.height / 7.5
             model: items.uniqueId
             interactive: false
 
@@ -386,7 +386,7 @@ ActivityBase {
                 property real originX
                 property real originY
                 source: Activity.resourceURL + uniqueID + ".svg"
-                width: isHorizontal ? background.width / 5.66 : background.width / 4.2
+                width: isHorizontal ? activityBackground.width / 5.66 : activityBackground.width / 4.2
                 sourceSize.width: width
                 fillMode: Image.PreserveAspectFit
                 visible: true
@@ -407,7 +407,7 @@ ActivityBase {
                     var globalCoordinates = loco.mapToItem(answerZone, 0, 0)
                     // checks if the wagon is dropped in correct zone and no. of wagons in answer row are less than
                     // total no. of wagons in correct answer + 2, before dropping the wagon
-                    if(globalCoordinates.y <= (background.height / 12.5) &&
+                    if(globalCoordinates.y <= (activityBackground.height / 12.5) &&
                             listModel.count < Activity.dataset["WagonsInCorrectAnswers"][items.currentLevel] + 2) {
                         smudgeSound.play()
                         var dropIndex = Activity.getDropIndex(globalCoordinates.x)
@@ -509,7 +509,7 @@ ActivityBase {
             keyNavigationWraps: true
             highlightRangeMode: GridView.ApplyRange
             highlight: Rectangle {
-                width: isHorizontal ? background.width / 5.66 : background.width / 4.2
+                width: isHorizontal ? activityBackground.width / 5.66 : activityBackground.width / 4.2
                 height: isHorizontal ? sampleList.cellHeight : sampleList.cellHeight / 1.65
                 color: "#AA41AAC4"
                 opacity: 0.8
@@ -541,7 +541,7 @@ ActivityBase {
                 x: 0
                 y: sampleList.y + (sampleList.cellHeight * (index + 1)) - (sampleList.cellHeight - items.sampleImageHeight)
                 z: 1
-                width: background.width
+                width: activityBackground.width
                 height: isHorizontal ? 6 : 3
                 border.color: "#808180"
                 color: "transparent"

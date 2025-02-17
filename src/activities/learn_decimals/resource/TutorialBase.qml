@@ -93,7 +93,7 @@ Image {
 
             states: [
                 State {
-                    when: background.horizontalLayout
+                    when: activityBackground.horizontalLayout
                     PropertyChanges {
                         topRectangleTutorial {
                             width: tutoLayoutArea.width
@@ -112,7 +112,7 @@ Image {
                     }
                 },
                 State {
-                    when: !background.horizontalLayout && !tutorialBase.isResultTyping
+                    when: !activityBackground.horizontalLayout && !tutorialBase.isResultTyping
                     PropertyChanges {
                         topRectangleTutorial {
                             width: activity.isSubtractionMode ? tutoLayoutArea.width : tutoLayoutArea.width * 0.636
@@ -132,7 +132,7 @@ Image {
                     }
                 },
                 State {
-                    when: !background.horizontalLayout && tutorialBase.isResultTyping
+                    when: !activityBackground.horizontalLayout && tutorialBase.isResultTyping
                     PropertyChanges {
                         topRectangleTutorial {
                             width: activity.isSubtractionMode ? tutoLayoutArea.width : tutoLayoutArea.width * 0.636
@@ -157,13 +157,13 @@ Image {
             Flow {
                 id: topBarsLayout
                 anchors.centerIn: topRectangleTutorial
-                width: background.horizontalLayout ? firstBar.cellSize * 10 :
+                width: activityBackground.horizontalLayout ? firstBar.cellSize * 10 :
                         (activity.isSubtractionMode ? firstBar.cellSize * 6 :
                         firstBar.cellSize * 7)
-                height: background.horizontalLayout ? (activity.isSubtractionMode ?
+                height: activityBackground.horizontalLayout ? (activity.isSubtractionMode ?
                         firstBar.cellSize * 6 : firstBar.cellSize * 7) : firstBar.cellSize * 10
                 spacing: activity.isSubtractionMode ? firstBar.cellSize * 0.14 : firstBar.cellSize * 0.125
-                padding: background.horizontalLayout ? spacing : 0
+                padding: activityBackground.horizontalLayout ? spacing : 0
 
                 TutorialBar {
                     id: firstBar
@@ -197,7 +197,7 @@ Image {
 
             states: [
                 State {
-                    when: background.horizontalLayout
+                    when: activityBackground.horizontalLayout
                     PropertyChanges {
                         bottomRectangleTutorial {
                             width: tutoLayoutArea.width
@@ -249,7 +249,7 @@ Image {
                     }
                 },
                 State {
-                    when: !background.horizontalLayout
+                    when: !activityBackground.horizontalLayout
                     PropertyChanges {
                         bottomRectangleTutorial {
                             width: tutoLayoutArea.width * 0.273

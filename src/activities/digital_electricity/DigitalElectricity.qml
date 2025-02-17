@@ -23,14 +23,14 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: Activity.url + "texture02.webp"
         fillMode: Image.Tile
         signal start
         signal stop
 
-        property bool hori: background.width >= background.height
+        property bool hori: activityBackground.width >= activityBackground.height
 
         Component.onCompleted: {
             dialogActivityConfig.initialize()
@@ -123,9 +123,9 @@ ActivityBase {
             id: introArea
             anchors {
                 fill: parent
-                topMargin: (background.hori ? 0 : inputComponentsContainer.height) + 10 * ApplicationInfo.ratio
+                topMargin: (activityBackground.hori ? 0 : inputComponentsContainer.height) + 10 * ApplicationInfo.ratio
                 rightMargin: 10 * ApplicationInfo.ratio
-                leftMargin: (background.hori ? inputComponentsContainer.width : 0) + 10 * ApplicationInfo.ratio
+                leftMargin: (activityBackground.hori ? inputComponentsContainer.width : 0) + 10 * ApplicationInfo.ratio
                 bottomMargin: bar.height * 2
             }
         }
@@ -143,15 +143,15 @@ ActivityBase {
         Rectangle {
             id: visibleArea
             color: "#00000000"
-            width: background.hori ? background.width - items.toolsMargin - 10 : background.width - 10
-            height: background.hori ? background.height - bar.height - items.toolsMargin - 10 : background.height - bar.height - 10
+            width: activityBackground.hori ? activityBackground.width - items.toolsMargin - 10 : activityBackground.width - 10
+            height: activityBackground.hori ? activityBackground.height - bar.height - items.toolsMargin - 10 : activityBackground.height - bar.height - 10
             anchors {
                 fill: undefined
-                top: background.hori ? parent.top : inputComponentsContainer.bottom
+                top: activityBackground.hori ? parent.top : inputComponentsContainer.bottom
                 topMargin: 5
                 right: parent.right
                 rightMargin: 5
-                left: background.hori ? inputComponentsContainer.right : parent.left
+                left: activityBackground.hori ? inputComponentsContainer.right : parent.left
                 leftMargin: 5
                 bottom: bar.top
                 bottomMargin: 20
@@ -323,13 +323,13 @@ ActivityBase {
         Rectangle {
             id: playArea
             color: "#10000000"
-            x: background.hori ? items.toolsMargin : 0
-            y: background.hori ? 0 : items.toolsMargin
-            width: background.hori ?
-                       background.width * 4 - items.toolsMargin : background.width * 4
-            height: background.hori ?
-                       background.height * 4 - (bar.height * 1.1) :
-                       background.height * 4 - (bar.height * 1.1) - items.toolsMargin
+            x: activityBackground.hori ? items.toolsMargin : 0
+            y: activityBackground.hori ? 0 : items.toolsMargin
+            width: activityBackground.hori ?
+                       activityBackground.width * 4 - items.toolsMargin : activityBackground.width * 4
+            height: activityBackground.hori ?
+                       activityBackground.height * 4 - (bar.height * 1.1) :
+                       activityBackground.height * 4 - (bar.height * 1.1) - items.toolsMargin
 
             PinchArea {
                 id: pinchZoom
@@ -349,9 +349,9 @@ ActivityBase {
                     drag.target: playArea
                     drag.axis: Drag.XandYAxis
                     drag.minimumX: - playArea.width * items.zoomLvl
-                    drag.maximumX: background.hori ? items.toolsMargin : 0
+                    drag.maximumX: activityBackground.hori ? items.toolsMargin : 0
                     drag.minimumY: - playArea.height * items.zoomLvl
-                    drag.maximumY: background.hori ? 0 : items.toolsMargin
+                    drag.maximumY: activityBackground.hori ? 0 : items.toolsMargin
                     onClicked: {
                         Activity.disableToolDelete();
                         Activity.deselect();
@@ -363,23 +363,23 @@ ActivityBase {
 
         Rectangle {
             id: inputComponentsContainer
-            width: background.hori ?
+            width: activityBackground.hori ?
                        items.toolsMargin :
-                       background.width
-            height: background.hori ?
-                        background.height :
+                       activityBackground.width
+            height: activityBackground.hori ?
+                        activityBackground.height :
                         items.toolsMargin
             color: "#4A3823"
             anchors.left: parent.left
             Image {
                 anchors.fill: parent
-                anchors.rightMargin: background.hori ? 3 * ApplicationInfo.ratio : 0
-                anchors.bottomMargin: background.hori ? 0 : 3 * ApplicationInfo.ratio
+                anchors.rightMargin: activityBackground.hori ? 3 * ApplicationInfo.ratio : 0
+                anchors.bottomMargin: activityBackground.hori ? 0 : 3 * ApplicationInfo.ratio
                 source: Activity.url + "texture01.webp"
                 fillMode: Image.Tile
                 ListWidget {
                     id: availablePieces
-                    hori: background.hori
+                    hori: activityBackground.hori
                 }
             }
             z: 10

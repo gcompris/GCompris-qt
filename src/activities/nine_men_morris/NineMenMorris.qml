@@ -21,7 +21,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-    id: background
+        id: activityBackground
         anchors.fill: parent
         source: "qrc:/gcompris/src/activities/tic_tac_toe/resource/background.svg"
         sourceSize.width: width
@@ -90,8 +90,8 @@ ActivityBase {
         Image {
             id: board
             source: Activity.url + "board.svg"
-            sourceSize.width: Math.min(background.height - 1.4 * player1score.height - 1.2 * bar.height,
-                                       background.width - 2.2 * firstInitial.width)
+            sourceSize.width: Math.min(activityBackground.height - 1.4 * player1score.height - 1.2 * bar.height,
+                                       activityBackground.width - 2.2 * firstInitial.width)
             anchors {
                 verticalCenter: parent.verticalCenter
                 horizontalCenter: parent.horizontalCenter
@@ -282,12 +282,12 @@ ActivityBase {
         ScoreItem {
             id: player2score
             player: 2
-            height: Math.min(background.height / 9, Math.min(background.width / 9, bar.height * 1.2))
+            height: Math.min(activityBackground.height / 9, Math.min(activityBackground.width / 9, bar.height * 1.2))
             width: height * 11 / 8
             anchors {
-                top: background.top
+                top: activityBackground.top
                 topMargin: 5
-                right: background.right
+                right: activityBackground.right
                 rightMargin: 5
             }
             playerImageSource: "qrc:/gcompris/src/core/resource/player_2.svg"
@@ -302,12 +302,12 @@ ActivityBase {
         ScoreItem {
             id: player1score
             player: 1
-            height: Math.min(background.height / 9, Math.min(background.width / 9, bar.height * 1.2))
+            height: Math.min(activityBackground.height / 9, Math.min(activityBackground.width / 9, bar.height * 1.2))
             width: height * 11 / 8
             anchors {
-                top: background.top
+                top: activityBackground.top
                 topMargin: 5
-                left: background.left
+                left: activityBackground.left
                 leftMargin: 5
             }
             playerImageSource: "qrc:/gcompris/src/core/resource/player_1.svg"
@@ -322,7 +322,7 @@ ActivityBase {
         // Tutorial section starts
         Image {
             id: tutorialImage
-            source: background.source
+            source: activityBackground.source
             sourceSize.width: width
             sourceSize.height: height
             fillMode: Image.PreserveAspectCrop

@@ -60,7 +60,7 @@ Rectangle {
         onPressed: {
             instruction.hide()
             if (widget.name !== "candy")
-                background.resetCandy()
+                activityBackground.resetCandy()
                 //set the initial position
                 widget.lastX = element.x
                 widget.lastY = element.y

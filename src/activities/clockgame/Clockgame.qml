@@ -23,7 +23,7 @@ ActivityBase {
     }
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: "qrc:/gcompris/src/activities/menu/resource/background.svg"
         sourceSize.width: width
         sourceSize.height: height
@@ -41,7 +41,7 @@ ActivityBase {
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias errorRectangle: errorRectangle
             property alias goodAnswerSound: goodAnswerSound
             property alias badAnswerSound: badAnswerSound
@@ -132,7 +132,7 @@ ActivityBase {
                 color: "white"
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WordWrap
-                width: background.width
+                width: activityBackground.width
                 anchors {
                     horizontalCenter: parent.horizontalCenter
                     top: parent.top
@@ -153,7 +153,7 @@ ActivityBase {
             fillMode: Image.PreserveAspectFit
             sourceSize.width: radius * 0.9
 
-            property int radius: Math.min(background.width, background.height - bar.height)
+            property int radius: Math.min(activityBackground.width, activityBackground.height - bar.height)
 
             /* The grey zones */
             Image {
@@ -519,8 +519,8 @@ ActivityBase {
                 home()
             }
             onStartActivity: {
-                background.stop()
-                background.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 

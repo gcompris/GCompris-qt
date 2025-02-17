@@ -15,7 +15,7 @@ import "qrc:/gcompris/src/core/core.js" as Core
 
 Item {
     id: activityConfiguration
-    property Item background
+    property Item activityBackground
     property string locale: "system"
     property string configurationLocale: "system"
     property bool easyModeImage: true
@@ -34,7 +34,7 @@ Item {
         GCComboBox {
             id: localeBox
             model: langs.languages
-            background: activityConfiguration.background
+            activityBackground: activityConfiguration.activityBackground
             label: qsTr("Select your locale")
         }
         GCDialogCheckBox {

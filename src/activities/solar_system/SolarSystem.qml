@@ -22,9 +22,9 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Rectangle {
-        id: background
+        id: activityBackground
         anchors.fill: parent
-        property bool horizontalLayout: background.width >= background.height
+        property bool horizontalLayout: activityBackground.width >= activityBackground.height
 
         Image {
             id: stars
@@ -59,7 +59,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bar: bar
             property alias bonus: bonus
@@ -173,7 +173,7 @@ ActivityBase {
             id: planetsModel
         }
 
-        readonly property int itemWidth: horizontalLayout ? background.width * 0.11 : (background.height - bar.height * 1.5) * 0.11
+        readonly property int itemWidth: horizontalLayout ? activityBackground.width * 0.11 : (activityBackground.height - bar.height * 1.5) * 0.11
 
         // Arrangement of all the planets in the solar system
         GridView {
@@ -183,7 +183,7 @@ ActivityBase {
             clip: false
             interactive: false
             visible: items.solarSystemVisible
-            cellWidth: background.itemWidth
+            cellWidth: activityBackground.itemWidth
             cellHeight: cellWidth
             model: planetsModel
             keyNavigationWraps: true
@@ -191,7 +191,7 @@ ActivityBase {
             highlight: Rectangle {
                 scale: 1.2
                 color:  "#80FFFFFF"
-                visible: background.keyboardMode
+                visible: activityBackground.keyboardMode
                 radius: 10 * ApplicationInfo.ratio
                 Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
                 Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
@@ -206,45 +206,45 @@ ActivityBase {
         states: [
             State {
                 name: "hGrid"
-                when: background.horizontalLayout
+                when: activityBackground.horizontalLayout
                 AnchorChanges {
                     target: planetView
-                    anchors.horizontalCenter: background.horizontalCenter
-                    anchors.verticalCenter: background.verticalCenter
+                    anchors.horizontalCenter: activityBackground.horizontalCenter
+                    anchors.verticalCenter: activityBackground.verticalCenter
                     anchors.top: undefined
                 }
                 PropertyChanges {
                     planetView {
-                        width: background.width
+                        width: activityBackground.width
                         height: planetView.cellHeight
                     }
                 }
                 PropertyChanges {
                     stars {
                         x: -stars.width * 0.48
-                        y: -stars.height * 0.5 + background.height * 0.5
+                        y: -stars.height * 0.5 + activityBackground.height * 0.5
                     }
                 }
             },
             State {
                 name: "vGrid"
-                when: !background.horizontalLayout
+                when: !activityBackground.horizontalLayout
                 AnchorChanges {
                     target: planetView
-                    anchors.horizontalCenter: background.horizontalCenter
+                    anchors.horizontalCenter: activityBackground.horizontalCenter
                     anchors.verticalCenter: undefined
-                    anchors.top: background.top
+                    anchors.top: activityBackground.top
                 }
                 PropertyChanges {
                     planetView {
                         width: planetView.cellWidth
-                        height: background.height - bar.height * 1.5
+                        height: activityBackground.height - bar.height * 1.5
                     }
                 }
                 PropertyChanges {
                     stars {
-                        x: -stars.width * 0.5 + background.width * 0.5
-                        y: -stars.height * 0.5 + background.height * 0.9
+                        x: -stars.width * 0.5 + activityBackground.width * 0.5
+                        y: -stars.height * 0.5 + activityBackground.height * 0.9
                     }
                 }
             }
@@ -264,7 +264,7 @@ ActivityBase {
             height: parent.height
             visible: false
             z: 2000
-            parent: items.assessmentMode ? background : hintDialog
+            parent: items.assessmentMode ? activityBackground : hintDialog
 
             onVisibleChanged: {
                 if(visible) {
@@ -299,7 +299,7 @@ ActivityBase {
                 height: horizontalLayout ? cellHeight : parent.height - bar.height
                 clip: false
                 interactive: false
-                cellWidth: background.itemWidth
+                cellWidth: activityBackground.itemWidth
                 cellHeight: cellWidth
                 model: items.planetsModel
 

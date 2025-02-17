@@ -106,7 +106,7 @@ Item {
                         successAnimation.restart();
                         particle.burst(30);
                     } else {
-                        background.moveErrorRectangle(carriageItem);
+                        activityBackground.moveErrorRectangle(carriageItem);
                     }
                 }
             }

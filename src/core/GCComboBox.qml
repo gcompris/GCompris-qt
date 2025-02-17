@@ -39,7 +39,7 @@ Item {
      * Where the list containing all choices will be displayed.
      * Should be the dialogActivityConfig item if used on config.
      */
-    property Item background
+    property Item activityBackground
 
     /**
      * type:int
@@ -156,7 +156,7 @@ Item {
         height: if(parent) parent.height
         color: GCStyle.configBg
 
-        parent: background
+        parent: activityBackground
         z: 100
         focus: visible
 
@@ -164,7 +164,7 @@ Item {
         // (ctrl+F should still resize the window for example)
         Keys.onPressed: (event) => {
             if(event.key !== Qt.Key_Back) {
-                background.currentActivity.Keys.onPressed(event)
+                activityBackground.currentActivity.Keys.onPressed(event)
             }
         }
         Keys.onReleased: (event) => {

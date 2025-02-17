@@ -23,7 +23,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: Activity.url + "background.svg"
         sourceSize.width: width
@@ -45,7 +45,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias goodAnswerSound: goodAnswerSound
             property alias badAnswerSound: badAnswerSound
             property alias metalSound: metalSound
@@ -54,7 +54,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias score: score
             property int giftWeight
-            property int scaleHeight: background.scaleHeight
+            property int scaleHeight: activityBackground.scaleHeight
             readonly property var levels: activity.datasets
             property alias masseAreaCenter: masseAreaCenter
             property alias masseAreaLeft: masseAreaLeft
@@ -70,8 +70,8 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        property bool isHorizontal: background.width > background.height
-        property bool scoreAtBottom: bar.width * 6 + okButton.width * 1.5 + score.width < background.width
+        property bool isHorizontal: activityBackground.width > activityBackground.height
+        property bool scoreAtBottom: bar.width * 6 + okButton.width * 1.5 + score.width < activityBackground.width
 
         GCSoundEffect {
             id: goodAnswerSound
@@ -103,7 +103,7 @@ ActivityBase {
             source: Activity.url + "needle.svg"
             sourceSize.width: parent.width * 0.75
             z: -1
-            property int angle: - background.scaleHeight * 0.35
+            property int angle: - activityBackground.scaleHeight * 0.35
             anchors {
                 horizontalCenter: parent.horizontalCenter
                 verticalCenter: parent.verticalCenter
@@ -134,7 +134,7 @@ ActivityBase {
                 horizontalCenter: parent.horizontalCenter
                 horizontalCenterOffset: - parent.paintedWidth * 0.3
                 verticalCenter: parent.verticalCenter
-                verticalCenterOffset: - parent.paintedHeight * 0.03 + background.scaleHeight
+                verticalCenterOffset: - parent.paintedHeight * 0.03 + activityBackground.scaleHeight
             }
             Behavior on anchors.verticalCenterOffset {
                 NumberAnimation {
@@ -152,7 +152,7 @@ ActivityBase {
                     horizontalCenter: parent.horizontalCenter
                     horizontalCenterOffset: - parent.paintedWidth * 0.3
                     verticalCenter: parent.verticalCenter
-                    verticalCenterOffset: - parent.paintedHeight * 0.44 + background.scaleHeight
+                    verticalCenterOffset: - parent.paintedHeight * 0.44 + activityBackground.scaleHeight
                 }
                 masseAreaCenter: masseAreaCenter
                 masseAreaLeft: masseAreaLeft
@@ -179,7 +179,7 @@ ActivityBase {
                 horizontalCenter: parent.horizontalCenter
                 horizontalCenterOffset: parent.paintedWidth * 0.3
                 verticalCenter: parent.verticalCenter
-                verticalCenterOffset: - parent.paintedHeight * 0.03 - background.scaleHeight
+                verticalCenterOffset: - parent.paintedHeight * 0.03 - activityBackground.scaleHeight
             }
             Behavior on anchors.verticalCenterOffset {
                 NumberAnimation {
@@ -197,7 +197,7 @@ ActivityBase {
                     horizontalCenter: parent.horizontalCenter
                     horizontalCenterOffset: parent.paintedWidth * 0.3
                     verticalCenter: parent.verticalCenter
-                    verticalCenterOffset: - parent.paintedHeight * 0.44 - background.scaleHeight
+                    verticalCenterOffset: - parent.paintedHeight * 0.44 - activityBackground.scaleHeight
                 }
                 masseAreaCenter: masseAreaCenter
                 masseAreaLeft: masseAreaLeft
@@ -246,9 +246,9 @@ ActivityBase {
             anchors.top: masseAreaCenter.top
             anchors.bottom: masseAreaCenter.bottom
             z: 1000
-            width: isHorizontal ? parent.width * 0.5 : background.width - 160 * ApplicationInfo.ratio
+            width: isHorizontal ? parent.width * 0.5 : activityBackground.width - 160 * ApplicationInfo.ratio
             answer: items.giftWeight
-            visible: (items.question.text && background.scaleHeight === 0) ? true : false
+            visible: (items.question.text && activityBackground.scaleHeight === 0) ? true : false
         }
 
         ErrorRectangle {
@@ -294,13 +294,13 @@ ActivityBase {
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
                 // restart activity on saving
-                background.start()
+                activityBackground.start()
             }
             onClose: {
                 home()
             }
             onStartActivity: {
-                background.start()
+                activityBackground.start()
             }
         }
 
@@ -346,7 +346,7 @@ ActivityBase {
 
         states: [
             State {
-                name: "horizontalLayout"; when: background.scoreAtBottom
+                name: "horizontalLayout"; when: activityBackground.scoreAtBottom
                 AnchorChanges {
                     target: score
                     anchors.top: undefined
@@ -359,7 +359,7 @@ ActivityBase {
                     anchors.horizontalCenter: undefined
                     anchors.verticalCenter: bar.verticalCenter
                     anchors.bottom: undefined
-                    anchors.right: background.right
+                    anchors.right: activityBackground.right
                     anchors.left: undefined
                 }
                 PropertyChanges {
@@ -371,7 +371,7 @@ ActivityBase {
                 }
             },
             State {
-                name: "verticalLayout"; when: !background.scoreAtBottom
+                name: "verticalLayout"; when: !activityBackground.scoreAtBottom
                 AnchorChanges {
                     target: score
                     anchors.top: undefined
@@ -385,7 +385,7 @@ ActivityBase {
                     anchors.verticalCenter: undefined
                     anchors.bottom: bar.top
                     anchors.right: undefined
-                    anchors.left: background.horizontalCenter
+                    anchors.left: activityBackground.horizontalCenter
                 }
                 PropertyChanges {
                     okButton {

@@ -100,7 +100,7 @@ function start(items_) {
         }
         else {
             if(items.levelSet === "user") {
-                Core.showMessageDialog(items.background,
+                Core.showMessageDialog(items.activityBackground,
                                         // The argument represents the file path name to be loaded.
                                        qsTr("The file '%1' is missing!<br>Falling back to builtin levels.").arg(items.filePath) + "<br>" + createLevelsMsg,
                                        "", null,

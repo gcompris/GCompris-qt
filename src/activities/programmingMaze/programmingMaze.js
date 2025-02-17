@@ -218,7 +218,7 @@ function initLevel() {
         items.currentLevelContainsLoop = false
 
     // Create, populate and connect signals of instructions for main function code area and store them in mainInstructionObjects.
-    createInstructionObjects(mainInstructionObjects, items.background)
+    createInstructionObjects(mainInstructionObjects, items.activityBackground)
 
     if(items.currentLevelContainsProcedure) {
         if(!items.tutorialImage.shownProcedureTutorialInstructions) {
@@ -227,7 +227,7 @@ function initLevel() {
         }
 
         // Create procedure object in the main look-up table ,if the level has procedure, to execute it for procedure/loop calls from the main code area.
-        createInstruction(mainInstructionObjects, CALL_PROCEDURE, items.background)
+        createInstruction(mainInstructionObjects, CALL_PROCEDURE, items.activityBackground)
 
         // Create, populate and connect signals of instructions for procedure code area if the level has procedure.
         createInstructionObjects(procedureInstructionObjects, mainInstructionObjects[CALL_PROCEDURE])
@@ -282,7 +282,7 @@ function initLevel() {
     items.constraintInstruction.show()
     items.mainFunctionCodeArea.resetEditingValues()
     items.procedureCodeArea.resetEditingValues()
-    items.background.areaWithKeyboardInput = items.instructionArea
+    items.activityBackground.areaWithKeyboardInput = items.instructionArea
     resetCodeAreasIndices()
     resetTux = false
     codeIterator = 0
@@ -290,7 +290,7 @@ function initLevel() {
 
 function createLoopObjectAndInstructions() {
     // Create loop object in the main look-up table ,if the activity mode is loops, to execute it loops from the main code area.
-    createInstruction(mainInstructionObjects, EXECUTE_LOOPS, items.background)
+    createInstruction(mainInstructionObjects, EXECUTE_LOOPS, items.activityBackground)
 
     // Create, populate and connect signals of instructions for loop code area itself.
     createInstructionObjects(loopInstructionObjects, mainInstructionObjects[EXECUTE_LOOPS])

@@ -13,84 +13,84 @@ WidgetOption {
 
     src: "resource/images/candy.svg"
     name: "candy"
-    availableItems: (background.easyMode) ? widget.total - widget.current : ""
+    availableItems: (activityBackground.easyMode) ? widget.total - widget.current : ""
 
     property int placedInChild
 
     releaseElement: function() {
-        var newCoordinate = widget.mapToItem(background, element.x, element.y)
+        var newCoordinate = widget.mapToItem(activityBackground, element.x, element.y)
         // Easy mode
-        if (background.easyMode) {
-            if (background.currentCandies < items.totalCandies) {
+        if (activityBackground.easyMode) {
+            if (activityBackground.currentCandies < items.totalCandies) {
                 items.acceptCandy = true
 
                 for (var i = 0; i < listModel.count; i++) {
                     var currentChild = repeaterDropAreas.itemAt(i)
-                    var childCoordinate = dropAreas.mapToItem(background, currentChild.x, currentChild.y)
+                    var childCoordinate = dropAreas.mapToItem(activityBackground, currentChild.x, currentChild.y)
                     //coordinates of "boy/girl rectangle" in background coordinates
 
-                    var currentElement = element.parent.mapToItem(background, element.x, element.y)
+                    var currentElement = element.parent.mapToItem(activityBackground, element.x, element.y)
 
                     if (currentElement.x > childCoordinate.x && currentElement.x < childCoordinate.x + currentChild.area.width &&
                     currentElement.y > childCoordinate.y + currentChild.childImage.height &&
                     currentElement.y < childCoordinate.y + currentChild.childImage.height + currentChild.area.height) {
                         if ((listModel.get(i).countS + 1) > items.maxNumberOfCandiesPerWidget) {
-                            background.wrongMove.visible = true
+                            activityBackground.wrongMove.visible = true
                             continue
                         }
                         repeaterDropAreas.itemAt(i).candyCount.text = listModel.get(i).countS + 1
                         listModel.setProperty(i, "countS", listModel.get(i).countS + 1)
-                        background.currentCandies ++
+                        activityBackground.currentCandies ++
                     }
 
-                    if (background.currentCandies == items.totalCandies) {
+                    if (activityBackground.currentCandies == items.totalCandies) {
                         widget.canDrag = false
-                        background.resetCandy()
+                        activityBackground.resetCandy()
                         candyWidget.element.opacity = 0.6
                     }
                 }
             }
             else {
                 widget.canDrag = false
-                background.resetCandy()
+                activityBackground.resetCandy()
                 element.opacity = 0.6
             }
         }
         else {
             // Hard mode
-            if (background.currentCandies < widget.total) {
+            if (activityBackground.currentCandies < widget.total) {
                 items.acceptCandy = true
 
                 for (i = 0; i < listModel.count; i++) {
                     currentChild = repeaterDropAreas.itemAt(i)
-                    childCoordinate = dropAreas.mapToItem(background, currentChild.x, currentChild.y)
+                    childCoordinate = dropAreas.mapToItem(activityBackground, currentChild.x, currentChild.y)
                     //coordinates of "boy/girl rectangle" in background coordinates
-                    currentElement = element.parent.mapToItem(background, element.x, element.y)
+                    currentElement = element.parent.mapToItem(activityBackground, element.x, element.y)
 
                     if (currentElement.x > childCoordinate.x && currentElement.x < childCoordinate.x + currentChild.area.width &&
                     currentElement.y > childCoordinate.y + currentChild.childImage.height &&
                     currentElement.y < childCoordinate.y + currentChild.childImage.height + currentChild.area.height) {
 
                         if ((listModel.get(i).countS + 1) > items.maxNumberOfCandiesPerWidget) {
-                            background.wrongMove.visible = true
+                            activityBackground.wrongMove.visible = true
                             continue
                         }
 
                         repeaterDropAreas.itemAt(i).candyCount.text = listModel.get(i).countS + 1
                         listModel.setProperty(i, "countS", listModel.get(i).countS + 1)
-                        background.currentCandies ++
+                        activityBackground.currentCandies ++
                     }
 
-                    if (background.currentCandies === items.totalCandies) {
+                    if (activityBackground.currentCandies === items.totalCandies) {
                         widget.canDrag = false
-                        background.resetCandy()
+                        activityBackground.resetCandy()
                         candyWidget.element.opacity = 0.6
                     }
                 }
             }
             else {
                 widget.canDrag = false
-                background.resetCandy()
+                activityBackground.resetCandy()
                 candyWidget.element.opacity = 0.6
             }
         }

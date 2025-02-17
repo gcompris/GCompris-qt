@@ -21,7 +21,7 @@ Item {
     id: spellIt
     opacity: 0
 
-    property alias background: background
+    property alias activityBackground: activityBackground
     property alias wordImage: wordImage
     property alias imageFrame: imageFrame
     property alias hintTextbg: hintTextbg
@@ -60,10 +60,10 @@ Item {
     }
 
     Item {
-        id: background
+        id: activityBackground
         anchors.fill: parent
 
-        property bool horizontalLayout: background.width >= background.height
+        property bool horizontalLayout: activityBackground.width >= activityBackground.height
 
         JsonParser {
             id: parser

@@ -15,7 +15,7 @@ Item {
     Rectangle {
         id: baseSquare
         anchors.fill: parent
-        color: path ? "#D1C8BE" : background.color
+        color: path ? "#D1C8BE" : activityBackground.color
         border.color: "#A0000000"
         visible: invisible ? 0 : 1
     }

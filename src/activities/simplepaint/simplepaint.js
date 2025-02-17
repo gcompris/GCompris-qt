@@ -123,10 +123,10 @@ var nby
 
 var numberOfLevel = backgrounds.length
 
-var background
+var activityBackground
 
-function start(items_, _background) {
-    background = _background
+function start(items_, _activityBackground) {
+    activityBackground = _activityBackground
     items = items_
     Core.getInitialLevel(numberOfLevel);
     initLevel()
@@ -142,7 +142,7 @@ function initLevel() {
     items.colorSelector.positionViewAtBeginning()
     nbx = 20 + items.currentLevel
     nby = Math.floor(nbx * (items.gridLayout.height / items.gridLayout.width))
-    background.refreshCursor()
+    activityBackground.refreshCursor()
 
     var model = []
     for(var ix = 0;  ix < nbx; ++ix) {

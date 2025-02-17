@@ -42,7 +42,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
         readonly property string digits: "0123456789"
         anchors.fill: parent
@@ -61,7 +61,7 @@ ActivityBase {
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
@@ -249,7 +249,7 @@ ActivityBase {
                 AnchorChanges {
                     target: okButton
                     anchors.verticalCenter: undefined
-                    anchors.horizontalCenter: background.horizontalCenter
+                    anchors.horizontalCenter: activityBackground.horizontalCenter
                     anchors.top: board.bottom
                 }
             }
@@ -261,8 +261,8 @@ ActivityBase {
             property bool isCarry: true
             property string color: "#E5E5E5"
             property alias repeater: repeater
-            property int maxX: background.width - width - items.baseMargins
-            property int maxY: background.height - height - items.baseMargins
+            property int maxX: activityBackground.width - width - items.baseMargins
+            property int maxY: activityBackground.height - height - items.baseMargins
             height: 4 * items.digitBgHeight
             width: items.digitBgWidth
             padding: 0
@@ -333,8 +333,8 @@ ActivityBase {
         Popup {
             id: numPad
             property var currentDigit: null
-            property int maxX: background.width - width - items.baseMargins
-            property int maxY: background.height - height - items.baseMargins
+            property int maxX: activityBackground.width - width - items.baseMargins
+            property int maxY: activityBackground.height - height - items.baseMargins
             width: items.digitBgWidth * 3
             height: items.digitBgHeight * 4
             padding: 0
@@ -398,7 +398,7 @@ ActivityBase {
             id: readyButton
             text: qsTr("Ready")
             visible: !okButton.visible
-            anchors.horizontalCenter: background.horizontalCenter
+            anchors.horizontalCenter: activityBackground.horizontalCenter
             y: board.y + items.baseMargins + resultNumber.y
             height: resultNumber.height
             onClicked: Activity.checkDropped()
@@ -433,8 +433,8 @@ ActivityBase {
                 home()
             }
             onStartActivity: {
-                background.stop()
-                background.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 
@@ -443,8 +443,8 @@ ActivityBase {
             numberOfSubLevels: items.subLevelCount
             currentSubLevel: items.currentSubLevel
             anchors.bottom: undefined
-            anchors.top: background.top
-            anchors.right: background.right
+            anchors.top: activityBackground.top
+            anchors.right: activityBackground.right
             onStop: Activity.nextSubLevel()
         }
 

@@ -19,7 +19,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: "qrc:/gcompris/src/activities/canal_lock/resource/sky.svg"
         sourceSize.height: height
@@ -36,7 +36,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias badAnswerSound: badAnswerSound
@@ -64,9 +64,9 @@ ActivityBase {
         Image {
             id: hillArea
             source: "qrc:/gcompris/src/activities/left_right_click/resource/hill.svg"
-            width: background.width
-            height: background.height - leftAreaTarget.height * 0.5
-            anchors.bottom: background.bottom
+            width: activityBackground.width
+            height: activityBackground.height - leftAreaTarget.height * 0.5
+            anchors.bottom: activityBackground.bottom
             sourceSize.width: width
             sourceSize.height: height
         }

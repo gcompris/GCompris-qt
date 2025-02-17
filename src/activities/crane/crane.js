@@ -137,7 +137,7 @@ function setModelWord() {
     // show or hide the grid
     items.showGrid1.opacity = levels[items.currentLevel][items.score.currentSubLevel].showGrid
     // set the two boards in line or not
-    items.background.inLine = levels[items.currentLevel][items.score.currentSubLevel].inLine
+    items.activityBackground.inLine = levels[items.currentLevel][items.score.currentSubLevel].inLine
 
     // set the number of columns and rows, be sure we have enough space to display the word
     items.columns = levels[items.currentLevel][items.score.currentSubLevel].columns
@@ -228,7 +228,7 @@ function setModelImage() {
     items.showGrid1.opacity = levels[items.currentLevel][items.score.currentSubLevel].showGrid
 
     // set the two boards in line or not
-    items.background.inLine = levels[items.currentLevel][items.score.currentSubLevel].inLine
+    items.activityBackground.inLine = levels[items.currentLevel][items.score.currentSubLevel].inLine
 }
 
 // returns the next index needed for switching to another item

@@ -23,7 +23,7 @@ ActivityBase {
     isMusicalActivity: true
 
     pageComponent: Rectangle {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         color: "#ABCDEF"
         signal start
@@ -44,7 +44,7 @@ ActivityBase {
             property Item main: activity.main
             property alias goodAnswerSound: goodAnswerSound
             property alias badAnswerSound: badAnswerSound
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias parser: parser
@@ -62,7 +62,7 @@ ActivityBase {
 
         onStart: {
             if(!ApplicationSettings.isAudioVoicesEnabled || !ApplicationSettings.isAudioEffectsEnabled) {
-                    background.audioDisabled = true;
+                    activityBackground.audioDisabled = true;
             }
             Activity.start(items);
         }
@@ -73,7 +73,7 @@ ActivityBase {
         property int metronomeSpeed: 60000 / multipleStaff.bpmValue - 53
         property real weightOffset: metronome.height * multipleStaff.bpmValue * 0.004
 
-        Keys.onSpacePressed: if(!background.isRhythmPlaying && !items.buttonsBlocked)
+        Keys.onSpacePressed: if(!activityBackground.isRhythmPlaying && !items.buttonsBlocked)
                                 tempo.tempoPressed();
         Keys.onTabPressed: if(metronome.visible && metronomeOscillation.running)
                              metronomeOscillation.stop();
@@ -154,7 +154,7 @@ ActivityBase {
             interval: 500
             onTriggered: {
                 Activity.initSubLevel();
-                background.isRhythmPlaying = true;
+                activityBackground.isRhythmPlaying = true;
             }
         }
 
@@ -199,7 +199,7 @@ ActivityBase {
 
         Score {
             id: score
-            anchors.top: background.top
+            anchors.top: activityBackground.top
             anchors.bottom: undefined
             numberOfSubLevels: 3
             onStop: Activity.nextSubLevel()
@@ -207,22 +207,22 @@ ActivityBase {
 
         MultipleStaff {
             id: multipleStaff
-            width: background.horizontalLayout ? parent.width * 0.6 : parent.width * 0.9
-            height: background.horizontalLayout ? parent.height * 1.1 : parent.height * 0.76
+            width: activityBackground.horizontalLayout ? parent.width * 0.6 : parent.width * 0.9
+            height: activityBackground.horizontalLayout ? parent.height * 1.1 : parent.height * 0.76
             bpmValue: 90
             nbStaves: 1
             clef: clefType
             isFlickable: false
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
-            anchors.topMargin: background.horizontalLayout ? 0 : parent.height * 0.1
+            anchors.topMargin: activityBackground.horizontalLayout ? 0 : parent.height * 0.1
             centerNotesPosition: true
             firstCenteredNotePosition: width / (2 * (musicElementModel.count - 1))
             spaceBetweenNotes: width / (2.5 * (musicElementModel.count - 1))
             enableNotesSound: false
-            onPulseMarkerAnimationFinished: background.isRhythmPlaying = false
+            onPulseMarkerAnimationFinished: activityBackground.isRhythmPlaying = false
             onPlayDrumSound: {
-                if(background.isRhythmPlaying && !metronomeOscillation.running)
+                if(activityBackground.isRhythmPlaying && !metronomeOscillation.running)
                     GSynth.generate(60, 100)
             }
         }
@@ -230,7 +230,7 @@ ActivityBase {
         Image {
             id: tempo
             source: "qrc:/gcompris/src/activities/play_rhythm/resource/drumhead.svg"
-            width: background.horizontalLayout ? parent.width / 7 : parent.width / 4
+            width: activityBackground.horizontalLayout ? parent.width / 7 : parent.width / 4
             sourceSize.width: width
             fillMode: Image.PreserveAspectFit
             anchors.top: metronome.top
@@ -247,7 +247,7 @@ ActivityBase {
             }
             MouseArea {
                 anchors.fill: parent
-                enabled: !background.isRhythmPlaying && !items.buttonsBlocked
+                enabled: !activityBackground.isRhythmPlaying && !items.buttonsBlocked
                 onPressed: tempo.tempoPressed()
             }
 
@@ -394,12 +394,12 @@ ActivityBase {
                 button2Text: qsTr("Continue")
                 onButton1Hit: activity.home();
                 onClose: {
-                    background.audioDisabled = false;
+                    activityBackground.audioDisabled = false;
                 }
             }
             anchors.fill: parent
             focus: true
-            active: background.audioDisabled
+            active: activityBackground.audioDisabled
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
     }

@@ -25,7 +25,7 @@ ActivityBase {
     property string url: "qrc:/gcompris/src/activities/watercycle/resource/"
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
         sourceSize.width: width
@@ -122,8 +122,8 @@ ActivityBase {
             }
 
             property bool cycleDone: false
-            property bool isVertical: background.width < background.height - bar.height * 1.2
-            property bool textOnSide: background.width > layoutArea.width * 1.5
+            property bool isVertical: activityBackground.width < activityBackground.height - bar.height * 1.2
+            property bool textOnSide: activityBackground.width > layoutArea.width * 1.5
         }
 
         IntroMessage {
@@ -155,7 +155,7 @@ ActivityBase {
             id: layoutArea
             width: parent.height - bar.height * 1.2
             height: width
-            anchors.left: background.left
+            anchors.left: activityBackground.left
             states: [
                 State {
                     name: "verticalLayout"

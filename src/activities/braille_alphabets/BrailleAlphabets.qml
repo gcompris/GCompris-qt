@@ -23,7 +23,7 @@ ActivityBase {
     property var dataset: Dataset.get()
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         fillMode: Image.PreserveAspectCrop
         source: Activity.url + "background.svg"
@@ -77,7 +77,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias goodAnswerSound: goodAnswerSound
             property alias clickSound: clickSound
             property int currentLevel: activity.currentLevel
@@ -114,7 +114,7 @@ ActivityBase {
         
         Item {
             id: layoutArea
-            anchors.fill: background
+            anchors.fill: activityBackground
             anchors.bottomMargin: bar.height * 1.3
         }
 

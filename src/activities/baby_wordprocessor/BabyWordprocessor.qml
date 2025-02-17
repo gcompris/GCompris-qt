@@ -30,7 +30,7 @@ ActivityBase {
     }
 
     pageComponent: Rectangle {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         color: 'white'
         signal start

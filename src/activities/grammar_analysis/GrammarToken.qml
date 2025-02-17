@@ -23,8 +23,8 @@ Rectangle {
     property alias imgSvg: imgSvg
     width: 1
     height: 1
-    radius: background.baseRadius
-    color: (items.selectedClass === index) ? background.selectionColor : "transparent"
+    radius: activityBackground.baseRadius
+    color: (items.selectedClass === index) ? activityBackground.selectionColor : "transparent"
 
     Image {     // Display class image
         id: imgSvg

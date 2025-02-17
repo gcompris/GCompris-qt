@@ -18,7 +18,7 @@ ActivityBase {
 
     property string mode: "selectPie" // or "findFraction" in fractions_find activity
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: "qrc:/gcompris/src/activities/magic-hat-minus/resource/background.svg"
         sourceSize.width: width
@@ -37,7 +37,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias goodAnswerSound: goodAnswerSound
             property alias badAnswerSound: badAnswerSound
             property int currentLevel: activity.currentLevel
@@ -49,7 +49,7 @@ ActivityBase {
             property alias chartItem: chartDisplay
             property alias numeratorValue: numeratorText.value
             property alias denominatorValue: denominatorText.value
-            readonly property bool horizontalLayout: background.width >= background.height
+            readonly property bool horizontalLayout: activityBackground.width >= activityBackground.height
             readonly property string mode: activity.mode
             property int numeratorToFind: 0
             property int denominatorToFind: 0
@@ -271,8 +271,8 @@ ActivityBase {
                 home()
             }
             onStartActivity: {
-                background.stop()
-                background.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 

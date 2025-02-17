@@ -12,13 +12,13 @@ WidgetOption {
     id: widget
 
     src: "resource/images/" + name + ".svg"
-    availableItems: (background.easyMode) ? widget.total - widget.current : ""
+    availableItems: (activityBackground.easyMode) ? widget.total - widget.current : ""
 
     property int placedInChild
 
     releaseElement: function() {
-        var newCoordinate = widget.mapToItem(background, element.x, element.y)
-        if (background.contains(newCoordinate.x, newCoordinate.y, grid)) {
+        var newCoordinate = widget.mapToItem(activityBackground, element.x, element.y)
+        if (activityBackground.contains(newCoordinate.x, newCoordinate.y, grid)) {
             if (widget.current < widget.total) {
                 if (widget.canDrag) {
                     widget.current ++

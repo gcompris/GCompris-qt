@@ -33,7 +33,7 @@ Rectangle {
     property alias imageSource: animalImage.source
     property int baseMargins: 15 * ApplicationInfo.ratio
 
-    property bool horizontalLayout: background.width >= background.height
+    property bool horizontalLayout: activityBackground.width >= activityBackground.height
 
     signal showDescriptionPanel
     signal closeDescriptionPanel

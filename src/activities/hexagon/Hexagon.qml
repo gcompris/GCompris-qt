@@ -22,7 +22,7 @@ ActivityBase {
     onStart: focus = true
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: "qrc:/gcompris/src/activities/menu/resource/background.svg"
         sourceSize.width: width
         sourceSize.height: height
@@ -37,7 +37,7 @@ ActivityBase {
         }
         QtObject {
             id: items
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias hexagonModel: hexagonModel

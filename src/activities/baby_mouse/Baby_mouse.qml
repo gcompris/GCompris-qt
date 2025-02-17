@@ -17,7 +17,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: "qrc:/gcompris/src/activities/colors/resource/background.svg"
         sourceSize.width: width
         sourceSize.height: height
@@ -59,8 +59,8 @@ ActivityBase {
 
         Item {
             id: mainArea
-            width: background.width - duckGrid.width
-            height: background.height - bar.height * 1.05 - y
+            width: activityBackground.width - duckGrid.width
+            height: activityBackground.height - bar.height * 1.05 - y
             anchors.left: duckGrid.right
             anchors.top: arrowsArea.bottom
 
@@ -130,9 +130,9 @@ ActivityBase {
                     var moveX = mouseX - startX
                     var moveY = mouseY - startY
 
-                    background.moveDuckHorizontally(moveX)
-                    background.moveDuckVertically(moveY)
-                    background.indicateArrowScale()
+                    activityBackground.moveDuckHorizontally(moveX)
+                    activityBackground.moveDuckVertically(moveY)
+                    activityBackground.indicateArrowScale()
 
                     setStartPosition()
                 }
@@ -174,7 +174,7 @@ ActivityBase {
                     var arrowsBlock = arrowsArea.childAt(arrowsPoint.x, arrowsPoint.y)
 
                     if(arrowsBlock) {
-                        background.isArrowPressed = true
+                        activityBackground.isArrowPressed = true
                         if(arrowsArea.contains(arrowsPoint.x, arrowsPoint.y, arrowsArea.upArrow)) {
                             pressArrowTimer.upPressed = true
                             pressArrowTimer.start()
@@ -195,15 +195,15 @@ ActivityBase {
             }
 
             onTouchUpdated: (touchPoints) => {
-                if(background.isArrowPressed) return;
+                if(activityBackground.isArrowPressed) return;
                 if(touchPoints[0]) {
                     var touch = touchPoints[0]
                     var moveX = touch.x - previousX
                     var moveY = touch.y - previousY
 
-                    background.moveDuckHorizontally(moveX)
-                    background.moveDuckVertically(moveY)
-                    background.indicateArrowScale()
+                    activityBackground.moveDuckHorizontally(moveX)
+                    activityBackground.moveDuckVertically(moveY)
+                    activityBackground.indicateArrowScale()
 
                     previousX = touch.x
                     previousY = touch.y
@@ -214,11 +214,11 @@ ActivityBase {
                 for(var i in touchPoints) {
                     var touch = touchPoints[i]
 
-                    var maxToleranceX = startX + background.toleranceLimit
-                    var minToleranceX = startX - background.toleranceLimit
+                    var maxToleranceX = startX + activityBackground.toleranceLimit
+                    var minToleranceX = startX - activityBackground.toleranceLimit
 
-                    var maxToleranceY = startY + background.toleranceLimit
-                    var minToleranceY = startY - background.toleranceLimit
+                    var maxToleranceY = startY + activityBackground.toleranceLimit
+                    var minToleranceY = startY - activityBackground.toleranceLimit
 
                     if(minToleranceX <= touch.x && touch.x <= maxToleranceX && minToleranceY <= touch.y && touch.y <= maxToleranceY) {
                         var ducksPoint = parent.mapToItem(duckGrid, touch.x, touch.y)
@@ -238,8 +238,8 @@ ActivityBase {
                         }
                     }
 
-                    background.isArrowPressed = false
-                    background.resetArrowScale()
+                    activityBackground.isArrowPressed = false
+                    activityBackground.resetArrowScale()
                     pressArrowTimer.stopTimer()
                 }
             }
@@ -248,7 +248,7 @@ ActivityBase {
         Timer {
             id: resetArrowTimer
             interval: 200
-            onTriggered: background.resetArrowScale()
+            onTriggered: activityBackground.resetArrowScale()
         }
 
         Timer {
@@ -380,7 +380,7 @@ ActivityBase {
                 rotation: -90
 
                 function moveDuckUp() {
-                    upArrow.scale = background.largeScale
+                    upArrow.scale = activityBackground.largeScale
                     if(mainArea.mainDuckY - 1 >= 0) {
                         mainArea.mainDuckY -= 5;
                     }
@@ -400,7 +400,7 @@ ActivityBase {
                 rotation: 0
 
                 function moveDuckToRight() {
-                    rightArrow.scale = background.largeScale
+                    rightArrow.scale = activityBackground.largeScale
                     if(mainArea.mainDuckX + 1 <= mainArea.rightDirectionLimit) {
                         mainArea.mainDuckX += 5;
                     }
@@ -421,7 +421,7 @@ ActivityBase {
                 rotation: 90
 
                 function moveDuckDown() {
-                    downArrow.scale = background.largeScale
+                    downArrow.scale = activityBackground.largeScale
                     if(mainArea.mainDuckY + 1 <= mainArea.downDirectionLimit) {
                         mainArea.mainDuckY += 5;
                     }
@@ -441,7 +441,7 @@ ActivityBase {
                 rotation: 180
 
                 function moveDuckToLeft() {
-                    leftArrow.scale = background.largeScale
+                    leftArrow.scale = activityBackground.largeScale
                     if(mainArea.mainDuckX - 1 >= 0) {
                         mainArea.mainDuckX -= 5;
                     }

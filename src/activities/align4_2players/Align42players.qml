@@ -24,7 +24,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: Activity.url + "background.svg"
         sourceSize.width: width
@@ -44,7 +44,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int baseMargins: 10 * ApplicationInfo.ratio
             property int smallMargins: 5 * ApplicationInfo.ratio
             property alias fallingPiece: fallingPiece
@@ -59,7 +59,7 @@ ActivityBase {
             property alias columns: grid.columns
             property alias rows: grid.rows
             property alias trigTuxMove: trigTuxMove
-            property int cellSize: background.horizontalLayout ? layoutArea1.height / (grid.rows + 1) - smallMargins :
+            property int cellSize: activityBackground.horizontalLayout ? layoutArea1.height / (grid.rows + 1) - smallMargins :
                     Math.min(layoutArea2.width / grid.columns, layoutArea2.height / (grid.rows + 1)) - smallMargins
             property bool gameDone: false
             property int counter
@@ -100,12 +100,12 @@ ActivityBase {
 
         Item {
             id: layoutArea1
-            width: background.width - 4 * items.baseMargins - 2.8 * player1score.width
-            anchors.top: background.top
-            anchors.bottom: background.bottom
+            width: activityBackground.width - 4 * items.baseMargins - 2.8 * player1score.width
+            anchors.top: activityBackground.top
+            anchors.bottom: activityBackground.bottom
             anchors.topMargin: player1score.height * 0.5
             anchors.bottomMargin: bar.height * 1.2
-            anchors.horizontalCenter: background.horizontalCenter
+            anchors.horizontalCenter: activityBackground.horizontalCenter
         }
 
         Item {
@@ -129,7 +129,7 @@ ActivityBase {
             states: [
                 State {
                     name: "isHorizontalLayout"
-                    when: background.horizontalLayout
+                    when: activityBackground.horizontalLayout
                     AnchorChanges {
                         target: gridContainer
                         anchors.verticalCenter: layoutArea1.verticalCenter
@@ -138,7 +138,7 @@ ActivityBase {
                 },
                 State {
                     name: "isVerticalLayout"
-                    when: !background.horizontalLayout
+                    when: !activityBackground.horizontalLayout
                     AnchorChanges {
                         target: gridContainer
                         anchors.verticalCenter: layoutArea2.verticalCenter
@@ -212,7 +212,7 @@ ActivityBase {
 
             property bool holdMode: true
             function display() {
-                var coord = grid.mapFromItem(background, mouseX, mouseY)
+                var coord = grid.mapFromItem(activityBackground, mouseX, mouseY)
                 Activity.setPieceLocation(coord.x, coord.y)
             }
 
@@ -222,7 +222,7 @@ ActivityBase {
             onClicked: {
                 display()
                 if(!holdMode) {
-                    var coord = grid.mapFromItem(background, mouseX, mouseY)
+                    var coord = grid.mapFromItem(activityBackground, mouseX, mouseY)
                     var column = Activity.whichColumn(coord.x, coord.y)
                     Activity.handleDrop(column)
                 }
@@ -253,12 +253,12 @@ ActivityBase {
             id: player1score
             z: 1
             player: 1
-            height: Math.min(background.height/7, Math.min(background.width/7, bar.height * 1.05))
+            height: Math.min(activityBackground.height/7, Math.min(activityBackground.width/7, bar.height * 1.05))
             width: height*11/8
             anchors {
-                top: background.top
+                top: activityBackground.top
                 topMargin: items.baseMargins
-                left: background.left
+                left: activityBackground.left
                 leftMargin: items.baseMargins
             }
             playerImageSource: "qrc:/gcompris/src/core/resource/player_1.svg"
@@ -269,12 +269,12 @@ ActivityBase {
             id: player2score
             z: 1
             player: 2
-            height: Math.min(background.height/7, Math.min(background.width/7, bar.height * 1.05))
+            height: Math.min(activityBackground.height/7, Math.min(activityBackground.width/7, bar.height * 1.05))
             width: height*11/8
             anchors {
-                top: background.top
+                top: activityBackground.top
                 topMargin: items.baseMargins
-                right: background.right
+                right: activityBackground.right
                 rightMargin: items.baseMargins
             }
             playerImageSource: "qrc:/gcompris/src/core/resource/player_2.svg"

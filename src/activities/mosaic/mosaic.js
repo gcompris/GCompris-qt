@@ -32,7 +32,7 @@ function stop() {
 
 function initLevel() {
     items.buttonsBlocked = false
-    items.background.areaWithKeyboardFocus = items.selector
+    items.activityBackground.areaWithKeyboardFocus = items.selector
     items.selectedItem = ""
     items.nbItems = items.levels[items.currentLevel].nbOfCells
     items.questionLayoutColumns = items.levels[items.currentLevel].layout[0][0]

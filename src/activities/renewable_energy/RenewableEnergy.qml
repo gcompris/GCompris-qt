@@ -25,7 +25,7 @@ ActivityBase {
     property string url2: "qrc:/gcompris/src/activities/watercycle/resource/"
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
         sourceSize.width: width
@@ -45,8 +45,8 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
-            property bool isVertical: background.width < background.height - bar.height * 1.2
+            property alias activityBackground: activityBackground
+            property bool isVertical: activityBackground.width < activityBackground.height - bar.height * 1.2
             property alias bonus: bonus
             property alias harbor1Sound: harbor1Sound
             property alias harbor2Sound: harbor2Sound
@@ -148,7 +148,7 @@ ActivityBase {
             id: layoutArea
             width: parent.height - bar.height * 1.2
             height: width
-            anchors.horizontalCenter: background.horizontalCenter
+            anchors.horizontalCenter: activityBackground.horizontalCenter
             states: [
                 State {
                     name: "verticalLayout"
@@ -312,7 +312,7 @@ ActivityBase {
         Rectangle {
             id: check
             opacity: 0
-            width: background.width * 0.9
+            width: activityBackground.width * 0.9
             height: layoutArea.height * 0.9
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: layoutArea.verticalCenter

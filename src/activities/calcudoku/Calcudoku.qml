@@ -19,7 +19,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: Activity.url + "background.svg"
         sourceSize.width: width
@@ -42,7 +42,7 @@ ActivityBase {
 
         QtObject {
             id: items
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
@@ -100,8 +100,8 @@ ActivityBase {
             }
 
             onStartActivity: {
-                background.stop()
-                background.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 
@@ -135,8 +135,8 @@ ActivityBase {
             z: 1003
             height: 48 * ApplicationInfo.ratio
             anchors.bottom: bar.top
-            anchors.right: background.right
-            anchors.bottomMargin: background.baseMargins
+            anchors.right: activityBackground.right
+            anchors.bottomMargin: activityBackground.baseMargins
             onStop: Activity.incrementLevel()
         }
 
@@ -156,26 +156,26 @@ ActivityBase {
 
         Item {
             id: gridLayout
-            anchors.margins: background.baseMargins
+            anchors.margins: activityBackground.baseMargins
             anchors.bottom: score.top
-            anchors.right: background.right
+            anchors.right: activityBackground.right
             states: [
                 State {
                     name: "horizontalLayout"
-                    when: background.isHorizontalLayout
+                    when: activityBackground.isHorizontalLayout
                     AnchorChanges {
                         target: gridLayout
-                        anchors.top: background.top
+                        anchors.top: activityBackground.top
                         anchors.left: availablePieces.right
                     }
                 },
                 State {
                     name: "verticalLayout"
-                    when: !background.isHorizontalLayout
+                    when: !activityBackground.isHorizontalLayout
                     AnchorChanges {
                         target: gridLayout
                         anchors.top: availablePieces.bottom
-                        anchors.left: background.left
+                        anchors.left: activityBackground.left
                     }
                 }
             ]

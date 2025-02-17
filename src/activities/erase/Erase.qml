@@ -24,7 +24,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         signal start
         signal stop
         focus: true
@@ -42,7 +42,7 @@ ActivityBase {
         }
         QtObject {
             id: items
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias bar: bar
             property alias blocks: blocks
             property int currentLevel: activity.currentLevel
@@ -62,18 +62,18 @@ ActivityBase {
 
         function alignBackground() {
             if(Activity.backgroundImages[Activity.currentImage][1] === "left")
-                background.horizontalAlignment = Image.AlignLeft
+                activityBackground.horizontalAlignment = Image.AlignLeft
             else if(Activity.backgroundImages[Activity.currentImage][1] === "right")
-                background.horizontalAlignment = Image.AlignRight
+                activityBackground.horizontalAlignment = Image.AlignRight
             else
-                background.horizontalAlignment = Image.AlignHCenter
+                activityBackground.horizontalAlignment = Image.AlignHCenter
 
             if(Activity.backgroundImages[Activity.currentImage][2] === "top")
-                background.verticalAlignment = Image.AlignTop
+                activityBackground.verticalAlignment = Image.AlignTop
             else if(Activity.backgroundImages[Activity.currentImage][2] === "bottom")
-                background.verticalAlignment = Image.AlignBottom
+                activityBackground.verticalAlignment = Image.AlignBottom
             else
-                background.verticalAlignment = Image.AlignVCenter
+                activityBackground.verticalAlignment = Image.AlignVCenter
         }
 
         GCSoundEffect {
@@ -130,7 +130,7 @@ ActivityBase {
                 type: activity.type
                 main: MAIN
                 bar: BAR
-                background: items.background
+                blockBackground: items.activityBackground
             }
         }
 
@@ -152,8 +152,8 @@ ActivityBase {
                 }
             }
             onStartActivity: {
-                background.stop()
-                background.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 
@@ -180,7 +180,7 @@ ActivityBase {
         Score {
             id: score
             anchors {
-                bottom: (background.width >= background.height + 40 * ApplicationInfo.ratio) ? background.bottom : bar.top
+                bottom: (activityBackground.width >= activityBackground.height + 40 * ApplicationInfo.ratio) ? activityBackground.bottom : bar.top
                 bottomMargin: 10 * ApplicationInfo.ratio
                 right: parent.right
                 rightMargin: 10 * ApplicationInfo.ratio

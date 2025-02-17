@@ -20,7 +20,7 @@ ActivityBase {
     }
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: "qrc:/gcompris/src/activities/algebra_by/resource/background.svg"
         fillMode: Image.PreserveAspectCrop
         sourceSize.width: width
@@ -36,7 +36,7 @@ ActivityBase {
 
         Item {
             id: items
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
@@ -80,8 +80,8 @@ ActivityBase {
             }
 
             onStartActivity: {
-                background.stop()
-                background.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 
@@ -222,8 +222,8 @@ ActivityBase {
             id: errorRectangle
             anchors.top: textFlow.top
             anchors.bottom: okButton.top
-            anchors.left: background.left
-            anchors.right: background.right
+            anchors.left: activityBackground.left
+            anchors.right: activityBackground.right
             anchors.bottomMargin: 10 * ApplicationInfo.ratio
             imageSize: okButton.width
             function releaseControls() {

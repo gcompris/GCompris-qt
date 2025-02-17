@@ -17,12 +17,12 @@ GridView {
     id: instructionArea
     width: parent.width * 0.5
     height: parent.height * 0.17
-    cellWidth: background.buttonWidth
-    cellHeight: background.buttonHeight
+    cellWidth: activityBackground.buttonWidth
+    cellHeight: activityBackground.buttonHeight
 
     anchors.left: parent.left
     anchors.top: mazeModel.bottom
-    anchors.topMargin: background.height * 0.4
+    anchors.topMargin: activityBackground.height * 0.4
 
     property string instructionText: qsTr("Choose the instructions")
 
@@ -31,7 +31,7 @@ GridView {
 
     header: HeaderArea {
         width: instructionArea.width
-        height: background.height / 11
+        height: activityBackground.height / 11
         headerOpacity: 1
         headerText: instructionText
     }
@@ -48,7 +48,7 @@ GridView {
 
     onTabKeyPressed:  {
         instructionArea.currentIndex = -1
-        background.areaWithKeyboardInput = mainFunctionCodeArea
+        activityBackground.areaWithKeyboardInput = mainFunctionCodeArea
     }
 
     highlight: Rectangle {
@@ -65,8 +65,8 @@ GridView {
 
     delegate: Item {
         id: instructionItem
-        width: background.buttonWidth
-        height: background.buttonHeight * 1.18
+        width: activityBackground.buttonWidth
+        height: activityBackground.buttonHeight * 1.18
 
         Rectangle {
             id: imageHolder
@@ -116,9 +116,9 @@ GridView {
             if(items.constraintInstruction.opacity)
                 items.constraintInstruction.hide()
 
-            if(!background.insertIntoMain && (name !== Activity.CALL_PROCEDURE) && (name !== Activity.EXECUTE_LOOPS))
+            if(!activityBackground.insertIntoMain && (name !== Activity.CALL_PROCEDURE) && (name !== Activity.EXECUTE_LOOPS))
                 insertIntoModel(procedureModel, procedureCodeArea)
-            else if(background.insertIntoMain)
+            else if(activityBackground.insertIntoMain)
                 insertIntoModel(mainFunctionModel, mainFunctionCodeArea)
         }
 

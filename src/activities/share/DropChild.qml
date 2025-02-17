@@ -57,8 +57,8 @@ Rectangle {
 
         color: "#f2f2f2"
 
-        property var childCoordinate: repeaterDropAreas.mapToItem(background, dropChild.x, dropChild.y)
-        property var candyCoord: candyWidget.mapToItem(background, candyWidget.element.x, candyWidget.element.y)
+        property var childCoordinate: repeaterDropAreas.mapToItem(activityBackground, dropChild.x, dropChild.y)
+        property var candyCoord: candyWidget.mapToItem(activityBackground, candyWidget.element.x, candyWidget.element.y)
 
         opacity: candyCoord.x > childCoordinate.x &&
                  candyCoord.y > childCoordinate.y + childImage.height &&
@@ -72,45 +72,45 @@ Rectangle {
             onClicked: {
                 if (items.acceptCandy) {
                     // Easy mode
-                    if (background.easyMode) {
-                        if (background.currentCandies < items.candyWidget.total) {
+                    if (activityBackground.easyMode) {
+                        if (activityBackground.currentCandies < items.candyWidget.total) {
                             if (listModel.get(index).countS + 1 <= items.maxNumberOfCandiesPerWidget) {
                                 //add candies in the first rectangle
                                 repeaterDropAreas.itemAt(index).candyCount.text = listModel.get(index).countS + 1
                                 listModel.setProperty(index, "countS", listModel.get(index).countS + 1)
                                 //the current number of candies increases
-                                background.currentCandies ++
+                                activityBackground.currentCandies ++
                                 //on the last one, the candy image from top goes away (destroy)
-                                if (background.currentCandies === items.candyWidget.total) {
-                                    background.resetCandy()
+                                if (activityBackground.currentCandies === items.candyWidget.total) {
+                                    activityBackground.resetCandy()
                                     candyWidget.element.opacity = 0.6
                                 }
                             }
                             else {
-                                background.wrongMove.visible = true
+                                activityBackground.wrongMove.visible = true
                             }
                         }
                         else {
-                            background.resetCandy()
+                            activityBackground.resetCandy()
                             candyWidget.element.opacity = 0.6
                         }
                     }
                     // Hard mode
                     else {
-                        if (background.currentCandies < items.candyWidget.total) {
+                        if (activityBackground.currentCandies < items.candyWidget.total) {
                             if (listModel.get(index).countS + 1 <= items.maxNumberOfCandiesPerWidget) {
                                 //add candies in the first rectangle
                                 repeaterDropAreas.itemAt(index).candyCount.text = listModel.get(index).countS + 1
                                 listModel.setProperty(index, "countS", listModel.get(index).countS + 1)
                                 //the current number of candies increases
-                                background.currentCandies ++
-                                if (background.currentCandies === items.candyWidget.total) {
-                                    background.resetCandy()
+                                activityBackground.currentCandies ++
+                                if (activityBackground.currentCandies === items.candyWidget.total) {
+                                    activityBackground.resetCandy()
                                     candyWidget.element.opacity = 0.6
                                 }
                             }
                             else {
-                                background.wrongMove.visible = true
+                                activityBackground.wrongMove.visible = true
                             }
                         }
                     }
@@ -156,7 +156,7 @@ Rectangle {
 
                         function childContainsCandy(currentChild, candy) {
                             //coordinates of "boy/girl rectangle" in background coordinates
-                            var child = dropAreas.mapToItem(items.background, currentChild.x, currentChild.y)
+                            var child = dropAreas.mapToItem(items.activityBackground, currentChild.x, currentChild.y)
                             return (candy.x > child.x &&
                                 candy.x < child.x + currentChild.area.width &&
                                 candy.y > child.y + currentChild.childImage.height &&
@@ -167,7 +167,7 @@ Rectangle {
                             //move this rectangle/grid to its previous state
                             dropChild.z--
 
-                            var candyCoordinate = candyArea.parent.mapToItem(background, candyArea.x, candyArea.y)
+                            var candyCoordinate = candyArea.parent.mapToItem(activityBackground, candyArea.x, candyArea.y)
 
                             //check where the candy is being dropped
                             for (var i = 0 ; i < listModel.count ; i++) {
@@ -178,7 +178,7 @@ Rectangle {
                                     if (childContainsCandy(currentChild, candyCoordinate)) {
                                         // don't drop more than the maximum of allowed candies per widget
                                         if(listModel.get(currentChild.indexS).countS >= items.maxNumberOfCandiesPerWidget) {
-                                            background.wrongMove.visible = true
+                                            activityBackground.wrongMove.visible = true
                                             break;
                                         }
 
@@ -201,7 +201,7 @@ Rectangle {
                         //when clicked, it will restore the candy
                         onClicked: {
                             repeaterDropAreas.itemAt(rect2.indexS).candyCount.text = listModel.get(rect2.indexS).countS - 1
-                            background.currentCandies--
+                            activityBackground.currentCandies--
                             candyWidget.element.opacity = 1
                             items.candyWidget.canDrag = true
                             listModel.setProperty(rect2.indexS, "countS", listModel.get(rect2.indexS).countS - 1);

@@ -19,7 +19,7 @@ MouseArea {
     enabled: items.selectedItem && items.selectedItem.selected && items.selectedItem.rotable
     property double prevRotation: 0
     onPositionChanged: {
-        var backPoint = background.mapFromItem(parent, mouseX, mouseY)
+        var backPoint = activityBackground.mapFromItem(parent, mouseX, mouseY)
         // Calc the angle touch / object center
         var rotation = Activity.getAngleOfLineBetweenTwoPoints(
                     items.selectedItem.x + items.selectedItem.width / 2, items.selectedItem.y +
@@ -35,6 +35,6 @@ MouseArea {
         // Force a modulo 45 rotation
         items.selectedItem.rotation = Math.floor((items.selectedItem.rotation + 45 / 2) / 45) * 45
         items.selectedItem.selected = false
-        background.checkWin()
+        activityBackground.checkWin()
     }
 }

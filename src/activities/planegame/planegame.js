@@ -136,9 +136,9 @@ function createCloud() {
         return
     }
     var cloud = cloudComponent.createObject(
-                items.background, {
-                    "background": items.background,
-                    "x": items.background.width,
+                items.activityBackground, {
+                    "cloudBackground": items.activityBackground,
+                    "x": items.activityBackground.width,
                     "heightRatio": 1.0 - 0.5 * items.currentLevel / 10
                 });
 
@@ -238,8 +238,8 @@ function computeVelocity() {
 /* We move x/y of the plane to let its smooth animation track it */
 function planeMove() {
 
-    if(items.plane.x + items.plane.width > items.background.width) {
-        items.plane.x = items.background.width - items.plane.width;
+    if(items.plane.x + items.plane.width > items.activityBackground.width) {
+        items.plane.x = items.activityBackground.width - items.plane.width;
     }
     if(items.plane.x < 0) {
         items.plane.x = 0;
@@ -248,8 +248,8 @@ function planeMove() {
     if(items.plane.y < 0) {
         items.plane.y = 0;
     }
-    if(items.plane.y + items.plane.height > items.background.height - items.bar.height) {
-        items.plane.y = items.background.height - (items.plane.height + items.bar.height);
+    if(items.plane.y + items.plane.height > items.activityBackground.height - items.bar.height) {
+        items.plane.y = items.activityBackground.height - (items.plane.height + items.bar.height);
     }
 
 }

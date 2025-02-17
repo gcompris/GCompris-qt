@@ -205,7 +205,7 @@ Item {
 
     Rectangle {
         id: pulseMarker
-        width: background.horizontalLayout ? 5 : 3
+        width: activityBackground.horizontalLayout ? 5 : 3
         border.width: width / 2
         height: staves.itemAt(0) == undefined ? 0 : 4 * staves.itemAt(0).verticalDistanceBetweenLines + width
         opacity: isPulseMarkerDisplayed && pulseMarkerAnimation.running
@@ -341,7 +341,7 @@ Item {
         }
 
         multipleStaff.selectedIndex = -1
-        background.clefType = musicElementModel.get(musicElementModel.count - 1).soundPitch_
+        activityBackground.clefType = musicElementModel.get(musicElementModel.count - 1).soundPitch_
 
         if(playAudio)
             playNoteAudio(noteName, noteType, soundPitch, musicElementRepeater.itemAt(musicElementModel.count - 1).duration)
@@ -394,7 +394,7 @@ Item {
             nbStaves = lastMusicElement.staffNb_ + 1
 
         currentEnteringStaff = lastMusicElement.staffNb_
-        background.clefType = lastMusicElement.soundPitch_
+        activityBackground.clefType = lastMusicElement.soundPitch_
     }
 
     /**
@@ -416,7 +416,7 @@ Item {
         musicElementModel.clear()
         selectedIndex = -1
         multipleStaff.currentEnteringStaff = 0
-        initClefs(background.clefType)
+        initClefs(activityBackground.clefType)
     }
 
     readonly property var octave1MidiNumbersTable: {"C":24,"C#":25,"Db":25,"D":26,"D#":27,"Eb":27,"E":28,"F":29,"F#":30,"Gb":30,"G":31,"G#":32,"Ab":32,"A":33,"A#":34,"Bb":34,"B":35}
@@ -476,7 +476,7 @@ Item {
     function loadFromData(data) {
         if(data != undefined) {
             var melody = data.split(" ")
-            background.clefType = melody[0]
+            activityBackground.clefType = melody[0]
             eraseAllNotes()
             for(var i = 1 ; i < melody.length; ++i) {
                 var noteLength = melody[i].length
@@ -564,7 +564,7 @@ Item {
                 var note = currentElement.noteName_
                 var soundPitch = currentElement.soundPitch_
                 var currentStaff = currentElement.staffNb_
-                background.clefType = currentElement.clefType_
+                activityBackground.clefType = currentElement.clefType_
 
                 if(currentElement.isDefaultClef_ && currentStaff > 1) {
                     flickableStaves.contentY = staves.itemAt(currentStaff - 1).y

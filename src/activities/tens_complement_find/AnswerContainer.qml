@@ -39,10 +39,10 @@ Item {
             right: parent.right
             top: parent.top
             bottom: parent.bottom
-            leftMargin: background.layoutMargins
-            topMargin: background.layoutMargins
-            bottomMargin: background.layoutMargins
-            rightMargin: background.layoutMargins + validationImage.height
+            leftMargin: activityBackground.layoutMargins
+            topMargin: activityBackground.layoutMargins
+            bottomMargin: activityBackground.layoutMargins
+            rightMargin: activityBackground.layoutMargins + validationImage.height
 
         }
         property int cardWidth: answerRectangle.width / numberOfItemsInModel(addition)
@@ -81,7 +81,7 @@ Item {
         source: isCorrect ? correctAnswerImage : wrongAnswerImage
         anchors {
             left: answerRectangle.right
-            leftMargin: background.layoutMargins * 0.5
+            leftMargin: activityBackground.layoutMargins * 0.5
             verticalCenter: answerRectangle.verticalCenter
         }
     }

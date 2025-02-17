@@ -18,7 +18,7 @@ ActivityBase {
 
     onStart: focus = true;
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: "qrc:/gcompris/src/activities/family/resource/background.svg"
         sourceSize.width: width
         sourceSize.height: height
@@ -99,24 +99,24 @@ ActivityBase {
 
         Item {
             id: mainScreen
-            height: background.height - bar.height * 1.5
-            anchors.top: background.top
-            anchors.left: background.left
+            height: activityBackground.height - bar.height * 1.5
+            anchors.top: activityBackground.top
+            anchors.left: activityBackground.left
             anchors.right: okButton.width > score.width ? okButton.left : score.left
-            anchors.margins: background.baseMargins
+            anchors.margins: activityBackground.baseMargins
 
             property bool horizontalLayout: mainScreen.width >= mainScreen.height
 
             Rectangle {
                 id: backgroundScreen
-                width: parent.width - 2 * background.baseMargins
+                width: parent.width - 2 * activityBackground.baseMargins
                 height: mainScreen.horizontalLayout ? parent.height * 0.6 : parent.height * 0.4
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.top: parent.top
-                anchors.topMargin: background.baseMargins
+                anchors.topMargin: activityBackground.baseMargins
                 visible: items.currentLevel % 2 !== 0 ? true : false
                 color: "#55333333"
-                radius: background.baseMargins
+                radius: activityBackground.baseMargins
 
                 BoxBoyPosition {
                     id: currentPosition
@@ -133,7 +133,7 @@ ActivityBase {
                 visible: items.currentLevel % 2 !== 0 ? true : false
                 anchors.top: backgroundScreen.bottom
                 anchors.bottom: parent.bottom
-                anchors.margins: background.baseMargins
+                anchors.margins: activityBackground.baseMargins
                 cellWidth: mainScreen.horizontalLayout ? answerViews.width / answerViews.count : answerViews.width
                 cellHeight: mainScreen.horizontalLayout ? answerViews.height : answerViews.height / answerViews.count
                 keyNavigationWraps: true
@@ -145,8 +145,8 @@ ActivityBase {
                     id: answer
                     color: index == answerViews.currentIndex ? "#FFFFFFFF" : "#80FFFFFF"
                     radius: 15
-                    width: answerViews.cellWidth - background.baseMargins
-                    height: answerViews.cellHeight - background.baseMargins
+                    width: answerViews.cellWidth - activityBackground.baseMargins
+                    height: answerViews.cellHeight - activityBackground.baseMargins
                     border.width: index == answerViews.currentIndex ? 3 : 0
                     border.color: "#373737"
 
@@ -157,7 +157,7 @@ ActivityBase {
                         fontSize: mediumSize
                         wrapMode: Text.WordWrap
                         fontSizeMode: Text.Fit
-                        width: answer.width - background.baseMargins
+                        width: answer.width - activityBackground.baseMargins
                         height: answer.height
                         anchors.centerIn: parent
                         verticalAlignment: Text.AlignVCenter
@@ -181,8 +181,8 @@ ActivityBase {
             Rectangle {
                 id: questionArea
                 anchors.centerIn: questionItem
-                width: questionItem.contentWidth + background.baseMargins * 2
-                height: questionItem.contentHeight + background.baseMargins
+                width: questionItem.contentWidth + activityBackground.baseMargins * 2
+                height: questionItem.contentHeight + activityBackground.baseMargins
                 radius: 10
                 color: "#373737"
                 border.width: 2
@@ -196,7 +196,7 @@ ActivityBase {
                 anchors.top: mainScreen.top
                 anchors.left: mainScreen.left
                 anchors.right: mainScreen.right
-                anchors.margins: background.baseMargins
+                anchors.margins: activityBackground.baseMargins
                 height: score.height
                 text: items.questionText
                 fontSize: mediumSize
@@ -214,10 +214,10 @@ ActivityBase {
             GridView {
                 id: positionViews
                 anchors.top: questionArea.bottom
-                anchors.topMargin: background.baseMargins
+                anchors.topMargin: activityBackground.baseMargins
                 anchors.left: parent.left
                 width: parent.width
-                height: parent.height - questionArea.height - background.baseMargins
+                height: parent.height - questionArea.height - activityBackground.baseMargins
                 visible: items.currentLevel % 2 === 0 ? true : false
                 interactive: false
                 cellWidth: itemWidth
@@ -306,8 +306,8 @@ ActivityBase {
             }
 
             onStartActivity: {
-                background.stop()
-                background.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 
@@ -329,10 +329,10 @@ ActivityBase {
         BarButton {
             id: okButton
             anchors.verticalCenter: mainScreen.verticalCenter
-            anchors.right: background.right
-            anchors.margins: background.baseMargins
+            anchors.right: activityBackground.right
+            anchors.margins: activityBackground.baseMargins
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: Math.min(70 * ApplicationInfo.ratio, background.width * 0.2)
+            width: Math.min(70 * ApplicationInfo.ratio, activityBackground.width * 0.2)
             onClicked: Activity.verifyAnswer()
             mouseArea.enabled: !items.buttonsBlocked && items.selectedPosition != -1
         }
@@ -344,10 +344,10 @@ ActivityBase {
 
         Score {
             id: score
-            anchors.top: background.top
-            anchors.right: background.right
+            anchors.top: activityBackground.top
+            anchors.right: activityBackground.right
             anchors.bottom: undefined
-            anchors.margins: background.baseMargins
+            anchors.margins: activityBackground.baseMargins
             onStop: Activity.nextSubLevel()
         }
     }

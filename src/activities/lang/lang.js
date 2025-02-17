@@ -43,7 +43,7 @@ function start() {
 
     var data = Lang.loadDataset(items.parser, baseUrl, locale);
     dataset = data["dataset"];
-    items.background.englishFallback = data["englishFallback"];
+    items.activityBackground.englishFallback = data["englishFallback"];
 
     // We have to keep it because we can't access content from the model
     lessons = Lang.getAllLessons(dataset)
@@ -54,7 +54,7 @@ function start() {
     savedPropertiesToLessons(items.dialogActivityConfig.activityData)
     sortByFavorites();
 
-    if(!items.background.englishFallback) {
+    if(!items.activityBackground.englishFallback) {
         items.menuScreen.start();
     }
 }

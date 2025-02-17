@@ -28,15 +28,15 @@ GridView {
         id: delegateUnit
         Item {
             id: barItem
-            width: background.horizontalLayout ? cellSize * 10 : cellSize
-            height: background.horizontalLayout ? cellSize : cellSize * 10
+            width: activityBackground.horizontalLayout ? cellSize * 10 : cellSize
+            height: activityBackground.horizontalLayout ? cellSize : cellSize * 10
 
             Grid {
                 id: gridLayout
                 anchors.fill: parent
                 rows: 10
                 columns: 10
-                flow: background.horizontalLayout ? Grid.LeftToRight : Grid.TopToBottom
+                flow: activityBackground.horizontalLayout ? Grid.LeftToRight : Grid.TopToBottom
 
                 Repeater {
                     id: rowsRepeater

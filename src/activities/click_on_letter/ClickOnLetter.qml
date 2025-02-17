@@ -35,7 +35,7 @@ ActivityBase {
     }
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: Activity.url + "background.svg"
         sourceSize.width: width
         sourceSize.height: height
@@ -69,7 +69,7 @@ ActivityBase {
             property alias repeatItem: repeatItem
             property alias score: score
             property alias bonus: bonus
-            property alias locale: background.locale
+            property alias locale: activityBackground.locale
             property bool keyNavigationMode: false
             property int lastSelectedIndex: -1
             property alias eventHandler: eventHandler
@@ -116,7 +116,7 @@ ActivityBase {
                     activity.audioVoices.stop();
                     Activity.playLetter(Activity.currentLetter);
                 } else {
-                    background.handleKeys(event);
+                    activityBackground.handleKeys(event);
                 }
             }
         }
@@ -135,15 +135,15 @@ ActivityBase {
             }
             onLoadData: {
                 if(activityData && activityData["locale"]) {
-                    background.locale = Core.resolveLocale(activityData["locale"]);
+                    activityBackground.locale = Core.resolveLocale(activityData["locale"]);
                 }
                 else {
-                    background.locale = Core.resolveLocale(background.locale);
+                    activityBackground.locale = Core.resolveLocale(activityBackground.locale);
                 }
             }
             onStartActivity: {
-                background.stop();
-                background.start();
+                activityBackground.stop();
+                activityBackground.start();
                 eventHandler.forceActiveFocus();
             }
         }
@@ -271,8 +271,8 @@ ActivityBase {
         Item {
             id: wholeTrainArea
             anchors.bottom: railway.bottom
-            anchors.left: background.left
-            anchors.right: background.right
+            anchors.left: activityBackground.left
+            anchors.right: activityBackground.right
             anchors.top: repeatItem.bottom
             anchors.leftMargin: 10 * ApplicationInfo.ratio
             anchors.rightMargin: 10 * ApplicationInfo.ratio

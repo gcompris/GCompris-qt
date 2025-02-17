@@ -22,7 +22,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         signal start
         signal stop
         signal animTrigger
@@ -36,7 +36,7 @@ ActivityBase {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
-        onStart: { Activity.start(activity, background, bar, bonus, items) }
+        onStart: { Activity.start(activity, activityBackground, bar, bonus, items) }
         onStop: {
             Activity.stop()
             timer.stop()
@@ -75,7 +75,7 @@ ActivityBase {
             interval: 10
             running: true
             repeat: true
-            onTriggered: background.animTrigger()
+            onTriggered: activityBackground.animTrigger()
         }
 
         DialogHelp {

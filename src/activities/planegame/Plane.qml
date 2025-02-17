@@ -14,7 +14,6 @@ import GCompris 1.0
 Image {
     id: plane
 
-    property Item background
     property real velocityX
     property real velocityY
 

@@ -23,7 +23,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: "qrc:/gcompris/src/activities/hanoi_real/resource/background.svg"
         sourceSize.width: width
@@ -41,7 +41,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias bonus: bonus
             property alias board: board
             property alias player1score: player1score

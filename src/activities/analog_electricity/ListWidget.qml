@@ -43,7 +43,7 @@ Item {
     Grid {
         id: view
         width: inputComponentsContainer.width
-        height: background.height - 2 * bar.height
+        height: activityBackground.height - 2 * bar.height
         spacing: 5
         z: 20
         columns: 1
@@ -407,13 +407,13 @@ Item {
             when: listWidget.hori
             PropertyChanges {
                 listWidget {
-                    minIconWidth: Math.min((background.width - items.toolsMargin) / 6 - 10 * ApplicationInfo.ratio, 70 * ApplicationInfo.ratio)
+                    minIconWidth: Math.min((activityBackground.width - items.toolsMargin) / 6 - 10 * ApplicationInfo.ratio, 70 * ApplicationInfo.ratio)
                 }
             }
             PropertyChanges {
                 view {
                     width: inputComponentsContainer.width
-                    height: background.height - 2 * bar.height
+                    height: activityBackground.height - 2 * bar.height
                     columns: 1
                     nbItemsByGroup: view.parent.height / view.iconSize - 2
                 }
@@ -446,7 +446,7 @@ Item {
             when: !listWidget.hori
             PropertyChanges {
                 listWidget {
-                    minIconWidth: Math.min((background.height - items.toolsMargin - bar.height * 2 - 10 * ApplicationInfo.ratio) / 6, 70 * ApplicationInfo.ratio)
+                    minIconWidth: Math.min((activityBackground.height - items.toolsMargin - bar.height * 2 - 10 * ApplicationInfo.ratio) / 6, 70 * ApplicationInfo.ratio)
                 }
             }
             PropertyChanges {

@@ -37,7 +37,7 @@ MouseArea {
         anchors.verticalCenter: parent.verticalCenter
         anchors.horizontalCenter: parent.horizontalCenter
         property var datavalue: modelData
-        radius: background.tileRadius
+        radius: activityBackground.tileRadius
         color: "#E8E8E8"
         Drag.keys: [ type ]
         Drag.active: mouseArea.drag.active
@@ -47,7 +47,7 @@ MouseArea {
         Rectangle {
             id: typeLine
             anchors.fill: parent
-            anchors.margins: background.tileBorder
+            anchors.margins: activityBackground.tileBorder
             radius: parent.radius - anchors.margins
             color: root.type == "operators" ? "#E16F6F" : "#75D21B" // red or green
         }

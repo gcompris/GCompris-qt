@@ -50,7 +50,7 @@ function initLevel() {
 
     // Compute number of regions
     var nbLines = Math.floor(Math.sqrt(items.columns));
-    items.background.nbRegions = (nbLines*nbLines == items.columns) ? nbLines : 1;
+    items.activityBackground.nbRegions = (nbLines*nbLines == items.columns) ? nbLines : 1;
 
     // Create grid
     for(var i = 0 ; i < initialSudoku.length ; ++ i) {
@@ -178,13 +178,13 @@ function isLegal(posX, posY, value) {
     }
 
     // Check this number is in a region
-    if(items.background.nbRegions > 1) {
+    if(items.activityBackground.nbRegions > 1) {
         // First, find the top-left square of the region
-        var firstSquareX = Math.floor(posX/items.background.nbRegions)*items.background.nbRegions;
-        var firstSquareY = Math.floor(posY/items.background.nbRegions)*items.background.nbRegions;
+        var firstSquareX = Math.floor(posX/items.activityBackground.nbRegions)*items.activityBackground.nbRegions;
+        var firstSquareY = Math.floor(posY/items.activityBackground.nbRegions)*items.activityBackground.nbRegions;
 
-        for(var x = firstSquareX ; x < firstSquareX +items.background.nbRegions ; x ++) {
-            for(var y = firstSquareY ; y < firstSquareY + items.background.nbRegions ; y ++) {
+        for(var x = firstSquareX ; x < firstSquareX +items.activityBackground.nbRegions ; x ++) {
+            for(var y = firstSquareY ; y < firstSquareY + items.activityBackground.nbRegions ; y ++) {
                 if(x == posX && y == posY) {
                     // Do not check the current square
                     continue;

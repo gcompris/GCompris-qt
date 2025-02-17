@@ -118,7 +118,7 @@ Rectangle {
         id: openAnimationX
         target: foldablePanel
         property: "x"
-        to: background.width - foldablePanel.width
+        to: activityBackground.width - foldablePanel.width
         duration: 200
         easing.type: Easing.InOutQuad
         onStarted: {
@@ -135,7 +135,7 @@ Rectangle {
         id: closeAnimationX
         target: foldablePanel
         property: "x"
-        to: background.width
+        to: activityBackground.width
         duration: 200
         easing.type: Easing.InOutQuad
         onStarted: {
@@ -189,9 +189,9 @@ Rectangle {
             name: "horizontalLayout"
             when: items.isHorizontalLayout
             PropertyChanges {
-                foldablePanel.width: background.width * 0.7
+                foldablePanel.width: activityBackground.width * 0.7
                 foldablePanel.height: layoutArea.height
-                foldablePanel.x: background.width
+                foldablePanel.x: activityBackground.width
                 foldablePanel.y: 0
                 handle.anchors.topMargin: foldablePanel.handleOffset
                 handle.anchors.rightMargin: -items.baseMargins
@@ -217,8 +217,8 @@ Rectangle {
             name: "verticalLayout"
             when: !items.isHorizontalLayout
             PropertyChanges {
-                foldablePanel.width: background.width
-                foldablePanel.height: background.height * 0.6
+                foldablePanel.width: activityBackground.width
+                foldablePanel.height: activityBackground.height * 0.6
                 foldablePanel.x: 0
                 foldablePanel.y: -foldablePanel.height
                 handle.anchors.topMargin: -items.baseMargins

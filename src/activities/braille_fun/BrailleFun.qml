@@ -24,7 +24,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         fillMode: Image.PreserveAspectCrop
         sourceSize.width: width
@@ -47,7 +47,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias winSound: winSound
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
@@ -76,9 +76,9 @@ ActivityBase {
         Item {
             id: layoutArea
             anchors.top: planeText.bottom
-            anchors.bottom: background.bottom
-            anchors.left: background.left
-            anchors.right: background.right
+            anchors.bottom: activityBackground.bottom
+            anchors.left: activityBackground.left
+            anchors.right: activityBackground.right
             anchors.bottomMargin: bar.height * 1.3
         }
 
@@ -119,7 +119,7 @@ ActivityBase {
                 target: planeText
                 properties: "x"
                 from: - planeText.width
-                to: background.width
+                to: activityBackground.width
                 duration: 11000
                 easing.type: Easing.OutInCirc
                 loops: Animation.Infinite
@@ -253,8 +253,8 @@ ActivityBase {
             id: brailleMap
             source: "qrc:/gcompris/src/activities/braille_alphabets/resource/braille_button.svg"
             anchors {
-                right: background.right
-                top: background.top
+                right: activityBackground.right
+                top: activityBackground.top
                 margins: items.baseMargins
             }
             width: 60 * ApplicationInfo.ratio

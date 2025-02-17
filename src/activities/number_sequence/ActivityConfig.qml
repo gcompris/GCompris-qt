@@ -14,7 +14,7 @@ import "../../core"
 
 Item {
     id: activityConfiguration
-    property Item background
+    property Item activityBackground
     property bool highlightEnabled: highlightBox.checked
     property alias modeBox: modeBox
     width: flick.width
@@ -29,7 +29,7 @@ Item {
         GCComboBox {
             id: modeBox
             model: availableModes
-            background: activityConfiguration.background
+            activityBackground: activityConfiguration.activityBackground
             label: qsTr("Go to the next level")
         }
         GCDialogCheckBox {

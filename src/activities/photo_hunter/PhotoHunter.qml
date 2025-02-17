@@ -22,7 +22,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: "qrc:/gcompris/src/activities/fifteen/resource/background.svg"
         sourceSize.width: width
@@ -40,7 +40,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias brickSound: brickSound
             property alias bleepSound: bleepSound
             property int currentLevel: activity.currentLevel
@@ -99,7 +99,7 @@ ActivityBase {
             wrapMode: Text.WordWrap
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
-            text: background.startedHelp ? qsTr("Drag the slider to show the differences.") :
+            text: activityBackground.startedHelp ? qsTr("Drag the slider to show the differences.") :
             qsTr("Click on the differences between the two images.")
             color: "white"
         }
@@ -107,11 +107,11 @@ ActivityBase {
         Item {
             id: frame
             anchors.top: score.bottom
-            anchors.left: background.left
-            anchors.right: background.right
+            anchors.left: activityBackground.left
+            anchors.right: activityBackground.right
             anchors.bottom: parent.bottom
             anchors.margins: 10 * ApplicationInfo.ratio
-            anchors.bottomMargin: background.barHeight
+            anchors.bottomMargin: activityBackground.barHeight
 
             //left/top image
             Observe {
@@ -124,7 +124,7 @@ ActivityBase {
             //right/bottom image
             Observe {
                 id: img2
-                opacity: background.startedHelp ? 1 - slider.value : 1
+                opacity: activityBackground.startedHelp ? 1 - slider.value : 1
                 show: false
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
@@ -132,7 +132,7 @@ ActivityBase {
             states: [
                 State {
                     name: "horizontalImages"
-                    when: background.isHorizontal && !background.startedHelp
+                    when: activityBackground.isHorizontal && !activityBackground.startedHelp
                     PropertyChanges {
                         img1 {
                             anchors.horizontalCenterOffset: -img1.width * 0.5 - 5 * ApplicationInfo.ratio
@@ -148,7 +148,7 @@ ActivityBase {
                 },
                 State {
                     name: "verticalImages"
-                    when: !background.isHorizontal && !background.startedHelp
+                    when: !activityBackground.isHorizontal && !activityBackground.startedHelp
                     PropertyChanges {
                         img1 {
                             anchors.verticalCenterOffset: -img1.height * 0.5 - 5 * ApplicationInfo.ratio
@@ -162,7 +162,7 @@ ActivityBase {
                 },
                 State {
                     name: "verticallHelp"
-                    when: background.startedHelp
+                    when: activityBackground.startedHelp
                     PropertyChanges {
                         img1 {
                             anchors.verticalCenterOffset: 0
@@ -180,9 +180,9 @@ ActivityBase {
                 id: slider
                 value: 0
                 width: img1.width * 0.9
-                z: background.startedHelp ? 5 : -5
-                opacity: background.startedHelp ? 1 : 0
-                enabled: background.startedHelp
+                z: activityBackground.startedHelp ? 5 : -5
+                opacity: activityBackground.startedHelp ? 1 : 0
+                enabled: activityBackground.startedHelp
                 snapMode: Slider.NoSnap
                 stepSize: 0
 
@@ -210,7 +210,7 @@ ActivityBase {
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onHintClicked: {
-                background.startedHelp = !background.startedHelp
+                activityBackground.startedHelp = !activityBackground.startedHelp
                 slider.value = 0
             }
         }
@@ -225,7 +225,7 @@ ActivityBase {
             anchors {
                 bottom: undefined
                 left: undefined
-                top: background.top
+                top: activityBackground.top
                 topMargin: 10 * ApplicationInfo.ratio
                 right: parent.right
                 rightMargin: 10 * ApplicationInfo.ratio

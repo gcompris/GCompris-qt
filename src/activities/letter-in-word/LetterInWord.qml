@@ -26,7 +26,7 @@ ActivityBase {
     onStart: focus = true
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: Activity.resUrl + "hillside.svg"
         sourceSize.width: parent.width
         sourceSize.height: parent.height
@@ -52,7 +52,7 @@ ActivityBase {
             id: items
             property Item activityPage: activity
             property int currentLevel: activity.currentLevel
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias goodAnswerSound: goodAnswerSound
             property alias badAnswerSound: badAnswerSound
             property alias wordsModel: wordsModel
@@ -67,7 +67,7 @@ ActivityBase {
             property alias score: score
             property alias bonus: bonus
             property alias errorRectangle: errorRectangle
-            property alias locale: background.locale
+            property alias locale: activityBackground.locale
             property alias questionItem: questionItem
             property alias englishFallbackDialog: englishFallbackDialog
             property string question
@@ -107,10 +107,10 @@ ActivityBase {
             }
             onLoadData: {
                 if(activityData && activityData["locale"] && activityData["locale"] !== "system") {
-                    background.locale = activityData["locale"];
+                    activityBackground.locale = activityData["locale"];
                 }
                 else {
-                    background.locale = Core.resolveLocale(background.locale)
+                    activityBackground.locale = Core.resolveLocale(activityBackground.locale)
                 }
                 if(activityData && activityData["savedLetterCase"]) {
                     items.currentLetterCase = activityData["savedLetterCase"];
@@ -120,8 +120,8 @@ ActivityBase {
                 }
             }
             onStartActivity: {
-                background.stop();
-                background.start();
+                activityBackground.stop();
+                activityBackground.start();
             }
         }
 
@@ -202,8 +202,8 @@ ActivityBase {
                 target: planeText
                 properties: "x"
                 from: -planeText.width
-                //to:background.width/2 - planeText.width/2
-                to: bar.level <= 2 ? background.width/3.7 : background.width
+                //to:activityBackground.width/2 - planeText.width/2
+                to: bar.level <= 2 ? activityBackground.width/3.7 : activityBackground.width
                 duration: bar.level <= 2 ? 5500: 11000
                 //easing.type: Easing.OutQuad
                 easing.type: bar.level <= 2 ? Easing.OutQuad: Easing.OutInCirc
@@ -253,8 +253,8 @@ ActivityBase {
             anchors.leftMargin: 10 * ApplicationInfo.ratio
             anchors.rightMargin: 10 * ApplicationInfo.ratio
             anchors.bottomMargin: bar.height * 0.5
-            cellWidth: background.itemWidth
-            cellHeight: background.itemWidth
+            cellWidth: activityBackground.itemWidth
+            cellHeight: activityBackground.itemWidth
             bottomMargin: 10 * ApplicationInfo.ratio
             clip: false
             interactive: false
@@ -265,8 +265,8 @@ ActivityBase {
             keyNavigationWraps: true
             model: wordsModel
             delegate: Card {
-                width: background.itemWidth
-                height: background.itemWidth - 10 * ApplicationInfo.ratio
+                width: activityBackground.itemWidth
+                height: activityBackground.itemWidth - 10 * ApplicationInfo.ratio
                 mouseActive: !items.buttonsBlocked
             }
         }
@@ -274,8 +274,8 @@ ActivityBase {
         Component {
             id: gridHighlight
             Rectangle {
-                width: background.itemWidth
-                height: background.itemWidth
+                width: activityBackground.itemWidth
+                height: activityBackground.itemWidth
                 color:  "#AAFFFFFF"
                 Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
                 Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
@@ -322,13 +322,13 @@ ActivityBase {
                          "<br /> <br />" +
                          qsTr("We switched to English for this activity but you can select another language in the configuration dialog.")
                 onClose: {
-                    background.englishFallback = false;
+                    activityBackground.englishFallback = false;
                     Core.checkForVoices(activity);
                 }
             }
             anchors.fill: parent
             focus: true
-            active: background.englishFallback
+            active: activityBackground.englishFallback
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
     }

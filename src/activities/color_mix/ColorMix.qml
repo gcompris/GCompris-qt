@@ -25,7 +25,7 @@ ActivityBase {
     }
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: Activity.url + (modeRGB ? "background.svg" : "background2.svg")
         sourceSize.width: width
         sourceSize.height: height
@@ -44,7 +44,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score

@@ -57,7 +57,7 @@ Item {
         anchors.verticalCenter: parent.verticalCenter
         visible: clefButton.visible
         onClicked: {
-            background.clefType = !clefButton.currentIndex ? "Treble" : "Bass"
+            activityBackground.clefType = !clefButton.currentIndex ? "Treble" : "Bass"
             emitOptionMessage(!clefButton.currentIndex ? qsTr("Treble clef added") : qsTr("Bass clef added"))
             parent.scale = 1
             clefAdded()

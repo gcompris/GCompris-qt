@@ -29,7 +29,7 @@ ActivityBase {
     }
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: items.toArabic ?
                     "qrc:/gcompris/src/activities/roman_numerals/resource/arabian-building.svg" :
                     "qrc:/gcompris/src/activities/roman_numerals/resource/roman-building.svg"
@@ -57,7 +57,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias bonus: bonus
             property alias score: score
             property alias textInput: textInput
@@ -288,17 +288,17 @@ ActivityBase {
 
         Item {
             id: questionArea
-            anchors.top: background.top
-            anchors.left: background.left
-            anchors.right: background.right
-            anchors.margins: background.layoutMargins
+            anchors.top: activityBackground.top
+            anchors.left: activityBackground.left
+            anchors.right: activityBackground.right
+            anchors.margins: activityBackground.layoutMargins
             height: questionLabel.contentHeight + 20 * ApplicationInfo.ratio
             Rectangle {
                 anchors.centerIn: parent
-                width: questionLabel.contentWidth + 2 * background.layoutMargins
-                height: questionLabel.contentHeight + background.layoutMargins
+                width: questionLabel.contentWidth + 2 * activityBackground.layoutMargins
+                height: questionLabel.contentHeight + activityBackground.layoutMargins
                 color: "#f2f2f2"
-                radius: background.layoutMargins
+                radius: activityBackground.layoutMargins
                 border.width: 2 * ApplicationInfo.ratio
                 border.color: "#9fb8e3"
                 GCText {
@@ -307,7 +307,7 @@ ActivityBase {
                     wrapMode: TextEdit.WordWrap
                     text: items.questionValue ? items.questionText.arg(items.questionValue) : ''
                     color: "#373737"
-                    width: questionArea.width - 2 * background.layoutMargins
+                    width: questionArea.width - 2 * activityBackground.layoutMargins
                     horizontalAlignment: Text.AlignHCenter
                 }
             }
@@ -316,11 +316,11 @@ ActivityBase {
         Rectangle {
             id: inputArea
             anchors.top: questionArea.bottom
-            anchors.left: background.left
-            anchors.margins: background.layoutMargins
+            anchors.left: activityBackground.left
+            anchors.margins: activityBackground.layoutMargins
             color: "#f2f2f2"
-            radius: background.layoutMargins
-            width: questionArea.width * 0.5 - background.layoutMargins * 0.5
+            radius: activityBackground.layoutMargins
+            width: questionArea.width * 0.5 - activityBackground.layoutMargins * 0.5
             height: textInput.height
             TextInput {
                 id: textInput
@@ -372,12 +372,12 @@ ActivityBase {
         Rectangle {
             id: feedbackArea
             anchors.top: questionArea.bottom
-            anchors.margins: background.layoutMargins
-            anchors.right: background.right
+            anchors.margins: activityBackground.layoutMargins
+            anchors.right: activityBackground.right
             width: inputArea.width
             height: inputArea.height
             color: "#f2f2f2"
-            radius: background.layoutMargins
+            radius: activityBackground.layoutMargins
 
             GCText {
                 id: feedback
@@ -403,13 +403,13 @@ ActivityBase {
             visible: items.instruction != ''
             anchors.top: feedbackArea.bottom
             anchors.bottom: okButton.top
-            anchors.left: background.left
-            anchors.right: background.right
-            anchors.margins: background.layoutMargins
+            anchors.left: activityBackground.left
+            anchors.right: activityBackground.right
+            anchors.margins: activityBackground.layoutMargins
 
             Rectangle {
-                width: instruction.contentWidth + 2 * background.layoutMargins
-                height: instruction.contentHeight + background.layoutMargins
+                width: instruction.contentWidth + 2 * activityBackground.layoutMargins
+                height: instruction.contentHeight + activityBackground.layoutMargins
                 anchors.centerIn: parent
                 color: "#f2f2f2"
                 border.color: "#9fb8e3"
@@ -419,8 +419,8 @@ ActivityBase {
                     id: instruction
                     wrapMode: TextEdit.WordWrap
                     anchors.centerIn: parent
-                    width: instructionArea.width - 2 * background.layoutMargins
-                    height: instructionArea.height - 2 * background.layoutMargins
+                    width: instructionArea.width - 2 * activityBackground.layoutMargins
+                    height: instructionArea.height - 2 * activityBackground.layoutMargins
                     text: items.instruction
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
@@ -512,9 +512,9 @@ ActivityBase {
           id: okButton
           source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
           visible: true
-          anchors.right: background.right
+          anchors.right: activityBackground.right
           anchors.bottom: bar.top
-          anchors.margins: 2 * background.layoutMargins
+          anchors.margins: 2 * activityBackground.layoutMargins
           enabled: !items.buttonsBlocked
           width: bar.height
           onClicked: items.check()

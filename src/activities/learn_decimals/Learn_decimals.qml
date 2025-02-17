@@ -26,14 +26,14 @@ ActivityBase {
     property bool isQuantityMode: false
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: "qrc:/gcompris/src/activities/braille_fun/resource/hillside.svg"
         sourceSize.width: width
         sourceSize.height: height
         fillMode: Image.PreserveAspectCrop
 
-        property bool horizontalLayout: background.width >= background.height
-        property bool scoreAtBottom: bar.width * 9 < background.width
+        property bool horizontalLayout: activityBackground.width >= activityBackground.height
+        property bool scoreAtBottom: bar.width * 9 < activityBackground.width
 
         signal start
         signal stop
@@ -54,7 +54,7 @@ ActivityBase {
             property bool isSubtractionMode: activity.isSubtractionMode
             property bool isAdditionMode: activity.isAdditionMode
             property bool isQuantityMode: activity.isQuantityMode
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias goodAnswerSound: goodAnswerSound
             property alias badAnswerSound: badAnswerSound
             property int currentLevel: activity.currentLevel
@@ -118,12 +118,12 @@ ActivityBase {
 
         Rectangle {
             id: decimalNumber
-            width: background.width * 0.6
+            width: activityBackground.width * 0.6
             height: parent.height / 12
             radius: 10
             color: "#373737"
-            anchors.horizontalCenter: background.horizontalCenter
-            anchors.top: background.top
+            anchors.horizontalCenter: activityBackground.horizontalCenter
+            anchors.top: activityBackground.top
             anchors.topMargin: 5 * ApplicationInfo.ratio
 
             property string decimalQuestion: qsTr("Display the number: %1")
@@ -157,9 +157,9 @@ ActivityBase {
             anchors.top: decimalNumber.bottom
             anchors.topMargin: 5 * ApplicationInfo.ratio
             anchors.bottom: okButton.top
-            anchors.bottomMargin: background.scoreAtBottom ? bar.height * 0.5 : anchors.topMargin
-            anchors.horizontalCenter: background.horizontalCenter
-            width: background.horizontalLayout ? background.width * 0.7 : background.width * 0.95
+            anchors.bottomMargin: activityBackground.scoreAtBottom ? bar.height * 0.5 : anchors.topMargin
+            anchors.horizontalCenter: activityBackground.horizontalCenter
+            width: activityBackground.horizontalLayout ? activityBackground.width * 0.7 : activityBackground.width * 0.95
         }
 
         Rectangle {
@@ -174,7 +174,7 @@ ActivityBase {
 
             states: [
                 State {
-                    when: background.horizontalLayout
+                    when: activityBackground.horizontalLayout
                     PropertyChanges {
                         topRectangle {
                             width: layoutArea.width
@@ -189,7 +189,7 @@ ActivityBase {
                     }
                 },
                 State {
-                    when: !background.horizontalLayout && !items.typeResult
+                    when: !activityBackground.horizontalLayout && !items.typeResult
                     PropertyChanges {
                         topRectangle {
                             width: layoutArea.width * 0.636
@@ -199,12 +199,12 @@ ActivityBase {
                     }
                     AnchorChanges {
                         target: topRectangle
-                        anchors.right: background.right
+                        anchors.right: activityBackground.right
                         anchors.horizontalCenter: undefined
                     }
                 },
                 State {
-                    when: !background.horizontalLayout && items.typeResult
+                    when: !activityBackground.horizontalLayout && items.typeResult
                     PropertyChanges {
                         topRectangle {
                             width: layoutArea.width * 0.636
@@ -214,7 +214,7 @@ ActivityBase {
                     AnchorChanges {
                         target: topRectangle
                         anchors.right: undefined
-                        anchors.horizontalCenter: background.horizontalCenter
+                        anchors.horizontalCenter: activityBackground.horizontalCenter
                     }
                 }
             ]
@@ -248,7 +248,7 @@ ActivityBase {
                 isUnselectedBar: false
                 states: [
                     State {
-                        when: background.horizontalLayout
+                        when: activityBackground.horizontalLayout
                         PropertyChanges {
                             answerZone {
                                 cellSize: Math.min(topRectangle.height / 7, topRectangle.width / 11)
@@ -263,7 +263,7 @@ ActivityBase {
                         }
                     },
                     State {
-                        when: !background.horizontalLayout
+                        when: !activityBackground.horizontalLayout
                         PropertyChanges {
                             answerZone {
                                 cellSize: Math.min(topRectangle.width / 7, topRectangle.height / 11)
@@ -297,7 +297,7 @@ ActivityBase {
 
             states: [
                 State {
-                    when: background.horizontalLayout
+                    when: activityBackground.horizontalLayout
                     PropertyChanges {
                         bottomRectangle {
                             width: layoutArea.width
@@ -311,7 +311,7 @@ ActivityBase {
                     AnchorChanges {
                         target: bottomRectangle
                         anchors.top: topRectangle.bottom
-                        anchors.horizontalCenter: background.horizontalCenter
+                        anchors.horizontalCenter: activityBackground.horizontalCenter
                         anchors.right: undefined
                     }
                     PropertyChanges {
@@ -354,7 +354,7 @@ ActivityBase {
                     }
                 },
                 State {
-                    when: !background.horizontalLayout
+                    when: !activityBackground.horizontalLayout
                     PropertyChanges {
                         bottomRectangle {
                             width: layoutArea.width * 0.273
@@ -415,9 +415,9 @@ ActivityBase {
             SingleBar {
                 id: unselectedBar
                 opacity: 0.5
-                cellSize: background.horizontalLayout ? Math.min(bottomRectangle.height / 3, bottomRectangle.width / 11) : Math.min(bottomRectangle.width / 3, bottomRectangle.height / 11)
-                width: background.horizontalLayout ? cellSize * 10 : cellSize
-                height: background.horizontalLayout ? cellSize : cellSize * 10
+                cellSize: activityBackground.horizontalLayout ? Math.min(bottomRectangle.height / 3, bottomRectangle.width / 11) : Math.min(bottomRectangle.width / 3, bottomRectangle.height / 11)
+                width: activityBackground.horizontalLayout ? cellSize * 10 : cellSize
+                height: activityBackground.horizontalLayout ? cellSize : cellSize * 10
                 anchors.centerIn: bottomRectangle
 
                 selectedModel: draggedItems
@@ -490,7 +490,7 @@ ActivityBase {
                         anchors.verticalCenterOffset: parent.height * 0.25
                         drag.target: arrow
                         onPositionChanged: {
-                            if(background.horizontalLayout) {
+                            if(activityBackground.horizontalLayout) {
                                 //range of the horizontal scrolling
                                 if(arrow.x < scrollBar.arrowOrigin) {
                                     arrow.x = scrollBar.arrowOrigin
@@ -557,7 +557,7 @@ ActivityBase {
             }
 
             function resetArrowPosition() {
-                if(background.horizontalLayout) {
+                if(activityBackground.horizontalLayout) {
                     scrollBar.arrowX = scrollBar.arrowOrigin
                 }
                 else {
@@ -576,9 +576,9 @@ ActivityBase {
             id: mainRectangle
             visible: isSubtractionMode
             width: topRectangle.width
-            height: background.scoreAtBottom ? layoutArea.height - okButton.height : layoutArea.height
+            height: activityBackground.scoreAtBottom ? layoutArea.height - okButton.height : layoutArea.height
             anchors.top: layoutArea.top
-            anchors.horizontalCenter: background.horizontalCenter
+            anchors.horizontalCenter: activityBackground.horizontalCenter
             color: "#F2F2F2"
             border.color: "#373737"
             border.width: 2
@@ -647,7 +647,7 @@ ActivityBase {
 
         states: [
             State {
-                when: background.scoreAtBottom
+                when: activityBackground.scoreAtBottom
                 AnchorChanges {
                     target: answerBackground
                     anchors.left: undefined
@@ -666,7 +666,7 @@ ActivityBase {
                     anchors.horizontalCenter: undefined
                     anchors.verticalCenter: bar.verticalCenter
                     anchors.bottom: undefined
-                    anchors.right: background.right
+                    anchors.right: activityBackground.right
                     anchors.left: undefined
                 }
                 PropertyChanges {
@@ -678,7 +678,7 @@ ActivityBase {
                 }
             },
             State {
-                when: !background.scoreAtBottom
+                when: !activityBackground.scoreAtBottom
                 AnchorChanges {
                     target: answerBackground
                     anchors.left: topRectangle.left
@@ -788,8 +788,8 @@ ActivityBase {
             }
             onClose: home()
             onStartActivity: {
-                background.stop()
-                background.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 

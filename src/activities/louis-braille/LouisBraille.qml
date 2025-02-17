@@ -23,7 +23,7 @@ ActivityBase {
 
 
     pageComponent: Rectangle {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         color: "#85D8F6"
         signal start
@@ -40,7 +40,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias bonus: bonus
             property int count: 0
             property var dataset: Dataset.dataset
@@ -55,14 +55,14 @@ ActivityBase {
         Item {
             id: charList
             anchors.top: parent.top
-            anchors.topMargin: background.baseMargins
+            anchors.topMargin: activityBackground.baseMargins
             anchors.horizontalCenter: parent.horizontalCenter
             height: childrenRect.height
-            width: Math.min(parent.width - 2 * background.baseMargins, 520 * ApplicationInfo.ratio)
+            width: Math.min(parent.width - 2 * activityBackground.baseMargins, 520 * ApplicationInfo.ratio)
 
             Row {
                 id: row
-                spacing: background.baseMargins
+                spacing: activityBackground.baseMargins
                 anchors.horizontalCenter: parent.horizontalCenter
                 width: parent.width
 
@@ -113,8 +113,8 @@ ActivityBase {
             }
         }
 
-        Keys.onRightPressed: background.next()
-        Keys.onLeftPressed: background.previous()
+        Keys.onRightPressed: activityBackground.next()
+        Keys.onLeftPressed: activityBackground.previous()
 
         function previous() {
             if(items.count == 0)
@@ -136,10 +136,10 @@ ActivityBase {
         Item {
             id: layoutArea
             anchors.top: charList.bottom
-            anchors.left: background.left
-            anchors.right: background.right
-            anchors.margins: background.baseMargins
-            height: background.height - charList.height - bar.height * 1.2 - 3 * background.baseMargins
+            anchors.left: activityBackground.left
+            anchors.right: activityBackground.right
+            anchors.margins: activityBackground.baseMargins
+            height: activityBackground.height - charList.height - bar.height * 1.2 - 3 * activityBackground.baseMargins
         }
 
         // The image description
@@ -159,8 +159,8 @@ ActivityBase {
                 color: "#373737"
                 anchors.centerIn: parent
                 horizontalAlignment:  Text.AlignHCenter
-                width: parent.width - 2 * background.baseMargins
-                height: parent.height - 2 * background.baseMargins
+                width: parent.width - 2 * activityBackground.baseMargins
+                height: parent.height - 2 * activityBackground.baseMargins
                 wrapMode: Text.WordWrap
                 fontSize: regularSize
                 text: items.dataset[items.count].text
@@ -172,19 +172,19 @@ ActivityBase {
         Image {
             id: img
             anchors.top: info_rect.bottom
-            anchors.topMargin: background.baseMargins
+            anchors.topMargin: activityBackground.baseMargins
             anchors.horizontalCenter: layoutArea.horizontalCenter
             sourceSize.height: width
             sourceSize.width: width
             height: width
             width: Math.min(layoutArea.width - previous.width * 2 - 60 * ApplicationInfo.ratio,
-                            layoutArea.height - (info_rect.height + year_rect.height + 2 * background.baseMargins))
+                            layoutArea.height - (info_rect.height + year_rect.height + 2 * activityBackground.baseMargins))
             source: items.dataset[items.count].img
             fillMode: Image.PreserveAspectFit
 
             MouseArea {
                 anchors.fill: parent
-                onClicked: background.next()
+                onClicked: activityBackground.next()
             }
         }
 
@@ -204,7 +204,7 @@ ActivityBase {
                 hoverEnabled: true
                 onEntered: previous.scale = 1.1
                 onExited: previous.scale = 1
-                onClicked: background.previous()
+                onClicked: activityBackground.previous()
             }
         }
 
@@ -225,7 +225,7 @@ ActivityBase {
                 hoverEnabled: true
                 onEntered: next.scale = 1.1
                 onExited: next.scale = 1
-                onClicked: background.next()
+                onClicked: activityBackground.next()
             }
         }
 
@@ -235,12 +235,12 @@ ActivityBase {
             border.width: ApplicationInfo.ratio
             radius: 5 * ApplicationInfo.ratio
             color: "#F0F0F0"
-            width: year.width + 2 * background.baseMargins
-            height: year.height + background.baseMargins
+            width: year.width + 2 * activityBackground.baseMargins
+            height: year.height + activityBackground.baseMargins
             anchors {
                 top: img.bottom
                 horizontalCenter: img.horizontalCenter
-                topMargin: background.baseMargins
+                topMargin: activityBackground.baseMargins
             }
             GCText {
                 id: year
