@@ -16,9 +16,9 @@ import "../../core"
 
 Rectangle {
     id: answerBackground
-    width: background.answersWidth
+    width: activityBackground.answersWidth
     height: width * 0.5
-    radius: background.baseMargins
+    radius: activityBackground.baseMargins
     border {
         width: activeFocus && state === "default" ?  3 * ApplicationInfo.ratio : Math.max(1, ApplicationInfo.ratio)
         color: "#373737"
@@ -81,10 +81,10 @@ Rectangle {
         id: img
         anchors {
             left: parent.left
-            leftMargin: background.baseMargins
+            leftMargin: activityBackground.baseMargins
             verticalCenter: parent.verticalCenter
         }
-        height: parent.height - background.baseMargins
+        height: parent.height - activityBackground.baseMargins
         width: height
         source: imgPath
         fillMode: Image.PreserveAspectFit
@@ -124,7 +124,7 @@ Rectangle {
             right: parent.right
             top: parent.top
             bottom: parent.bottom
-            margins: background.baseMargins
+            margins: activityBackground.baseMargins
         }
         text: "?"
         color: "black"

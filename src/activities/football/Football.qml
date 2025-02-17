@@ -22,7 +22,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Rectangle {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         signal start
         signal stop
@@ -35,7 +35,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias bar: bar
             property alias field: field
             property alias border: border
@@ -56,7 +56,7 @@ ActivityBase {
         /* To modify when screen size changes */
         onHeightChanged: {
             moveUp.to = 0
-            moveDown.to = background.height * 0.75 - tux.height
+            moveDown.to = activityBackground.height * 0.75 - tux.height
             moveTux.restart()
         }
 

@@ -56,7 +56,7 @@ ActivityBase {
     }
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: activity.dataSetUrl + "background.svg"
         fillMode: Image.PreserveAspectCrop
         sourceSize.height: parent.height
@@ -80,7 +80,7 @@ ActivityBase {
             property GCAudio audioVoices: activity.audioVoices
             readonly property var levels: activity.datasets.length !== 0 ? activity.datasets : null
             property string instructionText: ""
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias wordlist: wordlist
@@ -88,7 +88,7 @@ ActivityBase {
             property alias keyboard: keyboard
             property alias wordDropTimer: wordDropTimer
             property alias badAnswerSound: badAnswerSound
-            property alias locale: background.locale
+            property alias locale: activityBackground.locale
             property alias textinput: textinput
             property bool inputLocked: false
         }
@@ -101,7 +101,7 @@ ActivityBase {
                 if(overridenLocale.indexOf('.') != -1) {
                     overridenLocale = overridenLocale.substring(0, overridenLocale.indexOf('.'))
                 }
-                background.locale = overridenLocale
+                activityBackground.locale = overridenLocale
             }
 
             Activity.start(items, uppercaseOnly, mode, speedSetting);
@@ -163,7 +163,7 @@ ActivityBase {
             // are not available via Keys.onPressed() on linux. Must be
             // disabled on mobile!
             id: textinput
-            anchors.centerIn: background
+            anchors.centerIn: activityBackground
             enabled: !ApplicationInfo.isMobile
             focus: true
             visible: false
@@ -190,11 +190,11 @@ ActivityBase {
             onLoadData: {
                 if (activity.activityName === "gletters") {
                     if(activityData && activityData["locale"]) {
-                        background.locale = Core.resolveLocale(activityData["locale"]);
+                        activityBackground.locale = Core.resolveLocale(activityData["locale"]);
                         activity.uppercaseOnly = activityData["uppercaseMode"] === "true" ? true : false;
                     }
                     else {
-                        background.locale = Core.resolveLocale(background.locale)
+                        activityBackground.locale = Core.resolveLocale(activityBackground.locale)
                     }
                 } else if (activity.activityName === "smallnumbers2") {
                     if(activityData && activityData["mode"]) {
@@ -206,8 +206,8 @@ ActivityBase {
                 }
             }
             onStartActivity: {
-                background.stop()
-                background.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 

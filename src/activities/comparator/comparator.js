@@ -28,7 +28,7 @@ function stop() {
 function initLevel() {
     items.dataListModel.clear();
     items.numberOfRowsCompleted = 0;
-    items.background.resetSelectedButton();
+    items.activityBackground.resetSelectedButton();
     var currentDataset = items.levels[items.currentLevel];
     var minValue = currentDataset.minValue;
     var maxValue = currentDataset.maxValue;

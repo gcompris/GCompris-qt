@@ -14,7 +14,7 @@ import "../../core"
 
 Item {
     id: activityConfiguration
-    property Item background
+    property Item activityBackground
     width: flick.width
     height: childrenRect.height
     property alias levelsBox: levelsBox
@@ -30,7 +30,7 @@ Item {
         GCComboBox {
             id: levelsBox
             model: availableLevels
-            background: activityConfiguration.background
+            activityBackground: activityConfiguration.activityBackground
             label: qsTr("Select your level set")
         }
 

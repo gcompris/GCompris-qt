@@ -23,7 +23,7 @@ ActivityBase {
     property string url: "qrc:/gcompris/src/activities/canal_lock/resource/"
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: activity.url + "sky.svg"
         anchors.fill: parent
         sourceSize.width: width
@@ -115,11 +115,11 @@ ActivityBase {
 
         Rectangle {
             color: "#805451"
-            anchors.left: background.left
-            anchors.right: background.right
+            anchors.left: activityBackground.left
+            anchors.right: activityBackground.right
             anchors.top: canal.bottom
             anchors.topMargin: -boat.leftPositionY
-            anchors.bottom: background.bottom
+            anchors.bottom: activityBackground.bottom
         }
 
         Item {
@@ -145,7 +145,7 @@ ActivityBase {
                 source: activity.url + "canal_left.svg"
                 anchors.top: canal.top
                 anchors.left: canal.left
-                width: (background.width - parent.paintedWidth) / 2 + 1
+                width: (activityBackground.width - parent.paintedWidth) / 2 + 1
                 height: parent.height
                 sourceSize.height: height
                 fillMode: Image.TileHorizontally
@@ -219,7 +219,7 @@ ActivityBase {
                     anchors.fill: parent
                     anchors.margins: -20 * ApplicationInfo.ratio
                     onClicked: {
-                        if(background.running)
+                        if(activityBackground.running)
                             return
                         lock1.duration = 400
                         if(lock1.state == 'close' &&
@@ -253,7 +253,7 @@ ActivityBase {
                     anchors.fill: parent
                     anchors.margins: -20 * ApplicationInfo.ratio
                     onClicked: {
-                        if(background.running)
+                        if(activityBackground.running)
                             return
                         lock2.duration = lock1.duration
                         if(lock2.state == 'close' &&
@@ -287,7 +287,7 @@ ActivityBase {
                     anchors.fill: parent
                     anchors.margins: -20 * ApplicationInfo.ratio
                     onClicked: {
-                        if(background.running)
+                        if(activityBackground.running)
                             return
                         door1.duration = water.duration
                         if(door1.state == 'close' &&
@@ -320,7 +320,7 @@ ActivityBase {
                     anchors.fill: parent
                     anchors.margins: -20 * ApplicationInfo.ratio
                     onClicked: {
-                        if(background.running)
+                        if(activityBackground.running)
                             return
                         door2.duration = water.duration
                         if(door2.state == 'close' &&
@@ -434,20 +434,20 @@ ActivityBase {
                 Behavior on anchors.horizontalCenterOffset {
                     NumberAnimation {
                         duration: boat.duration
-                        onRunningChanged: background.running ? background.running++ : background.running--
+                        onRunningChanged: activityBackground.running ? activityBackground.running++ : activityBackground.running--
                     }
                 }
                 Behavior on anchors.bottomMargin {
                     NumberAnimation {
                         duration: boat.duration
-                        onRunningChanged: background.running ? background.running++ : background.running--
+                        onRunningChanged: activityBackground.running ? activityBackground.running++ : activityBackground.running--
                     }
                 }
 
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-                        if(background.running)
+                        if(activityBackground.running)
                             return
                         boat.duration = water.duration
                         var prevState = boat.state

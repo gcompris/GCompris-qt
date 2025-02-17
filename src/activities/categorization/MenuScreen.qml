@@ -92,7 +92,7 @@ Image {
     property int iconWidth: 180 * ApplicationInfo.ratio
     property int iconHeight: 180 * ApplicationInfo.ratio
 
-    property int levelCellWidth: background.width / Math.floor(background.width / iconWidth )
+    property int levelCellWidth: activityBackground.width / Math.floor(activityBackground.width / iconWidth )
     property int levelCellHeight: iconHeight * 1.2
 
     ListModel {

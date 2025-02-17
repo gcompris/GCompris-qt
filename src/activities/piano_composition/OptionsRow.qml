@@ -126,7 +126,7 @@ Grid {
             source: "qrc:/gcompris/src/activities/piano_composition/resource/%1Rest.svg".arg(restTypeImage)
             nbOptions: optionsRow.noteLengthName.length
             onClicked: {
-                background.restType = optionsRow.noteLengthName[currentIndex][1]
+                activityBackground.restType = optionsRow.noteLengthName[currentIndex][1]
                 emitOptionMessage(optionsRow.translatedRestNames[currentIndex])
             }
             width: optionsRow.iconsWidth * 0.9
@@ -173,7 +173,7 @@ Grid {
         width: optionsRow.iconsWidth
         currentIndex: 2
         onClicked: {
-            background.currentType = optionsRow.noteLengthName[currentIndex][1]
+            activityBackground.currentType = optionsRow.noteLengthName[currentIndex][1]
             emitOptionMessage(optionsRow.noteLengthName[currentIndex][0])
         }
         visible: noteOptionsVisible

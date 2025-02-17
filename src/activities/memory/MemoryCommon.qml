@@ -30,7 +30,7 @@ ActivityBase {
     isMusicalActivity: needsVoices
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: activity.backgroundImg
         sourceSize.width: width
         sourceSize.height: height
@@ -80,7 +80,7 @@ ActivityBase {
             Activity.start(items);
             if(activity.needsVoices === true) {
                 if(!ApplicationSettings.isAudioVoicesEnabled || !ApplicationSettings.isAudioEffectsEnabled)
-                    background.audioDisabled = true
+                    activityBackground.audioDisabled = true
             }
         }
 
@@ -104,10 +104,10 @@ ActivityBase {
 
         Item {
             id: layoutArea
-            anchors.top: background.top
+            anchors.top: activityBackground.top
             anchors.bottom: bar.top
-            anchors.left: background.left
-            anchors.right: background.right
+            anchors.left: activityBackground.left
+            anchors.right: activityBackground.right
             anchors.margins: items.spacing
         }
 
@@ -116,9 +116,9 @@ ActivityBase {
             cellWidth: width / items.columns
             cellHeight: height / items.rows
             anchors {
-                left: background.left
+                left: activityBackground.left
                 right: player1Score.left
-                top: background.top
+                top: activityBackground.top
                 bottom: player1Score.bottom
                 margins: items.spacing
             }
@@ -133,11 +133,11 @@ ActivityBase {
 
             delegate: CardItem {
                 pairData: pairData_
-                tuxTurn: background.items.tuxTurn
+                tuxTurn: activityBackground.items.tuxTurn
                 width: grid.cellWidth - grid.anchors.margins
                 height: grid.cellHeight - grid.anchors.margins
                 audioVoices: activity.audioVoices
-                onIsFoundChanged: background.keyNavigationVisible = false
+                onIsFoundChanged: activityBackground.keyNavigationVisible = false
             }
             interactive: false
             highlightFollowsCurrentItem: true
@@ -146,7 +146,7 @@ ActivityBase {
                 color: "#D0FFFFFF"
                 radius: 10
                 scale: 1.1
-                visible: background.keyNavigationVisible
+                visible: activityBackground.keyNavigationVisible
             }
             add: Transition {
                 PathAnimation {
@@ -185,8 +185,8 @@ ActivityBase {
                 home()
             }
             onStartActivity: {
-                background.stop()
-                background.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 
@@ -208,11 +208,11 @@ ActivityBase {
 
         ScoreItem {
             id: player1Score
-            height: Math.min(background.height/7, Math.min(background.width/7, bar.height * 1.05))
+            height: Math.min(activityBackground.height/7, Math.min(activityBackground.width/7, bar.height * 1.05))
             width: height * 1.2
             anchors {
                 bottom: bar.top
-                right: background.right
+                right: activityBackground.right
                 rightMargin: items.spacing * 8
                 bottomMargin: items.spacing * 6
             }
@@ -222,12 +222,12 @@ ActivityBase {
 
         ScoreItem {
             id: player2Score
-            height: Math.min(background.height/7, Math.min(background.width/7, bar.height * 1.05))
+            height: Math.min(activityBackground.height/7, Math.min(activityBackground.width/7, bar.height * 1.05))
             width: height * 1.2
             visible: activity.withTux || items.playerCount == 2
             anchors {
                 bottom: player1Score.top
-                right: background.right
+                right: activityBackground.right
                 rightMargin: items.spacing * 8
                 bottomMargin: items.spacing * 6
             }
@@ -243,7 +243,7 @@ ActivityBase {
                 AnchorChanges {
                     target: player2Score
                     anchors.bottom: player1Score.top
-                    anchors.right: background.right
+                    anchors.right: activityBackground.right
                 }
                 AnchorChanges {
                     target: grid
@@ -263,7 +263,7 @@ ActivityBase {
                 AnchorChanges {
                     target: grid
                     anchors.bottom: player1Score.top
-                    anchors.right: background.right
+                    anchors.right: activityBackground.right
                 }
             }
         ]
@@ -279,7 +279,7 @@ ActivityBase {
 
         Keys.enabled: !items.blockClicks
         Keys.onPressed: (event) => {
-            background.keyNavigationVisible = true
+            activityBackground.keyNavigationVisible = true
             if(event.key === Qt.Key_Left) {
                 do {
                     if(grid.currentIndex <= 0) {
@@ -338,12 +338,12 @@ ActivityBase {
                 button2Text: qsTr("Continue")
                 onButton1Hit: activity.home();
                 onClose: {
-                    background.audioDisabled = false;
+                    activityBackground.audioDisabled = false;
                 }
             }
             anchors.fill: parent
             focus: true
-            active: background.audioDisabled
+            active: activityBackground.audioDisabled
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
     }

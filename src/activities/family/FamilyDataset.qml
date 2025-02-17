@@ -12,8 +12,8 @@
 import QtQuick 2.12
 
 QtObject {
-    property real nodeWidth: background.nodeWidthRatio
-    property real nodeHeight: background.nodeHeightRatio
+    property real nodeWidth: activityBackground.nodeWidthRatio
+    property real nodeHeight: activityBackground.nodeHeightRatio
 
     property int numberOfGenerations: 3
     /*

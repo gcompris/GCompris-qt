@@ -22,10 +22,10 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    property bool vert: background.width <= background.height
+    property bool vert: activityBackground.width <= activityBackground.height
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
         anchors.fill: parent
         sourceSize.width: parent.width
@@ -42,7 +42,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias categoryReview: categoryReview
@@ -79,10 +79,10 @@ ActivityBase {
         Rectangle {
             id: categoryArea
             color: "#00ffffff"
-            anchors.top: background.top
+            anchors.top: activityBackground.top
             anchors.bottom: bar.top
-            anchors.left: background.left
-            anchors.right: background.right
+            anchors.left: activityBackground.left
+            anchors.right: activityBackground.right
             anchors.bottomMargin: bar.height * 0.2
             CategoryReview {
                 id: categoryReview
@@ -110,8 +110,8 @@ ActivityBase {
             onStartActivity: {
                 items.mode = activityData["mode"]
                 items.menuScreen.iAmReady.visible = (activityData["mode"] === "expert") ? true : false;
-                background.stop();
-                background.start()
+                activityBackground.stop();
+                activityBackground.start()
             }
             onClose: home()
         }

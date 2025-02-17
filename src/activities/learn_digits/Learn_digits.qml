@@ -25,7 +25,7 @@ ActivityBase {
     }
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: "qrc:/gcompris/src/activities/braille_fun/resource/hillside.svg"
         sourceSize.width: width
         sourceSize.height: height
@@ -47,13 +47,13 @@ ActivityBase {
             property GCAudio audioVoices: activity.audioVoices
             property alias goodAnswerSound: goodAnswerSound
             property alias badAnswerSound: badAnswerSound
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
             property alias circlesLine: circlesLine
             property alias fileId: fileId
-            property alias locale: background.locale
+            property alias locale: activityBackground.locale
             property alias iAmReady: iAmReady
             property alias errorRectangle: errorRectangle
             property int nbSubLevel
@@ -108,7 +108,7 @@ ActivityBase {
 
         ReadyButton {
             id: iAmReady
-            onClicked: background.itemsVisible();
+            onClicked: activityBackground.itemsVisible();
         }
 
         GCSoundEffect {
@@ -464,8 +464,8 @@ ActivityBase {
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
             }
             onStartActivity: {
-                background.stop();
-                background.start();
+                activityBackground.stop();
+                activityBackground.start();
             }
 
             onClose: home()

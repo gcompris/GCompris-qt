@@ -42,7 +42,7 @@ ActivityBase {
     Keys.onReleased: (event) => { Activity.processKeyRelease(event.key) }
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: "qrc:/gcompris/src/activities/maze/resource/maze_bg.svg"
         sourceSize.width: parent.width
         anchors.fill: parent
@@ -112,7 +112,7 @@ ActivityBase {
             property string filePath: activity.loadedFilePath
             property var testLevel: activity.testLevel
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias tilt: tilt
@@ -178,15 +178,15 @@ ActivityBase {
             property int barHeight: ApplicationSettings.isBarHidden ? 0 : 90 * ApplicationInfo.ratio
             property int columns: 1
             property int rows: 1
-            property double length: Math.min(background.height -
-                    mapWrapper.barHeight - 2 * mapWrapper.margin, background.width - 2 * mapWrapper.margin);
+            property double length: Math.min(activityBackground.height -
+                    mapWrapper.barHeight - 2 * mapWrapper.margin, activityBackground.width - 2 * mapWrapper.margin);
 
             color: "#E3DEDB"
             width: length
             height: length
-            anchors.top: background.top
+            anchors.top: activityBackground.top
             anchors.topMargin: mapWrapper.margin
-            anchors.horizontalCenter: background.horizontalCenter
+            anchors.horizontalCenter: activityBackground.horizontalCenter
 
             onWidthChanged: if (activity.inForeground && pageView.currentItem === activity)
             resizeTimer.restart()
@@ -474,7 +474,7 @@ ActivityBase {
                                     Activity.nextLevel()
             onHomeClicked: {
                 if (activity.mode == "test")
-                    background.startEditor();
+                    activityBackground.startEditor();
                 else
                     activity.home()
             }
@@ -535,8 +535,8 @@ ActivityBase {
                 }
             }
             onStartActivity: {
-                background.stop();
-                background.start();
+                activityBackground.stop();
+                activityBackground.start();
             }
         }
     }

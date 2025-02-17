@@ -20,8 +20,8 @@ Image {
     fillMode: Image.PreserveAspectFit
     z: 0
     // Let the items comes from random side of the screen
-    x: Math.random() > 0.5 ? -width : background.width
-    y: Math.random() > 0.5 ? -height : background.height
+    x: Math.random() > 0.5 ? -width : activityBackground.width
+    y: Math.random() > 0.5 ? -height : activityBackground.height
 
     Component.onCompleted: {        
         positionMe()

@@ -22,7 +22,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: Activity.url + "background.svg"
         sourceSize.width: width
         sourceSize.height: height
@@ -48,7 +48,7 @@ ActivityBase {
             property alias question: question
             property alias answerModel: answerModel
             property alias selector: selector
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property string selectedItem
@@ -118,14 +118,14 @@ ActivityBase {
 
         Rectangle {
             id: mainArea
-            anchors.top: background.top
+            anchors.top: activityBackground.top
             anchors.bottom: bar.top
-            anchors.left: background.left
-            anchors.right: background.right
+            anchors.left: activityBackground.left
+            anchors.right: activityBackground.right
             color: "#00FFFFFF"
 
             property int nbItems: 24
-            property bool horizontal: background.width >= background.height
+            property bool horizontal: activityBackground.width >= activityBackground.height
             property bool smallQuestionMode: items.modelDisplayLayout === "smaller"
             property int nbColumns: items.questionLayoutColumns
             property int nbLines: items.questionLayoutRows
@@ -279,7 +279,7 @@ ActivityBase {
                         border.width: 3
                         border.color: "black"
                         opacity: 0.6
-                        visible: background.keyboardMode && (background.areaWithKeyboardFocus === answer)
+                        visible: activityBackground.keyboardMode && (activityBackground.areaWithKeyboardFocus === answer)
                     }
 
                     // If the image was directly used as a delegate (without containing it in the item), the highlight element would have been be hard to notice as it would get completely hidden by the image due to the same sizes.
@@ -350,7 +350,7 @@ ActivityBase {
                         border.width: 3
                         border.color: "black"
                         opacity: 0.6
-                        visible: background.keyboardMode && (background.areaWithKeyboardFocus === selector)
+                        visible: activityBackground.keyboardMode && (activityBackground.areaWithKeyboardFocus === selector)
                     }
                     delegate: Item {
                         id: selectorItem
@@ -470,13 +470,13 @@ ActivityBase {
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
                 // restart activity on saving
-                background.start()
+                activityBackground.start()
             }
             onClose: {
                 home()
             }
             onStartActivity: {
-                background.start()
+                activityBackground.start()
             }
         }
 

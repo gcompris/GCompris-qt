@@ -22,7 +22,7 @@ ActivityBase {
     isMusicalActivity: true
 
     pageComponent: Rectangle {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         color: "#ABCDEF"
 
@@ -56,7 +56,7 @@ ActivityBase {
             score.numberOfSubLevels = 5;
             score.currentSubLevel = 0;
             if(!ApplicationSettings.isAudioVoicesEnabled || !ApplicationSettings.isAudioEffectsEnabled) {
-                    background.audioDisabled = true;
+                    activityBackground.audioDisabled = true;
             } else {
                 initLevel();
                 items.running = true;
@@ -144,7 +144,7 @@ ActivityBase {
                               && !anim.running && !items.buttonsBlocked
                     onClicked: {
                         anim.start()
-                        background.playNote(index)
+                        activityBackground.playNote(index)
                         items.answer.push(index)
                         if(items.answer.length >= items.question.length) {
                             items.buttonsBlocked = true;
@@ -188,7 +188,7 @@ ActivityBase {
                 var partIndex = items.questionToPlay.shift()
                 if(partIndex !== undefined) {
                     parts.itemAt(partIndex).anim.start()
-                    background.playNote(partIndex)
+                    activityBackground.playNote(partIndex)
                     start()
                 }
             }
@@ -198,7 +198,7 @@ ActivityBase {
             id: feedbackTimer
             interval: 500
             onTriggered: {
-                background.checkAnswer()
+                activityBackground.checkAnswer()
             }
         }
 
@@ -336,7 +336,7 @@ ActivityBase {
                 button2Text: qsTr("Continue")
                 onButton1Hit: activity.home();
                 onClose: {
-                    background.audioDisabled = false;
+                    activityBackground.audioDisabled = false;
                     initLevel();
                     items.running = true;
                     introDelay.start();
@@ -344,7 +344,7 @@ ActivityBase {
             }
             anchors.fill: parent
             focus: true
-            active: background.audioDisabled
+            active: activityBackground.audioDisabled
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
     }

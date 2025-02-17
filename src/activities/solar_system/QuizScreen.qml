@@ -61,7 +61,7 @@ Item {
     // This grid has image of the planet in its first column/row (row in case of vertical screen) and the options on the 2nd column/row
     Grid {
         id: imageAndOptionGrid
-        columns: (background.horizontalLayout && !items.assessmentMode && items.currentLevel != 1) ? 2 : 1
+        columns: (activityBackground.horizontalLayout && !items.assessmentMode && items.currentLevel != 1) ? 2 : 1
         spacing: 10 * ApplicationInfo.ratio
         anchors.top: (questionArea.y + questionArea.height) > (score.y + score.height) ? questionArea.bottom : score.bottom
         anchors.left: parent.left
@@ -69,10 +69,10 @@ Item {
 
         // An item to hold image of the planet
         Item {
-            width: background.horizontalLayout ? background.width * 0.40
-                                               : background.width - imageAndOptionGrid.anchors.margins * 2
-            height: background.horizontalLayout ? background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio
-                                                : (background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.37
+            width: activityBackground.horizontalLayout ? activityBackground.width * 0.40
+                                               : activityBackground.width - imageAndOptionGrid.anchors.margins * 2
+            height: activityBackground.horizontalLayout ? activityBackground.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio
+                                                : (activityBackground.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.37
 
             visible: !items.assessmentMode && (items.currentLevel != 1)
 
@@ -88,12 +88,12 @@ Item {
         // An item to hold the list view of options
         Item {
             width: ( items.assessmentMode || items.currentLevel == 1 ) ? mainQuizScreen.width
-                                                                    : background.horizontalLayout ? background.width * 0.55
-                                                                                                  : background.width - imageAndOptionGrid.anchors.margins * 2
-            height: background.horizontalLayout ? itemHeightHorizontal
+                                                                    : activityBackground.horizontalLayout ? activityBackground.width * 0.55
+                                                                                                  : activityBackground.width - imageAndOptionGrid.anchors.margins * 2
+            height: activityBackground.horizontalLayout ? itemHeightHorizontal
                                                 : itemHeightVertical
 
-            readonly property real itemHeightHorizontal: background.height - bar.height - closenessMeter.height - questionArea.height - 10 * ApplicationInfo.ratio
+            readonly property real itemHeightHorizontal: activityBackground.height - bar.height - closenessMeter.height - questionArea.height - 10 * ApplicationInfo.ratio
             readonly property real itemHeightVertical: (items.bcurrentLevel != 1 && !items.assessmentMode) ? itemHeightHorizontal * 0.39
                                                                                                        : itemHeightHorizontal * 0.8
 
@@ -101,11 +101,11 @@ Item {
                 id: optionListView
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.horizontalCenter: parent.horizontalCenter
-                width: background.horizontalLayout ? background.width * 0.40
-                                                   : background.width - imageAndOptionGrid.anchors.margins * 2
-                height: background.horizontalLayout ? background.height - bar.height - closenessMeter.height * 1.5 - questionArea.height - 50 * ApplicationInfo.ratio
+                width: activityBackground.horizontalLayout ? activityBackground.width * 0.40
+                                                   : activityBackground.width - imageAndOptionGrid.anchors.margins * 2
+                height: activityBackground.horizontalLayout ? activityBackground.height - bar.height - closenessMeter.height * 1.5 - questionArea.height - 50 * ApplicationInfo.ratio
                                                     : parent.itemHeightVertical
-                spacing: background.horizontalLayout ? 10 * ApplicationInfo.ratio : 7.5 * ApplicationInfo.ratio
+                spacing: activityBackground.horizontalLayout ? 10 * ApplicationInfo.ratio : 7.5 * ApplicationInfo.ratio
                 orientation: Qt.Vertical
                 verticalLayoutDirection: ListView.TopToBottom
                 interactive: false
@@ -126,7 +126,7 @@ Item {
                 highlight: Rectangle {
                     scale: 1.2
                     color:  "#2881C3"
-                    visible: background.keyboardMode
+                    visible: activityBackground.keyboardMode
                     radius: 10 * ApplicationInfo.ratio
                     Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
                     Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
@@ -192,8 +192,8 @@ Item {
 
     Rectangle {
         id: closenessMeter
-        x: background.width - width - 10 * ApplicationInfo.ratio
-        y: background.height - bar.height - height - 10 * ApplicationInfo.ratio
+        x: activityBackground.width - width - 10 * ApplicationInfo.ratio
+        y: activityBackground.height - bar.height - height - 10 * ApplicationInfo.ratio
         width: 170 * ApplicationInfo.ratio
         height: 40 * ApplicationInfo.ratio
         radius: width * 0.06

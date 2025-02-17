@@ -26,7 +26,7 @@ ActivityBase {
     property bool horizontalLayout: width >= height
 
     pageComponent: Rectangle {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         color: "#ABCDEF"
         signal start
@@ -79,7 +79,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias multipleStaff: multipleStaff
             property alias doubleOctave: doubleOctave
@@ -103,7 +103,7 @@ ActivityBase {
         onStart: {
             if(!ApplicationSettings.isAudioVoicesEnabled || !ApplicationSettings.isAudioEffectsEnabled) {
                     introMessage.index = -1;
-                    background.audioDisabled = true;
+                    activityBackground.audioDisabled = true;
             }
             Activity.start(items, activity.timerNormalInterval);
         }
@@ -445,13 +445,13 @@ ActivityBase {
                 button2Text: qsTr("Continue")
                 onButton1Hit: activity.home();
                 onClose: {
-                    background.audioDisabled = false;
+                    activityBackground.audioDisabled = false;
                     introMessage.index = 0;
                 }
             }
             anchors.fill: parent
             focus: true
-            active: background.audioDisabled
+            active: activityBackground.audioDisabled
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
     }

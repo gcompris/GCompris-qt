@@ -20,7 +20,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: Activity.url + "desert_scene.svg"
         sourceSize.width: width
@@ -46,7 +46,7 @@ ActivityBase {
             property alias goodAnswerSound: goodAnswerSound
             property alias badAnswerSound: badAnswerSound
             property alias bleepSound: bleepSound
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
@@ -93,7 +93,7 @@ ActivityBase {
             width: itemWidth * Activity.images.length
             anchors.horizontalCenter: parent.horizontalCenter
 
-            property int itemWidth: Math.min(background.width * 0.75 / Activity.images.length, background.height * 0.19)
+            property int itemWidth: Math.min(activityBackground.width * 0.75 / Activity.images.length, activityBackground.height * 0.19)
 
             Rectangle {
                 id: questionTray
@@ -179,7 +179,7 @@ ActivityBase {
                         color:  "#AAFFFFFF"
                         border.width: 2
                         border.color: "white"
-                        visible: background.keyNavigationVisible
+                        visible: activityBackground.keyNavigationVisible
                         Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
                         Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
                     }

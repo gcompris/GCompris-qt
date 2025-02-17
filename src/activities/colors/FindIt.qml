@@ -31,7 +31,7 @@ ActivityBase {
     }
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         focus: true
         fillMode: Image.PreserveAspectCrop
         sourceSize.width: width
@@ -52,7 +52,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item activityPage: activity
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias goodAnswerSound: goodAnswerSound
             property alias badAnswerSound: badAnswerSound
             property int currentLevel: activity.currentLevel
@@ -73,7 +73,7 @@ ActivityBase {
         }
         onStart: {
             if((!ApplicationSettings.isAudioVoicesEnabled || !ApplicationSettings.isAudioEffectsEnabled) && activity.isMusicalActivity) {
-                background.audioDisabled = true;
+                activityBackground.audioDisabled = true;
             } else {
                 Activity.start(items, dataset, mode);
             }
@@ -162,7 +162,7 @@ ActivityBase {
                 id: questionText
                 anchors.centerIn: parent
                 fontSize: largeSize
-                width: background.width * 0.9
+                width: activityBackground.width * 0.9
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WordWrap
                 font.weight: Font.DemiBold
@@ -176,8 +176,8 @@ ActivityBase {
             anchors.top: questionItem.bottom
             anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.bottom: score.top
-            anchors.horizontalCenter: background.horizontalCenter
-            width: background.width - score.width * 2
+            anchors.horizontalCenter: activityBackground.horizontalCenter
+            width: activityBackground.width - score.width * 2
             interactive: false
             cellWidth: itemWidth
             cellHeight: itemWidth
@@ -196,8 +196,8 @@ ActivityBase {
             add: Transition {
                 PathAnimation {
                     path: Path {
-                        PathCurve { x: background.width / 3}
-                        PathCurve { y: background.height / 3}
+                        PathCurve { x: activityBackground.width / 3}
+                        PathCurve { y: activityBackground.height / 3}
                         PathCurve {}
                     }
                     easing.type: Easing.InOutQuad
@@ -210,7 +210,7 @@ ActivityBase {
                 color:  "#AAFFFFFF"
                 border.width: 3
                 border.color: "black"
-                visible: background.keyboardMode
+                visible: activityBackground.keyboardMode
                 Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
                 Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
             }
@@ -274,13 +274,13 @@ ActivityBase {
                 button2Text: qsTr("Continue")
                 onButton1Hit: activity.home();
                 onClose: {
-                    background.audioDisabled = false;
+                    activityBackground.audioDisabled = false;
                     Activity.start(items, dataset, mode);
                 }
             }
             anchors.fill: parent
             focus: true
-            active: background.audioDisabled
+            active: activityBackground.audioDisabled
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
     }

@@ -18,7 +18,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
         anchors.fill: parent
         fillMode: Image.PreserveAspectCrop
@@ -37,7 +37,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias goodAnswerSound: goodAnswerSound
             property alias badAnswerSound: badAnswerSound
             property int currentLevel: activity.currentLevel
@@ -49,7 +49,7 @@ ActivityBase {
             property alias okButton: okButton
             property alias score: score
             property double cardSize: Core.fitItems(numberContainerArea.width, numberContainerArea.height, 6)
-            property bool isHorizontal: background.width >= background.height
+            property bool isHorizontal: activityBackground.width >= activityBackground.height
             property bool buttonsBlocked: false
         }
 
@@ -84,10 +84,10 @@ ActivityBase {
         Item {
             id: numberContainerArea
             height: width * 0.67
-            width: (layoutArea.width - background.layoutMargins * 3) * 0.32
+            width: (layoutArea.width - activityBackground.layoutMargins * 3) * 0.32
             anchors.left: layoutArea.left
             anchors.verticalCenter: answerHolderArea.verticalCenter
-            anchors.leftMargin: background.layoutMargins
+            anchors.leftMargin: activityBackground.layoutMargins
         }
 
         Rectangle {
@@ -130,7 +130,7 @@ ActivityBase {
                 top: layoutArea.top
                 bottom: score.top
                 right: score.left
-                margins: background.layoutMargins
+                margins: activityBackground.layoutMargins
             }
 
             ListView {
@@ -154,7 +154,7 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             anchors {
                 bottom: score.top
-                bottomMargin: background.layoutMargins
+                bottomMargin: activityBackground.layoutMargins
                 horizontalCenter: score.horizontalCenter
             }
             width: 60 * ApplicationInfo.ratio
@@ -167,8 +167,8 @@ ActivityBase {
             anchors {
                 right: layoutArea.right
                 bottom: layoutArea.bottom
-                rightMargin: background.layoutMargins
-                bottomMargin: background.layoutMargins
+                rightMargin: activityBackground.layoutMargins
+                bottomMargin: activityBackground.layoutMargins
             }
             onStop: Activity.nextSubLevel()
         }
@@ -189,11 +189,11 @@ ActivityBase {
                 PropertyChanges {
                     numberContainerArea {
                         anchors {
-                            leftMargin: background.layoutMargins
+                            leftMargin: activityBackground.layoutMargins
                             bottomMargin: 0
                         }
                         height: numberContainerArea.width * 0.67
-                        width: (layoutArea.width - background.layoutMargins * 3) * 0.32
+                        width: (layoutArea.width - activityBackground.layoutMargins * 3) * 0.32
                     }
                 }
                 AnchorChanges {
@@ -230,9 +230,9 @@ ActivityBase {
                     numberContainerArea {
                         anchors {
                             leftMargin: 0
-                            bottomMargin: background.layoutMargins
+                            bottomMargin: activityBackground.layoutMargins
                         }
-                        width: Math.min(layoutArea.width - score.width * 2 - background.layoutMargins * 4,
+                        width: Math.min(layoutArea.width - score.width * 2 - activityBackground.layoutMargins * 4,
                         layoutArea.height * 0.5)
                         height: numberContainerArea.width * 0.67
                     }
@@ -272,13 +272,13 @@ ActivityBase {
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
                 // restart activity on saving
-                background.start()
+                activityBackground.start()
             }
             onClose: {
                 home()
             }
             onStartActivity: {
-                background.start()
+                activityBackground.start()
             }
         }
 

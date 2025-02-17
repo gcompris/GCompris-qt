@@ -221,7 +221,7 @@ Item {
 
                 onPositionChanged: {
                     tileImage.opacity = 0.5;
-                    if((background.verticalBar && tileImage.x > leftWidget.width) || (!background.verticalBar && tileImage.y > leftWidget.height)) {
+                    if((activityBackground.verticalBar && tileImage.x > leftWidget.width) || (!activityBackground.verticalBar && tileImage.y > leftWidget.height)) {
                         tileImage.dropEnabled = true;
                         Activity.highLightSpot(getClosestSpot(), tileImage);
                     } else {

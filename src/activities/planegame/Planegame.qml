@@ -43,7 +43,7 @@ ActivityBase {
     }
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         signal start
         signal stop
@@ -64,7 +64,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item activityPage: activity
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias bar: bar
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
@@ -155,7 +155,7 @@ ActivityBase {
         Score {
             id: score
             visible: !showTutorial
-            fontSize: background.width >= background.height ? internalTextComponent.largeSize : internalTextComponent.mediumSize
+            fontSize: activityBackground.width >= activityBackground.height ? internalTextComponent.largeSize : internalTextComponent.mediumSize
             height: internalTextComponent.height + 10
             anchors.bottom: bar.top
             anchors.margins: 10
@@ -189,7 +189,6 @@ ActivityBase {
         Plane {
             id: plane
             visible: !showTutorial
-            background: background
         }
 
         Item {

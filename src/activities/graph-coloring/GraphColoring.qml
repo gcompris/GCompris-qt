@@ -29,7 +29,7 @@ ActivityBase {
     }
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: "qrc:/gcompris/src/activities/tic_tac_toe/resource/background.svg"
         sourceSize.width: width
@@ -54,7 +54,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias colorsRepeater: colorsRepeater
@@ -127,8 +127,8 @@ ActivityBase {
             anchors.bottomMargin: 50 * ApplicationInfo.ratio
             anchors.top: parent.top
             anchors.topMargin: 50 * ApplicationInfo.ratio
-            height: background.height - 100 * ApplicationInfo.ratio
-            width: background.width - 150 * ApplicationInfo.ratio
+            height: activityBackground.height - 100 * ApplicationInfo.ratio
+            width: activityBackground.width - 150 * ApplicationInfo.ratio
             property int diameter: graphRect.width/11
             property int minDiameter: 40 * ApplicationInfo.ratio
             property int maxDiameter: 80 * ApplicationInfo.ratio
@@ -280,7 +280,7 @@ ActivityBase {
                 return;
             }
             var modelObj = items.nodesRepeater.model.get(guessIndex);
-            var absolute = graphRect.mapToItem(background, item.x, item.y);
+            var absolute = graphRect.mapToItem(activityBackground, item.x, item.y);
             chooserGrid.colIndex = modelObj.colIndex;
             chooserGrid.guessIndex = guessIndex;
             var targetX = absolute.x + item.width;
@@ -288,14 +288,14 @@ ActivityBase {
             if (targetX < 0) {
                 targetX = 0;
             }
-            if (targetX + chooser.width > background.width) {
-                targetX = background.width - chooser.width - 10;
+            if (targetX + chooser.width > activityBackground.width) {
+                targetX = activityBackground.width - chooser.width - 10;
             }
             if (targetY < 0) {
                 targetY = 0;
             }
-            if (targetY + chooser.height > background.height) {
-                targetY = background.height - chooser.height - 10;
+            if (targetY + chooser.height > activityBackground.height) {
+                targetY = activityBackground.height - chooser.height - 10;
             }
             chooser.x = targetX;
             chooser.y = targetY;

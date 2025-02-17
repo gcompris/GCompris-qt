@@ -25,7 +25,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
         sourceSize.width: parent.width
@@ -43,7 +43,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias clickSound: clickSound
@@ -68,8 +68,8 @@ ActivityBase {
         Image {
             id: imageBack
             anchors.top: parent.top
-            anchors.horizontalCenter: background.horizontalCenter
-            width: Math.min((background.height - bar.height * 1.5), background.width)
+            anchors.horizontalCenter: activityBackground.horizontalCenter
+            width: Math.min((activityBackground.height - bar.height * 1.5), activityBackground.width)
             height: imageBack.width
             sourceSize.width: imageBack.width
             sourceSize.height: imageBack.height
@@ -212,7 +212,7 @@ ActivityBase {
                 }
             }
             onStartActivity: {
-                background.stop()
+                activityBackground.stop()
                 Activity.initLevel()
             }
         }

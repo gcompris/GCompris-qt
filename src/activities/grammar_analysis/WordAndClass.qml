@@ -37,7 +37,7 @@ Item {
     property alias boxModel: boxModel
 
     width: Math.max(textView.width, rowWords.width) + 2
-    height: textView.height + rowWords.height + background.baseMargins
+    height: textView.height + rowWords.height + activityBackground.baseMargins
 
     // Set proposal for grammatical class number idx
     function setProposal(idx: int, forward = true) {
@@ -124,18 +124,18 @@ Item {
                     property int order: order_
                     property alias imgSvg: imgSvg
                     property bool boxExpected: boxExpected_
-                    width: imgSvg.width + background.baseMargins
+                    width: imgSvg.width + activityBackground.baseMargins
                     height: width
-                    radius: background.baseRadius
+                    radius: activityBackground.baseRadius
                     color: "transparent"
-                    border.color: boxExpected ? background.selectionColor : "transparent"
+                    border.color: boxExpected ? activityBackground.selectionColor : "transparent"
                     border.width: (order === items.selectedBox)  ? 4 * ApplicationInfo.ratio : ApplicationInfo.ratio
                     visible: (expected !== "")
 
                     Image {         //
                         id: imgSvg
                         source: (svgSource == "") ? "qrc:/gcompris/src/core/resource/empty.svg" : svgSource
-                        width: (expected == "") ? background.baseMargins : wordsArea.itemHeight
+                        width: (expected == "") ? activityBackground.baseMargins : wordsArea.itemHeight
                         height: width
                         sourceSize.width: width
                         sourceSize.height: width

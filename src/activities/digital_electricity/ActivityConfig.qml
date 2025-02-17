@@ -15,7 +15,7 @@ import "digital_electricity.js" as Activity
 
 Item {
     id: activityConfiguration
-    property Item background
+    property Item activityBackground
     property alias modeBox: modeBox
     width: flick.width
     height: childrenRect.height
@@ -29,7 +29,7 @@ Item {
         GCComboBox {
             id: modeBox
             model: availableModes
-            background: activityConfiguration.background
+            activityBackground: activityConfiguration.activityBackground
             label: qsTr("Select your mode")
         }
     }

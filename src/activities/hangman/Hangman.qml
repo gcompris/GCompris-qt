@@ -34,7 +34,7 @@ ActivityBase {
     }
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: activity.dataSetUrl + "background.svg"
         fillMode: Image.PreserveAspectCrop
         anchors.fill: parent
@@ -59,7 +59,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property Item ourActivity: activity
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
@@ -70,7 +70,7 @@ ActivityBase {
             property alias wordImage: wordImage
             property alias score: score
             property alias parser: parser
-            property alias locale: background.locale
+            property alias locale: activityBackground.locale
             property alias ok: ok
             property int remainingLife
             property double maskThreshold
@@ -101,7 +101,7 @@ ActivityBase {
         onStart: {
             focus = true;
             Activity.start(items);
-            if(!background.englishFallback)
+            if(!activityBackground.englishFallback)
                 Activity.focusTextInput();
         }
 
@@ -183,7 +183,7 @@ ActivityBase {
         Item {
             id: imageframe
             width: Math.min(300 * ApplicationInfo.ratio,
-                            background.width * 0.8,
+                            activityBackground.width * 0.8,
                             hidden.y) - guessedText.height
             height: width
             anchors.horizontalCenter: parent.horizontalCenter
@@ -259,10 +259,10 @@ ActivityBase {
             }
             onLoadData: {
                 if(activityData && activityData["locale"]) {
-                    background.locale = Core.resolveLocale(activityData["locale"]);
+                    activityBackground.locale = Core.resolveLocale(activityData["locale"]);
                 }
                 else {
-                    background.locale = Core.resolveLocale(background.locale);
+                    activityBackground.locale = Core.resolveLocale(activityBackground.locale);
                 }
                 if(activityData) {
                     if(activityData["easyModeImage"])
@@ -276,8 +276,8 @@ ActivityBase {
 
             }
             onStartActivity: {
-                background.stop()
-                background.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 
@@ -412,13 +412,13 @@ ActivityBase {
                          "<br /> <br />" +
                          qsTr("We switched to English for this activity but you can select another language in the configuration dialog.")
                 onClose: {
-                    background.englishFallback = false;
+                    activityBackground.englishFallback = false;
                     Activity.focusTextInput;
                 }
             }
             anchors.fill: parent
             focus: true
-            active: background.englishFallback
+            active: activityBackground.englishFallback
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
 

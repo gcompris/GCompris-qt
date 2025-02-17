@@ -18,13 +18,13 @@ import GCompris 1.0
 AnimatedSprite {
     id: fish
     property Item activity
-    property Item background
+    property Item activityBackground
     property Item bar
     property int duration: 5000
     property int minY: Activity.items.score.y + Activity.items.score.height
     property int maxY: bar.y - fish.height
     property int minX: fish.width * -1.2
-    property int maxX: background.width + fish.width * 0.2
+    property int maxX: activityBackground.width + fish.width * 0.2
     property real xSpeed: 10
     property real ySpeed: 1
     frameRate: 2
@@ -33,7 +33,7 @@ AnimatedSprite {
     signal animTrigger
 
     Component.onCompleted: {
-        background.animTrigger.connect(animTrigger)
+        activityBackground.animTrigger.connect(animTrigger)
     }
 
     transform: Rotation {
@@ -68,10 +68,10 @@ AnimatedSprite {
     MouseArea {
         anchors.fill: parent
         onClicked: {
-            background.animTrigger.disconnect(animTrigger)
+            activityBackground.animTrigger.disconnect(animTrigger)
             parent.opacity = 0
             enabled = false
-            background.dripSound.play()
+            activityBackground.dripSound.play()
             Activity.fishKilled()
             particles.burst(40);
         }

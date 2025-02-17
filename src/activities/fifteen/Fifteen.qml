@@ -21,7 +21,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: Activity.url + "background.svg"
         sourceSize.width: width
@@ -44,7 +44,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias flipSound: flipSound
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias model: fifteenModel
@@ -67,8 +67,8 @@ ActivityBase {
         Image {
             id: blueFrame
             source: Activity.url + "blueframe.svg"
-            sourceSize.width: Math.min(background.width,
-                                       background.height - bar.height) * 0.95
+            sourceSize.width: Math.min(activityBackground.width,
+                                       activityBackground.height - bar.height) * 0.95
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
             anchors.verticalCenterOffset: -bar.height * 0.55

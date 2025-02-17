@@ -39,7 +39,7 @@ Item {
             right: parent.right
             top: parent.top
             bottom: parent.bottom
-            margins: background.layoutMargins
+            margins: activityBackground.layoutMargins
         }
     }
 

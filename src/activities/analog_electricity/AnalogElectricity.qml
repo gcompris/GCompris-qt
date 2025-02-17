@@ -24,7 +24,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: Activity.urlDigital + "texture02.webp"
         fillMode: Image.Tile
@@ -52,7 +52,7 @@ ActivityBase {
             onTriggered: Activity.createNetlist();
         }
 
-        property bool hori: background.width >= background.height
+        property bool hori: activityBackground.width >= activityBackground.height
 
         Component.onCompleted: {
             dialogActivityConfig.initialize();
@@ -103,7 +103,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias playArea: playArea
@@ -136,9 +136,9 @@ ActivityBase {
             id: introArea
             anchors {
                 fill: parent
-                topMargin: (background.hori ? 0 : inputComponentsContainer.height) + 10 * ApplicationInfo.ratio
+                topMargin: (activityBackground.hori ? 0 : inputComponentsContainer.height) + 10 * ApplicationInfo.ratio
                 rightMargin: 10 * ApplicationInfo.ratio
-                leftMargin: (background.hori ? inputComponentsContainer.width : 0) + 10 * ApplicationInfo.ratio
+                leftMargin: (activityBackground.hori ? inputComponentsContainer.width : 0) + 10 * ApplicationInfo.ratio
                 bottomMargin: bar.height * 2
             }
         }
@@ -160,8 +160,8 @@ ActivityBase {
         Rectangle {
             id: visibleArea
             color: "#00000000"
-            width:background.width - items.toolsMargin - 10
-            height: background.height - bar.height - items.toolsMargin - 10
+            width:activityBackground.width - items.toolsMargin - 10
+            height: activityBackground.height - bar.height - items.toolsMargin - 10
             anchors {
                 fill: undefined
                 top: parent.top
@@ -230,8 +230,8 @@ ActivityBase {
             color: "#10000000"
             x: items.toolsMargin
             y: 0
-            width: background.width * 4 - items.toolsMargin
-            height: background.height * 4 - (bar.height * 1.1)
+            width: activityBackground.width * 4 - items.toolsMargin
+            height: activityBackground.height * 4 - (bar.height * 1.1)
 
             property double sizeMultiplier:
                 playArea.width > playArea.height ? playArea.width : playArea.height
@@ -269,7 +269,7 @@ ActivityBase {
         Rectangle {
             id: inputComponentsContainer
             width: items.toolsMargin
-            height: background.height
+            height: activityBackground.height
             color: "#4A3823"
             anchors.left: parent.left
             Image {
@@ -281,7 +281,7 @@ ActivityBase {
                 fillMode: Image.Tile
                 ListWidget {
                     id: availablePieces
-                    hori: background.hori
+                    hori: activityBackground.hori
                 }
             }
             z: 10
@@ -380,11 +380,11 @@ ActivityBase {
         states: [
             State {
                 id: horizontalView
-                when: background.hori
+                when: activityBackground.hori
                 PropertyChanges {
                     visibleArea {
-                        width: background.width - items.toolsMargin - 10
-                        height: background.height - bar.height - items.toolsMargin - 10
+                        width: activityBackground.width - items.toolsMargin - 10
+                        height: activityBackground.height - bar.height - items.toolsMargin - 10
                     }
                 }
                 AnchorChanges {
@@ -396,8 +396,8 @@ ActivityBase {
                     playArea {
                         x: items.toolsMargin
                         y: 0
-                        width: background.width * 4 - items.toolsMargin
-                        height: background.height * 4 - (bar.height * 1.1)
+                        width: activityBackground.width * 4 - items.toolsMargin
+                        height: activityBackground.height * 4 - (bar.height * 1.1)
                     }
                 }
                 PropertyChanges {
@@ -409,7 +409,7 @@ ActivityBase {
                 PropertyChanges {
                     inputComponentsContainer {
                         width: items.toolsMargin
-                        height: background.height
+                        height: activityBackground.height
                     }
                 }
                 PropertyChanges {
@@ -421,11 +421,11 @@ ActivityBase {
             },
             State {
                 id: verticalView
-                when: !background.hori
+                when: !activityBackground.hori
                 PropertyChanges {
                     visibleArea {
-                        width: background.width - 10
-                        height: background.height - bar.height - 10
+                        width: activityBackground.width - 10
+                        height: activityBackground.height - bar.height - 10
                     }
                 }
                 AnchorChanges {
@@ -437,8 +437,8 @@ ActivityBase {
                     playArea {
                         x: 0
                         y: items.toolsMargin
-                        width: background.width * 4
-                        height: background.height * 4 - (bar.height * 1.1) - items.toolsMargin
+                        width: activityBackground.width * 4
+                        height: activityBackground.height * 4 - (bar.height * 1.1) - items.toolsMargin
                     }
                 }
                 PropertyChanges {
@@ -449,7 +449,7 @@ ActivityBase {
                 }
                 PropertyChanges {
                     inputComponentsContainer {
-                        width: background.width
+                        width: activityBackground.width
                         height: items.toolsMargin
                     }
                 }

@@ -115,7 +115,7 @@ function initLevel() {
         //resetting the selected bar to 0.1 (the least draggable part)
         items.draggedItems.append({"selectedSquareNumbers" : 1 });
 
-        if(items.background.horizontalLayout) {
+        if(items.activityBackground.horizontalLayout) {
             items.scrollBar.arrowX = items.scrollBar.arrowOrigin;
         }
         else {

@@ -18,10 +18,10 @@ import "programmingMaze.js" as Activity
 GridView {
     id: codeArea
     z: 1
-    width: background.width * 0.4
-    height: background.height * 0.29
-    cellWidth: background.buttonWidth
-    cellHeight: background.buttonHeight
+    width: activityBackground.width * 0.4
+    height: activityBackground.height * 0.29
+    cellWidth: activityBackground.buttonWidth
+    cellHeight: activityBackground.buttonHeight
 
     interactive: false
     model: currentModel
@@ -105,7 +105,7 @@ GridView {
     }
 
     function appendInstruction() {
-        if(background.insertIntoMain || (instructionArea.instructionToInsert != "call-procedure") || (instructionArea.instructionToInsert != "execute-loop")) {
+        if(activityBackground.insertIntoMain || (instructionArea.instructionToInsert != "call-procedure") || (instructionArea.instructionToInsert != "execute-loop")) {
             currentModel.append({ "name": instructionArea.instructionToInsert })
             items.numberOfInstructionsAdded++
             instructionArea.instructionToInsert = ""
@@ -122,7 +122,7 @@ GridView {
     Item {
         id: dropPositionIndicator
         visible: false
-        height: background.buttonHeight
+        height: activityBackground.buttonHeight
         width: 3 * ApplicationInfo.ratio
 
         Rectangle {
@@ -153,8 +153,8 @@ GridView {
     Rectangle {
         id: editInstructionIndicator
         visible: codeArea.isEditingInstruction && codeArea.count != 0
-        width: background.buttonWidth - 3 * ApplicationInfo.ratio
-        height: background.buttonHeight - 3 * ApplicationInfo.ratio
+        width: activityBackground.buttonWidth - 3 * ApplicationInfo.ratio
+        height: activityBackground.buttonHeight - 3 * ApplicationInfo.ratio
         color: "red"
         border.color: "red"
         border.width: 1.5 * ApplicationInfo.ratio
@@ -246,13 +246,13 @@ GridView {
 
     delegate: Item {
         id: itemParent
-        width: background.buttonWidth
-        height: background.buttonHeight
+        width: activityBackground.buttonWidth
+        height: activityBackground.buttonHeight
 
         Item {
             id: item
-            width: background.buttonWidth
-            height: background.buttonHeight
+            width: activityBackground.buttonWidth
+            height: activityBackground.buttonHeight
             state: "inactive"
             opacity: 1
 
@@ -268,8 +268,8 @@ GridView {
                     PropertyChanges {
                         item {
                             parent: codeArea
-                            width: background.buttonWidth * 0.80
-                            height: background.buttonHeight * 0.80
+                            width: activityBackground.buttonWidth * 0.80
+                            height: activityBackground.buttonHeight * 0.80
                             anchors.centerIn: undefined
                             x: codeAreaMouse.mouseX - item.width / 2
                             y: codeAreaMouse.mouseY - item.height / 2

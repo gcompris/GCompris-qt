@@ -91,7 +91,7 @@ function initLevel() {
     items.explosion.hide();
     items.rocket.show();
     // place rocket randomly:
-    var max = items.background.width - items.accelerometer.width - items.landing.width - items.rocket.width;
+    var max = items.activityBackground.width - items.accelerometer.width - items.landing.width - items.rocket.width;
     var min = 20;
     items.rocket.x = Math.random() * (max- min) + min;
     items.rocket.y = startingOffsetPx;
@@ -103,7 +103,7 @@ function initLevel() {
     // for landing random placement shall not intersect with bar -- or osd
     // controls on mobile:
     min = items.onScreenControls ? items.leftRightControl.width : items.bar.width;
-    max = items.onScreenControls ? items.background.width - items.upDownControl.width - items.landing.width : max;
+    max = items.onScreenControls ? items.activityBackground.width - items.upDownControl.width - items.landing.width : max;
     items.landing.anchors.leftMargin = Math.random() * (max- min) + min;
     items.landing.overlayColor = "-g";
     items.leftEngine.reset();
@@ -132,14 +132,14 @@ function initLevel() {
 
 function pxAltitudeToY(alt)
 {
-    var y = items.background.height - items.ground.height + items.ground.surfaceOffset
+    var y = items.activityBackground.height - items.ground.height + items.ground.surfaceOffset
             - items.rocket.height - 1 - alt;
     return y;
 }
 
 function pxYToAltitude(y)
 {
-    var altPx = items.background.height - items.ground.height + items.ground.surfaceOffset
+    var altPx = items.activityBackground.height - items.ground.height + items.ground.surfaceOffset
             - y - items.rocket.height
             - 1;  // landing is 1 pixel above ground surface
     return altPx;

@@ -21,12 +21,12 @@ Rectangle {
             monsters.destroyAll();
             if(topPanel.life.opacity == 1) {
                 topPanel.life.opacity = 0
-                if(background.withMonsters) {
+                if(activityBackground.withMonsters) {
                     spawningMonsters.restart()
                 }
             }
             else
-                background.initLevel()
+                activityBackground.initLevel()
         }
     }
 
@@ -124,8 +124,8 @@ Rectangle {
         text: fault + qsTr("Press \"Return\" or click on me to continue.")
 
         textFormat: Text.RichText
-        width: Math.min(400 * ApplicationInfo.ratio, background.width * 0.7)
-        height: background.height * 0.8
+        width: Math.min(400 * ApplicationInfo.ratio, activityBackground.width * 0.7)
+        height: activityBackground.height * 0.8
         fontSize: smallSize
         wrapMode: Text.WordWrap
     }

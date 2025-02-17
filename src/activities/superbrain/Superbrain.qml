@@ -25,7 +25,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: "qrc:/gcompris/src/activities/family/resource/background.svg"
         sourceSize.width: width
         sourceSize.height: height
@@ -53,7 +53,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
@@ -83,8 +83,8 @@ ActivityBase {
             anchors.left: parent.left
             anchors.top: parent.top
             anchors.bottom: bar.top
-            anchors.margins: background.baseMargins
-            spacing: background.baseMargins
+            anchors.margins: activityBackground.baseMargins
+            spacing: activityBackground.baseMargins
             width: Math.min(40 * ApplicationInfo.ratio, height / colorsRepeater.model.count - colorsColumn.spacing)
 
             add: Transition {
@@ -109,7 +109,7 @@ ActivityBase {
         Rectangle {
             id: tooltipRect
             width: tooltipText.contentWidth + 10 * ApplicationInfo.ratio
-            height: tooltipText.contentHeight + background.baseMargins
+            height: tooltipText.contentHeight + activityBackground.baseMargins
             radius: 4
             x: 0
             y: 0
@@ -144,14 +144,14 @@ ActivityBase {
             }
             showChooser(false);
 
-            var obj = background.mapFromItem(mouseArea, mouseArea.mouseX, mouseArea.mouseY);
+            var obj = activityBackground.mapFromItem(mouseArea, mouseArea.mouseX, mouseArea.mouseY);
 
             if (status === Activity.STATUS_CORRECT)
                 tooltipRect.text = qsTr("This item is well placed.");
             if (status === Activity.STATUS_MISPLACED)
                 tooltipRect.text = qsTr("This item is misplaced.");
-            tooltipRect.x = Core.clamp(obj.x - tooltipRect.width * 0.5, 0, background.width - tooltipRect.width);
-            tooltipRect.y = Core.clamp(obj.y - tooltipRect.height, 0, background.height - tooltipRect.height);
+            tooltipRect.x = Core.clamp(obj.x - tooltipRect.width * 0.5, 0, activityBackground.width - tooltipRect.width);
+            tooltipRect.y = Core.clamp(obj.y - tooltipRect.height, 0, activityBackground.height - tooltipRect.height);
             tooltipRect.opacity = 0.9;
         }
 
@@ -163,12 +163,12 @@ ActivityBase {
                 return;
             }
             var modelObj = guessModel.get(0).guess.get(guessIndex);
-            var absolutePosition = background.mapFromItem(currentRow, item.x, item.y)
+            var absolutePosition = activityBackground.mapFromItem(currentRow, item.x, item.y)
             chooserGrid.colIndex = modelObj.colIndex;
             chooserGrid.guessIndex = guessIndex;
             chooserArrow.x = absolutePosition.x + item.width * 0.5 - chooserArrow.width * 0.5
             chooserArrow.y = absolutePosition.y - chooserArrow.height
-            chooser.x = Core.clamp(chooserArrow.x + chooserArrow.width * 0.5 - chooser.width * 0.5, 0, background.width - chooser.width)
+            chooser.x = Core.clamp(chooserArrow.x + chooserArrow.width * 0.5 - chooser.width * 0.5, 0, activityBackground.width - chooser.width)
             chooser.y = chooserArrow.y + chooserArrow.height * 0.5 - chooser.height
             chooser.visible = true;
             chooserTimer.restart();
@@ -214,9 +214,9 @@ ActivityBase {
                 visible: true
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
-                spacing: background.baseMargins
+                spacing: activityBackground.baseMargins
                 height: Math.min(60 * ApplicationInfo.ratio, currentWrapper.width / (currentRepeater.count + 1) - spacing)
-                width: (height + background.baseMargins) * (currentRepeater.count + 1)
+                width: (height + activityBackground.baseMargins) * (currentRepeater.count + 1)
 
                 Repeater {
                     id: currentRepeater
@@ -299,8 +299,8 @@ ActivityBase {
         Rectangle {
             id: chooser
             z: 100
-            width: chooserGrid.width + background.baseMargins
-            height: chooserGrid.height + background.baseMargins
+            width: chooserGrid.width + activityBackground.baseMargins
+            height: chooserGrid.height + activityBackground.baseMargins
             color: "darkgray"
             border.width: 0
             visible: false
@@ -377,13 +377,13 @@ ActivityBase {
             anchors.right: currentWrapper.right
             anchors.top: parent.top
             anchors.bottom: currentWrapper.top
-            anchors.bottomMargin: background.baseMargins
+            anchors.bottomMargin: activityBackground.baseMargins
             boundsBehavior: Flickable.DragOverBounds
             verticalLayoutDirection: ListView.BottomToTop
 
-            readonly property int guessSize: Math.min(45 * ApplicationInfo.ratio, width * 0.6 / currentRepeater.model.count - background.baseMargins)
+            readonly property int guessSize: Math.min(45 * ApplicationInfo.ratio, width * 0.6 / currentRepeater.model.count - activityBackground.baseMargins)
 
-            spacing: background.baseMargins
+            spacing: activityBackground.baseMargins
 
             displaced: Transition {
                 NumberAnimation { easing.type: Easing.OutCubic; properties: "y"; duration: 300 }
@@ -395,7 +395,7 @@ ActivityBase {
                 id: guessRow
                 width: guessColumn.width
                 height: guessColumn.guessSize
-                spacing: background.baseMargins
+                spacing: activityBackground.baseMargins
                 property int rowIndex: index
                 visible: index != 0
 
@@ -407,7 +407,7 @@ ActivityBase {
 
                 Repeater {
                     id: guessRepeater
-                    width: (guessColumn.guessSize + background.baseMargins) * model.count
+                    width: (guessColumn.guessSize + activityBackground.baseMargins) * model.count
                     model: guess
 
                     delegate: Item { // wrapper needed for singleGuessStatusRect's opacity
@@ -486,14 +486,14 @@ ActivityBase {
 
                 Item {
                     id: guessRowSpacer2
-                    width: background.baseMargins
+                    width: activityBackground.baseMargins
                     height: guessColumn.guessSize
                 }
 
                 Column {
                     id: guessResultColumn
 
-                    width: guessColumn.width - guessRowSpacer.width - guessRepeater.width - background.baseMargins
+                    width: guessColumn.width - guessRowSpacer.width - guessRepeater.width - activityBackground.baseMargins
                     height: guessColumn.guessSize
                     spacing: 2
 

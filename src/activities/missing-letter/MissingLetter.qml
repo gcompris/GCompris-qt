@@ -29,7 +29,7 @@ ActivityBase {
         }
     }
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: Activity.url + "background.svg"
         sourceSize.width: width
         sourceSize.height: height
@@ -54,7 +54,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
@@ -65,7 +65,7 @@ ActivityBase {
             property GCAudio audioVoices: activity.audioVoices
             property alias englishFallbackDialog: englishFallbackDialog
             property alias parser: parser
-            property alias locale: background.locale
+            property alias locale: activityBackground.locale
             property string answer
             property alias textinput: textinput
             property bool isGoodAnswer: false
@@ -94,7 +94,7 @@ ActivityBase {
             // are not available via Keys.onPressed() on linux. Must be
             // disabled on mobile!
             id: textinput
-            anchors.centerIn: background
+            anchors.centerIn: activityBackground
             enabled: !ApplicationInfo.isMobile
             focus: true
             visible: false
@@ -109,7 +109,7 @@ ActivityBase {
                         typedText = text.toLocaleLowerCase()
 
                     if(!items.isGoodAnswer && (typedText === answerText)) {
-                        background.goodAnswer();
+                        activityBackground.goodAnswer();
                     }
                     text = '';
                 }
@@ -123,8 +123,8 @@ ActivityBase {
             anchors.top: score.bottom
             anchors.bottom: bar.top
             anchors.bottomMargin: bar.height * 0.4
-            anchors.left: background.left
-            anchors.right: background.right
+            anchors.left: activityBackground.left
+            anchors.right: activityBackground.right
             anchors.margins: 10 * ApplicationInfo.ratio
         }
 
@@ -159,7 +159,7 @@ ActivityBase {
                     onPressed: {
                         items.buttonsBlocked = true
                         if(!items.isGoodAnswer) {
-                            modelData == items.answer ? background.goodAnswer() : ''
+                            modelData == items.answer ? activityBackground.goodAnswer() : ''
                         }
                     }
                     onIncorrectlyPressed: items.buttonsBlocked = false
@@ -268,15 +268,15 @@ ActivityBase {
             }
             onLoadData: {
                 if(activityData && activityData["locale"]) {
-                    background.locale = Core.resolveLocale(activityData["locale"]);
+                    activityBackground.locale = Core.resolveLocale(activityData["locale"]);
                 }
                 else {
-                    background.locale = Core.resolveLocale(background.locale);
+                    activityBackground.locale = Core.resolveLocale(activityBackground.locale);
                 }
             }
             onStartActivity: {
-                background.stop()
-                background.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 
@@ -324,11 +324,11 @@ ActivityBase {
                          qsTr("GCompris is developed by the KDE community, you can translate GCompris by joining a translation team on <a href=\"%2\">%2</a>").arg("https://l10n.kde.org/") +
                          "<br /> <br />" +
                          qsTr("We switched to English for this activity but you can select another language in the configuration dialog.")
-                onClose: background.englishFallback = false
+                onClose: activityBackground.englishFallback = false
             }
             anchors.fill: parent
             focus: true
-            active: background.englishFallback
+            active: activityBackground.englishFallback
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
 

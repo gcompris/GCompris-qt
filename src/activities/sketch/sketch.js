@@ -73,7 +73,8 @@ function start(items_) {
 }
 
 function stop() {
-    items.canvasArea.width = items.canvasArea.height = 0;
+    items.canvasArea.width = 0;
+    items.canvasArea.height = 0;
 }
 
 function initLevel() {

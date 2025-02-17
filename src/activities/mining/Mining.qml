@@ -21,14 +21,14 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Item {
-        id: background
+        id: activityBackground
         anchors.fill: parent
 
         signal start
         signal stop
 
         property bool gotIt: false
-        property bool horizontalLayout: background.width >= background.height
+        property bool horizontalLayout: activityBackground.width >= activityBackground.height
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -39,7 +39,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias miningBg: miningBg
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
@@ -140,11 +140,11 @@ ActivityBase {
                         onCheckOnScreen: {
                             // Calc if the nugget is visible or not
                             var nuggetCoord1 =
-                                    background.mapFromItem(miningBg,
+                                    activityBackground.mapFromItem(miningBg,
                                                            items.nugget.x + items.nugget.nuggetImg.x,
                                                            items.nugget.y + items.nugget.nuggetImg.y)
                             var nuggetCoord2 =
-                                    background.mapFromItem(miningBg,
+                                    activityBackground.mapFromItem(miningBg,
                                                            items.nugget.x + items.nugget.nuggetImg.x + items.nugget.nuggetImg.width,
                                                            items.nugget.y + items.nugget.nuggetImg.y + items.nugget.nuggetImg.height)
 
@@ -167,12 +167,12 @@ ActivityBase {
                             anchors.verticalCenter: parent.verticalCenter
                             opacity: modelData.isTarget &&
                                      miningBg.scale === miningBg._MAX_SCALE &&
-                                     !background.gotIt ? 1 : 0
+                                     !activityBackground.gotIt ? 1 : 0
 
                             signal hit
                             onHit: {
                                 pickSound.play()
-                                background.gotIt = true
+                                activityBackground.gotIt = true
                                 items.collectedNuggets++
                                 tuto.setState("Unzoom")
                             }
@@ -187,7 +187,7 @@ ActivityBase {
                                 anchors.fill: parent
                                 enabled: modelData.isTarget &&
                                          miningBg.scale === miningBg._MAX_SCALE &&
-                                         background.gotIt === false
+                                         activityBackground.gotIt === false
                                 onClicked: parent.hit()
                             }
 
@@ -203,14 +203,14 @@ ActivityBase {
                             anchors.horizontalCenter: parent.horizontalCenter
                             anchors.verticalCenter: parent.verticalCenter
                             rotation: modelData.rotation
-                            opacity: !modelData.isTarget ? 1 : (background.gotIt ? 0 : 1)
+                            opacity: !modelData.isTarget ? 1 : (activityBackground.gotIt ? 0 : 1)
 
                             Component.onCompleted: {
                                 rainbowSound.play()
                             }
 
                             ParallelAnimation {
-                                running: modelData.isTarget && !background.gotIt
+                                running: modelData.isTarget && !activityBackground.gotIt
                                 loops: Animation.Infinite
                                 SequentialAnimation {
                                     loops: Animation.Infinite
@@ -251,7 +251,7 @@ ActivityBase {
                 }
 
                 function updateScale(zoomDelta: real, x: real, y: real) {
-                    var xx1 = background.mapFromItem(miningBg, x, y)
+                    var xx1 = activityBackground.mapFromItem(miningBg, x, y)
                     var previousScale = miningBg.scale
                     var miningBgScale = miningBg.scale
                     var miningBgHOffset = miningBg.anchors.horizontalCenterOffset
@@ -304,7 +304,7 @@ ActivityBase {
                     }
                     miningBg.scale = miningBgScale
                     if(previousScale != miningBg.scale && miningBg.scale > miningBg._MIN_SCALE) {
-                        var xx2 = background.mapFromItem(miningBg, x, y)
+                        var xx2 = activityBackground.mapFromItem(miningBg, x, y)
                         miningBgHOffset += xx1.x - xx2.x
                         miningBgVOffset += xx1.y - xx2.y
                     } else if(miningBg.scale === miningBg._MIN_SCALE) {
@@ -361,10 +361,10 @@ ActivityBase {
         Image {
             id: carriage
             source: Activity.url + "gold_carriage.svg"
-            sourceSize.height: background.horizontalLayout ? 120 * ApplicationInfo.ratio : 80 * ApplicationInfo.ratio
+            sourceSize.height: activityBackground.horizontalLayout ? 120 * ApplicationInfo.ratio : 80 * ApplicationInfo.ratio
             anchors {
                 right: parent.right
-                bottom: background.horizontalLayout ? parent.bottom : bar.top
+                bottom: activityBackground.horizontalLayout ? parent.bottom : bar.top
             }
 
             GCText {

@@ -21,7 +21,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: Activity.url + "penalty_bg.svg"
         sourceSize.width: parent.width
         fillMode: Image.Stretch
@@ -68,7 +68,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias ball: ball
             property alias progressLeft: progressLeft
@@ -217,8 +217,8 @@ ActivityBase {
                     PropertyChanges {
                         ball {
                             sourceSize.width: 75 * ApplicationInfo.ratio
-                            x: background.width * 0.7
-                            y: background.height * 0.3
+                            x: activityBackground.width * 0.7
+                            y: activityBackground.height * 0.3
                         }
                     }
                 },
@@ -227,8 +227,8 @@ ActivityBase {
                     PropertyChanges {
                         ball {
                             sourceSize.width: 75 * ApplicationInfo.ratio
-                            x: background.width * 0.2
-                            y: background.height * 0.3
+                            x: activityBackground.width * 0.2
+                            y: activityBackground.height * 0.3
                         }
                     }
                 },
@@ -238,7 +238,7 @@ ActivityBase {
                         ball {
                             sourceSize.width: 75 * ApplicationInfo.ratio
                             x: parent.width/2 - width/2;
-                            y: background.height * 0.1
+                            y: activityBackground.height * 0.1
                         }
                     }
                 },

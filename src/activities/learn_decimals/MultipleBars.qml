@@ -23,7 +23,7 @@ GridView {
 
     states: [
         State {
-            when: background.horizontalLayout
+            when: activityBackground.horizontalLayout
             PropertyChanges {
                 multipleBars {
                     cellSize: Math.min(mainRectangle.height / 6, mainRectangle.width / 11)
@@ -38,7 +38,7 @@ GridView {
             }
         },
         State {
-            when: !background.horizontalLayout
+            when: !activityBackground.horizontalLayout
             PropertyChanges {
                 multipleBars {
                     cellSize: Math.min(mainRectangle.width / 6, mainRectangle.height / 11)
@@ -63,7 +63,7 @@ GridView {
                 id: gridLayout
                 rows: 10
                 columns: 10
-                flow: background.horizontalLayout ? Grid.LeftToRight : Grid.TopToBottom
+                flow: activityBackground.horizontalLayout ? Grid.LeftToRight : Grid.TopToBottom
 
                 signal barClicked
                 onBarClicked: {

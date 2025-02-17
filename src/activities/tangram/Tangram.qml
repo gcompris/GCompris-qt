@@ -29,14 +29,14 @@ ActivityBase {
     Keys.onPressed: (event) => { Activity.processPressedKey(event) }
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: activity.resourceUrl + "tangram/background.svg"
         anchors.fill: parent
 
-        property bool horizontalLayout: background.width >= background.height - bar.height * 1.2
+        property bool horizontalLayout: activityBackground.width >= activityBackground.height - bar.height * 1.2
         property int playX: playArea.x
         property int playY: playArea.y
-        property int playWidth: horizontalLayout ? background.height - bar.height * 1.2 : background.width
+        property int playWidth: horizontalLayout ? activityBackground.height - bar.height * 1.2 : activityBackground.width
         property int playHeight: playWidth
         property double playRatio: playWidth / 1000
 
@@ -49,8 +49,8 @@ ActivityBase {
 
         Rectangle {
             id: playArea
-            width: background.playWidth
-            height: background.playHeight
+            width: activityBackground.playWidth
+            height: activityBackground.playHeight
             anchors.verticalCenter: parent.verticalCenter
             anchors.verticalCenterOffset: -bar.height * 0.6
             anchors.horizontalCenter: parent.horizontalCenter
@@ -69,7 +69,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias modelListModel: modelList.model
@@ -103,24 +103,24 @@ ActivityBase {
 
         DropArea {
             id: dropableArea
-            anchors.left: background.left
-            anchors.bottom: background.bottom
-            width: background.width
-            height: background.height
+            anchors.left: activityBackground.left
+            anchors.bottom: activityBackground.bottom
+            width: activityBackground.width
+            height: activityBackground.height
         }
 
         Repeater {
             id: modelList
             model: items.currentTans.pieces
             Item {
-                anchors.fill: background
+                anchors.fill: activityBackground
                 Image {
                     id: tansModel
-                    x: background.playX + background.playWidth * modelData.x - width / 2
-                    y: background.playY + background.playHeight * modelData.y - height / 2
+                    x: activityBackground.playX + activityBackground.playWidth * modelData.x - width / 2
+                    y: activityBackground.playY + activityBackground.playHeight * modelData.y - height / 2
                     source: activity.resourceUrl + "m-" + modelData.img
-                    sourceSize.width: modelData.width * background.playWidth
-                    sourceSize.height: modelData.height * background.playWidth
+                    sourceSize.width: modelData.width * activityBackground.playWidth
+                    sourceSize.height: modelData.height * activityBackground.playWidth
                     z: index
                     rotation: modelData.rotation
                     mirror: modelData.flipping ? true : false
@@ -134,8 +134,8 @@ ActivityBase {
             model: items.currentTans.pieces
             Item {
                 id: tansItem
-                x: background.playX + background.playWidth * xRatio - tans.width / 2
-                y: background.playY + background.playHeight * yRatio - tans.height / 2
+                x: activityBackground.playX + activityBackground.playWidth * xRatio - tans.width / 2
+                y: activityBackground.playY + activityBackground.playHeight * yRatio - tans.height / 2
                 width: tans.width
                 height: tans.height
 
@@ -161,24 +161,24 @@ ActivityBase {
 
                 function positionToTans() {
                     return [
-                    (x + width / 2 - background.playX) / background.playWidth,
-                    (y + height / 2 - background.playY) / background.playHeight
+                    (x + width / 2 - activityBackground.playX) / activityBackground.playWidth,
+                    (y + height / 2 - activityBackground.playY) / activityBackground.playHeight
                     ]
                 }
 
                 // After a drag the [x, y] positions are addressed directly breaking our
                 // binding. Call me to reset the binding.
                 function restoreBindings() {
-                    x = Qt.binding(function() { return background.playX + background.playWidth * xRatio - width / 2})
-                    y = Qt.binding(function() { return background.playY + background.playHeight * yRatio - height / 2 })
+                    x = Qt.binding(function() { return activityBackground.playX + activityBackground.playWidth * xRatio - width / 2})
+                    y = Qt.binding(function() { return activityBackground.playY + activityBackground.playHeight * yRatio - height / 2 })
                 }
 
                 Image {
                     id: tans
                     mirror: !items.editionMode ? modelData.initFlipping : modelData.flipping
                     source: activity.resourceUrl + modelData.img
-                    sourceSize.width: modelData.width * background.playWidth
-                    sourceSize.height: modelData.height * background.playWidth
+                    sourceSize.width: modelData.width * activityBackground.playWidth
+                    sourceSize.height: modelData.height * activityBackground.playWidth
                 }
                 // Manage to return a base rotation as it was provided in the model
                 function rotationToTans() {
@@ -205,7 +205,7 @@ ActivityBase {
                 function flipMe() {
                     if(flippable)
                         mirror = !mirror
-                    background.checkWin()
+                    activityBackground.checkWin()
                 }
 
                 Drag.active: dragArea.drag.active
@@ -222,7 +222,7 @@ ActivityBase {
                         items.selectedItem.selected = false
                         items.selectedItem = tansItem
                         tansItem.selected = true
-                        background.checkWin()
+                        activityBackground.checkWin()
                     }
                     onDoubleClicked: {
                         flipMe()
@@ -239,7 +239,7 @@ ActivityBase {
                             tansItem.yRatio = posTans[1]
                         }
                         tansItem.restoreBindings()
-                        background.checkWin()
+                        activityBackground.checkWin()
                     }
                 }
 

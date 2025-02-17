@@ -278,8 +278,8 @@ function disableNonDraggablediscs()
 
 function checkIfDiscOnTowerImage(disc, towerImage)
 {
-    var discPosition = items.background.mapFromItem(disc, 0, 0)
-    var towerPosition = items.background.mapFromItem(towerImage, 0, 0)
+    var discPosition = items.activityBackground.mapFromItem(disc, 0, 0)
+    var towerPosition = items.activityBackground.mapFromItem(towerImage, 0, 0)
     return ((discPosition.x + disc.width / 2) > towerPosition.x &&
             (discPosition.x + disc.width / 2) < towerPosition.x + towerImage.width)
 }

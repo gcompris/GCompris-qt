@@ -22,7 +22,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Rectangle {
-        id: background
+        id: activityBackground
         color: "#64B560"
 
         signal start
@@ -40,13 +40,13 @@ ActivityBase {
             property Item main: activity.main
             property alias goodAnswerSound: goodAnswerSound
             property alias carSound: carSound
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
             property alias jamBox: jamBox
             property alias jamGridContainer: jamGridContainer
-            property bool isVertical: background.width < background.height - 64 * ApplicationInfo.ratio
+            property bool isVertical: activityBackground.width < activityBackground.height - 64 * ApplicationInfo.ratio
         }
 
         onStart: { Activity.start(items, mode) }
@@ -71,7 +71,7 @@ ActivityBase {
         }
         Rectangle {
             color: "#9EC282"
-            width: background.width * 0.5
+            width: activityBackground.width * 0.5
             height: jamBox.height * 0.2
             anchors.left: jamBox.horizontalCenter
             anchors.verticalCenter: outsideRoad.verticalCenter
@@ -79,7 +79,7 @@ ActivityBase {
         Rectangle {
             id: outsideRoad
             color: "#444444"
-            width: background.width * 0.5
+            width: activityBackground.width * 0.5
             height: jamBox.height * 0.125
             anchors.left: jamBox.horizontalCenter
             anchors.bottom: jamBox.verticalCenter
@@ -92,7 +92,7 @@ ActivityBase {
             height: width
             sourceSize.width: width
             sourceSize.height: height
-            anchors.horizontalCenter: background.horizontalCenter
+            anchors.horizontalCenter: activityBackground.horizontalCenter
             states: [
                 State {
                     name: "verticalLayout"
@@ -105,7 +105,7 @@ ActivityBase {
                     AnchorChanges {
                         target: jamBox
                         anchors.top: undefined
-                        anchors.verticalCenter: background.verticalCenter
+                        anchors.verticalCenter: activityBackground.verticalCenter
                     }
                 },
                 State {
@@ -130,7 +130,7 @@ ActivityBase {
                 width: parent.width * 0.75
                 height: width
                 // Add an alias to mode so it can be used on Car items
-                property alias mode: background.mode
+                property alias mode: activityBackground.mode
 
                 Grid {
                     id: jamGrid
@@ -172,7 +172,7 @@ ActivityBase {
             }
             onLoadData: {
                 if(activityData && activityData["mode"]) {
-                   background.mode = activityData["mode"];
+                   activityBackground.mode = activityData["mode"];
                 }
             }
         }

@@ -20,8 +20,8 @@ Item {
     property var life: life
     property var bar: bar
 
-    width: background.width
-    height: background.height / 3
+    width: activityBackground.width
+    height: activityBackground.height / 3
     anchors.right: parent.right
     anchors.bottom: parent.bottom
 
@@ -115,8 +115,8 @@ Item {
               value: (useMultipleDataset) ? (help | home | level | activityConfig) : (help | home | level)
         }
         onHelpClicked: displayDialog(dialogHelp)
-        onPreviousLevelClicked: background.previousLevel()
-        onNextLevelClicked: background.nextLevel()
+        onPreviousLevelClicked: activityBackground.previousLevel()
+        onNextLevelClicked: activityBackground.nextLevel()
         onHomeClicked: activity.home()
         onActivityConfigClicked: displayDialog(dialogActivityConfig)
     }

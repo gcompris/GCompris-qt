@@ -21,7 +21,7 @@ ActivityBase {
     onStart: focus = true
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: items.backgroundImg
         sourceSize.width: width
         sourceSize.height: height
@@ -162,7 +162,7 @@ ActivityBase {
 
         QtObject {
             id: items
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias paintModel: paintModel
             property alias colorSelector: colorSelector
@@ -174,7 +174,7 @@ ActivityBase {
             property bool keyboardControls: false
         }
 
-        onStart: Activity.start(items, background);
+        onStart: Activity.start(items, activityBackground);
         onStop: Activity.stop();
 
         MultiPointTouchArea {
@@ -225,8 +225,8 @@ ActivityBase {
             spacing: 2
 
             anchors {
-                left: background.left
-                top: background.top
+                left: activityBackground.left
+                top: activityBackground.top
                 bottom: bar.top
             }
 

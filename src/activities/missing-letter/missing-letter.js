@@ -62,12 +62,12 @@ function start() {
     // If still dataset is empty then fallback to english
     if(!dataset) {
         // English fallback
-        items.background.englishFallback = true
+        items.activityBackground.englishFallback = true
         dataset = Lang.load(items.parser, langUrl,
                             GCompris.ApplicationSettings.useExternalWordset() ? "words.json" : "words_sample.json",
                             "content-en.json")
     } else {
-        items.background.englishFallback = false
+        items.activityBackground.englishFallback = false
     }
 
     lessons = Lang.getAllLessons(dataset)

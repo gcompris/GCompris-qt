@@ -48,7 +48,7 @@ function start(items_) {
 
     var data = Lang.loadDataset(items.parser, resourceUrl, locale);
     dataset = data["dataset"];
-    items.background.englishFallback = data["englishFallback"];
+    items.activityBackground.englishFallback = data["englishFallback"];
     lessons = Lang.getAllLessons(dataset);
     numberOfLevel = lessons.length;
     items.currentLevel = Core.getInitialLevel(numberOfLevel);

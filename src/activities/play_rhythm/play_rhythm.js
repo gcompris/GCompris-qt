@@ -90,7 +90,7 @@ function initSubLevel() {
     currentNote = 0
     var currentSubLevelMelody = levels[items.currentLevel].melodies[items.score.currentSubLevel]
     items.multipleStaff.loadFromData(currentSubLevelMelody)
-    items.background.isRhythmPlaying = true
+    items.activityBackground.isRhythmPlaying = true
     items.isWrongRhythm = false
 
     if(!isIntroductoryAudioPlaying && !items.iAmReady.visible)

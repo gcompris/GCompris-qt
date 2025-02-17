@@ -14,7 +14,7 @@ import GCompris 1.0
 
 Image {
     id: cloud
-    property Item background
+    property Item cloudBackground
     property alias text: number.text
     property double heightRatio: 1
 
@@ -53,7 +53,7 @@ Image {
 
     Component.onCompleted: {
         x = -cloud.width - 1
-        y = Activity.getRandomInt(0, background.height - (cloud.height + Activity.items.bar.height))
+        y = Activity.getRandomInt(0, cloudBackground.height - (cloud.height + Activity.items.bar.height))
     }
 
     Behavior on x { PropertyAnimation { duration: 20000 } }

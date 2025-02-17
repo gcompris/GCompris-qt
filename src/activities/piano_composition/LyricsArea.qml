@@ -25,7 +25,7 @@ Rectangle {
     radius: 5
     border.color: "black"
     opacity: 0.8
-    visible: background.isLyricsMode
+    visible: activityBackground.isLyricsMode
     Item {
         id: melodyTitle
         width: parent.width

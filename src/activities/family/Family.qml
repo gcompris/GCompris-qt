@@ -23,13 +23,13 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: Activity.url + "background.svg"
         width: parent.width
         height: parent.height
         fillMode: Image.PreserveAspectCrop
-        property bool horizontalLayout: background.width >= background.height
+        property bool horizontalLayout: activityBackground.width >= activityBackground.height
 
         signal start
         signal stop
@@ -39,8 +39,8 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
-        property real treeAreaWidth: background.horizontalLayout ? background.width * 0.65 : background.width
-        property real treeAreaHeight: background.horizontalLayout ? background.height : background.height * 0.65
+        property real treeAreaWidth: activityBackground.horizontalLayout ? activityBackground.width * 0.65 : activityBackground.width
+        property real treeAreaHeight: activityBackground.horizontalLayout ? activityBackground.height : activityBackground.height * 0.65
 
         property real nodeWidth: (0.8 * treeAreaWidth) / 5
         property real nodeHeight: (0.8 * treeAreaWidth) / 5
@@ -69,7 +69,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias nodeRepeater: nodeRepeater
@@ -150,13 +150,13 @@ ActivityBase {
 
         Item {
             id: board
-            width: background.width
-            height: background.height
+            width: activityBackground.width
+            height: activityBackground.height
             Rectangle {
                 id: treeArea
                 color: "transparent"
-                width: background.treeAreaWidth
-                height: background.treeAreaHeight
+                width: activityBackground.treeAreaWidth
+                height: activityBackground.treeAreaHeight
                 anchors.horizontalCenter: activity.mode == "find_relative" ? board.horizontalCenter : undefined
                 anchors.verticalCenter: activity.mode == "find_relative" ? board.verticalCenter : undefined
                 border.width: 0
@@ -297,10 +297,10 @@ ActivityBase {
             Rectangle {
                 id: answers
                 color: "transparent"
-                width: background.horizontalLayout ? background.width*0.35 : background.width
-                height: background.horizontalLayout ? background.height : background.height*0.35
-                anchors.left: background.horizontalLayout ? treeArea.right : board.left
-                anchors.top: background.horizontalLayout ? board.top: treeArea.bottom
+                width: activityBackground.horizontalLayout ? activityBackground.width*0.35 : activityBackground.width
+                height: activityBackground.horizontalLayout ? activityBackground.height : activityBackground.height*0.35
+                anchors.left: activityBackground.horizontalLayout ? treeArea.right : board.left
+                anchors.top: activityBackground.horizontalLayout ? board.top: treeArea.bottom
                 border.width: 0
                 Rectangle {
                     width: parent.width * 0.99
@@ -316,7 +316,7 @@ ActivityBase {
                         rowSpacing: 10*ApplicationInfo.ratio
                         states: [
                             State {
-                                name: "anchorCenter"; when: background.horizontalLayout
+                                name: "anchorCenter"; when: activityBackground.horizontalLayout
                                 AnchorChanges {
                                     target: answersGrid
                                     anchors.verticalCenter: parent.verticalCenter
@@ -324,7 +324,7 @@ ActivityBase {
                                 }
                             },
                             State {
-                                name: "anchorTop"; when: !background.horizontalLayout
+                                name: "anchorTop"; when: !activityBackground.horizontalLayout
                                 AnchorChanges {
                                     target: answersGrid
                                     anchors.top: parent.top
@@ -357,8 +357,8 @@ ActivityBase {
             id: question
             property string questionTopic
             visible: activity.mode == "find_relative" ? true : false
-            width: background.width
-            anchors.horizontalCenter: background.horizontalCenter
+            width: activityBackground.width
+            anchors.horizontalCenter: activityBackground.horizontalCenter
             horizontalAlignment: Text.AlignHCenter
             wrapMode: Text.WordWrap
             fontSize: smallSize

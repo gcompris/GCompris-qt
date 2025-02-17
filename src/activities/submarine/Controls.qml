@@ -58,11 +58,11 @@ Item {
     Image {
         id: controlBackground
         source: url + "board.svg"
-        width: background.width
-        height: background.height * 0.40
+        width: activityBackground.width
+        height: activityBackground.height * 0.40
         sourceSize.width: controlBackground.width
         sourceSize.height: controlBackground.height
-        y: background.height - controlBackground.height
+        y: activityBackground.height - controlBackground.height
     }
 
     Item {

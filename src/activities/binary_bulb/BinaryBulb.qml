@@ -23,7 +23,7 @@ ActivityBase {
     property var dataset: Dataset.get()
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: "../digital_electricity/resource/texture01.webp"
         fillMode: Image.Tile
@@ -39,7 +39,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias bulbs: bulbs
@@ -121,7 +121,7 @@ ActivityBase {
                 horizontalCenter: parent.horizontalCenter
                 bottomMargin: 10
             }
-            height: background.height / 6
+            height: activityBackground.height / 6
             width: parent.width - 20 * ApplicationInfo.ratio
         }
 
@@ -148,8 +148,8 @@ ActivityBase {
                 id: bulbs
                 model: items.numberOfBulbs
                 LightBulb {
-                    height: background.height / 5
-                    width: (background.width >= background.height) ? (background.width / 20) : ((background.width - (16 * bulbsRow.spacing)) / 8)
+                    height: activityBackground.height / 5
+                    width: (activityBackground.width >= activityBackground.height) ? (activityBackground.width / 20) : ((activityBackground.width - (16 * bulbsRow.spacing)) / 8)
                     valueVisible: dataset[items.currentLevel].bulbValueVisible
                 }
             }

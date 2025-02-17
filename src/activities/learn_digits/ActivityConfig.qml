@@ -14,7 +14,7 @@ import "../../core"
 
 Item {
     id: activityConfiguration
-    property Item background
+    property Item activityBackground
     property alias modeBox: modeBox
     property alias enableVoicesBox: enableVoicesBox
     property bool voicesEnabled: enableVoicesBox.checked
@@ -31,7 +31,7 @@ Item {
         GCComboBox {
             id: modeBox
             model: availableModes
-            background: activityConfiguration.background
+            activityBackground: activityConfiguration.activityBackground
             label: qsTr("Digits representation")
         }
         GCDialogCheckBox {

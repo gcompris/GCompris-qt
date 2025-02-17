@@ -25,7 +25,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         fillMode: Image.PreserveAspectCrop
         sourceSize.width: width
@@ -46,7 +46,7 @@ ActivityBase {
             property Item main: activity.main
             readonly property string resourceUrl: activity.resourceUrl
             readonly property var levels: activity.datasets
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias originListModel: originListModel
             property alias targetListModel: targetListModel
             property int currentLevel: activity.currentLevel
@@ -106,7 +106,7 @@ ActivityBase {
             height: (layoutArea.height - 10 * ApplicationInfo.ratio) / 2
             mode: activity.mode
             placeholderName: "target"
-            highestParent: background
+            highestParent: activityBackground
 
             placeholderListModel: targetListModel
 
@@ -122,7 +122,7 @@ ActivityBase {
             height: targetPlaceholder.height
             mode: activity.mode
             placeholderName: "origin"
-            highestParent: background
+            highestParent: activityBackground
 
             placeholderListModel: originListModel
 
@@ -139,13 +139,13 @@ ActivityBase {
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
                 // restart activity on saving
-                background.start()
+                activityBackground.start()
             }
             onClose: {
                 home()
             }
             onStartActivity: {
-                background.start()
+                activityBackground.start()
             }
         }
 

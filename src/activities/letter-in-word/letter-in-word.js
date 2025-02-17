@@ -48,8 +48,8 @@ function loadDataset() {
     var resourceUrl = "qrc:/gcompris/src/activities/lang/resource/";
     var data = Lang.loadDataset(items.parser, resourceUrl, locale);
     dataset = data["dataset"];
-    items.background.englishFallback = data["englishFallback"];
-    if(!items.background.englishFallback)
+    items.activityBackground.englishFallback = data["englishFallback"];
+    if(!items.activityBackground.englishFallback)
         Core.checkForVoices(items.activityPage);
 }
 

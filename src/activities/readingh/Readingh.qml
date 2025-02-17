@@ -27,7 +27,7 @@ ActivityBase {
     property string mode: "readingh"
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: Activity.url + "reading-bg.svg"
         signal start
@@ -45,19 +45,19 @@ ActivityBase {
         property string locale: "system"
 
         property int baseMargins: 10 * ApplicationInfo.ratio
-        property bool isHorizontalLayout: background.width >= background.height
+        property bool isHorizontalLayout: activityBackground.width >= activityBackground.height
 
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias wordlist: wordlist
             property alias score: score
             property alias wordDropTimer: wordDropTimer
-            property alias locale: background.locale
+            property alias locale: activityBackground.locale
             property alias iAmReady: iAmReady
             property alias answerButtonFound: answerButtonFound
             property alias answerButtonNotFound: answerButtonNotFound
@@ -84,18 +84,18 @@ ActivityBase {
             }
             onLoadData: {
                 if(activityData && activityData["locale"]) {
-                    background.locale = Core.resolveLocale(activityData["locale"]);
+                    activityBackground.locale = Core.resolveLocale(activityData["locale"]);
                 }
                 else {
-                    background.locale = Core.resolveLocale(background.locale);
+                    activityBackground.locale = Core.resolveLocale(activityBackground.locale);
                 }
                 if(activityData && activityData["speedSetting"]) {
                     activity.speedSetting = activityData["speedSetting"];
                 }
             }
             onStartActivity: {
-                background.stop()
-                background.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 
@@ -128,20 +128,20 @@ ActivityBase {
 
         Item {
             id: mainArea
-            anchors.fill: background
+            anchors.fill: activityBackground
             anchors.bottomMargin: bar.height * 1.2
-            anchors.topMargin: background.baseMargins
-            anchors.leftMargin: background.baseMargins
-            anchors.rightMargin: background.baseMargins
+            anchors.topMargin: activityBackground.baseMargins
+            anchors.leftMargin: activityBackground.baseMargins
+            anchors.rightMargin: activityBackground.baseMargins
         }
 
         states: [
             State {
                 id: horizontalLayout
-                when: background.isHorizontalLayout
+                when: activityBackground.isHorizontalLayout
                 PropertyChanges {
                     wordDisplayListBg {
-                        anchors.margins: background.baseMargins
+                        anchors.margins: activityBackground.baseMargins
                         width: 0.45 * mainArea.width
                     }
                 }
@@ -152,7 +152,7 @@ ActivityBase {
                 }
                 PropertyChanges {
                     wordToFindBoxBg {
-                        anchors.margins: background.baseMargins
+                        anchors.margins: activityBackground.baseMargins
                         width: mainArea.width * 0.45
                         height: mainArea.height * 0.3
                     }
@@ -171,17 +171,17 @@ ActivityBase {
                     target: buttonsArea
                     anchors.top: wordToFindBoxBg.bottom
                     anchors.left: wordDisplayListBg.right
-                    anchors.right: background.right
+                    anchors.right: activityBackground.right
                     anchors.bottom: score.top
                     anchors.verticalCenter: undefined
                 }
             },
             State {
                 id: verticalLayout
-                when: !background.isHorizontalLayout
+                when: !activityBackground.isHorizontalLayout
                 PropertyChanges {
                     wordDisplayListBg {
-                        anchors.margins: background.baseMargins
+                        anchors.margins: activityBackground.baseMargins
                     }
                 }
                 AnchorChanges {
@@ -194,7 +194,7 @@ ActivityBase {
                 PropertyChanges {
                     wordToFindBoxBg {
                         anchors.margins: 0
-                        width: mainArea.width - 4 * background.baseMargins
+                        width: mainArea.width - 4 * activityBackground.baseMargins
                         height: mainArea.height * 0.2
                     }
                 }
@@ -233,7 +233,7 @@ ActivityBase {
             color: "#F2F2F2"
             anchors.top: mainArea.top
             anchors.left: mainArea.left
-            anchors.margins: background.baseMargins
+            anchors.margins: activityBackground.baseMargins
             width: 0.45 * mainArea.width
             height: mainArea.height
         }
@@ -242,7 +242,7 @@ ActivityBase {
             id: wordDisplayList
             spacing: 20
             anchors.fill: wordDisplayListBg
-            anchors.margins: background.baseMargins
+            anchors.margins: activityBackground.baseMargins
             flow: mode == "readingh" ? Flow.LeftToRight : Flow.TopToBottom
             layoutDirection: Core.isLeftToRightLocale(locale) ? Qt.LeftToRight : Qt.RightToLeft
 
@@ -281,25 +281,25 @@ ActivityBase {
             height: wordToFindBoxBg.height
             x: wordToFindBoxBg.x + 2 * ApplicationInfo.ratio
             y: wordToFindBoxBg.y + 2 * ApplicationInfo.ratio
-            radius: background.baseMargins
+            radius: activityBackground.baseMargins
         }
         Rectangle {
             id: wordToFindBoxBg
             color: "#E8E8E8"
             anchors.horizontalCenter: buttonsArea.horizontalCenter
             anchors.top: mainArea.top
-            anchors.margins: background.baseMargins
+            anchors.margins: activityBackground.baseMargins
             width: mainArea.width * 0.45
             height: mainArea.height * 0.3
-            radius: background.baseMargins
+            radius: activityBackground.baseMargins
         }
         Rectangle {
             color: "transparent"
             anchors.fill: wordToFindBoxBg
-            anchors.margins: background.baseMargins
+            anchors.margins: activityBackground.baseMargins
             border.width: 2 * ApplicationInfo.ratio
             border.color: "#87A6DD"
-            radius: background.baseMargins
+            radius: activityBackground.baseMargins
         }
 
         GCText {
@@ -308,10 +308,10 @@ ActivityBase {
             color: "#373737"
             horizontalAlignment: Text.AlignHCenter
             anchors.fill: wordToFindBoxBg
-            anchors.topMargin: 1.2 * background.baseMargins
-            anchors.bottomMargin: 1.2 * background.baseMargins
-            anchors.leftMargin: 2 * background.baseMargins
-            anchors.rightMargin: 2 * background.baseMargins
+            anchors.topMargin: 1.2 * activityBackground.baseMargins
+            anchors.bottomMargin: 1.2 * activityBackground.baseMargins
+            anchors.leftMargin: 2 * activityBackground.baseMargins
+            anchors.rightMargin: 2 * activityBackground.baseMargins
             fontSizeMode: Text.Fit
         }
 
@@ -319,14 +319,14 @@ ActivityBase {
             id: score
             anchors.right: mainArea.right
             anchors.bottom: mainArea.bottom
-            anchors.margins: background.baseMargins
+            anchors.margins: activityBackground.baseMargins
         }
 
         Item {
             id: buttonsArea
             anchors.top: wordToFindBoxBg.bottom
             anchors.left: wordDisplayListBg.right
-            anchors.right: background.right
+            anchors.right: activityBackground.right
             anchors.bottom: score.top
             anchors.margins: 10 * ApplicationInfo.ratio
         }
@@ -340,10 +340,10 @@ ActivityBase {
 
         Rectangle {
             color: "#313131"
-            width: answerButtonsFlow.width + background.baseMargins * 2
-            height: answerButtonsFlow.height + background.baseMargins * 2
+            width: answerButtonsFlow.width + activityBackground.baseMargins * 2
+            height: answerButtonsFlow.height + activityBackground.baseMargins * 2
             anchors.centerIn: answerButtonsFlow
-            visible: !background.isHorizontalLayout && answerButtonsFlow.visible
+            visible: !activityBackground.isHorizontalLayout && answerButtonsFlow.visible
         }
 
         GCSoundEffect {

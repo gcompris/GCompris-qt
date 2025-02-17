@@ -24,7 +24,7 @@ ActivityBase {
     property bool symmetry: false
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: Activity.url + "background.svg"
         fillMode: Image.PreserveAspectCrop
@@ -48,7 +48,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property int colorSelector: 0
@@ -107,13 +107,13 @@ ActivityBase {
             id: colorSelectorFlick
             interactive: true
             width: Math.ceil(Math.min(height / 7, 60 * ApplicationInfo.ratio))
-            height: Math.ceil(background.height - bar.height * 1.5)
+            height: Math.ceil(activityBackground.height - bar.height * 1.5)
             boundsBehavior: Flickable.StopAtBounds
             maximumFlickVelocity: activity.height
             contentHeight: items.numberOfColor * width
             anchors.top: parent.top
             anchors.left: parent.left
-            anchors.margins: background.baseMargins
+            anchors.margins: activityBackground.baseMargins
             Column {
                 id: colorSelector
                 Repeater {
@@ -203,18 +203,18 @@ ActivityBase {
 
         Item {
             id: gridsArea
-            width: Math.floor(parent.width - colorSelector.width - background.baseMargins * 3)
+            width: Math.floor(parent.width - colorSelector.width - activityBackground.baseMargins * 3)
             height: colorSelectorFlick.height
             anchors.top: colorSelectorFlick.top
             anchors.left: colorSelectorFlick.right
-            anchors.leftMargin: background.baseMargins
+            anchors.leftMargin: activityBackground.baseMargins
         }
 
         // The drawing area
         Grid {
             id: drawingArea
-            width: Math.ceil(background.landscape ? (gridsArea.width - background.baseMargins) * 0.5 : gridsArea.width)
-            height: Math.ceil(background.landscape ? gridsArea.height : (gridsArea.height- background.baseMargins) * 0.5)
+            width: Math.ceil(activityBackground.landscape ? (gridsArea.width - activityBackground.baseMargins) * 0.5 : gridsArea.width)
+            height: Math.ceil(activityBackground.landscape ? gridsArea.height : (gridsArea.height- activityBackground.baseMargins) * 0.5)
             columns: items.numberOfColumn
             anchors.top: gridsArea.top
             anchors.left: gridsArea.left
@@ -272,8 +272,8 @@ ActivityBase {
 
                 Item {
                     id: userItem
-                    width: background.cellSize
-                    height: background.cellSize
+                    width: activityBackground.cellSize
+                    height: activityBackground.cellSize
                     property color color: Activity.colors[colorIndex]
                     property int colorIndex
 
@@ -357,7 +357,7 @@ ActivityBase {
             states: [
                 State {
                     name: "horizontalLayout"
-                    when: background.landscape
+                    when: activityBackground.landscape
                     AnchorChanges {
                         target: imageArea
                         anchors.top: gridsArea.top
@@ -368,7 +368,7 @@ ActivityBase {
                 },
                 State {
                     name: "verticalLayout"
-                    when: !background.landscape
+                    when: !activityBackground.landscape
                     AnchorChanges {
                         target: imageArea
                         anchors.top: undefined
@@ -382,8 +382,8 @@ ActivityBase {
                 id: targetModel
                 model: items.targetModelData
                 Item {
-                    width: background.cellSize
-                    height: background.cellSize
+                    width: activityBackground.cellSize
+                    height: activityBackground.cellSize
                     property alias color: targetRect.color
 
                     Rectangle {
@@ -427,7 +427,7 @@ ActivityBase {
 
         Rectangle {
             id: selectedRectHint
-            width: background.cellSize * 0.3
+            width: activityBackground.cellSize * 0.3
             height: width
             radius: width * 0.5
             color: Activity.colors[items.colorSelector]
@@ -439,8 +439,8 @@ ActivityBase {
             id: touchArea
             x: drawingArea.x
             y: drawingArea.y
-            width: background.cellSize * items.numberOfColumn
-            height: background.cellSize * items.numberOfLine
+            width: activityBackground.cellSize * items.numberOfColumn
+            height: activityBackground.cellSize * items.numberOfLine
             onPressed: (touchPoints) => checkTouchPoint(touchPoints)
             onTouchUpdated: (touchPoints) => checkTouchPoint(touchPoints)
             enabled: !items.buttonsBlocked
@@ -497,8 +497,8 @@ ActivityBase {
                 home()
             }
             onStartActivity: {
-                background.stop()
-                background.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 

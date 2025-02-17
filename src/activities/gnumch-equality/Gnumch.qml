@@ -26,7 +26,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
         property bool withMonsters: false
@@ -180,8 +180,8 @@ ActivityBase {
         Item {
             id: gridPart
 
-            width: background.width
-            height: background.height / 7 * 6
+            width: activityBackground.width
+            height: activityBackground.height / 7 * 6
             anchors.right: parent.right
             anchors.top: parent.top
             anchors.bottom: topPanel.top
@@ -223,7 +223,7 @@ ActivityBase {
                         else if(moveX < -10 * ApplicationInfo.ratio)
                             muncher.moveTo(muncher.moveLeft)
                         else
-                            background.checkAnswer()
+                            activityBackground.checkAnswer()
                     } else if(Math.abs(moveY) * ApplicationInfo.ratio > 10 &&
                               Math.abs(moveX) < Math.abs(moveY)) {
                         if(moveY > 10 * ApplicationInfo.ratio)
@@ -231,7 +231,7 @@ ActivityBase {
                         else if(moveY < -10 * ApplicationInfo.ratio)
                             muncher.moveTo(muncher.moveUp)
                         else
-                            background.checkAnswer()
+                            activityBackground.checkAnswer()
                     } else {
                         // No move, just a tap or mouse click
                         if(point1.x > muncher.x + muncher.width)
@@ -243,7 +243,7 @@ ActivityBase {
                         else if(point1.y > muncher.y + muncher.height)
                             muncher.moveTo(muncher.moveDown)
                         else
-                            background.checkAnswer()
+                            activityBackground.checkAnswer()
                     }
                     started = false
                 }
@@ -421,8 +421,8 @@ ActivityBase {
             }
 
             onStartActivity: {
-                background.stop()
-                background.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 

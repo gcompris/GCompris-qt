@@ -104,7 +104,7 @@ Item {
         GCComboBox {
             id: languageBox
             model: dialogConfig.languages
-            background: dialogActivityConfig
+            activityBackground: dialogActivityConfig
             onCurrentIndexChanged: voicesRow.localeChanged();
             label: qsTr("Language selector")
         }
@@ -369,7 +369,7 @@ Item {
         GCComboBox {
             id: fontBox
             model: fonts
-            background: dialogActivityConfig
+            activityBackground: dialogActivityConfig
             label: qsTr("Font selector")
         }
 
@@ -402,7 +402,7 @@ Item {
         GCComboBox {
             id: fontCapitalizationBox
             model: fontCapitalizationModel
-            background: dialogActivityConfig
+            activityBackground: dialogActivityConfig
             label: qsTr("Font Capitalization")
         }
 

@@ -15,7 +15,7 @@ import "guesscount.js" as Activity
 
 Row {
     id: operationRow
-    spacing: background.baseMargins
+    spacing: activityBackground.baseMargins
     property alias endResult: endResult
     property int rowResult
     property int noOfRows
@@ -25,7 +25,7 @@ Row {
     property bool reparent
     property var prevText: ""
     property string text: endResult.text
-    readonly property double tileWidth: Math.min(70 * ApplicationInfo.ratio, width * 0.2 - background.baseMargins)
+    readonly property double tileWidth: Math.min(70 * ApplicationInfo.ratio, width * 0.2 - activityBackground.baseMargins)
 
     function checkAnswer(firstNumber) {
         Activity.calculate(firstNumber, operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operationRow)
@@ -61,15 +61,15 @@ Row {
             height: operationRow.height
             color: "#E8E8E8"
             border.color: "orange"   //orange
-            border.width: background.tileBorder
-            radius: background.tileRadius
+            border.width: activityBackground.tileBorder
+            radius: activityBackground.tileRadius
             property alias droppedItem: tile
             property int count: operationRow.prevComplete ? 1 : 0
             GCText {
                 id: tile
                 property int datavalue: Number(tile.text)
                 anchors.fill: parent
-                anchors.margins: 2 * background.tileBorder
+                anchors.margins: 2 * activityBackground.tileBorder
                 verticalAlignment: Text.AlignVCenter
                 horizontalAlignment: Text.AlignHCenter
                 fontSize: mediumSize
@@ -118,16 +118,16 @@ Row {
         height: operationRow.height
         Rectangle {
             width: parent.width
-            height: parent.height - background.baseMargins
+            height: parent.height - activityBackground.baseMargins
             anchors.centerIn: parent
-            radius: background.tileRadius
+            radius: activityBackground.tileRadius
             color: "#E8E8E8"
             border.color: "#1B8BD2"  //blue
-            border.width: background.tileBorder
+            border.width: activityBackground.tileBorder
         }
         GCText {
             anchors.fill: parent
-            anchors.margins: 2 * background.tileBorder
+            anchors.margins: 2 * activityBackground.tileBorder
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
             fontSize: mediumSize
@@ -141,12 +141,12 @@ Row {
         height: operationRow.height
         color: "#E8E8E8"
         border.color: "orange"   //orange
-        border.width: background.tileBorder
-        radius: background.tileRadius
+        border.width: activityBackground.tileBorder
+        radius: activityBackground.tileRadius
         GCText {
             id: endResult
             anchors.fill: parent
-            anchors.margins: 2 * background.tileBorder
+            anchors.margins: 2 * activityBackground.tileBorder
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
             fontSize: mediumSize

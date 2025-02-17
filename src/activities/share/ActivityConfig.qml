@@ -12,7 +12,7 @@ import "../../core"
 
 Item {
     id: activityConfiguration
-    property Item background
+    property Item activityBackground
     property bool easyMode: true
     width: flick.width
     height: childrenRect.height

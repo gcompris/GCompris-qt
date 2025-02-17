@@ -37,7 +37,7 @@ ActivityBase {
     property bool keyboardNavigationVisible: false
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: "qrc:/gcompris/src/activities/programmingMaze/resource/background-pm.svg"
         fillMode: Image.PreserveAspectCrop
         sourceSize.width: width
@@ -48,8 +48,8 @@ ActivityBase {
 
         property bool insertIntoMain: true
         property alias items: items
-        property int buttonWidth: background.width / 10
-        property int buttonHeight: background.height / 15.3
+        property int buttonWidth: activityBackground.width / 10
+        property int buttonHeight: activityBackground.height / 15.3
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -60,7 +60,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias brickSound: brickSound
@@ -120,9 +120,9 @@ ActivityBase {
                 areaWithKeyboardInput.moveCurrentIndexLeft()
             if(event.key === Qt.Key_Right)
                 areaWithKeyboardInput.moveCurrentIndexRight()
-            if(event.key === Qt.Key_Up && items.currentLevelContainsLoop && !background.insertIntoMain)
+            if(event.key === Qt.Key_Up && items.currentLevelContainsLoop && !activityBackground.insertIntoMain)
                 increaseButton.increaseClicked()
-            if(event.key === Qt.Key_Down && items.currentLevelContainsLoop && !background.insertIntoMain)
+            if(event.key === Qt.Key_Down && items.currentLevelContainsLoop && !activityBackground.insertIntoMain)
                 decreaseButton.decreaseClicked()
             if(event.key === Qt.Key_Space)
                 areaWithKeyboardInput.spaceKeyPressed()
@@ -220,22 +220,22 @@ ActivityBase {
             Image {
                 x: modelData.x * width
                 y: modelData.y * height
-                width: background.width / 10
-                height: (background.height - background.height / 10) / 10
+                width: activityBackground.width / 10
+                height: (activityBackground.height - activityBackground.height / 10) / 10
                 source: Activity.reverseCountUrl + "ice-block.svg"
             }
         }
 
         Image {
             id: fish
-            sourceSize.width: background.width / 12
+            sourceSize.width: activityBackground.width / 12
             source: Activity.reverseCountUrl + "fish-blue.svg"
         }
 
         Image {
             id: player
             source: "qrc:/gcompris/src/activities/maze/resource/tux_top_south.svg"
-            width: background.width / 12
+            width: activityBackground.width / 12
             sourceSize.width: width
             z: 1
             property int duration: 1000
@@ -265,8 +265,8 @@ ActivityBase {
         HeaderArea {
             id: mainFunctionHeader
             headerText: qsTr("Main function")
-            headerOpacity: background.insertIntoMain ? 1 : 0.5
-            onClicked: background.insertIntoMain = true
+            headerOpacity: activityBackground.insertIntoMain ? 1 : 0.5
+            onClicked: activityBackground.insertIntoMain = true
             anchors.top: parent.top
             anchors.right: parent.right
         }
@@ -280,12 +280,12 @@ ActivityBase {
             onTabKeyPressed: {
                 mainFunctionCodeArea.currentIndex = -1
                 if(!items.currentLevelContainsProcedure && !items.currentLevelContainsLoop) {
-                    background.areaWithKeyboardInput = instructionArea
+                    activityBackground.areaWithKeyboardInput = instructionArea
                     instructionArea.currentIndex = 0
                 }
                 else {
-                    background.areaWithKeyboardInput = procedureCodeArea
-                    background.insertIntoMain = false
+                    activityBackground.areaWithKeyboardInput = procedureCodeArea
+                    activityBackground.insertIntoMain = false
                 }
             }
         }
@@ -294,9 +294,9 @@ ActivityBase {
             id: procedureHeader
             headerText: items.currentLevelContainsProcedure ? qsTr("Procedure") + " " : qsTr("Loop") + " "
             headerIcon: items.currentLevelContainsProcedure ? "call-procedure" : "execute-loop"
-            headerOpacity: !background.insertIntoMain ? 1 : 0.5
+            headerOpacity: !activityBackground.insertIntoMain ? 1 : 0.5
             visible: procedureCodeArea.visible
-            onClicked: background.insertIntoMain = false
+            onClicked: activityBackground.insertIntoMain = false
             anchors.top: mainFunctionCodeArea.bottom
             anchors.right: parent.right
         }
@@ -305,7 +305,7 @@ ActivityBase {
             id: loopCounterSelection
             visible: items.currentLevelContainsLoop ? true : false
             width: procedureHeader.width * 0.75
-            height: background.buttonHeight * 1.1
+            height: activityBackground.buttonHeight * 1.1
             anchors.top: procedureHeader.bottom
             anchors.horizontalCenter: procedureHeader.horizontalCenter
 
@@ -323,7 +323,7 @@ ActivityBase {
             Rectangle {
                 id: decreaseButton
                 width: parent.width * 0.3
-                height: background.buttonHeight
+                height: activityBackground.buttonHeight
                 anchors.left: parent.left
                 anchors.verticalCenter: parent.verticalCenter
                 border.width: 1.2 * ApplicationInfo.ratio
@@ -383,7 +383,7 @@ ActivityBase {
             Rectangle {
                 id: loopCounter
                 width: parent.width * 0.3
-                height: background.buttonHeight
+                height: activityBackground.buttonHeight
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
                 border.width: 1.2 * ApplicationInfo.ratio
@@ -405,7 +405,7 @@ ActivityBase {
             Rectangle {
                 id: increaseButton
                 width: parent.width * 0.3
-                height: background.buttonHeight
+                height: activityBackground.buttonHeight
                 anchors.right: parent.right
                 anchors.verticalCenter: parent.verticalCenter
                 border.width: 1.2 * ApplicationInfo.ratio
@@ -465,7 +465,7 @@ ActivityBase {
 
         CodeArea {
             id: procedureCodeArea
-            height: items.currentLevelContainsLoop ? background.height * 0.29 - loopCounterSelection.height : background.height * 0.29
+            height: items.currentLevelContainsLoop ? activityBackground.height * 0.29 - loopCounterSelection.height : activityBackground.height * 0.29
             currentModel: procedureModel
             anchors.right: parent.right
             anchors.top: items.currentLevelContainsLoop ? loopCounterSelection.bottom : procedureHeader.bottom
@@ -475,9 +475,9 @@ ActivityBase {
 
             onTabKeyPressed: {
                 procedureCodeArea.currentIndex = -1
-                background.areaWithKeyboardInput = instructionArea
+                activityBackground.areaWithKeyboardInput = instructionArea
                 instructionArea.currentIndex = 0
-                background.insertIntoMain = true
+                activityBackground.insertIntoMain = true
             }
         }
 
@@ -593,8 +593,8 @@ ActivityBase {
                 home()
             }
             onStartActivity: {
-                background.stop()
-                background.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 

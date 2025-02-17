@@ -32,7 +32,7 @@ ActivityBase {
     }
 
     pageComponent: Rectangle {
-        id: background
+        id: activityBackground
         color: "#85D8F6"
         anchors.fill: parent
 
@@ -53,7 +53,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property GCAudio audioVoices: activity.audioVoices
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias bar: bar
             property alias imageReview: imageReview
             property alias parser: parser
@@ -143,13 +143,13 @@ ActivityBase {
                     parent.Keys.enabled = false;
                 }
                 onClose: {
-                    background.englishFallback = false;
+                    activityBackground.englishFallback = false;
                     menuScreen.start();
                 }
             }
             anchors.fill: parent
             focus: true
-            active: background.englishFallback
+            active: activityBackground.englishFallback
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
 
@@ -179,7 +179,7 @@ ActivityBase {
             onStartActivity: {
                 // Reload the locale information when restarting the activity
                 loadData()
-                background.start();
+                activityBackground.start();
             }
         }
     }

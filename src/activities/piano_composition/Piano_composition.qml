@@ -27,7 +27,7 @@ ActivityBase {
     isMusicalActivity: true
 
     pageComponent: Rectangle {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         color: "#ABCDEF"
         signal start
@@ -35,7 +35,7 @@ ActivityBase {
 
         // if audio is disabled, we display a dialog to tell users this activity requires audio anyway
         property bool audioDisabled: false
-        readonly property bool horizontalLayout: background.width >= background.height
+        readonly property bool horizontalLayout: activityBackground.width >= activityBackground.height
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -87,7 +87,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias multipleStaff: multipleStaff
@@ -102,7 +102,7 @@ ActivityBase {
         onStart: {
             Activity.start(items);
             if(!ApplicationSettings.isAudioVoicesEnabled || !ApplicationSettings.isAudioEffectsEnabled) {
-                    background.audioDisabled = true;
+                    activityBackground.audioDisabled = true;
             }
         }
         onStop: { Activity.stop() }
@@ -188,9 +188,9 @@ ActivityBase {
 
         Rectangle {
             id: instructionBox
-            radius: background.baseMargins
-            width: background.horizontalLayout ? background.width * 0.75 : background.width - 2 * (optionsRow.iconsWidth + background.baseMargins)
-            height: background.height * 0.15
+            radius: activityBackground.baseMargins
+            width: activityBackground.horizontalLayout ? activityBackground.width * 0.75 : activityBackground.width - 2 * (optionsRow.iconsWidth + activityBackground.baseMargins)
+            height: activityBackground.height * 0.15
             anchors.top: parent.top
             anchors.right: parent.right
             opacity: 0.8
@@ -203,8 +203,8 @@ ActivityBase {
                 color: "black"
                 z: 3
                 anchors.fill: parent
-                anchors.rightMargin: background.baseMargins
-                anchors.leftMargin: background.baseMargins
+                anchors.rightMargin: activityBackground.baseMargins
+                anchors.leftMargin: activityBackground.baseMargins
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 fontSizeMode: Text.Fit
@@ -226,8 +226,8 @@ ActivityBase {
                     selectedIndex = -1
                 else {
                     selectedIndex = noteIndex
-                    background.clefType = musicElementModel.get(selectedIndex).soundPitch_
-                    playNoteAudio(musicElementModel.get(selectedIndex).noteName_, musicElementModel.get(selectedIndex).noteType_, background.clefType, musicElementRepeater.itemAt(selectedIndex).duration)
+                    activityBackground.clefType = musicElementModel.get(selectedIndex).soundPitch_
+                    playNoteAudio(musicElementModel.get(selectedIndex).noteName_, musicElementModel.get(selectedIndex).noteType_, activityBackground.clefType, musicElementRepeater.itemAt(selectedIndex).duration)
                 }
             }
         }
@@ -259,8 +259,8 @@ ActivityBase {
                 blackLabelsVisible: [3, 4, 5, 6, 7, 8].indexOf(items.currentLevel + 1) == -1 ? false : true
                 useSharpNotation: items.currentLevel != 3
                 blackKeysEnabled: items.currentLevel > 1
-                visible: !background.isLyricsMode
-                currentOctaveNb: (background.clefType === "Bass") ? 0 : 1
+                visible: !activityBackground.isLyricsMode
+                currentOctaveNb: (activityBackground.clefType === "Bass") ? 0 : 1
 
                 onNoteClicked: (note) => {
                     parent.addMusicElementAndPushToStack(note, currentType)
@@ -275,7 +275,7 @@ ActivityBase {
 
                         var tempModel = multipleStaff.createNotesBackup()
                         Activity.pushToStack(tempModel)
-                        multipleStaff.addMusicElement(elementType, noteName, noteType, false, true, background.clefType)
+                        multipleStaff.addMusicElement(elementType, noteName, noteType, false, true, activityBackground.clefType)
             }
 
             Image {
@@ -338,7 +338,7 @@ ActivityBase {
         OptionsRow {
             id: optionsRow
             anchors.margins: layoutMargins
-            anchors.left: background.left
+            anchors.left: activityBackground.left
             iconsWidth: 0
             noteOptionsVisible: items.currentLevel > 3
             playButtonVisible: true
@@ -390,8 +390,8 @@ ActivityBase {
                 var insertingIndex = multipleStaff.selectedIndex === -1 ? multipleStaff.musicElementModel.count : multipleStaff.selectedIndex
                 var tempModel = multipleStaff.createNotesBackup()
                 Activity.pushToStack(tempModel)
-                multipleStaff.addMusicElement("clef", "", "", false, false, background.clefType)
-                if(background.clefType === "Bass")
+                multipleStaff.addMusicElement("clef", "", "", false, false, activityBackground.clefType)
+                if(activityBackground.clefType === "Bass")
                     piano.currentOctaveNb = 0
                 else
                     piano.currentOctaveNb = 1
@@ -480,7 +480,7 @@ ActivityBase {
                 when: horizontalLayout
                 PropertyChanges {
                     clickedOptionMessage {
-                        width: background.width / 12
+                        width: activityBackground.width / 12
                     }
                 }
                 AnchorChanges {
@@ -490,23 +490,23 @@ ActivityBase {
                 PropertyChanges {
                     optionsRow {
                         columns: 11
-                        iconsWidth: background.width / 15
+                        iconsWidth: activityBackground.width / 15
                     }
                 }
                 AnchorChanges {
                     target: multipleStaff
-                    anchors.left: background.horizontalCenter
+                    anchors.left: activityBackground.horizontalCenter
                     anchors.top: optionsRow.bottom
                 }
                 PropertyChanges {
                     multipleStaff {
-                        width: background.width * 0.5 - multipleStaffFlickButton.width - layoutMargins * 3
-                        height: background.height - instructionBox.height - optionsRow.height - bar.height - layoutMargins * 4
+                        width: activityBackground.width * 0.5 - multipleStaffFlickButton.width - layoutMargins * 3
+                        height: activityBackground.height - instructionBox.height - optionsRow.height - bar.height - layoutMargins * 4
                     }
                 }
                 AnchorChanges {
                     target: pianoLayout
-                    anchors.left: background.left
+                    anchors.left: activityBackground.left
                     anchors.top: optionsRow.bottom
                 }
             },
@@ -515,17 +515,17 @@ ActivityBase {
                 when: !horizontalLayout
                 PropertyChanges {
                     clickedOptionMessage {
-                        width: background.width / 6
+                        width: activityBackground.width / 6
                     }
                 }
                 AnchorChanges {
                     target: optionsRow
-                    anchors.top: background.top
+                    anchors.top: activityBackground.top
                 }
                 PropertyChanges {
                     optionsRow {
                         columns: 1
-                        iconsWidth: (background.height - bar.height) / 12
+                        iconsWidth: (activityBackground.height - bar.height) / 12
                     }
                 }
                 AnchorChanges {
@@ -535,8 +535,8 @@ ActivityBase {
                 }
                 PropertyChanges {
                     multipleStaff {
-                        width: background.width - multipleStaffFlickButton.width - optionsRow.width - layoutMargins * 3
-                        height: (background.height - instructionBox.height - bar.height - layoutMargins * 4) * 0.5
+                        width: activityBackground.width - multipleStaffFlickButton.width - optionsRow.width - layoutMargins * 3
+                        height: (activityBackground.height - instructionBox.height - bar.height - layoutMargins * 4) * 0.5
                     }
                 }
                 AnchorChanges {
@@ -557,12 +557,12 @@ ActivityBase {
                 button2Text: qsTr("Continue")
                 onButton1Hit: activity.home();
                 onClose: {
-                    background.audioDisabled = false;
+                    activityBackground.audioDisabled = false;
                 }
             }
             anchors.fill: parent
             focus: true
-            active: background.audioDisabled
+            active: activityBackground.audioDisabled
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
     }

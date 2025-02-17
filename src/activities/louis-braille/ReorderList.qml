@@ -72,7 +72,7 @@ Rectangle {
             border.color: "#373737"
             radius: 3
             width: list.width
-            height: textinfo.height + background.baseMargins
+            height: textinfo.height + activityBackground.baseMargins
 
             property bool placed: model.sequence === index
             property string text: model.text
@@ -100,7 +100,7 @@ Rectangle {
                 text: listRect.text
                 anchors.centerIn: parent
                 horizontalAlignment: Text.AlignHCenter
-                width: parent.width - background.baseMargins
+                width: parent.width - activityBackground.baseMargins
                 wrapMode: Text.WordWrap
                 fontSize: smallSize
                 color: "#373737"
@@ -135,9 +135,9 @@ Rectangle {
             left: parent.left
             right: scrollItem.left
             bottom: parent.bottom
-            topMargin: background.baseMargins
-            leftMargin: background.baseMargins
-            rightMargin: background.baseMargins
+            topMargin: activityBackground.baseMargins
+            leftMargin: activityBackground.baseMargins
+            rightMargin: activityBackground.baseMargins
             bottomMargin: bar.height * 1.5
         }
         model: containerModel
@@ -152,18 +152,18 @@ Rectangle {
 
         header: Item {
             width: parent.width
-            height: heading.height + background.baseMargins * 2
+            height: heading.height + activityBackground.baseMargins * 2
             Rectangle {
                 width: parent.width
-                height: heading.height + background.baseMargins
-                radius: background.baseMargins * 0.5
+                height: heading.height + activityBackground.baseMargins
+                radius: activityBackground.baseMargins * 0.5
                 anchors.top: parent.top
                 color: "#80FFFFFF"
                 GCText {
                     id: heading
                     text: qsTr("Arrange the events in the order in which they happened. " +
                     "Select the line to move, then select its target position.")
-                    width: parent.width - background.baseMargins * 2
+                    width: parent.width - activityBackground.baseMargins * 2
                     wrapMode: Text.WordWrap
                     horizontalAlignment: Text.AlignHCenter
                     anchors.centerIn: parent
@@ -189,9 +189,9 @@ Rectangle {
     GCButtonScroll {
         id: scrollItem
         anchors.right: parent.right
-        anchors.rightMargin: background.baseMargins
+        anchors.rightMargin: activityBackground.baseMargins
         anchors.top: parent.top
-        anchors.topMargin: background.baseMargins
+        anchors.topMargin: activityBackground.baseMargins
         anchors.bottom: parent.bottom
         anchors.bottomMargin: bar.height * 1.5
         onUp: list.flick(0, 1000)

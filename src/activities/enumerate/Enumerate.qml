@@ -30,7 +30,7 @@ ActivityBase {
     }
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         signal start
         signal stop
@@ -39,7 +39,7 @@ ActivityBase {
         sourceSize.width: width
         sourceSize.height: height
 
-        readonly property int answersWidth: Math.min(140 * ApplicationInfo.ratio, background.width * 0.25)
+        readonly property int answersWidth: Math.min(140 * ApplicationInfo.ratio, activityBackground.width * 0.25)
         readonly property int baseMargins: 10 * ApplicationInfo.ratio
 
         Component.onCompleted: {
@@ -55,12 +55,12 @@ ActivityBase {
             id: instruction
             anchors.horizontalCenter: instructionTxt.horizontalCenter
             anchors.top: parent.top
-            anchors.topMargin: background.baseMargins
-            height: instructionTxt.contentHeight + background.baseMargins * 2
-            width: instructionTxt.contentWidth + background.baseMargins * 2
+            anchors.topMargin: activityBackground.baseMargins
+            height: instructionTxt.contentHeight + activityBackground.baseMargins * 2
+            width: instructionTxt.contentWidth + activityBackground.baseMargins * 2
             opacity: 0.8
             visible: items.levels
-            radius: background.baseMargins
+            radius: activityBackground.baseMargins
             border.width: 2
             z: instruction.opacity === 0 ? -10 : 10
             border.color: "#DDD"
@@ -81,7 +81,7 @@ ActivityBase {
                 top: parent.top
                 right: parent.right
                 left: answer.right
-                margins: background.baseMargins * 2
+                margins: activityBackground.baseMargins * 2
             }
             height: 60 * ApplicationInfo.ratio
             opacity: instruction.opacity
@@ -108,7 +108,7 @@ ActivityBase {
 
         QtObject {
             id: items
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias okButton: okButton
@@ -138,10 +138,10 @@ ActivityBase {
 
         DropArea {
             id: dropableArea
-            anchors.left: background.left
-            anchors.bottom: background.bottom
-            width: background.width
-            height: background.height
+            anchors.left: activityBackground.left
+            anchors.bottom: activityBackground.bottom
+            width: activityBackground.width
+            height: activityBackground.height
             onEntered: instruction.opacity !== 0 ? instruction.opacity = 0 : null
         }
 
@@ -157,10 +157,10 @@ ActivityBase {
             anchors {
                 left: parent.left
                 top: parent.top
-                margins: background.baseMargins
+                margins: activityBackground.baseMargins
             }
-            width: background.answersWidth
-            spacing: background.baseMargins
+            width: activityBackground.answersWidth
+            spacing: activityBackground.baseMargins
 
             Repeater {
                 id: answerColumn
@@ -186,7 +186,7 @@ ActivityBase {
             anchors {
                 bottom: bar.top
                 right: parent.right
-                margins: background.baseMargins
+                margins: activityBackground.baseMargins
             }
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             width: 70 * ApplicationInfo.ratio
@@ -279,8 +279,8 @@ ActivityBase {
                 home()
             }
             onStartActivity: {
-                background.stop()
-                background.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 
@@ -289,8 +289,8 @@ ActivityBase {
             anchors.top: undefined
             anchors.bottom: undefined
             anchors.verticalCenter: okButton.verticalCenter
-            anchors.right: okButton.visible ? okButton.left : background.right
-            anchors.rightMargin: background.baseMargins
+            anchors.right: okButton.visible ? okButton.left : activityBackground.right
+            anchors.rightMargin: activityBackground.baseMargins
             onStop: Activity.nextSubLevel()
         }
 

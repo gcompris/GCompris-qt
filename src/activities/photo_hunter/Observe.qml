@@ -17,7 +17,7 @@ import "photo_hunter.js" as Activity
 Image {
     id: card
 
-    width: background.isHorizontal ? Math.min(frame.height - slider.height, parent.width * 0.5) - 10 * ApplicationInfo.ratio:
+    width: activityBackground.isHorizontal ? Math.min(frame.height - slider.height, parent.width * 0.5) - 10 * ApplicationInfo.ratio:
                                     Math.min(frame.width, parent.height * 0.5 - 10 * ApplicationInfo.ratio)
     height: width
     sourceSize.width: width
@@ -30,7 +30,7 @@ Image {
     property double minimumSize: 30 * ApplicationInfo.ratio
 
     Behavior on anchors.horizontalCenterOffset {
-        enabled: background.isHorizontal
+        enabled: activityBackground.isHorizontal
         NumberAnimation {
             duration: 1000
             easing.type: Easing.InOutQuad
@@ -38,7 +38,7 @@ Image {
     }
 
     Behavior on anchors.verticalCenterOffset {
-        enabled: !background.isHorizontal
+        enabled: !activityBackground.isHorizontal
         NumberAnimation {
             duration: 1000
             easing.type: Easing.InOutQuad
@@ -75,7 +75,7 @@ Image {
     MouseArea {
         id: big
         anchors.fill: parent
-        enabled: !background.startedHelp
+        enabled: !activityBackground.startedHelp
         onClicked: {
             items.brickSound.play()
             wrongAnim.start()
@@ -137,7 +137,7 @@ Image {
                 anchors.centerIn: parent
                 width: Math.max(parent.width, card.minimumSize)
                 height: Math.max(parent.height, card.minimumSize)
-                enabled: !background.startedHelp
+                enabled: !activityBackground.startedHelp
                 onClicked: {
                     Activity.photoClicked(card,index)
                     items.bleepSound.play()

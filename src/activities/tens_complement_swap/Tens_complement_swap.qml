@@ -23,7 +23,7 @@ ActivityBase {
     property string mode: "swap"
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
         anchors.fill: parent
         fillMode: Image.PreserveAspectCrop
@@ -42,14 +42,14 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias goodAnswerSound: goodAnswerSound
             property alias badAnswerSound: badAnswerSound
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias equations: equations
             readonly property var levels: activity.datasets
-            property bool isHorizontal: background.width >= background.height
+            property bool isHorizontal: activityBackground.width >= activityBackground.height
             property alias numPad: numPad
             property var previousSelectedCard: undefined
             readonly property string mode: activity.mode
@@ -96,10 +96,10 @@ ActivityBase {
 
             Item {
                 id: containerHolder
-                height: layoutArea.height - okButton.height * 2 - background.layoutMargins
-                width: layoutArea.width - (background.layoutMargins * 2)
+                height: layoutArea.height - okButton.height * 2 - activityBackground.layoutMargins
+                width: layoutArea.width - (activityBackground.layoutMargins * 2)
                 anchors.top: parent.top
-                anchors.topMargin: background.layoutMargins
+                anchors.topMargin: activityBackground.layoutMargins
                 anchors.horizontalCenter: parent.horizontalCenter
                 Column {
                     Repeater {
@@ -164,13 +164,13 @@ ActivityBase {
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
                 // restart activity on saving
-                background.start()
+                activityBackground.start()
             }
             onClose: {
                 home()
             }
             onStartActivity: {
-                background.start()
+                activityBackground.start()
             }
         }
 

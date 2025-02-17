@@ -15,7 +15,7 @@ import GCompris 1.0
 
 Item {
     id: activityConfiguration
-    property Item background
+    property Item activityBackground
     property string mode: "easy"
     width: flick.width
     height: column.childrenRect.height

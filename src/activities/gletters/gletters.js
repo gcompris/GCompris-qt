@@ -370,7 +370,7 @@ function createWord()
         var word
 
         if(items.ourActivity.getImage(text)) {
-            word = wordComponent.createObject( items.background,
+            word = wordComponent.createObject( items.activityBackground,
                 {
                     "text": text,
                     "image": items.ourActivity.getImage(text),
@@ -379,7 +379,7 @@ function createWord()
                     "y": -25,
                 });
         } else if(items.ourActivity.getDominoValues(text).length) {
-            word = wordComponent.createObject( items.background,
+            word = wordComponent.createObject( items.activityBackground,
                 {
                     "text": text,
                     "mode": items.ourActivity.getMode(),
@@ -389,7 +389,7 @@ function createWord()
                     "y": -25,
                 });
         } else {
-            word = wordComponent.createObject( items.background,
+            word = wordComponent.createObject( items.activityBackground,
                 {
                     "text": text,
                     // assume x=width-25px for now, Word auto-adjusts onCompleted():

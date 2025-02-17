@@ -46,9 +46,9 @@ function stop() {
 function initLevel() {
     targetNotes = []
     newNotesSequence = []
-    items.background.clefType = levels[items.currentLevel]["clef"]
-    items.doubleOctave.coloredKeyLabels = dataset.referenceNotes[items.background.clefType]
-    if(items.background.clefType === "Treble")
+    items.activityBackground.clefType = levels[items.currentLevel]["clef"]
+    items.doubleOctave.coloredKeyLabels = dataset.referenceNotes[items.activityBackground.clefType]
+    if(items.activityBackground.clefType === "Treble")
         items.doubleOctave.currentOctaveNb = 1
     else
         items.doubleOctave.currentOctaveNb = 2
@@ -56,11 +56,11 @@ function initLevel() {
     items.multipleStaff.pauseNoteAnimation()
     items.displayNoteNameTimer.stop()
     items.addNoteTimer.stop()
-    items.multipleStaff.initClefs(items.background.clefType)
+    items.multipleStaff.initClefs(items.activityBackground.clefType)
     targetNotes = JSON.parse(JSON.stringify(levels[items.currentLevel]["sequence"]))
     items.isTutorialMode = true
     items.progressBar.percentage = 0
-    items.multipleStaff.coloredNotes = dataset.referenceNotes[items.background.clefType]
+    items.multipleStaff.coloredNotes = dataset.referenceNotes[items.activityBackground.clefType]
     if(!items.iAmReady.visible  && !items.introMessage.visible)
         showTutorial()
 }
@@ -108,8 +108,8 @@ function startGame() {
 }
 
 function displayNote(currentNote) {
-    items.multipleStaff.addMusicElement("note", currentNote, "Quarter", false, false, items.background.clefType)
-    items.multipleStaff.playNoteAudio(currentNote, "Quarter", items.background.clefType, 500)
+    items.multipleStaff.addMusicElement("note", currentNote, "Quarter", false, false, items.activityBackground.clefType)
+    items.multipleStaff.playNoteAudio(currentNote, "Quarter", items.activityBackground.clefType, 500)
     if(!items.isTutorialMode) {
         items.addNoteTimer.interval = timerNormalInterval
         items.addNoteTimer.start()

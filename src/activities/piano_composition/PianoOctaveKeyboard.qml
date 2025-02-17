@@ -136,7 +136,7 @@ Item {
         whiteKeyNoteLabelsArray.slice(25, 32),
         whiteKeyNoteLabelsArray.slice(32, 36)
     ]
-    readonly property var whiteKeyNoteLabels: background.clefType === "Treble" ? whiteKeyNoteLabelsTreble : whiteKeyNoteLabelsBass
+    readonly property var whiteKeyNoteLabels: activityBackground.clefType === "Treble" ? whiteKeyNoteLabelsTreble : whiteKeyNoteLabelsBass
 
     signal noteClicked(string note)
 

@@ -92,8 +92,8 @@ function initLevel() {
     if(currentImage >= backgroundImages.length) {
         currentImage = 0
     }
-    items.background.source = url + backgroundImages[currentImage][0]
-    items.background.alignBackground()
+    items.activityBackground.source = url + backgroundImages[currentImage][0]
+    items.activityBackground.alignBackground()
     createdBlocks = 0
     killedBlocks = 0
     var nbx = Math.min((items.currentLevel % 2 * 3) + 5, main.width / (10 * GCompris.ApplicationInfo.ratio));

@@ -111,7 +111,7 @@ function initLevel() {
     items.deltaPressedTimer.stop();
     items.deltaPressedTimer.interval = timerinc
 
-    items.background.source = "qrc:/gcompris/src/activities/ballcatch/resource/beach" +
+    items.activityBackground.source = "qrc:/gcompris/src/activities/ballcatch/resource/beach" +
             levelProperties[items.currentLevel].backgroundImage + ".svg"
 
     items.ball.stop();

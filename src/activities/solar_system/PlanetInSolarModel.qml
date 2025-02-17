@@ -14,7 +14,7 @@ import "solar_system.js" as Activity
 
 Item {
     id: planetItem
-    width: background.itemWidth
+    width: activityBackground.itemWidth
     height: width
 
     property string planetImageSource
@@ -36,7 +36,7 @@ Item {
         states: [
                 State {
                     name: "hScreen"
-                    when: background.horizontalLayout
+                    when: activityBackground.horizontalLayout
                     AnchorChanges {
                         target: planetNameText
                         anchors.bottom: planetItem.top
@@ -54,7 +54,7 @@ Item {
                 },
                 State {
                     name: "vScreen"
-                    when: !background.horizontalLayout
+                    when: !activityBackground.horizontalLayout
                     AnchorChanges {
                         target: planetNameText
                         anchors.bottom: undefined

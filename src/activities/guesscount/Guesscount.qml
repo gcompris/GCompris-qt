@@ -22,7 +22,7 @@ ActivityBase {
     property bool needRestart: true
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: Activity.baseUrl + "/backgroundW01.svg"
         signal start
@@ -49,7 +49,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
@@ -90,7 +90,7 @@ ActivityBase {
             id: admin
             active: false
             sourceComponent: Column {
-                spacing: background.baseMargins
+                spacing: activityBackground.baseMargins
                 width: parent.width
                 height: parent.height
 
@@ -116,7 +116,7 @@ ActivityBase {
                 left: parent.left
                 right: parent.right
                 top: parent.top
-                margins: background.baseMargins
+                margins: activityBackground.baseMargins
             }
             Score {
                 id: score
@@ -137,16 +137,16 @@ ActivityBase {
                 anchors.bottom: parent.bottom
                 anchors.right: parent.right
                 anchors.left: score.right
-                anchors.leftMargin: background.baseMargins
-                radius: background.baseMargins
+                anchors.leftMargin: activityBackground.baseMargins
+                radius: activityBackground.baseMargins
                 border.color: "orange"
                 border.width: 3 * ApplicationInfo.ratio
                 color: "#E8E8E8"
                 GCText {
                     id: guess
                     anchors.centerIn: parent
-                    width: parent.width - 2 * background.baseMargins
-                    height: parent.height - background.baseMargins
+                    width: parent.width - 2 * activityBackground.baseMargins
+                    height: parent.height - activityBackground.baseMargins
                     fontSizeMode: Text.Fit
                     minimumPointSize: 7
                     fontSize: mediumSize
@@ -159,18 +159,18 @@ ActivityBase {
 
         Column {
             id: col
-            spacing: background.halfMargins
+            spacing: activityBackground.halfMargins
             anchors.top: top.bottom
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.bottom: parent.bottom
-            anchors.margins: background.baseMargins
+            anchors.margins: activityBackground.baseMargins
             anchors.bottomMargin: bar.height * 1.2
             OperatorRow {
                 id: operatorRow
                 width: parent.width
                 height: Math.min(70 * ApplicationInfo.ratio,
-                                 parent.height / 6 - background.halfMargins)
+                                 parent.height / 6 - activityBackground.halfMargins)
                 mode: items.mode
             }
             OperandRow {
@@ -238,8 +238,8 @@ ActivityBase {
                 }
             }
             onStartActivity: {
-                background.stop()
-                background.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 
@@ -273,9 +273,9 @@ ActivityBase {
             height: 70 * ApplicationInfo.ratio
             visible: false
             color: "#373737"
-            radius: background.baseMargins
+            radius: activityBackground.baseMargins
             border.color: "white"
-            border.width: background.tileBorder
+            border.width: activityBackground.tileBorder
             property alias dialogText: dialogText
             anchors.centerIn: col
             GCText {
@@ -286,8 +286,8 @@ ActivityBase {
                 color: "white"
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                width: parent.width - background.baseMargins
-                height: parent.height - background.baseMargins * 2
+                width: parent.width - activityBackground.baseMargins
+                height: parent.height - activityBackground.baseMargins * 2
                 wrapMode: TextEdit.WordWrap
             }
             states: [

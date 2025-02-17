@@ -24,7 +24,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         signal start
         signal stop
         fillMode: Image.PreserveAspectCrop
@@ -41,7 +41,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias goodAnswerSound: goodAnswerSound
             property alias badAnswerSound: badAnswerSound
             property int currentLevel: activity.currentLevel
@@ -53,7 +53,7 @@ ActivityBase {
             property alias score: score
             property alias answerChoices: answerChoices
             property alias okButtonParticles: okButtonParticles
-            property bool horizontalLayout: background.width >= background.height * 1.5
+            property bool horizontalLayout: activityBackground.width >= activityBackground.height * 1.5
             property alias daysOfTheWeekModel: daysOfTheWeekModel
             property bool buttonsBlocked: false
         }

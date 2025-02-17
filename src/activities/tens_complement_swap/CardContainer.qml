@@ -13,8 +13,8 @@ Item {
     Rectangle {
         id: cardContainer
         color: "#EBEBEB"
-        height: items.isHorizontal ? parent.height - background.layoutMargins :
-                                    (parent.height - background.layoutMargins) * 0.67
+        height: items.isHorizontal ? parent.height - activityBackground.layoutMargins :
+                                    (parent.height - activityBackground.layoutMargins) * 0.67
         width: parent.width
         anchors.centerIn: parent
         radius: 15
@@ -65,7 +65,7 @@ Item {
                 PropertyChanges {
                     validationImage {
                         height: cardContainer.height
-                        anchors.margins: background.layoutMargins * 0.5
+                        anchors.margins: activityBackground.layoutMargins * 0.5
                     }
                 }
                 AnchorChanges {
@@ -84,7 +84,7 @@ Item {
                 PropertyChanges {
                     validationImage {
                         height: cardContainer.height * 0.5
-                        anchors.margins: -background.layoutMargins * 0.5
+                        anchors.margins: -activityBackground.layoutMargins * 0.5
                     }
                 }
                 AnchorChanges {

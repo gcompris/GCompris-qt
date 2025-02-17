@@ -24,7 +24,7 @@ ActivityBase {
     }
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: "qrc:/gcompris/src/activities/family/resource/background.svg"
         anchors.fill: parent
         sourceSize.width: width
@@ -46,11 +46,11 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias scrollSound: scrollSound
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
-            property bool isPortrait: (background.height >= background.width - tux.width)
+            property bool isPortrait: (activityBackground.height >= activityBackground.width - tux.width)
             property alias nightSky: nightSky.opacity
             property alias modelTable: modelTable
             readonly property var levels: activity.datasets
@@ -72,7 +72,7 @@ ActivityBase {
 
         Keys.enabled: !items.blockClicks
         Keys.onPressed: (event) => {
-            background.keyNavigationVisible = true
+            activityBackground.keyNavigationVisible = true
             if (event.key === Qt.Key_Left)
                 grid.moveCurrentIndexLeft()
             if (event.key === Qt.Key_Right)
@@ -113,7 +113,7 @@ ActivityBase {
             id: nightSky
             color: "#052e3c"
             opacity: items.lightRatio
-            anchors.fill: background
+            anchors.fill: activityBackground
         }
 
         Image {
@@ -213,7 +213,7 @@ ActivityBase {
                 height: items.cellSize
                 color: "#EEEEEE"
                 radius: items.cellSize * 0.1
-                visible: background.keyNavigationVisible
+                visible: activityBackground.keyNavigationVisible
                 Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
                 Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
             }
@@ -261,8 +261,8 @@ ActivityBase {
                 home()
             }
             onStartActivity: {
-                background.stop()
-                background.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 

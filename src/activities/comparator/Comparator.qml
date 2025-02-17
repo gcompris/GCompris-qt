@@ -21,7 +21,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
         anchors.centerIn: parent
         anchors.fill: parent
@@ -43,7 +43,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias goodAnswerSound: goodAnswerSound
@@ -173,7 +173,7 @@ ActivityBase {
             id: upDownButtonSet
             anchors.verticalCenter: wholeExerciceDisplay.verticalCenter
             anchors.right: wholeExerciceDisplay.left
-            anchors.rightMargin: background.layoutMargins
+            anchors.rightMargin: activityBackground.layoutMargins
             height: upButton.width * 3
             width: upButton.width
             BarButton {
@@ -221,7 +221,7 @@ ActivityBase {
             height: Math.min(wholeExerciceDisplay.width * 0.2, items.sizeOfElement * 1.5)
             width: height * 4
             anchors.top: wholeExerciceDisplay.bottom
-            anchors.topMargin: background.layoutMargins
+            anchors.topMargin: activityBackground.layoutMargins
             anchors.horizontalCenter: wholeExerciceDisplay.horizontalCenter
             orientation: Qt.Horizontal
             interactive: false
@@ -254,7 +254,7 @@ ActivityBase {
             enabled: !bonus.isPlaying
             anchors {
                 bottom: score.top
-                bottomMargin: background.layoutMargins
+                bottomMargin: activityBackground.layoutMargins
                 horizontalCenter: score.horizontalCenter
             }
             onClicked: {
@@ -276,13 +276,13 @@ ActivityBase {
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
                 // restart activity on saving
-                background.start()
+                activityBackground.start()
             }
             onClose: {
                 home()
             }
             onStartActivity: {
-                background.start()
+                activityBackground.start()
             }
         }
 
@@ -290,8 +290,8 @@ ActivityBase {
             id: score
             anchors.right: layoutArea.right
             anchors.bottom: layoutArea.bottom
-            anchors.rightMargin: background.layoutMargins
-            anchors.bottomMargin: background.layoutMargins
+            anchors.rightMargin: activityBackground.layoutMargins
+            anchors.bottomMargin: activityBackground.layoutMargins
             anchors.horizontalCenterOffset: layoutArea.width * 0.375
             onStop: Activity.nextSubLevel()
         }

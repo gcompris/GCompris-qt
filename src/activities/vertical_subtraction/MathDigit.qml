@@ -24,8 +24,8 @@ Item {
     height: items.digitHeight
 
     function mapPadToItem(pad_, item_){
-        var tempX = item_.mapToItem(background, 0, 0).x + item_.width * 0.5 - pad_.width * 0.5
-        var tempY = item_.mapToItem(background, 0, 0).y + item_.height * 0.5 - pad_.height * 0.5
+        var tempX = item_.mapToItem(activityBackground, 0, 0).x + item_.width * 0.5 - pad_.width * 0.5
+        var tempY = item_.mapToItem(activityBackground, 0, 0).y + item_.height * 0.5 - pad_.height * 0.5
         pad_.x = Core.clamp(tempX, items.baseMargins, pad_.maxX)
         pad_.y = Core.clamp(tempY, items.baseMargins, pad_.maxY)
     }

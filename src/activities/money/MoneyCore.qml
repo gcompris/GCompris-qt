@@ -24,7 +24,7 @@ ActivityBase {
     property var dataset
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: "qrc:/gcompris/src/activities/family/resource/background.svg"
         width: parent.width
@@ -45,7 +45,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property alias badAnswerSound: badAnswerSound
             property alias paySound: paySound
             property alias unpaySound: unpaySound
@@ -285,8 +285,8 @@ ActivityBase {
                 home()
             }
             onStartActivity: {
-                background.stop()
-                background.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 
@@ -321,7 +321,7 @@ ActivityBase {
                 bottomMargin: 10 * ApplicationInfo.ratio
             }
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: (background.height - bar.height * 1.2) * 0.15
+            width: (activityBackground.height - bar.height * 1.2) * 0.15
             onClicked: Activity.checkAnswer()
         }
 

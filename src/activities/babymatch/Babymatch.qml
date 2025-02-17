@@ -31,14 +31,14 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg" 
 
         signal start
         signal stop
 
-        property bool verticalBar: background.width >= background.height
+        property bool verticalBar: activityBackground.width >= activityBackground.height
 
         Component.onCompleted: {
             dialogActivityConfig.initialize();
@@ -49,7 +49,7 @@ ActivityBase {
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias availablePieces: availablePieces
@@ -117,7 +117,7 @@ ActivityBase {
                 home();
             }
             onStartActivity: {
-                background.start();
+                activityBackground.start();
             }
         }
 
@@ -137,11 +137,11 @@ ActivityBase {
         Image {
             id: leftWidget
             source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW02.svg"
-            width: background.verticalBar ?
+            width: activityBackground.verticalBar ?
                        90 * ApplicationInfo.ratio :
-                       background.width
-            height: background.verticalBar ?
-                        background.height :
+                       activityBackground.width
+            height: activityBackground.verticalBar ?
+                        activityBackground.height :
                         90 * ApplicationInfo.ratio
             anchors.left: parent.left
             ListWidget {
@@ -213,13 +213,13 @@ ActivityBase {
         Item {
             id: grid
             z: 2
-            x: background.verticalBar ? 90 * ApplicationInfo.ratio : 0
-            y: background.verticalBar ? 0 : 90 * ApplicationInfo.ratio
-            width: background.verticalBar ?
-                       background.width - 90 * ApplicationInfo.ratio : background.width
-            height: background.verticalBar ?
-                        background.height - (bar.height * 1.1) :
-                        background.height - (bar.height * 1.1) - 90 * ApplicationInfo.ratio
+            x: activityBackground.verticalBar ? 90 * ApplicationInfo.ratio : 0
+            y: activityBackground.verticalBar ? 0 : 90 * ApplicationInfo.ratio
+            width: activityBackground.verticalBar ?
+                       activityBackground.width - 90 * ApplicationInfo.ratio : activityBackground.width
+            height: activityBackground.verticalBar ?
+                        activityBackground.height - (bar.height * 1.1) :
+                        activityBackground.height - (bar.height * 1.1) - 90 * ApplicationInfo.ratio
 
             // We need two items for the background image:
             // - backgroundImageSource is needed to keep the original sourceSize info which is used
@@ -342,9 +342,9 @@ ActivityBase {
         GCText {
             id: instructionTxt
             anchors {
-                top: background.verticalBar ? grid.top : leftWidget.bottom
+                top: activityBackground.verticalBar ? grid.top : leftWidget.bottom
                 topMargin:  20
-                horizontalCenter: background.verticalBar ? grid.horizontalCenter : leftWidget.horizontalCenter
+                horizontalCenter: activityBackground.verticalBar ? grid.horizontalCenter : leftWidget.horizontalCenter
             }
             opacity: instruction.opacity
             z: instruction.z
@@ -363,7 +363,7 @@ ActivityBase {
         Item {
             id: movePlaceholder
             z: 1000
-            anchors.fill: background
+            anchors.fill: activityBackground
         }
     }
 }

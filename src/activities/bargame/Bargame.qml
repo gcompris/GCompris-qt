@@ -29,7 +29,7 @@ ActivityBase {
         fillMode: Image.PreserveAspectCrop
         signal start
         signal stop
-        property bool horizontalLayout: background.width >= background.height
+        property bool horizontalLayout: activityBackground.width >= activityBackground.height
 
         Component.onCompleted: {
             dialogActivityConfig.initialize()

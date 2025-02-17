@@ -59,12 +59,12 @@ function saveMelody() {
     }
 
     if (!items.file.append(JSON.stringify(notes), userFile)) {
-        Core.showMessageDialog(items.background,
+        Core.showMessageDialog(items.activityBackground,
             qsTr("Error saving melody to your file (%1)")
             .arg(userFile),
             "", null, "", null, null);
     } else {
-        Core.showMessageDialog(items.background,
+        Core.showMessageDialog(items.activityBackground,
             qsTr("Melody saved to your file (%1)")
             .arg(userFile),
             "", null, "", null, null);
@@ -79,15 +79,15 @@ function initLevel() {
     items.multipleStaff.bpmValue = 120
 
     if(items.currentLevel === 1) {
-        items.background.clefType = "Bass"
+        items.activityBackground.clefType = "Bass"
         items.piano.currentOctaveNb = 0
     }
     else {
-        items.background.clefType = "Treble"
+        items.activityBackground.clefType = "Treble"
         items.piano.currentOctaveNb = 1
     }
 
-    items.multipleStaff.initClefs(items.background.clefType)
+    items.multipleStaff.initClefs(items.activityBackground.clefType)
 
     if(items.currentLevel === 3)
         items.piano.useSharpNotation = false
@@ -96,7 +96,7 @@ function initLevel() {
 
     items.multipleStaff.nbStaves = 2
     items.optionsRow.noteOptionsIndex = 2
-    items.background.currentType = "Quarter"
+    items.activityBackground.currentType = "Quarter"
     items.lyricsArea.resetLyricsArea()
     undoStack = []
 }

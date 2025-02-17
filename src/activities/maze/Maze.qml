@@ -27,7 +27,7 @@ ActivityBase {
     Keys.onPressed: (event) => { Activity.processPressedKey(event) }
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         source: Activity.url + "maze_bg.svg"
         sourceSize.width: parent.width
         anchors.fill: parent
@@ -46,7 +46,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias mazeRows: maze.rows
@@ -89,11 +89,11 @@ ActivityBase {
             anchors.top: layoutArea.top
             anchors.left: layoutArea.left
             anchors.right: layoutArea.right
-            anchors.topMargin: background.horizontalLayout ? 3 * background.baseMargins : fastmode.height + 2 * background.baseMargins
-            anchors.leftMargin: background.horizontalLayout ? fastmode.width + 2 * background.baseMargins : background.baseMargins
+            anchors.topMargin: activityBackground.horizontalLayout ? 3 * activityBackground.baseMargins : fastmode.height + 2 * activityBackground.baseMargins
+            anchors.leftMargin: activityBackground.horizontalLayout ? fastmode.width + 2 * activityBackground.baseMargins : activityBackground.baseMargins
             anchors.rightMargin: anchors.leftMargin
             anchors.bottom: parent.bottom
-            anchors.bottomMargin: ApplicationSettings.isBarHidden && background.horizontalLayout ? 3 * background.baseMargins : bar.height * 1.2
+            anchors.bottomMargin: ApplicationSettings.isBarHidden && activityBackground.horizontalLayout ? 3 * activityBackground.baseMargins : bar.height * 1.2
         }
 
         Rectangle {
@@ -289,8 +289,8 @@ ActivityBase {
             source: Activity.url + "fast-mode-button.svg"
             width: 66 * ApplicationInfo.ratio
             visible: !message.visible
-            x: background.baseMargins
-            y: background.baseMargins
+            x: activityBackground.baseMargins
+            y: activityBackground.baseMargins
             onClicked: items.fastMode = !items.fastMode
         }
 
@@ -300,7 +300,7 @@ ActivityBase {
             anchors {
                 right: parent.right
                 top: parent.top
-                margins: background.baseMargins
+                margins: activityBackground.baseMargins
             }
             width: fastmode.width
             visible: invisibleMode
@@ -312,7 +312,7 @@ ActivityBase {
 
         Rectangle {
             anchors.centerIn: message
-            width: message.contentWidth + 2 * background.baseMargins
+            width: message.contentWidth + 2 * activityBackground.baseMargins
             height: message.contentHeight
             color: "#D0FFFFFF"
             border.width: 0
@@ -325,11 +325,11 @@ ActivityBase {
                 left: parent.left
                 right: switchMaze.left
                 top: parent.top
-                leftMargin: background.baseMargins * 2
-                rightMargin: background.baseMargins * 2
-                topMargin: background.horizontalLayout ? 0 : background.baseMargins
+                leftMargin: activityBackground.baseMargins * 2
+                rightMargin: activityBackground.baseMargins * 2
+                topMargin: activityBackground.horizontalLayout ? 0 : activityBackground.baseMargins
             }
-            height: background.horizontalLayout ? 3 * background.baseMargins: fastmode.height
+            height: activityBackground.horizontalLayout ? 3 * activityBackground.baseMargins: fastmode.height
             fontSize: regularSize
             fontSizeMode: Text.Fit
             horizontalAlignment: Text.AlignHCenter
@@ -344,8 +344,8 @@ ActivityBase {
             anchors {
                 right: parent.right
                 bottom: parent.bottom
-                rightMargin: background.baseMargins
-                bottomMargin: ApplicationSettings.isBarHidden ? background.baseMargins : bar.height * 1.2
+                rightMargin: activityBackground.baseMargins
+                bottomMargin: ApplicationSettings.isBarHidden ? activityBackground.baseMargins : bar.height * 1.2
             }
             z: 10
             source: "qrc:/gcompris/src/core/resource/arrows_move.svg"

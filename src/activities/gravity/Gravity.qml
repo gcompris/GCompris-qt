@@ -25,7 +25,7 @@ ActivityBase {
     Keys.onReleased: (event) => { Activity.processKeyRelease(event) }
 
     pageComponent: Rectangle {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         color: "#171717"
 
@@ -45,13 +45,13 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property bool startMessage: true
-            property alias background: background
+            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias processTimer: processTimer
             property alias planetCreation: planetCreation
-            property int maxPlanetSize: background.width - spaceship.width
-            property int minPlanetSize: background.width * 0.2
+            property int maxPlanetSize: activityBackground.width - spaceship.width
+            property int minPlanetSize: activityBackground.width * 0.2
             property alias planet0: planet0
             property alias planet1: planet1
             property alias arrow: arrow
@@ -68,7 +68,7 @@ ActivityBase {
             property double spaceshipX
             property double spaceshipY: parent.height  * 0.5
             property int borderMargin: spaceship.width * 0.5
-            property int rightMargin: background.width - borderMargin
+            property int rightMargin: activityBackground.width - borderMargin
             property bool onScreenControls: ApplicationInfo.isMobile
             property alias explosion: explosion
         }
@@ -105,7 +105,7 @@ ActivityBase {
             space2.startMoving()
             spaceRepeat.restart()
             rewindSpace1 = true
-            station.width = background.width
+            station.width = activityBackground.width
             station.y = -station.height
         }
 
@@ -250,7 +250,7 @@ ActivityBase {
             source: Activity.url + "space_station.svg"
             x: 0
             y: -height
-            width: background.width
+            width: activityBackground.width
             sourceSize.width: width
             fillMode: Image.PreserveAspectFit
         }
@@ -353,7 +353,7 @@ ActivityBase {
 
         Row {
             id: leftRightControl
-            anchors.horizontalCenter: background.horizontalCenter
+            anchors.horizontalCenter: activityBackground.horizontalCenter
             anchors.bottom: bar.top
             anchors.bottomMargin: spacing
             width: leftButton.width + rightButton.width + spacing

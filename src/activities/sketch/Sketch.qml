@@ -26,7 +26,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Rectangle {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         color: "#cacaca"
         signal start
@@ -44,7 +44,7 @@ ActivityBase {
             property Item openPanel
 
             readonly property int baseMargins: 5 * ApplicationInfo.ratio
-            readonly property bool isHorizontalLayout: background.width >= background.height
+            readonly property bool isHorizontalLayout: activityBackground.width >= activityBackground.height
             property int buttonSize
             property real panelHandleWidth
             property real panelHandleHeight
@@ -529,7 +529,7 @@ ActivityBase {
             color: items.panelColor
             height: items.panelHandleHeight
             border.color: items.contentColor
-            anchors.right: background.right
+            anchors.right: activityBackground.right
             anchors.margins: -items.baseMargins
 
             Grid {
@@ -585,7 +585,7 @@ ActivityBase {
                 when: items.isHorizontalLayout
 
                 PropertyChanges {
-                    items.buttonSize: Math.min(((background.height - bar.height * 1.2) - 15 * items.baseMargins) * 0.125, 50 * ApplicationInfo.ratio)
+                    items.buttonSize: Math.min(((activityBackground.height - bar.height * 1.2) - 15 * items.baseMargins) * 0.125, 50 * ApplicationInfo.ratio)
                     items.panelHandleWidth: items.buttonSize + items.baseMargins * 3
                     items.panelHandleHeight: items.buttonSize * 2 + items.baseMargins * 3
                     items.panelHandleColumns: 1
@@ -611,7 +611,7 @@ ActivityBase {
                 when: !items.isHorizontalLayout
 
                 PropertyChanges {
-                    items.buttonSize: Math.min((background.width - 15 * items.baseMargins) * 0.125, 50 * ApplicationInfo.ratio)
+                    items.buttonSize: Math.min((activityBackground.width - 15 * items.baseMargins) * 0.125, 50 * ApplicationInfo.ratio)
                     items.panelHandleWidth: items.buttonSize * 2 + items.baseMargins * 3
                     items.panelHandleHeight: items.buttonSize + items.baseMargins * 3
                     items.panelHandleRows: 1
@@ -720,7 +720,7 @@ ActivityBase {
                 displayDialog(dialogHelp);
             }
             onHomeClicked: {
-                background.requestHome();
+                activityBackground.requestHome();
             }
             onReloadClicked: {
                 if(items.isSaved) {

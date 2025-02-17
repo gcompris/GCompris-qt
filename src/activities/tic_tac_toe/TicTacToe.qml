@@ -22,7 +22,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: background
+        id: activityBackground
         anchors.fill: parent
         source: Activity.url + "background.svg"
         sourceSize.width: width
@@ -40,7 +40,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
+            property alias activityBackground: activityBackground
 
             property alias player1score: player1score
             property alias player2score: player2score
@@ -70,7 +70,7 @@ ActivityBase {
         Image {
             id: board
             source: Activity.url + "board.svg"
-            sourceSize.width: 4 * Math.min(background.width / 4, background.height / 6)
+            sourceSize.width: 4 * Math.min(activityBackground.width / 4, activityBackground.height / 6)
             anchors {
                 verticalCenter: parent.verticalCenter
                 horizontalCenter: parent.horizontalCenter
@@ -180,12 +180,12 @@ ActivityBase {
         ScoreItem {
             id: player1score
             player: 1
-            height: Math.min(background.height/7, Math.min(background.width/7, bar.height * 1.05))
+            height: Math.min(activityBackground.height/7, Math.min(activityBackground.width/7, bar.height * 1.05))
             width: height*11/8
             anchors {
-                top: background.top
+                top: activityBackground.top
                 topMargin: 5
-                left: background.left
+                left: activityBackground.left
                 leftMargin: 5
             }
             playerImageSource: "qrc:/gcompris/src/core/resource/player_1.svg"
@@ -199,12 +199,12 @@ ActivityBase {
         ScoreItem {
             id: player2score
             player: 2
-            height: Math.min(background.height/7, Math.min(background.width/7, bar.height * 1.05))
+            height: Math.min(activityBackground.height/7, Math.min(activityBackground.width/7, bar.height * 1.05))
             width: height*11/8
             anchors {
-                top: background.top
+                top: activityBackground.top
                 topMargin: 5
-                right: background.right
+                right: activityBackground.right
                 rightMargin: 5
             }
             playerImageSource: "qrc:/gcompris/src/core/resource/player_2.svg"
