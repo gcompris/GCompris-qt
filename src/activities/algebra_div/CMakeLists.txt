@@ -8,6 +8,8 @@ GCOMPRIS_ADD_RESOURCE(activities/algebra_div
   *.qml
   *.js
   resource/*/Data.qml
-   RESOURCES
+  RESOURCES
   *.svg
+  DEPENDENCIES
+  algebra_by
 )
