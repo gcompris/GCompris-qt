@@ -410,7 +410,7 @@ ActivityBase {
                 }
                 PropertyChanges {
                     containerTexture {
-                        anchors.rightMargin: 3 * ApplicationInfo.ratio
+                        anchors.rightMargin: GCStyle.midBorder
                         anchors.bottomMargin: 0
                     }
                 }
@@ -452,7 +452,7 @@ ActivityBase {
                 PropertyChanges {
                     containerTexture {
                         anchors.rightMargin: 0
-                        anchors.bottomMargin: 3 * ApplicationInfo.ratio
+                        anchors.bottomMargin: GCStyle.midBorder
                     }
                 }
             }
