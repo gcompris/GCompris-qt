@@ -33,7 +33,7 @@ Item {
         width: height
         color: isSignSymbol || !clickable ? "transparent" : GCStyle.whiteBg
         border.color: isSignSymbol || !clickable ? "transparent" : GCStyle.blueBorder
-        border.width: selected ? GCStyle.thickestBorder : GCStyle.thinBorder
+        border.width: selected ? GCStyle.thickerBorder : GCStyle.thinBorder
         radius: GCStyle.halfMargins
         anchors.centerIn: parent
     }
