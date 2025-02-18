@@ -17428,9 +17428,11 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#: activities/magic-hat-plus/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
-msgid "The magician hat"
+msgid "The magician hat (subtraction)"
 msgstr "The magician hat"
 
 #. Help title
@@ -17519,6 +17521,15 @@ msgstr "Calculate remaining stars up to 10000 with coefficients."
 msgctxt "StarsBar|"
 msgid "%1x"
 msgstr "%1x"
+
+#. Activity title
+#: activities/magic-hat-plus/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
+msgctxt "ActivityInfo|"
+msgid "The magician hat (addition)"
+msgstr "The magician hat"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -19126,38 +19137,38 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl+S: Toggle the activity section bar"
 msgstr "Ctrl+S: Toggle the activity section bar"
 
-#: activities/menu/BackgroundMusicList.qml:64
+#: activities/menu/BackgroundMusicList.qml:57
 msgctxt "BackgroundMusicList|"
 msgid "Background music"
 msgstr "Background music"
 
-#: activities/menu/BackgroundMusicList.qml:129
+#: activities/menu/BackgroundMusicList.qml:136
 msgctxt "BackgroundMusicList|"
 msgid "Disable the background music if you don't want to play them."
 msgstr "Disable the background music if you don't want to play them."
 
 #. Current background music playing
-#: activities/menu/BackgroundMusicList.qml:169
+#: activities/menu/BackgroundMusicList.qml:173
 msgctxt "BackgroundMusicList|"
 msgid "Now Playing:"
 msgstr "Now Playing:"
 
 #. Title of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:178
+#: activities/menu/BackgroundMusicList.qml:181
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Title: %1"
 msgstr "Title: %1"
 
 #. Artist of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:187
+#: activities/menu/BackgroundMusicList.qml:189
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Artist: %1"
 msgstr "Artist: %1"
 
 #. Year of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:196
+#: activities/menu/BackgroundMusicList.qml:197
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Year: %1"
@@ -19215,33 +19226,33 @@ msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
 msgstr "Audio effects volume"
 
-#: activities/menu/ConfigurationItem.qml:212
+#: activities/menu/ConfigurationItem.qml:211
 msgctxt "ConfigurationItem|"
 msgid "Download background music"
 msgstr "Download background music"
 
-#: activities/menu/ConfigurationItem.qml:223
+#: activities/menu/ConfigurationItem.qml:222
 msgctxt "ConfigurationItem|"
 msgid "Enable background music"
 msgstr "Enable background music"
 
-#: activities/menu/ConfigurationItem.qml:232
+#: activities/menu/ConfigurationItem.qml:231
 msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr "Background Music"
 
-#: activities/menu/ConfigurationItem.qml:248
+#: activities/menu/ConfigurationItem.qml:247
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr "Not playing"
 
-#: activities/menu/ConfigurationItem.qml:250
+#: activities/menu/ConfigurationItem.qml:249
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr "Title: %1  Artist: %2"
 
-#: activities/menu/ConfigurationItem.qml:252
+#: activities/menu/ConfigurationItem.qml:251
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr "Introduction music"
@@ -19251,83 +19262,83 @@ msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr "Background music volume"
 
-#: activities/menu/ConfigurationItem.qml:306
+#: activities/menu/ConfigurationItem.qml:305
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is installed"
 msgstr "Full word image set is installed"
 
-#: activities/menu/ConfigurationItem.qml:306
+#: activities/menu/ConfigurationItem.qml:305
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is not installed"
 msgstr "Full word image set is not installed"
 
-#: activities/menu/ConfigurationItem.qml:320
+#: activities/menu/ConfigurationItem.qml:319
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
 msgstr "Download full word image set"
 
-#: activities/menu/ConfigurationItem.qml:331
+#: activities/menu/ConfigurationItem.qml:330
 msgctxt "ConfigurationItem|"
 msgid "Fullscreen"
 msgstr "Fullscreen"
 
-#: activities/menu/ConfigurationItem.qml:342
+#: activities/menu/ConfigurationItem.qml:341
 msgctxt "ConfigurationItem|"
 msgid "Virtual Keyboard"
 msgstr "Virtual Keyboard"
 
-#: activities/menu/ConfigurationItem.qml:353
+#: activities/menu/ConfigurationItem.qml:352
 msgctxt "ConfigurationItem|"
 msgid "The activity section menu is visible"
 msgstr "The activity section menu is visible"
 
-#: activities/menu/ConfigurationItem.qml:363
+#: activities/menu/ConfigurationItem.qml:362
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
 msgstr "Ask for confirmation to exit"
 
-#: activities/menu/ConfigurationItem.qml:374
+#: activities/menu/ConfigurationItem.qml:373
 msgctxt "ConfigurationItem|"
 msgid "Font selector"
 msgstr "Font selector"
 
-#: activities/menu/ConfigurationItem.qml:379
+#: activities/menu/ConfigurationItem.qml:378
 msgctxt "ConfigurationItem|"
 msgid "Font size"
 msgstr "Font size"
 
-#: activities/menu/ConfigurationItem.qml:399
-#: activities/menu/ConfigurationItem.qml:433
+#: activities/menu/ConfigurationItem.qml:397
+#: activities/menu/ConfigurationItem.qml:430
 msgctxt "ConfigurationItem|"
 msgid "Default"
 msgstr "Default"
 
-#: activities/menu/ConfigurationItem.qml:408
+#: activities/menu/ConfigurationItem.qml:406
 msgctxt "ConfigurationItem|"
 msgid "Font Capitalization"
 msgstr "Font Capitalisation"
 
-#: activities/menu/ConfigurationItem.qml:413
+#: activities/menu/ConfigurationItem.qml:411
 msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Font letter spacing"
 
-#: activities/menu/ConfigurationItem.qml:622
+#: activities/menu/ConfigurationItem.qml:619
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Mixed case (default)"
 
-#: activities/menu/ConfigurationItem.qml:626
+#: activities/menu/ConfigurationItem.qml:623
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "All uppercase"
 
-#: activities/menu/ConfigurationItem.qml:630
+#: activities/menu/ConfigurationItem.qml:627
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "All lowercase"
 
-#: activities/menu/Menu.qml:90
+#: activities/menu/Menu.qml:89
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, do you want to download the corresponding sound "
@@ -19336,77 +19347,77 @@ msgstr ""
 "You selected a new locale, do you want to download the corresponding sound "
 "files now?"
 
-#: activities/menu/Menu.qml:91
+#: activities/menu/Menu.qml:90
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "Yes"
 
-#: activities/menu/Menu.qml:98
+#: activities/menu/Menu.qml:97
 msgctxt "Menu|"
 msgid "No"
 msgstr "No"
 
-#: activities/menu/Menu.qml:117
+#: activities/menu/Menu.qml:116
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "Logic"
 
-#: activities/menu/Menu.qml:118
+#: activities/menu/Menu.qml:117
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "Fine Arts"
 
-#: activities/menu/Menu.qml:119
+#: activities/menu/Menu.qml:118
 msgctxt "Menu|"
 msgid "Music"
 msgstr "Music"
 
-#: activities/menu/Menu.qml:125
+#: activities/menu/Menu.qml:124
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "Experiment"
 
-#: activities/menu/Menu.qml:126
+#: activities/menu/Menu.qml:125
 msgctxt "Menu|"
 msgid "History"
 msgstr "History"
 
-#: activities/menu/Menu.qml:127
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "Geography"
 
-#: activities/menu/Menu.qml:137
+#: activities/menu/Menu.qml:136
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Numeration"
 
-#: activities/menu/Menu.qml:138
+#: activities/menu/Menu.qml:137
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "Arithmetic"
 
-#: activities/menu/Menu.qml:139
+#: activities/menu/Menu.qml:138
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "Measures"
 
-#: activities/menu/Menu.qml:149
+#: activities/menu/Menu.qml:148
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "Letters"
 
-#: activities/menu/Menu.qml:150
+#: activities/menu/Menu.qml:149
 msgctxt "Menu|"
 msgid "Words"
 msgstr "Words"
 
-#: activities/menu/Menu.qml:151
+#: activities/menu/Menu.qml:150
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Vocabulary"
 
-#: activities/menu/Menu.qml:376
+#: activities/menu/Menu.qml:662
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19415,12 +19426,12 @@ msgstr ""
 "Put your favourite activities here by clicking on the sun at the top right "
 "of that activity."
 
-#: activities/menu/Menu.qml:792
+#: activities/menu/Menu.qml:781
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Search specific activities"
 
-#: activities/menu/Menu.qml:819
+#: activities/menu/Menu.qml:810
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Activity Settings"
@@ -27913,80 +27924,80 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "GCompris' language"
 
-#: core/main.cpp:73
+#: core/main.cpp:76
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "Run GCompris with the default system cursor."
 
-#: core/main.cpp:77
+#: core/main.cpp:80
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "Run GCompris without cursor (touch screen mode)."
 
-#: core/main.cpp:81
+#: core/main.cpp:84
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "Run GCompris in fullscreen mode."
 
-#: core/main.cpp:85
+#: core/main.cpp:88
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "Run GCompris in window mode."
 
-#: core/main.cpp:89
+#: core/main.cpp:92
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "Run GCompris with sound enabled."
 
-#: core/main.cpp:93
+#: core/main.cpp:96
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "Run GCompris without sound."
 
-#: core/main.cpp:96
+#: core/main.cpp:99
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Disable the kiosk mode (default)."
 
-#: core/main.cpp:99
+#: core/main.cpp:102
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Enable the kiosk mode."
 
-#: core/main.cpp:103
-msgctxt "QObject|"
-msgid ""
-"Use software renderer instead of openGL (slower but should run with any "
-"graphical card). Deprecated, use --renderer=software instead."
-msgstr ""
-"Use software renderer instead of openGL (slower but should run with any "
-"graphical card). Deprecated, use --renderer=software instead."
-
 #: core/main.cpp:106
 msgctxt "QObject|"
 msgid ""
+"Use software renderer instead of openGL (slower but should run with any "
+"graphical card). Deprecated, use --renderer=software instead."
+msgstr ""
+"Use software renderer instead of openGL (slower but should run with any "
+"graphical card). Deprecated, use --renderer=software instead."
+
+#: core/main.cpp:109
+msgctxt "QObject|"
+msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
 "depending on your graphical card). Deprecated, use --renderer=opengl instead."
 msgstr ""
 "Use openGL renderer instead of software (faster but crash potentially "
 "depending on your graphical card). Deprecated, use --renderer=opengl instead."
 
-#: core/main.cpp:110
+#: core/main.cpp:113
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 msgstr "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 
-#: core/main.cpp:114
+#: core/main.cpp:117
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "Specify the activity when starting GCompris."
 
-#: core/main.cpp:119
+#: core/main.cpp:122
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Outputs all the available activities on the standard output."
 
-#: core/main.cpp:123
+#: core/main.cpp:126
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -27995,7 +28006,7 @@ msgstr ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 
-#: core/main.cpp:127
+#: core/main.cpp:130
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "

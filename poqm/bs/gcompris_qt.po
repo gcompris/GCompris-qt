@@ -17082,10 +17082,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#: activities/magic-hat-plus/ActivityInfo.qml:15
 #, fuzzy
 msgctxt "ActivityInfo|"
-msgid "The magician hat"
+msgid "The magician hat (subtraction)"
 msgstr "Čarobnjakov šešir"
 
 #. Help title
@@ -17183,6 +17182,13 @@ msgstr ""
 msgctxt "StarsBar|"
 msgid "%1x"
 msgstr ""
+
+#. Activity title
+#: activities/magic-hat-plus/ActivityInfo.qml:15
+#, fuzzy
+msgctxt "ActivityInfo|"
+msgid "The magician hat (addition)"
+msgstr "Čarobnjakov šešir"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -18908,38 +18914,38 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl+S: Toggle the activity section bar"
 msgstr ""
 
-#: activities/menu/BackgroundMusicList.qml:64
+#: activities/menu/BackgroundMusicList.qml:57
 msgctxt "BackgroundMusicList|"
 msgid "Background music"
 msgstr ""
 
-#: activities/menu/BackgroundMusicList.qml:129
+#: activities/menu/BackgroundMusicList.qml:136
 msgctxt "BackgroundMusicList|"
 msgid "Disable the background music if you don't want to play them."
 msgstr ""
 
 #. Current background music playing
-#: activities/menu/BackgroundMusicList.qml:169
+#: activities/menu/BackgroundMusicList.qml:173
 msgctxt "BackgroundMusicList|"
 msgid "Now Playing:"
 msgstr ""
 
 #. Title of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:178
+#: activities/menu/BackgroundMusicList.qml:181
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Title: %1"
 msgstr ""
 
 #. Artist of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:187
+#: activities/menu/BackgroundMusicList.qml:189
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Artist: %1"
 msgstr ""
 
 #. Year of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:196
+#: activities/menu/BackgroundMusicList.qml:197
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Year: %1"
@@ -19012,7 +19018,7 @@ msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
 msgstr "Uključi audio efekte"
 
-#: activities/menu/ConfigurationItem.qml:212
+#: activities/menu/ConfigurationItem.qml:211
 #, fuzzy
 #| msgctxt "DialogConfig|"
 #| msgid "Enable audio voices"
@@ -19020,7 +19026,7 @@ msgctxt "ConfigurationItem|"
 msgid "Download background music"
 msgstr "Uključi zvuke i glasove"
 
-#: activities/menu/ConfigurationItem.qml:223
+#: activities/menu/ConfigurationItem.qml:222
 #, fuzzy
 #| msgctxt "DialogConfig|"
 #| msgid "Enable audio voices"
@@ -19028,23 +19034,23 @@ msgctxt "ConfigurationItem|"
 msgid "Enable background music"
 msgstr "Uključi zvuke i glasove"
 
-#: activities/menu/ConfigurationItem.qml:232
+#: activities/menu/ConfigurationItem.qml:231
 msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:248
+#: activities/menu/ConfigurationItem.qml:247
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:250
+#: activities/menu/ConfigurationItem.qml:249
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:252
+#: activities/menu/ConfigurationItem.qml:251
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr ""
@@ -19054,24 +19060,24 @@ msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:306
+#: activities/menu/ConfigurationItem.qml:305
 #, fuzzy
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is installed"
 msgstr "Pronađi trokut"
 
-#: activities/menu/ConfigurationItem.qml:306
+#: activities/menu/ConfigurationItem.qml:305
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is not installed"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:320
+#: activities/menu/ConfigurationItem.qml:319
 #, fuzzy
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
 msgstr "Pronađi trokut"
 
-#: activities/menu/ConfigurationItem.qml:331
+#: activities/menu/ConfigurationItem.qml:330
 #, fuzzy
 #| msgctxt "DialogConfig|"
 #| msgid "Fullscreen"
@@ -19079,33 +19085,33 @@ msgctxt "ConfigurationItem|"
 msgid "Fullscreen"
 msgstr "Pun ekran"
 
-#: activities/menu/ConfigurationItem.qml:342
+#: activities/menu/ConfigurationItem.qml:341
 msgctxt "ConfigurationItem|"
 msgid "Virtual Keyboard"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:353
+#: activities/menu/ConfigurationItem.qml:352
 msgctxt "ConfigurationItem|"
 msgid "The activity section menu is visible"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:363
+#: activities/menu/ConfigurationItem.qml:362
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:374
+#: activities/menu/ConfigurationItem.qml:373
 msgctxt "ConfigurationItem|"
 msgid "Font selector"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:379
+#: activities/menu/ConfigurationItem.qml:378
 msgctxt "ConfigurationItem|"
 msgid "Font size"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:399
-#: activities/menu/ConfigurationItem.qml:433
+#: activities/menu/ConfigurationItem.qml:397
+#: activities/menu/ConfigurationItem.qml:430
 #, fuzzy
 #| msgctxt "DialogConfig|"
 #| msgid "Default"
@@ -19113,131 +19119,131 @@ msgctxt "ConfigurationItem|"
 msgid "Default"
 msgstr "Podrazumijevano"
 
-#: activities/menu/ConfigurationItem.qml:408
+#: activities/menu/ConfigurationItem.qml:406
 msgctxt "ConfigurationItem|"
 msgid "Font Capitalization"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:413
+#: activities/menu/ConfigurationItem.qml:411
 msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:622
+#: activities/menu/ConfigurationItem.qml:619
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:626
+#: activities/menu/ConfigurationItem.qml:623
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:630
+#: activities/menu/ConfigurationItem.qml:627
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr ""
 
-#: activities/menu/Menu.qml:90
+#: activities/menu/Menu.qml:89
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, do you want to download the corresponding sound "
 "files now?"
 msgstr ""
 
-#: activities/menu/Menu.qml:91
+#: activities/menu/Menu.qml:90
 msgctxt "Menu|"
 msgid "Yes"
 msgstr ""
 
-#: activities/menu/Menu.qml:98
+#: activities/menu/Menu.qml:97
 msgctxt "Menu|"
 msgid "No"
 msgstr ""
 
-#: activities/menu/Menu.qml:117
+#: activities/menu/Menu.qml:116
 #, fuzzy
 #| msgid "Login"
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "Prijava"
 
-#: activities/menu/Menu.qml:118
+#: activities/menu/Menu.qml:117
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr ""
 
-#: activities/menu/Menu.qml:119
+#: activities/menu/Menu.qml:118
 msgctxt "Menu|"
 msgid "Music"
 msgstr ""
 
-#: activities/menu/Menu.qml:125
+#: activities/menu/Menu.qml:124
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr ""
 
-#: activities/menu/Menu.qml:126
+#: activities/menu/Menu.qml:125
 msgctxt "Menu|"
 msgid "History"
 msgstr ""
 
-#: activities/menu/Menu.qml:127
+#: activities/menu/Menu.qml:126
 #, fuzzy
 #| msgid "Time, Geography, ..."
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "Vrijeme, Geografija, ..."
 
-#: activities/menu/Menu.qml:137
+#: activities/menu/Menu.qml:136
 #, fuzzy
 #| msgid "Numeration"
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Prebrojavanje"
 
-#: activities/menu/Menu.qml:138
+#: activities/menu/Menu.qml:137
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr ""
 
-#: activities/menu/Menu.qml:139
+#: activities/menu/Menu.qml:138
 msgctxt "Menu|"
 msgid "Measures"
 msgstr ""
 
-#: activities/menu/Menu.qml:149
+#: activities/menu/Menu.qml:148
 #, fuzzy
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "Jednostavna slova"
 
-#: activities/menu/Menu.qml:150
+#: activities/menu/Menu.qml:149
 msgctxt "Menu|"
 msgid "Words"
 msgstr ""
 
-#: activities/menu/Menu.qml:151
+#: activities/menu/Menu.qml:150
 #, fuzzy
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Čitanje riječi"
 
-#: activities/menu/Menu.qml:376
+#: activities/menu/Menu.qml:662
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
 "that activity."
 msgstr ""
 
-#: activities/menu/Menu.qml:792
+#: activities/menu/Menu.qml:781
 #, fuzzy
 #| msgid "Mathematical activities."
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Matematičke vježbe."
 
-#: activities/menu/Menu.qml:819
+#: activities/menu/Menu.qml:810
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr ""
@@ -27411,37 +27417,37 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "Glavni meni GKomprisa"
 
-#: core/main.cpp:73
+#: core/main.cpp:76
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr ""
 
-#: core/main.cpp:77
+#: core/main.cpp:80
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr ""
 
-#: core/main.cpp:81
+#: core/main.cpp:84
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr ""
 
-#: core/main.cpp:85
+#: core/main.cpp:88
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr ""
 
-#: core/main.cpp:89
+#: core/main.cpp:92
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr ""
 
-#: core/main.cpp:93
+#: core/main.cpp:96
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr ""
 
-#: core/main.cpp:96
+#: core/main.cpp:99
 #, fuzzy
 #| msgctxt "instruments|"
 #| msgid "Find the snare drum"
@@ -27449,7 +27455,7 @@ msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Pronađi bubanj"
 
-#: core/main.cpp:99
+#: core/main.cpp:102
 #, fuzzy
 #| msgctxt "instruments|"
 #| msgid "Find the snare drum"
@@ -27457,43 +27463,43 @@ msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Pronađi bubanj"
 
-#: core/main.cpp:103
+#: core/main.cpp:106
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card). Deprecated, use --renderer=software instead."
 msgstr ""
 
-#: core/main.cpp:106
+#: core/main.cpp:109
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
 "depending on your graphical card). Deprecated, use --renderer=opengl instead."
 msgstr ""
 
-#: core/main.cpp:110
+#: core/main.cpp:113
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 msgstr ""
 
-#: core/main.cpp:114
+#: core/main.cpp:117
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr ""
 
-#: core/main.cpp:119
+#: core/main.cpp:122
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr ""
 
-#: core/main.cpp:123
+#: core/main.cpp:126
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
 
-#: core/main.cpp:127
+#: core/main.cpp:130
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
