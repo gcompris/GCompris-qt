@@ -36,6 +36,7 @@ QtObject {
 
     // border colors
     readonly property color whiteBorder: "#ffffff"
+    readonly property color lightBorder: "#f2f2f2"
     readonly property color darkBorder: "#373737"
     readonly property color darkerBorder: "#191919"
     readonly property color noBorder: "#00ffffff"
