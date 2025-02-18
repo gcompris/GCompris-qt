@@ -66,8 +66,6 @@ function getOperands(min, max)
 }
 
 function initLevel() {
-    items.score.visible = false
-    items.okButton.visible = false
     items.score.currentSubLevel = 0
     subLevelData = []
 
@@ -103,8 +101,6 @@ function initLevel() {
     subLevelData = Core.shuffle(subLevelData)
     calculateOperands()
     items.iAmReady.visible = true
-    items.firstOp.visible = false
-    items.secondOp.visible = false
     items.balloon.stopMoving()
 }
 
@@ -169,11 +165,7 @@ function run() {
     circularShiftElements()
     calculateOperands()
     items.numpad.resetText()
-    items.score.visible = true
     items.iAmReady.visible = false
-    items.firstOp.visible = true
-    items.secondOp.visible = true
-    items.okButton.visible = true
     items.numpad.answerFlag = false
     items.result = getAnswer(firstOperandVal, secondOperandVal)
     items.balloon.startMoving(100000 / speedSetting)

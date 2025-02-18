@@ -11,8 +11,8 @@ import "../../core"
 
 Item {
 
-    width: text.width
-    height: text.height
+    width: text.contentWidth
+    height: text.contentHeight
 
     property alias text: text.text
 
@@ -21,8 +21,8 @@ Item {
         fontSize: hugeSize
         font.bold: true
         style: Text.Outline
-        styleColor: "white"
-        color: "black"
+        styleColor: GCStyle.whiteText
+        color: GCStyle.darkerText
     }
 
     MultiEffect {

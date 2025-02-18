@@ -20,7 +20,7 @@ Item {
     width: flick.width
     height: childrenRect.height
     Column {
-        spacing: 10 * ApplicationInfo.ratio
+        spacing: GCStyle.baseMargins
         width: activityConfiguration.width
         GCText {
             id: speedSliderText

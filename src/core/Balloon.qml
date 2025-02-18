@@ -27,8 +27,8 @@ Image {
     id: balloon
     source: "qrc:/gcompris/src/core/resource/tuxballoon.svg";
     sourceSize.width: parent.width * 0.4
-    x: parent.width / 2
-    y: - balloon.height
+    x: parent.width * 0.5
+    y: -balloon.height
 
     /**
      * type:int
@@ -57,6 +57,11 @@ Image {
      */
     property bool activityRunning: true
 
+    onHeightChanged: {
+        if(activityRunning) {
+            startMoving(duration)
+        }
+    }
     onParentHeightChanged: {
         if(activityRunning) {
             startMoving(duration)
