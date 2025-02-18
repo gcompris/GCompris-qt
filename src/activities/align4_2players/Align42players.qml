@@ -45,8 +45,6 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias activityBackground: activityBackground
-            property int baseMargins: 10 * ApplicationInfo.ratio
-            property int smallMargins: 5 * ApplicationInfo.ratio
             property alias fallingPiece: fallingPiece
             property alias pieces: pieces
             property alias dynamic: dynamic
@@ -59,8 +57,8 @@ ActivityBase {
             property alias columns: grid.columns
             property alias rows: grid.rows
             property alias trigTuxMove: trigTuxMove
-            property int cellSize: activityBackground.horizontalLayout ? layoutArea1.height / (grid.rows + 1) - smallMargins :
-                    Math.min(layoutArea2.width / grid.columns, layoutArea2.height / (grid.rows + 1)) - smallMargins
+            property int cellSize: activityBackground.horizontalLayout ? layoutArea1.height / (grid.rows + 1) - GCStyle.halfMargins :
+                    Math.min(layoutArea2.width / grid.columns, layoutArea2.height / (grid.rows + 1)) - GCStyle.halfMargins
             property bool gameDone: false
             property int counter
             property int nextPlayerStart: 1
@@ -100,7 +98,7 @@ ActivityBase {
 
         Item {
             id: layoutArea1
-            width: activityBackground.width - 4 * items.baseMargins - 2.8 * player1score.width
+            width: activityBackground.width - 4 * GCStyle.baseMargins - 2.8 * player1score.width
             anchors.top: activityBackground.top
             anchors.bottom: activityBackground.bottom
             anchors.topMargin: player1score.height * 0.5
@@ -113,9 +111,9 @@ ActivityBase {
             anchors {
                 fill: parent
                 bottomMargin: bar.height * 1.2
-                topMargin: player1score.height * 1.4 + 2 * items.baseMargins
-                leftMargin: items.baseMargins
-                rightMargin: items.baseMargins
+                topMargin: player1score.height * 1.4 + 2 * GCStyle.baseMargins
+                leftMargin: GCStyle.baseMargins
+                rightMargin: GCStyle.baseMargins
 
             }
         }
@@ -123,8 +121,8 @@ ActivityBase {
         Item {
             id: gridContainer
             z: 2
-            width: items.cellSize * grid.columns + 6 * items.smallMargins
-            height: items.cellSize * grid.rows + 5 * items.smallMargins
+            width: items.cellSize * grid.columns + 6 * GCStyle.halfMargins
+            height: items.cellSize * grid.rows + 5 * GCStyle.halfMargins
             anchors.verticalCenterOffset: items.cellSize * 0.5
             states: [
                 State {
@@ -158,7 +156,7 @@ ActivityBase {
 
             Grid {
                 id: grid
-                spacing: items.smallMargins
+                spacing: GCStyle.halfMargins
                 columns: 7
                 rows: 6
 
@@ -173,9 +171,7 @@ ActivityBase {
                             color: "#DDAAAAAA";
                             width: items.cellSize
                             height: items.cellSize
-                            radius: width / 2
-                            border.color: "#FFFFFFFF"
-                            border.width: 0
+                            radius: width * 0.5
                             Piece {
                                 anchors.fill: parent
                                 state: stateTemp
@@ -257,9 +253,9 @@ ActivityBase {
             width: height*11/8
             anchors {
                 top: activityBackground.top
-                topMargin: items.baseMargins
+                topMargin: GCStyle.baseMargins
                 left: activityBackground.left
-                leftMargin: items.baseMargins
+                leftMargin: GCStyle.baseMargins
             }
             playerImageSource: "qrc:/gcompris/src/core/resource/player_1.svg"
             backgroundImageSource: Activity.url + "score_1.svg"
@@ -273,9 +269,9 @@ ActivityBase {
             width: height*11/8
             anchors {
                 top: activityBackground.top
-                topMargin: items.baseMargins
+                topMargin: GCStyle.baseMargins
                 right: activityBackground.right
-                rightMargin: items.baseMargins
+                rightMargin: GCStyle.baseMargins
             }
             playerImageSource: "qrc:/gcompris/src/core/resource/player_2.svg"
             backgroundImageSource: Activity.url + "score_2.svg"
