@@ -106,7 +106,7 @@ ActivityBase {
             property bool isTutorialMode: mode == "tutorial" ? true : false
             property alias infoImage: infoImage
             property alias tutorialInstruction: tutorialInstruction
-            property real toolsMargin: 90 * ApplicationInfo.ratio
+            property real toolsMargin: 83 * ApplicationInfo.ratio
             property real zoomLvl: 0.25
         }
 
@@ -123,9 +123,9 @@ ActivityBase {
             id: introArea
             anchors {
                 fill: parent
-                topMargin: (activityBackground.hori ? 0 : inputComponentsContainer.height) + 10 * ApplicationInfo.ratio
-                rightMargin: 10 * ApplicationInfo.ratio
-                leftMargin: (activityBackground.hori ? inputComponentsContainer.width : 0) + 10 * ApplicationInfo.ratio
+                topMargin: (activityBackground.hori ? 0 : inputComponentsContainer.height) + GCStyle.baseMargins
+                rightMargin: GCStyle.baseMargins
+                leftMargin: (activityBackground.hori ? inputComponentsContainer.width : 0) + GCStyle.baseMargins
                 bottomMargin: bar.height * 2
             }
         }
@@ -140,21 +140,20 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        Rectangle {
+        Item {
             id: visibleArea
-            color: "#00000000"
-            width: activityBackground.hori ? activityBackground.width - items.toolsMargin - 10 : activityBackground.width - 10
-            height: activityBackground.hori ? activityBackground.height - bar.height - items.toolsMargin - 10 : activityBackground.height - bar.height - 10
+            width:activityBackground.width - items.toolsMargin - GCStyle.baseMargins
+            height: activityBackground.height - bar.height - items.toolsMargin - GCStyle.baseMargins
             anchors {
                 fill: undefined
-                top: activityBackground.hori ? parent.top : inputComponentsContainer.bottom
-                topMargin: 5
+                top: parent.top
+                topMargin: GCStyle.halfMargins
                 right: parent.right
-                rightMargin: 5
-                left: activityBackground.hori ? inputComponentsContainer.right : parent.left
-                leftMargin: 5
+                rightMargin: GCStyle.halfMargins
+                left: inputComponentsContainer.right
+                leftMargin: GCStyle.halfMargins
                 bottom: bar.top
-                bottomMargin: 20
+                bottomMargin: GCStyle.baseMargins
             }
             z: 6
 
@@ -163,12 +162,12 @@ ActivityBase {
                 anchors {
                     horizontalCenter: parent.horizontalCenter
                     top: parent.top
-                    topMargin: 2
+                    topMargin: GCStyle.tineMargins
                 }
                 fontSizeMode: Text.Fit
                 minimumPixelSize: 10
                 font.pixelSize: 150
-                color: "white"
+                color: GCStyle.whiteText
                 horizontalAlignment: Text.AlignHLeft
                 width: Math.min(implicitWidth, 0.90 * parent.width)
                 height:  inputOutputTxt.visible == false ? Math.min(implicitHeight, 0.7 * parent.height) :
@@ -181,11 +180,10 @@ ActivityBase {
             Rectangle {
                 id: infoTxtContainer
                 anchors.fill: parent
-                opacity: 1
-                radius: 10
-                color: "#373737"
-                border.width: 2
-                border.color: "#F2F2F2"
+                radius: GCStyle.halfMargins
+                color: GCStyle.darkBg
+                border.width: GCStyle.thinnestBorder
+                border.color: GCStyle.lightBorder
                 visible: infoTxt.visible
                 MouseArea {
                     anchors.fill: parent
@@ -197,8 +195,8 @@ ActivityBase {
             Image {
                 id: infoImage
                 property bool imgVisible: false
-                height: source == "" ? 0 : parent.height * 0.3 - 10
-                width: source == "" ? 0 : parent.width - 10
+                height: source == "" ? 0 : parent.height * 0.3 - GCStyle.halfMargins
+                width: source == "" ? 0 : parent.width - GCStyle.halfMargins
                 fillMode: Image.PreserveAspectFit
                 visible: infoTxt.visible && imgVisible
                 anchors {
@@ -235,8 +233,8 @@ ActivityBase {
                     color: "#A7D9F9"
                     width: inputOutputTxt.inputs > 1 ? inputOutputTxt.maxWidth * inputOutputTxt.inputs : inputOutputTxt.minSize
                     height: inputOutputTxt.cellSize
-                    border.color: "#373737"
-                    border.width: 1
+                    border.color: GCStyle.darkBorder
+                    border.width: GCStyle.thinnestBorder
                     GCText {
                         anchors.centerIn: parent
                         fontSizeMode: Text.Fit
@@ -253,8 +251,8 @@ ActivityBase {
                     color: "#A7F9DD"
                     width: inputOutputTxt.outputs > 1 ? inputOutputTxt.maxWidth * inputOutputTxt.outputs : inputOutputTxt.minSize
                     height: inputOutputTxt.cellSize
-                    border.color: "#373737"
-                    border.width: 1
+                    border.color: GCStyle.darkBorder
+                    border.width: GCStyle.thinnestBorder
                     GCText {
                         anchors.centerIn: parent
                         fontSizeMode: Text.Fit
@@ -325,11 +323,8 @@ ActivityBase {
             color: "#10000000"
             x: activityBackground.hori ? items.toolsMargin : 0
             y: activityBackground.hori ? 0 : items.toolsMargin
-            width: activityBackground.hori ?
-                       activityBackground.width * 4 - items.toolsMargin : activityBackground.width * 4
-            height: activityBackground.hori ?
-                       activityBackground.height * 4 - (bar.height * 1.1) :
-                       activityBackground.height * 4 - (bar.height * 1.1) - items.toolsMargin
+            width: activityBackground.width * 4 - items.toolsMargin
+            height: activityBackground.height * 4 - (bar.height * 1.1)
 
             PinchArea {
                 id: pinchZoom
@@ -349,9 +344,9 @@ ActivityBase {
                     drag.target: playArea
                     drag.axis: Drag.XandYAxis
                     drag.minimumX: - playArea.width * items.zoomLvl
-                    drag.maximumX: activityBackground.hori ? items.toolsMargin : 0
+                    drag.maximumX: items.toolsMargin
                     drag.minimumY: - playArea.height * items.zoomLvl
-                    drag.maximumY: activityBackground.hori ? 0 : items.toolsMargin
+                    drag.maximumY: 0
                     onClicked: {
                         Activity.disableToolDelete();
                         Activity.deselect();
@@ -363,23 +358,18 @@ ActivityBase {
 
         Rectangle {
             id: inputComponentsContainer
-            width: activityBackground.hori ?
-                       items.toolsMargin :
-                       activityBackground.width
-            height: activityBackground.hori ?
-                        activityBackground.height :
-                        items.toolsMargin
+            width: items.toolsMargin
+            height: activityBackground.height
             color: "#4A3823"
             anchors.left: parent.left
             Image {
+                id: containerTexture
                 anchors.fill: parent
-                anchors.rightMargin: activityBackground.hori ? 3 * ApplicationInfo.ratio : 0
-                anchors.bottomMargin: activityBackground.hori ? 0 : 3 * ApplicationInfo.ratio
+                anchors.rightMargin: GCStyle.midBorder
                 source: Activity.url + "texture01.webp"
                 fillMode: Image.Tile
                 ListWidget {
                     id: availablePieces
-                    hori: activityBackground.hori
                 }
             }
             z: 10
@@ -389,18 +379,18 @@ ActivityBase {
             id: toolTip
             anchors {
                 bottom: bar.top
-                bottomMargin: 10
+                bottomMargin: GCStyle.halfMargins
                 left: inputComponentsContainer.left
-                leftMargin: 5
+                leftMargin: GCStyle.halfMargins
             }
-            width: toolTipTxt.width + 10
-            height: toolTipTxt.height + 5
-            color: "#373737"
+            width: toolTipTxt.width + GCStyle.baseMargins
+            height: toolTipTxt.height + GCStyle.halfMargins
+            color: GCStyle.darkBg
             opacity: 1
-            radius: 10
+            radius: GCStyle.halfMargins
             z: 100
-            border.width: 2
-            border.color: "#F2F2F2"
+            border.width: GCStyle.thinnestBorder
+            border.color: GCStyle.lightBorder
             property alias text: toolTipTxt.text
             Behavior on opacity { NumberAnimation { duration: 120 } }
 
@@ -417,7 +407,7 @@ ActivityBase {
                 id: toolTipTxt
                 anchors.centerIn: parent
                 fontSize: regularSize
-                color: "white"
+                color: GCStyle.whiteText
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: TextEdit.WordWrap
             }
@@ -447,11 +437,11 @@ ActivityBase {
             anchors {
                 bottom: bar.top
                 right: parent.right
-                rightMargin: 10 * ApplicationInfo.ratio
+                rightMargin: GCStyle.baseMargins
                 bottomMargin: height * 0.5
             }
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: 60 * ApplicationInfo.ratio
+            width: GCStyle.bigButtonHeight
             enabled: !tutorialInstruction.visible && !bonus.isPlaying
             onClicked: Activity.checkAnswer()
         }
@@ -474,6 +464,90 @@ ActivityBase {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
-    }
 
+        states: [
+            State {
+                id: horizontalView
+                when: activityBackground.hori
+                PropertyChanges {
+                    visibleArea {
+                        width: activityBackground.width - items.toolsMargin - GCStyle.baseMargins
+                        height: activityBackground.height - bar.height - items.toolsMargin - GCStyle.baseMargins
+                    }
+                }
+                AnchorChanges {
+                    target: visibleArea
+                    anchors.top: parent.top
+                    anchors.left: inputComponentsContainer.right
+                }
+                PropertyChanges {
+                    playArea {
+                        x: items.toolsMargin
+                        y: 0
+                        width: activityBackground.width * 4 - items.toolsMargin
+                        height: activityBackground.height * 4 - (bar.height * 1.1)
+                    }
+                }
+                PropertyChanges {
+                    mousePan {
+                        drag.maximumX: items.toolsMargin
+                        drag.maximumY: 0
+                    }
+                }
+                PropertyChanges {
+                    inputComponentsContainer {
+                        width: items.toolsMargin
+                        height: activityBackground.height
+                    }
+                }
+                PropertyChanges {
+                    containerTexture {
+                        anchors.rightMargin: GCStyle.midBorder
+                        anchors.bottomMargin: 0
+                    }
+                }
+            },
+            State {
+                id: verticalView
+                when: !activityBackground.hori
+                PropertyChanges {
+                    visibleArea {
+                        width: activityBackground.width - GCStyle.baseMargins
+                        height: activityBackground.height - bar.height - GCStyle.baseMargins
+                    }
+                }
+                AnchorChanges {
+                    target: visibleArea
+                    anchors.top: inputComponentsContainer.bottom
+                    anchors.left: parent.left
+                }
+                PropertyChanges {
+                    playArea {
+                        x: 0
+                        y: items.toolsMargin
+                        width: activityBackground.width * 4
+                        height: activityBackground.height * 4 - (bar.height * 1.1) - items.toolsMargin
+                    }
+                }
+                PropertyChanges {
+                    mousePan {
+                        drag.maximumX: 0
+                        drag.maximumY: items.toolsMargin
+                    }
+                }
+                PropertyChanges {
+                    inputComponentsContainer {
+                        width: activityBackground.width
+                        height: items.toolsMargin
+                    }
+                }
+                PropertyChanges {
+                    containerTexture {
+                        anchors.rightMargin: 0
+                        anchors.bottomMargin: GCStyle.midBorder
+                    }
+                }
+            }
+        ]
+    }
 }
