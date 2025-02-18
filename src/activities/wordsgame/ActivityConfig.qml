@@ -31,7 +31,7 @@ Item {
     }
 
     Column {
-        spacing: 10 * ApplicationInfo.ratio
+        spacing: GCStyle.baseMargins
         width: activityConfiguration.width
         GCComboBox {
             id: localeBox

@@ -24,7 +24,7 @@ Item {
         { "text": qsTr("Difficult"), "value": 3 }
     ]
     Column {
-        spacing: 10 * ApplicationInfo.ratio
+        spacing: GCStyle.baseMargins
         width: parent.width
         GCComboBox {
             id: modeBox

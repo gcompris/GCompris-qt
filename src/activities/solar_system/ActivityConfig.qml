@@ -23,7 +23,7 @@ Item {
         { "text": qsTr("Assessment Mode"), "value": "assessment" }
     ]
     Column {
-        spacing: 10 * ApplicationInfo.ratio
+        spacing: GCStyle.baseMargins
         width: parent.width
         GCComboBox {
             id: modeBox
