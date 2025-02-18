@@ -23,7 +23,7 @@ Item {
         { "text": qsTr("Images"), "value": "IMAGE" }
     ]
     Column {
-        spacing: 10 * ApplicationInfo.ratio
+        spacing: GCStyle.baseMargins
         width: parent.width
         GCComboBox {
             id: modeBox

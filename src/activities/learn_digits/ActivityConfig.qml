@@ -26,7 +26,7 @@ Item {
         { "text": qsTr("Fingers"), "value": 3 }
     ]
     Column {
-        spacing: 10 * ApplicationInfo.ratio
+        spacing: GCStyle.baseMargins
         width: parent.width
         GCComboBox {
             id: modeBox

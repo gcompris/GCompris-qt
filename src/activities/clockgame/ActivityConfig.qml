@@ -25,7 +25,7 @@ Item {
         { "text": qsTr("24 hours"), "value": 2 }
     ]
     Column {
-        spacing: 10 * ApplicationInfo.ratio
+        spacing: GCStyle.baseMargins
         width: parent.width
         GCComboBox {
             id: modeBox

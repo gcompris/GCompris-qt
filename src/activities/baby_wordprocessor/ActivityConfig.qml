@@ -19,7 +19,7 @@ Item {
 
     Column {
         id: column
-        spacing: 10
+        spacing: GCStyle.baseMargins
         width: parent.width
 
         GCDialogCheckBox {

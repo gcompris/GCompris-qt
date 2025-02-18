@@ -22,7 +22,7 @@ Item {
 
     Column {
         id: column
-        spacing: 5
+        spacing: GCStyle.baseMargins
         width: parent.width
         height: parent.height
         property alias easyModeBox: easyModeBox

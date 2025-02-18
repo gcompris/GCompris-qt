@@ -24,7 +24,7 @@ Item {
     ]
 
     Column {
-        spacing: 10 * ApplicationInfo.ratio
+        spacing: GCStyle.baseMargins
         width: parent.width
         GCComboBox {
             id: modeBox

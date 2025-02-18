@@ -30,7 +30,7 @@ Item {
 
     Column {
         id: column
-        spacing: 10 * ApplicationInfo.ratio
+        spacing: GCStyle.baseMargins
         width: activityConfiguration.width
         GCComboBox {
             id: modeBox
@@ -50,7 +50,7 @@ Item {
             id: labels
             width: parent.width
             height: 50 * ApplicationInfo.ratio
-            spacing: 10 * ApplicationInfo.ratio
+            spacing: GCStyle.baseMargins
             visible: modeBox.currentIndex == 0
             Repeater {
                 model: 2
@@ -58,13 +58,13 @@ Item {
                     id: label
                     width: (labels.width - labels.spacing) * 0.4
                     height: labels.height
-                    radius: 10 * ApplicationInfo.ratio
+                    radius: GCStyle.baseMargins
                     color: index === 0 ? "#5cc854" : "#d94444" // green : red
                     border.color: "#E6E6E6"
                     border.width: index === 0 ? 3 * ApplicationInfo.ratio : 0
                     GCText {
                         anchors.fill: parent
-                        anchors.margins: 10 * ApplicationInfo.ratio
+                        anchors.margins: GCStyle.baseMargins
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                         fontSizeMode: Text.Fit
@@ -76,7 +76,7 @@ Item {
         }
         Column {
             visible: modeBox.currentIndex == 0
-            spacing: 10 * ApplicationInfo.ratio
+            spacing: GCStyle.baseMargins
             Repeater {
                 model: activityConfiguration.numberOfLevel
                 Admin {
