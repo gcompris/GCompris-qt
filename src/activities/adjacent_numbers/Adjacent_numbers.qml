@@ -57,7 +57,6 @@ ActivityBase {
 
             readonly property var levels: activity.datasets.length !== 0 ? activity.datasets : null
         }
-        readonly property int baseMargins: 10 * ApplicationInfo.ratio
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
@@ -75,23 +74,23 @@ ActivityBase {
         Rectangle {
             id: instructionArea
             opacity: 1
-            radius: activityBackground.baseMargins
-            color: "#373737"
+            radius: GCStyle.baseMargins
+            color: GCStyle.darkBg
             height: 40 * ApplicationInfo.ratio
-            width: Math.min(320 * ApplicationInfo.ratio, parent.width - 2 * activityBackground.baseMargins)
+            width: Math.min(320 * ApplicationInfo.ratio, parent.width - 2 * GCStyle.baseMargins)
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
-            anchors.topMargin: activityBackground.baseMargins
+            anchors.topMargin: GCStyle.baseMargins
 
             GCText {
                 id: instruction
                 wrapMode: TextEdit.WordWrap
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                height: parent.height - activityBackground.baseMargins
-                width: parent.width - 2 * activityBackground.baseMargins
+                height: parent.height - GCStyle.baseMargins
+                width: parent.width - 2 * GCStyle.baseMargins
                 fontSizeMode: Text.Fit
-                color: 'white'
+                color: GCStyle.whiteText
                 anchors.centerIn: instructionArea
             }
         }
@@ -102,31 +101,31 @@ ActivityBase {
             anchors.bottom: okButton.top
             anchors.left: activityBackground.left
             anchors.right: activityBackground.right
-            anchors.margins: activityBackground.baseMargins
+            anchors.margins: GCStyle.baseMargins
         }
 
         Item {
             id: questionArea
             z: 100
             anchors.top: layoutArea.top
-            anchors.topMargin: activityBackground.baseMargins
+            anchors.topMargin: GCStyle.baseMargins
             anchors.horizontalCenter: parent.horizontalCenter
-            width: layoutArea.width - activityBackground.baseMargins * 2
-            height: (layoutArea.height  - activityBackground.baseMargins * 3) * 0.5
-            property int tileSize: Math.min(questionArea.width / questionTilesModel.count - activityBackground.baseMargins, height - 2 * activityBackground.baseMargins)
+            width: layoutArea.width - GCStyle.baseMargins * 2
+            height: (layoutArea.height - GCStyle.baseMargins * 3) * 0.5
+            property int tileSize: Math.min(questionArea.width / questionTilesModel.count - GCStyle.baseMargins, height - 2 * GCStyle.baseMargins)
 
             Rectangle {
                 anchors.centerIn: parent
-                width: questionTilesFlow.childrenRect.width + 2 * activityBackground.baseMargins
-                height: questionTilesFlow.childrenRect.height + 2 * activityBackground.baseMargins
+                width: questionTilesFlow.childrenRect.width + 2 * GCStyle.baseMargins
+                height: questionTilesFlow.childrenRect.height + 2 * GCStyle.baseMargins
                 color: "#80FFFFFF"
                 radius: height * 0.1
             }
 
             Item {
                 anchors.centerIn: parent
-                anchors.horizontalCenterOffset: activityBackground.baseMargins * 0.5
-                width: (parent.tileSize + activityBackground.baseMargins) * questionTilesModel.count
+                anchors.horizontalCenterOffset: GCStyle.halfMargins
+                width: (parent.tileSize + GCStyle.baseMargins) * questionTilesModel.count
                 height: parent.tileSize
                 DelegateModel {
                     id: questionTilesDelegateModel
@@ -145,7 +144,7 @@ ActivityBase {
                     id: questionTilesFlow
                     width: questionArea.width
                     height: questionArea.height
-                    spacing: activityBackground.baseMargins
+                    spacing: GCStyle.baseMargins
 
                     Repeater {
                         model: questionTilesDelegateModel
@@ -158,12 +157,12 @@ ActivityBase {
             id: proposedTilesArea
             z: 200
             anchors.bottom: layoutArea.bottom
-            anchors.bottomMargin: activityBackground.baseMargins
+            anchors.bottomMargin: GCStyle.baseMargins
             anchors.horizontalCenter: layoutArea.horizontalCenter
             height: questionArea.height
             width: questionArea.width
 
-            property int tileSize: Core.fitItems(proposedTilesArea.width, proposedTilesArea.height, proposedTilesModel.count) - activityBackground.baseMargins
+            property int tileSize: Core.fitItems(proposedTilesArea.width, proposedTilesArea.height, proposedTilesModel.count) - GCStyle.baseMargins
 
             Item {
                 anchors.centerIn: parent
@@ -183,7 +182,7 @@ ActivityBase {
                     id: proposedTilesFlow
                     width: proposedTilesArea.width
                     height: proposedTilesArea.height
-                    spacing: activityBackground.baseMargins
+                    spacing: GCStyle.baseMargins
 
                     Repeater {
                         model: proposedTilesDelegateModel
@@ -203,7 +202,7 @@ ActivityBase {
             anchors.bottom: activityBackground.bottom
             anchors.bottomMargin: bar.height * 1.5
             anchors.right: activityBackground.right
-            anchors.rightMargin: activityBackground.baseMargins
+            anchors.rightMargin: GCStyle.baseMargins
             currentSubLevel: 0
             numberOfSubLevels: 10
             onStop: {
@@ -214,10 +213,10 @@ ActivityBase {
         BarButton {
             id: okButton
             anchors.right: score.left
-            anchors.rightMargin: activityBackground.baseMargins
+            anchors.rightMargin: GCStyle.baseMargins
             anchors.verticalCenter: score.verticalCenter
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: 70 * ApplicationInfo.ratio
+            width: GCStyle.bigButtonHeight
             onClicked: validateKey();
             enabled: visible && items.buttonsEnabled
             visible: !items.immediateAnswer && items.answerCompleted
