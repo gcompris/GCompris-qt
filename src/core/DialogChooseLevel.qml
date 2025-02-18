@@ -257,8 +257,8 @@ Rectangle {
                     function initializePanel() {
                         if(item) {
                             // only connect once the signal to save data
-                            if(item.activityBackground !== dialogChooseLevel) {
-                                item.activityBackground = dialogChooseLevel
+                            if(item.configBackground !== dialogChooseLevel) {
+                                item.configBackground = dialogChooseLevel
                                 dialogChooseLevel.saveData.connect(save)
                             }
                             getInitialConfiguration()

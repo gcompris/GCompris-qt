@@ -10,7 +10,7 @@ import "../../core"
 
 Item {
     id: activityConfiguration
-    property Item activityBackground
+    property Item configBackground
     property int answerMode: answerModeBox.currentIndex
     width: flick.width
     height: childrenRect.height
@@ -26,7 +26,7 @@ Item {
         GCComboBox {
             id: answerModeBox
             model: availableModes
-            activityBackground: activityConfiguration.activityBackground
+            boxBackground: activityConfiguration.configBackground
             label: qsTr("Validate answers")
         }
     }

@@ -14,7 +14,7 @@ import "../../core"
 
 Item {
     id: activityConfiguration
-    property Item activityBackground
+    property Item configBackground
     property alias modeBox: modeBox
     width: flick.width
     height: childrenRect.height
@@ -29,7 +29,7 @@ Item {
         GCComboBox {
             id: modeBox
             model: availableModes
-            activityBackground: activityConfiguration.activityBackground
+            boxBackground: activityConfiguration.configBackground
             label: qsTr("Validate answers")
         }
     }

@@ -12,7 +12,7 @@ import "../../core"
 
 Item {
     id: activityConfiguration
-    property Item activityBackground
+    property Item configBackground
     property bool audioMode: false
     width: flick.width
     height: childrenRect.height

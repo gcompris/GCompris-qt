@@ -15,7 +15,7 @@ import "../../core"
 
 Item {
     id: activityConfiguration
-    property Item activityBackground
+    property Item configBackground
 
     readonly property string coloredNotes: "coloredNotes"
     readonly property string coloredlessNotes: "colorlessNotes"
