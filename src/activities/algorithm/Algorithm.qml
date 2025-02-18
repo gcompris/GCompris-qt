@@ -58,6 +58,7 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
+        readonly property bool isHorizontal: width >= height
         property bool keyNavigationVisible: false
 
         Keys.enabled: !items.blockClicks
@@ -87,37 +88,37 @@ ActivityBase {
         }
 
         Column {
-            id: column
-            spacing: 10
-            y: parent.height * 0.05
-            width: itemWidth * Activity.images.length
+            id: columnLayout
+            spacing: GCStyle.baseMargins
+            y: rowHeight
+            width: rowHeight * Activity.images.length
             anchors.horizontalCenter: parent.horizontalCenter
 
-            property int itemWidth: Math.min(activityBackground.width * 0.75 / Activity.images.length, activityBackground.height * 0.19)
+            property int rowHeight: activityBackground.isHorizontal ?
+                Math.min(activityBackground.width * 0.75 / Activity.images.length, (activityBackground.height - bar.height - GCStyle.baseMargins) / 6) :
+                Math.min((activityBackground.width - 2 * GCStyle.baseMargins) / Activity.images.length, (activityBackground.height - bar.height - GCStyle.baseMargins) / 6)
+
+            property int itemSize: (width - 2 * GCStyle.tinyMargins - GCStyle.halfMargins * (Activity.images.length - 1)) / Activity.images.length
 
             Rectangle {
                 id: questionTray
-                height: column.itemWidth
+                height: columnLayout.rowHeight
                 width: parent.width
                 color: "#55333333"
-                radius: 5
+                radius: GCStyle.tinyMargins
 
                 Row {
-                    anchors.topMargin: 4
-                    anchors.bottomMargin: 4
-                    anchors.leftMargin: 5
                     anchors.fill: parent
-                    spacing: 5.7 * ApplicationInfo.ratio
+                    anchors.margins: GCStyle.tinyMargins
+                    spacing: GCStyle.halfMargins
                     Repeater {
                         id: question
-                        // workaround for https://bugreports.qt.io/browse/QTBUG-72643 (qml binding with global variable in Repeater do not work)
-                        property alias itemWidth: column.itemWidth
                         Image {
                             source: Activity.url + modelData + '.svg'
                             sourceSize.height: height
                             sourceSize.width: width
-                            width: question.itemWidth - 6 * ApplicationInfo.ratio
-                            height: width
+                            width: columnLayout.itemSize
+                            height: columnLayout.itemSize
                             fillMode: Image.PreserveAspectFit
                         }
                     }
@@ -126,16 +127,14 @@ ActivityBase {
 
             Rectangle {
                 id: answerTray
-                height: column.itemWidth
+                height: columnLayout.rowHeight
                 width: parent.width
-                color: "#55333333"
-                radius: 5
+                color: questionTray.color
+                radius: questionTray.radius
                 Row {
-                    anchors.topMargin: 4
-                    anchors.bottomMargin: 4
-                    anchors.leftMargin: 5
                     anchors.fill: parent
-                    spacing: 5.7 * ApplicationInfo.ratio
+                    anchors.margins: GCStyle.tinyMargins
+                    spacing: GCStyle.halfMargins
                     Repeater {
                         id: answer
                         Image {
@@ -143,8 +142,8 @@ ActivityBase {
                                     modelData + '.svg'
                             sourceSize.height: height
                             sourceSize.width: width
-                            width: question.itemWidth - 6 * ApplicationInfo.ratio
-                            height: width
+                            width: columnLayout.itemSize
+                            height: columnLayout.itemSize
                             fillMode: Image.PreserveAspectFit
                         }
                     }
@@ -153,32 +152,32 @@ ActivityBase {
 
             // A spacer
             Item {
-                height: column.itemWidth / 2
+                height: columnLayout.rowHeight * 0.5
                 width: parent.width
             }
 
             Rectangle {
                 id: choiceTray
-                height: column.itemWidth + 3 * ApplicationInfo.ratio
+                height:columnLayout.rowHeight
                 width: parent.width
-                color: "#55333333"
-                radius: 5
+                color: questionTray.color
+                radius: questionTray.radius
 
                 GridView {
                     id: choiceGridView
                     anchors.fill: parent
                     model: Activity.images
-                    cellWidth: column.itemWidth
-                    cellHeight: cellWidth
+                    cellWidth: columnLayout.rowHeight
+                    cellHeight: columnLayout.rowHeight
                     interactive: false
                     keyNavigationWraps: true
                     highlightFollowsCurrentItem: true
                     highlight: Rectangle {
                         width: parent.cellWidth
                         height: parent.cellHeight
-                        color:  "#AAFFFFFF"
-                        border.width: 2
-                        border.color: "white"
+                        color:  GCStyle.lightTransparentBg
+                        border.width: GCStyle.thinnestBorder
+                        border.color: GCStyle.whiteBorder
                         visible: activityBackground.keyNavigationVisible
                         Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
                         Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
@@ -186,8 +185,8 @@ ActivityBase {
 
                     delegate: Item {
                         id: cellItem
-                        width: choiceGridView.cellWidth
-                        height: choiceTray.height
+                        width: columnLayout.rowHeight
+                        height: columnLayout.rowHeight
 
                         signal clicked
                         onClicked: {
@@ -196,24 +195,25 @@ ActivityBase {
                             }
                         }
 
+                        MouseArea {
+                            id: mouseArea
+                            hoverEnabled: enabled
+                            enabled: !items.blockClicks
+                            anchors.fill: parent
+                            onClicked: cellItem.clicked()
+                        }
+
                         Image {
                             id: img
                             source: Activity.url + modelData + '.svg'
-                            width: question.itemWidth - 6 * ApplicationInfo.ratio
-                            height: width
+                            width: columnLayout.itemSize
+                            height: columnLayout.itemSize
                             sourceSize.width: width
                             sourceSize.height: height
                             anchors.centerIn: parent
                             fillMode: Image.PreserveAspectFit
                             state: "notclicked"
 
-                            MouseArea {
-                                id: mouseArea
-                                hoverEnabled: enabled
-                                enabled: !items.blockClicks
-                                anchors.fill: parent
-                                onClicked: cellItem.clicked()
-                            }
                             states: [
                                 State {
                                     name: "notclicked"
@@ -281,9 +281,8 @@ ActivityBase {
             id: score
             anchors {
                 bottom: bar.top
-                bottomMargin: 10 * ApplicationInfo.ratio
                 right: parent.right
-                rightMargin: 5 * ApplicationInfo.ratio
+                margins: GCStyle.baseMargins
                 top: undefined
                 left: undefined
             }
