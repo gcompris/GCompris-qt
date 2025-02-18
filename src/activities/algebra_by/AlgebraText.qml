@@ -7,6 +7,7 @@
 import QtQuick 2.12
 import QtQuick.Effects
 
+import core 1.0
 import "../../core"
 
 Item {
