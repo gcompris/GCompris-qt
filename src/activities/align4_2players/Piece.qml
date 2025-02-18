@@ -9,15 +9,13 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-import "align4.js" as Activity
-
-import core 1.0
 
 Image {
     id: piece
     fillMode: Image.PreserveAspectFit
 
     opacity: 1.0
+    required property string url
 
     states: [
         State {
@@ -33,7 +31,7 @@ Image {
             PropertyChanges {
                 piece {
                     opacity: 1.0
-                    source: Activity.url + "stone_2.svg"
+                    source: piece.url + "stone_2.svg"
                 }
             }
         },
@@ -42,7 +40,7 @@ Image {
             PropertyChanges {
                 piece {
                     opacity: 1.0
-                    source: Activity.url + "stone_1.svg"
+                    source: piece.url + "stone_1.svg"
                 }
             }
         },
@@ -51,7 +49,7 @@ Image {
             PropertyChanges {
                 piece {
                     opacity: 1.0
-                    source: Activity.url + "win1.svg"
+                    source: piece.url + "win1.svg"
                 }
             }
         },
@@ -60,7 +58,7 @@ Image {
             PropertyChanges {
                 piece {
                     opacity: 1.0
-                    source: Activity.url + "win2.svg"
+                    source: piece.url + "win2.svg"
                 }
             }
         }

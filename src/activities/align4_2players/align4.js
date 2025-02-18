@@ -14,7 +14,6 @@
 
 var numberOfLevel;
 var items;
-var url = "qrc:/gcompris/src/activities/align4_2players/resource/";
 var currentPiece;
 var currentPlayer;
 var currentLocation;
