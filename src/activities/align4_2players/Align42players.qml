@@ -8,6 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 
 import "../../core"
@@ -17,16 +19,16 @@ import core 1.0
 
 ActivityBase {
     id: activity
+    resourceUrl: "qrc:/gcompris/src/activities/align4_2players/resource/"
 
     property bool twoPlayer: true
-
     onStart: focus = true
     onStop: {}
 
     pageComponent: Image {
         id: activityBackground
         anchors.fill: parent
-        source: Activity.url + "background.svg"
+        source: activity.resourceUrl + "background.svg"
         sourceSize.width: width
         sourceSize.height: height
         fillMode: Image.PreserveAspectCrop
@@ -64,11 +66,11 @@ ActivityBase {
             property int nextPlayerStart: 1
         }
 
-        onStart: { Activity.start(items, twoPlayer) }
+        onStart: { Activity.start(items, activity.twoPlayer) }
         onStop: { Activity.stop() }
 
         Keys.onPressed: (event) => {
-            if(drop.running || bonus.isPlaying || (items.counter % 2 != 0 && !twoPlayer))
+            if(drop.running || bonus.isPlaying || (items.counter % 2 != 0 && !activity.twoPlayer))
                 return
             if(items.gameDone && !bonus.isPlaying)
                 Activity.reset();
@@ -150,7 +152,7 @@ ActivityBase {
                 z: 100
                 state: items.counter % 2 ? "2": "1"
                 sourceSize.width: items.cellSize
-
+                url: activity.resourceUrl
                 Behavior on x { PropertyAnimation { duration: 200 } }
             }
 
@@ -168,14 +170,17 @@ ActivityBase {
                     Component {
                         id: blueSquare
                         Rectangle {
+                            id: square
+                            required property string stateTemp
                             color: "#DDAAAAAA";
                             width: items.cellSize
                             height: items.cellSize
                             radius: width * 0.5
                             Piece {
                                 anchors.fill: parent
-                                state: stateTemp
+                                state: square.stateTemp
                                 sourceSize.width: items.cellSize
+                                url: activity.resourceUrl
                             }
                         }
                     }
@@ -185,7 +190,7 @@ ActivityBase {
 
         GCSoundEffect {
             id: slideSound
-            source: Activity.url + "slide.wav"
+            source: activity.resourceUrl + "slide.wav"
         }
 
         PropertyAnimation {
@@ -204,7 +209,7 @@ ActivityBase {
             id: dynamic
             anchors.fill: parent
             enabled: hoverEnabled
-            hoverEnabled: (!drop.running && !items.gameDone && (items.counter % 2 == 0 || twoPlayer))
+            hoverEnabled: (!drop.running && !items.gameDone && (items.counter % 2 == 0 || activity.twoPlayer))
 
             property bool holdMode: true
             function display() {
@@ -212,7 +217,7 @@ ActivityBase {
                 Activity.setPieceLocation(coord.x, coord.y)
             }
 
-            onPositionChanged: items.dynamic.enabled ? display() : ''
+            onPositionChanged: enabled ? display() : ''
             onPressed: holdMode = false
             onPressAndHold: holdMode = true
             onClicked: {
@@ -227,15 +232,15 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
             id: bar
             level: items.currentLevel + 1
-            content: BarEnumContent { value: help | home | reload | (twoPlayer ? 0 : level) }
+            content: BarEnumContent { value: help | home | reload | (activity.twoPlayer ? 0 : level) }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onHomeClicked: activity.home()
             onReloadClicked: {
@@ -258,7 +263,7 @@ ActivityBase {
                 leftMargin: GCStyle.baseMargins
             }
             playerImageSource: "qrc:/gcompris/src/core/resource/player_1.svg"
-            backgroundImageSource: Activity.url + "score_1.svg"
+            backgroundImageSource: activity.resourceUrl + "score_1.svg"
         }
 
         ScoreItem {
@@ -274,7 +279,7 @@ ActivityBase {
                 rightMargin: GCStyle.baseMargins
             }
             playerImageSource: "qrc:/gcompris/src/core/resource/player_2.svg"
-            backgroundImageSource: Activity.url + "score_2.svg"
+            backgroundImageSource: activity.resourceUrl + "score_2.svg"
             playerScaleOriginX: player2score.width
         }
 

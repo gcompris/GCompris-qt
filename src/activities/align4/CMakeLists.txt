@@ -8,4 +8,6 @@ GCOMPRIS_ADD_RESOURCE(activities/align4
   *.qml
   RESOURCES
   *.svg
+  DEPENDENCIES
+  align4_2players
 )
