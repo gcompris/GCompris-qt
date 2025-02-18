@@ -11,8 +11,6 @@
 import QtQuick 2.12
 import "align4.js" as Activity
 
-import core 1.0
-
 Image {
     id: piece
     fillMode: Image.PreserveAspectFit
