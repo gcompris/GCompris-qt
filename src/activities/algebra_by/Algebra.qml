@@ -111,15 +111,15 @@ ActivityBase {
 
         BarButton {
             id: okButton
-            x: parent.width * 0.7
             z: 10
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            anchors.verticalCenter: score.verticalCenter
+            y: Math.max((parent.height- height)* 0.5, textFlowBackground.y + firstOp.height * 2 + GCStyle.baseMargins + GCStyle.halfMargins)
             anchors.left: score.right
-            anchors.leftMargin: 0.2 * height
-            width: bar.height
+            anchors.leftMargin: GCStyle.baseMargins
+            width: GCStyle.bigButtonHeight
             onClicked: Activity.checkAnswer();
             enabled: visible && !items.buttonsBlocked && numpad.answer != ""
+            visible: !iAmReady.visible
         }
 
         Keys.onReturnPressed: validateKey();
@@ -159,13 +159,14 @@ ActivityBase {
 
         Score {
             id: score
-            x: parent.width * 0.25
-            anchors.verticalCenter: parent.verticalCenter
+            x: textFlowBackground.x
+            anchors.verticalCenter: okButton.verticalCenter
             anchors.right: undefined
             anchors.bottom: undefined
             currentSubLevel: 0
             numberOfSubLevels: 10
             onStop: Activity.questionsLeft()
+            visible: !iAmReady.visible
         }
 
         Bonus {
@@ -181,14 +182,25 @@ ActivityBase {
             onClicked: Activity.run()
         }
 
+        Rectangle {
+            id: textFlowBackground
+            anchors.top: textFlow.top
+            anchors.left: textFlow.left
+            anchors.leftMargin: -GCStyle.halfMargins
+            width: textFlow.childrenRect.width + 3 * GCStyle.halfMargins
+            height: textFlow.childrenRect.height
+            color: GCStyle.lightTransparentBg
+            radius: GCStyle.halfMargins
+            visible: !iAmReady.visible
+        }
+
         Flow {
             id: textFlow
-            x: parent.width / 2 - width / 2
-            y: 80
-            width: parent.width / 2
-            height: 100
-            anchors.margins: 4
-            spacing: 10
+             x: parent.width * 0.25
+             y: parent.height * 0.1
+             width: parent.width * 0.5
+             height: parent.height * 0.3
+             spacing: GCStyle.halfMargins
 
             AlgebraText {
                 id: firstOp
@@ -197,7 +209,7 @@ ActivityBase {
 
             AlgebraText {
                 id: operand
-                visible: firstOp.visible
+                visible: !iAmReady.visible
             }
 
             AlgebraText {
@@ -207,25 +219,24 @@ ActivityBase {
 
             AlgebraText {
                 id: equals
-                visible: firstOp.visible
+                visible: !iAmReady.visible
                 text: "="
             }
 
             AlgebraText {
-                id: result
+                id: resultText
                 visible: !iAmReady.visible
-                text: numpad.answer
+                // setting a space on empty answer looks better,
+                // and is a workaround to force updating textFlow.childrenRect size
+                text: numpad.answer == "" ? " " : numpad.answer
             }
         }
 
         ErrorRectangle {
             id: errorRectangle
-            anchors.top: textFlow.top
-            anchors.bottom: okButton.top
-            anchors.left: activityBackground.left
-            anchors.right: activityBackground.right
-            anchors.bottomMargin: 10 * ApplicationInfo.ratio
+            anchors.fill: textFlowBackground
             imageSize: okButton.width
+            radius: GCStyle.halfMargins
             function releaseControls() {
                 Activity.run();
             }
