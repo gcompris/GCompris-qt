@@ -18779,38 +18779,38 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl+S: Toggle the activity section bar"
 msgstr "Ctrl+S: паказаць ці схаваць панэль выбару практыкавання"
 
-#: activities/menu/BackgroundMusicList.qml:64
+#: activities/menu/BackgroundMusicList.qml:57
 msgctxt "BackgroundMusicList|"
 msgid "Background music"
 msgstr "Фонавая музыка"
 
-#: activities/menu/BackgroundMusicList.qml:129
+#: activities/menu/BackgroundMusicList.qml:136
 msgctxt "BackgroundMusicList|"
 msgid "Disable the background music if you don't want to play them."
 msgstr "Адключыце фонавую музыку калі вы не жадаеце яе гучання."
 
 #. Current background music playing
-#: activities/menu/BackgroundMusicList.qml:169
+#: activities/menu/BackgroundMusicList.qml:173
 msgctxt "BackgroundMusicList|"
 msgid "Now Playing:"
 msgstr "Зараз гучыць:"
 
 #. Title of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:178
+#: activities/menu/BackgroundMusicList.qml:181
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Title: %1"
 msgstr "Загаловак: %1"
 
 #. Artist of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:187
+#: activities/menu/BackgroundMusicList.qml:189
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Artist: %1"
 msgstr "Мастак: %1"
 
 #. Year of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:196
+#: activities/menu/BackgroundMusicList.qml:197
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Year: %1"
@@ -18868,33 +18868,33 @@ msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
 msgstr "Гучнасць аўдыё эфектаў"
 
-#: activities/menu/ConfigurationItem.qml:212
+#: activities/menu/ConfigurationItem.qml:211
 msgctxt "ConfigurationItem|"
 msgid "Download background music"
 msgstr "Зладаваць фонавую музыку"
 
-#: activities/menu/ConfigurationItem.qml:223
+#: activities/menu/ConfigurationItem.qml:222
 msgctxt "ConfigurationItem|"
 msgid "Enable background music"
 msgstr "Уключыць фонавую музыку"
 
-#: activities/menu/ConfigurationItem.qml:232
+#: activities/menu/ConfigurationItem.qml:231
 msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr "Фонавая музыка"
 
-#: activities/menu/ConfigurationItem.qml:248
+#: activities/menu/ConfigurationItem.qml:247
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr "Гучанне спыненае"
 
-#: activities/menu/ConfigurationItem.qml:250
+#: activities/menu/ConfigurationItem.qml:249
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr "Назва: %1 Выканаўца: %2"
 
-#: activities/menu/ConfigurationItem.qml:252
+#: activities/menu/ConfigurationItem.qml:251
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr "Музыка вітання"
@@ -18904,83 +18904,83 @@ msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr "Гучнасць фонавай музыкі"
 
-#: activities/menu/ConfigurationItem.qml:306
+#: activities/menu/ConfigurationItem.qml:305
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is installed"
 msgstr "Поўны набор выяваў са словамі ўсталяваны"
 
-#: activities/menu/ConfigurationItem.qml:306
+#: activities/menu/ConfigurationItem.qml:305
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is not installed"
 msgstr "Поўны набор выяваў са словамі не ўсталяваны"
 
-#: activities/menu/ConfigurationItem.qml:320
+#: activities/menu/ConfigurationItem.qml:319
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
 msgstr "Сцягнуць поўны набор выяваў са словамі"
 
-#: activities/menu/ConfigurationItem.qml:331
+#: activities/menu/ConfigurationItem.qml:330
 msgctxt "ConfigurationItem|"
 msgid "Fullscreen"
 msgstr "На поўны экран"
 
-#: activities/menu/ConfigurationItem.qml:342
+#: activities/menu/ConfigurationItem.qml:341
 msgctxt "ConfigurationItem|"
 msgid "Virtual Keyboard"
 msgstr "Віртуальная клавіятура"
 
-#: activities/menu/ConfigurationItem.qml:353
+#: activities/menu/ConfigurationItem.qml:352
 msgctxt "ConfigurationItem|"
 msgid "The activity section menu is visible"
 msgstr "Панэль катэгорый практыкаванняў ёсць бачнай"
 
-#: activities/menu/ConfigurationItem.qml:363
+#: activities/menu/ConfigurationItem.qml:362
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:374
+#: activities/menu/ConfigurationItem.qml:373
 msgctxt "ConfigurationItem|"
 msgid "Font selector"
 msgstr "Выбар шрыфту"
 
-#: activities/menu/ConfigurationItem.qml:379
+#: activities/menu/ConfigurationItem.qml:378
 msgctxt "ConfigurationItem|"
 msgid "Font size"
 msgstr "Памер шрыфту"
 
-#: activities/menu/ConfigurationItem.qml:399
-#: activities/menu/ConfigurationItem.qml:433
+#: activities/menu/ConfigurationItem.qml:397
+#: activities/menu/ConfigurationItem.qml:430
 msgctxt "ConfigurationItem|"
 msgid "Default"
 msgstr "Па змоўчанні"
 
-#: activities/menu/ConfigurationItem.qml:408
+#: activities/menu/ConfigurationItem.qml:406
 msgctxt "ConfigurationItem|"
 msgid "Font Capitalization"
 msgstr "Капітэль шрыфту"
 
-#: activities/menu/ConfigurationItem.qml:413
+#: activities/menu/ConfigurationItem.qml:411
 msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Міжлітарны прагал шрыфту"
 
-#: activities/menu/ConfigurationItem.qml:622
+#: activities/menu/ConfigurationItem.qml:619
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Змяшаная капітэль (па змоўчанні)"
 
-#: activities/menu/ConfigurationItem.qml:626
+#: activities/menu/ConfigurationItem.qml:623
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Усе вялікія"
 
-#: activities/menu/ConfigurationItem.qml:630
+#: activities/menu/ConfigurationItem.qml:627
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Усе малыя"
 
-#: activities/menu/Menu.qml:90
+#: activities/menu/Menu.qml:89
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, do you want to download the corresponding sound "
@@ -18989,77 +18989,77 @@ msgstr ""
 "Вы выбралі новую лакалізацыю. Ці жадаеце спампаваць адпаведныя аўдыёфайлы "
 "зараз ?"
 
-#: activities/menu/Menu.qml:91
+#: activities/menu/Menu.qml:90
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "Так"
 
-#: activities/menu/Menu.qml:98
+#: activities/menu/Menu.qml:97
 msgctxt "Menu|"
 msgid "No"
 msgstr "Не"
 
-#: activities/menu/Menu.qml:117
+#: activities/menu/Menu.qml:116
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "Логіка"
 
-#: activities/menu/Menu.qml:118
+#: activities/menu/Menu.qml:117
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "Выяўленчае мастацтва"
 
-#: activities/menu/Menu.qml:119
+#: activities/menu/Menu.qml:118
 msgctxt "Menu|"
 msgid "Music"
 msgstr "Музыка"
 
-#: activities/menu/Menu.qml:125
+#: activities/menu/Menu.qml:124
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "Эксперымент"
 
-#: activities/menu/Menu.qml:126
+#: activities/menu/Menu.qml:125
 msgctxt "Menu|"
 msgid "History"
 msgstr "Гісторыя"
 
-#: activities/menu/Menu.qml:127
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "Геаграфія"
 
-#: activities/menu/Menu.qml:137
+#: activities/menu/Menu.qml:136
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Пералік"
 
-#: activities/menu/Menu.qml:138
+#: activities/menu/Menu.qml:137
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "Арыфметыка"
 
-#: activities/menu/Menu.qml:139
+#: activities/menu/Menu.qml:138
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "Вымярэнні"
 
-#: activities/menu/Menu.qml:149
+#: activities/menu/Menu.qml:148
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "Літары"
 
-#: activities/menu/Menu.qml:150
+#: activities/menu/Menu.qml:149
 msgctxt "Menu|"
 msgid "Words"
 msgstr "Словы"
 
-#: activities/menu/Menu.qml:151
+#: activities/menu/Menu.qml:150
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Слоўнік"
 
-#: activities/menu/Menu.qml:376
+#: activities/menu/Menu.qml:662
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19068,12 +19068,12 @@ msgstr ""
 "Дадайце сюды свае ўлюбёныя практыкаванні, пазначыўшы іх сонейкам у правым "
 "верхнім кутку значка практыкавання."
 
-#: activities/menu/Menu.qml:792
+#: activities/menu/Menu.qml:781
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Пошук пэўных практыкаванняў"
 
-#: activities/menu/Menu.qml:819
+#: activities/menu/Menu.qml:810
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Налады практыкавання"
@@ -27515,47 +27515,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "Мова GCompris"
 
-#: core/main.cpp:73
+#: core/main.cpp:76
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "Запускаць GCompris карыстаючы стандартны сістэмны курсор."
 
-#: core/main.cpp:77
+#: core/main.cpp:80
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "Запускаць GCompris без курсору (рэжым чулага экрану)."
 
-#: core/main.cpp:81
+#: core/main.cpp:84
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "Запускаць GCompris у поўнаэкранным рэжыме."
 
-#: core/main.cpp:85
+#: core/main.cpp:88
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "Запускаць GCompris у вакенцы."
 
-#: core/main.cpp:89
+#: core/main.cpp:92
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "Запускаць GCompris з уключаным гукам."
 
-#: core/main.cpp:93
+#: core/main.cpp:96
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "Запускаць GCompris без гуку."
 
-#: core/main.cpp:96
+#: core/main.cpp:99
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Забараніць рэжым кіёску (па змоўчанню)."
 
-#: core/main.cpp:99
+#: core/main.cpp:102
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Уключыць рэжым кіёску (па змоўчанню)."
 
-#: core/main.cpp:103
+#: core/main.cpp:106
 #, fuzzy
 #| msgctxt "QObject|"
 #| msgid ""
@@ -27569,7 +27569,7 @@ msgstr ""
 "Выкарыстоўваць праграмны рэндэрынг замест openGL (павольнейшы, але мусіць "
 "працаваць з любой графічнай платай, мінімальная версія Qt 5.8)."
 
-#: core/main.cpp:106
+#: core/main.cpp:109
 #, fuzzy
 #| msgctxt "QObject|"
 #| msgid ""
@@ -27583,29 +27583,29 @@ msgstr ""
 "Выкарыстоўваць openGL рэндэрынг замест праграмнага (хутчэйшы, але ёсць "
 "верагоднасць непрацаздольнасці ў залежнасці ад графічнай платы)."
 
-#: core/main.cpp:110
+#: core/main.cpp:113
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 msgstr ""
 
-#: core/main.cpp:114
+#: core/main.cpp:117
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr ""
 
-#: core/main.cpp:119
+#: core/main.cpp:122
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr ""
 
-#: core/main.cpp:123
+#: core/main.cpp:126
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
 
-#: core/main.cpp:127
+#: core/main.cpp:130
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "

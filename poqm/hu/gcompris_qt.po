@@ -18689,38 +18689,38 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl+S: Toggle the activity section bar"
 msgstr "XTRL+S - Tevékenység választó sáv"
 
-#: activities/menu/BackgroundMusicList.qml:64
+#: activities/menu/BackgroundMusicList.qml:57
 msgctxt "BackgroundMusicList|"
 msgid "Background music"
 msgstr "Háttérzene"
 
-#: activities/menu/BackgroundMusicList.qml:129
+#: activities/menu/BackgroundMusicList.qml:136
 msgctxt "BackgroundMusicList|"
 msgid "Disable the background music if you don't want to play them."
 msgstr "Kikapcsolhatod a háttérzenét ha nem akarod, hogy szóljon"
 
 #. Current background music playing
-#: activities/menu/BackgroundMusicList.qml:169
+#: activities/menu/BackgroundMusicList.qml:173
 msgctxt "BackgroundMusicList|"
 msgid "Now Playing:"
 msgstr "Most szól:"
 
 #. Title of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:178
+#: activities/menu/BackgroundMusicList.qml:181
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Title: %1"
 msgstr "Címe: %1"
 
 #. Artist of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:187
+#: activities/menu/BackgroundMusicList.qml:189
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Artist: %1"
 msgstr "Előadó: %1"
 
 #. Year of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:196
+#: activities/menu/BackgroundMusicList.qml:197
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Year: %1"
@@ -18778,33 +18778,33 @@ msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
 msgstr "Hangeffektek hangereje"
 
-#: activities/menu/ConfigurationItem.qml:212
+#: activities/menu/ConfigurationItem.qml:211
 msgctxt "ConfigurationItem|"
 msgid "Download background music"
 msgstr "Háttérzene letöltése"
 
-#: activities/menu/ConfigurationItem.qml:223
+#: activities/menu/ConfigurationItem.qml:222
 msgctxt "ConfigurationItem|"
 msgid "Enable background music"
 msgstr "Háttérzene engedélyezése"
 
-#: activities/menu/ConfigurationItem.qml:232
+#: activities/menu/ConfigurationItem.qml:231
 msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr "Háttérzene"
 
-#: activities/menu/ConfigurationItem.qml:248
+#: activities/menu/ConfigurationItem.qml:247
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr "Nem szól"
 
-#: activities/menu/ConfigurationItem.qml:250
+#: activities/menu/ConfigurationItem.qml:249
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr "Szám címe: %1  Előadó: %2"
 
-#: activities/menu/ConfigurationItem.qml:252
+#: activities/menu/ConfigurationItem.qml:251
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr "Bevezető zene"
@@ -18814,83 +18814,83 @@ msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr "Háttérzene hangerő"
 
-#: activities/menu/ConfigurationItem.qml:306
+#: activities/menu/ConfigurationItem.qml:305
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is installed"
 msgstr "Teljes szóképkészlet telepítve."
 
-#: activities/menu/ConfigurationItem.qml:306
+#: activities/menu/ConfigurationItem.qml:305
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is not installed"
 msgstr "Nincs a teljes szóképkészlet telepítve."
 
-#: activities/menu/ConfigurationItem.qml:320
+#: activities/menu/ConfigurationItem.qml:319
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
 msgstr "Teljes szóképkészlet letöltése"
 
-#: activities/menu/ConfigurationItem.qml:331
+#: activities/menu/ConfigurationItem.qml:330
 msgctxt "ConfigurationItem|"
 msgid "Fullscreen"
 msgstr "Teljes képernyő"
 
-#: activities/menu/ConfigurationItem.qml:342
+#: activities/menu/ConfigurationItem.qml:341
 msgctxt "ConfigurationItem|"
 msgid "Virtual Keyboard"
 msgstr "Virtuális billentyűzet"
 
-#: activities/menu/ConfigurationItem.qml:353
+#: activities/menu/ConfigurationItem.qml:352
 msgctxt "ConfigurationItem|"
 msgid "The activity section menu is visible"
 msgstr "Feladat menü láthatósága"
 
-#: activities/menu/ConfigurationItem.qml:363
+#: activities/menu/ConfigurationItem.qml:362
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
 msgstr "Kilépéshez üzenetet kér."
 
-#: activities/menu/ConfigurationItem.qml:374
+#: activities/menu/ConfigurationItem.qml:373
 msgctxt "ConfigurationItem|"
 msgid "Font selector"
 msgstr "Betűtipus választó"
 
-#: activities/menu/ConfigurationItem.qml:379
+#: activities/menu/ConfigurationItem.qml:378
 msgctxt "ConfigurationItem|"
 msgid "Font size"
 msgstr "Betűméret"
 
-#: activities/menu/ConfigurationItem.qml:399
-#: activities/menu/ConfigurationItem.qml:433
+#: activities/menu/ConfigurationItem.qml:397
+#: activities/menu/ConfigurationItem.qml:430
 msgctxt "ConfigurationItem|"
 msgid "Default"
 msgstr "Alapértelmezett"
 
-#: activities/menu/ConfigurationItem.qml:408
+#: activities/menu/ConfigurationItem.qml:406
 msgctxt "ConfigurationItem|"
 msgid "Font Capitalization"
 msgstr "Betűméret"
 
-#: activities/menu/ConfigurationItem.qml:413
+#: activities/menu/ConfigurationItem.qml:411
 msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Betűköz"
 
-#: activities/menu/ConfigurationItem.qml:622
+#: activities/menu/ConfigurationItem.qml:619
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Kis- és nagybetűk (alapértelmezés)"
 
-#: activities/menu/ConfigurationItem.qml:626
+#: activities/menu/ConfigurationItem.qml:623
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Minden nagybetűs"
 
-#: activities/menu/ConfigurationItem.qml:630
+#: activities/menu/ConfigurationItem.qml:627
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Minden kisbetűs"
 
-#: activities/menu/Menu.qml:90
+#: activities/menu/Menu.qml:89
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, do you want to download the corresponding sound "
@@ -18898,77 +18898,77 @@ msgid ""
 msgstr ""
 "Új nyelvet választottál, szeretnéd most letölteni a megfelelő hangfájlokat?"
 
-#: activities/menu/Menu.qml:91
+#: activities/menu/Menu.qml:90
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "Igen"
 
-#: activities/menu/Menu.qml:98
+#: activities/menu/Menu.qml:97
 msgctxt "Menu|"
 msgid "No"
 msgstr "Nem"
 
-#: activities/menu/Menu.qml:117
+#: activities/menu/Menu.qml:116
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "Logika"
 
-#: activities/menu/Menu.qml:118
+#: activities/menu/Menu.qml:117
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "Művészetek"
 
-#: activities/menu/Menu.qml:119
+#: activities/menu/Menu.qml:118
 msgctxt "Menu|"
 msgid "Music"
 msgstr "Zene"
 
-#: activities/menu/Menu.qml:125
+#: activities/menu/Menu.qml:124
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "Kísérletek"
 
-#: activities/menu/Menu.qml:126
+#: activities/menu/Menu.qml:125
 msgctxt "Menu|"
 msgid "History"
 msgstr "Történelem"
 
-#: activities/menu/Menu.qml:127
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "Földrajz"
 
-#: activities/menu/Menu.qml:137
+#: activities/menu/Menu.qml:136
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Számlálási gyakorlat"
 
-#: activities/menu/Menu.qml:138
+#: activities/menu/Menu.qml:137
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "Számtan"
 
-#: activities/menu/Menu.qml:139
+#: activities/menu/Menu.qml:138
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "Mértékegységek"
 
-#: activities/menu/Menu.qml:149
+#: activities/menu/Menu.qml:148
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "Betűk"
 
-#: activities/menu/Menu.qml:150
+#: activities/menu/Menu.qml:149
 msgctxt "Menu|"
 msgid "Words"
 msgstr "Szavak"
 
-#: activities/menu/Menu.qml:151
+#: activities/menu/Menu.qml:150
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Szókincs és olvasás"
 
-#: activities/menu/Menu.qml:376
+#: activities/menu/Menu.qml:662
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -18977,12 +18977,12 @@ msgstr ""
 "Jelöld meg a kedvenc feladataidat. Kattints a feladatválasztó jobb felső "
 "sarkában lévő napocskára!"
 
-#: activities/menu/Menu.qml:792
+#: activities/menu/Menu.qml:781
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Feladat keresése"
 
-#: activities/menu/Menu.qml:819
+#: activities/menu/Menu.qml:810
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Tevékenység beállítások"
@@ -27420,47 +27420,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "A GCompris  nyelvi beállítása"
 
-#: core/main.cpp:73
+#: core/main.cpp:76
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "GCompris futtatása alapértelmezett egérmutatóval."
 
-#: core/main.cpp:77
+#: core/main.cpp:80
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "GCompris futtatása kurzor nélkül. (Érintő mód)"
 
-#: core/main.cpp:81
+#: core/main.cpp:84
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "GCompris futtatása teljes képernyőn."
 
-#: core/main.cpp:85
+#: core/main.cpp:88
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "GCompris futtatása ablakban."
 
-#: core/main.cpp:89
+#: core/main.cpp:92
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "GCompris futtatása hangokkal."
 
-#: core/main.cpp:93
+#: core/main.cpp:96
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "GCompris futtatása hang nélkül."
 
-#: core/main.cpp:96
+#: core/main.cpp:99
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Teljes képernyős mód kikapcsolva. (Alapértelmezett)"
 
-#: core/main.cpp:99
+#: core/main.cpp:102
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Mozi mód engedélyezése."
 
-#: core/main.cpp:103
+#: core/main.cpp:106
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
@@ -27470,7 +27470,7 @@ msgstr ""
 "grafikus kártyával futtatható). Elavult, használd helyette a --"
 "renderer=software-t."
 
-#: core/main.cpp:106
+#: core/main.cpp:109
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -27480,23 +27480,23 @@ msgstr ""
 "kártyától függően összeomolhat). Elavult, használd helyette a --"
 "renderer=opengl-t."
 
-#: core/main.cpp:110
+#: core/main.cpp:113
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 msgstr ""
 "Válassz megjelítőt:  (opengl, software, Direct3D11, Direct3D12, Metal)."
 
-#: core/main.cpp:114
+#: core/main.cpp:117
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "Kiválasztható egy tevékenyég a GCompris indításánál."
 
-#: core/main.cpp:119
+#: core/main.cpp:122
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Minden lehetséges tevékenységet kilistáz az alap lehetőségek közül."
 
-#: core/main.cpp:123
+#: core/main.cpp:126
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -27506,7 +27506,7 @@ msgstr ""
 "Vagy egyetlen érték (2), vagy egy tartomány (3-6). Az értékeknek 1 és 6 "
 "között kell lenniük."
 
-#: core/main.cpp:127
+#: core/main.cpp:130
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "

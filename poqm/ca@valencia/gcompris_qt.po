@@ -19256,38 +19256,38 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl+S: Toggle the activity section bar"
 msgstr "«Ctrl+S»: Canvia la barra de secció activitat"
 
-#: activities/menu/BackgroundMusicList.qml:64
+#: activities/menu/BackgroundMusicList.qml:57
 msgctxt "BackgroundMusicList|"
 msgid "Background music"
 msgstr "Música de fons"
 
-#: activities/menu/BackgroundMusicList.qml:129
+#: activities/menu/BackgroundMusicList.qml:136
 msgctxt "BackgroundMusicList|"
 msgid "Disable the background music if you don't want to play them."
 msgstr "Inhabilita la música de fons si no voleu reproduir-la."
 
 #. Current background music playing
-#: activities/menu/BackgroundMusicList.qml:169
+#: activities/menu/BackgroundMusicList.qml:173
 msgctxt "BackgroundMusicList|"
 msgid "Now Playing:"
 msgstr "Ara s'està reproduint:"
 
 #. Title of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:178
+#: activities/menu/BackgroundMusicList.qml:181
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Title: %1"
 msgstr "Títol: %1"
 
 #. Artist of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:187
+#: activities/menu/BackgroundMusicList.qml:189
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Artist: %1"
 msgstr "Artista: %1"
 
 #. Year of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:196
+#: activities/menu/BackgroundMusicList.qml:197
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Year: %1"
@@ -19345,33 +19345,33 @@ msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
 msgstr "Volum dels efectes de l'àudio"
 
-#: activities/menu/ConfigurationItem.qml:212
+#: activities/menu/ConfigurationItem.qml:211
 msgctxt "ConfigurationItem|"
 msgid "Download background music"
 msgstr "Baixa la música de fons"
 
-#: activities/menu/ConfigurationItem.qml:223
+#: activities/menu/ConfigurationItem.qml:222
 msgctxt "ConfigurationItem|"
 msgid "Enable background music"
 msgstr "Habilita la música de fons"
 
-#: activities/menu/ConfigurationItem.qml:232
+#: activities/menu/ConfigurationItem.qml:231
 msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr "Música de fons"
 
-#: activities/menu/ConfigurationItem.qml:248
+#: activities/menu/ConfigurationItem.qml:247
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr "No s'està reproduint"
 
-#: activities/menu/ConfigurationItem.qml:250
+#: activities/menu/ConfigurationItem.qml:249
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr "Títol: %1  Artista: %2"
 
-#: activities/menu/ConfigurationItem.qml:252
+#: activities/menu/ConfigurationItem.qml:251
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr "Música d'introducció"
@@ -19381,83 +19381,83 @@ msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr "Volum de la música de fons"
 
-#: activities/menu/ConfigurationItem.qml:306
+#: activities/menu/ConfigurationItem.qml:305
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is installed"
 msgstr "Està instal·lat el conjunt complet d'imatges"
 
-#: activities/menu/ConfigurationItem.qml:306
+#: activities/menu/ConfigurationItem.qml:305
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is not installed"
 msgstr "El conjunt complet d'imatges no està instal·lat"
 
-#: activities/menu/ConfigurationItem.qml:320
+#: activities/menu/ConfigurationItem.qml:319
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
 msgstr "Baixa el conjunt complet d'imatges de les paraules"
 
-#: activities/menu/ConfigurationItem.qml:331
+#: activities/menu/ConfigurationItem.qml:330
 msgctxt "ConfigurationItem|"
 msgid "Fullscreen"
 msgstr "Pantalla completa"
 
-#: activities/menu/ConfigurationItem.qml:342
+#: activities/menu/ConfigurationItem.qml:341
 msgctxt "ConfigurationItem|"
 msgid "Virtual Keyboard"
 msgstr "Teclat virtual"
 
-#: activities/menu/ConfigurationItem.qml:353
+#: activities/menu/ConfigurationItem.qml:352
 msgctxt "ConfigurationItem|"
 msgid "The activity section menu is visible"
 msgstr "El menú de la secció activitat és visible"
 
-#: activities/menu/ConfigurationItem.qml:363
+#: activities/menu/ConfigurationItem.qml:362
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
 msgstr "Per a eixir demana confirmació"
 
-#: activities/menu/ConfigurationItem.qml:374
+#: activities/menu/ConfigurationItem.qml:373
 msgctxt "ConfigurationItem|"
 msgid "Font selector"
 msgstr "Selector de lletra"
 
-#: activities/menu/ConfigurationItem.qml:379
+#: activities/menu/ConfigurationItem.qml:378
 msgctxt "ConfigurationItem|"
 msgid "Font size"
 msgstr "Mida de la lletra"
 
-#: activities/menu/ConfigurationItem.qml:399
-#: activities/menu/ConfigurationItem.qml:433
+#: activities/menu/ConfigurationItem.qml:397
+#: activities/menu/ConfigurationItem.qml:430
 msgctxt "ConfigurationItem|"
 msgid "Default"
 msgstr "Predeterminat"
 
-#: activities/menu/ConfigurationItem.qml:408
+#: activities/menu/ConfigurationItem.qml:406
 msgctxt "ConfigurationItem|"
 msgid "Font Capitalization"
 msgstr "Lletra en majúscules/minúscules"
 
-#: activities/menu/ConfigurationItem.qml:413
+#: activities/menu/ConfigurationItem.qml:411
 msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Espai entre les lletres"
 
-#: activities/menu/ConfigurationItem.qml:622
+#: activities/menu/ConfigurationItem.qml:619
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Combinat (predeterminat)"
 
-#: activities/menu/ConfigurationItem.qml:626
+#: activities/menu/ConfigurationItem.qml:623
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Tot en majúscula"
 
-#: activities/menu/ConfigurationItem.qml:630
+#: activities/menu/ConfigurationItem.qml:627
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Tot en minúscula"
 
-#: activities/menu/Menu.qml:90
+#: activities/menu/Menu.qml:89
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, do you want to download the corresponding sound "
@@ -19466,77 +19466,77 @@ msgstr ""
 "Heu seleccionat una configuració regional nova. Voleu baixar ara els fitxers "
 "de so corresponents?"
 
-#: activities/menu/Menu.qml:91
+#: activities/menu/Menu.qml:90
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "Sí"
 
-#: activities/menu/Menu.qml:98
+#: activities/menu/Menu.qml:97
 msgctxt "Menu|"
 msgid "No"
 msgstr "No"
 
-#: activities/menu/Menu.qml:117
+#: activities/menu/Menu.qml:116
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "Lògica"
 
-#: activities/menu/Menu.qml:118
+#: activities/menu/Menu.qml:117
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "Belles Arts"
 
-#: activities/menu/Menu.qml:119
+#: activities/menu/Menu.qml:118
 msgctxt "Menu|"
 msgid "Music"
 msgstr "Música"
 
-#: activities/menu/Menu.qml:125
+#: activities/menu/Menu.qml:124
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "Experimenta"
 
-#: activities/menu/Menu.qml:126
+#: activities/menu/Menu.qml:125
 msgctxt "Menu|"
 msgid "History"
 msgstr "Història"
 
-#: activities/menu/Menu.qml:127
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "Geografia"
 
-#: activities/menu/Menu.qml:137
+#: activities/menu/Menu.qml:136
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Numeració"
 
-#: activities/menu/Menu.qml:138
+#: activities/menu/Menu.qml:137
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "Aritmètica"
 
-#: activities/menu/Menu.qml:139
+#: activities/menu/Menu.qml:138
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "Mesures"
 
-#: activities/menu/Menu.qml:149
+#: activities/menu/Menu.qml:148
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "Lletres"
 
-#: activities/menu/Menu.qml:150
+#: activities/menu/Menu.qml:149
 msgctxt "Menu|"
 msgid "Words"
 msgstr "Paraules"
 
-#: activities/menu/Menu.qml:151
+#: activities/menu/Menu.qml:150
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Vocabulari"
 
-#: activities/menu/Menu.qml:376
+#: activities/menu/Menu.qml:662
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19545,12 +19545,12 @@ msgstr ""
 "Col·loca les teues activitats preferides ací fent clic damunt del Sol que hi "
 "ha en la part superior dreta de cada activitat."
 
-#: activities/menu/Menu.qml:792
+#: activities/menu/Menu.qml:781
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Busca activitats específiques"
 
-#: activities/menu/Menu.qml:819
+#: activities/menu/Menu.qml:810
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Configureu l'activitat"
@@ -28255,47 +28255,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "Idioma de GCompris"
 
-#: core/main.cpp:73
+#: core/main.cpp:76
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "Executa GCompris amb el cursor predeterminat del sistema."
 
-#: core/main.cpp:77
+#: core/main.cpp:80
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "Executa GCompris sense cursor (mode de pantalla tàctil)."
 
-#: core/main.cpp:81
+#: core/main.cpp:84
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "Executa GCompris en el mode de pantalla completa."
 
-#: core/main.cpp:85
+#: core/main.cpp:88
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "Executa GCompris en el mode de finestra."
 
-#: core/main.cpp:89
+#: core/main.cpp:92
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "Executa GCompris amb el so habilitat."
 
-#: core/main.cpp:93
+#: core/main.cpp:96
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "Executa GCompris sense so."
 
-#: core/main.cpp:96
+#: core/main.cpp:99
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Inhabilita el mode quiosc (predeterminat)."
 
-#: core/main.cpp:99
+#: core/main.cpp:102
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Habilita el mode quiosc."
 
-#: core/main.cpp:103
+#: core/main.cpp:106
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
@@ -28305,7 +28305,7 @@ msgstr ""
 "s'executa amb qualsevol targeta gràfica). Obsolet, en el seu lloc utilitzeu "
 "--renderer=software."
 
-#: core/main.cpp:106
+#: core/main.cpp:109
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -28315,24 +28315,24 @@ msgstr ""
 "però pot fallar depenent de la vostra targeta gràfica). Obsolet, en el seu "
 "lloc utilitzeu --renderer=opengl."
 
-#: core/main.cpp:110
+#: core/main.cpp:113
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 msgstr ""
 "Selecciona el renderitzador (opengl, software, Direct3D11, Direct3D12, "
 "Metal)."
 
-#: core/main.cpp:114
+#: core/main.cpp:117
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "Especifica l'activitat en iniciar GCompris."
 
-#: core/main.cpp:119
+#: core/main.cpp:122
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Mostra totes les activitats disponibles en l'eixida estàndard."
 
-#: core/main.cpp:123
+#: core/main.cpp:126
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -28342,7 +28342,7 @@ msgstr ""
 "la sessió. O bé un valor únic (2), o un interval (3-6). Els valors han "
 "d'estar entre l'1 i el 6."
 
-#: core/main.cpp:127
+#: core/main.cpp:130
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
