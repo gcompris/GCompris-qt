@@ -11,6 +11,8 @@
  */
 import QtQuick 2.12
 import core 1.0
+
+import "../../core"
 import "analog_electricity.js" as Activity
 
 Item {
@@ -38,8 +40,8 @@ Item {
         height: tileHeight
         color: (parent.selected && tileImage.parent == tile) ? "#33FF294D" : "transparent"
         border.color: (parent.selected && tileImage.parent == tile) ? "white" : "transparent"
-        border.width: 3
-        radius: 2
+        border.width: GCStyle.thinBorder
+        radius: GCStyle.tinyMargins
 
         property double xCenter: tile.x + tile.width / 2
         property double yCenter: tile.y + tile.height / 2
