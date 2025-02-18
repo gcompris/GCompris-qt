@@ -15,7 +15,7 @@ Rectangle {
     width: 1
     height: width
     color: value === '?' ? "#80FFFFFF" : "#FFFFFF"
-    radius: activityBackground.baseMargins
+    radius: GCStyle.baseMargins
     state: tileState
 
     GCText {
@@ -58,19 +58,19 @@ Rectangle {
     states: [
         State {
             name: "NONE"
-            PropertyChanges { orderingElement { border.color: canDrop ? "white" : "#373737"; border.width: 0 } }
+            PropertyChanges { orderingElement { border.color: canDrop ? GCStyle.whiteBorder : orderingElement.color; border.width: GCStyle.thinnestBorder } }
         },
         State {
             name: "ANSWERED"
-            PropertyChanges { orderingElement { border.color: "#327CF4"; border.width: 3 * ApplicationInfo.ratio } }
+            PropertyChanges { orderingElement { border.color: GCStyle.answerBorder; border.width: GCStyle.midBorder } }
         },
         State {
             name: "RIGHT"
-            PropertyChanges { orderingElement { border.color: "#62BA62"; border.width: 3 * ApplicationInfo.ratio } }
+            PropertyChanges { orderingElement { border.color: GCStyle.goodAnswerBorder; border.width: GCStyle.midBorder } }
         },
         State {
             name: "WRONG"
-            PropertyChanges { orderingElement { border.color: "#D94444"; border.width: 8 * ApplicationInfo.ratio } }
+            PropertyChanges { orderingElement { border.color: GCStyle.badAnswerBorder; border.width: GCStyle.fatBorder } }
         }
     ]
 

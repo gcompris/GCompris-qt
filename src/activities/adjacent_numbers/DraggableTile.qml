@@ -52,9 +52,9 @@ MouseArea {
         id: dragableElement
         width: parent.width
         height: parent.height
-        color: "white"
+        color: "#FFFFFF"
         opacity: 1
-        radius: activityBackground.baseMargins
+        radius: GCStyle.baseMargins
 
         Drag.keys: ""
         Drag.active: draggableMouseArea.drag.active
