@@ -47,7 +47,7 @@ Rectangle {
 
         // Drop enabled only for
         enabled: canDrop
-        keys: ""
+        keys: [""]
 
         onDropped: {
             tileState = "NONE" // Force reset of the transition animation
@@ -78,17 +78,17 @@ Rectangle {
         Transition {
             to: "RIGHT"
             SequentialAnimation {
-                ScriptAction { script: z = 100;}
+                ScriptAction { script: orderingElement.z = 100;}
                 PropertyAnimation { target: orderingElement; property: "scale"; to: 1.2; duration: 300; easing.type: Easing.InOutQuad }
                 PropertyAnimation { target: orderingElement; property: "scale"; to: 1.0; duration: 500; easing.type: Easing.InOutQuad }
-                ScriptAction { script: z = 0;}
+                ScriptAction { script: orderingElement.z = 0;}
             }
         },
         Transition {
             to: "WRONG"
             SequentialAnimation {
                 ScriptAction { script: items.questionTilesModel.set(index, { "tileEdited": false, });}
-                ScriptAction { script: z = 100;}
+                ScriptAction { script: orderingElement.z = 100;}
                 PropertyAnimation { target: orderingElement; property: "border.width"; to: 8 * ApplicationInfo.ratio; duration: 0 }
                 RotationAnimation { target: orderingElement; from: 0; to: 25; duration: 100; direction: RotationAnimation.Clockwise }
                 RotationAnimation { target: orderingElement; from: 25; to: -25; duration: 100; direction: RotationAnimation.Counterclockwise }
@@ -96,7 +96,7 @@ Rectangle {
                 RotationAnimation { target: orderingElement; from: 15; to: -15; duration: 100; direction: RotationAnimation.Counterclockwise }
                 RotationAnimation { target: orderingElement; from: -15; to: 10; duration: 40; direction: RotationAnimation.Clockwise }
                 RotationAnimation { target: orderingElement; from: 10; to: 0; duration: 40; direction: RotationAnimation.Counterclockwise }
-                ScriptAction { script: z = 0;}
+                ScriptAction { script: orderingElement.z = 0;}
                 ScriptAction { script: items.buttonsEnabled = true; }
             }
         },
