@@ -4,6 +4,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
 
 import QtQuick
 import core 1.0
@@ -56,7 +57,7 @@ ActivityBase {
 
         onStart: {
             operand.text = Activity.operandText;
-            Activity.start(items, operand, speedSetting);
+            Activity.start(items, operand, activity.speedSetting);
         }
 
         onStop: Activity.stop()
@@ -65,12 +66,12 @@ ActivityBase {
             id: dialogActivityConfig
             currentActivity: activity.activityInfo
             onClose: {
-                home()
+                activity.home()
             }
             onSaveData: {
-                levelFolder = dialogActivityConfig.chosenLevels
-                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
-                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+                levelFolder = chosenLevels
+                currentActivity.currentLevels = chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, chosenLevels)
             }
 
             onLoadData: {
@@ -87,7 +88,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelpLeftRight
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
@@ -95,7 +96,7 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: (help | home | level | activityConfig) }
             onHelpClicked: {
-                displayDialog(dialogHelpLeftRight)
+                activity.displayDialog(dialogHelpLeftRight)
             }
             onPreviousLevelClicked: {
                 Activity.previousLevel()
@@ -104,9 +105,9 @@ ActivityBase {
                 Activity.nextLevel()
             }
             onActivityConfigClicked: {
-                displayDialog(dialogActivityConfig)
+                activity.displayDialog(dialogActivityConfig)
             }
-            onHomeClicked: home()
+            onHomeClicked: activity.home()
         }
 
         BarButton {
