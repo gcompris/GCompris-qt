@@ -16,6 +16,7 @@ MouseArea {
     width: 1
     height: width
 
+    required property string value
     property bool dropActive: true
     property int onGoingAnimationCount: 0
 
@@ -56,7 +57,7 @@ MouseArea {
         opacity: 1
         radius: GCStyle.baseMargins
 
-        Drag.keys: ""
+        Drag.keys: [""]
         Drag.active: draggableMouseArea.drag.active
         Drag.hotSpot.x: width/2
         Drag.hotSpot.y: height/2
@@ -65,7 +66,7 @@ MouseArea {
 
         GCText {
             id: dragableValueText
-            text: value
+            text: draggableMouseArea.value
             anchors.centerIn: parent
             height: parent.height * 0.6
             width: parent.width * 0.6

@@ -25,7 +25,7 @@ Item {
         width: parent.width
         GCComboBox {
             id: answerModeBox
-            model: availableModes
+            model: activityConfiguration.availableModes
             boxBackground: activityConfiguration.configBackground
             label: qsTr("Validate answers")
         }

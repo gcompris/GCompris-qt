@@ -203,7 +203,7 @@ ActivityBase {
             anchors.verticalCenter: score.verticalCenter
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             width: GCStyle.bigButtonHeight
-            onClicked: validateKey();
+            onClicked: activityBackground.validateKey();
             enabled: visible && items.buttonsEnabled
             visible: !items.immediateAnswer && items.answerCompleted
         }
