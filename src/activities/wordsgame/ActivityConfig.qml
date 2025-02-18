@@ -15,7 +15,7 @@ import "qrc:/gcompris/src/core/core.js" as Core
 
 Item {
     id: activityConfiguration
-    property Item activityBackground
+    property Item configBackground
     property alias localeBox: localeBox
     property alias uppercaseBox: uppercaseBox
     property bool uppercaseOnly: false
@@ -36,7 +36,7 @@ Item {
         GCComboBox {
             id: localeBox
             model: langs.languages
-            activityBackground: activityConfiguration.activityBackground
+            boxBackground: activityConfiguration.configBackground
             label: qsTr("Select your locale")
         }
         GCDialogCheckBox {

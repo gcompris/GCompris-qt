@@ -14,7 +14,7 @@ import "../../core"
 
 Item {
     id: activityConfiguration
-    property Item activityBackground
+    property Item configBackground
     property alias modeBox: modeBox
     property var availableModes: [
         { "text": qsTr("Dots"), "value": "dot" },
@@ -33,7 +33,7 @@ Item {
         GCComboBox {
             id: modeBox
             model: availableModes
-            activityBackground: activityConfiguration.activityBackground
+            boxBackground: activityConfiguration.configBackground
             label: qsTr("Select Domino Representation")
         }
         GCText {

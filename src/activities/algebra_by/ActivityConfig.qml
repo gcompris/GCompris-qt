@@ -14,7 +14,7 @@ import "../../core"
 
 Item {
     id: activityConfiguration
-    property Item activityBackground
+    property Item configBackground
     property alias speedSlider: speedSlider
     property int speedSetting: 5
     width: flick.width

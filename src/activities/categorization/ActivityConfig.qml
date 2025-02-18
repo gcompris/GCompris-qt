@@ -15,7 +15,7 @@ import core 1.0
 
 Item {
     id: activityConfiguration
-    property Item activityBackground
+    property Item configBackground
     property string mode: "easy"
     width: flick.width
     height: column.childrenRect.height
