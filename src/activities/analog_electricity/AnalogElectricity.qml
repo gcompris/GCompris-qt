@@ -115,7 +115,7 @@ ActivityBase {
             property alias infoImage: infoImage
             property alias dataset: dataset
             property alias netlistTimer: netlistTimer
-            property real toolsMargin: 90 * ApplicationInfo.ratio
+            property real toolsMargin: 83 * ApplicationInfo.ratio
             property real zoomLvl: 0.25
             property string mode: "tutorial"
             property bool isTutorialMode: mode == "tutorial" ? true : false
@@ -136,9 +136,9 @@ ActivityBase {
             id: introArea
             anchors {
                 fill: parent
-                topMargin: (activityBackground.hori ? 0 : inputComponentsContainer.height) + 10 * ApplicationInfo.ratio
-                rightMargin: 10 * ApplicationInfo.ratio
-                leftMargin: (activityBackground.hori ? inputComponentsContainer.width : 0) + 10 * ApplicationInfo.ratio
+                topMargin: (activityBackground.hori ? 0 : inputComponentsContainer.height) + GCStyle.baseMargins
+                rightMargin: GCStyle.baseMargins
+                leftMargin: (activityBackground.hori ? inputComponentsContainer.width : 0) + GCStyle.baseMargins
                 bottomMargin: bar.height * 2
             }
         }
@@ -157,21 +157,20 @@ ActivityBase {
             Activity.stop();
         }
 
-        Rectangle {
+        Item {
             id: visibleArea
-            color: "#00000000"
-            width:activityBackground.width - items.toolsMargin - 10
-            height: activityBackground.height - bar.height - items.toolsMargin - 10
+            width:activityBackground.width - items.toolsMargin - GCStyle.baseMargins
+            height: activityBackground.height - bar.height - items.toolsMargin - GCStyle.baseMargins
             anchors {
                 fill: undefined
                 top: parent.top
-                topMargin: 5
+                topMargin: GCStyle.halfMargins
                 right: parent.right
-                rightMargin: 5
+                rightMargin: GCStyle.halfMargins
                 left: inputComponentsContainer.right
-                leftMargin: 5
+                leftMargin: GCStyle.halfMargins
                 bottom: bar.top
-                bottomMargin: 20
+                bottomMargin: GCStyle.baseMargins
             }
             z: 6
 
@@ -180,12 +179,12 @@ ActivityBase {
                 anchors {
                     horizontalCenter: parent.horizontalCenter
                     top: parent.top
-                    topMargin: 2
+                    topMargin: GCStyle.tinyMargins
                 }
                 fontSizeMode: Text.Fit
                 minimumPixelSize: 10
                 font.pixelSize: 150
-                color: "white"
+                color: GCStyle.whiteText
                 horizontalAlignment: Text.AlignHLeft
                 width: Math.min(implicitWidth, 0.90 * parent.width)
                 height: Math.min(implicitHeight, 0.7 * parent.height)
@@ -197,11 +196,10 @@ ActivityBase {
             Rectangle {
                 id: infoTxtContainer
                 anchors.fill: parent
-                opacity: 1
-                radius: 10
-                color: "#373737"
-                border.width: 2
-                border.color: "#F2F2F2"
+                radius: GCStyle.halfMargins
+                color: GCStyle.darkBg
+                border.width: GCStyle.thinnestBorder
+                border.color: GCStyle.lightBorder
                 visible: infoTxt.visible
                 MouseArea {
                     anchors.fill: parent
@@ -213,8 +211,8 @@ ActivityBase {
             Image {
                 id: infoImage
                 property bool imgVisible: false
-                height: source == "" ? 0 : parent.height * 0.3 - 10
-                width: source == "" ? 0 : parent.width - 10
+                height: source == "" ? 0 : parent.height * 0.3 - GCStyle.halfMargins
+                width: source == "" ? 0 : parent.width - GCStyle.halfMargins
                 fillMode: Image.PreserveAspectFit
                 visible: infoTxt.visible && imgVisible
                 anchors {
@@ -275,13 +273,11 @@ ActivityBase {
             Image {
                 id: containerTexture
                 anchors.fill: parent
-                anchors.rightMargin: 3 * ApplicationInfo.ratio
-                anchors.bottomMargin: 0
+                anchors.rightMargin: GCStyle.midBorder
                 source: Activity.urlDigital + "texture01.webp"
                 fillMode: Image.Tile
                 ListWidget {
                     id: availablePieces
-                    hori: activityBackground.hori
                 }
             }
             z: 10
@@ -291,18 +287,18 @@ ActivityBase {
             id: toolTip
             anchors {
                 bottom: bar.top
-                bottomMargin: 10
+                bottomMargin: GCStyle.halfMargins
                 left: inputComponentsContainer.left
-                leftMargin: 5
+                leftMargin: GCStyle.halfMargins
             }
-            width: toolTipTxt.width + 10
-            height: toolTipTxt.height + 5
-            color: "#373737"
+            width: toolTipTxt.width + GCStyle.baseMargins
+            height: toolTipTxt.height + GCStyle.halfMargins
+            color: GCStyle.darkBg
             opacity: 0
-            radius: 10
+            radius: GCStyle.halfMargins
             z: 100
-            border.width: 2
-            border.color: "#F2F2F2"
+            border.width: GCStyle.thinnestBorder
+            border.color: GCStyle.lightBorder
             property alias text: toolTipTxt.text
             Behavior on opacity { NumberAnimation { duration: 120 } }
 
@@ -319,7 +315,7 @@ ActivityBase {
                 id: toolTipTxt
                 anchors.centerIn: parent
                 fontSize: regularSize
-                color: "white"
+                color: GCStyle.whiteText
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: TextEdit.WordWrap
             }
@@ -349,11 +345,11 @@ ActivityBase {
             anchors {
                 bottom: bar.top
                 right: parent.right
-                rightMargin: 10 * ApplicationInfo.ratio
+                rightMargin: GCStyle.baseMargins
                 bottomMargin: height * 0.5
             }
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: 60 * ApplicationInfo.ratio
+            width: GCStyle.bigButtonHeight
             enabled: !tutorialInstruction.visible && !bonus.isPlaying
             onClicked: Activity.checkAnswer();
         }
@@ -383,8 +379,8 @@ ActivityBase {
                 when: activityBackground.hori
                 PropertyChanges {
                     visibleArea {
-                        width: activityBackground.width - items.toolsMargin - 10
-                        height: activityBackground.height - bar.height - items.toolsMargin - 10
+                        width: activityBackground.width - items.toolsMargin - GCStyle.baseMargins
+                        height: activityBackground.height - bar.height - items.toolsMargin - GCStyle.baseMargins
                     }
                 }
                 AnchorChanges {
@@ -424,8 +420,8 @@ ActivityBase {
                 when: !activityBackground.hori
                 PropertyChanges {
                     visibleArea {
-                        width: activityBackground.width - 10
-                        height: activityBackground.height - bar.height - 10
+                        width: activityBackground.width - GCStyle.baseMargins
+                        height: activityBackground.height - bar.height - GCStyle.baseMargins
                     }
                 }
                 AnchorChanges {

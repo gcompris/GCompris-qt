@@ -11,16 +11,17 @@
  */
 import QtQuick 2.12
 import core 1.0
+
+import "../../core"
 import "analog_electricity.js" as Activity
 
 Item {
     id: listWidget
     anchors.fill: parent
-    anchors.topMargin: 5 * ApplicationInfo.ratio
-    anchors.leftMargin: 5 * ApplicationInfo.ratio
+    anchors.margins: GCStyle.halfMargins
     z: 10
 
-    property bool hori
+    readonly property bool isHorizontal: width >= height
     property alias model: mymodel
     property alias view: view
     property alias repeater: repeater
@@ -34,7 +35,7 @@ Item {
     signal hideToolbar
     onHideToolbar: toolButton.showToolBar = false;
 
-    property int minIconWidth: 1
+    property int toolIconWidth: 1
 
     ListModel {
         id: mymodel
@@ -42,17 +43,17 @@ Item {
 
     Grid {
         id: view
-        width: inputComponentsContainer.width
-        height: activityBackground.height - 2 * bar.height
-        spacing: 5
+        columns: listWidget.isHorizontal ? view.nbItemsByGroup + 2 : 1
+        spacing: GCStyle.tinyMargins
         z: 20
-        columns: 1
 
         property int currentDisplayedGroup: 0
         property int setCurrentDisplayedGroup: 0
-        property int nbItemsByGroup: parent.height / iconSize - 2
+        property int nbItemsByGroup: listWidget.isHorizontal ?
+                Math.floor(view.width / (view.iconSize + view.spacing) - 2) :
+                Math.floor(view.height / (view.iconSize + view.spacing) - 2)
         property int nbDisplayedGroup: Math.ceil(model.count / nbItemsByGroup)
-        property int iconSize: 80 * ApplicationInfo.ratio
+        property int iconSize: GCStyle.bigButtonHeight
         property int previousNavigation: 1
         property int nextNavigation: 1
 
@@ -82,10 +83,10 @@ Item {
 
         Image {
             id: toolButton
-            width: listWidget.width - listWidget.anchors.leftMargin
-            height: width
-            sourceSize.width: width
-            sourceSize.height: height
+            width: view.iconSize
+            height: view.iconSize
+            sourceSize.width: view.iconSize
+            sourceSize.height: view.iconSize
             source: Activity.urlDigital + "tools.svg"
             fillMode: Image.PreserveAspectFit
 
@@ -99,35 +100,23 @@ Item {
             Rectangle {
                 id: toolsContainer
                 visible: toolButton.showToolBar
-                width: (toolDelete.width + tools.spacing) * tools.children.length + tools.spacing * 4
-                height: parent.width
-                anchors.top: parent.top
-                anchors.left: parent.right
+                width: tools.width + GCStyle.baseMargins
+                height: tools.height + GCStyle.baseMargins
                 color: "#2a2a2a"
-                radius: 4 * ApplicationInfo.ratio
+                radius: GCStyle.tinyMargins
 
                 Flow {
                     id: tools
-                    width: parent.width
-                    height: parent.height
-
-                    property int topMarginAmt: (toolsContainer.height - toolDelete.height) / 2
-                    property int leftMarginAmt: (toolsContainer.width - toolDelete.width) / 2
-
-                    anchors {
-                        fill: parent
-                        leftMargin: 8 * ApplicationInfo.ratio
-                        topMargin: tools.topMarginAmt
-                    }
-                    spacing: 4 * ApplicationInfo.ratio
+                    anchors.centerIn: parent
+                    spacing: GCStyle.halfMargins
 
                     Image {
                         id: toolDelete
                         state: "notSelected"
-                        width: minIconWidth
-                        height: width
-                        sourceSize.width: width
-                        sourceSize.height: height
+                        width: listWidget.toolIconWidth
+                        height: listWidget.toolIconWidth
+                        sourceSize.width: listWidget.toolIconWidth
+                        sourceSize.height: listWidget.toolIconWidth
                         source: Activity.urlDigital + "deleteOn.svg"
                         fillMode: Image.PreserveAspectFit
                         MouseArea {
@@ -160,10 +149,10 @@ Item {
                     Image {
                         id: info
                         source: Activity.urlDigital + "info.svg"
-                        width: minIconWidth
-                        height: width
-                        sourceSize.width: width
-                        sourceSize.height: height
+                        width: listWidget.toolIconWidth
+                        height: listWidget.toolIconWidth
+                        sourceSize.width: listWidget.toolIconWidth
+                        sourceSize.height: listWidget.toolIconWidth
                         fillMode: Image.PreserveAspectFit
                         MouseArea {
                             anchors.fill: parent
@@ -196,10 +185,10 @@ Item {
 
                     Image {
                         id: rotateLeft
-                        width: minIconWidth
-                        height: width
-                        sourceSize.width: width
-                        sourceSize.height: height
+                        width: listWidget.toolIconWidth
+                        height: listWidget.toolIconWidth
+                        sourceSize.width: listWidget.toolIconWidth
+                        sourceSize.height: listWidget.toolIconWidth
                         source: Activity.urlDigital + "rotate.svg"
                         fillMode: Image.PreserveAspectFit
                         state: "CanNotBeSelected"
@@ -233,10 +222,10 @@ Item {
 
                     Image {
                         id: rotateRight
-                        width: minIconWidth
-                        height: width
-                        sourceSize.width: width
-                        sourceSize.height: height
+                        width: listWidget.toolIconWidth
+                        height: listWidget.toolIconWidth
+                        sourceSize.width: listWidget.toolIconWidth
+                        sourceSize.height: listWidget.toolIconWidth
                         source: Activity.urlDigital + "rotate.svg"
                         fillMode: Image.PreserveAspectFit
                         mirror: true
@@ -271,10 +260,10 @@ Item {
 
                     Image {
                         id: zoomInBtn
-                        width: minIconWidth
-                        height: width
-                        sourceSize.width: width
-                        sourceSize.height: height
+                        width: listWidget.toolIconWidth
+                        height: listWidget.toolIconWidth
+                        sourceSize.width: listWidget.toolIconWidth
+                        sourceSize.height: listWidget.toolIconWidth
                         source: Activity.urlDigital + "zoomIn.svg"
                         fillMode: Image.PreserveAspectFit
 
@@ -304,10 +293,10 @@ Item {
 
                     Image {
                         id: zoomOutBtn
-                        width: minIconWidth
-                        height: width
-                        sourceSize.width: width
-                        sourceSize.height: height
+                        width: listWidget.toolIconWidth
+                        height: listWidget.toolIconWidth
+                        sourceSize.width: listWidget.toolIconWidth
+                        sourceSize.height: listWidget.toolIconWidth
                         source: Activity.urlDigital + "zoomOut.svg"
                         fillMode: Image.PreserveAspectFit
 
@@ -345,10 +334,10 @@ Item {
             DragListItem {
                 id: contactsDelegate
                 z: 1
-                heightInColumn: view.iconSize * 0.75
+                heightInColumn: view.iconSize * 0.85
                 widthInColumn: view.iconSize * 0.85
                 tileWidth: view.iconSize
-                tileHeight: view.iconSize * 0.85
+                tileHeight: view.iconSize
                 visible: view.currentDisplayedGroup * view.nbItemsByGroup <= index &&
                           index <= (view.currentDisplayedGroup+1) * view.nbItemsByGroup - 1
 
@@ -361,15 +350,18 @@ Item {
             onModelChanged: repeater.currentIndex = -1;
         }
 
-        Row {
-            spacing: view.iconSize * 0.20
+        Item {
+            width: view.iconSize
+            height: view.iconSize
             Image {
                 id: previous
                 opacity: (model.count > view.nbItemsByGroup &&
                           view.previousNavigation != 0 && view.currentDisplayedGroup != 0) ? 1 : 0
                 source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
-                sourceSize.width: view.iconSize * 0.30
+                sourceSize.height: view.iconSize * 0.85
                 fillMode: Image.PreserveAspectFit
+                anchors.left: parent.left
+                anchors.verticalCenter: parent.verticalCenter
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
@@ -387,8 +379,10 @@ Item {
                 visible: model.count > view.nbItemsByGroup && view.nextNavigation != 0 && view.currentDisplayedGroup <
                          view.nbDisplayedGroup - 1
                 source: "qrc:/gcompris/src/core/resource/bar_next.svg"
-                sourceSize.width: view.iconSize * 0.30
+                sourceSize.height: view.iconSize * 0.85
                 fillMode: Image.PreserveAspectFit
+                anchors.right: parent.right
+                anchors.verticalCenter: parent.verticalCenter
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
@@ -404,80 +398,50 @@ Item {
     states: [
         State {
             name: "horizontalList"
-            when: listWidget.hori
+            when: listWidget.isHorizontal
             PropertyChanges {
                 listWidget {
-                    minIconWidth: Math.min((activityBackground.width - items.toolsMargin) / 6 - 10 * ApplicationInfo.ratio, 70 * ApplicationInfo.ratio)
+                    toolIconWidth: Math.min((activityBackground.height - items.toolsMargin - bar.height * 1.5) / 6 - tools.spacing, GCStyle.bigButtonHeight)
                 }
-            }
-            PropertyChanges {
                 view {
-                    width: inputComponentsContainer.width
-                    height: activityBackground.height - 2 * bar.height
-                    columns: 1
-                    nbItemsByGroup: view.parent.height / view.iconSize - 2
+                    width: listWidget.width
+                    height: listWidget.height
                 }
-            }
-            PropertyChanges {
-                toolButton {
-                    width: listWidget.width - listWidget.anchors.leftMargin
-                }
-            }
-            PropertyChanges {
-                toolsContainer {
-                    width: (toolDelete.width + tools.spacing) * tools.children.length + tools.spacing * 4
-                    height: toolsContainer.parent.width
+                tools {
+                    width: listWidget.toolIconWidth
+                    height: (listWidget.toolIconWidth + tools.spacing) * tools.children.length
                 }
             }
             AnchorChanges {
                 target: toolsContainer
-                anchors.top: toolsContainer.parent.top
-                anchors.left: toolsContainer.parent.right
-            }
-            PropertyChanges {
-                tools {
-                    anchors.leftMargin: 8 * ApplicationInfo.ratio
-                    anchors.topMargin: tools.topMarginAmt
-                }
+                anchors.top: toolButton.bottom
+                anchors.horizontalCenter: toolButton.horizontalCenter
+                anchors.verticalCenter: undefined
+                anchors.left: undefined
             }
         },
         State {
             name: "verticalList"
-            when: !listWidget.hori
+            when: !listWidget.isHorizontal
             PropertyChanges {
                 listWidget {
-                    minIconWidth: Math.min((activityBackground.height - items.toolsMargin - bar.height * 2 - 10 * ApplicationInfo.ratio) / 6, 70 * ApplicationInfo.ratio)
+                    toolIconWidth: Math.min((activityBackground.width - items.toolsMargin) / 6 - tools.spacing, GCStyle.bigButtonHeight)
                 }
-            }
-            PropertyChanges {
                 view {
-                    width: 2 * bar.height
-                    height: bar.height
-                    columns: view.nbItemsByGroup + 2
-                    nbItemsByGroup: view.parent.width / view.iconSize - 2
+                    width: parent.width
+                    height: parent.height - bar.height
                 }
-            }
-            PropertyChanges {
-                toolButton {
-                    width: listWidget.height - listWidget.anchors.leftMargin
-                }
-            }
-            PropertyChanges {
-                toolsContainer {
-                    width: toolsContainer.parent.width
-                    height: (toolDelete.height + tools.spacing) * tools.children.length + tools.spacing * 4
+                tools {
+                    width: (listWidget.toolIconWidth + tools.spacing) * tools.children.length
+                    height: listWidget.toolIconWidth
                 }
             }
             AnchorChanges {
                 target: toolsContainer
-                anchors.top: toolsContainer.parent.bottom
-                anchors.left: toolsContainer.parent.left
-            }
-            PropertyChanges {
-                tools {
-                    anchors.leftMargin: tools.leftMarginAmt
-                    anchors.topMargin: 8 * ApplicationInfo.ratio
-                }
+                anchors.verticalCenter: toolButton.verticalCenter
+                anchors.left: toolButton.right
+                anchors.top: undefined
+                anchors.horizontalCenter: undefined
             }
         }
     ]
