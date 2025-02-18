@@ -19,7 +19,7 @@ Image {
 
     property double posX
     property double posY
-    property double size: parent.terminalSize
+    property double size: parent ? parent.terminalSize : 1
     property bool selected: false
     property int value: 0
     property var wires: []
@@ -28,20 +28,20 @@ Image {
     property int netlistIndex: 0
     property string terminalType: "noPolarity"
 
-    width: size * Math.max(parent.paintedHeight, parent.paintedWidth)
+    width: parent ? size * Math.max(parent.paintedHeight, parent.paintedWidth) : 1
     height: width
     source: Activity.urlDigital + "tPoint.svg"
     sourceSize.width: width
     sourceSize.height: width
     antialiasing: true
 
-    x: (parent.width - parent.paintedWidth) / 2 + posX * parent.paintedWidth - width / 2
-    y: (parent.height - parent.paintedHeight) / 2 + posY * parent.paintedHeight - height / 2
+    x: parent ? (parent.width - parent.paintedWidth) * 0.5 + posX * parent.paintedWidth - width * 0.5 : 1
+    y: parent ? (parent.height - parent.paintedHeight) * 0.5 + posY * parent.paintedHeight - height * 0.5 : 1
 
-    property double xCenter: terminalPoint.parent.x + terminalPoint.x + width/2
-    property double yCenter: terminalPoint.parent.y + terminalPoint.y + height/2
-    property double xCenterFromComponent: terminalPoint.x + width/2 - terminalPoint.parent.width / 2
-    property double yCenterFromComponent: terminalPoint.y + height/2 - terminalPoint.parent.height / 2
+    property double xCenter: parent ? terminalPoint.parent.x + terminalPoint.x + width * 0.5 : 1
+    property double yCenter: parent ? terminalPoint.parent.y + terminalPoint.y + height * 0.5 : 1
+    property double xCenterFromComponent: parent ? terminalPoint.x + width * 0.5 - terminalPoint.parent.width * 0.5 : 1
+    property double yCenterFromComponent: parent ? terminalPoint.y + height * 0.5 - terminalPoint.parent.height * 0.5 : 1
 
     function updateNetlistIndex(netlistIndex_: int, colorIndex_: int) {
         if(initialIndex === 0) {
