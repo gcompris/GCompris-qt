@@ -22,14 +22,17 @@ QtObject {
     readonly property int tinyMargins: Math.max(1, 2 * ApplicationInfo.ratio)
 
     // border sizes
-    readonly property int thickestBorder: Math.max(3, 5 * ApplicationInfo.ratio)
+    readonly property int fatBorder: Math.max(5, 8 * ApplicationInfo.ratio)
+    readonly property int thickerBorder: Math.max(3, 5 * ApplicationInfo.ratio)
     readonly property int thickBorder: Math.max(2, 4 * ApplicationInfo.ratio)
     readonly property int midBorder: Math.max(2, 3 * ApplicationInfo.ratio)
     readonly property int thinBorder: Math.max(1, 2 * ApplicationInfo.ratio)
     readonly property int thinnestBorder: Math.max(1, ApplicationInfo.ratio)
 
     // small button's height in menu config page
-    readonly property int smallButtonHeight: 30 * ApplicationInfo.ratio
+    readonly property int smallButtonHeight: 35 * ApplicationInfo.ratio
+    // big button's size, like for OK button
+    readonly property int bigButtonHeight: 70 * ApplicationInfo.ratio
 
     // border colors
     readonly property color whiteBorder: "#ffffff"
@@ -38,6 +41,10 @@ QtObject {
     readonly property color noBorder: "#00ffffff"
     readonly property color blueBorder: "#87A6DD"
     readonly property color grayBorder: "#808080"
+
+    readonly property color answerBorder: "#327CF4" // blue
+    readonly property color goodAnswerBorder: "#62BA62" // green
+    readonly property color badAnswerBorder: "#D94444" // red
 
     // colors for text and its background
     readonly property color whiteText: "#ffffff"
