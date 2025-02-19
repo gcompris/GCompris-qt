@@ -37,11 +37,11 @@ Item {
         color: GCStyle.whiteText
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
-        width: textWidth * displayText.parent.width
-        height: textHeight * displayText.parent.height
+        width: displayText.textWidth * displayText.parent.width
+        height: displayText.textHeight * displayText.parent.height
         wrapMode: TextEdit.WordWrap
         z: 2
-        text: showText
+        text: displayText.showText
     }
 
     Rectangle {
