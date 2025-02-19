@@ -94,10 +94,11 @@ ActivityBase {
         Rectangle {
             id: textBG
             visible: typedText.text != ""
-            color: "#80ffffff"
+            color: GCStyle.whiteBg
+            opacity: 0.5
             width: typedText.contentWidth * 2
             height: typedText.contentHeight
-            radius: 16
+            radius: GCStyle.baseMargins
         }
 
         GCText {
