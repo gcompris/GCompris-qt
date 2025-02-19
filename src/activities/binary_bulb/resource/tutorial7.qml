@@ -44,6 +44,7 @@ Rectangle {
         Repeater {
             model: ["", "", "", "", "", "4", "+", "1"]
             GCText {
+                required property string modelData
                 width: topBlock.bulbWidth
                 height: parent.height
                 text: modelData
@@ -65,6 +66,7 @@ Rectangle {
         Repeater {
             model: ["off", "off", "off", "off", "off", "on", "off", "on"]
             Image {
+                required property string modelData
                 source: "bulb_" + modelData + ".svg"
                 fillMode: Image.PreserveAspectFit
                 width: topBlock.bulbWidth
@@ -84,6 +86,7 @@ Rectangle {
         Repeater {
             model: ["0", "0", "0", "0", "0", "1", "0", "1"]
             GCText {
+                required property string modelData
                 width: topBlock.bulbWidth
                 height: parent.height
                 text: modelData
