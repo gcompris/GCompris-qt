@@ -159,7 +159,7 @@ Item {
                             onClicked: {
                                 if(!Activity.animationInProgress && parent.state === "canBeSelected") {
                                     Activity.displayInfo();
-                                    hideToolbar();
+                                    listWidget.hideToolbar();
                                 }
                             }
                         }
@@ -334,12 +334,12 @@ Item {
             DragListItem {
                 id: contactsDelegate
                 z: 1
-                heightInColumn: view.iconSize * 0.85
-                widthInColumn: view.iconSize * 0.85
-                tileWidth: view.iconSize
-                tileHeight: view.iconSize
-                visible: view.currentDisplayedGroup * view.nbItemsByGroup <= index &&
-                          index <= (view.currentDisplayedGroup+1) * view.nbItemsByGroup - 1
+                heightInColumn: listWidget.view.iconSize * 0.85
+                widthInColumn: listWidget.view.iconSize * 0.85
+                tileWidth: listWidget.view.iconSize
+                tileHeight: listWidget.view.iconSize
+                visible: listWidget.view.currentDisplayedGroup * listWidget.view.nbItemsByGroup <= index &&
+                          index <= (listWidget.view.currentDisplayedGroup+1) * listWidget.view.nbItemsByGroup - 1
 
                 onPressed: repeater.currentIndex = index;
             }
@@ -355,7 +355,7 @@ Item {
             height: view.iconSize
             Image {
                 id: previous
-                opacity: (model.count > view.nbItemsByGroup &&
+                opacity: (listWidget.model.count > view.nbItemsByGroup &&
                           view.previousNavigation != 0 && view.currentDisplayedGroup != 0) ? 1 : 0
                 source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
                 sourceSize.height: view.iconSize * 0.85
@@ -376,7 +376,7 @@ Item {
 
             Image {
                 id: next
-                visible: model.count > view.nbItemsByGroup && view.nextNavigation != 0 && view.currentDisplayedGroup <
+                visible: listWidget.model.count > view.nbItemsByGroup && view.nextNavigation != 0 && view.currentDisplayedGroup <
                          view.nbDisplayedGroup - 1
                 source: "qrc:/gcompris/src/core/resource/bar_next.svg"
                 sourceSize.height: view.iconSize * 0.85

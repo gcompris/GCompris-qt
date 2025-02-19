@@ -8,6 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import core 1.0
 import "../analog_electricity.js" as Activity
@@ -22,16 +24,16 @@ ElectricalComponent {
     //: I for current intensity, A for Ampere
     labelText2: qsTr("I = %1A").arg(resistorCurrent)
     source: Activity.url + "resistor.svg"
+    componentName: "Resistor"
 
-    property var nodeVoltages: [0, 0]
+    property list<double> nodeVoltages: [0, 0]
     property double componentVoltage: 0
     property double resistorCurrent: 0
     property alias connectionPoints: connectionPoints
-    property var connectionPointPosX: [0.1, 0.9]
-    property var connectionPointPosY: [0.5, 0.5]
-    property string componentName: "Resistor"
-    property var internalNetlistIndex: [0, 0]
-    property var externalNetlistIndex: [0, 0]
+    property list<double> connectionPointPosX: [0.1, 0.9]
+    property list<double> connectionPointPosY: [0.5, 0.5]
+    property list<int> internalNetlistIndex: [0, 0]
+    property list<int> externalNetlistIndex: [0, 0]
     property var netlistModel:
     [
         "r",
@@ -99,8 +101,10 @@ ElectricalComponent {
         Component {
             id: connectionPoint
             TerminalPoint {
-                posX: connectionPointPosX[index]
-                posY: connectionPointPosY[index]
+                required property int index
+                component: resistor
+                posX: resistor.connectionPointPosX[index]
+                posY: resistor.connectionPointPosY[index]
             }
         }
     }

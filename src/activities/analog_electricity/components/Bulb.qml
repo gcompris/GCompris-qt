@@ -8,6 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import core 1.0
 import "../analog_electricity.js" as Activity
@@ -23,7 +25,7 @@ ElectricalComponent {
     labelText2: qsTr("I = %1A").arg(bulbCurrent)
     source: Activity.url + "bulb.svg"
 
-    property var nodeVoltages: [0, 0]
+    property list<double> nodeVoltages: [0, 0]
     property double componentVoltage: 0
     property double power: 0
     property double maxPower: 0.11
@@ -31,10 +33,10 @@ ElectricalComponent {
     property alias connectionPoints: connectionPoints
     property alias lightBulb: lightBulb
     property bool isBroken: false
-    property var connectionPointPosX: [0.1, 0.9]
+    property list<double> connectionPointPosX: [0.1, 0.9]
     property string componentName: "Bulb"
-    property var internalNetlistIndex: [0, 0]
-    property var externalNetlistIndex: [0, 0]
+    property list<int> internalNetlistIndex: [0, 0]
+    property list<int> externalNetlistIndex: [0, 0]
     property var netlistModel:
     [
         "r",
@@ -102,7 +104,9 @@ ElectricalComponent {
         Component {
             id: connectionPoint
             TerminalPoint {
-                posX: connectionPointPosX[index]
+                required property int index
+                component: bulb
+                posX: bulb.connectionPointPosX[index]
                 posY: 0.9
             }
         }
@@ -125,7 +129,7 @@ ElectricalComponent {
         sourceSize.width: width
         sourceSize.height: height
         fillMode: Image.PreserveAspectFit
-        opacity: power < maxPower ? power * 10 : 0
+        opacity: bulb.power < bulb.maxPower ? bulb.power * 10 : 0
     }
 
     function repairComponent() {

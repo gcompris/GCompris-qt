@@ -36,8 +36,8 @@ Item {
 
     Rectangle {
         id: tile
-        width: tileWidth
-        height: tileHeight
+        width: item.tileWidth
+        height: item.tileHeight
         color: (parent.selected && tileImage.parent == tile) ? "#33FF294D" : "transparent"
         border.color: (parent.selected && tileImage.parent == tile) ? "white" : "transparent"
         border.width: GCStyle.thinBorder
@@ -49,10 +49,10 @@ Item {
 
         Image {
             anchors.centerIn: parent
-            sourceSize.width: widthInColumn
-            sourceSize.height: heightInColumn
-            width: widthInColumn
-            height: heightInColumn
+            sourceSize.width: item.widthInColumn
+            sourceSize.height: item.heightInColumn
+            width: item.widthInColumn
+            height: item.heightInColumn
             fillMode: Image.PreserveAspectFit
             antialiasing: true
             source: Activity.url + imgName
@@ -63,8 +63,8 @@ Item {
             anchors.centerIn: parent
             sourceSize.width: fullWidth * 0.5
             sourceSize.height: fullHeight * 0.5
-            width: widthInColumn
-            height: heightInColumn
+            width: item.widthInColumn
+            height: item.heightInColumn
             fillMode: Image.PreserveAspectFit
             source: Activity.url + imgName
             antialiasing: true
@@ -77,8 +77,8 @@ Item {
             function toSmall() {
                 item.z = 1;
                 opacity = 0;
-                width = widthInColumn;
-                height = heightInColumn;
+                width = item.widthInColumn;
+                height = item.heightInColumn;
             }
 
             function toFull() {

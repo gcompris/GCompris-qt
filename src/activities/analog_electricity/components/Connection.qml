@@ -8,6 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import core 1.0
 import "../analog_electricity.js" as Activity
@@ -18,10 +20,10 @@ ElectricalComponent {
     noOfConnectionPoints: 1
     information: qsTr("A simple connection point to connect several wires in an electrical circuit.")
     source: Activity.url + "connection.svg"
+    componentName: "Connection"
 
     property alias connectionPoints: connectionPoints
-    property string componentName: "Connection"
-    property var externalNetlistIndex: [0]
+    property list<int> externalNetlistIndex: [0]
 
     Repeater {
         id: connectionPoints
@@ -30,6 +32,7 @@ ElectricalComponent {
         Component {
             id: connectionPoint
             TerminalPoint {
+                component: connection
                 posX: 0.5
                 posY: 0.5
             }

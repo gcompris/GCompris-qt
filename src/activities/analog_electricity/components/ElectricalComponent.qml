@@ -34,6 +34,7 @@ Image {
     property double terminalSize
     property bool destructible
     property bool showLabel: false
+    property string componentName
 
     property alias rotateComponent: rotateComponent
 
@@ -57,11 +58,12 @@ Image {
         id: rotateComponent
         target: electricalComponent
         property: "rotation"
-        from: initialAngle; to: initialAngle + rotationAngle
+        from: electricalComponent.initialAngle
+        to: electricalComponent.initialAngle + electricalComponent.rotationAngle
         duration: 1
         onStarted:{ Activity.animationInProgress = true }
         onStopped: {
-            initialAngle = initialAngle + rotationAngle;
+            initialAngle = electricalComponent.initialAngle + electricalComponent.rotationAngle;
             Activity.updateWires(componentIndex);
             if(initialAngle == startingAngle + rotationAngle * 45) {
                 if(initialAngle == 360 || initialAngle == -360)
@@ -105,13 +107,13 @@ Image {
         anchors.centerIn: parent
         drag.target: electricalComponent
         onPressed: {
-            Activity.updateToolTip(toolTipTxt);
-            Activity.componentSelected(componentIndex);
+            Activity.updateToolTip(electricalComponent.toolTipTxt);
+            Activity.componentSelected(electricalComponent.componentIndex);
         }
         onClicked: {
             if(Activity.toolDelete) {
-                if (destructible) {
-                    Activity.removeComponent(componentIndex);
+                if (electricalComponent.destructible) {
+                    Activity.removeComponent(electricalComponent.componentIndex);
                 } else {
                     Activity.deselect();
                 }
@@ -128,8 +130,8 @@ Image {
         }
 
         onPositionChanged: {
-            updateDragConstraints();
-            Activity.updateWires(componentIndex);
+            electricalComponent.updateDragConstraints();
+            Activity.updateWires(electricalComponent.componentIndex);
         }
     }
 
@@ -142,7 +144,7 @@ Image {
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.bottom
         color: "#80000000"
-        visible: showLabel
+        visible: electricalComponent.showLabel
         rotation: electricalComponent.rotation * -1
         GCText {
             anchors.centerIn: parent
@@ -153,7 +155,7 @@ Image {
             minimumPixelSize: 10
             font.pixelSize: componentLabel.width * 0.2
             color: "white"
-            text: labelText1 + "<br>" + labelText2
+            text: electricalComponent.labelText1 + "<br>" + electricalComponent.labelText2
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
         }

@@ -8,6 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import core 1.0
 import "../analog_electricity.js" as Activity
@@ -22,8 +24,9 @@ ElectricalComponent {
     //: I for current intensity, A for Ampere
     labelText2: qsTr("I = %1A").arg(current)
     source: Activity.url + "rheostat.svg"
+    componentName: "Rheostat"
 
-    property var nodeVoltages: [0, 0, 0]
+    property list<double> nodeVoltages: [0, 0, 0]
     property double componentVoltage: 0
     property double current: 0
     property double bottomCurrent: 0
@@ -33,12 +36,11 @@ ElectricalComponent {
     property string topResistanceTxt: topResistance.toString()
     property string bottomResistanceTxt: bottomResistance.toString()
     onBottomResistanceTxtChanged: Activity.restartTimer();
-    property string componentName: "Rheostat"
     property alias connectionPoints: connectionPoints
-    property var connectionPointPosX: [0.335, 0.83, 0.335]
-    property var connectionPointPosY: [0.1, 0.5, 0.9]
-    property var internalNetlistIndex: [0, 0, 0]
-    property var externalNetlistIndex: [0, 0, 0]
+    property list<double> connectionPointPosX: [0.335, 0.83, 0.335]
+    property list<double> connectionPointPosY: [0.1, 0.5, 0.9]
+    property list<int> internalNetlistIndex: [0, 0, 0]
+    property list<int> externalNetlistIndex: [0, 0, 0]
     property var netlistModel:
     [
         "r",
@@ -149,8 +151,10 @@ ElectricalComponent {
         Component {
             id: connectionPoint
             TerminalPoint {
-                posX: connectionPointPosX[index]
-                posY: connectionPointPosY[index]
+                required property int index
+                component: rheostat
+                posX: rheostat.connectionPointPosX[index]
+                posY: rheostat.connectionPointPosY[index]
             }
         }
     }
@@ -164,7 +168,7 @@ ElectricalComponent {
         property double wiperLimit: wiperArea.height * 0.8
         //update wiper on zoom or window size changes
         onWiperLimitChanged: {
-            wiper.y = wiperArea.wiperLimit * wiperPosition;
+            wiper.y = wiperArea.wiperLimit * rheostat.wiperPosition;
         }
         Rectangle {
             id: internalWire

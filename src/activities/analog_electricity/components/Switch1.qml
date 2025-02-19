@@ -8,6 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import core 1.0
 import "../analog_electricity.js" as Activity
@@ -18,14 +20,14 @@ ElectricalComponent {
     noOfConnectionPoints: 2
     information: qsTr("Switch can connect or disconnect the conducting path in an electrical circuit.")
     source: Activity.url + "switch_off.svg"
+    componentName: "Switch1"
 
     property double componentVoltage: 0
     property double current: 0
     property bool switchOn: false
     property alias connectionPoints: connectionPoints
-    property var connectionPointPosX: [0.1, 0.9]
-    property string componentName: "Switch1"
-    property var externalNetlistIndex: [0, 0]
+    property list<double> connectionPointPosX: [0.1, 0.9]
+    property list<int> externalNetlistIndex: [0, 0]
     property var netlistModel:
     [
         "r",
@@ -49,7 +51,9 @@ ElectricalComponent {
         Component {
             id: connectionPoint
             TerminalPoint {
-                posX: connectionPointPosX[index]
+                required property int index
+                component: switch1
+                posX: switch1.connectionPointPosX[index]
                 posY: 0.75
             }
         }
@@ -64,10 +68,10 @@ ElectricalComponent {
         onClicked: {
             if(switch1.source == Activity.url + "switch_off.svg") {
                 switch1.source = Activity.url + "switch_on.svg";
-                switchOn = true;
+                switch1.switchOn = true;
             } else {
                 switch1.source = Activity.url + "switch_off.svg";
-                switchOn = false;
+                switch1.switchOn = false;
             }
             Activity.restartTimer();
         }
@@ -88,9 +92,9 @@ ElectricalComponent {
     function initConnections() {
         var connectionIndex = Activity.connectionCount;
         switch1.externalNetlistIndex[0] = ++connectionIndex;
-        connectionPoints.itemAt(0).updateNetlistIndex(connectionIndex);
+        (connectionPoints.itemAt(0) as TerminalPoint).updateNetlistIndex(connectionIndex);
         switch1.externalNetlistIndex[1] = ++connectionIndex;
-        connectionPoints.itemAt(1).updateNetlistIndex(connectionIndex);
+        (connectionPoints.itemAt(1) as TerminalPoint).updateNetlistIndex(connectionIndex);
         Activity.connectionCount = connectionIndex;
     }
 

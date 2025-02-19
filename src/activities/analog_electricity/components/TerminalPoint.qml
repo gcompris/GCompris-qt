@@ -17,9 +17,10 @@ import "../analog_electricity.js" as Activity
 Image {
     id: terminalPoint
 
+    property ElectricalComponent component
     property double posX
     property double posY
-    property double size: parent ? parent.terminalSize : 1
+    property double size: component ? component.terminalSize : 1
     property bool selected: false
     property int value: 0
     property var wires: []
@@ -28,27 +29,27 @@ Image {
     property int netlistIndex: 0
     property string terminalType: "noPolarity"
 
-    width: parent ? size * Math.max(parent.paintedHeight, parent.paintedWidth) : 1
+    width: component ? size * Math.max(component.paintedHeight, component.paintedWidth) : 1
     height: width
     source: Activity.urlDigital + "tPoint.svg"
     sourceSize.width: width
     sourceSize.height: width
     antialiasing: true
 
-    x: parent ? (parent.width - parent.paintedWidth) * 0.5 + posX * parent.paintedWidth - width * 0.5 : 1
-    y: parent ? (parent.height - parent.paintedHeight) * 0.5 + posY * parent.paintedHeight - height * 0.5 : 1
+    x: component ? (component.width - component.paintedWidth) * 0.5 + posX * component.paintedWidth - width * 0.5 : 1
+    y: component ? (component.height - component.paintedHeight) * 0.5 + posY * component.paintedHeight - height * 0.5 : 1
 
-    property double xCenter: parent ? terminalPoint.parent.x + terminalPoint.x + width * 0.5 : 1
-    property double yCenter: parent ? terminalPoint.parent.y + terminalPoint.y + height * 0.5 : 1
-    property double xCenterFromComponent: parent ? terminalPoint.x + width * 0.5 - terminalPoint.parent.width * 0.5 : 1
-    property double yCenterFromComponent: parent ? terminalPoint.y + height * 0.5 - terminalPoint.parent.height * 0.5 : 1
+    property double xCenter: component ? terminalPoint.component.x + terminalPoint.x + width * 0.5 : 1
+    property double yCenter: component ? terminalPoint.component.y + terminalPoint.y + height * 0.5 : 1
+    property double xCenterFromComponent: component ? terminalPoint.x + width * 0.5 - terminalPoint.component.width * 0.5 : 1
+    property double yCenterFromComponent: component ? terminalPoint.y + height * 0.5 - terminalPoint.component.height * 0.5 : 1
 
     function updateNetlistIndex(netlistIndex_: int, colorIndex_: int) {
         if(initialIndex === 0) {
             initialIndex = netlistIndex_;
         }
         terminalPoint.netlistIndex = netlistIndex_;
-        parent.externalNetlistIndex[index] = netlistIndex_;
+        component.externalNetlistIndex[index] = netlistIndex_;
         if(colorIndex_ !== undefined) {
             colorIndex = colorIndex_;
         }
@@ -73,7 +74,7 @@ Image {
         anchors.centerIn: terminalPoint
         width: terminalPoint.width * 2
         height: width
-        visible: selected
+        visible: terminalPoint.selected
         radius: width / 2
         color: "#08D050"
         z: -1
@@ -81,10 +82,10 @@ Image {
 
     MouseArea {
         id: mouseArea
-        anchors.fill: parent
+        anchors.fill: terminalPoint
         onPressed: {
-            selected = true;
-             Activity.terminalPointSelected(terminalPoint);
+            terminalPoint.selected = true;
+            Activity.terminalPointSelected(terminalPoint);
         }
     }
 }
