@@ -7,6 +7,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import core 1.0 
 
@@ -44,6 +46,7 @@ Rectangle {
         Repeater {
             model: ["128", "64", "32", "16", "8", "4", "2", "1"]
             GCText {
+                required property string modelData
                 width: topBlock.bulbWidth
                 height: parent.height
                 text: modelData
@@ -88,6 +91,7 @@ Rectangle {
         Repeater {
             model: ["off", "off", "off", "off", "off", "off", "off", "off"]
             Image {
+                required property string modelData
                 source: "bulb_" + modelData + ".svg"
                 fillMode: Image.PreserveAspectFit
                 width: topBlock.bulbWidth
@@ -107,6 +111,7 @@ Rectangle {
         Repeater {
             model: ["0", "0", "0", "0", "0", "0", "0", "0"]
             GCText {
+                required property string modelData
                 width: topBlock.bulbWidth
                 height: parent.height
                 text: modelData

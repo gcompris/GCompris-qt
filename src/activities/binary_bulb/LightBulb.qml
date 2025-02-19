@@ -17,6 +17,7 @@ Item {
     state: "off"
     focus: true
 
+    property int position
     property alias valueVisible: valueText.visible
 
     GCText {
@@ -28,7 +29,7 @@ Item {
         fontSizeMode: Text.Fit
         verticalAlignment: Text.AlignVCenter
         horizontalAlignment: Text.AlignHCenter
-        text: value
+        text: bulb.value
         color: GCStyle.whiteText
     }
 
@@ -44,12 +45,12 @@ Item {
         anchors.horizontalCenter: parent.horizontalCenter
     }
     property string bit: ""
-    readonly property int value: Math.pow(2, items.numberOfBulbs - index - 1)
+    readonly property int value: Math.pow(2, items.numberOfBulbs - position - 1)
 
     MouseArea {
         anchors.fill: parent
         enabled: !items.buttonsBlocked
-        onClicked: Activity.changeState(index)
+        onClicked: Activity.changeState(bulb.position)
     }
 
     Rectangle {
@@ -72,7 +73,7 @@ Item {
         verticalAlignment: Text.AlignVCenter
         horizontalAlignment: Text.AlignHCenter
         fontSizeMode: Text.Fit
-        text: bit
+        text: bulb.bit
         color: GCStyle.darkText
     }
 
@@ -82,7 +83,7 @@ Item {
         border.color: GCStyle.highlightColor
         border.width: GCStyle.thinBorder
         radius: GCStyle.tinyMargins
-        visible: index == items.currentSelectedBulb
+        visible: bulb.position == items.currentSelectedBulb
     }
 
     states: [

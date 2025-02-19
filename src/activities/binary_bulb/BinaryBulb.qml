@@ -7,6 +7,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import core 1.0
 
@@ -54,7 +56,7 @@ ActivityBase {
             property bool buttonsBlocked: false
         }
 
-        onStart: { Activity.start(items, dataset) }
+        onStart: { Activity.start(items, activity.dataset) }
         onStop: { Activity.stop() }
 
         GCSoundEffect {
@@ -148,9 +150,11 @@ ActivityBase {
                 id: bulbs
                 model: items.numberOfBulbs
                 LightBulb {
+                    required property int index
                     height: bulbsRow.height
                     width: Math.min(GCStyle.bigButtonHeight, (activityBackground.width - 2 * GCStyle.baseMargins) / 8)
-                    valueVisible: dataset[items.currentLevel].bulbValueVisible
+                    valueVisible: activity.dataset[items.currentLevel].bulbValueVisible
+                    position: index
                 }
             }
         }
@@ -187,7 +191,7 @@ ActivityBase {
             fontSize: largeSize
             fontSizeMode: Text.Fit
             text: items.numberSoFar
-            visible: dataset[items.currentLevel].enableHelp
+            visible: activity.dataset[items.currentLevel].enableHelp
         }
 
         BarButton {
@@ -205,7 +209,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
@@ -213,11 +217,11 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: tutorialImage.visible ? (help | home) : (help | home | level) }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: home()
+            onHomeClicked: activity.home()
         }
 
         Score {
