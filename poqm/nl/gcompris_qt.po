@@ -6213,12 +6213,12 @@ msgstr ""
 "spanning bijna gelijk aan aarde (laag) en 1 is de weergave van de "
 "voedingsspanning van een circuit (hoog)."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Ingang"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Uitgang"

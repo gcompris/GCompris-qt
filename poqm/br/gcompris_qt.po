@@ -6201,12 +6201,12 @@ msgstr ""
 "hag ur voltadur tost da hini ar sol hag 1 kement ha voltadur pourvezel un "
 "amredad."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Enank"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Ec'hank"

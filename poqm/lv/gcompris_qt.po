@@ -6151,12 +6151,12 @@ msgstr ""
 "darbībai. Patiesībā 0 visbiežāk reprezentē spriegums, kas ir tuvs zemējuma "
 "spriegumam, bet 1 reprezentē ķēdē pievadītais spriegums."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Ievade"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Izvade"

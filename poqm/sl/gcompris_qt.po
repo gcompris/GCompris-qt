@@ -6181,12 +6181,12 @@ msgstr ""
 "skoraj enaka napetosti ozemljitve, 1 pa predstavitev napajalne napetosti "
 "vezja."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Vhod"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Izhod"

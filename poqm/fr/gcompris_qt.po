@@ -6356,12 +6356,12 @@ msgstr ""
 "représentation d'un voltage presque égal à 0 volt, et 1 la représentation "
 "d'un voltage presque égal au voltage d'entrée du circuit."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Entrée"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Sortie"

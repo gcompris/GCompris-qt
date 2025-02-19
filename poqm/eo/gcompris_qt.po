@@ -6189,12 +6189,12 @@ msgstr ""
 "preskaŭ egala al grunda tensio kaj 1 estas la reprezentado de la livertensio "
 "de cirkvito."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Enigo"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Eligo"

@@ -6262,12 +6262,12 @@ msgstr ""
 "майже рівної напрузі у заземленні, а 1 — відповідає напрузі у джерелі "
 "живлення електричного ланцюга."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Вхід"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Вихід"

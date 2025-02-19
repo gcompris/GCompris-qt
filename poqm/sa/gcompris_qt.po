@@ -6020,12 +6020,12 @@ msgstr ""
 "मूलभूतं भवति । यथार्थतः 0 प्रायः भूवोल्टेजस्य प्रायः समानस्य वोल्टेजस्य प्रतिनिधित्वं भवति "
 "तथा च 1 परिपथस्य आपूर्तिवोल्टेजस्य प्रतिनिधित्वं भवति"
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "निवेशः"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "उत्पादनम्"

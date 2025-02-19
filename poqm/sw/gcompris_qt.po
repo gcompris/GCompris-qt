@@ -6332,12 +6332,12 @@ msgstr ""
 "voltage karibu sawa na voltage ya ardhi na 1 ni uwakilishi wa voltage ya "
 "usambazaji wa mzunguko."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Ingizo"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Pato"

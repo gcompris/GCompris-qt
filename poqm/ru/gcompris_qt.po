@@ -6366,12 +6366,12 @@ msgstr ""
 "основа компьютерной техники. В реальности 0 часто обозначает напряжение "
 "земли, а 1 — напряжение питания в электроцепи."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Вход"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Выход"

@@ -6261,12 +6261,12 @@ msgstr ""
 "voltazh thuajse i barabartë me voltazhin e tokëzimit dhe 1 përfaqësohet me "
 "voltazhin e burimit të qarkut."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Hyrje"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Dalje"

@@ -6212,12 +6212,12 @@ msgstr ""
 "напрежение, почти равно на напрежението на земята, а 1 е представянето на "
 "захранващото напрежение на веригата."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Входни данни"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Изходни данни"

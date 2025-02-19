@@ -6057,12 +6057,12 @@ msgstr ""
 "כמו חיבור, חיסור... זהו הבסיס לטכנולוגיית המיחשוב. במציאות, 0 הוא לרוב ייצוג "
 "של זרם שכמעט שווה לזרם בקרקע ו־1 מייצג את הזרם המסופק במעגל."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "פלט"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "קלט"

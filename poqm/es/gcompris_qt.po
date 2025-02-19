@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"PO-Revision-Date: 2025-02-09 12:34+0100\n"
+"PO-Revision-Date: 2025-02-18 02:22+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -6292,12 +6292,12 @@ msgstr ""
 "un voltaje casi igual al voltaje de tierra, mientras que 1 es la "
 "representación del voltaje de alimentación de un circuito."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Entrada"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Salida"
@@ -14373,7 +14373,7 @@ msgstr ""
 "extra de 5 es otro nivel familiar. Pero el número 5 no pertenece a las "
 "familias del 8 o del 23. No puedes encontrar ningún número de cincos en las "
 "familias del 8 o del 23 sin que sobre nada. De modo que 8 no es múltiplo de "
-"5 ni de 23. Solo 5, 10, 15, 20, 25... son múltiplos (u otros niveles de la "
+"5 ni de 23. Solo 5, 10, 15, 20, 25… son múltiplos (u otros niveles de la "
 "familia) de 5."
 
 #. Activity title
@@ -15269,7 +15269,7 @@ msgid ""
 "corresponding voice is available, you will hear the word to find when three "
 "attempts are remaining."
 msgstr ""
-"Si está activada la opción «Decir las palabras a encontrar...» y la voz "
+"Si está activada la opción «Decir las palabras a encontrar…» y la voz "
 "correspondiente está disponible, oirás la palabra a encontrar cuando te "
 "queden tres intentos."
 
@@ -27279,7 +27279,7 @@ msgid ""
 "Finnish...)."
 msgstr ""
 "Traducciones actualizadas para diversos idiomas (bretón, portugués "
-"brasileño, finés...)."
+"brasileño, finés…)."
 
 #: core/ChangeLog.qml:145
 msgctxt "ChangeLog|"
@@ -27707,7 +27707,7 @@ msgstr "Imágenes"
 #: core/DownloadDialog.qml:208
 msgctxt "DownloadDialog|"
 msgid "Downloading..."
-msgstr "Descargando..."
+msgstr "Descargando…"
 
 #. Run this task in background
 #: core/DownloadDialog.qml:238

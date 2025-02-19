@@ -6152,12 +6152,12 @@ msgstr ""
 "temelidir. Gerçekte, 0 genellikle toprak voltajına neredeyse eşit bir "
 "voltajın temsilidir ve 1, bir devrenin besleme voltajının temsilidir."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Giriş"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Çıkış"

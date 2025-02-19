@@ -6176,13 +6176,13 @@ msgstr ""
 "datamaskinteknologi. I praksis representerer talet 0 ei spenning om lag lik "
 "jordspenninga og talet 1 representerer matespenninga til straumkrinsen."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Innverdi"
 
 # skip-rule: klammeform
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Utverdi"

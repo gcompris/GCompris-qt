@@ -6093,12 +6093,12 @@ msgstr ""
 "സാങ്കേതിക വിദ്യയുടെ അടിസ്ഥാനം. യഥാർത്ഥത്തിൽ, 0 ഗ്രൗണ്ട് വോൾട്ടേജിന് ഏകദേശം സമമായ "
 "വോൾട്ടേജിനെയും 1 സർക്യൂട്ടിലെ സപ്ലൈ വോൾട്ടേജിനെയും പ്രതിനിധീകരിക്കുന്നു."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "ഇൻപുട്ട്"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "ഔട്ട്പുട്ട്"

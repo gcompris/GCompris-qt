@@ -6651,12 +6651,12 @@ msgstr ""
 "minic a sheasann an 0 do voltas atá beagnach cothrom le bunvoltas agus "
 "seasann an 1 do sholáthar voltais an chiorcaid."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Ionchur"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Aschur"
