@@ -8,6 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import core 1.0
 
@@ -74,19 +76,19 @@ ActivityBase {
             asynchronous: false
         }
 
-        onStart: { Activity.start(items, imagesUrl, soundsUrl, boardsUrl, levelCount, answerGlow, displayDropCircle, useMultipleDataset); }
+        onStart: { Activity.start(items, activity.imagesUrl, activity.soundsUrl, activity.boardsUrl, activity.levelCount, activity.answerGlow, activity.displayDropCircle, activity.useMultipleDataset); }
         onStop: { Activity.stop(); }
 
         DialogHelp {
             id: dialogHelp
-            onClose: home();
+            onClose: activity.home();
         }
 
         Bar {
             id: bar
             level: items.currentLevel + 1
-            content: BarEnumContent { value: useMultipleDataset ? (help | home | level | activityConfig) : (help | home | level) }
-            onHelpClicked: displayDialog(dialogHelp);
+            content: BarEnumContent { value: activity.useMultipleDataset ? (help | home | level | activityConfig) : (help | home | level) }
+            onHelpClicked: activity.displayDialog(dialogHelp);
             onPreviousLevelClicked: Activity.previousLevel();
             onNextLevelClicked: Activity.nextLevel();
             onHomeClicked: {
@@ -95,7 +97,7 @@ ActivityBase {
             }
             onActivityConfigClicked: {
                 Activity.initLevel();
-                displayDialog(dialogActivityConfig);
+                activity.displayDialog(dialogActivityConfig);
              }
         }
 
@@ -114,7 +116,7 @@ ActivityBase {
                 }
             }
             onClose: {
-                home();
+                activity.home();
             }
             onStartActivity: {
                 activityBackground.start();
@@ -245,6 +247,11 @@ ActivityBase {
                         id: piecesDelegate
                         Image {
                             id: shapeBackground
+                            required property string imgName
+                            required property real posX
+                            required property real posY
+                            required property real imgWidth
+                            required property real imgHeight
                             source: Activity.imagesUrl + imgName
                             x: posX * backgroundImage.width - width / 2
                             y: posY * backgroundImage.height - height / 2
@@ -271,7 +278,7 @@ ActivityBase {
                             Image {
                                 id: sourceShape
                                 anchors.centerIn: parent
-                                source: Activity.imagesUrl + imgName
+                                source: Activity.imagesUrl + shapeBackground.imgName
                                 visible: false
                             }
                         }
