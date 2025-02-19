@@ -15,6 +15,7 @@ import QtQuick 2.12
 import core 1.0
 
 import "../../core"
+import "qrc:/gcompris/src/core/core.js" as Core
 import "analog_electricity.js" as Activity
 
 ActivityBase {
@@ -185,7 +186,7 @@ ActivityBase {
                 minimumPixelSize: 10
                 font.pixelSize: 150
                 color: GCStyle.whiteText
-                horizontalAlignment: Text.AlignHLeft
+                horizontalAlignment: (Core.isLeftToRightLocale(ApplicationSettings.locale)) ? Text.AlignLeft : Text.AlignRight
                 width: Math.min(implicitWidth, 0.90 * parent.width)
                 height: Math.min(implicitHeight, 0.7 * parent.height)
                 wrapMode: TextEdit.WordWrap

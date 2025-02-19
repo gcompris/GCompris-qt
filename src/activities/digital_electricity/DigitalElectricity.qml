@@ -14,6 +14,7 @@ import QtQuick 2.12
 import core 1.0
 
 import "../../core"
+import "qrc:/gcompris/src/core/core.js" as Core
 import "digital_electricity.js" as Activity
 
 ActivityBase {
@@ -162,13 +163,13 @@ ActivityBase {
                 anchors {
                     horizontalCenter: parent.horizontalCenter
                     top: parent.top
-                    topMargin: GCStyle.tineMargins
+                    topMargin: GCStyle.tinyMargins
                 }
                 fontSizeMode: Text.Fit
                 minimumPixelSize: 10
                 font.pixelSize: 150
                 color: GCStyle.whiteText
-                horizontalAlignment: Text.AlignHLeft
+                horizontalAlignment: (Core.isLeftToRightLocale(ApplicationSettings.locale)) ? Text.AlignLeft : Text.AlignRight
                 width: Math.min(implicitWidth, 0.90 * parent.width)
                 height:  inputOutputTxt.visible == false ? Math.min(implicitHeight, 0.7 * parent.height) :
                         Math.min(implicitHeight, (inputOutputTxt.inputs > 2 ? 0.3 : 0.4) * parent.height)
