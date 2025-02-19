@@ -75,8 +75,8 @@ Item {
 
     Rectangle {
         id: tile
-        width: tileSize
-        height: tileSize
+        width: item.tileSize
+        height: item.tileSize
         color: (parent.selected && tileImage.parent == tile) ? GCStyle.lightTransparentBg : "transparent"
         border.color: (parent.selected && tileImage.parent == tile) ? GCStyle.whiteBorder : "transparent"
         border.width: GCStyle.thinBorder
@@ -107,10 +107,10 @@ Item {
 
         Image {
             id: tileImage
-            sourceSize.width: imgSize
-            sourceSize.height: imgSize
-            width: imgSize
-            height: imgSize
+            sourceSize.width: item.imgSize
+            sourceSize.height: item.imgSize
+            width: item.imgSize
+            height: item.imgSize
             x: parent.xCenter - width * 0.5
             y: parent.yCenter - height * 0.5
             fillMode: Image.PreserveAspectFit
@@ -167,10 +167,10 @@ Item {
             }
 
             function toSmall() {
-                targetImageWidth = imgSize;
-                targetImageHeight = imgSize;
-                sourceSize.width = imgSize;
-                sourceSize.height = imgSize;
+                targetImageWidth = item.imgSize;
+                targetImageHeight = item.imgSize;
+                sourceSize.width = item.imgSize;
+                sourceSize.height = item.imgSize;
                 small = true;
             }
 
@@ -289,8 +289,8 @@ Item {
             Image {
                 id: wrongAnswer
                 anchors.centerIn: parent
-                height: imgSize * 0.3
-                width: imgSize * 0.3
+                height: item.imgSize * 0.3
+                width: item.imgSize * 0.3
                 fillMode: Image.PreserveAspectFit
                 z: 10
                 source:"qrc:/gcompris/src/activities/babymatch/resource/error.svg"
