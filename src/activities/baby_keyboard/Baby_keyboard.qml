@@ -7,7 +7,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import QtQuick 2.12
+pragma ComponentBehavior: Bound
+import QtQuick
 import core 1.0
 
 import "../../core"
@@ -115,7 +116,7 @@ ActivityBase {
         states: [
             State {
                 name: "regularKeyboard"
-                when: !Qt.inputMethod.visible
+                when: !InputMethod.visible
                 AnchorChanges {
                     target: textBG
                     anchors.top: undefined
@@ -125,7 +126,7 @@ ActivityBase {
             },
             State {
                 name: "mobileKeyboard"
-                when: Qt.inputMethod.visible
+                when: InputMethod.visible
                 AnchorChanges {
                     target: textBG
                     anchors.top: layoutArea.top
@@ -158,7 +159,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
@@ -166,7 +167,7 @@ ActivityBase {
             anchors.bottom: keyboard.top
             content: BarEnumContent { value: help | home }
             onHelpClicked: {
-                displayDialog(dialogHelp);
+                activity.displayDialog(dialogHelp);
             }
             onHomeClicked: activity.home();
         }
@@ -177,7 +178,7 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
             visible: ApplicationSettings.isVirtualKeyboard && !ApplicationInfo.isMobile
-            onKeypress: {
+            onKeypress: (text) => {
                 if(text == backspace || text == newline)
                     Activity.playSound();
                 else
