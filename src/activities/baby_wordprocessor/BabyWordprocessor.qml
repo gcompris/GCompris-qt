@@ -32,7 +32,7 @@ ActivityBase {
     pageComponent: Rectangle {
         id: activityBackground
         anchors.fill: parent
-        color: 'white'
+        color: GCStyle.whiteBg
         signal start
         signal stop
 
@@ -81,9 +81,9 @@ ActivityBase {
             anchors {
                 right: parent.right
                 top: parent.top
-                margins: 10
+                margins: GCStyle.halfMargins
             }
-            spacing: 10
+            spacing: GCStyle.halfMargins
 
             GCButton {
                 textSize: "title"
@@ -118,9 +118,9 @@ ActivityBase {
             anchors {
                 right: !isEnoughSpace ? controls.left : parent.right
                 top: !isEnoughSpace ? parent.top : controls.bottom
-                margins: 10
+                margins: GCStyle.halfMargins
             }
-            spacing: 10
+            spacing: GCStyle.halfMargins
 
             GCButton {
                 id: loadButton
@@ -156,7 +156,7 @@ ActivityBase {
                 right: saveAndLoadButtons.left
                 top: parent.top
                 bottom: bar.top
-                margins: 10
+                margins: GCStyle.baseMargins
             }
             contentWidth: edit.contentWidth
             contentHeight: edit.contentHeight
@@ -184,18 +184,18 @@ ActivityBase {
                 wrapMode: TextEdit.Wrap
                 onCursorRectangleChanged: flick.ensureVisible(cursorRectangle)
                 textFormat: TextEdit.RichText
-                color: "#373737"
+                color: GCStyle.darkText
                 font {
                     pointSize: (18 + ApplicationSettings.baseFontSize) * ApplicationInfo.fontRatio
                     capitalization: ApplicationSettings.fontCapitalization
                     weight: Font.DemiBold
                     family: GCSingletonFontLoader.fontName
                     letterSpacing: ApplicationSettings.fontLetterSpacing
-                    wordSpacing: 10
+                    wordSpacing: GCStyle.halfMargins
                 }
                 cursorDelegate: Rectangle {
                     id: cursor
-                    width: 10
+                    width: GCStyle.thickerBorder
                     // height should be set automatically as mention in cursorRectangle property
                     // documentation but it does not work
                     height: parent.cursorRectangle.height
