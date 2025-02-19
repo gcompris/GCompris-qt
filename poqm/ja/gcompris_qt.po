@@ -6256,12 +6256,12 @@ msgstr ""
 "では、0はグランド電圧にほぼ等しいものとして、1を回路に供給される電圧として表"
 "現されることが多いです。"
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "入力"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "出力"

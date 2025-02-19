@@ -5894,12 +5894,12 @@ msgstr ""
 "数字电路仅处理两种状态：0 和 1 。这是计算机技术的基础。在实际中，0 通常表示近"
 "乎等于接地电压的电压值，而 1 则表示电路的电源电压。 "
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "输入"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "输出"
@@ -16608,12 +16608,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "魔法帽"
+msgstr ""
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -16701,12 +16698,9 @@ msgstr "%1x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "魔法帽"
+msgstr ""
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17

@@ -6193,12 +6193,12 @@ msgstr ""
 "napięcie prawie lub całkowicie równego napięciu uziemienia, a 1 jest "
 "przedstawieniem napięcia zasilającego układ."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Wejście"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Wyjście"

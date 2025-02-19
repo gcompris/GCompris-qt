@@ -6410,12 +6410,12 @@ msgstr ""
 "arvutitehnika põhitõed. Tegelikkuses on 0 sageli maapinna pingega peaaegu "
 "võrdse pinge kujutamine ja 1 on vooluahela toitepinge kujutamine."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Sisend"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Väljund"

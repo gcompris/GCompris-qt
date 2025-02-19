@@ -6209,12 +6209,12 @@ msgstr ""
 "beveik lygi įžeminimo arba neigiamai įtampai (-), o grandinės maitinimo "
 "įtampa (+) reiškia 1."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Įvestis"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Išvestis"

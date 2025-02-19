@@ -6207,12 +6207,12 @@ msgstr ""
 "tentsioaren gertuko tentsio bat izan ohi da eta 1 zirkuitu baten hornidura "
 "tentsioaren irudikapena da."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Sarrerakoa"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Irteerakoa"

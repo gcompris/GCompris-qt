@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024 Giovanni Sora <g.sora@tiscali.it>
+# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024, 2025 Giovanni Sora <g.sora@tiscali.it>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-12-16 17:54+0100\n"
+"PO-Revision-Date: 2025-02-18 15:01+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -2468,7 +2468,7 @@ msgstr ""
 #: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
 msgctxt "balanceboxeditor|"
@@ -5664,12 +5664,12 @@ msgid ""
 "voltage of a circuit."
 msgstr ""
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Ingresso"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Exito"
@@ -9690,7 +9690,7 @@ msgstr ""
 #: activities/geo-country/resource/board/board11_0.qml:66
 msgctxt "board11_0|"
 msgid "Friuli Venezia Giulia"
-msgstr ""
+msgstr "Friuli Venezia Giulia"
 
 #. Region of Italy: Emilia-Romagna
 #: activities/geo-country/resource/board/board11_0.qml:73
@@ -10321,7 +10321,7 @@ msgstr ""
 #: activities/geo-country/resource/board/board15_1.qml:59
 msgctxt "board15_1|"
 msgid "Fife"
-msgstr ""
+msgstr "Fife"
 
 #. Council areas of Scotland: Scottish Borders
 #: activities/geo-country/resource/board/board15_1.qml:66
@@ -10624,7 +10624,7 @@ msgstr "Navarre"
 #: activities/geo-country/resource/board/board18_0.qml:120
 msgctxt "board18_0|"
 msgid "Extremadura"
-msgstr ""
+msgstr "Extremadura"
 
 #. Autonomous communities of Spain: Canary Islands
 #: activities/geo-country/resource/board/board18_0.qml:127
@@ -14098,7 +14098,7 @@ msgstr "Selectionate"
 #: activities/guesscount/ActivityConfig.qml:72
 msgctxt "ActivityConfig|"
 msgid "Not Selected"
-msgstr ""
+msgstr "non selectionate."
 
 #. Activity title
 #: activities/guesscount/ActivityInfo.qml:19
@@ -16115,12 +16115,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Vertical subtraction"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "Subtraction vertical."
+msgstr "Le cappelllo magico (subtraction)"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -23804,7 +23801,7 @@ msgstr ""
 #: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Assessment"
-msgstr ""
+msgstr "Evalutation"
 
 #: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
@@ -24789,12 +24786,12 @@ msgstr ""
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Write:"
-msgstr ""
+msgstr "Scribe:"
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Solve:"
-msgstr ""
+msgstr "Resolve: "
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
 #: activities/vertical_subtraction/subtraction.js:169
@@ -25688,7 +25685,7 @@ msgstr ""
 #: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: core/GCCreationHandler.qml:180
 #, qt-format

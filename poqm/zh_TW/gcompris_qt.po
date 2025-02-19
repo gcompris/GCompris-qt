@@ -6168,12 +6168,12 @@ msgstr ""
 "法... 等等。它是電腦科技的基礎。事實上，0 在電路上是以趨近於接地的低電壓來呈"
 "現，1 則是以電源供應的電壓來呈現。"
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "輸入"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "輸出"

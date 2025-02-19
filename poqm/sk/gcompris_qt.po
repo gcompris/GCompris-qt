@@ -6150,12 +6150,12 @@ msgstr ""
 "počítačovej techniky. V skutočnosti 0 je často predstavovaná napätím takmer "
 "rovným napätiu zeme a 1 je predstavovaná napájacím napätím obvodu."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Vstup"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Výstup"

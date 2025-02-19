@@ -5891,12 +5891,12 @@ msgid ""
 "voltage of a circuit."
 msgstr ""
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "შეყვანა"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "გამოტანა"
@@ -16453,12 +16453,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "ჯადოქრის ქუდი"
+msgstr "ჯადოქრის ქუდი (გამოკლება)"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -16546,12 +16543,9 @@ msgstr "%1x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "ჯადოქრის ქუდი"
+msgstr "ჯადოქრის ქუდი (მიმატება)"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17

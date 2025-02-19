@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-02-12 17:39+0400\n"
+"PO-Revision-Date: 2025-02-18 22:09+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -6027,12 +6027,12 @@ msgstr ""
 "مثل الجمع والطرح ...  وهي أساس تقنيات الحاسوب. في الواقع ، 0 غالبًا ما يُمثّّل "
 "بجهد معدوم. أمّا  1 فيمثل وجود جهد في الدارة."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "إدخال"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "الخرج"
@@ -17115,12 +17115,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "قبّعة السّاحر"
+msgstr "قبّعة السّاحر (الطرح)"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -17211,12 +17208,9 @@ msgstr "%1×"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "قبّعة السّاحر"
+msgstr "قبّعة السّاحر (الجمع)"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17

@@ -6420,12 +6420,12 @@ msgstr ""
 "texnikasının əsasıdır. Adətən 0 torpaqlamadakı gərginliyi göstərir, 1 isə, "
 "elektrik şəbəkəsindəki gərginliyi göstərir."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Giriş"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Çıxış"

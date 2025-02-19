@@ -6537,12 +6537,12 @@ msgstr ""
 "Realität ist 0 oft ein Repräsentant für eine Spannung nahe der Erdung und 1 "
 "ein Repräsentant für eine Versorgungsspannung eines Schaltkreises."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Eingang"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Ausgang"

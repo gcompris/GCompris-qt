@@ -6186,12 +6186,12 @@ msgstr ""
 "tehnike. U stvarnosti, 0 je često prikaz napona gotovo jednakog naponu "
 "uzemljenja, a 1 je prikaz napona napajanja kruga."
 
-#: activities/digital_electricity/DigitalElectricity.qml:249
+#: activities/digital_electricity/DigitalElectricity.qml:247
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Ulaz"
 
-#: activities/digital_electricity/DigitalElectricity.qml:267
+#: activities/digital_electricity/DigitalElectricity.qml:265
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Izlaz"
