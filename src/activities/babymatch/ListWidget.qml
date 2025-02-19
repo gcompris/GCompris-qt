@@ -9,13 +9,14 @@
  */
 import QtQuick 2.12
 import core 1.0
+import "../../core"
 import "babymatch.js" as Activity
 
 Item {
     id: listWidget
     anchors.fill: parent
-    anchors.topMargin: 5 * ApplicationInfo.ratio
-    anchors.leftMargin: 5 * ApplicationInfo.ratio
+    anchors.topMargin: GCStyle.baseMargins
+    anchors.leftMargin: GCStyle.baseMargins
     z: 10
 
     property alias model: mymodel
@@ -33,14 +34,14 @@ Item {
         target: ok
         properties: "height"
         from: 0
-        to: view.iconSize * 0.9
+        to: view.iconSize
         duration: 300
     }
     PropertyAnimation {
         id: hideOk
         target: ok
         properties: "height"
-        from: view.iconSize * 0.9
+        from: view.iconSize
         to: 0
         duration: 200
         onFinished: view.checkDisplayedGroup();
@@ -63,20 +64,18 @@ Item {
     Grid {
         id: view
         width: leftWidget.width
-        height: activityBackground.verticalBar ? activityBackground.height - bar.height * 2 : bar.height
-        spacing: 10
+        height: activityBackground.verticalBar ? activityBackground.height - bar.height : leftWidget.height
+        spacing: GCStyle.halfMargins
         z: 20
         columns: activityBackground.verticalBar ? 1 : nbItemsByGroup + 1
 
         property int currentDisplayedGroup: 0
         property int setCurrentDisplayedGroup
-        property int nbItemsByGroup:
-            activityBackground.verticalBar ?
-                view.height / iconSize - 1 :
-                view.width / iconSize - 2
-
+        property int nbItemsByGroup: activityBackground.verticalBar ?
+            Math.floor(view.height / (view.iconSize + view.spacing) - 1) :
+            Math.floor(view.width / (view.iconSize + view.spacing) - 1)
         property int nbDisplayedGroup: nbItemsByGroup > 0 ? Math.ceil(model.count / nbItemsByGroup) : 0
-        property int iconSize: 80 * ApplicationInfo.ratio
+        property int iconSize: GCStyle.bigButtonHeight
         property int previousNavigation: 1
         property int nextNavigation: 1
         property bool okShowed: false
@@ -208,16 +207,19 @@ Item {
             onModelChanged: repeater.currentIndex = -1;
         }
 
-        Row {
-            spacing: view.iconSize * 0.20
+        Item {
+            width: view.iconSize
+            height: view.iconSize
 
             Image {
                 id: previous
                 opacity: (model.count > view.nbItemsByGroup &&
                           view.previousNavigation != 0 && view.currentDisplayedGroup != 0) ? 1 : 0
                 source:"qrc:/gcompris/src/core/resource/bar_previous.svg"
-                sourceSize.width: view.iconSize * 0.35
+                sourceSize.height: view.iconSize * 0.85
                 fillMode: Image.PreserveAspectFit
+                anchors.left: parent.left
+                anchors.verticalCenter: parent.verticalCenter
                 MouseArea {
                     anchors.fill: parent
                     enabled: !items.inputLocked && parent.opacity > 0
@@ -236,8 +238,10 @@ Item {
                 opacity: (model.count > view.nbItemsByGroup && view.nextNavigation != 0
                             && view.currentDisplayedGroup < view.nbDisplayedGroup - 1) ? 1 : 0
                 source:"qrc:/gcompris/src/core/resource/bar_next.svg"
-                sourceSize.width: view.iconSize * 0.35
+                sourceSize.height: view.iconSize * 0.85
                 fillMode: Image.PreserveAspectFit
+                anchors.right: parent.right
+                anchors.verticalCenter: parent.verticalCenter
                 MouseArea {
                     anchors.fill: parent
                     enabled: !items.inputLocked && parent.opacity > 0

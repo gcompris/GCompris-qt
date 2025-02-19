@@ -9,12 +9,13 @@
  */
 import QtQuick 2.12
 import core 1.0
+import "../../core"
 import "babymatch.js" as Activity
 
 Rectangle {
     id: dropCircle
 
-    property string dropCircleColor: currentTileImageItem ? 'transparent' : 'pink'
+    property string dropCircleColor: currentTileImageItem ? "#00000000" : GCStyle.gcOrange
     property string text
     property double posX
     property double posY
@@ -23,14 +24,15 @@ Rectangle {
     property double yCenter: y + height / 2
     property Item currentTileImageItem
 
-    width: parent.width >= parent.height ? parent.height/35 : parent.width/35
+    width: GCStyle.baseMargins
     height: width
     radius: width/2
     z: 200
 
     border.width: 1
-    color: Activity.displayDropCircle ? dropCircleColor : "transparent"
-    border.color: dropCircle.color == "#000000" ? "transparent" : "red"
+    color: Activity.displayDropCircle ? dropCircleColor : "#00000000"
+    border.color: dropCircle.color == "#00000000" ? "#80ff0000" :
+        (dropCircle.color == GCStyle.gcoOrange ? "#00000000" : "white")
 
     x: posX * parent.width - width/2
     y: posY * parent.height - height/2
@@ -60,7 +62,7 @@ Rectangle {
 
     function show(tileImageItem) {
         if(Activity.displayDropCircle)
-            dropCircle.color = "lightgreen"
+            dropCircle.color = "#90ee90" // lightgreen
 
         targetImage.source = tileImageItem.source
         targetImage.width = tileImageItem.fullWidth
@@ -78,7 +80,7 @@ Rectangle {
     }
 
     function hide() {
-        dropCircle.color = Activity.displayDropCircle ? dropCircleColor : "transparent"
+        dropCircle.color = Activity.displayDropCircle ? dropCircleColor : "#00000000"
         targetImage.opacity = 0
         dropCircle.z = 200
         if(currentTileImageItem)

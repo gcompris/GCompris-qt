@@ -125,7 +125,7 @@ ActivityBase {
             id: score
             visible: numberOfSubLevels > 1
             anchors.right: parent.right
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.rightMargin: GCStyle.baseMargins
             anchors.bottom: bar.top
         }
 
@@ -158,16 +158,17 @@ ActivityBase {
             id: toolTip
             anchors {
                 bottom: bar.top
-                bottomMargin: 10
                 left: leftWidget.left
-                leftMargin: 5
+                margins: GCStyle.halfMargins
             }
-            width: toolTipTxt.width + 10
-            height: toolTipTxt.height + 5
+            width: toolTipTxt.contentWidth + GCStyle.baseMargins
+            height: toolTipTxt.contentHeight + GCStyle.tinyMargins
             opacity: 1
-            radius: 10
+            radius: GCStyle.halfMargins
+            border.width: GCStyle.thinBorder
+            border.color: GCStyle.blueBorder
             z: 100
-            color: "#E8E8E8"
+            color: GCStyle.paperWhite
             property alias text: toolTipTxt.text
             Behavior on opacity { NumberAnimation { duration: 120 } }
 
@@ -180,31 +181,11 @@ ActivityBase {
                 }
             }
 
-            Rectangle {
-                width: parent.width - anchors.margins
-                height: parent.height - anchors.margins
-                anchors.verticalCenter: parent.verticalCenter
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.margins: parent.height/8
-                radius: 10
-                color: "#87A6DD"  //light blue
-            }
-
-            Rectangle {
-                width: parent.width - anchors.margins
-                height: parent.height - anchors.margins
-                anchors.verticalCenter: parent.verticalCenter
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.margins: parent.height/4
-                radius: 10
-                color: "#E8E8E8" //paper white
-            }
-
             GCText {
                 id: toolTipTxt
                 anchors.centerIn: parent
                 fontSize: regularSize
-                color: "#373737"
+                color: GCStyle.darkText
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: TextEdit.WordWrap
             }
@@ -309,12 +290,14 @@ ActivityBase {
             id: instruction
             anchors.horizontalCenter: instructionTxt.horizontalCenter
             anchors.verticalCenter: instructionTxt.verticalCenter
-            width: instructionTxt.width + 40
-            height: instructionTxt.height + 40
+            width: instructionTxt.width + GCStyle.baseMargins
+            height: instructionTxt.height + GCStyle.halfMargins
             opacity: 0.8
-            radius: 10
+            radius: GCStyle.halfMargins
             z: 3
-            color: "#87A6DD"  //light blue
+            color: GCStyle.paperWhite
+            border.color: GCStyle.blueBorder
+            border.width: GCStyle.midBorder
             property alias text: instructionTxt.text
 
             Behavior on opacity { PropertyAnimation { duration: 200 } }
@@ -326,30 +309,19 @@ ActivityBase {
             function hide() {
                 opacity = 0;
             }
-
-            Rectangle {
-                id: insideFill
-                width: parent.width - anchors.margins
-                height: parent.height - anchors.margins
-                anchors.verticalCenter: parent.verticalCenter
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.margins: parent.height / 8
-                radius: 10
-                color: "#E8E8E8" //paper white
-            }
         }
 
         GCText {
             id: instructionTxt
             anchors {
                 top: activityBackground.verticalBar ? grid.top : leftWidget.bottom
-                topMargin:  20
+                topMargin: GCStyle.baseMargins
                 horizontalCenter: activityBackground.verticalBar ? grid.horizontalCenter : leftWidget.horizontalCenter
             }
             opacity: instruction.opacity
             z: instruction.z
             fontSize: regularSize
-            color: "#373737"
+            color: GCStyle.darkText
             horizontalAlignment: Text.AlignHCenter
             width: Math.max(Math.min(parent.width * 0.7, text.length * 10), parent.width * 0.3)
             wrapMode: TextEdit.WordWrap
