@@ -115,24 +115,23 @@ ActivityBase {
 
         Rectangle {
             id: questionItemBackground
-            opacity: 0
-            z: 10
-            anchors {
-                horizontalCenter: parent.horizontalCenter
-                bottomMargin: 10
-            }
-            height: activityBackground.height / 6
-            width: parent.width - 20 * ApplicationInfo.ratio
+            color: GCStyle.darkBg
+            width: questionItem.contentWidth +  2 * GCStyle.baseMargins
+            height: questionItem.contentHeight + GCStyle.baseMargins
+            anchors.centerIn: questionItem
+            radius: GCStyle.halfMargins
         }
 
         GCText {
             id: questionItem
-            anchors.fill: questionItemBackground
-            anchors.bottom: questionItemBackground.bottom
+            height: Math.min(50 * ApplicationInfo.ratio, activityBackground.height * 0.2)
+            anchors.top: parent.top
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.margins: 2 * GCStyle.baseMargins
             fontSizeMode: Text.Fit
             wrapMode: Text.Wrap
-            z: 4
-            color: "white"
+            color: GCStyle.whiteText
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
             text: qsTr("What is the binary representation of %1?").arg(items.numberToConvert)
@@ -140,16 +139,17 @@ ActivityBase {
 
         Row {
             id: bulbsRow
-            anchors.top: questionItem.bottom
-            anchors.topMargin: 30 * ApplicationInfo.ratio
+            anchors.top: questionItemBackground.bottom
+            anchors.topMargin: GCStyle.baseMargins * 2
             anchors.horizontalCenter: parent.horizontalCenter
-            spacing: 10 * ApplicationInfo.ratio
+            height: activityBackground.height * 0.3
+            spacing: 0
             Repeater {
                 id: bulbs
                 model: items.numberOfBulbs
                 LightBulb {
-                    height: activityBackground.height / 5
-                    width: (activityBackground.width >= activityBackground.height) ? (activityBackground.width / 20) : ((activityBackground.width - (16 * bulbsRow.spacing)) / 8)
+                    height: bulbsRow.height
+                    width: Math.min(GCStyle.bigButtonHeight, (activityBackground.width - 2 * GCStyle.baseMargins) / 8)
                     valueVisible: dataset[items.currentLevel].bulbValueVisible
                 }
             }
@@ -163,13 +163,29 @@ ActivityBase {
             function releaseControls() { items.buttonsBlocked = false; }
         }
 
+        Rectangle {
+            width: reachedSoFar.contentWidth + 2 * GCStyle.baseMargins
+            height: reachedSoFar.contentHeight + GCStyle.halfMargins
+            anchors.centerIn: reachedSoFar
+            color: GCStyle.darkBg
+            opacity: 0.5
+            radius: GCStyle.halfMargins
+            visible: reachedSoFar.visible
+        }
+
         GCText {
             id: reachedSoFar
-            anchors.horizontalCenter: bulbsRow.horizontalCenter
+            anchors.left: score.right
+            anchors.right: okButton.left
             anchors.top: bulbsRow.bottom
-            anchors.topMargin: 30 * ApplicationInfo.ratio
+            anchors.bottom: bar.top
+            anchors.margins: 4 * GCStyle.baseMargins
+            anchors.topMargin: GCStyle.baseMargins
+            verticalAlignment: Text.AlignVCenter
+            horizontalAlignment: Text.AlignHCenter
             color: "white"
             fontSize: largeSize
+            fontSizeMode: Text.Fit
             text: items.numberSoFar
             visible: dataset[items.currentLevel].enableHelp
         }
@@ -177,13 +193,12 @@ ActivityBase {
         BarButton {
             id: okButton
             anchors {
-                bottom: bar.top
+                verticalCenter: reachedSoFar.verticalCenter
                 right: parent.right
-                rightMargin: 10 * ApplicationInfo.ratio
-                bottomMargin: 10 * ApplicationInfo.ratio
+                margins: GCStyle.baseMargins
             }
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: 60 * ApplicationInfo.ratio
+            width: GCStyle.bigButtonHeight
             onClicked: Activity.equalityCheck()
             enabled: !items.buttonsBlocked
         }
@@ -211,8 +226,8 @@ ActivityBase {
             anchors.bottom: bar.top
             anchors.right: bar.right
             anchors.left: parent.left
-            anchors.bottomMargin: 10 * ApplicationInfo.ratio
-            anchors.leftMargin: 10 * ApplicationInfo.ratio
+            anchors.bottomMargin: GCStyle.baseMargins
+            anchors.leftMargin: GCStyle.baseMargins
             anchors.rightMargin: 0
             onStop: Activity.nextSubLevel()
         }
