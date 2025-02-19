@@ -10,6 +10,7 @@
 import QtQuick 2.12
 import QtQuick.Effects
 import core 1.0
+import "../../core"
 import "babymatch.js" as Activity
 
 Item {
@@ -20,7 +21,7 @@ Item {
 
     property string source: imgName
     property double tileSize
-    property int imgSize: Math.round(tileSize * 0.9)
+    property int imgSize: Math.floor(tileSize - GCStyle.halfMargins)
     property QtObject answer: tileImage.parent
     property bool selected: false
     property alias dropStatus: tileImage.dropStatus
@@ -76,10 +77,10 @@ Item {
         id: tile
         width: tileSize
         height: tileSize
-        color: (parent.selected && tileImage.parent == tile) ? "#33FF294D" : "transparent"
-        border.color: (parent.selected && tileImage.parent == tile) ? "white" : "transparent"
-        border.width: 3
-        radius: 2
+        color: (parent.selected && tileImage.parent == tile) ? GCStyle.lightTransparentBg : "transparent"
+        border.color: (parent.selected && tileImage.parent == tile) ? GCStyle.whiteBorder : "transparent"
+        border.width: GCStyle.thinBorder
+        radius: GCStyle.tinyMargins
 
         property double xCenter: tile.x + tile.width * 0.5
         property double yCenter: tile.y + tile.height * 0.5

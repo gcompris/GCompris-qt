@@ -34,7 +34,7 @@ Item {
         fontSizeMode: Text.Fit
         minimumPointSize: 7
         fontSize: mediumSize
-        color: "white"
+        color: GCStyle.whiteText
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         width: textWidth * displayText.parent.width
@@ -50,10 +50,10 @@ Item {
             horizontalCenter: displayText.horizontalCenter
             verticalCenter: displayText.verticalCenter
         }
-        width: displayTxt.width + 10
-        height: displayTxt.height + 10
+        width: displayTxt.contentWidth + GCStyle.baseMargins
+        height: displayTxt.contentHeight + GCStyle.tinyMargins
         z: 1
-        radius: 10
-        color: "#373737"
+        radius: GCStyle.halfMargins
+        color: GCStyle.darkBg
     }
 }
