@@ -8,6 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import core 1.0
 import "../analog_electricity.js" as Activity
@@ -18,18 +20,18 @@ ElectricalComponent {
     noOfConnectionPoints: 2
     information: qsTr("Red LED converts electrical energy into red light energy. It can glow only if the current flow is in the direction of the arrow. Electrical energy more than a certain limit can break it.")
     source: Activity.url + "red_led_off.svg"
+    componentName: "RedLed"
 
-    property var nodeVoltages: [0, 0]
+    property list<double> nodeVoltages: [0, 0]
     property double componentVoltage: 0
     property double power: 0
     property double powerThreshold: 0.01 //in W
     property double powerMax: 0.08
     property alias connectionPoints: connectionPoints
     property bool isBroken: false
-    property var connectionPointPosX: [0.1, 0.9]
-    property string componentName: "RedLed"
-    property var internalNetlistIndex: [0, 0]
-    property var externalNetlistIndex: [0, 0]
+    property list<double> connectionPointPosX: [0.1, 0.9]
+    property list<int> internalNetlistIndex: [0, 0]
+    property list<int> externalNetlistIndex: [0, 0]
     property var netlistModel:
     [
         "d",
@@ -95,7 +97,9 @@ ElectricalComponent {
         Component {
             id: connectionPoint
             TerminalPoint {
-                posX: connectionPointPosX[index]
+                required property int index
+                component: redLed
+                posX: redLed.connectionPointPosX[index]
                 posY: 0.85
             }
         }
@@ -113,7 +117,7 @@ ElectricalComponent {
 
     Image {
         id: ledArrow
-        source: isBroken ? Activity.url + "red_led_arrowBroken.svg" : Activity.url + "red_led_arrow.svg"
+        source: redLed.isBroken ? Activity.url + "red_led_arrowBroken.svg" : Activity.url + "red_led_arrow.svg"
         anchors.fill: parent
         sourceSize.width: width
         sourceSize.height: height
@@ -129,7 +133,7 @@ ElectricalComponent {
     function checkConnections() {
         terminalConnected = 0;
         for(var i = 0; i < noOfConnectionPoints; i++) {
-            if(connectionPoints.itemAt(i).wires.length > 0)
+            if((connectionPoints.itemAt(i) as TerminalPoint).wires.length > 0)
                 terminalConnected += 1;
         }
     }

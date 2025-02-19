@@ -8,6 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import core 1.0
 import "../analog_electricity.js" as Activity
@@ -18,6 +20,7 @@ ElectricalComponent {
     noOfConnectionPoints: 3
     information: qsTr("A three points switch can toggle a circuit between two connection points.")
     source: Activity.url + "switch2_off.svg"
+    componentName: "Switch2"
 
     property double componentVoltage: 0
     property double current: 0
@@ -26,10 +29,9 @@ ElectricalComponent {
     property string resistanceTop: resistanceValueOn
     property string resistanceBottom: resistanceValueOff
     property alias connectionPoints: connectionPoints
-    property var connectionPointPosX: [0.1, 0.9, 0.9]
-    property var connectionPointPosY: [0.5, 0.165, 0.835]
-    property string componentName: "Switch2"
-    property var externalNetlistIndex: [0, 0, 0]
+    property list<double> connectionPointPosX: [0.1, 0.9, 0.9]
+    property list<double> connectionPointPosY: [0.5, 0.165, 0.835]
+    property list<int> externalNetlistIndex: [0, 0, 0]
     property var netlistModel:
     [
         "r",
@@ -74,8 +76,10 @@ ElectricalComponent {
         Component {
             id: connectionPoint
             TerminalPoint {
-                posX: connectionPointPosX[index]
-                posY: connectionPointPosY[index]
+                required property int index
+                component: switch2
+                posX: switch2.connectionPointPosX[index]
+                posY: switch2.connectionPointPosY[index]
             }
         }
     }
@@ -89,12 +93,12 @@ ElectricalComponent {
         onClicked: {
             if(switch2.source == Activity.url + "switch2_off.svg") {
                 switch2.source = Activity.url + "switch2_on.svg";
-                switch2.netlistModel[2].r = resistanceValueOn;
-                switch2Bottom.netlistModel[2].r = resistanceValueOff;
+                switch2.netlistModel[2].r = switch2.resistanceValueOn;
+                switch2Bottom.netlistModel[2].r = switch2.resistanceValueOff;
             } else {
                 switch2.source = Activity.url + "switch2_off.svg";
-                switch2.netlistModel[2].r = resistanceValueOff;
-                switch2Bottom.netlistModel[2].r = resistanceValueOn;
+                switch2.netlistModel[2].r = switch2.resistanceValueOff;
+                switch2Bottom.netlistModel[2].r = switch2.resistanceValueOn;
             }
             Activity.restartTimer();
         }
@@ -111,11 +115,11 @@ ElectricalComponent {
     function initConnections() {
         var connectionIndex = Activity.connectionCount;
         switch2.externalNetlistIndex[0] = ++connectionIndex;
-        connectionPoints.itemAt(0).updateNetlistIndex(connectionIndex);
+        (connectionPoints.itemAt(0) as TerminalPoint).updateNetlistIndex(connectionIndex);
         switch2.externalNetlistIndex[1] = ++connectionIndex;
-        connectionPoints.itemAt(1).updateNetlistIndex(connectionIndex);
+        (connectionPoints.itemAt(1) as TerminalPoint).updateNetlistIndex(connectionIndex);
         switch2.externalNetlistIndex[2] = ++connectionIndex;
-        connectionPoints.itemAt(2).updateNetlistIndex(connectionIndex);
+        (connectionPoints.itemAt(2) as TerminalPoint).updateNetlistIndex(connectionIndex);
         Activity.connectionCount = connectionIndex;
     }
 

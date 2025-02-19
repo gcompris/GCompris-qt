@@ -13,12 +13,13 @@ import QtQuick
 import core 1.0
 
 import "analog_electricity.js" as Activity
+import "components"
 
 Rectangle {
     id: wire
 
-    property QtObject node1
-    property QtObject node2
+    property TerminalPoint node1
+    property TerminalPoint node2
     property bool destructible
 
     height: 5 * ApplicationInfo.ratio
@@ -28,7 +29,7 @@ Rectangle {
 
     MouseArea {
         id: mouseArea
-        enabled: destructible
+        enabled: wire.destructible
         width: parent.width
         height: parent.height * 3
         anchors.centerIn: parent

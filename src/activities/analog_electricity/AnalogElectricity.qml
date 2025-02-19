@@ -11,6 +11,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import core 1.0
 
@@ -186,7 +188,7 @@ ActivityBase {
                 minimumPixelSize: 10
                 font.pixelSize: 150
                 color: GCStyle.whiteText
-                horizontalAlignment: (Core.isLeftToRightLocale(ApplicationSettings.locale)) ? Text.AlignLeft : Text.AlignRight
+                horizontalAlignment: Core.isLeftToRightLocale(ApplicationSettings.locale) ? Text.AlignLeft : Text.AlignRight
                 width: Math.min(implicitWidth, 0.90 * parent.width)
                 height: Math.min(implicitHeight, 0.7 * parent.height)
                 wrapMode: TextEdit.WordWrap
@@ -232,13 +234,13 @@ ActivityBase {
             width: activityBackground.width * 4 - items.toolsMargin
             height: activityBackground.height * 4 - (bar.height * 1.1)
 
-            property double sizeMultiplier:
+            readonly property double sizeMultiplier:
                 playArea.width > playArea.height ? playArea.width : playArea.height
 
             PinchArea {
                 id: pinchZoom
                 anchors.fill: parent
-                onPinchFinished: {
+                onPinchFinished: (pinch) => {
                     if (pinch.scale < 1) {
                         Activity.zoomOut();
                     }
@@ -326,7 +328,7 @@ ActivityBase {
             id: dialogActivityConfig
             currentActivity: activity.activityInfo
             onClose: {
-                home();
+                activity.home();
             }
             onLoadData: {
                 if(activityData && activityData["mode"]) {
@@ -337,7 +339,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home();
+            onClose: activity.home();
         }
 
         BarButton {
@@ -359,13 +361,13 @@ ActivityBase {
             id: bar
             level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | (items.isTutorialMode ? level : 0) | reload | activityConfig }
-            onHelpClicked: displayDialog(dialogHelp);
+            onHelpClicked: activity.displayDialog(dialogHelp);
             onPreviousLevelClicked: Activity.previousLevel();
             onNextLevelClicked: Activity.nextLevel();
-            onHomeClicked: home();
+            onHomeClicked: activity.home();
             onReloadClicked: Activity.reset();
             onActivityConfigClicked: {
-                displayDialog(dialogActivityConfig);
+                activity.displayDialog(dialogActivityConfig);
             }
         }
 
