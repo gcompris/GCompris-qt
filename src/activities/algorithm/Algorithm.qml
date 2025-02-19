@@ -8,6 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import core 1.0
 import "../../core"
@@ -114,6 +116,7 @@ ActivityBase {
                     Repeater {
                         id: question
                         Image {
+                            required property string modelData
                             source: Activity.url + modelData + '.svg'
                             sourceSize.height: height
                             sourceSize.width: width
@@ -138,6 +141,7 @@ ActivityBase {
                     Repeater {
                         id: answer
                         Image {
+                            required property string modelData
                             source: "qrc:/gcompris/src/activities/algorithm/resource/" +
                                     modelData + '.svg'
                             sourceSize.height: height
@@ -173,8 +177,8 @@ ActivityBase {
                     keyNavigationWraps: true
                     highlightFollowsCurrentItem: true
                     highlight: Rectangle {
-                        width: parent.cellWidth
-                        height: parent.cellHeight
+                        width: choiceGridView.cellWidth
+                        height: choiceGridView.cellHeight
                         color:  GCStyle.lightTransparentBg
                         border.width: GCStyle.thinnestBorder
                         border.color: GCStyle.whiteBorder
@@ -187,6 +191,8 @@ ActivityBase {
                         id: cellItem
                         width: columnLayout.rowHeight
                         height: columnLayout.rowHeight
+
+                        required property string modelData
 
                         signal clicked
                         onClicked: {
@@ -205,7 +211,7 @@ ActivityBase {
 
                         Image {
                             id: img
-                            source: Activity.url + modelData + '.svg'
+                            source: Activity.url + cellItem.modelData + '.svg'
                             width: columnLayout.itemSize
                             height: columnLayout.itemSize
                             sourceSize.width: width
@@ -257,7 +263,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
@@ -265,7 +271,7 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
