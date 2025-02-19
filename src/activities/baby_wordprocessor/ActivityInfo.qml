@@ -20,8 +20,8 @@ ActivityInfo {
   goal: qsTr("Learn to write a text using a word processor.")
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Just type on the real or virtual keyboard like in a word processor.
-    Clicking on the 'Title' button will make the text bigger. Similarly, the 'subtitle' button will make the text slightly less bigger. Clicking on 'paragraph' will remove the formatting.")+ ("<br><br>") +
+  manual: qsTr(`Just type on the real or virtual keyboard like in a word processor.
+    Clicking on the 'Title' button will make the text bigger. Similarly, the 'subtitle' button will make the text slightly less bigger. Clicking on 'paragraph' will remove the formatting.`)+ ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
           qsTr("Arrows: navigate inside the text") + ("</li><li>") +
           qsTr("Shift + Arrows: select a part of the text") + ("</li><li>") +

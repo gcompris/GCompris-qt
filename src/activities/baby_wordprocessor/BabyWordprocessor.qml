@@ -8,6 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import core 1.0
 
@@ -63,11 +65,11 @@ ActivityBase {
         GCCreationHandler {
             id: creationHandler
             onFileLoaded: (data, filePath) => {
-                isLoadingCreation = true
+                activityBackground.isLoadingCreation = true
                 edit.clear()
                 edit.text = data["text"]
                 edit.cursorPosition = edit.length
-                isLoadingCreation = false
+                activityBackground.isLoadingCreation = false
             }
             onClose: {
                 Activity.focusTextInput();
@@ -198,7 +200,7 @@ ActivityBase {
                     width: GCStyle.thickerBorder
                     // height should be set automatically as mention in cursorRectangle property
                     // documentation but it does not work
-                    height: parent.cursorRectangle.height
+                    height: edit.cursorRectangle.height
                     color: '#DF543D'
                     SequentialAnimation on opacity {
                         running: true
@@ -229,7 +231,7 @@ ActivityBase {
                     var newText = getText(0, text.length)
                     // if more characters are present, we added a new one and
                     // and wants to play a voice if available
-                    if(previousText.length < newText.length && !isLoadingCreation) {
+                    if(previousText.length < newText.length && !activityBackground.isLoadingCreation) {
                         var letterTyped = getDiffBetweenTexts(previousText, newText)
                         if(letterTyped !== "") {
                             Activity.playLetter(letterTyped)
@@ -277,7 +279,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         DialogChooseLevel {
@@ -285,7 +287,7 @@ ActivityBase {
             currentActivity: activity.activityInfo
 
             onClose: {
-                home()
+                activity.home()
             }
             onLoadData: {
                 if(activityData && activityData["audioMode"]) {
@@ -299,12 +301,12 @@ ActivityBase {
             anchors.bottom: keyboard.top
             content: BarEnumContent { value: help | home | reload | activityConfig }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onHomeClicked: activity.home()
             onReloadClicked: edit.text = ''
             onActivityConfigClicked: {
-                displayDialog(dialogActivityConfig);
+                activity.displayDialog(dialogActivityConfig);
             }
 
         }
@@ -315,7 +317,7 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
             visible: ApplicationSettings.isVirtualKeyboard && !ApplicationInfo.isMobile && !hide
-            onKeypress: {
+            onKeypress: (text) => {
                 if(text == backspace) {
                     edit.backspace();
                 }
