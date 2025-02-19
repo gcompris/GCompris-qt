@@ -122,7 +122,7 @@ ActivityBase {
             property int ballSize: cellSize - 2*wallSize
             property alias mapWrapper: mapWrapper
             property int cellSize: mapWrapper.length / Math.min(mapWrapper.rows, mapWrapper.columns)
-            property int wallSize: cellSize / 5
+            property int wallSize: cellSize * 0.2
             property var world: physicsWorld
             property alias keyboardTimer: keyboardTimer
             property var ballType: Fixture.Category1
@@ -173,13 +173,12 @@ ActivityBase {
 
         Rectangle {
             id: mapWrapper
-
-            property double margin: 20
-            property int barHeight: ApplicationSettings.isBarHidden ? 0 : 90 * ApplicationInfo.ratio
+            property double margin: GCStyle.baseMargins
+            property int barHeight: ApplicationSettings.isBarHidden ? margin : bar.height * 1.2
             property int columns: 1
             property int rows: 1
             property double length: Math.min(activityBackground.height -
-                    mapWrapper.barHeight - 2 * mapWrapper.margin, activityBackground.width - 2 * mapWrapper.margin);
+                    mapWrapper.barHeight - mapWrapper.margin, activityBackground.width - mapWrapper.margin);
 
             color: "#E3DEDB"
             width: length
@@ -196,14 +195,14 @@ ActivityBase {
 
             transform: [
                 Rotation {
-                    origin.x: mapWrapper.width / 2
-                    origin.y: mapWrapper.height / 2
+                    origin.x: mapWrapper.width * 0.5
+                    origin.y: mapWrapper.height * 0.5
                     axis { x: 1; y: 0; z: 0 }
                     angle: ApplicationInfo.isMobile ? 0 : -items.tilt.xRotation
                 },
                 Rotation {
-                    origin.x: mapWrapper.width / 2
-                    origin.y: mapWrapper.height / 2
+                    origin.x: mapWrapper.width * 0.5
+                    origin.y: mapWrapper.height * 0.5
                     axis { x: 0; y: 1; z: 0 }
                     angle: ApplicationInfo.isMobile ? 0 : items.tilt.yRotation
                 }
@@ -223,9 +222,9 @@ ActivityBase {
                 height: parent.height + items.wallSize
 
                 anchors.left: mapWrapper.right
-                anchors.leftMargin: - items.wallSize/2
+                anchors.leftMargin: - items.wallSize * 0.5
                 anchors.top: parent.top
-                anchors.topMargin: -items.wallSize/2
+                anchors.topMargin: -items.wallSize * 0.5
             }
             // bottom:
             Wall {
@@ -235,9 +234,9 @@ ActivityBase {
                 height: items.wallSize
 
                 anchors.left: mapWrapper.left
-                anchors.leftMargin: - items.wallSize/2
+                anchors.leftMargin: - items.wallSize * 0.5
                 anchors.top: parent.bottom
-                anchors.topMargin: -items.wallSize/2
+                anchors.topMargin: -items.wallSize * 0.5
             }
             // top:
             Wall {
@@ -247,9 +246,9 @@ ActivityBase {
                 height: items.wallSize
 
                 anchors.left: mapWrapper.left
-                anchors.leftMargin: - items.wallSize/2
+                anchors.leftMargin: - items.wallSize * 0.5
                 anchors.top: parent.top
-                anchors.topMargin: -items.wallSize/2
+                anchors.topMargin: -items.wallSize * 0.5
             }
             // left:
             Wall {
@@ -259,9 +258,9 @@ ActivityBase {
                 height: parent.height + items.wallSize
 
                 anchors.left: mapWrapper.left
-                anchors.leftMargin: - items.wallSize/2
+                anchors.leftMargin: - items.wallSize * 0.5
                 anchors.top: parent.top
-                anchors.topMargin: -items.wallSize/2
+                anchors.topMargin: -items.wallSize * 0.5
             }
 
             BalanceItem {
