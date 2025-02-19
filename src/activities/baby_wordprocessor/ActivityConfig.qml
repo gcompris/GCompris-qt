@@ -26,9 +26,9 @@ Item {
         GCDialogCheckBox {
             id: audioModeBox
             text: qsTr("Play characters' sound when typed")
-            checked: audioMode // This is available in all editors.
+            checked: activityConfiguration.audioMode // This is available in all editors.
             onCheckedChanged: {
-                audioMode = checked
+                activityConfiguration.audioMode = checked
             }
         }
     }
