@@ -53,6 +53,7 @@ QtObject {
     readonly property color darkText: "#373737"
     readonly property color darkerText: "#191919"
 
+    readonly property color paperWhite: "#E8E8E8"
     readonly property color lightBg: "#f2f2f2"
     readonly property color lighterBg: "#f8f8f8"
     readonly property color lightTransparentBg: "#AAffffff"
@@ -64,6 +65,9 @@ QtObject {
 
     readonly property color highlightColor: "#3ac5f7"
     readonly property color focusColor: "#99e1fc"
+
+    // color from gcompris logo used in some activities
+    readonly property color gcOrange: "#e77936"
 
     // special button Bg colors
     readonly property color buttonColor: "#ffffff"
