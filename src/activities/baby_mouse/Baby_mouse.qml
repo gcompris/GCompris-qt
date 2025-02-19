@@ -59,15 +59,19 @@ ActivityBase {
 
         Item {
             id: mainArea
-            width: activityBackground.width - duckGrid.width
-            height: activityBackground.height - bar.height * 1.05 - y
-            anchors.left: duckGrid.right
             anchors.top: arrowsArea.bottom
+            anchors.right: activityBackground.right
+            anchors.left: duckGrid.right
+            anchors.bottom: bar.top
+            anchors.margins: GCStyle.baseMargins
+            anchors.leftMargin: 0
 
             // To detect click in this area with mainAreaBlock...
             Rectangle {
                 anchors.fill: parent
-                color: "transparent"
+                color: GCStyle.whiteBg
+                opacity: 0.1
+                radius: GCStyle.baseMargins
             }
 
             readonly property double rightDirectionLimit: mainArea.width - mainDuck.width
@@ -81,8 +85,8 @@ ActivityBase {
             Image {
                 id: mainDuck
                 source: Activity.duckColorURL + "blue_duck.svg"
-                sourceSize.width: 70 * ApplicationInfo.ratio
-                sourceSize.height: 70 * ApplicationInfo.ratio
+                sourceSize.width: GCStyle.bigButtonHeight
+                sourceSize.height: GCStyle.bigButtonHeight
 
                 SequentialAnimation {
                     running: true
@@ -355,9 +359,9 @@ ActivityBase {
             width: duckGrid.cellWidth
             height: width
             anchors.top: parent.top
-            anchors.topMargin: width * 0.1
+            anchors.topMargin: GCStyle.baseMargins
             anchors.right: parent.right
-            anchors.rightMargin: anchors.topMargin
+            anchors.rightMargin: GCStyle.baseMargins
 
             property alias upArrow: upArrow
             property alias leftArrow: leftArrow
@@ -461,18 +465,18 @@ ActivityBase {
             anchors.top: parent.top
             anchors.bottom: bar.top
             anchors.left: parent.left
-            anchors.margins: 5
-            width: mainDuck.width
+            anchors.margins: GCStyle.baseMargins
+            width: childrenRect.width
             flow: GridView.FlowTopToBottom
             interactive: false
-            cellWidth: duckGrid.width
-            cellHeight: mainDuck.height * 1.1
+            cellWidth: GCStyle.bigButtonHeight + GCStyle.baseMargins
+            cellHeight: GCStyle.bigButtonHeight + GCStyle.baseMargins
 
             delegate: Image {
                 id: duckImage
                 source: Activity.duckColorURL + model.image + ".svg"
-                sourceSize.width: duckGrid.cellWidth
-                sourceSize.height: mainDuck.height
+                sourceSize.width: GCStyle.bigButtonHeight
+                sourceSize.height: GCStyle.bigButtonHeight
 
                 function restartAnimation() {
                     duckAnim.start()
@@ -524,11 +528,11 @@ ActivityBase {
 
         Rectangle {
             id: pressCircle
-            width: ApplicationInfo.ratio * 20
+            width: 20 * ApplicationInfo.ratio
             height: width
-            color: "#E77936"
-            border.width: width * 0.1
-            border.color: "#EEEEEE"
+            color: GCStyle.gcOrange
+            border.width: GCStyle.thinBorder
+            border.color: GCStyle.lightBorder
             visible: false
             radius: width * 0.5
         }
