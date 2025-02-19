@@ -3,12 +3,13 @@
  * SPDX-FileCopyrightText: 2021 Mariam Fahmy <mariamfahmy66@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import core 1.0
 
 import "../../core"
 import "baby_mouse.js" as Activity
-import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -377,7 +378,7 @@ ActivityBase {
                 id: upArrow
                 source: Activity.arrowImageURL
                 width: 0.33 * arrowsArea.width
-                sourceSize.width: width * largeScale
+                sourceSize.width: width * activityBackground.largeScale
                 fillMode: Image.PreserveAspectFit
                 anchors.top: arrowsArea.top
                 anchors.horizontalCenter: arrowsArea.horizontalCenter
@@ -474,6 +475,7 @@ ActivityBase {
 
             delegate: Image {
                 id: duckImage
+                required property var model
                 source: Activity.duckColorURL + model.image + ".svg"
                 sourceSize.width: GCStyle.bigButtonHeight
                 sourceSize.height: GCStyle.bigButtonHeight
@@ -489,7 +491,7 @@ ActivityBase {
 
                 GCSoundEffect {
                     id: duckSound
-                    source: model.sound
+                    source: duckImage.model.sound
                 }
 
                 SequentialAnimation {
@@ -508,7 +510,7 @@ ActivityBase {
                             particles.burst(20)
                         }
                         else {
-                            rotation = 0
+                            activity.rotation = 0
                         }
                     }
                 }
@@ -561,14 +563,14 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
             id: bar
             content: BarEnumContent { value: help | home }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onHomeClicked: activity.home()
         }
