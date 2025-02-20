@@ -42,6 +42,7 @@ QtObject {
     readonly property color noBorder: "#00ffffff"
     readonly property color blueBorder: "#87A6DD"
     readonly property color grayBorder: "#808080"
+    readonly property color lightGrayBorder: "#c0c0c0"
 
     readonly property color answerBorder: "#327CF4" // blue
     readonly property color goodAnswerBorder: "#62BA62" // green
@@ -62,9 +63,11 @@ QtObject {
     readonly property color whiteBlueTransparentBg: "#80f6fbfc"
     readonly property color darkBg: "#373737"
     readonly property color darkTransparentBg: "#13373737"
+    readonly property color midGrayBg: "#808080"
 
     readonly property color highlightColor: "#3ac5f7"
     readonly property color focusColor: "#99e1fc"
+    readonly property color selectedDarkBlue: "#3778d0"
 
     // color from gcompris logo used in some activities
     readonly property color gcOrange: "#e77936"
