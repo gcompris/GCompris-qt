@@ -8,6 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import core 1.0
 import "../../core"
@@ -93,7 +95,7 @@ ActivityBase {
 
         onStart: {
             first_screen.visible = true
-            Activity.start(items, dataset)
+            Activity.start(items, activity.dataset)
         }
         onStop: { Activity.stop() }
 
@@ -144,13 +146,14 @@ ActivityBase {
                         height: charList.height - 2 * GCStyle.baseMargins
                         width: (charList.width - containerModel.count * cardRepeater.rowSpacing)/ containerModel.count
 
+                        required property string letter
                         BrailleChar {
                             id: ins
                             width: Math.min(parent.height * 0.5, parent.width)
                             anchors.top: parent.top
                             anchors.horizontalCenter: parent.horizontalCenter
                             clickable: false
-                            brailleChar: letter
+                            brailleChar: inner.letter
                         }
                         Item {
                             anchors.top: ins.bottom
@@ -158,7 +161,7 @@ ActivityBase {
                             anchors.right: parent.right
                             anchors.bottom: parent.bottom
                             GCText {
-                                text: letter
+                                text: inner.letter
                                 font.weight: Font.DemiBold
                                 color: GCStyle.darkerText
                                 width: parent.width
@@ -277,7 +280,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         BrailleMap {
@@ -285,7 +288,7 @@ ActivityBase {
             // Make it non visible or we get some rendering artefacts before
             // until it is created
             visible: false
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
@@ -293,7 +296,7 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: first_screen.visible ? help | home : help | home | level }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
@@ -312,7 +315,7 @@ ActivityBase {
             visible: !first_screen.visible
             onClicked: {
                 dialogMap.visible = true
-                displayDialog(dialogMap)
+                activity.displayDialog(dialogMap)
             }
         }
 
