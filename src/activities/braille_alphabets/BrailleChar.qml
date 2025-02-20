@@ -8,6 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import "../../core"
 import core 1.0
@@ -98,23 +100,24 @@ Item {
         flow: Grid.TopToBottom
 
         Repeater {
-
             id: circles
             model: 6
 
             Rectangle {
                 id: incircle1
+                required property int index
+                required property int modelData
                 border.width: GCStyle.thinBorder
                 color: on ? GCStyle.darkText : GCStyle.lightText
                 border.color: GCStyle.darkText
-                width: dotWidth
-                height: dotHeight
+                width: brailleCharItem.dotWidth
+                height: brailleCharItem.dotHeight
                 radius: width * 0.5
 
-                property bool on: clickable ? false : click_on_off()
+                property bool on: brailleCharItem.clickable ? false : click_on_off()
 
                 function click_on_off(): bool {
-                    var code = brailleCodes[brailleChar]
+                    var code = brailleCharItem.brailleCodes[brailleCharItem.brailleChar]
                     if(!code)
                         return false
                     for(var i = 0; i < code.length; i++) {
@@ -145,10 +148,10 @@ Item {
 
                 GCText {
                     id: numtext
-                    text: clickable ? modelData+1 : ""
+                    text: brailleCharItem.clickable ? incircle1.modelData+1 : ""
                     color: GCStyle.darkerText
-                    anchors.left: index >= 3 ? incircle1.right : undefined
-                    anchors.right: index < 3 ? incircle1.left : undefined
+                    anchors.left: incircle1.index >= 3 ? incircle1.right : undefined
+                    anchors.right: incircle1.index < 3 ? incircle1.left : undefined
                     anchors.verticalCenter: incircle1.verticalCenter
                     font.weight: Font.DemiBold
                     font.pointSize: NaN // need to clear font.pointSize explicitly
@@ -158,8 +161,8 @@ Item {
                 }
 
                 MouseArea {
-                    id : mouse1
-                    enabled: clickable && !items.buttonsBlocked ? true : false
+                    id: mouse1
+                    enabled: brailleCharItem.clickable && !items.buttonsBlocked ? true : false
                     anchors.fill: parent
                     hoverEnabled: true
                     onEntered: incircle1.border.width = GCStyle.thickBorder
