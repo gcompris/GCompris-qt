@@ -2872,7 +2872,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "एतत् चित्रं भवन्तं बिट्-मूल्यं गणयितुं साहाय्यं करिष्यति ।"
 
-#: activities/binary_bulb/BinaryBulb.qml:138
+#: activities/binary_bulb/BinaryBulb.qml:137
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -6023,12 +6023,12 @@ msgstr ""
 "मूलभूतं भवति । यथार्थतः 0 प्रायः भूवोल्टेजस्य प्रायः समानस्य वोल्टेजस्य प्रतिनिधित्वं भवति "
 "तथा च 1 परिपथस्य आपूर्तिवोल्टेजस्य प्रतिनिधित्वं भवति"
 
-#: activities/digital_electricity/DigitalElectricity.qml:247
+#: activities/digital_electricity/DigitalElectricity.qml:248
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "निवेशः"
 
-#: activities/digital_electricity/DigitalElectricity.qml:265
+#: activities/digital_electricity/DigitalElectricity.qml:266
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "उत्पादनम्"
