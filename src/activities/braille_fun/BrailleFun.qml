@@ -57,7 +57,6 @@ ActivityBase {
             property alias animateX: animateX
             property alias charBg: charBg
             property string question
-            property int baseMargins: 10 * ApplicationInfo.ratio
         }
 
         onStart: { Activity.start(items) }
@@ -74,21 +73,12 @@ ActivityBase {
         }
 
         Item {
-            id: layoutArea
-            anchors.top: planeText.bottom
-            anchors.bottom: activityBackground.bottom
-            anchors.left: activityBackground.left
-            anchors.right: activityBackground.right
-            anchors.bottomMargin: bar.height * 1.3
-        }
-
-        Item {
             id: planeText
             width: plane.width
             height: plane.height
             x: - width
             anchors.top: parent.top
-            anchors.topMargin: 20 * ApplicationInfo.ratio
+            anchors.topMargin: GCStyle.baseMargins
 
             Image {
                 id: plane
@@ -110,7 +100,7 @@ ActivityBase {
                 fontSize: hugeSize
                 fontSizeMode: Text.Fit
                 font.weight: Font.DemiBold
-                color: "#2a2a2a"
+                color: GCStyle.darkerText
                 text: items.question
             }
 
@@ -129,14 +119,14 @@ ActivityBase {
         Item {
             id: charBg
             anchors {
-                top: layoutArea.top
+                top: planeText.bottom
                 bottom: score.top
-                left: layoutArea.left
-                right: layoutArea.right
-                margins: items.baseMargins
+                left: activityBackground.left
+                right: activityBackground.right
+                margins: GCStyle.baseMargins
             }
 
-            property int charWidth: Math.min(120 * ApplicationInfo.ratio, width * 0.3)
+            property int charWidth: Math.min(height * 0.8, (width - GCStyle.baseMargins) / 3)
 
             function clickable(status: bool) {
                 for(var i=0 ; i < cardRepeater.model ; i++) {
@@ -152,7 +142,7 @@ ActivityBase {
 
             Row {
                 id: row
-                spacing: items.baseMargins
+                spacing: GCStyle.halfMargins
                 anchors.centerIn: parent
 
                 Repeater {
@@ -160,7 +150,7 @@ ActivityBase {
 
                     Item {
                         id: inner
-                        height: charBg.height - 2 * items.baseMargins
+                        height: charBg.height
                         width: charBg.charWidth
                         property string brailleChar: ins.brailleChar
                         property alias ins: ins
@@ -171,9 +161,9 @@ ActivityBase {
                             height: ins.height
                             anchors.horizontalCenter: inner.horizontalCenter
                             anchors.top: parent.top
-                            border.width: ins.found ? 0 : 2 * ApplicationInfo.ratio
-                            border.color: "#fff"
-                            radius: items.baseMargins
+                            border.width: ins.found ? 0 : GCStyle.thinBorder
+                            border.color: GCStyle.whiteBorder
+                            radius: GCStyle.baseMargins
                             color: ins.found ? '#85d8f6' : "#dfe1e8"
 
                             BrailleChar {
@@ -202,11 +192,11 @@ ActivityBase {
                         GCText {
                             text: brailleChar
                             font.weight: Font.DemiBold
-                            color: "#2a2a2a"
+                            color: GCStyle.darkerText
                             fontSize: hugeSize
                             anchors {
                                 top: rect1.bottom
-                                topMargin: 4 * ApplicationInfo.ratio
+                                topMargin: GCStyle.tinyMargins
                                 horizontalCenter: rect1.horizontalCenter
                             }
                         }
@@ -218,9 +208,10 @@ ActivityBase {
 
         Score {
             id: score
-            anchors.bottom: layoutArea.bottom
-            anchors.right: layoutArea.right
-            anchors.rightMargin: items.baseMargins
+            anchors.bottom: bar.top
+            anchors.bottomMargin: GCStyle.baseMargins
+            anchors.right: parent.right
+            anchors.rightMargin: GCStyle.baseMargins
             anchors.top: undefined
             anchors.left: undefined
             onStop: Activity.nextQuestion()
@@ -255,9 +246,9 @@ ActivityBase {
             anchors {
                 right: activityBackground.right
                 top: activityBackground.top
-                margins: items.baseMargins
+                margins: GCStyle.baseMargins
             }
-            width: 60 * ApplicationInfo.ratio
+            width: GCStyle.bigButtonHeight
             onClicked: {
                 dialogMap.visible = true
                 displayDialog(dialogMap)
