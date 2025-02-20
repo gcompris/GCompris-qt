@@ -16,135 +16,104 @@ Rectangle {
     anchors.fill: parent
     color: "#80FFFFFF"
 
-    Item {
+    GCText {
         id: topBlock
-        width: parent.width
-        height: parent.height * 0.2
-
-        GCText {
-            anchors {
-                right: parent.right
-                verticalCenter: parent.verticalCenter
-            }
-            text: qsTr("0 to 255 with")
-            fontSizeMode: Text.Fit
-            minimumPixelSize: 15
-            color: "black"
-            horizontalAlignment: Text.AlignHCenter
-            width: 0.9 * parent.width
-            height: 0.9 * parent.height
-            wrapMode: Text.WordWrap
-            z: 2
+        readonly property int bulbWidth: Math.min(70 * ApplicationInfo.ratio, width * 0.125)
+        anchors {
+            right: parent.right
+            left: parent.left
+            top: parent.top
+            margins: GCStyle.halfMargins
         }
+        height: (parent.height - 6 * GCStyle.halfMargins) * 0.2
+        text: qsTr("0 to 255 with")
+        fontSizeMode: Text.Fit
+        color: GCStyle.darkerText
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignTop
+        wrapMode: Text.WordWrap
     }
 
     Row {
         id: tableBlock1
-        width: parent.width * 0.9
-        height: parent.height * 0.2
+        width: topBlock.bulbWidth * 8
+        height: topBlock.height
         anchors.top: topBlock.bottom
-        anchors.left: parent.left
-        anchors.leftMargin: parent.width * 0.05
+        anchors.topMargin: GCStyle.baseMargins
+        anchors.horizontalCenter: parent.horizontalCenter
         Repeater {
             model: ["128", "64", "32", "16", "8", "4", "2", "1"]
-            Item {
-                width: parent.width / 8
+            GCText {
+                width: topBlock.bulbWidth
                 height: parent.height
-                anchors.verticalCenter: parent.verticalCenter
-                GCText {
-                    anchors {
-                        right: parent.right
-                        verticalCenter: parent.verticalCenter
-                        horizontalCenter: parent.horizontalCenter
-                    }
-                    text: modelData
-                    fontSizeMode: Text.Fit
-                    minimumPixelSize: 15
-                    color: "black"
-                    horizontalAlignment: Text.AlignHCenter
-                    width: 0.9 * parent.width
-                    height: 0.9 * parent.height
-                    wrapMode: Text.WordWrap
-                    z: 2
-                }
+                text: modelData
+                fontSizeMode: Text.Fit
+                color: GCStyle.darkText
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignBottom
             }
         }
     }
 
     Row {
         id: tableBlock2
-        width: parent.width * 0.9
-        height: parent.height * 0.1
+        width: tableBlock1.width
+        height: tableBlock1.height
         anchors.verticalCenter: tableBlock1.top
-        anchors.left: parent.left
-        anchors.leftMargin: parent.width * 0.05 + tableBlock1.width/20
+        anchors.horizontalCenter: tableBlock1.horizontalCenter
+        anchors.horizontalCenterOffset: width / 16
         Repeater {
             model: 7
-            Item {
-                width: parent.width / 8
-                height: parent.height
-                anchors.verticalCenter: parent.verticalCenter
-                Image {
-                    source: "multipleTwo.svg"
-                    fillMode: Image.PreserveAspectFit
-                    anchors.fill: parent
-                    sourceSize.width: implicitWidth
+                Item {
+                    width: topBlock.bulbWidth
+                    height: parent.height
+                    Image {
+                        source: "multipleTwo.svg"
+                        fillMode: Image.PreserveAspectFit
+                        anchors.fill: parent
+                        anchors.margins: GCStyle.tinyMargins
+                        sourceSize.height: height
+                    }
                 }
-            }
         }
     }
 
     Row {
         id: bulbBlock
-        width: parent.width * 0.9
-        height: parent.height * 0.4
+        width: tableBlock1.width
+        height: Math.min(width / 8 * 1.33, topBlock.height * 2)
         anchors.top: tableBlock1.bottom
-        anchors.left: parent.left
-        anchors.leftMargin: parent.width * 0.05
+        anchors.topMargin: GCStyle.halfMargins
+        anchors.horizontalCenter: parent.horizontalCenter
         Repeater {
             model: ["off", "off", "off", "off", "off", "off", "off", "off"]
-            Item {
-                width: parent.width / 8
+            Image {
+                source: "bulb_" + modelData + ".svg"
+                fillMode: Image.PreserveAspectFit
+                width: topBlock.bulbWidth
                 height: parent.height
-                anchors.verticalCenter: parent.verticalCenter
-                Image {
-                    source: "bulb_" + modelData + ".svg"
-                    fillMode: Image.PreserveAspectFit
-                    anchors.fill: parent
-                    sourceSize.width: implicitWidth
-                }
+                sourceSize.width: width
             }
         }
     }
 
     Row {
-        width: parent.width * 0.9
-        height: parent.height * 0.2
+        id: bitsBlock
+        width: tableBlock1.width
+        height: topBlock.height
         anchors.top: bulbBlock.bottom
-        anchors.left: parent.left
-        anchors.leftMargin: parent.width * 0.05
+        anchors.topMargin: GCStyle.halfMargins
+        anchors.horizontalCenter: parent.horizontalCenter
         Repeater {
             model: ["0", "0", "0", "0", "0", "0", "0", "0"]
-            Item {
-                width: parent.width / 8
+            GCText {
+                width: topBlock.bulbWidth
                 height: parent.height
-                anchors.verticalCenter: parent.verticalCenter
-                GCText {
-                    anchors {
-                        right: parent.right
-                        verticalCenter: parent.verticalCenter
-                        horizontalCenter: parent.horizontalCenter
-                    }
-                    text: modelData
-                    fontSizeMode: Text.Fit
-                    minimumPixelSize: 15
-                    color: "black"
-                    horizontalAlignment: Text.AlignHCenter
-                    width: 0.9 * parent.width
-                    height: 0.9 * parent.height
-                    wrapMode: Text.WordWrap
-                    z: 2
-                }
+                text: modelData
+                fontSizeMode: Text.Fit
+                color: GCStyle.darkerText
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignTop
             }
         }
     }
