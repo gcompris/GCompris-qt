@@ -28,10 +28,12 @@ Image {
         fontSizeMode: Text.Fit
         horizontalAlignment: Text.AlignHCenter
         font.weight: Font.DemiBold
-        anchors.centerIn: parent.Center
-        color: "#2a2a2a"
+        anchors.top: parent.top
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.topMargin: GCStyle.baseMargins
+        color: GCStyle.darkerText
         width: parent.width
-        height: parent.height * 0.10
+        height: (parent.height - bar.height - 4 * GCStyle.baseMargins) * 0.1
         wrapMode: Text.WordWrap
     }
 
@@ -42,7 +44,7 @@ Image {
         fillMode: Image.PreserveAspectFit
         anchors {
             left: parent.left
-            leftMargin: 10 * ApplicationInfo.ratio
+            leftMargin: GCStyle.baseMargins
             verticalCenter: body_text1.verticalCenter
         }
         Behavior on scale { PropertyAnimation { duration: 100 } }
@@ -61,7 +63,6 @@ Image {
 
     GCText {
         id: body_text1
-        z: 1
         text: qsTr('The braille system is a method that is used by blind people to read and write.') + '\n    \n ' +
               qsTr('Each braille character, or cell, is made up of six dot positions, arranged in ' +
                    'a rectangle containing two columns of three dots each. As seen on the left, each ' +
@@ -74,64 +75,68 @@ Image {
             top: heading.bottom
             right: parent.right
             left: introChar.right
-            margins: 10 * ApplicationInfo.ratio
+            margins: GCStyle.baseMargins
         }
-        color: "#2a2a2a"
-        width: parent.width - introChar.width - 30 * ApplicationInfo.ratio
-        height: parent.height * 0.4
+        color: GCStyle.darkerText
+        height: heading.height * 4
         wrapMode: Text.WordWrap
     }
 
     GCText {
         id: bottom_text
-        z: 2
         text: qsTr("When you are ready, click on me and try reproducing braille characters.")
         fontSize: regularSize
         fontSizeMode: Text.Fit
         font.weight: Font.Bold
         horizontalAlignment: Text.AlignRight
-        color: "#2a2a2a"
+        verticalAlignment: Text.AlignVCenter
+        color: GCStyle.darkerText
         wrapMode:  Text.WordWrap
         anchors {
             top: body_text1.bottom
             left: parent.left
-            margins: 10 * ApplicationInfo.ratio
+            margins: GCStyle.baseMargins
         }
-        height: parent.height * 0.25
-        width: parent.width * 0.5
+        height: heading.height * 4
+        width: (parent.width * 0.5) - GCStyle.baseMargins
     }
 
-    Image {
-        id: introTux
-        z: 3
-        source: Activity.url + "tux_braille.svg"
-        fillMode: Image.PreserveAspectFit
-        sourceSize.width: Math.min(parent.width * 0.2, parent.height * 0.2)
-        anchors.centerIn: bgTux
-        Behavior on scale { PropertyAnimation { duration: 100 } }
-
-        MouseArea {
-            id: tux_click
-            anchors.fill: parent
-            hoverEnabled: true
-            onClicked: first_screen.visible  = false
-            onEntered: introTux.scale = 1.1
-            onExited: introTux.scale = 1
-        }
-    }
-
-    Rectangle {
-        id: bgTux
-        z: 0
-        color: "#94c1d2"
-        width: introTux.width * 1.5
-        height: introTux.height * 1.1
-        radius: bgTux.width * 0.5
+    Item {
+        id: tuxArea
         anchors {
-            top: body_text1.bottom
-            topMargin: 10 * ApplicationInfo.ratio
             left: bottom_text.right
-            leftMargin: 10 * ApplicationInfo.ratio
+            right: parent.right
+            top: body_text1.bottom
+            bottom: parent.bottom
+            margins: GCStyle.baseMargins
+            bottomMargin: bar.height + GCStyle.baseMargins * 3
+        }
+
+        Rectangle {
+            id: bgTux
+            color: "#94c1d2"
+            height: Math.min(parent.width, parent.height)
+            width: height
+            radius: height * 0.5
+            anchors.left: parent.left
+            anchors.verticalCenter: parent.verticalCenter
+            MouseArea {
+                id: tux_click
+                anchors.fill: parent
+                hoverEnabled: true
+                onClicked: first_screen.visible  = false
+                onEntered: introTux.scale = 1.1
+                onExited: introTux.scale = 1
+            }
+        }
+
+        Image {
+            id: introTux
+            source: Activity.url + "tux_braille.svg"
+            fillMode: Image.PreserveAspectFit
+            sourceSize.height: bgTux.height * 0.8
+            anchors.centerIn: bgTux
+            Behavior on scale { PropertyAnimation { duration: 100 } }
         }
     }
 }
