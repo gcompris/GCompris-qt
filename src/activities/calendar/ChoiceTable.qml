@@ -16,14 +16,10 @@ import core 1.0
 import "../../core"
 import "calendar.js" as Activity
 
-Rectangle {
+Item {
     id: choiceBox
     property alias choices: choices
-    color: "#AAFFFFFF"
-    radius: 10
-    anchors.margins: 30
-    border.color: "#373737"
-    border.width: 2
+    property alias radius: boxBg.radius
 
     function select() {
         if(Activity.dayOfWeekSelected === Activity.correctAnswer["dayOfWeek"]) {
@@ -38,25 +34,37 @@ Rectangle {
         clip: false
     }
 
+    Rectangle {
+        id: boxBg
+        color: "#AAFFFFFF"
+        radius: GCStyle.halfMargins
+        border.color: GCStyle.darkBorder
+        border.width: GCStyle.thinnestBorder
+        width: parent.width * 0.9
+        height: parent.height - GCStyle.baseMargins
+        anchors.centerIn: parent
+    }
+
     GCText {
         id: choices
-        anchors.fill: parent
-        anchors.leftMargin: choiceBox.border.width
-        anchors.rightMargin: choiceBox.border.width
+        anchors.fill: boxBg
+        anchors.leftMargin: GCStyle.halfMargins
+        anchors.rightMargin: GCStyle.halfMargins
         fontSizeMode: Text.Fit
         font.bold: true
-        color: "#373737"
+        color: GCStyle.darkText
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
     }
 
     MouseArea {
         id: mouseArea
-        anchors.fill: parent
+        anchors.fill: boxBg
         onClicked: {
-                Activity.dayOfWeekSelected = dayIndex
-                select()
-                choiceBox.scale = 1
+            items.answerChoices.currentIndex = dayIndex
+            Activity.dayOfWeekSelected = dayIndex
+            select()
+            choiceBox.scale = 1
         }
         hoverEnabled: true
         enabled: !items.buttonsBlocked
