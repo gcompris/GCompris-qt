@@ -25,8 +25,6 @@ Item {
     property real dotHeight: dotWidth
     property alias circles: circles
     property bool clickable
-    property double thinBorder: 2 * ApplicationInfo.ratio
-    property double thickBorder: 4 * ApplicationInfo.ratio
     property bool isLetter: brailleChar >= 'A' && brailleChar <= 'Z'
     property var brailleCodesLetter: {
         // For ASCII each letter, this represent the active dots in Braille.
@@ -106,9 +104,9 @@ Item {
 
             Rectangle {
                 id: incircle1
-                border.width: brailleCharItem.thinBorder
-                color: on ? "#373737" : "#f0f0f0"
-                border.color: "#373737"
+                border.width: GCStyle.thinBorder
+                color: on ? GCStyle.darkText : GCStyle.lightText
+                border.color: GCStyle.darkText
                 width: dotWidth
                 height: dotHeight
                 radius: width * 0.5
@@ -148,7 +146,7 @@ Item {
                 GCText {
                     id: numtext
                     text: clickable ? modelData+1 : ""
-                    color: "#2a2a2a"
+                    color: GCStyle.darkerText
                     anchors.left: index >= 3 ? incircle1.right : undefined
                     anchors.right: index < 3 ? incircle1.left : undefined
                     anchors.verticalCenter: incircle1.verticalCenter
@@ -156,7 +154,7 @@ Item {
                     font.pointSize: NaN // need to clear font.pointSize explicitly
                     font.pixelSize: Math.min(30 * ApplicationInfo.ratio,
                                              Math.max(parent.height, 20))
-                    anchors.margins: 10
+                    anchors.margins: GCStyle.halfMargins
                 }
 
                 MouseArea {
@@ -164,8 +162,8 @@ Item {
                     enabled: clickable && !items.buttonsBlocked ? true : false
                     anchors.fill: parent
                     hoverEnabled: true
-                    onEntered: incircle1.border.width = brailleCharItem.thickBorder
-                    onExited: incircle1.border.width = brailleCharItem.thinBorder
+                    onEntered: incircle1.border.width = GCStyle.thickBorder
+                    onExited: incircle1.border.width = GCStyle.thinBorder
                     onClicked: {
                         incircle1.switchState();
                     }

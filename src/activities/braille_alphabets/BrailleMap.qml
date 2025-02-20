@@ -15,7 +15,7 @@ import "braille_alphabets.js" as Activity
 
 Rectangle {
     id: brailleMap
-    color: "#808080"
+    color: GCStyle.midGrayBg
     z: 1000
     property bool isDialog: true
     signal close
@@ -46,8 +46,8 @@ Rectangle {
         anchors.right: parent.right
         anchors.top: parent.top
         smooth: true
-        sourceSize.width: 60 * ApplicationInfo.ratio
-        anchors.margins: 10
+        sourceSize.width: GCStyle.bigButtonHeight
+        anchors.margins: GCStyle.baseMargins
         SequentialAnimation {
             id: anim
             running: true
@@ -77,9 +77,10 @@ Rectangle {
         id: flick
         anchors.top: cancel.bottom
         anchors.bottom: parent.bottom
-        anchors.left: parent.left
-        anchors.right: parent.right
-        contentWidth: parent.width
+        anchors.margins: GCStyle.baseMargins
+        anchors.horizontalCenter: parent.horizontalCenter
+        width: parent.width * 0.9
+        contentWidth: width
         contentHeight: (grid1.height + grid2.height) * 1.1
         flickableDirection: Flickable.VerticalFlick
         maximumFlickVelocity: brailleMap.height
@@ -88,13 +89,8 @@ Rectangle {
 
         Flow {
             id: grid1
-            width: parent.width * 0.9
-            anchors {
-                top: parent.top
-                topMargin: 10 * ApplicationInfo.ratio
-                horizontalCenter: parent.horizontalCenter
-            }
-            spacing: 5 * ApplicationInfo.ratio
+            width: parent.width
+            spacing: GCStyle.halfMargins
 
             Repeater {
                 id: cardRepeater
@@ -105,36 +101,39 @@ Rectangle {
                 ]
 
                 Column {
-                    width: (grid1.width - grid1.spacing * 10) / 10
+                    width: grid1.width * 0.1 - grid1.spacing
 
                     Rectangle {
                         id: rect1
                         width:  parent.width
-                        height: ins.height
-                        border.width: ins.thinBorder
-                        border.color: "#373737"
-                        color: "#f0f0f0"
+                        height: ins.height + GCStyle.halfMargins
+                        border.width: GCStyle.thinnestBorder
+                        border.color: GCStyle.darkBorder
+                        color: GCStyle.lightBg
                         opacity: modelData != "" ? 1 : 0
 
                         BrailleChar {
                             id: ins
-                            width: parent.width * 0.9
+                            width: parent.width - GCStyle.halfMargins
                             anchors.centerIn: parent
                             clickable: false
                             brailleChar: modelData
                         }
                     }
+
                     GCText {
                         id: text1
                         text: modelData
+                        width: parent.width
+                        height: rect1.height * 0.4
+                        fontSize: largeSize
+                        fontSizeMode: Text.Fit
                         font.weight: Font.DemiBold
                         style: Text.Outline
-                        styleColor: "#373737"
-                        color: "white"
-                        fontSize: Math.max(Math.min(parent.width * 0.2, 24), 12)
-                        anchors {
-                            horizontalCenter: parent.horizontalCenter
-                        }
+                        styleColor: GCStyle.darkText
+                        color: GCStyle.whiteText
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignTop
                     }
                 }
             }
@@ -142,13 +141,12 @@ Rectangle {
 
         Flow {
             id: grid2
-            width : parent.width * 0.9
+            width : parent.width
             anchors {
-                horizontalCenter: parent.horizontalCenter
                 top: grid1.bottom
-                topMargin: 10 * ApplicationInfo.ratio
+                topMargin: GCStyle.halfMargins
             }
-            spacing: 6
+            spacing: GCStyle.halfMargins
 
             Repeater {
                 id: cardRepeater2
@@ -158,35 +156,38 @@ Rectangle {
                 ]
 
                 Column {
-                    width:  (grid1.width - grid1.spacing * 10) / 10
+                    width: grid1.width * 0.1 - grid1.spacing
 
                     Rectangle {
                         id: rect2
                         width:  parent.width
-                        height: ins2.height
-                        border.width: 3
-                        border.color: "black"
-                        color: "white"
+                        height: ins2.height + GCStyle.halfMargins
+                        border.width: GCStyle.thinnestBorder
+                        border.color: GCStyle.darkBorder
+                        color: GCStyle.lightBg
 
                         BrailleChar {
                             id: ins2
-                            width: parent.width * 0.9
+                            width: parent.width - GCStyle.halfMargins
                             anchors.centerIn: parent
                             clickable: false
                             brailleChar: modelData
                         }
                     }
+
                     GCText {
                         id: text2
                         text: modelData
+                        width: parent.width
+                        height: rect2.height * 0.4
+                        fontSize: largeSize
+                        fontSizeMode: Text.Fit
                         font.weight: Font.DemiBold
                         style: Text.Outline
-                        styleColor: "black"
-                        color: "white"
-                        fontSize: Math.max(Math.min(parent.width * 0.2, 24), 12)
-                        anchors {
-                            horizontalCenter: parent.horizontalCenter
-                        }
+                        styleColor: GCStyle.darkText
+                        color: GCStyle.whiteText
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignTop
                     }
                 }
             }

@@ -88,7 +88,6 @@ ActivityBase {
             property alias playableChar: playableChar
             property alias score: score
             property bool brailleCodeSeen
-            property int baseMargins: 10 * ApplicationInfo.ratio
             property bool buttonsBlocked: false
         }
 
@@ -123,15 +122,15 @@ ActivityBase {
             anchors.top: layoutArea.top
             anchors.left: layoutArea.left
             anchors.right: layoutArea.right
-            anchors.margins: items.baseMargins
-            radius: items.baseMargins
+            anchors.margins: GCStyle.baseMargins
+            radius: GCStyle.baseMargins
             height: Math.min(120 * ApplicationInfo.ratio, layoutArea.height * 0.3)
             visible: items.brailleCodeSeen
             color: "#a5cbd9"
 
             Row {
                 id: row
-                spacing: items.baseMargins
+                spacing: GCStyle.baseMargins
                 anchors.centerIn: charList
 
                 Repeater {
@@ -142,7 +141,7 @@ ActivityBase {
                     property alias rowSpacing: row.spacing
                     Item {
                         id: inner
-                        height: charList.height - 2 * items.baseMargins
+                        height: charList.height - 2 * GCStyle.baseMargins
                         width: (charList.width - containerModel.count * cardRepeater.rowSpacing)/ containerModel.count
 
                         BrailleChar {
@@ -161,7 +160,7 @@ ActivityBase {
                             GCText {
                                 text: letter
                                 font.weight: Font.DemiBold
-                                color: "#2a2a2a"
+                                color: GCStyle.darkerText
                                 width: parent.width
                                 height: parent.height
                                 fontSizeMode: Text.Fit
@@ -179,14 +178,14 @@ ActivityBase {
             anchors {
                 top: charList.bottom
                 left: layoutArea.left
-                margins: items.baseMargins
+                margins: GCStyle.baseMargins
             }
             color: "#d3e6ed"
             border.color: "#a5cbd9"
-            border.width: 3 * ApplicationInfo.ratio
-            radius: items.baseMargins
-            width: playableChar.width * 1.5 + 2 * items.baseMargins
-            height: (playableChar.height  + playableCharDisplayArea.height) + 3 * items.baseMargins
+            border.width: GCStyle.midBorder
+            radius: GCStyle.baseMargins
+            width: playableChar.width * 1.5 + 2 * GCStyle.baseMargins
+            height: (playableChar.height  + playableCharDisplayArea.height) + 3 * GCStyle.baseMargins
 
             BrailleChar {
                 id: playableChar
@@ -194,7 +193,7 @@ ActivityBase {
                 anchors {
                     horizontalCenter: parent.horizontalCenter
                     top: parent.top
-                    topMargin: items.baseMargins
+                    topMargin: GCStyle.baseMargins
                 }
                 width: Math.min(layoutArea.width * 0.18, layoutArea.height * 0.2)
                 isLetter: true
@@ -212,11 +211,11 @@ ActivityBase {
                 height: playableChar.height * 0.3
                 width: parent.width
                 anchors.top: playableChar.bottom
-                anchors.topMargin: items.baseMargins
+                anchors.topMargin: GCStyle.baseMargins
                 GCText {
                     id: playableCharDisplay
                     font.weight: Font.DemiBold
-                    color: "#2a2a2a"
+                    color: GCStyle.darkerText
                     text: playableChar.brailleChar
                     width: parent.width
                     height: parent.height
@@ -234,10 +233,10 @@ ActivityBase {
                 left: playableCharBg.right
                 right: layoutArea.right
                 bottom: braille_map.top
-                margins: items.baseMargins
+                margins: GCStyle.baseMargins
             }
             color: "#aae4f9"
-            radius: 5 * ApplicationInfo.ratio
+            radius: GCStyle.halfMargins
 
             GCText {
                 id: questionItem
@@ -246,9 +245,9 @@ ActivityBase {
                 fontSizeMode: Text.Fit
                 horizontalAlignment: Text.AlignHCenter
                 font.weight: Font.DemiBold
-                color: "#2a2a2a"
-                width: parent.width * 0.94
-                height: parent.height * 0.94
+                color: GCStyle.darkerText
+                width: parent.width - GCStyle.baseMargins
+                height: parent.height - GCStyle.halfMargins
                 wrapMode: Text.WordWrap
             }
         }
@@ -267,7 +266,7 @@ ActivityBase {
             anchors {
                 verticalCenter: braille_map.verticalCenter
                 right: braille_map.left
-                rightMargin: items.baseMargins
+                rightMargin: GCStyle.baseMargins
                 left: undefined
                 top: undefined
                 bottom: undefined
@@ -307,9 +306,9 @@ ActivityBase {
             anchors {
                 right: layoutArea.right
                 bottom: layoutArea.bottom
-                margins: items.baseMargins
+                margins: GCStyle.baseMargins
             }
-            width: 60 * ApplicationInfo.ratio
+            width: GCStyle.bigButtonHeight
             visible: !first_screen.visible
             onClicked: {
                 dialogMap.visible = true
