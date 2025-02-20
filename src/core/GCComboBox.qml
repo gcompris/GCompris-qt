@@ -280,8 +280,6 @@ Item {
             // we do a grid with cases with 300px for width at minimum.
             // If you have a better idea/formula to have a different column number, don't hesitate, change it :).
             readonly property int numberOfColumns: Math.max(1, Math.floor(width / (300 * ApplicationInfo.ratio)))
-            contentWidth: contentItem.childrenRect.width
-            contentHeight: contentItem.childrenRect.height
             width: headerDescription.width
             height: popup.height - headerDescription.height - 2 * GCStyle.baseMargins
             currentIndex: gccombobox.currentIndex
