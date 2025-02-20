@@ -14,9 +14,9 @@ Item {
     height: view.height
     anchors {
         left: parent.left
-        leftMargin: activityBackground.baseMargins
+        leftMargin: GCStyle.baseMargins
         top: parent.top
-        topMargin: activityBackground.baseMargins
+        topMargin: GCStyle.baseMargins
     }
 
     GCSoundEffect {
@@ -35,7 +35,7 @@ Item {
     ListView {
         id: view
         interactive: false
-        spacing: 5 * ApplicationInfo.ratio
+        spacing: GCStyle.halfMargins
         model: mymodel
         delegate: listItemComponent
 
@@ -60,7 +60,7 @@ Item {
                 when: !activityBackground.isHorizontalLayout
                 PropertyChanges {
                     view {
-                        width: activityBackground.width - activityBackground.baseMargins * 2
+                        width: activityBackground.width - GCStyle.baseMargins * 2
                         height: view.iconSize
                         orientation: ListView.Horizontal
                         iconSize: Math.min((width - (model.count - 1) * view.spacing) / mymodel.count,

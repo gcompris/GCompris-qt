@@ -29,7 +29,6 @@ ActivityBase {
         signal start
         signal stop
 
-        property double baseMargins: 10 * ApplicationInfo.ratio
         property double activityLayoutHeight: height - bar.height * 1.5
         property bool isHorizontalLayout: width >= activityLayoutHeight
 
@@ -126,17 +125,14 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            z: 1002
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
         Score {
             id: score
-            z: 1003
-            height: 48 * ApplicationInfo.ratio
             anchors.bottom: bar.top
             anchors.right: activityBackground.right
-            anchors.bottomMargin: activityBackground.baseMargins
+            anchors.bottomMargin: GCStyle.baseMargins
             onStop: Activity.incrementLevel()
         }
 
@@ -156,7 +152,7 @@ ActivityBase {
 
         Item {
             id: gridLayout
-            anchors.margins: activityBackground.baseMargins
+            anchors.margins: GCStyle.baseMargins
             anchors.bottom: score.top
             anchors.right: activityBackground.right
             states: [
@@ -182,7 +178,6 @@ ActivityBase {
         }
 
         Grid {
-            z: 100
             id: calcudokuColumn
             x: Math.round(gridLayout.x + gridLayout.width * 0.5 - width * 0.5)
             y: Math.round(gridLayout.y + gridLayout.height * 0.5 - height * 0.5)
@@ -213,7 +208,6 @@ ActivityBase {
         }
 
         Grid {
-            z: 100
             id: calcudokuCages
             x: calcudokuColumn.x
             y: calcudokuColumn.y

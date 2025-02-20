@@ -11,8 +11,8 @@ import "../../core"
 
 Rectangle {
     id: mCase
-    border.color: "#909090"
-    border.width: Math.round(ApplicationInfo.ratio)
+    border.color: GCStyle.grayBorder
+    border.width: GCStyle.thinnestBorder
     property string text
     property bool isInitial
     property string operator
@@ -38,8 +38,8 @@ Rectangle {
         width: height * 3
         height: parent.height * 0.2
         color: "transparent"
-        border.color: "#373737"
-        border.width: Math.round(ApplicationInfo.ratio)
+        border.color: GCStyle.darkBorder
+        border.width: GCStyle.thinnestBorder
         radius: height * 0.5
         GCText {
             id: resultOperator
@@ -48,7 +48,7 @@ Rectangle {
             fontSizeMode: Text.Fit
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
-            color: "#373737"
+            color: GCStyle.darkText
         }
     }
 
