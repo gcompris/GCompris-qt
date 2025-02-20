@@ -83,7 +83,7 @@ Item {
         border.color: GCStyle.highlightColor
         border.width: GCStyle.thinBorder
         radius: GCStyle.tinyMargins
-        visible: position == items.currentSelectedBulb
+        visible: bulb.position == items.currentSelectedBulb
     }
 
     states: [
