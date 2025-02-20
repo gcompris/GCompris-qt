@@ -5,6 +5,7 @@
  */
 import QtQuick 2.12
 import core 1.0
+import "../../core"
 
 Item {
     id: mCageCase
@@ -13,12 +14,12 @@ Item {
     property bool rightWallVisible
     property bool bottomWallVisible
 
-    property int cageLineSize: Math.round(4 * ApplicationInfo.ratio)
+    property int cageLineSize: GCStyle.thickBorder
 
     Rectangle {
         id: topWall
         visible: topWallVisible
-        color: "#2a2a2a"
+        color: GCStyle.darkerBorder
         height: cageLineSize
         width: parent.width + cageLineSize
         anchors.verticalCenter: parent.top
@@ -27,7 +28,7 @@ Item {
     Rectangle {
         id: leftWall
         visible: leftWallVisible
-        color: "#2a2a2a"
+        color: GCStyle.darkerBorder
         width: cageLineSize
         height: parent.height + cageLineSize
         anchors.horizontalCenter: parent.left
@@ -36,7 +37,7 @@ Item {
     Rectangle {
         id: rightWall
         visible: rightWallVisible
-        color: "#2a2a2a"
+        color: GCStyle.darkerBorder
         width: cageLineSize
         height: parent.height + cageLineSize
         anchors.horizontalCenter: parent.right
@@ -45,7 +46,7 @@ Item {
     Rectangle {
         id: bottomWall
         visible: bottomWallVisible
-        color: "#2a2a2a"
+        color: GCStyle.darkerBorder
         height: cageLineSize
         width: parent.width + cageLineSize
         anchors.verticalCenter: parent.bottom
