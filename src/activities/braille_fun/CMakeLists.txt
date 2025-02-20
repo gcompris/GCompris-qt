@@ -10,4 +10,6 @@ GCOMPRIS_ADD_RESOURCE(activities/braille_fun
   RESOURCES
   *.svg
   resource/*.svg
+  DEPENDENCIES
+  braille_alphabets
 )

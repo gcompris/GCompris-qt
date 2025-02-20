@@ -8,14 +8,14 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import core 1.0
 
 import "../../core"
 import "../braille_alphabets"
 import "braille_fun.js" as Activity
-
-
 
 ActivityBase {
     id: activity
@@ -150,6 +150,7 @@ ActivityBase {
 
                     Item {
                         id: inner
+                        required property int modelData
                         height: charBg.height
                         width: charBg.charWidth
                         property string brailleChar: ins.brailleChar
@@ -184,13 +185,13 @@ ActivityBase {
                                         clickSound.play()
                                     }
                                 }
-                                property string question: items.question[modelData] ? items.question[modelData] : ""
-                                property bool found: question === brailleChar
+                                property string question: items.question[inner.modelData] ? items.question[inner.modelData] : ""
+                                property bool found: question === inner.brailleChar
                             }
                         }
 
                         GCText {
-                            text: brailleChar
+                            text: inner.brailleChar
                             font.weight: Font.DemiBold
                             color: GCStyle.darkerText
                             fontSize: hugeSize
@@ -220,12 +221,12 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         BrailleMap {
             id: dialogMap
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
@@ -233,7 +234,7 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
@@ -251,7 +252,7 @@ ActivityBase {
             width: GCStyle.bigButtonHeight
             onClicked: {
                 dialogMap.visible = true
-                displayDialog(dialogMap)
+                activity.displayDialog(dialogMap)
             }
         }
 
