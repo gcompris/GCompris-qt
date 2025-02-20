@@ -8,6 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import core 1.0
 import "../../core"
@@ -101,6 +103,8 @@ Rectangle {
                 ]
 
                 Column {
+                    id: cardColumn
+                    required property string modelData
                     width: grid1.width * 0.1 - grid1.spacing
 
                     Rectangle {
@@ -110,20 +114,20 @@ Rectangle {
                         border.width: GCStyle.thinnestBorder
                         border.color: GCStyle.darkBorder
                         color: GCStyle.lightBg
-                        opacity: modelData != "" ? 1 : 0
+                        opacity: cardColumn.modelData != "" ? 1 : 0
 
                         BrailleChar {
                             id: ins
                             width: parent.width - GCStyle.halfMargins
                             anchors.centerIn: parent
                             clickable: false
-                            brailleChar: modelData
+                            brailleChar: cardColumn.modelData
                         }
                     }
 
                     GCText {
                         id: text1
-                        text: modelData
+                        text: cardColumn.modelData
                         width: parent.width
                         height: rect1.height * 0.4
                         fontSize: largeSize
@@ -141,7 +145,7 @@ Rectangle {
 
         Flow {
             id: grid2
-            width : parent.width
+            width: parent.width
             anchors {
                 top: grid1.bottom
                 topMargin: GCStyle.halfMargins
@@ -156,6 +160,8 @@ Rectangle {
                 ]
 
                 Column {
+                    id: cardNumbersColumns
+                    required property string modelData
                     width: grid1.width * 0.1 - grid1.spacing
 
                     Rectangle {
@@ -171,13 +177,13 @@ Rectangle {
                             width: parent.width - GCStyle.halfMargins
                             anchors.centerIn: parent
                             clickable: false
-                            brailleChar: modelData
+                            brailleChar: cardNumbersColumns.modelData
                         }
                     }
 
                     GCText {
                         id: text2
-                        text: modelData
+                        text: cardNumbersColumns.modelData
                         width: parent.width
                         height: rect2.height * 0.4
                         fontSize: largeSize
