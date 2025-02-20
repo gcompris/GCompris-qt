@@ -258,7 +258,7 @@ ActivityBase {
             fontSizeMode: Text.Fit
             minimumPixelSize: 10
             color: "white"
-            horizontalAlignment: Text.AlignHLeft
+            horizontalAlignment: Text.AlignHCenter
             width: implicitWidth
             height: implicitHeight
             z: 2
