@@ -16,89 +16,77 @@ Rectangle {
     anchors.fill: parent
     color: "#80FFFFFF"
     
-    Item {
-        width: parent.width
-        height: parent.height * 0.5
-        
-        Image {
-            source: "transistor.svg"
-            fillMode: Image.PreserveAspectFit
-            anchors.fill: parent
-            sourceSize.height: implicitHeight
+    Image {
+        id: transistorImage
+        anchors {
+            right: parent.right
+            left: parent.left
+            top: parent.top
+            bottom: parent.verticalCenter
+            margins: GCStyle.baseMargins
         }
+        source: "transistor.svg"
+        fillMode: Image.PreserveAspectFit
+        sourceSize.height: height
     }
     
-    Item {
-        width: parent.width * 0.2
-        height: parent.height * 0.5
-        anchors.bottom: parent.bottom
-        anchors.left: parent.left
-
-        GCText {
-            anchors {
-                right: parent.right
-                verticalCenter: parent.verticalCenter
-            }
-            text: "0"
-            font.pixelSize: parent.height * 0.5
-            color: "black"
-            horizontalAlignment: Text.AlignRight
-            width: 0.9 * parent.width
-            height: 0.9 * parent.height
-            z: 2
+    GCText {
+        id: leftText
+        anchors {
+            left: parent.left
+            bottom: parent.bottom
+            top: transistorImage.bottom
+            margins: GCStyle.baseMargins
         }
-    }
-    
-    Item {
-        width: parent.width * 0.3
-        height: parent.height * 0.4
-        anchors.bottom: parent.bottom
-        anchors.right: parent.horizontalCenter
-        anchors.bottomMargin: parent.height * 0.05
-        
-        Image {
-            source: "bulb_off.svg"
-            fillMode: Image.PreserveAspectFit
-            anchors.fill: parent
-            sourceSize.width: implicitWidth
-        }
-        
-    }
-    
-    Item {
-        width: parent.width * 0.3
-        height: parent.height * 0.4
-        anchors.bottom: parent.bottom
-        anchors.left: parent.horizontalCenter
-        anchors.bottomMargin: parent.height * 0.05
-        
-        Image {
-            source: "bulb_on.svg"
-            fillMode: Image.PreserveAspectFit
-            anchors.fill: parent
-            sourceSize.width: implicitWidth
-        }
-        
+        width: (parent.width - 4 * GCStyle.baseMargins) * 0.25
+        text: "0"
+        fontSize: 48
+        fontSizeMode: Text.Fit
+        color: GCStyle.darkerText
+        horizontalAlignment: Text.AlignRight
+        verticalAlignment: Text.AlignVCenter
     }
 
-    Item {
-        width: parent.width * 0.2
-        height: parent.height * 0.5
-        anchors.bottom: parent.bottom
-        anchors.right: parent.right
-
-        GCText {
-            anchors {
-                left: parent.left
-                verticalCenter: parent.verticalCenter
-            }
-            text: "1"
-            font.pixelSize: parent.height * 0.5
-            color: "black"
-            horizontalAlignment: Text.AlignLeft
-            width: 0.9 * parent.width
-            height: 0.9 * parent.height
-            z: 2
+    Image {
+        anchors {
+            left: leftText.right
+            bottom: parent.bottom
+            top: transistorImage.bottom
+            margins: GCStyle.baseMargins
         }
+        width: leftText.width
+        source: "bulb_off.svg"
+        fillMode: Image.PreserveAspectFit
+        sourceSize.width: width
+    }
+
+    Image {
+        anchors {
+            right: rightText.left
+            bottom: parent.bottom
+            top: transistorImage.bottom
+            margins: GCStyle.baseMargins
+        }
+        width: leftText.width
+        source: "bulb_on.svg"
+        fillMode: Image.PreserveAspectFit
+        sourceSize.width: width
+    }
+
+    GCText {
+        id: rightText
+        anchors {
+            right: parent.right
+            bottom: parent.bottom
+            top: transistorImage.bottom
+            margins: GCStyle.baseMargins
+        }
+        width: leftText.width
+        text: "1"
+        fontSize: 48
+        fontSizeMode: Text.Fit
+        color: GCStyle.darkerText
+        horizontalAlignment: Text.AlignLeft
+        verticalAlignment: Text.AlignVCenter
     }
 }
