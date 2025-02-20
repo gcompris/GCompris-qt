@@ -2796,7 +2796,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "这个图片将帮助您计算位值。"
 
-#: activities/binary_bulb/BinaryBulb.qml:138
+#: activities/binary_bulb/BinaryBulb.qml:137
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -5894,12 +5894,12 @@ msgstr ""
 "数字电路仅处理两种状态：0 和 1 。这是计算机技术的基础。在实际中，0 通常表示近"
 "乎等于接地电压的电压值，而 1 则表示电路的电源电压。 "
 
-#: activities/digital_electricity/DigitalElectricity.qml:247
+#: activities/digital_electricity/DigitalElectricity.qml:248
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "输入"
 
-#: activities/digital_electricity/DigitalElectricity.qml:265
+#: activities/digital_electricity/DigitalElectricity.qml:266
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "输出"

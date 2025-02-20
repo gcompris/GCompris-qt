@@ -2943,7 +2943,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Ten obraz pomoże ci obliczyć wartość bitową."
 
-#: activities/binary_bulb/BinaryBulb.qml:138
+#: activities/binary_bulb/BinaryBulb.qml:137
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -6193,12 +6193,12 @@ msgstr ""
 "napięcie prawie lub całkowicie równego napięciu uziemienia, a 1 jest "
 "przedstawieniem napięcia zasilającego układ."
 
-#: activities/digital_electricity/DigitalElectricity.qml:247
+#: activities/digital_electricity/DigitalElectricity.qml:248
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Wejście"
 
-#: activities/digital_electricity/DigitalElectricity.qml:265
+#: activities/digital_electricity/DigitalElectricity.qml:266
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Wyjście"

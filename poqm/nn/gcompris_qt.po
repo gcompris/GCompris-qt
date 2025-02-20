@@ -2945,7 +2945,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Du kan bruka denne teikninga for å rekna ut verdien til kvar bit."
 
-#: activities/binary_bulb/BinaryBulb.qml:138
+#: activities/binary_bulb/BinaryBulb.qml:137
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -6176,13 +6176,13 @@ msgstr ""
 "datamaskinteknologi. I praksis representerer talet 0 ei spenning om lag lik "
 "jordspenninga og talet 1 representerer matespenninga til straumkrinsen."
 
-#: activities/digital_electricity/DigitalElectricity.qml:247
+#: activities/digital_electricity/DigitalElectricity.qml:248
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Innverdi"
 
 # skip-rule: klammeform
-#: activities/digital_electricity/DigitalElectricity.qml:265
+#: activities/digital_electricity/DigitalElectricity.qml:266
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Utverdi"

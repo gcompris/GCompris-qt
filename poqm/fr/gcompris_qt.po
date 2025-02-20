@@ -3006,7 +3006,7 @@ msgstr ""
 "Cette image vous aide à calculer les valeurs des bits (le bit étant une "
 "unité, qui ne peut prendre que deux valeurs, 0 et 1)."
 
-#: activities/binary_bulb/BinaryBulb.qml:138
+#: activities/binary_bulb/BinaryBulb.qml:137
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -6356,12 +6356,12 @@ msgstr ""
 "représentation d'un voltage presque égal à 0 volt, et 1 la représentation "
 "d'un voltage presque égal au voltage d'entrée du circuit."
 
-#: activities/digital_electricity/DigitalElectricity.qml:247
+#: activities/digital_electricity/DigitalElectricity.qml:248
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Entrée"
 
-#: activities/digital_electricity/DigitalElectricity.qml:265
+#: activities/digital_electricity/DigitalElectricity.qml:266
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Sortie"

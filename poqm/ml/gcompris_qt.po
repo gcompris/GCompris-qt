@@ -2911,7 +2911,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "ബിറ്റുകളുടെ മൂല്യം കാണാൻ ഈ ചിത്രം നിങ്ങളെ സഹായിക്കും."
 
-#: activities/binary_bulb/BinaryBulb.qml:138
+#: activities/binary_bulb/BinaryBulb.qml:137
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -6093,12 +6093,12 @@ msgstr ""
 "സാങ്കേതിക വിദ്യയുടെ അടിസ്ഥാനം. യഥാർത്ഥത്തിൽ, 0 ഗ്രൗണ്ട് വോൾട്ടേജിന് ഏകദേശം സമമായ "
 "വോൾട്ടേജിനെയും 1 സർക്യൂട്ടിലെ സപ്ലൈ വോൾട്ടേജിനെയും പ്രതിനിധീകരിക്കുന്നു."
 
-#: activities/digital_electricity/DigitalElectricity.qml:247
+#: activities/digital_electricity/DigitalElectricity.qml:248
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "ഇൻപുട്ട്"
 
-#: activities/digital_electricity/DigitalElectricity.qml:265
+#: activities/digital_electricity/DigitalElectricity.qml:266
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "ഔട്ട്പുട്ട്"

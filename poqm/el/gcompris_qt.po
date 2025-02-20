@@ -2973,7 +2973,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Αυτή η εικόνα θα σε βοηθήσει να υπολογίσεις την αξία των bits."
 
-#: activities/binary_bulb/BinaryBulb.qml:138
+#: activities/binary_bulb/BinaryBulb.qml:137
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -6329,12 +6329,12 @@ msgstr ""
 "το 0 είναι συχνά η αναπαράσταση μιας τάσης σχεδόν ίσης με την τάση εδάφους "
 "και το 1 είναι η αναπαράσταση της τάσης τροφοδοσίας ενός κυκλώματος."
 
-#: activities/digital_electricity/DigitalElectricity.qml:247
+#: activities/digital_electricity/DigitalElectricity.qml:248
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Είσοδος"
 
-#: activities/digital_electricity/DigitalElectricity.qml:265
+#: activities/digital_electricity/DigitalElectricity.qml:266
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Έξοδος"
