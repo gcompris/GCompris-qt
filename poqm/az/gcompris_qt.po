@@ -3153,7 +3153,7 @@ msgctxt "FirstScreen|"
 msgid "Braille: Unlocking the Code"
 msgstr "Brayl: Kodun şifrəsini açmaq"
 
-#: activities/braille_alphabets/FirstScreen.qml:65
+#: activities/braille_alphabets/FirstScreen.qml:66
 msgctxt "FirstScreen|"
 msgid ""
 "The braille system is a method that is used by blind people to read and "
@@ -3162,7 +3162,7 @@ msgstr ""
 "Brayl sistemi, görmə əngəlli insanların oxuması və yazması üşün istifadə "
 "olunur."
 
-#: activities/braille_alphabets/FirstScreen.qml:66
+#: activities/braille_alphabets/FirstScreen.qml:67
 msgctxt "FirstScreen|"
 msgid ""
 "Each braille character, or cell, is made up of six dot positions, arranged "
@@ -3173,7 +3173,7 @@ msgstr ""
 "düzbucaqlı şəkildə yerləşdirilmiş 6 nöqtədən ibarətdir. Solda göstərildiyi "
 "kimi hər nöqtə 1-dən 6-ya qədər saylardan ibarətdir."
 
-#: activities/braille_alphabets/FirstScreen.qml:88
+#: activities/braille_alphabets/FirstScreen.qml:87
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on me and try reproducing braille characters."
 msgstr ""
@@ -3415,37 +3415,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "Boşluq və ya Enter: cavabınızı təsdiq edin"
 
-#: activities/calendar/Calendar.qml:316
+#: activities/calendar/Calendar.qml:114
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "Bazar"
 
-#: activities/calendar/Calendar.qml:317
+#: activities/calendar/Calendar.qml:115
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "Baza ertəsi"
 
-#: activities/calendar/Calendar.qml:318
+#: activities/calendar/Calendar.qml:116
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "Çərşənbə axşamı"
 
-#: activities/calendar/Calendar.qml:319
+#: activities/calendar/Calendar.qml:117
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "Çərşənbə"
 
-#: activities/calendar/Calendar.qml:320
+#: activities/calendar/Calendar.qml:118
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "Cümə axşamı"
 
-#: activities/calendar/Calendar.qml:321
+#: activities/calendar/Calendar.qml:119
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "Cümə"
 
-#: activities/calendar/Calendar.qml:322
+#: activities/calendar/Calendar.qml:120
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "Şənbə"

@@ -3180,7 +3180,7 @@ msgctxt "FirstScreen|"
 msgid "Braille: Unlocking the Code"
 msgstr "อักษรเบรลล์ : การถอดรหัส"
 
-#: activities/braille_alphabets/FirstScreen.qml:65
+#: activities/braille_alphabets/FirstScreen.qml:66
 #, fuzzy
 #| msgctxt "FirstScreen|"
 #| msgid ""
@@ -3192,7 +3192,7 @@ msgid ""
 "write."
 msgstr "อักษรเบรลล์เป็นวิธีการที่ผู้พิการทางสายตาใช้ในการอ่านและเขียน"
 
-#: activities/braille_alphabets/FirstScreen.qml:66
+#: activities/braille_alphabets/FirstScreen.qml:67
 #, fuzzy
 #| msgctxt "FirstScreen|"
 #| msgid ""
@@ -3208,7 +3208,7 @@ msgstr ""
 "อักษรเบรลล์แต่ละตัวหรือช่อง ประกอบด้วยจุด 6 จุดเรียงเป็นรูปสี่เหลี่่ยม โดยเรียงเป็นสองคอลัมน์ "
 "คอลัมน์ละสามจุด ดังภาพทางซ้าย แต่ละจุดจะอ้างอิงด้วยเลข 1 ถึง 6"
 
-#: activities/braille_alphabets/FirstScreen.qml:88
+#: activities/braille_alphabets/FirstScreen.qml:87
 #, fuzzy
 #| msgctxt "FirstScreen|"
 #| msgid ""
@@ -3443,37 +3443,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr ""
 
-#: activities/calendar/Calendar.qml:316
+#: activities/calendar/Calendar.qml:114
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr ""
 
-#: activities/calendar/Calendar.qml:317
+#: activities/calendar/Calendar.qml:115
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr ""
 
-#: activities/calendar/Calendar.qml:318
+#: activities/calendar/Calendar.qml:116
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr ""
 
-#: activities/calendar/Calendar.qml:319
+#: activities/calendar/Calendar.qml:117
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr ""
 
-#: activities/calendar/Calendar.qml:320
+#: activities/calendar/Calendar.qml:118
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr ""
 
-#: activities/calendar/Calendar.qml:321
+#: activities/calendar/Calendar.qml:119
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr ""
 
-#: activities/calendar/Calendar.qml:322
+#: activities/calendar/Calendar.qml:120
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr ""

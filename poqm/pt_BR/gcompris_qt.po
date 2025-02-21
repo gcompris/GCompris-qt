@@ -3019,7 +3019,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Esta imagem ajudará você a calcular o valor dos bits."
 
-#: activities/binary_bulb/BinaryBulb.qml:138
+#: activities/binary_bulb/BinaryBulb.qml:137
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3127,7 +3127,7 @@ msgctxt "FirstScreen|"
 msgid "Braille: Unlocking the Code"
 msgstr "Braille: Destravando o código"
 
-#: activities/braille_alphabets/FirstScreen.qml:65
+#: activities/braille_alphabets/FirstScreen.qml:66
 msgctxt "FirstScreen|"
 msgid ""
 "The braille system is a method that is used by blind people to read and "
@@ -3136,7 +3136,7 @@ msgstr ""
 "O sistema Braille é um método que é usado por pessoas cegas para ler e "
 "escrever."
 
-#: activities/braille_alphabets/FirstScreen.qml:66
+#: activities/braille_alphabets/FirstScreen.qml:67
 msgctxt "FirstScreen|"
 msgid ""
 "Each braille character, or cell, is made up of six dot positions, arranged "
@@ -3147,7 +3147,7 @@ msgstr ""
 "arranjados em um retângulo contendo duas colunas de três pontos cada. Como "
 "visto à esquerda, cada ponto é referenciado por um número, de 1 a 6."
 
-#: activities/braille_alphabets/FirstScreen.qml:88
+#: activities/braille_alphabets/FirstScreen.qml:87
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on me and try reproducing braille characters."
 msgstr ""
@@ -3381,37 +3381,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "Espaço ou Enter: conferir suas respostas"
 
-#: activities/calendar/Calendar.qml:316
+#: activities/calendar/Calendar.qml:114
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "Domingo"
 
-#: activities/calendar/Calendar.qml:317
+#: activities/calendar/Calendar.qml:115
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "Segunda-feira"
 
-#: activities/calendar/Calendar.qml:318
+#: activities/calendar/Calendar.qml:116
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "Terça-feira"
 
-#: activities/calendar/Calendar.qml:319
+#: activities/calendar/Calendar.qml:117
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "Quarta-feira"
 
-#: activities/calendar/Calendar.qml:320
+#: activities/calendar/Calendar.qml:118
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "Quinta-feira"
 
-#: activities/calendar/Calendar.qml:321
+#: activities/calendar/Calendar.qml:119
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "Sexta-feira"
 
-#: activities/calendar/Calendar.qml:322
+#: activities/calendar/Calendar.qml:120
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "Sábado"
@@ -6316,12 +6316,12 @@ msgstr ""
 "de uma tensão quase igual à tensão de terra e 1 é a representação da tensão "
 "de alimentação de um circuito."
 
-#: activities/digital_electricity/DigitalElectricity.qml:247
+#: activities/digital_electricity/DigitalElectricity.qml:248
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Entrada"
 
-#: activities/digital_electricity/DigitalElectricity.qml:265
+#: activities/digital_electricity/DigitalElectricity.qml:266
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Saída"

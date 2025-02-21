@@ -2974,14 +2974,14 @@ msgctxt "FirstScreen|"
 msgid "Braille: Unlocking the Code"
 msgstr "برايل: اكشف الرمز"
 
-#: activities/braille_alphabets/FirstScreen.qml:65
+#: activities/braille_alphabets/FirstScreen.qml:66
 msgctxt "FirstScreen|"
 msgid ""
 "The braille system is a method that is used by blind people to read and "
 "write."
 msgstr "نظام «بريل» هو طريقة يستخدمها ذوو الإعاقة البصريّة للقراءة والكتابة."
 
-#: activities/braille_alphabets/FirstScreen.qml:66
+#: activities/braille_alphabets/FirstScreen.qml:67
 msgctxt "FirstScreen|"
 msgid ""
 "Each braille character, or cell, is made up of six dot positions, arranged "
@@ -2991,7 +2991,7 @@ msgstr ""
 "كلّ حرف (أو خليّة) «بريل» مكوّن من ستّة مواقع للنّقط، مرتّبة في مستطيل فيه عمودان، "
 "في كلّ عمود ثلاث نقط. كما ترى على اليسار، كلّ نقطة يُشار إليها برقم من 1 إلى 6."
 
-#: activities/braille_alphabets/FirstScreen.qml:88
+#: activities/braille_alphabets/FirstScreen.qml:87
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on me and try reproducing braille characters."
 msgstr "عندما تجهز انقرني وجرّب كتابة محارف «بريل»."
@@ -3217,37 +3217,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "مفتاح المساحة أو الإدخال: للتحقق من إجابتك"
 
-#: activities/calendar/Calendar.qml:316
+#: activities/calendar/Calendar.qml:114
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "الأحد"
 
-#: activities/calendar/Calendar.qml:317
+#: activities/calendar/Calendar.qml:115
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "الإثنين"
 
-#: activities/calendar/Calendar.qml:318
+#: activities/calendar/Calendar.qml:116
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "الثلاثاء"
 
-#: activities/calendar/Calendar.qml:319
+#: activities/calendar/Calendar.qml:117
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "الأربعاء"
 
-#: activities/calendar/Calendar.qml:320
+#: activities/calendar/Calendar.qml:118
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "الخميس"
 
-#: activities/calendar/Calendar.qml:321
+#: activities/calendar/Calendar.qml:119
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "الجمعة"
 
-#: activities/calendar/Calendar.qml:322
+#: activities/calendar/Calendar.qml:120
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "السبت"

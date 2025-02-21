@@ -3189,7 +3189,7 @@ msgctxt "FirstScreen|"
 msgid "Braille: Unlocking the Code"
 msgstr "Брај: Отклучување на кодот"
 
-#: activities/braille_alphabets/FirstScreen.qml:65
+#: activities/braille_alphabets/FirstScreen.qml:66
 msgctxt "FirstScreen|"
 msgid ""
 "The braille system is a method that is used by blind people to read and "
@@ -3197,7 +3197,7 @@ msgid ""
 msgstr ""
 "Брајовиот систем е метод што го користат слепите луѓе за читање и пишување."
 
-#: activities/braille_alphabets/FirstScreen.qml:66
+#: activities/braille_alphabets/FirstScreen.qml:67
 msgctxt "FirstScreen|"
 msgid ""
 "Each braille character, or cell, is made up of six dot positions, arranged "
@@ -3208,7 +3208,7 @@ msgstr ""
 "правоаголник што содржи две колони од по три точки. Како што се гледа од "
 "лево, секоја точка се означува со број од 1 до 6."
 
-#: activities/braille_alphabets/FirstScreen.qml:88
+#: activities/braille_alphabets/FirstScreen.qml:87
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on me and try reproducing braille characters."
 msgstr ""
@@ -3448,37 +3448,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "Празно место или Enter: потврдете го вашиот одговор"
 
-#: activities/calendar/Calendar.qml:316
+#: activities/calendar/Calendar.qml:114
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "Недела"
 
-#: activities/calendar/Calendar.qml:317
+#: activities/calendar/Calendar.qml:115
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "Понеделник"
 
-#: activities/calendar/Calendar.qml:318
+#: activities/calendar/Calendar.qml:116
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "Вторник"
 
-#: activities/calendar/Calendar.qml:319
+#: activities/calendar/Calendar.qml:117
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "Среда"
 
-#: activities/calendar/Calendar.qml:320
+#: activities/calendar/Calendar.qml:118
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "Четврток"
 
-#: activities/calendar/Calendar.qml:321
+#: activities/calendar/Calendar.qml:119
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "Петок"
 
-#: activities/calendar/Calendar.qml:322
+#: activities/calendar/Calendar.qml:120
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "Сабота"
