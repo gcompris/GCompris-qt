@@ -30,8 +30,13 @@ function start(items_, dataset_) {
     numberOfLevel = dataset.length
     items.currentLevel = Core.getInitialLevel(numberOfLevel)
 
-    if(Qt.locale(GCompris.ApplicationInfo.getVoicesLocale(GCompris.ApplicationSettings.locale)).firstDayOfWeek == Qml.Locale.Monday) {
+    var currentLocale = Qt.locale(GCompris.ApplicationInfo.getVoicesLocale(GCompris.ApplicationSettings.locale))
+    // First day of the week is either Saturday, Sunday or Monday depending on the country
+    if(currentLocale.firstDayOfWeek == Qml.Locale.Monday) {
         items.daysOfTheWeekModel.move(0, items.daysOfTheWeekModel.count - 1, 1)
+    }
+    else if(currentLocale.firstDayOfWeek == Qml.Locale.Saturday) {
+        items.daysOfTheWeekModel.move(items.daysOfTheWeekModel.count - 1, 0, 1)
     }
     initLevel();
 }
