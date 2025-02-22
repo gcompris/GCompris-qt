@@ -138,9 +138,14 @@ ActivityBase {
             cellHeight: Math.min(40 * ApplicationInfo.ratio, height / 7)
             keyNavigationWraps: true
             delegate: ChoiceTable {
+                required property int index
+                required property int dayIndex
+                required property string text
                 width: answerChoices.cellWidth
                 height: answerChoices.cellHeight
                 choices.text: text
+                listIndex: index
+                day: dayIndex
             }
             Keys.enabled: answerChoices.visible
             function handleKeys(event) {
