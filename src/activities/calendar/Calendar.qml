@@ -334,6 +334,8 @@ ActivityBase {
                 height: answerChoices.height / 7
                 choices.text: text
                 anchors.rightMargin: 2
+                listIndex: index
+                day: dayIndex
             }
             Keys.enabled: answerChoices.visible
             function handleKeys(event) {

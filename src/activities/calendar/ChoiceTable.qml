@@ -25,6 +25,11 @@ Rectangle {
     border.color: "#373737"
     border.width: 2
 
+    // index in the list. Can be different of dayIndex if first day of week is not Sunday
+    property int listIndex
+    // Sunday = 0, Monday = 1... whatever the first day of week for current locale is
+    property int day
+
     function select() {
         if(Activity.dayOfWeekSelected === Activity.correctAnswer["dayOfWeek"]) {
             particles.burst(40);
@@ -54,7 +59,8 @@ Rectangle {
         id: mouseArea
         anchors.fill: parent
         onClicked: {
-                Activity.dayOfWeekSelected = dayIndex
+                items.answerChoices.currentIndex = choiceBox.listIndex
+                Activity.dayOfWeekSelected = choiceBox.day
                 select()
                 choiceBox.scale = 1
         }
