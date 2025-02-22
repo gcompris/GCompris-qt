@@ -237,7 +237,7 @@ ActivityBase {
                 text: grid.title
                 color: GCStyle.darkText
                 horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlginVCenter
+                verticalAlignment: Text.AlignVCenter
                 fontSize: mediumSize
                 fontSizeMode: Text.Fit
                 anchors {
