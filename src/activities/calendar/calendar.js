@@ -30,7 +30,7 @@ function start(items_, dataset_) {
     numberOfLevel = dataset.length
     items.currentLevel = Core.getInitialLevel(numberOfLevel)
 
-    if(Qt.locale(GCompris.ApplicationSettings.locale).firstDayOfWeek == Qml.Locale.Monday) {
+    if(Qt.locale(GCompris.ApplicationInfo.getVoicesLocale(GCompris.ApplicationSettings.locale)).firstDayOfWeek == Qml.Locale.Monday) {
         items.daysOfTheWeekModel.move(0, items.daysOfTheWeekModel.count - 1, 1)
     }
     initLevel();
