@@ -20,7 +20,10 @@ Item {
     id: choiceBox
     property alias choices: choices
     property alias radius: boxBg.radius
-
+    // index in the list. Can be different of dayIndex if first day of week is not Sunday
+    property int listIndex
+    // Sunday = 0, Monday = 1... whatever the first day of week for current locale is
+    property int day
     function select() {
         if(Activity.dayOfWeekSelected === Activity.correctAnswer["dayOfWeek"]) {
             particles.burst(40);
@@ -61,8 +64,8 @@ Item {
         id: mouseArea
         anchors.fill: boxBg
         onClicked: {
-            items.answerChoices.currentIndex = dayIndex
-            Activity.dayOfWeekSelected = dayIndex
+            items.answerChoices.currentIndex = choiceBox.listIndex
+            Activity.dayOfWeekSelected = choiceBox.day
             select()
             choiceBox.scale = 1
         }
