@@ -10,4 +10,6 @@ GCOMPRIS_ADD_RESOURCE(activities/algebra_minus
   resource/*/Data.qml
   RESOURCES
   *.svg
+  DEPENDENCIES
+  algebra_by
 )

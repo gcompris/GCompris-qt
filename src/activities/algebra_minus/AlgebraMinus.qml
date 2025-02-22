@@ -9,7 +9,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import "../algebra_by/"
+//import "../algebra_by/"
 import "../algebra_by/algebra.js" as Activity
 
 Algebra {
