@@ -3050,7 +3050,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "इस जानवर को रात में बाहर आना पसंद है।"
 
-#: activities/binary_bulb/BinaryBulb.qml:137
+#: activities/binary_bulb/BinaryBulb.qml:139
 #, fuzzy, qt-format
 #| msgctxt "ActivityInfo|"
 #| msgid "Spatial representation"
@@ -3058,12 +3058,12 @@ msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
 msgstr "त्रिआयामी प्रस्तुति"
 
-#: activities/binary_bulb/resource/tutorial4.qml:29
+#: activities/binary_bulb/resource/tutorial4.qml:31
 msgctxt "tutorial4|"
 msgid "0 to 255 with"
 msgstr ""
 
-#: activities/binary_bulb/resource/tutorial5.qml:29
+#: activities/binary_bulb/resource/tutorial5.qml:31
 msgctxt "tutorial5|"
 msgid "0 to 255 with"
 msgstr ""
