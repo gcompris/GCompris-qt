@@ -3006,18 +3006,18 @@ msgstr ""
 "Cette image vous aide à calculer les valeurs des bits (le bit étant une "
 "unité, qui ne peut prendre que deux valeurs, 0 et 1)."
 
-#: activities/binary_bulb/BinaryBulb.qml:137
+#: activities/binary_bulb/BinaryBulb.qml:139
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
 msgstr "Quelle est la représentation binaire de %1 ?"
 
-#: activities/binary_bulb/resource/tutorial4.qml:29
+#: activities/binary_bulb/resource/tutorial4.qml:31
 msgctxt "tutorial4|"
 msgid "0 to 255 with"
 msgstr "0 à 255 avec"
 
-#: activities/binary_bulb/resource/tutorial5.qml:29
+#: activities/binary_bulb/resource/tutorial5.qml:31
 msgctxt "tutorial5|"
 msgid "0 to 255 with"
 msgstr "0 à 255 avec"

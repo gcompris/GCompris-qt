@@ -2916,18 +2916,18 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "這張圖片會協助您計算位元的值。"
 
-#: activities/binary_bulb/BinaryBulb.qml:137
+#: activities/binary_bulb/BinaryBulb.qml:139
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
 msgstr "%1 的二進位值是多少？"
 
-#: activities/binary_bulb/resource/tutorial4.qml:29
+#: activities/binary_bulb/resource/tutorial4.qml:31
 msgctxt "tutorial4|"
 msgid "0 to 255 with"
 msgstr "就像下面這張圖，用八個位元就可以從 0 數到 255"
 
-#: activities/binary_bulb/resource/tutorial5.qml:29
+#: activities/binary_bulb/resource/tutorial5.qml:31
 msgctxt "tutorial5|"
 msgid "0 to 255 with"
 msgstr "就像下面這張圖，用八個位元就可以從 0 數到 255"

@@ -2999,18 +2999,18 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Questa immagine ti aiuterà a calcolare il valore dei bit."
 
-#: activities/binary_bulb/BinaryBulb.qml:137
+#: activities/binary_bulb/BinaryBulb.qml:139
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
 msgstr "Qual è la rappresentazione binaria di %1?"
 
-#: activities/binary_bulb/resource/tutorial4.qml:29
+#: activities/binary_bulb/resource/tutorial4.qml:31
 msgctxt "tutorial4|"
 msgid "0 to 255 with"
 msgstr "da 0 a 255 con"
 
-#: activities/binary_bulb/resource/tutorial5.qml:29
+#: activities/binary_bulb/resource/tutorial5.qml:31
 msgctxt "tutorial5|"
 msgid "0 to 255 with"
 msgstr "da 0 a 255 con"

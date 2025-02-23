@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-05-22 10:49+0200\n"
-"PO-Revision-Date: 2025-02-14 21:25+0100\n"
+"PO-Revision-Date: 2025-02-22 21:54+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -2668,7 +2668,7 @@ msgstr ""
 #: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
 msgctxt "balanceboxeditor|"
@@ -2935,18 +2935,18 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Ĉi tiu bildo helpos vin kalkuli la valoron de bitoj."
 
-#: activities/binary_bulb/BinaryBulb.qml:137
+#: activities/binary_bulb/BinaryBulb.qml:139
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
 msgstr "Kio estas la binara prezento de %1?"
 
-#: activities/binary_bulb/resource/tutorial4.qml:29
+#: activities/binary_bulb/resource/tutorial4.qml:31
 msgctxt "tutorial4|"
 msgid "0 to 255 with"
 msgstr "0 ĝis 255 kun"
 
-#: activities/binary_bulb/resource/tutorial5.qml:29
+#: activities/binary_bulb/resource/tutorial5.qml:31
 msgctxt "tutorial5|"
 msgid "0 to 255 with"
 msgstr "0 ĝis 255 kun"
@@ -8319,7 +8319,7 @@ msgstr "Alklaku la lokon de la donita piramido."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "Malpermesita Urbo"
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8339,7 +8339,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "Leshan Giganta Budho"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -17410,12 +17410,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "La magiistoĉapelo"
+msgstr "La magiistoĉapelo (subtraho)"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -17507,12 +17504,9 @@ msgstr "%1x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "La magiistoĉapelo"
+msgstr "La magiistoĉapelo (adicio)"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -27752,7 +27746,7 @@ msgstr "%1 sukcese forigita!"
 #: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: core/GCCreationHandler.qml:180
 #, qt-format
@@ -27901,7 +27895,7 @@ msgstr ""
 #: core/main.cpp:113
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
-msgstr ""
+msgstr "Elektu bildigilon (opengl, software, Direct3D11, Direct3D12, Metal)."
 
 #: core/main.cpp:117
 msgctxt "QObject|"
