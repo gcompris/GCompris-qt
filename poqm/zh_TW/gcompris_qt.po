@@ -2109,24 +2109,6 @@ msgctxt "ActivityInfo|"
 msgid "Discover the keyboard."
 msgstr "探索鍵盤與字母。"
 
-#. Help manual
-#: activities/baby_keyboard/ActivityInfo.qml:23
-msgctxt "ActivityInfo|"
-msgid ""
-"Type any key on the keyboard.\n"
-"    Letters, numbers and other character keys will display the corresponding "
-"character on the screen.\n"
-"    If there is a corresponding voice it will be played, else it will play a "
-"bleep sound.\n"
-"    Other keys will just play a click sound.\n"
-"    "
-msgstr ""
-"在鍵盤上敲擊任一個鍵。\n"
-"  若敲擊的是字母、數字與其他字元的按鍵，會顯示在螢幕上。\n"
-"  如果有相對應的聲音，會播放出來，不然就播放嗶聲。\n"
-"  其他鍵則會播出拍搭聲。\n"
-"  "
-
 #. Activity title
 #: activities/baby_mouse/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
@@ -27969,6 +27951,22 @@ msgstr "略過"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "開始"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Type any key on the keyboard.\n"
+#~ "    Letters, numbers and other character keys will display the "
+#~ "corresponding character on the screen.\n"
+#~ "    If there is a corresponding voice it will be played, else it will "
+#~ "play a bleep sound.\n"
+#~ "    Other keys will just play a click sound.\n"
+#~ "    "
+#~ msgstr ""
+#~ "在鍵盤上敲擊任一個鍵。\n"
+#~ "  若敲擊的是字母、數字與其他字元的按鍵，會顯示在螢幕上。\n"
+#~ "  如果有相對應的聲音，會播放出來，不然就播放嗶聲。\n"
+#~ "  其他鍵則會播出拍搭聲。\n"
+#~ "  "
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"

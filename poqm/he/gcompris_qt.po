@@ -2055,22 +2055,6 @@ msgctxt "ActivityInfo|"
 msgid "Discover the keyboard."
 msgstr "לגלות את המקלדת."
 
-#. Help manual
-#: activities/baby_keyboard/ActivityInfo.qml:23
-msgctxt "ActivityInfo|"
-msgid ""
-"Type any key on the keyboard.\n"
-"    Letters, numbers and other character keys will display the corresponding "
-"character on the screen.\n"
-"    If there is a corresponding voice it will be played, else it will play a "
-"bleep sound.\n"
-"    Other keys will just play a click sound.\n"
-"    "
-msgstr ""
-"להקיש על כל אות במקלדת. אותיות, מספקים ומקשי סימנים אחרים יציגו את הסימן "
-"המתאים על המסך. אם ישנו קול מתאים הוא יושמע, אחרת ישמע צפצוף. מקשים אחרים "
-"ישמיעו צליל נקישה. "
-
 #. Activity title
 #: activities/baby_mouse/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
@@ -27659,6 +27643,20 @@ msgstr "לדלג"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "להתחיל"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Type any key on the keyboard.\n"
+#~ "    Letters, numbers and other character keys will display the "
+#~ "corresponding character on the screen.\n"
+#~ "    If there is a corresponding voice it will be played, else it will "
+#~ "play a bleep sound.\n"
+#~ "    Other keys will just play a click sound.\n"
+#~ "    "
+#~ msgstr ""
+#~ "להקיש על כל אות במקלדת. אותיות, מספקים ומקשי סימנים אחרים יציגו את הסימן "
+#~ "המתאים על המסך. אם ישנו קול מתאים הוא יושמע, אחרת ישמע צפצוף. מקשים אחרים "
+#~ "ישמיעו צליל נקישה. "
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "<b>Keyboard controls:"

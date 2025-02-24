@@ -2091,24 +2091,6 @@ msgctxt "ActivityInfo|"
 msgid "Discover the keyboard."
 msgstr "കീബോർഡ് പഠിക്കൽ."
 
-#. Help manual
-#: activities/baby_keyboard/ActivityInfo.qml:23
-msgctxt "ActivityInfo|"
-msgid ""
-"Type any key on the keyboard.\n"
-"    Letters, numbers and other character keys will display the corresponding "
-"character on the screen.\n"
-"    If there is a corresponding voice it will be played, else it will play a "
-"bleep sound.\n"
-"    Other keys will just play a click sound.\n"
-"    "
-msgstr ""
-"കീബോർഡിൽ ഏതെങ്കിലും ഒരു കീ ടൈപ്പ് ചെയ്യുക.\n"
-"അക്ഷരങ്ങളും അക്കങ്ങളും മറ്റു ക്യാരക്ടർ കീകളും അനുയോജ്യമായ ക്യാരക്ടറുകൾ സ്ക്രീനിൽ കാണിക്കും.\n"
-"അനുയോജ്യമായ ശബ്ദമുണ്ടെങ്കിൽ അതു പ്ലേ ചെയ്യും ഇല്ലെങ്കിൽ ഒരു ബീപ് ശബ്ദം കേൾക്കാം.\n"
-"മറ്റു കീകൾ ഒരു ക്ലിക്ക് ശബ്ദം മാത്രം പ്ലേ ചെയ്യും.\n"
-"    "
-
 #. Activity title
 #: activities/baby_mouse/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
@@ -27854,6 +27836,22 @@ msgstr "നോക്കാതെ വിടുക"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "തുടങ്ങാം"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Type any key on the keyboard.\n"
+#~ "    Letters, numbers and other character keys will display the "
+#~ "corresponding character on the screen.\n"
+#~ "    If there is a corresponding voice it will be played, else it will "
+#~ "play a bleep sound.\n"
+#~ "    Other keys will just play a click sound.\n"
+#~ "    "
+#~ msgstr ""
+#~ "കീബോർഡിൽ ഏതെങ്കിലും ഒരു കീ ടൈപ്പ് ചെയ്യുക.\n"
+#~ "അക്ഷരങ്ങളും അക്കങ്ങളും മറ്റു ക്യാരക്ടർ കീകളും അനുയോജ്യമായ ക്യാരക്ടറുകൾ സ്ക്രീനിൽ കാണിക്കും.\n"
+#~ "അനുയോജ്യമായ ശബ്ദമുണ്ടെങ്കിൽ അതു പ്ലേ ചെയ്യും ഇല്ലെങ്കിൽ ഒരു ബീപ് ശബ്ദം കേൾക്കാം.\n"
+#~ "മറ്റു കീകൾ ഒരു ക്ലിക്ക് ശബ്ദം മാത്രം പ്ലേ ചെയ്യും.\n"
+#~ "    "
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
