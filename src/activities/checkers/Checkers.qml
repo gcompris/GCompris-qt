@@ -45,9 +45,8 @@ ActivityBase {
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
-            property var barHeightAddon: ApplicationSettings.isBarHidden ? textMessage.height : bar.height
-            property bool isPortrait: (activityBackground.height >= activityBackground.width)
-            property int cellSize: boardBg.width * 0.098
+            property bool isVertical: layoutArea.height - bar.height > layoutArea.width
+            property int cellSize: 1
             property var fen: activity.fen
             property bool twoPlayer: activity.twoPlayers
             property bool difficultyByLevel: activity.difficultyByLevel
@@ -90,7 +89,7 @@ ActivityBase {
         GCText {
             id: textMessage
             z: 20
-            color: "white"
+            color: GCStyle.whiteText
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
             fontSize: smallSize
@@ -99,13 +98,27 @@ ActivityBase {
             wrapMode: TextEdit.WordWrap
         }
 
+        Item {
+            id: layoutArea
+            width: activityBackground.width
+            anchors.top: textMessage.bottom
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: ApplicationSettings.isBarHidden ? GCStyle.baseMargins : bar.height * 1.2
+        }
+
+        Item {
+            id: controlsArea
+            x: layoutArea.x + layoutArea.width - width
+            y: layoutArea.y
+        }
+
         Grid {
             id: controls
             z: 20
-            spacing: (boardBg.width - items.cellSize * 3) / 3
-            columns: items.isPortrait ? 3 : 1
+            columns: items.isVertical ? 3 : 1
             horizontalItemAlignment: Grid.AlignHCenter
             verticalItemAlignment: Grid.AlignVCenter
+            anchors.centerIn: controlsArea
 
             GCButton {
                 id: undo
@@ -175,93 +188,49 @@ ActivityBase {
             }
         }
 
-        Rectangle {
-            id: layoutArea
-            width: activityBackground.width
-            height: activityBackground.height - textMessage.height - items.barHeightAddon * 1.1
-            opacity: 0
-            anchors.horizontalCenter: activityBackground.horizontalCenter
-        }
-
-        Rectangle {
-            id: controlsArea
-            anchors.left: activityBackground.left
-            anchors.right: boardBg.left
-            anchors.top: boardBg.top
-            anchors.bottom: boardBg.bottom
-            opacity: 0
-        }
-
         states: [
             State {
-                name: "portraitLayout"; when: items.isPortrait
+                name: "verticalLayout"; when: items.isVertical
                 PropertyChanges {
-                    layoutArea {
-                        width: activityBackground.width * 0.86
-                        height: activityBackground.height - textMessage.height - bar.height * 1.1
+                    items {
+                        cellSize: Math.min((layoutArea.width - GCStyle.baseMargins * 2) / 10,
+                                        (layoutArea.height - GCStyle.baseMargins * 3) / 12)
                     }
-                }
-                PropertyChanges {
+                    controlsArea {
+                        width: layoutArea.width
+                        height: (layoutArea.height - boardBg.height) * 0.5
+                    }
                     controls {
-                        width:layoutArea.width
-                        height: items.cellSize * 1.2
-                        anchors.leftMargin: controls.spacing * 0.5
-                        anchors.topMargin: 0
+                        spacing: (controls.width - items.cellSize * 3) * 0.5
+                        width: boardBg.width
+                        height: items.cellSize
                     }
-                }
-                PropertyChanges {
-                    boardBg {
-                        anchors.verticalCenterOffset: items.cellSize * -0.6
-                    }
-                }
-                AnchorChanges {
-                    target: layoutArea
-                    anchors.top: controls.bottom
-                }
-                AnchorChanges {
-                    target: controls
-                    anchors.top: textMessage.bottom
-                    anchors.horizontalCenter: undefined
-                    anchors.left: boardBg.left
+
                 }
             },
             State {
-                name: "horizontalLayout"; when: !items.isPortrait
+                name: "horizontalLayout"; when: !items.isVertical
                 PropertyChanges {
-                    layoutArea {
-                        width: activityBackground.width
-                        height: activityBackground.height - textMessage.height - items.barHeightAddon * 1.1
+                    items {
+                        cellSize: Math.min((layoutArea.width  - GCStyle.baseMargins * 3 - bar.height) / 12,
+                                    (layoutArea.height - GCStyle.baseMargins) / 10)
                     }
-                }
-                PropertyChanges {
-                    controls {
-                        width: items.cellSize * 1.2
+                    controlsArea {
+                        width: (layoutArea.width - boardBg.width) * 0.5
                         height: layoutArea.height
-                        anchors.leftMargin: 0
-                        anchors.topMargin: controls.spacing * 0.5
                     }
-                }
-                PropertyChanges {
-                    boardBg {
-                        anchors.verticalCenterOffset: 0
+                    controls {
+                        spacing: (controls.height - items.cellSize * 3) * 0.5
+                        width: items.cellSize
+                        height: boardBg.height
                     }
-                }
-                AnchorChanges {
-                    target: layoutArea
-                    anchors.top: textMessage.bottom
-                }
-                AnchorChanges {
-                    target: controls
-                    anchors.top: controlsArea.top
-                    anchors.horizontalCenter: controlsArea.horizontalCenter
-                    anchors.left: undefined
                 }
             }
         ]
 
         Rectangle {
             id: boardBg
-            width: Math.min(layoutArea.width, layoutArea.height)
+            width: items.cellSize * 10 + GCStyle.baseMargins
             height: boardBg.width
             anchors.centerIn: layoutArea
             z: 09
@@ -322,12 +291,12 @@ ActivityBase {
                 property bool acceptMove: false
                 property bool jumpable: false
                 property int pos: modelData.pos
-                property int spacing: 6 * ApplicationInfo.ratio
+                property int spacing: GCStyle.halfMargins
                 Rectangle {
                     id: possibleMove
                     anchors.fill: parent
                     color: parent.containsDrag ?  '#803ACAFF' : 'transparent'
-                    border.width: parent.acceptMove || parent.jumpable ? 5 : 0
+                    border.width: parent.acceptMove || parent.jumpable ? GCStyle.midBorder : 0
                     border.color: parent.acceptMove ? '#FF808080' : '#C0808080'
                     radius: parent.acceptMove ? width*0.5 : 0
                     z: 1
