@@ -2239,6 +2239,26 @@ msgctxt "ActivityInfo|"
 msgid "Discover the keyboard."
 msgstr "Erkunde die Tastatur."
 
+#. Help manual
+#: activities/baby_keyboard/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"Type any key on the keyboard.\n"
+"    Letters, numbers and other character keys will display the corresponding "
+"character on the screen.\n"
+"    If there is a corresponding voice it will be played, else it will play a "
+"bleep sound.\n"
+"    Other keys will just play a click sound.\n"
+"    "
+msgstr ""
+"Gib eine beliebige Taste auf der Tastatur ein.\n"
+"     Buchstaben, Zahlen und andere Zeichentasten zeigen das entsprechende "
+"Zeichen auf dem Bildschirm an.\n"
+"     Wenn eine entsprechende Stimme vorhanden ist, wird sie abgespielt, "
+"andernfalls wird ein Piepton ausgegeben.\n"
+"     Andere Tasten geben nur einen Klick-Sound wieder.\n"
+"    "
+
 #. Activity title
 #: activities/baby_mouse/ActivityInfo.qml:14
 #, fuzzy
@@ -29428,24 +29448,6 @@ msgstr "Überspringen"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Start"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Type any key on the keyboard.\n"
-#~ "    Letters, numbers and other character keys will display the "
-#~ "corresponding character on the screen.\n"
-#~ "    If there is a corresponding voice it will be played, else it will "
-#~ "play a bleep sound.\n"
-#~ "    Other keys will just play a click sound.\n"
-#~ "    "
-#~ msgstr ""
-#~ "Gib eine beliebige Taste auf der Tastatur ein.\n"
-#~ "     Buchstaben, Zahlen und andere Zeichentasten zeigen das entsprechende "
-#~ "Zeichen auf dem Bildschirm an.\n"
-#~ "     Wenn eine entsprechende Stimme vorhanden ist, wird sie abgespielt, "
-#~ "andernfalls wird ein Piepton ausgegeben.\n"
-#~ "     Andere Tasten geben nur einen Klick-Sound wieder.\n"
-#~ "    "
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
