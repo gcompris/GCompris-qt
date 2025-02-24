@@ -54,10 +54,15 @@ function start() {
     lessons = getAllLessons(categoriesData)
     categories = getCategoryModel(categoriesData)
     addPropertiesToCategories(categories)
+    initCategories()
+    items.menuScreen.start()
+}
+
+function initCategories() {
+    items.menuModel.clear()
     items.menuModel.append(categories)
     savedPropertiesToCategories(items.dialogActivityConfig.activityData)
     sortByFavorites()
-    items.menuScreen.start()
 }
 
 // Inserts specific properties to the categories
@@ -100,9 +105,11 @@ function savedPropertiesToCategories(dataToSave) {
 }
 
 function sortByFavorites() {
+    var lastFavIndex = 0;
     for(var i = 0; i < items.menuModel.count; i++) {
         if(items.menuModel.get(i)['favorite']) {
-            items.menuModel.move(i, 0, 1);
+            items.menuModel.move(i, lastFavIndex, 1);
+            lastFavIndex++;
         }
     }
 }

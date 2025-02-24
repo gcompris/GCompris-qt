@@ -38,13 +38,17 @@ Image {
     function start() {
         focus = true
         forceActiveFocus()
-        menuGrid.currentIndex = 0
         opacity = 1
     }
 
     function stop() {
         focus = false
         opacity = 0
+    }
+
+    function startCurrentItem() {
+        if(menuGrid.currentIndex >= 0)
+            menuGrid.currentItem.selectCurrentItem()
     }
 
     Keys.onEscapePressed: {
@@ -54,15 +58,15 @@ Image {
     Keys.enabled: (items.mode == "expert") ? false : true
     Keys.onPressed: (event) => {
         if(event.key === Qt.Key_Space) {
-            menuGrid.currentItem.selectCurrentItem()
+            startCurrentItem()
             event.accepted = true
         }
         if(event.key === Qt.Key_Enter) {
-            menuGrid.currentItem.selectCurrentItem()
+            startCurrentItem()
             event.accepted = true
         }
         if(event.key === Qt.Key_Return) {
-            menuGrid.currentItem.selectCurrentItem()
+            startCurrentItem()
             event.accepted = true
         }
         if(event.key === Qt.Key_Left) {
@@ -137,6 +141,7 @@ Image {
         keyNavigationWraps: true
         maximumFlickVelocity: menuScreen.height
         boundsBehavior: Flickable.StopAtBounds
+        currentIndex: -1
         // Needed to calculate the OpacityMask offset
         // If using software renderer, this value is not used, so we save the calculation and set it to 1
         property real hiddenBottom: ApplicationInfo.useSoftwareRenderer ? 1 : contentHeight - height - contentY
@@ -209,13 +214,22 @@ Image {
                 Activity.storeCategoriesLevels(index)
             }
 
+            Rectangle {
+                anchors.fill: favoriteIcon
+                anchors.margins: - GCStyle.tinyMargins
+                color: GCStyle.whiteBg
+                opacity: 0.5
+                radius: width * 0.5
+            }
+
             Image {
+                id: favoriteIcon
                 source: "qrc:/gcompris/src/activities/menu/resource/" +
                         ( favorite ? "all.svg" : "all_disabled.svg" );
                 anchors {
                     top: parent.top
                     right: parent.right
-                    rightMargin: GCStyle.halfMargins
+                    margins: GCStyle.halfMargins
                 }
                 sourceSize.width: iconWidth * 0.25
                 visible: ApplicationSettings.sectionVisible
@@ -226,8 +240,10 @@ Image {
                             var category = items.menuModel.get(i)
                             var categoryIndex = category.index
                             if(index == categoryIndex)
-                            menuModel.get(i)['favorite'] = !menuModel.get(i)['favorite']
+                                menuModel.get(i)['favorite'] = !menuModel.get(i)['favorite']
                         }
+                        dialogActivityConfig.saveData()
+                        Activity.initCategories()
                     }
                 }
             }
@@ -239,7 +255,7 @@ Image {
             color:  "#AAFFFFFF"
             border.width: GCStyle.thinBorder
             border.color: GCStyle.whiteBorder
-            visible: (items.mode == "expert") ? false : true
+            visible: (items.mode == "expert" || menuGrid.currentIndex === -1) ? false : true
             Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
             Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
         }
