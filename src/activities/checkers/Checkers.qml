@@ -108,7 +108,7 @@ ActivityBase {
 
         Item {
             id: controlsArea
-            x: layoutArea.x + layoutArea.width - width
+            x: layoutArea.width - width
             y: layoutArea.y
         }
 
