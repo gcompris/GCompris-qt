@@ -14,8 +14,6 @@ import "categorization.js" as Activity
 
 Flow {
     id: zoneFlow
-    width: parent.width/3
-    height: parent.height
     property alias repeater: repeater
     property alias model: zoneModel
 
@@ -28,13 +26,13 @@ Flow {
         model: zoneModel
         Item {
             id: item
-            width: itemWidth
-            height: itemWidth
+            width: rootItem.itemWidth
+            height: rootItem.itemWidth
             opacity: 1
             Image {
                 id: image
                 fillMode: Image.PreserveAspectFit
-                sourceSize.width: itemWidth
+                sourceSize.width: rootItem.itemWidth
                 width: sourceSize.width
                 height: sourceSize.width
                 source: name
