@@ -9457,27 +9457,27 @@ msgstr "Trouve la date 5 jours avant le 8 décembre."
 #: activities/find_the_day/find_the_day_dataset.js:74
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 3 days after December 5th."
-msgstr "Trouve la date 3 jours après le 5 décembre."
+msgstr "Trouve le jour 3 jours après le 5 décembre."
 
 #: activities/find_the_day/find_the_day_dataset.js:78
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 12 days before November 12th."
-msgstr "Trouve la date 12 jours avant le 12 novembre."
+msgstr "Trouve le jour 12 jours avant le 12 novembre."
 
 #: activities/find_the_day/find_the_day_dataset.js:82
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 32 days after January 5th."
-msgstr "Trouve la date 32 jours après le 5 janvier."
+msgstr "Trouve le jour 32 jours après le 5 janvier."
 
 #: activities/find_the_day/find_the_day_dataset.js:86
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 5 days after February 23rd."
-msgstr "Trouve la date 5 jours après le 23 février."
+msgstr "Trouve le jour 5 jours après le 23 février."
 
 #: activities/find_the_day/find_the_day_dataset.js:90
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 17 days before August 16th."
-msgstr "Trouve la date 17 jours avant le 16 août."
+msgstr "Trouve le jour 17 jours avant le 16 août."
 
 #: activities/find_the_day/find_the_day_dataset.js:111
 msgctxt "find_the_day_dataset|"
@@ -9507,27 +9507,27 @@ msgstr "Trouve la date 2 semaines et 5 jours avant le 2 juillet."
 #: activities/find_the_day/find_the_day_dataset.js:147
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 5 months and 2 days after July 3rd."
-msgstr "Trouve la date 5 mois et 2 jours après le 3 juillet."
+msgstr "Trouve le jour 5 mois et 2 jours après le 3 juillet."
 
 #: activities/find_the_day/find_the_day_dataset.js:151
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 2 months and 4 days after October 8th."
-msgstr "Trouve la date 2 mois et 4 jours après le 8 octobre."
+msgstr "Trouve le jour 2 mois et 4 jours après le 8 octobre."
 
 #: activities/find_the_day/find_the_day_dataset.js:155
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 1 month and 3 days before December 28th."
-msgstr "Trouve la date 1 mois et 3 jours avant le 28 décembre."
+msgstr "Trouve le jour 1 mois et 3 jours avant le 28 décembre."
 
 #: activities/find_the_day/find_the_day_dataset.js:159
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 8 months and 7 days after February 28th."
-msgstr "Trouve la date 8 mois et 7 jours après le 28 février."
+msgstr "Trouve le jour 8 mois et 7 jours après le 28 février."
 
 #: activities/find_the_day/find_the_day_dataset.js:163
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 3 months and 3 days before September 15th."
-msgstr "Trouve la date 3 mois et 3 jours avant le 15 septembre."
+msgstr "Trouve le jour 3 mois et 3 jours avant le 15 septembre."
 
 #: activities/find_the_day/find_the_day_dataset.js:182
 msgctxt "find_the_day_dataset|"
