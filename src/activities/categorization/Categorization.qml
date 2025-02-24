@@ -76,17 +76,10 @@ ActivityBase {
             }
         }
 
-        Rectangle {
-            id: categoryArea
-            color: "#00ffffff"
-            anchors.top: activityBackground.top
-            anchors.bottom: bar.top
-            anchors.left: activityBackground.left
-            anchors.right: activityBackground.right
-            anchors.bottomMargin: bar.height * 0.2
-            CategoryReview {
-                id: categoryReview
-            }
+        CategoryReview {
+            id: categoryReview
+            anchors.fill: parent
+            anchors.bottomMargin: bar.height * 1.2
         }
 
         DialogChooseLevel {

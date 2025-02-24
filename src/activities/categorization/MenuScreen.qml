@@ -92,7 +92,7 @@ Image {
     property int iconWidth: 180 * ApplicationInfo.ratio
     property int iconHeight: 180 * ApplicationInfo.ratio
 
-    property int levelCellWidth: activityBackground.width / Math.floor(activityBackground.width / iconWidth )
+    property int levelCellWidth: menuGrid.width / Math.max(1, Math.floor(activityBackground.width / iconWidth ))
     property int levelCellHeight: iconHeight * 1.2
 
     ListModel {
@@ -126,7 +126,9 @@ Image {
         id: menuGrid
         anchors {
             fill: parent
-            bottomMargin: bar.height
+            margins: GCStyle.halfMargins
+            rightMargin: 0
+            bottomMargin: bar.height * 1.2
         }
         cellWidth: levelCellWidth
         cellHeight: levelCellHeight
@@ -135,7 +137,6 @@ Image {
         keyNavigationWraps: true
         maximumFlickVelocity: menuScreen.height
         boundsBehavior: Flickable.StopAtBounds
-        property int spacing: 10
         // Needed to calculate the OpacityMask offset
         // If using software renderer, this value is not used, so we save the calculation and set it to 1
         property real hiddenBottom: ApplicationInfo.useSoftwareRenderer ? 1 : contentHeight - height - contentY
@@ -151,17 +152,16 @@ Image {
 
         delegate: Item {
             id: delegateItem
-            width: levelCellWidth - menuGrid.spacing
-            height: levelCellHeight - menuGrid.spacing
+            width: levelCellWidth - GCStyle.halfMargins
+            height: levelCellHeight - GCStyle.halfMargins
             property string sectionName: name
             opacity: (items.mode == "expert") ? 0.25 : 1
 
             Rectangle {
                 id: activityBackground
-                width: levelCellWidth - menuGrid.spacing
-                height: levelCellHeight - menuGrid.spacing
-                anchors.horizontalCenter: parent.horizontalCenter
-                color: "white"
+                width: parent.width
+                height: parent.height
+                color: GCStyle.whiteBg
                 opacity: 0.5
             }
 
@@ -170,9 +170,9 @@ Image {
                 source: image
                 anchors.top: activityBackground.top
                 anchors.horizontalCenter: parent.horizontalCenter
-                height: activityBackground.height*0.8 - 6
+                height: (activityBackground.height - 3 * GCStyle.halfMargins) * 0.8
                 width: height
-                anchors.margins: 5
+                anchors.margins: GCStyle.halfMargins
                 sourceSize.height: height
                 fillMode: Image.PreserveAspectCrop
                 clip: true
@@ -181,10 +181,11 @@ Image {
             GCText {
                 id: categoryName
                 anchors.top: containerImage.bottom
+                anchors.topMargin: GCStyle.halfMargins
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                width: activityBackground.width
-                height: activityBackground.height*0.2 - 6
+                width: activityBackground.width - GCStyle.halfMargins
+                height: (activityBackground.height - 3 * GCStyle.halfMargins) * 0.2
                 fontSizeMode: Text.Fit
                 elide: Text.ElideRight
                 maximumLineCount: 2
@@ -214,7 +215,7 @@ Image {
                 anchors {
                     top: parent.top
                     right: parent.right
-                    rightMargin: 4 * ApplicationInfo.ratio
+                    rightMargin: GCStyle.halfMargins
                 }
                 sourceSize.width: iconWidth * 0.25
                 visible: ApplicationSettings.sectionVisible
@@ -233,11 +234,11 @@ Image {
         } //delegate close
 
         highlight: Rectangle {
-            width: levelCellWidth - menuGrid.spacing
-            height: levelCellHeight - menuGrid.spacing
-            color:  "#AA41AAC4"
-            border.width: 3
-            border.color: "black"
+            width: levelCellWidth - GCStyle.halfMargins
+            height: levelCellHeight - GCStyle.halfMargins
+            color:  "#AAFFFFFF"
+            border.width: GCStyle.thinBorder
+            border.color: GCStyle.whiteBorder
             visible: (items.mode == "expert") ? false : true
             Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
             Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }

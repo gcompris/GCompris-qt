@@ -24,7 +24,7 @@ Item {
     property bool isDropped: true
     property bool leftAreaContainsDrag: false
     property bool rightAreaContainsDrag: false
-    property bool started: rootItem.opacity == 1
+    property bool started: opacity == 1
     property bool horizontalLayout: categoryBackground.width >= categoryBackground.height
     property alias leftZone: leftZone.model
     property alias rightZone: rightZone.model
@@ -32,10 +32,10 @@ Item {
     property alias leftScreen: leftScreen
     property alias middleScreen: middleScreen
     property alias rightScreen: rightScreen
-    property int itemWidth: Core.fitItems(middleScreen.width * 0.95, middleScreen.height * 0.94, 12)
-    property int zoneWidth: rootItem.width / 3
-    property int zoneSpacing: 0.012 * middleScreen.width
-    anchors.fill: parent
+    property double screenWidth: width / 3
+    property double zoneWidth: screenWidth - GCStyle.midBorder * 2 - GCStyle.halfMargins
+    property double zoneHeight: height - GCStyle.midBorder * 2 - GCStyle.halfMargins * 3 - okButton.height
+    property double itemWidth: Core.fitItems(zoneWidth, zoneHeight, 12) - GCStyle.halfMargins
 
     Loader {
         id: categoryDataset
@@ -46,130 +46,152 @@ Item {
         id: categoryBackground
         source: "qrc:/gcompris/src/activities/categorization/resource/background.svg"
         anchors.fill: parent
-        sourceSize.width:parent.width
-
-        Zone {
-            id: leftZone
-            anchors.centerIn: leftScreen
-            width: zoneWidth - zoneSpacing * 2
-            height: parent.height - zoneSpacing * 2
-            z: 2
-            spacing: zoneSpacing
-        }
+        sourceSize.width: parent.width
 
         Rectangle {
             id: leftScreen
-            width: zoneWidth
+            width: rootItem.screenWidth
             height: parent.height
             anchors.top: parent.top
             anchors.left: parent.left
-            x: 0
             color: leftAreaContainsDrag ? "#F9F8B4" : "#F9B4B4"
-            border.width: zoneSpacing
+            border.width: GCStyle.midBorder
             border.color: "#EC1313"
             opacity: 0.5
         }
 
         Zone {
-            id: rightZone
-            width: zoneWidth - zoneSpacing * 2
-            spacing: zoneSpacing
-            z: 2
-            anchors.top: rightScreen.top
-            anchors.bottom: rightScreen.bottom
-            anchors.left: rightScreen.left
-            anchors.leftMargin: zoneSpacing
-            anchors.topMargin: rootItem.categoryImage.height + zoneSpacing * 2
+            id: leftZone
+            anchors.top: leftScreen.top
+            anchors.left: leftScreen.left
+            anchors.margins: GCStyle.halfMargins + GCStyle.midBorder
+            width: rootItem.zoneWidth
+            height: rootItem.zoneHeight
+            spacing: GCStyle.halfMargins
         }
 
         Rectangle {
             id: rightScreen
-            width: zoneWidth
+            width: rootItem.screenWidth
             height: parent.height
             anchors.top: parent.top
             anchors.right: parent.right
             color: rightAreaContainsDrag ? "#F9F8B4" : "#B4F9C5"
-            border.width: zoneSpacing
+            border.width: GCStyle.midBorder
             border.color: "#13EC52"
             opacity: 0.5
         }
 
         Rectangle {
-            id: middleScreen
-            width: zoneWidth
-            height: parent.height
-            x: leftScreen.width
-            color: "#00FFFFFF"
-        }
-
-        Rectangle {
-            id: instructionBox
-            anchors.left: middleScreen.left
-            anchors.right: middleScreen.right
-            anchors.verticalCenter: middleScreen.verticalCenter
-            color: "#373737"
-            opacity: items.instructionsVisible ? 1 : 0
-            z: 3
-            radius: 10
-            border.color: "#121212"
-            border.width: 2
-            height: parent.height * 0.3
-        }
-
-        Zone {
-            id: middleZone
-            anchors.centerIn: middleScreen
-            width: zoneWidth - zoneSpacing * 2
-            height: parent.height - zoneSpacing * 2
-            spacing: zoneSpacing
-            z: 2
-        }
-
-        GCText {
-            id: instructions
-            text: items.mode !== "expert" && items.details && items.details[bar.level-1] && items.details[bar.level - 1].instructions ? items.details[bar.level - 1].instructions : qsTr("Place the majority category images to the right and other images to the left")
-            visible: items.instructionsVisible
-            anchors.fill: instructionBox
-            anchors.centerIn: instructionBox
-            fontSizeMode: Text.Fit
-            wrapMode: Text.Wrap
-            z: 3
-            color: "white"
-            verticalAlignment: Text.AlignVCenter
-            horizontalAlignment: Text.AlignHCenter
+            id: categoryImageBg
+            color: GCStyle.whiteBg
+            radius: GCStyle.halfMargins
+            anchors.fill: categoryImage
+            anchors.margins: -GCStyle.halfMargins
+            opacity: 0.5
+            visible: categoryImage.visible
         }
 
         Image {
             id: categoryImage
             fillMode: Image.PreserveAspectFit
             source: items.details && items.details[bar.level-1] && items.details[bar.level-1].image ? items.details[bar.level-1].image : ""
-            sourceSize.width: itemWidth
-            width: sourceSize.width
-            height: sourceSize.width
+            width: visible ? okButton.height : 0
+            height: width
+            sourceSize.width: width
+            sourceSize.height: width
             visible: items.categoryImageChecked
             anchors {
                 top: rightScreen.top
-                left: rightScreen.left
-                topMargin: zoneSpacing
-                leftMargin: zoneSpacing
+                horizontalCenter: rightScreen.horizontalCenter
+                margins: items.categoryImageChecked ? GCStyle.halfMargins * 2 + GCStyle.midBorder : 0
+            }
+        }
+
+        Zone {
+            id: rightZone
+            anchors.top: categoryImage.bottom
+            anchors.left: rightScreen.left
+            anchors.topMargin: items.categoryImageChecked ? GCStyle.baseMargins : GCStyle.halfMargins
+            anchors.leftMargin: GCStyle.halfMargins + GCStyle.midBorder
+            width: rootItem.zoneWidth
+            height: rootItem.zoneHeight
+            spacing: GCStyle.halfMargins
+        }
+
+        Item {
+            id: middleScreen
+            width: rootItem.screenWidth
+            height: parent.height
+            x: leftScreen.width
+        }
+
+        Zone {
+            id: middleZone
+            anchors.top: parent.top
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: rootItem.zoneWidth
+            height: rootItem.zoneHeight
+            spacing: GCStyle.halfMargins
+        }
+
+        Score {
+            id: score
+            visible: items.scoreChecked
+            width: Math.min(70 * ApplicationInfo.ratio, okButton.width)
+            height: Math.min(50 * ApplicationInfo.ratio, okButton.width)
+            margins: GCStyle.halfMargins + GCStyle.midBorder
+            anchors {
+                top: undefined
+                right: parent.horizontalCenter
+                left: undefined
+                bottom: undefined
+                verticalCenter: okButton.verticalCenter
+                rightMargin: GCStyle.halfMargins
             }
         }
 
         BarButton {
-            id: validate
+            id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: bar.height * 0.8
+            width: Math.min(GCStyle.bigButtonHeight, (middleScreen.width -  3 * GCStyle.halfMargins) * 0.5)
             enabled: items.okEnabled
             anchors {
-                rightMargin: 14 * ApplicationInfo.ratio
-                right: parent.right
+                left: parent.horizontalCenter
                 bottom: parent.bottom
-                bottomMargin: 14 * ApplicationInfo.ratio
+                leftMargin: GCStyle.halfMargins
+                bottomMargin: GCStyle.halfMargins + GCStyle.midBorder
             }
             onClicked: {
                 items.okEnabled = false;
                 Activity.allPlaced();
             }
+        }
+
+        Rectangle {
+            id: instructionBox
+            anchors.centerIn: instructions
+            width: instructions.contentWidth + GCStyle.baseMargins * 2
+            height: instructions.contentHeight + GCStyle.baseMargins
+            color: GCStyle.darkBg
+            opacity: items.instructionsVisible ? 1 : 0
+            radius: GCStyle.halfMargins
+            border.color: GCStyle.whiteBorder
+            border.width: GCStyle.thinnestBorder
+        }
+
+        GCText {
+            id: instructions
+            text: items.mode !== "expert" && items.details && items.details[bar.level-1] && items.details[bar.level - 1].instructions ? items.details[bar.level - 1].instructions : qsTr("Place the majority category images to the right and other images to the left")
+            visible: items.instructionsVisible
+            anchors.centerIn: parent
+            width: Math.min(parent.width * 0.8, 400 * ApplicationInfo.ratio)
+            height: Math.min(parent.height * 0.5, 300 * ApplicationInfo.ratio)
+            fontSizeMode: Text.Fit
+            wrapMode: Text.Wrap
+            color: GCStyle.whiteText
+            verticalAlignment: Text.AlignVCenter
+            horizontalAlignment: Text.AlignHCenter
         }
 
         DropArea {
@@ -185,20 +207,6 @@ Item {
         DialogHelp {
             id: dialogHelp
             onClose: home()
-        }
-
-        Score {
-            id: score
-            visible: items.scoreChecked
-            width: rightZone.width * 0.4
-            height: width * 0.6
-            margins: 10 * ApplicationInfo.ratio
-            anchors {
-                top: parent.top
-                right: parent.right
-                left: undefined
-                bottom: undefined
-            }
         }
     }
 
