@@ -91,8 +91,8 @@ ActivityBase {
         Image {
             source: activity.url + "sun.svg"
             sourceSize.width: Math.min(120 * ApplicationInfo.ratio, parent.width * 0.15)
-            x: 10
-            y: 10
+            x: GCStyle.halfMargins
+            y: GCStyle.halfMargins
         }
 
         Image {
