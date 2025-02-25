@@ -90,7 +90,7 @@ ActivityBase {
                 top: parent.top
                 bottom: undefined
                 right: parent.right
-                margins: 10 * ApplicationInfo.ratio
+                margins: GCStyle.baseMargins
             }
         }
 
