@@ -89,9 +89,9 @@ ActivityBase {
             id: score
             anchors {
                 bottom: bar.top
-                bottomMargin: 10 * ApplicationInfo.ratio
+                bottomMargin: 2 * GCStyle.baseMargins
                 left: parent.left
-                leftMargin: 10 * ApplicationInfo.ratio
+                leftMargin: GCStyle.baseMargins
                 right: undefined
                 top: undefined
             }
@@ -101,47 +101,46 @@ ActivityBase {
         /* Target text */
         Rectangle {
             id: questionItemBackground
-            color: "#c0ceb339"
-            border.width: 0
-            radius: 10
+            color: GCStyle.darkBg
+            radius: GCStyle.halfMargins
             z: 10
+            anchors.top: parent.top
+            anchors.topMargin: GCStyle.baseMargins
+            anchors.horizontalCenter: parent.horizontalCenter
+            height: questionItem.contentHeight + GCStyle.baseMargins
+            width: questionItem.contentWidth + GCStyle.baseMargins * 1
+            Behavior on height { PropertyAnimation { duration: 100 } }
+        }
+        GCText {
+            id: questionItem
+            z: 10
+            text: qsTr("Set the watch to:") + " " +
+            //~ singular %n hour
+            //~ plural %n hours
+            addNbsp(qsTr("%n hour(s)", "", items.targetH)) + " " +
+            //~ singular %n minute
+            //~ plural %n minutes
+            addNbsp(qsTr("%n minute(s)", "", items.targetM)) +
+            //~ singular %n second
+            //~ plural %n seconds
+            (s.visible ? " " + addNbsp(qsTr("%n second(s)", "", items.targetS)) : "")
+            fontSize: mediumSize
+            fontSizeMode: Text.Fit
+            textFormat: Text.RichText
+            font.weight: Font.DemiBold
+            color: GCStyle.whiteText
+            horizontalAlignment: Text.AlignHCenter
+            wrapMode: Text.WordWrap
+            width: activityBackground.width - 4 * GCStyle.baseMargins
+            height: (parent.height - zones.height) * 0.5 - y - GCStyle.halfMargins
             anchors {
                 horizontalCenter: parent.horizontalCenter
                 top: parent.top
-                margins: 10
+                margins: GCStyle.halfMargins * 3
             }
-            height: questionItem.height + anchors.margins * 2
-            width: questionItem.width + anchors.margins * 2
-            Behavior on height { PropertyAnimation { duration: 100 } }
-
-            GCText {
-                id: questionItem
-                text: qsTr("Set the watch to:") + " " +
-                      //~ singular %n hour
-                      //~ plural %n hours
-                      addNbsp(qsTr("%n hour(s)", "", items.targetH)) + " " +
-                      //~ singular %n minute
-                      //~ plural %n minutes
-                      addNbsp(qsTr("%n minute(s)", "", items.targetM)) +
-                      //~ singular %n second
-                      //~ plural %n seconds
-                      (s.visible ? " " + addNbsp(qsTr("%n second(s)", "", items.targetS)) : "")
-                fontSize: mediumSize
-                textFormat: Text.RichText
-                font.weight: Font.DemiBold
-                color: "white"
-                horizontalAlignment: Text.AlignHCenter
-                wrapMode: Text.WordWrap
-                width: activityBackground.width
-                anchors {
-                    horizontalCenter: parent.horizontalCenter
-                    top: parent.top
-                    margins: 10
-                }
-                // We don't want the wrapping to happen anywhere, set no break space
-                function addNbsp(str: string): string {
-                    return str.replace(" ", "&nbsp;");
-                }
+            // We don't want the wrapping to happen anywhere, set no break space
+            function addNbsp(str: string): string {
+                return str.replace(" ", "&nbsp;");
             }
         }
 
@@ -290,7 +289,7 @@ ActivityBase {
                 }
                 z: 4
                 opacity: items.noHint ? 0 : 1
-                color: "#2a2a2a"
+                color: GCStyle.darkerText
                 visible: false
             }
 
@@ -477,11 +476,11 @@ ActivityBase {
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: 60 * ApplicationInfo.ratio
+            width: GCStyle.bigButtonHeight
             anchors.bottom: bar.top
-            anchors.bottomMargin: 20 * ApplicationInfo.ratio
+            anchors.bottomMargin: 2 * GCStyle.baseMargins
             anchors.right: parent.right
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.rightMargin: GCStyle.baseMargins
             enabled: !items.buttonsBlocked
             ParticleSystemStarLoader {
                 id: okButtonParticles
