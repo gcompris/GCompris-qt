@@ -128,29 +128,34 @@ function initLevel() {
 
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale);
     currentLetter = questions.split("|")[items.score.currentSubLevel];
+    // Maybe we will display it if sound fails
+    items.questionItem.text = currentLetter;
     if (GCompris.ApplicationSettings.isAudioVoicesEnabled &&
             GCompris.DownloadManager.haveLocalResource(
                 GCompris.DownloadManager.getVoicesResourceForLocale(locale))) {
         items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/"+locale+"/misc/click_on_letter.$CA"))
         items.audioVoices.silence(100)
         playLetter(currentLetter)
-        items.questionItem.visible = false
-        items.repeatItem.visible = true
     } else {
         // no sound -> show question
         items.questionItem.visible = true;
         items.repeatItem.visible = false
     }
-    // Maybe we will display it if sound fails
-    items.questionItem.text = currentLetter;
-
     items.buttonsBlocked = false;
 }
 
 function playLetter(letter) {
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
-    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/"+locale+"/alphabet/"
-                                                                       + Core.getSoundFilenamForChar(letter)))
+    var letterAudio = GCompris.ApplicationInfo.getAudioFilePath(
+        "voices-$CA/"+locale+"/alphabet/" + Core.getSoundFilenamForChar(letter))
+     if(items.audioVoices.append(letterAudio)) {
+         items.questionItem.visible = false
+         items.repeatItem.visible = true
+    } else {
+        // no sound -> show question
+        items.questionItem.visible = true;
+        items.repeatItem.visible = false
+    }
 }
 
 function nextLevel() {

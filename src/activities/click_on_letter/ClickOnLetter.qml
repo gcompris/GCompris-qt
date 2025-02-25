@@ -47,7 +47,6 @@ ActivityBase {
 
         signal start
         signal stop
-        signal voiceError
         signal voiceDone
 
         Component.onCompleted: {
@@ -76,14 +75,8 @@ ActivityBase {
             property bool buttonsBlocked: false
         }
 
-        onVoiceError: {
-            questionItem.visible = true;
-            repeatItem.visible = false;
-        }
-
         onStart: {
             activity.audioVoices.done.connect(voiceDone);
-            activity.audioVoices.error.connect(voiceError);
             Activity.start(items, mode);
             eventHandler.forceActiveFocus();
         }
