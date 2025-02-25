@@ -3641,7 +3641,7 @@ msgctxt "ActivityInfo|"
 msgid "Review the instructions and then drag and drop the items as specified."
 msgstr "നിർദ്ദേശങ്ങൾ പരിശോധിച്ച് അതിൽ പറഞ്ഞതുപോലെ ഇനങ്ങളെ വലിച്ചിടുക."
 
-#: activities/categorization/Categorization.qml:157
+#: activities/categorization/Categorization.qml:150
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3652,17 +3652,17 @@ msgstr ""
 "എന്നതിൽ ക്ലിക്കു ചെയ്താൽ എല്ലാ വാക്കുകൾക്കുമു‌ള്ള ചിത്രങ്ങൾ ഡൗൺലോഡ് ചെയ്യാം. ക്രോസിലോ 'ഈ "
 "സന്ദേശം വീണ്ടും കാണിക്കരുത്' എന്നതിലോ ക്ലിക്കു ചെയ്താൽ ഡെമോ പതിപ്പിൽ കളിക്കാം."
 
-#: activities/categorization/Categorization.qml:160
+#: activities/categorization/Categorization.qml:153
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "ചിത്രങ്ങൾ അപ്ഡേറ്റ് ചെയ്യുക"
 
-#: activities/categorization/Categorization.qml:161
+#: activities/categorization/Categorization.qml:154
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "ഈ സന്ദേശം വീണ്ടും കാണിക്കരുത്"
 
-#: activities/categorization/CategoryReview.qml:130
+#: activities/categorization/CategoryReview.qml:185
 msgctxt "CategoryReview|"
 msgid ""
 "Place the majority category images to the right and other images to the left"

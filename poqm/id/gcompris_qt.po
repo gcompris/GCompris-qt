@@ -3760,7 +3760,7 @@ msgstr ""
 "Tinjau ulang petunjuk dan kemudian seret serta letakkan benda sesuai yang "
 "ditentukan."
 
-#: activities/categorization/Categorization.qml:157
+#: activities/categorization/Categorization.qml:150
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3772,17 +3772,17 @@ msgstr ""
 "demo atau 'Jangan memperlihatkan dialog ini lagi' jika kamu tidak ingin "
 "melihat dialog ini lagi."
 
-#: activities/categorization/Categorization.qml:160
+#: activities/categorization/Categorization.qml:153
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Perbarui kumpulan gambar"
 
-#: activities/categorization/Categorization.qml:161
+#: activities/categorization/Categorization.qml:154
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Jangan perlihatkan dialog ini lagi"
 
-#: activities/categorization/CategoryReview.qml:130
+#: activities/categorization/CategoryReview.qml:185
 msgctxt "CategoryReview|"
 msgid ""
 "Place the majority category images to the right and other images to the left"

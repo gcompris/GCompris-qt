@@ -3541,7 +3541,7 @@ msgstr ""
 "გადაიკითხეთ ინსტრუქციები და გადაათრიეთ და დაყარეთ ელემენტები, როგორც ამას "
 "გეტყვიან."
 
-#: activities/categorization/Categorization.qml:157
+#: activities/categorization/Categorization.qml:150
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3552,17 +3552,17 @@ msgstr ""
 "ნაკრების განახლებაზე', რომ სრული სიტყვის გამოსახულებების ნაკრები გადმოწეროთ. "
 "დააწკაპუნეთ ჯვარზე, ან 'აღარ მაჩვენო ეს დიალოგი', რომ დემო ვერსია ითამაშოთ."
 
-#: activities/categorization/Categorization.qml:160
+#: activities/categorization/Categorization.qml:153
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "გამოსახულებების ნაკრების განახლება"
 
-#: activities/categorization/Categorization.qml:161
+#: activities/categorization/Categorization.qml:154
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "აღარ მაჩვენო ეს დიალოგი"
 
-#: activities/categorization/CategoryReview.qml:130
+#: activities/categorization/CategoryReview.qml:185
 msgctxt "CategoryReview|"
 msgid ""
 "Place the majority category images to the right and other images to the left"

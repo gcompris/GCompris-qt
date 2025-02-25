@@ -3671,7 +3671,7 @@ msgctxt "ActivityInfo|"
 msgid "Review the instructions and then drag and drop the items as specified."
 msgstr "Review the instructions and then drag and drop the items as specified."
 
-#: activities/categorization/Categorization.qml:157
+#: activities/categorization/Categorization.qml:150
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3682,17 +3682,17 @@ msgstr ""
 "set' to download the full word image set. Click on the cross or on 'Never "
 "show this dialogue again' to play with the demo version."
 
-#: activities/categorization/Categorization.qml:160
+#: activities/categorization/Categorization.qml:153
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Update the image set"
 
-#: activities/categorization/Categorization.qml:161
+#: activities/categorization/Categorization.qml:154
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Never show this dialogue again"
 
-#: activities/categorization/CategoryReview.qml:130
+#: activities/categorization/CategoryReview.qml:185
 msgctxt "CategoryReview|"
 msgid ""
 "Place the majority category images to the right and other images to the left"

@@ -3709,7 +3709,7 @@ msgctxt "ActivityInfo|"
 msgid "Review the instructions and then drag and drop the items as specified."
 msgstr "Lue ohjeet ja vedä ja pudota esineitä niiden mukaan."
 
-#: activities/categorization/Categorization.qml:157
+#: activities/categorization/Categorization.qml:150
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3720,17 +3720,17 @@ msgstr ""
 "painamalla Päivitä. Pelaa demoversiota painamalla ristiä tai valitse ”Älä "
 "näytä tätä ikkunaa enää”, ellet enää halua nähdä tätä ikkunaa.."
 
-#: activities/categorization/Categorization.qml:160
+#: activities/categorization/Categorization.qml:153
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Päivitä kuvajoukko"
 
-#: activities/categorization/Categorization.qml:161
+#: activities/categorization/Categorization.qml:154
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Älä näytä tätä ikkunaa enää"
 
-#: activities/categorization/CategoryReview.qml:130
+#: activities/categorization/CategoryReview.qml:185
 msgctxt "CategoryReview|"
 msgid ""
 "Place the majority category images to the right and other images to the left"

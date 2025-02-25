@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Vincenzo Reale <smart2128vr@gmail.com>
+# SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Vincenzo Reale <smart2128vr@gmail.com>
 # Paolo Gibellini <p.gibellini@gmail.com>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2024-12-16 16:58+0100\n"
+"PO-Revision-Date: 2025-02-19 09:11+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.12.0\n"
+"X-Generator: Lokalize 24.12.2\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -3751,7 +3751,7 @@ msgstr ""
 "Rivedi le istruzioni e poi trascina e rilascia gli elementi, come "
 "specificato."
 
-#: activities/categorization/Categorization.qml:157
+#: activities/categorization/Categorization.qml:150
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3763,17 +3763,17 @@ msgstr ""
 "sulla croce o «Non mostrare questa finestra in seguito» per giocare con la "
 "versione dimostrativa ."
 
-#: activities/categorization/Categorization.qml:160
+#: activities/categorization/Categorization.qml:153
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Aggiorna le immagini"
 
-#: activities/categorization/Categorization.qml:161
+#: activities/categorization/Categorization.qml:154
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Non mostrare più questa finestra"
 
-#: activities/categorization/CategoryReview.qml:130
+#: activities/categorization/CategoryReview.qml:185
 msgctxt "CategoryReview|"
 msgid ""
 "Place the majority category images to the right and other images to the left"
@@ -7645,7 +7645,7 @@ msgid ""
 "the heart of the city of Mysore. The palace was initially built by the "
 "Wodeyar kings in the 14th century."
 msgstr ""
-"Il palazzo di Mysore o palazzo del maragià di Mysore è uno dei monumenti più "
+"Il Palazzo di Mysore o palazzo del maragià di Mysore è uno dei monumenti più "
 "grandi e spettacolari dell'India. Conosciuto anche come Amba Vilas, si trova "
 "nel cuore della città di Mysore. Il palazzo fu inizialmente costruito dalla "
 "dinastia reale Wodeyar nel XIV secolo."
@@ -8024,7 +8024,7 @@ msgid ""
 "the Prussian monarchs. It is regarded as one of the most famous landmarks in "
 "Europe."
 msgstr ""
-"La porta di Brandeburgo è l'unica porta sopravvissuta della città di Berlino "
+"La Porta di Brandeburgo è l'unica porta sopravvissuta della città di Berlino "
 "e simboleggia la riunificazione di Berlino est e ovest. Costruita nel XVIII "
 "secolo, dalla porta di Brandeburgo si accede a Unter den Linden, il famoso "
 "viale di tigli che una volta conduceva direttamente al palazzo dei re "
@@ -8457,7 +8457,7 @@ msgid ""
 "red limestone stones, hence the name. The local people of Egypt called it as "
 "el-heram el-watwaat meaning the Bat Pyramid."
 msgstr ""
-"La piramide rossa era uno dei tentativi più belli e di successo del faraone "
+"La Piramide rossa era uno dei tentativi più belli e di successo del faraone "
 "Sneferu di costruzione della prima piramide con lati arrotondati del mondo "
 "durante il periodo dell'antico Egitto. L'altezza della piramide è 104 metri "
 "ne fa la quarta piramide più grande del mondo in Egitto. La piramide è stata "

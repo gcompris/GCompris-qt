@@ -3671,7 +3671,7 @@ msgid "Review the instructions and then drag and drop the items as specified."
 msgstr ""
 "Revizu la instrukciojn kaj tiam trenu kaj faligi la erojn kiel specifite."
 
-#: activities/categorization/Categorization.qml:157
+#: activities/categorization/Categorization.qml:150
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3682,17 +3682,17 @@ msgstr ""
 "por elŝuti la plenan vortbild-aron. Alklaku la krucon aŭ 'Neniam montru ĉi "
 "tiun dialogon denove' por ludi kun la demo-versio."
 
-#: activities/categorization/Categorization.qml:160
+#: activities/categorization/Categorization.qml:153
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Ĝisdatigu la bildaron"
 
-#: activities/categorization/Categorization.qml:161
+#: activities/categorization/Categorization.qml:154
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Neniam plu montru ĉi tiun dialogon"
 
-#: activities/categorization/CategoryReview.qml:130
+#: activities/categorization/CategoryReview.qml:185
 msgctxt "CategoryReview|"
 msgid ""
 "Place the majority category images to the right and other images to the left"
