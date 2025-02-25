@@ -16,7 +16,7 @@ import QtQuick.Effects
 import "../../core"
 import "click_on_letter.js" as Activity
 
-Item {
+Image {
     id: carriageItem
     property int nbCarriage
     property bool isCarriage: index <= nbCarriage
@@ -24,133 +24,130 @@ Item {
     property bool isSelected
     property alias successAnimation: successAnimation
     property alias particle: particle
+    property alias carriageBg: carriageBg
 
-    Image {
-        id: carriageImage
+    sourceSize.width: width
+    fillMode: Image.PreserveAspectFit
+    source: isCarriage ?
+                Activity.url + "carriage.svg":
+                Activity.url + "cloud.svg"
+    z: (state == 'scaled') ? 1 : -1
+
+    Rectangle {
+        id: carriageBg
+        visible: isCarriage
+        anchors.top: parent.top
+        anchors.bottom: parent.bottom
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.rightMargin: parent.width * 0.13
+        anchors.bottomMargin: parent.height * 0.325
+        radius: GCStyle.halfMargins
+        color: "#f0d578"
+        border.color: "#b98a1c"
+        border.width: GCStyle.thinBorder
+    }
+
+    Rectangle {
+        id: selector
+        visible: isSelected && items.keyNavigationMode
         width: parent.width
         height: parent.height
-        sourceSize.width: width
-        fillMode: Image.PreserveAspectFit
-        source: isCarriage ?
-                    Activity.url + "carriage.svg":
-                    Activity.url + "cloud.svg"
-        z: (state == 'scaled') ? 1 : -1
+        anchors.verticalCenter: parent.verticalCenter
+        anchors.horizontalCenter: isCarriage ?
+            carriageBg.horizontalCenter : parent.horizontalCenter
+        radius: GCStyle.halfMargins
+        color: GCStyle.highlightColor
+        border.color: GCStyle.whiteBorder
+        border.width: GCStyle.thinBorder
+    }
 
-        Rectangle {
-            id: carriageBg
-            visible: isCarriage
-            width: parent.width - 8
-            height: parent.height / 1.8
-            anchors.bottom: parent.top
-            anchors.bottomMargin: - parent.height / 1.5
-            radius: height / 10
-            color: "#f0d578"
-            border.color: "#b98a1c"
-            border.width: 3
-        }
+    GCText {
+        id: text
+        anchors.centerIn: isCarriage ? carriageBg : parent
+        text: letter
+        width: carriageBg.width
+        height: carriageBg.height
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
+        fontSizeMode: Text.Fit
+        minimumPointSize: 7
+        fontSize: largeSize
+        font.bold: true
+        style: Text.Outline
+        styleColor: GCStyle.darkerText
+        color: GCStyle.whiteText
+    }
 
-        Rectangle {
-            id: selector
-            z: 9
-            visible: isSelected && items.keyNavigationMode
-            anchors.fill: parent
-            radius: 5
-            color: "#800000ff"
-        }
+    MultiEffect {
+        anchors.fill: text
+        source: text
+        shadowEnabled: true
+        shadowBlur: 1.0
+        blurMax: 6
+        shadowHorizontalOffset: 1
+        shadowVerticalOffset: 1
+        shadowOpacity: 0.25
+    }
 
-        GCText {
-            id: text
-            anchors.horizontalCenter: isCarriage ?
-                                          carriageBg.horizontalCenter :
-                                          parent.horizontalCenter
-            anchors.verticalCenter: isCarriage ?
-                                        carriageBg.verticalCenter :
-                                        parent.verticalCenter
-            z: 11
-            text: letter
-            width: parent.width * 0.9
-            height: parent.height * 0.9
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            fontSizeMode: Text.Fit
-            minimumPointSize: 7
-            fontSize: largeSize
-            font.bold: true
-            style: Text.Outline
-            styleColor: "#2a2a2a"
-            color: "white"
-        }
+    MouseArea {
+        id: mouseArea
+        anchors.fill: parent
+        hoverEnabled: ApplicationInfo.isMobile ? false : true
 
-        MultiEffect {
-            anchors.fill: text
-            source: text
-            shadowEnabled: true
-            shadowBlur: 1.0
-            blurMax: 6
-            shadowHorizontalOffset: 1
-            shadowVerticalOffset: 1
-            shadowOpacity: 0.25
-        }
-
-        MouseArea {
-            id: mouseArea
-            anchors.fill: parent
-            hoverEnabled: ApplicationInfo.isMobile ? false : true
-
-            onClicked: {
-                if(carriageItem.clickEnabled) {
-                    items.lastSelectedIndex = train.currentIndex
-                    items.keyNavigationMode = false;
-                    items.buttonsBlocked = true;
-                    if (Activity.checkAnswer(index)) {
-                        successAnimation.restart();
-                        particle.burst(30);
-                    } else {
-                        activityBackground.moveErrorRectangle(carriageItem);
-                    }
+        onClicked: {
+            if(carriageItem.clickEnabled) {
+                items.lastSelectedIndex = train.currentIndex
+                items.keyNavigationMode = false;
+                items.buttonsBlocked = true;
+                if (Activity.checkAnswer(index)) {
+                    successAnimation.restart();
+                    particle.burst(30);
+                } else {
+                    activityBackground.moveErrorRectangle(carriageItem);
                 }
             }
         }
+    }
 
-        ParticleSystemStarLoader {
-            z: 10
-            id: particle
-            clip: false
-        }
+    ParticleSystemStarLoader {
+        z: 10
+        id: particle
+        clip: false
+    }
 
-        states: State {
-            name: "scaled"; when: mouseArea.containsMouse
-            PropertyChanges {
-                carriageItem {
-                    scale: /*carriageImage.scale * */ 1.2
-                    z: 2
-                }
+    states: State {
+        name: "scaled"; when: mouseArea.containsMouse
+        PropertyChanges {
+            carriageItem {
+                scale: 1.2
+                z: 2
             }
         }
+    }
 
-        transitions: Transition {
-            NumberAnimation { properties: "scale"; easing.type: Easing.OutCubic }
+    transitions: Transition {
+        NumberAnimation { properties: "scale"; easing.type: Easing.OutCubic }
+    }
+
+    SequentialAnimation {
+        id: successAnimation
+        NumberAnimation {
+            target: carriageItem
+            easing.type: Easing.InOutQuad
+            property: "rotation"
+            to: 20; duration: 100
         }
-
-        SequentialAnimation {
-            id: successAnimation
-            NumberAnimation {
-                target: carriageImage
-                easing.type: Easing.InOutQuad
-                property: "rotation"
-                to: 20; duration: 100
-            }
-            NumberAnimation {
-                target: carriageImage
-                easing.type: Easing.InOutQuad
-                property: "rotation"; to: -20
-                duration: 100 }
-            NumberAnimation {
-                target: carriageImage
-                easing.type: Easing.InOutQuad
-                property: "rotation"
-                to: 0; duration: 50
-            }
+        NumberAnimation {
+            target: carriageItem
+            easing.type: Easing.InOutQuad
+            property: "rotation"; to: -20
+            duration: 100 }
+        NumberAnimation {
+            target: carriageItem
+            easing.type: Easing.InOutQuad
+            property: "rotation"
+            to: 0; duration: 50
         }
     }
 }
