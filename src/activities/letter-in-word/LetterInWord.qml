@@ -48,6 +48,18 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
+        Timer {
+            id: voiceTimer
+            interval: 200
+            repeat: true
+            onTriggered: {
+                if(DownloadManager.areVoicesRegistered(activityBackground.locale)) {
+                    voiceTimer.stop();
+                    Activity.appendVoice();
+                }
+            }
+        }
+
         QtObject {
             id: items
             property Item activityPage: activity
@@ -72,6 +84,7 @@ ActivityBase {
             property alias englishFallbackDialog: englishFallbackDialog
             property string question
             property bool buttonsBlocked: false
+            property alias voiceTimer: voiceTimer
         }
 
         onStart: {
@@ -79,7 +92,10 @@ ActivityBase {
             Activity.start(items);
         }
 
-        onStop: Activity.stop()
+        onStop: {
+            voiceTimer.stop();
+            Activity.stop();
+        }
 
         onWidthChanged: {
                 animateX.restart();
