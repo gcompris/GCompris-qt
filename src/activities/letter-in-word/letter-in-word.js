@@ -112,10 +112,17 @@ function initLevel() {
     if (GCompris.ApplicationSettings.isAudioVoicesEnabled &&
             GCompris.DownloadManager.haveLocalResource(
                 GCompris.DownloadManager.getVoicesResourceForLocale(locale))) {
-        items.audioVoices.silence(500)
-        playLetter(currentLetter)
+        appendVoice();
     }
     items.buttonsBlocked = false;
+}
+
+function appendVoice() {
+    if(GCompris.DownloadManager.areVoicesRegistered(items.locale)) {
+        playLetter(currentLetter);
+    } else {
+        items.voiceTimer.start();
+    }
 }
 
 function calculateFrequency() {
