@@ -171,9 +171,8 @@ ActivityBase {
         Score {
             id: score
             anchors.top: parent.top
-            anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.left: parent.left
-            anchors.leftMargin: 10 * ApplicationInfo.ratio
+            anchors.margins: GCStyle.baseMargins
             anchors.bottom: undefined
             anchors.right: undefined
             onStop: Activity.nextSubLevel()
@@ -187,11 +186,11 @@ ActivityBase {
         BarButton {
             id: repeatItem
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
-            width: 80 * ApplicationInfo.ratio
+            width: GCStyle.bigButtonHeight
             anchors {
                 top: parent.top
                 right: parent.right
-                margins: 10
+                margins: GCStyle.baseMargins
             }
             onClicked: {
                 if(!activity.audioVoices.isPlaying()) {
@@ -215,10 +214,10 @@ ActivityBase {
         Rectangle {
             id: questionItem
             anchors.fill: repeatItem
-            border.color: "#FFFFFF"
-            border.width: 2
+            border.color: GCStyle.whiteBorder
+            border.width: GCStyle.thinBorder
             color: "#2881C3"
-            radius: 10
+            radius: GCStyle.halfMargins
             visible: false
 
             property alias text: questionText.text
@@ -226,17 +225,16 @@ ActivityBase {
             GCText {
                 id: questionText
                 anchors.centerIn: parent
-                width: repeatItem.width
-                height: repeatItem.height
+                width: questionItem.width - GCStyle.baseMargins
+                height: questionItem.height - GCStyle.halfMargins
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                z:11
                 text: ""
                 fontSizeMode: Text.Fit
-                minimumPointSize: 10
-                fontSize: width > 0 ? width : 128
+                minimumPointSize: 7
+                fontSize: width > 0 ? width : 1
                 font.bold: true
-                color: "white"
+                color: GCStyle.whiteText
             }
         }
 
@@ -263,7 +261,7 @@ ActivityBase {
             source: Activity.url + "smoke.svg"
             anchors.bottom: engine.top
             anchors.left: engine.left
-            anchors.bottomMargin: 5 * ApplicationInfo.ratio
+            anchors.bottomMargin: GCStyle.halfMargins
             sourceSize.width: engine.width
             fillMode: Image.PreserveAspectFit
         }
@@ -274,9 +272,9 @@ ActivityBase {
             anchors.left: activityBackground.left
             anchors.right: activityBackground.right
             anchors.top: repeatItem.bottom
-            anchors.leftMargin: 10 * ApplicationInfo.ratio
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
-            anchors.bottomMargin: 5 * ApplicationInfo.ratio
+            anchors.leftMargin: GCStyle.baseMargins
+            anchors.rightMargin: GCStyle.baseMargins
+            anchors.bottomMargin: GCStyle.halfMargins
         }
 
         GridView {
@@ -318,6 +316,11 @@ ActivityBase {
 
         function moveErrorRectangle(clickedItem) {
             errorRectangle.parent = clickedItem
+            if(clickedItem.isCarriage){
+                errorRectangle.anchors.centerIn = clickedItem.carriageBg
+            } else {
+                errorRectangle.anchors.centerIn = errorRectangle.parent
+            }
             errorRectangle.startAnimation()
             crashSound.play()
         }
