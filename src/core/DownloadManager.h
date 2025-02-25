@@ -280,14 +280,14 @@ public:
      *
      * @param data Relative resource path (file or directory).
      *
-     * @sa areVoicesRegistered
+     * @sa isDataRegistered
      */
     Q_INVOKABLE bool isDataRegistered(const QString &data) const;
 
     /**
      * Whether voices for the locale passed in parameter are registered.
      *
-     * @sa isDataRegistered
+     * @sa areVoicesRegistered
      */
     Q_INVOKABLE bool areVoicesRegistered(const QString &locale) const;
 
