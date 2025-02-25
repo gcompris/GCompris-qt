@@ -3677,7 +3677,7 @@ msgid "Review the instructions and then drag and drop the items as specified."
 msgstr ""
 "Les gjennom instruksjonane, og dra og slepp så bileta der dei skal vera."
 
-#: activities/categorization/Categorization.qml:157
+#: activities/categorization/Categorization.qml:150
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3688,17 +3688,17 @@ msgstr ""
 "for å lasta ned alle bileta. Trykk på krysset eller «Vis aldri dette "
 "spørsmålet meir» for å spela demoversjonen."
 
-#: activities/categorization/Categorization.qml:160
+#: activities/categorization/Categorization.qml:153
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Last ned alle bileta"
 
-#: activities/categorization/Categorization.qml:161
+#: activities/categorization/Categorization.qml:154
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Vis aldri dette spørsmålet meir"
 
-#: activities/categorization/CategoryReview.qml:130
+#: activities/categorization/CategoryReview.qml:185
 msgctxt "CategoryReview|"
 msgid ""
 "Place the majority category images to the right and other images to the left"

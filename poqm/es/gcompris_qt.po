@@ -3730,7 +3730,7 @@ msgstr ""
 "Revisa las instrucciones y luego arrastra y suelta los elementos como se "
 "indica."
 
-#: activities/categorization/Categorization.qml:157
+#: activities/categorization/Categorization.qml:150
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3742,17 +3742,17 @@ msgstr ""
 "palabras. Pulsa sobre la cruz o en «No volver a mostrar este diálogo en el "
 "futuro» para jugar con la versión de demostración."
 
-#: activities/categorization/Categorization.qml:160
+#: activities/categorization/Categorization.qml:153
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Actualizar el conjunto de imágenes"
 
-#: activities/categorization/Categorization.qml:161
+#: activities/categorization/Categorization.qml:154
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "No volver a mostrar este diálogo"
 
-#: activities/categorization/CategoryReview.qml:130
+#: activities/categorization/CategoryReview.qml:185
 msgctxt "CategoryReview|"
 msgid ""
 "Place the majority category images to the right and other images to the left"

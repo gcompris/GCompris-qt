@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Vincenzo Reale <smart2128vr@gmail.com>
+# SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Vincenzo Reale <smart2128vr@gmail.com>
 # Paolo Gibellini <p.gibellini@gmail.com>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2024-12-16 16:58+0100\n"
+"PO-Revision-Date: 2025-02-19 09:11+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.12.0\n"
+"X-Generator: Lokalize 24.12.2\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -3751,7 +3751,7 @@ msgstr ""
 "Rivedi le istruzioni e poi trascina e rilascia gli elementi, come "
 "specificato."
 
-#: activities/categorization/Categorization.qml:157
+#: activities/categorization/Categorization.qml:150
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3763,17 +3763,17 @@ msgstr ""
 "sulla croce o «Non mostrare questa finestra in seguito» per giocare con la "
 "versione dimostrativa ."
 
-#: activities/categorization/Categorization.qml:160
+#: activities/categorization/Categorization.qml:153
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Aggiorna le immagini"
 
-#: activities/categorization/Categorization.qml:161
+#: activities/categorization/Categorization.qml:154
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Non mostrare più questa finestra"
 
-#: activities/categorization/CategoryReview.qml:130
+#: activities/categorization/CategoryReview.qml:185
 msgctxt "CategoryReview|"
 msgid ""
 "Place the majority category images to the right and other images to the left"
@@ -6010,12 +6010,9 @@ msgstr "Elettricità digitale"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "Crea e simula un circuito logico digitale"
+msgstr "Crea e simula un circuito logico digitale."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -7648,7 +7645,7 @@ msgid ""
 "the heart of the city of Mysore. The palace was initially built by the "
 "Wodeyar kings in the 14th century."
 msgstr ""
-"Il palazzo di Mysore o palazzo del maragià di Mysore è uno dei monumenti più "
+"Il Palazzo di Mysore o palazzo del maragià di Mysore è uno dei monumenti più "
 "grandi e spettacolari dell'India. Conosciuto anche come Amba Vilas, si trova "
 "nel cuore della città di Mysore. Il palazzo fu inizialmente costruito dalla "
 "dinastia reale Wodeyar nel XIV secolo."
@@ -8027,7 +8024,7 @@ msgid ""
 "the Prussian monarchs. It is regarded as one of the most famous landmarks in "
 "Europe."
 msgstr ""
-"La porta di Brandeburgo è l'unica porta sopravvissuta della città di Berlino "
+"La Porta di Brandeburgo è l'unica porta sopravvissuta della città di Berlino "
 "e simboleggia la riunificazione di Berlino est e ovest. Costruita nel XVIII "
 "secolo, dalla porta di Brandeburgo si accede a Unter den Linden, il famoso "
 "viale di tigli che una volta conduceva direttamente al palazzo dei re "
@@ -8460,7 +8457,7 @@ msgid ""
 "red limestone stones, hence the name. The local people of Egypt called it as "
 "el-heram el-watwaat meaning the Bat Pyramid."
 msgstr ""
-"La piramide rossa era uno dei tentativi più belli e di successo del faraone "
+"La Piramide rossa era uno dei tentativi più belli e di successo del faraone "
 "Sneferu di costruzione della prima piramide con lati arrotondati del mondo "
 "durante il periodo dell'antico Egitto. L'altezza della piramide è 104 metri "
 "ne fa la quarta piramide più grande del mondo in Egitto. La piramide è stata "
@@ -8481,7 +8478,7 @@ msgstr "Fai clic sul luogo dove si trova la piramide specificata."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "La Città proibita"
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8496,12 +8493,21 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
+"La Città proibita, situata nel cuore di Pechino, in Cina, è un magnifico "
+"complesso di palazzi imperiali che è stato la dimora degli imperatori cinesi "
+"e il centro politico della nazione per quasi 500 anni, dalla dinastia Ming "
+"(1368-1644) alla fine della dinastia Qing (1644-1912). Costruito tra il 1406 "
+"e il 1420, questo capolavoro architettonico tentacolare si estende su 180 "
+"acri e comprende oltre 980 edifici conservati con 8.700 stanze, che mettono "
+"in mostra lo stile dei palazzi tradizionali cinesi. Circondata da un fossato "
+"e da un enorme muro, la Città proibita era un tempo inaccessibile al grande "
+"pubblico, simboleggiando il potere imperiale e l'esclusività."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "Buddha gigante di Leshan"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8516,15 +8522,22 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
+"Il Buddha gigante di Leshan, situato nella provincia del Sichuan, in Cina, è "
+"una statua colossale scolpita in una scogliera alla confluenza dei fiumi "
+"Min, Dadu e Qingyi. Con i suoi 71 metri (233 piedi), è la statua pre-moderna "
+"più alta del mondo e un sito patrimonio dell'umanità UNESCO. Costruita "
+"durante la dinastia Tang (713-803 d.C.), la statua rappresenta Maitreya, il "
+"Buddha del futuro, e fu creata per calmare le acque turbolente che "
+"minacciavano il traffico locale di barche. Progettata ingegnosamente, la "
+"statua include un sistema di drenaggio nascosto per prevenire l'erosione. La "
+"sua espressione serena e la sua intricata lavorazione artigianale la rendono "
+"un simbolo di realizzazione spirituale e artistica."
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Palazzo di Mysore"
+msgstr "Palazzo del Potala"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8539,12 +8552,21 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
+"Il Palazzo Potala, arroccato sulla Collina Rossa a Lhasa, in Tibet, è un "
+"simbolo iconico della cultura tibetana e un sito patrimonio dell'umanità "
+"UNESCO. Originariamente costruito nel VII secolo e ampliato nel XVII secolo, "
+"è stato la residenza invernale dei Dalai Lama e il centro del governo "
+"tibetano. Alto 13 piani con oltre 1.000 stanze, il palazzo combina "
+"un'intricata architettura tibetana, vivaci murales e reliquie sacre. È "
+"diviso nel Palazzo Bianco, che ospita aree amministrative, e nel Palazzo "
+"Rosso, dedicato agli studi religiosi e alla preghiera. Il Palazzo Potala è "
+"una testimonianza dell'eredità spirituale e storica del Tibet."
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "L'esercito di terracotta"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8556,12 +8578,18 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
+"L'esercito di terracotta è una collezione di migliaia di soldati, cavalli e "
+"carri in argilla a grandezza naturale sepolti con il primo imperatore "
+"cinese, Qin Shi Huang, per accompagnarlo nell'aldilà. Scoperte nel 1974 "
+"vicino a Xi'an, le figure risalgono a circa il 210 a.C. e sono celebrate per "
+"i loro incredibili dettagli, con ogni guerriero realizzato in modo unico per "
+"rappresentare i diversi ranghi e ruoli di un antico esercito cinese."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr ""
+msgstr "Pagode del Sole e della Luna"
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8576,15 +8604,22 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
+"Le Pagode del Sole e della Luna, situate a Guilin, in Cina, sono due torri "
+"gemelle iconiche che simboleggiano il patrimonio culturale e spirituale "
+"della città. Originariamente costruite durante la dinastia Tang, sono state "
+"ricostruite nel XX secolo come punti di riferimento sorprendenti sul lago "
+"Shanhu. La Pagoda del Sole, alta 41 metri, è una struttura in bronzo, la più "
+"alta del suo genere al mondo, mentre la Pagoda della Luna, alta 35 metri, è "
+"costruita con piastrelle smaltate. Queste pagode rappresentano l'armonia di "
+"yin e yang e sono collegate da un tunnel di vetro sottomarino. Illuminate di "
+"notte, sono attrazioni popolari che mettono in mostra l'architettura "
+"tradizionale cinese e l'ingegno moderno."
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Torre Eiffel"
+msgstr "Le Torri Diaolou"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8599,19 +8634,23 @@ msgid ""
 "UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
 "towers remain, offering insight into this unique architectural heritage."
 msgstr ""
+"Le torri Diaolou, che si trovano a Kaiping, nella provincia del Guangdong, "
+"in Cina, sono strutture fortificate a più piani costruite tra la fine del "
+"XIX e l'inizio del XX secolo per proteggersi dai banditi e dalle "
+"inondazioni. Mescolando stili architettonici occidentali come il romanico e "
+"il barocco con elementi tradizionali cinesi, riflettono la ricchezza e "
+"l'influenza degli emigranti cinesi all'estero. Costruite con cemento armato, "
+"queste torri simboleggiano un periodo di transizione culturale ed economica "
+"nella Cina rurale. Designate Patrimonio dell'umanità dall'UNESCO nel 2007, "
+"rimangono circa 1.800 delle 3.000 torri originali, offrendo uno spaccato di "
+"questo patrimonio architettonico unico."
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Monumenti dell'India"
+msgstr "Monumenti della Cina"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Fai clic sul luogo dove si trova il monumento."
@@ -8620,7 +8659,7 @@ msgstr "Fai clic sul luogo dove si trova il monumento."
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "Il Pantheon"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8637,12 +8676,24 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
+"Il Pantheon di Roma, in Italia, è un antico tempio iconico costruito intorno "
+"al 126 d.C. durante il regno dell'imperatore Adriano, sul sito di strutture "
+"precedenti commissionate da Marco Agrippa. Rinomato per la sua brillantezza "
+"architettonica, presenta un enorme tetto a cupola con un oculo centrale, che "
+"simboleggia il cielo, consentendo alla luce naturale di illuminare "
+"l'interno. Originariamente dedicato a tutte le divinità romane, fu in "
+"seguito convertito in una chiesa cristiana, nota come Basilica di Santa "
+"Maria e dei Martiri, nel 609 d.C. La sua cupola, la più grande cupola in "
+"cemento non armato al mondo, mostra una notevole ingegneria e simmetria, "
+"ispirando architetti per secoli. Le proporzioni armoniose del Pantheon e il "
+"suo significato storico lo rendono un capolavoro senza tempo "
+"dell'architettura classica."
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "Il duomo di Milano"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8657,15 +8708,22 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
+"Il duomo di Milano, noto anche come cattedrale di Milano, è un capolavoro "
+"gotico iconico situato nel cuore di Milano, Italia. Costruito in quasi sei "
+"secoli, è una delle più grandi cattedrali del mondo e un simbolo del "
+"patrimonio artistico e culturale di Milano. La sua intricata facciata è "
+"adornata da innumerevoli statue, guglie e doccioni, che riflettono la "
+"grandiosità dell'architettura gotica. I visitatori possono esplorare i suoi "
+"splendidi interni, caratterizzati da splendide vetrate e intricati dettagli "
+"in marmo, o salire sul tetto per una vista mozzafiato sulla città e sulle "
+"Alpi. Il Duomo è una testimonianza della ricca storia e della brillantezza "
+"architettonica dell'Italia."
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Cattedrale di Worms"
+msgstr "La cattedrale di Firenze"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8681,15 +8739,22 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
+"La cattedrale di Firenze, ufficialmente conosciuta come cattedrale di Santa "
+"Maria del Fiore, è un rinomato capolavoro di architettura gotica e "
+"rinascimentale situato a Firenze, Italia. Completata nel 1436, è famosa per "
+"la sua enorme cupola in tegole rosse progettata da Filippo Brunelleschi, che "
+"rimane una meraviglia ingegneristica e un simbolo della città. L'intricata "
+"facciata in marmo della cattedrale, aggiunta nel XIX secolo, completa i suoi "
+"interni riccamente decorati e i tesori artistici. Insieme al campanile di "
+"Giotto e al battistero di San Giovanni, fa parte di un sito patrimonio "
+"dell'umanità UNESCO, attirando milioni di visitatori ogni anno per il suo "
+"significato storico, culturale e architettonico."
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "La torre di Hanoi"
+msgstr "La torre pendente di Pisa"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8704,12 +8769,22 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
+"La torre pendente di Pisa, situata nella città italiana di Pisa, è una "
+"meraviglia architettonica di fama mondiale. Costruita come campanile "
+"indipendente per la cattedrale della città, è famosa per la sua inclinazione "
+"involontaria, causata da un terreno di fondazione instabile. Iniziata nel "
+"1173, la costruzione della torre durò quasi 200 anni, durante i quali furono "
+"fatti sforzi per stabilizzarne l'inclinazione. Alta circa 56 metri (183 "
+"piedi), la torre è in stile romanico con otto piani, tra cui una camera "
+"campanaria, ornata da colonne e archi finemente intagliati. Riconosciuta "
+"come patrimonio mondiale dell'UNESCO, rimane un simbolo di resilienza e "
+"ingegnosità."
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr ""
+msgstr "La basilica di San Marco"
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -8725,12 +8800,23 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
+"La basilica di San Marco, situata a Venezia, in Italia, è un capolavoro "
+"iconico dell'architettura bizantina e uno dei monumenti più famosi della "
+"città. Originariamente costruita nel 828 per ospitare le reliquie di San "
+"Marco Evangelista, fu ricostruita nella sua forma attuale nel XI secolo. "
+"Nota per il suo aspetto opulento, la basilica presenta una miscela di "
+"influenze orientali e occidentali, evidenti nelle sue cinque cupole, nei "
+"mosaici intricati e nella facciata ornata da statue e intagli. L'interno è "
+"riccamente decorato con mosaici dorati e pavimenti in marmo, che mettono in "
+"mostra la ricchezza e il potere della Repubblica di Venezia. Adiacente a "
+"Piazza San Marco, rimane un simbolo del patrimonio storico, culturale e "
+"religioso di Venezia."
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr ""
+msgstr "Pompei"
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -8746,31 +8832,32 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
+"Pompei era un'antica città romana situata nei pressi dell'odierna Napoli, in "
+"Italia, notoriamente conservata dopo essere stata sepolta dall'eruzione del "
+"Vesuvio nel 79 d.C. L'eruzione scatenò una combinazione mortale di cenere, "
+"pomice e flussi piroclastici, che travolsero la città e i suoi abitanti, "
+"preservando edifici, manufatti e persino resti umani in modo incredibilmente "
+"dettagliato. Gli scavi di Pompei hanno fornito preziose informazioni sulla "
+"vita quotidiana, l'architettura e la società romana, rivelando una città con "
+"strade, case, bagni pubblici e templi ben pianificati. Il sito è ora un sito "
+"patrimonio mondiale dell'UNESCO e rimane una delle più importanti scoperte "
+"archeologiche della storia."
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Monumenti dell'India"
+msgstr "Monumenti d'Italia"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Fai clic sul luogo dove si trova il monumento."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Maiuscola e minuscola"
+msgstr "Castello di Himeji"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -8783,12 +8870,20 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
+"Himeji-jo è il miglior esempio sopravvissuto di architettura di castello "
+"giapponese dei primi anni del XVII secolo, composto da 83 edifici con "
+"sistemi di difesa altamente sviluppati e ingegnosi dispositivi di protezione "
+"risalenti all'inizio del periodo degli shogun. È un capolavoro di "
+"costruzione in legno, che unisce la funzionalità all'aspetto estetico, sia "
+"nel suo aspetto elegante unificato dalle pareti di terra intonacate di "
+"bianco, sia nella sottigliezza delle relazioni tra le masse dell'edificio e "
+"i molteplici strati del tetto."
 
 #: activities/explore_monuments/resource/board/board9.qml:28
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr ""
+msgstr "Parco memoriale della pace di Hiroshima"
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -8804,12 +8899,22 @@ msgid ""
 "a solemn space for reflection, honoring the lives lost and advocating for "
 "global peace."
 msgstr ""
+"Il parco memoriale della pace di Hiroshima è un simbolo di pace e un "
+"promemoria delle conseguenze devastanti della guerra. Situato a Hiroshima, "
+"in Giappone, il parco commemora le vittime del bombardamento atomico del 6 "
+"agosto 1945. Il parco ospita diversi monumenti, tra cui l'iconico Atomic "
+"Bomb Dome, che un tempo era un edificio governativo e ora è un sito "
+"patrimonio dell'umanità dell'UNESCO. Il parco ospita anche il museo "
+"memoriale della pace di Hiroshima, che informa i visitatori sugli eventi che "
+"circondano il bombardamento e promuove un messaggio di pace, non violenza e "
+"l'importanza del disarmo nucleare. Funge da solenne spazio di riflessione, "
+"onorando le vite perse e sostenendo la pace globale."
 
 #: activities/explore_monuments/resource/board/board9.qml:39
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr ""
+msgstr "Santuario Arakura Fuji Sengen"
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -8825,12 +8930,23 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
+"Il santuario fu fondato nel 705 per consacrare la divinità del sito. Dopo la "
+"grande eruzione del Monte Fuji nel 807, l'imperatore inviò un inviato "
+"imperiale a questo santuario per eseguire un rituale per fermare l'eruzione. "
+"Si dice che durante il periodo degli Stati Combattenti, quando Takeda "
+"Nobutora, il padre di un famoso signore della guerra Takeda Shingen, "
+"combatté con la famiglia Hojo, si accampò qui, pregò per la vittoria e vinse "
+"la battaglia. Quindi dedicò la sua spada a questo santuario. Oggi, la gente "
+"del posto e coloro che vengono da lontano visitano il santuario per "
+"allontanare il male, pregare per la felicità della famiglia e un parto "
+"sicuro. In primavera, i ciliegi in fiore sbocciano e la folla si riunisce "
+"per godersi la vista mozzafiato del Monte Fuji."
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr ""
+msgstr "Castello di Shuri - Okinawa"
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -8846,19 +8962,25 @@ msgid ""
 "much of the castle was lost in a fire in 2019, but efforts to restore it are "
 "ongoing, reflecting its enduring importance to Okinawa's heritage."
 msgstr ""
+"Il castello di Shuri, situato a Naha, Okinawa, Giappone, è un sito "
+"patrimonio dell'umanità UNESCO e un simbolo della ricca storia culturale del "
+"regno di Ryukyu. Originariamente costruito nel XIV secolo, il castello è "
+"stato il centro politico, economico e culturale del regno per secoli. "
+"Rinomato per la sua caratteristica fusione di stili architettonici cinese e "
+"giapponese, il castello di Shuri presenta strutture laccate color vermiglio, "
+"decorazioni ornate e una posizione dominante in cima alla collina. Sebbene "
+"distrutto durante la seconda guerra mondiale, è stato meticolosamente "
+"ricostruito ed è diventato un'importante attrazione turistica. Tragicamente, "
+"gran parte del castello è andata perduta in un incendio nel 2019, ma gli "
+"sforzi per restaurarlo sono in corso, a dimostrazione della sua importanza "
+"duratura per il patrimonio di Okinawa."
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Monumenti della Francia"
+msgstr "Monumenti del Giappone"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Fai clic sul luogo dove si trova il monumento."
@@ -17668,12 +17790,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "Il cappello del mago"
+msgstr "Il cappello del mago (sottrazione)"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -17765,12 +17884,9 @@ msgstr "%1x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "Il cappello del mago"
+msgstr "Il cappello del mago (addizione)"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17

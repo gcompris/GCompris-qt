@@ -3729,7 +3729,7 @@ msgstr ""
 "Δες τις οδηγίες και έπειτα μετακίνησε και τοποθέτησε τα αντικείμενα όπως "
 "πρέπει."
 
-#: activities/categorization/Categorization.qml:157
+#: activities/categorization/Categorization.qml:150
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3741,17 +3741,17 @@ msgstr ""
 "παίξεις με την έκδοση επίδειξης, ή το 'Να μην εμφανιστεί αυτό το παράθυρο "
 "ξανά' αν δεν θέλεις να ξαναδείς αυτό το παράθυρο."
 
-#: activities/categorization/Categorization.qml:160
+#: activities/categorization/Categorization.qml:153
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Ενημέρωση του συνόλου των εικόνων"
 
-#: activities/categorization/Categorization.qml:161
+#: activities/categorization/Categorization.qml:154
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Να μην εμφανιστεί αυτό το παράθυρο ξανά."
 
-#: activities/categorization/CategoryReview.qml:130
+#: activities/categorization/CategoryReview.qml:185
 msgctxt "CategoryReview|"
 msgid ""
 "Place the majority category images to the right and other images to the left"

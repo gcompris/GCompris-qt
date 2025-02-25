@@ -3696,7 +3696,7 @@ msgid "Review the instructions and then drag and drop the items as specified."
 msgstr ""
 "Gra hervez an urzhioù ha rikl neuze an traoù ha laosk anezhe evel goulennet."
 
-#: activities/categorization/Categorization.qml:157
+#: activities/categorization/Categorization.qml:150
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3708,17 +3708,17 @@ msgstr ""
 "gant ar stumm diskouez nemetken pe war 'Arabat diskouez ar c'hinnig-mañ ken' "
 "ma ne fell ket dit gwelout ar c'hinnig-mañ adarre."
 
-#: activities/categorization/Categorization.qml:160
+#: activities/categorization/Categorization.qml:153
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Adnevesaat ar skeudennoù"
 
-#: activities/categorization/Categorization.qml:161
+#: activities/categorization/Categorization.qml:154
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Arabat diskouez ar c'hinnig-mañ ken"
 
-#: activities/categorization/CategoryReview.qml:130
+#: activities/categorization/CategoryReview.qml:185
 msgctxt "CategoryReview|"
 msgid ""
 "Place the majority category images to the right and other images to the left"

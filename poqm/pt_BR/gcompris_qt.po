@@ -3766,7 +3766,7 @@ msgid "Review the instructions and then drag and drop the items as specified."
 msgstr ""
 "Veja as instruções e então arraste os itens para os locais especificados"
 
-#: activities/categorization/Categorization.qml:157
+#: activities/categorization/Categorization.qml:150
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3778,18 +3778,18 @@ msgstr ""
 "imagens das palavras. Clique no X ou em \"Não me pergunte mais sobre isso\" "
 "para usar somente o conjunto de demonstração."
 
-#: activities/categorization/Categorization.qml:160
+#: activities/categorization/Categorization.qml:153
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Atualizar o conjunto de imagens"
 
 # Frederico: A tradução está diferente do original para tentar adequar a um linguagem que seja mais inteligível para crianças.
-#: activities/categorization/Categorization.qml:161
+#: activities/categorization/Categorization.qml:154
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Não me pergunte mais sobre isso"
 
-#: activities/categorization/CategoryReview.qml:130
+#: activities/categorization/CategoryReview.qml:185
 msgctxt "CategoryReview|"
 msgid ""
 "Place the majority category images to the right and other images to the left"

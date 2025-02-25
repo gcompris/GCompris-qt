@@ -3801,7 +3801,7 @@ msgstr ""
 "Təlimata nəzər salın və sonra göstərildiyi kimi elementlərin yerini "
 "dəyişdirin."
 
-#: activities/categorization/Categorization.qml:157
+#: activities/categorization/Categorization.qml:150
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3814,17 +3814,17 @@ msgstr ""
 "pəncərə bir daha göstərilməsin\" düyməsinə vuraraq dialoq pəncərəsini "
 "bağlaya bilərsiniz."
 
-#: activities/categorization/Categorization.qml:160
+#: activities/categorization/Categorization.qml:153
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Şəkillər dəstini yükləyin"
 
-#: activities/categorization/Categorization.qml:161
+#: activities/categorization/Categorization.qml:154
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Bu pəncərə bir daha göstərilməsin"
 
-#: activities/categorization/CategoryReview.qml:130
+#: activities/categorization/CategoryReview.qml:185
 msgctxt "CategoryReview|"
 msgid ""
 "Place the majority category images to the right and other images to the left"

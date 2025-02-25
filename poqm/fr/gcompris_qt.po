@@ -3770,7 +3770,7 @@ msgstr ""
 "Sélectionne une image ou un texte puis dépose-la dans la zone désignée par "
 "la consigne."
 
-#: activities/categorization/Categorization.qml:157
+#: activities/categorization/Categorization.qml:150
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3782,17 +3782,17 @@ msgstr ""
 "jouer avec la version de démonstration, appuie sur la croix ou sur « Ne plus "
 "afficher cette fenêtre » si tu ne veux plus voir ce dialogue à nouveau."
 
-#: activities/categorization/Categorization.qml:160
+#: activities/categorization/Categorization.qml:153
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Mettre à jour l'ensemble d'images"
 
-#: activities/categorization/Categorization.qml:161
+#: activities/categorization/Categorization.qml:154
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Ne plus afficher cette fenêtre"
 
-#: activities/categorization/CategoryReview.qml:130
+#: activities/categorization/CategoryReview.qml:185
 msgctxt "CategoryReview|"
 msgid ""
 "Place the majority category images to the right and other images to the left"

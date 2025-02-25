@@ -3826,7 +3826,7 @@ msgctxt "ActivityInfo|"
 msgid "Review the instructions and then drag and drop the items as specified."
 msgstr "निर्देशों की समीक्षा करें और फिर वस्तुओं को निर्दिष्ट के अनुसार खींचें और छोडें। "
 
-#: activities/categorization/Categorization.qml:157
+#: activities/categorization/Categorization.qml:150
 #, fuzzy
 #| msgctxt "Categorization|"
 #| msgid ""
@@ -3843,17 +3843,17 @@ msgstr ""
 "दबाएं। डेमो संस्करण के साथ खेलने के लिए क्रॉस दबाएं या 'इस संवाद को बाद में कभी नहीं "
 "दिखाएं' को दबाएं यदि आप फिर से इस संवाद को कभी नहीं देखना चाहते हैं। "
 
-#: activities/categorization/Categorization.qml:160
+#: activities/categorization/Categorization.qml:153
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "छवि सेट अद्यतन करें"
 
-#: activities/categorization/Categorization.qml:161
+#: activities/categorization/Categorization.qml:154
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "संवाद को फिर कभी नहीं दिखाएँ"
 
-#: activities/categorization/CategoryReview.qml:130
+#: activities/categorization/CategoryReview.qml:185
 msgctxt "CategoryReview|"
 msgid ""
 "Place the majority category images to the right and other images to the left"
