@@ -55,6 +55,18 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
+        Timer {
+            id: voiceTimer
+            interval: 200
+            repeat: true
+            onTriggered: {
+                if(DownloadManager.areVoicesRegistered(background.locale)) {
+                    voiceTimer.stop();
+                    Activity.appendVoices();
+                }
+            }
+        }
+
         QtObject {
             id: items
             property Item activityPage: activity
@@ -73,6 +85,7 @@ ActivityBase {
             property alias eventHandler: eventHandler
             property alias errorRectangle: errorRectangle
             property bool buttonsBlocked: false
+            property alias voiceTimer: voiceTimer
         }
 
         onStart: {
@@ -81,7 +94,10 @@ ActivityBase {
             eventHandler.forceActiveFocus();
         }
 
-        onStop: Activity.stop()
+        onStop: {
+            voiceTimer.stop();
+            Activity.stop();
+        }
 
         Item {
             id: eventHandler

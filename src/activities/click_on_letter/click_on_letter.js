@@ -27,6 +27,7 @@ var questions;
 var answers;
 var items;
 var mode;
+var locale;
 
 function start(_items, _mode)
 {
@@ -36,9 +37,8 @@ function start(_items, _mode)
     mode = _mode;
 
     // register the voices for the locale
-    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
+    locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
     GCompris.DownloadManager.updateResource(GCompris.GCompris.VOICES, {"locale": locale})
-
     loadLevels();
     items.score.currentSubLevel = 0;
     numberOfLevel = levels.length;
@@ -65,7 +65,6 @@ function validateLevels(levels)
 function loadLevels()
 {
     var ret;
-    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
     var filename = GCompris.ApplicationInfo.getLocaleFilePath(url + "levels-" + locale + ".json");
     levels = items.parser.parseFromUrl(filename);
     if (levels == null) {
@@ -126,16 +125,13 @@ function initLevel() {
         }
     }
 
-    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale);
     currentLetter = questions.split("|")[items.score.currentSubLevel];
     // Maybe we will display it if sound fails
     items.questionItem.text = currentLetter;
     if (GCompris.ApplicationSettings.isAudioVoicesEnabled &&
             GCompris.DownloadManager.haveLocalResource(
                 GCompris.DownloadManager.getVoicesResourceForLocale(locale))) {
-        items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/"+locale+"/misc/click_on_letter.$CA"))
-        items.audioVoices.silence(100)
-        playLetter(currentLetter)
+        appendVoices(locale);
     } else {
         // no sound -> show question
         items.questionItem.visible = true;
@@ -144,8 +140,17 @@ function initLevel() {
     items.buttonsBlocked = false;
 }
 
+function appendVoices() {
+    if(GCompris.DownloadManager.areVoicesRegistered(items.locale)) {
+        items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/"+locale+"/misc/click_on_letter.$CA"));
+        items.audioVoices.silence(100);
+        playLetter(currentLetter);
+    } else {
+        items.voiceTimer.start();
+    }
+}
+
 function playLetter(letter) {
-    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
     var letterAudio = GCompris.ApplicationInfo.getAudioFilePath(
         "voices-$CA/"+locale+"/alphabet/" + Core.getSoundFilenamForChar(letter))
      if(items.audioVoices.append(letterAudio)) {
