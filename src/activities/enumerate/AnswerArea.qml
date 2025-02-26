@@ -18,24 +18,42 @@ Rectangle {
     id: answerBackground
     width: activityBackground.answersWidth
     height: width * 0.5
-    radius: activityBackground.baseMargins
+    radius: GCStyle.halfMargins
+    property bool isSelected: false
+    property alias itemText: userEntry.text
+    property int itemIndex: 0
+
     border {
-        width: activeFocus && state === "default" ?  3 * ApplicationInfo.ratio : Math.max(1, ApplicationInfo.ratio)
-        color: "#373737"
+        width: isSelected && state === "default" ?  GCStyle.midBorder : GCStyle.thinnestBorder
     }
 
     states: [
         State {
             name: "badAnswer"
-            PropertyChanges { answerBackground { color: "#D94444" } } //red
+            PropertyChanges {
+                answerBackground {
+                    color: GCStyle.badAnswer  //red
+                    border.color: GCStyle.darkBorder
+                }
+            }
         },
         State {
             name: "goodAnswer"
-            PropertyChanges { answerBackground { color: "#54ea54"} } //green
+            PropertyChanges {
+                answerBackground {
+                    color: "#54ea54" //green
+                    border.color: GCStyle.whiteBorder
+                }
+            }
         },
         State {
             name: "default"
-            PropertyChanges { answerBackground { color: activeFocus ? "#6bcbde" : "#fff"} } //lightblue, white
+            PropertyChanges {
+                answerBackground {
+                    color: isSelected ? GCStyle.highlightColor : GCStyle.paperWhite //lightblue, white
+                    border.color: GCStyle.darkBorder
+                }
+            }
         }
     ]
 
@@ -49,8 +67,6 @@ Rectangle {
     // True when the value is entered correctly
     property bool valid: false
 
-    Component.onCompleted: Activity.registerAnswerItem(answerBackground)
-
     onValidChanged: valid ? winSound.play() : null
 
     // A top gradient
@@ -61,7 +77,8 @@ Rectangle {
         visible: answerBackground.state === "default"
         gradient: Gradient {
                 GradientStop { position: 0.0; color: valid ? "#54ea54" : "#CCFFFFFF" }
-                GradientStop { position: 0.5; color: valid ? "#54ea54" : "#80FFFFFF" }
+                GradientStop { position: 0.2; color: valid ? "#54ea54" : "#80FFFFFF" }
+                GradientStop { position: 0.8; color: valid ? "#54ea54" : "#80FFFFFF" }
                 GradientStop { position: 1.0; color: valid ? "#54ea54" : "#00000000" }
         }
     }
@@ -72,7 +89,7 @@ Rectangle {
         anchors.fill: parent
         enabled: !items.buttonsBlocked
         onClicked: {
-            Activity.registerAnswerItem(answerBackground)
+            Activity.selectItem(answerBackground.itemIndex)
             Activity.resetAnswerAreaColor();
         }
     }
@@ -81,40 +98,13 @@ Rectangle {
         id: img
         anchors {
             left: parent.left
-            leftMargin: activityBackground.baseMargins
+            leftMargin: GCStyle.baseMargins
             verticalCenter: parent.verticalCenter
         }
-        height: parent.height - activityBackground.baseMargins
+        height: parent.height - GCStyle.baseMargins
         width: height
         source: imgPath
         fillMode: Image.PreserveAspectFit
-    }
-
-    Keys.onPressed: (event) => {
-        if(!items.buttonsBlocked)
-            appendText(event.text);
-    }
-
-    function appendText(text: string) {
-        var number = parseInt(text)
-        if(isNaN(number))
-            return
-
-        if(userEntry.text === "?") {
-            userEntry.text = ""
-        }
-
-        if(Activity.lockKeyboard === false) {
-            userEntry.text = text;
-            Activity.resetAnswerAreaColor();
-        }
-        if(Activity.answersMode === 1 && Activity.lockKeyboard === false) {
-            valid = Activity.setUserAnswer(imgPath, parseInt(userEntry.text));
-            Activity.checkAnswersAuto();
-        } else {
-            Activity.setUserAnswer(imgPath, parseInt(userEntry.text));
-            Activity.enableOkButton();
-        }
     }
 
     GCText {
@@ -124,14 +114,14 @@ Rectangle {
             right: parent.right
             top: parent.top
             bottom: parent.bottom
-            margins: activityBackground.baseMargins
+            margins: GCStyle.baseMargins
         }
         text: "?"
-        color: "black"
+        color: GCStyle.darkText
         fontSize: 28
         fontSizeMode: Text.Fit
         style: Text.Outline
-        styleColor: "white"
+        styleColor: GCStyle.whiteText
     }
 
 }
