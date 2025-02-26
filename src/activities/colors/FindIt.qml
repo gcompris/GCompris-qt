@@ -114,15 +114,15 @@ ActivityBase {
         Rectangle {
             id: questionItem
             anchors.top: parent.top
-            anchors.topMargin: 5 * ApplicationInfo.ratio
+            anchors.topMargin: GCStyle.baseMargins
             anchors.horizontalCenter: parent.horizontalCenter
-            width: questionText.contentWidth + 20 * ApplicationInfo.ratio
-            height: Math.max(10 * ApplicationInfo.ratio, questionText.contentHeight + 5 * ApplicationInfo.ratio)
-            radius: 5 * ApplicationInfo.ratio
-            color: "#E2E2E2"
-            border.color: "#373737"
-            border.width: 2 * ApplicationInfo.ratio
-            opacity: 0.01
+            width: questionText.contentWidth + 2 * GCStyle.baseMargins
+            height: questionText.contentHeight + GCStyle.halfMargins
+            radius: GCStyle.halfMargins
+            color: GCStyle.paperWhite
+            border.color: GCStyle.darkBorder
+            border.width: GCStyle.thinBorder
+            opacity: 0
 
             function initQuestion() {
                 questionText.text = Activity.getCurrentTextQuestion()
@@ -149,12 +149,12 @@ ActivityBase {
             }
 
             // fade-out anim only before bonus start
-            NumberAnimation { id: fadeOutAnim; target: questionItem; property: "opacity"; to: 0.01; duration: 300 }
+            NumberAnimation { id: fadeOutAnim; target: questionItem; property: "opacity"; to: 0; duration: 300 }
 
             // fade-out + init sequence after first question of a level
             SequentialAnimation {
                 id: nextAnim
-                NumberAnimation { target: questionItem; property: "opacity"; to: 0.01; duration: 300 }
+                NumberAnimation { target: questionItem; property: "opacity"; to: 0; duration: 300 }
                 ScriptAction { script: initAnim.restart() }
             }
 
@@ -162,22 +162,32 @@ ActivityBase {
                 id: questionText
                 anchors.centerIn: parent
                 fontSize: largeSize
-                width: activityBackground.width * 0.9
+                width: activityBackground.width - GCStyle.baseMargins * 4
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WordWrap
                 font.weight: Font.DemiBold
-                color: "#373737"
+                color: GCStyle.darkText
             }
+        }
+
+        Item {
+            id: containerArea
+            anchors.top: questionItem.bottom
+            anchors.topMargin: GCStyle.baseMargins
+            anchors.bottom: score.top
+            anchors.horizontalCenter: activityBackground.horizontalCenter
+            width: activityBackground.width - (score.width + GCStyle.baseMargins * 2) * 2
         }
 
         GridView {
             id: container
             model: containerModel
-            anchors.top: questionItem.bottom
-            anchors.topMargin: 10 * ApplicationInfo.ratio
-            anchors.bottom: score.top
-            anchors.horizontalCenter: activityBackground.horizontalCenter
-            width: activityBackground.width - score.width * 2
+            width: containerArea.width
+            height: containerArea.height
+            anchors.horizontalCenter: containerArea.horizontalCenter
+            anchors.verticalCenter: containerArea.verticalCenter
+            anchors.horizontalCenterOffset: (width - contentItem.childrenRect.width) * 0.5
+            anchors.verticalCenterOffset: (height - contentItem.childrenRect.height) * 0.5
             interactive: false
             cellWidth: itemWidth
             cellHeight: itemWidth
@@ -190,26 +200,22 @@ ActivityBase {
                 source: model.image
                 audioSrc: model.audio ? model.audio : ""
                 question: model.text
-                sourceSize.height: container.itemWidth * 0.9
-                sourceSize.width: container.itemWidth * 0.9
+                width: container.itemWidth * 0.9
             }
             add: Transition {
-                PathAnimation {
-                    path: Path {
-                        PathCurve { x: activityBackground.width / 3}
-                        PathCurve { y: activityBackground.height / 3}
-                        PathCurve {}
-                    }
-                    easing.type: Easing.InOutQuad
-                    duration: 2000
+                NumberAnimation {
+                    properties: "x, y"
+                    from: 0
+                    easing.type: Easing.OutCubic
+                    duration: 1000
                 }
             }
             highlight: Rectangle {
                 width: container.cellWidth
                 height: container.cellHeight
                 color:  "#AAFFFFFF"
-                border.width: 3
-                border.color: "black"
+                border.width: GCStyle.thinBorder
+                border.color: GCStyle.darkBorder
                 visible: activityBackground.keyboardMode
                 Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
                 Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
@@ -236,13 +242,13 @@ ActivityBase {
         BarButton {
             id: repeatItem
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
-            height: 80 * ApplicationInfo.ratio
+            height: GCStyle.bigButtonHeight
             z: bar.z + 1
             visible: items.audioOk
             anchors {
                 bottom: bar.top
                 right: parent.right
-                margins: 10 * ApplicationInfo.ratio
+                margins: GCStyle.baseMargins
             }
             onClicked: if (!activity.audioVoices.isPlaying() && !items.objectSelected)
                            questionItem.initQuestion()
@@ -251,11 +257,9 @@ ActivityBase {
         Score {
             id: score
             anchors.bottom: bar.top
-            anchors.right: bar.right
+            anchors.right: undefined
             anchors.left: parent.left
-            anchors.bottomMargin: 10 * ApplicationInfo.ratio
-            anchors.leftMargin: 10 * ApplicationInfo.ratio
-            anchors.rightMargin: 0
+            anchors.margins: GCStyle.baseMargins
         }
 
         Bonus {
