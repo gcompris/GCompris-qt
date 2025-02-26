@@ -29,7 +29,7 @@ Item {
         width: parent.width
         GCComboBox {
             id: modeBox
-            model: availableModes
+            model: activityConfiguration.availableModes
             boxBackground: activityConfiguration.configBackground
             label: qsTr("Select a clock system")
         }
