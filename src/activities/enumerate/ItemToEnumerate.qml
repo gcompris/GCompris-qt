@@ -10,10 +10,12 @@
 */
 import QtQuick 2.12
 import core 1.0
+
+import "../../core"
 import "enumerate.js" as Activity
 
 Image {
-    width: Math.min(70 * ApplicationInfo.ratio, Math.min(layoutArea.width, layoutArea.height) * 0.2)
+    width: Math.min(GCStyle.bigButtonHeight, Math.min(layoutArea.width, layoutArea.height) * 0.2)
     height: width
     sourceSize.width: width
     sourceSize.height: height

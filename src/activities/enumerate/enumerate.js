@@ -37,8 +37,6 @@ var numberOfTypes = itemIcons.length;
 var userAnswers = new Array();
 var answerToFind = new Array();
 var answersMode;
-var lockKeyboard = true;
-
 
 // We keep a globalZ across all items. It is increased on each
 // item selection to put it on top
@@ -60,7 +58,7 @@ function stop() {
 function initLevel() {
     if(items.levels) {
         items.instructionText = items.levels[items.currentLevel].objective;
-        items.instruction.opacity = 0.8;
+        items.instruction.opacity = 0.9;
     }
     items.score.currentSubLevel = 0;
     numberOfItemType = dataset[items.currentLevel].numberOfItemType;
@@ -109,7 +107,8 @@ function checkAnswersAuto() {
 }
 
 function checkAnswers() {
-    items.okButton.enabled = false;
+    items.okButtonBlocked = true;
+    items.buttonsBlocked = true;
     var i = 0;
     var isAnswerGood =  true;
     for (var key in answerToFind) {
@@ -123,7 +122,6 @@ function checkAnswers() {
     }
 
     if(isAnswerGood) {
-        items.buttonsBlocked = true;
         items.score.currentSubLevel += 1;
         items.score.playWinAnimation();
         items.goodAnswerSound.play();
@@ -142,18 +140,11 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-var currentAnswerItem;
-
-function registerAnswerItem(item) {
-    currentAnswerItem = item;
-    item.forceActiveFocus();
-}
-
 function initSubLevel() {
     items.errorRectangle.resetState()
     cleanUp();
     itemIcons = Core.shuffle(itemIcons);
-    items.okButton.enabled = false;
+    items.okButtonBlocked = true;
     var enumItems = new Array();
     var types = new Array();
     for(var type = 0; type < numberOfItemType; type++) {
@@ -166,14 +157,13 @@ function initSubLevel() {
     }
     items.answerColumn.model = types;
     items.itemListModel = enumItems;
-    lockKeyboard = false;
     items.buttonsBlocked = false;
 }
 
 function nextSubLevel() {
-    lockKeyboard = true;
+    items.buttonsBlocked = true;
     if( items.score.currentSubLevel >= maxSubLevel) {
-        items.okButton.enabled = false;
+        items.okButtonBlocked = true;
         items.bonus.good("smiley");
     }
     else
@@ -185,11 +175,25 @@ function enableOkButton() {
         if(typeof userAnswers[key] == 'undefined')
             return;
     }
-    items.okButton.enabled = true;
+    items.okButtonBlocked = false;
 }
 
-function focusAnswerInput() {
-    if(items && items.answerColumn) {
-        registerAnswerItem(items.answerColumn.itemAt(items.answerColumn.currentIndex));
+function selectItem(itemIndex) {
+    items.answerColumn.currentIndex = itemIndex;
+}
+
+function appendText(text, currentItem) {
+    var number = parseInt(text)
+    if(isNaN(number))
+        return
+
+    currentItem.itemText = text;
+
+    if(answersMode === 1) {
+        currentItem.valid = setUserAnswer(currentItem.imgPath, number);
+        checkAnswersAuto();
+    } else {
+        setUserAnswer(currentItem.imgPath, number);
+        enableOkButton();
     }
 }

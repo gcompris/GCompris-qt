@@ -21,14 +21,6 @@ ActivityBase {
     onStart: { focus: true }
     onStop: {}
 
-    // When opening a dialog, it steals the focus and re set it to the activity.
-    // We need to set it back to the answerColumn item in order to have key events.
-    onFocusChanged: {
-        if(focus) {
-            Activity.focusAnswerInput();
-        }
-    }
-
     pageComponent: Image {
         id: activityBackground
         anchors.fill: parent
@@ -38,16 +30,19 @@ ActivityBase {
         source: Activity.url + "background.svg"
         sourceSize.width: width
         sourceSize.height: height
+        focus: true
 
         readonly property int answersWidth: Math.min(140 * ApplicationInfo.ratio, activityBackground.width * 0.25)
-        readonly property int baseMargins: 10 * ApplicationInfo.ratio
 
         Component.onCompleted: {
             dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
-        onStart: { Activity.start(items); keyboard.populate(); }
+        onStart: {
+            Activity.start(items);
+            keyboard.populate();
+        }
         onStop: { Activity.stop() }
 
         //instruction rectangle
@@ -55,23 +50,23 @@ ActivityBase {
             id: instruction
             anchors.horizontalCenter: instructionTxt.horizontalCenter
             anchors.top: parent.top
-            anchors.topMargin: activityBackground.baseMargins
-            height: instructionTxt.contentHeight + activityBackground.baseMargins * 2
-            width: instructionTxt.contentWidth + activityBackground.baseMargins * 2
-            opacity: 0.8
+            anchors.topMargin: GCStyle.baseMargins
+            height: instructionTxt.contentHeight + GCStyle.baseMargins
+            width: instructionTxt.contentWidth + GCStyle.baseMargins * 2
+            opacity: 0.9
             visible: items.levels
-            radius: activityBackground.baseMargins
-            border.width: 2
+            radius: GCStyle.halfMargins
+            border.width: GCStyle.thinnestBorder
             z: instruction.opacity === 0 ? -10 : 10
-            border.color: "#DDD"
-            color: "#373737"
+            border.color: GCStyle.whiteBorder
+            color: GCStyle.darkBg
 
             Behavior on opacity { PropertyAnimation { duration: 200 } }
 
             //shows/hides the Instruction
             MouseArea {
                 anchors.fill: parent
-                onClicked: instruction.opacity = instruction.opacity == 0 ? 0.8 : 0
+                onClicked: instruction.opacity = instruction.opacity == 0 ? 0.9 : 0
             }
         }
 
@@ -81,29 +76,19 @@ ActivityBase {
                 top: parent.top
                 right: parent.right
                 left: answer.right
-                margins: activityBackground.baseMargins * 2
+                margins: GCStyle.baseMargins * 2
+                topMargin: GCStyle.baseMargins * 1.5
             }
             height: 60 * ApplicationInfo.ratio
             opacity: instruction.opacity
             z: instruction.z
             fontSize: smallSize
             fontSizeMode: Text.Fit
-            color: "white"
+            color: GCStyle.whiteText
             text: items.instructionText
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignTop
             wrapMode: TextEdit.WordWrap
-        }
-
-        Keys.onDownPressed: {
-            if(++answerColumn.currentIndex >= answerColumn.count)
-                answerColumn.currentIndex = 0
-            Activity.registerAnswerItem(answerColumn.itemAt(answerColumn.currentIndex))
-        }
-        Keys.onUpPressed: {
-            if(--answerColumn.currentIndex < 0)
-                answerColumn.currentIndex = answerColumn.count - 1
-            Activity.registerAnswerItem(answerColumn.itemAt(answerColumn.currentIndex))
         }
 
         QtObject {
@@ -111,7 +96,6 @@ ActivityBase {
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
-            property alias okButton: okButton
             property alias answerColumn: answerColumn
             property alias itemListModel: itemList.model
             property alias instruction: instruction
@@ -123,7 +107,33 @@ ActivityBase {
             readonly property var levels: activity.datasets.length !== 0 ? activity.datasets : null
             property int mode: 1 // default is automatic
             property bool buttonsBlocked: false
-            property bool activityStopped: false
+            property bool okButtonBlocked: false
+        }
+
+        Keys.enabled: !items.buttonsBlocked
+        Keys.onPressed: (event) => {
+            Activity.resetAnswerAreaColor();
+            Activity.appendText(event.text, answerColumn.itemAt(answerColumn.currentIndex));
+        }
+
+        Keys.onDownPressed: {
+            Activity.resetAnswerAreaColor();
+            if(++answerColumn.currentIndex >= answerColumn.count)
+                answerColumn.currentIndex = 0
+        }
+
+        Keys.onUpPressed: {
+            Activity.resetAnswerAreaColor();
+            if(--answerColumn.currentIndex < 0)
+                answerColumn.currentIndex = answerColumn.count - 1
+        }
+
+        Keys.onReturnPressed: {
+            okButton.visible && !items.buttonsBlocked && !items.okButtonBlocked ? Activity.checkAnswers() : ""
+        }
+
+        Keys.onEnterPressed: {
+            okButton.visible && !items.buttonsBlocked && !items.okButtonBlocked ? Activity.checkAnswers() : ""
         }
 
         GCSoundEffect {
@@ -157,20 +167,22 @@ ActivityBase {
             anchors {
                 left: parent.left
                 top: parent.top
-                margins: activityBackground.baseMargins
+                margins: GCStyle.baseMargins
             }
             width: activityBackground.answersWidth
-            spacing: activityBackground.baseMargins
+            spacing: GCStyle.baseMargins
 
             Repeater {
                 id: answerColumn
                 property int currentIndex
 
-                onModelChanged: currentIndex = count - 1
+                onModelChanged: currentIndex = 0
                 AnswerArea {
                     imgPath: modelData
                     focus: true
                     state: "default"
+                    isSelected: index === answerColumn.currentIndex
+                    itemIndex: index
                 }
             }
 
@@ -186,10 +198,11 @@ ActivityBase {
             anchors {
                 bottom: bar.top
                 right: parent.right
-                margins: activityBackground.baseMargins
+                margins: GCStyle.baseMargins
+                bottomMargin: GCStyle.baseMargins * 2
             }
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: 70 * ApplicationInfo.ratio
+            width: GCStyle.bigButtonHeight
             onClicked: Activity.checkAnswers();
         }
 
@@ -232,6 +245,7 @@ ActivityBase {
             id: errorRectangle
             anchors.fill: answer
             imageSize: okButton.width
+            radius: GCStyle.halfMargins
             function releaseControls() { items.buttonsBlocked = false; }
         }
 
@@ -256,7 +270,7 @@ ActivityBase {
                 ] ]
             }
 
-            onKeypress: Activity.currentAnswerItem.appendText(text)
+            onKeypress: (text) => Activity.currentAnswerItem.appendText(text)
 
             onError: (msg) => console.log("VirtualKeyboard error: " + msg);
         }
@@ -290,7 +304,7 @@ ActivityBase {
             anchors.bottom: undefined
             anchors.verticalCenter: okButton.verticalCenter
             anchors.right: okButton.visible ? okButton.left : activityBackground.right
-            anchors.rightMargin: activityBackground.baseMargins
+            anchors.rightMargin: GCStyle.baseMargins
             onStop: Activity.nextSubLevel()
         }
 
@@ -314,9 +328,6 @@ ActivityBase {
                  displayDialog(dialogActivityConfig)
              }
         }
-
-        Keys.onReturnPressed: okButton.visible && okButton.enabled === true ? Activity.checkAnswers() : ""
-        Keys.onEnterPressed: okButton.visible && okButton.enabled === true ? Activity.checkAnswers() : ""
 
         Bonus {
             id: bonus
