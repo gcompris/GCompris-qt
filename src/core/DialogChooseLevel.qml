@@ -136,7 +136,10 @@ Rectangle {
         }
     }
 
-    onClose: activity.forceActiveFocus();
+    onClose: {
+        focus = false;
+        activity.forceActiveFocus();
+    }
 
     function initialize() {
         // dataset information
