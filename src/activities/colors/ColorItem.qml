@@ -14,12 +14,15 @@ import "../../core"
 import core 1.0
 
 Image {
-    id: item
+    id: itemToFind
     property GCAudio audioVoices
-    property Item bar
     property string audioSrc
     property string question
     property bool playAudioOnError: false
+
+    height: width
+    sourceSize.width: width
+    sourceSize.height: height
 
     function select() {
         if(items.objectSelected)
@@ -56,14 +59,14 @@ Image {
           running: true
           loops: Animation.Infinite
           NumberAnimation {
-              target: item
+              target: itemToFind
               property: "rotation"
               from: -10; to: 10
               duration: 400 + Math.floor(Math.random() * 400)
               easing.type: Easing.InOutQuad
           }
           NumberAnimation {
-              target: item
+              target: itemToFind
               property: "rotation"
               from: 10; to: -10
               duration: 400 + Math.floor(Math.random() * 400)
@@ -75,7 +78,7 @@ Image {
           id: animWin
           running: false
           NumberAnimation {
-              target: item
+              target: itemToFind
               property: "rotation"
               from: 0; to: 360
               duration: 600
@@ -97,13 +100,11 @@ Image {
     Image {
         id: cross
         source: Activity.url + "checkError.svg"
-        sourceSize.width: 128 * ApplicationInfo.ratio
+        sourceSize.width: parent.width
         anchors.centerIn: parent
         width: 0
         height: width
         opacity: 1
-
-        property int size: Math.min(parent.width, parent.height)
     }
 
     SequentialAnimation {
@@ -113,7 +114,7 @@ Image {
             property: "width"
             duration: 300
             from: 0
-            to: cross.size
+            to: itemToFind.width
             easing.type: Easing.InOutQuad
         }
         PauseAnimation { duration: 800 }
@@ -121,7 +122,7 @@ Image {
             target: cross
             property: "width"
             duration: 300
-            from: cross.size
+            from: itemToFind.width
             to: 0
             easing.type: Easing.InOutQuad
         }
