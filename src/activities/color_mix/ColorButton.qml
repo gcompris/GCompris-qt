@@ -9,6 +9,7 @@
 */
 import QtQuick 2.12
 import core 1.0
+import "../../core"
 
 Item {
     id: button
@@ -20,19 +21,20 @@ Item {
     signal clicked
 
     Rectangle {
+        id: buttonBg
         anchors.centerIn: parent
         width: parent.width * 0.9
         height: width
         radius: width * 0.5
-        color: "#E2E2E2"
-        border.color: "#2a2a2a"
-        border.width: 2 * ApplicationInfo.ratio
+        color: GCStyle.paperWhite
+        border.color: GCStyle.darkBorder
+        border.width: GCStyle.thinBorder
     }
 
     Image {
         id: buttonImage
         anchors.centerIn: parent
-        width: parent.width * 0.6
+        width: parent.width * 0.5
         height: width
         sourceSize.width: width
         sourceSize.height: height
@@ -40,7 +42,6 @@ Item {
 
     MouseArea {
         id: mouseArea
-        anchors.centerIn: parent
         enabled: !items.buttonsBlocked
         anchors.fill: parent
         hoverEnabled: true

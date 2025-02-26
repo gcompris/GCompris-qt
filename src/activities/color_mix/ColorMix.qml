@@ -56,7 +56,6 @@ ActivityBase {
             property alias currentColor1: color1.currentStep
             property alias currentColor2: color2.currentStep
             property alias currentColor3: color3.currentStep
-            property int margins: 10 * ApplicationInfo.ratio
         }
 
         onStart: {
@@ -74,22 +73,22 @@ ActivityBase {
         Rectangle {
             id: target
             height: width * 0.4
-            width: Math.min(parent.width  * 0.2, 70 * ApplicationInfo.ratio)
-            radius: Math.min(height * 0.1, score.height)
+            width: Math.min(parent.width * 0.2, GCStyle.bigButtonHeight)
+            radius: GCStyle.halfMargins
             anchors {
                 top: parent.top
-                topMargin: items.margins
+                topMargin: GCStyle.baseMargins
                 horizontalCenter: parent.horizontalCenter
             }
-            border.width: 2 * ApplicationInfo.ratio
-            border.color: "#808080"
+            border.width: GCStyle.thinBorder
+            border.color: GCStyle.grayBorder
             color: Activity.getColor(items.targetColor1, items.targetColor2,
                                      items.targetColor3)
         }
 
         GCText {
             text: qsTr("Match the color")
-            color: "#2a2a2a"
+            color: GCStyle.darkerText
             horizontalAlignment: Text.AlignRight
             verticalAlignment: Text.AlignVCenter
             wrapMode: Text.WordWrap
@@ -99,23 +98,23 @@ ActivityBase {
                 bottom: target.bottom
                 right: target.left
                 left: parent.left
-                rightMargin: items.margins
-                leftMargin: items.margins
+                rightMargin: GCStyle.baseMargins
+                leftMargin: GCStyle.baseMargins
             }
         }
 
         Rectangle {
             color: "#80FFFFFF"
             anchors.centerIn: helpMessage
-            width: helpMessage.contentWidth + items.margins * 2
-            height: helpMessage.contentHeight + items.margins
+            width: helpMessage.contentWidth + GCStyle.baseMargins * 2
+            height: helpMessage.contentHeight + GCStyle.baseMargins
             visible: helpMessage.text != ""
         }
 
         GCText {
             id: helpMessage
             text: ""
-            color: "#2a2a2a"
+            color: GCStyle.darkerText
             fontSizeMode: Text.Fit
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
@@ -125,7 +124,7 @@ ActivityBase {
                 left: layoutArea.left
                 right: color2.left
                 bottom: layoutArea.bottom
-                margins: items.margins
+                margins: GCStyle.baseMargins
             }
         }
 
@@ -135,19 +134,19 @@ ActivityBase {
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.bottom: bar.top
-            anchors.margins: items.margins
+            anchors.margins: GCStyle.baseMargins
             anchors.topMargin: target.height
         }
 
         Rectangle {
             id: result
             height: width
-            width: Math.min(layoutArea.width * 0.2, layoutArea.height * 0.33) - items.margins
+            width: Math.min(layoutArea.width * 0.2, layoutArea.height * 0.33) - GCStyle.baseMargins
             radius: height * 0.5
             anchors.top: layoutArea.top
             anchors.horizontalCenter: layoutArea.horizontalCenter
-            border.width: 2 * ApplicationInfo.ratio
-            border.color: "#808080"
+            border.width: GCStyle.thinBorder
+            border.color: GCStyle.grayBorder
             color: Activity.getColor(items.currentColor1, items.currentColor2,
                                      items.currentColor3)
         }
@@ -160,7 +159,7 @@ ActivityBase {
             maxSteps: items.maxSteps
             anchors {
                 right: result.left
-                rightMargin: items.margins
+                rightMargin: GCStyle.baseMargins
                 verticalCenter: result.verticalCenter
             }
         }
@@ -174,7 +173,7 @@ ActivityBase {
             anchors {
                 horizontalCenter: result.horizontalCenter
                 top: result.bottom
-                topMargin: items.margins + height * 0.5
+                topMargin: GCStyle.baseMargins + height * 0.5
             }
             rotation: -90
         }
@@ -187,7 +186,7 @@ ActivityBase {
             maxSteps: items.maxSteps
             anchors {
                 left: result.right
-                leftMargin: items.margins
+                leftMargin: GCStyle.baseMargins
                 verticalCenter: result.verticalCenter
             }
             rotation: 180
@@ -198,7 +197,7 @@ ActivityBase {
             anchors.right: parent.right
             anchors.top: parent.top
             anchors.bottom: undefined
-            anchors.margins: items.margins
+            anchors.margins: GCStyle.baseMargins
             currentSubLevel: 0
             numberOfSubLevels: 10
             onStop: Activity.nextSubLevel()
@@ -207,12 +206,12 @@ ActivityBase {
         BarButton {
             id: validate
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: 70 * ApplicationInfo.ratio
+            width: GCStyle.bigButtonHeight
             visible: true
             enabled: !items.buttonsBlocked
             anchors {
                 right: parent.right
-                rightMargin: items.margins
+                rightMargin: GCStyle.baseMargins
                 verticalCenter: layoutArea.verticalCenter
             }
             onClicked: {
