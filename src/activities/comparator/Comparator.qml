@@ -29,7 +29,6 @@ ActivityBase {
         sourceSize.height: height
         signal start
         signal stop
-        property int layoutMargins: ApplicationInfo.ratio * 10
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -51,11 +50,12 @@ ActivityBase {
             readonly property var levels: activity.datasets
             property alias dataListModel: dataListModel
             property int selectedLine: -1
-            property int spacingOfElement: 20 * ApplicationInfo.ratio
-            property int sizeOfElement: 36 * ApplicationInfo.ratio
+            property int lineHeight: Math.min(45 * ApplicationInfo.ratio,
+                (layoutArea.height - GCStyle.bigButtonHeight - GCStyle.baseMargins) / Math.max(1, lineRepeater.count))
+            property int lineWidth: Math.min(450 * ApplicationInfo.ratio,
+                layoutArea.width - (GCStyle.bigButtonHeight + GCStyle.baseMargins) * 2)
             property int numberOfRowsCompleted: 0
             property alias score: score
-            property bool horizontalLayout: layoutArea.width >= layoutArea.height
             property bool buttonsBlocked: false
         }
 
@@ -79,6 +79,7 @@ ActivityBase {
                 left: parent.left
                 right: parent.right
                 bottom: bar.top
+                margins: GCStyle.baseMargins
                 bottomMargin: bar.height * 0.5
             }
         }
@@ -114,11 +115,11 @@ ActivityBase {
                 break;
                 case Qt.Key_Left:
                 event.accepted = true;
-                symbolSelectionList.decrementCurrentIndex();
+                symbolSelectionList.moveCurrentIndexLeft();
                 break;
                 case Qt.Key_Right:
                 event.accepted = true;
-                symbolSelectionList.incrementCurrentIndex();
+                symbolSelectionList.moveCurrentIndexRight();
                 break;
                 case Qt.Key_Space:
                 event.accepted = true;
@@ -147,23 +148,23 @@ ActivityBase {
 
         Rectangle {
             id: wholeExerciceDisplay
-            // width defined in states
-            height: items.sizeOfElement * lineRepeater.count
+            height: items.lineHeight * lineRepeater.count
+            width: items.lineWidth
             anchors.horizontalCenter: layoutArea.horizontalCenter
             anchors.verticalCenter: layoutArea.verticalCenter
-            anchors.verticalCenterOffset: -symbolSelectionList.height
-            color: "#F2F2F2"
+            anchors.verticalCenterOffset: (-GCStyle.bigButtonHeight - GCStyle.baseMargins) * 0.5
+            color: GCStyle.lightBg
             Column {
                 id: wholeExerciceDisplayContent
                 spacing: 0
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.verticalCenter: parent.verticalCenter
                 width: parent.width
                 height: parent.height
                 Repeater {
                     id: lineRepeater
                     model: dataListModel
                     delegate: ComparatorLine {
+                        width: items.lineWidth
+                        height: items.lineHeight
                     }
                 }
             }
@@ -171,24 +172,25 @@ ActivityBase {
 
         Item {
             id: upDownButtonSet
-            anchors.verticalCenter: wholeExerciceDisplay.verticalCenter
+            anchors.top: wholeExerciceDisplay.top
+            anchors.bottom: wholeExerciceDisplay.bottom
             anchors.right: wholeExerciceDisplay.left
-            anchors.rightMargin: activityBackground.layoutMargins
-            height: upButton.width * 3
-            width: upButton.width
+            anchors.margins: GCStyle.baseMargins
+            property int buttonSize: Math.min(GCStyle.bigButtonHeight,
+                                            (height - GCStyle.baseMargins) * 0.5)
             BarButton {
                 id: upButton
                 source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
-                // width defined in states
+                width: upDownButtonSet.buttonSize
                 rotation: -90
                 anchors.top: parent.top
                 anchors.right: parent.right
                 Rectangle {
                     anchors.fill: parent
                     radius: width * 0.5
-                    color: "#FFFFFF"
+                    color: GCStyle.whiteBg
                     border.color: "#000000"
-                    border.width: 4
+                    border.width: GCStyle.thinBorder
                     opacity: 0.2
                 }
                 onClicked: {
@@ -198,16 +200,16 @@ ActivityBase {
             BarButton {
                 id: downButton
                 source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
-                width: upButton.width
+                width: upDownButtonSet.buttonSize
                 rotation: 90
                 anchors.bottom: parent.bottom
                 anchors.right: parent.right
                 Rectangle {
                     anchors.fill: parent
                     radius: width * 0.5
-                    color: "#FFFFFF"
+                    color: GCStyle.whiteBg
                     border.color: "#000000"
-                    border.width: 4
+                    border.width: GCStyle.thinBorder
                     opacity: 0.2
                 }
                 onClicked: {
@@ -216,24 +218,24 @@ ActivityBase {
             }
         }
             
-        ListView {
+        GridView {
             id: symbolSelectionList
-            height: Math.min(wholeExerciceDisplay.width * 0.2, items.sizeOfElement * 1.5)
-            width: height * 4
+            height: GCStyle.bigButtonHeight
             anchors.top: wholeExerciceDisplay.bottom
-            anchors.topMargin: activityBackground.layoutMargins
-            anchors.horizontalCenter: wholeExerciceDisplay.horizontalCenter
-            orientation: Qt.Horizontal
+            anchors.topMargin: GCStyle.baseMargins
+            anchors.left: wholeExerciceDisplay.left
+            anchors.right: wholeExerciceDisplay.right
+            cellWidth: width / 3
+            cellHeight: height
             interactive: false
             keyNavigationWraps: true
-            spacing: height * 0.5
             currentIndex: -1
             model: ["<", "=", ">"]
             delegate: ComparatorSign {
-                height: ListView.view.height
-                width: height
+                width: symbolSelectionList.cellWidth
+                height: symbolSelectionList.cellHeight
                 signValue: modelData
-                isSelected: ListView.isCurrentItem
+                isSelected: GridView.isCurrentItem
             }
             function enterSign(sign: string) {
                 //increment the numberOfRowsCompleted if there was no symbol previously
@@ -245,17 +247,23 @@ ActivityBase {
             }
         }
 
+        Item {
+            id: rightSideArea
+            anchors.left: wholeExerciceDisplay.right
+            anchors.right: layoutArea.right
+            anchors.top: layoutArea.top
+            anchors.bottom: layoutArea.bottom
+        }
+
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             visible: items.numberOfRowsCompleted == dataListModel.count
-            width: 60 * ApplicationInfo.ratio
-            height: width
+            width: GCStyle.bigButtonHeight
             enabled: !bonus.isPlaying
             anchors {
-                bottom: score.top
-                bottomMargin: activityBackground.layoutMargins
-                horizontalCenter: score.horizontalCenter
+                verticalCenter: symbolSelectionList.verticalCenter
+                horizontalCenter: rightSideArea.horizontalCenter
             }
             onClicked: {
                 Activity.checkAnswer()
@@ -288,56 +296,12 @@ ActivityBase {
 
         Score {
             id: score
-            anchors.right: layoutArea.right
+            anchors.right: undefined
             anchors.bottom: layoutArea.bottom
-            anchors.rightMargin: activityBackground.layoutMargins
-            anchors.bottomMargin: activityBackground.layoutMargins
-            anchors.horizontalCenterOffset: layoutArea.width * 0.375
+            anchors.left: layoutArea.left
+            anchors.margins: 0
             onStop: Activity.nextSubLevel()
         }
-
-        states: [
-            State {
-                name: "isHorizontalLayout"
-                when: items.horizontalLayout
-                AnchorChanges {
-                    target: score
-                    anchors.right: undefined
-                    anchors.horizontalCenter: layoutArea.horizontalCenter
-                }
-                PropertyChanges {
-                    wholeExerciceDisplay {
-                        width: layoutArea.width * 0.5
-                        anchors.horizontalCenterOffset: -items.sizeOfElement
-                    }
-                }
-                PropertyChanges {
-                    upButton {
-                        width: Math.max(layoutArea.height * 0.1, items.sizeOfElement)
-                    }
-                }
-            },
-            State {
-                name: "isVerticalLayout"
-                when: !items.horizontalLayout
-                AnchorChanges {
-                    target: score
-                    anchors.right: layoutArea.right
-                    anchors.horizontalCenter: undefined
-                }
-                PropertyChanges {
-                    wholeExerciceDisplay {
-                        width: layoutArea.width * 0.7
-                        anchors.horizontalCenterOffset: 0
-                    }
-                }
-                PropertyChanges {
-                    upButton {
-                        width: layoutArea.width * 0.1
-                    }
-                }
-            }
-        ]
 
         MouseArea {
             id: inputLock

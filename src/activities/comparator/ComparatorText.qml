@@ -13,11 +13,9 @@ import core 1.0
 import "../../core"
 
 GCText {
-    height: items.sizeOfElement
-    width: items.sizeOfElement
     font.bold: currentlySelected === true
     verticalAlignment: Text.AlignVCenter
     horizontalAlignment: Text.AlignHCenter
     fontSizeMode: Text.Fit
-    color: "#373737"
+    color: GCStyle.darkText
 }

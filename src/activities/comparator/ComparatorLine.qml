@@ -10,16 +10,17 @@
 import QtQuick 2.12
 import core 1.0
 
+import "../../core"
+
 Rectangle {
     id: comparatorLine
-    height: items.sizeOfElement
-    width: parent.width
+    // height and width defined when using it
 
     readonly property bool currentlySelected: index === items.selectedLine
 
-    color: items.selectedLine == index ? "#FFFFFF" : "transparent"
-    border.color: "#9FB8E3"
-    border.width: items.selectedLine == index ? 4 * ApplicationInfo.ratio : 0
+    color: items.selectedLine == index ? GCStyle.whiteBg : "transparent"
+    border.color: GCStyle.blueBorder
+    border.width: items.selectedLine == index ? GCStyle.thickBorder : 0
 
     readonly property string correctAnswerImage: "qrc:/gcompris/src/core/resource/apply.svg"
     readonly property string wrongAnswerImage: "qrc:/gcompris/src/core/resource/cancel.svg"
@@ -27,8 +28,8 @@ Rectangle {
     Rectangle {
         id: topLine
         width: parent.width
-        height: 1 * ApplicationInfo.ratio
-        color: parent.border.color
+        height: GCStyle.thinnestBorder
+        color: GCStyle.blueBorder
         anchors.verticalCenter: parent.top
         anchors.horizontalCenter: parent.horizontalCenter
     }
@@ -36,43 +37,48 @@ Rectangle {
     Rectangle {
         id: bottomLine
         width: parent.width
-        height: topLine.height
-        color: parent.border.color
+        height: GCStyle.thinnestBorder
+        color: GCStyle.blueBorder
         anchors.verticalCenter: parent.bottom
         anchors.horizontalCenter: parent.horizontalCenter
     }
 
     ComparatorText {
         id: leftHandSideCharDisplay
+        height: parent.height
         anchors.right: mathSymbolDisplayText.left
-        anchors.rightMargin: items.sizeOfElement / (30 * ApplicationInfo.ratio)
         anchors.left: parent.left
-        anchors.leftMargin: 8 * ApplicationInfo.ratio
+        anchors.margins: GCStyle.baseMargins
         text: leftHandSide
     }
 
     ComparatorText {
         id: mathSymbolDisplayText
+        height: parent.height
+        width: parent.height
         anchors.horizontalCenter: parent.horizontalCenter
         text: symbol
     }
 
     ComparatorText {
         id: rightHandSideCharDisplay
+        height: parent.height
         anchors.left: mathSymbolDisplayText.right
-        anchors.leftMargin: leftHandSideCharDisplay.anchors.rightMargin
         anchors.right: parent.right
-        anchors.rightMargin: leftHandSideCharDisplay.anchors.leftMargin
+        anchors.margins: GCStyle.baseMargins
         text: rightHandSide
     }
 
     Image {
         visible: isValidationImageVisible
-        sourceSize.width: items.sizeOfElement * 0.95
+        height: parent.height * 0.95
+        width: height
+        sourceSize.height: height
+        sourceSize.width: height
         source: isCorrectAnswer ? correctAnswerImage : wrongAnswerImage
         anchors {
             left: comparatorLine.right
-            leftMargin: 5
+            leftMargin: GCStyle.tinyMargins
             verticalCenter: comparatorLine.verticalCenter
         }
     }
