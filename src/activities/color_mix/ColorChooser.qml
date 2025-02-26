@@ -11,6 +11,7 @@
 import QtQuick 2.12
 import core 1.0
 
+import "../../core"
 import "colormix.js" as Activity
 import "."
 
@@ -71,8 +72,8 @@ Image {
         }
         color: "#00FFFFFF"
         radius: height * 0.2
-        border.width: height * 0.1
-        border.color: "#888888"
+        border.width: GCStyle.midBorder
+        border.color: GCStyle.grayBorder
         property int maxLimit: width - sliderHandle.width
         onWidthChanged: setSliderX();
         Rectangle {
