@@ -37,7 +37,7 @@ AnimatedSprite {
     }
 
     transform: Rotation {
-        id: rotate; origin.x: width / 2; origin.y: 0; axis { x: 0; y: 1; z: 0 } angle: 0
+        id: rotate; origin.x: fish.width / 2; origin.y: 0; axis { x: 0; y: 1; z: 0 } angle: 0
     }
 
     onAnimTrigger: {
