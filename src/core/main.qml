@@ -47,6 +47,9 @@ Window {
     minimumHeight: 400 * ApplicationInfo.ratio
     title: "GCompris"
 
+    // Useful to uncomment to DEBUG focus issues.
+    //onActiveFocusItemChanged: print("activeFocusItem", activeFocusItem)
+
     /// @cond INTERNAL_DOCS
 
     property var applicationState: Qt.application.state
