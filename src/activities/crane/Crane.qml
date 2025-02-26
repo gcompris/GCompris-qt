@@ -144,9 +144,9 @@ ActivityBase {
         Rectangle {
             id: boardBg
             color: "#77c0d9"
-            radius: width * 0.03
+            radius: GCStyle.halfMargins
             border.color: "#77c0d9"
-            border.width: width * 0.02
+            border.width: GCStyle.fatBorder
             z: 1
             clip: true
 
@@ -154,7 +154,7 @@ ActivityBase {
                 top: crane_top.bottom
                 bottom: crane_body.top
                 right: crane_vertical.left
-                margins: 5 * ApplicationInfo.ratio
+                margins: GCStyle.halfMargins
             }
 
             width: activityBackground.portrait ? (layoutArea.width - crane_vertical.width) * 0.8 : ((layoutArea.width - anchors.margins * 2 - crane_vertical.width) * 0.5 ) * 0.9
@@ -182,7 +182,7 @@ ActivityBase {
                     width: items.gridBaseWidth
                     height: items.gridBaseHeight
                     color: "transparent"
-                    border.width: 2
+                    border.width: GCStyle.thinnestBorder
                     border.color: "#77c0d9"
                 }
             }
@@ -313,9 +313,9 @@ ActivityBase {
         Rectangle {
             id: modelBoardBg
             color: "#e294b7"
-            radius: width * 0.03
+            radius: GCStyle.halfMargins
             border.color: "#e294b7"
-            border.width: width * 0.02
+            border.width: GCStyle.fatBorder
             z: 1
 
             anchors {
@@ -375,7 +375,7 @@ ActivityBase {
                     width: items.gridBaseWidth
                     height: items.gridBaseHeight
                     color: "transparent"
-                    border.width: 2
+                    border.width: GCStyle.thinnestBorder
                     border.color: showGrid1.opacity == 1 ? "#e294b7" : "transparent"
                 }
             }
@@ -426,7 +426,7 @@ ActivityBase {
             id: crane_command
             source: activity.dataSetUrl+"command.svg"
             sourceSize.height: height
-            anchors.margins: 5 * ApplicationInfo.ratio
+            anchors.margins: GCStyle.halfMargins
             fillMode: Image.PreserveAspectFit
             Controls {
                 id: up
@@ -471,13 +471,13 @@ ActivityBase {
 
         Rectangle {
             id: cable
-            color: "#373737"
-            width: 5
+            color: GCStyle.darkBorder
+            width: GCStyle.midBorder
             height: 0
             x: 0
             z: 3
             anchors.top: crane_top.top
-            anchors.topMargin: 10
+            anchors.topMargin: GCStyle.halfMargins
 
             Behavior on x { NumberAnimation { duration: 200 } }
             Behavior on height { NumberAnimation { duration: 200 } }
