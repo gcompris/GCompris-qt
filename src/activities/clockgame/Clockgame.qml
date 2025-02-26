@@ -8,6 +8,8 @@
 *
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import core 1.0
 
@@ -181,6 +183,7 @@ ActivityBase {
             Repeater {
                 model: 60
                 GCText {
+                    required property int index
                     text: index + 1
                     font {
                         pointSize: NaN  // need to clear font.pointSize explicitly
@@ -209,6 +212,7 @@ ActivityBase {
                 model: 60
 
                 Rectangle {
+                    required property int index
                     color: "#d56a3a"
                     width: clock.radius * 0.02
                     height: 2
@@ -231,6 +235,8 @@ ActivityBase {
             Repeater {
                 model: 12
                 GCText {
+                    id: hourText
+                    required property int index
                     text: index + 1
                     font {
                         pointSize: NaN  // need to clear font.pointSize explicitly
@@ -256,6 +262,7 @@ ActivityBase {
                 model: 12
 
                 Rectangle {
+                    required property int index
                     color: "#3a81d5"
                     width: clock.radius * 0.03
                     height: 4
@@ -515,7 +522,7 @@ ActivityBase {
                 }
             }
             onClose: {
-                home()
+                activity.home()
             }
             onStartActivity: {
                 activityBackground.stop()
@@ -525,7 +532,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
@@ -537,13 +544,13 @@ ActivityBase {
             property BarEnumContent withoutHint: BarEnumContent { value: help | home | level | activityConfig }
 
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onHintClicked: {
                 helper.visible = !helper.visible
             }
             onActivityConfigClicked: {
-                displayDialog(dialogActivityConfig)
+                activity.displayDialog(dialogActivityConfig)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
