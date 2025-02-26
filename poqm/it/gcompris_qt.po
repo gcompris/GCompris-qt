@@ -17016,13 +17016,13 @@ msgstr ""
 "Una lettera è visualizzata sulla bandiera attaccata all'aereo, seleziona "
 "tutte le parole nell'elenco che contengono la lettera e premi il pulsante OK."
 
-#: activities/letter-in-word/LetterInWord.qml:320
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr ""
 "Siamo spiacenti, non è ancora disponibile una traduzione per la tua lingua."
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:337
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17032,7 +17032,7 @@ msgstr ""
 "GCompris è sviluppato dalla comunità KDE, puoi tradurre GCompris entrando a "
 "far parte di una squadra di traduzione su <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:323
+#: activities/letter-in-word/LetterInWord.qml:339
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

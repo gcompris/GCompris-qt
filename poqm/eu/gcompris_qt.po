@@ -16841,12 +16841,12 @@ msgstr ""
 "Letra bat azaltzen du hegazkinak daraman banderak. Hautatu letra hori duten "
 "zerrendako hitz guztiak, eta ondoren, sakatu «Ados» botoia."
 
-#: activities/letter-in-word/LetterInWord.qml:320
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Atsekabez, ez dugu oraindik zure hizkuntzarako itzulpenik."
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:337
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16856,7 +16856,7 @@ msgstr ""
 "GCompris KDE komunitateak garatzen du. GCompris itzul dezakezu itzulpen "
 "talde batera batuz, hemen, <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:323
+#: activities/letter-in-word/LetterInWord.qml:339
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

@@ -16735,12 +16735,12 @@ msgstr ""
 "Uçağa iliştirilmiş bayrakta bir harf görüntülenir. Bu harfi içeren listedeki "
 "tüm sözcükleri seç ve ardından OK düğmesine bas."
 
-#: activities/letter-in-word/LetterInWord.qml:320
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Özür dilerim, konuştuğun dil için bir çeviri henüz yok."
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:337
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16750,7 +16750,7 @@ msgstr ""
 "GCompris, KDE topluluğu tarafından geliştirilir, <a href=\"%2\">%2</a> "
 "üzerinden çeviri takımına katılarak GCompris’i çevirebilirsin"
 
-#: activities/letter-in-word/LetterInWord.qml:323
+#: activities/letter-in-word/LetterInWord.qml:339
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

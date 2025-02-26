@@ -16443,12 +16443,12 @@ msgstr ""
 "विमानसङ्गते ध्वजे एकं अक्षरं प्रदर्शितं भवति । एतत् अक्षरं समाविष्टे सूचीयां सर्वाणि शब्दानि "
 "चित्वा ततः OK बटनं नुदन्तु ।"
 
-#: activities/letter-in-word/LetterInWord.qml:320
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "क्षम्यतां, अस्माकं कृते अद्यापि भवतः भाषायाः अनुवादः नास्ति।"
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:337
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16458,7 +16458,7 @@ msgstr ""
 "GCompris KDE समुदायेन विकसितम् अस्ति, भवान् <a href=\"%2\">%2</a> इत्यत्र अनुवाददलेन "
 "सह सम्मिलितः भूत्वा GCompris इत्यस्य अनुवादं कर्तुं शक्नोति"
 
-#: activities/letter-in-word/LetterInWord.qml:323
+#: activities/letter-in-word/LetterInWord.qml:339
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
