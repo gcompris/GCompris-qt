@@ -5140,12 +5140,12 @@ msgstr ""
 "Īsākais rādītājs norāda stundas, nedaudz garākais norāda minūtes, bet pats "
 "garākais norāda sekundes."
 
-#: activities/clockgame/Clockgame.qml:119
+#: activities/clockgame/Clockgame.qml:117
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Iestati pulksteni uz:"
 
-#: activities/clockgame/Clockgame.qml:122
+#: activities/clockgame/Clockgame.qml:120
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5154,7 +5154,7 @@ msgstr[0] "%n stunda(-as)"
 msgstr[1] "%n stunda(-as)"
 msgstr[2] "%n stunda(-as)"
 
-#: activities/clockgame/Clockgame.qml:125
+#: activities/clockgame/Clockgame.qml:123
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5163,7 +5163,7 @@ msgstr[0] "%n minūte(-es)"
 msgstr[1] "%n minūte(-es)"
 msgstr[2] "%n minūte(-es)"
 
-#: activities/clockgame/Clockgame.qml:128
+#: activities/clockgame/Clockgame.qml:126
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -17122,12 +17122,12 @@ msgstr ""
 "Uz karoga, kas ir piestiprināts pie lidmašīnas, ir redzams burts. Atlasi "
 "visus sarakstā esošos vārdus, kas satur šo burtu, uz spied „Labi“."
 
-#: activities/letter-in-word/LetterInWord.qml:320
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Diemžēl tavai valodai vēl nav tulkojuma."
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:337
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17137,7 +17137,7 @@ msgstr ""
 "„GCompris“ izstrādā KDE kopiena. Vari palīdzēt tulkot „GCompris“, "
 "pievienojoties tulkotāju komandai <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:323
+#: activities/letter-in-word/LetterInWord.qml:339
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

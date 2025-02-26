@@ -5024,12 +5024,12 @@ msgstr ""
 "يشير العقرب القصير إلى الساعات، ويشير العقرب الطويل إلى الدقائق،والعقرب "
 "الأطول يشير إلى الثواني."
 
-#: activities/clockgame/Clockgame.qml:119
+#: activities/clockgame/Clockgame.qml:117
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "اضبط السّاعة إلى:"
 
-#: activities/clockgame/Clockgame.qml:122
+#: activities/clockgame/Clockgame.qml:120
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5041,7 +5041,7 @@ msgstr[3] "السّاعة ال‍ %n"
 msgstr[4] "السّاعة ال‍ %n"
 msgstr[5] "السّاعة ال‍ %n"
 
-#: activities/clockgame/Clockgame.qml:125
+#: activities/clockgame/Clockgame.qml:123
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5053,7 +5053,7 @@ msgstr[3] "و%n دقائق"
 msgstr[4] "و%n دقيقة"
 msgstr[5] "و%n دقيقة"
 
-#: activities/clockgame/Clockgame.qml:128
+#: activities/clockgame/Clockgame.qml:126
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -16871,12 +16871,12 @@ msgstr ""
 "سيظهر حرف على العلم المربوط في الطائرة. اختر من القائمة كل الكلمات التي فيها "
 "هذا الحرف، ثم انقر على الزر."
 
-#: activities/letter-in-word/LetterInWord.qml:320
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "آسفون، لا ترجمة للغتك بعد."
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:337
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16886,7 +16886,7 @@ msgstr ""
 "يطوّر مجتمع «كِيدِي» تطبيق «فهمت»، يمكنك ترجمة «فهمت» بالانضمام إلى فريق "
 "التّرجمة على <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:323
+#: activities/letter-in-word/LetterInWord.qml:339
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

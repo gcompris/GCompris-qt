@@ -5161,12 +5161,12 @@ msgstr ""
 "Den kortaste visaren anger timmar, en längre visare anger minuter, och den "
 "längsta visaren anger sekunder."
 
-#: activities/clockgame/Clockgame.qml:119
+#: activities/clockgame/Clockgame.qml:117
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Ställ klockan till:"
 
-#: activities/clockgame/Clockgame.qml:122
+#: activities/clockgame/Clockgame.qml:120
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5174,7 +5174,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n timme"
 msgstr[1] "%n timmar"
 
-#: activities/clockgame/Clockgame.qml:125
+#: activities/clockgame/Clockgame.qml:123
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5182,7 +5182,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n minut"
 msgstr[1] "%n minuter"
 
-#: activities/clockgame/Clockgame.qml:128
+#: activities/clockgame/Clockgame.qml:126
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -17270,12 +17270,12 @@ msgstr ""
 "En bokstav visas på flaggan som sitter på planet. Välj alla orden i listan "
 "som bokstaven finns i och klicka sedan på Ok-knappen."
 
-#: activities/letter-in-word/LetterInWord.qml:320
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Tyvärr finns ingen översättning för ditt modersmål ännu."
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:337
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17285,7 +17285,7 @@ msgstr ""
 "GCompris utvecklas av KDE-gemenskapen. Du kan översätta GCompris genom att "
 "gå med i en översättningsgrupp på <a href=\"%2\">%2</a>."
 
-#: activities/letter-in-word/LetterInWord.qml:323
+#: activities/letter-in-word/LetterInWord.qml:339
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

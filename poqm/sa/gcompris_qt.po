@@ -5021,12 +5021,12 @@ msgid ""
 "and the longest hand indicates the seconds."
 msgstr "ह्रस्वतमः हस्तः घण्टाः, दीर्घतमः हस्तः निमेषान्, दीर्घतमः हस्तः सेकण्डान् च सूचयति ।"
 
-#: activities/clockgame/Clockgame.qml:119
+#: activities/clockgame/Clockgame.qml:117
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "घड़ीं सेट् कुर्वन्तु:"
 
-#: activities/clockgame/Clockgame.qml:122
+#: activities/clockgame/Clockgame.qml:120
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5034,7 +5034,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n घण्टा(s) ."
 msgstr[1] "%n घण्टा(s) ."
 
-#: activities/clockgame/Clockgame.qml:125
+#: activities/clockgame/Clockgame.qml:123
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5042,7 +5042,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n निमेष(s) ."
 msgstr[1] "%n निमेष(s) ."
 
-#: activities/clockgame/Clockgame.qml:128
+#: activities/clockgame/Clockgame.qml:126
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -16833,12 +16833,12 @@ msgstr ""
 "विमानसङ्गते ध्वजे एकं अक्षरं प्रदर्शितं भवति । एतत् अक्षरं समाविष्टे सूचीयां सर्वाणि शब्दानि "
 "चित्वा ततः OK बटनं नुदन्तु ।"
 
-#: activities/letter-in-word/LetterInWord.qml:320
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "क्षम्यतां, अस्माकं कृते अद्यापि भवतः भाषायाः अनुवादः नास्ति।"
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:337
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16848,7 +16848,7 @@ msgstr ""
 "GCompris KDE समुदायेन विकसितम् अस्ति, भवान् <a href=\"%2\">%2</a> इत्यत्र अनुवाददलेन "
 "सह सम्मिलितः भूत्वा GCompris इत्यस्य अनुवादं कर्तुं शक्नोति"
 
-#: activities/letter-in-word/LetterInWord.qml:323
+#: activities/letter-in-word/LetterInWord.qml:339
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

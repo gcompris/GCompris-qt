@@ -5036,12 +5036,12 @@ msgstr ""
 "Najkratšia ručička zobrazuje hodiny, dlhšia ručička zobrazuje minúty a "
 "najdlhšia ručička zobrazuje sekundy."
 
-#: activities/clockgame/Clockgame.qml:119
+#: activities/clockgame/Clockgame.qml:117
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Nastav hodinky na:"
 
-#: activities/clockgame/Clockgame.qml:122
+#: activities/clockgame/Clockgame.qml:120
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5050,7 +5050,7 @@ msgstr[0] "%n hodina"
 msgstr[1] "%n hodiny"
 msgstr[2] "%n hodín"
 
-#: activities/clockgame/Clockgame.qml:125
+#: activities/clockgame/Clockgame.qml:123
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5059,7 +5059,7 @@ msgstr[0] "%n minúta"
 msgstr[1] "%n minúty"
 msgstr[2] "%n minút"
 
-#: activities/clockgame/Clockgame.qml:128
+#: activities/clockgame/Clockgame.qml:126
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -17468,12 +17468,12 @@ msgstr ""
 "Na vlajke pripojenej k lietadlu sa zobrazí písmeno, vyberte všetky slová "
 "alebo objekty, v ktorých sa písmeno nachádza, a potom stlačte OK."
 
-#: activities/letter-in-word/LetterInWord.qml:320
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Je nám ľúto, nemáme ešte preklad pre váš jazyk."
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:337
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17483,7 +17483,7 @@ msgstr ""
 "GCompris je vyvíjaný KDE komunitou, GCompris môžete prekladať pripojením sa "
 "k prekladateľskému tímu na <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:323
+#: activities/letter-in-word/LetterInWord.qml:339
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

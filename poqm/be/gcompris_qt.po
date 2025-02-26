@@ -5240,12 +5240,12 @@ msgstr ""
 "Найкарацейшая стрэлка паказвае гадзіны, даўжэйшая паказвае хвіліны, а самая "
 "доўгая стрэлка паказвае секунды."
 
-#: activities/clockgame/Clockgame.qml:119
+#: activities/clockgame/Clockgame.qml:117
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Устанавіце час:"
 
-#: activities/clockgame/Clockgame.qml:122
+#: activities/clockgame/Clockgame.qml:120
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5255,7 +5255,7 @@ msgstr[1] "%n гадзіны"
 msgstr[2] "%n гадзін"
 msgstr[3] ""
 
-#: activities/clockgame/Clockgame.qml:125
+#: activities/clockgame/Clockgame.qml:123
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5265,7 +5265,7 @@ msgstr[1] "%n хвіліны"
 msgstr[2] "%n хвілін"
 msgstr[3] ""
 
-#: activities/clockgame/Clockgame.qml:128
+#: activities/clockgame/Clockgame.qml:126
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -17203,12 +17203,12 @@ msgstr ""
 "Літара будзе паказана на сцягу, прычэпленым да самалёта. Выберыце ўсе словы "
 "са спісу, у якіх маецца дадзеная літара, і затым націсніце кнопку ОК."
 
-#: activities/letter-in-word/LetterInWord.qml:320
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Выбачайце, у нас яшчэ няма перакладаў на Вашую мову."
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:337
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17218,7 +17218,7 @@ msgstr ""
 "GCompris распрацоўваецца камандай KDE, Вы можаце перакладаць GCompris, "
 "далучыўшыся да каманды перакладчыкаў праз спасылку: <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:323
+#: activities/letter-in-word/LetterInWord.qml:339
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

@@ -5154,12 +5154,12 @@ msgstr ""
 "Najkrajši kazalec kaže ure, daljši kazalec minute in najdaljši kazalec kaže "
 "sekunde."
 
-#: activities/clockgame/Clockgame.qml:119
+#: activities/clockgame/Clockgame.qml:117
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Nastavi uro na:"
 
-#: activities/clockgame/Clockgame.qml:122
+#: activities/clockgame/Clockgame.qml:120
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5169,7 +5169,7 @@ msgstr[1] "%n uri"
 msgstr[2] "%n ur"
 msgstr[3] "%n ur"
 
-#: activities/clockgame/Clockgame.qml:125
+#: activities/clockgame/Clockgame.qml:123
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5179,7 +5179,7 @@ msgstr[1] "%n minuta"
 msgstr[2] "%n minuti"
 msgstr[3] "%n minute"
 
-#: activities/clockgame/Clockgame.qml:128
+#: activities/clockgame/Clockgame.qml:126
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -17239,12 +17239,12 @@ msgstr ""
 "Črka je prikazana na zastavi pritrjeni na letalo. izberite vse besede ali "
 "predmete, v katerih se črka pojavlja, in nato pritisnite V redu."
 
-#: activities/letter-in-word/LetterInWord.qml:320
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Žal še ni prevoda za vaš jezik."
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:337
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17254,7 +17254,7 @@ msgstr ""
 "GCompris razvija skupnost KDE, za prevajanje GCompris se lahko pridružite "
 "ekipi prevajanja na <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:323
+#: activities/letter-in-word/LetterInWord.qml:339
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

@@ -5301,12 +5301,12 @@ msgid ""
 "and the longest hand indicates the seconds."
 msgstr "L'aiguille la plus courte indique les heures."
 
-#: activities/clockgame/Clockgame.qml:119
+#: activities/clockgame/Clockgame.qml:117
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Règle la montre sur :"
 
-#: activities/clockgame/Clockgame.qml:122
+#: activities/clockgame/Clockgame.qml:120
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5314,7 +5314,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n heure"
 msgstr[1] "%n heures"
 
-#: activities/clockgame/Clockgame.qml:125
+#: activities/clockgame/Clockgame.qml:123
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5322,7 +5322,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n minute"
 msgstr[1] "%n minutes"
 
-#: activities/clockgame/Clockgame.qml:128
+#: activities/clockgame/Clockgame.qml:126
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -17499,14 +17499,14 @@ msgstr ""
 "Une lettre est écrite et/ou parlée. Des mots sont affichés, l'enfant doit "
 "trouver le ou les mots contenant cette lettre."
 
-#: activities/letter-in-word/LetterInWord.qml:320
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr ""
 "Nous sommes désolés, la traduction dans votre langue n'est pas encore "
 "disponible."
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:337
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17516,7 +17516,7 @@ msgstr ""
 "GCompris est développé par la communauté KDE. Vous pouvez traduire GCompris "
 "en rejoignant l'équipe de traduction à <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:323
+#: activities/letter-in-word/LetterInWord.qml:339
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

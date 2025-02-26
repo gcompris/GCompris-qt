@@ -5295,12 +5295,12 @@ msgid ""
 "and the longest hand indicates the seconds."
 msgstr "Lyhin viisari osoittaa tunteja, pidempi minuutteja ja pisin sekunteja."
 
-#: activities/clockgame/Clockgame.qml:119
+#: activities/clockgame/Clockgame.qml:117
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Käännä kellon viisarit aikaan:"
 
-#: activities/clockgame/Clockgame.qml:122
+#: activities/clockgame/Clockgame.qml:120
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5308,7 +5308,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n tunti"
 msgstr[1] "%n tuntia"
 
-#: activities/clockgame/Clockgame.qml:125
+#: activities/clockgame/Clockgame.qml:123
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5316,7 +5316,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "% minuutti"
 msgstr[1] "%n minuuttia"
 
-#: activities/clockgame/Clockgame.qml:128
+#: activities/clockgame/Clockgame.qml:126
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -17747,12 +17747,12 @@ msgstr ""
 "Koneeseen kiinnitetyssä lipussa näkyy kirjain. Valitse kaikki tämän "
 "kirjaimen sisältävät sanat ja paina sitten OK-painiketta."
 
-#: activities/letter-in-word/LetterInWord.qml:320
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Valitettavasti kielellesi ei ole vielä käännöstä."
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:337
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17762,7 +17762,7 @@ msgstr ""
 "GComprisin on kehittänyt KDE-yhteisö. Voit kääntää GComprisia liittymällä "
 "käännösryhmään osoitteessa <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:323
+#: activities/letter-in-word/LetterInWord.qml:339
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

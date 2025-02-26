@@ -5137,26 +5137,26 @@ msgid ""
 "and the longest hand indicates the seconds."
 msgstr "最短的指針表示小時，長一點的表示分鐘，最長的指針則表示秒。"
 
-#: activities/clockgame/Clockgame.qml:119
+#: activities/clockgame/Clockgame.qml:117
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "將錶設定成："
 
-#: activities/clockgame/Clockgame.qml:122
+#: activities/clockgame/Clockgame.qml:120
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
 msgid_plural "%n hour(s)"
 msgstr[0] "%n 小時"
 
-#: activities/clockgame/Clockgame.qml:125
+#: activities/clockgame/Clockgame.qml:123
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
 msgid_plural "%n minute(s)"
 msgstr[0] "%n 分"
 
-#: activities/clockgame/Clockgame.qml:128
+#: activities/clockgame/Clockgame.qml:126
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -17060,12 +17060,12 @@ msgid ""
 msgstr ""
 "飛機上的旗子會顯示一個字母。選擇所有包含該字母的單字，然後按下「確定」鍵。"
 
-#: activities/letter-in-word/LetterInWord.qml:320
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "抱歉，目前還沒有您的語言的翻譯。"
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:337
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17075,7 +17075,7 @@ msgstr ""
 "GCompris 由 KDE 社群開發。您可以加入 <a href=\"%2\">%2</a> 翻譯團隊來翻譯 "
 "GCompris"
 
-#: activities/letter-in-word/LetterInWord.qml:323
+#: activities/letter-in-word/LetterInWord.qml:339
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

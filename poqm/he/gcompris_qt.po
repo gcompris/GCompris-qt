@@ -5020,12 +5020,12 @@ msgstr ""
 "המחוג הקצר ביותר מציין את השעות, המחוג הארוך יותר מציג את הדקות והמחוג הארוך "
 "ביותר מציין את השניות."
 
-#: activities/clockgame/Clockgame.qml:119
+#: activities/clockgame/Clockgame.qml:117
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "שנה את השעה ל:"
 
-#: activities/clockgame/Clockgame.qml:122
+#: activities/clockgame/Clockgame.qml:120
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5035,7 +5035,7 @@ msgstr[1] "שעתיים"
 msgstr[2] "%n שעות"
 msgstr[3] "%n שעות"
 
-#: activities/clockgame/Clockgame.qml:125
+#: activities/clockgame/Clockgame.qml:123
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5045,7 +5045,7 @@ msgstr[1] "שתי דקות"
 msgstr[2] "%n דקות"
 msgstr[3] "%n דקות"
 
-#: activities/clockgame/Clockgame.qml:128
+#: activities/clockgame/Clockgame.qml:126
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -16908,12 +16908,12 @@ msgstr ""
 "על הדגל שמובר למטוס מופיעה אות, לבחור את כל המילים או החפצים שבהן האות "
 "מופיעה ואז ללחוץ \"אישור\"."
 
-#: activities/letter-in-word/LetterInWord.qml:320
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "אנו מצטערים, אין לנו עדיין תרגום לשפה שלך."
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:337
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16923,7 +16923,7 @@ msgstr ""
 "התוכנה GCompris מפותחת על ידי קהילת KDE, תוכל/י להצטרף לצוות המתרגמים/ות ב "
 "<a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:323
+#: activities/letter-in-word/LetterInWord.qml:339
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

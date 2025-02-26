@@ -5177,12 +5177,12 @@ msgstr ""
 "Самая короткая стрелка показывает часы, более длинная стрелка показывает "
 "минуты, и самая длинная стрелка показывает секунды."
 
-#: activities/clockgame/Clockgame.qml:119
+#: activities/clockgame/Clockgame.qml:117
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Установи часы на:"
 
-#: activities/clockgame/Clockgame.qml:122
+#: activities/clockgame/Clockgame.qml:120
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5191,7 +5191,7 @@ msgstr[0] "%n час"
 msgstr[1] "%n часа"
 msgstr[2] "%n часов"
 
-#: activities/clockgame/Clockgame.qml:125
+#: activities/clockgame/Clockgame.qml:123
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5200,7 +5200,7 @@ msgstr[0] "%n минуту"
 msgstr[1] "%n минуты"
 msgstr[2] "%n минут"
 
-#: activities/clockgame/Clockgame.qml:128
+#: activities/clockgame/Clockgame.qml:126
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -17211,12 +17211,12 @@ msgstr ""
 "На флаге, привязанном к самолёту, написана буква. Выбери все слова, которые "
 "содержат эту букву, и нажми кнопку «ОК»."
 
-#: activities/letter-in-word/LetterInWord.qml:320
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "К сожалению, перевода на твой язык пока нет."
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:337
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17228,7 +17228,7 @@ msgstr ""
 "странице <a href=\"https://kde.ru/translation\">https://kde.ru/translation</"
 "a> (или на другие языки — на странице <a href=\"%2\">%2</a>)."
 
-#: activities/letter-in-word/LetterInWord.qml:323
+#: activities/letter-in-word/LetterInWord.qml:339
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

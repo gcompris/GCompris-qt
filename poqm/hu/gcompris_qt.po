@@ -5141,12 +5141,12 @@ msgstr ""
 "A rövidebb kar az órát jelzi, a hosszabbik a perceket, a leghosszabb a "
 "másodperceket jelöli."
 
-#: activities/clockgame/Clockgame.qml:119
+#: activities/clockgame/Clockgame.qml:117
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Állítsd be az órát erre:"
 
-#: activities/clockgame/Clockgame.qml:122
+#: activities/clockgame/Clockgame.qml:120
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5154,7 +5154,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n óra"
 msgstr[1] "%n órák"
 
-#: activities/clockgame/Clockgame.qml:125
+#: activities/clockgame/Clockgame.qml:123
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5162,7 +5162,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n perc"
 msgstr[1] "%n percek"
 
-#: activities/clockgame/Clockgame.qml:128
+#: activities/clockgame/Clockgame.qml:126
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -17113,12 +17113,12 @@ msgstr ""
 "A repülő egy zászlót visz amire egy betűt írtunk fel. Válaszd ki azon "
 "szavakat, amelyekben a megadott betű szerepel, majd kattints az OK-ra!"
 
-#: activities/letter-in-word/LetterInWord.qml:320
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Sajnáljuk nincs elérhető fordítás a választott nyelven."
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:337
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17128,7 +17128,7 @@ msgstr ""
 "A GCompris a KDE közösség fejlesztésében készül. Te is lehetsz fordító ha "
 "csatlakozol a csapatunkhoz a <a href=\"%2\">%2</a> oldalon"
 
-#: activities/letter-in-word/LetterInWord.qml:323
+#: activities/letter-in-word/LetterInWord.qml:339
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

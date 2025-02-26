@@ -5169,12 +5169,12 @@ msgstr ""
 "Ar biz bihanañ a ro an eur, ar biz bras a ro ar munutennoù hag ar biz brasañ "
 "a ro an eilennoù."
 
-#: activities/clockgame/Clockgame.qml:119
+#: activities/clockgame/Clockgame.qml:117
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Lak bizied an eurier war :"
 
-#: activities/clockgame/Clockgame.qml:122
+#: activities/clockgame/Clockgame.qml:120
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5182,7 +5182,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n eurv"
 msgstr[1] "%n eurvezh"
 
-#: activities/clockgame/Clockgame.qml:125
+#: activities/clockgame/Clockgame.qml:123
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5190,7 +5190,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n v/munutenn"
 msgstr[1] "%n v/munutenn"
 
-#: activities/clockgame/Clockgame.qml:128
+#: activities/clockgame/Clockgame.qml:126
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -17219,12 +17219,12 @@ msgstr ""
 "War ar banniel staget ouzh ar c'harr-nij ez eus ul lizherenn war-wel. Dibab "
 "er rollan holl c'herioù gant al lizherenn-se enne ha klik goude war OK."
 
-#: activities/letter-in-word/LetterInWord.qml:320
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Digarez, n'eo ket bet troet c'hoazh evit da yezh."
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:337
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17234,7 +17234,7 @@ msgstr ""
 "Diorroet eo GCompris gant kumuniezh KDE. Troit GCompris en ur gemer perzh en "
 "ur strollad treiñ e <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:323
+#: activities/letter-in-word/LetterInWord.qml:339
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

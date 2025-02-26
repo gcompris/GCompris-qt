@@ -5086,12 +5086,12 @@ msgstr ""
 "ഏറ്റവും ചെറിയ സൂചി മണിക്കൂറിനെയും ഇടത്തരം സൂചി മിനുട്ടിനെയും ഏറ്റവും വലിയ സൂചി സെക്കന്റിനെയും "
 "സൂചിപ്പിക്കുന്നു."
 
-#: activities/clockgame/Clockgame.qml:119
+#: activities/clockgame/Clockgame.qml:117
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "വാച്ചിൽ ക്രമീകരിക്കുക: "
 
-#: activities/clockgame/Clockgame.qml:122
+#: activities/clockgame/Clockgame.qml:120
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5099,7 +5099,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n മണിക്കൂർ"
 msgstr[1] "%n മണിക്കൂർ"
 
-#: activities/clockgame/Clockgame.qml:125
+#: activities/clockgame/Clockgame.qml:123
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5107,7 +5107,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n മിനുട്ട്"
 msgstr[1] "%n മിനുട്ട്"
 
-#: activities/clockgame/Clockgame.qml:128
+#: activities/clockgame/Clockgame.qml:126
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -16992,12 +16992,12 @@ msgstr ""
 "വിമാനത്തോട് ബന്ധിപ്പിച്ചിരിക്കുന്ന കൊടിയിൽ ഒരു അക്ഷരം കാണാം. തന്നിരിക്കുന്ന വാക്കുകളുടെ "
 "പട്ടികയിൽ, ആ അക്ഷരമുള്ള വാക്കുകൾ തിരഞ്ഞെടുത്ത് ഒകെ ബട്ടൺ അമർത്തുക."
 
-#: activities/letter-in-word/LetterInWord.qml:320
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "ക്ഷമിക്കണം, നിങ്ങളുടെ ഭാഷയ്ക്ക് തർജ്ജിമ ഇതുവരെ ഇല്ല."
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:337
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17007,7 +17007,7 @@ msgstr ""
 "കെഡിഇ കൂട്ടായ്മയാണ് ജികോംപ്രി ഡെവലപ് ചെയ്തത്, ഒരു തർജ്ജിമ സംഘത്തിൽ ചേർന്നാൽ നിങ്ങൾക്ക് "
 "ജികോംപ്രി തർജ്ജിമ ചെയ്യാൻ കഴിയും <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:323
+#: activities/letter-in-word/LetterInWord.qml:339
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

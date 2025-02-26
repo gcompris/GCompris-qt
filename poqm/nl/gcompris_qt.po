@@ -5182,12 +5182,12 @@ msgstr ""
 "De kortste wijzer geeft de uren aan, een langere wijzer geeft de minuten aan "
 "en de langste wijzer geeft de seconden aan."
 
-#: activities/clockgame/Clockgame.qml:119
+#: activities/clockgame/Clockgame.qml:117
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Stel de klok in op:"
 
-#: activities/clockgame/Clockgame.qml:122
+#: activities/clockgame/Clockgame.qml:120
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5195,7 +5195,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n uur"
 msgstr[1] "%n uren"
 
-#: activities/clockgame/Clockgame.qml:125
+#: activities/clockgame/Clockgame.qml:123
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5203,7 +5203,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n minu(u)t(en)"
 msgstr[1] "%n minu(u)t(en)"
 
-#: activities/clockgame/Clockgame.qml:128
+#: activities/clockgame/Clockgame.qml:126
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -17414,12 +17414,12 @@ msgstr ""
 "Er wordt een letter op de aan het vliegtuig gehangen vlag getoond. Selecteer "
 "alle woorden in de lijst met deze letter en druk daarna op de knop OK."
 
-#: activities/letter-in-word/LetterInWord.qml:320
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Helaas, we hebben nog geen vertaling voor jouw taal."
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:337
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17429,7 +17429,7 @@ msgstr ""
 "GCompris is ontwikkeld door de KDE gemeenschap, je kunt GCompris vertalen "
 "door mee te doen met een vertaalteam op <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:323
+#: activities/letter-in-word/LetterInWord.qml:339
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

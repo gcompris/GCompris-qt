@@ -5225,12 +5225,12 @@ msgstr ""
 "Akrepi më i shkurtër tregon orët, një pak më i gjatë tregon minutat dhe më i "
 "gjati tregon sekondat."
 
-#: activities/clockgame/Clockgame.qml:119
+#: activities/clockgame/Clockgame.qml:117
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Vëreni orën sa:"
 
-#: activities/clockgame/Clockgame.qml:122
+#: activities/clockgame/Clockgame.qml:120
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5238,7 +5238,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n orë"
 msgstr[1] "%n orë"
 
-#: activities/clockgame/Clockgame.qml:125
+#: activities/clockgame/Clockgame.qml:123
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5246,7 +5246,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n minutë"
 msgstr[1] "%n minuta"
 
-#: activities/clockgame/Clockgame.qml:128
+#: activities/clockgame/Clockgame.qml:126
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -17295,12 +17295,12 @@ msgstr ""
 "Te banderola ngjitur avionit shfaqet një shkronjë. Përzgjidhni te lista "
 "krejt fjalët që përmbajnë këtë shkronjë dhe mandej shtypni butonin OK."
 
-#: activities/letter-in-word/LetterInWord.qml:320
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Na ndjeni, ende s’kemi një përkthim për gjuhën tuaj."
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:337
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17310,7 +17310,7 @@ msgstr ""
 "GCompris zhvillohet nga bashkësia KDE, mund ta përktheni GCompris-në duke u "
 "bërë pjesë e një ekipi përkthimi te <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:323
+#: activities/letter-in-word/LetterInWord.qml:339
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

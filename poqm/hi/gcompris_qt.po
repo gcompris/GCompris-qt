@@ -5523,12 +5523,12 @@ msgid ""
 "and the longest hand indicates the seconds."
 msgstr ""
 
-#: activities/clockgame/Clockgame.qml:119
+#: activities/clockgame/Clockgame.qml:117
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "घड़ी को सेट करें:"
 
-#: activities/clockgame/Clockgame.qml:122
+#: activities/clockgame/Clockgame.qml:120
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5536,7 +5536,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n घंटा"
 msgstr[1] "%n घंटे"
 
-#: activities/clockgame/Clockgame.qml:125
+#: activities/clockgame/Clockgame.qml:123
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5544,7 +5544,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n मिनट"
 msgstr[1] "%n मिनट"
 
-#: activities/clockgame/Clockgame.qml:128
+#: activities/clockgame/Clockgame.qml:126
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -18904,12 +18904,12 @@ msgstr ""
 "एक अक्षर लिखा या बोला गया है।  कुछ शब्दों को प्रदर्शित किया जाता है, बच्चों को शब्द या "
 "शब्दों में ये अक्षर खोजना है।"
 
-#: activities/letter-in-word/LetterInWord.qml:320
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "क्षमा करें, इस भाषा का अनुवाद अभी हमारे पास उपलब्द नहीं है"
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:337
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -18919,7 +18919,7 @@ msgstr ""
 "जीकॉमप्री को केडीई समुदाय द्वारा विकसित किया गया है, आप <a href=\"%2\">%2</a> पर "
 "एक अनुवाद टीम में शामिल होकर जीकॉमप्री का अनुवाद कर सकते हैं।"
 
-#: activities/letter-in-word/LetterInWord.qml:323
+#: activities/letter-in-word/LetterInWord.qml:339
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
