@@ -1,11 +1,13 @@
 /* GCompris - family.qml
  *
  * SPDX-FileCopyrightText: 2016 Rajdeep Kaur <rajdeep.kaur@kde.org>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *
  *   Rajdeep Kaur <rajdeep.kaur@kde.org>
  *   Rudra Nil Basu <rudra.nil.basu.1996@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -29,7 +31,6 @@ ActivityBase {
         width: parent.width
         height: parent.height
         fillMode: Image.PreserveAspectCrop
-        property bool horizontalLayout: activityBackground.width >= activityBackground.height
 
         signal start
         signal stop
@@ -39,14 +40,9 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
-        property real treeAreaWidth: activityBackground.horizontalLayout ? activityBackground.width * 0.65 : activityBackground.width
-        property real treeAreaHeight: activityBackground.horizontalLayout ? activityBackground.height : activityBackground.height * 0.65
+        readonly property bool horizontalLayout: layoutArea.width >= layoutArea.height
 
-        property real nodeWidth: (0.8 * treeAreaWidth) / 5
-        property real nodeHeight: (0.8 * treeAreaWidth) / 5
-
-        property real nodeWidthRatio: nodeWidth / treeAreaWidth
-        property real nodeHeightRatio: nodeHeight / treeAreaHeight
+        readonly property real nodeSize: Math.min(treeArea.width / 8, treeArea.height * 0.2)
 
         onWidthChanged: loadDatasetDelay.start()
         onHeightChanged: if (!loadDatasetDelay.running) {
@@ -75,15 +71,17 @@ ActivityBase {
             property alias nodeRepeater: nodeRepeater
             property alias answersChoice: answersChoice
             property alias edgeRepeater: edgeRepeater
-            property alias ringRepeator: ringRepeator
+            property alias ringRepeater: ringRepeater
             property alias dataset: dataset
             property string mode: activity.mode
             property alias questionTopic: question.questionTopic
             property alias selectedPairs: selectedPairs
             property alias loadDatasetDelay: loadDatasetDelay
             property bool buttonsBlocked: false
-            property point questionMarkPosition: questionMarkPosition
-            property point meLabelPosition: meLabelPosition
+            property point meLabelPosition: [0,0]
+            property int meLabelSide: 0
+            property point questionMarkPosition: [0,0]
+            property int questionMarkSide: 0
         }
 
         onStart: { Activity.start(items) }
@@ -113,7 +111,7 @@ ActivityBase {
             }
 
             function checkResult() {
-                if (firstNodePointer.weight == (secondNodePointer.weight * -1) && firstNodePointer.weight != 0) {
+                if (firstNodePointer.nodeWeight == (secondNodePointer.nodeWeight * -1) && firstNodePointer.nodeWeight != 0) {
                     return true
                 } else {
                     return false
@@ -149,233 +147,226 @@ ActivityBase {
         }
 
         Item {
-            id: board
-            width: activityBackground.width
-            height: activityBackground.height
-            Rectangle {
-                id: treeArea
-                color: "transparent"
-                width: activityBackground.treeAreaWidth
-                height: activityBackground.treeAreaHeight
-                anchors.horizontalCenter: activity.mode == "find_relative" ? board.horizontalCenter : undefined
-                anchors.verticalCenter: activity.mode == "find_relative" ? board.verticalCenter : undefined
-                border.width: 0
-                Item {
-                    id: treeItem
-                    Repeater {
-                        id: nodeRepeater
-                        model: ListModel {}
-                        delegate:
-                            Node {
-                            id: currentPointer
-                            x: xPosition * treeArea.width
-                            y: yPosition * treeArea.height
-                            z: 30
-                            width: treeArea.width / 5
-                            height: treeArea.width / 5
-                            nodeWidth: currentPointer.width
-                            nodeHeight: currentPointer.height
-                            nodeImageSource: Activity.url + nodeValue
-                            borderColor: "#373737"
-                            borderWidth: 8
-                            color: "transparent"
-                            radius: nodeWidth / 2
-                            state:  currentState
-                            weight: nodeWeight
+            id: layoutArea
+            anchors.fill: parent
+            anchors.margins: GCStyle.baseMargins
+            anchors.bottomMargin: bar.height * 1.2
+        }
 
-                            states: [
-                               State {
-                                     name: "active"
-                                     PropertyChanges {
-                                         currentPointer {
-                                             borderColor: "#e1e1e1"
-                                         }
-                                     }
-                               },
-                               State {
-                                      name: "deactivate"
-                                      PropertyChanges {
-                                          target: currentPointer
-                                      }
-                               },
-                               State {
-                                    name: "activeTo"
-                                    PropertyChanges {
-                                        currentPointer {
-                                            borderColor: "#e77936"
-                                            color: "#80f2f2f2"
-                                        }
-                                    }
-                               }
-                            ]
-                        }
-                    }
+        Item {
+            id: treeArea
+            anchors.fill: layoutArea
+            anchors.topMargin: activity.mode == "find_relative" ?
+                questionBg.height + GCStyle.baseMargins :
+                (activityBackground.horizontalLayout ? 0 : questionArea.height)
+            anchors.rightMargin: activityBackground.horizontalLayout && activity.mode == "family" ?
+                questionArea.width + GCStyle.baseMargins : 0
 
-                    Rectangle {
-                        id: me
-                        visible: dataset.levelElements[bar.level-1].captions[0] !== undefined && activity.mode == "family"
-                        x: items.meLabelPosition.x * treeArea.width
-                        y: items.meLabelPosition.y * treeArea.height
+            Item {
+                id: treeItem
+                width: activityBackground.nodeSize * 8
+                height: activityBackground.nodeSize * 5
+                anchors.centerIn: parent
 
-                        width: treeArea.width / 12
-                        height: treeArea.height / 14
-
-                        radius: 5
-                        color: "#f2f2f2"
-                        border.color: "#e1e1e1"
-                        GCText {
-                            id: meLabel
-                            text: qsTr("Me")
-                            color: "#555555"
-                            anchors {
-                                horizontalCenter: parent.horizontalCenter
-                                verticalCenter: parent.verticalCenter
-                            }
-                        }
-                    }
-
-                    Rectangle {
-                        id: questionmark
-                        visible: dataset.levelElements[bar.level-1].captions[1] !== undefined && activity.mode == "family"
-                        x: items.questionMarkPosition.x * treeArea.width
-                        y: items.questionMarkPosition.y * treeArea.height
-
-                        width: treeArea.width / 14
-                        height: width
-
-                        radius: width/2
-                        color: "#f2f2f2"
-                        border.color: "#e77936"
-                        GCText {
-                            id: qLabel
-                            text: qsTr("?")
-                            color: "#555555"
-                            anchors {
-                                horizontalCenter: parent.horizontalCenter
-                                verticalCenter: parent.verticalCenter
-                            }
-                        }
-                    }
-
-                    Repeater {
-                        id: edgeRepeater
-                        model: ListModel {}
-                        delegate: Rectangle {
-                            id: edge
-                            z: 20
-                            opacity: 1
-                            antialiasing: true
-                            transformOrigin: Item.TopLeft
-                            x: _x1 * treeArea.width
-                            y: _y1 * treeArea.height
-                            property var x2: _x2 * treeArea.width
-                            property var y2: _y2 * treeArea.height
-                            width: Math.sqrt(Math.pow(x - x2, 2) + Math.pow(y- y2, 2))
-                            height: 4 * ApplicationInfo.ratio
-                            rotation: (Math.atan((y2 - y)/(x2-x)) * 180 / Math.PI) + (((y2-y) < 0 && (x2-x) < 0) * 180) + (((y2-y) >= 0 && (x2-x) < 0) * 180)
-                            color: "#373737"
-                        }
-                    }
-
-                    Repeater {
-                        id: ringRepeator
-                        model: ListModel {}
-                        delegate: Image {
-                            id: ring
-                            source: Activity.url + "rings.svg"
-                            width: treeArea.width * 0.05
-                            sourceSize.width: width
-                            fillMode: Image.PreserveAspectCrop
-                            x: ringx * treeArea.width
-                            y: ringy * treeArea.height
-                            z: 40
-                        }
+                Repeater {
+                    id: edgeRepeater
+                    model: ListModel {}
+                    delegate: Rectangle {
+                        id: edge
+                        required property int _x1
+                        required property int _x2
+                        required property int _y1
+                        required property int _y2
+                        opacity: 1
+                        x: (_x1 - 0.5) * activityBackground.nodeSize - GCStyle.thickerBorder * 0.5
+                        y: (_y1 - 0.5) * activityBackground.nodeSize - GCStyle.thickBorder * 0.5
+                        width: _x1 === _x2 ? GCStyle.thickerBorder :
+                            (_x2 - _x1) * activityBackground.nodeSize
+                        height: _y1 === _y2 ? GCStyle.thickerBorder :
+                            (_y2 - _y1) * activityBackground.nodeSize
+                        color: GCStyle.darkBorder
                     }
                 }
-            }
 
-            Rectangle {
-                id: answers
-                color: "transparent"
-                width: activityBackground.horizontalLayout ? activityBackground.width*0.35 : activityBackground.width
-                height: activityBackground.horizontalLayout ? activityBackground.height : activityBackground.height*0.35
-                anchors.left: activityBackground.horizontalLayout ? treeArea.right : board.left
-                anchors.top: activityBackground.horizontalLayout ? board.top: treeArea.bottom
-                border.width: 0
-                Rectangle {
-                    width: parent.width * 0.99
-                    height: parent.height * 0.99
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    color: "transparent"
+                Repeater {
+                    id: ringRepeater
+                    model: ListModel {}
+                    delegate: Image {
+                        id: ring
+                        required property int ringX
+                        required property int ringY
+                        source: Activity.url + "rings.svg"
+                        width: activityBackground.nodeSize * 0.4
+                        height: width
+                        sourceSize.width: width
+                        sourceSize.height: height
+                        fillMode: Image.PreserveAspectFit
+                        x: (ringX + 0.3) * activityBackground.nodeSize
+                        y: (ringY + 0.3) * activityBackground.nodeSize
+                    }
+                }
 
-                    Grid {
-                        id: answersGrid
-                        visible: activity.mode == "family" ? true : false
-                        columns: 1
-                        rowSpacing: 10*ApplicationInfo.ratio
+                Repeater {
+                    id: nodeRepeater
+                    model: ListModel {}
+                    delegate:
+                    Node {
+                        id: currentPointer
+                        x: xPosition * activityBackground.nodeSize
+                        y: yPosition * activityBackground.nodeSize
+                        width: activityBackground.nodeSize
+                        height: activityBackground.nodeSize
+                        nodeImageSource: Activity.url + nodeValue
+                        border.color: GCStyle.darkBorder
+                        border.width: GCStyle.thickBorder
+                        color: "#7CD5F5"
+                        state:  currentState
+
                         states: [
                             State {
-                                name: "anchorCenter"; when: activityBackground.horizontalLayout
-                                AnchorChanges {
-                                    target: answersGrid
-                                    anchors.verticalCenter: parent.verticalCenter
-                                    anchors.left: parent.left
+                                name: "active"
+                                PropertyChanges {
+                                    currentPointer {
+                                        border.color: "#e1e1e1"
+                                    }
                                 }
                             },
                             State {
-                                name: "anchorTop"; when: !activityBackground.horizontalLayout
-                                AnchorChanges {
-                                    target: answersGrid
-                                    anchors.top: parent.top
-                                    anchors.horizontalCenter: parent.horizontalCenter
+                                name: "deactivate"
+                                PropertyChanges {
+                                    target: currentPointer
+                                }
+                            },
+                            State {
+                                name: "activeTo"
+                                PropertyChanges {
+                                    currentPointer {
+                                        border.color: "#e77936"
+                                        color: "#BAE4F3"
+                                    }
                                 }
                             }
                         ]
-                        Repeater {
-                            id: answersChoice
-                            model: ListModel {}
-                            delegate:
-                                AnswerButton {
-                                    id: options
-                                    width: answers.width*0.75
-                                    height: answers.height*Activity.answerButtonRatio
-                                    textLabel: optionn
-                                    isCorrectAnswer: textLabel === answer
-                                    onCorrectlyPressed: bonus.good("lion")
-                                    onIncorrectlyPressed: bonus.bad("lion")
-                                    onPressed: items.buttonsBlocked = true
-                                    blockAllButtonClicks: items.buttonsBlocked
-                            }
-                        }
+                    }
+                }
+
+                Rectangle {
+                    id: me
+                    visible: dataset.levelElements[bar.level-1].captions[0] !== undefined && activity.mode == "family"
+                    x: (items.meLabelSide === 0 ? -width : activityBackground.nodeSize) + items.meLabelPosition.x * activityBackground.nodeSize
+                    y: items.meLabelPosition.y * activityBackground.nodeSize
+                    width: activityBackground.nodeSize * 0.8
+                    height: activityBackground.nodeSize * 0.4
+                    radius: GCStyle.halfMargins
+                    color: GCStyle.lightBg
+                    border.width: GCStyle.thinnestBorder
+                    border.color: GCStyle.blueBorder
+
+                    GCText {
+                        id: meLabel
+                        text: qsTr("Me")
+                        color: GCStyle.darkText
+                        fontSizeMode: Text.Fit
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        anchors.fill: parent
+                        anchors.leftMargin: GCStyle.tinyMargins
+                        anchors.rightMargin: GCStyle.tinyMargins
+                    }
+                }
+
+                Rectangle {
+                    id: questionmark
+                    visible: dataset.levelElements[bar.level-1].captions[1] !== undefined && activity.mode == "family"
+                    x: (items.questionMarkSide === 0 ? -width : activityBackground.nodeSize) + items.questionMarkPosition.x * activityBackground.nodeSize
+                    y: items.questionMarkPosition.y * activityBackground.nodeSize
+
+                    width: activityBackground.nodeSize * 0.4
+                    height: width
+
+                    radius: width * 0.5
+                    color: GCStyle.lightBg
+                    border.color: "#e77936"
+                    GCText {
+                        id: qLabel
+                        text: qsTr("?")
+                        color: GCStyle.darkText
+                        fontSizeMode: Text.Fit
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        anchors.fill: parent
                     }
                 }
             }
+        }
+
+        Item {
+            id: questionArea
+            anchors.right: layoutArea.right
+            anchors.top: layoutArea.top
+            width: activityBackground.horizontalLayout ? layoutArea.width * 0.3 : layoutArea.width
+            height: activityBackground.horizontalLayout ? layoutArea.height : layoutArea.height * 0.3
+
+            readonly property int buttonWidth: Math.min(450 * ApplicationInfo.ratio,
+                                                        questionArea.width)
+            readonly property int buttonHeight: Math.min(40 * ApplicationInfo.ratio,
+                    questionArea.height / Math.max(1, answersChoice.count) - GCStyle.halfMargins)
+
+            Grid {
+                id: answersGrid
+                visible: activity.mode == "family" ? true : false
+                columns: 1
+                rowSpacing: GCStyle.halfMargins
+                width: childrenRect.width
+                height: childrenRect.height
+                anchors.centerIn: parent
+
+                Repeater {
+                    id: answersChoice
+                    model: ListModel {}
+                    delegate:
+                    AnswerButton {
+                        id: options
+                        width: questionArea.buttonWidth
+                        height: questionArea.buttonHeight
+                        textLabel: optionText
+                        isCorrectAnswer: textLabel === answer
+                        onCorrectlyPressed: bonus.good("lion")
+                        onIncorrectlyPressed: bonus.bad("lion")
+                        onPressed: items.buttonsBlocked = true
+                        blockAllButtonClicks: items.buttonsBlocked
+                    }
+                }
+            }
+        }
+
+        Rectangle {
+            id: questionBg
+            visible: question.visible
+            width: question.contentWidth + 2 * GCStyle.baseMargins
+            height: question.contentHeight + GCStyle.baseMargins
+            anchors.horizontalCenter: question.horizontalCenter
+            anchors.top: layoutArea.top
+            radius: GCStyle.halfMargins
+            border.width: GCStyle.thinnestBorder
+            border.color: GCStyle.blueBorder
+            color: GCStyle.lightBg
         }
 
         GCText {
             id: question
             property string questionTopic
             visible: activity.mode == "find_relative" ? true : false
-            width: activityBackground.width
-            anchors.horizontalCenter: activityBackground.horizontalCenter
+            anchors.top: layoutArea.top
+            anchors.left: layoutArea.left
+            anchors.right: layoutArea.right
+            anchors.margins: GCStyle.baseMargins
+            anchors.topMargin: GCStyle.halfMargins
+            height: 40 * ApplicationInfo.ratio
             horizontalAlignment: Text.AlignHCenter
             wrapMode: Text.WordWrap
             fontSize: smallSize
             text: qsTr("Select one of the pairs corresponding to: %1").arg(questionTopic)
-
-            Rectangle {
-                width: parent.width
-                height: parent.height
-                anchors.horizontalCenter: parent.horizontalCenter
-
-                z: parent.z - 1
-                radius: 10
-                border.width: 1
-
-                color: "white"
-                opacity: 0.8
-            }
         }
 
         DialogHelp {
