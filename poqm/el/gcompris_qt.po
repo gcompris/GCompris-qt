@@ -5289,12 +5289,12 @@ msgstr ""
 "Ο μικρός δείκτης δείχνει την ώρα, ο μεγάλος τα λεπτά και ο μεγαλύτερος τα "
 "δευτερόλεπτα."
 
-#: activities/clockgame/Clockgame.qml:117
+#: activities/clockgame/Clockgame.qml:119
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Η ώρα είναι:"
 
-#: activities/clockgame/Clockgame.qml:120
+#: activities/clockgame/Clockgame.qml:122
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5302,7 +5302,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n ώρα"
 msgstr[1] "%n ώρες"
 
-#: activities/clockgame/Clockgame.qml:123
+#: activities/clockgame/Clockgame.qml:125
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5310,7 +5310,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n λεπτό"
 msgstr[1] "%n λεπτά"
 
-#: activities/clockgame/Clockgame.qml:126
+#: activities/clockgame/Clockgame.qml:128
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5403,67 +5403,67 @@ msgstr ""
 "βασικά χρώματα είναι: κυανό (απόχρωση του μπλε), ματζέντα ( απόχρωση του "
 "ροζ) και κίτρινο."
 
-#: activities/color_mix/ColorMix.qml:91
+#: activities/color_mix/ColorMix.qml:90
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "Ταίριαξε τα χρώματα"
 
-#: activities/color_mix/ColorMix.qml:223
+#: activities/color_mix/ColorMix.qml:222
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "Όχι αρκετό κόκκινο"
 
-#: activities/color_mix/ColorMix.qml:225
+#: activities/color_mix/ColorMix.qml:224
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "Πάρα πολύ κόκκινο"
 
-#: activities/color_mix/ColorMix.qml:228
+#: activities/color_mix/ColorMix.qml:227
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "Όχι αρκετό πράσινο"
 
-#: activities/color_mix/ColorMix.qml:230
+#: activities/color_mix/ColorMix.qml:229
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "Πάρα πολύ πράσινο"
 
-#: activities/color_mix/ColorMix.qml:233
+#: activities/color_mix/ColorMix.qml:232
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "Όχι αρκετό μπλε"
 
-#: activities/color_mix/ColorMix.qml:235
+#: activities/color_mix/ColorMix.qml:234
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "Πάρα πολύ μπλε"
 
-#: activities/color_mix/ColorMix.qml:239
+#: activities/color_mix/ColorMix.qml:238
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "Όχι αρκετό ματζέντα"
 
-#: activities/color_mix/ColorMix.qml:241
+#: activities/color_mix/ColorMix.qml:240
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "Πάρα πολύ ματζέντα"
 
-#: activities/color_mix/ColorMix.qml:244
+#: activities/color_mix/ColorMix.qml:243
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "Όχι αρκετό κίτρινο"
 
-#: activities/color_mix/ColorMix.qml:246
+#: activities/color_mix/ColorMix.qml:245
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "Πάρα πολύ κίτρινο"
 
-#: activities/color_mix/ColorMix.qml:249
+#: activities/color_mix/ColorMix.qml:248
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "Όχι αρκετό κυανό"
 
-#: activities/color_mix/ColorMix.qml:251
+#: activities/color_mix/ColorMix.qml:250
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "Πάρα πολύ κυανό"
@@ -5611,7 +5611,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Βρες τη ροζ πάπια"
 
-#: activities/colors/FindIt.qml:272
+#: activities/colors/FindIt.qml:276
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5621,12 +5621,12 @@ msgstr ""
 "ακόμη και αν αυτοί ή τα ηχητικά εφέ είναι απενεργοποιημένα στις κύριες "
 "Ρυθμίσεις."
 
-#: activities/colors/FindIt.qml:273
+#: activities/colors/FindIt.qml:277
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Έξοδος"
 
-#: activities/colors/FindIt.qml:274
+#: activities/colors/FindIt.qml:278
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Συνέχεια"
@@ -28290,27 +28290,27 @@ msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
 msgstr "%1 - Ρυθμίσεις"
 
-#: core/DialogChooseLevel.qml:202
+#: core/DialogChooseLevel.qml:205
 msgctxt "DialogChooseLevel|"
 msgid "Dataset"
 msgstr "Δεδομένα"
 
-#: core/DialogChooseLevel.qml:215
+#: core/DialogChooseLevel.qml:218
 msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "Επιλογές"
 
-#: core/DialogChooseLevel.qml:345
+#: core/DialogChooseLevel.qml:348
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "Άκυρο"
 
-#: core/DialogChooseLevel.qml:353
+#: core/DialogChooseLevel.qml:356
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "Αποθήκευση"
 
-#: core/DialogChooseLevel.qml:367
+#: core/DialogChooseLevel.qml:370
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "Αποθήκευση και εκκίνηση"
@@ -28644,7 +28644,7 @@ msgstr ""
 "Καθόρισε σε ποιο επίπεδο θα ξεκινήσει η δραστηριότητα. Χρησιμοποιείται μόνο "
 "όταν έχει γίνει η επιλογή --launch."
 
-#: core/main.qml:235
+#: core/main.qml:238
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
@@ -28653,32 +28653,32 @@ msgstr ""
 "Θέλεις να γίνεται αυτόματα η λήψη ή η ενημέρωση των παρακάτω εξωτερικών "
 "πακέτων όταν ξεκινά το GCompris;"
 
-#: core/main.qml:237
+#: core/main.qml:240
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "Αρχεία ήχου για τη γλώσσα σου"
 
-#: core/main.qml:238
+#: core/main.qml:241
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "Χρήση σειράς εικόνων με ολόκληρες λέξεις"
 
-#: core/main.qml:239
+#: core/main.qml:242
 msgctxt "main|"
 msgid "Background music"
 msgstr "Μουσική παρασκηνίου"
 
-#: core/main.qml:245
+#: core/main.qml:248
 msgctxt "main|"
 msgid "Yes"
 msgstr "Ναι"
 
-#: core/main.qml:252
+#: core/main.qml:255
 msgctxt "main|"
 msgid "No"
 msgstr "Όχι"
 
-#: core/main.qml:274
+#: core/main.qml:277
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
@@ -28687,27 +28687,27 @@ msgstr ""
 "Για μερικές δραστηριότητες υπάρχουν διαθέσιμα νέα σύνολα δεδομένων. Θέλεις "
 "να επαναφέρεις την επιλογή του συνόλου δεδομένων τους;"
 
-#: core/main.qml:275
+#: core/main.qml:278
 msgctxt "main|"
 msgid "Apply"
 msgstr "Εφαρμογή"
 
-#: core/main.qml:276
+#: core/main.qml:279
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Άκυρο"
 
-#: core/main.qml:361
+#: core/main.qml:364
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Καλωσήρθες στο GCompris!"
 
-#: core/main.qml:362
+#: core/main.qml:365
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "Εκτελείς το GCompris για πρώτη φορά."
 
-#: core/main.qml:363
+#: core/main.qml:366
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -28717,18 +28717,18 @@ msgstr ""
 "έχουν προσαρμοστεί σωστά στις δικές σου προτιμήσεις. Τέτοιες επιλογές "
 "μπορείς να κάνεις από τις Ρυθμίσεις."
 
-#: core/main.qml:365
+#: core/main.qml:368
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Να περάσεις καλά!"
 
-#: core/main.qml:367
+#: core/main.qml:370
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Η ενεργή γλώσσα είναι τα %1 (%2)."
 
-#: core/main.qml:399
+#: core/main.qml:402
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "Το GCompris ενημερώθηκε. Εδώ είναι οι αλλαγές που έγιναν:<br/>"
