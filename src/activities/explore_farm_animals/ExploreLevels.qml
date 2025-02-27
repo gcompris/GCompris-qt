@@ -141,13 +141,13 @@ ActivityBase {
 
         Rectangle {
             id: instruction
-            width: instructionText.contentWidth + 20 * ApplicationInfo.ratio
-            height: instructionText.contentHeight + 10 * ApplicationInfo.ratio
+            width: instructionText.contentWidth + 2 * GCStyle.baseMargins
+            height: instructionText.contentHeight + GCStyle.baseMargins
             anchors.centerIn: instructionText
-            color: "#E8E8E8"
-            radius: 5 * ApplicationInfo.ratio
-            border.width: 2 * ApplicationInfo.ratio
-            border.color: "#87A6DD"
+            color: GCStyle.lightBg
+            radius: GCStyle.halfMargins
+            border.width: GCStyle.thinBorder
+            border.color: GCStyle.blueBorder
         }
 
         GCText {
@@ -155,43 +155,44 @@ ActivityBase {
             anchors.top: parent.top
             anchors.left: parent.left
             anchors.right: score.left
-            anchors.margins: 10 * ApplicationInfo.ratio
-            anchors.topMargin: 20 * ApplicationInfo.ratio
+            anchors.margins: 2 * GCStyle.baseMargins
+            anchors.topMargin: GCStyle.baseMargins * 1.5
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
-            height: bar.height * 0.55 - 20 * ApplicationInfo.ratio
+            height: 50 * ApplicationInfo.ratio
             wrapMode: Text.Wrap
             fontSize: mediumSize
             fontSizeMode: Text.Fit
-            color: "#2a2a2a"
+            color: GCStyle.darkText
             visible: instruction.visible
             text: (dataset.item && items.score.currentSubLevel - 1 != items.score.numberOfSubLevels  && items.score.currentSubLevel != 0) ? dataset.item.instructions[items.score.currentSubLevel - 1].text : ""
         }
 
         Rectangle {
             id: question
-            anchors.centerIn: questionText
-            width: questionText.contentWidth + 20 * ApplicationInfo.ratio
-            height: questionText.contentHeight
-            color: "#FFF"
-            radius: instruction.radius
-            border.width: 0
+            anchors.top: instruction.bottom
+            anchors.topMargin: GCStyle.baseMargins
+            anchors.horizontalCenter: instructionText.horizontalCenter
+            width: questionText.contentWidth + 2 * GCStyle.baseMargins
+            height: questionText.contentHeight + GCStyle.baseMargins
+            color: GCStyle.lighterBg
+            radius: GCStyle.halfMargins
+            border.width: GCStyle.thinBorder
+            border.color: GCStyle.lightGrayBorder
             visible: items.score.currentSubLevel == 3 || (items.score.currentSubLevel == 2 && !items.hasAudioQuestions)
         }
 
         GCText {
             id: questionText
             anchors.top: instruction.bottom
-            anchors.left: parent.left
-            anchors.right: score.left
-            anchors.margins: instructionText.anchors.margins
+            anchors.horizontalCenter: instructionText.horizontalCenter
+            anchors.topMargin: GCStyle.baseMargins * 1.5
             horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
             width: instructionText.width
             height: instructionText.height
             fontSize: mediumSize
             fontSizeMode: Text.Fit
-            color: "#2a2a2a"
+            color: GCStyle.darkText
             wrapMode: Text.Wrap
             text: items.currentQuestion ? items.currentQuestion.text2 : ""
             visible: question.visible
@@ -205,16 +206,17 @@ ActivityBase {
                 bottom: undefined
                 right: parent.right
                 top: parent.top
+                margins: GCStyle.baseMargins
             }
         }
 
         BarButton {
             id: repeatItem
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
-            width: Math.min(70 * ApplicationInfo.ratio, score.width)
+            width: Math.min(GCStyle.bigButtonHeight, score.width)
             anchors.top: score.bottom
             anchors.right: parent.right
-            anchors.margins: 10 * ApplicationInfo.ratio
+            anchors.margins: GCStyle.baseMargins
             visible: items.score.currentSubLevel == 2 && activity.hasAudioQuestions //&& ApplicationSettings.isAudioVoicesEnabled
             onClicked: {
                 if(!items.audioVoices.isPlaying()) {
@@ -264,7 +266,7 @@ ActivityBase {
             visible: items.score.currentSubLevel != 1
             anchors.bottom: bar.top
             anchors.right: parent.right
-            anchors.margins: 10 * ApplicationInfo.ratio
+            anchors.margins: GCStyle.baseMargins
             onStop: Activity.nextSubSubLevel();
         }
 
@@ -272,11 +274,11 @@ ActivityBase {
             id: okButton
             visible: false
             source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
-            sourceSize.width: 70 * ApplicationInfo.ratio
+            sourceSize.width: GCStyle.bigButtonHeight
             fillMode: Image.PreserveAspectFit
             anchors.right: parent.right
             anchors.bottom: progressbar.top
-            anchors.margins: 10 * ApplicationInfo.ratio
+            anchors.margins: GCStyle.baseMargins
             MouseArea {
                 anchors.fill: parent
                 onClicked: Activity.nextLevel()
@@ -287,7 +289,7 @@ ActivityBase {
             id: errorRectangle
             width: 0
             height: 0
-            imageSize: 60 * ApplicationInfo.ratio
+            imageSize: GCStyle.smallButtonHeight
             function releaseControls() {
                 items.buttonsBlocked = false;
             }
