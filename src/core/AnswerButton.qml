@@ -142,7 +142,8 @@ Item {
         id: label
         anchors.centerIn: parent
         horizontalAlignment: Text.AlignHCenter
-        width: button.width
+        width: button.width - GCStyle.baseMargins
+        height: button.height - GCStyle.halfMargins
         fontSizeMode: Text.Fit
         font.bold: true
         text: textLabel
