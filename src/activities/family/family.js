@@ -33,7 +33,6 @@ function start(items_) {
 }
 
 function stop() {
-    items.loadDatasetDelay.stop();
 }
 
 function initLevel() {
@@ -41,7 +40,7 @@ function initLevel() {
     items.selectedPairs.reset()
     levelToLoad = getCurrentLevelIndex()
     var levelTree = items.dataset.levelElements[levelToLoad]
-    items.loadDatasetDelay.start()
+    loadDatasets()
 }
 
 function loadDatasets() {
