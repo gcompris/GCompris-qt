@@ -142,6 +142,7 @@ Item {
         id: label
         anchors.centerIn: parent
         horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
         width: button.width - GCStyle.baseMargins
         height: button.height - GCStyle.halfMargins
         fontSizeMode: Text.Fit
