@@ -311,7 +311,7 @@ ActivityBase {
 
             readonly property int buttonWidth: Math.min(450 * ApplicationInfo.ratio,
                                                         questionArea.width)
-            readonly property int buttonHeight: Math.min(40 * ApplicationInfo.ratio,
+            readonly property int buttonHeight: Math.min(GCStyle.bigButtonHeight,
                     questionArea.height / Math.max(1, answersChoice.count) - GCStyle.halfMargins)
 
             Grid {
