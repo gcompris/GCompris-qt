@@ -150,7 +150,9 @@ Item {
         anchors.centerIn: parent
         anchors.horizontalCenterOffset: 0
         horizontalAlignment: Text.AlignHCenter
-        width: button.width
+        verticalAlignment: Text.AlignVCenter
+        width: button.width - 10 * ApplicationInfo.ratio
+        height: button.height - 5 * ApplicationInfo.ratio
         fontSizeMode: Text.Fit
         font.bold: true
         text: textLabel
