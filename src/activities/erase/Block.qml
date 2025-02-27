@@ -8,9 +8,12 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+
 import QtQuick 2.12
-import "erase.js" as Activity
 import core 1.0
+
+import "../../core"
+import "erase.js" as Activity
 
 Image {
     id: block
@@ -35,7 +38,7 @@ Image {
     property int counter: 0
 
     function getMultipleOfRatioToAdjustHeight(): real {
-        return (blockBackground.width >= blockBackground.height + 40 * ApplicationInfo.ratio) ? 0.125 : 0.625
+        return (blockBackground.width >= blockBackground.height + 4 * GCStyle.baseMargins) ? 0.125 : 0.625
     }
 
     onEnter: {

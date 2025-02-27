@@ -180,10 +180,10 @@ ActivityBase {
         Score {
             id: score
             anchors {
-                bottom: (activityBackground.width >= activityBackground.height + 40 * ApplicationInfo.ratio) ? activityBackground.bottom : bar.top
-                bottomMargin: 10 * ApplicationInfo.ratio
+                bottom: (activityBackground.width >= activityBackground.height + 4 * GCStyle.baseMargins) ? activityBackground.bottom : bar.top
+                bottomMargin: GCStyle.baseMargins
                 right: parent.right
-                rightMargin: 10 * ApplicationInfo.ratio
+                rightMargin: GCStyle.baseMargins
                 top: undefined
                 left: undefined
             }
@@ -208,7 +208,7 @@ ActivityBase {
             anchors {
                 bottom: score.top
                 right: score.right
-                bottomMargin: 20
+                bottomMargin: GCStyle.baseMargins
             }
             ParticleSystemStarLoader {
                 id: okButtonParticles
