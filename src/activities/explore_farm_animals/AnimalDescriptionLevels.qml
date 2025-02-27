@@ -19,9 +19,10 @@ import "explore-level.js" as Activity
 
 Rectangle {
     id: rectangleDesc
-    radius: 15 * ApplicationInfo.ratio
-    border.width: 3 * ApplicationInfo.ratio
-    border.color: "#373737"
+    radius: GCStyle.baseMargins
+    border.width: GCStyle.midBorder
+    border.color: GCStyle.darkBorder
+    color: GCStyle.lightBg
 
     MouseArea {
         anchors.fill: parent
@@ -31,7 +32,6 @@ Rectangle {
     property alias title: heading.text
     property alias description: descriptionText.text
     property alias imageSource: animalImage.source
-    property int baseMargins: 15 * ApplicationInfo.ratio
 
     property bool horizontalLayout: activityBackground.width >= activityBackground.height
 
@@ -62,22 +62,23 @@ Rectangle {
     GCText {
         id: heading
         fontSize: largeSize
+        fontSizeMode: Text.Fit
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         font.weight: Font.DemiBold
+        height: cancelButton.height
         anchors.top: parent.top
         anchors.left: parent.left
         anchors.right: cancelButton.left
-        anchors.margins: parent.baseMargins
-        color: "#2a2a2a"
-        height: cancelButton.height
-        fontSizeMode: Text.Fit
+        anchors.margins: GCStyle.baseMargins
+        color: GCStyle.darkerText
+
     }
 
     Image {
         id: animalImage
         fillMode: Image.PreserveAspectFit
-        anchors.margins: parent.baseMargins
+        anchors.margins: GCStyle.baseMargins
         property bool zoomedOut: true
 
         MouseArea {
@@ -91,8 +92,8 @@ Rectangle {
                 when: !animalImage.zoomedOut
                 PropertyChanges {
                     animalImage {
-                        width: rectangleDesc.width - 2 * rectangleDesc.baseMargins
-                        height: rectangleDesc.height - heading.height - 3 * rectangleDesc.baseMargins
+                        width: rectangleDesc.width - 2 * GCStyle.baseMargins
+                        height: rectangleDesc.height - heading.height - 3 * GCStyle.baseMargins
                     }
                 }
 
@@ -113,8 +114,8 @@ Rectangle {
                 when: animalImage.zoomedOut && rectangleDesc.horizontalLayout
                 PropertyChanges {
                     animalImage {
-                        width: (rectangleDesc.width - 3 * rectangleDesc.baseMargins) * 0.5
-                        height: rectangleDesc.height - heading.height - 3 * rectangleDesc.baseMargins
+                        width: (rectangleDesc.width - 3 * GCStyle.baseMargins) * 0.5
+                        height: rectangleDesc.height - heading.height - 3 * GCStyle.baseMargins
                     }
                 }
 
@@ -140,9 +141,8 @@ Rectangle {
                 when: animalImage.zoomedOut && !rectangleDesc.horizontalLayout
                 PropertyChanges {
                     animalImage {
-                        width: rectangleDesc.width - 2 * rectangleDesc.baseMargins
-                        height: (rectangleDesc.height - heading.height - 4 * rectangleDesc.baseMargins) * 0.5
-                        anchors.leftMargin: 0
+                        width: rectangleDesc.width - 2 * GCStyle.baseMargins
+                        height: (rectangleDesc.height - heading.height - 4 * GCStyle.baseMargins) * 0.5
                     }
                 }
 
@@ -175,7 +175,7 @@ Rectangle {
                     target: animalImage
                     properties: "width, height"
                     easing.type: Easing.OutBack
-                    duration: 500
+                    duration: 250
                 }
 
                 AnchorAnimation { duration: 250 }
@@ -205,7 +205,7 @@ Rectangle {
                     target: animalImage
                     properties: "width, height"
                     easing.type: Easing.OutBack
-                    duration: 500
+                    duration: 250
                 }
 
                 AnchorAnimation { duration: 250 }
@@ -241,8 +241,8 @@ Rectangle {
         fontSizeMode: Text.Fit
         horizontalAlignment: Text.AlignJustify
         anchors.top: heading.bottom
-        anchors.margins: parent.baseMargins
-        color: "#2a2a2a"
+        anchors.margins: GCStyle.baseMargins
+        color: GCStyle.darkerText
         width: animalImage.width
         height: animalImage.height
         wrapMode: Text.WordWrap
