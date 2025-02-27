@@ -111,6 +111,7 @@ ActivityBase {
             }
 
             function checkResult() {
+                items.buttonsBlocked = true;
                 if (firstNodePointer.nodeWeight == (secondNodePointer.nodeWeight * -1) && firstNodePointer.nodeWeight != 0) {
                     return true
                 } else {
@@ -221,6 +222,7 @@ ActivityBase {
                         border.width: GCStyle.thickBorder
                         color: "#7CD5F5"
                         state:  currentState
+                        enabled: !items.buttonsBlocked
 
                         states: [
                             State {
