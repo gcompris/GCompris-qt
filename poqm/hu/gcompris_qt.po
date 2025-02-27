@@ -5141,12 +5141,12 @@ msgstr ""
 "A rövidebb kar az órát jelzi, a hosszabbik a perceket, a leghosszabb a "
 "másodperceket jelöli."
 
-#: activities/clockgame/Clockgame.qml:119
+#: activities/clockgame/Clockgame.qml:121
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Állítsd be az órát erre:"
 
-#: activities/clockgame/Clockgame.qml:122
+#: activities/clockgame/Clockgame.qml:124
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5154,7 +5154,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n óra"
 msgstr[1] "%n órák"
 
-#: activities/clockgame/Clockgame.qml:125
+#: activities/clockgame/Clockgame.qml:127
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5162,7 +5162,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n perc"
 msgstr[1] "%n percek"
 
-#: activities/clockgame/Clockgame.qml:128
+#: activities/clockgame/Clockgame.qml:130
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5256,67 +5256,67 @@ msgstr ""
 "alapszínek a festék/tinta esetén cyan (a kék egy árnyalata), magenta (a "
 "rózsaszín egy árnyalata), és a sárga."
 
-#: activities/color_mix/ColorMix.qml:91
+#: activities/color_mix/ColorMix.qml:90
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "Keverd ki a színt"
 
-#: activities/color_mix/ColorMix.qml:223
+#: activities/color_mix/ColorMix.qml:222
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "Nem elég a piros"
 
-#: activities/color_mix/ColorMix.qml:225
+#: activities/color_mix/ColorMix.qml:224
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "Túl sok a piros"
 
-#: activities/color_mix/ColorMix.qml:228
+#: activities/color_mix/ColorMix.qml:227
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "Nem elég a zöld"
 
-#: activities/color_mix/ColorMix.qml:230
+#: activities/color_mix/ColorMix.qml:229
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "Túl sok a zöld"
 
-#: activities/color_mix/ColorMix.qml:233
+#: activities/color_mix/ColorMix.qml:232
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "Nem elég a kék"
 
-#: activities/color_mix/ColorMix.qml:235
+#: activities/color_mix/ColorMix.qml:234
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "Túl sok a kék"
 
-#: activities/color_mix/ColorMix.qml:239
+#: activities/color_mix/ColorMix.qml:238
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "Nem elég a bíborvörös"
 
-#: activities/color_mix/ColorMix.qml:241
+#: activities/color_mix/ColorMix.qml:240
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "Túl sok a bíborvörös"
 
-#: activities/color_mix/ColorMix.qml:244
+#: activities/color_mix/ColorMix.qml:243
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "Nem elég a sárga"
 
-#: activities/color_mix/ColorMix.qml:246
+#: activities/color_mix/ColorMix.qml:245
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "Túl sok a sárga"
 
-#: activities/color_mix/ColorMix.qml:249
+#: activities/color_mix/ColorMix.qml:248
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "Nem elég a ciánkék"
 
-#: activities/color_mix/ColorMix.qml:251
+#: activities/color_mix/ColorMix.qml:250
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "Túl sok a ciánkék"
@@ -5461,7 +5461,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Találd meg a rózsaszín kacsát"
 
-#: activities/colors/FindIt.qml:272
+#: activities/colors/FindIt.qml:276
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5470,12 +5470,12 @@ msgstr ""
 "Ez a tevékenység hangot igényel. Akkor is hangokat fogsz hallani, ha azokat "
 "a főmenüben kikapcsoltad!"
 
-#: activities/colors/FindIt.qml:273
+#: activities/colors/FindIt.qml:277
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Kilépsz?"
 
-#: activities/colors/FindIt.qml:274
+#: activities/colors/FindIt.qml:278
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Folytatás"
@@ -27161,27 +27161,27 @@ msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
 msgstr "%1 beállítások"
 
-#: core/DialogChooseLevel.qml:202
+#: core/DialogChooseLevel.qml:205
 msgctxt "DialogChooseLevel|"
 msgid "Dataset"
 msgstr "Adatkészlet"
 
-#: core/DialogChooseLevel.qml:215
+#: core/DialogChooseLevel.qml:218
 msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "Beállítások"
 
-#: core/DialogChooseLevel.qml:345
+#: core/DialogChooseLevel.qml:348
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "Mégsem"
 
-#: core/DialogChooseLevel.qml:353
+#: core/DialogChooseLevel.qml:356
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "Mentés"
 
-#: core/DialogChooseLevel.qml:367
+#: core/DialogChooseLevel.qml:370
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "Mentés és indítás"
@@ -27515,7 +27515,7 @@ msgstr ""
 "Megadható, hogy a tevékenységet melyik szinten kívánjuk elindítani. Csak "
 "akkor használatos, ha a --launch opciót használjuk."
 
-#: core/main.qml:235
+#: core/main.qml:238
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
@@ -27524,32 +27524,32 @@ msgstr ""
 "Szeretnéd automatikusan letölteni vagy frissíteni a külső forrrásokat a "
 "GCompris indításakor?"
 
-#: core/main.qml:237
+#: core/main.qml:240
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "Anyanyelvi hangok"
 
-#: core/main.qml:238
+#: core/main.qml:241
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "Teljes szóképkészlet használata"
 
-#: core/main.qml:239
+#: core/main.qml:242
 msgctxt "main|"
 msgid "Background music"
 msgstr "Háttérzene"
 
-#: core/main.qml:245
+#: core/main.qml:248
 msgctxt "main|"
 msgid "Yes"
 msgstr "Igen"
 
-#: core/main.qml:252
+#: core/main.qml:255
 msgctxt "main|"
 msgid "No"
 msgstr "Nem"
 
-#: core/main.qml:274
+#: core/main.qml:277
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
@@ -27558,27 +27558,27 @@ msgstr ""
 "Néhány tevékenységhez új adatkészlet áll rendelkezésre. Szeretnéd "
 "visszaállítani az adatkészlet kiválasztását?"
 
-#: core/main.qml:275
+#: core/main.qml:278
 msgctxt "main|"
 msgid "Apply"
 msgstr "Alkalmaz"
 
-#: core/main.qml:276
+#: core/main.qml:279
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Mégsem"
 
-#: core/main.qml:361
+#: core/main.qml:364
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Köszöntünk a GComprisban!"
 
-#: core/main.qml:362
+#: core/main.qml:365
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "Első alkalommal futtatod a GComprist."
 
-#: core/main.qml:363
+#: core/main.qml:366
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -27587,18 +27587,18 @@ msgstr ""
 "Ellenőrizd a program beállításait, különösen a nyelvi beáéllításokat. Mindez "
 "beállítható a Tulajdonságok panelen."
 
-#: core/main.qml:365
+#: core/main.qml:368
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Jó szórakozást!"
 
-#: core/main.qml:367
+#: core/main.qml:370
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "A jelenlegi nyelved %1 (%2)."
 
-#: core/main.qml:399
+#: core/main.qml:402
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "A GCompris frissült. A változások a következők:<br/>"

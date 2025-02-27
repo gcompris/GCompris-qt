@@ -5533,12 +5533,12 @@ msgid ""
 "and the longest hand indicates the seconds."
 msgstr ""
 
-#: activities/clockgame/Clockgame.qml:119
+#: activities/clockgame/Clockgame.qml:121
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Socraigh an t-uaireadóir chuig an am:"
 
-#: activities/clockgame/Clockgame.qml:122
+#: activities/clockgame/Clockgame.qml:124
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5549,7 +5549,7 @@ msgstr[2] ""
 msgstr[3] ""
 msgstr[4] ""
 
-#: activities/clockgame/Clockgame.qml:125
+#: activities/clockgame/Clockgame.qml:127
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5560,7 +5560,7 @@ msgstr[2] ""
 msgstr[3] ""
 msgstr[4] ""
 
-#: activities/clockgame/Clockgame.qml:128
+#: activities/clockgame/Clockgame.qml:130
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5660,67 +5660,67 @@ msgstr ""
 "a chruthú. Is iad na bundathanna do dhúch nó do phéint ná cian, maigeanta "
 "agus buí."
 
-#: activities/color_mix/ColorMix.qml:91
+#: activities/color_mix/ColorMix.qml:90
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "Meaitseáil an dath"
 
-#: activities/color_mix/ColorMix.qml:223
+#: activities/color_mix/ColorMix.qml:222
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "Níl go leor dearg ann"
 
-#: activities/color_mix/ColorMix.qml:225
+#: activities/color_mix/ColorMix.qml:224
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "Barraíocht dearg"
 
-#: activities/color_mix/ColorMix.qml:228
+#: activities/color_mix/ColorMix.qml:227
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "Níl go leor glas ann"
 
-#: activities/color_mix/ColorMix.qml:230
+#: activities/color_mix/ColorMix.qml:229
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "Barraíocht glas"
 
-#: activities/color_mix/ColorMix.qml:233
+#: activities/color_mix/ColorMix.qml:232
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "Níl go leor gorm ann"
 
-#: activities/color_mix/ColorMix.qml:235
+#: activities/color_mix/ColorMix.qml:234
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "Barraíocht gorm"
 
-#: activities/color_mix/ColorMix.qml:239
+#: activities/color_mix/ColorMix.qml:238
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "Níl go leor maigeanta ann"
 
-#: activities/color_mix/ColorMix.qml:241
+#: activities/color_mix/ColorMix.qml:240
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "Barraíocht maigeanta"
 
-#: activities/color_mix/ColorMix.qml:244
+#: activities/color_mix/ColorMix.qml:243
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "Níl go leor buí ann"
 
-#: activities/color_mix/ColorMix.qml:246
+#: activities/color_mix/ColorMix.qml:245
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "Barraíocht buí"
 
-#: activities/color_mix/ColorMix.qml:249
+#: activities/color_mix/ColorMix.qml:248
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "Níl go leor cian ann"
 
-#: activities/color_mix/ColorMix.qml:251
+#: activities/color_mix/ColorMix.qml:250
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "Barraíocht cian"
@@ -5881,19 +5881,19 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Aimsigh an lacha bhándearg"
 
-#: activities/colors/FindIt.qml:272
+#: activities/colors/FindIt.qml:276
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
 
-#: activities/colors/FindIt.qml:273
+#: activities/colors/FindIt.qml:277
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Scoir"
 
-#: activities/colors/FindIt.qml:274
+#: activities/colors/FindIt.qml:278
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Ar Aghaidh"
@@ -29202,27 +29202,27 @@ msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
 msgstr "Socruithe %1"
 
-#: core/DialogChooseLevel.qml:202
+#: core/DialogChooseLevel.qml:205
 msgctxt "DialogChooseLevel|"
 msgid "Dataset"
 msgstr "Tacar sonraí"
 
-#: core/DialogChooseLevel.qml:215
+#: core/DialogChooseLevel.qml:218
 msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "Roghanna"
 
-#: core/DialogChooseLevel.qml:345
+#: core/DialogChooseLevel.qml:348
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "Cealaigh"
 
-#: core/DialogChooseLevel.qml:353
+#: core/DialogChooseLevel.qml:356
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "Sábháil"
 
-#: core/DialogChooseLevel.qml:367
+#: core/DialogChooseLevel.qml:370
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "Sábháil agus Tosaigh"
@@ -29549,7 +29549,7 @@ msgid ""
 "is used."
 msgstr ""
 
-#: core/main.qml:235
+#: core/main.qml:238
 #, fuzzy
 #| msgctxt "main|"
 #| msgid "Do you want to download the following external assets?"
@@ -29559,44 +29559,44 @@ msgid ""
 "assets when starting GCompris?"
 msgstr "Ar mhaith leat na sócmhainní seachtrach a leanas a íoslódáil?"
 
-#: core/main.qml:237
+#: core/main.qml:240
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "Guthanna do theanga"
 
-#: core/main.qml:238
+#: core/main.qml:241
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "Úsáid tacar iomlán focail agus íomhánna"
 
-#: core/main.qml:239
+#: core/main.qml:242
 msgctxt "main|"
 msgid "Background music"
 msgstr "ceol cúlra"
 
-#: core/main.qml:245
+#: core/main.qml:248
 msgctxt "main|"
 msgid "Yes"
 msgstr "Ba mhaith"
 
-#: core/main.qml:252
+#: core/main.qml:255
 msgctxt "main|"
 msgid "No"
 msgstr "Níor mhaith"
 
-#: core/main.qml:274
+#: core/main.qml:277
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
 
-#: core/main.qml:275
+#: core/main.qml:278
 msgctxt "main|"
 msgid "Apply"
 msgstr ""
 
-#: core/main.qml:276
+#: core/main.qml:279
 #, fuzzy
 #| msgctxt "DialogChooseLevel|"
 #| msgid "Cancel"
@@ -29604,17 +29604,17 @@ msgctxt "main|"
 msgid "Cancel"
 msgstr "Cealaigh"
 
-#: core/main.qml:361
+#: core/main.qml:364
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Fáilte chuig GCompris!"
 
-#: core/main.qml:362
+#: core/main.qml:365
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "Tá tú ag rith GCompris don chéad uair."
 
-#: core/main.qml:363
+#: core/main.qml:366
 #, fuzzy
 #| msgctxt "main|"
 #| msgid ""
@@ -29630,18 +29630,18 @@ msgstr ""
 "mar is ceart agat, chomh háirithe an teanga agus na comhaid fhuaime. Is "
 "féidir é seo a dhéanamh sa Dialóg Sainroghanna."
 
-#: core/main.qml:365
+#: core/main.qml:368
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Bain sult as!"
 
-#: core/main.qml:367
+#: core/main.qml:370
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Is é %1 (%2) an teanga ag an bhomaite."
 
-#: core/main.qml:399
+#: core/main.qml:402
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "Nuashonraíodh GCompris! Seo iad na hathraithe nua:<br/>"

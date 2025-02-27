@@ -5137,26 +5137,26 @@ msgid ""
 "and the longest hand indicates the seconds."
 msgstr "最短的指針表示小時，長一點的表示分鐘，最長的指針則表示秒。"
 
-#: activities/clockgame/Clockgame.qml:119
+#: activities/clockgame/Clockgame.qml:121
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "將錶設定成："
 
-#: activities/clockgame/Clockgame.qml:122
+#: activities/clockgame/Clockgame.qml:124
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
 msgid_plural "%n hour(s)"
 msgstr[0] "%n 小時"
 
-#: activities/clockgame/Clockgame.qml:125
+#: activities/clockgame/Clockgame.qml:127
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
 msgid_plural "%n minute(s)"
 msgstr[0] "%n 分"
 
-#: activities/clockgame/Clockgame.qml:128
+#: activities/clockgame/Clockgame.qml:130
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5250,67 +5250,67 @@ msgstr ""
 "起來，變成新的顏色。這三種主要的顏色分別為青色 (Cyan, 接近藍色), 品紅色 "
 "(Magenta, 接近粉紅色) 與黃色 (Yellow)。"
 
-#: activities/color_mix/ColorMix.qml:91
+#: activities/color_mix/ColorMix.qml:90
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "比對顏色"
 
-#: activities/color_mix/ColorMix.qml:223
+#: activities/color_mix/ColorMix.qml:222
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "紅色不夠"
 
-#: activities/color_mix/ColorMix.qml:225
+#: activities/color_mix/ColorMix.qml:224
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "紅色太多"
 
-#: activities/color_mix/ColorMix.qml:228
+#: activities/color_mix/ColorMix.qml:227
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "綠色不夠"
 
-#: activities/color_mix/ColorMix.qml:230
+#: activities/color_mix/ColorMix.qml:229
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "綠色太多"
 
-#: activities/color_mix/ColorMix.qml:233
+#: activities/color_mix/ColorMix.qml:232
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "藍色不夠"
 
-#: activities/color_mix/ColorMix.qml:235
+#: activities/color_mix/ColorMix.qml:234
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "藍色太多"
 
-#: activities/color_mix/ColorMix.qml:239
+#: activities/color_mix/ColorMix.qml:238
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "品紅色不夠"
 
-#: activities/color_mix/ColorMix.qml:241
+#: activities/color_mix/ColorMix.qml:240
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "品紅色太多"
 
-#: activities/color_mix/ColorMix.qml:244
+#: activities/color_mix/ColorMix.qml:243
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "黃色不夠"
 
-#: activities/color_mix/ColorMix.qml:246
+#: activities/color_mix/ColorMix.qml:245
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "黃色太多"
 
-#: activities/color_mix/ColorMix.qml:249
+#: activities/color_mix/ColorMix.qml:248
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "青色不夠"
 
-#: activities/color_mix/ColorMix.qml:251
+#: activities/color_mix/ColorMix.qml:250
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "青色太多"
@@ -5468,19 +5468,19 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "找出粉紅色鴨子"
 
-#: activities/colors/FindIt.qml:272
+#: activities/colors/FindIt.qml:276
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr "這個遊戲需要播放聲音，所以即使您設定關閉聲音或音效，它還是會播出聲音。"
 
-#: activities/colors/FindIt.qml:273
+#: activities/colors/FindIt.qml:277
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "離開"
 
-#: activities/colors/FindIt.qml:274
+#: activities/colors/FindIt.qml:278
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "繼續"
@@ -27093,27 +27093,27 @@ msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
 msgstr "%1 的設定"
 
-#: core/DialogChooseLevel.qml:202
+#: core/DialogChooseLevel.qml:205
 msgctxt "DialogChooseLevel|"
 msgid "Dataset"
 msgstr "資料集"
 
-#: core/DialogChooseLevel.qml:215
+#: core/DialogChooseLevel.qml:218
 msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "選項"
 
-#: core/DialogChooseLevel.qml:345
+#: core/DialogChooseLevel.qml:348
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "取消"
 
-#: core/DialogChooseLevel.qml:353
+#: core/DialogChooseLevel.qml:356
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "儲存"
 
-#: core/DialogChooseLevel.qml:367
+#: core/DialogChooseLevel.qml:370
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "儲存並開始"
@@ -27450,7 +27450,7 @@ msgid ""
 "is used."
 msgstr ""
 
-#: core/main.qml:235
+#: core/main.qml:238
 #, fuzzy
 #| msgctxt "main|"
 #| msgid "Do you want to download the following external assets?"
@@ -27460,59 +27460,59 @@ msgid ""
 "assets when starting GCompris?"
 msgstr "您要現在下載以下的外部資源嗎？"
 
-#: core/main.qml:237
+#: core/main.qml:240
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "您的語言的聲音檔"
 
-#: core/main.qml:238
+#: core/main.qml:241
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "完整單字圖集"
 
-#: core/main.qml:239
+#: core/main.qml:242
 msgctxt "main|"
 msgid "Background music"
 msgstr "背景音樂"
 
-#: core/main.qml:245
+#: core/main.qml:248
 msgctxt "main|"
 msgid "Yes"
 msgstr "是"
 
-#: core/main.qml:252
+#: core/main.qml:255
 msgctxt "main|"
 msgid "No"
 msgstr "否"
 
-#: core/main.qml:274
+#: core/main.qml:277
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
 
-#: core/main.qml:275
+#: core/main.qml:278
 msgctxt "main|"
 msgid "Apply"
 msgstr "套用"
 
-#: core/main.qml:276
+#: core/main.qml:279
 msgctxt "main|"
 msgid "Cancel"
 msgstr "取消"
 
-#: core/main.qml:361
+#: core/main.qml:364
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "歡迎使用 GCompris!"
 
-#: core/main.qml:362
+#: core/main.qml:365
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "您是第一次執行 GCompris。"
 
-#: core/main.qml:363
+#: core/main.qml:366
 #, fuzzy
 #| msgctxt "main|"
 #| msgid ""
@@ -27527,18 +27527,18 @@ msgstr ""
 "您應該檢查您的應用程式設定，特別是您的語言是否正確，還有語言相關的聲音檔是否"
 "都已安裝。您可以在喜好設定對話框中進行設定。"
 
-#: core/main.qml:365
+#: core/main.qml:368
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "祝您玩得開心！"
 
-#: core/main.qml:367
+#: core/main.qml:370
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "您目前的語言為 %1 (%2)。"
 
-#: core/main.qml:399
+#: core/main.qml:402
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris 已經更新了。新的變更包括：<br/>"

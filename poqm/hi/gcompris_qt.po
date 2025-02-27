@@ -5523,12 +5523,12 @@ msgid ""
 "and the longest hand indicates the seconds."
 msgstr ""
 
-#: activities/clockgame/Clockgame.qml:119
+#: activities/clockgame/Clockgame.qml:121
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "घड़ी को सेट करें:"
 
-#: activities/clockgame/Clockgame.qml:122
+#: activities/clockgame/Clockgame.qml:124
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5536,7 +5536,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n घंटा"
 msgstr[1] "%n घंटे"
 
-#: activities/clockgame/Clockgame.qml:125
+#: activities/clockgame/Clockgame.qml:127
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5544,7 +5544,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n मिनट"
 msgstr[1] "%n मिनट"
 
-#: activities/clockgame/Clockgame.qml:128
+#: activities/clockgame/Clockgame.qml:130
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5667,67 +5667,67 @@ msgstr ""
 "को मिला सकते हैं। रंग / स्याही के लिए प्राथमिक रंग सियान (नीले रंग का एक विशेष छाया), "
 "मैजेंटा (गुलाबी का विशेष छाया) और पीला होते हैं।"
 
-#: activities/color_mix/ColorMix.qml:91
+#: activities/color_mix/ColorMix.qml:90
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "रंग मिलाएँ"
 
-#: activities/color_mix/ColorMix.qml:223
+#: activities/color_mix/ColorMix.qml:222
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "अपर्याप्त लाल"
 
-#: activities/color_mix/ColorMix.qml:225
+#: activities/color_mix/ColorMix.qml:224
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "बहुत अधिक लाल"
 
-#: activities/color_mix/ColorMix.qml:228
+#: activities/color_mix/ColorMix.qml:227
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "अपर्याप्त हरा"
 
-#: activities/color_mix/ColorMix.qml:230
+#: activities/color_mix/ColorMix.qml:229
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "बहुत ज्यादा हरा"
 
-#: activities/color_mix/ColorMix.qml:233
+#: activities/color_mix/ColorMix.qml:232
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "अपर्याप्त नीला"
 
-#: activities/color_mix/ColorMix.qml:235
+#: activities/color_mix/ColorMix.qml:234
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "बहुत ज्यादा नीला"
 
-#: activities/color_mix/ColorMix.qml:239
+#: activities/color_mix/ColorMix.qml:238
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "पर्याप्त मैजेंटा नहीं"
 
-#: activities/color_mix/ColorMix.qml:241
+#: activities/color_mix/ColorMix.qml:240
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "बहुत ज्यादा मैजेंटा"
 
-#: activities/color_mix/ColorMix.qml:244
+#: activities/color_mix/ColorMix.qml:243
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "अपर्याप्त पीला"
 
-#: activities/color_mix/ColorMix.qml:246
+#: activities/color_mix/ColorMix.qml:245
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "बहुत ज्यादा पीला"
 
-#: activities/color_mix/ColorMix.qml:249
+#: activities/color_mix/ColorMix.qml:248
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "पर्याप्त सियान नहीं"
 
-#: activities/color_mix/ColorMix.qml:251
+#: activities/color_mix/ColorMix.qml:250
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "बहुत ज्यादा सियान"
@@ -5895,19 +5895,19 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "गुलाबी बतख खोजें"
 
-#: activities/colors/FindIt.qml:272
+#: activities/colors/FindIt.qml:276
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
 
-#: activities/colors/FindIt.qml:273
+#: activities/colors/FindIt.qml:277
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "बाहर जाएँ?"
 
-#: activities/colors/FindIt.qml:274
+#: activities/colors/FindIt.qml:278
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "जारी रखें"
@@ -30687,12 +30687,12 @@ msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
 msgstr ""
 
-#: core/DialogChooseLevel.qml:202
+#: core/DialogChooseLevel.qml:205
 msgctxt "DialogChooseLevel|"
 msgid "Dataset"
 msgstr ""
 
-#: core/DialogChooseLevel.qml:215
+#: core/DialogChooseLevel.qml:218
 #, fuzzy
 #| msgctxt "Lang|"
 #| msgid "action"
@@ -30700,7 +30700,7 @@ msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "कार्य"
 
-#: core/DialogChooseLevel.qml:345
+#: core/DialogChooseLevel.qml:348
 #, fuzzy
 #| msgctxt "board5_0|"
 #| msgid "France"
@@ -30708,7 +30708,7 @@ msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "फ्रांस"
 
-#: core/DialogChooseLevel.qml:353
+#: core/DialogChooseLevel.qml:356
 #, fuzzy
 #| msgctxt "BalanceboxEditor|"
 #| msgid "Save"
@@ -30716,7 +30716,7 @@ msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "सहेजें"
 
-#: core/DialogChooseLevel.qml:367
+#: core/DialogChooseLevel.qml:370
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr ""
@@ -31067,7 +31067,7 @@ msgid ""
 "is used."
 msgstr ""
 
-#: core/main.qml:235
+#: core/main.qml:238
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Do you want to download them now?"
@@ -31077,12 +31077,12 @@ msgid ""
 "assets when starting GCompris?"
 msgstr "क्या आप उन्हें अभी डाउनलोड करना चाहते हैं?"
 
-#: core/main.qml:237
+#: core/main.qml:240
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr ""
 
-#: core/main.qml:238
+#: core/main.qml:241
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Use full word image set"
@@ -31090,7 +31090,7 @@ msgctxt "main|"
 msgid "Full word image set"
 msgstr "पूर्ण शब्द छवि सेट का उपयोग करें"
 
-#: core/main.qml:239
+#: core/main.qml:242
 #, fuzzy
 #| msgctxt "DownloadDialog|"
 #| msgid "Background"
@@ -31098,29 +31098,29 @@ msgctxt "main|"
 msgid "Background music"
 msgstr "पृष्ठभूमि"
 
-#: core/main.qml:245
+#: core/main.qml:248
 msgctxt "main|"
 msgid "Yes"
 msgstr "हाँ "
 
-#: core/main.qml:252
+#: core/main.qml:255
 msgctxt "main|"
 msgid "No"
 msgstr "नहीं"
 
-#: core/main.qml:274
+#: core/main.qml:277
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
 
-#: core/main.qml:275
+#: core/main.qml:278
 msgctxt "main|"
 msgid "Apply"
 msgstr ""
 
-#: core/main.qml:276
+#: core/main.qml:279
 #, fuzzy
 #| msgctxt "board5_0|"
 #| msgid "France"
@@ -31128,17 +31128,17 @@ msgctxt "main|"
 msgid "Cancel"
 msgstr "फ्रांस"
 
-#: core/main.qml:361
+#: core/main.qml:364
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "जीकोंप्रिस में आपका स्वागत है!"
 
-#: core/main.qml:362
+#: core/main.qml:365
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "आप पहली बार जीकॉम्प्रिस चला रहे हैं।"
 
-#: core/main.qml:363
+#: core/main.qml:366
 #, fuzzy
 #| msgctxt "main|"
 #| msgid ""
@@ -31154,18 +31154,18 @@ msgstr ""
 "की गई है, और सभी भाषा विशिष्ट ध्वनि फ़ाइलें इंस्टॉल की गई हैं। आप वरीयता संवाद में ऐसा कर "
 "सकते हैं"
 
-#: core/main.qml:365
+#: core/main.qml:368
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "मज़ा लें!"
 
-#: core/main.qml:367
+#: core/main.qml:370
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "आपका वर्तमान भाषा %1 (%2) है।"
 
-#: core/main.qml:399
+#: core/main.qml:402
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "जीकॉम्प्रिस को अद्यतन किया गया है! ये हैं नए परिवर्तन : <br/>"

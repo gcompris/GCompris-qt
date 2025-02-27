@@ -5196,12 +5196,12 @@ msgstr ""
 "A agulla pequena indica as horas, a mediana os minutos e a grande os "
 "segundos."
 
-#: activities/clockgame/Clockgame.qml:119
+#: activities/clockgame/Clockgame.qml:121
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Poñer no reloxo:"
 
-#: activities/clockgame/Clockgame.qml:122
+#: activities/clockgame/Clockgame.qml:124
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5209,7 +5209,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n hora"
 msgstr[1] "%n horas"
 
-#: activities/clockgame/Clockgame.qml:125
+#: activities/clockgame/Clockgame.qml:127
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5217,7 +5217,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n minuto"
 msgstr[1] "%n minutos"
 
-#: activities/clockgame/Clockgame.qml:128
+#: activities/clockgame/Clockgame.qml:130
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5310,67 +5310,67 @@ msgstr ""
 "cores novas. No caso da tinta as cores primarias son o ciano (unha especie "
 "de azul), maxenta (unha especie de rosa) e amarelo."
 
-#: activities/color_mix/ColorMix.qml:91
+#: activities/color_mix/ColorMix.qml:90
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "Fai coincidir a cor"
 
-#: activities/color_mix/ColorMix.qml:223
+#: activities/color_mix/ColorMix.qml:222
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "Non hai suficiente vermello"
 
-#: activities/color_mix/ColorMix.qml:225
+#: activities/color_mix/ColorMix.qml:224
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "Demasiado vermello"
 
-#: activities/color_mix/ColorMix.qml:228
+#: activities/color_mix/ColorMix.qml:227
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "Non hai suficiente verde"
 
-#: activities/color_mix/ColorMix.qml:230
+#: activities/color_mix/ColorMix.qml:229
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "Demasiado verde"
 
-#: activities/color_mix/ColorMix.qml:233
+#: activities/color_mix/ColorMix.qml:232
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "Non hai suficiente azul"
 
-#: activities/color_mix/ColorMix.qml:235
+#: activities/color_mix/ColorMix.qml:234
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "Demasiado azul"
 
-#: activities/color_mix/ColorMix.qml:239
+#: activities/color_mix/ColorMix.qml:238
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "Non hai suficiente maxenta"
 
-#: activities/color_mix/ColorMix.qml:241
+#: activities/color_mix/ColorMix.qml:240
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "Demasiado maxenta"
 
-#: activities/color_mix/ColorMix.qml:244
+#: activities/color_mix/ColorMix.qml:243
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "Non hai suficiente amarelo"
 
-#: activities/color_mix/ColorMix.qml:246
+#: activities/color_mix/ColorMix.qml:245
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "Demasiado amarelo"
 
-#: activities/color_mix/ColorMix.qml:249
+#: activities/color_mix/ColorMix.qml:248
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "Non hai suficiente ciano"
 
-#: activities/color_mix/ColorMix.qml:251
+#: activities/color_mix/ColorMix.qml:250
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "Demasiado ciano"
@@ -5517,7 +5517,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Atopa o parrulo rosa"
 
-#: activities/colors/FindIt.qml:272
+#: activities/colors/FindIt.qml:276
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5526,12 +5526,12 @@ msgstr ""
 "Esta actividade precisa de son, polo que as voces soarán inda que "
 "desactivaras os efectos de son e as voces na configuración principal."
 
-#: activities/colors/FindIt.qml:273
+#: activities/colors/FindIt.qml:277
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Saír"
 
-#: activities/colors/FindIt.qml:274
+#: activities/colors/FindIt.qml:278
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Continuar"
@@ -27416,27 +27416,27 @@ msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
 msgstr "Configuración de %1"
 
-#: core/DialogChooseLevel.qml:202
+#: core/DialogChooseLevel.qml:205
 msgctxt "DialogChooseLevel|"
 msgid "Dataset"
 msgstr "Conxunto de datos"
 
-#: core/DialogChooseLevel.qml:215
+#: core/DialogChooseLevel.qml:218
 msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "Opcións"
 
-#: core/DialogChooseLevel.qml:345
+#: core/DialogChooseLevel.qml:348
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: core/DialogChooseLevel.qml:353
+#: core/DialogChooseLevel.qml:356
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "Gardar"
 
-#: core/DialogChooseLevel.qml:367
+#: core/DialogChooseLevel.qml:370
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "Gardar e iniciar"
@@ -27771,7 +27771,7 @@ msgstr ""
 "Indicar o nivel no que iniciar a actividade. Só se usa en combinación coa "
 "opción «--launch»."
 
-#: core/main.qml:235
+#: core/main.qml:238
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
@@ -27780,32 +27780,32 @@ msgstr ""
 "Queres descargar ou actualizar automaticamente os seguintes recursos "
 "externos ao iniciar GCompris?"
 
-#: core/main.qml:237
+#: core/main.qml:240
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "Voces no seu idioma"
 
-#: core/main.qml:238
+#: core/main.qml:241
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "Grupo completo de imaxes de palabras"
 
-#: core/main.qml:239
+#: core/main.qml:242
 msgctxt "main|"
 msgid "Background music"
 msgstr "Música de fondo"
 
-#: core/main.qml:245
+#: core/main.qml:248
 msgctxt "main|"
 msgid "Yes"
 msgstr "Si"
 
-#: core/main.qml:252
+#: core/main.qml:255
 msgctxt "main|"
 msgid "No"
 msgstr "Non"
 
-#: core/main.qml:274
+#: core/main.qml:277
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
@@ -27814,27 +27814,27 @@ msgstr ""
 "Algunhas actividades teñen novos conxuntos de datos dispoñíbeis. Quere "
 "restabelecer a súa selección de grupos de datos?"
 
-#: core/main.qml:275
+#: core/main.qml:278
 msgctxt "main|"
 msgid "Apply"
 msgstr "Aplicar"
 
-#: core/main.qml:276
+#: core/main.qml:279
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: core/main.qml:361
+#: core/main.qml:364
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Benvido a GCompris!"
 
-#: core/main.qml:362
+#: core/main.qml:365
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "Está a executar GCompris por primeira vez."
 
-#: core/main.qml:363
+#: core/main.qml:366
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -27843,18 +27843,18 @@ msgstr ""
 "Debería asegurarse de que a configuración da aplicación, especialmente o "
 "idioma, sexan correctas. Pode facelo desde o diálogo de configuración."
 
-#: core/main.qml:365
+#: core/main.qml:368
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Pásao ben!"
 
-#: core/main.qml:367
+#: core/main.qml:370
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "O idioma actual é %1 (%2)."
 
-#: core/main.qml:399
+#: core/main.qml:402
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "Actualizouse GCompris! Estes son os novos cambios:<br/>"
