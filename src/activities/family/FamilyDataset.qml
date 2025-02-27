@@ -1,47 +1,19 @@
 /* GCompris - FamilyDataset.qml
  *
  * SPDX-FileCopyrightText: 2017 Rudra Nil Basu <rudra.nil.basu.1996@gmail.com>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *
  *   Rajdeep Kaur <rajdeep.kaur@kde.org>
  *   Rudra Nil Basu <rudra.nil.basu.1996@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
 
 QtObject {
-    property real nodeWidth: activityBackground.nodeWidthRatio
-    property real nodeHeight: activityBackground.nodeHeightRatio
-
-    property int numberOfGenerations: 3
-    /*
-     * Vertically, the screen is divided into three parts:
-     * gen1: stands for Generation 1
-     * gen2: stands for Generation 2
-     * gen3: stands for Generation 3
-     */
-    readonly property real gen1: numberOfGenerations == 3 ? 0.10 : 0.20
-    readonly property real gen2: numberOfGenerations == 3 ? 0.40 : 0.60
-    readonly property real gen3: 0.70
-
-    /*
-     * Horizontally, the screen is divided into left, center
-     * and right
-     */
-    readonly property real left: 0.2
-    readonly property real center: 0.4
-    readonly property real right: 0.6
-
-    /*
-     * ext: exterior
-     * int: interior
-     */
-    readonly property real leftExt: 0.1
-    readonly property real leftInt: 0.3
-    readonly property real rightInt: 0.5
-    readonly property real rightExt: 0.7
 
     /*
      * pairs are used to determine the correct
@@ -54,553 +26,503 @@ QtObject {
     readonly property int pair2: 1
     readonly property int noPair: 0
 
-    /*
-    * Returns the x coordinate of the
-    * right edge of a node
-    */
-    function rightXEdge(xPosition: real): real {
-        return xPosition + nodeWidth
-    }
+    // left and right are used for captions position
+    readonly property int left: 0
+    readonly property int right: 1
 
-    /*
-    * Returns the y coordinate of the
-    * midpoint of a node
-    */
-    function nodeMidPointY(yPosition: real): real {
-        return yPosition + nodeHeight / 2
-    }
+    // others and married are used for edgeState
+    readonly property int others: 0
+    readonly property int married: 1
 
-    /*
-    * Returns the x coordinate of the
-    * midpoint of two nodes
-    */
-    function nodeMidPointX(xLeftPosition: real, xRightPosition: real): real {
-        return ((xLeftPosition + nodeWidth) + xRightPosition) / 2
-    }
+/*
+ * Notes:
+ *
+ * Items in a level are layout on a 8 * 5 grid.
+ * There must be an empty area between each person,
+ * so it can contain maximum 3 persons/generations vertically, and 4 persons horizontally.
+ * Take care to keep and empty column on left/right sides if a label needs to be display on these extremities.
+ *
+ * edgeList contains the lines to draw (with grid coordinates for their start/end points).
+ * nodePositions contains the grid coordinates for each person node.
+ * captions contains the position for "Me" and "?" labels (left or right).
+ *  "Me" will be displayed next to "active" node, and "?" next to "activeTo".
+ * nodeValue contains the image names for each node.
+ * nodeWeights contains the values used to define pairs (in mode "find_relative").
+ * currentState contains the state to set on each node (in mode "family").
+ *  There needs to be exactly one "active" and one "activeTo".
+ * edgeState contains the values to tell if an edge links two married persons.
+ *  There needs to be the same number of items as in edgeList.
+ * answer contains the answer to give (in mode "family").
+ * options contains the list of possible answers (in mode "family").
 
-//     Note:
-// To add any new levels in the activities doesn't really require coding skills, it can be done by adding the calculated coordinates
-// to the following database (with trial-and-error...)
-// {  edgeList: [
-//                [],
-//                []
-//             ],
-//    nodePositions: [
-//            [],
-//            [],
-//            []
-//    ],
-//    captions: [ [],
-//               []
-//             ],
-//    nodeleave: [],
-//    currentstate: [],
-//    edgeState:[],
-//    answer: [],
-//    options: []
-// 
-// },
+ * Level format:
+ * {  edgeList: [
+ *                [startX, startY, endX, endY],
+ *                [startX, startY, endX, endY]
+ *    ],
+ *    nodePositions: [
+ *            [x, y],
+ *            [x, y],
+ *            [x, y]
+ *    ],
+ *    captions: [left, right],
+ *    nodeValue: [foo1.svg, foo2.svg, foo3.svg],
+ *    nodeWeights: [pair1, noPair, pair2],
+ *    currentstate: ["activeTo", "deactivate", "active"],
+ *    edgeState:[married,others],
+ *    answer: [qsTr"goodAnswer"],
+ *    options: [qsTr"goodAnswer", qsTr"badAnswer1", qsTr"badAnswer2"]
+ * },
+ */
 
     property var levelElements: [
         // level 1
         {
-            numberOfGenerations: 2,
             edgeList: [
-                [left + nodeWidth, gen1 + nodeHeight / 2, right, gen1 + nodeHeight / 2],
-                [((left + nodeWidth) + right) / 2, gen1 + nodeHeight / 2, ((left + nodeWidth) + right) / 2, gen2]
+                [3, 2, 5, 2],
+                [4, 2, 4, 4]
             ],
             nodePositions: [
-                [left, gen1],
-                [right, gen1],
-                [center, gen2]
+                [3, 2],
+                [5, 2],
+                [4, 4]
             ],
-            captions: [
-                [center - (nodeWidth *  3 / 4), gen2 + nodeHeight / 2],
-                [left - nodeWidth / 2, gen1]
-            ],
+            captions: [left, left],
             nodeValue: ["man1.svg", "woman2.svg", "boy1.svg"],
             nodeWeights: [pair1, noPair, pair2],
             currentState: ["activeTo", "deactivate", "active"],
-            edgeState:["married","others"],
+            edgeState:[married,others],
             answer: [qsTr("Father")],
             options: [qsTr("Father"), qsTr("Grandfather"), qsTr("Uncle")]
         },
         // level 2
         {
-            numberOfGenerations: 2,
             edgeList: [
-                [left + nodeWidth, gen1 + nodeHeight / 2, right, gen1 + nodeHeight / 2],
-                [((left + nodeWidth) + right) / 2, gen1 + nodeHeight / 2, ((left + nodeWidth) + right) / 2, gen2]
+                [3, 2, 5, 2],
+                [4, 2, 4, 4]
             ],
             nodePositions: [
-                [left, gen1],
-                [right, gen1],
-                [center, gen2]
+                [3, 2],
+                [5, 2],
+                [4, 4]
             ],
-            captions: [
-                [center - (nodeWidth *  3 / 4), gen2 + nodeHeight / 2],
-                [right + nodeWidth, gen1]
-            ],
+            captions: [left, right],
             nodeValue: ["man1.svg", "woman2.svg", "boy1.svg"],
             nodeWeights: [noPair, pair1, pair2],
             currentState: ["deactivate", "activeTo", "active"],
-            edgeState:["married","others"],
+            edgeState:[married,others],
             answer: [qsTr("Mother")],
             options: [qsTr("Mother"), qsTr("Grandmother"), qsTr("Aunt")]
         },
         // level 3
         {
-            numberOfGenerations: 2,
             edgeList: [
-                [rightXEdge(left), nodeMidPointY(gen1), right, nodeMidPointY(gen1)],
-                [nodeMidPointX(left, right), nodeMidPointY(gen1), nodeMidPointX(left, right), gen2 - nodeHeight / 4],
-                [left + nodeWidth / 2, gen2 - nodeHeight / 4, right + nodeWidth / 2, gen2 - nodeHeight / 4],
-                [left + nodeWidth / 2, gen2 - nodeHeight / 4, left + nodeWidth / 2, gen2],
-                [right + nodeWidth / 2, gen2 - nodeHeight / 4, right + nodeWidth / 2, gen2]
+                [3, 2, 5, 2],
+                [4, 2, 4, 3],
+                [3, 3, 5, 3],
+                [3, 3, 3, 4],
+                [5, 3, 5, 4]
             ],
             nodePositions: [
-                [left, gen1],
-                [right, gen1],
-                [left, gen2],
-                [right, gen2]
+                [3, 2],
+                [5, 2],
+                [3, 4],
+                [5, 4]
             ],
-            captions:[
-                [left - (nodeWidth *  3 / 4), gen2 + nodeHeight / 2],
-                [right + nodeWidth, gen2]
-            ],
+            captions: [left, right],
             nodeValue: ["man1.svg", "woman2.svg", "boy1.svg", "boy2.svg"],
             nodeWeights: [noPair, noPair, pair1, pair2],
             currentState: ["deactivate", "deactivate", "active", "activeTo"],
-            edgeState:["married","others","others","others","others"],
+            edgeState:[married,others,others,others,others],
             answer: [qsTr("Brother")],
             options: [qsTr("Cousin"), qsTr("Brother"), qsTr("Sister")]
         },
         // level 4
         {
-            numberOfGenerations: 2,
             edgeList: [
-                [rightXEdge(left), nodeMidPointY(gen1), right, nodeMidPointY(gen1)],
-                [nodeMidPointX(left, right), nodeMidPointY(gen1), nodeMidPointX(left, right), gen2 - nodeHeight / 4],
-                [left + nodeWidth / 2, gen2 - nodeHeight / 4, right + nodeWidth / 2, gen2 - nodeHeight / 4],
-                [left + nodeWidth / 2, gen2 - nodeHeight / 4, left + nodeWidth / 2, gen2],
-                [center + nodeWidth / 2, gen2 - nodeHeight / 4, center + nodeWidth / 2, gen2],
-                [right + nodeWidth / 2, gen2 - nodeHeight / 4, right + nodeWidth / 2, gen2]
+                [4, 2, 6, 2],
+                [5, 2, 5, 3],
+                [3, 3, 7, 3],
+                [3, 3, 3, 4],
+                [5, 3, 5, 4],
+                [7, 3, 7, 4]
             ],
             nodePositions: [
-                [left, gen1],
-                [right, gen1],
-                [left, gen2],
-                [center, gen2],
-                [right, gen2]
+                [4, 2],
+                [6, 2],
+                [3, 4],
+                [5, 4],
+                [7, 4]
             ],
-            captions: [
-                [left - (nodeWidth *  3 / 4), gen2 + nodeHeight / 2],
-                [center + nodeWidth / 2, (gen2 + nodeHeight)]
-            ],
+            captions: [left, right],
             nodeValue: ["man1.svg", "woman2.svg", "boy1.svg", "girl1.svg", "boy2.svg"],
             nodeWeights: [noPair, noPair, pair1, pair2, pair1],
             currentState: ["deactivate", "deactivate", "active", "activeTo", "deactivate"],
-            edgeState:["married", "others", "others", "others", "others", "others"],
+            edgeState:[married, others, others, others, others, others],
             answer: [qsTr("Sister")],
             options: [qsTr("Cousin"), qsTr("Brother"), qsTr("Sister")]
         },
         // level 5
         {
-            numberOfGenerations: 3,
             edgeList: [
-                [leftExt + nodeWidth, gen1 + nodeHeight / 2, rightInt, gen1 + nodeHeight / 2],
-                [((leftExt + nodeWidth) + rightInt) / 2, gen1 + nodeHeight / 2, ((leftExt + nodeWidth) + rightInt) / 2, gen2],
-                [leftInt + nodeWidth, gen2 + nodeHeight / 2, right, gen2 + nodeHeight / 2],
-                [((leftInt + nodeWidth) + right) / 2, gen2 + nodeHeight / 2, ((leftInt + nodeWidth) + right) / 2, gen3 - nodeWidth / 4],
-                [left + nodeWidth / 2, gen3 - nodeWidth / 4, right + nodeWidth / 2, gen3 - nodeWidth / 4],
-                [left + nodeWidth / 2, gen3 - nodeWidth / 4, left + nodeWidth / 2, gen3],
-                [center + nodeWidth / 2, gen3 - nodeWidth / 4, center + nodeWidth / 2, gen3],
-                [right + nodeWidth / 2, gen3 - nodeWidth / 4, right + nodeWidth / 2, gen3]
+                [3, 1, 5, 1],
+                [4, 1, 4, 3],
+                [4, 3, 6, 3],
+                [5, 3, 5, 4],
+                [3, 4, 7, 4],
+                [3, 4, 3, 5],
+                [5, 4, 5, 5],
+                [7, 4, 7, 5]
             ],
             nodePositions: [
-                [leftExt, gen1],
-                [rightInt, gen1],
-                [leftInt, gen2],
-                [right, gen2],
-                [left, gen3],
-                [center, gen3],
-                [right, gen3]
+                [3, 1],
+                [5, 1],
+                [4, 3],
+                [6, 3],
+                [3, 5],
+                [5, 5],
+                [7, 5]
             ],
-            captions: [
-                [leftExt, gen3 + nodeHeight / 4],
-                [leftExt, gen1 + nodeHeight]
-            ],
+            captions: [left, left],
             nodeValue: ["oldMan1.svg", "oldWoman1.svg", "man2.svg", "woman1.svg", "girl1.svg", "boy1.svg", "boy2.svg"],
             nodeWeights: [pair1, noPair, noPair, noPair, pair2, pair2, pair2],
             currentState: ["activeTo", "deactivate", "deactivate", "deactivate", "active", "deactivate", "deactivate"],
-            edgeState:["married","others","married","others","others","others","others","others" ],
+            edgeState:[married,others,married,others,others,others,others,others ],
             answer: [qsTr("Grandfather")],
             options: [qsTr("Granddaughter"), qsTr("Grandson"), qsTr("Grandfather"), qsTr("Grandmother")]
         },
         // level 6
         {
-            numberOfGenerations: 3,
             edgeList: [
-                [leftExt + nodeWidth, gen1 + nodeHeight / 2, rightInt, gen1 + nodeHeight / 2],
-                [((leftExt + nodeWidth) + rightInt) / 2, gen1 + nodeHeight / 2, ((leftExt + nodeWidth) + rightInt) / 2, gen2],
-                [leftInt + nodeWidth, gen2 + nodeHeight / 2, right, gen2 + nodeHeight / 2],
-                [((leftInt + nodeWidth) + right) / 2, gen2 + nodeHeight / 2, ((leftInt + nodeWidth) + right) / 2, gen3 - nodeWidth / 4],
-                [left + nodeWidth / 2, gen3 - nodeWidth / 4, right + nodeWidth / 2, gen3 - nodeWidth / 4],
-                [left + nodeWidth / 2, gen3 - nodeWidth / 4, left + nodeWidth / 2, gen3],
-                [center + nodeWidth / 2, gen3 - nodeWidth / 4, center + nodeWidth / 2, gen3],
-                [right + nodeWidth / 2, gen3 - nodeWidth / 4, right + nodeWidth / 2, gen3]
+                [3, 1, 5, 1],
+                [4, 1, 4, 3],
+                [4, 3, 6, 3],
+                [5, 3, 5, 4],
+                [3, 4, 7, 4],
+                [3, 4, 3, 5],
+                [5, 4, 5, 5],
+                [7, 4, 7, 5]
             ],
             nodePositions: [
-                [leftExt, gen1],
-                [rightInt, gen1],
-                [leftInt, gen2],
-                [right, gen2],
-                [left, gen3],
-                [center, gen3],
-                [right, gen3]
+                [3, 1],
+                [5, 1],
+                [4, 3],
+                [6, 3],
+                [3, 5],
+                [5, 5],
+                [7, 5]
             ],
-            captions: [
-                [right + nodeWidth, gen3 + (nodeHeight * 3 / 4)],
-                [rightInt, gen1 + nodeHeight]
-            ],
+            captions: [right, right],
             nodeValue: ["oldMan1.svg", "oldWoman1.svg", "man2.svg", "woman1.svg", "boy1.svg", "girl1.svg", "boy2.svg"],
             nodeWeights: [noPair, pair1, noPair, noPair, pair2, pair2, pair2],
             currentState: ["deactivate", "activeTo", "deactivate", "deactivate", "deactivate", "deactivate", "active"],
-            edgeState:["married","others","married","others","others","others","others","others" ],
+            edgeState:[married,others,married,others,others,others,others,others ],
             answer: [qsTr("Grandmother")],
             options: [qsTr("Granddaughter"), qsTr("Grandson"), qsTr("Grandfather"), qsTr("Grandmother")],
         },
         // level 7
         {
-            numberOfGenerations: 3,
             edgeList: [
-                [leftExt + nodeWidth, gen1 + nodeHeight / 2, rightInt, gen1 + nodeHeight / 2],
-                [((leftExt + nodeWidth) + rightInt) / 2, gen1 + nodeHeight / 2, ((leftExt + nodeWidth) + rightInt) / 2, gen2],
-                [leftInt + nodeWidth, gen2 + nodeHeight / 2, right, gen2 + nodeHeight / 2],
-                [((leftInt + nodeWidth) + right) / 2, gen2 + nodeHeight / 2, ((leftInt + nodeWidth) + right) / 2, gen3 - nodeWidth / 4],
-                [left + nodeWidth / 2, gen3 - nodeWidth / 4, right + nodeWidth / 2, gen3 - nodeWidth / 4],
-                [left + nodeWidth / 2, gen3 - nodeWidth / 4, left + nodeWidth / 2, gen3],
-                [center + nodeWidth / 2, gen3 - nodeWidth / 4, center + nodeWidth / 2, gen3],
-                [right + nodeWidth / 2, gen3 - nodeWidth / 4, right + nodeWidth / 2, gen3]
+                [3, 1, 5, 1],
+                [4, 1, 4, 3],
+                [4, 3, 6, 3],
+                [5, 3, 5, 4],
+                [3, 4, 7, 4],
+                [3, 4, 3, 5],
+                [5, 4, 5, 5],
+                [7, 4, 7, 5]
             ],
             nodePositions: [
-                [leftExt, gen1],
-                [rightInt, gen1],
-                [leftInt, gen2],
-                [right, gen2],
-                [left, gen3],
-                [center, gen3],
-                [right, gen3]
+                [3, 1],
+                [5, 1],
+                [4, 3],
+                [6, 3],
+                [3, 5],
+                [5, 5],
+                [7, 5]
             ],
-            captions: [
-                [leftExt + nodeWidth, gen1],
-                [right + nodeWidth, gen3]
-            ],
+            captions: [left, right],
             nodeValue: ["oldMan1.svg", "oldWoman1.svg", "man2.svg", "woman1.svg", "boy1.svg", "boy2.svg","girl1.svg" ],
             nodeWeights: [pair1, pair1, noPair, noPair, noPair, noPair, pair2],
             currentState: ["active", "deactivate", "deactivate", "deactivate", "deactivate", "deactivate", "activeTo"],
-            edgeState:["married","others","married","others","others","others","others","others" ],
+            edgeState:[married,others,married,others,others,others,others,others ],
             answer: [qsTr("Granddaughter")],
             options: [qsTr("Granddaughter"), qsTr("Grandson"), qsTr("Grandfather"), qsTr("Grandmother")]
         },
         // level 8
         {
-            numberOfGenerations: 3,
             edgeList: [
-                [leftExt + nodeWidth, gen1 + nodeHeight / 2, rightInt, gen1 + nodeHeight / 2],
-                [((leftExt + nodeWidth) + rightInt) / 2, gen1 + nodeHeight / 2, ((leftExt + nodeWidth) + rightInt) / 2, gen2],
-                [leftInt + nodeWidth, gen2 + nodeHeight / 2, right, gen2 + nodeHeight / 2],
-                [((leftInt + nodeWidth) + right) / 2, gen2 + nodeHeight / 2, ((leftInt + nodeWidth) + right) / 2, gen3 - nodeWidth / 4],
-                [left + nodeWidth / 2, gen3 - nodeWidth / 4, right + nodeWidth / 2, gen3 - nodeWidth / 4],
-                [left + nodeWidth / 2, gen3 - nodeWidth / 4, left + nodeWidth / 2, gen3],
-                [center + nodeWidth / 2, gen3 - nodeWidth / 4, center + nodeWidth / 2, gen3],
-                [right + nodeWidth / 2, gen3 - nodeWidth / 4, right + nodeWidth / 2, gen3]
+                [3, 1, 5, 1],
+                [4, 1, 4, 3],
+                [4, 3, 6, 3],
+                [5, 3, 5, 4],
+                [3, 4, 7, 4],
+                [3, 4, 3, 5],
+                [5, 4, 5, 5],
+                [7, 4, 7, 5]
             ],
             nodePositions: [
-                [leftExt, gen1],
-                [rightInt, gen1],
-                [leftInt, gen2],
-                [right, gen2],
-                [left, gen3],
-                [center, gen3],
-                [right, gen3]
+                [3, 1],
+                [5, 1],
+                [4, 3],
+                [6, 3],
+                [3, 5],
+                [5, 5],
+                [7, 5]
             ],
-            captions: [
-                [rightInt + nodeWidth, gen1],
-                [right + nodeWidth, gen3]
-            ],
+            captions: [right, right],
             nodeValue: ["oldMan1.svg", "oldWoman1.svg", "man2.svg", "woman1.svg", "boy1.svg", "girl1.svg", "boy2.svg"],
             nodeWeights: [pair1, pair1, noPair, noPair, pair2, noPair, pair2],
             currentState: ["deactivate", "active", "deactivate", "deactivate", "deactivate", "deactivate", "activeTo"],
-            edgeState:["married","others","married","others","others","others","others","others" ],
+            edgeState:[married,others,married,others,others,others,others,others ],
             answer: [qsTr("Grandson")],
             options: [qsTr("Granddaughter"), qsTr("Grandson"), qsTr("Grandfather"), qsTr("Grandmother")]
         },
         // level 9
         {
-            numberOfGenerations: 3,
             edgeList: [
-                [center + nodeWidth / 2, gen1 + nodeHeight, center + nodeWidth / 2, gen2 + nodeHeight / 2],
-                [rightXEdge(left), nodeMidPointY(gen2), right, nodeMidPointY(gen2)],
-                [left + nodeWidth / 2, gen2 + nodeHeight, left + nodeWidth / 2, gen3],
-                [right + nodeWidth / 2, gen2 + nodeHeight, right + nodeWidth / 2, gen3]
+                [4, 1, 4, 2],
+                [3, 2, 5, 2],
+                [3, 2, 3, 3],
+                [5, 2, 5, 3],
+                [3, 3, 3, 5],
+                [5, 3, 5, 5]
             ],
             nodePositions: [
-                [center, gen1],
-                [left, gen2],
-                [right, gen2],
-                [left, gen3],
-                [right, gen3]
+                [4, 1],
+                [3, 3],
+                [5, 3],
+                [3, 5],
+                [5, 5]
             ],
-            captions: [
-                [(right + nodeWidth * 1.1), gen3 + nodeHeight / 4],
-                [left - nodeWidth / 2, gen3 + nodeHeight / 4]
-            ],
+            captions: [right, left],
             nodeValue: ["oldMan1.svg", "man3.svg", "man2.svg", "boy1.svg","boy2.svg"],
             nodeWeights: [noPair, noPair, noPair, pair2, pair1],
             currentState: ["deactivate", "deactivate", "deactivate", "activeTo","active"],
-            edgeState:["others","others","others","others"],
+            edgeState:[others,others,others,others,others,others],
             answer: [qsTr("Cousin")],
             options: [qsTr("Brother"), qsTr("Sister"), qsTr("Cousin")]
         },
         // level 10
         {
-            numberOfGenerations: 3,
             edgeList: [
-                [center + nodeWidth / 2, gen1 + nodeHeight, center + nodeWidth / 2, gen2 + nodeHeight / 2],
-                [rightXEdge(left), nodeMidPointY(gen2), right, nodeMidPointY(gen2)],
-                [left + nodeWidth / 2, gen2 + nodeHeight, left + nodeWidth / 2, gen3]
+                [4, 1, 4, 2],
+                [3, 2, 5, 2],
+                [3, 2, 3, 3],
+                [5, 2, 5, 3],
+                [3, 3, 3, 5]
             ],
             nodePositions: [
-                [center, gen1],
-                [left, gen2],
-                [right, gen2],
-                [left, gen3]
+                [4, 1],
+                [3, 3],
+                [5, 3],
+                [3, 5]
             ],
-            captions: [
-                [left - nodeWidth * 3 / 4, gen3 + nodeHeight / 4],
-                [right + nodeWidth * 1.1, gen2 + nodeHeight / 4]
-            ],
+            captions: [left, right],
             nodeValue: ["oldMan1.svg", "man3.svg", "man2.svg", "boy1.svg"],
             nodeWeights: [noPair, noPair, pair1, pair2],
             currentState: ["deactivate", "deactivate", "activeTo", "active"],
-            edgeState:["others","others","others"],
+            edgeState:[others,others,others,others,others],
             answer: [qsTr("Uncle")],
             options: [qsTr("Uncle"), qsTr("Aunt"), qsTr("Nephew"), qsTr("Niece")]
         },
         // level 11
         {
-            numberOfGenerations: 3,
             edgeList: [
-                [center + nodeWidth / 2, gen1 + nodeHeight, center + nodeWidth / 2, gen2 + nodeHeight / 2],
-                [rightXEdge(left), nodeMidPointY(gen2), right, nodeMidPointY(gen2)],
-                [left + nodeWidth / 2, gen2 + nodeHeight, left + nodeWidth / 2, gen3]
+                [4, 1, 4, 2],
+                [3, 2, 5, 2],
+                [3, 2, 3, 3],
+                [5, 2, 5, 3],
+                [3, 3, 3, 5]
             ],
             nodePositions: [
-                [center, gen1],
-                [left, gen2],
-                [right, gen2],
-                [left, gen3]
+                [4, 1],
+                [3, 3],
+                [5, 3],
+                [3, 5]
             ],
-            captions: [
-                [right + nodeWidth * 1.1, gen2 + nodeHeight / 4],
-                [left - nodeWidth * 3 / 4, gen3 + nodeHeight / 4]
-            ],
+            captions: [right, left],
             nodeValue: ["oldMan1.svg", "man3.svg", "man2.svg", "boy1.svg"],
             nodeWeights: [noPair, noPair, pair2, pair1],
             currentState: ["deactivate", "deactivate", "active", "activeTo"],
-            edgeState:["others","others","others"],
+            edgeState:[others,others,others,others,others],
             answer: [qsTr("Nephew")],
             options: [qsTr("Uncle"), qsTr("Aunt"), qsTr("Nephew"), qsTr("Niece")]
         },
         // level 12
         {
-            numberOfGenerations: 3,
             edgeList: [
-                [rightXEdge(left), gen1 + nodeHeight / 2, right, gen1 + nodeHeight / 2],
-                [nodeMidPointX(left, right), nodeMidPointY(gen1), nodeMidPointX(left, right), nodeMidPointY(gen2)],
-                [rightXEdge(left), nodeMidPointY(gen2), right, nodeMidPointY(gen2)],
-                [left + nodeWidth / 2, gen2 + nodeHeight, left + nodeWidth / 2, gen3]
+                [3, 1, 5, 1],
+                [4, 1, 4, 2],
+                [3, 2, 5, 2],
+                [3, 2, 3, 3],
+                [5, 2, 5, 3],
+                [3, 3, 3, 5]
             ],
             nodePositions: [
-                [left, gen1],
-                [right, gen1],
-                [left, gen2],
-                [right, gen2],
-                [left, gen3]
+                [3, 1],
+                [5, 1],
+                [3, 3],
+                [5, 3],
+                [3, 5]
             ],
-            captions: [
-                [left - nodeWidth * 3 / 4, gen3 + nodeHeight / 4],
-                [right + nodeWidth * 1.1, gen2 + nodeHeight / 4]
-            ],
+            captions: [left, right],
             nodeValue: ["oldMan1.svg", "oldWoman1.svg", "man3.svg", "woman1.svg", "babyBoy.svg"],
             nodeWeights: [noPair, noPair, noPair, pair1, pair2],
             currentState: ["deactivate", "deactivate", "deactivate", "activeTo", "active"],
-            edgeState:["married","others","siblings","others"],
+            edgeState:[married,others,others,others,others,others],
             answer: [qsTr("Aunt")],
             options: [qsTr("Uncle"), qsTr("Aunt"), qsTr("Nephew"), qsTr("Niece")]
         },
         // level 13
         {
-            numberOfGenerations: 3,
             edgeList: [
-                [rightXEdge(left), gen1 + nodeHeight / 2, right, gen1 + nodeHeight / 2],
-                [nodeMidPointX(left, right), nodeMidPointY(gen1), nodeMidPointX(left, right), nodeMidPointY(gen2)],
-                [rightXEdge(left), nodeMidPointY(gen2), right, nodeMidPointY(gen2)],
-                [left + nodeWidth / 2, gen2 + nodeHeight, left + nodeWidth / 2, gen3]
+                [3, 1, 5, 1],
+                [4, 1, 4, 2],
+                [3, 2, 5, 2],
+                [3, 2, 3, 3],
+                [5, 2, 5, 3],
+                [3, 3, 3, 5]
             ],
             nodePositions: [
-                [left, gen1],
-                [right, gen1],
-                [left, gen2],
-                [right, gen2],
-                [left, gen3]
+                [3, 1],
+                [5, 1],
+                [3, 3],
+                [5, 3],
+                [3, 5]
             ],
-            captions: [
-                [right + nodeWidth * 1.1, gen2 + nodeHeight / 4],
-                [left - nodeWidth / 2, gen3 + nodeHeight / 4]
-            ],
+            captions: [right, left],
             nodeValue: ["oldMan1.svg", "oldWoman1.svg", "man3.svg", "woman1.svg", "babyGirl.svg"],
             nodeWeights: [noPair, noPair, noPair, pair2, pair1],
             currentState: ["deactivate", "deactivate", "deactivate", "active", "activeTo"],
-            edgeState:["married","others","siblings","others"],
+            edgeState:[married,others,others,others,others,others],
             answer: [qsTr("Niece")],
             options: [qsTr("Uncle"), qsTr("Aunt"), qsTr("Nephew"), qsTr("Niece")]
         },
         // level 14
         {
-            numberOfGenerations: 2,
             edgeList: [
-                [rightXEdge(center), nodeMidPointY(gen1), rightExt, nodeMidPointY(gen1)],
-                [nodeMidPointX(center, rightExt), nodeMidPointY(gen1), nodeMidPointX(center, rightExt), nodeMidPointY(gen2)],
-                [rightXEdge(center), nodeMidPointY(gen2), rightExt, nodeMidPointY(gen2)],
-                [rightXEdge(leftExt), nodeMidPointY(gen2), center, nodeMidPointY(gen2)]
+                [5, 1, 7, 1],
+                [6, 1, 6, 2],
+                [5, 2, 7, 2],
+                [5, 2, 5, 3],
+                [7, 2, 7, 3],
+                [3, 3, 5, 3]
             ],
             nodePositions: [
-                [center, gen1],
-                [rightExt, gen1],
-                [center, gen2],
-                [rightExt, gen2],
-                [leftExt, gen2]
+                [5, 1],
+                [7, 1],
+                [5, 3],
+                [7, 3],
+                [3, 3]
             ],
-            captions: [
-                [leftExt - nodeWidth / 2, gen2 + nodeHeight * 3 / 4],
-                [center - nodeWidth * 3 / 4, gen1 + nodeHeight / 4]
-            ],
+            captions: [left, left],
             nodeValue: ["oldMan1.svg", "oldWoman1.svg", "man3.svg", "man1.svg", "woman2.svg"],
             nodeWeights: [pair1, noPair, noPair, noPair, pair2],
             currentState: ["activeTo", "deactivate", "deactivate", "deactivate", "active"],
-            edgeState:["married","others","others","married"],
+            edgeState:[married,others,others,others,others,married],
             answer: [qsTr("Father-in-law")],
             options: [qsTr("Father-in-law"), qsTr("Mother-in-law"), qsTr("Sister-in-law"), qsTr("Brother-in-law"), qsTr("Daughter-in-law")]
         },
         // level 15
         {
-            numberOfGenerations: 2,
             edgeList: [
-                [rightXEdge(center), nodeMidPointY(gen1), rightExt, nodeMidPointY(gen1)],
-                [nodeMidPointX(center, rightExt), nodeMidPointY(gen1), nodeMidPointX(center, rightExt), nodeMidPointY(gen2)],
-                [rightXEdge(center), nodeMidPointY(gen2), rightExt, nodeMidPointY(gen2)],
-                [rightXEdge(leftExt), nodeMidPointY(gen2), center, nodeMidPointY(gen2)]
+                [5, 1, 7, 1],
+                [6, 1, 6, 2],
+                [5, 2, 7, 2],
+                [5, 2, 5, 3],
+                [7, 2, 7, 3],
+                [3, 3, 5, 3]
             ],
             nodePositions: [
-                [center, gen1],
-                [rightExt, gen1],
-                [center, gen2],
-                [rightExt, gen2],
-                [leftExt, gen2]
+                [5, 1],
+                [7, 1],
+                [5, 3],
+                [7, 3],
+                [3, 3]
             ],
-            captions: [
-                [leftExt - nodeWidth / 2, gen2 + nodeHeight * 3 / 4],
-                [rightExt + nodeWidth * 1.1, gen1 + nodeHeight / 4]
-            ],
+            captions: [left, right],
             nodeValue: ["oldMan1.svg", "oldWoman1.svg", "man3.svg", "man1.svg", "woman2.svg"],
             nodeWeights: [noPair, pair1, noPair, noPair, pair2],
             currentState: ["deactivate", "activeTo", "deactivate", "deactivate", "active"],
-            edgeState:["married","others","others","married"],
+            edgeState:[married,others,others,others,others,married],
             answer: [qsTr("Mother-in-law")],
             options: [qsTr("Father-in-law"), qsTr("Mother-in-law"), qsTr("Sister-in-law"), qsTr("Brother-in-law"), qsTr("Daughter-in-law")]
         },
         // level 16
         {
-            numberOfGenerations: 2,
             edgeList: [
-                [rightXEdge(center), nodeMidPointY(gen1), rightExt, nodeMidPointY(gen1)],
-                [nodeMidPointX(center, rightExt), nodeMidPointY(gen1), nodeMidPointX(center, rightExt), nodeMidPointY(gen2)],
-                [rightXEdge(center), nodeMidPointY(gen2), rightExt, nodeMidPointY(gen2)],
-                [rightXEdge(leftExt), nodeMidPointY(gen2), center, nodeMidPointY(gen2)]
+                [5, 1, 7, 1],
+                [6, 1, 6, 2],
+                [5, 2, 7, 2],
+                [5, 2, 5, 3],
+                [7, 2, 7, 3],
+                [3, 3, 5, 3]
             ],
             nodePositions: [
-                [center, gen1],
-                [rightExt, gen1],
-                [center, gen2],
-                [rightExt, gen2],
-                [leftExt, gen2]
+                [5, 1],
+                [7, 1],
+                [5, 3],
+                [7, 3],
+                [3, 3]
             ],
-            captions: [
-                [leftExt - nodeWidth / 2, gen2 + nodeHeight * 3 / 4],
-                [rightExt + nodeWidth * 1.1, gen2 + nodeHeight / 4]
-            ],
+            captions: [left, right],
             nodeValue: ["oldMan1.svg", "oldWoman1.svg", "man3.svg", "man1.svg", "woman2.svg"],
             nodeWeights: [noPair, noPair, noPair, pair1, pair2],
             currentState: ["deactivate", "deactivate", "deactivate", "activeTo", "active"],
-            edgeState:["married","others","others","married"],
+            edgeState:[married,others,others,others,others,married],
             answer: [qsTr("Brother-in-law")],
             options: [qsTr("Father-in-law"), qsTr("Mother-in-law"), qsTr("Sister-in-law"), qsTr("Brother-in-law"), qsTr("Daughter-in-law")]
         },
         // level 17
         {
-            numberOfGenerations: 2,
             edgeList: [
-                [rightXEdge(leftInt), nodeMidPointY(gen1), rightInt, nodeMidPointY(gen1)],
-                [nodeMidPointX(leftInt, rightInt), nodeMidPointY(gen1), nodeMidPointX(leftInt, rightInt), nodeMidPointY(gen2)],
-                [rightXEdge(leftInt), nodeMidPointY(gen2), rightInt, nodeMidPointY(gen2)],
-                [rightXEdge(leftExt), nodeMidPointY(gen2), leftInt, nodeMidPointY(gen2)],
-                [rightXEdge(rightInt), nodeMidPointY(gen2), rightExt, nodeMidPointY(gen2)]
+                [4, 1, 6, 1],
+                [5, 1, 5, 2],
+                [4, 2, 6, 2],
+                [4, 2, 4, 3],
+                [6, 2, 6, 3],
+                [2, 3, 4, 3],
+                [6, 3, 8, 3]
             ],
             nodePositions: [
-                [leftInt, gen1],
-                [rightInt, gen1],
-                [leftInt, gen2],
-                [leftExt, gen2],
-                [rightInt, gen2],
-                [rightExt, gen2]
+                [4, 1],
+                [6, 1],
+                [4, 3],
+                [2, 3],
+                [6, 3],
+                [8, 3]
             ],
-            captions: [
-                [leftExt - nodeWidth / 2, gen2],
-                [rightInt + nodeWidth * 0.8, gen2 - nodeHeight / 4]
-            ],
+            captions: [left, right],
             nodeValue: ["oldMan1.svg", "oldWoman1.svg", "man3.svg", "woman2.svg", "woman1.svg", "man1.svg"],
             nodeWeights: [noPair, noPair, noPair, pair1, pair2, noPair],
             currentState: ["dective", "deactivate", "deactivate", "active", "activeTo", "deactivate"],
-            edgeState:["married","others","others","married","married"],
+            edgeState:[married,others,others,others,others,married,married],
             answer: [qsTr("Sister-in-law")],
             options: [qsTr("Father-in-law"), qsTr("Mother-in-law"), qsTr("Sister-in-law"), qsTr("Brother-in-law"), qsTr("Daughter-in-law")]
         },
         // level 18
         {
-            numberOfGenerations: 2,
             edgeList: [
-                [rightXEdge(center), nodeMidPointY(gen1), rightExt, nodeMidPointY(gen1)],
-                [nodeMidPointX(center, rightExt), nodeMidPointY(gen1), nodeMidPointX(center, rightExt), nodeMidPointY(gen2)],
-                [rightXEdge(center), nodeMidPointY(gen2), rightExt, nodeMidPointY(gen2)],
-                [rightXEdge(leftExt), nodeMidPointY(gen2), center, nodeMidPointY(gen2)]
+                [5, 1, 7, 1],
+                [6, 1, 6, 2],
+                [5, 2, 7, 2],
+                [5, 2, 5, 3],
+                [7, 2, 7, 3],
+                [3, 3, 5, 3]
             ],
             nodePositions: [
-                [center, gen1],
-                [rightExt, gen1],
-                [center, gen2],
-                [leftExt, gen2],
-                [rightExt, gen2]
+                [5, 1],
+                [7, 1],
+                [5, 3],
+                [3, 3],
+                [7, 3]
             ],
-            captions: [
-                [center - (nodeWidth * 3/ 4), gen1 + nodeHeight / 4],
-                [leftExt - nodeWidth / 2, gen2 + nodeHeight / 2]
-            ],
+            captions: [left, left],
             nodeValue: ["oldMan1.svg", "oldWoman1.svg", "woman2.svg", "man3.svg", "man1.svg"],
             nodeWeights: [pair1, pair1, noPair, pair2, noPair],
             currentState: ["active", "deactivate", "deactivate", "activeTo", "deactivate"],
-            edgeState:["married","others","others","married"],
+            edgeState:[married,others,others,others,others,married],
             answer: [qsTr("Son-in-law")],
             options: [qsTr("Son-in-law"), qsTr("Mother-in-law"), qsTr("Sister-in-law"), qsTr("Brother-in-law"), qsTr("Daughter-in-law")]
         }

@@ -16,20 +16,16 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var items;
-var barAtStart;
 var url = "qrc:/gcompris/src/activities/family/resource/"
 
 var numberOfLevel
 var shuffledLevelIndex = []
 var levelToLoad
-var answerButtonRatio = 0;
 
 function start(items_) {
     items = items_
     numberOfLevel = items.dataset.levelElements.length
     items.currentLevel = Core.getInitialLevel(numberOfLevel)
-    barAtStart = GCompris.ApplicationSettings.isBarHidden;
-    GCompris.ApplicationSettings.isBarHidden = true;
 
     shuffle()
 
@@ -38,7 +34,6 @@ function start(items_) {
 
 function stop() {
     items.loadDatasetDelay.stop();
-    GCompris.ApplicationSettings.isBarHidden = barAtStart;
 }
 
 function initLevel() {
@@ -46,8 +41,6 @@ function initLevel() {
     items.selectedPairs.reset()
     levelToLoad = getCurrentLevelIndex()
     var levelTree = items.dataset.levelElements[levelToLoad]
-    items.dataset.numberOfGenerations = levelTree.numberOfGenerations
-    // Need to delay in order of the number of generation change to be taken in account
     items.loadDatasetDelay.start()
 }
 
@@ -58,26 +51,31 @@ function loadDatasets() {
 
     var levelTree = items.dataset.levelElements[levelToLoad]
 
-    answerButtonRatio = 1 / (levelTree.options.length + 4);
-
     items.nodeRepeater.model.clear();
     items.answersChoice.model.clear();
     items.edgeRepeater.model.clear();
-    items.ringRepeator.model.clear();
+    items.ringRepeater.model.clear();
 
     for(var i = 0 ; i < levelTree.nodePositions.length ; i++) {
         items.nodeRepeater.model.append({
-                       "xPosition": levelTree.nodePositions[i][0],
-                       "yPosition": levelTree.nodePositions[i][1],
+                       "xPosition": levelTree.nodePositions[i][0] - 1,
+                       "yPosition": levelTree.nodePositions[i][1] - 1,
                        "nodeValue": levelTree.nodeValue[i],
                        "currentState": items.mode == "family" ? levelTree.currentState[i] : "deactive",
                        "nodeWeight": levelTree.nodeWeights[i]
                      });
+        if(levelTree.currentState[i] === "active") {
+            items.meLabelPosition.x = levelTree.nodePositions[i][0] - 1;
+            items.meLabelPosition.y = levelTree.nodePositions[i][1] - 1;
+        } else if(levelTree.currentState[i] === "activeTo") {
+            items.questionMarkPosition.x = levelTree.nodePositions[i][0] - 1;
+            items.questionMarkPosition.y = levelTree.nodePositions[i][1] - 1;
+        }
     }
 
     for(var i = 0 ; i <levelTree.options.length ; i++) {
        items.answersChoice.model.append({
-               "optionn": levelTree.options[i],
+               "optionText": levelTree.options[i],
                "answer": levelTree.answer[0]
        });
     }
@@ -93,21 +91,19 @@ function loadDatasets() {
     }
 
     for(var i = 0 ; i < levelTree.edgeState.length ; i++) {
-        if(levelTree.edgeState[i] === "married") {
-            var xcor = (levelTree.edgeList[i][0]+levelTree.edgeList[i][2]-0.04)/2;
-            var ycor =  levelTree.edgeList[i][3] - 0.02
-            items.ringRepeator.model.append({
-                "ringx": xcor,
-                "ringy": ycor
+        if(levelTree.edgeState[i] === 1) {
+            var xcor = levelTree.edgeList[i][0];
+            var ycor =  levelTree.edgeList[i][1] - 1;
+            items.ringRepeater.model.append({
+                "ringX": xcor,
+                "ringY": ycor
             });
         }
     }
 
     items.questionTopic = levelTree.answer[0]
-    items.questionMarkPosition.x = levelTree.captions[1][0]
-    items.questionMarkPosition.y = levelTree.captions[1][1]
-    items.meLabelPosition.x = levelTree.captions[0][0]
-    items.meLabelPosition.y = levelTree.captions[0][1]
+    items.meLabelSide = levelTree.captions[0]
+    items.questionMarkSide = levelTree.captions[1]
 }
 
 function shuffle() {
