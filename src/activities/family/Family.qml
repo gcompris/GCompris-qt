@@ -44,23 +44,6 @@ ActivityBase {
 
         readonly property real nodeSize: Math.min(treeArea.width / 8, treeArea.height * 0.2)
 
-        onWidthChanged: loadDatasetDelay.start()
-        onHeightChanged: if (!loadDatasetDelay.running) {
-                            loadDatasetDelay.start()
-                         }
-
-        /*
-         * Adding a delay before reloading the datasets
-         * needed for fast width / height changes
-         */
-        Timer {
-            id: loadDatasetDelay
-            running: false
-            repeat: false
-            interval: 100
-            onTriggered: Activity.loadDatasets()
-        }
-
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
@@ -76,7 +59,6 @@ ActivityBase {
             property string mode: activity.mode
             property alias questionTopic: question.questionTopic
             property alias selectedPairs: selectedPairs
-            property alias loadDatasetDelay: loadDatasetDelay
             property bool buttonsBlocked: false
             property point meLabelPosition: [0,0]
             property int meLabelSide: 0
