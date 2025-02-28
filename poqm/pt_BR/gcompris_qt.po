@@ -8,12 +8,13 @@
 # Edely <edely.gomes@gmail.com>, 2015.
 # SPDX-FileCopyrightText: 2015, 2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Frederico Goncalves Guimaraes <frederico@teia.bio.br>
 # Geraldo Simiao <geraldosimiao@fedoraproject.org>, 2023.
+# SPDX-FileCopyrightText: 2025 Guilherme Marçal Silva <guimarcalsilva@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-01-09 14:22-0300\n"
-"Last-Translator: Frederico Goncalves Guimaraes <frederico@teia.bio.br>\n"
+"PO-Revision-Date: 2025-02-27 20:48-0300\n"
+"Last-Translator: Guilherme Marçal Silva <guimarcalsilva@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +23,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Language: pt_BR\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 24.12.0\n"
+"X-Generator: Lokalize 24.12.2\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -7070,7 +7071,7 @@ msgstr ""
 "No nível 3, um texto aleatório será apresentado e você deve clicar sobre o "
 "animal que corresponda àquele texto."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:331
+#: activities/explore_farm_animals/ExploreLevels.qml:333
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -7079,12 +7080,12 @@ msgstr ""
 "Essa atividade usa sons, por isso ela tocará alguns sons mesmo que o áudio "
 "de vozes ou efeitos esteja desabilitado na configuração principal."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:332
+#: activities/explore_farm_animals/ExploreLevels.qml:334
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Sair"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:333
+#: activities/explore_farm_animals/ExploreLevels.qml:335
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Continuar"
@@ -9054,184 +9055,184 @@ msgstr ""
 "Você é a pessoa no círculo branco. Selecione o nome pelo qual você chamaria "
 "a pessoa no círculo laranja.\n"
 
-#: activities/family/Family.qml:228
+#: activities/family/Family.qml:251
 msgctxt "Family|"
 msgid "Me"
 msgstr "Eu"
 
-#: activities/family/Family.qml:251
+#: activities/family/Family.qml:276
 msgctxt "Family|"
 msgid "?"
 msgstr "?"
 
-#: activities/family/Family.qml:365
+#: activities/family/Family.qml:353
 #, qt-format
 msgctxt "Family|"
 msgid "Select one of the pairs corresponding to: %1"
 msgstr "Selecione um dos pares que corresponda a: %1"
 
-#: activities/family/FamilyDataset.qml:125
-#: activities/family/FamilyDataset.qml:126
+#: activities/family/FamilyDataset.qml:95
+#: activities/family/FamilyDataset.qml:96
 msgctxt "FamilyDataset|"
 msgid "Father"
 msgstr "Pai"
 
-#: activities/family/FamilyDataset.qml:126
-#: activities/family/FamilyDataset.qml:237
-#: activities/family/FamilyDataset.qml:238
-#: activities/family/FamilyDataset.qml:271
-#: activities/family/FamilyDataset.qml:304
-#: activities/family/FamilyDataset.qml:337
+#: activities/family/FamilyDataset.qml:96
+#: activities/family/FamilyDataset.qml:191
+#: activities/family/FamilyDataset.qml:192
+#: activities/family/FamilyDataset.qml:221
+#: activities/family/FamilyDataset.qml:250
+#: activities/family/FamilyDataset.qml:279
 msgctxt "FamilyDataset|"
 msgid "Grandfather"
 msgstr "Avô"
 
-#: activities/family/FamilyDataset.qml:126
-#: activities/family/FamilyDataset.qml:388
-#: activities/family/FamilyDataset.qml:389
-#: activities/family/FamilyDataset.qml:414
-#: activities/family/FamilyDataset.qml:441
-#: activities/family/FamilyDataset.qml:468
+#: activities/family/FamilyDataset.qml:96
+#: activities/family/FamilyDataset.qml:326
+#: activities/family/FamilyDataset.qml:327
+#: activities/family/FamilyDataset.qml:350
+#: activities/family/FamilyDataset.qml:375
+#: activities/family/FamilyDataset.qml:400
 msgctxt "FamilyDataset|"
 msgid "Uncle"
 msgstr "Tio"
 
-#: activities/family/FamilyDataset.qml:148
-#: activities/family/FamilyDataset.qml:149
+#: activities/family/FamilyDataset.qml:114
+#: activities/family/FamilyDataset.qml:115
 msgctxt "FamilyDataset|"
 msgid "Mother"
 msgstr "Mãe"
 
-#: activities/family/FamilyDataset.qml:149
-#: activities/family/FamilyDataset.qml:238
-#: activities/family/FamilyDataset.qml:270
-#: activities/family/FamilyDataset.qml:271
-#: activities/family/FamilyDataset.qml:304
-#: activities/family/FamilyDataset.qml:337
+#: activities/family/FamilyDataset.qml:115
+#: activities/family/FamilyDataset.qml:192
+#: activities/family/FamilyDataset.qml:220
+#: activities/family/FamilyDataset.qml:221
+#: activities/family/FamilyDataset.qml:250
+#: activities/family/FamilyDataset.qml:279
 msgctxt "FamilyDataset|"
 msgid "Grandmother"
 msgstr "Avó"
 
-#: activities/family/FamilyDataset.qml:149
-#: activities/family/FamilyDataset.qml:389
-#: activities/family/FamilyDataset.qml:414
-#: activities/family/FamilyDataset.qml:440
-#: activities/family/FamilyDataset.qml:441
-#: activities/family/FamilyDataset.qml:468
+#: activities/family/FamilyDataset.qml:115
+#: activities/family/FamilyDataset.qml:327
+#: activities/family/FamilyDataset.qml:350
+#: activities/family/FamilyDataset.qml:374
+#: activities/family/FamilyDataset.qml:375
+#: activities/family/FamilyDataset.qml:400
 msgctxt "FamilyDataset|"
 msgid "Aunt"
 msgstr "Tia"
 
-#: activities/family/FamilyDataset.qml:175
-#: activities/family/FamilyDataset.qml:176
-#: activities/family/FamilyDataset.qml:205
-#: activities/family/FamilyDataset.qml:364
+#: activities/family/FamilyDataset.qml:137
+#: activities/family/FamilyDataset.qml:138
+#: activities/family/FamilyDataset.qml:163
+#: activities/family/FamilyDataset.qml:304
 msgctxt "FamilyDataset|"
 msgid "Brother"
 msgstr "Irmão"
 
-#: activities/family/FamilyDataset.qml:176
-#: activities/family/FamilyDataset.qml:205
-#: activities/family/FamilyDataset.qml:363
-#: activities/family/FamilyDataset.qml:364
+#: activities/family/FamilyDataset.qml:138
+#: activities/family/FamilyDataset.qml:163
+#: activities/family/FamilyDataset.qml:303
+#: activities/family/FamilyDataset.qml:304
 msgctxt "FamilyDataset|"
 msgid "Cousin"
 msgstr "Primo(a)"
 
-#: activities/family/FamilyDataset.qml:176
-#: activities/family/FamilyDataset.qml:204
-#: activities/family/FamilyDataset.qml:205
-#: activities/family/FamilyDataset.qml:364
+#: activities/family/FamilyDataset.qml:138
+#: activities/family/FamilyDataset.qml:162
+#: activities/family/FamilyDataset.qml:163
+#: activities/family/FamilyDataset.qml:304
 msgctxt "FamilyDataset|"
 msgid "Sister"
 msgstr "Irmã"
 
-#: activities/family/FamilyDataset.qml:238
-#: activities/family/FamilyDataset.qml:271
-#: activities/family/FamilyDataset.qml:303
-#: activities/family/FamilyDataset.qml:304
-#: activities/family/FamilyDataset.qml:337
+#: activities/family/FamilyDataset.qml:192
+#: activities/family/FamilyDataset.qml:221
+#: activities/family/FamilyDataset.qml:249
+#: activities/family/FamilyDataset.qml:250
+#: activities/family/FamilyDataset.qml:279
 msgctxt "FamilyDataset|"
 msgid "Granddaughter"
 msgstr "Neta"
 
-#: activities/family/FamilyDataset.qml:238
-#: activities/family/FamilyDataset.qml:271
-#: activities/family/FamilyDataset.qml:304
-#: activities/family/FamilyDataset.qml:336
-#: activities/family/FamilyDataset.qml:337
+#: activities/family/FamilyDataset.qml:192
+#: activities/family/FamilyDataset.qml:221
+#: activities/family/FamilyDataset.qml:250
+#: activities/family/FamilyDataset.qml:278
+#: activities/family/FamilyDataset.qml:279
 msgctxt "FamilyDataset|"
 msgid "Grandson"
 msgstr "Neto"
 
-#: activities/family/FamilyDataset.qml:389
-#: activities/family/FamilyDataset.qml:413
-#: activities/family/FamilyDataset.qml:414
-#: activities/family/FamilyDataset.qml:441
-#: activities/family/FamilyDataset.qml:468
+#: activities/family/FamilyDataset.qml:327
+#: activities/family/FamilyDataset.qml:349
+#: activities/family/FamilyDataset.qml:350
+#: activities/family/FamilyDataset.qml:375
+#: activities/family/FamilyDataset.qml:400
 msgctxt "FamilyDataset|"
 msgid "Nephew"
 msgstr "Sobrinho"
 
-#: activities/family/FamilyDataset.qml:389
-#: activities/family/FamilyDataset.qml:414
-#: activities/family/FamilyDataset.qml:441
-#: activities/family/FamilyDataset.qml:467
-#: activities/family/FamilyDataset.qml:468
+#: activities/family/FamilyDataset.qml:327
+#: activities/family/FamilyDataset.qml:350
+#: activities/family/FamilyDataset.qml:375
+#: activities/family/FamilyDataset.qml:399
+#: activities/family/FamilyDataset.qml:400
 msgctxt "FamilyDataset|"
 msgid "Niece"
 msgstr "Sobrinha"
 
-#: activities/family/FamilyDataset.qml:494
-#: activities/family/FamilyDataset.qml:495
-#: activities/family/FamilyDataset.qml:522
-#: activities/family/FamilyDataset.qml:549
-#: activities/family/FamilyDataset.qml:578
+#: activities/family/FamilyDataset.qml:424
+#: activities/family/FamilyDataset.qml:425
+#: activities/family/FamilyDataset.qml:450
+#: activities/family/FamilyDataset.qml:475
+#: activities/family/FamilyDataset.qml:502
 msgctxt "FamilyDataset|"
 msgid "Father-in-law"
 msgstr "Sogro"
 
-#: activities/family/FamilyDataset.qml:495
-#: activities/family/FamilyDataset.qml:521
-#: activities/family/FamilyDataset.qml:522
-#: activities/family/FamilyDataset.qml:549
-#: activities/family/FamilyDataset.qml:578
-#: activities/family/FamilyDataset.qml:605
+#: activities/family/FamilyDataset.qml:425
+#: activities/family/FamilyDataset.qml:449
+#: activities/family/FamilyDataset.qml:450
+#: activities/family/FamilyDataset.qml:475
+#: activities/family/FamilyDataset.qml:502
+#: activities/family/FamilyDataset.qml:527
 msgctxt "FamilyDataset|"
 msgid "Mother-in-law"
 msgstr "Sogra"
 
-#: activities/family/FamilyDataset.qml:495
-#: activities/family/FamilyDataset.qml:522
-#: activities/family/FamilyDataset.qml:549
-#: activities/family/FamilyDataset.qml:577
-#: activities/family/FamilyDataset.qml:578
-#: activities/family/FamilyDataset.qml:605
+#: activities/family/FamilyDataset.qml:425
+#: activities/family/FamilyDataset.qml:450
+#: activities/family/FamilyDataset.qml:475
+#: activities/family/FamilyDataset.qml:501
+#: activities/family/FamilyDataset.qml:502
+#: activities/family/FamilyDataset.qml:527
 msgctxt "FamilyDataset|"
 msgid "Sister-in-law"
 msgstr "Cunhada"
 
-#: activities/family/FamilyDataset.qml:495
-#: activities/family/FamilyDataset.qml:522
-#: activities/family/FamilyDataset.qml:548
-#: activities/family/FamilyDataset.qml:549
-#: activities/family/FamilyDataset.qml:578
-#: activities/family/FamilyDataset.qml:605
+#: activities/family/FamilyDataset.qml:425
+#: activities/family/FamilyDataset.qml:450
+#: activities/family/FamilyDataset.qml:474
+#: activities/family/FamilyDataset.qml:475
+#: activities/family/FamilyDataset.qml:502
+#: activities/family/FamilyDataset.qml:527
 msgctxt "FamilyDataset|"
 msgid "Brother-in-law"
 msgstr "Cunhado"
 
-#: activities/family/FamilyDataset.qml:495
-#: activities/family/FamilyDataset.qml:522
-#: activities/family/FamilyDataset.qml:549
-#: activities/family/FamilyDataset.qml:578
-#: activities/family/FamilyDataset.qml:605
+#: activities/family/FamilyDataset.qml:425
+#: activities/family/FamilyDataset.qml:450
+#: activities/family/FamilyDataset.qml:475
+#: activities/family/FamilyDataset.qml:502
+#: activities/family/FamilyDataset.qml:527
 msgctxt "FamilyDataset|"
 msgid "Daughter-in-law"
 msgstr "Nora"
 
-#: activities/family/FamilyDataset.qml:604
-#: activities/family/FamilyDataset.qml:605
+#: activities/family/FamilyDataset.qml:526
+#: activities/family/FamilyDataset.qml:527
 msgctxt "FamilyDataset|"
 msgid "Son-in-law"
 msgstr "Genro"
@@ -19712,7 +19713,7 @@ msgid ""
 msgstr ""
 "Será pedido a você para enviar uma mensagem em código Morse ou para "
 "converter uma mensagem recebida nesse código para letras e dígitos. Para "
-"aprender o código Morse, você pode clicar no ícone da chave Morse  para dar "
+"aprender o código Morse, você pode clicar no ícone da chave Morse para dar "
 "uma olhada no mapa de tradução, que contém a codificação para todas as "
 "letras e dígitos."
 
@@ -20925,7 +20926,7 @@ msgid ""
 "Develop skills in visualization and map reading, and learn to follow "
 "directions."
 msgstr ""
-"Desenvolver habilidades de visualização e leitura de mapas  e aprender a "
+"Desenvolver habilidades de visualização e leitura de mapas e aprender a "
 "seguir direções."
 
 #. Help manual
