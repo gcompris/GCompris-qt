@@ -7234,19 +7234,19 @@ msgid ""
 "animal that matches the text."
 msgstr ""
 
-#: activities/explore_farm_animals/ExploreLevels.qml:331
+#: activities/explore_farm_animals/ExploreLevels.qml:333
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
 
-#: activities/explore_farm_animals/ExploreLevels.qml:332
+#: activities/explore_farm_animals/ExploreLevels.qml:334
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr ""
 
-#: activities/explore_farm_animals/ExploreLevels.qml:333
+#: activities/explore_farm_animals/ExploreLevels.qml:335
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr ""
@@ -9259,7 +9259,7 @@ msgid ""
 "person in the orange circle.\n"
 msgstr ""
 
-#: activities/family/Family.qml:228
+#: activities/family/Family.qml:251
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Maze"
@@ -9267,179 +9267,179 @@ msgctxt "Family|"
 msgid "Me"
 msgstr "Cuartan"
 
-#: activities/family/Family.qml:251
+#: activities/family/Family.qml:276
 msgctxt "Family|"
 msgid "?"
 msgstr ""
 
-#: activities/family/Family.qml:365
+#: activities/family/Family.qml:353
 #, qt-format
 msgctxt "Family|"
 msgid "Select one of the pairs corresponding to: %1"
 msgstr ""
 
-#: activities/family/FamilyDataset.qml:125
-#: activities/family/FamilyDataset.qml:126
+#: activities/family/FamilyDataset.qml:95
+#: activities/family/FamilyDataset.qml:96
 msgctxt "FamilyDataset|"
 msgid "Father"
 msgstr ""
 
-#: activities/family/FamilyDataset.qml:126
-#: activities/family/FamilyDataset.qml:237
-#: activities/family/FamilyDataset.qml:238
-#: activities/family/FamilyDataset.qml:271
-#: activities/family/FamilyDataset.qml:304
-#: activities/family/FamilyDataset.qml:337
+#: activities/family/FamilyDataset.qml:96
+#: activities/family/FamilyDataset.qml:191
+#: activities/family/FamilyDataset.qml:192
+#: activities/family/FamilyDataset.qml:221
+#: activities/family/FamilyDataset.qml:250
+#: activities/family/FamilyDataset.qml:279
 msgctxt "FamilyDataset|"
 msgid "Grandfather"
 msgstr ""
 
-#: activities/family/FamilyDataset.qml:126
-#: activities/family/FamilyDataset.qml:388
-#: activities/family/FamilyDataset.qml:389
-#: activities/family/FamilyDataset.qml:414
-#: activities/family/FamilyDataset.qml:441
-#: activities/family/FamilyDataset.qml:468
+#: activities/family/FamilyDataset.qml:96
+#: activities/family/FamilyDataset.qml:326
+#: activities/family/FamilyDataset.qml:327
+#: activities/family/FamilyDataset.qml:350
+#: activities/family/FamilyDataset.qml:375
+#: activities/family/FamilyDataset.qml:400
 msgctxt "FamilyDataset|"
 msgid "Uncle"
 msgstr ""
 
-#: activities/family/FamilyDataset.qml:148
-#: activities/family/FamilyDataset.qml:149
+#: activities/family/FamilyDataset.qml:114
+#: activities/family/FamilyDataset.qml:115
 msgctxt "FamilyDataset|"
 msgid "Mother"
 msgstr ""
 
-#: activities/family/FamilyDataset.qml:149
-#: activities/family/FamilyDataset.qml:238
-#: activities/family/FamilyDataset.qml:270
-#: activities/family/FamilyDataset.qml:271
-#: activities/family/FamilyDataset.qml:304
-#: activities/family/FamilyDataset.qml:337
+#: activities/family/FamilyDataset.qml:115
+#: activities/family/FamilyDataset.qml:192
+#: activities/family/FamilyDataset.qml:220
+#: activities/family/FamilyDataset.qml:221
+#: activities/family/FamilyDataset.qml:250
+#: activities/family/FamilyDataset.qml:279
 msgctxt "FamilyDataset|"
 msgid "Grandmother"
 msgstr ""
 
-#: activities/family/FamilyDataset.qml:149
-#: activities/family/FamilyDataset.qml:389
-#: activities/family/FamilyDataset.qml:414
-#: activities/family/FamilyDataset.qml:440
-#: activities/family/FamilyDataset.qml:441
-#: activities/family/FamilyDataset.qml:468
+#: activities/family/FamilyDataset.qml:115
+#: activities/family/FamilyDataset.qml:327
+#: activities/family/FamilyDataset.qml:350
+#: activities/family/FamilyDataset.qml:374
+#: activities/family/FamilyDataset.qml:375
+#: activities/family/FamilyDataset.qml:400
 msgctxt "FamilyDataset|"
 msgid "Aunt"
 msgstr ""
 
-#: activities/family/FamilyDataset.qml:175
-#: activities/family/FamilyDataset.qml:176
-#: activities/family/FamilyDataset.qml:205
-#: activities/family/FamilyDataset.qml:364
+#: activities/family/FamilyDataset.qml:137
+#: activities/family/FamilyDataset.qml:138
+#: activities/family/FamilyDataset.qml:163
+#: activities/family/FamilyDataset.qml:304
 msgctxt "FamilyDataset|"
 msgid "Brother"
 msgstr ""
 
-#: activities/family/FamilyDataset.qml:176
-#: activities/family/FamilyDataset.qml:205
-#: activities/family/FamilyDataset.qml:363
-#: activities/family/FamilyDataset.qml:364
+#: activities/family/FamilyDataset.qml:138
+#: activities/family/FamilyDataset.qml:163
+#: activities/family/FamilyDataset.qml:303
+#: activities/family/FamilyDataset.qml:304
 msgctxt "FamilyDataset|"
 msgid "Cousin"
 msgstr ""
 
-#: activities/family/FamilyDataset.qml:176
-#: activities/family/FamilyDataset.qml:204
-#: activities/family/FamilyDataset.qml:205
-#: activities/family/FamilyDataset.qml:364
+#: activities/family/FamilyDataset.qml:138
+#: activities/family/FamilyDataset.qml:162
+#: activities/family/FamilyDataset.qml:163
+#: activities/family/FamilyDataset.qml:304
 msgctxt "FamilyDataset|"
 msgid "Sister"
 msgstr ""
 
-#: activities/family/FamilyDataset.qml:238
-#: activities/family/FamilyDataset.qml:271
-#: activities/family/FamilyDataset.qml:303
-#: activities/family/FamilyDataset.qml:304
-#: activities/family/FamilyDataset.qml:337
+#: activities/family/FamilyDataset.qml:192
+#: activities/family/FamilyDataset.qml:221
+#: activities/family/FamilyDataset.qml:249
+#: activities/family/FamilyDataset.qml:250
+#: activities/family/FamilyDataset.qml:279
 msgctxt "FamilyDataset|"
 msgid "Granddaughter"
 msgstr ""
 
-#: activities/family/FamilyDataset.qml:238
-#: activities/family/FamilyDataset.qml:271
-#: activities/family/FamilyDataset.qml:304
-#: activities/family/FamilyDataset.qml:336
-#: activities/family/FamilyDataset.qml:337
+#: activities/family/FamilyDataset.qml:192
+#: activities/family/FamilyDataset.qml:221
+#: activities/family/FamilyDataset.qml:250
+#: activities/family/FamilyDataset.qml:278
+#: activities/family/FamilyDataset.qml:279
 msgctxt "FamilyDataset|"
 msgid "Grandson"
 msgstr ""
 
-#: activities/family/FamilyDataset.qml:389
-#: activities/family/FamilyDataset.qml:413
-#: activities/family/FamilyDataset.qml:414
-#: activities/family/FamilyDataset.qml:441
-#: activities/family/FamilyDataset.qml:468
+#: activities/family/FamilyDataset.qml:327
+#: activities/family/FamilyDataset.qml:349
+#: activities/family/FamilyDataset.qml:350
+#: activities/family/FamilyDataset.qml:375
+#: activities/family/FamilyDataset.qml:400
 msgctxt "FamilyDataset|"
 msgid "Nephew"
 msgstr ""
 
-#: activities/family/FamilyDataset.qml:389
-#: activities/family/FamilyDataset.qml:414
-#: activities/family/FamilyDataset.qml:441
-#: activities/family/FamilyDataset.qml:467
-#: activities/family/FamilyDataset.qml:468
+#: activities/family/FamilyDataset.qml:327
+#: activities/family/FamilyDataset.qml:350
+#: activities/family/FamilyDataset.qml:375
+#: activities/family/FamilyDataset.qml:399
+#: activities/family/FamilyDataset.qml:400
 msgctxt "FamilyDataset|"
 msgid "Niece"
 msgstr ""
 
-#: activities/family/FamilyDataset.qml:494
-#: activities/family/FamilyDataset.qml:495
-#: activities/family/FamilyDataset.qml:522
-#: activities/family/FamilyDataset.qml:549
-#: activities/family/FamilyDataset.qml:578
+#: activities/family/FamilyDataset.qml:424
+#: activities/family/FamilyDataset.qml:425
+#: activities/family/FamilyDataset.qml:450
+#: activities/family/FamilyDataset.qml:475
+#: activities/family/FamilyDataset.qml:502
 msgctxt "FamilyDataset|"
 msgid "Father-in-law"
 msgstr ""
 
-#: activities/family/FamilyDataset.qml:495
-#: activities/family/FamilyDataset.qml:521
-#: activities/family/FamilyDataset.qml:522
-#: activities/family/FamilyDataset.qml:549
-#: activities/family/FamilyDataset.qml:578
-#: activities/family/FamilyDataset.qml:605
+#: activities/family/FamilyDataset.qml:425
+#: activities/family/FamilyDataset.qml:449
+#: activities/family/FamilyDataset.qml:450
+#: activities/family/FamilyDataset.qml:475
+#: activities/family/FamilyDataset.qml:502
+#: activities/family/FamilyDataset.qml:527
 msgctxt "FamilyDataset|"
 msgid "Mother-in-law"
 msgstr ""
 
-#: activities/family/FamilyDataset.qml:495
-#: activities/family/FamilyDataset.qml:522
-#: activities/family/FamilyDataset.qml:549
-#: activities/family/FamilyDataset.qml:577
-#: activities/family/FamilyDataset.qml:578
-#: activities/family/FamilyDataset.qml:605
+#: activities/family/FamilyDataset.qml:425
+#: activities/family/FamilyDataset.qml:450
+#: activities/family/FamilyDataset.qml:475
+#: activities/family/FamilyDataset.qml:501
+#: activities/family/FamilyDataset.qml:502
+#: activities/family/FamilyDataset.qml:527
 msgctxt "FamilyDataset|"
 msgid "Sister-in-law"
 msgstr ""
 
-#: activities/family/FamilyDataset.qml:495
-#: activities/family/FamilyDataset.qml:522
-#: activities/family/FamilyDataset.qml:548
-#: activities/family/FamilyDataset.qml:549
-#: activities/family/FamilyDataset.qml:578
-#: activities/family/FamilyDataset.qml:605
+#: activities/family/FamilyDataset.qml:425
+#: activities/family/FamilyDataset.qml:450
+#: activities/family/FamilyDataset.qml:474
+#: activities/family/FamilyDataset.qml:475
+#: activities/family/FamilyDataset.qml:502
+#: activities/family/FamilyDataset.qml:527
 msgctxt "FamilyDataset|"
 msgid "Brother-in-law"
 msgstr ""
 
-#: activities/family/FamilyDataset.qml:495
-#: activities/family/FamilyDataset.qml:522
-#: activities/family/FamilyDataset.qml:549
-#: activities/family/FamilyDataset.qml:578
-#: activities/family/FamilyDataset.qml:605
+#: activities/family/FamilyDataset.qml:425
+#: activities/family/FamilyDataset.qml:450
+#: activities/family/FamilyDataset.qml:475
+#: activities/family/FamilyDataset.qml:502
+#: activities/family/FamilyDataset.qml:527
 msgctxt "FamilyDataset|"
 msgid "Daughter-in-law"
 msgstr ""
 
-#: activities/family/FamilyDataset.qml:604
-#: activities/family/FamilyDataset.qml:605
+#: activities/family/FamilyDataset.qml:526
+#: activities/family/FamilyDataset.qml:527
 msgctxt "FamilyDataset|"
 msgid "Son-in-law"
 msgstr ""
