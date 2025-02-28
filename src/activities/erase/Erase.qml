@@ -8,6 +8,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
 
 import QtQuick 2.12
 import core 1.0
@@ -29,7 +30,6 @@ ActivityBase {
         signal stop
         focus: true
         fillMode: Image.PreserveAspectCrop
-        source: Activity.url + Activity.getFirstImage()
         sourceSize.width: width
         sourceSize.height: height
         horizontalAlignment: Image.AlignHCenter
@@ -43,37 +43,23 @@ ActivityBase {
         QtObject {
             id: items
             property alias activityBackground: activityBackground
-            property alias bar: bar
             property alias blocks: blocks
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
             property alias okButton: okButton
             property alias winSound: winSound
-            property alias eraser1Sound: eraser1Sound
-            property alias eraser2Sound: eraser2Sound
             property int nbSubLevel: 6
             property int currentSubLevel: 0
             property int mode: 1 // default is automatic
         }
-        onStart: Activity.start(main, items, type)
+        onStart: Activity.start(items)
 
         onStop: { Activity.stop() }
 
         function alignBackground() {
-            if(Activity.backgroundImages[Activity.currentImage][1] === "left")
-                activityBackground.horizontalAlignment = Image.AlignLeft
-            else if(Activity.backgroundImages[Activity.currentImage][1] === "right")
-                activityBackground.horizontalAlignment = Image.AlignRight
-            else
-                activityBackground.horizontalAlignment = Image.AlignHCenter
-
-            if(Activity.backgroundImages[Activity.currentImage][2] === "top")
-                activityBackground.verticalAlignment = Image.AlignTop
-            else if(Activity.backgroundImages[Activity.currentImage][2] === "bottom")
-                activityBackground.verticalAlignment = Image.AlignBottom
-            else
-                activityBackground.verticalAlignment = Image.AlignVCenter
+            activityBackground.horizontalAlignment = Activity.backgroundImages[Activity.currentImage][1]
+            activityBackground.verticalAlignment = Activity.backgroundImages[Activity.currentImage][2]
         }
 
         GCSoundEffect {
@@ -121,29 +107,34 @@ ActivityBase {
             parent: rootItem
             Block {
                 id: modelData
+                required property int nx
+                required property int ny
+                required property int a
+                required property int b
+                required property string img
                 nbx: nx
                 nby: ny
                 ix: a
                 iy: b
-                opacity: op
                 source: img
                 type: activity.type
-                main: MAIN
-                bar: BAR
                 blockBackground: items.activityBackground
+                bar: bar
+                eraser1Sound: eraser1Sound
+                eraser2Sound: eraser2Sound
             }
         }
 
         DialogHelp {
             id: dialogHelpLeftRight
-            onClose: home()
+            onClose: activity.home()
         }
 
         DialogChooseLevel {
             id: dialogActivityConfig
             currentActivity: activity.activityInfo
 
-            onClose: home()
+            onClose: activity.home()
 
             onLoadData: {
                 if(activityData && activityData["mode"]) {
@@ -162,13 +153,13 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
-                displayDialog(dialogHelpLeftRight)
+                activity.displayDialog(dialogHelpLeftRight)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: home()
+            onHomeClicked: activity.home()
             onActivityConfigClicked: {
-                displayDialog(dialogActivityConfig)
+                activity.displayDialog(dialogActivityConfig)
             }
         }
 

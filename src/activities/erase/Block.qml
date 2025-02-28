@@ -17,25 +17,26 @@ import "erase.js" as Activity
 
 Image {
     id: block
-    property Item main
-    property Item bar
     property Item blockBackground
     property double ix
     property double iy
     property int nbx
     property int nby
+    required property Bar bar
+    required property GCSoundEffect eraser1Sound
+    required property GCSoundEffect eraser2Sound
 
-    x: ix * main.width / nbx
-    y: iy * (main.height - bar.height) / (nby + getMultipleOfRatioToAdjustHeight() * ApplicationInfo.ratio)
-    width: main.width / nbx
-    height: (main.height - bar.height) / (nby + getMultipleOfRatioToAdjustHeight() * ApplicationInfo.ratio)
+    x: ix * width
+    y: iy * height
+    width: blockBackground.width / nbx
+    height: (blockBackground.height - bar.height) / (nby + getMultipleOfRatioToAdjustHeight() * ApplicationInfo.ratio)
     sourceSize.width: width
     sourceSize.height: height
+    opacity: 1.0
 
     signal enter
     signal leave
     property string type
-    property int counter: 0
 
     function getMultipleOfRatioToAdjustHeight(): real {
         return (blockBackground.width >= blockBackground.height + 4 * GCStyle.baseMargins) ? 0.125 : 0.625

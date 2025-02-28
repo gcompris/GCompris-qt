@@ -8,4 +8,6 @@ GCOMPRIS_ADD_RESOURCE(activities/erase_2clic
   *.qml
   RESOURCES
   *.svg
+  DEPENDENCIES
+  erase
 )

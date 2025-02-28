@@ -10,47 +10,47 @@
  */
 
 .pragma library
-.import QtQuick 2.12 as Quick
 .import core 1.0 as GCompris //for ApplicationInfo
 .import "qrc:/gcompris/src/core/core.js" as Core
+.import QtQuick 2.12 as Quick
 
 var url = "qrc:/gcompris/src/activities/erase/resource/"
 
 //array of array, each with filename, horizontalAlignment and verticalAlignment
 var backgroundImages = [
-    ["alpaca.webp", "left", "top"],
-    ["bee.webp", "left", "center"],
-    ["butterfly.webp", "left", "center"],
-    ["calf.webp", "center", "center"],
-    ["camels.webp", "right", "center"],
-    ["caterpillar.webp", "center", "center"],
-    ["chamaeleon.webp", "left", "center"],
-    ["cheetah.webp", "right", "top"],
-    ["crab.webp", "center", "center"],
-    ["dolphin.webp", "center", "top"],
-    ["flying_fox.webp", "center", "bottom"],
-    ["gibbon.webp", "center", "center"],
-    ["giraffe.webp", "right", "center"],
-    ["goat.webp", "right", "top"],
-    ["gorilla.webp", "center", "center"],
-    ["gosling.webp", "center", "top"],
-    ["heron.webp", "center", "center"],
-    ["horse.webp", "center", "top"],
-    ["kingfisher.webp", "center", "top"],
-    ["kitten.webp", "center", "center"],
-    ["long_nosed_monkey.webp", "center", "top"],
-    ["macaque.webp", "center", "center"],
-    ["meerkats.webp", "center", "top"],
-    ["northern_harrier.webp", "center", "center"],
-    ["nubian_ibex.webp", "center", "top"],
-    ["penguin.webp", "center", "top"],
-    ["pika.webp", "center", "top"],
-    ["red_panda.webp", "center", "center"],
-    ["rhinoceros.webp", "center", "center"],
-    ["spoonbills.webp", "left", "top"],
-    ["squirrel.webp", "center", "top"],
-    ["swans.webp", "right", "top"],
-    ["toucan.webp", "left", "top"]
+    ["alpaca.webp", Quick.Image.AlignLeft, Quick.Image.AlignTop],
+    ["bee.webp", Quick.Image.AlignLeft, Quick.Image.AlignVCenter],
+    ["butterfly.webp", Quick.Image.AlignLeft, Quick.Image.AlignVCenter],
+    ["calf.webp", Quick.Image.AlignHCenter, Quick.Image.AlignVCenter],
+    ["camels.webp", Quick.Image.AlignRight, Quick.Image.AlignVCenter],
+    ["caterpillar.webp", Quick.Image.AlignHCenter, Quick.Image.AlignVCenter],
+    ["chamaeleon.webp", Quick.Image.AlignLeft, Quick.Image.AlignVCenter],
+    ["cheetah.webp", Quick.Image.AlignRight, Quick.Image.AlignTop],
+    ["crab.webp", Quick.Image.AlignHCenter, Quick.Image.AlignVCenter],
+    ["dolphin.webp", Quick.Image.AlignHCenter, Quick.Image.AlignTop],
+    ["flying_fox.webp", Quick.Image.AlignHCenter, Quick.Image.AlignBottom],
+    ["gibbon.webp", Quick.Image.AlignHCenter, Quick.Image.AlignVCenter],
+    ["giraffe.webp", Quick.Image.AlignRight, Quick.Image.AlignVCenter],
+    ["goat.webp", Quick.Image.AlignRight, Quick.Image.AlignTop],
+    ["gorilla.webp", Quick.Image.AlignHCenter, Quick.Image.AlignVCenter],
+    ["gosling.webp", Quick.Image.AlignHCenter, Quick.Image.AlignTop],
+    ["heron.webp", Quick.Image.AlignHCenter, Quick.Image.AlignVCenter],
+    ["horse.webp", Quick.Image.AlignHCenter, Quick.Image.AlignTop],
+    ["kingfisher.webp", Quick.Image.AlignHCenter, Quick.Image.AlignTop],
+    ["kitten.webp", Quick.Image.AlignHCenter, Quick.Image.AlignVCenter],
+    ["long_nosed_monkey.webp", Quick.Image.AlignHCenter, Quick.Image.AlignTop],
+    ["macaque.webp", Quick.Image.AlignHCenter, Quick.Image.AlignVCenter],
+    ["meerkats.webp", Quick.Image.AlignHCenter, Quick.Image.AlignTop],
+    ["northern_harrier.webp", Quick.Image.AlignHCenter, Quick.Image.AlignVCenter],
+    ["nubian_ibex.webp", Quick.Image.AlignHCenter, Quick.Image.AlignTop],
+    ["penguin.webp", Quick.Image.AlignHCenter, Quick.Image.AlignTop],
+    ["pika.webp", Quick.Image.AlignHCenter, Quick.Image.AlignTop],
+    ["red_panda.webp", Quick.Image.AlignHCenter, Quick.Image.AlignVCenter],
+    ["rhinoceros.webp", Quick.Image.AlignHCenter, Quick.Image.AlignVCenter],
+    ["spoonbills.webp", Quick.Image.AlignLeft, Quick.Image.AlignTop],
+    ["squirrel.webp", Quick.Image.AlignHCenter, Quick.Image.AlignTop],
+    ["swans.webp", Quick.Image.AlignRight, Quick.Image.AlignTop],
+    ["toucan.webp", Quick.Image.AlignLeft, Quick.Image.AlignTop]
 ]
 
 var blockImages = [
@@ -60,25 +60,22 @@ var blockImages = [
 ]
 
 var currentImage
-var main
 var items
-var type
 
 // The counter of created blocks object
 var createdBlocks
 var killedBlocks
 
 var numberOfLevel = 6
-var imgIndex
+var blockImagesIndex
 
-function start(main_, items_, type_) {
-    main = main_
+function start(items_) {
     items = items_
-    type = type_
     items.currentLevel = Core.getInitialLevel(numberOfLevel)
     items_.currentSubLevel = 0
     currentImage = 0
-    imgIndex = 0
+    blockImagesIndex = 0
+    backgroundImages = Core.shuffle(backgroundImages)
     initLevel()
 }
 
@@ -87,7 +84,10 @@ function stop() {
 
 function initLevel() {
     items.blocks.clear()
-    imgIndex++
+    blockImagesIndex++
+    if(blockImagesIndex >= blockImages.length) {
+        blockImagesIndex = 0
+    }
     currentImage++
     if(currentImage >= backgroundImages.length) {
         currentImage = 0
@@ -96,21 +96,20 @@ function initLevel() {
     items.activityBackground.alignBackground()
     createdBlocks = 0
     killedBlocks = 0
-    var nbx = Math.min((items.currentLevel % 2 * 3) + 5, main.width / (10 * GCompris.ApplicationInfo.ratio));
-    var nby = Math.min((items.currentLevel % 2 * 3) + 5, main.height / (10 * GCompris.ApplicationInfo.ratio));
+    var nbx = Math.min((items.currentLevel % 2 * 3) + 5, items.activityBackground.width / (10 * GCompris.ApplicationInfo.ratio));
+    var nby = Math.min((items.currentLevel % 2 * 3) + 5, items.activityBackground.height / (10 * GCompris.ApplicationInfo.ratio));
     var data
 
-        for(var x = 0;  x < nbx; ++x) {
-            for(var y = 0;  y < nby; ++y) {
-                data = {
-                    'nx': nbx, 'ny': nby, 'a': x, 'b': y,
-                    'op': 1.0, 'MAIN': main, 'BAR': items.bar,
-                    'img': blockImages[imgIndex % blockImages.length]
-                }
-                items.blocks.append(data)
-                createdBlocks++
+    for(var x = 0;  x < nbx; ++x) {
+        for(var y = 0;  y < nby; ++y) {
+            data = {
+                'nx': nbx, 'ny': nby, 'a': x, 'b': y,
+                'img': blockImages[blockImagesIndex]
             }
+            items.blocks.append(data)
         }
+    }
+    createdBlocks = nbx * nby;
 }
 
 function nextLevel() {
@@ -144,9 +143,4 @@ function blockKilled() {
             items.okButton.levelFinished = true
         }
     }
-}
-
-function getFirstImage() {
-    backgroundImages = Core.shuffle(backgroundImages)
-    return backgroundImages[0][0]
 }
