@@ -27,5 +27,5 @@ ActivityInfo {
   credit: ""
   section: "math arithmetic"
   createdInVersion: 20000
-  levels: "1,2,3"
+  levels: ["1", "2", "3"]
 }

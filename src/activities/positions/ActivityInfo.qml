@@ -28,5 +28,5 @@ ActivityInfo {
   credit: ""
   section: "discovery logic"
   createdInVersion: 20000
-  levels: "1,2"
+  levels: ["1", "2"]
 }

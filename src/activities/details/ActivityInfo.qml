@@ -40,5 +40,5 @@ ActivityInfo {
           ('"Tower Bridge London Feb 2006" by David Iliff (https://commons.wikimedia.org/wiki/File:Tower_Bridge_London_Feb_2006.jpg), CC BY-SA 4.0') + ("</li></ul>")
   section: "discovery arts"
   createdInVersion: 4000
-  levels: "1,2,3"
+  levels: ["1", "2", "3"]
 }

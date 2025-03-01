@@ -29,5 +29,5 @@ ActivityInfo {
   credit: ""
   section: "math money measures"
   createdInVersion: 0
-  levels: "1,2,3"
+  levels: ["1", "2", "3"]
 }

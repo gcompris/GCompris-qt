@@ -32,5 +32,5 @@ ActivityInfo {
   section: "sciences experiment"
   enabled: ApplicationInfo.isBox2DInstalled //ApplicationInfo.hasShader
   createdInVersion: 6000
-  levels: "1,2"
+  levels: ["1", "2"]
 }

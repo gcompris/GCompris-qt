@@ -25,5 +25,5 @@ ActivityInfo {
   credit: ""
   section: "reading vocabulary"
   createdInVersion: 8000
-  levels: "1,2,3"
+  levels: ["1", "2", "3"]
 }
