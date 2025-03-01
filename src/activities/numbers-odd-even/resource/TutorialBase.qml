@@ -25,7 +25,6 @@ Rectangle {
             left: parent.left
             verticalCenter: parent.verticalCenter
             leftMargin: parent.height * 0.1
-            centerIn: parent.Center
             top: parent.top
             topMargin: parent.height * 0.05
         }
