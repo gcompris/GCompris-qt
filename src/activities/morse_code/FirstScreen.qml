@@ -27,7 +27,6 @@ Image {
         fontSizeMode: Text.Fit
         horizontalAlignment: Text.AlignHCenter
         font.weight: Font.DemiBold
-        anchors.centerIn: parent.Center
         color: "#2a2a2a"
         width: parent.width
         height: parent.height * 0.10
