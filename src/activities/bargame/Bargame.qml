@@ -22,7 +22,7 @@ ActivityBase {
     onStop: {}
 
     pageComponent: Image {
-        id: rootWindow
+        id: activityBackground
         source: Activity.url + "background.svg"
         sourceSize.width: width
         sourceSize.height: height
@@ -53,7 +53,7 @@ ActivityBase {
             property alias player2score: player2score
 
             property int mode: 1
-            property int gridSize: (horizontalLayout ? rootWindow.width : (rootWindow.height - bar.height * 1.2)) / Activity.levelsProperties[items.mode - 1].boardSize
+            property int gridSize: (horizontalLayout ? activityBackground.width : (activityBackground.height - bar.height * 1.2)) / Activity.levelsProperties[items.mode - 1].boardSize
             property bool isPlayer1Beginning: true
             property bool isPlayer1Turn: true
         }
@@ -77,11 +77,11 @@ ActivityBase {
             id: tux
             visible: gameMode == 1
             source: "qrc:/gcompris/src/activities/ballcatch/resource/tux.svg"
-            height: rootWindow.height * 0.2
+            height: activityBackground.height * 0.2
             width: tux.height
-            y: rootWindow.height * 0.4
+            y: activityBackground.height * 0.4
             anchors {
-                right: rootWindow.right
+                right: activityBackground.right
                 rightMargin: 23 * ApplicationInfo.ratio
 
             }
@@ -114,12 +114,12 @@ ActivityBase {
                 State {
                     name: "horizontalBar"
                     when: horizontalLayout
-                    PropertyChanges { boxModel { x: 0; y: rootWindow.height - bar.height * 2} }
+                    PropertyChanges { boxModel { x: 0; y: activityBackground.height - bar.height * 2} }
                 },
                 State {
                     name: "verticalBar"
                     when: !horizontalLayout
-                    PropertyChanges { boxModel { x: rootWindow.width * 0.5; y: 0} }
+                    PropertyChanges { boxModel { x: activityBackground.width * 0.5; y: 0} }
                 }
             ]
 
@@ -134,7 +134,6 @@ ActivityBase {
                 id: boxes
                 rows: 1
                 columns: Activity.levelsProperties[items.mode - 1].boardSize
-                anchors.centerIn: boxModel.Center
                 Repeater {
                     id: startCase
                     model: boxes.columns
@@ -153,7 +152,6 @@ ActivityBase {
             Grid {
                 // All green balls placement
                 id: answerBallsPlacement
-                anchors.centerIn: boxModel.Center
                 columns: Activity.levelsProperties[items.mode - 1].boardSize
                 rows: 1
                 Repeater {
@@ -261,7 +259,7 @@ ActivityBase {
         // Number of balls to be placed
         Image {
             id: ballNumberPlate
-            y: rootWindow.height * 0.32
+            y: activityBackground.height * 0.32
             source: items.isPlayer1Turn ? Activity.url + "score_1.svg" :
                                           Activity.url + "score_2.svg"
             width: bar.height
@@ -270,7 +268,7 @@ ActivityBase {
             sourceSize.height: height
 
             anchors {
-                left: rootWindow.left
+                left: activityBackground.left
                 leftMargin: 16 * ApplicationInfo.ratio
             }
 
@@ -329,12 +327,12 @@ ActivityBase {
         ScoreItem {
             id: player1score
             player: 1
-            height: Math.min(rootWindow.height/7, Math.min(rootWindow.width/7, bar.height * 1.05))
+            height: Math.min(activityBackground.height/7, Math.min(activityBackground.width/7, bar.height * 1.05))
             width: height*11/8
             anchors {
-                top: rootWindow.top
+                top: activityBackground.top
                 topMargin: 5
-                left: rootWindow.left
+                left: activityBackground.left
                 leftMargin: 5
             }
             playerImageSource: "qrc:/gcompris/src/core/resource/player_1.svg"
@@ -348,12 +346,12 @@ ActivityBase {
         ScoreItem {
             id: player2score
             player: 2
-            height: Math.min(rootWindow.height/7, Math.min(rootWindow.width/7, bar.height * 1.05))
+            height: Math.min(activityBackground.height/7, Math.min(activityBackground.width/7, bar.height * 1.05))
             width: height*11/8
             anchors {
-                top: rootWindow.top
+                top: activityBackground.top
                 topMargin: 5
-                right: rootWindow.right
+                right: activityBackground.right
                 rightMargin: 5
             }
             playerImageSource: "qrc:/gcompris/src/core/resource/player_2.svg"
@@ -382,8 +380,8 @@ ActivityBase {
                 }
             }
             onStartActivity: {
-                rootWindow.stop()
-                rootWindow.start()
+                activityBackground.stop()
+                activityBackground.start()
             }
         }
 
