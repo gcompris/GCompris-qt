@@ -32,7 +32,7 @@ Rectangle {
     border.width: 1
     color: Activity.displayDropCircle ? dropCircleColor : "#00000000"
     border.color: dropCircle.color == "#00000000" ? "#80ff0000" :
-        (dropCircle.color == GCStyle.gcoOrange ? "#00000000" : "white")
+        (dropCircle.color == GCStyle.gcOrange ? "#00000000" : "white")
 
     x: posX * parent.width - width/2
     y: posY * parent.height - height/2
