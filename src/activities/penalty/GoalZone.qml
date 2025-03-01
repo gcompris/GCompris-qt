@@ -31,7 +31,7 @@ Rectangle {
 
     MouseArea {
         anchors.fill: parent
-        acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MidButton
+        acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MiddleButton
         /* enabled if the current zone has been clicked on or if the ball is at the initial position */
         enabled: items.saveBallState === parent.state || (items.saveBallState === "INITIAL" && ball.x === items.ballX && ball.y === items.ballY)
         onClicked: changeBallState()

@@ -261,7 +261,7 @@ ActivityBase {
 
             MouseArea {
                 anchors.fill: parent
-                acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MidButton
+                acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MiddleButton
                 onClicked: {
                     Activity.resetLevel()
                 }
