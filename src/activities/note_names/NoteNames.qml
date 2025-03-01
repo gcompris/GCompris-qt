@@ -230,6 +230,7 @@ ActivityBase {
 
         AdvancedTimer {
             id: addNoteTimer
+            interval: activity.timerNormalInterval
             onTriggered: {
                 Activity.noteIndexToDisplay = (Activity.noteIndexToDisplay + 1) % Activity.newNotesSequence.length
                 Activity.displayNote(Activity.newNotesSequence[Activity.noteIndexToDisplay])

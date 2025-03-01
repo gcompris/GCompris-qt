@@ -17,8 +17,6 @@ Timer {
     property double pauseTime
     property int remainingInterval
 
-    interval: activity.timerNormalInterval
-
     signal pause
     signal resume
     signal restart
@@ -44,12 +42,6 @@ Timer {
         timer.stop()
         timer.interval = 1
         timer.start()
-    }
-
-    onTriggered:{
-        if(interval != activity.timerNormalInterval) {
-            interval = activity.timerNormalInterval
-        }
     }
 
     onRunningChanged: {
