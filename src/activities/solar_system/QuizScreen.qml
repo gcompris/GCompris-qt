@@ -45,7 +45,6 @@ Item {
             id: questionText
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
-            anchors.centerIn: parent.Center
             color: "black"
             width: parent.width
             wrapMode: Text.Wrap
