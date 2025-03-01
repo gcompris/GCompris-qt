@@ -28,5 +28,5 @@ ActivityInfo {
   credit: ""
   section: "reading letters"
   createdInVersion: 30000
-  levels: "1,2,3"
+  levels: ["1", "2", "3"]
 }

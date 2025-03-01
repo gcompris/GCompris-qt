@@ -40,7 +40,9 @@ void ActivityInfo::setName(const QString &name)
     // from the persistant configuration
     m_favorite = ApplicationSettings::getInstance()->isFavorite(m_name);
 
-    setCurrentLevels();
+    if(!m_levels.empty()) {
+        setCurrentLevels();
+    }
 
     Q_EMIT nameChanged();
 }
@@ -203,9 +205,7 @@ QStringList ActivityInfo::levels() const
 
 void ActivityInfo::setLevels(const QStringList &levels)
 {
-    // levels only contains one element containing all the difficulties
-    m_levels = levels.front().split(',');
-
+    m_levels = levels;
     setCurrentLevels();
 
     Q_EMIT levelsChanged();
@@ -280,6 +280,9 @@ void ActivityInfo::setCurrentLevels()
             ApplicationSettings::getInstance()->setCurrentLevels(m_name, m_levels);
         }
         m_currentLevels = ApplicationSettings::getInstance()->currentLevels(m_name);
+    }
+    else {
+        qWarning() << "ActivityInfo::setCurrentLevels(), name is empty";
     }
     // Remove levels that could have been added in the configuration but are not existing
     // Either we rename a dataset, or after working in another branch to add dataset and switching to a branch without it

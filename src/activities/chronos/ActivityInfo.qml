@@ -29,5 +29,5 @@ ActivityInfo {
   credit: qsTr("Dates of Transportation are based on those found in &lt;https://www.wikipedia.org&gt;.")
   section: "sciences history"
   createdInVersion: 4000
-  levels: "1,2"
+  levels: ["1", "2"]
 }

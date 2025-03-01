@@ -30,5 +30,5 @@ ActivityInfo {
     manual: qsTr("You are provided with some letters. Drag and drop them to the upper area in alphabetical order or in reverse alphabetical order as requested.")
     section: "reading letters"
     createdInVersion: 20000
-    levels: "1,2,3,4,5,6"
+    levels: ["1", "2", "3", "4", "5", "6"]
 }
