@@ -18979,7 +18979,7 @@ msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
 msgstr "اكتشف شفرة مورس الدولية"
 
-#: activities/morse_code/FirstScreen.qml:64
+#: activities/morse_code/FirstScreen.qml:63
 msgctxt "FirstScreen|"
 msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
@@ -18988,7 +18988,7 @@ msgstr ""
 "ابتكر صامويل مورس طريقة لنقل المعلومات النصية بتحويلها إلى سلسلة من الإشارات "
 "أو الأضواء أو النقرات. سميت شفرة مورس."
 
-#: activities/morse_code/FirstScreen.qml:65
+#: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
 msgid ""
 "Each Morse code symbol represents either a text character (letter or "
@@ -19006,7 +19006,7 @@ msgstr ""
 "على سبيل المثال، حرف \"E\" هو الأكثر شيوعًا في اللغة الإنجليزية، لذا له أقصر "
 "رمز ، نقطة واحدة."
 
-#: activities/morse_code/FirstScreen.qml:90
+#: activities/morse_code/FirstScreen.qml:89
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr "عندما تجهز انقر على البطريق، وسنتحدّث بشفرة مورس."
@@ -19328,13 +19328,13 @@ msgid "New note: %1"
 msgstr "ملاحظة جديدة: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:256
+#: activities/note_names/NoteNames.qml:257
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1٪"
 
-#: activities/note_names/NoteNames.qml:443
+#: activities/note_names/NoteNames.qml:444
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19343,12 +19343,12 @@ msgstr ""
 "يتطلب هذا النشاط صوتًا ، لذلك ستشتغل بعض الأصوات حتى لو كان الصوت أو تأثيرات "
 "الصوت معطلة في الإعدادات الرئيسية."
 
-#: activities/note_names/NoteNames.qml:444
+#: activities/note_names/NoteNames.qml:445
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "أنهِ"
 
-#: activities/note_names/NoteNames.qml:445
+#: activities/note_names/NoteNames.qml:446
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "تابع"
@@ -19512,24 +19512,24 @@ msgstr ""
 "701 ، 799 ، 845 ، 897 ، 1001. كل هذه الأرقام هي أرقام فردية  لأنّ 0 لا يكون "
 "هو باقي قسمتها على 2."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:32
+#: activities/numbers-odd-even/resource/TutorialBase.qml:31
 msgctxt "TutorialBase|"
 msgid "Choose the even number:"
 msgstr "اختر الرقم الزوجي:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:32
+#: activities/numbers-odd-even/resource/TutorialBase.qml:31
 msgctxt "TutorialBase|"
 msgid "Choose the odd number:"
 msgstr "اختر الرقم الفردي:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:57
-#: activities/numbers-odd-even/resource/TutorialBase.qml:87
+#: activities/numbers-odd-even/resource/TutorialBase.qml:56
+#: activities/numbers-odd-even/resource/TutorialBase.qml:86
 msgctxt "TutorialBase|"
 msgid "Great"
 msgstr "رَائِع"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:61
-#: activities/numbers-odd-even/resource/TutorialBase.qml:91
+#: activities/numbers-odd-even/resource/TutorialBase.qml:60
+#: activities/numbers-odd-even/resource/TutorialBase.qml:90
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -19537,8 +19537,8 @@ msgid ""
 "this is an odd number."
 msgstr "هُنَاكَ خَطَأ: عند قسمة %1 على 2 ، يكون الباقي هو 1. لذلك فهذا الرقم فَرْدِيّ."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:64
-#: activities/numbers-odd-even/resource/TutorialBase.qml:94
+#: activities/numbers-odd-even/resource/TutorialBase.qml:63
+#: activities/numbers-odd-even/resource/TutorialBase.qml:93
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -24693,25 +24693,25 @@ msgctxt "Dataset|"
 msgid "How large is Neptune compared to other planets in the Solar System?"
 msgstr "ما حجم نبتون مقارنة بالكواكب الأخرى في نظامنا الشمسي؟"
 
-#: activities/solar_system/QuizScreen.qml:214
+#: activities/solar_system/QuizScreen.qml:213
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "الدقة: %1٪"
 
-#: activities/solar_system/QuizScreen.qml:253
+#: activities/solar_system/QuizScreen.qml:252
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1٪"
 
-#: activities/solar_system/QuizScreen.qml:288
+#: activities/solar_system/QuizScreen.qml:287
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr "نتيجتك النهائية: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 
-#: activities/solar_system/QuizScreen.qml:288
+#: activities/solar_system/QuizScreen.qml:287
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -24721,7 +24721,7 @@ msgstr ""
 "عليك أن تحوز 90٪  من النتيجة لتصبح خبيرًا في النظام الشمسي! <br> اختبر "
 "مهاراتك ثانية أوتدرب في وضع التعلّم لمعرفة المزيد عن النظام الشمسي."
 
-#: activities/solar_system/QuizScreen.qml:288
+#: activities/solar_system/QuizScreen.qml:287
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "

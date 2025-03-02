@@ -18395,14 +18395,14 @@ msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
 msgstr "მორზეს კოდის სწავლა"
 
-#: activities/morse_code/FirstScreen.qml:64
+#: activities/morse_code/FirstScreen.qml:63
 msgctxt "FirstScreen|"
 msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
 
-#: activities/morse_code/FirstScreen.qml:65
+#: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
 msgid ""
 "Each Morse code symbol represents either a text character (letter or "
@@ -18414,7 +18414,7 @@ msgid ""
 "shortest code, a single dot."
 msgstr ""
 
-#: activities/morse_code/FirstScreen.qml:90
+#: activities/morse_code/FirstScreen.qml:89
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
@@ -18721,13 +18721,13 @@ msgid "New note: %1"
 msgstr "ახალი შენიშვნა: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:256
+#: activities/note_names/NoteNames.qml:257
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:443
+#: activities/note_names/NoteNames.qml:444
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -18736,12 +18736,12 @@ msgstr ""
 "ამ აქტივობა ხმა სჭირდება, ასე რომ ის დაუკრავს ხმას მაშინაც კი, როცა ეფექტები "
 "და ხმა გათიშულია მთავარი კონფიგურაციიდან."
 
-#: activities/note_names/NoteNames.qml:444
+#: activities/note_names/NoteNames.qml:445
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "გასვლა"
 
-#: activities/note_names/NoteNames.qml:445
+#: activities/note_names/NoteNames.qml:446
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "გაგრძელება"
@@ -18887,24 +18887,24 @@ msgstr ""
 "მაგალითად: 15, 19, 51, 65, 103, 119, 169, 185, 505, 533, 701, 799, 845, 897, "
 "1001. ყველა ეს რიცხვი კენტია და ისინი ორზე უნაშთოდ არ იყოფა."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:32
+#: activities/numbers-odd-even/resource/TutorialBase.qml:31
 msgctxt "TutorialBase|"
 msgid "Choose the even number:"
 msgstr "აირჩიეთ ლუწი რიცხვი:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:32
+#: activities/numbers-odd-even/resource/TutorialBase.qml:31
 msgctxt "TutorialBase|"
 msgid "Choose the odd number:"
 msgstr "აირჩიეთ კენტი რიცხვი:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:57
-#: activities/numbers-odd-even/resource/TutorialBase.qml:87
+#: activities/numbers-odd-even/resource/TutorialBase.qml:56
+#: activities/numbers-odd-even/resource/TutorialBase.qml:86
 msgctxt "TutorialBase|"
 msgid "Great"
 msgstr "გადასარევია"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:61
-#: activities/numbers-odd-even/resource/TutorialBase.qml:91
+#: activities/numbers-odd-even/resource/TutorialBase.qml:60
+#: activities/numbers-odd-even/resource/TutorialBase.qml:90
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -18912,8 +18912,8 @@ msgid ""
 "this is an odd number."
 msgstr ""
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:64
-#: activities/numbers-odd-even/resource/TutorialBase.qml:94
+#: activities/numbers-odd-even/resource/TutorialBase.qml:63
+#: activities/numbers-odd-even/resource/TutorialBase.qml:93
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -23809,25 +23809,25 @@ msgctxt "Dataset|"
 msgid "How large is Neptune compared to other planets in the Solar System?"
 msgstr "რამხელაა ნეპტუნი მზის სისტემის სხვა პლანეტებთან შედარებით?"
 
-#: activities/solar_system/QuizScreen.qml:214
+#: activities/solar_system/QuizScreen.qml:213
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "სიზუსტე: %1%"
 
-#: activities/solar_system/QuizScreen.qml:253
+#: activities/solar_system/QuizScreen.qml:252
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:288
+#: activities/solar_system/QuizScreen.qml:287
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr "თქვენი საბოლოო ქულაა: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 
-#: activities/solar_system/QuizScreen.qml:288
+#: activities/solar_system/QuizScreen.qml:287
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -23835,7 +23835,7 @@ msgid ""
 "System."
 msgstr ""
 
-#: activities/solar_system/QuizScreen.qml:288
+#: activities/solar_system/QuizScreen.qml:287
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "

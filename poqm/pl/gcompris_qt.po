@@ -19497,7 +19497,7 @@ msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
 msgstr "Odkrywanie kodu Morse'a"
 
-#: activities/morse_code/FirstScreen.qml:64
+#: activities/morse_code/FirstScreen.qml:63
 msgctxt "FirstScreen|"
 msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
@@ -19507,7 +19507,7 @@ msgstr ""
 "przesyłania informacji tekstowej jako ciąg pojawiających się i zanikających "
 "tonów, świateł, kliknięć."
 
-#: activities/morse_code/FirstScreen.qml:65
+#: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
 msgid ""
 "Each Morse code symbol represents either a text character (letter or "
@@ -19527,7 +19527,7 @@ msgstr ""
 "Na przykład, najczęściej używaną literą w angielskim, jest litera \"E\", ma "
 "ona najkrótszy kod, pojedynczą kropkę."
 
-#: activities/morse_code/FirstScreen.qml:90
+#: activities/morse_code/FirstScreen.qml:89
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr "Gdy będziesz gotowy, naciśnij na mnie i spróbuj odtworzyć kod Morse'a."
@@ -19859,13 +19859,13 @@ msgid "New note: %1"
 msgstr "Nowa nuta: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:256
+#: activities/note_names/NoteNames.qml:257
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:443
+#: activities/note_names/NoteNames.qml:444
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19874,12 +19874,12 @@ msgstr ""
 "Ta aktywność wymaga dźwięku, tak więc będzie odtwarzać dźwięki, nawet gdy "
 "głosy i efekty zostały wyłączone w ustawieniach głównych."
 
-#: activities/note_names/NoteNames.qml:444
+#: activities/note_names/NoteNames.qml:445
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Zakończ"
 
-#: activities/note_names/NoteNames.qml:445
+#: activities/note_names/NoteNames.qml:446
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Kontynuuj"
@@ -20052,24 +20052,24 @@ msgstr ""
 "897, 1001. Wszystkie te liczby są nieparzyste, jako iż ich reszta z "
 "dzielenia przez 2 nie jest równa 0."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:32
+#: activities/numbers-odd-even/resource/TutorialBase.qml:31
 msgctxt "TutorialBase|"
 msgid "Choose the even number:"
 msgstr "Wybierz liczbę parzystą"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:32
+#: activities/numbers-odd-even/resource/TutorialBase.qml:31
 msgctxt "TutorialBase|"
 msgid "Choose the odd number:"
 msgstr "Wybierz liczbę nieparzystą:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:57
-#: activities/numbers-odd-even/resource/TutorialBase.qml:87
+#: activities/numbers-odd-even/resource/TutorialBase.qml:56
+#: activities/numbers-odd-even/resource/TutorialBase.qml:86
 msgctxt "TutorialBase|"
 msgid "Great"
 msgstr "Wielki"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:61
-#: activities/numbers-odd-even/resource/TutorialBase.qml:91
+#: activities/numbers-odd-even/resource/TutorialBase.qml:60
+#: activities/numbers-odd-even/resource/TutorialBase.qml:90
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -20079,8 +20079,8 @@ msgstr ""
 "Wystąpił błąd: gdy podzielono przez 2, %1 pozostawia resztę równą 1. Dlatego "
 "jest to liczba nieparzysta."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:64
-#: activities/numbers-odd-even/resource/TutorialBase.qml:94
+#: activities/numbers-odd-even/resource/TutorialBase.qml:63
+#: activities/numbers-odd-even/resource/TutorialBase.qml:93
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -25364,26 +25364,26 @@ msgstr ""
 "Jak duży jest Neptun w porównaniu do innych planet w naszym Układzie "
 "Słonecznym?"
 
-#: activities/solar_system/QuizScreen.qml:214
+#: activities/solar_system/QuizScreen.qml:213
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "Dokładność: %1%"
 
-#: activities/solar_system/QuizScreen.qml:253
+#: activities/solar_system/QuizScreen.qml:252
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:288
+#: activities/solar_system/QuizScreen.qml:287
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr ""
 "Twój ostateczny wynik to: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 
-#: activities/solar_system/QuizScreen.qml:288
+#: activities/solar_system/QuizScreen.qml:287
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -25394,7 +25394,7 @@ msgstr ""
 "Słonecznego!<br>Spróbuj jeszcze raz sprawdzić swoją wiedzę lub poćwicz w "
 "trybie normalnym, aby dowiedzieć się więcej o Układzie Słonecznym."
 
-#: activities/solar_system/QuizScreen.qml:288
+#: activities/solar_system/QuizScreen.qml:287
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "

@@ -19054,7 +19054,7 @@ msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
 msgstr "मोर्स कोडस्य अन्वेषणम्"
 
-#: activities/morse_code/FirstScreen.qml:64
+#: activities/morse_code/FirstScreen.qml:63
 msgctxt "FirstScreen|"
 msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
@@ -19063,7 +19063,7 @@ msgstr ""
 "मोर्स् कोड् सैमुअल् मोर्स् इत्यनेन विकसितः । इदं पाठसूचनाः चालू-अवरोध-स्वर-प्रकाश-क्लिक्-"
 "श्रृङ्खलारूपेण प्रसारयितुं पद्धतिः अस्ति ।"
 
-#: activities/morse_code/FirstScreen.qml:65
+#: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
 msgid ""
 "Each Morse code symbol represents either a text character (letter or "
@@ -19080,7 +19080,7 @@ msgstr ""
 "क्रमाः लघुतराः भवन्ति ।\n"
 "यथा, आङ्ग्लभाषायां सर्वाधिकं प्रचलितं अक्षरं \"E\" इति अक्षरं लघुतमं कोडं भवति, एकः बिन्दुः ।"
 
-#: activities/morse_code/FirstScreen.qml:90
+#: activities/morse_code/FirstScreen.qml:89
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
@@ -19409,13 +19409,13 @@ msgid "New note: %1"
 msgstr "नवीनं टिप्पणी: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:256
+#: activities/note_names/NoteNames.qml:257
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:443
+#: activities/note_names/NoteNames.qml:444
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19424,12 +19424,12 @@ msgstr ""
 "अस्याः क्रियायाः कृते ध्वनिः आवश्यकः अस्ति, अतः मुख्यविन्यासे श्रव्यस्वरः अथवा प्रभावाः "
 "निष्क्रियाः सन्ति चेदपि एतत् केचन ध्वनयः वादयिष्यति ।"
 
-#: activities/note_names/NoteNames.qml:444
+#: activities/note_names/NoteNames.qml:445
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "परिजहातु"
 
-#: activities/note_names/NoteNames.qml:445
+#: activities/note_names/NoteNames.qml:446
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "अनुवर्तते"
@@ -19588,24 +19588,24 @@ msgstr ""
 "यथा- १५, १९, ५१, ६५, १०३, ११९, १६९, १८५, ५०५, ५३३, ७०१, ७९९, ८४५, ८९७, १००१."
 "एताः सर्वाः सङ्ख्याः विषमसङ्ख्याः यतः ते ० शेषं न त्यजन्ति यदा विभक्तः २ ।"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:32
+#: activities/numbers-odd-even/resource/TutorialBase.qml:31
 msgctxt "TutorialBase|"
 msgid "Choose the even number:"
 msgstr "समसङ्ख्यां चिनोतु :"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:32
+#: activities/numbers-odd-even/resource/TutorialBase.qml:31
 msgctxt "TutorialBase|"
 msgid "Choose the odd number:"
 msgstr "विषमसङ्ख्यां चिनोतु :"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:57
-#: activities/numbers-odd-even/resource/TutorialBase.qml:87
+#: activities/numbers-odd-even/resource/TutorialBase.qml:56
+#: activities/numbers-odd-even/resource/TutorialBase.qml:86
 msgctxt "TutorialBase|"
 msgid "Great"
 msgstr "महान्‌"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:61
-#: activities/numbers-odd-even/resource/TutorialBase.qml:91
+#: activities/numbers-odd-even/resource/TutorialBase.qml:60
+#: activities/numbers-odd-even/resource/TutorialBase.qml:90
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -19613,8 +19613,8 @@ msgid ""
 "this is an odd number."
 msgstr "दोषः अस्ति : 2 इत्यनेन विभक्ते %1 1 इत्यस्य शेषं त्यजति अतः एषा विषमसङ्ख्या अस्ति ।"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:64
-#: activities/numbers-odd-even/resource/TutorialBase.qml:94
+#: activities/numbers-odd-even/resource/TutorialBase.qml:63
+#: activities/numbers-odd-even/resource/TutorialBase.qml:93
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -24786,26 +24786,26 @@ msgctxt "Dataset|"
 msgid "How large is Neptune compared to other planets in the Solar System?"
 msgstr "सौरमण्डले अन्यग्रहाणाम् तुलने नेपच्यूनः कियत् विशालः अस्ति ?"
 
-#: activities/solar_system/QuizScreen.qml:214
+#: activities/solar_system/QuizScreen.qml:213
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "सटीकता : %1% ."
 
-#: activities/solar_system/QuizScreen.qml:253
+#: activities/solar_system/QuizScreen.qml:252
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:288
+#: activities/solar_system/QuizScreen.qml:287
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr ""
 "भवतः अन्तिमः स्कोरः अस्ति: <font color=\"#3bb0de\">%1%</font> ।<br><br> %2"
 
-#: activities/solar_system/QuizScreen.qml:288
+#: activities/solar_system/QuizScreen.qml:287
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -24816,7 +24816,7 @@ msgstr ""
 "परीक्षणार्थं पुनः प्रयासं कुर्वन्तु अथवा सौरमण्डलस्य विषये अधिकं ज्ञातुं सामान्यविधाने प्रशिक्षणं "
 "कुर्वन्तु।"
 
-#: activities/solar_system/QuizScreen.qml:288
+#: activities/solar_system/QuizScreen.qml:287
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "

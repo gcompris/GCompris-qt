@@ -19390,7 +19390,7 @@ msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
 msgstr "Mors Kodunu Keşfet"
 
-#: activities/morse_code/FirstScreen.qml:64
+#: activities/morse_code/FirstScreen.qml:63
 msgctxt "FirstScreen|"
 msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
@@ -19399,7 +19399,7 @@ msgstr ""
 "Mors Kodu, Samuel Morse tarafından geliştirilmiştir. Metin verisini açık/"
 "kapalı tonları, ışıklar veya tıklar kullanarak gönderme yöntemidir."
 
-#: activities/morse_code/FirstScreen.qml:65
+#: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
 msgid ""
 "Each Morse code symbol represents either a text character (letter or "
@@ -19418,7 +19418,7 @@ msgstr ""
 "Örneğin, İngilizcedeki en yaygın harf olan “E” harfi, en kısa koda, tek bir "
 "noktaya sahiptir."
 
-#: activities/morse_code/FirstScreen.qml:90
+#: activities/morse_code/FirstScreen.qml:89
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr "Hazır olduğunda Tux’a tıkla ve Mors kodunda konuşalım."
@@ -19751,13 +19751,13 @@ msgid "New note: %1"
 msgstr "Yeni nota: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:256
+#: activities/note_names/NoteNames.qml:257
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%​%1"
 
-#: activities/note_names/NoteNames.qml:443
+#: activities/note_names/NoteNames.qml:444
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19766,12 +19766,12 @@ msgstr ""
 "Bu etkinlik ses gerektirir, bu nedenle ana yapılandırmada sesli sesler veya "
 "efektler devre dışı bırakılmış olsa bile bazı sesleri çalacaktır."
 
-#: activities/note_names/NoteNames.qml:444
+#: activities/note_names/NoteNames.qml:445
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Çık"
 
-#: activities/note_names/NoteNames.qml:445
+#: activities/note_names/NoteNames.qml:446
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Sürdür"
@@ -19937,24 +19937,24 @@ msgstr ""
 "1.001. Tüm bu sayılar tek sayılardır çünkü 2’ye bölündüğünde 0 kalanını "
 "vermezler."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:32
+#: activities/numbers-odd-even/resource/TutorialBase.qml:31
 msgctxt "TutorialBase|"
 msgid "Choose the even number:"
 msgstr "Çift sayıyı seç:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:32
+#: activities/numbers-odd-even/resource/TutorialBase.qml:31
 msgctxt "TutorialBase|"
 msgid "Choose the odd number:"
 msgstr "Tek sayıyı seç:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:57
-#: activities/numbers-odd-even/resource/TutorialBase.qml:87
+#: activities/numbers-odd-even/resource/TutorialBase.qml:56
+#: activities/numbers-odd-even/resource/TutorialBase.qml:86
 msgctxt "TutorialBase|"
 msgid "Great"
 msgstr "Harika"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:61
-#: activities/numbers-odd-even/resource/TutorialBase.qml:91
+#: activities/numbers-odd-even/resource/TutorialBase.qml:60
+#: activities/numbers-odd-even/resource/TutorialBase.qml:90
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -19964,8 +19964,8 @@ msgstr ""
 "Bir hata var: 2’ye bölündüğünde %1, 1 kalanını bırakır. Dolayısıyla bu tek "
 "sayıdır."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:64
-#: activities/numbers-odd-even/resource/TutorialBase.qml:94
+#: activities/numbers-odd-even/resource/TutorialBase.qml:63
+#: activities/numbers-odd-even/resource/TutorialBase.qml:93
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -25231,25 +25231,25 @@ msgstr ""
 "Neptün, Güneş Sistemindeki diğer gezegenlerle karşılaştırıldığında ne kadar "
 "büyüktür?"
 
-#: activities/solar_system/QuizScreen.qml:214
+#: activities/solar_system/QuizScreen.qml:213
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "Doğruluk: %​%1"
 
-#: activities/solar_system/QuizScreen.qml:253
+#: activities/solar_system/QuizScreen.qml:252
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%​%1"
 
-#: activities/solar_system/QuizScreen.qml:288
+#: activities/solar_system/QuizScreen.qml:287
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr "Son puanın: <font color=\"#3bb0de\">%​%1</font>.<br><br>%2"
 
-#: activities/solar_system/QuizScreen.qml:288
+#: activities/solar_system/QuizScreen.qml:287
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -25260,7 +25260,7 @@ msgstr ""
 "almalısın<br>Becerilerini tekrar sınamayı dene veya Güneş Sistemi hakkında "
 "daha fazla bilgi edinmek için normal kipte alıştırmalar yap."
 
-#: activities/solar_system/QuizScreen.qml:288
+#: activities/solar_system/QuizScreen.qml:287
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
