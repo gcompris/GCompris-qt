@@ -19742,7 +19742,7 @@ msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
 msgstr "探索摩斯電碼"
 
-#: activities/morse_code/FirstScreen.qml:64
+#: activities/morse_code/FirstScreen.qml:63
 msgctxt "FirstScreen|"
 msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
@@ -19751,7 +19751,7 @@ msgstr ""
 "摩斯電碼是由 Samuel Morse 發明的。它是將文字資訊轉換為一連串的開關聲音、光或"
 "卡搭聲來傳輸的方法。"
 
-#: activities/morse_code/FirstScreen.qml:65
+#: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
 msgid ""
 "Each Morse code symbol represents either a text character (letter or "
@@ -19767,7 +19767,7 @@ msgstr ""
 "得最常見的字母具有較短的點和破折號序列。例如，英文中最常見的字母 \"E\" 的代碼"
 "最短，只有一個點。"
 
-#: activities/morse_code/FirstScreen.qml:90
+#: activities/morse_code/FirstScreen.qml:89
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr "當您準備好後，請點擊小企鵝，我們來用摩斯電碼來交談。"
@@ -20088,25 +20088,25 @@ msgid "New note: %1"
 msgstr "新的音符：%1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:256
+#: activities/note_names/NoteNames.qml:257
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:443
+#: activities/note_names/NoteNames.qml:444
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr "這個遊戲需要播放聲音，所以即使您設定關閉聲音或音效，它還是會播出聲音。"
 
-#: activities/note_names/NoteNames.qml:444
+#: activities/note_names/NoteNames.qml:445
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "離開"
 
-#: activities/note_names/NoteNames.qml:445
+#: activities/note_names/NoteNames.qml:446
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "繼續"
@@ -20284,24 +20284,24 @@ msgstr ""
 "舉例而言： 15, 19, 51, 65, 13, 119, 169, 185, 505, 533, 701, 799, 845, 897, "
 "1001。所有這些數字除以 2 得到的餘數都是 1，所以都是奇數。"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:32
+#: activities/numbers-odd-even/resource/TutorialBase.qml:31
 msgctxt "TutorialBase|"
 msgid "Choose the even number:"
 msgstr "選擇偶數："
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:32
+#: activities/numbers-odd-even/resource/TutorialBase.qml:31
 msgctxt "TutorialBase|"
 msgid "Choose the odd number:"
 msgstr "選擇奇數："
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:57
-#: activities/numbers-odd-even/resource/TutorialBase.qml:87
+#: activities/numbers-odd-even/resource/TutorialBase.qml:56
+#: activities/numbers-odd-even/resource/TutorialBase.qml:86
 msgctxt "TutorialBase|"
 msgid "Great"
 msgstr "很好！"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:61
-#: activities/numbers-odd-even/resource/TutorialBase.qml:91
+#: activities/numbers-odd-even/resource/TutorialBase.qml:60
+#: activities/numbers-odd-even/resource/TutorialBase.qml:90
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -20309,8 +20309,8 @@ msgid ""
 "this is an odd number."
 msgstr "有點問題喔！%1 除以 2 時餘數是 1，所以它應該是奇數才對。"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:64
-#: activities/numbers-odd-even/resource/TutorialBase.qml:94
+#: activities/numbers-odd-even/resource/TutorialBase.qml:63
+#: activities/numbers-odd-even/resource/TutorialBase.qml:93
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -25538,25 +25538,25 @@ msgctxt "Dataset|"
 msgid "How large is Neptune compared to other planets in the Solar System?"
 msgstr "海王星的大小在太陽系中的排行第幾？"
 
-#: activities/solar_system/QuizScreen.qml:214
+#: activities/solar_system/QuizScreen.qml:213
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "精確度：%1%"
 
-#: activities/solar_system/QuizScreen.qml:253
+#: activities/solar_system/QuizScreen.qml:252
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:288
+#: activities/solar_system/QuizScreen.qml:287
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr "您最終的分數為：<font color=\"#3bb0de\">%1%</font>。<br/><br/>%2"
 
-#: activities/solar_system/QuizScreen.qml:288
+#: activities/solar_system/QuizScreen.qml:287
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -25566,7 +25566,7 @@ msgstr ""
 "您答對 90% 以上，就是太陽系的專家了！<br>您可以多試幾次，或是在一般模式中學習"
 "關於太陽系的知識。"
 
-#: activities/solar_system/QuizScreen.qml:288
+#: activities/solar_system/QuizScreen.qml:287
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
