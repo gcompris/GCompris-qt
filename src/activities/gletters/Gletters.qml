@@ -91,6 +91,7 @@ ActivityBase {
             property alias locale: activityBackground.locale
             property alias textinput: textinput
             property bool inputLocked: false
+            property bool instructionHidden: false
         }
 
         onStart: {
@@ -119,41 +120,41 @@ ActivityBase {
             id: instruction
             anchors {
                 top: parent.top
-                topMargin: 5
+                topMargin: GCStyle.halfMargins
                 horizontalCenter: parent.horizontalCenter
             }
-            height: instructionTxt.contentHeight * 1.1
-            width: Math.max(Math.min(parent.width * 0.8, instructionTxt.text.length * 10), parent.width * 0.3)
-            opacity: 0.8
+            height: instructionTxt.contentHeight + GCStyle.baseMargins
+            width: instructionTxt.contentWidth + 2 * GCStyle.baseMargins
             visible: items.levels
-            radius: 10
-            border.width: 2
+            opacity: items.instructionHidden ? 0 : 1
+            radius: GCStyle.halfMargins
+            border.width: GCStyle.thinnestBorder
             z: 10
-            border.color: "#DDD"
-            color: "#373737"
+            border.color: GCStyle.lightBorder
+            color: GCStyle.darkBg
 
             Behavior on opacity { PropertyAnimation { duration: 200 } }
 
             //shows/hides the Instruction
             MouseArea {
                 anchors.fill: parent
-                onClicked: instruction.opacity = instruction.opacity == 0 ? 0.8 : 0
+                onClicked: items.instructionHidden = !items.instructionHidden
             }
 
             GCText {
                 id: instructionTxt
                 anchors {
                     top: parent.top
-                    topMargin: 5
+                    topMargin: GCStyle.halfMargins
                     horizontalCenter: parent.horizontalCenter
                 }
-                opacity: instruction.opacity
-                z: instruction.z
-                fontSize: smallSize
-                color: "white"
+                fontSize: mediumSize
+                fontSizeMode: Text.Fit
+                color: GCStyle.whiteText
                 text: items.instructionText
                 horizontalAlignment: Text.AlignHCenter
-                width: parent.width * 0.8
+                width: activityBackground.width - 4 * GCStyle.baseMargins
+                height: 40 * ApplicationInfo.ratio
                 wrapMode: TextEdit.WordWrap
             }
         }
@@ -241,8 +242,9 @@ ActivityBase {
         Score {
             id: score
             anchors.right: parent.right
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.rightMargin: GCStyle.baseMargins
             anchors.bottom: bar.top
+            anchors.bottomMargin: bar.height * 0.2
         }
 
         Connections {

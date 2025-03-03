@@ -101,7 +101,7 @@ Item {
         font.bold: true
         color: "navy"
         style: Text.Outline
-        styleColor: "white"
+        styleColor: GCStyle.whiteBorder
 
         ParticleSystemStarLoader {
             id: particle
@@ -116,7 +116,7 @@ Item {
             font.bold: parent.font.bold
             color: "red"
             style: Text.Outline
-            styleColor: "white"
+            styleColor: GCStyle.whiteBorder
         }
     }
 

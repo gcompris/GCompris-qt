@@ -60,6 +60,8 @@ var successRate // Falling speed depends on it
 
 var noShiftLocale = false // for specific locales that don't need shift key, set to true in start()
 
+var imageSize = 106 * GCompris.ApplicationInfo.ratio // image size for FallingImage.qml
+
 function start(items_, uppercaseOnly_,  _mode, speedSetting_) {
     items = items_;
     uppercaseOnly = uppercaseOnly_;
@@ -138,8 +140,10 @@ function stop() {
 
 function initLevel() {
     items.score.currentSubLevel = 0;
-    if(items.levels)
-        items.instructionText = items.levels[items.currentLevel].objective
+    if(items.levels) {
+        items.instructionText = items.levels[items.currentLevel].objective;
+        items.instructionHidden = false;
+    }
     items.inputLocked = false;
     wgMaxFallingItems = 3
     successRate = 1.0
@@ -276,6 +280,8 @@ function initSubLevel() {
 function processKeyPress(text) {
     if(items.inputLocked)
         return
+
+    items.instructionHidden = true;
     var typedText = uppercaseOnly ? text.toLocaleUpperCase() : text;
 
     if (currentWord !== null) {
@@ -377,6 +383,7 @@ function createWord()
                     // assume x=width-25px for now, Word auto-adjusts onCompleted():
                     "x": Math.random() * (items.main.width - 25),
                     "y": -25,
+                    "imageSize": imageSize
                 });
         } else if(items.ourActivity.getDominoValues(text).length) {
             word = wordComponent.createObject( items.activityBackground,
