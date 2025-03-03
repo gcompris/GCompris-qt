@@ -6,6 +6,8 @@
 import QtQuick 2.12
 import QtCharts 2.0
 
+import "../../core"
+
 ChartView {
     id: chart
     backgroundColor: "transparent"
@@ -19,8 +21,8 @@ ChartView {
         PieSlice {
             value: 1
             color: gridContainer.unselectedColor
-            borderColor: "white"
-            borderWidth: 5
+            borderColor: GCStyle.whiteBorder
+            borderWidth: GCStyle.thinBorder
         }
 
         onClicked: (slice) => {
@@ -39,8 +41,8 @@ ChartView {
 
         function setSliceStyle(sliceNumber: int, selected: bool) {
             var slice = pieSeries.at(sliceNumber);
-            slice.borderColor = "white";
-            slice.borderWidth = 5;
+            slice.borderColor = GCStyle.whiteBorder;
+            slice.borderWidth = GCStyle.thinBorder;
             slice.color = selected ? gridContainer.selectedColor : gridContainer.unselectedColor;
         }
     }

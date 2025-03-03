@@ -53,6 +53,7 @@ ActivityBase {
             readonly property string mode: activity.mode
             property int numeratorToFind: 0
             property int denominatorToFind: 0
+            property int chartRepeaterModel: Math.ceil(items.numeratorToFind / items.denominatorToFind)
             readonly property var levels: activity.datasets
             property string chartType: "pie"
             property bool fixedNumerator: true
@@ -86,45 +87,46 @@ ActivityBase {
         //instruction rectangle
         Rectangle {
             id: instruction
-            anchors.centerIn: instructionTxt
-            width: instructionTxt.width + 20
-            height: instructionTxt.height
-            opacity: 0.8
-            radius: 10
-            border.width: 2
-            z: 10
-            border.color: "#DDD"
-            color: "#373737"
+            anchors.top: parent.top
+            anchors.topMargin: GCStyle.baseMargins
+            anchors.horizontalCenter: instructionTxt.horizontalCenter
+            width: instructionTxt.contentWidth + 2 * GCStyle.baseMargins
+            height: instructionTxt.contentHeight + GCStyle.baseMargins
+            radius: GCStyle.halfMargins
+            border.width: GCStyle.thinnestBorder
+            border.color: GCStyle.lightBorder
+            color: GCStyle.darkBg
         }
         //instruction for playing the game
         GCText {
             id: instructionTxt
             anchors {
                 top: parent.top
-                topMargin: 10
+                topMargin: 1.5 * GCStyle.baseMargins
                 horizontalCenter: parent.horizontalCenter
             }
-            opacity: instruction.opacity
-            z: instruction.z
             fontSize: regularSize
-            color: "white"
+            fontSizeMode: Text.Fit
+            color: GCStyle.whiteText
             horizontalAlignment: Text.AlignHCenter
-            width: Math.max(Math.min(parent.width * 0.9, text.length * 8), parent.width * 0.5)
+            width: parent.width - 4 * GCStyle.baseMargins
+            height: 40 * ApplicationInfo.ratio
             wrapMode: TextEdit.WordWrap
         }
 
         Item {
             id: layoutArea
-            width: parent.width - 20
-            height: parent.height - instructionTxt.height - bar.height * 1.2 - 30
+            width: parent.width - 2 * GCStyle.baseMargins
             anchors.top: instruction.bottom
-            anchors.topMargin: 10
+            anchors.topMargin: GCStyle.baseMargins
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: bar.height * 1.3
             anchors.horizontalCenter: parent.horizontalCenter
         }
 
         Item {
             id: chartLayoutArea
-            width: layoutArea.width - okButton.width - 10 * ApplicationInfo.ratio
+            width: layoutArea.width - okButton.width - GCStyle.baseMargins
             height: layoutArea.height
             anchors {
                 top: layoutArea.top
@@ -134,7 +136,7 @@ ActivityBase {
 
         Item {
             id: rightLayoutArea
-            width:  layoutArea.width - chartLayoutArea.width
+            width:  layoutArea.width - chartLayoutArea.width - GCStyle.baseMargins
             height: layoutArea.height
             anchors.top: layoutArea.top
             anchors.right: layoutArea.right
@@ -144,7 +146,15 @@ ActivityBase {
             id: chartDisplay
             layoutWidth: chartLayoutArea.width
             layoutHeight: chartLayoutArea.height
+            gridItemHeight: items.horizontalLayout ?
+                Math.min(layoutWidth / items.chartRepeaterModel, layoutHeight) :
+                Math.min(layoutWidth, layoutHeight / items.chartRepeaterModel)
+            gridItemWidth: items.horizontalLayout ? gridItemHeight : layoutWidth
+            width: items.horizontalLayout ? gridItemWidth * items.chartRepeaterModel : gridItemWidth
+            height: items.horizontalLayout ? gridItemHeight : gridItemHeight * items.chartRepeaterModel
+            flow: items.horizontalLayout ? Flow.LeftToRight : Flow.TopToBottom
             anchors.centerIn: chartLayoutArea
+            numberOfCharts: items.chartRepeaterModel
         }
 
         Item {
@@ -152,16 +162,16 @@ ActivityBase {
             width: rightLayoutArea.width
             anchors.top: rightLayoutArea.top
             anchors.bottom: okButton.top
-            anchors.bottomMargin: 10 * ApplicationInfo.ratio
+            anchors.bottomMargin: GCStyle.baseMargins
 
             FractionNumber {
                 id: numeratorText
                 value: 0
                 width: parent.width
-                height: 30 * ApplicationInfo.ratio
+                height: 40 * ApplicationInfo.ratio
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.bottom: fractionBar.bottom
-                anchors.bottomMargin: 10
+                anchors.bottomMargin: GCStyle.halfMargins
                 interactive: activity.mode === "findFraction" && !items.fixedNumerator
                 onLeftClicked: {
                     if(items.numeratorValue > 0) {
@@ -175,10 +185,10 @@ ActivityBase {
             Rectangle {
                 id: fractionBar
                 width: parent.width
-                height: 5
+                height: GCStyle.midBorder
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
-                color: "white"
+                color: GCStyle.whiteBorder
             }
             FractionNumber {
                 id: denominatorText
@@ -187,7 +197,7 @@ ActivityBase {
                 height: numeratorText.height
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.top: fractionBar.bottom
-                anchors.topMargin: 10
+                anchors.topMargin: GCStyle.halfMargins
                 interactive: activity.mode === "findFraction" && !items.fixedDenominator
                 onLeftClicked: {
                     if(items.denominatorValue > 0) {
@@ -203,7 +213,7 @@ ActivityBase {
         ErrorRectangle {
             id: errorRectangle
             anchors.fill: activity.mode === "findFraction" ? fractionTextDisplay : chartDisplay
-            radius: activity.mode === "findFraction" ? 10 * ApplicationInfo.ratio : (items.chartType === "pie" ? Math.min(width, height) : 0)
+            radius: activity.mode === "findFraction" ? GCStyle.baseMargins : (items.chartType === "pie" ? Math.min(width, height) : 0)
             imageSize: okButton.width
             function releaseControls() {
                 items.buttonsBlocked = false;
@@ -215,11 +225,11 @@ ActivityBase {
             enabled: !items.buttonsBlocked
             anchors {
                 bottom: score.top
-                bottomMargin: 10 * ApplicationInfo.ratio
+                bottomMargin: GCStyle.baseMargins
                 horizontalCenter: rightLayoutArea.horizontalCenter
             }
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: 70 * ApplicationInfo.ratio
+            width: GCStyle.bigButtonHeight
             onClicked: {
                 chartDisplay.checkAnswer();
             }
