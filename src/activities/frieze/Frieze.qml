@@ -69,8 +69,8 @@ ActivityBase {
                 tokens.visible = !tokens.visible
             }
         }
-        property int baseMargins: 10 * ApplicationInfo.ratio
-        property int baseSizeValue: 60 * ApplicationInfo.ratio
+
+        readonly property int baseSizeValue: 60 * ApplicationInfo.ratio
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
@@ -100,26 +100,31 @@ ActivityBase {
 
         Rectangle {
             id: instructionArea
-            opacity: 1
-            radius: activityBackground.baseMargins
-            color: "#373737"
-            height: 40 * ApplicationInfo.ratio
-            width: Math.min(320 * ApplicationInfo.ratio, parent.width - 2 * activityBackground.baseMargins)
-            anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
-            anchors.topMargin: activityBackground.baseMargins
+            anchors.topMargin: GCStyle.baseMargins
+            anchors.horizontalCenter: instruction.horizontalCenter
+            width: instruction.contentWidth + 2 * GCStyle.baseMargins
+            height: instruction.contentHeight + GCStyle.baseMargins
+            radius: GCStyle.halfMargins
+            border.width: GCStyle.thinnestBorder
+            border.color: GCStyle.lightBorder
+            color: GCStyle.darkBg
+        }
 
-            GCText {
-                id: instruction
-                wrapMode: TextEdit.WordWrap
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                height: parent.height - activityBackground.baseMargins
-                width: parent.width - 2 * activityBackground.baseMargins
-                fontSizeMode: Text.Fit
-                color: 'white'
-                anchors.centerIn: instructionArea
+        GCText {
+            id: instruction
+            anchors {
+                top: parent.top
+                topMargin: 1.5 * GCStyle.baseMargins
+                horizontalCenter: parent.horizontalCenter
             }
+            wrapMode: TextEdit.WordWrap
+            horizontalAlignment: Text.AlignHCenter
+            width: parent.width - 4 * GCStyle.baseMargins
+            height: 40 * ApplicationInfo.ratio
+            fontSize: regularSize
+            fontSizeMode: Text.Fit
+            color: GCStyle.whiteText
         }
 
         Item {
@@ -128,30 +133,30 @@ ActivityBase {
             anchors.bottom: okButton.top
             anchors.left: activityBackground.left
             anchors.right: activityBackground.right
-            anchors.margins: activityBackground.baseMargins
+            anchors.margins: GCStyle.baseMargins
         }
 
         Item {
             id: referenceArea // used to calculate the ideal token and flow size for solution and answer
-            width: layoutArea.width - activityBackground.baseMargins
-            height: (layoutArea.height - 5 * activityBackground.baseMargins) * 0.33
+            width: layoutArea.width - GCStyle.baseMargins
+            height: (layoutArea.height - 5 * GCStyle.baseMargins) * 0.33
             property int tokenSize: Math.floor(Math.min(Core.fitItems(width, height, solutionModel.count), activityBackground.baseSizeValue))
         }
 
         Rectangle {
             id: solutionRect
-            width: solution.childrenRect.width + activityBackground.baseMargins
-            height: solution.childrenRect.height + activityBackground.baseMargins
+            width: solution.childrenRect.width + GCStyle.baseMargins
+            height: solution.childrenRect.height + GCStyle.baseMargins
             anchors.top: layoutArea.top
             anchors.horizontalCenter: parent.horizontalCenter
-            color: "#E9E9E9"
-            radius: activityBackground.baseMargins
+            color: GCStyle.lightBg
+            radius: GCStyle.halfMargins
             Flow {
                 id: solution
                 width: referenceArea.width
                 height: referenceArea.height
                 anchors.top: parent.top
-                anchors.topMargin: activityBackground.baseMargins * 0.5
+                anchors.topMargin: GCStyle.halfMargins
                 anchors.left: parent.left
                 anchors.leftMargin: anchors.topMargin
                 layoutDirection: (Core.isLeftToRightLocale(ApplicationSettings.locale)) ?  Qt.LeftToRight : Qt.RightToLeft
@@ -167,19 +172,19 @@ ActivityBase {
 
         Rectangle {
             id: answerRect
-            width: answer.childrenRect.width + activityBackground.baseMargins
-            height: answer.childrenRect.height + activityBackground.baseMargins
+            width: answer.childrenRect.width + GCStyle.baseMargins
+            height: answer.childrenRect.height + GCStyle.baseMargins
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: solutionRect.bottom
-            anchors.topMargin: activityBackground.baseMargins
-            color: "#E9E9E9"
-            radius: activityBackground.baseMargins
+            anchors.topMargin: GCStyle.baseMargins
+            color: GCStyle.lightBg
+            radius: GCStyle.halfMargins
             Flow {
                 id: answer
                 width: referenceArea.width
                 height: referenceArea.height
                 anchors.top: parent.top
-                anchors.topMargin: activityBackground.baseMargins * 0.5
+                anchors.topMargin: GCStyle.halfMargins
                 anchors.left: parent.left
                 anchors.leftMargin: anchors.topMargin
                 layoutDirection: (Core.isLeftToRightLocale(ApplicationSettings.locale)) ?  Qt.LeftToRight : Qt.RightToLeft
@@ -194,7 +199,7 @@ ActivityBase {
             ErrorRectangle {
                 id: errorRectangle
                 anchors.fill: parent
-                radius: activityBackground.baseMargins
+                radius: GCStyle.halfMargins
                 imageSize: parent.height * 0.75
                 function releaseControls() {
                     items.buttonsBlocked = false;
@@ -207,22 +212,22 @@ ActivityBase {
             width: layoutArea.width
             height: referenceArea.height
             anchors.top: answerRect.bottom
-            anchors.topMargin: activityBackground.baseMargins
+            anchors.topMargin: GCStyle.baseMargins
             anchors.horizontalCenter: parent.horizontalCenter
             Item {
                 id: tokensArea
-                width: parent.width - activityBackground.baseSizeValue * 2 - activityBackground.baseMargins * 2
+                width: parent.width - activityBackground.baseSizeValue * 2 - GCStyle.baseMargins * 2
                 height: parent.height
                 property int tokenSize: Math.floor(Math.min(Core.fitItems(width, height, tokensModel.count), activityBackground.baseSizeValue))
             }
             Rectangle {
                 id: tokensRect
-                width: tokens.contentItem.childrenRect.width + activityBackground.baseMargins
-                height: tokens.contentItem.childrenRect.height + activityBackground.baseMargins
+                width: tokens.contentItem.childrenRect.width + GCStyle.baseMargins
+                height: tokens.contentItem.childrenRect.height + GCStyle.baseMargins
                 anchors.top: parent.top
                 anchors.horizontalCenter: parent.horizontalCenter
-                color: "#E9E9E9"
-                radius: activityBackground.baseMargins
+                color: GCStyle.lightBg
+                radius: GCStyle.halfMargins
                 enabled: !items.buttonsBlocked
                 GridView {
                     id: tokens
@@ -231,7 +236,7 @@ ActivityBase {
                     cellWidth: tokensArea.tokenSize
                     cellHeight: tokensArea.tokenSize
                     anchors.top: parent.top
-                    anchors.topMargin: activityBackground.baseMargins * 0.5
+                    anchors.topMargin: GCStyle.halfMargins
                     anchors.left: parent.left
                     anchors.leftMargin: anchors.topMargin
                     boundsBehavior: Flickable.StopAtBounds
@@ -248,7 +253,7 @@ ActivityBase {
                         color: "#00FFFFFF"
                         radius: height * 0.1
                         border.color: "#80373737"
-                        border.width: 2 * ApplicationInfo.ratio
+                        border.width: GCStyle.thinBorder
                     }
                 }
                 TokenFrieze {       // Animated token visible during drops
@@ -317,7 +322,7 @@ ActivityBase {
                 sourceSize.height: activityBackground.baseSizeValue
                 fillMode: Image.PreserveAspectFit
                 anchors.right: tokensRect.left
-                anchors.rightMargin: activityBackground.baseMargins
+                anchors.rightMargin: GCStyle.baseMargins
                 anchors.verticalCenter: tokensRect.verticalCenter
                 enabled: !solution.visible
                 opacity: (!enabled) ? 0.0 : 1.0
@@ -338,7 +343,7 @@ ActivityBase {
                 sourceSize.height: activityBackground.baseSizeValue
                 fillMode: Image.PreserveAspectFit
                 anchors.left: tokensRect.right
-                anchors.leftMargin: activityBackground.baseMargins
+                anchors.leftMargin: GCStyle.baseMargins
                 anchors.verticalCenter: tokensRect.verticalCenter
                 enabled: (items.currentAnswer > 0) && (!readyButton.enabled)
                 MouseArea {
@@ -375,7 +380,7 @@ ActivityBase {
         BarButton {
             id: okButton
             anchors.right: score.left
-            anchors.rightMargin: activityBackground.baseMargins
+            anchors.rightMargin: GCStyle.baseMargins
             anchors.verticalCenter: score.verticalCenter
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             width: activityBackground.baseSizeValue
@@ -392,7 +397,7 @@ ActivityBase {
             anchors.bottom: activityBackground.bottom
             anchors.bottomMargin: bar.height * 1.5
             anchors.right: activityBackground.right
-            anchors.rightMargin: activityBackground.baseMargins
+            anchors.rightMargin: GCStyle.baseMargins
             onStop: {
                 Activity.nextSubLevel()
             }
