@@ -20,22 +20,21 @@ Item {
     Image {
         id: shiftKeyboardLeft
         source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
-        height: 35 * ApplicationInfo.ratio
-        width: height
+        height: parent.height
         sourceSize.height: height
-        enabled: fractionNumber.interactive && !items.buttonsBlocked
         opacity: fractionNumber.interactive ? 1 : 0
         fillMode: Image.PreserveAspectFit
         anchors.left: parent.left
         anchors.verticalCenter: parent.verticalCenter
-        MouseArea {
-            enabled: true
-            anchors.centerIn: parent
-            width: parent.width * 1.5
-            height: width
-            onClicked: {
-                leftClicked();
-            }
+    }
+    MouseArea {
+        enabled: fractionNumber.interactive && !items.buttonsBlocked
+        width: parent.width * 0.5
+        height: parent.height
+        anchors.verticalCenter: parent. verticalCenter
+        anchors.left: parent.left
+        onClicked: {
+            leftClicked();
         }
     }
     Item {
@@ -48,28 +47,27 @@ Item {
             text: "" + value
             font.weight: Font.DemiBold
             anchors.centerIn: parent
-            color: "white"
+            color: GCStyle.whiteText
         }
     }
     Image {
         id: shiftKeyboardRight
         source: "qrc:/gcompris/src/core/resource/bar_next.svg"
-        height: shiftKeyboardLeft.height
-        width: height
+        height: parent.height
         sourceSize.height: height
-        enabled: fractionNumber.interactive && !items.buttonsBlocked
         opacity: fractionNumber.interactive ? 1 : 0
         fillMode: Image.PreserveAspectFit
         anchors.right: parent.right
         anchors.verticalCenter: parent.verticalCenter
-        MouseArea {
-            enabled: true
-            anchors.centerIn: parent
-            width: parent.width * 1.5
-            height: width
-            onClicked: {
-                rightClicked();
-            }
+    }
+    MouseArea {
+        enabled: fractionNumber.interactive && !items.buttonsBlocked
+        width: parent.width * 0.5
+        height: parent.height
+        anchors.verticalCenter: parent. verticalCenter
+        anchors.right: parent.right
+        onClicked: {
+            rightClicked();
         }
     }
 }

@@ -8,6 +8,7 @@ import QtQuick 2.12
 import QtQml.Models 2.12
 
 import core 1.0
+import "../../core"
 
 Item {
     id: chart
@@ -16,8 +17,8 @@ Item {
         id: chartContainer
         // reduce the margin only in case it's vertical and there's more than one rectangle
         height: !chart.parent.horizontalLayout && chart.parent.numberOfCharts > 1 ?
-            parent.height - 20 * ApplicationInfo.ratio :
-            parent.height - 60 * ApplicationInfo.ratio
+            parent.height - 2 * GCStyle.baseMargins :
+            parent.height - 6 * GCStyle.baseMargins
         width: height
         anchors.centerIn: parent
 
@@ -34,8 +35,8 @@ Item {
             anchors.horizontalCenter: parent.horizontalCenter
 
             delegate: Rectangle {
-                border.width: 5
-                border.color: "white"
+                border.width: GCStyle.thinBorder
+                border.color: GCStyle.whiteBorder
                 color: selected ? gridContainer.selectedColor : gridContainer.unselectedColor
                 // add border.width as an offset to avoid double-sized separation lines
                 width: chartGrid.cellWidth + border.width

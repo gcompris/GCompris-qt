@@ -15,19 +15,17 @@ Flow {
     readonly property string unselectedColor: "#00000000"
     property double layoutWidth: 10
     property double layoutHeight: 10
-    property double gridItemHeight: items.horizontalLayout ?
-                        Math.min(layoutWidth / repeater.model, layoutHeight) :
-                        Math.min(layoutWidth, layoutHeight / repeater.model)
-    property double gridItemWidth: items.horizontalLayout ? gridItemHeight :
-                        layoutWidth
-    width: items.horizontalLayout ? gridItemWidth * repeater.model : gridItemWidth
-    height: items.horizontalLayout ? gridItemHeight : gridItemHeight * repeater.model
-    flow: items.horizontalLayout ? Flow.LeftToRight : Flow.TopToBottom
+    property double gridItemHeight: 1
+    property double gridItemWidth: 1
+    required property int numberOfCharts
+    width: 1
+    height: 1
+    flow: Flow.LeftToRight
     spacing: 0
     anchors.centerIn: parent
     Repeater {
-        id: repeater
-        model: Math.ceil(items.numeratorToFind / items.denominatorToFind)
+        id: chartRepeater
+        model: gridContainer.numberOfCharts
         Loader {
             id: graphLoader
             width: gridContainer.gridItemWidth
@@ -35,12 +33,12 @@ Flow {
             asynchronous: false
             source: items.chartType === "pie" ? "PieChart.qml" : "RectangleChart.qml"
             property bool horizontalLayout: items.horizontalLayout
-            property int numberOfCharts: repeater.model
+            property int numberOfCharts: chartRepeater.model
         }
     }
     function initLevel() {
-        for(var pieIndex = 0; pieIndex < repeater.count; ++ pieIndex) {
-            repeater.itemAt(pieIndex).item.initLevel(pieIndex);
+        for(var pieIndex = 0; pieIndex < chartRepeater.count; ++ pieIndex) {
+            chartRepeater.itemAt(pieIndex).item.initLevel(pieIndex);
         }
     }
 
@@ -49,8 +47,8 @@ Flow {
         if(activity.mode === "selectPie") {
             // count how many selected
             var selected = 0;
-            for(var pieIndex = 0; pieIndex < repeater.count; ++ pieIndex) {
-                selected += repeater.itemAt(pieIndex).item.countSelectedParts();
+            for(var pieIndex = 0; pieIndex < chartRepeater.count; ++ pieIndex) {
+                selected += chartRepeater.itemAt(pieIndex).item.countSelectedParts();
             }
             goodAnswer = (selected == items.numeratorToFind);
         }
