@@ -27,6 +27,7 @@ Item {
     property string text
     property alias image: image.source;
     property bool wonState: false
+    required property double imageSize
 
     signal won
 
@@ -81,8 +82,7 @@ Item {
 
     Image {
         id: image
-        // FIXME, the size should be passed from the caller
-        sourceSize.height: 106 * ApplicationInfo.ratio
+        sourceSize.height: word.imageSize
 
         ParticleSystemStarLoader {
             id: particle
