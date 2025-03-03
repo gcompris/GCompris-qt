@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-02-19 07:32+0100\n"
+"PO-Revision-Date: 2025-03-02 08:53+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.gal>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -8530,6 +8530,7 @@ msgctxt "board8|"
 msgid "The Pantheon"
 msgstr "Panteón"
 
+# skip-rule: trasno-command_reverse
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
 msgid ""
@@ -8564,6 +8565,7 @@ msgctxt "board8|"
 msgid "Duomo Di Milano"
 msgstr "Catedral de Milán"
 
+# skip-rule: trasno-locate, trasno-history, trasno-icon_reverse
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
 msgid ""
@@ -8687,6 +8689,7 @@ msgctxt "board8|"
 msgid "Pompeii"
 msgstr "Pompeia"
 
+# skip-rule: trasno-locate, trasno-history, trasno-provide
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
 msgid ""
@@ -8785,6 +8788,7 @@ msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
 msgstr "Santuario Arakura Fuji Sengen"
 
+# skip-rule: trasno-file-a_reverse
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
 msgid ""
@@ -8816,6 +8820,7 @@ msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
 msgstr "Castelo de Shuri de Okinawa"
 
+# skip-rule: trasno-locate, trasno-history
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
 msgid ""
@@ -8840,7 +8845,7 @@ msgstr ""
 "Segunda Guerra Mundial, reconstruíuse meticulosamente e converteuse nunha "
 "importante atracción turística. Traxicamente, gran parte do castelo perdeuse "
 "nun incendio en 2019, pero os esforzos para restauralo continúan, sinal da "
-"súa perdurable importancia para o patrimonio de Okinawa."
+"súa perdurábel importancia para o patrimonio de Okinawa."
 
 #: activities/explore_monuments/resource/board/board9.qml:63
 msgctxt "board9|"

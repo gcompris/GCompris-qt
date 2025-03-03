@@ -2023,6 +2023,9 @@ msgid ""
 "activity, you can click on the broken red LED after disconnecting from the "
 "circuit to repair it."
 msgstr ""
+"ელექტროენერგიას, რომლის ძალაც რაღაც მნიშვნელობას აღემატება, შეუძლია, "
+"გააფუჭოს LED ნათურა. ამ აქტივობაში შეგიძლიათ, დააწკაპუნოთ გაფუჭებულ წითელ "
+"LED-ზე მისი წრედიდან გათიშვის შემდეგ, რომ შეცვალოთ ის."
 
 #: activities/analog_electricity/TutorialDataset.qml:254
 msgctxt "TutorialDataset|"
