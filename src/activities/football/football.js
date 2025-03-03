@@ -6,6 +6,7 @@
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
  *   Bharath M S <brat.197@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (gameplay and layout refactoring)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -35,14 +36,10 @@ function stop() {
 }
 
 function initLevel() {
-    items.ball.x = items.border.width * 0.2
-    items.ball.y = items.border.height / 2 - items.ball.height / 2
-    velocityX = 0
-    velocityY = 0
+    items.ball.resetPosition()
+    items.tux.resetPosition()
     tuxCollision = false
-    /* Increase size of TUX for each level */
-    items.tux.sourceSize.height = 10 * (5 + 2 * items.bar.level) * GCompris.ApplicationInfo.ratio
-    moveTux(items.activityBackground.height)
+    items.moveTux.restart()
 }
 
 function nextLevel() {
@@ -95,20 +92,11 @@ function getAngle(sx1, sy1, sx2, sy2)
 
 /* Draw a line dynamically to display the drag */
 function drawLine(x1, y1, x2, y2){
-    items.line.height = 5
     items.line.rotation = getAngle(x1, y1, x2, y2);
     items.line.width = Math.sqrt(Math.pow((x1 - x2), 2) + Math.pow((y1- y2), 2));
     items.line.x = x2
     items.line.y = y2
 }
-
-/* Tux moves up and down, called in initlevel() */
-function moveTux(height){
-    items.moveUp.to = 0
-    items.moveDown.to = items.activityBackground.height * 0.75 - items.tux.height
-    items.moveTux.restart()
-}
-
 
 function ballMotion() {
     items.ball.x += velocityX
@@ -122,6 +110,7 @@ function ballMotion() {
         velocityX *= 0
         velocityY *= 0
         items.ball.x = items.border.width// - items.ball.width
+        items.moveTux.stop()
         items.bonus.good("smiley")
     } else if(items.ball.x < 0) { // left
         velocityX *= -1
@@ -132,14 +121,25 @@ function ballMotion() {
         items.ball.y = 0
         tuxCollision = false
     }
-    /* Collision with TUX */
-    else if(items.ball.y > items.tux.y &&
-            items.ball.y <= items.tux.y + items.tux.height/2 &&
-            items.ball.x > items.tux.x &&
-            items.ball.x <= items.tux.x + items.tux.width/2 &&
+    /* Collision with TUX body */
+    else if(items.ball.y + items.ball.height > items.tux.y + items.tux.height * 0.25 &&
+            items.ball.y <= items.tux.y + items.tux.height * 0.75 &&
+            items.ball.x + items.ball.width > items.tux.x + items.tux.width * 0.2 &&
+            items.ball.x <= items.tux.x + items.tux.width &&
             !tuxCollision) {
-        velocityY *= -2
-        velocityX *= -2
+        velocityY *= -1
+        velocityX *= -1
+        tuxCollision = true
+        items.brickSound.play()
+    }
+    /* Collision with TUX arms */
+    else if(items.ball.y + items.ball.height > items.tux.y &&
+        items.ball.y <= items.tux.y + items.tux.height &&
+        items.ball.x + items.ball.width > items.tux.x + items.tux.width * 0.5 &&
+        items.ball.x <= items.tux.x + items.tux.width * 0.25 &&
+        !tuxCollision) {
+        velocityY *= -1
+        velocityX *= -1
         tuxCollision = true
         items.brickSound.play()
     }
