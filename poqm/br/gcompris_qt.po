@@ -9879,7 +9879,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Tab: kemm etre embann ar frizenn ha sellout ouzh ar skouer"
 
-#: activities/frieze/Frieze.qml:301
+#: activities/frieze/Frieze.qml:306
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Prest on"

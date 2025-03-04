@@ -10010,7 +10010,7 @@ msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr ""
 "Tab: alterna tra la modifica del fregio e la visualizzazione del modello"
 
-#: activities/frieze/Frieze.qml:301
+#: activities/frieze/Frieze.qml:306
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Sono pronto"

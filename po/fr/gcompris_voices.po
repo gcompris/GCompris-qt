@@ -1167,7 +1167,7 @@ msgstr ""
 #, kde-format
 msgid "Click on the different stages that go to make up the power supply."
 msgstr ""
-"Remet le système électrique en marche pour qu'il y ai de la lumière dans la "
+"Remet le système électrique en marche pour qu'il y ait de la lumière dans la "
 "maison."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "reversecount"
