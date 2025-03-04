@@ -10236,7 +10236,7 @@ msgstr ""
 "Tab: переключение между редактированием последовательности и просмотром "
 "модели"
 
-#: activities/frieze/Frieze.qml:301
+#: activities/frieze/Frieze.qml:306
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Я готов"

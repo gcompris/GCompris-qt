@@ -10389,7 +10389,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Kichupo: badilisha kati ya kuhariri frieze na kutazama modeli"
 
-#: activities/frieze/Frieze.qml:301
+#: activities/frieze/Frieze.qml:306
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Niko tayari"

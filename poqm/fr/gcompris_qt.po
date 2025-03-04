@@ -10470,7 +10470,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Tab : basculer entre l'édition de la frise et la vue du modèle"
 
-#: activities/frieze/Frieze.qml:301
+#: activities/frieze/Frieze.qml:306
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Je suis prêt"
@@ -20729,7 +20729,7 @@ msgstr "Choisis le nombre pair :"
 #: activities/numbers-odd-even/NumbersOddEven.qml:15
 msgctxt "NumbersOddEven|"
 msgid "Catch the odd numbers."
-msgstr "Choisir le nombre impair :"
+msgstr "Choisis le nombre impair :"
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:42
 msgctxt "NumbersOddEven|"

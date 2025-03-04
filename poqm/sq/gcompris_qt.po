@@ -10311,7 +10311,7 @@ msgstr ""
 "Tasti Tab: kaloni nga mënyra përpunim bordurash në parje modeli, ose "
 "anasjelltas"
 
-#: activities/frieze/Frieze.qml:301
+#: activities/frieze/Frieze.qml:306
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Jam Gati"
