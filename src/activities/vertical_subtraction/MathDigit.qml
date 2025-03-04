@@ -5,6 +5,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
+import core 1.0
 
 import "../../core"
 import "qrc:/gcompris/src/core/core.js" as Core
