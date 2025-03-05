@@ -37,7 +37,7 @@ ActivityBase {
             property Item main: activity.main
             // UI elements
             property alias activityBackground: activityBackground
-            property alias instruction: instruction
+            property alias instruction: instructionPanel.textItem
             property alias bar: bar
             property alias bonus: bonus
             property alias score: score
@@ -71,33 +71,19 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
-        Rectangle {
-            id: instructionArea
-            opacity: 1
-            radius: GCStyle.baseMargins
-            color: GCStyle.darkBg
-            height: 40 * ApplicationInfo.ratio
-            width: Math.min(320 * ApplicationInfo.ratio, parent.width - 2 * GCStyle.baseMargins)
+        TextPanel {
+            id: instructionPanel
+            panelWidth: parent.width - 2 * GCStyle.baseMargins
+            panelHeight: Math.min(50 * ApplicationInfo.ratio, activityBackground.height * 0.2)
+            fixedHeight: true
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
             anchors.topMargin: GCStyle.baseMargins
-
-            GCText {
-                id: instruction
-                wrapMode: TextEdit.WordWrap
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                height: parent.height - GCStyle.baseMargins
-                width: parent.width - 2 * GCStyle.baseMargins
-                fontSizeMode: Text.Fit
-                color: GCStyle.whiteText
-                anchors.centerIn: instructionArea
-            }
         }
 
         Item {
             id: layoutArea
-            anchors.top: instructionArea.bottom
+            anchors.top: instructionPanel.bottom
             anchors.bottom: okButton.top
             anchors.left: activityBackground.left
             anchors.right: activityBackground.right
