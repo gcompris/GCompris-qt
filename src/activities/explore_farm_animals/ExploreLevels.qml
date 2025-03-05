@@ -139,63 +139,36 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
-        Rectangle {
-            id: instruction
-            width: instructionText.contentWidth + 2 * GCStyle.baseMargins
-            height: instructionText.contentHeight + GCStyle.baseMargins
-            anchors.centerIn: instructionText
-            color: GCStyle.lightBg
-            radius: GCStyle.halfMargins
-            border.width: GCStyle.thinBorder
-            border.color: GCStyle.blueBorder
-        }
-
-        GCText {
-            id: instructionText
+        TextPanel {
+            id: instructionPanel
+            panelWidth: parent.width - 3 * GCStyle.baseMargins - score.width
+            panelHeight: 50 * ApplicationInfo.ratio
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.horizontalCenterOffset: (-score.width - GCStyle.baseMargins) * 0.5
             anchors.top: parent.top
-            anchors.left: parent.left
-            anchors.right: score.left
-            anchors.margins: 2 * GCStyle.baseMargins
-            anchors.topMargin: GCStyle.baseMargins * 1.5
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            height: 50 * ApplicationInfo.ratio
-            wrapMode: Text.Wrap
-            fontSize: mediumSize
-            fontSizeMode: Text.Fit
-            color: GCStyle.darkText
-            visible: instruction.visible
-            text: (dataset.item && items.score.currentSubLevel - 1 != items.score.numberOfSubLevels  && items.score.currentSubLevel != 0) ? dataset.item.instructions[items.score.currentSubLevel - 1].text : ""
+            anchors.topMargin: GCStyle.baseMargins
+            textItem.text: (dataset.item && items.score.currentSubLevel - 1 != items.score.numberOfSubLevels  && items.score.currentSubLevel != 0) ? dataset.item.instructions[items.score.currentSubLevel - 1].text : ""
+            color: GCStyle.lightBg
+            border.color: GCStyle.blueBorder
+            border.width: GCStyle.thinBorder
+            textItem.color: GCStyle.darkText
+            textItem.fontSize: textItem.mediumSize
         }
 
-        Rectangle {
-            id: question
-            anchors.top: instruction.bottom
+        TextPanel {
+            id: questionPanel
+            panelWidth: instructionPanel.panelWidth
+            panelHeight: instructionPanel.panelHeight
+            anchors.horizontalCenter: instructionPanel.horizontalCenter
+            anchors.top: instructionPanel.bottom
             anchors.topMargin: GCStyle.baseMargins
-            anchors.horizontalCenter: instructionText.horizontalCenter
-            width: questionText.contentWidth + 2 * GCStyle.baseMargins
-            height: questionText.contentHeight + GCStyle.baseMargins
+            textItem.text: items.currentQuestion ? items.currentQuestion.text2 : ""
+            textItem.color: GCStyle.darkText
+            textItem.fontSize: textItem.mediumSize
             color: GCStyle.lighterBg
-            radius: GCStyle.halfMargins
-            border.width: GCStyle.thinBorder
             border.color: GCStyle.lightGrayBorder
             visible: items.score.currentSubLevel == 3 || (items.score.currentSubLevel == 2 && !items.hasAudioQuestions)
-        }
 
-        GCText {
-            id: questionText
-            anchors.top: instruction.bottom
-            anchors.horizontalCenter: instructionText.horizontalCenter
-            anchors.topMargin: GCStyle.baseMargins * 1.5
-            horizontalAlignment: Text.AlignHCenter
-            width: instructionText.width
-            height: instructionText.height
-            fontSize: mediumSize
-            fontSizeMode: Text.Fit
-            color: GCStyle.darkText
-            wrapMode: Text.Wrap
-            text: items.currentQuestion ? items.currentQuestion.text2 : ""
-            visible: question.visible
         }
 
         Score {
@@ -258,7 +231,7 @@ ActivityBase {
             id: descriptionPanel
             width: activityBackground.width
             height: activityBackground.height - bar.height * 1.2
-            z: instruction.z + 1
+            z: instructionPanel.z + 1
         }
 
         Score {
