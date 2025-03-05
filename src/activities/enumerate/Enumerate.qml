@@ -46,49 +46,27 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         //instruction rectangle
-        Rectangle {
-            id: instruction
-            anchors.horizontalCenter: instructionTxt.horizontalCenter
+        TextPanel {
+            id: instructionPanel
+            panelWidth: parent.width - 3 * GCStyle.baseMargins - answer.width
+            panelHeight: 60 * ApplicationInfo.ratio
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.horizontalCenterOffset: (answer.width + GCStyle.baseMargins) * 0.5
             anchors.top: parent.top
             anchors.topMargin: GCStyle.baseMargins
-            height: instructionTxt.contentHeight + GCStyle.baseMargins
-            width: instructionTxt.contentWidth + GCStyle.baseMargins * 2
+            textItem.text:items.instructionText
+            textItem.color: GCStyle.whiteText
             opacity: 0.9
-            visible: items.levels
-            radius: GCStyle.halfMargins
-            border.width: GCStyle.thinnestBorder
-            z: instruction.opacity === 0 ? -10 : 10
+            z: instructionPanel.opacity === 0 ? -10 : 10
             border.color: GCStyle.whiteBorder
-            color: GCStyle.darkBg
 
             Behavior on opacity { PropertyAnimation { duration: 200 } }
 
-            //shows/hides the Instruction
+            // show/hide the Instruction
             MouseArea {
                 anchors.fill: parent
-                onClicked: instruction.opacity = instruction.opacity == 0 ? 0.9 : 0
+                onClicked: instructionPanel.opacity = instructionPanel.opacity == 0 ? 0.9 : 0
             }
-        }
-
-        GCText {
-            id: instructionTxt
-            anchors {
-                top: parent.top
-                right: parent.right
-                left: answer.right
-                margins: GCStyle.baseMargins * 2
-                topMargin: GCStyle.baseMargins * 1.5
-            }
-            height: 60 * ApplicationInfo.ratio
-            opacity: instruction.opacity
-            z: instruction.z
-            fontSize: smallSize
-            fontSizeMode: Text.Fit
-            color: GCStyle.whiteText
-            text: items.instructionText
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignTop
-            wrapMode: TextEdit.WordWrap
         }
 
         QtObject {
@@ -98,7 +76,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias answerColumn: answerColumn
             property alias itemListModel: itemList.model
-            property alias instruction: instruction
+            property alias instructionPanel: instructionPanel
             property string instructionText: ""
             property alias score: score
             property alias errorRectangle: errorRectangle
@@ -152,7 +130,7 @@ ActivityBase {
             anchors.bottom: activityBackground.bottom
             width: activityBackground.width
             height: activityBackground.height
-            onEntered: instruction.opacity !== 0 ? instruction.opacity = 0 : null
+            onEntered: instructionPanel.opacity !== 0 ? instructionPanel.opacity = 0 : null
         }
 
         Image {
