@@ -154,23 +154,24 @@ ActivityBase {
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
 
-        GCText {
-            id: textMessage
+        TextPanel {
+            id: instructionPanel
             z: 20
-            color: items.isWarningMessage ? "red" : GCStyle.whiteText
+            panelWidth: parent.width - 2 * GCStyle.baseMargins
+            panelHeight: Math.min(50 * ApplicationInfo.ratio, activityBackground.height * 0.1)
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
-            width: layoutArea.width
-            fontSize: smallSize
-            text: items.message
-            horizontalAlignment: Text.AlignHCenter
-            wrapMode: TextEdit.WordWrap
+            anchors.topMargin: GCStyle.halfMargins
+            textItem.color: items.isWarningMessage ? "red" : GCStyle.lightText
+            textItem.text: items.message
+            textItem.fontSize: textItem.smallSize
         }
 
         Item {
             id: layoutArea
             width: activityBackground.width
-            anchors.top: textMessage.bottom
+            anchors.top: instructionPanel.bottom
+            anchors.topMargin: GCStyle.halfMargins
             anchors.bottom: parent.bottom
             anchors.bottomMargin: ApplicationSettings.isBarHidden ? GCStyle.baseMargins : bar.height * 1.2
         }
