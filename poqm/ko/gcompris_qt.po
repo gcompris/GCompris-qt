@@ -26011,7 +26011,7 @@ msgctxt "subtraction|"
 msgid "Solve: %1"
 msgstr ""
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:399
+#: activities/vertical_subtraction/VerticalSubtraction.qml:400
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
 msgstr ""
