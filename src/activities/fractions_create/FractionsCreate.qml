@@ -45,7 +45,7 @@ ActivityBase {
             property alias errorRectangle: errorRectangle
             property alias numberOfSubLevels: score.numberOfSubLevels
             property alias score: score
-            property alias instructionText: instructionTxt.text
+            property alias instructionItem: instructionPanel.textItem
             property alias chartItem: chartDisplay
             property alias numeratorValue: numeratorText.value
             property alias denominatorValue: denominatorText.value
@@ -84,40 +84,20 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
-        //instruction rectangle
-        Rectangle {
-            id: instruction
+        TextPanel {
+            id: instructionPanel
+            panelWidth: parent.width - 2 * GCStyle.baseMargins
+            panelHeight: Math.min(50 * ApplicationInfo.ratio, activityBackground.height * 0.2)
+            fixedHeight: true
+            anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
             anchors.topMargin: GCStyle.baseMargins
-            anchors.horizontalCenter: instructionTxt.horizontalCenter
-            width: instructionTxt.contentWidth + 2 * GCStyle.baseMargins
-            height: instructionTxt.contentHeight + GCStyle.baseMargins
-            radius: GCStyle.halfMargins
-            border.width: GCStyle.thinnestBorder
-            border.color: GCStyle.lightBorder
-            color: GCStyle.darkBg
-        }
-        //instruction for playing the game
-        GCText {
-            id: instructionTxt
-            anchors {
-                top: parent.top
-                topMargin: 1.5 * GCStyle.baseMargins
-                horizontalCenter: parent.horizontalCenter
-            }
-            fontSize: regularSize
-            fontSizeMode: Text.Fit
-            color: GCStyle.whiteText
-            horizontalAlignment: Text.AlignHCenter
-            width: parent.width - 4 * GCStyle.baseMargins
-            height: 40 * ApplicationInfo.ratio
-            wrapMode: TextEdit.WordWrap
         }
 
         Item {
             id: layoutArea
             width: parent.width - 2 * GCStyle.baseMargins
-            anchors.top: instruction.bottom
+            anchors.top: instructionPanel.bottom
             anchors.topMargin: GCStyle.baseMargins
             anchors.bottom: parent.bottom
             anchors.bottomMargin: bar.height * 1.3
