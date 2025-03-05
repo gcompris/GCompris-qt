@@ -26,6 +26,7 @@ Item {
     property alias circles: circles
     property bool clickable
     property bool isLetter: brailleChar >= 'A' && brailleChar <= 'Z'
+    property bool thinnestBorder: false
     property var brailleCodesLetter: {
         // For ASCII each letter, this represent the active dots in Braille.
         "A": [1], "B": [1, 2], "C": [1, 4], "D": [1, 4, 5], "E": [1, 5],
@@ -104,7 +105,8 @@ Item {
 
             Rectangle {
                 id: incircle1
-                border.width: GCStyle.thinBorder
+                border.width: brailleCharItem.thinnestBorder ?
+                    GCStyle.thinnestBorder : GCStyle.thinBorder
                 color: on ? GCStyle.darkText : GCStyle.lightText
                 border.color: GCStyle.darkText
                 width: dotWidth
