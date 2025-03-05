@@ -101,22 +101,15 @@ ActivityBase {
         }
 
         /* Target text */
-        Rectangle {
-            id: questionItemBackground
-            color: GCStyle.darkBg
-            radius: GCStyle.halfMargins
+        TextPanel {
+            id: instructionPanel
             z: 10
+            panelWidth: parent.width - 2 * GCStyle.baseMargins
+            panelHeight: (parent.height - zones.height) * 0.5 - GCStyle.baseMargins - GCStyle.halfMargins
+            anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
             anchors.topMargin: GCStyle.baseMargins
-            anchors.horizontalCenter: parent.horizontalCenter
-            height: questionItem.contentHeight + GCStyle.baseMargins
-            width: questionItem.contentWidth + GCStyle.baseMargins * 1
-            Behavior on height { PropertyAnimation { duration: 100 } }
-        }
-        GCText {
-            id: questionItem
-            z: 10
-            text: qsTr("Set the watch to:") + " " +
+            textItem.text: qsTr("Set the watch to:") + " " +
             //~ singular %n hour
             //~ plural %n hours
             addNbsp(qsTr("%n hour(s)", "", items.targetH)) + " " +
@@ -126,23 +119,11 @@ ActivityBase {
             //~ singular %n second
             //~ plural %n seconds
             (s.visible ? " " + addNbsp(qsTr("%n second(s)", "", items.targetS)) : "")
-            fontSize: mediumSize
-            fontSizeMode: Text.Fit
-            textFormat: Text.RichText
-            font.weight: Font.DemiBold
-            color: GCStyle.whiteText
-            horizontalAlignment: Text.AlignHCenter
-            wrapMode: Text.WordWrap
-            width: activityBackground.width - 4 * GCStyle.baseMargins
-            height: (parent.height - zones.height) * 0.5 - y - GCStyle.halfMargins
-            anchors {
-                horizontalCenter: parent.horizontalCenter
-                top: parent.top
-                margins: GCStyle.halfMargins * 3
-            }
+            textItem.fontSize: textItem.mediumSize
+
             // We don't want the wrapping to happen anywhere, set no break space
             function addNbsp(str: string): string {
-                return str.replace(" ", "&nbsp;");
+                return str.replace(" ", " "); // non-breaking space character
             }
         }
 
