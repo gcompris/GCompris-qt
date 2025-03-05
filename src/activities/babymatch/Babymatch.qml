@@ -58,7 +58,7 @@ ActivityBase {
             property alias backgroundImageSource: backgroundImageSource
             property alias backgroundImage: backgroundImage
             property alias leftWidget: leftWidget
-            property alias instruction: instruction
+            property alias instructionPanel: instructionPanel
             property alias toolTip: toolTip
             property alias score: score
             readonly property var levels: activity.datasets.length !== 0 ? activity.datasets : null
@@ -150,7 +150,7 @@ ActivityBase {
             MouseArea {
                 anchors.fill: parent
                 enabled: !items.inputLocked
-                onPressed: instruction.opacity === 0 ? instruction.show() : instruction.hide();
+                onPressed: instructionPanel.opacity === 0 ? instructionPanel.show() : instructionPanel.hide();
             }
         }
 
@@ -281,52 +281,37 @@ ActivityBase {
                 MouseArea {
                     anchors.fill: parent
                     enabled: !items.inputLocked
-                    onPressed: instruction.opacity === 0 ? instruction.show() : instruction.hide();
+                    onPressed: instructionPanel.opacity === 0 ? instructionPanel.show() : instructionPanel.hide();
                 }
             }
         }
 
-        Rectangle {
-            id: instruction
-            anchors.horizontalCenter: instructionTxt.horizontalCenter
-            anchors.verticalCenter: instructionTxt.verticalCenter
-            width: instructionTxt.width + GCStyle.baseMargins
-            height: instructionTxt.height + GCStyle.halfMargins
-            opacity: 0.8
-            radius: GCStyle.halfMargins
-            z: 3
+        TextPanel {
+            id: instructionPanel
+            z: 10
+            panelWidth: grid.width - 2 * GCStyle.baseMargins
+            panelHeight: Math.min(50 * ApplicationInfo.ratio, grid.height * 0.2)
+            fixedHeight: false
+            anchors {
+                top: activityBackground.verticalBar ? grid.top : leftWidget.bottom
+                topMargin: GCStyle.baseMargins
+                horizontalCenter: activityBackground.verticalBar ? grid.horizontalCenter : leftWidget.horizontalCenter
+            }
             color: GCStyle.paperWhite
             border.color: GCStyle.blueBorder
-            border.width: GCStyle.midBorder
-            property alias text: instructionTxt.text
+            border.width: GCStyle.thinBorder
+            textItem.color: GCStyle.darkText
 
-            Behavior on opacity { PropertyAnimation { duration: 200 } }
+            Behavior on opacity { NumberAnimation { duration: 100 } }
 
             function show() {
-                if(text)
+                if(textItem.text)
                     opacity = 1;
             }
             function hide() {
                 opacity = 0;
             }
         }
-
-        GCText {
-            id: instructionTxt
-            anchors {
-                top: activityBackground.verticalBar ? grid.top : leftWidget.bottom
-                topMargin: GCStyle.baseMargins
-                horizontalCenter: activityBackground.verticalBar ? grid.horizontalCenter : leftWidget.horizontalCenter
-            }
-            opacity: instruction.opacity
-            z: instruction.z
-            fontSize: regularSize
-            color: GCStyle.darkText
-            horizontalAlignment: Text.AlignHCenter
-            width: Math.max(Math.min(parent.width * 0.7, text.length * 10), parent.width * 0.3)
-            wrapMode: TextEdit.WordWrap
-        }
-
 
         ListModel {
             id: backgroundPiecesModel

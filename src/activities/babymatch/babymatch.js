@@ -95,15 +95,15 @@ function initLevel() {
     items.toolTip.show('');
 
     if(levelData.instruction === undefined) {
-        items.instruction.opacity = 0;
-        items.instruction.text = "";
+        items.instructionPanel.opacity = 0;
+        items.instructionPanel.textItem.text = "";
     } else if(!displayDropCircle) {
-        items.instruction.opacity = 0;
-        items.instruction.text = levelData.instruction;
+        items.instructionPanel.opacity = 0;
+        items.instructionPanel.textItem.text = levelData.instruction;
     }
     else {
-        items.instruction.opacity = 1;
-        items.instruction.text = levelData.instruction;
+        items.instructionPanel.opacity = 1;
+        items.instructionPanel.textItem.text = levelData.instruction;
     }
 	
     // Fill available pieces
@@ -184,7 +184,7 @@ function initLevel() {
 }
 
 function hideInstructions() {
-        items.instruction.opacity = 0;
+        items.instructionPanel.opacity = 0;
 }
 
 function nextSubLevel() {
