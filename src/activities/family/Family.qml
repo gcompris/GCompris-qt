@@ -57,7 +57,7 @@ ActivityBase {
             property alias ringRepeater: ringRepeater
             property alias dataset: dataset
             property string mode: activity.mode
-            property alias questionTopic: question.questionTopic
+            property alias questionTopic: instructionPanel.questionTopic
             property alias selectedPairs: selectedPairs
             property bool buttonsBlocked: false
             property point meLabelPosition: [0,0]
@@ -140,7 +140,7 @@ ActivityBase {
             id: treeArea
             anchors.fill: layoutArea
             anchors.topMargin: activity.mode == "find_relative" ?
-                questionBg.height + GCStyle.baseMargins :
+                instructionPanel.height + GCStyle.baseMargins :
                 (activityBackground.horizontalLayout ? 0 : questionArea.height)
             anchors.rightMargin: activityBackground.horizontalLayout && activity.mode == "family" ?
                 questionArea.width + GCStyle.baseMargins : 0
@@ -324,33 +324,20 @@ ActivityBase {
             }
         }
 
-        Rectangle {
-            id: questionBg
-            visible: question.visible
-            width: question.contentWidth + 2 * GCStyle.baseMargins
-            height: question.contentHeight + GCStyle.baseMargins
-            anchors.horizontalCenter: question.horizontalCenter
-            anchors.top: layoutArea.top
-            radius: GCStyle.halfMargins
-            border.width: GCStyle.thinnestBorder
-            border.color: GCStyle.blueBorder
-            color: GCStyle.lightBg
-        }
-
-        GCText {
-            id: question
+        TextPanel {
+            id: instructionPanel
             property string questionTopic
             visible: activity.mode == "find_relative" ? true : false
-            anchors.top: layoutArea.top
-            anchors.left: layoutArea.left
-            anchors.right: layoutArea.right
-            anchors.margins: GCStyle.baseMargins
-            anchors.topMargin: GCStyle.halfMargins
-            height: 40 * ApplicationInfo.ratio
-            horizontalAlignment: Text.AlignHCenter
-            wrapMode: Text.WordWrap
-            fontSize: smallSize
-            text: qsTr("Select one of the pairs corresponding to: %1").arg(questionTopic)
+            panelWidth: parent.width - 2 * GCStyle.baseMargins
+            panelHeight: Math.min(50 * ApplicationInfo.ratio, activityBackground.height * 0.2)
+            fixedHeight: true
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: parent.top
+            anchors.topMargin: GCStyle.baseMargins
+            textItem.text: qsTr("Select one of the pairs corresponding to: %1").arg(questionTopic)
+            textItem.color: GCStyle.darkText
+            color: GCStyle.lightBg
+            border.color: GCStyle.blueBorder
         }
 
         DialogHelp {
