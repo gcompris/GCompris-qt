@@ -75,10 +75,10 @@ function initSubLevel() {
     previousQuestion.denominator = items.denominatorToFind;
 
     if(items.mode === "findFraction") {
-        items.instructionText = qsTr("Find the represented fraction.");
+        items.instructionItem.text = qsTr("Find the represented fraction.");
     }
     else {
-        items.instructionText = currentSubLevel.instruction;
+        items.instructionItem.text = currentSubLevel.instruction;
     }
 
     items.chartItem.initLevel();
