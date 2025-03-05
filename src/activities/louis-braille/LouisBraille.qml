@@ -93,7 +93,7 @@ ActivityBase {
                                 anchors.centerIn: parent
                                 clickable: false
                                 brailleChar: modelData
-                                thinBorder: rect1.border.width
+                                thinnestBorder: true
                             }
                         }
 
