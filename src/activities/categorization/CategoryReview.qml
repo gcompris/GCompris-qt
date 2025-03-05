@@ -19,7 +19,6 @@ Item {
     id: rootItem
     property alias score: score
     property alias categoryDataset: categoryDataset
-    property alias instructionBox: instructionBox
     property alias categoryImage: categoryImage
     property bool isDropped: true
     property bool leftAreaContainsDrag: false
@@ -168,30 +167,23 @@ Item {
             }
         }
 
-        Rectangle {
-            id: instructionBox
-            anchors.centerIn: instructions
-            width: instructions.contentWidth + GCStyle.baseMargins * 2
-            height: instructions.contentHeight + GCStyle.baseMargins
-            color: GCStyle.darkBg
-            opacity: items.instructionsVisible ? 1 : 0
-            radius: GCStyle.halfMargins
-            border.color: GCStyle.whiteBorder
-            border.width: GCStyle.thinnestBorder
-        }
-
-        GCText {
-            id: instructions
-            text: items.mode !== "expert" && items.details && items.details[bar.level-1] && items.details[bar.level - 1].instructions ? items.details[bar.level - 1].instructions : qsTr("Place the majority category images to the right and other images to the left")
-            visible: items.instructionsVisible
+        TextPanel {
+            id: instructionPanel
+            panelWidth: Math.min(parent.width * 0.8, 400 * ApplicationInfo.ratio)
+            panelHeight: Math.min(parent.height * 0.5, 300 * ApplicationInfo.ratio)
+            anchors.horizontalCenter: parent.horizontalCenter
             anchors.centerIn: parent
-            width: Math.min(parent.width * 0.8, 400 * ApplicationInfo.ratio)
-            height: Math.min(parent.height * 0.5, 300 * ApplicationInfo.ratio)
-            fontSizeMode: Text.Fit
-            wrapMode: Text.Wrap
-            color: GCStyle.whiteText
-            verticalAlignment: Text.AlignVCenter
-            horizontalAlignment: Text.AlignHCenter
+            textItem.text: items.mode !== "expert" && items.details && items.details[bar.level-1] && items.details[bar.level - 1].instructions ? items.details[bar.level - 1].instructions : qsTr("Place the majority category images to the right and other images to the left")
+            visible: items.instructionsVisible
+            textItem.fontSize: textItem.regularSize
+
+            MouseArea {
+                anchors.fill: parent
+                enabled: instructionPanel.visible
+                onClicked: {
+                    items.instructionsVisible = false;
+                }
+            }
         }
 
         DropArea {
