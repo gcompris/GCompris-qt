@@ -29789,7 +29789,7 @@ msgctxt "subtraction|"
 msgid "Solve: %1"
 msgstr "शीर्षक"
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:399
+#: activities/vertical_subtraction/VerticalSubtraction.qml:400
 #, fuzzy
 #| msgctxt "ReadyButton|"
 #| msgid "I am Ready"

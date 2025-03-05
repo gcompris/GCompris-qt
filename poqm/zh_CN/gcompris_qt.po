@@ -25010,7 +25010,7 @@ msgctxt "subtraction|"
 msgid "Solve: %1"
 msgstr "解：%1"
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:399
+#: activities/vertical_subtraction/VerticalSubtraction.qml:400
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
 msgstr "准备就绪"
