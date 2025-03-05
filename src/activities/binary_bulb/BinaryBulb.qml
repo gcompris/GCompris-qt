@@ -115,33 +115,20 @@ ActivityBase {
             }
         }
 
-        Rectangle {
-            id: questionItemBackground
-            color: GCStyle.darkBg
-            width: questionItem.contentWidth +  2 * GCStyle.baseMargins
-            height: questionItem.contentHeight + GCStyle.baseMargins
-            anchors.centerIn: questionItem
-            radius: GCStyle.halfMargins
-        }
-
-        GCText {
-            id: questionItem
-            height: Math.min(50 * ApplicationInfo.ratio, activityBackground.height * 0.2)
+        TextPanel {
+            id: instructionPanel
+            panelWidth: parent.width - 2 * GCStyle.baseMargins
+            panelHeight: Math.min(50 * ApplicationInfo.ratio, activityBackground.height * 0.2)
+            fixedHeight: true
+            anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
-            anchors.left: parent.left
-            anchors.right: parent.right
-            anchors.margins: 2 * GCStyle.baseMargins
-            fontSizeMode: Text.Fit
-            wrapMode: Text.Wrap
-            color: GCStyle.whiteText
-            verticalAlignment: Text.AlignVCenter
-            horizontalAlignment: Text.AlignHCenter
-            text: qsTr("What is the binary representation of %1?").arg(items.numberToConvert)
+            anchors.topMargin: GCStyle.baseMargins
+            textItem.text: qsTr("What is the binary representation of %1?").arg(items.numberToConvert)
         }
 
         Row {
             id: bulbsRow
-            anchors.top: questionItemBackground.bottom
+            anchors.top: instructionPanel.bottom
             anchors.topMargin: GCStyle.baseMargins * 2
             anchors.horizontalCenter: parent.horizontalCenter
             height: activityBackground.height * 0.3
