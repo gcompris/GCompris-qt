@@ -59,7 +59,7 @@ ActivityBase {
             property alias readyButton: readyButton
             property alias errorRectangle: errorRectangle
 
-            property alias instruction: instruction
+            property alias instructionItem: instructionPanel.textItem
             property alias file: file
             property bool buttonsBlocked: false
 
@@ -98,38 +98,20 @@ ActivityBase {
             onError: (msg) => console.error("File error: " + msg)
         }
 
-        Rectangle {
-            id: instructionArea
+        TextPanel {
+            id: instructionPanel
+            panelWidth: parent.width - 2 * GCStyle.baseMargins
+            panelHeight: Math.min(50 * ApplicationInfo.ratio, activityBackground.height * 0.2)
+            fixedHeight: true
+            anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
             anchors.topMargin: GCStyle.baseMargins
-            anchors.horizontalCenter: instruction.horizontalCenter
-            width: instruction.contentWidth + 2 * GCStyle.baseMargins
-            height: instruction.contentHeight + GCStyle.baseMargins
-            radius: GCStyle.halfMargins
-            border.width: GCStyle.thinnestBorder
-            border.color: GCStyle.lightBorder
-            color: GCStyle.darkBg
-        }
-
-        GCText {
-            id: instruction
-            anchors {
-                top: parent.top
-                topMargin: 1.5 * GCStyle.baseMargins
-                horizontalCenter: parent.horizontalCenter
-            }
-            wrapMode: TextEdit.WordWrap
-            horizontalAlignment: Text.AlignHCenter
-            width: parent.width - 4 * GCStyle.baseMargins
-            height: 40 * ApplicationInfo.ratio
-            fontSize: regularSize
-            fontSizeMode: Text.Fit
-            color: GCStyle.whiteText
+            textItem.text: qsTr("What is the binary representation of %1?").arg(items.numberToConvert)
         }
 
         Item {
             id: layoutArea
-            anchors.top: instructionArea.bottom
+            anchors.top: instructionPanel.bottom
             anchors.bottom: okButton.top
             anchors.left: activityBackground.left
             anchors.right: activityBackground.right
