@@ -49,7 +49,7 @@ ActivityBase {
             property alias errorRectangle: errorRectangle
             property alias calendar: calendar
             property alias okButton: okButton
-            property alias questionItem: questionItem
+            property alias questionItem: instructionPanel.textItem
             property alias score: score
             property alias answerChoices: answerChoices
             property alias okButtonParticles: okButtonParticles
@@ -79,34 +79,14 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
-        Rectangle {
-            id: questionItemBackground
-            color: GCStyle.darkBg
-            border.width: GCStyle.thinnestBorder
-            border.color: GCStyle.lightBorder
-            radius: GCStyle.halfMargins
-            opacity: 0.85
-            anchors {
-                top: parent.top
-                topMargin: GCStyle.halfMargins
-                horizontalCenter: parent.horizontalCenter
-            }
-            width: parent.width - GCStyle.baseMargins
-            height: Math.min(parent.height * 0.1, 80 * ApplicationInfo.ratio)
-        }
-
-        // Displays the question.
-        GCText {
-            id: questionItem
-            anchors.fill: questionItemBackground
-            anchors.leftMargin: GCStyle.halfMargins
-            anchors.rightMargin: GCStyle.halfMargins
-            fontSizeMode: Text.Fit
-            minimumPointSize: 5
-            wrapMode: Text.Wrap
-            color: GCStyle.whiteText
-            verticalAlignment: Text.AlignVCenter
-            horizontalAlignment: Text.AlignHCenter
+        TextPanel {
+            id: instructionPanel
+            panelWidth: parent.width - 2 * GCStyle.baseMargins
+            panelHeight: Math.min(80 * ApplicationInfo.ratio, activityBackground.height * 0.1)
+            fixedHeight: true
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: parent.top
+            anchors.topMargin: GCStyle.baseMargins
         }
 
         ListModel {
@@ -124,7 +104,7 @@ ActivityBase {
         GridView {
             id: answerChoices
             model: daysOfTheWeekModel
-            anchors.top: questionItemBackground.bottom
+            anchors.top: instructionPanel.bottom
             anchors.left: parent.left
             anchors.bottom: bar.top
             anchors.margins: GCStyle.halfMargins
@@ -194,7 +174,7 @@ ActivityBase {
         Rectangle {
             id: calendarBox
             anchors {
-                top: questionItemBackground.bottom
+                top: instructionPanel.bottom
                 left: answerChoices.right
                 right: parent.right
                 topMargin: GCStyle.halfMargins
@@ -204,8 +184,8 @@ ActivityBase {
                     0 : 7 * GCStyle.halfMargins
             }
             height: items.horizontalLayout ?
-                (parent.height - questionItemBackground.height - GCStyle.baseMargins * 2 - bar.height - okButton.height) :
-                Math.min(parent.width, parent.height - questionItemBackground.height - GCStyle.baseMargins * 4 - bar.height - okButton.height)
+                (parent.height - instructionPanel.height - GCStyle.baseMargins * 2 - bar.height - okButton.height) :
+                Math.min(parent.width, parent.height - instructionPanel.height - GCStyle.baseMargins * 4 - bar.height - okButton.height)
             color: GCStyle.darkBg
             opacity: 0.3
         }
