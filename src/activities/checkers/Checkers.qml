@@ -86,22 +86,23 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/sounds/scroll.wav"
         }
 
-        GCText {
-            id: textMessage
+        TextPanel {
+            id: instructionPanel
             z: 20
-            color: GCStyle.whiteText
+            panelWidth: parent.width - 2 * GCStyle.baseMargins
+            panelHeight: Math.min(50 * ApplicationInfo.ratio, activityBackground.height * 0.1)
             anchors.horizontalCenter: parent.horizontalCenter
-            width: parent.width
-            fontSize: smallSize
-            text: items.message
-            horizontalAlignment: Text.AlignHCenter
-            wrapMode: TextEdit.WordWrap
+            anchors.top: parent.top
+            anchors.topMargin: GCStyle.halfMargins
+            textItem.text: items.message
+            textItem.fontSize: textItem.smallSize
         }
 
         Item {
             id: layoutArea
             width: activityBackground.width
-            anchors.top: textMessage.bottom
+            anchors.top: instructionPanel.bottom
+            anchors.topMargin: GCStyle.halfMargins
             anchors.bottom: parent.bottom
             anchors.bottomMargin: ApplicationSettings.isBarHidden ? GCStyle.baseMargins : bar.height * 1.2
         }
