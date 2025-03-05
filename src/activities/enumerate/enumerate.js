@@ -58,7 +58,7 @@ function stop() {
 function initLevel() {
     if(items.levels) {
         items.instructionText = items.levels[items.currentLevel].objective;
-        items.instruction.opacity = 0.9;
+        items.instructionPanel.opacity = 0.9;
     }
     items.score.currentSubLevel = 0;
     numberOfItemType = dataset[items.currentLevel].numberOfItemType;
