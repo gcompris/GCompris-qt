@@ -115,47 +115,25 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
-        //instruction rectangle
-        Rectangle {
-            id: instruction
-            anchors {
-                top: parent.top
-                topMargin: GCStyle.halfMargins
-                horizontalCenter: parent.horizontalCenter
-            }
-            height: instructionTxt.contentHeight + GCStyle.baseMargins
-            width: instructionTxt.contentWidth + 2 * GCStyle.baseMargins
+        TextPanel {
+            id: instructionPanel
+            z: 10
             visible: items.levels
             opacity: items.instructionHidden ? 0 : 1
-            radius: GCStyle.halfMargins
-            border.width: GCStyle.thinnestBorder
-            z: 10
-            border.color: GCStyle.lightBorder
-            color: GCStyle.darkBg
+            panelWidth: parent.width - 2 * GCStyle.baseMargins
+            panelHeight: Math.min(50 * ApplicationInfo.ratio, activityBackground.height * 0.2)
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: parent.top
+            anchors.topMargin: GCStyle.baseMargins
+            textItem.text: items.instructionText
+            textItem.fontSize: textItem.smallSize
 
-            Behavior on opacity { PropertyAnimation { duration: 200 } }
+            Behavior on opacity { PropertyAnimation { duration: 100 } }
 
             //shows/hides the Instruction
             MouseArea {
                 anchors.fill: parent
                 onClicked: items.instructionHidden = !items.instructionHidden
-            }
-
-            GCText {
-                id: instructionTxt
-                anchors {
-                    top: parent.top
-                    topMargin: GCStyle.halfMargins
-                    horizontalCenter: parent.horizontalCenter
-                }
-                fontSize: mediumSize
-                fontSizeMode: Text.Fit
-                color: GCStyle.whiteText
-                text: items.instructionText
-                horizontalAlignment: Text.AlignHCenter
-                width: activityBackground.width - 4 * GCStyle.baseMargins
-                height: 40 * ApplicationInfo.ratio
-                wrapMode: TextEdit.WordWrap
             }
         }
 
