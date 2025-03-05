@@ -232,7 +232,7 @@ function checkResult() {
 function initLevel() {
     items.buttonsBlocked = false;
     numberOfLevel = items.levels.length;
-    items.instruction.text = items.levels[items.currentLevel].title;
+    items.instructionItem.text = items.levels[items.currentLevel].title;
     items.subLevelCount = items.levels[items.currentLevel].subLevels.length;
     if (items.levels[items.currentLevel].shuffle)
         Core.shuffle(items.levels[items.currentLevel].subLevels);
