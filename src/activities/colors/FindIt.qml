@@ -111,21 +111,21 @@ ActivityBase {
             id: containerModel
         }
 
-        Rectangle {
-            id: questionItem
+        TextPanel {
+            id: instructionPanel
+            panelWidth: parent.width - 2 * GCStyle.baseMargins
+            panelHeight: Math.min(50 * ApplicationInfo.ratio, activityBackground.height * 0.2)
+            fixedHeight: true
+            anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
             anchors.topMargin: GCStyle.baseMargins
-            anchors.horizontalCenter: parent.horizontalCenter
-            width: questionText.contentWidth + 2 * GCStyle.baseMargins
-            height: questionText.contentHeight + GCStyle.halfMargins
-            radius: GCStyle.halfMargins
-            color: GCStyle.paperWhite
-            border.color: GCStyle.darkBorder
-            border.width: GCStyle.thinBorder
-            opacity: 0
+            color: GCStyle.lightBg
+            border.color: GCStyle.darkBg
+            textItem.color: GCStyle.darkText
+            textItem.fontSize: textItem.largeSize
 
             function initQuestion() {
-                questionText.text = Activity.getCurrentTextQuestion()
+                textItem.text = Activity.getCurrentTextQuestion()
                 if(Activity.getCurrentAudioQuestion()) {
                     if(items.firstQuestion) {
                         items.audioOk = activity.audioVoices.append(Activity.getCurrentAudioQuestion())
@@ -142,37 +142,27 @@ ActivityBase {
                 id: initAnim
                 PauseAnimation { duration: 50 }
                 ScriptAction { script: if(!items.modelCopied)
-                                            Activity.tempModelToContainer()
+                    Activity.tempModelToContainer()
                 }
-                ScriptAction { script: questionItem.initQuestion() }
-                NumberAnimation { target: questionItem; property: "opacity"; to: 1; duration: 300 }
+                ScriptAction { script: instructionPanel.initQuestion() }
+                NumberAnimation { target: instructionPanel; property: "opacity"; to: 1; duration: 300 }
             }
 
             // fade-out anim only before bonus start
-            NumberAnimation { id: fadeOutAnim; target: questionItem; property: "opacity"; to: 0; duration: 300 }
+            NumberAnimation { id: fadeOutAnim; target: instructionPanel; property: "opacity"; to: 0; duration: 300 }
 
             // fade-out + init sequence after first question of a level
             SequentialAnimation {
                 id: nextAnim
-                NumberAnimation { target: questionItem; property: "opacity"; to: 0; duration: 300 }
+                NumberAnimation { target: instructionPanel; property: "opacity"; to: 0; duration: 300 }
                 ScriptAction { script: initAnim.restart() }
             }
 
-            GCText {
-                id: questionText
-                anchors.centerIn: parent
-                fontSize: largeSize
-                width: activityBackground.width - GCStyle.baseMargins * 4
-                horizontalAlignment: Text.AlignHCenter
-                wrapMode: Text.WordWrap
-                font.weight: Font.DemiBold
-                color: GCStyle.darkText
-            }
         }
 
         Item {
             id: containerArea
-            anchors.top: questionItem.bottom
+            anchors.top: instructionPanel.bottom
             anchors.topMargin: GCStyle.baseMargins
             anchors.bottom: score.top
             anchors.horizontalCenter: activityBackground.horizontalCenter
@@ -251,7 +241,7 @@ ActivityBase {
                 margins: GCStyle.baseMargins
             }
             onClicked: if (!activity.audioVoices.isPlaying() && !items.objectSelected)
-                           questionItem.initQuestion()
+                           instructionPanel.initQuestion()
         }
 
         Score {
