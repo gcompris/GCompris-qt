@@ -6,6 +6,8 @@
  */
 
 import QtQuick
+import core 1.0
+
 import "../../core"
 
 Item {

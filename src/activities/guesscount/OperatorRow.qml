@@ -11,6 +11,8 @@
 
 
 import QtQuick 2.12
+import core 1.0
+
 import "../../core"
 
 Row {

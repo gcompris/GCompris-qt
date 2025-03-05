@@ -9,6 +9,8 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
+import core 1.0
+
 import "../../core"
 import "magic-hat.js" as Activity
 

@@ -6,8 +6,9 @@
  */
 
 import QtQuick
-import "../../core"
+import core 1.0
 
+import "../../core"
 import "sketch.js" as Activity
 
 FoldablePanel {
