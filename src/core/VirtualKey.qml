@@ -45,9 +45,12 @@ Item {
         }
         contentItem: Item {
             GCText {
-                anchors.centerIn: parent
+                anchors.fill: parent
                 text: button.text
                 fontSize: 20
+                fontSizeMode: Text.Fit
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
                 font.bold: false
                 color: GCStyle.darkerText
             }

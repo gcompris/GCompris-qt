@@ -154,16 +154,16 @@ Item {
     /**
      * type:int
      * Vertical spacing between rows in pixel.
-     * Default: 5 * ApplicationInfo.ratio
+     * Default: GCStyle.tinyMargins
      */
-    property int rowSpacing: 5 * ApplicationInfo.ratio
+    property int rowSpacing: GCStyle.tinyMargins
 
     /**
      * type:int
      * Horizontal spacing between keys in pixel.
      * Default: 3 * ApplicationInfo.ratio
      */
-    property int keySpacing: 3 * ApplicationInfo.ratio
+    property int keySpacing: GCStyle.tinyMargins
 
     /**
      * type:int
@@ -175,9 +175,9 @@ Item {
     /**
      * type:int
      * Margin around the keyboard in pixel.
-     * Default: 5 * ApplicationInfo.ratio
+     * Default: GCStyle.halfMargins
      */
-    property int margin: 5 * ApplicationInfo.ratio
+    property int margin: GCStyle.halfMargins
 
     /**
      * type:bool
@@ -222,7 +222,7 @@ Item {
         id: priv
 
         readonly property int cHeight: numRows * keyboard.keyHeight +
-                                       (numRows + 1) * keyboard.rowSpacing
+                                       (numRows - 1) * keyboard.rowSpacing + 2 * keyboard.margin
         property int numRows: 0
         property bool initialized: false
     }
@@ -304,12 +304,8 @@ Item {
         ListView {
             id: rowList
 
-            anchors.top: parent.top
-            anchors.topMargin: keyboard.margin
-            anchors.left: parent.left
+            anchors.fill: parent
             anchors.margins: keyboard.margin
-            width: parent.width
-            height: parent.height - keyboard.margin * 2
             spacing: keyboard.rowSpacing
             orientation: Qt.Vertical
             verticalLayoutDirection: ListView.TopToBottom
@@ -350,12 +346,6 @@ Item {
 
                         z: rowListDelegate.ListView.isCurrentItem ? 1 : -1
 
-                        Item {
-                            id: keyboardRowSpacing
-                            width: offset / 2;
-                            height: keyboard.keyHeight
-                        }
-
                         Repeater {
                             id: keyboardRowRepeater
 
@@ -363,9 +353,7 @@ Item {
 
                             model: keys
                             delegate: VirtualKey {
-                                width: (keyboard.width - keyboardRowRepeater.count *
-                                        keyboardRow.spacing - offset - keyboard.margin*2) /
-                                       keyboardRowRepeater.count
+                                width: keyboardRow.width / keyboardRowRepeater.count - keyboard.keySpacing
                                 height: keyboard.keyHeight
                                 modifiers: keyboard.modifiers
                                 specialKey: specialKeyValue
