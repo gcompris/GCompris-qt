@@ -139,7 +139,7 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
-        TextPanel {
+        GCTextPanel {
             id: instructionPanel
             panelWidth: parent.width - 3 * GCStyle.baseMargins - score.width
             panelHeight: 50 * ApplicationInfo.ratio
@@ -155,7 +155,7 @@ ActivityBase {
             textItem.fontSize: textItem.mediumSize
         }
 
-        TextPanel {
+        GCTextPanel {
             id: questionPanel
             panelWidth: instructionPanel.panelWidth
             panelHeight: instructionPanel.panelHeight

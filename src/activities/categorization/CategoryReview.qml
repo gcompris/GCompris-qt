@@ -167,7 +167,7 @@ Item {
             }
         }
 
-        TextPanel {
+        GCTextPanel {
             id: instructionPanel
             panelWidth: Math.min(parent.width * 0.8, 400 * ApplicationInfo.ratio)
             panelHeight: Math.min(parent.height * 0.5, 300 * ApplicationInfo.ratio)

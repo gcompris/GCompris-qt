@@ -86,7 +86,7 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/sounds/scroll.wav"
         }
 
-        TextPanel {
+        GCTextPanel {
             id: instructionPanel
             z: 20
             panelWidth: parent.width - 2 * GCStyle.baseMargins

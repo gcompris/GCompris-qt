@@ -115,7 +115,7 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
-        TextPanel {
+        GCTextPanel {
             id: instructionPanel
             z: 10
             visible: items.levels

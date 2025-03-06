@@ -324,7 +324,7 @@ ActivityBase {
             }
         }
 
-        TextPanel {
+        GCTextPanel {
             id: instructionPanel
             property string questionTopic
             visible: activity.mode == "find_relative" ? true : false
