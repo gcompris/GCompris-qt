@@ -1,10 +1,12 @@
 /* GCompris - CellDelegate.qml
 *
 * SPDX-FileCopyrightText: 2014 Manuel Tondeur <manueltondeur@gmail.com>
+* SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
 *
 * Authors:
 *   Joe Neeman (spuzzzzzzz@gmail.com) (GTK+ version)
 *   Manuel Tondeur <manueltondeur@gmail.com> (Qt Quick port)
+*   Timothée Giet <animtim@gmail.com> (refactoring)
 *
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
@@ -15,53 +17,38 @@ import "../../core"
 import "gnumch-equality.js" as Activity
 
 Item {
-    property Component delegate: cellDelegate
+    id: cellDelegate
 
-    Component {
-        id: cellDelegate
-        Item {
-            id: cellRectangle
+    required property string number1
+    required property string number2
+    required property string operator
+    required property bool show
 
-            property string num1: number1
-            property string num2: number2
-            property string operator: Activity.operator
-
-            function setText() {
-                if (activity.type == "equality" || activity.type == "inequality") {
-
-                } else if (activity.type == "primes" ||
-                           activity.type == "factors"||
-                           activity.type == "multiples") {
-                    num2 = ""
-                    operator = ""
-                }
-            }
-
-            width: grid.cellWidth
-            height: grid.cellHeight
-            focus: false
-            Component.onCompleted: setText()
-
-            GCText {
-                id: numberText
-
-                anchors.fill: parent
-                anchors.margins: ApplicationInfo.ratio * 5
-
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                style: Text.Outline
-                styleColor: "white"
-                visible: show
-                color: "#373737"
-
-                fontSizeMode: Text.Fit
-                minimumPointSize: 7
-                fontSize: 28
-                maximumLineCount: 1
-
-                text: num1 + operator + num2
-            }
+    function setText() {
+        if (activity.type == "primes" || activity.type == "factors"|| activity.type == "multiples") {
+            number2 = ""
+            operator = ""
         }
+    }
+
+    focus: false
+    Component.onCompleted: setText()
+
+    GCText {
+        id: numberText
+
+        anchors.fill: parent
+        anchors.margins: GCStyle.halfMargins
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
+        style: Text.Outline
+        styleColor: GCStyle.whiteBorder
+        visible: cellDelegate.show
+        color: GCStyle.darkText
+        fontSizeMode: Text.Fit
+        minimumPointSize: 7
+        fontSize: 28
+        maximumLineCount: 1
+        text: cellDelegate.number1 + cellDelegate.operator + cellDelegate.number2
     }
 }

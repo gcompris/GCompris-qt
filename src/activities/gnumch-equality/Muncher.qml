@@ -1,37 +1,23 @@
 /* GCompris - Muncher.qml
 *
 * SPDX-FileCopyrightText: 2014 Manuel Tondeur <manueltondeur@gmail.com>
+* SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
 *
 * Authors:
 *   Joe Neeman (spuzzzzzzz@gmail.com) (GTK+ version)
 *   Manuel Tondeur <manueltondeur@gmail.com> (Qt Quick port)
+*   Timothée Giet <animtim@gmail.com> (refactoring)
 *
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
 import QtQuick 2.12
 import core 1.0
-
+import "gnumch-equality.js" as Activity
 
 Creature {
-    function getCaught(index: int) {
-        if (!movable) {
-            return
-        }
-
-        caughted = true
-
-        opacity = 0
-        warningRect.setFault(index)
-        warningRect.opacity = 1
-
-        spawningMonsters.stop()
-        monsters.setMovable(false)
-        if (topPanel.life.opacity != 1) {
-            bonus.bad("gnu")
-        }
-    }
-
-    property bool caughted: false
+    id: creature
+    property bool caught: false
+    required property bool life
 
     monsterType: "muncher"
     frames: 4
@@ -40,25 +26,18 @@ Creature {
     Drag.hotSpot.y: height / 2
     movable: opacity == 1
 
-    onMovingOnChanged: {
-        if (movingOn == false && caughted) {
-            init()
-            caughted = false
-        }
-    }
-
     onIndexChanged: {
         if(opacity == 1)
             items.smudgeSound.play()
 
-        if (monsters.isThereAMonster(index)) {
-            getCaught(-1)
+        if(Activity.isThereAMonster(index)) {
+            Activity.playerGotCaught(-1)
         }
     }
 
     onOpacityChanged: {
-        if (opacity == 0) {
-            init()
+        if(opacity == 0) {
+            creature.init()
         }
     }
 }

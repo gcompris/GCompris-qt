@@ -16,8 +16,8 @@ Monster {
     frames: 3
 
     onMovingOnChanged: {
-        if (movingOn == false && opacity == 1) {
-            if (Math.random() > 0.5) {
+        if(movingOn == false && opacity == 1) {
+            if(Math.random() > 0.5) {
                 direction = Math.floor(Math.random()*4)
             }
             modelCells.regenCell(index)

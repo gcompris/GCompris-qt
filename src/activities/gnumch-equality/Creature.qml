@@ -1,10 +1,12 @@
 /* GCompris - Creature.qml
 *
 * SPDX-FileCopyrightText: 2014 Manuel Tondeur <manueltondeur@gmail.com>
+* SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
 *
 * Authors:
 *   Joe Neeman (spuzzzzzzz@gmail.com) (GTK+ version)
 *   Manuel Tondeur <manueltondeur@gmail.com> (Qt Quick port)
+*   Timothée Giet <animtim@gmail.com> (refactoring)
 *
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
@@ -14,7 +16,6 @@ import "../../core"
 
 Item {
     id: creature
-
     property int index
     property string monsterType
     property bool movable
@@ -41,9 +42,7 @@ Item {
     }
 
     function init() {
-        index = 0
-        x = 0
-        y = 0
+        index = 0;
     }
 
     function hasReachLimit(direction: int): bool {
@@ -73,22 +72,12 @@ Item {
         var vertical = Math.floor(direction / 2)
         var sign = Math.pow(-1, (direction))
         index += sign * (1 + 5 * vertical)
-        var restIndex = index % 6
-        y = Math.floor(((index - restIndex) / 6) * grid.cellHeight)
-        x = Math.floor(restIndex * grid.cellWidth)
     }
 
-    function updatePosition() {
-        var restIndex = index % 6
-        y = Math.floor(((index - restIndex) / 6) * grid.cellHeight)
-        x = Math.floor(restIndex * grid.cellWidth)
-    }
-
-    index: 0
     z: 0
     movable: true
-    width: grid.cellWidth
-    height: grid.cellHeight
+    x: width * (index % 6)
+    y: height * Math.floor(index / 6)
 
     onEatingChanged: {
         if (eating == true) {
@@ -103,8 +92,7 @@ Item {
 
         property int turn: 0
 
-        anchors.horizontalCenter: parent.horizontalCenter
-        anchors.verticalCenter: parent.verticalCenter
+        anchors.centerIn: parent
         width: Math.min(parent.width, parent.height)
         height: width
         source: "qrc:/gcompris/src/activities/gnumch-equality/resource/"
