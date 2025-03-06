@@ -115,7 +115,7 @@ ActivityBase {
             }
         }
 
-        TextPanel {
+        GCTextPanel {
             id: instructionPanel
             panelWidth: parent.width - 2 * GCStyle.baseMargins
             panelHeight: Math.min(50 * ApplicationInfo.ratio, activityBackground.height * 0.2)

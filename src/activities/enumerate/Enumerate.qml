@@ -46,7 +46,7 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         //instruction rectangle
-        TextPanel {
+        GCTextPanel {
             id: instructionPanel
             panelWidth: parent.width - 3 * GCStyle.baseMargins - answer.width
             panelHeight: 60 * ApplicationInfo.ratio

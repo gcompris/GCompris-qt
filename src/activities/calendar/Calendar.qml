@@ -79,7 +79,7 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
-        TextPanel {
+        GCTextPanel {
             id: instructionPanel
             panelWidth: parent.width - 2 * GCStyle.baseMargins
             panelHeight: Math.min(80 * ApplicationInfo.ratio, activityBackground.height * 0.1)

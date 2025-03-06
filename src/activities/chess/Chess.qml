@@ -154,7 +154,7 @@ ActivityBase {
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
 
-        TextPanel {
+        GCTextPanel {
             id: instructionPanel
             z: 20
             panelWidth: parent.width - 2 * GCStyle.baseMargins

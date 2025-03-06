@@ -286,7 +286,7 @@ ActivityBase {
             }
         }
 
-        TextPanel {
+        GCTextPanel {
             id: instructionPanel
             z: 10
             panelWidth: grid.width - 2 * GCStyle.baseMargins
