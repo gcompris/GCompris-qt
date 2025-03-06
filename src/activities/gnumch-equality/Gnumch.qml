@@ -1,10 +1,12 @@
 /* GCompris - Gnumch.qml
 *
 * SPDX-FileCopyrightText: 2014 Manuel Tondeur <manueltondeur@gmail.com>
+* SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
 *
 * Authors:
 *   Joe Neeman (spuzzzzzzz@gmail.com) (GTK+ version)
 *   Manuel Tondeur <manueltondeur@gmail.com> (Qt Quick port)
+*   Timothée Giet <animtim@gmail.com> (refactoring)
 *
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
@@ -17,7 +19,7 @@ import "gnumch-equality.js" as Activity
 ActivityBase {
     id: activity
 
-    property string type
+    property string type: ""
     property bool useMultipleDataset: false
 
     focus: true
@@ -29,68 +31,6 @@ ActivityBase {
         id: activityBackground
         anchors.fill: parent
         source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
-        property bool withMonsters: false
-
-        function checkAnswer() {
-            if (!muncher.movable)
-                return
-
-            // Case already discovered
-            if (!modelCells.get(muncher.index).show) {
-                return
-            }
-
-            muncher.eating = true
-            // Set the cell invisible if it's the correct answer.
-            if (Activity.isAnswerCorrect(muncher.index)) {
-                modelCells.get(muncher.index).show = false
-                if (gridPart.isLevelDone()) {
-                    stopLevel();
-                }
-            } else {
-                modelCells.get(muncher.index).show = false
-                muncher.getCaught(muncher.index)
-            }
-        }
-
-        function nextLevel() {
-            Activity.nextLevel();
-            initLevel();
-        }
-
-        function previousLevel() {
-            Activity.previousLevel();
-            initLevel();
-        }
-
-        function initLevel() {
-            topPanel.life.opacity = 1;
-            forceActiveFocus();
-            Activity.initLevel();
-            items.operator = Activity.operator;
-            topPanel.goal = Activity.getGoal();
-            stopLevel();
-
-            if(useMultipleDataset) {
-                if(items.levels[items.currentLevel].spawnMonsters) {
-                    withMonsters = true;
-                    spawningMonsters.restart();
-                }
-            }
-            else if (items.currentLevel !== 0) {
-                withMonsters = true;
-                spawningMonsters.restart();
-            }
-            else {
-                withMonsters = false;
-            }
-        }
-
-        function stopLevel() {
-            monsters.destroyAll();
-            spawningMonsters.stop();
-            timerActivateWarn.stop();
-        }
 
         signal start
         signal stop
@@ -107,20 +47,23 @@ ActivityBase {
             property alias modelCells: modelCells
             property alias bonus: bonus
             property int currentLevel: activity.currentLevel
-            property string operator
             property alias eatSound: eatSound
             property alias smudgeSound: smudgeSound
+            property int goal: 1
+            property bool life: true
+            property bool withMonsters: false
+            property alias muncher: muncher
+            property alias gridPart: gridPart
+            property alias warning: warning
+            property alias monsters: monsters
+            property alias spawningMonsters: spawningMonsters
+            property alias timerActivateWarn: timerActivateWarn
         }
 
         onStart: {
-            Activity.start(items, type, useMultipleDataset);
-            initLevel();
+            Activity.start(items, activity.type, activity.useMultipleDataset);
         }
         onStop: {
-            spawningMonsters.stop()
-            positionTimer.stop()
-            timerActivateWarn.stop()
-            monsters.destroyAll()
             Activity.stop()
         }
 
@@ -131,22 +74,12 @@ ActivityBase {
         Keys.onUpPressed: muncher.moveTo(muncher.moveUp)
 
         Keys.onSpacePressed: {
-            checkAnswer()
+            Activity.checkAnswer()
         }
 
         Keys.onReturnPressed: {
-            warningRect.hideWarning()
+            Activity.hideWarning()
         }
-
-        // Debug utility.
-//        Keys.onAsteriskPressed: {
-//            nextLevel()
-//        }
-
-        onWidthChanged: {
-            positionTimer.restart()
-        }
-
 
         GCSoundEffect {
             id: eatSound
@@ -158,33 +91,11 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/sounds/smudge.wav"
         }
 
-        Timer {
-            id: positionTimer
-
-            interval: 100
-
-            onTriggered: {
-                muncher.updatePosition()
-                var children = monsters.children
-                for (var it = 0; it < children.length; it++) {
-                    children[it].updatePosition()
-                }
-            }
-        }
-
-        Connections {
-            target: warningRect.mArea
-            function onClicked(event) { warningRect.hideWarning() }
-        }
-
         Item {
             id: gridPart
-
-            width: activityBackground.width
-            height: activityBackground.height / 7 * 6
-            anchors.right: parent.right
-            anchors.top: parent.top
-            anchors.bottom: topPanel.top
+            anchors.fill: parent
+            anchors.margins: GCStyle.baseMargins
+            anchors.bottomMargin: bar.height * 1.2
 
             function isLevelDone() {
                 for (var it = 0; it < modelCells.count; it++) {
@@ -218,20 +129,20 @@ ActivityBase {
                     // Find the direction with the most move
                     if(Math.abs(moveX) * ApplicationInfo.ratio > 10 &&
                             Math.abs(moveX) > Math.abs(moveY)) {
-                        if(moveX > 10 * ApplicationInfo.ratio)
+                        if(moveX > GCStyle.baseMargins)
                             muncher.moveTo(muncher.moveRight)
-                        else if(moveX < -10 * ApplicationInfo.ratio)
+                        else if(moveX < -GCStyle.baseMargins)
                             muncher.moveTo(muncher.moveLeft)
                         else
-                            activityBackground.checkAnswer()
+                            Activity.checkAnswer()
                     } else if(Math.abs(moveY) * ApplicationInfo.ratio > 10 &&
                               Math.abs(moveX) < Math.abs(moveY)) {
-                        if(moveY > 10 * ApplicationInfo.ratio)
+                        if(moveY > GCStyle.baseMargins)
                             muncher.moveTo(muncher.moveDown)
-                        else if(moveY < -10 * ApplicationInfo.ratio)
+                        else if(moveY < -GCStyle.baseMargins)
                             muncher.moveTo(muncher.moveUp)
                         else
-                            activityBackground.checkAnswer()
+                            Activity.checkAnswer()
                     } else {
                         // No move, just a tap or mouse click
                         if(point1.x > muncher.x + muncher.width)
@@ -243,7 +154,7 @@ ActivityBase {
                         else if(point1.y > muncher.y + muncher.height)
                             muncher.moveTo(muncher.moveDown)
                         else
-                            activityBackground.checkAnswer()
+                            Activity.checkAnswer()
                     }
                     started = false
                 }
@@ -251,127 +162,79 @@ ActivityBase {
 
             GridView {
                 id: gridBackground
-
                 anchors.fill: parent
-                cellHeight: (parent.height - 2) / 6
-                cellWidth: (parent.width - 2) / 6
+                cellHeight: parent.height / 7 // add one line for the bottom panel
+                cellWidth: parent.width / 6
                 interactive: false
                 focus: false
-
                 model: modelCells
                 delegate: Rectangle {
                     width: gridBackground.cellWidth
                     height: gridBackground.cellHeight
-                    border.color: "#373737"
-                    border.width: 2
-                    radius: 5
+                    border.color: GCStyle.darkBorder
+                    border.width: GCStyle.thinnestBorder
+                    radius: GCStyle.tinyMargins
                     color: "#80ffffff"
                 }
             }
 
             Muncher {
                 id: muncher
+                life: items.life
+                width: gridBackground.cellWidth
+                height: gridBackground.cellHeight
             }
 
             Item {
                 id: monsters
-
-                function setMovable(movable: bool) {
-                    var children = monsters.children
-                    for (var it = 0; it < children.length; it++) {
-                        children[it].movable = movable
-                    }
-                }
-
-                function destroyAll() {
-                    var children = monsters.children
-                    for (var it = 0; it < children.length; it++) {
-                        children[it].destroy()
-                    }
-                }
-
-                function isThereAMonster(position: int): bool {
-                    var children = monsters.children
-                    for (var it = 0; it < children.length; it++) {
-                        if (children[it].index === position) {
-                            children[it].eating = true
-                            return true
-                        }
-                    }
-                    return false
-                }
-
-                function checkOtherMonster(position: int) {
-                    var children = monsters.children
-                    var count = 0
-                    for (var it = 0; it < children.length; it++) {
-                        if (children[it].index === position
-                                && !children[it].movingOn) {
-                            count++
-                            if (count > 1) {
-                                children[it].opacity = 0
-                            }
-                        }
-                    }
-                }
             }
 
             Timer {
                 id: spawningMonsters
-
                 interval: Activity.genTime()
                 running: false
                 repeat: true
-
                 onTriggered: {
                     interval = Activity.genTime()
-                    timerActivateWarn.start()
+                    timerActivateWarn.restart()
                     var comp = Qt.createComponent("qrc:/gcompris/src/activities/gnumch-equality/" +
-                                                  Activity.genMonster(
-                                                      ) + ".qml")
+                                Activity.genMonster() + ".qml")
                     if (comp.status === Component.Ready) {
                         var direction = Math.floor(Math.random() * 4)
-                        var result = Activity.genPosition(direction,
-                                                          grid.cellWidth,
-                                                          grid.cellHeight)
-                        var reggie = comp.createObject(monsters, {
+                        var result = Activity.genPosition(direction)
+                        var monster = comp.createObject(monsters, {
                                                            direction: direction,
-                                                           player: muncher,
-                                                           index: result[0],
-                                                           x: result[1],
-                                                           y: result[2]
+                                                           index: result,
+                                                           width: gridBackground.cellWidth,
+                                                           height: gridBackground.cellHeight
                                                        })
-                        reggie.opacity = 1
+                        monster.opacity = 1
                     }
                 }
             }
 
             Timer {
                 id: timerActivateWarn
-
                 interval: spawningMonsters.interval - 2000
                 running: spawningMonsters.running
-
                 onTriggered: {
                     warnMonsters.opacity = 1
                 }
             }
 
             GridView {
-                id: grid
-
+                id: gridNumbers
                 anchors.fill: parent
-                cellHeight: (parent.height - 2) / 6
-                cellWidth: (parent.width - 2) / 6
+                cellHeight: gridBackground.cellHeight
+                cellWidth: gridBackground.cellWidth
                 interactive: false
                 focus: false
-
                 model: modelCells
-                delegate: gridDelegate.delegate
-            }
-
-            CellDelegate {
-                id: gridDelegate
+                delegate: CellDelegate {
+                    operator: Activity.operator
+                    width: gridBackground.cellWidth
+                    height: gridBackground.cellHeight
+                }
             }
 
             ListModel {
@@ -380,16 +243,16 @@ ActivityBase {
                 function regenCell(position: int) {
                     if (type === "equality" || type === "inequality") {
                         var terms
-                        if (items.operator === " + ") {
+                        if (Activity.operator === " + ") {
                             terms = Activity.splitPlusNumber(
                                         Activity.genNumber())
-                        } else if (items.operator === " - ") {
+                        } else if (Activity.operator === " - ") {
                             terms = Activity.splitMinusNumber(
                                         Activity.genNumber())
-                        } else if (items.operator === " * ") {
+                        } else if (Activity.operator === " * ") {
                             terms = Activity.splitMultiplicationNumber(
                                         Activity.genNumber())
-                        } else if (items.operator === " / ") {
+                        } else if (Activity.operator === " / ") {
                             terms = Activity.splitDivisionNumber(
                                         Activity.genNumber())
                         }
@@ -405,6 +268,35 @@ ActivityBase {
                     gridPart.isLevelDone()
                 }
             }
+
+            TopPanel {
+                anchors.bottom: parent.bottom
+                anchors.left: parent.left
+                anchors.right: parent.right
+                height: gridBackground.cellHeight
+                activityType: activity.type
+                goal: items.goal
+                life: items.life
+            }
+
+            Warning {
+                id: warning
+                anchors.centerIn: gridBackground
+            }
+
+        }
+
+        Bar {
+            id: bar
+            level: items.currentLevel + 1
+            content: BarEnumContent {
+                value: (activity.useMultipleDataset) ? (help | home | level | activityConfig) : (help | home | level)
+            }
+            onHelpClicked: displayDialog(dialogHelp)
+            onPreviousLevelClicked: Activity.previousLevel()
+            onNextLevelClicked: Activity.nextLevel()
+            onHomeClicked: activity.home()
+            onActivityConfigClicked: displayDialog(dialogActivityConfig)
         }
 
         DialogChooseLevel {
@@ -426,13 +318,13 @@ ActivityBase {
             }
         }
 
-        TopPanel {
-            id: topPanel
-            goal: Activity.getGoal()
-        }
-
         WarnMonster {
             id: warnMonsters
+            z: 1000
+            anchors.top: gridPart.bottom
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: gridPart.width
+            height: gridBackground.cellHeight
         }
 
         DialogHelp {
@@ -440,16 +332,11 @@ ActivityBase {
             onClose: home()
         }
 
-        Warning {
-            id: warningRect
-        }
-
         Bonus {
             id: bonus
-
-            onStop: {
-                if(isWin === true)
-                    parent.nextLevel();
+            Component.onCompleted: {
+                win.connect(Activity.nextLevel);
+                loose.connect(Activity.initLevel)
             }
         }
     }

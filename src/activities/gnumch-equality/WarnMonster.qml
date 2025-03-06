@@ -1,10 +1,12 @@
 /* GCompris - WarnMonster.qml
 *
 * SPDX-FileCopyrightText: 2014 Manuel Tondeur <manueltondeur@gmail.com>
+* SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
 *
 * Authors:
 *   Joe Neeman (spuzzzzzzz@gmail.com) (GTK+ version)
 *   Manuel Tondeur <manueltondeur@gmail.com> (Qt Quick port)
+*   Timothée Giet <animtim@gmail.com> (refactoring)
 *
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
@@ -26,23 +28,24 @@ Rectangle {
         timerWarn.stop();
     }
 
-    width: warningText.contentWidth * 1.1
-    height: warningText.height * 1.1
     opacity: 0
-    border.width: 2
-    border.color: "#373737"
-    radius: 5
-
-    anchors.horizontalCenter: topPanel.horizontalCenter
-    anchors.verticalCenter: topPanel.verticalCenter
+    color: GCStyle.lightBg
+    border.width: GCStyle.thinnestBorder
+    border.color: GCStyle.darkBorder
+    radius: GCStyle.halfMargins
 
     GCText {
         id: warningText
         text: qsTr("Be careful, a troggle!")
         fontSize: largeSize
+        fontSizeMode: Text.Fit
         wrapMode: Text.WordWrap
         horizontalAlignment: Text.AlignHCenter
-        anchors.horizontalCenter: parent.horizontalCenter
+        verticalAlignment: Text.AlignVCenter
+        anchors.fill: parent
+        anchors.margins: GCStyle.halfMargins
+        anchors.leftMargin: GCStyle.baseMargins
+        anchors.rightMargin: GCStyle.baseMargins
         color: "red"
     }
 
@@ -50,14 +53,14 @@ Rectangle {
 
     Timer {
         id: timerWarn
-        interval: 2500
+        interval: 3000
 
         onTriggered: parent.opacity = 0
     }
 
     Behavior on opacity {
         NumberAnimation {
-            duration: 500
+            duration: 100
         }
     }
 }

@@ -1,10 +1,12 @@
 /* GCompris - Warning.qml
 *
 * SPDX-FileCopyrightText: 2014 Manuel Tondeur <manueltondeur@gmail.com>
+* SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
 *
 * Authors:
 *   Joe Neeman (spuzzzzzzz@gmail.com) (GTK+ version)
 *   Manuel Tondeur <manueltondeur@gmail.com> (Qt Quick port)
+*   Timothée Giet <animtim@gmail.com> (refactoring)
 *
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
@@ -15,24 +17,9 @@ import "../../core"
 import "gnumch-equality.js" as Activity
 
 Rectangle {
-    function hideWarning() {
-        if (opacity > 0) {
-            opacity = 0;
-            monsters.destroyAll();
-            if(topPanel.life.opacity == 1) {
-                topPanel.life.opacity = 0
-                if(activityBackground.withMonsters) {
-                    spawningMonsters.restart()
-                }
-            }
-            else
-                activityBackground.initLevel()
-        }
-    }
-
-    property string warningText: warning.text
+    id: warning
+    property alias warningText: textItem.text
     property string fault
-    property var mArea: area
 
     function setFault(index: int) {
         if (index === -1) {
@@ -96,50 +83,38 @@ Rectangle {
         }
     }
 
-    width: warning.contentWidth + 10 * ApplicationInfo.ratio
-    height: warning.contentHeight + 10 * ApplicationInfo.ratio
-    anchors.horizontalCenter: parent.horizontalCenter
-    anchors.verticalCenter: parent.verticalCenter
+    width: textItem.contentWidth + 2 * GCStyle.baseMargins
+    height: textItem.contentHeight + GCStyle.baseMargins
     z: 3
-    border.width: 2
-    radius: 5
+    border.width: GCStyle.midBorder
+    border.color: GCStyle.blueBorder
+    radius: GCStyle.halfMargins
     opacity: 0
-    color: "#82E599"
-
-    onOpacityChanged: {
-        if (opacity == 0) {
-            muncher.opacity = 1
-            area.enabled = false
-        } else {
-            area.enabled = true
-        }
-
-    }
+    color: GCStyle.paperWhite
 
     GCText {
-        id: warning
+        id: textItem
         anchors.centerIn: parent
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         text: fault + qsTr("Press \"Return\" or click on me to continue.")
-
         textFormat: Text.RichText
-        width: Math.min(400 * ApplicationInfo.ratio, activityBackground.width * 0.7)
-        height: activityBackground.height * 0.8
+        width: Math.min(400 * ApplicationInfo.ratio, warning.parent.width * 0.7)
+        height: warning.parent.height * 0.8
         fontSize: smallSize
         wrapMode: Text.WordWrap
     }
 
     Behavior on opacity {
         NumberAnimation {
-            duration: 200
+            duration: 100
         }
     }
 
     MouseArea {
         id: area
         anchors.fill: parent
-
-        enabled: false
+        enabled: warning.opacity == 1
+        onClicked: Activity.hideWarning();
     }
 }

@@ -1,10 +1,12 @@
 /* GCompris - TopPanel.qml
 *
 * SPDX-FileCopyrightText: 2014 Manuel Tondeur <manueltondeur@gmail.com>
+* SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
 *
 * Authors:
 *   Joe Neeman (spuzzzzzzz@gmail.com) (GTK+ version)
 *   Manuel Tondeur <manueltondeur@gmail.com> (Qt Quick port)
+*   Timothée Giet <animtim@gmail.com> (refactoring)
 *
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
@@ -14,16 +16,10 @@ import core 1.0
 import "../../core"
 
 Item {
-    property int goal
-    property bool useMultipleDataset: activity.useMultipleDataset
-    property var muncherLife: muncherLife
-    property var life: life
-    property var bar: bar
-
-    width: activityBackground.width
-    height: activityBackground.height / 3
-    anchors.right: parent.right
-    anchors.bottom: parent.bottom
+    id: topPanel
+    required property int goal
+    required property string activityType
+    property alias life: lifeImage.visible
 
     onGoalChanged: {
         goalText.text = goalText.setTextGoal(goal)
@@ -31,21 +27,23 @@ Item {
 
     Rectangle {
         id: goalBg
-        height: muncherLife.height
-        width: parent.width - muncherLife.width * 2 - muncherLife.anchors.rightMargin * 2
+        height: parent.height
+        width: parent.width - (muncherLife.width + GCStyle.halfMargins) * 2
         anchors.horizontalCenter: parent.horizontalCenter
-        radius: 10
-        color: "#373737"
-        border.width: 2
-        border.color: "#F2F2F2"
+        radius: GCStyle.halfMargins
+        color: GCStyle.darkBg
+        border.width: GCStyle.thinnestBorder
+        border.color: GCStyle.lightBorder
     }
 
     GCText {
         id: goalText
         parent: goalBg
-        height: parent.height
-        width: parent.width
-        color: "white"
+        anchors.fill: goalBg
+        anchors.margins: GCStyle.halfMargins
+        anchors.leftMargin: GCStyle.baseMargins
+        anchors.rightMargin: GCStyle.baseMargins
+        color: GCStyle.lightText
 
         function setTextGoal(goal: string): string {
             if (activity.type === "equality") {
@@ -63,30 +61,26 @@ Item {
 
         fontSizeMode: Text.Fit
         minimumPointSize: 7
-        fontSize: hugeSize
+        fontSize: largeSize
         font.weight: Font.DemiBold
         maximumLineCount: 1
-        verticalAlignment: Text.AlignTop
+        verticalAlignment: Text.AlignVCenter
         horizontalAlignment: Text.AlignHCenter
-        anchors.top: parent.top
-        anchors.horizontalCenter: parent.horizontalCenter
     }
 
     Rectangle {
         id: muncherLife
-
+        height: parent.height
         width: height
-        height: (parent.height - bar.height) * 0.4
         anchors.right: parent.right
-        anchors.top: goalText.bottom
-        anchors.rightMargin: 5 * ApplicationInfo.ratio
-        border.width: 2
-        border.color: "#373737"
-        radius: 5
+        anchors.top: parent.top
+        border.width: GCStyle.thinnestBorder
+        border.color: GCStyle.darkBorder
+        radius: GCStyle.tinyMargins
         color: "#80ffffff"
 
         Image {
-            id: life
+            id: lifeImage
             anchors.centerIn: parent
             source: "qrc:/gcompris/src/activities/gnumch-equality/resource/muncherIcon.svg"
             width: parent.width * 0.9
@@ -97,27 +91,13 @@ Item {
 
     // Show an hint to show that can move by swiping anywhere
     Image {
-        anchors {
-            left: parent.left
-            verticalCenter: muncherLife.verticalCenter
-            margins: 12
-        }
+        anchors.left: parent.left
+        anchors.top: parent.top
         source: "qrc:/gcompris/src/core/resource/arrows_move.svg"
-        sourceSize.height: muncherLife.height
-        opacity: topPanel.bar.level == 1 && ApplicationInfo.isMobile ? 1 : 0
-    }
-
-    Bar {
-        id: bar
-        level: items.currentLevel + 1
-
-        content: BarEnumContent {
-              value: (useMultipleDataset) ? (help | home | level | activityConfig) : (help | home | level)
-        }
-        onHelpClicked: displayDialog(dialogHelp)
-        onPreviousLevelClicked: activityBackground.previousLevel()
-        onNextLevelClicked: activityBackground.nextLevel()
-        onHomeClicked: activity.home()
-        onActivityConfigClicked: displayDialog(dialogActivityConfig)
+        width: muncherLife.width
+        height: muncherLife.height
+        sourceSize.height: height
+        fillMode: Image.PreserveAspectFit
+        opacity: ApplicationInfo.isMobile ? 1 : 0
     }
 }
