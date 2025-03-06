@@ -2975,7 +2975,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Această imagine te va ajuta să calculezi valoarea biților."
 
-#: activities/binary_bulb/BinaryBulb.qml:139
+#: activities/binary_bulb/BinaryBulb.qml:126
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3335,37 +3335,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "Spațiu sau Enter: îți validează răspunsul"
 
-#: activities/calendar/Calendar.qml:114
+#: activities/calendar/Calendar.qml:94
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "Duminică"
 
-#: activities/calendar/Calendar.qml:115
+#: activities/calendar/Calendar.qml:95
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "Luni"
 
-#: activities/calendar/Calendar.qml:116
+#: activities/calendar/Calendar.qml:96
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "Marți"
 
-#: activities/calendar/Calendar.qml:117
+#: activities/calendar/Calendar.qml:97
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "Miercuri"
 
-#: activities/calendar/Calendar.qml:118
+#: activities/calendar/Calendar.qml:98
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "Joi"
 
-#: activities/calendar/Calendar.qml:119
+#: activities/calendar/Calendar.qml:99
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "Vineri"
 
-#: activities/calendar/Calendar.qml:120
+#: activities/calendar/Calendar.qml:100
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "Sâmbătă"
@@ -3742,7 +3742,7 @@ msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Nu mai arăta niciodată acest dialog"
 
-#: activities/categorization/CategoryReview.qml:185
+#: activities/categorization/CategoryReview.qml:176
 msgctxt "CategoryReview|"
 msgid ""
 "Place the majority category images to the right and other images to the left"
@@ -5227,12 +5227,12 @@ msgstr ""
 "Acul cel mai scurt indică orele, acul mai lung indică minutele, iar acul cel "
 "mai lung indică secundele."
 
-#: activities/clockgame/Clockgame.qml:119
+#: activities/clockgame/Clockgame.qml:112
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Reglează ceasul la "
 
-#: activities/clockgame/Clockgame.qml:122
+#: activities/clockgame/Clockgame.qml:115
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5241,7 +5241,7 @@ msgstr[0] "ora %n :"
 msgstr[1] "ora %n"
 msgstr[2] "ora %n"
 
-#: activities/clockgame/Clockgame.qml:125
+#: activities/clockgame/Clockgame.qml:118
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5250,7 +5250,7 @@ msgstr[0] "%n minute"
 msgstr[1] "%n minute"
 msgstr[2] "%n minute"
 
-#: activities/clockgame/Clockgame.qml:128
+#: activities/clockgame/Clockgame.qml:121
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5554,7 +5554,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Găsește rățușca roz"
 
-#: activities/colors/FindIt.qml:276
+#: activities/colors/FindIt.qml:266
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5563,12 +5563,12 @@ msgstr ""
 "Această activitate necesită sunet, așa că va reda niște sunete chiar dacă "
 "vocile sau efectele audio sunt dezactivate în configurația principală."
 
-#: activities/colors/FindIt.qml:277
+#: activities/colors/FindIt.qml:267
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Ieși"
 
-#: activities/colors/FindIt.qml:278
+#: activities/colors/FindIt.qml:268
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Continuă"
@@ -7053,7 +7053,7 @@ msgstr ""
 "La nivelul trei, se afișează un text aleator, iar tu trebuie să faci clic pe "
 "animalul descris în textul respectiv."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:333
+#: activities/explore_farm_animals/ExploreLevels.qml:306
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -7063,12 +7063,12 @@ msgstr ""
 "dacă vocile audio sau efectele sonore sunt dezactivate în configurația "
 "principală a aplicației."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:334
+#: activities/explore_farm_animals/ExploreLevels.qml:307
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Ieși"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:335
+#: activities/explore_farm_animals/ExploreLevels.qml:308
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Continuă"
@@ -9441,7 +9441,7 @@ msgctxt "Family|"
 msgid "?"
 msgstr "?"
 
-#: activities/family/Family.qml:353
+#: activities/family/Family.qml:337
 #, qt-format
 msgctxt "Family|"
 msgid "Select one of the pairs corresponding to: %1"
@@ -10372,7 +10372,15 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Tab: comută între editarea frizei și vizualizarea modelului"
 
-#: activities/frieze/Frieze.qml:306
+#: activities/frieze/Frieze.qml:109
+#, fuzzy, qt-format
+#| msgctxt "BinaryBulb|"
+#| msgid "What is the binary representation of %1?"
+msgctxt "Frieze|"
+msgid "What is the binary representation of %1?"
+msgstr "Care este reprezentarea binară a lui %1?"
+
+#: activities/frieze/Frieze.qml:288
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Sunt pregătit"
@@ -15454,7 +15462,7 @@ msgstr ""
 "Glisează numerele și operatorii în căsuțe, pentru a obține numărul dat în "
 "instrucțiuni."
 
-#: activities/guesscount/Admin.qml:33
+#: activities/guesscount/Admin.qml:35
 #, qt-format
 msgctxt "Admin|"
 msgid "Level %1"
@@ -15476,12 +15484,12 @@ msgctxt "Guesscount|"
 msgid "Guesscount: %1"
 msgstr "Rezultatul: %1"
 
-#: activities/guesscount/OperandRow.qml:36
+#: activities/guesscount/OperandRow.qml:38
 msgctxt "OperandRow|"
 msgid "Numbers"
 msgstr "Numere"
 
-#: activities/guesscount/OperatorRow.qml:37
+#: activities/guesscount/OperatorRow.qml:39
 msgctxt "OperatorRow|"
 msgid "Operators"
 msgstr "Operatori"
@@ -24574,76 +24582,76 @@ msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
 msgstr "Instrumente de desenat"
 
-#: activities/sketch/ColorSelector.qml:76
+#: activities/sketch/ColorSelector.qml:78
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
 msgstr "Palete de culori"
 
-#: activities/sketch/ColorSelector.qml:160
+#: activities/sketch/ColorSelector.qml:162
 msgctxt "ColorSelector|"
 msgid "Reset palette"
 msgstr "Resetează paleta"
 
-#: activities/sketch/ColorSelector.qml:211
+#: activities/sketch/ColorSelector.qml:213
 msgctxt "ColorSelector|"
 msgid "Selected Color"
 msgstr "Culoarea selectată"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:235
+#: activities/sketch/ColorSelector.qml:237
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
 msgstr "Nuanța"
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:262
+#: activities/sketch/ColorSelector.qml:264
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
 msgstr "Saturația"
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:287
+#: activities/sketch/ColorSelector.qml:289
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
 msgstr "Strălucirea"
 
 #. Reload default color for selected slot
-#: activities/sketch/ColorSelector.qml:324
+#: activities/sketch/ColorSelector.qml:326
 msgctxt "ColorSelector|"
 msgid "Reset Color"
 msgstr "Resetează culoarea"
 
-#: activities/sketch/ColorsPanel.qml:157
+#: activities/sketch/ColorsPanel.qml:159
 msgctxt "ColorsPanel|"
 msgid "Palettes"
 msgstr "Palete"
 
-#: activities/sketch/FilesPanel.qml:46
+#: activities/sketch/FilesPanel.qml:47
 msgctxt "FilesPanel|"
 msgid "Save your image"
 msgstr "Salvează-ți imaginea"
 
-#: activities/sketch/FilesPanel.qml:85
+#: activities/sketch/FilesPanel.qml:86
 msgctxt "FilesPanel|"
 msgid "Open an image"
 msgstr "Deschide o imagine"
 
-#: activities/sketch/FilesPanel.qml:116
+#: activities/sketch/FilesPanel.qml:117
 msgctxt "FilesPanel|"
 msgid "New image settings"
 msgstr "Setări pentru imaginea nouă"
 
-#: activities/sketch/FilesPanel.qml:144
+#: activities/sketch/FilesPanel.qml:145
 msgctxt "FilesPanel|"
 msgid "Background color"
 msgstr "Culoarea de fundal"
 
-#: activities/sketch/FilesPanel.qml:190
+#: activities/sketch/FilesPanel.qml:191
 msgctxt "FilesPanel|"
 msgid "Background image"
 msgstr "Imaginea de fundal"
 
-#: activities/sketch/FilesPanel.qml:231
+#: activities/sketch/FilesPanel.qml:232
 msgctxt "FilesPanel|"
 msgid "Create a new image"
 msgstr "Creează o nouă imagine"
@@ -24704,52 +24712,52 @@ msgctxt "TextToolPanel|"
 msgid "Type your text here"
 msgstr "Scrie textul tău aici"
 
-#: activities/sketch/ToolsPanel.qml:253
+#: activities/sketch/ToolsPanel.qml:255
 msgctxt "ToolsPanel|"
 msgid "Tools"
 msgstr "Unelte"
 
-#: activities/sketch/ToolsPanel.qml:427
+#: activities/sketch/ToolsPanel.qml:429
 msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
 msgstr "Setările instrumentului de reset"
 
-#: activities/sketch/ToolsPanel.qml:483
+#: activities/sketch/ToolsPanel.qml:485
 msgctxt "ToolsPanel|"
 msgid "Opacity"
 msgstr "Opacitatea"
 
-#: activities/sketch/ToolsPanel.qml:506
+#: activities/sketch/ToolsPanel.qml:508
 msgctxt "ToolsPanel|"
 msgid "Size"
 msgstr "Mărimea"
 
-#: activities/sketch/ToolsPanel.qml:526
+#: activities/sketch/ToolsPanel.qml:528
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "Viteza"
 
-#: activities/sketch/ToolsPanel.qml:546
+#: activities/sketch/ToolsPanel.qml:548
 msgctxt "ToolsPanel|"
 msgid "Density"
 msgstr "Densitatea"
 
-#: activities/sketch/ToolsPanel.qml:566
+#: activities/sketch/ToolsPanel.qml:568
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
 msgstr "Mărimea punctelor"
 
-#: activities/sketch/ToolsPanel.qml:585
+#: activities/sketch/ToolsPanel.qml:587
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
 msgstr "Finețea"
 
-#: activities/sketch/ToolsPanel.qml:646
+#: activities/sketch/ToolsPanel.qml:648
 msgctxt "ToolsPanel|"
 msgid "Rotation"
 msgstr "Rotația"
 
-#: activities/sketch/ToolsPanel.qml:662
+#: activities/sketch/ToolsPanel.qml:664
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
 msgstr "Imaginea în oglindă"
