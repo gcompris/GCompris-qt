@@ -2943,7 +2943,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Ten obraz pomoże ci obliczyć wartość bitową."
 
-#: activities/binary_bulb/BinaryBulb.qml:139
+#: activities/binary_bulb/BinaryBulb.qml:126
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3300,37 +3300,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "Klawisz spacji lub enter: zatwierdza twoją odpowiedź"
 
-#: activities/calendar/Calendar.qml:114
+#: activities/calendar/Calendar.qml:94
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "Niedziela"
 
-#: activities/calendar/Calendar.qml:115
+#: activities/calendar/Calendar.qml:95
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "Poniedziałek"
 
-#: activities/calendar/Calendar.qml:116
+#: activities/calendar/Calendar.qml:96
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "Wtorek"
 
-#: activities/calendar/Calendar.qml:117
+#: activities/calendar/Calendar.qml:97
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "Środa"
 
-#: activities/calendar/Calendar.qml:118
+#: activities/calendar/Calendar.qml:98
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "Czwartek"
 
-#: activities/calendar/Calendar.qml:119
+#: activities/calendar/Calendar.qml:99
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "Piątek"
 
-#: activities/calendar/Calendar.qml:120
+#: activities/calendar/Calendar.qml:100
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "Sobota"
@@ -3705,7 +3705,7 @@ msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Nie pokazuje tego okna więcej"
 
-#: activities/categorization/CategoryReview.qml:185
+#: activities/categorization/CategoryReview.qml:176
 msgctxt "CategoryReview|"
 msgid ""
 "Place the majority category images to the right and other images to the left"
@@ -5153,12 +5153,12 @@ msgstr ""
 "Najkrótsza wskazówka wskazuje godziny, dłuższa wskazuje minuty, a najdłuższa "
 "sekundy."
 
-#: activities/clockgame/Clockgame.qml:121
+#: activities/clockgame/Clockgame.qml:112
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Ustaw zegarek na:"
 
-#: activities/clockgame/Clockgame.qml:124
+#: activities/clockgame/Clockgame.qml:115
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5167,7 +5167,7 @@ msgstr[0] "%n godzina"
 msgstr[1] "%n godziny"
 msgstr[2] "%n godzin"
 
-#: activities/clockgame/Clockgame.qml:127
+#: activities/clockgame/Clockgame.qml:118
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5176,7 +5176,7 @@ msgstr[0] "%n minuta"
 msgstr[1] "%n minuty"
 msgstr[2] "%n minut"
 
-#: activities/clockgame/Clockgame.qml:130
+#: activities/clockgame/Clockgame.qml:121
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5474,7 +5474,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Znajdź różową kaczkę"
 
-#: activities/colors/FindIt.qml:276
+#: activities/colors/FindIt.qml:266
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5483,12 +5483,12 @@ msgstr ""
 "Ta aktywność wymaga dźwięku, tak więc będzie odtwarzać dźwięki, nawet gdy "
 "głosy i efekty zostały wyłączone w ustawieniach głównych."
 
-#: activities/colors/FindIt.qml:277
+#: activities/colors/FindIt.qml:267
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Zakończ"
 
-#: activities/colors/FindIt.qml:278
+#: activities/colors/FindIt.qml:268
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Kontynuuj"
@@ -6966,7 +6966,7 @@ msgstr ""
 "Na trzecim poziomie, wyświetlany jest losowy tekst, a ty musisz nacisnąć na "
 "zwierzęciu, które pasuje do tekstu."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:333
+#: activities/explore_farm_animals/ExploreLevels.qml:306
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -6975,12 +6975,12 @@ msgstr ""
 "Ta aktywność wymaga dźwięku, tak więc będzie odtwarzać dźwięki, nawet gdy "
 "głosy i efekty zostały wyłączone w ustawieniach głównych."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:334
+#: activities/explore_farm_animals/ExploreLevels.qml:307
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Zakończ"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:335
+#: activities/explore_farm_animals/ExploreLevels.qml:308
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Kontynuuj"
@@ -8931,7 +8931,7 @@ msgctxt "Family|"
 msgid "?"
 msgstr "?"
 
-#: activities/family/Family.qml:353
+#: activities/family/Family.qml:337
 #, qt-format
 msgctxt "Family|"
 msgid "Select one of the pairs corresponding to: %1"
@@ -9856,7 +9856,15 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Tab: przełącza pomiędzy edytowaniem frieze oraz oglądaniem modelu"
 
-#: activities/frieze/Frieze.qml:306
+#: activities/frieze/Frieze.qml:109
+#, fuzzy, qt-format
+#| msgctxt "BinaryBulb|"
+#| msgid "What is the binary representation of %1?"
+msgctxt "Frieze|"
+msgid "What is the binary representation of %1?"
+msgstr "Jaka jest reprezentacja dwójkowa %1?"
+
+#: activities/frieze/Frieze.qml:288
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Jestem gotowy"
@@ -14925,7 +14933,7 @@ msgid ""
 msgstr ""
 "Przeciągnij liczby i operatory do pól, aby uzyskać liczbę daną w instrukcji."
 
-#: activities/guesscount/Admin.qml:33
+#: activities/guesscount/Admin.qml:35
 #, qt-format
 msgctxt "Admin|"
 msgid "Level %1"
@@ -14947,12 +14955,12 @@ msgctxt "Guesscount|"
 msgid "Guesscount: %1"
 msgstr "Liczba zgadywana: %1"
 
-#: activities/guesscount/OperandRow.qml:36
+#: activities/guesscount/OperandRow.qml:38
 msgctxt "OperandRow|"
 msgid "Numbers"
 msgstr "Liczby"
 
-#: activities/guesscount/OperatorRow.qml:37
+#: activities/guesscount/OperatorRow.qml:39
 msgctxt "OperatorRow|"
 msgid "Operators"
 msgstr "Operatory"
@@ -23963,76 +23971,76 @@ msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
 msgstr "Narzędzia rysowania"
 
-#: activities/sketch/ColorSelector.qml:76
+#: activities/sketch/ColorSelector.qml:78
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
 msgstr "Barwy z palety"
 
-#: activities/sketch/ColorSelector.qml:160
+#: activities/sketch/ColorSelector.qml:162
 msgctxt "ColorSelector|"
 msgid "Reset palette"
 msgstr "Wyzeruj paletę"
 
-#: activities/sketch/ColorSelector.qml:211
+#: activities/sketch/ColorSelector.qml:213
 msgctxt "ColorSelector|"
 msgid "Selected Color"
 msgstr "Kolor zaznaczenia"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:235
+#: activities/sketch/ColorSelector.qml:237
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
 msgstr "Odcień"
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:262
+#: activities/sketch/ColorSelector.qml:264
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
 msgstr "Nasycenie"
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:287
+#: activities/sketch/ColorSelector.qml:289
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
 msgstr "Jasność"
 
 #. Reload default color for selected slot
-#: activities/sketch/ColorSelector.qml:324
+#: activities/sketch/ColorSelector.qml:326
 msgctxt "ColorSelector|"
 msgid "Reset Color"
 msgstr "Wyzeruj barwę"
 
-#: activities/sketch/ColorsPanel.qml:157
+#: activities/sketch/ColorsPanel.qml:159
 msgctxt "ColorsPanel|"
 msgid "Palettes"
 msgstr "Palety"
 
-#: activities/sketch/FilesPanel.qml:46
+#: activities/sketch/FilesPanel.qml:47
 msgctxt "FilesPanel|"
 msgid "Save your image"
 msgstr "Zapisz swój obraz"
 
-#: activities/sketch/FilesPanel.qml:85
+#: activities/sketch/FilesPanel.qml:86
 msgctxt "FilesPanel|"
 msgid "Open an image"
 msgstr "Otwórz obraz"
 
-#: activities/sketch/FilesPanel.qml:116
+#: activities/sketch/FilesPanel.qml:117
 msgctxt "FilesPanel|"
 msgid "New image settings"
 msgstr "Ustawienia nowego obrazu"
 
-#: activities/sketch/FilesPanel.qml:144
+#: activities/sketch/FilesPanel.qml:145
 msgctxt "FilesPanel|"
 msgid "Background color"
 msgstr "Barwa tła"
 
-#: activities/sketch/FilesPanel.qml:190
+#: activities/sketch/FilesPanel.qml:191
 msgctxt "FilesPanel|"
 msgid "Background image"
 msgstr "Obraz tła"
 
-#: activities/sketch/FilesPanel.qml:231
+#: activities/sketch/FilesPanel.qml:232
 msgctxt "FilesPanel|"
 msgid "Create a new image"
 msgstr "Utwórz nowy obraz"
@@ -24093,52 +24101,52 @@ msgctxt "TextToolPanel|"
 msgid "Type your text here"
 msgstr "Tutaj wpisz swój tekst"
 
-#: activities/sketch/ToolsPanel.qml:253
+#: activities/sketch/ToolsPanel.qml:255
 msgctxt "ToolsPanel|"
 msgid "Tools"
 msgstr "Narzędzia"
 
-#: activities/sketch/ToolsPanel.qml:427
+#: activities/sketch/ToolsPanel.qml:429
 msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
 msgstr "Wyzeruj ustawienia narzędzia"
 
-#: activities/sketch/ToolsPanel.qml:483
+#: activities/sketch/ToolsPanel.qml:485
 msgctxt "ToolsPanel|"
 msgid "Opacity"
 msgstr "Nieprzezroczystość"
 
-#: activities/sketch/ToolsPanel.qml:506
+#: activities/sketch/ToolsPanel.qml:508
 msgctxt "ToolsPanel|"
 msgid "Size"
 msgstr "Rozmiar"
 
-#: activities/sketch/ToolsPanel.qml:526
+#: activities/sketch/ToolsPanel.qml:528
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "Szybkość"
 
-#: activities/sketch/ToolsPanel.qml:546
+#: activities/sketch/ToolsPanel.qml:548
 msgctxt "ToolsPanel|"
 msgid "Density"
 msgstr "Gęstość"
 
-#: activities/sketch/ToolsPanel.qml:566
+#: activities/sketch/ToolsPanel.qml:568
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
 msgstr "Rozmiar kropki"
 
-#: activities/sketch/ToolsPanel.qml:585
+#: activities/sketch/ToolsPanel.qml:587
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
 msgstr "Wygładzanie"
 
-#: activities/sketch/ToolsPanel.qml:646
+#: activities/sketch/ToolsPanel.qml:648
 msgctxt "ToolsPanel|"
 msgid "Rotation"
 msgstr "Obrót"
 
-#: activities/sketch/ToolsPanel.qml:662
+#: activities/sketch/ToolsPanel.qml:664
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
 msgstr "Odbij lustrzanie dany obraz"

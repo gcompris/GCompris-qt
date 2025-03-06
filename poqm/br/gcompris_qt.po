@@ -2949,7 +2949,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Ar skeudenn-mañ a ziskouezo dit penaos jediñ talvoud ar bitoù."
 
-#: activities/binary_bulb/BinaryBulb.qml:139
+#: activities/binary_bulb/BinaryBulb.qml:126
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3308,37 +3308,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "Barrenn-esaouiñ pe Mont-tre: gwiriañ da respont"
 
-#: activities/calendar/Calendar.qml:114
+#: activities/calendar/Calendar.qml:94
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "Sul"
 
-#: activities/calendar/Calendar.qml:115
+#: activities/calendar/Calendar.qml:95
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "Lun"
 
-#: activities/calendar/Calendar.qml:116
+#: activities/calendar/Calendar.qml:96
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "Meurzh"
 
-#: activities/calendar/Calendar.qml:117
+#: activities/calendar/Calendar.qml:97
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "Merc'her"
 
-#: activities/calendar/Calendar.qml:118
+#: activities/calendar/Calendar.qml:98
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "Yaou"
 
-#: activities/calendar/Calendar.qml:119
+#: activities/calendar/Calendar.qml:99
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "Gwener"
 
-#: activities/calendar/Calendar.qml:120
+#: activities/calendar/Calendar.qml:100
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "Sadorn"
@@ -3718,7 +3718,7 @@ msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Arabat diskouez ar c'hinnig-mañ ken"
 
-#: activities/categorization/CategoryReview.qml:185
+#: activities/categorization/CategoryReview.qml:176
 msgctxt "CategoryReview|"
 msgid ""
 "Place the majority category images to the right and other images to the left"
@@ -5169,12 +5169,12 @@ msgstr ""
 "Ar biz bihanañ a ro an eur, ar biz bras a ro ar munutennoù hag ar biz brasañ "
 "a ro an eilennoù."
 
-#: activities/clockgame/Clockgame.qml:121
+#: activities/clockgame/Clockgame.qml:112
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Lak bizied an eurier war :"
 
-#: activities/clockgame/Clockgame.qml:124
+#: activities/clockgame/Clockgame.qml:115
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5182,7 +5182,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n eurv"
 msgstr[1] "%n eurvezh"
 
-#: activities/clockgame/Clockgame.qml:127
+#: activities/clockgame/Clockgame.qml:118
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5190,7 +5190,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n v/munutenn"
 msgstr[1] "%n v/munutenn"
 
-#: activities/clockgame/Clockgame.qml:130
+#: activities/clockgame/Clockgame.qml:121
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5488,7 +5488,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Kav an houad roz"
 
-#: activities/colors/FindIt.qml:276
+#: activities/colors/FindIt.qml:266
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5498,12 +5498,12 @@ msgstr ""
 "zoken ma n'eo ket bet dibabet kaout ar mouezhioù pe an efedoù-son er "
 "c'hefluniañ pennañ."
 
-#: activities/colors/FindIt.qml:277
+#: activities/colors/FindIt.qml:267
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Mont kuit"
 
-#: activities/colors/FindIt.qml:278
+#: activities/colors/FindIt.qml:268
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Kenderc'hel"
@@ -6967,7 +6967,7 @@ msgstr ""
 "E live 2 e vo klevet garm un loen dre zegouezh ha dit-te da gavout peseurt "
 "loen a c'harm evel-se."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:333
+#: activities/explore_farm_animals/ExploreLevels.qml:306
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -6977,12 +6977,12 @@ msgstr ""
 "zoken ma n'eo ket bet dibabet kaout ar mouezhioù pe an efedoù-son er "
 "c'hefluniañ pennañ."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:334
+#: activities/explore_farm_animals/ExploreLevels.qml:307
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Mont kuit"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:335
+#: activities/explore_farm_animals/ExploreLevels.qml:308
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Kenderc'hel"
@@ -8932,7 +8932,7 @@ msgctxt "Family|"
 msgid "?"
 msgstr "?"
 
-#: activities/family/Family.qml:353
+#: activities/family/Family.qml:337
 #, qt-format
 msgctxt "Family|"
 msgid "Select one of the pairs corresponding to: %1"
@@ -9879,7 +9879,15 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Tab: kemm etre embann ar frizenn ha sellout ouzh ar skouer"
 
-#: activities/frieze/Frieze.qml:306
+#: activities/frieze/Frieze.qml:109
+#, fuzzy, qt-format
+#| msgctxt "BinaryBulb|"
+#| msgid "What is the binary representation of %1?"
+msgctxt "Frieze|"
+msgid "What is the binary representation of %1?"
+msgstr "Petra eo an arouezenn daouredel evit %1?"
+
+#: activities/frieze/Frieze.qml:288
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Prest on"
@@ -14938,7 +14946,7 @@ msgstr ""
 "Rikl an niveroù reizh hag an arouezioù matematik er c'hombodoù evit kavout "
 "an disoc'h kinniget."
 
-#: activities/guesscount/Admin.qml:33
+#: activities/guesscount/Admin.qml:35
 #, qt-format
 msgctxt "Admin|"
 msgid "Level %1"
@@ -14960,12 +14968,12 @@ msgctxt "Guesscount|"
 msgid "Guesscount: %1"
 msgstr "Divinout ar gont: %1"
 
-#: activities/guesscount/OperandRow.qml:36
+#: activities/guesscount/OperandRow.qml:38
 msgctxt "OperandRow|"
 msgid "Numbers"
 msgstr "Niveroù"
 
-#: activities/guesscount/OperatorRow.qml:37
+#: activities/guesscount/OperatorRow.qml:39
 msgctxt "OperatorRow|"
 msgid "Operators"
 msgstr "Jedadurioù"
@@ -23966,76 +23974,76 @@ msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
 msgstr "Benvegoù tresañ "
 
-#: activities/sketch/ColorSelector.qml:76
+#: activities/sketch/ColorSelector.qml:78
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
 msgstr "Livaoueg"
 
-#: activities/sketch/ColorSelector.qml:160
+#: activities/sketch/ColorSelector.qml:162
 msgctxt "ColorSelector|"
 msgid "Reset palette"
 msgstr "Kaout ul livaoueg nevez"
 
-#: activities/sketch/ColorSelector.qml:211
+#: activities/sketch/ColorSelector.qml:213
 msgctxt "ColorSelector|"
 msgid "Selected Color"
 msgstr "Liv dibabet"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:235
+#: activities/sketch/ColorSelector.qml:237
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
 msgstr "Livad"
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:262
+#: activities/sketch/ColorSelector.qml:264
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
 msgstr "Peurvec'h"
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:287
+#: activities/sketch/ColorSelector.qml:289
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
 msgstr "Sklaerder"
 
 #. Reload default color for selected slot
-#: activities/sketch/ColorSelector.qml:324
+#: activities/sketch/ColorSelector.qml:326
 msgctxt "ColorSelector|"
 msgid "Reset Color"
 msgstr "Kaout ul liv nevez"
 
-#: activities/sketch/ColorsPanel.qml:157
+#: activities/sketch/ColorsPanel.qml:159
 msgctxt "ColorsPanel|"
 msgid "Palettes"
 msgstr "Livaouegoù"
 
-#: activities/sketch/FilesPanel.qml:46
+#: activities/sketch/FilesPanel.qml:47
 msgctxt "FilesPanel|"
 msgid "Save your image"
 msgstr "Enroll da skeudenn"
 
-#: activities/sketch/FilesPanel.qml:85
+#: activities/sketch/FilesPanel.qml:86
 msgctxt "FilesPanel|"
 msgid "Open an image"
 msgstr "Digor ur skeudenn"
 
-#: activities/sketch/FilesPanel.qml:116
+#: activities/sketch/FilesPanel.qml:117
 msgctxt "FilesPanel|"
 msgid "New image settings"
 msgstr "Dibaboù ur skeudenn nevez"
 
-#: activities/sketch/FilesPanel.qml:144
+#: activities/sketch/FilesPanel.qml:145
 msgctxt "FilesPanel|"
 msgid "Background color"
 msgstr "Liv al leur a-dreñv"
 
-#: activities/sketch/FilesPanel.qml:190
+#: activities/sketch/FilesPanel.qml:191
 msgctxt "FilesPanel|"
 msgid "Background image"
 msgstr "Skeudenn al leur a-dreñv"
 
-#: activities/sketch/FilesPanel.qml:231
+#: activities/sketch/FilesPanel.qml:232
 msgctxt "FilesPanel|"
 msgid "Create a new image"
 msgstr "Krouiñ ur skeudenn nevez"
@@ -24097,52 +24105,52 @@ msgctxt "TextToolPanel|"
 msgid "Type your text here"
 msgstr "Bizskriv da destenn amañ"
 
-#: activities/sketch/ToolsPanel.qml:253
+#: activities/sketch/ToolsPanel.qml:255
 msgctxt "ToolsPanel|"
 msgid "Tools"
 msgstr "Benvegoù"
 
-#: activities/sketch/ToolsPanel.qml:427
+#: activities/sketch/ToolsPanel.qml:429
 msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
 msgstr "Adsevel dibaboù ar benveg"
 
-#: activities/sketch/ToolsPanel.qml:483
+#: activities/sketch/ToolsPanel.qml:485
 msgctxt "ToolsPanel|"
 msgid "Opacity"
 msgstr "Demerez"
 
-#: activities/sketch/ToolsPanel.qml:506
+#: activities/sketch/ToolsPanel.qml:508
 msgctxt "ToolsPanel|"
 msgid "Size"
 msgstr "Ment"
 
-#: activities/sketch/ToolsPanel.qml:526
+#: activities/sketch/ToolsPanel.qml:528
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "Tizh"
 
-#: activities/sketch/ToolsPanel.qml:546
+#: activities/sketch/ToolsPanel.qml:548
 msgctxt "ToolsPanel|"
 msgid "Density"
 msgstr "Stankted"
 
-#: activities/sketch/ToolsPanel.qml:566
+#: activities/sketch/ToolsPanel.qml:568
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
 msgstr "Ment ar pikoù"
 
-#: activities/sketch/ToolsPanel.qml:585
+#: activities/sketch/ToolsPanel.qml:587
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
 msgstr "Flouraat"
 
-#: activities/sketch/ToolsPanel.qml:646
+#: activities/sketch/ToolsPanel.qml:648
 msgctxt "ToolsPanel|"
 msgid "Rotation"
 msgstr "Treiñ"
 
-#: activities/sketch/ToolsPanel.qml:662
+#: activities/sketch/ToolsPanel.qml:664
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
 msgstr "Skeudenn er melezour"

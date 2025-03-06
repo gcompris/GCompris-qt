@@ -2872,7 +2872,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "एतत् चित्रं भवन्तं बिट्-मूल्यं गणयितुं साहाय्यं करिष्यति ।"
 
-#: activities/binary_bulb/BinaryBulb.qml:139
+#: activities/binary_bulb/BinaryBulb.qml:126
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3217,37 +3217,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "Space or Enter: स्वस्य उत्तरस्य प्रमाणीकरणं कुर्वन्तु"
 
-#: activities/calendar/Calendar.qml:114
+#: activities/calendar/Calendar.qml:94
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "रविवारं"
 
-#: activities/calendar/Calendar.qml:115
+#: activities/calendar/Calendar.qml:95
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "सोमवारं"
 
-#: activities/calendar/Calendar.qml:116
+#: activities/calendar/Calendar.qml:96
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "मङ्गलवारः"
 
-#: activities/calendar/Calendar.qml:117
+#: activities/calendar/Calendar.qml:97
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "बुधवारः"
 
-#: activities/calendar/Calendar.qml:118
+#: activities/calendar/Calendar.qml:98
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "बृहस्पतिवारः"
 
-#: activities/calendar/Calendar.qml:119
+#: activities/calendar/Calendar.qml:99
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "शुक्रवारं"
 
-#: activities/calendar/Calendar.qml:120
+#: activities/calendar/Calendar.qml:100
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "शनिवारं"
@@ -3618,7 +3618,7 @@ msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "पुनः कदापि एतत् संवादं न दर्शयन्तु"
 
-#: activities/categorization/CategoryReview.qml:185
+#: activities/categorization/CategoryReview.qml:176
 msgctxt "CategoryReview|"
 msgid ""
 "Place the majority category images to the right and other images to the left"
@@ -5021,12 +5021,12 @@ msgid ""
 "and the longest hand indicates the seconds."
 msgstr "ह्रस्वतमः हस्तः घण्टाः, दीर्घतमः हस्तः निमेषान्, दीर्घतमः हस्तः सेकण्डान् च सूचयति ।"
 
-#: activities/clockgame/Clockgame.qml:121
+#: activities/clockgame/Clockgame.qml:112
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "घड़ीं सेट् कुर्वन्तु:"
 
-#: activities/clockgame/Clockgame.qml:124
+#: activities/clockgame/Clockgame.qml:115
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5034,7 +5034,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n घण्टा(s) ."
 msgstr[1] "%n घण्टा(s) ."
 
-#: activities/clockgame/Clockgame.qml:127
+#: activities/clockgame/Clockgame.qml:118
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5042,7 +5042,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n निमेष(s) ."
 msgstr[1] "%n निमेष(s) ."
 
-#: activities/clockgame/Clockgame.qml:130
+#: activities/clockgame/Clockgame.qml:121
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5338,7 +5338,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "गुलाबी बकं अन्वेष्यताम्"
 
-#: activities/colors/FindIt.qml:276
+#: activities/colors/FindIt.qml:266
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5347,12 +5347,12 @@ msgstr ""
 "अस्याः क्रियायाः कृते ध्वनिः आवश्यकः अस्ति, अतः मुख्यविन्यासे श्रव्यस्वरः अथवा प्रभावाः "
 "निष्क्रियाः सन्ति चेदपि एतत् केचन ध्वनयः वादयिष्यति ।"
 
-#: activities/colors/FindIt.qml:277
+#: activities/colors/FindIt.qml:267
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "परिजहातु"
 
-#: activities/colors/FindIt.qml:278
+#: activities/colors/FindIt.qml:268
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "अनुवर्तते"
@@ -6747,7 +6747,7 @@ msgstr ""
 "तृतीयस्तरस्य मध्ये यादृच्छिकपाठप्रॉम्प्ट् प्रदर्श्यते तथा च पाठेन सह मेलनं कुर्वन्तं पशुं भवद्भिः "
 "क्लिक् कर्तव्यम् ।"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:333
+#: activities/explore_farm_animals/ExploreLevels.qml:306
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -6756,12 +6756,12 @@ msgstr ""
 "अस्याः क्रियायाः कृते ध्वनिः आवश्यकः अस्ति, अतः मुख्यविन्यासे श्रव्यस्वरः अथवा प्रभावाः "
 "निष्क्रियाः सन्ति चेदपि एतत् केचन ध्वनयः वादयिष्यति ।"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:334
+#: activities/explore_farm_animals/ExploreLevels.qml:307
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "परिजहातु"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:335
+#: activities/explore_farm_animals/ExploreLevels.qml:308
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "अनुवर्तते"
@@ -8628,7 +8628,7 @@ msgctxt "Family|"
 msgid "?"
 msgstr "?"
 
-#: activities/family/Family.qml:353
+#: activities/family/Family.qml:337
 #, qt-format
 msgctxt "Family|"
 msgid "Select one of the pairs corresponding to: %1"
@@ -9550,7 +9550,15 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "ट्याब्: फ्रीजस्य सम्पादनस्य मॉडलस्य दर्शनस्य च मध्ये स्विच् कुर्वन्तु"
 
-#: activities/frieze/Frieze.qml:306
+#: activities/frieze/Frieze.qml:109
+#, fuzzy, qt-format
+#| msgctxt "BinaryBulb|"
+#| msgid "What is the binary representation of %1?"
+msgctxt "Frieze|"
+msgid "What is the binary representation of %1?"
+msgstr "%1 इत्यस्य द्विचक्रीयप्रतिपादनं किम् ?"
+
+#: activities/frieze/Frieze.qml:288
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "अहं सज्जः अस्मि"
@@ -14580,7 +14588,7 @@ msgid ""
 "the instructions."
 msgstr "निर्देशेषु दत्तां संख्यां प्राप्तुं संख्याः, संचालकाः च पेटीषु कर्षयन्तु ।"
 
-#: activities/guesscount/Admin.qml:33
+#: activities/guesscount/Admin.qml:35
 #, qt-format
 msgctxt "Admin|"
 msgid "Level %1"
@@ -14602,12 +14610,12 @@ msgctxt "Guesscount|"
 msgid "Guesscount: %1"
 msgstr "अनुमानगणना: %1"
 
-#: activities/guesscount/OperandRow.qml:36
+#: activities/guesscount/OperandRow.qml:38
 msgctxt "OperandRow|"
 msgid "Numbers"
 msgstr "संख्याः"
 
-#: activities/guesscount/OperatorRow.qml:37
+#: activities/guesscount/OperatorRow.qml:39
 msgctxt "OperatorRow|"
 msgid "Operators"
 msgstr "संचालकाः"
@@ -23402,76 +23410,76 @@ msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
 msgstr "चित्रकलासाधनम्"
 
-#: activities/sketch/ColorSelector.qml:76
+#: activities/sketch/ColorSelector.qml:78
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
 msgstr "पैलेट रङ्ग"
 
-#: activities/sketch/ColorSelector.qml:160
+#: activities/sketch/ColorSelector.qml:162
 msgctxt "ColorSelector|"
 msgid "Reset palette"
 msgstr "पैलेट् पुनः सेट् कुर्वन्तु"
 
-#: activities/sketch/ColorSelector.qml:211
+#: activities/sketch/ColorSelector.qml:213
 msgctxt "ColorSelector|"
 msgid "Selected Color"
 msgstr "चयनितः वर्णः"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:235
+#: activities/sketch/ColorSelector.qml:237
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
 msgstr "हुए"
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:262
+#: activities/sketch/ColorSelector.qml:264
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
 msgstr "संतृप्ति"
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:287
+#: activities/sketch/ColorSelector.qml:289
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
 msgstr "लाघवम्"
 
 #. Reload default color for selected slot
-#: activities/sketch/ColorSelector.qml:324
+#: activities/sketch/ColorSelector.qml:326
 msgctxt "ColorSelector|"
 msgid "Reset Color"
 msgstr "Reset Color"
 
-#: activities/sketch/ColorsPanel.qml:157
+#: activities/sketch/ColorsPanel.qml:159
 msgctxt "ColorsPanel|"
 msgid "Palettes"
 msgstr "पॅलेट्स"
 
-#: activities/sketch/FilesPanel.qml:46
+#: activities/sketch/FilesPanel.qml:47
 msgctxt "FilesPanel|"
 msgid "Save your image"
 msgstr "स्वस्य चित्रं रक्षतु"
 
-#: activities/sketch/FilesPanel.qml:85
+#: activities/sketch/FilesPanel.qml:86
 msgctxt "FilesPanel|"
 msgid "Open an image"
 msgstr "एकं चित्रं उद्घाटयन्तु"
 
-#: activities/sketch/FilesPanel.qml:116
+#: activities/sketch/FilesPanel.qml:117
 msgctxt "FilesPanel|"
 msgid "New image settings"
 msgstr "नवीनाः चित्रसेटिंग्स्"
 
-#: activities/sketch/FilesPanel.qml:144
+#: activities/sketch/FilesPanel.qml:145
 msgctxt "FilesPanel|"
 msgid "Background color"
 msgstr "पृष्ठभूमि रंग"
 
-#: activities/sketch/FilesPanel.qml:190
+#: activities/sketch/FilesPanel.qml:191
 msgctxt "FilesPanel|"
 msgid "Background image"
 msgstr "पृष्ठभूमि चित्र"
 
-#: activities/sketch/FilesPanel.qml:231
+#: activities/sketch/FilesPanel.qml:232
 msgctxt "FilesPanel|"
 msgid "Create a new image"
 msgstr "नूतनं चित्रं रचयन्तु"
@@ -23532,52 +23540,52 @@ msgctxt "TextToolPanel|"
 msgid "Type your text here"
 msgstr "अत्र स्वस्य पाठं टङ्कयन्तु"
 
-#: activities/sketch/ToolsPanel.qml:253
+#: activities/sketch/ToolsPanel.qml:255
 msgctxt "ToolsPanel|"
 msgid "Tools"
 msgstr "उपकरणाः"
 
-#: activities/sketch/ToolsPanel.qml:427
+#: activities/sketch/ToolsPanel.qml:429
 msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
 msgstr "साधनसेटिंग्स् पुनः सेट् कुर्वन्तु"
 
-#: activities/sketch/ToolsPanel.qml:483
+#: activities/sketch/ToolsPanel.qml:485
 msgctxt "ToolsPanel|"
 msgid "Opacity"
 msgstr "अपारदर्शिता"
 
-#: activities/sketch/ToolsPanel.qml:506
+#: activities/sketch/ToolsPanel.qml:508
 msgctxt "ToolsPanel|"
 msgid "Size"
 msgstr "आकृति"
 
-#: activities/sketch/ToolsPanel.qml:526
+#: activities/sketch/ToolsPanel.qml:528
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "गति"
 
-#: activities/sketch/ToolsPanel.qml:546
+#: activities/sketch/ToolsPanel.qml:548
 msgctxt "ToolsPanel|"
 msgid "Density"
 msgstr "घनत्व"
 
-#: activities/sketch/ToolsPanel.qml:566
+#: activities/sketch/ToolsPanel.qml:568
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
 msgstr "बिन्दवः आकारः"
 
-#: activities/sketch/ToolsPanel.qml:585
+#: activities/sketch/ToolsPanel.qml:587
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
 msgstr "स्मूथिंग"
 
-#: activities/sketch/ToolsPanel.qml:646
+#: activities/sketch/ToolsPanel.qml:648
 msgctxt "ToolsPanel|"
 msgid "Rotation"
 msgstr "परिभ्रमणम्"
 
-#: activities/sketch/ToolsPanel.qml:662
+#: activities/sketch/ToolsPanel.qml:664
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
 msgstr "दर्पणप्रतिबिम्बम्"

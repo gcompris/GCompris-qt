@@ -2950,7 +2950,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Kjo figurë do t’ju ndihmojë të llogaritni vlerën e elementëve."
 
-#: activities/binary_bulb/BinaryBulb.qml:139
+#: activities/binary_bulb/BinaryBulb.qml:126
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3304,37 +3304,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "Tasti Hapësirë ose Enter: shihni vlefshmërinë e përgjigjes tuaj"
 
-#: activities/calendar/Calendar.qml:114
+#: activities/calendar/Calendar.qml:94
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "E diel"
 
-#: activities/calendar/Calendar.qml:115
+#: activities/calendar/Calendar.qml:95
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "E hënë"
 
-#: activities/calendar/Calendar.qml:116
+#: activities/calendar/Calendar.qml:96
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "E martë"
 
-#: activities/calendar/Calendar.qml:117
+#: activities/calendar/Calendar.qml:97
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "E mërkurë"
 
-#: activities/calendar/Calendar.qml:118
+#: activities/calendar/Calendar.qml:98
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "E enjte"
 
-#: activities/calendar/Calendar.qml:119
+#: activities/calendar/Calendar.qml:99
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "E premte"
 
-#: activities/calendar/Calendar.qml:120
+#: activities/calendar/Calendar.qml:100
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "E shtunë"
@@ -3707,7 +3707,7 @@ msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Mos e shfaq kurrë më këtë dialog"
 
-#: activities/categorization/CategoryReview.qml:185
+#: activities/categorization/CategoryReview.qml:176
 msgctxt "CategoryReview|"
 msgid ""
 "Place the majority category images to the right and other images to the left"
@@ -5225,12 +5225,12 @@ msgstr ""
 "Akrepi më i shkurtër tregon orët, një pak më i gjatë tregon minutat dhe më i "
 "gjati tregon sekondat."
 
-#: activities/clockgame/Clockgame.qml:121
+#: activities/clockgame/Clockgame.qml:112
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Vëreni orën sa:"
 
-#: activities/clockgame/Clockgame.qml:124
+#: activities/clockgame/Clockgame.qml:115
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5238,7 +5238,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n orë"
 msgstr[1] "%n orë"
 
-#: activities/clockgame/Clockgame.qml:127
+#: activities/clockgame/Clockgame.qml:118
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5246,7 +5246,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n minutë"
 msgstr[1] "%n minuta"
 
-#: activities/clockgame/Clockgame.qml:130
+#: activities/clockgame/Clockgame.qml:121
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5549,7 +5549,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Gjeni rosakun e trëndafiltë"
 
-#: activities/colors/FindIt.qml:276
+#: activities/colors/FindIt.qml:266
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5558,12 +5558,12 @@ msgstr ""
 "Kjo veprimtari lyp tinguj, ndaj do të luhen ca tinguj, edhe nëse zërat ose "
 "efektet zanore janë çaktivizuar te formësimi kryesor."
 
-#: activities/colors/FindIt.qml:277
+#: activities/colors/FindIt.qml:267
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Dilni"
 
-#: activities/colors/FindIt.qml:278
+#: activities/colors/FindIt.qml:268
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Vazhdoni"
@@ -7017,7 +7017,7 @@ msgstr ""
 "Në shkallën e tretë, shfaqet një tekst kuturu dhe duhet të klikoni mbi "
 "kafshën me të cilën ka lidhje teksti."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:333
+#: activities/explore_farm_animals/ExploreLevels.qml:306
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -7026,12 +7026,12 @@ msgstr ""
 "Kjo veprimtari lyp tinguj, ndaj do të luhen ca tinguj, edhe nëse zërat ose "
 "efektet zanore janë çaktivizuar te formësimi kryesor."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:334
+#: activities/explore_farm_animals/ExploreLevels.qml:307
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Dilni"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:335
+#: activities/explore_farm_animals/ExploreLevels.qml:308
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Vazhdoni"
@@ -8990,7 +8990,7 @@ msgctxt "Family|"
 msgid "?"
 msgstr "?"
 
-#: activities/family/Family.qml:353
+#: activities/family/Family.qml:337
 #, qt-format
 msgctxt "Family|"
 msgid "Select one of the pairs corresponding to: %1"
@@ -9922,7 +9922,15 @@ msgstr ""
 "Tasti Tab: kaloni nga mënyra përpunim bordurash në parje modeli, ose "
 "anasjelltas"
 
-#: activities/frieze/Frieze.qml:306
+#: activities/frieze/Frieze.qml:109
+#, fuzzy, qt-format
+#| msgctxt "BinaryBulb|"
+#| msgid "What is the binary representation of %1?"
+msgctxt "Frieze|"
+msgid "What is the binary representation of %1?"
+msgstr "Cila është paraqitja dyore e %1?"
+
+#: activities/frieze/Frieze.qml:288
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Jam Gati"
@@ -15000,7 +15008,7 @@ msgstr ""
 "Tërhiqni te kutitë numrat dhe veprimet e duhura, që të përftoni numrin e "
 "dhënë te udhëzimet."
 
-#: activities/guesscount/Admin.qml:33
+#: activities/guesscount/Admin.qml:35
 #, qt-format
 msgctxt "Admin|"
 msgid "Level %1"
@@ -15022,12 +15030,12 @@ msgctxt "Guesscount|"
 msgid "Guesscount: %1"
 msgstr "Gjeni Veprimin: %1"
 
-#: activities/guesscount/OperandRow.qml:36
+#: activities/guesscount/OperandRow.qml:38
 msgctxt "OperandRow|"
 msgid "Numbers"
 msgstr "Numra"
 
-#: activities/guesscount/OperatorRow.qml:37
+#: activities/guesscount/OperatorRow.qml:39
 msgctxt "OperatorRow|"
 msgid "Operators"
 msgstr "Operatorë"
@@ -24096,76 +24104,76 @@ msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
 msgstr "Mjete Vizatimi"
 
-#: activities/sketch/ColorSelector.qml:76
+#: activities/sketch/ColorSelector.qml:78
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
 msgstr "Ngjyra Palete"
 
-#: activities/sketch/ColorSelector.qml:160
+#: activities/sketch/ColorSelector.qml:162
 msgctxt "ColorSelector|"
 msgid "Reset palette"
 msgstr "Ricaktoni paletë"
 
-#: activities/sketch/ColorSelector.qml:211
+#: activities/sketch/ColorSelector.qml:213
 msgctxt "ColorSelector|"
 msgid "Selected Color"
 msgstr "Ngjyrë e Përzgjedhur"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:235
+#: activities/sketch/ColorSelector.qml:237
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
 msgstr "Ngjyrim"
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:262
+#: activities/sketch/ColorSelector.qml:264
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
 msgstr "Ngopje"
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:287
+#: activities/sketch/ColorSelector.qml:289
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
 msgstr "Ndriçim"
 
 #. Reload default color for selected slot
-#: activities/sketch/ColorSelector.qml:324
+#: activities/sketch/ColorSelector.qml:326
 msgctxt "ColorSelector|"
 msgid "Reset Color"
 msgstr "Ricaktoni Ngjyrën"
 
-#: activities/sketch/ColorsPanel.qml:157
+#: activities/sketch/ColorsPanel.qml:159
 msgctxt "ColorsPanel|"
 msgid "Palettes"
 msgstr "Paleta"
 
-#: activities/sketch/FilesPanel.qml:46
+#: activities/sketch/FilesPanel.qml:47
 msgctxt "FilesPanel|"
 msgid "Save your image"
 msgstr "Ruani figurën tuaj"
 
-#: activities/sketch/FilesPanel.qml:85
+#: activities/sketch/FilesPanel.qml:86
 msgctxt "FilesPanel|"
 msgid "Open an image"
 msgstr "Hapni një figurë"
 
-#: activities/sketch/FilesPanel.qml:116
+#: activities/sketch/FilesPanel.qml:117
 msgctxt "FilesPanel|"
 msgid "New image settings"
 msgstr "Rregullime figure të re"
 
-#: activities/sketch/FilesPanel.qml:144
+#: activities/sketch/FilesPanel.qml:145
 msgctxt "FilesPanel|"
 msgid "Background color"
 msgstr "Ngjyrë sfondi"
 
-#: activities/sketch/FilesPanel.qml:190
+#: activities/sketch/FilesPanel.qml:191
 msgctxt "FilesPanel|"
 msgid "Background image"
 msgstr "Figurë sfond"
 
-#: activities/sketch/FilesPanel.qml:231
+#: activities/sketch/FilesPanel.qml:232
 msgctxt "FilesPanel|"
 msgid "Create a new image"
 msgstr "Krijoni një figurë të re"
@@ -24226,52 +24234,52 @@ msgctxt "TextToolPanel|"
 msgid "Type your text here"
 msgstr "Shtypni këtu tekstin tuaj"
 
-#: activities/sketch/ToolsPanel.qml:253
+#: activities/sketch/ToolsPanel.qml:255
 msgctxt "ToolsPanel|"
 msgid "Tools"
 msgstr "Mjete"
 
-#: activities/sketch/ToolsPanel.qml:427
+#: activities/sketch/ToolsPanel.qml:429
 msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
 msgstr "Rikthe rregullime mjetesh te parazgjedhjet"
 
-#: activities/sketch/ToolsPanel.qml:483
+#: activities/sketch/ToolsPanel.qml:485
 msgctxt "ToolsPanel|"
 msgid "Opacity"
 msgstr "Patejdukshmëri"
 
-#: activities/sketch/ToolsPanel.qml:506
+#: activities/sketch/ToolsPanel.qml:508
 msgctxt "ToolsPanel|"
 msgid "Size"
 msgstr "Madhësi"
 
-#: activities/sketch/ToolsPanel.qml:526
+#: activities/sketch/ToolsPanel.qml:528
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "Shpejtësi"
 
-#: activities/sketch/ToolsPanel.qml:546
+#: activities/sketch/ToolsPanel.qml:548
 msgctxt "ToolsPanel|"
 msgid "Density"
 msgstr "Dendësi"
 
-#: activities/sketch/ToolsPanel.qml:566
+#: activities/sketch/ToolsPanel.qml:568
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
 msgstr "Madhësi Pikash"
 
-#: activities/sketch/ToolsPanel.qml:585
+#: activities/sketch/ToolsPanel.qml:587
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
 msgstr "Zbutje"
 
-#: activities/sketch/ToolsPanel.qml:646
+#: activities/sketch/ToolsPanel.qml:648
 msgctxt "ToolsPanel|"
 msgid "Rotation"
 msgstr "Rrotullim"
 
-#: activities/sketch/ToolsPanel.qml:662
+#: activities/sketch/ToolsPanel.qml:664
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
 msgstr "Pasqyrojeni figurën"

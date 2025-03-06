@@ -2945,7 +2945,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Du kan bruka denne teikninga for å rekna ut verdien til kvar bit."
 
-#: activities/binary_bulb/BinaryBulb.qml:139
+#: activities/binary_bulb/BinaryBulb.qml:126
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3297,37 +3297,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "Mellomrom eller Enter: Sjå om svaret er rett"
 
-#: activities/calendar/Calendar.qml:114
+#: activities/calendar/Calendar.qml:94
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "Sundag"
 
-#: activities/calendar/Calendar.qml:115
+#: activities/calendar/Calendar.qml:95
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "Måndag"
 
-#: activities/calendar/Calendar.qml:116
+#: activities/calendar/Calendar.qml:96
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "Tysdag"
 
-#: activities/calendar/Calendar.qml:117
+#: activities/calendar/Calendar.qml:97
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "Onsdag"
 
-#: activities/calendar/Calendar.qml:118
+#: activities/calendar/Calendar.qml:98
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "Torsdag"
 
-#: activities/calendar/Calendar.qml:119
+#: activities/calendar/Calendar.qml:99
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "Fredag"
 
-#: activities/calendar/Calendar.qml:120
+#: activities/calendar/Calendar.qml:100
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "Laurdag"
@@ -3698,7 +3698,7 @@ msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Vis aldri dette spørsmålet meir"
 
-#: activities/categorization/CategoryReview.qml:185
+#: activities/categorization/CategoryReview.qml:176
 msgctxt "CategoryReview|"
 msgid ""
 "Place the majority category images to the right and other images to the left"
@@ -5135,12 +5135,12 @@ msgstr ""
 "Den kortaste visaren viser timane, den mellomste minutta og den lengste "
 "sekunda."
 
-#: activities/clockgame/Clockgame.qml:121
+#: activities/clockgame/Clockgame.qml:112
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Set uret til"
 
-#: activities/clockgame/Clockgame.qml:124
+#: activities/clockgame/Clockgame.qml:115
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5149,7 +5149,7 @@ msgstr[0] "%n time"
 msgstr[1] "%n timar"
 
 # Nødvendig med «og» for å få grammatisk setning (eks. «Set uret til 9 timar og 45 minutt»).
-#: activities/clockgame/Clockgame.qml:127
+#: activities/clockgame/Clockgame.qml:118
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5157,7 +5157,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "og %n minutt"
 msgstr[1] "og %n minutt"
 
-#: activities/clockgame/Clockgame.qml:130
+#: activities/clockgame/Clockgame.qml:121
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5456,7 +5456,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Finn den rosa anda"
 
-#: activities/colors/FindIt.qml:276
+#: activities/colors/FindIt.qml:266
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5465,12 +5465,12 @@ msgstr ""
 "Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
 "og lydeffektar er slått av i innstillingane."
 
-#: activities/colors/FindIt.qml:277
+#: activities/colors/FindIt.qml:267
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: activities/colors/FindIt.qml:278
+#: activities/colors/FindIt.qml:268
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Hald fram"
@@ -6915,7 +6915,7 @@ msgid ""
 msgstr ""
 "På det tredje brettet må du lesa litt om eit dyr og så trykkja på det dyret."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:333
+#: activities/explore_farm_animals/ExploreLevels.qml:306
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -6924,12 +6924,12 @@ msgstr ""
 "Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
 "og lydeffektar er slått av i innstillingane."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:334
+#: activities/explore_farm_animals/ExploreLevels.qml:307
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:335
+#: activities/explore_farm_animals/ExploreLevels.qml:308
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Hald fram"
@@ -8858,7 +8858,7 @@ msgid "?"
 msgstr "?"
 
 # Vert misvisande med «Vel eitt av para», for av og til finst det berre eitt gyldig par.
-#: activities/family/Family.qml:353
+#: activities/family/Family.qml:337
 #, qt-format
 msgctxt "Family|"
 msgid "Select one of the pairs corresponding to: %1"
@@ -9784,7 +9784,15 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Tabulator: Byt mellom frisebygging og vising av modellen"
 
-#: activities/frieze/Frieze.qml:306
+#: activities/frieze/Frieze.qml:109
+#, fuzzy, qt-format
+#| msgctxt "BinaryBulb|"
+#| msgid "What is the binary representation of %1?"
+msgctxt "Frieze|"
+msgid "What is the binary representation of %1?"
+msgstr "Kva vert talet %1 i totalssystemet?"
+
+#: activities/frieze/Frieze.qml:288
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Eg er klar"
@@ -14908,7 +14916,7 @@ msgid ""
 msgstr ""
 "Dra tala og operatorane til dei farge felta, slik at sluttsvaret vert rett."
 
-#: activities/guesscount/Admin.qml:33
+#: activities/guesscount/Admin.qml:35
 #, qt-format
 msgctxt "Admin|"
 msgid "Level %1"
@@ -14930,12 +14938,12 @@ msgctxt "Guesscount|"
 msgid "Guesscount: %1"
 msgstr "Sluttsvar: %1"
 
-#: activities/guesscount/OperandRow.qml:36
+#: activities/guesscount/OperandRow.qml:38
 msgctxt "OperandRow|"
 msgid "Numbers"
 msgstr "Tal"
 
-#: activities/guesscount/OperatorRow.qml:37
+#: activities/guesscount/OperatorRow.qml:39
 msgctxt "OperatorRow|"
 msgid "Operators"
 msgstr "Operatorar"
@@ -24001,87 +24009,87 @@ msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
 msgstr ""
 
-#: activities/sketch/ColorSelector.qml:76
+#: activities/sketch/ColorSelector.qml:78
 #, fuzzy
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
 msgstr "Lag lik farge"
 
-#: activities/sketch/ColorSelector.qml:160
+#: activities/sketch/ColorSelector.qml:162
 msgctxt "ColorSelector|"
 msgid "Reset palette"
 msgstr ""
 
-#: activities/sketch/ColorSelector.qml:211
+#: activities/sketch/ColorSelector.qml:213
 #, fuzzy
 msgctxt "ColorSelector|"
 msgid "Selected Color"
 msgstr "Valt"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:235
+#: activities/sketch/ColorSelector.qml:237
 #, fuzzy
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
 msgstr "Hubei"
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:262
+#: activities/sketch/ColorSelector.qml:264
 #, fuzzy
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
 msgstr "Saturn"
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:287
+#: activities/sketch/ColorSelector.qml:289
 #, fuzzy
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
 msgstr "Av med lysa"
 
 #. Reload default color for selected slot
-#: activities/sketch/ColorSelector.qml:324
+#: activities/sketch/ColorSelector.qml:326
 msgctxt "ColorSelector|"
 msgid "Reset Color"
 msgstr ""
 
-#: activities/sketch/ColorsPanel.qml:157
+#: activities/sketch/ColorsPanel.qml:159
 #, fuzzy
 msgctxt "ColorsPanel|"
 msgid "Palettes"
 msgstr "Palestina"
 
-#: activities/sketch/FilesPanel.qml:46
+#: activities/sketch/FilesPanel.qml:47
 #, fuzzy
 msgctxt "FilesPanel|"
 msgid "Save your image"
 msgstr "Vel modus"
 
-#: activities/sketch/FilesPanel.qml:85
+#: activities/sketch/FilesPanel.qml:86
 #, fuzzy
 msgctxt "FilesPanel|"
 msgid "Open an image"
 msgstr "Mange nye bilete"
 
-#: activities/sketch/FilesPanel.qml:116
+#: activities/sketch/FilesPanel.qml:117
 #, fuzzy
 msgctxt "FilesPanel|"
 msgid "New image settings"
 msgstr "%1-innstillingar"
 
-#: activities/sketch/FilesPanel.qml:144
+#: activities/sketch/FilesPanel.qml:145
 #, fuzzy
 msgctxt "FilesPanel|"
 msgid "Background color"
 msgstr "Bakgrunn"
 
-#: activities/sketch/FilesPanel.qml:190
+#: activities/sketch/FilesPanel.qml:191
 #, fuzzy
 msgctxt "FilesPanel|"
 msgid "Background image"
 msgstr "Bakgrunn"
 
-#: activities/sketch/FilesPanel.qml:231
+#: activities/sketch/FilesPanel.qml:232
 #, fuzzy
 msgctxt "FilesPanel|"
 msgid "Create a new image"
@@ -24147,56 +24155,56 @@ msgctxt "TextToolPanel|"
 msgid "Type your text here"
 msgstr ""
 
-#: activities/sketch/ToolsPanel.qml:253
+#: activities/sketch/ToolsPanel.qml:255
 #, fuzzy
 msgctxt "ToolsPanel|"
 msgid "Tools"
 msgstr "Verktøy"
 
-#: activities/sketch/ToolsPanel.qml:427
+#: activities/sketch/ToolsPanel.qml:429
 msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
 msgstr ""
 
-#: activities/sketch/ToolsPanel.qml:483
+#: activities/sketch/ToolsPanel.qml:485
 msgctxt "ToolsPanel|"
 msgid "Opacity"
 msgstr ""
 
-#: activities/sketch/ToolsPanel.qml:506
+#: activities/sketch/ToolsPanel.qml:508
 msgctxt "ToolsPanel|"
 msgid "Size"
 msgstr ""
 
-#: activities/sketch/ToolsPanel.qml:526
+#: activities/sketch/ToolsPanel.qml:528
 #, fuzzy
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "Fart"
 
-#: activities/sketch/ToolsPanel.qml:546
+#: activities/sketch/ToolsPanel.qml:548
 msgctxt "ToolsPanel|"
 msgid "Density"
 msgstr ""
 
-#: activities/sketch/ToolsPanel.qml:566
+#: activities/sketch/ToolsPanel.qml:568
 #, fuzzy
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
 msgstr "Prikkar"
 
-#: activities/sketch/ToolsPanel.qml:585
+#: activities/sketch/ToolsPanel.qml:587
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
 msgstr ""
 
-#: activities/sketch/ToolsPanel.qml:646
+#: activities/sketch/ToolsPanel.qml:648
 #, fuzzy
 msgctxt "ToolsPanel|"
 msgid "Rotation"
 msgstr "Handlingar"
 
-#: activities/sketch/ToolsPanel.qml:662
+#: activities/sketch/ToolsPanel.qml:664
 #, fuzzy
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
