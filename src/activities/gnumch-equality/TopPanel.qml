@@ -28,7 +28,8 @@ Item {
     Rectangle {
         id: goalBg
         height: parent.height
-        width: parent.width - (muncherLife.width + GCStyle.halfMargins) * 2
+        width: parent.width - (height + GCStyle.halfMargins) * 2
+        anchors.top: parent.top
         anchors.horizontalCenter: parent.horizontalCenter
         radius: GCStyle.halfMargins
         color: GCStyle.darkBg
@@ -70,8 +71,8 @@ Item {
 
     Rectangle {
         id: muncherLife
-        height: parent.height
-        width: height
+        height: goalBg.height
+        width: goalBg.height
         anchors.right: parent.right
         anchors.top: parent.top
         border.width: GCStyle.thinnestBorder
@@ -94,8 +95,8 @@ Item {
         anchors.left: parent.left
         anchors.top: parent.top
         source: "qrc:/gcompris/src/core/resource/arrows_move.svg"
-        width: muncherLife.width
-        height: muncherLife.height
+        width: goalBg.height
+        height: goalBg.height
         sourceSize.height: height
         fillMode: Image.PreserveAspectFit
         opacity: ApplicationInfo.isMobile ? 1 : 0
