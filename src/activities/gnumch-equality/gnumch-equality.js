@@ -327,6 +327,7 @@ function checkAnswer() {
     }
 
     items.muncher.eating = true;
+    items.eatSound.play();
     // Set the cell invisible if it's the correct answer.
     if (isAnswerCorrect(items.muncher.index)) {
         items.modelCells.get(items.muncher.index).show = false;
@@ -369,6 +370,7 @@ function monsterCheckCell(monster_) {
     if(monster_.index === items.muncher.index && items.muncher.movable) {
         playerGotCaught(-1);
         monster_.eating = true;
+        items.eatSound.play()
     }
     if(checkOtherMonster(monster_.index)) {
         monster_.eating = true;

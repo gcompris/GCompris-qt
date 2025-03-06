@@ -80,10 +80,9 @@ Item {
     y: height * Math.floor(index / 6)
 
     onEatingChanged: {
-        if (eating == true) {
+        if(eating == true) {
             creatureImage.restart()
             creatureImage.resume()
-            items.eatSound.play()
         }
     }
 

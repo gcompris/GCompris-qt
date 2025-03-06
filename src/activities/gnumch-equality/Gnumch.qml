@@ -162,7 +162,10 @@ ActivityBase {
 
             GridView {
                 id: gridBackground
-                anchors.fill: parent
+                anchors.top: parent.top
+                anchors.right: parent.right
+                width: cellWidth * 6
+                height: cellHeight * 6
                 cellHeight: parent.height / 7 // add one line for the bottom panel
                 cellWidth: parent.width / 6
                 interactive: false
@@ -224,7 +227,10 @@ ActivityBase {
 
             GridView {
                 id: gridNumbers
-                anchors.fill: parent
+                anchors.top: parent.top
+                anchors.right: parent.right
+                width: gridBackground.width
+                height: gridBackground.height
                 cellHeight: gridBackground.cellHeight
                 cellWidth: gridBackground.cellWidth
                 interactive: false
@@ -270,10 +276,12 @@ ActivityBase {
             }
 
             TopPanel {
-                anchors.bottom: parent.bottom
+                id: topPanel
+                anchors.top: gridBackground.bottom
+                anchors.topMargin: GCStyle.halfMargins
                 anchors.left: parent.left
                 anchors.right: parent.right
-                height: gridBackground.cellHeight
+                height: Math.min(gridBackground.cellHeight - GCStyle.halfMargins, GCStyle.bigButtonHeight)
                 activityType: activity.type
                 goal: items.goal
                 life: items.life
@@ -283,7 +291,6 @@ ActivityBase {
                 id: warning
                 anchors.centerIn: gridBackground
             }
-
         }
 
         Bar {
@@ -321,10 +328,10 @@ ActivityBase {
         WarnMonster {
             id: warnMonsters
             z: 1000
-            anchors.top: gridPart.bottom
+            y: gridPart.y + topPanel.y + topPanel.height + GCStyle.halfMargins
             anchors.horizontalCenter: parent.horizontalCenter
             width: gridPart.width
-            height: gridBackground.cellHeight
+            height: Math.min(topPanel.height, bar.height)
         }
 
         DialogHelp {
