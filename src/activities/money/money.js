@@ -122,6 +122,12 @@ function initLevel() {
             }
             priceTotal += cents
             price += cents
+            // For the last item, make sure we are not above the maximum
+            if(priceTotal > data.maxPrice && i == data.numberOfItem - 1) {
+                var diff = priceTotal - data.maxPrice
+                priceTotal = data.maxPrice
+                price -= diff
+            }
         }
 
         var priceText = Core.convertNumberToLocaleCurrencyString(Number(price), locale)
