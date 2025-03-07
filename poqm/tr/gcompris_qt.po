@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-04 12:40+0300\n"
+"PO-Revision-Date: 2025-03-06 22:32+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -890,7 +890,7 @@ msgid ""
 "numbers. You have to be fast and submit the answer before the penguins in "
 "their balloon land!"
 msgstr ""
-"Ekranda bir çarpma işlemi görünüyor. Hızlıca onları çarp ve ekrandaki düğme "
+"Ekranda bir çarpma işlemi görünüyor. Tez onları çarp ve ekrandaki düğme "
 "takımını veya bilgisayarın klavyesini kullanarak sayıların çarpımını gir. "
 "Hızlı olmalı ve balondaki penguenler aşağı düşmeden önce yanıtlamalısın!"
 
@@ -1018,7 +1018,7 @@ msgid ""
 "computer's keyboard or the on-screen keypad to type it. You have to be fast "
 "and submit the answer before the penguins in their balloon land!"
 msgstr ""
-"Ekranda bir bölme işlemi görünüyor. Hızlıca sonucu bul ve ekrandaki düğme "
+"Ekranda bir bölme işlemi görünüyor. Tez sonucu bul ve ekrandaki düğme "
 "takımını veya bilgisayarın klavyesini kullanarak sonucu gir. Hızlı olmalı ve "
 "balondaki penguenler aşağı inmeden önce yanıtlamalısın!"
 
@@ -1111,7 +1111,7 @@ msgid ""
 "your computer's keyboard or the on-screen keypad to type it. You have to be "
 "fast and submit the answer before the penguins in their balloon land!"
 msgstr ""
-"Ekranda bir çıkarma işlemi görünüyor. Hızlıca sonucu bul ve ekrandaki düğme "
+"Ekranda bir çıkarma işlemi görünüyor. Tez sonucu bul ve ekrandaki düğme "
 "takımını veya bilgisayarın klavyesini kullanarak sonucu gir. Hızlı olmalı ve "
 "balondaki penguenler aşağı inmeden önce yanıtlamalısın!"
 
@@ -1212,7 +1212,7 @@ msgid ""
 "computer's keyboard or the on-screen keypad to type it. You have to be fast "
 "and submit the answer before the penguins land in their balloon!"
 msgstr ""
-"Ekranda bir toplama işlemi görünüyor. Hızlıca iki sayının toplamını bul ve "
+"Ekranda bir toplama işlemi görünüyor. Tez iki sayının toplamını bul ve "
 "ekrandaki düğme takımını veya bilgisayarın klavyesini kullanarak sonucu gir. "
 "Hızlı olmalı ve balondaki penguenler aşağı inmeden önce yanıtlamalısın!"
 
@@ -10294,12 +10294,10 @@ msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Sekme: Frizi düzenleme ve modeli görüntüleme arasında geçiş yap"
 
 #: activities/frieze/Frieze.qml:109
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulb|"
-#| msgid "What is the binary representation of %1?"
+#, qt-format
 msgctxt "Frieze|"
 msgid "What is the binary representation of %1?"
-msgstr "%1 ikili sistemde neyi temsil eder?"
+msgstr "%1 ikili sistemde nasıl gösterilir?"
 
 #: activities/frieze/Frieze.qml:288
 msgctxt "Frieze|"
@@ -14479,60 +14477,60 @@ msgctxt "Data|"
 msgid "Practice division equality."
 msgstr "Bölme eşitliği alıştırması yap."
 
-#: activities/gnumch-equality/TopPanel.qml:52
+#: activities/gnumch-equality/TopPanel.qml:51
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Equal to %1"
 msgstr "%1 sayısına eşit"
 
-#: activities/gnumch-equality/TopPanel.qml:54
+#: activities/gnumch-equality/TopPanel.qml:53
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Not equal to %1"
 msgstr "%1 sayısına eşit değil"
 
-#: activities/gnumch-equality/TopPanel.qml:56
+#: activities/gnumch-equality/TopPanel.qml:55
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Factor of %1"
 msgstr "%1 sayısını çarpanı"
 
-#: activities/gnumch-equality/TopPanel.qml:58
+#: activities/gnumch-equality/TopPanel.qml:57
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Multiple of %1"
 msgstr "%1 sayısının katı"
 
-#: activities/gnumch-equality/TopPanel.qml:60
+#: activities/gnumch-equality/TopPanel.qml:59
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Primes less than %1"
 msgstr "%1 sayısından küçük asal sayılar"
 
-#: activities/gnumch-equality/Warning.qml:39
+#: activities/gnumch-equality/Warning.qml:26
 msgctxt "Warning|"
 msgid "You were eaten by a Troggle."
 msgstr "Unga seni yedi."
 
-#: activities/gnumch-equality/Warning.qml:43
+#: activities/gnumch-equality/Warning.qml:30
 msgctxt "Warning|"
 msgid "You ate a wrong number."
 msgstr "Yanlış bir sayıyı yedin."
 
-#: activities/gnumch-equality/Warning.qml:60
+#: activities/gnumch-equality/Warning.qml:47
 msgctxt "Warning|"
 msgid "1 is not a prime number."
 msgstr "1, asal sayı değildir."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>)
-#: activities/gnumch-equality/Warning.qml:75
+#: activities/gnumch-equality/Warning.qml:62
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is a non-prime number, its divisors are: %2"
 msgstr "%1 asal olmayan bir sayıdır, bölenleri: %2"
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
-#: activities/gnumch-equality/Warning.qml:79
+#: activities/gnumch-equality/Warning.qml:66
 #, qt-format
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
@@ -14541,18 +14539,18 @@ msgstr ""
 "bir çarpanı değildir."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
-#: activities/gnumch-equality/Warning.qml:94
+#: activities/gnumch-equality/Warning.qml:81
 #, qt-format
 msgctxt "Warning|"
 msgid "Divisors of %1 are: %2"
 msgstr "%1 sayısının bölenleri: %2"
 
-#: activities/gnumch-equality/Warning.qml:124
+#: activities/gnumch-equality/Warning.qml:100
 msgctxt "Warning|"
 msgid "Press \"Return\" or click on me to continue."
 msgstr "Sürdürmek için “Dönüş” düğmesine veya buraya bas."
 
-#: activities/gnumch-equality/WarnMonster.qml:41
+#: activities/gnumch-equality/WarnMonster.qml:39
 msgctxt "WarnMonster|"
 msgid "Be careful, a troggle!"
 msgstr "Dikkatli ol, bir Unga var!"
@@ -19760,7 +19758,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
 msgstr "Sekme: Alt ve üst alanlar arasında dolaş"
 
-#: activities/money/money.js:142
+#: activities/money/money.js:148
 msgctxt "money|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
@@ -19770,7 +19768,7 @@ msgstr ""
 "para veya banknot (kâğıt para) çıkarmak istiyorsan ekranın üst kısmında "
 "paranın üzerine tıkla."
 
-#: activities/money/money.js:173
+#: activities/money/money.js:179
 #, qt-format
 msgctxt "money|"
 msgid ""
