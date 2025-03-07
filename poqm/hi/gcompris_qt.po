@@ -15303,60 +15303,60 @@ msgctxt "Data|"
 msgid "Practice division equality."
 msgstr "भाग प्रक्रियाओं का अभ्यास करें"
 
-#: activities/gnumch-equality/TopPanel.qml:52
+#: activities/gnumch-equality/TopPanel.qml:51
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Equal to %1"
 msgstr "%1 के बराबर"
 
-#: activities/gnumch-equality/TopPanel.qml:54
+#: activities/gnumch-equality/TopPanel.qml:53
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Not equal to %1"
 msgstr "%1 के बराबर नहीं है"
 
-#: activities/gnumch-equality/TopPanel.qml:56
+#: activities/gnumch-equality/TopPanel.qml:55
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Factor of %1"
 msgstr "%1 के फ़ैक्टर"
 
-#: activities/gnumch-equality/TopPanel.qml:58
+#: activities/gnumch-equality/TopPanel.qml:57
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Multiple of %1"
 msgstr "%1 के गुणक"
 
-#: activities/gnumch-equality/TopPanel.qml:60
+#: activities/gnumch-equality/TopPanel.qml:59
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Primes less than %1"
 msgstr "%1 से कम अभज्य संख्या "
 
-#: activities/gnumch-equality/Warning.qml:39
+#: activities/gnumch-equality/Warning.qml:26
 msgctxt "Warning|"
 msgid "You were eaten by a Troggle."
 msgstr "आपको एक ट्रॉगल ने खा लिया।"
 
-#: activities/gnumch-equality/Warning.qml:43
+#: activities/gnumch-equality/Warning.qml:30
 msgctxt "Warning|"
 msgid "You ate a wrong number."
 msgstr "आपने एक गलत नंबर खा लिया।"
 
-#: activities/gnumch-equality/Warning.qml:60
+#: activities/gnumch-equality/Warning.qml:47
 msgctxt "Warning|"
 msgid "1 is not a prime number."
 msgstr "1 प्राइम संख्या नहीं है।"
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>)
-#: activities/gnumch-equality/Warning.qml:75
+#: activities/gnumch-equality/Warning.qml:62
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is a non-prime number, its divisors are: %2"
 msgstr ""
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
-#: activities/gnumch-equality/Warning.qml:79
+#: activities/gnumch-equality/Warning.qml:66
 #, fuzzy, qt-format
 #| msgctxt "Warning|"
 #| msgid "but %1 is not a multiple of %2."
@@ -15365,18 +15365,18 @@ msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
 msgstr "परंतु, %2 के गुणक नहीं हैं %1."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
-#: activities/gnumch-equality/Warning.qml:94
+#: activities/gnumch-equality/Warning.qml:81
 #, qt-format
 msgctxt "Warning|"
 msgid "Divisors of %1 are: %2"
 msgstr ""
 
-#: activities/gnumch-equality/Warning.qml:124
+#: activities/gnumch-equality/Warning.qml:100
 msgctxt "Warning|"
 msgid "Press \"Return\" or click on me to continue."
 msgstr "\"रिटर्न\" दबाएँ या जारी रखने के लिए मुझ पर क्लिक करें।"
 
-#: activities/gnumch-equality/WarnMonster.qml:41
+#: activities/gnumch-equality/WarnMonster.qml:39
 #, fuzzy
 #| msgctxt "WarnMonster|"
 #| msgid "Be careful, a troggle !"
@@ -21571,7 +21571,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
 msgstr ""
 
-#: activities/money/money.js:142
+#: activities/money/money.js:148
 #, fuzzy
 #| msgctxt "money|"
 #| msgid ""
@@ -21585,7 +21585,7 @@ msgstr ""
 "भुगतान करने के लिए स्क्रीन के निचले भाग में सिक्के या कागजी पैसे पर क्लिक करें। यदि आप सिक्का "
 "या नोट हटाना चाहते हैं, तो ऊपरी स्क्रीन क्षेत्र पर उस पर क्लिक करें।"
 
-#: activities/money/money.js:173
+#: activities/money/money.js:179
 #, qt-format
 msgctxt "money|"
 msgid ""

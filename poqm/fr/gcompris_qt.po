@@ -14282,60 +14282,60 @@ msgctxt "Data|"
 msgid "Practice division equality."
 msgstr "Divisions dont le résultat est égal à…"
 
-#: activities/gnumch-equality/TopPanel.qml:52
+#: activities/gnumch-equality/TopPanel.qml:51
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Equal to %1"
 msgstr "Égal à %1"
 
-#: activities/gnumch-equality/TopPanel.qml:54
+#: activities/gnumch-equality/TopPanel.qml:53
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Not equal to %1"
 msgstr "Différent de %1"
 
-#: activities/gnumch-equality/TopPanel.qml:56
+#: activities/gnumch-equality/TopPanel.qml:55
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Factor of %1"
 msgstr "Diviseur de %1"
 
-#: activities/gnumch-equality/TopPanel.qml:58
+#: activities/gnumch-equality/TopPanel.qml:57
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Multiple of %1"
 msgstr "Multiple de %1"
 
-#: activities/gnumch-equality/TopPanel.qml:60
+#: activities/gnumch-equality/TopPanel.qml:59
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Primes less than %1"
 msgstr "Nombres premiers plus petits que %1"
 
-#: activities/gnumch-equality/Warning.qml:39
+#: activities/gnumch-equality/Warning.qml:26
 msgctxt "Warning|"
 msgid "You were eaten by a Troggle."
 msgstr "Tu as été mangé par un Troggle."
 
-#: activities/gnumch-equality/Warning.qml:43
+#: activities/gnumch-equality/Warning.qml:30
 msgctxt "Warning|"
 msgid "You ate a wrong number."
 msgstr "Tu as mangé un mauvais nombre."
 
-#: activities/gnumch-equality/Warning.qml:60
+#: activities/gnumch-equality/Warning.qml:47
 msgctxt "Warning|"
 msgid "1 is not a prime number."
 msgstr "1 n'est pas un nombre premier."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>)
-#: activities/gnumch-equality/Warning.qml:75
+#: activities/gnumch-equality/Warning.qml:62
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is a non-prime number, its divisors are: %2"
 msgstr "%1 n'est pas un nombre premier, ses diviseurs sont : %2"
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
-#: activities/gnumch-equality/Warning.qml:79
+#: activities/gnumch-equality/Warning.qml:66
 #, qt-format
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
@@ -14343,18 +14343,18 @@ msgstr ""
 "Les multiples de %1 incluent %2 ou %3 mais %4 n'est pas multiple de %5."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
-#: activities/gnumch-equality/Warning.qml:94
+#: activities/gnumch-equality/Warning.qml:81
 #, qt-format
 msgctxt "Warning|"
 msgid "Divisors of %1 are: %2"
 msgstr "Les diviseurs de %1 sont : %2"
 
-#: activities/gnumch-equality/Warning.qml:124
+#: activities/gnumch-equality/Warning.qml:100
 msgctxt "Warning|"
 msgid "Press \"Return\" or click on me to continue."
 msgstr "Appuie sur « Entrée » ou clique-moi dessus pour continuer."
 
-#: activities/gnumch-equality/WarnMonster.qml:41
+#: activities/gnumch-equality/WarnMonster.qml:39
 msgctxt "WarnMonster|"
 msgid "Be careful, a troggle!"
 msgstr "Attention, un Troggle !"
@@ -19688,7 +19688,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
 msgstr "Tab : naviguer entre la zone basse et la zone haute"
 
-#: activities/money/money.js:142
+#: activities/money/money.js:148
 msgctxt "money|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
@@ -19697,7 +19697,7 @@ msgstr ""
 "Clique sur les pièces ou les billets en bas de l'écran pour payer. Si tu "
 "désires retirer une pièce, clique dessus dans la zone du haut."
 
-#: activities/money/money.js:173
+#: activities/money/money.js:179
 #, qt-format
 msgctxt "money|"
 msgid ""

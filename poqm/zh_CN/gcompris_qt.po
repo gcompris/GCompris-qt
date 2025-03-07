@@ -9292,9 +9292,7 @@ msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr ""
 
 #: activities/frieze/Frieze.qml:109
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulb|"
-#| msgid "What is the binary representation of %1?"
+#, qt-format
 msgctxt "Frieze|"
 msgid "What is the binary representation of %1?"
 msgstr "%1 的二进制表示是什么？"
@@ -13445,78 +13443,78 @@ msgctxt "Data|"
 msgid "Practice division equality."
 msgstr ""
 
-#: activities/gnumch-equality/TopPanel.qml:52
+#: activities/gnumch-equality/TopPanel.qml:51
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Equal to %1"
 msgstr "等于 %1"
 
-#: activities/gnumch-equality/TopPanel.qml:54
+#: activities/gnumch-equality/TopPanel.qml:53
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Not equal to %1"
 msgstr "不等于 %1"
 
-#: activities/gnumch-equality/TopPanel.qml:56
+#: activities/gnumch-equality/TopPanel.qml:55
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Factor of %1"
 msgstr "%1 的因数"
 
-#: activities/gnumch-equality/TopPanel.qml:58
+#: activities/gnumch-equality/TopPanel.qml:57
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Multiple of %1"
 msgstr "%1 的倍数"
 
-#: activities/gnumch-equality/TopPanel.qml:60
+#: activities/gnumch-equality/TopPanel.qml:59
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Primes less than %1"
 msgstr "小于 %1 的质数"
 
-#: activities/gnumch-equality/Warning.qml:39
+#: activities/gnumch-equality/Warning.qml:26
 msgctxt "Warning|"
 msgid "You were eaten by a Troggle."
 msgstr "您被 Troggle 怪吃掉了。"
 
-#: activities/gnumch-equality/Warning.qml:43
+#: activities/gnumch-equality/Warning.qml:30
 msgctxt "Warning|"
 msgid "You ate a wrong number."
 msgstr "您吃了一个错误的数字。"
 
-#: activities/gnumch-equality/Warning.qml:60
+#: activities/gnumch-equality/Warning.qml:47
 msgctxt "Warning|"
 msgid "1 is not a prime number."
 msgstr "1 不是质数。"
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>)
-#: activities/gnumch-equality/Warning.qml:75
+#: activities/gnumch-equality/Warning.qml:62
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is a non-prime number, its divisors are: %2"
 msgstr ""
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
-#: activities/gnumch-equality/Warning.qml:79
+#: activities/gnumch-equality/Warning.qml:66
 #, qt-format
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
 msgstr ""
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
-#: activities/gnumch-equality/Warning.qml:94
+#: activities/gnumch-equality/Warning.qml:81
 #, qt-format
 msgctxt "Warning|"
 msgid "Divisors of %1 are: %2"
 msgstr ""
 
-#: activities/gnumch-equality/Warning.qml:124
+#: activities/gnumch-equality/Warning.qml:100
 msgctxt "Warning|"
 msgid "Press \"Return\" or click on me to continue."
 msgstr "按“Return”或者点我继续。"
 
-#: activities/gnumch-equality/WarnMonster.qml:41
+#: activities/gnumch-equality/WarnMonster.qml:39
 msgctxt "WarnMonster|"
 msgid "Be careful, a troggle!"
 msgstr ""
@@ -18395,7 +18393,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
 msgstr ""
 
-#: activities/money/money.js:142
+#: activities/money/money.js:148
 msgctxt "money|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
@@ -18403,7 +18401,7 @@ msgid ""
 msgstr ""
 "点击屏幕底部的硬币或纸币来付款。如果您想要移走硬币或纸币，点击屏幕上方区域。"
 
-#: activities/money/money.js:173
+#: activities/money/money.js:179
 #, qt-format
 msgctxt "money|"
 msgid ""

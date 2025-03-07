@@ -14402,60 +14402,60 @@ msgctxt "Data|"
 msgid "Practice division equality."
 msgstr "Harjoittele jakolaskun yhdenvertaisuutta."
 
-#: activities/gnumch-equality/TopPanel.qml:52
+#: activities/gnumch-equality/TopPanel.qml:51
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Equal to %1"
 msgstr "Yhtä suuri kuin %1"
 
-#: activities/gnumch-equality/TopPanel.qml:54
+#: activities/gnumch-equality/TopPanel.qml:53
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Not equal to %1"
 msgstr "Eri suuri kuin %1"
 
-#: activities/gnumch-equality/TopPanel.qml:56
+#: activities/gnumch-equality/TopPanel.qml:55
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Factor of %1"
 msgstr "%1:n tekijä"
 
-#: activities/gnumch-equality/TopPanel.qml:58
+#: activities/gnumch-equality/TopPanel.qml:57
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Multiple of %1"
 msgstr "%1:n kerrannainen"
 
-#: activities/gnumch-equality/TopPanel.qml:60
+#: activities/gnumch-equality/TopPanel.qml:59
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Primes less than %1"
 msgstr "Alkuluvut, jotka ovat pienempiä kuin %1"
 
-#: activities/gnumch-equality/Warning.qml:39
+#: activities/gnumch-equality/Warning.qml:26
 msgctxt "Warning|"
 msgid "You were eaten by a Troggle."
 msgstr "Peikko söi sinut."
 
-#: activities/gnumch-equality/Warning.qml:43
+#: activities/gnumch-equality/Warning.qml:30
 msgctxt "Warning|"
 msgid "You ate a wrong number."
 msgstr "Söit väärän luvun."
 
-#: activities/gnumch-equality/Warning.qml:60
+#: activities/gnumch-equality/Warning.qml:47
 msgctxt "Warning|"
 msgid "1 is not a prime number."
 msgstr "1 ei ole alkuluku."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>)
-#: activities/gnumch-equality/Warning.qml:75
+#: activities/gnumch-equality/Warning.qml:62
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is a non-prime number, its divisors are: %2"
 msgstr ""
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
-#: activities/gnumch-equality/Warning.qml:79
+#: activities/gnumch-equality/Warning.qml:66
 #, fuzzy, qt-format
 #| msgctxt "Warning|"
 #| msgid "but %1 is not a multiple of %2."
@@ -14464,18 +14464,18 @@ msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
 msgstr "mutta %1 ei ole %2:n kerrannainen."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
-#: activities/gnumch-equality/Warning.qml:94
+#: activities/gnumch-equality/Warning.qml:81
 #, qt-format
 msgctxt "Warning|"
 msgid "Divisors of %1 are: %2"
 msgstr "%1:n tekijät ovat: %2"
 
-#: activities/gnumch-equality/Warning.qml:124
+#: activities/gnumch-equality/Warning.qml:100
 msgctxt "Warning|"
 msgid "Press \"Return\" or click on me to continue."
 msgstr "Jatka painamalla Enter tai napsauttamalla tästä."
 
-#: activities/gnumch-equality/WarnMonster.qml:41
+#: activities/gnumch-equality/WarnMonster.qml:39
 msgctxt "WarnMonster|"
 msgid "Be careful, a troggle!"
 msgstr "Varo – peikko!"
@@ -19949,7 +19949,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
 msgstr "Tab-näppäin: navigoi ala- ja yläosan välillä"
 
-#: activities/money/money.js:142
+#: activities/money/money.js:148
 msgctxt "money|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
@@ -19958,7 +19958,7 @@ msgstr ""
 "Napsauta alhaalla olevia kolikoita tai seteleitä maksaaksesi. Jos haluat "
 "poistaa kolikon tai setelin, napsauta sitä näytön yläosassa."
 
-#: activities/money/money.js:173
+#: activities/money/money.js:179
 #, qt-format
 msgctxt "money|"
 msgid ""
