@@ -1,11 +1,11 @@
 # Amihay Gal <Amihaygal@gmail.com>, 2019.
 # ami.g <amihaygal@gmail.com>, 2020, 2021, 2023.
-# SPDX-FileCopyrightText: 2024 Yaron Shahrabani <sh.yaron@gmail.com>
+# SPDX-FileCopyrightText: 2024, 2025 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-02-01 10:23+0200\n"
+"PO-Revision-Date: 2025-03-07 10:10+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 24.12.0\n"
+"X-Generator: Lokalize 24.12.2\n"
 "X-Qt-Contexts: true\n"
 "X-Poedit-Bookmarks: -1,2919,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
@@ -20578,13 +20578,13 @@ msgstr "לשחק את משחק האסטרטגיה אוֹוַּרֵה עם חבר
 #: activities/paintings/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Assemble the puzzle"
-msgstr "פאזל"
+msgstr "נא לחבר את הפאזל"
 
 #. Help title
 #: activities/paintings/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Drag and Drop the pieces to rebuild the original paintings."
-msgstr "לגרור ולשחרר את החתיכות כדי לבנות מחדש את הציורים המקוריים."
+msgstr "נא לגרור ולשחרר את החתיכות כדי לבנות את הציורים המקוריים מחדש."
 
 #. Help prerequisite
 #: activities/paintings/ActivityInfo.qml:27
@@ -20596,74 +20596,74 @@ msgstr "הפעלת העכבר: הזזה, גרירה ושחרור."
 #: activities/paintings/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Drag the pieces to the right place to rebuild the painting."
-msgstr "לגרור את החתיכות למיקום הנכון כדי לבנות מחדש את הציור."
+msgstr "נא לגרור את החתיכות למקום הנכון כדי לבנות את הציור מחדש."
 
 #: activities/paintings/resource/board/board10_0.qml:14
 msgctxt "board10_0|"
 msgid ""
 "Katsushika Hokusai, Viewing Sunset over the Ryogoku Bridge from the Ommaya "
 "Embankment - 1830"
-msgstr "קצוּשיקה הוקוּסאי, צופה בשקיעה מעל גשר ריגוקוּ מעיקול אומיה - 1830"
+msgstr "קצוּשיקה הוקוּסאי, שקיעה מעל גשר ריוגוקו על גדת נהר סומידה - 1830"
 
 #: activities/paintings/resource/board/board11_0.qml:14
 msgctxt "board11_0|"
 msgid "Katsushika Hokusa, Poppies - 1833-1834"
-msgstr "קאצוסקה הוקוסאי, כלבלבים - 1833-1834"
+msgstr "קָצוּשִיקָה הוֹקוּסַאי, פרחי פרג - 1833-1834"
 
 #: activities/paintings/resource/board/board12_0.qml:14
 msgctxt "board12_0|"
 msgid "Katsushika Hokusai, Kazusa sea Route - 1830."
-msgstr "קאטסושיקה הוקוסאי, כביש הים קזוסה - 1830."
+msgstr "קָצוּשִיקָה הוֹקוּסַאי, מסע בדרך הים למחוז קאזוסה - 1830."
 
 #: activities/paintings/resource/board/board13_0.qml:14
 msgctxt "board13_0|"
 msgid "Michelangelo, Pieta - 1499"
-msgstr "מיכלאנג 'לו, פייטה - 1499"
+msgstr "מיכלאנג׳לו, פייטה - 1499"
 
 #: activities/paintings/resource/board/board14_0.qml:14
 msgctxt "board14_0|"
 msgid "Leonardo da Vinci, Mona Lisa - 1503-19"
-msgstr "ליאונרדו דה-וינצ'י, מונה ליזה - 1503-1519"
+msgstr "לאונרדו דה וינצ׳י, מונה ליזה - 1503-1519"
 
 #: activities/paintings/resource/board/board15_0.qml:14
 msgctxt "board15_0|"
 msgid "Giovanni Bellini, La Pala di Pesaro - 1475-85"
-msgstr "בליני: פאלה די פסרו - 1475-85"
+msgstr "ג׳ובאני בליני, פאלה די פסרו - 1475-85"
 
 #: activities/paintings/resource/board/board16_0.qml:14
 msgctxt "board16_0|"
 msgid "Albrecht Dürer, Lion - 1494"
-msgstr "דירר אלברכט, אריה - 149"
+msgstr "אלברכט דירר, אריה - 1494"
 
 #: activities/paintings/resource/board/board17_0.qml:14
 msgctxt "board17_0|"
 msgid "Pieter Brugel, The Harvesters - 1565"
-msgstr "פיטר ברוגל: קציר - 1565"
+msgstr "פיטר ברויגל, הקוצרים - 1565"
 
 #: activities/paintings/resource/board/board18_0.qml:14
 msgctxt "board18_0|"
 msgid "Pierre-Auguste Renoir, Girls At The Piano - 1892"
-msgstr "פייר אוגוסט רנואר, ילדות ליד הפסנתר- 1892"
+msgstr "פייר אוגוסט רנואר, ילדות ליד פסנתר- 1892"
 
 #: activities/paintings/resource/board/board19_0.qml:14
 msgctxt "board19_0|"
 msgid "Wassily Kandinsky, Composition VIII - 1923"
-msgstr "ואסילי קנדינסקי, קומפוזיציה 8 - 1923"
+msgstr "וסילי קנדינסקי, קומפוזיציה 8 - 1923"
 
 #: activities/paintings/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
 msgid "Pierre-Auguste Renoir, Bal du moulin de la Galette - 1876"
-msgstr "פּייר-אוגוסט רנואק, הנשף במולן דה לה גאלט"
+msgstr "פּייר אוגוסט רנואר, הנשף במולן דה לה גאלט - 1876"
 
 #: activities/paintings/resource/board/board20_0.qml:14
 msgctxt "board20_0|"
 msgid "Bazille, The Ramparts at Aigues-Mortes - 1867"
-msgstr "בזיל, המגן של איגנוס מורטס - 1867"
+msgstr "באזיל, ביצורי איג מורט - 1867"
 
 #: activities/paintings/resource/board/board21_0.qml:14
 msgctxt "board21_0|"
 msgid "Mary Cassatt, Summertime - 1894"
-msgstr "קאסאט, מארי - עונת הקיץ - 1894"
+msgstr "מארי קאסאט, הקיץ - 1894"
 
 #: activities/paintings/resource/board/board22_0.qml:14
 msgctxt "board22_0|"
@@ -20673,32 +20673,32 @@ msgstr "וינסנט ואך גוך, רחוב כפרי באובר - 1890"
 #: activities/paintings/resource/board/board2_0.qml:14
 msgctxt "board2_0|"
 msgid "Giuseppe Arcimboldo, Spring - 1573"
-msgstr "ג'וזפה ארכימבולדו, אביב - 1573"
+msgstr "ג׳וזפה ארצ׳ימבולדו, אביב - 1573"
 
 #: activities/paintings/resource/board/board3_0.qml:14
 msgctxt "board3_0|"
 msgid "Giuseppe Arcimboldo, The Librarian - 1566"
-msgstr "ג'וזפה ארכימבולדו, הספרן, 1566"
+msgstr "ג׳וזפה ארצ׳ימבולדו, הספרן - 1566"
 
 #: activities/paintings/resource/board/board4_0.qml:14
 msgctxt "board4_0|"
 msgid "Katsushika Hokusai, Oiran and Kamuro"
-msgstr "קאטסושיקה הוקוסאי, אויראן וקמורו"
+msgstr "קָצוּשִיקָה הוֹקוּסַאי, אויראן וקאמורו (המלוות שלה)"
 
 #: activities/paintings/resource/board/board5_0.qml:14
 msgctxt "board5_0|"
 msgid "Katsushika Hokusai, Woman holding a fan"
-msgstr "אישה מחזיקה במאוורר"
+msgstr "קָצוּשִיקָה הוֹקוּסַאי, אישה מחזיקה במניפה"
 
 #: activities/paintings/resource/board/board6_0.qml:14
 msgctxt "board6_0|"
 msgid "Katsushika Hokusai, Ejiri in Suruga Province - 1830-1833"
-msgstr "קאטסושיקה הוקוסאי אג'ירי במחוז סורוגה - 1830-1833"
+msgstr "קָצוּשִיקָה הוֹקוּסַאי, אג'ירי במחוז סורוגה - 1830-1833"
 
 #: activities/paintings/resource/board/board7_0.qml:14
 msgctxt "board7_0|"
 msgid "Katsushika Hokusai, The Great Wave off Kanagawa - 1823-1829"
-msgstr "קאטסושיקה הוקוסאי, הגל הגדול של קאנאגאווה - 1823-1829"
+msgstr "קָצוּשִיקָה הוֹקוּסַאי, תחת גל גדול בסמוך לקאנאגאווה - 1823-1829"
 
 #: activities/paintings/resource/board/board8_0.qml:14
 msgctxt "board8_0|"

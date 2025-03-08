@@ -5710,6 +5710,8 @@ msgid ""
 "You can rotate the selected component using the rotate buttons (circle arrow "
 "icons) from the tool menu."
 msgstr ""
+"მონიშნული კომპონენტის ბრუნვა ხელსაწყოების მენიუში არსებული ბრუნვის ღილაკებით "
+"(წრიული ისრების ფორმის ხატულის მქონე) შეგიძლიათ."
 
 #: activities/digital_electricity/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
