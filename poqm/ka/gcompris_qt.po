@@ -2927,6 +2927,8 @@ msgid ""
 "Again, similar to the first line in the character chart but take care, the "
 "'W' letter was added afterward."
 msgstr ""
+"კიდევ ერთხელ. სიმბოლოების გრაფიკის პირველი ხაზის მსგავსია. მაგრამ კარგად "
+"დააკვირდით, ასო \"W\" შემდეგ დაემატა."
 
 #: activities/braille_alphabets/braille_alphabets.js:68
 msgctxt "braille_alphabets|"
