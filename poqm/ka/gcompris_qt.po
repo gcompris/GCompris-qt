@@ -16435,6 +16435,8 @@ msgid ""
 "He became a teacher after graduating and promoted his method while secretly "
 "teaching it at the Institute."
 msgstr ""
+"სწავლის დასრულების შემდეგ ის მასწავლებელი გახდა და ავრცელებლად თავის მეთოდს "
+"და საიდუმლოდ უწყობდა ხელს მის გავრცელებას ინსტიტუტში სწავლებისას."
 
 #: activities/louis-braille/louis_braille_data.js:52
 msgctxt "louis_braille_data|"
@@ -16449,6 +16451,8 @@ msgid ""
 "He died of tuberculosis. He is buried in the Pantheon in Paris. A monument "
 "is erected to honor him."
 msgstr ""
+"ის ტუბერკულიოზით გარდაცვალა და პარიზში, პანთეონშია დაკრძალული. ასევე, მის "
+"პატივსაცემად აღმართულია ძეგლიც."
 
 #: activities/louis-braille/louis_braille_data.js:62
 msgctxt "louis_braille_data|"
@@ -16456,6 +16460,8 @@ msgid ""
 "Braille got accepted as a world wide standard. Louis Braille proved that if "
 "you have motivation you can do incredible things."
 msgstr ""
+"ბრაილი მსოფლიო სტანდარტადაა მიღებული. ლუის ბრაილმა დაამტკიცა, რომ თუ გაქვს "
+"მოტივაცია, წარმოუდგენელი რამები შეგიძლიათ, აკეთოთ."
 
 #: activities/louis-braille/ReorderList.qml:164
 msgctxt "ReorderList|"
@@ -21351,8 +21357,9 @@ msgstr ""
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
-"<font color=\"#373737\">Check if the word<br/></font><b><font color=\"#315AAA"
-"\">%1</font></b><br/><font color=\"#373737\">is displayed</font>"
+"<font color=\"#373737\">Check if the word<br/></font><b><font "
+"color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\">is displayed</"
+"font>"
 msgstr ""
 "<font color=\"#373737\">შეამოწმეთ, არის თუ არა სიტყვა<br/></font><b><font "
 "color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\">ნაჩვენები</font>"
@@ -25895,8 +25902,8 @@ msgstr ""
 "შექმნათ ნახატები, თემები, ხმოვანი ფაილები და გააუმჯობესოთ დოკუმენტაცია. "
 "გადაწყვიტეთ რას ისურვებთ!<br><br>არსებული პროექტების გასაცნობად და "
 "მონაწილეობის მისაღებად მოინახულეთ <a href=\"%1\">%1</a>.<br><br>უფრო "
-"დეტალური ინფორმაცია და დოკუმენტაცია შეგიძლიათ მოიპოვოთ საიტზე <a href=\"%2\">"
-"%2</a>."
+"დეტალური ინფორმაცია და დოკუმენტაცია შეგიძლიათ მოიპოვოთ საიტზე <a "
+"href=\"%2\">%2</a>."
 
 #: core/DialogAbout.qml:122
 #, qt-format
@@ -25921,8 +25928,8 @@ msgstr ""
 "<br><br>KDE გუნდს ესაჭიროება ფინანსური დახმარება. თანხის უდიდესი ნაწილი "
 "იხარჯება მონაწილეების იმ ხარჯების ასანაზღაურებლად, რომლებიც მათ გასწიეს KDE "
 "პროექტში წვლილის შეტანისას. KDE გუნდის მხარდაჭერა შეგიძლიათ ფინანსური "
-"შეწირულობებით ან სხვადასხვა სახით, რომლებიც აღწერილია საიტზე <a href=\"%2\">"
-"%2</a>.<br><br>წინასწარ გმადლობთ მხარდაჭერისთვის."
+"შეწირულობებით ან სხვადასხვა სახით, რომლებიც აღწერილია საიტზე <a "
+"href=\"%2\">%2</a>.<br><br>წინასწარ გმადლობთ მხარდაჭერისთვის."
 
 #: core/DialogAbout.qml:139
 #, qt-format
