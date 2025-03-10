@@ -14,25 +14,16 @@ import QtQuick 2.12
 import core 1.0
 
 import "../../core"
-import "gnumch-equality.js" as Activity
 
 Item {
     id: cellDelegate
 
-    required property string number1
-    required property string number2
+    required property int number1
+    required property int number2
     required property string operator
     required property bool show
 
-    function setText() {
-        if (activity.type == "primes" || activity.type == "factors"|| activity.type == "multiples") {
-            number2 = ""
-            operator = ""
-        }
-    }
-
     focus: false
-    Component.onCompleted: setText()
 
     GCText {
         id: numberText
@@ -49,6 +40,6 @@ Item {
         minimumPointSize: 7
         fontSize: 28
         maximumLineCount: 1
-        text: cellDelegate.number1 + cellDelegate.operator + cellDelegate.number2
+        text: cellDelegate.number1 + cellDelegate.operator + (cellDelegate.number2 != -1 ? cellDelegate.number2 : "")
     }
 }

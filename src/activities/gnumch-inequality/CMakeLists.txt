@@ -9,4 +9,6 @@ GCOMPRIS_ADD_RESOURCE(activities/gnumch-inequality
   resource/*/Data.qml
   RESOURCES
   *.svg
+  DEPENDENCIES
+  gnumch-equality
 )

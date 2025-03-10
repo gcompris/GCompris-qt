@@ -20,6 +20,9 @@ Rectangle {
     id: warning
     property alias warningText: textItem.text
     property string fault
+    property int firstNumber
+    property int secondNumber
+    property string type
 
     function setFault(index: int) {
         if (index === -1) {
@@ -28,29 +31,27 @@ Rectangle {
         }
 
         fault = qsTr("You ate a wrong number.") +"<br>"
-        var num1 = modelCells.get(index).number1
-        var num2 = modelCells.get(index).number2
-        if (activity.type == "equality" || activity.type == "inequality") {
+        if (type == "equality" || type == "inequality") {
             if (Activity.operator === " + ") {
-                fault +=  num1 + " + " + num2 + " = " + (num1 + num2)
+                fault +=  firstNumber + " + " + secondNumber + " = " + (firstNumber + secondNumber)
             } else if (Activity.operator === " - ") {
-                fault +=  num1 + " - " + num2 + " = " + (num1 - num2)
+                fault +=  firstNumber + " - " + secondNumber + " = " + (firstNumber - secondNumber)
             } else if (Activity.operator === " * ") {
-                fault +=  num1 + " * " + num2 + " = " + (num1 * num2)
+                fault +=  firstNumber + " * " + secondNumber + " = " + (firstNumber * secondNumber)
             } else if (Activity.operator === " / ") {
-                fault +=  num1 + " / " + num2 + " = " + (num1 / num2)
+                fault +=  firstNumber + " / " + secondNumber + " = " + (firstNumber / secondNumber)
             }
             fault += "<br>"
 
-        } else if (activity.type === "primes") {
-            if (num1 === 1) {
+        } else if (type === "primes") {
+            if (firstNumber === 1) {
                 fault += qsTr("1 is not a prime number.") + "<br>"
                 return
             }
 
             var divisors = []
-            for (var div = 2; div < num1; ++div) {
-                if ((num1 / div) % 1 == 0)
+            for (var div = 2; div < firstNumber; ++div) {
+                if ((firstNumber / div) % 1 == 0)
                     divisors.push(div)
             }
             var divisorString = "<ul>"
@@ -59,17 +60,17 @@ Rectangle {
             }
             divisorString += "</ul>"
             //: the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>)
-            fault += qsTr("%1 is a non-prime number, its divisors are: %2").arg(num1).arg(divisorString)
+            fault += qsTr("%1 is a non-prime number, its divisors are: %2").arg(firstNumber).arg(divisorString)
 
-        } else if (activity.type == "factors") {
+        } else if (type == "factors") {
             //: %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
-            fault += qsTr("Multiples of %1 include %2 or %3 but %4 is not a multiple of %5.").arg(num1).arg(num1*2).arg(num1*3).arg(Activity.getGoal()).arg(num1) + "<br>"
+            fault += qsTr("Multiples of %1 include %2 or %3 but %4 is not a multiple of %5.").arg(firstNumber).arg(firstNumber*2).arg(firstNumber*3).arg(Activity.getGoal()).arg(firstNumber) + "<br>"
 
-        } else if (activity.type == "multiples") {
+        } else if (type == "multiples") {
             // First we find divisors of the wrong number.
             var divisors = []
             for (var div = 1; div < Activity.getGoal() * 6; ++div) {
-                if ((num1 / div) % 1 == 0)
+                if ((firstNumber / div) % 1 == 0)
                     divisors.push(div)
             }
             var divisorString = "<ul>"
@@ -78,7 +79,7 @@ Rectangle {
             }
             divisorString += "</ul>"
             //: the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
-            fault += qsTr("Divisors of %1 are: %2").arg(num1).arg(divisorString)
+            fault += qsTr("Divisors of %1 are: %2").arg(firstNumber).arg(divisorString)
 
         }
     }
@@ -97,7 +98,7 @@ Rectangle {
         anchors.centerIn: parent
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
-        text: fault + qsTr("Press \"Return\" or click on me to continue.")
+        text: warning.fault + qsTr("Press \"Return\" or click on me to continue.")
         textFormat: Text.RichText
         width: Math.min(400 * ApplicationInfo.ratio, warning.parent.width * 0.7)
         height: warning.parent.height * 0.8

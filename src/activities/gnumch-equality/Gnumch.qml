@@ -10,6 +10,8 @@
 *
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import core 1.0
 
@@ -97,7 +99,7 @@ ActivityBase {
             anchors.margins: GCStyle.baseMargins
             anchors.bottomMargin: bar.height * 1.2
 
-            function isLevelDone() {
+            function isLevelDone(): bool {
                 for (var it = 0; it < modelCells.count; it++) {
                     if (Activity.isAnswerCorrect(it) && modelCells.get(it).show) {
                         return false
@@ -186,6 +188,7 @@ ActivityBase {
                 life: items.life
                 width: gridBackground.cellWidth
                 height: gridBackground.cellHeight
+                smudgeSound: items.smudgeSound
             }
 
             Item {
@@ -209,9 +212,10 @@ ActivityBase {
                                                            direction: direction,
                                                            index: result,
                                                            width: gridBackground.cellWidth,
-                                                           height: gridBackground.cellHeight
+                                                           height: gridBackground.cellHeight,
+                                                           muncher: muncher,
+                                                           opacity: 1
                                                        })
-                        monster.opacity = 1
                     }
                 }
             }
@@ -289,7 +293,11 @@ ActivityBase {
 
             Warning {
                 id: warning
+                property int index: -1
+                firstNumber: index == -1 ? -1 : modelCells.get(index).number1
+                secondNumber: index == -1 ? -1 : modelCells.get(index).number2
                 anchors.centerIn: gridBackground
+                type: activity.type
             }
         }
 
@@ -299,18 +307,18 @@ ActivityBase {
             content: BarEnumContent {
                 value: (activity.useMultipleDataset) ? (help | home | level | activityConfig) : (help | home | level)
             }
-            onHelpClicked: displayDialog(dialogHelp)
+            onHelpClicked: activity.displayDialog(dialogHelp)
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-            onActivityConfigClicked: displayDialog(dialogActivityConfig)
+            onActivityConfigClicked: activity.displayDialog(dialogActivityConfig)
         }
 
         DialogChooseLevel {
             id: dialogActivityConfig
             currentActivity: activity.activityInfo
             onClose: {
-                home()
+                activity.home()
             }
 
             onSaveData: {
@@ -336,7 +344,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bonus {
