@@ -47,15 +47,15 @@ Item {
         color: GCStyle.lightText
 
         function setTextGoal(goal: string): string {
-            if (activity.type === "equality") {
+            if (topPanel.activityType === "equality") {
                 return qsTr("Equal to %1").arg(goal)
-            } else if (activity.type === "inequality") {
+            } else if (topPanel.activityType === "inequality") {
                 return qsTr("Not equal to %1").arg(goal)
-            } else if (activity.type === "factors") {
+            } else if (topPanel.activityType === "factors") {
                 return qsTr("Factor of %1").arg(goal)
-            } else if (activity.type === "multiples") {
+            } else if (topPanel.activityType === "multiples") {
                 return qsTr("Multiple of %1").arg(goal)
-            } else if (activity.type === "primes") {
+            } else if (topPanel.activityType === "primes") {
                 return qsTr("Primes less than %1").arg(goal)
             }
         }

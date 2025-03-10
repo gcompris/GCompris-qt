@@ -8,4 +8,6 @@ GCOMPRIS_ADD_RESOURCE(activities/gnumch-factors
   *.qml
   RESOURCES
   *.svg
+  DEPENDENCIES
+  gnumch-equality
 )

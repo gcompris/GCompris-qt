@@ -16,6 +16,7 @@ import "gnumch-equality.js" as Activity
 Creature {
     id: monster
     property int direction
+    required property Muncher muncher
 
     signal stop
 
@@ -47,12 +48,12 @@ Creature {
         running: true
         repeat: true
         onTriggered: {
-            if (!moveTo(direction)) {
-                var vertical = Math.floor(direction/2)
-                var sign = Math.pow(-1,(direction))
-                y = y + sign * height * vertical
-                x = x - sign * width * (vertical - 1)
-                opacity = 0
+            if (!monster.moveTo(monster.direction)) {
+                var vertical = Math.floor(monster.direction / 2)
+                var sign = Math.pow(-1, (monster.direction))
+                monster.y = monster.y + sign * monster.height * vertical
+                monster.x = monster.x - sign * monster.width * (vertical - 1)
+                monster.opacity = 0
             }
         }
     }

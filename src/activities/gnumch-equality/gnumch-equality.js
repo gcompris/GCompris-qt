@@ -39,6 +39,9 @@ function initLevel() {
     if(activityType === "equality" || activityType === "inequality") {
         operator = items.levels[items.currentLevel].operator;
     }
+    else {
+        operator = "";
+    }
     items.goal = getGoal();
     items.life = true;
     fillAllGrid();
@@ -383,6 +386,7 @@ function playerGotCaught(index_) {
     }
     items.muncher.caught = true;
     items.muncher.opacity = 0;
+    items.warning.index = index_;
     items.warning.setFault(index_);
     items.warning.opacity = 1;
     items.spawningMonsters.stop();

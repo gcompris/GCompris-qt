@@ -11,8 +11,6 @@
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
 import QtQuick 2.12
-import core 1.0
-import "../../core"
 
 Item {
     id: creature
@@ -95,7 +93,7 @@ Item {
         width: Math.min(parent.width, parent.height)
         height: width
         source: "qrc:/gcompris/src/activities/gnumch-equality/resource/"
-                + monsterType + ".svg"
+                + creature.monsterType + ".svg"
 
         frameCount: creature.frames
         frameWidth: creature.frameSize
@@ -129,7 +127,7 @@ Item {
             id: xAnim
             duration: 300
             onRunningChanged: {
-                movingOn = !movingOn
+                creature.movingOn = !creature.movingOn
             }
         }
     }
@@ -139,7 +137,7 @@ Item {
             id: yAnim
             duration: 300
             onRunningChanged: {
-                movingOn = !movingOn
+                creature.movingOn = !creature.movingOn
             }
         }
     }

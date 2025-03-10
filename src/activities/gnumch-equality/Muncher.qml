@@ -12,12 +12,14 @@
 */
 import QtQuick 2.12
 import core 1.0
+import "../../core"
 import "gnumch-equality.js" as Activity
 
 Creature {
     id: creature
     property bool caught: false
     required property bool life
+    required property GCSoundEffect smudgeSound
 
     monsterType: "muncher"
     frames: 4
@@ -28,7 +30,7 @@ Creature {
 
     onIndexChanged: {
         if(opacity == 1)
-            items.smudgeSound.play()
+            smudgeSound.play()
 
         if(Activity.isThereAMonster(index)) {
             Activity.playerGotCaught(-1)
