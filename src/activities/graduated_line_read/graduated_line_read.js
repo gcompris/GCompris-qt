@@ -14,7 +14,6 @@ var items
 var activityMode
 var maxSolutionSize = 0
 var mapToPad = {}       // Maps keyboard charcodes to numPad's indexes to animate graphics from computer's numpad
-var segmentThickness
 var exercices = []
 
 function randInt(max) { return Math.floor(Math.random() * max) }
@@ -86,11 +85,11 @@ function buildRuler() {     // Read from exercices with currentSubLevel index
         thickStep = 10
     var i = 0
     for (i = 0; i < exo.nbSeg; i++) {           // Create rulerModel
-        var thick = segmentThickness
+        var thick = items.segmentThickness
         if (start % thickStep === 0)
-            thick = 2 * segmentThickness
+            thick = 2 * items.segmentThickness
         if ((i === 0) || (i === exo.nbSeg - 1))
-            thick = 3 * segmentThickness
+            thick = 3 * items.segmentThickness
         items.rulerModel.append({ "value_": start
                                 , "thickness_": thick })
         start += exo.step
@@ -163,7 +162,6 @@ function checkResult() {
 function start(items_, activityMode_) {
     items = items_;
     activityMode = activityMode_
-    segmentThickness = items.segmentThickness
     items.orientation = (Core.isLeftToRightLocale(GCompris.ApplicationSettings.locale)) ?  Qt.LeftToRight : Qt.RightToLeft
 //    items.orientation = Qt.RightToLeft  // Force RightToLeft here
     // Make sure numberOfLevel is initialized before calling Core.getInitialLevel

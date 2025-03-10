@@ -58,10 +58,8 @@ ActivityBase {
             property string answer: ""
             property alias errorRectangle: errorRectangle
             property bool buttonsBlocked: false
-            property int segmentThickness: Math.max(1, 2 * ApplicationInfo.ratio)
+            property int segmentThickness: GCStyle.thinBorder
         }
-
-        property int baseMargins: 10 * ApplicationInfo.ratio
 
         onStart: { Activity.start(items, activityMode) }
         onStop: { Activity.stop() }
@@ -86,39 +84,25 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/sounds/smudge.wav"
         }
 
-        Rectangle {
-            id: instructionArea
-            opacity: 1
-            radius: activityBackground.baseMargins
-            color: "#373737"
-            height: 40 * ApplicationInfo.ratio
-            width: Math.min(320 * ApplicationInfo.ratio, parent.width - 2 * activityBackground.baseMargins)
+        GCTextPanel {
+            id: instructionPanel
+            panelWidth: parent.width - 2 * GCStyle.baseMargins
+            panelHeight: Math.min(50 * ApplicationInfo.ratio, activityBackground.height * 0.2)
+            fixedHeight: true
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
-            anchors.topMargin: activityBackground.baseMargins
-
-            GCText {
-                id: instruction
-                wrapMode: TextEdit.WordWrap
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                height: parent.height - activityBackground.baseMargins
-                width: parent.width - 2 * activityBackground.baseMargins
-                fontSizeMode: Text.Fit
-                color: 'white'
-                anchors.centerIn: instructionArea
-                text: activity.instruction
-            }
+            anchors.topMargin: GCStyle.baseMargins
+            textItem.text: activity.instruction
         }
 
         Item {
             id: layoutArea
-            anchors.top: instructionArea.bottom
+            anchors.top: instructionPanel.bottom
             anchors.bottom: activityBackground.bottom
             anchors.bottomMargin: 1.2 * bar.height
             anchors.left: activityBackground.left
             anchors.right: activityBackground.right
-            anchors.margins: activityBackground.baseMargins
+            anchors.margins: GCStyle.baseMargins
         }
 
         ListModel { id: rulerModel }
@@ -130,17 +114,17 @@ ActivityBase {
             anchors.right: layoutArea.right
             height: Math.min(120 * ApplicationInfo.ratio, layoutArea.height * 0.4)
             color: "#e9e9e9"
-            radius: activityBackground.baseMargins
+            radius: GCStyle.baseMargins
             property real rulerWidth: rulerView.width - leftLimit.width
             property real rulerModelWidth: ruler.width / (rulerModel.count - 1)
             Column {
                 id: rulerViewColumn
                 width: rulerView.rulerWidth
-                height: parent.height - activityBackground.baseMargins - leftLimit.contentHeight
+                height: parent.height - GCStyle.baseMargins - leftLimit.contentHeight
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.horizontalCenterOffset: rulerView.rulerModelWidth * ((items.orientation === Qt.LeftToRight) ? -0.5 : 0.5)
                 anchors.top: parent.top
-                anchors.topMargin: activityBackground.baseMargins
+                anchors.topMargin: GCStyle.baseMargins
                 Row {
                     id: cursor
                     z: 100
@@ -161,34 +145,33 @@ ActivityBase {
                                 visible: activity.activityMode === "number2tick"
                                 source: "qrc:/gcompris/src/activities/graduated_line_read/resource/arrow.svg"
                                 anchors.centerIn: parent
-                                anchors.verticalCenterOffset: 5 * ApplicationInfo.ratio
+                                anchors.verticalCenterOffset: GCStyle.halfMargins
                                 height: parent.height
                                 width: height
                                 sourceSize.width: height
                             }
                             Rectangle {
+                                id: txtBg
                                 visible: activity.activityMode === "tick2number" ? true : txt.text != ""
                                 anchors.centerIn: parent
-                                anchors.verticalCenterOffset: txt.anchors.verticalCenterOffset
                                 height: parent.height
                                 width: 90 * ApplicationInfo.ratio
-                                radius: height * 0.1
-                                color: "white"
+                                radius: GCStyle.tinyMargins
+                                color: GCStyle.whiteBg
                                 border.color: "#633E0C"
-                                border.width:  2 * ApplicationInfo.ratio
+                                border.width:  GCStyle.thinBorder
                             }
                             GCText {
                                 id: txt
-                                anchors.centerIn: parent
-                                anchors.verticalCenterOffset: 2 * ApplicationInfo.ratio
-                                height: parent.height * 0.9
-                                width: 80 * ApplicationInfo.ratio
+                                anchors.centerIn: txtBg
+                                height: txtBg.height - GCStyle.baseMargins
+                                width: txtBg.width - GCStyle.baseMargins
                                 horizontalAlignment: Text.AlignHCenter
                                 verticalAlignment: Text.AlignVCenter
                                 text: ""
                                 fontSize: mediumSize
                                 fontSizeMode: Text.Fit
-                                color: "#373737"
+                                color: GCStyle.darkText
                             }
                         }
                     }
@@ -233,7 +216,7 @@ ActivityBase {
 
         Rectangle {
             anchors.centerIn: leftLimit
-            width: activityBackground.baseMargins
+            width: GCStyle.baseMargins
             height: leftLimit.contentHeight
             color: "#e9e9e9"
         }
@@ -251,7 +234,7 @@ ActivityBase {
 
         Rectangle {
             anchors.centerIn: rightLimit
-            width: activityBackground.baseMargins
+            width: GCStyle.baseMargins
             height: rightLimit.contentHeight
             color: "#e9e9e9"
         }
@@ -274,8 +257,8 @@ ActivityBase {
             property real cursorOffset: (rulerView.rulerModelWidth - width) * 0.5
             x: items.orientation === Qt.LeftToRight ? rulerView.x + rulerViewColumn.x + cursor.x + rulerView.rulerModelWidth * items.solutionGrad + cursorOffset :
                 rulerView.x + rulerView.width - rulerViewColumn.x - cursor.x - rulerView.rulerModelWidth * items.solutionGrad + cursorOffset
-            y: rulerView.y + rulerViewColumn.y + cursor.y + 2 * ApplicationInfo.ratio
-            radius: height * 0.1
+            y: rulerView.y + rulerViewColumn.y + cursor.y
+            radius: GCStyle.tinyMargins
             imageSize: height * 1.2
             function releaseControls() {
                 items.buttonsBlocked = false;
@@ -303,14 +286,14 @@ ActivityBase {
             width: childrenRect.width
             height: layoutArea.height - rulerView.height - anchors.topMargin
             anchors.top: rulerView.bottom
-            anchors.topMargin: activityBackground.baseMargins * 2
+            anchors.topMargin: GCStyle.baseMargins * 2
             anchors.horizontalCenter: parent.horizontalCenter
-            spacing: activityBackground.baseMargins
+            spacing: GCStyle.baseMargins
             Image {
                 id: leftButton
                 source: 'qrc:/gcompris/src/core/resource/arrow_left.svg'
                 smooth: true
-                width: Math.min(70 * ApplicationInfo.ratio, layoutArea.width * 0.15)
+                width: Math.min(GCStyle.bigButtonHeight, layoutArea.width * 0.15)
                 height: width
                 sourceSize.width: width
                 sourceSize.height: width
@@ -337,13 +320,13 @@ ActivityBase {
                 width: 80 * ApplicationInfo.ratio
                 height: 40 * ApplicationInfo.ratio
                 color: "white"
-                radius: activityBackground.baseMargins
+                radius: GCStyle.halfMargins
                 anchors.verticalCenter: leftButton.verticalCenter
                 visible: (activityMode === "number2tick")
                 GCText {
                     anchors.centerIn: parent
-                    width: parent.width * 0.9
-                    height: parent.height * 0.9
+                    width: parent.width - GCStyle.baseMargins
+                    height: parent.height - GCStyle.baseMargins
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                     fontSizeMode: Text.Fit
@@ -391,17 +374,17 @@ ActivityBase {
 
                 delegate: Rectangle {
                     id: numKey
-                    width: numPad.cellWidth - 2 * ApplicationInfo.ratio
-                    height: numPad.cellHeight - 2 * ApplicationInfo.ratio
-                    anchors.margins: ApplicationInfo.ratio
+                    width: numPad.cellWidth - GCStyle.tinyMargins
+                    height: numPad.cellHeight - GCStyle.tinyMargins
+                    anchors.margins: border.width
                     color: numArea.containsMouse ? "#C0C0C0" : "#E5E5E5"
-                    border.color: "#808080"
-                    border.width: ApplicationInfo.ratio
-                    radius: height * 0.1
+                    border.color: GCStyle.grayBorder
+                    border.width: GCStyle.thinnestBorder
+                    radius: GCStyle.tinyMargins
                     GCText {
                         anchors.centerIn: parent
-                        width: parent.width * 0.9
-                        height: parent.height * 0.9
+                        width: parent.width - GCStyle.baseMargins
+                        height: parent.height - GCStyle.baseMargins
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                         fontSizeMode: Text.Fit
@@ -479,7 +462,7 @@ ActivityBase {
             anchors.bottom: activityBackground.bottom
             anchors.bottomMargin: bar.height * 1.5
             anchors.right: activityBackground.right
-            anchors.rightMargin: activityBackground.baseMargins
+            anchors.rightMargin: GCStyle.baseMargins
             onStop: Activity.nextSubLevel()
         }
 
@@ -497,9 +480,9 @@ ActivityBase {
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: Math.min(70 * ApplicationInfo.ratio, tools.height * 0.4)
+            width: Math.min(GCStyle.bigButtonHeight, tools.height * 0.4)
             anchors.bottom: score.top
-            anchors.bottomMargin: activityBackground.baseMargins
+            anchors.bottomMargin: GCStyle.baseMargins
             anchors.horizontalCenter: score.horizontalCenter
             onClicked: Activity.checkResult()
             visible: (items.cursor.children[items.solutionGrad].textValue !== "") || (activityMode === "number2tick")
