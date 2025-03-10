@@ -9,4 +9,6 @@ GCOMPRIS_ADD_RESOURCE(activities/grammar_classes
   RESOURCES
   *.svg
   resource/*.json
+  DEPENDENCIES
+  grammar_analysis
 )

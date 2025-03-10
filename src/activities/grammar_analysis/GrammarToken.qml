@@ -34,7 +34,7 @@ Rectangle {
         sourceSize.height: height
         x: (parent.width - width) * 0.5    // x, y are not anchored to be moved by transition
         y: GCStyle.tinyMargins
-        source: (svgName == "") ? "" : svgName
+        source: (token.svgName == "") ? "" : token.svgName
         states: [
         State {
             name: "moveto"
@@ -72,7 +72,7 @@ Rectangle {
         fontSize: smallSize
         minimumPointSize: tinySize
         fontSizeMode: Text.Fit
-        text: className
+        text: token.className
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         anchors.bottom: parent.bottom
