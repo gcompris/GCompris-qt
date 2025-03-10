@@ -3,6 +3,8 @@
  * SPDX-FileCopyrightText: 2023 Bruno ANSELME <be.root@free.fr>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import core 1.0
 import "../../core"
@@ -61,7 +63,7 @@ ActivityBase {
             property int segmentThickness: GCStyle.thinBorder
         }
 
-        onStart: { Activity.start(items, activityMode) }
+        onStart: { Activity.start(items, activity.activityMode) }
         onStop: { Activity.stop() }
 
         GCSoundEffect {
@@ -135,6 +137,8 @@ ActivityBase {
                     Repeater {
                         model: rulerModel
                         delegate : Item {
+                            required property int index
+                            required property int value_
                             property int value: value_
                             property bool hidden: (index !== items.solutionGrad)
                             property alias textValue: txt.text
@@ -186,6 +190,10 @@ ActivityBase {
                     Repeater {
                         model: rulerModel
                         delegate : Item {
+                            id: rulerElement
+                            required property int index
+                            required property int value_
+                            required property int thickness_
                             property int value: value_
                             property int thickness: thickness_
                             width: rulerView.rulerModelWidth
@@ -193,20 +201,20 @@ ActivityBase {
                             transform: Scale { origin.x: width * 0.5; xScale: (items.orientation === Qt.LeftToRight) ? 1 : -1 }
 
                             Rectangle {     // Line between graduations
-                                width: (index && (index !== (rulerModel.count - 1))) ? parent.width : parent.width * 0.5
+                                width: (rulerElement.index && (rulerElement.index !== (rulerModel.count - 1))) ? parent.width : parent.width * 0.5
                                 height: items.segmentThickness
                                 anchors.verticalCenter: parent.verticalCenter
-                                anchors.left: (index) ? parent.left : undefined
-                                anchors.right: (!index) ? parent.right : undefined
+                                anchors.left: (rulerElement.index) ? parent.left : undefined
+                                anchors.right: (!rulerElement.index) ? parent.right : undefined
                                 color: "#c27a33"
                             }
                             Rectangle {     // vertical graduation
-                                width: thickness
-                                height: ((!index) || (index === (rulerModel.count - 1)) || (index === items.solutionGrad))
+                                width: rulerElement.thickness
+                                height: ((!rulerElement.index) || (rulerElement.index === (rulerModel.count - 1)) || (rulerElement.index === items.solutionGrad))
                                 ?  parent.height : (parent.height * 0.5)
                                 anchors.centerIn: parent
-                                color: (index === items.solutionGrad) ? "#633E0C" : "#c27a33"
-                                radius: (index === items.solutionGrad) ? 0 : width * 0.5
+                                color: (rulerElement.index === items.solutionGrad) ? "#633E0C" : "#c27a33"
+                                radius: (rulerElement.index === items.solutionGrad) ? 0 : width * 0.5
                             }
                         }
                     }
@@ -252,7 +260,7 @@ ActivityBase {
 
         ErrorRectangle {
             id: errorRectangle
-            width: activityMode === "tick2number" ? 90 * ApplicationInfo.ratio : 0
+            width: activity.activityMode === "tick2number" ? 90 * ApplicationInfo.ratio : 0
             height: cursor.height
             property real cursorOffset: (rulerView.rulerModelWidth - width) * 0.5
             x: items.orientation === Qt.LeftToRight ? rulerView.x + rulerViewColumn.x + cursor.x + rulerView.rulerModelWidth * items.solutionGrad + cursorOffset :
@@ -298,7 +306,7 @@ ActivityBase {
                 sourceSize.width: width
                 sourceSize.height: width
                 fillMode: Image.PreserveAspectFit
-                visible: (activityMode === "number2tick")
+                visible: (activity.activityMode === "number2tick")
                 MouseArea {
                     id: leftArea
                     anchors.fill: parent
@@ -322,7 +330,7 @@ ActivityBase {
                 color: "white"
                 radius: GCStyle.halfMargins
                 anchors.verticalCenter: leftButton.verticalCenter
-                visible: (activityMode === "number2tick")
+                visible: (activity.activityMode === "number2tick")
                 GCText {
                     anchors.centerIn: parent
                     width: parent.width - GCStyle.baseMargins
@@ -344,7 +352,7 @@ ActivityBase {
                 sourceSize.width: leftButton.width
                 sourceSize.height: leftButton.width
                 fillMode: Image.PreserveAspectFit
-                visible: (activityMode === "number2tick")
+                visible: (activity.activityMode === "number2tick")
                 MouseArea {
                     id: rightArea
                     anchors.fill: parent
@@ -369,7 +377,7 @@ ActivityBase {
                 cellWidth: Math.min(60 * ApplicationInfo.ratio, layoutArea.width / 9)
                 cellHeight: Math.min(40 * ApplicationInfo.ratio, tools.height / 4)
                 interactive: false
-                visible: (activityMode === "tick2number")
+                visible: (activity.activityMode === "tick2number")
                 model: padModel
 
                 delegate: Rectangle {
@@ -381,6 +389,11 @@ ActivityBase {
                     border.color: GCStyle.grayBorder
                     border.width: GCStyle.thinnestBorder
                     radius: GCStyle.tinyMargins
+
+                    required property var key
+                    required property int index
+                    required property string label
+
                     GCText {
                         anchors.centerIn: parent
                         width: parent.width - GCStyle.baseMargins
@@ -389,14 +402,14 @@ ActivityBase {
                         verticalAlignment: Text.AlignVCenter
                         fontSizeMode: Text.Fit
                         fontSize: mediumSize
-                        text: label
+                        text: numKey.label
                     }
                     MouseArea {
                         id: numArea
                         anchors.fill: parent
                         hoverEnabled: true
                         enabled: !items.buttonsBlocked
-                        onClicked: Activity.handleKeys(key)
+                        onClicked: Activity.handleKeys(numKey.key)
                     }
                     states: [
                         State {
@@ -441,7 +454,7 @@ ActivityBase {
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
             }
             onClose: {
-                home()
+                activity.home()
             }
             onStartActivity: {
                 activityBackground.stop()
@@ -451,7 +464,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         Score {
@@ -470,8 +483,8 @@ ActivityBase {
             id: bar
             level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | activityConfig }
-            onHelpClicked: displayDialog(dialogHelp)
-            onActivityConfigClicked: displayDialog(dialogActivityConfig)
+            onHelpClicked: activity.displayDialog(dialogHelp)
+            onActivityConfigClicked: activity.displayDialog(dialogActivityConfig)
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
