@@ -35,9 +35,10 @@ Item {
     property bool moveForward: true         // Move to next word after proposal (for keys navigation)
     property alias rowWords: rowWords
     property alias boxModel: boxModel
+    property bool isSmallHeight: false
 
-    width: Math.max(textView.width, rowWords.width) + 2
-    height: textView.height + rowWords.height + activityBackground.baseMargins
+    width: Math.max(textView.width, rowWords.width) + GCStyle.tinyMargins
+    height: textView.height + rowWords.height + GCStyle.baseMargins
 
     // Set proposal for grammatical class number idx
     function setProposal(idx: int, forward = true) {
@@ -99,23 +100,23 @@ Item {
 
     Column {
         anchors.fill: parent
-        spacing: ApplicationInfo.ratio
+        spacing: GCStyle.tinyMargins
         Item {
             width: Math.max(textView.width, rowWords.width)
-            height: textView.height
+            height: textView.contentHeight
             anchors.horizontalCenter: parent.horizontalCenter
             GCText {        // Word display
                 id: textView
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
-                fontSize: wordsArea.isSmallHeight ? tinySize : regularSize
+                fontSize: wordClassItem.isSmallHeight ? tinySize : regularSize
                 text: wordText
             }
         }
         Row {               // Row of grammar classes (boxes for tokens)
             id: rowWords
             anchors.horizontalCenter: parent.horizontalCenter
-            spacing: ApplicationInfo.ratio
+            spacing: GCStyle.tinyMargins
             layoutDirection: (Core.isLeftToRightLocale(items.locale)) ? Qt.LeftToRight : Qt.RightToLeft
             Repeater {
                 model: boxModel
@@ -124,18 +125,18 @@ Item {
                     property int order: order_
                     property alias imgSvg: imgSvg
                     property bool boxExpected: boxExpected_
-                    width: imgSvg.width + activityBackground.baseMargins
+                    width: imgSvg.width + GCStyle.baseMargins
                     height: width
-                    radius: activityBackground.baseRadius
+                    radius: GCStyle.tinyMargins
                     color: "transparent"
-                    border.color: boxExpected ? activityBackground.selectionColor : "transparent"
-                    border.width: (order === items.selectedBox)  ? 4 * ApplicationInfo.ratio : ApplicationInfo.ratio
+                    border.color: boxExpected ? GCStyle.blueBorder : "transparent"
+                    border.width: (order === items.selectedBox)  ? GCStyle.thickBorder : GCStyle.thinnestBorder
                     visible: (expected !== "")
 
                     Image {         //
                         id: imgSvg
                         source: (svgSource == "") ? "qrc:/gcompris/src/core/resource/empty.svg" : svgSource
-                        width: (expected == "") ? activityBackground.baseMargins : wordsArea.itemHeight
+                        width: (expected == "") ? GCStyle.baseMargins : wordsArea.itemHeight
                         height: width
                         sourceSize.width: width
                         sourceSize.height: width

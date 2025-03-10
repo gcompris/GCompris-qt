@@ -23,17 +23,17 @@ Rectangle {
     property alias imgSvg: imgSvg
     width: 1
     height: 1
-    radius: activityBackground.baseRadius
-    color: (items.selectedClass === index) ? activityBackground.selectionColor : "transparent"
+    radius: GCStyle.tinyMargins
+    color: (items.selectedClass === index) ? "#8087A6DD" : "transparent" // "#8087A6DD" is GCStyle.blueBorder with half opacity
 
     Image {     // Display class image
         id: imgSvg
         width: height
-        height: parent.height - txtClass.height - 2 * ApplicationInfo.ratio
+        height: parent.height - txtClass.height - 2 * GCStyle.tinyMargins
         sourceSize.width: height
         sourceSize.height: height
-        x: (parent.width - width) / 2    // x, y are not anchored to be moved by transition
-        y: ApplicationInfo.ratio
+        x: (parent.width - width) * 0.5    // x, y are not anchored to be moved by transition
+        y: GCStyle.tinyMargins
         source: (svgName == "") ? "" : svgName
         states: [
         State {
@@ -67,15 +67,16 @@ Rectangle {
     }
     GCText {    // Display class name
         id: txtClass
-        width: parent.width
-        height: parent.height * 0.3
+        width: parent.width - GCStyle.baseMargins
+        height: parent.height * 0.4
         fontSize: smallSize
-        minimumPointSize: tinySize * ApplicationInfo.fontRatio
+        minimumPointSize: tinySize
         fontSizeMode: Text.Fit
         text: className
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         anchors.bottom: parent.bottom
+        anchors.bottomMargin: GCStyle.tinyMargins
         anchors.horizontalCenter: parent.horizontalCenter
         wrapMode: Text.Wrap
     }

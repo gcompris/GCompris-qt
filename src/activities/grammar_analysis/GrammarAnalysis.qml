@@ -36,9 +36,6 @@ ActivityBase {
 
         // system locale by default
         property string locale: "system"
-        property int baseMargins: 10 * ApplicationInfo.ratio
-        property int baseRadius: 2 * ApplicationInfo.ratio
-        property string selectionColor: "#A1CBD9"
 
         Component.onCompleted: {
             dialogActivityConfig.initialize()
@@ -168,27 +165,30 @@ ActivityBase {
             anchors.bottom: scoreButtonContainer.top
             anchors.left: parent.left
             anchors.right: parent.right
-            anchors.margins: activityBackground.baseMargins
+            anchors.margins: GCStyle.baseMargins
             visible: !tutorialScreen.visible
             Column {
                 anchors.top: parent.top
                 anchors.horizontalCenter: parent.horizontalCenter
                 width: parent.width
                 height: parent.height
-                spacing: activityBackground.baseMargins
+                spacing: GCStyle.baseMargins
                 Rectangle {
                     id: objectiveContainer
-                    width: objective.contentWidth + activityBackground.baseMargins * 2
-                    height: objective.contentHeight + activityBackground.baseMargins
-                    color: "#80FFFFFF"
-                    radius: activityBackground.baseRadius
+                    width: objective.contentWidth + GCStyle.baseMargins * 2
+                    height: objective.contentHeight + GCStyle.baseMargins
+                    color: GCStyle.darkBg
+                    radius: GCStyle.tinyMargins
+                    border.width: GCStyle.thinnestBorder
+                    border.color: GCStyle.lightBorder
                     anchors.horizontalCenter: parent.horizontalCenter
                     GCText {        // Exercise's objective
                         id: objective
+                        color: GCStyle.lightText
                         fontSize: regularSize
                         fontSizeMode: Text.Fit
-                        width: mainArea.width - activityBackground.baseMargins * 2
-                        height: mainArea.height * 0.2 - activityBackground.baseMargins
+                        width: mainArea.width - GCStyle.baseMargins * 2
+                        height: Math.min((mainArea.height - GCStyle.baseMargins * 3) * 0.2, 60 * ApplicationInfo.ratio)
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                         anchors.horizontalCenter: parent.horizontalCenter
@@ -198,21 +198,21 @@ ActivityBase {
                 }
                 Rectangle {     // Display grammatical classes (goal)
                     id: goalTokensContainer
-                    color: "#F0F0F0"
+                    color: GCStyle.lightBg
                     anchors.horizontalCenter: parent.horizontalCenter
-                    width: gridGoalTokens.width + activityBackground.baseMargins
-                    height: gridGoalTokens.height + activityBackground.baseMargins
-                    radius: activityBackground.baseRadius
+                    width: gridGoalTokens.width + GCStyle.baseMargins
+                    height: gridGoalTokens.height + GCStyle.baseMargins
+                    radius: GCStyle.tinyMargins
                     focus: true
                     z: 2
                     Rectangle {
                         z: -1
-                        color: activityBackground.selectionColor
-                        radius: activityBackground.baseRadius
+                        color: GCStyle.blueBorder
+                        radius: GCStyle.tinyMargins
                         visible: items.keyboardNavigation && items.keysOnTokens
                         anchors.centerIn: parent
-                        width: parent.width + activityBackground.baseMargins
-                        height: parent.height + activityBackground.baseMargins
+                        width: parent.width + GCStyle.baseMargins
+                        height: parent.height + GCStyle.baseMargins
                     }
                     Grid {
                         id: gridGoalTokens
@@ -220,7 +220,7 @@ ActivityBase {
                         columns: mainArea.width / tokenWidth
                         layoutDirection: (Core.isLeftToRightLocale(items.locale)) ?  Qt.LeftToRight : Qt.RightToLeft
 
-                        property real tokenWidth: Math.max(75 * ApplicationInfo.ratio, tokenTextSizeRef.width)
+                        property real tokenWidth: Math.max(GCStyle.bigButtonHeight, tokenTextSizeRef.width)
                         property real tokenHeight: columns < goalModel.count ? 40 * ApplicationInfo.ratio : 60 * ApplicationInfo.ratio
 
                         Repeater {
@@ -238,31 +238,31 @@ ActivityBase {
                 Item {
                     id: wordsArea
                     width: mainArea.width
-                    height: mainArea.height - objectiveContainer.height - goalTokensContainer.height - activityBackground.baseMargins * 2
+                    height: mainArea.height - objectiveContainer.height - goalTokensContainer.height - GCStyle.baseMargins * 2
 
                     property real itemHeight: Math.min(40 * ApplicationInfo.ratio, height * 0.2)
                     property bool isSmallHeight: itemHeight < 30 * ApplicationInfo.ratio
 
                     Rectangle {     // Display sentence
-                        color: "#F0F0F0"
+                        color: GCStyle.lightBg
                         width: parent.width
                         height: wordsFlow.height
-                        radius: activityBackground.baseRadius
+                        radius: GCStyle.tinyMargins
                         Rectangle {
                             z: -1
-                            color: activityBackground.selectionColor
-                            radius: activityBackground.baseRadius
+                            color: GCStyle.blueBorder
+                            radius: GCStyle.tinyMargins
                             visible: items.keyboardNavigation && !items.keysOnTokens
                             anchors.centerIn: parent
-                            width: parent.width + activityBackground.baseMargins
-                            height: parent.height + activityBackground.baseMargins
+                            width: parent.width + GCStyle.baseMargins
+                            height: parent.height + GCStyle.baseMargins
                         }
                         Flow {
                             id: wordsFlow
-                            width: parent.width - activityBackground.baseMargins * 2
+                            width: parent.width - GCStyle.baseMargins * 2
                             spacing: 0
-                            leftPadding: activityBackground.baseMargins
-                            rightPadding: activityBackground.baseMargins
+                            leftPadding: GCStyle.halfMargins
+                            rightPadding: GCStyle.halfMargins
                             anchors.verticalCenter: parent.verticalCenter
                             layoutDirection: (Core.isLeftToRightLocale(items.locale)) ?  Qt.LeftToRight : Qt.RightToLeft
                             Repeater {
@@ -273,6 +273,7 @@ ActivityBase {
                                     wordText: word
                                     proposition: prop
                                     startPos: startCount
+                                    isSmallHeight: wordsArea.isSmallHeight
                                 }
                             }
                         }
@@ -344,7 +345,7 @@ ActivityBase {
         Item {
             id: scoreButtonContainer
             visible: !tutorialScreen.visible
-            width: score.width + activityBackground.baseMargins + okButton.width
+            width: score.width + GCStyle.baseMargins + okButton.width
             height: okButton.height
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: activityBackground.bottom
@@ -353,7 +354,7 @@ ActivityBase {
             BarButton {
                 id: okButton
                 source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-                width: 60 * ApplicationInfo.ratio
+                width: GCStyle.bigButtonHeight
                 anchors.right: parent.right
                 anchors.bottom: parent.bottom
                 onClicked: Activity.checkResult()
