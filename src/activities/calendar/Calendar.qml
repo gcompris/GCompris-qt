@@ -428,8 +428,8 @@ ActivityBase {
                     when: answerChoices.visible
                     PropertyChanges {
                         target: errorRectangle
-                        x: answerChoices.x + answerChoices.currentItem.x
-                        y: answerChoices.y + answerChoices.currentItem.y
+                        x: answerChoices.x
+                        y: answerChoices.y + answerChoices.currentItem.height * answerChoices.currentIndex
                         width: answerChoices.currentItem.width
                         height: answerChoices.currentItem.height
                         radius: answerChoices.currentItem.radius
