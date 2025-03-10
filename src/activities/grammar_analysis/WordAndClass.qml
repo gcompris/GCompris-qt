@@ -8,6 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 
 import core 1.0
@@ -31,7 +33,7 @@ Item {
     property string expected: ""            // Grammatical(s) class(es) expected
     property string proposition: ""         // Grammatical(s) class(es) proposed by user
     property int startPos: -1               // Number from this position
-    property var classList: []              // Splitted expected value
+    property list<string> classList: []     // Splitted expected value
     property bool moveForward: true         // Move to next word after proposal (for keys navigation)
     property alias rowWords: rowWords
     property alias boxModel: boxModel
@@ -90,11 +92,11 @@ Item {
         visible: items.debugActive
     }
     Text {          // show expected value
-        text: expected
+        text: wordClassItem.expected
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.top
         opacity: 0.5
-        visible: (expected !== "") && (items.debugActive)
+        visible: (wordClassItem.expected !== "") && (items.debugActive)
     }
     //--- End of debugging zone.
 
@@ -110,7 +112,7 @@ Item {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
                 fontSize: wordClassItem.isSmallHeight ? tinySize : regularSize
-                text: wordText
+                text: wordClassItem.wordText
             }
         }
         Row {               // Row of grammar classes (boxes for tokens)
@@ -122,6 +124,10 @@ Item {
                 model: boxModel
                 Rectangle {
                     id: token
+                    required property string svgSource
+                    required property int order_
+                    required property int index
+                    required property bool boxExpected_
                     property int order: order_
                     property alias imgSvg: imgSvg
                     property bool boxExpected: boxExpected_
@@ -131,12 +137,12 @@ Item {
                     color: "transparent"
                     border.color: boxExpected ? GCStyle.blueBorder : "transparent"
                     border.width: (order === items.selectedBox)  ? GCStyle.thickBorder : GCStyle.thinnestBorder
-                    visible: (expected !== "")
+                    visible: (wordClassItem.expected !== "")
 
                     Image {         //
                         id: imgSvg
-                        source: (svgSource == "") ? "qrc:/gcompris/src/core/resource/empty.svg" : svgSource
-                        width: (expected == "") ? GCStyle.baseMargins : wordsArea.itemHeight
+                        source: (token.svgSource == "") ? "qrc:/gcompris/src/core/resource/empty.svg" : token.svgSource
+                        width: (wordClassItem.expected == "") ? GCStyle.baseMargins : wordsArea.itemHeight
                         height: width
                         sourceSize.width: width
                         sourceSize.height: width
@@ -176,7 +182,7 @@ Item {
                         id: mouseArea
                         anchors.fill: parent
                         hoverEnabled: true
-                        enabled: (order !== -1)
+                        enabled: (token.order !== -1)
                         onClicked: {
                             if (Activity.animRunning) return            // No click or key or drop during animation
                             items.selectedBox = order
