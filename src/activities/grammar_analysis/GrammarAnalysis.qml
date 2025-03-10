@@ -8,6 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import core 1.0
 
@@ -87,7 +89,7 @@ ActivityBase {
             //--- End of debug properties
         }
 
-        onStart: { Activity.start(items, grammarMode, translationMode) }
+        onStart: { Activity.start(items, activity.grammarMode, activity.translationMode) }
         onStop: { Activity.stop() }
 
         GCSoundEffect {
@@ -115,7 +117,7 @@ ActivityBase {
         ListModel { id: answerModel }
         ListModel {
             id: datasetModel
-            function randPosition() {                       // choose a random position
+            function randPosition(): int {                       // choose a random position
                 return (Math.floor(Math.random() * count))
             }
             function shuffleModel() {                       // shuffle exercises
@@ -137,7 +139,7 @@ ActivityBase {
             Tutorial {
                 id: tutorialSection
                 useImage: false
-                tutorialDetails: Activity.tutorialInstructions[grammarMode]
+                tutorialDetails: Activity.tutorialInstructions[activity.grammarMode]
                 onSkipPressed: {
                     Activity.initLevel()
                     tutorialScreen.visible = false
@@ -153,6 +155,7 @@ ActivityBase {
                 model: goalModel
                 delegate: GCText {
                     fontSize: tinySize
+                    required property string wordClass
                     text: wordClass
                 }
             }
@@ -228,6 +231,10 @@ ActivityBase {
                             delegate: GrammarToken {
                                 width: gridGoalTokens.tokenWidth
                                 height: gridGoalTokens.tokenHeight
+                                required property string code
+                                required property string wordClass
+                                required property string image
+                                required property int index
                                 classCode: code
                                 className: wordClass
                                 svgName: image
@@ -269,6 +276,10 @@ ActivityBase {
                                 id: rowAnswer
                                 model: answerModel
                                 delegate: WordAndClass {
+                                    required property string code
+                                    required property string word
+                                    required property string prop
+                                    required property int startCount
                                     expected: code
                                     wordText: word
                                     proposition: prop
@@ -320,7 +331,7 @@ ActivityBase {
                 }
             }
             onClose: {
-                home()
+                activity.home()
             }
             onStartActivity: {
                 activityBackground.start()
@@ -328,15 +339,15 @@ ActivityBase {
         }
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
             id: bar
             level: items.currentLevel + 1
             content: BarEnumContent { value: tutorialScreen.visible ? help | home : help | home | level | activityConfig }
-            onHelpClicked: displayDialog(dialogHelp)
-            onActivityConfigClicked: displayDialog(dialogActivityConfig)
+            onHelpClicked: activity.displayDialog(dialogHelp)
+            onActivityConfigClicked: activity.displayDialog(dialogActivityConfig)
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
@@ -391,7 +402,7 @@ ActivityBase {
             text: "Alt+Left and Alt+Right to change exercise\nCtrl+Alt+Return to flip debug informations"
             anchors.top: scoreButtonContainer.bottom
             anchors.right: parent.right
-            visible: translationMode
+            visible: activity.translationMode
         }
         Column {
             id: infoView
@@ -401,7 +412,7 @@ ActivityBase {
             Text {
                 width: 200
                 height: 80
-                text: "Activity: %1\nLocale: %2\nTranslation file: %3\nExercise: %4/%5\nGoal: %6".arg(activityInfo.title).arg(items.locale).arg(items.translationFile).arg(items.currentExercise + 1).arg(datasetModel.count).arg(items.goalStr)
+                text: "Activity: %1\nLocale: %2\nTranslation file: %3\nExercise: %4/%5\nGoal: %6".arg(activity.activityInfo.title).arg(items.locale).arg(items.translationFile).arg(items.currentExercise + 1).arg(datasetModel.count).arg(items.goalStr)
             }
             Text {
                 id: phrase
