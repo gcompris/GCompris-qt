@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2025-02-11 09:37+0200\n"
+"PO-Revision-Date: 2025-03-04 09:30+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -2726,12 +2726,9 @@ msgstr ""
 
 #. Help goal
 #: activities/ballcatch/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find your left and right hands"
 msgctxt "ActivityInfo|"
 msgid "Synchronize left and right hands movements."
-msgstr "Löydä vasen sekä oikea käsi"
+msgstr "Tahdista vasemman ja oikean käden liikkeet."
 
 #. Help manual
 #: activities/ballcatch/ActivityInfo.qml:23
@@ -3155,12 +3152,9 @@ msgstr "Harjoittele pistekirjoituskirjaimia."
 
 #. Help goal
 #: activities/braille_fun/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice addition inequality."
 msgctxt "ActivityInfo|"
 msgid "Practice writing in braille."
-msgstr "Harjoittele yhteenlasku epätasa-arvoa."
+msgstr "Harjoittele pistekirjoitusta."
 
 #. Help prerequisite
 #: activities/braille_fun/ActivityInfo.qml:22
@@ -3229,48 +3223,33 @@ msgstr ""
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr "Pienet ruudukot."
+msgstr "Pienet ruudukot plus-operaattorilla."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr "Pienet ruudukot."
+msgstr "Pienet ruudukot plus- ja miinus-operaattoreilla."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "Pienet ruudukot."
+msgstr "Pienet ruudukot plus-, miinus- ja kertaa-operaattoreilla."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr "Pienet ruudukot."
+msgstr "Keskikokoiset ruudukot plus-, miinus- ja kertaa-operaattoreilla."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr "Pienet ruudukot."
+msgstr "Suuret ruudukot plus-, miinus-, kertaa- ja jaettuna-operaattoreilla."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -4250,12 +4229,9 @@ msgstr "Nappaa kaikki vastustajasi nappulat ennen kuin hän nappaa sinun."
 #. Help goal
 #: activities/checkers/ActivityInfo.qml:20
 #: activities/checkers_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice braille letters."
 msgctxt "ActivityInfo|"
 msgid "Practice playing checkers."
-msgstr "Harjoittele pistekirjoituskirjaimia."
+msgstr "Harjoittele tammea."
 
 #. Help manual
 #: activities/checkers/ActivityInfo.qml:23
@@ -4438,22 +4414,16 @@ msgstr "Pelaa šakkia (Tuxia vastaan)"
 #. Help title
 #: activities/chess/ActivityInfo.qml:17
 #: activities/chess_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Discover the braille system"
 msgctxt "ActivityInfo|"
 msgid "Discover and practice chess."
-msgstr "Opi pistekirjoitus"
+msgstr "Opi ja harjoittele šakkia."
 
 #. Help goal
 #: activities/chess/ActivityInfo.qml:20
 #: activities/chess_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn to play chess."
-msgstr "Opi veden kiertokulku."
+msgstr "Opi pelaamaan šakkia."
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:24
@@ -4640,21 +4610,15 @@ msgstr "Šakin loppupeli"
 
 #. Help title
 #: activities/chess_partyend/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play the end of the chess game against Tux."
 msgctxt "ActivityInfo|"
 msgid "Play the end of a chess game against Tux."
 msgstr "Pelaa šakin loppupeliä Tuxia vastaan."
 
 #. Help goal
 #: activities/chess_partyend/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "End of chess game"
 msgctxt "ActivityInfo|"
 msgid "Finish a chess game."
-msgstr "Šakin loppupeli"
+msgstr "Lopeta šakkipeli."
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess_partyend/ActivityInfo.qml:24
@@ -4895,20 +4859,14 @@ msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "1783 Montgolfierin veljesten kuumailmapallo"
 
 #: activities/chronos/resource/board/board5_1.qml:47
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Aderin Eole"
+msgstr "1890 Clément Aderin Éole"
 
 #: activities/chronos/resource/board/board5_1.qml:55
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr "1906 Paul Cornun ensimmäinen helikopterilento"
+msgstr "1907 Paul Cornun ensimmäinen helikopterilento"
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
@@ -4921,12 +4879,9 @@ msgid "1769 Cugnot's fardier"
 msgstr "1769 Cugnot’n fardier"
 
 #: activities/chronos/resource/board/board5_2.qml:40
-#, fuzzy
-#| msgctxt "board5_2|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Aderin Eole"
+msgstr "1890 Clément Aderin Éole"
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -4954,12 +4909,9 @@ msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "1829 Stephensonin Rocket Steam -veturi"
 
 #: activities/chronos/resource/board/board5_4.qml:47
-#, fuzzy
-#| msgctxt "board5_4|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Aderin Eole"
+msgstr "1890 Clément Aderin Éole"
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
@@ -4972,20 +4924,14 @@ msgid "Aviation"
 msgstr "Lentäminen"
 
 #: activities/chronos/resource/board/board6_0.qml:40
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Aderin Eole"
+msgstr "1890 Clément Aderin Éole"
 
 #: activities/chronos/resource/board/board6_0.qml:48
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr "1903 Wrightin veljesten Flyer III"
+msgstr "1905 Wrightin veljesten Flyer III"
 
 #: activities/chronos/resource/board/board6_0.qml:56
 msgctxt "board6_0|"
@@ -5008,12 +4954,9 @@ msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
 msgstr "1927 Charles Lindbergh ylittää Atlantin valtameren"
 
 #: activities/chronos/resource/board/board6_1.qml:55
-#, fuzzy
-#| msgctxt "board6_1|"
-#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr "1934 Hélène Boucherin nopeusennätys 444 km/t"
+msgstr "1934 Hélène Boucherin nopeusennätys 445 km/t"
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -5041,12 +4984,9 @@ msgid "Cars"
 msgstr "Autot"
 
 #: activities/chronos/resource/board/board6_3.qml:39
-#, fuzzy
-#| msgctxt "board6_3|"
-#| msgid "1899 Renault voiturette"
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
-msgstr "1899 Renault’n voiturette"
+msgstr "1898 Renault’n voiturette"
 
 #: activities/chronos/resource/board/board6_3.qml:47
 msgctxt "board6_3|"
@@ -10145,7 +10085,7 @@ msgstr "Etsi osoittaja ja nimittäjä (neliöllä)."
 #: activities/frieze/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Frieze"
-msgstr ""
+msgstr "Friisi"
 
 #. Help title
 #: activities/frieze/ActivityInfo.qml:16
@@ -10232,7 +10172,7 @@ msgstr "Olen valmis"
 #: activities/frieze/resource/1/Data.qml:28
 msgctxt "Data|"
 msgid "Copy this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "Kopioi tämä friisi: kaksi kuviota eri värein tai merkein."
 
 #: activities/frieze/resource/1/Data.qml:31
 #: activities/frieze/resource/4/Data.qml:17
@@ -10240,7 +10180,7 @@ msgstr ""
 #: activities/frieze/resource/7/Data.qml:17
 msgctxt "Data|"
 msgid "Copy this frieze."
-msgstr ""
+msgstr "Kopioi tämä friisi."
 
 #: activities/frieze/resource/10/Data.qml:14
 msgctxt "Data|"
@@ -10248,6 +10188,8 @@ msgid ""
 "Remember and copy this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"Paina muistiin ja kopioi tämä friisi: kaikki muotojen, värien ja merkkien ja "
+"kokojen yhdistelmät."
 
 #: activities/frieze/resource/10/Data.qml:17
 #: activities/frieze/resource/12/Data.qml:16
@@ -10255,7 +10197,7 @@ msgstr ""
 #: activities/frieze/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Remember and copy this frieze."
-msgstr ""
+msgstr "Paina muistiin ja kopioi tämä friisi."
 
 #: activities/frieze/resource/11/Data.qml:13
 msgctxt "Data|"
@@ -14684,37 +14626,25 @@ msgid ""
 msgstr ""
 
 #: activities/graduated_line_read/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: enter a number"
 msgctxt "ActivityInfo|"
 msgid "Digits: enter digits"
-msgstr "Luvut: anna numero"
+msgstr "Numerot: kirjoita numeroita"
 
 #: activities/graduated_line_read/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: delete the last digit"
-msgstr "Askelpalautin: poista vastauksen viimeinen numero"
+msgstr "Askelpalautin: poista viimeinen numero"
 
 #: activities/graduated_line_read/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: type your answer"
 msgctxt "ActivityInfo|"
 msgid "Delete: reset your answer"
-msgstr "Luvut: kirjoita vastauksesi"
+msgstr "Del: tyhjennä vastauksesi"
 
 #: activities/graduated_line_read/ActivityInfo.qml:28
 #: activities/graduated_line_use/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
-msgstr "2. Vahvista vastaus Enter- tai Return-näppäimellä"
+msgstr "Välilyönti ja Enter: tarkista vastauksesi"
 
 #: activities/graduated_line_read/graduated_line_read.js:116
 msgctxt "graduated_line_read|"
@@ -14730,76 +14660,49 @@ msgid "Find the requested number."
 msgstr "Etsi ruosteenvärinen perhonen"
 
 #: activities/graduated_line_read/resource/1/Data.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 1 and 5."
-msgstr "Luvut väliltä %1–%2."
+msgstr "Etsittävä luku väliltä 1–5."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 1 and 7."
-msgstr "Luvut väliltä %1–%2."
+msgstr "Etsittävä luku väliltä 1–7."
 
 #: activities/graduated_line_read/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 1 and 10."
-msgstr "Luvut väliltä %1–%2."
+msgstr "Etsittävä luku väliltä 1–10."
 
 #: activities/graduated_line_read/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 20."
-msgstr "Luvut väliltä %1–%2."
+msgstr "Etsittävä luku väliltä 0–20."
 
 #: activities/graduated_line_read/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 50."
-msgstr "Luvut väliltä %1–%2."
+msgstr "Etsittävä luku väliltä 0–50."
 
 #: activities/graduated_line_read/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 100."
-msgstr "Luvut väliltä %1–%2."
+msgstr "Etsittävä luku väliltä 0–100."
 
 #: activities/graduated_line_read/resource/7/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 1 000."
-msgstr "Luvut väliltä %1–%2."
+msgstr "Etsittävä luku väliltä 0–1 000."
 
 #: activities/graduated_line_read/resource/8/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 10 000."
-msgstr "Luvut väliltä %1–%2."
+msgstr "Etsittävä luku väliltä 0–10 000."
 
 #: activities/graduated_line_read/resource/9/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 1 000 000."
-msgstr "Luvut väliltä %1–%2."
+msgstr "Etsittävä luku väliltä 0–1 000 000."
 
 #. Activity title
 #: activities/graduated_line_use/ActivityInfo.qml:14
@@ -15309,12 +15212,9 @@ msgid "Solvable with +, - and ×."
 msgstr "Ratkaistavissa +:lla, -:lla ja ×:lla."
 
 #: activities/guess24/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications."
 msgctxt "Data|"
 msgid "Multiplication required."
-msgstr "Kertolasku."
+msgstr "Vaaditaan kertolaskua."
 
 #: activities/guess24/resource/4/Data.qml:13
 #, fuzzy
@@ -15325,12 +15225,9 @@ msgid "Solvable with all operators."
 msgstr "Pienet ruudukot."
 
 #: activities/guess24/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "Data|"
 msgid "Division required."
-msgstr "Jakaminen."
+msgstr "Vaaditaan jakolaskua."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -15766,12 +15663,9 @@ msgstr "Vedä ja pudota kukin asia sen nimen ylle."
 
 #. Help goal
 #: activities/imagename/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enrich your vocabulary"
 msgctxt "ActivityInfo|"
 msgid "Enrich your vocabulary and practice reading."
-msgstr "Laajenna sanavarastoasi"
+msgstr "Laajenna sanavarastoasi ja harjoittele lukemista."
 
 #. Help prerequisite
 #: activities/imagename/ActivityInfo.qml:25 activities/lang/ActivityInfo.qml:28
@@ -16119,12 +16013,9 @@ msgstr "Etsi banjo"
 
 #: activities/instruments/instruments.js:161
 #: activities/instruments/instruments.js:206
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the bongo"
 msgctxt "instruments|"
 msgid "Find the bongos"
-msgstr "Etsi bongo"
+msgstr "Etsi bongot"
 
 #: activities/instruments/instruments.js:166
 #: activities/instruments/instruments.js:211
@@ -16436,12 +16327,9 @@ msgid "Space or Enter: select an item from the list"
 msgstr "Välilyönti tai Enter: valitse kohde luettelosta"
 
 #: activities/lang/ActivityInfo.qml:36
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer when the OK button is visible"
-msgstr "Enter: vahvista vastauksesi, kun OK-painike on näkyvissä"
+msgstr "Enter: tarkista vastauksesi, kun OK-painike on näkyvissä"
 
 #: activities/lang/ActivityInfo.qml:37
 #: activities/missing-letter/ActivityInfo.qml:27
@@ -16596,21 +16484,15 @@ msgstr "Opi yhteenlaskua"
 
 #. Help title
 #: activities/learn_additions/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions with small numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn addition with small numbers."
-msgstr "Pienten numeroiden vähennyslasku."
+msgstr "Opi yhteenlaskua pienillä luvuilla."
 
 #. Help goal
 #: activities/learn_additions/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions by counting their result."
 msgctxt "ActivityInfo|"
 msgid "Learn addition by adding quantities."
-msgstr "Opi yhteenlaskut laskemalla niiden tulos."
+msgstr "Opi yhteenlaskua lisäämällä määriä."
 
 #. Help manual
 #: activities/learn_additions/ActivityInfo.qml:23
@@ -16822,36 +16704,25 @@ msgstr "1 ja 5 väliltä."
 
 #. Activity title
 #: activities/learn_decimals_additions/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions with decimal numbers"
 msgctxt "ActivityInfo|"
 msgid "Addition with decimal numbers"
-msgstr "Yhteenlaskut desimaaliluvuilla"
+msgstr "Yhteenlasku desimaaliluvuilla"
 
 #. Help title
 #: activities/learn_decimals_additions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions with decimal numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn addition with decimal numbers."
-msgstr "Opr yhteenlaskuja desimaaliluvuilla."
+msgstr "Opr yhteenlaskua desimaaliluvuilla."
 
 #. Help goal
 #: activities/learn_decimals_additions/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn additions with decimal numbers by counting how many squares are "
-#| "needed to represent the result."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn addition with decimal numbers by manipulating their visual "
 "representation."
 msgstr ""
-"Opi yhteenlaskuja desimaaliluvuilla laskemalla kuinka monta neliötä "
-"tarvitaan tuloksen esittämiseen."
+"Opi yhteenlaskua desimaaliluvuilla käsittelemällä niiden kuvallisia "
+"esityksiä."
 
 #. Help manual
 #: activities/learn_decimals_additions/ActivityInfo.qml:22
@@ -16917,9 +16788,6 @@ msgstr "Vähennyslaskut desimaaliluvuilla"
 
 #. Help title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions with decimal numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction with decimal numbers."
 msgstr "Opi vähennyslaskuja desimaaliluvuilla."
@@ -16998,12 +16866,9 @@ msgstr "Käytä puheääniä"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions"
 msgctxt "ActivityInfo|"
 msgid "Learn digits"
-msgstr "Opi yhteenlaskuja"
+msgstr "Opi numerot"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -17027,11 +16892,6 @@ msgstr "Vertaa lukuja ja valitse oikea merkki."
 
 #. Help manual
 #: activities/learn_digits/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A digit is displayed on the screen. Fill the corresponding number of "
-#| "circles and validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "A digit is displayed on the screen. Fill the number of circles corresponding "
@@ -17164,18 +17024,12 @@ msgstr "Opi vähennyslaskua"
 
 #. Help title
 #: activities/learn_subtractions/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions with small numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction with small numbers."
-msgstr "Pienten lukujen vähennyslasku."
+msgstr "Opi pienten lukujen vähennyslaskua."
 
 #. Help goal
 #: activities/learn_subtractions/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions by counting their result."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction by counting their result."
 msgstr "Opi vähennyslaskuja laskemalla niiden tulos."
@@ -17339,12 +17193,9 @@ msgstr "Kirjain missä sanassa"
 
 #. Help title
 #: activities/letter-in-word/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select all the words which contain the given letter."
 msgctxt "ActivityInfo|"
 msgid "Find the words with the given letter."
-msgstr "Valitse kaikki sanat, jotka sisältävät annetun kirjaimen."
+msgstr "Etsi annetun kirjaimen sanat."
 
 #. Help goal
 #: activities/letter-in-word/ActivityInfo.qml:20
@@ -17400,12 +17251,9 @@ msgstr "Valot pois"
 
 #. Help title
 #: activities/lightsoff/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The goal is to turn off all the lights."
 msgctxt "ActivityInfo|"
 msgid "Turn off all the lights."
-msgstr "Tavoitteena on sammuttaa kaikki valot."
+msgstr "Sammuta kaikki valot."
 
 #. Help goal
 #: activities/lightsoff/ActivityInfo.qml:20
@@ -17641,23 +17489,17 @@ msgstr "Laske montako tähteä on taikurin hatun alla."
 
 #. Help goal
 #: activities/magic-hat-minus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction."
-msgstr "Opi vähennyslaskuja."
+msgstr "Opi vähennyslaskua."
 
 #. Help prerequisite
 #: activities/magic-hat-minus/ActivityInfo.qml:22
 #: activities/memory-math-minus-tux/ActivityInfo.qml:22
 #: activities/memory-math-minus/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtractions."
 msgctxt "ActivityInfo|"
 msgid "Subtraction."
-msgstr "Vähennyslaskut."
+msgstr "Vähennyslasku."
 
 #. Help manual
 #: activities/magic-hat-minus/ActivityInfo.qml:24
@@ -17734,9 +17576,6 @@ msgstr "Laske kuinka monta esinettä on taikurin hatun alla."
 
 #. Help goal
 #: activities/magic-hat-plus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions."
 msgctxt "ActivityInfo|"
 msgid "Learn addition."
 msgstr "Opi yhteenlaskua."
@@ -17745,12 +17584,9 @@ msgstr "Opi yhteenlaskua."
 #: activities/magic-hat-plus/ActivityInfo.qml:22
 #: activities/memory-math-add-tux/ActivityInfo.qml:22
 #: activities/memory-math-add/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions."
 msgctxt "ActivityInfo|"
 msgid "Addition."
-msgstr "Yhteenlaskut."
+msgstr "Yhteenlasku."
 
 #. Help manual
 #: activities/magic-hat-plus/ActivityInfo.qml:24
@@ -18057,12 +17893,9 @@ msgstr ""
 #. Help goal
 #: activities/memory-case-association-tux/ActivityInfo.qml:20
 #: activities/memory-case-association/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning lowercase and uppercase letters, memory."
 msgctxt "ActivityInfo|"
 msgid "Learn lowercase and uppercase letters."
-msgstr "Suur- ja pienaakkosten oppiminen ja muisti."
+msgstr "Opi pien- ja suuraakkoset."
 
 #. Help prerequisite
 #: activities/memory-case-association-tux/ActivityInfo.qml:22
@@ -18257,19 +18090,13 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice additions, subtractions, multiplications, divisions."
 msgctxt "ActivityInfo|"
 msgid "Practice addition, subtraction, multiplication, division."
-msgstr "Harjoittele yhteen-, vähennys-, kerto- ja jakolaskua."
+msgstr "Harjoittele yhteen-, vähennys-, kerto- ja jakolaskuja."
 
 #. Help prerequisite
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:22
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions, subtractions, multiplications, divisions."
 msgctxt "ActivityInfo|"
 msgid "Addition, subtraction, multiplication, division."
 msgstr "Yhteen-, vähennys- kerto- ja jakolasku."
@@ -18414,9 +18241,6 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:20
 #: activities/memory-math-add-minus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice additions and subtractions."
 msgctxt "ActivityInfo|"
 msgid "Practice addition and subtraction."
 msgstr "Harjoittele yhteen- ja vähennyslaskuja."
@@ -18424,12 +18248,9 @@ msgstr "Harjoittele yhteen- ja vähennyslaskuja."
 #. Help prerequisite
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:22
 #: activities/memory-math-add-minus/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions and subtractions."
 msgctxt "ActivityInfo|"
 msgid "Addition and subtraction."
-msgstr "Yhteen- ja vähennyslaskuja."
+msgstr "Yhteen- ja vähennyslaskut."
 
 #. Help manual
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:24
@@ -18471,9 +18292,6 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-add-tux/ActivityInfo.qml:20
 #: activities/memory-math-add/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice additions."
 msgctxt "ActivityInfo|"
 msgid "Practice addition."
 msgstr "Harjoittele yhteenlaskua."
@@ -18578,21 +18396,15 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-div/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice divisions."
 msgctxt "ActivityInfo|"
 msgid "Practice division."
 msgstr "Harjoittele jakolaskua."
 
 #. Help prerequisite
 #: activities/memory-math-div-tux/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "ActivityInfo|"
 msgid "Division."
-msgstr "Jakaminen."
+msgstr "Jakolasku."
 
 #. Help manual
 #: activities/memory-math-div-tux/ActivityInfo.qml:24
@@ -18700,9 +18512,6 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-minus-tux/ActivityInfo.qml:20
 #: activities/memory-math-minus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Practice subtraction."
 msgstr "Harjoittele vähennyslaskua."
@@ -18809,9 +18618,6 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-mult-div/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice multiplications and divisions."
 msgctxt "ActivityInfo|"
 msgid "Practice multiplication and division."
 msgstr "Harjoittele kerto- ja jakolaskuja."
@@ -18819,12 +18625,9 @@ msgstr "Harjoittele kerto- ja jakolaskuja."
 #. Help prerequisite
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:22
 #: activities/memory-math-mult-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications, divisions."
 msgctxt "ActivityInfo|"
 msgid "Multiplication, division."
-msgstr "Kertolasku ja jakolasku."
+msgstr "Kerto- ja jakolaskut."
 
 #. Help manual
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:24
@@ -18868,9 +18671,6 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-mult-tux/ActivityInfo.qml:20
 #: activities/memory-math-mult/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice multiplications."
 msgctxt "ActivityInfo|"
 msgid "Practice multiplication."
 msgstr "Harjoittele kertolaskua."
@@ -18878,9 +18678,6 @@ msgstr "Harjoittele kertolaskua."
 #. Help prerequisite
 #: activities/memory-math-mult-tux/ActivityInfo.qml:22
 #: activities/memory-math-mult/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications."
 msgctxt "ActivityInfo|"
 msgid "Multiplication."
 msgstr "Kertolasku."
@@ -19031,12 +18828,9 @@ msgstr "Käännä kortit vastaamaan parejaan, pelaat Tuxia vastaan."
 #. Help goal
 #: activities/memory-tux/ActivityInfo.qml:20
 #: activities/memory/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Train your audio memory."
 msgctxt "ActivityInfo|"
 msgid "Train your visual memory."
-msgstr "Harjoita äänimuistia."
+msgstr "Harjoita näkömuistia."
 
 #. Help manual
 #: activities/memory-tux/ActivityInfo.qml:24
@@ -19071,12 +18865,9 @@ msgstr ""
 
 #. Help goal
 #: activities/memory-wordnumber/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice reading numbers."
-msgstr "Harjoittele yhteenlaskua."
+msgstr "Harjoittele numeroiden lukemista."
 
 #. Help manual
 #: activities/memory-wordnumber/ActivityInfo.qml:24
@@ -19432,12 +19223,9 @@ msgid "Copyright: %1"
 msgstr "Tekijänoikeudet: %1"
 
 #: activities/menu/ConfigurationItem.qml:48
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "Vaikeussuodatin:"
+msgstr "Vaikeussuodatin"
 
 #: activities/menu/ConfigurationItem.qml:109
 msgctxt "ConfigurationItem|"
@@ -19595,14 +19383,11 @@ msgid "All lowercase"
 msgstr "Pienaakkoset"
 
 #: activities/menu/Menu.qml:89
-#, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the corresponding sound files now?"
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, do you want to download the corresponding sound "
 "files now?"
-msgstr "Haluatko nyt ladata uuden kielen äänitiedostot?"
+msgstr "Valitsit uuden maan. Haluatko nyt ladata uuden kielen äänitiedostot?"
 
 #: activities/menu/Menu.qml:90
 msgctxt "Menu|"
@@ -19841,12 +19626,9 @@ msgstr "Etsi puuttuva kirjain täydentääksesi sanan."
 
 #. Help goal
 #: activities/missing-letter/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the alphabetical order."
 msgctxt "ActivityInfo|"
 msgid "Learn to spell words."
-msgstr "Opi aakkosjärjestys."
+msgstr "Opi sanojen oikeinkirjoitusta."
 
 #. Help prerequisite
 #: activities/missing-letter/ActivityInfo.qml:23
@@ -19905,12 +19687,9 @@ msgstr "Opi käyttämään rahaa."
 #. Help goal
 #: activities/money/ActivityInfo.qml:20
 #: activities/money_back/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice money usage."
 msgctxt "ActivityInfo|"
 msgid "Practice counting and money usage."
-msgstr "Opi käyttämään rahaa."
+msgstr "Harjoittele laskemista ja rahankäyttöä."
 
 #. Help prerequisite
 #: activities/money/ActivityInfo.qml:22
@@ -20008,19 +19787,15 @@ msgstr "Opettele rahankäyttöä antamalla Tuxille hänen vaihtorahansa."
 #. Help manual
 #: activities/money_back/ActivityInfo.qml:24
 #: activities/money_back_cents/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the coins or on the notes at the bottom of the screen to pay. If "
-#| "you want to remove a coin or a note, click on it on the upper screen area."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to give Tux "
 "his change. If you want to remove a coin or a note, click on it on the upper "
 "area of the screen."
 msgstr ""
-"Napsauta alhaalla olevia kolikoita tai seteleitä maksaaksesi. Jos haluat "
-"poistaa kolikon tai setelin, napsauta sitä näytön yläosassa."
+"Anna vaihtorahat Tuxille napsauttamalla näytön alalaidassa olevia kolikoita "
+"tai seteleitä. Jos haluat poistaa kolikon tai setelin, napsauta sitä näytön "
+"yläosassa."
 
 #. Activity title
 #: activities/money_back_cents/ActivityInfo.qml:15
@@ -20471,14 +20246,13 @@ msgstr ""
 
 #. Help manual
 #: activities/note_names/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Identify the notes correctly and score 100% to complete a level."
 msgctxt "ActivityInfo|"
 msgid ""
 "Identify the notes, play them on the piano keyboard, and achieve a score of "
 "100% to complete the level."
-msgstr "Tunnista nuotit oikein ja suorita taso 100 %:lla."
+msgstr ""
+"Tunnista nuotit oikein, soita ne pianonkoskettimistolla ja päätä taso "
+"saavuttamalla 100 prosentin tulos."
 
 #: activities/note_names/NoteNames.qml:176
 #, qt-format
@@ -20545,12 +20319,9 @@ msgstr "Valitse luvut yksi toisensa jälkeen numerojärjestyksessä."
 
 #. Help goal
 #: activities/number_sequence/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn the numerical sequence."
-msgstr "Opi veden kiertokulku."
+msgstr "Opi numerojärjestys."
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
@@ -20614,20 +20385,14 @@ msgstr ""
 "sen alaoikeasta kulmasta."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:14
-#, fuzzy
-#| msgctxt "TutorialBase|"
-#| msgid "Choose the even number:"
 msgctxt "NumbersOddEven|"
 msgid "Catch the even numbers."
-msgstr "Valitse parillinen luku:"
+msgstr "Nappaa parilliset luvut."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:15
-#, fuzzy
-#| msgctxt "TutorialBase|"
-#| msgid "Choose the odd number:"
 msgctxt "NumbersOddEven|"
 msgid "Catch the odd numbers."
-msgstr "Valitse pariton luku:"
+msgstr "Nappaa parittomat luvut."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:42
 msgctxt "NumbersOddEven|"
@@ -21081,12 +20846,9 @@ msgstr ""
 
 #. Activity title
 #: activities/oware/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play oware against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play oware (against Tux)"
-msgstr "Pelaa Owarea Tuxia vastaan"
+msgstr "Pelaa owarea (Tuxia vastaan)"
 
 #. Help title
 #: activities/oware/ActivityInfo.qml:16
@@ -22254,9 +22016,6 @@ msgstr "B♭%1"
 
 #. Activity title
 #: activities/planegame/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers in order"
 msgctxt "ActivityInfo|"
 msgid "Numerical order"
 msgstr "Numerojärjestys"
@@ -22269,12 +22028,9 @@ msgstr "Ohjaa helikopteria ja kerää pilvet oikeassa järjestyksessä."
 
 #. Help goal
 #: activities/planegame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the alphabetical order."
 msgctxt "ActivityInfo|"
 msgid "Learn the numerical order."
-msgstr "Opi aakkosjärjestys."
+msgstr "Opi numerojärjestys."
 
 #. Help manual
 #: activities/planegame/ActivityInfo.qml:23
@@ -22292,20 +22048,14 @@ msgstr ""
 "kulmasta."
 
 #: activities/planegame/Sequence.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 2."
 msgctxt "Sequence|"
 msgid "Catch the numbers starting from 0."
-msgstr "Yhdistä numerot 2:een asti."
+msgstr "Nappaa luvut 0:sta alkaen."
 
 #: activities/planegame/Sequence.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 2."
 msgctxt "Sequence|"
 msgid "Catch the numbers starting from 10."
-msgstr "Yhdistä numerot 2:een asti."
+msgstr "Nappaa luvut 10:stä alkaen."
 
 #: activities/play_piano/ActivityConfig.qml:35
 msgctxt "ActivityConfig|"
@@ -22325,12 +22075,9 @@ msgstr "Soita pianoa"
 
 #. Help title
 #: activities/play_piano/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the correct date and select it on the calendar."
 msgctxt "ActivityInfo|"
 msgid "Read the score, and then play it on the keyboard."
-msgstr "Etsi oikea päivämäärä ja valitse se kalenterista."
+msgstr "Lue nuotit ja soita melodia koskettimistolla."
 
 #. Help goal
 #: activities/play_piano/ActivityInfo.qml:24
@@ -22404,12 +22151,9 @@ msgstr "Toista rytmi"
 
 #. Help title
 #: activities/play_rhythm/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to follow a rhythm accurately."
 msgctxt "ActivityInfo|"
 msgid "Follow the rhythm accurately."
-msgstr "Opi seuraamaan rytmiä tarkasti."
+msgstr "Seuraa tarkasti rytmiä."
 
 #. Help goal
 #: activities/play_rhythm/ActivityInfo.qml:24
@@ -22671,12 +22415,9 @@ msgstr "Auta Tuxia pyydystämään kala ohjelmoimalla polku."
 
 #. Help goal
 #: activities/programmingMaze/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Can read instructions, and think logically to find a path."
 msgctxt "ActivityInfo|"
 msgid "Learn how to program instructions for moving along a path."
-msgstr "Osaa lukea ohjeita ja ajatella loogisesti löytääkseen polun."
+msgstr "Opi ohjelmoimaan ohjeet polkua pitkin liikkumiseksi."
 
 #. Help prerequisite
 #: activities/programmingMaze/ActivityInfo.qml:23
@@ -22907,12 +22648,9 @@ msgstr "Käyttämällä sekä pääaluetta että silmukka-aluetta."
 
 #. Activity title
 #: activities/railroad/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Railroad activity"
 msgctxt "ActivityInfo|"
 msgid "Railroad"
-msgstr "Rautatietoiminto"
+msgstr "Rautatie"
 
 #. Help title
 #: activities/railroad/ActivityInfo.qml:19
@@ -23128,12 +22866,9 @@ msgstr "Piirrä peilikuva"
 
 #. Help title
 #: activities/redraw_symmetrical/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid "Reproduce the image symmetrically on the empty grid."
-msgstr "Tee uudelleen oikealla oleva torni tyhjään tilaan."
+msgstr "Jäljennä kuva tyhjään ruudukkoon symmetrisesti."
 
 #. Help goal
 #: activities/redraw_symmetrical/ActivityInfo.qml:20
@@ -23344,26 +23079,18 @@ msgstr "Roomalaiset numerot"
 
 #. Help title
 #: activities/roman_numerals/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn to read and write Roman numerals."
-msgstr "Opi veden kiertokulku."
+msgstr "Opi lukemaan ja kirjoittamaan roomalaisia lukuja."
 
 #. Help goal
 #: activities/roman_numerals/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn how to read roman numerals and do the conversion to and from arabic "
-#| "numerals."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to read and write Roman numerals and convert them to Arabic numerals."
 msgstr ""
-"Opi lukemaan roomalaisia lukuja ja muuntamaan niiden arabialaisten ja "
-"lukujen välillä."
+"Opi lukemaan ja kirjoittamaan roomalaisia lukuja ja muuntamaan ne "
+"arabialaisiksi."
 
 #. Help manual
 #: activities/roman_numerals/ActivityInfo.qml:23
@@ -25074,12 +24801,9 @@ msgstr "Aurinkokunta"
 
 #. Help title
 #: activities/solar_system/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "SolarSystem|"
-#| msgid "View the solar system"
 msgctxt "ActivityInfo|"
 msgid "Learn about the solar system."
-msgstr "Tarkastele aurinkokuntaa"
+msgstr "Tutustu aurinkokuntaan."
 
 #. Help goal
 #: activities/solar_system/ActivityInfo.qml:23
@@ -26593,12 +26317,9 @@ msgstr "Tangram pulmapeli"
 
 #. Help title
 #: activities/tangram/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The objective is to form a given shape."
 msgctxt "ActivityInfo|"
 msgid "Move the objects to reproduce the given shape."
-msgstr "Tavoitteena on muodostaa annettu kuvio."
+msgstr "Muodosta annettu kuvio siirtämällä kohteita."
 
 #. Help goal
 #: activities/tangram/ActivityInfo.qml:20
@@ -26642,12 +26363,9 @@ msgstr "Heitä tikka maaliin ja laske saamasi pisteet."
 
 #. Help goal
 #: activities/target/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice addition of several numbers."
-msgstr "Harjoittele yhteenlaskua."
+msgstr "Harjoittele yhteenlaskua monilla luvuilla."
 
 #. Help prerequisite
 #: activities/target/ActivityInfo.qml:22
@@ -26697,12 +26415,9 @@ msgstr "Enimmäisarvo: 500 000."
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the trumpet"
 msgctxt "ActivityInfo|"
 msgid "Calculate with ten's complement"
-msgstr "Etsi trumpetti"
+msgstr "Laske kymmenen komplementilla"
 
 #. Help title
 #: activities/tens_complement_calculate/ActivityInfo.qml:16
@@ -26754,12 +26469,9 @@ msgstr "5 luvusta tehtävät 2 paria."
 
 #. Activity title
 #: activities/tens_complement_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the trumpet"
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr "Etsi trumpetti"
+msgstr "Etsi kymmenen komplementti"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
@@ -26775,9 +26487,6 @@ msgstr "Opi löytämään kymmenen komplementti."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 10 and additions."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and addition."
 msgstr "Luvut 1–10 ja yhteenlasku."
@@ -26837,9 +26546,6 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 30 and additions."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and addition."
 msgstr "Luvut 1–30 ja yhteenlasku."
@@ -26885,9 +26591,6 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 50 and additions."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and addition."
 msgstr "Luvut 1–50 ja yhteenlasku."
@@ -27005,12 +26708,9 @@ msgstr "Harjoittele yhteenlaskua."
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
-msgstr "Tee uudelleen annettu torni."
+msgstr "Ratkaise annettu yhteenlasku."
 
 #. Help goal
 #: activities/vertical_addition/ActivityInfo.qml:20
@@ -27023,12 +26723,9 @@ msgstr "Harjoittele jakolaskua."
 
 #. Help prerequisite
 #: activities/vertical_addition/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Addition table of 1."
 msgctxt "ActivityInfo|"
 msgid "Addition tables."
-msgstr "Yhteenlaskutaulukko 1:lle."
+msgstr "Yhteenlaskutaulukot."
 
 #. Help manual
 #: activities/vertical_addition/ActivityInfo.qml:24
@@ -27121,12 +26818,9 @@ msgstr "Harjoittele vähennyslaskua."
 #. Help title
 #: activities/vertical_subtraction/ActivityInfo.qml:17
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "InstructionArea|"
-#| msgid "Choose the instructions"
 msgctxt "ActivityInfo|"
 msgid "Solve the given subtraction."
-msgstr "Valitse ohjeet"
+msgstr "Ratkaise annettu vähennyslasku."
 
 #. Help goal
 #: activities/vertical_subtraction/ActivityInfo.qml:20
@@ -27139,12 +26833,9 @@ msgstr ""
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:22
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtraction table of 1."
 msgctxt "ActivityInfo|"
 msgid "Subtraction tables."
-msgstr "Vähennyslaskutaulu 1:lle."
+msgstr "Vähennyslaskutaulut."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
@@ -27193,12 +26884,9 @@ msgstr "Ratkaise vähennyslasku, 4 tai 5 lukua, 4 riviä."
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Learn subtraction table of 1."
 msgctxt "Data|"
 msgid "Write your own subtraction and solve it."
-msgstr "Opi 1:n vähennystaulukko."
+msgstr "Kirjoita oma vähennyslaskusi ja ratkaise se."
 
 #: activities/vertical_subtraction/resource/2/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
@@ -27260,20 +26948,15 @@ msgstr "Ratkaise:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
 #: activities/vertical_subtraction/subtraction.js:169
-#, fuzzy, qt-format
-#| msgctxt "BackgroundMusicList|"
-#| msgid "Title: %1"
+#, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
-msgstr "Otsikko: %1"
+msgstr "Ratkaise: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:400
-#, fuzzy
-#| msgctxt "ReadyButton|"
-#| msgid "I am Ready"
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
-msgstr "Olen valmis"
+msgstr "Valmis"
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
@@ -27338,12 +27021,9 @@ msgstr ""
 
 #. Help goal
 #: activities/watercycle/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn about the water cycle."
-msgstr "Opi veden kiertokulku."
+msgstr "Tutustu veden kiertokulkuun."
 
 #. Help manual
 #: activities/watercycle/ActivityInfo.qml:23
@@ -27478,12 +27158,9 @@ msgstr "Kirjoita putoavat sanat ennen kuin ne osuvat maahan."
 
 #. Help goal
 #: activities/wordsgame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice division equality."
 msgctxt "ActivityInfo|"
 msgid "Practice using a keyboard."
-msgstr "Harjoittele jakolaskun yhdenvertaisuutta."
+msgstr "Harjoittele näppäimistön käyttöä."
 
 #. Help prerequisite
 #: activities/wordsgame/ActivityInfo.qml:22
@@ -27498,12 +27175,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Kirjoita koko putoava sana ennen kuin se osuu maahan."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translation added for Sanskrit"
-msgstr "Makedoniannos lisätty"
+msgstr "Sanskriitinnos lisätty"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:40 core/ChangeLog.qml:46
 #: core/ChangeLog.qml:51 core/ChangeLog.qml:57 core/ChangeLog.qml:86
@@ -27554,20 +27228,14 @@ msgstr ""
 "tietyn"
 
 #: core/ChangeLog.qml:45
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translation added for Latvian"
-msgstr "Makedoniannos lisätty"
+msgstr "Latviannos lisätty"
 
 #: core/ChangeLog.qml:56
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translations added for: Slovenian, German, Galician."
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
-msgstr "Uusia käännöksiä lisätty: slovenia, saksa, galitsia."
+msgstr "Bulgariannos, galiciannos ja suahilinnos lisätty"
 
 #: core/ChangeLog.qml:60
 #, fuzzy
@@ -27584,20 +27252,14 @@ msgstr ""
 "aloittamiseksi tietyllä vaikeudella"
 
 #: core/ChangeLog.qml:65
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "Makedoniannos lisätty"
+msgstr "Arabiannos ja esperantonnos lisätty"
 
 #: core/ChangeLog.qml:66 core/ChangeLog.qml:73
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "Makedoniannos lisätty"
+msgstr "Monia käännöspäivityksiä"
 
 #: core/ChangeLog.qml:72
 msgctxt "ChangeLog|"
@@ -27640,12 +27302,9 @@ msgid ""
 msgstr ""
 
 #: core/ChangeLog.qml:93
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New speed setting in several activities."
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
-msgstr "Uusi nopeusasetus useissa toiminnoissa."
+msgstr "Parannettu useiden harjoitusten kuvanlaatua"
 
 #: core/ChangeLog.qml:94
 msgctxt "ChangeLog|"

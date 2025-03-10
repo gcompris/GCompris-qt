@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# SPDX-FileCopyrightText: 2018, 2019, 2021, 2023, 2024 Tommi Nieminen <translator@legisign.org>
+# SPDX-FileCopyrightText: 2018, 2019, 2021, 2023, 2024, 2025 Tommi Nieminen <translator@legisign.org>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-13 02:28+0000\n"
-"PO-Revision-Date: 2024-10-27 09:56+0200\n"
+"PO-Revision-Date: 2025-03-03 19:07+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -86,17 +86,13 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "align4"
 #: activities/align4/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid ""
-#| "Click on the column where you wish your token to fall and try to align of "
-#| "4 tokens before Tux."
+#, kde-format
 msgid ""
 "Click on the column where you wish your token to fall and try to align 4 "
 "tokens before Tux."
 msgstr ""
 "Napsauta saraketta, jonne haluat merkin putoavan. Voittaaksesi yritä saada "
-"neljä merkkiä peräkkäin ennen Tuxia.Napsauta saraketta, jonne haluat merkin "
-"putoavan. Voittaaksesi yritä saada neljä merkkiä peräkkäin ennen Tuxia."
+"neljä merkkiä peräkkäin ennen Tuxia."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "align4_2players"
 #: activities/align4_2players/ActivityInfo.qml:18
@@ -214,19 +210,15 @@ msgstr "Luo kirjaimen braillesolu."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calcudoku"
 #: activities/calcudoku/ActivityInfo.qml:17
-#, fuzzy, kde-format
-#| msgid ""
-#| "Select a number or a symbol and click its target area. Each symbol must "
-#| "appear only once in a row, in a column and in a subregion if any."
+#, kde-format
 msgid ""
 "Select a number and click on its target position. Each number must appear "
 "only once in a row and in a column. The numbers in the cells of a cage must "
 "produce the given result when combined using the given operator."
 msgstr ""
 "Valitse luku tai merkki ja napsauta sen kohdealuetta. Kukin merkki saa "
-"esiintyä rivillä, sarakkeessa ja alialueella (jos niitä on) vain kerran."
-"Valitse luku tai merkki ja napsauta sen kohdealuetta. Kukin merkki saa "
-"esiintyä rivillä, sarakkeessa ja alialueella (jos niitä on) vain kerran."
+"esiintyä rivillä ja sarakkeessa vain kerran. Häkin solujen lukujen tulee "
+"tuottaa annetulla operaattorilla annettu tulos."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18
@@ -500,7 +492,7 @@ msgstr "Valitse esitetylle murtoluvulle oikeat osoittaja ja nimittäjä"
 #: activities/frieze/ActivityInfo.qml:17
 #, kde-format
 msgid "Reproduce and complete the frieze model."
-msgstr ""
+msgstr "Jäljennä ja täydennä friisimalli."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -593,7 +585,7 @@ msgstr ""
 #: activities/grammar_classes/ActivityInfo.qml:21
 #, kde-format
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr ""
+msgstr "Osoita pyydetyt kieliopilliset luokat niitä vastaaviin sanoihin."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -616,7 +608,7 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:17
 #, kde-format
 msgid "Use the four numbers with given operators to find 24"
-msgstr ""
+msgstr "Käytä neljää lukua annetuilla laskutoimituksilla saadaksesi luvun 24"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22
@@ -1211,7 +1203,7 @@ msgstr "Valitse väri ja piirrä neliöillä miten haluat luodaksesi piirroksen.
 #: activities/sketch/ActivityInfo.qml:19
 #, kde-format
 msgid "Use the tools to draw images."
-msgstr ""
+msgstr "Piirrä kuvia käyttämällä työkaluja."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers"
 #: activities/smallnumbers/ActivityInfo.qml:18
@@ -1292,17 +1284,15 @@ msgstr "Laukaise tikat napsauttamalla kohdetta ja laske sitten loppupisteesi!"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_calculate"
 #: activities/tens_complement_calculate/ActivityInfo.qml:17
-#, fuzzy, kde-format
-#| msgid ""
-#| "Create pairs of numbers equal to ten. Select a number, then select "
-#| "another number of the same operation to swap their position."
+#, kde-format
 msgid ""
 "Create pairs of numbers equal to ten. Select a number, then select another "
 "number of the same operation to swap their position. Then, select the result "
 "box to type the result."
 msgstr ""
-"Luo pareja luvuista, jotka ovat yhtä kuin kymmenen. Valitse luku, sitten "
-"toinen saman laskun toinen luku vaihtaaksesi niiden paikkoja keskenään."
+"Luo pareja luvuista, jotka ovat yhtä kuin kymmenen. Vaihda lukujen paikkaa "
+"valitsemalla ensin yksi, sitten toinen saman laskun luku. Valitse lopuksi "
+"tuloslaatikko ja kirjoita tulos."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_find"
 #: activities/tens_complement_find/ActivityInfo.qml:17
@@ -1363,7 +1353,7 @@ msgstr ""
 #: activities/vertical_addition/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given addition."
-msgstr ""
+msgstr "Ratkaise annettu yhteenlasku."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction_compensation"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction"
@@ -1371,7 +1361,7 @@ msgstr ""
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given subtraction."
-msgstr ""
+msgstr "Ratkaise annettu vähennyslasku."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "watercycle"
 #: activities/watercycle/ActivityInfo.qml:18

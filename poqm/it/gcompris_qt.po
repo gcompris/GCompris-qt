@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2025-02-19 09:11+0100\n"
+"PO-Revision-Date: 2025-03-06 16:42+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -10011,9 +10011,7 @@ msgstr ""
 "Tab: alterna tra la modifica del fregio e la visualizzazione del modello"
 
 #: activities/frieze/Frieze.qml:109
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulb|"
-#| msgid "What is the binary representation of %1?"
+#, qt-format
 msgctxt "Frieze|"
 msgid "What is the binary representation of %1?"
 msgstr "Qual è la rappresentazione binaria di %1?"

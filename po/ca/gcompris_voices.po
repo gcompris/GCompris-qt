@@ -1405,6 +1405,3 @@ msgstr ""
 #, kde-format
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr "Escriu les paraules amb el teclat abans que arribin a terra."
-
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "indiqueu aquí un comentari del text per a la veu d'entrada"

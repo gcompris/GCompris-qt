@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-03-07 10:10+0200\n"
+"PO-Revision-Date: 2025-03-09 20:50+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -27013,7 +27013,7 @@ msgstr "נשמר בהצלחה!"
 #: core/GCCreationHandler.qml:264
 msgctxt "GCCreationHandler|"
 msgid "Enter file name"
-msgstr "להקיש את שם הקובץ"
+msgstr "למלא את שם הקובץ"
 
 #: core/GCCreationHandler.qml:264
 msgctxt "GCCreationHandler|"
@@ -27023,7 +27023,7 @@ msgstr "חיפוש"
 #: core/GCCreationHandler.qml:278
 msgctxt "GCCreationHandler|"
 msgid "Save"
-msgstr "לשמור"
+msgstr "שמירה"
 
 #: core/GCCreationHandler.qml:384
 msgctxt "GCCreationHandler|"
@@ -27048,7 +27048,7 @@ msgstr "הבא"
 #: core/IntroMessage.qml:171
 msgctxt "IntroMessage|"
 msgid "Skip"
-msgstr "לדלג"
+msgstr "דילוג"
 
 #: core/IntroMessage.qml:171
 msgctxt "IntroMessage|"

@@ -7,14 +7,14 @@
 # André Marcelo Alvarenga <alvarenga@kde.org>, 2014, 2015, 2016.
 # Edely <edely.gomes@gmail.com>, 2015.
 # SPDX-FileCopyrightText: 2015, 2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Frederico Goncalves Guimaraes <frederico@teia.bio.br>
-# Geraldo Simiao <geraldosimiao@fedoraproject.org>, 2023.
+# SPDX-FileCopyrightText: 2023, 2025 Geraldo Simiao <geraldosimiao@fedoraproject.org>
 # SPDX-FileCopyrightText: 2025 Guilherme Marçal Silva <guimarcalsilva@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-02-27 20:48-0300\n"
-"Last-Translator: Guilherme Marçal Silva <guimarcalsilva@gmail.com>\n"
+"PO-Revision-Date: 2025-03-09 00:03-0300\n"
+"Last-Translator: Geraldo Simiao <geraldosimiao@fedoraproject.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Language: pt_BR\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 24.12.2\n"
+"X-Generator: Lokalize 24.12.3\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -10000,9 +10000,7 @@ msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Tab: alternar entre editar o friso ou ver o modelo"
 
 #: activities/frieze/Frieze.qml:109
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulb|"
-#| msgid "What is the binary representation of %1?"
+#, qt-format
 msgctxt "Frieze|"
 msgid "What is the binary representation of %1?"
 msgstr "Qual é a representação binária de %1?"
