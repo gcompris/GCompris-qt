@@ -8,4 +8,6 @@ GCOMPRIS_ADD_RESOURCE(activities/graduated_line_use
   resource/*/Data.qml
   RESOURCES
   *.svg
+  DEPENDENCIES
+  graduated_line_read
 )
