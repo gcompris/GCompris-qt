@@ -232,6 +232,7 @@ function stop() {
 function initLevel() {
     coloringLeft = true
     items.keyNavigationMode = false
+    items.activityBackground.showChooser(false)
     var levelData = levels[items.currentLevel].graph
     items.nodesRepeater.model.clear();
     items.edgesRepeater.model.clear();
