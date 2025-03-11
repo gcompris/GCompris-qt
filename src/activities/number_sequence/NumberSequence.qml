@@ -60,47 +60,47 @@ ActivityBase {
         onStart: { Activity.start(items,mode,dataset,url) }
         onStop: { Activity.stop() }
 
+        Item {
+            id: layoutArea
+            anchors.fill: parent
+            anchors.bottomMargin: bar.height * 1.5
+        }
+
         Image {
             id: imageBack
-            anchors.top: parent.top
-            anchors.horizontalCenter: background.horizontalCenter
-            width: Math.min((background.height - bar.height * 1.5), background.width)
+            anchors.centerIn: layoutArea
+            width: Math.min(layoutArea.width, layoutArea.height)
             height: imageBack.width
-            sourceSize.width: imageBack.width
-            sourceSize.height: imageBack.height
+            sourceSize.width: width
+            sourceSize.height: height
         }
 
         Image {
             id: imageBack2
-            anchors.centerIn: imageBack
+            anchors.centerIn: layoutArea
             width: imageBack.width
-            height: imageBack.height
-            sourceSize.width: imageBack2.width
-            sourceSize.height: imageBack2.height
-        }
+            height: imageBack.width
+            sourceSize.width: width
+            sourceSize.height: height
 
-        Repeater {
-            id: segmentsRepeater
+            Repeater {
+                id: segmentsRepeater
 
-            Rectangle {
-                id: line
-                opacity: 0
-                color: "#373737"
-                transformOrigin: Item.TopLeft
-                x: imageBack.x + modelData[0] * imageBack.width / 520
-                y: modelData[1] * imageBack.height / 520
-                property double x2: imageBack.x + modelData[2] * imageBack.width / 520
-                property double y2: modelData[3] * imageBack.height / 520
-                width: Math.sqrt(Math.pow(x - x2, 2) + Math.pow(y- y2, 2))
-                height: 3 * ApplicationInfo.ratio
-                rotation: (Math.atan((y2 - y)/(x2-x)) * 180 / Math.PI) + (((y2-y) < 0 && (x2-x) < 0) * 180) + (((y2-y) >= 0 && (x2-x) < 0) * 180)
+                Rectangle {
+                    id: line
+                    opacity: 0
+                    color: "#373737"
+                    transformOrigin: Item.Left
+                    x: modelData[0] * imageBack.width / 520
+                    y: modelData[1] * imageBack.height / 520
+                    property double x2: modelData[2] * imageBack.width / 520
+                    property double y2: modelData[3] * imageBack.height / 520
+                    width: Math.sqrt(Math.pow(x - x2, 2) + Math.pow(y- y2, 2))
+                    height: 3 * ApplicationInfo.ratio
+                    rotation: (Math.atan((y2 - y)/(x2-x)) * 180 / Math.PI) + (((y2-y) < 0 && (x2-x) < 0) * 180) + (((y2-y) >= 0 && (x2-x) < 0) * 180)
 
+                }
             }
-        }
-
-        Item {
-            id: playArea
-            anchors.fill: parent
 
             Repeater {
                 id: pointImageRepeater
@@ -108,21 +108,21 @@ ActivityBase {
                 Image {
                     id: pointImage
                     source: Activity.url + (highlight ?
-                            (pointImageOpacity ? "bluepoint.svg" : "bluepointHighlight.svg") :
-                            markedAsPointInternal ? "blackpoint.svg" : "greenpoint.svg")
+                    (pointImageOpacity ? "bluepoint.svg" : "bluepointHighlight.svg") :
+                    markedAsPointInternal ? "blackpoint.svg" : "greenpoint.svg")
 
                     sourceSize.height: (items.highlightEnabled && items.pointIndexToClick == index) ?
-                                        imageBack2.width * 0.08 : imageBack2.width * 0.04 //to change the size of dots
+                    imageBack2.width * 0.08 : imageBack2.width * 0.04 //to change the size of dots
 
-                    x: imageBack.x + modelData[0] * imageBack.width / 520 - sourceSize.height/2
+                    x: modelData[0] * imageBack.width / 520 - sourceSize.height/2
                     y: modelData[1] * imageBack.height / 520 - sourceSize.height/2
                     z: items.pointIndexToClick == index ? 1000 : index
 
                     // only hide last point for clickanddraw and number_sequence
                     // as the last point is also the first point
                     visible: (mode=="clickanddraw" || mode=="number_sequence") &&
-                              index == pointImageRepeater.count - 1 &&
-                              items.pointIndexToClick == 0 ? false : true
+                    index == pointImageRepeater.count - 1 &&
+                    items.pointIndexToClick == 0 ? false : true
 
                     function drawSegment() {
                         Activity.drawSegment(index)
@@ -137,10 +137,10 @@ ActivityBase {
                     scale: markedAsPointInternal ? 0.2 : 1
                     opacity: index >= items.pointIndexToClick || markedAsPointInternal ? 1 : 0
 
-                    property int xAreaStart: x
-                    property int xAreaEnd: x + width
-                    property int yAreaStart: y
-                    property int yAreaEnd: y + height
+                    property real xAreaStart: x
+                    property real xAreaEnd: x + width
+                    property real yAreaStart: y
+                    property real yAreaEnd: y + height
 
                     GCText {
                         id: pointNumberText
@@ -156,33 +156,33 @@ ActivityBase {
                     }
                 }
             }
-        }
 
-        MultiPointTouchArea {
-            anchors.fill: parent
-            minimumTouchPoints: 1
-            maximumTouchPoints: 1
-            z: 100
+            MultiPointTouchArea {
+                anchors.fill: parent
+                minimumTouchPoints: 1
+                maximumTouchPoints: 1
+                z: 100
 
-            function checkPoints(touchPoints) {
-                for(var i in touchPoints) {
-                    var touch = touchPoints[i]
-                    for(var p = 0; p < pointImageRepeater.count; p++) {
-                        var part = pointImageRepeater.itemAt(p)
-                        // Could not make it work with the item.contains() api
-                        if(touch.x > part.xAreaStart && touch.x < part.xAreaEnd &&
-                        touch.y > part.yAreaStart && touch.y < part.yAreaEnd) {
-                            part.drawSegment()
+                function checkPoints(touchPoints) {
+                    for(var i in touchPoints) {
+                        var touch = touchPoints[i]
+                        for(var p = 0; p < pointImageRepeater.count; p++) {
+                            var part = pointImageRepeater.itemAt(p)
+                            // Could not make it work with the item.contains() api
+                            if(touch.x > part.xAreaStart && touch.x < part.xAreaEnd &&
+                                touch.y > part.yAreaStart && touch.y < part.yAreaEnd) {
+                                part.drawSegment()
+                                }
                         }
                     }
                 }
-            }
 
-            onPressed: {
-                checkPoints(touchPoints)
-            }
-            onTouchUpdated: {
-                checkPoints(touchPoints)
+                onPressed: (touchPoints) => {
+                    checkPoints(touchPoints)
+                }
+                onTouchUpdated: (touchPoints) => {
+                    checkPoints(touchPoints)
+                }
             }
         }
 
