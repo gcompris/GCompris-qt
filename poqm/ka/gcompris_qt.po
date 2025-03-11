@@ -13907,7 +13907,7 @@ msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
 msgstr "შეყვანა, გამოტოვება ან ღილაკი Enter: გადაამოწმეთ თქვენი პასუხი"
 
-#: activities/graduated_line_read/graduated_line_read.js:116
+#: activities/graduated_line_read/graduated_line_read.js:115
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
 msgstr "(ცვლადის საზღვრები)"
@@ -21357,9 +21357,8 @@ msgstr ""
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
-"<font color=\"#373737\">Check if the word<br/></font><b><font "
-"color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\">is displayed</"
-"font>"
+"<font color=\"#373737\">Check if the word<br/></font><b><font color=\"#315AAA"
+"\">%1</font></b><br/><font color=\"#373737\">is displayed</font>"
 msgstr ""
 "<font color=\"#373737\">შეამოწმეთ, არის თუ არა სიტყვა<br/></font><b><font "
 "color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\">ნაჩვენები</font>"
@@ -25902,8 +25901,8 @@ msgstr ""
 "შექმნათ ნახატები, თემები, ხმოვანი ფაილები და გააუმჯობესოთ დოკუმენტაცია. "
 "გადაწყვიტეთ რას ისურვებთ!<br><br>არსებული პროექტების გასაცნობად და "
 "მონაწილეობის მისაღებად მოინახულეთ <a href=\"%1\">%1</a>.<br><br>უფრო "
-"დეტალური ინფორმაცია და დოკუმენტაცია შეგიძლიათ მოიპოვოთ საიტზე <a "
-"href=\"%2\">%2</a>."
+"დეტალური ინფორმაცია და დოკუმენტაცია შეგიძლიათ მოიპოვოთ საიტზე <a href=\"%2\">"
+"%2</a>."
 
 #: core/DialogAbout.qml:122
 #, qt-format
@@ -25928,8 +25927,8 @@ msgstr ""
 "<br><br>KDE გუნდს ესაჭიროება ფინანსური დახმარება. თანხის უდიდესი ნაწილი "
 "იხარჯება მონაწილეების იმ ხარჯების ასანაზღაურებლად, რომლებიც მათ გასწიეს KDE "
 "პროექტში წვლილის შეტანისას. KDE გუნდის მხარდაჭერა შეგიძლიათ ფინანსური "
-"შეწირულობებით ან სხვადასხვა სახით, რომლებიც აღწერილია საიტზე <a "
-"href=\"%2\">%2</a>.<br><br>წინასწარ გმადლობთ მხარდაჭერისთვის."
+"შეწირულობებით ან სხვადასხვა სახით, რომლებიც აღწერილია საიტზე <a href=\"%2\">"
+"%2</a>.<br><br>წინასწარ გმადლობთ მხარდაჭერისთვის."
 
 #: core/DialogAbout.qml:139
 #, qt-format

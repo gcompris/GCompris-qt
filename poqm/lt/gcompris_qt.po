@@ -14752,7 +14752,7 @@ msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
 msgstr "Tarpas arba Enter: patvirtinti atsakymą"
 
-#: activities/graduated_line_read/graduated_line_read.js:116
+#: activities/graduated_line_read/graduated_line_read.js:115
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
 msgstr "(kintamos ribos)"
