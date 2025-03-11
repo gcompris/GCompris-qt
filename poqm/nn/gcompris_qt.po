@@ -9786,8 +9786,6 @@ msgstr "Tabulator: Byt mellom frisebygging og vising av modellen"
 
 #: activities/frieze/Frieze.qml:109
 #, fuzzy, qt-format
-#| msgctxt "BinaryBulb|"
-#| msgid "What is the binary representation of %1?"
 msgctxt "Frieze|"
 msgid "What is the binary representation of %1?"
 msgstr "Kva vert talet %1 i totalssystemet?"
@@ -14328,7 +14326,7 @@ msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
 msgstr "Mellomrom eller Enter: Sjå om svaret er rett"
 
-#: activities/graduated_line_read/graduated_line_read.js:116
+#: activities/graduated_line_read/graduated_line_read.js:115
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
 msgstr "(variable grenser)"
