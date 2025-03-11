@@ -91,109 +91,105 @@ ActivityBase {
 
         Column {
             id: colorsColumn
-
             anchors.left: parent.left
-            anchors.leftMargin: 5 * ApplicationInfo.ratio
             anchors.top: parent.top
-            anchors.topMargin: 5 * ApplicationInfo.ratio
-
-            spacing: 3  * ApplicationInfo.ratio
-
+            anchors.bottom: parent.bottom
+            anchors.margins: GCStyle.halfMargins
+            anchors.bottomMargin: bar.height * 1.3
+            width: Math.min(40 * ApplicationInfo.ratio,
+                            colorsColumn.height / colorsRepeater.model.count - spacing)
+            spacing: GCStyle.halfMargins
             add: Transition {
                 NumberAnimation { properties: "y"; duration: 1000; easing.type: Easing.OutBounce }
             }
-
             Repeater {
                 id: colorsRepeater
-
                 model: ListModel {}
-
                 delegate:
                     Node {
-                    width: 40 * ApplicationInfo.ratio
-                    height: 40 * ApplicationInfo.ratio
-                    border.width: 2
-                    border.color: "white"
+                    width: colorsColumn.width
+                    border.width: GCStyle.thinBorder
+                    border.color: GCStyle.darkBorder
                     searchItemIndex: itemIndex
                 }
             }
         }
 
         Item {
-            id: graphRect
-            anchors.left: parent.left
-            anchors.leftMargin: 100 * ApplicationInfo.ratio
-            anchors.bottom: parent.bottom
-            anchors.bottomMargin: 50 * ApplicationInfo.ratio
+            id: layoutArea
+            anchors.left: colorsColumn.right
+            anchors.bottom: colorsColumn.bottom
             anchors.top: parent.top
-            anchors.topMargin: 50 * ApplicationInfo.ratio
-            height: activityBackground.height - 100 * ApplicationInfo.ratio
-            width: activityBackground.width - 150 * ApplicationInfo.ratio
-            property int diameter: graphRect.width/11
+            anchors.right: parent.right
+            anchors.margins: GCStyle.baseMargins
+        }
+
+        Item {
+            id: graphRect
+            anchors.left: colorsColumn.right
+            anchors.bottom: colorsColumn.bottom
+            anchors.top: parent.top
+            anchors.right: parent.right
+            anchors.margins: optDiameter + GCStyle.baseMargins
+            property int diameter: Math.min(layoutArea.width, layoutArea.height) / 11
             property int minDiameter: 40 * ApplicationInfo.ratio
-            property int maxDiameter: 80 * ApplicationInfo.ratio
+            property int maxDiameter: GCStyle.bigButtonHeight
             property int optDiameter: diameter < minDiameter ? minDiameter : ( diameter > maxDiameter ? maxDiameter : diameter)
+
             Repeater {
                 id: edgesRepeater
                 model: ListModel {}
                 delegate: Rectangle {
                     id: line
-                    opacity: 1
                     antialiasing: true
-                    color: highlight == true ? "red" : "#373737"
-
+                    color: highlight == true ? GCStyle.badAnswerBorder : GCStyle.darkBorder
                     transformOrigin: Item.TopLeft
                     x: xp * graphRect.width
                     y: yp * graphRect.height
                     property var x2: xpp * graphRect.width
                     property var y2: ypp * graphRect.height
                     width: Math.sqrt(Math.pow(x - x2, 2) + Math.pow(y- y2, 2))
-                    height: highlight == true ? 7 * ApplicationInfo.ratio : 3 * ApplicationInfo.ratio
+                    height: highlight == true ? GCStyle.thickerBorder : GCStyle.midBorder
                     rotation: (Math.atan((y2 - y)/(x2-x)) * 180 / Math.PI) + (((y2-y) < 0 && (x2-x) < 0) * 180) + (((y2-y) >= 0 && (x2-x) < 0) * 180)
                     Behavior on color {
                         ColorAnimation {
-                            duration: 2000
+                            duration: 1000
                             easing.type: Easing.OutExpo
                         }
                     }
                     Behavior on height {
                         NumberAnimation {
-                            duration: 2000
+                            duration: 1000
                             easing.type: Easing.OutExpo
                         }
                     }
                 }
-
-
             }
+
             Repeater{
                 id: nodesRepeater
-
                 model: ListModel {}
-
                 delegate:
                     Node{
                     id: currentNode
-
-                    x: posX * graphRect.width - width/2
-                    y: posY * graphRect.height - height/2
+                    x: posX * graphRect.width - width * 0.5
+                    y: posY * graphRect.height - height * 0.5
                     width: graphRect.optDiameter
                     height: width
-                    radius: width/2
-                    border.color: highlight ? "red" : "black"
-                    border.width: highlight ? 7 : 4
+                    border.color: highlight ? GCStyle.badAnswerBorder : GCStyle.darkBorder
+                    border.width: highlight ? GCStyle.thickBorder : GCStyle.thinBorder
                     symbolRotation: highlight
                     searchItemIndex: colIndex
                     Behavior on border.color {
                         ColorAnimation {
-                            duration: 2000
+                            duration: 1000
                             easing.type: Easing.OutExpo
                         }
                     }
 
                     Behavior on border.width {
                         NumberAnimation {
-                            duration: 2000
+                            duration: 1000
                             easing.type: Easing.OutExpo
                         }
                     }
@@ -235,7 +231,8 @@ ActivityBase {
                 width: graphRect.optDiameter * 1.5
                 height: width
                 radius: width * 0.5
-                color: "#80ffffff"
+                color: GCStyle.whiteBg
+                opacity: 0.5
                 visible: items.currentKeyZone === graphRect && items.keyNavigationMode
                 anchors.centerIn: nodesRepeater.itemAt(0)
                 property int index: -1
@@ -284,74 +281,65 @@ ActivityBase {
             chooserGrid.colIndex = modelObj.colIndex;
             chooserGrid.guessIndex = guessIndex;
             var targetX = absolute.x + item.width;
-            var targetY = absolute.y - item.height/2;
-            if (targetX < 0) {
-                targetX = 0;
+            var targetY = absolute.y - item.height * 0.5;
+            if (targetX < GCStyle.halfMargins) {
+                targetX = GCStyle.halfMargins;
             }
-            if (targetX + chooser.width > activityBackground.width) {
-                targetX = activityBackground.width - chooser.width - 10;
+            if (targetX + chooser.width > activityBackground.width - GCStyle.halfMargins) {
+                targetX = activityBackground.width - chooser.width - GCStyle.halfMargins;
             }
-            if (targetY < 0) {
-                targetY = 0;
+            if (targetY < GCStyle.halfMargins) {
+                targetY = GCStyle.halfMargins;
             }
-            if (targetY + chooser.height > activityBackground.height) {
-                targetY = activityBackground.height - chooser.height - 10;
+            if (targetY + chooser.height > activityBackground.height - GCStyle.halfMargins) {
+                targetY = activityBackground.height - chooser.height - GCStyle.halfMargins;
             }
             chooser.x = targetX;
             chooser.y = targetY;
             chooser.visible = true;
-            //console.log(" item.x = " + item.x + " item.y" + item.y+" absolute.x" + absolute.x +" absolute.y" + absolute.y)
         }
 
         Rectangle {
             id: chooser
-
-            width: chooserGrid.width + 5
-            height: chooserGrid.height + 5
-
-            color: "darkgray"
-            border.width: 0
-            border.color: "white"
-
-            opacity: 1
+            width: chooserGrid.width + GCStyle.halfMargins
+            height: chooserGrid.height + GCStyle.halfMargins
+            color: GCStyle.lightBg
+            border.width: GCStyle.thinnestBorder
+            border.color: GCStyle.darkBg
             visible: false
             z: 10
 
             GridView {
                 id: chooserGrid
-
-                cellWidth: graphRect.optDiameter - 2
+                cellWidth: graphRect.optDiameter
                 cellHeight: cellWidth
                 width: Math.ceil(count / 2) * cellWidth
                 height: 2 * cellHeight
-                anchors.centerIn: parent
+                anchors.top: parent.top
+                anchors.left: parent.left
+                anchors.margins: GCStyle.halfMargins
                 z: 11
-
                 clip: false
                 interactive: false
                 verticalLayoutDirection: GridView.TopToBottom
                 layoutDirection: Qt.LeftToRight
                 flow: GridView.FlowLeftToRight
                 highlight: Rectangle {
-                    color: "#80ffffff"
+                    color: GCStyle.highlightColor
+                    opacity: 0.5
                     visible: items.currentKeyZone === chooser && items.keyNavigationMode
                 }
-
                 property int gridCount : count
                 property int colIndex: 0
                 property int guessIndex: 0
-
                 model: new Array()
-
                 delegate: Node {
                     id: chooserItem
-                    width: graphRect.optDiameter - 5
-                    height: width
-                    border.width: index == chooserGrid.colIndex ? 3 : 1
-                    border.color: index == chooserGrid.colIndex ? "white" : "darkgray"
+                    width: graphRect.optDiameter - GCStyle.halfMargins
+                    border.width: index == chooserGrid.colIndex ? GCStyle.thinBorder : GCStyle.thinnestBorder
+                    border.color: index == chooserGrid.colIndex ? GCStyle.darkBorder : GCStyle.grayBorder
                     searchItemIndex: modelData
                     highlightSymbol: index == chooserGrid.colIndex
-                    radius: width * 0.5
 
                     MouseArea {
                         id: chooserMouseArea
