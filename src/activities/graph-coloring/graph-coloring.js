@@ -46,7 +46,7 @@ var graphs = [
                     [0, 1], [0, 4], [1, 4], [1, 2], [1, 3], [2, 3]
                 ],
                 nodePositions : [
-                    [0, 0], [0.5, 0.4], [1, 0], [1, 0.7], [0, 0.7]
+                    [0, 0], [0.5, 0.5], [1, 0], [1, 1], [0, 1]
                 ]
             },
             {
@@ -56,7 +56,7 @@ var graphs = [
                     [0, 1], [0, 3], [1, 2], [1, 3], [2, 3]
                 ],
                 nodePositions : [
-                    [0, 0.4], [0.5, 0], [1, 0.4], [0.5, 0.8]
+                    [0, 0.5], [0.5, 0], [1, 0.5], [0.5, 1]
                 ]
             },
             {
@@ -68,10 +68,10 @@ var graphs = [
                     [2, 3]
                 ],
                 nodePositions : [
-                    [0.628, 0.401],
-                    [0.083, 0.401],
-                    [0.900, 0.030],
-                    [0.900, 0.773]
+                    [0.628, 0.5],
+                    [0, 0.5],
+                    [1, 0],
+                    [1, 1]
                 ]
 
             },
@@ -84,9 +84,9 @@ var graphs = [
                     [2,7], [3,8], [4,9]
                 ],
                 nodePositions : [
-                    [0.5,0], [0.90,0.35], [0.80,0.80],
-                    [0.20, 0.80], [0.10, 0.35], [0.5,0.20],
-                    [0.75,0.45], [0.65, 0.65], [0.35, 0.65], [0.25, 0.45]
+                    [0.5,0], [0.90,0.44], [0.80,1],
+                    [0.20, 1], [0.10, 0.44], [0.5,0.25],
+                    [0.75,0.5], [0.65, 0.8], [0.35, 0.8], [0.25, 0.5]
                 ]
 
             },
@@ -109,11 +109,11 @@ var graphs = [
                 ],
                 nodePositions : [
                     [0.75, 0.00],
-                    [0.75, 0.80],
-                    [1.00, 0.40],
+                    [0.75, 1.00],
+                    [1.00, 0.50],
                     [0.25, 0.00],
-                    [0.25, 0.80],
-                    [0.00, 0.40]
+                    [0.25, 1.00],
+                    [0.00, 0.50]
                 ]
 
             },
@@ -141,18 +141,18 @@ var graphs = [
                     [6, 10]
                 ],
                 nodePositions : [
-                    [0.26, 0.00],
-                    [0.74, 0.00],
-                    [0.00, 0.40],
-                    [0.26, 0.80],
-                    [0.74, 0.80],
-                    [1.00, 0.40],
-                    [0.62, 0.26],
-                    [0.74, 0.40],
-                    [0.62, 0.64],
-                    [0.38, 0.64],
-                    [0.26, 0.40],
-                    [0.38, 0.26]
+                    [0.2, 0.00],
+                    [0.8, 0.00],
+                    [0.0, 0.50],
+                    [0.2, 1.00],
+                    [0.8, 1.00],
+                    [1.0, 0.50],
+                    [0.6, 0.25],
+                    [0.8, 0.50],
+                    [0.6, 0.75],
+                    [0.4, 0.75],
+                    [0.2, 0.50],
+                    [0.4, 0.25]
                 ]
             },
             {
@@ -187,16 +187,16 @@ var graphs = [
                 nodePositions : [
                     [0.00, 0.00],
                     [1.00, 0.00],
-                    [1.00, 0.80],
-                    [0.00, 0.80],
-                    [0.32, 0.32],
-                    [0.74, 0.32],
-                    [0.32, 0.53],
-                    [0.74, 0.53],
-                    [0.42, 0.22],
-                    [0.63, 0.22],
-                    [0.42, 0.64],
-                    [0.63, 0.64]
+                    [1.00, 1.00],
+                    [0.00, 1.00],
+                    [0.20, 0.40],
+                    [0.80, 0.40],
+                    [0.20, 0.60],
+                    [0.80, 0.60],
+                    [0.40, 0.20],
+                    [0.60, 0.20],
+                    [0.40, 0.80],
+                    [0.60, 0.80]
                 ]
             }
         ]
@@ -231,23 +231,17 @@ function stop() {
 
 function initLevel() {
     coloringLeft = true
-    var currentIndeces = new Array();
+    items.keyNavigationMode = false
     var levelData = levels[items.currentLevel].graph
-    items.colorsRepeater.model.clear();
     items.nodesRepeater.model.clear();
     items.edgesRepeater.model.clear();
-    var numColors = levelData.minColor + levels[items.currentLevel].extraColor;
-    for (var i = 0; i < numColors; ++i) {
-        currentIndeces[i] = i;
-        items.colorsRepeater.model.append({"itemIndex": i});
-    }
-    items.chooserGrid.model = currentIndeces
+    items.numberOfColors = levelData.minColor + levels[items.currentLevel].extraColor;
     for (var i = 0; i < levelData.nodePositions.length; ++i){
         items.nodesRepeater.model.append({
                                              "posX":levelData.nodePositions[i][0],
                                              "posY":levelData.nodePositions[i][1],
-                                             "colIndex": -1,
-                                             "highlight": false
+                                             "colorIndex": -1,
+                                             "isError": false
                                          });
     }
     for (var i = 0; i < levelData.edgeList.length; ++i){
@@ -258,7 +252,7 @@ function initLevel() {
                                              "yp": levelData.nodePositions[node1][1],
                                              "xpp": levelData.nodePositions[node2][0],
                                              "ypp": levelData.nodePositions[node2][1],
-                                             "highlight": false
+                                             "isError": false
                                          });
     }
     if(items.keyNavigationMode) {
@@ -272,7 +266,7 @@ function checkGuess() {
     //Check whether all the nodes have been colored or not
     for (var i = 0; i < levelData.nodePositions.length; i++){
         var node1 = items.nodesRepeater.model.get(i)
-        if (node1.colIndex == -1){
+        if (node1.colorIndex == -1){
             flag = true;
             break;
         }
@@ -282,9 +276,7 @@ function checkGuess() {
     for (var i = 0; i < levelData.edgeList.length; i++){
         var node1 = items.nodesRepeater.model.get(levelData.edgeList[i][0])
         var node2 = items.nodesRepeater.model.get(levelData.edgeList[i][1])
-        //console.log("node1 " + levelData.edgeList[i][0] + " node2 "+ levelData.edgeList[i][1]+" node1 color "+ node1.colIndex+ " node2 color " + node2.colIndex);
-        if (node1.colIndex == node2.colIndex) {
-            //console.log("node1 " + levelData.edgeList[i][0] + " node2 "+ levelData.edgeList[i][1]+" node1 color "+ node1.colIndex+ " node2 color " + node2.colIndex);
+        if (node1.colorIndex == node2.colorIndex) {
             flag = true;
             break;
         }
@@ -308,21 +300,21 @@ function checkAdjacent() {
         var node1Num = levelData.edgeList[i][0]
         var node2 = items.nodesRepeater.model.get(levelData.edgeList[i][1])
         var node2Num = levelData.edgeList[i][1]
-        if (node1.colIndex == node2.colIndex && node2.colIndex != -1) {
-            items.nodesRepeater.model.setProperty(node1Num, "highlight", true)
-            items.nodesRepeater.model.setProperty(node2Num, "highlight", true)
-            items.edgesRepeater.model.setProperty(i, "highlight", true)
+        if (node1.colorIndex == node2.colorIndex && node2.colorIndex != -1) {
+            items.nodesRepeater.model.setProperty(node1Num, "isError", true)
+            items.nodesRepeater.model.setProperty(node2Num, "isError", true)
+            items.edgesRepeater.model.setProperty(i, "isError", true)
             flagNodes[node1Num] = true
             flagNodes[node2Num] = true
         }
         else {
             if(!flagNodes[node1Num]) {
-                items.nodesRepeater.model.setProperty(node1Num, "highlight", false)
+                items.nodesRepeater.model.setProperty(node1Num, "isError", false)
             }
             if(!flagNodes[node2Num]) {
-                items.nodesRepeater.model.setProperty(node2Num, "highlight", false)
+                items.nodesRepeater.model.setProperty(node2Num, "isError", false)
             }
-            items.edgesRepeater.model.setProperty(i, "highlight", false)
+            items.edgesRepeater.model.setProperty(i, "isError", false)
 
         }
 
