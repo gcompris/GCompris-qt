@@ -47,7 +47,7 @@ ActivityBase {
 
         MouseArea {
             anchors.fill: parent
-            onClicked: showChooser(false);
+            onClicked: activityBackground.showChooser(false);
         }
 
         // Add here the QML items you need to access in javascript
@@ -57,10 +57,9 @@ ActivityBase {
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
-            property alias colorsRepeater: colorsRepeater
+            property int numberOfColors: 0
             property alias nodesRepeater: nodesRepeater
             property alias edgesRepeater: edgesRepeater
-            property alias chooserGrid: chooserGrid
             property alias nodeHighlight: nodeHighlight
             property string mode: "color"
             property var currentKeyZone: graphRect
@@ -97,20 +96,23 @@ ActivityBase {
             anchors.margins: GCStyle.halfMargins
             anchors.bottomMargin: bar.height * 1.3
             width: Math.min(40 * ApplicationInfo.ratio,
-                            colorsColumn.height / colorsRepeater.model.count - spacing)
+                            colorsColumn.height / items.numberOfColors - spacing)
             spacing: GCStyle.halfMargins
             add: Transition {
                 NumberAnimation { properties: "y"; duration: 1000; easing.type: Easing.OutBounce }
             }
             Repeater {
                 id: colorsRepeater
-                model: ListModel {}
+                model: items.numberOfColors
                 delegate:
                     Node {
                     width: colorsColumn.width
                     border.width: GCStyle.thinBorder
                     border.color: GCStyle.darkBorder
-                    searchItemIndex: itemIndex
+                    colorIndex: index
+                    isError: false
+                    posX: 0
+                    posY: 0
                 }
             }
         }
@@ -130,7 +132,7 @@ ActivityBase {
             anchors.bottom: colorsColumn.bottom
             anchors.top: parent.top
             anchors.right: parent.right
-            anchors.margins: optDiameter + GCStyle.baseMargins
+            anchors.margins: optDiameter * 0.75 + GCStyle.baseMargins
             property int diameter: Math.min(layoutArea.width, layoutArea.height) / 11
             property int minDiameter: 40 * ApplicationInfo.ratio
             property int maxDiameter: GCStyle.bigButtonHeight
@@ -142,14 +144,19 @@ ActivityBase {
                 delegate: Rectangle {
                     id: line
                     antialiasing: true
-                    color: highlight == true ? GCStyle.badAnswerBorder : GCStyle.darkBorder
-                    transformOrigin: Item.TopLeft
+                    required property bool isError
+                    required property double xp
+                    required property double yp
+                    required property double xpp
+                    required property double ypp
+                    color: isError ? GCStyle.badAnswerBorder : GCStyle.darkBorder
+                    transformOrigin: Item.Left
                     x: xp * graphRect.width
                     y: yp * graphRect.height
                     property var x2: xpp * graphRect.width
                     property var y2: ypp * graphRect.height
                     width: Math.sqrt(Math.pow(x - x2, 2) + Math.pow(y- y2, 2))
-                    height: highlight == true ? GCStyle.thickerBorder : GCStyle.midBorder
+                    height: isError ? GCStyle.thickerBorder : GCStyle.midBorder
                     rotation: (Math.atan((y2 - y)/(x2-x)) * 180 / Math.PI) + (((y2-y) < 0 && (x2-x) < 0) * 180) + (((y2-y) >= 0 && (x2-x) < 0) * 180)
                     Behavior on color {
                         ColorAnimation {
@@ -176,10 +183,8 @@ ActivityBase {
                     y: posY * graphRect.height - height * 0.5
                     width: graphRect.optDiameter
                     height: width
-                    border.color: highlight ? GCStyle.badAnswerBorder : GCStyle.darkBorder
-                    border.width: highlight ? GCStyle.thickBorder : GCStyle.thinBorder
-                    symbolRotation: highlight
-                    searchItemIndex: colIndex
+                    border.color: isError ? GCStyle.badAnswerBorder : GCStyle.darkBorder
+                    border.width: isError ? GCStyle.thickBorder : GCStyle.thinBorder
                     Behavior on border.color {
                         ColorAnimation {
                             duration: 1000
@@ -207,7 +212,7 @@ ActivityBase {
                             smudgeSound.play();
                             items.currentKeyZone = chooser;
                             items.nodeHighlight.setHighlight(index);
-                            showChooser(true, index, parent);
+                            activityBackground.showChooser(true, index, parent);
                         }
                     }
                     states: State {
@@ -233,7 +238,7 @@ ActivityBase {
                 radius: width * 0.5
                 color: GCStyle.whiteBg
                 opacity: 0.5
-                visible: items.currentKeyZone === graphRect && items.keyNavigationMode
+                visible: items.keyNavigationMode
                 anchors.centerIn: nodesRepeater.itemAt(0)
                 property int index: -1
                 function setHighlight(toIndex: int) {
@@ -264,21 +269,22 @@ ActivityBase {
                 nodeHighlight.anchors.centerIn = nodesRepeater.itemAt(nodeHighlight.index);
                 if(event.key === Qt.Key_Space) {
                     smudgeSound.play();
-                    showChooser(true, nodeHighlight.index, nodesRepeater.itemAt(nodeHighlight.index));
+                    activityBackground.showChooser(true, nodeHighlight.index, nodesRepeater.itemAt(nodeHighlight.index));
                     items.currentKeyZone = chooser;
-                    items.chooserGrid.currentIndex = 0;
                 }
             }
         }
-        function showChooser(visible: bool, guessIndex: int, item)
-        {
-            if (!visible) {
+
+        function showChooser(showIt: bool, guessIndex: int, item) {
+            if (!showIt) {
                 chooser.visible = false;
+                chooserGrid.currentIndex = 0;
                 return;
             }
             var modelObj = items.nodesRepeater.model.get(guessIndex);
             var absolute = graphRect.mapToItem(activityBackground, item.x, item.y);
-            chooserGrid.colIndex = modelObj.colIndex;
+            chooserGrid.currentIndex = 0;
+            chooserGrid.colorIndex = modelObj.colorIndex;
             chooserGrid.guessIndex = guessIndex;
             var targetX = absolute.x + item.width;
             var targetY = absolute.y - item.height * 0.5;
@@ -329,17 +335,19 @@ ActivityBase {
                     opacity: 0.5
                     visible: items.currentKeyZone === chooser && items.keyNavigationMode
                 }
-                property int gridCount : count
-                property int colIndex: 0
+                property int colorIndex: 0
                 property int guessIndex: 0
-                model: new Array()
+                model: items.numberOfColors
                 delegate: Node {
                     id: chooserItem
                     width: graphRect.optDiameter - GCStyle.halfMargins
-                    border.width: index == chooserGrid.colIndex ? GCStyle.thinBorder : GCStyle.thinnestBorder
-                    border.color: index == chooserGrid.colIndex ? GCStyle.darkBorder : GCStyle.grayBorder
-                    searchItemIndex: modelData
-                    highlightSymbol: index == chooserGrid.colIndex
+                    border.width: index == chooserGrid.colorIndex ? GCStyle.thinBorder : GCStyle.thinnestBorder
+                    border.color: index == chooserGrid.colorIndex ? GCStyle.darkBorder : GCStyle.grayBorder
+                    colorIndex: index
+                    posX: 0
+                    posY: 0
+                    isError: false
+                    highlightSymbol: index == chooserGrid.colorIndex
 
                     MouseArea {
                         id: chooserMouseArea
@@ -350,7 +358,7 @@ ActivityBase {
                         hoverEnabled: ApplicationInfo.isMobile ? false : true
 
                         onClicked: {
-                            chooserGrid.colIndex = chooserItem.searchItemIndex;
+                            chooserGrid.colorIndex = chooserItem.colorIndex;
                             chooser.selectItem();
                         }
                     }
@@ -373,16 +381,16 @@ ActivityBase {
                     }
                 }
                 if(event.key === Qt.Key_Space) {
-                    chooserGrid.colIndex = chooserGrid.currentItem.searchItemIndex;
-                    selectItem();
+                    chooserGrid.colorIndex = chooserGrid.currentItem.colorIndex;
+                    chooser.selectItem();
                 }
             }
 
             function selectItem() {
                 smudgeSound.play();
                 var obj = items.nodesRepeater.model;
-                obj.setProperty(chooserGrid.guessIndex, "colIndex", chooserGrid.colIndex);
-                showChooser(false);
+                obj.setProperty(chooserGrid.guessIndex, "colorIndex", chooserGrid.colorIndex);
+                activityBackground.showChooser(false);
                 Activity.checkAdjacent();
                 Activity.checkGuess();
                 items.currentKeyZone = graphRect;

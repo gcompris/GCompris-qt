@@ -17,10 +17,13 @@ import "graph-coloring.js" as Activity
 
 Item {
     id: root
-    property int searchItemIndex: -1
+    required property int index
+    required property int colorIndex
+    required property bool isError
+    required property double posX
+    required property double posY
     property alias border: color.border
     property bool highlightSymbol: false
-    property bool symbolRotation: false
 
     height: width
 
@@ -28,13 +31,13 @@ Item {
         id: symbol
         visible: items.mode === "symbol"
         fillMode: Image.PreserveAspectFit
-        source: searchItemIndex == -1 ? "qrc:/gcompris/src/core/resource/empty.svg" : Activity.symbols[root.searchItemIndex]
+        source: root.colorIndex == -1 ? "qrc:/gcompris/src/core/resource/empty.svg" : Activity.symbols[root.colorIndex]
         anchors.fill: parent
         anchors.margins: GCStyle.halfMargins
 
         SequentialAnimation {
             id: anim
-            running: root.symbolRotation
+            running: root.isError
             loops: Animation.Infinite
             NumberAnimation {
                 target: symbol
@@ -52,7 +55,7 @@ Item {
         }
         NumberAnimation {
             id: rotationStop
-            running: !root.symbolRotation
+            running: !root.isError
             target: symbol
             property: "rotation"
             to: 0
@@ -71,8 +74,8 @@ Item {
 
     Rectangle {
         id: color
-        visible: items.mode === "color" || root.searchItemIndex == -1
-        color: root.searchItemIndex == -1 ? GCStyle.lightBg : Activity.colors[root.searchItemIndex]
+        visible: items.mode === "color" || root.colorIndex == -1
+        color: root.colorIndex == -1 ? GCStyle.lightBg : Activity.colors[root.colorIndex]
         anchors.fill: parent
         anchors.margins: GCStyle.halfMargins
         radius: width * 0.5
