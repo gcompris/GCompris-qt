@@ -8,6 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 
 import "../../core"
@@ -106,13 +108,15 @@ ActivityBase {
                 model: items.numberOfColors
                 delegate:
                     Node {
-                    width: colorsColumn.width
-                    border.width: GCStyle.thinBorder
-                    border.color: GCStyle.darkBorder
-                    colorIndex: index
-                    isError: false
-                    posX: 0
-                    posY: 0
+                        required property int index
+                        width: colorsColumn.width
+                        border.width: GCStyle.thinBorder
+                        border.color: GCStyle.darkBorder
+                        colorIndex: index
+                        isError: false
+                        mode: items.mode
+                        posX: 0
+                        posY: 0
                 }
             }
         }
@@ -177,8 +181,9 @@ ActivityBase {
                 id: nodesRepeater
                 model: ListModel {}
                 delegate:
-                    Node{
+                    Node {
                     id: currentNode
+                    required property int index
                     x: posX * graphRect.width - width * 0.5
                     y: posY * graphRect.height - height * 0.5
                     width: graphRect.optDiameter
@@ -199,6 +204,7 @@ ActivityBase {
                         }
                     }
 
+                    mode: items.mode
 
                     MouseArea {
                         id: mouseArea
@@ -211,8 +217,8 @@ ActivityBase {
                         onClicked:{
                             smudgeSound.play();
                             items.currentKeyZone = chooser;
-                            items.nodeHighlight.setHighlight(index);
-                            activityBackground.showChooser(true, index, parent);
+                            items.nodeHighlight.setHighlight(currentNode.index);
+                            activityBackground.showChooser(true, currentNode.index, parent);
                         }
                     }
                     states: State {
@@ -247,7 +253,7 @@ ActivityBase {
                 }
             }
 
-            function handleKeys(event) {
+            function handleKeys(event: var) {
                 if(event.key === Qt.Key_Right) {
                     smudgeSound.play();
                     nodeHighlight.index += 1;
@@ -275,7 +281,7 @@ ActivityBase {
             }
         }
 
-        function showChooser(showIt: bool, guessIndex: int, item) {
+        function showChooser(showIt: bool, guessIndex: int, item: Item) {
             if (!showIt) {
                 chooser.visible = false;
                 chooserGrid.currentIndex = 0;
@@ -340,6 +346,7 @@ ActivityBase {
                 model: items.numberOfColors
                 delegate: Node {
                     id: chooserItem
+                    required property int index
                     width: graphRect.optDiameter - GCStyle.halfMargins
                     border.width: index == chooserGrid.colorIndex ? GCStyle.thinBorder : GCStyle.thinnestBorder
                     border.color: index == chooserGrid.colorIndex ? GCStyle.darkBorder : GCStyle.grayBorder
@@ -347,6 +354,7 @@ ActivityBase {
                     posX: 0
                     posY: 0
                     isError: false
+                    mode: items.mode
                     highlightSymbol: index == chooserGrid.colorIndex
 
                     MouseArea {
@@ -365,7 +373,7 @@ ActivityBase {
                 }
             }
 
-            function handleKeys(event) {
+            function handleKeys(event: var) {
                 if(event.key === Qt.Key_Right) {
                     smudgeSound.play();
                     chooserGrid.currentIndex += 1;
@@ -399,7 +407,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         DialogChooseLevel {
@@ -407,7 +415,7 @@ ActivityBase {
             currentActivity: activity.activityInfo
 
             onClose: {
-                home();
+                activity.home();
                 eventHandler.forceActiveFocus();
             }
             onLoadData: {
@@ -425,13 +433,13 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: activityConfig | help | home | level }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onActivityConfigClicked: {
-                displayDialog(dialogActivityConfig)
+                activity.displayDialog(dialogActivityConfig)
             }
         }
 

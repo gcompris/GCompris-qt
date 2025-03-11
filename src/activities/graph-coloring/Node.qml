@@ -17,11 +17,11 @@ import "graph-coloring.js" as Activity
 
 Item {
     id: root
-    required property int index
     required property int colorIndex
     required property bool isError
     required property double posX
     required property double posY
+    required property string mode
     property alias border: color.border
     property bool highlightSymbol: false
 
@@ -29,7 +29,7 @@ Item {
 
     Image {
         id: symbol
-        visible: items.mode === "symbol"
+        visible: root.mode === "symbol"
         fillMode: Image.PreserveAspectFit
         source: root.colorIndex == -1 ? "qrc:/gcompris/src/core/resource/empty.svg" : Activity.symbols[root.colorIndex]
         anchors.fill: parent
@@ -65,7 +65,7 @@ Item {
     }
     Rectangle {
         id: symbolHighlighter
-        visible: (items.mode === "symbol") && root.highlightSymbol
+        visible: (root.mode === "symbol") && root.highlightSymbol
         anchors.fill: parent
         border.width: GCStyle.thinnestBorder
         border.color: GCStyle.darkBorder
@@ -74,7 +74,7 @@ Item {
 
     Rectangle {
         id: color
-        visible: items.mode === "color" || root.colorIndex == -1
+        visible: root.mode === "color" || root.colorIndex == -1
         color: root.colorIndex == -1 ? GCStyle.lightBg : Activity.colors[root.colorIndex]
         anchors.fill: parent
         anchors.margins: GCStyle.halfMargins
