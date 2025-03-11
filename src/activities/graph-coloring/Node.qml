@@ -11,26 +11,27 @@
 
 import QtQuick 2.12
 import core 1.0
+
+import "../../core"
 import "graph-coloring.js" as Activity
 
 Item {
     id: root
     property int searchItemIndex: -1
     property alias border: color.border
-    property alias radius: color.radius
     property bool highlightSymbol: false
     property bool symbolRotation: false
+
+    height: width
 
     Image {
         id: symbol
         visible: items.mode === "symbol"
         fillMode: Image.PreserveAspectFit
-        source: searchItemIndex == -1 ? Activity.url + "shapes/" + "circle_node.svg" : Activity.symbols[root.searchItemIndex]
-        anchors.left: parent.left
-        anchors.top: parent.top
-        anchors.margins: 3
-        width: parent.width - 6
-        height: parent.height - 6
+        source: searchItemIndex == -1 ? "qrc:/gcompris/src/core/resource/empty.svg" : Activity.symbols[root.searchItemIndex]
+        anchors.fill: parent
+        anchors.margins: GCStyle.halfMargins
+
         SequentialAnimation {
             id: anim
             running: root.symbolRotation
@@ -63,20 +64,17 @@ Item {
         id: symbolHighlighter
         visible: (items.mode === "symbol") && root.highlightSymbol
         anchors.fill: parent
-        width: parent.width
-        height: parent.height
-        border.width: 3
-        border.color: "white"
+        border.width: GCStyle.thinnestBorder
+        border.color: GCStyle.darkBorder
         color: "transparent"
     }
 
     Rectangle {
         id: color
-        visible: items.mode === "color"
-        color: root.searchItemIndex == -1 ? "white" : Activity.colors[root.searchItemIndex]
+        visible: items.mode === "color" || root.searchItemIndex == -1
+        color: root.searchItemIndex == -1 ? GCStyle.lightBg : Activity.colors[root.searchItemIndex]
         anchors.fill: parent
-        width: parent.width
-        height: parent.height
-        radius: width / 2
+        anchors.margins: GCStyle.halfMargins
+        radius: width * 0.5
     }
 }

@@ -16,15 +16,15 @@ var items
 var url = "qrc:/gcompris/src/activities/graph-coloring/resource/"
 var coloringLeft
 var colors = [
-            "#FF0000FF",  // dark blue
-            "#FF00FF00",  // light green
-            "#FFFF0000",  // red
-            "#FF00FFFF",  // light blue
-            "#FFFF00FF",  // magenta
-            "#FFFFFF00",  // yellow
-            "#FF8e7016",  // brown
-            "#FF04611a",  // dark green
-            "#FFa0174b"   // dark magenta
+            "#2760B5",  // dark blue
+            "#8EEB76",  // light green
+            "#E65B48",  // red
+            "#49BBF0",  // light blue
+            "#E31BE3",  // magenta
+            "#E8EF48",  // yellow
+            "#BBB082",  // brown
+            "#42B324",  // dark green
+            "#881744"   // dark magenta
         ];
 
 var symbols = [
