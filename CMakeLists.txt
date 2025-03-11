@@ -100,6 +100,12 @@ endforeach()
 # It seems to only be present on some Linux distributions, not FreeBSD for example and starting Qt6.6 so not enforcing it
 find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} OPTIONAL_COMPONENTS QuickControls2Basic)
 
+
+# Set Qt policy, introduced in Qt6.8
+if(QT_KNOWN_POLICY_QTP0004)
+  qt6_policy(SET QTP0004 NEW)
+endif()
+
 # Starting C++20, emit() is a function in standard library. To avoid using Qt keywords like signals, slots, emit, we define this variable
 add_definitions(
     -DQT_USE_QSTRINGBUILDER
