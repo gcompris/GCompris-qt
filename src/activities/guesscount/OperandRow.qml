@@ -18,19 +18,19 @@ Row {
     id: operandRow
     property alias repeater: repeater
     property int rowSum
-    spacing: activityBackground.baseMargins
+    spacing: GCStyle.baseMargins
     Rectangle {
         id: operands
         width: parent.width * 0.3
         height: parent.height
-        radius: activityBackground.baseMargins
-        color: "#E8E8E8"
+        radius: GCStyle.halfMargins
+        color: GCStyle.paperWhite
         border.color: "#75D21B"  //green
-        border.width: activityBackground.tileBorder
+        border.width: GCStyle.midBorder
 
         GCText {
             anchors.fill: parent
-            anchors.margins: 2 * activityBackground.tileBorder
+            anchors.margins: 2 * GCStyle.midBorder
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
             fontSize: mediumSize
@@ -43,8 +43,8 @@ Row {
         delegate: DragTile {
             id: root
             type: "operands"
-            width: Math.min(70 * ApplicationInfo.ratio,
-                            (operandRow.width - operands.width) * 0.2 - activityBackground.baseMargins)
+            width: Math.min(GCStyle.bigButtonHeight,
+                            (operandRow.width - operands.width) * 0.2 - GCStyle.baseMargins)
             height: operandRow.height
         }
     }

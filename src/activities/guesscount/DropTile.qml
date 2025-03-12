@@ -20,9 +20,9 @@ DropArea {
         id: dropRectangle
         anchors.fill: parent
         color: type == "operators" ? "#80F16F6F" : "#8075D21B" // red or green
-        border.width: activityBackground.tileBorder
+        border.width: GCStyle.midBorder
         border.color: type == "operators" ? "#FFF16F6F" : "#FF75D21B" // red or green
-        radius: activityBackground.tileRadius
+        radius: GCStyle.halfMargins
         states: [
             State {
                 when: dragTarget.containsDrag

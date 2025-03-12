@@ -27,10 +27,6 @@ ActivityBase {
         source: Activity.baseUrl + "/backgroundW01.svg"
         signal start
         signal stop
-        readonly property int baseMargins: 10 * ApplicationInfo.ratio
-        readonly property int halfMargins: 5 * ApplicationInfo.ratio
-        readonly property double tileRadius: 6 * ApplicationInfo.ratio
-        readonly property double tileBorder: 3 * ApplicationInfo.ratio
 
         Component.onCompleted: {
             dialogActivityConfig.initialize()
@@ -90,7 +86,7 @@ ActivityBase {
             id: admin
             active: false
             sourceComponent: Column {
-                spacing: activityBackground.baseMargins
+                spacing: GCStyle.baseMargins
                 width: parent.width
                 height: parent.height
 
@@ -116,7 +112,7 @@ ActivityBase {
                 left: parent.left
                 right: parent.right
                 top: parent.top
-                margins: activityBackground.baseMargins
+                margins: GCStyle.baseMargins
             }
             Score {
                 id: score
@@ -126,7 +122,7 @@ ActivityBase {
                 anchors.bottom: undefined
                 anchors.margins: 0
                 anchors.verticalCenter: parent.verticalCenter
-                radius: guessLabel.radius
+                radius: GCStyle.halfMargins
                 currentSubLevel: 0
                 onStop: Activity.nextSubLevel()
 
@@ -137,16 +133,16 @@ ActivityBase {
                 anchors.bottom: parent.bottom
                 anchors.right: parent.right
                 anchors.left: score.right
-                anchors.leftMargin: activityBackground.baseMargins
-                radius: activityBackground.baseMargins
+                anchors.leftMargin: GCStyle.baseMargins
+                radius: GCStyle.halfMargins
                 border.color: "orange"
-                border.width: 3 * ApplicationInfo.ratio
-                color: "#E8E8E8"
+                border.width: GCStyle.midBorder
+                color: GCStyle.paperWhite
                 GCText {
                     id: guess
                     anchors.centerIn: parent
-                    width: parent.width - 2 * activityBackground.baseMargins
-                    height: parent.height - activityBackground.baseMargins
+                    width: parent.width - 2 * GCStyle.baseMargins
+                    height: parent.height - GCStyle.baseMargins
                     fontSizeMode: Text.Fit
                     minimumPointSize: 7
                     fontSize: mediumSize
@@ -159,18 +155,18 @@ ActivityBase {
 
         Column {
             id: col
-            spacing: activityBackground.halfMargins
+            spacing: GCStyle.halfMargins
             anchors.top: top.bottom
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.bottom: parent.bottom
-            anchors.margins: activityBackground.baseMargins
+            anchors.margins: GCStyle.baseMargins
             anchors.bottomMargin: bar.height * 1.2
             OperatorRow {
                 id: operatorRow
                 width: parent.width
-                height: Math.min(70 * ApplicationInfo.ratio,
-                                 parent.height / 6 - activityBackground.halfMargins)
+                height: Math.min(GCStyle.bigButtonHeight,
+                                 parent.height / 6 - GCStyle.halfMargins)
                 mode: items.mode
             }
             OperandRow {
@@ -270,12 +266,12 @@ ActivityBase {
         Rectangle {
             id: warningDialog
             width: Math.min(300 * ApplicationInfo.ratio, col.width)
-            height: 70 * ApplicationInfo.ratio
+            height: GCStyle.bigButtonHeight
             visible: false
-            color: "#373737"
-            radius: activityBackground.baseMargins
-            border.color: "white"
-            border.width: activityBackground.tileBorder
+            color: GCStyle.darkBg
+            radius: GCStyle.halfMargins
+            border.color: GCStyle.whiteBorder
+            border.width: GCStyle.midBorder
             property alias dialogText: dialogText
             anchors.centerIn: col
             GCText {
@@ -283,11 +279,11 @@ ActivityBase {
                 anchors.centerIn: parent
                 fontSize: regularSize
                 fontSizeMode: Text.Fit
-                color: "white"
+                color: GCStyle.whiteText
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                width: parent.width - activityBackground.baseMargins
-                height: parent.height - activityBackground.baseMargins * 2
+                width: parent.width - GCStyle.baseMargins * 2
+                height: parent.height - GCStyle.baseMargins * 2
                 wrapMode: TextEdit.WordWrap
             }
             states: [
