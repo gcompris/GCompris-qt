@@ -14232,43 +14232,43 @@ msgctxt "TopPanel|"
 msgid "Primes less than %1"
 msgstr "Numeri primi minori di %1"
 
-#: activities/gnumch-equality/Warning.qml:26
+#: activities/gnumch-equality/Warning.qml:29
 msgctxt "Warning|"
 msgid "You were eaten by a Troggle."
 msgstr "Sei stato mangiato da un Troggle."
 
-#: activities/gnumch-equality/Warning.qml:30
+#: activities/gnumch-equality/Warning.qml:33
 msgctxt "Warning|"
 msgid "You ate a wrong number."
 msgstr "Hai mangiato un numero errato."
 
-#: activities/gnumch-equality/Warning.qml:47
+#: activities/gnumch-equality/Warning.qml:48
 msgctxt "Warning|"
 msgid "1 is not a prime number."
 msgstr "1 non è un numero primo."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>)
-#: activities/gnumch-equality/Warning.qml:62
+#: activities/gnumch-equality/Warning.qml:63
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is a non-prime number, its divisors are: %2"
 msgstr "%1 non è un numero primo, i suoi divisori sono: %2"
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
-#: activities/gnumch-equality/Warning.qml:66
+#: activities/gnumch-equality/Warning.qml:67
 #, qt-format
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
 msgstr "I multipli di %1 includono %2 o %3, ma %4 non è un multiplo di %5."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
-#: activities/gnumch-equality/Warning.qml:81
+#: activities/gnumch-equality/Warning.qml:82
 #, qt-format
 msgctxt "Warning|"
 msgid "Divisors of %1 are: %2"
 msgstr "I divisori di %1 sono: %2"
 
-#: activities/gnumch-equality/Warning.qml:100
+#: activities/gnumch-equality/Warning.qml:101
 msgctxt "Warning|"
 msgid "Press \"Return\" or click on me to continue."
 msgstr "Premi «Invio» o fai clic su di me per continuare."

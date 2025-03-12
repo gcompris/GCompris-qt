@@ -14335,30 +14335,30 @@ msgctxt "TopPanel|"
 msgid "Primes less than %1"
 msgstr "Πρώτοι αριθμοί μικρότεροι του %1"
 
-#: activities/gnumch-equality/Warning.qml:26
+#: activities/gnumch-equality/Warning.qml:29
 msgctxt "Warning|"
 msgid "You were eaten by a Troggle."
 msgstr "Σε έφαγε ο Αριθμοφάγος."
 
-#: activities/gnumch-equality/Warning.qml:30
+#: activities/gnumch-equality/Warning.qml:33
 msgctxt "Warning|"
 msgid "You ate a wrong number."
 msgstr "Κατάπιες λάθος αριθμό."
 
-#: activities/gnumch-equality/Warning.qml:47
+#: activities/gnumch-equality/Warning.qml:48
 msgctxt "Warning|"
 msgid "1 is not a prime number."
 msgstr "Το 1 δεν είναι πρώτος αριθμός."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>)
-#: activities/gnumch-equality/Warning.qml:62
+#: activities/gnumch-equality/Warning.qml:63
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is a non-prime number, its divisors are: %2"
 msgstr "Ο %1 είναι ένας μη πρώτος αριθμός, οι διαιρέτες του είναι: %2"
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
-#: activities/gnumch-equality/Warning.qml:66
+#: activities/gnumch-equality/Warning.qml:67
 #, qt-format
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
@@ -14367,13 +14367,13 @@ msgstr ""
 "πολλαπλάσιο του %5."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
-#: activities/gnumch-equality/Warning.qml:81
+#: activities/gnumch-equality/Warning.qml:82
 #, qt-format
 msgctxt "Warning|"
 msgid "Divisors of %1 are: %2"
 msgstr "Οι διαιρέτες του %1 είναι: %2"
 
-#: activities/gnumch-equality/Warning.qml:100
+#: activities/gnumch-equality/Warning.qml:101
 msgctxt "Warning|"
 msgid "Press \"Return\" or click on me to continue."
 msgstr "Πάτησε το κουμπί \"Enter\" ή πάτα σε μένα για να συνεχίσεις."

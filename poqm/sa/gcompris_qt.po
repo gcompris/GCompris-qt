@@ -13760,43 +13760,43 @@ msgctxt "TopPanel|"
 msgid "Primes less than %1"
 msgstr "%1 तः न्यूनाः अभाज्यम्"
 
-#: activities/gnumch-equality/Warning.qml:26
+#: activities/gnumch-equality/Warning.qml:29
 msgctxt "Warning|"
 msgid "You were eaten by a Troggle."
 msgstr "त्वं एकेन ट्रोग्लेन खादितः अभवः।"
 
-#: activities/gnumch-equality/Warning.qml:30
+#: activities/gnumch-equality/Warning.qml:33
 msgctxt "Warning|"
 msgid "You ate a wrong number."
 msgstr "भवन्तः गलत् सङ्ख्यां खादितवन्तः।"
 
-#: activities/gnumch-equality/Warning.qml:47
+#: activities/gnumch-equality/Warning.qml:48
 msgctxt "Warning|"
 msgid "1 is not a prime number."
 msgstr "१ न अभाज्यसङ्ख्या ।"
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>)
-#: activities/gnumch-equality/Warning.qml:62
+#: activities/gnumch-equality/Warning.qml:63
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is a non-prime number, its divisors are: %2"
 msgstr "%1 अ-अभाज्यसङ्ख्या अस्ति, तस्य विभाजकाः सन्ति: %2"
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
-#: activities/gnumch-equality/Warning.qml:66
+#: activities/gnumch-equality/Warning.qml:67
 #, qt-format
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
 msgstr "%1 इत्यस्य बहुलेषु %2 अथवा %3 अन्तर्भवति परन्तु %4 %5 इत्यस्य बहुलः नास्ति ।"
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
-#: activities/gnumch-equality/Warning.qml:81
+#: activities/gnumch-equality/Warning.qml:82
 #, qt-format
 msgctxt "Warning|"
 msgid "Divisors of %1 are: %2"
 msgstr "%1 इत्यस्य विभाजकाः सन्ति : %2"
 
-#: activities/gnumch-equality/Warning.qml:100
+#: activities/gnumch-equality/Warning.qml:101
 msgctxt "Warning|"
 msgid "Press \"Return\" or click on me to continue."
 msgstr "\"Return\" नुदन्तु अथवा निरन्तरं कर्तुं मम उपरि क्लिक् कुर्वन्तु।"
