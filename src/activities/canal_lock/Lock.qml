@@ -9,14 +9,11 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-import core 1.0
-
 
 Rectangle {
     id: lock
     anchors.bottom: parent.bottom
     anchors.horizontalCenter: parent.horizontalCenter
-    width: parent.paintedWidth * 0.05
     height: maxHeight
     border.width: 0
     state: "close"

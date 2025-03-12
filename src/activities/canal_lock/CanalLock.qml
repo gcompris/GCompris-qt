@@ -8,11 +8,12 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import core 1.0
 
 import "../../core"
-import "."
 
 ActivityBase {
     id: activity
@@ -20,11 +21,9 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    property string url: "qrc:/gcompris/src/activities/canal_lock/resource/"
-
     pageComponent: Image {
         id: activityBackground
-        source: activity.url + "sky.svg"
+        source: activity.resourceUrl + "sky.svg"
         anchors.fill: parent
         sourceSize.width: width
         sourceSize.height: height
@@ -41,22 +40,22 @@ ActivityBase {
 
         GCSoundEffect {
             id: waterSound
-            source: activity.url + "water_fill.wav"
+            source: activity.resourceUrl + "water_fill.wav"
         }
 
         GCSoundEffect {
             id: lockSound
-            source: activity.url + "lock.wav"
+            source: activity.resourceUrl + "lock.wav"
         }
 
         GCSoundEffect {
             id: doorOpenSound
-            source: activity.url + "door_open.wav"
+            source: activity.resourceUrl + "door_open.wav"
         }
 
         GCSoundEffect {
             id: doorCloseSound
-            source: activity.url + "door_close.wav"
+            source: activity.resourceUrl + "door_close.wav"
         }
 
         GCSoundEffect {
@@ -89,14 +88,14 @@ ActivityBase {
         }
 
         Image {
-            source: activity.url + "sun.svg"
+            source: activity.resourceUrl + "sun.svg"
             sourceSize.width: Math.min(120 * ApplicationInfo.ratio, parent.width * 0.15)
             x: GCStyle.halfMargins
             y: GCStyle.halfMargins
         }
 
         Image {
-            source: activity.url + "cloud1.svg"
+            source: activity.resourceUrl + "cloud1.svg"
             sourceSize.width: Math.min(120 * ApplicationInfo.ratio, parent.width * 0.15)
             anchors.top: parent.top
             anchors.left: parent.left
@@ -105,7 +104,7 @@ ActivityBase {
         }
 
         Image {
-            source: activity.url + "cloud2.svg"
+            source: activity.resourceUrl + "cloud2.svg"
             sourceSize.width: Math.min(130 * ApplicationInfo.ratio, parent.width * 0.2)
             anchors.top: parent.top
             anchors.left: parent.left
@@ -132,7 +131,7 @@ ActivityBase {
 
         Image {
             id: canal
-            source: activity.url + "canal_lock.svg"
+            source: activity.resourceUrl + "canal_lock.svg"
             anchors.centerIn: canalArea
             height: canalArea.height
             width: canalArea.width
@@ -142,17 +141,17 @@ ActivityBase {
 
             Image {
                 id: canalLeft
-                source: activity.url + "canal_left.svg"
+                source: activity.resourceUrl + "canal_left.svg"
                 anchors.top: canal.top
                 anchors.left: canal.left
-                width: (activityBackground.width - parent.paintedWidth) / 2 + 1
+                width: (activityBackground.width - canal.paintedWidth) / 2 + 1
                 height: parent.height
                 sourceSize.height: height
                 fillMode: Image.TileHorizontally
             }
 
             Image {
-                source: activity.url + "canal_right.svg"
+                source: activity.resourceUrl + "canal_right.svg"
                 anchors.top: canal.top
                 anchors.right: parent.right
                 width: canalLeft.width
@@ -167,9 +166,9 @@ ActivityBase {
                 anchors.bottomMargin: (canal.height - canal.paintedHeight) / 2 +
                                       canal.paintedHeight * 0.23
                 anchors.horizontalCenter: parent.horizontalCenter
-                anchors.horizontalCenterOffset: parent.paintedWidth * 0.035
+                anchors.horizontalCenterOffset: canal.paintedWidth * 0.035
                 color: "#4f76d6"
-                width: parent.paintedWidth * 0.205
+                width: canal.paintedWidth * 0.205
                 height: minHeight
                 state: "undef"
 
@@ -211,6 +210,7 @@ ActivityBase {
                 anchors.bottomMargin: (canal.height - canal.paintedHeight) / 2 +
                                       canal.paintedHeight * 0.03
                 anchors.horizontalCenterOffset: - canal.paintedWidth * 0.16
+                width: canal.paintedWidth * 0.05
                 minHeight: canal.paintedHeight * 0.05
                 maxHeight: canal.paintedHeight * 0.18
                 duration: 0
@@ -245,6 +245,7 @@ ActivityBase {
                 anchors.bottomMargin: (canal.height - canal.paintedHeight) / 2 +
                                       canal.paintedHeight * 0.03
                 anchors.horizontalCenterOffset: canal.paintedWidth * 0.22
+                width: canal.paintedWidth * 0.05
                 minHeight: canal.paintedHeight * 0.05
                 maxHeight: canal.paintedHeight * 0.18
                 duration: 0
@@ -279,6 +280,7 @@ ActivityBase {
                 anchors.bottomMargin: (canal.height - canal.paintedHeight) / 2 +
                                       canal.paintedHeight * 0.2
                 anchors.horizontalCenterOffset: - canal.paintedWidth * 0.07
+                width: canal.paintedWidth * 0.05
                 minHeight: canal.paintedHeight * 0.05
                 maxHeight: canal.paintedHeight * 0.4
                 duration: 0
@@ -312,6 +314,7 @@ ActivityBase {
                 anchors.bottomMargin: (canal.height - canal.paintedHeight) / 2 +
                                       canal.paintedHeight * 0.2
                 anchors.horizontalCenterOffset: canal.paintedWidth * 0.14
+                width: canal.paintedWidth * 0.05
                 minHeight: canal.paintedHeight * 0.15
                 maxHeight: canal.paintedHeight * 0.4
                 duration: 0
@@ -341,7 +344,7 @@ ActivityBase {
 
             Image {
                 id: leftLight
-                source: activity.url + "light_red.svg"
+                source: activity.resourceUrl + "light_red.svg"
                 anchors.bottom: canal.bottom
                 anchors.bottomMargin: (canal.height - canal.paintedHeight) / 2 +
                                       canal.paintedHeight * 0.46
@@ -354,7 +357,7 @@ ActivityBase {
                         name: "green"
                         PropertyChanges {
                             leftLight {
-                                source: activity.url + "light_green.svg"
+                                source: activity.resourceUrl + "light_green.svg"
                             }
                         }
                     },
@@ -362,7 +365,7 @@ ActivityBase {
                         name: "red"
                         PropertyChanges {
                             leftLight {
-                                source: activity.url + "light_red.svg"
+                                source: activity.resourceUrl + "light_red.svg"
                             }
                         }
                     }
@@ -371,7 +374,7 @@ ActivityBase {
 
             Image {
                 id: rightLight
-                source: activity.url + "light_red.svg"
+                source: activity.resourceUrl + "light_red.svg"
                 anchors.bottom: canal.bottom
                 anchors.bottomMargin: (canal.height - canal.paintedHeight) / 2 +
                                       canal.paintedHeight * 0.60
@@ -385,7 +388,7 @@ ActivityBase {
                         name: "green"
                         PropertyChanges {
                             rightLight {
-                                source: activity.url + "light_green.svg"
+                                source: activity.resourceUrl + "light_green.svg"
                             }
                         }
                     },
@@ -393,7 +396,7 @@ ActivityBase {
                         name: "red"
                         PropertyChanges {
                             rightLight {
-                                source: activity.url + "light_red.svg"
+                                source: activity.resourceUrl + "light_red.svg"
                             }
                         }
                     }
@@ -402,7 +405,7 @@ ActivityBase {
 
             Image {
                 id: boat
-                source: activity.url + "boat1.svg"
+                source: activity.resourceUrl + "boat1.svg"
                 sourceSize.width: water.width * 0.74
                 anchors {
                     bottom: canal.bottom
@@ -412,11 +415,11 @@ ActivityBase {
 
                     onHorizontalCenterOffsetChanged: {
                         if(boat.anchors.horizontalCenterOffset == boat.rightPositionX &&
-                            boat.source == activity.url + "boat1.svg") {
-                            boat.source = activity.url + "boat2.svg"
+                            boat.source == activity.resourceUrl + "boat1.svg") {
+                            boat.source = activity.resourceUrl + "boat2.svg"
                             bonus.good("flower")
                         } else if(boat.anchors.horizontalCenterOffset == boat.leftPositionX) {
-                            boat.source = activity.url + "boat1.svg"
+                            boat.source = activity.resourceUrl + "boat1.svg"
                         }
                     }
                 }
@@ -509,16 +512,16 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
             id: bar
             content: BarEnumContent { value: help | home }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
-            onHomeClicked: home();
+            onHomeClicked: activity.home();
         }
 
         Bonus {
