@@ -15,8 +15,8 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2025-03-09 12:41+0100\n"
-"Last-Translator: Anna <ame.cic98@gmail.com>\n"
+"PO-Revision-Date: 2025-03-11 10:28+0100\n"
+"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Lokalize 24.12.1\n"
+"X-Generator: Lokalize 22.12.3\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -8317,6 +8317,7 @@ msgctxt "board5|"
 msgid "Cabrillo"
 msgstr "Cabrillo"
 
+# skip-rule: common-world
 #: activities/explore_monuments/resource/board/board5.qml:19
 msgctxt "board5|"
 msgid ""
@@ -8692,6 +8693,7 @@ msgctxt "board7|"
 msgid "Forbidden City"
 msgstr "Ciutat Prohibida"
 
+# skip-rule: barb-uns
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
 msgid ""
@@ -10750,9 +10752,7 @@ msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Tabulació: canvia entre editar el fris i veure el model"
 
 #: activities/frieze/Frieze.qml:109
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulb|"
-#| msgid "What is the binary representation of %1?"
+#, qt-format
 msgctxt "Frieze|"
 msgid "What is the binary representation of %1?"
 msgstr "Quina és la representació binària de %1?"
@@ -14992,30 +14992,30 @@ msgctxt "TopPanel|"
 msgid "Primes less than %1"
 msgstr "Primers més petits que %1"
 
-#: activities/gnumch-equality/Warning.qml:26
+#: activities/gnumch-equality/Warning.qml:29
 msgctxt "Warning|"
 msgid "You were eaten by a Troggle."
 msgstr "Se t'ha menjat un Troggle."
 
-#: activities/gnumch-equality/Warning.qml:30
+#: activities/gnumch-equality/Warning.qml:33
 msgctxt "Warning|"
 msgid "You ate a wrong number."
 msgstr "T'has menjat un nombre incorrecte."
 
-#: activities/gnumch-equality/Warning.qml:47
+#: activities/gnumch-equality/Warning.qml:48
 msgctxt "Warning|"
 msgid "1 is not a prime number."
 msgstr "L'1 no és un nombre primer."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>)
-#: activities/gnumch-equality/Warning.qml:62
+#: activities/gnumch-equality/Warning.qml:63
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is a non-prime number, its divisors are: %2"
 msgstr "%1 no és un nombre primer. Els seus divisors són: %2"
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
-#: activities/gnumch-equality/Warning.qml:66
+#: activities/gnumch-equality/Warning.qml:67
 #, qt-format
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
@@ -15023,13 +15023,13 @@ msgstr ""
 "Els múltiples de %1 inclouen el %2 o el %3, però el %4 no és múltiple de %5."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
-#: activities/gnumch-equality/Warning.qml:81
+#: activities/gnumch-equality/Warning.qml:82
 #, qt-format
 msgctxt "Warning|"
 msgid "Divisors of %1 are: %2"
 msgstr "Els divisors del %1 són: %2"
 
-#: activities/gnumch-equality/Warning.qml:100
+#: activities/gnumch-equality/Warning.qml:101
 msgctxt "Warning|"
 msgid "Press \"Return\" or click on me to continue."
 msgstr "Prem «Retorn» o fes clic sobre meu per a continuar."
@@ -18035,12 +18035,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "El barret del mag"
+msgstr "El barret del mag (resta)"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -18132,12 +18129,9 @@ msgstr "%1x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "El barret del mag"
+msgstr "El barret del mag (suma)"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17

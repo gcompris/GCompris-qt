@@ -15716,30 +15716,30 @@ msgctxt "TopPanel|"
 msgid "Primes less than %1"
 msgstr "%1 से कम अभज्य संख्या "
 
-#: activities/gnumch-equality/Warning.qml:26
+#: activities/gnumch-equality/Warning.qml:29
 msgctxt "Warning|"
 msgid "You were eaten by a Troggle."
 msgstr "आपको एक ट्रॉगल ने खा लिया।"
 
-#: activities/gnumch-equality/Warning.qml:30
+#: activities/gnumch-equality/Warning.qml:33
 msgctxt "Warning|"
 msgid "You ate a wrong number."
 msgstr "आपने एक गलत नंबर खा लिया।"
 
-#: activities/gnumch-equality/Warning.qml:47
+#: activities/gnumch-equality/Warning.qml:48
 msgctxt "Warning|"
 msgid "1 is not a prime number."
 msgstr "1 प्राइम संख्या नहीं है।"
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>)
-#: activities/gnumch-equality/Warning.qml:62
+#: activities/gnumch-equality/Warning.qml:63
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is a non-prime number, its divisors are: %2"
 msgstr ""
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
-#: activities/gnumch-equality/Warning.qml:66
+#: activities/gnumch-equality/Warning.qml:67
 #, fuzzy, qt-format
 #| msgctxt "Warning|"
 #| msgid "but %1 is not a multiple of %2."
@@ -15748,13 +15748,13 @@ msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
 msgstr "परंतु, %2 के गुणक नहीं हैं %1."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
-#: activities/gnumch-equality/Warning.qml:81
+#: activities/gnumch-equality/Warning.qml:82
 #, qt-format
 msgctxt "Warning|"
 msgid "Divisors of %1 are: %2"
 msgstr ""
 
-#: activities/gnumch-equality/Warning.qml:100
+#: activities/gnumch-equality/Warning.qml:101
 msgctxt "Warning|"
 msgid "Press \"Return\" or click on me to continue."
 msgstr "\"रिटर्न\" दबाएँ या जारी रखने के लिए मुझ पर क्लिक करें।"
