@@ -16,18 +16,17 @@ import "../../core"
 
 Row {
     id: admin
-    spacing: baseMargins
+    spacing: GCStyle.baseMargins
     property int level
-    readonly property int baseMargins: 10 * ApplicationInfo.ratio
     Rectangle {
         id: operator
         width: parent.width * 0.23
         height: parent.height
-        radius: admin.baseMargins
-        color: "#E6E6E6"
+        radius: GCStyle.halfMargins
+        color: GCStyle.paperWhite
         GCText {
             anchors.fill: parent
-            anchors.margins: admin.baseMargins
+            anchors.margins: GCStyle.baseMargins
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
             fontSize: mediumSize
@@ -40,10 +39,10 @@ Row {
         model: ['+','-','*','/']
         delegate: Rectangle {
             id: tile
-            width: (parent.width - operator.width - admin.baseMargins) * 0.2 - admin.baseMargins
+            width: (parent.width - operator.width - GCStyle.baseMargins) * 0.2 - GCStyle.baseMargins
             height: parent.height
-            radius: admin.baseMargins
-            border.color: "#E6E6E6"
+            radius: GCStyle.halfMargins
+            border.color: GCStyle.paperWhite
             state: activityConfiguration.adminLevelArr[level].indexOf(modelData) != -1 ? "selected" : "notselected"
 
             function refreshTile() {
@@ -56,7 +55,7 @@ Row {
             }
             GCText {
                 anchors.fill: parent
-                anchors.margins: admin.baseMargins
+                anchors.margins: GCStyle.baseMargins
                 verticalAlignment: Text.AlignVCenter
                 horizontalAlignment: Text.AlignHCenter
                 text: modelData
@@ -84,7 +83,7 @@ Row {
                     PropertyChanges {
                         tile {
                             color: "#5cc854"
-                            border.width: 3 * ApplicationInfo.ratio
+                            border.width: GCStyle.midBorder
                         }
                     }
                 },

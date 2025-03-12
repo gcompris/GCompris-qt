@@ -58,10 +58,10 @@ Item {
                     id: label
                     width: (labels.width - labels.spacing) * 0.4
                     height: labels.height
-                    radius: GCStyle.baseMargins
+                    radius: GCStyle.halfMargins
                     color: index === 0 ? "#5cc854" : "#d94444" // green : red
-                    border.color: "#E6E6E6"
-                    border.width: index === 0 ? 3 * ApplicationInfo.ratio : 0
+                    border.color: GCStyle.paperWhite
+                    border.width: index === 0 ? GCStyle.midBorder : 0
                     GCText {
                         anchors.fill: parent
                         anchors.margins: GCStyle.baseMargins

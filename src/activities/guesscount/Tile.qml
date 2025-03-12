@@ -37,8 +37,8 @@ MouseArea {
         anchors.verticalCenter: parent.verticalCenter
         anchors.horizontalCenter: parent.horizontalCenter
         property var datavalue: modelData
-        radius: activityBackground.tileRadius
-        color: "#E8E8E8"
+        radius: GCStyle.halfMargins
+        color: GCStyle.paperWhite
         Drag.keys: [ type ]
         Drag.active: mouseArea.drag.active
         Drag.hotSpot.x: parent.width * 0.5
@@ -47,7 +47,7 @@ MouseArea {
         Rectangle {
             id: typeLine
             anchors.fill: parent
-            anchors.margins: activityBackground.tileBorder
+            anchors.margins: GCStyle.midBorder
             radius: parent.radius - anchors.margins
             color: root.type == "operators" ? "#E16F6F" : "#75D21B" // red or green
         }
@@ -57,7 +57,7 @@ MouseArea {
             anchors.fill: parent
             anchors.margins: typeLine.anchors.margins * 2
             radius: 0
-            color: "#E8E8E8" //paper white
+            color: GCStyle.paperWhite
         }
         
         
