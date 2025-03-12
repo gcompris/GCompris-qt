@@ -10,6 +10,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
 
 import QtQuick 2.12
 import core 1.0
@@ -20,16 +21,12 @@ import "crane.js" as Activity
 ActivityBase {
     id: activity
 
-    // Overload this in your activity to change it
-    // Put you default-<locale>.json files in it
-    property string dataSetUrl: "qrc:/gcompris/src/activities/crane/resource/"
-
     onStart: focus = true
     onStop: {}
 
     pageComponent: Image {
         id: activityBackground
-        source: activity.dataSetUrl+"background.svg"
+        source: activity.resourceUrl+"background.svg"
         fillMode: Image.PreserveAspectCrop
         anchors.fill: parent
         sourceSize.width: width
@@ -67,8 +64,8 @@ ActivityBase {
             property int sensivity: 80
             property bool pieceIsMoving: false
             readonly property var levels: activity.datasets
-            property double gridBaseWidth: items.board.width / items.columns
-            property double gridBaseHeight: items.board.height / items.rows
+            property double gridBaseWidth: board.width / items.columns
+            property double gridBaseHeight: board.height / items.rows
             property bool buttonsBlocked: false
         }
 
@@ -207,23 +204,23 @@ ActivityBase {
                     height: items.gridBaseHeight
                     fillMode: Image.PreserveAspectFit
 
+                    required property int index
                     property int initialIndex: -1
 
                     property alias anim: anim
                     property int distance
                     property int startPoint
                     property string animationProperty
-                    property int _index: index // make current index accessible from outside
 
                     SequentialAnimation {
                         id: anim
                         PropertyAction { target: items; property: "ok"; value: "false"}
-                        NumberAnimation { target: figure; property: figure.animationProperty; from: figure.startPoint; to: figure.startPoint + distance; duration: 200 }
+                        NumberAnimation { target: figure; property: figure.animationProperty; from: figure.startPoint; to: figure.startPoint + figure.distance; duration: 200 }
                         PropertyAction { target: figure; property: "opacity"; value: 0 }
-                        NumberAnimation { target: figure; property: figure.animationProperty; from: figure.startPoint + distance; to: figure.startPoint; duration: 0; }
+                        NumberAnimation { target: figure; property: figure.animationProperty; from: figure.startPoint + figure.distance; to: figure.startPoint; duration: 0; }
                         PropertyAction { target: figure; property: "opacity"; value: 1 }
-                        PropertyAction { target: items.answerRepeater.itemAt(items.selected); property: "source"; value: figure.source }
-                        PropertyAction { target: items.answerRepeater.itemAt(items.selected); property: "initialIndex"; value: figure.initialIndex }
+                        PropertyAction { target: answerRepeater.itemAt(items.selected); property: "source"; value: figure.source }
+                        PropertyAction { target: answerRepeater.itemAt(items.selected); property: "initialIndex"; value: figure.initialIndex }
                         PropertyAction { target: figure; property: "initialIndex"; value: -1 }
                         PropertyAction { target: figure; property: "source"; value: "" }
                         PropertyAction { target: items; property: "ok"; value: "true"}
@@ -250,8 +247,8 @@ ActivityBase {
 
                         // Select a figure with mouse/touch
                         onClicked: {
-                            if (source != "" && !items.pieceIsMoving)
-                                items.selected = index
+                            if (activityBackground.source != "" && !items.pieceIsMoving)
+                                items.selected = figure.index
                         }
                     }
                 }
@@ -260,7 +257,7 @@ ActivityBase {
 
         Image {
             id: selector
-            source: activity.dataSetUrl+"selected.svg"
+            source: activity.resourceUrl+"selected.svg"
             sourceSize.width: width
             sourceSize.height: height
             width: items.gridBaseWidth
@@ -384,7 +381,7 @@ ActivityBase {
 
         Image {
             id: crane_top
-            source: activity.dataSetUrl+"crane_up.svg"
+            source: activity.resourceUrl+"crane_up.svg"
             sourceSize.width: width
             width: activityBackground.portrait ? layoutArea.width * 0.8: layoutArea.width * 0.5
             fillMode: Image.PreserveAspectFit
@@ -399,7 +396,7 @@ ActivityBase {
 
         Image {
             id: crane_vertical
-            source: activity.dataSetUrl+"crane_vertical.svg"
+            source: activity.resourceUrl+"crane_vertical.svg"
             sourceSize.height: height
             fillMode: Image.PreserveAspectFit
             anchors {
@@ -413,7 +410,7 @@ ActivityBase {
 
         Image {
             id: crane_body
-            source: activity.dataSetUrl+"crane_only.svg"
+            source: activity.resourceUrl+"crane_only.svg"
             z: 2
             height: bar.height
             sourceSize.height: height
@@ -424,13 +421,14 @@ ActivityBase {
 
         Image {
             id: crane_command
-            source: activity.dataSetUrl+"command.svg"
+            source: activity.resourceUrl+"command.svg"
             sourceSize.height: height
             anchors.margins: GCStyle.halfMargins
             fillMode: Image.PreserveAspectFit
             Controls {
                 id: up
-                source: activity.dataSetUrl+"arrow_up.svg"
+                source: activity.resourceUrl+"arrow_up.svg"
+                height: crane_command.paintedHeight * 0.75
                 anchors {
                     right: parent.horizontalCenter
                     rightMargin: width * 1.15
@@ -440,7 +438,8 @@ ActivityBase {
 
             Controls {
                 id: down
-                source: activity.dataSetUrl+"arrow_down.svg"
+                source: activity.resourceUrl+"arrow_down.svg"
+                height: crane_command.paintedHeight * 0.75
                 anchors {
                     right: parent.horizontalCenter
                     rightMargin: width * 0.1
@@ -450,7 +449,8 @@ ActivityBase {
 
             Controls {
                 id: left
-                source: activity.dataSetUrl+"arrow_left.svg"
+                source: activity.resourceUrl+"arrow_left.svg"
+                height: crane_command.paintedHeight * 0.75
                 anchors {
                     left: parent.horizontalCenter
                     leftMargin: width * 0.1
@@ -460,7 +460,8 @@ ActivityBase {
 
             Controls {
                 id: right
-                source: activity.dataSetUrl+"arrow_right.svg"
+                source: activity.resourceUrl+"arrow_right.svg"
+                height: crane_command.paintedHeight * 0.75
                 anchors {
                     left: parent.horizontalCenter
                     leftMargin: width * 1.15
@@ -551,18 +552,18 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         DialogChooseLevel {
             id: dialogActivityConfig
             currentActivity: activity.activityInfo
             onClose: {
-                home()
+                activity.home()
             }
 
             onSaveData: {
-                levelFolder = dialogActivityConfig.chosenLevels
+                activity.levelFolder = dialogActivityConfig.chosenLevels
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
             }
@@ -578,13 +579,13 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | activityConfig}
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onActivityConfigClicked: {
-                displayDialog(dialogActivityConfig)
+                activity.displayDialog(dialogActivityConfig)
             }
         }
 
