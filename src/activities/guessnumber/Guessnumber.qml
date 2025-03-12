@@ -12,6 +12,7 @@ import QtQuick 2.12
 import core 1.0
 
 import "../../core"
+import "qrc:/gcompris/src/core/core.js" as Core
 import "guessnumber.js" as Activity
 
 ActivityBase {
@@ -25,8 +26,6 @@ ActivityBase {
     pageComponent: Rectangle {
         id: activityBackground
         color: "#5a3820"
-
-        readonly property int baseMargins: 10 * ApplicationInfo.ratio
 
         signal start
         signal stop
@@ -45,23 +44,17 @@ ActivityBase {
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias helico: helico
-            property alias textArea: textArea
-            property alias infoText: userInfo
+            property alias textArea: instructionPanel.textItem
+            property alias infoText: userInfoPanel.textItem
             property alias answerArea: answerArea
             readonly property var levels: activity.datasets.length !== 0 ? activity.datasets : null
             property int currentMax: 0
             property alias numpad: numpad
             property int maxSize: activityBackground.height * 0.16
-            property int size: 70 * ApplicationInfo.ratio
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
-
-        GCSoundEffect {
-            id: helicopterSound
-            source: "qrc:/gcompris/src/activities/guessnumber/resource/helicopter.wav"
-        }
 
         // the cave image needs to be aligned on the right to always see the exit
         Image {
@@ -74,8 +67,8 @@ ActivityBase {
         Item {
             id: layoutArea
             anchors.top: parent.top
-            anchors.topMargin: bar.height
-            anchors.bottom: bar.top
+            anchors.bottom: parent.bottom
+            anchors.margins: 90 * ApplicationInfo.ratio // equal to the sum of top panels height + margins for top/bottm margins
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.leftMargin: numpad.columnWidth
@@ -83,80 +76,74 @@ ActivityBase {
 
             Helico {
                 id: helico
-                height: Math.min(items.maxSize, items.size)
+                height: Math.min(items.maxSize, GCStyle.bigButtonHeight)
             }
         }
 
-        Rectangle {
-            id: textAreaBg
-            anchors.centerIn: textArea
-            width: textArea.contentWidth + 2 * activityBackground.baseMargins
-            height: textArea.contentHeight + activityBackground.baseMargins
-            color: "#373737"
-            radius: activityBackground.baseMargins
-        }
-
-        GCText {
-            id: textArea
+        GCTextPanel {
+            id: instructionPanel
+            panelWidth: layoutArea.width
+            panelHeight: 35 * ApplicationInfo.ratio
+            anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
-            anchors.topMargin: activityBackground.baseMargins
-            anchors.left: parent.left
-            anchors.leftMargin: numpad.columnWidth + activityBackground.baseMargins
-            anchors.right: parent.right
-            anchors.rightMargin: numpad.columnWidth + activityBackground.baseMargins
-            height: 25 * ApplicationInfo.ratio
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            wrapMode: TextEdit.WordWrap
-            color: "#f2f2f2"
-            font.bold: true
-            fontSize: mediumSize
-            fontSizeMode: Text.Fit
+            anchors.topMargin: GCStyle.baseMargins
         }
 
-        AnswerArea {
-            id: answerArea
-            anchors.top: textAreaBg.bottom
-            anchors.topMargin: activityBackground.baseMargins
-            anchors.right: textArea.right
-            anchors.rightMargin: activityBackground.baseMargins
-            width: textArea.width * 0.3
-            height: textArea.height
+        Row {
+            anchors.top: instructionPanel.bottom
+            anchors.left: layoutArea.left
+            anchors.right: layoutArea.right
+            anchors.topMargin: GCStyle.halfMargins
+            height: instructionPanel.panelHeight
+            spacing: GCStyle.baseMargins
 
-        }
+            Item {
+                id: userInfoArea
+                width: parent.width * 0.7 - GCStyle.baseMargins
+                height: parent.height
 
-        Rectangle {
-            id: userInfoBg
-            anchors.centerIn: userInfo
-            width: userInfo.contentWidth + 2 * activityBackground.baseMargins
-            height: userInfo.contentHeight + activityBackground.baseMargins
-            visible: userInfo.text != ""
-            color: "#f2f2f2"
-            radius: activityBackground.baseMargins
-        }
+                GCTextPanel {
+                    id: userInfoPanel
+                    fixedHeight: true
+                    hideIfEmpty: true
+                    panelWidth: parent.width - 2 * GCStyle.baseMargins
+                    panelHeight: parent.height
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    color: GCStyle.lightBg
+                    border.width: 0
+                    textItem.color: GCStyle.darkText
+                }
+            }
 
-        GCText {
-            id: userInfo
-            anchors.top: textAreaBg.bottom
-            anchors.topMargin: activityBackground.baseMargins
-            anchors.left: textArea.left
-            anchors.leftMargin: activityBackground.baseMargins
-            anchors.right: answerArea.left
-            anchors.rightMargin: activityBackground.baseMargins
-            height: answerArea.height
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            color: "#373737"
-            fontSize: mediumSize
-            fontSizeMode: Text.Fit
+            Item {
+                id: answerArea
+                width: parent.width * 0.3
+                height: parent.height
+
+                GCTextPanel {
+                    id: answerPanel
+                    panelWidth: parent.width
+                    panelHeight: parent.height
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    color: GCStyle.lightBg
+                    border.width: 0
+                    textItem.color: GCStyle.darkText
+
+                    property string userEntry: ""
+
+                    onUserEntryChanged: {
+                        textItem.text = Core.convertNumberToLocaleString(Number(userEntry));
+                        if(userEntry != "")
+                            Activity.setUserAnswer(parseInt(userEntry))
+                    }
+                }
+            }
         }
 
         NumPad {
             id: numpad
             onAnswerChanged: {
-                if(answer && answerArea.userEntry != answer)
-                    helicopterSound.play()
-                answerArea.userEntry = answer
+                answerPanel.userEntry = answer
             }
             maxDigit: ("" + items.currentMax).length
             columnWidth: 60 * ApplicationInfo.ratio
