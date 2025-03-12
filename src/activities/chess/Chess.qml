@@ -68,7 +68,7 @@ ActivityBase {
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
-            property var barHeightAddon: ApplicationSettings.isBarHidden ? textMessage.height : bar.height
+            property var barHeightAddon: ApplicationSettings.isBarHidden ? instructionPanel.height : bar.height
             property bool isVertical: layoutArea.height - bar.height > layoutArea.width
             property int cellSize: 1
             property var fen: activity.fen
