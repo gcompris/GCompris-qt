@@ -73,7 +73,7 @@ ActivityBase {
             property alias locale: activityBackground.locale
             property alias okButton: okButton
             property int remainingLife
-            property double maskThreshold
+            property alias maskEffect: maskEffect
             property var goodWord
             property int goodWordIndex
             property bool easyModeImage: true
@@ -91,7 +91,7 @@ ActivityBase {
                     bonus.interval = 500
             }
             onRemainingLifeChanged: {
-                maskThreshold = 0.15 * remainingLife
+                maskEffect.maskThresholdMin = 0.15 * remainingLife
                 if(easyModeAudio && (remainingLife == 3)) {
                     playWord();
                 }
@@ -181,58 +181,34 @@ ActivityBase {
                             imageLayoutArea.height)
             height: width
             anchors.centerIn: imageLayoutArea
-            opacity: items.easyModeImage ? 1 : 0
+            visible: items.easyModeImage ? true : false
             Image {
                 id: wordImage
                 smooth: true
                 visible: false
                 anchors.fill: parent
-                property string nextSource
                 function changeSource(nextSource_: string) {
-                    nextSource = nextSource_
-                    animImage.start()
-                }
-
-                SequentialAnimation {
-                    id: animImage
-                    PropertyAnimation {
-                        target: wordImage
-                        property: "opacity"
-                        to: 0
-                        duration: 100
-                    }
-                    PropertyAction {
-                        target: wordImage
-                        property: "source"
-                        value: wordImage.nextSource
-                    }
-                    PropertyAnimation {
-                        target: wordImage
-                        property: "opacity"
-                        to: 1
-                        duration: 100
-                    }
+                    maskEffect.maskThresholdMin = 1
+                    source = nextSource_
                 }
             }
 
             Image {
                 id: threshmask
-                smooth: true
                 visible: false
-                width: 1.3*parent.width
-                height: 1.2*parent.height
+                anchors.fill: parent
                 source: dataSetUrl + "fog.png"
             }
 
             MultiEffect {
-                id: thresh
-                anchors.fill: wordImage
+                id: maskEffect
+                anchors.fill: parent
                 source: wordImage
                 maskEnabled: true
                 maskSource: threshmask
                 maskSpreadAtMin: 0.5
                 // remainingLife between 0 and 6 => threshold between 0 and 0.9
-                maskThresholdMin: items.maskThreshold
+                maskThresholdMin: 1
             }
         }
 
