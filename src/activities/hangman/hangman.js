@@ -111,8 +111,8 @@ function initLevel() {
 }
 
 function processKeyPress(text) {
-    if(items.ok.visible) {
-        items.ok.clicked();
+    if(items.okButton.visible) {
+        items.okButton.clicked();
         return;
     }
     if(items.remainingLife === 0 || items.goodIcon.visible) {
@@ -188,7 +188,7 @@ function initSubLevel() {
     else
         items.score.visible = false;
     items.goodWordIndex = subLevelsLeft.pop();
-    items.ok.visible = false;
+    items.okButton.visible = false;
     items.goodIcon.visible = false;
     items.goodWord = wordList[items.goodWordIndex];
     items.wordImage.changeSource(items.goodWord.image);
