@@ -50,11 +50,18 @@ Rectangle {
     property bool fixedHeight: false
 
     /**
+     * type:bool
+     * Wether the panel should be hidden if text is empty.
+     */
+    property bool hideIfEmpty: false
+
+    /**
      * type:GCText
      * Alias of the textItem, to allow setting its text, color, fontSize or other variables.
      */
     property alias textItem: textItem
 
+    visible: hideIfEmpty ? (textItem.text != "") : true
     width: textItem.contentWidth + GCStyle.baseMargins * 2
     height: fixedHeight ? panelHeight : textItem.contentHeight + GCStyle.baseMargins
     radius: GCStyle.halfMargins
