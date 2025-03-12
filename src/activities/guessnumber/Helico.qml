@@ -9,6 +9,7 @@
  */
 import QtQuick 2.12
 import core 1.0
+import "../../core"
 
 Image {
     id: helico
@@ -25,6 +26,11 @@ Image {
     property double diffX: 1
     property double diffY: 0
 
+    GCSoundEffect {
+        id: helicopterSound
+        source: "qrc:/gcompris/src/activities/guessnumber/resource/helicopter.wav"
+    }
+
     function init() {
         exitOffset = 0
         diffX = 1;
@@ -32,6 +38,7 @@ Image {
     }
 
     function correctAnswerMove() {
+        helicopterSound.play()
         exitOffset = width + numpad.columnWidth;
         diffX = 0;
         diffY = 0;
