@@ -64,14 +64,14 @@ ActivityBase {
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias keyboard: keyboard
-            property alias hidden: hidden
-            property alias guessedText: guessedText
+            property alias hidden: hiddenTextPanel.textItem
+            property alias guessedText: guessedTextPanel.textItem
             property alias textinput: textinput
             property alias wordImage: wordImage
             property alias score: score
             property alias parser: parser
             property alias locale: activityBackground.locale
-            property alias ok: ok
+            property alias okButton: okButton
             property int remainingLife
             property double maskThreshold
             property var goodWord
@@ -112,55 +112,40 @@ ActivityBase {
         Image {
             id: goodIcon
             source: "qrc:/gcompris/src/core/resource/apply.svg"
-            anchors.top: score.bottom
-            anchors.horizontalCenter: score.horizontalCenter
-            anchors.topMargin: ok.anchors.bottomMargin
-            sourceSize.height: ok.width
-            sourceSize.width: ok.width
+            width: GCStyle.bigButtonHeight
+            height: width
+            sourceSize.width: width
+            anchors {
+                top: score.bottom
+                right: score.right
+                topMargin: GCStyle.baseMargins
+            }
             visible: false
         }
 
-        GCText {
-            id: hidden
-            fontSize: largeSize
-            color: "#4d4d4d"
-            font.letterSpacing: 0.5
-            width: parent.width * 0.90 - score.width
-            fontSizeMode: Text.Fit
-            horizontalAlignment: Text.AlignHCenter
-            anchors {
-                right: score.left
-                bottom: bar.top
-                bottomMargin: 10 * ApplicationInfo.ratio
-            }
-            z: 11
+        GCTextPanel {
+            id: hiddenTextPanel
+            panelWidth: parent.width - 2 * GCStyle.baseMargins
+            panelHeight: Math.min(50 * ApplicationInfo.ratio, activityBackground.height * 0.2)
+            fixedHeight: true
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.bottom: bar.top
+            anchors.bottomMargin: bar.height * 0.5
+            color: "#80ffffff"
+            textItem.color: GCStyle.darkText
+            textItem.fontSize: textItem.largeSize
+            textItem.minimumPointSize: 7
         }
 
-        GCText {
-            id: guessedText
-            fontSize: smallSize
-            color: "#FFFFFF"
-            wrapMode: Text.WordWrap
-            width: guessedTextBg.width
-            horizontalAlignment: Text.AlignHCenter
-            anchors {
-                horizontalCenter: parent.horizontalCenter
-            }
-            z: 12
-        }
-
-        Rectangle {
-            id: guessedTextBg
-            width: parent.width * 0.7
-            height: guessedText.height
-            radius: 10
-            border.color: "#121212"
-            border.width: 1
-            color: "#373737"
-            anchors {
-                horizontalCenter: parent.horizontalCenter
-            }
-            z: 11
+        GCTextPanel {
+            id: guessedTextPanel
+            panelWidth: parent.width - Math.max(score.width, clock.width) * 2 - 4 * GCStyle.baseMargins
+            panelHeight: Math.min(50 * ApplicationInfo.ratio, score.height)
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: parent.top
+            anchors.topMargin: GCStyle.baseMargins
+            border.width: 0
+            textItem.fontSize: textItem.smallSize
         }
 
         TextInput {
@@ -177,25 +162,30 @@ ActivityBase {
                     text = "";
                 }
             }
-            onAccepted: if(ok.visible) ok.clicked()
+            onAccepted: if(okButton.visible) okButton.clicked()
+        }
+
+        Item {
+            id: imageLayoutArea
+            anchors.top: score.bottom
+            anchors.bottom: hiddenTextPanel.top
+            anchors.left: clock.right
+            anchors.right: goodIcon.left
+            anchors.margins: GCStyle.baseMargins
         }
 
         Item {
             id: imageframe
             width: Math.min(300 * ApplicationInfo.ratio,
-                            activityBackground.width * 0.8,
-                            hidden.y) - guessedText.height
+                            imageLayoutArea.width,
+                            imageLayoutArea.height)
             height: width
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: guessedText.bottom
-            y: 5 * ApplicationInfo.ratio
-            z: 10
+            anchors.centerIn: imageLayoutArea
             opacity: items.easyModeImage ? 1 : 0
             Image {
                 id: wordImage
                 smooth: true
                 visible: false
-
                 anchors.fill: parent
                 property string nextSource
                 function changeSource(nextSource_: string) {
@@ -304,27 +294,20 @@ ActivityBase {
 
         Score {
             id: score
-            height: 1.2 * internalTextComponent.height
-            width: 1.3 * internalTextComponent.width
             isScoreCounter: false
             anchors {
-                top: guessedTextBg.bottom
+                top: parent.top
                 bottom: undefined
                 right: parent.right
-                margins: 0.025 * parent.width
+                margins: GCStyle.baseMargins
             }
         }
 
         BarButton {
-            id: ok
+            id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
-            width: Math.min(score.width, clock.width)
             visible: false
-            anchors {
-                top: score.bottom
-                horizontalCenter: score.horizontalCenter
-                topMargin: 5 * ApplicationInfo.ratio
-            }
+            anchors.fill: goodIcon
             onClicked: Activity.nextSubLevel()
         }
 
@@ -337,10 +320,10 @@ ActivityBase {
             id: clock
             anchors {
                 left: parent.left
-                top: guessedTextBg.bottom
-                margins: 0.025 * parent.width
+                top: parent.top
+                margins: GCStyle.baseMargins
             }
-            sourceSize.width: 66 * ApplicationInfo.ratio
+            sourceSize.width: GCStyle.bigButtonHeight
             property int remainingLife: items.remainingLife
             onRemainingLifeChanged: {
                 if(remainingLife >= 0) {
@@ -398,7 +381,7 @@ ActivityBase {
         Bonus {
             id: bonus
             interval: 2000
-            onLoose: ok.visible = true
+            onLoose: okButton.visible = true
             onWin: Activity.nextSubLevel()
         }
 
