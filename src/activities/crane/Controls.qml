@@ -13,8 +13,8 @@ import QtQuick 2.12
 import "crane.js" as Activity
 
 Image {
+    id: controls
     property string command
-    height: parent.paintedHeight * 0.75
     sourceSize.width: height
     fillMode: Image.PreserveAspectFit
     anchors {
@@ -25,7 +25,7 @@ Image {
         onPressed: parent.opacity = 0.6
         onReleased: parent.opacity = 1
         onClicked: {
-            Activity.move(command)
+            Activity.move(controls.command)
         }
     }
 }
