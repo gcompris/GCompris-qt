@@ -268,6 +268,7 @@ function checkResult() {
         items.animationCard.value = String(result)
         items.animationCard.action = "cancel"
         items.animationCard.state = "wait"
+        items.animationCard.returnCard()
         return
     }
     items.steps.text = stepsStack.join("\n")

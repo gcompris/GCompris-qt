@@ -36,11 +36,7 @@ ActivityBase {
         signal start
         signal stop
 
-        property int baseMargins: 5 * ApplicationInfo.ratio
-        property int baseRadius: 2 * ApplicationInfo.ratio
-        property string baseColor: "#A1CBD9"
-        property string selectionColor: "#4B9BB5"
-        property int selectionWidth: 4 * ApplicationInfo.ratio
+        property string selectionColor: "#386cc7"
 
         Component.onCompleted: {
             dialogActivityConfig.initialize()
@@ -114,37 +110,31 @@ ActivityBase {
             function shuffleModel() { for (var i = 0 ; i < count; i++) { move(randPosition(), randPosition(), 1) } }    // shuffle elements
         }
 
-        Rectangle {
-            id: captionBg
-            width: caption.contentWidth + activityBackground.baseMargins * 2
-            height: caption.contentHeight + activityBackground.baseMargins
-            color: "#80FFFFFF"
-            radius: activityBackground.baseRadius
+        GCTextPanel {
+            id: instructionPanel
+            panelWidth: parent.width - GCStyle.baseMargins
+            panelHeight: Math.min(50 * ApplicationInfo.ratio, activityBackground.height * 0.2)
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
-            anchors.topMargin: activityBackground.baseMargins
-            GCText {
-                id: caption
-                width: activityBackground.width - activityBackground.baseMargins * 4
-                anchors.centerIn: captionBg
-                text: qsTr("Use the four numbers with given operators to find 24.")
-                verticalAlignment: Text.AlignVCenter
-                horizontalAlignment: Text.AlignHCenter
-                wrapMode: Text.WordWrap
-            }
-            MouseArea {
-                anchors.fill: parent
-                onClicked: captionBg.opacity = 0.0
-            }
+            anchors.topMargin: GCStyle.halfMargins
+            color: "#80ffffff"
+            border.width: 0
+            textItem.color: GCStyle.darkText
+            textItem.text: qsTr("Use the four numbers with given operators to find 24.")
+        }
+
+        MouseArea {
+            anchors.fill: instructionPanel
+            onClicked: instructionPanel.visible = !instructionPanel.visible
         }
 
         Item {
             id: layoutArea
-            anchors.top: captionBg.bottom
+            anchors.top: instructionPanel.bottom
             anchors.bottom: score.top
             anchors.horizontalCenter: activityBackground.horizontalCenter
-            anchors.margins: activityBackground.baseMargins
-            width: Math.min(activityBackground.width - 2 * activityBackground.baseMargins,
+            anchors.margins: GCStyle.halfMargins
+            width: Math.min(activityBackground.width - 2 * GCStyle.halfMargins,
                                 400 * ApplicationInfo.ratio)
         }
         // Main section
@@ -155,12 +145,12 @@ ActivityBase {
             width: layoutArea.width * 0.66
             height: Math.min(250 * ApplicationInfo.ratio, layoutArea.height * 0.75)
             color: "#80FFFFFF"
-            radius: activityBackground.baseRadius
+            radius: GCStyle.tinyMargins
             GridView {
                 id: cardsBoard
                 anchors.fill: parent
-                cellWidth: (parent.width - activityBackground.baseMargins) * 0.5
-                cellHeight: (parent.height - activityBackground.baseMargins) * 0.5
+                cellWidth: (parent.width - GCStyle.halfMargins) * 0.5
+                cellHeight: (parent.height - GCStyle.halfMargins) * 0.5
                 highlightFollowsCurrentItem: false
                 boundsBehavior: Flickable.StopAtBounds
                 maximumFlickVelocity: activity.height
@@ -172,16 +162,16 @@ ActivityBase {
                     height: cardsBoard.cellHeight
                     Rectangle {
                         id: cardRect
-                        width: parent.width - activityBackground.baseMargins
-                        height: parent.height - activityBackground.baseMargins
+                        width: parent.width - GCStyle.halfMargins
+                        height: parent.height - GCStyle.halfMargins
                         anchors.top: parent.top
                         anchors.left: parent.left
-                        anchors.margins: activityBackground.baseMargins
+                        anchors.margins: GCStyle.halfMargins
                         visible: true
-                        color: (items.currentValue === index) ? activityBackground.baseColor :  "#F0F0F0"
-                        border.width: (items.keyboardNavigation && items.keysOnValues && (cardsBoard.currentIndex === index)) ? activityBackground.selectionWidth : ApplicationInfo.ratio
-                        border.color: (items.keyboardNavigation && items.keysOnValues && (cardsBoard.currentIndex === index)) ? activityBackground.selectionColor : activityBackground.baseColor
-                        radius: activityBackground.baseMargins
+                        color: (items.currentValue === index) ? GCStyle.focusColor : GCStyle.lightBg
+                        border.width: (items.keyboardNavigation && items.keysOnValues && (cardsBoard.currentIndex === index)) ? GCStyle.thickBorder : GCStyle.thinnestBorder
+                        border.color: (items.keyboardNavigation && items.keysOnValues && (cardsBoard.currentIndex === index)) ? activityBackground.selectionColor : GCStyle.blueBorder
+                        radius: GCStyle.halfMargins
                         GCText {
                             anchors.fill: parent
                             horizontalAlignment: Text.AlignHCenter
@@ -217,15 +207,14 @@ ActivityBase {
                 visible: false
                 Rectangle {
                     id: animationCardBg
-                    width: parent.width - activityBackground.baseMargins
-                    height: parent.height - activityBackground.baseMargins
-                    color: activityBackground.baseColor
-                    radius: activityBackground.baseMargins
-                    border.color: activityBackground.baseColor
-                    border.width: activityBackground.selectionWidth
+                    width: parent.width - GCStyle.halfMargins
+                    height: parent.height - GCStyle.halfMargins
+                    color: GCStyle.focusColor
+                    radius: GCStyle.halfMargins
+                    border.width: 0
                     anchors.top: parent.top
                     anchors.left: parent.left
-                    anchors.margins: activityBackground.baseMargins
+                    anchors.margins: GCStyle.halfMargins
                 }
                 GCText {
                     anchors.fill: parent
@@ -235,6 +224,19 @@ ActivityBase {
                     fontSizeMode: Text.Fit
                     text: animationCard.value
                 }
+
+                function returnCard() {
+                    badAnswerAnimation.start()
+                }
+
+                SequentialAnimation {
+                    id: badAnswerAnimation
+                    alwaysRunToEnd: true
+                    ScriptAction { script: { badAnswerSound.play() }}
+                    PauseAnimation { duration: 1500 }
+                    ScriptAction { script: { Activity.popOperation() }}
+                }
+
                 states: [
                     State {
                         name: "moveto"
@@ -255,8 +257,8 @@ ActivityBase {
                         }
                         PropertyChanges {
                             animationCardBg {
-                                color: "tomato"
-                                border.color: "tomato"
+                                color: GCStyle.badAnswer
+                                border.color: GCStyle.badAnswer
                             }
                         }
                     }
@@ -277,16 +279,6 @@ ActivityBase {
                                 }
                             }
                         }
-                    },
-                    Transition {
-                        to: "wait"
-                        SequentialAnimation {
-                            alwaysRunToEnd: true
-                            PauseAnimation { duration: 800 }
-                            ScriptAction { script: { badAnswerSound.play() }}
-                            PauseAnimation { duration: 800 }
-                            ScriptAction { script: { Activity.popOperation() }}
-                        }
                     }
                 ]
             }
@@ -295,12 +287,12 @@ ActivityBase {
         Rectangle {     // Operators
             id: operatorsArea
             anchors.top: valuesArea.bottom
-            anchors.topMargin: activityBackground.baseMargins
+            anchors.topMargin: GCStyle.halfMargins
             anchors.left: valuesArea.left
             anchors.right: valuesArea.right
-            height: Math.min(layoutArea.height - valuesArea.height - activityBackground.baseMargins,
+            height: Math.min(layoutArea.height - valuesArea.height - GCStyle.halfMargins,
                              80 * ApplicationInfo.ratio)
-            radius: activityBackground.baseRadius
+            radius: GCStyle.tinyMargins
             color: "#80FFFFFF"
             enabled: ((items.currentValue !== -1) && (animationCard.state === ""))
             ListView {
@@ -310,21 +302,21 @@ ActivityBase {
                 boundsBehavior: Flickable.StopAtBounds
                 model: [ "+", "−", "×", "÷" ]
                 delegate: Item {
-                    width: (operatorsArea.width - activityBackground.baseMargins) * 0.25
+                    width: (operatorsArea.width - GCStyle.halfMargins) * 0.25
                     height: operatorsArea.height
                     Rectangle {     // Display an operator button
                         id: opRect
-                        width: parent.width - activityBackground.baseMargins
-                        height: parent.height - activityBackground.baseMargins * 2
+                        width: parent.width - GCStyle.halfMargins
+                        height: parent.height - GCStyle.halfMargins * 2
                         anchors.top: parent.top
                         anchors.left: parent.left
-                        anchors.margins: activityBackground.baseMargins
+                        anchors.margins: GCStyle.halfMargins
                         visible: index < items.operatorsCount
-                        color: (items.currentOperator === index) ? activityBackground.baseColor : "#F0F0F0"
+                        color: (items.currentOperator === index) ? GCStyle.focusColor : GCStyle.lightBg
                         opacity: (items.currentValue !== -1) ? 1.0 : 0.5
-                        border.width: (items.keyboardNavigation && !items.keysOnValues && (operators.currentIndex === index) && (items.currentValue !== -1)) ? activityBackground.selectionWidth : ApplicationInfo.ratio
-                        border.color: (items.keyboardNavigation && !items.keysOnValues && (operators.currentIndex === index) && (items.currentValue !== -1)) ? activityBackground.selectionColor : activityBackground.baseColor
-                        radius: activityBackground.baseMargins
+                        border.width: (items.keyboardNavigation && !items.keysOnValues && (operators.currentIndex === index) && (items.currentValue !== -1)) ? GCStyle.thickBorder : GCStyle.thinnestBorder
+                        border.color: (items.keyboardNavigation && !items.keysOnValues && (operators.currentIndex === index) && (items.currentValue !== -1)) ? activityBackground.selectionColor : GCStyle.blueBorder
+                        radius: GCStyle.halfMargins
                         GCText {
                             anchors.fill: parent
                             horizontalAlignment: Text.AlignHCenter
@@ -346,17 +338,17 @@ ActivityBase {
 
         Rectangle {
             id: stepsRect
-            width: layoutArea.width - valuesArea.width - activityBackground.baseMargins
+            width: layoutArea.width - valuesArea.width - GCStyle.halfMargins
             height: Math.min(80 * ApplicationInfo.ratio,
-                             (layoutArea.height - activityBackground.baseMargins) * 0.5)
+                             (layoutArea.height - GCStyle.halfMargins) * 0.5)
             anchors.top: layoutArea.top
             anchors.right: layoutArea.right
-            color: "#F0F0F0"
-            radius: activityBackground.baseRadius
+            color: GCStyle.lightBg
+            radius: GCStyle.tinyMargins
             GCText {
                 id: steps
                 anchors.fill: parent
-                anchors.leftMargin: activityBackground.baseMargins
+                anchors.leftMargin: GCStyle.halfMargins
                 fontSize: tinySize
                 text: ""
             }
@@ -366,16 +358,16 @@ ActivityBase {
             id: solutionRect
             width: stepsRect.width
             height: stepsRect.height
-            color: "#F0F0F0"
-            radius: activityBackground.baseRadius
+            color: GCStyle.lightBg
+            radius: GCStyle.tinyMargins
             anchors.top: stepsRect.bottom
-            anchors.topMargin: activityBackground.baseMargins
+            anchors.topMargin: GCStyle.halfMargins
             anchors.right: layoutArea.right
             opacity: 0.0
             GCText {
                 id: solution
                 anchors.fill: parent
-                anchors.leftMargin: activityBackground.baseMargins
+                anchors.leftMargin: GCStyle.halfMargins
                 fontSize: tinySize
                 opacity: 0.5
                 text: ""
@@ -407,7 +399,7 @@ ActivityBase {
             sourceSize.width: width
             sourceSize.height: height
             anchors.top: operatorsArea.bottom
-            anchors.topMargin: activityBackground.baseMargins
+            anchors.topMargin: GCStyle.halfMargins
             anchors.left: operatorsArea.left
             enabled: animationCard.state === ""
             MouseArea {
@@ -434,7 +426,7 @@ ActivityBase {
             sourceSize.height: height
             anchors.right: operatorsArea.right
             anchors.top: operatorsArea.bottom
-            anchors.topMargin: activityBackground.baseMargins
+            anchors.topMargin: GCStyle.halfMargins
             enabled: animationCard.state === ""
             MouseArea {
                 anchors.fill: parent
@@ -480,7 +472,7 @@ ActivityBase {
             currentSubLevel: 0
             anchors.top: undefined
             anchors.right: activityBackground.right
-            anchors.rightMargin: activityBackground.baseMargins
+            anchors.rightMargin: GCStyle.halfMargins
             anchors.left: undefined
             anchors.bottom: activityBackground.bottom
             anchors.bottomMargin: bar.height * 1.5
