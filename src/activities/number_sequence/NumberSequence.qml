@@ -156,8 +156,8 @@ ActivityBase {
                         fontSize: 11
                         font.weight: Font.DemiBold
                         style: Text.Outline
-                        styleColor: "black"
-                        color: "white"
+                        styleColor: GCStyle.darkerBorder
+                        color: GCStyle.whiteText
                     }
                 }
             }
