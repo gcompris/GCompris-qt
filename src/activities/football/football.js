@@ -15,8 +15,6 @@
 .import core 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var url = "qrc:/gcompris/src/activities/football/resource/"
-
 var numberOfLevel = 8
 var items
 var flag = 0
@@ -93,7 +91,7 @@ function getAngle(sx1, sy1, sx2, sy2)
 /* Draw a line dynamically to display the drag */
 function drawLine(x1, y1, x2, y2){
     items.line.rotation = getAngle(x1, y1, x2, y2);
-    items.line.width = Math.sqrt(Math.pow((x1 - x2), 2) + Math.pow((y1- y2), 2));
+    items.line.width = Math.sqrt(Math.pow((x1 - x2), 2) + Math.pow((y1 - y2), 2));
     items.line.x = x2
     items.line.y = y2
 }
@@ -107,8 +105,8 @@ function ballMotion() {
         items.ball.y = items.border.height - items.ball.height
         tuxCollision = false
     } else if(items.ball.x > (items.border.width)) { //right ---- GOAL!
-        velocityX *= 0
-        velocityY *= 0
+        velocityX = 0
+        velocityY = 0
         items.ball.x = items.border.width// - items.ball.width
         items.moveTux.stop()
         items.bonus.good("smiley")

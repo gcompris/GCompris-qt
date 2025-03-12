@@ -10,6 +10,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 
 import "../../core"
@@ -94,7 +96,7 @@ ActivityBase {
 
             Image {
                 id: field
-                source: Activity.url + "background.svg"
+                source: activity.resourceUrl + "background.svg"
                 rotation: fieldArea.horizontalLayout ? 0 : 90
                 width: fieldArea.horizontalLayout ? parent.width : parent.height
                 height: fieldArea.horizontalLayout ? parent.height : parent.width
@@ -119,7 +121,7 @@ ActivityBase {
 
                     Image {
                         id: ball
-                        source: Activity.url + "ball.svg"
+                        source: activity.resourceUrl + "ball.svg"
                         sourceSize.height: Math.min(50 * ApplicationInfo.ratio, border.height * 0.2)
                         z: 10
                         onXChanged: if(line.opacity === 1) ballTouchArea.updateLine();
@@ -160,7 +162,7 @@ ActivityBase {
 
                     Image {
                         id: tux
-                        source: Activity.url+"tux_top.svg"
+                        source: activity.resourceUrl+"tux_top.svg"
                         /* Increase size of TUX for each level */
                         sourceSize.height: ball.height + (border.height - ball.height * 3) / Activity.numberOfLevel * (items.currentLevel + 1)
                         x: border.width - tux.width
@@ -213,7 +215,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
@@ -221,7 +223,7 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
