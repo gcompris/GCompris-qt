@@ -47,13 +47,13 @@ Image {
         running: false
 
         NumberAnimation { target: ball; property: "x";
-                          to: finishX; duration: 1000
+                          to: ball.finishX; duration: 1000
                           easing.type: Easing.InOutQuad }
         NumberAnimation { target: ball; property: "y";
-                          to: finishY; duration: 1000
+                          to: ball.finishY; duration: 1000
                           easing.type: Easing.InOutQuad }
         NumberAnimation { target: ball; property: "scale";
-                          to: finishScale; duration: 1000
+                          to: ball.finishScale; duration: 1000
                           easing.type: Easing.InOutQuad }
         NumberAnimation { target: ball; property: "rotation";
                           to: 360; duration: 1000
@@ -63,8 +63,8 @@ Image {
         }
 
         onStopped: {
-            // We are done with the ballon move
-            if(levelChange) {
+            // We are done with the ball move
+            if(ball.levelChange) {
                 return
             } else if(Activity.gameWon) {
                 // This is a win
