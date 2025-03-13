@@ -3613,7 +3613,7 @@ msgstr ""
 "Te üzemelteted a zsilipet. Nyisd ki a különböző kapukat, majd zárd be őket "
 "jó sorrendben. Utaztasd Tuxot a zsilipen keresztül mindkét irányban."
 
-#: activities/canal_lock/CanalLock.qml:74
+#: activities/canal_lock/CanalLock.qml:73
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3622,7 +3622,7 @@ msgstr ""
 "A célod, Tux átjuttatása a csatornán, a fahídon át a különféle zsilipek "
 "segítségével. "
 
-#: activities/canal_lock/CanalLock.qml:76
+#: activities/canal_lock/CanalLock.qml:75
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3632,7 +3632,7 @@ msgstr ""
 "A függőleges szines csíkok a zsilipeket jelölik, melyeket kattintással lehet "
 "mozgatni. Két egyforma zsilip egyidőben nem működhet."
 
-#: activities/canal_lock/CanalLock.qml:78
+#: activities/canal_lock/CanalLock.qml:77
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -14763,7 +14763,7 @@ msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
 msgstr "Tabulálás: váltás a számok és a műveletek között"
 
-#: activities/guess24/Guess24.qml:130
+#: activities/guess24/Guess24.qml:123
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr "Használd a négy számot a megadott műveletekkel, hogy megtaláld a 24-et"
@@ -14847,7 +14847,7 @@ msgstr ""
 "Húzd a megfelelő számokat és műveleteket a dobozokba hogy kitaláld helyes-e "
 "az."
 
-#: activities/guesscount/Admin.qml:35
+#: activities/guesscount/Admin.qml:34
 #, qt-format
 msgctxt "Admin|"
 msgid "Level %1"
@@ -14863,7 +14863,7 @@ msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "az eredmény nem szám"
 
-#: activities/guesscount/Guesscount.qml:155
+#: activities/guesscount/Guesscount.qml:151
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -15057,12 +15057,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Próbálkozások száma: %1"
 
-#: activities/hangman/Hangman.qml:410
+#: activities/hangman/Hangman.qml:369
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Sajnáljuk, de a fordítás még ne elérhető a választott nyelven."
 
-#: activities/hangman/Hangman.qml:411
+#: activities/hangman/Hangman.qml:370
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -15072,7 +15072,7 @@ msgstr ""
 "A GComprist a KDE közösség fejleszti. Te is csatlakozhatsz a fordító "
 "csapatunkba a <a href=\"%2\">%2</a> címen."
 
-#: activities/hangman/Hangman.qml:413
+#: activities/hangman/Hangman.qml:372
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "

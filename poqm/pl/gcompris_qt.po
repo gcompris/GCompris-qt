@@ -3607,7 +3607,7 @@ msgstr ""
 "Jesteś operatorem śluzy. Musisz otworzyć wrota i zasuwy we właściwej "
 "kolejności. Pomóż Tuksowi pływać przez śluzę w obie strony."
 
-#: activities/canal_lock/CanalLock.qml:74
+#: activities/canal_lock/CanalLock.qml:73
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3616,7 +3616,7 @@ msgstr ""
 "Twoim celem jest przeprowadzenie Tuksa przez śluzy, tak aby pozyskać drewno, "
 "przy użyciu różnych rodzajów dostępnych śluz wodnych."
 
-#: activities/canal_lock/CanalLock.qml:76
+#: activities/canal_lock/CanalLock.qml:75
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3627,7 +3627,7 @@ msgstr ""
 "klikając na nie. Nie można obsługiwać dwóch śluz tego samego rodzaju "
 "jednocześnie."
 
-#: activities/canal_lock/CanalLock.qml:78
+#: activities/canal_lock/CanalLock.qml:77
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -14850,7 +14850,7 @@ msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
 msgstr "Klawisz tab: przełącza pomiędzy liczbami i znakami działań"
 
-#: activities/guess24/Guess24.qml:130
+#: activities/guess24/Guess24.qml:123
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr "Użyj czterech liczba z danymi znakami działań, aby znaleźć 24."
@@ -14933,7 +14933,7 @@ msgid ""
 msgstr ""
 "Przeciągnij liczby i operatory do pól, aby uzyskać liczbę daną w instrukcji."
 
-#: activities/guesscount/Admin.qml:35
+#: activities/guesscount/Admin.qml:34
 #, qt-format
 msgctxt "Admin|"
 msgid "Level %1"
@@ -14949,7 +14949,7 @@ msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "wynikiem nie jest liczba całkowita"
 
-#: activities/guesscount/Guesscount.qml:155
+#: activities/guesscount/Guesscount.qml:151
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -15139,12 +15139,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Prób: %1"
 
-#: activities/hangman/Hangman.qml:410
+#: activities/hangman/Hangman.qml:369
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Wybacz, nie mamy tłumaczenia w twoim języku."
 
-#: activities/hangman/Hangman.qml:411
+#: activities/hangman/Hangman.qml:370
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -15154,7 +15154,7 @@ msgstr ""
 "GCompris jest rozwijany przez społeczność KDE, możesz przetłumaczyć GCompris "
 "dołączając do zespołu <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:413
+#: activities/hangman/Hangman.qml:372
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "

@@ -3567,7 +3567,7 @@ msgstr ""
 "കനാൽ പൂട്ടിന്റെ ഉത്തരവാദിത്വം നിങ്ങൾക്കാണ്. ടക്സിനു കനാലിലൂടെ ഇരുവശങ്ങളിലേക്കും സ‍ഞ്ചരിക്കാൻ "
 "കഴിയുന്ന രീതിയിൽ പൂട്ടുകളും  ഗേറ്റുകളും ശരിയായ ക്രമത്തിൽ തുറക്കൂ."
 
-#: activities/canal_lock/CanalLock.qml:74
+#: activities/canal_lock/CanalLock.qml:73
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3576,7 +3576,7 @@ msgstr ""
 "തന്നിട്ടുള്ള വിവിധ തരം ജലപ്പൂട്ടുകൾ ഉപയോഗിച്ച് മരത്തടികൾ എടുക്കാനായി ടക്സിനെ കനാൽ പൂട്ടിന്റെ "
 "അപ്പുറത്തെത്തിക്കലാണ് നിങ്ങളുടെ ലക്ഷ്യം."
 
-#: activities/canal_lock/CanalLock.qml:76
+#: activities/canal_lock/CanalLock.qml:75
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3587,7 +3587,7 @@ msgstr ""
 "ചെയ്താൽ അവയെ പ്രവർത്തിപ്പിക്കാം. ഒരേ തരത്തിലുള്ള രണ്ടു പൂട്ടുകളെ ഒരുമിച്ച് പ്രവർത്തിപ്പിക്കാൻ "
 "കഴിയില്ല."
 
-#: activities/canal_lock/CanalLock.qml:78
+#: activities/canal_lock/CanalLock.qml:77
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -14651,7 +14651,7 @@ msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
 msgstr "ടാബ്: അക്കങ്ങളും ക്രിയകളും തമ്മിൽ മാറ്റാൻ"
 
-#: activities/guess24/Guess24.qml:130
+#: activities/guess24/Guess24.qml:123
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr ""
@@ -14736,7 +14736,7 @@ msgstr ""
 "നിർദ്ദേശത്തിൽ തന്നിരിക്കുന്ന സംഖ്യ ഉത്തരമായി കിട്ടുന്ന തരത്തിൽ അക്കങ്ങളും ക്രിയകളും ഡ്രാഗു ചെയ്ത് "
 "പെട്ടികളിൽ വെക്കുക."
 
-#: activities/guesscount/Admin.qml:35
+#: activities/guesscount/Admin.qml:34
 #, qt-format
 msgctxt "Admin|"
 msgid "Level %1"
@@ -14752,7 +14752,7 @@ msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "ഉത്തരം പൂർണസംഖ്യയല്ല"
 
-#: activities/guesscount/Guesscount.qml:155
+#: activities/guesscount/Guesscount.qml:151
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -14938,12 +14938,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "ശ്രമിച്ചത്: %1"
 
-#: activities/hangman/Hangman.qml:410
+#: activities/hangman/Hangman.qml:369
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "ക്ഷമിക്കണം, നിങ്ങളുടെ ഭാഷയ്ക്ക് തർജ്ജിമ ഇതുവരെ ഇല്ല."
 
-#: activities/hangman/Hangman.qml:411
+#: activities/hangman/Hangman.qml:370
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -14953,7 +14953,7 @@ msgstr ""
 "കെഡിഇ കൂട്ടായ്മയാണ് ജികോംപ്രി ഡെവലപ് ചെയ്തത്, ഒരു തർജ്ജിമ സംഘത്തിൽ ചേർന്നാൽ നിങ്ങൾക്ക് "
 "ജികോംപ്രി തർജ്ജിമ ചെയ്യാൻ കഴിയും <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:413
+#: activities/hangman/Hangman.qml:372
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "

@@ -3769,7 +3769,7 @@ msgstr ""
 "rescloses en l'ordre correcte, de manera que aconseguiu que en Tux navegue "
 "per les portes en ambdues direccions."
 
-#: activities/canal_lock/CanalLock.qml:74
+#: activities/canal_lock/CanalLock.qml:73
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3779,7 +3779,7 @@ msgstr ""
 "per a obtindre els troncs, utilitzant els diferents tipus de rescloses "
 "d'aigua que hi ha disponibles."
 
-#: activities/canal_lock/CanalLock.qml:76
+#: activities/canal_lock/CanalLock.qml:75
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3790,7 +3790,7 @@ msgstr ""
 "es poden fer operar fent-hi clic. No es poden operar simultàniament dues "
 "rescloses del mateix tipus."
 
-#: activities/canal_lock/CanalLock.qml:78
+#: activities/canal_lock/CanalLock.qml:77
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -15272,7 +15272,7 @@ msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
 msgstr "«Tabulació»: canvia entre nombres i operadors"
 
-#: activities/guess24/Guess24.qml:130
+#: activities/guess24/Guess24.qml:123
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr "Utilitza els quatre nombres amb els operadors donats per a trobar 24."
@@ -15356,7 +15356,7 @@ msgstr ""
 "Arrossegueu els números i els operadors fins als quadros per a obtindre el "
 "número que voleu indicat a les instruccions."
 
-#: activities/guesscount/Admin.qml:35
+#: activities/guesscount/Admin.qml:34
 #, qt-format
 msgctxt "Admin|"
 msgid "Level %1"
@@ -15372,7 +15372,7 @@ msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "el resultat no és un enter"
 
-#: activities/guesscount/Guesscount.qml:155
+#: activities/guesscount/Guesscount.qml:151
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -15566,12 +15566,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Intent: %1"
 
-#: activities/hangman/Hangman.qml:410
+#: activities/hangman/Hangman.qml:369
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Ho sentim, encara no tenim una traducció al vostre idioma."
 
-#: activities/hangman/Hangman.qml:411
+#: activities/hangman/Hangman.qml:370
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -15581,7 +15581,7 @@ msgstr ""
 "GCompris és desenvolupat per la comunitat KDE, el podeu traduir unint-vos a "
 "un equip de traducció a <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:413
+#: activities/hangman/Hangman.qml:372
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
