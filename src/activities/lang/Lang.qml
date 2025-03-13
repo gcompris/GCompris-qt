@@ -90,6 +90,7 @@ ActivityBase {
 
         ImageReview {
             id: imageReview
+            bonusItem: bonus
         }
 
         DialogHelp {
@@ -107,6 +108,7 @@ ActivityBase {
                 displayDialog(dialogHelp)
             }
             onHomeClicked: {
+                bonus.haltBonus();
                 if(!items.menuScreen.started && !items.imageReview.started)
                     // We're in a mini game, start imageReview
                     items.imageReview.start()
@@ -119,6 +121,11 @@ ActivityBase {
             onActivityConfigClicked: {
                 displayDialog(dialogActivityConfig)
             }
+        }
+
+        Bonus {
+            id: bonus
+            onWin: imageReview.nextMiniGame()
         }
 
         // This is a stop to hold the virtual keyboard from a mini game

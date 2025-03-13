@@ -21,13 +21,13 @@ Item {
     id: spellIt
     opacity: 0
 
+    property Item bonus
     property alias activityBackground: activityBackground
     property alias wordImage: wordImage
     property alias imageFrame: imageFrame
     property alias hintText:  hintTextPanel
     property alias parser: parser
     property alias answer: answer
-    property alias bonus: bonus
     property alias keyboard: keyboard
     property alias score: score
     property var goodWord
@@ -49,6 +49,7 @@ Item {
     Behavior on opacity { PropertyAnimation { duration: 200 } }
 
     Keys.onEscapePressed: {
+        spellIt.bonus.haltBonus()
         imageReview.start()
     }
     Keys.onTabPressed: {
@@ -227,12 +228,6 @@ Item {
                 onExited: okButton.scale = 1
             }
         }
-
-        Bonus {
-            id: bonus
-            onWin: imageReview.nextMiniGame()
-        }
-
     }
 
     BarButton {

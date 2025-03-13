@@ -21,8 +21,8 @@ Item {
     id: quiz
     opacity: 0
 
+    property Item bonus
     property alias activityBackground: activityBackground
-    property alias bonus: bonus
     property alias score: score
     property alias wordImage: wordImage
     property alias imageFrame: imageFrame
@@ -53,47 +53,40 @@ Item {
 
         property bool keyNavigation: false
 
-        Keys.enabled: !quiz.buttonsBlocked
-
-        Keys.onEscapePressed: {
-            imageReview.start()
-        }
-        Keys.onRightPressed: {
-            keyNavigation = true
-            wordListView.incrementCurrentIndex()
-        }
-        Keys.onLeftPressed:  {
-            keyNavigation = true
-            wordListView.decrementCurrentIndex()
-        }
-        Keys.onDownPressed:  {
-            keyNavigation = true
-            wordListView.incrementCurrentIndex()
-        }
-        Keys.onUpPressed:  {
-            keyNavigation = true
-            wordListView.decrementCurrentIndex()
-        }
-        Keys.onSpacePressed:  {
-            keyNavigation = true
-            wordListView.currentItem.children[1].pressed()
-        }
-        Keys.onEnterPressed:  {
-            keyNavigation = true
-            wordListView.currentItem.children[1].pressed()
-        }
-        Keys.onReturnPressed:  {
-            keyNavigation = true
-            wordListView.currentItem.children[1].pressed()
-        }
-        Keys.onTabPressed: {
-            repeatItem.clicked()
-        }
-        Keys.onReleased: (event) => {
-            if (event.key === Qt.Key_Back) {
+        Keys.onPressed: (event)=> {
+            var acceptEvent = true;
+            if(event.key === Qt.Key_Escape || event.key === Qt.Key_Back) {
                 event.accepted = true
+                quiz.bonus.haltBonus()
                 imageReview.start()
+            } else if(quiz.buttonsBlocked) {
+                return;
+            } else if(event.key === Qt.Key_Right){
+                keyNavigation = true
+                wordListView.incrementCurrentIndex()
+            } else if(event.key === Qt.Key_Left){
+                keyNavigation = true
+                wordListView.decrementCurrentIndex()
+            } else if(event.key === Qt.Key_Down){
+                keyNavigation = true
+                wordListView.incrementCurrentIndex()
+            } else if(event.key === Qt.Key_Up){
+                keyNavigation = true
+                wordListView.decrementCurrentIndex()
+            } else if(event.key === Qt.Key_Space){
+                keyNavigation = true
+                wordListView.currentItem.children[1].pressed()
+            } else if(event.key === Qt.Key_Enter ||
+                    event.key === Qt.Key_Return ||
+                    event.key === Qt.Key_Space){
+                keyNavigation = true
+                wordListView.currentItem.children[1].pressed()
+            } else if(event === Qt.Key_Tab){
+                repeatItem.clicked()
+            } else {
+                acceptEvent = false
             }
+            event.accepted = acceptEvent
         }
 
         JsonParser {
@@ -282,11 +275,6 @@ Item {
         Score {
             id: score
             anchors.margins: 2 * GCStyle.baseMargins
-        }
-
-        Bonus {
-            id: bonus
-            onWin: imageReview.nextMiniGame()
         }
     }
 }
