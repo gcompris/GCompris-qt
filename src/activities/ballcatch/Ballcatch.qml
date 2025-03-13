@@ -6,6 +6,8 @@
 
  SPDX-License-Identifier: GPL-3.0-or-later
 */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import core 1.0
 
@@ -80,17 +82,17 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelpLeftRight
-            onClose: home();
+            onClose: activity.home();
         }
 
         Bar {
             id: bar
             level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level }
-            onHelpClicked: displayDialog(dialogHelpLeftRight);
+            onHelpClicked: activity.displayDialog(dialogHelpLeftRight);
             onPreviousLevelClicked: if(!bonus.isPlaying) Activity.previousLevel();
             onNextLevelClicked: if(!bonus.isPlaying) Activity.nextLevel();
-            onHomeClicked: home();
+            onHomeClicked: activity.home();
         }
 
         Bonus {
