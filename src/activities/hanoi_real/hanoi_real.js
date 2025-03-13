@@ -48,7 +48,6 @@ var colors = [
 ]
 
 var nbTowersLessExpectedAndResultOnes
-var nbMaxItemsByTower
 
 function start(items_, activityMode_) {
     items = items_
@@ -67,60 +66,59 @@ function initSpecificInfoForSimplified() {
     switch(items.currentLevel) {
     case 0:
         nbTowersLessExpectedAndResultOnes = 3;
-        nbMaxItemsByTower = 5;
+        items.maxDiskPerTower = 5;
         break;
     case 1:
         nbTowersLessExpectedAndResultOnes = 4;
-        nbMaxItemsByTower = 5;
+        items.maxDiskPerTower = 5;
         break;
     case 2:
         nbTowersLessExpectedAndResultOnes = 5;
-        nbMaxItemsByTower = 6;
+        items.maxDiskPerTower = 6;
         break;
     case 3:
         nbTowersLessExpectedAndResultOnes = 6;
-        nbMaxItemsByTower = 7;
+        items.maxDiskPerTower = 7;
         break;
     case 4:
         nbTowersLessExpectedAndResultOnes = 6;
-        nbMaxItemsByTower = 8;
+        items.maxDiskPerTower = 8;
         break;
     case 5:
         nbTowersLessExpectedAndResultOnes = 5;
-        nbMaxItemsByTower = 9;
+        items.maxDiskPerTower = 9;
     }
 }
 
 function initLevel() {
 
     items.hasWon = false
+    items.numberOfTower = 0
+    items.numberOfDisc = 0
 
     if(activityMode == "real") {
+        items.numberOfTower = 3
         items.numberOfDisc = items.currentLevel + 3
-        items.discRepeater.model = items.numberOfDisc
-        items.towerModel.model = 3
     }
     else {
         initSpecificInfoForSimplified();
-        items.towerModel.model = nbTowersLessExpectedAndResultOnes + 2
-
-        items.numberOfDisc = nbTowersLessExpectedAndResultOnes * (nbMaxItemsByTower-1) + nbMaxItemsByTower
-        items.discRepeater.model = items.numberOfDisc
+        items.numberOfTower = nbTowersLessExpectedAndResultOnes + 2
+        items.numberOfDisc = nbTowersLessExpectedAndResultOnes * (items.maxDiskPerTower-1) + items.maxDiskPerTower
     }
 
     placeDiscsAtOrigin()
 
     if(activityMode != "real") {
-        for(var i = 0 ; i < (items.numberOfDisc-nbMaxItemsByTower); ++i) {
+        for(var i = 0 ; i < (items.numberOfDisc-items.maxDiskPerTower); ++i) {
             var index = Math.floor(Math.random() * symbols.length);
             items.discRepeater.itemAt(i).text = symbols[index];
             items.discRepeater.itemAt(i).baseColor = colors[index];
         }
         // Fill the text discs avoiding duplicates
-        var currentAnswerId = items.numberOfDisc-nbMaxItemsByTower;
+        var currentAnswerId = items.numberOfDisc-items.maxDiskPerTower;
         var goodAnswerIndices = [];
         do {
-            var id = Math.floor(Math.random() * (items.numberOfDisc-nbMaxItemsByTower));
+            var id = Math.floor(Math.random() * (items.numberOfDisc-items.maxDiskPerTower));
             if(goodAnswerIndices.indexOf(id) == -1) {
                 items.discRepeater.itemAt(currentAnswerId).text = items.discRepeater.itemAt(id).text;
                 items.discRepeater.itemAt(currentAnswerId).baseColor = items.discRepeater.itemAt(id).baseColor;
@@ -151,14 +149,6 @@ function placeDisc(disc, towerImage)
     disc.towerImage = towerImage
     disc.position = getNumberOfDiscOnTower(towerImage)
     disc.parent = towerImage
-    setDiscY(disc, towerImage);
-}
-
-function setDiscY(disc, towerImage)
-{
-    //  -(towerImage.height * 0.12) because we need to remove the base of the tower
-    // dependent of the image!
-    disc.y = towerImage.y + towerImage.height - disc.position * disc.height - (towerImage.height * 0.12)
 }
 
 function placeDiscsAtOrigin() {
@@ -175,11 +165,11 @@ function placeDiscsAtOrigin() {
     }
     else {
         // First fill the first towers
-        for(var i = 0 ; i < (items.numberOfDisc-nbMaxItemsByTower); ++i) {
+        for(var i = 0 ; i < (items.numberOfDisc-items.maxDiskPerTower); ++i) {
             placeDisc(items.discRepeater.itemAt(i), items.towerModel.itemAt(i%nbTowersLessExpectedAndResultOnes))
         }
         // Fill last tower
-        for(var i = items.numberOfDisc-nbMaxItemsByTower ; i < items.numberOfDisc ; ++i) {
+        for(var i = items.numberOfDisc-items.maxDiskPerTower ; i < items.numberOfDisc ; ++i) {
             placeDisc(items.discRepeater.itemAt(i), items.towerModel.itemAt(nbTowersLessExpectedAndResultOnes+1))
         }
     }
@@ -188,7 +178,6 @@ function placeDiscsAtOrigin() {
 function discReleased(index)
 {
     var disc = items.discRepeater.itemAt(index)
-    var isCorrect = false;
 
     if(activityMode == "real") {
         for(var i = 0 ; i < items.towerModel.model ; ++ i) {
@@ -197,7 +186,6 @@ function discReleased(index)
                getNumberOfDiscOnTower(towerItem) < items.numberOfDisc &&
                getHigherfDiscOnTower(towerItem) <= index) {
                 placeDisc(disc, towerItem)
-                isCorrect = true
                 break;
             }
         }
@@ -206,36 +194,17 @@ function discReleased(index)
         for(var i = 0 ; i < items.towerModel.model ; ++ i) {
             var towerItem = items.towerModel.itemAt(i);
             if(checkIfDiscOnTowerImage(disc, towerItem) &&
-               getNumberOfDiscOnTower(towerItem) < nbMaxItemsByTower) {
+               getNumberOfDiscOnTower(towerItem) < items.maxDiskPerTower) {
                 placeDisc(disc, towerItem)
-                isCorrect = true
                 break;
             }
         }
     }
 
-    if(!isCorrect) {
-        // Cancel the drop
-        setDiscY(disc, disc.towerImage)
-    }
+    disc.restoreAnchors()
 
     disableNonDraggablediscs()
     checkSolved()
-}
-
-function sceneSizeChanged()
-{
-    if(!items)
-        return
-
-    for(var i = 0 ; i < items.numberOfDisc ; ++i) {
-        var disc = items.discRepeater.itemAt(i)
-        if(!disc || !disc.towerImage)
-            continue
-        setDiscY(disc, disc.towerImage)
-    }
-
-    disableNonDraggablediscs()
 }
 
 function disableNonDraggablediscs()
@@ -245,7 +214,7 @@ function disableNonDraggablediscs()
         for(var i = 0 ; i < items.numberOfDisc ; ++i) {
             var disc = items.discRepeater.itemAt(i)
             if(disc)
-                disc.mouseEnabled = (getHigherfDiscOnTower(disc.towerImage) <= i)
+                disc.enabled = (getHigherfDiscOnTower(disc.towerImage) <= i)
         }
     }
     else {
@@ -257,7 +226,7 @@ function disableNonDraggablediscs()
             if(!disc)
                 continue
 
-            disc.mouseEnabled = false
+            disc.enabled = false
             if(disc.towerImage == items.towerModel.itemAt(items.towerModel.model-1)) {
                 continue;
             }
@@ -271,7 +240,7 @@ function disableNonDraggablediscs()
         }
 
         for(var i in highestOnes) {
-            items.discRepeater.itemAt(highestOnes[i].id).mouseEnabled = true
+            items.discRepeater.itemAt(highestOnes[i].id).enabled = true
         }
     }
 }
@@ -334,19 +303,5 @@ function checkSolved() {
             items.hasWon = true
             items.bonus.good("flower")
         }
-    }
-}
-
-function getDiscWidth(index)
-{
-    if(activityMode == "real") {
-        if( 0 === index ) return items.towerModel.itemAt(0).width * 1.6
-        else if ( 1 === index ) return items.towerModel.itemAt(0).width * 1.3
-        else if ( 2 === index ) return items.towerModel.itemAt(0).width * 1
-        else if ( 3 === index ) return items.towerModel.itemAt(0).width * 0.7
-        else return items.towerModel.itemAt(0).width * 0.5
-    }
-    else {
-        return items.towerModel.itemAt(0).width
     }
 }

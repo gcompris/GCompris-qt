@@ -48,80 +48,69 @@ ActivityBase {
             property alias discRepeater: discRepeater
             property alias towerModel: towerModel
             property bool hasWon: false
-            property int numberOfDisc
+            property int numberOfDisc: 1
+            property int numberOfTower: 1
+            property int maxDiskPerTower: 1
         }
+
+        readonly property list<real> discSizes: [1.6, 1.3, 1, 0.7, 0.5]
 
         onStart: { Activity.start(items, activityMode) }
         onStop: { Activity.stop() }
 
-        onWidthChanged: Activity.sceneSizeChanged()
-        onHeightChanged: Activity.sceneSizeChanged()
-
-        Rectangle {
-            id: instruction
-            width: parent.width
-            height: description.height + 5 * ApplicationInfo.ratio
-            color: "#FFF"
-            opacity: 0.8
-            anchors {
-                bottom: bar.top
-                bottomMargin: 15 * ApplicationInfo.ratio
-            }
+        GCTextPanel {
+            id: instructionPanel
             visible: bar.level == 1
-        }
-
-        GCText {
-            id: description
-            text: activityMode == "real" ? qsTr("Move the entire stack to the right peg, one disc at a time.") :
+            panelWidth: parent.width - 2 * GCStyle.baseMargins
+            panelHeight: Math.min(50 * ApplicationInfo.ratio, activityBackground.height * 0.2)
+            fixedHeight: true
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: bar.height * 1.2
+            color: GCStyle.lightBg
+            textItem.color: GCStyle.darkText
+            textItem.text: activityMode == "real" ? qsTr("Move the entire stack to the right peg, one disc at a time.") :
             qsTr("Build the same tower in the empty area as the one you see on the right-hand side")
-            width: instruction.width
-            fontSize: mediumSize
-            color: "#373737"
-            wrapMode: Text.WordWrap
-            anchors.centerIn: instruction
-            verticalAlignment: Text.AlignVCenter
-            horizontalAlignment: Text.AlignHCenter
-            visible: bar.level == 1
         }
 
         Repeater {
             id: discRepeater
+            model: items.numberOfDisc
+            readonly property real discHeight: activity.activityMode == "real"?
+                towerRow.height * 0.15 : towerRow.height / (items.maxDiskPerTower + 1)
 
             Rectangle {
                 id: disc
                 z: 4
-                width: Activity.getDiscWidth(index)
-                height: activityMode == "real"? towerModel.itemAt(0).height * 0.15: towerModel.itemAt(0).height / (Activity.nbMaxItemsByTower+1)
-
-                opacity: index < items.numberOfDisc ? 1 : 0
-                onHeightChanged: Activity.sceneSizeChanged()
-                property string baseColor: "#808080"
+                width: activity.activityMode == "real" ?
+                    towerRow.towerWidth * activityBackground.discSizes[index] : towerRow.towerWidth
+                height: discRepeater.discHeight
                 radius: height * 0.5
-                property bool mouseEnabled: true
+                property string baseColor: GCStyle.grayBorder
                 property alias discMouseArea: discMouseArea
                 property Item towerImage
-                property int position // The position index on the tower
-
+                property int position: 0 // The position index on the tower
                 property alias text: textSimplified.text
-
                 color: Qt.darker(baseColor, 1.2)
-                anchors.horizontalCenter: parent.horizontalCenter
 
-                Behavior on y {
-                    NumberAnimation {
-                        id: bouncebehavior
-                        easing {
-                            type: Easing.OutElastic
-                            amplitude: 1.0
-                            period: 0.75
+                anchors {
+                    horizontalCenter: parent.horizontalCenter
+                    top: parent.bottom
+                    topMargin: -parent.height * 0.12 - (disc.height * disc.position)
+
+                    Behavior on topMargin {
+                        NumberAnimation {
+                            id: bouncebehavior
+                            duration: 100
+                            easing.type: Easing.OutQuint
                         }
                     }
                 }
 
                 Rectangle {
                     id: inDisc
-                    width: parent.width - 10 * ApplicationInfo.ratio
-                    height: parent.height - 6 * ApplicationInfo.ratio
+                    width: parent.width - GCStyle.baseMargins
+                    height: parent.height - GCStyle.halfMargins
                     radius: width * 0.5
                     color: Qt.lighter(disc.baseColor, 1.2)
                     anchors.centerIn: parent
@@ -129,20 +118,23 @@ ActivityBase {
                     GCText {
                         id: textSimplified
                         visible: activityMode == "simplified"
-                        color: "#373737"
+                        color: GCStyle.darkText
                         anchors.verticalCenter: parent.verticalCenter
-                        anchors.rightMargin: 10 * ApplicationInfo.ratio
+                        anchors.rightMargin: GCStyle.baseMargins
                         anchors.right: parent.right
                     }
-
                 }
 
+                function restoreAnchors() {
+                    disc.anchors.horizontalCenter = disc.parent.horizontalCenter
+                    disc.anchors.top = disc.parent.bottom
+                }
 
                 MouseArea {
                     id: discMouseArea
-                    enabled: disc.mouseEnabled && !items.hasWon
+                    enabled: disc.enabled && !items.hasWon
                     anchors.centerIn: parent
-                    width: Activity.getDiscWidth(0)
+                    width: towerRow.towerWidth * activityBackground.discSizes[0]
                     height: activityBackground.height
                     drag.target: parent
                     drag.axis: Drag.XandYAxis
@@ -150,6 +142,7 @@ ActivityBase {
 
                     onPressed: {
                         disc.anchors.horizontalCenter = undefined
+                        disc.anchors.top = undefined
                         // Need to higher the z tower for the disc to be above all other towers and disc
                         disc.towerImage.z ++
                         disc.z ++
@@ -160,51 +153,48 @@ ActivityBase {
                         disc.towerImage.z --
                         disc.z --
                         Activity.discReleased(index)
-                        disc.anchors.horizontalCenter = disc.parent.horizontalCenter
                     }
                 }
             }
         }
 
-        Grid {
-            // do columns if mobile?
-            rows: 1
-            columnSpacing: (activityBackground.width - towerModel.model * towerModel.itemAt(0).width) / (items.towerModel.model+1)
+        Row {
+            id: towerRow
+            height: activityBackground.height - instructionPanel.height - bar.height * 2.2
+            width: activityBackground.width - spacing * 2
+            spacing: towerWidth * 0.6
+
+            property double towerWidth: activityBackground.width / (towerModel.model * 1.6 + 0.6)
+            // divided by (number of towers * (maximum disc width + sides spacing))
 
             anchors {
-                bottom: instruction.top
+                bottom: instructionPanel.top
                 horizontalCenter: parent.horizontalCenter
-                bottomMargin: 10 * ApplicationInfo.ratio
+                bottomMargin: GCStyle.baseMargins
             }
             Repeater {
                 id: towerModel
-                model: 1 // will be dynamically set in js
-                delegate: Item {
+                model: items.numberOfTower
+                delegate: Image {
                     id: towerImage
-                    width: image.width
-                    height: image.height
-                    onHeightChanged: Activity.sceneSizeChanged()
-                    Image {
-                        id: image
-                        source: 
-                        if(activityMode == "simplified" && (modelData == towerModel.model-2))
-                            //in simplified mode, the target tower
-                            Activity.url + "disc_support-green.svg"
-                        else if(activityMode == "simplified" && (modelData == towerModel.model-1))
-                            // in simplified mode, the reference tower
-                            Activity.url + "disc_support-red.svg"
-                        else if(activityMode == "real" && (modelData == towerModel.model-1))
-                            // in real mode, the target tower
-                            Activity.url + "disc_support-green.svg"
-                        else
-                            Activity.url + "disc_support.svg"
-                        width: activityBackground.width / (towerModel.model + 2.5)
-                        fillMode: Image.Stretch
-                        height: activityBackground.height - instruction.height - 2 * bar.height
-                        sourceSize.width: width
-                        sourceSize.height: height
-                    }
                     z: 3
+                    source:
+                    if(activityMode == "simplified" && (modelData == towerModel.model-2))
+                        //in simplified mode, the target tower
+                        Activity.url + "disc_support-green.svg"
+                    else if(activityMode == "simplified" && (modelData == towerModel.model-1))
+                        // in simplified mode, the reference tower
+                        Activity.url + "disc_support-red.svg"
+                    else if(activityMode == "real" && (modelData == towerModel.model-1))
+                        // in real mode, the target tower
+                        Activity.url + "disc_support-green.svg"
+                    else
+                        Activity.url + "disc_support.svg"
+                    width: towerRow.towerWidth
+                    height: towerRow.height
+                    sourceSize.width: width
+                    sourceSize.height: height
+                    fillMode: Image.Stretch
                 }
             }
         }
