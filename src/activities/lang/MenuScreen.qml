@@ -25,7 +25,7 @@ Item {
     property alias menuModel: menuModel
     property bool keyboardMode: false
     property bool started: opacity == 1
-    property int spacing: Math.floor(5 * ApplicationInfo.ratio)
+    property int spacing: GCStyle.halfMargins
 
     Behavior on opacity { PropertyAnimation { duration: 200 } }
 
@@ -83,8 +83,7 @@ Item {
 
     // Activities
     property int iconSize: 180 * ApplicationInfo.ratio
-
-    property int levelCellWidth: menuGrid.width / Math.floor(menuGrid.width / iconSize )
+    property int levelCellWidth: menuGrid.width / Math.max(1, Math.floor(menuGrid.width / iconSize))
     property int levelCellHeight: iconSize * 1.4
 
     ListModel {
@@ -119,8 +118,7 @@ Item {
 
         anchors {
             fill: parent
-            topMargin: menuScreen.spacing
-            leftMargin: menuScreen.spacing
+            margins: menuScreen.spacing
             bottomMargin: bar.height + menuScreen.spacing
         }
         cellWidth: levelCellWidth
@@ -181,7 +179,7 @@ Item {
                 anchors.left: parent.left
                 anchors.right: parent.right
                 anchors.bottomMargin: menuScreen.spacing
-                anchors.leftMargin: ApplicationInfo.ratio * 10
+                anchors.leftMargin: GCStyle.baseMargins
                 anchors.rightMargin: anchors.leftMargin
                 height: 14 * ApplicationInfo.ratio
                 to: wordCount
@@ -203,7 +201,7 @@ Item {
             Rectangle {
                 color: "#C0FFFFFF"
                 anchors.centerIn: favoriteButton
-                width: favoriteButton.width +  2 * ApplicationInfo.ratio
+                width: favoriteButton.width + GCStyle.tinyMargins
                 height: width
                 radius: width * 0.5
             }
@@ -232,8 +230,8 @@ Item {
             width: levelCellWidth - menuScreen.spacing
             height: levelCellHeight - menuScreen.spacing
             color:  "#AAFFFFFF"
-            border.width: 2 * ApplicationInfo.ratio
-            border.color: "#373737"
+            border.width: GCStyle.thinBorder
+            border.color: GCStyle.darkText
             visible: menuScreen.keyboardMode
             Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
             Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }

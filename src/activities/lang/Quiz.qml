@@ -109,37 +109,36 @@ Item {
         Grid {
             id: gridId
             columns: quiz.horizontalLayout ? 2 : 1
-            spacing: 10 * ApplicationInfo.ratio
+            spacing: GCStyle.baseMargins
             anchors.fill: parent
-            anchors.margins: spacing
+            anchors.margins: GCStyle.baseMargins
+            anchors.bottomMargin: bar.height * 1.2
 
             Item {
                 id: imageContainer
-                width: quiz.horizontalLayout
-                       ? activityBackground.width  - wordListView.width - gridId.spacing * 3
-                       : wordListView.width
-                height: quiz.horizontalLayout
-                        ? wordListView.height
-                        : activityBackground.height - bar.height - wordListView.height - gridId.spacing * 3
+                width: quiz.horizontalLayout ?
+                    gridId.width - wordListView.width - gridId.spacing : wordListView.width
+                height: quiz.horizontalLayout ?
+                    wordListView.height : gridId.height - wordListView.height - gridId.spacing
 
                 Rectangle {
                     id: imageFrame
                     anchors.centerIn: parent
                     color: "#E0E0F7"
-                    border.color: "#373737"
-                    border.width: ApplicationInfo.ratio
+                    border.color: GCStyle.darkBorder
+                    border.width: GCStyle.thinnestBorder
                     width: quiz.horizontalLayout ?
-                            Math.min(parent.width * 0.6, parent.height - repeatItem.height * 2 - gridId.spacing * 2) :
+                            Math.min(parent.width, parent.height - repeatItem.height * 2 - gridId.spacing * 2) :
                             Math.min(parent.height, parent.width - repeatItem.height * 2 - gridId.spacing * 2)
                     height: width
-                    radius: width * 0.1
+                    radius: GCStyle.baseMargins
                     z: 11
                     visible: QuizActivity.mode !== 3
 
                     Image {
                         id: wordImage
                         // Images are not svg
-                        width: parent.width * 0.9
+                        width: parent.width - 2 * GCStyle.baseMargins
                         height: width
                         anchors.centerIn: parent
 
@@ -179,24 +178,20 @@ Item {
 
             ListView {
                 id: wordListView
-                width: quiz.horizontalLayout
-                       ? activityBackground.width * 0.55
-                       : activityBackground.width - gridId.anchors.margins * 2
-                height: quiz.horizontalLayout
-                        ? activityBackground.height - bar.height
-                        : (activityBackground.height - bar.height) * 0.6
-                spacing: 2 * ApplicationInfo.ratio
+                width: quiz.horizontalLayout ? gridId.width * 0.55 : gridId.width
+                height: quiz.horizontalLayout ? gridId.height : gridId.height * 0.6
+                spacing: GCStyle.tinyMargins
                 orientation: Qt.Vertical
                 verticalLayoutDirection: ListView.TopToBottom
                 interactive: false
                 model: wordListModel
 
                 highlight:  Rectangle {
-                    width: (QuizActivity.mode == 1) ? wordListView.width - wordListView.buttonHeight :
-                                                        wordListView.width
+                    width: (QuizActivity.mode == 1) ?
+                        wordListView.width - wordListView.buttonHeight - wordListView.spacing :
+                        wordListView.width
                     height: wordListView.buttonHeight
                     color: "#AAFFFFFF"
-                    radius: 5
                     visible: activityBackground.keyNavigation
                     y: wordListView.currentItem ? wordListView.currentItem.y : 0
                     Behavior on y {
@@ -210,12 +205,10 @@ Item {
                 focus: true
                 keyNavigationWraps: true
 
-                property int buttonHeight: height / wordListModel.count * 0.9
+                property int buttonHeight: height / wordListModel.count - spacing
 
                 delegate: Item {
-
                     id: wordListViewDelegate
-
                     width: wordListView.width
                     height: wordListView.buttonHeight
 
@@ -223,7 +216,6 @@ Item {
                         id: wordImageQuiz
                         width: height
                         height: wordListView.buttonHeight
-                        mipmap: true
                         source: image
                         z: 7
                         fillMode: Image.PreserveAspectFit
@@ -233,10 +225,10 @@ Item {
 
                     AnswerButton {
                         id: wordRectangle
-                        width: parent.width * 0.6
                         height: wordListView.buttonHeight
                         textLabel: translatedTxt
                         anchors.right: wordImageQuiz.visible ? wordImageQuiz.left : parent.right
+                        anchors.rightMargin: wordImageQuiz.visible ? GCStyle.tinyMargins : 0
                         anchors.left: parent.left
                         blockAllButtonClicks: quiz.buttonsBlocked
                         onPressed: {
@@ -276,12 +268,12 @@ Item {
         BarButton {
             id: repeatItem
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
-            width: 64 * ApplicationInfo.ratio
+            width: GCStyle.bigButtonHeight
             z: 12
             anchors {
                 top: parent.top
                 left: parent.left
-                margins: 10 * ApplicationInfo.ratio
+                margins: GCStyle.baseMargins
             }
             onClicked: Activity.playWord(goodWord.voice)
             Behavior on opacity { PropertyAnimation { duration: 200 } }
@@ -289,7 +281,7 @@ Item {
 
         Score {
             id: score
-            parent: quiz
+            anchors.margins: 2 * GCStyle.baseMargins
         }
 
         Bonus {
