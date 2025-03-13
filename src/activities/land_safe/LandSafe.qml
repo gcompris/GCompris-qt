@@ -259,13 +259,11 @@ ActivityBase {
 
             Image {
                 id: rocketImage
-
-                sourceSize.width: 1024
+                sourceSize.width: width
                 source: Activity.baseUrl + "/rocket.svg"
                 anchors.centerIn: parent
                 anchors.fill: parent
                 z: 4
-                mipmap: true
             }
 
             Body {
@@ -320,9 +318,9 @@ ActivityBase {
                 id: leftEngine
 
                 anchors.left: parent.left
-                anchors.leftMargin: 10
+                anchors.leftMargin: GCStyle.halfMargins
                 anchors.verticalCenter: parent.verticalCenter
-                height: 30
+                height: 15 * ApplicationInfo.ratio
 
                 ImageParticle {
                     groups: ["flameLeft"]
@@ -362,9 +360,9 @@ ActivityBase {
                 id: rightEngine
 
                 anchors.right: parent.right
-                anchors.rightMargin: 10
+                anchors.rightMargin: GCStyle.halfMargins
                 anchors.verticalCenter: parent.verticalCenter
-                height: 30
+                height: 15 * ApplicationInfo.ratio
 
                 ImageParticle {
                     groups: ["flameRight"]
@@ -402,7 +400,7 @@ ActivityBase {
             ParticleSystem {
                 id: bottomEngine
                 anchors.top: parent.bottom
-                anchors.topMargin: 5
+                anchors.topMargin: GCStyle.tinyMargins
                 anchors.horizontalCenter: parent.horizontalCenter
                 width: rocket.width
 
@@ -565,21 +563,20 @@ ActivityBase {
             id: osdWrapper
 
             anchors.right: activityBackground.right
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.rightMargin: GCStyle.baseMargins
             anchors.bottom: bar.top
-            anchors.bottomMargin: 20 * ApplicationInfo.ratio
+            anchors.bottomMargin: 2 * GCStyle.baseMargins
             anchors.top: activityBackground.top
-            width: 200
+            width: 100 * ApplicationInfo.ratio
             height: activityBackground.height
             z: 2
-            property int itemsMargin: 6 * ApplicationInfo.ratio
 
             GCText {
                 id: fuelText
                 anchors.right: parent.right
                 anchors.bottom: altitudeText.top
-                anchors.bottomMargin: osdWrapper.itemsMargin
-                color: "white"
+                anchors.bottomMargin: GCStyle.halfMargins
+                color: GCStyle.whiteText
                 fontSize: tinySize
                 horizontalAlignment: Text.AlignRight
                 text: qsTr("Fuel: %1").arg(items.fuelText)
@@ -588,8 +585,8 @@ ActivityBase {
                 id: altitudeText
                 anchors.right: parent.right
                 anchors.bottom: velocityText.top
-                anchors.bottomMargin: osdWrapper.itemsMargin
-                color: "white"
+                anchors.bottomMargin: GCStyle.halfMargins
+                color: GCStyle.whiteText
                 fontSize: tinySize
                 horizontalAlignment: Text.AlignRight
                 text: qsTr("Altitude: %1").arg(items.altitudeText)
@@ -598,8 +595,8 @@ ActivityBase {
                 id: velocityText
                 anchors.right: parent.right
                 anchors.bottom: accelText.top
-                anchors.bottomMargin: osdWrapper.itemsMargin
-                color: "white"
+                anchors.bottomMargin: GCStyle.halfMargins
+                color: GCStyle.whiteText
                 fontSize: tinySize
                 horizontalAlignment: Text.AlignRight
                 text: qsTr("Velocity: %1").arg(items.velocityText)
@@ -608,10 +605,10 @@ ActivityBase {
             GCText {
                 id: accelText
                 anchors.bottom: accelerometer.top
-                anchors.bottomMargin: osdWrapper.itemsMargin
+                anchors.bottomMargin: GCStyle.halfMargins
                 anchors.right: parent.right
                 fontSize: tinySize
-                color: "white"
+                color: GCStyle.whiteText
                 horizontalAlignment: Text.AlignRight
                 text: qsTr("Acceleration: %1").arg(items.accelerometerText)
             }
@@ -621,7 +618,7 @@ ActivityBase {
                 current: rocket.decomposeVector(rocket.accel, rocket.rotation).y * 10 - items.gravity
                 anchors.right: parent.right
                 anchors.bottom: planetText.top
-                anchors.bottomMargin: osdWrapper.itemsMargin
+                anchors.bottomMargin: GCStyle.halfMargins
                 width: 15 + 3 * items.scale * ApplicationInfo.ratio
                 height: upDownControl.height
                 z: 2 // on top of rocket and ground
@@ -634,8 +631,8 @@ ActivityBase {
                 id: planetText
                 anchors.right: parent.right
                 anchors.bottom: gravityText.top
-                anchors.bottomMargin: osdWrapper.itemsMargin
-                color: "white"
+                anchors.bottomMargin: GCStyle.halfMargins
+                color: GCStyle.whiteText
                 fontSize: tinySize
                 horizontalAlignment: Text.AlignRight
                 text: (items.levels && items.levels[bar.level-1]) ? items.levels[bar.level-1].planet : ""
@@ -646,7 +643,7 @@ ActivityBase {
                 anchors.right: parent.right
                 horizontalAlignment: Text.AlignRight
                 fontSize: tinySize
-                color: "white"
+                color: GCStyle.whiteText
                 text: qsTr("Gravity: %1").arg(Math.round(items.gravity * 100) / 100);
             }
         }
@@ -657,13 +654,13 @@ ActivityBase {
             anchors.rightMargin: accelerometer.width
             anchors.bottom: bar.top
             anchors.bottomMargin: 32 * ApplicationInfo.ratio + gravityText.height + planetText.height
-            width: upButton.width + 20 * ApplicationInfo.ratio
-            height: upButton.height + downButton.height + 20 * ApplicationInfo.ratio
+            width: upButton.width + 2 * GCStyle.baseMargins
+            height: upButton.height + downButton.height + 2 * GCStyle.baseMargins
             visible: items.onScreenControls
 
             z: 19 // below intro, above the rest
             opacity: 0.4
-            spacing: 20 * ApplicationInfo.ratio
+            spacing: 2 * GCStyle.baseMargins
 
             ControlButton {
                 id: upButton
@@ -683,15 +680,15 @@ ActivityBase {
         Row {
             id: leftRightControl
             anchors.left: parent.left
-            anchors.leftMargin: 10 * ApplicationInfo.ratio
+            anchors.leftMargin: GCStyle.baseMargins
             anchors.bottom: upDownControl.bottom
-            width: leftButton.width + rightButton.width + 20 * ApplicationInfo.ratio
-            height: leftButton.height + 10 * ApplicationInfo.ratio
+            width: leftButton.width + rightButton.width + 2 * GCStyle.baseMargins
+            height: leftButton.height + GCStyle.baseMargins
             visible: items.onScreenControls
 
             z: 19 // below intro, on top of the rest
             opacity: 0.4
-            spacing: 20 * ApplicationInfo.ratio
+            spacing: 2 * GCStyle.baseMargins
 
             ControlButton {
                 id: leftButton
@@ -774,7 +771,7 @@ ActivityBase {
         BarButton {
             id: ok
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
-            width: 75 * ApplicationInfo.ratio
+            width: GCStyle.bigButtonHeight
             visible: false
             anchors.centerIn: activityBackground
             onClicked: {
