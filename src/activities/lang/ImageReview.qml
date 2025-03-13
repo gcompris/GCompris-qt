@@ -21,6 +21,7 @@ Item {
     id: imageReview
     anchors.fill: parent
 
+    property Item bonusItem
     property alias categoryText: categoryTextPanel.textItem
     property int wordListIndex // This is the current sub list of words
     property var word: rootItem.opacity == 1 ? items.wordList[wordListIndex][score.currentSubLevel - 1] : undefined
@@ -40,6 +41,7 @@ Item {
 
     // Start at last wordListIndex
     function start() {
+        imageReview.bonusItem.haltBonus()
         initLevel(wordListIndex)
     }
 
@@ -89,61 +91,40 @@ Item {
         if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_1)) {
             initLevel(wordListIndex)
             event.accepted = true
-        }
-        if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_2)) {
+        } else if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_2)) {
             startMiniGame(0)
             event.accepted = true
-        }
-        if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_3)) {
+        } else if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_3)) {
             startMiniGame(1)
             event.accepted = true
-        }
-        if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_4)) {
+        } else if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_4)) {
             startMiniGame(2)
             event.accepted = true
-        }
-        if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_5)) {
+        } else if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_5)) {
             startMiniGame(3)
             event.accepted = true
-        }
-    }
-
-    Keys.onEscapePressed: {
-        Activity.launchMenuScreen()
-    }
-
-    Keys.onLeftPressed: (event) => {
-        if( score.currentSubLevel > 1 ) {
-            imageReview.prevWord()
-            event.accepted = true
-        }
-    }
-    Keys.onRightPressed: (event) => {
-        imageReview.nextWord()
-        event.accepted = true
-    }
-    Keys.onSpacePressed: (event) => {
-        imageReview.nextWord()
-        event.accepted = true
-    }
-    Keys.onEnterPressed: (event) => {
-        imageReview.nextWord()
-        event.accepted = true
-    }
-    Keys.onReturnPressed: (event) => {
-        imageReview.nextWord()
-        event.accepted = true
-    }
-    Keys.onTabPressed: {
-        repeatItem.clicked()
-    }
-
-    Keys.onReleased: (event) => {
-        if (event.key === Qt.Key_Back) {
-            event.accepted = true
+            // end of Cheat codes
+        } else if(!started) {
+            return;
+        } else if(event.key === Qt.Key_Escape || event.key === Qt.Key_Back) {
             Activity.launchMenuScreen()
+            event.accepted = true
+        } else if(event.key === Qt.Key_Left) {
+            if(score.currentSubLevel > 1) {
+                imageReview.prevWord()
+                event.accepted = true
+            }
+        } else if(event.key === Qt.Key_Right ||
+            event.key === Qt.Key_Space ||
+            event.key === Qt.Key_Enter ||
+            event.key === Qt.Key_Return) {
+            imageReview.nextWord()
+            event.accepted = true
+        } else if(event.key === Qt.Key_Tab) {
+            repeatItem.clicked()
         }
     }
+
 
     Item {
         id: rootItem
@@ -295,6 +276,7 @@ Item {
                 panelWidth: parent.width
                 panelHeight: 64 * ApplicationInfo.ratio
                 fixedHeight: true
+                hideIfEmpty: true
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.top: parent.top
                 anchors.topMargin: GCStyle.baseMargins
@@ -362,9 +344,9 @@ Item {
     }
 
     function nextWord() {
-        ++score.currentSubLevel;
-
-        if(score.currentSubLevel == score.numberOfSubLevels + 1) {
+        if(score.currentSubLevel < score.numberOfSubLevels) {
+            ++score.currentSubLevel
+        } else if(score.currentSubLevel == score.numberOfSubLevels) {
             nextMiniGame()
         }
     }
@@ -386,6 +368,7 @@ Item {
 
         miniGameLoader.source = itemToLoad;
         var loadedItems = miniGameLoader.item
+        loadedItems.bonus = imageReview.bonusItem
 
         rootItem.opacity = 0
         focus = false
