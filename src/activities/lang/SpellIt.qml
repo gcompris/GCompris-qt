@@ -24,13 +24,9 @@ Item {
     property alias activityBackground: activityBackground
     property alias wordImage: wordImage
     property alias imageFrame: imageFrame
-    property alias hintTextbg: hintTextbg
-    property alias hintText:  hintText
+    property alias hintText:  hintTextPanel
     property alias parser: parser
-    property alias answerbg: answerbg
     property alias answer: answer
-    property alias ok: ok
-    property alias okMouseArea: okMouseArea
     property alias bonus: bonus
     property alias keyboard: keyboard
     property alias score: score
@@ -62,6 +58,7 @@ Item {
     Item {
         id: activityBackground
         anchors.fill: parent
+        anchors.margins: GCStyle.baseMargins
 
         property bool horizontalLayout: activityBackground.width >= activityBackground.height
 
@@ -70,71 +67,52 @@ Item {
             onError: (msg) => console.error("Lang: Error parsing json: " + msg);
         }
 
-        Rectangle {
-            id: hintTextbg
-            width: imageFrame.width
-            height: 42 * ApplicationInfo.ratio
-            color: "#AAFFFFFF"
-            radius: 16
-            anchors {
-                horizontalCenter: parent.horizontalCenter
-                top: parent.top
-                topMargin: 4 * ApplicationInfo.ratio
+        GCTextPanel {
+            id: hintTextPanel
+            panelWidth: answerBg.width
+            panelHeight: Math.min(GCStyle.bigButtonHeight,
+                                  (bar.y - GCStyle.baseMargins * 4) * 0.33)
+            fixedHeight: true
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: parent.top
+            color: "#aaffffff"
+            border.width: 0
+            textItem.color: GCStyle.darkText
+
+            property string nextHint
+            function changeHint(nextHint_: string) {
+                nextHint = nextHint_
+                animHint.start()
             }
 
-
-            GCText {
-                id: hintText
-                text: ""
-                fontSizeMode: Text.Fit
-                fontSize: mediumSize
-                font.weight: Font.DemiBold
-                width: parent.width - 8
-                height: parent.height - 8
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                color: "#373737"
-                anchors.centerIn: parent
-
-                property string nextHint
-                function changeHint(nextHint_: string) {
-                    nextHint = nextHint_
-                    animHint.start()
+            SequentialAnimation {
+                id: animHint
+                PropertyAnimation {
+                    target: hintTextPanel
+                    property: "opacity"
+                    to: 0
+                    duration: 100
                 }
-
-                SequentialAnimation {
-                    id: animHint
-                    PropertyAnimation {
-                        target: hintText
-                        property: "opacity"
-                        to: 0
-                        duration: 100
-                    }
-                    PropertyAction {
-                        target: hintText
-                        property: "text"
-                        value: ""+ hintText.nextHint
-                    }
-                    PropertyAnimation {
-                        target: hintText
-                        property: "opacity"
-                        to: 1
-                        duration: 100
-                    }
+                ScriptAction {
+                    script: hintTextPanel.textItem.text = ""+ hintText.nextHint
                 }
-
+                PropertyAnimation {
+                    target: hintText
+                    property: "opacity"
+                    to: 1
+                    duration: 100
+                }
             }
         }
 
         Item {
             id: imageFrame
-            width: (parent.width - 72 * ApplicationInfo.ratio) * 0.8
-            height: bar.y - hintTextbg.height - answerbg.height - 4 * anchors.margins
-//             height: (parent.height - hintTextbg.height - answerbg.height - bar.height * 1.1) * 0.8
+            width: answerBg.width
+            height: bar.y - hintTextPanel.height - answerBg.height - 4 * GCStyle.baseMargins
             anchors {
                 horizontalCenter: parent.horizontalCenter
-                top: hintTextbg.bottom
-                margins: 10 * ApplicationInfo.ratio
+                top: hintTextPanel.bottom
+                margins: GCStyle.baseMargins
             }
             z: 11
 
@@ -144,15 +122,15 @@ Item {
                 anchors.centerIn: parent
                 width: Math.min(parent.width, parent.height)
                 height: width
-                radius: width * 0.1
-                border.color: "#373737"
-                border.width: ApplicationInfo.ratio
+                radius: GCStyle.baseMargins
+                border.color: GCStyle.darkBorder
+                border.width: GCStyle.thinnestBorder
             }
 
             Image {
                 id: wordImage
                 // Images are not svg
-                width: Math.min(parent.width, parent.height) * 0.9
+                width: Math.min(parent.width, parent.height) - 2 * GCStyle.baseMargins
                 height: width
                 anchors.centerIn: parent
                 property string nextSource
@@ -192,30 +170,31 @@ Item {
         }
 
         Rectangle {
-            id: answerbg
-            width: imageFrame.width + 8
-            height: 96 * ApplicationInfo.ratio
+            id: answerBg
+            width: parent.width - (GCStyle.bigButtonHeight + GCStyle.baseMargins) * 2
+            height: hintTextPanel.height
             color: "#AAFFFFFF"
-            radius: 16
+            radius: GCStyle.halfMargins
             anchors {
                 horizontalCenter: parent.horizontalCenter
                 top: imageFrame.bottom
-                margins: 10 * ApplicationInfo.ratio
+                margins: GCStyle.baseMargins
             }
             z: 20
 
             TextInput {
                 id: answer
-                width: parent.width - 4
-                height: parent.height - 4
-                color: "#373737"
+                width: parent.width - 2 * GCStyle.baseMargins
+                height: parent.height - 2 * GCStyle.baseMargins
+                anchors.centerIn: parent
+                color: GCStyle.darkText
                 cursorVisible: true
                 focus: false
                 activeFocusOnPress: !ApplicationInfo.isMobile
                 visible: true
                 horizontalAlignment: TextInput.AlignHCenter
                 verticalAlignment: TextInput.AlignVCenter
-                font.pointSize: hintText.pointSize
+                font.pointSize: hintTextPanel.textItem.pointSize
                 font.weight: Font.DemiBold
                 font.family: GCSingletonFontLoader.fontName
                 font.capitalization: ApplicationSettings.fontCapitalization
@@ -229,25 +208,23 @@ Item {
         }
 
         Image {
-            id: ok
+            id: okButton
             source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
-            sourceSize.width: Math.min(answerbg.x, 100 * ApplicationInfo.ratio) - 2 * anchors.leftMargin
+            sourceSize.width: GCStyle.bigButtonHeight
             fillMode: Image.PreserveAspectFit
             anchors {
-                verticalCenter: answerbg.verticalCenter
-                left: answerbg.right
-                leftMargin: 10 * ApplicationInfo.ratio
-
+                verticalCenter: answerBg.verticalCenter
+                right: parent.right
             }
             MouseArea {
                 id: okMouseArea
                 anchors.fill: parent
                 hoverEnabled: true
-                onEntered: ok.scale = 1.1
+                onEntered: okButton.scale = 1.1
                 onClicked: {
                     SpellActivity.checkAnswer(answer.text)
                 }
-                onExited: ok.scale = 1
+                onExited: okButton.scale = 1
             }
         }
 
@@ -261,12 +238,13 @@ Item {
     BarButton {
         id: repeatItem
         source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
-        width: Math.min(hintTextbg.x, 84 * ApplicationInfo.ratio) - 2 * anchors.margins
+        width: GCStyle.bigButtonHeight
         z: 12
         anchors {
             top: parent.top
             left: parent.left
-            margins: 10 * ApplicationInfo.ratio
+            margins: GCStyle.baseMargins
+
         }
         onClicked: Activity.playWord(goodWord.voice)
         Behavior on opacity { PropertyAnimation { duration: 200 } }
@@ -274,6 +252,8 @@ Item {
 
     Score {
         id: score
+        anchors.bottom: undefined
+        y: okButton.y + okButton.height + GCStyle.baseMargins * 3
     }
 
     VirtualKeyboard {

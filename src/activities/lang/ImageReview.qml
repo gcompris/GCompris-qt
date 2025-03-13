@@ -21,7 +21,7 @@ Item {
     id: imageReview
     anchors.fill: parent
 
-    property alias category: categoryText.text
+    property alias categoryText: categoryTextPanel.textItem
     property int wordListIndex // This is the current sub list of words
     property var word: rootItem.opacity == 1 ? items.wordList[wordListIndex][score.currentSubLevel - 1] : undefined
     // miniGames is list of miniGames
@@ -63,7 +63,7 @@ Item {
         focus = false
         rootItem.opacity = 0
         wordImage.changeSource('')
-        wordText.changeText('')
+        wordTextPanel.changeText('')
         repeatItem.visible = false
     }
 
@@ -77,7 +77,7 @@ Item {
                 repeatItem.visible = false
             }
             wordImage.changeSource(word.image)
-            wordText.changeText(word.translatedTxt)
+            wordTextPanel.changeText(word.translatedTxt)
         }
     }
 
@@ -148,45 +148,31 @@ Item {
     Item {
         id: rootItem
         anchors.fill: parent
+        anchors.margins: GCStyle.baseMargins
         opacity: 0
         Behavior on opacity { PropertyAnimation { duration: 200 } }
 
-        Rectangle {
-            id: categoryTextbg
-            parent: rootItem
-            width: Math.min(imageFrame.width + 8, imageBg.width * 1.5)
-            height: 42 * ApplicationInfo.ratio
-            color: "#AAFFFFFF"
-            radius: 16
-            anchors {
-                horizontalCenter: parent.horizontalCenter
-                top: rootItem.top
-                topMargin: 4 * ApplicationInfo.ratio
-            }
-
-            GCText {
-                id: categoryText
-                fontSizeMode: Text.Fit
-                fontSize: mediumSize
-                font.weight: Font.DemiBold
-                width: parent.width - 8
-                height: parent.height - 8
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                color: "#373737"
-                anchors.centerIn: parent
-            }
+        GCTextPanel {
+            id: categoryTextPanel
+            panelWidth: parent.width - 4 * GCStyle.baseMargins - 2 * GCStyle.bigButtonHeight
+            panelHeight: Math.min(GCStyle.bigButtonHeight, parent.height * 0.15)
+            fixedHeight: true
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: parent.top
+            color: "#aaffffff"
+            border.width: 0
+            textItem.color: GCStyle.darkText
         }
 
         Item {
             id: imageFrame
-            parent: rootItem
-            width: (parent.width - previousWordButton.width * 2) * 0.8
-            height: (parent.height - categoryTextbg.height - wordTextbg.height - bar.height * 1.1) * 0.8
+            width: Math.min(categoryTextPanel.panelWidth,
+                            parent.height - categoryTextPanel.height - wordTextPanel.height - bar.height * 1.2 - 2 * GCStyle.baseMargins)
+            height: width
             anchors {
                 horizontalCenter: parent.horizontalCenter
-                top: categoryTextbg.bottom
-                margins: 10 * ApplicationInfo.ratio
+                top: categoryTextPanel.bottom
+                margins: GCStyle.baseMargins
             }
             z: 11
 
@@ -196,15 +182,15 @@ Item {
                 anchors.centerIn: parent
                 width: Math.min(parent.width, parent.height)
                 height: width
-                radius: width * 0.1
-                border.color: "#373737"
-                border.width: ApplicationInfo.ratio
+                radius: GCStyle.baseMargins
+                border.color: GCStyle.darkBorder
+                border.width: GCStyle.thinnestBorder
             }
 
             Image {
                 id: wordImage
                 // Images are not svg
-                width: imageBg.height * 0.9
+                width: imageBg.width - 2 * GCStyle.baseMargins
                 height: width
                 anchors.centerIn: parent
 
@@ -247,15 +233,17 @@ Item {
             anchors.left: rootItem.left
             anchors.top: imageFrame.top
             anchors.bottom: imageFrame.bottom
-            width: (rootItem.width - imageBg.width) * 0.5
+            anchors.right: imageFrame.left
+            anchors.rightMargin: GCStyle.baseMargins
 
             Image {
                 id: previousWordButton
                 source: "qrc:/gcompris/src/core/resource/bar_previous.svg";
-                width: 36 * ApplicationInfo.ratio
+                width: GCStyle.smallButtonHeight
                 sourceSize.width: width
                 visible: score.currentSubLevel > 1 ? true : false
-                anchors.centerIn: parent
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.right: parent.right
 
                 MouseArea {
                     anchors.centerIn: parent
@@ -272,14 +260,16 @@ Item {
             anchors.right: rootItem.right
             anchors.top: imageFrame.top
             anchors.bottom: imageFrame.bottom
-            width: previousButtonArea.width
+            anchors.left: imageFrame.right
+            anchors.leftMargin: GCStyle.baseMargins
 
             Image {
                 id: nextWordButton
                 source: "qrc:/gcompris/src/core/resource/bar_next.svg";
                 width: previousWordButton.width
                 sourceSize.width: width
-                anchors.centerIn: parent
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.left: parent.left
 
                 MouseArea {
                     anchors.centerIn: parent
@@ -291,31 +281,26 @@ Item {
             }
         }
 
-        Rectangle {
-            id: wordTextbg
-            parent: rootItem
-            width: Math.min(imageFrame.width + 8, imageBg.width * 2)
-            height: 64 * ApplicationInfo.ratio
-            color: "#AAFFFFFF"
-            radius: 16
-            anchors {
-                horizontalCenter: parent.horizontalCenter
-                top: imageFrame.bottom
-                margins: 10 * ApplicationInfo.ratio
-            }
+        Item {
+            id: wordTextArea
+            anchors.top: imageFrame.bottom
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: bar.height * 1.2
 
-            GCText {
-                id: wordText
-                text: ""
-                fontSizeMode: Text.Fit
-                fontSize: largeSize
-                font.weight: Font.DemiBold
-                width: parent.width - 8
-                height: parent.height - 8
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                anchors.centerIn: parent
-                color: "#373737"
+
+            GCTextPanel {
+                id: wordTextPanel
+                panelWidth: parent.width
+                panelHeight: 64 * ApplicationInfo.ratio
+                fixedHeight: true
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.top: parent.top
+                anchors.topMargin: GCStyle.baseMargins
+                color: "#aaffffff"
+                border.width: 0
+                textItem.color: GCStyle.darkText
 
                 property string nextWord
                 function changeText(nextWord_: string) {
@@ -326,18 +311,16 @@ Item {
                 SequentialAnimation {
                     id: animWord
                     PropertyAnimation {
-                        target: wordText
+                        target: wordTextPanel
                         property: "opacity"
                         to: 0
                         duration: 100
                     }
-                    PropertyAction {
-                        target: wordText
-                        property: "text"
-                        value: wordText.nextWord
+                    ScriptAction {
+                        script: wordTextPanel.textItem.text = wordTextPanel.nextWord
                     }
                     PropertyAnimation {
-                        target: wordText
+                        target: wordTextPanel
                         property: "opacity"
                         to: 1
                         duration: 100
@@ -350,12 +333,11 @@ Item {
             id: repeatItem
             parent: rootItem
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
-            width: Math.min(categoryTextbg.x, 84 * ApplicationInfo.ratio) - 2 * anchors.margins
+            width: GCStyle.bigButtonHeight
             z: 12
             anchors {
                 top: parent.top
                 left: parent.left
-                margins: 10 * ApplicationInfo.ratio
             }
             onClicked: Activity.playWord(imageReview.word.voice)
             Behavior on opacity { PropertyAnimation { duration: 200 } }
@@ -369,8 +351,6 @@ Item {
     }
     Loader {
         id: miniGameLoader
-        width: parent.width
-        height: parent.height
         anchors.fill: parent
         asynchronous: false
     }
