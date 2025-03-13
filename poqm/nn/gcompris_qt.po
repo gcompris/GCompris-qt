@@ -3605,14 +3605,14 @@ msgstr ""
 "rekkjefølgje, slik at Tux kan reisa fram og tilbake gjennom systemet."
 
 # Må vera lik (starten på) tilsvarande tekst i «gcompris_voices.po».
-#: activities/canal_lock/CanalLock.qml:74
+#: activities/canal_lock/CanalLock.qml:73
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
 "the different types of water locks available."
 msgstr "Du må hjelpa Tux gjennom kanalslusa for å henta tømmerstokkar."
 
-#: activities/canal_lock/CanalLock.qml:76
+#: activities/canal_lock/CanalLock.qml:75
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3622,7 +3622,7 @@ msgstr ""
 "Dei loddrette firkantane er sluseportar, som du kan trykkja på for å opna "
 "eller stengja. Men du kan ikkje betena to like sluseportar samtidig."
 
-#: activities/canal_lock/CanalLock.qml:78
+#: activities/canal_lock/CanalLock.qml:77
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -15194,7 +15194,7 @@ msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
 msgstr "Tabulator: Byt mellom tal og operatorar"
 
-#: activities/guess24/Guess24.qml:130
+#: activities/guess24/Guess24.qml:123
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr "Bruk dei fire tala og operatorane til å komma fram til svaret 24."
@@ -15279,7 +15279,7 @@ msgid ""
 msgstr ""
 "Dra tala og operatorane til dei farge felta, slik at sluttsvaret vert rett."
 
-#: activities/guesscount/Admin.qml:35
+#: activities/guesscount/Admin.qml:34
 #, qt-format
 msgctxt "Admin|"
 msgid "Level %1"
@@ -15295,7 +15295,7 @@ msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "Svaret er ikkje eit heiltal."
 
-#: activities/guesscount/Guesscount.qml:155
+#: activities/guesscount/Guesscount.qml:151
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -15493,12 +15493,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Forsøk: %1"
 
-#: activities/hangman/Hangman.qml:410
+#: activities/hangman/Hangman.qml:369
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Me har dessverre ikkje ei omsetjing for språket ditt enno."
 
-#: activities/hangman/Hangman.qml:411
+#: activities/hangman/Hangman.qml:370
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -15508,7 +15508,7 @@ msgstr ""
 "GCompris er utvikla av KDE-fellesskapet. Du kan setja om GCompris til eit "
 "anna språk ved å verta med i ei omsetjingsgruppe på <a href=\"%2\">%2</a>."
 
-#: activities/hangman/Hangman.qml:413
+#: activities/hangman/Hangman.qml:372
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "

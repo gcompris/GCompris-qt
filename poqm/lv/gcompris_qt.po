@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2024 Toms Trasuns <toms.trasuns@posteo.net>
+# SPDX-FileCopyrightText: 2024, 2025 Toms Trasuns <toms.trasuns@posteo.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-12-16 16:48+0200\n"
+"PO-Revision-Date: 2025-03-11 19:32+0200\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
@@ -13,7 +13,7 @@ msgstr ""
 "2);\n"
 "X-Language: lv\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 24.08.3\n"
+"X-Generator: Lokalize 24.12.2\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -3575,7 +3575,7 @@ msgstr ""
 "Tavs uzdevums ir vadīt kanāla slūžas. Atver vārtus un slūžas pareizā secībā, "
 "lai Tukss var izbraukt cauri slūžām abos virzienos."
 
-#: activities/canal_lock/CanalLock.qml:74
+#: activities/canal_lock/CanalLock.qml:73
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3584,7 +3584,7 @@ msgstr ""
 "Tavs mērķis ir vadīt Tuksu pāri kanāla slūžām pēc malkas, izmantojot dažāda "
 "veida ūdens slūžas."
 
-#: activities/canal_lock/CanalLock.qml:76
+#: activities/canal_lock/CanalLock.qml:75
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3594,7 +3594,7 @@ msgstr ""
 "Vertikālās joslas ir slūžas. Tās vari vadīt, uz tām spiežot. Vienlaicīgi "
 "nevari darbināt divas viena veida slūžas."
 
-#: activities/canal_lock/CanalLock.qml:78
+#: activities/canal_lock/CanalLock.qml:77
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -5854,12 +5854,9 @@ msgstr "Digitālā elektrība"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "Izveido un simulē digitālo loģisko shēmu"
+msgstr "Izveido un simulē digitālo loģisko shēmu."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -8268,7 +8265,7 @@ msgstr "Spied uz norādītās piramīdas atrašanās vietas."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "Aizliegtā pilsēta"
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8283,12 +8280,21 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
+"Aizliegtā pilsēta atrodas Pekinā, Ķīnā. Tā gandrīz 500 gadu, sākot no Minu "
+"dinastijas (1368—1644) līdz Cjinu dinastijai (1644—1912) kalpoja kā Ķīnas "
+"imperatoru pils komplekss un kādreizējais tautas politiskais centrs. Šis "
+"arhitektūras meistardarbs ir celts laikposmā no 1406. līdz 1420. gadam. "
+"Aizliegtās pilsētas izmērs ir 720 000 m2, tajā atrodas 980 labi saglabājušos "
+"celtņu un kopā ir 8700 istabu, kurās redzams ķīniešu tradicionālais piļu "
+"dizains. Aizliegtā pilsēta, ko aptver aizsarggrāvis un milzīgs mūris, ir "
+"impērijas varas un nepieejamības simbols — senos laikos parastiem cilvēkiem "
+"tajā ienākt bija aizliegts."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "Lešaņas lielā Buda"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8303,15 +8309,22 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
+"Lešaņas lielā Buda atrodas Šičuaņas provincē un ir milzīga klintī izkalta "
+"statuja Miņas, Dadu un Cjuidzjina upju sateces vietā. Tā ir 71 metru augsta "
+"un līdz ar to augstākā statuja pasaulē no statujām, kas ir celtas pirms "
+"modernajiem laikiem, kā arī ir iekļauta UNESCO Pasaules mantojuma sarakstā. "
+"Lešaņas lielā Buda ir celta Taņu dinastijas (713—803 m.ē.) laikā un attēlo "
+"Maitreju — nākotnes Budu. Tai esot jānomierina nemierīgi ūdeņi, kas apdraud "
+"vietējo laivu satiksmi. Statuja ir ļoti pārdomāti veidota un satur slēptu "
+"ūdens novadīšanas sistēmu, lai novērstu tās eroziju. Budas mierīgā sejas "
+"izteiksme un tās amatnieku prasmīgais darbs šo statuju padara par garīgu un "
+"māksliniecisku sasniegumu."
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Maisūru pils"
+msgstr "Potalas pils"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8326,12 +8339,22 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
+"Potalas pils slejas Lhasas sarkanajā kalnā Tibetā. Tā ir Tibetas kultūras "
+"ikona un ir ievietota UNESCO Pasaules mantojuma sarakstā. Sākotnēji tā ir "
+"celta septītajā gadsimtā, bet vēlāk, 17. gadsimtā, tā ir pārbūvēta. Potalas "
+"pils agrāk kalpoja par dalailamu ziemas rezidenci un Tibetas pārvaldības "
+"centru. Šī celtne ir 13 stāvu augsta un tajā ir vairāk nekā 1000 istabu, tā "
+"apvieno sarežģīto tibetiešu arhitektūru, spilgtus sienu gleznojumus un "
+"svētas relikvijas. Potalas pils ir sadalīta Baltajā pilī, kurā atrodas "
+"administratīvās telpas, un Sarkanajā pilī, kas ir paredzēta reliģiskai "
+"pētniecībai un lūgšanām. Potalas pils ir Tibetas garīgais un vēsturiskais "
+"mantojums."
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "Terakotas armija"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8343,12 +8366,18 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
+"Terakotas armija ir tūkstošiem patiesa lieluma māla karavīru, zirgu un "
+"kaujas ratu kolekcija, kas aprakta kopā ar Ķīnas pirmo imperatoru Ciņu "
+"Šihuandi, lai viņu pavadītu pēcnāves dzīvē. To 1974. gadā atrada pie "
+"Sjiaņas. Māla figūras tika izveidotas aptuveni 210 gadā pirms mūsu ēras un "
+"pārsteidz ar savu detalizētību — katrs karavīrs ir unikāls un tā izskats "
+"reprezentē savu dienesta pakāpi un lomu ķīniešu armijā."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr ""
+msgstr "Saules un Mēness stūpas"
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8363,15 +8392,21 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
+"Saules un Mēness pagodas atrodas Guiliņas pilsētā Ķīnā. Tās ir ikoniski "
+"dvīņu torņi, kas simbolizē pilsētas kulturālo un garīgo mantojumu. Šīs "
+"celtnes uzbūvēja Tanu dinastijas laikā, bet 20. gadsimtā tās tika "
+"rekonstruētas un paceļas pāri Šaņhu ezeram. Saules pagoda ir 41 metru gara "
+"bronzas celtne — augstākā šāda veida celtne pasaulē, bet Mēness pagoda ir 35 "
+"metrus augsta un būvēta no glazētām flīzēm. Šīs pagodas reprezentē jiņ un "
+"jaņ harmoniju un ir savienotas ar zem ūdens esošu tuneli. Mūsdienās abas "
+"tūristu iecienītās celtnes naktī izgaismo, izrādot ķīniešu tradicionālo "
+"arhitektūru un moderno atjautību."
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Eifeļa tornis"
+msgstr "Sargtorņi"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8386,19 +8421,22 @@ msgid ""
 "UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
 "towers remain, offering insight into this unique architectural heritage."
 msgstr ""
+"Sargtorņi, kas atrodas Kaipinā, Guandunas provincē Ķīnā, ir nocietinātas "
+"vairāku stāvu celtnes, kas būvētas 19. gadsimta beigās un 20. gadsimta "
+"sākumā aizsardzībai pret bandītiem un plūdiem. Šie torņi apvieno Eiropiešu "
+"arhitektūras stilus, piemēram, romāniku un baroku, ar ķīniešu "
+"tradicionālajiem elementiem, atspoguļojot ķīniešu emigrantu bagātību un "
+"ietekmi. Šie torņi ir būvēti no dzelzsbetona, simbolizējot Ķīnas lauku "
+"kulturālo un ekonomisko pāreju. 2007. gadā atlikušie 1800 torņi no "
+"sākotnējiem 3000  tika iekļauti UNESCO Pasaules mantojuma sarakstā, "
+"piedāvājot ieskatu unikālajā arhitektūras mantojumā."
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Indijas pieminekļi"
+msgstr "Ķīnas pieminekļi"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Spied uz dotā pieminekļa atrašanās vietas."
@@ -8407,7 +8445,7 @@ msgstr "Spied uz dotā pieminekļa atrašanās vietas."
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "Panteons"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8424,12 +8462,25 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
+"Panteons Romā, Itālijā, ir slavens antīko laiku templis, ko mūsu ēras 126. "
+"gadā imperatora Adriāna valdīšanas laikā cēla romieši vietā, kurā iepriekš "
+"templi bija sācis celt imperators Markuss Agripa. Šī celtne ir slavena ar "
+"savas arhitektūras ģenialitāti, piemēram, milzīgo kupolveidīgo jumtu ar "
+"centrālo gaismas atveri, kas simbolizē debesis un ļauj dabīgajai gaismai "
+"izgaismot ēkas iekšpusi. Sākotnēji šis templis bija veltīts visiem romiešu "
+"dieviem, bet vēlāk, mūsu ēras 609. gadā, to tas tika pārveidots par "
+"kristiešu baznīcu un nosaukts par Svētās Marijas un mocekļu baziliku (Santa "
+"Maria ad Martyres). Celtnes kupols ir lielākais kupols pasaulē, kas nav "
+"veidots no dzelzsbetona, demonstrējot tā veidotāju inženierprasmes radīt "
+"simetriju, kas ir iedvesmojusi arhitektus gadsimtiem ilgi. Panteona "
+"harmoniskās proporcijas un vēsturiskā nozīme to padara par mūžīgu klasiskās "
+"arhitektūras meistardarbu."
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "Milānas Doms"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8444,15 +8495,22 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
+"Milānas Doms jeb Milānas katedrāle ir slavens gotikas meistardarbs, kas "
+"atrodas Milānas centrā Itālijā. Doma būvdarbi notika gandrīz sešus "
+"gadsimtus. Tā ir viena no lielākajām katedrālēm pasaulē un Milānas mākslas "
+"un kultūras mantojuma simbols. Katedrāles sarežģītā fasāde ir rotāta ar "
+"neskaitāmām statujām, smailēm un gargulām, atspoguļojot gotiskās "
+"arhitektūras grandiozumu. Apmeklētāji var izpētīt tās elpu aizraujošo "
+"interjeru ar skaistiem iekrāsoties stikla logiem un izsmalcinātām marmora "
+"detaļām vai arī pacelties uz jumta un redzēt brīnišķīgu pilsētas un netālu "
+"esošo Alpu kalnu skatu. Doms ir testaments Itālijas bagātajai vēsturei un "
+"arhitektūras sasniegumiem."
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Vormsas katedrāle"
+msgstr "Florences katedrāle"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8468,15 +8526,22 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
+"Florences katedrāle, kas itāļu valodā saucas „Cattedrale di Santa Maria del "
+"Fiore“ ir pazīstams gotiskās un renesanses arhitektūras meistardarbs un "
+"atrodas Florencē, Itālijā. Katedrāles būvniecība tika pabeigta 1436. gadā. "
+"Tā ir slavena ar savu milzīgo un sarkanām flīzēm klāto kupolu, ko "
+"projektējis Filipo Brunelleski. Florences katedrāle ir kļuvusi par pilsētas "
+"simbolu. Celtnes izsmalcinātā marmora fasāde, kas tai tika pievienota "
+"19. gadsimtā, papildina bagātīgi dekorēto interjeru un tās mākslinieciskos "
+"dārgumus. Tā kopā ar Džoto zvanu torni un Svētā Jāņa baptistēriju veido "
+"UNESCO pasaules mantojuma vietu, lai ar savu vēsturisko, kulturālo un "
+"arhitektūras nozīmi katru gadu pie sevis pulcētu tūkstošiem apmeklētāju."
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Hanojas tornis"
+msgstr "Pizas tornis"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8491,12 +8556,21 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
+"Pizas tornis atrodas Itālijas pilsētā Pizā un ir visā pasaulē pazīstams "
+"arhitektūras brīnums. Brīvi stāvošā zvanu torņa būvniecība notika katedrāles "
+"vajadzībām, bet tas slavens kļuva, jo nestabilās augsnes dēļ nejauši sāka "
+"svērties uz vieniem sāniem. Šī torņa celtniecība sākās 1173. gadā un ilga "
+"gandrīz 200 gadu — šajā laikā notika centieni stabilizēt torņa slīpumu. "
+"Pizas tornis ir 56 metrus augsts, bet tā romānikas stila dizains ar "
+"izgrebtām kolonnām un arkām ietver astoņus stāvus, kuru starpā ir zvanu "
+"tornis. Tas ir atzīts par UNESCO Pasaules mantojuma objektu un kļuvis par "
+"cilvēku nepadošanās un atjautības simbolu."
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr ""
+msgstr "Svētā Marka bazilika"
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -8512,12 +8586,22 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
+"Venēcijā, Itālijā, esošā Svētā Marka bazilika ir ievērojams bizantiskās "
+"arhitektūras meistardarbs un viens no pilsētas slavenākajiem objektiem. "
+"Bazilika sākotnēji tika būvēta 828. gadā, lai glabātu Evaņģēlista Marka "
+"relikvijas, bet pašreizējā formā tika pārbūvēta 11. gadsimtā. Tā ir "
+"pazīstama ar savu pārbagāto izskatu, kas sevī apvieno Austrumu un Rietumu "
+"ietekmi, par ko liecina tās pieci kupoli, greznās mozaīkas un ornamentālā "
+"fasāde ar statujām un kalumiem. Tās interjers ir bagātīgi dekorēts ar zelta "
+"mozaīkām un marmora grīdām, atspoguļojot Venēcijas Republikas bagātību un "
+"varenību. Bazilika atrodas blakus Svētā Marka laukumam un veido daļu no "
+"Venēcijas vēsturiskā, kulturālā un reliģiskā mantojuma."
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr ""
+msgstr "Pompeji"
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -8533,31 +8617,32 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
+"Pompeji bija Senās Romas pilsēta, kas atradās netālu no mūsdienu Neapoles, "
+"Itālijā. Šī pilsēta ievērību guva pēc tam, kad tika apraksta Vezuva vulkāna "
+"izvirdumā mūsu ēras 79. gadā. Izvirduma laikā pilsēta saskārās ar nāvējošu "
+"pelnu, pumeka un piroklasitsko materiālu plūsmu, kas apklāja pilsētu līdz ar "
+"tās iedzīvotājiem, tādējādi neticami precīzi saglabājot tā laika ēkas, "
+"objektus un pat cilvēku atliekas. Pompeju arheoloģiskie izrakumi ir snieguši "
+"nenovērtējamu ieskatu romiešu ikdienas dzīvē, arhitektūrā un sabiedrībā, "
+"atklājot pilsētu ar rūpīgi izplānotām ielām, mājām, publiskajām pirtīm un "
+"tempļiem. Šī vieta ir iekļauta UNESCO Pasaules mantojuma sarakstā un ir "
+"viens no visu laiku svarīgākajiem arhitektūras atklājumiem."
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Indijas pieminekļi"
+msgstr "Itālijas pieminekļi"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Spied uz dotā pieminekļa atrašanās vietas."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Jaukts reģistrs"
+msgstr "Himedži pils"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -8570,12 +8655,19 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
+"Himedži pils ir labākais mūsdienās vēl apskatāmais 17. gadsimta japāņu piļu "
+"arhitektūras paraugs. Šo pils kompleksu veido 83 ēkas ar attīstītu "
+"aizsardzības sistēmu un atjautīgām aizsardzības iekārtām, kas nāk vēl no "
+"šogunu laikiem. Šī pils ir koka konstrukcijas meistardarbs un sevī apvieno "
+"arhitektonisku pievilcību un funkcionalitāti. Tās eleganto ārieni vieno "
+"smalkās attiecības starp pils māla sienām ar balto apmetumu un daudzajiem "
+"jumta slāņiem."
 
 #: activities/explore_monuments/resource/board/board9.qml:28
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr ""
+msgstr "Hirošimas miera memoriāls"
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -8591,12 +8683,22 @@ msgid ""
 "a solemn space for reflection, honoring the lives lost and advocating for "
 "global peace."
 msgstr ""
+"Hirošimas miera memoriāls ir atgādinājums par karu izraisīto postu un miera "
+"simbols. Tas atrodas Hirošimā, Japānā, un ir veidots kā atceres vieta "
+"1945. gada 6. augusta atombumbas upuriem. Parkā atrodas vairāki pieminekļi, "
+"starp kuriem ir pazīstamais Bumbas kupols — kādreizēja valdības ēka, kas "
+"šobrīd ir iekļauta UNESCO Pasaules mantojuma sarakstā. Šajā parkā atrodas "
+"arī Hirošimas miera memoriāla muzejs, kura mērķis ir tā apmeklētājus "
+"izglītot par notikumiem ap pilsētas bombardēšanu un informēt par miera, "
+"vardarbības izbeigšanas un atomieroču iznīcināšanas nozīmi. Šī vieta kalpo "
+"par nopietnu pārdomu vietu, kurā izteikt cieņu zaudētajām dzīvībām un "
+"atbalstīt mieru visā pasaulē."
 
 #: activities/explore_monuments/resource/board/board9.qml:39
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr ""
+msgstr "Fudži Arakuro deklarācijas svētnīca"
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -8612,12 +8714,22 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
+"Šī svētnīca tika izveidota 705. gadā, lai svētītu šīs vietas dievību. Pēc "
+"tam, kad 807. gadā notika Fudži kalna izvirdums, imperators uz šo svētnīcu "
+"nosūtīja īpašu vēstnieku, lai ar rituāla palīdzību izvirdumu apturētu. "
+"Leģenda vēsta, ka Karojošu valstu periodā, kad Takeda Nobutora, slavenā "
+"militārista Takedas Šingena tēvs, karoja ar Hodžo klanu, viņš šajā vietā "
+"esot izveidojis apmetni un lūdzies pēc uzvaras, kas to arī esot nesusi. Pēc "
+"tam Nobutura šai vietai esot veltījis savu zobenu. Mūsdienās tuvu un tālu "
+"dzīvojošie apmeklē šo svētnīcu, lai aizsargātos no ļaunuma, lūgtu laimi "
+"ģimenei un vieglas dzemdības. Pavasarī šajā vietā uzzied ķiršu koki, kas "
+"aicina daudzu cilvēkus priecāties par skaisto Fudži kalna skatu."
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr ""
+msgstr "Šuri pils Okinavā"
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -8633,19 +8745,24 @@ msgid ""
 "much of the castle was lost in a fire in 2019, but efforts to restore it are "
 "ongoing, reflecting its enduring importance to Okinawa's heritage."
 msgstr ""
+"Šuri pils atrodas Nahā, Okinavā, Japānā un ir iekļauta UNESCO Pasaules "
+"mantojuma sarakstā kā Rjūkjū Karalistes bagātās kultūras simbols. Pils "
+"pirmsākumi ir meklējumi 14. gadsimtā, kad tā daudzus gadsimtus kalpoja par "
+"karalistes politisko, ekonomisko un kulturālo centru. Šuri pils ar "
+"sarkanajām struktūrām un krāšņajām dekorācijām ir pazīstama ar to, ka "
+"apvieno ķīniešu un japāņu arhitektūras stilus un atrodas iespaidīgā vietā "
+"kalna smailē. Lai gan celtni Otrā pasaules kara laikā iznīcināja, tā ir "
+"rūpīgi rekonstruēta un kļuvusi par tūristu iecienītu vietu. 2019. gadsimtā "
+"pils saskārās ar vēl vienu traģēdiju, kad lielu tās daļu izpostīja "
+"ugunsgrēks, bet arī šoreiz tiek pieliktas lielas pūles, lai to atjaunotu, tā "
+"atspoguļojot Šuri pils lielo nozīmi Okinavas mantojumā."
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Francijas pieminekļi"
+msgstr "Japānas pieminekļi"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Spied uz dotā pieminekļa atrašanās vietas."
@@ -15155,7 +15272,7 @@ msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
 msgstr "„Tab“ taustiņš: pārslēdzas starp skaitļiem un operatoriem"
 
-#: activities/guess24/Guess24.qml:130
+#: activities/guess24/Guess24.qml:123
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr "Izmanto četrus skaitļus ar dotajiem operatoriem, lai atrastu 24."
@@ -15239,7 +15356,7 @@ msgstr ""
 "Velc skaitļus un operatorus uz lauciņiem, lai iegūtu skaitli, kas norādīts "
 "uzdevumā."
 
-#: activities/guesscount/Admin.qml:35
+#: activities/guesscount/Admin.qml:34
 #, qt-format
 msgctxt "Admin|"
 msgid "Level %1"
@@ -15255,7 +15372,7 @@ msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "rezultāts nav vesels skaitlis"
 
-#: activities/guesscount/Guesscount.qml:155
+#: activities/guesscount/Guesscount.qml:151
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -15446,12 +15563,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Mēģināts: %1"
 
-#: activities/hangman/Hangman.qml:410
+#: activities/hangman/Hangman.qml:369
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Diemžēl tavai valodai vēl nav tulkojuma."
 
-#: activities/hangman/Hangman.qml:411
+#: activities/hangman/Hangman.qml:370
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -15461,7 +15578,7 @@ msgstr ""
 "„GCompris“ izstrādā KDE kopiena. Vari palīdzēt tulkot „GCompris“, "
 "pievienojoties tulkotāju komandai <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:413
+#: activities/hangman/Hangman.qml:372
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -17386,12 +17503,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "Burvju cepure"
+msgstr "Burvju cepure (atņemšana)"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -17483,12 +17597,9 @@ msgstr "%1x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "Burvju cepure"
+msgstr "Burvju cepure (saskaitīšana)"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -27054,12 +27165,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Ieraksti krītošo vārdu pirms tas sasniedz zemi."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Sanskrit"
-msgstr "Pievienots latviešu valodas tulkojums"
+msgstr "Pievienots sanskrita valodas tulkojums"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:40 core/ChangeLog.qml:46
 #: core/ChangeLog.qml:51 core/ChangeLog.qml:57 core/ChangeLog.qml:86
@@ -27084,18 +27192,13 @@ msgid "Many bug fixes"
 msgstr "Daudzi kļūdu labojumi"
 
 #: core/ChangeLog.qml:34
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "Automatic application of new language when changing in the menu (no need "
-#| "to restart GCompris)"
 msgctxt "ChangeLog|"
 msgid ""
 "Automatic application of new language when changing it in the menu (no need "
 "to restart GCompris)"
 msgstr ""
-"Automātiska jaunas valodas pielietošana, mainot izvēlni (nav nepieciešamas "
-"pārstartēt „GCompris“)"
+"Automātiska jaunas valodas pielietošana, to nomainot izvēlnē (nav "
+"nepieciešams pārstartēt „GCompris“)"
 
 #: core/ChangeLog.qml:35
 msgctxt "ChangeLog|"
