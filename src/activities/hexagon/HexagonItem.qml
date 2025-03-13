@@ -25,7 +25,7 @@ Item {
     property int nbx
     property int nby
     // Warning testing parent here, just to avoid an error at deletion time
-    property double r: parent ? Math.min(parent.width / nbx / 2, (parent.height - 10) / nby / 2) : 0
+    property double r: parent ? Math.min(parent.width / nbx / 2, (parent.height - GCStyle.halfMargins) / nby / 2) : 0
     property double offsetX: parent ? (parent.width % (width * nbx)) / 2 : 0
     property double offsetY: parent ? (parent.height % (height * nby)) / 2 : 0
     x: (iy % 2 ? width * ix + width / 2 : width * ix) + offsetX
