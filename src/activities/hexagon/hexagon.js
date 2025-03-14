@@ -67,10 +67,6 @@ function previousLevel() {
     initLevel();
 }
 
-function strawberryFound() {
-    items.bonus.good("flower")
-}
-
 function getDistance(ix, iy) {
     return Math.sqrt(Math.pow((ix - strawBerryX), 2) + Math.pow((iy - strawBerryY), 2))
 }

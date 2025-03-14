@@ -8,6 +8,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
 
 import QtQuick 2.12
 import QtQuick.Shapes 1.5
@@ -46,7 +47,7 @@ ActivityBase {
             property bool inputLocked: true
         }
 
-        onStart: Activity.start(main, items)
+        onStart: Activity.start(activity, items)
         onStop: Activity.stop()
 
         function checkTouchPoint(touchPoints) {
@@ -57,7 +58,7 @@ ActivityBase {
                 var touch = touchPoints[i]
                 var block = rootItem.childAt(touch.x, touch.y)
                 if(block)
-                    block.touched()
+                    (block as HexagonItem).touched()
             }
         }
 
@@ -68,7 +69,7 @@ ActivityBase {
 
         MultiPointTouchArea {
             anchors.fill: parent
-            onPressed: (touchPoints) => checkTouchPoint(touchPoints)
+            onPressed: (touchPoints) => activityBackground.checkTouchPoint(touchPoints)
         }
 
         Shape {
@@ -91,18 +92,31 @@ ActivityBase {
             parent: rootItem
 
             HexagonItem {
+                required property int m_ix
+                required property int m_iy
+                required property int m_nbx
+                required property int m_nby
+                required property bool m_hasStrawberry
+
                 ix: m_ix
                 iy: m_iy
                 nbx: m_nbx
                 nby: m_nby
                 hasStrawberry: m_hasStrawberry
                 color: "#0099FF"
+                winSound: winSound
+                Component.onCompleted: cellFill.data.push(cellColor)
+
+                onStrawberryFound: {
+                    items.inputLocked = true
+                    bonus.good("flower")
+                }
             }
         }
 
         DialogHelp {
             id: dialogHelpLeftRight
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
@@ -110,11 +124,11 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
-                displayDialog(dialogHelpLeftRight)
+                activity.displayDialog(dialogHelpLeftRight)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: home()
+            onHomeClicked: activity.home()
         }
 
         Bonus {
