@@ -171,26 +171,29 @@ ActivityBase {
             color: "#40FFFFFF"
         }
 
+        Item {
+            id: layoutArea
+            anchors.fill: parent
+            anchors.margins: GCStyle.baseMargins
+            anchors.bottomMargin: bar.height * 1.2
+        }
+
         Rectangle {
             id: mapWrapper
             property double margin: GCStyle.baseMargins
-            property int barHeight: ApplicationSettings.isBarHidden ? margin : bar.height * 1.2
             property int columns: 1
             property int rows: 1
-            property double length: Math.min(activityBackground.height -
-                    mapWrapper.barHeight - mapWrapper.margin, activityBackground.width - mapWrapper.margin);
+            property double length: Math.min(layoutArea.width, layoutArea.height)
 
             color: "#E3DEDB"
-            width: length
-            height: length
-            anchors.top: activityBackground.top
-            anchors.topMargin: mapWrapper.margin
-            anchors.horizontalCenter: activityBackground.horizontalCenter
+            width: Math.min(layoutArea.width, layoutArea.height)
+            height: width
+            anchors.horizontalCenter: layoutArea.horizontalCenter
+            anchors.verticalCenter: layoutArea.verticalCenter
+            anchors.verticalCenterOffset: layoutArea.height < length + layoutArea.anchors.bottomMargin ?
+                0 : layoutArea.anchors.bottomMargin * 0.5
 
-            onWidthChanged: if (activity.inForeground && pageView.currentItem === activity)
-            resizeTimer.restart()
-
-            onHeightChanged: if (activity.inForeground && pageView.currentItem === activity)
+            onLengthChanged: if (activity.inForeground && pageView.currentItem === activity)
             resizeTimer.restart()
 
             transform: [
