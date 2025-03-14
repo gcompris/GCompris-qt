@@ -15647,12 +15647,12 @@ msgstr ""
 "dezhañdrezi. (mammenn: Wikipedia: http://en.wikipedia.org/wiki/"
 "Tower_of_hanoi)"
 
-#: activities/hanoi_real/HanoiReal.qml:75
+#: activities/hanoi_real/HanoiReal.qml:72
 msgctxt "HanoiReal|"
 msgid "Move the entire stack to the right peg, one disc at a time."
 msgstr "Diblas ar bern a-bezh war ar peul a-zehoù, ur gantenn war-lerc'h eben."
 
-#: activities/hanoi_real/HanoiReal.qml:76
+#: activities/hanoi_real/HanoiReal.qml:73
 msgctxt "HanoiReal|"
 msgid ""
 "Build the same tower in the empty area as the one you see on the right-hand "
@@ -16217,31 +16217,31 @@ msgstr ""
 "Biroù kleiz ha dehoù: el liveoù kentañ, mont a-gleiz pe a-zehoù; el liveoù "
 "uhel, treiñ an egorlestr."
 
-#: activities/land_safe/LandSafe.qml:585
+#: activities/land_safe/LandSafe.qml:582
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "Dour-tan: %1"
 
-#: activities/land_safe/LandSafe.qml:595
+#: activities/land_safe/LandSafe.qml:592
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "Uhelder: %1"
 
-#: activities/land_safe/LandSafe.qml:605
+#: activities/land_safe/LandSafe.qml:602
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "Tizh: %1"
 
-#: activities/land_safe/LandSafe.qml:616
+#: activities/land_safe/LandSafe.qml:613
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "Buanadur: %1"
 
-#: activities/land_safe/LandSafe.qml:650
+#: activities/land_safe/LandSafe.qml:647
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -16377,12 +16377,12 @@ msgctxt "ActivityInfo|"
 msgid "Tab: repeat the word"
 msgstr "Tab: adselaou ar ger"
 
-#: activities/lang/Lang.qml:136
+#: activities/lang/Lang.qml:143
 msgctxt "Lang|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Digarez, n'eo ket bet troet c'hoazh evit da yezh."
 
-#: activities/lang/Lang.qml:137
+#: activities/lang/Lang.qml:144
 #, qt-format
 msgctxt "Lang|"
 msgid ""
@@ -16392,7 +16392,7 @@ msgstr ""
 "Diorroet eo GCompris gant kumuniezh KDE. Troit GCompris en ur gemer perzh en "
 "ur strollad treiñ e <a href=\"%2\">%2</a>"
 
-#: activities/lang/Lang.qml:139
+#: activities/lang/Lang.qml:146
 msgctxt "Lang|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -16401,117 +16401,117 @@ msgstr ""
 "Lakaet hon eus an obererezh-mañ e saozneg, met dibab ur yezh all dre banell "
 "ar c'hefluniañ ma fell dit."
 
-#: activities/lang/Lang.qml:187 activities/lang/Lang.qml:188
+#: activities/lang/Lang.qml:194 activities/lang/Lang.qml:195
 msgctxt "Lang|"
 msgid "other"
 msgstr "all"
 
-#: activities/lang/Lang.qml:189
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "action"
 msgstr "oberioù"
 
-#: activities/lang/Lang.qml:189
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "adjective"
 msgstr "anvioù-gwan"
 
-#: activities/lang/Lang.qml:190
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "color"
 msgstr "livioù"
 
-#: activities/lang/Lang.qml:190
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "number"
 msgstr "niveroù"
 
-#: activities/lang/Lang.qml:191
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "people"
 msgstr "tud"
 
-#: activities/lang/Lang.qml:191
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "bodyparts"
 msgstr "lodennoù ar c'horf"
 
-#: activities/lang/Lang.qml:192
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "clothes"
 msgstr "dilhad"
 
-#: activities/lang/Lang.qml:192
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "emotion"
 msgstr "frommoù"
 
-#: activities/lang/Lang.qml:193
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "job"
 msgstr "micherioù"
 
-#: activities/lang/Lang.qml:193
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "sport"
 msgstr "sport"
 
-#: activities/lang/Lang.qml:194
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "nature"
 msgstr "natur"
 
-#: activities/lang/Lang.qml:194
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "animal"
 msgstr "loened"
 
-#: activities/lang/Lang.qml:195
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "fruit"
 msgstr "frouezh"
 
-#: activities/lang/Lang.qml:195
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "plant"
 msgstr "plant"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "vegetables"
 msgstr "legumaj"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "object"
 msgstr "traoù"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:204
 msgctxt "Lang|"
 msgid "construction"
 msgstr "savadurioù"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:205
 msgctxt "Lang|"
 msgid "furniture"
 msgstr "arrebeuri"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:205
 msgctxt "Lang|"
 msgid "houseware"
 msgstr "dafar an ti"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "tool"
 msgstr "ostilhoù"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "food"
 msgstr "boued"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:207
 msgctxt "Lang|"
 msgid "transport"
 msgstr "an treuzdougen"

@@ -15598,12 +15598,12 @@ msgstr ""
 "strategien. Det er ikkje klart om Lucas fann på legenda sjølv eller berre "
 "var inspirert av ho. (Kjelde: https://en.wikipedia.org/wiki/Tower_of_Hanoi)"
 
-#: activities/hanoi_real/HanoiReal.qml:75
+#: activities/hanoi_real/HanoiReal.qml:72
 msgctxt "HanoiReal|"
 msgid "Move the entire stack to the right peg, one disc at a time."
 msgstr "Flytt heile stabelen til pinnen til høgre, éi skive om gongen."
 
-#: activities/hanoi_real/HanoiReal.qml:76
+#: activities/hanoi_real/HanoiReal.qml:73
 msgctxt "HanoiReal|"
 msgid ""
 "Build the same tower in the empty area as the one you see on the right-hand "
@@ -16168,31 +16168,31 @@ msgstr ""
 "Pil venstre/høgre: Vassrett rørsle på dei første bretta og dreiing av "
 "romskipet på dei seinare"
 
-#: activities/land_safe/LandSafe.qml:585
+#: activities/land_safe/LandSafe.qml:582
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "Drivstoff: %1"
 
-#: activities/land_safe/LandSafe.qml:595
+#: activities/land_safe/LandSafe.qml:592
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "Høgd: %1"
 
-#: activities/land_safe/LandSafe.qml:605
+#: activities/land_safe/LandSafe.qml:602
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "Fart: %1"
 
-#: activities/land_safe/LandSafe.qml:616
+#: activities/land_safe/LandSafe.qml:613
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "Akselerasjon: %1"
 
-#: activities/land_safe/LandSafe.qml:650
+#: activities/land_safe/LandSafe.qml:647
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -16329,12 +16329,12 @@ msgctxt "ActivityInfo|"
 msgid "Tab: repeat the word"
 msgstr "Tabulator: Gjenta ordet"
 
-#: activities/lang/Lang.qml:136
+#: activities/lang/Lang.qml:143
 msgctxt "Lang|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Me har dessverre ikkje ei omsetjing for språket ditt enno."
 
-#: activities/lang/Lang.qml:137
+#: activities/lang/Lang.qml:144
 #, qt-format
 msgctxt "Lang|"
 msgid ""
@@ -16344,7 +16344,7 @@ msgstr ""
 "GCompris er utvikla av KDE-fellesskapet. Du kan setja om GCompris til eit "
 "anna språk ved å verta med i ei omsetjingsgruppe på <a href=\"%2\">%2</a>."
 
-#: activities/lang/Lang.qml:139
+#: activities/lang/Lang.qml:146
 msgctxt "Lang|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -16354,118 +16354,118 @@ msgstr ""
 "anna språk i programinnstillingane."
 
 # Ingen grunn til små bokstavar i desse kategorinamna. Og «Ymse» passar betre som kategorinamn enn «Anna».
-#: activities/lang/Lang.qml:187 activities/lang/Lang.qml:188
+#: activities/lang/Lang.qml:194 activities/lang/Lang.qml:195
 msgctxt "Lang|"
 msgid "other"
 msgstr "Ymse"
 
-#: activities/lang/Lang.qml:189
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "action"
 msgstr "Handlingar"
 
-#: activities/lang/Lang.qml:189
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "adjective"
 msgstr "Adjektiv"
 
-#: activities/lang/Lang.qml:190
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "color"
 msgstr "Fargar"
 
-#: activities/lang/Lang.qml:190
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "number"
 msgstr "Tal"
 
-#: activities/lang/Lang.qml:191
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "people"
 msgstr "Folk"
 
-#: activities/lang/Lang.qml:191
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "bodyparts"
 msgstr "Kroppsdelar"
 
-#: activities/lang/Lang.qml:192
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "clothes"
 msgstr "Klede"
 
-#: activities/lang/Lang.qml:192
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "emotion"
 msgstr "Kjensler"
 
-#: activities/lang/Lang.qml:193
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "job"
 msgstr "Arbeid"
 
-#: activities/lang/Lang.qml:193
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "sport"
 msgstr "Sport"
 
-#: activities/lang/Lang.qml:194
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "nature"
 msgstr "Natur"
 
-#: activities/lang/Lang.qml:194
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "animal"
 msgstr "Dyr"
 
-#: activities/lang/Lang.qml:195
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "fruit"
 msgstr "Frukt"
 
-#: activities/lang/Lang.qml:195
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "plant"
 msgstr "Planter"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "vegetables"
 msgstr "Grønsaker"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "object"
 msgstr "Gjenstandar"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:204
 msgctxt "Lang|"
 msgid "construction"
 msgstr "Byggjeverksemd"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:205
 msgctxt "Lang|"
 msgid "furniture"
 msgstr "Møblar"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:205
 msgctxt "Lang|"
 msgid "houseware"
 msgstr "Heim"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "tool"
 msgstr "Verktøy"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "food"
 msgstr "Mat"
 
 # Litt vanskeleg ord kanskje, men på plussida lærer ein eit nytt vanskeleg ord …
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:207
 msgctxt "Lang|"
 msgid "transport"
 msgstr "Transportmiddel"

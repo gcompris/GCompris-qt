@@ -14919,12 +14919,12 @@ msgid ""
 "Tower_of_hanoi)"
 msgstr ""
 
-#: activities/hanoi_real/HanoiReal.qml:75
+#: activities/hanoi_real/HanoiReal.qml:72
 msgctxt "HanoiReal|"
 msgid "Move the entire stack to the right peg, one disc at a time."
 msgstr ""
 
-#: activities/hanoi_real/HanoiReal.qml:76
+#: activities/hanoi_real/HanoiReal.qml:73
 msgctxt "HanoiReal|"
 msgid ""
 "Build the same tower in the empty area as the one you see on the right-hand "
@@ -15473,31 +15473,31 @@ msgid ""
 "rotate the spaceship"
 msgstr ""
 
-#: activities/land_safe/LandSafe.qml:585
+#: activities/land_safe/LandSafe.qml:582
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr ""
 
-#: activities/land_safe/LandSafe.qml:595
+#: activities/land_safe/LandSafe.qml:592
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr ""
 
-#: activities/land_safe/LandSafe.qml:605
+#: activities/land_safe/LandSafe.qml:602
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr ""
 
-#: activities/land_safe/LandSafe.qml:616
+#: activities/land_safe/LandSafe.qml:613
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr ""
 
-#: activities/land_safe/LandSafe.qml:650
+#: activities/land_safe/LandSafe.qml:647
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -15624,12 +15624,12 @@ msgctxt "ActivityInfo|"
 msgid "Tab: repeat the word"
 msgstr "دکمه Tab: تکرار کلمه"
 
-#: activities/lang/Lang.qml:136
+#: activities/lang/Lang.qml:143
 msgctxt "Lang|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "ما متاسفیم، ما هنوز برای زبان شما ترجمه نداریم."
 
-#: activities/lang/Lang.qml:137
+#: activities/lang/Lang.qml:144
 #, qt-format
 msgctxt "Lang|"
 msgid ""
@@ -15637,7 +15637,7 @@ msgid ""
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
 
-#: activities/lang/Lang.qml:139
+#: activities/lang/Lang.qml:146
 msgctxt "Lang|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -15646,117 +15646,117 @@ msgstr ""
 "ما زبان را برای این فعالیت به انگلیسی عوض کردیم ولی تو میتوانی زبان دیگری را "
 "از طریق پنجره ترجیحات عوض کنی."
 
-#: activities/lang/Lang.qml:187 activities/lang/Lang.qml:188
+#: activities/lang/Lang.qml:194 activities/lang/Lang.qml:195
 msgctxt "Lang|"
 msgid "other"
 msgstr "سایر"
 
-#: activities/lang/Lang.qml:189
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "action"
 msgstr "عمل"
 
-#: activities/lang/Lang.qml:189
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "adjective"
 msgstr "صفت"
 
-#: activities/lang/Lang.qml:190
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "color"
 msgstr "رنگ"
 
-#: activities/lang/Lang.qml:190
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "number"
 msgstr "عدد"
 
-#: activities/lang/Lang.qml:191
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "people"
 msgstr "مردم"
 
-#: activities/lang/Lang.qml:191
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "bodyparts"
 msgstr "اعضای بدن"
 
-#: activities/lang/Lang.qml:192
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "clothes"
 msgstr "لباس ها"
 
-#: activities/lang/Lang.qml:192
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "emotion"
 msgstr "احساسات"
 
-#: activities/lang/Lang.qml:193
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "job"
 msgstr "شغل"
 
-#: activities/lang/Lang.qml:193
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "sport"
 msgstr "ورزش"
 
-#: activities/lang/Lang.qml:194
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "nature"
 msgstr "طبیعت"
 
-#: activities/lang/Lang.qml:194
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "animal"
 msgstr "حیوان"
 
-#: activities/lang/Lang.qml:195
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "fruit"
 msgstr "میوه"
 
-#: activities/lang/Lang.qml:195
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "plant"
 msgstr "نهال"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "vegetables"
 msgstr "گیاه ها"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "object"
 msgstr "شی"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:204
 msgctxt "Lang|"
 msgid "construction"
 msgstr "ساختمان"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:205
 msgctxt "Lang|"
 msgid "furniture"
 msgstr "وسایل"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:205
 msgctxt "Lang|"
 msgid "houseware"
 msgstr "اسباب و اثاث خانه"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "tool"
 msgstr "ابزار"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "food"
 msgstr "غذا"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:207
 msgctxt "Lang|"
 msgid "transport"
 msgstr "حمل و نقل و ترابری"

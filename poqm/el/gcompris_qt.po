@@ -15929,14 +15929,14 @@ msgstr ""
 "επινόησε το μύθο, ή αν εμπνεύστηκε από αυτόν (source Wikipedia: http://en."
 "wikipedia.org/wiki/Tower_of_hanoi)."
 
-#: activities/hanoi_real/HanoiReal.qml:75
+#: activities/hanoi_real/HanoiReal.qml:72
 msgctxt "HanoiReal|"
 msgid "Move the entire stack to the right peg, one disc at a time."
 msgstr ""
 "Μετακίνησε ολόκληρο τον πύργο στον δεξιό πάσσαλο, μετακινώντας έναν δίσκο τη "
 "φορά."
 
-#: activities/hanoi_real/HanoiReal.qml:76
+#: activities/hanoi_real/HanoiReal.qml:73
 msgctxt "HanoiReal|"
 msgid ""
 "Build the same tower in the empty area as the one you see on the right-hand "
@@ -16505,31 +16505,31 @@ msgstr ""
 "Βελάκι Αριστερά και Δεξιά: Στα πρώτα επίπεδα μετακινούν το διαστημόπλοιο "
 "αριστερά και δεξιά αντίστοιχα, ενώ στα μεγαλύτερα επίπεδα το περιστρέφουν."
 
-#: activities/land_safe/LandSafe.qml:585
+#: activities/land_safe/LandSafe.qml:582
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "Καύσιμα: %1"
 
-#: activities/land_safe/LandSafe.qml:595
+#: activities/land_safe/LandSafe.qml:592
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "Υψόμετρο: %1"
 
-#: activities/land_safe/LandSafe.qml:605
+#: activities/land_safe/LandSafe.qml:602
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "Ταχύτητα: %1"
 
-#: activities/land_safe/LandSafe.qml:616
+#: activities/land_safe/LandSafe.qml:613
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "Επιτάχυνση: %1"
 
-#: activities/land_safe/LandSafe.qml:650
+#: activities/land_safe/LandSafe.qml:647
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -16667,13 +16667,13 @@ msgctxt "ActivityInfo|"
 msgid "Tab: repeat the word"
 msgstr "Tab: Επανάληψη της λέξης."
 
-#: activities/lang/Lang.qml:136
+#: activities/lang/Lang.qml:143
 msgctxt "Lang|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr ""
 "Συγγνώμη, αλλά δεν υπάρχει διαθέσιμη μετάφραση για τη γλώσσα που επέλεξες."
 
-#: activities/lang/Lang.qml:137
+#: activities/lang/Lang.qml:144
 #, qt-format
 msgctxt "Lang|"
 msgid ""
@@ -16684,7 +16684,7 @@ msgstr ""
 "επικοινωνία με μια μεταφραστική ομάδα στο <a href=\"%2\">%2</a> για να "
 "βοηθήσεις στη μετάφρασή του."
 
-#: activities/lang/Lang.qml:139
+#: activities/lang/Lang.qml:146
 msgctxt "Lang|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -16693,117 +16693,117 @@ msgstr ""
 "Θα χρησιμοποιηθεί η αγγλική γλώσσα γι' αυτή τη δραστηριότητα, αλλά μπορείς "
 "να επιλέξεις μια άλλη από το μενού 'Ρυθμίσεις'."
 
-#: activities/lang/Lang.qml:187 activities/lang/Lang.qml:188
+#: activities/lang/Lang.qml:194 activities/lang/Lang.qml:195
 msgctxt "Lang|"
 msgid "other"
 msgstr "διάφορα"
 
-#: activities/lang/Lang.qml:189
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "action"
 msgstr "ενέργειες"
 
-#: activities/lang/Lang.qml:189
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "adjective"
 msgstr "επίθετα"
 
-#: activities/lang/Lang.qml:190
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "color"
 msgstr "χρώματα"
 
-#: activities/lang/Lang.qml:190
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "number"
 msgstr "αριθμοί"
 
-#: activities/lang/Lang.qml:191
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "people"
 msgstr "άνθρωποι"
 
-#: activities/lang/Lang.qml:191
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "bodyparts"
 msgstr "μέρη του σώματος"
 
-#: activities/lang/Lang.qml:192
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "clothes"
 msgstr "ρούχα"
 
-#: activities/lang/Lang.qml:192
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "emotion"
 msgstr "συναισθήματα"
 
-#: activities/lang/Lang.qml:193
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "job"
 msgstr "επαγγέλματα"
 
-#: activities/lang/Lang.qml:193
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "sport"
 msgstr "φυσική δραστηριότητα"
 
-#: activities/lang/Lang.qml:194
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "nature"
 msgstr "φύση"
 
-#: activities/lang/Lang.qml:194
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "animal"
 msgstr "ζώα"
 
-#: activities/lang/Lang.qml:195
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "fruit"
 msgstr "φρούτα"
 
-#: activities/lang/Lang.qml:195
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "plant"
 msgstr "φυτά"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "vegetables"
 msgstr "λαχανικά"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "object"
 msgstr "αντικείμενα"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:204
 msgctxt "Lang|"
 msgid "construction"
 msgstr "κατασκευές"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:205
 msgctxt "Lang|"
 msgid "furniture"
 msgstr "έπιπλα"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:205
 msgctxt "Lang|"
 msgid "houseware"
 msgstr "οικιακά είδη"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "tool"
 msgstr "εργαλεία"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "food"
 msgstr "φαγητά"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:207
 msgctxt "Lang|"
 msgid "transport"
 msgstr "μετακινήσεις"

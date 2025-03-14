@@ -3430,14 +3430,14 @@ msgid ""
 msgstr ""
 "您掌管这个运河闸门。按照正确的顺序打开门和闸，让小企鹅从两边都可以驶过闸门。"
 
-#: activities/canal_lock/CanalLock.qml:74
+#: activities/canal_lock/CanalLock.qml:73
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
 "the different types of water locks available."
 msgstr "您的目标是使用不同类型的可用水闸，引导小企鹅跨越运河船闸来得到原木。"
 
-#: activities/canal_lock/CanalLock.qml:76
+#: activities/canal_lock/CanalLock.qml:75
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3446,7 +3446,7 @@ msgid ""
 msgstr ""
 "垂直颜色栏表示水闸，可以通过点击水闸来操作。 同类的两个水闸不能同时运行。"
 
-#: activities/canal_lock/CanalLock.qml:78
+#: activities/canal_lock/CanalLock.qml:77
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -14530,7 +14530,7 @@ msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
 msgstr ""
 
-#: activities/guess24/Guess24.qml:130
+#: activities/guess24/Guess24.qml:123
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr ""
@@ -14612,7 +14612,7 @@ msgid ""
 "the instructions."
 msgstr "将数字和运算符拖到方框中，以得出指令中给出的数字。"
 
-#: activities/guesscount/Admin.qml:35
+#: activities/guesscount/Admin.qml:34
 #, qt-format
 msgctxt "Admin|"
 msgid "Level %1"
@@ -14628,7 +14628,7 @@ msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr ""
 
-#: activities/guesscount/Guesscount.qml:155
+#: activities/guesscount/Guesscount.qml:151
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -14805,12 +14805,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "已尝试：%1"
 
-#: activities/hangman/Hangman.qml:410
+#: activities/hangman/Hangman.qml:369
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "抱歉，我们找不到适合您的语言的翻译。"
 
-#: activities/hangman/Hangman.qml:411
+#: activities/hangman/Hangman.qml:370
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -14820,7 +14820,7 @@ msgstr ""
 "GCompris 由 KDE 社区开发，您可以通过加入翻译团队 (<a href=\"%2\">%2</a>) 来贡"
 "献翻译"
 
-#: activities/hangman/Hangman.qml:413
+#: activities/hangman/Hangman.qml:372
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -14899,12 +14899,12 @@ msgid ""
 "Tower_of_hanoi)"
 msgstr ""
 
-#: activities/hanoi_real/HanoiReal.qml:75
+#: activities/hanoi_real/HanoiReal.qml:72
 msgctxt "HanoiReal|"
 msgid "Move the entire stack to the right peg, one disc at a time."
 msgstr "将整摞碟子移动到右边的柱子上，一次只能移动一个碟子。"
 
-#: activities/hanoi_real/HanoiReal.qml:76
+#: activities/hanoi_real/HanoiReal.qml:73
 msgctxt "HanoiReal|"
 msgid ""
 "Build the same tower in the empty area as the one you see on the right-hand "
@@ -15447,31 +15447,31 @@ msgid ""
 "rotate the spaceship"
 msgstr ""
 
-#: activities/land_safe/LandSafe.qml:585
+#: activities/land_safe/LandSafe.qml:582
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "燃料：%1"
 
-#: activities/land_safe/LandSafe.qml:595
+#: activities/land_safe/LandSafe.qml:592
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "高度：%1"
 
-#: activities/land_safe/LandSafe.qml:605
+#: activities/land_safe/LandSafe.qml:602
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "速度：%1"
 
-#: activities/land_safe/LandSafe.qml:616
+#: activities/land_safe/LandSafe.qml:613
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "加速度：%1"
 
-#: activities/land_safe/LandSafe.qml:650
+#: activities/land_safe/LandSafe.qml:647
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -15595,12 +15595,12 @@ msgctxt "ActivityInfo|"
 msgid "Tab: repeat the word"
 msgstr "Tab 键：重复词"
 
-#: activities/lang/Lang.qml:136
+#: activities/lang/Lang.qml:143
 msgctxt "Lang|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "抱歉，我们找不到适合您的语言的翻译。"
 
-#: activities/lang/Lang.qml:137
+#: activities/lang/Lang.qml:144
 #, qt-format
 msgctxt "Lang|"
 msgid ""
@@ -15610,124 +15610,124 @@ msgstr ""
 "GCompris 由 KDE 社区开发，您可以通过加入翻译团队(<a href=\"%2\">%2</a>)来贡献"
 "翻译"
 
-#: activities/lang/Lang.qml:139
+#: activities/lang/Lang.qml:146
 msgctxt "Lang|"
 msgid ""
 "We switched to English for this activity but you can select another language "
 "in the configuration dialog."
 msgstr "我们将在这一活动中使用英语，不过您也可以在设置对话框中选择其他的语言。"
 
-#: activities/lang/Lang.qml:187 activities/lang/Lang.qml:188
+#: activities/lang/Lang.qml:194 activities/lang/Lang.qml:195
 msgctxt "Lang|"
 msgid "other"
 msgstr "其他"
 
-#: activities/lang/Lang.qml:189
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "action"
 msgstr "操作"
 
-#: activities/lang/Lang.qml:189
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "adjective"
 msgstr "形容词"
 
-#: activities/lang/Lang.qml:190
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "color"
 msgstr "颜色"
 
-#: activities/lang/Lang.qml:190
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "number"
 msgstr "数字"
 
-#: activities/lang/Lang.qml:191
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "people"
 msgstr "人"
 
-#: activities/lang/Lang.qml:191
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "bodyparts"
 msgstr "身体部位"
 
-#: activities/lang/Lang.qml:192
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "clothes"
 msgstr "衣服"
 
-#: activities/lang/Lang.qml:192
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "emotion"
 msgstr "表情"
 
-#: activities/lang/Lang.qml:193
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "job"
 msgstr "职业"
 
-#: activities/lang/Lang.qml:193
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "sport"
 msgstr "运动"
 
-#: activities/lang/Lang.qml:194
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "nature"
 msgstr "自然"
 
-#: activities/lang/Lang.qml:194
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "animal"
 msgstr "动物"
 
-#: activities/lang/Lang.qml:195
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "fruit"
 msgstr "水果"
 
-#: activities/lang/Lang.qml:195
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "plant"
 msgstr "植物"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "vegetables"
 msgstr "蔬菜"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "object"
 msgstr "物体"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:204
 msgctxt "Lang|"
 msgid "construction"
 msgstr "建筑"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:205
 msgctxt "Lang|"
 msgid "furniture"
 msgstr "家具"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:205
 msgctxt "Lang|"
 msgid "houseware"
 msgstr "家居用品"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "tool"
 msgstr "工具"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "food"
 msgstr "食品"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:207
 msgctxt "Lang|"
 msgid "transport"
 msgstr ""
