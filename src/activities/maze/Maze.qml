@@ -63,6 +63,7 @@ ActivityBase {
             property int wallSize: Math.max(2, cellSize / 10)
             property bool wallVisible: true
             property bool fastMode: false
+            property bool win: false
         }
 
         onStart: {
@@ -175,6 +176,7 @@ ActivityBase {
 
         MultiPointTouchArea {
             anchors.fill: parent
+            enabled: !items.win
             touchPoints: [ TouchPoint { id: point1 } ]
             property real startX
             property real startY
