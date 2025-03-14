@@ -8,4 +8,6 @@ GCOMPRIS_ADD_RESOURCE(activities/hanoi
   *.qml
   RESOURCES
   *.svg
+  DEPENDENCIES
+  hanoi_real
 )
