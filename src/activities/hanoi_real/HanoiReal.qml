@@ -9,6 +9,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import core 1.0
 
@@ -23,10 +25,11 @@ ActivityBase {
     onStop: {}
 
     property string activityMode: "real"
+    resourceUrl: "qrc:/gcompris/src/activities/hanoi_real/resource/"
 
     pageComponent: Image {
         id: activityBackground
-        source: Activity.url + "background.svg"
+        source: activity.resourceUrl + "background.svg"
         sourceSize.width: width
         sourceSize.height: height
         fillMode: Image.PreserveAspectCrop
@@ -55,7 +58,7 @@ ActivityBase {
 
         readonly property list<real> discSizes: [1.6, 1.3, 1, 0.7, 0.5]
 
-        onStart: { Activity.start(items, activityMode) }
+        onStart: { Activity.start(items, activity.activityMode) }
         onStop: { Activity.stop() }
 
         GCTextPanel {
@@ -69,7 +72,7 @@ ActivityBase {
             anchors.bottomMargin: bar.height * 1.2
             color: GCStyle.lightBg
             textItem.color: GCStyle.darkText
-            textItem.text: activityMode == "real" ? qsTr("Move the entire stack to the right peg, one disc at a time.") :
+            textItem.text: activity.activityMode == "real" ? qsTr("Move the entire stack to the right peg, one disc at a time.") :
             qsTr("Build the same tower in the empty area as the one you see on the right-hand side")
         }
 
@@ -86,7 +89,8 @@ ActivityBase {
                     towerRow.towerWidth * activityBackground.discSizes[index] : towerRow.towerWidth
                 height: discRepeater.discHeight
                 radius: height * 0.5
-                property string baseColor: GCStyle.grayBorder
+                required property int index
+                property color baseColor: GCStyle.grayBorder
                 property alias discMouseArea: discMouseArea
                 property Item towerImage
                 property int position: 0 // The position index on the tower
@@ -117,7 +121,7 @@ ActivityBase {
 
                     GCText {
                         id: textSimplified
-                        visible: activityMode == "simplified"
+                        visible: activity.activityMode == "simplified"
                         color: GCStyle.darkText
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.rightMargin: GCStyle.baseMargins
@@ -152,7 +156,7 @@ ActivityBase {
                         // Restore previous z before releasing the disc
                         disc.towerImage.z --
                         disc.z --
-                        Activity.discReleased(index)
+                        Activity.discReleased(disc.index)
                     }
                 }
             }
@@ -178,18 +182,19 @@ ActivityBase {
                 delegate: Image {
                     id: towerImage
                     z: 3
+                    required property int modelData
                     source:
-                    if(activityMode == "simplified" && (modelData == towerModel.model-2))
+                    if(activity.activityMode == "simplified" && (modelData == towerModel.model-2))
                         //in simplified mode, the target tower
-                        Activity.url + "disc_support-green.svg"
-                    else if(activityMode == "simplified" && (modelData == towerModel.model-1))
+                        activity.resourceUrl + "disc_support-green.svg"
+                    else if(activity.activityMode == "simplified" && (modelData == towerModel.model-1))
                         // in simplified mode, the reference tower
-                        Activity.url + "disc_support-red.svg"
-                    else if(activityMode == "real" && (modelData == towerModel.model-1))
+                        activity.resourceUrl + "disc_support-red.svg"
+                    else if(activity.activityMode == "real" && (modelData == towerModel.model-1))
                         // in real mode, the target tower
-                        Activity.url + "disc_support-green.svg"
+                        activity.resourceUrl + "disc_support-green.svg"
                     else
-                        Activity.url + "disc_support.svg"
+                        activity.resourceUrl + "disc_support.svg"
                     width: towerRow.towerWidth
                     height: towerRow.height
                     sourceSize.width: width
@@ -201,7 +206,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelpLeftRight
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
@@ -209,11 +214,11 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | reload }
             onHelpClicked: {
-                displayDialog(dialogHelpLeftRight)
+                activity.displayDialog(dialogHelpLeftRight)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: home()
+            onHomeClicked: activity.home()
             onReloadClicked: Activity.initLevel()
         }
 

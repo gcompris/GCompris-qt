@@ -14,8 +14,6 @@
 .import QtQuick 2.12 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var url = "qrc:/gcompris/src/activities/hanoi_real/resource/"
-
 var numberOfLevel
 var items
 var activityMode
