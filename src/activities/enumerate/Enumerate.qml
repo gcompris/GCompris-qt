@@ -248,7 +248,9 @@ ActivityBase {
                 ] ]
             }
 
-            onKeypress: (text) => Activity.currentAnswerItem.appendText(text)
+            onKeypress: (text) => {
+                Activity.appendText(text, answerColumn.itemAt(answerColumn.currentIndex));
+            }
 
             onError: (msg) => console.log("VirtualKeyboard error: " + msg);
         }
