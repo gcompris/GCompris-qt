@@ -36,7 +36,6 @@
 var levels;
 var numberOfLevel;
 var items = null;
-var baseUrl = "qrc:/gcompris/src/activities/land_safe/resource";
 var startingAltitudeReal = 100.0;
 var startingOffsetPx = 10;  // y-value for setting rocket initially
 var maxLandingVelocity = 10;

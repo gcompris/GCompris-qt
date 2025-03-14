@@ -8,6 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import Box2D 2.0
 import QtQuick.Particles 2.12
@@ -39,7 +41,7 @@ ActivityBase {
     pageComponent: Image {
         id: activityBackground
 
-        source: Activity.baseUrl + "/background.svg";
+        source: activity.resourceUrl + "/background.svg";
         anchors.centerIn: parent
         anchors.fill: parent
         fillMode: Image.PreserveAspectCrop
@@ -260,7 +262,7 @@ ActivityBase {
             Image {
                 id: rocketImage
                 sourceSize.width: width
-                source: Activity.baseUrl + "/rocket.svg"
+                source: activity.resourceUrl + "/rocket.svg"
                 anchors.centerIn: parent
                 anchors.fill: parent
                 z: 4
@@ -302,7 +304,7 @@ ActivityBase {
 
             Image {
                 id: softLeftEngine
-                source: Activity.baseUrl + "/engine.svg"
+                source: activity.resourceUrl + "/engine.svg"
                 rotation: 90
                 anchors.right: parent.left
                 anchors.verticalCenter: parent.verticalCenter
@@ -344,7 +346,7 @@ ActivityBase {
 
             Image {
                 id: softRightEngine
-                source: Activity.baseUrl + "/engine.svg"
+                source: activity.resourceUrl + "/engine.svg"
                 rotation: -90
                 anchors.left: parent.right
                 anchors.verticalCenter: parent.verticalCenter
@@ -386,7 +388,7 @@ ActivityBase {
 
             Image {
                 id: softBottomEngine
-                source: Activity.baseUrl + "/engine.svg"
+                source: activity.resourceUrl + "/engine.svg"
                 anchors.top: parent.bottom
                 anchors.topMargin: -5 * ApplicationInfo.ratio
                 anchors.horizontalCenter: parent.horizontalCenter
@@ -485,7 +487,7 @@ ActivityBase {
             height: parent.height/7
             sourceSize.width: width
             sourceSize.height: height
-            source: Activity.baseUrl + "/ground.svg"
+            source: activity.resourceUrl + "/ground.svg"
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.bottom: parent.bottom
@@ -527,7 +529,7 @@ ActivityBase {
             property string overlayColor: "-g"
 
             z: 2
-            source: Activity.baseUrl + "/landing" + overlayColor + ".svg";
+            source: activity.resourceUrl + "/landing" + overlayColor + ".svg";
             anchors.left: ground.left
             anchors.leftMargin: 270
             anchors.top: ground.top
@@ -716,7 +718,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home();
+            onClose: activity.home();
         }
 
         DialogChooseLevel {
@@ -724,12 +726,12 @@ ActivityBase {
             currentActivity: activity.activityInfo
 
             onSaveData: {
-                levelFolder = dialogActivityConfig.chosenLevels;
+                activity.levelFolder = dialogActivityConfig.chosenLevels;
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels;
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels);
             }
             onClose: {
-                home();
+                activity.home();
             }
             onStartActivity: {
                 activityBackground.stop();
@@ -742,13 +744,13 @@ ActivityBase {
             level: items.currentLevel + 1
             z: 21
             content: BarEnumContent { value: help | home | level | reload | activityConfig }
-            onHelpClicked: displayDialog(dialogHelp);
+            onHelpClicked: activity.displayDialog(dialogHelp);
             onPreviousLevelClicked: Activity.previousLevel();
             onNextLevelClicked: Activity.nextLevel();
-            onHomeClicked: home();
+            onHomeClicked: activity.home();
             onReloadClicked: Activity.initLevel();
             onActivityConfigClicked: {
-                displayDialog(dialogActivityConfig);
+                activity.displayDialog(dialogActivityConfig);
             }
         }
 
@@ -763,7 +765,7 @@ ActivityBase {
         IntroMessage {
             id: intro
             onIntroDone: {
-                items.world.running = true;
+                physicsWorld.running = true;
             }
             z: 20
         }
@@ -776,7 +778,7 @@ ActivityBase {
             anchors.centerIn: activityBackground
             onClicked: {
                 visible = false;
-                items.world.running = true;
+                physicsWorld.running = true;
             }
         }
     }
