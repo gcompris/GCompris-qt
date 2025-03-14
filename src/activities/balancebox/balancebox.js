@@ -78,11 +78,12 @@ function start(items_) {
         if (GCompris.ApplicationInfo.isMobile) {
             // we don't have many touch events, therefore disable screensaver on android:
             GCompris.ApplicationInfo.setKeepScreenOn(true);
-            // lock screen orientation to landscape:
-            GCompris.ApplicationInfo.setRequestedOrientation(0);
-            if (GCompris.ApplicationInfo.getNativeOrientation() === Qt.PortraitOrientation) {
+            // lock screen orientation: (as changing orientation would reset the level...)
+            GCompris.ApplicationInfo.setRequestedOrientation(14);
+            if (GCompris.ApplicationInfo.getNativeOrientation() === Qt.PortraitOrientation &&
+                items.activityBackground.width > items.activityBackground.height) {
                 /*
-                 * Adjust tilting if native orientation != landscape.
+                 * Adjust tilting if native orientation != landscape but orientation is landscape.
                  *
                  * Note: As of Qt 5.4.1 QTiltSensor as well as QRotationSensor
                  * report on Android
