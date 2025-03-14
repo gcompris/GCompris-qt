@@ -26,8 +26,6 @@ var mazeColumns = 0
 var mazeRows = 0
 var maze = 0
 
-var win = false
-
 function start(items_, relativeMode_, invisibleMode_) {
     items = items_
     relativeMode = relativeMode_
@@ -41,7 +39,7 @@ function stop() {}
 function initLevel() {
     items.wallVisible = !invisibleMode
 
-    win = false
+    items.win = false
 
     /* Set main variables */
     if (items.currentLevel + 1 == 1) {
@@ -317,7 +315,7 @@ function getPlayerRotation() {
 
 function checkSuccess() {
     if (items.playery === items.doory && items.playerx === mazeColumns - 1) {
-        win = true
+        items.win = true
         items.bonus.good("lion")
     }
 }
@@ -329,7 +327,7 @@ function processPressedKey(event) {
         items.message.visible = items.wallVisible
     }
 
-    if ( !win ) {
+    if ( !items.win ) {
         /* Move the player */
         switch (event.key) {
         case Qt.Key_Right:
