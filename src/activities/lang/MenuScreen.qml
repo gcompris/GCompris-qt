@@ -22,6 +22,7 @@ Item {
     anchors.fill: parent
     opacity: 0
 
+    property Item dialogActivityConfig
     property alias menuModel: menuModel
     property bool keyboardMode: false
     property bool started: opacity == 1
@@ -32,7 +33,6 @@ Item {
     function start() {
         focus = true
         forceActiveFocus()
-        menuGrid.currentIndex = 0
         opacity = 1
     }
 
@@ -41,36 +41,31 @@ Item {
         opacity = 0
     }
 
+    function startCurrentItem() {
+        if(menuGrid.currentIndex >= 0)
+            menuGrid.currentItem.selectCurrentItem()
+    }
+
     Keys.onEscapePressed: {
         home()
     }
 
     Keys.onPressed: (event) => {
-        if(event.key === Qt.Key_Space) {
-            menuGrid.currentItem.selectCurrentItem()
+        if(event.key === Qt.Key_Space ||
+            event.key === Qt.Key_Enter ||
+            event.key === Qt.Key_Return) {
+            startCurrentItem()
             event.accepted = true
-        }
-        if(event.key === Qt.Key_Enter) {
-            menuGrid.currentItem.selectCurrentItem()
-            event.accepted = true
-        }
-        if(event.key === Qt.Key_Return) {
-            menuGrid.currentItem.selectCurrentItem()
-            event.accepted = true
-        }
-        if(event.key === Qt.Key_Left) {
+        } else if(event.key === Qt.Key_Left) {
             menuGrid.moveCurrentIndexLeft()
             event.accepted = true
-        }
-        if(event.key === Qt.Key_Right) {
+        } else if(event.key === Qt.Key_Right) {
             menuGrid.moveCurrentIndexRight()
             event.accepted = true
-        }
-        if(event.key === Qt.Key_Up) {
+        } else if(event.key === Qt.Key_Up) {
             menuGrid.moveCurrentIndexUp()
             event.accepted = true
-        }
-        if(event.key === Qt.Key_Down) {
+        } else if(event.key === Qt.Key_Down) {
             menuGrid.moveCurrentIndexDown()
             event.accepted = true
         }
@@ -128,6 +123,7 @@ Item {
         keyNavigationWraps: true
         maximumFlickVelocity: activity.height
         boundsBehavior: Flickable.StopAtBounds
+        currentIndex: -1
         // Needed to calculate the OpacityMask offset
         // If using software renderer, this value is not used, so we save the calculation and set it to 1
         property real hiddenBottom: ApplicationInfo.useSoftwareRenderer ? 1 : contentHeight - height - contentY
@@ -199,11 +195,12 @@ Item {
             }
 
             Rectangle {
-                color: "#C0FFFFFF"
-                anchors.centerIn: favoriteButton
-                width: favoriteButton.width + GCStyle.tinyMargins
-                height: width
+                anchors.fill: favoriteButton
+                anchors.margins: - GCStyle.tinyMargins
+                color: GCStyle.whiteBg
+                opacity: 0.5
                 radius: width * 0.5
+
             }
             Image {
                 id: favoriteButton
@@ -220,6 +217,8 @@ Item {
                     anchors.fill: parent
                     onClicked: {
                         menuModel.get(index)['favorite'] = !menuModel.get(index)['favorite']
+                        menuScreen.dialogActivityConfig.saveData()
+                        Activity.initCategories()
                     }
                 }
             }

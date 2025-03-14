@@ -86,6 +86,7 @@ ActivityBase {
 
         MenuScreen {
             id: menuScreen
+            dialogActivityConfig: dialogActivityConfig
         }
 
         ImageReview {

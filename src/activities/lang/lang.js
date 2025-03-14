@@ -48,15 +48,18 @@ function start() {
     // We have to keep it because we can't access content from the model
     lessons = Lang.getAllLessons(dataset)
     addPropertiesToLessons(lessons)
-
-    items.menuModel.clear()
-    items.menuModel.append(lessons)
-    savedPropertiesToLessons(items.dialogActivityConfig.activityData)
-    sortByFavorites();
+    initCategories()
 
     if(!items.activityBackground.englishFallback) {
         items.menuScreen.start();
     }
+}
+
+function initCategories() {
+    items.menuModel.clear()
+    items.menuModel.append(lessons)
+    savedPropertiesToLessons(items.dialogActivityConfig.activityData)
+    sortByFavorites();
 }
 
 // Insert our specific properties in the lessons
@@ -145,9 +148,12 @@ function launchMenuScreen() {
 }
 
 function sortByFavorites() {
+    var lastFavIndex = 0;
     for(var i = 0; i < items.menuModel.count; i++) {
-        if(items.menuModel.get(i)['favorite'])
-            items.menuModel.move(i, 0, 1);
+        if(items.menuModel.get(i)['favorite']) {
+            items.menuModel.move(i, lastFavIndex, 1);
+            lastFavIndex++;
+        }
     }
 }
 
