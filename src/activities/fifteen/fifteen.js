@@ -14,7 +14,7 @@
 
 var url = "qrc:/gcompris/src/activities/fifteen/resource/"
 
-var numberOfLevel = 13
+var numberOfLevel = 14
 var items
 
 var palette = [
