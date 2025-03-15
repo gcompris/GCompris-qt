@@ -8,4 +8,6 @@ GCOMPRIS_ADD_RESOURCE(activities/click_on_letter_up
   *.qml
   RESOURCES
   *.svg
+  DEPENDENCIES
+  click_on_letter
 )
