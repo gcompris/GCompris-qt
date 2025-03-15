@@ -2229,7 +2229,7 @@ msgstr ""
 "Aby przemieścić kawałek, przeciągnij go. Użyj przycisku obrotu, jeśli "
 "potrzeba. Bardziej złożone poziomy można znaleźć w aktywności tangram."
 
-#: activities/baby_wordprocessor/ActivityConfig.qml:27
+#: activities/baby_wordprocessor/ActivityConfig.qml:28
 msgctxt "ActivityConfig|"
 msgid "Play characters' sound when typed"
 msgstr "Odgrywa dźwięk znaku, gdy zostanie wpisany"
@@ -2657,7 +2657,7 @@ msgstr ""
 "Albo stwórz swoje poziomy, uruchamiając edytor poziomów w menu ustawień "
 "aktywności albo wczytaj swój plik albo wybierz 'wbudowany' zestaw poziomów."
 
-#: activities/balancebox/balancebox.js:105
+#: activities/balancebox/balancebox.js:106
 #, qt-format
 msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
@@ -2745,13 +2745,13 @@ msgstr ""
 "prawej strzałki. Na ekranie dotykowym musisz dotknąć dwoma palcami w tej "
 "samej chwili."
 
-#: activities/ballcatch/Ballcatch.qml:226
+#: activities/ballcatch/Ballcatch.qml:228
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr "Aby piłka poleciała prosto, stuknij jednocześnie dwoma palcami."
 
-#: activities/ballcatch/Ballcatch.qml:228
+#: activities/ballcatch/Ballcatch.qml:230
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -14347,7 +14347,7 @@ msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
 msgstr "(zmienne granice)"
 
-#: activities/graduated_line_read/GraduatedLineRead.qml:15
+#: activities/graduated_line_read/GraduatedLineRead.qml:17
 msgctxt "GraduatedLineRead|"
 msgid "Find the requested number."
 msgstr "Znajdź żądaną liczbę."
@@ -15246,12 +15246,12 @@ msgstr ""
 "zainspirowany. (źródło Wikipedia https://en.wikipedia.org/wiki/"
 "Tower_of_hanoi)"
 
-#: activities/hanoi_real/HanoiReal.qml:72
+#: activities/hanoi_real/HanoiReal.qml:75
 msgctxt "HanoiReal|"
 msgid "Move the entire stack to the right peg, one disc at a time."
 msgstr "Przenieś cały stos na prawy kołek. Pamiętaj! Jeden krążek na raz."
 
-#: activities/hanoi_real/HanoiReal.qml:73
+#: activities/hanoi_real/HanoiReal.qml:76
 msgctxt "HanoiReal|"
 msgid ""
 "Build the same tower in the empty area as the one you see on the right-hand "
@@ -15818,31 +15818,31 @@ msgstr ""
 "Strzałki w lewo i prawo: na pierwszych poziomach, przesuwają na strony; na "
 "wyższych poziomach, obracają statek kosmiczny"
 
-#: activities/land_safe/LandSafe.qml:582
+#: activities/land_safe/LandSafe.qml:584
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "Paliwo: %1"
 
-#: activities/land_safe/LandSafe.qml:592
+#: activities/land_safe/LandSafe.qml:594
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "Wysokość: %1"
 
-#: activities/land_safe/LandSafe.qml:602
+#: activities/land_safe/LandSafe.qml:604
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "Szybkość: %1"
 
-#: activities/land_safe/LandSafe.qml:613
+#: activities/land_safe/LandSafe.qml:615
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "Przyspieszenie: %1"
 
-#: activities/land_safe/LandSafe.qml:647
+#: activities/land_safe/LandSafe.qml:649
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -15978,12 +15978,12 @@ msgctxt "ActivityInfo|"
 msgid "Tab: repeat the word"
 msgstr "Tab: powtarza słowo"
 
-#: activities/lang/Lang.qml:143
+#: activities/lang/Lang.qml:144
 msgctxt "Lang|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Wybacz, nie mamy tłumaczenia w twoim języku."
 
-#: activities/lang/Lang.qml:144
+#: activities/lang/Lang.qml:145
 #, qt-format
 msgctxt "Lang|"
 msgid ""
@@ -15993,7 +15993,7 @@ msgstr ""
 "GCompris jest rozwijany przez społeczność KDE, możesz przetłumaczyć GCompris "
 "dołączając do zespołu <a href=\"%2\">%2</a>"
 
-#: activities/lang/Lang.qml:146
+#: activities/lang/Lang.qml:147
 msgctxt "Lang|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -16002,117 +16002,117 @@ msgstr ""
 "Dla tej aktywności przełączyliśmy na angielski, lecz możesz wybrać inny "
 "język w oknie dialogowym ustawień."
 
-#: activities/lang/Lang.qml:194 activities/lang/Lang.qml:195
+#: activities/lang/Lang.qml:195 activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "other"
 msgstr "inne"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "action"
 msgstr "działanie"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "adjective"
 msgstr "przymiotnik"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "color"
 msgstr "kolor"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "number"
 msgstr "numer"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "people"
 msgstr "ludzie"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "bodyparts"
 msgstr "części ciała"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "clothes"
 msgstr "ubrania"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "emotion"
 msgstr "emocja"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "job"
 msgstr "zadanie"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "sport"
 msgstr "sport"
 
-#: activities/lang/Lang.qml:201
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "nature"
 msgstr "natura"
 
-#: activities/lang/Lang.qml:201
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "animal"
 msgstr "zwierzę"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "fruit"
 msgstr "owoc"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "plant"
 msgstr "roślina"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:204
 msgctxt "Lang|"
 msgid "vegetables"
 msgstr "warzywa"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:204
 msgctxt "Lang|"
 msgid "object"
 msgstr "obiekt"
 
-#: activities/lang/Lang.qml:204
+#: activities/lang/Lang.qml:205
 msgctxt "Lang|"
 msgid "construction"
 msgstr "konstrukcja"
 
-#: activities/lang/Lang.qml:205
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "furniture"
 msgstr "mebel"
 
-#: activities/lang/Lang.qml:205
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "houseware"
 msgstr "sprzęt domowy"
 
-#: activities/lang/Lang.qml:206
+#: activities/lang/Lang.qml:207
 msgctxt "Lang|"
 msgid "tool"
 msgstr "narzędzie"
 
-#: activities/lang/Lang.qml:206
+#: activities/lang/Lang.qml:207
 msgctxt "Lang|"
 msgid "food"
 msgstr "jedzenie"
 
-#: activities/lang/Lang.qml:207
+#: activities/lang/Lang.qml:208
 msgctxt "Lang|"
 msgid "transport"
 msgstr "transport"
@@ -17330,7 +17330,7 @@ msgstr ""
 "na wyższych poziomach, naciśnij na ikonę \"boso / buty sportowe\" w lewym "
 "górnym narożniku ekranu, aby przełączyć tryb-szybkiego-biegania.\t"
 
-#: activities/maze/Maze.qml:339
+#: activities/maze/Maze.qml:341
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

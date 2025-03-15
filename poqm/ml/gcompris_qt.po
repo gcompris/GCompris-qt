@@ -2211,7 +2211,7 @@ msgstr ""
 "ഒരു കഷണത്തെ ഡ്രാഗു ചെയ്തു നീക്കാവുന്നതാണ്. ആവശ്യമാണെങ്കിൽ കറക്കാനുള്ള ബട്ടൺ ഉപയോഗിക്കാം. കൂടുതൽ "
 "കാഠിന്യമുള്ള ഘട്ടങ്ങൾക്ക് തൻഗ്രാം പ്രവർത്തനം നോക്കൂ."
 
-#: activities/baby_wordprocessor/ActivityConfig.qml:27
+#: activities/baby_wordprocessor/ActivityConfig.qml:28
 msgctxt "ActivityConfig|"
 msgid "Play characters' sound when typed"
 msgstr "ടൈപ്പ് ചെയ്യുമ്പോൾ ക്യാരക്ടറിന്റെ ശബ്ദം പ്ലേ ചെയ്യുക"
@@ -2630,7 +2630,7 @@ msgstr ""
 "നിർമ്മിച്ചതിനുശേഷം നിങ്ങളുടെ ഫയൽ ലോഡ് ചെയ്യുക, അല്ലെങ്കിൽ 'ബിൽറ്റ്ഇൻ' ലവൽ സെറ്റ് "
 "തിരഞ്ഞെടുക്കുക."
 
-#: activities/balancebox/balancebox.js:105
+#: activities/balancebox/balancebox.js:106
 #, qt-format
 msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
@@ -2716,13 +2716,13 @@ msgstr ""
 "ഇടതും വലതും ഉള്ള ആരോ കീകൾ ഒരേ സമയം അമർത്തിക്കൊണ്ട് പന്തിനെ നേർരേഖയിൽ ചലിപ്പിക്കാം. ഒരു "
 "ടച്ച് സ്ക്രീനിൽ, രണ്ടു കൈപ്പത്തികളും ഒരേ സമയത്തു തൊടണം."
 
-#: activities/ballcatch/Ballcatch.qml:226
+#: activities/ballcatch/Ballcatch.qml:228
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr "രണ്ടു കൈപ്പത്തികളും ഒരേ സമയത്ത് തൊട്ടാൽ പന്തിനെ നേർരേഖയിൽ ചലിപ്പിക്കാം."
 
-#: activities/ballcatch/Ballcatch.qml:228
+#: activities/ballcatch/Ballcatch.qml:230
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -14162,7 +14162,7 @@ msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
 msgstr "(മാറ്റം വരാവുന്ന അതിരുകൾ)"
 
-#: activities/graduated_line_read/GraduatedLineRead.qml:15
+#: activities/graduated_line_read/GraduatedLineRead.qml:17
 msgctxt "GraduatedLineRead|"
 msgid "Find the requested number."
 msgstr "തന്നിരിക്കുന്ന അക്കം കണ്ടെത്തുക."
@@ -15043,12 +15043,12 @@ msgstr ""
 "പ്രചോദനമുൾക്കൊണ്ടതാണോ എന്ന് വ്യക്തമല്ല. (വിക്കിപീഡിയയിൽ നിന്നും: https://en.wikipedia."
 "org/wiki/Tower_of_hanoi)"
 
-#: activities/hanoi_real/HanoiReal.qml:72
+#: activities/hanoi_real/HanoiReal.qml:75
 msgctxt "HanoiReal|"
 msgid "Move the entire stack to the right peg, one disc at a time."
 msgstr "മുഴുവൻ അടുക്കിനെയും ഒരു സമയത്ത് ഒരു വളയം വീതം വലത്തെ കുറ്റിയിലേക്ക് മാറ്റൂ."
 
-#: activities/hanoi_real/HanoiReal.qml:73
+#: activities/hanoi_real/HanoiReal.qml:76
 msgctxt "HanoiReal|"
 msgid ""
 "Build the same tower in the empty area as the one you see on the right-hand "
@@ -15611,31 +15611,31 @@ msgstr ""
 "ഇടതും വലതും ആരോകൾ: ആദ്യ ഘട്ടങ്ങളിൽ, വശങ്ങളിലേക്കു നീക്കാൻ; പിന്നീടുള്ള ഘട്ടങ്ങളിൽ, "
 "ബഹിരാകാശ കപ്പലിനെ കറക്കാൻ"
 
-#: activities/land_safe/LandSafe.qml:582
+#: activities/land_safe/LandSafe.qml:584
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "ഇന്ധനം: %1"
 
-#: activities/land_safe/LandSafe.qml:592
+#: activities/land_safe/LandSafe.qml:594
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "ഉന്നതി: %1"
 
-#: activities/land_safe/LandSafe.qml:602
+#: activities/land_safe/LandSafe.qml:604
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "പ്രവേഗം: %1"
 
-#: activities/land_safe/LandSafe.qml:613
+#: activities/land_safe/LandSafe.qml:615
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "ത്വരണം: %1"
 
-#: activities/land_safe/LandSafe.qml:647
+#: activities/land_safe/LandSafe.qml:649
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -15770,12 +15770,12 @@ msgctxt "ActivityInfo|"
 msgid "Tab: repeat the word"
 msgstr "ടാബ്: വാക്ക് ആവർത്തിക്കാൻ"
 
-#: activities/lang/Lang.qml:143
+#: activities/lang/Lang.qml:144
 msgctxt "Lang|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "ക്ഷമിക്കണം, നിങ്ങളുടെ ഭാഷയ്ക്ക് തർജ്ജിമ ഇതുവരെ ഇല്ല."
 
-#: activities/lang/Lang.qml:144
+#: activities/lang/Lang.qml:145
 #, qt-format
 msgctxt "Lang|"
 msgid ""
@@ -15785,7 +15785,7 @@ msgstr ""
 "കെഡിഇ കൂട്ടായ്മയാണ് ജികോംപ്രി ഡെവലപ് ചെയ്തത്, ഒരു തർജ്ജിമ സംഘത്തിൽ ചേർന്നാൽ നിങ്ങൾക്ക് "
 "ജികോംപ്രി തർജ്ജിമ ചെയ്യാൻ കഴിയും <a href=\"%2\">%2</a>"
 
-#: activities/lang/Lang.qml:146
+#: activities/lang/Lang.qml:147
 msgctxt "Lang|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -15794,117 +15794,117 @@ msgstr ""
 "ഈ പ്രവർത്തനത്തിന് ഞങ്ങൾ ഇംഗ്ലീഷിലേക്കു മാറിയിട്ടുണ്ട് എന്നാൽ മറ്റൊരു ഭാഷ കോൺഫിഗറേഷൻ ഡയലോഗിൽ "
 "നിന്നും നിങ്ങൾക്ക് തിരഞ്ഞെടുക്കാൻ കഴിയും."
 
-#: activities/lang/Lang.qml:194 activities/lang/Lang.qml:195
+#: activities/lang/Lang.qml:195 activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "other"
 msgstr "മറ്റുള്ളവ"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "action"
 msgstr "പ്രവൃത്തി"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "adjective"
 msgstr "വിശേഷണം"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "color"
 msgstr "നിറം"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "number"
 msgstr "സംഖ്യ"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "people"
 msgstr "ആളുകൾ"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "bodyparts"
 msgstr "അവയവങ്ങൾ"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "clothes"
 msgstr "വസ്ത്രങ്ങൾ"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "emotion"
 msgstr "വികാരം"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "job"
 msgstr "ജോലി"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "sport"
 msgstr "കായികം"
 
-#: activities/lang/Lang.qml:201
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "nature"
 msgstr "പ്രകൃതി"
 
-#: activities/lang/Lang.qml:201
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "animal"
 msgstr "ജീവി"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "fruit"
 msgstr "പഴം"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "plant"
 msgstr "സസ്യം"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:204
 msgctxt "Lang|"
 msgid "vegetables"
 msgstr "പച്ചക്കറികൾ"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:204
 msgctxt "Lang|"
 msgid "object"
 msgstr "വസ്തു"
 
-#: activities/lang/Lang.qml:204
+#: activities/lang/Lang.qml:205
 msgctxt "Lang|"
 msgid "construction"
 msgstr "കെട്ടിടം"
 
-#: activities/lang/Lang.qml:205
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "furniture"
 msgstr "ഫർണിച്ചർ"
 
-#: activities/lang/Lang.qml:205
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "houseware"
 msgstr "വീട്ടുസാമാനം"
 
-#: activities/lang/Lang.qml:206
+#: activities/lang/Lang.qml:207
 msgctxt "Lang|"
 msgid "tool"
 msgstr "പണിയായുധങ്ങൾ"
 
-#: activities/lang/Lang.qml:206
+#: activities/lang/Lang.qml:207
 msgctxt "Lang|"
 msgid "food"
 msgstr "ഭക്ഷണം"
 
-#: activities/lang/Lang.qml:207
+#: activities/lang/Lang.qml:208
 msgctxt "Lang|"
 msgid "transport"
 msgstr "ഗതാഗതം"
@@ -17104,7 +17104,7 @@ msgstr ""
 "വേണമെങ്കിലോ ഉയർന്ന ഘട്ടങ്ങളിൽ ഇല്ലാതാക്കണമെങ്കിലോ, സ്ക്രീനിന്റെ മുകളിൽ ഇടതു മൂലയിലുള്ള "
 "\"കാലുകൾ / സ്പോർട്ഷൂ\" ഐക്കണിൽ ക്ലിക്ക് ചെയ്താൽ മതി.\t"
 
-#: activities/maze/Maze.qml:339
+#: activities/maze/Maze.qml:341
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

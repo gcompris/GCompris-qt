@@ -2247,7 +2247,7 @@ msgstr ""
 "Mută o piesă prin glisare. Folosește butonul de rotire dacă e necesar. "
 "Nivele mai complicate pot fi găsite în activitatea tangram."
 
-#: activities/baby_wordprocessor/ActivityConfig.qml:27
+#: activities/baby_wordprocessor/ActivityConfig.qml:28
 msgctxt "ActivityConfig|"
 msgid "Play characters' sound when typed"
 msgstr ""
@@ -2682,7 +2682,7 @@ msgstr ""
 "configurări ale activității și apoi încărcați-vă fișierul, fie alegeți setul "
 "de nivel „încorporat”."
 
-#: activities/balancebox/balancebox.js:105
+#: activities/balancebox/balancebox.js:106
 #, qt-format
 msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
@@ -2770,7 +2770,7 @@ msgstr ""
 "meargă drept în față. Pe un ecran tactil, trebuie să atingi simultan cele "
 "două mâini."
 
-#: activities/ballcatch/Ballcatch.qml:226
+#: activities/ballcatch/Ballcatch.qml:228
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
@@ -2778,7 +2778,7 @@ msgstr ""
 "Lovește scurt cu vârful degetelor de la ambele mâini, pentru a face mingea "
 "să meargă drept în față."
 
-#: activities/ballcatch/Ballcatch.qml:228
+#: activities/ballcatch/Ballcatch.qml:230
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -14482,7 +14482,7 @@ msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
 msgstr "(limite variabile)"
 
-#: activities/graduated_line_read/GraduatedLineRead.qml:15
+#: activities/graduated_line_read/GraduatedLineRead.qml:17
 msgctxt "GraduatedLineRead|"
 msgid "Find the requested number."
 msgstr "Găsește numărul cerut."
@@ -15389,12 +15389,12 @@ msgstr ""
 "legendă sau chiar s-a inspirat din ea.\n"
 "(sursa Wikipedia: https://en.wikipedia.org/wiki/Tower_of_hanoi)"
 
-#: activities/hanoi_real/HanoiReal.qml:72
+#: activities/hanoi_real/HanoiReal.qml:75
 msgctxt "HanoiReal|"
 msgid "Move the entire stack to the right peg, one disc at a time."
 msgstr "Mută întreaga stivă pe suportul din dreapta, disc cu disc."
 
-#: activities/hanoi_real/HanoiReal.qml:73
+#: activities/hanoi_real/HanoiReal.qml:76
 msgctxt "HanoiReal|"
 msgid ""
 "Build the same tower in the empty area as the one you see on the right-hand "
@@ -15963,31 +15963,31 @@ msgstr ""
 "Tastele săgeți stânga și dreapta: la primele nivele, mută nava în lateral; "
 "la nivelele superioare, o rotesc"
 
-#: activities/land_safe/LandSafe.qml:582
+#: activities/land_safe/LandSafe.qml:584
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "Combustibil: %1"
 
-#: activities/land_safe/LandSafe.qml:592
+#: activities/land_safe/LandSafe.qml:594
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "Altitudine: %1"
 
-#: activities/land_safe/LandSafe.qml:602
+#: activities/land_safe/LandSafe.qml:604
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "Viteză: %1"
 
-#: activities/land_safe/LandSafe.qml:613
+#: activities/land_safe/LandSafe.qml:615
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "Accelerație: %1"
 
-#: activities/land_safe/LandSafe.qml:647
+#: activities/land_safe/LandSafe.qml:649
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -16126,12 +16126,12 @@ msgctxt "ActivityInfo|"
 msgid "Tab: repeat the word"
 msgstr "Tab: repetă cuvântul"
 
-#: activities/lang/Lang.qml:143
+#: activities/lang/Lang.qml:144
 msgctxt "Lang|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Ne pare rău, deocamdată nu avem traducerea în limba dvs."
 
-#: activities/lang/Lang.qml:144
+#: activities/lang/Lang.qml:145
 #, qt-format
 msgctxt "Lang|"
 msgid ""
@@ -16141,7 +16141,7 @@ msgstr ""
 "GCompris este dezvoltat de comunitatea KDE, puteți traduce GCompris "
 "alăturându-vă unei echipe de traducere, pe <a href=\"%2\">%2</a>."
 
-#: activities/lang/Lang.qml:146
+#: activities/lang/Lang.qml:147
 msgctxt "Lang|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -16150,117 +16150,117 @@ msgstr ""
 "Am comutat la limba engleză pentru această activitate, dar poți selecta și o "
 "altă limbă în dialogul de configurare."
 
-#: activities/lang/Lang.qml:194 activities/lang/Lang.qml:195
+#: activities/lang/Lang.qml:195 activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "other"
 msgstr "altele"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "action"
 msgstr "acțiuni"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "adjective"
 msgstr "adjective"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "color"
 msgstr "culori"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "number"
 msgstr "numere"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "people"
 msgstr "oameni"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "bodyparts"
 msgstr "părți ale corpului"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "clothes"
 msgstr "haine"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "emotion"
 msgstr "emoții"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "job"
 msgstr "meserii"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "sport"
 msgstr "sporturi"
 
-#: activities/lang/Lang.qml:201
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "nature"
 msgstr "natură"
 
-#: activities/lang/Lang.qml:201
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "animal"
 msgstr "animale"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "fruit"
 msgstr "fructe"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "plant"
 msgstr "plante"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:204
 msgctxt "Lang|"
 msgid "vegetables"
 msgstr "legume"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:204
 msgctxt "Lang|"
 msgid "object"
 msgstr "obiecte"
 
-#: activities/lang/Lang.qml:204
+#: activities/lang/Lang.qml:205
 msgctxt "Lang|"
 msgid "construction"
 msgstr "construcții"
 
-#: activities/lang/Lang.qml:205
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "furniture"
 msgstr "mobilier"
 
-#: activities/lang/Lang.qml:205
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "houseware"
 msgstr "din casă"
 
-#: activities/lang/Lang.qml:206
+#: activities/lang/Lang.qml:207
 msgctxt "Lang|"
 msgid "tool"
 msgstr "scule"
 
-#: activities/lang/Lang.qml:206
+#: activities/lang/Lang.qml:207
 msgctxt "Lang|"
 msgid "food"
 msgstr "mâncăruri"
 
-#: activities/lang/Lang.qml:207
+#: activities/lang/Lang.qml:208
 msgctxt "Lang|"
 msgid "transport"
 msgstr "transport"
@@ -17488,7 +17488,7 @@ msgstr ""
 "pictograma de „picioare goale / pantofi sport” din colțul din stânga sus al "
 "ecranului, pentru a comuta între cele două regimuri.\t"
 
-#: activities/maze/Maze.qml:339
+#: activities/maze/Maze.qml:341
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

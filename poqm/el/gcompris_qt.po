@@ -2245,7 +2245,7 @@ msgstr ""
 "περιστροφής αν είναι απαραίτητο. Παζλ με μεγαλύτερη δυσκολία υπάρχουν στη "
 "δραστηριότητα τάνγκραμ."
 
-#: activities/baby_wordprocessor/ActivityConfig.qml:27
+#: activities/baby_wordprocessor/ActivityConfig.qml:28
 msgctxt "ActivityConfig|"
 msgid "Play characters' sound when typed"
 msgstr "Αναπαραγωγή ήχου του χαρακτήρα όταν αυτός πληκτρολογείται."
@@ -2677,7 +2677,7 @@ msgstr ""
 "Μπορείς να επιλέξεις να δημιουργήσεις δικές σου πίστες με τον επεξεργαστή "
 "και να παίξεις με αυτές φορτώνοντάς τις, ή να παίξεις με τις προκαθορισμένες."
 
-#: activities/balancebox/balancebox.js:105
+#: activities/balancebox/balancebox.js:106
 #, qt-format
 msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
@@ -2764,7 +2764,7 @@ msgstr ""
 "κινηθεί σε ευθεία γραμμή. Σε οθόνη αφής, θα πρέπει να χτυπήσεις ελαφρά τα "
 "δύο χέρια ταυτόχρονα."
 
-#: activities/ballcatch/Ballcatch.qml:226
+#: activities/ballcatch/Ballcatch.qml:228
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
@@ -2772,7 +2772,7 @@ msgstr ""
 "Πάτα στα δύο χέρια την ίδια στιγμή, για να κάνεις τη μπάλα να κινηθεί σε "
 "ευθεία γραμμή."
 
-#: activities/ballcatch/Ballcatch.qml:228
+#: activities/ballcatch/Ballcatch.qml:230
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -14623,7 +14623,7 @@ msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
 msgstr "(μεταβλητά όρια)"
 
-#: activities/graduated_line_read/GraduatedLineRead.qml:15
+#: activities/graduated_line_read/GraduatedLineRead.qml:17
 msgctxt "GraduatedLineRead|"
 msgid "Find the requested number."
 msgstr "Βρες τον ζητούμενο αριθμό."
@@ -15539,14 +15539,14 @@ msgstr ""
 "επινόησε το μύθο, ή αν εμπνεύστηκε από αυτόν (source Wikipedia: http://en."
 "wikipedia.org/wiki/Tower_of_hanoi)."
 
-#: activities/hanoi_real/HanoiReal.qml:72
+#: activities/hanoi_real/HanoiReal.qml:75
 msgctxt "HanoiReal|"
 msgid "Move the entire stack to the right peg, one disc at a time."
 msgstr ""
 "Μετακίνησε ολόκληρο τον πύργο στον δεξιό πάσσαλο, μετακινώντας έναν δίσκο τη "
 "φορά."
 
-#: activities/hanoi_real/HanoiReal.qml:73
+#: activities/hanoi_real/HanoiReal.qml:76
 msgctxt "HanoiReal|"
 msgid ""
 "Build the same tower in the empty area as the one you see on the right-hand "
@@ -16115,31 +16115,31 @@ msgstr ""
 "Βελάκι Αριστερά και Δεξιά: Στα πρώτα επίπεδα μετακινούν το διαστημόπλοιο "
 "αριστερά και δεξιά αντίστοιχα, ενώ στα μεγαλύτερα επίπεδα το περιστρέφουν."
 
-#: activities/land_safe/LandSafe.qml:582
+#: activities/land_safe/LandSafe.qml:584
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "Καύσιμα: %1"
 
-#: activities/land_safe/LandSafe.qml:592
+#: activities/land_safe/LandSafe.qml:594
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "Υψόμετρο: %1"
 
-#: activities/land_safe/LandSafe.qml:602
+#: activities/land_safe/LandSafe.qml:604
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "Ταχύτητα: %1"
 
-#: activities/land_safe/LandSafe.qml:613
+#: activities/land_safe/LandSafe.qml:615
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "Επιτάχυνση: %1"
 
-#: activities/land_safe/LandSafe.qml:647
+#: activities/land_safe/LandSafe.qml:649
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -16277,13 +16277,13 @@ msgctxt "ActivityInfo|"
 msgid "Tab: repeat the word"
 msgstr "Tab: Επανάληψη της λέξης."
 
-#: activities/lang/Lang.qml:143
+#: activities/lang/Lang.qml:144
 msgctxt "Lang|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr ""
 "Συγγνώμη, αλλά δεν υπάρχει διαθέσιμη μετάφραση για τη γλώσσα που επέλεξες."
 
-#: activities/lang/Lang.qml:144
+#: activities/lang/Lang.qml:145
 #, qt-format
 msgctxt "Lang|"
 msgid ""
@@ -16294,7 +16294,7 @@ msgstr ""
 "επικοινωνία με μια μεταφραστική ομάδα στο <a href=\"%2\">%2</a> για να "
 "βοηθήσεις στη μετάφρασή του."
 
-#: activities/lang/Lang.qml:146
+#: activities/lang/Lang.qml:147
 msgctxt "Lang|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -16303,117 +16303,117 @@ msgstr ""
 "Θα χρησιμοποιηθεί η αγγλική γλώσσα γι' αυτή τη δραστηριότητα, αλλά μπορείς "
 "να επιλέξεις μια άλλη από το μενού 'Ρυθμίσεις'."
 
-#: activities/lang/Lang.qml:194 activities/lang/Lang.qml:195
+#: activities/lang/Lang.qml:195 activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "other"
 msgstr "διάφορα"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "action"
 msgstr "ενέργειες"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "adjective"
 msgstr "επίθετα"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "color"
 msgstr "χρώματα"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "number"
 msgstr "αριθμοί"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "people"
 msgstr "άνθρωποι"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "bodyparts"
 msgstr "μέρη του σώματος"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "clothes"
 msgstr "ρούχα"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "emotion"
 msgstr "συναισθήματα"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "job"
 msgstr "επαγγέλματα"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "sport"
 msgstr "φυσική δραστηριότητα"
 
-#: activities/lang/Lang.qml:201
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "nature"
 msgstr "φύση"
 
-#: activities/lang/Lang.qml:201
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "animal"
 msgstr "ζώα"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "fruit"
 msgstr "φρούτα"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "plant"
 msgstr "φυτά"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:204
 msgctxt "Lang|"
 msgid "vegetables"
 msgstr "λαχανικά"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:204
 msgctxt "Lang|"
 msgid "object"
 msgstr "αντικείμενα"
 
-#: activities/lang/Lang.qml:204
+#: activities/lang/Lang.qml:205
 msgctxt "Lang|"
 msgid "construction"
 msgstr "κατασκευές"
 
-#: activities/lang/Lang.qml:205
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "furniture"
 msgstr "έπιπλα"
 
-#: activities/lang/Lang.qml:205
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "houseware"
 msgstr "οικιακά είδη"
 
-#: activities/lang/Lang.qml:206
+#: activities/lang/Lang.qml:207
 msgctxt "Lang|"
 msgid "tool"
 msgstr "εργαλεία"
 
-#: activities/lang/Lang.qml:206
+#: activities/lang/Lang.qml:207
 msgctxt "Lang|"
 msgid "food"
 msgstr "φαγητά"
 
-#: activities/lang/Lang.qml:207
+#: activities/lang/Lang.qml:208
 msgctxt "Lang|"
 msgid "transport"
 msgstr "μετακινήσεις"
@@ -17649,7 +17649,7 @@ msgstr ""
 "απενεργοποιήσεις στα μεγαλύτερα επίπεδα, κάνε κλικ στο εικονίδιο πάνω "
 "αριστερά που εμφανίζει τα πόδια του Tux γυμνά ή με παπούτσια.\t"
 
-#: activities/maze/Maze.qml:339
+#: activities/maze/Maze.qml:341
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

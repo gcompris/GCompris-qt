@@ -2128,7 +2128,7 @@ msgstr ""
 "通过拖动一个图块移动它，必要时使用旋转按钮。更复杂的关卡可以在七巧板活动中找"
 "到。"
 
-#: activities/baby_wordprocessor/ActivityConfig.qml:27
+#: activities/baby_wordprocessor/ActivityConfig.qml:28
 msgctxt "ActivityConfig|"
 msgid "Play characters' sound when typed"
 msgstr "打字时播放字符读音"
@@ -2535,7 +2535,7 @@ msgstr ""
 "要么在活动设置菜单中启动关卡编辑器创建关卡，然后加载您的关卡文件，要么选择“内"
 "置”关卡。"
 
-#: activities/balancebox/balancebox.js:105
+#: activities/balancebox/balancebox.js:106
 #, qt-format
 msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
@@ -2614,13 +2614,13 @@ msgid ""
 "same time."
 msgstr "同时按下左右方向键，使球走直线。在触摸屏上，您必须用双手同时点击。"
 
-#: activities/ballcatch/Ballcatch.qml:226
+#: activities/ballcatch/Ballcatch.qml:228
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr "同时轻击两只手，使球走直线。"
 
-#: activities/ballcatch/Ballcatch.qml:228
+#: activities/ballcatch/Ballcatch.qml:230
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -13719,7 +13719,7 @@ msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
 msgstr ""
 
-#: activities/graduated_line_read/GraduatedLineRead.qml:15
+#: activities/graduated_line_read/GraduatedLineRead.qml:17
 msgctxt "GraduatedLineRead|"
 msgid "Find the requested number."
 msgstr ""
@@ -14545,12 +14545,12 @@ msgid ""
 "Tower_of_hanoi)"
 msgstr ""
 
-#: activities/hanoi_real/HanoiReal.qml:72
+#: activities/hanoi_real/HanoiReal.qml:75
 msgctxt "HanoiReal|"
 msgid "Move the entire stack to the right peg, one disc at a time."
 msgstr "将整摞碟子移动到右边的柱子上，一次只能移动一个碟子。"
 
-#: activities/hanoi_real/HanoiReal.qml:73
+#: activities/hanoi_real/HanoiReal.qml:76
 msgctxt "HanoiReal|"
 msgid ""
 "Build the same tower in the empty area as the one you see on the right-hand "
@@ -15093,31 +15093,31 @@ msgid ""
 "rotate the spaceship"
 msgstr ""
 
-#: activities/land_safe/LandSafe.qml:582
+#: activities/land_safe/LandSafe.qml:584
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "燃料：%1"
 
-#: activities/land_safe/LandSafe.qml:592
+#: activities/land_safe/LandSafe.qml:594
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "高度：%1"
 
-#: activities/land_safe/LandSafe.qml:602
+#: activities/land_safe/LandSafe.qml:604
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "速度：%1"
 
-#: activities/land_safe/LandSafe.qml:613
+#: activities/land_safe/LandSafe.qml:615
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "加速度：%1"
 
-#: activities/land_safe/LandSafe.qml:647
+#: activities/land_safe/LandSafe.qml:649
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -15241,12 +15241,12 @@ msgctxt "ActivityInfo|"
 msgid "Tab: repeat the word"
 msgstr "Tab 键：重复词"
 
-#: activities/lang/Lang.qml:143
+#: activities/lang/Lang.qml:144
 msgctxt "Lang|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "抱歉，我们找不到适合您的语言的翻译。"
 
-#: activities/lang/Lang.qml:144
+#: activities/lang/Lang.qml:145
 #, qt-format
 msgctxt "Lang|"
 msgid ""
@@ -15256,124 +15256,124 @@ msgstr ""
 "GCompris 由 KDE 社区开发，您可以通过加入翻译团队(<a href=\"%2\">%2</a>)来贡献"
 "翻译"
 
-#: activities/lang/Lang.qml:146
+#: activities/lang/Lang.qml:147
 msgctxt "Lang|"
 msgid ""
 "We switched to English for this activity but you can select another language "
 "in the configuration dialog."
 msgstr "我们将在这一活动中使用英语，不过您也可以在设置对话框中选择其他的语言。"
 
-#: activities/lang/Lang.qml:194 activities/lang/Lang.qml:195
+#: activities/lang/Lang.qml:195 activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "other"
 msgstr "其他"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "action"
 msgstr "操作"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "adjective"
 msgstr "形容词"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "color"
 msgstr "颜色"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "number"
 msgstr "数字"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "people"
 msgstr "人"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "bodyparts"
 msgstr "身体部位"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "clothes"
 msgstr "衣服"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "emotion"
 msgstr "表情"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "job"
 msgstr "职业"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "sport"
 msgstr "运动"
 
-#: activities/lang/Lang.qml:201
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "nature"
 msgstr "自然"
 
-#: activities/lang/Lang.qml:201
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "animal"
 msgstr "动物"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "fruit"
 msgstr "水果"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "plant"
 msgstr "植物"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:204
 msgctxt "Lang|"
 msgid "vegetables"
 msgstr "蔬菜"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:204
 msgctxt "Lang|"
 msgid "object"
 msgstr "物体"
 
-#: activities/lang/Lang.qml:204
+#: activities/lang/Lang.qml:205
 msgctxt "Lang|"
 msgid "construction"
 msgstr "建筑"
 
-#: activities/lang/Lang.qml:205
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "furniture"
 msgstr "家具"
 
-#: activities/lang/Lang.qml:205
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "houseware"
 msgstr "家居用品"
 
-#: activities/lang/Lang.qml:206
+#: activities/lang/Lang.qml:207
 msgctxt "Lang|"
 msgid "tool"
 msgstr "工具"
 
-#: activities/lang/Lang.qml:206
+#: activities/lang/Lang.qml:207
 msgctxt "Lang|"
 msgid "food"
 msgstr "食品"
 
-#: activities/lang/Lang.qml:207
+#: activities/lang/Lang.qml:208
 msgctxt "Lang|"
 msgid "transport"
 msgstr ""
@@ -16485,7 +16485,7 @@ msgid ""
 "of the screen to toggle the run-fast-mode.\t"
 msgstr ""
 
-#: activities/maze/Maze.qml:339
+#: activities/maze/Maze.qml:341
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
