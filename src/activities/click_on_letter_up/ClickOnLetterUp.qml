@@ -9,8 +9,6 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import core 1.0
-
 import "../click_on_letter"
 
 ClickOnLetter {
