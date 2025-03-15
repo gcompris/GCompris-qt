@@ -8,8 +8,11 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import QtQuick.Effects
+import core 1.0
 
 import "../../core"
 import "fifteen.js" as Activity
@@ -23,7 +26,7 @@ ActivityBase {
     pageComponent: Image {
         id: activityBackground
         anchors.fill: parent
-        source: Activity.url + "background.svg"
+        source: activity.resourceUrl + "background.svg"
         sourceSize.width: width
         sourceSize.height: height
         fillMode: Image.PreserveAspectCrop
@@ -48,8 +51,8 @@ ActivityBase {
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias model: fifteenModel
-            property string scene: bar.level < 5 ? Activity.url + "Fishing_Boat_Scene.svg" :
-                                                   Activity.url + "Coastal_Path.svg"
+            property string scene: bar.level < 5 ? activity.resourceUrl + "Fishing_Boat_Scene.svg" :
+                                                   activity.resourceUrl + "Coastal_Path.svg"
             property bool buttonsBlocked: false
         }
 
@@ -66,7 +69,7 @@ ActivityBase {
 
         Image {
             id: blueFrame
-            source: Activity.url + "blueframe.svg"
+            source: activity.resourceUrl + "blueframe.svg"
             sourceSize.width: Math.min(activityBackground.width,
                                        activityBackground.height - bar.height) * 0.95
             anchors.horizontalCenter: parent.horizontalCenter
@@ -100,19 +103,20 @@ ActivityBase {
                 id: repeater
                 model: fifteenModel
                 delegate: Item {
-                    width: pieceSize
-                    height: pieceSize
+                    id: blockItem
+                    width: activityBackground.pieceSize
+                    height: activityBackground.pieceSize
                     clip: true
-                    property int val: value
+                    required property int value
 
                     Image {
                         id: image
-                        source: value ? items.scene : ""
-                        sourceSize.width: pieceSize * 4
+                        source: blockItem.value ? items.scene : ""
+                        sourceSize.width: activityBackground.pieceSize * 4
                         fillMode: Image.Pad
                         transform: Translate {
-                            x: - pieceSize * ((value - 1) % 4)
-                            y: - pieceSize * Math.floor((value - 1) / 4)
+                            x: - activityBackground.pieceSize * ((blockItem.value - 1) % 4)
+                            y: - activityBackground.pieceSize * Math.floor((blockItem.value - 1) / 4)
                         }
                     }
 
@@ -120,7 +124,7 @@ ActivityBase {
                         id: text
                         anchors.horizontalCenter: parent.horizontalCenter
                         anchors.verticalCenter: parent.verticalCenter
-                        text: value && bar.level % 2 == 1 ? value : ""
+                        text: blockItem.value && bar.level % 2 == 1 ? blockItem.value : ""
                         fontSize: mediumSize
                         color: "#ffe9f0fb"
                         style: Text.Outline
@@ -150,14 +154,14 @@ ActivityBase {
 
             onPressed: (touchPoints) => checkTouchPoint(touchPoints)
 
-            function checkTouchPoint(touchPoints) {
+            function checkTouchPoint(touchPoints: var) {
                 for(var i in touchPoints) {
                     var touch = touchPoints[i]
                     var block = puzzleArea.childAt(touch.x, touch.y)
-                    if(block.val === 0)
+                    if(block.value === 0)
                         return
                     else if(!puzzleArea.trans.running && block) {
-                        Activity.onClick(block.val)
+                        Activity.onClick(block.value)
                         if(Activity.checkAnswer()) {
                             items.buttonsBlocked = true
                             bonus.good('flower')
@@ -171,7 +175,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
@@ -179,7 +183,7 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
