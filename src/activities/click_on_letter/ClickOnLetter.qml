@@ -9,6 +9,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
 
 import QtQuick
 import core 1.0
@@ -91,7 +92,7 @@ ActivityBase {
 
         onStart: {
             activity.audioVoices.done.connect(voiceDone);
-            Activity.start(items, mode);
+            Activity.start(items, activity.mode);
             eventHandler.forceActiveFocus();
         }
 
@@ -134,11 +135,11 @@ ActivityBase {
             id: dialogActivityConfig
             currentActivity: activity.activityInfo
             onClose: {
-                home();
+                activity.home();
                 eventHandler.forceActiveFocus();
             }
             onSaveData: {
-                levelFolder = dialogActivityConfig.chosenLevels;
+                activity.levelFolder = dialogActivityConfig.chosenLevels;
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels;
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels);
             }
@@ -159,7 +160,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelpLeftRight
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
@@ -167,13 +168,13 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
-                displayDialog(dialogHelpLeftRight)
+                activity.displayDialog(dialogHelpLeftRight)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: home()
+            onHomeClicked: activity.home()
             onActivityConfigClicked: {
-                displayDialog(dialogActivityConfig)
+                activity.displayDialog(dialogActivityConfig)
             }
         }
 
@@ -260,8 +261,8 @@ ActivityBase {
             source: Activity.url + "engine.svg"
             anchors.bottom: wholeTrainArea.bottom
             anchors.left: wholeTrainArea.left
-            sourceSize.width: itemWidth
-            sourceSize.height: itemWidth
+            sourceSize.width: activityBackground.itemWidth
+            sourceSize.height: activityBackground.itemWidth
             fillMode: Image.PreserveAspectFit
         }
 
@@ -292,8 +293,8 @@ ActivityBase {
             anchors.top: wholeTrainArea.top
             anchors.right: wholeTrainArea.right
             anchors.left: engine.right
-            cellWidth: itemWidth
-            cellHeight: itemWidth
+            cellWidth: activityBackground.itemWidth
+            cellHeight: activityBackground.itemWidth
             clip: false
             interactive: false
             verticalLayoutDirection: GridView.BottomToTop
@@ -308,6 +309,13 @@ ActivityBase {
                 nbCarriage: train.width / train.cellWidth - 1
                 clickEnabled: items.buttonsBlocked ? false : (activity.audioVoices.playbackState == 1 ? false : true)
                 isSelected: train.currentIndex === index
+                keyNavigationMode: items.keyNavigationMode
+                errorRectangle: errorRectangle
+                onClicked: {
+                    items.lastSelectedIndex = train.currentIndex
+                    items.keyNavigationMode = false
+                    items.buttonsBlocked = true
+                }
             }
         }
 
@@ -321,20 +329,20 @@ ActivityBase {
             function releaseControls() {
                 items.buttonsBlocked = false;
             }
-        }
 
-        function moveErrorRectangle(clickedItem) {
-            errorRectangle.parent = clickedItem
-            if(clickedItem.isCarriage){
-                errorRectangle.anchors.centerIn = clickedItem.carriageBg
-            } else {
-                errorRectangle.anchors.centerIn = errorRectangle.parent
+            function moveErrorRectangle(clickedItem: Carriage) {
+                errorRectangle.parent = clickedItem
+                if(clickedItem.isCarriage){
+                    errorRectangle.anchors.centerIn = clickedItem.carriageBg
+                } else {
+                    errorRectangle.anchors.centerIn = errorRectangle.parent
+                }
+                errorRectangle.startAnimation()
+                crashSound.play()
             }
-            errorRectangle.startAnimation()
-            crashSound.play()
         }
 
-        function handleKeys(event) {
+        function handleKeys(event: var) {
             if(!items.keyNavigationMode) {
                 smudgeSound.play();
                 items.keyNavigationMode = true;
@@ -360,7 +368,7 @@ ActivityBase {
                     train.currentItem.successAnimation.restart();
                     train.currentItem.particle.burst(30);
                 } else {
-                    moveErrorRectangle(train.currentItem);
+                    errorRectangle.moveErrorRectangle(train.currentItem);
                 }
             }
         }

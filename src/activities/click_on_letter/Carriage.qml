@@ -18,10 +18,14 @@ import "click_on_letter.js" as Activity
 
 Image {
     id: carriageItem
+    required property int index
+    required property string letter
+    property ErrorRectangle errorRectangle
     property int nbCarriage
     property bool isCarriage: index <= nbCarriage
     property bool clickEnabled
     property bool isSelected
+    property bool keyNavigationMode
     property alias successAnimation: successAnimation
     property alias particle: particle
     property alias carriageBg: carriageBg
@@ -33,9 +37,11 @@ Image {
                 Activity.url + "cloud.svg"
     z: (state == 'scaled') ? 1 : -1
 
+    signal clicked
+
     Rectangle {
         id: carriageBg
-        visible: isCarriage
+        visible: carriageItem.isCarriage
         anchors.top: parent.top
         anchors.bottom: parent.bottom
         anchors.left: parent.left
@@ -50,11 +56,11 @@ Image {
 
     Rectangle {
         id: selector
-        visible: isSelected && items.keyNavigationMode
+        visible: carriageItem.isSelected && carriageItem.keyNavigationMode
         width: parent.width
         height: parent.height
         anchors.verticalCenter: parent.verticalCenter
-        anchors.horizontalCenter: isCarriage ?
+        anchors.horizontalCenter: carriageItem.isCarriage ?
             carriageBg.horizontalCenter : parent.horizontalCenter
         radius: GCStyle.halfMargins
         color: GCStyle.highlightColor
@@ -64,8 +70,8 @@ Image {
 
     GCText {
         id: text
-        anchors.centerIn: isCarriage ? carriageBg : parent
-        text: letter
+        anchors.centerIn: carriageItem.isCarriage ? carriageBg : parent
+        text: carriageItem.letter
         width: carriageBg.width
         height: carriageBg.height
         horizontalAlignment: Text.AlignHCenter
@@ -97,14 +103,12 @@ Image {
 
         onClicked: {
             if(carriageItem.clickEnabled) {
-                items.lastSelectedIndex = train.currentIndex
-                items.keyNavigationMode = false;
-                items.buttonsBlocked = true;
-                if (Activity.checkAnswer(index)) {
+                carriageItem.clicked()
+                if (Activity.checkAnswer(carriageItem.index)) {
                     successAnimation.restart();
                     particle.burst(30);
                 } else {
-                    activityBackground.moveErrorRectangle(carriageItem);
+                    carriageItem.errorRectangle.moveErrorRectangle(carriageItem);
                 }
             }
         }
