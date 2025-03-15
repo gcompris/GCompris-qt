@@ -12,8 +12,6 @@
 .import QtQuick 2.12 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var url = "qrc:/gcompris/src/activities/fifteen/resource/"
-
 var numberOfLevel = 14
 var items
 
