@@ -22251,13 +22251,13 @@ msgstr "Sélectionne l'image où l'enfant se trouve derrière la boîte."
 #: activities/positions/resource/2/Data.qml:38
 msgctxt "Data|"
 msgid "in front of"
-msgstr "en face"
+msgstr "devant"
 
 #: activities/positions/resource/1/Data.qml:33
 #: activities/positions/resource/2/Data.qml:39
 msgctxt "Data|"
 msgid "Select the image where the child is in front of the box."
-msgstr "Sélectionne l'image où l'enfant se trouve en face de la boîte."
+msgstr "Sélectionne l'image où l'enfant se trouve devant de la boîte."
 
 #. it refers to the inside position
 #: activities/positions/resource/1/Data.qml:38
