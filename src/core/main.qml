@@ -264,10 +264,6 @@ Window {
        id: changelog
     }
 
-    Component.onCompleted: {
-        load.start();
-    }
-
     Loader {
         id: newDatasetsDialog
         property var newDatasetsModel
@@ -441,6 +437,7 @@ Window {
         id: secondTimer
         interval: 500
         onTriggered: {
+            load.start();
             if(ActivityInfoTree.startingActivity !== "") {
                 // Don't play welcome intro
                 welcomePlayed = true;
