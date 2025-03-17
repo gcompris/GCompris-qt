@@ -12,6 +12,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
 
 import QtQuick
 import core 1.0
@@ -25,9 +26,11 @@ ActivityBase {
 
     onStart: focus = true
 
+    resourceUrl: "qrc:/gcompris/src/activities/braille_fun/resource/"
+
     pageComponent: Image {
         id: activityBackground
-        source: Activity.resUrl + "hillside.svg"
+        source: activity.resourceUrl + "hillside.svg"
         sourceSize.width: parent.width
         sourceSize.height: parent.height
         fillMode: Image.PreserveAspectCrop
@@ -119,7 +122,7 @@ ActivityBase {
             id: dialogActivityConfig
             currentActivity: activity.activityInfo
             onClose: {
-                home();
+                activity.home();
             }
             onLoadData: {
                 if(activityData && activityData["locale"] && activityData["locale"] !== "system") {
@@ -143,7 +146,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelpLeftRight
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
@@ -151,13 +154,13 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
-                displayDialog(dialogHelpLeftRight)
+                activity.displayDialog(dialogHelpLeftRight)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: home()
+            onHomeClicked: activity.home()
             onActivityConfigClicked: {
-                displayDialog(dialogActivityConfig);
+                activity.displayDialog(dialogActivityConfig);
             }
         }
 
@@ -195,7 +198,7 @@ ActivityBase {
                 id: plane
                 anchors.centerIn: planeText
                 anchors.top: parent.top
-                source: Activity.resUrl + "plane.svg"
+                source: activity.resourceUrl + "plane.svg"
                 sourceSize.height: 90 * ApplicationInfo.ratio
             }
 
@@ -236,7 +239,7 @@ ActivityBase {
                 margins: GCStyle.baseMargins
             }
             onClicked:{
-                if(!audioVoices.isPlaying() && !items.buttonsBlocked) {
+                if(!activity.audioVoices.isPlaying() && !items.buttonsBlocked) {
                     Activity.playLetter(Activity.currentLetter);
                     animateX.restart();
                 }
@@ -344,7 +347,7 @@ ActivityBase {
             anchors.fill: parent
             focus: true
             active: activityBackground.englishFallback
-            onStatusChanged: if (status == Loader.Ready) item.start()
+            onStatusChanged: if (status == Loader.Ready) (item as GCDialog).start()
         }
     }
 }
