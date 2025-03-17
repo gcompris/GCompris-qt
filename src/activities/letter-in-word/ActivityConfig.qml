@@ -38,14 +38,14 @@ Item {
         GCDialogCheckBox {
             id: normalModeConfig
             text: qsTr("All the words")
-            checked: savedMode === 11 ? true : false
+            checked: activityConfiguration.savedMode === 11 ? true : false
             onCheckedChanged: easyModeConfig.checked = !normalModeConfig.checked;
         }
 
         GCDialogCheckBox {
             id: easyModeConfig
             text: qsTr("Only 5 words")
-            checked: savedMode === 5 ? true : false
+            checked: activityConfiguration.savedMode === 5 ? true : false
             onCheckedChanged: normalModeConfig.checked = !easyModeConfig.checked;
         }
 
@@ -58,8 +58,8 @@ Item {
             {"text": qsTr("Upper Case"), "value": Font.AllUppercase},
             {"text": qsTr("Lower Case"), "value": Font.AllLowercase}
             ]
-            currentText: model[savedLetterCase].text
-            currentIndex: savedLetterCase
+            currentText: model[activityConfiguration.savedLetterCase].text
+            currentIndex: activityConfiguration.savedLetterCase
         }
 
         GCComboBox {

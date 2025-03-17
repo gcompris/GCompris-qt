@@ -18,8 +18,6 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 .import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
 
-var resUrl = "qrc:/gcompris/src/activities/braille_fun/resource/"
-
 var levels;
 var maxLevel;
 var currentLetter;

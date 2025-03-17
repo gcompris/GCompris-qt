@@ -17,6 +17,11 @@ import "letter-in-word.js" as Activity
 
 Rectangle {
     id: cardItem
+    required property int index
+    required property string imgurl
+    required property string spelling
+    required property string voice
+    required property bool selected
     property bool mouseActive: true
     color: "#01FFFFFF"  //setting the base as not totally transparent rectangle avoids the bug of randomly overlapping images when highlight moves
 
@@ -28,7 +33,7 @@ Rectangle {
         anchors.horizontalCenter: parent.horizontalCenter
         sourceSize.width: width
         fillMode: Image.PreserveAspectFit
-        source: imgurl
+        source: cardItem.imgurl
     }
 
     Rectangle {
@@ -40,7 +45,7 @@ Rectangle {
         border.width: GCStyle.thickerBorder
         border.color: "#E77936"
         anchors.centerIn: cardBg
-        visible: selected
+        visible: cardItem.selected
     }
 
     Rectangle {
@@ -54,13 +59,13 @@ Rectangle {
 
         GCText {
             id: textItem
-            text: spelling
+            text: cardItem.spelling
             fontSizeMode: Text.Fit
             fontSize: smallSize
             font.bold: true
             anchors.fill: parent
             anchors.margins: GCStyle.halfMargins
-            wrapMode: spelling.indexOf(' ') === -1 ? Text.WrapAnywhere : Text.WordWrap
+            wrapMode: cardItem.spelling.indexOf(' ') === -1 ? Text.WrapAnywhere : Text.WordWrap
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
         }
@@ -71,7 +76,7 @@ Rectangle {
         anchors.fill: parent
         hoverEnabled: ApplicationInfo.isMobile ? false : true
         onClicked: {
-            select();
+            cardItem.select();
         }
     }
 
