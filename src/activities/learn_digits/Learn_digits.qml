@@ -174,7 +174,7 @@ ActivityBase {
             font.bold: true
             color: "#d2611d"
             style: Text.Outline
-            styleColor: "white"
+            styleColor: GCStyle.whiteBorder
         }
         Image {
             id: questionImage
@@ -263,11 +263,12 @@ ActivityBase {
         Rectangle {
             id: circlesBackground
             visible: false
-            color: "#D0FFFFFF"
+            color: GCStyle.whiteBg
+            opacity: 0.8
             anchors.bottom: layoutArea.bottom
             anchors.right: layoutArea.right
-            anchors.margins: 10 * ApplicationInfo.ratio
-            radius: anchors.margins
+            anchors.margins: GCStyle.baseMargins
+            radius: GCStyle.halfMargins
         }
         Item {
             id: circlesArea
@@ -280,8 +281,8 @@ ActivityBase {
                 id: circlesSelector
                 width: circlesArea.itemWidth
                 height: circlesArea.itemWidth
-                radius: 10 * ApplicationInfo.ratio
-                color: "#803ACAFF"
+                radius: GCStyle.tinyMargins
+                color: GCStyle.highlightColor
                 visible: items.selectedCircle > -1
                 anchors.centerIn: circlesLine.itemAt(items.selectedCircle)
             }
@@ -316,8 +317,8 @@ ActivityBase {
                     Rectangle {
                         id: circle
                         anchors.centerIn: parent
-                        border.color: "#373737"
-                        border.width: 5 * ApplicationInfo.ratio
+                        border.color: GCStyle.darkBorder
+                        border.width: GCStyle.thickBorder
                         color: circleColor
                         width: parent.width * 0.9
                         height: width
