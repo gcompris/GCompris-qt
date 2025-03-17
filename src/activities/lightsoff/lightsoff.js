@@ -18,8 +18,6 @@ var soluc
 var showSoluce = false
 var size = 5
 
-var url = "qrc:/gcompris/src/activities/lightsoff/resource/"
-
 function start(items_) {
     items = items_
     numberOfLevel = items.levels.length
