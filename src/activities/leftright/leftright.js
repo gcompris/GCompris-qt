@@ -139,11 +139,3 @@ function goodAnswerPressed() {
     items.score.currentSubLevel++;
     items.score.playWinAnimation();
 }
-
-function leftClickPressed() {
-    items.leftButton.pressed()
-}
-
-function rightClickPressed() {
-    items.rightButton.pressed()
-}
