@@ -22,7 +22,7 @@ Rectangle {
 
     Image {
         id: wordPic
-        width: cardItem.width * 0.8
+        width: cardItem.width * 0.6
         height: width
         anchors.top: parent.top
         anchors.horizontalCenter: parent.horizontalCenter
@@ -32,11 +32,12 @@ Rectangle {
     }
 
     Rectangle {
-        width: cardBg.width + 10 * ApplicationInfo.ratio
-        height: cardBg.height + 10 * ApplicationInfo.ratio
-        radius: 15 * ApplicationInfo.ratio
+        id: cardBgOutline
+        width: cardItem.width - GCStyle.baseMargins
+        height: cardItem.height * 0.5
+        radius: GCStyle.baseMargins
         color: "#00000000"
-        border.width: 5 * ApplicationInfo.ratio + 1 // +1 to avoid subpixel holes around cardBg
+        border.width: GCStyle.thickerBorder
         border.color: "#E77936"
         anchors.centerIn: cardBg
         visible: selected
@@ -46,26 +47,22 @@ Rectangle {
         id: cardBg
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: parent.bottom
-        width: wordPic.width
-        height: wordPic.height * 0.5
-        radius: 10 * ApplicationInfo.ratio
+        width: cardItem.width - 2 * GCStyle.baseMargins
+        height: cardBgOutline.height - GCStyle.baseMargins
+        radius: GCStyle.halfMargins
         color: "#E0FFFFFF"
 
         GCText {
             id: textItem
             text: spelling
-            font.pointSize: NaN  // need to clear font.pointSize explicitly
             fontSizeMode: Text.Fit
-            minimumPixelSize: 10
-            font.pixelSize: cardBg.width * 0.30
+            fontSize: smallSize
             font.bold: true
-            style: Text.Outline
-            width: cardBg.width
-            height: cardBg.height
+            anchors.fill: parent
+            anchors.margins: GCStyle.halfMargins
             wrapMode: spelling.indexOf(' ') === -1 ? Text.WrapAnywhere : Text.WordWrap
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
-            styleColor: "white"
         }
     }
 
