@@ -35,7 +35,6 @@ ActivityBase {
         signal stop
 
         readonly property bool horizontalLayout: layoutArea.width >= layoutArea.height
-        readonly property int baseMargins: 10 * ApplicationInfo.ratio
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -60,7 +59,7 @@ ActivityBase {
             property int doory: 0
             property int cellSize: Math.min(mazeArea.height / mazeRows,
                                             mazeArea.width / mazeColumns)
-            property int wallSize: Math.max(2, cellSize / 10)
+            property int wallSize: Math.max(2, cellSize * 0.1)
             property bool wallVisible: true
             property bool fastMode: false
             property bool win: false
@@ -90,11 +89,11 @@ ActivityBase {
             anchors.top: layoutArea.top
             anchors.left: layoutArea.left
             anchors.right: layoutArea.right
-            anchors.topMargin: activityBackground.horizontalLayout ? 3 * activityBackground.baseMargins : fastmode.height + 2 * activityBackground.baseMargins
-            anchors.leftMargin: activityBackground.horizontalLayout ? fastmode.width + 2 * activityBackground.baseMargins : activityBackground.baseMargins
+            anchors.topMargin: activityBackground.horizontalLayout ? 3 * GCStyle.baseMargins : fastmode.height + 2 * GCStyle.baseMargins
+            anchors.leftMargin: activityBackground.horizontalLayout ? fastmode.width + 2 * GCStyle.baseMargins : GCStyle.baseMargins
             anchors.rightMargin: anchors.leftMargin
             anchors.bottom: parent.bottom
-            anchors.bottomMargin: ApplicationSettings.isBarHidden && activityBackground.horizontalLayout ? 3 * activityBackground.baseMargins : bar.height * 1.2
+            anchors.bottomMargin: ApplicationSettings.isBarHidden && activityBackground.horizontalLayout ? 3 * GCStyle.baseMargins : bar.height * 1.2
         }
 
         Rectangle {
@@ -119,11 +118,11 @@ ActivityBase {
                         id: north
                         width: items.cellSize + items.wallSize
                         height: items.wallSize
-                        radius: height / 2
+                        radius: height * 0.5
                         anchors.top: parent.top
                         anchors.left: parent.left
-                        anchors.topMargin: -items.wallSize / 2
-                        anchors.leftMargin: -items.wallSize / 2
+                        anchors.topMargin: -items.wallSize * 0.5
+                        anchors.leftMargin: -items.wallSize * 0.5
                         color: "#B38B56"
                         visible: modelData & 1 ? items.wallVisible : false
                         z: 1
@@ -133,11 +132,11 @@ ActivityBase {
                         id: south
                         width: items.cellSize + items.wallSize
                         height: items.wallSize
-                        radius: height / 2
+                        radius: height * 0.5
                         anchors.bottom: parent.bottom
                         anchors.left: parent.left
-                        anchors.bottomMargin: -items.wallSize / 2
-                        anchors.leftMargin: -items.wallSize / 2
+                        anchors.bottomMargin: -items.wallSize * 0.5
+                        anchors.leftMargin: -items.wallSize * 0.5
                         color: "#B38B56"
                         visible: modelData & 4 ? items.wallVisible : false
                         z: 1
@@ -147,11 +146,11 @@ ActivityBase {
                         id: east
                         width: items.wallSize
                         height: items.cellSize + items.wallSize
-                        radius: width / 2
+                        radius: width * 0.5
                         anchors.bottom: parent.bottom
                         anchors.right: parent.right
-                        anchors.bottomMargin: -items.wallSize / 2
-                        anchors.rightMargin: -items.wallSize / 2
+                        anchors.bottomMargin: -items.wallSize * 0.5
+                        anchors.rightMargin: -items.wallSize * 0.5
                         color: "#B38B56"
                         visible: modelData & 8 ? items.wallVisible : false
                         z: 1
@@ -161,11 +160,11 @@ ActivityBase {
                         id: west
                         width: items.wallSize
                         height: items.cellSize + items.wallSize
-                        radius: width / 2
+                        radius: width * 0.5
                         anchors.bottom: parent.bottom
                         anchors.left: parent.left
-                        anchors.bottomMargin: -items.wallSize / 2
-                        anchors.leftMargin: -items.wallSize / 2
+                        anchors.bottomMargin: -items.wallSize * 0.5
+                        anchors.leftMargin: -items.wallSize * 0.5
                         color: "#B38B56"
                         visible: modelData & 2 ? items.wallVisible : false
                         z: 1
@@ -197,15 +196,15 @@ ActivityBase {
                 // Find the direction with the most move
                 if(Math.abs(moveX) * ApplicationInfo.ratio > 10 &&
                    Math.abs(moveX) > Math.abs(moveY)) {
-                    if(moveX > 10 * ApplicationInfo.ratio)
+                    if(moveX > GCStyle.baseMargins)
                         Activity.clickRight()
-                    else if(moveX < -10 * ApplicationInfo.ratio)
+                    else if(moveX < -GCStyle.baseMargins)
                         Activity.clickLeft()
                 } else if(Math.abs(moveY) * ApplicationInfo.ratio > 10 &&
                           Math.abs(moveX) < Math.abs(moveY)) {
-                    if(moveY > 10 * ApplicationInfo.ratio)
+                    if(moveY > GCStyle.baseMargins)
                         Activity.clickDown()
-                    else if(moveY < -10 * ApplicationInfo.ratio)
+                    else if(moveY < -GCStyle.baseMargins)
                         Activity.clickUp()
                 } else {
                     // No move, just a tap or mouse click
@@ -228,8 +227,8 @@ ActivityBase {
             id: player
             source: Activity.url + "tux_top_south.svg"
             sourceSize.width: items.cellSize * 0.8
-            x: maze.x + items.cellSize * 0.05 + items.wallSize / 2 + items.playerx * items.cellSize
-            y: maze.y + items.cellSize * 0.20 + items.wallSize / 2 + items.playery * items.cellSize
+            x: maze.x + items.cellSize * 0.05 + items.wallSize * 0.5 + items.playerx * items.cellSize
+            y: maze.y + items.cellSize * 0.20 + items.wallSize * 0.5 + items.playery * items.cellSize
             z: 2
             rotation: items.playerr
             Timer {
@@ -280,10 +279,10 @@ ActivityBase {
             source: Activity.url + "door.svg"
             width: items.cellSize * 0.6
             height: items.cellSize * 0.8
-            y: maze.y + items.cellSize * 0.05 + items.wallSize / 2 + items.doory * items.cellSize
+            y: maze.y + items.cellSize * 0.05 + items.wallSize * 0.5 + items.doory * items.cellSize
             z: 1
             anchors.right: maze.right
-            anchors.rightMargin: items.cellSize * 0.15 + items.wallSize / 2
+            anchors.rightMargin: items.cellSize * 0.15 + items.wallSize * 0.5
         }
 
         BarButton {
@@ -291,8 +290,8 @@ ActivityBase {
             source: Activity.url + "fast-mode-button.svg"
             width: 66 * ApplicationInfo.ratio
             visible: !message.visible
-            x: activityBackground.baseMargins
-            y: activityBackground.baseMargins
+            x: GCStyle.baseMargins
+            y: GCStyle.baseMargins
             onClicked: items.fastMode = !items.fastMode
         }
 
@@ -302,7 +301,7 @@ ActivityBase {
             anchors {
                 right: parent.right
                 top: parent.top
-                margins: activityBackground.baseMargins
+                margins: GCStyle.baseMargins
             }
             width: fastmode.width
             visible: invisibleMode
@@ -314,7 +313,7 @@ ActivityBase {
 
         Rectangle {
             anchors.centerIn: message
-            width: message.contentWidth + 2 * activityBackground.baseMargins
+            width: message.contentWidth + 2 * GCStyle.baseMargins
             height: message.contentHeight
             color: "#D0FFFFFF"
             border.width: 0
@@ -327,11 +326,11 @@ ActivityBase {
                 left: parent.left
                 right: switchMaze.left
                 top: parent.top
-                leftMargin: activityBackground.baseMargins * 2
-                rightMargin: activityBackground.baseMargins * 2
-                topMargin: activityBackground.horizontalLayout ? 0 : activityBackground.baseMargins
+                leftMargin: GCStyle.baseMargins * 2
+                rightMargin: GCStyle.baseMargins * 2
+                topMargin: activityBackground.horizontalLayout ? 0 : GCStyle.baseMargins
             }
-            height: activityBackground.horizontalLayout ? 3 * activityBackground.baseMargins: fastmode.height
+            height: activityBackground.horizontalLayout ? 3 * GCStyle.baseMargins: fastmode.height
             fontSize: regularSize
             fontSizeMode: Text.Fit
             horizontalAlignment: Text.AlignHCenter
@@ -346,8 +345,8 @@ ActivityBase {
             anchors {
                 right: parent.right
                 bottom: parent.bottom
-                rightMargin: activityBackground.baseMargins
-                bottomMargin: ApplicationSettings.isBarHidden ? activityBackground.baseMargins : bar.height * 1.2
+                rightMargin: GCStyle.baseMargins
+                bottomMargin: ApplicationSettings.isBarHidden ? GCStyle.baseMargins : bar.height * 1.2
             }
             z: 10
             source: "qrc:/gcompris/src/core/resource/arrows_move.svg"
