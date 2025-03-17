@@ -144,9 +144,9 @@ ActivityBase {
         }
         Rectangle {
             id: buildingBorders
-            color: "#808080"
-            width: building.width + 5 * ApplicationInfo.ratio
-            height: building.height + 2.5 * ApplicationInfo.ratio
+            color: GCStyle.grayBorder
+            width: building.width + GCStyle.halfMargins
+            height: building.height + GCStyle.halfMargins * 0.5
             anchors.horizontalCenter: building.horizontalCenter
             anchors.bottom: building.bottom
         }
@@ -190,9 +190,9 @@ ActivityBase {
                 width: items.cellSize
                 border {
                     color: soluce === 1 ? "#df543d" : "transparent"
-                    width: items.cellSize * 0.025
+                    width: GCStyle.thinBorder
                 }
-                radius: items.cellSize * 0.1
+                radius: GCStyle.halfMargins
 
                 BarButton {
                     anchors.fill: parent
@@ -211,8 +211,9 @@ ActivityBase {
             highlight: Rectangle {
                 width: items.cellSize
                 height: items.cellSize
-                color: "#EEEEEE"
-                radius: items.cellSize * 0.1
+                color: GCSTyle.whiteBg
+                opacity: 0.8
+                radius: GCStyle.halfMargins
                 visible: activityBackground.keyNavigationVisible
                 Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
                 Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
@@ -236,9 +237,8 @@ ActivityBase {
             visible: true
             anchors {
                 right: parent.right
-                rightMargin: 20
                 bottom: bar.top
-                bottomMargin: 20
+                margins: GCStyle.baseMargins
             }
             onClicked: Activity.solve()
         }
