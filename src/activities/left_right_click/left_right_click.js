@@ -37,7 +37,7 @@ function initLevel() {
     items.animalListModel.clear();
     var animalArray = new Array();
     cardsToDisplay = levelDifficulty[items.currentLevel];
-    items.animalCount = (cardsToDisplay / 2) * 3;
+    var cardLoopCount = Math.floor(cardsToDisplay / 2);
     var animalCardLeft = {
         "animalIdentifier": Position.left,
         "leftArea": items.leftArea,
@@ -60,7 +60,7 @@ function initLevel() {
         "animalInvisible": true,
         "imageSource": imgSrc[1]
     }
-    for(var i = 0; i < Math.floor(cardsToDisplay/2); i++) {
+    for(var i = 0; i < cardLoopCount; i++) {
         // with every iteration we insert 3 types of cards, invisible card to create a random spacing between the other two cards.
         animalArray.push(animalCardRight);
         animalArray.push(animalCardLeft);
@@ -79,6 +79,7 @@ function initLevel() {
         items.animalListModel.append(animalArray[i]);
     }
     animalCountForBonus = 0;
+    items.cardCount = items.animalListModel.count
 }
 
 function nextLevel() {

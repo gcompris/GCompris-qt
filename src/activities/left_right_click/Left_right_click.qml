@@ -42,15 +42,13 @@ ActivityBase {
             property alias badAnswerSound: badAnswerSound
             property alias animalListModel: animalListModel
             property alias animalCardsArea: animalCardsArea
-            property double animalWidth: animalCardsArea.animalCardSize
-            property double animalHeight: animalCardsArea.animalCardSize
             property alias leftArea: leftAreaTarget
             property alias rightArea: rightAreaTarget
             property alias displayMouse: displayMouse
             property alias leftClickDisplayMouse: leftClickDisplayMouse
             property alias rightClickDisplayMouse: rightClickDisplayMouse
             property alias cross: cross
-            property int animalCount
+            property int cardCount: 1
         }
 
         onStart: { Activity.start(items) }
@@ -75,9 +73,10 @@ ActivityBase {
             id: layoutArea
             anchors.top: parent.top
             anchors.bottom: bar.top
-            anchors.bottomMargin: bar.height * 0.2
             anchors.left: parent.left
             anchors.right: parent.right
+            anchors.margins: GCStyle.baseMargins
+            anchors.bottomMargin: bar.height * 0.2
         }
 
         Image {
@@ -112,7 +111,7 @@ ActivityBase {
             width: layoutArea.width
             height: leftAreaTarget.height
             anchors.top: leftAreaTarget.bottom
-            property double animalCardSize: Core.fitItems(animalCardsArea.width,animalCardsArea.height,items.animalCount)
+            property int animalCardSize: Math.floor(Core.fitItems(animalCardsArea.width, animalCardsArea.height, items.cardCount))
 
             GridView {
                 id: container
@@ -124,8 +123,7 @@ ActivityBase {
                 cellWidth: animalCardsArea.animalCardSize
                 model: animalListModel
                 delegate: Animal {
-                    height: items.animalHeight
-                    width: items.animalWidth
+                    width: animalCardsArea.animalCardSize
                 }
             }
         }
