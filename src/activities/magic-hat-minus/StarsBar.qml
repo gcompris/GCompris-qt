@@ -12,8 +12,7 @@ import QtQuick 2.12
 import "../../core"
 
 Item {
-    id: item
-    height: activityBackground.starSize
+    id: starsBar
     property int barGroupIndex
     property int barIndex
     property int nbStarsOn: 0
@@ -21,57 +20,61 @@ Item {
     property int coefficient: 1
     property string backgroundColor
     property string starsColor: "1"
+    property real starSize
     property Item theHat
     property alias repeaterStars: repeaterStars
+    height: starSize
 
     Row {
         id: rowlayout
         height: parent.height
-        spacing: activityBackground.halfMargins
+        spacing: GCStyle.halfMargins
         GCText {
             id: text
             visible: items.coefficientVisible
             //: text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
-            text: qsTr("%1x").arg(item.coefficient)
+            text: qsTr("%1x").arg(starsBar.coefficient)
             fontSize: regularSize
             minimumPointSize: 6
             fontSizeMode: Text.Fit
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
-            width: activityBackground.starSize * 2
-            height: activityBackground.starSize
-            color: "white"
+            width: starsBar.starSize * 2
+            height: starsBar.starSize
+            color: GCStyle.whiteText
         }
         Repeater {
             id: repeaterStars
-            model: item.opacity == 1 ? 10 : 0
+            model: starsBar.opacity == 1 ? 10 : 0
             Item {
                 id: star
-                width: activityBackground.starSize
-                height: activityBackground.starSize
+                width: starsBar.starSize
+                height: starsBar.starSize
                 property alias starFixed: starFixed
                 property alias starToMove: starToMove
                 Star {
                     id: starFixed
-                    barGroupIndex: item.barGroupIndex
-                    barIndex: item.barIndex
-                    backgroundColor: item.backgroundColor
+                    starSize: starsBar.starSize
+                    barGroupIndex: starsBar.barGroupIndex
+                    barIndex: starsBar.barIndex
+                    backgroundColor: starsBar.backgroundColor
                     wantedColor: items.coefficientVisible ? "1" : starsColor
                     selected: index < nbStarsOn ? true : false
                     displayBounds: true
-                    isClickable: item.authorizeClick
+                    isClickable: starsBar.authorizeClick
                 }
                 Star {
                     id: starToMove
-                    barGroupIndex: item.barGroupIndex
-                    backgroundColor: item.backgroundColor
+                    starSize: starsBar.starSize
+                    barGroupIndex: starsBar.barGroupIndex
+                    backgroundColor: starsBar.backgroundColor
                     wantedColor: items.coefficientVisible ? "1" : starsColor
                     selected: index < nbStarsOn ? true : false
                     displayBounds: false
                     isClickable: false
                     enabled: selected ? true : false
                     initialParent: star
-                    theHat: item.theHat.target
+                    theHat: starsBar.theHat.target
                 }
             }
         }

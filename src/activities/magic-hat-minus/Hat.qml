@@ -16,7 +16,9 @@ Item {
     id: hatItem
     property alias state: hatImg.state
     property alias target: offStar
-    property int starsSize
+    property real starsSize
+
+    signal clicked
 
     function getTarget() {
         return offStar
@@ -149,9 +151,7 @@ Item {
         id: hatMouseArea
         anchors.fill:hatImg
         onClicked: {
-            if(introText.visible) {
-                introText.visible = false;
-            }
+            hatItem.clicked();
             if(hatImg.state == "NormalPosition" && !items.inputBlocked) {
                 baseRotAnim.running = false;
                 hatImg.rotation = 0;

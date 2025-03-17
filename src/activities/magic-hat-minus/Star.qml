@@ -21,6 +21,7 @@ Item {
     property bool displayBounds: true
     property bool selected: false
     property string backgroundColor
+    property real starSize
     property Item initialParent
     property Item theHat
     property Item newTarget
@@ -29,8 +30,8 @@ Item {
     property string wantedColor: "1"
     state: "Init"
 
-    width: activityBackground.starSize
-    height: activityBackground.starSize
+    width: mainItem.starSize
+    height: mainItem.starSize
 
     MouseArea {
         id: mouseArea
@@ -46,8 +47,8 @@ Item {
     Rectangle {
         id: contour
         anchors.fill: parent
-        border.color: "#373737"
-        border.width: mouseArea.containsMouse ? 2 * ApplicationInfo.ratio : Math.max(1, ApplicationInfo.ratio)
+        border.color: GCStyle.darkBorder
+        border.width: mouseArea.containsMouse ? GCStyle.thinBorder : GCStyle.thinnestBorder
         opacity: displayBounds ? 1.0 : 0.0
         color: mainItem.backgroundColor
     }
@@ -56,7 +57,7 @@ Item {
         id: starImg
         source: mainItem.selected ?
                     Activity.url + "star-" + wantedColor + ".svg" : Activity.url + "star-0.svg"
-        width: parent.width - 4 * ApplicationInfo.ratio
+        width: parent.width - GCStyle.halfMargins
         height: width
         sourceSize.width: width
         anchors.centerIn: parent
