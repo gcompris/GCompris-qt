@@ -211,7 +211,7 @@ ActivityBase {
             highlight: Rectangle {
                 width: items.cellSize
                 height: items.cellSize
-                color: GCSTyle.whiteBg
+                color: GCStyle.whiteBg
                 opacity: 0.8
                 radius: GCStyle.halfMargins
                 visible: activityBackground.keyNavigationVisible
