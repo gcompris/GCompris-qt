@@ -9,6 +9,8 @@
 *
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import core 1.0
 
@@ -56,9 +58,9 @@ ActivityBase {
             readonly property var levels: activity.datasets
             property bool blockClicks: false
             property int nbCell: 5
-            property int cellSize: isPortrait ? Math.min((parent.height - bar.height * 2.5) / items.nbCell,
-                                                         (parent.width - 40) / items.nbCell) :
-                                                (parent.height - bar.height * 1.5) / items.nbCell
+            property int cellSize: isPortrait ? Math.min((activityBackground.height - bar.height * 2.5) / items.nbCell,
+                                                         (activityBackground.width - 40) / items.nbCell) :
+                                                (activityBackground.height - bar.height * 1.5) / items.nbCell
             property int nbCelToWin: 0
             property var lightRatio: items.nbCelToWin / (items.nbCell * items.nbCell)
         }
@@ -134,7 +136,7 @@ ActivityBase {
 
         Image {
             id: land
-            source: Activity.url + "back.svg"
+            source: activity.resourceUrl + "back.svg"
             anchors.bottom: parent.bottom
             anchors.top: tux.top
             anchors.left: parent.left
@@ -185,6 +187,10 @@ ActivityBase {
             model: modelTable
 
             delegate: Rectangle {
+                id: window
+                required property int soluce
+                required property int lighton
+                required property int index
                 color: soluce === 1 ? "#20df543d" : "transparent"
                 height: items.cellSize
                 width: items.cellSize
@@ -197,10 +203,10 @@ ActivityBase {
                 BarButton {
                     anchors.fill: parent
                     fillMode: Image.PreserveAspectFit
-                    source: lighton === 1 ? Activity.url + "on.svg" : Activity.url + "off.svg"
+                    source: window.lighton === 1 ? activity.resourceUrl + "on.svg" : activity.resourceUrl + "off.svg"
                     mouseArea.hoverEnabled: !items.blockClicks
                     mouseArea.enabled: !items.blockClicks
-                    onClicked: Activity.windowPressed(index)
+                    onClicked: Activity.windowPressed(window.index)
                     visible: true
                 }
             }
@@ -221,7 +227,7 @@ ActivityBase {
         }
 
         Image {
-            source: Activity.url + "grass.svg"
+            source: activity.resourceUrl + "grass.svg"
             anchors.verticalCenter: building.bottom
             anchors.horizontalCenter: building.horizontalCenter
             width: buildingBorders.width
@@ -245,7 +251,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         DialogChooseLevel {
@@ -253,12 +259,12 @@ ActivityBase {
             currentActivity: activity.activityInfo
 
             onSaveData: {
-                levelFolder = dialogActivityConfig.chosenLevels
+                activity.levelFolder = dialogActivityConfig.chosenLevels
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
             }
             onClose: {
-                home()
+                activity.home()
             }
             onStartActivity: {
                 activityBackground.stop()
@@ -273,14 +279,14 @@ ActivityBase {
                 value: help | home | level | reload | activityConfig
             }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onReloadClicked: Activity.initLevel()
             onActivityConfigClicked: {
-                displayDialog(dialogActivityConfig)
+                activity.displayDialog(dialogActivityConfig)
             }
         }
 
