@@ -33,49 +33,37 @@ Image {
         readonly property string largestNumber: activity.isQuantityMode ? "15" : Activity.toDecimalLocaleNumber(1.5)
         readonly property string smallestNumber: Activity.toDecimalLocaleNumber(0.3)
 
-        Rectangle {
-            id: decimalNumberTutorial
-            width: parent.width * 0.6
-            height: parent.height / 12
-            radius: 10
-            color: "#373737"
+        GCTextPanel {
+            id: tutorialInstructionPanel
+            panelWidth: parent.width - 2 * GCStyle.baseMargins
+            panelHeight: Math.min(50 * ApplicationInfo.ratio, parent.height * 0.1)
+            fixedHeight: true
+            border.width: 0
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
-            anchors.topMargin: 2 * ApplicationInfo.ratio
-            GCText {
-                anchors.centerIn: parent
-                width: parent.width - 4 * ApplicationInfo.ratio
-                height: parent.height
-                text: layoutTutorial.displayQuestion()
-                fontSize: smallSize
-                fontSizeMode: Text.Fit
-                wrapMode: Text.WordWrap
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                font.weight: Font.DemiBold
-                color: "white"
-            }
+            anchors.topMargin: GCStyle.halfMargins
+            textItem.text: layoutTutorial.displayQuestion()
         }
 
         function displayQuestion() {
             if(activity.isSubtractionMode) {
-                return decimalNumber.subtractionQuestion.arg(layoutTutorial.largestNumber).arg(layoutTutorial.smallestNumber)
+                return instructionPanel.subtractionQuestion.arg(layoutTutorial.largestNumber).arg(layoutTutorial.smallestNumber)
             }
             else if(activity.isAdditionMode) {
-                return decimalNumber.additionQuestion.arg(layoutTutorial.largestNumber).arg(layoutTutorial.smallestNumber)
+                return instructionPanel.additionQuestion.arg(layoutTutorial.largestNumber).arg(layoutTutorial.smallestNumber)
             }
             else if(activity.isQuantityMode) {
-                return decimalNumber.quantityQuestion.arg(layoutTutorial.largestNumber)
+                return instructionPanel.quantityQuestion.arg(layoutTutorial.largestNumber)
             }
             else {
-                return decimalNumber.decimalQuestion.arg(layoutTutorial.largestNumber)
+                return instructionPanel.decimalQuestion.arg(layoutTutorial.largestNumber)
             }
         }
 
         Item {
             id: tutoLayoutArea
-            anchors.top: decimalNumberTutorial.bottom
-            anchors.topMargin: 2 * ApplicationInfo.ratio
+            anchors.top: tutorialInstructionPanel.bottom
+            anchors.topMargin: GCStyle.tinyMargins
             anchors.bottom: okButtonTutorial.top
             anchors.bottomMargin: anchors.topMargin
             anchors.horizontalCenter: parent.horizontalCenter
@@ -86,10 +74,10 @@ Image {
             id: topRectangleTutorial
             visible: activity.isSubtractionMode || tutorialBase.isRepresentationShown
             anchors.top: tutoLayoutArea.top
-            color: "#F2F2F2"
-            border.color: "#373737"
-            border.width: 1
-            radius: 5
+            color: GCStyle.lightBg
+            border.color: GCStyle.darkBorder
+            border.width: GCStyle.thinnestBorder
+            radius: GCStyle.halfMargins
 
             states: [
                 State {
@@ -117,7 +105,7 @@ Image {
                         topRectangleTutorial {
                             width: activity.isSubtractionMode ? tutoLayoutArea.width : tutoLayoutArea.width * 0.636
                             height: tutoLayoutArea.height * 0.8
-                            anchors.rightMargin: 5 * ApplicationInfo.ratio
+                            anchors.rightMargin: GCStyle.halfMargins
                         }
                         firstBar {
                             cellSize: activity.isSubtractionMode ?
@@ -137,7 +125,7 @@ Image {
                         topRectangleTutorial {
                             width: activity.isSubtractionMode ? tutoLayoutArea.width : tutoLayoutArea.width * 0.636
                             height: tutoLayoutArea.height * 0.8
-                            anchors.rightMargin: 5 * ApplicationInfo.ratio
+                            anchors.rightMargin: GCStyle.halfMargins
                         }
                         firstBar {
                             cellSize: activity.isSubtractionMode ?
@@ -190,10 +178,10 @@ Image {
         Rectangle {
             id: bottomRectangleTutorial
             visible: !activity.isSubtractionMode && !tutorialBase.isResultTyping
-            color: "#F2F2F2"
-            border.color: "#373737"
-            border.width: 1
-            radius: 5
+            color: GCStyle.lightBg
+            border.color: GCStyle.darkBorder
+            border.width: GCStyle.thinnestBorder
+            radius: GCStyle.halfMargins
 
             states: [
                 State {
@@ -330,18 +318,20 @@ Image {
             height: parent.height * 0.15
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: topRectangleTutorial.bottom
-            anchors.topMargin: 5 * ApplicationInfo.ratio
-            color: "#f2f2f2"
-            border.color: "#373737"
-            border.width: 1
-            radius: 5
+            anchors.topMargin: GCStyle.halfMargins
+            color: GCStyle.lightBg
+            border.color: GCStyle.darkBorder
+            border.width: GCStyle.thinnestBorder
+            radius: GCStyle.halfMargins
 
             GCText {
                 anchors.fill: parent
+                anchors.margins: GCStyle.tinyMargins
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                color: "#373737"
+                color: GCStyle.darkText
                 fontSize: smallSize
+                fontSizeMode: Text.Fit
                 text: answerBackground.resultText.arg(" ")
             }
         }
@@ -354,8 +344,7 @@ Image {
             anchors {
                 bottom: parent.bottom
                 right: parent.right
-                bottomMargin: 5 * ApplicationInfo.ratio
-                rightMargin: 5 * ApplicationInfo.ratio
+                margins: GCStyle.halfMargins
             }
         }
     }

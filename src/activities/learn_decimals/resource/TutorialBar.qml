@@ -9,6 +9,7 @@
  */
 import QtQuick 2.12
 import core 1.0
+import "../../../core"
 
 
 Item {
@@ -41,7 +42,7 @@ Item {
                     id: whiteSquare
                     source: activity.isQuantityMode ? "qrc:/gcompris/src/activities/babyshapes/resource/food/orange.svg" :
                         "qrc:/gcompris/src/activities/learn_decimals/resource/rectWhite.svg"
-                    width: parent.width - 4
+                    width: parent.width - 2 * GCStyle.thinnestBorder
                     height: width
                     sourceSize.width: width
                     anchors.centerIn: parent

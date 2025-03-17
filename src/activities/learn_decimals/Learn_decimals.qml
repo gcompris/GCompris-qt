@@ -33,7 +33,6 @@ ActivityBase {
         fillMode: Image.PreserveAspectCrop
 
         property bool horizontalLayout: activityBackground.width >= activityBackground.height
-        property bool scoreAtBottom: bar.width * 9 < activityBackground.width
 
         signal start
         signal stop
@@ -116,36 +115,25 @@ ActivityBase {
         }
         // Tutorial section ends
 
-        Rectangle {
-            id: decimalNumber
-            width: activityBackground.width * 0.6
-            height: parent.height / 12
-            radius: 10
-            color: "#373737"
-            anchors.horizontalCenter: activityBackground.horizontalCenter
-            anchors.top: activityBackground.top
-            anchors.topMargin: 5 * ApplicationInfo.ratio
+        GCTextPanel {
+            id: instructionPanel
+            panelWidth: parent.width - 2 * (GCStyle.baseMargins + numpad.columnWidth)
+            panelHeight: Math.min(50 * ApplicationInfo.ratio, activityBackground.height * 0.1)
+            fixedHeight: true
+            border.width: 0
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: parent.top
+            anchors.topMargin: GCStyle.baseMargins
+            textItem.text: isSubtractionMode ?
+                instructionPanel.subtractionQuestion.arg(items.largestNumber).arg(items.smallestNumber) :
+                isAdditionMode ? instructionPanel.additionQuestion.arg(items.largestNumber).arg(items.smallestNumber) :
+                isQuantityMode ? instructionPanel.quantityQuestion.arg(items.largestNumber) :
+                instructionPanel.decimalQuestion.arg(items.largestNumber)
 
             property string decimalQuestion: qsTr("Display the number: %1")
             property string additionQuestion: qsTr("Display the result of: %1 + %2")
             property string subtractionQuestion: qsTr("Display the result of: %1 - %2")
             property string quantityQuestion: qsTr("Represent the quantity: %1")
-
-            GCText {
-                anchors.centerIn: parent
-                width: parent.width - 10 * ApplicationInfo.ratio
-                height: parent.height
-                text: isSubtractionMode ? decimalNumber.subtractionQuestion.arg(items.largestNumber).arg(items.smallestNumber) :
-                    isAdditionMode ? decimalNumber.additionQuestion.arg(items.largestNumber).arg(items.smallestNumber) :
-                    isQuantityMode ? decimalNumber.quantityQuestion.arg(items.largestNumber) :
-                    decimalNumber.decimalQuestion.arg(items.largestNumber)
-                fontSizeMode: Text.Fit
-                wrapMode: Text.WordWrap
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                font.weight: Font.DemiBold
-                color: "white"
-            }
         }
 
         ListModel {
@@ -154,10 +142,10 @@ ActivityBase {
 
         Item {
             id: layoutArea
-            anchors.top: decimalNumber.bottom
-            anchors.topMargin: 5 * ApplicationInfo.ratio
+            anchors.top: instructionPanel.bottom
+            anchors.topMargin: GCStyle.halfMargins
             anchors.bottom: okButton.top
-            anchors.bottomMargin: activityBackground.scoreAtBottom ? bar.height * 0.5 : anchors.topMargin
+            anchors.bottomMargin: GCStyle.halfMargins
             anchors.horizontalCenter: activityBackground.horizontalCenter
             width: activityBackground.horizontalLayout ? activityBackground.width * 0.7 : activityBackground.width * 0.95
         }
@@ -166,10 +154,10 @@ ActivityBase {
             id: topRectangle
             visible: !isSubtractionMode && !tutorialImage.visible
             anchors.top: layoutArea.top
-            color: "#F2F2F2"
-            border.color: "#373737"
-            border.width: 2
-            radius: 10
+            color: GCStyle.lightBg
+            border.color: GCStyle.darkBorder
+            border.width: GCStyle.thinnestBorder
+            radius: GCStyle.halfMargins
             z: 10
 
             states: [
@@ -194,7 +182,7 @@ ActivityBase {
                         topRectangle {
                             width: layoutArea.width * 0.636
                             height: layoutArea.height
-                            anchors.rightMargin: 10 * ApplicationInfo.ratio
+                            anchors.rightMargin: GCStyle.baseMargins
                         }
                     }
                     AnchorChanges {
@@ -288,10 +276,10 @@ ActivityBase {
         Rectangle {
             id: bottomRectangle
             visible: !isSubtractionMode && !items.typeResult
-            color: "#F2F2F2"
-            border.color: "#373737"
-            border.width: 2
-            radius: 10
+            color: GCStyle.lightBg
+            border.color: GCStyle.darkBorder
+            border.width: GCStyle.thinnestBorder
+            radius: GCStyle.halfMargins
 
             property alias scrollBar: scrollBar
 
@@ -467,8 +455,8 @@ ActivityBase {
             Item {
                 id: scrollBar
 
-                property double horizontalBarLimit: scrollBar.width - arrow.width / 2
-                property double verticalBarLimit: scrollBar.height - arrow.width / 2
+                property double horizontalBarLimit: scrollBar.width - arrow.width * 0.5
+                property double verticalBarLimit: scrollBar.height - arrow.width * 0.5
                 property double arrowOrigin: unselectedBar.cellSize * 0.5
                 property alias arrowX: arrow.x
                 property alias arrowY: arrow.y
@@ -524,23 +512,22 @@ ActivityBase {
                     visible: items.helper
                     width: unselectedBar.cellSize * 1.1
                     height: width
-                    color: "#FFFFFF"
-                    radius: 5 * ApplicationInfo.ratio
-                    border.color: "#808080"
-                    border.width: 2
+                    color: GCStyle.whiteBg
+                    radius: GCStyle.halfMargins
+                    border.color: GCStyle.grayBorder
+                    border.width: GCStyle.thinnestBorder
                     GCText {
                         id: text
-                        fontSize: regularSize
+                        fontSize: smallSize
                         text: activity.isQuantityMode ? scrollBar.currentStep + 1 :
                             Activity.toDecimalLocaleNumber((scrollBar.currentStep + 1) * items.unit)
                         font.bold: true
-                        color: "#373737"
+                        color: GCStyle.darkText
                         fontSizeMode: Text.Fit
                         verticalAlignment: Text.AlignVCenter
                         horizontalAlignment: Text.AlignHCenter
-                        anchors.centerIn: parent
-                        width: parent.width - 4
-                        height: width
+                        anchors.fill: parent
+                        anchors.margins: GCStyle.tinyMargins
                     }
                 }
 
@@ -576,13 +563,13 @@ ActivityBase {
             id: mainRectangle
             visible: isSubtractionMode
             width: topRectangle.width
-            height: activityBackground.scoreAtBottom ? layoutArea.height - okButton.height : layoutArea.height
+            height: layoutArea.height
             anchors.top: layoutArea.top
             anchors.horizontalCenter: activityBackground.horizontalCenter
-            color: "#F2F2F2"
-            border.color: "#373737"
-            border.width: 2
-            radius: 10
+            color: GCStyle.lightBg
+            border.color: GCStyle.darkBorder
+            border.width: GCStyle.thinnestBorder
+            radius: GCStyle.halfMargins
 
             MultipleBars {
                 id: multipleBars
@@ -593,10 +580,14 @@ ActivityBase {
             id: answerBackground
             visible: items.typeResult
             height: okButton.height
-            color: "#f2f2f2"
-            border.color: "#373737"
-            border.width: 2
-            radius: 10
+            anchors.left: topRectangle.left
+            anchors.right: okButton.left
+            anchors.rightMargin: GCStyle.baseMargins
+            anchors.verticalCenter: okButton.verticalCenter
+            color: GCStyle.lightBg
+            border.color: GCStyle.darkBorder
+            border.width: GCStyle.thinnestBorder
+            radius: GCStyle.halfMargins
 
             property string userEntry
             property string resultText: qsTr("Enter the result: %1")
@@ -604,14 +595,14 @@ ActivityBase {
             GCText {
                 id: userEntryText
                 anchors.centerIn: parent
-                width: parent.width - 10 * ApplicationInfo.ratio
-                height: parent.height
+                width: parent.width - GCStyle.baseMargins
+                height: parent.height - 2 * GCStyle.baseMargins
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 fontSize: smallSize
                 fontSizeMode: Text.Fit
                 wrapMode: Text.WordWrap
-                color: "#373737"
+                color: GCStyle.darkText
                 text: answerBackground.resultText.arg(answerBackground.userEntry)
             }
         }
@@ -645,71 +636,6 @@ ActivityBase {
             }
         }
 
-        states: [
-            State {
-                when: activityBackground.scoreAtBottom
-                AnchorChanges {
-                    target: answerBackground
-                    anchors.left: undefined
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.top: mainRectangle.bottom
-                    anchors.verticalCenter: undefined
-                }
-                PropertyChanges {
-                    answerBackground {
-                        width: mainRectangle.width
-                        anchors.topMargin: 5 * ApplicationInfo.ratio
-                    }
-                }
-                AnchorChanges {
-                    target: okButton
-                    anchors.horizontalCenter: undefined
-                    anchors.verticalCenter: bar.verticalCenter
-                    anchors.bottom: undefined
-                    anchors.right: activityBackground.right
-                    anchors.left: undefined
-                }
-                PropertyChanges {
-                    okButton {
-                        anchors.bottomMargin: 0
-                        anchors.rightMargin: okButton.width * 0.5
-                        anchors.verticalCenterOffset: -10
-                    }
-                }
-            },
-            State {
-                when: !activityBackground.scoreAtBottom
-                AnchorChanges {
-                    target: answerBackground
-                    anchors.left: topRectangle.left
-                    anchors.horizontalCenter: undefined
-                    anchors.top: undefined
-                    anchors.verticalCenter: okButton.verticalCenter
-                }
-                PropertyChanges {
-                    answerBackground {
-                        width: mainRectangle.width - okButton.width * 1.2
-                        anchors.topMargin: 0
-                    }
-                }
-                AnchorChanges {
-                    target: okButton
-                    anchors.horizontalCenter: undefined
-                    anchors.verticalCenter: undefined
-                    anchors.bottom: bar.top
-                    anchors.right: mainRectangle.right
-                    anchors.left: undefined
-                }
-                PropertyChanges {
-                    okButton {
-                        anchors.bottomMargin: okButton.height * 0.5
-                        anchors.rightMargin: 0
-                        anchors.verticalCenterOffset: 0
-                    }
-                }
-            }
-        ]
-
         Image {
             id: hint
             source:"qrc:/gcompris/src/core/resource/bar_hint.svg"
@@ -717,7 +643,7 @@ ActivityBase {
             sourceSize.width: okButton.width
             fillMode: Image.PreserveAspectFit
             anchors.right: okButton.left
-            anchors.rightMargin: okButton.width * 0.3
+            anchors.rightMargin: GCStyle.baseMargins
             anchors.verticalCenter: okButton.verticalCenter
 
             MouseArea {
@@ -821,7 +747,11 @@ ActivityBase {
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: 60 * ApplicationInfo.ratio
+            width: GCStyle.bigButtonHeight
+            anchors.right: parent.right
+            anchors.rightMargin: GCStyle.baseMargins + numpad.columnWidth
+            anchors.bottom: bar.top
+            anchors.bottomMargin: bar.height * 0.5
             onClicked: items.typeResult? Activity.verifyNumberTyping(answerBackground.userEntry) : Activity.verifyNumberRepresentation()
             mouseArea.enabled: !items.buttonsBlocked
         }
@@ -834,10 +764,11 @@ ActivityBase {
         Score {
             id: score
             visible: !tutorialImage.visible && !isAdditionMode && !isSubtractionMode
-            height: okButton.height * 0.9
             anchors.top: undefined
             anchors.bottom: undefined
-            anchors.right: hint.visible ? hint.left : okButton.left
+            anchors.right: undefined
+            anchors.left: parent.left
+            anchors.leftMargin: GCStyle.baseMargins
             anchors.verticalCenter: okButton.verticalCenter
             onStop: Activity.nextSubLevel()
         }

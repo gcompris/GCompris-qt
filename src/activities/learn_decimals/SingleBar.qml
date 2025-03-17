@@ -10,6 +10,7 @@
  */
 import QtQuick 2.12
 import core 1.0
+import "../../core"
 
 GridView {
     id: singleBar
@@ -58,7 +59,7 @@ GridView {
                             source: items.isQuantityMode ? "qrc:/gcompris/src/activities/babyshapes/resource/food/orange.svg" :
                                 index < selectedSquareNumbers ? "qrc:/gcompris/src/activities/learn_decimals/resource/rectFill.svg" :
                                 "qrc:/gcompris/src/activities/learn_decimals/resource/rectWhite.svg"
-                            width: singleBar.cellSize - 6
+                            width: singleBar.cellSize - 2 * GCStyle.thinBorder
                             height: width
                             sourceSize.width: width
                             anchors.centerIn: parent

@@ -10,6 +10,7 @@
  */
 import QtQuick 2.12
 import core 1.0
+import "../../core"
 import "learn_decimals.js" as Activity
 
 GridView {
@@ -90,7 +91,7 @@ GridView {
                             id: squareWhite
                             source: "qrc:/gcompris/src/activities/learn_decimals/resource/rectWhite.svg"
                             anchors.centerIn: parent
-                            width: parent.width - 6
+                            width: parent.width - 2 * GCStyle.thinBorder
                             height: width
                             sourceSize.width: width
                         }
