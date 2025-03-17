@@ -8,6 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import core 1.0
 import "../../core"
@@ -36,8 +38,8 @@ ActivityBase {
             property bool buttonsBlocked: false
         }
 
-        Keys.onLeftPressed: Activity.leftClickPressed()
-        Keys.onRightPressed: Activity.rightClickPressed()
+        Keys.onLeftPressed: leftButton.pressed()
+        Keys.onRightPressed: rightButton.pressed()
         Keys.enabled: !items.buttonsBlocked
 
         Component.onCompleted: {
@@ -72,8 +74,8 @@ ActivityBase {
                 id: lightImage
                 source: "qrc:/gcompris/src/activities/leftright/resource/light.svg"
                 fillMode: Image.PreserveAspectFit
-                sourceSize.width: parent.paintedWidth
-                sourceSize.height: parent.paintedHeight
+                sourceSize.width: blackBoard.paintedWidth
+                sourceSize.height: blackBoard.paintedHeight
                 anchors.centerIn: parent
                 anchors.topMargin: 2 * GCStyle.baseMargins
                 opacity: 0
@@ -190,7 +192,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelpLeftRight
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
@@ -198,11 +200,11 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
-                displayDialog(dialogHelpLeftRight)
+                activity.displayDialog(dialogHelpLeftRight)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: home()
+            onHomeClicked: activity.home()
         }
 
         Bonus {
