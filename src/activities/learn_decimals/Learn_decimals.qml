@@ -54,6 +54,9 @@ ActivityBase {
             property bool isAdditionMode: activity.isAdditionMode
             property bool isQuantityMode: activity.isQuantityMode
             property alias activityBackground: activityBackground
+            property alias instructionPanel: instructionPanel
+            property alias answerBackground: answerBackground
+            property alias tutorialSection: tutorialSection
             property alias goodAnswerSound: goodAnswerSound
             property alias badAnswerSound: badAnswerSound
             property int currentLevel: activity.currentLevel
@@ -110,6 +113,12 @@ ActivityBase {
                 onSkipPressed: {
                     Activity.initLevel()
                     tutorialImage.visible = false
+                }
+                onNextPressed: {
+                    Activity.loadTutorialText()
+                }
+                onPreviousPressed: {
+                    Activity.loadTutorialText()
                 }
             }
         }
