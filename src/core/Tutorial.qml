@@ -54,6 +54,9 @@ Item {
     /* Store if we have a LTR locale */
     readonly property bool isLeftToRightLocale: Core.isLeftToRightLocale(ApplicationSettings.locale)
 
+    /* Used to access the tutoriaQml item if needed */
+    property Item tutorialQml: tutorialQml.item
+
     // Emitted when skipButton is clicked
     signal skipPressed
 
