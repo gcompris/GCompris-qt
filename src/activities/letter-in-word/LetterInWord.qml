@@ -165,7 +165,7 @@ ActivityBase {
             id: score
             anchors {
                 right: parent.right
-                rightMargin: 10 * ApplicationInfo.ratio
+                rightMargin: GCStyle.baseMargins
                 bottom: wordsView.bottom
                 left: undefined
                 top: undefined
@@ -187,14 +187,14 @@ ActivityBase {
             height: plane.height
             x: -width
             anchors.top: parent.top
-            anchors.topMargin: 5 * ApplicationInfo.ratio
+            anchors.topMargin: GCStyle.baseMargins
 
             Image {
                 id: plane
                 anchors.centerIn: planeText
                 anchors.top: parent.top
                 source: Activity.resUrl + "plane.svg"
-                sourceSize.height: repeatItem.width
+                sourceSize.height: 90 * ApplicationInfo.ratio
             }
 
             GCText {
@@ -209,7 +209,7 @@ ActivityBase {
                 fontSize: hugeSize
                 fontSizeMode: Text.Fit
                 font.weight: Font.DemiBold
-                color: "#2a2a2a"
+                color: GCStyle.darkerText
                 text: items.question
             }
 
@@ -218,10 +218,8 @@ ActivityBase {
                 target: planeText
                 properties: "x"
                 from: -planeText.width
-                //to:activityBackground.width/2 - planeText.width/2
-                to: bar.level <= 2 ? activityBackground.width/3.7 : activityBackground.width
-                duration: bar.level <= 2 ? 5500: 11000
-                //easing.type: Easing.OutQuad
+                to: bar.level <= 2 ? activityBackground.width * 0.5 - questionItem.width * 0.5 : activityBackground.width
+                duration: bar.level <= 2 ? 5500 : 11000
                 easing.type: bar.level <= 2 ? Easing.OutQuad: Easing.OutInCirc
             }
         }
@@ -229,11 +227,11 @@ ActivityBase {
         BarButton {
             id: repeatItem
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svg"
-            width: 80 * ApplicationInfo.ratio
+            width: GCStyle.bigButtonHeight
             anchors {
                 top: parent.top
                 right: parent.right
-                margins: 10
+                margins: GCStyle.baseMargins
             }
             onClicked:{
                 if(!audioVoices.isPlaying() && !items.buttonsBlocked) {
@@ -266,12 +264,11 @@ ActivityBase {
             anchors.right: ok.left
             anchors.top: planeText.bottom
             anchors.topMargin: 0
-            anchors.leftMargin: 10 * ApplicationInfo.ratio
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.leftMargin: GCStyle.baseMargins
+            anchors.rightMargin: GCStyle.baseMargins
             anchors.bottomMargin: bar.height * 0.5
             cellWidth: activityBackground.itemWidth
             cellHeight: activityBackground.itemWidth
-            bottomMargin: 10 * ApplicationInfo.ratio
             clip: false
             interactive: false
             layoutDirection: Qt.LeftToRight
@@ -282,7 +279,7 @@ ActivityBase {
             model: wordsModel
             delegate: Card {
                 width: activityBackground.itemWidth
-                height: activityBackground.itemWidth - 10 * ApplicationInfo.ratio
+                height: activityBackground.itemWidth - GCStyle.baseMargins
                 mouseActive: !items.buttonsBlocked
             }
         }
@@ -304,7 +301,7 @@ ActivityBase {
             width: repeatItem.width
             anchors {
                 bottom: score.top
-                margins: 10 * ApplicationInfo.ratio
+                margins: GCStyle.baseMargins
                 horizontalCenter: score.horizontalCenter
             }
             onClicked: {
@@ -316,7 +313,7 @@ ActivityBase {
         ErrorRectangle {
             id: errorRectangle
             anchors.fill: wordsView
-            radius: 10 * ApplicationInfo.ratio
+            radius: GCStyle.baseMargins
             imageSize: Math.min(width, height) * 0.5
             function releaseControls() {
                 items.buttonsBlocked = false;
