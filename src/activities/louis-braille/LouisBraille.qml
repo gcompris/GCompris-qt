@@ -25,11 +25,9 @@ ActivityBase {
     pageComponent: Rectangle {
         id: activityBackground
         anchors.fill: parent
-        color: "#85D8F6"
+        color: GCStyle.lightBlueBg
         signal start
         signal stop
-
-        property double baseMargins: 10 * ApplicationInfo.ratio
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -55,14 +53,14 @@ ActivityBase {
         Item {
             id: charList
             anchors.top: parent.top
-            anchors.topMargin: activityBackground.baseMargins
+            anchors.topMargin: GCStyle.baseMargins
             anchors.horizontalCenter: parent.horizontalCenter
             height: childrenRect.height
-            width: Math.min(parent.width - 2 * activityBackground.baseMargins, 520 * ApplicationInfo.ratio)
+            width: Math.min(parent.width - 2 * GCStyle.baseMargins, 520 * ApplicationInfo.ratio)
 
             Row {
-                id: row
-                spacing: activityBackground.baseMargins
+                id: topCardRow
+                spacing: GCStyle.baseMargins
                 anchors.horizontalCenter: parent.horizontalCenter
                 width: parent.width
 
@@ -70,22 +68,19 @@ ActivityBase {
                     id: cardRepeater
                     model: ["L","O","U","I","S"," ","B","R","A","I","L","L","E"]
 
-                    // workaround for https://bugreports.qt.io/browse/QTBUG-72643 (qml binding with global variable in Repeater do not work)
-                    property alias rowSpacing: row.spacing
-                    property alias rowWidth: row.width
                     Item {
                         id: inner
                         height: childrenRect.height
-                        width: (cardRepeater.rowWidth - 12 * cardRepeater.rowSpacing)/ 13
+                        width: (topCardRow.width - 12 * topCardRow.spacing)/ 13
 
                         Rectangle {
                             id: rect1
                             width: inner.width
                             height: ins.height
-                            border.width: ApplicationInfo.ratio
+                            border.width: GCStyle.thinnestBorder
                             opacity: index == 5 ? 0 :1
-                            border.color: "#373737"
-                            color: "#F0F0F0"
+                            border.color: GCStyle.darkBorder
+                            color: GCStyle.lightBg
 
                             BrailleChar {
                                 id: ins
@@ -100,11 +95,11 @@ ActivityBase {
                         GCText {
                             text: modelData
                             font.weight: Font.DemiBold
-                            color: "#373737"
+                            color: GCStyle.darkText
                             fontSize: regularSize
                             anchors {
                                 top: rect1.bottom
-                                topMargin: 4 * ApplicationInfo.ratio
+                                topMargin: GCStyle.halfMargins
                                 horizontalCenter: rect1.horizontalCenter
                             }
                         }
@@ -138,29 +133,29 @@ ActivityBase {
             anchors.top: charList.bottom
             anchors.left: activityBackground.left
             anchors.right: activityBackground.right
-            anchors.margins: activityBackground.baseMargins
-            height: activityBackground.height - charList.height - bar.height * 1.2 - 3 * activityBackground.baseMargins
+            anchors.margins: GCStyle.baseMargins
+            height: activityBackground.height - charList.height - bar.height * 1.2 - 3 * GCStyle.baseMargins
         }
 
         // The image description
         Rectangle {
             id: info_rect
-            border.color: "#373737"
+            border.color: GCStyle.darkBorder
             border.width: ApplicationInfo.ratio
-            color: "#F0F0F0"
+            color: GCStyle.lightBg
             width: layoutArea.width
             height: layoutArea.height * 0.3
-            radius: 5 * ApplicationInfo.ratio
+            radius: GCStyle.halfMargins
             anchors.top: layoutArea.top
             anchors.horizontalCenter: layoutArea.horizontalCenter
 
             GCText {
                 id: info
-                color: "#373737"
+                color: GCStyle.darkText
                 anchors.centerIn: parent
                 horizontalAlignment:  Text.AlignHCenter
-                width: parent.width - 2 * activityBackground.baseMargins
-                height: parent.height - 2 * activityBackground.baseMargins
+                width: parent.width - 2 * GCStyle.baseMargins
+                height: parent.height - 2 * GCStyle.baseMargins
                 wrapMode: Text.WordWrap
                 fontSize: regularSize
                 text: items.dataset[items.count].text
@@ -172,13 +167,13 @@ ActivityBase {
         Image {
             id: img
             anchors.top: info_rect.bottom
-            anchors.topMargin: activityBackground.baseMargins
+            anchors.topMargin: GCStyle.baseMargins
             anchors.horizontalCenter: layoutArea.horizontalCenter
             sourceSize.height: width
             sourceSize.width: width
             height: width
             width: Math.min(layoutArea.width - previous.width * 2 - 60 * ApplicationInfo.ratio,
-                            layoutArea.height - (info_rect.height + year_rect.height + 2 * activityBackground.baseMargins))
+                            layoutArea.height - (info_rect.height + year_rect.height + 2 * GCStyle.baseMargins))
             source: items.dataset[items.count].img
             fillMode: Image.PreserveAspectFit
 
@@ -191,10 +186,10 @@ ActivityBase {
         Image {
             id: previous
             anchors.right: img.left
-            anchors.rightMargin: 20 * ApplicationInfo.ratio
+            anchors.rightMargin: 2 * GCStyle.baseMargins
             anchors.verticalCenter: img.verticalCenter
             source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
-            height: 80 * ApplicationInfo.ratio
+            height: GCStyle.bigButtonHeight
             width: height * 0.5
             sourceSize.height: height
             fillMode: Image.PreserveAspectFit
@@ -211,10 +206,10 @@ ActivityBase {
         Image {
             id: next
             anchors.left: img.right
-            anchors.leftMargin: 20 * ApplicationInfo.ratio
+            anchors.leftMargin: 2 * GCStyle.baseMargins
             anchors.verticalCenter: img.verticalCenter
             source: "qrc:/gcompris/src/core/resource/bar_next.svg"
-            height: 80 * ApplicationInfo.ratio
+            height: GCStyle.bigButtonHeight
             width: height * 0.5
             sourceSize.height: height
             fillMode: Image.PreserveAspectFit
@@ -231,20 +226,20 @@ ActivityBase {
 
         Rectangle {
             id: year_rect
-            border.color: "#373737"
+            border.color: GCStyle.darkBorder
             border.width: ApplicationInfo.ratio
-            radius: 5 * ApplicationInfo.ratio
-            color: "#F0F0F0"
-            width: year.width + 2 * activityBackground.baseMargins
-            height: year.height + activityBackground.baseMargins
+            radius: GCStyle.halfMargins
+            color: GCStyle.lightBg
+            width: year.width + 2 * GCStyle.baseMargins
+            height: year.height + GCStyle.baseMargins
             anchors {
                 top: img.bottom
                 horizontalCenter: img.horizontalCenter
-                topMargin: activityBackground.baseMargins
+                topMargin: GCStyle.baseMargins
             }
             GCText {
                 id: year
-                color: "#373737"
+                color: GCStyle.darkText
                 fontSize: regularSize
                 anchors.centerIn: year_rect
                 text: items.dataset[items.count].year

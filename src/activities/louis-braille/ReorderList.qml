@@ -17,7 +17,7 @@ Rectangle {
     id: wholeBody
     width: parent.width
     height: parent.height
-    color: "#85D8F6"
+    color: GCStyle.lightBlueBg
 
     property int selectedIndex: -1
     property alias containerModel: list.model
@@ -67,12 +67,11 @@ Rectangle {
 
         Rectangle {
             id: listRect
-            color: wholeBody.selectedIndex == index ? "#b5b9ff" : (placed ? "#c1ffb4" : "#F0F0F0")
-            border.width: list.currentIndex == index ? 0 : ApplicationInfo.ratio
-            border.color: "#373737"
-            radius: 3
+            color: wholeBody.selectedIndex == index ? GCStyle.highlightColor : (placed ? "#b4ffb4" : GCStyle.lightBg)
+            border.width: list.currentIndex == index ? 0 : GCStyle.thinnestBorder
+            border.color: GCStyle.darkBorder
             width: list.width
-            height: textinfo.height + activityBackground.baseMargins
+            height: textinfo.height + GCStyle.baseMargins
 
             property bool placed: model.sequence === index
             property string text: model.text
@@ -84,7 +83,7 @@ Rectangle {
                 NumberAnimation {
                     target: listRect
                     property: "border.width"
-                    to: 2 * ApplicationInfo.ratio; duration: 500
+                    to: GCStyle.midBorder ; duration: 500
                     easing.type: Easing.InOutQuad
                 }
                 NumberAnimation {
@@ -100,10 +99,10 @@ Rectangle {
                 text: listRect.text
                 anchors.centerIn: parent
                 horizontalAlignment: Text.AlignHCenter
-                width: parent.width - activityBackground.baseMargins
+                width: parent.width - GCStyle.baseMargins
                 wrapMode: Text.WordWrap
                 fontSize: smallSize
-                color: "#373737"
+                color: GCStyle.darkText
             }
 
             MouseArea {
@@ -135,13 +134,13 @@ Rectangle {
             left: parent.left
             right: scrollItem.left
             bottom: parent.bottom
-            topMargin: activityBackground.baseMargins
-            leftMargin: activityBackground.baseMargins
-            rightMargin: activityBackground.baseMargins
+            topMargin: GCStyle.baseMargins
+            leftMargin: GCStyle.baseMargins
+            rightMargin: GCStyle.baseMargins
             bottomMargin: bar.height * 1.5
         }
         model: containerModel
-        spacing: 5 * ApplicationInfo.ratio
+        spacing: GCStyle.halfMargins
         delegate: listElement
         interactive: true
         maximumFlickVelocity: activity.height
@@ -152,22 +151,22 @@ Rectangle {
 
         header: Item {
             width: parent.width
-            height: heading.height + activityBackground.baseMargins * 2
+            height: heading.height + GCStyle.baseMargins * 2
             Rectangle {
                 width: parent.width
-                height: heading.height + activityBackground.baseMargins
-                radius: activityBackground.baseMargins * 0.5
+                height: heading.height + GCStyle.baseMargins
+                radius: GCStyle.halfMargins
                 anchors.top: parent.top
                 color: "#80FFFFFF"
                 GCText {
                     id: heading
                     text: qsTr("Arrange the events in the order in which they happened. " +
                     "Select the line to move, then select its target position.")
-                    width: parent.width - activityBackground.baseMargins * 2
+                    width: parent.width - GCStyle.baseMargins * 2
                     wrapMode: Text.WordWrap
                     horizontalAlignment: Text.AlignHCenter
                     anchors.centerIn: parent
-                    color: "#373737"
+                    color: GCStyle.darkText
                     fontSize: smallSize
                 }
             }
@@ -189,9 +188,8 @@ Rectangle {
     GCButtonScroll {
         id: scrollItem
         anchors.right: parent.right
-        anchors.rightMargin: activityBackground.baseMargins
         anchors.top: parent.top
-        anchors.topMargin: activityBackground.baseMargins
+        anchors.margins: GCStyle.baseMargins
         anchors.bottom: parent.bottom
         anchors.bottomMargin: bar.height * 1.5
         onUp: list.flick(0, 1000)
