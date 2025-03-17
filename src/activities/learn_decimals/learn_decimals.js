@@ -88,7 +88,9 @@ function start(items_) {
     items.score.currentSubLevel = 0;
     firstNumberList = [];
 
-    if(!items.tutorialImage.visible) {
+    if(items.tutorialImage.visible) {
+        loadTutorialText();
+    } else {
         initLevel();
     }
 }
@@ -354,4 +356,23 @@ function toDecimalLocaleNumber(decimalNumber) {
     }
     var decimalLocale = Core.convertNumberToLocaleString(decimalNumber, locale, 'f', 1);
     return decimalLocale;
+}
+
+function loadTutorialText() {
+    var largestNumber = items.isQuantityMode ? "15" : toDecimalLocaleNumber(1.5);
+    var smallestNumber = toDecimalLocaleNumber(0.3);
+
+    if(items.isSubtractionMode) {
+        items.tutorialSection.tutorialQml.instructionText = items.instructionPanel.subtractionQuestion.arg(largestNumber).arg(smallestNumber);
+    }
+    else if(items.isAdditionMode) {
+        items.tutorialSection.tutorialQml.instructionText = items.instructionPanel.additionQuestion.arg(largestNumber).arg(smallestNumber);
+    }
+    else if(items.isQuantityMode) {
+        items.tutorialSection.tutorialQml.instructionText = items.instructionPanel.quantityQuestion.arg(largestNumber);
+    }
+    else {
+        items.tutorialSection.tutorialQml.instructionText = items.instructionPanel.decimalQuestion.arg(largestNumber);
+    }
+    items.tutorialSection.tutorialQml.answerText = items.answerBackground.resultText.arg(" ")
 }

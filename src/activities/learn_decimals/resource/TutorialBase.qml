@@ -23,15 +23,14 @@ Image {
     property bool isRepresentationShown: false
     property bool isResultTyping: false
     property bool isSubtractionMode2: false
+    property string instructionText: ""
+    property string answerText: ""
 
     Item {
         id: layoutTutorial
         width: parent.paintedWidth
         height: parent.paintedHeight
         anchors.centerIn: parent
-
-        readonly property string largestNumber: activity.isQuantityMode ? "15" : Activity.toDecimalLocaleNumber(1.5)
-        readonly property string smallestNumber: Activity.toDecimalLocaleNumber(0.3)
 
         GCTextPanel {
             id: tutorialInstructionPanel
@@ -42,22 +41,7 @@ Image {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
             anchors.topMargin: GCStyle.halfMargins
-            textItem.text: layoutTutorial.displayQuestion()
-        }
-
-        function displayQuestion() {
-            if(activity.isSubtractionMode) {
-                return instructionPanel.subtractionQuestion.arg(layoutTutorial.largestNumber).arg(layoutTutorial.smallestNumber)
-            }
-            else if(activity.isAdditionMode) {
-                return instructionPanel.additionQuestion.arg(layoutTutorial.largestNumber).arg(layoutTutorial.smallestNumber)
-            }
-            else if(activity.isQuantityMode) {
-                return instructionPanel.quantityQuestion.arg(layoutTutorial.largestNumber)
-            }
-            else {
-                return instructionPanel.decimalQuestion.arg(layoutTutorial.largestNumber)
-            }
+            textItem.text: tutorialBase.instructionText
         }
 
         Item {
@@ -325,6 +309,7 @@ Image {
             radius: GCStyle.halfMargins
 
             GCText {
+                id: answerTextTuto
                 anchors.fill: parent
                 anchors.margins: GCStyle.tinyMargins
                 horizontalAlignment: Text.AlignHCenter
@@ -332,7 +317,7 @@ Image {
                 color: GCStyle.darkText
                 fontSize: smallSize
                 fontSizeMode: Text.Fit
-                text: answerBackground.resultText.arg(" ")
+                text: tutorialBase.answerText
             }
         }
 
