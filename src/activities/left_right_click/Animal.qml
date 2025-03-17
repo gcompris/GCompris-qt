@@ -6,6 +6,7 @@
  */
 import QtQuick 2.12
 
+import "../../core"
 import "left_right_click.js" as Activity
 
 Item {
@@ -13,24 +14,22 @@ Item {
     z: 10
     visible: !animalInvisible ? true : false
     property bool clicked: false
+    height: width
 
     Rectangle {
         id: animalRect
-        anchors.horizontalCenter: parent.horizontalCenter
-        anchors.verticalCenter: parent.verticalCenter
-        width: parent.width * 0.8
-        height: parent.height * 0.8
+        anchors.fill: parent
         color: "transparent"
         border.color: "transparent"
-        border.width: 5
-        radius: 10
+        border.width: GCStyle.thinBorder
+        radius: GCStyle.halfMargins
         Image {
-            width: parent.width * 0.9
-            height: parent.height * 0.9
+            width: parent.width - GCStyle.baseMargins
+            height: height
             sourceSize.width: width
             source: imageSource
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.verticalCenter: parent.verticalCenter
+            anchors.fill: parent
+            anchors.margins: GCStyle.baseMargins
             fillMode: Image.PreserveAspectFit
         }
         PropertyAnimation {
@@ -44,7 +43,7 @@ Item {
             id: borderHighlight
             target: animalRect
             property: 'border.color'
-            to: "#F2F2F2"
+            to: GCStyle.lightBorder
             duration: 0
         }
         MouseArea {
@@ -81,7 +80,7 @@ Item {
 
             hoverEnabled: enabled
             onEntered: {
-                animalRect.border.color = "#F2F2F2"
+                animalRect.border.color = GCStyle.lightBorder
             }
             onExited: {
                 animalRect.border.color = "transparent"
