@@ -20,7 +20,7 @@ ActivityBase {
 
     pageComponent: Rectangle {
         id: activityBackground
-        color: "#abcdef"
+        color: GCStyle.lightBlueBg
         focus: true
         signal start
         signal stop
@@ -49,10 +49,11 @@ ActivityBase {
 
         Item {
             id: layoutArea
-            width: parent.width
-            height: parent.height - bar.height * 1.5 - score.height * 1.3
+            width: parent.width - 2 * GCStyle.baseMargins
+            height: parent.height - bar.height * 1.5 - score.height - 2 * GCStyle.baseMargins
             anchors.top: score.bottom
             anchors.left: parent.left
+            anchors.margins: GCStyle.baseMargins
         }
 
         Image {
@@ -74,7 +75,7 @@ ActivityBase {
                 sourceSize.width: parent.paintedWidth
                 sourceSize.height: parent.paintedHeight
                 anchors.centerIn: parent
-                anchors.topMargin: 40
+                anchors.topMargin: 2 * GCStyle.baseMargins
                 opacity: 0
             }
 
@@ -149,7 +150,7 @@ ActivityBase {
                 anchors.right: blackBoard.horizontalCenter
                 anchors.rightMargin: blackBoard.paintedWidth * 0.04
                 anchors.top: blackBoard.verticalCenter
-                anchors.topMargin: blackBoard.paintedHeight * 0.5 + 10
+                anchors.topMargin: blackBoard.paintedHeight * 0.5 + GCStyle.halfMargins
                 textLabel: qsTr("Left hand")
                 onPressed: {
                     items.buttonsBlocked = true
@@ -214,7 +215,7 @@ ActivityBase {
         Score {
             id: score
             anchors.top: activityBackground.top
-            anchors.topMargin: parent.height * 0.01
+            anchors.topMargin: GCStyle.baseMargins
             anchors.bottom: undefined
             onStop: Activity.displayNextHand()
         }
