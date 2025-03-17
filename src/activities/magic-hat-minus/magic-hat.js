@@ -49,9 +49,9 @@ function initLevel() {
     var maxValue = items.levels[items.currentLevel].maxValue
 
     if(items.currentLevel > 0) {
-        items.introText.visible = false
+        items.instructionPanel.visible = false
     } else {
-        items.introText.visible = true
+        items.instructionPanel.visible = true
     }
     coefficientsNeeded = (maxValue / maxStarSlots <= 1) ? false : true
     for(var j = 0; j < 3; j++) {

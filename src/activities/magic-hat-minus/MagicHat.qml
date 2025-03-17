@@ -30,17 +30,17 @@ ActivityBase {
         sourceSize.width: width
         sourceSize.height: height
         fillMode: Image.PreserveAspectCrop
-        readonly property int baseMargins: 10 * ApplicationInfo.ratio
-        readonly property int halfMargins: 5 * ApplicationInfo.ratio
-        readonly property int starSize: Math.min((layoutArea.width - baseMargins - halfMargins * 11) / 13 ,
-                                        (layoutArea.height - baseMargins * 4 - halfMargins * 7) / 9)
+
+        readonly property real starSize:
+            Math.min((layoutArea.width - GCStyle.baseMargins - GCStyle.halfMargins * 11) / 13 ,
+            (layoutArea.height - GCStyle.baseMargins * 4 - GCStyle.halfMargins * 7) / 9)
         signal start
         signal stop
 
         property var starColors : ["1", "2", "3"]
 
         readonly property bool horizontalLayout:
-            (width - okButton.width * 4 > height - bar.height * 1.5 - 6 * baseMargins)
+            (width - okButton.width * 4 > height - bar.height * 1.5 - 6 * GCStyle.baseMargins)
 
         Component.onCompleted: {
             dialogActivityConfig.initialize()
@@ -61,7 +61,7 @@ ActivityBase {
             readonly property var levels: activity.datasets
             property alias bonus: bonus
             property alias hat: theHat
-            property alias introText: introText
+            property alias instructionPanel: instructionPanel
             property bool inputBlocked: true
             property bool coefficientVisible: false
             property var repeatersList:
@@ -76,10 +76,10 @@ ActivityBase {
         Item {
             id: layoutArea
             anchors.fill: parent
-            anchors.margins: activityBackground.baseMargins
-            anchors.topMargin: 5 * activityBackground.baseMargins
+            anchors.margins: GCStyle.baseMargins
+            anchors.topMargin: 5 * GCStyle.baseMargins
             anchors.bottomMargin: activityBackground.horizontalLayout ? bar.height * 1.5 :
-                                    bar.height * 1.5 + theHat.height + activityBackground.baseMargins
+                                    bar.height * 1.5 + theHat.height + GCStyle.baseMargins
 
             Image {
                 // The math operation
@@ -87,7 +87,7 @@ ActivityBase {
                 source: mode == "minus" ? Activity.url + "minus.svg" :
                 Activity.url + "plus.svg"
                 anchors.right: operationLayout.left
-                anchors.rightMargin: activityBackground.baseMargins
+                anchors.rightMargin: GCStyle.baseMargins
                 width: activityBackground.starSize
                 height: width
                 sourceSize.width: width
@@ -99,17 +99,17 @@ ActivityBase {
                 anchors {
                     top: parent.top
                     horizontalCenter: parent.horizontalCenter
-                    horizontalCenterOffset: (operatorImage.width + activityBackground.baseMargins) * 0.5
+                    horizontalCenterOffset: (operatorImage.width + GCStyle.baseMargins) * 0.5
                 }
                 width: items.coefficientVisible ?
-                    (activityBackground.starSize + activityBackground.halfMargins) * 11 + activityBackground.starSize :
-                    (activityBackground.starSize + activityBackground.halfMargins) * 10
+                    (activityBackground.starSize + GCStyle.halfMargins) * 11 + activityBackground.starSize :
+                    (activityBackground.starSize + GCStyle.halfMargins) * 10
                 height: parent.height
-                spacing: activityBackground.baseMargins
+                spacing: GCStyle.baseMargins
                 Column {
                     id: firstRow
-                    height: activityBackground.starSize * 3 + activityBackground.halfMargins * 2
-                    spacing: activityBackground.halfMargins
+                    height: activityBackground.starSize * 3 + GCStyle.baseMargins
+                    spacing: GCStyle.halfMargins
                     z: 10
                     Repeater {
                         id: repeaterFirstRow
@@ -120,6 +120,7 @@ ActivityBase {
                             width: operationLayout.width
                             backgroundColor: "#4d4d4d"
                             starsColor: starColors[index]
+                            starSize: activityBackground.starSize
                             theHat: items.hat
                             opacity: 0
                         }
@@ -128,7 +129,7 @@ ActivityBase {
                 Column {
                     id: secondRow
                     height: firstRow.height
-                    spacing: activityBackground.halfMargins
+                    spacing: GCStyle.halfMargins
                     z: 9
                     Repeater {
                         id: repeaterSecondRow
@@ -139,6 +140,7 @@ ActivityBase {
                             width: operationLayout.width
                             backgroundColor: "#4d4d4d"
                             starsColor: starColors[index]
+                            starSize: activityBackground.starSize
                             theHat: items.hat
                             opacity: 0
                         }
@@ -146,16 +148,16 @@ ActivityBase {
                 }
 
                 Rectangle {
-                    x: - activityBackground.halfMargins * 0.5
+                    x: - GCStyle.halfMargins * 0.5
                     width: operationLayout.width
-                    height: activityBackground.halfMargins
-                    color: "white"
+                    height: GCStyle.halfMargins
+                    color: GCStyle.whiteBg
                 }
 
                 Column {
                     id: answerRow
                     height: firstRow.height
-                    spacing: activityBackground.halfMargins
+                    spacing: GCStyle.halfMargins
                     Repeater {
                         id: repeaterAnswerRow
                         model: 3
@@ -165,6 +167,7 @@ ActivityBase {
                             width: operationLayout.width
                             backgroundColor: "#088292"
                             starsColor: starColors[index]
+                            starSize: activityBackground.starSize
                             authorizeClick: false
                             theHat: items.hat
                             opacity: 0
@@ -220,6 +223,11 @@ ActivityBase {
             height: Math.min(100 * ApplicationInfo.ratio, (activityBackground.height - anchors.bottomMargin) * 0.2)
             width: height
             starsSize: activityBackground.starSize
+            onClicked: {
+                if(instructionPanel.visible) {
+                    instructionPanel.visible = false;
+                }
+            }
         }
 
         BarButton {
@@ -227,7 +235,7 @@ ActivityBase {
             anchors {
                 bottom: theHat.bottom
                 right: parent.right
-                rightMargin: 10 * ApplicationInfo.ratio
+                rightMargin: GCStyle.baseMargins
             }
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             width: theHat.height
@@ -238,29 +246,14 @@ ActivityBase {
             }
         }
 
-        Rectangle {
-            id: introTextBG
-            width: introText.contentWidth + 2 * activityBackground.baseMargins
-            height: introText.contentHeight + activityBackground.baseMargins
-            anchors.centerIn: introText
-            color: "#373737"
-            radius: activityBackground.baseMargins
-            visible: introText.visible
-        }
-
-        GCText {
-            id: introText
+        GCTextPanel {
+            id: instructionPanel
+            panelWidth: parent.width - 2 * GCStyle.baseMargins
+            panelHeight: 40 * ApplicationInfo.ratio
             anchors.centerIn: layoutArea
-            width: parent.width - 40 * ApplicationInfo.ratio
-            height: 30 * ApplicationInfo.ratio
-            fontSizeMode: Text.Fit
-            fontSize: regularSize
-            font.bold: true
-            color: "white"
-            wrapMode: Text.WordWrap
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            text: qsTr("Click on the hat to begin the game")
+            textItem.fontSize: textItem.regularSize
+            textItem.font.bold: true
+            textItem.text: qsTr("Click on the hat to begin the game")
         }
 
         Bonus {
