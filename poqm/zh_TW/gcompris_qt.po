@@ -16118,25 +16118,25 @@ msgstr ""
 "在下方數好橘色小點，然後把它拖到上方空白處，直到上方的橘點數可以表示所要求的"
 "數量。然後按下 OK 來檢查答案。"
 
-#: activities/learn_decimals/Learn_decimals.qml:129
+#: activities/learn_decimals/Learn_decimals.qml:142
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "請排出數字：%1"
 
-#: activities/learn_decimals/Learn_decimals.qml:130
+#: activities/learn_decimals/Learn_decimals.qml:143
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "請排出計算結果：%1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:131
+#: activities/learn_decimals/Learn_decimals.qml:144
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "請排出計算結果：%1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:132
+#: activities/learn_decimals/Learn_decimals.qml:145
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
@@ -16605,12 +16605,12 @@ msgctxt "ActivityInfo|"
 msgid "Right arrow: right hand answer"
 msgstr "右鍵：認為是右手就按右鍵"
 
-#: activities/leftright/Leftright.qml:153
+#: activities/leftright/Leftright.qml:156
 msgctxt "Leftright|"
 msgid "Left hand"
 msgstr "左手"
 
-#: activities/leftright/Leftright.qml:175
+#: activities/leftright/Leftright.qml:178
 msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "右手"
@@ -16681,12 +16681,12 @@ msgid ""
 msgstr ""
 "飛機上的旗子會顯示一個字母。選擇所有包含該字母的單字，然後按下「確定」鍵。"
 
-#: activities/letter-in-word/LetterInWord.qml:336
+#: activities/letter-in-word/LetterInWord.qml:333
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "抱歉，目前還沒有您的語言的翻譯。"
 
-#: activities/letter-in-word/LetterInWord.qml:337
+#: activities/letter-in-word/LetterInWord.qml:334
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16696,7 +16696,7 @@ msgstr ""
 "GCompris 由 KDE 社群開發。您可以加入 <a href=\"%2\">%2</a> 翻譯團隊來翻譯 "
 "GCompris"
 
-#: activities/letter-in-word/LetterInWord.qml:339
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -16915,7 +16915,7 @@ msgstr ""
 "布拉耶系統被接受成為全世界的標準。Louis Braille 證明了只要您願意，不管您的情"
 "況如何，都能做了不起的事。"
 
-#: activities/louis-braille/ReorderList.qml:164
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "
@@ -16966,7 +16966,7 @@ msgstr ""
 "按一下帽子可以把它打開或蓋上。星星會跑進去，然後有一些會溜走。您要數數看在帽"
 "子下還有多少星星。點擊底部區域並輸入您的答案，然後點「確定」來揭曉。"
 
-#: activities/magic-hat-minus/MagicHat.qml:263
+#: activities/magic-hat-minus/MagicHat.qml:256
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "點擊帽子開始遊戲"
@@ -17015,7 +17015,7 @@ msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr "計算最多 10000 個星星並帶係數。"
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
-#: activities/magic-hat-minus/StarsBar.qml:35
+#: activities/magic-hat-minus/StarsBar.qml:36
 #, qt-format
 msgctxt "StarsBar|"
 msgid "%1x"
@@ -17169,7 +17169,7 @@ msgstr ""
 "在更高的關卡中，會自動開啟快跑模式。如果您在前面的關卡要使用，或是要在進階關"
 "卡中關掉此功能，只需要點擊左上方的腳或運動鞋的圖示即可。\t"
 
-#: activities/maze/Maze.qml:341
+#: activities/maze/Maze.qml:340
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -27556,22 +27556,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "我準備好了"
 
-#: core/Tutorial.qml:137
+#: core/Tutorial.qml:140
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "前一個"
 
-#: core/Tutorial.qml:155
+#: core/Tutorial.qml:158
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "下一個"
 
-#: core/Tutorial.qml:172
+#: core/Tutorial.qml:175
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "略過"
 
-#: core/Tutorial.qml:172
+#: core/Tutorial.qml:175
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "開始"

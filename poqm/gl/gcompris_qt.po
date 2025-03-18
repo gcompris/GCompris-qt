@@ -16308,25 +16308,25 @@ msgstr ""
 "laranxas se corresponda coa cantidade solicitada. Entón, preme o botón de "
 "«Aceptar» para validar a resposta."
 
-#: activities/learn_decimals/Learn_decimals.qml:129
+#: activities/learn_decimals/Learn_decimals.qml:142
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "Amosa o número: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:130
+#: activities/learn_decimals/Learn_decimals.qml:143
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "Amosa o resultado de: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:131
+#: activities/learn_decimals/Learn_decimals.qml:144
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "Amosa o resultado de: %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:132
+#: activities/learn_decimals/Learn_decimals.qml:145
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
@@ -16767,12 +16767,12 @@ msgctxt "ActivityInfo|"
 msgid "Right arrow: right hand answer"
 msgstr "Frecha dereita: resposta dereita"
 
-#: activities/leftright/Leftright.qml:153
+#: activities/leftright/Leftright.qml:156
 msgctxt "Leftright|"
 msgid "Left hand"
 msgstr "A man esquerda"
 
-#: activities/leftright/Leftright.qml:175
+#: activities/leftright/Leftright.qml:178
 msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "A man dereita"
@@ -16841,12 +16841,12 @@ msgstr ""
 "Amósase unha letra na bandeira que hai colocada no avión. Selecciona todas "
 "as palabras da lista que conteñen a letra e preme o botón de «Aceptar»."
 
-#: activities/letter-in-word/LetterInWord.qml:336
+#: activities/letter-in-word/LetterInWord.qml:333
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Sentímolo, aínda non dispoñemos dunha tradución ao galego."
 
-#: activities/letter-in-word/LetterInWord.qml:337
+#: activities/letter-in-word/LetterInWord.qml:334
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16856,7 +16856,7 @@ msgstr ""
 "GCompris desenvólveo a comunidade de KDE, para colaborar na súa tradución "
 "únete a un grupo de tradución en <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:339
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -17093,7 +17093,7 @@ msgstr ""
 "O braille aceptouse como estándar internacional. Louis Braille demostrou "
 "que, coa motivación axeitada, podes facer cousas incríbeis."
 
-#: activities/louis-braille/ReorderList.qml:164
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "
@@ -17141,7 +17141,7 @@ msgstr ""
 "calcular cantas quedan baixo o sombreiro. Preme a zona inferior para "
 "escribir a resposta e o botón de «Aceptar» para validala."
 
-#: activities/magic-hat-minus/MagicHat.qml:263
+#: activities/magic-hat-minus/MagicHat.qml:256
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Preme o sombreiro para comezar a partida"
@@ -17190,7 +17190,7 @@ msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr "Calcula as estrelas que restan ata 10000 con coeficientes."
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
-#: activities/magic-hat-minus/StarsBar.qml:35
+#: activities/magic-hat-minus/StarsBar.qml:36
 #, qt-format
 msgctxt "StarsBar|"
 msgid "%1x"
@@ -17348,7 +17348,7 @@ msgstr ""
 "superiores, preme a icona de «Descalzo ou calzado» na esquina superior "
 "esquerda da pantalla para activar ou desactivar o modo.\t\t"
 
-#: activities/maze/Maze.qml:341
+#: activities/maze/Maze.qml:340
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -27872,22 +27872,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "Seguir"
 
-#: core/Tutorial.qml:137
+#: core/Tutorial.qml:140
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "Anterior"
 
-#: core/Tutorial.qml:155
+#: core/Tutorial.qml:158
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "Seguinte"
 
-#: core/Tutorial.qml:172
+#: core/Tutorial.qml:175
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "Saltar"
 
-#: core/Tutorial.qml:172
+#: core/Tutorial.qml:175
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Iniciar"

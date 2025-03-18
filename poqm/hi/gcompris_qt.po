@@ -17858,25 +17858,25 @@ msgid ""
 "validate your answer."
 msgstr ""
 
-#: activities/learn_decimals/Learn_decimals.qml:129
+#: activities/learn_decimals/Learn_decimals.qml:142
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr ""
 
-#: activities/learn_decimals/Learn_decimals.qml:130
+#: activities/learn_decimals/Learn_decimals.qml:143
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr ""
 
-#: activities/learn_decimals/Learn_decimals.qml:131
+#: activities/learn_decimals/Learn_decimals.qml:144
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr ""
 
-#: activities/learn_decimals/Learn_decimals.qml:132
+#: activities/learn_decimals/Learn_decimals.qml:145
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
@@ -18428,12 +18428,12 @@ msgctxt "ActivityInfo|"
 msgid "Right arrow: right hand answer"
 msgstr ""
 
-#: activities/leftright/Leftright.qml:153
+#: activities/leftright/Leftright.qml:156
 msgctxt "Leftright|"
 msgid "Left hand"
 msgstr "बायां हाथ"
 
-#: activities/leftright/Leftright.qml:175
+#: activities/leftright/Leftright.qml:178
 msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "दहिना हाथ"
@@ -18528,12 +18528,12 @@ msgstr ""
 "एक अक्षर लिखा या बोला गया है।  कुछ शब्दों को प्रदर्शित किया जाता है, बच्चों को शब्द या "
 "शब्दों में ये अक्षर खोजना है।"
 
-#: activities/letter-in-word/LetterInWord.qml:336
+#: activities/letter-in-word/LetterInWord.qml:333
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "क्षमा करें, इस भाषा का अनुवाद अभी हमारे पास उपलब्द नहीं है"
 
-#: activities/letter-in-word/LetterInWord.qml:337
+#: activities/letter-in-word/LetterInWord.qml:334
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -18543,7 +18543,7 @@ msgstr ""
 "जीकॉमप्री को केडीई समुदाय द्वारा विकसित किया गया है, आप <a href=\"%2\">%2</a> पर "
 "एक अनुवाद टीम में शामिल होकर जीकॉमप्री का अनुवाद कर सकते हैं।"
 
-#: activities/letter-in-word/LetterInWord.qml:339
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -18829,7 +18829,7 @@ msgstr ""
 "ब्रेल एक विश्व व्यापी मानक के रूप में स्वीकार कर लिया गया। लुई ब्रेल ने साबित कर दिया है "
 "कि अगर आपके पास प्रेरणा के लिए कुछ होता है तो आप अविश्वसनीय काम कर सकते हैं।"
 
-#: activities/louis-braille/ReorderList.qml:164
+#: activities/louis-braille/ReorderList.qml:163
 #, fuzzy
 #| msgctxt "ReorderList|"
 #| msgid ""
@@ -18896,7 +18896,7 @@ msgstr ""
 "इसे खोलने या बंद करने के लिए टोपी पर क्लिक करें। टोपी के नीचे, आप कितने तारे देख सकते हैं? "
 "सावधानी से गणना करें अपने जवाब को इनपुट करने के लिए नीचे-दाएं क्षेत्र में क्लिक करें।"
 
-#: activities/magic-hat-minus/MagicHat.qml:263
+#: activities/magic-hat-minus/MagicHat.qml:256
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "खेल शुरू करने के लिए टोपी पर क्लिक करें"
@@ -18951,7 +18951,7 @@ msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr ""
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
-#: activities/magic-hat-minus/StarsBar.qml:35
+#: activities/magic-hat-minus/StarsBar.qml:36
 #, fuzzy, qt-format
 #| msgctxt "Guesscount|"
 #| msgid "%1/%2"
@@ -19158,7 +19158,7 @@ msgstr ""
 "टॉगल करने के लिए स्क्रीन के ऊपरी बाएं कोने में \"नंगे पैर / स्पोर्ट्शू\" पर क्लिक करें।\n"
 "\t"
 
-#: activities/maze/Maze.qml:341
+#: activities/maze/Maze.qml:340
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -31183,12 +31183,12 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "मैं तैयार हूँ"
 
-#: core/Tutorial.qml:137
+#: core/Tutorial.qml:140
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "पिछला"
 
-#: core/Tutorial.qml:155
+#: core/Tutorial.qml:158
 #, fuzzy
 #| msgctxt "IntroMessage|"
 #| msgid "Next"
@@ -31196,12 +31196,12 @@ msgctxt "Tutorial|"
 msgid "Next"
 msgstr "अगला"
 
-#: core/Tutorial.qml:172
+#: core/Tutorial.qml:175
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr ""
 
-#: core/Tutorial.qml:172
+#: core/Tutorial.qml:175
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr ""

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-03-09 20:50+0200\n"
+"PO-Revision-Date: 2025-03-16 08:05+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -3088,6 +3088,8 @@ msgid ""
 "Develop some logical skills (data linking, deduction) and spatial "
 "visualization while using calculation."
 msgstr ""
+"פתוח מיומנויות חשיבה (קישור נתונים, הסקת מסקנות) והמחשה מרחבית תוך שימוש "
+"בחישוב."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
@@ -3847,7 +3849,7 @@ msgstr "צריך למקם את היצורים החיים בצד ימין ואת 
 #: activities/categorization/resource/board/category_monuments.qml:19
 msgctxt "category_monuments|"
 msgid "Monuments"
-msgstr "מונומנטים"
+msgstr "אתרי מורשת"
 
 #: activities/categorization/resource/board/category_monuments.qml:23
 #: activities/categorization/resource/board/category_monuments.qml:32
@@ -3857,7 +3859,7 @@ msgstr "מונומנטים"
 #: activities/categorization/resource/board/category_monuments.qml:68
 msgctxt "category_monuments|"
 msgid "Place the MONUMENTS to the right and other objects to the left"
-msgstr "צריך למקם את המונומנטים בצד ימין ואת שאר הדברים בצד שמאל"
+msgstr "יש למקם את אתרי המורשת בצד ימין ואת שאר הדברים בצד שמאל"
 
 #: activities/categorization/resource/board/category_nature.qml:19
 msgctxt "category_nature|"
@@ -6983,13 +6985,13 @@ msgstr "ללחוץ על החיה שמתאימה לתיאור."
 #: activities/explore_monuments/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Explore monuments"
-msgstr "לגלות מונומנטים"
+msgstr "חשיפת אתרי מורשת"
 
 #. Help title
 #: activities/explore_monuments/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Explore monuments around the world."
-msgstr "לגלות מונומנטים (אנדרטאות) ברחבי העולם."
+msgstr "לגלות אתרי מורשת ואנדרטאות ברחבי העולם."
 
 #. Help goal
 #: activities/explore_monuments/ActivityInfo.qml:20
@@ -6997,13 +6999,13 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn about various monuments from around the world and remember their "
 "location."
-msgstr "ללמוד על מונומנטים מגוונים ברחבי העולם ולזכור את המיקום שלהם."
+msgstr "ללמוד על אתרי מורשת מגוונים ברחבי העולם ולזכור את המקום שלהם."
 
 #. Help prerequisite
 #: activities/explore_monuments/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Knowledge of different monuments."
-msgstr "ידע על מונומנטים שונים."
+msgstr "ידע על אתרי מורשת שונים."
 
 #. Help manual
 #: activities/explore_monuments/ActivityInfo.qml:24
@@ -7012,7 +7014,8 @@ msgid ""
 "Click on the spots to learn about the monuments and then locate them on the "
 "map."
 msgstr ""
-"ללחוץ על הנקודות כדי ללמוד על המונומנטים ואז לזהות היכן הם נמצאים על המפה."
+"נא ללחוץ על הנקודות כדי ללמוד על אתרי המורשת ואז לזהות היכן הם נמצאים על "
+"המפה."
 
 #: activities/explore_monuments/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -7165,7 +7168,7 @@ msgstr "שבעת פלאי העולם החדשים."
 #: activities/explore_monuments/resource/board/board1.qml:101
 msgctxt "board1|"
 msgid "Click on the location of the given monument."
-msgstr "להקיש על המיקום של המונומנט הנתון."
+msgstr "ללחוץ על מקום אתר המורשת הנתון."
 
 #: activities/explore_monuments/resource/board/board2.qml:18
 #: activities/explore_monuments/resource/board/board2.qml:21
@@ -7221,9 +7224,9 @@ msgid ""
 "monument that marks India's chief ports and is a major tourist attraction "
 "for visitors who arrive in India for the first time."
 msgstr ""
-"השער להודו הור אחד מהאתרים המיוחדים ביותר בהודו הממוקם בעיר מומבאי. המבנה "
-"הענקי נבנה ב1924, ניצב בקצה אפּולו בּוּנדר, המעבר המשקיף על נמל מומבאי, גובל "
-"בים הערבי במחוז קולובה. השער להודו הוא מונומנט המסמל את הנמלים העיקריים של "
+"השער להודו הוא אחד מהאתרים המיוחדים ביותר בהודו הממוקם בעיר מומבאי. המבנה "
+"הענקי נבנה ב־1924, ניצב בקצה אפּולו בּוּנדר, המעבר המשקיף על נמל מומבאי, גובל "
+"בים הערבי במחוז קולובה. השער להודו הוא אתר מורשת המסמל את הנמלים העיקריים של "
 "הודו והוא אטרקציה תיירותית למבקרים המגיעים להודו בפעם הראשונה."
 
 #: activities/explore_monuments/resource/board/board2.qml:51
@@ -7253,6 +7256,7 @@ msgid "Ajanta Caves"
 msgstr "מערות אגֵ'ֵנטה"
 
 #: activities/explore_monuments/resource/board/board2.qml:63
+#, fuzzy
 msgctxt "board2|"
 msgid ""
 "The Ajanta Caves are about 29 rock-cut Buddhist cave monuments which date "
@@ -7300,9 +7304,9 @@ msgid ""
 "the heart of the city of Mysore. The palace was initially built by the "
 "Wodeyar kings in the 14th century."
 msgstr ""
-"ארמון מיסורה או ארמון מאהרג'ה מיסורה הוא אחד המונומנטים המרהיבים והגדולים "
-"בהודו. ידוע גם כאמבה ווילָס, ממוקם בילבה של העיר מיסורה. הארמון נבנה סהתחלה "
-"על ידי מלכי וּוֹדיאָר במאה ה14."
+"ארמון מיסורה או ארמון מאהרג׳ה מיסורה הוא אחד מאתרי המורשת המרהיבים והגדולים "
+"בהודו. ידוע גם כאמבה ווילָס, ממוקם בליבה של העיר מיסורה. הארמון נבנה בהתחלה "
+"על ידי מלכי וּוֹדיאָר במאה ה־14."
 
 #: activities/explore_monuments/resource/board/board2.qml:95
 #: activities/explore_monuments/resource/board/board2.qml:98
@@ -7311,6 +7315,7 @@ msgid "Charminar"
 msgstr "צ'ארמינר"
 
 #: activities/explore_monuments/resource/board/board2.qml:96
+#, fuzzy
 msgctxt "board2|"
 msgid ""
 "The Charminar in Hyderabad was constructed in 1591 by Mohammed Quli Qutab "
@@ -7366,6 +7371,7 @@ msgid "Qutub Minar"
 msgstr "קוּטובּ מינאר"
 
 #: activities/explore_monuments/resource/board/board2.qml:129
+#, fuzzy
 msgctxt "board2|"
 msgid ""
 "Qutub Minar, at 74 meters, is the tallest brick minaret in the world, and "
@@ -7382,12 +7388,12 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board2.qml:141
 msgctxt "board2|"
 msgid "Monuments of India"
-msgstr "המונומנטים של הודו"
+msgstr "אתרי המורשת של הודו"
 
 #: activities/explore_monuments/resource/board/board2.qml:144
 msgctxt "board2|"
 msgid "Click on the location of the given monument."
-msgstr "להקיש על המיקום של המונומנט הנתון."
+msgstr "נא ללחוץ על מקום אתר המורשת הנתון."
 
 #: activities/explore_monuments/resource/board/board3.qml:18
 #: activities/explore_monuments/resource/board/board3.qml:21
@@ -7582,18 +7588,18 @@ msgid ""
 "Exhibition in 1889 for the centenary of the French Revolution. At the time "
 "of its inauguration, it was the world’s tallest monument."
 msgstr ""
-"מגדל המתכת המפורסם בעולם כולו נבנה לתערכוה העולמית בפריז ב1889 לציון מאה שנה "
-"למהפכה הצרפתית. בזמן הקמתו, היה זה המונומנט הגבוה בעולם."
+"מגדל המתכת המפורסם בעולם כולו נבנה לתערכוה העולמית בפריז ב־1889 לציון מאה "
+"שנה למהפכה הצרפתית. בזמן הקמתו, היה זה אתר המורשת הגבוה בעולם."
 
 #: activities/explore_monuments/resource/board/board3.qml:130
 msgctxt "board3|"
 msgid "Monuments of France"
-msgstr "מונומנטים בצרפת"
+msgstr "אתרי המורשת של צרפת"
 
 #: activities/explore_monuments/resource/board/board3.qml:133
 msgctxt "board3|"
 msgid "Click on the location of the given monument."
-msgstr "להקיש על המיקום של המונומנט הנתון."
+msgstr "נא ללחוץ על מקום אתר המורשת הנתון."
 
 #: activities/explore_monuments/resource/board/board4.qml:18
 #: activities/explore_monuments/resource/board/board4.qml:21
@@ -7735,7 +7741,7 @@ msgstr "מבנים חשובים בגרמניה"
 #: activities/explore_monuments/resource/board/board4.qml:100
 msgctxt "board4|"
 msgid "Click on the location of the given monument."
-msgstr "להקיש על המיקום של המונומנט הנתון."
+msgstr "נא ללחוץ על מקום אתר המורשת הנתון."
 
 #: activities/explore_monuments/resource/board/board5.qml:18
 #: activities/explore_monuments/resource/board/board5.qml:21
@@ -15973,25 +15979,25 @@ msgstr ""
 "לחזור על הצעדים האלו עד שמספר התפוזים מתאים לכמות הנדרשת. אז להקיש על אישור "
 "כדי לוודא את התשובה."
 
-#: activities/learn_decimals/Learn_decimals.qml:129
+#: activities/learn_decimals/Learn_decimals.qml:142
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "להציג את המספר: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:130
+#: activities/learn_decimals/Learn_decimals.qml:143
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "להציג את התוצאה של %2 + %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:131
+#: activities/learn_decimals/Learn_decimals.qml:144
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "להציג את התוצאה של %2 - %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:132
+#: activities/learn_decimals/Learn_decimals.qml:145
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
@@ -16452,12 +16458,12 @@ msgctxt "ActivityInfo|"
 msgid "Right arrow: right hand answer"
 msgstr "חץ ימינה: תשובה ימנית"
 
-#: activities/leftright/Leftright.qml:153
+#: activities/leftright/Leftright.qml:156
 msgctxt "Leftright|"
 msgid "Left hand"
 msgstr "יש שמאל"
 
-#: activities/leftright/Leftright.qml:175
+#: activities/leftright/Leftright.qml:178
 msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "יד ימין"
@@ -16526,12 +16532,12 @@ msgstr ""
 "על הדגל שמובר למטוס מופיעה אות, לבחור את כל המילים או החפצים שבהן האות "
 "מופיעה ואז ללחוץ \"אישור\"."
 
-#: activities/letter-in-word/LetterInWord.qml:336
+#: activities/letter-in-word/LetterInWord.qml:333
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "אנו מצטערים, אין לנו עדיין תרגום לשפה שלך."
 
-#: activities/letter-in-word/LetterInWord.qml:337
+#: activities/letter-in-word/LetterInWord.qml:334
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16541,7 +16547,7 @@ msgstr ""
 "התוכנה GCompris מפותחת על ידי קהילת KDE, תוכל/י להצטרף לצוות המתרגמים/ות ב "
 "<a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:339
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -16760,7 +16766,7 @@ msgstr ""
 "ברייל התקבלה כסטנדרט ברחבי העולם. לואי ברייל הוכיח כי אם יש לך מוטיבציה אתה "
 "יכול לעשות דברים מדהימים."
 
-#: activities/louis-braille/ReorderList.qml:164
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "
@@ -16808,7 +16814,7 @@ msgstr ""
 "כמה נמצאים עדיין מתחת לכובע. ללחוץ על החלק התחתון כדי להכניס את התשובה שלך "
 "ועל כפתור ה\"אישור\" כדי לאמת אותה."
 
-#: activities/magic-hat-minus/MagicHat.qml:263
+#: activities/magic-hat-minus/MagicHat.qml:256
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "ללחוץ על הכובע כדי להתחיל את המשחק"
@@ -16857,7 +16863,7 @@ msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr "לחשב כוכבים שנשארו עד 10,000 עם שארית."
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
-#: activities/magic-hat-minus/StarsBar.qml:35
+#: activities/magic-hat-minus/StarsBar.qml:36
 #, qt-format
 msgctxt "StarsBar|"
 msgid "%1x"
@@ -17009,7 +17015,7 @@ msgstr ""
 "מוקדמים יותר או כדי לבטל אותו בשלבים מתקדמים, ללחוץ על סמל \"יחף/נעלי-ספורט"
 "\" בפינה השמאלית העליונה של המסך להחליף \"מצב-רוץ-מהר\".\t"
 
-#: activities/maze/Maze.qml:341
+#: activities/maze/Maze.qml:340
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -27243,22 +27249,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "אפשר להתחיל"
 
-#: core/Tutorial.qml:137
+#: core/Tutorial.qml:140
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "הקודם"
 
-#: core/Tutorial.qml:155
+#: core/Tutorial.qml:158
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "הבא"
 
-#: core/Tutorial.qml:172
+#: core/Tutorial.qml:175
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "לדלג"
 
-#: core/Tutorial.qml:172
+#: core/Tutorial.qml:175
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "להתחיל"
