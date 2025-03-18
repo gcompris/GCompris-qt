@@ -14561,12 +14561,9 @@ msgid "Division required."
 msgstr ""
 
 #: activities/guess24/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "运算记忆游戏"
+msgstr ""
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -15889,25 +15886,25 @@ msgid ""
 "validate your answer."
 msgstr ""
 
-#: activities/learn_decimals/Learn_decimals.qml:129
+#: activities/learn_decimals/Learn_decimals.qml:142
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr ""
 
-#: activities/learn_decimals/Learn_decimals.qml:130
+#: activities/learn_decimals/Learn_decimals.qml:143
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr ""
 
-#: activities/learn_decimals/Learn_decimals.qml:131
+#: activities/learn_decimals/Learn_decimals.qml:144
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr ""
 
-#: activities/learn_decimals/Learn_decimals.qml:132
+#: activities/learn_decimals/Learn_decimals.qml:145
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
@@ -16321,12 +16318,12 @@ msgctxt "ActivityInfo|"
 msgid "Right arrow: right hand answer"
 msgstr ""
 
-#: activities/leftright/Leftright.qml:153
+#: activities/leftright/Leftright.qml:156
 msgctxt "Leftright|"
 msgid "Left hand"
 msgstr "左手"
 
-#: activities/leftright/Leftright.qml:175
+#: activities/leftright/Leftright.qml:178
 msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "右手"
@@ -16393,12 +16390,12 @@ msgid ""
 "words in the list containing this letter and then press the OK button."
 msgstr ""
 
-#: activities/letter-in-word/LetterInWord.qml:336
+#: activities/letter-in-word/LetterInWord.qml:333
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "抱歉，我们找不到适合您的语言的翻译。"
 
-#: activities/letter-in-word/LetterInWord.qml:337
+#: activities/letter-in-word/LetterInWord.qml:334
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16408,7 +16405,7 @@ msgstr ""
 "GCompris 由 KDE 社区开发，您可以通过加入翻译团队 (<a href=\"%2\">%2</a>) 来贡"
 "献翻译"
 
-#: activities/letter-in-word/LetterInWord.qml:339
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -16613,7 +16610,7 @@ msgstr ""
 "布莱叶盲文系统是全世界普遍接受的标准。路易·布莱叶向人们证明了：只要您积极去"
 "做，您就会有非凡的成就。"
 
-#: activities/louis-braille/ReorderList.qml:164
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "
@@ -16655,7 +16652,7 @@ msgid ""
 "to input your answer and on the OK button to validate it."
 msgstr ""
 
-#: activities/magic-hat-minus/MagicHat.qml:263
+#: activities/magic-hat-minus/MagicHat.qml:256
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "点击帽子来开始游戏"
@@ -16704,7 +16701,7 @@ msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr ""
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
-#: activities/magic-hat-minus/StarsBar.qml:35
+#: activities/magic-hat-minus/StarsBar.qml:36
 #, qt-format
 msgctxt "StarsBar|"
 msgid "%1x"
@@ -16852,7 +16849,7 @@ msgid ""
 "of the screen to toggle the run-fast-mode.\t"
 msgstr ""
 
-#: activities/maze/Maze.qml:341
+#: activities/maze/Maze.qml:340
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -26556,22 +26553,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "准备好了"
 
-#: core/Tutorial.qml:137
+#: core/Tutorial.qml:140
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "上一页"
 
-#: core/Tutorial.qml:155
+#: core/Tutorial.qml:158
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "下一个视图"
 
-#: core/Tutorial.qml:172
+#: core/Tutorial.qml:175
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "跳过"
 
-#: core/Tutorial.qml:172
+#: core/Tutorial.qml:175
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "开始"

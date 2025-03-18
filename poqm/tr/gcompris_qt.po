@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-06 22:32+0300\n"
+"PO-Revision-Date: 2025-03-17 14:37+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.03.70\n"
+"X-Generator: Lokalize 25.07.70\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -15312,12 +15312,9 @@ msgid "Division required."
 msgstr "Bölme gerekiyor."
 
 #: activities/guess24/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "Tüm işlemler bellek oyunu"
+msgstr "Tüm işleçler gerekli."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -16727,25 +16724,25 @@ msgstr ""
 "sürükle. Portakal sayısı istenen niceliğe gelene kadar bu adımları yinele. "
 "Ardından, yanıtını doğrulamak için OK düğmesine tıkla."
 
-#: activities/learn_decimals/Learn_decimals.qml:129
+#: activities/learn_decimals/Learn_decimals.qml:142
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "%1 sayısını görüntüle"
 
-#: activities/learn_decimals/Learn_decimals.qml:130
+#: activities/learn_decimals/Learn_decimals.qml:143
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "%1 + %2 işleminin sonucunu görüntüle"
 
-#: activities/learn_decimals/Learn_decimals.qml:131
+#: activities/learn_decimals/Learn_decimals.qml:144
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "%1 − %2 işleminin sonucunu görüntüle"
 
-#: activities/learn_decimals/Learn_decimals.qml:132
+#: activities/learn_decimals/Learn_decimals.qml:145
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
@@ -17181,12 +17178,12 @@ msgctxt "ActivityInfo|"
 msgid "Right arrow: right hand answer"
 msgstr "Sağ ok: Sağ el yanıtı"
 
-#: activities/leftright/Leftright.qml:153
+#: activities/leftright/Leftright.qml:156
 msgctxt "Leftright|"
 msgid "Left hand"
 msgstr "Sol el"
 
-#: activities/leftright/Leftright.qml:175
+#: activities/leftright/Leftright.qml:178
 msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "Sağ el"
@@ -17255,12 +17252,12 @@ msgstr ""
 "Uçağa iliştirilmiş bayrakta bir harf görüntülenir. Bu harfi içeren listedeki "
 "tüm sözcükleri seç ve ardından OK düğmesine bas."
 
-#: activities/letter-in-word/LetterInWord.qml:336
+#: activities/letter-in-word/LetterInWord.qml:333
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Özür dilerim, konuştuğun dil için bir çeviri henüz yok."
 
-#: activities/letter-in-word/LetterInWord.qml:337
+#: activities/letter-in-word/LetterInWord.qml:334
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17270,7 +17267,7 @@ msgstr ""
 "GCompris, KDE topluluğu tarafından geliştirilir, <a href=\"%2\">%2</a> "
 "üzerinden çeviri takımına katılarak GCompris’i çevirebilirsin"
 
-#: activities/letter-in-word/LetterInWord.qml:339
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -17502,7 +17499,7 @@ msgstr ""
 "Braille, dünya çapında bir standart olarak kabul edildi. Louis Braille, bir "
 "motivasyonun olursa inanılmaz şeyler yapılabileceğini kanıtladı."
 
-#: activities/louis-braille/ReorderList.qml:164
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "
@@ -17549,7 +17546,7 @@ msgstr ""
 "kadarının hala şapka altında olduğunu saymalısın. Yanıtını girmek için "
 "alttaki alana tıkla ve yanıtını doğrulamak için OK düğmesine tıkla."
 
-#: activities/magic-hat-minus/MagicHat.qml:263
+#: activities/magic-hat-minus/MagicHat.qml:256
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Şapkaya tıklayarak oyuna başla"
@@ -17598,7 +17595,7 @@ msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr "Katsayılarla 10.000’e kadar kalan yıldızları hesapla."
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
-#: activities/magic-hat-minus/StarsBar.qml:35
+#: activities/magic-hat-minus/StarsBar.qml:36
 #, qt-format
 msgctxt "StarsBar|"
 msgid "%1x"
@@ -17756,7 +17753,7 @@ msgstr ""
 "kapatmak istiyorsan ekranın sol üst köşesindeki “yalın ayak/spor ayakkabı” "
 "simgesine tıkla ve “Hızlı Koş Kipi”ni aç/kapat.\t"
 
-#: activities/maze/Maze.qml:341
+#: activities/maze/Maze.qml:340
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -28217,22 +28214,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "Hazırım"
 
-#: core/Tutorial.qml:137
+#: core/Tutorial.qml:140
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "Önceki"
 
-#: core/Tutorial.qml:155
+#: core/Tutorial.qml:158
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "Sonraki"
 
-#: core/Tutorial.qml:172
+#: core/Tutorial.qml:175
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "Atla"
 
-#: core/Tutorial.qml:172
+#: core/Tutorial.qml:175
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Başlat"

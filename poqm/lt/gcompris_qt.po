@@ -16716,25 +16716,25 @@ msgstr ""
 "sritį. Kartok šiuos veiksmus, kol apelsinų skaičius atitiks rodomą skaičių. "
 "Spustelėk mygtuką OK, taip patvirtindamas savo atsakymą."
 
-#: activities/learn_decimals/Learn_decimals.qml:129
+#: activities/learn_decimals/Learn_decimals.qml:142
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "Pavaizduok skaičių: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:130
+#: activities/learn_decimals/Learn_decimals.qml:143
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "Pavaizduok sumą: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:131
+#: activities/learn_decimals/Learn_decimals.qml:144
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "Parodyk skirtumą: %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:132
+#: activities/learn_decimals/Learn_decimals.qml:145
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
@@ -17174,12 +17174,12 @@ msgctxt "ActivityInfo|"
 msgid "Right arrow: right hand answer"
 msgstr "Rodyklė dešinėn: atsakymas dešinė ranka"
 
-#: activities/leftright/Leftright.qml:153
+#: activities/leftright/Leftright.qml:156
 msgctxt "Leftright|"
 msgid "Left hand"
 msgstr "Kairė ranka"
 
-#: activities/leftright/Leftright.qml:175
+#: activities/leftright/Leftright.qml:178
 msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "Dešinė ranka"
@@ -17248,12 +17248,12 @@ msgstr ""
 "Raidė matosi ant vėliavėlės, kurią tempia lėktuvas. Pasirink visus žodžius "
 "(daiktus), kurie turi tą raidę ir tada paspausk mygtuką OK."
 
-#: activities/letter-in-word/LetterInWord.qml:336
+#: activities/letter-in-word/LetterInWord.qml:333
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Atsiprašome, mes dar neturime vertimo į tavo kalbą."
 
-#: activities/letter-in-word/LetterInWord.qml:337
+#: activities/letter-in-word/LetterInWord.qml:334
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17264,7 +17264,7 @@ msgstr ""
 "pagerinti GCompris vertimą, prisijungdamas prie vertėjų komandos <a href="
 "\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:339
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -17494,7 +17494,7 @@ msgstr ""
 "Brailio sistema buvo priimta kaip pasaulinis standartas. Lui Brailis įrodė, "
 "kad turint motyvaciją, galima pasiekti neįtikėtinų dalykų."
 
-#: activities/louis-braille/ReorderList.qml:164
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "
@@ -17545,7 +17545,7 @@ msgstr ""
 "dar yra po skrybėle. Paspausk lango apačioje tiek žvaigždučių, kiek jų liko "
 "po skrybėle ir paskui mygtuką OK."
 
-#: activities/magic-hat-minus/MagicHat.qml:263
+#: activities/magic-hat-minus/MagicHat.qml:256
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Paspausk ant skrybėlės, kad pradėtum žaidimą"
@@ -17594,7 +17594,7 @@ msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr "Suskaičiuok likusias žvaigždutes, iki 10000, su koeficientais."
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
-#: activities/magic-hat-minus/StarsBar.qml:35
+#: activities/magic-hat-minus/StarsBar.qml:36
 #, qt-format
 msgctxt "StarsBar|"
 msgid "%1x"
@@ -17761,7 +17761,7 @@ msgstr ""
 "ant ženkliuko „basos pėdos/sportbačiai“ viršutiniame kairiajame ekrano kampe."
 "\t"
 
-#: activities/maze/Maze.qml:341
+#: activities/maze/Maze.qml:340
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -28284,22 +28284,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "Aš pasirengęs"
 
-#: core/Tutorial.qml:137
+#: core/Tutorial.qml:140
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "Atgal"
 
-#: core/Tutorial.qml:155
+#: core/Tutorial.qml:158
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "Pirmyn"
 
-#: core/Tutorial.qml:172
+#: core/Tutorial.qml:175
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "Praleisti"
 
-#: core/Tutorial.qml:172
+#: core/Tutorial.qml:175
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Pradėti"

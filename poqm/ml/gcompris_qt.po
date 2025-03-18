@@ -16483,25 +16483,25 @@ msgstr ""
 "ഒഴിഞ്ഞിടത്തേക്ക് ഡ്രാഗു ചെയ്യുക. ഓറഞ്ചിന്റെ എണ്ണം കാണിച്ചിരിക്കുന്ന എണ്ണത്തിനു തുല്യമാകുന്നതുവരെ ഈ "
 "ഘട്ടങ്ങൾ ആവർത്തിക്കുക. എന്നിട്ട് ഒകെ ബട്ടണിൽ ക്ലിക്കു ചെയ്ത് നിങ്ങളുടെ ഉത്തരം സ്ഥിരീകരിക്കൂ."
 
-#: activities/learn_decimals/Learn_decimals.qml:129
+#: activities/learn_decimals/Learn_decimals.qml:142
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "ഈ സംഖ്യ കാണിക്കൂ: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:130
+#: activities/learn_decimals/Learn_decimals.qml:143
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "ഈ ക്രിയയുടെ ഉത്തരം കാണിക്കൂ: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:131
+#: activities/learn_decimals/Learn_decimals.qml:144
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "ഈ ക്രിയയുടെ ഉത്തരം കാണിക്കൂ: %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:132
+#: activities/learn_decimals/Learn_decimals.qml:145
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
@@ -16934,12 +16934,12 @@ msgctxt "ActivityInfo|"
 msgid "Right arrow: right hand answer"
 msgstr "വലത് ആരോ: ഉത്തരം വലതു കൈപ്പത്തി"
 
-#: activities/leftright/Leftright.qml:153
+#: activities/leftright/Leftright.qml:156
 msgctxt "Leftright|"
 msgid "Left hand"
 msgstr "ഇടതു കൈപ്പത്തി"
 
-#: activities/leftright/Leftright.qml:175
+#: activities/leftright/Leftright.qml:178
 msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "വലതു കൈപ്പത്തി"
@@ -17008,12 +17008,12 @@ msgstr ""
 "വിമാനത്തോട് ബന്ധിപ്പിച്ചിരിക്കുന്ന കൊടിയിൽ ഒരു അക്ഷരം കാണാം. തന്നിരിക്കുന്ന വാക്കുകളുടെ "
 "പട്ടികയിൽ, ആ അക്ഷരമുള്ള വാക്കുകൾ തിരഞ്ഞെടുത്ത് ഒകെ ബട്ടൺ അമർത്തുക."
 
-#: activities/letter-in-word/LetterInWord.qml:336
+#: activities/letter-in-word/LetterInWord.qml:333
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "ക്ഷമിക്കണം, നിങ്ങളുടെ ഭാഷയ്ക്ക് തർജ്ജിമ ഇതുവരെ ഇല്ല."
 
-#: activities/letter-in-word/LetterInWord.qml:337
+#: activities/letter-in-word/LetterInWord.qml:334
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17023,7 +17023,7 @@ msgstr ""
 "കെഡിഇ കൂട്ടായ്മയാണ് ജികോംപ്രി ഡെവലപ് ചെയ്തത്, ഒരു തർജ്ജിമ സംഘത്തിൽ ചേർന്നാൽ നിങ്ങൾക്ക് "
 "ജികോംപ്രി തർജ്ജിമ ചെയ്യാൻ കഴിയും <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:339
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -17252,7 +17252,7 @@ msgstr ""
 "ബ്രായി ലോകമെമ്പാടും അംഗീകരിക്കപ്പെട്ടു. പ്രചോദനം ഉണ്ടെങ്കിൽ അവിശ്വസനീയമായ കാര്യങ്ങൾ "
 "ചെയ്യാമെന്ന് ലൂയി ബ്രായി തെളിയിച്ചു."
 
-#: activities/louis-braille/ReorderList.qml:164
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "
@@ -17302,7 +17302,7 @@ msgstr ""
 "തൊപ്പിക്കടിയിൽ എത്ര നക്ഷത്രങ്ങൾ ബാക്കിയുണ്ടെന്ന് നിങ്ങൾ എണ്ണി നോക്കണം. താഴെയുള്ള ഭാഗത്ത് ക്ലിക്ക് "
 "ചെയ്ത് ഉത്തരം കൊടുക്കുകയും ഒകെ ബട്ടൺ അമർത്തി അതു സ്ഥിരീകരിക്കുകയും ചെയ്യാം."
 
-#: activities/magic-hat-minus/MagicHat.qml:263
+#: activities/magic-hat-minus/MagicHat.qml:256
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "തൊപ്പിയിൽ ക്ലിക്ക് ചെയ്ത് കളി തുടങ്ങൂ"
@@ -17351,7 +17351,7 @@ msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr "10000 നക്ഷത്രങ്ങൾ വരെ ബാക്കിവരുന്ന ഗുണാങ്കങ്ങളോടെയുള്ളവ."
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
-#: activities/magic-hat-minus/StarsBar.qml:35
+#: activities/magic-hat-minus/StarsBar.qml:36
 #, qt-format
 msgctxt "StarsBar|"
 msgid "%1x"
@@ -17513,7 +17513,7 @@ msgstr ""
 "വേണമെങ്കിലോ ഉയർന്ന ഘട്ടങ്ങളിൽ ഇല്ലാതാക്കണമെങ്കിലോ, സ്ക്രീനിന്റെ മുകളിൽ ഇടതു മൂലയിലുള്ള "
 "\"കാലുകൾ / സ്പോർട്ഷൂ\" ഐക്കണിൽ ക്ലിക്ക് ചെയ്താൽ മതി.\t"
 
-#: activities/maze/Maze.qml:341
+#: activities/maze/Maze.qml:340
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -27853,22 +27853,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "ഞാൻ‍ തയ്യാറാണ്"
 
-#: core/Tutorial.qml:137
+#: core/Tutorial.qml:140
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "മുൻപുള്ളത്"
 
-#: core/Tutorial.qml:155
+#: core/Tutorial.qml:158
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "അടുത്തത്"
 
-#: core/Tutorial.qml:172
+#: core/Tutorial.qml:175
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "നോക്കാതെ വിടുക"
 
-#: core/Tutorial.qml:172
+#: core/Tutorial.qml:175
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "തുടങ്ങാം"

@@ -3,9 +3,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-03-06 12:46+0100\n"
+"PO-Revision-Date: 2025-03-17 11:14+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
-"Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
+"Language-Team: \n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: nl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 24.12.2\n"
+"X-Generator: Lokalize 24.12.3\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -15454,12 +15454,9 @@ msgid "Division required."
 msgstr "Delen vereist."
 
 #: activities/guess24/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "Rekenkundig geheugenspel"
+msgstr "Alle vereiste operators."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -16889,25 +16886,25 @@ msgstr ""
 "stappen totdat het aantal sinaasappels overeenkomt met het gevraagde aantal. "
 "Klik daarna op de knop OK om jouw antwoord na te kijken."
 
-#: activities/learn_decimals/Learn_decimals.qml:129
+#: activities/learn_decimals/Learn_decimals.qml:142
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "Toon het getal: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:130
+#: activities/learn_decimals/Learn_decimals.qml:143
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "Toon het resultaat van: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:131
+#: activities/learn_decimals/Learn_decimals.qml:144
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "Toon het resultaat van: %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:132
+#: activities/learn_decimals/Learn_decimals.qml:145
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
@@ -17354,12 +17351,12 @@ msgctxt "ActivityInfo|"
 msgid "Right arrow: right hand answer"
 msgstr "Pijl rechts: antwoord rechterhand"
 
-#: activities/leftright/Leftright.qml:153
+#: activities/leftright/Leftright.qml:156
 msgctxt "Leftright|"
 msgid "Left hand"
 msgstr "Linkerhand"
 
-#: activities/leftright/Leftright.qml:175
+#: activities/leftright/Leftright.qml:178
 msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "Rechterhand"
@@ -17428,12 +17425,12 @@ msgstr ""
 "Er wordt een letter op de aan het vliegtuig gehangen vlag getoond. Selecteer "
 "alle woorden in de lijst met deze letter en druk daarna op de knop OK."
 
-#: activities/letter-in-word/LetterInWord.qml:336
+#: activities/letter-in-word/LetterInWord.qml:333
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Helaas, we hebben nog geen vertaling voor jouw taal."
 
-#: activities/letter-in-word/LetterInWord.qml:337
+#: activities/letter-in-word/LetterInWord.qml:334
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17443,7 +17440,7 @@ msgstr ""
 "GCompris is ontwikkeld door de KDE gemeenschap, je kunt GCompris vertalen "
 "door mee te doen met een vertaalteam op <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:339
+#: activities/letter-in-word/LetterInWord.qml:336
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -17680,7 +17677,7 @@ msgstr ""
 "Braille werd geaccepteerd als wereldstandaard. Louis Braille bewees dat je "
 "ongelofelijke dingen kan doen als je gemotiveerd bent."
 
-#: activities/louis-braille/ReorderList.qml:164
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "
@@ -17728,7 +17725,7 @@ msgstr ""
 "zijn. Klik op het onderste gebied en voer je antwoord in en klik op de knop "
 "OK om te kijken of het goed is."
 
-#: activities/magic-hat-minus/MagicHat.qml:263
+#: activities/magic-hat-minus/MagicHat.qml:256
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Klik op de hoed om het spel te beginnen"
@@ -17777,7 +17774,7 @@ msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr "Overblijvende sterren berekenen tot 10000 met coëfficiënten."
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
-#: activities/magic-hat-minus/StarsBar.qml:35
+#: activities/magic-hat-minus/StarsBar.qml:36
 #, qt-format
 msgctxt "StarsBar|"
 msgid "%1x"
@@ -17942,7 +17939,7 @@ msgstr ""
 "geavanceerde niveaus, klik op het pictogram \"blootsvoets / sportschoen\" "
 "linksboven op het scherm om de snelloop-modus in of uit te schakelen.\t"
 
-#: activities/maze/Maze.qml:341
+#: activities/maze/Maze.qml:340
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -28518,22 +28515,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "Ik ben klaar"
 
-#: core/Tutorial.qml:137
+#: core/Tutorial.qml:140
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "Vorige"
 
-#: core/Tutorial.qml:155
+#: core/Tutorial.qml:158
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "Volgende"
 
-#: core/Tutorial.qml:172
+#: core/Tutorial.qml:175
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "Overslaan"
 
-#: core/Tutorial.qml:172
+#: core/Tutorial.qml:175
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Begin"
