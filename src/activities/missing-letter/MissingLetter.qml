@@ -125,7 +125,7 @@ ActivityBase {
             anchors.bottomMargin: bar.height * 0.4
             anchors.left: activityBackground.left
             anchors.right: activityBackground.right
-            anchors.margins: 10 * ApplicationInfo.ratio
+            anchors.margins: GCStyle.baseMargins
         }
 
         Item {
@@ -138,7 +138,7 @@ ActivityBase {
         // Buttons with possible answers shown on the left of screen
         Column {
             id: buttonHolder
-            spacing: 10 * ApplicationInfo.ratio
+            spacing: GCStyle.baseMargins
             anchors.left: questionArea.left
             anchors.top: questionArea.top
 
@@ -150,7 +150,7 @@ ActivityBase {
                 id: answers
 
                 AnswerButton {
-                    width: questionArea.width - holder.width - 10 * ApplicationInfo.ratio
+                    width: questionArea.width - holder.width - GCStyle.baseMargins
                     height: (holder.height
                              - buttonHolder.spacing * answers.model.length) / answers.model.length
                     textLabel: modelData
@@ -174,21 +174,17 @@ ActivityBase {
             height: questionArea.height
             anchors.top: questionArea.top
             anchors.right: questionArea.right
-            color: "white"
-            radius: 10
-            border.width: 2
-            border.color: "#373737"
-            gradient: Gradient {
-                GradientStop { position: 0.0; color: "#80FFFFFF" }
-                GradientStop { position: 0.9; color: "#80EEEEEE" }
-                GradientStop { position: 1.0; color: "#80AAAAAA" }
-            }
+            color: "#80FFFFFF"
+            radius: GCStyle.halfMargins
+            border.width: GCStyle.thinnestBorder
+            border.color: GCStyle.darkBorder
 
             Image {
                 id: questionImage
                 anchors.horizontalCenter: holder.horizontalCenter
                 anchors.top: holder.top
-                width: holder.width
+                anchors.topMargin: GCStyle.halfMargins
+                width: holder.width - GCStyle.baseMargins
                 height: width
                 fillMode: Image.PreserveAspectFit
             }
@@ -199,21 +195,26 @@ ActivityBase {
                 height: holder.height - questionImage.height
                 anchors.horizontalCenter: holder.horizontalCenter
                 anchors.top: questionImage.bottom
-                radius: 10
-                color: "#373737"
+                radius: GCStyle.halfMargins
+                color: GCStyle.darkBg
+
+                Rectangle {
+                    width: parent.width
+                    height: parent.radius + 1
+                    color: parent.color
+                    y: -1
+                }
 
                 GCText {
                     id: questionText
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
-                    color: "#f2f2f2"
+                    color: GCStyle.lightText
                     anchors.centerIn: parent
-                    width: parent.width * 0.9
-                    height: parent.height * 0.9
-                    font.pointSize: NaN  // need to clear font.pointSize explicitly
+                    width: parent.width - 2 * GCStyle.baseMargins
+                    height: parent.height - 2 * GCStyle.baseMargins
+                    fontSize: largeSize
                     fontSizeMode: Text.Fit
-                    minimumPixelSize: 10
-                    font.pixelSize: width * 0.2
 
                     SequentialAnimation {
                         id: questionAnim
@@ -249,10 +250,9 @@ ActivityBase {
         Score {
             id: score
             anchors.bottom: undefined
-            anchors.bottomMargin: 10 * ApplicationInfo.ratio
             anchors.right: parent.right
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
             anchors.top: parent.top
+            anchors.margins: GCStyle.baseMargins
         }
 
         DialogChooseLevel {
