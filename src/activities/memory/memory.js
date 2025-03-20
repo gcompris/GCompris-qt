@@ -114,9 +114,9 @@ function initLevel() {
 // Return a pair of cards that have already been shown
 function getShownPair() {
     for(var i = 0;  i < nbOfPair * 2; ++i) {
-        var cardItem1 = items.grid.getItemAtIndex(i)
+        var cardItem1 = items.cardGrid.getItemAtIndex(i)
         for(var j = 0;  j < nbOfPair * 2; ++j) {
-            var cardItem2 = items.grid.getItemAtIndex(j)
+            var cardItem2 = items.cardGrid.getItemAtIndex(j)
             if(i != j &&
                 !cardItem1.isFound &&
                 cardItem1.isShown &&
@@ -154,9 +154,9 @@ function chooseCard() {
     // If no pairs shown select a random card
     var listCardNonReturned = []
     for(var i = 0;  i < cardList.length; ++i) {
-        if (items.grid.getItemAtIndex(i).isFound == false &&
-            items.grid.getItemAtIndex(i).isBack)
-            listCardNonReturned.push(items.grid.getItemAtIndex(i))
+        if (items.cardGrid.getItemAtIndex(i).isFound == false &&
+            items.cardGrid.getItemAtIndex(i).isBack)
+            listCardNonReturned.push(items.cardGrid.getItemAtIndex(i))
     }
 
     //select randomly a card in it
