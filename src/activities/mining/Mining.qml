@@ -5,6 +5,7 @@
  * Authors:
  *   Peter Albrecht <pa-dev@gmx.de> (GTK+ version)
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (various improvements)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -27,9 +28,6 @@ ActivityBase {
         signal start
         signal stop
 
-        property bool gotIt: false
-        property bool horizontalLayout: activityBackground.width >= activityBackground.height
-
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -41,11 +39,14 @@ ActivityBase {
             property Item main: activity.main
             property alias activityBackground: activityBackground
             property alias miningBg: miningBg
+            property alias tuto: tuto
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias mineModel: mineObjects.model
+            property alias rainbowSound: rainbowSound
             property Item nugget
             property int collectedNuggets: 0
+            property bool gotIt: false
         }
 
         onStart: { Activity.start(items) }
@@ -62,355 +63,362 @@ ActivityBase {
         }
 
         Image {
-                id: miningBg
-                source: Activity.url + "rockwall.svg"
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.verticalCenter: parent.verticalCenter
+            id: miningBg
+            source: Activity.url + "rockwall.svg"
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.verticalCenter: parent.verticalCenter
+            sourceSize.width: parent.width * 3
+            width: parent.width
+            height: parent.height
+            scale: miningBg._MIN_SCALE
+
+            property int maxSubLevel
+            property real _MAX_SCALE: 3
+            property real _MIN_SCALE: 1
+
+            onScaleChanged: items.nugget.checkOnScreen()
+
+            Image {
+                id: leftBorder
+                source: Activity.url + "vertical_border.svg"
+                sourceSize.height: parent.height
+                width: parent.width * 0.05
+                anchors {
+                    top: parent.top
+                    left: parent.left
+                    bottom: parent.bottom
+                }
+            }
+
+            Image {
+                id: rightBorder
+                source: Activity.url + "vertical_border.svg"
+                sourceSize.height: parent.height
+                width: parent.width * 0.05
+                anchors {
+                    top: parent.top
+                    right: parent.right
+                    bottom: parent.bottom
+                }
+            }
+
+            Image {
+                id: topBorder
+                source: Activity.url + "horizontal_border.svg"
                 sourceSize.width: parent.width
-                width: parent.width
-                height: parent.height
-                scale: miningBg._MIN_SCALE
-
-                property int subLevel
-                property int maxSubLevel
-                property real _MAX_SCALE: 3
-                property real _MIN_SCALE: 1
-
-                onScaleChanged: items.nugget.checkOnScreen()
-
-                Image {
-                    source: Activity.url + "vertical_border.svg"
-                    sourceSize.height: parent.height
-                    width: parent.width * 0.05
-                    anchors {
-                        top: parent.top
-                        left: parent.left
-                        bottom: parent.bottom
-                    }
+                height: parent.height * 0.05
+                anchors {
+                    top: parent.top
+                    right: parent.right
+                    left: parent.left
                 }
+            }
 
-                Image {
-                    source: Activity.url + "vertical_border.svg"
-                    sourceSize.height: parent.height
-                    width: parent.width * 0.05
-                    anchors {
-                        top: parent.top
-                        right: parent.right
-                        bottom: parent.bottom
+            GridView {
+                id: mineObjects
+                anchors.right: rightBorder.left
+                anchors.left: leftBorder.right
+                y: items.currentLevel === 0 ? tuto.height + GCStyle.baseMargins : topBorder.height
+                height: carriage.y - y
+                cellWidth: width * 0.25
+                cellHeight: height * 0.25
+
+                delegate: Item {
+                    width: mineObjects.cellWidth
+                    height: mineObjects.cellHeight
+                    // Calculated value true when the nugget is on the visible
+                    // part of the screen
+                    property bool onScreen: true
+                    property alias nuggetImg: nuggetImg
+                    signal hit(real x, real y)
+                    signal checkOnScreen
+
+                    onHit: {
+                        if(!mouseArea.enabled)
+                            return
+
+                        var point = parent.mapToItem(nuggetImg, x, y)
+                        if(point.x > 0 && point.x < nuggetImg.width &&
+                            point.y > 0 && point.y < nuggetImg.height)
+                            nuggetImg.hit()
                     }
-                }
 
-                Image {
-                    source: Activity.url + "horizontal_border.svg"
-                    sourceSize.width: parent.width
-                    height: parent.height * 0.05
-                    anchors {
-                        top: parent.top
-                        right: parent.right
-                        left: parent.left
+                    onCheckOnScreen: {
+                        // Calc if the nugget is visible or not
+                        var nuggetCoord1 =
+                                activityBackground.mapFromItem(items.nugget.nuggetImg, 0, 0)
+                        var nuggetCoord2 =
+                                activityBackground.mapFromItem(items.nugget.nuggetImg,
+                                                        items.nugget.nuggetImg.width,
+                                                        items.nugget.nuggetImg.height)
+
+                        if(nuggetCoord1.x > miningBg.width ||
+                                nuggetCoord2.x < 0 ||
+                                nuggetCoord1.y > miningBg.height ||
+                                nuggetCoord2.y < 0)
+                            onScreen = false
+                        else
+                            onScreen = true
                     }
-                }
 
-                GridView {
-                    id: mineObjects
-                    anchors.fill: parent
-                    cellWidth: parent.width / 4
-                    cellHeight: parent.height / 4
+                    Image {
+                        id: nuggetImg
+                        source: Activity.url + "gold_nugget.svg"
+                        width: GCStyle.bigButtonHeight / 3
+                        height: width * 0.6
+                        sourceSize.width: width * 3
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        anchors.verticalCenter: parent.verticalCenter
+                        opacity: modelData.isTarget && miningBg.scale === miningBg._MAX_SCALE &&
+                                !items.gotIt ? 1 : 0
 
-                    delegate: Item {
-                        width: mineObjects.cellWidth
-                        height: mineObjects.cellHeight
-                        // Calculated value true when the nugget is on the visible
-                        // part of the screen
-                        property bool onScreen: true
-                        property alias nuggetImg: nuggetImg
-                        signal hit(real x, real y)
-                        signal checkOnScreen
-
+                        signal hit
                         onHit: {
-                            if(!mouseArea.enabled)
-                                return
-
-                            var point = parent.mapToItem(nuggetImg, x, y)
-                            if(point.x > 0 && point.x < nuggetImg.width &&
-                               point.y > 0 && point.y < nuggetImg.height)
-                                nuggetImg.hit()
+                            pickSound.play()
+                            items.gotIt = true
+                            items.collectedNuggets++
+                            if(items.collectedNuggets < miningBg.maxSubLevel) {
+                                tuto.setState("Unzoom");
+                            } else {
+                                tuto.setState("Stopped")
+                                bonus.good("lion");
+                            }
                         }
 
-                        onCheckOnScreen: {
-                            // Calc if the nugget is visible or not
-                            var nuggetCoord1 =
-                                    activityBackground.mapFromItem(miningBg,
-                                                           items.nugget.x + items.nugget.nuggetImg.x,
-                                                           items.nugget.y + items.nugget.nuggetImg.y)
-                            var nuggetCoord2 =
-                                    activityBackground.mapFromItem(miningBg,
-                                                           items.nugget.x + items.nugget.nuggetImg.x + items.nugget.nuggetImg.width,
-                                                           items.nugget.y + items.nugget.nuggetImg.y + items.nugget.nuggetImg.height)
-
-                            if(nuggetCoord1.x > miningBg.width ||
-                                    nuggetCoord2.x < 0 ||
-                                    nuggetCoord1.y > miningBg.height ||
-                                    nuggetCoord2.y < 0)
-                                onScreen = false
-                            else
-                                onScreen = true
+                        Component.onCompleted: {
+                            if(modelData.isTarget)
+                                items.nugget = parent
                         }
 
-                        Image {
-                            id: nuggetImg
-                            source: Activity.url + "gold_nugget.svg"
-                            sourceSize.width: mineObjects.cellWidth * 3
-                            width: mineObjects.cellWidth * modelData.widthFactor / 2
-                            height: mineObjects.cellHeight * modelData.widthFactor / 2
-                            anchors.horizontalCenter: parent.horizontalCenter
-                            anchors.verticalCenter: parent.verticalCenter
-                            opacity: modelData.isTarget &&
-                                     miningBg.scale === miningBg._MAX_SCALE &&
-                                     !activityBackground.gotIt ? 1 : 0
-
-                            signal hit
-                            onHit: {
-                                pickSound.play()
-                                activityBackground.gotIt = true
-                                items.collectedNuggets++
-                                tuto.setState("Unzoom")
-                            }
-
-                            Component.onCompleted: {
-                                if(modelData.isTarget)
-                                    items.nugget = parent
-                            }
-
-                            MouseArea {
-                                id: mouseArea
-                                anchors.fill: parent
-                                enabled: modelData.isTarget &&
-                                         miningBg.scale === miningBg._MAX_SCALE &&
-                                         activityBackground.gotIt === false
-                                onClicked: parent.hit()
-                            }
-
-                            Behavior on opacity { PropertyAnimation { duration: 1000 } }
+                        MouseArea {
+                            id: mouseArea
+                            anchors.fill: parent
+                            enabled: modelData.isTarget &&
+                                        miningBg.scale === miningBg._MAX_SCALE &&
+                                        items.gotIt === false
+                            onClicked: parent.hit()
                         }
 
-                        Image {
-                            id: cell
-                            source: modelData.source
-                            sourceSize.width: mineObjects.cellWidth * 3
-                            width: mineObjects.cellWidth * modelData.widthFactor
-                            height: mineObjects.cellHeight * modelData.widthFactor
-                            anchors.horizontalCenter: parent.horizontalCenter
-                            anchors.verticalCenter: parent.verticalCenter
-                            rotation: modelData.rotation
-                            opacity: !modelData.isTarget ? 1 : (activityBackground.gotIt ? 0 : 1)
+                        Behavior on opacity { PropertyAnimation { duration: 500 } }
+                    }
 
-                            Component.onCompleted: {
-                                rainbowSound.play()
-                            }
+                    Image {
+                        id: cell
+                        source: modelData.source
+                        width: modelData.isTarget ? GCStyle.bigButtonHeight / 3 :
+                            Math.min(mineObjects.cellWidth, mineObjects.cellHeight) * modelData.sizeFactor
+                        height: width
+                        sourceSize.width: width * 3
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        anchors.verticalCenter: parent.verticalCenter
+                        fillMode: Image.PreserveAspectFit
+                        rotation: modelData.rotation
+                        opacity: !modelData.isTarget ? 1 : (items.gotIt ||
+                            miningBg.scale === miningBg._MAX_SCALE ? 0 : 1)
+                        mipmap: true
 
-                            ParallelAnimation {
-                                running: modelData.isTarget && !activityBackground.gotIt
+                        ParallelAnimation {
+                            running: modelData.isTarget && opacity === 1
+                            loops: Animation.Infinite
+                            SequentialAnimation {
                                 loops: Animation.Infinite
-                                SequentialAnimation {
-                                    loops: Animation.Infinite
-                                    NumberAnimation {
-                                        target: cell
-                                        property: "rotation"
-                                        from: 0; to: 360
-                                        duration: 5000;
-                                        easing.type: Easing.InOutQuad
-                                    }
-                                    NumberAnimation {
-                                        target: cell; property: "rotation"
-                                        from: 360; to: 0
-                                        duration: 5000;
-                                        easing.type: Easing.InOutQuad
-                                    }
+                                NumberAnimation {
+                                    target: cell
+                                    property: "rotation"
+                                    from: 0; to: 360
+                                    duration: 5000;
+                                    easing.type: Easing.InOutQuad
                                 }
-                                SequentialAnimation {
-                                    loops: Animation.Infinite
-                                    NumberAnimation {
-                                        target: cell; property: "scale"
-                                        from: 0; to: 1
-                                        duration: 3000;
-                                        easing.type: Easing.InOutQuad
-                                    }
-                                    PauseAnimation { duration: 300 + Math.random() * 300 }
-                                    NumberAnimation {
-                                        target: cell
-                                        property: "scale"
-                                        from: 1; to: 0
-                                        duration: 1000;
-                                        easing.type: Easing.InOutQuad
-                                    }
+                                NumberAnimation {
+                                    target: cell; property: "rotation"
+                                    from: 360; to: 0
+                                    duration: 5000;
+                                    easing.type: Easing.InOutQuad
+                                }
+                            }
+                            SequentialAnimation {
+                                loops: Animation.Infinite
+                                NumberAnimation {
+                                    target: cell; property: "scale"
+                                    from: 0; to: 1
+                                    duration: 3000;
+                                    easing.type: Easing.InOutQuad
+                                }
+                                PauseAnimation { duration: 300 + Math.random() * 300 }
+                                NumberAnimation {
+                                    target: cell
+                                    property: "scale"
+                                    from: 1; to: 0
+                                    duration: 1000;
+                                    easing.type: Easing.InOutQuad
                                 }
                             }
                         }
                     }
                 }
+            }
 
-                function updateScale(zoomDelta: real, x: real, y: real) {
-                    var xx1 = activityBackground.mapFromItem(miningBg, x, y)
-                    var previousScale = miningBg.scale
-                    var miningBgScale = miningBg.scale
-                    var miningBgHOffset = miningBg.anchors.horizontalCenterOffset
-                    var miningBgVOffset = miningBg.anchors.verticalCenterOffset
-                    if (zoomDelta > 0 && miningBg.scale < miningBg._MAX_SCALE) {
-                        if(miningBgScale < miningBg._MAX_SCALE - 0.1)
-                            miningBgScale += 0.1;
-                        else
-                            miningBgScale = miningBg._MAX_SCALE
+            function updateScale(zoomDelta: real, x: real, y: real) {
+                var xx1 = activityBackground.mapFromItem(miningBg, x, y)
+                var previousScale = miningBg.scale
+                var miningBgScale = miningBg.scale
+                var miningBgHOffset = miningBg.anchors.horizontalCenterOffset
+                var miningBgVOffset = miningBg.anchors.verticalCenterOffset
+                if (zoomDelta > 0 && miningBg.scale < miningBg._MAX_SCALE) {
+                    // zoom-in cases
+                    if(miningBgScale < miningBg._MAX_SCALE - 0.1)
+                        miningBgScale += 0.1;
+                    else
+                        miningBgScale = miningBg._MAX_SCALE
 
-                        if(gotIt)
+                    if(items.gotIt)
+                        tuto.setState("Unzoom")
+                    else if(miningBgScale < miningBg._MAX_SCALE)
+                        tuto.setState(items.nugget.onScreen ? "ZoomOk" : "ZoomBad")
+                    else
+                        tuto.setState(items.nugget.onScreen ? "NuggetSeen" : "NuggetNotSeen")
+
+                } else if (zoomDelta < 0) {
+                    // zoom-out cases
+                    if(miningBgScale > miningBg._MIN_SCALE) {
+                        miningBgScale -= 0.1;
+
+                        if(items.gotIt)
                             tuto.setState("Unzoom")
-                        else if(miningBgScale < miningBg._MAX_SCALE)
-                            tuto.setState(items.nugget.onScreen ? "ZoomOk" : "ZoomBad")
+                        else if(miningBgScale > miningBg._MIN_SCALE)
+                            tuto.setState(items.nugget.onScreen ? "UnzoomOk" : "UnzoomBad")
                         else
-                            tuto.setState(items.nugget.onScreen ? "NuggetSeen" : "NuggetNotSeen")
-
-                    } else if (zoomDelta < 0) {
-                        if(miningBgScale > miningBg._MIN_SCALE) {
-                            miningBgScale -= 0.1;
-
-                            if(gotIt)
-                                tuto.setState("Unzoom")
-                            else if(miningBgScale > miningBg._MIN_SCALE)
-                                tuto.setState(items.nugget.onScreen ? "UnzoomOk" : "UnzoomBad")
-                            else
-                                tuto.setState("Started")
-                        } else if (gotIt) {
-                            gotIt = false
-                            if(miningBg.subLevel == miningBg.maxSubLevel) {
-                                bonus.good("lion")
-                            } else {
-                                miningBg.subLevel++
-                                miningBgScale = miningBg._MIN_SCALE
-                                miningBgHOffset = 0
-                                miningBgVOffset = 0
-                                Activity.createLevel()
-                            }
-                            tuto.setState("Stopped")
-                        } else {
-                            miningBgScale = miningBg._MIN_SCALE
-                            miningBgHOffset = 0
-                            miningBgVOffset = 0
-                            if(miningBg.subLevel != items.collectedNuggets)
-                                tuto.setState("Started")
-                        }
-                    }
-                    if(miningBgScale <= miningBg._MIN_SCALE) {
+                            tuto.setState("Started")
+                    } else if (items.gotIt) {
+                        items.gotIt = false
+                        Activity.resetSetup()
+                        Activity.createLevel()
+                        return
+                    } else {
                         miningBgScale = miningBg._MIN_SCALE
-                    }
-                    miningBg.scale = miningBgScale
-                    if(previousScale != miningBg.scale && miningBg.scale > miningBg._MIN_SCALE) {
-                        var xx2 = activityBackground.mapFromItem(miningBg, x, y)
-                        miningBgHOffset += xx1.x - xx2.x
-                        miningBgVOffset += xx1.y - xx2.y
-                    } else if(miningBg.scale === miningBg._MIN_SCALE) {
                         miningBgHOffset = 0
                         miningBgVOffset = 0
+                        tuto.setState("Started")
                     }
-                    miningBg.anchors.horizontalCenterOffset = miningBgHOffset
-                    miningBg.anchors.verticalCenterOffset = miningBgVOffset
                 }
+                if(miningBgScale <= miningBg._MIN_SCALE) {
+                    miningBgScale = miningBg._MIN_SCALE
+                }
+                miningBg.scale = miningBgScale
+                if(previousScale != miningBg.scale && miningBg.scale > miningBg._MIN_SCALE) {
+                    var xx2 = activityBackground.mapFromItem(miningBg, x, y)
+                    miningBgHOffset += xx1.x - xx2.x
+                    miningBgVOffset += xx1.y - xx2.y
+                } else if(miningBg.scale === miningBg._MIN_SCALE) {
+                    miningBgHOffset = 0
+                    miningBgVOffset = 0
+                }
+                miningBg.anchors.horizontalCenterOffset = miningBgHOffset
+                miningBg.anchors.verticalCenterOffset = miningBgVOffset
+            }
 
-                MouseArea {
-                    anchors.fill: parent
-                    propagateComposedEvents: true
-                    onWheel: (wheel) => {
-                        miningBg.updateScale(wheel.angleDelta.y, wheel.x, wheel.y)
-                    }
+            MouseArea {
+                anchors.fill: parent
+                enabled: !bonus.isPlaying
+                propagateComposedEvents: true
+                onWheel: (wheel) => {
+                    miningBg.updateScale(wheel.angleDelta.y, wheel.x, wheel.y)
                 }
+            }
 
-                MultiPointTouchArea {
-                    anchors.fill: parent
-                    mouseEnabled: false
-                    minimumTouchPoints: 1
-                    maximumTouchPoints: 2
-                    // To determine if we zoom or unzoom
-                    property int prevDist: 0
-                    // To avoid having too many updates or the zoom flickers
-                     property date dateEvent: new Date()
-                    touchPoints: [
-                               TouchPoint { id: point1 },
-                               TouchPoint { id: point2 }
-                           ]
-                    onReleased: prevDist = 0
-                    onTouchUpdated: {
-                        if(!point2.pressed) {
-                            mineObjects.itemAt(point1.x, point1.y).hit(point1.x, point1.y)
-                            return
-                        }
-                        // Calc Distance
-                        var dist = Math.floor(Math.sqrt(Math.pow(point1.x - point2.x, 2) +
-                                                        Math.pow(point1.y - point2.y, 2)))
-                        var newDateEvent = new Date()
-                        if(prevDist != dist &&
-                                newDateEvent.getTime() - dateEvent.getTime() > 50) {
-                            miningBg.updateScale(dist - prevDist,
-                                                 (point1.x + point2.x) / 2,
-                                                 (point1.y + point2.y) / 2)
-                            dateEvent = newDateEvent
-                        }
-                        prevDist = dist
+            MultiPointTouchArea {
+                anchors.fill: parent
+                enabled: !bonus.isPlaying
+                mouseEnabled: false
+                minimumTouchPoints: 1
+                maximumTouchPoints: 2
+                // To determine if we zoom or unzoom
+                property int prevDist: 0
+                // To avoid having too many updates or the zoom flickers
+                    property date dateEvent: new Date()
+                touchPoints: [
+                            TouchPoint { id: point1 },
+                            TouchPoint { id: point2 }
+                        ]
+                onReleased: prevDist = 0
+                onTouchUpdated: {
+                    if(!point2.pressed) {
+                        mineObjects.itemAt(point1.x, point1.y).hit(point1.x, point1.y)
+                        return
                     }
+                    // Calc Distance
+                    var dist = Math.floor(Math.sqrt(Math.pow(point1.x - point2.x, 2) +
+                                                    Math.pow(point1.y - point2.y, 2)))
+                    var newDateEvent = new Date()
+                    if(prevDist != dist &&
+                            newDateEvent.getTime() - dateEvent.getTime() > 50) {
+                        miningBg.updateScale(dist - prevDist,
+                                                (point1.x + point2.x) / 2,
+                                                (point1.y + point2.y) / 2)
+                        dateEvent = newDateEvent
+                    }
+                    prevDist = dist
                 }
+            }
         }
 
         Image {
             id: carriage
             source: Activity.url + "gold_carriage.svg"
-            sourceSize.height: activityBackground.horizontalLayout ? 120 * ApplicationInfo.ratio : 80 * ApplicationInfo.ratio
+            width: GCStyle.bigButtonHeight
+            height: width
+            sourceSize.width: width
             anchors {
                 right: parent.right
-                bottom: activityBackground.horizontalLayout ? parent.bottom : bar.top
+                bottom: bar.top
+                margins: GCStyle.baseMargins
             }
 
             GCText {
                 id: score
-                anchors {
-                    horizontalCenter: parent.horizontalCenter
-                    verticalCenter: parent.verticalCenter
-                    horizontalCenterOffset: parent.width / 10
-                }
+                width: carriage.width * 0.6
+                height: carriage.height * 0.3
+                anchors.left: carriage.left
+                anchors.top: carriage.top
+                anchors.leftMargin: carriage.width * 0.3
+                anchors.topMargin: carriage.height * 0.37
                 text: items.collectedNuggets + "/" + miningBg.maxSubLevel
-                color: "white"
+                color: GCStyle.whiteText
                 font.bold: true
                 style: Text.Outline
-                styleColor: "black"
-                fontSize: 22
+                styleColor: GCStyle.darkerBorder
+                fontSize: mediumSize
+                fontSizeMode: Text.Fit
+                horizontalAlignment: TextEdit.AlignHCenter
+                verticalAlignment: TextEdit.AlignVCenter
             }
         }
 
+
+
         Rectangle {
             id: tutoBackground
-            color: "#C0b7b353"
-            border.color: "black"
-            border.width: 2
-            radius: 10
+            color: "#D0373737"
             anchors {
                 left: parent.left
                 right: parent.right
                 top: parent.top
-                margins: 10
             }
-            height: tuto.height + anchors.margins * 2
+            height: tuto.contentHeight + GCStyle.baseMargins
             visible: tuto.state != "Stopped"
             Behavior on height { PropertyAnimation { duration: 100 } }
 
             GCText {
                 id: tuto
-                fontSize: 13
-                anchors {
-                    left: parent.left
-                    right: parent.right
-                    top: parent.top
-                    margins: 10
-                }
-                color: "white"
+                anchors.centerIn: parent
+                width: parent.width - GCStyle.baseMargins
+                height: activityBackground.height * 0.25 - GCStyle.baseMargins
+                fontSize: smallSize
+                fontSizeMode: Text.Fit
+                color: GCStyle.whiteText
                 wrapMode: TextEdit.WordWrap
                 horizontalAlignment: TextEdit.AlignHCenter
+                verticalAlignment: TextEdit.AlignVCenter
 
                 property string newState
 
@@ -523,15 +531,6 @@ ActivityBase {
                         duration: 200
                     }
                 }
-
-                Behavior on opacity { PropertyAnimation { duration: 100 } }
-                transitions: Transition {
-                    PropertyAnimation {
-                        target: tuto
-                        property: "opacity"
-                        to: 1.0
-                    }
-                }
             }
         }
 
@@ -550,27 +549,6 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-
-            onLevelChanged: {
-                miningBg.subLevel = 1
-                miningBg.anchors.horizontalCenterOffset = 0
-                miningBg.anchors.verticalCenterOffset = 0
-                miningBg.scale = miningBg._MIN_SCALE
-                tuto.setState("Started")
-
-                switch(bar.level) {
-                case 1:
-                    miningBg.maxSubLevel = 2
-                    break
-                case 2:
-                    miningBg.maxSubLevel = 4
-                    break
-                case 3:
-                    miningBg.maxSubLevel = 10
-                    break
-                }
-
-            }
         }
 
         Bonus {
