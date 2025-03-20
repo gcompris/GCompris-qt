@@ -83,7 +83,7 @@ ActivityBase {
             id: xylofon
             anchors {
                 fill: layoutArea
-                margins: 10 * ApplicationInfo.ratio
+                margins: GCStyle.baseMargins
             }
             source: items.url + 'xylofon.svg'
             sourceSize.width: width
@@ -251,7 +251,7 @@ ActivityBase {
             id: score
             anchors.bottom: undefined
             anchors.right: parent.right
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.rightMargin: GCStyle.baseMargins
             anchors.top: parent.top
             onStop: {
                 parent.nextSubLevel();
