@@ -33,7 +33,7 @@ var colors = [
             "#387BE0",  // dark blue
             "#8EEB76",  // light green
             "#E65B48",  // red
-            "#E7F7FD",  // bluish white
+            "#ECA06F",  // bluish white
             "#E31BE3",  // magenta
             "#E8EF48",  // yellow
             "#BBB082",  // brown
@@ -44,7 +44,7 @@ var symbols = [
             baseUrl + "star.svg",
             baseUrl + "triangle.svg",
             baseUrl + "heart.svg",
-            baseUrl + "cloud.svg",
+            baseUrl + "hexagon.svg",
             baseUrl + "diamond.svg",
             baseUrl + "star_simple.svg",
             baseUrl + "cross.svg",
