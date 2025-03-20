@@ -32,7 +32,7 @@ function getItem(source) {
                     url + source + ".svg" :
                     "",
         rotation: Math.floor(Math.random() * 180) - 90,
-        widthFactor: source === "sparkle" ? 0.4 : 0.2 + Math.random() * 0.4,
+        sizeFactor: 0.2 + Math.random() * 0.8,
         isTarget: source === "sparkle"
     }
 }
@@ -47,21 +47,39 @@ function createLevel() {
             miningItems[i] = getItem("")
     }
     // Place the sparkle
-    // The Grid is 4*4 but we skip the last line free for the bar
-    // The borders are harder to get so we allow them only on higher
-    // levels.
-    if(items.currentLevel < 2) {
+    // The Grid is 4*4. The borders are harder to get so we allow them only on higher levels.
+    if(items.currentLevel < 1) {
         var choices = [5, 6, 9, 10]
         miningItems[choices[(Math.floor(Math.random() * 4))]] = getItem("sparkle")
     } else {
         miningItems[(Math.floor(Math.random() * 12))] = getItem("sparkle")
     }
     items.mineModel = miningItems
+    items.rainbowSound.play()
+}
+
+function resetSetup() {
+    items.gotIt = false
+    items.miningBg.anchors.horizontalCenterOffset = 0
+    items.miningBg.anchors.verticalCenterOffset = 0
+    items.miningBg.scale = items.miningBg._MIN_SCALE
 }
 
 function initLevel() {
     items.collectedNuggets = 0
-
+    resetSetup()
+    items.tuto.setState("Started")
+    switch(items.currentLevel) {
+        case 0:
+            items.miningBg.maxSubLevel = 2
+            break
+        case 1:
+            items.miningBg.maxSubLevel = 4
+            break
+        case 2:
+            items.miningBg.maxSubLevel = 10
+            break
+    }
     createLevel()
 }
 
