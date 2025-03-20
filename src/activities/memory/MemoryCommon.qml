@@ -123,13 +123,6 @@ ActivityBase {
                                                     (cellWidth - GCStyle.baseMargins) * 1.4)
 
             model: containerModel
-
-            function getItemAtIndex(i: int): var {
-                var xi = (i % items.columns) * cellWidth + anchors.margins
-                var yi = (i / items.columns) * cellHeight + anchors.margins
-                return itemAt(xi, yi)
-            }
-
             delegate: CardItem {
                 pairData: pairData_
                 tuxTurn: activityBackground.items.tuxTurn
