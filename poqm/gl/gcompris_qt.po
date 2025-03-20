@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-03-02 08:53+0100\n"
+"PO-Revision-Date: 2025-03-19 13:27+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.gal>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.12.2\n"
+"X-Generator: Lokalize 24.12.3\n"
 "X-Qt-Contexts: true\n"
 "X-Environment: kids\n"
 
@@ -10381,9 +10381,7 @@ msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Tab: cambiar entre editar o fresco e ver o modelo."
 
 #: activities/frieze/Frieze.qml:109
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulb|"
-#| msgid "What is the binary representation of %1?"
+#, qt-format
 msgctxt "Frieze|"
 msgid "What is the binary representation of %1?"
 msgstr "Cal é a representación binaria de %1?"
@@ -15405,12 +15403,9 @@ msgid "Division required."
 msgstr "Requírese dividir."
 
 #: activities/guess24/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "Xogo de memoria con todas as operacións"
+msgstr "Necesítanse todos os operadores."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
