@@ -68,11 +68,10 @@ ActivityBase {
             property int selectionCount
             readonly property var levels: activity.datasets !=  0 ? activity.datasets : activity.dataset
             property alias containerModel: containerModel
-            property alias grid: grid
+            property alias cardGrid: cardGrid
             property bool blockClicks: false
             property int columns
             property int rows
-            property int spacing: 5 * ApplicationInfo.ratio
             property bool isMultipleDatasetMode: activity.datasets != 0
         }
 
@@ -104,24 +103,24 @@ ActivityBase {
 
         Item {
             id: layoutArea
-            anchors.top: activityBackground.top
-            anchors.bottom: bar.top
-            anchors.left: activityBackground.left
-            anchors.right: activityBackground.right
-            anchors.margins: items.spacing
+            anchors.fill: parent
+            anchors.margins: GCStyle.baseMargins
+            anchors.bottomMargin: bar.height * 1.2
         }
 
         GridView {
-            id: grid
+            id: cardGrid
             cellWidth: width / items.columns
             cellHeight: height / items.rows
             anchors {
-                left: activityBackground.left
-                right: player1Score.left
-                top: activityBackground.top
-                bottom: player1Score.bottom
-                margins: items.spacing
+                left: layoutArea.left
+                top: layoutArea.top
             }
+
+            property real cardImageWidth: Math.min(cellWidth - GCStyle.baseMargins,
+                                                   (cellHeight - GCStyle.baseMargins) / 1.4)
+            property real cardImageHeight: Math.min(cellHeight - GCStyle.baseMargins,
+                                                    (cellWidth - GCStyle.baseMargins) * 1.4)
 
             model: containerModel
 
@@ -134,8 +133,10 @@ ActivityBase {
             delegate: CardItem {
                 pairData: pairData_
                 tuxTurn: activityBackground.items.tuxTurn
-                width: grid.cellWidth - grid.anchors.margins
-                height: grid.cellHeight - grid.anchors.margins
+                width: cardGrid.cellWidth
+                height: cardGrid.cellHeight
+                cardImageWidth: cardGrid.cardImageWidth
+                cardImageHeight: cardGrid.cardImageHeight
                 audioVoices: activity.audioVoices
                 onIsFoundChanged: activityBackground.keyNavigationVisible = false
             }
@@ -143,9 +144,9 @@ ActivityBase {
             highlightFollowsCurrentItem: true
             highlightMoveDuration: 0
             highlight: Rectangle {
-                color: "#D0FFFFFF"
-                radius: 10
-                scale: 1.1
+                color: GCStyle.whiteBg
+                opacity: 0.8
+                radius: GCStyle.halfMargins
                 visible: activityBackground.keyNavigationVisible
             }
             add: Transition {
@@ -206,31 +207,33 @@ ActivityBase {
             onHomeClicked: home()
         }
 
+        Item {
+            id: scoreArea
+            anchors.bottom: layoutArea.bottom
+            anchors.right: layoutArea.right
+        }
+
         ScoreItem {
             id: player1Score
-            height: Math.min(activityBackground.height/7, Math.min(activityBackground.width/7, bar.height * 1.05))
+            height: Math.min(layoutArea.height/7, layoutArea.width/7, bar.height * 1.05)
             width: height * 1.2
-            anchors {
-                bottom: bar.top
-                right: activityBackground.right
-                rightMargin: items.spacing * 8
-                bottomMargin: items.spacing * 6
-            }
+            playerScaleOriginX: width * 0.5
+            playerScaleOriginY: height * 0.5
+            anchors.bottom: scoreArea.bottom
+            anchors.right: scoreArea.right
+            anchors.bottomMargin: height * 0.2
+            anchors.rightMargin: width * 0.2
             playerImageSource: 'qrc:/gcompris/src/activities/memory/resource/child.svg'
             backgroundImageSource: 'qrc:/gcompris/src/activities/bargame/resource/score_1.svg'
         }
 
         ScoreItem {
             id: player2Score
-            height: Math.min(activityBackground.height/7, Math.min(activityBackground.width/7, bar.height * 1.05))
-            width: height * 1.2
+            height: player1Score.height
+            width: player1Score.width
             visible: activity.withTux || items.playerCount == 2
-            anchors {
-                bottom: player1Score.top
-                right: activityBackground.right
-                rightMargin: items.spacing * 8
-                bottomMargin: items.spacing * 6
-            }
+            playerScaleOriginX: player1Score.playerScaleOriginX
+            playerScaleOriginY: player1Score.playerScaleOriginY
             playerImageSource: 'qrc:/gcompris/src/activities/memory/resource/tux.svg'
             backgroundImageSource: 'qrc:/gcompris/src/activities/bargame/resource/score_2.svg'
         }
@@ -240,30 +243,54 @@ ActivityBase {
             State {
                 name: "horizontalCards"
                 when: horizontalLayout
+                PropertyChanges {
+                    scoreArea.width: player1Score.width * 1.4
+                    player2Score.anchors.bottomMargin: player2Score.height * 0.4 + GCStyle.halfMargins
+                    player2Score.anchors.rightMargin: player2Score.width * 0.2
+                    cardGrid.anchors.rightMargin: GCStyle.halfMargins
+                    cardGrid.anchors.bottomMargin: 0
+                }
+                AnchorChanges {
+                    target: scoreArea
+                    anchors.top: layoutArea.top
+                    anchors.left: undefined
+                }
                 AnchorChanges {
                     target: player2Score
                     anchors.bottom: player1Score.top
-                    anchors.right: activityBackground.right
+                    anchors.right: layoutArea.right
                 }
                 AnchorChanges {
-                    target: grid
-                    anchors.bottom: player1Score.bottom
-                    anchors.right: player1Score.left
+                    target: cardGrid
+                    anchors.bottom: layoutArea.bottom
+                    anchors.right: scoreArea.left
                 }
 
             },
             State {
                 name: "verticalCards"
                 when: !horizontalLayout
+                PropertyChanges {
+                    scoreArea.height: player1Score.height * 1.4
+                    player2Score.anchors.bottomMargin: player2Score.height * 0.2
+                    player2Score.anchors.rightMargin: player2Score.width * 0.4 + GCStyle.halfMargins
+                    cardGrid.anchors.rightMargin: 0
+                    cardGrid.anchors.bottomMargin: GCStyle.halfMargins
+                }
+                AnchorChanges {
+                    target: scoreArea
+                    anchors.top: undefined
+                    anchors.left: layoutArea.left
+                }
                 AnchorChanges {
                     target: player2Score
-                    anchors.bottom: bar.top
+                    anchors.bottom: layoutArea.bottom
                     anchors.right: player1Score.left
                 }
                 AnchorChanges {
-                    target: grid
-                    anchors.bottom: player1Score.top
-                    anchors.right: activityBackground.right
+                    target: cardGrid
+                    anchors.bottom: scoreArea.top
+                    anchors.right: layoutArea.right
                 }
             }
         ]
@@ -282,50 +309,50 @@ ActivityBase {
             activityBackground.keyNavigationVisible = true
             if(event.key === Qt.Key_Left) {
                 do {
-                    if(grid.currentIndex <= 0) {
-                        grid.currentIndex = grid.count - 1;
+                    if(cardGrid.currentIndex <= 0) {
+                        cardGrid.currentIndex = cardGrid.count - 1;
                     } else {
-                        grid.currentIndex -= 1;
+                        cardGrid.currentIndex -= 1;
                     }
                 }
-                while(grid.currentItem.isFound && !items.blockClicks)
+                while(cardGrid.currentItem.isFound && !items.blockClicks)
             }
             else if(event.key === Qt.Key_Right) {
                 do {
-                    if(grid.currentIndex >= grid.count - 1) {
-                        grid.currentIndex = 0;
+                    if(cardGrid.currentIndex >= cardGrid.count - 1) {
+                        cardGrid.currentIndex = 0;
                     } else {
-                        grid.currentIndex += 1
+                        cardGrid.currentIndex += 1
                     }
                 }
-                while(grid.currentItem.isFound && !items.blockClicks)
+                while(cardGrid.currentItem.isFound && !items.blockClicks)
             }
             else if(event.key === Qt.Key_Up) {
                 do {
-                    if(grid.currentIndex === 0) {
-                        grid.currentIndex = grid.count - 1
+                    if(cardGrid.currentIndex === 0) {
+                        cardGrid.currentIndex = cardGrid.count - 1
                     } else {
-                        grid.currentIndex -= items.columns
-                        if(grid.currentIndex < 0)
-                            grid.currentIndex += grid.count - 1
+                        cardGrid.currentIndex -= items.columns
+                        if(cardGrid.currentIndex < 0)
+                            cardGrid.currentIndex += cardGrid.count - 1
                     }
                 }
-                while(grid.currentItem.isFound && !items.blockClicks)
+                while(cardGrid.currentItem.isFound && !items.blockClicks)
             }
             else if(event.key === Qt.Key_Down) {
                 do {
-                    if(grid.currentIndex === grid.count - 1) {
-                        grid.currentIndex = 0
+                    if(cardGrid.currentIndex === cardGrid.count - 1) {
+                        cardGrid.currentIndex = 0
                     } else {
-                        grid.currentIndex += items.columns
-                        if(grid.currentIndex >= grid.count)
-                            grid.currentIndex -= grid.count - 1
+                        cardGrid.currentIndex += items.columns
+                        if(cardGrid.currentIndex >= cardGrid.count)
+                            cardGrid.currentIndex -= cardGrid.count - 1
                     }
                 }
-                while(grid.currentItem.isFound && !items.blockClicks)
+                while(cardGrid.currentItem.isFound && !items.blockClicks)
             }
             else if(event.key === Qt.Key_Space || event.key === Qt.Key_Enter || event.key === Qt.Key_Return)
-                if(grid.currentItem.isBack && !grid.currentItem.isFound && !grid.currentItem.tuxTurn && items.selectionCount < 2) grid.currentItem.selected()
+                if(cardGrid.currentItem.isBack && !cardGrid.currentItem.isFound && !cardGrid.currentItem.tuxTurn && items.selectionCount < 2) cardGrid.currentItem.selected()
         }
 
         Loader {

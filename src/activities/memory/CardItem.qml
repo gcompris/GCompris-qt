@@ -23,6 +23,8 @@ Flipable {
     property bool isBack: true
     property bool isShown: false
     property bool isFound: false
+    property real cardImageWidth
+    property real cardImageHeight
 
     property bool tuxTurn
 
@@ -67,17 +69,16 @@ Flipable {
 
     back: Image {
         source: card.pairData.emptyCard
-        width: parent.width
+        anchors.centerIn: card
+        width: card.cardImageWidth
+        height: card.cardImageHeight
         sourceSize.width: width
         fillMode: Image.PreserveAspectFit
-        anchors.centerIn: parent
-        anchors.fill: parent
         Image {
             id: contentImage
             source: card.pairData.image
             width: parent.paintedWidth * 0.9
             height: parent.paintedHeight * 0.9
-            sourceSize.width: width
             sourceSize.height: height
             anchors.centerIn: parent
             fillMode: Image.PreserveAspectFit
@@ -90,7 +91,7 @@ Flipable {
             fontSize: 64
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
-            color: "#202020"
+            color: GCStyle.darkerText
             font.bold: true
             text: card.pairData.text
         }
@@ -112,17 +113,18 @@ Flipable {
     // Warning front and back property are reversed. Could not find
     // a way to display back at start time without this trick
     front: Image {
-        fillMode: Image.PreserveAspectFit
         source: card.pairData.back
-        sourceSize.width: parent.width
-        anchors.centerIn: parent
-        anchors.fill: parent
+        anchors.centerIn: card
+        width: card.cardImageWidth
+        height: card.cardImageHeight
+        sourceSize.width: width
+        fillMode: Image.PreserveAspectFit
     }
 
     transform: Rotation {
         id: rotation
-        origin.x: card.width / 2
-        origin.y: card.height / 2
+        origin.x: card.width * 0.5
+        origin.y: card.height * 0.5
         axis.x: 0; axis.y: 1; axis.z: 0
         angle: 0
     }
