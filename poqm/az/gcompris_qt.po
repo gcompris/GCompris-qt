@@ -19110,7 +19110,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:336
+#: activities/memory/MemoryCommon.qml:356
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19119,12 +19119,12 @@ msgstr ""
 "Bu çalışma səsli işləyir, buna görə də, hətta əsas tənzimləmələrdən səs "
 "effektləri söndürülmüş olsa da bəzi səslənmə eşidiləcəkdir."
 
-#: activities/memory/MemoryCommon.qml:337
+#: activities/memory/MemoryCommon.qml:357
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Çıxış"
 
-#: activities/memory/MemoryCommon.qml:338
+#: activities/memory/MemoryCommon.qml:358
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Davam edin"
@@ -19667,7 +19667,7 @@ msgstr ""
 "metalpaint.wav - qarışdırılıb və yeni qızıl külçələri toplandıqda istifadə "
 "olunur"
 
-#: activities/mining/Mining.qml:434
+#: activities/mining/Mining.qml:442
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -19684,22 +19684,22 @@ msgstr ""
 "sürüşdürün. Sensor ekranda barmaqlarınızı parıltı üzərindən ək istiamətlərdə "
 "sürüşdürün."
 
-#: activities/mining/Mining.qml:450
+#: activities/mining/Mining.qml:458
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Əla, bu sizdə alınır, Külçə görünənə qədər davam edin."
 
-#: activities/mining/Mining.qml:458
+#: activities/mining/Mining.qml:466
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Hmm, diqqət edin, parıltıdan çox uzaqda yaxınlaşdırırsınız."
 
-#: activities/mining/Mining.qml:466
+#: activities/mining/Mining.qml:474
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "İndi siz külçəni görürsünüz, onu götürmək üçün vurun."
 
-#: activities/mining/Mining.qml:474
+#: activities/mining/Mining.qml:482
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -19708,17 +19708,17 @@ msgstr ""
 "Hmm, siz belə görünür ki, siz külçədən çox uzaqdasınız. Uzaqlaşın və "
 "parıltını gördükdə ona doğru təkrar yaxınlaşın."
 
-#: activities/mining/Mining.qml:482
+#: activities/mining/Mining.qml:490
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "İndi uzaqlaşın və başqa parıltını tapmağa çalışın."
 
-#: activities/mining/Mining.qml:490
+#: activities/mining/Mining.qml:498
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Parıltı görünənə qədər uzaqlaşın."
 
-#: activities/mining/Mining.qml:498
+#: activities/mining/Mining.qml:506
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "İndi siz parıltını görürsünüz, ona yaxınlaşmağa başlayın."

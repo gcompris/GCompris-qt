@@ -1,5 +1,5 @@
 # Jazeix Johnny <jazeix@gmail.com>, 2017.
-# Timothée Giet <animtim@gmail.com>, 2020.
+# Timothée Giet <animtim@gmail.com>, 2020, 2025.
 # Xavier Besnard <xavier.besnard@kde.org>, 2020, 2021, 2022.
 # charruau <echarruau@gmail.com>, 2023.
 msgid ""
@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: gcompris voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-13 02:28+0000\n"
-"PO-Revision-Date: 2023-01-02 12:18+0100\n"
-"Last-Translator: charruau <echarruau@gmail.com>\n"
-"Language-Team: French <kde-francophone@kde.org>\n"
+"PO-Revision-Date: 2025-03-19 17:39+0100\n"
+"Last-Translator: timo <animtim@gmail.com>\n"
+"Language-Team: French <kde-i18n-doc@kde.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.0\n"
+"X-Generator: Lokalize 23.04.3\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
 #: activities/adjacent_numbers/ActivityInfo.qml:17
@@ -349,7 +349,7 @@ msgid ""
 "Select the correct comparator sign for each pair of numbers in the list."
 msgstr ""
 "Sélectionne le signe de comparaison qui convient pour chaque paire de "
-"chiffres de la liste."
+"nombres de la liste."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
@@ -502,7 +502,7 @@ msgstr "Trouve le numérateur et le dénominateur de la fraction présentée."
 #: activities/frieze/ActivityInfo.qml:17
 #, kde-format
 msgid "Reproduce and complete the frieze model."
-msgstr ""
+msgstr "Reproduis et complète le modèle de la frise."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -578,12 +578,14 @@ msgstr ""
 #, kde-format
 msgid "Find the value corresponding to the given spot on the graduated line."
 msgstr ""
+"Trouve la valeur correspondant à l'emplacement du point donné sur la ligne "
+"graduée."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
 #: activities/graduated_line_use/ActivityInfo.qml:17
 #, kde-format
 msgid "Place the given value on the graduated line."
-msgstr ""
+msgstr " Place la valeur donnée sur la ligne graduée."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
@@ -591,7 +593,7 @@ msgstr ""
 #: activities/grammar_classes/ActivityInfo.qml:21
 #, kde-format
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr ""
+msgstr "Assigne les classes grammaticales demandées aux mots correspondants."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -615,6 +617,8 @@ msgstr ""
 #, kde-format
 msgid "Use the four numbers with given operators to find 24"
 msgstr ""
+"Utilise les quatre nombres avec les opérateurs donnés pour trouver le nombre "
+"24."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22
@@ -712,8 +716,8 @@ msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
 "the bar to the empty area to represent the decimal number."
 msgstr ""
-"Faites glisser la flèche pour sélectionner une partie de la barre, puis "
-"faites glisser la partie sélectionnée de la barre vers la zone vide pour "
+"Fais glisser la flèche pour sélectionner une partie de la barre, puis fais "
+"glisser la partie sélectionnée de la barre vers la zone vide pour "
 "représenter le nombre décimal."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals_additions"
@@ -723,15 +727,15 @@ msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
 "the bar to the empty area to represent the result of the addition."
 msgstr ""
-"Faites glisser la flèche pour sélectionner une partie de la barre, puis "
-"faites glisser la partie sélectionnée de la barre vers la zone vide pour "
+"Fais glisser la flèche pour sélectionner une partie de la barre, puis fais "
+"glisser la partie sélectionnée de la barre vers la zone vide pour "
 "représenter le résultat de l'addition."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals_subtractions"
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:17
 #, kde-format
 msgid "Click on the squares to represent the result of the subtraction."
-msgstr "Cliquez sur les carrés pour donner le résultat de la soustraction."
+msgstr "Clique sur les carrés pour donner le résultat de la soustraction."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_digits"
 #: activities/learn_digits/ActivityInfo.qml:18
@@ -746,8 +750,8 @@ msgid ""
 "Drag the arrow to select a number of oranges, and drag the oranges to the "
 "empty area to represent the requested quantity."
 msgstr ""
-"Faites glisser la flèche pour sélectionner un nombre d'oranges, puis faites "
-"glisser les oranges vers la zone vide pour représenter la quantité attendue."
+"Fais glisser la flèche pour sélectionner un nombre d'oranges, puis fais "
+"glisser les oranges vers la zone vide pour représenter la quantité demandée."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "left_right_click"
 #: activities/left_right_click/ActivityInfo.qml:17
@@ -755,8 +759,8 @@ msgstr ""
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
-"Déplace les animaux vers leurs maisons en utilisant le clic gauche ou le "
-"clic droit de ta souris."
+"Déplace les animaux vers leur maison en utilisant le clic gauche ou le clic "
+"droit de la souris."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
 #: activities/leftright/ActivityInfo.qml:18
@@ -961,7 +965,7 @@ msgstr "Choisis les pièces ou les billets dont tu as besoin pour payer."
 #: activities/morse_code/ActivityInfo.qml:21
 #, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr "Apprends puis entraîne-toi à utiliser le code Morse."
+msgstr "Apprends et entraîne-toi à utiliser le code Morse."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
@@ -1015,25 +1019,25 @@ msgstr ""
 #: activities/ordering_alphabets/ActivityInfo.qml:24
 #, kde-format
 msgid "Arrange the letters in the correct order."
-msgstr "Classez les lettres dans le bon ordre"
+msgstr "Classe les lettres dans le bon ordre."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_chronology"
 #: activities/ordering_chronology/ActivityInfo.qml:24
 #, kde-format
 msgid "Arrange the given events in their chronological order."
-msgstr "Classez les évènements donnés dans leur ordre chronologique."
+msgstr "Classe les évènements donnés dans leur ordre chronologique."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_numbers"
 #: activities/ordering_numbers/ActivityInfo.qml:23
 #, kde-format
 msgid "Arrange the numbers in the correct order."
-msgstr "Classez les chiffres dans le bon ordre."
+msgstr "Classe les nombres dans le bon ordre."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_sentences"
 #: activities/ordering_sentences/ActivityInfo.qml:23
 #, kde-format
 msgid "Arrange the given words to form a meaningful sentence."
-msgstr "Arrangez les mots donnés pour former une phrase significative."
+msgstr "Arrange les mots donnés pour former une phrase significative."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "oware_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "oware"
@@ -1041,7 +1045,7 @@ msgstr "Arrangez les mots donnés pour former une phrase significative."
 #: activities/oware_2players/ActivityInfo.qml:17
 #, kde-format
 msgid "Capture at least 25 seeds to win the game"
-msgstr "Capturez au moins 25 graines pour gagner la partie."
+msgstr "Capture au moins 25 graines pour gagner la partie."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "paintings"
 #: activities/paintings/ActivityInfo.qml:23
@@ -1059,7 +1063,7 @@ msgid ""
 "Click on the grid squares following the given directions to help Tux reach "
 "the target."
 msgstr ""
-"Cliquez sur les cases de la grille en suivant les indications données pour "
+"Clique sur les cases de la grille en suivant les indications données pour "
 "aider Tux à atteindre la cible."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "path_encoding"
@@ -1069,7 +1073,7 @@ msgstr ""
 #, kde-format
 msgid "Use the arrows to move Tux along the path and reach the target."
 msgstr ""
-"Utilisez les flèches pour déplacer Tux le long du chemin et atteindre la "
+"Utilise les flèches pour déplacer Tux le long du chemin et atteindre la "
 "cible."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "penalty"
@@ -1120,7 +1124,7 @@ msgstr "Clique sur le tambour pour reproduire le rythme."
 #: activities/positions/ActivityInfo.qml:18
 #, kde-format
 msgid "Find the correct position"
-msgstr "Trouver la position correcte"
+msgstr "Trouve la position demandée."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "programmingMaze"
 #: activities/programmingMaze/ActivityInfo.qml:19
@@ -1217,7 +1221,7 @@ msgstr ""
 #: activities/sketch/ActivityInfo.qml:19
 #, kde-format
 msgid "Use the tools to draw images."
-msgstr ""
+msgstr "Utilise les outils pour dessiner."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers"
 #: activities/smallnumbers/ActivityInfo.qml:18
@@ -1303,18 +1307,14 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_calculate"
 #: activities/tens_complement_calculate/ActivityInfo.qml:17
-#, fuzzy, kde-format
-#| msgid ""
-#| "Create pairs of numbers equal to ten. Select a number, then select "
-#| "another number of the same operation to swap their position."
+#, kde-format
 msgid ""
 "Create pairs of numbers equal to ten. Select a number, then select another "
 "number of the same operation to swap their position. Then, select the result "
 "box to type the result."
 msgstr ""
-"Crée des paires de nombres égaux à dix. Sélectionnez un nombre, puis "
-"sélectionne un autre nombre de la même opération pour permuter leurs "
-"positions."
+"Crée des paires de nombres égaux à dix. Sélectionne un nombre, puis "
+"sélectionne un autre nombre de la même opération pour permuter leur position."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_find"
 #: activities/tens_complement_find/ActivityInfo.qml:17
@@ -1334,9 +1334,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number, then select another "
 "number of the same operation to swap their position."
 msgstr ""
-"Crée des paires de nombres égaux à dix. Sélectionnez un nombre, puis "
-"sélectionne un autre nombre de la même opération pour permuter leurs "
-"positions."
+"Crée des paires de nombres égaux à dix. Sélectionne un nombre, puis "
+"sélectionne un autre nombre de la même opération pour permuter leur position."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_use"
 #: activities/tens_complement_use/ActivityInfo.qml:17
@@ -1373,7 +1372,7 @@ msgstr ""
 #: activities/vertical_addition/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given addition."
-msgstr ""
+msgstr "Résous l'addition donnée."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction_compensation"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction"
@@ -1381,7 +1380,7 @@ msgstr ""
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given subtraction."
-msgstr ""
+msgstr "Résous la soustraction donnée."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "watercycle"
 #: activities/watercycle/ActivityInfo.qml:18
