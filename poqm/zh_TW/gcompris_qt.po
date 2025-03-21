@@ -18890,19 +18890,19 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:336
+#: activities/memory/MemoryCommon.qml:356
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr "這個活動需要播放聲音，所以即使您設定關閉聲音或音效，它還是會播出聲音。"
 
-#: activities/memory/MemoryCommon.qml:337
+#: activities/memory/MemoryCommon.qml:357
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "離開"
 
-#: activities/memory/MemoryCommon.qml:338
+#: activities/memory/MemoryCommon.qml:358
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "繼續"
@@ -19421,7 +19421,7 @@ msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr "metalpaint.wav - 金塊被收集時"
 
-#: activities/mining/Mining.qml:434
+#: activities/mining/Mining.qml:442
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -19434,22 +19434,22 @@ msgstr ""
 "軌跡板，則將游標指過去然後在右方區域用一根指頭拖曳，或是用兩根指頭從中間拖"
 "曳。在觸控面板上，用兩根指頭往不同方向滑過去。"
 
-#: activities/mining/Mining.qml:450
+#: activities/mining/Mining.qml:458
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "很好，您會放大了。繼續直到看到金塊為止。"
 
-#: activities/mining/Mining.qml:458
+#: activities/mining/Mining.qml:466
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "唔，小心一點，您放得太遠了。"
 
-#: activities/mining/Mining.qml:466
+#: activities/mining/Mining.qml:474
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "看到金塊了沒？點擊就可以收集金塊了。"
 
-#: activities/mining/Mining.qml:474
+#: activities/mining/Mining.qml:482
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -19457,17 +19457,17 @@ msgid ""
 msgstr ""
 "唔，您離金塊太遠了所以看不到它。把畫面縮小，然後再放大接近直到看到閃光為止。"
 
-#: activities/mining/Mining.qml:482
+#: activities/mining/Mining.qml:490
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "現在縮小畫面，找另一個金塊。"
 
-#: activities/mining/Mining.qml:490
+#: activities/mining/Mining.qml:498
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "繼續縮小直到看到閃光為止。"
 
-#: activities/mining/Mining.qml:498
+#: activities/mining/Mining.qml:506
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "看到閃光了沒？過去放大吧！"

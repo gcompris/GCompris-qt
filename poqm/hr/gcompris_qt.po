@@ -18945,7 +18945,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:336
+#: activities/memory/MemoryCommon.qml:356
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -18954,12 +18954,12 @@ msgstr ""
 "Ova aktivnost zahtijeva zvuk, pa će reproducirati neke zvukove čak i ako su "
 "audio glasovi ili efekti onemogućeni u glavnoj konfiguraciji."
 
-#: activities/memory/MemoryCommon.qml:337
+#: activities/memory/MemoryCommon.qml:357
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Zatvori"
 
-#: activities/memory/MemoryCommon.qml:338
+#: activities/memory/MemoryCommon.qml:358
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Nastavi"
@@ -19485,7 +19485,7 @@ msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr "metalpaint.wav - remiksiran i korišten kada se skuplja grumen zlata"
 
-#: activities/mining/Mining.qml:434
+#: activities/mining/Mining.qml:442
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -19499,22 +19499,22 @@ msgstr ""
 "a zatim povuci jednim prstom na desno područje ili dva prsta na sredinu. Na "
 "području dodira povuci dva prsta od sjaja, po jedan u svakom smjeru."
 
-#: activities/mining/Mining.qml:450
+#: activities/mining/Mining.qml:458
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Savršeno zumiraš. Nastavi dok ne vidiš grumen."
 
-#: activities/mining/Mining.qml:458
+#: activities/mining/Mining.qml:466
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Hum, pazi, zumiraš predaleko od sjaja."
 
-#: activities/mining/Mining.qml:466
+#: activities/mining/Mining.qml:474
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Sada vidiš grumen, klikni na njega da ga uhvatiš."
 
-#: activities/mining/Mining.qml:474
+#: activities/mining/Mining.qml:482
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -19523,17 +19523,17 @@ msgstr ""
 "Hm, predaleko si od grumena da bi ga vidio. Ukloni zumiranje, a zatim "
 "ponovno zumiraj što bliže možeš od točke svjetlucanja."
 
-#: activities/mining/Mining.qml:482
+#: activities/mining/Mining.qml:490
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Sada smanji zumiranje i pokušaj pronaći drugu iskru."
 
-#: activities/mining/Mining.qml:490
+#: activities/mining/Mining.qml:498
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Nastavi smanjivati zumiranje dok ne vidiš sjaj."
 
-#: activities/mining/Mining.qml:498
+#: activities/mining/Mining.qml:506
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Sada vidiš iskru, samo naprijed, možeš je zumirati."

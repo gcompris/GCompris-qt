@@ -19467,7 +19467,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:336
+#: activities/memory/MemoryCommon.qml:356
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19476,12 +19476,12 @@ msgstr ""
 "See mäng vajab heli olemasolu, mõned helid mängivad isegi siis, kui "
 "seadetest on audio ja helieffektid välja lülitatud."
 
-#: activities/memory/MemoryCommon.qml:337
+#: activities/memory/MemoryCommon.qml:357
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Sulgege"
 
-#: activities/memory/MemoryCommon.qml:338
+#: activities/memory/MemoryCommon.qml:358
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Jätka"
@@ -20011,7 +20011,7 @@ msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr "metalpaint.wav - remixed and used when a gold nugget is collected"
 
-#: activities/mining/Mining.qml:434
+#: activities/mining/Mining.qml:442
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -20025,22 +20025,22 @@ msgstr ""
 "peale ja siis lohista üht sõrme paremal või kaht sõrme keskel. Puuteekraani "
 "korral lohista kaht sõrme sädelusest eri suunas eemale."
 
-#: activities/mining/Mining.qml:450
+#: activities/mining/Mining.qml:458
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Suurepärane, sa suurendad. Jätka, kuni näed kullatükki."
 
-#: activities/mining/Mining.qml:458
+#: activities/mining/Mining.qml:466
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Hm, ole hoolikam: praegu suurendad sädelusest liiga kaugel."
 
-#: activities/mining/Mining.qml:466
+#: activities/mining/Mining.qml:474
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Nüüd näed kullatükki. Klõpsa sellel kättesaamiseks."
 
-#: activities/mining/Mining.qml:474
+#: activities/mining/Mining.qml:482
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -20049,17 +20049,17 @@ msgstr ""
 "Hm, sa oled kullatükist liiga kaugel, et seda näha. Vähenda ja siis suurenda "
 "juba uuesti nii kullatüki lähedal, kui saad.."
 
-#: activities/mining/Mining.qml:482
+#: activities/mining/Mining.qml:490
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Nüüd vähenda ja püüa tähele panna uut sädelust."
 
-#: activities/mining/Mining.qml:490
+#: activities/mining/Mining.qml:498
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Jätka vähendamist, kuni näed sädelust."
 
-#: activities/mining/Mining.qml:498
+#: activities/mining/Mining.qml:506
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Nüüd näed sädelust. Mine sinna ja suurenda."

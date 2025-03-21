@@ -20438,7 +20438,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:336
+#: activities/memory/MemoryCommon.qml:356
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20447,12 +20447,12 @@ msgstr ""
 "Esta actividade precisa de som, pelo que irá tocar alguns sons, mesmo se as "
 "vozes ou efeitos de áudio estão desactivados na configuração principal."
 
-#: activities/memory/MemoryCommon.qml:337
+#: activities/memory/MemoryCommon.qml:357
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Sair"
 
-#: activities/memory/MemoryCommon.qml:338
+#: activities/memory/MemoryCommon.qml:358
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Continuar"
@@ -20991,7 +20991,7 @@ msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr ""
 "metalpaint.wav - misturado e usado quando é recolhida uma pepita de ouro"
 
-#: activities/mining/Mining.qml:434
+#: activities/mining/Mining.qml:442
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -21006,22 +21006,22 @@ msgstr ""
 "direita ou os dois dedos no centro. Numa área por toque, arraste dois dedos "
 "para longe do brilho, indo um em cada direcção."
 
-#: activities/mining/Mining.qml:450
+#: activities/mining/Mining.qml:458
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Perfeito, está a ampliar. Continue até que encontre a pepita."
 
-#: activities/mining/Mining.qml:458
+#: activities/mining/Mining.qml:466
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Hum, tenha cuidado, está a ampliar muito longe do brilho."
 
-#: activities/mining/Mining.qml:466
+#: activities/mining/Mining.qml:474
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Agora já consegue ver a pepita; carregue nela para a apanhar."
 
-#: activities/mining/Mining.qml:474
+#: activities/mining/Mining.qml:482
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -21030,17 +21030,17 @@ msgstr ""
 "Hum, está muito longe da pepita para a ver. Reduza e depois amplie de novo o "
 "mais perto que conseguir do brilho."
 
-#: activities/mining/Mining.qml:482
+#: activities/mining/Mining.qml:490
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Agora reduza e tente descobrir outro brilho."
 
-#: activities/mining/Mining.qml:490
+#: activities/mining/Mining.qml:498
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Continue a reduzir até que veja o brilho."
 
-#: activities/mining/Mining.qml:498
+#: activities/mining/Mining.qml:506
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Agora que vê o brilho, vá em frente, poderá ampliá-la."

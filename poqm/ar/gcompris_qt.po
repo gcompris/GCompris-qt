@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-03-08 21:34+0400\n"
+"PO-Revision-Date: 2025-03-20 09:45+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -14970,12 +14970,9 @@ msgid "Division required."
 msgstr "القسمة مطلوبة."
 
 #: activities/guess24/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "لعبة ذاكرة كلّ العمليّات"
+msgstr "كلّ العوامل مطلوبة"
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -15028,7 +15025,7 @@ msgid ""
 "Drag the numbers and operators to the boxes to obtain the number given in "
 "the instructions."
 msgstr ""
-"اسحب الأرقام والعوامل المناسبة إلى المربعات للحصول على العدد المطلوبفي "
+"اسحب الأرقام والعوامل المناسبة إلى المربعات للحصول على العدد المطلوب في "
 "التعليمات."
 
 #: activities/guesscount/Admin.qml:34
@@ -15061,7 +15058,7 @@ msgstr "الأرقام"
 #: activities/guesscount/OperatorRow.qml:39
 msgctxt "OperatorRow|"
 msgid "Operators"
-msgstr "العوامل"
+msgstr "العمليات"
 
 #: activities/guesscount/resource/1/Data.qml:20
 msgctxt "Data|"
@@ -18634,7 +18631,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:336
+#: activities/memory/MemoryCommon.qml:356
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -18643,12 +18640,12 @@ msgstr ""
 "يتطلب هذا النشاط صوتًا، لذلك ستشتغل بعض الأصوات حتى لو كان الصوت أو تأثيرات "
 "الصوت معطلة في الإعدادات الرئيسة."
 
-#: activities/memory/MemoryCommon.qml:337
+#: activities/memory/MemoryCommon.qml:357
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "أنهِ"
 
-#: activities/memory/MemoryCommon.qml:338
+#: activities/memory/MemoryCommon.qml:358
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "تابع"
@@ -19169,7 +19166,7 @@ msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr "metalpaint.wav - تستخدم عند التقاط الذهب"
 
-#: activities/mining/Mining.qml:434
+#: activities/mining/Mining.qml:442
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -19183,39 +19180,39 @@ msgstr ""
 "اسحب إصبعًا واحدًا على المنطقة اليمنى أو أصبعين في المنتصف. إذا لديك شاشة لمس، "
 "اسحب أصبعين بعيدًا عن البريق ، واحد في كل اتجاه."
 
-#: activities/mining/Mining.qml:450
+#: activities/mining/Mining.qml:458
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "ممتاز فأنت تقرّب. تابع حتّى ترى قطعة الذّهب."
 
-#: activities/mining/Mining.qml:458
+#: activities/mining/Mining.qml:466
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "اممم، احترس فأنت تبعّد عن قطعة الذّهب."
 
-#: activities/mining/Mining.qml:466
+#: activities/mining/Mining.qml:474
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "أنت الآن ترى قطعة الذّهب، انقر عليها لالتقاطها."
 
-#: activities/mining/Mining.qml:474
+#: activities/mining/Mining.qml:482
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
 "close as you can from the sparkle."
 msgstr "اممم، أنت بعيد جدًّا عن قطعة الذّهب لتراها. بعّد وثمّ قرّب مجدّدًا."
 
-#: activities/mining/Mining.qml:482
+#: activities/mining/Mining.qml:490
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "الآن بعّد وجِد قطعة ذهب أخرى."
 
-#: activities/mining/Mining.qml:490
+#: activities/mining/Mining.qml:498
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "تابع التقريب حتّى ترى قطعة الذّهب."
 
-#: activities/mining/Mining.qml:498
+#: activities/mining/Mining.qml:506
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "الآن أنت ترى الذهب، تقدّم، تابع التقريب."

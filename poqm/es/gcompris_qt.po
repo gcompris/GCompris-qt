@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"PO-Revision-Date: 2025-03-17 02:26+0100\n"
+"PO-Revision-Date: 2025-03-19 14:25+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -10353,7 +10353,7 @@ msgstr "Porcentajes con una tarta."
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the pie."
-msgstr "Selecciona el %1% de la tarta."
+msgstr "Selecciona el %1 % de la tarta."
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
@@ -10370,7 +10370,7 @@ msgstr "Porcentajes con un cuadrado."
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
-msgstr "Selecciona el %1% del cuadrado."
+msgstr "Selecciona el %1 % del cuadrado."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -19337,7 +19337,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:336
+#: activities/memory/MemoryCommon.qml:356
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19347,12 +19347,12 @@ msgstr ""
 "incluso si las voces y los efectos de sonido están desactivados en la "
 "configuración principal."
 
-#: activities/memory/MemoryCommon.qml:337
+#: activities/memory/MemoryCommon.qml:357
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Salir"
 
-#: activities/memory/MemoryCommon.qml:338
+#: activities/memory/MemoryCommon.qml:358
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Continuar"
@@ -19885,7 +19885,7 @@ msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr "metalpaint.wav (remezclada y usada cuando se recoge una pepita de oro)"
 
-#: activities/mining/Mining.qml:434
+#: activities/mining/Mining.qml:442
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -19900,22 +19900,22 @@ msgstr ""
 "en el área de la derecha o dos dedos en el centro. En una pantalla táctil, "
 "arrastra dos dedos a partir del destello, uno en cada dirección."
 
-#: activities/mining/Mining.qml:450
+#: activities/mining/Mining.qml:458
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "¡Perfecto! Estás ampliando. Sigue hasta que encuentres la pepita."
 
-#: activities/mining/Mining.qml:458
+#: activities/mining/Mining.qml:466
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "¡Oh, cuidado! Estás ampliando demasiado lejos del destello."
 
-#: activities/mining/Mining.qml:466
+#: activities/mining/Mining.qml:474
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Ahora puedes ver la pepita. Pulsa en ella y cógela."
 
-#: activities/mining/Mining.qml:474
+#: activities/mining/Mining.qml:482
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -19924,17 +19924,17 @@ msgstr ""
 "¡Oh, estás muy lejos del destello para verlo! Deshaz la ampliación y vuelve "
 "a repetirla lo más cerca del destello que puedas."
 
-#: activities/mining/Mining.qml:482
+#: activities/mining/Mining.qml:490
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Ahora deshaz la ampliación e intenta encontrar otro destello."
 
-#: activities/mining/Mining.qml:490
+#: activities/mining/Mining.qml:498
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Sigue deshaciendo la ampliación hasta que veas el destello."
 
-#: activities/mining/Mining.qml:498
+#: activities/mining/Mining.qml:506
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Ahora ves el destello. Sigue adelante. Puedes ampliar en él."
@@ -20560,7 +20560,7 @@ msgid ""
 "100% to complete the level."
 msgstr ""
 "Identifica las notas, tócalas en el teclado del piano y consigue una "
-"puntuación del 100% para completar un nivel."
+"puntuación del 100 % para completar un nivel."
 
 #: activities/note_names/NoteNames.qml:176
 #, qt-format
@@ -20573,7 +20573,7 @@ msgstr "Nueva nota: %1"
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
-msgstr "%1%"
+msgstr "%1 %"
 
 #: activities/note_names/NoteNames.qml:444
 msgctxt "NoteNames|"
@@ -25110,8 +25110,8 @@ msgid ""
 "answer the questions until you get 100% in the closeness meter."
 msgstr ""
 "Pulsa sobre un planeta o sobre el Sol y responde a las preguntas. Cada "
-"pregunta contiene 4 opciones. Una de ellas será 100% correcta. Intenta "
-"responder a las preguntas hasta obtener el 100% en el medidor de "
+"pregunta contiene 4 opciones. Una de ellas será 100 % correcta. Intenta "
+"responder a las preguntas hasta obtener el 100 % en el medidor de "
 "aproximación."
 
 #: activities/solar_system/ActivityInfo.qml:29
@@ -26107,20 +26107,20 @@ msgstr ""
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
-msgstr "Precisión: %1%"
+msgstr "Precisión: %1 %"
 
 #: activities/solar_system/QuizScreen.qml:252
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
-msgstr "%1%"
+msgstr "%1 %"
 
 #: activities/solar_system/QuizScreen.qml:287
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr ""
-"La puntuación final es de: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
+"La puntuación final es de: <font color=\"#3bb0de\">%1 %</font>.<br><br>%2"
 
 #: activities/solar_system/QuizScreen.qml:287
 msgctxt "QuizScreen|"
@@ -26129,8 +26129,8 @@ msgid ""
 "your skills again or train in normal mode to learn more about the Solar "
 "System."
 msgstr ""
-"Es necesario que superes el 90% para convertirte en un experto en el Sistema "
-"Solar!<br>Vuelve a intentarlo para poner a prueba tus habilidades o "
+"Es necesario que superes el 90 % para convertirte en un experto en el "
+"Sistema Solar!<br>Vuelve a intentarlo para poner a prueba tus habilidades o "
 "entrénate en el modo normal para aprender más sobre el Sistema Solar."
 
 #: activities/solar_system/QuizScreen.qml:287
@@ -26188,8 +26188,8 @@ msgid ""
 msgstr ""
 "Tras pulsar en un planeta, el medidor de aproximación que hay en la esquina "
 "inferior derecha de la pantalla mostrará el grado de precisión de la "
-"respuesta seleccionada. La respuesta menos correcta se representará con un "
-"1%. Vuelve a intentarlo hasta que llegues a una aproximación del 100% "
+"respuesta seleccionada. La respuesta menos correcta se representará con un 1 "
+"%. Vuelve a intentarlo hasta que llegues a una aproximación del 100 % "
 "siguiendo el medidor de aproximación. Si está visible el botón «Pista», "
 "puedes pulsarlo para obtener una pista para encontrar la respuesta."
 
@@ -26222,7 +26222,7 @@ msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
 "expert!"
 msgstr ""
-"Es necesario que superes el 90% para aprobar la evaluación y convertirte en "
+"Es necesario que superes el 90 % para aprobar la evaluación y convertirte en "
 "un experto en el Sistema Solar."
 
 #: activities/solar_system/SolarSystem.qml:349
@@ -27923,7 +27923,7 @@ msgid ""
 "(92% translated), Russian (98% translated), Slovak (92% translated), Turkish."
 msgstr ""
 "Se han añadido traducciones para: catalán (de Valencia), chino tradicional, "
-"finés (92% traducido), ruso (98% traducido), eslovaco (92% traducido) y "
+"finés (92 % traducido), ruso (98 % traducido), eslovaco (92 % traducido) y "
 "turco."
 
 #: core/ChangeLog.qml:165

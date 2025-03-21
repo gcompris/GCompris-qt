@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2025-03-11 10:28+0100\n"
+"PO-Revision-Date: 2025-03-17 08:17+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -15812,12 +15812,9 @@ msgid "Division required."
 msgstr "Es requerix dividir."
 
 #: activities/guess24/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "Joc de memòria amb totes les operacions"
+msgstr "Es requerixen tots els operadors."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -19617,7 +19614,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:336
+#: activities/memory/MemoryCommon.qml:356
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19627,12 +19624,12 @@ msgstr ""
 "si les veus d'àudio o els efectes estan inhabilitats en la configuració "
 "principal."
 
-#: activities/memory/MemoryCommon.qml:337
+#: activities/memory/MemoryCommon.qml:357
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Ix"
 
-#: activities/memory/MemoryCommon.qml:338
+#: activities/memory/MemoryCommon.qml:358
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Continua"
@@ -20168,7 +20165,7 @@ msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr ""
 "metalpaint.wav: es remescla i utilitza quan s'arreplega una llavor d'or"
 
-#: activities/mining/Mining.qml:434
+#: activities/mining/Mining.qml:442
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -20183,22 +20180,22 @@ msgstr ""
 "arrossega un dit fins a la zona dreta o dos dits fins al centre. En una "
 "pantalla tàctil, arrossega dos dits des de l'espurna, un en cada direcció."
 
-#: activities/mining/Mining.qml:450
+#: activities/mining/Mining.qml:458
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Perfecte, acosta el zoom. Continua fins a veure la llavor."
 
-#: activities/mining/Mining.qml:458
+#: activities/mining/Mining.qml:466
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Hum! Ves amb compte, estàs acostant el zoom massa lluny de l'espurna."
 
-#: activities/mining/Mining.qml:466
+#: activities/mining/Mining.qml:474
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Ara veus la llavor, fes clic per a arreplegar-la."
 
-#: activities/mining/Mining.qml:474
+#: activities/mining/Mining.qml:482
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -20207,17 +20204,17 @@ msgstr ""
 "Hum! Et trobes massa lluny de la llavor per a veure-la. Allunya el zoom per "
 "a després acostar-lo de nou el més a prop que pugues de l'espurna."
 
-#: activities/mining/Mining.qml:482
+#: activities/mining/Mining.qml:490
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Ara allunya el zoom i mira de trobar una altra espurna."
 
-#: activities/mining/Mining.qml:490
+#: activities/mining/Mining.qml:498
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Continua allunyant el zoom fins que veges l'espurna."
 
-#: activities/mining/Mining.qml:498
+#: activities/mining/Mining.qml:506
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Ara que veus l'espurna, avant, t'hi pots acostar."
@@ -21477,7 +21474,7 @@ msgstr ""
 "Els jugadors fan torns per a moure les llavors. A cada torn, un jugador tria "
 "una de les sis cases davall el seu control. El jugador eliminarà totes les "
 "llavors d'esta casa i les distribuirà, en un procés anomenat sembrat, en "
-"cada casa en sentit antihorari. Les llavors no es distribuiran dins de les "
+"cada casa en sentit antihorari. Les llavors no es distribuiran dintre de les "
 "cases en la puntuació final, ni dins de la casa on s'extrauen. La casa "
 "inicial sempre es deixarà buida; si contenia 12 (o més) llavors, s'ometrà i "
 "la dotzena llavor es col·locarà en la casa següent."
