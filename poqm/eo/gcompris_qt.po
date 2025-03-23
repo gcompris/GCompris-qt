@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-05-22 10:49+0200\n"
-"PO-Revision-Date: 2025-03-15 10:38+0100\n"
+"PO-Revision-Date: 2025-03-22 22:36+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -15211,12 +15211,9 @@ msgid "Division required."
 msgstr "Postulas dividadon."
 
 #: activities/guess24/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "Ĉiuj operacioj memorludo"
+msgstr "Ĉiuj operatoroj bezonatas."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -27051,7 +27048,7 @@ msgstr ""
 #: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
 msgid "Add splash screen at startup"
-msgstr ""
+msgstr "Aldono de ŝprucekrano je starto"
 
 #: core/ChangeLog.qml:43
 msgctxt "ChangeLog|"
