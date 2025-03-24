@@ -710,7 +710,9 @@ ActivityBase {
         ErrorRectangle {
             id: errorRectangle
             z: 10
-            function releaseControls() { items.buttonsBlocked = false; }
+            function releaseControls() {
+                items.buttonsBlocked = false;
+            }
 
             states: [
                 State {
@@ -720,6 +722,9 @@ ActivityBase {
                         anchors.fill: topRectangle
                         radius: topRectangle.radius
                         imageSize: 60 * ApplicationInfo.ratio
+                            anchors.fill: topRectangle
+                            radius: topRectangle.radius
+                            imageSize: droppedItems.count === 0 ? 0 : 60 * ApplicationInfo.ratio
                     }
                 },
                 State {
@@ -738,6 +743,51 @@ ActivityBase {
                         anchors.fill: answerBackground
                         radius: answerBackground.radius
                         imageSize: height * 0.5
+                    }
+                }
+            ]
+        }
+
+        Image {
+            id: errorArrow
+            z: 20
+            source: "qrc:/gcompris/src/activities/learn_decimals/resource/redArrow.svg"
+            opacity: errorRectangle.opacity
+            visible: !isSubtractionMode && droppedItems.count === 0
+            width: GCStyle.bigButtonHeight
+            height: width
+            sourceSize.width: width
+            anchors.margins: unselectedBar.cellSize
+
+            states: [
+                State {
+                    when: activityBackground.horizontalLayout
+                    AnchorChanges {
+                        target: errorArrow
+                        anchors.left: undefined
+                        anchors.verticalCenter: undefined
+                        anchors.bottom: bottomRectangle.verticalCenter
+                        anchors.horizontalCenter: bottomRectangle.horizontalCenter
+                    }
+                    PropertyChanges {
+                        errorArrow {
+                            rotation: 0
+                        }
+                    }
+                },
+                State {
+                    when: !activityBackground.horizontalLayout
+                    AnchorChanges {
+                        target: errorArrow
+                        anchors.left: bottomRectangle.horizontalCenter
+                        anchors.verticalCenter: bottomRectangle.verticalCenter
+                        anchors.bottom: undefined
+                        anchors.horizontalCenter: undefined
+                    }
+                    PropertyChanges {
+                        errorArrow {
+                            rotation: 90
+                        }
                     }
                 }
             ]
