@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-07 00:38+0000\n"
-"PO-Revision-Date: 2024-05-22 21:25+0300\n"
+"PO-Revision-Date: 2025-03-22 16:47+0200\n"
 "Last-Translator: Rolandas Jakštys <rolandas@jakstys.lt>\n"
 "Language-Team: Lithuanian <kde-i18n-doc@kde.org>\n"
 "Language: lt\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.5\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
 #: activities/adjacent_numbers/ActivityInfo.qml:17
@@ -73,14 +73,14 @@ msgstr "Užbaik seką."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "align4"
 #: activities/align4/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid ""
-#| "Click on the column where you wish your token to fall and try to align of "
-#| "4 tokens before Tux."
+#, kde-format
 msgid ""
 "Click on the column where you wish your token to fall and try to align 4 "
 "tokens before Tux."
-msgstr "Sudėliok keturis žetonus į liniją ir laimėk prieš Tuksą."
+msgstr ""
+"Sudėliok keturis žetonus į liniją ir laimėk prieš Tuksą. Spustelėk stulpelį, "
+"į kurį nori numesti savo žetoną, ir pabandyk sudėti 4 žetonus anksčiau nei "
+"Tux."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "align4_2players"
 #: activities/align4_2players/ActivityInfo.qml:18
@@ -1166,7 +1166,7 @@ msgstr "Pasirink spalvą ir spalvindamas stačiakampius sukurk piešinį."
 #: activities/sketch/ActivityInfo.qml:21
 #, kde-format
 msgid "Use the tools to draw images."
-msgstr ""
+msgstr "Piešk eskizus."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers"
 #: activities/smallnumbers/ActivityInfo.qml:18
@@ -1301,7 +1301,7 @@ msgstr ""
 #: activities/vertical_addition/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given addition."
-msgstr ""
+msgstr "Sudėtis stulpeliu"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction_compensation"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction"
@@ -1309,7 +1309,7 @@ msgstr ""
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given subtraction."
-msgstr ""
+msgstr "Atimtis stulpeliu"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "watercycle"
 #: activities/watercycle/ActivityInfo.qml:18

@@ -8,15 +8,16 @@
 # Jurgis Pralgauskis <jurgis@ljms.lt>, 2007.
 # Aurimas Černius <aurisc4@gmail.com>, 2013, 2014.
 # Mantas Kriaučiūnas <tinklas@tinklas.eu>, 2001-2021.
-# Jonas Jakštys <jonasjakstys1@gmail.com>, 2021, 2023.
-# Rolandas Jakštys <rolasorama@gmail.com>, 2021-2024.
+# Jonas Jakštys <jonasjakstys1@gmail.com>, 2021, 2023, 2025.
+# Jokūbas Jakštys <rolasorama@gmail.com>, 2025.
+# Rolandas Jakštys <rolandas@jakstys.lt>, 2021-2025.
 # Bernardas Liukaitis <BernardasL@protonmail.com>, 2021-2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: GCompris-QT\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-02-02 11:01+0200\n"
+"PO-Revision-Date: 2025-02-08 20:09+0200\n"
 "Last-Translator: Rolandas Jakštys <rolandas@jakstys.lt>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
@@ -26419,7 +26420,7 @@ msgstr "Didžiausia reikšmė: 500000."
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calculate with ten's complement"
-msgstr "Skaičiuok su dešimties dėmenimis"
+msgstr "Skaičiuok sudarydamas dešimtį"
 
 #. Help title
 #: activities/tens_complement_calculate/ActivityInfo.qml:16
@@ -27677,8 +27678,8 @@ msgstr ""
 "Rolandas Jakštys<rolandas@jakstys.lt>, \n"
 "Jonas Jakštys<jonasjakstys1@gmail.com>, \n"
 "Bernardas Liukaitis <BernardasL@protonmail.com>\n"
-"<br><b>Įgarsino:</b> Jonas<jonasjakstys1@gmail.com>, Jokūbas ir Petras "
-"Jakščiai <rolandas@jakstys.lt>"
+"<br><b>Įgarsino:</b> Jonas<jonasjakstys1@gmail.com>, Jokūbas, Petras ir "
+"Mikalojus Jakščiai <rolandas@jakstys.lt>"
 
 #: core/DialogAbout.qml:55
 #, qt-format
