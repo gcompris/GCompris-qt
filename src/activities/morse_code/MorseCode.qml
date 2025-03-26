@@ -64,9 +64,9 @@ ActivityBase {
             property alias score: score
             property alias textInput: textInput
             readonly property var dataset: activity.datasets
-            property bool toAlpha: dataset[currentLevel].toAlpha
-            property bool audioMode: dataset[currentLevel].audioMode ? dataset[currentLevel].audioMode : false
-            property string questionText: dataset[currentLevel].question
+            property bool toAlpha: false
+            property bool audioMode: false
+            property string questionText: ""
             property string questionValue
             property int numberOfLevel: dataset.length
             property bool buttonsBlocked: false
@@ -91,6 +91,9 @@ ActivityBase {
 
             function initLevel() {
                 errorRectangle.resetState();
+                items.toAlpha = dataset[currentLevel].toAlpha;
+                items.audioMode = dataset[currentLevel].audioMode ? dataset[currentLevel].audioMode : false
+                items.questionText = dataset[currentLevel].question;
                 // Reset the values on the text fields
                 toAlphaChanged();
                 score.currentSubLevel = 0
