@@ -259,7 +259,7 @@ function initLevel() {
     numberOfSecondPieces = 0
     items.firstPieceNumberCount = numberOfPieces
     items.secondPieceNumberCount = numberOfPieces
-    items.instructionTxt = qsTr("Place a piece")
+    items.instructionTxt.text = qsTr("Place a piece")
     depthMax = 2
 
     // Clear first and second player pieces, and initialize dragPoints
@@ -385,7 +385,7 @@ function secondPhase() {
             items.dragPoints.itemAt(i).state = "EMPTY"
     }
 
-    items.instructionTxt = qsTr("Move a piece")
+    items.instructionTxt.text = qsTr("Move a piece")
 }
 
 function pieceSelected(pieceIndex) {
@@ -937,7 +937,7 @@ function updateRemovablePiece() {
                     otherRepeater.itemAt(i).canBeRemoved = true
             }
         }
-        items.instructionTxt = qsTr("Remove a piece")
+        items.instructionTxt.text = qsTr("Remove a piece")
     }
     else if(items.currentLevel < 4) {
         if(items.firstPhase)
@@ -1105,7 +1105,7 @@ function removePiece(index) {
     else
         numberOfSecondPieces --
     if(items.firstPhase) {
-        items.instructionTxt = qsTr("Place a piece")
+        items.instructionTxt.text = qsTr("Place a piece")
         continueGame()
     }
     else
@@ -1140,10 +1140,10 @@ function checkGameWon() {
         items.gameDone = true
         items.player1score.win();
         items.player2score.endTurn();
-        items.instructionTxt = qsTr("Congratulations")
+        items.instructionTxt.text = qsTr("Congratulations")
         items.bonus.good("flower")
         if(twoPlayer) {
-            items.instructionTxt = qsTr("Congratulations Player 1")
+            items.instructionTxt.text = qsTr("Congratulations Player 1")
         }
     }
     else if(((numberOfFirstPieces < 3 && !items.playSecond) || (numberOfSecondPieces < 3 && items.playSecond)) ||
@@ -1154,16 +1154,16 @@ function checkGameWon() {
         items.player1score.endTurn();
         if(twoPlayer) {
             items.bonus.good("flower")
-            items.instructionTxt = qsTr("Congratulations Player 2")
+            items.instructionTxt.text = qsTr("Congratulations Player 2")
         }
         else {
-            items.instructionTxt = qsTr("Try again")
+            items.instructionTxt.text = qsTr("Try again")
             items.bonus.bad("tux")
         }
     }
     else {
         // Continue the game
-        items.instructionTxt = qsTr("Move a piece")
+        items.instructionTxt.text = qsTr("Move a piece")
         continueGame()
     }
 }
