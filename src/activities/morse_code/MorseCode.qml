@@ -33,8 +33,11 @@ ActivityBase {
     pageComponent: Image {
         id: activityBackground
         source: "qrc:/gcompris/src/activities/braille_alphabets/resource/background.svg"
+        width: parent.width
+        height: parent.height
+        sourceSize.width: width
+        sourceSize.height: height
         fillMode: Image.PreserveAspectCrop
-        sourceSize.width: Math.max(parent.width, parent.height)
 
         signal start
         signal stop
@@ -51,8 +54,6 @@ ActivityBase {
             if (!ApplicationInfo.isMobile)
                 textInput.forceActiveFocus();
         }
-
-        property int layoutMargins: 10 * ApplicationInfo.ratio
 
         // Add here the QML items you need to access in javascript
         QtObject {
@@ -252,26 +253,26 @@ ActivityBase {
             anchors.top: activityBackground.top
             anchors.left: activityBackground.left
             anchors.right: activityBackground.right
-            anchors.margins: activityBackground.layoutMargins
-            color: "#f2f2f2"
-            radius: activityBackground.layoutMargins
-            height: questionLabel.height + 20 * ApplicationInfo.ratio
+            anchors.margins: GCStyle.baseMargins
+            color: GCStyle.lightBg
+            radius: GCStyle.baseMargins
+            height: questionLabel.height + 2 * GCStyle.baseMargins
             Rectangle {
-                anchors.centerIn: parent
-                width: parent.width - activityBackground.layoutMargins
-                height: parent.height - activityBackground.layoutMargins
-                color: "#f2f2f2"
-                radius: parent.radius
-                border.width: 3 * ApplicationInfo.ratio
-                border.color: "#9fb8e3"
+                anchors.fill: parent
+                anchors.margins: GCStyle.halfMargins
+                color: GCStyle.lightBg
+                radius: GCStyle.halfMargins
+                border.width: GCStyle.midBorder
+                border.color: GCStyle.blueBorder
                 GCText {
                     id: questionLabel
                     anchors.centerIn: parent
                     wrapMode: TextEdit.WordWrap
                     text: items.questionValue ? items.questionText.includes("%1") ? items.questionText.arg(items.questionValue) : items.questionText : ''
-                    color: "#373737"
-                    width: parent.width * 0.9
+                    color: GCStyle.darkText
+                    width: parent.width - GCStyle.baseMargins
                     horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
                 }
             }
         }
@@ -280,18 +281,18 @@ ActivityBase {
             id: inputArea
             anchors.top: questionArea.bottom
             anchors.left: activityBackground.left
-            anchors.margins: activityBackground.layoutMargins
-            color: "#f2f2f2"
-            radius: activityBackground.layoutMargins
-            width: questionArea.width * 0.5 - activityBackground.layoutMargins * 0.5
+            anchors.margins: GCStyle.baseMargins
+            color: GCStyle.lightBg
+            radius: GCStyle.halfMargins
+            width: questionArea.width * 0.5 - GCStyle.halfMargins
             height: textInput.height
-            border.width: 1 * ApplicationInfo.ratio
-            border.color: "#9fb8e3"
+            border.width: GCStyle.thinnestBorder
+            border.color: GCStyle.blueBorder
             TextInput {
                 id: textInput
-                x: parent.width / 2
+                x: parent.width * 0.5
                 width: parent.width
-                color: "#373737"
+                color: GCStyle.darkText
                 enabled: !firstScreen.visible && !items.buttonsBlocked
                 text: ''
                 // At best, 5 characters when looking for a letter (4 max + 1 space)
@@ -347,29 +348,29 @@ ActivityBase {
         Rectangle {
             id: feedbackArea
             anchors.top: questionArea.bottom
-            anchors.margins: activityBackground.layoutMargins
+            anchors.margins: GCStyle.baseMargins
             anchors.right: activityBackground.right
             width: inputArea.width
             height: inputArea.height
-            color: "#f2f2f2"
-            radius: activityBackground.layoutMargins
-            border.width: 1 * ApplicationInfo.ratio
-            border.color: "#9fb8e3"
+            color: GCStyle.lightBg
+            radius: GCStyle.halfMargins
+            border.width: GCStyle.thinnestBorder
+            border.color: GCStyle.blueBorder
 
             GCText {
                 id: feedback
-                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.centerIn: parent
                 text: items.toAlpha ?
                 qsTr("Morse value: %1").arg(value) :
                 qsTr("Alphabet/Numeric value: %1").arg(value)
-                color: "#373737"
+                color: GCStyle.darkText
                 property string value: items.toAlpha ?
                                            morseConverter.morse.replace(/\./g, items.middleDot).replace(items.regexSpaceReplace, ' ')
  :
                                            morseConverter.alpha
                 verticalAlignment: Text.AlignVCenter
-                width: parent.width * 0.9
-                height: parent.height * 0.9
+                width: parent.width - GCStyle.baseMargins * 2
+                height: parent.height - GCStyle.baseMargins
                 fontSizeMode: Text.Fit
                 minimumPointSize: 10
                 fontSize: mediumSize
@@ -379,7 +380,7 @@ ActivityBase {
         Item {
             id: layoutArea
             anchors.top: feedbackArea.bottom
-            anchors.topMargin: activityBackground.layoutMargins
+            anchors.topMargin: GCStyle.baseMargins
             anchors.left: inputArea.left
             anchors.right: feedbackArea.right
             anchors.bottom: bar.top
@@ -391,23 +392,23 @@ ActivityBase {
             visible: repeatItem.visible
             anchors.verticalCenter: layoutArea.verticalCenter
             anchors.right: repeatItem.left
-            anchors.rightMargin: activityBackground.layoutMargins
-            height: Math.min(70 * ApplicationInfo.ratio, layoutArea.height)
+            anchors.rightMargin: GCStyle.baseMargins
+            height: Math.min(GCStyle.bigButtonHeight, layoutArea.height)
             width: height
-            radius:activityBackground.layoutMargins
-            color: "#f2f2f2"
-            border.width: 1 * ApplicationInfo.ratio
-            border.color: "#9fb8e3"
+            radius:GCStyle.baseMargins
+            color: GCStyle.lightBg
+            border.width: GCStyle.thinnestBorder
+            border.color: GCStyle.blueBorder
             property var soundList: []
             property bool phraseRunning: false
 
             Rectangle {
                 id: ledContour
                 anchors.centerIn: parent
-                width: Math.min(parent.width, parent.height) * 0.9
+                width: parent.height * 0.9
                 height: width
                 radius: width * 0.5
-                color: "#373737"
+                color: GCStyle.darkBg
             }
             Image {
                 id: ledOff
@@ -422,7 +423,7 @@ ActivityBase {
                 id: ledOn
                 source: "qrc:/gcompris/src/activities/morse_code/resource/ledOn.svg"
                 anchors.centerIn: ledContour
-                width: ledContour.width * 0.9
+                width: ledOff.width
                 height: width
                 sourceSize.width: width
                 sourceSize.height: width
@@ -632,7 +633,7 @@ ActivityBase {
             anchors {
                 verticalCenter: layoutArea.verticalCenter
                 right: showMapButton.left
-                rightMargin: activityBackground.layoutMargins
+                rightMargin: GCStyle.baseMargins
             }
             mouseArea.enabled: ledContainer.phraseRunning == false
             mouseArea.hoverEnabled: ledContainer.phraseRunning == false
@@ -667,7 +668,7 @@ ActivityBase {
             visible: !firstScreen.visible
             anchors.right: score.left
             anchors.verticalCenter: layoutArea.verticalCenter
-            anchors.rightMargin: activityBackground.layoutMargins
+            anchors.rightMargin: GCStyle.baseMargins
             enabled: !items.buttonsBlocked
             width: ledContainer.height
             onClicked: items.check()
@@ -679,7 +680,7 @@ ActivityBase {
             visible: !firstScreen.visible
             anchors.right: okButton.left
             anchors.verticalCenter: layoutArea.verticalCenter
-            anchors.rightMargin: activityBackground.layoutMargins
+            anchors.rightMargin: GCStyle.baseMargins
             enabled: !items.buttonsBlocked
             width: ledContainer.height
             onClicked: {
