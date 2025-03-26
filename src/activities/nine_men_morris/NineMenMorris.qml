@@ -68,7 +68,7 @@ ActivityBase {
 
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
-            property alias instructionTxt: instruction.text
+            property alias instructionTxt: instructionPanel.textItem
             property alias tutorialSection: tutorialSection
         }
 
@@ -146,10 +146,10 @@ ActivityBase {
             height: player1score.height * 1.2
             visible: items.firstPhase
             opacity: 1.0
-            radius: 10
-            border.width: 2
-            border.color: "white"
-            color: "#373737"
+            radius: GCStyle.halfMargins
+            border.width: GCStyle.thinnestBorder
+            border.color: GCStyle.whiteBorder
+            color: GCStyle.darkBg
 
             Repeater {
                 id: firstPlayerPieces
@@ -161,8 +161,8 @@ ActivityBase {
                         id: firstPiece
                         state: "1"
                         firstPhase: items.firstPhase
-                        sourceSize.height: Math.min(firstInitial.height * 0.8, firstInitial.width * 0.4)
-                        x: firstInitial.width * 0.06
+                        width: firstPieceNumber.width
+                        x: GCStyle.halfMargins
                         anchors.verticalCenter: firstInitial.verticalCenter
                         chance: items.turn % 2
                         playSecond: items.playSecond
@@ -177,11 +177,15 @@ ActivityBase {
                 anchors {
                     verticalCenter: parent.verticalCenter
                     right: parent.right
-                    rightMargin: parent.width * 0.1
+                    rightMargin: GCStyle.halfMargins
                 }
+                width: (firstInitial.width - 2 * GCStyle.halfMargins) * 0.5
+                height: firstInitial.height - GCStyle.baseMargins
                 fontSize: mediumSize
-                color: "white"
+                fontSizeMode: Text.Fit
+                color: GCStyle.whiteText
                 horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
                 property int count: 9
                 text: "×%1".arg(count)
             }
@@ -202,10 +206,10 @@ ActivityBase {
             height: firstInitial.height
             visible: items.firstPhase
             opacity: 1.0
-            radius: 10
-            border.width: 2
-            border.color: "white"
-            color: "#373737"
+            radius: GCStyle.halfMargins
+            border.width: GCStyle.thinnestBorder
+            border.color: GCStyle.whiteBorder
+            color: GCStyle.darkBg
 
             Repeater {
                 id: secondPlayerPieces
@@ -217,8 +221,8 @@ ActivityBase {
                         id: secondPiece
                         state: "2"
                         firstPhase: items.firstPhase
-                        sourceSize.height: Math.min(secondInitial.height * 0.8, secondInitial.width * 0.4)
-                        x: secondInitial.width * 0.06
+                        width: firstPieceNumber.width
+                        x: GCStyle.halfMargins
                         anchors.verticalCenter: secondInitial.verticalCenter
                         chance: items.turn % 2
                         playSecond: items.playSecond
@@ -233,11 +237,15 @@ ActivityBase {
                 anchors {
                     verticalCenter: parent.verticalCenter
                     right: parent.right
-                    rightMargin: parent.width * 0.1
+                    rightMargin: GCStyle.halfMargins
                 }
+                width: firstPieceNumber.width
+                height: firstPieceNumber.height
                 fontSize: mediumSize
-                color: "white"
+                fontSizeMode: Text.Fit
+                color: GCStyle.whiteText
                 horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
                 property int count: 9
                 text: "×%1".arg(count)
             }
@@ -247,36 +255,14 @@ ActivityBase {
             id: secondPlayerPiecesModel
         }
 
-        // Instruction section starts
-        GCText {
-            id: instruction
-            anchors {
-                horizontalCenter: parent.horizontalCenter
-                top: parent.top
-                topMargin: 5
-            }
-            fontSizeMode: Text.Fit
-            minimumPixelSize: 10
-            color: "white"
-            horizontalAlignment: Text.AlignHCenter
-            width: implicitWidth
-            height: implicitHeight
-            z: 2
-        }
-
-        Rectangle {
-            id: instructionContainer
-            anchors.top: instruction.top
+        GCTextPanel {
+            id: instructionPanel
+            panelWidth: parent.width - 2.8 * player1score.width - 4 * GCStyle.halfMargins
+            panelHeight: player1score.height
             anchors.horizontalCenter: parent.horizontalCenter
-            width: instruction.width + 20
-            height: instruction.height + 2
-            opacity: 1.0
-            radius: 10
-            border.width: 2
-            border.color: "white"
-            color: "#373737"
+            anchors.top: parent.top
+            anchors.topMargin: GCStyle.halfMargins
         }
-        // Instruction section ends
 
         // Player scores section start
         ScoreItem {
@@ -286,9 +272,8 @@ ActivityBase {
             width: height * 11 / 8
             anchors {
                 top: activityBackground.top
-                topMargin: 5
                 right: activityBackground.right
-                rightMargin: 5
+                margins: GCStyle.halfMargins
             }
             playerImageSource: "qrc:/gcompris/src/core/resource/player_2.svg"
             backgroundImageSource: Activity.url + "score_1.svg"
@@ -306,9 +291,8 @@ ActivityBase {
             width: height * 11 / 8
             anchors {
                 top: activityBackground.top
-                topMargin: 5
                 left: activityBackground.left
-                leftMargin: 5
+                margins: GCStyle.halfMargins
             }
             playerImageSource: "qrc:/gcompris/src/core/resource/player_1.svg"
             backgroundImageSource: Activity.url + "score_2.svg"

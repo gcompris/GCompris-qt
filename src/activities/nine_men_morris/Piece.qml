@@ -28,8 +28,9 @@ Image {
     property bool pieceBeingMoved
     property int chance
     opacity: 1.0
+    height: width
+    sourceSize.width: width
     sourceSize.height: height
-    width: height
 
     ParallelAnimation {
         id: pieceAnimation
@@ -130,7 +131,7 @@ Image {
         piece.pieceParent = pieceChangeParent
         piece.parentIndex = pieceChangeParent.index
         piece.visualParent = items.piecesLayout.itemAt(piece.parentIndex)
-        piece.height = Qt.binding(function() { return pieceParent.width * 2.5 })
+        piece.width = Qt.binding(function() { return pieceParent.width * 2.5 })
         var coord = piece.parent.mapFromItem(pieceChangeParent.parent, pieceChangeParent.x + pieceChangeParent.width / 2 -
                     piece.width / 2, pieceChangeParent.y + pieceChangeParent.height / 2 - piece.height / 2)
         piece.moveX = coord.x
