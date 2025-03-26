@@ -87,16 +87,54 @@ ActivityBase {
             }
         }
 
+        Item {
+            id: layoutArea1 // used for horizontal layout
+            anchors.top: instructionPanel.bottom
+            anchors.left: player1score.right
+            anchors.right: player2score.left
+            anchors.bottom: parent.bottom
+            anchors.margins: player1score.width * 0.4
+            anchors.topMargin: 0
+            anchors.bottomMargin: bar.height * 1.3
+        }
+
+        Item {
+            id: layoutArea2 // used for vertical layout
+            anchors.top: firstInitial.bottom
+            anchors.left: player1score.left
+            anchors.right: player2score.right
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: bar.height * 1.3
+        }
+
         Image {
             id: board
             source: Activity.url + "board.svg"
-            sourceSize.width: Math.min(activityBackground.height - 1.4 * player1score.height - 1.2 * bar.height,
-                                       activityBackground.width - 2.2 * firstInitial.width)
-            anchors {
-                verticalCenter: parent.verticalCenter
-                horizontalCenter: parent.horizontalCenter
-                verticalCenterOffset : -0.25 * player1score.height
-            }
+            height: width
+            sourceSize.width: width
+
+            states: [
+                State {
+                    name: "horizontalLayout"
+                    when: layoutArea1.width >= layoutArea2.height
+                    PropertyChanges {
+                        board {
+                            width: Math.min(layoutArea1.width, layoutArea1.height) * 0.9
+                            anchors.centerIn: layoutArea1
+                        }
+                    }
+                },
+                State {
+                    name: "verticalLayout"
+                    when: layoutArea2.height > layoutArea1.width
+                    PropertyChanges {
+                        board {
+                            width: Math.min(layoutArea2.width, layoutArea2.height) * 0.9
+                            anchors.centerIn: layoutArea2
+                        }
+                    }
+                }
+            ]
 
             Repeater {
                 id: dragPoints
