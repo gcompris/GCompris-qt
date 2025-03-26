@@ -56,6 +56,7 @@ Rectangle {
         visible: labelsVisible
         GCText {
             anchors.fill: parent
+            anchors.margins: GCStyle.halfMargins
             text: keyName[1] != undefined ? keyName[1] : ""
             fontSizeMode: Text.Fit
             horizontalAlignment: Text.AlignHCenter

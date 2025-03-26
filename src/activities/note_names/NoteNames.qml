@@ -28,7 +28,7 @@ ActivityBase {
     pageComponent: Rectangle {
         id: activityBackground
         anchors.fill: parent
-        color: "#ABCDEF"
+        color: GCStyle.lightBlueBg
         signal start
         signal stop
 
@@ -150,14 +150,23 @@ ActivityBase {
             }
         }
 
-        Rectangle {
+        Item {
+            id: layoutArea
+            anchors.fill: parent
+            anchors.margins: GCStyle.baseMargins
+            anchors.bottomMargin: bar.height * 1.3
+        }
+
+        GCTextPanel {
             id: messageBox
-            width: label.width + 20
-            height: label.height + 20
-            border.width: 5
-            border.color: "black"
-            anchors.centerIn: multipleStaff
-            radius: 10
+            panelWidth: layoutArea.width - (shiftKeyboardLeft.width + GCStyle.baseMargins) * 2
+            panelHeight: shiftKeyboardLeft.height
+            color: GCStyle.lightBg
+            border.color: GCStyle.darkBorder
+            border.width: GCStyle.thinBorder
+            textItem.color: GCStyle.darkText
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.verticalCenter: shiftKeyboardLeft.verticalCenter
             z: 11
             visible: false
 
@@ -171,20 +180,11 @@ ActivityBase {
 
             onVisibleChanged: {
                 if(Activity.targetNotes[0] === undefined)
-                    text = ""
+                    textItem.text = ""
                 else if(items.isTutorialMode)
-                    text = qsTr("New note: %1").arg(getTranslatedNoteName(Activity.targetNotes[0]))
+                    textItem.text = qsTr("New note: %1").arg(getTranslatedNoteName(Activity.targetNotes[0]))
                 else
-                    text = getTranslatedNoteName(Activity.newNotesSequence[Activity.currentNoteIndex])
-            }
-
-            property string text
-
-            GCText {
-                id: label
-                anchors.centerIn: parent
-                fontSize: mediumSize
-                text: parent.text
+                    textItem.text = getTranslatedNoteName(Activity.newNotesSequence[Activity.currentNoteIndex])
             }
 
             MouseArea {
@@ -201,8 +201,7 @@ ActivityBase {
         Rectangle {
             id: colorLayer
             anchors.fill: parent
-            color: "black"
-            opacity: 0.3
+            color: GCStyle.grayedBg
             visible: iAmReady.visible
             z: 10
             MouseArea {
@@ -240,7 +239,7 @@ ActivityBase {
         GCProgressBar {
             id: progressBar
             height: 20 * ApplicationInfo.ratio
-            width: parent.width / 4
+            width: layoutArea.width * 0.25
 
             property int percentage: 0
 
@@ -248,10 +247,8 @@ ActivityBase {
             to: 100
             visible: !items.isTutorialMode
             anchors {
-                top: parent.top
-                topMargin: 10
-                right: parent.right
-                rightMargin: 10
+                top: layoutArea.top
+                right: layoutArea.right
             }
             //: The following translation represents percentage.
             message: qsTr("%1%").arg(value)
@@ -259,8 +256,8 @@ ActivityBase {
 
         MultipleStaff {
             id: multipleStaff
-            width: horizontalLayout ? parent.width * 0.5 : parent.width * 0.78
-            height: horizontalLayout ? parent.height * 0.9 : parent.height * 0.7
+            width: horizontalLayout ? layoutArea.width * 0.5 : layoutArea.width
+            height: horizontalLayout ? layoutArea.height * 0.9 : layoutArea.height * 0.7
             nbStaves: 1
             clef: clefType
             notesColor: "red"
@@ -281,11 +278,10 @@ ActivityBase {
         // We present a pair of two joint piano keyboard octaves.
         Item {
             id: doubleOctave
-            width: parent.width * 0.95
-            height: horizontalLayout ? parent.height * 0.22 : 2 * parent.height * 0.18
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.bottom: bar.top
-            anchors.bottomMargin: 30
+            height: horizontalLayout ? layoutArea.height * 0.3 : layoutArea.height * 0.4
+            anchors.left: layoutArea.left
+            anchors.right: layoutArea.right
+            anchors.bottom: layoutArea.bottom
 
             readonly property int nbJointKeyboards: 2
             readonly property int maxNbOctaves: 3
@@ -299,19 +295,20 @@ ActivityBase {
                 model: doubleOctave.nbJointKeyboards
                 PianoOctaveKeyboard {
                     id: pianoKeyboard
-                    width: horizontalLayout ? octaveRepeater.width / 2 : octaveRepeater.width
-                    height: horizontalLayout ? octaveRepeater.height : octaveRepeater.height / 2
+                    width: horizontalLayout ? octaveRepeater.width * 0.5 : octaveRepeater.width
+                    height: horizontalLayout ? octaveRepeater.height :
+                        octaveRepeater.height * 0.5 - GCStyle.halfMargins
                     blackLabelsVisible: false
                     blackKeysEnabled: blackLabelsVisible
                     whiteKeysEnabled: !messageBox.visible && multipleStaff.musicElementModel.count > 1
                     onNoteClicked: (note) => Activity.checkAnswer(note)
                     currentOctaveNb: doubleOctave.currentOctaveNb
                     anchors.top: (index === 1) ? octaveRepeater.top : undefined
-                    anchors.topMargin: horizontalLayout ? 0 : -15
+                    anchors.topMargin: horizontalLayout ? 0 : GCStyle.halfMargins
                     anchors.bottom: (index === 0) ? octaveRepeater.bottom : undefined
                     anchors.right: (index === 1) ? octaveRepeater.right : undefined
                     coloredKeyLabels: doubleOctave.coloredKeyLabels
-                    labelsColor: "red"
+                    labelsColor: "#ff6666"
                     // The octaves sets corresponding to respective clef types are in pairs for the joint piano keyboards at a time when displaying.
                     whiteKeyNoteLabelsBass: {
                         if(index === 0) {
@@ -354,17 +351,15 @@ ActivityBase {
         Image {
             id: shiftKeyboardLeft
             source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
-            sourceSize.width: horizontalLayout ? doubleOctave.width / 13 : doubleOctave.width / 6
-            width: sourceSize.width
+            width: Math.min(layoutArea.height * 0.2, GCStyle.bigButtonHeight)
             height: width
+            sourceSize.height : height
             fillMode: Image.PreserveAspectFit
             visible: (doubleOctave.currentOctaveNb > 0) && doubleOctave.visible
             z: 11
             anchors {
                 bottom: doubleOctave.top
-                left: doubleOctave.left
-                leftMargin: -37
-                bottomMargin: horizontalLayout ? 10 : 25
+                left: layoutArea.left
             }
             MouseArea {
                 enabled: !messageBox.visible
@@ -378,17 +373,15 @@ ActivityBase {
         Image {
             id: shiftKeyboardRight
             source: "qrc:/gcompris/src/core/resource/bar_next.svg"
-            sourceSize.width: horizontalLayout ? doubleOctave.width / 13 : doubleOctave.width / 6
-            width: sourceSize.width
+            width: shiftKeyboardLeft.width
             height: width
+            sourceSize.height : height
             fillMode: Image.PreserveAspectFit
             visible: (doubleOctave.currentOctaveNb < doubleOctave.maxNbOctaves - 1) && doubleOctave.visible
             z: 11
             anchors {
                 bottom: doubleOctave.top
-                right: doubleOctave.right
-                rightMargin: -37
-                bottomMargin: horizontalLayout ? 10 : 25
+                right: layoutArea.right
             }
             MouseArea {
                 enabled: !messageBox.visible
@@ -397,12 +390,6 @@ ActivityBase {
                     doubleOctave.currentOctaveNb++
                 }
             }
-        }
-
-        OptionsRow {
-            id: optionsRow
-            iconsWidth: 0
-            visible: false
         }
 
         DialogHelp {
