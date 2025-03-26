@@ -81,7 +81,7 @@ Image {
             name: "1" // Player 1
             PropertyChanges {
                 piece {
-                    source: playSecond ? Activity.url + "black_piece.svg" : Activity.url + "white_piece.svg"
+                    source: Activity.url + "white_piece.svg"
                 }
             }
         },
@@ -89,7 +89,7 @@ Image {
             name: "2" // Player 2
             PropertyChanges {
                 piece {
-                    source: playSecond ? Activity.url + "white_piece.svg" : Activity.url + "black_piece.svg"
+                    source: Activity.url + "black_piece.svg"
                 }
             }
         }

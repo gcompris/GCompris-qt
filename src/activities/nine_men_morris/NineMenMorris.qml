@@ -62,7 +62,7 @@ ActivityBase {
 
             property bool gameDone
             property int turn
-            property bool playSecond
+            property bool playSecond: false
             property bool firstPhase
             property bool pieceBeingMoved
 
@@ -278,7 +278,7 @@ ActivityBase {
             playerImageSource: "qrc:/gcompris/src/core/resource/player_2.svg"
             backgroundImageSource: Activity.url + "score_1.svg"
             playerScaleOriginX: player2score.width
-            playerItem.source: Activity.url + "black_piece.svg"
+            playerItem.source: items.playSecond ? Activity.url + "white_piece.svg" : Activity.url + "black_piece.svg"
             playerItem.height: playerItem.parent.height * 0.35
             playerItem.anchors.leftMargin: playerItem.parent.height * 0.10
             playerItem.anchors.bottomMargin: playerItem.parent.height * 0.10
@@ -296,7 +296,7 @@ ActivityBase {
             }
             playerImageSource: "qrc:/gcompris/src/core/resource/player_1.svg"
             backgroundImageSource: Activity.url + "score_2.svg"
-            playerItem.source: Activity.url + "white_piece.svg"
+            playerItem.source: items.playSecond ? Activity.url + "black_piece.svg" : Activity.url + "white_piece.svg"
             playerItem.height: playerItem.parent.height * 0.35
             playerItem.anchors.leftMargin: playerItem.parent.height * 0.15
             playerItem.anchors.bottomMargin: playerItem.parent.height * 0.10
