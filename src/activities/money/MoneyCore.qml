@@ -88,14 +88,29 @@ ActivityBase {
 
         Column {
             id: columnLayout
-            spacing: 10
-            x: parent.width * 0.05
-            y: parent.height * 0.05
-            width: parent.width * 0.9
+            spacing: GCStyle.halfMargins
+            anchors.fill: parent
+            anchors.margins: GCStyle.baseMargins
+            anchors.bottomMargin: bar.height * 1.5
+
+            property int nbStoreColumns: tux.visible ? store.model.length + 1 : store.model.length
+            property real storeHeight: instructionsArea.visible ?
+                (columnLayout.height - 3 * columnLayout.spacing) / 3.5 :
+                (columnLayout.height - 2 * columnLayout.spacing) / 3
+            property int storeItemSize: Math.floor(
+                Core.fitItems(storeArea.width - GCStyle.halfMargins,
+                storeHeight - GCStyle.halfMargins, nbStoreColumns) - GCStyle.halfMargins)
+
+            property int itemSize: Math.floor(
+                Math.min(Core.fitItems(columnLayout.width - GCStyle.halfMargins,
+                    storeHeight - GCStyle.halfMargins, items.moneyCount) - GCStyle.halfMargins,
+                    (storeHeight - GCStyle.halfMargins) * 0.5 - GCStyle.halfMargins))
 
             // === The Answer Area ===
             MoneyArea {
                 id: answerArea
+                height: columnLayout.storeHeight
+                itemSize: columnLayout.itemSize
                 onTransaction: (index) => {
                     Activity.unpay(index)
                 }
@@ -103,43 +118,33 @@ ActivityBase {
                 ErrorRectangle {
                     id: errorRectangle
                     anchors.fill: parent
-                    radius: 5
+                    radius: GCStyle.halfMargins
                     imageSize: parent.height * 0.5
                     function releaseControls() { items.buttonsBlocked = false; }
                 }
             }
 
             // === The Store Area ===
-            property int nbStoreColumns: activity.dataset === "BACK_WITHOUT_CENTS" ||
-                                         activity.dataset === "BACK_WITH_CENTS" ? store.model.length + 1 : store.model.length
-            //tempSpace is a workaround to replace instructionsArea.realHeight that is freezing with Qt-5.9.1
-            property int tempSpace: bar.level === 1 ? 140 + columnLayout.spacing : 50
-            property int storeHeight: Math.min(1000, ((parent.height * 0.95 - columnLayout.spacing * 3 - bar.height * 1.5) - tempSpace) / 3)
-            property int itemStoreSize: Core.fitItems(columnLayout.width - 20, storeHeight - 20 , nbStoreColumns) - 20
-
-            property int itemSize: Math.min(Core.fitItems(columnLayout.width - 10, storeHeight - 10, items.moneyCount) - 5, storeHeight * 0.5)
-
             Rectangle {
                 id: storeArea
                 height: columnLayout.storeHeight
-                width: columnLayout.width
+                width: okButton.visible ? columnLayout.width - okButton.width - GCStyle.halfMargins :
+                        columnLayout.width
                 color: "#55333333"
-                border.color: "black"
-                border.width: 2
-                radius: 5
+                border.color: GCStyle.darkerBorder
+                border.width: GCStyle.thinnestBorder
+                radius: GCStyle.halfMargins
+
                 Flow {
                     id: storeAreaFlow
-                    anchors.topMargin: 10
-                    anchors.bottomMargin: 10
-                    anchors.leftMargin: 10
-                    anchors.rightMargin: 10
                     anchors.fill: parent
-                    spacing: 20
+                    anchors.margins: GCStyle.halfMargins
+                    spacing: GCStyle.halfMargins
 
                     add: Transition {
                         NumberAnimation {
                             properties: "x"
-                            from: parent.width * 0.05
+                            from: 0
                             duration: 300
                         }
                     }
@@ -149,16 +154,16 @@ ActivityBase {
                         visible: activity.dataset === "BACK_WITHOUT_CENTS" ||
                                  activity.dataset === "BACK_WITH_CENTS"
                         source: "qrc:/gcompris/src/activities/mosaic/resource/tux.svg"
-                        sourceSize.height: columnLayout.itemStoreSize
-                        sourceSize.width: columnLayout.itemStoreSize
+                        sourceSize.height: columnLayout.storeItemSize
+                        sourceSize.width: columnLayout.storeItemSize
 
                         Repeater {
                             id: tuxMoney
                             Image {
                                 source: modelData.img
-                                sourceSize.height: columnLayout.itemStoreSize * 0.3
-                                x: tux.x + index * 50
-                                y: tux.y + tux.height / 2 + index * 20
+                                sourceSize.height: columnLayout.storeItemSize * 0.3
+                                x: tux.x + index * sourceSize.height
+                                y: tux.y + (tux.height + index * sourceSize.height) * 0.5
                             }
                         }
                     }
@@ -167,48 +172,53 @@ ActivityBase {
                         id: store
                         Image {
                             source: modelData.img
-                            sourceSize.height: columnLayout.itemStoreSize
-                            sourceSize.width: columnLayout.itemStoreSize
+                            sourceSize.height: columnLayout.storeItemSize
+                            sourceSize.width: columnLayout.storeItemSize
                             GCText {
                                 text: modelData.price
-                                height: parent.height
-                                width: parent.width
+                                anchors.fill: parent
                                 fontSizeMode: Text.Fit
                                 font.weight: Font.DemiBold
                                 style: Text.Outline
-                                styleColor: "black"
-                                color: "white"
-                                anchors.horizontalCenter: parent.horizontalCenter
-                                anchors.top: parent.top
-                                anchors.topMargin: index % 2 == 0 ?  0 : parent.height - height
+                                styleColor: GCStyle.darkerBorder
+                                color: GCStyle.whiteText
                             }
                         }
                     }
+                }
+
+                BarButton {
+                    id: okButton
+                    enabled: items.mode === 2 && !items.buttonsBlocked
+                    visible: items.mode === 2
+                    anchors {
+                        left: parent.right
+                        verticalCenter: parent.verticalCenter
+                        leftMargin: GCStyle.halfMargins
+                    }
+                    source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+                    width: Math.min(GCStyle.bigButtonHeight, parent.height)
+                    onClicked: Activity.checkAnswer()
                 }
             }
 
             // == The instructions Area ==
             Rectangle {
                 id: instructionsArea
-                height: instructions.height
+                height: columnLayout.storeHeight * 0.5
                 width: columnLayout.width
-                color: "#55333333"
-                border.color: "black"
-                border.width: 2
-                radius: 5
-                anchors.topMargin: 4
-                anchors.bottomMargin: 4
-                anchors.leftMargin: 10
-                anchors.rightMargin: 10
+                color: "#55ffffff"
+                border.color: GCStyle.darkerBorder
+                border.width: GCStyle.thinnestBorder
+                radius: GCStyle.halfMargins
                 visible: bar.level === 1
-
-                property int realHeight: bar.level === 1 ? height + columnLayout.spacing : 0
 
                 GCText {
                     id: instructions
                     horizontalAlignment: Text.AlignHCenter
-                    width: columnLayout.width
-                    height: columnLayout.height / 6
+                    verticalAlignment: Text.AlignVCenter
+                    anchors.fill: parent
+                    anchors.margins: GCStyle.baseMargins
                     wrapMode: Text.WordWrap
                     fontSizeMode: Text.Fit
                 }
@@ -217,6 +227,8 @@ ActivityBase {
             // === The Pocket Area ===
             MoneyArea {
                 id: pocketArea
+                height: columnLayout.storeHeight
+                itemSize: columnLayout.itemSize
                 onTransaction: (index) => Activity.pay(index)
             }
         }
@@ -308,21 +320,6 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-        }
-
-        BarButton {
-            id: okButton
-            enabled: items.mode === 2 && !items.buttonsBlocked
-            visible: items.mode === 2
-            anchors {
-                bottom: bar.top
-                right: parent.right
-                rightMargin: 45 * ApplicationInfo.ratio
-                bottomMargin: 10 * ApplicationInfo.ratio
-            }
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: (activityBackground.height - bar.height * 1.2) * 0.15
-            onClicked: Activity.checkAnswer()
         }
 
         Bonus {

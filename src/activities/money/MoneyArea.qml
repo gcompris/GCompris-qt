@@ -8,33 +8,30 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-
+import "../../core"
 
 Rectangle {
     id: moneyAreaBody
-    height: columnLayout.storeHeight
-    width: columnLayout.width
+    width: parent.width
     color: "#55333333"
-    border.color: "black"
-    border.width: 2
-    radius: 5
+    border.color: GCStyle.darkerBorder
+    border.width: GCStyle.thinnestBorder
+    radius: GCStyle.halfMargins
 
     property alias pocketModel: pocketModel
     property alias answer: pocket
+    required property int itemSize
     signal transaction(int index)
 
     Flow {
-        anchors.topMargin: 5
-        anchors.bottomMargin: 5
-        anchors.leftMargin: 5
-        anchors.rightMargin: 5
         anchors.fill: parent
-        spacing: 5
+        anchors.margins: GCStyle.halfMargins
+        spacing: GCStyle.halfMargins
 
         add: Transition {
             NumberAnimation {
                 properties: "x"
-                from: parent.width * 0.05
+                from: 0
                 easing.type: Easing.InOutQuad
             }
         }
@@ -51,9 +48,8 @@ Rectangle {
             model: ListModel { id: pocketModel }
             Image {
                 source: img
-                height: columnLayout.itemSize
-                width: columnLayout.itemSize
-                sourceSize.height: height
+                height: moneyAreaBody.itemSize
+                width: moneyAreaBody.itemSize
                 sourceSize.width: width
                 fillMode: Image.PreserveAspectFit
 
@@ -66,11 +62,12 @@ Rectangle {
                 }
 
                 Rectangle {
-                    width: parent.width * 1.1
-                    height: parent.height * 1.1
-                    color: "#88111111"
+                    width: parent.width + GCStyle.halfMargins
+                    height: width
+                    color: GCStyle.whiteBg
+                    opacity: 0.5
                     anchors.centerIn : parent
-                    radius: 5
+                    radius: GCStyle.halfMargins
                     visible: selected
                     z: -1
                 }
