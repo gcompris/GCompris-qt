@@ -27,9 +27,12 @@ Image {
         fontSizeMode: Text.Fit
         horizontalAlignment: Text.AlignHCenter
         font.weight: Font.DemiBold
-        color: "#2a2a2a"
+        anchors.top: parent.top
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.topMargin: GCStyle.baseMargins
+        color: GCStyle.darkerText
         width: parent.width
-        height: parent.height * 0.10
+        height: (parent.height - bar.height - 4 * GCStyle.baseMargins) * 0.1
         wrapMode: Text.WordWrap
     }
 
@@ -40,7 +43,7 @@ Image {
         fillMode: Image.PreserveAspectFit
         anchors {
             left: parent.left
-            leftMargin: 5 * ApplicationInfo.ratio
+            leftMargin: GCStyle.baseMargins
             verticalCenter: bodyText.verticalCenter
         }
         Behavior on scale { PropertyAnimation { duration: 100 } }
@@ -59,7 +62,6 @@ Image {
 
     GCText {
         id: bodyText
-        z: 1
         text: qsTr('Morse code was developed by Samuel Morse. It is a method of transmitting text information as a series of on-off tones, lights, or clicks.') + "\n" +
               qsTr('Each Morse code symbol represents either a text character (letter or numeral) or a prosign and is represented by a unique sequence of dots and dashes. ' +
                    'The duration of a dash is three times the duration of a dot.' +
@@ -71,73 +73,74 @@ Image {
         horizontalAlignment: Text.AlignJustify
         anchors {
             top: heading.bottom
-            topMargin: 5 * ApplicationInfo.ratio
             right: parent.right
-            rightMargin: 5 * ApplicationInfo.ratio
             left: introChar.right
-            leftMargin: 5 * ApplicationInfo.ratio
+            margins: GCStyle.baseMargins
         }
-        color: "#2a2a2a"
-        width: parent.width - introChar.width - 15 * ApplicationInfo.ratio
-        height: parent.height * 0.4
+        color: GCStyle.darkerText
+        height: heading.height * 4
         wrapMode: Text.WordWrap
     }
 
     GCText {
         id: bottomText
-        z: 2
         text: qsTr("When you are ready, click on Tux and we will converse in Morse code.")
         fontSize: regularSize
         fontSizeMode: Text.Fit
         font.weight: Font.Bold
         horizontalAlignment: Text.AlignRight
-        color: "#2a2a2a"
+        verticalAlignment: Text.AlignVCenter
+        color: GCStyle.darkerText
         wrapMode:  Text.WordWrap
         anchors {
             top: bodyText.bottom
-            topMargin: 10 * ApplicationInfo.ratio
             left: parent.left
-            leftMargin: 10 * ApplicationInfo.ratio
+            margins: GCStyle.baseMargins
         }
-        height: parent.height * 0.25
-        width: parent.width * 0.5
+        height: heading.height * 4
+        width: (parent.width * 0.5) - GCStyle.baseMargins
     }
 
-    Image {
-        id: introTux
-        z: 3
-        source: "qrc:/gcompris/src/activities/braille_alphabets/resource/tux_braille.svg"
-        fillMode: Image.PreserveAspectFit
-        sourceSize.width: Math.min(parent.width * 0.2, parent.height * 0.2)
-        anchors.centerIn: bgTux
-        Behavior on scale { PropertyAnimation { duration: 100 } }
-
-        MouseArea {
-            id: tux_click
-            anchors.fill: parent
-            hoverEnabled: true
-            onClicked: {
-                firstScreen.visible = false
-                keyboard.populateMorse()
-                textInput.text = ''
-            }
-            onEntered: introTux.scale = 1.1
-            onExited: introTux.scale = 1
-        }
-    }
-
-    Rectangle {
-        id: bgTux
-        z: 0
-        color: "#94c1d2"
-        width: introTux.width * 1.5
-        height: introTux.height * 1.1
-        radius: bgTux.width * 0.5
+    Item {
+        id: tuxArea
         anchors {
-            top: bodyText.bottom
-            topMargin: 10 * ApplicationInfo.ratio
             left: bottomText.right
-            leftMargin: 10 * ApplicationInfo.ratio
+            right: parent.right
+            top: bodyText.bottom
+            bottom: parent.bottom
+            margins: GCStyle.baseMargins
+            bottomMargin: bar.height + GCStyle.baseMargins * 3
+        }
+
+        Rectangle {
+            id: bgTux
+            color: "#94c1d2"
+            height: Math.min(parent.width, parent.height)
+            width: height
+            radius: height * 0.5
+            anchors.left: parent.left
+            anchors.verticalCenter: parent.verticalCenter
+            MouseArea {
+                id: tux_click
+                anchors.fill: parent
+                hoverEnabled: true
+                onClicked: {
+                    firstScreen.visible  = false
+                    keyboard.populateMorse()
+                    textInput.text = ''
+                }
+                onEntered: introTux.scale = 1.1
+                onExited: introTux.scale = 1
+            }
+        }
+
+        Image {
+            id: introTux
+            source: "qrc:/gcompris/src/activities/braille_alphabets/resource/tux_braille.svg"
+            fillMode: Image.PreserveAspectFit
+            sourceSize.height: bgTux.height * 0.8
+            anchors.centerIn: bgTux
+            Behavior on scale { PropertyAnimation { duration: 100 } }
         }
     }
 }

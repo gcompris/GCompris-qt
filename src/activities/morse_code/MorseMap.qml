@@ -14,9 +14,7 @@ import "../../core"
 
 Rectangle {
     id: morseMap
-    color: "#808080"
-    border.color: "black"
-    border.width: 1
+    color: GCStyle.midGrayBg
     z: 1000
     property bool isDialog: true
     signal close
@@ -47,8 +45,8 @@ Rectangle {
         anchors.right: parent.right
         anchors.top: parent.top
         smooth: true
-        sourceSize.width: 60 * ApplicationInfo.ratio
-        anchors.margins: 10
+        sourceSize.width: GCStyle.bigButtonHeight
+        anchors.margins: GCStyle.baseMargins
         SequentialAnimation {
             id: anim
             running: true
@@ -78,24 +76,20 @@ Rectangle {
         id: flick
         anchors.top: cancel.bottom
         anchors.bottom: parent.bottom
-        anchors.left: parent.left
-        anchors.right: parent.right
-        contentWidth: parent.width
-        contentHeight: (grid.height + grid2.height) * 1.1
+        anchors.margins: GCStyle.baseMargins
+        anchors.horizontalCenter: parent.horizontalCenter
+        width: parent.width * 0.9
+        contentWidth: width
+        contentHeight: (grid1.height + grid2.height) * 1.1
         flickableDirection: Flickable.VerticalFlick
         maximumFlickVelocity: morseMap.height
         boundsBehavior: Flickable.StopAtBounds
         clip: true
 
         Flow {
-            id: grid
-            width: parent.width * 0.9
-            anchors {
-                top: parent.top
-                topMargin: 10 * ApplicationInfo.ratio
-                horizontalCenter: parent.horizontalCenter
-            }
-            spacing: 5 * ApplicationInfo.ratio
+            id: grid1
+            width: parent.width
+            spacing: GCStyle.halfMargins
 
             Repeater {
                 id: cardRepeater
@@ -106,22 +100,20 @@ Rectangle {
                 ]
 
                 Column {
-                    width: 50 * ApplicationInfo.ratio
+                    width: Math.max(50 * ApplicationInfo.ratio, grid1.width * 0.1 - grid1.spacing)
 
                     Rectangle {
-                        id: rect
+                        id: rect1
                         width: parent.width
                         height: width * 0.6
-                        border.width: 3
-                        border.color: "black"
-                        color: "white"
+                        border.width: GCStyle.thinnestBorder
+                        border.color: GCStyle.darkBorder
+                        color: GCStyle.lightBg
 
                         GCText {
                             id: ins
                             text: morseConverter.alpha2morse(modelData).replace(/\./g, items.middleDot)
-                            style: Text.Outline
-                            styleColor: "white"
-                            color: "black"
+                            color: GCStyle.darkText
                             fontSize: regularSize
                             fontSizeMode: Text.Fit
                             horizontalAlignment: Text.AlignHCenter
@@ -134,12 +126,16 @@ Rectangle {
                     GCText {
                         id: text
                         text: modelData
+                        width: parent.width
+                        height: rect1.height
+                        fontSize: largeSize
+                        fontSizeMode: Text.Fit
                         font.weight: Font.DemiBold
                         style: Text.Outline
-                        styleColor: "black"
-                        color: "white"
-                        fontSize: Math.max(Math.min(parent.width * 0.2, 24), 12)
-                        anchors.horizontalCenter: rect.horizontalCenter
+                        styleColor: GCStyle.darkText
+                        color: GCStyle.whiteText
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignTop
                     }
                 }
             }
@@ -147,13 +143,12 @@ Rectangle {
 
         Flow {
             id: grid2
-            width: parent.width * 0.9
+            width: parent.width
             anchors {
-                top: grid.bottom
-                topMargin: 10 * ApplicationInfo.ratio
-                horizontalCenter: parent.horizontalCenter
+                top: grid1.bottom
+                topMargin: GCStyle.halfMargins
             }
-            spacing: 5 * ApplicationInfo.ratio
+            spacing: GCStyle.halfMargins
 
             Repeater {
                 id: cardRepeater2
@@ -162,22 +157,20 @@ Rectangle {
                 ]
 
                 Column {
-                    width: 50 * ApplicationInfo.ratio
+                    width: Math.max(50 * ApplicationInfo.ratio, grid1.width * 0.1 - grid1.spacing)
 
                     Rectangle {
                         id: rect2
                         width: parent.width
                         height: width * 0.6
-                        border.width: 3
-                        border.color: "black"
-                        color: "white"
+                        border.width: GCStyle.thinnestBorder
+                        border.color: GCStyle.darkBorder
+                        color: GCStyle.lightBg
 
                         GCText {
                             id: ins2
                             text: morseConverter.alpha2morse(modelData).replace(/\./g, items.middleDot)
-                            style: Text.Outline
-                            styleColor: "white"
-                            color: "black"
+                            color: GCStyle.darkText
                             fontSize: regularSize
                             fontSizeMode: Text.Fit
                             horizontalAlignment: Text.AlignHCenter
@@ -190,12 +183,16 @@ Rectangle {
                     GCText {
                         id: text2
                         text: modelData
+                        width: parent.width
+                        height: rect2.height
+                        fontSize: largeSize
+                        fontSizeMode: Text.Fit
                         font.weight: Font.DemiBold
                         style: Text.Outline
-                        styleColor: "black"
-                        color: "white"
-                        fontSize: Math.max(Math.min(parent.width * 0.2, 24), 12)
-                        anchors.horizontalCenter: rect2.horizontalCenter
+                        styleColor: GCStyle.darkText
+                        color: GCStyle.whiteText
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignTop
                     }
                 }
             }
