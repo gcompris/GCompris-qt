@@ -116,84 +116,72 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/sounds/scroll.wav"
         }
 
-        Rectangle {
+        Item {
             id: mainArea
-            anchors.top: activityBackground.top
-            anchors.bottom: bar.top
-            anchors.left: activityBackground.left
-            anchors.right: activityBackground.right
-            color: "#00FFFFFF"
+            anchors.fill: parent
+            anchors.margins: GCStyle.baseMargins
+            anchors.bottomMargin: bar.height * 1.3
 
             property int nbItems: 24
-            property bool horizontal: activityBackground.width >= activityBackground.height
+            property bool horizontal: mainArea.width >= mainArea.height
             property bool smallQuestionMode: items.modelDisplayLayout === "smaller"
             property int nbColumns: items.questionLayoutColumns
             property int nbLines: items.questionLayoutRows
-            property int layoutMargin: Math.floor(10 * ApplicationInfo.ratio)
-            property int itemsMargin: Math.floor(5 * ApplicationInfo.ratio)
 
             states: [
                 State {
                     name: "horizontal"
                     when: mainArea.horizontal
-                    AnchorChanges {
-                        target: questionRectangle
-                        anchors.top: parent.top
-                        anchors.left: parent.left
-                        anchors.horizontalCenter: undefined
-                    }
                     PropertyChanges {
                         answerRectangle {
-                            height: mainArea.height * 0.66 - mainArea.layoutMargin * 2
-                            width: mainArea.width * 0.5  - mainArea.layoutMargin * 1.5
+                            height: (mainArea.height - GCStyle.baseMargins) * 0.66
+                            width: (mainArea.width - GCStyle.baseMargins) * 0.5
+                            anchors.topMargin: 0
+                        }
+                        selectorRectangle {
+                            height: (mainArea.height - GCStyle.baseMargins) * 0.33
                         }
                     }
                     AnchorChanges {
                         target: answerRectangle
                         anchors.top: parent.top
-                        anchors.left: questionRectangle.right
                     }
                 },
                 State {
                     name: "vertical"
                     when: !mainArea.horizontal
-                    AnchorChanges {
-                        target: questionRectangle
-                        anchors.top: parent.top
-                        anchors.left: parent.left
-                        anchors.horizontalCenter: undefined
-                    }
                     PropertyChanges {
                         answerRectangle {
-                            height: mainArea.height / 3 - mainArea.layoutMargin * 2
-                            width: mainArea.width - mainArea.layoutMargin * 2
+                            height: (mainArea.height - GCStyle.baseMargins * 2) / 3
+                            width: mainArea.width
+                            anchors.topMargin: GCStyle.baseMargins
+                        }
+                        selectorRectangle {
+                            height: (mainArea.height - GCStyle.baseMargins * 2) * 0.33
                         }
                     }
                     AnchorChanges {
                         target: answerRectangle
                         anchors.top: questionRectangle.bottom
-                        anchors.left: parent.left
                     }
                 }
             ]
 
             // === The Question Area ===
-            Rectangle {
+            Item {
                 id: questionRectangle
-                color: "#00FFFFFF"
                 height: answerRectangle.height
                 width: answerRectangle.width
                 anchors.top: mainArea.top
                 anchors.left: mainArea.left
-                anchors.topMargin: mainArea.layoutMargin
-                anchors.leftMargin: mainArea.layoutMargin
+
                 Rectangle {
                     id: questionRectangleContent
                     anchors.centerIn: parent
                     color: "#55333333"
-                    border.color: "black"
-                    border.width: 2
-                    radius: 5
+                    border.color: GCStyle.darkerBorder
+                    border.width: GCStyle.thinnestBorder
+                    radius: GCStyle.tinyMargins
 
                     states: [
                         State {
@@ -201,8 +189,8 @@ ActivityBase {
                             when: mainArea.smallQuestionMode
                             PropertyChanges {
                                 questionRectangleContent {
-                                    height: answerRectangle.height * 0.7
-                                    width: answerRectangle.width * 0.7
+                                    height: answerRectangle.height * 0.8
+                                    width: answerRectangle.width * 0.8
                                 }
                             }
                         },
@@ -224,7 +212,7 @@ ActivityBase {
                         height: cellHeight * mainArea.nbLines
                         anchors.centerIn: parent
                         cellHeight: cellWidth
-                        cellWidth: Math.floor(Math.min((parent.width - mainArea.itemsMargin) / mainArea.nbColumns, (parent.height - mainArea.itemsMargin) / mainArea.nbLines))
+                        cellWidth: Math.floor(Math.min((parent.width - GCStyle.halfMargins) / mainArea.nbColumns, (parent.height - GCStyle.halfMargins) / mainArea.nbLines))
                         interactive: false
                         keyNavigationWraps: true
                         delegate: Item {
@@ -234,7 +222,7 @@ ActivityBase {
                                 id: imageQuestionId
                                 source: Activity.url + modelData
                                 fillMode: Image.PreserveAspectFit
-                                width: question.cellWidth - mainArea.itemsMargin
+                                width: question.cellWidth - GCStyle.halfMargins
                                 height: width
                                 sourceSize.width: width
                                 sourceSize.height: width
@@ -252,16 +240,11 @@ ActivityBase {
             // === The Answer Area ===
             Rectangle {
                 id: answerRectangle
-                height: mainArea.height * 0.33 - mainArea.layoutMargin * 2
-                width: mainArea.width  - mainArea.layoutMargin * 2
-                anchors.top: questionRectangle.bottom
-                anchors.left: mainArea.left
-                anchors.topMargin: mainArea.layoutMargin
-                anchors.leftMargin: mainArea.layoutMargin
+                anchors.right: parent.right
                 color: "#55333333"
-                border.color: "black"
-                border.width: 2
-                radius: 5
+                border.color: GCStyle.darkerBorder
+                border.width: GCStyle.thinnestBorder
+                radius: GCStyle.tinyMargins
 
                 GridView {
                     id: answer
@@ -270,15 +253,15 @@ ActivityBase {
                     height: cellHeight * mainArea.nbLines
                     anchors.centerIn: parent
                     cellHeight: cellWidth
-                    cellWidth: Math.floor(Math.min((parent.width - mainArea.itemsMargin) / mainArea.nbColumns, (parent.height - mainArea.itemsMargin) / mainArea.nbLines))
+                    cellWidth: Math.floor(Math.min((parent.width - GCStyle.halfMargins) / mainArea.nbColumns, (parent.height - GCStyle.halfMargins) / mainArea.nbLines))
                     interactive: false
                     keyNavigationWraps: true
                     highlightFollowsCurrentItem: true
                     highlight: Rectangle {
                         color: "red"
-                        border.width: 3
-                        border.color: "black"
-                        opacity: 0.6
+                        border.width: GCStyle.thinnestBorder
+                        border.color: GCStyle.darkerBorder
+                        opacity: 0.5
                         visible: activityBackground.keyboardMode && (activityBackground.areaWithKeyboardFocus === answer)
                     }
 
@@ -294,7 +277,7 @@ ActivityBase {
                             id: imageAnswerId
                             source: Activity.url + imgUrl
                             fillMode: Image.PreserveAspectFit
-                            width: answer.cellWidth - mainArea.itemsMargin
+                            width: answer.cellWidth - GCStyle.halfMargins
                             height: width
                             sourceSize.width: width
                             sourceSize.height: height
@@ -320,17 +303,15 @@ ActivityBase {
             // === The Selector ===
             Rectangle {
                 id: selectorRectangle
-                height: mainArea.height * 0.33 - mainArea.layoutMargin * 2
-                width: mainArea.width - mainArea.layoutMargin * 2
                 anchors.top: answerRectangle.bottom
                 anchors.left: mainArea.left
-                anchors.topMargin: mainArea.layoutMargin
-                anchors.leftMargin: mainArea.layoutMargin
+                anchors.right: mainArea.right
+                anchors.topMargin: GCStyle.baseMargins
                 color: "#661111AA"
-                border.color: "black"
-                border.width: 2
-                radius: 5
-                property int selectorItemSize: Core.fitItems(selectorRectangle.width - mainArea.itemsMargin, selectorRectangle.height - mainArea.itemsMargin, selector.count)
+                border.color: GCStyle.darkerBorder
+                border.width: GCStyle.thinnestBorder
+                radius: GCStyle.tinyMargins
+                property int selectorItemSize: Core.fitItems(selectorRectangle.width - GCStyle.halfMargins, selectorRectangle.height - GCStyle.halfMargins, selector.count)
 
                 GridView {
                     id: selector
@@ -347,9 +328,9 @@ ActivityBase {
                     highlightFollowsCurrentItem: true
                     highlight: Rectangle {
                         color: "red"
-                        border.width: 3
-                        border.color: "black"
-                        opacity: 0.6
+                        border.width: GCStyle.thinnestBorder
+                        border.color: GCStyle.darkerBorder
+                        opacity: 0.5
                         visible: activityBackground.keyboardMode && (activityBackground.areaWithKeyboardFocus === selector)
                     }
                     delegate: Item {
@@ -360,7 +341,7 @@ ActivityBase {
                             id: imageId
                             source: Activity.url + modelData
                             fillMode: Image.PreserveAspectFit
-                            width: selector.cellWidth - mainArea.itemsMargin
+                            width: selector.cellWidth - GCStyle.halfMargins
                             height: width
                             sourceSize.width: width
                             sourceSize.height: height
