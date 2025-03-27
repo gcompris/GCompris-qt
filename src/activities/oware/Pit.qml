@@ -22,7 +22,7 @@ Item {
     property bool responsive: true
     property bool label: true
     property bool highlight: false
-    property string highlightColor: "#E77936" //orange
+    property string highlightColor: GCStyle.gcOrange
     property bool selected: false
 
     height: circle.height
@@ -111,7 +111,8 @@ Item {
         height: pitLabel.height
         width: pitLabel.width
         radius: height * 0.25
-        color: "#80FFFFFF"
+        color: GCStyle.whiteBg
+        opacity: 0.5
         visible: !label
         anchors.centerIn: circle
     }
@@ -126,7 +127,7 @@ Item {
             verticalCenter: label ? undefined : circle.verticalCenter
             horizontalCenter: circle.horizontalCenter
         }
-        color: "#373737"
+        color: GCStyle.darkText
         verticalAlignment: Text.AlignVCenter
         horizontalAlignment: Text.AlignHCenter
         text: seeds.toString()

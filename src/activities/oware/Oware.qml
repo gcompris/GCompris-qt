@@ -53,7 +53,7 @@ ActivityBase {
             property alias delayAnimation: delayAnimation
             property alias captureAnimation: captureAnimation
             property alias invalidMoveAnimation: invalidMoveAnimation
-            property alias instructionArea: instructionArea
+            property alias instructionPanel: instructionPanel
             property alias selectedPit: teleportAnimation.fromPit
             property bool isDistributionAnimationPlaying: false
             property bool forceStop: false
@@ -88,9 +88,8 @@ ActivityBase {
                 width: height*11/8
                 anchors {
                     top: topPanel.top
-                    topMargin: 5
                     left: topPanel.left
-                    leftMargin: 5
+                    margins: GCStyle.halfMargins
                 }
                 playerImageSource: "qrc:/gcompris/src/core/resource/player_1.svg"
                 backgroundImageSource: "qrc:/gcompris/src/activities/bargame/resource/score_1.svg"
@@ -110,48 +109,34 @@ ActivityBase {
                 width: topPanel.height - 2 * anchors.topMargin
                 anchors {
                     top: topPanel.top
-                    topMargin: 10
+                    topMargin: GCStyle.halfMargins
                     left: player1score.right
-                    leftMargin: 10 + 0.4 * player1score.width
+                    leftMargin: GCStyle.halfMargins + 0.4 * player1score.width
                 }
             }
 
-            Rectangle {
-                id: instructionArea
-
+            GCTextPanel {
+                id: instructionPanel
                 visible: false
-                color: "#373737"
-                height: instruction.contentHeight * 1.1
-                anchors {
-                    left: hand1.right
-                    right: hand2.left
-                    leftMargin: 20 * ApplicationInfo.ratio
-                    rightMargin: 20 * ApplicationInfo.ratio
-                    verticalCenter: parent.verticalCenter
-                }
+                panelWidth: hand2.x - (hand1.x + hand1.width) - 2 * GCStyle.baseMargins
+                panelHeight: Math.min(50 * ApplicationInfo.ratio, hand1.height)
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.verticalCenter: hand1.verticalCenter
+                border.width: 0
 
                 signal start(string message)
+
                 onStart: (message) => {
-                    instruction.text = message
-                    instructionArea.visible = true
+                    textItem.text = message
+                    instructionPanel.visible = true
                     instructionPauseAnimation.running = true
                 }
                 PauseAnimation {
                     id: instructionPauseAnimation
                     duration: 1000
                     onStopped: {
-                        instructionArea.visible = false
+                        instructionPanel.visible = false
                     }
-                }
-
-                GCText {
-                    id: instruction
-                    wrapMode: TextEdit.WordWrap
-                    fontSize: tinySize
-                    horizontalAlignment: Text.Center
-                    width: parent.width * 0.9
-                    color: "white"
-                    anchors.centerIn: instructionArea
                 }
             }
 
@@ -165,9 +150,9 @@ ActivityBase {
                 width: topPanel.height - 2 * anchors.topMargin
                 anchors {
                     top: topPanel.top
-                    topMargin: 10
+                    topMargin: GCStyle.halfMargins
                     right: player2score.left
-                    rightMargin: 10 + 0.4 * player2score.width
+                    rightMargin: GCStyle.halfMargins + 0.4 * player2score.width
                 }
             }
 
@@ -178,9 +163,8 @@ ActivityBase {
                 width: height*11/8
                 anchors {
                     top: topPanel.top
-                    topMargin: 5
                     right: topPanel.right
-                    rightMargin: 5
+                    margins: GCStyle.halfMargins
                 }
                 playerImageSource: "qrc:/gcompris/src/core/resource/player_2.svg"
                 backgroundImageSource: "qrc:/gcompris/src/activities/bargame/resource/score_2.svg"
