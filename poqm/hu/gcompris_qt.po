@@ -19807,7 +19807,7 @@ msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
 msgstr "A Morze-kód felfedezése"
 
-#: activities/morse_code/FirstScreen.qml:63
+#: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
 msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
@@ -19816,7 +19816,7 @@ msgstr ""
 "A Morze-kódot Samuel Morse találta ki. A rejtjelezés egy módja melyben a "
 "szöveges információkat hangjelekké, fényekké vagy kattintásokká alakítunk."
 
-#: activities/morse_code/FirstScreen.qml:64
+#: activities/morse_code/FirstScreen.qml:66
 msgctxt "FirstScreen|"
 msgid ""
 "Each Morse code symbol represents either a text character (letter or "
@@ -19834,18 +19834,18 @@ msgstr ""
 " Például az angol nyelvben a \"E\" betű a leggyakoribb, melynek a Morze-"
 "kódja egy pont."
 
-#: activities/morse_code/FirstScreen.qml:89
+#: activities/morse_code/FirstScreen.qml:87
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr "Ha elkészültél, kattints Tuxra, és átalakítja Morze-kódra!"
 
-#: activities/morse_code/MorseCode.qml:360
+#: activities/morse_code/MorseCode.qml:364
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Morze értéke: %1"
 
-#: activities/morse_code/MorseCode.qml:361
+#: activities/morse_code/MorseCode.qml:365
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -20155,20 +20155,20 @@ msgid ""
 "100% to complete the level."
 msgstr "Ismerd fel a hangjegyeket és érj egy 100%-ot a pálya teljesítéséhez!"
 
-#: activities/note_names/NoteNames.qml:176
+#: activities/note_names/NoteNames.qml:185
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
 msgstr "Új hangjegy: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:257
+#: activities/note_names/NoteNames.qml:254
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:444
+#: activities/note_names/NoteNames.qml:431
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20177,12 +20177,12 @@ msgstr ""
 "Ez a feladat hangokat használ, így akkor is hallasz pár hangot, ho a "
 "főmenüben kikapcsoltad azokat!"
 
-#: activities/note_names/NoteNames.qml:445
+#: activities/note_names/NoteNames.qml:432
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Kilépsz?"
 
-#: activities/note_names/NoteNames.qml:446
+#: activities/note_names/NoteNames.qml:433
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Folytatás"

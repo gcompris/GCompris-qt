@@ -19933,7 +19933,7 @@ msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
 msgstr "Dizoleiñ kod Morse"
 
-#: activities/morse_code/FirstScreen.qml:63
+#: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
 msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
@@ -19943,7 +19943,7 @@ msgstr ""
 "skrivet e stumm un heuliad kerzh-digerzh gant tonioù, gouleier pe  c'hoazh "
 "klikoù an hini eo. "
 
-#: activities/morse_code/FirstScreen.qml:64
+#: activities/morse_code/FirstScreen.qml:66
 msgctxt "FirstScreen|"
 msgid ""
 "Each Morse code symbol represents either a text character (letter or "
@@ -19962,19 +19962,19 @@ msgstr ""
 "Da skouer e talv al lizherenn voazetañ e saozneg, al lizherenn \"E\", ur pik "
 "hepken, ar c'hod berrañ eta."
 
-#: activities/morse_code/FirstScreen.qml:89
+#: activities/morse_code/FirstScreen.qml:87
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 "Pa vi prest, klik warn dTuks hag e vo kehentet etrezomp gant kod Morse."
 
-#: activities/morse_code/MorseCode.qml:360
+#: activities/morse_code/MorseCode.qml:364
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Talvoud Morse: %1"
 
-#: activities/morse_code/MorseCode.qml:361
+#: activities/morse_code/MorseCode.qml:365
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -20290,20 +20290,20 @@ msgstr ""
 "Klask anavezout mat an notennoù, c'hoari anezhe gant klavier ar piano ha tap "
 "100% evit peurechuiñ ul live."
 
-#: activities/note_names/NoteNames.qml:176
+#: activities/note_names/NoteNames.qml:185
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
 msgstr "Notenn nevez: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:257
+#: activities/note_names/NoteNames.qml:254
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:444
+#: activities/note_names/NoteNames.qml:431
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20313,12 +20313,12 @@ msgstr ""
 "zoken ma n'eo ket bet dibabet kaout ar mouezhioù pe an efedoù-son er "
 "c'hefluniañ pennañ."
 
-#: activities/note_names/NoteNames.qml:445
+#: activities/note_names/NoteNames.qml:432
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Mont kuit"
 
-#: activities/note_names/NoteNames.qml:446
+#: activities/note_names/NoteNames.qml:433
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Kenderc'hel"

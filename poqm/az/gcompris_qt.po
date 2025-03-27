@@ -20424,7 +20424,7 @@ msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
 msgstr "Morze kodunun öyrənilməsi"
 
-#: activities/morse_code/FirstScreen.qml:63
+#: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
 msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
@@ -20434,7 +20434,7 @@ msgstr ""
 "hərflərin uzun-qısa siqnallar (işıq, səs və s.) ardıcıllığı ilə göndərilməsi "
 "üsuludur."
 
-#: activities/morse_code/FirstScreen.qml:64
+#: activities/morse_code/FirstScreen.qml:66
 msgctxt "FirstScreen|"
 msgid ""
 "Each Morse code symbol represents either a text character (letter or "
@@ -20452,20 +20452,20 @@ msgstr ""
 "hərflər qısa nöqtə ilə verilsin. Məsələn, ingilis dilində ən çox yayılmış "
 "hərf olan \"E\" hərfinin ən qısa kod ilə, tək nöqtə ilə təyin olunur."
 
-#: activities/morse_code/FirstScreen.qml:89
+#: activities/morse_code/FirstScreen.qml:87
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 "Hazır olduğunuzda Tuksun üzərinə vurun və biz hərfləri Morze koduna "
 "çevirəcəyik."
 
-#: activities/morse_code/MorseCode.qml:360
+#: activities/morse_code/MorseCode.qml:364
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Morze kodu: %1"
 
-#: activities/morse_code/MorseCode.qml:361
+#: activities/morse_code/MorseCode.qml:365
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -20783,20 +20783,20 @@ msgstr ""
 "Notların adlarını düzgün tapın və səviyyəni keçmək üçün cavablara 100% doğru "
 "cavab verin."
 
-#: activities/note_names/NoteNames.qml:176
+#: activities/note_names/NoteNames.qml:185
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
 msgstr "Yeni not: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:257
+#: activities/note_names/NoteNames.qml:254
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:444
+#: activities/note_names/NoteNames.qml:431
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20805,12 +20805,12 @@ msgstr ""
 "Bu çalışma səsli işləyir, buna görə də, hətta əsas tənzimləmələrdən səs "
 "effektləri söndürülmüş olsa da bəzi səslənmə eşidiləcəkdir."
 
-#: activities/note_names/NoteNames.qml:445
+#: activities/note_names/NoteNames.qml:432
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Çıxış"
 
-#: activities/note_names/NoteNames.qml:446
+#: activities/note_names/NoteNames.qml:433
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Davam edin"

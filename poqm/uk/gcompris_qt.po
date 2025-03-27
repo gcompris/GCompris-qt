@@ -20123,7 +20123,7 @@ msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
 msgstr "Знайомимося з азбукою Морзе"
 
-#: activities/morse_code/FirstScreen.qml:63
+#: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
 msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
@@ -20133,7 +20133,7 @@ msgstr ""
 "текстової інформації за допомогою послідовності гудків, світлових спалахів "
 "або клацань."
 
-#: activities/morse_code/FirstScreen.qml:64
+#: activities/morse_code/FirstScreen.qml:66
 msgctxt "FirstScreen|"
 msgid ""
 "Each Morse code symbol represents either a text character (letter or "
@@ -20152,20 +20152,20 @@ msgstr ""
 "Наприклад, найпоширеніша літера в англійській мові, літера «E», має "
 "найкоротший код, просту крапку."
 
-#: activities/morse_code/FirstScreen.qml:89
+#: activities/morse_code/FirstScreen.qml:87
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 "Коли будете готові, клацніть на Туксі і ми перетворимо повідомлення на код "
 "Морзе."
 
-#: activities/morse_code/MorseCode.qml:360
+#: activities/morse_code/MorseCode.qml:364
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Код Морзе: %1"
 
-#: activities/morse_code/MorseCode.qml:361
+#: activities/morse_code/MorseCode.qml:365
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -20481,20 +20481,20 @@ msgstr ""
 "Визначте ноти, зіграйте їх на клавіатурі піаніно та досягніть результату у "
 "100%, щоб пройти рівень."
 
-#: activities/note_names/NoteNames.qml:176
+#: activities/note_names/NoteNames.qml:185
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
 msgstr "Нова нота: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:257
+#: activities/note_names/NoteNames.qml:254
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:444
+#: activities/note_names/NoteNames.qml:431
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20503,12 +20503,12 @@ msgstr ""
 "Для цієї вправи потрібен звук, тому програма відтворюватиме звуки, навіть "
 "якщо озвучення і ефекти було вимкнено у основних налаштуваннях."
 
-#: activities/note_names/NoteNames.qml:445
+#: activities/note_names/NoteNames.qml:432
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Вийти"
 
-#: activities/note_names/NoteNames.qml:446
+#: activities/note_names/NoteNames.qml:433
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Продовжити"

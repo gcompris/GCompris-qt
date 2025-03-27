@@ -19660,7 +19660,7 @@ msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
 msgstr "മോഴ്സ് കോഡ് പഠിക്കാം"
 
-#: activities/morse_code/FirstScreen.qml:63
+#: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
 msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
@@ -19669,7 +19669,7 @@ msgstr ""
 "സാമുവൽ മോഴ്സ് ആണ് മോഴ്സ് കോഡ് വികസിപ്പിച്ചത്. ഓൺ-ഓഫ് ശബ്ദങ്ങളുടെയോ ലൈറ്റുകളുടെയോ ക്ലിക്കുകളുടെയോ "
 "ശ്രേണിയായി വാക്കുകൾ കൈമാറുന്ന ഒരു രീതിയാണിത്."
 
-#: activities/morse_code/FirstScreen.qml:64
+#: activities/morse_code/FirstScreen.qml:66
 msgctxt "FirstScreen|"
 msgid ""
 "Each Morse code symbol represents either a text character (letter or "
@@ -19688,19 +19688,19 @@ msgstr ""
 "ഉദാഹരണത്തിന്, ഇംഗ്ലീഷിലെ ഏറ്റവും സാധാരണമായ അക്ഷരമായ \"E\" -യ്ക്ക് ഏറ്റവു ചെറിയ "
 "കോഡാണുള്ളത്, ഒരൊറ്റ ഡോട്ട്."
 
-#: activities/morse_code/FirstScreen.qml:89
+#: activities/morse_code/FirstScreen.qml:87
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 "നിങ്ങൾ തയ്യാറാണെങ്കിൽ ടക്സിൽ ക്ലിക്ക് ചെയ്യൂ. എന്നിട്ട് നമുക്ക് മോഴ്സ് കോഡിൽ സംസാരിക്കാം."
 
-#: activities/morse_code/MorseCode.qml:360
+#: activities/morse_code/MorseCode.qml:364
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "മോഴ്സ് വില: %1"
 
-#: activities/morse_code/MorseCode.qml:361
+#: activities/morse_code/MorseCode.qml:365
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -20013,20 +20013,20 @@ msgstr ""
 "സ്വരങ്ങൾ ശരിയായി തിരിച്ചറിഞ്ഞ്, പിയാനോയിൽ പ്ലേ ചെയ്യൂ, എന്നിട്ട് 100% സ്കോർ നേടിയാൽ ഒരു "
 "ഘട്ടം പൂർത്തിയാക്കാം."
 
-#: activities/note_names/NoteNames.qml:176
+#: activities/note_names/NoteNames.qml:185
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
 msgstr "പുതിയ സ്വരം: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:257
+#: activities/note_names/NoteNames.qml:254
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:444
+#: activities/note_names/NoteNames.qml:431
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20035,12 +20035,12 @@ msgstr ""
 "ഈ പ്രവർത്തനത്തിന് ശബ്ദം ആവശ്യമുണ്ട്, അതുകൊണ്ട് പ്രധാന കോൺഫിഗറേഷനിൽ ഓഡിയൊ ശബ്ദങ്ങളോ എഫക്ടുകളോ "
 "അസാധുവാക്കിയെന്നിരുന്നാലും ഇവിടെ ചില ശബ്ദങ്ങൾ പ്ലേ ചെയ്യും."
 
-#: activities/note_names/NoteNames.qml:445
+#: activities/note_names/NoteNames.qml:432
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "നിർത്തുക"
 
-#: activities/note_names/NoteNames.qml:446
+#: activities/note_names/NoteNames.qml:433
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "തുടരുക"
