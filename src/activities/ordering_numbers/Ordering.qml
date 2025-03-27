@@ -96,8 +96,6 @@ ActivityBase {
             placeholderName: "target"
             highestParent: activityBackground
             placeholderListModel: targetListModel
-            elementKey: "targetKey"
-            targetPlaceholderKey: "originKey"
         }
 
         OrderingPlaceholder {
@@ -110,8 +108,12 @@ ActivityBase {
             placeholderName: "origin"
             highestParent: activityBackground
             placeholderListModel: originListModel
-            elementKey: "originKey"
-            targetPlaceholderKey: "targetKey"
+        }
+
+        // used only to block input during bonus feedback
+        MouseArea {
+            anchors.fill: parent
+            enabled: bonus.isPlaying
         }
 
         DialogChooseLevel {

@@ -19,32 +19,30 @@ import "ordering.js" as Activity
 Item {
     id: orderingElement
 
-    property int index
-    property string elementKey
-    // Mode : numbers | alphabets | sentences | chronology
-    property string mode
+    // defined by default in OrderingPlaceholder
+    required property string mode
+    required property int index
+    required property Item highestParent
+    required property string placeholderName
+    // set for each element in the model
+    required property color borderColor
+    required property string elementValue
+
     property bool orderingElementIsEntered
-    property bool isMoveAllowed: (placeholderName === "target")
-    property ListModel listModel: null
-    property Image highestParent: null
-    property string placeholderName
 
     width: draggable.width
     height: draggable.height
 
     DropArea {
         id: orderingElementDropArea
-
         anchors.fill: parent
-
         // In target placeholder, detect all drops
         // In origin placeholder, detect no drops
-        keys: elementKey
+        enabled: orderingElement.placeholderName === "target"
+        keys: ["target"]
 
         onEntered: (drag) => {
-            if (isMoveAllowed) {
-                targetListModel.move(drag.source.index,index,1)
-            }
+            Activity.moveFromTargetList(drag.source.index, index, 1)
         }
     }
 
@@ -53,14 +51,11 @@ Item {
 
         property bool dropActive: true
         property int onGoingAnimationCount: 0
-
         // For storing the initial position when dragged
         property point beginDragPosition
-        property MouseArea originalParent
         property bool mouseHeld: false
 
         anchors.fill: parent
-
         drag.target: enabled ? draggable : null
         enabled: (!onGoingAnimationCount)
 
@@ -85,11 +80,10 @@ Item {
         // To Display the text in the element
         Rectangle {
             id: draggable
-
             // To access when dragged
             property int index: orderingElement.index
-            property string draggableText: elementValue
-            property string placeholderName: orderingElement.placeholderName
+            property string mode: orderingElement.mode
+            property string elementValue: orderingElement.elementValue
 
             width: (mode === 'chronology') ? 100 * ApplicationInfo.ratio :
                 Math.max(elementCaption.width, 65 * ApplicationInfo.ratio)
@@ -100,12 +94,12 @@ Item {
             color: GCStyle.whiteBg
             opacity: 1
 
-            Drag.keys: orderingElement.elementKey
+            Drag.keys: [orderingElement.placeholderName]
             Drag.active: orderingElementMouseArea.drag.active
             Drag.hotSpot.x: width * 0.5
             Drag.hotSpot.y: height * 0.5
 
-            border.color: borderColor
+            border.color: orderingElement.borderColor
             border.width: GCStyle.midBorder
             radius: GCStyle.halfMargins
 
@@ -116,10 +110,10 @@ Item {
                 color: GCStyle.darkText
                 verticalAlignment: Text.AlignVCenter
                 horizontalAlignment: Text.AlignHCenter
-                text: (mode === 'chronology') ? "" : elementValue
+                text: (mode === 'chronology') ? "" : orderingElement.elementValue
             }
             Image {
-                source: (mode === 'chronology') ? elementValue : ""
+                source: (mode === 'chronology') ? orderingElement.elementValue : ""
                 width: parent.width - 2 * parent.radius
                 height: parent.height - 2 * parent.radius
                 sourceSize.width: width
