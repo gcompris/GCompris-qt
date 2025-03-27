@@ -17,21 +17,16 @@ import "../../core"
 import "ordering.js" as Activity
 
 Item {
-
     id: orderingElement
 
     property int index
-
     property string elementKey
     // Mode : numbers | alphabets | sentences | chronology
     property string mode
-
     property bool orderingElementIsEntered
     property bool isMoveAllowed: (placeholderName === "target")
-
     property ListModel listModel: null
     property Image highestParent: null
-
     property string placeholderName
 
     width: draggable.width
@@ -100,51 +95,36 @@ Item {
                 Math.max(elementCaption.width, 65 * ApplicationInfo.ratio)
 
             height: (mode === 'chronology') ? width :
-            65 * ApplicationInfo.ratio / ((mode === 'sentences') ? 1.5 : 1)
+                ((mode === 'sentences') ? 42 * ApplicationInfo.ratio : width)
 
-            color: "white"
+            color: GCStyle.whiteBg
             opacity: 1
 
             Drag.keys: orderingElement.elementKey
             Drag.active: orderingElementMouseArea.drag.active
-            Drag.hotSpot.x: width/2
-            Drag.hotSpot.y: height/2
+            Drag.hotSpot.x: width * 0.5
+            Drag.hotSpot.y: height * 0.5
 
             border.color: borderColor
-            border.width: 3 * ApplicationInfo.ratio
-
-            radius: 10
+            border.width: GCStyle.midBorder
+            radius: GCStyle.halfMargins
 
             GCText {
                 id: elementCaption
-
-                anchors {
-                    top: parent.top
-                    left: parent.left
-                    leftMargin: (parent.width - width) / 2
-                }
-                padding: 15 * ApplicationInfo.ratio
-                height: parent.height
-                color: "#373737"
+                anchors.fill: parent
+                anchors.margins: GCStyle.baseMargins
+                color: GCStyle.darkText
                 verticalAlignment: Text.AlignVCenter
                 horizontalAlignment: Text.AlignHCenter
-                text: ([
-                    'alphabets',
-                    'numbers',
-                    'sentences',
-                ].indexOf(mode) != -1) ? elementValue : ""
+                text: (mode === 'chronology') ? "" : elementValue
             }
             Image {
                 source: (mode === 'chronology') ? elementValue : ""
                 width: parent.width - 2 * parent.radius
                 height: parent.height - 2 * parent.radius
+                sourceSize.width: width
                 fillMode: Image.PreserveAspectFit
-
-                anchors {
-                    top: parent.top
-                    left: parent.left
-                    margins: 10
-                }
+                anchors.centerIn: parent
             }
 
             Behavior on x {
