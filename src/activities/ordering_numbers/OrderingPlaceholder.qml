@@ -13,6 +13,7 @@ import QtQuick 2.12
 import QtQml.Models 2.12
 
 import core 1.0
+import "../../core"
 import "../../core/core.js" as Core
 
 Rectangle {
@@ -29,11 +30,10 @@ Rectangle {
 
     property bool colorResetRequired: false
 
-    border.color: placeholderDropArea.containsDrag ? "#FFFFFFFF" : "#00FFFFFF"
-    border.width:  4 * ApplicationInfo.ratio
+    border.color: GCStyle.whiteBorder
+    border.width: placeholderDropArea.containsDrag ? GCStyle.midBorder : 0
     color: placeholderDropArea.containsDrag ? "#B0FFFFFF" : "#80FFFFFF"
-    width:  parent.width * 0.8
-    radius: 10
+    radius: GCStyle.halfMargins
     anchors.horizontalCenter: parent.horizontalCenter
 
     DelegateModel {
@@ -53,7 +53,6 @@ Rectangle {
     // Drop area to detect drops in the target placeholder
     DropArea {
         id: placeholderDropArea
-
         keys: orderingPlaceholder.targetPlaceholderKey
         anchors.fill: parent
 
@@ -78,25 +77,19 @@ Rectangle {
 
         Flickable {
             id: flick
-            width: parent.width
-            height: parent.height
+            anchors.fill: parent
+            anchors.margins: GCStyle.halfMargins
             clip: true
             flickableDirection: Flickable.VerticalFlick 
             maximumFlickVelocity: activity.height
             boundsBehavior: Flickable.StopAtBounds
-            contentWidth: originListView.width + 2*0.01 * placeholderDropArea.width
-            contentHeight: originListView.height + 2*0.01 * placeholderDropArea.width
+            contentWidth: contentItem.childrenRect.width
+            contentHeight: contentItem.childrenRect.height
 
             Flow {
                 id: originListView
-                width: placeholderDropArea.width * 0.98
-                spacing: 0.01 * placeholderDropArea.width
-                anchors {
-                    top: flick.contentItem.top
-                    left: flick.contentItem.left
-                    margins: 0.01 * placeholderDropArea.width
-                }
-
+                width: placeholderDropArea.width - 2 * GCStyle.halfMargins
+                spacing: GCStyle.halfMargins
                 layoutDirection: (Core.isLeftToRightLocale(ApplicationSettings.locale)) ? Qt.LeftToRight : Qt.RightToLeft
 
                 Repeater {

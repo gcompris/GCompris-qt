@@ -51,44 +51,32 @@ ActivityBase {
             property alias targetListModel: targetListModel
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
-            property alias instruction: instruction
+            property alias instruction: instructionPanel.textItem
             property alias targetPlaceholder: targetPlaceholder
         }
 
         onStart: { Activity.start(items, mode) }
         onStop: { Activity.stop() }
 
-        GCText {
-            id: instruction
-            z: 5
-            wrapMode: TextEdit.WordWrap
-            fontSize: tinySize
-            horizontalAlignment: Text.Center
-            width: parent.width * 0.9
-            color: 'white'
-            anchors.centerIn: instructionArea
-        }
-
-        Rectangle {
-            id: instructionArea
-            opacity: 1
-            radius: 10
-            color: "#373737"
-            width: instruction.contentWidth * 1.1
-            height: instruction.contentHeight * 1.1
+        GCTextPanel {
+            id: instructionPanel
+            panelWidth: parent.width - 2 * GCStyle.baseMargins
+            panelHeight: 50 * ApplicationInfo.ratio
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
-            anchors.topMargin: 5 * ApplicationInfo.ratio
+            anchors.topMargin: GCStyle.baseMargins
+            border.width: 0
+            textItem.fontSize: textItem.tinySize
         }
 
         Item {
             id: layoutArea
-            anchors.top: instructionArea.bottom
-            anchors.topMargin: 10 * ApplicationInfo.ratio
+            anchors.top: instructionPanel.bottom
             anchors.bottom: bar.top
-            anchors.bottomMargin: bar.height * 0.2
             anchors.left: parent.left
             anchors.right: parent.right
+            anchors.margins: GCStyle.baseMargins
+            anchors.bottomMargin: bar.height * 0.3
         }
 
         ListModel {
@@ -101,31 +89,27 @@ ActivityBase {
 
         OrderingPlaceholder {
             id: targetPlaceholder
-
             anchors.top: layoutArea.top
-            height: (layoutArea.height - 10 * ApplicationInfo.ratio) / 2
+            width: layoutArea.width
+            height: (layoutArea.height - GCStyle.baseMargins) * 0.5
             mode: activity.mode
             placeholderName: "target"
             highestParent: activityBackground
-
             placeholderListModel: targetListModel
-
             elementKey: "targetKey"
             targetPlaceholderKey: "originKey"
         }
 
         OrderingPlaceholder {
             id: originPlaceholder
-
             anchors.top: targetPlaceholder.bottom
-            anchors.topMargin: 5 * ApplicationInfo.ratio
+            anchors.topMargin: GCStyle.baseMargins
+            width: layoutArea.width
             height: targetPlaceholder.height
             mode: activity.mode
             placeholderName: "origin"
             highestParent: activityBackground
-
             placeholderListModel: originListModel
-
             elementKey: "originKey"
             targetPlaceholderKey: "targetKey"
         }
@@ -157,11 +141,11 @@ ActivityBase {
         BarButton {
             id: ok
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
-            width: 70 * ApplicationInfo.ratio
-            enabled: !bonus.isPlaying && (originListModel.count === 0)
+            width: Math.min(GCStyle.bigButtonHeight,
+                    originPlaceholder.height, originPlaceholder.width)
+            enabled: !bonus.isPlaying && visible
             visible: originListModel.count === 0
-            anchors.horizontalCenter: originPlaceholder.horizontalCenter
-            anchors.verticalCenter: originPlaceholder.verticalCenter
+            anchors.centerIn: originPlaceholder
             onClicked: Activity.checkOrder()
         }
 
