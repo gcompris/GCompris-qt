@@ -19945,7 +19945,7 @@ msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
 msgstr "Jelajahi Kode Morse"
 
-#: activities/morse_code/FirstScreen.qml:63
+#: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
 msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
@@ -19954,7 +19954,7 @@ msgstr ""
 "Kode morse dikembangkan oleh Samuel Morse. Ini adalah metode pengiriman "
 "informasi teks berupa rangkaian nada hidup-mati, lampu, atau titik."
 
-#: activities/morse_code/FirstScreen.qml:64
+#: activities/morse_code/FirstScreen.qml:66
 msgctxt "FirstScreen|"
 msgid ""
 "Each Morse code symbol represents either a text character (letter or "
@@ -19973,20 +19973,20 @@ msgstr ""
 "Misalnya, huruf paling umum dalam bahasa Inggris, huruf \"E\", memiliki kode "
 "terpendek, yaitu satu titik."
 
-#: activities/morse_code/FirstScreen.qml:89
+#: activities/morse_code/FirstScreen.qml:87
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 "Jika kamu sudah siap, klik Tux dan kamu akan berkomunikasi menggunakan kode "
 "Morse."
 
-#: activities/morse_code/MorseCode.qml:360
+#: activities/morse_code/MorseCode.qml:364
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Nilai morse: %1"
 
-#: activities/morse_code/MorseCode.qml:361
+#: activities/morse_code/MorseCode.qml:365
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -20305,20 +20305,20 @@ msgstr ""
 "Mengenal not secara benar dan raih skor 100% untuk menyelesaikan sebuah "
 "tingkat permainan."
 
-#: activities/note_names/NoteNames.qml:176
+#: activities/note_names/NoteNames.qml:185
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
 msgstr "Not baru: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:257
+#: activities/note_names/NoteNames.qml:254
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:444
+#: activities/note_names/NoteNames.qml:431
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20327,12 +20327,12 @@ msgstr ""
 "Kegiatan ini memerlukan suara, sehingga akan memutar beberapa suara bahkan "
 "ketika suara audio atau efek dinonaktifkan dalam pengaturan utama."
 
-#: activities/note_names/NoteNames.qml:445
+#: activities/note_names/NoteNames.qml:432
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Berhenti"
 
-#: activities/note_names/NoteNames.qml:446
+#: activities/note_names/NoteNames.qml:433
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Lanjutkan"

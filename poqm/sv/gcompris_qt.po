@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-01-11 10:45+0100\n"
+"PO-Revision-Date: 2025-03-26 17:13+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -9820,9 +9820,7 @@ msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Tabulator: byt mellan redigering av frisen och visning av förlagan"
 
 #: activities/frieze/Frieze.qml:109
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulb|"
-#| msgid "What is the binary representation of %1?"
+#, qt-format
 msgctxt "Frieze|"
 msgid "What is the binary representation of %1?"
 msgstr "Vad är den binära representationen av %1?"
@@ -19451,7 +19449,7 @@ msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
 msgstr "Utforska Morsekod"
 
-#: activities/morse_code/FirstScreen.qml:63
+#: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
 msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
@@ -19460,7 +19458,7 @@ msgstr ""
 "Morsekod utvecklades av Samuel Morse. Det är ett sätt att överföra "
 "textinformation som en följd av toner, ljussignaler eller klick."
 
-#: activities/morse_code/FirstScreen.qml:64
+#: activities/morse_code/FirstScreen.qml:66
 msgctxt "FirstScreen|"
 msgid ""
 "Each Morse code symbol represents either a text character (letter or "
@@ -19479,18 +19477,18 @@ msgstr ""
 "Exempelvis har den vanligaste bokstaven på engelska, bokstaven \"E\", den "
 "kortaste koden, en enda punkt."
 
-#: activities/morse_code/FirstScreen.qml:89
+#: activities/morse_code/FirstScreen.qml:87
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr "När du är redo, klicka på Tux så samtalar vi med Morsekod."
 
-#: activities/morse_code/MorseCode.qml:360
+#: activities/morse_code/MorseCode.qml:364
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Morsevärde: %1"
 
-#: activities/morse_code/MorseCode.qml:361
+#: activities/morse_code/MorseCode.qml:365
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -19803,20 +19801,20 @@ msgstr ""
 "Identifiera noterna, spela dem på pianots klaviatur, och uppnå en poäng på "
 "100 % för att göra färdigt nivån."
 
-#: activities/note_names/NoteNames.qml:176
+#: activities/note_names/NoteNames.qml:185
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
 msgstr "Ny not: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:257
+#: activities/note_names/NoteNames.qml:254
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1 %"
 
-#: activities/note_names/NoteNames.qml:444
+#: activities/note_names/NoteNames.qml:431
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19825,12 +19823,12 @@ msgstr ""
 "Aktiviteten kräver ljud, så den spelar upp en del ljud även om röster eller "
 "effekter är inaktiverade i huvudinställningen."
 
-#: activities/note_names/NoteNames.qml:445
+#: activities/note_names/NoteNames.qml:432
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Avsluta"
 
-#: activities/note_names/NoteNames.qml:446
+#: activities/note_names/NoteNames.qml:433
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Fortsätt"
