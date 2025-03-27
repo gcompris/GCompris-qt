@@ -186,3 +186,21 @@ function checkOrder() {
     else
         items.bonus.bad("lion")
 }
+
+function moveFromTargetList(from_, to_, n_) {
+    items.targetListModel.move(from_, to_, n_)
+}
+
+function dropElement(element_, fromListName_) {
+    var modelObj = {
+        "elementValue" : element_.elementValue,
+        "borderColor" : "#808080"
+    }
+    if(fromListName_ === "target") {
+        items.targetListModel.append(modelObj)
+        items.originListModel.remove(element_.index)
+    } else { // "origin" case
+        items.originListModel.append(modelObj)
+        items.targetListModel.remove(element_.index)
+    }
+}

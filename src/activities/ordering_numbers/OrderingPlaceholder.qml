@@ -15,19 +15,15 @@ import QtQml.Models 2.12
 import core 1.0
 import "../../core"
 import "../../core/core.js" as Core
+import "ordering.js" as Activity
 
 Rectangle {
     id: orderingPlaceholder
 
     property ListModel placeholderListModel
     property Image highestParent
-    // Mode : numbers | alphabets | sentences | chronology
-    property string mode
     property string placeholderName
-
-    property string elementKey
-    property string targetPlaceholderKey
-
+    property string mode
     property bool colorResetRequired: false
 
     border.color: GCStyle.whiteBorder
@@ -43,7 +39,6 @@ Rectangle {
         delegate: OrderingElement {
             id: orderingElement
             mode: orderingPlaceholder.mode
-            elementKey: orderingPlaceholder.elementKey
             index: DelegateModel.itemsIndex
             highestParent: orderingPlaceholder.highestParent
             placeholderName: orderingPlaceholder.placeholderName
@@ -53,26 +48,11 @@ Rectangle {
     // Drop area to detect drops in the target placeholder
     DropArea {
         id: placeholderDropArea
-        keys: orderingPlaceholder.targetPlaceholderKey
+        keys: orderingPlaceholder.placeholderName === "target" ? ["origin"] : ["target"]
         anchors.fill: parent
 
         onDropped: {
-            var element = drag.source
-            var modelObj = {
-                "elementValue" : element.draggableText,
-                "borderColor" : "#808080"
-            }
-            if (element.placeholderName === "origin" && placeholderName === "target") {
-                targetListModel.append(modelObj)
-                targetListModel.setProperty(0,"placeholderName", "target")
-                originListModel.remove(drag.source.index)
-            }
-
-            if (element.placeholderName === "target" && placeholderName === "origin") {
-                originListModel.append(modelObj)
-                originListModel.setProperty(0,"placeholderName", "origin")
-                targetListModel.remove(drag.source.index)
-            }
+            Activity.dropElement(drag.source, orderingPlaceholder.placeholderName)
         }
 
         Flickable {
