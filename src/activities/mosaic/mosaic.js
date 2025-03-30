@@ -15,8 +15,6 @@
 var questionModel
 var selectorModel
 
-var url = "qrc:/gcompris/src/activities/mosaic/resource/"
-
 var numberOfLevel
 var items
 
