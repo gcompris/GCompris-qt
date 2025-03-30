@@ -8,6 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import core 1.0
 
@@ -23,7 +25,7 @@ ActivityBase {
 
     pageComponent: Image {
         id: activityBackground
-        source: Activity.url + "background.svg"
+        source: activity.resourceUrl + "background.svg"
         sourceSize.width: width
         sourceSize.height: height
         fillMode: Image.PreserveAspectCrop
@@ -144,7 +146,7 @@ ActivityBase {
                     }
                     AnchorChanges {
                         target: answerRectangle
-                        anchors.top: parent.top
+                        anchors.top: mainArea.top
                     }
                 },
                 State {
@@ -216,11 +218,13 @@ ActivityBase {
                         interactive: false
                         keyNavigationWraps: true
                         delegate: Item {
+                            id: questionBox
                             width: question.cellWidth
                             height: question.cellHeight
+                            required property string modelData
                             Image {
                                 id: imageQuestionId
-                                source: Activity.url + modelData
+                                source: activity.resourceUrl + questionBox.modelData
                                 fillMode: Image.PreserveAspectFit
                                 width: question.cellWidth - GCStyle.halfMargins
                                 height: width
@@ -270,12 +274,13 @@ ActivityBase {
                         id: cellItem
                         width: answer.cellWidth
                         height: answer.cellHeight
-
+                        required property int index
+                        required property string imgUrl
                         readonly property int cellIndex: index
 
                         Image {
                             id: imageAnswerId
-                            source: Activity.url + imgUrl
+                            source: activity.resourceUrl + cellItem.imgUrl
                             fillMode: Image.PreserveAspectFit
                             width: answer.cellWidth - GCStyle.halfMargins
                             height: width
@@ -295,7 +300,7 @@ ActivityBase {
                     }
 
                     function changeAreaWithKeyboardFocus() {
-                        areaWithKeyboardFocus = selector
+                        activityBackground.areaWithKeyboardFocus = selector
                     }
                 }
             }
@@ -337,9 +342,10 @@ ActivityBase {
                         id: selectorItem
                         width: selector.cellWidth
                         height: width
+                        required property string modelData
                         Image {
                             id: imageId
-                            source: Activity.url + modelData
+                            source: activity.resourceUrl + selectorItem.modelData
                             fillMode: Image.PreserveAspectFit
                             width: selector.cellWidth - GCStyle.halfMargins
                             height: width
@@ -351,7 +357,7 @@ ActivityBase {
                         }
 
                         readonly property bool iAmSelected: items.selectedItem === modelData
-                        readonly property string imageName: modelData
+                        readonly property string imageName: selectorItem.modelData
 
                         states: [
                             State {
@@ -436,7 +442,7 @@ ActivityBase {
                     }
 
                     function changeAreaWithKeyboardFocus() {
-                        areaWithKeyboardFocus = answer
+                        activityBackground.areaWithKeyboardFocus = answer
                     }
                 }
             }
@@ -447,14 +453,14 @@ ActivityBase {
             currentActivity: activity.activityInfo
 
             onSaveData: {
-                levelFolder = dialogActivityConfig.chosenLevels
+                activity.levelFolder = dialogActivityConfig.chosenLevels
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
                 // restart activity on saving
                 activityBackground.start()
             }
             onClose: {
-                home()
+                activity.home()
             }
             onStartActivity: {
                 activityBackground.start()
@@ -463,7 +469,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
@@ -471,10 +477,10 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | activityConfig}
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onActivityConfigClicked: {
-                displayDialog(dialogActivityConfig)
+                activity.displayDialog(dialogActivityConfig)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
