@@ -97,42 +97,36 @@ ActivityBase {
 
         Item {
             id: layoutArea
-            anchors.top: parent.top
-            anchors.bottom: bar.top
-            anchors.left: parent.left
-            anchors.right: parent.right
-            anchors.bottomMargin: bar.height * 0.5
-            anchors.topMargin: 10 * ApplicationInfo.ratio
-            anchors.leftMargin: anchors.topMargin
-            anchors.rightMargin: anchors.topMargin
+            anchors.fill: parent
+            anchors.margins: GCStyle.baseMargins
+            anchors.bottomMargin: bar.height * 1.3
         }
 
         MapView {
             id: mapView
-
             touchEnabled: mode === 'decode'
-
             rows: items.rows
             cols: items.cols
+            anchors.verticalCenterOffset: (-errorsArea.height - GCStyle.halfMargins) * 0.5
         }
 
         Rectangle {
             id: errorsArea
             anchors.top: mapView.bottom
             anchors.left: mapView.left
-            anchors.topMargin: height * 0.2
-            width: errorsText.width * 1.2
-            height: errorsText.height
+            anchors.topMargin: GCStyle.halfMargins
+            width: errorsText.contentWidth + 2 * GCStyle.baseMargins
+            height: errorsText.contentHeight + GCStyle.baseMargins
             radius: height * 0.5
-            color: "#f2f2f2"
-            border.color: "#e74444"
-            border.width: 2 * ApplicationInfo.ratio
+            color: GCStyle.lightBg
+            border.color: GCStyle.badAnswer
+            border.width: GCStyle.thinBorder
         }
 
         GCText {
             id: errorsText
             fontSize: tinySize
-            color: "#373737"
+            color: GCStyle.darkText
             text: qsTr("Errors: %1").arg(items.errorsCount.toString())
             anchors.centerIn: errorsArea
         }
@@ -141,24 +135,31 @@ ActivityBase {
             id: movesListModel
         }
 
-        MoveBar {
-            id: moveBar
+        Column {
+            id: controlsColumn
+            anchors.right: layoutArea.right
+            spacing: GCStyle.halfMargins
+
+            MoveButtons {
+                id: moveButtons
+                visible: items.mode === 'encode'
+                width: parent.width
+                height: visible ? moveBar.height : 0
+            }
+
+            MoveBar {
+                id: moveBar
+                width: parent.width
+                height: moveButtons.visible ? parent.height * 0.5 - GCStyle.halfMargins : parent.height
+            }
         }
 
-        MoveButtons {
-            id: moveButtons
-            visible: items.mode === 'encode'
-        }
+
 
         Tux {
             id: tux
             width: mapView.cellSize
-            height: mapView.cellSize
         }
-
-        property double maxAllowedHeight: layoutArea.height
-        property double maxAllowedWidth: (layoutArea.width - layoutArea.anchors.bottomMargin) / 2
-        property double size: Math.min(maxAllowedHeight / items.rows, maxAllowedWidth / items.cols)
 
         states: [
             State {
@@ -166,20 +167,12 @@ ActivityBase {
                 when: layoutArea.width >= layoutArea.height
                 PropertyChanges {
                     mapView {
-                        cellSize: size
+                        maxHeight: layoutArea.height - errorsArea.height - errorsArea.anchors.topMargin
+                        maxWidth: layoutArea.width * 0.5 - GCStyle.baseMargins
                     }
-                }
-                PropertyChanges {
-                    moveBar {
-                        width: layoutArea.width - mapView.width - layoutArea.anchors.bottomMargin
-                        height: (moveButtons.visible) ? layoutArea.height / 2 : layoutArea.height
-                        anchors.topMargin: errorsArea.anchors.topMargin
-                    }
-                }
-                PropertyChanges {
-                    moveButtons {
-                        width: moveBar.width
-                        height: (moveButtons.visible) ? layoutArea.height / 2 : 0
+                    controlsColumn {
+                        width: layoutArea.width - mapView.width - GCStyle.baseMargins
+                        height: layoutArea.height
                         anchors.topMargin: 0
                     }
                 }
@@ -191,13 +184,7 @@ ActivityBase {
                     anchors.left: layoutArea.left
                 }
                 AnchorChanges {
-                    target: moveBar
-                    anchors.right: layoutArea.right
-                    anchors.top: moveButtons.bottom
-                }
-                AnchorChanges {
-                    target: moveButtons
-                    anchors.right: layoutArea.right
+                    target: controlsColumn
                     anchors.top: layoutArea.top
                 }
             },
@@ -206,21 +193,13 @@ ActivityBase {
                 when: layoutArea.width < layoutArea.height
                 PropertyChanges {
                     mapView {
-                        cellSize: Math.min((layoutArea.height * 0.7) / items.rows, layoutArea.width / items.cols)
+                        maxHeight: (layoutArea.height * 0.7) - errorsArea.height - errorsArea.anchors.topMargin
+                        maxWidth: layoutArea.width
                     }
-                }
-                PropertyChanges {
-                    moveBar {
+                    controlsColumn {
                         width: layoutArea.width
-                        height: (layoutArea.height - mapView.height - moveButtons.height - layoutArea.anchors.bottomMargin)
-                        anchors.topMargin: errorsArea.anchors.topMargin
-                    }
-                }
-                PropertyChanges {
-                    moveButtons {
-                        width: moveBar.width
-                        height: (moveButtons.visible) ? (layoutArea.height - mapView.height - layoutArea.anchors.bottomMargin) / 2 : 0
-                        anchors.topMargin: layoutArea.anchors.bottomMargin
+                        height: layoutArea.height - mapView.height - errorsArea.height - GCStyle.halfMargins - GCStyle.baseMargins
+                        anchors.topMargin: GCStyle.baseMargins
                     }
                 }
                 AnchorChanges {
@@ -231,14 +210,8 @@ ActivityBase {
                     anchors.top: layoutArea.top
                 }
                 AnchorChanges {
-                    target: moveBar
-                    anchors.right: layoutArea.right
-                    anchors.top: moveButtons.bottom
-                }
-                AnchorChanges {
-                    target: moveButtons
-                    anchors.right: layoutArea.right
-                    anchors.top: mapView.bottom
+                    target: controlsColumn
+                    anchors.top: errorsArea.bottom
                 }
             }
         ]

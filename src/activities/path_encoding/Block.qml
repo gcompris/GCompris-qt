@@ -7,16 +7,20 @@
 import QtQuick 2.12
 import core 1.0
 
+import "../../core"
 
 Item {
     id: block
     property int index
+    height: width
 
     Rectangle {
         id: baseSquare
         anchors.fill: parent
-        color: path ? "#D1C8BE" : activityBackground.color
-        border.color: "#A0000000"
+        anchors.margins: -GCStyle.thinnestBorder * 0.5
+        color: path ? "#D1C8BE" : "transparent"
+        border.color: GCStyle.darkBorder
+        border.width: GCStyle.thinnestBorder
         visible: invisible ? 0 : 1
     }
 

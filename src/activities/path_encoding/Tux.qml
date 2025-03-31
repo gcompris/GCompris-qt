@@ -13,6 +13,7 @@ Image {
 
     source: "qrc:/gcompris/src/activities/maze/resource/tux_top_south.svg"
     fillMode: Image.PreserveAspectFit
+    height: width
     sourceSize.width: width
 
     z: 10
@@ -54,7 +55,7 @@ Image {
         enabled: animationEnabled
         RotationAnimation {
             id: rAnimation
-            duration: tux.duration / 4
+            duration: tux.duration * 0.25
             direction: RotationAnimation.Shortest
         }
     }

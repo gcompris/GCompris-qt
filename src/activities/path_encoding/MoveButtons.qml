@@ -12,9 +12,7 @@ import "path.js" as Activity
 
 Item {
     id: moveButtons
-
-    property double spacing: size / 3
-    property double size: Math.min(width / 5, height)
+    property int buttonSize: Math.min(GCStyle.bigButtonHeight, width * 0.25 - GCStyle.baseMargins, height)
 
     Flow {
         id: flow
@@ -24,63 +22,88 @@ Item {
         }
         spacing: moveButtons.spacing
 
-        BarButton {
-            id: upButton
-            source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
-            rotation: -90
-            width: size
-            onClicked: Activity.moveTowards(Activity.Directions.UP)
-            Rectangle {
-                anchors.fill: parent
-                radius: width * 0.5
-                color: "#00FFFFFF"
-                border.color: "#F2F2F2"
-                border.width: 4
+        Item {
+            id: buttonContainer
+            width: moveButtons.width * 0.25
+            height: moveButtons.height
+
+            BarButton {
+                id: upButton
+                source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
+                rotation: -90
+                width: moveButtons.buttonSize
+                anchors.centerIn: parent
+                onClicked: Activity.moveTowards(Activity.Directions.UP)
+                Rectangle {
+                    anchors.fill: parent
+                    radius: width * 0.5
+                    color: "#00FFFFFF"
+                    border.color: GCStyle.lightBorder
+                    border.width: GCStyle.thinBorder
+                }
             }
         }
 
-        BarButton {
-            id: downButton
-            source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
-            rotation: 90
-            width: size
-            onClicked: Activity.moveTowards(Activity.Directions.DOWN)
-            Rectangle {
-                anchors.fill: parent
-                radius: width * 0.5
-                color: "#00FFFFFF"
-                border.color: "#F2F2F2"
-                border.width: 4
+        Item {
+            width: buttonContainer.width
+            height: moveButtons.height
+
+            BarButton {
+                id: downButton
+                source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
+                rotation: 90
+                width: moveButtons.buttonSize
+                anchors.centerIn: parent
+                onClicked: Activity.moveTowards(Activity.Directions.DOWN)
+                Rectangle {
+                    anchors.fill: parent
+                    radius: width * 0.5
+                    color: "#00FFFFFF"
+                    border.color: GCStyle.lightBorder
+                    border.width: GCStyle.thinBorder
+                }
             }
         }
 
-        BarButton {
-            id: leftButton
-            source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
-            rotation: -180
-            width: size
-            onClicked: Activity.moveTowards(Activity.Directions.LEFT)
-            Rectangle {
-                anchors.fill: parent
-                radius: width * 0.5
-                color: "#00FFFFFF"
-                border.color: "#F2F2F2"
-                border.width: 4
+        Item {
+            width: buttonContainer.width
+            height: moveButtons.height
+
+            BarButton {
+                id: leftButton
+                source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
+                rotation: -180
+                width: moveButtons.buttonSize
+                anchors.centerIn: parent
+                onClicked: Activity.moveTowards(Activity.Directions.LEFT)
+                Rectangle {
+                    anchors.fill: parent
+                    radius: width * 0.5
+                    color: "#00FFFFFF"
+                    border.color: GCStyle.lightBorder
+                    border.width: GCStyle.thinBorder
+                }
             }
         }
 
-        BarButton {
-            id: rightButton
-            source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
-            rotation: 0
-            width: size
-            onClicked: Activity.moveTowards(Activity.Directions.RIGHT)
-            Rectangle {
-                anchors.fill: parent
-                radius: width * 0.5
-                color: "#00FFFFFF"
-                border.color: "#F2F2F2"
-                border.width: 4
+        Item {
+            width: buttonContainer.width
+            height: moveButtons.height
+
+            BarButton {
+                id: rightButton
+                source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
+                rotation: 0
+                width: moveButtons.buttonSize
+                anchors.centerIn: parent
+                onClicked: Activity.moveTowards(Activity.Directions.RIGHT)
+                Rectangle {
+                    anchors.fill: parent
+                    radius: width * 0.5
+                    color: "#00FFFFFF"
+                    border.color: GCStyle.lightBorder
+                    border.width: GCStyle.thinBorder
+                }
             }
         }
     }

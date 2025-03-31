@@ -8,18 +8,18 @@ import QtQuick 2.12
 import core 1.0
 import QtQml.Models 2.12
 
+import "../../core"
 import "path.js" as Activity
 
 Rectangle {
     id: moveBar
     color: "#55000000"
-    border.color: "white"
-    border.width: 4
-    radius: ApplicationInfo.ratio * 10
+    border.color: GCStyle.whiteBorder
+    border.width: GCStyle.thinBorder
+    radius: GCStyle.halfMargins
 
-    property double buttonWidth: Math.min(height * 0.9, width / 9)
-    property int spacing: 0.15 * buttonWidth
-
+    property int buttonWidth: Math.min(GCStyle.bigButtonHeight, movesGridView.height, movesGridView.width / 9)
+    property int spacing: GCStyle.halfMargins
     property alias movesGridView: movesGridView
 
     DelegateModel {
@@ -31,14 +31,14 @@ Rectangle {
             width: movesGridView.cellWidth
             height: movesGridView.cellHeight
             Rectangle {
-                width: buttonWidth
+                width: moveBar.buttonWidth
                 height: width
                 anchors.horizontalCenter: box.horizontalCenter
                 anchors.verticalCenter: box.verticalCenter
                 // orange, gray, blue
                 color: (active) ? "#E99E33" : (faded) ? "#B4B4B4" : "#1DB2E3"
-                border.color: "#F2F2F2"
-                border.width: (active ? 4 : 2) * ApplicationInfo.ratio
+                border.color: GCStyle.lightBorder
+                border.width: active ? GCStyle.thickBorder: GCStyle.thinBorder
                 radius: width * 0.5
 
                 Image {
@@ -55,10 +55,10 @@ Rectangle {
     GridView {
         id: movesGridView
         anchors.fill: parent
-        anchors.margins: moveBar.border.width
+        anchors.margins: GCStyle.halfMargins
         model: movesDelegateModel
         clip: true
-        cellWidth: buttonWidth + spacing
+        cellWidth: moveBar.buttonWidth + moveBar.spacing
         cellHeight: cellWidth
     }
 }

@@ -8,19 +8,18 @@ import QtQuick 2.12
 import core 1.0
 import QtQml.Models 2.12
 
+import "../../core"
 import "path.js" as Activity
 
-Rectangle {
+Item {
     id: mapView
+    required property bool touchEnabled
+    required property int rows
+    required property int cols
 
-    color: 'transparent'
-
-    property int rows
-    property int cols
-
-    property int cellSize
-
-    property bool touchEnabled: true
+    property double maxHeight: 1
+    property double maxWidth: 1
+    readonly property int cellSize: Math.min(maxHeight / rows, maxWidth / cols)
 
     height: cellSize * rows
     width: cellSize * cols
@@ -36,7 +35,6 @@ Rectangle {
         model: mapListModel
         delegate: Block {
             width: mapView.cellSize
-            height: mapView.cellSize
             index: DelegateModel.itemsIndex
         }
     }
@@ -71,10 +69,10 @@ Rectangle {
 
     Rectangle {
         id: selectedOverlay
-        opacity: 0.35
-        color: "#2651DA"
-        width: cellSize
-        height: cellSize
+        opacity: 0.5
+        color: GCStyle.highlightColor
+        width: cellSize - GCStyle.thinnestBorder
+        height: width
         visible: false
     }
 
@@ -88,8 +86,8 @@ Rectangle {
         var col = Math.floor(touch.x / cellSize)
 
         if(row >= 0 && row < rows && col >= 0 && col < cols) {
-            selectedOverlay.x = col * cellSize
-            selectedOverlay.y = row * cellSize
+            selectedOverlay.x = col * cellSize + GCStyle.thinnestBorder * 0.5
+            selectedOverlay.y = row * cellSize + GCStyle.thinnestBorder * 0.5
             selectedOverlay.visible = true
         }
         else {
