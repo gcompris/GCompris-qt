@@ -1,10 +1,12 @@
 /* GCompris - Penalty.qml
  *
  * SPDX-FileCopyrightText: 2014 Stephane Mankowski <stephane@mankowski.fr>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Stephane Mankowski <stephane@mankowski.fr> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (refactoring)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -23,45 +25,16 @@ ActivityBase {
     pageComponent: Image {
         id: activityBackground
         source: Activity.url + "penalty_bg.svg"
-        sourceSize.width: parent.width
-        fillMode: Image.Stretch
         anchors.fill: parent
+        sourceSize.width: width
+        sourceSize.height: height
+        fillMode: Image.Stretch
         signal start
         signal stop
 
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
-        }
-
-        // To enable tapping/clicking on left side of goal
-        GoalZone {
-            id: rectLeft
-            state: "LEFT"
-            progress: progressLeft
-            anchors.right: player.left
-            anchors.leftMargin: parent.width * 0.08
-            anchors.bottomMargin: parent.height * 0.45
-        }
-
-        // To enable tapping/clicking on top of goal
-        GoalZone {
-            id: rectTop
-            state: "CENTER"
-            progress: progressTop
-            anchors.left: player.left
-            anchors.right: player.right
-            anchors.bottom: player.top
-        }
-
-        // To enable tapping/clicking on right side of goal
-        GoalZone {
-            id: rectRight
-            state: "RIGHT"
-            progress: progressRight
-            anchors.left: player.right
-            anchors.rightMargin: parent.width * 0.06
-            anchors.bottomMargin: parent.height * 0.45
         }
 
         // Add here the QML items you need to access in javascript
@@ -74,83 +47,147 @@ ActivityBase {
             property alias progressLeft: progressLeft
             property alias progressRight: progressRight
             property alias progressTop: progressTop
+            property alias textItem: instructionPanel.textItem
+            property alias brickSound: brickSound
+            property alias flipSound: flipSound
             property alias bonus: bonus
+            property alias timerFail: timerFail
+            property alias ballAnim: ballAnim
             property int duration: 0
-            property int progressBarOpacity: 40
             property string saveBallState: "INITIAL"
-            property double ballX: ball.parent.width/2 - ball.width/2
-            property double ballY: ball.parent.height*0.77 - ball.height/2
+            property bool ballToReturn: false
         }
 
         onStart: { Activity.start(items) }
         onStop: {
-            timerBonus.stop()
+            timerFail.stop()
+            ballAnim.stop()
             Activity.stop()
         }
 
-        /* Instruction */
-        Item {
-            id: instruction
-            z: 99
-            anchors {
-                top: parent.top
-                topMargin: 10
-                horizontalCenter: parent.horizontalCenter
-            }
-            width: parent.width * 0.9
-            property alias text: instructionTxt.text
-            visible: bar.level === 1 && text != ""
-
-            GCText {
-                id: instructionTxt
-                anchors {
-                    horizontalCenter: parent.horizontalCenter
-                }
-                fontSize: mediumSize
-                color: "white"
-                style: Text.Outline
-                styleColor: "black"
-                horizontalAlignment: Text.AlignHCenter
-                width: parent.width
-                wrapMode: TextEdit.WordWrap
-                z: 2
-            }
-
-            Rectangle {
-                anchors.fill: instructionTxt
-                z: 1
-                opacity: 0.8
-                radius: 10
-                border.width: 2
-                border.color: "black"
-                gradient: Gradient {
-                    GradientStop { position: 0.0; color: "#000" }
-                    GradientStop { position: 0.9; color: "#666" }
-                    GradientStop { position: 1.0; color: "#AAA" }
-                }
-            }
+        GCSoundEffect {
+            id: brickSound
+            source: "qrc:/gcompris/src/core/resource/sounds/brick.wav"
         }
 
+        GCSoundEffect {
+            id: flipSound
+            source: "qrc:/gcompris/src/core/resource/sounds/flip.wav"
+        }
+
+        GCTextPanel {
+            id: instructionPanel
+            panelWidth: parent.width - 2 * GCStyle.baseMargins
+            panelHeight: Math.min(50 * ApplicationInfo.ratio, activityBackground.height * 0.2)
+            fixedHeight: true
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: parent.top
+            anchors.topMargin: GCStyle.baseMargins
+            hideIfEmpty: true
+            textItem.text: ball.initialInstruction
+        }
+
+        Item {
+            id: layoutArea
+            anchors.top: instructionPanel.bottom
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.bottom: parent.bottom
+            anchors.margins: GCStyle.baseMargins
+            anchors.bottomMargin: bar.height * 1.2
+        }
+
+        Rectangle {
+            id: playField
+            anchors.bottom: parent.bottom
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.top: goal.top
+            anchors.topMargin: goal.height * 0.75
+            color: "#71ba50"
+        }
+
+        Rectangle {
+            id: goalLine
+            color: GCStyle.whiteBg
+            width: activityBackground.width
+            height: goal.height * 0.034
+            anchors.bottom: goal.bottom
+            anchors.left: activityBackground.left
+        }
+
+        Image {
+            id: goal
+            source: Activity.url + "goal.svg"
+            anchors.bottom: activityBackground.verticalCenter
+            anchors.horizontalCenter: activityBackground.horizontalCenter
+            height: Math.min(activityBackground.height * 0.5 - instructionPanel.height - instructionPanel.anchors.topMargin - GCStyle.baseMargins, layoutArea.width * 0.5)
+            width: height * 2
+            sourceSize.width: width
+            sourceSize.height: height
+            fillMode: Image.PreserveAspectFit
+        }
+
+        // To enable tapping/clicking on left side of goal
+        GoalZone {
+            id: rectLeft
+            side: "LEFT"
+            progress: progressLeft
+            anchors.right: player.left
+            anchors.left: goal.left
+            anchors.leftMargin: goal.width * 0.025
+            anchors.bottom: goal.bottom
+            anchors.top: goal.top
+            anchors.topMargin: goal.height * 0.06
+        }
+
+        // To enable tapping/clicking on top of goal
+        GoalZone {
+            id: rectTop
+            side: "TOP"
+            progress: progressTop
+            anchors.left: player.left
+            anchors.right: player.right
+            anchors.bottom: player.top
+            anchors.top: goal.top
+            anchors.topMargin: rectLeft.anchors.topMargin
+        }
+
+        // To enable tapping/clicking on right side of goal
+        GoalZone {
+            id: rectRight
+            side: "RIGHT"
+            progress: progressRight
+            anchors.left: player.right
+            anchors.right: goal.right
+            anchors.rightMargin: rectLeft.anchors.leftMargin
+            anchors.bottom: goal.bottom
+            anchors.top: goal.top
+            anchors.topMargin: rectLeft.anchors.topMargin
+        }
 
         /* The progress bars */
         Progress {
             id: progressLeft
-            anchors.left: parent.left
-            anchors.leftMargin: parent.width / parent.implicitWidth * 62
+            anchors.centerIn: rectLeft
+            width: rectLeft.width - GCStyle.baseMargins
+            height: GCStyle.baseMargins
         }
 
         Progress {
             id: progressRight
-            anchors.right: parent.right
-            anchors.rightMargin: parent.width/parent.implicitWidth * 50
+            rotation: 180
+            anchors.centerIn: rectRight
+            width: progressLeft.width
+            height: GCStyle.baseMargins
         }
 
         Progress {
             id: progressTop
-            anchors.topMargin: parent.width / parent.implicitWidth * 40
-            anchors.horizontalCenter: parent.horizontalCenter
-            width: parent.height / parent.implicitHeight * 20
-            height: ratio / 100 * parent.width / parent.implicitWidth * 100
+            rotation: 90
+            anchors.centerIn: rectTop
+            width: rectTop.height - GCStyle.baseMargins
+            height: GCStyle.baseMargins
         }
 
         /* The player */
@@ -158,30 +195,34 @@ ActivityBase {
             id: player
             source: Activity.url + "penalty_player.svg"
             fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-            sourceSize.width: 154 * ApplicationInfo.ratio
+            height: goal.height * 0.6
+            sourceSize.height: height
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.bottom: goal.bottom
+            anchors.bottomMargin: -height * 0.2
         }
 
         /* The 2 click icon */
         Image {
             source: Activity.url + "click_icon.svg"
-            sourceSize.width: 90 * ApplicationInfo.ratio
+            sourceSize.width: GCStyle.bigButtonHeight
             anchors.bottom: bar.top
             anchors.right: parent.right
-            anchors.bottomMargin: 10 * ApplicationInfo.ratio
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.margins: GCStyle.baseMargins
         }
 
         /* The spot under the ball */
         Rectangle {
-            radius: 100 * ApplicationInfo.ratio
-            color: "white"
-            width: 50 * ApplicationInfo.ratio
-            height: 33 * ApplicationInfo.ratio
-            x: parent.width / 2 - width / 2
-            y: parent.height * 0.77 + width - height / 2
-            border.width: 1
-            border.color: "#b4b4b4"
+            id: ballOrigin
+            radius: width * 0.5
+            width: ball.width * 0.5
+            height: width
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.bottom: layoutArea.bottom
+            color: GCStyle.whiteBg
+            transform: [
+                Scale { origin.y: ballOrigin.height; yScale: 0.7 }
+            ]
         }
 
         /* The ball */
@@ -189,96 +230,128 @@ ActivityBase {
             id: ball
             source: Activity.url + "penalty_ball.svg"
             fillMode: Image.PreserveAspectFit
-            sourceSize.width: 100 * ApplicationInfo.ratio
+            width: Math.min(100 * ApplicationInfo.ratio, player.height * 0.5)
+            sourceSize.width: width
+            x: initialPoint.x
+            y: initialPoint.y
 
-            Behavior on x { PropertyAnimation {easing.type: Easing.OutQuad; duration:  1000} }
-            Behavior on y { PropertyAnimation {easing.type: Easing.OutQuad; duration:  1000} }
-            Behavior on sourceSize.width { PropertyAnimation {easing.type: Easing.OutQuad; duration: 1000} }
+            property string ballState: "INITIAL"
+            property string initialInstruction: qsTr("Double click or double tap on the side of the goal you want to put the ball in.")
+            property string resetBallInstruction: qsTr("Click or tap on the ball to bring it back to its initial position.")
 
-            state: "INITIAL"
-            states: [
-                State {
-                    name: "INITIAL"
-                    PropertyChanges {
-                        ball {
-                            sourceSize.width: 100 * ApplicationInfo.ratio
-                            x: ball.parent.width/2 - ball.width/2;
-                            y: ball.parent.height*0.77 - ball.height/2
-                        }
-                    }
-                    PropertyChanges {
-                        instruction {
-                            text: qsTr("Double click or double tap on the side of the goal you want to put the ball in.")
-                        }
-                    }
-                },
-                State {
-                    name: "RIGHT"
-                    PropertyChanges {
-                        ball {
-                            sourceSize.width: 75 * ApplicationInfo.ratio
-                            x: activityBackground.width * 0.7
-                            y: activityBackground.height * 0.3
-                        }
-                    }
-                },
-                State {
-                    name: "LEFT"
-                    PropertyChanges {
-                        ball {
-                            sourceSize.width: 75 * ApplicationInfo.ratio
-                            x: activityBackground.width * 0.2
-                            y: activityBackground.height * 0.3
-                        }
-                    }
-                },
-                State {
-                    name: "CENTER"
-                    PropertyChanges {
-                        ball {
-                            sourceSize.width: 75 * ApplicationInfo.ratio
-                            x: parent.width/2 - width/2;
-                            y: activityBackground.height * 0.1
-                        }
-                    }
-                },
-                State {
-                    name: "FAIL"
-                    PropertyChanges {
-                        ball {
-                            sourceSize.width: 75 * ApplicationInfo.ratio
-                            x: parent.width/2 - width/2
-                            y: player.y + player.height / 2
-                        }
-                    }
-                    PropertyChanges {
-                        instruction {
-                            text: qsTr("Click or tap on the ball to bring it back to its initial position.")
-                        }
-                    }
-                }
-            ]
+            property point destinationPoint
+            property real destinationScale
+            property int animDuration: 500
 
-            MouseArea {
-                anchors.fill: parent
-                acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MiddleButton
-                onClicked: {
-                    Activity.resetLevel()
+            readonly property point initialPoint: Qt.point(
+                (activityBackground.width - ball.width) * 0.5,
+                ballOrigin.y - ball.height + ballOrigin.height * 0.7)
+            readonly property point rightPoint: Qt.point(
+                rectRight.x + (rectRight.width - ball.width) * 0.5,
+                rectRight.y + (rectRight.height - ball.height) * 0.5)
+            readonly property point leftPoint:  Qt.point(
+                rectLeft.x + (rectLeft.width - ball.width) * 0.5,
+                rectLeft.y + (rectLeft.height - ball.height) * 0.5)
+            readonly property point topPoint:  Qt.point(
+                rectTop.x + (rectTop.width - ball.width) * 0.5,
+                rectTop.y + (rectTop.height - ball.height) * 0.5)
+            readonly property point failPoint: Qt.point(
+                player.x + (player.width - ball.width) * 0.5,
+                player.y + player.height * 0.5)
+
+            onBallStateChanged: {
+                switch(ball.ballState) {
+                    case "INITIAL":
+                        ball.destinationPoint = ball.initialPoint
+                        ball.destinationScale = 1
+                        ball.animDuration = 500
+                        ballAnim.restart();
+                        break;
+                    case "RIGHT":
+                        ball.destinationPoint = ball.rightPoint
+                        ball.destinationScale = 0.6
+                        ball.animDuration = 500
+                        ballAnim.restart();
+                        break;
+                    case "LEFT":
+                        ball.destinationPoint = ball.leftPoint
+                        ball.destinationScale = 0.6
+                        ball.animDuration = 500
+                        ballAnim.restart();
+                        break;
+                    case "TOP":
+                        ball.destinationPoint = ball.topPoint
+                        ball.destinationScale = 0.6
+                        ball.animDuration = 500
+                        ballAnim.restart();
+                        break;
+                    case "FAIL":
+                        ball.destinationPoint = ball.failPoint
+                        ball.destinationScale = 0.6
+                        ball.animDuration = 1000
+                        ballAnim.restart();
+                        break;
                 }
             }
         }
 
-        Timer {
-            id: timerBonus
-            interval: 1500
-            onTriggered: {
-                if (ball.state == "FAIL" || ball.state == "INITIAL") {
-                    bonus.bad("smiley")
-                    ball.state = "FAIL"
-                } else {
-                    bonus.good("smiley")
+        SequentialAnimation {
+            id: ballAnim
+            ScriptAction {
+                script: { instructionPanel.textItem.text = "" }
+            }
+            ParallelAnimation {
+                NumberAnimation {
+                    target: ball
+                    property: "x"
+                    to: ball.destinationPoint.x
+                    duration: ball.animDuration
+                    easing.type: Easing.OutQuad
+                }
+                NumberAnimation {
+                    target: ball
+                    property: "y"
+                    to: ball.destinationPoint.y
+                    duration: ball.animDuration
+                    easing.type: Easing.OutQuad
+                }
+                NumberAnimation {
+                    target: ball
+                    property: "scale"
+                    to: ball.destinationScale
+                    duration: ball.animDuration
+                    easing.type: Easing.OutQuad
                 }
             }
+            ScriptAction {
+                script: {
+                    if(ball.ballState === "INITIAL") {
+                        instructionPanel.textItem.text = ball.initialInstruction;
+                    } else if (ball.ballState === "FAIL") {
+                        bonus.bad("smiley")
+                    } else {
+                        bonus.good("smiley")
+                    }
+                }
+            }
+
+        }
+
+        MouseArea {
+            anchors.centerIn: ball
+            height: Math.max(GCStyle.bigButtonHeight, ball.height)
+            width: height
+            acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MiddleButton
+            enabled: items.ballToReturn
+            onClicked: {
+                Activity.resetLevel()
+            }
+        }
+
+        Timer {
+            id: timerFail
+            interval: 1500
+            onTriggered: ball.ballState = "FAIL";
         }
 
         DialogHelp {
@@ -303,6 +376,7 @@ ActivityBase {
             winSound: "qrc:/gcompris/src/activities/ballcatch/resource/tuxok.wav"
             looseSound: "qrc:/gcompris/src/activities/ballcatch/resource/youcannot.wav"
             Component.onCompleted: {
+                loose.connect(Activity.setBallToRetun)
                 win.connect(Activity.nextLevel)
             }
         }
