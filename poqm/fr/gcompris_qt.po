@@ -21575,7 +21575,7 @@ msgctxt "ActivityInfo|"
 msgid "Arrows: directions"
 msgstr "Flèches : directions"
 
-#: activities/path_encoding/GridPath.qml:136
+#: activities/path_encoding/GridPath.qml:130
 #, qt-format
 msgctxt "GridPath|"
 msgid "Errors: %1"
