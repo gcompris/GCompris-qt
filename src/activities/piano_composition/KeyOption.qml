@@ -26,12 +26,11 @@ Item {
     height: optionsRow.iconsWidth
     visible: clefButtonVisible
     Rectangle {
-        color: "yellow"
-        opacity: 0.1
-        border.width: 2
-        border.color: "black"
+        color: GCStyle.lightTransparentBg
+        border.width: GCStyle.thinnestBorder
+        border.color: GCStyle.blueBorder
         anchors.fill: parent
-        radius: 10
+        radius: GCStyle.halfMargins
     }
 
     SwitchableOptions {
@@ -39,13 +38,14 @@ Item {
         nbOptions: 2
         source: "qrc:/gcompris/src/activities/piano_composition/resource/" + (!currentIndex ? "trebbleClefButton.svg"
         : "bassClefButton.svg")
-        width: optionsRow.iconsWidth * 0.9
+        width: optionsRow.iconsWidth - 2 * GCStyle.tinyMargins
         visible: clefButtonVisible
         onClicked: {
             //: Treble clef and Bass clef are the notations to indicate the pitch of the sound written on it.
             emitOptionMessage(!currentIndex ? qsTr("Treble clef") : qsTr("Bass clef"))
         }
         anchors.left: parent.left
+        anchors.leftMargin: GCStyle.tinyMargins
         anchors.verticalCenter: parent.verticalCenter
     }
 
@@ -54,6 +54,7 @@ Item {
         width: clefButton.width
         source: "qrc:/gcompris/src/activities/piano_composition/resource/add.svg"
         anchors.right: parent.right
+        anchors.rightMargin: GCStyle.tinyMargins
         anchors.verticalCenter: parent.verticalCenter
         visible: clefButton.visible
         onClicked: {

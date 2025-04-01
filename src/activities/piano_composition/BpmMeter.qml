@@ -35,27 +35,28 @@ Item {
     Rectangle {
         id: bpmBg
         color: "#80FFFFFF"
-        border.width: 2 * ApplicationInfo.ratio
+        border.width: GCStyle.thinBorder
         border.color: "#80000000"
         width: optionsRow.iconsWidth
         height: optionsRow.iconsWidth
         anchors.left: parent.left
-        radius: 5 * ApplicationInfo.ratio
+        radius: GCStyle.halfMargins
     }
     GCText {
         //: BPM is the abbreviation for Beats Per Minute.
         text: qsTr("%1 BPM").arg(multipleStaff.bpmValue + "<br>")
-        width: 0.9 * bpmBg.width
-        height: 0.9 * bpmBg.height
+        anchors.fill: bpmBg
+        anchors.margins: GCStyle.halfMargins
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
-        anchors.centerIn: bpmBg
         fontSizeMode: Text.Fit
+        fontSize: smallSize
+        minimumPointSize: 5
     }
     Item {
         id: bpmDown
-        width: iconsWidth
-        height: iconsWidth * 0.5
+        width: optionsRow.iconsWidth
+        height: optionsRow.iconsWidth * 0.5
         anchors.bottom: parent.bottom
         anchors.left: bpmBg.right
         Image {

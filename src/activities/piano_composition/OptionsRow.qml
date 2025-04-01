@@ -110,12 +110,11 @@ Grid {
         height: optionsRow.iconsWidth
         visible: restOptionsVisible
         Rectangle {
-            color: "yellow"
-            opacity: 0.1
-            border.width: 2
-            border.color: "black"
+            color: GCStyle.lightTransparentBg
+            border.width: GCStyle.thinnestBorder
+            border.color: GCStyle.blueBorder
             anchors.fill: parent
-            radius: 10
+            radius: GCStyle.halfMargins
         }
 
         SwitchableOptions {
@@ -129,11 +128,11 @@ Grid {
                 activityBackground.restType = optionsRow.noteLengthName[currentIndex][1]
                 emitOptionMessage(optionsRow.translatedRestNames[currentIndex])
             }
-            width: optionsRow.iconsWidth * 0.9
+            width: optionsRow.iconsWidth - 2 * GCStyle.tinyMargins
             visible: restOptionsVisible
-            anchors.topMargin: -3
+            anchors.verticalCenter: parent.verticalCenter
             anchors.left: parent.left
-            anchors.leftMargin: 5
+            anchors.leftMargin: GCStyle.tinyMargins
         }
 
         BarButton {
@@ -142,6 +141,7 @@ Grid {
             height: width
             source: "qrc:/gcompris/src/activities/piano_composition/resource/add.svg"
             anchors.right: parent.right
+            anchors.rightMargin: GCStyle.tinyMargins
             anchors.verticalCenter: parent.verticalCenter
             visible: restOptions.visible
             onClicked: {

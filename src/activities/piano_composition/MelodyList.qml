@@ -18,7 +18,7 @@ import "../../core"
 
 Rectangle {
     id: dialogBackground
-    color: "#696da3"
+    color: GCStyle.configBg
     z: 10000
     anchors.fill: parent
     visible: false
@@ -52,27 +52,28 @@ Rectangle {
     }
 
     Column {
-        spacing: 10
+        id: contentColumn
+        spacing: GCStyle.baseMargins
         anchors.top: parent.top
-        anchors.topMargin: 15
+        anchors.topMargin: GCStyle.baseMargins
         anchors.horizontalCenter: parent.horizontalCenter
-        width: dialogBackground.width - 30
+        width: dialogBackground.width - 2 * GCStyle.baseMargins
         Rectangle {
             id: titleRectangle
-            color: "#e6e6e6"
-            radius: 10 * ApplicationInfo.ratio
+            color: GCStyle.lightBg
+            radius: GCStyle.baseMargins
             width: parent.width
-            height: title.height + 10 * 2
+            height: Math.max(title.height, closeButton.height) + GCStyle.baseMargins
 
             GCText {
                 id: title
                 text: qsTr("Melodies")
-                width: titleRectangle.width - 120 * ApplicationInfo.ratio //minus twice the cancel button size
+                width: titleRectangle.width - (closeButton.width + closeButton.anchors.margins) * 2
                 anchors.horizontalCenter: titleRectangle.horizontalCenter
                 anchors.verticalCenter: titleRectangle.verticalCenter
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                fontSize: 20
+                fontSize: mediumSize
                 font.weight: Font.DemiBold
                 wrapMode: Text.WordWrap
             }
@@ -80,8 +81,9 @@ Rectangle {
             GCButtonCancel {
                 id: closeButton
                 apply: true
+                anchors.top: undefined
                 anchors.verticalCenter: titleRectangle.verticalCenter
-                anchors.margins: 2 * ApplicationInfo.ratio
+                anchors.margins: GCStyle.tinyMargins
                 onClose: {
                     dialogBackground.selectedMelodyIndex = -1
                     dialogBackground.close()
@@ -90,64 +92,59 @@ Rectangle {
         }
 
         Rectangle {
-            color: "#bdbed0"
-            radius: 10 * ApplicationInfo.ratio
-            width: dialogBackground.width - 30
+            id: flickableBg
+            color: GCStyle.lightTransparentBg
+            radius: GCStyle.baseMargins
+            width: parent.width
             height: dialogBackground.height - (2 * parent.anchors.topMargin) - titleRectangle.height - parent.spacing
-            border.color: "white"
-            border.width: 3 * ApplicationInfo.ratio
+            border.color: GCStyle.whiteBorder
+            border.width: GCStyle.midBorder
 
             Flickable {
                 id: flickableList
-                maximumFlickVelocity: dialogBackground.height
-                boundsBehavior: Flickable.StopAtBounds
+                anchors.margins: GCStyle.baseMargins
                 anchors.fill: parent
-                anchors.margins: 10 * ApplicationInfo.ratio
                 contentWidth: width
                 contentHeight: melodiesGrid.height
                 flickableDirection: Flickable.VerticalFlick
+                maximumFlickVelocity: dialogBackground.height
+                boundsBehavior: Flickable.StopAtBounds
                 clip: true
 
                 Flow {
                     id: melodiesGrid
                     width: parent.width
-                    spacing: 40
+                    spacing: GCStyle.baseMargins
                     anchors.horizontalCenter: parent.horizontalCenter
 
                     Repeater {
                         id: melodiesRepeater
                         model: melodiesModel
 
-                        Item {
-                            id: melodiesItem
-                            width: dialogBackground.horizontalLayout ? dialogBackground.width / 5 : dialogBackground.width / 4
-                            height: dialogBackground.height / 5
+                        GCButton {
+                            text: title
+                            onClicked: {
+                                dialogBackground.selectedMelodyIndex = index
+                                items.multipleStaff.stopAudios()
+                                items.multipleStaff.nbStaves = 2
+                                items.multipleStaff.bpmValue = defaultBPM ? defaultBPM : 60
+                                items.multipleStaff.loadFromData(melody)
+                                lyricsArea.setLyrics(title, _origin, lyrics)
+                            }
+                            width: Math.floor((flickableList.width - GCStyle.baseMargins * 3) * 0.25)
+                            height: Math.min(100 * ApplicationInfo.ratio, flickableList.height * 0.25)
+                            theme: "dark"
 
-                            GCButton {
-                                text: title
-                                onClicked: {
-                                    dialogBackground.selectedMelodyIndex = index
-                                    items.multipleStaff.stopAudios()
-                                    items.multipleStaff.nbStaves = 2
-                                    items.multipleStaff.bpmValue = defaultBPM ? defaultBPM : 60
-                                    items.multipleStaff.loadFromData(melody)
-                                    lyricsArea.setLyrics(title, _origin, lyrics)
-                                }
-                                width: parent.width
-                                height: parent.height * 0.8
-                                theme: "dark"
-
-                                Image {
-                                    source: "qrc:/gcompris/src/core/resource/apply.svg"
-                                    sourceSize.width: height
-                                    sourceSize.height: height
-                                    width: height
-                                    height: parent.height / 4
-                                    anchors.bottom: parent.bottom
-                                    anchors.right: parent.right
-                                    anchors.margins: 2
-                                    visible: dialogBackground.selectedMelodyIndex === index
-                                }
+                            Image {
+                                source: "qrc:/gcompris/src/core/resource/apply.svg"
+                                sourceSize.width: height
+                                sourceSize.height: height
+                                width: height
+                                height: parent.height * 0.25
+                                anchors.bottom: parent.bottom
+                                anchors.right: parent.right
+                                anchors.margins: GCStyle.tinyMargins
+                                visible: dialogBackground.selectedMelodyIndex === index
                             }
                         }
                     }
@@ -157,11 +154,10 @@ Rectangle {
             GCButtonScroll {
                 id: scrollItem
                 anchors.right: parent.right
-                anchors.rightMargin: 5 * ApplicationInfo.ratio
                 anchors.bottom: flickableList.bottom
-                anchors.bottomMargin: 5 * ApplicationInfo.ratio
-                onUp: flickableList.flick(0, 1400)
-                onDown: flickableList.flick(0, -1400)
+                anchors.margins: GCStyle.halfMargins
+                onUp: flickableList.flick(0, 1000)
+                onDown: flickableList.flick(0, -1000)
                 upVisible: flickableList.atYBeginning ? false : true
                 downVisible: flickableList.atYEnd ? false : true
             }
