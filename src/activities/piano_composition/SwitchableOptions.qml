@@ -32,7 +32,6 @@ Image {
         hoverEnabled: true
         onClicked: {
             parent.currentIndex = (parent.currentIndex + 1) % nbOptions
-            //clickAnimation.start()
             parent.clicked()
         }
     }

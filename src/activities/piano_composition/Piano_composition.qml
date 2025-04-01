@@ -29,7 +29,7 @@ ActivityBase {
     pageComponent: Rectangle {
         id: activityBackground
         anchors.fill: parent
-        color: "#ABCDEF"
+        color: GCStyle.lightBlueBg
         signal start
         signal stop
 
@@ -41,8 +41,6 @@ ActivityBase {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
-
-        readonly property int baseMargins: 5 * ApplicationInfo.ratio
 
         Keys.onPressed: (event) => {
             var keyboardBindings = {}
@@ -111,67 +109,45 @@ ActivityBase {
         property string restType: "Whole"
         property string clefType: items.currentLevel == 1 ? "Bass" : "Treble"
         property bool isLyricsMode: (optionsRow.lyricsOrPianoModeIndex === 1) && optionsRow.lyricsOrPianoModeOptionVisible
-        property int layoutMargins: 5 * ApplicationInfo.ratio
 
         File {
             id: file
             onError: (msg) => console.error("File error: " + msg)
         }
 
-        Item {
-            id: clickedOptionMessage
+        GCTextPanel {
+            id: messagePanel
+            panelWidth: Math.min(activityBackground.width / 6, optionsRow.iconsWidth * 3)
+            panelHeight: Math.min(panelWidth * 0.5, optionsRow.iconsWidth)
+            fixedHeight: true
+            anchors.top: optionsRow.bottom
+            anchors.topMargin: GCStyle.tinyMargins
+            anchors.horizontalCenter: optionsRow.horizontalCenter
+            textItem.fontSize: textItem.smallSize
+            opacity: 0
+            z: 5
 
             signal show(string message)
             onShow: (message) => {
-                messageText.text = message
+                messagePanel.textItem.text = message
                 messageAnimation.stop()
                 messageAnimation.start()
             }
 
-            height: width * 0.4
-            visible: false
-            anchors.top: optionsRow.bottom
-            anchors.horizontalCenter: optionsRow.horizontalCenter
-            z: 5
-            Rectangle {
-                id: messageRectangle
-                width: messageText.contentWidth + 5
-                height: messageText.height + 5
-                anchors.centerIn: messageText
-                color: "black"
-                opacity: 0.5
-                border.width: 3
-                border.color: "black"
-                radius: 15
-            }
-
-            GCText {
-                id: messageText
-                anchors.fill: parent
-                anchors.rightMargin: parent.width * 0.02
-                anchors.leftMargin: parent.width * 0.02
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                fontSizeMode: Text.Fit
-                color: "white"
-            }
-
             SequentialAnimation {
                 id: messageAnimation
-                onStarted: clickedOptionMessage.visible = true
+                onStarted: messagePanel.opacity = 1
                 PauseAnimation {
                     duration: 1000
                 }
                 NumberAnimation {
-                    targets: [messageRectangle, messageText]
+                    targets: messagePanel
                     property: "opacity"
                     to: 0
                     duration: 200
                 }
                 onStopped: {
-                    clickedOptionMessage.visible = false
-                    messageRectangle.opacity = 0.5
-                    messageText.opacity = 1
+                    messagePanel.opacity = 0
                 }
             }
         }
@@ -188,23 +164,21 @@ ActivityBase {
 
         Rectangle {
             id: instructionBox
-            radius: activityBackground.baseMargins
-            width: activityBackground.horizontalLayout ? activityBackground.width * 0.75 : activityBackground.width - 2 * (optionsRow.iconsWidth + activityBackground.baseMargins)
+            radius: GCStyle.halfMargins
+            width: activityBackground.horizontalLayout ? activityBackground.width * 0.75 : activityBackground.width - 2 * (optionsRow.iconsWidth + GCStyle.halfMargins)
             height: activityBackground.height * 0.15
             anchors.top: parent.top
             anchors.right: parent.right
-            opacity: 0.8
-            border.width: 2 * ApplicationInfo.ratio
-            color: "white"
-            border.color: "#87A6DD"
+            border.width: GCStyle.thinBorder
+            color: GCStyle.lightBg
+            border.color: GCStyle.blueBorder
 
             GCText {
                 id: instructionText
-                color: "black"
+                color: GCStyle.darkText
                 z: 3
                 anchors.fill: parent
-                anchors.rightMargin: activityBackground.baseMargins
-                anchors.leftMargin: activityBackground.baseMargins
+                anchors.margins: GCStyle.halfMargins
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 fontSizeMode: Text.Fit
@@ -219,7 +193,7 @@ ActivityBase {
             clef: clefType
             coloredNotes: ['C','D', 'E', 'F', 'G', 'A', 'B']
             noteHoverEnabled: true
-            anchors.margins: layoutMargins
+            anchors.margins: GCStyle.halfMargins
 
             onNoteClicked: (noteIndex) => {
                 if(selectedIndex === noteIndex)
@@ -248,7 +222,7 @@ ActivityBase {
             id: pianoLayout
             width: multipleStaff.width + multipleStaffFlickButton.width
             height: multipleStaff.height
-            anchors.margins: layoutMargins
+            anchors.margins: GCStyle.halfMargins
 
             PianoOctaveKeyboard {
                 id: piano
@@ -337,7 +311,7 @@ ActivityBase {
 
         OptionsRow {
             id: optionsRow
-            anchors.margins: layoutMargins
+            anchors.margins: GCStyle.halfMargins
             anchors.left: activityBackground.left
             iconsWidth: 0
             noteOptionsVisible: items.currentLevel > 3
@@ -403,7 +377,7 @@ ActivityBase {
             onBpmIncreased: {
                 multipleStaff.bpmValue++
             }
-            onEmitOptionMessage: (message) => clickedOptionMessage.show(message)
+            onEmitOptionMessage: (message) => messagePanel.show(message)
         }
 
         DialogActivityConfig {
@@ -411,8 +385,8 @@ ActivityBase {
             content: Component {
                 Column {
                     id: column
-                    spacing: 10
-                    width: dialogActivityConfig.width - 50 * ApplicationInfo.ratio
+                    spacing: GCStyle.baseMargins
+                    width: dialogActivityConfig.width - 2 * GCStyle.baseMargins
 
                     GCText {
                         text: qsTr("Select the type of melody to load.")
@@ -478,11 +452,6 @@ ActivityBase {
             State {
                 name: "hScreen"
                 when: horizontalLayout
-                PropertyChanges {
-                    clickedOptionMessage {
-                        width: activityBackground.width / 12
-                    }
-                }
                 AnchorChanges {
                     target: optionsRow
                     anchors.top: instructionBox.bottom
@@ -500,8 +469,8 @@ ActivityBase {
                 }
                 PropertyChanges {
                     multipleStaff {
-                        width: activityBackground.width * 0.5 - multipleStaffFlickButton.width - layoutMargins * 3
-                        height: activityBackground.height - instructionBox.height - optionsRow.height - bar.height - layoutMargins * 4
+                        width: activityBackground.width * 0.5 - multipleStaffFlickButton.width - GCStyle.halfMargins * 3
+                        height: activityBackground.height - instructionBox.height - optionsRow.height - bar.height - GCStyle.halfMargins * 4
                     }
                 }
                 AnchorChanges {
@@ -513,11 +482,6 @@ ActivityBase {
             State {
                 name: "vScreen"
                 when: !horizontalLayout
-                PropertyChanges {
-                    clickedOptionMessage {
-                        width: activityBackground.width / 6
-                    }
-                }
                 AnchorChanges {
                     target: optionsRow
                     anchors.top: activityBackground.top
@@ -535,8 +499,8 @@ ActivityBase {
                 }
                 PropertyChanges {
                     multipleStaff {
-                        width: activityBackground.width - multipleStaffFlickButton.width - optionsRow.width - layoutMargins * 3
-                        height: (activityBackground.height - instructionBox.height - bar.height - layoutMargins * 4) * 0.5
+                        width: activityBackground.width - multipleStaffFlickButton.width - optionsRow.width - GCStyle.halfMargins * 3
+                        height: (activityBackground.height - instructionBox.height - bar.height - GCStyle.halfMargins * 4) * 0.5
                     }
                 }
                 AnchorChanges {

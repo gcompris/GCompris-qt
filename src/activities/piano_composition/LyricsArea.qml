@@ -21,73 +21,71 @@ Rectangle {
     property string origin: ""
     property string lyrics: ""
 
-    border.width: 3
-    radius: 5
-    border.color: "black"
-    opacity: 0.8
+    border.width: GCStyle.thinBorder
+    radius: GCStyle.halfMargins
+    border.color: GCStyle.blueBorder
     visible: activityBackground.isLyricsMode
-    Item {
+
+    GCText {
         id: melodyTitle
-        width: parent.width
-        height: parent.height / 6
-        GCText {
-            id: titleText
-            fontSizeMode: Text.Fit
-            wrapMode: Text.WordWrap
-            text: qsTr("Title: %1").arg(lyricsArea.title)
-            anchors.fill: parent
-            anchors.rightMargin: parent.width * 0.02
-            anchors.leftMargin: parent.width * 0.02
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            font.bold: true
-            color: "green"
+        anchors {
+            top: parent.top
+            left: parent.left
+            right: parent.right
+            margins: GCStyle.halfMargins
         }
+        height: parent.height / 8
+        fontSizeMode: Text.Fit
+        wrapMode: Text.WordWrap
+        text: qsTr("Title: %1").arg(lyricsArea.title)
+        verticalAlignment: Text.AlignVCenter
+        horizontalAlignment: Text.AlignHCenter
+        font.bold: true
+        color: "#5471af"
     }
 
     Rectangle {
         id: titleUnderline
-        width: titleText.contentWidth
-        height: 3
-        color: "black"
+        width: melodyTitle.contentWidth
+        height: GCStyle.thinBorder
+        color: GCStyle.blueBorder
         anchors.top: melodyTitle.bottom
+        anchors.margins: GCStyle.halfMargins
         anchors.horizontalCenter: melodyTitle.horizontalCenter
     }
 
-    Item {
+    GCText {
         id: melodyOrigin
-        width: parent.width
-        height: parent.height / 8
-        anchors.top: titleUnderline.bottom
-        GCText {
-            fontSizeMode: Text.Fit
-            wrapMode: Text.WordWrap
-            text: qsTr("Origin: %1").arg(lyricsArea.origin)
-            anchors.fill: parent
-            anchors.rightMargin: parent.width * 0.02
-            anchors.leftMargin: parent.width * 0.02
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            font.italic: true
-            color: "red"
+        anchors {
+            top: titleUnderline.bottom
+            left: parent.left
+            right: parent.right
+            margins: GCStyle.halfMargins
         }
+        height: parent.height / 10
+        fontSizeMode: Text.Fit
+        wrapMode: Text.WordWrap
+        text: qsTr("Origin: %1").arg(lyricsArea.origin)
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
+        font.italic: true
+        color: "#69799a"
     }
 
-    Item {
+    GCText {
         id: melodyLyrics
-        width: parent.width
-        height: parent.height - melodyTitle.height - melodyOrigin.height - 20
-        anchors.top: melodyOrigin.bottom
-        GCText {
-            fontSizeMode: Text.Fit
-            wrapMode: Text.WordWrap
-            text: lyricsArea.lyrics
-            anchors.fill: parent
-            anchors.rightMargin: parent.width * 0.05
-            anchors.leftMargin: parent.width * 0.05
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
+        anchors {
+            top: melodyOrigin.bottom
+            bottom: parent.bottom
+            left: parent.left
+            right: parent.right
+            margins: GCStyle.halfMargins
         }
+        fontSizeMode: Text.Fit
+        wrapMode: Text.WordWrap
+        text: lyricsArea.lyrics
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
     }
 
     function resetLyricsArea() {
