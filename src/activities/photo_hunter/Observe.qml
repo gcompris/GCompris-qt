@@ -17,8 +17,9 @@ import "photo_hunter.js" as Activity
 Image {
     id: card
 
-    width: activityBackground.isHorizontal ? Math.min(frame.height - slider.height, parent.width * 0.5) - 10 * ApplicationInfo.ratio:
-                                    Math.min(frame.width, parent.height * 0.5 - 10 * ApplicationInfo.ratio)
+    width: activityBackground.isHorizontal ?
+        Math.min(frame.height - slider.height, parent.width * 0.5) - GCStyle.baseMargins:
+        Math.min(frame.width, parent.height * 0.5 - GCStyle.baseMargins)
     height: width
     sourceSize.width: width
     sourceSize.height: width
@@ -49,8 +50,8 @@ Image {
     Image {
         id: wrong
         source: "qrc:/gcompris/src/activities/tic_tac_toe/resource/cross.svg"
-        width: 70
-        height: 70
+        width: GCStyle.smallButtonHeight
+        height: GCStyle.smallButtonHeight
         opacity: 0
     }
 
@@ -79,8 +80,8 @@ Image {
         onClicked: {
             items.brickSound.play()
             wrongAnim.start()
-            wrong.x = mouseX - wrong.width/2
-            wrong.y = mouseY - wrong.height/2
+            wrong.x = mouseX - wrong.width * 0.5
+            wrong.y = mouseY - wrong.height * 0.5
             wrongAnim2.start()
         }
     }
@@ -156,7 +157,7 @@ Image {
             color: "transparent"
             radius: width * 0.5
             border.color: card.show ? "#BF3535E8" : "#BFE83535" // blue : red
-            border.width: 2 * ApplicationInfo.ratio
+            border.width: GCStyle.thinBorder
             opacity: 0
             x: itemAt.x + (itemAt.width - width) * 0.5
             y: itemAt.y + (itemAt.height - height) * 0.5
