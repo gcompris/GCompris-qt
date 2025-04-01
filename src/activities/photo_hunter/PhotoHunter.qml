@@ -76,32 +76,17 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/sounds/bleep.wav"
         }
 
-        Rectangle {
-            id: problem
-            width: problemText.contentWidth + 20 * ApplicationInfo.ratio
-            height:  problemText.contentHeight + 10 * ApplicationInfo.ratio
-            anchors.centerIn: problemText
-            color: "#C0373737"
-        }
-
-        GCText {
-            id: problemText
-            anchors.left: parent.left
-            anchors.right: score.left
-            anchors.top: score.top
-            anchors.bottom: score.bottom
-            anchors.margins: 10 * ApplicationInfo.ratio
-            anchors.leftMargin: 20 * ApplicationInfo.ratio
-            anchors.rightMargin: 20 * ApplicationInfo.ratio
-            width: parent.width * 0.9
-            fontSize: mediumSize
-            fontSizeMode: Text.Fit
-            wrapMode: Text.WordWrap
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            text: activityBackground.startedHelp ? qsTr("Drag the slider to show the differences.") :
-            qsTr("Click on the differences between the two images.")
-            color: "white"
+        GCTextPanel {
+            id: instructionPanel
+            panelWidth: parent.width - score.width - 3 * GCStyle.baseMargins
+            panelHeight: score.height
+            fixedHeight: true
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.verticalCenter: score.verticalCenter
+            anchors.horizontalCenterOffset: -(score.width + GCStyle.baseMargins) * 0.5
+            textItem.text: activityBackground.startedHelp ?
+                qsTr("Drag the slider to show the differences.") :
+                qsTr("Click on the differences between the two images.")
         }
 
         Item {
@@ -110,7 +95,7 @@ ActivityBase {
             anchors.left: activityBackground.left
             anchors.right: activityBackground.right
             anchors.bottom: parent.bottom
-            anchors.margins: 10 * ApplicationInfo.ratio
+            anchors.margins: GCStyle.baseMargins
             anchors.bottomMargin: activityBackground.barHeight
 
             //left/top image
@@ -135,13 +120,13 @@ ActivityBase {
                     when: activityBackground.isHorizontal && !activityBackground.startedHelp
                     PropertyChanges {
                         img1 {
-                            anchors.horizontalCenterOffset: -img1.width * 0.5 - 5 * ApplicationInfo.ratio
+                            anchors.horizontalCenterOffset: -img1.width * 0.5 - GCStyle.halfMargins
                             anchors.verticalCenterOffset: 0
                         }
                     }
                     PropertyChanges {
                         img2 {
-                            anchors.horizontalCenterOffset: img1.width * 0.5 + 5 * ApplicationInfo.ratio
+                            anchors.horizontalCenterOffset: img1.width * 0.5 + GCStyle.halfMargins
                             anchors.verticalCenterOffset: 0
                         }
                     }
@@ -151,12 +136,12 @@ ActivityBase {
                     when: !activityBackground.isHorizontal && !activityBackground.startedHelp
                     PropertyChanges {
                         img1 {
-                            anchors.verticalCenterOffset: -img1.height * 0.5 - 5 * ApplicationInfo.ratio
+                            anchors.verticalCenterOffset: -img1.height * 0.5 - GCStyle.halfMargins
                         }
                     }
                     PropertyChanges {
                         img2 {
-                            anchors.verticalCenterOffset: img1.height * 0.5 + 5 * ApplicationInfo.ratio
+                            anchors.verticalCenterOffset: img1.height * 0.5 + GCStyle.halfMargins
                         }
                     }
                 },
@@ -188,7 +173,7 @@ ActivityBase {
 
                 anchors {
                     top: img2.bottom
-                    topMargin: 10 * ApplicationInfo.ratio
+                    topMargin: GCStyle.baseMargins
                     horizontalCenter: img1.horizontalCenter
                 }
             }
@@ -226,9 +211,8 @@ ActivityBase {
                 bottom: undefined
                 left: undefined
                 top: activityBackground.top
-                topMargin: 10 * ApplicationInfo.ratio
                 right: parent.right
-                rightMargin: 10 * ApplicationInfo.ratio
+                margins: GCStyle.baseMargins
             }
             numberOfSubLevels: items.total
             currentSubLevel: items.totalFound
