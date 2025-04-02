@@ -21433,7 +21433,7 @@ msgstr ""
 "clic suficient de repede, atunci portarul Tux va prinde mingea. În acest "
 "caz, trebuie să faci clic pe ea ca s-o aduci înapoi în poziția inițială."
 
-#: activities/penalty/Penalty.qml:211
+#: activities/penalty/Penalty.qml:239
 msgctxt "Penalty|"
 msgid ""
 "Double click or double tap on the side of the goal you want to put the ball "
@@ -21442,7 +21442,7 @@ msgstr ""
 "Fă dublu clic cu mausul sau cu degetul pe ecran, pe spațiul porții, pentru a "
 "înscrie un gol."
 
-#: activities/penalty/Penalty.qml:256
+#: activities/penalty/Penalty.qml:240
 msgctxt "Penalty|"
 msgid "Click or tap on the ball to bring it back to its initial position."
 msgstr ""
@@ -21477,14 +21477,14 @@ msgstr ""
 "Observă cu atenție cele două imagini. Între ele există niște mici diferențe. "
 "Când ai găsit o diferență, fă clic pe ea."
 
-#: activities/photo_hunter/PhotoHunter.qml:102
+#: activities/photo_hunter/PhotoHunter.qml:88
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr ""
 "Fă clic pe pictograma bec și trage apoi de punctul de pe bară, pentru a "
 "arăta diferențele."
 
-#: activities/photo_hunter/PhotoHunter.qml:103
+#: activities/photo_hunter/PhotoHunter.qml:89
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Fă clic pe diferențele dintre cele două imagini."
@@ -21648,33 +21648,33 @@ msgid "%1 BPM"
 msgstr "%1 BPM"
 
 #. Treble clef and Bass clef are the notations to indicate the pitch of the sound written on it.
-#: activities/piano_composition/KeyOption.qml:46
+#: activities/piano_composition/KeyOption.qml:45
 msgctxt "KeyOption|"
 msgid "Treble clef"
 msgstr "Registrul acut"
 
-#: activities/piano_composition/KeyOption.qml:46
+#: activities/piano_composition/KeyOption.qml:45
 msgctxt "KeyOption|"
 msgid "Bass clef"
 msgstr "Registrul grav"
 
-#: activities/piano_composition/KeyOption.qml:61
+#: activities/piano_composition/KeyOption.qml:62
 msgctxt "KeyOption|"
 msgid "Treble clef added"
 msgstr "Registrul acut adăugat"
 
-#: activities/piano_composition/KeyOption.qml:61
+#: activities/piano_composition/KeyOption.qml:62
 msgctxt "KeyOption|"
 msgid "Bass clef added"
 msgstr "Registrul grav adăugat"
 
-#: activities/piano_composition/LyricsArea.qml:37
+#: activities/piano_composition/LyricsArea.qml:40
 #, qt-format
 msgctxt "LyricsArea|"
 msgid "Title: %1"
 msgstr "Titlul: %1"
 
-#: activities/piano_composition/LyricsArea.qml:65
+#: activities/piano_composition/LyricsArea.qml:68
 #, qt-format
 msgctxt "LyricsArea|"
 msgid "Origin: %1"
@@ -21798,7 +21798,7 @@ msgctxt "melodies|"
 msgid "Finland"
 msgstr "Finlanda"
 
-#: activities/piano_composition/MelodyList.qml:69
+#: activities/piano_composition/MelodyList.qml:70
 msgctxt "MelodyList|"
 msgid "Melodies"
 msgstr "Melodii"
@@ -21955,37 +21955,37 @@ msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"
 msgstr "S-a salvat melodia în fișierul tău (%1)"
 
-#: activities/piano_composition/Piano_composition.qml:361
+#: activities/piano_composition/Piano_composition.qml:335
 msgctxt "Piano_composition|"
 msgid "You have not selected any note. Do you want to erase all the notes?"
 msgstr "Nu ai selectat nicio notă. Vrei să ștergi toate notele?"
 
-#: activities/piano_composition/Piano_composition.qml:362
+#: activities/piano_composition/Piano_composition.qml:336
 msgctxt "Piano_composition|"
 msgid "Yes"
 msgstr "Da"
 
-#: activities/piano_composition/Piano_composition.qml:368
+#: activities/piano_composition/Piano_composition.qml:342
 msgctxt "Piano_composition|"
 msgid "No"
 msgstr "Nu"
 
-#: activities/piano_composition/Piano_composition.qml:418
+#: activities/piano_composition/Piano_composition.qml:392
 msgctxt "Piano_composition|"
 msgid "Select the type of melody to load."
 msgstr "Alege tipul de melodie care să se încarce."
 
-#: activities/piano_composition/Piano_composition.qml:423
+#: activities/piano_composition/Piano_composition.qml:397
 msgctxt "Piano_composition|"
 msgid "Pre-defined melodies"
 msgstr "Melodii predefinite."
 
-#: activities/piano_composition/Piano_composition.qml:441
+#: activities/piano_composition/Piano_composition.qml:415
 msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "Melodiile tale salvate."
 
-#: activities/piano_composition/Piano_composition.qml:555
+#: activities/piano_composition/Piano_composition.qml:519
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21994,12 +21994,12 @@ msgstr ""
 "Această activitate necesită sunet, deci vor fi redate niște sunete, chiar "
 "dacă vocile și efectele audio sunt dezactivate în configurația principală."
 
-#: activities/piano_composition/Piano_composition.qml:556
+#: activities/piano_composition/Piano_composition.qml:520
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "Ieși"
 
-#: activities/piano_composition/Piano_composition.qml:557
+#: activities/piano_composition/Piano_composition.qml:521
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "Continuă"

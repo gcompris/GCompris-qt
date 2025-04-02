@@ -21656,7 +21656,7 @@ msgstr ""
 "kipanya. Usipobofya mara mbili haraka vya kutosha, Tux atashika mpira. "
 "Lazima ubofye juu yake ili kuirejesha kwenye nafasi yake ya awali."
 
-#: activities/penalty/Penalty.qml:211
+#: activities/penalty/Penalty.qml:239
 msgctxt "Penalty|"
 msgid ""
 "Double click or double tap on the side of the goal you want to put the ball "
@@ -21665,7 +21665,7 @@ msgstr ""
 "Bofya mara mbili au gusa mara mbili kwenye upande wa lengo unalotaka kuweka "
 "mpira ndani."
 
-#: activities/penalty/Penalty.qml:256
+#: activities/penalty/Penalty.qml:240
 msgctxt "Penalty|"
 msgid "Click or tap on the ball to bring it back to its initial position."
 msgstr "Bofya au uguse mpira ili kuurudisha kwenye nafasi yake ya awali."
@@ -21698,12 +21698,12 @@ msgstr ""
 "Zingatia picha hizo mbili kwa makini. Kuna baadhi ya tofauti kidogo. "
 "Unapopata tofauti lazima ubofye juu yake."
 
-#: activities/photo_hunter/PhotoHunter.qml:102
+#: activities/photo_hunter/PhotoHunter.qml:88
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Buruta kitelezi ili kuonyesha tofauti."
 
-#: activities/photo_hunter/PhotoHunter.qml:103
+#: activities/photo_hunter/PhotoHunter.qml:89
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Bofya kwenye tofauti kati ya picha hizo mbili."
@@ -21863,33 +21863,33 @@ msgid "%1 BPM"
 msgstr "%1 BPM"
 
 #. Treble clef and Bass clef are the notations to indicate the pitch of the sound written on it.
-#: activities/piano_composition/KeyOption.qml:46
+#: activities/piano_composition/KeyOption.qml:45
 msgctxt "KeyOption|"
 msgid "Treble clef"
 msgstr "Jifunze majina ya noti, katika sehemu ya treble"
 
-#: activities/piano_composition/KeyOption.qml:46
+#: activities/piano_composition/KeyOption.qml:45
 msgctxt "KeyOption|"
 msgid "Bass clef"
 msgstr "Jifunze majina ya noti, katika sehemu ya besi"
 
-#: activities/piano_composition/KeyOption.qml:61
+#: activities/piano_composition/KeyOption.qml:62
 msgctxt "KeyOption|"
 msgid "Treble clef added"
 msgstr "Treble clef imeongezwa"
 
-#: activities/piano_composition/KeyOption.qml:61
+#: activities/piano_composition/KeyOption.qml:62
 msgctxt "KeyOption|"
 msgid "Bass clef added"
 msgstr "Bass clef imeongezwa"
 
-#: activities/piano_composition/LyricsArea.qml:37
+#: activities/piano_composition/LyricsArea.qml:40
 #, qt-format
 msgctxt "LyricsArea|"
 msgid "Title: %1"
 msgstr "Kichwa: %1"
 
-#: activities/piano_composition/LyricsArea.qml:65
+#: activities/piano_composition/LyricsArea.qml:68
 #, qt-format
 msgctxt "LyricsArea|"
 msgid "Origin: %1"
@@ -22013,7 +22013,7 @@ msgctxt "melodies|"
 msgid "Finland"
 msgstr "Ufini"
 
-#: activities/piano_composition/MelodyList.qml:69
+#: activities/piano_composition/MelodyList.qml:70
 msgctxt "MelodyList|"
 msgid "Melodies"
 msgstr "Melodies"
@@ -22170,37 +22170,37 @@ msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"
 msgstr "Melody imehifadhiwa kwenye faili yako (%1)"
 
-#: activities/piano_composition/Piano_composition.qml:361
+#: activities/piano_composition/Piano_composition.qml:335
 msgctxt "Piano_composition|"
 msgid "You have not selected any note. Do you want to erase all the notes?"
 msgstr "Hujachagua dokezo lolote. Je, ungependa kufuta madokezo yote?"
 
-#: activities/piano_composition/Piano_composition.qml:362
+#: activities/piano_composition/Piano_composition.qml:336
 msgctxt "Piano_composition|"
 msgid "Yes"
 msgstr "Ndiyo"
 
-#: activities/piano_composition/Piano_composition.qml:368
+#: activities/piano_composition/Piano_composition.qml:342
 msgctxt "Piano_composition|"
 msgid "No"
 msgstr "Hapana"
 
-#: activities/piano_composition/Piano_composition.qml:418
+#: activities/piano_composition/Piano_composition.qml:392
 msgctxt "Piano_composition|"
 msgid "Select the type of melody to load."
 msgstr "Chagua aina ya wimbo wa kupakia."
 
-#: activities/piano_composition/Piano_composition.qml:423
+#: activities/piano_composition/Piano_composition.qml:397
 msgctxt "Piano_composition|"
 msgid "Pre-defined melodies"
 msgstr "Nyimbo zilizofafanuliwa mapema"
 
-#: activities/piano_composition/Piano_composition.qml:441
+#: activities/piano_composition/Piano_composition.qml:415
 msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "Nyimbo zako ulizohifadhi"
 
-#: activities/piano_composition/Piano_composition.qml:555
+#: activities/piano_composition/Piano_composition.qml:519
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -22209,12 +22209,12 @@ msgstr ""
 "Shughuli hii inahitaji sauti, kwa hivyo itacheza baadhi ya sauti hata kama "
 "sauti au madoido yamezimwa katika usanidi mkuu."
 
-#: activities/piano_composition/Piano_composition.qml:556
+#: activities/piano_composition/Piano_composition.qml:520
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "Toka"
 
-#: activities/piano_composition/Piano_composition.qml:557
+#: activities/piano_composition/Piano_composition.qml:521
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "Endelea"

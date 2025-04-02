@@ -21081,14 +21081,14 @@ msgstr ""
 "鍵。如果您雙擊得不夠快，小企鵝就會抓到這顆球。您必須點一下球才能把它帶回前一"
 "個位置。"
 
-#: activities/penalty/Penalty.qml:211
+#: activities/penalty/Penalty.qml:239
 msgctxt "Penalty|"
 msgid ""
 "Double click or double tap on the side of the goal you want to put the ball "
 "in."
 msgstr "雙擊球讓球進到球門。"
 
-#: activities/penalty/Penalty.qml:256
+#: activities/penalty/Penalty.qml:240
 msgctxt "Penalty|"
 msgid "Click or tap on the ball to bring it back to its initial position."
 msgstr "點擊或觸碰球，將它帶回原來的位置。"
@@ -21119,12 +21119,12 @@ msgid ""
 "you find a difference you must click on it."
 msgstr "仔細觀察這兩張圖。它們之間有一點點不同。找到它們不同之處然後點擊下去。"
 
-#: activities/photo_hunter/PhotoHunter.qml:102
+#: activities/photo_hunter/PhotoHunter.qml:88
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "拖曳滑動器來顯示不同的地方。"
 
-#: activities/photo_hunter/PhotoHunter.qml:103
+#: activities/photo_hunter/PhotoHunter.qml:89
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "找出兩張圖間的不同之處。"
@@ -21266,33 +21266,33 @@ msgid "%1 BPM"
 msgstr "每分鐘 %1 拍"
 
 #. Treble clef and Bass clef are the notations to indicate the pitch of the sound written on it.
-#: activities/piano_composition/KeyOption.qml:46
+#: activities/piano_composition/KeyOption.qml:45
 msgctxt "KeyOption|"
 msgid "Treble clef"
 msgstr "高音譜記號"
 
-#: activities/piano_composition/KeyOption.qml:46
+#: activities/piano_composition/KeyOption.qml:45
 msgctxt "KeyOption|"
 msgid "Bass clef"
 msgstr "低音譜記號"
 
-#: activities/piano_composition/KeyOption.qml:61
+#: activities/piano_composition/KeyOption.qml:62
 msgctxt "KeyOption|"
 msgid "Treble clef added"
 msgstr "加入高音譜記號"
 
-#: activities/piano_composition/KeyOption.qml:61
+#: activities/piano_composition/KeyOption.qml:62
 msgctxt "KeyOption|"
 msgid "Bass clef added"
 msgstr "加入低音譜記號"
 
-#: activities/piano_composition/LyricsArea.qml:37
+#: activities/piano_composition/LyricsArea.qml:40
 #, qt-format
 msgctxt "LyricsArea|"
 msgid "Title: %1"
 msgstr "標題：%1"
 
-#: activities/piano_composition/LyricsArea.qml:65
+#: activities/piano_composition/LyricsArea.qml:68
 #, qt-format
 msgctxt "LyricsArea|"
 msgid "Origin: %1"
@@ -21416,7 +21416,7 @@ msgctxt "melodies|"
 msgid "Finland"
 msgstr "芬蘭"
 
-#: activities/piano_composition/MelodyList.qml:69
+#: activities/piano_composition/MelodyList.qml:70
 msgctxt "MelodyList|"
 msgid "Melodies"
 msgstr "旋律"
@@ -21569,49 +21569,49 @@ msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"
 msgstr "已將旋律儲存到檔案（%1）"
 
-#: activities/piano_composition/Piano_composition.qml:361
+#: activities/piano_composition/Piano_composition.qml:335
 msgctxt "Piano_composition|"
 msgid "You have not selected any note. Do you want to erase all the notes?"
 msgstr "您沒有選擇任何音符。您要刪除所有的音符嗎？"
 
-#: activities/piano_composition/Piano_composition.qml:362
+#: activities/piano_composition/Piano_composition.qml:336
 msgctxt "Piano_composition|"
 msgid "Yes"
 msgstr "是"
 
-#: activities/piano_composition/Piano_composition.qml:368
+#: activities/piano_composition/Piano_composition.qml:342
 msgctxt "Piano_composition|"
 msgid "No"
 msgstr "否"
 
-#: activities/piano_composition/Piano_composition.qml:418
+#: activities/piano_composition/Piano_composition.qml:392
 msgctxt "Piano_composition|"
 msgid "Select the type of melody to load."
 msgstr "選擇要載入的旋律。"
 
-#: activities/piano_composition/Piano_composition.qml:423
+#: activities/piano_composition/Piano_composition.qml:397
 msgctxt "Piano_composition|"
 msgid "Pre-defined melodies"
 msgstr "預先定義的旋律"
 
-#: activities/piano_composition/Piano_composition.qml:441
+#: activities/piano_composition/Piano_composition.qml:415
 msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "您儲存的旋律"
 
-#: activities/piano_composition/Piano_composition.qml:555
+#: activities/piano_composition/Piano_composition.qml:519
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr "這個遊戲需要播放聲音，所以即使您設定關閉聲音或音效，它還是會播出聲音。"
 
-#: activities/piano_composition/Piano_composition.qml:556
+#: activities/piano_composition/Piano_composition.qml:520
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "離開"
 
-#: activities/piano_composition/Piano_composition.qml:557
+#: activities/piano_composition/Piano_composition.qml:521
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "繼續"
