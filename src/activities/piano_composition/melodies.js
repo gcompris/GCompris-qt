@@ -129,8 +129,8 @@ function get() {
                  "title": "Au clair de la lune",
                  "_origin": qsTr("France"),
                  "lyrics": "Au clair de la lune\nMon ami Pierrot\nPrête-moi ta plume\nPour écrire un mot\nMa chandelle est morte\nJe n'ai plus de feu\nOuvre-moi ta porte\nPour l'amour de Dieu.",
-                 "defaultBPM": 85,
-                 "melody": "Treble G4Quarter G4Quarter G4Quarter A4Quarter B4Half A4Half G4Quarter B4Quarter A4Quarter A4Quarter G4Whole G4Quarter G4Quarter G4Quarter A4Quarter B4Half A4Half G4Quarter B4Quarter A4Quarter A4Quarter G4Whole A4Quarter A4Quarter A4Quarter A4Quarter E4Half E4Half A4Quarter G4Quarter F#4Quarter E4Quarter D4Whole G4Quarter G4Quarter G4Quarter A4Quarter B4Half A4Half G4Quarter B4Quarter A4Quarter A4Quarter G4Whole"
+                 "defaultBPM": 122,
+                 "melody": "Treble C4Quarter C4Quarter C4Quarter D4Quarter E4Half D4Half C4Quarter E4Quarter D4Quarter D4Quarter C4Whole C4Quarter C4Quarter C4Quarter D4Quarter E4Half D4Half C4Quarter E4Quarter D4Quarter D4Quarter C4Whole D4Quarter D4Quarter D4Quarter D4Quarter A3Half A3Half D4Quarter C4Quarter B3Quarter A3Quarter G3Whole C4Quarter C4Quarter C4Quarter D4Quarter E4Half D4Half C4Quarter E4Quarter D4Quarter D4Quarter C4Whole"
              },
              {
                  "title": "Boci, boci tarka",
