@@ -22333,7 +22333,7 @@ msgstr ""
 "rato. Se perder, o Tux apanha a bola. Terá de carregar sobre ele para o "
 "voltar a pôr na sua posição inicial."
 
-#: activities/penalty/Penalty.qml:211
+#: activities/penalty/Penalty.qml:239
 msgctxt "Penalty|"
 msgid ""
 "Double click or double tap on the side of the goal you want to put the ball "
@@ -22342,7 +22342,7 @@ msgstr ""
 "Faça duplo-click ou duplo-toque sobre o lado da baliza para onde deseja "
 "enviar a bola."
 
-#: activities/penalty/Penalty.qml:256
+#: activities/penalty/Penalty.qml:240
 msgctxt "Penalty|"
 msgid "Click or tap on the ball to bring it back to its initial position."
 msgstr "Carregar ou tocar na bola para a repor na posição original."
@@ -22375,12 +22375,12 @@ msgstr ""
 "Observe as duas imagens com cuidado. Existem algumas diferenças subtis. "
 "Quando descobrir uma diferença, deverá carregar na mesma."
 
-#: activities/photo_hunter/PhotoHunter.qml:102
+#: activities/photo_hunter/PhotoHunter.qml:88
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Arraste a barra deslizante para mostrar as diferenças."
 
-#: activities/photo_hunter/PhotoHunter.qml:103
+#: activities/photo_hunter/PhotoHunter.qml:89
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Carregue nas diferenças entre as duas imagens."
@@ -22541,33 +22541,33 @@ msgid "%1 BPM"
 msgstr "%1 BPM"
 
 #. Treble clef and Bass clef are the notations to indicate the pitch of the sound written on it.
-#: activities/piano_composition/KeyOption.qml:46
+#: activities/piano_composition/KeyOption.qml:45
 msgctxt "KeyOption|"
 msgid "Treble clef"
 msgstr "Clave de sol"
 
-#: activities/piano_composition/KeyOption.qml:46
+#: activities/piano_composition/KeyOption.qml:45
 msgctxt "KeyOption|"
 msgid "Bass clef"
 msgstr "Chave de fá"
 
-#: activities/piano_composition/KeyOption.qml:61
+#: activities/piano_composition/KeyOption.qml:62
 msgctxt "KeyOption|"
 msgid "Treble clef added"
 msgstr "Clave de sol adicionada"
 
-#: activities/piano_composition/KeyOption.qml:61
+#: activities/piano_composition/KeyOption.qml:62
 msgctxt "KeyOption|"
 msgid "Bass clef added"
 msgstr "Chave de fá adicionada"
 
-#: activities/piano_composition/LyricsArea.qml:37
+#: activities/piano_composition/LyricsArea.qml:40
 #, qt-format
 msgctxt "LyricsArea|"
 msgid "Title: %1"
 msgstr "Título: %1"
 
-#: activities/piano_composition/LyricsArea.qml:65
+#: activities/piano_composition/LyricsArea.qml:68
 #, qt-format
 msgctxt "LyricsArea|"
 msgid "Origin: %1"
@@ -22691,7 +22691,7 @@ msgctxt "melodies|"
 msgid "Finland"
 msgstr "Finlândia"
 
-#: activities/piano_composition/MelodyList.qml:69
+#: activities/piano_composition/MelodyList.qml:70
 msgctxt "MelodyList|"
 msgid "Melodies"
 msgstr "Melodias"
@@ -22850,37 +22850,37 @@ msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"
 msgstr "Foi gravada a melodia no seu ficheiro (%1)"
 
-#: activities/piano_composition/Piano_composition.qml:361
+#: activities/piano_composition/Piano_composition.qml:335
 msgctxt "Piano_composition|"
 msgid "You have not selected any note. Do you want to erase all the notes?"
 msgstr "Não seleccionou nenhuma nota. Deseja apagar todas as notas?"
 
-#: activities/piano_composition/Piano_composition.qml:362
+#: activities/piano_composition/Piano_composition.qml:336
 msgctxt "Piano_composition|"
 msgid "Yes"
 msgstr "Sim"
 
-#: activities/piano_composition/Piano_composition.qml:368
+#: activities/piano_composition/Piano_composition.qml:342
 msgctxt "Piano_composition|"
 msgid "No"
 msgstr "Não"
 
-#: activities/piano_composition/Piano_composition.qml:418
+#: activities/piano_composition/Piano_composition.qml:392
 msgctxt "Piano_composition|"
 msgid "Select the type of melody to load."
 msgstr "Seleccione o tipo de melodia a carregar."
 
-#: activities/piano_composition/Piano_composition.qml:423
+#: activities/piano_composition/Piano_composition.qml:397
 msgctxt "Piano_composition|"
 msgid "Pre-defined melodies"
 msgstr "Melodias predefinidas"
 
-#: activities/piano_composition/Piano_composition.qml:441
+#: activities/piano_composition/Piano_composition.qml:415
 msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "As suas melodias gravadas"
 
-#: activities/piano_composition/Piano_composition.qml:555
+#: activities/piano_composition/Piano_composition.qml:519
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -22889,12 +22889,12 @@ msgstr ""
 "Esta actividade precisa de som, pelo que irá tocar alguns sons, mesmo se as "
 "vozes ou efeitos de áudio estão desactivados na configuração principal."
 
-#: activities/piano_composition/Piano_composition.qml:556
+#: activities/piano_composition/Piano_composition.qml:520
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "Sair"
 
-#: activities/piano_composition/Piano_composition.qml:557
+#: activities/piano_composition/Piano_composition.qml:521
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "Continuar"

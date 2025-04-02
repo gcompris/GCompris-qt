@@ -20566,14 +20566,14 @@ msgstr ""
 "ചെയ്തില്ലെങ്കിൽ, പന്ത് ടക്സിന്റെ കൈയിലാകും. ആദ്യ സ്ഥാനത്തേക്ക് പന്തിനെ തിരിച്ച് കൊണ്ടുവരാൻ "
 "അതിൽ ക്ലിക്ക് ചെയ്യണം."
 
-#: activities/penalty/Penalty.qml:211
+#: activities/penalty/Penalty.qml:239
 msgctxt "Penalty|"
 msgid ""
 "Double click or double tap on the side of the goal you want to put the ball "
 "in."
 msgstr "നിങ്ങൾക്കു പന്തിടേണ്ട ഭാഗത്ത് ഡബിൾ ക്ലിക്കോ ഡബിൾ ടാപ്പോ ചെയ്യുക."
 
-#: activities/penalty/Penalty.qml:256
+#: activities/penalty/Penalty.qml:240
 msgctxt "Penalty|"
 msgid "Click or tap on the ball to bring it back to its initial position."
 msgstr "ക്ലിക്കോ ടാപ്പോ ചെയ്ത് പന്തിനെ ആദ്യ സ്ഥാനത്തേക്ക് കൊണ്ടുവരാം."
@@ -20606,12 +20606,12 @@ msgstr ""
 "രണ്ട് ചിത്രങ്ങളും ശ്രദ്ധയോടെ നിരീക്ഷിക്കുക. അവ തമ്മിൽ ചെറിയ ചില വ്യത്യാസങ്ങളുണ്ട്. ഒരു വ്യത്യാസം "
 "കണ്ടെത്തിയാൽ നിങ്ങൾ അതിൽ ക്ലിക്കു ചെയ്യണം."
 
-#: activities/photo_hunter/PhotoHunter.qml:102
+#: activities/photo_hunter/PhotoHunter.qml:88
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "വ്യത്യാസങ്ങൾ കാണാൻ സ്ലൈഡറിനെ വലിക്കുക."
 
-#: activities/photo_hunter/PhotoHunter.qml:103
+#: activities/photo_hunter/PhotoHunter.qml:89
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "രണ്ടു ചിത്രങ്ങളും തമ്മിലുള്ള വ്യത്യാസങ്ങളിൽ ക്ലിക്ക് ചെയ്യുക."
@@ -20768,33 +20768,33 @@ msgid "%1 BPM"
 msgstr "%1 ബിപിഎം"
 
 #. Treble clef and Bass clef are the notations to indicate the pitch of the sound written on it.
-#: activities/piano_composition/KeyOption.qml:46
+#: activities/piano_composition/KeyOption.qml:45
 msgctxt "KeyOption|"
 msgid "Treble clef"
 msgstr "ട്രെബിൾ ക്ലെഫ്"
 
-#: activities/piano_composition/KeyOption.qml:46
+#: activities/piano_composition/KeyOption.qml:45
 msgctxt "KeyOption|"
 msgid "Bass clef"
 msgstr "ബേസ് ക്ലെഫ്"
 
-#: activities/piano_composition/KeyOption.qml:61
+#: activities/piano_composition/KeyOption.qml:62
 msgctxt "KeyOption|"
 msgid "Treble clef added"
 msgstr "ട്രെബിൾ ക്ലെഫ് ചേർത്തു"
 
-#: activities/piano_composition/KeyOption.qml:61
+#: activities/piano_composition/KeyOption.qml:62
 msgctxt "KeyOption|"
 msgid "Bass clef added"
 msgstr "ബേസ് ക്ലെഫ് ചേർത്തു"
 
-#: activities/piano_composition/LyricsArea.qml:37
+#: activities/piano_composition/LyricsArea.qml:40
 #, qt-format
 msgctxt "LyricsArea|"
 msgid "Title: %1"
 msgstr "തലക്കെട്ട്: %1"
 
-#: activities/piano_composition/LyricsArea.qml:65
+#: activities/piano_composition/LyricsArea.qml:68
 #, qt-format
 msgctxt "LyricsArea|"
 msgid "Origin: %1"
@@ -20918,7 +20918,7 @@ msgctxt "melodies|"
 msgid "Finland"
 msgstr "ഫിൻലാന്റ്"
 
-#: activities/piano_composition/MelodyList.qml:69
+#: activities/piano_composition/MelodyList.qml:70
 msgctxt "MelodyList|"
 msgid "Melodies"
 msgstr "മധുരഗാനങ്ങൾ"
@@ -21074,37 +21074,37 @@ msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"
 msgstr "മെലഡി നിങ്ങളുടെ ഫയലിലേക്ക് സേവ് ചെയ്തിരിക്കുന്നു (%1)"
 
-#: activities/piano_composition/Piano_composition.qml:361
+#: activities/piano_composition/Piano_composition.qml:335
 msgctxt "Piano_composition|"
 msgid "You have not selected any note. Do you want to erase all the notes?"
 msgstr "നിങ്ങൾ ഒരു സ്വരവും തിരഞ്ഞെടുത്തിട്ടില്ല. എല്ലാ സ്വരങ്ങളും മായിച്ചു കളയണമോ?"
 
-#: activities/piano_composition/Piano_composition.qml:362
+#: activities/piano_composition/Piano_composition.qml:336
 msgctxt "Piano_composition|"
 msgid "Yes"
 msgstr "വേണം"
 
-#: activities/piano_composition/Piano_composition.qml:368
+#: activities/piano_composition/Piano_composition.qml:342
 msgctxt "Piano_composition|"
 msgid "No"
 msgstr "വേണ്ട"
 
-#: activities/piano_composition/Piano_composition.qml:418
+#: activities/piano_composition/Piano_composition.qml:392
 msgctxt "Piano_composition|"
 msgid "Select the type of melody to load."
 msgstr "ലോഡ് ചെയ്യാനുള്ള മെലഡിയുടെ തരം തിരഞ്ഞെടുക്കുക."
 
-#: activities/piano_composition/Piano_composition.qml:423
+#: activities/piano_composition/Piano_composition.qml:397
 msgctxt "Piano_composition|"
 msgid "Pre-defined melodies"
 msgstr "മുൻകൂറായുള്ള മെലഡികൾ"
 
-#: activities/piano_composition/Piano_composition.qml:441
+#: activities/piano_composition/Piano_composition.qml:415
 msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "സേവ് ചെയ്ത മെലഡികൾ"
 
-#: activities/piano_composition/Piano_composition.qml:555
+#: activities/piano_composition/Piano_composition.qml:519
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21113,12 +21113,12 @@ msgstr ""
 "ഈ പ്രവർത്തനത്തിന് ശബ്ദം ആവശ്യമുണ്ട്, അതുകൊണ്ട് പ്രധാന കോൺഫിഗറേഷനിൽ ഓഡിയൊ ശബ്ദങ്ങളോ എഫക്ടുകളോ "
 "അസാധുവാക്കിയെന്നിരുന്നാലും ഇവിടെ ചില ശബ്ദങ്ങൾ പ്ലേ ചെയ്യും."
 
-#: activities/piano_composition/Piano_composition.qml:556
+#: activities/piano_composition/Piano_composition.qml:520
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "നിർത്തുക"
 
-#: activities/piano_composition/Piano_composition.qml:557
+#: activities/piano_composition/Piano_composition.qml:521
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "തുടരുക"

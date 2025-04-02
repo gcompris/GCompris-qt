@@ -20352,7 +20352,7 @@ msgstr ""
 "द्विगुणं क्लिक् न करोति तर्हि Tux कन्दुकं गृह्णाति । भवन्तः तस्य उपरि क्लिक् कृत्वा पुनः "
 "प्रारम्भिकस्थानं प्रति आनेतुं शक्नुवन्ति ।"
 
-#: activities/penalty/Penalty.qml:211
+#: activities/penalty/Penalty.qml:239
 msgctxt "Penalty|"
 msgid ""
 "Double click or double tap on the side of the goal you want to put the ball "
@@ -20361,7 +20361,7 @@ msgstr ""
 "यस्मिन् लक्ष्ये भवन्तः कन्दुकं स्थापयितुम् इच्छन्ति तस्य पार्श्वे द्विवारं क्लिक् कुर्वन्तु अथवा "
 "द्विवारं ट्याप् कुर्वन्तु ।"
 
-#: activities/penalty/Penalty.qml:256
+#: activities/penalty/Penalty.qml:240
 msgctxt "Penalty|"
 msgid "Click or tap on the ball to bring it back to its initial position."
 msgstr "कन्दुकं पुनः प्रारम्भिकस्थाने आनेतुं तस्य उपरि क्लिक् कुर्वन्तु अथवा ट्याप् कुर्वन्तु ।"
@@ -20394,12 +20394,12 @@ msgstr ""
 "चित्रद्वयं सम्यक् अवलोकयन्तु। तत्र केचन अल्पाः भेदाः सन्ति। यदा भवन्तः भेदं प्राप्नुवन्ति तदा "
 "भवन्तः तस्मिन् क्लिक् अवश्यं कुर्वन्तु।"
 
-#: activities/photo_hunter/PhotoHunter.qml:102
+#: activities/photo_hunter/PhotoHunter.qml:88
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "भेदं दर्शयितुं स्लाइडरं कर्षयन्तु ।"
 
-#: activities/photo_hunter/PhotoHunter.qml:103
+#: activities/photo_hunter/PhotoHunter.qml:89
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "द्वयोः चित्रयोः भेदं नुदन्तु ।"
@@ -20552,33 +20552,33 @@ msgid "%1 BPM"
 msgstr "%1 बीपीएम"
 
 #. Treble clef and Bass clef are the notations to indicate the pitch of the sound written on it.
-#: activities/piano_composition/KeyOption.qml:46
+#: activities/piano_composition/KeyOption.qml:45
 msgctxt "KeyOption|"
 msgid "Treble clef"
 msgstr "ट्रेबल क्लेफ्"
 
-#: activities/piano_composition/KeyOption.qml:46
+#: activities/piano_composition/KeyOption.qml:45
 msgctxt "KeyOption|"
 msgid "Bass clef"
 msgstr "बास क्लेफ्"
 
-#: activities/piano_composition/KeyOption.qml:61
+#: activities/piano_composition/KeyOption.qml:62
 msgctxt "KeyOption|"
 msgid "Treble clef added"
 msgstr "ट्रेबल क्लेफ् योजितम्"
 
-#: activities/piano_composition/KeyOption.qml:61
+#: activities/piano_composition/KeyOption.qml:62
 msgctxt "KeyOption|"
 msgid "Bass clef added"
 msgstr "बास् क्लेफ् इत्यनेन योजितम्"
 
-#: activities/piano_composition/LyricsArea.qml:37
+#: activities/piano_composition/LyricsArea.qml:40
 #, qt-format
 msgctxt "LyricsArea|"
 msgid "Title: %1"
 msgstr "शीर्षकम् : %1"
 
-#: activities/piano_composition/LyricsArea.qml:65
+#: activities/piano_composition/LyricsArea.qml:68
 #, qt-format
 msgctxt "LyricsArea|"
 msgid "Origin: %1"
@@ -20702,7 +20702,7 @@ msgctxt "melodies|"
 msgid "Finland"
 msgstr "फिन्लैण्ड्"
 
-#: activities/piano_composition/MelodyList.qml:69
+#: activities/piano_composition/MelodyList.qml:70
 msgctxt "MelodyList|"
 msgid "Melodies"
 msgstr "रागाः"
@@ -20856,37 +20856,37 @@ msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"
 msgstr "रागः भवतः सञ्चिकायां रक्षितः (%1)"
 
-#: activities/piano_composition/Piano_composition.qml:361
+#: activities/piano_composition/Piano_composition.qml:335
 msgctxt "Piano_composition|"
 msgid "You have not selected any note. Do you want to erase all the notes?"
 msgstr "भवता किमपि टिप्पणीं न चिनोति। सर्वाणि टिप्पण्यानि मेटयितुम् इच्छसि वा ?"
 
-#: activities/piano_composition/Piano_composition.qml:362
+#: activities/piano_composition/Piano_composition.qml:336
 msgctxt "Piano_composition|"
 msgid "Yes"
 msgstr "आम्‌"
 
-#: activities/piano_composition/Piano_composition.qml:368
+#: activities/piano_composition/Piano_composition.qml:342
 msgctxt "Piano_composition|"
 msgid "No"
 msgstr "नहि"
 
-#: activities/piano_composition/Piano_composition.qml:418
+#: activities/piano_composition/Piano_composition.qml:392
 msgctxt "Piano_composition|"
 msgid "Select the type of melody to load."
 msgstr "लोड् कर्तुं रागस्य प्रकारं चिनोतु।"
 
-#: activities/piano_composition/Piano_composition.qml:423
+#: activities/piano_composition/Piano_composition.qml:397
 msgctxt "Piano_composition|"
 msgid "Pre-defined melodies"
 msgstr "पूर्वनिर्धारिताः रागाः"
 
-#: activities/piano_composition/Piano_composition.qml:441
+#: activities/piano_composition/Piano_composition.qml:415
 msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "भवतः रक्षिताः रागाः"
 
-#: activities/piano_composition/Piano_composition.qml:555
+#: activities/piano_composition/Piano_composition.qml:519
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20895,12 +20895,12 @@ msgstr ""
 "अस्याः क्रियायाः कृते ध्वनिः आवश्यकः अस्ति, अतः मुख्यविन्यासे श्रव्यस्वरः अथवा प्रभावाः "
 "निष्क्रियाः सन्ति चेदपि एतत् केचन ध्वनयः वादयिष्यति ।"
 
-#: activities/piano_composition/Piano_composition.qml:556
+#: activities/piano_composition/Piano_composition.qml:520
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "परिजहातु"
 
-#: activities/piano_composition/Piano_composition.qml:557
+#: activities/piano_composition/Piano_composition.qml:521
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "अनुवर्तते"
