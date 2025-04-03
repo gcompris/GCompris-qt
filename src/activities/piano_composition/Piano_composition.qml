@@ -2,12 +2,13 @@
  *
  * SPDX-FileCopyrightText: 2016 Johnny Jazeix <jazeix@gmail.com>
  * SPDX-FileCopyrightText: 2018 Aman Kumar Gupta <gupta2140@gmail.com>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Beth Hadley <bethmhadley@gmail.com> (GTK+ version)
  *   Johnny Jazeix <jazeix@gmail.com> (Qt Quick port)
  *   Aman Kumar Gupta <gupta2140@gmail.com> (Qt Quick port)
- *   Timothée Giet <animtim@gmail.com> (refactoring)
+ *   Timothée Giet <animtim@gmail.com> (Refactoring)
  * 
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
