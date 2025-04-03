@@ -4277,30 +4277,10 @@ SPDX-FileCopyrightText = "2015 Timothée Giet"
 SPDX-License-Identifier = "CC-BY-SA-4.0"
 
 [[annotations]]
-path = ["src/activities/piano_composition/piano_composition.svg", "src/activities/piano_composition/resource/add.svg", "src/activities/piano_composition/resource/bassClefButton.svg", "src/activities/piano_composition/resource/erase.svg", "src/activities/piano_composition/resource/failed.svg", "src/activities/piano_composition/resource/lyrics.svg", "src/activities/piano_composition/resource/open.svg", "src/activities/piano_composition/resource/passed.svg", "src/activities/piano_composition/resource/piano.svg", "src/activities/piano_composition/resource/play.svg", "src/activities/piano_composition/resource/save.svg", "src/activities/piano_composition/resource/stop.svg", "src/activities/piano_composition/resource/trebbleClefButton.svg", "src/activities/piano_composition/resource/undo.svg"]
+path = ["src/activities/piano_composition/piano_composition.svg", "src/activities/piano_composition/resource/add.svg", "src/activities/piano_composition/resource/bassClef.svg", "src/activities/piano_composition/resource/bassClefButton.svg", "src/activities/piano_composition/resource/blackflat.svg", "src/activities/piano_composition/resource/blacksharp.svg", "src/activities/piano_composition/resource/erase.svg", "src/activities/piano_composition/resource/failed.svg", "src/activities/piano_composition/resource/lyrics.svg", "src/activities/piano_composition/resource/noteEighth.svg", "src/activities/piano_composition/resource/noteHalf.svg", "src/activities/piano_composition/resource/noteQuarter.svg", "src/activities/piano_composition/resource/noteWhole.svg", "src/activities/piano_composition/resource/open.svg", "src/activities/piano_composition/resource/passed.svg", "src/activities/piano_composition/resource/piano.svg", "src/activities/piano_composition/resource/play.svg", "src/activities/piano_composition/resource/resteighth.svg", "src/activities/piano_composition/resource/resthalf.svg", "src/activities/piano_composition/resource/restquarter.svg", "src/activities/piano_composition/resource/restwhole.svg", "src/activities/piano_composition/resource/save.svg", "src/activities/piano_composition/resource/stop.svg", "src/activities/piano_composition/resource/trebbleClefButton.svg", "src/activities/piano_composition/resource/trebleClef.svg", "src/activities/piano_composition/resource/undo.svg"]
 precedence = "aggregate"
-SPDX-FileCopyrightText = "2018 Timothée Giet"
+SPDX-FileCopyrightText = "2018-2025 Timothée Giet"
 SPDX-License-Identifier = "CC-BY-SA-4.0"
-
-[[annotations]]
-path = ["src/activities/piano_composition/resource/eighthRest.svg", "src/activities/piano_composition/resource/halfRest.svg", "src/activities/piano_composition/resource/quarterRest.svg", "src/activities/piano_composition/resource/wholeRest.svg"]
-precedence = "aggregate"
-SPDX-FileCopyrightText = "2018 Timothée Giet"
-SPDX-License-Identifier = "CC-BY-SA-4.0"
-
-[[annotations]]
-path = ["src/activities/piano_composition/resource/bass**4**.svg", "src/activities/piano_composition/resource/treble**3**.svg", "src/activities/piano_composition/resource/treble**4**.svg"]
-precedence = "aggregate"
-SPDX-FileCopyrightText = "2015-2022 Timothée Giet"
-SPDX-License-Identifier = "CC-BY-SA-4.0"
-SPDX-FileComment = "all these images use the notes images which are in CC0-1.0 (licences/copyright below)"
-
-[[annotations]]
-path = "src/activities/piano_composition/resource/bassClef.svg"
-precedence = "aggregate"
-SPDX-FileCopyrightText = "2006 Rick van der Zwet"
-SPDX-License-Identifier = "CC0-1.0"
-SPDX-FileComment = "image from https://openclipart.org/detail/12475/bass-clef"
 
 [[annotations]]
 path = "src/activities/piano_composition/resource/trebleClef.svg"
@@ -4308,76 +4288,6 @@ precedence = "aggregate"
 SPDX-FileCopyrightText = "2006 Rick van der Zwet"
 SPDX-License-Identifier = "CC0-1.0"
 SPDX-FileComment = "image from https://openclipart.org/detail/12473/treble-clef"
-
-[[annotations]]
-path = "src/activities/piano_composition/resource/blackflat.svg"
-precedence = "aggregate"
-SPDX-FileCopyrightText = "2006 dannya"
-SPDX-License-Identifier = "CC0-1.0"
-SPDX-FileComment = "image from https://openclipart.org/detail/198043/mono-music-flat"
-
-[[annotations]]
-path = "src/activities/piano_composition/resource/blacksharp.svg"
-precedence = "aggregate"
-SPDX-FileCopyrightText = "2006 dannya"
-SPDX-License-Identifier = "CC0-1.0"
-SPDX-FileComment = "image from https://openclipart.org/detail/198039/mono-music-cross"
-
-[[annotations]]
-path = "src/activities/piano_composition/resource/half-note.svg"
-precedence = "aggregate"
-SPDX-FileCopyrightText = "2010 Jason Rebuck"
-SPDX-License-Identifier = "CC0-1.0"
-SPDX-FileComment = "image from https://openclipart.org/detail/92971/half-note-stem-facing-up"
-
-[[annotations]]
-path = "src/activities/piano_composition/resource/quarter-note.svg"
-precedence = "aggregate"
-SPDX-FileCopyrightText = "2010 Jason Rebuck"
-SPDX-License-Identifier = "CC0-1.0"
-SPDX-FileComment = "image from https://openclipart.org/detail/92875/quarter-note-stem-facing-up"
-
-[[annotations]]
-path = "src/activities/piano_composition/resource/eighth-note.svg"
-precedence = "aggregate"
-SPDX-FileCopyrightText = "2010 Jason Rebuck"
-SPDX-License-Identifier = "CC0-1.0"
-SPDX-FileComment = "image from https://openclipart.org/detail/92869/eighth-note-stem-facing-up"
-
-[[annotations]]
-path = "src/activities/piano_composition/resource/genericNoteHalf.svg"
-precedence = "aggregate"
-SPDX-FileCopyrightText = "2010 Jason Rebuck"
-SPDX-License-Identifier = "CC0-1.0"
-SPDX-FileComment = "image from https://openclipart.org/detail/92971/half-note-(stem-facing-up)-by-jaschon"
-
-[[annotations]]
-path = "src/activities/piano_composition/resource/genericNoteEighth.svg"
-precedence = "aggregate"
-SPDX-FileCopyrightText = "2010 Jason Rebuck"
-SPDX-License-Identifier = "CC0-1.0"
-SPDX-FileComment = "image from https://openclipart.org/detail/92869/eighth-note-(stem-facing-up)-by-jaschon"
-
-[[annotations]]
-path = "src/activities/piano_composition/resource/genericNoteQuarter.svg"
-precedence = "aggregate"
-SPDX-FileCopyrightText = "2010 Jason Rebuck"
-SPDX-License-Identifier = "CC0-1.0"
-SPDX-FileComment = "image from https://openclipart.org/detail/92875/quarter-note-(stem-facing-up)-by-jaschon"
-
-[[annotations]]
-path = "src/activities/piano_composition/resource/genericNoteWhole.svg"
-precedence = "aggregate"
-SPDX-FileCopyrightText = "2011 10binary"
-SPDX-License-Identifier = "CC0-1.0"
-SPDX-FileComment = "image from https://openclipart.org/detail/140893/whole-note-by-10binary"
-
-[[annotations]]
-path = "src/activities/piano_composition/resource/whole-note.svg"
-precedence = "aggregate"
-SPDX-FileCopyrightText = "2011 Chandler Isaac Klebs"
-SPDX-License-Identifier = "CC0-1.0"
-SPDX-FileComment = "image from https://openclipart.org/detail/140893/whole-note"
 
 [[annotations]]
 path = "src/activities/play_piano/**.svg"

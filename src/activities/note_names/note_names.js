@@ -117,7 +117,7 @@ function displayNote(currentNote) {
 }
 
 function wrongAnswer() {
-    if(items.multipleStaff.musicElementRepeater.itemAt(1).x <= items.multipleStaff.clefImageWidth) {
+    if(items.multipleStaff.musicElementRepeater.itemAt(1).x <= items.multipleStaff.clefWidth) {
         items.multipleStaff.musicElementModel.remove(1)
         currentNoteIndex = (currentNoteIndex + 1) % newNotesSequence.length
     }

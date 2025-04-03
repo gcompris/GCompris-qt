@@ -120,9 +120,9 @@ Grid {
         SwitchableOptions {
             id: restOptions
 
-            readonly property string restTypeImage: (optionsRow.noteLengthName[currentIndex][1]).toLowerCase()
+            readonly property string restTypeImage: (optionsRow.noteLengthName[currentIndex][1].toLowerCase())
 
-            source: "qrc:/gcompris/src/activities/piano_composition/resource/%1Rest.svg".arg(restTypeImage)
+            source: "qrc:/gcompris/src/activities/piano_composition/resource/rest%1.svg".arg(restTypeImage)
             nbOptions: optionsRow.noteLengthName.length
             onClicked: {
                 activityBackground.restType = optionsRow.noteLengthName[currentIndex][1]
@@ -168,7 +168,7 @@ Grid {
 
     SwitchableOptions {
         id: noteOptions
-        source: "qrc:/gcompris/src/activities/piano_composition/resource/genericNote%1.svg".arg(optionsRow.noteLengthName[currentIndex][1])
+        source: "qrc:/gcompris/src/activities/piano_composition/resource/note%1.svg".arg(optionsRow.noteLengthName[currentIndex][1])
         nbOptions: optionsRow.noteLengthName.length
         width: optionsRow.iconsWidth
         currentIndex: 2

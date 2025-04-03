@@ -37,6 +37,9 @@ ActivityBase {
         property bool audioDisabled: false
         readonly property bool horizontalLayout: activityBackground.width >= activityBackground.height
 
+        property bool activityStopped: false
+
+
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -103,7 +106,10 @@ ActivityBase {
                     activityBackground.audioDisabled = true;
             }
         }
-        onStop: { Activity.stop() }
+        onStop: {
+            activityStopped = true;
+            Activity.stop();
+        }
 
         property string currentType: "Quarter"
         property string restType: "Whole"
@@ -190,6 +196,7 @@ ActivityBase {
         MultipleStaff {
             id: multipleStaff
             nbStaves: 2
+            visibleStaves: 2
             clef: clefType
             coloredNotes: ['C','D', 'E', 'F', 'G', 'A', 'B']
             noteHoverEnabled: true
@@ -202,6 +209,31 @@ ActivityBase {
                     selectedIndex = noteIndex
                     activityBackground.clefType = musicElementModel.get(selectedIndex).soundPitch_
                     playNoteAudio(musicElementModel.get(selectedIndex).noteName_, musicElementModel.get(selectedIndex).noteType_, activityBackground.clefType, musicElementRepeater.itemAt(selectedIndex).duration)
+                }
+            }
+
+            // redraw notes on width/height changed to ensure all notes are visible and staves are filled.
+            onWidthChanged: {
+                if(!activityBackground.activityStopped) {
+                    redrawTimer.restart();
+                }
+            }
+            onHeightChanged: {
+                if(!activityBackground.activityStopped) {
+                    redrawTimer.restart();
+                }
+            }
+        }
+
+        Timer {
+            id: redrawTimer
+            interval: 500
+            onTriggered: {
+                if(multipleStaff.musicElementModel.count > 0) {
+                    // redraw twice as sometimes on the first try some items are overlapped on first staff...
+                    var notes = multipleStaff.createNotesBackup();
+                    multipleStaff.redraw(notes);
+                    multipleStaff.redraw(notes);
                 }
             }
         }
@@ -234,7 +266,7 @@ ActivityBase {
                 useSharpNotation: items.currentLevel != 3
                 blackKeysEnabled: items.currentLevel > 1
                 visible: !activityBackground.isLyricsMode
-                currentOctaveNb: (activityBackground.clefType === "Bass") ? 0 : 1
+                currentOctaveNb: 1
 
                 onNoteClicked: (note) => {
                     parent.addMusicElementAndPushToStack(note, currentType)
@@ -242,14 +274,15 @@ ActivityBase {
             }
 
             function addMusicElementAndPushToStack(noteName, noteType, elementType) {
-                if(noteType === "Rest")
+                if(noteType === "Rest") {
                     elementType = "rest"
-                    else if(elementType === undefined)
-                        elementType = "note"
+                } else if(elementType === undefined) {
+                    elementType = "note"
+                }
 
-                        var tempModel = multipleStaff.createNotesBackup()
-                        Activity.pushToStack(tempModel)
-                        multipleStaff.addMusicElement(elementType, noteName, noteType, false, true, activityBackground.clefType)
+                var tempModel = multipleStaff.createNotesBackup()
+                Activity.pushToStack(tempModel)
+                multipleStaff.addMusicElement(elementType, noteName, noteType, false, true, activityBackground.clefType)
             }
 
             Image {
@@ -365,10 +398,7 @@ ActivityBase {
                 var tempModel = multipleStaff.createNotesBackup()
                 Activity.pushToStack(tempModel)
                 multipleStaff.addMusicElement("clef", "", "", false, false, activityBackground.clefType)
-                if(activityBackground.clefType === "Bass")
-                    piano.currentOctaveNb = 0
-                else
-                    piano.currentOctaveNb = 1
+                piano.currentOctaveNb = 1
             }
             onBpmDecreased: {
                 if(multipleStaff.bpmValue - 1 >= 1)

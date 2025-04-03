@@ -13,15 +13,30 @@
 import QtQuick 2.12
 import core 1.0
 
+import "../../core"
 import "qrc:/gcompris/src/activities/piano_composition/NoteNotations.js" as NoteNotations
 
 Item {
     id: multipleStaff
 
     property int nbStaves
+    property int visibleStaves: 1
+    // values for each staff
+    property real staffHeight: height / visibleStaves - (distanceBetweenStaff * visibleStaves - 1)
+    readonly property int nbLines: 5
+    readonly property int totalLineCount: 14 // 4 above, 5 under the 5 main staff lines
+    readonly property int lineHeight: staffHeight / totalLineCount
+    readonly property int lineThickness: Math.max(1, lineHeight * 0.2)
+    readonly property int mainStaffHeight: lineHeight * 5
+    readonly property real noteHeight: lineHeight * 5
+    readonly property real noteWidth: lineHeight * 5
+    readonly property int clefHeight: lineHeight * 8
+    readonly property int clefWidth: lineHeight * 4
+    readonly property int clefY: lineHeight * 2
+
     property string clef
-    property int distanceBetweenStaff: multipleStaff.height / 3.3
-    readonly property real clefImageWidth: 3 * height / 25
+    property string lastClefAdded
+    property int distanceBetweenStaff: GCStyle.baseMargins
 
     // Stores the note index which is selected.
     property int selectedIndex: -1
@@ -33,8 +48,6 @@ Item {
     property string notesColor: "inbuilt"
     property bool noteHoverEnabled: false
 
-    // Stores if the notes are to be centered on the staff. Used in Play_piano and Play_rhythm.
-    property bool centerNotesPosition: false
     property bool isPulseMarkerDisplayed: false
     property bool noteAnimationEnabled: false
     readonly property bool isMusicPlaying: musicTimer.running
@@ -43,7 +56,6 @@ Item {
     property alias musicElementModel: musicElementModel
     property alias musicElementRepeater: musicElementRepeater
     property double softColorOpacity : 0.8
-    property real flickableTopMargin: multipleStaff.height / 14 + distanceBetweenStaff / 3.5
     readonly property real pulseMarkerX: pulseMarker.x
     readonly property bool isPulseMarkerRunning: pulseMarkerAnimation.running
     property bool isFlickable: true
@@ -51,10 +63,6 @@ Item {
     property int currentEnteringStaff: 0
     property int bpmValue: 120
     property real noteAnimationDuration: 9000
-
-    // The position where the 1st note in the centered state is to be placed.
-    property real firstCenteredNotePosition: multipleStaff.width / 3.3
-    property real spaceBetweenNotes: 0
 
     /**
      * Emitted when a note is clicked.
@@ -101,14 +109,16 @@ Item {
             id: staffColumn
             spacing: distanceBetweenStaff
             anchors.top: parent.top
-            anchors.topMargin: flickableTopMargin
             Repeater {
                 id: staves
                 model: nbStaves
                 Staff {
                     id: staff
-                    height: multipleStaff.height / 5
-                    width: multipleStaff.width - 5
+                    height: multipleStaff.staffHeight
+                    width: multipleStaff.width
+                    nbLines: multipleStaff.nbLines
+                    lineHeight: multipleStaff.lineHeight
+                    lineThickness: multipleStaff.lineThickness
                     lastPartition: index == (nbStaves - 1)
                 }
             }
@@ -119,6 +129,8 @@ Item {
             model: musicElementModel
             MusicElement {
                 id: musicElement
+                height: elementType === "clef" ? multipleStaff.clefHeight : multipleStaff.noteHeight
+                width: elementType === "clef" ? multipleStaff.clefWidth : multipleStaff.noteWidth
                 noteName: noteName_
                 noteType: noteType_
                 highlightWhenPlayed: highlightWhenPlayed_
@@ -127,6 +139,11 @@ Item {
                 clefType: clefType_
                 elementType: elementType_
                 isDefaultClef: isDefaultClef_
+                lineHeight: multipleStaff.lineHeight
+                lineThickness: multipleStaff.lineThickness
+                bpmValue: multipleStaff.bpmValue
+                notesColor: multipleStaff.notesColor
+                noteHoverEnabled: multipleStaff.noteHoverEnabled
 
                 property int staffNb: staffNb_
                 property alias noteAnimation: noteAnimation
@@ -146,23 +163,18 @@ Item {
                     highlightTimer.start()
                 }
 
-                readonly property real defaultXPosition: musicElementRepeater.itemAt(index - 1) ? (musicElementRepeater.itemAt(index - 1).width + musicElementRepeater.itemAt(index - 1).x)
-                                                                                                : 0
+                readonly property real defaultXPosition: musicElementRepeater.itemAt(index - 1) ?
+                    (musicElementRepeater.itemAt(index - 1).width + musicElementRepeater.itemAt(index - 1).x) : 0
 
                 x: {
-                    if(multipleStaff.noteAnimationEnabled)
-                        return NaN
+                    if(multipleStaff.noteAnimationEnabled) {
+                        return NaN;
                     // !musicElementRepeater.itemAt(index - 1) acts as a fallback condition when there is no previous element present. It happens when Qt clears the model internally.
-                    if(isDefaultClef || !musicElementRepeater.itemAt(index - 1))
-                        return 0
-                    else if(musicElementRepeater.itemAt(index - 1).elementType === "clef") {
-                        if(centerNotesPosition)
-                            return sharpShiftDistance + defaultXPosition + multipleStaff.firstCenteredNotePosition
-                        else
-                            return sharpShiftDistance + defaultXPosition + 10
+                    } else if(isDefaultClef || !musicElementRepeater.itemAt(index - 1)) {
+                        return 0;
+                    } else {
+                        return defaultXPosition;
                     }
-                    else
-                        return sharpShiftDistance + defaultXPosition + multipleStaff.spaceBetweenNotes
                 }
 
                 onYChanged: {
@@ -171,21 +183,18 @@ Item {
                 }
 
                 y: {
-                    if(elementType === "clef")
-                        return flickableTopMargin + staves.itemAt(staffNb).y
-                    else if(noteDetails === undefined || staves.itemAt(staffNb) == undefined)
-                        return 0
-
-                    var verticalDistanceBetweenLines = staves.itemAt(0).verticalDistanceBetweenLines
-                    var shift =  -verticalDistanceBetweenLines / 2
-                    var relativePosition = noteDetails.positionOnStaff
-                    var imageY = flickableTopMargin + staves.itemAt(staffNb).y + 2 * verticalDistanceBetweenLines
-
-                    if(rotation === 180) {
-                        return imageY - (4 - relativePosition) * verticalDistanceBetweenLines + shift
+                    if(elementType === "clef") {
+                        return multipleStaff.clefY + staves.itemAt(staffNb).y;
+                    }
+                    else if(noteDetails === undefined || staves.itemAt(staffNb) == undefined) {
+                        return 0;
                     }
 
-                    return imageY - (6 - relativePosition) * verticalDistanceBetweenLines + shift
+                    var imageY = (noteDetails.positionOnStaff - 1) * multipleStaff.lineHeight + staves.itemAt(staffNb).y + multipleStaff.lineThickness * 0.5
+                    if(rotation === 180) {
+                        return imageY + (multipleStaff.noteHeight + multipleStaff.lineHeight) * 0.5;
+                    }
+                    return imageY;
                 }
 
                 NumberAnimation {
@@ -193,8 +202,8 @@ Item {
                     target: musicElement
                     properties: "x"
                     duration: noteAnimationDuration
-                    from: multipleStaff.width - 10
-                    to: multipleStaff.clefImageWidth
+                    from: multipleStaff.width - GCStyle.halfMargins
+                    to: multipleStaff.clefWidth
                     onStopped: {
                         noteAnimationFinished()
                     }
@@ -205,12 +214,11 @@ Item {
 
     Rectangle {
         id: pulseMarker
-        width: activityBackground.horizontalLayout ? 5 : 3
-        border.width: width / 2
-        height: staves.itemAt(0) == undefined ? 0 : 4 * staves.itemAt(0).verticalDistanceBetweenLines + width
+        width: GCStyle.thinBorder
+        height: multipleStaff.mainStaffHeight
         opacity: isPulseMarkerDisplayed && pulseMarkerAnimation.running
         color: "red"
-        y: flickableTopMargin
+        y: multipleStaff.lineHeight * 4
 
         property real nextPosition: 0
 
@@ -219,11 +227,11 @@ Item {
             target: pulseMarker
             property: "x"
             to: pulseMarker.nextPosition
-            onStarted: {
-                if(pulseMarker.height == 0 && staves.count != 0) {
-                    pulseMarker.height = Qt.binding(function() {return 4 * staves.itemAt(0).verticalDistanceBetweenLines + pulseMarker.width;})
-                }
-            }
+            // onStarted: {
+            //     if(pulseMarker.height == 0 && staves.count != 0) {
+            //         pulseMarker.height = Qt.binding(function() {return 4 * staves.itemAt(0).verticalDistanceBetweenLines + pulseMarker.width;})
+            //     }
+            // }
             onStopped: {
                 if(pulseMarker.x === multipleStaff.width)
                     pulseMarkerAnimationFinished()
@@ -263,19 +271,18 @@ Item {
 
     readonly property var notes: NoteNotations.get()
     /**
-     * Gets all the details of any note like note image, position on staff etc. from NoteNotations.
+     * Gets all the details of any note (notation and position on staff) from NoteNotations.
      */
     function getNoteDetails(noteName: string, noteType: string, clefType: string): var {
         var noteNotation
-        if(noteType === "Rest")
+        if(noteType === "Rest") {
             noteNotation = noteName + noteType
-        else
+        } else {
             noteNotation = clefType + noteName
+        }
 
-        for(var i = 0; i < notes.length; i++) {
-            if(noteNotation === notes[i].noteName) {
-                return notes[i]
-            }
+        if(notes[noteNotation] != undefined) {
+            return { "noteName": noteNotation, "positionOnStaff": notes[noteNotation] }
         }
     }
 
@@ -286,48 +293,54 @@ Item {
         if(soundPitch === undefined || soundPitch === "")
             soundPitch = clefType
 
-        var isNextStaff = (selectedIndex == -1) && musicElementModel.count && ((staves.itemAt(0).width - musicElementRepeater.itemAt(musicElementModel.count - 1).x - musicElementRepeater.itemAt(musicElementModel.count - 1).width) < multipleStaff.clefImageWidth)
+        var isNextStaff = (selectedIndex == -1) && musicElementModel.count && ((staves.itemAt(0).width - musicElementRepeater.itemAt(musicElementModel.count - 1).x - multipleStaff.noteWidth) < multipleStaff.noteWidth)
 
-        // If the incoming element is a clef, make sure that there is enough required space to fit one more note too. Else it creates problem when the note is erased and the view is redrawn, else move on to the next staff.
-        if(elementType === "clef" && musicElementModel.count && (selectedIndex == -1)) {
-            if(staves.itemAt(0).width - musicElementRepeater.itemAt(musicElementModel.count - 1).x - musicElementRepeater.itemAt(musicElementModel.count - 1).width - 2 * Math.max(multipleStaff.clefImageWidth, musicElementRepeater.itemAt(0).noteImageWidth)  < 0)
-                isNextStaff = true
+        // If the incoming element is a clef, make sure that there is enough required space to fit one more note too. Else it creates problem when the note is erased and the view is redrawn, else move on to the next staff. Also, if incoming element is same as last clef, just skip it.
+        if(elementType === "clef") {
+            if(clefType === multipleStaff.lastClefAdded) {
+                return 0;
+            } else if(musicElementModel.count && (selectedIndex == -1) && staves.itemAt(0).width - musicElementRepeater.itemAt(musicElementModel.count - 1).x - musicElementRepeater.itemAt(musicElementModel.count - 1).width - multipleStaff.noteWidth - multipleStaff.clefWidth  < 0)
+                isNextStaff = true;
         }
 
         if(isNextStaff && !noteAnimationEnabled) {
             multipleStaff.currentEnteringStaff++
-            if(multipleStaff.currentEnteringStaff >= multipleStaff.nbStaves)
+            if(multipleStaff.currentEnteringStaff >= multipleStaff.nbStaves) {
                 multipleStaff.nbStaves++
+            }
             // When a new staff is added, initialise it with a default clef.
             musicElementModel.append({"noteName_": "", "noteType_": "", "soundPitch_": soundPitch,
                                       "clefType_": clefType, "highlightWhenPlayed_": false,
                                       "staffNb_": multipleStaff.currentEnteringStaff,
                                       "isDefaultClef_": true, "elementType_": "clef"})
 
-            if(!isUnflicked)
+            if(!isUnflicked) {
                 flickableStaves.flick(0, - nbStaves * multipleStaff.height * 1.3)
+            }
 
-            if(elementType === "clef")
+            if(elementType === "clef") {
                 return 0
+            }
 
             isNextStaff = false
         }
 
         if(selectedIndex === -1) {
             var isDefaultClef = false
-            if(!musicElementModel.count)
+            if(!musicElementModel.count) {
                 isDefaultClef = true
+            }
             musicElementModel.append({"noteName_": noteName, "noteType_": noteType, "soundPitch_": soundPitch,
                                       "clefType_": clefType, "highlightWhenPlayed_": highlightWhenPlayed,
                                       "staffNb_": multipleStaff.currentEnteringStaff,
                                       "isDefaultClef_": isDefaultClef, "elementType_": elementType})
-
         }
         else {
             var tempModel = createNotesBackup()
             var insertingIndex = selectedIndex + 1
-            if(elementType === "clef")
+            if(elementType === "clef") {
                 insertingIndex--
+            }
 
             tempModel.splice(insertingIndex, 0, {"elementType_": elementType, "noteName_": noteName, "noteType_": noteType,
                                                                   "soundPitch_": soundPitch, "clefType_": clefType })
@@ -342,6 +355,7 @@ Item {
 
         multipleStaff.selectedIndex = -1
         activityBackground.clefType = musicElementModel.get(musicElementModel.count - 1).soundPitch_
+        multipleStaff.lastClefAdded = clefType
 
         if(playAudio)
             playNoteAudio(noteName, noteType, soundPitch, musicElementRepeater.itemAt(musicElementModel.count - 1).duration)
@@ -364,6 +378,7 @@ Item {
      * Redraws all the notes on the staves.
      */
     function redraw(notes) {
+        multipleStaff.lastClefAdded = ""
         musicElementModel.clear()
         currentEnteringStaff = 0
         selectedIndex = -1
@@ -453,7 +468,7 @@ Item {
                     noteCharName = noteName[0]
                     octaveNb = noteName[1]
                 }
-                var noteMidiName = (octaveNb-1)*12 + octave1MidiNumbersTable[noteCharName];
+                var noteMidiName = octaveNb * 12 + octave1MidiNumbersTable[noteCharName];
 
                 GSynth.generate(noteMidiName, duration)
             }

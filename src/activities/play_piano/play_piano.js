@@ -39,6 +39,9 @@ function initLevel() {
 }
 
 function initSubLevel() {
+    if(!items.readyPressed) {
+        return
+    }
     var currentSubLevelMelody = levels[items.currentLevel][items.score.currentSubLevel]
     noteIndexAnswered = -1
     items.multipleStaff.loadFromData(currentSubLevelMelody)
@@ -59,8 +62,8 @@ function nextSubLevel() {
 function undoPreviousAnswer() {
     if(noteIndexAnswered >= 0) {
         items.multipleStaff.revertAnswer(noteIndexAnswered + 1)
-        if(incorrectAnswers.indexOf(noteIndexAnswered) != -1)
-            incorrectAnswers.pop()
+    if(incorrectAnswers.indexOf(noteIndexAnswered) != -1)
+        incorrectAnswers.pop()
 
         noteIndexAnswered--
     }

@@ -107,32 +107,20 @@ ActivityBase {
             source: "qrc:/gcompris/src/activities/play_rhythm/resource/click.wav"
         }
 
-        Rectangle {
-            id: instructionBox
-            radius: 10
-            width: instructionText.contentWidth + 20 * ApplicationInfo.ratio
-            height: instructionText.contentHeight + 10 * ApplicationInfo.ratio
-            anchors.centerIn: instructionText
-            opacity: 0.8
-            border.width: 2 * ApplicationInfo.ratio
-            color: "white"
-            border.color: "#87A6DD"
-        }
-
-        GCText {
-            id: instructionText
-            color: "#303030"
-            anchors.right: score.left
-            anchors.left: parent.left
+        GCTextPanel {
+            id: instructionPanel
+            color: GCStyle.lightBg
+            border.width: GCStyle.thinBorder
+            border.color: GCStyle.blueBorder
+            textItem.color: GCStyle.darkText
+            panelWidth: parent.width - 2 * GCStyle.baseMargins - score.width
+            panelHeight: score.height
+            fixedHeight: true
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.horizontalCenterOffset: -(score.width + GCStyle.baseMargins) * 0.5
             anchors.top: parent.top
-            anchors.margins: 20 * ApplicationInfo.ratio
-            height: score.height
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            fontSize: mediumSize
-            fontSizeMode: Text.Fit
-            wrapMode: Text.WordWrap
-            text: items.isMetronomeVisible ? qsTr("Use the metronome to estimate the time intervals and play the rhythm correctly.")
+            anchors.topMargin: GCStyle.baseMargins
+            textItem.text: items.isMetronomeVisible ? qsTr("Use the metronome to estimate the time intervals and play the rhythm correctly.")
             : qsTr("Follow the vertical line and click on the drum or press space key to play the rhythm correctly.")
         }
 
@@ -205,10 +193,27 @@ ActivityBase {
             onStop: Activity.nextSubLevel()
         }
 
+        Rectangle {
+            id: staffLayoutArea
+            color: "#8000ffff"
+            anchors.top: instructionPanel.bottom
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.bottom: optionsRow.top
+            anchors.margins: GCStyle.baseMargins
+        }
+
         MultipleStaff {
             id: multipleStaff
-            width: activityBackground.horizontalLayout ? parent.width * 0.6 : parent.width * 0.9
-            height: activityBackground.horizontalLayout ? parent.height * 1.1 : parent.height * 0.76
+            anchors.centerIn: staffLayoutArea
+
+            // we count maximum 4 notes + the clef, but in case there is more someday, add a Math.max check...
+            property int maxItemsOnTheStaff: Math.max(5, multipleStaff.musicElementModel.count)
+            // To make sure all the notes fit on one line.
+            property int relativeSizeUnit: Math.min(staffLayoutArea.height / 14, staffLayoutArea.width / (5 * maxItemsOnTheStaff))
+
+            height: relativeSizeUnit * 14
+            width: relativeSizeUnit * (5 * maxItemsOnTheStaff)
             bpmValue: 90
             nbStaves: 1
             clef: clefType
@@ -216,9 +221,6 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
             anchors.topMargin: activityBackground.horizontalLayout ? 0 : parent.height * 0.1
-            centerNotesPosition: true
-            firstCenteredNotePosition: width / (2 * (musicElementModel.count - 1))
-            spaceBetweenNotes: width / (2.5 * (musicElementModel.count - 1))
             enableNotesSound: false
             onPulseMarkerAnimationFinished: activityBackground.isRhythmPlaying = false
             onPlayDrumSound: {
