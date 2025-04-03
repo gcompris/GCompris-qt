@@ -35,6 +35,8 @@ ActivityBase {
         // if audio is disabled, we display a dialog to tell users this activity requires audio anyway
         property bool audioDisabled: false
 
+        property bool activityStopped: false
+
         Component.onCompleted: {
             dialogActivityConfig.initialize()
             activity.start.connect(start)
@@ -107,7 +109,21 @@ ActivityBase {
             }
             Activity.start(items, activity.timerNormalInterval);
         }
-        onStop: { Activity.stop() }
+        onStop: {
+            activityStopped = true;
+            Activity.stop();
+        }
+
+        onWidthChanged: {
+            if(!items.isTutorialMode && !activityStopped) {
+                multipleStaff.initClefs(activityBackground.clefType)
+            }
+        }
+        onHeightChanged: {
+            if(!items.isTutorialMode && !activityStopped) {
+                multipleStaff.initClefs(activityBackground.clefType)
+            }
+        }
 
         property string clefType: "Treble"
 
@@ -263,10 +279,11 @@ ActivityBase {
             notesColor: "red"
             softColorOpacity: 0
             isFlickable: false
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: parent.top
-            anchors.topMargin: progressBar.height + 20
-            flickableTopMargin: multipleStaff.height / 14 + distanceBetweenStaff / 2.7
+            anchors.top: progressBar.bottom
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.bottom: shiftKeyboardLeft.top
+            anchors.margins: GCStyle.baseMargins
             noteAnimationEnabled: true
             noteAnimationDuration: items.isTutorialMode ? 9000 : 45000 / activity.speedSetting
             onNoteAnimationFinished: {

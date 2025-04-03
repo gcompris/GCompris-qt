@@ -16,8 +16,6 @@ import core 1.0
 
 Item {
     id: musicElement
-    width: noteImageWidth
-    height: multipleStaff.height / 5
 
     signal stop
 
@@ -28,6 +26,10 @@ Item {
     onStop: {
         highlightTimer.stop();
     }
+
+    property int bpmValue
+    property string notesColor
+    property bool noteHoverEnabled
 
     property string noteName
     property string noteType
@@ -46,13 +48,13 @@ Item {
     function calculateTimerDuration(noteType) {
         noteType = noteType.toLowerCase()
         if(noteType === "whole")
-            return 240000 / multipleStaff.bpmValue
+            return 240000 / bpmValue
         else if(noteType === "half")
-            return 120000 / multipleStaff.bpmValue
+            return 120000 / bpmValue
         else if(noteType === "quarter")
-            return 60000 / multipleStaff.bpmValue
+            return 60000 / bpmValue
         else
-            return 30000 / multipleStaff.bpmValue
+            return 30000 / bpmValue
     }
 
     readonly property int duration: {
@@ -64,8 +66,6 @@ Item {
         }
         return 0
     }
-
-    readonly property real noteImageWidth: (multipleStaff.width - 15 - clefImageWidth) / 10
 
     readonly property var noteColorMap: { "1": "#FF0000", "2": "#FF7F00", "3": "#FFFF00",
         "4": "#32CD32", "5": "#6495ED", "6": "#D02090", "7": "#FF1493", "8": "#FF0000",
@@ -82,32 +82,69 @@ Item {
     property bool highlightWhenPlayed: false
     property alias highlightTimer: highlightTimer
 
-    property var noteDetails
+    property var noteDetails: undefined
 
     property bool noteAnswered: false
     property bool isCorrectlyAnswered: false
 
+    property int lineHeight
+    property int lineThickness
+
     rotation: {
-        if((noteDetails === undefined) || elementType === "clef")
-            return 0
-        else if((noteDetails.positionOnStaff < 0) && (noteType === "Whole"))
-            return 180
-        else
-            return noteDetails.rotation
+        if(noteDetails && noteDetails["positionOnStaff"] <= 3) {
+            return 180;
+        } else {
+            return 0;
+        };
     }
-    
-    Image {
-        id: blackTypeImage
-        source: blackType !== "" ? "qrc:/gcompris/src/activities/piano_composition/resource/black" + blackType + ".svg" : ""
-        sourceSize.width: noteImage.width / 2
-        anchors.right: parent.rotation === 180 ? undefined : noteImage.left
-        anchors.left: parent.rotation === 180 ? noteImage.right : undefined
-        rotation: parent.rotation === 180 ? 180 : 0
-        anchors.rightMargin: -noteImage.width / 4
-        anchors.leftMargin: -noteImage.width / 2.5
-        anchors.bottom: noteImage.bottom
-        anchors.bottomMargin: parent.height / 6
-        fillMode: Image.PreserveAspectFit
+
+    Repeater {
+        id: staffLines
+        model: {
+            if(noteDetails) {
+                if(noteDetails["positionOnStaff"] <= 0) {
+                    1 + Math.abs(noteDetails["positionOnStaff"]);
+                } else if(noteDetails["positionOnStaff"] >= 6) {
+                    noteDetails["positionOnStaff"] - 5;
+                }
+            } else {
+                0;
+            }
+        }
+        Rectangle {
+            width: musicElement.width
+            height: musicElement.lineThickness
+            color: "black"
+            y: (4 - index + noteDetails["positionOnStaff"] % 1) * musicElement.lineHeight - musicElement.lineThickness * 0.5
+        }
+    }
+
+    Rectangle {
+        id:softColor
+        readonly property int invalidConditionNumber: -6
+        readonly property int noteColorNumber: {
+            if(noteDetails === undefined || noteType === "" || noteType === "Rest" || noteName === "")
+                return invalidConditionNumber
+                else if((blackType === "") && (whiteNoteName[noteName[0]] != undefined))
+                    return whiteNoteName[noteName[0]]
+                    else if((noteName.length > 2) && (blackNoteName[noteName.substring(0,2)] != undefined))
+                        return blackNoteName[noteName.substring(0,2)]
+                        else
+                            return invalidConditionNumber
+        }
+        color: {
+            if(musicElement.notesColor === "inbuilt") {
+                return (noteColorNumber > invalidConditionNumber) ? noteColorMap[noteColorNumber] : "white";
+            } else {
+                return musicElement.notesColor;
+            }
+        }
+        width: noteImage.width * 0.8
+        height: width
+        radius: width * 0.5
+        anchors.centerIn: noteImage
+        opacity: softColorOpacity
+        visible: noteIsColored && (elementType != "clef")
     }
 
     Rectangle {
@@ -119,7 +156,7 @@ Item {
         border.color: "#373737"
         border.width: radius * 0.5
         radius: width * 0.1
-        visible: (multipleStaff.noteHoverEnabled && noteMouseArea.containsMouse) || highlightTimer.running
+        visible: (musicElement.noteHoverEnabled && noteMouseArea.containsMouse) || highlightTimer.running
     }
 
     Rectangle {
@@ -134,20 +171,34 @@ Item {
     }
     
     Image {
+        id: blackTypeImage
+        source: blackType !== "" ? "qrc:/gcompris/src/activities/piano_composition/resource/black" + blackType + ".svg" : ""
+        sourceSize.width: parent.width * 0.4
+        anchors.left: parent.rotation === 180 ? undefined : noteImage.left
+        anchors.right: parent.rotation === 180 ? noteImage.right : undefined
+        rotation: parent.rotation === 180 ? 180 : 0
+        anchors.bottom: noteImage.bottom
+        fillMode: Image.PreserveAspectFit
+    }
+    
+    Image {
         id: noteImage
         source: (noteDetails === undefined) ? ""
-                : noteType != "Rest" ? "qrc:/gcompris/src/activities/piano_composition/resource/" + noteDetails.imageName + noteType + ".svg"
-                : "qrc:/gcompris/src/activities/piano_composition/resource/" + noteDetails.imageName + ".svg"
+                : noteType != "Rest" ? "qrc:/gcompris/src/activities/piano_composition/resource/note" + noteType + ".svg"
+                : "qrc:/gcompris/src/activities/piano_composition/resource/rest" + noteName + ".svg"
         sourceSize.width: 200
         width: musicElement.width
         height: musicElement.height
-        mirror: parent.rotation == 180 && parent.noteType == "Eighth" ? true : false
+        fillMode: Image.PreserveAspectFit
     }
 
     Image {
         id: clefImage
         source: (elementType === "clef") ? "qrc:/gcompris/src/activities/piano_composition/resource/" + clefType.toLowerCase() + "Clef.svg" : ""
-        sourceSize.width: multipleStaff.clefImageWidth
+        anchors.fill: parent
+        sourceSize.width: width
+        sourceSize.height: height
+        fillMode: Image.PreserveAspectFit
     }
 
     Image {
@@ -159,39 +210,9 @@ Item {
         anchors.right: parent.rotation === 180 ? undefined : noteImage.right
         anchors.left: parent.rotation === 180 ? noteImage.left : undefined
         rotation: parent.rotation === 180 ? 180 : 0
-        anchors.rightMargin: 12
         anchors.bottom: noteImage.bottom
-        anchors.bottomMargin: parent.height / 6
         fillMode: Image.PreserveAspectFit
         z: 3
-    }
-    
-    Rectangle {
-        id:softColor
-        readonly property int invalidConditionNumber: -6
-        readonly property int noteColorNumber: {
-            if(noteDetails === undefined || noteType === "" || noteType === "Rest" || noteName === "")
-                return invalidConditionNumber
-            else if((blackType === "") && (whiteNoteName[noteName[0]] != undefined))
-                return whiteNoteName[noteName[0]]
-            else if((noteName.length > 2) && (blackNoteName[noteName.substring(0,2)] != undefined))
-                return blackNoteName[noteName.substring(0,2)]
-            else
-                return invalidConditionNumber
-        }
-        color: {
-            if(multipleStaff.notesColor === "inbuilt")
-                return (noteColorNumber > invalidConditionNumber) ? noteColorMap[noteColorNumber] : "white"
-            else
-                return multipleStaff.notesColor
-        }
-        z: -1
-        width: noteImage.width * 0.8
-        height: width
-        radius: width * 0.5
-        anchors.centerIn: noteImage
-        opacity: softColorOpacity
-        visible: noteIsColored && (elementType != "clef")
     }
 
     Timer {

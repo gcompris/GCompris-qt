@@ -96,6 +96,7 @@ ActivityBase {
             property alias answerFeedbackTimer: answerFeedbackTimer
             property string mode: "coloredNotes"
             property bool buttonsBlocked: false
+            property bool readyPressed: false
         }
 
         onStart: {
@@ -106,7 +107,7 @@ ActivityBase {
         }
         onStop: { Activity.stop() }
 
-        property string clefType: (items.bar.level <= 5) ? "Treble" : "Bass"
+        property string clefType: (bar.level <= 5) ? "Treble" : "Bass"
 
         GCSoundEffect {
             id: goodAnswerSound
@@ -160,7 +161,8 @@ ActivityBase {
             focus: true
             z: 10
             onClicked: {
-                Activity.initLevel()
+                items.readyPressed = true;
+                Activity.initLevel();
             }
         }
 
@@ -198,21 +200,35 @@ ActivityBase {
             }
         }
 
+        Item {
+            id: staffLayoutArea
+            anchors.bottom: piano.top
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.margins: GCStyle.baseMargins
+            height: activityBackground.horizontalLayout ?
+                piano.y - instruction.height - 2 * GCStyle.baseMargins :
+                piano.y - optionDeck.y - optionDeck.height - 2 * GCStyle.baseMargins
+        }
+
         MultipleStaff {
             id: multipleStaff
-            width: activityBackground.horizontalLayout ? parent.width * 0.5 : parent.width * 0.8
-            height: activityBackground.horizontalLayout ? parent.height * 0.85 : parent.height * 0.58
+            anchors.centerIn: staffLayoutArea
+
+            // we count maximum 4 notes + the clef, but in case there is more someday, add a Math.max check...
+            property int maxItemsOnTheStaff: Math.max(5, multipleStaff.musicElementModel.count)
+            // To make sure all the notes fit on one line.
+            property int relativeSizeUnit: Math.min(staffLayoutArea.height / 14, staffLayoutArea.width / (5 * maxItemsOnTheStaff))
+
+            height: relativeSizeUnit * 14
+            width: relativeSizeUnit * (5 * maxItemsOnTheStaff)
             nbStaves: 1
             clef: clefType
             coloredNotes: (items.mode === "coloredNotes") ? ['C', 'D', 'E', 'F', 'G', 'A', 'B'] : []
             isFlickable: false
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: instruction.bottom
-            anchors.topMargin: activityBackground.horizontalLayout ? parent.height * 0.02 : parent.height * 0.15
             onNoteClicked: {
                 playNoteAudio(musicElementModel.get(noteIndex).noteName_, musicElementModel.get(noteIndex).noteType_,  musicElementModel.get(noteIndex).soundPitch_)
             }
-            centerNotesPosition: true
         }
 
         PianoOctaveKeyboard {
@@ -221,7 +237,7 @@ ActivityBase {
             height: parent.height * 0.3
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: bar.top
-            anchors.bottomMargin: 20
+            anchors.bottomMargin: 2 * GCStyle.baseMargins
             blackLabelsVisible: ([4, 5, 9, 10].indexOf(bar.level) != -1)
             blackKeysEnabled: blackLabelsVisible && !multipleStaff.isMusicPlaying && !introductoryAudioTimer.running && !items.buttonsBlocked
             whiteKeysEnabled: !multipleStaff.isMusicPlaying && !introductoryAudioTimer.running && !items.buttonsBlocked
@@ -237,18 +253,21 @@ ActivityBase {
 
         Rectangle {
             id: optionDeck
-            width: optionsRow.changeAccidentalStyleButtonVisible ? optionsRow.iconsWidth * 3.3 : optionsRow.iconsWidth * 2.2
-            height: optionsRow.iconsWidth * 1.1
+            width: activityBackground.horizontalLayout ?
+                Math.min(GCStyle.bigButtonHeight * 2 + GCStyle.halfMargins * 3, activityBackground.width * 0.25 - GCStyle.baseMargins * 2) :
+                GCStyle.bigButtonHeight * 2 + GCStyle.halfMargins * 3
+            height: width * 0.5
             color: "white"
             opacity: 0.5
             radius: 10
-            y: activityBackground.horizontalLayout ? piano.y : multipleStaff.y / 2 + instruction.height - height / 2
-            x: activityBackground.horizontalLayout ? multipleStaff.x + multipleStaff.width + 25 : activityBackground.width / 2 - width / 2
+            y: activityBackground.horizontalLayout ? piano.y : instruction.height + GCStyle.baseMargins
+            x: activityBackground.horizontalLayout ? piano.x + piano.width + GCStyle.baseMargins : activityBackground.width / 2 - width / 2
         }
 
         OptionsRow {
             id: optionsRow
             anchors.centerIn: optionDeck
+            iconsWidth: optionDeck.height - GCStyle.halfMargins
 
             playButtonVisible: true
             undoButtonVisible: true

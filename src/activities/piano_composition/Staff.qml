@@ -13,53 +13,47 @@
 import QtQuick 2.12
 import core 1.0
 
+import "../../core"
 
 Item {
     id: staff
-
-    property Item main: activity.main
-
-    property int verticalDistanceBetweenLines: height / nbLines
-
-    // Stave
-    readonly property int nbLines: 5
+    // staff main lines are centered vertically, and there is extra empty space above/under for other notes...
+    required property int index
+    required property int nbLines
+    required property int lineHeight
+    required property int lineThickness
 
     property bool lastPartition: false
 
-    readonly property int yShift: activityBackground.horizontalLayout ? 0 : 1.5
-
     Repeater {
         id: staffLines
-        model: nbLines
+        model: staff.nbLines
         Rectangle {
             width: staff.width
-            height: activityBackground.horizontalLayout ? 5 : 3
-            border.width: height / 2
+            height: staff.lineThickness
             color: "black"
-            y: index * verticalDistanceBetweenLines + yShift
+            y: (index + 4) * staff.lineHeight
         }
     }
 
     // Ending vertical line of the staff.
     Rectangle {
         id: staffEndLine
-        width: activityBackground.horizontalLayout ? 5 : 3
-        border.width: width / 2
-        height: (nbLines - 1) * verticalDistanceBetweenLines + width
+        width: staff.lastPartition ? staff.lineThickness * 2 : staff.lineThickness
+        height: (staff.nbLines - 1) * staff.lineHeight + staff.lineThickness
         color: "black"
-        x: staff.width
-        y: yShift
+        x: staff.width - width
+        y: 4 * staff.lineHeight
     }
 
     // The 2nd vertical line denoting the end of multiple staves
     Rectangle {
         id: multiStaffEndLine
-        width: activityBackground.horizontalLayout ? 5 : 3
-        border.width: width / 2
-        height: (nbLines - 1) * verticalDistanceBetweenLines + width
-        visible: lastPartition
+        width: staff.lineThickness
+        height: (staff.nbLines - 1) * staff.lineHeight + staff.lineThickness
+        visible: staff.lastPartition
         color: "black"
-        x: staff.width - 10
-        y: yShift
+        x: staff.width - 4 * staff.lineThickness
+        y: staffEndLine.y
     }
 }

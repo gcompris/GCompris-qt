@@ -78,6 +78,14 @@ Item {
 
     //: Translators, C♯, D♯, F♯, G♯, and A♯ are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, C♯4 is a C♯ note in the 4th octave.
     readonly property var blackKeySharpNoteLabelsArray: [
+        ["F#1", qsTr("F♯%1").arg(1)],
+        ["G#1", qsTr("G♯%1").arg(1)],
+        ["A#1", qsTr("A♯%1").arg(1)],
+        ["C#2", qsTr("C♯%1").arg(2)],
+        ["D#2", qsTr("D♯%1").arg(2)],
+        ["F#2", qsTr("F♯%1").arg(2)],
+        ["G#2", qsTr("G♯%1").arg(2)],
+        ["A#2", qsTr("A♯%1").arg(2)],
         ["C#3", qsTr("C♯%1").arg(3)],
         ["D#3", qsTr("D♯%1").arg(3)],
         ["F#3", qsTr("F♯%1").arg(3)],
@@ -99,6 +107,14 @@ Item {
 
     //: Translators, D♭, E♭, G♭, A♭, B♭ are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, D♭4 is a D♭ note in the 4th octave.
     readonly property var blackKeyFlatNoteLabelsArray: [
+        ["Gb1", qsTr("G♭%1").arg(1)],
+        ["Ab1", qsTr("A♭%1").arg(1)],
+        ["Bb1", qsTr("B♭%1").arg(1)],
+        ["Db2", qsTr("D♭%1").arg(2)],
+        ["Eb2", qsTr("E♭%1").arg(2)],
+        ["Gb2", qsTr("G♭%1").arg(2)],
+        ["Ab2", qsTr("A♭%1").arg(2)],
+        ["Bb2", qsTr("B♭%1").arg(2)],
         ["Db3", qsTr("D♭%1").arg(3)],
         ["Eb3", qsTr("E♭%1").arg(3)],
         ["Gb3", qsTr("G♭%1").arg(3)],
@@ -124,8 +140,10 @@ Item {
                                             "C#": "#FF6347", "D#": "#FFD700", "F#": "#20B2AA", "G#": "#8A2BE2", "A#": "#FF00FF",
                                             "Db": "#FF6347", "Eb": "#FFD700", "Gb": "#20B2AA", "Ab": "#8A2BE2", "Bb": "#FF00FF"}
 
-    // White key notes are from C3 to G4 when the clef is bass
+    // White key notes are from F1 to G4 when the clef is bass
     property var whiteKeyNoteLabelsBass: [
+        whiteKeyNoteLabelsArray.slice(0, 4),
+        whiteKeyNoteLabelsArray.slice(4, 11),
         whiteKeyNoteLabelsArray.slice(11, 18),
         whiteKeyNoteLabelsArray.slice(18, 22)
     ]
