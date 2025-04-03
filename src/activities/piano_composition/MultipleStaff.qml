@@ -227,11 +227,6 @@ Item {
             target: pulseMarker
             property: "x"
             to: pulseMarker.nextPosition
-            // onStarted: {
-            //     if(pulseMarker.height == 0 && staves.count != 0) {
-            //         pulseMarker.height = Qt.binding(function() {return 4 * staves.itemAt(0).verticalDistanceBetweenLines + pulseMarker.width;})
-            //     }
-            // }
             onStopped: {
                 if(pulseMarker.x === multipleStaff.width)
                     pulseMarkerAnimationFinished()
