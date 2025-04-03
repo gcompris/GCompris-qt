@@ -193,9 +193,8 @@ ActivityBase {
             onStop: Activity.nextSubLevel()
         }
 
-        Rectangle {
+        Item {
             id: staffLayoutArea
-            color: "#8000ffff"
             anchors.top: instructionPanel.bottom
             anchors.left: parent.left
             anchors.right: parent.right
