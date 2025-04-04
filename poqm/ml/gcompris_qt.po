@@ -19604,20 +19604,20 @@ msgstr ""
 "സ്വരങ്ങൾ ശരിയായി തിരിച്ചറിഞ്ഞ്, പിയാനോയിൽ പ്ലേ ചെയ്യൂ, എന്നിട്ട് 100% സ്കോർ നേടിയാൽ ഒരു "
 "ഘട്ടം പൂർത്തിയാക്കാം."
 
-#: activities/note_names/NoteNames.qml:185
+#: activities/note_names/NoteNames.qml:201
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
 msgstr "പുതിയ സ്വരം: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:254
+#: activities/note_names/NoteNames.qml:270
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:431
+#: activities/note_names/NoteNames.qml:448
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19626,12 +19626,12 @@ msgstr ""
 "ഈ പ്രവർത്തനത്തിന് ശബ്ദം ആവശ്യമുണ്ട്, അതുകൊണ്ട് പ്രധാന കോൺഫിഗറേഷനിൽ ഓഡിയൊ ശബ്ദങ്ങളോ എഫക്ടുകളോ "
 "അസാധുവാക്കിയെന്നിരുന്നാലും ഇവിടെ ചില ശബ്ദങ്ങൾ പ്ലേ ചെയ്യും."
 
-#: activities/note_names/NoteNames.qml:432
+#: activities/note_names/NoteNames.qml:449
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "നിർത്തുക"
 
-#: activities/note_names/NoteNames.qml:433
+#: activities/note_names/NoteNames.qml:450
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "തുടരുക"
@@ -21074,37 +21074,37 @@ msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"
 msgstr "മെലഡി നിങ്ങളുടെ ഫയലിലേക്ക് സേവ് ചെയ്തിരിക്കുന്നു (%1)"
 
-#: activities/piano_composition/Piano_composition.qml:335
+#: activities/piano_composition/Piano_composition.qml:369
 msgctxt "Piano_composition|"
 msgid "You have not selected any note. Do you want to erase all the notes?"
 msgstr "നിങ്ങൾ ഒരു സ്വരവും തിരഞ്ഞെടുത്തിട്ടില്ല. എല്ലാ സ്വരങ്ങളും മായിച്ചു കളയണമോ?"
 
-#: activities/piano_composition/Piano_composition.qml:336
+#: activities/piano_composition/Piano_composition.qml:370
 msgctxt "Piano_composition|"
 msgid "Yes"
 msgstr "വേണം"
 
-#: activities/piano_composition/Piano_composition.qml:342
+#: activities/piano_composition/Piano_composition.qml:376
 msgctxt "Piano_composition|"
 msgid "No"
 msgstr "വേണ്ട"
 
-#: activities/piano_composition/Piano_composition.qml:392
+#: activities/piano_composition/Piano_composition.qml:423
 msgctxt "Piano_composition|"
 msgid "Select the type of melody to load."
 msgstr "ലോഡ് ചെയ്യാനുള്ള മെലഡിയുടെ തരം തിരഞ്ഞെടുക്കുക."
 
-#: activities/piano_composition/Piano_composition.qml:397
+#: activities/piano_composition/Piano_composition.qml:428
 msgctxt "Piano_composition|"
 msgid "Pre-defined melodies"
 msgstr "മുൻകൂറായുള്ള മെലഡികൾ"
 
-#: activities/piano_composition/Piano_composition.qml:415
+#: activities/piano_composition/Piano_composition.qml:446
 msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "സേവ് ചെയ്ത മെലഡികൾ"
 
-#: activities/piano_composition/Piano_composition.qml:519
+#: activities/piano_composition/Piano_composition.qml:550
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21113,12 +21113,12 @@ msgstr ""
 "ഈ പ്രവർത്തനത്തിന് ശബ്ദം ആവശ്യമുണ്ട്, അതുകൊണ്ട് പ്രധാന കോൺഫിഗറേഷനിൽ ഓഡിയൊ ശബ്ദങ്ങളോ എഫക്ടുകളോ "
 "അസാധുവാക്കിയെന്നിരുന്നാലും ഇവിടെ ചില ശബ്ദങ്ങൾ പ്ലേ ചെയ്യും."
 
-#: activities/piano_composition/Piano_composition.qml:520
+#: activities/piano_composition/Piano_composition.qml:551
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "നിർത്തുക"
 
-#: activities/piano_composition/Piano_composition.qml:521
+#: activities/piano_composition/Piano_composition.qml:552
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "തുടരുക"
@@ -21200,86 +21200,102 @@ msgstr "E%1"
 #: activities/piano_composition/PianoOctaveKeyboard.qml:86
 #: activities/piano_composition/PianoOctaveKeyboard.qml:91
 #: activities/piano_composition/PianoOctaveKeyboard.qml:96
-#, qt-format
-msgctxt "PianoOctaveKeyboard|"
-msgid "C♯%1"
-msgstr "C♯%1"
-
-#: activities/piano_composition/PianoOctaveKeyboard.qml:82
-#: activities/piano_composition/PianoOctaveKeyboard.qml:87
-#: activities/piano_composition/PianoOctaveKeyboard.qml:92
-#: activities/piano_composition/PianoOctaveKeyboard.qml:97
-#, qt-format
-msgctxt "PianoOctaveKeyboard|"
-msgid "D♯%1"
-msgstr "D♯%1"
-
-#: activities/piano_composition/PianoOctaveKeyboard.qml:83
-#: activities/piano_composition/PianoOctaveKeyboard.qml:88
-#: activities/piano_composition/PianoOctaveKeyboard.qml:93
+#: activities/piano_composition/PianoOctaveKeyboard.qml:101
 #, qt-format
 msgctxt "PianoOctaveKeyboard|"
 msgid "F♯%1"
 msgstr "F♯%1"
 
-#: activities/piano_composition/PianoOctaveKeyboard.qml:84
-#: activities/piano_composition/PianoOctaveKeyboard.qml:89
-#: activities/piano_composition/PianoOctaveKeyboard.qml:94
+#: activities/piano_composition/PianoOctaveKeyboard.qml:82
+#: activities/piano_composition/PianoOctaveKeyboard.qml:87
+#: activities/piano_composition/PianoOctaveKeyboard.qml:92
+#: activities/piano_composition/PianoOctaveKeyboard.qml:97
+#: activities/piano_composition/PianoOctaveKeyboard.qml:102
 #, qt-format
 msgctxt "PianoOctaveKeyboard|"
 msgid "G♯%1"
 msgstr "G♯%1"
 
-#: activities/piano_composition/PianoOctaveKeyboard.qml:85
-#: activities/piano_composition/PianoOctaveKeyboard.qml:90
-#: activities/piano_composition/PianoOctaveKeyboard.qml:95
+#: activities/piano_composition/PianoOctaveKeyboard.qml:83
+#: activities/piano_composition/PianoOctaveKeyboard.qml:88
+#: activities/piano_composition/PianoOctaveKeyboard.qml:93
+#: activities/piano_composition/PianoOctaveKeyboard.qml:98
+#: activities/piano_composition/PianoOctaveKeyboard.qml:103
 #, qt-format
 msgctxt "PianoOctaveKeyboard|"
 msgid "A♯%1"
 msgstr "A♯%1"
 
-#. Translators, D♭, E♭, G♭, A♭, B♭ are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, D♭4 is a D♭ note in the 4th octave.
-#: activities/piano_composition/PianoOctaveKeyboard.qml:102
-#: activities/piano_composition/PianoOctaveKeyboard.qml:107
-#: activities/piano_composition/PianoOctaveKeyboard.qml:112
-#: activities/piano_composition/PianoOctaveKeyboard.qml:117
-#, qt-format
-msgctxt "PianoOctaveKeyboard|"
-msgid "D♭%1"
-msgstr "D♭%1"
-
-#: activities/piano_composition/PianoOctaveKeyboard.qml:103
-#: activities/piano_composition/PianoOctaveKeyboard.qml:108
-#: activities/piano_composition/PianoOctaveKeyboard.qml:113
-#: activities/piano_composition/PianoOctaveKeyboard.qml:118
-#, qt-format
-msgctxt "PianoOctaveKeyboard|"
-msgid "E♭%1"
-msgstr "E♭%1"
-
+#: activities/piano_composition/PianoOctaveKeyboard.qml:84
+#: activities/piano_composition/PianoOctaveKeyboard.qml:89
+#: activities/piano_composition/PianoOctaveKeyboard.qml:94
+#: activities/piano_composition/PianoOctaveKeyboard.qml:99
 #: activities/piano_composition/PianoOctaveKeyboard.qml:104
-#: activities/piano_composition/PianoOctaveKeyboard.qml:109
-#: activities/piano_composition/PianoOctaveKeyboard.qml:114
+#, qt-format
+msgctxt "PianoOctaveKeyboard|"
+msgid "C♯%1"
+msgstr "C♯%1"
+
+#: activities/piano_composition/PianoOctaveKeyboard.qml:85
+#: activities/piano_composition/PianoOctaveKeyboard.qml:90
+#: activities/piano_composition/PianoOctaveKeyboard.qml:95
+#: activities/piano_composition/PianoOctaveKeyboard.qml:100
+#: activities/piano_composition/PianoOctaveKeyboard.qml:105
+#, qt-format
+msgctxt "PianoOctaveKeyboard|"
+msgid "D♯%1"
+msgstr "D♯%1"
+
+#. Translators, D♭, E♭, G♭, A♭, B♭ are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, D♭4 is a D♭ note in the 4th octave.
+#: activities/piano_composition/PianoOctaveKeyboard.qml:110
+#: activities/piano_composition/PianoOctaveKeyboard.qml:115
+#: activities/piano_composition/PianoOctaveKeyboard.qml:120
+#: activities/piano_composition/PianoOctaveKeyboard.qml:125
+#: activities/piano_composition/PianoOctaveKeyboard.qml:130
 #, qt-format
 msgctxt "PianoOctaveKeyboard|"
 msgid "G♭%1"
 msgstr "G♭%1"
 
-#: activities/piano_composition/PianoOctaveKeyboard.qml:105
-#: activities/piano_composition/PianoOctaveKeyboard.qml:110
-#: activities/piano_composition/PianoOctaveKeyboard.qml:115
+#: activities/piano_composition/PianoOctaveKeyboard.qml:111
+#: activities/piano_composition/PianoOctaveKeyboard.qml:116
+#: activities/piano_composition/PianoOctaveKeyboard.qml:121
+#: activities/piano_composition/PianoOctaveKeyboard.qml:126
+#: activities/piano_composition/PianoOctaveKeyboard.qml:131
 #, qt-format
 msgctxt "PianoOctaveKeyboard|"
 msgid "A♭%1"
 msgstr "A♭%1"
 
-#: activities/piano_composition/PianoOctaveKeyboard.qml:106
-#: activities/piano_composition/PianoOctaveKeyboard.qml:111
-#: activities/piano_composition/PianoOctaveKeyboard.qml:116
+#: activities/piano_composition/PianoOctaveKeyboard.qml:112
+#: activities/piano_composition/PianoOctaveKeyboard.qml:117
+#: activities/piano_composition/PianoOctaveKeyboard.qml:122
+#: activities/piano_composition/PianoOctaveKeyboard.qml:127
+#: activities/piano_composition/PianoOctaveKeyboard.qml:132
 #, qt-format
 msgctxt "PianoOctaveKeyboard|"
 msgid "B♭%1"
 msgstr "B♭%1"
+
+#: activities/piano_composition/PianoOctaveKeyboard.qml:113
+#: activities/piano_composition/PianoOctaveKeyboard.qml:118
+#: activities/piano_composition/PianoOctaveKeyboard.qml:123
+#: activities/piano_composition/PianoOctaveKeyboard.qml:128
+#: activities/piano_composition/PianoOctaveKeyboard.qml:133
+#, qt-format
+msgctxt "PianoOctaveKeyboard|"
+msgid "D♭%1"
+msgstr "D♭%1"
+
+#: activities/piano_composition/PianoOctaveKeyboard.qml:114
+#: activities/piano_composition/PianoOctaveKeyboard.qml:119
+#: activities/piano_composition/PianoOctaveKeyboard.qml:124
+#: activities/piano_composition/PianoOctaveKeyboard.qml:129
+#: activities/piano_composition/PianoOctaveKeyboard.qml:134
+#, qt-format
+msgctxt "PianoOctaveKeyboard|"
+msgid "E♭%1"
+msgstr "E♭%1"
 
 #. Activity title
 #: activities/planegame/ActivityInfo.qml:15
@@ -21384,12 +21400,12 @@ msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
 msgstr "ബാക്ക്‌സ്പെയ്സോ ഡിലീറ്റോ: അൺഡു"
 
-#: activities/play_piano/PlayPiano.qml:197
+#: activities/play_piano/PlayPiano.qml:199
 msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "തന്നിരിക്കുന്ന സ്വരങ്ങൾക്ക് യോജിക്കുന്ന പിയാനോ കീകളിൽ ക്ലിക്ക് ചെയ്യൂ."
 
-#: activities/play_piano/PlayPiano.qml:310
+#: activities/play_piano/PlayPiano.qml:329
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21398,12 +21414,12 @@ msgstr ""
 "ഈ പ്രവർത്തനത്തിന് ശബ്ദം ആവശ്യമുണ്ട്, അതുകൊണ്ട് പ്രധാന കോൺഫിഗറേഷനിൽ ഓഡിയൊ ശബ്ദങ്ങളോ എഫക്ടുകളോ "
 "അസാധുവാക്കിയെന്നിരുന്നാലും ഇവിടെ ചില ശബ്ദങ്ങൾ പ്ലേ ചെയ്യും."
 
-#: activities/play_piano/PlayPiano.qml:311
+#: activities/play_piano/PlayPiano.qml:330
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "നിർത്തുക"
 
-#: activities/play_piano/PlayPiano.qml:312
+#: activities/play_piano/PlayPiano.qml:331
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "തുടരുക"
@@ -21489,14 +21505,14 @@ msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
 msgstr "ടാബ്: സമയമാപിനി ഉണ്ടെങ്കിൽ അതു തുടങ്ങാനോ നിർത്താനോ"
 
-#: activities/play_rhythm/PlayRhythm.qml:135
+#: activities/play_rhythm/PlayRhythm.qml:123
 msgctxt "PlayRhythm|"
 msgid ""
 "Use the metronome to estimate the time intervals and play the rhythm "
 "correctly."
 msgstr "സമയമാപിനി ഉപയോഗിച്ച് സമയ ഇടവേളകൾ കണക്കാക്കി ശരിയായി താളമടിക്കാം."
 
-#: activities/play_rhythm/PlayRhythm.qml:136
+#: activities/play_rhythm/PlayRhythm.qml:124
 msgctxt "PlayRhythm|"
 msgid ""
 "Follow the vertical line and click on the drum or press space key to play "
@@ -21505,7 +21521,7 @@ msgstr ""
 "കുത്തനെയുള്ള വര ശ്രദ്ധിച്ച് ഡ്രമ്മിൽ ക്ലിക്ക് ചെയ്യുകയോ സ്പെയ്സ് കീ അമർത്തുകയോ ചെയ്ത് ശരിയായി "
 "താളമടിക്കൂ."
 
-#: activities/play_rhythm/PlayRhythm.qml:392
+#: activities/play_rhythm/PlayRhythm.qml:393
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21514,12 +21530,12 @@ msgstr ""
 "ഈ പ്രവർത്തനത്തിന് ശബ്ദം ആവശ്യമുണ്ട്, അതുകൊണ്ട് പ്രധാന കോൺഫിഗറേഷനിൽ ഓഡിയൊ ശബ്ദങ്ങളോ എഫക്ടുകളോ "
 "അസാധുവാക്കിയെന്നിരുന്നാലും ഇവിടെ ചില ശബ്ദങ്ങൾ പ്ലേ ചെയ്യും."
 
-#: activities/play_rhythm/PlayRhythm.qml:393
+#: activities/play_rhythm/PlayRhythm.qml:394
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "നിർത്തുക"
 
-#: activities/play_rhythm/PlayRhythm.qml:394
+#: activities/play_rhythm/PlayRhythm.qml:395
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "തുടരുക"
