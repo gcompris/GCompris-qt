@@ -5613,7 +5613,7 @@ msgstr "数字电路"
 #: activities/digital_electricity/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr ""
+msgstr "创建并模拟一个数字逻辑电路."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -7830,7 +7830,7 @@ msgstr "单击给定金字塔的位置。"
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "故宫"
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -7845,12 +7845,17 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
+"设在中国北京市中心的紫禁城是一个伟大的帝国宫殿，它是近500年来从明王朝"
+"(1368-1644) 到清王朝末端(1644-1912)中国帝国王的家园和国家政治中心。在"
+"1406-1420之间建造了这个建筑杰作，面积180英亩，存在980多座共包含8700个房间的受"
+"保护建筑。 表现了中国古老的宫殿设计。建筑被护城河和围墙包围，且紫禁城通常不向"
+"公众开放，象征了皇权的权利和集权。"
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "乐山大佛"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -7865,12 +7870,18 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
+"中国四川省的乐山大佛， 是一座在岷江、大渡河和青衣江汇合处的巨型雕像。 它高71"
+"米（233英尺），不仅是联合国教科文组织定义的世界文化遗产，也是世界上最高的前现"
+"代雕像。佛像在唐代(713–803)修建，其形象为代表未来的弥勒佛。并希望该工程能让当"
+"地危害船只的河流不再凶险。佛像的设计非常精巧，在佛像的内部包含一个隐藏的排水"
+"系统，防止了侵蚀。其宁静的表情和精巧的建造手法让该佛像成为人类精神和艺术的一"
+"大成就。"
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr ""
+msgstr "布达拉宫"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -7885,12 +7896,17 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
+"布达拉宫被修建在中国西藏拉萨的红山上，是西藏文化的象征，也是联合国教科文组织"
+"定义的世界文化遗产。布达拉宫最初在7世纪修建并在17世纪被扩建。布达拉宫是达赖喇"
+"嘛的冬季住所且是西藏的统治中心，布达拉宫有13层且有1000多个房间，该宫殿将复杂"
+"的西藏建筑，充满活力的壁画和神圣的遗迹组合在一起。布达拉宫分为白宫，住房区和"
+"专用于宗教学习和祈祷的红宫。布达拉宫是西藏精神和历史遗产的象征。"
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "兵马俑"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -7902,6 +7918,9 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
+"兵马俑是与中国史上第一位皇帝秦始皇陪葬的数以千计的真人大小的陶制士兵，战马。"
+"兵马俑在1974年在西安附近被发现，该遗迹可以被追溯到公元前210年，且拥有难以置信"
+"的细节。每个士兵都是独立制作并用此来代表古中国军队的不同军衔和角色。"
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
