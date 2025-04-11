@@ -12,24 +12,41 @@ import core 1.0
 
 /*
 Here is an example of what data is expected for a level with specific numbers:
-    data: [
+[
+    {
+        "shuffle": true,
+        "subLevels":  [
         {
-            random: false,
-            values: [
-                // First sublevel
-                [[11, 55], [88, 22], [11, 44]],
-                // Second sublevel
-                [[23, 8], [855, 252], [115, 115], [1996, 1987], [1996, 2003]]
-            ]
+            "leftNumber": "1",
+            "rightNumber": "2"
         },
         {
-            random: false,
-            values: [
-                [[822, 99], [4432, 4431], [5252, 2525]],
-                [[11, 23], [3523, 51], [33, 33]],
-                [[73, 2], [201, 532], [4215, 241]]
-            ]
+            "leftNumber": "3",
+            "rightNumber": "4"
+        },
+        {
+            "leftNumber": "4",
+            "rightNumber": "3"
         }
+        ]
+    },
+    {
+        "shuffle": true,
+        "subLevels":  [
+        {
+            "leftNumber": "2",
+            "rightNumber": "2"
+        },
+        {
+            "leftNumber": "3",
+            "rightNumber": "6"
+        },
+        {
+            "leftNumber": "4",
+            "rightNumber": "1.1"
+        }
+        ]
+    }
     ]
 */
 Data {
