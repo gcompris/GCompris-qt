@@ -88,11 +88,14 @@ function initLevel() {
     }
     //fixedDataset
     else {
-        var sublevel = currentDataset.values[items.score.currentSubLevel];
+        var sublevel = currentDataset["subLevels"];
         numberOfEquations = sublevel.length;
+        if(currentDataset["shuffle"] == true) {
+            sublevel = Core.shuffle(sublevel);
+        }
         for(var i = 0; i < numberOfEquations; i++) {
-            var leftHandSide = sublevel[i][0].toString()
-            var rightHandSide = sublevel[i][1].toString()
+            var leftHandSide = sublevel[i]["leftNumber"].toString()
+            var rightHandSide = sublevel[i]["rightNumber"].toString()
             items.dataListModel.append({
                 "leftHandSide": leftHandSide,
                 "rightHandSide": rightHandSide,
@@ -101,7 +104,7 @@ function initLevel() {
                 "isCorrectAnswer": true
             })
         }
-        items.score.numberOfSubLevels = currentDataset.values.length;
+        items.score.numberOfSubLevels = 1;
     }
     numberOfSubLevel = items.score.numberOfSubLevels;
     // Refresh the bindings by forcing a change of value and always select the first line by default
