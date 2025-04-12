@@ -18641,7 +18641,7 @@ msgstr "მარცხენა და მარჯვენა ისრებ
 #: activities/money_cents/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
-msgstr ""
+msgstr "Tab: გადასვლა ქვედა და ზედა ადგილებს შორის"
 
 #: activities/money/money.js:148
 msgctxt "money|"
@@ -19407,7 +19407,7 @@ msgstr "დაალაგეთ მითითებული მოვლე�
 #: activities/ordering_chronology/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Learn to order an event sequence in chronological order."
-msgstr ""
+msgstr "ისწავლეთ მოვლენების ქრონოლოგიურად დალაგება."
 
 #. Help manual
 #: activities/ordering_chronology/ActivityInfo.qml:30
@@ -19553,7 +19553,7 @@ msgstr "დაალაგეთ მითითებული სიტყვ�
 #: activities/ordering_sentences/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Practice ordering words to form a meaningful sentence."
-msgstr ""
+msgstr "ივარჯიშეთ სიტყვების აზრიან წინადადებაში დალაგებაში."
 
 #. Help manual
 #: activities/ordering_sentences/ActivityInfo.qml:29
@@ -22685,7 +22685,7 @@ msgstr ""
 #: activities/share/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
-msgstr ""
+msgstr "მაქს 30 კონფეტი და 6 ბავშვი, შეიძლება დანარჩენი."
 
 #: activities/share/share.js:98
 #, qt-format
@@ -22752,7 +22752,7 @@ msgstr ""
 #: activities/simplepaint/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
-msgstr ""
+msgstr "Tab: გადართვა ფერების ამრჩევისა და ხატვის ადგილს შორის"
 
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18
@@ -23024,7 +23024,7 @@ msgstr "რიცხვები კამათლით"
 #: activities/smallnumbers/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Count the number of dots on the dice before it reaches the ground."
-msgstr ""
+msgstr "დაითვალეთ წერტილები კამათელზე, სანამ ის მიწას მიაღწევს."
 
 #. Help goal
 #: activities/smallnumbers/ActivityInfo.qml:20
@@ -23045,6 +23045,7 @@ msgstr "თვლის უნარები."
 msgctxt "ActivityInfo|"
 msgid "Type the number of dots you see on each falling dice."
 msgstr ""
+"აკრიფეთ წერტილების რაოდენობა, რომელსაც თითოეულ ვარდნილ კამათელზე ხედავთ."
 
 #: activities/smallnumbers/resource/1/Data.qml:14
 #: activities/smallnumbers2/resource/1/Data.qml:14
@@ -23149,13 +23150,14 @@ msgstr "რიცხვები დომინოთი"
 #: activities/smallnumbers2/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Count the number of dots on the domino before it reaches the ground."
-msgstr ""
+msgstr "დაითვალეთ დომინოს წერტილები, სანამ ის მიწას მიაღწევს."
 
 #. Help manual
 #: activities/smallnumbers2/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Type the number of dots you see on each falling domino."
 msgstr ""
+"აკრიფეთ წერტილების რაოდენობა, რომელსაც თითოეულ ვარდნილ დომინოზე ხედავთ."
 
 #: activities/smallnumbers2/resource/1/Data.qml:18
 msgctxt "Data|"

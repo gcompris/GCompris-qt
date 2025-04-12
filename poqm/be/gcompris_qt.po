@@ -6,72 +6,46 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-01-22 09:44+0300\n"
+"PO-Revision-Date: 2025-04-11 18:55+0300\n"
 "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 2.2.4\n"
-"X-Crowdin-Project: gcompris-by\n"
-"X-Crowdin-Project-ID: 418508\n"
-"X-Crowdin-Language: be\n"
-"X-Crowdin-File: gcompris_qt.po\n"
-"X-Crowdin-File-ID: 10\n"
-"X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
 "%100>=11 && n%100<=14 ? 2 : 3);\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
 "%100>=11 && n%100<=14 ? 2 : 3);\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Crowdin-Project: gcompris-by\n"
-"X-Crowdin-Project-ID: 418508\n"
-"X-Crowdin-Language: be\n"
-"X-Crowdin-File: gcompris_qt.po\n"
-"X-Crowdin-File-ID: 10\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Crowdin-Project: gcompris-by\n"
-"X-Crowdin-Project-ID: 418508\n"
-"X-Crowdin-Language: be\n"
-"X-Crowdin-File: gcompris_qt.po\n"
-"X-Crowdin-File-ID: 10\n"
-"X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
 "%100>=11 && n%100<=14 ? 2 : 3);\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
 "%100>=11 && n%100<=14 ? 2 : 3);\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Crowdin-Project: gcompris-by\n"
-"X-Crowdin-Project-ID: 418508\n"
-"X-Crowdin-Language: be\n"
-"X-Crowdin-File: gcompris_qt.po\n"
-"X-Crowdin-File-ID: 10\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Crowdin-Project: gcompris-by\n"
-"X-Crowdin-Project-ID: 418508\n"
-"X-Crowdin-Language: be\n"
-"X-Crowdin-File: gcompris_qt.po\n"
-"X-Crowdin-File-ID: 10\n"
-"X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
 "%100>=11 && n%100<=14 ? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
+"%100>=11 && n%100<=14 ? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
+"%100>=11 && n%100<=14 ? 2 : 3);\n"
+"X-Qt-Contexts: true\n"
+"X-Generator: Poedit 3.5\n"
+"X-Crowdin-Project: gcompris-by\n"
+"X-Crowdin-Project-ID: 418508\n"
+"X-Crowdin-Language: be\n"
+"X-Crowdin-File: gcompris_qt.po\n"
+"X-Crowdin-File-ID: 10\n"
+"X-Qt-Contexts: true\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Qt-Contexts: true\n"
 "X-Generator: Poedit 2.2.1\n"
 "X-Crowdin-Project: gcompris-by\n"
 "X-Crowdin-Project-ID: 418508\n"
@@ -86,14 +60,40 @@ msgstr ""
 "X-Crowdin-File: gcompris_qt.po\n"
 "X-Crowdin-File-ID: 10\n"
 "X-Qt-Contexts: true\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
-"%100>=11 && n%100<=14 ? 2 : 3);\n"
 "X-Generator: Poedit 2.2.1\n"
 "X-Qt-Contexts: true\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
-"%100>=11 && n%100<=14 ? 2 : 3);\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Crowdin-Project: gcompris-by\n"
+"X-Crowdin-Project-ID: 418508\n"
+"X-Crowdin-Language: be\n"
+"X-Crowdin-File: gcompris_qt.po\n"
+"X-Crowdin-File-ID: 10\n"
+"X-Qt-Contexts: true\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Crowdin-Project: gcompris-by\n"
+"X-Crowdin-Project-ID: 418508\n"
+"X-Crowdin-Language: be\n"
+"X-Crowdin-File: gcompris_qt.po\n"
+"X-Crowdin-File-ID: 10\n"
+"X-Qt-Contexts: true\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Qt-Contexts: true\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Crowdin-Project: gcompris-by\n"
+"X-Crowdin-Project-ID: 418508\n"
+"X-Crowdin-Language: be\n"
+"X-Crowdin-File: gcompris_qt.po\n"
+"X-Crowdin-File-ID: 10\n"
+"X-Qt-Contexts: true\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Crowdin-Project: gcompris-by\n"
+"X-Crowdin-Project-ID: 418508\n"
+"X-Crowdin-Language: be\n"
+"X-Crowdin-File: gcompris_qt.po\n"
+"X-Crowdin-File-ID: 10\n"
+"X-Qt-Contexts: true\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Qt-Contexts: true\n"
 "X-Generator: Poedit 2.2.1\n"
 "X-Crowdin-Project: gcompris-by\n"
 "X-Crowdin-Project-ID: 418508\n"
@@ -5968,9 +5968,6 @@ msgstr "Лічбавая электроніка"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
 msgstr "Стварыце лічбавую лагічную схему і сімулюйце яе працу."
@@ -8461,12 +8458,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Палац у Майсоры"
+msgstr "Палац у Потале"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8521,12 +8515,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Эйфелева вежа"
+msgstr "Вежа Дзяолоў"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8543,17 +8534,11 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Манументы Індыі"
+msgstr "Помнікі Кітая"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Выберыце мясцовасць, дзе размяшчаецца дадзены манумент."
@@ -8602,12 +8587,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Вормскі кафедральны сабор"
+msgstr "сабор Санта-Марыя-дэль-Ф’ёрэ"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8626,12 +8608,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Вежа Ханою"
+msgstr "Пізанская вежа"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8690,29 +8669,20 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Манументы Індыі"
+msgstr "Манументы Італіі"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Выберыце мясцовасць, дзе размяшчаецца дадзены манумент."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Змешаны рэгістр"
+msgstr "Замак Хімеджы"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -8790,17 +8760,11 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Манументы Францыі"
+msgstr "Манументы Японіі"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Выберыце мясцовасць, дзе размяшчаецца дадзены манумент."
@@ -10321,12 +10285,10 @@ msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Табуляцыя: пераключыцца паміж рэдагаваннем фрызу і праглядам мадэлі"
 
 #: activities/frieze/Frieze.qml:109
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulb|"
-#| msgid "What is the binary representation of %1?"
+#, qt-format
 msgctxt "Frieze|"
 msgid "What is the binary representation of %1?"
-msgstr "Якое бітавае прадстаўленне мае лік %1?"
+msgstr "Якое бінарнае прадстаўленне мае лік %1?"
 
 #: activities/frieze/Frieze.qml:288
 msgctxt "Frieze|"
@@ -15315,12 +15277,9 @@ msgid "Division required."
 msgstr "Патрабуецца дзяленне."
 
 #: activities/guess24/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "Гульня з усімі аперацыямі напамяць"
+msgstr "Патрабуюцца ўсе аператары."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -17476,12 +17435,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "Магічны каптурок"
+msgstr "Каптурок чараўніка (адыманне)"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -17572,12 +17528,9 @@ msgstr "%1x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "Магічны каптурок"
+msgstr "Каптурок чараўніка (складанне)"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
