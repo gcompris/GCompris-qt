@@ -19,6 +19,8 @@ Image {
     id: chooser
     z: 1
 
+    required property bool modeRGB
+    property bool buttonsBlocked
     property int maxSteps: 10
     property int currentStep: 0
     property string brushHue
@@ -29,29 +31,29 @@ Image {
 
     Image {
         id: intensityScreen
-        source: activity.modeRGB ? Activity.url + "flashlight2" + brushHue + ".svg" : "qrc:/gcompris/src/core/resource/empty.svg"
+        source: chooser.modeRGB ? Activity.url + "flashlight2" + chooser.brushHue + ".svg" : "qrc:/gcompris/src/core/resource/empty.svg"
         anchors.fill: parent
         sourceSize.width: width
         sourceSize.height: height
-        opacity: currentStep / maxSteps
-        visible: activity.modeRGB
+        opacity: chooser.currentStep / chooser.maxSteps
+        visible: chooser.modeRGB
     }
 
     Image {
         id: intensityBrush
-        source: Activity.url + (activity.modeRGB ? 
-                    "light" + brushHue + ".svg" : "brush" + brushHue + ".svg")
-        height: (activity.modeRGB ? parent.height * 1.1 : parent.height * 0.25) * (currentStep / maxSteps)
-        width: activity.modeRGB ? parent.width * 0.25 : height
+        source: Activity.url + (chooser.modeRGB ? 
+                    "light" + chooser.brushHue + ".svg" : "brush" + chooser.brushHue + ".svg")
+        height: (chooser.modeRGB ? parent.height * 1.1 : parent.height * 0.25) * (chooser.currentStep / chooser.maxSteps)
+        width: chooser.modeRGB ? parent.width * 0.25 : height
         sourceSize.width: width
         sourceSize.height: height
         anchors {
             left: parent.right
-            leftMargin: activity.modeRGB ? - parent.width * 0.18 : 0
+            leftMargin: chooser.modeRGB ? - parent.width * 0.18 : 0
             verticalCenter: parent.verticalCenter
         }
-        opacity: activity.modeRGB ? currentStep / maxSteps * 2 : 1
-        visible: currentStep > 0
+        opacity: chooser.modeRGB ? chooser.currentStep / chooser.maxSteps * 2 : 1
+        visible: chooser.currentStep > 0
     }
 
     Item {
@@ -75,15 +77,15 @@ Image {
         border.width: GCStyle.midBorder
         border.color: GCStyle.grayBorder
         property int maxLimit: width - sliderHandle.width
-        onWidthChanged: setSliderX();
+        onWidthChanged: chooser.setSliderX();
         Rectangle {
             z: -1
-            radius: parent.radius
+            radius: sliderArea.radius
             anchors.left: sliderHandle.left
             anchors.top: sliderArea.top
             anchors.bottom: sliderArea.bottom
             anchors.right: sliderArea.right
-            anchors.margins: parent.border.width * 0.5
+            anchors.margins: sliderArea.border.width * 0.5
             color: "#B0FFFFFF"
         }
         Rectangle {
@@ -97,15 +99,15 @@ Image {
         }
         MouseArea {
             anchors.fill: parent
-            enabled: !items.buttonsBlocked
+            enabled: !chooser.buttonsBlocked
             drag.target: sliderHandle
             onPositionChanged: {
                 if(sliderHandle.x < 0)
                     sliderHandle.x = 0;
                 if(sliderHandle.x > sliderArea.maxLimit)
                     sliderHandle.x = sliderArea.maxLimit;
-                currentStep = Math.round(sliderHandle.x / sliderArea.maxLimit * maxSteps);
-                setSliderX();
+                chooser.currentStep = Math.round(sliderHandle.x / sliderArea.maxLimit * chooser.maxSteps);
+                chooser.setSliderX();
             }
         }
     }
@@ -117,11 +119,12 @@ Image {
     ColorButton {
         id: plusButton
         source: Activity.url + "plus.svg"
+        buttonsBlocked: chooser.buttonsBlocked
         anchors {
             verticalCenter: controlsArea.verticalCenter
             right: controlsArea.right
         }
-        onClicked: currentStep = Math.min(currentStep + 1, maxSteps);
+        onClicked: chooser.currentStep = Math.min(chooser.currentStep + 1, chooser.maxSteps);
     }
 
     ColorButton {
@@ -132,6 +135,6 @@ Image {
             verticalCenter: controlsArea.verticalCenter
             left: controlsArea.left
         }
-        onClicked: currentStep = Math.max(currentStep - 1, 0);
+        onClicked: chooser.currentStep = Math.max(chooser.currentStep - 1, 0);
     }
 }

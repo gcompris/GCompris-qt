@@ -17,7 +17,7 @@ Item {
     height: width
 
     property alias source: buttonImage.source
-
+    property bool buttonsBlocked
     signal clicked
 
     Rectangle {
@@ -42,7 +42,7 @@ Item {
 
     MouseArea {
         id: mouseArea
-        enabled: !items.buttonsBlocked
+        enabled: !button.buttonsBlocked
         anchors.fill: parent
         hoverEnabled: true
 

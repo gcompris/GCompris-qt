@@ -8,6 +8,8 @@
 *
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import core 1.0
 
@@ -26,7 +28,7 @@ ActivityBase {
 
     pageComponent: Image {
         id: activityBackground
-        source: Activity.url + (modeRGB ? "background.svg" : "background2.svg")
+        source: Activity.url + (activity.modeRGB ? "background.svg" : "background2.svg")
         sourceSize.width: width
         sourceSize.height: height
         anchors.fill: parent
@@ -153,6 +155,8 @@ ActivityBase {
 
         ColorChooser {
             id: color1
+            modeRGB: activity.modeRGB
+            buttonsBlocked: items.buttonsBlocked
             brushHue: activity.modeRGB ? "-r" : "-m" /* red / magenta */
             source: Activity.url + (activity.modeRGB ? "flashlight-red.svg" : "tube-magenta.svg")
             height: result.width
@@ -166,6 +170,8 @@ ActivityBase {
 
         ColorChooser {
             id: color2
+            modeRGB: activity.modeRGB
+            buttonsBlocked: items.buttonsBlocked
             brushHue: activity.modeRGB ? "-g" : "-y" /* green / yellow */
             source: Activity.url + (activity.modeRGB ? "flashlight-green.svg" : "tube-yellow.svg")
             height: result.width
@@ -180,6 +186,8 @@ ActivityBase {
 
         ColorChooser {
             id: color3
+            modeRGB: activity.modeRGB
+            buttonsBlocked: items.buttonsBlocked
             brushHue: activity.modeRGB ? "-b" : "-c" /* blue / cyan */
             source: Activity.url + (activity.modeRGB ? "flashlight-blue.svg" : "tube-cyan.svg")
             height: result.width
@@ -263,7 +271,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
@@ -273,7 +281,7 @@ ActivityBase {
                 value: help | home | level
             }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
