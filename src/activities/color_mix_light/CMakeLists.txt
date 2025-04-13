@@ -8,4 +8,6 @@ GCOMPRIS_ADD_RESOURCE(activities/color_mix_light
   *.qml
   RESOURCES
   *.svg
+  DEPENDENCIES
+  color_mix
 )
