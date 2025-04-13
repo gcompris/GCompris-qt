@@ -13,6 +13,8 @@
  *  https://www.4nums.com/solutions/allsolvables/   (2023-07-08 datas)
  *  https://fr.y8.com/games/make_24
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import core 1.0
 
@@ -157,6 +159,8 @@ ActivityBase {
                 model: cardsModel
                 delegate: Item {   // Display a card with a number inside
                     id: cardNumber
+                    required property int value_
+                    required property int index
                     property int value: value_
                     width: cardsBoard.cellWidth
                     height: cardsBoard.cellHeight
@@ -168,9 +172,9 @@ ActivityBase {
                         anchors.left: parent.left
                         anchors.margins: GCStyle.halfMargins
                         visible: true
-                        color: (items.currentValue === index) ? GCStyle.focusColor : GCStyle.lightBg
-                        border.width: (items.keyboardNavigation && items.keysOnValues && (cardsBoard.currentIndex === index)) ? GCStyle.thickBorder : GCStyle.thinnestBorder
-                        border.color: (items.keyboardNavigation && items.keysOnValues && (cardsBoard.currentIndex === index)) ? activityBackground.selectionColor : GCStyle.blueBorder
+                        color: (items.currentValue === cardNumber.index) ? GCStyle.focusColor : GCStyle.lightBg
+                        border.width: (items.keyboardNavigation && items.keysOnValues && (cardsBoard.currentIndex === cardNumber.index)) ? GCStyle.thickBorder : GCStyle.thinnestBorder
+                        border.color: (items.keyboardNavigation && items.keysOnValues && (cardsBoard.currentIndex === cardNumber.index)) ? activityBackground.selectionColor : GCStyle.blueBorder
                         radius: GCStyle.halfMargins
                         GCText {
                             anchors.fill: parent
@@ -178,13 +182,13 @@ ActivityBase {
                             verticalAlignment: Text.AlignVCenter
                             fontSize: hugeSize
                             fontSizeMode: Text.Fit
-                            text: value
+                            text: cardNumber.value
                         }
                         MouseArea {
                             id: boardArea
                             anchors.fill: parent
                             enabled: animationCard.state === "" && !items.buttonsBlocked
-                            onClicked: Activity.valueClicked(index)
+                            onClicked: Activity.valueClicked(cardNumber.index)
                         }
                     }
                 }
@@ -302,6 +306,8 @@ ActivityBase {
                 boundsBehavior: Flickable.StopAtBounds
                 model: [ "+", "−", "×", "÷" ]
                 delegate: Item {
+                    id: delegateOperator
+                    required property int index
                     width: (operatorsArea.width - GCStyle.halfMargins) * 0.25
                     height: operatorsArea.height
                     Rectangle {     // Display an operator button
@@ -311,17 +317,17 @@ ActivityBase {
                         anchors.top: parent.top
                         anchors.left: parent.left
                         anchors.margins: GCStyle.halfMargins
-                        visible: index < items.operatorsCount
-                        color: (items.currentOperator === index) ? GCStyle.focusColor : GCStyle.lightBg
+                        visible: delegateOperator.index < items.operatorsCount
+                        color: (items.currentOperator === delegateOperator.index) ? GCStyle.focusColor : GCStyle.lightBg
                         opacity: (items.currentValue !== -1) ? 1.0 : 0.5
-                        border.width: (items.keyboardNavigation && !items.keysOnValues && (operators.currentIndex === index) && (items.currentValue !== -1)) ? GCStyle.thickBorder : GCStyle.thinnestBorder
-                        border.color: (items.keyboardNavigation && !items.keysOnValues && (operators.currentIndex === index) && (items.currentValue !== -1)) ? activityBackground.selectionColor : GCStyle.blueBorder
+                        border.width: (items.keyboardNavigation && !items.keysOnValues && (operators.currentIndex === delegateOperator.index) && (items.currentValue !== -1)) ? GCStyle.thickBorder : GCStyle.thinnestBorder
+                        border.color: (items.keyboardNavigation && !items.keysOnValues && (operators.currentIndex === delegateOperator.index) && (items.currentValue !== -1)) ? activityBackground.selectionColor : GCStyle.blueBorder
                         radius: GCStyle.halfMargins
                         GCText {
                             anchors.fill: parent
                             horizontalAlignment: Text.AlignHCenter
                             verticalAlignment: Text.AlignVCenter
-                            text: operators.model[index]
+                            text: operators.model[delegateOperator.index]
                             fontSize: hugeSize
                             fontSizeMode: Text.Fit
                         }
@@ -329,7 +335,7 @@ ActivityBase {
                             id: opArea
                             anchors.fill: parent
                             enabled: !items.buttonsBlocked
-                            onClicked: Activity.operatorClicked(index)
+                            onClicked: Activity.operatorClicked(delegateOperator.index)
                         }
                     }
                 }
@@ -363,7 +369,6 @@ ActivityBase {
             anchors.top: stepsRect.bottom
             anchors.topMargin: GCStyle.halfMargins
             anchors.right: layoutArea.right
-            opacity: 0.0
             GCText {
                 id: solution
                 anchors.fill: parent
@@ -448,12 +453,12 @@ ActivityBase {
             currentActivity: activity.activityInfo
 
             onSaveData: {
-                levelFolder = dialogActivityConfig.chosenLevels
+                activity.levelFolder = dialogActivityConfig.chosenLevels
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
             }
             onClose: {
-                home()
+                activity.home()
             }
             onStartActivity: {
                 activityBackground.stop()
@@ -463,7 +468,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         Score {
@@ -484,10 +489,10 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onActivityConfigClicked: {
-                displayDialog(dialogActivityConfig)
+                activity.displayDialog(dialogActivityConfig)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
