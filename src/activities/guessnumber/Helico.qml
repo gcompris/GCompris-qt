@@ -15,7 +15,7 @@ Image {
     id: helico
     source: "qrc:/gcompris/src/activities/planegame/resource/tuxhelico.svg"
     fillMode: Image.PreserveAspectFit
-    width: height * 1.7
+    width: height * 1.75
     sourceSize.height: height
     anchors.left: parent.left
     anchors.verticalCenter: parent.verticalCenter

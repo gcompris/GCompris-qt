@@ -77,7 +77,7 @@ ActivityBase {
             property alias cloudCreation: cloudCreation
             property bool showTutorial: activity.showTutorial
             property bool goToNextLevel: false
-            property alias toolTipText: toolTipText.text
+            property alias toolTipText: toolTipPanel.textItem
        }
 
        onVoiceDone: {
@@ -127,8 +127,8 @@ ActivityBase {
             touchPoints: [ TouchPoint { id: point1 } ]
 
             onReleased: {
-                plane.x = point1.x - plane.width / 2
-                plane.y = point1.y - plane.height / 2
+                plane.x = point1.x - plane.width * 0.5
+                plane.y = point1.y - plane.height * 0.5
             }
         }
 
@@ -155,17 +155,15 @@ ActivityBase {
         Score {
             id: score
             visible: !showTutorial
-            fontSize: activityBackground.width >= activityBackground.height ? internalTextComponent.largeSize : internalTextComponent.mediumSize
-            height: internalTextComponent.height + 10
             anchors.bottom: bar.top
-            anchors.margins: 10
+            anchors.margins: GCStyle.baseMargins
         }
 
-        property int movePlaneTimerCounter: 0
         Timer {
             id: movePlaneTimer
             running: false
             repeat: true
+            property int movePlaneTimerCounter: 0
             onTriggered: {
                 plane.state = "play"
                 interval = 50
@@ -189,38 +187,20 @@ ActivityBase {
         Plane {
             id: plane
             visible: !showTutorial
+            height: GCStyle.bigButtonHeight * (1.0 - 0.5 * activity.currentLevel / 10)
         }
 
-        Item {
-            id: toolTipArea
-            anchors {
-                top: parent.top
-                topMargin: 5 * ApplicationInfo.ratio
-                horizontalCenter: parent.horizontalCenter
-            }
-            width: Math.min(parent.width - 20 * ApplicationInfo.ratio,
-                            200 * ApplicationInfo.ratio)
-            height: 40 * ApplicationInfo.ratio
-            visible: toolTipText.text != ""
-
-            Rectangle {
-                anchors.centerIn: toolTipText
-                width: toolTipText.contentWidth + 10 * ApplicationInfo.ratio
-                height: toolTipText.contentHeight
-                radius: 5 * ApplicationInfo.ratio
-                color:"#AAFFFFFF"
-            }
-
-            GCText {
-                id: toolTipText
-                anchors.centerIn: parent
-                fontSizeMode: Text.Fit
-                fontSize: regularSize
-                color: "#373737"
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                text: ""
-            }
+        GCTextPanel {
+            id: toolTipPanel
+            panelWidth: parent.width - 2 * GCStyle.baseMargins
+            panelHeight: Math.min(40 * ApplicationInfo.ratio, activityBackground.height * 0.2)
+            hideIfEmpty: true
+            color: GCStyle.lightTransparentBg
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: parent.top
+            anchors.topMargin: GCStyle.baseMargins
+            textItem.color: GCStyle.darkText
+            textItem.fontSize: textItem.regularSize
         }
     }
 }

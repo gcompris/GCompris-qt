@@ -9,6 +9,7 @@
 */
 import QtQuick 2.12
 import "planegame.js" as Activity
+import "../../core"
 import core 1.0
 
 Image {
@@ -19,8 +20,8 @@ Image {
 
     source: Activity.url + "resource/tuxhelico.svg"
     fillMode: Image.PreserveAspectFit
-
-    sourceSize.height: 80 * ApplicationInfo.ratio
+    width: height * 1.75
+    sourceSize.height: height
 
     z: 10
 
@@ -29,11 +30,10 @@ Image {
             name: "init"
             PropertyChanges {
                 plane {
-                    x: 20
-                    y: parent.height / 2 - plane.height / 2
+                    x: GCStyle.baseMargins
+                    y: (parent.height - plane.height) * 0.5
                     velocityX: 700
                     velocityY: 700
-                    height: sourceSize.height * (1.0 - 0.5 * Activity.items.currentLevel / 10)
                 }
             }
         },
@@ -41,11 +41,10 @@ Image {
             name: "play"
             PropertyChanges {
                 plane {
-                    x: 20
-                    y: parent.height / 2 - plane.height / 2
+                    x: GCStyle.baseMargins
+                    y: (parent.height - plane.height) * 0.5
                     velocityX: 200
                     velocityY: 200
-                    height: sourceSize.height * (1.0 - 0.5 * Activity.items.currentLevel / 10)
                 }
             }
         }

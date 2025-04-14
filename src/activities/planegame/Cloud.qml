@@ -21,8 +21,8 @@ Image {
     /* An helper property to remember if a cloud has been wrongly touched */
     property bool touched: false
 
-    sourceSize.height: 60 * ApplicationInfo.ratio
-    height: sourceSize.height * heightRatio
+    height: 60 * ApplicationInfo.ratio * heightRatio
+    sourceSize.height: height
 
     state: "normal"
     fillMode: Image.PreserveAspectFit
@@ -44,9 +44,8 @@ Image {
 
     GCText {
         id: number
-        anchors.horizontalCenter: cloud.horizontalCenter
-        anchors.verticalCenter: cloud.verticalCenter
-        color: "black"
+        anchors.centerIn: parent
+        color: GCStyle.darkText
         font.bold: true
         fontSize: 18
     }
@@ -94,7 +93,7 @@ Image {
         running: false
         repeat: false
         interval: 500
-        onTriggered: opacity = 0
+        onTriggered: cloud.opacity = 0
     }
 
     ParticleSystemStarLoader {
