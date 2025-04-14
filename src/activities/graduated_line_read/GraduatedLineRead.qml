@@ -474,8 +474,9 @@ ActivityBase {
             anchors.top: undefined
             anchors.bottom: activityBackground.bottom
             anchors.bottomMargin: bar.height * 1.5
-            anchors.right: activityBackground.right
-            anchors.rightMargin: GCStyle.baseMargins
+            anchors.right: parent.right
+            fixedWidth: true
+            width: GCStyle.bigButtonHeight
             onStop: Activity.nextSubLevel()
         }
 

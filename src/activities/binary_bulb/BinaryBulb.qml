@@ -215,11 +215,10 @@ ActivityBase {
             id: score
             visible: !tutorialImage.visible
             anchors.bottom: bar.top
-            anchors.right: bar.right
+            anchors.right: undefined
             anchors.left: parent.left
             anchors.bottomMargin: GCStyle.baseMargins
             anchors.leftMargin: GCStyle.baseMargins
-            anchors.rightMargin: 0
             onStop: Activity.nextSubLevel()
         }
 

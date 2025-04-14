@@ -170,6 +170,8 @@ ActivityBase {
                 left: undefined
                 top: undefined
             }
+            fixedWidth: true
+            width: repeatItem.width
             onStop: Activity.nextSubLevel();
         }
 
@@ -301,8 +303,8 @@ ActivityBase {
             width: repeatItem.width
             anchors {
                 bottom: score.top
+                right: parent.right
                 margins: GCStyle.baseMargins
-                horizontalCenter: score.horizontalCenter
             }
             onClicked: {
                 if(!items.buttonsBlocked)

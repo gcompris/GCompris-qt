@@ -109,14 +109,21 @@ Rectangle {
      */
     signal stop
 
+    /**
+     * type:bool
+     * Wether the component has a fixed width.
+     * If set to true, setting the width is required.
+     */
+    property bool fixedWidth: false
+
     Connections {
         target: activity
         function onStop() { stopWinAnimation(); }
     }
 
     color: GCStyle.lightTransparentBg
-    width: subLevelText.width * 2
-    height: subLevelText.height * 1.4
+    width: fixedWidth ? 1 : subLevelText.width + 2 * GCStyle.baseMargins
+    height: subLevelText.height + GCStyle.baseMargins
     radius: GCStyle.halfMargins
     anchors.bottom: parent.bottom
     anchors.right: parent.right
@@ -141,6 +148,10 @@ Rectangle {
     GCText {
         id: subLevelText
         anchors.centerIn: parent
+        width: score.fixedWidth ? parent.width - 2 * GCStyle.baseMargins : implicitWidth
+        height: 34 * ApplicationInfo.ratio
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
         fontSizeMode: Text.Fit
         font.bold: true
         color: GCStyle.darkText
