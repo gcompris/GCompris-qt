@@ -5283,67 +5283,67 @@ msgstr ""
 "livioù kentañ.\n"
 "        "
 
-#: activities/color_mix/ColorMix.qml:90
+#: activities/color_mix/ColorMix.qml:92
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "Lak ar memes liv"
 
-#: activities/color_mix/ColorMix.qml:222
+#: activities/color_mix/ColorMix.qml:230
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "N'eus ket liv ruz a-walc'h"
 
-#: activities/color_mix/ColorMix.qml:224
+#: activities/color_mix/ColorMix.qml:232
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "Re a liv ruz"
 
-#: activities/color_mix/ColorMix.qml:227
+#: activities/color_mix/ColorMix.qml:235
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "N'eus ket liv gwer a-walc'h"
 
-#: activities/color_mix/ColorMix.qml:229
+#: activities/color_mix/ColorMix.qml:237
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "Re a liv gwer"
 
-#: activities/color_mix/ColorMix.qml:232
+#: activities/color_mix/ColorMix.qml:240
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "N'eus ket liv glas a-walc'h"
 
-#: activities/color_mix/ColorMix.qml:234
+#: activities/color_mix/ColorMix.qml:242
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "Re a liv glas"
 
-#: activities/color_mix/ColorMix.qml:238
+#: activities/color_mix/ColorMix.qml:246
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "N'eus ket liv majenta a-walc'h"
 
-#: activities/color_mix/ColorMix.qml:240
+#: activities/color_mix/ColorMix.qml:248
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "Re a liv majenta"
 
-#: activities/color_mix/ColorMix.qml:243
+#: activities/color_mix/ColorMix.qml:251
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "N'eus ket liv melen a-walc'h"
 
-#: activities/color_mix/ColorMix.qml:245
+#: activities/color_mix/ColorMix.qml:253
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "Re a liv melen"
 
-#: activities/color_mix/ColorMix.qml:248
+#: activities/color_mix/ColorMix.qml:256
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "N'eus ket liv siañ a-walc'h"
 
-#: activities/color_mix/ColorMix.qml:250
+#: activities/color_mix/ColorMix.qml:258
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "Re a liv siañ"

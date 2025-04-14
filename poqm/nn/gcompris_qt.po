@@ -5250,67 +5250,67 @@ msgstr ""
 "kan me laga alle regnbogens fargar. Primærfargane for måling er cyanblå (ein "
 "lys blåfarge), magenta (ein spesiell rosa-/lilla-farge) og gul."
 
-#: activities/color_mix/ColorMix.qml:90
+#: activities/color_mix/ColorMix.qml:92
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "Lag lik farge"
 
-#: activities/color_mix/ColorMix.qml:222
+#: activities/color_mix/ColorMix.qml:230
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "Ikkje nok raudt"
 
-#: activities/color_mix/ColorMix.qml:224
+#: activities/color_mix/ColorMix.qml:232
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "For mykje raudt"
 
-#: activities/color_mix/ColorMix.qml:227
+#: activities/color_mix/ColorMix.qml:235
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "Ikkje nok grønt"
 
-#: activities/color_mix/ColorMix.qml:229
+#: activities/color_mix/ColorMix.qml:237
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "For mykje grønt"
 
-#: activities/color_mix/ColorMix.qml:232
+#: activities/color_mix/ColorMix.qml:240
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "Ikkje nok blått"
 
-#: activities/color_mix/ColorMix.qml:234
+#: activities/color_mix/ColorMix.qml:242
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "For mykje blått"
 
-#: activities/color_mix/ColorMix.qml:238
+#: activities/color_mix/ColorMix.qml:246
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "Ikkje nok magenta"
 
-#: activities/color_mix/ColorMix.qml:240
+#: activities/color_mix/ColorMix.qml:248
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "For mykje magenta"
 
-#: activities/color_mix/ColorMix.qml:243
+#: activities/color_mix/ColorMix.qml:251
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "Ikkje nok gult"
 
-#: activities/color_mix/ColorMix.qml:245
+#: activities/color_mix/ColorMix.qml:253
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "For mykje gult"
 
-#: activities/color_mix/ColorMix.qml:248
+#: activities/color_mix/ColorMix.qml:256
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "Ikkje nok cyanblått"
 
-#: activities/color_mix/ColorMix.qml:250
+#: activities/color_mix/ColorMix.qml:258
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "For mykje cyanblått"

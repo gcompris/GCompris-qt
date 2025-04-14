@@ -5282,67 +5282,67 @@ msgstr ""
 "naujų spalvų. Pirminės dažų ar rašalo spalvos yra žalsvai mėlyna (specialus "
 "mėlynos atspalvis), rausvai raudona (specialus rausvos atspalvis) ir geltona."
 
-#: activities/color_mix/ColorMix.qml:90
+#: activities/color_mix/ColorMix.qml:92
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "Priderink spalvą"
 
-#: activities/color_mix/ColorMix.qml:222
+#: activities/color_mix/ColorMix.qml:230
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "Per mažai raudonos"
 
-#: activities/color_mix/ColorMix.qml:224
+#: activities/color_mix/ColorMix.qml:232
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "Per daug raudonos"
 
-#: activities/color_mix/ColorMix.qml:227
+#: activities/color_mix/ColorMix.qml:235
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "Per mažai žalios"
 
-#: activities/color_mix/ColorMix.qml:229
+#: activities/color_mix/ColorMix.qml:237
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "Per daug žalios"
 
-#: activities/color_mix/ColorMix.qml:232
+#: activities/color_mix/ColorMix.qml:240
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "Per mažai mėlynos"
 
-#: activities/color_mix/ColorMix.qml:234
+#: activities/color_mix/ColorMix.qml:242
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "Per daug mėlynos"
 
-#: activities/color_mix/ColorMix.qml:238
+#: activities/color_mix/ColorMix.qml:246
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "Per mažai purpurinės"
 
-#: activities/color_mix/ColorMix.qml:240
+#: activities/color_mix/ColorMix.qml:248
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "Per daug purpurinės"
 
-#: activities/color_mix/ColorMix.qml:243
+#: activities/color_mix/ColorMix.qml:251
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "Per mažai geltonos"
 
-#: activities/color_mix/ColorMix.qml:245
+#: activities/color_mix/ColorMix.qml:253
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "Per daug geltonos"
 
-#: activities/color_mix/ColorMix.qml:248
+#: activities/color_mix/ColorMix.qml:256
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "Per mažai žydros"
 
-#: activities/color_mix/ColorMix.qml:250
+#: activities/color_mix/ColorMix.qml:258
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "Per daug žydros"
