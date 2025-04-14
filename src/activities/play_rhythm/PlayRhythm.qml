@@ -25,7 +25,7 @@ ActivityBase {
     pageComponent: Rectangle {
         id: activityBackground
         anchors.fill: parent
-        color: "#ABCDEF"
+        color: GCStyle.lightBlueBg
         signal start
         signal stop
 
@@ -70,15 +70,13 @@ ActivityBase {
 
         property string clefType: "Treble"
         property bool isRhythmPlaying: false
-        property int metronomeSpeed: 60000 / multipleStaff.bpmValue - 53
+        property int metronomeSpeed: 60000 / multipleStaff.bpmValue
         property real weightOffset: metronome.height * multipleStaff.bpmValue * 0.004
 
         Keys.onSpacePressed: if(!activityBackground.isRhythmPlaying && !items.buttonsBlocked)
                                 tempo.tempoPressed();
-        Keys.onTabPressed: if(metronome.visible && metronomeOscillation.running)
-                             metronomeOscillation.stop();
-                          else if(metronome.visible && !metronomeOscillation.running)
-                                  metronomeOscillation.start();
+        Keys.onTabPressed: if(!activityBackground.isRhythmPlaying && !items.buttonsBlocked)
+                                metronomeOscillation.toggleAnimation();
         Keys.onEnterPressed: Activity.initSubLevel();
         Keys.onReturnPressed: Activity.initSubLevel();
         Keys.onUpPressed: optionsRow.bpmIncreased();
@@ -113,7 +111,7 @@ ActivityBase {
             border.width: GCStyle.thinBorder
             border.color: GCStyle.blueBorder
             textItem.color: GCStyle.darkText
-            panelWidth: parent.width - 2 * GCStyle.baseMargins - score.width
+            panelWidth: parent.width - 3 * GCStyle.baseMargins - score.width
             panelHeight: score.height
             fixedHeight: true
             anchors.horizontalCenter: parent.horizontalCenter
@@ -167,8 +165,7 @@ ActivityBase {
 
         Rectangle {
             anchors.fill: parent
-            color: "black"
-            opacity: 0.3
+            color: GCStyle.grayedBg
             visible: iAmReady.visible
             z: 10
             MouseArea {
@@ -266,20 +263,18 @@ ActivityBase {
             id: metronome
             source: "qrc:/gcompris/src/activities/play_rhythm/resource/metronome_stand.svg"
             fillMode: Image.PreserveAspectFit
-            sourceSize.width: parent.width / 3
-            sourceSize.height: parent.height / 4
-            width: sourceSize.width
-            height: sourceSize.height
-            anchors.bottom: bar.top
-            anchors.bottomMargin: 20
+            width: parent.width / 3
+            height: parent.height * 0.25
+            sourceSize.height: height
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: bar.height * 1.2
             visible: items.isMetronomeVisible
             MouseArea {
+                id: metronomeClick
                 anchors.fill: parent
+                enabled: !activityBackground.isRhythmPlaying && !items.buttonsBlocked
                 onClicked: {
-                    if(metronomeOscillation.running)
-                        metronomeOscillation.stop()
-                    else
-                        metronomeOscillation.start()
+                    metronomeOscillation.toggleAnimation();
                 }
             }
 
@@ -287,34 +282,53 @@ ActivityBase {
                 id: metronomeNeedle
                 source: "qrc:/gcompris/src/activities/play_rhythm/resource/metronome_needle.svg"
                 fillMode: Image.PreserveAspectFit
-                width: parent.height
-                height: parent.height
-                anchors.centerIn: parent
+                sourceSize.height: height
+                anchors.fill: parent
                 transformOrigin: Item.Bottom
+
                 SequentialAnimation {
                     id: metronomeOscillation
-                    loops: Animation.Infinite
-                    onStarted: metronomeNeedle.rotation = 12
-                    onStopped: metronomeNeedle.rotation = 0
-                    ScriptAction {
-                        script: clickSound.play()
+                    loops: 1
+                    onStopped: metronomeNeedle.rotation = 0;
+                    function toggleAnimation() {
+                        if(running)
+                            stop();
+                        else
+                            start();
                     }
                     RotationAnimator {
                         target: metronomeNeedle
-                        from: 12
-                        to: 348
-                        direction: RotationAnimator.Shortest
-                        duration: metronomeSpeed
-                    }
-                    ScriptAction {
-                        script: clickSound.play()
-                    }
-                    RotationAnimator {
-                        target: metronomeNeedle
-                        from: 348
+                        from: 0
                         to: 12
                         direction: RotationAnimator.Shortest
-                        duration: metronomeSpeed
+                        duration: metronomeSpeed * 0.5
+                    }
+                    SequentialAnimation {
+                        loops: Animation.Infinite
+                        ParallelAnimation {
+                            ScriptAction {
+                                script: clickSound.play()
+                            }
+                            RotationAnimator {
+                                target: metronomeNeedle
+                                from: 12
+                                to: 348
+                                direction: RotationAnimator.Shortest
+                                duration: metronomeSpeed
+                            }
+                        }
+                        ParallelAnimation {
+                            ScriptAction {
+                                script: clickSound.play()
+                            }
+                            RotationAnimator {
+                                target: metronomeNeedle
+                                from: 348
+                                to: 12
+                                direction: RotationAnimator.Shortest
+                                duration: metronomeSpeed
+                            }
+                        }
                     }
                 }
                 Image {
@@ -323,6 +337,7 @@ ActivityBase {
                     fillMode: Image.PreserveAspectFit
                     width: parent.height
                     height: parent.height
+                    sourceSize.height: height
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.verticalCenterOffset: weightOffset
@@ -333,9 +348,7 @@ ActivityBase {
                 id: metronomeFront
                 source: "qrc:/gcompris/src/activities/play_rhythm/resource/metronome_front.svg"
                 fillMode: Image.PreserveAspectFit
-                width: parent.height
-                height: parent.height
-                anchors.centerIn: parent
+                anchors.fill: parent
             }
         }
 
