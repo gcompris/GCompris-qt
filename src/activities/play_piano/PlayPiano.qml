@@ -171,6 +171,7 @@ ActivityBase {
             anchors.top: activityBackground.top
             anchors.bottom: undefined
             numberOfSubLevels: 5
+            fixedWidth: true
             width: activityBackground.horizontalLayout ? parent.width / 10 : (parent.width - instruction.x - instruction.width - 1.5 * anchors.rightMargin)
             onStop: Activity.nextSubLevel()
         }

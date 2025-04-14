@@ -417,6 +417,7 @@ ActivityBase {
                 bottom: activityBackground.vert ? bar.top : leftWidget.bottom
                 margins: 3 * ApplicationInfo.ratio
             }
+            fixedWidth: true
             width: girlWidget.width
             height: activityBackground.vert ? (girlWidget.height * 0.8) : girlWidget.height
             numberOfSubLevels: items.nbSubLevel
