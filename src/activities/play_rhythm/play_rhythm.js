@@ -73,6 +73,7 @@ function checkAnswer(pulseMarkerX) {
 }
 
 function answerFeedback() {
+    items.metronomeOscillation.stop();
     if(!items.isWrongRhythm) {
         items.score.currentSubLevel += 1
         items.score.playWinAnimation()
