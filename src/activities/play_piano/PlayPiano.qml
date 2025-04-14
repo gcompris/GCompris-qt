@@ -25,7 +25,7 @@ ActivityBase {
     pageComponent: Rectangle {
         id: activityBackground
         anchors.fill: parent
-        color: "#ABCDEF"
+        color: GCStyle.lightBlueBg
         signal start
         signal stop
 
@@ -147,8 +147,7 @@ ActivityBase {
 
         Rectangle {
             anchors.fill: parent
-            color: "black"
-            opacity: 0.3
+            color: GCStyle.grayedBg
             visible: iAmReady.visible
             z: 10
             MouseArea {
@@ -171,34 +170,23 @@ ActivityBase {
             anchors.top: activityBackground.top
             anchors.bottom: undefined
             numberOfSubLevels: 5
-            fixedWidth: true
-            width: activityBackground.horizontalLayout ? parent.width / 10 : (parent.width - instruction.x - instruction.width - 1.5 * anchors.rightMargin)
             onStop: Activity.nextSubLevel()
         }
 
-        Rectangle {
-            id: instruction
-            radius: 10
-            width: activityBackground.width * 0.6
-            height: activityBackground.height / 9
+        GCTextPanel {
+            id: instructionPanel
+            color: GCStyle.lightBg
+            border.width: GCStyle.thinBorder
+            border.color: GCStyle.blueBorder
+            textItem.color: GCStyle.darkText
+            panelWidth: parent.width - 3 * GCStyle.baseMargins - score.width
+            panelHeight: score.height
+            fixedHeight: true
             anchors.horizontalCenter: parent.horizontalCenter
-            opacity: 0.8
-            border.width: 6
-            color: "white"
-            border.color: "#87A6DD"
-
-            GCText {
-                color: "black"
-                z: 3
-                anchors.fill: parent
-                anchors.rightMargin: parent.width * 0.02
-                anchors.leftMargin: parent.width * 0.02
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                fontSizeMode: Text.Fit
-                wrapMode: Text.WordWrap
-                text: qsTr("Click on the piano keys that match the given notes.")
-            }
+            anchors.horizontalCenterOffset: -(score.width + GCStyle.baseMargins) * 0.5
+            anchors.top: parent.top
+            anchors.topMargin: GCStyle.baseMargins
+            textItem.text: qsTr("Click on the piano keys that match the given notes.")
         }
 
         Item {
@@ -208,7 +196,7 @@ ActivityBase {
             anchors.right: parent.right
             anchors.margins: GCStyle.baseMargins
             height: activityBackground.horizontalLayout ?
-                piano.y - instruction.height - 2 * GCStyle.baseMargins :
+                piano.y - instructionPanel.height - 2 * GCStyle.baseMargins :
                 piano.y - optionDeck.y - optionDeck.height - 2 * GCStyle.baseMargins
         }
 
@@ -255,14 +243,18 @@ ActivityBase {
         Rectangle {
             id: optionDeck
             width: activityBackground.horizontalLayout ?
-                Math.min(GCStyle.bigButtonHeight * 2 + GCStyle.halfMargins * 3, activityBackground.width * 0.25 - GCStyle.baseMargins * 2) :
-                GCStyle.bigButtonHeight * 2 + GCStyle.halfMargins * 3
+                Math.min(GCStyle.bigButtonHeight * 2 + GCStyle.halfMargins * 3,
+                         activityBackground.width * 0.25 - GCStyle.baseMargins * 2) :
+                Math.min(GCStyle.bigButtonHeight * 2 + GCStyle.halfMargins * 3,
+                         activityBackground.height * 0.25)
             height: width * 0.5
             color: "white"
             opacity: 0.5
             radius: 10
-            y: activityBackground.horizontalLayout ? piano.y : instruction.height + GCStyle.baseMargins
-            x: activityBackground.horizontalLayout ? piano.x + piano.width + GCStyle.baseMargins : activityBackground.width / 2 - width / 2
+            y: activityBackground.horizontalLayout ? piano.y :
+                instructionPanel.height + 2 * GCStyle.baseMargins
+            x: activityBackground.horizontalLayout ? piano.x + piano.width + GCStyle.baseMargins :
+                (activityBackground.width - width) * 0.5
         }
 
         OptionsRow {
