@@ -138,7 +138,7 @@ GridView {
             }
             else {
                 playClickedAnimation()
-                model.set(area.initialEditItemIndex, {"name": name}, 1)
+                model.set(area.initialEditItemIndex, {"name": name})
                 area.resetEditingValues()
             }
         }
