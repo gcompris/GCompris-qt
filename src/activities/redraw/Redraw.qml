@@ -31,7 +31,6 @@ ActivityBase {
         sourceSize.width: width
         sourceSize.height: height
 
-        property int baseMargins: Math.round(10 * ApplicationInfo.ratio)
         property bool landscape: width >= height
         property int cellSize: Math.floor(Math.min(drawingArea.width / items.numberOfColumn,
                                         drawingArea.height / items.numberOfLine))
@@ -113,7 +112,7 @@ ActivityBase {
             contentHeight: items.numberOfColor * width
             anchors.top: parent.top
             anchors.left: parent.left
-            anchors.margins: activityBackground.baseMargins
+            anchors.margins: GCStyle.baseMargins
             Column {
                 id: colorSelector
                 Repeater {
@@ -183,8 +182,8 @@ ActivityBase {
                             z: modelData == items.colorSelector ? 12 : 2
                             font.bold: true
                             style: Text.Outline
-                            styleColor: "black"
-                            color: "white"
+                            styleColor: GCStyle.darkText
+                            color: GCStyle.lightText
                         }
                         MultiEffect {
                             anchors.fill: text1
@@ -203,18 +202,18 @@ ActivityBase {
 
         Item {
             id: gridsArea
-            width: Math.floor(parent.width - colorSelector.width - activityBackground.baseMargins * 3)
+            width: Math.floor(parent.width - colorSelector.width - GCStyle.baseMargins * 3)
             height: colorSelectorFlick.height
             anchors.top: colorSelectorFlick.top
             anchors.left: colorSelectorFlick.right
-            anchors.leftMargin: activityBackground.baseMargins
+            anchors.leftMargin: GCStyle.baseMargins
         }
 
         // The drawing area
         Grid {
             id: drawingArea
-            width: Math.ceil(activityBackground.landscape ? (gridsArea.width - activityBackground.baseMargins) * 0.5 : gridsArea.width)
-            height: Math.ceil(activityBackground.landscape ? gridsArea.height : (gridsArea.height- activityBackground.baseMargins) * 0.5)
+            width: Math.ceil(activityBackground.landscape ? (gridsArea.width - GCStyle.baseMargins) * 0.5 : gridsArea.width)
+            height: Math.ceil(activityBackground.landscape ? gridsArea.height : (gridsArea.height- GCStyle.baseMargins) * 0.5)
             columns: items.numberOfColumn
             anchors.top: gridsArea.top
             anchors.left: gridsArea.left
@@ -307,7 +306,7 @@ ActivityBase {
                         anchors.fill: parent
                         property bool displayCursor: userModel.keyNavigation && userModel.currentItem == modelData
                         border.width: displayCursor ? 3 : 1
-                        border.color: 'black'
+                        border.color: GCStyle.darkBorder
                         color: parent.color
 
                         Behavior on color {
@@ -320,7 +319,7 @@ ActivityBase {
                         id: text2
                         anchors.left: parent.left
                         anchors.bottom: parent.bottom
-                        anchors.margins: 4
+                        anchors.margins: GCStyle.tinyMargins
                         width: parent.width * 0.35
                         height: width
                         text: parent.colorIndex == 0 ? "" : parent.colorIndex
@@ -330,8 +329,8 @@ ActivityBase {
                         verticalAlignment: Text.AlignVCenter
                         font.bold: true
                         style: Text.Outline
-                        styleColor: "black"
-                        color: "white"
+                        styleColor: GCStyle.darkText
+                        color: GCStyle.lightText
                     }
                     MultiEffect {
                         anchors.fill: text2
@@ -391,13 +390,13 @@ ActivityBase {
                         anchors.fill: parent
                         color: Activity.colors[modelData]
                         border.width: 1
-                        border.color: 'black'
+                        border.color: GCStyle.darkBorder
                     }
                     GCText {
                         id: text3
                         anchors.left: parent.left
                         anchors.bottom: parent.bottom
-                        anchors.margins: 4
+                        anchors.margins: GCStyle.tinyMargins
                         width: parent.width * 0.35
                         height: width
                         text: modelData == 0 ? "" : modelData
@@ -407,8 +406,8 @@ ActivityBase {
                         verticalAlignment: Text.AlignVCenter
                         font.bold: true
                         style: Text.Outline
-                        styleColor: "black"
-                        color: "white"
+                        styleColor: GCStyle.darkText
+                        color: GCStyle.lightText
                     }
                     MultiEffect {
                         anchors.fill: text3
@@ -464,7 +463,7 @@ ActivityBase {
             width: touchArea.width + 2
             height: touchArea.height + 2
             color: "transparent"
-            border.color: "black"
+            border.color: GCStyle.darkBorder
             border.width: 1
         }
 
@@ -475,7 +474,7 @@ ActivityBase {
             width: drawingAreaBorders.width
             height: drawingAreaBorders.height
             color: "transparent"
-            border.color: "black"
+            border.color: GCStyle.darkBorder
             border.width: 1
         }
 
