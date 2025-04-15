@@ -17605,12 +17605,12 @@ msgstr ""
 "Huruf ditampilkan pada bendera yang menempel pada pesawat. Pilih semua kata "
 "dalam daftar yang berisi huruf yang disebutkan dan kemudian tekan tombol OK."
 
-#: activities/letter-in-word/LetterInWord.qml:333
+#: activities/letter-in-word/LetterInWord.qml:335
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Kami mohon maaf, kami belum memiliki terjemahan untuk bahasamu."
 
-#: activities/letter-in-word/LetterInWord.qml:334
+#: activities/letter-in-word/LetterInWord.qml:336
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17620,7 +17620,7 @@ msgstr ""
 "GCompris dikembangkan oleh komunitas KDE, kamu bisa menerjemahkan GCompris "
 "dengan bergabung pada sebuah tim penerjemahan di <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:336
+#: activities/letter-in-word/LetterInWord.qml:338
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -22613,12 +22613,12 @@ msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
 msgstr "Backspace atau Delete: batalkan"
 
-#: activities/play_piano/PlayPiano.qml:199
+#: activities/play_piano/PlayPiano.qml:189
 msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "Klik pada tombol kunci piano sesuai dengan contoh not yang dimainkan."
 
-#: activities/play_piano/PlayPiano.qml:329
+#: activities/play_piano/PlayPiano.qml:322
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -22627,12 +22627,12 @@ msgstr ""
 "Kegiatan ini memerlukan suara, sehingga akan memutar beberapa suara bahkan "
 "ketika suara audio atau efek dinonaktifkan dalam pengaturan utama."
 
-#: activities/play_piano/PlayPiano.qml:330
+#: activities/play_piano/PlayPiano.qml:323
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "Berhenti"
 
-#: activities/play_piano/PlayPiano.qml:331
+#: activities/play_piano/PlayPiano.qml:324
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "Lanjutkan"
@@ -22722,7 +22722,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
 msgstr "Tab: Memulai atau menghentikan metronom jika terlihat"
 
-#: activities/play_rhythm/PlayRhythm.qml:123
+#: activities/play_rhythm/PlayRhythm.qml:121
 msgctxt "PlayRhythm|"
 msgid ""
 "Use the metronome to estimate the time intervals and play the rhythm "
@@ -22731,7 +22731,7 @@ msgstr ""
 "Gunakan metronom untuk memperkirakan jeda waktu dan mainkan ritme dengan "
 "benar."
 
-#: activities/play_rhythm/PlayRhythm.qml:124
+#: activities/play_rhythm/PlayRhythm.qml:122
 msgctxt "PlayRhythm|"
 msgid ""
 "Follow the vertical line and click on the drum or press space key to play "
@@ -22740,7 +22740,7 @@ msgstr ""
 "Ikuti garis vertikal dan klik pada drum atau tekan tombol spasi untuk "
 "memainkan ritme dengan benar."
 
-#: activities/play_rhythm/PlayRhythm.qml:393
+#: activities/play_rhythm/PlayRhythm.qml:406
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -22749,12 +22749,12 @@ msgstr ""
 "Kegiatan ini memerlukan suara, sehingga akan memutar beberapa suara bahkan "
 "ketika suara audio atau efek dinonaktifkan dalam pengaturan utama."
 
-#: activities/play_rhythm/PlayRhythm.qml:394
+#: activities/play_rhythm/PlayRhythm.qml:407
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "Berhenti"
 
-#: activities/play_rhythm/PlayRhythm.qml:395
+#: activities/play_rhythm/PlayRhythm.qml:408
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "Lanjutkan"

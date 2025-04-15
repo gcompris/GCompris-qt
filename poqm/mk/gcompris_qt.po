@@ -18028,12 +18028,12 @@ msgstr ""
 "На знамето прикачено на авионот се прикажува буква, одберете ги сите зборови "
 "или предмети во кои се појавува буквата и потоа притиснете ОК."
 
-#: activities/letter-in-word/LetterInWord.qml:333
+#: activities/letter-in-word/LetterInWord.qml:335
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Жал ни е, сè уште немаме превод за вашиот јазик."
 
-#: activities/letter-in-word/LetterInWord.qml:334
+#: activities/letter-in-word/LetterInWord.qml:336
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -18043,7 +18043,7 @@ msgstr ""
 "Жикомпри е развиен од KDE заедницата, можете да го преведете Жикомпри со тоа "
 "што ќе се приклучите на тим за превод на <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:336
+#: activities/letter-in-word/LetterInWord.qml:338
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -23089,12 +23089,12 @@ msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
 msgstr "Backspace или Delete: Вратете ја акцијата назад"
 
-#: activities/play_piano/PlayPiano.qml:199
+#: activities/play_piano/PlayPiano.qml:189
 msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "Кликнете на копчињата од пијаното што одговараат на дадените ноти."
 
-#: activities/play_piano/PlayPiano.qml:329
+#: activities/play_piano/PlayPiano.qml:322
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -23103,12 +23103,12 @@ msgstr ""
 "Оваа активност бара звук, така што ќе репродуцира некои звуци дури и ако е "
 "аудиогласовите или ефектите се оневозможени во главната конфигурација."
 
-#: activities/play_piano/PlayPiano.qml:330
+#: activities/play_piano/PlayPiano.qml:323
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "Исклучи"
 
-#: activities/play_piano/PlayPiano.qml:331
+#: activities/play_piano/PlayPiano.qml:324
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "Продолжи"
@@ -23197,7 +23197,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
 msgstr "Tab: Стартувајте или запрете го метрономот"
 
-#: activities/play_rhythm/PlayRhythm.qml:123
+#: activities/play_rhythm/PlayRhythm.qml:121
 msgctxt "PlayRhythm|"
 msgid ""
 "Use the metronome to estimate the time intervals and play the rhythm "
@@ -23206,7 +23206,7 @@ msgstr ""
 "Користете го метрономот за да ги процените временските интервали и правилно "
 "да го играте ритамот."
 
-#: activities/play_rhythm/PlayRhythm.qml:124
+#: activities/play_rhythm/PlayRhythm.qml:122
 msgctxt "PlayRhythm|"
 msgid ""
 "Follow the vertical line and click on the drum or press space key to play "
@@ -23215,7 +23215,7 @@ msgstr ""
 "Следете ја вертикалната линија и кликнете на копчето за темпо или копчето за "
 "простор (space) и фатете го ритамот."
 
-#: activities/play_rhythm/PlayRhythm.qml:393
+#: activities/play_rhythm/PlayRhythm.qml:406
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -23224,12 +23224,12 @@ msgstr ""
 "Оваа активност бара звук, така што ќе репродуцира некои звуци дури и ако е "
 "аудиогласовите или ефектите се оневозможени во главната конфигурација."
 
-#: activities/play_rhythm/PlayRhythm.qml:394
+#: activities/play_rhythm/PlayRhythm.qml:407
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "Исклучи"
 
-#: activities/play_rhythm/PlayRhythm.qml:395
+#: activities/play_rhythm/PlayRhythm.qml:408
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "Продолжи"

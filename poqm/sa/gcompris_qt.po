@@ -16849,12 +16849,12 @@ msgstr ""
 "विमानसङ्गते ध्वजे एकं अक्षरं प्रदर्शितं भवति । एतत् अक्षरं समाविष्टे सूचीयां सर्वाणि शब्दानि "
 "चित्वा ततः OK बटनं नुदन्तु ।"
 
-#: activities/letter-in-word/LetterInWord.qml:333
+#: activities/letter-in-word/LetterInWord.qml:335
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "क्षम्यतां, अस्माकं कृते अद्यापि भवतः भाषायाः अनुवादः नास्ति।"
 
-#: activities/letter-in-word/LetterInWord.qml:334
+#: activities/letter-in-word/LetterInWord.qml:336
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16864,7 +16864,7 @@ msgstr ""
 "GCompris KDE समुदायेन विकसितम् अस्ति, भवान् <a href=\"%2\">%2</a> इत्यत्र अनुवाददलेन "
 "सह सम्मिलितः भूत्वा GCompris इत्यस्य अनुवादं कर्तुं शक्नोति"
 
-#: activities/letter-in-word/LetterInWord.qml:336
+#: activities/letter-in-word/LetterInWord.qml:338
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -21590,12 +21590,12 @@ msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
 msgstr "Backspace अथवा Delete: पूर्ववत"
 
-#: activities/play_piano/PlayPiano.qml:199
+#: activities/play_piano/PlayPiano.qml:189
 msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "दत्तानां स्वराणां मेलनं कुर्वन्ति पियानो कीलानि नुदन्तु ।"
 
-#: activities/play_piano/PlayPiano.qml:329
+#: activities/play_piano/PlayPiano.qml:322
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21604,12 +21604,12 @@ msgstr ""
 "अस्याः क्रियायाः कृते ध्वनिः आवश्यकः अस्ति, अतः मुख्यविन्यासे श्रव्यस्वरः अथवा प्रभावाः "
 "निष्क्रियाः सन्ति चेदपि एतत् केचन ध्वनयः वादयिष्यति ।"
 
-#: activities/play_piano/PlayPiano.qml:330
+#: activities/play_piano/PlayPiano.qml:323
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "परिजहातु"
 
-#: activities/play_piano/PlayPiano.qml:331
+#: activities/play_piano/PlayPiano.qml:324
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "अनुवर्तते"
@@ -21694,14 +21694,14 @@ msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
 msgstr "ट्याब्: यदि मेट्रोनोम् दृश्यते तर्हि आरभत वा स्थगयन्तु वा"
 
-#: activities/play_rhythm/PlayRhythm.qml:123
+#: activities/play_rhythm/PlayRhythm.qml:121
 msgctxt "PlayRhythm|"
 msgid ""
 "Use the metronome to estimate the time intervals and play the rhythm "
 "correctly."
 msgstr "समयान्तराणां अनुमानं कर्तुं लयं सम्यक् वादयितुं मेट्रोनोमस्य उपयोगं कुर्वन्तु ।"
 
-#: activities/play_rhythm/PlayRhythm.qml:124
+#: activities/play_rhythm/PlayRhythm.qml:122
 msgctxt "PlayRhythm|"
 msgid ""
 "Follow the vertical line and click on the drum or press space key to play "
@@ -21710,7 +21710,7 @@ msgstr ""
 "ऊर्ध्वाधररेखायाः अनुसरणं कृत्वा ड्रम् इत्यत्र क्लिक् कुर्वन्तु अथवा लयं सम्यक् वादयितुं space कीलं "
 "नुदन्तु ।"
 
-#: activities/play_rhythm/PlayRhythm.qml:393
+#: activities/play_rhythm/PlayRhythm.qml:406
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21719,12 +21719,12 @@ msgstr ""
 "अस्याः क्रियायाः कृते ध्वनिः आवश्यकः अस्ति, अतः मुख्यविन्यासे श्रव्यस्वरः अथवा प्रभावाः "
 "निष्क्रियाः सन्ति चेदपि एतत् केचन ध्वनयः वादयिष्यति ।"
 
-#: activities/play_rhythm/PlayRhythm.qml:394
+#: activities/play_rhythm/PlayRhythm.qml:407
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "परिजहातु"
 
-#: activities/play_rhythm/PlayRhythm.qml:395
+#: activities/play_rhythm/PlayRhythm.qml:408
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "अनुवर्तते"
