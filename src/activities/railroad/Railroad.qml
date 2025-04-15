@@ -321,9 +321,9 @@ ActivityBase {
                 highlight: Rectangle {
                     width: answerZone.cellWidth
                     height: answerZone.cellHeight
-                    color: "blue"
-                    opacity: 0.3
-                    radius: 5
+                    color: GCStyle.selectedDarkBlue
+                    opacity: 0.5
+                    radius: GCStyle.tinyMargins
                     visible: (items.currentKeyZone === answerZone) && (!trainAnimationTimer.running && !animateFlow.running)
                               && items.keyNavigationMode && items.controlsEnabled
                     x: (visible && answerZone.currentItem) ? answerZone.currentItem.x : 0
@@ -350,9 +350,11 @@ ActivityBase {
                 width: answerZone.cellWidth
                 height: answerZone.cellHeight
                 visible: answerZone.selectedSwapIndex != -1 ? true : false
-                color: "#AA41AAC4"
-                opacity: 0.8
-                radius: 5
+                color: GCStyle.highlightColor
+                opacity: 0.5
+                border.color: GCStyle.whiteBorder
+                border.width: GCStyle.thinBorder
+                radius: GCStyle.tinyMargins
             }
 
             ListModel {
@@ -368,7 +370,7 @@ ActivityBase {
             z: 5
             width: activityBackground.width
             height: activityBackground.height * 0.8
-            anchors.margins: 20
+            anchors.margins: GCStyle.baseMargins
             cellWidth: width / columnCount
             cellHeight: isHorizontal ? activityBackground.height / 7 : activityBackground.height / 7.5
             model: items.uniqueId
@@ -511,9 +513,9 @@ ActivityBase {
             highlight: Rectangle {
                 width: isHorizontal ? activityBackground.width / 5.66 : activityBackground.width / 4.2
                 height: isHorizontal ? sampleList.cellHeight : sampleList.cellHeight / 1.65
-                color: "#AA41AAC4"
-                opacity: 0.8
-                radius: 5
+                color: GCStyle.highlightColor
+                opacity: 0.5
+                radius: GCStyle.tinyMargins
                 visible: items.currentKeyZone === sampleList && items.keyNavigationMode
                 x: (sampleList.currentIndex >= 0 && sampleList.currentItem) ? sampleList.currentItem.x : 0
                 y: (sampleList.currentIndex >= 0 && sampleList.currentItem) ? sampleList.currentItem.y : 0
@@ -542,10 +544,8 @@ ActivityBase {
                 y: sampleList.y + (sampleList.cellHeight * (index + 1)) - (sampleList.cellHeight - items.sampleImageHeight)
                 z: 1
                 width: activityBackground.width
-                height: isHorizontal ? 6 : 3
-                border.color: "#808180"
-                color: "transparent"
-                border.width: 4
+                height: isHorizontal ? GCStyle.midBorder : GCStyle.thinBorder
+                color: GCStyle.grayBorder
             }
         }
 
@@ -561,18 +561,18 @@ ActivityBase {
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: score.height
-            anchors.top: score.top
+            width: Math.min(GCStyle.bigButtonHeight, sampleList.y - GCStyle.baseMargins)
+            anchors.top: parent.top
+            anchors.right: score.left
+            anchors.margins: GCStyle.baseMargins
             z: score.z
             enabled: items.mouseEnabled
-            anchors {
-                right: score.left
-                rightMargin: 10
-            }
+
             ParticleSystemStarLoader {
                 id: okButtonParticles
                 clip: false
             }
+
             onClicked: {
                 if(trainAnimationTimer.running || animateFlow.running)
                     bar.hintClicked();
@@ -588,13 +588,9 @@ ActivityBase {
 
         Score {
             id: score
-            height: bar.height * 0.8
-            width: height
-            fixedWidth: true
-            anchors.top: parent.top
-            anchors.topMargin: 10 * ApplicationInfo.ratio
+            anchors.verticalCenter: okButton.verticalCenter
             anchors.right: parent.right
-            anchors.leftMargin: 10 * ApplicationInfo.ratio
+            anchors.rightMargin: GCStyle.baseMargins
             anchors.bottom: undefined
             anchors.left: undefined
             onStop: Activity.nextSubLevel()

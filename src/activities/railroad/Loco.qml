@@ -19,7 +19,7 @@ Item {
     Image {
         id: img
         source: imageURL
-        height: activityBackground.height / 8.0
+        height: activityBackground.height / 8
         width: ((activityBackground.width >= activityBackground.height) ? activityBackground.width : activityBackground.height) / 5.66
         Drag.hotSpot.x: width / 2
         Drag.hotSpot.y: height / 2
