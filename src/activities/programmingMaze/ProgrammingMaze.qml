@@ -535,6 +535,51 @@ ActivityBase {
             }
         }
 
+        ListModel {
+            id: mainTutorialInstructions
+            Component.onCompleted: {
+                append({
+                "instruction": "<b><h7>" + qsTr("Instruction Area:") + "</h7></b>" +
+                             qsTr("There are 3 instructions which you can use to code and lead Tux to the fish:") + "<li>" +
+                             qsTr("<b>1. Move forward:</b> Moves Tux one step forward in the direction it is facing.") + "</li><li>" +
+                             qsTr("<b>2. Turn left:</b> Turns Tux to the left.") + "</li><li>" +
+                             qsTr("<b>3. Turn right:</b> Turns Tux to the right.") + "</li>",
+                "instructionQml": "qrc:/gcompris/src/activities/programmingMaze/resource/tutorial1.qml"
+            });
+                append({
+                "instruction": "<b><h7>" + qsTr("Main Function:") + "</h7></b>" +
+                             qsTr("The execution of the code starts here.") + "<li>" +
+                             qsTr("-Click on any instruction in the <b>instruction area</b> to add it to the <b>Main Function</b>.") + "</li><li>" +
+                             qsTr("-The instructions will execute in order until there's none left, or until a dead-end, or when Tux reaches the fish.") + "</li>",
+                "instructionQml": "qrc:/gcompris/src/activities/programmingMaze/resource/tutorial2.qml"
+            });
+            }
+        }
+
+        ListModel {
+            id: procedureTutorialInstructions
+            Component.onCompleted: {
+                append({
+                    "instruction": "<b><h7>" + qsTr("Procedure:") + "</h7></b>" +
+                                    qsTr("<b>Procedure</b> is a reusable set of instructions which can be <b>used in the code by calling it where needed</b>.") + "<li>" +
+                                    qsTr("-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function area</b> to add your code, click on the <b>Procedure</b> or <b>Main Function</b> label.") + "</li>",
+                    "instructionQml": "qrc:/gcompris/src/activities/programmingMaze/resource/tutorial3.qml"
+                })
+            }
+        }
+
+        ListModel {
+            id: loopTutorialInstructions
+            Component.onCompleted: {
+                append({
+                    "instruction": "<b><h7>" + qsTr("Loop:") + "</h7></b>" +
+                                    qsTr("<b>Loop</b> is a sequence of instructions that is <b>continually repeated the number of times defined by the number inside it</b>.") + "<li>" +
+                                    qsTr("-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> label.") + "</li>",
+                    "instructionQml": "qrc:/gcompris/src/activities/programmingMaze/resource/tutorial4.qml"
+                })
+            }
+        }
+
         Image {
             id: tutorialImage
             source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
@@ -547,7 +592,7 @@ ActivityBase {
 
             Tutorial {
                 id:tutorialSection
-                tutorialDetails: tutorialImage.selectInstructionTutorial()
+                tutorialDetails: visible ? tutorialImage.selectInstructionTutorial() : null
                 useImage: false
                 onSkipPressed: {
                     tutorialImage.visible = false
@@ -560,20 +605,16 @@ ActivityBase {
             }
 
             function selectInstructionTutorial() {
-                if(!tutorialSection.visible) {
-                    return "";
-                }
-
                 var nextLevelInstructions = items.levels[items.currentLevel].instructions
                 if(nextLevelInstructions.indexOf(Activity.EXECUTE_LOOPS) !== -1) {
-                    return Activity.loopTutorialInstructions;
+                    return loopTutorialInstructions;
                 }
 
                 if(nextLevelInstructions.indexOf(Activity.CALL_PROCEDURE) !== -1) {
-                    return Activity.procedureTutorialInstructions;
+                    return procedureTutorialInstructions;
                 }
 
-                return Activity.mainTutorialInstructions;
+                return mainTutorialInstructions;
             }
         }
 

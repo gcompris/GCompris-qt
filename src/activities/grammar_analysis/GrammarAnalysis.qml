@@ -23,6 +23,21 @@ ActivityBase {
     property string grammarMode: "_analysis"            // Modified for grammar_classes
     readonly property bool translationMode: false       // Set this value to true to activate translator's mode
 
+    property string activityInstruction: "<b>" + qsTr("Grammatical analysis") + "</b><br><br>" +
+                qsTr("Learn to identify grammatical classes.") + ("<br>") +
+                qsTr("Find all the words corresponding to the requested grammatical classes.") + ("<br>") +
+                qsTr("Select a grammatical class from the list, then select the box under a word and assign it the class.") + ("<br>") +
+                qsTr("Leave the box blank if no class matches.")
+    property ListModel instructions: ListModel {
+        Component.onCompleted: {
+            append({
+                "instruction": activityInstruction,
+                "instructionQml": ""
+            });
+        }
+    }
+
+
     onStart: focus = true
     onStop: {}
 
@@ -139,7 +154,7 @@ ActivityBase {
             Tutorial {
                 id: tutorialSection
                 useImage: false
-                tutorialDetails: Activity.tutorialInstructions[activity.grammarMode]
+                tutorialDetails: activity.instructions
                 onSkipPressed: {
                     Activity.initLevel()
                     tutorialScreen.visible = false

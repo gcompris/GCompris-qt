@@ -25,6 +25,17 @@ ActivityBase {
     property bool isAdditionMode: false
     property bool isQuantityMode: false
 
+    property ListModel instructionModel: ListModel {
+        ListElement {
+            instruction: qsTr("A decimal number is displayed. The bar with the arrow represents a full unit, and each square in it represents one tenth of this unit.")
+            instructionQml: "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial1.qml"
+        }
+        ListElement {
+            instruction: qsTr("Drag the arrow to select a part of the bar, and drag the selected part of the bar to the empty area. Repeat these steps until the number of dropped bars corresponds to the displayed decimal number. Then click on the OK button to validate your answer.")
+            instructionQml: "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial2.qml"
+        }
+    }
+
     pageComponent: Image {
         id: activityBackground
         source: "qrc:/gcompris/src/activities/braille_fun/resource/hillside.svg"
@@ -106,10 +117,7 @@ ActivityBase {
             Tutorial {
                 id: tutorialSection
                 useImage: false
-                tutorialDetails: isSubtractionMode ? Activity.subtractionInstructions :
-                    isAdditionMode ? Activity.additionInstructions :
-                    isQuantityMode ? Activity.quantityInstructions :
-                    Activity.tutorialInstructions
+                tutorialDetails: activity.instructionModel
                 onSkipPressed: {
                     Activity.initLevel()
                     tutorialImage.visible = false

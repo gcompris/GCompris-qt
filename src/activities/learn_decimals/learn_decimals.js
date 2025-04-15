@@ -28,58 +28,6 @@ var lastBarSquareUnits;
 var firstNumberList;
 var numberOfPossibleQuestions;
 
-var tutorialInstructions = [
-            {
-                "instruction": qsTr("A decimal number is displayed. The bar with the arrow represents a full unit, and each square in it represents one tenth of this unit."),
-                "instructionQml": "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial1.qml"
-            },
-            {
-                "instruction": qsTr("Drag the arrow to select a part of the bar, and drag the selected part of the bar to the empty area. Repeat these steps until the number of dropped bars corresponds to the displayed decimal number. Then click on the OK button to validate your answer."),
-                "instructionQml": "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial2.qml"
-            }
-        ];
-
-var subtractionInstructions = [
-            {
-                "instruction": qsTr("A subtraction with two decimal numbers is displayed. Below it, the first number from the subtraction is represented with bars. One bar represents a full unit, and each square in it represents one tenth of this unit."),
-                "instructionQml": "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial3.qml"
-            },
-            {
-                "instruction": qsTr("Click on the squares to subtract them and display the result of the operation, and click on the OK button to validate your answer."),
-                "instructionQml": "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial4.qml"
-            },
-            {
-                "instruction": qsTr("If the answer is correct, type the corresponding result, and click on the OK button to validate your answer."),
-                "instructionQml": "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial5.qml"
-            }
-        ];
-
-var additionInstructions = [
-            {
-                "instruction": qsTr("An addition with two decimal numbers is displayed. The bar with the arrow represents a full unit, and each square in it represents one tenth of this unit."),
-                "instructionQml": "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial6.qml"
-            },
-            {
-                "instruction": qsTr("Drag the arrow to select a part of the bar, and drag the selected part of the bar to the empty area. Repeat these steps until the number of dropped bars corresponds to the result of the addition, and click on the OK button to validate your answer."),
-                "instructionQml": "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial7.qml"
-            },
-            {
-                "instruction": qsTr("If the answer is correct, type the corresponding result, and click on the OK button to validate your answer."),
-                "instructionQml": "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial8.qml"
-            }
-        ];
-
-var quantityInstructions = [
-            {
-                "instruction": qsTr("A quantity is requested. The arrow allows to select up to 10 oranges."),
-                "instructionQml": "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial1.qml"
-            },
-            {
-                "instruction": qsTr("Drag the arrow to select a number of oranges, and drag the selected oranges to the empty area. Repeat these steps until the number of oranges corresponds to the requested quantity. Then click on the OK button to validate your answer."),
-                "instructionQml": "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial2.qml"
-            }
-        ];
-
 function start(items_) {
     items = items_;
     dataset = items.levels;
