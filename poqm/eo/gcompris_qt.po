@@ -16806,12 +16806,12 @@ msgstr ""
 "Litero estas montrata sur la flago alkroĉita al la aviadilo. Elektu ĉiujn "
 "vortojn en la listo enhavanta ĉi tiun literon kaj poste premu la butonon OK."
 
-#: activities/letter-in-word/LetterInWord.qml:333
+#: activities/letter-in-word/LetterInWord.qml:335
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Ni bedaŭras, ni ankoraŭ ne havas tradukon por via lingvo."
 
-#: activities/letter-in-word/LetterInWord.qml:334
+#: activities/letter-in-word/LetterInWord.qml:336
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16821,7 +16821,7 @@ msgstr ""
 "GCompris estas evoluigita de la KDE-komunumo, vi povas traduki GCompris "
 "aliĝante al tradukteamo ĉe <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:336
+#: activities/letter-in-word/LetterInWord.qml:338
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -21625,12 +21625,12 @@ msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
 msgstr "Backspace aŭ Forigi: malfari"
 
-#: activities/play_piano/PlayPiano.qml:199
+#: activities/play_piano/PlayPiano.qml:189
 msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "Alklaku la pianoklavojn kiuj kongruas kun la donitaj notoj."
 
-#: activities/play_piano/PlayPiano.qml:329
+#: activities/play_piano/PlayPiano.qml:322
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21639,12 +21639,12 @@ msgstr ""
 "Ĉi tiu agado postulas sonon, do ĝi ludos kelkajn sonojn eĉ se la sonvoĉoj aŭ "
 "efikoj estas malŝaltitaj en la ĉefa agordo."
 
-#: activities/play_piano/PlayPiano.qml:330
+#: activities/play_piano/PlayPiano.qml:323
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "Forlasi"
 
-#: activities/play_piano/PlayPiano.qml:331
+#: activities/play_piano/PlayPiano.qml:324
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "Daŭrigi"
@@ -21730,7 +21730,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
 msgstr "Tab: Komencu aŭ haltigu la metronomon se ĝi estas videbla"
 
-#: activities/play_rhythm/PlayRhythm.qml:123
+#: activities/play_rhythm/PlayRhythm.qml:121
 msgctxt "PlayRhythm|"
 msgid ""
 "Use the metronome to estimate the time intervals and play the rhythm "
@@ -21738,7 +21738,7 @@ msgid ""
 msgstr ""
 "Uzu la metronomon por taksi la tempintervalojn kaj ludi la ritmon ĝuste."
 
-#: activities/play_rhythm/PlayRhythm.qml:124
+#: activities/play_rhythm/PlayRhythm.qml:122
 msgctxt "PlayRhythm|"
 msgid ""
 "Follow the vertical line and click on the drum or press space key to play "
@@ -21747,7 +21747,7 @@ msgstr ""
 "Sekvu la vertikalan linion kaj alklaku la tamburon aŭ premu spacoklavon por "
 "ludi la ritmon ĝuste."
 
-#: activities/play_rhythm/PlayRhythm.qml:393
+#: activities/play_rhythm/PlayRhythm.qml:406
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21756,12 +21756,12 @@ msgstr ""
 "Ĉi tiu agado postulas sonon, do ĝi ludos kelkajn sonojn eĉ se la sonvoĉoj aŭ "
 "efikoj estas malŝaltitaj en la ĉefa agordo."
 
-#: activities/play_rhythm/PlayRhythm.qml:394
+#: activities/play_rhythm/PlayRhythm.qml:407
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "Forlasi"
 
-#: activities/play_rhythm/PlayRhythm.qml:395
+#: activities/play_rhythm/PlayRhythm.qml:408
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "Daŭrigi"

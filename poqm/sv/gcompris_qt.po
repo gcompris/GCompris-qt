@@ -16775,12 +16775,12 @@ msgstr ""
 "En bokstav visas på flaggan som sitter på planet. Välj alla orden i listan "
 "som bokstaven finns i och klicka sedan på Ok-knappen."
 
-#: activities/letter-in-word/LetterInWord.qml:333
+#: activities/letter-in-word/LetterInWord.qml:335
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Tyvärr finns ingen översättning för ditt modersmål ännu."
 
-#: activities/letter-in-word/LetterInWord.qml:334
+#: activities/letter-in-word/LetterInWord.qml:336
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16790,7 +16790,7 @@ msgstr ""
 "GCompris utvecklas av KDE-gemenskapen. Du kan översätta GCompris genom att "
 "gå med i en översättningsgrupp på <a href=\"%2\">%2</a>."
 
-#: activities/letter-in-word/LetterInWord.qml:336
+#: activities/letter-in-word/LetterInWord.qml:338
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -21615,12 +21615,12 @@ msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
 msgstr "Baksteg eller Delete: ångra"
 
-#: activities/play_piano/PlayPiano.qml:199
+#: activities/play_piano/PlayPiano.qml:189
 msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "Klicka på pianotangenterna som stämmer med angivna noter."
 
-#: activities/play_piano/PlayPiano.qml:329
+#: activities/play_piano/PlayPiano.qml:322
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21629,12 +21629,12 @@ msgstr ""
 "Aktiviteten kräver ljud, så den spelar upp en del ljud även om röster eller "
 "effekter är inaktiverade i huvudinställningen."
 
-#: activities/play_piano/PlayPiano.qml:330
+#: activities/play_piano/PlayPiano.qml:323
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "Avsluta"
 
-#: activities/play_piano/PlayPiano.qml:331
+#: activities/play_piano/PlayPiano.qml:324
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "Fortsätt"
@@ -21720,7 +21720,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
 msgstr "Tabulator: starta eller stoppa metronomen om den är synlig"
 
-#: activities/play_rhythm/PlayRhythm.qml:123
+#: activities/play_rhythm/PlayRhythm.qml:121
 msgctxt "PlayRhythm|"
 msgid ""
 "Use the metronome to estimate the time intervals and play the rhythm "
@@ -21729,7 +21729,7 @@ msgstr ""
 "Använd metronomen för att uppskatta tidsintervallet och återge rytmen "
 "korrekt."
 
-#: activities/play_rhythm/PlayRhythm.qml:124
+#: activities/play_rhythm/PlayRhythm.qml:122
 msgctxt "PlayRhythm|"
 msgid ""
 "Follow the vertical line and click on the drum or press space key to play "
@@ -21738,7 +21738,7 @@ msgstr ""
 "Följ den vertikala linjen och klicka på trumman  eller tryck på "
 "mellanslagstangenten för att återge rytmen korrekt."
 
-#: activities/play_rhythm/PlayRhythm.qml:393
+#: activities/play_rhythm/PlayRhythm.qml:406
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21747,12 +21747,12 @@ msgstr ""
 "Aktiviteten kräver ljud, så den spelar upp en del ljud även om röster eller "
 "effekter är inaktiverade i huvudinställningen."
 
-#: activities/play_rhythm/PlayRhythm.qml:394
+#: activities/play_rhythm/PlayRhythm.qml:407
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "Avsluta"
 
-#: activities/play_rhythm/PlayRhythm.qml:395
+#: activities/play_rhythm/PlayRhythm.qml:408
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "Fortsätt"

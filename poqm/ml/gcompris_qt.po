@@ -16610,12 +16610,12 @@ msgstr ""
 "വിമാനത്തോട് ബന്ധിപ്പിച്ചിരിക്കുന്ന കൊടിയിൽ ഒരു അക്ഷരം കാണാം. തന്നിരിക്കുന്ന വാക്കുകളുടെ "
 "പട്ടികയിൽ, ആ അക്ഷരമുള്ള വാക്കുകൾ തിരഞ്ഞെടുത്ത് ഒകെ ബട്ടൺ അമർത്തുക."
 
-#: activities/letter-in-word/LetterInWord.qml:333
+#: activities/letter-in-word/LetterInWord.qml:335
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "ക്ഷമിക്കണം, നിങ്ങളുടെ ഭാഷയ്ക്ക് തർജ്ജിമ ഇതുവരെ ഇല്ല."
 
-#: activities/letter-in-word/LetterInWord.qml:334
+#: activities/letter-in-word/LetterInWord.qml:336
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16625,7 +16625,7 @@ msgstr ""
 "കെഡിഇ കൂട്ടായ്മയാണ് ജികോംപ്രി ഡെവലപ് ചെയ്തത്, ഒരു തർജ്ജിമ സംഘത്തിൽ ചേർന്നാൽ നിങ്ങൾക്ക് "
 "ജികോംപ്രി തർജ്ജിമ ചെയ്യാൻ കഴിയും <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:336
+#: activities/letter-in-word/LetterInWord.qml:338
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -21400,12 +21400,12 @@ msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
 msgstr "ബാക്ക്‌സ്പെയ്സോ ഡിലീറ്റോ: അൺഡു"
 
-#: activities/play_piano/PlayPiano.qml:199
+#: activities/play_piano/PlayPiano.qml:189
 msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "തന്നിരിക്കുന്ന സ്വരങ്ങൾക്ക് യോജിക്കുന്ന പിയാനോ കീകളിൽ ക്ലിക്ക് ചെയ്യൂ."
 
-#: activities/play_piano/PlayPiano.qml:329
+#: activities/play_piano/PlayPiano.qml:322
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21414,12 +21414,12 @@ msgstr ""
 "ഈ പ്രവർത്തനത്തിന് ശബ്ദം ആവശ്യമുണ്ട്, അതുകൊണ്ട് പ്രധാന കോൺഫിഗറേഷനിൽ ഓഡിയൊ ശബ്ദങ്ങളോ എഫക്ടുകളോ "
 "അസാധുവാക്കിയെന്നിരുന്നാലും ഇവിടെ ചില ശബ്ദങ്ങൾ പ്ലേ ചെയ്യും."
 
-#: activities/play_piano/PlayPiano.qml:330
+#: activities/play_piano/PlayPiano.qml:323
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "നിർത്തുക"
 
-#: activities/play_piano/PlayPiano.qml:331
+#: activities/play_piano/PlayPiano.qml:324
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "തുടരുക"
@@ -21505,14 +21505,14 @@ msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
 msgstr "ടാബ്: സമയമാപിനി ഉണ്ടെങ്കിൽ അതു തുടങ്ങാനോ നിർത്താനോ"
 
-#: activities/play_rhythm/PlayRhythm.qml:123
+#: activities/play_rhythm/PlayRhythm.qml:121
 msgctxt "PlayRhythm|"
 msgid ""
 "Use the metronome to estimate the time intervals and play the rhythm "
 "correctly."
 msgstr "സമയമാപിനി ഉപയോഗിച്ച് സമയ ഇടവേളകൾ കണക്കാക്കി ശരിയായി താളമടിക്കാം."
 
-#: activities/play_rhythm/PlayRhythm.qml:124
+#: activities/play_rhythm/PlayRhythm.qml:122
 msgctxt "PlayRhythm|"
 msgid ""
 "Follow the vertical line and click on the drum or press space key to play "
@@ -21521,7 +21521,7 @@ msgstr ""
 "കുത്തനെയുള്ള വര ശ്രദ്ധിച്ച് ഡ്രമ്മിൽ ക്ലിക്ക് ചെയ്യുകയോ സ്പെയ്സ് കീ അമർത്തുകയോ ചെയ്ത് ശരിയായി "
 "താളമടിക്കൂ."
 
-#: activities/play_rhythm/PlayRhythm.qml:393
+#: activities/play_rhythm/PlayRhythm.qml:406
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21530,12 +21530,12 @@ msgstr ""
 "ഈ പ്രവർത്തനത്തിന് ശബ്ദം ആവശ്യമുണ്ട്, അതുകൊണ്ട് പ്രധാന കോൺഫിഗറേഷനിൽ ഓഡിയൊ ശബ്ദങ്ങളോ എഫക്ടുകളോ "
 "അസാധുവാക്കിയെന്നിരുന്നാലും ഇവിടെ ചില ശബ്ദങ്ങൾ പ്ലേ ചെയ്യും."
 
-#: activities/play_rhythm/PlayRhythm.qml:394
+#: activities/play_rhythm/PlayRhythm.qml:407
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "നിർത്തുക"
 
-#: activities/play_rhythm/PlayRhythm.qml:395
+#: activities/play_rhythm/PlayRhythm.qml:408
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "തുടരുക"

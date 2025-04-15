@@ -16908,12 +16908,12 @@ msgstr ""
 "На прапорі, приєднаному до літака, буде показано літеру. Позначте усі слова, "
 "у яких є ця літера, у списку і натисніть кнопку «Гаразд»."
 
-#: activities/letter-in-word/LetterInWord.qml:333
+#: activities/letter-in-word/LetterInWord.qml:335
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Вибачте, у нас ще немає перекладу потрібною вам мовою."
 
-#: activities/letter-in-word/LetterInWord.qml:334
+#: activities/letter-in-word/LetterInWord.qml:336
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16923,7 +16923,7 @@ msgstr ""
 "GCompris розроблено спільнотою KDE. Щоб допомогти у перекладі GCompris, "
 "долучіться до команди перекладачів на сайті <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:336
+#: activities/letter-in-word/LetterInWord.qml:338
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -21799,12 +21799,12 @@ msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
 msgstr "Backspace або Delete: скасувати"
 
-#: activities/play_piano/PlayPiano.qml:199
+#: activities/play_piano/PlayPiano.qml:189
 msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "Натисніть клавіші піаніно, які відповідають вказаним нотам."
 
-#: activities/play_piano/PlayPiano.qml:329
+#: activities/play_piano/PlayPiano.qml:322
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21813,12 +21813,12 @@ msgstr ""
 "Для цієї вправи потрібен звук, тому програма відтворюватиме звуки, навіть "
 "якщо озвучення і ефекти було вимкнено у основних налаштуваннях."
 
-#: activities/play_piano/PlayPiano.qml:330
+#: activities/play_piano/PlayPiano.qml:323
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "Вийти"
 
-#: activities/play_piano/PlayPiano.qml:331
+#: activities/play_piano/PlayPiano.qml:324
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "Продовжити"
@@ -21908,7 +21908,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
 msgstr "Tab: запустити або зупинити метроном, якщо він є видимим"
 
-#: activities/play_rhythm/PlayRhythm.qml:123
+#: activities/play_rhythm/PlayRhythm.qml:121
 msgctxt "PlayRhythm|"
 msgid ""
 "Use the metronome to estimate the time intervals and play the rhythm "
@@ -21917,7 +21917,7 @@ msgstr ""
 "Використання метронома для оцінки часових проміжків і правильного "
 "відтворення ритму."
 
-#: activities/play_rhythm/PlayRhythm.qml:124
+#: activities/play_rhythm/PlayRhythm.qml:122
 msgctxt "PlayRhythm|"
 msgid ""
 "Follow the vertical line and click on the drum or press space key to play "
@@ -21926,7 +21926,7 @@ msgstr ""
 "Стежте за вертикальною лінією і натискайте кнопку барабана або клавішу "
 "пробілу для правильного відтворення ритму."
 
-#: activities/play_rhythm/PlayRhythm.qml:393
+#: activities/play_rhythm/PlayRhythm.qml:406
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21935,12 +21935,12 @@ msgstr ""
 "Для цієї вправи потрібен звук, тому програма відтворюватиме звуки, навіть "
 "якщо озвучення і ефекти було вимкнено у основних налаштуваннях."
 
-#: activities/play_rhythm/PlayRhythm.qml:394
+#: activities/play_rhythm/PlayRhythm.qml:407
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "Вийти"
 
-#: activities/play_rhythm/PlayRhythm.qml:395
+#: activities/play_rhythm/PlayRhythm.qml:408
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "Продовжити"

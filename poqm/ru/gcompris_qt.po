@@ -16851,12 +16851,12 @@ msgstr ""
 "На флаге, привязанном к самолёту, написана буква. Выбери все слова, которые "
 "содержат эту букву, и нажми кнопку «ОК»."
 
-#: activities/letter-in-word/LetterInWord.qml:333
+#: activities/letter-in-word/LetterInWord.qml:335
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "К сожалению, перевода на твой язык пока нет."
 
-#: activities/letter-in-word/LetterInWord.qml:334
+#: activities/letter-in-word/LetterInWord.qml:336
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16868,7 +16868,7 @@ msgstr ""
 "странице <a href=\"https://kde.ru/translation\">https://kde.ru/translation</"
 "a> (или на другие языки — на странице <a href=\"%2\">%2</a>)."
 
-#: activities/letter-in-word/LetterInWord.qml:336
+#: activities/letter-in-word/LetterInWord.qml:338
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -21718,12 +21718,12 @@ msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
 msgstr "Клавиша «Backspace» или «Delete»: отмена"
 
-#: activities/play_piano/PlayPiano.qml:199
+#: activities/play_piano/PlayPiano.qml:189
 msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "Щёлкай по клавишам пианино, соответствующим заданным нотам."
 
-#: activities/play_piano/PlayPiano.qml:329
+#: activities/play_piano/PlayPiano.qml:322
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21732,13 +21732,13 @@ msgstr ""
 "Для этого упражнения необходим звук, поэтому оно будет воспроизводить звуки, "
 "даже если они отключены в основной конфигурации."
 
-#: activities/play_piano/PlayPiano.qml:330
+#: activities/play_piano/PlayPiano.qml:323
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "Выйти"
 
 # https://ru.wikipedia.org/wiki/%D0%A7%D0%B0%D1%81%D1%82%D0%B8_%D1%81%D0%B2%D0%B5%D1%82%D0%B0 --aspotashev
-#: activities/play_piano/PlayPiano.qml:331
+#: activities/play_piano/PlayPiano.qml:324
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "Продолжить"
@@ -21824,14 +21824,14 @@ msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
 msgstr "Tab: запуск или остановка метронома, если он отображается"
 
-#: activities/play_rhythm/PlayRhythm.qml:123
+#: activities/play_rhythm/PlayRhythm.qml:121
 msgctxt "PlayRhythm|"
 msgid ""
 "Use the metronome to estimate the time intervals and play the rhythm "
 "correctly."
 msgstr "Используй метроном, чтобы правильно воспроизвести все интервалы."
 
-#: activities/play_rhythm/PlayRhythm.qml:124
+#: activities/play_rhythm/PlayRhythm.qml:122
 msgctxt "PlayRhythm|"
 msgid ""
 "Follow the vertical line and click on the drum or press space key to play "
@@ -21840,7 +21840,7 @@ msgstr ""
 "Следи за вертикальной линией и щёлкай по барабану или нажимай пробел, "
 "соблюдая заданный ритм."
 
-#: activities/play_rhythm/PlayRhythm.qml:393
+#: activities/play_rhythm/PlayRhythm.qml:406
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21849,13 +21849,13 @@ msgstr ""
 "Для этого упражнения необходим звук, поэтому оно будет воспроизводить звуки, "
 "даже если они отключены в основной конфигурации."
 
-#: activities/play_rhythm/PlayRhythm.qml:394
+#: activities/play_rhythm/PlayRhythm.qml:407
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "Выйти"
 
 # https://ru.wikipedia.org/wiki/%D0%A7%D0%B0%D1%81%D1%82%D0%B8_%D1%81%D0%B2%D0%B5%D1%82%D0%B0 --aspotashev
-#: activities/play_rhythm/PlayRhythm.qml:395
+#: activities/play_rhythm/PlayRhythm.qml:408
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "Продолжить"
