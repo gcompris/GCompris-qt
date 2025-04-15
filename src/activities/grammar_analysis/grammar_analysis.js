@@ -31,29 +31,6 @@ var goalArray = []
 var boxCount = 0                // Total boxes for current sentence (a box is an expected grammatical class)
 var animRunning = false
 
-var tutorialInstructions = {
-    "_analysis" : [
-        {
-            "instruction": "<b>" + qsTr("Grammatical analysis") + "</b><br><br>" +
-                           qsTr("Learn to identify grammatical classes.") + ("<br>") +
-                           qsTr("Find all the words corresponding to the requested grammatical classes.") + ("<br>") +
-                           qsTr("Select a grammatical class from the list, then select the box under a word and assign it the class.") + ("<br>") +
-                           qsTr("Leave the box blank if no class matches."),
-            "instructionQml": ""
-        }
-    ],
-    "_classes" : [
-        {
-            "instruction": "<b>" + qsTr("Grammatical classes") + "</b><br><br>" +
-                           qsTr("Learn to identify grammatical classes.") + "<br>" +
-                           qsTr("Find all the words corresponding to the requested grammatical class.") + ("<br>") +
-                           qsTr("Select the grammatical class from the list, then select the box under a word and assign it the class.") + ("<br>") +
-                           qsTr("Leave the box blank if the class doesn't match."),
-            "instructionQml": ""
-        }
-    ]
-}
-
 // Try to read a grammar file
 function checkFileName(fileName) {
     datas = items.jsonParser.parseFromUrl(fileName)

@@ -25,7 +25,7 @@ ActivityBase {
     Keys.onReleased:  (event) => { Activity.processReleasedKey(event) }
 
     property var dataset
-    property var tutorialInstructions: ""
+    property ListModel tutorialInstructions
     property bool showTutorial: false
 
     property int oldWidth: width

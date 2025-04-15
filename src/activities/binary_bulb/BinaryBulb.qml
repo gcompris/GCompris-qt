@@ -79,7 +79,41 @@ ActivityBase {
             visible: true
             Tutorial {
                 id: tutorialSection
-                tutorialDetails: Activity.tutorialInstructions
+                tutorialDetails: ListModel {
+                    ListElement {
+                        instruction: qsTr("This activity teaches how to convert decimal numbers to binary numbers.")
+                        instructionQml: "qrc:/gcompris/src/activities/binary_bulb/resource/tutorial1.qml"
+                    }
+                    ListElement {
+                        instruction: qsTr("Computers use transistors to count and transistors have only two states, 0 and 1. Mathematically, these states are represented by 0 and 1, which makes up the binary system of numeration.")
+                        instructionQml: "qrc:/gcompris/src/activities/binary_bulb/resource/tutorial2.qml"
+                    }
+                    ListElement {
+                        instruction: qsTr("In the activity 0 and 1 are simulated by bulbs, switched on or off.")
+                        instructionQml: "qrc:/gcompris/src/activities/binary_bulb/resource/tutorial3.qml"
+                    }
+                    ListElement {
+                        instruction: qsTr("Binary system uses these numbers very efficiently, allowing to count from 0 to 255 with 8 bits only.")
+                        instructionQml: "qrc:/gcompris/src/activities/binary_bulb/resource/tutorial4.qml"
+                    }
+                    ListElement {
+                        instruction: qsTr("Each bit adds a progressive value, corresponding to the powers of 2, ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → 2²=4 , bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit 8 → 2⁷=128.")
+                        instructionQml: "qrc:/gcompris/src/activities/binary_bulb/resource/tutorial5.qml"
+                    }
+                    ListElement {
+                        instruction: qsTr("To convert a decimal 5 to a binary value, 1 and 4 are added.")
+                        instructionQml: "qrc:/gcompris/src/activities/binary_bulb/resource/tutorial6.qml"
+                    }
+                    ListElement {
+                        instruction: qsTr("Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is equal to binary 101.")
+                        instructionQml: "qrc:/gcompris/src/activities/binary_bulb/resource/tutorial7.qml"
+                    }
+                    ListElement {
+                        instruction: qsTr("This image will help you to compute bits' value.")
+                        instructionQml: "qrc:/gcompris/src/activities/binary_bulb/resource/tutorial5.qml"
+                    }
+                }
+
                 useImage: false
                 onSkipPressed: {
                     Activity.initLevel()

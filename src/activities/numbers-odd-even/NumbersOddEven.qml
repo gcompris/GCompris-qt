@@ -5,6 +5,7 @@
  SPDX-License-Identifier: GPL-3.0-or-later
 */
 
+import QtQml.Models
 import "../planegame"
 
 Planegame {
@@ -37,41 +38,38 @@ Planegame {
         }
     ]
 
-    tutorialInstructions: [
-                {
-                    "instruction": qsTr("This activity teaches about even and odd numbers."),
-                    "instructionQml": ""
-                },
-                {
-                    "instruction": qsTr("Even numbers are numbers which leave a remainder of 0 when divided by 2."),
-                    "instructionQml": ""
-                },
-
-                {
-                    "instruction": qsTr("What is meant by remainder?"),
-                    "instructionQml" : "qrc:/gcompris/src/activities/numbers-odd-even/resource/Tutorial1.qml"
-                },
-
-                {
-                    "instruction": qsTr("Even numbers are numbers which leave a remainder of 0 when divided by 2."),
-                    "instructionQml" : "qrc:/gcompris/src/activities/numbers-odd-even/resource/Tutorial2.qml"
-                },
-                {
-                    "instruction": qsTr("Odd numbers are numbers which do not leave a remainder of 0 when divided by 2."),
-                    "instructionQml": "qrc:/gcompris/src/activities/numbers-odd-even/resource/Tutorial3.qml"
-                },
-                {
-                    "instruction": qsTr("Exercise to test your understanding."),
-                    "instructionQml": "qrc:/gcompris/src/activities/numbers-odd-even/resource/Tutorial4.qml"
-                },
-                {
-                    "instruction": qsTr("Exercise to test your understanding."),
-                    "instructionQml": "qrc:/gcompris/src/activities/numbers-odd-even/resource/Tutorial5.qml"
-                },
-                {
-                    "instruction":  qsTr("Exercise to test your understanding."),
-                    "instructionQml": "qrc:/gcompris/src/activities/numbers-odd-even/resource/Tutorial6.qml"
-                }
-
-            ]
+    tutorialInstructions: ListModel {
+        ListElement {
+            instruction: qsTr("This activity teaches about even and odd numbers.")
+            instructionQml: ""
+        }
+        ListElement {
+            instruction: qsTr("Even numbers are numbers which leave a remainder of 0 when divided by 2.")
+            instructionQml: ""
+        }
+        ListElement {
+            instruction: qsTr("What is meant by remainder?")
+            instructionQml: "qrc:/gcompris/src/activities/numbers-odd-even/resource/Tutorial1.qml"
+        }
+        ListElement {
+            instruction: qsTr("Even numbers are numbers which leave a remainder of 0 when divided by 2.")
+            instructionQml: "qrc:/gcompris/src/activities/numbers-odd-even/resource/Tutorial2.qml"
+        }
+        ListElement {
+            instruction: qsTr("Odd numbers are numbers which do not leave a remainder of 0 when divided by 2.")
+            instructionQml: "qrc:/gcompris/src/activities/numbers-odd-even/resource/Tutorial3.qml"
+        }
+        ListElement {
+            instruction: qsTr("Exercise to test your understanding.")
+            instructionQml: "qrc:/gcompris/src/activities/numbers-odd-even/resource/Tutorial4.qml"
+        }
+        ListElement {
+            instruction: qsTr("Exercise to test your understanding.")
+            instructionQml: "qrc:/gcompris/src/activities/numbers-odd-even/resource/Tutorial5.qml"
+        }
+        ListElement {
+            instruction: qsTr("Exercise to test your understanding.")
+            instructionQml: "qrc:/gcompris/src/activities/numbers-odd-even/resource/Tutorial6.qml"
+        }
+    }
 }
