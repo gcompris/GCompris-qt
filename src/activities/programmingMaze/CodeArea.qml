@@ -73,17 +73,19 @@ GridView {
         if(currentIndex != -1) {
             if(instructionArea.instructionToInsert && (items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed)) {
                 var isInstructionInserted = appendInstruction()
-                if(isInstructionInserted)
+                if(isInstructionInserted) {
                     currentModel.move(currentModel.count - 1, currentIndex, 1)
+                }
             }
             else {
                 if((initialEditItemIndex == currentIndex) || (initialEditItemIndex == -1 && currentIndex != -1)) {
                     codeArea.isEditingInstruction = !codeArea.isEditingInstruction
                 }
-                if(!codeArea.isEditingInstruction)
+                if(!codeArea.isEditingInstruction) {
                     codeArea.initialEditItemIndex = -1
-                else
+                } else {
                     initialEditItemIndex = currentIndex
+                }
 
                 var calculatedX = (initialEditItemIndex % 4) * codeArea.cellWidth
                 var calculatedY = Math.floor(initialEditItemIndex / 4) * codeArea.cellHeight
@@ -91,9 +93,9 @@ GridView {
                 editInstructionIndicator.y = calculatedY + 1.5 * ApplicationInfo.ratio
             }
         }
-
-        else if((items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed) && instructionArea.instructionToInsert)
+        else if((items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed) && instructionArea.instructionToInsert) {
             appendInstruction()
+        }
     }
 
     onDeleteKeyPressed: {
@@ -105,7 +107,7 @@ GridView {
     }
 
     function appendInstruction() {
-        if(background.insertIntoMain || (instructionArea.instructionToInsert != "call-procedure") || (instructionArea.instructionToInsert != "execute-loop")) {
+        if(background.insertIntoMain || (instructionArea.instructionToInsert != "call-procedure" && instructionArea.instructionToInsert != "execute-loop")) {
             currentModel.append({ "name": instructionArea.instructionToInsert })
             items.numberOfInstructionsAdded++
             instructionArea.instructionToInsert = ""
