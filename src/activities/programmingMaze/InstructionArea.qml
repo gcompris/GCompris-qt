@@ -10,21 +10,18 @@
  */
 import QtQuick 2.12
 import core 1.0
+import "../../core"
 
 import "programmingMaze.js" as Activity
 
 GridView {
     id: instructionArea
-    width: parent.width * 0.5
-    height: parent.height * 0.17
-    cellWidth: activityBackground.buttonWidth
-    cellHeight: activityBackground.buttonHeight
-
-    anchors.left: parent.left
-    anchors.top: mazeModel.bottom
-    anchors.topMargin: activityBackground.height * 0.4
+    cellWidth: buttonWidth
+    cellHeight: buttonHeight
 
     property string instructionText: qsTr("Choose the instructions")
+    required property int buttonWidth
+    required property int buttonHeight
 
     interactive: false
     model: instructionModel
@@ -52,39 +49,39 @@ GridView {
     }
 
     highlight: Rectangle {
-        width: buttonWidth - 3 * ApplicationInfo.ratio
-        height: buttonHeight * 1.18 - 3 * ApplicationInfo.ratio
+        width: instructionArea.buttonWidth
+        height: instructionArea.buttonHeight
         color: "#00ffffff"
-        border.width: 3.5 * ApplicationInfo.ratio //activity.keyboardNavigationVisible ? 3.5 * ApplicationInfo.ratio : 0
+        border.width: GCStyle.midBorder
         border.color: "#e77935"
         z: 2
-        radius: width / 18
+        radius: GCStyle.tinyMargins
     }
     highlightFollowsCurrentItem: true
     keyNavigationWraps: true
 
     delegate: Item {
         id: instructionItem
-        width: activityBackground.buttonWidth
-        height: activityBackground.buttonHeight * 1.18
+        width: instructionArea.buttonWidth
+        height: instructionArea.buttonHeight
 
         Rectangle {
             id: imageHolder
-            width: parent.width - 3 * ApplicationInfo.ratio
-            height: parent.height - 3 * ApplicationInfo.ratio
-            border.width: 1.2 * ApplicationInfo.ratio
+            width: parent.width - GCStyle.midBorder
+            height: parent.height - GCStyle.midBorder
+            border.width: GCStyle.thinnestBorder
             border.color: "#2a2a2a"
             anchors.centerIn: parent
-            radius: width / 18
+            radius: GCStyle.tinyMargins
             color: instructionArea.instructionToInsert == name ? "#f3bc9a" : "#ffffff"
 
             Image {
                 id: icon
                 source: Activity.url + name + ".svg"
-                width: Math.round(parent.width / 1.2)
-                height: Math.round(parent.height / 1.2)
-                sourceSize.width: height
-                sourceSize.height: height
+                width: Math.round(Math.min(parent.width, parent.height) * 0.8)
+                height: width
+                sourceSize.width: width
+                sourceSize.height: width
                 anchors.centerIn: parent
                 fillMode: Image.PreserveAspectFit
                 mipmap: true
@@ -113,9 +110,6 @@ GridView {
         }
 
         function checkModelAndInsert() {
-            if(items.constraintInstruction.opacity)
-                items.constraintInstruction.hide()
-
             if(!activityBackground.insertIntoMain && (name !== Activity.CALL_PROCEDURE) && (name !== Activity.EXECUTE_LOOPS))
                 insertIntoModel(procedureModel, procedureCodeArea)
             else if(activityBackground.insertIntoMain)

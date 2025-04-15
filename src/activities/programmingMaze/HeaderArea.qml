@@ -14,12 +14,10 @@ import "../../core"
 
 Rectangle {
     id: header
-    width: activityBackground.width * 0.4
-    height: activityBackground.height / 10
-    radius: 8 * ApplicationInfo.ratio
-    border.width: 2 * ApplicationInfo.ratio
+    radius: GCStyle.halfMargins
+    border.width: GCStyle.thinBorder
     border.color: "#a6d8ea"
-    color: "#ffffff"
+    color: GCStyle.whiteBg
     opacity: headerOpacity
 
     property real headerOpacity
@@ -34,14 +32,14 @@ Rectangle {
         verticalAlignment: Text.AlignVCenter
         anchors.centerIn: parent
         anchors.horizontalCenterOffset: -iconImage.width * 0.5
-        width: parent.width - iconImage.width
-        height: parent.height
+        width: parent.width - iconImage.width - GCStyle.baseMargins
+        height: parent.height - GCStyle.baseMargins
         font.weight: Font.DemiBold
         minimumPointSize: 7
         fontSize: mediumSize
         fontSizeMode: Text.Fit
         wrapMode: Text.WordWrap
-        color: "#2e2f2f"
+        color: GCStyle.darkText
         text: header.headerText
     }
 
@@ -49,7 +47,7 @@ Rectangle {
         id: iconImage
         anchors.centerIn: parent
         anchors.horizontalCenterOffset: textItem.contentWidth * 0.5
-        height: header.headerIcon === "" ? 0 : header.height * 0.6
+        height: header.headerIcon === "" ? 0 : Math.min(GCStyle.smallButtonHeight, textItem.height)
         width: height
         sourceSize.height: height
         source: header.headerIcon === "" ? "qrc:/gcompris/src/core/resource/empty.svg" :

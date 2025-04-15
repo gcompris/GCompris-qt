@@ -32,10 +32,10 @@ Image {
         height: parent.paintedHeight
         anchors.verticalCenter: parent.verticalCenter
         anchors.horizontalCenter: parent.horizontalCenter
-        property int buttonWidth: width / 10
-        property int buttonHeight: height / 15.3
-        property int stepX: layoutTuto.width / 10
-        property int stepY: (layoutTuto.height - layoutTuto.height / 10) / 10
+        property int buttonWidth: width * 0.1
+        property int buttonHeight: height * 0.065
+        property int stepX: layoutTuto.width * 0.1
+        property int stepY: layoutTuto.height * 0.09
 
         Repeater {
             id: mazeModelTuto
@@ -76,9 +76,9 @@ Image {
             id: activeCodeAreaTuto
             color: "#1dade4"
             opacity: 0.5
-            radius: 8 * ApplicationInfo.ratio
-            border.width: 2 * ApplicationInfo.ratio
-            border.color: "white"
+            radius: GCStyle.halfMargins
+            border.width: GCStyle.thinBorder
+            border.color: GCStyle.whiteBorder
             anchors.fill: activeAreaTuto === "instruction" ? instructionAreaTuto :
                             ( activeAreaTuto === "main" ? wholeMainArea : wholeProcedureArea)
         }
@@ -99,7 +99,7 @@ Image {
             header: HeaderArea {
                 width: instructionAreaTuto.width
                 height: layoutTuto.height / 11
-                radius: 4 * ApplicationInfo.ratio
+                radius: GCStyle.halfMargins
                 headerOpacity: 1
                 headerText: instructionArea.instructionText
             }
@@ -111,21 +111,21 @@ Image {
 
                     Rectangle {
                         id: imageHolderTuto
-                        width: parent.width - 1 * ApplicationInfo.ratio
-                        height: parent.height - 1 * ApplicationInfo.ratio
-                        border.width: 1.2 * ApplicationInfo.ratio
+                        width: parent.width - GCStyle.midBorder
+                        height: parent.height - GCStyle.midBorder
+                        border.width: GCStyle.thinnestBorder
                         border.color: "#2a2a2a"
                         anchors.centerIn: parent
-                        radius: width / 18
-                        color: "#ffffff"
+                        radius: GCStyle.tinyMargins
+                        color: GCStyle.whiteBg
 
                         Image {
                             id: iconTuto
                             source: Activity.url + name + ".svg"
-                            width: Math.round(parent.width / 1.2)
-                            height: Math.round(parent.height / 1.2)
-                            sourceSize.width: height
-                            sourceSize.height: height
+                            width: Math.round(Math.min(parent.width, parent.height) / 1.2)
+                            height: width
+                            sourceSize.width: width
+                            sourceSize.height: width
                             anchors.centerIn: parent
                             fillMode: Image.PreserveAspectFit
                             mipmap: true
@@ -173,8 +173,8 @@ Image {
             headerText: mainFunctionHeader.headerText
             headerOpacity: activeAreaTuto === "main" ? 1 : 0.5
             width: parent.width * 0.4
-            height: parent.height / 10
-            radius: 4 * ApplicationInfo.ratio
+            height: parent.height * 0.1
+            radius: GCStyle.halfMargins
             anchors.top: layoutTuto.top
             anchors.right: layoutTuto.right
             visible: mainVisible
@@ -200,20 +200,20 @@ Image {
                     height: layoutTuto.buttonHeight
 
                     Rectangle {
-                        width: parent.width - 1 * ApplicationInfo.ratio
-                        height: parent.height - 1 * ApplicationInfo.ratio
-                        border.width: 1.2 * ApplicationInfo.ratio
+                        width: parent.width - GCStyle.midBorder
+                        height: parent.height - GCStyle.midBorder
+                        border.width: GCStyle.thinnestBorder
                         border.color: "#2a2a2a"
                         anchors.centerIn: parent
-                        radius: width / 18
-                        color: "#ffffff"
+                        radius: GCStyle.tinyMargins
+                        color: GCStyle.whiteBg
 
                         Image {
                             source: Activity.url + name + ".svg"
-                            width: Math.round(parent.width / 1.2)
-                            height: Math.round(parent.height / 1.2)
-                            sourceSize.width: height
-                            sourceSize.height: height
+                            width: Math.round(Math.min(parent.width, parent.height) / 1.2)
+                            height: width
+                            sourceSize.width: width
+                            sourceSize.height: width
                             anchors.centerIn: parent
                             fillMode: Image.PreserveAspectFit
                             mipmap: true
@@ -236,8 +236,8 @@ Image {
             headerIcon: procedureHeader.headerIcon
             headerOpacity: 1
             width: parent.width * 0.4
-            height: parent.height / 10
-            radius: 4 * ApplicationInfo.ratio
+            height: parent.height * 0.1
+            radius: GCStyle.halfMargins
             visible: procedureVisible || loopVisible
             anchors.top: mainFunctionCodeAreaTuto.bottom
             anchors.right: parent.right
@@ -256,10 +256,9 @@ Image {
                 width: parent.width * 0.3
                 height: parent.height
                 anchors.left: parent.left
-                anchors.leftMargin: 1.2 * ApplicationInfo.ratio
-                border.width: 1.2 * ApplicationInfo.ratio
-                border.color: "grey"
-                radius: decreaseButton.width * 0.1
+                border.width: GCStyle.thinnestBorder
+                border.color: GCStyle.grayBorder
+                radius: GCStyle.tinyMargins
 
                 GCText {
                     id: decreaseSign
@@ -268,7 +267,7 @@ Image {
                     verticalAlignment: Text.AlignVCenter
                     fontSizeMode: Text.Fit
                     wrapMode: Text.WordWrap
-                    color: "#373737"
+                    color: GCStyle.darkText
                     text: Activity.LoopEnumValues.MINUS_SIGN
                 }
             }
@@ -278,10 +277,9 @@ Image {
                 width: parent.width * 0.3
                 height: parent.height
                 anchors.left: decreaseButton.right
-                anchors.leftMargin: 1.2 * ApplicationInfo.ratio
-                border.width: 1.2 * ApplicationInfo.ratio
-                border.color: "grey"
-                radius: loopCounter.width * 0.1
+                border.width: GCStyle.thinnestBorder
+                border.color: GCStyle.grayBorder
+                radius: GCStyle.tinyMargins
 
                 GCText {
                     id: loopCounterText
@@ -290,7 +288,7 @@ Image {
                     verticalAlignment: Text.AlignVCenter
                     fontSizeMode: Text.Fit
                     wrapMode: Text.WordWrap
-                    color: "#373737"
+                    color: GCStyle.darkText
                     text: "1"
                 }
             }
@@ -301,9 +299,9 @@ Image {
                 height: parent.height
                 anchors.left: loopCounter.right
                 anchors.leftMargin: 1.2 * ApplicationInfo.ratio
-                border.width: 1.2 * ApplicationInfo.ratio
-                border.color: "grey"
-                radius: increaseButton.width * 0.1
+                border.width: GCStyle.thinnestBorder
+                border.color: GCStyle.grayBorder
+                radius: GCStyle.tinyMargins
 
                 GCText {
                     id: increaseSign
@@ -312,7 +310,7 @@ Image {
                     verticalAlignment: Text.AlignVCenter
                     fontSizeMode: Text.Fit
                     wrapMode: Text.WordWrap
-                    color: "#373737"
+                    color: GCStyle.darkText
                     text: Activity.LoopEnumValues.PLUS_SIGN
                 }
             }
@@ -338,20 +336,20 @@ Image {
                     height: layoutTuto.buttonHeight
 
                     Rectangle {
-                        width: parent.width - 1 * ApplicationInfo.ratio
-                        height: parent.height - 1 * ApplicationInfo.ratio
-                        border.width: 1.2 * ApplicationInfo.ratio
+                        width: parent.width - GCStyle.midBorder
+                        height: parent.height - GCStyle.midBorder
+                        border.width: GCStyle.thinnestBorder
                         border.color: "#2a2a2a"
                         anchors.centerIn: parent
-                        radius: width / 18
-                        color: "#ffffff"
+                        radius: GCStyle.tinyMargins
+                        color: GCStyle.whiteBg
 
                         Image {
                             source: Activity.url + name + ".svg"
-                            width: Math.round(parent.width / 1.2)
-                            height: Math.round(parent.height / 1.2)
-                            sourceSize.width: height
-                            sourceSize.height: height
+                            width: Math.round(Math.min(parent.width, parent.height) / 1.2)
+                            height: width
+                            sourceSize.width: width
+                            sourceSize.height: width
                             anchors.centerIn: parent
                             fillMode: Image.PreserveAspectFit
                             mipmap: true
@@ -371,7 +369,7 @@ Image {
         Rectangle {
             id: highlightArea
             color: "#00000000"
-            border.width: 3 * ApplicationInfo.ratio
+            border.width: GCStyle.midBorder
             border.color: "#E63B3B"
             anchors.fill: activeAreaTuto === "instruction" ? instructionAreaTuto :
                             ( activeAreaTuto === "main" ? wholeMainArea : wholeProcedureArea)
@@ -382,14 +380,14 @@ Image {
             id: constraintInstructionTuto
             anchors.left: parent.left
             anchors.top: instructionAreaTuto.bottom
-            anchors.topMargin: 5 * ApplicationInfo.ratio
+            anchors.topMargin: GCStyle.halfMargins
             width: parent.width / 2.3
             height: parent.height / 8.9
-            radius: 5
+            radius: GCStyle.halfMargins
             z: 3
-            color: "#E8E8E8" //paper white
-            border.width: 1 * ApplicationInfo.ratio
-            border.color: "#87A6DD"  //light blue
+            color: GCStyle.lightBg
+            border.width: GCStyle.thinnestBorder
+            border.color: GCStyle.blueBorder
             visible: instructionTextVisible
 
             GCText {
