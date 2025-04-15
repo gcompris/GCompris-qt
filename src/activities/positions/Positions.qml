@@ -28,7 +28,6 @@ ActivityBase {
         fillMode: Image.PreserveAspectCrop
 
         property bool keyboardMode: false
-        readonly property int baseMargins: 10 * ApplicationInfo.ratio
 
         QtObject {
             id: items
@@ -103,20 +102,19 @@ ActivityBase {
             anchors.top: activityBackground.top
             anchors.left: activityBackground.left
             anchors.right: okButton.width > score.width ? okButton.left : score.left
-            anchors.margins: activityBackground.baseMargins
+            anchors.margins: GCStyle.baseMargins
 
             property bool horizontalLayout: mainScreen.width >= mainScreen.height
 
             Rectangle {
                 id: backgroundScreen
-                width: parent.width - 2 * activityBackground.baseMargins
+                width: parent.width
                 height: mainScreen.horizontalLayout ? parent.height * 0.6 : parent.height * 0.4
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.top: parent.top
-                anchors.topMargin: activityBackground.baseMargins
-                visible: items.currentLevel % 2 !== 0 ? true : false
+                visible: items.currentLevel % 2 !== 0
                 color: "#55333333"
-                radius: activityBackground.baseMargins
+                radius: GCStyle.halfMargins
 
                 BoxBoyPosition {
                     id: currentPosition
@@ -128,12 +126,12 @@ ActivityBase {
 
             GridView {
                 id: answerViews
-                width: backgroundScreen.width
-                anchors.horizontalCenter: parent.horizontalCenter
-                visible: items.currentLevel % 2 !== 0 ? true : false
+                width: parent.width + GCStyle.baseMargins
+                visible: backgroundScreen.visible
                 anchors.top: backgroundScreen.bottom
+                anchors.left: backgroundScreen.left
                 anchors.bottom: parent.bottom
-                anchors.margins: activityBackground.baseMargins
+                anchors.topMargin: GCStyle.baseMargins
                 cellWidth: mainScreen.horizontalLayout ? answerViews.width / answerViews.count : answerViews.width
                 cellHeight: mainScreen.horizontalLayout ? answerViews.height : answerViews.height / answerViews.count
                 keyNavigationWraps: true
@@ -143,12 +141,12 @@ ActivityBase {
 
                 delegate: Rectangle {
                     id: answer
-                    color: index == answerViews.currentIndex ? "#FFFFFFFF" : "#80FFFFFF"
-                    radius: 15
-                    width: answerViews.cellWidth - activityBackground.baseMargins
-                    height: answerViews.cellHeight - activityBackground.baseMargins
-                    border.width: index == answerViews.currentIndex ? 3 : 0
-                    border.color: "#373737"
+                    color: index == answerViews.currentIndex ? GCStyle.lightBg : "#80FFFFFF"
+                    radius: GCStyle.halfMargins
+                    width: answerViews.cellWidth - GCStyle.baseMargins
+                    height: answerViews.cellHeight - GCStyle.baseMargins
+                    border.width: index == answerViews.currentIndex ? GCStyle.thinBorder : 0
+                    border.color: GCStyle.blueBorder
 
                     property alias text: answerText.text
                     GCText {
@@ -157,8 +155,8 @@ ActivityBase {
                         fontSize: mediumSize
                         wrapMode: Text.WordWrap
                         fontSizeMode: Text.Fit
-                        width: answer.width - activityBackground.baseMargins
-                        height: answer.height
+                        width: answer.width - 2 * GCStyle.baseMargins
+                        height: answer.height - GCStyle.baseMargins
                         anchors.centerIn: parent
                         verticalAlignment: Text.AlignVCenter
                         horizontalAlignment: Text.AlignHCenter
@@ -177,111 +175,95 @@ ActivityBase {
                     }
                 }
             }
+        }
 
-            Rectangle {
-                id: questionArea
-                anchors.centerIn: questionItem
-                width: questionItem.contentWidth + activityBackground.baseMargins * 2
-                height: questionItem.contentHeight + activityBackground.baseMargins
-                radius: 10
-                color: "#373737"
-                border.width: 2
-                border.color: "#F2F2F2"
-                visible: questionItem.visible
-            }
+        GCTextPanel {
+            id: questionPanel
+            visible: items.currentLevel % 2 === 0
+            panelWidth: activityBackground.width - score.width - 3 * GCStyle.baseMargins
+            panelHeight: Math.min(50 * ApplicationInfo.ratio, activityBackground.height * 0.2)
+            fixedHeight: true
+            anchors.horizontalCenter: activityBackground.horizontalCenter
+            anchors.horizontalCenterOffset: -(score.height + 2 * GCStyle.baseMargins) * 0.5
+            anchors.top: mainScreen.top
+            textItem.text: items.questionText
+        }
 
-            GCText {
-                id: questionItem
-                visible: items.currentLevel % 2 === 0 ? true : false
-                anchors.top: mainScreen.top
-                anchors.left: mainScreen.left
-                anchors.right: mainScreen.right
-                anchors.margins: activityBackground.baseMargins
-                height: score.height
-                text: items.questionText
-                fontSize: mediumSize
-                fontSizeMode: Text.Fit
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                wrapMode: Text.WordWrap
-                color: "white"
-            }
+        GridView {
+            id: positionViews
+            anchors.top: questionPanel.bottom
+            anchors.topMargin: GCStyle.baseMargins
+            anchors.left: mainScreen.left
+            width: mainScreen.width
+            height: mainScreen.height - questionPanel.height - GCStyle.baseMargins
+            visible: questionPanel.visible
+            interactive: false
+            cellWidth: itemWidth
+            cellHeight: itemWidth
+            keyNavigationWraps: true
+            model: positionModels
+            layoutDirection: Qt.LeftToRight
+            highlightFollowsCurrentItem: true
+            focus: false
+            currentIndex: -1
 
-            ListModel {
-                id: positionModels
-            }
+            property int itemWidth: Core.fitItems(positionViews.width, positionViews.height, Math.max(positionModels.count, 1))
 
-            GridView {
-                id: positionViews
-                anchors.top: questionArea.bottom
-                anchors.topMargin: activityBackground.baseMargins
-                anchors.left: parent.left
-                width: parent.width
-                height: parent.height - questionArea.height - activityBackground.baseMargins
-                visible: items.currentLevel % 2 === 0 ? true : false
-                interactive: false
-                cellWidth: itemWidth
-                cellHeight: itemWidth
-                keyNavigationWraps: true
-                model: positionModels
-                layoutDirection: Qt.LeftToRight
-                highlightFollowsCurrentItem: true
-                focus: false
-                currentIndex: -1
+            delegate: Item {
+                id: posItem
+                width: positionViews.itemWidth
+                height: positionViews.itemWidth
 
-                property int itemWidth: Core.fitItems(positionViews.width, positionViews.height, Math.max(positionModels.count, 1))
-
-                delegate: BoxBoyPosition {
-                    id: posItem
+                BoxBoyPosition {
                     checkState: stateId
                     width: positionViews.itemWidth
                     height: positionViews.itemWidth
-                    scale: mouseArea.containsMouse? 1.1 : 1
-
-                    MouseArea {
-                        id: mouseArea
-                        anchors.fill: parent
-                        onClicked: selectCurrentItem()
-                        enabled: !items.buttonsBlocked
-                        hoverEnabled: true
-                    }
-
-                    function selectCurrentItem() {
-                        positionViews.currentIndex = index
-                        items.selectedPosition = positionModels.get(index).stateId
-                    }
+                    scale: mouseArea.containsMouse?  1.1 : 1
                 }
 
-                highlight: Rectangle {
-                    width: positionViews.itemWidth
-                    height: positionViews.itemWidth
-                    radius: 15
-                    color: "#C0FFFFFF"
-                    border.width: 3
-                    border.color: "#373737"
-                    Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
-                    Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
-                 }
+                MouseArea {
+                    id: mouseArea
+                    anchors.fill: parent
+                    onClicked: selectCurrentItem()
+                    enabled: !items.buttonsBlocked
+                    hoverEnabled: index != positionViews.currentIndex
+                }
+
+                function selectCurrentItem() {
+                    positionViews.currentIndex = index
+                    items.selectedPosition = positionModels.get(index).stateId
+                }
             }
+
+            highlight: Rectangle {
+                width: positionViews.itemWidth
+                height: positionViews.itemWidth
+                radius: GCStyle.halfMargins
+                color: GCStyle.lightTransparentBg
+                border.width: GCStyle.thinBorder
+                border.color: GCStyle.blueBorder
+                Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
+                Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
+            }
+        }
+
+        ListModel {
+            id: positionModels
         }
         
         ErrorRectangle {
             id: errorRectangle
-            radius: 15
-            imageSize: okButton.width
+            radius: GCStyle.halfMargins
+            imageSize: Math.min(okButton.width, width, height)
 
             function releaseControls() { items.buttonsBlocked = false; }
 
             function startAnimation() {
                 errorRectangle.width = items.view.currentItem.width;
                 errorRectangle.height = items.view.currentItem.height;
-                if (answerViews.visible) {
-                    errorRectangle.x = answerViews.x + items.view.currentItem.x;
-                    errorRectangle.y = answerViews.y + items.view.currentItem.y;
-                } else {
-                    errorRectangle.x = mainScreen.x + positionViews.x + items.view.currentItem.x;
-                    errorRectangle.y = mainScreen.y + positionViews.y + items.view.currentItem.y;
-                }
+                var itemPosition = items.view.currentItem.mapToItem(activityBackground, 0, 0)
+                errorRectangle.x = itemPosition.x;
+                errorRectangle.y = itemPosition.y;
                 errorAnimation.restart();
             }
         }
@@ -330,9 +312,9 @@ ActivityBase {
             id: okButton
             anchors.verticalCenter: mainScreen.verticalCenter
             anchors.right: activityBackground.right
-            anchors.margins: activityBackground.baseMargins
+            anchors.margins: GCStyle.baseMargins
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: Math.min(70 * ApplicationInfo.ratio, activityBackground.width * 0.2)
+            width: Math.min(GCStyle.bigButtonHeight, activityBackground.width * 0.2)
             onClicked: Activity.verifyAnswer()
             mouseArea.enabled: !items.buttonsBlocked && items.selectedPosition != -1
         }
@@ -347,7 +329,7 @@ ActivityBase {
             anchors.top: activityBackground.top
             anchors.right: activityBackground.right
             anchors.bottom: undefined
-            anchors.margins: activityBackground.baseMargins
+            anchors.margins: GCStyle.baseMargins
             onStop: Activity.nextSubLevel()
         }
     }
