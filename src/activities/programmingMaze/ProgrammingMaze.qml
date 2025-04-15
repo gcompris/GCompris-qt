@@ -48,8 +48,8 @@ ActivityBase {
 
         property bool insertIntoMain: true
         property alias items: items
-        property int buttonWidth: activityBackground.width / 10
-        property int buttonHeight: activityBackground.height / 15.3
+        property int buttonWidth: layoutArea.width * 0.1
+        property int buttonHeight: layoutArea.height * 0.065
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -135,6 +135,44 @@ ActivityBase {
             }
         }
 
+        Item {
+            id: layoutArea
+            anchors.fill: parent
+            anchors.margins: GCStyle.baseMargins
+
+            Repeater {
+                id: mazeModel
+                anchors.left: layoutArea.left
+                anchors.top: layoutArea.top
+
+                Image {
+                    x: modelData.x * width
+                    y: modelData.y * height
+                    width: layoutArea.width * 0.1
+                    height: layoutArea.height * 0.09
+                    source: Activity.reverseCountUrl + "ice-block.svg"
+                }
+            }
+
+            Image {
+                id: fish
+                width: layoutArea.width / 12
+                sourceSize.width: width
+                source: Activity.reverseCountUrl + "fish-blue.svg"
+            }
+
+            Image {
+                id: player
+                source: "qrc:/gcompris/src/activities/maze/resource/tux_top_south.svg"
+                width: fish.width
+                sourceSize.width: width
+                z: 1
+                property int duration: 1000
+                readonly property real playerCenterX: x + width * 0.5
+                readonly property real playerCenterY: y + height * 0.5
+            }
+        }
+
         function runCodeOrResetTux() {
             if(!Activity.deadEndPoint)
                 runCodeMouseArea.executeCode()
@@ -163,38 +201,21 @@ ActivityBase {
 
         Rectangle {
             id: constraintInstruction
-            anchors.left: parent.left
+            anchors.left: layoutArea.left
             anchors.top: instructionArea.bottom
-            anchors.topMargin: 5 * ApplicationInfo.ratio
-            width: parent.width / 2.3
-            height: parent.height / 8.9
-            radius: 10
+            anchors.topMargin: GCStyle.halfMargins
+            width: layoutArea.width / 2.3
+            height: layoutArea.height / 8.9
+            radius: GCStyle.halfMargins
             z: 3
-            color: "#E8E8E8" //paper white
-            border.width: 3 * ApplicationInfo.ratio
-            border.color: "#87A6DD"  //light blue
-
-            Behavior on opacity { PropertyAnimation { duration: 200 } }
-
-            function changeConstraintInstructionOpacity() {
-                if(opacity)
-                    constraintInstruction.hide()
-                else
-                    constraintInstruction.show()
-            }
-
-            function show() {
-                if(instructionText.text)
-                    opacity = 0.8
-            }
-            function hide() {
-                opacity = 0
-            }
+            color: GCStyle.lightBg
+            border.width: GCStyle.thinnestBorder
+            border.color: GCStyle.blueBorder
 
             GCText {
                 id: instructionText
                 anchors.fill: parent
-                anchors.margins: parent.border.width
+                anchors.margins: GCStyle.halfMargins
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 fontSizeMode: Text.Fit
@@ -206,51 +227,14 @@ ActivityBase {
             }
         }
 
-        MouseArea {
-            anchors.fill: parent
-            onClicked: constraintInstruction.changeConstraintInstructionOpacity()
-        }
-
-        Repeater {
-            id: mazeModel
-
-            anchors.left: parent.left
-            anchors.top: parent.top
-
-            Image {
-                x: modelData.x * width
-                y: modelData.y * height
-                width: activityBackground.width / 10
-                height: (activityBackground.height - activityBackground.height / 10) / 10
-                source: Activity.reverseCountUrl + "ice-block.svg"
-            }
-        }
-
-        Image {
-            id: fish
-            sourceSize.width: activityBackground.width / 12
-            source: Activity.reverseCountUrl + "fish-blue.svg"
-        }
-
-        Image {
-            id: player
-            source: "qrc:/gcompris/src/activities/maze/resource/tux_top_south.svg"
-            width: activityBackground.width / 12
-            sourceSize.width: width
-            z: 1
-            property int duration: 1000
-            readonly property real playerCenterX: x + width / 2
-            readonly property real playerCenterY: y + height / 2
-        }
-
         Rectangle {
             id: activeCodeAreaIndicator
             color: "#1dade4"
             opacity: 0.5
-            radius: 8 * ApplicationInfo.ratio
+            radius: GCStyle.halfMargins
             visible: activity.keyboardNavigationVisible
-            border.width: 2 * ApplicationInfo.ratio
-            border.color: "white"
+            border.width: GCStyle.thinnestBorder
+            border.color: GCStyle.whiteBorder
 
             function changeActiveCodeAreaIndicator(activeArea) {
                 anchors.top = activeArea.top
@@ -260,21 +244,34 @@ ActivityBase {
 
         InstructionArea {
             id: instructionArea
+            width: layoutArea.width * 0.5
+            height: layoutArea.height * 0.17
+            anchors.left: layoutArea.left
+            anchors.top: layoutArea.top
+            anchors.topMargin: layoutArea.height * 0.4
+            buttonWidth: activityBackground.buttonWidth
+            buttonHeight: activityBackground.buttonHeight
         }
 
         HeaderArea {
             id: mainFunctionHeader
+            width: layoutArea.width * 0.4
+            height: layoutArea.height * 0.1
             headerText: qsTr("Main function")
             headerOpacity: activityBackground.insertIntoMain ? 1 : 0.5
             onClicked: activityBackground.insertIntoMain = true
-            anchors.top: parent.top
-            anchors.right: parent.right
+            anchors.top: layoutArea.top
+            anchors.right: layoutArea.right
         }
 
         CodeArea {
             id: mainFunctionCodeArea
+            width: layoutArea.width * 0.4
+            height: layoutArea.height * 0.29
+            buttonWidth: activityBackground.buttonWidth
+            buttonHeight: activityBackground.buttonHeight
             currentModel: mainFunctionModel
-            anchors.right: parent.right
+            anchors.right: layoutArea.right
             anchors.top: mainFunctionHeader.bottom
 
             onTabKeyPressed: {
@@ -292,13 +289,15 @@ ActivityBase {
 
         HeaderArea {
             id: procedureHeader
+            width: mainFunctionHeader.width
+            height: mainFunctionHeader.height
             headerText: items.currentLevelContainsProcedure ? qsTr("Procedure") + " " : qsTr("Loop") + " "
             headerIcon: items.currentLevelContainsProcedure ? "call-procedure" : "execute-loop"
             headerOpacity: !activityBackground.insertIntoMain ? 1 : 0.5
             visible: procedureCodeArea.visible
             onClicked: activityBackground.insertIntoMain = false
             anchors.top: mainFunctionCodeArea.bottom
-            anchors.right: parent.right
+            anchors.right: layoutArea.right
         }
 
         Item {
@@ -326,9 +325,9 @@ ActivityBase {
                 height: activityBackground.buttonHeight
                 anchors.left: parent.left
                 anchors.verticalCenter: parent.verticalCenter
-                border.width: 1.2 * ApplicationInfo.ratio
-                border.color: "grey"
-                radius: decreaseButton.width * 0.1
+                border.width: GCStyle.thinnestBorder
+                border.color: GCStyle.grayBorder
+                radius: GCStyle.thinnestBorder
 
                 GCText {
                     id: decreaseSign
@@ -337,7 +336,7 @@ ActivityBase {
                     verticalAlignment: Text.AlignVCenter
                     fontSizeMode: Text.Fit
                     wrapMode: Text.WordWrap
-                    color: "#373737"
+                    color: GCStyle.darkText
                     text: Activity.LoopEnumValues.MINUS_SIGN
                 }
 
@@ -386,9 +385,9 @@ ActivityBase {
                 height: activityBackground.buttonHeight
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
-                border.width: 1.2 * ApplicationInfo.ratio
-                border.color: "grey"
-                radius: loopCounter.width * 0.1
+                border.width: GCStyle.thinnestBorder
+                border.color: GCStyle.grayBorder
+                radius: GCStyle.tinyMargins
 
                 GCText {
                     id: loopCounterText
@@ -397,7 +396,7 @@ ActivityBase {
                     verticalAlignment: Text.AlignVCenter
                     fontSizeMode: Text.Fit
                     wrapMode: Text.WordWrap
-                    color: "#373737"
+                    color: GCStyle.darkText
                     text: loopCounterSelection.loopNumber
                 }
             }
@@ -408,9 +407,9 @@ ActivityBase {
                 height: activityBackground.buttonHeight
                 anchors.right: parent.right
                 anchors.verticalCenter: parent.verticalCenter
-                border.width: 1.2 * ApplicationInfo.ratio
-                border.color: "grey"
-                radius: increaseButton.width * 0.1
+                border.width: GCStyle.thinnestBorder
+                border.color: GCStyle.grayBorder
+                radius: GCStyle.thinnestBorder
 
                 GCText {
                     id: increaseSign
@@ -419,7 +418,7 @@ ActivityBase {
                     verticalAlignment: Text.AlignVCenter
                     fontSizeMode: Text.Fit
                     wrapMode: Text.WordWrap
-                    color: "#373737"
+                    color: GCStyle.darkText
                     text: Activity.LoopEnumValues.PLUS_SIGN
                 }
 
@@ -465,9 +464,12 @@ ActivityBase {
 
         CodeArea {
             id: procedureCodeArea
-            height: items.currentLevelContainsLoop ? activityBackground.height * 0.29 - loopCounterSelection.height : activityBackground.height * 0.29
+            width: mainFunctionCodeArea.width
+            height: items.currentLevelContainsLoop ? layoutArea.height * 0.29 - loopCounterSelection.height : layoutArea.height * 0.29
+            buttonWidth: activityBackground.buttonWidth
+            buttonHeight: activityBackground.buttonHeight
             currentModel: procedureModel
-            anchors.right: parent.right
+            anchors.right: layoutArea.right
             anchors.top: items.currentLevelContainsLoop ? loopCounterSelection.bottom : procedureHeader.bottom
             visible: items.currentLevelContainsProcedure || items.currentLevelContainsLoop ? true : false
 
@@ -518,8 +520,8 @@ ActivityBase {
                         runCodeClickAnimation.start()
                         Activity.resetCodeAreasIndices()
 
-                        if(constraintInstruction.opacity)
-                            constraintInstruction.hide()
+                        // if(constraintInstruction.opacity)
+                        //     constraintInstruction.hide()
 
                         Activity.runCode()
                     }

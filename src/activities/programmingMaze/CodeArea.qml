@@ -12,16 +12,15 @@
  */
 import QtQuick 2.12
 import core 1.0
+import "../../core"
 
 import "programmingMaze.js" as Activity
 
 GridView {
     id: codeArea
     z: 1
-    width: activityBackground.width * 0.4
-    height: activityBackground.height * 0.29
-    cellWidth: activityBackground.buttonWidth
-    cellHeight: activityBackground.buttonHeight
+    cellWidth: buttonWidth
+    cellHeight: buttonHeight
 
     interactive: false
     model: currentModel
@@ -30,10 +29,10 @@ GridView {
         width: buttonWidth
         height: buttonHeight
         color: "#00ffffff"
-        border.width: 3.5 * ApplicationInfo.ratio
+        border.width: GCStyle.midBorder
         border.color: "#e77935"
         z: 11
-        radius: width / 18
+        radius: GCStyle.tinyMargins
     }
     highlightFollowsCurrentItem: true
     keyNavigationWraps: true
@@ -45,6 +44,9 @@ GridView {
     property int possibleDropRemoveIndex: -1
     property int xCoordinateInPossibleDrop: -1
     property int yCoordinateInPossibleDrop: -1
+
+    required property int buttonWidth
+    required property int buttonHeight
 
     /**
      * Stores the index of the item which is clicked to edit.
@@ -87,8 +89,8 @@ GridView {
 
                 var calculatedX = (initialEditItemIndex % 4) * codeArea.cellWidth
                 var calculatedY = Math.floor(initialEditItemIndex / 4) * codeArea.cellHeight
-                editInstructionIndicator.x = calculatedX + 1.5 * ApplicationInfo.ratio
-                editInstructionIndicator.y = calculatedY + 1.5 * ApplicationInfo.ratio
+                editInstructionIndicator.x = calculatedX + GCStyle.midBorder * 0.5
+                editInstructionIndicator.y = calculatedY + GCStyle.midBorder * 0.5
             }
         }
 
@@ -122,14 +124,14 @@ GridView {
     Item {
         id: dropPositionIndicator
         visible: false
-        height: activityBackground.buttonHeight
-        width: 3 * ApplicationInfo.ratio
+        height: codeArea.buttonHeight
+        width: GCStyle.midBorder
 
         Rectangle {
             visible: parent.visible
             anchors.centerIn: parent
             width: parent.width
-            height: parent.height - 3 * ApplicationInfo.ratio
+            height: parent.height - GCStyle.midBorder
             color: "#e77935"
         }
 
@@ -141,9 +143,9 @@ GridView {
                     dropPositionIndicator {
                         visible: true
                         x: Math.floor(codeArea.xCoordinateInPossibleDrop / codeArea.cellWidth) *
-                            codeArea.cellWidth - 1.5 * ApplicationInfo.ratio
+                            codeArea.cellWidth - GCStyle.midBorder * 0.5
                         y: Math.floor(codeArea.yCoordinateInPossibleDrop / codeArea.cellHeight) *
-                           codeArea.cellHeight + 1.5 * ApplicationInfo.ratio
+                           codeArea.cellHeight + GCStyle.midBorder * 0.5
                     }
                 }
             }
@@ -153,13 +155,13 @@ GridView {
     Rectangle {
         id: editInstructionIndicator
         visible: codeArea.isEditingInstruction && codeArea.count != 0
-        width: activityBackground.buttonWidth - 3 * ApplicationInfo.ratio
-        height: activityBackground.buttonHeight - 3 * ApplicationInfo.ratio
+        width: codeArea.buttonWidth - GCStyle.midBorder
+        height: codeArea.buttonHeight - GCStyle.midBorder
         color: "red"
         border.color: "red"
-        border.width: 1.5 * ApplicationInfo.ratio
+        border.width: GCStyle.midBorder * 0.5
         opacity: 0.2
-        radius: width / 18
+        radius: GCStyle.tinyMargins
     }
 
     MouseArea {
@@ -236,8 +238,8 @@ GridView {
                     else
                         codeArea.initialEditItemIndex = draggedIndex
 
-                    editInstructionIndicator.x = calculatedX + 1.5 * ApplicationInfo.ratio
-                    editInstructionIndicator.y = calculatedY + 1.5 * ApplicationInfo.ratio
+                    editInstructionIndicator.x = calculatedX + GCStyle.midBorder * 0.5
+                    editInstructionIndicator.y = calculatedY + GCStyle.midBorder * 0.5
                 }
                 codeArea.possibleDropIndex = -1
             }
@@ -246,13 +248,13 @@ GridView {
 
     delegate: Item {
         id: itemParent
-        width: activityBackground.buttonWidth
-        height: activityBackground.buttonHeight
+        width: codeArea.buttonWidth
+        height: codeArea.buttonHeight
 
         Item {
             id: item
-            width: activityBackground.buttonWidth
-            height: activityBackground.buttonHeight
+            width: codeArea.buttonWidth
+            height: codeArea.buttonHeight
             state: "inactive"
             opacity: 1
 
@@ -268,11 +270,11 @@ GridView {
                     PropertyChanges {
                         item {
                             parent: codeArea
-                            width: activityBackground.buttonWidth * 0.80
-                            height: activityBackground.buttonHeight * 0.80
+                            width: codeArea.buttonWidth * 0.80
+                            height: codeArea.buttonHeight * 0.80
                             anchors.centerIn: undefined
-                            x: codeAreaMouse.mouseX - item.width / 2
-                            y: codeAreaMouse.mouseY - item.height / 2
+                            x: codeAreaMouse.mouseX - item.width * 0.5
+                            y: codeAreaMouse.mouseY - item.height * 0.5
                         } 
                     }
                 },
@@ -305,20 +307,20 @@ GridView {
             ]
 
             Rectangle {
-                width: parent.width - 3 * ApplicationInfo.ratio
-                height: parent.height - 3 * ApplicationInfo.ratio
-                border.width: 1.2 * ApplicationInfo.ratio
+                width: parent.width - GCStyle.midBorder
+                height: parent.height - GCStyle.midBorder
+                border.width: GCStyle.thinnestBorder
                 border.color: "#2a2a2a"
                 anchors.centerIn: parent
-                radius: width / 18
+                radius: GCStyle.tinyMargins
 
                 Image {
                     id: codeAreaIcon
                     source: Activity.url + name + ".svg"
-                    width: Math.round(parent.width / 1.2)
-                    height: Math.round(parent.height / 1.2)
-                    sourceSize.width: height
-                    sourceSize.height: height
+                    width: Math.round(Math.min(parent.width, parent.height) * 0.8)
+                    height: width
+                    sourceSize.width: width
+                    sourceSize.height: width
                     anchors.centerIn: parent
                     fillMode: Image.PreserveAspectFit
                     mipmap: true

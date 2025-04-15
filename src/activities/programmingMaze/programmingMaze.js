@@ -279,7 +279,6 @@ function initLevel() {
     deadEndPoint = false
     items.isRunCodeEnabled = true
     items.maxNumberOfInstructionsAllowed = mazeBlocks[items.currentLevel].maxNumberOfInstructions
-    items.constraintInstruction.show()
     items.mainFunctionCodeArea.resetEditingValues()
     items.procedureCodeArea.resetEditingValues()
     items.activityBackground.areaWithKeyboardInput = items.instructionArea
