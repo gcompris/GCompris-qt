@@ -44,7 +44,6 @@ ActivityBase {
         // system locale by default
         property string locale: "system"
 
-        property int baseMargins: 10 * ApplicationInfo.ratio
         property bool isHorizontalLayout: activityBackground.width >= activityBackground.height
 
         // Add here the QML items you need to access in javascript
@@ -129,10 +128,8 @@ ActivityBase {
         Item {
             id: mainArea
             anchors.fill: activityBackground
+            anchors.margins: GCStyle.baseMargins
             anchors.bottomMargin: bar.height * 1.2
-            anchors.topMargin: activityBackground.baseMargins
-            anchors.leftMargin: activityBackground.baseMargins
-            anchors.rightMargin: activityBackground.baseMargins
         }
 
         states: [
@@ -141,7 +138,7 @@ ActivityBase {
                 when: activityBackground.isHorizontalLayout
                 PropertyChanges {
                     wordDisplayListBg {
-                        anchors.margins: activityBackground.baseMargins
+                        anchors.margins: GCStyle.baseMargins
                         width: 0.45 * mainArea.width
                     }
                 }
@@ -152,7 +149,7 @@ ActivityBase {
                 }
                 PropertyChanges {
                     wordToFindBoxBg {
-                        anchors.margins: activityBackground.baseMargins
+                        anchors.margins: GCStyle.baseMargins
                         width: mainArea.width * 0.45
                         height: mainArea.height * 0.3
                     }
@@ -181,7 +178,7 @@ ActivityBase {
                 when: !activityBackground.isHorizontalLayout
                 PropertyChanges {
                     wordDisplayListBg {
-                        anchors.margins: activityBackground.baseMargins
+                        anchors.margins: GCStyle.baseMargins
                     }
                 }
                 AnchorChanges {
@@ -194,7 +191,7 @@ ActivityBase {
                 PropertyChanges {
                     wordToFindBoxBg {
                         anchors.margins: 0
-                        width: mainArea.width - 4 * activityBackground.baseMargins
+                        width: mainArea.width - 4 * GCStyle.baseMargins
                         height: mainArea.height * 0.2
                     }
                 }
@@ -224,16 +221,16 @@ ActivityBase {
             color: "#50000000"
             width: wordDisplayListBg.width
             height: wordDisplayListBg.height
-            x: wordDisplayListBg.x + 2 * ApplicationInfo.ratio
-            y: wordDisplayListBg.y + 2 * ApplicationInfo.ratio
+            x: wordDisplayListBg.x + GCStyle.tinyMargins
+            y: wordDisplayListBg.y + GCStyle.tinyMargins
         }
 
         Rectangle {
             id: wordDisplayListBg
-            color: "#F2F2F2"
+            color: GCStyle.lightBg
             anchors.top: mainArea.top
             anchors.left: mainArea.left
-            anchors.margins: activityBackground.baseMargins
+            anchors.margins: GCStyle.baseMargins
             width: 0.45 * mainArea.width
             height: mainArea.height
         }
@@ -242,7 +239,7 @@ ActivityBase {
             id: wordDisplayList
             spacing: 20
             anchors.fill: wordDisplayListBg
-            anchors.margins: activityBackground.baseMargins
+            anchors.margins: GCStyle.baseMargins
             flow: mode == "readingh" ? Flow.LeftToRight : Flow.TopToBottom
             layoutDirection: Core.isLeftToRightLocale(locale) ? Qt.LeftToRight : Qt.RightToLeft
 
@@ -252,7 +249,7 @@ ActivityBase {
                 property int idToHideBecauseOverflow: 0
                 delegate: GCText {
                     text: modelData
-                    color: "#373737"
+                    color: GCStyle.darkText
                     opacity: iAmReady.visible ? false : (index == items.currentIndex ? 1 : 0)
 
                     onOpacityChanged: {
@@ -279,27 +276,27 @@ ActivityBase {
             color: "#50000000"
             width: wordToFindBoxBg.width
             height: wordToFindBoxBg.height
-            x: wordToFindBoxBg.x + 2 * ApplicationInfo.ratio
-            y: wordToFindBoxBg.y + 2 * ApplicationInfo.ratio
-            radius: activityBackground.baseMargins
+            x: wordToFindBoxBg.x + GCStyle.tinyMargins
+            y: wordToFindBoxBg.y + GCStyle.tinyMargins
+            radius: GCStyle.baseMargins
         }
         Rectangle {
             id: wordToFindBoxBg
-            color: "#E8E8E8"
+            color: GCStyle.paperWhite
             anchors.horizontalCenter: buttonsArea.horizontalCenter
             anchors.top: mainArea.top
-            anchors.margins: activityBackground.baseMargins
+            anchors.margins: GCStyle.baseMargins
             width: mainArea.width * 0.45
             height: mainArea.height * 0.3
-            radius: activityBackground.baseMargins
+            radius: GCStyle.baseMargins
         }
         Rectangle {
             color: "transparent"
             anchors.fill: wordToFindBoxBg
-            anchors.margins: activityBackground.baseMargins
-            border.width: 2 * ApplicationInfo.ratio
-            border.color: "#87A6DD"
-            radius: activityBackground.baseMargins
+            anchors.margins: GCStyle.baseMargins
+            border.width: GCStyle.thinBorder
+            border.color: GCStyle.blueBorder
+            radius: GCStyle.halfMargins
         }
 
         GCText {
@@ -308,10 +305,7 @@ ActivityBase {
             color: "#373737"
             horizontalAlignment: Text.AlignHCenter
             anchors.fill: wordToFindBoxBg
-            anchors.topMargin: 1.2 * activityBackground.baseMargins
-            anchors.bottomMargin: 1.2 * activityBackground.baseMargins
-            anchors.leftMargin: 2 * activityBackground.baseMargins
-            anchors.rightMargin: 2 * activityBackground.baseMargins
+            anchors.margins: GCStyle.baseMargins
             fontSizeMode: Text.Fit
         }
 
@@ -319,7 +313,7 @@ ActivityBase {
             id: score
             anchors.right: mainArea.right
             anchors.bottom: mainArea.bottom
-            anchors.margins: activityBackground.baseMargins
+            anchors.margins: GCStyle.baseMargins
         }
 
         Item {
@@ -328,7 +322,7 @@ ActivityBase {
             anchors.left: wordDisplayListBg.right
             anchors.right: activityBackground.right
             anchors.bottom: score.top
-            anchors.margins: 10 * ApplicationInfo.ratio
+            anchors.margins: GCStyle.baseMargins
         }
 
         ReadyButton {
@@ -340,8 +334,8 @@ ActivityBase {
 
         Rectangle {
             color: "#313131"
-            width: answerButtonsFlow.width + activityBackground.baseMargins * 2
-            height: answerButtonsFlow.height + activityBackground.baseMargins * 2
+            width: answerButtonsFlow.width + GCStyle.baseMargins * 2
+            height: answerButtonsFlow.height + GCStyle.baseMargins * 2
             anchors.centerIn: answerButtonsFlow
             visible: !activityBackground.isHorizontalLayout && answerButtonsFlow.visible
         }
