@@ -317,9 +317,10 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: layoutArea.verticalCenter
             z: 100
-            border.width: 2
-            radius: 5
-            color: "#D2D2D2"
+            border.color: GCStyle.darkBorder
+            border.width: GCStyle.thinnestBorder
+            radius: GCStyle.halfMargins
+            color: GCStyle.lightBg
             property bool shown: false
 
             GCText {
@@ -340,7 +341,7 @@ ActivityBase {
                            "can shut down which, in the worst cases, can lead to a major " +
                            "regional blackout.")
                 fontSizeMode: Text.Fit
-                minimumPointSize: 8
+                minimumPointSize: 7
                 wrapMode: Text.WordWrap
             }
 
@@ -422,10 +423,10 @@ ActivityBase {
 
         Rectangle {
             id: produceMeter
-            width: pow.width * 1.1
-            height: pow.height * 1.1
+            width: pow.width + GCStyle.halfMargins
+            height: pow.height + GCStyle.tinyMargins
             border.color: items.produceColorBorder
-            radius: 5
+            radius: GCStyle.tinyMargins
             color: items.produceColor
             anchors {
                 bottom: stepDown.top
@@ -478,10 +479,10 @@ ActivityBase {
 
         Rectangle {
             id: consumeMeter
-            width: stepdown_info.width * 1.1
-            height: stepdown_info.height * 1.1
+            width: stepdown_info.width + GCStyle.halfMargins
+            height: stepdown_info.height + GCStyle.tinyMargins
             border.color: items.consumeColorBorder
-            radius: 5
+            radius: GCStyle.tinyMargins
             color: items.consumeColor
             anchors {
                 bottom: consumerPole.top
@@ -578,10 +579,10 @@ ActivityBase {
 
         Rectangle {
             id: smallConsumeRect
-            width: small_consume.width * 1.1
-            height: small_consume.height * 1.1
+            width: small_consume.width + GCStyle.halfMargins
+            height: small_consume.height + GCStyle.tinyMargins
             border.color: items.consumeColorBorder
-            radius: 5
+            radius: GCStyle.tinyMargins
             color: items.consumeColor
             anchors {
                 top: residentSmallSwitch.bottom
@@ -630,10 +631,10 @@ ActivityBase {
 
         Rectangle {
             id: bigConsumeRect
-            width: bigConsume.width * 1.1
-            height: bigConsume.height * 1.1
+            width: bigConsume.width + GCStyle.halfMargins
+            height: bigConsume.height + GCStyle.tinyMargins
             border.color: items.consumeColorBorder
-            radius : 5
+            radius : GCStyle.tinyMargins
             color: items.consumeColor
             anchors {
                 top: residentBigSwitch.bottom
@@ -714,10 +715,10 @@ ActivityBase {
 
         Rectangle {
             id: tuxMeter
-            width: tuxConsume.width * 1.1
-            height: tuxConsume.height * 1.1
+            width: tuxConsume.width + GCStyle.halfMargins
+            height: tuxConsume.height + GCStyle.tinyMargins
             border.color: items.consumeColorBorder
-            radius : 5
+            radius : GCStyle.tinyMargins
             color: items.consumeColor
             anchors {
                 top: tuxSwitch.bottom

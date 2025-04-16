@@ -401,10 +401,10 @@ Item {
 
     Rectangle {
         z: 100
-        width: stepup_power.width * 1.1
-        height: stepup_power.height * 1.1
+        width: stepup_power.width + GCStyle.halfMargins
+        height: stepup_power.height + GCStyle.tinyMargins
         border.color: items.produceColorBorder
-        radius: 5
+        radius: GCStyle.tinyMargins
         color: items.produceColor
         anchors {
             bottom: stepup.top

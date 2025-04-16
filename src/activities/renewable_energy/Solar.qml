@@ -84,10 +84,10 @@ Item {
     }
 
     Rectangle {
-        width: solar_info.width * 1.1
-        height: solar_info.height * 1.1
+        width: solar_info.width + GCStyle.halfMargins
+        height: solar_info.height + GCStyle.tinyMargins
         border.color: items.produceColorBorder
-        radius: 5
+        radius: GCStyle.tinyMargins
         color: items.produceColor
         anchors {
             left: solarTransformer.horizontalCenter
