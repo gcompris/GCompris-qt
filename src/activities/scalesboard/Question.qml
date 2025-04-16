@@ -1,9 +1,11 @@
 /* GCompris - Question.qml
  *
  * SPDX-FileCopyrightText: 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (layout refactoring)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -12,44 +14,32 @@ import core 1.0
 
 import "../../core"
 
-Item {
+Rectangle {
     id: question
+    width: parent.width
+    height: parent.height
+    color: GCStyle.lightBg
+    border.color: GCStyle.blueBorder
+    border.width: GCStyle.thinBorder
+    radius: GCStyle.halfMargins
 
     property string text
     property string answer
     property string userEntry
 
-    Rectangle {
-        id: questionBg
-        width: parent.width
-        height: parent.height
-        border.color: "black"
-        border.width: 2
-        radius: 10 * ApplicationInfo.ratio
-
-        gradient: Gradient {
-            GradientStop { position: 0.0; color: "#F0FFFFFF" }
-            GradientStop { position: 0.9; color: "#F0F0F0F0" }
-            GradientStop { position: 1.0; color: "#F0CECECE" }
-        }
-
-        Behavior on opacity { NumberAnimation { duration: 100 } }
-    }
+    Behavior on opacity { NumberAnimation { duration: 100 } }
 
     GCText {
         id: questionText
-        color: "black"
-        font.pointSize: NaN  // need to clear font.pointSize explicitly
+        color: GCStyle.darkText
+        anchors.centerIn: parent
+        width: parent.width - GCStyle.baseMargins * 2
+        height: parent.height - GCStyle.baseMargins
         fontSizeMode: Text.Fit
-        minimumPixelSize: 10
-        font.pixelSize: parent.width * 0.10
-        width: parent.width
-        height: parent.height
+        minimumPixelSize: 8
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         wrapMode: TextEdit.WordWrap
         text: question.text != "" ? question.text.arg(question.userEntry) : ""
-        Behavior on opacity { NumberAnimation { duration: 100 } }
-
     }
 }

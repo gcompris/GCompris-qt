@@ -15,7 +15,7 @@ import "scalesboard.js" as Activity
 
 Rectangle {
     id: masseArea
-    height: itemHeight
+    height: itemWidth * 1.37
     color: dropArea.containsDrag ? "#33333333" : "#00000000"
     border.width: 2
     border.color: dropArea.containsDrag ? "#33666666" : "#00000000"
@@ -23,8 +23,7 @@ Rectangle {
     property bool dropEnabled: true
     property bool dropEnabledForThisLevel: true
     property int nbColumns
-    property int itemWidth: (width - masseFlow.spacing * nbColumns) / nbColumns
-    property int itemHeight: itemWidth * 1.2
+    property int itemWidth: (width - masseFlow.spacing * (nbColumns - 1)) / nbColumns
 
     property Item masseAreaCenter
     property Item masseAreaLeft
@@ -105,11 +104,8 @@ Rectangle {
 
     Flow {
         id: masseFlow
-        anchors.topMargin: 4
-        anchors.bottomMargin: 4
         anchors.fill: parent
-        spacing: 10
-        flow: Flow.TopToBottom
+        spacing: GCStyle.halfMargins
 
         add: Transition {
             NumberAnimation {
@@ -131,8 +127,7 @@ Rectangle {
             model: masseModel
             Image {
                 source: Activity.url + img
-                sourceSize.height: masseArea.itemHeight
-                height: masseArea.itemHeight
+                sourceSize.width: masseArea.itemWidth
                 opacity: model.opacity
 
                 property string img: model.img
@@ -147,8 +142,8 @@ Rectangle {
                 property Item currentMasseArea: masseArea
 
                 Drag.active: dragArea.drag.active
-                Drag.hotSpot.x: width / 2
-                Drag.hotSpot.y: height / 2
+                Drag.hotSpot.x: width * 0.5
+                Drag.hotSpot.y: height * 0.5
 
                 function initDrag() {
                     originX = x
@@ -179,7 +174,6 @@ Rectangle {
                     enabled: model.dragEnabled && !items.buttonsBlocked
 
                     onPressed: {
-                        message.text = ""
                         if(masseModel.contains(parent.masseIndex)) {
                             parent.initDrag()
                         }
@@ -236,14 +230,15 @@ Rectangle {
                 GCText {
                     id: text
                     anchors.fill: parent
-                    text: model.text.replace(" ", "\n")
-                    color: "white"
+                    anchors.topMargin: parent.height * 0.5
+                    text: model.text
+                    color: GCStyle.whiteText
                     fontSizeMode: Text.Fit
-                    minimumPointSize: 10
+                    minimumPointSize: 8
                     fontSize: largeSize
                     font.bold : true
                     style: Text.Outline
-                    styleColor: "black"
+                    styleColor: GCStyle.darkText
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                 }

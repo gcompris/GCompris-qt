@@ -1,10 +1,12 @@
 /* GCompris - Scalesboard.qml
  *
  * SPDX-FileCopyrightText: 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   miguel DE IZARRA <miguel2i@free.fr> (GTK+ version)
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (layout refactoring)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -22,13 +24,10 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Image {
+    pageComponent: Rectangle {
         id: activityBackground
         anchors.fill: parent
-        source: Activity.url + "background.svg"
-        sourceSize.width: width
-        sourceSize.height: height
-        fillMode: Image.PreserveAspectCrop
+        color: "#DAE7A7"
         signal start
         signal stop
 
@@ -71,7 +70,6 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         property bool isHorizontal: activityBackground.width > activityBackground.height
-        property bool scoreAtBottom: bar.width * 6 + okButton.width * 1.5 + score.width < activityBackground.width
 
         GCSoundEffect {
             id: goodAnswerSound
@@ -88,13 +86,76 @@ ActivityBase {
             source: Activity.url + "metal_hit.wav"
         }
 
+        Rectangle {
+            id: floor
+            anchors.bottom: parent.bottom
+            anchors.left: parent.left
+            anchors.right: parent.right
+            height: bar.height * 0.5
+            color: "#947f7f"
+        }
+
+        Rectangle {
+            id: tableFront
+            anchors.bottom: floor.top
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.top: scaleBoard.bottom
+            anchors.topMargin: GCStyle.baseMargins * 2
+            color: "#64b2a2"
+        }
+
+        Rectangle {
+            id: tableTopFront
+            anchors.top: scaleBoard.bottom
+            anchors.topMargin: GCStyle.baseMargins
+            anchors.bottom: tableFront.top
+            anchors.left: parent.left
+            anchors.right: parent.right
+            color: "#8a948c"
+        }
+
+        Rectangle {
+            id: tableTop
+            height: scaleBoard.height * 0.25 + GCStyle.baseMargins
+            anchors.bottom: tableTopFront.top
+            anchors.left: parent.left
+            anchors.right: parent.right
+            color: "#bac4ba"
+        }
+
+        Image {
+            id: tomatoes
+            source: Activity.url + "tomatoes.svg"
+            anchors.right: scaleBoard.left
+            anchors.bottom: scaleBoard.bottom
+            sourceSize.height: scaleBoard.height * 0.6
+        }
+
+        Image {
+            id: leeks
+            source: Activity.url + "leeks.svg"
+            anchors.left: scaleBoard.right
+            anchors.bottom: scaleBoard.bottom
+            sourceSize.height: tomatoes.sourceSize.height
+        }
+
+        Item {
+            id: layoutArea
+            anchors.top: instructionPanel.bottom
+            anchors.bottom: okButton.top
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.margins: numpad.columnWidth
+            anchors.topMargin: GCStyle.baseMargins * 3
+            anchors.bottomMargin: GCStyle.baseMargins
+        }
+
         Image {
             id: scaleBoard
             source: Activity.url + "scale.svg"
-            sourceSize.width: isHorizontal ? Math.min(parent.width - okButton.height * 2,
-                                                      (parent.height - okButton.height * 2) * 2) : parent.width
-            anchors.centerIn: parent
-            anchors.verticalCenterOffset: scoreAtBottom ? 0 : okButton.height * -0.5
+            sourceSize.width: Math.min(layoutArea.width, layoutArea.height * 2)
+            anchors.centerIn: layoutArea
         }
 
         Image {
@@ -110,7 +171,7 @@ ActivityBase {
                 verticalCenterOffset: - parent.paintedHeight * 0.15
             }
             transform: Rotation {
-                origin.x: needle.width / 2
+                origin.x: needle.width * 0.5
                 origin.y: needle.height * 0.9
                 angle: needle.angle
             }
@@ -218,35 +279,37 @@ ActivityBase {
         MasseArea {
             id: masseAreaCenter
             parent: scaleBoard
-            x: parent.width * 0.05
-            y: parent.height * 0.84 - height
-            width: parent.width
+            x: parent.width * 0.08
+            y: parent.height * 0.86 - height
+            width: parent.width * 0.84
             masseAreaCenter: masseAreaCenter
             masseAreaLeft: masseAreaLeft
             masseAreaRight: masseAreaRight
             nbColumns: masseModel.count
         }
 
-        Message {
-            id: message
-            anchors {
-                top: parent.top
-                topMargin: 10
-                right: parent.right
-                rightMargin: 10
-                left: parent.left
-                leftMargin: 10
-            }
+        GCTextPanel {
+            id: instructionPanel
+            panelWidth: parent.width - 2 * numpad.columnWidth
+            panelHeight: Math.min(50 * ApplicationInfo.ratio, activityBackground.height * 0.2)
+            fixedHeight: true
+            hideIfEmpty: true
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: parent.top
+            anchors.topMargin: GCStyle.baseMargins
+            color: GCStyle.lightTransparentBg
+            border.width: 0
+            textItem.color: GCStyle.darkText
         }
 
         Question {
             id: question
             parent: scaleBoard
             anchors.horizontalCenter: scaleBoard.horizontalCenter
-            anchors.top: masseAreaCenter.top
-            anchors.bottom: masseAreaCenter.bottom
+            anchors.bottom: scaleBoard.bottom
+            width: scaleBoard.width
+            height: scaleBoard.height * 0.5
             z: 1000
-            width: isHorizontal ? parent.width * 0.5 : activityBackground.width - 160 * ApplicationInfo.ratio
             answer: items.giftWeight
             visible: (items.question.text && activityBackground.scaleHeight === 0) ? true : false
         }
@@ -256,7 +319,7 @@ ActivityBase {
             z: 1010
             parent: scaleBoard
             height: parent.height * 0.5
-            radius: 10 * ApplicationInfo.ratio
+            radius: GCStyle.baseMargins
             imageSize: okButton.width
             function releaseControls() {
                 items.buttonsBlocked = false;
@@ -312,7 +375,10 @@ ActivityBase {
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: 60 * ApplicationInfo.ratio
+            width: GCStyle.bigButtonHeight
+            anchors.left: parent.horizontalCenter
+            anchors.bottom: bar.top
+            anchors.bottomMargin: bar.height * 0.5
             enabled: !items.buttonsBlocked && (items.question.text ?  items.question.userEntry : masseAreaLeft.weight != 0)
             ParticleSystemStarLoader {
                 id: okButtonParticles
@@ -336,73 +402,25 @@ ActivityBase {
             onActivityConfigClicked: {
                 displayDialog(dialogActivityConfig)
             }
-            onLevelChanged: message.text = items.levels[bar.level - 1].message ? items.levels[bar.level - 1].message : ""
+            onLevelChanged: instructionPanel.textItem.text = items.levels[bar.level - 1].message ? items.levels[bar.level - 1].message : ""
         }
 
         Score {
             id: score
+            anchors.bottom: undefined
+            anchors.top: undefined
+            anchors.right: okButton.left
+            anchors.rightMargin: GCStyle.baseMargins
+            anchors.verticalCenter: okButton.verticalCenter
             onStop: { Activity.nextSubLevel(); }
         }
-
-        states: [
-            State {
-                name: "horizontalLayout"; when: activityBackground.scoreAtBottom
-                AnchorChanges {
-                    target: score
-                    anchors.top: undefined
-                    anchors.bottom: undefined
-                    anchors.right: okButton.left
-                    anchors.verticalCenter: okButton.verticalCenter
-                }
-                AnchorChanges {
-                    target: okButton
-                    anchors.horizontalCenter: undefined
-                    anchors.verticalCenter: bar.verticalCenter
-                    anchors.bottom: undefined
-                    anchors.right: activityBackground.right
-                    anchors.left: undefined
-                }
-                PropertyChanges {
-                    okButton {
-                        anchors.bottomMargin: 0
-                        anchors.rightMargin: okButton.width * 0.5
-                        anchors.verticalCenterOffset: -10
-                    }
-                }
-            },
-            State {
-                name: "verticalLayout"; when: !activityBackground.scoreAtBottom
-                AnchorChanges {
-                    target: score
-                    anchors.top: undefined
-                    anchors.bottom: undefined
-                    anchors.right: okButton.left
-                    anchors.verticalCenter: okButton.verticalCenter
-                }
-                AnchorChanges {
-                    target: okButton
-                    anchors.horizontalCenter: undefined
-                    anchors.verticalCenter: undefined
-                    anchors.bottom: bar.top
-                    anchors.right: undefined
-                    anchors.left: activityBackground.horizontalCenter
-                }
-                PropertyChanges {
-                    okButton {
-                        anchors.bottomMargin: okButton.height * 0.5
-                        anchors.rightMargin: 0
-                        anchors.verticalCenterOffset: 0
-                    }
-                }
-            }
-        ]
 
         NumPad {
             id: numpad
             onAnswerChanged: question.userEntry = answer
             maxDigit: ('' + items.giftWeight).length + 1
             opacity: question.visible ? 1 : 0
-            columnWidth: 60 * ApplicationInfo.ratio
+            columnWidth: 50 * ApplicationInfo.ratio
             enableInput: !items.buttonsBlocked
         }
 

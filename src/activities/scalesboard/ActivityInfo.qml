@@ -7,7 +7,7 @@
 import core 1.0
 
 ActivityInfo {
-  name: "scalesboard/ScaleNumber.qml"
+  name: "scalesboard/Scalesboard.qml"
   difficulty: 2
   icon: "scalesboard/scalesboard.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
