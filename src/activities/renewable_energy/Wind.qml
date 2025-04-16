@@ -130,10 +130,10 @@ Item {
     }
 
     Rectangle {
-        width: windvoltage.width * 1.1
-        height: windvoltage.height * 1.1
+        width: windvoltage.width + GCStyle.halfMargins
+        height: windvoltage.height + GCStyle.tinyMargins
         border.color: items.produceColorBorder
-        radius: 5
+        radius: GCStyle.tinyMargins
         color: items.produceColor
         anchors {
             bottom: windTransformer.verticalCenter
