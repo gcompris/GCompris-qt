@@ -21550,7 +21550,7 @@ msgstr ""
 "मुख्य/प्रक्रिया/लूप् क्षेत्रे निर्देशं परिवर्तयितुं मुख्य/प्रक्रिया/लूप् क्षेत्रात् तत् चिनोतु, ततः "
 "निर्देशक्षेत्रे स्विच् कृत्वा नूतनं निर्देशं चित्वा Space नुदतु ।"
 
-#: activities/programmingMaze/InstructionArea.qml:27
+#: activities/programmingMaze/InstructionArea.qml:22
 msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "निर्देशान् चिनोतु"
@@ -21660,23 +21660,23 @@ msgstr ""
 "-स्वकोड् योजयितुं <b>Loop क्षेत्रस्य</b> <b>Main Function क्षेत्रस्य</b> च मध्ये <b>स्विच् "
 "कर्तुं</b> <b>Loop</b> अथवा <b>Main Function</b> लेबल् इत्यत्र क्लिक् कुर्वन्तु ।"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:203
+#: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "%1 इत्यस्मात् न्यूनेन निर्देशेषु मत्स्यं प्राप्नुवन्तु ।"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:267
+#: activities/programmingMaze/ProgrammingMaze.qml:260
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "मुख्य कार्य"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "प्रक्रिया"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "परिक्रम"
@@ -21797,7 +21797,7 @@ msgstr ""
 "फलकस्य उपरि एकः शब्दः दर्शितः अस्ति। क्षैतिजरूपेण प्रदर्शिता शब्दानां सूची दृश्यते, अन्तर्धानं "
 "च भविष्यति । दत्तः शब्दः सूचीयां आविर्भूतः वा ?"
 
-#: activities/readingh/Readingh.qml:307
+#: activities/readingh/Readingh.qml:304
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -21807,12 +21807,12 @@ msgstr ""
 "<font color=\"#373737\">शब्दः अस्ति वा इति पश्यन्तु<br/></font> <b><font color="
 "\"#315AAA\">%1</font></b><br/> <font color=\"#373737\">प्रदर्शितं भवति</font>"
 
-#: activities/readingh/Readingh.qml:369
+#: activities/readingh/Readingh.qml:363
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "आम्, अहं दृष्टवान्!"
 
-#: activities/readingh/Readingh.qml:390
+#: activities/readingh/Readingh.qml:384
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "न, तत्र नासीत्!"

@@ -21662,7 +21662,7 @@ msgstr ""
 "המרכזי/הליכים/לולאה, להחליף לאזור ההוראות, לבחור את ההוראה החדשה וללחוץ על "
 "רווח."
 
-#: activities/programmingMaze/InstructionArea.qml:27
+#: activities/programmingMaze/InstructionArea.qml:22
 msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "לבחור את הפקודות"
@@ -21770,23 +21770,23 @@ msgstr ""
 "-כדי <b>להחליף</b> בין  <b>אזור הלולאה</b> ו <b>אזור פעולות עיקריות</b>כדי "
 "להוסיף את הקוד שלך, ללחוץ על <b>לולאה</b> או<b>אזור פעולות עיקריות</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:203
+#: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "להגיע לדג בפחות מ %1 פקודות."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:267
+#: activities/programmingMaze/ProgrammingMaze.qml:260
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "פעולה עיקרית"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "הליך"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "לולאה"
@@ -21907,7 +21907,7 @@ msgstr ""
 "מילה מוצגת על הלוח. רשימת מילים, מוצגת אנכית, תופיע ותעלם. האם המילה הנתונה "
 "הופיעה ברשימה?"
 
-#: activities/readingh/Readingh.qml:307
+#: activities/readingh/Readingh.qml:304
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -21917,12 +21917,12 @@ msgstr ""
 "<font color=\"#373737\">האם המילה<br/></font><b><font color=\"#315AAA\">%1</"
 "font></b><br/><font color=\"#373737\">מופיעה</font>"
 
-#: activities/readingh/Readingh.qml:369
+#: activities/readingh/Readingh.qml:363
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "כן, ראיתי אותה!"
 
-#: activities/readingh/Readingh.qml:390
+#: activities/readingh/Readingh.qml:384
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "לא, היא לא הייתה שם!"

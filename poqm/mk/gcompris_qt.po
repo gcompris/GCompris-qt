@@ -23074,7 +23074,7 @@ msgstr ""
 "од областа за главна/процедура/јамка, потоа префрлете се во областа со "
 "инструкции, изберете ја новата инструкција и притиснете Space."
 
-#: activities/programmingMaze/InstructionArea.qml:27
+#: activities/programmingMaze/InstructionArea.qml:22
 msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "Изберете ги инструкциите"
@@ -23191,23 +23191,23 @@ msgstr ""
 "b> за да го додадете вашиот код, кликнете на <b>Јамка</b> или на <b>Главна "
 "функција</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:203
+#: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Стигнете до рибата со помалку од %1 инструкции."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:267
+#: activities/programmingMaze/ProgrammingMaze.qml:260
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Основна област за код"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Процедура"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Јамка"
@@ -23338,7 +23338,7 @@ msgstr ""
 "Еден збор е прикажан на таблата. Листа на зборови, прикажани хоризонтално, "
 "ќе се појават и исчезнат. Дали дадениот збор постои во листата?"
 
-#: activities/readingh/Readingh.qml:307
+#: activities/readingh/Readingh.qml:304
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -23348,12 +23348,12 @@ msgstr ""
 "<font color=\"#373737\">Проверете дали зборот<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">е прикажан</font>"
 
-#: activities/readingh/Readingh.qml:369
+#: activities/readingh/Readingh.qml:363
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Да, го видов!"
 
-#: activities/readingh/Readingh.qml:390
+#: activities/readingh/Readingh.qml:384
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Не, не беше таму!"

@@ -21925,7 +21925,7 @@ msgstr ""
 "a fő/eljárások/hurok területről, válasszunk területet és válasszuk ki az új "
 "utasítást és nyomjuk meg a Szóköz gomboz!"
 
-#: activities/programmingMaze/InstructionArea.qml:27
+#: activities/programmingMaze/InstructionArea.qml:22
 msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "Válaszd ki a parancsot"
@@ -22035,23 +22035,23 @@ msgstr ""
 "-Ha a <b>hurok</b> ablak <b>és</b> a <b>Főablak között</b> akarsz váltani "
 "<b>kattints a hurok</b> vagy a<b>Főablak gombra</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:203
+#: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Érd el a halat kevesebb mint %1 utasításból!"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:267
+#: activities/programmingMaze/ProgrammingMaze.qml:260
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Programablak"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Eljárások"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Hurok"
@@ -22176,7 +22176,7 @@ msgstr ""
 "A tábla jobb felső részén megjelenik egy szó. Bal oldalon szavak jelennek "
 "meg, majd tűnnek el. Szerepelt a listában az adott szó?"
 
-#: activities/readingh/Readingh.qml:307
+#: activities/readingh/Readingh.qml:304
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22186,12 +22186,12 @@ msgstr ""
 "<font color=\"#373737\">Ellenőrizd ha ez a szó<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">olvasható</font>"
 
-#: activities/readingh/Readingh.qml:369
+#: activities/readingh/Readingh.qml:363
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Igen, láttam!"
 
-#: activities/readingh/Readingh.qml:390
+#: activities/readingh/Readingh.qml:384
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Nem, nem volt ott!"

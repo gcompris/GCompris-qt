@@ -24501,7 +24501,7 @@ msgid ""
 "instruction and press Space."
 msgstr ""
 
-#: activities/programmingMaze/InstructionArea.qml:27
+#: activities/programmingMaze/InstructionArea.qml:22
 #, fuzzy
 #| msgctxt "Lang|"
 #| msgid "construction"
@@ -24607,13 +24607,13 @@ msgid ""
 "label."
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:203
+#: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:267
+#: activities/programmingMaze/ProgrammingMaze.qml:260
 #, fuzzy
 #| msgctxt "Lang|"
 #| msgid "action"
@@ -24621,12 +24621,12 @@ msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "कार्य"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr ""
@@ -24762,7 +24762,7 @@ msgstr ""
 "एक शब्द बोर्ड के शीर्ष दाईं ओर दिखाया गया है। शब्दों की एक सूची बाएं ओर दिखाई देगी और "
 "गायब हो जाएगी।  क्या दिए गए शब्द सूची से संबंधित हैं?"
 
-#: activities/readingh/Readingh.qml:307
+#: activities/readingh/Readingh.qml:304
 #, fuzzy, qt-format
 #| msgctxt "Readingh|"
 #| msgid ""
@@ -24776,12 +24776,12 @@ msgstr ""
 "<Font color = \"# 373737\">ये जांच करें की क्या<br/> <b> <font color=\"#315AAA\">"
 "%1</font></b><br/><font color=\"# 373737 \"> शब्द प्रदर्शित किया जा रहा है।"
 
-#: activities/readingh/Readingh.qml:369
+#: activities/readingh/Readingh.qml:363
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "हाँ , मैंने इसे देखा!"
 
-#: activities/readingh/Readingh.qml:390
+#: activities/readingh/Readingh.qml:384
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "नहीं, यह वहाँ नहीं था!"

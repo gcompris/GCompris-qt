@@ -22444,7 +22444,7 @@ msgstr ""
 "d'instructions, choisis la nouvelle instruction et enfin appuies sur "
 "« Espace »."
 
-#: activities/programmingMaze/InstructionArea.qml:27
+#: activities/programmingMaze/InstructionArea.qml:22
 msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "Choisis les instructions"
@@ -22558,23 +22558,23 @@ msgstr ""
 "principale</b> pour ajouter votre code, clique sur l'étiquette <b>Boucle</b> "
 "ou <b>Code principal</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:203
+#: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Atteint le poisson en moins de %1 instructions."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:267
+#: activities/programmingMaze/ProgrammingMaze.qml:260
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Code principal"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Fonction"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Boucle"
@@ -22703,7 +22703,7 @@ msgstr ""
 "horizontalement apparaîtra et disparaîtra. Est-ce que le mot appartient à "
 "cette liste ?"
 
-#: activities/readingh/Readingh.qml:307
+#: activities/readingh/Readingh.qml:304
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22713,12 +22713,12 @@ msgstr ""
 "<font color=\"#373737\">Vérifie si le mot<br/></font><b><font color=\"#315AAA"
 "\">%1</font></b><br/><font color=\"#373737\">est affiché</font>"
 
-#: activities/readingh/Readingh.qml:369
+#: activities/readingh/Readingh.qml:363
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Oui, je l'ai vu !"
 
-#: activities/readingh/Readingh.qml:390
+#: activities/readingh/Readingh.qml:384
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Non, il n'y était pas !"

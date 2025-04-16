@@ -22255,7 +22255,7 @@ msgstr ""
 "bucle, selecciónala en el área principal, del procedimiento o del bucle, "
 "cambia al área de instrucciones, escoge la nueva instrucción y pulsa Espacio."
 
-#: activities/programmingMaze/InstructionArea.qml:27
+#: activities/programmingMaze/InstructionArea.qml:22
 msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "Escoge las instrucciones"
@@ -22370,23 +22370,23 @@ msgstr ""
 "función principal</b> para añadir código, pulsa en una de las etiquetas "
 "<b>Bucle</b> o <b>Función principal</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:203
+#: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Alcanza el pez con menos de %1 instrucciones."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:267
+#: activities/programmingMaze/ProgrammingMaze.qml:260
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Función principal"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Procedimiento"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Bucle"
@@ -22512,7 +22512,7 @@ msgstr ""
 "horizontalmente, aparecerá y desaparecerá. ¿Aparece la palabra mostrada en "
 "la lista?"
 
-#: activities/readingh/Readingh.qml:307
+#: activities/readingh/Readingh.qml:304
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22522,12 +22522,12 @@ msgstr ""
 "<font color=\"#373737\">Comprueba si la palabra<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">se muestra</font>"
 
-#: activities/readingh/Readingh.qml:369
+#: activities/readingh/Readingh.qml:363
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Sí, ¡la he visto!"
 
-#: activities/readingh/Readingh.qml:390
+#: activities/readingh/Readingh.qml:384
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "No, ¡no estaba ahí!"

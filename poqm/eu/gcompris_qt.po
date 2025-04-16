@@ -22093,7 +22093,7 @@ msgstr ""
 "dagoen eremuan, ondoren aldatu agindu eremura, hautatu agindu berria eta "
 "sakatu zuriunea."
 
-#: activities/programmingMaze/InstructionArea.qml:27
+#: activities/programmingMaze/InstructionArea.qml:22
 msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "Aukeratu aginduak"
@@ -22207,23 +22207,23 @@ msgstr ""
 "eremua</b>ren artean <b>aldatzeko</b>, egin klik <b>Begizta</b> edo "
 "<b>Funtzio nagusia</b> etiketetan."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:203
+#: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Eskuratu arraina %1 agindu baino gutxiago erabiliz."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:267
+#: activities/programmingMaze/ProgrammingMaze.qml:260
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Funtzio nagusia"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Prozedura"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Begizta"
@@ -22349,7 +22349,7 @@ msgstr ""
 "Taulan hitz bat agertzen da. Horizontalean azaldutako hitzen zerrenda bat "
 "agertu eta desagertuko da. Emandako hitza zerrendan dago?"
 
-#: activities/readingh/Readingh.qml:307
+#: activities/readingh/Readingh.qml:304
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22359,12 +22359,12 @@ msgstr ""
 "<font color=\"#373737\">Egiaztatu<br/></font><b><font color=\"#315AAA\">%1</"
 "font></b><br/><font color=\"#373737\">hitza azaltzen den</font>"
 
-#: activities/readingh/Readingh.qml:369
+#: activities/readingh/Readingh.qml:363
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Bai, ikusi dut!"
 
-#: activities/readingh/Readingh.qml:390
+#: activities/readingh/Readingh.qml:384
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Ez, hor ez zegoen!"

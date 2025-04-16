@@ -22259,7 +22259,7 @@ msgstr ""
 "selecteaz-o din zona de instrucțiuni, apoi comută la zona de instrucțiuni, "
 "alege noua instrucțiune și apasă Spațiu."
 
-#: activities/programmingMaze/InstructionArea.qml:27
+#: activities/programmingMaze/InstructionArea.qml:22
 msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "Alege instrucțiunile"
@@ -22375,23 +22375,23 @@ msgstr ""
 "principale</b>, pentru a-ți adăuga codul, fă clic pe <b>Buclă</b> sau pe "
 "<b>Funcția Principală</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:203
+#: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Atinge peștele cu mai puțin de %1 instrucțiuni."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:267
+#: activities/programmingMaze/ProgrammingMaze.qml:260
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Funcția principală"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Procedura"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Bucla"
@@ -22519,7 +22519,7 @@ msgstr ""
 "Se dă un cuvânt pe tablă. O listă de cuvinte, afișată orizontal, va apărea "
 "și apoi va dispărea. Era cuvântul respectiv în listă?"
 
-#: activities/readingh/Readingh.qml:307
+#: activities/readingh/Readingh.qml:304
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22529,12 +22529,12 @@ msgstr ""
 "<font color=\"#373737\">Verifică dacă cuvântul<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">este afișat</font>"
 
-#: activities/readingh/Readingh.qml:369
+#: activities/readingh/Readingh.qml:363
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Da, l-am văzut!"
 
-#: activities/readingh/Readingh.qml:390
+#: activities/readingh/Readingh.qml:384
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Nu, nu era acolo!"

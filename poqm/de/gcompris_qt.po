@@ -22987,7 +22987,7 @@ msgstr ""
 "aus dem Haupt-/Prozedur-/Schleifenbereich, dann wechsle zum "
 "Anweisungsbereich, wähle die 'Neue Anweisung' und drücke die Leertaste."
 
-#: activities/programmingMaze/InstructionArea.qml:27
+#: activities/programmingMaze/InstructionArea.qml:22
 msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "Wähle die Anweisungen"
@@ -23102,23 +23102,23 @@ msgstr ""
 "der <b>Hauptfunktion</b> um deinen Code hinzuzufügen, klicke auf die "
 "<b>Schleife</b> oder <b>Hauptfunktion</b>Schaltfläche."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:203
+#: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Erreiche den Fisch mit weniger als %1 Anweisungen."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:267
+#: activities/programmingMaze/ProgrammingMaze.qml:260
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Hauptfunktion"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Anweisung"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Schleife"
@@ -23249,7 +23249,7 @@ msgstr ""
 "Ein Wort wird angezeigt. Eine Liste von Wörtern wird horizontal erscheinen "
 "und wieder verschwinden. War das angezeigte Wort in der Liste?"
 
-#: activities/readingh/Readingh.qml:307
+#: activities/readingh/Readingh.qml:304
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -23259,12 +23259,12 @@ msgstr ""
 "<font color=\"#373737\">Überprüfe, ob das Wort<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">angezeigt wird</font>"
 
-#: activities/readingh/Readingh.qml:369
+#: activities/readingh/Readingh.qml:363
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Ja, ich habe es gesehen."
 
-#: activities/readingh/Readingh.qml:390
+#: activities/readingh/Readingh.qml:384
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Nein, es wurde nicht angezeigt."

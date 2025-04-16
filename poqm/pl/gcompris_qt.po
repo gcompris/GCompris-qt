@@ -22057,7 +22057,7 @@ msgstr ""
 "ją z obszaru głównego/proceduralnego/pętli, następnie przejść do obszaru "
 "instrukcji, wybrać nową instrukcję i nacisnąć spację."
 
-#: activities/programmingMaze/InstructionArea.qml:27
+#: activities/programmingMaze/InstructionArea.qml:22
 msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "Wybierz instrukcje"
@@ -22172,23 +22172,23 @@ msgstr ""
 "głównej funkcji</b> w celu dodania twojego kodu, naciśnij na etykietę "
 "<b>pętli</b> lub <b>głównej funkcji</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:203
+#: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Dotrzyj do ryby w mniej niż %1 instrukcji."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:267
+#: activities/programmingMaze/ProgrammingMaze.qml:260
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Funkcja główna"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Procedura"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Pętla"
@@ -22314,7 +22314,7 @@ msgstr ""
 "Słowo jest pokazywane na planszy. Lista słów, wyświetlana w poziomie, będzie "
 "się pojawiać i znikać. Pytanie czy słowo pojawiło się na liście?"
 
-#: activities/readingh/Readingh.qml:307
+#: activities/readingh/Readingh.qml:304
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22324,12 +22324,12 @@ msgstr ""
 "<font color=\"#373737\">Sprawdź czy słowo<br/></font><b><font color=\"#315AAA"
 "\">%1</font></b><br/><font color=\"#373737\">jest wyświetlane</font>"
 
-#: activities/readingh/Readingh.qml:369
+#: activities/readingh/Readingh.qml:363
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Tak widziałem je!"
 
-#: activities/readingh/Readingh.qml:390
+#: activities/readingh/Readingh.qml:384
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Nie nie było go tam!"

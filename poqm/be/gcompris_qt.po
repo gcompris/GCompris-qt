@@ -21959,7 +21959,7 @@ msgstr ""
 "зоне праграмы/працэдуры/цыкла, а затым пераключыцеся ў зону інструкцый, "
 "выберыце новую інструкцыю і націсніце Прагал."
 
-#: activities/programmingMaze/InstructionArea.qml:27
+#: activities/programmingMaze/InstructionArea.qml:22
 msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "Выберыце інструкцыі"
@@ -22071,23 +22071,23 @@ msgstr ""
 "-Для <b>пераключэння</b> між <b>зонай цыклу</b> і <b>зонай праграмы</b> каб "
 "дадаць код, пстрыкніце па загалоўку <b>Цыкл</b> ці <b>Праграма</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:203
+#: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Дасягніце рыбкі меней за %1 інструкцый."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:267
+#: activities/programmingMaze/ProgrammingMaze.qml:260
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Праграма"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Працэдура"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr ""
@@ -22212,7 +22212,7 @@ msgstr ""
 "На дошцы паказваецца слова. Па гарызанталі будзе паказвацца і знікаць спіс "
 "словаў. Ці маецца дадзенае слова сярод словаў у спісе?"
 
-#: activities/readingh/Readingh.qml:307
+#: activities/readingh/Readingh.qml:304
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22222,12 +22222,12 @@ msgstr ""
 "<font color=\"#373737\">Праверце, ці паказваецца слова <br/></font><b><font "
 "color=\"#315AAA\">%1</font></b><br/>"
 
-#: activities/readingh/Readingh.qml:369
+#: activities/readingh/Readingh.qml:363
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Так, я бачыў яго!"
 
-#: activities/readingh/Readingh.qml:390
+#: activities/readingh/Readingh.qml:384
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Не, яго не было!"

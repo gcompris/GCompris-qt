@@ -22598,7 +22598,7 @@ msgid ""
 "instruction and press Space."
 msgstr ""
 
-#: activities/programmingMaze/InstructionArea.qml:27
+#: activities/programmingMaze/InstructionArea.qml:22
 msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "Zvoľte inštrukcie"
@@ -22711,23 +22711,23 @@ msgstr ""
 "funkčnosti</b> pre pridávanie vášho kódu, klinite na štítok <b>Slučka</b> "
 "alebo  <b>Hlavná funkcia</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:203
+#: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Dostaňte sa k rybe za menej ako %1 inštrukcii."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:267
+#: activities/programmingMaze/ProgrammingMaze.qml:260
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Hlavná funkcia"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Procedúra"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Slučka"
@@ -22871,7 +22871,7 @@ msgstr ""
 "Na tabuli sa zobrazí slovo. Zoznam slov zobrazených horizontálne sa objaví a "
 "zmizne. Patrí dané slovo do zoznamu?"
 
-#: activities/readingh/Readingh.qml:307
+#: activities/readingh/Readingh.qml:304
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22881,12 +22881,12 @@ msgstr ""
 "<font color=\"#373737\">Skontrolujte, či je slovo<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">zobrazené</font>"
 
-#: activities/readingh/Readingh.qml:369
+#: activities/readingh/Readingh.qml:363
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Áno, videl som!"
 
-#: activities/readingh/Readingh.qml:390
+#: activities/readingh/Readingh.qml:384
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Nie, nebolo to tam!"

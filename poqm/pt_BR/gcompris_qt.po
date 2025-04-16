@@ -22301,7 +22301,7 @@ msgstr ""
 "selecione-a, alterne para a área de instruções, selecione uma nova instrução "
 "e pressione Espaço."
 
-#: activities/programmingMaze/InstructionArea.qml:27
+#: activities/programmingMaze/InstructionArea.qml:22
 msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "Escolha as instruções"
@@ -22414,23 +22414,23 @@ msgstr ""
 "principal</b>, para adicionar o seu código, clique na etiqueta <b>Laço</b> "
 "ou na <b>Função principal</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:203
+#: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Alcance o peixe em menos de %1 instruções."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:267
+#: activities/programmingMaze/ProgrammingMaze.qml:260
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Função Principal"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Procedimentos"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Laço"
@@ -22557,7 +22557,7 @@ msgstr ""
 "horizontalmente, aparecerá e desaparecerá. A palavra indicada apareceu na "
 "lista?"
 
-#: activities/readingh/Readingh.qml:307
+#: activities/readingh/Readingh.qml:304
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22567,12 +22567,12 @@ msgstr ""
 "<font color=\"#373737\">Verifique se a palavra<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">é exibida</font>"
 
-#: activities/readingh/Readingh.qml:369
+#: activities/readingh/Readingh.qml:363
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Sim, eu a vi!"
 
-#: activities/readingh/Readingh.qml:390
+#: activities/readingh/Readingh.qml:384
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Não, ela não estava lá!"
