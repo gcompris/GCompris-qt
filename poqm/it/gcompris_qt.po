@@ -22827,7 +22827,7 @@ msgstr ""
 "selezionala dall'area principale/procedure/cicli, quindi passa all'area "
 "delle istruzioni, scegli la nuova istruzione e premi Barra spaziatrice."
 
-#: activities/programmingMaze/InstructionArea.qml:27
+#: activities/programmingMaze/InstructionArea.qml:22
 msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "Scegli le istruzioni"
@@ -22942,23 +22942,23 @@ msgstr ""
 "principale</b>per aggiungere il tuo codice, fai clic sull'etichetta "
 "<b>Ciclo</b> o <b>Funzione principale</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:203
+#: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Raggiungi il pesce in meno di %1 istruzioni."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:267
+#: activities/programmingMaze/ProgrammingMaze.qml:260
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Funzione principale"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Procedura"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Ciclo"
@@ -23086,7 +23086,7 @@ msgstr ""
 "orizzontalmente, appare e scompare. La parola specifica appartiene "
 "all'elenco?"
 
-#: activities/readingh/Readingh.qml:307
+#: activities/readingh/Readingh.qml:304
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -23096,12 +23096,12 @@ msgstr ""
 "<font color=\"#373737\">Controlla se la parola<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">è visualizzata</font>"
 
-#: activities/readingh/Readingh.qml:369
+#: activities/readingh/Readingh.qml:363
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Sì, l'ho vista!"
 
-#: activities/readingh/Readingh.qml:390
+#: activities/readingh/Readingh.qml:384
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "No, non c'era!"

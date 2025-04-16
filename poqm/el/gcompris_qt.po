@@ -22859,7 +22859,7 @@ msgstr ""
 "περιοχή του κώδικα, κάνε εναλλαγή στην περιοχή εντολών, επίλεξε τη νέα "
 "εντολή και πίεση το κενό διάστημα."
 
-#: activities/programmingMaze/InstructionArea.qml:27
+#: activities/programmingMaze/InstructionArea.qml:22
 msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "Επίλεξε τις εντολές"
@@ -22974,23 +22974,23 @@ msgstr ""
 "<b>περιοχής του κώδικα</b> για να μπορείς να προσθέσεις κώδικα, πίεσε στην "
 "ετικέτα <b>Βρόχος</b> ή <b>Κώδικας</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:203
+#: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Φτάσε στο ψάρι με λιγότερες από %1 εντολές."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:267
+#: activities/programmingMaze/ProgrammingMaze.qml:260
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Κώδικας"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Διαδικασία"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Βρόχος"
@@ -23120,7 +23120,7 @@ msgstr ""
 "λέξεις θα εμφανιστεί για λίγο στα αριστερά. Η εμφανιζόμενη λέξη ανήκει ή όχι "
 "στον κατάλογο που είδες;"
 
-#: activities/readingh/Readingh.qml:307
+#: activities/readingh/Readingh.qml:304
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -23130,12 +23130,12 @@ msgstr ""
 "<font color=\"#373737\">Έλεγξε αν η λέξη<br/></font><b><font color=\"#315AAA"
 "\">%1</font></b><br/><font color=\"#373737\">εμφανίζεται.</font>"
 
-#: activities/readingh/Readingh.qml:369
+#: activities/readingh/Readingh.qml:363
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Ναι, την είδα!"
 
-#: activities/readingh/Readingh.qml:390
+#: activities/readingh/Readingh.qml:384
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Όχι, δεν εμφανίστηκε"

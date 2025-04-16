@@ -22186,7 +22186,7 @@ msgstr ""
 "ലൂപ് വിഭാഗത്തിൽ നിന്നും അതു തിരഞ്ഞെടുത്ത്, നിർദ്ദേശ വിഭാഗത്തിലേക്കു മാറുക, എന്നിട്ട് പുതിയ "
 "നിർദ്ദേശം തിരഞ്ഞെടുത്ത് സ്പെയ്സ് കീ അമർത്തുക."
 
-#: activities/programmingMaze/InstructionArea.qml:27
+#: activities/programmingMaze/InstructionArea.qml:22
 msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "നിർദ്ദേശങ്ങൾ തിരഞ്ഞെടുക്കുക"
@@ -22296,23 +22296,23 @@ msgstr ""
 "-നിങ്ങളുടെ കോഡ് ചേർക്കാനായി <b>ലൂപ് വിഭാഗവും</b> <b>പ്രധാന ഫങ്ഷൻ വിഭാഗവും</b> <b>തമ്മിൽ "
 "മാറ്റാൻ</b>, <b>ലൂപ്</b> എന്ന ലേബലിലോ <b>പ്രധാന ഫങ്ഷൻ</b> എന്നതിലോ ക്ലിക്ക് ചെയ്യുക."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:203
+#: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "%1 നിർദ്ദേശങ്ങളിൽ താഴെ മാത്രം ഉപയോഗിച്ച് മീനിലെത്തുക."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:267
+#: activities/programmingMaze/ProgrammingMaze.qml:260
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "പ്രധാന ഫങ്ഷൻ"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "പ്രൊസീജർ"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "ലൂപ്"
@@ -22434,7 +22434,7 @@ msgstr ""
 "ബോർഡിൽ ഒരു വാക്ക് കാണിച്ചിരിക്കും. തിരശ്ചീനമായി കാണിച്ചിരിക്കുന്ന ഒരു കൂട്ടം വാക്കുകൾ "
 "പ്രത്യക്ഷപ്പെടുകയും അപ്രത്യക്ഷമാവുകയും ചെയ്യും. ഇതിൽ തന്നിരിക്കുന്ന വാക്കുണ്ടായിരുന്നോ?"
 
-#: activities/readingh/Readingh.qml:307
+#: activities/readingh/Readingh.qml:304
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22444,12 +22444,12 @@ msgstr ""
 "<font color=\"#373737\">ഈ വാക്ക്<br/></font><b><font color=\"#315AAA\">%1</"
 "font></b><br/><font color=\"#373737\">കാണിക്കുന്നുണ്ടോ എന്ന് നോക്കൂ</font>"
 
-#: activities/readingh/Readingh.qml:369
+#: activities/readingh/Readingh.qml:363
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "ഞാൻ ആ വാക്ക് കണ്ടു!"
 
-#: activities/readingh/Readingh.qml:390
+#: activities/readingh/Readingh.qml:384
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "ആ വാക്ക് അവിടെ കണ്ടില്ല!"

@@ -22496,7 +22496,7 @@ msgstr ""
 "en dachenn ret, distro goude d'an dachenn-urzhiañ, dibab an urzh nevz ha "
 "pouez war ar varrenn Esaouiñ."
 
-#: activities/programmingMaze/InstructionArea.qml:27
+#: activities/programmingMaze/InstructionArea.qml:22
 msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "Dibab an urzhioù"
@@ -22609,23 +22609,23 @@ msgstr ""
 "<b>Tachenn an Arc'hwel pennañ</b> a-benn ouzhpennañ da god, klik war ar "
 "skritellig <b>Boukl</b> pe <b>Arc'hwel pennañ</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:203
+#: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Tizh ar pesk e nebeutoc'h eget %1 urzh."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:267
+#: activities/programmingMaze/ProgrammingMaze.qml:260
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Arc'hwel pennañ"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Argerzhadur"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Boukl"
@@ -22751,7 +22751,7 @@ msgstr ""
 "Bez' eus ur ger diskouezet en daolennig. Mont war-wel ha diwar-wel a raio ur "
 "roll gerioù a-blaen. E-barzh ar roll e oa ar ger diskouezet ?"
 
-#: activities/readingh/Readingh.qml:307
+#: activities/readingh/Readingh.qml:304
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22761,12 +22761,12 @@ msgstr ""
 "<font color=\"#373737\">Sell mat hag-eñ emañ ar ger<br/></font><b><font "
 "color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\">er roll</font>"
 
-#: activities/readingh/Readingh.qml:369
+#: activities/readingh/Readingh.qml:363
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Ya, gwelet 'm eus anezhañ!"
 
-#: activities/readingh/Readingh.qml:390
+#: activities/readingh/Readingh.qml:384
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Ket, n'edo ket aze!"

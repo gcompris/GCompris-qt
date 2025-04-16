@@ -22268,7 +22268,7 @@ msgstr ""
 "要修正主程式/副程式/迴圈區中的指令，先選擇區域，然後切換到指令區，選擇新的指"
 "令，再按下空白鍵。"
 
-#: activities/programmingMaze/InstructionArea.qml:27
+#: activities/programmingMaze/InstructionArea.qml:22
 msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "選取指令"
@@ -22371,23 +22371,23 @@ msgstr ""
 " - 要在<b>迴圈</b>與<b>主程式</b>間<b>切換</b>以便新增指令，您只要點擊一下<b>"
 "迴圈</b>或<b>主程式</b>的標籤即可。"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:203
+#: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "在 %1 個指令內抓到魚。"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:267
+#: activities/programmingMaze/ProgrammingMaze.qml:260
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "主程式"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "副程式"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "迴圈"
@@ -22508,7 +22508,7 @@ msgstr ""
 "在看板上方有個單字。然後會有一串單字出現一下並消失。上方的單字有出現在這一串"
 "單字中嗎？"
 
-#: activities/readingh/Readingh.qml:307
+#: activities/readingh/Readingh.qml:304
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22518,12 +22518,12 @@ msgstr ""
 "<font color=\"#373737\">看看單字<br/></font><b><font color=\"#315AAA\">%1</"
 "font></b><br/><font color=\"#373737\">是否有出現</font>"
 
-#: activities/readingh/Readingh.qml:369
+#: activities/readingh/Readingh.qml:363
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "有，我看到了！"
 
-#: activities/readingh/Readingh.qml:390
+#: activities/readingh/Readingh.qml:384
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "沒有，不在那裡！"

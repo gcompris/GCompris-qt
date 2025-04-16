@@ -22701,7 +22701,7 @@ msgstr ""
 "перемкніться на область інструкцій, виберіть нову інструкцію і натисніть "
 "клавішу пробілу."
 
-#: activities/programmingMaze/InstructionArea.qml:27
+#: activities/programmingMaze/InstructionArea.qml:22
 msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "Виберіть команди"
@@ -22815,23 +22815,23 @@ msgstr ""
 "-Для перемикання між <b>Панеллю циклу</b> і <b>Панеллю основної функції</b> "
 "для додавання коду натисніть мітку <b>Цикл</b> або <b>Основна функція</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:203
+#: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Доберіться до рибки за менше ніж %1 команд."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:267
+#: activities/programmingMaze/ProgrammingMaze.qml:260
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Основна функція"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Процедура"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Цикл"
@@ -22958,7 +22958,7 @@ msgstr ""
 "На ігровому полі буде показано слово. Список слів, показаний горизонтально, "
 "з'являтиметься і зникатиме. Чи є задане слово у списку?"
 
-#: activities/readingh/Readingh.qml:307
+#: activities/readingh/Readingh.qml:304
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22968,12 +22968,12 @@ msgstr ""
 "<font color=\"#373737\">Визначте, чи показано слово<br/></font><b><font "
 "color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\"></font>"
 
-#: activities/readingh/Readingh.qml:369
+#: activities/readingh/Readingh.qml:363
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Так, воно там було!"
 
-#: activities/readingh/Readingh.qml:390
+#: activities/readingh/Readingh.qml:384
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Ні, його там не було!"

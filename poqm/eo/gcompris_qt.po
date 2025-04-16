@@ -22364,7 +22364,7 @@ msgstr ""
 "procedura/buklo-areo, tiam ŝanĝu al instrukcia areo, elektu la novan "
 "instrukcion kaj premu Spacon."
 
-#: activities/programmingMaze/InstructionArea.qml:27
+#: activities/programmingMaze/InstructionArea.qml:22
 msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "Elektu la instrukciojn"
@@ -22478,23 +22478,23 @@ msgstr ""
 "por aldoni vian kodon, alklaku la <b>Buklo</b> aŭ <b>Ĉefa Funkcio</b> "
 "etikedo."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:203
+#: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Atingu la fiŝon en malpli ol %1 instrukcioj."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:267
+#: activities/programmingMaze/ProgrammingMaze.qml:260
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Ĉefa funkcio"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Proceduro"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Buklo"
@@ -22619,7 +22619,7 @@ msgstr ""
 "Vorto montriĝas sur la tabulo. Listo de vortoj, montrata horizontale, aperos "
 "kaj malaperos. Ĉu la donita vorto aperis en la listo?"
 
-#: activities/readingh/Readingh.qml:307
+#: activities/readingh/Readingh.qml:304
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22629,12 +22629,12 @@ msgstr ""
 "<font color=\"#373737\">Kontrolu ĉu la vorto<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">montriĝas</font>"
 
-#: activities/readingh/Readingh.qml:369
+#: activities/readingh/Readingh.qml:363
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Jes, mi vidis ĝin!"
 
-#: activities/readingh/Readingh.qml:390
+#: activities/readingh/Readingh.qml:384
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Ne, ĝi ne estis tie!"

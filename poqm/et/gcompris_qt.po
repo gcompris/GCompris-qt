@@ -22960,7 +22960,7 @@ msgstr ""
 "silmusalalt, seejärel aktiveerige juhiste ala, valige uus juhis ja vajutage "
 "tühikuklahvi."
 
-#: activities/programmingMaze/InstructionArea.qml:27
+#: activities/programmingMaze/InstructionArea.qml:22
 msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "Valige juhised"
@@ -23074,23 +23074,23 @@ msgstr ""
 "<b>põhifunktsiooni ala</b> vahel klõpsake <b>silmus</b> või Silt "
 "<b>Põhifunktsioon</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:203
+#: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Jõudke kalani vähem kui %1 juhise järgi."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:267
+#: activities/programmingMaze/ProgrammingMaze.qml:260
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Põhifunktsioon"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Protseduur"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:295
+#: activities/programmingMaze/ProgrammingMaze.qml:294
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Silmus"
@@ -23219,7 +23219,7 @@ msgstr ""
 "Tahvlil näidatakse sõna. Horisontaalsuunas kulgevad sõnad ilmuvad ja kaovad. "
 "Kas näidatud sõna on ka seal või mitte?"
 
-#: activities/readingh/Readingh.qml:307
+#: activities/readingh/Readingh.qml:304
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -23229,12 +23229,12 @@ msgstr ""
 "<font color=\"#373737\">Kontrolli, kas sõna<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">on näha</font>"
 
-#: activities/readingh/Readingh.qml:369
+#: activities/readingh/Readingh.qml:363
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Jah, ma nägin seda!"
 
-#: activities/readingh/Readingh.qml:390
+#: activities/readingh/Readingh.qml:384
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Ei, seda ei olnud!"
