@@ -40,12 +40,12 @@ ActivityBase {
         signal stop
         signal resetFocus
 
+        property bool isHorizontal: width >= height
+
         onResetFocus: {
             if (!ApplicationInfo.isMobile)
                 textInput.forceActiveFocus();
         }
-
-        property int layoutMargins: 10 * ApplicationInfo.ratio
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -287,55 +287,53 @@ ActivityBase {
         }
 
         Item {
-            id: questionArea
-            anchors.top: activityBackground.top
-            anchors.left: activityBackground.left
-            anchors.right: activityBackground.right
-            anchors.margins: activityBackground.layoutMargins
-            height: questionLabel.contentHeight + 20 * ApplicationInfo.ratio
-            Rectangle {
-                anchors.centerIn: parent
-                width: questionLabel.contentWidth + 2 * activityBackground.layoutMargins
-                height: questionLabel.contentHeight + activityBackground.layoutMargins
-                color: "#f2f2f2"
-                radius: activityBackground.layoutMargins
-                border.width: 2 * ApplicationInfo.ratio
-                border.color: "#9fb8e3"
-                GCText {
-                    id: questionLabel
-                    anchors.centerIn: parent
-                    wrapMode: TextEdit.WordWrap
-                    text: items.questionValue ? items.questionText.arg(items.questionValue) : ''
-                    color: "#373737"
-                    width: questionArea.width - 2 * activityBackground.layoutMargins
-                    horizontalAlignment: Text.AlignHCenter
-                }
-            }
+            id: layoutArea
+            anchors.fill: parent
+            anchors.margins: GCStyle.baseMargins
+            anchors.bottomMargin: parent.height - bar.y + bar.height * 0.2 // in case VirtualKeyboard is visible, the layout is reduced...
+            property int heightUnit: (height - 3 * GCStyle.baseMargins) * 0.1
+        }
+
+        GCTextPanel {
+            id: questionPanel
+            panelWidth: layoutArea.width
+            panelHeight: Math.min(50 * ApplicationInfo.ratio, layoutArea.heightUnit * 2)
+            fixedHeight: true
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: parent.top
+            anchors.topMargin: GCStyle.baseMargins
+            color: GCStyle.lightBg
+            border.color: GCStyle.blueBorder
+            border.width: GCStyle.thinBorder
+            textItem.color: GCStyle.darkText
+            textItem.text: items.questionValue ? items.questionText.arg(items.questionValue) : ''
         }
 
         Rectangle {
             id: inputArea
-            anchors.top: questionArea.bottom
-            anchors.left: activityBackground.left
-            anchors.margins: activityBackground.layoutMargins
-            color: "#f2f2f2"
-            radius: activityBackground.layoutMargins
-            width: questionArea.width * 0.5 - activityBackground.layoutMargins * 0.5
-            height: textInput.height
+            anchors.top: questionPanel.bottom
+            anchors.topMargin: GCStyle.baseMargins
+            anchors.horizontalCenter: layoutArea.horizontalCenter
+            anchors.horizontalCenterOffset: -layoutArea.width * 0.25
+            color: GCStyle.lightBg
+            radius: GCStyle.halfMargins
+            width: Math.min(layoutArea.width * 0.5, 200 * ApplicationInfo.ratio)
+            height: layoutArea.heightUnit * 1.5
             TextInput {
                 id: textInput
-                x: parent.width / 2
-                width: parent.width
+                anchors.centerIn: parent
+                width: parent.width - GCStyle.baseMargins
+                height: parent.height - GCStyle.baseMargins
                 enabled: !items.buttonsBlocked
-                color: "#373737"
+                color: GCStyle.darkText
                 text: ''
                 maximumLength: items.toArabic ?
                 ('' + romanConverter.roman2Arabic(items.questionValue)).length + 1 :
                 romanConverter.arabic2Roman(items.questionValue).length + 1
                 horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: TextInput.AlignVCenter
-                anchors.horizontalCenter: parent.horizontalCenter
-                font.pointSize: questionLabel.pointSize
+                verticalAlignment: Text.AlignVCenter
+                scale: Math.min(1, width / contentWidth, height / contentHeight)
+                font.pointSize: feedback.pointSize
                 font.weight: Font.DemiBold
                 font.family: GCSingletonFontLoader.fontName
                 font.capitalization: ApplicationSettings.fontCapitalization
@@ -371,65 +369,52 @@ ActivityBase {
 
         Rectangle {
             id: feedbackArea
-            anchors.top: questionArea.bottom
-            anchors.margins: activityBackground.layoutMargins
-            anchors.right: activityBackground.right
+            anchors.top: inputArea.bottom
+            anchors.topMargin: GCStyle.baseMargins
+            anchors.horizontalCenter: layoutArea.horizontalCenter
+            anchors.horizontalCenterOffset: inputArea.anchors.horizontalCenterOffset
             width: inputArea.width
             height: inputArea.height
-            color: "#f2f2f2"
-            radius: activityBackground.layoutMargins
+            color: GCStyle.lightBg
+            radius: GCStyle.halfMargins
 
             GCText {
                 id: feedback
-                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.centerIn: parent
                 text: items.toArabic ?
                 qsTr("Roman value: %1").arg(value) :
                 qsTr('Arabic value: %1').arg(value)
-                color: "#373737"
+                color: GCStyle.darkText
                 property string value: items.toArabic ?
                 romanConverter.roman :
                 romanConverter.arabic ? romanConverter.arabic : ''
                 verticalAlignment: Text.AlignVCenter
-                width: parent.width * 0.9
-                height: parent.height * 0.9
+                width: textInput.width
+                height: textInput.height
                 fontSizeMode: Text.Fit
-                minimumPointSize: 10
-                fontSize: mediumSize
+                minimumPointSize: 7
+                fontSize: regularSize
             }
         }
 
-        Item {
-            id: instructionArea
-            visible: items.instruction != ''
-            anchors.top: feedbackArea.bottom
-            anchors.bottom: okButton.top
-            anchors.left: activityBackground.left
-            anchors.right: activityBackground.right
-            anchors.margins: activityBackground.layoutMargins
-
-            Rectangle {
-                width: instruction.contentWidth + 2 * activityBackground.layoutMargins
-                height: instruction.contentHeight + activityBackground.layoutMargins
-                anchors.centerIn: parent
-                color: "#f2f2f2"
-                border.color: "#9fb8e3"
-                border.width: 2 * ApplicationInfo.ratio
-
-                GCText {
-                    id: instruction
-                    wrapMode: TextEdit.WordWrap
-                    anchors.centerIn: parent
-                    width: instructionArea.width - 2 * activityBackground.layoutMargins
-                    height: instructionArea.height - 2 * activityBackground.layoutMargins
-                    text: items.instruction
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    color: "#373737"
-                    fontSizeMode: Text.Fit
-                    minimumPointSize: 8
-                    fontSize: mediumSize
-                }
-            }
+        GCTextPanel {
+            id: instructionPanel
+            panelWidth: activityBackground.isHorizontal ? layoutArea.width * 0.5 :
+                layoutArea.width * 0.7
+            panelHeight: activityBackground.isHorizontal ? layoutArea.heightUnit * 5 : layoutArea.heightUnit * 4
+            hideIfEmpty: true
+            anchors.bottom: layoutArea.bottom
+            anchors.horizontalCenter: layoutArea.horizontalCenter
+            anchors.horizontalCenterOffset: activityBackground.isHorizontal ?
+                inputArea.anchors.horizontalCenterOffset :
+                0
+            color: GCStyle.lightBg
+            border.color: GCStyle.blueBorder
+            border.width: GCStyle.thinBorder
+            radius: 0
+            textItem.color: GCStyle.darkText
+            textItem.fontSize: textItem.smallSize
+            textItem.text: items.instruction
         }
 
         ErrorRectangle {
@@ -440,10 +425,19 @@ ActivityBase {
             function releaseControls() { items.buttonsBlocked = false; }
         }
 
+        Item {
+            id: rightSideItems
+            anchors.left: inputArea.right
+            anchors.right: layoutArea.right
+            anchors.top: inputArea.top
+            anchors.bottom: feedbackArea.bottom
+        }
+
         Score {
             id: score
-            anchors.right: okButton.left
-            anchors.verticalCenter: okButton.verticalCenter
+            anchors.right: rightSideItems.horizontalCenter
+            anchors.rightMargin: GCStyle.halfMargins
+            anchors.verticalCenter: rightSideItems.verticalCenter
             anchors.bottom: undefined
             currentSubLevel: 0
             numberOfSubLevels: 1
@@ -512,11 +506,11 @@ ActivityBase {
           id: okButton
           source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
           visible: true
-          anchors.right: activityBackground.right
-          anchors.bottom: bar.top
-          anchors.margins: 2 * activityBackground.layoutMargins
+          anchors.left: rightSideItems.horizontalCenter
+          anchors.leftMargin: GCStyle.halfMargins
+          anchors.verticalCenter: rightSideItems.verticalCenter
           enabled: !items.buttonsBlocked
-          width: bar.height
+          width: Math.min(GCStyle.bigButtonHeight, layoutArea.heightUnit * 3)
           onClicked: items.check()
         }
 
