@@ -213,6 +213,9 @@ ActivityBase {
                 id: clockAnim
                 alwaysRunToEnd: true
                 ParallelAnimation {
+                    ScriptAction {
+                        script: items.tuxCanMove = false;
+                    }
                     NumberAnimation {
                         target: clock; properties: "opacity";
                         to: 0; duration: 800; easing.type: Easing.OutCubic
@@ -234,6 +237,9 @@ ActivityBase {
                     NumberAnimation {
                         target: clock; properties: "rotation"; from: 180; to: 0;
                         duration: 800; easing.type: Easing.OutCubic
+                    }
+                    ScriptAction {
+                        script: items.tuxCanMove = true;
                     }
                 }
             }
