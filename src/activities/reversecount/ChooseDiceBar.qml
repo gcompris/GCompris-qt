@@ -37,13 +37,13 @@ Item {
 
     Row {
         id: barRow
-        spacing: 8
+        spacing: GCStyle.baseMargins
         anchors.centerIn: parent
         BarButton {
             id: ok
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
-            width: Math.min(75 * ApplicationInfo.ratio,
-                            Math.min((chooseDiceBar.width - activityBackground.baseMargin) * 0.33),
+            width: Math.min(GCStyle.bigButtonHeight,
+                            chooseDiceBar.width / 3 - GCStyle.baseMargins,
                             chooseDiceBar.height)
             visible: true
             anchors {
@@ -52,14 +52,14 @@ Item {
                 top: undefined
                 topMargin: undefined
             }
-            enabled: items.tuxCanMove && !bonus.isPlaying
+            enabled: chooseDiceBar.enabled
             onClicked: chooseDiceBar.moveTux();
         }
 
         Domino {
             id: domino
-            width: ok.height * 2
-            isClickable: ok.enabled
+            width: ok.width * 2
+            isClickable: chooseDiceBar.enabled
             soundEffects: dominoScroll
         }
     }

@@ -26,12 +26,11 @@ ActivityBase {
     pageComponent: Rectangle {
         id: activityBackground
         anchors.fill: parent
-        color: "#ff1dade4"
+        color: "#1dade4"
 
         signal start
         signal stop
 
-        readonly property int baseMargin: 10 * ApplicationInfo.ratio
         readonly property bool horizontalLayout: layoutArea.width >= layoutArea.height
 
         Component.onCompleted: {
@@ -57,8 +56,8 @@ ActivityBase {
             property alias fishToReach: fishToReach
             property int clockPosition: 4
             property string mode: "dot"
-            property double heightBase: (activityBackground.horizontalLayout ? layoutArea.height : layoutArea.height - clock.height - activityBackground.baseMargin) * 0.2
-            property double widthBase: (activityBackground.horizontalLayout ? layoutArea.width - clock.height - activityBackground.baseMargin : layoutArea.width) * 0.2
+            property double heightBase: (activityBackground.horizontalLayout ? layoutArea.height : layoutArea.height - clock.height - GCStyle.baseMargins) * 0.2
+            property double widthBase: (activityBackground.horizontalLayout ? layoutArea.width - clock.height - GCStyle.baseMargins : layoutArea.width) * 0.2
             property bool tuxIsMoving: false
             property bool tuxCanMove: true
         }
@@ -117,7 +116,7 @@ ActivityBase {
         Item {
             id: layoutArea
             anchors.fill: parent
-            anchors.margins: activityBackground.baseMargin
+            anchors.margins: GCStyle.baseMargins
             anchors.bottomMargin: bar.height * 1.2
 
             // === The ice blocks ===
@@ -194,7 +193,7 @@ ActivityBase {
             anchors {
                 right: parent.right
                 bottom: bar.top
-                margins: activityBackground.baseMargin
+                margins: GCStyle.baseMargins
             }
             width: 66 * ApplicationInfo.ratio
             height: width
@@ -267,11 +266,12 @@ ActivityBase {
             id: chooseDiceBar
             mode: items.mode
             anchors.centerIn: layoutArea
-            anchors.verticalCenterOffset: activityBackground.horizontalLayout ? 0 : (-clock.height - activityBackground.baseMargin) * 0.5
-            anchors.horizontalCenterOffset: activityBackground.horizontalLayout ? (-clock.width - activityBackground.baseMargin) * 0.5 : 0
+            anchors.verticalCenterOffset: activityBackground.horizontalLayout ? 0 : (-clock.height - GCStyle.baseMargins) * 0.5
+            anchors.horizontalCenterOffset: activityBackground.horizontalLayout ? (-clock.width - GCStyle.baseMargins) * 0.5 : 0
             y: items.heightBase * 2
             width: items.widthBase * 3
             height: items.heightBase * 3
+            enabled: items.tuxCanMove && !bonus.isPlaying
         }
 
         Bonus {
