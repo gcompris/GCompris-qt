@@ -221,14 +221,22 @@ ActivityBase {
             visible: !ApplicationInfo.isMobile
         }
 
+        ListModel {
+            id: tutoMobile
+            ListElement {
+                text: qsTr("Tap both hands at the same time, to make the ball go in a straight line.")
+            }
+        }
+        ListModel {
+            id: tutoDesktop
+            ListElement {
+                text: qsTr("Press left and right arrow keys at the same time, to make the ball go in a straight line.")
+            }
+        }
         // Instructions
         IntroMessage {
             id: message
-            intro: ApplicationInfo.isMobile ?
-                       [qsTr("Tap both hands at the same time, " +
-                            "to make the ball go in a straight line.")] :
-                       [qsTr("Press left and right arrow keys at the same time, " +
-                            "to make the ball go in a straight line.")]
+            intro: ApplicationInfo.isMobile ? tutoMobile : tutoDesktop
             z: 10
         }
 

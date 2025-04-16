@@ -133,7 +133,7 @@ ActivityBase {
 
         IntroMessage {
             id: tutorialInstruction
-            intro: []
+            intro: ListModel {}
             customIntroArea: introArea
             z: 5
         }

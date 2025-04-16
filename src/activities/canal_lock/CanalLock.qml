@@ -69,14 +69,17 @@ ActivityBase {
         IntroMessage {
             id: message
             z: 100
-            intro: [
-                qsTr("Your goal is to lead Tux across the canal lock to get the wooden logs, "
-                     +"using the different types of water locks available."),
-                qsTr("The vertical colored bars represent the water locks, which can be operated by clicking on them. "
-                     +"Two locks of the same type cannot be operated simultaneously.") ,
-                qsTr("The water level inside the lock will change according to the side of the canal it is "
-                     +"connected to. Use this property to help Tux get the job done.")
-            ]
+            intro: ListModel {
+                ListElement {
+                    text: qsTr("Your goal is to lead Tux across the canal lock to get the wooden logs, using the different types of water locks available.")
+                }
+                ListElement {
+                    text: qsTr("The vertical colored bars represent the water locks, which can be operated by clicking on them. Two locks of the same type cannot be operated simultaneously.")
+                }
+                ListElement {
+                    text: qsTr("The water level inside the lock will change according to the side of the canal it is connected to. Use this property to help Tux get the job done.")
+                }
+            }
         }
 
         onStart: water.state = 'down'

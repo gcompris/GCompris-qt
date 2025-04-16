@@ -215,23 +215,23 @@ ActivityBase {
                 Activity.createPlanet()
                 items.planetCreation.start()
             }
-            intro: [
-                qsTr("Gravity is universal and Newton's law of universal gravitation extends gravity"
-                     +" beyond earth. This force of gravitational attraction is directly dependent"
-                     +" upon the mass of both objects and inversely proportional to"
-                     +" the square of the distance between their centers."),
-                qsTr("Since the gravitational force is directly proportional to the mass of both interacting"
-                     +" objects, more massive objects will attract each other with a greater gravitational"
-                     +" force."),
-                qsTr("But as this force is inversely proportional to the square of the distance"
-                     +" between the two interacting objects, more distance will"
-                     +" result in weaker gravitational force."),
-                qsTr("Your goal is to move the spaceship and avoid hitting the planets until you reach the"
-                     +" space station. The arrow indicates the direction and the intensity of the gravity"
-                     +" on your ship."),
-                qsTr("Try to stay near the center of the screen, and anticipate by looking at the size"
-                    +" and direction of the arrow.")
-            ]
+            intro: ListModel {
+                ListElement {
+                    text: qsTr("Gravity is universal and Newton's law of universal gravitation extends gravity beyond earth. This force of gravitational attraction is directly dependent upon the mass of both objects and inversely proportional to the square of the distance between their centers.")
+                }
+                ListElement {
+                    text: qsTr("Since the gravitational force is directly proportional to the mass of both interacting objects, more massive objects will attract each other with a greater gravitational force.")
+                }
+                ListElement {
+                    text: qsTr("But as this force is inversely proportional to the square of the distance between the two interacting objects, more distance will result in weaker gravitational force.")
+                }
+                ListElement {
+                    text: qsTr("Your goal is to move the spaceship and avoid hitting the planets until you reach the space station. The arrow indicates the direction and the intensity of the gravity on your ship.")
+                }
+                ListElement {
+                    text: qsTr("Try to stay near the center of the screen, and anticipate by looking at the size and direction of the arrow.")
+                }
+            }
             z: 110
         }
 

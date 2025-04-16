@@ -136,20 +136,20 @@ ActivityBase {
                 infoPanel.setKey('start');
                 sun_area.enabled = true;
             }
-            intro: [
-                qsTr("The water cycle (also known as the hydrologic cycle) is the journey water takes"
-                     +" as it circulates from the land to the sky and back again."
-                     +" The sun's heat provides energy to evaporate water from water bodies like oceans."),
-                qsTr("Plants also lose water to the air through transpiration. The water vapor "
-                     +"cools down forming tiny droplets in clouds. When the clouds meet cool air over the land, "
-                     +"precipitation is triggered and falls down as rain.") ,
-                qsTr("Some of the water is trapped between rock or clay layers, called groundwater. "
-                     +"But most of the water flows as runoff, eventually returning to the seas via rivers."),
-                qsTr("Your goal is to complete the water cycle before Tux reaches home. "
-                     +"Click on the different components which make up the water cycle. "
-                     +"First click on the sun, then on the cloud, the water pumping station near the river, "
-                     +"the sewage treatment, and at last regulate the switch to provide water to Tux's shower.")
-            ]
+            intro: ListModel {
+                ListElement {
+                    text: qsTr("The water cycle (also known as the hydrologic cycle) is the journey water takes as it circulates from the land to the sky and back again. The sun's heat provides energy to evaporate water from water bodies like oceans.")
+                }
+                ListElement {
+                    text: qsTr("Plants also lose water to the air through transpiration. The water vapor cools down forming tiny droplets in clouds. When the clouds meet cool air over the land, precipitation is triggered and falls down as rain.")
+                }
+                ListElement {
+                    text: qsTr("Some of the water is trapped between rock or clay layers, called groundwater. But most of the water flows as runoff, eventually returning to the seas via rivers.")
+                }
+                ListElement {
+                    text: qsTr("Your goal is to complete the water cycle before Tux reaches home. Click on the different components which make up the water cycle. First click on the sun, then on the cloud, the water pumping station near the river, the sewage treatment, and at last regulate the switch to provide water to Tux's shower.")
+                }
+            }
         }
 
         Item {

@@ -54,7 +54,7 @@ Item {
      *
      * It has to be filled by the user when defining an IntroMessage item.
      */
-    property var intro
+    property ListModel intro
 
     property Item customIntroArea: null
 
@@ -126,7 +126,7 @@ Item {
         minimumPixelSize: 7
         wrapMode: Text.WordWrap
         fontSizeMode: Text.Fit
-        text: parent.index != -1 && parent.intro[parent.index] ? parent.intro[parent.index] : ""
+        text: message.index != -1 && message.intro.count != 0 ? message.intro.get(parent.index).text : ""
     }
 
     IntroButton {
@@ -152,7 +152,7 @@ Item {
         anchors.horizontalCenter: introTextContainer.horizontalCenter
         anchors.top: introTextContainer.bottom
         anchors.topMargin: introText.anchors.margins
-        visible: index != (intro.length - 1)
+        visible: index != (intro.count - 1)
 
         text: qsTr("Next")
 
