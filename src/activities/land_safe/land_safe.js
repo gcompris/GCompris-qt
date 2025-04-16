@@ -118,12 +118,12 @@ function initLevel() {
 
     if (levels[items.currentLevel].intro !== undefined) {
         items.ok.visible = false;
-        items.intro.intro = [levels[items.currentLevel].intro];
-        items.intro.index = 0;
+        items.introMessage.intro.clear()
+        items.introMessage.intro.append({"text": levels[items.currentLevel].intro})
+        items.introMessage.index = 0;
     } else {
         // go
-        items.intro.intro = [];
-        items.intro.index = -1;
+        items.introMessage.index = -1;
         items.ok.visible = true;
     }
     lastLevel = items.currentLevel;

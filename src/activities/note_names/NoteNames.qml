@@ -241,6 +241,7 @@ ActivityBase {
         IntroMessage {
             id: introMessage
             z: 12
+            intro: ListModel {}
         }
 
         AdvancedTimer {

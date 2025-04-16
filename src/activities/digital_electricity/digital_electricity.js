@@ -145,7 +145,10 @@ function initLevel() {
 
         if (levelProperties.introMessage.length != 0) {
             items.tutorialInstruction.index = 0
-            items.tutorialInstruction.intro = levelProperties.introMessage
+            items.tutorialInstruction.intro.clear()
+            for(var i = 0; i < levelProperties.introMessage.length; ++ i) {
+                items.tutorialInstruction.intro.append({"text": levelProperties.introMessage[i]})
+            }
         } else {
             items.tutorialInstruction.index = -1
         }

@@ -85,7 +85,7 @@ ActivityBase {
         }
 
         // Needed to get keyboard focus on IntroMessage
-        Keys.forwardTo: [intro]
+        Keys.forwardTo: [introMessage]
 
         // Add here the QML items you need to access in javascript
         QtObject {
@@ -103,7 +103,7 @@ ActivityBase {
             property alias world: physicsWorld
             property alias landing: landing
             property alias ground: ground
-            property alias intro: intro
+            property alias introMessage: introMessage
             property alias ok: ok
             property alias leftRightControl: leftRightControl
             property alias upDownControl: upDownControl
@@ -143,7 +143,7 @@ ActivityBase {
             //timeStep: 1.0/60.0 // default: 60Hz
 
             onStepped: {
-                if(intro.visible) return;
+                if(introMessage.visible) return;
                 if (Math.abs(rocket.body.linearVelocity.y) > 0.01)  // need to store velocity before it is aaaalmost 0 because of ground/landing contact
                     items.lastVelocity = items.velocity;
                 items.velocity = rocket.body.linearVelocity.y;
@@ -660,7 +660,7 @@ ActivityBase {
             height: upButton.height + downButton.height + 2 * GCStyle.baseMargins
             visible: items.onScreenControls
 
-            z: 19 // below intro, above the rest
+            z: 19 // below introMessage, above the rest
             opacity: 0.4
             spacing: 2 * GCStyle.baseMargins
 
@@ -688,7 +688,7 @@ ActivityBase {
             height: leftButton.height + GCStyle.baseMargins
             visible: items.onScreenControls
 
-            z: 19 // below intro, on top of the rest
+            z: 19 // below introMessage, on top of the rest
             opacity: 0.4
             spacing: 2 * GCStyle.baseMargins
 
@@ -763,7 +763,8 @@ ActivityBase {
         }
 
         IntroMessage {
-            id: intro
+            id: introMessage
+            intro: ListModel {}
             onIntroDone: {
                 physicsWorld.running = true;
             }

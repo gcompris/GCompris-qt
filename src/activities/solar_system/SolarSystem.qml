@@ -151,18 +151,34 @@ ActivityBase {
 
             readonly property string commonInstruction: qsTr("Mode: <font color=\"#3bb0de\">%1</font><br><br>There are two modes in the activity which you can switch from the configuration window:<br><b>1. Learning mode</b> - In this mode you can play and learn about the Solar System.<br><b>2. Assessment mode</b> - In this mode you can test your knowledge about the Solar System.").arg(items.assessmentMode ? qsTr("Assessment") : qsTr("Learning"))
 
-            readonly property var learningModeInstructions: [
-                commonInstruction,
-                qsTr("Click on the Sun or any planet to reveal questions. Each question has 4 options, out of which one is correct."),
-                qsTr("After a planet is clicked, the Closeness meter at the bottom-right corner of the screen represents the degree of correctness of your selected answer. The least correct answer is represented by 1%. Try again until you reach a 100% closeness by following the closeness meter. If the hint button is visible, you can click on it to get a hint to find the answer.")
-            ]
+            ListModel {
+                id: learningModeInstructions
+                ListElement {
+                    text: qsTr("Click on the Sun or any planet to reveal questions. Each question has 4 options, out of which one is correct.")
+                }
+                ListElement {
+                    text: qsTr("After a planet is clicked, the Closeness meter at the bottom-right corner of the screen represents the degree of correctness of your selected answer. The least correct answer is represented by 1%. Try again until you reach a 100% closeness by following the closeness meter. If the hint button is visible, you can click on it to get a hint to find the answer.")
+                }
+                Component.onCompleted: {
+                    insert(0, {"text": message.commonInstruction})
+                }
+            }
 
-            readonly property var assessmentModeInstructions: [
-                commonInstruction,
-                qsTr("There are 20 questions initially with 4 options each. The progress bar at the bottom right of the screen shows your percentage score."),
-                qsTr("If your answer is correct, your score increases.<br>If your answer is wrong, your score decreases and one more question will be asked in the end along with the incorrectly answered question.<br>A maximum of 25 questions will be asked after which no more question will be added."),
-                qsTr("You should score above 90% to pass the assessment and become a Solar System expert!")
-            ]
+            ListModel {
+                id: assessmentModeInstructions
+                ListElement {
+                    text: qsTr("There are 20 questions initially with 4 options each. The progress bar at the bottom right of the screen shows your percentage score.")
+                }
+                ListElement {
+                    text: qsTr("If your answer is correct, your score increases.<br>If your answer is wrong, your score decreases and one more question will be asked in the end along with the incorrectly answered question.<br>A maximum of 25 questions will be asked after which no more question will be added.")
+                }
+                ListElement {
+                    text: qsTr("You should score above 90% to pass the assessment and become a Solar System expert!")
+                }
+                Component.onCompleted: {
+                    insert(0, {"text": message.commonInstruction})
+                }
+            }
 
             intro: items.assessmentMode ? assessmentModeInstructions : learningModeInstructions
 

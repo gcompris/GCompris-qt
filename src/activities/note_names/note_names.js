@@ -32,7 +32,8 @@ function start(items_, timerNormalInterval_) {
     items.currentLevel = Core.getInitialLevel(numberOfLevel)
     items.doubleOctave.coloredKeyLabels = dataset.referenceNotes[levels[0]["clef"]]
     items.doubleOctave.currentOctaveNb = 1
-    items.introMessage.intro = [dataset.objective]
+    items.introMessage.intro.clear();
+    items.introMessage.intro.append({"text": dataset.objective});
     initLevel()
 }
 

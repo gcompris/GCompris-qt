@@ -124,10 +124,68 @@ ActivityBase {
             anchors.bottomMargin: 10 * ApplicationInfo.ratio + parent.height * 0.4 // height of controlBackground in controls
         }
 
+        ListModel {
+            id: tutoSubmarine
+            ListElement {
+                text: qsTr("Move the submarine to the other side of the screen.")
+            }
+            ListElement {
+                text: qsTr("The leftmost item in the control panel is the engine of the submarine, indicating the current speed of the submarine.")
+            }
+            ListElement {
+                text: qsTr("Increase or decrease the velocity of the submarine using the engine.")
+            }
+            ListElement {
+                text: qsTr("Press the + button to increase the velocity, or the - button to decrease the velocity.")
+            }
+        }
+
+        ListModel {
+            id: tutoBallast
+            ListElement {
+                text: qsTr("The item next to the engine is the ballast tank.")
+            }
+            ListElement {
+                text: qsTr("The ballast tanks are used to float or dive under water.")
+            }
+            ListElement {
+                text: qsTr("If the ballast tanks are empty, the submarine will float. If the ballast tanks are full of water, the submarine will dive underwater.")
+            }
+            ListElement {
+                text: qsTr("Turning the upper valve on or off will alternatively allow or stop the water from filling in the ballast tank, thus allowing it to dive underwater.")
+            }
+            ListElement {
+                text: qsTr("Turning the lower valve on or off will alternatively allow or stop the water from flushing out the ballast tank, thus allowing it to float on the surface of the water.")
+            }
+        }
+
+        ListModel {
+            id: tutoDivingPlanes
+            ListElement {
+                text: qsTr("The rightmost item in the control panel controls the diving planes of the submarine.")
+            }
+            ListElement {
+                text: qsTr("The diving planes in a submarine are used to control the depth of the submarine accurately once it is underwater.")
+            }
+            ListElement {
+                text: qsTr("Once the submarine is moving underwater, increasing or decreasing the angle of the planes will increase and decrease the depth of the submarine.")
+            }
+            ListElement {
+                text: qsTr("The + button will increase the depth of the submarine, while the - button will decrease the depth of the submarine.")
+            }
+            ListElement {
+                text: qsTr("Grab the crown to open the gate.")
+            }
+            ListElement {
+                text: qsTr("Check out the help menu for the keyboard controls.")
+            }
+        }
+
         IntroMessage {
             id: tutorial
             customIntroArea: introArea
             z: 100
+            intro: items.currentLevel == 0 ? tutoSubmarine : items.currentLevel == 1 ? tutoBallast : tutoDivingPlanes
             onIntroDone: {
                 tutorial.visible = false
             }

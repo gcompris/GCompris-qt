@@ -121,10 +121,14 @@ ActivityBase {
             onIntroDone: {
                 trainAnimationTimer.start()
             }
-            intro: [
-                qsTr("Observe and remember the train before the timer ends and then drag the items to set up a similar train."),
-                qsTr("If you forgot the model, you can click on the Hint button to view it again.")
-            ]
+            intro: ListModel {
+                ListElement {
+                    text: qsTr("Observe and remember the train before the timer ends and then drag the items to set up a similar train.")
+                }
+                ListElement {
+                    text: qsTr("If you forgot the model, you can click on the Hint button to view it again.")
+                }
+            }
         }
 
         // Top Display Area
