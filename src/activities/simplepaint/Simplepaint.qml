@@ -43,8 +43,8 @@ ActivityBase {
                     items.selectedColor = items.colors[items.current_color];
                     moveColorSelector();
                 } else {
-                    if(cursor.iy > 0) {
-                        cursor.iy--;
+                    if(cursor.nbY > 0) {
+                        cursor.nbY--;
                     }
                     if(spaceIsPressed) {
                         spawnBlock();
@@ -60,8 +60,8 @@ ActivityBase {
                     items.selectedColor = items.colors[items.current_color];
                     moveColorSelector();
                 }else {
-                    if(cursor.iy < (Activity.nby - 1)) {
-                        cursor.iy++;
+                    if(cursor.nbY < (items.nbY - 1)) {
+                        cursor.nbY++;
                     }
                     if(spaceIsPressed) {
                         spawnBlock();
@@ -71,8 +71,8 @@ ActivityBase {
 
             if(event.key === Qt.Key_Right) {
                 if(!isColorTab) {
-                    if(cursor.ix < (Activity.nbx - 1)) {
-                        cursor.ix++;
+                    if(cursor.nbX < (items.nbX - 1)) {
+                        cursor.nbX++;
                     }
                     if(spaceIsPressed) {
                         spawnBlock();
@@ -82,8 +82,8 @@ ActivityBase {
 
             if(event.key === Qt.Key_Left) {
                 if(!isColorTab) {
-                    if(cursor.ix > 0) {
-                        cursor.ix--;
+                    if(cursor.nbX > 0) {
+                        cursor.nbX--;
                     }
                     if(spaceIsPressed) {
                         spawnBlock();
@@ -93,8 +93,8 @@ ActivityBase {
 
             if(event.key === Qt.Key_Space || event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
                 if(!isColorTab) {
-                spawnBlock();
-                spaceIsPressed = true;
+                    spawnBlock();
+                    spaceIsPressed = true;
                 } else {
                     changeTab();
                 }
@@ -117,17 +117,12 @@ ActivityBase {
 
         function spawnBlock() {
             if(!isColorTab) {
-                var block = rootItem.childAt(cursor.x, cursor.y);
+                var block = paintGrid.childAt(cursor.x, cursor.y);
                 if(block)
                     block.touched();
             }else {
                 changeTab();
             }
-        }
-
-        function refreshCursor() {
-            cursor.nbx = Activity.nbx;
-            cursor.nby = Activity.nby;
         }
 
         function moveColorSelector() {
@@ -147,54 +142,51 @@ ActivityBase {
             activity.stop.connect(stop);
         }
 
-        //Cursor to navigate in cells
-        PaintCursor {
-            id: cursor
-            visible: items.keyboardControls && !isColorTab
-            initialX: colorSelector.width + 20 * ApplicationInfo.ratio
-            z: 1
-            ix: 0
-            iy: 0
-            nbx: 20
-            nby: 10
-        }
-
-
         QtObject {
             id: items
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
-            property alias paintModel: paintModel
+            property int paintModel: 1
+            property alias paintArea: paintArea
             property alias colorSelector: colorSelector
-            property alias gridLayout: gridLayout
+            property alias cursor: cursor
             property var colors: bar.level < 10 ? Activity.colorsSimple : Activity.colorsAdvanced
             property int current_color: 1
             property string selectedColor: colors[current_color]
             property string backgroundImg: Activity.backgrounds[items.currentLevel]
             property bool keyboardControls: false
+            property int paintPixelSize: Math.min(paintArea.width / nbX, paintArea.height / nbY)
+            property int nbX: 1
+            property int nbY: 1
         }
 
         onStart: Activity.start(items, activityBackground);
         onStop: Activity.stop();
 
         MultiPointTouchArea {
-            anchors.fill: parent
+            anchors.fill: paintArea
+            property PaintItem block: null
             onPressed: (touchPoints) => {
                 items.keyboardControls = false;
                 isColorTab = false;
+                block = null;
                 checkTouchPoint(touchPoints);
             }
             onTouchUpdated: (touchPoints) => checkTouchPoint(touchPoints);
-        }
+            onReleased: {
+                if(block) {
+                    cursor.nbX = block.x / items.paintPixelSize;
+                    cursor.nbY = block.y / items.paintPixelSize;
+                }
+            }
 
-        function checkTouchPoint(touchPoints) {
-            for(var i in touchPoints) {
-                var touch = touchPoints[i]
-                if(rootItem.childAt(touch.x, touch.y)) {
-                    var block = rootItem.childAt(touch.x, touch.y)
-                    cursor.ix = block.ix
-                    cursor.iy = block.iy
-                    block.touched()
+            function checkTouchPoint(touchPoints) {
+                for(var i in touchPoints) {
+                    var touch = touchPoints[i];
+                    if(paintGrid.childAt(touch.x, touch.y)) {
+                        block = paintGrid.childAt(touch.x, touch.y);
+                        block.touched();
+                    }
                 }
             }
         }
@@ -204,41 +196,27 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/sounds/scroll.wav"
         }
 
-        Item {
-            id: rootItem
-            anchors.fill: parent
-        }
-
-        Item {
-            id: gridLayout
-            anchors.fill: parent
-            anchors.bottomMargin: 1.4 * bar.height
-            anchors.leftMargin: colorSelector.width + 20 * ApplicationInfo.ratio
-        }
-
-        ListModel {
-            id: paintModel
-        }
-
         Column {
             id: colorSelectorColumn
-            spacing: 2
+            spacing: GCStyle.baseMargins
+            width: 70 * ApplicationInfo.ratio
 
             anchors {
                 left: activityBackground.left
                 top: activityBackground.top
                 bottom: bar.top
+                topMargin: GCStyle.baseMargins
             }
 
             // The color selector
             GridView {
                 id: colorSelector
                 clip: true
-                width: cellWidth + 10 * ApplicationInfo.ratio
-                height: colorSelectorColumn.height - (2 + colorSelectorButton.height)
+                width: parent.width
+                height: colorSelectorColumn.height - colorSelectorButton.height - GCStyle.baseMargins
                 model: items.colors
-                cellWidth: 60 * ApplicationInfo.ratio
-                cellHeight: cellWidth
+                cellWidth: width
+                cellHeight: cellWidth - GCStyle.baseMargins
                 maximumFlickVelocity: activity.height
                 boundsBehavior: Flickable.StopAtBounds
 
@@ -250,24 +228,25 @@ ActivityBase {
                 }
 
                 delegate: Item {
+                    id: colorSlot
                     width: colorSelector.cellWidth
-                    height: width
+                    height: colorSelector.cellHeight - GCStyle.baseMargins
                     Rectangle {
                         id: rect
-                        width: parent.width
-                        height: width
-                        radius: width * 0.1
+                        width: parent.height
+                        height: parent.height
+                        anchors.centerIn: parent
+                        radius: GCStyle.halfMargins
                         z: iAmSelected ? 10 : 1
                         color: modelData
-                        border.color: "#373737"
+                        border.color: GCStyle.darkBorder
                         border.width: modelData == "#00FFFFFF" ? 0 : 1
 
                         Image {
-                            scale: 0.9
-                            width: rect.height
-                            height: rect.height
-                            sourceSize.width: rect.height
-                            sourceSize.height: rect.height
+                            width: parent.width
+                            height: parent.height
+                            sourceSize.width: width
+                            sourceSize.height: height
                             source: Activity.url + "eraser.svg"
                             visible: modelData == "#00FFFFFF" ? 1 : 0
                             anchors.centerIn: parent
@@ -276,11 +255,12 @@ ActivityBase {
                         Rectangle {
                             id: colorCursor
                             visible: items.keyboardControls && isColorTab
-                            anchors.fill: parent
-                            scale: 1.1
+                            anchors.centerIn: parent
+                            width: rect.width + border.width * 0.5
+                            height: width
                             color: "#00FFFFFF"
-                            radius: parent.radius
-                            border.width: rect.iAmSelected ? radius : 0
+                            radius: GCStyle.halfMargins
+                            border.width: rect.iAmSelected ? GCStyle.halfMargins : 0
                             border.color: "#E0FFFFFF"
                         }
 
@@ -292,7 +272,7 @@ ActivityBase {
                                 when: !rect.iAmSelected && !mouseArea.containsMouse
                                 PropertyChanges {
                                     rect {
-                                        scale: 0.8
+                                        scale: 0.9
                                     }
                                 }
                             },
@@ -301,7 +281,7 @@ ActivityBase {
                                 when: mouseArea.pressed
                                 PropertyChanges {
                                     rect {
-                                        scale: 0.7
+                                        scale: 0.8
                                     }
                                 }
                             },
@@ -310,7 +290,7 @@ ActivityBase {
                                 when: mouseArea.containsMouse
                                 PropertyChanges {
                                     rect {
-                                        scale: 1.1
+                                        scale: 1
                                     }
                                 }
                             },
@@ -327,7 +307,7 @@ ActivityBase {
 
                         SequentialAnimation {
                             id: anim
-                            running: rect.iAmSelected
+                            running: rect.iAmSelected && !mouseArea.containsMouse
                             loops: Animation.Infinite
                             alwaysRunToEnd: true
                             NumberAnimation {
@@ -374,7 +354,7 @@ ActivityBase {
             GCButtonScroll {
                 id: colorSelectorButton
                 isHorizontal: true
-                width: colorSelectorColumn.width - 10 * ApplicationInfo.ratio
+                width: colorSelectorColumn.width + GCStyle.baseMargins
                 height: width * heightRatio
                 onUp: colorSelector.flick(0, 1400)
                 onDown: colorSelector.flick(0, -1400)
@@ -384,25 +364,41 @@ ActivityBase {
         }
 
         Item {
+            id: paintArea
             anchors {
                 top: parent.top
                 left: colorSelectorColumn.right
                 right: parent.right
                 bottom: parent.bottom
+                margins: GCStyle.baseMargins
+                bottomMargin: bar.height * 1.4
             }
 
-            Repeater {
-                model: paintModel
-                parent: rootItem
+            Grid {
+                id: paintGrid
+                columns: items.nbX
+                rows: items.nbY
+                anchors.fill: parent
 
-                PaintItem {
-                    initialX: colorSelector.width + 20 * ApplicationInfo.ratio
-                    ix: m_ix
-                    iy: m_iy
-                    nbx: m_nbx
-                    nby: m_nby
-                    color: items.colors[0]
+                Repeater {
+                    model: items.paintModel
+                    PaintItem {
+                        width: items.paintPixelSize
+                        height: items.paintPixelSize
+                        border.width: items.currentLevel > 0 ? 0 : 1
+                        color: items.colors[0]
+                    }
                 }
+            }
+
+            //Cursor to navigate in cells
+            PaintCursor {
+                id: cursor
+                visible: items.keyboardControls && !activityBackground.isColorTab
+                x: nbX * items.paintPixelSize
+                y: nbY * items.paintPixelSize
+                width: items.paintPixelSize
+                height: items.paintPixelSize
             }
         }
 

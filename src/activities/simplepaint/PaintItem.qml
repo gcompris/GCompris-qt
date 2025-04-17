@@ -11,30 +11,11 @@
 import QtQuick 2.12
 import "simplepaint.js" as Activity
 import core 1.0
+import "../../core"
 
-Item {
+Rectangle {
     id: paint
-    property alias color: rectangle.color
-    property int ix
-    property int iy
-    property int nbx
-    property int nby
-    property int initialX
-    // Warning testing parent here, just to avoid an error at deletion time
-    property int r: parent ? Math.min(Math.floor((parent.width - initialX) / nbx / 2), Math.floor((parent.height - bar.height) / nby / 2)) : 0
-    property int offsetX: parent ? Math.floor((initialX + parent.width % (width * nbx)) / 2) : 0
-    property int offsetY: parent ? 10 : 0
-    x: width * ix + offsetX
-    y: height * iy + offsetY
-    width: r * 2
-    height: r * 2
-
-    Rectangle {
-        id: rectangle
-        anchors.fill: parent
-        border.width: bar.level == 1 ? 1 : 0
-        border.color: "black"
-    }
+    border.color: GCStyle.darkBorder
 
     function touched() {
         paint.color = Activity.getColor()

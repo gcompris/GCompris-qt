@@ -12,33 +12,17 @@ import QtQuick 2.12
 import "simplepaint.js" as Activity
 import core 1.0
 
-
 Item {
     id: cursor
-    property int ix
-    property int iy
-    property int nbx
-    property int nby
-    property int initialX
-    // Warning testing parent here, just to avoid an error at deletion time
-    property int r: parent ? Math.min(Math.floor((parent.width - initialX) / nbx / 2), Math.floor((parent.height - bar.height) / nby / 2)) : 0
-    property int offsetX: parent ? Math.floor((initialX + parent.width % (width * nbx)) / 2) : 0
-    property int offsetY: parent ? 10 : 0
-    x: width * ix + offsetX
-    y: height * iy + offsetY
-    width: r * 2
-    height: r * 2
-
+    property int nbX: 0
+    property int nbY: 0
     Image {
-        scale: 0.9
-        width: parent.height
-        height: parent.height
-        sourceSize.width: height
-        sourceSize.height: height
+        width: parent.height * 0.9
+        height: width
+        sourceSize.width: width
+        sourceSize.height: width
         source: Activity.url + "cursor.svg"
         visible: true
         anchors.centerIn: parent
     }
-
-
 }
