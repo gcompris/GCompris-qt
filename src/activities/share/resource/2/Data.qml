@@ -9,6 +9,8 @@
  */
 import core 1.0
 
+// NOTE: Never put more than max 6 children and 6 candy per children.
+
 Data {
     objective: qsTr("Maximum 25 pieces of candy and 5 kids, possible rest.")
     difficulty: 5
