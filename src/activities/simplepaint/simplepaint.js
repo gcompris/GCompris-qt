@@ -117,10 +117,6 @@ var backgrounds = [
 
 var items
 
-// The size of the array
-var nbx
-var nby
-
 var numberOfLevel = backgrounds.length
 
 var activityBackground
@@ -136,22 +132,21 @@ function stop() {
 }
 
 function initLevel() {
-    items.paintModel.clear()
+    items.paintModel = 0
     items.current_color = 1
     items.selectedColor = items.colors[1]
     items.colorSelector.positionViewAtBeginning()
-    nbx = 20 + items.currentLevel
-    nby = Math.floor(nbx * (items.gridLayout.height / items.gridLayout.width))
-    activityBackground.refreshCursor()
+    var initialPixelSize = Math.min(items.paintArea.width, items.paintArea.height) / (20 + items.currentLevel)
+    items.nbX = items.paintArea.width / initialPixelSize
+    items.nbY = items.paintArea.height / initialPixelSize
+    items.paintModel = items.nbX * items.nbY
+    resetCursor();
+}
 
-    var model = []
-    for(var ix = 0;  ix < nbx; ++ix) {
-        for(var iy = 0;  iy < nby; ++iy) {
-            items.paintModel.append( {
-               "m_ix": ix, "m_iy": iy, "m_nbx": nbx, "m_nby": nby,
-            } )
-        }
-    }
+function resetCursor() {
+    items.keyboardControls = false;
+    items.cursor.nbX = 0;
+    items.cursor.nbY = 0;
 }
 
 function nextLevel() {
