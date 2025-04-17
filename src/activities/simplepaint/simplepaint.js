@@ -1,10 +1,12 @@
 /* GCompris - simplepaint.js
  *
  * SPDX-FileCopyrightText: 2014 Bruno Coudoin
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Christof Petig and Ingo Konrad (GTK+ version)
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (refactoring)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
