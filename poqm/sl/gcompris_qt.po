@@ -22420,7 +22420,7 @@ msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "Nauči se o električnem sistemu, ki temelji na obnovljivi energiji."
 
-#: activities/renewable_energy/RenewableEnergy.qml:332
+#: activities/renewable_energy/RenewableEnergy.qml:333
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -22681,13 +22681,13 @@ msgid ""
 msgstr ""
 "Zdaj ko poznate pravila, lahko berete in pišete števila v rimskih številkah."
 
-#: activities/roman_numerals/RomanNumerals.qml:386
+#: activities/roman_numerals/RomanNumerals.qml:385
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Rimska vrednost: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:387
+#: activities/roman_numerals/RomanNumerals.qml:386
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"

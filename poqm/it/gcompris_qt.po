@@ -22786,7 +22786,7 @@ msgstr ""
 "Scopri come funziona un sistema elettrico basato sulle energie rinnovabili. "
 "Divertiti."
 
-#: activities/renewable_energy/RenewableEnergy.qml:332
+#: activities/renewable_energy/RenewableEnergy.qml:333
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -23054,13 +23054,13 @@ msgstr ""
 "Ora conosci le regole, puoi leggere e scrivere tutti i numeri in numeri "
 "romani."
 
-#: activities/roman_numerals/RomanNumerals.qml:386
+#: activities/roman_numerals/RomanNumerals.qml:385
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Valore romano: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:387
+#: activities/roman_numerals/RomanNumerals.qml:386
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
