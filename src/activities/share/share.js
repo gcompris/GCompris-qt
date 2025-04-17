@@ -1,6 +1,11 @@
 /* GCompris - share.js
  *
  * SPDX-FileCopyrightText: 2016 Stefan Toncu <stefan.toncu29@gmail.com>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
+ *
+ * Authors:
+ *   Stefan Toncu <stefan.toncu29@gmail.com> (initial version)
+ *   Timothée Giet <animtim@gmail.com> (refactoring)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
