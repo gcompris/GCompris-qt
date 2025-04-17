@@ -20,11 +20,11 @@ Data {
         [
             {
                 "randomisedInputData": true,
-                "maxBoys": 1,
-                "maxGirls": 3,
-                "maxCandies": 6,
+                "maxBoys": 5,
+                "maxGirls": 1,
+                "maxCandies": 36,
                 "alreadyPlaced": false
-            },
+            }/*,
             {
                 "randomisedInputData": true,
                 "maxBoys": 2,
@@ -200,7 +200,7 @@ Data {
                 "maxGirls": 3,
                 "maxCandies": 30,
                 "alreadyPlaced": true
-            }
+            }*/
         ]
     ]
 }

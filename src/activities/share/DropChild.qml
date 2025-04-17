@@ -12,12 +12,11 @@ import "../../core"
 
 Rectangle {
     id: dropChild
-    width: items.cellSize * 3
-    height: items.cellSize * 4.5
-    color: "transparent"
-    radius: 0.2
     z: 5
+    color: "#40ffffff"
+    radius: GCStyle.halfMargins
 
+    readonly property int subSizeUnit: width / 3
     property string name
     property alias childImage: childImage
     property alias area: area
@@ -26,11 +25,13 @@ Rectangle {
 
     Image {
         id: childImage
-        width: items.cellSize
-        sourceSize.width: width
-        anchors.bottom: area.top
+        width: dropChild.subSizeUnit
+        height: dropChild.subSizeUnit - GCStyle.halfMargins
+        sourceSize.height: height
+        anchors.top: parent.top
         anchors.left: parent.left
-        anchors.leftMargin: 20
+        anchors.topMargin: GCStyle.halfMargins
+        anchors.leftMargin: GCStyle.baseMargins
         source: "resource/images/" + name + ".svg"
         fillMode: Image.PreserveAspectFit
         mipmap: true
@@ -39,23 +40,34 @@ Rectangle {
     //displays the number of candies each child has
     GCText {
         id: candyCount
-        color: "#373737"
-        anchors.bottom: area.top
+        color: GCStyle.darkText
+        width: dropChild.subSizeUnit
+        height: dropChild.subSizeUnit
+        anchors.top: parent.top
         anchors.right: parent.right
-        anchors.rightMargin: 20
+        anchors.rightMargin: GCStyle.baseMargins
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
+        fontSizeMode: Text.Fit
 
         //"listModel.get(index) ? ... " because of an error received at startup of each level
         text: (listModel.get(index)) ? listModel.get(index).countS : ""
     }
 
     Rectangle {
-        id: area
-        width: items.cellSize * 3
-        height: items.cellSize * 3
-        anchors.bottom: parent.bottom
-        radius: width * 0.07
+        width: area.width
+        height: GCStyle.baseMargins
+        anchors.top: area.top
+        color: GCStyle.lightBg
+    }
 
-        color: "#f2f2f2"
+    Rectangle {
+        id: area
+        width: dropChild.subSizeUnit * 3
+        height: dropChild.subSizeUnit * 2
+        anchors.bottom: parent.bottom
+        radius: GCStyle.halfMargins
+        color: GCStyle.lightBg
 
         property var childCoordinate: repeaterDropAreas.mapToItem(activityBackground, dropChild.x, dropChild.y)
         property var candyCoord: candyWidget.mapToItem(activityBackground, candyWidget.element.x, candyWidget.element.y)
@@ -120,9 +132,10 @@ Rectangle {
 
         Flow {
             id: candyDropArea
-            spacing: 5
+            spacing: GCStyle.halfMargins
             width: parent.width
             height: parent.height
+            y: GCStyle.halfMargins * 0.5
 
             Repeater {
                 id: repeaterCandyDropArea
@@ -130,8 +143,9 @@ Rectangle {
 
                 Image {
                     id: candyArea
-                    sourceSize.width: items.cellSize * 0.6
-                    sourceSize.height: items.cellSize * 1.2
+                    width: dropChild.subSizeUnit - GCStyle.halfMargins
+                    height: dropChild.subSizeUnit - GCStyle.halfMargins
+                    sourceSize.height: height
                     source: "resource/images/candy.svg"
                     fillMode: Image.PreserveAspectFit
 
@@ -146,7 +160,7 @@ Rectangle {
                         enabled: !items.buttonsBlocked
 
                         onPressed: {
-                            instruction.hide()
+                            instructionPanel.hide()
                             //set the initial position
                             candyArea.lastX = candyArea.x
                             candyArea.lastY = candyArea.y
@@ -158,16 +172,16 @@ Rectangle {
                             //coordinates of "boy/girl rectangle" in background coordinates
                             var child = dropAreas.mapToItem(items.activityBackground, currentChild.x, currentChild.y)
                             return (candy.x > child.x &&
-                                candy.x < child.x + currentChild.area.width &&
-                                candy.y > child.y + currentChild.childImage.height &&
-                                candy.y < child.y + currentChild.childImage.height + currentChild.area.height)
+                                candy.x < child.x + currentChild.width &&
+                                candy.y > child.y &&
+                                candy.y < child.y + currentChild.height)
                         }
 
                         onReleased: {
                             //move this rectangle/grid to its previous state
                             dropChild.z--
 
-                            var candyCoordinate = candyArea.parent.mapToItem(activityBackground, candyArea.x, candyArea.y)
+                            var candyCoordinate = candyArea.mapToItem(activityBackground, 0, 0)
 
                             //check where the candy is being dropped
                             for (var i = 0 ; i < listModel.count ; i++) {

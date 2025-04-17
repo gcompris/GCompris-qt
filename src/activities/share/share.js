@@ -136,7 +136,7 @@ function resetBoard() {
     items.activityBackground.resetCandy()
 
     items.acceptCandy = false
-    items.instruction.opacity = 1
+    items.instructionPanel.opacity = 1
     items.listModel.clear()
 
     items.girlWidget.current = 0
