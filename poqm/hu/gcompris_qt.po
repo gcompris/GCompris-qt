@@ -22800,7 +22800,7 @@ msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "Tanuljunk játékosan a megújuló enegriaforrásokról. "
 
-#: activities/renewable_energy/RenewableEnergy.qml:332
+#: activities/renewable_energy/RenewableEnergy.qml:333
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -23061,13 +23061,13 @@ msgstr ""
 "Most, hogy tudod a szabályokat, bármelyik arab számot átírhatod római szám "
 "alakba."
 
-#: activities/roman_numerals/RomanNumerals.qml:386
+#: activities/roman_numerals/RomanNumerals.qml:385
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Értéke római számban: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:387
+#: activities/roman_numerals/RomanNumerals.qml:386
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"

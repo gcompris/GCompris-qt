@@ -23072,7 +23072,7 @@ msgstr ""
 "Научете за електрическата мрежа, базирана на възобновяема енергия. "
 "Забавлявайте се."
 
-#: activities/renewable_energy/RenewableEnergy.qml:332
+#: activities/renewable_energy/RenewableEnergy.qml:333
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -23341,13 +23341,13 @@ msgstr ""
 "Сега, когато знаеш правилата, можеш да разчиташ и пишеш цифрите с римски "
 "числа."
 
-#: activities/roman_numerals/RomanNumerals.qml:386
+#: activities/roman_numerals/RomanNumerals.qml:385
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Римска стойност: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:387
+#: activities/roman_numerals/RomanNumerals.qml:386
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"

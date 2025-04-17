@@ -23466,7 +23466,7 @@ msgstr ""
 "Opi uusiutuvaan energiaan perustuvasta sähköjärjestelmästä. Pidä hauskaa!Opi "
 "uusiutuvaan energiaan perustuvasta sähköjärjestelmästä. Pidä hauskaa!."
 
-#: activities/renewable_energy/RenewableEnergy.qml:332
+#: activities/renewable_energy/RenewableEnergy.qml:333
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -23739,13 +23739,13 @@ msgstr ""
 "Nyt kun tiedät säännöt, voit lukea ja kirjoittaa minkä tahansa luvun "
 "roomalaisin numeroin."
 
-#: activities/roman_numerals/RomanNumerals.qml:386
+#: activities/roman_numerals/RomanNumerals.qml:385
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Roomalainen arvo: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:387
+#: activities/roman_numerals/RomanNumerals.qml:386
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"

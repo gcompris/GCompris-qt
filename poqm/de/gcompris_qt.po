@@ -23873,7 +23873,7 @@ msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Lerne etwas über ein elektrisches System mit erneuerbarer Energie. Viel Spaß!"
 
-#: activities/renewable_energy/RenewableEnergy.qml:332
+#: activities/renewable_energy/RenewableEnergy.qml:333
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -24159,13 +24159,13 @@ msgstr ""
 "Jetzt kennst du die Regeln und kannst Zahlen in römischen Ziffern lesen und "
 "schreiben."
 
-#: activities/roman_numerals/RomanNumerals.qml:386
+#: activities/roman_numerals/RomanNumerals.qml:385
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Römischer Wert: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:387
+#: activities/roman_numerals/RomanNumerals.qml:386
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"

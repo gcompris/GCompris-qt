@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-03-16 08:05+0200\n"
+"PO-Revision-Date: 2025-04-16 08:04+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 24.12.2\n"
+"X-Generator: Lokalize 24.12.3\n"
 "X-Qt-Contexts: true\n"
 "X-Poedit-Bookmarks: -1,2919,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
@@ -22511,7 +22511,7 @@ msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "ללמוד על מערכת חשמל המבוססת על אנרגיה מתחדשת. בכיף."
 
-#: activities/renewable_energy/RenewableEnergy.qml:332
+#: activities/renewable_energy/RenewableEnergy.qml:333
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -22769,13 +22769,13 @@ msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
 msgstr "עכשיו כשיודעים את החוקים, אפשר לקרוא ולכתוב ספרות רומיות."
 
-#: activities/roman_numerals/RomanNumerals.qml:386
+#: activities/roman_numerals/RomanNumerals.qml:385
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "ערך רומי: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:387
+#: activities/roman_numerals/RomanNumerals.qml:386
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -26269,10 +26269,9 @@ msgid "Write your own addition and solve it."
 msgstr "לכתוב תרגיל חיבור משלך ולפתור אותו."
 
 #: activities/vertical_addition/resource/2/Data.qml:12
-#, fuzzy
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines, without carry."
-msgstr "לכתוב לפתור חיבור, 2 ספרות, 2 שורות, בלי ."
+msgstr "לכתוב ולפתור חיבור, 2 ספרות, 2 שורות, בלי לזכור 1."
 
 #: activities/vertical_addition/resource/3/Data.qml:12
 msgctxt "Data|"
@@ -26282,32 +26281,32 @@ msgstr ""
 #: activities/vertical_addition/resource/4/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "לכתוב ולפתור חיבור, 2 ספרות, 2 שורות."
 
 #: activities/vertical_addition/resource/5/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 3 lines."
-msgstr ""
+msgstr "לכתוב ולפתור חיבור, 2 ספרות, 3 שורות."
 
 #: activities/vertical_addition/resource/6/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "לפתור חיבור, 3 ספרות, 2 שורות."
 
 #: activities/vertical_addition/resource/7/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "לכתוב ולפתור חיבור, 3 ספרות, 2 שורות."
 
 #: activities/vertical_addition/resource/8/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 3 lines."
-msgstr ""
+msgstr "לפתור חיבור, 3 ספרות, 3 שורות."
 
 #: activities/vertical_addition/resource/9/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 2 lines."
-msgstr ""
+msgstr "לפתור חיבור, 4 ספרות, 2 שורות."
 
 #. Activity title
 #: activities/vertical_subtraction/ActivityInfo.qml:15
@@ -26368,7 +26367,7 @@ msgstr ""
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "לפתור חיסור, 2 ספרות, 2 שורות, בלי לזכור 1."
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
@@ -26392,7 +26391,7 @@ msgstr "לכתוב חיסור משלך ולפתור אותו."
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "לכתוב ולפתור חיסור, 2 ספרות, 2 שורות, בלי לזכור 1."
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
@@ -26699,14 +26698,10 @@ msgid "Add splash screen at startup"
 msgstr "הוספת מסך פתיחה עם העלייה"
 
 #: core/ChangeLog.qml:43
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid "New command-line option to switch the renderer (--renderer renderer)"
-msgstr "אפשרות חדשה בשורת-הפקודה לרשום את כל הפעילויות ולהתחיל באחת ספציפית."
+msgstr ""
+"אפשרות חדשה בשורת הפקודות להחליף את מעבד התצוגה (‎--rendererer renderer)"
 
 #: core/ChangeLog.qml:52
 msgctxt "ChangeLog|"

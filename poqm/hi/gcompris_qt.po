@@ -25424,7 +25424,7 @@ msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "अक्षय उर्जा पर आधारित विद्युत प्रणाली के बारे में सीखें. मोज करें"
 
-#: activities/renewable_energy/RenewableEnergy.qml:332
+#: activities/renewable_energy/RenewableEnergy.qml:333
 #, fuzzy
 #| msgctxt "RenewableEnergy|"
 #| msgid ""
@@ -25715,13 +25715,13 @@ msgid ""
 msgstr ""
 "अब आप नियमों को जानते हैं, आप रोमन अंकों में किसी भी संख्या को पढ़ सकते हैं और लिख सकते हैं।"
 
-#: activities/roman_numerals/RomanNumerals.qml:386
+#: activities/roman_numerals/RomanNumerals.qml:385
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "रोमन मूल्य:  %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:387
+#: activities/roman_numerals/RomanNumerals.qml:386
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"

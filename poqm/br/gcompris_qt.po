@@ -22967,7 +22967,7 @@ msgstr ""
 "Desk traoù diwar-benn ur reizhiad tredan diwar ar gremm adnevesadus. "
 "Plijadur dit."
 
-#: activities/renewable_energy/RenewableEnergy.qml:332
+#: activities/renewable_energy/RenewableEnergy.qml:333
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -23230,13 +23230,13 @@ msgstr ""
 "Gouzout a rez bremañ ar reolennoù, gallout a rez lenn ha skrivañ niveroù "
 "gant sifroù roman."
 
-#: activities/roman_numerals/RomanNumerals.qml:386
+#: activities/roman_numerals/RomanNumerals.qml:385
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Niver roman: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:387
+#: activities/roman_numerals/RomanNumerals.qml:386
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
