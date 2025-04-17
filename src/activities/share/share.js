@@ -70,28 +70,40 @@ function setUp() {
         items.totalBoys = Math.floor(Math.random() * maxBoys) + 1
         items.totalGirls = Math.floor(Math.random() * maxGirls) + 1
         var sum = items.totalBoys + items.totalGirls
-        // use sum * 6 as top margin (max 6 candies per rectangle)
-        items.totalCandies = Math.floor(Math.random() * (5 * sum + 1)) + sum
+        // use sum * 6 as top margin (max 6 candies per rectangle, and minimum 1 per child)
+        items.totalCandies = Math.floor(Math.random() * 6 * sum) + sum
         items.nbSubLevel = levelData[items.currentLevel].length
         // stay within the max margin
         if (items.totalCandies > maxCandies)
             items.totalCandies = maxCandies
 
+        items.activityBackground.placedInGirls = 0
+        items.activityBackground.placedInBoys = 0
+        items.activityBackground.currentCandies = 0
         // depending on the levels configuration, add candies from start in a child rectangle
-        if (subLevelData.alreadyPlaced === false) {
+        if (subLevelData.alreadyPlaced) {
             items.activityBackground.placedInGirls = 0
             items.activityBackground.placedInBoys = 0
             items.activityBackground.currentCandies = 0
-        }
-        else {
-            items.activityBackground.currentCandies = items.totalCandies * 2
-            // Place randomly between 0 and 3 candies for each child
-            while (items.activityBackground.currentCandies > items.totalCandies / 3) {
-                items.activityBackground.placedInGirls = Math.floor(Math.random() * 3)
-                items.activityBackground.placedInBoys = Math.floor(Math.random() * 3)
-                items.activityBackground.currentCandies = items.totalGirls * items.activityBackground.placedInGirls
-                        + items.totalBoys * items.activityBackground.placedInBoys
+            // Max number of already placed candies depending on number of candies per children, but -1 do not place them all
+            var maxPlacedCandies = Math.floor(items.totalCandies / sum) - 1;
+            // Maximum 3 placed candies per child
+            var placedInSum = maxPlacedCandies / sum;
+            if(placedInSum < 0) {
+                placedInSum = 0;
+            } else if(placedInSum > 3) {
+                placedInSum = 3;
             }
+            for (var i = 0; i < placedInSum; i++) {
+                var inBoys = Math.round(Math.random())
+                if(inBoys == 1) {
+                    items.activityBackground.placedInBoys += 1;
+                } else {
+                    items.activityBackground.placedInGirls += 1;
+                }
+            }
+            items.activityBackground.currentCandies = items.totalGirls * items.activityBackground.placedInGirls
+                + items.totalBoys * items.activityBackground.placedInBoys
         }
         //~ singular "Place %n boy "
         //~ plural "Place %n boys "
