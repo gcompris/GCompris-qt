@@ -44,6 +44,7 @@ ActivityBase {
 
         onStart: {}
         onStop: {
+            tuxboat.state = "tuxboatRestarted"
             timer.stop()
             harbor1Sound.stop()
             harbor2Sound.stop()

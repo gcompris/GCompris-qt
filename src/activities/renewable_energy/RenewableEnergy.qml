@@ -74,6 +74,7 @@ ActivityBase {
             harbor1Sound.stop()
             harbor2Sound.stop()
             waterSound.stop()
+            hydro.item.stop()
             hydro.item.stopTimer();
             if(wind.item)
                 wind.item.stopTimer();
