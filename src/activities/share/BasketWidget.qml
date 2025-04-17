@@ -26,7 +26,5 @@ WidgetOption {
         }
     }
 
-    element {
-        opacity: 0
-    }
+    element.opacity: 0
 }

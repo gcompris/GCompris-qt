@@ -29,11 +29,10 @@ WidgetOption {
                     var childCoordinate = dropAreas.mapToItem(activityBackground, currentChild.x, currentChild.y)
                     //coordinates of "boy/girl rectangle" in background coordinates
 
-                    var currentElement = element.parent.mapToItem(activityBackground, element.x, element.y)
+                    var currentElement = element.mapToItem(activityBackground, 0, 0)
 
-                    if (currentElement.x > childCoordinate.x && currentElement.x < childCoordinate.x + currentChild.area.width &&
-                    currentElement.y > childCoordinate.y + currentChild.childImage.height &&
-                    currentElement.y < childCoordinate.y + currentChild.childImage.height + currentChild.area.height) {
+                    if (currentElement.x > childCoordinate.x && currentElement.x < childCoordinate.x + currentChild.width &&
+                    currentElement.y > childCoordinate.y && currentElement.y < childCoordinate.y + currentChild.height) {
                         if ((listModel.get(i).countS + 1) > items.maxNumberOfCandiesPerWidget) {
                             activityBackground.wrongMove.visible = true
                             continue
@@ -65,12 +64,10 @@ WidgetOption {
                     currentChild = repeaterDropAreas.itemAt(i)
                     childCoordinate = dropAreas.mapToItem(activityBackground, currentChild.x, currentChild.y)
                     //coordinates of "boy/girl rectangle" in background coordinates
-                    currentElement = element.parent.mapToItem(activityBackground, element.x, element.y)
+                    currentElement = element.mapToItem(activityBackground, element.x, element.y)
 
-                    if (currentElement.x > childCoordinate.x && currentElement.x < childCoordinate.x + currentChild.area.width &&
-                    currentElement.y > childCoordinate.y + currentChild.childImage.height &&
-                    currentElement.y < childCoordinate.y + currentChild.childImage.height + currentChild.area.height) {
-
+                    if (currentElement.x > childCoordinate.x && currentElement.x < childCoordinate.x + currentChild.width &&
+                        currentElement.y > childCoordinate.y && currentElement.y < childCoordinate.y + currentChild.height) {
                         if ((listModel.get(i).countS + 1) > items.maxNumberOfCandiesPerWidget) {
                             activityBackground.wrongMove.visible = true
                             continue

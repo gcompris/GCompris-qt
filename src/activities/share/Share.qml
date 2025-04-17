@@ -10,6 +10,7 @@ import core 1.0
 
 import "../../core"
 import "share.js" as Activity
+import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -20,7 +21,7 @@ ActivityBase {
     pageComponent: Rectangle {
         id: activityBackground
         anchors.fill: parent
-        color: "#abcdef"
+        color: GCStyle.lightBlueBg
         signal start
         signal stop
 
@@ -39,7 +40,8 @@ ActivityBase {
             property alias bonus: bonus
             property alias score: score
             property alias errorRectangle: errorRectangle
-            property alias instruction: instruction
+            property alias instructionPanel: instructionPanel
+            property alias instruction: instructionPanel.textItem
             property int nbSubLevel
             property alias listModel: listModel
             property bool acceptCandy: false
@@ -53,8 +55,6 @@ ActivityBase {
             property int totalCandies
             property int totalChildren: totalBoys + totalGirls
             readonly property var levels: activity.datasets
-            property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
-            property int cellSize: Math.round(Math.min(activityBackground.width / 12, activityBackground.height / (11 + barHeightAddon)))
             property alias repeaterDropAreas: repeaterDropAreas
             property int maxNumberOfCandiesPerWidget: 6
             property bool buttonsBlocked: false
@@ -63,7 +63,10 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        property bool vert: activityBackground.width >= activityBackground.height
+        property bool verticalBar: activityBackground.width >= activityBackground.height
+        property int barItemSize: 1
+         // 8 items for max 6 children + basket + empty area for score
+        property int gridItemSize: Core.fitItems(grid.width + GCStyle.baseMargins, grid.height + GCStyle.baseMargins, 8) - GCStyle.baseMargins
         property int currentBoys: 0
         property int currentGirls: 0
         property int currentCandies: 0
@@ -125,6 +128,51 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
+        states: [
+            State {
+                when: activityBackground.verticalBar
+                PropertyChanges {
+                    leftWidget {
+                        width: activityBackground.barItemSize + 2 * GCStyle.baseMargins
+                        height: activityBackground.height
+                    }
+                    barGrid {
+                        columns: 1
+                    }
+                    activityBackground {
+                        barItemSize: Math.min(GCStyle.bigButtonHeight, (activityBackground.height - bar.height * 1.2 - GCStyle.baseMargins) / 6 - GCStyle.baseMargins)
+                    }
+                    grid {
+                        x: leftWidget.width + GCStyle.baseMargins
+                        y: GCStyle.baseMargins
+                        width: activityBackground.width - leftWidget.width - GCStyle.baseMargins * 2
+                        height: activityBackground.height - bar.height * 1.2 - GCStyle.baseMargins * 2
+                    }
+                }
+            },
+            State {
+                when: !activityBackground.verticalBar
+                PropertyChanges {
+                    leftWidget {
+                        width: activityBackground.width
+                        height: activityBackground.barItemSize + 2 * GCStyle.baseMargins
+                    }
+                    barGrid {
+                        columns: 6
+                    }
+                    activityBackground {
+                        barItemSize: Math.min(GCStyle.bigButtonHeight, (activityBackground.width - GCStyle.baseMargins) / 6 - GCStyle.baseMargins)
+                    }
+                    grid {
+                        x: GCStyle.baseMargins
+                        y: leftWidget.height + GCStyle.baseMargins
+                        width: activityBackground.width - GCStyle.baseMargins * 2
+                        height: activityBackground.height - bar.height * 1.2 - leftWidget.height - GCStyle.baseMargins * 2
+                    }
+                }
+            }
+        ]
+
         //center zone
         Rectangle {
             id: grid
@@ -140,28 +188,14 @@ ActivityBase {
                    activityBackground.contains(girl.x, girl.y, grid) ||
                    activityBackground.contains(basket.x, basket.y, grid) ? "#d5e6f7" : "transparent"
 
-            anchors {
-                top: activityBackground.vert ? parent.top : leftWidget.bottom
-                left: activityBackground.vert ? leftWidget.right : parent.left
-                topMargin: 20
-                leftMargin: 20
-            }
-
-            width: activityBackground.vert ?
-                       activityBackground.width - leftWidget.width - 40 : activityBackground.width - 40
-            height: ApplicationSettings.isBarHidden ?
-                        activityBackground.height : activityBackground.vert ?
-                            activityBackground.height - (bar.height * 1.1) :
-                            activityBackground.height - (bar.height * 1.1) - leftWidget.height
-
             //shows/hides the Instruction
             MouseArea {
                 anchors.fill: parent
                 enabled: !items.buttonsBlocked
                 // first hide the wrong move if visible, then show/hide instruction
                 onClicked: wrongMove.visible ? wrongMove.visible = false :
-                           (instruction.opacity === 0) ?
-                               instruction.show() : instruction.hide()
+                           (instructionPanel.opacity === 0) ?
+                               instructionPanel.show() : instructionPanel.hide()
             }
 
             ListModel {
@@ -170,8 +204,7 @@ ActivityBase {
 
             Flow {
                 id: dropAreas
-                spacing: 10
-
+                spacing: GCStyle.baseMargins
                 width: parent.width
                 height: parent.height
 
@@ -182,6 +215,8 @@ ActivityBase {
                     DropChild {
                         id: rect2
                         //"nameS" from listModel
+                        width: activityBackground.gridItemSize
+                        height: activityBackground.gridItemSize
                         name: nameS
                     }
                 }
@@ -192,86 +227,59 @@ ActivityBase {
             id: errorRectangle
             z: 20
             anchors.fill: grid
-            imageSize: 60 * ApplicationInfo.ratio
+            imageSize: GCStyle.bigButtonHeight
             function releaseControls() { items.buttonsBlocked = false; }
         }
 
-        //instruction rectangle
-        Rectangle {
-            id: instruction
-            anchors.fill: instructionTxt
-            opacity: 0.8
-            radius: 10
-            border.width: 2
-            z: 20
-            border.color: "#DDD"
-            color: "#373737"
-            
-            property alias text: instructionTxt.text
+        //instruction for playing the game
+        GCTextPanel {
+            id: instructionPanel
+            z: 5
+            panelWidth: Math.min(grid.width - 2 * GCStyle.baseMargins, 600 * ApplicationInfo.ratio)
+            panelHeight: grid.height * 0.4
+            hideIfEmpty: true
+            anchors.horizontalCenter: grid.horizontalCenter
+            anchors.top: grid.top
+            anchors.topMargin: GCStyle.baseMargins
 
             Behavior on opacity { PropertyAnimation { duration: 200 } }
 
-            //shows/hides the Instruction
-            MouseArea {
-                anchors.fill: parent
-                onClicked: instruction.hide()
-                enabled: instruction.opacity !== 0 && !items.buttonsBlocked
-            }
-
             function show() {
-                if(text)
+                if(textItem.text)
                     opacity = 1
             }
             function hide() {
                 opacity = 0
             }
-        }
 
-        //instruction for playing the game
-        GCText {
-            id: instructionTxt
-            anchors {
-                top: activityBackground.vert ? parent.top : leftWidget.bottom
-                topMargin: 10
-                horizontalCenter: grid.horizontalCenter
+            //shows/hides the Instruction
+            MouseArea {
+                anchors.fill: parent
+                onClicked: instructionPanel.hide()
+                enabled: instructionPanel.opacity !== 0 && !items.buttonsBlocked
             }
-            opacity: instruction.opacity
-            z: instruction.z
-            fontSize: activityBackground.vert ? regularSize : smallSize
-            color: "white"
-            horizontalAlignment: Text.AlignHCenter
-            width: Math.max(Math.min(parent.width * 0.8, text.length * 8), parent.width * 0.3)
-            wrapMode: TextEdit.WordWrap
         }
 
         //left widget, with girl/boy/candy/basket widgets in a grid
         Rectangle {
             id: leftWidget
-            width: activityBackground.vert ?
-                       items.cellSize * 2.04 : activityBackground.width
-            height: activityBackground.vert ?
-                        activityBackground.height : items.cellSize * 2.04
             color: "#5a9de0"
             border.color: "#3f81c4"
-            border.width: 4
+            border.width: GCStyle.thinBorder
             z: 4
 
             //grid with ok button and images of a boy, a girl, a candy, a basket and the button to display the instructions
             Grid {
-                id: view
-                x: 10
-                y: 10
-
-                width: activityBackground.vert ? leftWidget.width : 3 * bar.height
-                height: activityBackground.vert ? activityBackground.height - 2 * bar.height : bar.height
-                spacing: 10
-                columns: activityBackground.vert ? 1 : 6
+                id: barGrid
+                anchors.fill: parent
+                anchors.margins: GCStyle.baseMargins
+                spacing: GCStyle.baseMargins
 
                 //ok button
                 Image {
                     id: okButton
                     source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
-                    sourceSize.width: items.cellSize * 1.5 - view.x / 2
+                    sourceSize.width: activityBackground.barItemSize
                     fillMode: Image.PreserveAspectFit
 
                     MouseArea {
@@ -287,6 +295,7 @@ ActivityBase {
                 ChildWidget {
                     id: girlWidget
                     name: "girl"
+                    width: activityBackground.barItemSize
                     total: items.totalGirls
                     visible: items.totalGirls !== 0
                     current: activityBackground.currentGirls
@@ -296,6 +305,7 @@ ActivityBase {
                 ChildWidget {
                     id: boyWidget
                     name: "boy"
+                    width: activityBackground.barItemSize
                     visible: items.totalBoys !== 0
                     total: items.totalBoys
                     current: activityBackground.currentBoys
@@ -304,10 +314,12 @@ ActivityBase {
                 
                 BasketWidget {
                     id: basketWidget
+                    width: activityBackground.barItemSize
                 }
 
                 CandyWidget {
                     id: candyWidget
+                    width: activityBackground.barItemSize
                     total: items.totalCandies
                     current: activityBackground.currentCandies
                     element.opacity: activityBackground.easyMode ? 1 : 0
@@ -316,7 +328,7 @@ ActivityBase {
                 Image {
                     id: showInstruction
                     source:"qrc:/gcompris/src/core/resource/bar_hint.svg"
-                    sourceSize.width: items.cellSize * 1.5 - view.x / 2
+                    sourceSize.width: activityBackground.barItemSize
                     fillMode: Image.PreserveAspectFit
 
                     MouseArea {
@@ -324,38 +336,27 @@ ActivityBase {
                         enabled: !items.buttonsBlocked
                         onPressed: showInstruction.opacity = 0.6
                         onReleased: showInstruction.opacity = 1
-                        onClicked: items.instruction.opacity == 0 ? items.instruction.show() : items.instruction.hide()
+                        onClicked: instructionPanel.opacity == 0 ? instructionPanel.show() : instructionPanel.hide()
                     }
                 }
             }
         }
 
         // show message warning for placing too many candies in one area
-        Rectangle {
+        GCTextPanel {
             id: wrongMove
             z: 5
-            color: "orange"
-            radius: width / height * 10
-            visible: false
-
-            width: grid.width
-            height: grid.height / 3
+            panelWidth: grid.width - 2 * GCStyle.baseMargins
+            panelHeight: grid.height / 3
             anchors.centerIn: grid
+            color: "orange"
+            textItem.color: "#404040"
+            textItem.text: qsTr("You can't put more than %1 pieces of candy in the same rectangle").arg(items.maxNumberOfCandiesPerWidget)
+            visible: false
 
             MouseArea {
                 anchors.fill: parent
                 onClicked: parent.visible = false && !items.buttonsBlocked
-            }
-            GCText {
-                id: wrongMoveText
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                width: parent.width - 2 // -2 for margin
-                height: parent.height
-                fontSizeMode: Text.Fit
-                wrapMode: Text.WordWrap
-                color: "#404040"
-                text: qsTr("You can't put more than %1 pieces of candy in the same rectangle").arg(items.maxNumberOfCandiesPerWidget)
             }
         }
 
@@ -413,13 +414,11 @@ ActivityBase {
             id: score
             anchors {
                 left: undefined
-                right: leftWidget.right
-                bottom: activityBackground.vert ? bar.top : leftWidget.bottom
-                margins: 3 * ApplicationInfo.ratio
+                right: parent.right
+                bottom: bar.top
+                rightMargin: GCStyle.baseMargins
+                bottomMargin: bar.height * 0.2
             }
-            fixedWidth: true
-            width: girlWidget.width
-            height: activityBackground.vert ? (girlWidget.height * 0.8) : girlWidget.height
             numberOfSubLevels: items.nbSubLevel
             currentSubLevel: 0
             onStop: Activity.nextSubLevel()

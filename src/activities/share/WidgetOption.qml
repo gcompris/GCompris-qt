@@ -12,10 +12,10 @@ import "../../core"
 
 Rectangle {
     id: widget
-
-    width: element.opacity > 0 ? items.cellSize * 1.5 : 0
+    // Set the width when using it
     height: width
     color: "transparent"
+    visible: element.opacity > 0
 
     //initial position of the element
     //(these vars are assigned to element after release of click mouse)
@@ -36,7 +36,8 @@ Rectangle {
     Image {
         id: element
         fillMode: Image.PreserveAspectFit
-        width: items.cellSize
+        width: parent.width * 0.6
+        height: parent.height
         sourceSize.width: width
         source: widget.src
         mipmap: true
@@ -45,9 +46,14 @@ Rectangle {
     GCText {
         id: elementText
         anchors.left: element.right
-        anchors.bottom: element.bottom
+        anchors.verticalCenter: element.verticalCenter
+        height: parent.height
+        width: parent.width * 0.3
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
+        fontSizeMode: Text.Fit
         text: availableItems
-        color: "#f2f2f2"
+        color: GCStyle.lightText
     }
     
     property alias dragAreaElement: dragAreaElement
@@ -58,7 +64,7 @@ Rectangle {
         drag.target: (widget.canDrag) ? element : null
         enabled: element.opacity > 0 && !items.buttonsBlocked
         onPressed: {
-            instruction.hide()
+            instructionPanel.hide()
             if (widget.name !== "candy")
                 activityBackground.resetCandy()
                 //set the initial position
