@@ -22521,7 +22521,7 @@ msgstr ""
 "ar gouloù evitañ. Evit gounit eo ret dit lakaat war enaou gouleier an holl "
 "dud e-pad ma vo pep tra o treiñ."
 
-#: activities/renewable_energy/RenewableEnergy.qml:302
+#: activities/renewable_energy/RenewableEnergy.qml:303
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22530,7 +22530,7 @@ msgstr ""
 "Distreiñ a ra Tuks goude un abadenn besketa war e vag. Lak reizhiad an "
 "tredan da dreiñ evit ma vo gouloù gant Tuks er gêr."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:305
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22540,7 +22540,7 @@ msgstr ""
 "panelloù fotovoltaek, tourioù avel ha treuzfurmerioù a-benn adloc'hañ ar "
 "reizhiad tredan."
 
-#: activities/renewable_energy/RenewableEnergy.qml:306
+#: activities/renewable_energy/RenewableEnergy.qml:307
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22551,14 +22551,14 @@ msgstr ""
 "afell ar gouloù evitañ. Evit gounit eo ret dit lakaat war enaou gouleier an "
 "holl dud e-pad ma vo pep tra o treiñ."
 
-#: activities/renewable_energy/RenewableEnergy.qml:308
+#: activities/renewable_energy/RenewableEnergy.qml:309
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Desk traoù diwar-benn ur reizhiad tredan diwar ar gremm adnevesadus. "
 "Plijadur dit."
 
-#: activities/renewable_energy/RenewableEnergy.qml:333
+#: activities/renewable_energy/RenewableEnergy.qml:334
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -23418,13 +23418,13 @@ msgctxt "ActivityInfo|"
 msgid "If there is a rest, it needs to be placed inside the candy jar."
 msgstr "Ma chom un nemorant eo ret lakaat anezhañ e pod ar madigoù."
 
-#: activities/share/resource/1/Data.qml:13
+#: activities/share/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, no rest."
 msgstr "25 madig ha 5 bugel d'ar muiañ, nemorant ebet."
 
-#: activities/share/resource/1/Data.qml:18
-#: activities/share/resource/2/Data.qml:18
+#: activities/share/resource/1/Data.qml:20
+#: activities/share/resource/2/Data.qml:20
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 2 pieces of candy equally between 2 of his girl friends. "
@@ -23435,18 +23435,18 @@ msgstr ""
 "Gallout a rez sikour anezhañ ? Da gentañ, rikl ar vugale war an dachenn e "
 "kreiz, da c'houde, rikl ar madigoù da bep hini."
 
-#: activities/share/resource/1/Data.qml:28
+#: activities/share/resource/1/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 4 pieces of candy equally among his friends."
 msgstr "Bremañ en deus c'hoant da zasparzhañ 4 madig etre e vignoned."
 
-#: activities/share/resource/1/Data.qml:38
+#: activities/share/resource/1/Data.qml:40
 msgctxt "Data|"
 msgid ""
 "Can you now share 6 of Paul's pieces of candy equally among his friends?"
 msgstr "Gallout a rez bremañ rannañ ingal 6 madig eus Paol d'e vignoned ?"
 
-#: activities/share/resource/1/Data.qml:48
+#: activities/share/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid ""
 "Some of his friends already have pieces of candy. He wants to give them 7 "
@@ -23455,7 +23455,7 @@ msgstr ""
 "Madigoù zo dija gant mignoned 'zo dezhañ. Fellout a ra dezhañ reiñ deze 7 "
 "madig ouzhpenn gant ma vo memes kementad gant pep hini."
 
-#: activities/share/resource/1/Data.qml:58
+#: activities/share/resource/1/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 12 pieces of candy left. He eats 2 pieces of candy and he "
@@ -23466,7 +23466,7 @@ msgstr ""
 "peurrest etre e vignoned. Gallout a rez sikour anezhañ da zasparzhañ ingal "
 "an 10 madig a chom ?"
 
-#: activities/share/resource/1/Data.qml:70
+#: activities/share/resource/1/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "George wants to share 3 pieces of candy equally between 3 of his girl "
@@ -23475,7 +23475,7 @@ msgstr ""
 "Fellout a ra da Jord rannañ ingal 3 madig etre 3 mignonez dezhañ. Hag-eñ e "
 "c'hall dasparzhañ ingal ar madigoù ?"
 
-#: activities/share/resource/1/Data.qml:80
+#: activities/share/resource/1/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 6 pieces of candy equally between 3 of her friends: 1 "
@@ -23484,7 +23484,7 @@ msgstr ""
 "Fellout a ra da vMaria rannañ ingal 6 madig etre 3 mignon dezhañ: 1 plac'h "
 "ha 2 baotr. Hag-eñ e c'hall dasparzhañ ingal ar madigoù?"
 
-#: activities/share/resource/1/Data.qml:90
+#: activities/share/resource/1/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "John wants to share 8 pieces of candy equally between 3 of his friends: 1 "
@@ -23495,7 +23495,7 @@ msgstr ""
 "blac'h. Ur madig zo gant ar paotr dija. Hag-eñ e c'hall reiñ ar memes "
 "kementad d'e holl vignoned?"
 
-#: activities/share/resource/1/Data.qml:100
+#: activities/share/resource/1/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 12 pieces of candy equally between 3 of his friends: 2 "
@@ -23504,7 +23504,7 @@ msgstr ""
 "Fellout a ra da bPaol rannañ ingal 12 madig etre 3 mignon dezhañ: 2 baotr "
 "hag 1 plac'h. Hag-eñ e c'hall dasparzhañ ingal ar madigoù?"
 
-#: activities/share/resource/1/Data.qml:110
+#: activities/share/resource/1/Data.qml:112
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 11 pieces of candy between 3 of her friends: 1 boy and "
@@ -23515,8 +23515,8 @@ msgstr ""
 "ha 2 blac'h. Ar plac'hed zo madigoù gante dija. Hag-eñ e c'hall reiñ ar "
 "memes kementad madigoù d'he holl vignoned?"
 
-#: activities/share/resource/1/Data.qml:122
-#: activities/share/resource/2/Data.qml:112
+#: activities/share/resource/1/Data.qml:124
+#: activities/share/resource/2/Data.qml:114
 msgctxt "Data|"
 msgid ""
 "Alice wants to share 4 pieces of candy equally between 4 of her girl "
@@ -23525,12 +23525,12 @@ msgstr ""
 "Bremañ he deus c'hoant Alis da zasparzhañ 4 madig  etre 4 mignonez dezhi. "
 "Gallout a rez sikour anezhi ?"
 
-#: activities/share/resource/1/Data.qml:132
+#: activities/share/resource/1/Data.qml:134
 msgctxt "Data|"
 msgid "Now, Alice wants to give 8 pieces of candy to her friends."
 msgstr "Bremañ he deus c'hoant Alis da reiñ 8 madig d'he mignoned."
 
-#: activities/share/resource/1/Data.qml:142
+#: activities/share/resource/1/Data.qml:144
 msgctxt "Data|"
 msgid ""
 "Alice wants to give 10 pieces of candy to her friends, 1 girl and 3 boys, so "
@@ -23540,12 +23540,12 @@ msgstr ""
 "Fellout a ra da Alis reiñ 10 madig d'he mignoned, 1 plac'h ha 3 faotr, gant "
 "ma vo ar memes kementad gant pep hini. Madigoù zo dija gant ar merc'hed."
 
-#: activities/share/resource/1/Data.qml:152
+#: activities/share/resource/1/Data.qml:154
 msgctxt "Data|"
 msgid "Alice wants to give 16 pieces of candy to her friends."
 msgstr "Bremañ he deus c'hoant Alis da zasparzhañ 16 madig  etre he mignoned."
 
-#: activities/share/resource/1/Data.qml:162
+#: activities/share/resource/1/Data.qml:164
 msgctxt "Data|"
 msgid ""
 "Alice wants to give pieces of candy to 4 friends. Some of them already have "
@@ -23556,7 +23556,7 @@ msgstr ""
 "un toullad anezhe. Gallout a rez sikour anezhi da zasparzhañ 14 madig gant "
 "ma vo memes kementad gant pep mignon ?"
 
-#: activities/share/resource/1/Data.qml:174
+#: activities/share/resource/1/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Michael wants to share 5 pieces of candy equally between 5 of his girl "
@@ -23565,7 +23565,7 @@ msgstr ""
 "Fellout a ra da vMikael rannañ ingal 5 madig etre 5 mignonez  dezhañ. "
 "Gallout a rez sikour anezhañ ?"
 
-#: activities/share/resource/1/Data.qml:184
+#: activities/share/resource/1/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Helen has 5 friends: 2 boys and 3 girls. She wants to give them 10 pieces of "
@@ -23574,7 +23574,7 @@ msgstr ""
 "5 mignon he deus Lena: 2 baotr ha 3 flac'h. C'hoant he deus da zasparzhañ 7 "
 "madig etreze. Sikour anezhi da zasparzhañ ar madigoù etre he mignoned!"
 
-#: activities/share/resource/1/Data.qml:194
+#: activities/share/resource/1/Data.qml:196
 msgctxt "Data|"
 msgid ""
 "Michelle wants to share 12 pieces of candy equally between her 4 brothers "
@@ -23585,7 +23585,7 @@ msgstr ""
 "dezhi, gant ma vo ar memes kementad gant pep hini. Madigoù zo gant he c'hoar "
 "dija."
 
-#: activities/share/resource/1/Data.qml:204
+#: activities/share/resource/1/Data.qml:206
 msgctxt "Data|"
 msgid ""
 "Thomas wants to share his 20 pieces of candy with his friends: 1 boy and 4 "
@@ -23594,7 +23594,7 @@ msgstr ""
 "Fellout a ra da dTomaz rannañ ingal e 20 madig etre e vignoned: 1 paotr ha 4 "
 "flac'h. Gallout a rez sikour anezhañ?"
 
-#: activities/share/resource/1/Data.qml:214
+#: activities/share/resource/1/Data.qml:216
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 20 pieces of candy equally between 5 of his friends. "
@@ -23603,7 +23603,7 @@ msgstr ""
 "Fellout a ra da bPaol rannañ ingal 20 madig etre 5 mignon dezhañ. Ur madig "
 "zo gant pep hini anezhe. Hag-eñ e c'hallez sikour anezhañ ?"
 
-#: activities/share/resource/1/Data.qml:226
+#: activities/share/resource/1/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally with 2 of his girl "
@@ -23612,7 +23612,7 @@ msgstr ""
 "Fellout a ra da Charlez rannañ ingal e 6 madig etre 2 vignonez dezhañ. Hag-"
 "eñ e c'hall dasparzhañ ingal ar madigoù ?"
 
-#: activities/share/resource/1/Data.qml:236
+#: activities/share/resource/1/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -23624,7 +23624,7 @@ msgstr ""
 "rankje dasparzhañ ar madigoù gant ma vo ar memes kementad gant an holl "
 "anezhe?"
 
-#: activities/share/resource/1/Data.qml:246
+#: activities/share/resource/1/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 16 pieces of candy to share equally with his "
@@ -23634,7 +23634,7 @@ msgstr ""
 "Erwan en deus bet 16 madig digant e dad da rannañ etre e vignoned: 2 baotr "
 "ha 2 blac'h. Sikour anezhañ da reiñ ar madigoù d'e vignoned!"
 
-#: activities/share/resource/1/Data.qml:256
+#: activities/share/resource/1/Data.qml:258
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy between 4 of his friends: 2 girls "
@@ -23645,7 +23645,7 @@ msgstr ""
 "2 baotr. Ur madig zo gant pep paotr dija. Fellout a ra dezhañ ma vo ar memes "
 "kementad gant pep hini."
 
-#: activities/share/resource/1/Data.qml:266
+#: activities/share/resource/1/Data.qml:268
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 25 pieces of candy equally between 5 of her friends: 3 "
@@ -23654,27 +23654,27 @@ msgstr ""
 "Fellout a ra da vMaria rannañ ingal 25 madig etre 5 mignon dezhi: 3 flac'h "
 "ha 2 baotr. Hag-eñ e c'hall dasparzhañ ingal ar madigoù?"
 
-#: activities/share/resource/2/Data.qml:13
+#: activities/share/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, possible rest."
 msgstr "25 madig ha 5 bugel d'ar muiañ, nemorant posupl."
 
-#: activities/share/resource/2/Data.qml:28
+#: activities/share/resource/2/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 5 pieces of candy among his friends."
 msgstr "Bremañ en deus c'hoant da zasparzhañ 5 madig  etre e vignoned."
 
-#: activities/share/resource/2/Data.qml:38
+#: activities/share/resource/2/Data.qml:40
 msgctxt "Data|"
 msgid "Can you now share 7 of Paul's pieces of candy among his friends?"
 msgstr "Gallout a rez bremañ dasparzhañ 7 madig eus Paol etre e vignoned ?"
 
-#: activities/share/resource/2/Data.qml:48
+#: activities/share/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Can you now share 8 of Paul's pieces of candy among his friends?"
 msgstr "Gallout a rez bremañ dasparzhañ 8 madig eus Paol etre e vignoned ?"
 
-#: activities/share/resource/2/Data.qml:58
+#: activities/share/resource/2/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 11 pieces of candy left. He eats 2 pieces of candy and he "
@@ -23685,7 +23685,7 @@ msgstr ""
 "peurrest d'e vignoned. Gallout a rez sikour anezhañ da zasparzhañ ingal an 9 "
 "madig a chom ?"
 
-#: activities/share/resource/2/Data.qml:70
+#: activities/share/resource/2/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "Bob wants to share 3 pieces of candy equally between 3 of his girl friends. "
@@ -23694,7 +23694,7 @@ msgstr ""
 "Fellout a ra da Job rannañ ingal 3 madig etre 3 mignonez dezhañ. Hag-eñ e "
 "c'hall dasparzhañ ingal ar madigoù ?"
 
-#: activities/share/resource/2/Data.qml:80
+#: activities/share/resource/2/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 8 pieces of candy between 3 of his friends: 1 boy and 2 "
@@ -23705,7 +23705,7 @@ msgstr ""
 "blac'h. Ur madig zo gant ar paotr dija. Hag-eñ e c'hall rannañ ar madigoù "
 "gant ma vo memes kementad gant an holl anezhe?"
 
-#: activities/share/resource/2/Data.qml:90
+#: activities/share/resource/2/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 8 pieces of candy between 3 of her friends: 1 boy and 2 "
@@ -23716,7 +23716,7 @@ msgstr ""
 "2 blac'h. Madigoù zo gant ar plac'hed dija. Hag-eñ e c'hall rannañ ar "
 "madigoù gant ma vo ar memes kementad gant an holl anezhe?"
 
-#: activities/share/resource/2/Data.qml:100
+#: activities/share/resource/2/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 12 pieces of candy between 3 of his friends: 1 boy and "
@@ -23727,12 +23727,12 @@ msgstr ""
 "blac'h. Ar paotr a zo madigoù gantañ dija. Hag-eñ e c'hall rannañ ar madigoù "
 "gant ma vo ar memes kementad gant an holl anezhe?"
 
-#: activities/share/resource/2/Data.qml:122
+#: activities/share/resource/2/Data.qml:124
 msgctxt "Data|"
 msgid "Now, Alice wants to share 8 pieces of candy equally among her friends."
 msgstr "Bremañ he deus c'hoant Alis da zasparzhañ ingal 8 madig d'he mignoned."
 
-#: activities/share/resource/2/Data.qml:132
+#: activities/share/resource/2/Data.qml:134
 msgctxt "Data|"
 msgid ""
 "Can you help Alice share 10 pieces of candy equally among her friends: 1 "
@@ -23741,13 +23741,13 @@ msgstr ""
 "Gallout a rez sikour Alis da zasparzhañ ingal 10 madig d'he mignoned: 1 "
 "plac'h ha 3 faotr? Ar plac'h a zo madigoù ganti dija."
 
-#: activities/share/resource/2/Data.qml:142
+#: activities/share/resource/2/Data.qml:144
 msgctxt "Data|"
 msgid "Alice wants to share 16 pieces of candy equally among her friends."
 msgstr ""
 "Bremañ he deus c'hoant Alis da zasparzhañ ingal 16 madig  etre he mignoned."
 
-#: activities/share/resource/2/Data.qml:152
+#: activities/share/resource/2/Data.qml:154
 msgctxt "Data|"
 msgid ""
 "Alice has 14 pieces of candy left. She wants to share them equally among her "
@@ -23758,7 +23758,7 @@ msgstr ""
 "etre he mignoned. Madigoù zo dija gant ar baotred. Gallout a rez sikour "
 "anezhi da rannañ ingal ar madigoù ?"
 
-#: activities/share/resource/2/Data.qml:164
+#: activities/share/resource/2/Data.qml:166
 msgctxt "Data|"
 msgid ""
 "Help Jon share 11 pieces of candies equally between five girls. The rest "
@@ -23767,7 +23767,7 @@ msgstr ""
 "Sikour Youn da zasparzhañ ingal 11 madig etre 5 plac'h. Ar peurrest a chomo "
 "gant Youn."
 
-#: activities/share/resource/2/Data.qml:174
+#: activities/share/resource/2/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Jon wants to share the rest of his pieces of candies with his brothers and "
@@ -23778,18 +23778,18 @@ msgstr ""
 "c'hoarezed. Ha gallout a rez dasparzhañ anezhe ingal, o c'houzout ez eus "
 "daou vadig gant pep a vreur dezhañ dija ?"
 
-#: activities/share/resource/2/Data.qml:184
+#: activities/share/resource/2/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Help Tux split 19 pieces of candies between his friends: 4 boys and 1 girl."
 msgstr "Sikour Tuks da rannañ 19 madig etre e vignoned: 4 faotr hag 1 plac'h."
 
-#: activities/share/resource/2/Data.qml:194
+#: activities/share/resource/2/Data.qml:196
 msgctxt "Data|"
 msgid "Help Maria share 18 pieces of candy equally between 3 boys and 2 girls."
 msgstr "Sikour Maria da zasparzhañ ingal 18 madig etre 3 faotr ha 2 blac'h."
 
-#: activities/share/resource/2/Data.qml:206
+#: activities/share/resource/2/Data.qml:208
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally between 2 of his girl "
@@ -23798,7 +23798,7 @@ msgstr ""
 "Fellout a ra da Charlez rannañ ingal e 6 madig etre 2 vignonez dezhañ. Hag-"
 "eñ e c'hall dasparzhañ ingal ar madigoù ?"
 
-#: activities/share/resource/2/Data.qml:216
+#: activities/share/resource/2/Data.qml:218
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -23809,7 +23809,7 @@ msgstr ""
 "dezhi: 2 blac'h hag 1 paotr. Penaos e rankje dasparzhañ ar madigoù etre he "
 "mignoned?"
 
-#: activities/share/resource/2/Data.qml:226
+#: activities/share/resource/2/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 17 pieces of candy to share equally between his "
@@ -23819,7 +23819,7 @@ msgstr ""
 "Erwan en deus bet 17 madig digant e dad da rannañ etre e vignoned: 2 baotr "
 "ha 2 blac'h. Sikour anezhañ da reiñ ar madigoù d'e vignoned!"
 
-#: activities/share/resource/2/Data.qml:236
+#: activities/share/resource/2/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy equally between 4 of his friends: 2 "
@@ -23829,7 +23829,7 @@ msgstr ""
 "Fellout a ra da Jord rannañ ingal 14 madig etre 4 mignon dezhañ: 2 blac'h ha "
 "2 baotr. Hag-eñ e c'hall dasparzhañ ingal ar madigoù etre e vignoned?"
 
-#: activities/share/resource/2/Data.qml:246
+#: activities/share/resource/2/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 23 pieces of candy equally between 5 of her friends: 3 "
@@ -23839,12 +23839,12 @@ msgstr ""
 "Fellout a ra da vMaria rannañ ingal 23 madig etre 5 mignon dezhi: 3 flac'h "
 "ha 2 baotr. Hag-eñ e c'hall rannañ ar madigoù ingal etre he mignoned?"
 
-#: activities/share/resource/3/Data.qml:13
+#: activities/share/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr "30 madig ha 6 bugel d'ar muiañ, nemorant posupl."
 
-#: activities/share/share.js:98
+#: activities/share/share.js:115
 #, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -23854,7 +23854,7 @@ msgid_plural "Place %n boy(s) "
 msgstr[0] "Plas an niver-mañ a baotred:  %n"
 msgstr[1] "Plas an niver-mañ a baotred:  %n , "
 
-#: activities/share/share.js:102
+#: activities/share/share.js:119
 #, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -23864,7 +23864,7 @@ msgid_plural "and %n girl(s) in the center. "
 msgstr[0] "hag an niver-se a blac'hed:  %n war an dachenn e-kreiz."
 msgstr[1] "hag an niver-se a blac'hed:  %n , war an dachenn."
 
-#: activities/share/share.js:106
+#: activities/share/share.js:123
 #, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -23876,7 +23876,7 @@ msgstr[0] ""
 msgstr[1] ""
 "Da c'houde, dasparzh ingal kenetreze ar c'hementad-mañ a vadigoù: %n."
 
-#: activities/share/Share.qml:358
+#: activities/share/Share.qml:359
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
@@ -26690,7 +26690,7 @@ msgstr ""
 "a-benn loc'hañ en-dro reizhiad an dour. Ur wech graet an dra-se ha pa vo "
 "Tuks er strinkadenn, pouez war bouton an dour evitañ."
 
-#: activities/watercycle/Watercycle.qml:114
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -26699,12 +26699,12 @@ msgstr ""
 "An heol zo elfenn bennañ kelc'hiad an dour. Klik warnañ da loc'hañ kelc'hiad "
 "an dour."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Pa sav an heol e krog an dour da dommañ ha da vont da aezhenn."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -26713,7 +26713,7 @@ msgstr ""
 " Glizhenniñ a ra an aezhenn da sevel koumoul ha pa ya ar c'houmoul da "
 "bounner e ra glav. Klik war ar  goumoulenn."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:118
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -26724,19 +26724,19 @@ msgstr ""
 "kaset an dour-se deomp gant tourioù-dour. Klik war ar pomp da bourchas dour "
 "d'an annezidi."
 
-#: activities/watercycle/Watercycle.qml:119
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
 "clicking on it."
 msgstr "Sell an tour leun a zour. Klik war ar stal buraat evit loc'hañ anezhi."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Dreist, klik war ar strinkadenn pa 'z erru Tuks er gêr."
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:122
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
@@ -26744,7 +26744,7 @@ msgstr ""
 "Dispar, echuet eo kelc'hiad an dour ganit. Kendalc'h gant da c'hoari ma fell "
 "dit."
 
-#: activities/watercycle/Watercycle.qml:139
+#: activities/watercycle/Watercycle.qml:140
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26755,7 +26755,7 @@ msgstr ""
 "douar betek an oabl hag an distro. Tommder an heol a bourchas ar gremm da "
 "lakaat an dour da aezhenniñ diouzh tachadoù dour evel ar morioù."
 
-#: activities/watercycle/Watercycle.qml:142
+#: activities/watercycle/Watercycle.qml:143
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26766,7 +26766,7 @@ msgstr ""
 "sevel a ra takennoùigoù dour er c'houmoul. Pa gej ar c'houmoul ouzh aer yen "
 "a-us d'an douare ra dour o kouezhañ e stumm glav."
 
-#: activities/watercycle/Watercycle.qml:145
+#: activities/watercycle/Watercycle.qml:146
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26777,7 +26777,7 @@ msgstr ""
 "dour-dindandouar. Met an darn vrasañ anezhañ a red war c'horre an douar, ul "
 "lod o vont betek ar morioù dre ar stêrioù."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:148
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "

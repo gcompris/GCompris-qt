@@ -23073,7 +23073,7 @@ msgstr ""
 "svetla. Ak chcete vyhrať, musíte zapnúť všetkých spotrebiteľov, zatiaľ čo "
 "všetci výrobcovia sú v prevádzke."
 
-#: activities/renewable_energy/RenewableEnergy.qml:302
+#: activities/renewable_energy/RenewableEnergy.qml:303
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -23082,7 +23082,7 @@ msgstr ""
 "Tux sa vrátil z rybolovu na svojej lodi. Obnovte elektrický systém, aby "
 "mohol mať doma svetlo."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:305
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -23091,7 +23091,7 @@ msgstr ""
 "Kliknite na rôzne aktívne prvky: slnko, mrak, priehrada, solárne pole, "
 "veterná farma a transformátory, aby ste reaktivovali celý elektrický systém."
 
-#: activities/renewable_energy/RenewableEnergy.qml:306
+#: activities/renewable_energy/RenewableEnergy.qml:307
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -23102,13 +23102,13 @@ msgstr ""
 "svetla. Ak chcete vyhrať, musíte zapnúť všetkých spotrebiteľov, zatiaľ čo "
 "všetci výrobcovia sú v prevádzke."
 
-#: activities/renewable_energy/RenewableEnergy.qml:308
+#: activities/renewable_energy/RenewableEnergy.qml:309
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Učte sa o elektrickom systéme založenom na obnoviteľnej energii. Bavte sa."
 
-#: activities/renewable_energy/RenewableEnergy.qml:333
+#: activities/renewable_energy/RenewableEnergy.qml:334
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -23969,13 +23969,13 @@ msgctxt "ActivityInfo|"
 msgid "If there is a rest, it needs to be placed inside the candy jar."
 msgstr "Ak niečo zostane, treba to dať do džbána."
 
-#: activities/share/resource/1/Data.qml:13
+#: activities/share/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, no rest."
 msgstr "Najviac 25 cukroviniek a 5 detí, bezo zvyšku."
 
-#: activities/share/resource/1/Data.qml:18
-#: activities/share/resource/2/Data.qml:18
+#: activities/share/resource/1/Data.qml:20
+#: activities/share/resource/2/Data.qml:20
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 2 pieces of candy equally between 2 of his girl friends. "
@@ -23986,19 +23986,19 @@ msgstr ""
 "Môžete mu pomôcť? Najprv umiestnite deti do stredu a potom pretiahnite "
 "cukrovinky ku každému z nich."
 
-#: activities/share/resource/1/Data.qml:28
+#: activities/share/resource/1/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 4 pieces of candy equally among his friends."
 msgstr "Teraz chce dať svojim kamarátom 4 cukrovinky."
 
-#: activities/share/resource/1/Data.qml:38
+#: activities/share/resource/1/Data.qml:40
 msgctxt "Data|"
 msgid ""
 "Can you now share 6 of Paul's pieces of candy equally among his friends?"
 msgstr ""
 "Môžete teraz spravodlivo rozdeliť 6 Pavlových cukroviniek jeho kamarátom?"
 
-#: activities/share/resource/1/Data.qml:48
+#: activities/share/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid ""
 "Some of his friends already have pieces of candy. He wants to give them 7 "
@@ -24007,7 +24007,7 @@ msgstr ""
 "Niektorí jeho kamaráti už majú cukrovinky. Chce im dať ďalších 7 aby mail "
 "všetci rovnako."
 
-#: activities/share/resource/1/Data.qml:58
+#: activities/share/resource/1/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 12 pieces of candy left. He eats 2 pieces of candy and he "
@@ -24017,7 +24017,7 @@ msgstr ""
 "Pavlovi zostalo len 12 cukroviniek. Zje 2 cukrovinky a zvyšok dá svojim "
 "kamarátom. Môžete mu pomôcť spravodlivo rozdeliť zvyšných 10 cukroviniek?"
 
-#: activities/share/resource/1/Data.qml:70
+#: activities/share/resource/1/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "George wants to share 3 pieces of candy equally between 3 of his girl "
@@ -24026,7 +24026,7 @@ msgstr ""
 "Juraj chce rozdeliť svoje 3 cukrovinky spravodlivo medzi 3 svoje kamarátky. "
 "Dokáže rozdeliť cukrovinky rovnomerne?"
 
-#: activities/share/resource/1/Data.qml:80
+#: activities/share/resource/1/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 6 pieces of candy equally between 3 of her friends: 1 "
@@ -24035,7 +24035,7 @@ msgstr ""
 "Mária chce rozdeliť svojich 6 cukroviniek 3 svojim kamarátom: 1 chlapca a 2 "
 "dievčatá. Dokáže rozdeliť kúsky sladkostí rovnomerne?"
 
-#: activities/share/resource/1/Data.qml:90
+#: activities/share/resource/1/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "John wants to share 8 pieces of candy equally between 3 of his friends: 1 "
@@ -24047,7 +24047,7 @@ msgstr ""
 "kamarátom? Najprv umiestnite deti do stredu, potom pretiahnite cukrovinky "
 "každému z nich."
 
-#: activities/share/resource/1/Data.qml:100
+#: activities/share/resource/1/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 12 pieces of candy equally between 3 of his friends: 2 "
@@ -24056,7 +24056,7 @@ msgstr ""
 "Pavol chce rozdeliť svojich 12 cukroviniek spravodlivo 3 svojim kamarátom: 2 "
 "chlapcom a 1 dievčaťu. Dokáže rozdeliť cukrovinky rovnomerne?"
 
-#: activities/share/resource/1/Data.qml:110
+#: activities/share/resource/1/Data.qml:112
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 11 pieces of candy between 3 of her friends: 1 boy and "
@@ -24068,8 +24068,8 @@ msgstr ""
 "už majú nejaké cukrovinky. Môže rozdeliť cukrovinky tak aby mali všetci "
 "rovnako?"
 
-#: activities/share/resource/1/Data.qml:122
-#: activities/share/resource/2/Data.qml:112
+#: activities/share/resource/1/Data.qml:124
+#: activities/share/resource/2/Data.qml:114
 msgctxt "Data|"
 msgid ""
 "Alice wants to share 4 pieces of candy equally between 4 of her girl "
@@ -24078,12 +24078,12 @@ msgstr ""
 "Alica chce rozdeliť svoje 4 cukrovinky spravodlivo svojim 4 kamarátkam. "
 "Môžete jej pomôcť?"
 
-#: activities/share/resource/1/Data.qml:132
+#: activities/share/resource/1/Data.qml:134
 msgctxt "Data|"
 msgid "Now, Alice wants to give 8 pieces of candy to her friends."
 msgstr "Teraz chce Alica dať 8 cukroviniek svojim kamarátom."
 
-#: activities/share/resource/1/Data.qml:142
+#: activities/share/resource/1/Data.qml:144
 msgctxt "Data|"
 msgid ""
 "Alice wants to give 10 pieces of candy to her friends, 1 girl and 3 boys, so "
@@ -24093,12 +24093,12 @@ msgstr ""
 "Alica chce dať 10 cukroviniek svojim kamarátom, 1 dievčaťu a 3 chlapcom tak, "
 "aby mali všetci rovnako. Dievčatá už majú nejaké cukrovinky."
 
-#: activities/share/resource/1/Data.qml:152
+#: activities/share/resource/1/Data.qml:154
 msgctxt "Data|"
 msgid "Alice wants to give 16 pieces of candy to her friends."
 msgstr "Alica chce dať 16 cukroviniek svojim kamarátom."
 
-#: activities/share/resource/1/Data.qml:162
+#: activities/share/resource/1/Data.qml:164
 msgctxt "Data|"
 msgid ""
 "Alice wants to give pieces of candy to 4 friends. Some of them already have "
@@ -24109,7 +24109,7 @@ msgstr ""
 "Môžete jej pomôcť rozdeliť 14 cukroviniek tak, aby mali všetci jej kamaráti "
 "rovnaký počet cukroviniek?"
 
-#: activities/share/resource/1/Data.qml:174
+#: activities/share/resource/1/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Michael wants to share 5 pieces of candy equally between 5 of his girl "
@@ -24118,7 +24118,7 @@ msgstr ""
 "Michal chce rozdeliť svojich 5 cukroviniek spravodlivo 5 kamarátkam. Môžete "
 "mu pomôcť?"
 
-#: activities/share/resource/1/Data.qml:184
+#: activities/share/resource/1/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Helen has 5 friends: 2 boys and 3 girls. She wants to give them 10 pieces of "
@@ -24127,7 +24127,7 @@ msgstr ""
 "Helena má 5 kamarátov: 2 chlapcov a 3 dievčatá. Chce im dať 10 cukroviniek. "
 "Pomôžte jej rozdeliť cukrovinky spravodlivo svojim kamarátom."
 
-#: activities/share/resource/1/Data.qml:194
+#: activities/share/resource/1/Data.qml:196
 msgctxt "Data|"
 msgid ""
 "Michelle wants to share 12 pieces of candy equally between her 4 brothers "
@@ -24137,7 +24137,7 @@ msgstr ""
 "Michaela chce rozdeliť svojich 12 cukroviniek spravodlivo jej 4 bratom a 1 "
 "sestre, tak aby mali všetci rovnako. Jej sestra už ale má nejaké cukrovinky."
 
-#: activities/share/resource/1/Data.qml:204
+#: activities/share/resource/1/Data.qml:206
 msgctxt "Data|"
 msgid ""
 "Thomas wants to share his 20 pieces of candy with his friends: 1 boy and 4 "
@@ -24146,7 +24146,7 @@ msgstr ""
 "Tomáš chce rozdeliť svojich 20 cukroviniek svojim kamarátom: 1 chlapcovi a 4 "
 "dievčatám. Môžete mu pomôcť?"
 
-#: activities/share/resource/1/Data.qml:214
+#: activities/share/resource/1/Data.qml:216
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 20 pieces of candy equally between 5 of his friends. "
@@ -24155,7 +24155,7 @@ msgstr ""
 "Pavol chce rozdeliť svojich 20 cukroviniek spravodlivo svojim 5 kamarátom. "
 "Každý už má jednu cukrovinku. Môžete mu pomôcť?"
 
-#: activities/share/resource/1/Data.qml:226
+#: activities/share/resource/1/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally with 2 of his girl "
@@ -24164,7 +24164,7 @@ msgstr ""
 "Karol chce rozdeliť svojich 6 cukroviniek spravodlivo svojim 2 kamarátkam. "
 "Dokáže rozdeliť cukrovinky rovnomerne?"
 
-#: activities/share/resource/1/Data.qml:236
+#: activities/share/resource/1/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -24175,7 +24175,7 @@ msgstr ""
 "kamarátom: 2 dievčatám a 1 chlapcovi. Dievčatá už majú nejaké cukrovinky. "
 "Ako by mala rozdeliť cukrovinky svojim kamarátom aby mali všetci rovnako?"
 
-#: activities/share/resource/1/Data.qml:246
+#: activities/share/resource/1/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 16 pieces of candy to share equally with his "
@@ -24185,7 +24185,7 @@ msgstr ""
 "Jasonov otec mu dal 16 cukroviniek, aby ich rozdelil svojim kamarátom: 2 "
 "chlapcom a 2 dievčatám. Pomôžte mu rozdať cukrovinky kamarátom."
 
-#: activities/share/resource/1/Data.qml:256
+#: activities/share/resource/1/Data.qml:258
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy between 4 of his friends: 2 girls "
@@ -24196,7 +24196,7 @@ msgstr ""
 "chlapcom. Chlapci už majú po jednej cukrovinke. Chce aby mali všetci "
 "narovnako."
 
-#: activities/share/resource/1/Data.qml:266
+#: activities/share/resource/1/Data.qml:268
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 25 pieces of candy equally between 5 of her friends: 3 "
@@ -24205,27 +24205,27 @@ msgstr ""
 "Mária chce rozdeliť svojich 25 cukroviniek spravodlivo 5 kamarátom: 3 "
 "dievčatám a 2 chlapcom. Môže tie cukrovinky rozdeliť rovnomerne?"
 
-#: activities/share/resource/2/Data.qml:13
+#: activities/share/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, possible rest."
 msgstr "Najviac 25 cukroviniek a 5 detí, s možným zvyškom."
 
-#: activities/share/resource/2/Data.qml:28
+#: activities/share/resource/2/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 5 pieces of candy among his friends."
 msgstr "Teraz chce rozdeliť 5 cukroviniek svojim kamarátom."
 
-#: activities/share/resource/2/Data.qml:38
+#: activities/share/resource/2/Data.qml:40
 msgctxt "Data|"
 msgid "Can you now share 7 of Paul's pieces of candy among his friends?"
 msgstr "Možete teraz rozdeliť 7 Pavlových cukroviniek jeho kamarátom?"
 
-#: activities/share/resource/2/Data.qml:48
+#: activities/share/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Can you now share 8 of Paul's pieces of candy among his friends?"
 msgstr "Možete teraz rozdeliť 8 Pavlových cukroviniek jeho kamarátom?"
 
-#: activities/share/resource/2/Data.qml:58
+#: activities/share/resource/2/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 11 pieces of candy left. He eats 2 pieces of candy and he "
@@ -24235,7 +24235,7 @@ msgstr ""
 "Pavol zostalo len 11 cukroviniek. Zje 2 cukrovinky a zvyšok dá svojim "
 "kamarátom. Môžete mu pomôcť rovnomerne rozdeliť zvyšných 9 cukroviniek?"
 
-#: activities/share/resource/2/Data.qml:70
+#: activities/share/resource/2/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "Bob wants to share 3 pieces of candy equally between 3 of his girl friends. "
@@ -24244,7 +24244,7 @@ msgstr ""
 "Róbert chce rozdeliť svoje 3 cukrovinky spravodlivo svojim 3 kamarátkam. "
 "Môže rozdeliť cukrovinky rovnomerne?"
 
-#: activities/share/resource/2/Data.qml:80
+#: activities/share/resource/2/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 8 pieces of candy between 3 of his friends: 1 boy and 2 "
@@ -24255,7 +24255,7 @@ msgstr ""
 "dievčatá. Chlapec už má jednu cukrovinku. Môže rozdeliť cukrovinky tak aby "
 "mali všetci narovnako?"
 
-#: activities/share/resource/2/Data.qml:90
+#: activities/share/resource/2/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 8 pieces of candy between 3 of her friends: 1 boy and 2 "
@@ -24266,7 +24266,7 @@ msgstr ""
 "2 dievčatám. Dievčatá už majú nejaké cukrovinky. Môže rozdeliť cukrovinky "
 "tak aby mali všetci narovnako?"
 
-#: activities/share/resource/2/Data.qml:100
+#: activities/share/resource/2/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 12 pieces of candy between 3 of his friends: 1 boy and "
@@ -24277,12 +24277,12 @@ msgstr ""
 "Chlapec už má nejaké cukrovinky. Môže rozdeliť cukrovinky tak aby mali "
 "všetci narovnako?"
 
-#: activities/share/resource/2/Data.qml:122
+#: activities/share/resource/2/Data.qml:124
 msgctxt "Data|"
 msgid "Now, Alice wants to share 8 pieces of candy equally among her friends."
 msgstr "Teraz chce Alica rozdeliť 8 cukroviniek spravodlivo svojim kamarátom."
 
-#: activities/share/resource/2/Data.qml:132
+#: activities/share/resource/2/Data.qml:134
 msgctxt "Data|"
 msgid ""
 "Can you help Alice share 10 pieces of candy equally among her friends: 1 "
@@ -24291,12 +24291,12 @@ msgstr ""
 "Môžete pomôcť Alici rozdeliť 10 cukroviniek jej kamarátom: 1 dievča a 3 "
 "chlapci? Dievča už má nejaké cukrovinky."
 
-#: activities/share/resource/2/Data.qml:142
+#: activities/share/resource/2/Data.qml:144
 msgctxt "Data|"
 msgid "Alice wants to share 16 pieces of candy equally among her friends."
 msgstr "Alica chce rozdeliť 16 cukroviniek spravodlivo svojim kamarátom."
 
-#: activities/share/resource/2/Data.qml:152
+#: activities/share/resource/2/Data.qml:154
 msgctxt "Data|"
 msgid ""
 "Alice has 14 pieces of candy left. She wants to share them equally among her "
@@ -24307,7 +24307,7 @@ msgstr ""
 "kamarátom. Chlapci už majú cukrovinky. Možete jej pomôcť rozdeliť cukrovinky "
 "rovnomerne?"
 
-#: activities/share/resource/2/Data.qml:164
+#: activities/share/resource/2/Data.qml:166
 msgctxt "Data|"
 msgid ""
 "Help Jon share 11 pieces of candies equally between five girls. The rest "
@@ -24316,7 +24316,7 @@ msgstr ""
 "Pomôžte Jánovi rozdeliť 11 cukroviniek spravodlivo piatim dievčatám. Zvyšok "
 "zostane Jánovi."
 
-#: activities/share/resource/2/Data.qml:174
+#: activities/share/resource/2/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Jon wants to share the rest of his pieces of candies with his brothers and "
@@ -24326,7 +24326,7 @@ msgstr ""
 "Ján chce rozdeliť zvyšné cukrovinky svojim bratom a sestrám. Môžete ich "
 "rozdeliť spravodlivo, ak viete, že jeho bratia už majú 2 cukrovinky?"
 
-#: activities/share/resource/2/Data.qml:184
+#: activities/share/resource/2/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Help Tux split 19 pieces of candies between his friends: 4 boys and 1 girl."
@@ -24334,13 +24334,13 @@ msgstr ""
 "Pomôžte Tuxovi rozdeliť 19 cukroviniek svojim kamarátom: 4 chlapci a 1 "
 "dievča."
 
-#: activities/share/resource/2/Data.qml:194
+#: activities/share/resource/2/Data.qml:196
 msgctxt "Data|"
 msgid "Help Maria share 18 pieces of candy equally between 3 boys and 2 girls."
 msgstr ""
 "Pomôžte Márii rozdeliť 18 cukroviniek spravodlivo 3 chlapcom a 2 dievčatám."
 
-#: activities/share/resource/2/Data.qml:206
+#: activities/share/resource/2/Data.qml:208
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally between 2 of his girl "
@@ -24349,7 +24349,7 @@ msgstr ""
 "Karol chce rozdeliť svojich 6 cukroviniek spravodlivo 2 kamarátkam. Môže "
 "rozdeliť cukrovinky tak aby mali všetky rovnako?"
 
-#: activities/share/resource/2/Data.qml:216
+#: activities/share/resource/2/Data.qml:218
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -24360,7 +24360,7 @@ msgstr ""
 "kamarátom: 2 dievčatá a 1 chlapec. Ako by mala rozdeliť cukrovinky svojim "
 "kamarátom?"
 
-#: activities/share/resource/2/Data.qml:226
+#: activities/share/resource/2/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 17 pieces of candy to share equally between his "
@@ -24370,7 +24370,7 @@ msgstr ""
 "Jasonov otec mu dal 17 cukroviniek, aby ich rozdelil svojim kamarátom:2 "
 "chlapci a 3 dievčatá. Pomôžte mu rozdať cukrovinky jeho kamarátom!"
 
-#: activities/share/resource/2/Data.qml:236
+#: activities/share/resource/2/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy equally between 4 of his friends: 2 "
@@ -24381,7 +24381,7 @@ msgstr ""
 "kamarátov: 2 dievčatá a 2 chlapcov. Dokáže rovnomerne rozdeliť cukrovinky "
 "svojim kamarátom?"
 
-#: activities/share/resource/2/Data.qml:246
+#: activities/share/resource/2/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 23 pieces of candy equally between 5 of her friends: 3 "
@@ -24391,12 +24391,12 @@ msgstr ""
 "Mária chce rozdeliť 23 cukroviniek spravodlivo svojim 5 kamarátom: 3 "
 "dievčatá a 2 chlapci. Môže rozdeliť cukrovinky rovnomerne svojim kamarátom?"
 
-#: activities/share/resource/3/Data.qml:13
+#: activities/share/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr "Najviac 30 cukroviniek a 6 detí, s možným zvyškom."
 
-#: activities/share/share.js:98
+#: activities/share/share.js:115
 #, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -24407,7 +24407,7 @@ msgstr[0] "Umiestnite chlapcov"
 msgstr[1] "Umiestnite %n chlapcov"
 msgstr[2] "Umiestnite %n chlapcov"
 
-#: activities/share/share.js:102
+#: activities/share/share.js:119
 #, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -24418,7 +24418,7 @@ msgstr[0] "a dievčatá do stredu. "
 msgstr[1] "a %n dievčatá do stredu. "
 msgstr[2] "a %n dievčat do stredu. "
 
-#: activities/share/share.js:106
+#: activities/share/share.js:123
 #, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -24429,7 +24429,7 @@ msgstr[0] "Potom im spravodlivo rozdeľte dostupné cukrovinky."
 msgstr[1] "Potom medzi nimi rovnako rozdeľte %n kúsky sladkostí."
 msgstr[2] "Potom medzi nimi rovnako rozdeľte %n kúskov sladkostí."
 
-#: activities/share/Share.qml:358
+#: activities/share/Share.qml:359
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
@@ -27357,7 +27357,7 @@ msgstr ""
 "odpadových vôd s cieľom reaktivovať celý vodný systém. Keď je systém späť a "
 "Tux je v sprche, stlačte pre neho tlačidlo sprchy."
 
-#: activities/watercycle/Watercycle.qml:114
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -27366,12 +27366,12 @@ msgstr ""
 "Slnko je hlavnou zložkou kolobehu vody. Kliknite na slnko na spustenie "
 "kolobehu vody."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Ako slnko vyjde, voda v mori sa začne ohrievať a vyparovať."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -27380,7 +27380,7 @@ msgstr ""
 "Vodná para kondenzuje, čím tvorí oblaky a keď sa zamračí, prší. Kliknite na "
 "oblak."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:118
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -27390,7 +27390,7 @@ msgstr ""
 "Dážď rozvodňuje rieky a táto voda sa k nám dopravuje motorovými čerpadlami "
 "cez vodárenskú vežu. Kliknutím na motorové čerpadlo dodáte obyvateľom vodu."
 
-#: activities/watercycle/Watercycle.qml:119
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -27399,18 +27399,18 @@ msgstr ""
 "Pozrite sa na vežu naplnenú vodou. Aktivujte čističku odpadových vôd "
 "kliknutím na ňu."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Výborne, kliknite na sprchu, keď sa Tux vráti domov."
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:122
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "Výborne, ukončili ste vodný cyklus. Môžete pokračovať v hre."
 
-#: activities/watercycle/Watercycle.qml:139
+#: activities/watercycle/Watercycle.qml:140
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -27421,7 +27421,7 @@ msgstr ""
 "cirkuluje zo zeme do neba a znovu späť. Slnečné teplo poskytuje energiu na "
 "odparovanie vody z vodných útvarov, ako sú oceány."
 
-#: activities/watercycle/Watercycle.qml:142
+#: activities/watercycle/Watercycle.qml:143
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -27432,7 +27432,7 @@ msgstr ""
 "para nakoniec ochladzuje a vytvára malé kvapky v oblakoch. Keď sa oblaky "
 "stretnú so studeným vzduchom nad zemou, spustí sa zrážanie a spadne ako dážď."
 
-#: activities/watercycle/Watercycle.qml:145
+#: activities/watercycle/Watercycle.qml:146
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -27443,7 +27443,7 @@ msgstr ""
 "nazýva podzemná voda. Väčšina vody však tečie ako odtok, ktorý sa cez rieky "
 "nakoniec vracia do mora."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:148
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "

@@ -23076,7 +23076,7 @@ msgstr ""
 "olduqda işıqlandırmaq üçün işıq düyməsinə vurun. Qazanmaq üçün bütün "
 "istehsalçılar işə başlayanda istehlakçıları işə salmalısınız."
 
-#: activities/renewable_energy/RenewableEnergy.qml:302
+#: activities/renewable_energy/RenewableEnergy.qml:303
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -23085,7 +23085,7 @@ msgstr ""
 "Tuks öz qayığında balıq tutmaqdan qayıdır. Elektrik sistemini bərpa edin ki "
 "o, evini işıqlandıra bilsin."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:305
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -23095,7 +23095,7 @@ msgstr ""
 "elektrostansiyası və transformatorların üzərinə vurun ki, elektrik sistemi "
 "təkrar aktiv olsun."
 
-#: activities/renewable_energy/RenewableEnergy.qml:306
+#: activities/renewable_energy/RenewableEnergy.qml:307
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -23106,12 +23106,12 @@ msgstr ""
 "üçün işıq düyməsinə vurun. Qazanmaq üçün bütün istehsalçılar işə başlayanda "
 "istehlakçıları işə salmalısınız."
 
-#: activities/renewable_energy/RenewableEnergy.qml:308
+#: activities/renewable_energy/RenewableEnergy.qml:309
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "Bərpa olunan enerjiyə əsaslanan elektrik sistemi haqqında öyrənin."
 
-#: activities/renewable_energy/RenewableEnergy.qml:333
+#: activities/renewable_energy/RenewableEnergy.qml:334
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -23991,13 +23991,13 @@ msgctxt "ActivityInfo|"
 msgid "If there is a rest, it needs to be placed inside the candy jar."
 msgstr "Əgər qalıq qalarsa onu konfetlər olan qaba yerləşdirin."
 
-#: activities/share/resource/1/Data.qml:13
+#: activities/share/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, no rest."
 msgstr "Ən çox 25 konfet və 5 uşaq, qalıqsız."
 
-#: activities/share/resource/1/Data.qml:18
-#: activities/share/resource/2/Data.qml:18
+#: activities/share/resource/1/Data.qml:20
+#: activities/share/resource/2/Data.qml:20
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 2 pieces of candy equally between 2 of his girl friends. "
@@ -24008,19 +24008,19 @@ msgstr ""
 "bilərsən? Öncə uşaqları mərkəzdə yerləşdirin, sonra isə onlar arasında hər "
 "birinə bir konfet olmaqla paylayın."
 
-#: activities/share/resource/1/Data.qml:28
+#: activities/share/resource/1/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 4 pieces of candy equally among his friends."
 msgstr "İndi o 4 konfeti dostları arasında bərabər paylamaq istəyir."
 
-#: activities/share/resource/1/Data.qml:38
+#: activities/share/resource/1/Data.qml:40
 msgctxt "Data|"
 msgid ""
 "Can you now share 6 of Paul's pieces of candy equally among his friends?"
 msgstr ""
 "İndi sən, 6 konfeti Poladın dostları arasında bərabər oaylaya bilərsən?"
 
-#: activities/share/resource/1/Data.qml:48
+#: activities/share/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid ""
 "Some of his friends already have pieces of candy. He wants to give them 7 "
@@ -24029,7 +24029,7 @@ msgstr ""
 "Artıq onlardan bəzisinin konfeti var. Sən onlara daha 7 konfet vermək "
 "istəyirsən ki, onların hərəsində eyni miqdarda konfet olsun."
 
-#: activities/share/resource/1/Data.qml:58
+#: activities/share/resource/1/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 12 pieces of candy left. He eats 2 pieces of candy and he "
@@ -24040,7 +24040,7 @@ msgstr ""
 "dostlarınaverir. Sən ona qalan 10 konfeti bərabər şəkildə paylamağa kömək "
 "edə bilərsən?"
 
-#: activities/share/resource/1/Data.qml:70
+#: activities/share/resource/1/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "George wants to share 3 pieces of candy equally between 3 of his girl "
@@ -24049,7 +24049,7 @@ msgstr ""
 "Cəmil 3 konfeti 3 qız dostu arasında bərabər bölmək istəyir. Sən ona "
 "konfetləri bölməyə kömək edə bilərsən?"
 
-#: activities/share/resource/1/Data.qml:80
+#: activities/share/resource/1/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 6 pieces of candy equally between 3 of her friends: 1 "
@@ -24058,7 +24058,7 @@ msgstr ""
 "Məryəm 6 konfeti, 1 qız və 2 oğlandan ibarət 3 dostu arasında bərabər bölmək "
 "istəyir. Sən ona konfetləri bölməyə kömək edə bilərsən."
 
-#: activities/share/resource/1/Data.qml:90
+#: activities/share/resource/1/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "John wants to share 8 pieces of candy equally between 3 of his friends: 1 "
@@ -24069,7 +24069,7 @@ msgstr ""
 "istəyir. Artıq oğlanda bir konfet var. O, onların hamısında eyni sayda "
 "konfet olduğuna əmin ola bilərmi?"
 
-#: activities/share/resource/1/Data.qml:100
+#: activities/share/resource/1/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 12 pieces of candy equally between 3 of his friends: 2 "
@@ -24078,7 +24078,7 @@ msgstr ""
 "Polad 12 konfeti 2 oğlan və q qızdan ibarət 3 dostu arasında bərabər bölmək "
 "isəyir. Sən onlara konfetləri bərabər bölməyə kömək edə bilərsənmi?"
 
-#: activities/share/resource/1/Data.qml:110
+#: activities/share/resource/1/Data.qml:112
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 11 pieces of candy between 3 of her friends: 1 boy and "
@@ -24089,8 +24089,8 @@ msgstr ""
 "istəyir. Artıq qızlarda konfetlər var. O, konfetləri necə bölə bilər ki, "
 "dostlarının hər birində eyni sayda konfet olsun?"
 
-#: activities/share/resource/1/Data.qml:122
-#: activities/share/resource/2/Data.qml:112
+#: activities/share/resource/1/Data.qml:124
+#: activities/share/resource/2/Data.qml:114
 msgctxt "Data|"
 msgid ""
 "Alice wants to share 4 pieces of candy equally between 4 of her girl "
@@ -24099,12 +24099,12 @@ msgstr ""
 "Aynur 4 konfeti 4 rəfiqəsi arasında bərabər bölmək istəyir. Ona kömək edə "
 "bilərsənmi?"
 
-#: activities/share/resource/1/Data.qml:132
+#: activities/share/resource/1/Data.qml:134
 msgctxt "Data|"
 msgid "Now, Alice wants to give 8 pieces of candy to her friends."
 msgstr "İndi isə, Aynur 8 konfeti dostları arasında bölmək istəyir."
 
-#: activities/share/resource/1/Data.qml:142
+#: activities/share/resource/1/Data.qml:144
 msgctxt "Data|"
 msgid ""
 "Alice wants to give 10 pieces of candy to her friends, 1 girl and 3 boys, so "
@@ -24115,12 +24115,12 @@ msgstr ""
 "ki, onların hamısısında eyni sayda konfet olsun. Artıq qızlarda bir neçə "
 "konfet var."
 
-#: activities/share/resource/1/Data.qml:152
+#: activities/share/resource/1/Data.qml:154
 msgctxt "Data|"
 msgid "Alice wants to give 16 pieces of candy to her friends."
 msgstr "Aynur 16 konfeti dostları arasında bölmək istəyir."
 
-#: activities/share/resource/1/Data.qml:162
+#: activities/share/resource/1/Data.qml:164
 msgctxt "Data|"
 msgid ""
 "Alice wants to give pieces of candy to 4 friends. Some of them already have "
@@ -24131,7 +24131,7 @@ msgstr ""
 "konfet var. Sən ona konfetləri elə bölməyə kömək edə bilərsənmi ki, onun hər "
 "dostunda eyni sayda konfet olsun?"
 
-#: activities/share/resource/1/Data.qml:174
+#: activities/share/resource/1/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Michael wants to share 5 pieces of candy equally between 5 of his girl "
@@ -24140,7 +24140,7 @@ msgstr ""
 "Mikayıl 5 konfeti 5 qız dostu arasında bərabər bölmək istəyir. Ona kömək edə "
 "bilərsənmi?"
 
-#: activities/share/resource/1/Data.qml:184
+#: activities/share/resource/1/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Helen has 5 friends: 2 boys and 3 girls. She wants to give them 10 pieces of "
@@ -24149,7 +24149,7 @@ msgstr ""
 "Leylanın 5 dostu var: 2 oğlan və 3 qız. O, onlara 10 konfet vermək istəyir. "
 "Ona könfetləri dostlarə arasında bərabər bölməyə kömək edin."
 
-#: activities/share/resource/1/Data.qml:194
+#: activities/share/resource/1/Data.qml:196
 msgctxt "Data|"
 msgid ""
 "Michelle wants to share 12 pieces of candy equally between her 4 brothers "
@@ -24160,7 +24160,7 @@ msgstr ""
 "ki, onların hərəsində eyni konfet olsun. Artıq onun bacısında bir neçə "
 "konfet var."
 
-#: activities/share/resource/1/Data.qml:204
+#: activities/share/resource/1/Data.qml:206
 msgctxt "Data|"
 msgid ""
 "Thomas wants to share his 20 pieces of candy with his friends: 1 boy and 4 "
@@ -24169,7 +24169,7 @@ msgstr ""
 "Tural 20 konfeti, 1 oğlan və 4 qız dostları arasında bölmək istəyir. Ona "
 "kömək edə bilərsənmi?"
 
-#: activities/share/resource/1/Data.qml:214
+#: activities/share/resource/1/Data.qml:216
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 20 pieces of candy equally between 5 of his friends. "
@@ -24178,7 +24178,7 @@ msgstr ""
 "Polad 20 konfeti 5 dostu arasında bərabər bölmək istəyir. Artıq onlarda bir "
 "neçə konfet var. Ona kömək edə bilərsənmi?"
 
-#: activities/share/resource/1/Data.qml:226
+#: activities/share/resource/1/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally with 2 of his girl "
@@ -24187,7 +24187,7 @@ msgstr ""
 "Orxan 6 konfeti 2 qız dostu ilə bərabər bölmək istəyir. Ona konfetləri "
 "bərabər bölməyə kömək edə bilərsənmi?"
 
-#: activities/share/resource/1/Data.qml:236
+#: activities/share/resource/1/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -24198,7 +24198,7 @@ msgstr ""
 "paylamaq istəyir. Artıq qızlarda bir neçə konfet var. Sevinc konfeti necə "
 "bölməlidir ki, dostlarının hər birində eyni sayda konfet olsun?"
 
-#: activities/share/resource/1/Data.qml:246
+#: activities/share/resource/1/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 16 pieces of candy to share equally with his "
@@ -24208,7 +24208,7 @@ msgstr ""
 "Cavadın atası ona 16 konfet verdi ki, onu 2 oğlan və 2 qız dostu arasında "
 "bərabər paylasın. Ona konfetləri dostlarına verməyə kömək edin."
 
-#: activities/share/resource/1/Data.qml:256
+#: activities/share/resource/1/Data.qml:258
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy between 4 of his friends: 2 girls "
@@ -24219,7 +24219,7 @@ msgstr ""
 "istəyir. Artıq oğlanların hər birində bir konfet var. Vəmil istəyir ki, "
 "dostlarının hər birində eyni sayda konfet olsun."
 
-#: activities/share/resource/1/Data.qml:266
+#: activities/share/resource/1/Data.qml:268
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 25 pieces of candy equally between 5 of her friends: 3 "
@@ -24228,27 +24228,27 @@ msgstr ""
 "Məryəm 25 konfeti 3 qız və 2 oğlandan ibarət 5 dostu arasında bərabər bölmək "
 "istəyir. Ona, konfetləri brabər bölməyə kömək edə bilərsənmi?"
 
-#: activities/share/resource/2/Data.qml:13
+#: activities/share/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, possible rest."
 msgstr "Ən çox 25 konfet və 5 uşaq, qalıq qala bilər."
 
-#: activities/share/resource/2/Data.qml:28
+#: activities/share/resource/2/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 5 pieces of candy among his friends."
 msgstr "O, indi 5 konfeti dostları arasında bölmək istəyir."
 
-#: activities/share/resource/2/Data.qml:38
+#: activities/share/resource/2/Data.qml:40
 msgctxt "Data|"
 msgid "Can you now share 7 of Paul's pieces of candy among his friends?"
 msgstr "Sən indi Poladın 7 konfetini dostları arasında paylaya bilərsənmi?"
 
-#: activities/share/resource/2/Data.qml:48
+#: activities/share/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Can you now share 8 of Paul's pieces of candy among his friends?"
 msgstr "Sən indi Poladın 8 konfetini dostları arasında paylaya bilərsənmi?"
 
-#: activities/share/resource/2/Data.qml:58
+#: activities/share/resource/2/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 11 pieces of candy left. He eats 2 pieces of candy and he "
@@ -24259,7 +24259,7 @@ msgstr ""
 "dostlarınaverir. Sən ona qalan 9 konfeti bərabər şəkildə paylamağa kömək edə "
 "bilərsənmi?"
 
-#: activities/share/resource/2/Data.qml:70
+#: activities/share/resource/2/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "Bob wants to share 3 pieces of candy equally between 3 of his girl friends. "
@@ -24268,7 +24268,7 @@ msgstr ""
 "Babək 3 konfeti 3 qız dostu arasında bərabər paylamaq istəyir. Ona, "
 "konfetləri bərabər paylamağa kömək edə bilərsənmi?"
 
-#: activities/share/resource/2/Data.qml:80
+#: activities/share/resource/2/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 8 pieces of candy between 3 of his friends: 1 boy and 2 "
@@ -24279,7 +24279,7 @@ msgstr ""
 "istəyir. Artıq oğlanda bir konfet var. Ayxana konfetləri dostlarına elə "
 "bölməyə kömək edə bilərsənmi ki, onların hərəsində eyni sayda konfet olsun?"
 
-#: activities/share/resource/2/Data.qml:90
+#: activities/share/resource/2/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 8 pieces of candy between 3 of her friends: 1 boy and 2 "
@@ -24290,7 +24290,7 @@ msgstr ""
 "istəyir. Artıq qızlarda bir neçə konfet var. Ona konfetləri elə bölməyə "
 "kömək edə bilərsənmi ki, dostlarını hərəsində eyni sayda konfet olsun?"
 
-#: activities/share/resource/2/Data.qml:100
+#: activities/share/resource/2/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 12 pieces of candy between 3 of his friends: 1 boy and "
@@ -24301,12 +24301,12 @@ msgstr ""
 "istəyir. Artıq oğlanda bir neçə konfet var. Ayxana konfetləri dostlarına elə "
 "bölməyə kömək edə bilərsənmi ki, onların hərəsində eyni sayda konfet olsun?"
 
-#: activities/share/resource/2/Data.qml:122
+#: activities/share/resource/2/Data.qml:124
 msgctxt "Data|"
 msgid "Now, Alice wants to share 8 pieces of candy equally among her friends."
 msgstr "İndi Aynur 8 konfeti dostları arasında bərabər paylamaq istəyir."
 
-#: activities/share/resource/2/Data.qml:132
+#: activities/share/resource/2/Data.qml:134
 msgctxt "Data|"
 msgid ""
 "Can you help Alice share 10 pieces of candy equally among her friends: 1 "
@@ -24315,12 +24315,12 @@ msgstr ""
 "Aynura 10 konfeti 1 qız və 3 oğlan dostları arasında bərabər paylamağa kömək "
 "edə bilərsənmi? Artıq rəfiqəsində bir neçə konfet var."
 
-#: activities/share/resource/2/Data.qml:142
+#: activities/share/resource/2/Data.qml:144
 msgctxt "Data|"
 msgid "Alice wants to share 16 pieces of candy equally among her friends."
 msgstr "Aynur 16 konfeti dostları arasında bərabər paylamaq istəyir."
 
-#: activities/share/resource/2/Data.qml:152
+#: activities/share/resource/2/Data.qml:154
 msgctxt "Data|"
 msgid ""
 "Alice has 14 pieces of candy left. She wants to share them equally among her "
@@ -24331,7 +24331,7 @@ msgstr ""
 "bölmək istəyir. Artıq oğlanlarda bir neçə konfet var. Sən ona konfetləri "
 "bərabər bölməyə kömək edə bilərsənmi?"
 
-#: activities/share/resource/2/Data.qml:164
+#: activities/share/resource/2/Data.qml:166
 msgctxt "Data|"
 msgid ""
 "Help Jon share 11 pieces of candies equally between five girls. The rest "
@@ -24340,7 +24340,7 @@ msgstr ""
 "Cəmilə 11 konfeti qızlar arasında bərabər bölməyə kömək et. Artıq konfetlər "
 "Cəmildə qalır."
 
-#: activities/share/resource/2/Data.qml:174
+#: activities/share/resource/2/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Jon wants to share the rest of his pieces of candies with his brothers and "
@@ -24351,20 +24351,20 @@ msgstr ""
 "konfetləri bərabər bölməyə kömək edə bilərsənmi? Nəzərə al ki, qardaşların "
 "artıq 2 kionfeti var."
 
-#: activities/share/resource/2/Data.qml:184
+#: activities/share/resource/2/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Help Tux split 19 pieces of candies between his friends: 4 boys and 1 girl."
 msgstr "Tuks'a 19 konfeti 4 oğlan və 1 qız dostları arasında bölməyə kömək et."
 
-#: activities/share/resource/2/Data.qml:194
+#: activities/share/resource/2/Data.qml:196
 msgctxt "Data|"
 msgid "Help Maria share 18 pieces of candy equally between 3 boys and 2 girls."
 msgstr ""
 "Məryəmə 18 konfeti 3 oğlan və q qız dostları arasında bərabər bölməyə kömək "
 "et."
 
-#: activities/share/resource/2/Data.qml:206
+#: activities/share/resource/2/Data.qml:208
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally between 2 of his girl "
@@ -24373,7 +24373,7 @@ msgstr ""
 "Orxan 6 konfeti 2 qız dostu arasında bərabər bölmək istəyir. Ona konfetləri "
 "bərabər bölməyə kömək edə bilərsənmi?"
 
-#: activities/share/resource/2/Data.qml:216
+#: activities/share/resource/2/Data.qml:218
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -24384,7 +24384,7 @@ msgstr ""
 "bərabər paylamaq isəyir. O, konfetləri dostları arasında necə bərabər "
 "bölməlidir?"
 
-#: activities/share/resource/2/Data.qml:226
+#: activities/share/resource/2/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 17 pieces of candy to share equally between his "
@@ -24394,7 +24394,7 @@ msgstr ""
 "Cavadın atası ona 17 konfet verdi ki, onu 2 oğlan və 2 qız dostu ilə bərabər "
 "paylaşsın. Ona konfetləri dostlarına verməyə kömək edin."
 
-#: activities/share/resource/2/Data.qml:236
+#: activities/share/resource/2/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy equally between 4 of his friends: 2 "
@@ -24405,7 +24405,7 @@ msgstr ""
 "istəyir Sən ona konfetləri dostları arasında bərabər bölməyə kömək edə "
 "bilərsənmi?"
 
-#: activities/share/resource/2/Data.qml:246
+#: activities/share/resource/2/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 23 pieces of candy equally between 5 of her friends: 3 "
@@ -24416,12 +24416,12 @@ msgstr ""
 "istəyir. Ona, konfetləri dostları arasında brabər bölməyə kömək edə "
 "bilərsənmi?"
 
-#: activities/share/resource/3/Data.qml:13
+#: activities/share/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr "Ən çox 30 konfet və 6 uşaq, qalıq qala bilər."
 
-#: activities/share/share.js:98
+#: activities/share/share.js:115
 #, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -24431,7 +24431,7 @@ msgid_plural "Place %n boy(s) "
 msgstr[0] "Mərkəzdə %n oğlan "
 msgstr[1] "Mərkəzdə %n oğlan "
 
-#: activities/share/share.js:102
+#: activities/share/share.js:119
 #, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -24441,7 +24441,7 @@ msgid_plural "and %n girl(s) in the center. "
 msgstr[0] "və %n qız yerləşdirin. "
 msgstr[1] "və %n qız yerləşdirin. "
 
-#: activities/share/share.js:106
+#: activities/share/share.js:123
 #, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -24451,7 +24451,7 @@ msgid_plural "Then split %n pieces of candy equally between them."
 msgstr[0] "Sonra %n konfeti onlar arasında bərabər bölün."
 msgstr[1] "Sonra %n konfeti onlar arasında bərabər bölün."
 
-#: activities/share/Share.qml:358
+#: activities/share/Share.qml:359
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
@@ -27415,7 +27415,7 @@ msgstr ""
 "günəş, bulud, nasos stansiyası və təmizləmə sistemi. Sistem bərpa olunduqdan "
 "sonra Tuksun duş qəbul etməsi üçün düyməyə vuraraq suyu açın."
 
-#: activities/watercycle/Watercycle.qml:114
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -27424,12 +27424,12 @@ msgstr ""
 "Günəş, su dövranın əsas hissəsidir. Su dövranını başlatmaq üçün günəşin "
 "üzərinə vurun."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Günəş yüksəldikcə dənizin suyu isinməyə və buxarlaşmağa başlayır."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -27438,7 +27438,7 @@ msgstr ""
 "Su buxarları bulud yaratmaq üçün sıxlaşır və bulud ağırlaşdıqda yağış yağır. "
 "Buludun üzərinə vur."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:118
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -27449,7 +27449,7 @@ msgstr ""
 "nasoslar vasitəsi ilə çatdırılır. Sakinləri su ilə təmin etmək üçün nanosun "
 "üzərinə vurun."
 
-#: activities/watercycle/Watercycle.qml:119
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -27457,19 +27457,19 @@ msgid ""
 msgstr ""
 "Qullə su ilə dolduqda su təmizləmə sisteçmini işə salmaq üçün üzərinı vurun."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Əla, Tuks evə çatdıqda duşa vurun."
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:122
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr ""
 "Mükəmməl, siz su dövranını tamamladınız. Oynamağa davam edə bilərsiniz."
 
-#: activities/watercycle/Watercycle.qml:139
+#: activities/watercycle/Watercycle.qml:140
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -27480,7 +27480,7 @@ msgstr ""
 "atmosferə və təkrar yerə qayıdaraq etdiyi dövrəyə deyilir. Günəşin istiliyi, "
 "okeanlar kimi su hövzələrindən susyun buxarlanması üçün enerji qaynağıdır."
 
-#: activities/watercycle/Watercycle.qml:142
+#: activities/watercycle/Watercycle.qml:143
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -27492,7 +27492,7 @@ msgstr ""
 "hava kütləsi ilə birləşdikdə yağıntı əmələ gətirir və yağış şəklində yerə "
 "tökülür."
 
-#: activities/watercycle/Watercycle.qml:145
+#: activities/watercycle/Watercycle.qml:146
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -27503,7 +27503,7 @@ msgstr ""
 "qrunt suları adlanır. Lakin suyun çox hissəsi çaylar vasitəsi ilə axaraq "
 "dənizlərə və göllərə geri qayıdır."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:148
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "

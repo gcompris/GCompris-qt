@@ -23920,7 +23920,7 @@ msgstr ""
 "solas dó. Chun an bua a bheith agat, ní mór duit na tomhaltóirí uilig a chur "
 "ar siúl nuair atá na táirgeoirí uilig ag feidhmiú. "
 
-#: activities/renewable_energy/RenewableEnergy.qml:302
+#: activities/renewable_energy/RenewableEnergy.qml:303
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -23929,7 +23929,7 @@ msgstr ""
 "Bhí Tux ag iascaireacht ar a bhád agus tá sé ar ais anois. Cuir an córas "
 "leictreach ar obair arís ionas gur féidir leis solas a bheith aige sa bhaile."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:305
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -23939,7 +23939,7 @@ msgstr ""
 "damba, na grianphainéil, an fheirm ghaoithe agus an claochladán, chun an "
 "córas leictreachais a chur ar siúl arís."
 
-#: activities/renewable_energy/RenewableEnergy.qml:306
+#: activities/renewable_energy/RenewableEnergy.qml:307
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -23950,14 +23950,14 @@ msgstr ""
 "dó. Chun an bua a bheith agat, caithfidh tú na tomhaltóirí ulig a chur ar "
 "siúl nuair atá na táirgeoirí uilig ag feidhmiú."
 
-#: activities/renewable_energy/RenewableEnergy.qml:308
+#: activities/renewable_energy/RenewableEnergy.qml:309
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Foghlaim faoi chóras leictreachais atá bunaithe ar fhuinneamh in-athnuaite. "
 "Bain sult as!"
 
-#: activities/renewable_energy/RenewableEnergy.qml:333
+#: activities/renewable_energy/RenewableEnergy.qml:334
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -24807,13 +24807,13 @@ msgctxt "ActivityInfo|"
 msgid "If there is a rest, it needs to be placed inside the candy jar."
 msgstr ""
 
-#: activities/share/resource/1/Data.qml:13
+#: activities/share/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, no rest."
 msgstr ""
 
-#: activities/share/resource/1/Data.qml:18
-#: activities/share/resource/2/Data.qml:18
+#: activities/share/resource/1/Data.qml:20
+#: activities/share/resource/2/Data.qml:20
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -24830,7 +24830,7 @@ msgstr ""
 "cailín amháin agus buachaill amháin. An féidir leat cuidiú leis? Ar dtús, "
 "cuir na páistí sa lár, ansin tarraing na milseáin chucu."
 
-#: activities/share/resource/1/Data.qml:28
+#: activities/share/resource/1/Data.qml:30
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid "Now he wants to give 4 pieces of candy to his friends."
@@ -24838,7 +24838,7 @@ msgctxt "Data|"
 msgid "Now he wants to share 4 pieces of candy equally among his friends."
 msgstr "Anois, tá sé ag iarraidh 4 mhilseán a thabhairt dá chairde."
 
-#: activities/share/resource/1/Data.qml:38
+#: activities/share/resource/1/Data.qml:40
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid "Can you now give 6 of Paul's pieces of candy to his friends?"
@@ -24847,14 +24847,14 @@ msgid ""
 "Can you now share 6 of Paul's pieces of candy equally among his friends?"
 msgstr "An féidir leat 6 mhilseán de chuid Phóil a thabhairt dá chairde anois?"
 
-#: activities/share/resource/1/Data.qml:48
+#: activities/share/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid ""
 "Some of his friends already have pieces of candy. He wants to give them 7 "
 "more pieces so that they all have the same amount."
 msgstr ""
 
-#: activities/share/resource/1/Data.qml:58
+#: activities/share/resource/1/Data.qml:60
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -24871,7 +24871,7 @@ msgstr ""
 "chuid eile dá chairde. An féidir leat cuidiú leis na 10 milseán dheireanacha "
 "a roinnt ar a chairde?"
 
-#: activities/share/resource/1/Data.qml:70
+#: activities/share/resource/1/Data.qml:72
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -24885,7 +24885,7 @@ msgstr ""
 "Tá 6 mhilseán ag Cathal le roinnt ar bheirt dá chuid, is beirt chailíní iad. "
 "An féidir leis na milseáin a roinnt go cothrom?"
 
-#: activities/share/resource/1/Data.qml:80
+#: activities/share/resource/1/Data.qml:82
 #, fuzzy
 #| msgctxt "board4|"
 #| msgid ""
@@ -24899,7 +24899,7 @@ msgstr ""
 "Tá 8 milseán ag Cathal le roinnt ar 3 cairde dá chuid: buachaill amháin agus "
 "beirt chailíní. An féidir leis na milseáin a roinnt go cothrom?"
 
-#: activities/share/resource/1/Data.qml:90
+#: activities/share/resource/1/Data.qml:92
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -24918,7 +24918,7 @@ msgstr ""
 "cothrom idir a cairde? Ar dtús, cuir na páistí sa lár, ansin tarraing na "
 "milseáin chucu."
 
-#: activities/share/resource/1/Data.qml:100
+#: activities/share/resource/1/Data.qml:102
 #, fuzzy
 #| msgctxt "board4|"
 #| msgid ""
@@ -24932,7 +24932,7 @@ msgstr ""
 "Tá 8 milseán ag Cathal le roinnt ar 3 cairde dá chuid: buachaill amháin agus "
 "beirt chailíní. An féidir leis na milseáin a roinnt go cothrom?"
 
-#: activities/share/resource/1/Data.qml:110
+#: activities/share/resource/1/Data.qml:112
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -24950,8 +24950,8 @@ msgstr ""
 "cothrom idir a cairde? Ar dtús, cuir na páistí sa lár, ansin tarraing na "
 "milseáin chucu."
 
-#: activities/share/resource/1/Data.qml:122
-#: activities/share/resource/2/Data.qml:112
+#: activities/share/resource/1/Data.qml:124
+#: activities/share/resource/2/Data.qml:114
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid "Alice wants to give 16 pieces of candy to her friends."
@@ -24961,12 +24961,12 @@ msgid ""
 "friends. Can you help her?"
 msgstr "Tá Aoibheann ag iarraidh 16 mhilseán a thabhairt dá cairde."
 
-#: activities/share/resource/1/Data.qml:132
+#: activities/share/resource/1/Data.qml:134
 msgctxt "Data|"
 msgid "Now, Alice wants to give 8 pieces of candy to her friends."
 msgstr "Anois, tá Aoibheann ag iarraidh 8 mhilseán a thabhairt dá cairde."
 
-#: activities/share/resource/1/Data.qml:142
+#: activities/share/resource/1/Data.qml:144
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -24983,12 +24983,12 @@ msgstr ""
 "agus lena dheirfiúr. An féidir leat iad a roinnt go cothrom? Cuimhnigh go "
 "bhfuil 2 mhilseán ag a dheartháir cheana féin?"
 
-#: activities/share/resource/1/Data.qml:152
+#: activities/share/resource/1/Data.qml:154
 msgctxt "Data|"
 msgid "Alice wants to give 16 pieces of candy to her friends."
 msgstr "Tá Aoibheann ag iarraidh 16 mhilseán a thabhairt dá cairde."
 
-#: activities/share/resource/1/Data.qml:162
+#: activities/share/resource/1/Data.qml:164
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -25005,7 +25005,7 @@ msgstr ""
 "leis na milseáin a roinnt ionas go mbeidh an líon céanna milseán ag achan "
 "duine?"
 
-#: activities/share/resource/1/Data.qml:174
+#: activities/share/resource/1/Data.qml:176
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -25019,7 +25019,7 @@ msgstr ""
 "Tá Tomás ag iarraidh a 20 milseán a roinnt lena chairde: buachaill amháin "
 "agus ceathrar cailíní. An féidir leat cuidiú leis?"
 
-#: activities/share/resource/1/Data.qml:184
+#: activities/share/resource/1/Data.qml:186
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -25034,7 +25034,7 @@ msgstr ""
 "iarraidh 10 mhilseán a thabhairt dóibh. Cuidigh léi na milseáin a roinnt "
 "idir a cuid cairde!"
 
-#: activities/share/resource/1/Data.qml:194
+#: activities/share/resource/1/Data.qml:196
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -25049,7 +25049,7 @@ msgstr ""
 "Tá 12 mhilseán ag Michelle agus tá sí ag iarraidh iad a roinnt lena ceathrar "
 "deartháireacha agus lena deirfiúr amháin. Cuidigh léi na milseáin a roinnt!"
 
-#: activities/share/resource/1/Data.qml:204
+#: activities/share/resource/1/Data.qml:206
 msgctxt "Data|"
 msgid ""
 "Thomas wants to share his 20 pieces of candy with his friends: 1 boy and 4 "
@@ -25058,7 +25058,7 @@ msgstr ""
 "Tá Tomás ag iarraidh a 20 milseán a roinnt lena chairde: buachaill amháin "
 "agus ceathrar cailíní. An féidir leat cuidiú leis?"
 
-#: activities/share/resource/1/Data.qml:214
+#: activities/share/resource/1/Data.qml:216
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -25072,7 +25072,7 @@ msgstr ""
 "Tá 6 mhilseán ag Cathal le roinnt ar bheirt dá chuid, is beirt chailíní iad. "
 "An féidir leis na milseáin a roinnt go cothrom?"
 
-#: activities/share/resource/1/Data.qml:226
+#: activities/share/resource/1/Data.qml:228
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -25086,7 +25086,7 @@ msgstr ""
 "Tá 6 mhilseán ag Cathal le roinnt ar bheirt dá chuid, is beirt chailíní iad. "
 "An féidir leis na milseáin a roinnt go cothrom?"
 
-#: activities/share/resource/1/Data.qml:236
+#: activities/share/resource/1/Data.qml:238
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -25102,7 +25102,7 @@ msgstr ""
 "Tá 8 mhilseán ag Eilís le roinnt lena 3 cairde dá breithlá: beirt chailíní "
 "agus buachaill amháin. Cén dóigh is fearr chun na milseáin a roinnt eatarthu?"
 
-#: activities/share/resource/1/Data.qml:246
+#: activities/share/resource/1/Data.qml:248
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -25117,7 +25117,7 @@ msgstr ""
 "Thug athair Éanna 16 mhilseán dó le roinnt lena chairde: beirt bhuachaillí "
 "agus beirt cailíní. Cuidigh leis na milseáin a thabhairt dá chairde!"
 
-#: activities/share/resource/1/Data.qml:256
+#: activities/share/resource/1/Data.qml:258
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -25136,7 +25136,7 @@ msgstr ""
 "cothrom idir a chairde? Ar dtús, cuir na páistí sa lár, ansin tarraing na "
 "milseáin chucu."
 
-#: activities/share/resource/1/Data.qml:266
+#: activities/share/resource/1/Data.qml:268
 #, fuzzy
 #| msgctxt "board4|"
 #| msgid ""
@@ -25150,12 +25150,12 @@ msgstr ""
 "Tá 8 milseán ag Cathal le roinnt ar 3 cairde dá chuid: buachaill amháin agus "
 "beirt chailíní. An féidir leis na milseáin a roinnt go cothrom?"
 
-#: activities/share/resource/2/Data.qml:13
+#: activities/share/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, possible rest."
 msgstr ""
 
-#: activities/share/resource/2/Data.qml:28
+#: activities/share/resource/2/Data.qml:30
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid "Now he wants to give 5 pieces of candy to his friends."
@@ -25163,7 +25163,7 @@ msgctxt "Data|"
 msgid "Now he wants to share 5 pieces of candy among his friends."
 msgstr "Anois, tá sé ag iarraidh 5 mhilseán a thabhairt dá chairde."
 
-#: activities/share/resource/2/Data.qml:38
+#: activities/share/resource/2/Data.qml:40
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid "Can you now give 7 of Paul's pieces of candy to his friends?"
@@ -25171,7 +25171,7 @@ msgctxt "Data|"
 msgid "Can you now share 7 of Paul's pieces of candy among his friends?"
 msgstr "An féidir leat 7 mhilseán de chuid Phóil a thabhairt dá chairde anois?"
 
-#: activities/share/resource/2/Data.qml:48
+#: activities/share/resource/2/Data.qml:50
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid "Can you now give 6 of Paul's pieces of candy to his friends?"
@@ -25179,7 +25179,7 @@ msgctxt "Data|"
 msgid "Can you now share 8 of Paul's pieces of candy among his friends?"
 msgstr "An féidir leat 6 mhilseán de chuid Phóil a thabhairt dá chairde anois?"
 
-#: activities/share/resource/2/Data.qml:58
+#: activities/share/resource/2/Data.qml:60
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -25196,7 +25196,7 @@ msgstr ""
 "chuid eile dá chairde. An féidir leat cuidiú leis na 9 milseán dheireanacha "
 "a roinnt ar a chairde?"
 
-#: activities/share/resource/2/Data.qml:70
+#: activities/share/resource/2/Data.qml:72
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -25210,7 +25210,7 @@ msgstr ""
 "Tá 6 mhilseán ag Cathal le roinnt ar bheirt dá chuid, is beirt chailíní iad. "
 "An féidir leis na milseáin a roinnt go cothrom?"
 
-#: activities/share/resource/2/Data.qml:80
+#: activities/share/resource/2/Data.qml:82
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -25228,7 +25228,7 @@ msgstr ""
 "milseáin chuig gach duine acu ionas go mbeidh an líon céanna milseán ag "
 "achan duine."
 
-#: activities/share/resource/2/Data.qml:90
+#: activities/share/resource/2/Data.qml:92
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -25246,7 +25246,7 @@ msgstr ""
 "cothrom idir a cairde? Ar dtús, cuir na páistí sa lár, ansin tarraing na "
 "milseáin chucu."
 
-#: activities/share/resource/2/Data.qml:100
+#: activities/share/resource/2/Data.qml:102
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -25264,7 +25264,7 @@ msgstr ""
 "milseáin chuig gach duine acu ionas go mbeidh an líon céanna milseán ag "
 "achan duine."
 
-#: activities/share/resource/2/Data.qml:122
+#: activities/share/resource/2/Data.qml:124
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid "Now, Alice wants to give 8 pieces of candy to her friends."
@@ -25272,7 +25272,7 @@ msgctxt "Data|"
 msgid "Now, Alice wants to share 8 pieces of candy equally among her friends."
 msgstr "Anois, tá Aoibheann ag iarraidh 8 mhilseán a thabhairt dá cairde."
 
-#: activities/share/resource/2/Data.qml:132
+#: activities/share/resource/2/Data.qml:134
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -25286,7 +25286,7 @@ msgstr ""
 "An féidir leat cuidiú le hAoibheann 10 mhilseán a thabhairt dá cairde: "
 "cailín amháin agus triúr buachaillí?"
 
-#: activities/share/resource/2/Data.qml:142
+#: activities/share/resource/2/Data.qml:144
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid "Alice wants to give 16 pieces of candy to her friends."
@@ -25294,7 +25294,7 @@ msgctxt "Data|"
 msgid "Alice wants to share 16 pieces of candy equally among her friends."
 msgstr "Tá Aoibheann ag iarraidh 16 mhilseán a thabhairt dá cairde."
 
-#: activities/share/resource/2/Data.qml:152
+#: activities/share/resource/2/Data.qml:154
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -25310,7 +25310,7 @@ msgstr ""
 "dá cairde. An féidir leat cuidiú léi na milseáin a roinnt go cothrom "
 "eatarthu?"
 
-#: activities/share/resource/2/Data.qml:164
+#: activities/share/resource/2/Data.qml:166
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -25324,7 +25324,7 @@ msgstr ""
 "Cuidigh le Jon 11 milseán a roinnt idir cúigear cailíní. Coinneoidh Jon an "
 "chuid eile."
 
-#: activities/share/resource/2/Data.qml:174
+#: activities/share/resource/2/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Jon wants to share the rest of his pieces of candies with his brothers and "
@@ -25335,18 +25335,18 @@ msgstr ""
 "agus lena dheirfiúr. An féidir leat iad a roinnt go cothrom? Cuimhnigh go "
 "bhfuil 2 mhilseán ag a dheartháir cheana féin?"
 
-#: activities/share/resource/2/Data.qml:184
+#: activities/share/resource/2/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Help Tux split 19 pieces of candies between his friends: 4 boys and 1 girl."
 msgstr ""
 
-#: activities/share/resource/2/Data.qml:194
+#: activities/share/resource/2/Data.qml:196
 msgctxt "Data|"
 msgid "Help Maria share 18 pieces of candy equally between 3 boys and 2 girls."
 msgstr ""
 
-#: activities/share/resource/2/Data.qml:206
+#: activities/share/resource/2/Data.qml:208
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -25360,7 +25360,7 @@ msgstr ""
 "Tá 6 mhilseán ag Cathal le roinnt ar bheirt dá chuid, is beirt chailíní iad. "
 "An féidir leis na milseáin a roinnt go cothrom?"
 
-#: activities/share/resource/2/Data.qml:216
+#: activities/share/resource/2/Data.qml:218
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -25376,7 +25376,7 @@ msgstr ""
 "Tá 8 mhilseán ag Eilís le roinnt lena 3 cairde dá breithlá: beirt chailíní "
 "agus buachaill amháin. Cén dóigh is fearr chun na milseáin a roinnt eatarthu?"
 
-#: activities/share/resource/2/Data.qml:226
+#: activities/share/resource/2/Data.qml:228
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -25391,7 +25391,7 @@ msgstr ""
 "Thug athair Éanna 17 mhilseán dó le roinnt lena chairde: beirt bhuachaillí "
 "agus beirt chailíní. Cuidigh leis na milseáin a thabhairt dá chairde!"
 
-#: activities/share/resource/2/Data.qml:236
+#: activities/share/resource/2/Data.qml:238
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid ""
@@ -25410,7 +25410,7 @@ msgstr ""
 "cothrom idir a chairde? Ar dtús, cuir na páistí sa lár, ansin tarraing na "
 "milseáin chucu."
 
-#: activities/share/resource/2/Data.qml:246
+#: activities/share/resource/2/Data.qml:248
 #, fuzzy
 #| msgctxt "board4|"
 #| msgid ""
@@ -25425,12 +25425,12 @@ msgstr ""
 "Tá 8 milseán ag Cathal le roinnt ar 3 cairde dá chuid: buachaill amháin agus "
 "beirt chailíní. An féidir leis na milseáin a roinnt go cothrom?"
 
-#: activities/share/resource/3/Data.qml:13
+#: activities/share/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr ""
 
-#: activities/share/share.js:98
+#: activities/share/share.js:115
 #, fuzzy, qt-format
 #| msgctxt ""
 #| "share|First part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -25448,7 +25448,7 @@ msgstr[2] ""
 msgstr[3] ""
 msgstr[4] ""
 
-#: activities/share/share.js:102
+#: activities/share/share.js:119
 #, fuzzy, qt-format
 #| msgctxt ""
 #| "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -25466,7 +25466,7 @@ msgstr[2] ""
 msgstr[3] ""
 msgstr[4] ""
 
-#: activities/share/share.js:106
+#: activities/share/share.js:123
 #, fuzzy, qt-format
 #| msgctxt ""
 #| "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -25484,7 +25484,7 @@ msgstr[2] ""
 msgstr[3] ""
 msgstr[4] ""
 
-#: activities/share/Share.qml:358
+#: activities/share/Share.qml:359
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
@@ -28462,7 +28462,7 @@ msgstr ""
 "caidéalúcháin agus an t-ionad séarachais chun timthriall an uisce a chur sa "
 "tsiúl arís."
 
-#: activities/watercycle/Watercycle.qml:114
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -28471,14 +28471,14 @@ msgstr ""
 "Is é an ghrian príomh-chomhpháirt timthriall an uisce. Cliceáil ar an ghrian "
 "chun an timthriall uisce a thoiseacht."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr ""
 "Agus an ghrian ag éirigh, tagann teas ar uisce na farraige agus tosaíonn sé "
 "ag galú."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:117
 #, fuzzy
 #| msgctxt "Watercycle|"
 #| msgid ""
@@ -28492,7 +28492,7 @@ msgstr ""
 " Comhdhlúthaíonn an ceo uisce chun néal a chruthú agus nuair a éiríonn an "
 "néal róthrom, tosaíonn sé ag cur báistí. Cliceáil ar an néal."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:118
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -28503,7 +28503,7 @@ msgstr ""
 "uisce seo chugainn fríd chaidéal chuig túr uisce. Cliceáil ar an chaidéal "
 "chun uisce a chur ar fáil do na tithe."
 
-#: activities/watercycle/Watercycle.qml:119
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -28512,12 +28512,12 @@ msgstr ""
 "Amharc ar an túr lán le huisce. Cliceáil ar an ionad séarachais chun é a "
 "chur ar siúl."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Ar dóigh! Cliceáil ar an chith agus Tux ag teacht abhaile."
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:122
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
@@ -28525,7 +28525,7 @@ msgstr ""
 "Ar fheabhas! Tá timthriall an uisce críochnaithe agat. Is fédir leat "
 "leanstan ar aghaidh ag súgradh."
 
-#: activities/watercycle/Watercycle.qml:139
+#: activities/watercycle/Watercycle.qml:140
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -28537,7 +28537,7 @@ msgstr ""
 "arís. Soláthraíonn teas na gréine fuinneamh chun an t-uisce a ghalú ó "
 "fhoinsí uisce ar nós farraigí agus lochanna."
 
-#: activities/watercycle/Watercycle.qml:142
+#: activities/watercycle/Watercycle.qml:143
 #, fuzzy
 #| msgctxt "Watercycle|"
 #| msgid ""
@@ -28555,7 +28555,7 @@ msgstr ""
 "sna néalta. Nuair a bhuaileann na néalta le haer fuar os cionn an talaimh, "
 "tarlaíonn deascadh agus titeann an t-uisce mar fhearthainn."
 
-#: activities/watercycle/Watercycle.qml:145
+#: activities/watercycle/Watercycle.qml:146
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -28567,7 +28567,7 @@ msgstr ""
 "dhromchla an talaimh agus de réir a chéile ar ais chun na farraige fríd na "
 "haibhneacha."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:148
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "

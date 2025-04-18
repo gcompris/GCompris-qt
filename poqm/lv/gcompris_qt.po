@@ -22387,7 +22387,7 @@ msgstr ""
 "viņam gaismas slēdzi. Lai uzvarētu, tev ir jāieslēdz visi patērētāji, kad ir "
 "pieslēgti visi ražotāji."
 
-#: activities/renewable_energy/RenewableEnergy.qml:302
+#: activities/renewable_energy/RenewableEnergy.qml:303
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22396,7 +22396,7 @@ msgstr ""
 "Tukss ir atgriezies no makšķerēšanas laivā. Atjaunot elektrosistēmu, lai "
 "viņam mājās būtu gaisma."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:305
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22406,7 +22406,7 @@ msgstr ""
 "paneļi, vēja ferma un transformatori — noteiktā secībā, lai atjaunotu "
 "elektrosistēmu."
 
-#: activities/renewable_energy/RenewableEnergy.qml:306
+#: activities/renewable_energy/RenewableEnergy.qml:307
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22417,14 +22417,14 @@ msgstr ""
 "slēdzi. Lai uzvarētu, tev ir jāieslēdz visi patērētāji, kad ir pieslēgti "
 "visi ražotāji."
 
-#: activities/renewable_energy/RenewableEnergy.qml:308
+#: activities/renewable_energy/RenewableEnergy.qml:309
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Uzzini vairāk par elektrosistēmām, kas balstās atjaunīgajā enerģijā. "
 "Izklaidējies!"
 
-#: activities/renewable_energy/RenewableEnergy.qml:333
+#: activities/renewable_energy/RenewableEnergy.qml:334
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -23279,13 +23279,13 @@ msgctxt "ActivityInfo|"
 msgid "If there is a rest, it needs to be placed inside the candy jar."
 msgstr "Ja paliek atlikums, tas jāliek saldumu trauciņā."
 
-#: activities/share/resource/1/Data.qml:13
+#: activities/share/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, no rest."
 msgstr "Ne vairāk par 25 konfektēm un 5 bērniem, bez atlikuma."
 
-#: activities/share/resource/1/Data.qml:18
-#: activities/share/resource/2/Data.qml:18
+#: activities/share/resource/1/Data.qml:20
+#: activities/share/resource/2/Data.qml:20
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 2 pieces of candy equally between 2 of his girl friends. "
@@ -23296,19 +23296,19 @@ msgstr ""
 "vari viņam palīdzēt? Vispirms novieto bērnus centrā, bet tad pie katra velc "
 "konfektes."
 
-#: activities/share/resource/1/Data.qml:28
+#: activities/share/resource/1/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 4 pieces of candy equally among his friends."
 msgstr ""
 "Tagad viņš vēlas sadalīt 4 konfektes vienādās daļās starp saviem draugiem."
 
-#: activities/share/resource/1/Data.qml:38
+#: activities/share/resource/1/Data.qml:40
 msgctxt "Data|"
 msgid ""
 "Can you now share 6 of Paul's pieces of candy equally among his friends?"
 msgstr "Vai vari sadalīt 6 Paula konfektes vienādās daļās starp viņa draugiem?"
 
-#: activities/share/resource/1/Data.qml:48
+#: activities/share/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid ""
 "Some of his friends already have pieces of candy. He wants to give them 7 "
@@ -23317,7 +23317,7 @@ msgstr ""
 "Dažiem no viņa draugiem jau ir konfektes. Viņš vēlas viņiem sadalīt vēl 7 "
 "konfektes, lai visiem būtu vienāds skaits."
 
-#: activities/share/resource/1/Data.qml:58
+#: activities/share/resource/1/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 12 pieces of candy left. He eats 2 pieces of candy and he "
@@ -23328,7 +23328,7 @@ msgstr ""
 "pārējās vēlas sadalīt draugiem. Vai vari viņam palīdzēt vienādās daļās "
 "sadalīt 10 atlikušās konfektes?"
 
-#: activities/share/resource/1/Data.qml:70
+#: activities/share/resource/1/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "George wants to share 3 pieces of candy equally between 3 of his girl "
@@ -23337,7 +23337,7 @@ msgstr ""
 "Juris vēlas dalīties ar 3 konfektēm vienādās daļās starp viņa 3 draudzenēm. "
 "Vai viņš tās var sadalīt vienādās daļās?"
 
-#: activities/share/resource/1/Data.qml:80
+#: activities/share/resource/1/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 6 pieces of candy equally between 3 of her friends: 1 "
@@ -23346,7 +23346,7 @@ msgstr ""
 "Marija vēlas sadalīt 6 konfektes vienādās daļās starp 3 viņas draugiem — 1 "
 "meiteni un 2 zēniem. Vai viņa var konfektes sadalīt vienādās daļās?"
 
-#: activities/share/resource/1/Data.qml:90
+#: activities/share/resource/1/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "John wants to share 8 pieces of candy equally between 3 of his friends: 1 "
@@ -23357,7 +23357,7 @@ msgstr ""
 "zēnu un 2 meitenēm. Zēnam jau viena ir. Vai vari sadalīt konfektes tā, lai "
 "visiem būtu vienāds skaits?"
 
-#: activities/share/resource/1/Data.qml:100
+#: activities/share/resource/1/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 12 pieces of candy equally between 3 of his friends: 2 "
@@ -23367,7 +23367,7 @@ msgstr ""
 "— 2 zēniem un 1 meiteni. Vai viņš var sadalīt konfektes visiem vienādās "
 "daļās?"
 
-#: activities/share/resource/1/Data.qml:110
+#: activities/share/resource/1/Data.qml:112
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 11 pieces of candy between 3 of her friends: 1 boy and "
@@ -23378,8 +23378,8 @@ msgstr ""
 "meitenēm. Meitenēm jau ir dažas konfektes. Vai vari sadalīt atlikušās "
 "konfektes, lai visiem bērniem būtu vienāds skaits?"
 
-#: activities/share/resource/1/Data.qml:122
-#: activities/share/resource/2/Data.qml:112
+#: activities/share/resource/1/Data.qml:124
+#: activities/share/resource/2/Data.qml:114
 msgctxt "Data|"
 msgid ""
 "Alice wants to share 4 pieces of candy equally between 4 of her girl "
@@ -23388,12 +23388,12 @@ msgstr ""
 "Alise vēlas sadalīt 4 konfektes vienādās daļās starp viņas 4 draudzenēm. Vai "
 "vari viņai palīdzēt?"
 
-#: activities/share/resource/1/Data.qml:132
+#: activities/share/resource/1/Data.qml:134
 msgctxt "Data|"
 msgid "Now, Alice wants to give 8 pieces of candy to her friends."
 msgstr "Tagad Alise vēlas saviem draugiem izdalīt 8 konfektes."
 
-#: activities/share/resource/1/Data.qml:142
+#: activities/share/resource/1/Data.qml:144
 msgctxt "Data|"
 msgid ""
 "Alice wants to give 10 pieces of candy to her friends, 1 girl and 3 boys, so "
@@ -23403,12 +23403,12 @@ msgstr ""
 "Alise vēlas izdalīt 10 konfektes saviem draugiem — 1 meitenei un 3 zēniem —, "
 "lai viņiem visiem būtu vienāds skaits. Meitenēm jau dažas konfektes ir."
 
-#: activities/share/resource/1/Data.qml:152
+#: activities/share/resource/1/Data.qml:154
 msgctxt "Data|"
 msgid "Alice wants to give 16 pieces of candy to her friends."
 msgstr "Alise vēlas starp saviem draugiem izdalīt 16 konfektes."
 
-#: activities/share/resource/1/Data.qml:162
+#: activities/share/resource/1/Data.qml:164
 msgctxt "Data|"
 msgid ""
 "Alice wants to give pieces of candy to 4 friends. Some of them already have "
@@ -23419,7 +23419,7 @@ msgstr ""
 "konfektes. Vai vari Alisei palīdzēt sadalīt 14 konfektes, lai visiem "
 "draugiem būtu vienāds skaits?"
 
-#: activities/share/resource/1/Data.qml:174
+#: activities/share/resource/1/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Michael wants to share 5 pieces of candy equally between 5 of his girl "
@@ -23428,7 +23428,7 @@ msgstr ""
 "Mārtiņš vēlas sadalīt 5 konfektes vienādās daļās starp viņa 5 draudzenēm. "
 "Vai vari viņam palīdzēt?"
 
-#: activities/share/resource/1/Data.qml:184
+#: activities/share/resource/1/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Helen has 5 friends: 2 boys and 3 girls. She wants to give them 10 pieces of "
@@ -23438,7 +23438,7 @@ msgstr ""
 "izdalīt 10 konfektes. Vai vari viņai palīdzēt konfektes sadalīt vienādās "
 "daļās starp draugiem?"
 
-#: activities/share/resource/1/Data.qml:194
+#: activities/share/resource/1/Data.qml:196
 msgctxt "Data|"
 msgid ""
 "Michelle wants to share 12 pieces of candy equally between her 4 brothers "
@@ -23448,7 +23448,7 @@ msgstr ""
 "Māra vēlas sadalīt 12 konfektes vienādās daļās starp viņas 4 brāļiem un 1 "
 "māsu, lai visiem būtu vienāds skaits. Viņas māsai jau ir dažas konfektes."
 
-#: activities/share/resource/1/Data.qml:204
+#: activities/share/resource/1/Data.qml:206
 msgctxt "Data|"
 msgid ""
 "Thomas wants to share his 20 pieces of candy with his friends: 1 boy and 4 "
@@ -23457,7 +23457,7 @@ msgstr ""
 "Tomass vēlas sadalīt viņa 20 konfektes starp draugiem: 1 zēnu un 4 meitenēm. "
 "Vai vari viņam palīdzēt?"
 
-#: activities/share/resource/1/Data.qml:214
+#: activities/share/resource/1/Data.qml:216
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 20 pieces of candy equally between 5 of his friends. "
@@ -23466,7 +23466,7 @@ msgstr ""
 "Pauls vēlas sadalīt 20 konfektes vienādās daļās starp saviem 5 draugiem. "
 "Katram no viņiem jau ir viena konfekte. Vai vari viņam palīdzēt?"
 
-#: activities/share/resource/1/Data.qml:226
+#: activities/share/resource/1/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally with 2 of his girl "
@@ -23475,7 +23475,7 @@ msgstr ""
 "Kārlis vēlas sadalīt savas 6 konfektes vienādās daļās savām 2 draudzenēm. "
 "Vai vari palīdzēt viņam konfektes sadalīt vienādi?"
 
-#: activities/share/resource/1/Data.qml:236
+#: activities/share/resource/1/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -23487,7 +23487,7 @@ msgstr ""
 "viņai jāsadala savas konfektes, lai beigās visiem draugiem paliktu vienāds "
 "skaits?"
 
-#: activities/share/resource/1/Data.qml:246
+#: activities/share/resource/1/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 16 pieces of candy to share equally with his "
@@ -23498,7 +23498,7 @@ msgstr ""
 "draugiem — 2 zēniem un 2 meitenēm. Palīdzi viņam sadalīt konfektes, lai visi "
 "dabūtu vienādu skaitu."
 
-#: activities/share/resource/1/Data.qml:256
+#: activities/share/resource/1/Data.qml:258
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy between 4 of his friends: 2 girls "
@@ -23509,7 +23509,7 @@ msgstr ""
 "zēniem. Zēniem jau katram ir pa vienai konfektei, bet Juris vēlas, lai "
 "visiem būtu vienāds skaits."
 
-#: activities/share/resource/1/Data.qml:266
+#: activities/share/resource/1/Data.qml:268
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 25 pieces of candy equally between 5 of her friends: 3 "
@@ -23519,27 +23519,27 @@ msgstr ""
 "meitenēm un 2 zēniem. Vai vari viņai palīdzēt tās sadalīt, vai visi saņemtu "
 "vienādu skaitu?"
 
-#: activities/share/resource/2/Data.qml:13
+#: activities/share/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, possible rest."
 msgstr "Ne vairāk par 25 konfektēm un 5 bērniem, iespējams atlikums."
 
-#: activities/share/resource/2/Data.qml:28
+#: activities/share/resource/2/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 5 pieces of candy among his friends."
 msgstr "Tagad viņš vēlas dalīties ar 5 konfektēm starp saviem draugiem."
 
-#: activities/share/resource/2/Data.qml:38
+#: activities/share/resource/2/Data.qml:40
 msgctxt "Data|"
 msgid "Can you now share 7 of Paul's pieces of candy among his friends?"
 msgstr "Vai vari sadalīt 7 Paula konfektes starp viņa draugiem?"
 
-#: activities/share/resource/2/Data.qml:48
+#: activities/share/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Can you now share 8 of Paul's pieces of candy among his friends?"
 msgstr "Vai vari sadalīt 8 Paula konfektes starp viņa draugiem?"
 
-#: activities/share/resource/2/Data.qml:58
+#: activities/share/resource/2/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 11 pieces of candy left. He eats 2 pieces of candy and he "
@@ -23550,7 +23550,7 @@ msgstr ""
 "pārējās vēlas sadalīt draugiem. Vai vari viņam palīdzēt vienādās daļās "
 "sadalīt 9 atlikušās konfektes?"
 
-#: activities/share/resource/2/Data.qml:70
+#: activities/share/resource/2/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "Bob wants to share 3 pieces of candy equally between 3 of his girl friends. "
@@ -23559,7 +23559,7 @@ msgstr ""
 "Roberts vēlas sadalīt 3 konfektes vienādās daļās starp viņa 3 draudzenēm. "
 "Vai vari palīdzēt viņam to izdarīt?"
 
-#: activities/share/resource/2/Data.qml:80
+#: activities/share/resource/2/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 8 pieces of candy between 3 of his friends: 1 boy and 2 "
@@ -23570,7 +23570,7 @@ msgstr ""
 "meitenēm. Zēnam jau ir viena konfekte. Vai viņš var sadalīt konfektes tā, "
 "lai visiem būtu vienāds skaits?"
 
-#: activities/share/resource/2/Data.qml:90
+#: activities/share/resource/2/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 8 pieces of candy between 3 of her friends: 1 boy and 2 "
@@ -23581,7 +23581,7 @@ msgstr ""
 "meitenēm. Meitenēm jau ir dažas konfektes. Vai vari sadalīt atlikušās "
 "konfektes, lai visiem bērniem būtu vienāds skaits?"
 
-#: activities/share/resource/2/Data.qml:100
+#: activities/share/resource/2/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 12 pieces of candy between 3 of his friends: 1 boy and "
@@ -23592,12 +23592,12 @@ msgstr ""
 "meitenēm. Zēns jau ir dabūjis konfektes. Vai vari sadalīt atlikušās "
 "konfektes tā, lai visiem būtu vienāds skaits?"
 
-#: activities/share/resource/2/Data.qml:122
+#: activities/share/resource/2/Data.qml:124
 msgctxt "Data|"
 msgid "Now, Alice wants to share 8 pieces of candy equally among her friends."
 msgstr "Tagad Alise vēlas vienādi sadalīt 8 konfektes starp saviem draugiem."
 
-#: activities/share/resource/2/Data.qml:132
+#: activities/share/resource/2/Data.qml:134
 msgctxt "Data|"
 msgid ""
 "Can you help Alice share 10 pieces of candy equally among her friends: 1 "
@@ -23606,12 +23606,12 @@ msgstr ""
 "Vai vari palīdzēt Alisei sadalīt 10 konfektes vienādi starp viņas draugiem — "
 "1 meiteni un 3 zēniem? Meitenei jau ir dažas konfektes."
 
-#: activities/share/resource/2/Data.qml:142
+#: activities/share/resource/2/Data.qml:144
 msgctxt "Data|"
 msgid "Alice wants to share 16 pieces of candy equally among her friends."
 msgstr "Alise vēlas sadalīt 16 konfektes vienādā skaitā starp saviem draugiem."
 
-#: activities/share/resource/2/Data.qml:152
+#: activities/share/resource/2/Data.qml:154
 msgctxt "Data|"
 msgid ""
 "Alice has 14 pieces of candy left. She wants to share them equally among her "
@@ -23622,7 +23622,7 @@ msgstr ""
 "draugiem. Zēniem jau ir dažas konfektes. Vai vari viņai palīdzēt sadalīt "
 "konfektes, lai beigās visiem būtu vienāds skaits?"
 
-#: activities/share/resource/2/Data.qml:164
+#: activities/share/resource/2/Data.qml:166
 msgctxt "Data|"
 msgid ""
 "Help Jon share 11 pieces of candies equally between five girls. The rest "
@@ -23631,7 +23631,7 @@ msgstr ""
 "Palīdzi Pēterim starp piecām meitenēm sadalīt 11 konfektes. Atlikušās paliks "
 "Pēterim."
 
-#: activities/share/resource/2/Data.qml:174
+#: activities/share/resource/2/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Jon wants to share the rest of his pieces of candies with his brothers and "
@@ -23641,7 +23641,7 @@ msgstr ""
 "Pēteris vēlas sadalīt atlikušās konfektes starp viņa brāli un māsu. Vai vari "
 "tās sadalīt vienādi, zinot, ka brālis 2 konfektes jau ir dabūjis?"
 
-#: activities/share/resource/2/Data.qml:184
+#: activities/share/resource/2/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Help Tux split 19 pieces of candies between his friends: 4 boys and 1 girl."
@@ -23649,14 +23649,14 @@ msgstr ""
 "Palīdzi Tuksam sadalīt 19 konfektes starp viņā draugiem — 4 zēniem un 1 "
 "meiteni."
 
-#: activities/share/resource/2/Data.qml:194
+#: activities/share/resource/2/Data.qml:196
 msgctxt "Data|"
 msgid "Help Maria share 18 pieces of candy equally between 3 boys and 2 girls."
 msgstr ""
 "Palīdzi Marijai sadalīt 19 konfektes vienādās daļās starp 3 zēniem un 2 "
 "meitenēm."
 
-#: activities/share/resource/2/Data.qml:206
+#: activities/share/resource/2/Data.qml:208
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally between 2 of his girl "
@@ -23665,7 +23665,7 @@ msgstr ""
 "Kārlis vēlas sadalīt 6 konfektes starp viņa 2 draudzenēm. Vai vari palīdzēt "
 "tās sadalīt vienādi?"
 
-#: activities/share/resource/2/Data.qml:216
+#: activities/share/resource/2/Data.qml:218
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -23676,7 +23676,7 @@ msgstr ""
 "vienādi sadalīt starp saviem 3 draugiem: 2 meitenēm un 1 zēnu. Kā viņai "
 "jāsadala konfektes, lai visiem būtu vienāds skaits?"
 
-#: activities/share/resource/2/Data.qml:226
+#: activities/share/resource/2/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 17 pieces of candy to share equally between his "
@@ -23686,7 +23686,7 @@ msgstr ""
 "Krišjānis no tēva saņēma 17 konfektes, kuras Krišjānis vēlas sadalīt starp "
 "saviem draugiem: 2 zēniem un 2 meitenēm. Palīdzi viņam sadalīt konfektes."
 
-#: activities/share/resource/2/Data.qml:236
+#: activities/share/resource/2/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy equally between 4 of his friends: 2 "
@@ -23696,7 +23696,7 @@ msgstr ""
 "Juris vēlas sadalīt 14 konfektes starp saviem 4 draugiem: 2 meitenēm un 2 "
 "zēniem. Vai vari konfektes sadalīt starp draugiem vienādās daļās?"
 
-#: activities/share/resource/2/Data.qml:246
+#: activities/share/resource/2/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 23 pieces of candy equally between 5 of her friends: 3 "
@@ -23706,12 +23706,12 @@ msgstr ""
 "Marija vēlas sadalīt 23 konfektes vienādās daļās starp saviem 5 draugiem — 3 "
 "meitenēm un 2 zēniem. Vai viņa var konfektes sadalīt vienādi starp draugiem?"
 
-#: activities/share/resource/3/Data.qml:13
+#: activities/share/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr "Ne vairāk par 30 konfektēm un 6 bērniem, iespējams atlikums."
 
-#: activities/share/share.js:98
+#: activities/share/share.js:115
 #, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -23722,7 +23722,7 @@ msgstr[0] "Novieto %n zēnu "
 msgstr[1] "Novieto %n zēnus "
 msgstr[2] "Novieto %n zēnu "
 
-#: activities/share/share.js:102
+#: activities/share/share.js:119
 #, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -23733,7 +23733,7 @@ msgstr[0] "un %n meiteni centrā."
 msgstr[1] "un %n meitenes centrā."
 msgstr[2] "un %n meiteņu centrā."
 
-#: activities/share/share.js:106
+#: activities/share/share.js:123
 #, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -23744,7 +23744,7 @@ msgstr[0] "Pēc tam starp viņiem vienādās daļās sadali %n konfekti."
 msgstr[1] "Pēc tam starp viņiem vienādās daļās sadali %n konfektes."
 msgstr[2] "Pēc tam starp viņiem vienādās daļās sadali %n konfekšu."
 
-#: activities/share/Share.qml:358
+#: activities/share/Share.qml:359
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
@@ -26534,7 +26534,7 @@ msgstr ""
 "un kanalizācijas attīrīšanas iekārtas, lai no jauna iedarbinātu visu ūdens "
 "sistēmu. Kad ūdens ir atgriezies un Tukss ir dušā, nospied dušas pogu."
 
-#: activities/watercycle/Watercycle.qml:114
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -26542,12 +26542,12 @@ msgid ""
 msgstr ""
 "Ūdens cikla galvenā daļā ir Saule. Spied uz Saules, lai sāktu ūdens ciklu."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Saulei paceļoties, ūdens jūrā kļūst siltāks un sāk tvaikot."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -26556,7 +26556,7 @@ msgstr ""
 "Ūdens tvaiki kondensējas, izveidojot mākoņus. Kad mākoņi ir smagi, tie sāk "
 "līt. Klikšķini uz mākoņa."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:118
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -26567,7 +26567,7 @@ msgstr ""
 "izmantojot ūdenstorņus. Spied uz sūkņa motora, lai iedzīvotājiem piegādātu "
 "ūdeni."
 
-#: activities/watercycle/Watercycle.qml:119
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -26576,19 +26576,19 @@ msgstr ""
 "Vai redzi ar ūdeni pilno ūdenstorni? Ieslēdz kanalizācijas attīrīšanas "
 "iekārtu, klikšķinot uz tās."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Lieliski! Tukss ierodas mājās spied uz dušas."
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:122
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr ""
 "Fantastiski! Tev ir izdevies pabeigt ūdens ciklu. Vari turpināt spēlēt."
 
-#: activities/watercycle/Watercycle.qml:139
+#: activities/watercycle/Watercycle.qml:140
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26599,7 +26599,7 @@ msgstr ""
 "cirkulējot no zemes uz debesīm un atpakaļ uz zemi. Saules siltums sniedz "
 "ūdenim enerģiju, lai tas varētu iztvaikot no ūdenstilpēm, piemēram, okeāna."
 
-#: activities/watercycle/Watercycle.qml:142
+#: activities/watercycle/Watercycle.qml:143
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26610,7 +26610,7 @@ msgstr ""
 "izveido sīkus pilieniņus, kas veido mākoņus. Kad mākoņi virs zemes satiekas "
 "ar vēsu gaisu, sākas nokrišņi un līst."
 
-#: activities/watercycle/Watercycle.qml:145
+#: activities/watercycle/Watercycle.qml:146
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26621,7 +26621,7 @@ msgstr ""
 "gruntsūdeni. Bet lielākā daļa ūdens aizplūst tālāk un no grāvjiem un upēm "
 "nonāk jūrā."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:148
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "

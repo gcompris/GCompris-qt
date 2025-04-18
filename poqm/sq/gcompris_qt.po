@@ -22626,7 +22626,7 @@ msgstr ""
 "në shtëpi, shtypni butonin e dritës për të. Që të fitoni, duhet të ndizni "
 "krejt konsumatorët, teksa gjithë prodhuesit janë në punë."
 
-#: activities/renewable_energy/RenewableEnergy.qml:302
+#: activities/renewable_energy/RenewableEnergy.qml:303
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22635,7 +22635,7 @@ msgstr ""
 "Tux-i është kthyer nga peshkimi me barkën e tij. Rivini në punë sistemin "
 "elektrik, që të ketë dritë në shtëpi."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:305
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22645,7 +22645,7 @@ msgstr ""
 "kompleks turbinash me erë dhe transformatorë, që të mund të riaktivizoni "
 "tërë sistemin elektrik."
 
-#: activities/renewable_energy/RenewableEnergy.qml:306
+#: activities/renewable_energy/RenewableEnergy.qml:307
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22656,14 +22656,14 @@ msgstr ""
 "butonin e dritës për të. Që të fitoni, duhet të ndizni krejt konsumatorët, "
 "teksa gjithë prodhuesit janë në punë."
 
-#: activities/renewable_energy/RenewableEnergy.qml:308
+#: activities/renewable_energy/RenewableEnergy.qml:309
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Mësoni rreth një sistemi elektrik të bazuar në energji të rinovueshme. Ju "
 "bëftë mirë."
 
-#: activities/renewable_energy/RenewableEnergy.qml:333
+#: activities/renewable_energy/RenewableEnergy.qml:334
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -23529,13 +23529,13 @@ msgstr ""
 "Nëse ka mbetje, duhet ta vendosni brenda vazos së sheqerkave, pasi ta keni "
 "vënë këtë te fusha."
 
-#: activities/share/resource/1/Data.qml:13
+#: activities/share/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, no rest."
 msgstr "Maksimumi 25 kallamsheqeri dhe 5 fëmijë, pa mbetje."
 
-#: activities/share/resource/1/Data.qml:18
-#: activities/share/resource/2/Data.qml:18
+#: activities/share/resource/1/Data.qml:20
+#: activities/share/resource/2/Data.qml:20
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 2 pieces of candy equally between 2 of his girl friends. "
@@ -23546,14 +23546,14 @@ msgstr ""
 "shoqet e tij. E ndihmoni dot? Së pari, vendosni fëmijët në qendër, mandej "
 "tërhiqni copat e kallamsheqerit te secili prej tyre."
 
-#: activities/share/resource/1/Data.qml:28
+#: activities/share/resource/1/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 4 pieces of candy equally among his friends."
 msgstr ""
 "Tashti dëshiron t’u ndajë në mënyrë të barabartë 4 copa kallamsheqeri "
 "shokëve të tij."
 
-#: activities/share/resource/1/Data.qml:38
+#: activities/share/resource/1/Data.qml:40
 msgctxt "Data|"
 msgid ""
 "Can you now share 6 of Paul's pieces of candy equally among his friends?"
@@ -23561,7 +23561,7 @@ msgstr ""
 "A mund t’u ndani në mënyrë të barabartë shokëve të Palit 6 copat e "
 "kallamsheqerit?"
 
-#: activities/share/resource/1/Data.qml:48
+#: activities/share/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid ""
 "Some of his friends already have pieces of candy. He wants to give them 7 "
@@ -23570,7 +23570,7 @@ msgstr ""
 "Disa nga shokët e tij kanë tashmë kallamsheqeri. Ai dëshiron t’u japë 7 copë "
 "të tjera, që të kenë të gjithë njësoj."
 
-#: activities/share/resource/1/Data.qml:58
+#: activities/share/resource/1/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 12 pieces of candy left. He eats 2 pieces of candy and he "
@@ -23581,7 +23581,7 @@ msgstr ""
 "dhe pjesën e mbetur ua jep shokëve. E ndihmoni dot të ndajë në mënyrë të "
 "barabartë 10 copat e mbetura të kallamsheqerit?"
 
-#: activities/share/resource/1/Data.qml:70
+#: activities/share/resource/1/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "George wants to share 3 pieces of candy equally between 3 of his girl "
@@ -23590,7 +23590,7 @@ msgstr ""
 "Koli dëshiron të ndajë në mënyrë të barabartë 3 copa kallamsheqeri mes 3 "
 "shoqeve të tij. I ndan dot në mënyrë të barabartë ai copat e kallamsheqerit?"
 
-#: activities/share/resource/1/Data.qml:80
+#: activities/share/resource/1/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 6 pieces of candy equally between 3 of her friends: 1 "
@@ -23600,7 +23600,7 @@ msgstr ""
 "shokët e saj: 1 vajzë dhe 2 djem. I ndan dot në mënyrë të barabartë ajo "
 "copat e kallamsheqerit?"
 
-#: activities/share/resource/1/Data.qml:90
+#: activities/share/resource/1/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "John wants to share 8 pieces of candy equally between 3 of his friends: 1 "
@@ -23611,7 +23611,7 @@ msgstr ""
 "shokët e tij: 1 djalë dhe 2 vajza. Djali ka tashmë një copë. I ndan dot ai "
 "që të tërë të kenë të njëjtën sasi?"
 
-#: activities/share/resource/1/Data.qml:100
+#: activities/share/resource/1/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 12 pieces of candy equally between 3 of his friends: 2 "
@@ -23621,7 +23621,7 @@ msgstr ""
 "nga shokët e tij: 2 djem dhe 1 vajzë. I ndan dot në mënyrë të barabartë ai "
 "copat e kallamsheqerit?"
 
-#: activities/share/resource/1/Data.qml:110
+#: activities/share/resource/1/Data.qml:112
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 11 pieces of candy between 3 of her friends: 1 boy and "
@@ -23632,8 +23632,8 @@ msgstr ""
 "nga shokët e saj: 1 djalë dhe 2 vajza. Vajzat kanë tashmë ca copa. I ndan "
 "dot ajo copat e kallamsheqerit që të tërë të kenë të njëjtën sasi?"
 
-#: activities/share/resource/1/Data.qml:122
-#: activities/share/resource/2/Data.qml:112
+#: activities/share/resource/1/Data.qml:124
+#: activities/share/resource/2/Data.qml:114
 msgctxt "Data|"
 msgid ""
 "Alice wants to share 4 pieces of candy equally between 4 of her girl "
@@ -23642,12 +23642,12 @@ msgstr ""
 "Lulja dëshiron të ndajë 4 copa kallamsheqeri në mënyrë të barabartë mes 4 "
 "shoqeve të saj. A mund ta ndihmoni?"
 
-#: activities/share/resource/1/Data.qml:132
+#: activities/share/resource/1/Data.qml:134
 msgctxt "Data|"
 msgid "Now, Alice wants to give 8 pieces of candy to her friends."
 msgstr "Tani, Lulja dëshiron t’u japë 8 copa kallamsheqeri shokëve të saj."
 
-#: activities/share/resource/1/Data.qml:142
+#: activities/share/resource/1/Data.qml:144
 msgctxt "Data|"
 msgid ""
 "Alice wants to give 10 pieces of candy to her friends, 1 girl and 3 boys, so "
@@ -23657,12 +23657,12 @@ msgstr ""
 "Lulja dëshiron t’u japë shokëve të saj 10 copa kallamsheqeri, 1 vajzë dhe 3 "
 "djem, që të tërë të kenë të njëjtën sasi. Vajzat kanë tashmë ca copa."
 
-#: activities/share/resource/1/Data.qml:152
+#: activities/share/resource/1/Data.qml:154
 msgctxt "Data|"
 msgid "Alice wants to give 16 pieces of candy to her friends."
 msgstr "Lulja dëshiron t’u japë 16 copa kallamsheqeri shokëve të saj."
 
-#: activities/share/resource/1/Data.qml:162
+#: activities/share/resource/1/Data.qml:164
 msgctxt "Data|"
 msgid ""
 "Alice wants to give pieces of candy to 4 friends. Some of them already have "
@@ -23673,7 +23673,7 @@ msgstr ""
 "ca copa kallamsheqeri. E ndihmoni dot të ndajë 14 copa në mënyrë që secili "
 "prej shokëve të saj të ketë të njëjtën sasi?"
 
-#: activities/share/resource/1/Data.qml:174
+#: activities/share/resource/1/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Michael wants to share 5 pieces of candy equally between 5 of his girl "
@@ -23682,7 +23682,7 @@ msgstr ""
 "Blendi dëshiron të ndajë 5 copa kallamsheqeri në mënyrë të barabartë mes 5 "
 "shoqeve të tij. E ndihmoni dot?"
 
-#: activities/share/resource/1/Data.qml:184
+#: activities/share/resource/1/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Helen has 5 friends: 2 boys and 3 girls. She wants to give them 10 pieces of "
@@ -23691,7 +23691,7 @@ msgstr ""
 "Zana ka 5 shokë: 2 djem dhe 3 vajza. Ajo dëshiron t’u japë atyre 10 copa "
 "kallamsheqeri. Ndihmojeni të ndajë copat e kallamsheqerit mes shokëve të saj."
 
-#: activities/share/resource/1/Data.qml:194
+#: activities/share/resource/1/Data.qml:196
 msgctxt "Data|"
 msgid ""
 "Michelle wants to share 12 pieces of candy equally between her 4 brothers "
@@ -23701,7 +23701,7 @@ msgstr ""
 "Shpresa ka 12 copa kallamsheqeri dhe dëshiron t’i ndajë mes 4 vëllezërve dhe "
 "1 motre, që të tërë të kenë të njëjtën sasi. E motra ka tashmë ca copa."
 
-#: activities/share/resource/1/Data.qml:204
+#: activities/share/resource/1/Data.qml:206
 msgctxt "Data|"
 msgid ""
 "Thomas wants to share his 20 pieces of candy with his friends: 1 boy and 4 "
@@ -23710,7 +23710,7 @@ msgstr ""
 "Blendi dëshiron të ndajë 20 copa kallamsheqeri me shokët e tij: 1 djalë dhe "
 "4 vajza. E ndihmoni dot?"
 
-#: activities/share/resource/1/Data.qml:214
+#: activities/share/resource/1/Data.qml:216
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 20 pieces of candy equally between 5 of his friends. "
@@ -23719,7 +23719,7 @@ msgstr ""
 "Blendi dëshiron të ndajë 20 copa kallamsheqeri me 5 shokët e tij. Secili "
 "prej tyre ka tashmë një copë. E ndihmoni dot?"
 
-#: activities/share/resource/1/Data.qml:226
+#: activities/share/resource/1/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally with 2 of his girl "
@@ -23728,7 +23728,7 @@ msgstr ""
 "Koli dëshiron të ndajë në mënyrë të barabartë 6 copa kallamsheqeri me 2 nga "
 "shoqet e tij. I ndan dot në mënyrë të barabartë ai copat e kallamsheqerit?"
 
-#: activities/share/resource/1/Data.qml:236
+#: activities/share/resource/1/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -23739,7 +23739,7 @@ msgstr ""
 "shokët e saj: 2 vajza dhe 1 djalë. Vajzat kanë tashmë diçka. Si duhet t’i "
 "ndajë copat e kallamsheqerit mes tyre, që të tërë të kenë të njëjtën sasi?"
 
-#: activities/share/resource/1/Data.qml:246
+#: activities/share/resource/1/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 16 pieces of candy to share equally with his "
@@ -23749,7 +23749,7 @@ msgstr ""
 "Babai i dha Mondit 16 copa kallamsheqeri, t’i ndajë me shokët: 2 djem dhe 2 "
 "vajza. Ndihmojeni t’u ndajë shokëve copat e kallamsheqerit."
 
-#: activities/share/resource/1/Data.qml:256
+#: activities/share/resource/1/Data.qml:258
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy between 4 of his friends: 2 girls "
@@ -23760,7 +23760,7 @@ msgstr ""
 "nga shokët e tij: 2 vajza dhe 2 djem. Djemtë kanë tashmë nga një copë. Ai "
 "dëshiron që të tërë të kenë të njëjtën sasi."
 
-#: activities/share/resource/1/Data.qml:266
+#: activities/share/resource/1/Data.qml:268
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 25 pieces of candy equally between 5 of her friends: 3 "
@@ -23770,29 +23770,29 @@ msgstr ""
 "nga shokët e saj: 3 vajza dhe 2 djem. I ndan dot në mënyrë të barabartë ajo "
 "copat e kallamsheqerit?"
 
-#: activities/share/resource/2/Data.qml:13
+#: activities/share/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, possible rest."
 msgstr "Maksimumi 25 kallamsheqeri dhe 5 fëmijë, mundet me mbetje."
 
-#: activities/share/resource/2/Data.qml:28
+#: activities/share/resource/2/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 5 pieces of candy among his friends."
 msgstr "Tashti dëshiron t’u japë 5 copa kallamsheqeri shokëve të tij."
 
-#: activities/share/resource/2/Data.qml:38
+#: activities/share/resource/2/Data.qml:40
 msgctxt "Data|"
 msgid "Can you now share 7 of Paul's pieces of candy among his friends?"
 msgstr "A mund t’u jepni shokëve të tij 7 nga copat e kallamsheqerit të Palit?"
 
-#: activities/share/resource/2/Data.qml:48
+#: activities/share/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Can you now share 8 of Paul's pieces of candy among his friends?"
 msgstr ""
 "A mund t’u ndani në mënyrë të barabartë shokëve të Palit 8 copat e "
 "kallamsheqerit?"
 
-#: activities/share/resource/2/Data.qml:58
+#: activities/share/resource/2/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 11 pieces of candy left. He eats 2 pieces of candy and he "
@@ -23803,7 +23803,7 @@ msgstr ""
 "dhe pjesën e mbetur ua jep shokëve. E ndihmoni dot të ndajë në mënyrë të "
 "barabartë 9 copat e mbetura të kallamsheqerit?"
 
-#: activities/share/resource/2/Data.qml:70
+#: activities/share/resource/2/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "Bob wants to share 3 pieces of candy equally between 3 of his girl friends. "
@@ -23812,7 +23812,7 @@ msgstr ""
 "Koli dëshiron të ndajë në mënyrë të barabartë 3 copa kallamsheqeri mes 3 "
 "shoqeve të tij. I ndan dot në mënyrë të barabartë ai copat e kallamsheqerit?"
 
-#: activities/share/resource/2/Data.qml:80
+#: activities/share/resource/2/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 8 pieces of candy between 3 of his friends: 1 boy and 2 "
@@ -23823,7 +23823,7 @@ msgstr ""
 "shokët e tij: 1 djalë dhe 2 vajza. Djali ka tashmë një copë. I ndan dot ai "
 "copat e kallamsheqerit që të tërë të kenë të njëjtën sasi?"
 
-#: activities/share/resource/2/Data.qml:90
+#: activities/share/resource/2/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 8 pieces of candy between 3 of her friends: 1 boy and 2 "
@@ -23834,7 +23834,7 @@ msgstr ""
 "shokët e saj: 1 djalë dhe 2 vajza. Vajzat kanë tashmë ca copa. I ndan dot "
 "ajo copat e kallamsheqerit që të tërë të kenë të njëjtën sasi?"
 
-#: activities/share/resource/2/Data.qml:100
+#: activities/share/resource/2/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 12 pieces of candy between 3 of his friends: 1 boy and "
@@ -23845,14 +23845,14 @@ msgstr ""
 "nga shokët e saj: 1 djalë dhe 2 vajza. Djali ka tashmë ca copa. I ndan dot "
 "ai copat e kallamsheqerit që të tërë të kenë të njëjtën sasi?"
 
-#: activities/share/resource/2/Data.qml:122
+#: activities/share/resource/2/Data.qml:124
 msgctxt "Data|"
 msgid "Now, Alice wants to share 8 pieces of candy equally among her friends."
 msgstr ""
 "Tashti Lulja dëshiron t’u ndajë në mënyrë të barabartë 8 copa kallamsheqeri "
 "shokëve të saj."
 
-#: activities/share/resource/2/Data.qml:132
+#: activities/share/resource/2/Data.qml:134
 msgctxt "Data|"
 msgid ""
 "Can you help Alice share 10 pieces of candy equally among her friends: 1 "
@@ -23861,14 +23861,14 @@ msgstr ""
 "E ndihmoni dot Lulen t’u japë 10 copa kallamsheqeri shokëve të saj, 1 vajzë "
 "dhe 3 djem? Vajza ka tashmë ca copa."
 
-#: activities/share/resource/2/Data.qml:142
+#: activities/share/resource/2/Data.qml:144
 msgctxt "Data|"
 msgid "Alice wants to share 16 pieces of candy equally among her friends."
 msgstr ""
 "Lulja dëshiron t’u ndajë në mënyrë të barabartë 16 copa kallamsheqeri "
 "shokëve të saj."
 
-#: activities/share/resource/2/Data.qml:152
+#: activities/share/resource/2/Data.qml:154
 msgctxt "Data|"
 msgid ""
 "Alice has 14 pieces of candy left. She wants to share them equally among her "
@@ -23879,7 +23879,7 @@ msgstr ""
 "në mënyrë të barabartë shokëve të saj. Djemtë kanë tashmë ca copa. E "
 "ndihmoni dot t’i ndajë copat e kallamsheqerit në mënyrë të barabartë?"
 
-#: activities/share/resource/2/Data.qml:164
+#: activities/share/resource/2/Data.qml:166
 msgctxt "Data|"
 msgid ""
 "Help Jon share 11 pieces of candies equally between five girls. The rest "
@@ -23888,7 +23888,7 @@ msgstr ""
 "Ndihmojeni Jonin të ndajë 11 copa kallamsheqeri mes pesë vajzave. Mbetja i "
 "takon Jonit."
 
-#: activities/share/resource/2/Data.qml:174
+#: activities/share/resource/2/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Jon wants to share the rest of his pieces of candies with his brothers and "
@@ -23899,7 +23899,7 @@ msgstr ""
 "motrat e tij. A mund t’i ndani në mënyrë të barabartë, duke e ditur se "
 "vëllezërit e tij kanë tashmë 2 copa kallamsheqeri?"
 
-#: activities/share/resource/2/Data.qml:184
+#: activities/share/resource/2/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Help Tux split 19 pieces of candies between his friends: 4 boys and 1 girl."
@@ -23907,13 +23907,13 @@ msgstr ""
 "Ndihmojeni Tux-in të ndajë 19 copa kallamsheqeri mes shokëve të tij: 4 djem "
 "dhe 1 vajzë."
 
-#: activities/share/resource/2/Data.qml:194
+#: activities/share/resource/2/Data.qml:196
 msgctxt "Data|"
 msgid "Help Maria share 18 pieces of candy equally between 3 boys and 2 girls."
 msgstr ""
 "Ndihmojeni Mozën të ndajë 18 copa kallamsheqeri mes 3 djemve dhe 2 vajzave."
 
-#: activities/share/resource/2/Data.qml:206
+#: activities/share/resource/2/Data.qml:208
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally between 2 of his girl "
@@ -23922,7 +23922,7 @@ msgstr ""
 "Koli dëshiron të ndajë në mënyrë të barabartë 6 copa kallamsheqeri mes 2 nga "
 "shoqeve të veta. I ndan dot në mënyrë të barabartë ai copat e kallamsheqerit?"
 
-#: activities/share/resource/2/Data.qml:216
+#: activities/share/resource/2/Data.qml:218
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -23933,7 +23933,7 @@ msgstr ""
 "shokët e saj: 2 vajza dhe 1 djalë. Si duhet t’i ndajë copat e kallamsheqerit "
 "mes tyre?"
 
-#: activities/share/resource/2/Data.qml:226
+#: activities/share/resource/2/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 17 pieces of candy to share equally between his "
@@ -23943,7 +23943,7 @@ msgstr ""
 "Babai i dha Mondit 17 copa kallamsheqeri, t’i ndajë me shokët: 2 djem dhe 2 "
 "vajza. Ndihmojeni t’u ndajë shokëve copat e kallamsheqerit."
 
-#: activities/share/resource/2/Data.qml:236
+#: activities/share/resource/2/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy equally between 4 of his friends: 2 "
@@ -23954,7 +23954,7 @@ msgstr ""
 "shokët e tij: 2 vajza dhe 2 djem. I ndan dot në mënyrë të barabartë ai copat "
 "e kallamsheqerit?"
 
-#: activities/share/resource/2/Data.qml:246
+#: activities/share/resource/2/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 23 pieces of candy equally between 5 of her friends: 3 "
@@ -23965,12 +23965,12 @@ msgstr ""
 "shokët e saj: 3 vajza dhe 2 djem. I ndan dot në mënyrë të barabartë ajo "
 "copat e kallamsheqerit?"
 
-#: activities/share/resource/3/Data.qml:13
+#: activities/share/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr "Maksimumi 30 kallamsheqeri dhe 6 fëmijë, mundet me mbetje."
 
-#: activities/share/share.js:98
+#: activities/share/share.js:115
 #, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -23980,7 +23980,7 @@ msgid_plural "Place %n boy(s) "
 msgstr[0] "Vendosni %n djalë "
 msgstr[1] "Vendosni %n djem "
 
-#: activities/share/share.js:102
+#: activities/share/share.js:119
 #, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -23990,7 +23990,7 @@ msgid_plural "and %n girl(s) in the center. "
 msgstr[0] "dhe %n vajzë në qendër. "
 msgstr[1] "dhe %n vajza në qendër. "
 
-#: activities/share/share.js:106
+#: activities/share/share.js:123
 #, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -24000,7 +24000,7 @@ msgid_plural "Then split %n pieces of candy equally between them."
 msgstr[0] "Mandej ndani në mënyrë të barabartë %n copë kallamsheqeri mes tyre."
 msgstr[1] "Mandej ndani në mënyrë të barabartë %n copë kallamsheqeri mes tyre."
 
-#: activities/share/Share.qml:358
+#: activities/share/Share.qml:359
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
@@ -26783,7 +26783,7 @@ msgstr ""
 "ujor. Kur sistemi të jetë sërish në punë dhe Tux-i në dush, shtypni për të "
 "butonin e dushit."
 
-#: activities/watercycle/Watercycle.qml:114
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -26792,12 +26792,12 @@ msgstr ""
 "Dielli është përbërësi kryesor i ciklit ujor. Klikoni mbi diellin, që të "
 "nisë cikli ujor."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Teksa dielli ngrihet, uji i detit fillon të nxehet dhe të avullojë."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -26806,7 +26806,7 @@ msgstr ""
 "Avujt e ujit kondensohen për të formuar re dhe kur retë rëndohen, bie shi. "
 "Klikoni mbi renë."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:118
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -26817,7 +26817,7 @@ msgstr ""
 "motorike përmes depozitave të ujit. Klikoni mbi pompën motorike që të "
 "furnizohen banorët me ujë."
 
-#: activities/watercycle/Watercycle.qml:119
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -26826,18 +26826,18 @@ msgstr ""
 "Shihni depozitën e mbushur me ujë. Aktivizoni stacionin e trajtimit të "
 "ujërave të zeza, duke klikuar mbi të."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Bukur, klikoni mbi dushin, teksa Tux-i mbërrin në shtëpi."
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:122
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "Fantastike, keni plotësuar ciklin ujor. Mund të vazhdoni të luani."
 
-#: activities/watercycle/Watercycle.qml:139
+#: activities/watercycle/Watercycle.qml:140
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26848,7 +26848,7 @@ msgstr ""
 "teksa qarkullon nga toka në ajër dhe prapë në të. Nxehtësia e diellit "
 "furnizon energjinë që avullon ujin nga masa ujore të tilla si oqeanet."
 
-#: activities/watercycle/Watercycle.qml:142
+#: activities/watercycle/Watercycle.qml:143
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26859,7 +26859,7 @@ msgstr ""
 "bulëza të vockla në re. Kur retë takojnë ajër të ftohtë përmbi tokë, "
 "shkaktohen reshjet dhe rënia poshtë në formë shiu."
 
-#: activities/watercycle/Watercycle.qml:145
+#: activities/watercycle/Watercycle.qml:146
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26870,7 +26870,7 @@ msgstr ""
 "nëntokësor. Por shumica e ujit rrjedh si rrëke, duke u rikthyer më në fund "
 "në dete, përmes lumenjve."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:148
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "

@@ -23521,7 +23521,7 @@ msgstr ""
 "копчето за светло за него. За да победите, мора да ги вклучите сите "
 "потрошувачи додека сите производители се активни."
 
-#: activities/renewable_energy/RenewableEnergy.qml:302
+#: activities/renewable_energy/RenewableEnergy.qml:303
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -23530,7 +23530,7 @@ msgstr ""
 "Тукс се вратил од риболов со неговиот брод. Профункционирајте го резервниот "
 "електричен систем за да може да има светлина во неговиот дом."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:305
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -23539,7 +23539,7 @@ msgstr ""
 "Кликнете на различни активни елементи: сонце, облак, брана, соларни панели, "
 "ветерници и трансформатори, со цел да го активирате целиот електричен систем."
 
-#: activities/renewable_energy/RenewableEnergy.qml:306
+#: activities/renewable_energy/RenewableEnergy.qml:307
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -23550,13 +23550,13 @@ msgstr ""
 "светло за него. За да победи, мора да ги вклучите сите потрошувачи додека "
 "сите производители се активни."
 
-#: activities/renewable_energy/RenewableEnergy.qml:308
+#: activities/renewable_energy/RenewableEnergy.qml:309
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Дознајте за електричен систем заснован на обновлива енергија. Уживајте."
 
-#: activities/renewable_energy/RenewableEnergy.qml:333
+#: activities/renewable_energy/RenewableEnergy.qml:334
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -24438,13 +24438,13 @@ msgctxt "ActivityInfo|"
 msgid "If there is a rest, it needs to be placed inside the candy jar."
 msgstr "Ако има остаток, треба да се стави во садот со бонбони."
 
-#: activities/share/resource/1/Data.qml:13
+#: activities/share/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, no rest."
 msgstr "Максимум 25 парчиња бонбони и 5 деца, без одмор."
 
-#: activities/share/resource/1/Data.qml:18
-#: activities/share/resource/2/Data.qml:18
+#: activities/share/resource/1/Data.qml:20
+#: activities/share/resource/2/Data.qml:20
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 2 pieces of candy equally between 2 of his girl friends. "
@@ -24455,18 +24455,18 @@ msgstr ""
 "ли да му помогнеш? Прво, поставете ги децата во центар, а потоа повлечете ги "
 "бонбоните на секој од нив."
 
-#: activities/share/resource/1/Data.qml:28
+#: activities/share/resource/1/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 4 pieces of candy equally among his friends."
 msgstr "Сега тој сака да подели 4 бонбони подеднакво на своите пријатели."
 
-#: activities/share/resource/1/Data.qml:38
+#: activities/share/resource/1/Data.qml:40
 msgctxt "Data|"
 msgid ""
 "Can you now share 6 of Paul's pieces of candy equally among his friends?"
 msgstr "Дали можете да поделете 6 бонбони подеднакво на пријателите на Павле?"
 
-#: activities/share/resource/1/Data.qml:48
+#: activities/share/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid ""
 "Some of his friends already have pieces of candy. He wants to give them 7 "
@@ -24475,7 +24475,7 @@ msgstr ""
 "Некои од неговите пријатели веќе имаат парчиња бонбони. Сака да им даде уште "
 "7 парчиња за сите да имаат иста количина."
 
-#: activities/share/resource/1/Data.qml:58
+#: activities/share/resource/1/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 12 pieces of candy left. He eats 2 pieces of candy and he "
@@ -24486,7 +24486,7 @@ msgstr ""
 "дава на пријателите. Можете ли да му помогнете подеднакво да ги подели 10-те "
 "преостанати бонбони?"
 
-#: activities/share/resource/1/Data.qml:70
+#: activities/share/resource/1/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "George wants to share 3 pieces of candy equally between 3 of his girl "
@@ -24495,7 +24495,7 @@ msgstr ""
 "Ѓорги сака да ги сподели своите 3 парчиња бонбони подеднакво со 2 свои "
 "пријателки. Може ли да ги подели парчињата бонбони подеднакво?"
 
-#: activities/share/resource/1/Data.qml:80
+#: activities/share/resource/1/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 6 pieces of candy equally between 3 of her friends: 1 "
@@ -24504,7 +24504,7 @@ msgstr ""
 "Марија сака да ги сподели своите 6 парчиња бонбони со 3 свои пријатели. 1 "
 "девојче и 2 момчиња. Може ли да ги подели парчињата бонбони подеднакво?"
 
-#: activities/share/resource/1/Data.qml:90
+#: activities/share/resource/1/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "John wants to share 8 pieces of candy equally between 3 of his friends: 1 "
@@ -24515,7 +24515,7 @@ msgstr ""
 "едно момче и две девојчиња. Момчето веќе има една бонбона. Може ли да се "
 "погрижи сите да имаат иста количина?"
 
-#: activities/share/resource/1/Data.qml:100
+#: activities/share/resource/1/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 12 pieces of candy equally between 3 of his friends: 2 "
@@ -24525,7 +24525,7 @@ msgstr ""
 "пријатели: 2 момчиња и 1 девојче. Може ли да ги подели парчињата бонбони "
 "подеднакво?"
 
-#: activities/share/resource/1/Data.qml:110
+#: activities/share/resource/1/Data.qml:112
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 11 pieces of candy between 3 of her friends: 1 boy and "
@@ -24537,8 +24537,8 @@ msgstr ""
 "бонбони. Може ли таа подеднакво да ги подели бонбоните помеѓу нејзините "
 "пријатели така што сите да имаат ист број бонбони?"
 
-#: activities/share/resource/1/Data.qml:122
-#: activities/share/resource/2/Data.qml:112
+#: activities/share/resource/1/Data.qml:124
+#: activities/share/resource/2/Data.qml:114
 msgctxt "Data|"
 msgid ""
 "Alice wants to share 4 pieces of candy equally between 4 of her girl "
@@ -24547,12 +24547,12 @@ msgstr ""
 "Александра сака да сподели 4 бонбони подеднакво помеѓу 4 свои пријателки. "
 "Можеш ли да и помогнеш?"
 
-#: activities/share/resource/1/Data.qml:132
+#: activities/share/resource/1/Data.qml:134
 msgctxt "Data|"
 msgid "Now, Alice wants to give 8 pieces of candy to her friends."
 msgstr "Сега, Александра сака да им даде 8 бонбони на своите пријатели."
 
-#: activities/share/resource/1/Data.qml:142
+#: activities/share/resource/1/Data.qml:144
 msgctxt "Data|"
 msgid ""
 "Alice wants to give 10 pieces of candy to her friends, 1 girl and 3 boys, so "
@@ -24563,12 +24563,12 @@ msgstr ""
 "момчиња, така што сите да имаат ист број бонбони. Девојчињата веќе имаат "
 "неколку бонбони."
 
-#: activities/share/resource/1/Data.qml:152
+#: activities/share/resource/1/Data.qml:154
 msgctxt "Data|"
 msgid "Alice wants to give 16 pieces of candy to her friends."
 msgstr "Сега, Александра сака да им даде 16 бонбони на своите пријатели."
 
-#: activities/share/resource/1/Data.qml:162
+#: activities/share/resource/1/Data.qml:164
 msgctxt "Data|"
 msgid ""
 "Alice wants to give pieces of candy to 4 friends. Some of them already have "
@@ -24579,7 +24579,7 @@ msgstr ""
 "имаат неколку бонбони. Можеш ли да и помогнеш да подели 14 бонбони така што "
 "секој пријател да има ист број бонбони?"
 
-#: activities/share/resource/1/Data.qml:174
+#: activities/share/resource/1/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Michael wants to share 5 pieces of candy equally between 5 of his girl "
@@ -24588,7 +24588,7 @@ msgstr ""
 "Мајкл сака да ги сподели своите 5 бонбони подеднакво помеѓу неговите 5 "
 "пријателки. Можеш ли да му помогнеш?"
 
-#: activities/share/resource/1/Data.qml:184
+#: activities/share/resource/1/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Helen has 5 friends: 2 boys and 3 girls. She wants to give them 10 pieces of "
@@ -24597,7 +24597,7 @@ msgstr ""
 "Елена има 5 пријатели: 2 момчиња и 3 девојчиња. Таа сака да им даде 10 "
 "бонбони. Помогне и да ги подели бонбоните помеѓу нејзините пријатели."
 
-#: activities/share/resource/1/Data.qml:194
+#: activities/share/resource/1/Data.qml:196
 msgctxt "Data|"
 msgid ""
 "Michelle wants to share 12 pieces of candy equally between her 4 brothers "
@@ -24607,7 +24607,7 @@ msgstr ""
 "Милена има 12 бонбони и сака да ги сподели со 4 браќа и 1 сестра, така што "
 "сите би имале ист број бонбони. Нејзината сестра веќе има неколку бонбони."
 
-#: activities/share/resource/1/Data.qml:204
+#: activities/share/resource/1/Data.qml:206
 msgctxt "Data|"
 msgid ""
 "Thomas wants to share his 20 pieces of candy with his friends: 1 boy and 4 "
@@ -24616,7 +24616,7 @@ msgstr ""
 "Томи сака да ги сподели своите 20 парчиња бонбони со своите пријатели: 1 "
 "момче и 4 девојки. Можеш ли да му помогнеш?"
 
-#: activities/share/resource/1/Data.qml:214
+#: activities/share/resource/1/Data.qml:216
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 20 pieces of candy equally between 5 of his friends. "
@@ -24625,7 +24625,7 @@ msgstr ""
 "Павле сака да ги сподели своите 20 бонбони подеднакво помеѓу 5 свои "
 "пријатели. Тие веќе имаат по едно бонбонче. Можеш ли да му помогнеш?"
 
-#: activities/share/resource/1/Data.qml:226
+#: activities/share/resource/1/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally with 2 of his girl "
@@ -24634,7 +24634,7 @@ msgstr ""
 "Славче сака да ги подели своите 6 парчиња бонбони подеднакво со 2 свои "
 "пријателки. Може ли да ги подели бонбоните подеднакво?"
 
-#: activities/share/resource/1/Data.qml:236
+#: activities/share/resource/1/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -24645,7 +24645,7 @@ msgstr ""
 "пријатели: две девојчиња и едно момче. Девојчињата веќе имаат по неколку "
 "бонбони. Како треба да ги подели така што сите да имаат ист број бонбони?"
 
-#: activities/share/resource/1/Data.qml:246
+#: activities/share/resource/1/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 16 pieces of candy to share equally with his "
@@ -24656,7 +24656,7 @@ msgstr ""
 "момчиња и две девојчиња. Помогнете му да им даде подеднаков број бонбони на "
 "своите пријатели."
 
-#: activities/share/resource/1/Data.qml:256
+#: activities/share/resource/1/Data.qml:258
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy between 4 of his friends: 2 girls "
@@ -24667,7 +24667,7 @@ msgstr ""
 "две момчиња и две девојчиња. Момчињата веќе имаат по едно бонбонче. Тој сака "
 "секој да има ист број бонбони."
 
-#: activities/share/resource/1/Data.qml:266
+#: activities/share/resource/1/Data.qml:268
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 25 pieces of candy equally between 5 of her friends: 3 "
@@ -24676,29 +24676,29 @@ msgstr ""
 "Марија сака да сподели 25 бонбони подеднакво помеѓу 5 нејзини пријателки: 3 "
 "девојчиња and 2 момчиња. Може ли да ги подели парчињата бонбони подеднакво?"
 
-#: activities/share/resource/2/Data.qml:13
+#: activities/share/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, possible rest."
 msgstr "Максимум 25 бонбони и 5 деца, можен одмор."
 
-#: activities/share/resource/2/Data.qml:28
+#: activities/share/resource/2/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 5 pieces of candy among his friends."
 msgstr "Сега тој сака да сподели 5 бонбони помеѓу своите пријатели."
 
-#: activities/share/resource/2/Data.qml:38
+#: activities/share/resource/2/Data.qml:40
 msgctxt "Data|"
 msgid "Can you now share 7 of Paul's pieces of candy among his friends?"
 msgstr ""
 "Дали можете да споделете 7 од бонбоните на Павле помеѓу неговите пријатели?"
 
-#: activities/share/resource/2/Data.qml:48
+#: activities/share/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Can you now share 8 of Paul's pieces of candy among his friends?"
 msgstr ""
 "Дали можете да споделите 8 од бонбоните на Павле помеѓу неговите пријатели?"
 
-#: activities/share/resource/2/Data.qml:58
+#: activities/share/resource/2/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 11 pieces of candy left. He eats 2 pieces of candy and he "
@@ -24709,7 +24709,7 @@ msgstr ""
 "дава на пријателите. Можете ли да му помогнете подеднакво да ги подели 9-те "
 "преостанати бонбони?"
 
-#: activities/share/resource/2/Data.qml:70
+#: activities/share/resource/2/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "Bob wants to share 3 pieces of candy equally between 3 of his girl friends. "
@@ -24718,7 +24718,7 @@ msgstr ""
 "Боби сака да ги сподели своите 3 парчиња бонбони помеѓу 3 свои пријателки. "
 "Може ли да ги подели парчињата бонбони подеднакво?"
 
-#: activities/share/resource/2/Data.qml:80
+#: activities/share/resource/2/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 8 pieces of candy between 3 of his friends: 1 boy and 2 "
@@ -24729,7 +24729,7 @@ msgstr ""
 "девојчиња. Момчето веќе има 1 бонбонче. Може ли да ги подели бонбоните така "
 "што секој да има ист број бонбони?"
 
-#: activities/share/resource/2/Data.qml:90
+#: activities/share/resource/2/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 8 pieces of candy between 3 of her friends: 1 boy and 2 "
@@ -24740,7 +24740,7 @@ msgstr ""
 "девојчиња. Девојчињата веќе имаат по неколку бонбони. Може ли таа да ги "
 "подели бонбоните така што сите да имаат ист број бонбони?"
 
-#: activities/share/resource/2/Data.qml:100
+#: activities/share/resource/2/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 12 pieces of candy between 3 of his friends: 1 boy and "
@@ -24751,14 +24751,14 @@ msgstr ""
 "две девојчиња. Момчето веќе има неколку бонбони. Може ли да ги подели "
 "бонбоните така што сите да имаат ист број бонбони?"
 
-#: activities/share/resource/2/Data.qml:122
+#: activities/share/resource/2/Data.qml:124
 msgctxt "Data|"
 msgid "Now, Alice wants to share 8 pieces of candy equally among her friends."
 msgstr ""
 "Сега, Александра сака да сподели 8 бонбони подеднакво помеѓу нејзините "
 "пријатели."
 
-#: activities/share/resource/2/Data.qml:132
+#: activities/share/resource/2/Data.qml:134
 msgctxt "Data|"
 msgid ""
 "Can you help Alice share 10 pieces of candy equally among her friends: 1 "
@@ -24767,13 +24767,13 @@ msgstr ""
 "Можеш ли да и помогнеш на Александра да сподели 10 бонбони подеднакво на "
 "своите пријатели : 1 девојче и 3 момчиња? Девојчето веќе има неколку бонбони."
 
-#: activities/share/resource/2/Data.qml:142
+#: activities/share/resource/2/Data.qml:144
 msgctxt "Data|"
 msgid "Alice wants to share 16 pieces of candy equally among her friends."
 msgstr ""
 "Александра сака да сподели 16 бонбони подеднакво помеѓу своите пријатели."
 
-#: activities/share/resource/2/Data.qml:152
+#: activities/share/resource/2/Data.qml:154
 msgctxt "Data|"
 msgid ""
 "Alice has 14 pieces of candy left. She wants to share them equally among her "
@@ -24784,7 +24784,7 @@ msgstr ""
 "подеднакво помеѓу своите пријатели. Момчињата веќе имаат по неколку бонбони. "
 "Можеш ли да и помогнеш подеднакво да ги подели бонбоните?"
 
-#: activities/share/resource/2/Data.qml:164
+#: activities/share/resource/2/Data.qml:166
 msgctxt "Data|"
 msgid ""
 "Help Jon share 11 pieces of candies equally between five girls. The rest "
@@ -24793,7 +24793,7 @@ msgstr ""
 "Помогнете му на Јован да сподели 11 бонбони подеднакво помеѓу пет девојчиња. "
 "Остатокот ќе остане кај Јован."
 
-#: activities/share/resource/2/Data.qml:174
+#: activities/share/resource/2/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Jon wants to share the rest of his pieces of candies with his brothers and "
@@ -24804,7 +24804,7 @@ msgstr ""
 "Можеш ли да ги поделиш подеднакво, знаејќи дека неговите браќа веќе имаат "
 "две бонбони?"
 
-#: activities/share/resource/2/Data.qml:184
+#: activities/share/resource/2/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Help Tux split 19 pieces of candies between his friends: 4 boys and 1 girl."
@@ -24812,14 +24812,14 @@ msgstr ""
 "Помогнете му на Тукс да подели 19 бонбони на своите пријатели: 4 момчиња и 1 "
 "девојче."
 
-#: activities/share/resource/2/Data.qml:194
+#: activities/share/resource/2/Data.qml:196
 msgctxt "Data|"
 msgid "Help Maria share 18 pieces of candy equally between 3 boys and 2 girls."
 msgstr ""
 "Помогнете и на Марија да сподели 18 бонбони подеднакво помеѓу три момчиња и "
 "две девојчиња."
 
-#: activities/share/resource/2/Data.qml:206
+#: activities/share/resource/2/Data.qml:208
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally between 2 of his girl "
@@ -24828,7 +24828,7 @@ msgstr ""
 "Славче сака да ги сподели своите 6 парчиња бонбони со 2 свои пријателки. "
 "Може ли да ги подели парчињата бонбони подеднакво?"
 
-#: activities/share/resource/2/Data.qml:216
+#: activities/share/resource/2/Data.qml:218
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -24839,7 +24839,7 @@ msgstr ""
 "со 3 нејзини пријатели: две девојчиња и едно момче. Како треба да ги подели "
 "парчињата бонбони помеѓу своите пријатели?"
 
-#: activities/share/resource/2/Data.qml:226
+#: activities/share/resource/2/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 17 pieces of candy to share equally between his "
@@ -24850,7 +24850,7 @@ msgstr ""
 "пријателите: 2 момчиња и 2 девојчиња. Помогнете му да им даде подеднаков "
 "број бонбони на своите пријатели."
 
-#: activities/share/resource/2/Data.qml:236
+#: activities/share/resource/2/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy equally between 4 of his friends: 2 "
@@ -24861,7 +24861,7 @@ msgstr ""
 "две момчиња и две девојчиња. Може ли тој подеднакво да ги подели парчињата "
 "бонбони меѓу неговите пријатели?"
 
-#: activities/share/resource/2/Data.qml:246
+#: activities/share/resource/2/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 23 pieces of candy equally between 5 of her friends: 3 "
@@ -24872,12 +24872,12 @@ msgstr ""
 "пријатели: три девојки и две момчиња. Може ли да ги сподели бонбоните "
 "подеднакво помеѓу нејзините пријатели?"
 
-#: activities/share/resource/3/Data.qml:13
+#: activities/share/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr "Максимум 30 бонбони и 6 деца, можен одмор."
 
-#: activities/share/share.js:98
+#: activities/share/share.js:115
 #, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -24888,7 +24888,7 @@ msgstr[0] "Ставете %n момче "
 msgstr[1] "Ставете %n момчиња "
 msgstr[2] "Ставете %n момчиња "
 
-#: activities/share/share.js:102
+#: activities/share/share.js:119
 #, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -24899,7 +24899,7 @@ msgstr[0] "и %n девојче во средина "
 msgstr[1] "и %n девојчиња во средина "
 msgstr[2] "и %n девојчиња во средина "
 
-#: activities/share/share.js:106
+#: activities/share/share.js:123
 #, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -24910,7 +24910,7 @@ msgstr[0] "Потоа подеднакво поделете %n бонбон по
 msgstr[1] "Потоа подеднакво поделете %n бонбони помеѓу нив."
 msgstr[2] "Потоа подеднакво поделете %n бонбони помеѓу нив."
 
-#: activities/share/Share.qml:358
+#: activities/share/Share.qml:359
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
@@ -27863,7 +27863,7 @@ msgstr ""
 "ќе профункционира и Тукс е во туш кабината, притиснете го копчето за "
 "туширање за него."
 
-#: activities/watercycle/Watercycle.qml:114
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -27872,12 +27872,12 @@ msgstr ""
 "Сонцето е основната компонента на водениот циклус. Кликнете на сонцето за да "
 "го отпочнете водениот циклус."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Како што изгрева сонцето, водата од морето се загрева и испарува."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:117
 #, fuzzy
 #| msgctxt "Watercycle|"
 #| msgid ""
@@ -27891,7 +27891,7 @@ msgstr ""
 "Водената пареа кондензира и формира облак и кога облаците стануваат тешки, "
 "врне дожд. Кликнете на облакот."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:118
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -27902,7 +27902,7 @@ msgstr ""
 "преку моторни пумпи низ водената кула. Кликнете на моторната пумпа за "
 "снабдување со вода на жителите."
 
-#: activities/watercycle/Watercycle.qml:119
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -27911,19 +27911,19 @@ msgstr ""
 "Погледнете ја кулата исполнета со вода. Активирајте ја станицата за третман "
 "на отпадни води со кликнување на неа."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Одлично, кликнете на тушот, како што Тукс пристигнува дома."
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:122
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr ""
 "Фантастично, го завршивте водениот циклус. Може да продолжите да играте."
 
-#: activities/watercycle/Watercycle.qml:139
+#: activities/watercycle/Watercycle.qml:140
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -27935,7 +27935,7 @@ msgstr ""
 "топлина обезбедува енергија за испарување на водата од водните тела како "
 "океаните."
 
-#: activities/watercycle/Watercycle.qml:142
+#: activities/watercycle/Watercycle.qml:143
 #, fuzzy
 #| msgctxt "Watercycle|"
 #| msgid ""
@@ -27953,7 +27953,7 @@ msgstr ""
 "се сретнат со ладен воздух над копно, започнуваат врнежи и водата паѓа како "
 "дожд."
 
-#: activities/watercycle/Watercycle.qml:145
+#: activities/watercycle/Watercycle.qml:146
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -27964,7 +27964,7 @@ msgstr ""
 "води. Но, поголемиот дел од водата истекува, враќајки се во морињата преку "
 "реки."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:148
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "

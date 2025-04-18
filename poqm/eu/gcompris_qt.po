@@ -22532,7 +22532,7 @@ msgstr ""
 "sakatu argiaren botoia bere ordez. Irabazteko, kontsumitzaile guztiak piztu "
 "behar dituzu ekoizle guztiak martxan daudelarik."
 
-#: activities/renewable_energy/RenewableEnergy.qml:302
+#: activities/renewable_energy/RenewableEnergy.qml:303
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22541,7 +22541,7 @@ msgstr ""
 "Tux arrantza egitetik itzuli da bere ontzian. Aktiba ezazu sistema "
 "elektrikoa etxean argindarra izan dezan."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:305
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22551,7 +22551,7 @@ msgstr ""
 "plakak, haize-sorgailuak eta transformadoreak, sistema elektriko osoa "
 "berrabiarazteko."
 
-#: activities/renewable_energy/RenewableEnergy.qml:306
+#: activities/renewable_energy/RenewableEnergy.qml:307
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22562,14 +22562,14 @@ msgstr ""
 "bere ordez. Irabazteko, kontsumitzaile guztiak piztu behar dituzu ekoizle "
 "guztiak martxan daudelarik."
 
-#: activities/renewable_energy/RenewableEnergy.qml:308
+#: activities/renewable_energy/RenewableEnergy.qml:309
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Ikasi energia berriztagarrietan oinarritutako elektrizitate sistemei buruz. "
 "Gozatu."
 
-#: activities/renewable_energy/RenewableEnergy.qml:333
+#: activities/renewable_energy/RenewableEnergy.qml:334
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -23431,13 +23431,13 @@ msgctxt "ActivityInfo|"
 msgid "If there is a rest, it needs to be placed inside the candy jar."
 msgstr "Hondar bat badago, gozokien ontzian ipini behar da."
 
-#: activities/share/resource/1/Data.qml:13
+#: activities/share/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, no rest."
 msgstr "Gehienez 25 gozoki ale eta 5 haur, hondarrik gabe."
 
-#: activities/share/resource/1/Data.qml:18
-#: activities/share/resource/2/Data.qml:18
+#: activities/share/resource/1/Data.qml:20
+#: activities/share/resource/2/Data.qml:20
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 2 pieces of candy equally between 2 of his girl friends. "
@@ -23448,14 +23448,14 @@ msgstr ""
 "emanez. Lagunduko diozu? Aurrena kokatu adiskideak erdigunean, ondoren "
 "arrastatu gozoki aleak haietako bakoitzari."
 
-#: activities/share/resource/1/Data.qml:28
+#: activities/share/resource/1/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 4 pieces of candy equally among his friends."
 msgstr ""
 "Orain 4 gozoki ale partekatu nahi ditu, berdin-berdin, bere adiskideen "
 "artean."
 
-#: activities/share/resource/1/Data.qml:38
+#: activities/share/resource/1/Data.qml:40
 msgctxt "Data|"
 msgid ""
 "Can you now share 6 of Paul's pieces of candy equally among his friends?"
@@ -23463,7 +23463,7 @@ msgstr ""
 "Partekatu ditzakezu orain, Paulen gozoki aleetako 6, berdin-berdin, bere "
 "adiskideen artean?"
 
-#: activities/share/resource/1/Data.qml:48
+#: activities/share/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid ""
 "Some of his friends already have pieces of candy. He wants to give them 7 "
@@ -23472,7 +23472,7 @@ msgstr ""
 "Bere adiskideetako batzuk dagoeneko gozoko aleak dituzte. 7 ale gehiago eman "
 "nahi dizkie guztiek kopuru bera izan dezaten."
 
-#: activities/share/resource/1/Data.qml:58
+#: activities/share/resource/1/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 12 pieces of candy left. He eats 2 pieces of candy and he "
@@ -23483,7 +23483,7 @@ msgstr ""
 "gainerakoak bere adiskideei ematen dizkie. Lagunduko diozu bere adiskideen "
 "artean, guztiei kopuru bera emanez, gainerako 10 gozoki aleak banatzen?"
 
-#: activities/share/resource/1/Data.qml:70
+#: activities/share/resource/1/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "George wants to share 3 pieces of candy equally between 3 of his girl "
@@ -23492,7 +23492,7 @@ msgstr ""
 "Jurgik 3 gozoki ale banatu nahi ditu, berdin-berdin, bere 3 adiskiderekin. "
 "Bana al ditzake gozoki aleak berdin-berdin?"
 
-#: activities/share/resource/1/Data.qml:80
+#: activities/share/resource/1/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 6 pieces of candy equally between 3 of her friends: 1 "
@@ -23501,7 +23501,7 @@ msgstr ""
 "Mariak 6 gozoki ale, berdin-berdin, banatu nahi ditu bere 3 adiskideren "
 "artean: neskato 1 eta 2 mutiko. Bana al ditzake gozoki aleak berdin-berdin?"
 
-#: activities/share/resource/1/Data.qml:90
+#: activities/share/resource/1/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "John wants to share 8 pieces of candy equally between 3 of his friends: 1 "
@@ -23512,7 +23512,7 @@ msgstr ""
 "artean: mutiko 1 eta 2 neskato. Mutikoak ale bat du dagoeneko. Ziurta "
 "daiteke denek kopuru bera izango dutela?"
 
-#: activities/share/resource/1/Data.qml:100
+#: activities/share/resource/1/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 12 pieces of candy equally between 3 of his friends: 2 "
@@ -23521,7 +23521,7 @@ msgstr ""
 "Paulek 12 gozoki ale, berdin-berdin, banatu nahi ditu bere 3 adiskideren "
 "artean: 2 mutiko eta neskato 1. Gozoki aleak, berdin-berdin, bana ditzake?"
 
-#: activities/share/resource/1/Data.qml:110
+#: activities/share/resource/1/Data.qml:112
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 11 pieces of candy between 3 of her friends: 1 boy and "
@@ -23532,8 +23532,8 @@ msgstr ""
 "eta 2 neskato. Neskatoek dagoeneko gozoki ale batzuk dituzte. Bana al "
 "ditzake gozoki aleak guztiek kopuru bera izan dezaten?"
 
-#: activities/share/resource/1/Data.qml:122
-#: activities/share/resource/2/Data.qml:112
+#: activities/share/resource/1/Data.qml:124
+#: activities/share/resource/2/Data.qml:114
 msgctxt "Data|"
 msgid ""
 "Alice wants to share 4 pieces of candy equally between 4 of her girl "
@@ -23542,12 +23542,12 @@ msgstr ""
 "Alizek 4 gozoki ale banatu nahi ditu, berdin-berdin, bere 4 adiskideren "
 "artean. Lagundu diezaiokezu?"
 
-#: activities/share/resource/1/Data.qml:132
+#: activities/share/resource/1/Data.qml:134
 msgctxt "Data|"
 msgid "Now, Alice wants to give 8 pieces of candy to her friends."
 msgstr "Orain, Alizek 8 gozoki ale eman nahi dizkie bere adiskideei."
 
-#: activities/share/resource/1/Data.qml:142
+#: activities/share/resource/1/Data.qml:144
 msgctxt "Data|"
 msgid ""
 "Alice wants to give 10 pieces of candy to her friends, 1 girl and 3 boys, so "
@@ -23558,12 +23558,12 @@ msgstr ""
 "mutiko, guztiek kopuru bera izan dezaten. Neskek dagoeneko badituzte gozoki "
 "ale batzuk."
 
-#: activities/share/resource/1/Data.qml:152
+#: activities/share/resource/1/Data.qml:154
 msgctxt "Data|"
 msgid "Alice wants to give 16 pieces of candy to her friends."
 msgstr "Alizek 16 gozoki ale eman nahi dizkie bere adiskideei."
 
-#: activities/share/resource/1/Data.qml:162
+#: activities/share/resource/1/Data.qml:164
 msgctxt "Data|"
 msgid ""
 "Alice wants to give pieces of candy to 4 friends. Some of them already have "
@@ -23574,7 +23574,7 @@ msgstr ""
 "dagoeneko badituzte gozoki ale batzuk. Lagunduko diozu 14 gozoki ale "
 "banatzen, bere lagunek kopuru bera izan dezaten?"
 
-#: activities/share/resource/1/Data.qml:174
+#: activities/share/resource/1/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Michael wants to share 5 pieces of candy equally between 5 of his girl "
@@ -23583,7 +23583,7 @@ msgstr ""
 "Mikelek 5 gozoki ale banatu nahi ditu, berdin-berdin, bere 5 lagunen artean. "
 "Lagunduko diozu hori egiten?"
 
-#: activities/share/resource/1/Data.qml:184
+#: activities/share/resource/1/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Helen has 5 friends: 2 boys and 3 girls. She wants to give them 10 pieces of "
@@ -23592,7 +23592,7 @@ msgstr ""
 "Elenek 5 lagun ditu: 2 mutiko eta 3 neskato. 10 gozoki ale eman nahi dizkie."
 "Lagun iezaiozu adiskideei aleak berdin-berdin banatzen."
 
-#: activities/share/resource/1/Data.qml:194
+#: activities/share/resource/1/Data.qml:196
 msgctxt "Data|"
 msgid ""
 "Michelle wants to share 12 pieces of candy equally between her 4 brothers "
@@ -23603,7 +23603,7 @@ msgstr ""
 "ahizpa 1en artean, guztiek kopuru bera izan dezaten. Bere ahizpak dagoeneko "
 "gozoki ale batzuk ditu."
 
-#: activities/share/resource/1/Data.qml:204
+#: activities/share/resource/1/Data.qml:206
 msgctxt "Data|"
 msgid ""
 "Thomas wants to share his 20 pieces of candy with his friends: 1 boy and 4 "
@@ -23612,7 +23612,7 @@ msgstr ""
 "Tomasek 20 gozoki ale banatu nahi ditu bere lagunen artean: mutiko 1 eta 4 "
 "neskato. Lagunduko diozu hori egiten?"
 
-#: activities/share/resource/1/Data.qml:214
+#: activities/share/resource/1/Data.qml:216
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 20 pieces of candy equally between 5 of his friends. "
@@ -23621,7 +23621,7 @@ msgstr ""
 "Paulek 20 gozoki ale banatu nahi ditu, berdin-berdin, bere 5 adiskideren "
 "artean. Bakoitzak dagoeneko gozoki ale bat du. Lagunduko diozu hori egiten?"
 
-#: activities/share/resource/1/Data.qml:226
+#: activities/share/resource/1/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally with 2 of his girl "
@@ -23631,7 +23631,7 @@ msgstr ""
 "partekatu nahi ditu. Bana al ditzake gozoki aleak guztiek kopuru berdin-"
 "berdina jaso dezaten?"
 
-#: activities/share/resource/1/Data.qml:236
+#: activities/share/resource/1/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -23643,7 +23643,7 @@ msgstr ""
 "dituzte. Nola banatu beharko lituzke gozoki aleak guztiek kopuru bera izan "
 "dezaten?"
 
-#: activities/share/resource/1/Data.qml:246
+#: activities/share/resource/1/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 16 pieces of candy to share equally with his "
@@ -23654,7 +23654,7 @@ msgstr ""
 "neskato, berdin-berdin partekatzeko. Lagun iezaiozu gozoki aleak bere "
 "adiskideei ematen."
 
-#: activities/share/resource/1/Data.qml:256
+#: activities/share/resource/1/Data.qml:258
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy between 4 of his friends: 2 girls "
@@ -23665,7 +23665,7 @@ msgstr ""
 "eta 2 mutiko. Mutikoek dagoeneko gozoki ale batzuk dituzte. Guztiek kopuru "
 "bera izatea nahi du."
 
-#: activities/share/resource/1/Data.qml:266
+#: activities/share/resource/1/Data.qml:268
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 25 pieces of candy equally between 5 of her friends: 3 "
@@ -23674,29 +23674,29 @@ msgstr ""
 "Mariak 25 gozoki ale banatu nahi ditu, berdin-berdin, bere 5 adiskideren "
 "artean, 3 neskato eta 2 mutiko. Bana al ditzake gozoki aleak berdin-berdin?"
 
-#: activities/share/resource/2/Data.qml:13
+#: activities/share/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, possible rest."
 msgstr "Gehienez 25 gozoki ale eta 5 haur, hondarra egon daiteke."
 
-#: activities/share/resource/2/Data.qml:28
+#: activities/share/resource/2/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 5 pieces of candy among his friends."
 msgstr "Orain bere adiskideen artean 5 gozoki ale banatu nahi ditu."
 
-#: activities/share/resource/2/Data.qml:38
+#: activities/share/resource/2/Data.qml:40
 msgctxt "Data|"
 msgid "Can you now share 7 of Paul's pieces of candy among his friends?"
 msgstr ""
 "Bana al ditzakezu orain Paulen gozoki aleetako 7 bere adiskideen artean?"
 
-#: activities/share/resource/2/Data.qml:48
+#: activities/share/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Can you now share 8 of Paul's pieces of candy among his friends?"
 msgstr ""
 "Bana al ditzakezu orain Paulen gozoki aleetako 8 bere adiskideen artean?"
 
-#: activities/share/resource/2/Data.qml:58
+#: activities/share/resource/2/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 11 pieces of candy left. He eats 2 pieces of candy and he "
@@ -23707,7 +23707,7 @@ msgstr ""
 "gainerakoak adiskideei ematen dizkie. Lagunduko diozu bere adiskideen artean "
 "gainerako 9 gozoki aleak berdin-berdin banatzen?"
 
-#: activities/share/resource/2/Data.qml:70
+#: activities/share/resource/2/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "Bob wants to share 3 pieces of candy equally between 3 of his girl friends. "
@@ -23716,7 +23716,7 @@ msgstr ""
 "Ibonek 3 gozoki ale banatu nahi ditu, berdin-berdin, bere 3 adiskideren "
 "artean. Bana al ditzake gozoki aleak berdin-berdin?"
 
-#: activities/share/resource/2/Data.qml:80
+#: activities/share/resource/2/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 8 pieces of candy between 3 of his friends: 1 boy and 2 "
@@ -23727,7 +23727,7 @@ msgstr ""
 "2 neskato. Mutikoak dagoeneko gozoki ale bat du. Bana al ditzake gozoki "
 "aleak guztiek kopuru bera izan dezaten?"
 
-#: activities/share/resource/2/Data.qml:90
+#: activities/share/resource/2/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 8 pieces of candy between 3 of her friends: 1 boy and 2 "
@@ -23738,7 +23738,7 @@ msgstr ""
 "2 neskato. Neskatoek dagoeneko gozoki ale batzuk dituzte. Bana al ditzake "
 "gozoki aleak guztiek kopuru bera izan dezaten?"
 
-#: activities/share/resource/2/Data.qml:100
+#: activities/share/resource/2/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 12 pieces of candy between 3 of his friends: 1 boy and "
@@ -23749,13 +23749,13 @@ msgstr ""
 "eta 2 neskato. Mutikoak dagoeneko gozoki ale batzuk ditu. Bana al ditzake "
 "gozoki aleak guztiek kopuru bera izan dezaten?"
 
-#: activities/share/resource/2/Data.qml:122
+#: activities/share/resource/2/Data.qml:124
 msgctxt "Data|"
 msgid "Now, Alice wants to share 8 pieces of candy equally among her friends."
 msgstr ""
 "Orain, Alizek 8 gozoki ale banatu nahi ditu, berdin, bere adiskideen artean."
 
-#: activities/share/resource/2/Data.qml:132
+#: activities/share/resource/2/Data.qml:134
 msgctxt "Data|"
 msgid ""
 "Can you help Alice share 10 pieces of candy equally among her friends: 1 "
@@ -23765,13 +23765,13 @@ msgstr ""
 "3 mutiko, berdin-berdin, banatzen? Neskatoak dagoeneko gozoki ale batzuk "
 "ditu."
 
-#: activities/share/resource/2/Data.qml:142
+#: activities/share/resource/2/Data.qml:144
 msgctxt "Data|"
 msgid "Alice wants to share 16 pieces of candy equally among her friends."
 msgstr ""
 "Alizek 16 gozoki ale banatu nahi ditu, berdin-berdin, bere adiskideen artean."
 
-#: activities/share/resource/2/Data.qml:152
+#: activities/share/resource/2/Data.qml:154
 msgctxt "Data|"
 msgid ""
 "Alice has 14 pieces of candy left. She wants to share them equally among her "
@@ -23782,7 +23782,7 @@ msgstr ""
 "nahi ditu. Mutikoek dagoeneko badituzte gozoki ale batzuk. Lagunduko diozu "
 "gozoki aleak berdin-berdin banatzen?"
 
-#: activities/share/resource/2/Data.qml:164
+#: activities/share/resource/2/Data.qml:166
 msgctxt "Data|"
 msgid ""
 "Help Jon share 11 pieces of candies equally between five girls. The rest "
@@ -23791,7 +23791,7 @@ msgstr ""
 "Lagundu Joni 11 gozoki ale bost neskatoren artean berdin-berdin banatzen. "
 "Gainerakoak Jonentzat izango dira."
 
-#: activities/share/resource/2/Data.qml:174
+#: activities/share/resource/2/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Jon wants to share the rest of his pieces of candies with his brothers and "
@@ -23802,7 +23802,7 @@ msgstr ""
 "Bana ditzakezu guztiek kopuru berdina jaso dezaten, anaiek dagoeneko 2na "
 "gozoki ale dituztela jakinda?"
 
-#: activities/share/resource/2/Data.qml:184
+#: activities/share/resource/2/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Help Tux split 19 pieces of candies between his friends: 4 boys and 1 girl."
@@ -23810,14 +23810,14 @@ msgstr ""
 "Lagundu Tux-i 19 gozoki ale bere lagunen artean banatzen, 4 mutiko eta "
 "neskato 1."
 
-#: activities/share/resource/2/Data.qml:194
+#: activities/share/resource/2/Data.qml:196
 msgctxt "Data|"
 msgid "Help Maria share 18 pieces of candy equally between 3 boys and 2 girls."
 msgstr ""
 "Lagundu Mariari 18 gozoki ale 3 mutiko eta 2 neskatoren artean berdin-berdin "
 "banatzen."
 
-#: activities/share/resource/2/Data.qml:206
+#: activities/share/resource/2/Data.qml:208
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally between 2 of his girl "
@@ -23826,7 +23826,7 @@ msgstr ""
 "Karlosek bere 6 gozoki aleak 2 adiskideren artean banatu nahi ditu. Bana al "
 "ditzake gozoki aleak berdin-berdin?"
 
-#: activities/share/resource/2/Data.qml:216
+#: activities/share/resource/2/Data.qml:218
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -23837,7 +23837,7 @@ msgstr ""
 "neskato eta mutiko 1, berdin-berdin banatzeko. Nola banatu beharko lituzke "
 "gozoki aleak adiskideen artean?"
 
-#: activities/share/resource/2/Data.qml:226
+#: activities/share/resource/2/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 17 pieces of candy to share equally between his "
@@ -23848,7 +23848,7 @@ msgstr ""
 "neskato, berdin-berdin banatzeko. Lagun iezaiozu gozoki aleak bere "
 "adiskideei ematen."
 
-#: activities/share/resource/2/Data.qml:236
+#: activities/share/resource/2/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy equally between 4 of his friends: 2 "
@@ -23859,7 +23859,7 @@ msgstr ""
 "artean, 2 neskato eta 2 mutiko. Bana al ditzake gozoki aleak, berdin-berdin, "
 "bere adiskideen artean?"
 
-#: activities/share/resource/2/Data.qml:246
+#: activities/share/resource/2/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 23 pieces of candy equally between 5 of her friends: 3 "
@@ -23870,12 +23870,12 @@ msgstr ""
 "artean, 3 neskato eta 2 mutiko. Bana al ditzake gozoki aleak bere adiskideen "
 "artean berdin-berdin?"
 
-#: activities/share/resource/3/Data.qml:13
+#: activities/share/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr "Gehienez 30 gozoki ale eta 6 haur, hondarra egon daiteke."
 
-#: activities/share/share.js:98
+#: activities/share/share.js:115
 #, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -23885,7 +23885,7 @@ msgid_plural "Place %n boy(s) "
 msgstr[0] "Jarri mutiko %n "
 msgstr[1] "Jarri %n mutiko "
 
-#: activities/share/share.js:102
+#: activities/share/share.js:119
 #, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -23895,7 +23895,7 @@ msgid_plural "and %n girl(s) in the center. "
 msgstr[0] "eta neskato %n erdian. "
 msgstr[1] "eta %n neskato erdian. "
 
-#: activities/share/share.js:106
+#: activities/share/share.js:123
 #, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -23905,7 +23905,7 @@ msgid_plural "Then split %n pieces of candy equally between them."
 msgstr[0] "Ondoren banatu %n gozoki aleak, berdin-berdin, haien artean."
 msgstr[1] "Ondoren banatu %n gozoki aleak, berdin-berdin, haien artean."
 
-#: activities/share/Share.qml:358
+#: activities/share/Share.qml:359
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
@@ -26734,7 +26734,7 @@ msgstr ""
 "eta ur-araztegia, ur-sistema osoa berraktibatzeko. Sistema berriz martxan "
 "dagoenean eta Tux dutxan dagoenean, sakatu dutxako botoia bere ordez."
 
-#: activities/watercycle/Watercycle.qml:114
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -26743,13 +26743,13 @@ msgstr ""
 "Eguzkia da uraren zikloaren osagai nagusia. Egin klik eguzkian uraren zikloa "
 "abiatzeko."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr ""
 "Eguzkia gora dioan heinean, itsasoko ura berotu eta lurruntzen hasten da."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -26758,7 +26758,7 @@ msgstr ""
 "Ur-lurruna kondentsatzean hodeiak sortzen ditu, eta hodeiak astun "
 "bihurtzean, euria egiten du. Egin klik hodeian."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:118
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -26769,7 +26769,7 @@ msgstr ""
 "garraiatzen zaigu ur-dorreetatik. Egin klik motoponpan biztanleei ura "
 "hornitzeko."
 
-#: activities/watercycle/Watercycle.qml:119
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -26777,18 +26777,18 @@ msgid ""
 msgstr ""
 "Ikusi dorrea urez betea. Aktibatu ur-araztegia bere gainean klik eginez."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Bikain! Egin klik dutxan, Tux etxera heltzean."
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:122
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "Oso ondo, uraren zikloa osatu duzu. Jolasten jarrai dezakezu."
 
-#: activities/watercycle/Watercycle.qml:139
+#: activities/watercycle/Watercycle.qml:140
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26799,7 +26799,7 @@ msgstr ""
 "eta atzera egiten duen bidaia da. Eguzkiaren beroak ozeanoak eta beste ur-"
 "multzoetako ura lurruntzeko energia ematen du."
 
-#: activities/watercycle/Watercycle.qml:142
+#: activities/watercycle/Watercycle.qml:143
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26811,7 +26811,7 @@ msgstr ""
 "freskoa topatzen dutenean, prezipitazioa eragin eta lurrera erotzen da euri "
 "gisa."
 
-#: activities/watercycle/Watercycle.qml:145
+#: activities/watercycle/Watercycle.qml:146
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26822,7 +26822,7 @@ msgstr ""
 "deiturikoa. Baino ur gehiena isurketa gisa jariatzen da, ibaietatik "
 "itsasoetara itzuliz."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:148
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "

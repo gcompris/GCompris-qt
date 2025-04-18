@@ -22358,7 +22358,7 @@ msgstr ""
 "rendszer visszakapcsol, és Tux hazaért kapcsold fel a lámpát neki. Ha nyerni "
 "akarsz minden elektromos eszközt be kell kapcsolnod."
 
-#: activities/renewable_energy/RenewableEnergy.qml:302
+#: activities/renewable_energy/RenewableEnergy.qml:303
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22367,7 +22367,7 @@ msgstr ""
 "Tux visszatért a horgászatból. Állítsd vissza az elektromos rendszert, hogy "
 "lássa merre kell hazamennie!"
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:305
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22376,7 +22376,7 @@ msgstr ""
 "Kattints a különféle aktív elemekre pl: nap, felhő, gát, napelem, "
 "szélturbina,transzformátor, hogy bekapcsolhasd az elektromos rendszert!"
 
-#: activities/renewable_energy/RenewableEnergy.qml:306
+#: activities/renewable_energy/RenewableEnergy.qml:307
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22386,12 +22386,12 @@ msgstr ""
 "Ha a rendszer visszakapcsol, és Tux hazaért kapcsold fel a lámpát neki! Ha "
 "nyerni akarsz minden elektromos eszközt be kell kapcsolnod!"
 
-#: activities/renewable_energy/RenewableEnergy.qml:308
+#: activities/renewable_energy/RenewableEnergy.qml:309
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "Tanuljunk játékosan a megújuló enegriaforrásokról. "
 
-#: activities/renewable_energy/RenewableEnergy.qml:333
+#: activities/renewable_energy/RenewableEnergy.qml:334
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -23242,13 +23242,13 @@ msgctxt "ActivityInfo|"
 msgid "If there is a rest, it needs to be placed inside the candy jar."
 msgstr "Ha maradék van, azt a tartóba kell tenni!"
 
-#: activities/share/resource/1/Data.qml:13
+#: activities/share/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, no rest."
 msgstr "Maximum 25 cukor 5 gyerek között, maradék nélkül."
 
-#: activities/share/resource/1/Data.qml:18
-#: activities/share/resource/2/Data.qml:18
+#: activities/share/resource/1/Data.qml:20
+#: activities/share/resource/2/Data.qml:20
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 2 pieces of candy equally between 2 of his girl friends. "
@@ -23259,12 +23259,12 @@ msgstr ""
 "neki segíteni? Előbb helyezd a gyerekelkeket középre, majd húzd a cukrokat "
 "hozzájuk!"
 
-#: activities/share/resource/1/Data.qml:28
+#: activities/share/resource/1/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 4 pieces of candy equally among his friends."
 msgstr "Most 4 darabot szeretne szétosztani a barátai közt."
 
-#: activities/share/resource/1/Data.qml:38
+#: activities/share/resource/1/Data.qml:40
 msgctxt "Data|"
 msgid ""
 "Can you now share 6 of Paul's pieces of candy equally among his friends?"
@@ -23272,7 +23272,7 @@ msgstr ""
 "Tudsz-e Pál barátai között 6 cukorkát szétosztani úgy, hogy mindenki "
 "ugyanannyi cukorkát kapjon?"
 
-#: activities/share/resource/1/Data.qml:48
+#: activities/share/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid ""
 "Some of his friends already have pieces of candy. He wants to give them 7 "
@@ -23281,7 +23281,7 @@ msgstr ""
 "Néhány barátjánál már van cukor. Még hét darabot szeretne szétosztani úgy, "
 "hogy mindenkinek ugyanannyi jusson!"
 
-#: activities/share/resource/1/Data.qml:58
+#: activities/share/resource/1/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 12 pieces of candy left. He eats 2 pieces of candy and he "
@@ -23291,7 +23291,7 @@ msgstr ""
 "Pálnak 12 cukorkája maradt. Megevett kettőt, és a többit elosztja a barátai "
 "között. Segítenél neki egyenlően a 10szemet szétosztani?"
 
-#: activities/share/resource/1/Data.qml:70
+#: activities/share/resource/1/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "George wants to share 3 pieces of candy equally between 3 of his girl "
@@ -23300,7 +23300,7 @@ msgstr ""
 "Karcsi szeretné elosztani a cukorkáját a három lány barátja között. Tudsz "
 "benne segíteni?"
 
-#: activities/share/resource/1/Data.qml:80
+#: activities/share/resource/1/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 6 pieces of candy equally between 3 of her friends: 1 "
@@ -23309,7 +23309,7 @@ msgstr ""
 "Karcsi szeretné elosztani 6 cukorkáját a 3 barátja között (1 lány és két "
 "fiú). Tudsz benne segíteni?"
 
-#: activities/share/resource/1/Data.qml:90
+#: activities/share/resource/1/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "John wants to share 8 pieces of candy equally between 3 of his friends: 1 "
@@ -23320,7 +23320,7 @@ msgstr ""
 "között egyenlően. Lehetséges ez? Az egyik fiúnak már adott. Biztos lehet "
 "benne, hogy mindenk9i ugyanyannyit fog kapni?"
 
-#: activities/share/resource/1/Data.qml:100
+#: activities/share/resource/1/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 12 pieces of candy equally between 3 of his friends: 2 "
@@ -23329,7 +23329,7 @@ msgstr ""
 "Karcsi szeretné egyenlően elosztani 12 cukorkáját a 3 barátja között (két "
 "fiú és egy lány). Tudsz benne segíteni?"
 
-#: activities/share/resource/1/Data.qml:110
+#: activities/share/resource/1/Data.qml:112
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 11 pieces of candy between 3 of her friends: 1 boy and "
@@ -23340,20 +23340,20 @@ msgstr ""
 "fiú) között egyenlően. Lehetséges ez? A lányok már kaptak valamennyit. "
 "Sétosztható úgy, hogy mindenki egyformán kapjon?"
 
-#: activities/share/resource/1/Data.qml:122
-#: activities/share/resource/2/Data.qml:112
+#: activities/share/resource/1/Data.qml:124
+#: activities/share/resource/2/Data.qml:114
 msgctxt "Data|"
 msgid ""
 "Alice wants to share 4 pieces of candy equally between 4 of her girl "
 "friends. Can you help her?"
 msgstr "Alíz 4 cukrot szeretne elosztani 4 barátja között. Segítesz neki?"
 
-#: activities/share/resource/1/Data.qml:132
+#: activities/share/resource/1/Data.qml:134
 msgctxt "Data|"
 msgid "Now, Alice wants to give 8 pieces of candy to her friends."
 msgstr "Most Alíz 8 cukorkát adna a barátainak"
 
-#: activities/share/resource/1/Data.qml:142
+#: activities/share/resource/1/Data.qml:144
 msgctxt "Data|"
 msgid ""
 "Alice wants to give 10 pieces of candy to her friends, 1 girl and 3 boys, so "
@@ -23363,12 +23363,12 @@ msgstr ""
 "Alíz most 10 curot osztana szét a barátai között. ( 1 lány és 3 fiú) úgy, "
 "hogy mindenki egyenlően kapjon. A lányok már kaptak is néhány szemet!"
 
-#: activities/share/resource/1/Data.qml:152
+#: activities/share/resource/1/Data.qml:154
 msgctxt "Data|"
 msgid "Alice wants to give 16 pieces of candy to her friends."
 msgstr "Alíz 16  szelet csokit adna a barátainak"
 
-#: activities/share/resource/1/Data.qml:162
+#: activities/share/resource/1/Data.qml:164
 msgctxt "Data|"
 msgid ""
 "Alice wants to give pieces of candy to 4 friends. Some of them already have "
@@ -23378,7 +23378,7 @@ msgstr ""
 "Alíz szeretne elosztani 4 cukorkát barátai között.  Néhányan már kaptak is "
 "belőle. El tudsz osztani 14 szemet, úgy, hogy mindenki egyenlően kapjon?"
 
-#: activities/share/resource/1/Data.qml:174
+#: activities/share/resource/1/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Michael wants to share 5 pieces of candy equally between 5 of his girl "
@@ -23386,7 +23386,7 @@ msgid ""
 msgstr ""
 "Miki szeretné elosztani 5 cukorkát az 5 lány között Tudsz benne segíteni?"
 
-#: activities/share/resource/1/Data.qml:184
+#: activities/share/resource/1/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Helen has 5 friends: 2 boys and 3 girls. She wants to give them 10 pieces of "
@@ -23395,7 +23395,7 @@ msgstr ""
 "Helénának 5 barátja van: két fiú és három lány. Tíz cukorkát szeretne "
 "elosztani köztük. Segíts neki az igazságos elosztásban!"
 
-#: activities/share/resource/1/Data.qml:194
+#: activities/share/resource/1/Data.qml:196
 msgctxt "Data|"
 msgid ""
 "Michelle wants to share 12 pieces of candy equally between her 4 brothers "
@@ -23405,7 +23405,7 @@ msgstr ""
 "Mónikának 12 cukorkája van és öt testvére (4 fiú és 1 lány). Segtís neki "
 "szétosztani őket!"
 
-#: activities/share/resource/1/Data.qml:204
+#: activities/share/resource/1/Data.qml:206
 msgctxt "Data|"
 msgid ""
 "Thomas wants to share his 20 pieces of candy with his friends: 1 boy and 4 "
@@ -23414,7 +23414,7 @@ msgstr ""
 "Tamás szeretné elosztani 20 cukorkát a barátai között (egy fiú és három "
 "lány). Tudsz benne segíteni?"
 
-#: activities/share/resource/1/Data.qml:214
+#: activities/share/resource/1/Data.qml:216
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 20 pieces of candy equally between 5 of his friends. "
@@ -23423,7 +23423,7 @@ msgstr ""
 "Pali szeretné elosztani 20 cukorkáját 5 barátja között. Tudsz benne "
 "segíteni? Egyet már mindenkinek adott."
 
-#: activities/share/resource/1/Data.qml:226
+#: activities/share/resource/1/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally with 2 of his girl "
@@ -23432,7 +23432,7 @@ msgstr ""
 "Karcsi szeretné elosztani 6 cukorkáját a barátai között (két lány). Tudsz "
 "benne segíteni?"
 
-#: activities/share/resource/1/Data.qml:236
+#: activities/share/resource/1/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -23442,7 +23442,7 @@ msgstr ""
 "Liza 8 cukorkát kapott a szülinapjára. Szeretné elosztani 3 barátja közt "
 "(két fiú és két lány). A lányok már kaptak is belőle. Tudsz benne segíteni?"
 
-#: activities/share/resource/1/Data.qml:246
+#: activities/share/resource/1/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 16 pieces of candy to share equally with his "
@@ -23452,7 +23452,7 @@ msgstr ""
 "Jóska 16 cukorkát kapott az apukájától, hogy ossza el a barátai közt "
 "igazságosan. (Két fiú és két lány) Segíts az elosztásban!"
 
-#: activities/share/resource/1/Data.qml:256
+#: activities/share/resource/1/Data.qml:258
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy between 4 of his friends: 2 girls "
@@ -23462,7 +23462,7 @@ msgstr ""
 "Józsi 14 cukorkát szeretne elosztani négy barátja (két lány és egy fiú) "
 "között egyenlően. Lehetséges ez? A fiúk már kaptak a cukorból."
 
-#: activities/share/resource/1/Data.qml:266
+#: activities/share/resource/1/Data.qml:268
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 25 pieces of candy equally between 5 of her friends: 3 "
@@ -23471,29 +23471,29 @@ msgstr ""
 "Karcsi szeretné elosztani 25 szem cukorkáját a barátai között (két fiú és "
 "három lány). Tudsz benne segíteni?"
 
-#: activities/share/resource/2/Data.qml:13
+#: activities/share/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, possible rest."
 msgstr "Maximum 25 cukor és 5 gyerek, valószínű maradékkal."
 
-#: activities/share/resource/2/Data.qml:28
+#: activities/share/resource/2/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 5 pieces of candy among his friends."
 msgstr "Most5 szemet szeretne elosztani a barátai között."
 
-#: activities/share/resource/2/Data.qml:38
+#: activities/share/resource/2/Data.qml:40
 msgctxt "Data|"
 msgid "Can you now share 7 of Paul's pieces of candy among his friends?"
 msgstr ""
 "Tudsz-e Pál minden barátjának  adni a 7 cukorkából úgy, hogy elformán "
 "kapjanak?"
 
-#: activities/share/resource/2/Data.qml:48
+#: activities/share/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Can you now share 8 of Paul's pieces of candy among his friends?"
 msgstr "Tudsz-e Pál minden barátjának egyenlőean adni a 8  szem cukorkából?"
 
-#: activities/share/resource/2/Data.qml:58
+#: activities/share/resource/2/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 11 pieces of candy left. He eats 2 pieces of candy and he "
@@ -23503,7 +23503,7 @@ msgstr ""
 "Pálnak 11 cukorkája maradt. Megevett kettőt, és a többit elosztja a barátai "
 "között. Segítenél neki egyenlően elosztani a maradék 9db-ot?"
 
-#: activities/share/resource/2/Data.qml:70
+#: activities/share/resource/2/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "Bob wants to share 3 pieces of candy equally between 3 of his girl friends. "
@@ -23512,7 +23512,7 @@ msgstr ""
 "Karcsi szeretné elosztani 3 cukorkáját a barátai között (három lány). Tudsz "
 "benne segíteni?"
 
-#: activities/share/resource/2/Data.qml:80
+#: activities/share/resource/2/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 8 pieces of candy between 3 of his friends: 1 boy and 2 "
@@ -23522,7 +23522,7 @@ msgstr ""
 "Henrik egyenlően szeretne elosztani 8 cukorkát a barátai közt (egy fiú és "
 "két lány). A fiúk már kaptak a cukorból. El tudja osztani köztük egyenlően?"
 
-#: activities/share/resource/2/Data.qml:90
+#: activities/share/resource/2/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 8 pieces of candy between 3 of her friends: 1 boy and 2 "
@@ -23532,7 +23532,7 @@ msgstr ""
 "Józsi 8 cukorkát szeretne elosztani három barátja (két lány és egy fiú) "
 "között egyenlően. Lehetséges ez? Kaphat mindenki egyenlően?"
 
-#: activities/share/resource/2/Data.qml:100
+#: activities/share/resource/2/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 12 pieces of candy between 3 of his friends: 1 boy and "
@@ -23543,12 +23543,12 @@ msgstr ""
 "két lány). A fiúk már kaptak a cukorból.. Elosztanád úgy, hogy mindenkinek "
 "ugyanannyi legyen?"
 
-#: activities/share/resource/2/Data.qml:122
+#: activities/share/resource/2/Data.qml:124
 msgctxt "Data|"
 msgid "Now, Alice wants to share 8 pieces of candy equally among her friends."
 msgstr "Alíz most 8 cukorkát osztana szét a barátai közt."
 
-#: activities/share/resource/2/Data.qml:132
+#: activities/share/resource/2/Data.qml:134
 msgctxt "Data|"
 msgid ""
 "Can you help Alice share 10 pieces of candy equally among her friends: 1 "
@@ -23557,12 +23557,12 @@ msgstr ""
 "Vajon tud-e osztani Alíz 10 cukrot a barátainak egyenlően (1 lány, 3 fiú)? A "
 "lány már kapott. Segíts neki az elosztásban."
 
-#: activities/share/resource/2/Data.qml:142
+#: activities/share/resource/2/Data.qml:144
 msgctxt "Data|"
 msgid "Alice wants to share 16 pieces of candy equally among her friends."
 msgstr "Alíz összesen 16 cukrot adna a barátainak. Mindenkinek egyformán."
 
-#: activities/share/resource/2/Data.qml:152
+#: activities/share/resource/2/Data.qml:154
 msgctxt "Data|"
 msgid ""
 "Alice has 14 pieces of candy left. She wants to share them equally among her "
@@ -23572,7 +23572,7 @@ msgstr ""
 "Alíznak 14 cukorkája maradt. Mindet szét szeretné osztani. A fiúk már "
 "kaptzak néhányat. Segíts neki! Lehetséges ez? "
 
-#: activities/share/resource/2/Data.qml:164
+#: activities/share/resource/2/Data.qml:166
 msgctxt "Data|"
 msgid ""
 "Help Jon share 11 pieces of candies equally between five girls. The rest "
@@ -23581,7 +23581,7 @@ msgstr ""
 "Segíts Jancsinak elosztani 11 szelet csokit öt lány közt! A maradék Jancsié "
 "legyen."
 
-#: activities/share/resource/2/Data.qml:174
+#: activities/share/resource/2/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Jon wants to share the rest of his pieces of candies with his brothers and "
@@ -23591,7 +23591,7 @@ msgstr ""
 "Jancsi most az ő részét osztaná el a bátyja és a huga közt. Meg lehet-e ezt "
 "tenni ha egyenlően, ha már a bátyjai kaptak két szeletet?"
 
-#: activities/share/resource/2/Data.qml:184
+#: activities/share/resource/2/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Help Tux split 19 pieces of candies between his friends: 4 boys and 1 girl."
@@ -23599,12 +23599,12 @@ msgstr ""
 "Segíts Tuxnak cukorkát osztani a barátai közt. 19 cukorkája van, négy fiú és "
 "egy lány barátja."
 
-#: activities/share/resource/2/Data.qml:194
+#: activities/share/resource/2/Data.qml:196
 msgctxt "Data|"
 msgid "Help Maria share 18 pieces of candy equally between 3 boys and 2 girls."
 msgstr "Segíts Marinak elosztani 18 szelet cokit három fiú és két lány közt!"
 
-#: activities/share/resource/2/Data.qml:206
+#: activities/share/resource/2/Data.qml:208
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally between 2 of his girl "
@@ -23613,7 +23613,7 @@ msgstr ""
 "Karcsi szeretné elosztani 6 cukorkáját a barátai között (két lány). Tudsz "
 "benne segíteni?"
 
-#: activities/share/resource/2/Data.qml:216
+#: activities/share/resource/2/Data.qml:218
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -23623,7 +23623,7 @@ msgstr ""
 "Liza 8 cukorkát kapott a szülinapjára. Szeretné elosztani 3 barátja közt "
 "(két fiú és két lány). Tudsz benne segíteni?"
 
-#: activities/share/resource/2/Data.qml:226
+#: activities/share/resource/2/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 17 pieces of candy to share equally between his "
@@ -23633,7 +23633,7 @@ msgstr ""
 "Jóska 17 cukorkát kapott az apukájától, hogy ossza el a barátai közt "
 "igazságosan? (Két fiú és két lány) Segíts az elosztásban!"
 
-#: activities/share/resource/2/Data.qml:236
+#: activities/share/resource/2/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy equally between 4 of his friends: 2 "
@@ -23643,7 +23643,7 @@ msgstr ""
 "Józsi 14 cukorkát szeretne elosztani négy barátja (két lány és egy fiú) "
 "között egyenlően. Lehetséges ez? "
 
-#: activities/share/resource/2/Data.qml:246
+#: activities/share/resource/2/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 23 pieces of candy equally between 5 of her friends: 3 "
@@ -23653,12 +23653,12 @@ msgstr ""
 "Margit 25 cukorkát szeretne egyenlően elosztani öt barátja (három lány és "
 "két fiú. Lehetséges ez? "
 
-#: activities/share/resource/3/Data.qml:13
+#: activities/share/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr "Maximum 30 cukor és 6 gyerek, valószínű maradék."
 
-#: activities/share/share.js:98
+#: activities/share/share.js:115
 #, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -23668,7 +23668,7 @@ msgid_plural "Place %n boy(s) "
 msgstr[0] "Adj %t a fiúnak "
 msgstr[1] "Adj %t a fiúknak "
 
-#: activities/share/share.js:102
+#: activities/share/share.js:119
 #, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -23678,7 +23678,7 @@ msgid_plural "and %n girl(s) in the center. "
 msgstr[0] "és %db-ot a középső lánynak. "
 msgstr[1] "és %db-ot a középső lányoknak. "
 
-#: activities/share/share.js:106
+#: activities/share/share.js:123
 #, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -23688,7 +23688,7 @@ msgid_plural "Then split %n pieces of candy equally between them."
 msgstr[0] "Aztán egyenlően oszd el a % darab cukorkát közte."
 msgstr[1] "Aztán egyenlően oszd el a % db cukorkát köztük."
 
-#: activities/share/Share.qml:358
+#: activities/share/Share.qml:359
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
@@ -26473,7 +26473,7 @@ msgstr ""
 "rendszert. Ha bekapcsoltad Tux a zuhanyzóban van, nyomd meg a gombot , hogy "
 "fürödhessen."
 
-#: activities/watercycle/Watercycle.qml:114
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -26482,12 +26482,12 @@ msgstr ""
 "A víz körforgásának legfontosabb eleme a nap, Kattints a napra, hogy "
 "elindítsd a körforgást."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Ahogy a nap felkel, a tenger vize elkezd melegedni majd párologni."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -26496,7 +26496,7 @@ msgstr ""
 "A vízpára felszáll és felhő képződik belőle. Mikor a felhők túl nehezek "
 "lesznek, esni kezd. Kattints a felhőre!"
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:118
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -26507,7 +26507,7 @@ msgstr ""
 "hozzánk egy víztoronyból. Kattints a szivattyúra, hogy ellásd a lakosokat "
 "vízzel."
 
-#: activities/watercycle/Watercycle.qml:119
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -26516,12 +26516,12 @@ msgstr ""
 "Látod, a torony feltöltődött vízzel. Kattintással aktiváld a víztisztító "
 "állomást."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Remek, kattints a zuhanyra, mikor Tux hazaérkezik."
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:122
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
@@ -26529,7 +26529,7 @@ msgstr ""
 "Fantasztikus! Sikerült a víz körfogást megcsinálnod. Most folytathatod a "
 "játékot."
 
-#: activities/watercycle/Watercycle.qml:139
+#: activities/watercycle/Watercycle.qml:140
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26540,7 +26540,7 @@ msgstr ""
 "földből az ég felé és vissza. A nap melege energiát biztosít ahhoz, hogy "
 "elpárologhasson a víz olyan helyekről mint az óceán."
 
-#: activities/watercycle/Watercycle.qml:142
+#: activities/watercycle/Watercycle.qml:143
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26551,7 +26551,7 @@ msgstr ""
 "cseppeket formáz felhők képében. Mikor a felhők találkoznak a hideg "
 "levegővel a felszínen, beindul a lecsapódás és a víz esőként esik a földre."
 
-#: activities/watercycle/Watercycle.qml:145
+#: activities/watercycle/Watercycle.qml:146
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26562,7 +26562,7 @@ msgstr ""
 "víz többsége túlfolyik, és később patakokon át a tavakba vagy a tengerbe "
 "folyik."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:148
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
