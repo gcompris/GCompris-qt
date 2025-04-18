@@ -2764,7 +2764,7 @@ msgstr ""
 "κινηθεί σε ευθεία γραμμή. Σε οθόνη αφής, θα πρέπει να χτυπήσεις ελαφρά τα "
 "δύο χέρια ταυτόχρονα."
 
-#: activities/ballcatch/Ballcatch.qml:228
+#: activities/ballcatch/Ballcatch.qml:227
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
@@ -2772,7 +2772,7 @@ msgstr ""
 "Πάτα στα δύο χέρια την ίδια στιγμή, για να κάνεις τη μπάλα να κινηθεί σε "
 "ευθεία γραμμή."
 
-#: activities/ballcatch/Ballcatch.qml:230
+#: activities/ballcatch/Ballcatch.qml:233
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2904,15 +2904,25 @@ msgstr ""
 "που αντιστοιχούν στον αριθμό του δεκαδικού συστήματος. Μετά από κάθε "
 "προσπάθεια πάτησε το OK."
 
-#: activities/binary_bulb/binary_bulb.js:20
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:84
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "This activity teaches how to convert decimal numbers to binary numbers."
+msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr ""
 "Με αυτή τη δραστηριότητα μαθαίνεις να μετατρέπεις αριθμούς από το δεκαδικό "
 "στο δυαδικό σύστημα αρίθμησης."
 
-#: activities/binary_bulb/binary_bulb.js:24
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:88
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Computers use transistors to count and transistors have only two states, "
+#| "0 and 1. Mathematically, these states are represented by 0 and 1, which "
+#| "makes up the binary system of numeration."
+msgctxt "BinaryBulb|"
 msgid ""
 "Computers use transistors to count and transistors have only two states, 0 "
 "and 1. Mathematically, these states are represented by 0 and 1, which makes "
@@ -2922,15 +2932,23 @@ msgstr ""
 "δύο καταστάσεις, οι οποίες αντιπροσωπεύονται από τα ψηφία 0 και 1, τα οποία "
 "συνθέτουν το δυαδικό σύστημα αρίθμησης."
 
-#: activities/binary_bulb/binary_bulb.js:28
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:92
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
+msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr ""
 "Στη δραστηριότητα το 0 και το 1 προσομοιώνονται από λάμπες που μπορείς να "
 "ενεργοποιήσεις ή να απενεργοποιήσεις."
 
-#: activities/binary_bulb/binary_bulb.js:32
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:96
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Binary system uses these numbers very efficiently, allowing to count from "
+#| "0 to 255 with 8 bits only."
+msgctxt "BinaryBulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
 "to 255 with 8 bits only."
@@ -2939,8 +2957,15 @@ msgstr ""
 "αποτελεσματικό τρόπο, επιτρέποντας τη μέτρηση από το 0 μέχρι το 255 μόνο με "
 "8 δυαδικά ψηφία."
 
-#: activities/binary_bulb/binary_bulb.js:36
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:100
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Each bit adds a progressive value, corresponding to the powers of 2, "
+#| "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → "
+#| "2²=4 , bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit "
+#| "8 → 2⁷=128."
+msgctxt "BinaryBulb|"
 msgid ""
 "Each bit adds a progressive value, corresponding to the powers of 2, "
 "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → 2²=4 , "
@@ -2952,15 +2977,23 @@ msgstr ""
 "ψηφίο 3 → 2²=4 , ψηφίο 4 → 2³=8 , ψηφίο 5 → 2⁴=16 , ψηφίο 6 → 2⁵=32 , ψηφίο "
 "7 → 2⁶=64 , ψηφίο 8 → 2⁷=128."
 
-#: activities/binary_bulb/binary_bulb.js:40
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:104
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
+msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr ""
 "Για να μετατρέψεις τον αριθμό 6 του δεκαδικού συστήματος σε αντίστοιχο του "
 "δυαδικού, πρόσθεσε 4 και 1."
 
-#: activities/binary_bulb/binary_bulb.js:44
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:108
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 "
+#| "is equal to binary 101."
+msgctxt "BinaryBulb|"
 msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
 "equal to binary 101."
@@ -2968,12 +3001,15 @@ msgstr ""
 "Τα αντίστοιχα ψηφία ορίστηκαν στο 1, τα υπόλοιπα στο 0. Ο αριθμός 5 του "
 "δεκαδικού συστήματος είναι ίσος με τον αριθμό 101 του δυαδικού."
 
-#: activities/binary_bulb/binary_bulb.js:48
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:112
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid "This image will help you to compute bits' value."
+msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Αυτή η εικόνα θα σε βοηθήσει να υπολογίσεις την αξία των bits."
 
-#: activities/binary_bulb/BinaryBulb.qml:126
+#: activities/binary_bulb/BinaryBulb.qml:160
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3652,7 +3688,7 @@ msgstr ""
 "υδατοφράχτες στη σωστή σειρά, έτσι ώστε ο Tux να μπορεί να περνά με τη βάρκα "
 "του και προς τις δύο κατευθύνσεις."
 
-#: activities/canal_lock/CanalLock.qml:73
+#: activities/canal_lock/CanalLock.qml:74
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3662,7 +3698,7 @@ msgstr ""
 "κορμούς των δέντρων που βρίσκονται στα δεξιά. Για να το πετύχεις θα πρέπει "
 "να χρησιμοποιήσεις τους διαφορετικούς υδροφράκτες κάνοντας κλικ επάνω τους."
 
-#: activities/canal_lock/CanalLock.qml:75
+#: activities/canal_lock/CanalLock.qml:77
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3672,7 +3708,7 @@ msgstr ""
 "Οι κάθετες χρωματισμένες μπάρες αναπαριστούν υδροφράκτες και λειτουργούν αν "
 "κάνεις κλικ επάνω τους. Δύο ίδιοι υδατοφράχτες δεν λειτουργούν ταυτόχρονα."
 
-#: activities/canal_lock/CanalLock.qml:77
+#: activities/canal_lock/CanalLock.qml:80
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -15218,24 +15254,43 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
 msgstr "Backspace: Επιλογή της προηγούμενης λέξης."
 
-#: activities/grammar_analysis/grammar_analysis.js:37
+#: activities/grammar_analysis/grammar_analysis.js:398
 msgctxt "grammar_analysis|"
+msgid "Empty"
+msgstr "Kενό"
+
+#: activities/grammar_analysis/GrammarAnalysis.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Grammatical analysis"
+msgctxt "GrammarAnalysis|"
 msgid "Grammatical analysis"
 msgstr "Μέρη του λόγου 2"
 
-#: activities/grammar_analysis/grammar_analysis.js:38
-#: activities/grammar_analysis/grammar_analysis.js:48
-msgctxt "grammar_analysis|"
+#: activities/grammar_analysis/GrammarAnalysis.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn to identify grammatical classes."
+msgctxt "GrammarAnalysis|"
 msgid "Learn to identify grammatical classes."
 msgstr "Μάθε να αναγνωρίζεις τα μέρη του λόγου."
 
-#: activities/grammar_analysis/grammar_analysis.js:39
-msgctxt "grammar_analysis|"
+#: activities/grammar_analysis/GrammarAnalysis.qml:28
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid ""
+#| "Find all the words corresponding to the requested grammatical classes."
+msgctxt "GrammarAnalysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr "Βρες όλες τις λέξεις που αντιστοιχούν στα ζητούμενα μέρη του λόγου."
 
-#: activities/grammar_analysis/grammar_analysis.js:40
-msgctxt "grammar_analysis|"
+#: activities/grammar_analysis/GrammarAnalysis.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select a grammatical class from the list, then select the box under a "
+#| "word and assign it the class."
+msgctxt "GrammarAnalysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
@@ -15243,39 +15298,13 @@ msgstr ""
 "Επίλεξε ένα μέρος του λόγου από τη λίστα και κατόπιν επίλεξε ένα κενό κουτί "
 "κάτω από μια λέξη για να κάνεις την αντιστοίχιση."
 
-#: activities/grammar_analysis/grammar_analysis.js:41
-msgctxt "grammar_analysis|"
+#: activities/grammar_analysis/GrammarAnalysis.qml:30
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Leave the box blank if no class matches."
+msgctxt "GrammarAnalysis|"
 msgid "Leave the box blank if no class matches."
 msgstr "Άφησε το πεδίο κενό εάν δεν ταιριάζει κανένα μέρος του λόγου."
-
-#: activities/grammar_analysis/grammar_analysis.js:47
-msgctxt "grammar_analysis|"
-msgid "Grammatical classes"
-msgstr "Μέρη του λόγου 1"
-
-#: activities/grammar_analysis/grammar_analysis.js:49
-msgctxt "grammar_analysis|"
-msgid "Find all the words corresponding to the requested grammatical class."
-msgstr "Βρες όλες τις λέξεις που αντιστοιχούν στο ζητούμενο μέρος του λόγου."
-
-#: activities/grammar_analysis/grammar_analysis.js:50
-msgctxt "grammar_analysis|"
-msgid ""
-"Select the grammatical class from the list, then select the box under a word "
-"and assign it the class."
-msgstr ""
-"Επίλεξε ένα μέρος του λόγου από τη λίστα και κατόπιν επίλεξε ένα κενό κουτί "
-"κάτω από μια λέξη για να κάνεις την αντιστοίχιση."
-
-#: activities/grammar_analysis/grammar_analysis.js:51
-msgctxt "grammar_analysis|"
-msgid "Leave the box blank if the class doesn't match."
-msgstr "Άφησε το πεδίο κενό εάν το μέρος του λόγου δεν ταιριάζει."
-
-#: activities/grammar_analysis/grammar_analysis.js:421
-msgctxt "grammar_analysis|"
-msgid "Empty"
-msgstr "Kενό"
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
@@ -15301,6 +15330,52 @@ msgstr ""
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
+msgid "Leave the box blank if the class doesn't match."
+msgstr "Άφησε το πεδίο κενό εάν το μέρος του λόγου δεν ταιριάζει."
+
+#: activities/grammar_classes/GrammarClasses.qml:15
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Grammatical classes"
+msgctxt "GrammarClasses|"
+msgid "Grammatical classes"
+msgstr "Μέρη του λόγου 1"
+
+#: activities/grammar_classes/GrammarClasses.qml:16
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn to identify grammatical classes."
+msgctxt "GrammarClasses|"
+msgid "Learn to identify grammatical classes."
+msgstr "Μάθε να αναγνωρίζεις τα μέρη του λόγου."
+
+#: activities/grammar_classes/GrammarClasses.qml:17
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Find all the words corresponding to the requested grammatical class."
+msgctxt "GrammarClasses|"
+msgid "Find all the words corresponding to the requested grammatical class."
+msgstr "Βρες όλες τις λέξεις που αντιστοιχούν στο ζητούμενο μέρος του λόγου."
+
+#: activities/grammar_classes/GrammarClasses.qml:18
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid ""
+#| "Select the grammatical class from the list, then select the box under a "
+#| "word and assign it the class."
+msgctxt "GrammarClasses|"
+msgid ""
+"Select the grammatical class from the list, then select the box under a word "
+"and assign it the class."
+msgstr ""
+"Επίλεξε ένα μέρος του λόγου από τη λίστα και κατόπιν επίλεξε ένα κενό κουτί "
+"κάτω από μια λέξη για να κάνεις την αντιστοίχιση."
+
+#: activities/grammar_classes/GrammarClasses.qml:19
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Leave the box blank if the class doesn't match."
+msgctxt "GrammarClasses|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr "Άφησε το πεδίο κενό εάν το μέρος του λόγου δεν ταιριάζει."
 
@@ -15407,7 +15482,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Αριστερό και Δεξί βελάκι: Μετακίνηση του διαστημόπλοιου."
 
-#: activities/gravity/Gravity.qml:219
+#: activities/gravity/Gravity.qml:220
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -16899,8 +16974,13 @@ msgstr ""
 "αντιστοιχεί στον δεκαδικό αριθμό. Τότε κάνε κλικ στο πλήκτρο OK για να "
 "ελέγξεις την απάντησή σου."
 
-#: activities/learn_decimals/learn_decimals.js:33
-msgctxt "learn_decimals|"
+#: activities/learn_decimals/Learn_decimals.qml:30
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "A decimal number is displayed. The bar with the arrow represents a full "
+#| "unit, and each square in it represents one tenth of this unit."
+msgctxt "Learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
 "unit, and each square in it represents one tenth of this unit."
@@ -16909,8 +16989,15 @@ msgstr ""
 "μία πλήρη μονάδα και κάθε τετράγωνο στη μπάρα αναπαριστά ένα δέκατο της "
 "μονάδας."
 
-#: activities/learn_decimals/learn_decimals.js:37
-msgctxt "learn_decimals|"
+#: activities/learn_decimals/Learn_decimals.qml:34
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Drag the arrow to select a part of the bar, and drag the selected part of "
+#| "the bar to the empty area. Repeat these steps until the number of dropped "
+#| "bars corresponds to the displayed decimal number. Then click on the OK "
+#| "button to validate your answer."
+msgctxt "Learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
 "the bar to the empty area. Repeat these steps until the number of dropped "
@@ -16922,105 +17009,31 @@ msgstr ""
 "μεταφέρθηκαν να αντιστοιχεί στον δεκαδικό αριθμό. Τότε κάνε κλικ στο πλήκτρο "
 "OK για να ελέγξεις την απάντησή σου."
 
-#: activities/learn_decimals/learn_decimals.js:44
-msgctxt "learn_decimals|"
-msgid ""
-"A subtraction with two decimal numbers is displayed. Below it, the first "
-"number from the subtraction is represented with bars. One bar represents a "
-"full unit, and each square in it represents one tenth of this unit."
-msgstr ""
-"Στην οθόνη εμφανίζεται η αφαίρεση δύο δεκαδικών αριθμών. Ο πρώτος αριθμός, ο "
-"μειωτέος, αναπαριστάται με μπάρες. Μια ολόκληρη μπάρα αναπαριστά μία πλήρη "
-"μονάδα και κάθε τετράγωνο στη μπάρα αναπαριστά ένα δέκατο της μονάδας."
-
-#: activities/learn_decimals/learn_decimals.js:48
-msgctxt "learn_decimals|"
-msgid ""
-"Click on the squares to subtract them and display the result of the "
-"operation, and click on the OK button to validate your answer."
-msgstr ""
-"Ο δεύτερος αριθμός, ο αφαιρετέος, δηλώνει το ποσό που πρέπει να αφαιρεθεί. "
-"Ξεκινώντας από το τέλος και με τη σειρά, κάνε κλικ σε όσα τετράγωνα δηλώνει "
-"ο αφαιρετέος για να τα αφαιρέσεις και να εμφανίσεις το αποτέλεσμα της "
-"πράξης. Κάνε κλικ στο OK για να ελέγξεις την απάντησή σου."
-
-#: activities/learn_decimals/learn_decimals.js:52
-#: activities/learn_decimals/learn_decimals.js:67
-msgctxt "learn_decimals|"
-msgid ""
-"If the answer is correct, type the corresponding result, and click on the OK "
-"button to validate your answer."
-msgstr ""
-"Αν η απάντηση είναι σωστή, στο επόμενο βήμα πληκτρολόγησε το αποτέλεσμα και "
-"κάνε κλικ στο OK για να ελέγξεις την απάντησή σου."
-
-#: activities/learn_decimals/learn_decimals.js:59
-msgctxt "learn_decimals|"
-msgid ""
-"An addition with two decimal numbers is displayed. The bar with the arrow "
-"represents a full unit, and each square in it represents one tenth of this "
-"unit."
-msgstr ""
-"Στην οθόνη εμφανίζεται η πρόσθεση δύο δεκαδικών αριθμών. Μια ολόκληρη μπάρα "
-"αναπαριστά μία πλήρη μονάδα και κάθε τετράγωνο στη μπάρα αναπαριστά ένα "
-"δέκατο της μονάδας."
-
-#: activities/learn_decimals/learn_decimals.js:63
-msgctxt "learn_decimals|"
-msgid ""
-"Drag the arrow to select a part of the bar, and drag the selected part of "
-"the bar to the empty area. Repeat these steps until the number of dropped "
-"bars corresponds to the result of the addition, and click on the OK button "
-"to validate your answer."
-msgstr ""
-"Μετακίνησε το βέλος για να επιλέξεις ένα τμήμα της μπάρας και μετέφερέ το "
-"στην επάνω κενή περιοχή. Επανέλαβε μέχρι το πλήθος των τμημάτων που "
-"μεταφέρθηκαν να αντιστοιχεί στο αποτέλεσμα της πρόσθεσης και κάνε κλικ στο "
-"πλήκτρο OK για να ελέγξεις την απάντησή σου."
-
-#: activities/learn_decimals/learn_decimals.js:74
-msgctxt "learn_decimals|"
-msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
-msgstr "Ζητείται μια ποσότητα. Με το βέλος επιλέγονται μέχρι 10 πορτοκάλια."
-
-#: activities/learn_decimals/learn_decimals.js:78
-msgctxt "learn_decimals|"
-msgid ""
-"Drag the arrow to select a number of oranges, and drag the selected oranges "
-"to the empty area. Repeat these steps until the number of oranges "
-"corresponds to the requested quantity. Then click on the OK button to "
-"validate your answer."
-msgstr ""
-"Μετακίνησε το βέλος για να επιλέξεις ένα πλήθος από πορτοκάλια και μετέφερέ "
-"τα στην κενή περιοχή. Επανέλαβε μέχρι το πλήθος των πορτοκαλιών να "
-"αντιστοιχεί στη ζητούμενη ποσότητα. Τότε κάνε κλικ στο OK για να ελέγξεις "
-"την απάντησή σου."
-
-#: activities/learn_decimals/Learn_decimals.qml:142
+#: activities/learn_decimals/Learn_decimals.qml:150
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "Εμφάνισε τον αριθμό: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:143
+#: activities/learn_decimals/Learn_decimals.qml:151
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "Εμφάνισε το άθροισμα: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:144
+#: activities/learn_decimals/Learn_decimals.qml:152
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "Εμφάνισε τη διαφορά: %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:145
+#: activities/learn_decimals/Learn_decimals.qml:153
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "Αναπαράστησε την ποσότητα: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:602
+#: activities/learn_decimals/Learn_decimals.qml:610
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -17090,6 +17103,57 @@ msgctxt "ActivityInfo|"
 msgid "Numbers: type the result"
 msgstr "Αριθμοί: γράψε το αποτέλεσμα"
 
+#: activities/learn_decimals_additions/Learn_decimals_additions.qml:16
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "An addition with two decimal numbers is displayed. The bar with the arrow "
+#| "represents a full unit, and each square in it represents one tenth of "
+#| "this unit."
+msgctxt "Learn_decimals_additions|"
+msgid ""
+"An addition with two decimal numbers is displayed. The bar with the arrow "
+"represents a full unit, and each square in it represents one tenth of this "
+"unit."
+msgstr ""
+"Στην οθόνη εμφανίζεται η πρόσθεση δύο δεκαδικών αριθμών. Μια ολόκληρη μπάρα "
+"αναπαριστά μία πλήρη μονάδα και κάθε τετράγωνο στη μπάρα αναπαριστά ένα "
+"δέκατο της μονάδας."
+
+#: activities/learn_decimals_additions/Learn_decimals_additions.qml:20
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Drag the arrow to select a part of the bar, and drag the selected part of "
+#| "the bar to the empty area. Repeat these steps until the number of dropped "
+#| "bars corresponds to the result of the addition, and click on the OK "
+#| "button to validate your answer."
+msgctxt "Learn_decimals_additions|"
+msgid ""
+"Drag the arrow to select a part of the bar, and drag the selected part of "
+"the bar to the empty area. Repeat these steps until the number of dropped "
+"bars corresponds to the result of the addition, and click on the OK button "
+"to validate your answer."
+msgstr ""
+"Μετακίνησε το βέλος για να επιλέξεις ένα τμήμα της μπάρας και μετέφερέ το "
+"στην επάνω κενή περιοχή. Επανέλαβε μέχρι το πλήθος των τμημάτων που "
+"μεταφέρθηκαν να αντιστοιχεί στο αποτέλεσμα της πρόσθεσης και κάνε κλικ στο "
+"πλήκτρο OK για να ελέγξεις την απάντησή σου."
+
+#: activities/learn_decimals_additions/Learn_decimals_additions.qml:24
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "If the answer is correct, type the corresponding result, and click on the "
+#| "OK button to validate your answer."
+msgctxt "Learn_decimals_additions|"
+msgid ""
+"If the answer is correct, type the corresponding result, and click on the OK "
+"button to validate your answer."
+msgstr ""
+"Αν η απάντηση είναι σωστή, στο επόμενο βήμα πληκτρολόγησε το αποτέλεσμα και "
+"κάνε κλικ στο OK για να ελέγξεις την απάντησή σου."
+
 #: activities/learn_decimals_additions/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Add decimal numbers up to 1."
@@ -17140,6 +17204,53 @@ msgstr ""
 "στη στήλη αναπαριστά ένα δέκατο αυτής της μονάδας. Κάνε κλικ στα τετράγωνα "
 "για να αφαιρέσεις τον δεύτερο αριθμό και να αναπαραστήσεις το αποτέλεσμα της "
 "πράξης"
+
+#: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:16
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "A subtraction with two decimal numbers is displayed. Below it, the first "
+#| "number from the subtraction is represented with bars. One bar represents "
+#| "a full unit, and each square in it represents one tenth of this unit."
+msgctxt "Learn_decimals_subtractions|"
+msgid ""
+"A subtraction with two decimal numbers is displayed. Below it, the first "
+"number from the subtraction is represented with bars. One bar represents a "
+"full unit, and each square in it represents one tenth of this unit."
+msgstr ""
+"Στην οθόνη εμφανίζεται η αφαίρεση δύο δεκαδικών αριθμών. Ο πρώτος αριθμός, ο "
+"μειωτέος, αναπαριστάται με μπάρες. Μια ολόκληρη μπάρα αναπαριστά μία πλήρη "
+"μονάδα και κάθε τετράγωνο στη μπάρα αναπαριστά ένα δέκατο της μονάδας."
+
+#: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:20
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Click on the squares to subtract them and display the result of the "
+#| "operation, and click on the OK button to validate your answer."
+msgctxt "Learn_decimals_subtractions|"
+msgid ""
+"Click on the squares to subtract them and display the result of the "
+"operation, and click on the OK button to validate your answer."
+msgstr ""
+"Ο δεύτερος αριθμός, ο αφαιρετέος, δηλώνει το ποσό που πρέπει να αφαιρεθεί. "
+"Ξεκινώντας από το τέλος και με τη σειρά, κάνε κλικ σε όσα τετράγωνα δηλώνει "
+"ο αφαιρετέος για να τα αφαιρέσεις και να εμφανίσεις το αποτέλεσμα της "
+"πράξης. Κάνε κλικ στο OK για να ελέγξεις την απάντησή σου."
+
+#: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:24
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "If the answer is correct, type the corresponding result, and click on the "
+#| "OK button to validate your answer."
+msgctxt "Learn_decimals_subtractions|"
+msgid ""
+"If the answer is correct, type the corresponding result, and click on the OK "
+"button to validate your answer."
+msgstr ""
+"Αν η απάντηση είναι σωστή, στο επόμενο βήμα πληκτρολόγησε το αποτέλεσμα και "
+"κάνε κλικ στο OK για να ελέγξεις την απάντησή σου."
 
 #: activities/learn_decimals_subtractions/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -17300,6 +17411,35 @@ msgstr ""
 "πορτοκάλια και μετέφερέ τα στην κενή περιοχή. Επανέλαβε μέχρι το πλήθος των "
 "πορτοκαλιών να αντιστοιχεί στην απαιτούμενη ποσότητα. Τότε κάνε κλικ στο OK "
 "για να ελέγξεις την απάντησή σου."
+
+#: activities/learn_quantities/Learn_quantities.qml:16
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "A quantity is requested. The arrow allows to select up to 10 oranges."
+msgctxt "Learn_quantities|"
+msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
+msgstr "Ζητείται μια ποσότητα. Με το βέλος επιλέγονται μέχρι 10 πορτοκάλια."
+
+#: activities/learn_quantities/Learn_quantities.qml:20
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Drag the arrow to select a number of oranges, and drag the selected "
+#| "oranges to the empty area. Repeat these steps until the number of oranges "
+#| "corresponds to the requested quantity. Then click on the OK button to "
+#| "validate your answer."
+msgctxt "Learn_quantities|"
+msgid ""
+"Drag the arrow to select a number of oranges, and drag the selected oranges "
+"to the empty area. Repeat these steps until the number of oranges "
+"corresponds to the requested quantity. Then click on the OK button to "
+"validate your answer."
+msgstr ""
+"Μετακίνησε το βέλος για να επιλέξεις ένα πλήθος από πορτοκάλια και μετέφερέ "
+"τα στην κενή περιοχή. Επανέλαβε μέχρι το πλήθος των πορτοκαλιών να "
+"αντιστοιχεί στη ζητούμενη ποσότητα. Τότε κάνε κλικ στο OK για να ελέγξεις "
+"την απάντησή σου."
 
 #: activities/learn_quantities/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -20479,8 +20619,50 @@ msgstr ""
 "παίκτης κερδίζει όταν ο άλλος παίκτης δεν μπορεί να μετακινήσει κανένα "
 "κομμάτι ή του έχουν μείνει μόνο 2 κομμάτια."
 
-#: activities/nine_men_morris/nine_men_morris.js:29
+#: activities/nine_men_morris/nine_men_morris.js:240
+#: activities/nine_men_morris/nine_men_morris.js:1086
 msgctxt "nine_men_morris|"
+msgid "Place a piece"
+msgstr "Τοποθέτησε ένα πιόνι"
+
+#: activities/nine_men_morris/nine_men_morris.js:366
+#: activities/nine_men_morris/nine_men_morris.js:1144
+msgctxt "nine_men_morris|"
+msgid "Move a piece"
+msgstr "Μετακίνησε ένα πιόνι"
+
+#: activities/nine_men_morris/nine_men_morris.js:918
+msgctxt "nine_men_morris|"
+msgid "Remove a piece"
+msgstr "Αφαίρεσε ένα πιόνι"
+
+#: activities/nine_men_morris/nine_men_morris.js:1121
+msgctxt "nine_men_morris|"
+msgid "Congratulations"
+msgstr "Συγχαρητήρια"
+
+#: activities/nine_men_morris/nine_men_morris.js:1124
+msgctxt "nine_men_morris|"
+msgid "Congratulations Player 1"
+msgstr "Συγχαρητήρια Παίχτη 1"
+
+#: activities/nine_men_morris/nine_men_morris.js:1135
+msgctxt "nine_men_morris|"
+msgid "Congratulations Player 2"
+msgstr "Συγχαρητήρια Παίχτη 2"
+
+#: activities/nine_men_morris/nine_men_morris.js:1138
+msgctxt "nine_men_morris|"
+msgid "Try again"
+msgstr "Ξαναπροσπάθησε"
+
+#: activities/nine_men_morris/NineMenMorris.qml:348
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "You and Tux start with 9 pieces each, and take turns to place your pieces "
+#| "on the empty spots of the board (by clicking on the spots)."
+msgctxt "NineMenMorris|"
 msgid ""
 "You and Tux start with 9 pieces each, and take turns to place your pieces on "
 "the empty spots of the board (by clicking on the spots)."
@@ -20488,8 +20670,14 @@ msgstr ""
 "Εσύ και ο Tux ξεκινάτε με 9 πιόνια ο καθένας και με τη σειρά τα τοποθετείτε "
 "στις κενές θέσεις του πίνακα, κάνοντας κλικ σε καθεμιά από αυτές."
 
-#: activities/nine_men_morris/nine_men_morris.js:33
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:352
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
+#| "remove it. Pieces of formed mill can not be removed unless no other "
+#| "pieces are left on the board."
+msgctxt "NineMenMorris|"
 msgid ""
 "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
 "remove it. Pieces of formed mill can not be removed unless no other pieces "
@@ -20500,8 +20688,14 @@ msgstr ""
 "σε τρίλιζα δεν μπορείς να τα μετακινήσεις, εκτός και αν δεν υπάρχουν άλλα "
 "ελεύθερα πιόνια στον πίνακα."
 
-#: activities/nine_men_morris/nine_men_morris.js:37
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:356
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "After all the pieces are placed, you and Tux will take turns to move "
+#| "them. Click on one of your pieces, and then on an adjacent empty spot to "
+#| "move it there. Green color spots indicates where you can move."
+msgctxt "NineMenMorris|"
 msgid ""
 "After all the pieces are placed, you and Tux will take turns to move them. "
 "Click on one of your pieces, and then on an adjacent empty spot to move it "
@@ -20512,8 +20706,13 @@ msgstr ""
 "κενή θέση για να το μετακινήσεις εκεί. Το πράσινο κυκλάκι γύρω από μια θέση "
 "σου δείχνει ότι εκεί μπορείς να μετακινήσεις ένα πιόνι."
 
-#: activities/nine_men_morris/nine_men_morris.js:41
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:360
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
+#| "moved to any vacant spot on the board."
+msgctxt "NineMenMorris|"
 msgid ""
 "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
 "moved to any vacant spot on the board."
@@ -20521,51 +20720,19 @@ msgstr ""
 "Εάν μείνεις με τρία πιόνια, αυτά αποκτούν τη δυνατότητα να 'πετάνε' και "
 "μπορείς να τα τοποθετήσεις σε οποιαδήποτε κενή θέση του πίνακα."
 
-#: activities/nine_men_morris/nine_men_morris.js:45
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:364
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "If you immobilize the computer or leave it with less than 3 pieces, then "
+#| "you win the game."
+msgctxt "NineMenMorris|"
 msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
 "win the game."
 msgstr ""
 "Εάν ακινητοποιήσεις τον υπολογιστή (αντίπαλο) ή τον αφήσεις με λιγότερα από "
 "τρία πιόνια, τότε κερδίζεις το παιχνίδι."
-
-#: activities/nine_men_morris/nine_men_morris.js:262
-#: activities/nine_men_morris/nine_men_morris.js:1108
-msgctxt "nine_men_morris|"
-msgid "Place a piece"
-msgstr "Τοποθέτησε ένα πιόνι"
-
-#: activities/nine_men_morris/nine_men_morris.js:388
-#: activities/nine_men_morris/nine_men_morris.js:1166
-msgctxt "nine_men_morris|"
-msgid "Move a piece"
-msgstr "Μετακίνησε ένα πιόνι"
-
-#: activities/nine_men_morris/nine_men_morris.js:940
-msgctxt "nine_men_morris|"
-msgid "Remove a piece"
-msgstr "Αφαίρεσε ένα πιόνι"
-
-#: activities/nine_men_morris/nine_men_morris.js:1143
-msgctxt "nine_men_morris|"
-msgid "Congratulations"
-msgstr "Συγχαρητήρια"
-
-#: activities/nine_men_morris/nine_men_morris.js:1146
-msgctxt "nine_men_morris|"
-msgid "Congratulations Player 1"
-msgstr "Συγχαρητήρια Παίχτη 1"
-
-#: activities/nine_men_morris/nine_men_morris.js:1157
-msgctxt "nine_men_morris|"
-msgid "Congratulations Player 2"
-msgstr "Συγχαρητήρια Παίχτη 2"
-
-#: activities/nine_men_morris/nine_men_morris.js:1160
-msgctxt "nine_men_morris|"
-msgid "Try again"
-msgstr "Ξαναπροσπάθησε"
 
 #. Activity title
 #: activities/nine_men_morris_2players/ActivityInfo.qml:15
@@ -20634,13 +20801,13 @@ msgid "New note: %1"
 msgstr "Νέα νότα:%1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:270
+#: activities/note_names/NoteNames.qml:271
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:448
+#: activities/note_names/NoteNames.qml:449
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20650,12 +20817,12 @@ msgstr ""
 "ακόμη και αν αυτοί ή τα ηχητικά εφέ είναι απενεργοποιημένα στις κύριες "
 "Ρυθμίσεις."
 
-#: activities/note_names/NoteNames.qml:449
+#: activities/note_names/NoteNames.qml:450
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Έξοδος"
 
-#: activities/note_names/NoteNames.qml:450
+#: activities/note_names/NoteNames.qml:451
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Συνέχεια"
@@ -20750,24 +20917,24 @@ msgstr ""
 "τον μετρητή στην κάτω δεξιά γωνία. Σε μεγαλύτερα επίπεδα θα πρέπει να τον "
 "θυμάσαι."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:14
+#: activities/numbers-odd-even/NumbersOddEven.qml:15
 msgctxt "NumbersOddEven|"
 msgid "Catch the even numbers."
 msgstr "Πιάσε τους ζυγούς αριθμούς."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:15
+#: activities/numbers-odd-even/NumbersOddEven.qml:16
 msgctxt "NumbersOddEven|"
 msgid "Catch the odd numbers."
 msgstr "Πιάσε τους μονούς αριθμούς."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:42
+#: activities/numbers-odd-even/NumbersOddEven.qml:43
 msgctxt "NumbersOddEven|"
 msgid "This activity teaches about even and odd numbers."
 msgstr ""
 "Με αυτή τη δραστηριότητα μαθαίνεις τους μονούς και τους ζυγούς αριθμούς."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:46
-#: activities/numbers-odd-even/NumbersOddEven.qml:56
+#: activities/numbers-odd-even/NumbersOddEven.qml:47
+#: activities/numbers-odd-even/NumbersOddEven.qml:55
 msgctxt "NumbersOddEven|"
 msgid ""
 "Even numbers are numbers which leave a remainder of 0 when divided by 2."
@@ -20780,7 +20947,7 @@ msgctxt "NumbersOddEven|"
 msgid "What is meant by remainder?"
 msgstr "Τι σημαίνει υπόλοιπο ενός αριθμού;"
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:60
+#: activities/numbers-odd-even/NumbersOddEven.qml:59
 msgctxt "NumbersOddEven|"
 msgid ""
 "Odd numbers are numbers which do not leave a remainder of 0 when divided by "
@@ -20789,9 +20956,9 @@ msgstr ""
 "Μονοί ή περιττοί είναι οι αριθμοί που αφήνουν υπόλοιπο όταν διαιρούνται με "
 "το 2."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:64
-#: activities/numbers-odd-even/NumbersOddEven.qml:68
-#: activities/numbers-odd-even/NumbersOddEven.qml:72
+#: activities/numbers-odd-even/NumbersOddEven.qml:63
+#: activities/numbers-odd-even/NumbersOddEven.qml:67
+#: activities/numbers-odd-even/NumbersOddEven.qml:71
 msgctxt "NumbersOddEven|"
 msgid "Exercise to test your understanding."
 msgstr "Έλεγξε το επίπεδο κατανόησης."
@@ -22864,116 +23031,6 @@ msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "Επίλεξε τις εντολές"
 
-#: activities/programmingMaze/programmingMaze.js:96
-msgctxt "programmingMaze|"
-msgid "Instruction Area:"
-msgstr "Περιοχή εντολών:"
-
-#: activities/programmingMaze/programmingMaze.js:97
-msgctxt "programmingMaze|"
-msgid ""
-"There are 3 instructions which you can use to code and lead Tux to the fish:"
-msgstr ""
-"Υπάρχουν τρεις εντολές που μπορείς να χρησιμοποιήσεις για να δημιουργήσεις "
-"κώδικα που θα οδηγήσει τον Tux στο ψάρι:"
-
-#: activities/programmingMaze/programmingMaze.js:98
-msgctxt "programmingMaze|"
-msgid ""
-"<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
-"facing."
-msgstr ""
-"<b>1. Μετακίνηση μπροστά:</b> Μετακινεί τον Tux ένα βήμα μπροστά στην "
-"κατεύθυνση που κοιτάζει."
-
-#: activities/programmingMaze/programmingMaze.js:99
-msgctxt "programmingMaze|"
-msgid "<b>2. Turn left:</b> Turns Tux to the left."
-msgstr "<b>2. Στροφή αριστερά:</b> Περιστρέφει τον Tux προς τα αριστερά."
-
-#: activities/programmingMaze/programmingMaze.js:100
-msgctxt "programmingMaze|"
-msgid "<b>3. Turn right:</b> Turns Tux to the right."
-msgstr "<b>2. Στροφή δεξιά:</b> Περιστρέφει τον Tux προς τα δεξιά."
-
-#: activities/programmingMaze/programmingMaze.js:104
-msgctxt "programmingMaze|"
-msgid "Main Function:"
-msgstr "Κώδικας:"
-
-#: activities/programmingMaze/programmingMaze.js:105
-msgctxt "programmingMaze|"
-msgid "The execution of the code starts here."
-msgstr "Η εκτέλεση του κώδικα ξεκινά εδώ."
-
-#: activities/programmingMaze/programmingMaze.js:106
-msgctxt "programmingMaze|"
-msgid ""
-"-Click on any instruction in the <b>instruction area</b> to add it to the "
-"<b>Main Function</b>."
-msgstr ""
-"- Κάνε κλικ σε οποιαδήποτε εντολή στην <b>περιοχή εντολών</b> για να την "
-"προσθέσεις στον <b>κώδικα</b>."
-
-#: activities/programmingMaze/programmingMaze.js:107
-msgctxt "programmingMaze|"
-msgid ""
-"-The instructions will execute in order until there's none left, or until a "
-"dead-end, or when Tux reaches the fish."
-msgstr ""
-"- Οι εντολές του κώδικα θα εκτελεστούν με τη σειρά μέχρι να μη μείνει καμία, "
-"ή μέχρις ότου ο Tux πιάσει το ψάρι."
-
-#: activities/programmingMaze/programmingMaze.js:114
-msgctxt "programmingMaze|"
-msgid "Procedure:"
-msgstr "Διαδικασία:"
-
-#: activities/programmingMaze/programmingMaze.js:115
-msgctxt "programmingMaze|"
-msgid ""
-"<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
-"the code by calling it where needed</b>."
-msgstr ""
-"<b>Διαδικασία</b> είναι ένα επαναχρησιμοποιήσιμο σύνολο εντολών που μπορεί "
-"να <b>χρησιμοποιείται στον κώδικα καλώντας τη όποτε είναι απαραίτητο</b>."
-
-#: activities/programmingMaze/programmingMaze.js:116
-msgctxt "programmingMaze|"
-msgid ""
-"-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
-"area</b> to add your code, click on the <b>Procedure</b> or <b>Main "
-"Function</b> label."
-msgstr ""
-"- Για να γίνει <b>αλλαγή</b> μεταξύ της <b>περιοχής της διαδικασίας</b> και "
-"της <b>περιοχής του κώδικα</b> για να μπορείς να προσθέσεις κώδικα, πίεσε "
-"στην ετικέτα <b>Διαδικασία</b> ή <b>Κώδικας</b>."
-
-#: activities/programmingMaze/programmingMaze.js:123
-msgctxt "programmingMaze|"
-msgid "Loop:"
-msgstr "Βρόχος:"
-
-#: activities/programmingMaze/programmingMaze.js:124
-msgctxt "programmingMaze|"
-msgid ""
-"<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
-"the number of times defined by the number inside it</b>."
-msgstr ""
-"Ο <b>βρόχος</b> είναι μια ακολουθία εντολών η οποία <b>επαναλαμβάνεται "
-"συνεχώς τόσες φορές όσες έχει οριστεί από τον αριθμό μέσα στην ακολουθία</b>."
-
-#: activities/programmingMaze/programmingMaze.js:125
-msgctxt "programmingMaze|"
-msgid ""
-"-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
-"area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
-"label."
-msgstr ""
-"-Για να γίνει <b>αλλαγή</b> μεταξύ της <b>περιοχής του βρόχου</b> και της "
-"<b>περιοχής του κώδικα</b> για να μπορείς να προσθέσεις κώδικα, πίεσε στην "
-"ετικέτα <b>Βρόχος</b> ή <b>Κώδικας</b>."
-
 #: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
@@ -22994,6 +23051,179 @@ msgstr "Διαδικασία"
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Βρόχος"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:542
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Instruction Area:"
+msgctxt "ProgrammingMaze|"
+msgid "Instruction Area:"
+msgstr "Περιοχή εντολών:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:543
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "There are 3 instructions which you can use to code and lead Tux to the "
+#| "fish:"
+msgctxt "ProgrammingMaze|"
+msgid ""
+"There are 3 instructions which you can use to code and lead Tux to the fish:"
+msgstr ""
+"Υπάρχουν τρεις εντολές που μπορείς να χρησιμοποιήσεις για να δημιουργήσεις "
+"κώδικα που θα οδηγήσει τον Tux στο ψάρι:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:544
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
+#| "facing."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
+"facing."
+msgstr ""
+"<b>1. Μετακίνηση μπροστά:</b> Μετακινεί τον Tux ένα βήμα μπροστά στην "
+"κατεύθυνση που κοιτάζει."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:545
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "<b>2. Turn left:</b> Turns Tux to the left."
+msgctxt "ProgrammingMaze|"
+msgid "<b>2. Turn left:</b> Turns Tux to the left."
+msgstr "<b>2. Στροφή αριστερά:</b> Περιστρέφει τον Tux προς τα αριστερά."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:546
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "<b>3. Turn right:</b> Turns Tux to the right."
+msgctxt "ProgrammingMaze|"
+msgid "<b>3. Turn right:</b> Turns Tux to the right."
+msgstr "<b>2. Στροφή δεξιά:</b> Περιστρέφει τον Tux προς τα δεξιά."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:550
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Main Function:"
+msgctxt "ProgrammingMaze|"
+msgid "Main Function:"
+msgstr "Κώδικας:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:551
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "The execution of the code starts here."
+msgctxt "ProgrammingMaze|"
+msgid "The execution of the code starts here."
+msgstr "Η εκτέλεση του κώδικα ξεκινά εδώ."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:552
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-Click on any instruction in the <b>instruction area</b> to add it to the "
+#| "<b>Main Function</b>."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-Click on any instruction in the <b>instruction area</b> to add it to the "
+"<b>Main Function</b>."
+msgstr ""
+"- Κάνε κλικ σε οποιαδήποτε εντολή στην <b>περιοχή εντολών</b> για να την "
+"προσθέσεις στον <b>κώδικα</b>."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:553
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-The instructions will execute in order until there's none left, or until "
+#| "a dead-end, or when Tux reaches the fish."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-The instructions will execute in order until there's none left, or until a "
+"dead-end, or when Tux reaches the fish."
+msgstr ""
+"- Οι εντολές του κώδικα θα εκτελεστούν με τη σειρά μέχρι να μη μείνει καμία, "
+"ή μέχρις ότου ο Tux πιάσει το ψάρι."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:563
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Procedure:"
+msgctxt "ProgrammingMaze|"
+msgid "Procedure:"
+msgstr "Διαδικασία:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:564
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "<b>Procedure</b> is a reusable set of instructions which can be <b>used "
+#| "in the code by calling it where needed</b>."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
+"the code by calling it where needed</b>."
+msgstr ""
+"<b>Διαδικασία</b> είναι ένα επαναχρησιμοποιήσιμο σύνολο εντολών που μπορεί "
+"να <b>χρησιμοποιείται στον κώδικα καλώντας τη όποτε είναι απαραίτητο</b>."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:565
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main "
+#| "Function area</b> to add your code, click on the <b>Procedure</b> or "
+#| "<b>Main Function</b> label."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
+"area</b> to add your code, click on the <b>Procedure</b> or <b>Main "
+"Function</b> label."
+msgstr ""
+"- Για να γίνει <b>αλλαγή</b> μεταξύ της <b>περιοχής της διαδικασίας</b> και "
+"της <b>περιοχής του κώδικα</b> για να μπορείς να προσθέσεις κώδικα, πίεσε "
+"στην ετικέτα <b>Διαδικασία</b> ή <b>Κώδικας</b>."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:575
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Loop:"
+msgctxt "ProgrammingMaze|"
+msgid "Loop:"
+msgstr "Βρόχος:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:576
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
+#| "the number of times defined by the number inside it</b>."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
+"the number of times defined by the number inside it</b>."
+msgstr ""
+"Ο <b>βρόχος</b> είναι μια ακολουθία εντολών η οποία <b>επαναλαμβάνεται "
+"συνεχώς τόσες φορές όσες έχει οριστεί από τον αριθμό μέσα στην ακολουθία</b>."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:577
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
+#| "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</"
+#| "b> label."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
+"area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
+"label."
+msgstr ""
+"-Για να γίνει <b>αλλαγή</b> μεταξύ της <b>περιοχής του βρόχου</b> και της "
+"<b>περιοχής του κώδικα</b> για να μπορείς να προσθέσεις κώδικα, πίεσε στην "
+"ετικέτα <b>Βρόχος</b> ή <b>Κώδικας</b>."
 
 #: activities/programmingMaze/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -23072,7 +23302,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Enter ή Return: Υποβολή απάντησης."
 
-#: activities/railroad/Railroad.qml:125
+#: activities/railroad/Railroad.qml:126
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -23081,7 +23311,7 @@ msgstr ""
 "Παρατήρησε το τρένο πριν λήξει ο χρόνος και κατόπιν σύρε αντικείμενα, "
 "βαγόνια και μηχανές, για να φτιάξεις ένα ίδιο τρένο."
 
-#: activities/railroad/Railroad.qml:126
+#: activities/railroad/Railroad.qml:129
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -23309,7 +23539,7 @@ msgstr ""
 "πρέπει να ανάψεις όλες τις συσκευές που καταναλώνουν ενέργεια, ενώ όλοι οι "
 "παραγωγοί είναι ενεργοί."
 
-#: activities/renewable_energy/RenewableEnergy.qml:302
+#: activities/renewable_energy/RenewableEnergy.qml:304
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -23318,7 +23548,7 @@ msgstr ""
 "Ο Tux έχει επιστρέψει με τη βάρκα στου από το ψάρεμα. Φόρτισε το ηλεκτρικό "
 "σύστημα ώστε να έχει φως στο σπίτι του."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:307
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -23328,7 +23558,7 @@ msgstr ""
 "συστοιχία φωτοβολταϊκών, αιολικό πάρκο και μετασχηματιστές, για να "
 "επανενεργοποιηθεί όλο το ηλεκτρικό σύστημα."
 
-#: activities/renewable_energy/RenewableEnergy.qml:306
+#: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -23339,14 +23569,14 @@ msgstr ""
 "του φωτός. Για να κερδίσεις πρέπει να ανάψεις όλην την κατανάλωση ενώ όλοι "
 "οι παραγωγοί είναι ενεργοί."
 
-#: activities/renewable_energy/RenewableEnergy.qml:308
+#: activities/renewable_energy/RenewableEnergy.qml:313
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Μάθε για ηλεκτρικά συστήματα με βάση τις ανανεώσιμες πηγές ενέργειας. "
 "Απόλαυσέ το."
 
-#: activities/renewable_energy/RenewableEnergy.qml:333
+#: activities/renewable_energy/RenewableEnergy.qml:339
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -24220,13 +24450,13 @@ msgctxt "ActivityInfo|"
 msgid "If there is a rest, it needs to be placed inside the candy jar."
 msgstr "Εάν περισσεύουν καραμέλες θα πρέπει να τοποθετηθούν μέσα στο βάζο."
 
-#: activities/share/resource/1/Data.qml:13
+#: activities/share/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, no rest."
 msgstr "Μέγιστο 25 καραμέλες και 5 παιδιά, χωρίς υπόλοιπο."
 
-#: activities/share/resource/1/Data.qml:18
-#: activities/share/resource/2/Data.qml:18
+#: activities/share/resource/1/Data.qml:20
+#: activities/share/resource/2/Data.qml:20
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 2 pieces of candy equally between 2 of his girl friends. "
@@ -24237,18 +24467,18 @@ msgstr ""
 "βοηθήσεις; Πρώτα τοποθέτησε τα παιδιά στο κέντρο και μετά σύρε τις καραμέλες "
 "σε καθένα από αυτά."
 
-#: activities/share/resource/1/Data.qml:28
+#: activities/share/resource/1/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 4 pieces of candy equally among his friends."
 msgstr "Τώρα θέλει να μοιράσει εξίσου 4 ζαχαρωτά στις φίλες του."
 
-#: activities/share/resource/1/Data.qml:38
+#: activities/share/resource/1/Data.qml:40
 msgctxt "Data|"
 msgid ""
 "Can you now share 6 of Paul's pieces of candy equally among his friends?"
 msgstr "Μπορείς να μοιράσεις εξίσου 6 καραμέλες στις φίλες του Παύλου;"
 
-#: activities/share/resource/1/Data.qml:48
+#: activities/share/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid ""
 "Some of his friends already have pieces of candy. He wants to give them 7 "
@@ -24257,7 +24487,7 @@ msgstr ""
 "Κάποιο φίλοι του έχουν καραμέλες. Θέλει να τους δώσει 7 ακόμη ώστε όλοι να "
 "έχουν το ίδιο πλήθος."
 
-#: activities/share/resource/1/Data.qml:58
+#: activities/share/resource/1/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 12 pieces of candy left. He eats 2 pieces of candy and he "
@@ -24268,7 +24498,7 @@ msgstr ""
 "στις φίλες του. Μπορείς να τον βοηθήσεις να μοιράσει εξίσου τις 10 καραμέλες "
 "που απομένουν;"
 
-#: activities/share/resource/1/Data.qml:70
+#: activities/share/resource/1/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "George wants to share 3 pieces of candy equally between 3 of his girl "
@@ -24277,7 +24507,7 @@ msgstr ""
 "Ο Γιώργος θέλει να μοιράσει 3 ζαχαρωτά εξίσου σε 3 φίλες του. Μπορεί να τα "
 "μοιράσει εξίσου;"
 
-#: activities/share/resource/1/Data.qml:80
+#: activities/share/resource/1/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 6 pieces of candy equally between 3 of her friends: 1 "
@@ -24286,7 +24516,7 @@ msgstr ""
 "Η Μαρία θέλει να μοιράσει 6 ζαχαρωτά εξίσου σε 3 φίλους της: 1 κορίτσι και 2 "
 "αγόρια. Μπορείς να τα μοιράσει εξίσου;"
 
-#: activities/share/resource/1/Data.qml:90
+#: activities/share/resource/1/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "John wants to share 8 pieces of candy equally between 3 of his friends: 1 "
@@ -24297,7 +24527,7 @@ msgstr ""
 "κορίτσια. Το αγόρι έχει ένα. Μπορεί να είναι σίγουρος ότι όλοι έχουν το ίδιο "
 "πλήθος;"
 
-#: activities/share/resource/1/Data.qml:100
+#: activities/share/resource/1/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 12 pieces of candy equally between 3 of his friends: 2 "
@@ -24306,7 +24536,7 @@ msgstr ""
 "Ο Παύλος θέλει να μοιράσει 12 ζαχαρωτά εξίσου σε 3 φίλους του: 2 αγόρια και "
 "1 κορίτσι. Μπορεί να τα μοιράσει εξίσου;"
 
-#: activities/share/resource/1/Data.qml:110
+#: activities/share/resource/1/Data.qml:112
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 11 pieces of candy between 3 of her friends: 1 boy and "
@@ -24317,8 +24547,8 @@ msgstr ""
 "κορίτσια. Τα κορίτσια έχουν ήδη μερικά. Μπορεί να μοιράσει τα ζαχαρωτά έτσι "
 "ώστε όλοι να έχουν το ίδιο πλήθος;"
 
-#: activities/share/resource/1/Data.qml:122
-#: activities/share/resource/2/Data.qml:112
+#: activities/share/resource/1/Data.qml:124
+#: activities/share/resource/2/Data.qml:114
 msgctxt "Data|"
 msgid ""
 "Alice wants to share 4 pieces of candy equally between 4 of her girl "
@@ -24327,12 +24557,12 @@ msgstr ""
 "Η Αλίκη θέλει να μοιράσει εξίσου 4 ζαχαρωτά στις φίλες της. Μπορείς να τη "
 "βοηθήσεις;"
 
-#: activities/share/resource/1/Data.qml:132
+#: activities/share/resource/1/Data.qml:134
 msgctxt "Data|"
 msgid "Now, Alice wants to give 8 pieces of candy to her friends."
 msgstr "Τώρα η Αλίκη θέλει να δώσει 8 καραμέλες στους φίλους της."
 
-#: activities/share/resource/1/Data.qml:142
+#: activities/share/resource/1/Data.qml:144
 msgctxt "Data|"
 msgid ""
 "Alice wants to give 10 pieces of candy to her friends, 1 girl and 3 boys, so "
@@ -24343,12 +24573,12 @@ msgstr ""
 "έτσι ώστε όλοι να έχουν το ίδιο πλήθος. Τα κορίτσια έχουν ήδη μερικά "
 "ζαχαρωτά."
 
-#: activities/share/resource/1/Data.qml:152
+#: activities/share/resource/1/Data.qml:154
 msgctxt "Data|"
 msgid "Alice wants to give 16 pieces of candy to her friends."
 msgstr "Η Αλίκη θέλει να δώσει 16 ζαχαρωτά στους φίλους της."
 
-#: activities/share/resource/1/Data.qml:162
+#: activities/share/resource/1/Data.qml:164
 msgctxt "Data|"
 msgid ""
 "Alice wants to give pieces of candy to 4 friends. Some of them already have "
@@ -24359,7 +24589,7 @@ msgstr ""
 "Μπορείς να την βοηθήσεις να μοιράσει 14 καραμέλες ώστε όλοι οι φίλοι της να "
 "έχουν το ίδιο πλήθος;"
 
-#: activities/share/resource/1/Data.qml:174
+#: activities/share/resource/1/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Michael wants to share 5 pieces of candy equally between 5 of his girl "
@@ -24368,7 +24598,7 @@ msgstr ""
 "Ο Μιχάλης θέλει να μοιράσει 5 καραμέλες εξίσου σε 5 φίλες του. Μπορείς να "
 "τον βοηθήσεις;"
 
-#: activities/share/resource/1/Data.qml:184
+#: activities/share/resource/1/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Helen has 5 friends: 2 boys and 3 girls. She wants to give them 10 pieces of "
@@ -24377,7 +24607,7 @@ msgstr ""
 "Η Ελένη έχει 5 φίλους: 2 αγόρια και 3 κορίτσια. Θέλει να τους δώσει 10 "
 "καραμέλες. Βοήθησέ τη να μοιράσει εξίσου τις καραμέλες στους φίλους της."
 
-#: activities/share/resource/1/Data.qml:194
+#: activities/share/resource/1/Data.qml:196
 msgctxt "Data|"
 msgid ""
 "Michelle wants to share 12 pieces of candy equally between her 4 brothers "
@@ -24388,7 +24618,7 @@ msgstr ""
 "αδελφή της ώστε όλοι να έχουν το ίδιο πλήθος. Η αδελφή της έχει ήδη μερικές "
 "καραμέλες."
 
-#: activities/share/resource/1/Data.qml:204
+#: activities/share/resource/1/Data.qml:206
 msgctxt "Data|"
 msgid ""
 "Thomas wants to share his 20 pieces of candy with his friends: 1 boy and 4 "
@@ -24397,7 +24627,7 @@ msgstr ""
 "Ο Θωμάς θέλει να μοιράσει 20 καραμέλες με τους φίλους του: 1 αγόρια και 4 "
 "κορίτσια. Μπορείς να τον βοηθήσεις;"
 
-#: activities/share/resource/1/Data.qml:214
+#: activities/share/resource/1/Data.qml:216
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 20 pieces of candy equally between 5 of his friends. "
@@ -24406,7 +24636,7 @@ msgstr ""
 "Ο Παύλος θέλει να μοιράσει 20 καραμέλες σε 5 φίλους του, οι οποίοι ήδη έχουν "
 "μία καραμέλα ο καθένας. Μπορείς να τον βοηθήσεις;"
 
-#: activities/share/resource/1/Data.qml:226
+#: activities/share/resource/1/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally with 2 of his girl "
@@ -24415,7 +24645,7 @@ msgstr ""
 "Ο Κάρολος θέλει να μοιράσει 6 καραμέλες εξίσου με 2 φίλες του. Μπορεί να τις "
 "μοιράσει εξίσου;"
 
-#: activities/share/resource/1/Data.qml:236
+#: activities/share/resource/1/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -24427,7 +24657,7 @@ msgstr ""
 "καραμέλες. Πώς πρέπει να μοιράσει τις καραμέλες ώστε όλοι οι φίλοι της να "
 "έχουν το ίδιο πλήθος;"
 
-#: activities/share/resource/1/Data.qml:246
+#: activities/share/resource/1/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 16 pieces of candy to share equally with his "
@@ -24437,7 +24667,7 @@ msgstr ""
 "Ο πατέρας του Ιάσονα τού έδωσε 16 καραμέλες για να τις μοιράσει εξίσου στους "
 "φίλους του: 2 κορίτσια και 2 αγόρια. Βοήθησέ τον να κάνει τη μοιρασιά."
 
-#: activities/share/resource/1/Data.qml:256
+#: activities/share/resource/1/Data.qml:258
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy between 4 of his friends: 2 girls "
@@ -24448,7 +24678,7 @@ msgstr ""
 "αγόρια. Τα αγόρια έχουν ήδη μία καραμέλα το καθένα. Ο Γιώργος θέλει όλοι να "
 "έχουν το ίδιο πλήθος καραμέλες."
 
-#: activities/share/resource/1/Data.qml:266
+#: activities/share/resource/1/Data.qml:268
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 25 pieces of candy equally between 5 of her friends: 3 "
@@ -24457,27 +24687,27 @@ msgstr ""
 "Η Μαρία θέλει να μοιράσει εξίσου 25 καραμέλες με 5 φίλους της: 3 κορίτσια "
 "και 2 αγόρια. Μπορεί να τις μοιράσει εξίσου;"
 
-#: activities/share/resource/2/Data.qml:13
+#: activities/share/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, possible rest."
 msgstr "Μέγιστο 25 καραμέλες και 5 παιδιά, πιθανόν να υπάρχει υπόλοιπο."
 
-#: activities/share/resource/2/Data.qml:28
+#: activities/share/resource/2/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 5 pieces of candy among his friends."
 msgstr "Τώρα θέλει να μοιράσει 5 καραμέλες στους φίλους του."
 
-#: activities/share/resource/2/Data.qml:38
+#: activities/share/resource/2/Data.qml:40
 msgctxt "Data|"
 msgid "Can you now share 7 of Paul's pieces of candy among his friends?"
 msgstr "Μπορείς τώρα να μοιράσεις 7 καραμέλες στους φίλους του Παύλου;"
 
-#: activities/share/resource/2/Data.qml:48
+#: activities/share/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Can you now share 8 of Paul's pieces of candy among his friends?"
 msgstr "Μπορείς τώρα να μοιράσεις 8 καραμέλες στους φίλους του Παύλου;"
 
-#: activities/share/resource/2/Data.qml:58
+#: activities/share/resource/2/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 11 pieces of candy left. He eats 2 pieces of candy and he "
@@ -24488,7 +24718,7 @@ msgstr ""
 "υπόλοιπες στους φίλους του. Μπορείς να τον βοηθήσεις να μοιράσει εξίσου τις "
 "9 καραμέλες που απομένουν;"
 
-#: activities/share/resource/2/Data.qml:70
+#: activities/share/resource/2/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "Bob wants to share 3 pieces of candy equally between 3 of his girl friends. "
@@ -24497,7 +24727,7 @@ msgstr ""
 "Ο Μπομπ θέλει να μοιράσει 3 καραμέλες με 3 φίλες του. Μπορεί να τις μοιράσει "
 "εξίσου;"
 
-#: activities/share/resource/2/Data.qml:80
+#: activities/share/resource/2/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 8 pieces of candy between 3 of his friends: 1 boy and 2 "
@@ -24508,7 +24738,7 @@ msgstr ""
 "κορίτσια. Το αγόρι έχει ήδη μία καραμέλα. Μπορεί να μοιράσει τις καραμέλες "
 "ώστε όλοι να έχουν το ίδιο πλήθος;"
 
-#: activities/share/resource/2/Data.qml:90
+#: activities/share/resource/2/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 8 pieces of candy between 3 of her friends: 1 boy and 2 "
@@ -24519,7 +24749,7 @@ msgstr ""
 "κορίτσια. Τα κορίτσια ήδη έχουν μερικές καραμέλες. Μπορεί να μοιράσει τις "
 "καραμέλες ώστε όλοι να έχουν το ίδιο πλήθος;"
 
-#: activities/share/resource/2/Data.qml:100
+#: activities/share/resource/2/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 12 pieces of candy between 3 of his friends: 1 boy and "
@@ -24530,12 +24760,12 @@ msgstr ""
 "κορίτσια. Το αγόρι ήδη έχει μερικές καραμέλες. Μπορεί να μοιράσει τις "
 "καραμέλες ώστε όλοι να έχουν το ίδιο πλήθος;"
 
-#: activities/share/resource/2/Data.qml:122
+#: activities/share/resource/2/Data.qml:124
 msgctxt "Data|"
 msgid "Now, Alice wants to share 8 pieces of candy equally among her friends."
 msgstr "Τώρα η Αλίκη θέλει να μοιράσει εξίσου 8 καραμέλες στους φίλους της."
 
-#: activities/share/resource/2/Data.qml:132
+#: activities/share/resource/2/Data.qml:134
 msgctxt "Data|"
 msgid ""
 "Can you help Alice share 10 pieces of candy equally among her friends: 1 "
@@ -24544,12 +24774,12 @@ msgstr ""
 "Μπορείς να βοηθήσεις την Αλίκη να μοιράσει εξίσου 10 καραμέλες στους φίλους "
 "της: 1 κορίτσι και 3 αγόρια; Το κορίτσι ήδη έχει μερικές καραμέλες."
 
-#: activities/share/resource/2/Data.qml:142
+#: activities/share/resource/2/Data.qml:144
 msgctxt "Data|"
 msgid "Alice wants to share 16 pieces of candy equally among her friends."
 msgstr "Η Αλίκη θέλει να μοιράσει εξίσου 16 καραμέλες στους φίλους της."
 
-#: activities/share/resource/2/Data.qml:152
+#: activities/share/resource/2/Data.qml:154
 msgctxt "Data|"
 msgid ""
 "Alice has 14 pieces of candy left. She wants to share them equally among her "
@@ -24560,7 +24790,7 @@ msgstr ""
 "της. Τα αγόρια ήδη έχουν μερικές. Μπορείς να τη βοηθήσεις να τις μοιράσει "
 "εξίσου;"
 
-#: activities/share/resource/2/Data.qml:164
+#: activities/share/resource/2/Data.qml:166
 msgctxt "Data|"
 msgid ""
 "Help Jon share 11 pieces of candies equally between five girls. The rest "
@@ -24569,7 +24799,7 @@ msgstr ""
 "Βοήθησε τον Ίωνα να μοιράσει εξίσου 11 καραμέλες σε πέντε κορίτσια. ιΤο "
 "υπόλοιπο θα μείνει στον Ίωνα."
 
-#: activities/share/resource/2/Data.qml:174
+#: activities/share/resource/2/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Jon wants to share the rest of his pieces of candies with his brothers and "
@@ -24580,7 +24810,7 @@ msgstr ""
 "αδερφές του. Μπορείς να τις μοιράσεις εξίσου, γνωρίζοντας ότι τα αδέρφια του "
 "έχουν ήδη 2 καραμέλες;"
 
-#: activities/share/resource/2/Data.qml:184
+#: activities/share/resource/2/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Help Tux split 19 pieces of candies between his friends: 4 boys and 1 girl."
@@ -24588,13 +24818,13 @@ msgstr ""
 "Βοήθησε τον Tux να μοιράσει 19 καραμέλες στους φίλους του: 4 αγόρια και 1 "
 "κορίτσι."
 
-#: activities/share/resource/2/Data.qml:194
+#: activities/share/resource/2/Data.qml:196
 msgctxt "Data|"
 msgid "Help Maria share 18 pieces of candy equally between 3 boys and 2 girls."
 msgstr ""
 "Βοήθησε τη Μαρία να μοιράσει εξίσου 18 καραμέλες σε 3 αγόρια και 2 κορίτσια."
 
-#: activities/share/resource/2/Data.qml:206
+#: activities/share/resource/2/Data.qml:208
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally between 2 of his girl "
@@ -24603,7 +24833,7 @@ msgstr ""
 "Ο Κάρολος θέλει να μοιράσει 8 καραμέλες με 2 φίλες του. Μπορείς να τον "
 "βοηθήσεις να τις μοιράσει εξίσου;"
 
-#: activities/share/resource/2/Data.qml:216
+#: activities/share/resource/2/Data.qml:218
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -24614,7 +24844,7 @@ msgstr ""
 "σε 3 φίλους της: δύο κορίτσια και ένα αγόρι. Πώς πρέπει να μοιράσει τις "
 "καραμέλες;"
 
-#: activities/share/resource/2/Data.qml:226
+#: activities/share/resource/2/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 17 pieces of candy to share equally between his "
@@ -24624,7 +24854,7 @@ msgstr ""
 "Ο πατέρας του Ιάσονα τού έδωσε 17 καραμέλες για να τις μοιράσει εξίσου στους "
 "φίλους του: 2 κορίτσια και 2 αγόρια. Βοήθησέ τον να κάνει τη μοιρασιά."
 
-#: activities/share/resource/2/Data.qml:236
+#: activities/share/resource/2/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy equally between 4 of his friends: 2 "
@@ -24634,7 +24864,7 @@ msgstr ""
 "Ο Γιώργος θέλει να μοιράσει 14 καραμέλες σε 4 φίλους του: 2 κορίτσια και 2 "
 "αγόρια. Μπορείς να τις μοιράσει εξίσου;"
 
-#: activities/share/resource/2/Data.qml:246
+#: activities/share/resource/2/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 23 pieces of candy equally between 5 of her friends: 3 "
@@ -24644,12 +24874,12 @@ msgstr ""
 "Η Μαρία θέλει να μοιράσει 23 καραμέλες με 5 φίλους της: 3 κορίτσια και 2 "
 "αγόρια. Μπορείς να τις μοιράσει εξίσου;"
 
-#: activities/share/resource/3/Data.qml:13
+#: activities/share/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr "Μέγιστο 30 καραμέλες και 6 παιδιά, πιθανόν να υπάρχει υπόλοιπο."
 
-#: activities/share/share.js:98
+#: activities/share/share.js:115
 #, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -24659,7 +24889,7 @@ msgid_plural "Place %n boy(s) "
 msgstr[0] "Τοποθέτησε %n αγόρι "
 msgstr[1] "Τοποθέτησε %n αγόρια "
 
-#: activities/share/share.js:102
+#: activities/share/share.js:119
 #, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -24669,7 +24899,7 @@ msgid_plural "and %n girl(s) in the center. "
 msgstr[0] "και %n κορίτσι στο κέντρο. "
 msgstr[1] "και %n κορίτσια στο κέντρο. "
 
-#: activities/share/share.js:106
+#: activities/share/share.js:123
 #, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -24679,7 +24909,7 @@ msgid_plural "Then split %n pieces of candy equally between them."
 msgstr[0] "Κατόπιν χώρισε σε ίσα μέρη τις %n καραμέλες και μοίρασέ τις."
 msgstr[1] "Κατόπιν χώρισε σε ίσα μέρη τις %n καραμέλες και μοίρασέ τις."
 
-#: activities/share/Share.qml:358
+#: activities/share/Share.qml:359
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
@@ -26292,7 +26522,7 @@ msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Εκμάθηση"
 
-#: activities/solar_system/SolarSystem.qml:156
+#: activities/solar_system/SolarSystem.qml:157
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -26302,7 +26532,7 @@ msgstr ""
 "ερωτήσεις. Κάθε ερώτηση έχει 4 επιλογές, από τις οποίες μόνο η μία είναι η "
 "σωστή."
 
-#: activities/solar_system/SolarSystem.qml:157
+#: activities/solar_system/SolarSystem.qml:160
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -26318,7 +26548,7 @@ msgstr ""
 "υπόδειξης είναι ορατό, μπορείς να πιέσεις σε αυτό για να σε βοηθήσει να "
 "φτάσεις στη σωστή απάντηση."
 
-#: activities/solar_system/SolarSystem.qml:162
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -26327,7 +26557,7 @@ msgstr ""
 "Αρχικά υπάρχουν 20 ερωτήσεις με 4 επιλογές η καθεμιά. Η μπάρα προόδου κάτω "
 "δεξιά της οθόνης δείχνει το ποσοστό επιτυχίας σου."
 
-#: activities/solar_system/SolarSystem.qml:163
+#: activities/solar_system/SolarSystem.qml:173
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -26340,7 +26570,7 @@ msgstr ""
 "ακόμη ερώτηση στο τέλος μαζί με αυτή που απάντησες λάθος.<br>Ο μέγιστος "
 "αριθμός ερωτήσεων είναι 25, μετά από τον οποίο δεν προστίθενται ερωτήσεις."
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:176
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -26349,7 +26579,7 @@ msgstr ""
 "Θα πρέπει να συγκεντρώσεις βαθμολογία μεγαλύτερη από 90% για να περάσεις την "
 "αξιολόγηση και να γίνεις ειδικός του ηλιακού μας συστήματος!"
 
-#: activities/solar_system/SolarSystem.qml:349
+#: activities/solar_system/SolarSystem.qml:365
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26360,7 +26590,7 @@ msgstr ""
 "<b>χαμηλότερη</b> είναι η θερμοκρασία του.<br><font color=\"#3bb0de\">%1</"
 "font>"
 
-#: activities/solar_system/SolarSystem.qml:350
+#: activities/solar_system/SolarSystem.qml:366
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26371,7 +26601,7 @@ msgstr ""
 "τον Ήλιο</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:369
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -26383,12 +26613,12 @@ msgstr ""
 "γράμματα των ονομάτων τους: <b>Ε</b>ρμής, <b>Α</b>φροδίτη, <b>Γ</b>η, <b>Ά</"
 "b>ρης, <b>Δ</b>ίας, <b>Κ</b>ρόνος, <b>Ου</b>ρανός, <b>Π</b>οσειδώνας.<br>"
 
-#: activities/solar_system/SolarSystem.qml:355
+#: activities/solar_system/SolarSystem.qml:371
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Υπόδειξη"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:379
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Προβολή του ηλιακού συστήματος."
@@ -26514,13 +26744,21 @@ msgctxt "Controls|"
 msgid "Right Ballast Tank"
 msgstr "Δεξιά δεξαμενή πρόσθετου βάρους"
 
-#: activities/submarine/submarine.js:21
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:130
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Move the submarine to the other side of the screen."
+msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "Οδήγησε το υποβρύχιο στην άλλη πλευρά της οθόνης."
 
-#: activities/submarine/submarine.js:22
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:133
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The leftmost item in the control panel is the engine of the submarine, "
+#| "indicating the current speed of the submarine."
+msgctxt "Submarine|"
 msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
 "indicating the current speed of the submarine."
@@ -26528,33 +26766,52 @@ msgstr ""
 "Στην άκρη αριστερά του πίνακα ελέγχου είναι η ένδειξη της ταχύτητας του "
 "υποβρυχίου."
 
-#: activities/submarine/submarine.js:23
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:136
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Increase or decrease the velocity of the submarine using the engine."
+msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr "Αύξησε ή μείωσε την ταχύτητα του υποβρυχίου χρησιμοποιώντας τη μηχανή."
 
-#: activities/submarine/submarine.js:24
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:139
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Press the + button to increase the velocity, or the - button to decrease "
+#| "the velocity."
+msgctxt "Submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
 "velocity."
 msgstr ""
 "Πάτησε το κουμπί + για να αυξήσεις την ταχύτητα, ή το - για να τη μειώσεις."
 
-#: activities/submarine/submarine.js:27
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:146
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "The item next to the engine is the ballast tank."
+msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "Το αντικείμενο δίπλα στον κινητήρα είναι η δεξαμενή πρόσθετου βάρους."
 
-#: activities/submarine/submarine.js:28
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:149
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "The ballast tanks are used to float or dive under water."
+msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr ""
 "Οι δεξαμενές πρόσθετου βάρους χρησιμοποιούνται για την κατάδυση ή την "
 "ανάδυση του υποβρυχίου."
 
-#: activities/submarine/submarine.js:29
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:152
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "If the ballast tanks are empty, the submarine will float. If the ballast "
+#| "tanks are full of water, the submarine will dive underwater."
+msgctxt "Submarine|"
 msgid ""
 "If the ballast tanks are empty, the submarine will float. If the ballast "
 "tanks are full of water, the submarine will dive underwater."
@@ -26562,8 +26819,14 @@ msgstr ""
 "Εάν οι δεξαμενές πρόσθετου βάρους είναι άδειες το υποβρύχιο επιπλέει, ενώ "
 "όταν είναι γεμάτες νερό το υποβρύχιο καταδύεται."
 
-#: activities/submarine/submarine.js:30
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:155
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Turning the upper valve on or off will alternatively allow or stop the "
+#| "water from filling in the ballast tank, thus allowing it to dive "
+#| "underwater."
+msgctxt "Submarine|"
 msgid ""
 "Turning the upper valve on or off will alternatively allow or stop the water "
 "from filling in the ballast tank, thus allowing it to dive underwater."
@@ -26572,8 +26835,14 @@ msgstr ""
 "αντίστοιχα της δεξαμενής πρόσθετου βάρους. Έτσι, επιτρέπουμε στο υποβρύχιο "
 "να καταδυθεί."
 
-#: activities/submarine/submarine.js:31
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:158
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Turning the lower valve on or off will alternatively allow or stop the "
+#| "water from flushing out the ballast tank, thus allowing it to float on "
+#| "the surface of the water."
+msgctxt "Submarine|"
 msgid ""
 "Turning the lower valve on or off will alternatively allow or stop the water "
 "from flushing out the ballast tank, thus allowing it to float on the surface "
@@ -26583,17 +26852,27 @@ msgstr ""
 "να παραμείνει αντίστοιχα στη δεξαμενή πρόσθετου βάρους. Έτσι, επιτρέπουμε "
 "στο υποβρύχιο να επιπλέει στην επιφάνεια."
 
-#: activities/submarine/submarine.js:34
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:165
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The rightmost item in the control panel controls the diving planes of the "
+#| "submarine"
+msgctxt "Submarine|"
 msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
-"submarine"
+"submarine."
 msgstr ""
 "Στην άκρη δεξιά του πίνακα ελέγχου βρίσκονται τα χειριστήρια των πτερυγίων "
 "κατάδυσης του υποβρυχίου."
 
-#: activities/submarine/submarine.js:35
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:168
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The diving planes in a submarine are used to control the depth of the "
+#| "submarine accurately once it is underwater."
+msgctxt "Submarine|"
 msgid ""
 "The diving planes in a submarine are used to control the depth of the "
 "submarine accurately once it is underwater."
@@ -26601,8 +26880,13 @@ msgstr ""
 "Τα πτερύγια κατάδυσης χρησιμοποιούνται για τον ακριβή έλεγχο του βάθους του "
 "υποβρυχίου όταν βρίσκεται κάτω από το νερό."
 
-#: activities/submarine/submarine.js:36
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:171
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Once the submarine is moving underwater, increasing or decreasing the "
+#| "angle of the planes will increase and decrease the depth of the submarine."
+msgctxt "Submarine|"
 msgid ""
 "Once the submarine is moving underwater, increasing or decreasing the angle "
 "of the planes will increase and decrease the depth of the submarine."
@@ -26611,21 +26895,32 @@ msgstr ""
 "των πτερυγίων κατάδυσης αυξάνει ή μειώνει το βάθος στο οποίο βρίσκεται το "
 "υποβρύχιο."
 
-#: activities/submarine/submarine.js:37
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:174
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The + button will increase the depth of the submarine, while the - button "
+#| "will decrease the depth of the submarine."
+msgctxt "Submarine|"
 msgid ""
 "The + button will increase the depth of the submarine, while the - button "
 "will decrease the depth of the submarine."
 msgstr ""
 "Το κουμπί + αυξάνει το βάθος του υποβρυχίου, ενώ το κουμπί - το μειώνει."
 
-#: activities/submarine/submarine.js:38
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:177
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Grab the crown to open the gate."
+msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "Πιάσε το στέμμα για να ανοίξει η πύλη."
 
-#: activities/submarine/submarine.js:39
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:180
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Check out the help menu for the keyboard controls."
+msgctxt "Submarine|"
 msgid "Check out the help menu for the keyboard controls."
 msgstr "Δες το μενού βοήθειας για τα χειριστήρια."
 
@@ -27581,7 +27876,7 @@ msgstr ""
 "σύστημα ύδρευσης. Όταν το σύστημα ύδρευσης λειτουργήσει και ο Tux είναι στο "
 "ντους, πάτησε το κουμπί του ντους για να κάνει μπάνιο."
 
-#: activities/watercycle/Watercycle.qml:114
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -27590,14 +27885,14 @@ msgstr ""
 "Ο ήλιος είναι το κύριο στοιχείο του κύκλου του νερού. Κάνε κλικ στον ήλιο "
 "για να ξεκινήσει ο κύκλος του νερού."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr ""
 "Καθώς ο ήλιος ανεβαίνει στον ουρανό, το νερό στη θάλασσα αρχίζει να "
 "ζεσταίνεται και να εξατμίζεται."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -27606,7 +27901,7 @@ msgstr ""
 "Οι υδρατμοί συμπυκνώνονται για να σχηματίσουν σύννεφα και όταν αυτά γίνουν "
 "βαριά, αρχίζει να βρέχει. Κάντε κλικ στο σύννεφο."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:118
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -27618,7 +27913,7 @@ msgstr ""
 "(υδραγωγεία). Κάνε κλικ στην αντλία για να τροφοδοτήσεις τους κατοίκους με "
 "νερό."
 
-#: activities/watercycle/Watercycle.qml:119
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -27627,12 +27922,12 @@ msgstr ""
 "Δες τον πύργο γεμάτο με νερό. Ενεργοποίησε τον σταθμό επεξεργασίας λυμάτων "
 "κάνοντας κλικ πάνω του."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Πολύ ωραία, κάνε κλικ στο ντους καθώς ο Tux φτάνει στο σπίτι."
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:122
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
@@ -27640,7 +27935,7 @@ msgstr ""
 "Φανταστικά! Ολοκλήρωσες τον κύκλο του νερού. Μπορείς να συνεχίσεις το "
 "παιχνίδι."
 
-#: activities/watercycle/Watercycle.qml:139
+#: activities/watercycle/Watercycle.qml:141
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -27652,7 +27947,7 @@ msgstr ""
 "παρέχει ενέργεια που εξατμίζει το νερό των ποταμών, των λιμνών, των θαλασσών "
 "και των ωκεανών."
 
-#: activities/watercycle/Watercycle.qml:142
+#: activities/watercycle/Watercycle.qml:144
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -27663,7 +27958,7 @@ msgstr ""
 "Οι υδρατμοί ψύχονται σχηματίζοντας μικροσκοπικά σταγονίδια στα σύννεφα και "
 "όταν αυτά συναντούν κρύο αέρα πάνω από τη γη, αρχίζει η βροχή."
 
-#: activities/watercycle/Watercycle.qml:145
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -27674,7 +27969,7 @@ msgstr ""
 "Αλλά το μεγαλύτερο μέρος του νερού που πέφτει στη γη, ρέει συνεχώς και "
 "τελικά επιστρέφει στις θάλασσες μέσω των ποταμών."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:150
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -28773,25 +29068,45 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "Είμαι έτοιμος"
 
-#: core/Tutorial.qml:140
+#: core/Tutorial.qml:139
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "Προηγούμενο"
 
-#: core/Tutorial.qml:158
+#: core/Tutorial.qml:157
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "Επόμενο"
 
-#: core/Tutorial.qml:175
+#: core/Tutorial.qml:174
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "Παράλειψη"
 
-#: core/Tutorial.qml:175
+#: core/Tutorial.qml:174
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Έναρξη"
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid "Grammatical analysis"
+#~ msgstr "Μέρη του λόγου 2"
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid "Learn to identify grammatical classes."
+#~ msgstr "Μάθε να αναγνωρίζεις τα μέρη του λόγου."
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid ""
+#~ "Select a grammatical class from the list, then select the box under a "
+#~ "word and assign it the class."
+#~ msgstr ""
+#~ "Επίλεξε ένα μέρος του λόγου από τη λίστα και κατόπιν επίλεξε ένα κενό "
+#~ "κουτί κάτω από μια λέξη για να κάνεις την αντιστοίχιση."
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid "Leave the box blank if no class matches."
+#~ msgstr "Άφησε το πεδίο κενό εάν δεν ταιριάζει κανένα μέρος του λόγου."
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"

@@ -2731,13 +2731,13 @@ msgid ""
 msgstr ""
 "同時按下左鍵跟右鍵，來讓球直線前進。在觸控螢幕中，您必須同時用兩手來點。"
 
-#: activities/ballcatch/Ballcatch.qml:228
+#: activities/ballcatch/Ballcatch.qml:227
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr "用兩手同時觸點，來讓球直線前進。"
 
-#: activities/ballcatch/Ballcatch.qml:230
+#: activities/ballcatch/Ballcatch.qml:233
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2858,13 +2858,23 @@ msgid ""
 msgstr ""
 "把題目的十進位數字轉成二進位，並開啟正確位置的燈泡。做好以後按下「確定」。"
 
-#: activities/binary_bulb/binary_bulb.js:20
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:84
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "This activity teaches how to convert decimal numbers to binary numbers."
+msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr "這個遊戲教您如何從十進位數字轉成二進位。"
 
-#: activities/binary_bulb/binary_bulb.js:24
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:88
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Computers use transistors to count and transistors have only two states, "
+#| "0 and 1. Mathematically, these states are represented by 0 and 1, which "
+#| "makes up the binary system of numeration."
+msgctxt "BinaryBulb|"
 msgid ""
 "Computers use transistors to count and transistors have only two states, 0 "
 "and 1. Mathematically, these states are represented by 0 and 1, which makes "
@@ -2873,20 +2883,35 @@ msgstr ""
 "電腦內部使用電晶體來計數。電晶體只有兩種狀態：0 與 1。這也是數學上二進制數值"
 "系統所使用的數字。"
 
-#: activities/binary_bulb/binary_bulb.js:28
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:92
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
+msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr "在遊戲中用燈泡來模擬 0 跟 1，也就是把它關掉或打開。"
 
-#: activities/binary_bulb/binary_bulb.js:32
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:96
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Binary system uses these numbers very efficiently, allowing to count from "
+#| "0 to 255 with 8 bits only."
+msgctxt "BinaryBulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
 "to 255 with 8 bits only."
 msgstr "二進制系統是很有效率的，只要 8 個位元就可以從 0 數到 255。"
 
-#: activities/binary_bulb/binary_bulb.js:36
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:100
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Each bit adds a progressive value, corresponding to the powers of 2, "
+#| "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → "
+#| "2²=4 , bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit "
+#| "8 → 2⁷=128."
+msgctxt "BinaryBulb|"
 msgid ""
 "Each bit adds a progressive value, corresponding to the powers of 2, "
 "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → 2²=4 , "
@@ -2897,13 +2922,21 @@ msgstr ""
 "表：位元 1 → 2⁰=1、位元 2 → 2¹=2、位元 3 → 2²=4、位元 4 → 2³=8、位元 5 → "
 "2⁴=16、位元 6 → 2⁵=32、位元 7 → 2⁶=64、位元 8 → 2⁷=128。"
 
-#: activities/binary_bulb/binary_bulb.js:40
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:104
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
+msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr "要把十進制的 5 換成二進制，就把 1 跟 4 相加。"
 
-#: activities/binary_bulb/binary_bulb.js:44
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:108
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 "
+#| "is equal to binary 101."
+msgctxt "BinaryBulb|"
 msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
 "equal to binary 101."
@@ -2911,12 +2944,15 @@ msgstr ""
 "也就是把代表 1 跟 4 的位元設為 1，其他的設為 0。因此十進位的 5 就是二進位的 "
 "101。"
 
-#: activities/binary_bulb/binary_bulb.js:48
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:112
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid "This image will help you to compute bits' value."
+msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "這張圖片會協助您計算位元的值。"
 
-#: activities/binary_bulb/BinaryBulb.qml:126
+#: activities/binary_bulb/BinaryBulb.qml:160
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3574,14 +3610,14 @@ msgstr ""
 "您是負責運河閘門的人。請以正確的順序開啟大門與閘道，好讓小企鵝雙向都能通過大"
 "門。"
 
-#: activities/canal_lock/CanalLock.qml:73
+#: activities/canal_lock/CanalLock.qml:74
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
 "the different types of water locks available."
 msgstr "您的目標是透過操作不同型態的水門，讓小企鵝通過運河取得木材。"
 
-#: activities/canal_lock/CanalLock.qml:75
+#: activities/canal_lock/CanalLock.qml:77
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3589,7 +3625,7 @@ msgid ""
 "simultaneously."
 msgstr "垂直的彩色條表示水門，點擊可以操作。兩個相同型態的水門不能同時動作。"
 
-#: activities/canal_lock/CanalLock.qml:77
+#: activities/canal_lock/CanalLock.qml:80
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -14771,63 +14807,40 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
 msgstr "返回鍵：刪除前一個輸入的數字"
 
-#: activities/grammar_analysis/grammar_analysis.js:37
-msgctxt "grammar_analysis|"
-msgid "Grammatical analysis"
-msgstr ""
-
-#: activities/grammar_analysis/grammar_analysis.js:38
-#: activities/grammar_analysis/grammar_analysis.js:48
-msgctxt "grammar_analysis|"
-msgid "Learn to identify grammatical classes."
-msgstr ""
-
-#: activities/grammar_analysis/grammar_analysis.js:39
-msgctxt "grammar_analysis|"
-msgid "Find all the words corresponding to the requested grammatical classes."
-msgstr ""
-
-#: activities/grammar_analysis/grammar_analysis.js:40
-msgctxt "grammar_analysis|"
-msgid ""
-"Select a grammatical class from the list, then select the box under a word "
-"and assign it the class."
-msgstr ""
-
-#: activities/grammar_analysis/grammar_analysis.js:41
-msgctxt "grammar_analysis|"
-msgid "Leave the box blank if no class matches."
-msgstr ""
-
-#: activities/grammar_analysis/grammar_analysis.js:47
-msgctxt "grammar_analysis|"
-msgid "Grammatical classes"
-msgstr ""
-
-#: activities/grammar_analysis/grammar_analysis.js:49
-msgctxt "grammar_analysis|"
-msgid "Find all the words corresponding to the requested grammatical class."
-msgstr ""
-
-#: activities/grammar_analysis/grammar_analysis.js:50
-msgctxt "grammar_analysis|"
-msgid ""
-"Select the grammatical class from the list, then select the box under a word "
-"and assign it the class."
-msgstr ""
-
-#: activities/grammar_analysis/grammar_analysis.js:51
-msgctxt "grammar_analysis|"
-msgid "Leave the box blank if the class doesn't match."
-msgstr ""
-
-#: activities/grammar_analysis/grammar_analysis.js:421
+#: activities/grammar_analysis/grammar_analysis.js:398
 #, fuzzy
 #| msgctxt "Admin|"
 #| msgid "empty"
 msgctxt "grammar_analysis|"
 msgid "Empty"
 msgstr "空白"
+
+#: activities/grammar_analysis/GrammarAnalysis.qml:26
+msgctxt "GrammarAnalysis|"
+msgid "Grammatical analysis"
+msgstr ""
+
+#: activities/grammar_analysis/GrammarAnalysis.qml:27
+msgctxt "GrammarAnalysis|"
+msgid "Learn to identify grammatical classes."
+msgstr ""
+
+#: activities/grammar_analysis/GrammarAnalysis.qml:28
+msgctxt "GrammarAnalysis|"
+msgid "Find all the words corresponding to the requested grammatical classes."
+msgstr ""
+
+#: activities/grammar_analysis/GrammarAnalysis.qml:29
+msgctxt "GrammarAnalysis|"
+msgid ""
+"Select a grammatical class from the list, then select the box under a word "
+"and assign it the class."
+msgstr ""
+
+#: activities/grammar_analysis/GrammarAnalysis.qml:30
+msgctxt "GrammarAnalysis|"
+msgid "Leave the box blank if no class matches."
+msgstr ""
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
@@ -14850,6 +14863,33 @@ msgstr ""
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
+msgid "Leave the box blank if the class doesn't match."
+msgstr ""
+
+#: activities/grammar_classes/GrammarClasses.qml:15
+msgctxt "GrammarClasses|"
+msgid "Grammatical classes"
+msgstr ""
+
+#: activities/grammar_classes/GrammarClasses.qml:16
+msgctxt "GrammarClasses|"
+msgid "Learn to identify grammatical classes."
+msgstr ""
+
+#: activities/grammar_classes/GrammarClasses.qml:17
+msgctxt "GrammarClasses|"
+msgid "Find all the words corresponding to the requested grammatical class."
+msgstr ""
+
+#: activities/grammar_classes/GrammarClasses.qml:18
+msgctxt "GrammarClasses|"
+msgid ""
+"Select the grammatical class from the list, then select the box under a word "
+"and assign it the class."
+msgstr ""
+
+#: activities/grammar_classes/GrammarClasses.qml:19
+msgctxt "GrammarClasses|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr ""
 
@@ -14944,7 +14984,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "左、右鍵：移動太空船"
 
-#: activities/gravity/Gravity.qml:219
+#: activities/gravity/Gravity.qml:220
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -16431,8 +16471,13 @@ msgstr ""
 "螢幕上會出現一個小數。在下方格子處數好格子，然後把它拖到上方空白處，直到上方"
 "的長條可以表示所顯示的小數。然後按下 OK 來檢查答案。"
 
-#: activities/learn_decimals/learn_decimals.js:33
-msgctxt "learn_decimals|"
+#: activities/learn_decimals/Learn_decimals.qml:30
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "A decimal number is displayed. The bar with the arrow represents a full "
+#| "unit, and each square in it represents one tenth of this unit."
+msgctxt "Learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
 "unit, and each square in it represents one tenth of this unit."
@@ -16440,8 +16485,15 @@ msgstr ""
 "螢幕上會出現一個小數。下方有格子的長條圖表示 1 個單位，每個格子則是此單位的十"
 "分之一。"
 
-#: activities/learn_decimals/learn_decimals.js:37
-msgctxt "learn_decimals|"
+#: activities/learn_decimals/Learn_decimals.qml:34
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Drag the arrow to select a part of the bar, and drag the selected part of "
+#| "the bar to the empty area. Repeat these steps until the number of dropped "
+#| "bars corresponds to the displayed decimal number. Then click on the OK "
+#| "button to validate your answer."
+msgctxt "Learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
 "the bar to the empty area. Repeat these steps until the number of dropped "
@@ -16451,93 +16503,31 @@ msgstr ""
 "在下方格子處數好格子，然後把它拖到上方空白處，直到上方的長條可以表示所顯示的"
 "小數。然後按下 OK 來檢查答案。"
 
-#: activities/learn_decimals/learn_decimals.js:44
-msgctxt "learn_decimals|"
-msgid ""
-"A subtraction with two decimal numbers is displayed. Below it, the first "
-"number from the subtraction is represented with bars. One bar represents a "
-"full unit, and each square in it represents one tenth of this unit."
-msgstr ""
-"螢幕上會顯示兩個小數相減。在下方，被減數會以長條圖方式呈現。一個長條表示 1 個"
-"單位，而每一個格子則是單位的十分之一。"
-
-#: activities/learn_decimals/learn_decimals.js:48
-msgctxt "learn_decimals|"
-msgid ""
-"Click on the squares to subtract them and display the result of the "
-"operation, and click on the OK button to validate your answer."
-msgstr "點擊方塊來做減法。按下 OK 來看您的答案是否正確。"
-
-#: activities/learn_decimals/learn_decimals.js:52
-#: activities/learn_decimals/learn_decimals.js:67
-msgctxt "learn_decimals|"
-msgid ""
-"If the answer is correct, type the corresponding result, and click on the OK "
-"button to validate your answer."
-msgstr "答案正確的話，輸入結果並按下 OK 來檢查是否正確。"
-
-#: activities/learn_decimals/learn_decimals.js:59
-msgctxt "learn_decimals|"
-msgid ""
-"An addition with two decimal numbers is displayed. The bar with the arrow "
-"represents a full unit, and each square in it represents one tenth of this "
-"unit."
-msgstr ""
-"螢幕上會顯示兩個小數相加。下方有格子的長條圖表示 1 個單位，每個格子則是此單位"
-"的十分之一。"
-
-#: activities/learn_decimals/learn_decimals.js:63
-msgctxt "learn_decimals|"
-msgid ""
-"Drag the arrow to select a part of the bar, and drag the selected part of "
-"the bar to the empty area. Repeat these steps until the number of dropped "
-"bars corresponds to the result of the addition, and click on the OK button "
-"to validate your answer."
-msgstr ""
-"在下方格子處數好格子，然後把它拖到上方空白處，直到上方的長條可以表示加法運算"
-"後的結果。然後按下 OK 來檢查答案。"
-
-#: activities/learn_decimals/learn_decimals.js:74
-msgctxt "learn_decimals|"
-msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
-msgstr "螢幕上顯示一個數字。下方的橘色小點最多可以選 10 個。"
-
-#: activities/learn_decimals/learn_decimals.js:78
-msgctxt "learn_decimals|"
-msgid ""
-"Drag the arrow to select a number of oranges, and drag the selected oranges "
-"to the empty area. Repeat these steps until the number of oranges "
-"corresponds to the requested quantity. Then click on the OK button to "
-"validate your answer."
-msgstr ""
-"在下方數好橘色小點，然後把它拖到上方空白處，直到上方的橘點數可以表示所要求的"
-"數量。然後按下 OK 來檢查答案。"
-
-#: activities/learn_decimals/Learn_decimals.qml:142
+#: activities/learn_decimals/Learn_decimals.qml:150
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "請排出數字：%1"
 
-#: activities/learn_decimals/Learn_decimals.qml:143
+#: activities/learn_decimals/Learn_decimals.qml:151
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "請排出計算結果：%1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:144
+#: activities/learn_decimals/Learn_decimals.qml:152
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "請排出計算結果：%1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:145
+#: activities/learn_decimals/Learn_decimals.qml:153
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "請排出數量：%1"
 
-#: activities/learn_decimals/Learn_decimals.qml:602
+#: activities/learn_decimals/Learn_decimals.qml:610
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -16619,6 +16609,52 @@ msgctxt "ActivityInfo|"
 msgid "Numbers: type the result"
 msgstr "數字：請輸入結果"
 
+#: activities/learn_decimals_additions/Learn_decimals_additions.qml:16
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "An addition with two decimal numbers is displayed. The bar with the arrow "
+#| "represents a full unit, and each square in it represents one tenth of "
+#| "this unit."
+msgctxt "Learn_decimals_additions|"
+msgid ""
+"An addition with two decimal numbers is displayed. The bar with the arrow "
+"represents a full unit, and each square in it represents one tenth of this "
+"unit."
+msgstr ""
+"螢幕上會顯示兩個小數相加。下方有格子的長條圖表示 1 個單位，每個格子則是此單位"
+"的十分之一。"
+
+#: activities/learn_decimals_additions/Learn_decimals_additions.qml:20
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Drag the arrow to select a part of the bar, and drag the selected part of "
+#| "the bar to the empty area. Repeat these steps until the number of dropped "
+#| "bars corresponds to the result of the addition, and click on the OK "
+#| "button to validate your answer."
+msgctxt "Learn_decimals_additions|"
+msgid ""
+"Drag the arrow to select a part of the bar, and drag the selected part of "
+"the bar to the empty area. Repeat these steps until the number of dropped "
+"bars corresponds to the result of the addition, and click on the OK button "
+"to validate your answer."
+msgstr ""
+"在下方格子處數好格子，然後把它拖到上方空白處，直到上方的長條可以表示加法運算"
+"後的結果。然後按下 OK 來檢查答案。"
+
+#: activities/learn_decimals_additions/Learn_decimals_additions.qml:24
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "If the answer is correct, type the corresponding result, and click on the "
+#| "OK button to validate your answer."
+msgctxt "Learn_decimals_additions|"
+msgid ""
+"If the answer is correct, type the corresponding result, and click on the OK "
+"button to validate your answer."
+msgstr "答案正確的話，輸入結果並按下 OK 來檢查是否正確。"
+
 #: activities/learn_decimals_additions/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Add decimal numbers up to 1."
@@ -16677,6 +16713,46 @@ msgid ""
 msgstr ""
 "螢幕上會顯示兩個小數相減。在下方，被減數會以長條圖方式呈現。一個長條表示 1 個"
 "單位，而每一個格子則是單位的十分之一。點擊方塊來做減法運算，並找出答案"
+
+#: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:16
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "A subtraction with two decimal numbers is displayed. Below it, the first "
+#| "number from the subtraction is represented with bars. One bar represents "
+#| "a full unit, and each square in it represents one tenth of this unit."
+msgctxt "Learn_decimals_subtractions|"
+msgid ""
+"A subtraction with two decimal numbers is displayed. Below it, the first "
+"number from the subtraction is represented with bars. One bar represents a "
+"full unit, and each square in it represents one tenth of this unit."
+msgstr ""
+"螢幕上會顯示兩個小數相減。在下方，被減數會以長條圖方式呈現。一個長條表示 1 個"
+"單位，而每一個格子則是單位的十分之一。"
+
+#: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:20
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Click on the squares to subtract them and display the result of the "
+#| "operation, and click on the OK button to validate your answer."
+msgctxt "Learn_decimals_subtractions|"
+msgid ""
+"Click on the squares to subtract them and display the result of the "
+"operation, and click on the OK button to validate your answer."
+msgstr "點擊方塊來做減法。按下 OK 來看您的答案是否正確。"
+
+#: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:24
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "If the answer is correct, type the corresponding result, and click on the "
+#| "OK button to validate your answer."
+msgctxt "Learn_decimals_subtractions|"
+msgid ""
+"If the answer is correct, type the corresponding result, and click on the OK "
+"button to validate your answer."
+msgstr "答案正確的話，輸入結果並按下 OK 來檢查是否正確。"
 
 #: activities/learn_decimals_subtractions/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -16845,6 +16921,33 @@ msgid ""
 msgstr ""
 "螢幕上會顯示一個數量。在下方數好橘色小點，然後把它拖到上方空白處，直到上方的"
 "橘點數可以表示所要求的數量。然後按下 OK 來檢查答案。"
+
+#: activities/learn_quantities/Learn_quantities.qml:16
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "A quantity is requested. The arrow allows to select up to 10 oranges."
+msgctxt "Learn_quantities|"
+msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
+msgstr "螢幕上顯示一個數字。下方的橘色小點最多可以選 10 個。"
+
+#: activities/learn_quantities/Learn_quantities.qml:20
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Drag the arrow to select a number of oranges, and drag the selected "
+#| "oranges to the empty area. Repeat these steps until the number of oranges "
+#| "corresponds to the requested quantity. Then click on the OK button to "
+#| "validate your answer."
+msgctxt "Learn_quantities|"
+msgid ""
+"Drag the arrow to select a number of oranges, and drag the selected oranges "
+"to the empty area. Repeat these steps until the number of oranges "
+"corresponds to the requested quantity. Then click on the OK button to "
+"validate your answer."
+msgstr ""
+"在下方數好橘色小點，然後把它拖到上方空白處，直到上方的橘點數可以表示所要求的"
+"數量。然後按下 OK 來檢查答案。"
 
 #: activities/learn_quantities/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -19963,15 +20066,63 @@ msgid ""
 "has only 2 pieces left."
 msgstr ""
 
-#: activities/nine_men_morris/nine_men_morris.js:29
+#: activities/nine_men_morris/nine_men_morris.js:240
+#: activities/nine_men_morris/nine_men_morris.js:1086
 msgctxt "nine_men_morris|"
+msgid "Place a piece"
+msgstr "放棋子"
+
+#: activities/nine_men_morris/nine_men_morris.js:366
+#: activities/nine_men_morris/nine_men_morris.js:1144
+msgctxt "nine_men_morris|"
+msgid "Move a piece"
+msgstr "移動棋子"
+
+#: activities/nine_men_morris/nine_men_morris.js:918
+msgctxt "nine_men_morris|"
+msgid "Remove a piece"
+msgstr "吃掉棋子"
+
+#: activities/nine_men_morris/nine_men_morris.js:1121
+msgctxt "nine_men_morris|"
+msgid "Congratulations"
+msgstr "恭喜"
+
+#: activities/nine_men_morris/nine_men_morris.js:1124
+msgctxt "nine_men_morris|"
+msgid "Congratulations Player 1"
+msgstr "恭喜玩家 1"
+
+#: activities/nine_men_morris/nine_men_morris.js:1135
+msgctxt "nine_men_morris|"
+msgid "Congratulations Player 2"
+msgstr "恭喜玩家 2"
+
+#: activities/nine_men_morris/nine_men_morris.js:1138
+msgctxt "nine_men_morris|"
+msgid "Try again"
+msgstr "再試一次"
+
+#: activities/nine_men_morris/NineMenMorris.qml:348
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "You and Tux start with 9 pieces each, and take turns to place your pieces "
+#| "on the empty spots of the board (by clicking on the spots)."
+msgctxt "NineMenMorris|"
 msgid ""
 "You and Tux start with 9 pieces each, and take turns to place your pieces on "
 "the empty spots of the board (by clicking on the spots)."
 msgstr "雙方一開始都各有九顆棋子，輪流放在棋盤上的空位（點擊空點即可放棋）。"
 
-#: activities/nine_men_morris/nine_men_morris.js:33
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:352
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
+#| "remove it. Pieces of formed mill can not be removed unless no other "
+#| "pieces are left on the board."
+msgctxt "NineMenMorris|"
 msgid ""
 "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
 "remove it. Pieces of formed mill can not be removed unless no other pieces "
@@ -19980,8 +20131,14 @@ msgstr ""
 "如果您的三顆棋子連成一線，就可以選擇吃掉小企鵝的其中一顆棋子。不過除非沒有其"
 "它棋子可以吃，不然不能吃已經連成一線的棋子。"
 
-#: activities/nine_men_morris/nine_men_morris.js:37
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:356
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "After all the pieces are placed, you and Tux will take turns to move "
+#| "them. Click on one of your pieces, and then on an adjacent empty spot to "
+#| "move it there. Green color spots indicates where you can move."
+msgctxt "NineMenMorris|"
 msgid ""
 "After all the pieces are placed, you and Tux will take turns to move them. "
 "Click on one of your pieces, and then on an adjacent empty spot to move it "
@@ -19990,56 +20147,29 @@ msgstr ""
 "當所有的棋子都擺完後，就可以開始輪流移動棋子。要移動棋子時，先點擊棋子，然後"
 "點擊旁邊空白的位置就可以移動。綠色的點表示您可以移動的位置。"
 
-#: activities/nine_men_morris/nine_men_morris.js:41
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:360
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
+#| "moved to any vacant spot on the board."
+msgctxt "NineMenMorris|"
 msgid ""
 "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
 "moved to any vacant spot on the board."
 msgstr "如果您只剩三顆棋子，那就進入「飛行模式」，可以移動到棋盤中任一個空位。"
 
-#: activities/nine_men_morris/nine_men_morris.js:45
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:364
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "If you immobilize the computer or leave it with less than 3 pieces, then "
+#| "you win the game."
+msgctxt "NineMenMorris|"
 msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
 "win the game."
 msgstr "如果您讓對手無法再移動，或是剩不到三顆棋子，您就贏了。"
-
-#: activities/nine_men_morris/nine_men_morris.js:262
-#: activities/nine_men_morris/nine_men_morris.js:1108
-msgctxt "nine_men_morris|"
-msgid "Place a piece"
-msgstr "放棋子"
-
-#: activities/nine_men_morris/nine_men_morris.js:388
-#: activities/nine_men_morris/nine_men_morris.js:1166
-msgctxt "nine_men_morris|"
-msgid "Move a piece"
-msgstr "移動棋子"
-
-#: activities/nine_men_morris/nine_men_morris.js:940
-msgctxt "nine_men_morris|"
-msgid "Remove a piece"
-msgstr "吃掉棋子"
-
-#: activities/nine_men_morris/nine_men_morris.js:1143
-msgctxt "nine_men_morris|"
-msgid "Congratulations"
-msgstr "恭喜"
-
-#: activities/nine_men_morris/nine_men_morris.js:1146
-msgctxt "nine_men_morris|"
-msgid "Congratulations Player 1"
-msgstr "恭喜玩家 1"
-
-#: activities/nine_men_morris/nine_men_morris.js:1157
-msgctxt "nine_men_morris|"
-msgid "Congratulations Player 2"
-msgstr "恭喜玩家 2"
-
-#: activities/nine_men_morris/nine_men_morris.js:1160
-msgctxt "nine_men_morris|"
-msgid "Try again"
-msgstr "再試一次"
 
 #. Activity title
 #: activities/nine_men_morris_2players/ActivityInfo.qml:15
@@ -20104,25 +20234,25 @@ msgid "New note: %1"
 msgstr "新的音符：%1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:270
+#: activities/note_names/NoteNames.qml:271
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:448
+#: activities/note_names/NoteNames.qml:449
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr "這個遊戲需要播放聲音，所以即使您設定關閉聲音或音效，它還是會播出聲音。"
 
-#: activities/note_names/NoteNames.qml:449
+#: activities/note_names/NoteNames.qml:450
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "離開"
 
-#: activities/note_names/NoteNames.qml:450
+#: activities/note_names/NoteNames.qml:451
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "繼續"
@@ -20221,7 +20351,7 @@ msgstr ""
 "直接點取目標也可以。至於要抓哪些數字，您要嘛就靠記憶力，不然也可以偷偷看右下"
 "角。"
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:14
+#: activities/numbers-odd-even/NumbersOddEven.qml:15
 #, fuzzy
 #| msgctxt "TutorialBase|"
 #| msgid "Choose the even number:"
@@ -20229,7 +20359,7 @@ msgctxt "NumbersOddEven|"
 msgid "Catch the even numbers."
 msgstr "選擇偶數："
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:15
+#: activities/numbers-odd-even/NumbersOddEven.qml:16
 #, fuzzy
 #| msgctxt "TutorialBase|"
 #| msgid "Choose the odd number:"
@@ -20237,13 +20367,13 @@ msgctxt "NumbersOddEven|"
 msgid "Catch the odd numbers."
 msgstr "選擇奇數："
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:42
+#: activities/numbers-odd-even/NumbersOddEven.qml:43
 msgctxt "NumbersOddEven|"
 msgid "This activity teaches about even and odd numbers."
 msgstr "這個遊戲可以學習何謂奇數與偶數。"
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:46
-#: activities/numbers-odd-even/NumbersOddEven.qml:56
+#: activities/numbers-odd-even/NumbersOddEven.qml:47
+#: activities/numbers-odd-even/NumbersOddEven.qml:55
 msgctxt "NumbersOddEven|"
 msgid ""
 "Even numbers are numbers which leave a remainder of 0 when divided by 2."
@@ -20254,16 +20384,16 @@ msgctxt "NumbersOddEven|"
 msgid "What is meant by remainder?"
 msgstr "什麼是餘數？"
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:60
+#: activities/numbers-odd-even/NumbersOddEven.qml:59
 msgctxt "NumbersOddEven|"
 msgid ""
 "Odd numbers are numbers which do not leave a remainder of 0 when divided by "
 "2."
 msgstr "奇數是指除以 2 餘數不是 0 的數字。"
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:64
-#: activities/numbers-odd-even/NumbersOddEven.qml:68
-#: activities/numbers-odd-even/NumbersOddEven.qml:72
+#: activities/numbers-odd-even/NumbersOddEven.qml:63
+#: activities/numbers-odd-even/NumbersOddEven.qml:67
+#: activities/numbers-odd-even/NumbersOddEven.qml:71
 msgctxt "NumbersOddEven|"
 msgid "Exercise to test your understanding."
 msgstr "測試您的理解程度的練習。"
@@ -22273,104 +22403,6 @@ msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "選取指令"
 
-#: activities/programmingMaze/programmingMaze.js:96
-msgctxt "programmingMaze|"
-msgid "Instruction Area:"
-msgstr "指令區："
-
-#: activities/programmingMaze/programmingMaze.js:97
-msgctxt "programmingMaze|"
-msgid ""
-"There are 3 instructions which you can use to code and lead Tux to the fish:"
-msgstr "有三個您可以使用的指令，用來引導小企鵝找到魚："
-
-#: activities/programmingMaze/programmingMaze.js:98
-msgctxt "programmingMaze|"
-msgid ""
-"<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
-"facing."
-msgstr "<b>1. 往前移動：</b>讓小企鵝往它面對的方向前進一步。"
-
-#: activities/programmingMaze/programmingMaze.js:99
-msgctxt "programmingMaze|"
-msgid "<b>2. Turn left:</b> Turns Tux to the left."
-msgstr "<b>2. 左轉：</b>讓小企鵝左轉。"
-
-#: activities/programmingMaze/programmingMaze.js:100
-msgctxt "programmingMaze|"
-msgid "<b>3. Turn right:</b> Turns Tux to the right."
-msgstr "<b>3. 右轉：</b>讓小企鵝右轉。"
-
-#: activities/programmingMaze/programmingMaze.js:104
-msgctxt "programmingMaze|"
-msgid "Main Function:"
-msgstr "主程式："
-
-#: activities/programmingMaze/programmingMaze.js:105
-msgctxt "programmingMaze|"
-msgid "The execution of the code starts here."
-msgstr "程式碼從這裡開始執行。"
-
-#: activities/programmingMaze/programmingMaze.js:106
-msgctxt "programmingMaze|"
-msgid ""
-"-Click on any instruction in the <b>instruction area</b> to add it to the "
-"<b>Main Function</b>."
-msgstr "- 在指令區點擊任何指令，將它加入<b>主程式</b>。"
-
-#: activities/programmingMaze/programmingMaze.js:107
-msgctxt "programmingMaze|"
-msgid ""
-"-The instructions will execute in order until there's none left, or until a "
-"dead-end, or when Tux reaches the fish."
-msgstr ""
-"- 指令會依照它們放置的順序執行，直到沒有指令可執行，走到死路，或是小企鵝走到"
-"目標抓到魚為止。"
-
-#: activities/programmingMaze/programmingMaze.js:114
-msgctxt "programmingMaze|"
-msgid "Procedure:"
-msgstr "副程式："
-
-#: activities/programmingMaze/programmingMaze.js:115
-msgctxt "programmingMaze|"
-msgid ""
-"<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
-"the code by calling it where needed</b>."
-msgstr "<b>副程式</b>是一群<b>可以被主程式重覆呼叫使用的指令</b>。"
-
-#: activities/programmingMaze/programmingMaze.js:116
-msgctxt "programmingMaze|"
-msgid ""
-"-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
-"area</b> to add your code, click on the <b>Procedure</b> or <b>Main "
-"Function</b> label."
-msgstr ""
-" - 要在<b>副程式</b>與<b>主程式</b>間<b>切換</b>以便新增指令，您只要點擊一下"
-"<b>副程式</b>或<b>主程式</b>的標籤即可。"
-
-#: activities/programmingMaze/programmingMaze.js:123
-msgctxt "programmingMaze|"
-msgid "Loop:"
-msgstr "迴圈："
-
-#: activities/programmingMaze/programmingMaze.js:124
-msgctxt "programmingMaze|"
-msgid ""
-"<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
-"the number of times defined by the number inside it</b>."
-msgstr "<b>迴圈</b>是一串程式指令，可以<b>重複執行指定的次數</b>。"
-
-#: activities/programmingMaze/programmingMaze.js:125
-msgctxt "programmingMaze|"
-msgid ""
-"-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
-"area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
-"label."
-msgstr ""
-" - 要在<b>迴圈</b>與<b>主程式</b>間<b>切換</b>以便新增指令，您只要點擊一下<b>"
-"迴圈</b>或<b>主程式</b>的標籤即可。"
-
 #: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
@@ -22391,6 +22423,167 @@ msgstr "副程式"
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "迴圈"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:542
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Instruction Area:"
+msgctxt "ProgrammingMaze|"
+msgid "Instruction Area:"
+msgstr "指令區："
+
+#: activities/programmingMaze/ProgrammingMaze.qml:543
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "There are 3 instructions which you can use to code and lead Tux to the "
+#| "fish:"
+msgctxt "ProgrammingMaze|"
+msgid ""
+"There are 3 instructions which you can use to code and lead Tux to the fish:"
+msgstr "有三個您可以使用的指令，用來引導小企鵝找到魚："
+
+#: activities/programmingMaze/ProgrammingMaze.qml:544
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
+#| "facing."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
+"facing."
+msgstr "<b>1. 往前移動：</b>讓小企鵝往它面對的方向前進一步。"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:545
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "<b>2. Turn left:</b> Turns Tux to the left."
+msgctxt "ProgrammingMaze|"
+msgid "<b>2. Turn left:</b> Turns Tux to the left."
+msgstr "<b>2. 左轉：</b>讓小企鵝左轉。"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:546
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "<b>3. Turn right:</b> Turns Tux to the right."
+msgctxt "ProgrammingMaze|"
+msgid "<b>3. Turn right:</b> Turns Tux to the right."
+msgstr "<b>3. 右轉：</b>讓小企鵝右轉。"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:550
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Main Function:"
+msgctxt "ProgrammingMaze|"
+msgid "Main Function:"
+msgstr "主程式："
+
+#: activities/programmingMaze/ProgrammingMaze.qml:551
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "The execution of the code starts here."
+msgctxt "ProgrammingMaze|"
+msgid "The execution of the code starts here."
+msgstr "程式碼從這裡開始執行。"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:552
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-Click on any instruction in the <b>instruction area</b> to add it to the "
+#| "<b>Main Function</b>."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-Click on any instruction in the <b>instruction area</b> to add it to the "
+"<b>Main Function</b>."
+msgstr "- 在指令區點擊任何指令，將它加入<b>主程式</b>。"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:553
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-The instructions will execute in order until there's none left, or until "
+#| "a dead-end, or when Tux reaches the fish."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-The instructions will execute in order until there's none left, or until a "
+"dead-end, or when Tux reaches the fish."
+msgstr ""
+"- 指令會依照它們放置的順序執行，直到沒有指令可執行，走到死路，或是小企鵝走到"
+"目標抓到魚為止。"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:563
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Procedure:"
+msgctxt "ProgrammingMaze|"
+msgid "Procedure:"
+msgstr "副程式："
+
+#: activities/programmingMaze/ProgrammingMaze.qml:564
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "<b>Procedure</b> is a reusable set of instructions which can be <b>used "
+#| "in the code by calling it where needed</b>."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
+"the code by calling it where needed</b>."
+msgstr "<b>副程式</b>是一群<b>可以被主程式重覆呼叫使用的指令</b>。"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:565
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main "
+#| "Function area</b> to add your code, click on the <b>Procedure</b> or "
+#| "<b>Main Function</b> label."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
+"area</b> to add your code, click on the <b>Procedure</b> or <b>Main "
+"Function</b> label."
+msgstr ""
+" - 要在<b>副程式</b>與<b>主程式</b>間<b>切換</b>以便新增指令，您只要點擊一下"
+"<b>副程式</b>或<b>主程式</b>的標籤即可。"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:575
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Loop:"
+msgctxt "ProgrammingMaze|"
+msgid "Loop:"
+msgstr "迴圈："
+
+#: activities/programmingMaze/ProgrammingMaze.qml:576
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
+#| "the number of times defined by the number inside it</b>."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
+"the number of times defined by the number inside it</b>."
+msgstr "<b>迴圈</b>是一串程式指令，可以<b>重複執行指定的次數</b>。"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:577
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
+#| "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</"
+#| "b> label."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
+"area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
+"label."
+msgstr ""
+" - 要在<b>迴圈</b>與<b>主程式</b>間<b>切換</b>以便新增指令，您只要點擊一下<b>"
+"迴圈</b>或<b>主程式</b>的標籤即可。"
 
 #: activities/programmingMaze/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -22466,14 +22659,14 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Enter 或 Return 鍵：送出您的答案"
 
-#: activities/railroad/Railroad.qml:125
+#: activities/railroad/Railroad.qml:126
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
 "to set up a similar train."
 msgstr "在時限前觀察並記住火車的組合，然後重新組出正確的火車。"
 
-#: activities/railroad/Railroad.qml:126
+#: activities/railroad/Railroad.qml:129
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -22683,14 +22876,14 @@ msgstr ""
 "力系統。當系統完成準備並讓小企鵝回到家，幫牠按下燈的開關。您必須在發電的系統"
 "都啟動後，打開所有的電器才能過關。"
 
-#: activities/renewable_energy/RenewableEnergy.qml:302
+#: activities/renewable_energy/RenewableEnergy.qml:304
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
 "up so he can have light in his home."
 msgstr "小企鵝剛從船上釣完魚回到家。請將電力系統準備好讓牠可以沖個澡。"
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:307
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22699,7 +22892,7 @@ msgstr ""
 "點擊不同的元素：太陽、雲、水壩、太陽能板，風力發電場與變壓器等，來啟動整個電"
 "力系統。"
 
-#: activities/renewable_energy/RenewableEnergy.qml:306
+#: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22709,12 +22902,12 @@ msgstr ""
 "當系統完成準備並讓小企鵝回到家，幫牠按下燈的開關。您必須在發電的系統都啟動"
 "後，打開所有的電器才能過關。"
 
-#: activities/renewable_energy/RenewableEnergy.qml:308
+#: activities/renewable_energy/RenewableEnergy.qml:313
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "學習運用可再造能源來建立電力系統。"
 
-#: activities/renewable_energy/RenewableEnergy.qml:333
+#: activities/renewable_energy/RenewableEnergy.qml:339
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -23564,13 +23757,13 @@ msgctxt "ActivityInfo|"
 msgid "If there is a rest, it needs to be placed inside the candy jar."
 msgstr "如果有剩餘，要放在糖果盒內。"
 
-#: activities/share/resource/1/Data.qml:13
+#: activities/share/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, no rest."
 msgstr "最多 25 顆糖與 5 個小孩，沒有剩餘。"
 
-#: activities/share/resource/1/Data.qml:18
-#: activities/share/resource/2/Data.qml:18
+#: activities/share/resource/1/Data.qml:20
+#: activities/share/resource/2/Data.qml:20
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 2 pieces of candy equally between 2 of his girl friends. "
@@ -23580,18 +23773,18 @@ msgstr ""
 "保羅想要把 2 顆糖果平均分給他的 2 個女朋友。您可以幫幫他嗎？先將他的朋友放在"
 "中間，然後把糖果分給他們。"
 
-#: activities/share/resource/1/Data.qml:28
+#: activities/share/resource/1/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 4 pieces of candy equally among his friends."
 msgstr "現在他想把 4 顆糖果平分給朋友。"
 
-#: activities/share/resource/1/Data.qml:38
+#: activities/share/resource/1/Data.qml:40
 msgctxt "Data|"
 msgid ""
 "Can you now share 6 of Paul's pieces of candy equally among his friends?"
 msgstr "您現在知道怎麼將保羅的 6 顆糖果分給他的朋友了嗎？"
 
-#: activities/share/resource/1/Data.qml:48
+#: activities/share/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid ""
 "Some of his friends already have pieces of candy. He wants to give them 7 "
@@ -23599,7 +23792,7 @@ msgid ""
 msgstr ""
 "他的朋友中有些已經有糖果了。他想再給他們 7 顆糖果，讓大家都有一樣多的糖果。"
 
-#: activities/share/resource/1/Data.qml:58
+#: activities/share/resource/1/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 12 pieces of candy left. He eats 2 pieces of candy and he "
@@ -23609,14 +23802,14 @@ msgstr ""
 "保羅只剩 12 顆糖了。他吃了 2 顆糖，然後打算把剩下的分給朋友。您可以幫忙他把剩"
 "下的 10 顆糖分出去嗎？"
 
-#: activities/share/resource/1/Data.qml:70
+#: activities/share/resource/1/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "George wants to share 3 pieces of candy equally between 3 of his girl "
 "friends. Can he split the pieces of candy equally?"
 msgstr "喬治打算把他的 3 顆糖分給他的 3 個女朋友。他可以公平地分配糖果嗎？"
 
-#: activities/share/resource/1/Data.qml:80
+#: activities/share/resource/1/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 6 pieces of candy equally between 3 of her friends: 1 "
@@ -23625,7 +23818,7 @@ msgstr ""
 "瑪莉亞打算把他的 6 顆糖分給她的 3 個朋友：2 個男孩與 1 個女孩。她可以公平地分"
 "配糖果嗎？"
 
-#: activities/share/resource/1/Data.qml:90
+#: activities/share/resource/1/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "John wants to share 8 pieces of candy equally between 3 of his friends: 1 "
@@ -23635,7 +23828,7 @@ msgstr ""
 "約翰想要把 8 顆糖果平均分給他的 3 個朋友：2 個女孩與 1 個男孩。男孩已經有 1 "
 "顆糖了。他能公平地把糖果分給朋友，讓每個人都有一樣多的糖果嗎？"
 
-#: activities/share/resource/1/Data.qml:100
+#: activities/share/resource/1/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 12 pieces of candy equally between 3 of his friends: 2 "
@@ -23644,7 +23837,7 @@ msgstr ""
 "鮑伯打算把他的 12 顆糖分給他的 3 個朋友：2 個男孩跟 1 個女孩。他可以公平地分"
 "配糖果嗎？"
 
-#: activities/share/resource/1/Data.qml:110
+#: activities/share/resource/1/Data.qml:112
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 11 pieces of candy between 3 of her friends: 1 boy and "
@@ -23654,20 +23847,20 @@ msgstr ""
 "瑪莉亞想要把 11 顆糖果平均分給她的 3 個朋友：2 個女孩與 1 個男孩。女孩們已經"
 "有一些糖果了。她能公平地把糖果分給朋友，讓他們每個人都有相同數量的糖果嗎？"
 
-#: activities/share/resource/1/Data.qml:122
-#: activities/share/resource/2/Data.qml:112
+#: activities/share/resource/1/Data.qml:124
+#: activities/share/resource/2/Data.qml:114
 msgctxt "Data|"
 msgid ""
 "Alice wants to share 4 pieces of candy equally between 4 of her girl "
 "friends. Can you help her?"
 msgstr "愛莉絲想要將 4 顆糖公平地分給她的 4 個女朋友。您可以幫幫她嗎？"
 
-#: activities/share/resource/1/Data.qml:132
+#: activities/share/resource/1/Data.qml:134
 msgctxt "Data|"
 msgid "Now, Alice wants to give 8 pieces of candy to her friends."
 msgstr "現在，愛莉絲想把 8 顆糖果分給朋友。"
 
-#: activities/share/resource/1/Data.qml:142
+#: activities/share/resource/1/Data.qml:144
 msgctxt "Data|"
 msgid ""
 "Alice wants to give 10 pieces of candy to her friends, 1 girl and 3 boys, so "
@@ -23677,12 +23870,12 @@ msgstr ""
 "愛莉絲打算把 10 顆糖果分給她的朋友：1 個女孩與 3 個男孩。女孩已經有一些糖果"
 "了，她想讓朋友們都有一樣多的糖果。"
 
-#: activities/share/resource/1/Data.qml:152
+#: activities/share/resource/1/Data.qml:154
 msgctxt "Data|"
 msgid "Alice wants to give 16 pieces of candy to her friends."
 msgstr "現在，愛莉絲想把 16 顆糖果分給朋友。"
 
-#: activities/share/resource/1/Data.qml:162
+#: activities/share/resource/1/Data.qml:164
 msgctxt "Data|"
 msgid ""
 "Alice wants to give pieces of candy to 4 friends. Some of them already have "
@@ -23692,14 +23885,14 @@ msgstr ""
 "愛莉絲要把糖果分給她的 4 個朋友。她的朋友中有些已經有糖果了。您可以幫她公平地"
 "分配 14 顆糖果，讓每個朋友的糖果數量相同嗎？"
 
-#: activities/share/resource/1/Data.qml:174
+#: activities/share/resource/1/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Michael wants to share 5 pieces of candy equally between 5 of his girl "
 "friends. Can you help him?"
 msgstr "麥可想要將 5 顆糖公平地分給他的 5 個女朋友。您可以幫幫他嗎？"
 
-#: activities/share/resource/1/Data.qml:184
+#: activities/share/resource/1/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Helen has 5 friends: 2 boys and 3 girls. She wants to give them 10 pieces of "
@@ -23707,7 +23900,7 @@ msgid ""
 msgstr ""
 "海倫有 5 個朋友：2 個男孩跟 3 個女孩。她要把 10 顆糖平均分給他們。幫幫她吧！"
 
-#: activities/share/resource/1/Data.qml:194
+#: activities/share/resource/1/Data.qml:196
 msgctxt "Data|"
 msgid ""
 "Michelle wants to share 12 pieces of candy equally between her 4 brothers "
@@ -23717,7 +23910,7 @@ msgstr ""
 "米雪兒有 12 顆糖，打算將它們分給 4 個弟弟與 1 個妹妹。她的妹妹已經有一些糖果"
 "了，她想公平地分配讓每個人都有一樣多的糖果。"
 
-#: activities/share/resource/1/Data.qml:204
+#: activities/share/resource/1/Data.qml:206
 msgctxt "Data|"
 msgid ""
 "Thomas wants to share his 20 pieces of candy with his friends: 1 boy and 4 "
@@ -23725,7 +23918,7 @@ msgid ""
 msgstr ""
 "湯瑪士有 20 顆糖，打算分給他的朋友：1 個男孩與 4 個女孩。您可以幫幫他嗎？"
 
-#: activities/share/resource/1/Data.qml:214
+#: activities/share/resource/1/Data.qml:216
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 20 pieces of candy equally between 5 of his friends. "
@@ -23734,14 +23927,14 @@ msgstr ""
 "保羅想要把 20 顆糖果平均分給他的 5 個朋友。他的朋友們每個人都已經有一顆糖果"
 "了。您可以幫幫他嗎？"
 
-#: activities/share/resource/1/Data.qml:226
+#: activities/share/resource/1/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally with 2 of his girl "
 "friends. Can he split the pieces of candy equally?"
 msgstr "查爾斯打算把他的 6 顆糖分給他的 2 個女朋友。他可以公平地分配糖果嗎？"
 
-#: activities/share/resource/1/Data.qml:236
+#: activities/share/resource/1/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -23752,7 +23945,7 @@ msgstr ""
 "女孩們已經有一些糖果了。她要怎麼樣才能公平地把糖果分配給朋友，讓每個人都有一"
 "樣多的糖果？"
 
-#: activities/share/resource/1/Data.qml:246
+#: activities/share/resource/1/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 16 pieces of candy to share equally with his "
@@ -23761,7 +23954,7 @@ msgid ""
 msgstr ""
 "傑森的爸爸給了他 16 顆糖讓他平均分給朋友：2 個男孩與 2 個女孩。幫幫他吧！"
 
-#: activities/share/resource/1/Data.qml:256
+#: activities/share/resource/1/Data.qml:258
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy between 4 of his friends: 2 girls "
@@ -23771,7 +23964,7 @@ msgstr ""
 "喬治想要把 14 顆糖果平均分給他的 4 個朋友：2 個女孩與 2 個男孩。每個男孩都已"
 "經有一顆糖了。他想公平地把糖果分給朋友讓每個人都有一樣多的糖果。"
 
-#: activities/share/resource/1/Data.qml:266
+#: activities/share/resource/1/Data.qml:268
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 25 pieces of candy equally between 5 of her friends: 3 "
@@ -23780,27 +23973,27 @@ msgstr ""
 "瑪莉亞打算把他的 25 顆糖分給她 的 5 個朋友：2 個男孩與 3 個女孩。她可以公平地"
 "分配糖果嗎？"
 
-#: activities/share/resource/2/Data.qml:13
+#: activities/share/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, possible rest."
 msgstr "最多 25 顆糖與 5 個小孩，可能有剩餘。"
 
-#: activities/share/resource/2/Data.qml:28
+#: activities/share/resource/2/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 5 pieces of candy among his friends."
 msgstr "現在他想把 5 顆糖果分給朋友。"
 
-#: activities/share/resource/2/Data.qml:38
+#: activities/share/resource/2/Data.qml:40
 msgctxt "Data|"
 msgid "Can you now share 7 of Paul's pieces of candy among his friends?"
 msgstr "您現在知道怎麼將保羅的 7 顆糖果分給他的朋友了嗎？"
 
-#: activities/share/resource/2/Data.qml:48
+#: activities/share/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Can you now share 8 of Paul's pieces of candy among his friends?"
 msgstr "您現在知道怎麼將保羅的 8 顆糖果分給他的朋友了嗎？"
 
-#: activities/share/resource/2/Data.qml:58
+#: activities/share/resource/2/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 11 pieces of candy left. He eats 2 pieces of candy and he "
@@ -23810,14 +24003,14 @@ msgstr ""
 "保羅只剩 11 顆糖了。他吃了 2 顆糖，然後打算把剩下的分給朋友。您可以幫忙他把剩"
 "下的 9 顆糖分出去嗎？"
 
-#: activities/share/resource/2/Data.qml:70
+#: activities/share/resource/2/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "Bob wants to share 3 pieces of candy equally between 3 of his girl friends. "
 "Can he split the pieces of candy equally?"
 msgstr "鮑伯打算把他的 3 顆糖分給他的 3 個女朋友。他可以公平地分配糖果嗎？"
 
-#: activities/share/resource/2/Data.qml:80
+#: activities/share/resource/2/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 8 pieces of candy between 3 of his friends: 1 boy and 2 "
@@ -23827,7 +24020,7 @@ msgstr ""
 "哈利想要將 8 顆糖果公平地分給他的 3 個朋友：1 個男孩與 2 個女孩。男孩已經有一"
 "顆糖果了。他能將糖果公平地分配，讓他們每個人都有相同數量的糖果嗎？"
 
-#: activities/share/resource/2/Data.qml:90
+#: activities/share/resource/2/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 8 pieces of candy between 3 of her friends: 1 boy and 2 "
@@ -23837,7 +24030,7 @@ msgstr ""
 "瑪莉亞想要把 8 顆糖果平均分給她的 3 個朋友：2 個女孩與 1 個男孩。女孩們已經有"
 "一些糖果了。她能公平地把糖果分給朋友，讓他們每個人都有相同數量的糖果嗎？"
 
-#: activities/share/resource/2/Data.qml:100
+#: activities/share/resource/2/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 12 pieces of candy between 3 of his friends: 1 boy and "
@@ -23847,12 +24040,12 @@ msgstr ""
 "哈利想要將 12 顆糖果公平地分給他的 3 個朋友：1 個男孩與 2 個女孩。男孩已經有"
 "一些糖果了。他能將糖果公平地分配，讓他們每個人都有相同數量的糖果嗎？"
 
-#: activities/share/resource/2/Data.qml:122
+#: activities/share/resource/2/Data.qml:124
 msgctxt "Data|"
 msgid "Now, Alice wants to share 8 pieces of candy equally among her friends."
 msgstr "現在，愛莉絲想把 8 顆糖果公平地分給朋友。"
 
-#: activities/share/resource/2/Data.qml:132
+#: activities/share/resource/2/Data.qml:134
 msgctxt "Data|"
 msgid ""
 "Can you help Alice share 10 pieces of candy equally among her friends: 1 "
@@ -23861,12 +24054,12 @@ msgstr ""
 "您能幫愛莉絲將 10 顆糖果分給她的朋友，1 個女孩與 3 個男孩嗎？女孩們已經有一些"
 "糖果了。"
 
-#: activities/share/resource/2/Data.qml:142
+#: activities/share/resource/2/Data.qml:144
 msgctxt "Data|"
 msgid "Alice wants to share 16 pieces of candy equally among her friends."
 msgstr "愛莉絲想把 16 顆糖果分給朋友。"
 
-#: activities/share/resource/2/Data.qml:152
+#: activities/share/resource/2/Data.qml:154
 msgctxt "Data|"
 msgid ""
 "Alice has 14 pieces of candy left. She wants to share them equally among her "
@@ -23876,14 +24069,14 @@ msgstr ""
 "愛莉絲剩下 14 顆糖。她打算全部分給她的朋友。男孩們已經有一些糖果了。您能夠幫"
 "忙她公平地將糖果分給朋友嗎？"
 
-#: activities/share/resource/2/Data.qml:164
+#: activities/share/resource/2/Data.qml:166
 msgctxt "Data|"
 msgid ""
 "Help Jon share 11 pieces of candies equally between five girls. The rest "
 "will remain to Jon."
 msgstr "幫瓊分配 11 顆糖給 5 個女孩。剩下的歸瓊所有。"
 
-#: activities/share/resource/2/Data.qml:174
+#: activities/share/resource/2/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Jon wants to share the rest of his pieces of candies with his brothers and "
@@ -23893,25 +24086,25 @@ msgstr ""
 "瓊打算把他剩下的糖果分給他的弟弟跟妹妹。瓊斯知道他的弟弟已經有 2 顆糖了，您能"
 "夠幫他公平地分配糖果讓弟弟妹妹都有一樣多的糖果嗎？"
 
-#: activities/share/resource/2/Data.qml:184
+#: activities/share/resource/2/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Help Tux split 19 pieces of candies between his friends: 4 boys and 1 girl."
 msgstr "幫小企鵝分配 19 顆糖給他的朋友：4 個男孩與 1 個女孩。"
 
-#: activities/share/resource/2/Data.qml:194
+#: activities/share/resource/2/Data.qml:196
 msgctxt "Data|"
 msgid "Help Maria share 18 pieces of candy equally between 3 boys and 2 girls."
 msgstr "幫瑪麗亞分配 18 顆糖給她的朋友：3 個男孩與 2 個女孩。"
 
-#: activities/share/resource/2/Data.qml:206
+#: activities/share/resource/2/Data.qml:208
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally between 2 of his girl "
 "friends. Can he split the pieces of candy equally?"
 msgstr "查爾斯打算把他的 6 顆糖分給他的 2 個女朋友。他可以公平地分配糖果嗎？"
 
-#: activities/share/resource/2/Data.qml:216
+#: activities/share/resource/2/Data.qml:218
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -23921,7 +24114,7 @@ msgstr ""
 "依莉莎白的生日到了，她打算把她的 8 顆糖果分給 3 個朋友：1 個男孩與 2 個女孩。"
 "她要怎麼樣才能公平地把糖果分配給朋友？"
 
-#: activities/share/resource/2/Data.qml:226
+#: activities/share/resource/2/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 17 pieces of candy to share equally between his "
@@ -23929,7 +24122,7 @@ msgid ""
 "friends."
 msgstr "傑森的爸爸給了他 17 顆糖讓他分給朋友：2 個男孩與 2 個女孩。"
 
-#: activities/share/resource/2/Data.qml:236
+#: activities/share/resource/2/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy equally between 4 of his friends: 2 "
@@ -23939,7 +24132,7 @@ msgstr ""
 "喬治想要把 14 顆糖果平均分給他的 4 個朋友：2 個女孩與 2 個男孩。他能公平地把"
 "糖果分給朋友嗎？"
 
-#: activities/share/resource/2/Data.qml:246
+#: activities/share/resource/2/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 23 pieces of candy equally between 5 of her friends: 3 "
@@ -23949,12 +24142,12 @@ msgstr ""
 "瑪莉亞打算把他的 23 顆糖分給她的 5 個朋友：2 個男孩與 3 個女孩。她可以公平地"
 "分配糖果嗎？"
 
-#: activities/share/resource/3/Data.qml:13
+#: activities/share/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr "最多 30 顆糖與 6 個小孩，可能有剩餘。"
 
-#: activities/share/share.js:98
+#: activities/share/share.js:115
 #, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -23963,7 +24156,7 @@ msgid "Place %n boy(s) "
 msgid_plural "Place %n boy(s) "
 msgstr[0] "把 %n 個男孩 "
 
-#: activities/share/share.js:102
+#: activities/share/share.js:119
 #, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -23972,7 +24165,7 @@ msgid "and %n girl(s) in the center. "
 msgid_plural "and %n girl(s) in the center. "
 msgstr[0] "跟 %n 個女孩放在中間。 "
 
-#: activities/share/share.js:106
+#: activities/share/share.js:123
 #, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -23981,7 +24174,7 @@ msgid "Then split %n pieces of candy equally between them."
 msgid_plural "Then split %n pieces of candy equally between them."
 msgstr[0] "然後公平地將 %n 顆糖果分配給他們。"
 
-#: activities/share/Share.qml:358
+#: activities/share/Share.qml:359
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
@@ -25629,7 +25822,7 @@ msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "學習模式"
 
-#: activities/solar_system/SolarSystem.qml:156
+#: activities/solar_system/SolarSystem.qml:157
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -25637,7 +25830,7 @@ msgid ""
 msgstr ""
 "點擊太陽或任何行星就會出現問題。每個問題有四個選項，其中一個是完全正確的。"
 
-#: activities/solar_system/SolarSystem.qml:157
+#: activities/solar_system/SolarSystem.qml:160
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -25650,14 +25843,14 @@ msgstr ""
 "為 1%。跟著指標嘗試，直到貼近程度為 100%。如果提示圖示出現，可以點擊提示來尋"
 "求正確答案。"
 
-#: activities/solar_system/SolarSystem.qml:162
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
 "the bottom right of the screen shows your percentage score."
 msgstr "有 20 個問題，每個問題有四個選項。右下角的進度條表示您分數的百分比。"
 
-#: activities/solar_system/SolarSystem.qml:163
+#: activities/solar_system/SolarSystem.qml:173
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -25668,14 +25861,14 @@ msgstr ""
 "如果您的答案是正確的，就會得分。<br>如果您的答案是錯誤的，會扣分，並且會在後"
 "面再詢問一次沒有答對的問題。<br>最多會問 25 個問題。"
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:176
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
 "expert!"
 msgstr "您要得到 90% 以上才能通過測驗模式，變成太陽系專家！"
 
-#: activities/solar_system/SolarSystem.qml:349
+#: activities/solar_system/SolarSystem.qml:365
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25685,7 +25878,7 @@ msgstr ""
 "1. 行星離太陽越<b>遠</b>，它的溫度就會越<b>低</b>。<br/><font color=\"#3bb0de"
 "\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:350
+#: activities/solar_system/SolarSystem.qml:366
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25696,7 +25889,7 @@ msgstr ""
 "font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:369
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -25704,12 +25897,12 @@ msgid ""
 "b>other <b>J</b>ust <b>S</b>erved <b>U</b>s <b>N</b>oodles.<br>"
 msgstr "3. 太陽系行星記憶法：水金地火木土天海<br>"
 
-#: activities/solar_system/SolarSystem.qml:355
+#: activities/solar_system/SolarSystem.qml:371
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "提示"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:379
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "查看太陽系"
@@ -25826,97 +26019,162 @@ msgctxt "Controls|"
 msgid "Right Ballast Tank"
 msgstr "右載壓艙"
 
-#: activities/submarine/submarine.js:21
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:130
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Move the submarine to the other side of the screen."
+msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "將潛水艇開到螢幕的另一頭。"
 
-#: activities/submarine/submarine.js:22
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:133
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The leftmost item in the control panel is the engine of the submarine, "
+#| "indicating the current speed of the submarine."
+msgctxt "Submarine|"
 msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
 "indicating the current speed of the submarine."
 msgstr "控制面板的最左方是潛水艇的引擎，指示著目前潛水艇的速度。"
 
-#: activities/submarine/submarine.js:23
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:136
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Increase or decrease the velocity of the submarine using the engine."
+msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr "用引擎來加速或是減速。"
 
-#: activities/submarine/submarine.js:24
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:139
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Press the + button to increase the velocity, or the - button to decrease "
+#| "the velocity."
+msgctxt "Submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
 "velocity."
 msgstr "按 + 鍵來加速，或是 - 鍵來減速。"
 
-#: activities/submarine/submarine.js:27
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:146
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "The item next to the engine is the ballast tank."
+msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "引擎旁邊的是載壓艙。"
 
-#: activities/submarine/submarine.js:28
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:149
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "The ballast tanks are used to float or dive under water."
+msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr "載壓艙是用來讓潛水艇浮起來或沉下水面。"
 
-#: activities/submarine/submarine.js:29
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:152
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "If the ballast tanks are empty, the submarine will float. If the ballast "
+#| "tanks are full of water, the submarine will dive underwater."
+msgctxt "Submarine|"
 msgid ""
 "If the ballast tanks are empty, the submarine will float. If the ballast "
 "tanks are full of water, the submarine will dive underwater."
 msgstr "如果載壓艙是空的，潛水艇會浮起來。如果載壓艙裝滿水，潛水艇會沉下去。"
 
-#: activities/submarine/submarine.js:30
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:155
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Turning the upper valve on or off will alternatively allow or stop the "
+#| "water from filling in the ballast tank, thus allowing it to dive "
+#| "underwater."
+msgctxt "Submarine|"
 msgid ""
 "Turning the upper valve on or off will alternatively allow or stop the water "
 "from filling in the ballast tank, thus allowing it to dive underwater."
 msgstr "開關上方的閥門可以控制載壓艙裝水或停止裝水，讓潛水艇沉下水面。"
 
-#: activities/submarine/submarine.js:31
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:158
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Turning the lower valve on or off will alternatively allow or stop the "
+#| "water from flushing out the ballast tank, thus allowing it to float on "
+#| "the surface of the water."
+msgctxt "Submarine|"
 msgid ""
 "Turning the lower valve on or off will alternatively allow or stop the water "
 "from flushing out the ballast tank, thus allowing it to float on the surface "
 "of the water."
 msgstr "開關下方的閥門可以控制載壓艙放水或停止放水，讓潛水艇浮上水面。"
 
-#: activities/submarine/submarine.js:34
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:165
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The rightmost item in the control panel controls the diving planes of the "
+#| "submarine"
+msgctxt "Submarine|"
 msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
-"submarine"
+"submarine."
 msgstr "控制面板的最右方是潛水艇的水平舵"
 
-#: activities/submarine/submarine.js:35
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:168
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The diving planes in a submarine are used to control the depth of the "
+#| "submarine accurately once it is underwater."
+msgctxt "Submarine|"
 msgid ""
 "The diving planes in a submarine are used to control the depth of the "
 "submarine accurately once it is underwater."
 msgstr "潛水艇的水平舵（Diving Planes）用來控制潛水艇在水面下的深度。"
 
-#: activities/submarine/submarine.js:36
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:171
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Once the submarine is moving underwater, increasing or decreasing the "
+#| "angle of the planes will increase and decrease the depth of the submarine."
+msgctxt "Submarine|"
 msgid ""
 "Once the submarine is moving underwater, increasing or decreasing the angle "
 "of the planes will increase and decrease the depth of the submarine."
 msgstr "當潛水艇在水面下移動時，改變水平舵的角度會改變潛水艇的深度。"
 
-#: activities/submarine/submarine.js:37
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:174
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The + button will increase the depth of the submarine, while the - button "
+#| "will decrease the depth of the submarine."
+msgctxt "Submarine|"
 msgid ""
 "The + button will increase the depth of the submarine, while the - button "
 "will decrease the depth of the submarine."
 msgstr "+ 鍵會增加潛水艇的深度，- 鍵則會減少潛水艇的深度。"
 
-#: activities/submarine/submarine.js:38
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:177
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Grab the crown to open the gate."
+msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "抓取皇冠來開門。"
 
-#: activities/submarine/submarine.js:39
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:180
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Check out the help menu for the keyboard controls."
+msgctxt "Submarine|"
 msgid "Check out the help menu for the keyboard controls."
 msgstr "在說明選單中有鍵盤快捷鍵說明。"
 
@@ -26845,26 +27103,26 @@ msgstr ""
 "點擊不同的元素：太陽、雲、幫浦站與水處理站等，以便完成整個水循環系統。當系統"
 "完成並且小企鵝進來後，按下水的開關。"
 
-#: activities/watercycle/Watercycle.qml:114
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
 "the water cycle."
 msgstr "太陽是整個水循環系統中的主要元素。點擊太陽來開始水循環。"
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "太陽升起時，海裡的水會開始被加熱而蒸發。"
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
 "Click on the cloud."
 msgstr "水蒸氣凝結成雲。當雲變重之後，就會下雨，點擊雲看看。"
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:118
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -26873,25 +27131,25 @@ msgid ""
 msgstr ""
 "下雨後會讓河流水漲，而這些水透過幫浦系統進到水塔中。點擊幫浦來將水抽到水塔。"
 
-#: activities/watercycle/Watercycle.qml:119
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
 "clicking on it."
 msgstr "當水塔裝滿水比後，點擊污水處理站來啟動。"
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "很好，小企鵝回家後，按下水開關讓牠洗個澡。"
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:122
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "太棒了，您完成了整個水循環系統。您可以繼續玩。"
 
-#: activities/watercycle/Watercycle.qml:139
+#: activities/watercycle/Watercycle.qml:141
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26901,7 +27159,7 @@ msgstr ""
 "水循環（或稱水文循環）就是水從陸地到天空再回到陸地上的過程。太陽的熱提供了水"
 "蒸發需要的能量。"
 
-#: activities/watercycle/Watercycle.qml:142
+#: activities/watercycle/Watercycle.qml:144
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26911,7 +27169,7 @@ msgstr ""
 "植物也會將水排出到空氣中。水蒸氣會冷卻，凝結成小水滴形成雲。當雲遇上更冷的空"
 "氣，就會形成降水，也就是下雨。"
 
-#: activities/watercycle/Watercycle.qml:145
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26921,7 +27179,7 @@ msgstr ""
 "有些水會留在岩石層或土層，稱為地下水。但大部份的水最後都會經由河流回到大海"
 "中。"
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:150
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -27984,22 +28242,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "我準備好了"
 
-#: core/Tutorial.qml:140
+#: core/Tutorial.qml:139
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "前一個"
 
-#: core/Tutorial.qml:158
+#: core/Tutorial.qml:157
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "下一個"
 
-#: core/Tutorial.qml:175
+#: core/Tutorial.qml:174
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "略過"
 
-#: core/Tutorial.qml:175
+#: core/Tutorial.qml:174
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "開始"

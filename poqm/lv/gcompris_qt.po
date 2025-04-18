@@ -2716,13 +2716,13 @@ msgstr ""
 "Spied reizē kreiso un labo pogu, lai liktu bumbiņai ripot taisnā līnijā. Ja "
 "lieto skārienjutīgu ekrānu, pieskaries tam ar abām rokām vienlaicīgi."
 
-#: activities/ballcatch/Ballcatch.qml:228
+#: activities/ballcatch/Ballcatch.qml:227
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr "Spied ar abām rokām reizē, lai liktu bumbai ripot taisnā līnijā."
 
-#: activities/ballcatch/Ballcatch.qml:230
+#: activities/ballcatch/Ballcatch.qml:233
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2851,13 +2851,23 @@ msgstr ""
 "Ieslēdz pareizās spuldzes, lai parādītu dotā decimālskaitļa bināro skaitli. "
 "Pēc tā izdarīšanas, spied „Labi“."
 
-#: activities/binary_bulb/binary_bulb.js:20
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:84
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "This activity teaches how to convert decimal numbers to binary numbers."
+msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr "Šī aktivitāte māca decimālskaitļus pārveidot par bināriem skaitļiem."
 
-#: activities/binary_bulb/binary_bulb.js:24
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:88
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Computers use transistors to count and transistors have only two states, "
+#| "0 and 1. Mathematically, these states are represented by 0 and 1, which "
+#| "makes up the binary system of numeration."
+msgctxt "BinaryBulb|"
 msgid ""
 "Computers use transistors to count and transistors have only two states, 0 "
 "and 1. Mathematically, these states are represented by 0 and 1, which makes "
@@ -2867,15 +2877,23 @@ msgstr ""
 "izslēgts un ieslēgts. Matemātiski šos stāvokļus reprezentē ar 0 un 1, kas "
 "veido pamatu skaitīšanai binārajā sistēmā."
 
-#: activities/binary_bulb/binary_bulb.js:28
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:92
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
+msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr ""
 "Šajā aktivitātē 0 un 1 simulē spuldzes, kas ir vai nu ieslēgtas vai "
 "izslēgtas."
 
-#: activities/binary_bulb/binary_bulb.js:32
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:96
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Binary system uses these numbers very efficiently, allowing to count from "
+#| "0 to 255 with 8 bits only."
+msgctxt "BinaryBulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
 "to 255 with 8 bits only."
@@ -2883,8 +2901,15 @@ msgstr ""
 "Binārā sistēma šos skaitļus izmanto ļoti efektīvi, ļaujot skaitīt no 0 līdz "
 "255 ar tikai 8 bitiem."
 
-#: activities/binary_bulb/binary_bulb.js:36
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:100
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Each bit adds a progressive value, corresponding to the powers of 2, "
+#| "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → "
+#| "2²=4 , bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit "
+#| "8 → 2⁷=128."
+msgctxt "BinaryBulb|"
 msgid ""
 "Each bit adds a progressive value, corresponding to the powers of 2, "
 "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → 2²=4 , "
@@ -2896,13 +2921,21 @@ msgstr ""
 "2³=8 , 5. bits → 2⁴=16 , 6. bits → 2⁵=32 , 7. bits → 2⁶=64 , 8. bits → "
 "2⁷=128."
 
-#: activities/binary_bulb/binary_bulb.js:40
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:104
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
+msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr "Lai konvertētu decimālskaitli 5 binārā vērtībā, jāsaskaita 1 un 4."
 
-#: activities/binary_bulb/binary_bulb.js:44
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:108
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 "
+#| "is equal to binary 101."
+msgctxt "BinaryBulb|"
 msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
 "equal to binary 101."
@@ -2910,12 +2943,15 @@ msgstr ""
 "Šiem skaitļiem atbilstošie biti ir 1, bet pārējie ir 0. Decimālskaitlis 5 "
 "binārā izteiksmē ir 101."
 
-#: activities/binary_bulb/binary_bulb.js:48
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:112
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid "This image will help you to compute bits' value."
+msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Šis attēls ļaus aprēķināt bitu vērtību."
 
-#: activities/binary_bulb/BinaryBulb.qml:126
+#: activities/binary_bulb/BinaryBulb.qml:160
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3576,7 +3612,7 @@ msgstr ""
 "Tavs uzdevums ir vadīt kanāla slūžas. Atver vārtus un slūžas pareizā secībā, "
 "lai Tukss var izbraukt cauri slūžām abos virzienos."
 
-#: activities/canal_lock/CanalLock.qml:73
+#: activities/canal_lock/CanalLock.qml:74
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3585,7 +3621,7 @@ msgstr ""
 "Tavs mērķis ir vadīt Tuksu pāri kanāla slūžām pēc malkas, izmantojot dažāda "
 "veida ūdens slūžas."
 
-#: activities/canal_lock/CanalLock.qml:75
+#: activities/canal_lock/CanalLock.qml:77
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3595,7 +3631,7 @@ msgstr ""
 "Vertikālās joslas ir slūžas. Tās vari vadīt, uz tām spiežot. Vienlaicīgi "
 "nevari darbināt divas viena veida slūžas."
 
-#: activities/canal_lock/CanalLock.qml:77
+#: activities/canal_lock/CanalLock.qml:80
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -14983,24 +15019,43 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
 msgstr "„Backspace“ taustiņš: atlasa iepriekšējo vārdu"
 
-#: activities/grammar_analysis/grammar_analysis.js:37
+#: activities/grammar_analysis/grammar_analysis.js:398
 msgctxt "grammar_analysis|"
+msgid "Empty"
+msgstr "Tukšs"
+
+#: activities/grammar_analysis/GrammarAnalysis.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Grammatical analysis"
+msgctxt "GrammarAnalysis|"
 msgid "Grammatical analysis"
 msgstr "Gramatiskā analīze"
 
-#: activities/grammar_analysis/grammar_analysis.js:38
-#: activities/grammar_analysis/grammar_analysis.js:48
-msgctxt "grammar_analysis|"
+#: activities/grammar_analysis/GrammarAnalysis.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn to identify grammatical classes."
+msgctxt "GrammarAnalysis|"
 msgid "Learn to identify grammatical classes."
-msgstr "Mācies atšķir vārdšķiras."
+msgstr "Mācies atšķirt vārdšķiras"
 
-#: activities/grammar_analysis/grammar_analysis.js:39
-msgctxt "grammar_analysis|"
+#: activities/grammar_analysis/GrammarAnalysis.qml:28
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid ""
+#| "Find all the words corresponding to the requested grammatical classes."
+msgctxt "GrammarAnalysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr "Atrodi visus vārdus, kas atbilst prasītajai vārdšķirai."
 
-#: activities/grammar_analysis/grammar_analysis.js:40
-msgctxt "grammar_analysis|"
+#: activities/grammar_analysis/GrammarAnalysis.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select a grammatical class from the list, then select the box under a "
+#| "word and assign it the class."
+msgctxt "GrammarAnalysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
@@ -15008,39 +15063,13 @@ msgstr ""
 "Atlasi vārdšķiru sarakstā, bet pēc tam atlasi lauciņu zem vārda un norādi "
 "vārdšķiru."
 
-#: activities/grammar_analysis/grammar_analysis.js:41
-msgctxt "grammar_analysis|"
+#: activities/grammar_analysis/GrammarAnalysis.qml:30
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Leave the box blank if no class matches."
+msgctxt "GrammarAnalysis|"
 msgid "Leave the box blank if no class matches."
 msgstr "Ja neviena neatbilst, atstāj lauciņu tukšu."
-
-#: activities/grammar_analysis/grammar_analysis.js:47
-msgctxt "grammar_analysis|"
-msgid "Grammatical classes"
-msgstr "Vārdšķiras"
-
-#: activities/grammar_analysis/grammar_analysis.js:49
-msgctxt "grammar_analysis|"
-msgid "Find all the words corresponding to the requested grammatical class."
-msgstr "Atrodi visus vārdus, kas atbilst prasītajām vārdšķirām."
-
-#: activities/grammar_analysis/grammar_analysis.js:50
-msgctxt "grammar_analysis|"
-msgid ""
-"Select the grammatical class from the list, then select the box under a word "
-"and assign it the class."
-msgstr ""
-"Sarakstā atlasi vārdšķiru, tad atlasi lauciņu zem vārda un tam piešķir "
-"vārdšķiru."
-
-#: activities/grammar_analysis/grammar_analysis.js:51
-msgctxt "grammar_analysis|"
-msgid "Leave the box blank if the class doesn't match."
-msgstr "Atstāj tukšu, ja klasei nekas neatbilst."
-
-#: activities/grammar_analysis/grammar_analysis.js:421
-msgctxt "grammar_analysis|"
-msgid "Empty"
-msgstr "Tukšs"
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
@@ -15065,6 +15094,52 @@ msgstr ""
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
+msgid "Leave the box blank if the class doesn't match."
+msgstr "Atstāj tukšu, ja klasei nekas neatbilst."
+
+#: activities/grammar_classes/GrammarClasses.qml:15
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Grammatical classes"
+msgctxt "GrammarClasses|"
+msgid "Grammatical classes"
+msgstr "Vārdšķiras"
+
+#: activities/grammar_classes/GrammarClasses.qml:16
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn to identify grammatical classes."
+msgctxt "GrammarClasses|"
+msgid "Learn to identify grammatical classes."
+msgstr "Mācies atšķirt vārdšķiras"
+
+#: activities/grammar_classes/GrammarClasses.qml:17
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Find all the words corresponding to the requested grammatical class."
+msgctxt "GrammarClasses|"
+msgid "Find all the words corresponding to the requested grammatical class."
+msgstr "Atrodi visus vārdus, kas atbilst prasītajām vārdšķirām."
+
+#: activities/grammar_classes/GrammarClasses.qml:18
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid ""
+#| "Select the grammatical class from the list, then select the box under a "
+#| "word and assign it the class."
+msgctxt "GrammarClasses|"
+msgid ""
+"Select the grammatical class from the list, then select the box under a word "
+"and assign it the class."
+msgstr ""
+"Sarakstā atlasi vārdšķiru, tad atlasi lauciņu zem vārda un tam piešķir "
+"vārdšķiru."
+
+#: activities/grammar_classes/GrammarClasses.qml:19
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Leave the box blank if the class doesn't match."
+msgctxt "GrammarClasses|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr "Atstāj tukšu, ja klasei nekas neatbilst."
 
@@ -15165,7 +15240,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Bultiņa pa kreisi un pa labi: pārvieto kosmosa kuģi"
 
-#: activities/gravity/Gravity.qml:219
+#: activities/gravity/Gravity.qml:220
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -16631,8 +16706,13 @@ msgstr ""
 "nomesto joslu skaits atbilst parādītajam decimālskaitlim. Pēc tam klikšķini "
 "uz „Labi“ pogas, lai atbildi pārbaudītu."
 
-#: activities/learn_decimals/learn_decimals.js:33
-msgctxt "learn_decimals|"
+#: activities/learn_decimals/Learn_decimals.qml:30
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "A decimal number is displayed. The bar with the arrow represents a full "
+#| "unit, and each square in it represents one tenth of this unit."
+msgctxt "Learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
 "unit, and each square in it represents one tenth of this unit."
@@ -16640,8 +16720,15 @@ msgstr ""
 "Ekrānā ir redzams decimālskaitlis. Josla ar bultu parāda pilnu vienību, bet "
 "katrs kvadrāts reprezentē vienu desmito vienības daļu."
 
-#: activities/learn_decimals/learn_decimals.js:37
-msgctxt "learn_decimals|"
+#: activities/learn_decimals/Learn_decimals.qml:34
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Drag the arrow to select a part of the bar, and drag the selected part of "
+#| "the bar to the empty area. Repeat these steps until the number of dropped "
+#| "bars corresponds to the displayed decimal number. Then click on the OK "
+#| "button to validate your answer."
+msgctxt "Learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
 "the bar to the empty area. Repeat these steps until the number of dropped "
@@ -16653,102 +16740,31 @@ msgstr ""
 "parādītajiem decimālskaitļiem. Pēc tam klikšķini uz „Labi“ pogas, lai "
 "atbildi pārbaudītu."
 
-#: activities/learn_decimals/learn_decimals.js:44
-msgctxt "learn_decimals|"
-msgid ""
-"A subtraction with two decimal numbers is displayed. Below it, the first "
-"number from the subtraction is represented with bars. One bar represents a "
-"full unit, and each square in it represents one tenth of this unit."
-msgstr ""
-"Ekrānā redzama atņemšana ar diviem skaitļiem. Zem tā ir redzama josla ar "
-"reprezentētu atņemšanas pirmo locekli. Viena vesela josla norāda uz pilnu "
-"vienību, bet katrs joslas kvadrāts uz vienības desmito daļu."
-
-#: activities/learn_decimals/learn_decimals.js:48
-msgctxt "learn_decimals|"
-msgid ""
-"Click on the squares to subtract them and display the result of the "
-"operation, and click on the OK button to validate your answer."
-msgstr ""
-"Klikšķini uz kvadrātiem, lai tos atņemtu un parādi darbības rezultātu. Pēc "
-"tam klikšķini uz „Labi“ pogas, lai atbildi pārbaudītu."
-
-#: activities/learn_decimals/learn_decimals.js:52
-#: activities/learn_decimals/learn_decimals.js:67
-msgctxt "learn_decimals|"
-msgid ""
-"If the answer is correct, type the corresponding result, and click on the OK "
-"button to validate your answer."
-msgstr ""
-"Ja atbilde ir pareiza, ieraksti rezultātu un spied uz „Labi“ pogas, lai "
-"atbildi apstiprinātu."
-
-#: activities/learn_decimals/learn_decimals.js:59
-msgctxt "learn_decimals|"
-msgid ""
-"An addition with two decimal numbers is displayed. The bar with the arrow "
-"represents a full unit, and each square in it represents one tenth of this "
-"unit."
-msgstr ""
-"Ekrānā ir parādīta saskaitīšana ar diviem decimālskaitļiem. Josla ar bultu "
-"reprezentē pilnu vienību, bet katrs kvadrāts reprezentē reprezentē vienības "
-"vienu desmito daļu."
-
-#: activities/learn_decimals/learn_decimals.js:63
-msgctxt "learn_decimals|"
-msgid ""
-"Drag the arrow to select a part of the bar, and drag the selected part of "
-"the bar to the empty area. Repeat these steps until the number of dropped "
-"bars corresponds to the result of the addition, and click on the OK button "
-"to validate your answer."
-msgstr ""
-"Velc bultu, lai atlasītu daļu no joslas un velc atlasīto joslas daļu uz "
-"tukšu zonu. Atkārto soļus līdz aizvilkto joslu skaits atbilst saskaitīšanas "
-"rezultātam, bet tad klikšķini uz „Labi“ pogas, lai atbildi pārbaudītu."
-
-#: activities/learn_decimals/learn_decimals.js:74
-msgctxt "learn_decimals|"
-msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
-msgstr "Ir pieprasīts daudzums. Bultas ļauj atlasīt līdz 10 apelsīniem."
-
-#: activities/learn_decimals/learn_decimals.js:78
-msgctxt "learn_decimals|"
-msgid ""
-"Drag the arrow to select a number of oranges, and drag the selected oranges "
-"to the empty area. Repeat these steps until the number of oranges "
-"corresponds to the requested quantity. Then click on the OK button to "
-"validate your answer."
-msgstr ""
-"Velc bultu, lai atlasītu apelsīnu skaitu, bet pēc tam atlasītos apelsīnus "
-"velc uz tukšu zonu. Atkārto šos soļus līdz apelsīnu skaits atbilst "
-"pieprasītajam daudzumam. Pēc tam klikšķini uz „Labi“ pogas, lai atbildi "
-"pārbaudītu."
-
-#: activities/learn_decimals/Learn_decimals.qml:142
+#: activities/learn_decimals/Learn_decimals.qml:150
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "Parādi skaitli: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:143
+#: activities/learn_decimals/Learn_decimals.qml:151
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "Parādi summu: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:144
+#: activities/learn_decimals/Learn_decimals.qml:152
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "Parādi starpību: %1 − %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:145
+#: activities/learn_decimals/Learn_decimals.qml:153
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "Parādi daudzumu: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:602
+#: activities/learn_decimals/Learn_decimals.qml:610
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -16817,6 +16833,56 @@ msgctxt "ActivityInfo|"
 msgid "Numbers: type the result"
 msgstr "Skaitļi: ieraksti rezultātu"
 
+#: activities/learn_decimals_additions/Learn_decimals_additions.qml:16
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "An addition with two decimal numbers is displayed. The bar with the arrow "
+#| "represents a full unit, and each square in it represents one tenth of "
+#| "this unit."
+msgctxt "Learn_decimals_additions|"
+msgid ""
+"An addition with two decimal numbers is displayed. The bar with the arrow "
+"represents a full unit, and each square in it represents one tenth of this "
+"unit."
+msgstr ""
+"Ekrānā ir parādīta saskaitīšana ar diviem decimālskaitļiem. Josla ar bultu "
+"reprezentē pilnu vienību, bet katrs kvadrāts reprezentē reprezentē vienības "
+"vienu desmito daļu."
+
+#: activities/learn_decimals_additions/Learn_decimals_additions.qml:20
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Drag the arrow to select a part of the bar, and drag the selected part of "
+#| "the bar to the empty area. Repeat these steps until the number of dropped "
+#| "bars corresponds to the result of the addition, and click on the OK "
+#| "button to validate your answer."
+msgctxt "Learn_decimals_additions|"
+msgid ""
+"Drag the arrow to select a part of the bar, and drag the selected part of "
+"the bar to the empty area. Repeat these steps until the number of dropped "
+"bars corresponds to the result of the addition, and click on the OK button "
+"to validate your answer."
+msgstr ""
+"Velc bultu, lai atlasītu daļu no joslas un velc atlasīto joslas daļu uz "
+"tukšu zonu. Atkārto soļus līdz aizvilkto joslu skaits atbilst saskaitīšanas "
+"rezultātam, bet tad klikšķini uz „Labi“ pogas, lai atbildi pārbaudītu."
+
+#: activities/learn_decimals_additions/Learn_decimals_additions.qml:24
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "If the answer is correct, type the corresponding result, and click on the "
+#| "OK button to validate your answer."
+msgctxt "Learn_decimals_additions|"
+msgid ""
+"If the answer is correct, type the corresponding result, and click on the OK "
+"button to validate your answer."
+msgstr ""
+"Ja atbilde ir pareiza, ieraksti rezultātu un spied uz „Labi“ pogas, lai "
+"atbildi apstiprinātu."
+
 #: activities/learn_decimals_additions/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Add decimal numbers up to 1."
@@ -16868,6 +16934,51 @@ msgstr ""
 "reprezentē joslas. Katra josla reprezentē vienu vienību, bet katrs kvadrāts "
 "joslā reprezentē vienu desmito daļu no šīs vienības. Spiediet uz kvadrātiem, "
 "lai atņemtu otro skaitli un reprezentētu darbības operāciju"
+
+#: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:16
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "A subtraction with two decimal numbers is displayed. Below it, the first "
+#| "number from the subtraction is represented with bars. One bar represents "
+#| "a full unit, and each square in it represents one tenth of this unit."
+msgctxt "Learn_decimals_subtractions|"
+msgid ""
+"A subtraction with two decimal numbers is displayed. Below it, the first "
+"number from the subtraction is represented with bars. One bar represents a "
+"full unit, and each square in it represents one tenth of this unit."
+msgstr ""
+"Ekrānā redzama atņemšana ar diviem skaitļiem. Zem tā ir redzama josla ar "
+"reprezentētu atņemšanas pirmo locekli. Viena vesela josla norāda uz pilnu "
+"vienību, bet katrs joslas kvadrāts uz vienības desmito daļu."
+
+#: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:20
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Click on the squares to subtract them and display the result of the "
+#| "operation, and click on the OK button to validate your answer."
+msgctxt "Learn_decimals_subtractions|"
+msgid ""
+"Click on the squares to subtract them and display the result of the "
+"operation, and click on the OK button to validate your answer."
+msgstr ""
+"Klikšķini uz kvadrātiem, lai tos atņemtu un parādi darbības rezultātu. Pēc "
+"tam klikšķini uz „Labi“ pogas, lai atbildi pārbaudītu."
+
+#: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:24
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "If the answer is correct, type the corresponding result, and click on the "
+#| "OK button to validate your answer."
+msgctxt "Learn_decimals_subtractions|"
+msgid ""
+"If the answer is correct, type the corresponding result, and click on the OK "
+"button to validate your answer."
+msgstr ""
+"Ja atbilde ir pareiza, ieraksti rezultātu un spied uz „Labi“ pogas, lai "
+"atbildi apstiprinātu."
 
 #: activities/learn_decimals_subtractions/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -17028,6 +17139,35 @@ msgstr ""
 "atlasītos apelsīnus uz tukšu zonu. Atkārto šos soļus līdz nomesto apelsīnu "
 "skaits ir atbilstošs pieprasītajam daudzumam. Pēc tam pārbaudi atbildi, "
 "klikšķinot uz „Labi“ pogas."
+
+#: activities/learn_quantities/Learn_quantities.qml:16
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "A quantity is requested. The arrow allows to select up to 10 oranges."
+msgctxt "Learn_quantities|"
+msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
+msgstr "Ir pieprasīts daudzums. Bultas ļauj atlasīt līdz 10 apelsīniem."
+
+#: activities/learn_quantities/Learn_quantities.qml:20
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Drag the arrow to select a number of oranges, and drag the selected "
+#| "oranges to the empty area. Repeat these steps until the number of oranges "
+#| "corresponds to the requested quantity. Then click on the OK button to "
+#| "validate your answer."
+msgctxt "Learn_quantities|"
+msgid ""
+"Drag the arrow to select a number of oranges, and drag the selected oranges "
+"to the empty area. Repeat these steps until the number of oranges "
+"corresponds to the requested quantity. Then click on the OK button to "
+"validate your answer."
+msgstr ""
+"Velc bultu, lai atlasītu apelsīnu skaitu, bet pēc tam atlasītos apelsīnus "
+"velc uz tukšu zonu. Atkārto šos soļus līdz apelsīnu skaits atbilst "
+"pieprasītajam daudzumam. Pēc tam klikšķini uz „Labi“ pogas, lai atbildi "
+"pārbaudītu."
 
 #: activities/learn_quantities/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -20147,8 +20287,50 @@ msgstr ""
 "tos pārvietot uz jebkuru brīvo vietu. Spēlētājs uzvar, kad otrs spēlētājs "
 "vairs nevar pārvietot nevienu kauliņu vai ir atlikuši tikai divi kauliņi."
 
-#: activities/nine_men_morris/nine_men_morris.js:29
+#: activities/nine_men_morris/nine_men_morris.js:240
+#: activities/nine_men_morris/nine_men_morris.js:1086
 msgctxt "nine_men_morris|"
+msgid "Place a piece"
+msgstr "Novieto kauliņu"
+
+#: activities/nine_men_morris/nine_men_morris.js:366
+#: activities/nine_men_morris/nine_men_morris.js:1144
+msgctxt "nine_men_morris|"
+msgid "Move a piece"
+msgstr "Pārvieto kauliņu"
+
+#: activities/nine_men_morris/nine_men_morris.js:918
+msgctxt "nine_men_morris|"
+msgid "Remove a piece"
+msgstr "Noņem kauliņu"
+
+#: activities/nine_men_morris/nine_men_morris.js:1121
+msgctxt "nine_men_morris|"
+msgid "Congratulations"
+msgstr "Apsveicu"
+
+#: activities/nine_men_morris/nine_men_morris.js:1124
+msgctxt "nine_men_morris|"
+msgid "Congratulations Player 1"
+msgstr "Apsveicam 1. spēlētāju"
+
+#: activities/nine_men_morris/nine_men_morris.js:1135
+msgctxt "nine_men_morris|"
+msgid "Congratulations Player 2"
+msgstr "Apsveicam 2. spēlētāju"
+
+#: activities/nine_men_morris/nine_men_morris.js:1138
+msgctxt "nine_men_morris|"
+msgid "Try again"
+msgstr "Mēģini vēlreiz!"
+
+#: activities/nine_men_morris/NineMenMorris.qml:348
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "You and Tux start with 9 pieces each, and take turns to place your pieces "
+#| "on the empty spots of the board (by clicking on the spots)."
+msgctxt "NineMenMorris|"
 msgid ""
 "You and Tux start with 9 pieces each, and take turns to place your pieces on "
 "the empty spots of the board (by clicking on the spots)."
@@ -20156,8 +20338,14 @@ msgstr ""
 "Tu un Tukss katrs sāk ar deviņiem kauliņiem un pēc kārtas kauliņus liek "
 "tukšās vietās laukumā (klikšķinot uz punktiem)."
 
-#: activities/nine_men_morris/nine_men_morris.js:33
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:352
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
+#| "remove it. Pieces of formed mill can not be removed unless no other "
+#| "pieces are left on the board."
+msgctxt "NineMenMorris|"
 msgid ""
 "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
 "remove it. Pieces of formed mill can not be removed unless no other pieces "
@@ -20167,8 +20355,14 @@ msgstr ""
 "uzklikšķināt uz kāda no Tuksa kauliņiem, lai to noņemtu. Kauliņi, kas veido "
 "dzirnavas, nav noņemami, izņemot, ja laukumā nav neviena cita brīva kauliņa."
 
-#: activities/nine_men_morris/nine_men_morris.js:37
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:356
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "After all the pieces are placed, you and Tux will take turns to move "
+#| "them. Click on one of your pieces, and then on an adjacent empty spot to "
+#| "move it there. Green color spots indicates where you can move."
+msgctxt "NineMenMorris|"
 msgid ""
 "After all the pieces are placed, you and Tux will take turns to move them. "
 "Click on one of your pieces, and then on an adjacent empty spot to move it "
@@ -20179,8 +20373,13 @@ msgstr ""
 "to pārvietotu uz šo vietu. Zaļie krāsainie lauciņi norāda uz vietu, kur vari "
 "kauliņu pārvietot."
 
-#: activities/nine_men_morris/nine_men_morris.js:41
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:360
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
+#| "moved to any vacant spot on the board."
+msgctxt "NineMenMorris|"
 msgid ""
 "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
 "moved to any vacant spot on the board."
@@ -20188,51 +20387,19 @@ msgstr ""
 "Ja Tev ir atlikuši tikai trīs kauliņi, vari iegūt iespēju „lidot“, proti, "
 "vari kauliņu pārvietot uz jebkuru brīvu vietu laukumā."
 
-#: activities/nine_men_morris/nine_men_morris.js:45
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:364
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "If you immobilize the computer or leave it with less than 3 pieces, then "
+#| "you win the game."
+msgctxt "NineMenMorris|"
 msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
 "win the game."
 msgstr ""
 "Ja tev izdodas radīt situāciju, kad datoram trūkst gājienu vai paliek mazāk "
 "par trim kauliņiem, tad tu uzvari."
-
-#: activities/nine_men_morris/nine_men_morris.js:262
-#: activities/nine_men_morris/nine_men_morris.js:1108
-msgctxt "nine_men_morris|"
-msgid "Place a piece"
-msgstr "Novieto kauliņu"
-
-#: activities/nine_men_morris/nine_men_morris.js:388
-#: activities/nine_men_morris/nine_men_morris.js:1166
-msgctxt "nine_men_morris|"
-msgid "Move a piece"
-msgstr "Pārvieto kauliņu"
-
-#: activities/nine_men_morris/nine_men_morris.js:940
-msgctxt "nine_men_morris|"
-msgid "Remove a piece"
-msgstr "Noņem kauliņu"
-
-#: activities/nine_men_morris/nine_men_morris.js:1143
-msgctxt "nine_men_morris|"
-msgid "Congratulations"
-msgstr "Apsveicu"
-
-#: activities/nine_men_morris/nine_men_morris.js:1146
-msgctxt "nine_men_morris|"
-msgid "Congratulations Player 1"
-msgstr "Apsveicam 1. spēlētāju"
-
-#: activities/nine_men_morris/nine_men_morris.js:1157
-msgctxt "nine_men_morris|"
-msgid "Congratulations Player 2"
-msgstr "Apsveicam 2. spēlētāju"
-
-#: activities/nine_men_morris/nine_men_morris.js:1160
-msgctxt "nine_men_morris|"
-msgid "Try again"
-msgstr "Mēģini vēlreiz!"
 
 #. Activity title
 #: activities/nine_men_morris_2players/ActivityInfo.qml:15
@@ -20299,13 +20466,13 @@ msgid "New note: %1"
 msgstr "Jauna nots: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:270
+#: activities/note_names/NoteNames.qml:271
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1 %"
 
-#: activities/note_names/NoteNames.qml:448
+#: activities/note_names/NoteNames.qml:449
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20314,12 +20481,12 @@ msgstr ""
 "Šai aktivitātei ir vajadzīga skaņa, tāpēc tajā programma atskaņos skaņu pat "
 "tad, ja pamata konfigurācijā balsis un efekti ir izslēgti."
 
-#: activities/note_names/NoteNames.qml:449
+#: activities/note_names/NoteNames.qml:450
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Iziet"
 
-#: activities/note_names/NoteNames.qml:450
+#: activities/note_names/NoteNames.qml:451
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Turpināt"
@@ -20406,23 +20573,23 @@ msgstr ""
 "mērķa vietai. Pirmajos līmeņos labajā apakšējā stūrī vari redzēt, kāds "
 "cipars ir jāķer nākamais. Vēlākos līmeņos tev tas būs jāiegaumē."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:14
+#: activities/numbers-odd-even/NumbersOddEven.qml:15
 msgctxt "NumbersOddEven|"
 msgid "Catch the even numbers."
 msgstr "Noķer nepāra skaitļus."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:15
+#: activities/numbers-odd-even/NumbersOddEven.qml:16
 msgctxt "NumbersOddEven|"
 msgid "Catch the odd numbers."
 msgstr "Noķer pāra skaitļus."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:42
+#: activities/numbers-odd-even/NumbersOddEven.qml:43
 msgctxt "NumbersOddEven|"
 msgid "This activity teaches about even and odd numbers."
 msgstr "Šī aktivitāte māca par pāra un nepāra skaitļiem."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:46
-#: activities/numbers-odd-even/NumbersOddEven.qml:56
+#: activities/numbers-odd-even/NumbersOddEven.qml:47
+#: activities/numbers-odd-even/NumbersOddEven.qml:55
 msgctxt "NumbersOddEven|"
 msgid ""
 "Even numbers are numbers which leave a remainder of 0 when divided by 2."
@@ -20433,7 +20600,7 @@ msgctxt "NumbersOddEven|"
 msgid "What is meant by remainder?"
 msgstr "Kas ir atlikums?"
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:60
+#: activities/numbers-odd-even/NumbersOddEven.qml:59
 msgctxt "NumbersOddEven|"
 msgid ""
 "Odd numbers are numbers which do not leave a remainder of 0 when divided by "
@@ -20441,9 +20608,9 @@ msgid ""
 msgstr ""
 "Nepāra skaitļi ir skaitļi, kuru dalīšanas ar 2 rezultātā atlikums nav 0."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:64
-#: activities/numbers-odd-even/NumbersOddEven.qml:68
-#: activities/numbers-odd-even/NumbersOddEven.qml:72
+#: activities/numbers-odd-even/NumbersOddEven.qml:63
+#: activities/numbers-odd-even/NumbersOddEven.qml:67
+#: activities/numbers-odd-even/NumbersOddEven.qml:71
 msgctxt "NumbersOddEven|"
 msgid "Exercise to test your understanding."
 msgstr "Trenējies, lai pārbaudītu, cik labi to saproti."
@@ -22483,115 +22650,6 @@ msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "Izmanto instrukcijas"
 
-#: activities/programmingMaze/programmingMaze.js:96
-msgctxt "programmingMaze|"
-msgid "Instruction Area:"
-msgstr "Instrukciju zona:"
-
-#: activities/programmingMaze/programmingMaze.js:97
-msgctxt "programmingMaze|"
-msgid ""
-"There are 3 instructions which you can use to code and lead Tux to the fish:"
-msgstr ""
-"Lai programmētu Tuksa ceļu līdz zivij, izmanto šādas trīs instrukcijas:"
-
-#: activities/programmingMaze/programmingMaze.js:98
-msgctxt "programmingMaze|"
-msgid ""
-"<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
-"facing."
-msgstr ""
-"<b>1. Pārvietoties uz priekšu:</b> pārvieto Tuksu vienu soli uz priekšu "
-"virzienā, kurā viņš ir pagriezies."
-
-#: activities/programmingMaze/programmingMaze.js:99
-msgctxt "programmingMaze|"
-msgid "<b>2. Turn left:</b> Turns Tux to the left."
-msgstr "<b>2. Pagriezties pa kreisi:</b> pagriež Tuksu pa kreisi."
-
-#: activities/programmingMaze/programmingMaze.js:100
-msgctxt "programmingMaze|"
-msgid "<b>3. Turn right:</b> Turns Tux to the right."
-msgstr "<b>3. Pagriezties pa labi:</b> pagriež Tuksu pa labi."
-
-#: activities/programmingMaze/programmingMaze.js:104
-msgctxt "programmingMaze|"
-msgid "Main Function:"
-msgstr "Pamatfunkcija:"
-
-#: activities/programmingMaze/programmingMaze.js:105
-msgctxt "programmingMaze|"
-msgid "The execution of the code starts here."
-msgstr "Te sākas koda izpilde."
-
-#: activities/programmingMaze/programmingMaze.js:106
-msgctxt "programmingMaze|"
-msgid ""
-"-Click on any instruction in the <b>instruction area</b> to add it to the "
-"<b>Main Function</b>."
-msgstr ""
-"-Spied uz jebkuras instrukcijas <b>instrukciju zonā</b>, lai to pievienotu "
-"<b>Pamatfunkcijai</b>."
-
-#: activities/programmingMaze/programmingMaze.js:107
-msgctxt "programmingMaze|"
-msgid ""
-"-The instructions will execute in order until there's none left, or until a "
-"dead-end, or when Tux reaches the fish."
-msgstr ""
-"-Instrukciju izpilde notiek pēc kārtas līdz neviena nav atlikusi vai ir "
-"sasniegts strupceļš, vai Tukss ir ticis līdz zivij."
-
-#: activities/programmingMaze/programmingMaze.js:114
-msgctxt "programmingMaze|"
-msgid "Procedure:"
-msgstr "Procedūra:"
-
-#: activities/programmingMaze/programmingMaze.js:115
-msgctxt "programmingMaze|"
-msgid ""
-"<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
-"the code by calling it where needed</b>."
-msgstr ""
-"<b>Procedūra</b> ir atkārtoti izmantojama instrukciju kopa, ko vari "
-"<b>izmantot kodā, to pēc vajadzības izsaucot atkal un atkal</b>."
-
-#: activities/programmingMaze/programmingMaze.js:116
-msgctxt "programmingMaze|"
-msgid ""
-"-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
-"area</b> to add your code, click on the <b>Procedure</b> or <b>Main "
-"Function</b> label."
-msgstr ""
-"-Lai <b>pārslēgtos</b> starp <b>Procedūru zonu</b> un <b>Pamatfunkcijas "
-"zonu</b>, lai pievienotu savu kodu, spied uz <b>Procedūras</b> vai "
-"<b>Pamatfunkcijas</b> etiķetes."
-
-#: activities/programmingMaze/programmingMaze.js:123
-msgctxt "programmingMaze|"
-msgid "Loop:"
-msgstr "Cikls:"
-
-#: activities/programmingMaze/programmingMaze.js:124
-msgctxt "programmingMaze|"
-msgid ""
-"<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
-"the number of times defined by the number inside it</b>."
-msgstr ""
-"<b>Cikls</b> ir instrukciju secība, kas tiek <b>pastāvīgi atkārtota tik "
-"reižu, cik ir norādīts cikla skaitlī</b>."
-
-#: activities/programmingMaze/programmingMaze.js:125
-msgctxt "programmingMaze|"
-msgid ""
-"-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
-"area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
-"label."
-msgstr ""
-"-Lai <b>pārslēgtos</b> starp <b>Cikla zonu</b> un <b>Pamatfunkcijas zonu</"
-"b>, lai pievienotu savu kodu, klikšķini uz <b>Cikla</b> vai "
-"<b>Pamatfunkcijas</b> etiķetes."
-
 #: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
@@ -22612,6 +22670,178 @@ msgstr "Procedūra"
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Cikls"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:542
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Instruction Area:"
+msgctxt "ProgrammingMaze|"
+msgid "Instruction Area:"
+msgstr "Instrukciju zona:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:543
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "There are 3 instructions which you can use to code and lead Tux to the "
+#| "fish:"
+msgctxt "ProgrammingMaze|"
+msgid ""
+"There are 3 instructions which you can use to code and lead Tux to the fish:"
+msgstr ""
+"Lai programmētu Tuksa ceļu līdz zivij, izmanto šādas trīs instrukcijas:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:544
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
+#| "facing."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
+"facing."
+msgstr ""
+"<b>1. Pārvietoties uz priekšu:</b> pārvieto Tuksu vienu soli uz priekšu "
+"virzienā, kurā viņš ir pagriezies."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:545
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "<b>2. Turn left:</b> Turns Tux to the left."
+msgctxt "ProgrammingMaze|"
+msgid "<b>2. Turn left:</b> Turns Tux to the left."
+msgstr "<b>2. Pagriezties pa kreisi:</b> pagriež Tuksu pa kreisi."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:546
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "<b>3. Turn right:</b> Turns Tux to the right."
+msgctxt "ProgrammingMaze|"
+msgid "<b>3. Turn right:</b> Turns Tux to the right."
+msgstr "<b>3. Pagriezties pa labi:</b> pagriež Tuksu pa labi."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:550
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Main Function:"
+msgctxt "ProgrammingMaze|"
+msgid "Main Function:"
+msgstr "Pamatfunkcija:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:551
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "The execution of the code starts here."
+msgctxt "ProgrammingMaze|"
+msgid "The execution of the code starts here."
+msgstr "Te sākas koda izpilde."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:552
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-Click on any instruction in the <b>instruction area</b> to add it to the "
+#| "<b>Main Function</b>."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-Click on any instruction in the <b>instruction area</b> to add it to the "
+"<b>Main Function</b>."
+msgstr ""
+"-Spied uz jebkuras instrukcijas <b>instrukciju zonā</b>, lai to pievienotu "
+"<b>Pamatfunkcijai</b>."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:553
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-The instructions will execute in order until there's none left, or until "
+#| "a dead-end, or when Tux reaches the fish."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-The instructions will execute in order until there's none left, or until a "
+"dead-end, or when Tux reaches the fish."
+msgstr ""
+"-Instrukciju izpilde notiek pēc kārtas līdz neviena nav atlikusi vai ir "
+"sasniegts strupceļš, vai Tukss ir ticis līdz zivij."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:563
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Procedure:"
+msgctxt "ProgrammingMaze|"
+msgid "Procedure:"
+msgstr "Procedūra:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:564
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "<b>Procedure</b> is a reusable set of instructions which can be <b>used "
+#| "in the code by calling it where needed</b>."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
+"the code by calling it where needed</b>."
+msgstr ""
+"<b>Procedūra</b> ir atkārtoti izmantojama instrukciju kopa, ko vari "
+"<b>izmantot kodā, to pēc vajadzības izsaucot atkal un atkal</b>."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:565
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main "
+#| "Function area</b> to add your code, click on the <b>Procedure</b> or "
+#| "<b>Main Function</b> label."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
+"area</b> to add your code, click on the <b>Procedure</b> or <b>Main "
+"Function</b> label."
+msgstr ""
+"-Lai <b>pārslēgtos</b> starp <b>Procedūru zonu</b> un <b>Pamatfunkcijas "
+"zonu</b>, lai pievienotu savu kodu, spied uz <b>Procedūras</b> vai "
+"<b>Pamatfunkcijas</b> etiķetes."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:575
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Loop:"
+msgctxt "ProgrammingMaze|"
+msgid "Loop:"
+msgstr "Cikls:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:576
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
+#| "the number of times defined by the number inside it</b>."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
+"the number of times defined by the number inside it</b>."
+msgstr ""
+"<b>Cikls</b> ir instrukciju secība, kas tiek <b>pastāvīgi atkārtota tik "
+"reižu, cik ir norādīts cikla skaitlī</b>."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:577
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
+#| "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</"
+#| "b> label."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
+"area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
+"label."
+msgstr ""
+"-Lai <b>pārslēgtos</b> starp <b>Cikla zonu</b> un <b>Pamatfunkcijas zonu</"
+"b>, lai pievienotu savu kodu, klikšķini uz <b>Cikla</b> vai "
+"<b>Pamatfunkcijas</b> etiķetes."
 
 #: activities/programmingMaze/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -22687,7 +22917,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "„Enter“ vai „Return“ taustiņš: apstiprināt atbildi"
 
-#: activities/railroad/Railroad.qml:125
+#: activities/railroad/Railroad.qml:126
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -22696,7 +22926,7 @@ msgstr ""
 "Apskati un iegaumē vilcienu pirms beidzas laiks, bet pēc tam velc elementus, "
 "lai izveidotu līdzīgu vilcienu."
 
-#: activities/railroad/Railroad.qml:126
+#: activities/railroad/Railroad.qml:129
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -22911,7 +23141,7 @@ msgstr ""
 "viņam gaismas slēdzi. Lai uzvarētu, tev ir jāieslēdz visi patērētāji, kad ir "
 "pieslēgti visi ražotāji."
 
-#: activities/renewable_energy/RenewableEnergy.qml:302
+#: activities/renewable_energy/RenewableEnergy.qml:304
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22920,7 +23150,7 @@ msgstr ""
 "Tukss ir atgriezies no makšķerēšanas laivā. Atjaunot elektrosistēmu, lai "
 "viņam mājās būtu gaisma."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:307
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22930,7 +23160,7 @@ msgstr ""
 "paneļi, vēja ferma un transformatori — noteiktā secībā, lai atjaunotu "
 "elektrosistēmu."
 
-#: activities/renewable_energy/RenewableEnergy.qml:306
+#: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22941,14 +23171,14 @@ msgstr ""
 "slēdzi. Lai uzvarētu, tev ir jāieslēdz visi patērētāji, kad ir pieslēgti "
 "visi ražotāji."
 
-#: activities/renewable_energy/RenewableEnergy.qml:308
+#: activities/renewable_energy/RenewableEnergy.qml:313
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Uzzini vairāk par elektrosistēmām, kas balstās atjaunīgajā enerģijā. "
 "Izklaidējies!"
 
-#: activities/renewable_energy/RenewableEnergy.qml:333
+#: activities/renewable_energy/RenewableEnergy.qml:339
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -23802,13 +24032,13 @@ msgctxt "ActivityInfo|"
 msgid "If there is a rest, it needs to be placed inside the candy jar."
 msgstr "Ja paliek atlikums, tas jāliek saldumu trauciņā."
 
-#: activities/share/resource/1/Data.qml:13
+#: activities/share/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, no rest."
 msgstr "Ne vairāk par 25 konfektēm un 5 bērniem, bez atlikuma."
 
-#: activities/share/resource/1/Data.qml:18
-#: activities/share/resource/2/Data.qml:18
+#: activities/share/resource/1/Data.qml:20
+#: activities/share/resource/2/Data.qml:20
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 2 pieces of candy equally between 2 of his girl friends. "
@@ -23819,19 +24049,19 @@ msgstr ""
 "vari viņam palīdzēt? Vispirms novieto bērnus centrā, bet tad pie katra velc "
 "konfektes."
 
-#: activities/share/resource/1/Data.qml:28
+#: activities/share/resource/1/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 4 pieces of candy equally among his friends."
 msgstr ""
 "Tagad viņš vēlas sadalīt 4 konfektes vienādās daļās starp saviem draugiem."
 
-#: activities/share/resource/1/Data.qml:38
+#: activities/share/resource/1/Data.qml:40
 msgctxt "Data|"
 msgid ""
 "Can you now share 6 of Paul's pieces of candy equally among his friends?"
 msgstr "Vai vari sadalīt 6 Paula konfektes vienādās daļās starp viņa draugiem?"
 
-#: activities/share/resource/1/Data.qml:48
+#: activities/share/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid ""
 "Some of his friends already have pieces of candy. He wants to give them 7 "
@@ -23840,7 +24070,7 @@ msgstr ""
 "Dažiem no viņa draugiem jau ir konfektes. Viņš vēlas viņiem sadalīt vēl 7 "
 "konfektes, lai visiem būtu vienāds skaits."
 
-#: activities/share/resource/1/Data.qml:58
+#: activities/share/resource/1/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 12 pieces of candy left. He eats 2 pieces of candy and he "
@@ -23851,7 +24081,7 @@ msgstr ""
 "pārējās vēlas sadalīt draugiem. Vai vari viņam palīdzēt vienādās daļās "
 "sadalīt 10 atlikušās konfektes?"
 
-#: activities/share/resource/1/Data.qml:70
+#: activities/share/resource/1/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "George wants to share 3 pieces of candy equally between 3 of his girl "
@@ -23860,7 +24090,7 @@ msgstr ""
 "Juris vēlas dalīties ar 3 konfektēm vienādās daļās starp viņa 3 draudzenēm. "
 "Vai viņš tās var sadalīt vienādās daļās?"
 
-#: activities/share/resource/1/Data.qml:80
+#: activities/share/resource/1/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 6 pieces of candy equally between 3 of her friends: 1 "
@@ -23869,7 +24099,7 @@ msgstr ""
 "Marija vēlas sadalīt 6 konfektes vienādās daļās starp 3 viņas draugiem — 1 "
 "meiteni un 2 zēniem. Vai viņa var konfektes sadalīt vienādās daļās?"
 
-#: activities/share/resource/1/Data.qml:90
+#: activities/share/resource/1/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "John wants to share 8 pieces of candy equally between 3 of his friends: 1 "
@@ -23880,7 +24110,7 @@ msgstr ""
 "zēnu un 2 meitenēm. Zēnam jau viena ir. Vai vari sadalīt konfektes tā, lai "
 "visiem būtu vienāds skaits?"
 
-#: activities/share/resource/1/Data.qml:100
+#: activities/share/resource/1/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 12 pieces of candy equally between 3 of his friends: 2 "
@@ -23890,7 +24120,7 @@ msgstr ""
 "— 2 zēniem un 1 meiteni. Vai viņš var sadalīt konfektes visiem vienādās "
 "daļās?"
 
-#: activities/share/resource/1/Data.qml:110
+#: activities/share/resource/1/Data.qml:112
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 11 pieces of candy between 3 of her friends: 1 boy and "
@@ -23901,8 +24131,8 @@ msgstr ""
 "meitenēm. Meitenēm jau ir dažas konfektes. Vai vari sadalīt atlikušās "
 "konfektes, lai visiem bērniem būtu vienāds skaits?"
 
-#: activities/share/resource/1/Data.qml:122
-#: activities/share/resource/2/Data.qml:112
+#: activities/share/resource/1/Data.qml:124
+#: activities/share/resource/2/Data.qml:114
 msgctxt "Data|"
 msgid ""
 "Alice wants to share 4 pieces of candy equally between 4 of her girl "
@@ -23911,12 +24141,12 @@ msgstr ""
 "Alise vēlas sadalīt 4 konfektes vienādās daļās starp viņas 4 draudzenēm. Vai "
 "vari viņai palīdzēt?"
 
-#: activities/share/resource/1/Data.qml:132
+#: activities/share/resource/1/Data.qml:134
 msgctxt "Data|"
 msgid "Now, Alice wants to give 8 pieces of candy to her friends."
 msgstr "Tagad Alise vēlas saviem draugiem izdalīt 8 konfektes."
 
-#: activities/share/resource/1/Data.qml:142
+#: activities/share/resource/1/Data.qml:144
 msgctxt "Data|"
 msgid ""
 "Alice wants to give 10 pieces of candy to her friends, 1 girl and 3 boys, so "
@@ -23926,12 +24156,12 @@ msgstr ""
 "Alise vēlas izdalīt 10 konfektes saviem draugiem — 1 meitenei un 3 zēniem —, "
 "lai viņiem visiem būtu vienāds skaits. Meitenēm jau dažas konfektes ir."
 
-#: activities/share/resource/1/Data.qml:152
+#: activities/share/resource/1/Data.qml:154
 msgctxt "Data|"
 msgid "Alice wants to give 16 pieces of candy to her friends."
 msgstr "Alise vēlas starp saviem draugiem izdalīt 16 konfektes."
 
-#: activities/share/resource/1/Data.qml:162
+#: activities/share/resource/1/Data.qml:164
 msgctxt "Data|"
 msgid ""
 "Alice wants to give pieces of candy to 4 friends. Some of them already have "
@@ -23942,7 +24172,7 @@ msgstr ""
 "konfektes. Vai vari Alisei palīdzēt sadalīt 14 konfektes, lai visiem "
 "draugiem būtu vienāds skaits?"
 
-#: activities/share/resource/1/Data.qml:174
+#: activities/share/resource/1/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Michael wants to share 5 pieces of candy equally between 5 of his girl "
@@ -23951,7 +24181,7 @@ msgstr ""
 "Mārtiņš vēlas sadalīt 5 konfektes vienādās daļās starp viņa 5 draudzenēm. "
 "Vai vari viņam palīdzēt?"
 
-#: activities/share/resource/1/Data.qml:184
+#: activities/share/resource/1/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Helen has 5 friends: 2 boys and 3 girls. She wants to give them 10 pieces of "
@@ -23961,7 +24191,7 @@ msgstr ""
 "izdalīt 10 konfektes. Vai vari viņai palīdzēt konfektes sadalīt vienādās "
 "daļās starp draugiem?"
 
-#: activities/share/resource/1/Data.qml:194
+#: activities/share/resource/1/Data.qml:196
 msgctxt "Data|"
 msgid ""
 "Michelle wants to share 12 pieces of candy equally between her 4 brothers "
@@ -23971,7 +24201,7 @@ msgstr ""
 "Laine vēlas sadalīt 12 konfektes vienādās daļās starp viņas 4 brāļiem un 1 "
 "māsu, lai visiem būtu vienāds skaits. Viņas māsai jau ir dažas konfektes."
 
-#: activities/share/resource/1/Data.qml:204
+#: activities/share/resource/1/Data.qml:206
 msgctxt "Data|"
 msgid ""
 "Thomas wants to share his 20 pieces of candy with his friends: 1 boy and 4 "
@@ -23980,7 +24210,7 @@ msgstr ""
 "Tomass vēlas sadalīt viņa 20 konfektes starp draugiem: 1 zēnu un 4 meitenēm. "
 "Vai vari viņam palīdzēt?"
 
-#: activities/share/resource/1/Data.qml:214
+#: activities/share/resource/1/Data.qml:216
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 20 pieces of candy equally between 5 of his friends. "
@@ -23989,7 +24219,7 @@ msgstr ""
 "Pauls vēlas sadalīt 20 konfektes vienādās daļās starp saviem 5 draugiem. "
 "Katram no viņiem jau ir viena konfekte. Vai vari viņam palīdzēt?"
 
-#: activities/share/resource/1/Data.qml:226
+#: activities/share/resource/1/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally with 2 of his girl "
@@ -23998,7 +24228,7 @@ msgstr ""
 "Kārlis vēlas sadalīt savas 6 konfektes vienādās daļās savām 2 draudzenēm. "
 "Vai vari palīdzēt viņam konfektes sadalīt vienādi?"
 
-#: activities/share/resource/1/Data.qml:236
+#: activities/share/resource/1/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -24010,7 +24240,7 @@ msgstr ""
 "viņai jāsadala savas konfektes, lai beigās visiem draugiem paliktu vienāds "
 "skaits?"
 
-#: activities/share/resource/1/Data.qml:246
+#: activities/share/resource/1/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 16 pieces of candy to share equally with his "
@@ -24021,7 +24251,7 @@ msgstr ""
 "draugiem — 2 zēniem un 2 meitenēm. Palīdzi viņam sadalīt konfektes, lai visi "
 "dabūtu vienādu skaitu."
 
-#: activities/share/resource/1/Data.qml:256
+#: activities/share/resource/1/Data.qml:258
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy between 4 of his friends: 2 girls "
@@ -24032,7 +24262,7 @@ msgstr ""
 "zēniem. Zēniem jau katram ir pa vienai konfektei, bet Juris vēlas, lai "
 "visiem būtu vienāds skaits."
 
-#: activities/share/resource/1/Data.qml:266
+#: activities/share/resource/1/Data.qml:268
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 25 pieces of candy equally between 5 of her friends: 3 "
@@ -24042,27 +24272,27 @@ msgstr ""
 "meitenēm un 2 zēniem. Vai vari viņai palīdzēt tās sadalīt, vai visi saņemtu "
 "vienādu skaitu?"
 
-#: activities/share/resource/2/Data.qml:13
+#: activities/share/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, possible rest."
 msgstr "Ne vairāk par 25 konfektēm un 5 bērniem, iespējams atlikums."
 
-#: activities/share/resource/2/Data.qml:28
+#: activities/share/resource/2/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 5 pieces of candy among his friends."
 msgstr "Tagad viņš vēlas dalīties ar 5 konfektēm starp saviem draugiem."
 
-#: activities/share/resource/2/Data.qml:38
+#: activities/share/resource/2/Data.qml:40
 msgctxt "Data|"
 msgid "Can you now share 7 of Paul's pieces of candy among his friends?"
 msgstr "Vai vari sadalīt 7 Paula konfektes starp viņa draugiem?"
 
-#: activities/share/resource/2/Data.qml:48
+#: activities/share/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Can you now share 8 of Paul's pieces of candy among his friends?"
 msgstr "Vai vari sadalīt 8 Paula konfektes starp viņa draugiem?"
 
-#: activities/share/resource/2/Data.qml:58
+#: activities/share/resource/2/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 11 pieces of candy left. He eats 2 pieces of candy and he "
@@ -24073,7 +24303,7 @@ msgstr ""
 "pārējās vēlas sadalīt draugiem. Vai vari viņam palīdzēt vienādās daļās "
 "sadalīt 9 atlikušās konfektes?"
 
-#: activities/share/resource/2/Data.qml:70
+#: activities/share/resource/2/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "Bob wants to share 3 pieces of candy equally between 3 of his girl friends. "
@@ -24082,7 +24312,7 @@ msgstr ""
 "Roberts vēlas sadalīt 3 konfektes vienādās daļās starp viņa 3 draudzenēm. "
 "Vai vari palīdzēt viņam to izdarīt?"
 
-#: activities/share/resource/2/Data.qml:80
+#: activities/share/resource/2/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 8 pieces of candy between 3 of his friends: 1 boy and 2 "
@@ -24093,7 +24323,7 @@ msgstr ""
 "meitenēm. Zēnam jau ir viena konfekte. Vai viņš var sadalīt konfektes tā, "
 "lai visiem būtu vienāds skaits?"
 
-#: activities/share/resource/2/Data.qml:90
+#: activities/share/resource/2/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 8 pieces of candy between 3 of her friends: 1 boy and 2 "
@@ -24104,7 +24334,7 @@ msgstr ""
 "meitenēm. Meitenēm jau ir dažas konfektes. Vai vari sadalīt atlikušās "
 "konfektes, lai visiem bērniem būtu vienāds skaits?"
 
-#: activities/share/resource/2/Data.qml:100
+#: activities/share/resource/2/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 12 pieces of candy between 3 of his friends: 1 boy and "
@@ -24115,12 +24345,12 @@ msgstr ""
 "meitenēm. Zēns jau ir dabūjis konfektes. Vai vari sadalīt atlikušās "
 "konfektes tā, lai visiem būtu vienāds skaits?"
 
-#: activities/share/resource/2/Data.qml:122
+#: activities/share/resource/2/Data.qml:124
 msgctxt "Data|"
 msgid "Now, Alice wants to share 8 pieces of candy equally among her friends."
 msgstr "Tagad Alise vēlas vienādi sadalīt 8 konfektes starp saviem draugiem."
 
-#: activities/share/resource/2/Data.qml:132
+#: activities/share/resource/2/Data.qml:134
 msgctxt "Data|"
 msgid ""
 "Can you help Alice share 10 pieces of candy equally among her friends: 1 "
@@ -24129,12 +24359,12 @@ msgstr ""
 "Vai vari palīdzēt Alisei sadalīt 10 konfektes vienādi starp viņas draugiem — "
 "1 meiteni un 3 zēniem? Meitenei jau ir dažas konfektes."
 
-#: activities/share/resource/2/Data.qml:142
+#: activities/share/resource/2/Data.qml:144
 msgctxt "Data|"
 msgid "Alice wants to share 16 pieces of candy equally among her friends."
 msgstr "Alise vēlas sadalīt 16 konfektes vienādā skaitā starp saviem draugiem."
 
-#: activities/share/resource/2/Data.qml:152
+#: activities/share/resource/2/Data.qml:154
 msgctxt "Data|"
 msgid ""
 "Alice has 14 pieces of candy left. She wants to share them equally among her "
@@ -24145,7 +24375,7 @@ msgstr ""
 "draugiem. Zēniem jau ir dažas konfektes. Vai vari viņai palīdzēt sadalīt "
 "konfektes, lai beigās visiem būtu vienāds skaits?"
 
-#: activities/share/resource/2/Data.qml:164
+#: activities/share/resource/2/Data.qml:166
 msgctxt "Data|"
 msgid ""
 "Help Jon share 11 pieces of candies equally between five girls. The rest "
@@ -24154,7 +24384,7 @@ msgstr ""
 "Palīdzi Pēterim starp piecām meitenēm sadalīt 11 konfektes. Atlikušās paliks "
 "Pēterim."
 
-#: activities/share/resource/2/Data.qml:174
+#: activities/share/resource/2/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Jon wants to share the rest of his pieces of candies with his brothers and "
@@ -24164,7 +24394,7 @@ msgstr ""
 "Pēteris vēlas sadalīt atlikušās konfektes starp viņa brāli un māsu. Vai vari "
 "tās sadalīt vienādi, zinot, ka brālis 2 konfektes jau ir dabūjis?"
 
-#: activities/share/resource/2/Data.qml:184
+#: activities/share/resource/2/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Help Tux split 19 pieces of candies between his friends: 4 boys and 1 girl."
@@ -24172,14 +24402,14 @@ msgstr ""
 "Palīdzi Tuksam sadalīt 19 konfektes starp viņā draugiem — 4 zēniem un 1 "
 "meiteni."
 
-#: activities/share/resource/2/Data.qml:194
+#: activities/share/resource/2/Data.qml:196
 msgctxt "Data|"
 msgid "Help Maria share 18 pieces of candy equally between 3 boys and 2 girls."
 msgstr ""
 "Palīdzi Marijai sadalīt 19 konfektes vienādās daļās starp 3 zēniem un 2 "
 "meitenēm."
 
-#: activities/share/resource/2/Data.qml:206
+#: activities/share/resource/2/Data.qml:208
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally between 2 of his girl "
@@ -24188,7 +24418,7 @@ msgstr ""
 "Kārlis vēlas sadalīt 6 konfektes starp viņa 2 draudzenēm. Vai vari palīdzēt "
 "tās sadalīt vienādi?"
 
-#: activities/share/resource/2/Data.qml:216
+#: activities/share/resource/2/Data.qml:218
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -24199,7 +24429,7 @@ msgstr ""
 "vienādi sadalīt starp saviem 3 draugiem: 2 meitenēm un 1 zēnu. Kā viņai "
 "jāsadala konfektes, lai visiem būtu vienāds skaits?"
 
-#: activities/share/resource/2/Data.qml:226
+#: activities/share/resource/2/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 17 pieces of candy to share equally between his "
@@ -24209,7 +24439,7 @@ msgstr ""
 "Krišjānis no tēva saņēma 17 konfektes, kuras Krišjānis vēlas sadalīt starp "
 "saviem draugiem: 2 zēniem un 2 meitenēm. Palīdzi viņam sadalīt konfektes."
 
-#: activities/share/resource/2/Data.qml:236
+#: activities/share/resource/2/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy equally between 4 of his friends: 2 "
@@ -24219,7 +24449,7 @@ msgstr ""
 "Juris vēlas sadalīt 14 konfektes starp saviem 4 draugiem: 2 meitenēm un 2 "
 "zēniem. Vai vari konfektes sadalīt starp draugiem vienādās daļās?"
 
-#: activities/share/resource/2/Data.qml:246
+#: activities/share/resource/2/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 23 pieces of candy equally between 5 of her friends: 3 "
@@ -24229,12 +24459,12 @@ msgstr ""
 "Marija vēlas sadalīt 23 konfektes vienādās daļās starp saviem 5 draugiem — 3 "
 "meitenēm un 2 zēniem. Vai viņa var konfektes sadalīt vienādi starp draugiem?"
 
-#: activities/share/resource/3/Data.qml:13
+#: activities/share/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr "Ne vairāk par 30 konfektēm un 6 bērniem, iespējams atlikums."
 
-#: activities/share/share.js:98
+#: activities/share/share.js:115
 #, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -24245,7 +24475,7 @@ msgstr[0] "Novieto %n zēnu "
 msgstr[1] "Novieto %n zēnus "
 msgstr[2] "Novieto %n zēnu "
 
-#: activities/share/share.js:102
+#: activities/share/share.js:119
 #, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -24256,7 +24486,7 @@ msgstr[0] "un %n meiteni centrā."
 msgstr[1] "un %n meitenes centrā."
 msgstr[2] "un %n meiteņu centrā."
 
-#: activities/share/share.js:106
+#: activities/share/share.js:123
 #, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -24267,7 +24497,7 @@ msgstr[0] "Pēc tam starp viņiem vienādās daļās sadali %n konfekti."
 msgstr[1] "Pēc tam starp viņiem vienādās daļās sadali %n konfektes."
 msgstr[2] "Pēc tam starp viņiem vienādās daļās sadali %n konfekšu."
 
-#: activities/share/Share.qml:358
+#: activities/share/Share.qml:359
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
@@ -25834,7 +26064,7 @@ msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Mācīšanās"
 
-#: activities/solar_system/SolarSystem.qml:156
+#: activities/solar_system/SolarSystem.qml:157
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -25843,7 +26073,7 @@ msgstr ""
 "Klikšķini uz Saules vai jebkuras planētas, lai atklātu jautājumu. Katram "
 "jautājumam ir četri atbilžu variantu, no kuriem pareizs ir viens."
 
-#: activities/solar_system/SolarSystem.qml:157
+#: activities/solar_system/SolarSystem.qml:160
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -25858,7 +26088,7 @@ msgstr ""
 "iegūsti 100 % precizitāti. Ja redzi padomu pogu, vari uz tās klikšķināt, lai "
 "iegūtu padomu par pareizo atbildi."
 
-#: activities/solar_system/SolarSystem.qml:162
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -25867,7 +26097,7 @@ msgstr ""
 "Sākotnēji ir 20 jautājumu ar četriem atbilžu variantiem. Progresa josla "
 "ekrāna apakšējā labajā pusē rāda punktus izteiktus procentuāli."
 
-#: activities/solar_system/SolarSystem.qml:163
+#: activities/solar_system/SolarSystem.qml:173
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -25880,7 +26110,7 @@ msgstr ""
 "atbildēto jautājumu.<br>Saņemsi līdz 25 jautājumiem, bet vairāk jautājumi "
 "uzdoti netiks."
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:176
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -25889,7 +26119,7 @@ msgstr ""
 "Lai noliktu pārbaudījumu un kļūtu par Saules sistēmas ekspertu, tavam "
 "vērtējumam ir jāpārsniedz 90%."
 
-#: activities/solar_system/SolarSystem.qml:349
+#: activities/solar_system/SolarSystem.qml:365
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25899,7 +26129,7 @@ msgstr ""
 "1. Jo <b>tālāk</b> planēta atrodas no Saules, jo <b>zemāka</b> ir tās "
 "temperatūra.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:350
+#: activities/solar_system/SolarSystem.qml:366
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25910,7 +26140,7 @@ msgstr ""
 "<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:369
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -25921,12 +26151,12 @@ msgstr ""
 "pirmo burtu — <b>M</b>ans <b>v</b>ecais <b>z</b>aļais <b>m</b>arsietis "
 "<b>ja</b>utri <b>s</b>tāda <b>u<b>pē <b>n</b>iedres.<br>"
 
-#: activities/solar_system/SolarSystem.qml:355
+#: activities/solar_system/SolarSystem.qml:371
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Padoms"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:379
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Apskati Saules sistēmu"
@@ -26045,13 +26275,21 @@ msgctxt "Controls|"
 msgid "Right Ballast Tank"
 msgstr "Labā balasta tvertne"
 
-#: activities/submarine/submarine.js:21
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:130
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Move the submarine to the other side of the screen."
+msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "Pārvieto zemūdeni uz ekrāna otru pusi."
 
-#: activities/submarine/submarine.js:22
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:133
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The leftmost item in the control panel is the engine of the submarine, "
+#| "indicating the current speed of the submarine."
+msgctxt "Submarine|"
 msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
 "indicating the current speed of the submarine."
@@ -26059,30 +26297,49 @@ msgstr ""
 "Vadības paneļa kreisajā pusē atrodas zemūdenes motors, kurā redzams "
 "transportlīdzekļa ātrums."
 
-#: activities/submarine/submarine.js:23
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:136
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Increase or decrease the velocity of the submarine using the engine."
+msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr "Ātrum palielināšana vai samazināšana ar motoru."
 
-#: activities/submarine/submarine.js:24
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:139
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Press the + button to increase the velocity, or the - button to decrease "
+#| "the velocity."
+msgctxt "Submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
 "velocity."
 msgstr "Spied + pogu, lai palielinātu ātrumu, bet − pogu, lai to samazinātu."
 
-#: activities/submarine/submarine.js:27
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:146
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "The item next to the engine is the ballast tank."
+msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "Priekšmets blakus motoram ir balasta tvertne."
 
-#: activities/submarine/submarine.js:28
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:149
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "The ballast tanks are used to float or dive under water."
+msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr "Balasta tvertnes izmanto, lai peldētu zem ūdens."
 
-#: activities/submarine/submarine.js:29
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:152
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "If the ballast tanks are empty, the submarine will float. If the ballast "
+#| "tanks are full of water, the submarine will dive underwater."
+msgctxt "Submarine|"
 msgid ""
 "If the ballast tanks are empty, the submarine will float. If the ballast "
 "tanks are full of water, the submarine will dive underwater."
@@ -26090,8 +26347,14 @@ msgstr ""
 "Ja balasta tvertnes ir tukšas, zemūdene uzpeldēs, ja tās ir pilnas ar ūdeni, "
 "tad zemūdene grims."
 
-#: activities/submarine/submarine.js:30
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:155
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Turning the upper valve on or off will alternatively allow or stop the "
+#| "water from filling in the ballast tank, thus allowing it to dive "
+#| "underwater."
+msgctxt "Submarine|"
 msgid ""
 "Turning the upper valve on or off will alternatively allow or stop the water "
 "from filling in the ballast tank, thus allowing it to dive underwater."
@@ -26099,8 +26362,14 @@ msgstr ""
 "Augšējā vārsta ieslēgšana un izslēgšana ļauj ūdenim ietecēt balasta tvertnē, "
 "vai arī to neļaus, lai zemūdene varētu grimt."
 
-#: activities/submarine/submarine.js:31
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:158
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Turning the lower valve on or off will alternatively allow or stop the "
+#| "water from flushing out the ballast tank, thus allowing it to float on "
+#| "the surface of the water."
+msgctxt "Submarine|"
 msgid ""
 "Turning the lower valve on or off will alternatively allow or stop the water "
 "from flushing out the ballast tank, thus allowing it to float on the surface "
@@ -26109,16 +26378,26 @@ msgstr ""
 "Apakšējā vārsta ieslēgšana ļaus vai neļaus ūdenim iztecēt no balasta "
 "tvertnes, lai zemūdene varētu uzpeldēt."
 
-#: activities/submarine/submarine.js:34
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:165
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The rightmost item in the control panel controls the diving planes of the "
+#| "submarine"
+msgctxt "Submarine|"
 msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
-"submarine"
+"submarine."
 msgstr ""
 "Vadības paneļa labajā pusē esošā vienība pārvalda zemūdenes niršanas plaknes"
 
-#: activities/submarine/submarine.js:35
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:168
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The diving planes in a submarine are used to control the depth of the "
+#| "submarine accurately once it is underwater."
+msgctxt "Submarine|"
 msgid ""
 "The diving planes in a submarine are used to control the depth of the "
 "submarine accurately once it is underwater."
@@ -26126,8 +26405,13 @@ msgstr ""
 "Zemūdenes niršanas plaknes tiek izmantotas, lai precīzi kontrolētu zemūdenes "
 "dziļumu, kad tā ir zem ūdens."
 
-#: activities/submarine/submarine.js:36
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:171
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Once the submarine is moving underwater, increasing or decreasing the "
+#| "angle of the planes will increase and decrease the depth of the submarine."
+msgctxt "Submarine|"
 msgid ""
 "Once the submarine is moving underwater, increasing or decreasing the angle "
 "of the planes will increase and decrease the depth of the submarine."
@@ -26135,21 +26419,32 @@ msgstr ""
 "Kad zemūdene peld zem ūdens, šo plakņu leņķa palielināšana vai samazināšana "
 "palielinās vai samazinās zemūdenes dziļumu."
 
-#: activities/submarine/submarine.js:37
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:174
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The + button will increase the depth of the submarine, while the - button "
+#| "will decrease the depth of the submarine."
+msgctxt "Submarine|"
 msgid ""
 "The + button will increase the depth of the submarine, while the - button "
 "will decrease the depth of the submarine."
 msgstr ""
 "+ poga palielinās zemūdenes dziļumu, bet − poga samazinās zemūdenes dziļumu."
 
-#: activities/submarine/submarine.js:38
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:177
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Grab the crown to open the gate."
+msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "Paņem kroni, lai atvērtu vārtus."
 
-#: activities/submarine/submarine.js:39
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:180
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Check out the help menu for the keyboard controls."
+msgctxt "Submarine|"
 msgid "Check out the help menu for the keyboard controls."
 msgstr "Apskaties palīdzības izvēlni, lai uzzinātu, kā vadīt ar taustiņiem."
 
@@ -27061,7 +27356,7 @@ msgstr ""
 "un kanalizācijas attīrīšanas iekārtas, lai no jauna iedarbinātu visu ūdens "
 "sistēmu. Kad ūdens ir atgriezies un Tukss ir dušā, nospied dušas pogu."
 
-#: activities/watercycle/Watercycle.qml:114
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -27069,12 +27364,12 @@ msgid ""
 msgstr ""
 "Ūdens cikla galvenā daļā ir Saule. Spied uz Saules, lai sāktu ūdens ciklu."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Saulei paceļoties, ūdens jūrā kļūst siltāks un sāk tvaikot."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -27083,7 +27378,7 @@ msgstr ""
 "Ūdens tvaiki kondensējas, izveidojot mākoņus. Kad mākoņi ir smagi, tie sāk "
 "līt. Klikšķini uz mākoņa."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:118
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -27094,7 +27389,7 @@ msgstr ""
 "izmantojot ūdenstorņus. Spied uz sūkņa motora, lai iedzīvotājiem piegādātu "
 "ūdeni."
 
-#: activities/watercycle/Watercycle.qml:119
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -27103,19 +27398,19 @@ msgstr ""
 "Vai redzi ar ūdeni pilno ūdenstorni? Ieslēdz kanalizācijas attīrīšanas "
 "iekārtu, klikšķinot uz tās."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Lieliski! Tukss ierodas mājās spied uz dušas."
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:122
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr ""
 "Fantastiski! Tev ir izdevies pabeigt ūdens ciklu. Vari turpināt spēlēt."
 
-#: activities/watercycle/Watercycle.qml:139
+#: activities/watercycle/Watercycle.qml:141
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -27126,7 +27421,7 @@ msgstr ""
 "cirkulējot no zemes uz debesīm un atpakaļ uz zemi. Saules siltums sniedz "
 "ūdenim enerģiju, lai tas varētu iztvaikot no ūdenstilpēm, piemēram, okeāna."
 
-#: activities/watercycle/Watercycle.qml:142
+#: activities/watercycle/Watercycle.qml:144
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -27137,7 +27432,7 @@ msgstr ""
 "izveido sīkus pilieniņus, kas veido mākoņus. Kad mākoņi virs zemes satiekas "
 "ar vēsu gaisu, sākas nokrišņi un līst."
 
-#: activities/watercycle/Watercycle.qml:145
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -27148,7 +27443,7 @@ msgstr ""
 "gruntsūdeni. Bet lielākā daļa ūdens aizplūst tālāk un no grāvjiem un upēm "
 "nonāk jūrā."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:150
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -28226,25 +28521,45 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "Sākam"
 
-#: core/Tutorial.qml:140
+#: core/Tutorial.qml:139
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "Iepriekšējā"
 
-#: core/Tutorial.qml:158
+#: core/Tutorial.qml:157
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "Nākamā"
 
-#: core/Tutorial.qml:175
+#: core/Tutorial.qml:174
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "Izlaist"
 
-#: core/Tutorial.qml:175
+#: core/Tutorial.qml:174
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Sākt"
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid "Grammatical analysis"
+#~ msgstr "Gramatiskā analīze"
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid "Learn to identify grammatical classes."
+#~ msgstr "Mācies atšķir vārdšķiras."
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid ""
+#~ "Select a grammatical class from the list, then select the box under a "
+#~ "word and assign it the class."
+#~ msgstr ""
+#~ "Atlasi vārdšķiru sarakstā, bet pēc tam atlasi lauciņu zem vārda un norādi "
+#~ "vārdšķiru."
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid "Leave the box blank if no class matches."
+#~ msgstr "Ja neviena neatbilst, atstāj lauciņu tukšu."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "<b>Keyboard controls:"

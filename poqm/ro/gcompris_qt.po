@@ -2770,7 +2770,7 @@ msgstr ""
 "meargă drept în față. Pe un ecran tactil, trebuie să atingi simultan cele "
 "două mâini."
 
-#: activities/ballcatch/Ballcatch.qml:228
+#: activities/ballcatch/Ballcatch.qml:227
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
@@ -2778,7 +2778,7 @@ msgstr ""
 "Lovește scurt cu vârful degetelor de la ambele mâini, pentru a face mingea "
 "să meargă drept în față."
 
-#: activities/ballcatch/Ballcatch.qml:230
+#: activities/ballcatch/Ballcatch.qml:233
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2908,15 +2908,25 @@ msgstr ""
 "Aprinde beculețele potrivite pentru a reprezenta binarul numărului zecimal "
 "dat. Când ai terminat, apasă butonul OK."
 
-#: activities/binary_bulb/binary_bulb.js:20
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:84
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "This activity teaches how to convert decimal numbers to binary numbers."
+msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr ""
 "Această activitate te învață cum să convertești numerele zecimale în numere "
 "binare."
 
-#: activities/binary_bulb/binary_bulb.js:24
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:88
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Computers use transistors to count and transistors have only two states, "
+#| "0 and 1. Mathematically, these states are represented by 0 and 1, which "
+#| "makes up the binary system of numeration."
+msgctxt "BinaryBulb|"
 msgid ""
 "Computers use transistors to count and transistors have only two states, 0 "
 "and 1. Mathematically, these states are represented by 0 and 1, which makes "
@@ -2926,14 +2936,22 @@ msgstr ""
 "au doar două stări, închis și deschis. Matematic, aceste stări sunt "
 "reprezentate de numerele 0 și 1, care constituie baza de numerație 2."
 
-#: activities/binary_bulb/binary_bulb.js:28
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:92
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
+msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr ""
 "În această activitate, 0 și 1 sunt simulate de beculețe stinse sau aprinse."
 
-#: activities/binary_bulb/binary_bulb.js:32
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:96
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Binary system uses these numbers very efficiently, allowing to count from "
+#| "0 to 255 with 8 bits only."
+msgctxt "BinaryBulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
 "to 255 with 8 bits only."
@@ -2941,8 +2959,15 @@ msgstr ""
 "Sistemul binar folosește aceste numere foarte eficient, permițând numărarea "
 "de la 0 la 255 cu doar 8 biți."
 
-#: activities/binary_bulb/binary_bulb.js:36
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:100
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Each bit adds a progressive value, corresponding to the powers of 2, "
+#| "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → "
+#| "2²=4 , bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit "
+#| "8 → 2⁷=128."
+msgctxt "BinaryBulb|"
 msgid ""
 "Each bit adds a progressive value, corresponding to the powers of 2, "
 "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → 2²=4 , "
@@ -2954,14 +2979,22 @@ msgstr ""
 "→ 2²=4 , bitul 4 → 2³=8 , bitul 5 → 2⁴=16 , bitul 6 → 2⁵=32 , bitul 7 → "
 "2⁶=64 , bitul 8 → 2⁷=128."
 
-#: activities/binary_bulb/binary_bulb.js:40
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:104
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
+msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr ""
 "Pentru a converti numărul zecimal 5 în sistemul binar, se adună 1 și 4."
 
-#: activities/binary_bulb/binary_bulb.js:44
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:108
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 "
+#| "is equal to binary 101."
+msgctxt "BinaryBulb|"
 msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
 "equal to binary 101."
@@ -2970,12 +3003,15 @@ msgstr ""
 "celorlalți biți valoarea 0. Așadar, numărul zecimal 5 este egal cu numărul "
 "binar 101."
 
-#: activities/binary_bulb/binary_bulb.js:48
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:112
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid "This image will help you to compute bits' value."
+msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Această imagine te va ajuta să calculezi valoarea biților."
 
-#: activities/binary_bulb/BinaryBulb.qml:126
+#: activities/binary_bulb/BinaryBulb.qml:160
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3644,7 +3680,7 @@ msgstr ""
 "închizi porțile etanșe în ordinea corespunzătoare, astfel încât Tux să poată "
 "naviga prin ecluză în ambele direcții."
 
-#: activities/canal_lock/CanalLock.qml:73
+#: activities/canal_lock/CanalLock.qml:74
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3653,7 +3689,7 @@ msgstr ""
 "Scopul tău este să-l treci pe Tux dincolo de ecluză, la buștenii de lemn, "
 "folosind diferitele tipuri de închidere disponibile."
 
-#: activities/canal_lock/CanalLock.qml:75
+#: activities/canal_lock/CanalLock.qml:77
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3663,7 +3699,7 @@ msgstr ""
 "Barele colorate verticale reprezintă ecluzele, care pot fi operate făcând "
 "clic pe ele. Două închideri de același tip nu pot fi operate simultan."
 
-#: activities/canal_lock/CanalLock.qml:77
+#: activities/canal_lock/CanalLock.qml:80
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -15076,66 +15112,59 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
 msgstr "Backspace: selectează cuvântul precedent"
 
-#: activities/grammar_analysis/grammar_analysis.js:37
+#: activities/grammar_analysis/grammar_analysis.js:398
 msgctxt "grammar_analysis|"
+msgid "Empty"
+msgstr "Golește"
+
+#: activities/grammar_analysis/GrammarAnalysis.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Grammatical analysis"
+msgctxt "GrammarAnalysis|"
 msgid "Grammatical analysis"
 msgstr "Analiză gramaticală"
 
-#: activities/grammar_analysis/grammar_analysis.js:38
-#: activities/grammar_analysis/grammar_analysis.js:48
-msgctxt "grammar_analysis|"
+#: activities/grammar_analysis/GrammarAnalysis.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn to identify grammatical classes."
+msgctxt "GrammarAnalysis|"
 msgid "Learn to identify grammatical classes."
-msgstr "Învață să identifici clasele gramaticale."
+msgstr "Să înveți să identifici clasele gramaticale."
 
-#: activities/grammar_analysis/grammar_analysis.js:39
-msgctxt "grammar_analysis|"
+#: activities/grammar_analysis/GrammarAnalysis.qml:28
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid ""
+#| "Find all the words corresponding to the requested grammatical classes."
+msgctxt "GrammarAnalysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr "Găsește toate cuvintele corespunzătoare claselor gramaticale cerute."
 
-#: activities/grammar_analysis/grammar_analysis.js:40
-msgctxt "grammar_analysis|"
+#: activities/grammar_analysis/GrammarAnalysis.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select a grammatical class from the list, then select the box under a "
+#| "word and assign it the class."
+msgctxt "GrammarAnalysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Selectează o clasă gramaticală din listă, apoi atribui-o unui cuvânt făcând "
-"clic pe boxa de sub el."
+"Selectează o clasă gramaticală din listă și atribui-o unui cuvânt, făcând "
+"clic pe boxa de sub un el."
 
-#: activities/grammar_analysis/grammar_analysis.js:41
-msgctxt "grammar_analysis|"
+#: activities/grammar_analysis/GrammarAnalysis.qml:30
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Leave the box blank if no class matches."
+msgctxt "GrammarAnalysis|"
 msgid "Leave the box blank if no class matches."
 msgstr ""
-"Nu alege nicio boxă dacă respectiva clasă nu se potrivește niciunui cuvânt."
-
-#: activities/grammar_analysis/grammar_analysis.js:47
-msgctxt "grammar_analysis|"
-msgid "Grammatical classes"
-msgstr "Clase gramaticale"
-
-#: activities/grammar_analysis/grammar_analysis.js:49
-msgctxt "grammar_analysis|"
-msgid "Find all the words corresponding to the requested grammatical class."
-msgstr "Găsește toate cuvintele corespunzătoare clasei gramaticale cerute."
-
-#: activities/grammar_analysis/grammar_analysis.js:50
-msgctxt "grammar_analysis|"
-msgid ""
-"Select the grammatical class from the list, then select the box under a word "
-"and assign it the class."
-msgstr ""
-"Selectează clasa gramaticală din listă și atribui-o unui cuvânt făcând clic "
-"pe boxa de sub el."
-
-#: activities/grammar_analysis/grammar_analysis.js:51
-msgctxt "grammar_analysis|"
-msgid "Leave the box blank if the class doesn't match."
-msgstr ""
-"Nu alege nicio boxă dacă clasa respectivă nu corespunde niciunui cuvânt."
-
-#: activities/grammar_analysis/grammar_analysis.js:421
-msgctxt "grammar_analysis|"
-msgid "Empty"
-msgstr "Golește"
+"Dacă clasa gramaticală cerută nu se potrivește niciunui cuvânt, atunci nu o "
+"plasa în nicio boxă."
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
@@ -15160,6 +15189,53 @@ msgstr ""
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
+msgid "Leave the box blank if the class doesn't match."
+msgstr ""
+"Nu alege nicio boxă dacă clasa respectivă nu corespunde niciunui cuvânt."
+
+#: activities/grammar_classes/GrammarClasses.qml:15
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Grammatical classes"
+msgctxt "GrammarClasses|"
+msgid "Grammatical classes"
+msgstr "Clase gramaticale"
+
+#: activities/grammar_classes/GrammarClasses.qml:16
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn to identify grammatical classes."
+msgctxt "GrammarClasses|"
+msgid "Learn to identify grammatical classes."
+msgstr "Să înveți să identifici clasele gramaticale."
+
+#: activities/grammar_classes/GrammarClasses.qml:17
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Find all the words corresponding to the requested grammatical class."
+msgctxt "GrammarClasses|"
+msgid "Find all the words corresponding to the requested grammatical class."
+msgstr "Găsește toate cuvintele corespunzătoare clasei gramaticale cerute."
+
+#: activities/grammar_classes/GrammarClasses.qml:18
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid ""
+#| "Select the grammatical class from the list, then select the box under a "
+#| "word and assign it the class."
+msgctxt "GrammarClasses|"
+msgid ""
+"Select the grammatical class from the list, then select the box under a word "
+"and assign it the class."
+msgstr ""
+"Selectează clasa gramaticală din listă și atribui-o unui cuvânt făcând clic "
+"pe boxa de sub el."
+
+#: activities/grammar_classes/GrammarClasses.qml:19
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Leave the box blank if the class doesn't match."
+msgctxt "GrammarClasses|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr ""
 "Nu alege nicio boxă dacă clasa respectivă nu corespunde niciunui cuvânt."
@@ -15262,7 +15338,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Săgețile stânga/dreapta: mișcă nava spațială"
 
-#: activities/gravity/Gravity.qml:219
+#: activities/gravity/Gravity.qml:220
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -16746,8 +16822,13 @@ msgstr ""
 "acești  pași până când numărul de bare trase corespunde cu numărul zecimal "
 "afișat. Fă apoi clic pe butonul OK pentru a-ți valida răspunsul."
 
-#: activities/learn_decimals/learn_decimals.js:33
-msgctxt "learn_decimals|"
+#: activities/learn_decimals/Learn_decimals.qml:30
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "A decimal number is displayed. The bar with the arrow represents a full "
+#| "unit, and each square in it represents one tenth of this unit."
+msgctxt "Learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
 "unit, and each square in it represents one tenth of this unit."
@@ -16755,8 +16836,15 @@ msgstr ""
 "Se afișează o fracție zecimală. Bara cu săgeată reprezintă o unitate "
 "întreagă, și fiecare pătrat din ea reprezintă o zecime din această unitate."
 
-#: activities/learn_decimals/learn_decimals.js:37
-msgctxt "learn_decimals|"
+#: activities/learn_decimals/Learn_decimals.qml:34
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Drag the arrow to select a part of the bar, and drag the selected part of "
+#| "the bar to the empty area. Repeat these steps until the number of dropped "
+#| "bars corresponds to the displayed decimal number. Then click on the OK "
+#| "button to validate your answer."
+msgctxt "Learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
 "the bar to the empty area. Repeat these steps until the number of dropped "
@@ -16768,104 +16856,31 @@ msgstr ""
 "corespunde cu fracția zecimală afișată. Fă apoi clic pe butonul OK pentru a-"
 "ți valida răspunsul."
 
-#: activities/learn_decimals/learn_decimals.js:44
-msgctxt "learn_decimals|"
-msgid ""
-"A subtraction with two decimal numbers is displayed. Below it, the first "
-"number from the subtraction is represented with bars. One bar represents a "
-"full unit, and each square in it represents one tenth of this unit."
-msgstr ""
-"Se afișează scăderea a două fracții zecimale. Sub ea, primul număr din "
-"scădere este reprezentat cu bare. O bară reprezintă o unitate întreagă, și "
-"fiecare pătrat din ea reprezintă o zecime din această unitate."
-
-#: activities/learn_decimals/learn_decimals.js:48
-msgctxt "learn_decimals|"
-msgid ""
-"Click on the squares to subtract them and display the result of the "
-"operation, and click on the OK button to validate your answer."
-msgstr ""
-"Fă clic pe pătrate pentru a le scădea și a afișa rezultatul operației, și fă "
-"clic pe butonul OK pentru a-ți valida răspunsul."
-
-#: activities/learn_decimals/learn_decimals.js:52
-#: activities/learn_decimals/learn_decimals.js:67
-msgctxt "learn_decimals|"
-msgid ""
-"If the answer is correct, type the corresponding result, and click on the OK "
-"button to validate your answer."
-msgstr ""
-"Dacă răspunsul este corect, scrie rezultatul corespunzător și fă clic pe "
-"butonul OK pentru a-ți valida răspunsul."
-
-#: activities/learn_decimals/learn_decimals.js:59
-msgctxt "learn_decimals|"
-msgid ""
-"An addition with two decimal numbers is displayed. The bar with the arrow "
-"represents a full unit, and each square in it represents one tenth of this "
-"unit."
-msgstr ""
-"Se afișează adunarea a două fracții zecimale. Bara cu săgeată reprezintă o "
-"unitate întreagă, și fiecare pătrat din ea reprezintă o zecime din această "
-"unitate."
-
-#: activities/learn_decimals/learn_decimals.js:63
-msgctxt "learn_decimals|"
-msgid ""
-"Drag the arrow to select a part of the bar, and drag the selected part of "
-"the bar to the empty area. Repeat these steps until the number of dropped "
-"bars corresponds to the result of the addition, and click on the OK button "
-"to validate your answer."
-msgstr ""
-"Trage săgeata pentru a selecta o parte a barei, și trage partea selectată a "
-"barei în zona goală. Repetă acești pași până când numărul de bare trase "
-"corespunde cu rezultatul adunării, și fă clic pe butonul OK pentru a-ți "
-"valida răspunsul."
-
-#: activities/learn_decimals/learn_decimals.js:74
-msgctxt "learn_decimals|"
-msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
-msgstr ""
-"Se solicită o cantitate. Săgeata permite selectarea a până la 10 portocale."
-
-#: activities/learn_decimals/learn_decimals.js:78
-msgctxt "learn_decimals|"
-msgid ""
-"Drag the arrow to select a number of oranges, and drag the selected oranges "
-"to the empty area. Repeat these steps until the number of oranges "
-"corresponds to the requested quantity. Then click on the OK button to "
-"validate your answer."
-msgstr ""
-"Trage săgeata pentru a selecta numărul de portocale, și trage portocalele "
-"selectate în zona liberă. Repetă acești pași până când numărul de portocale "
-"corespunde cu cantitatea solicitată. Fă apoi clic pe butonul OK pentru a-ți "
-"valida răspunsul."
-
-#: activities/learn_decimals/Learn_decimals.qml:142
+#: activities/learn_decimals/Learn_decimals.qml:150
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "Afișează numărul: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:143
+#: activities/learn_decimals/Learn_decimals.qml:151
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "Afișează rezultatul lui: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:144
+#: activities/learn_decimals/Learn_decimals.qml:152
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "Afișează rezultatul lui: %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:145
+#: activities/learn_decimals/Learn_decimals.qml:153
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "Reprezintă cantitatea: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:602
+#: activities/learn_decimals/Learn_decimals.qml:610
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -16934,6 +16949,57 @@ msgctxt "ActivityInfo|"
 msgid "Numbers: type the result"
 msgstr "Numere: scrie rezultatul"
 
+#: activities/learn_decimals_additions/Learn_decimals_additions.qml:16
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "An addition with two decimal numbers is displayed. The bar with the arrow "
+#| "represents a full unit, and each square in it represents one tenth of "
+#| "this unit."
+msgctxt "Learn_decimals_additions|"
+msgid ""
+"An addition with two decimal numbers is displayed. The bar with the arrow "
+"represents a full unit, and each square in it represents one tenth of this "
+"unit."
+msgstr ""
+"Se afișează adunarea a două fracții zecimale. Bara cu săgeată reprezintă o "
+"unitate întreagă, și fiecare pătrat din ea reprezintă o zecime din această "
+"unitate."
+
+#: activities/learn_decimals_additions/Learn_decimals_additions.qml:20
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Drag the arrow to select a part of the bar, and drag the selected part of "
+#| "the bar to the empty area. Repeat these steps until the number of dropped "
+#| "bars corresponds to the result of the addition, and click on the OK "
+#| "button to validate your answer."
+msgctxt "Learn_decimals_additions|"
+msgid ""
+"Drag the arrow to select a part of the bar, and drag the selected part of "
+"the bar to the empty area. Repeat these steps until the number of dropped "
+"bars corresponds to the result of the addition, and click on the OK button "
+"to validate your answer."
+msgstr ""
+"Trage săgeata pentru a selecta o parte a barei, și trage partea selectată a "
+"barei în zona goală. Repetă acești pași până când numărul de bare trase "
+"corespunde cu rezultatul adunării, și fă clic pe butonul OK pentru a-ți "
+"valida răspunsul."
+
+#: activities/learn_decimals_additions/Learn_decimals_additions.qml:24
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "If the answer is correct, type the corresponding result, and click on the "
+#| "OK button to validate your answer."
+msgctxt "Learn_decimals_additions|"
+msgid ""
+"If the answer is correct, type the corresponding result, and click on the OK "
+"button to validate your answer."
+msgstr ""
+"Dacă răspunsul este corect, scrie rezultatul corespunzător și fă clic pe "
+"butonul OK pentru a-ți valida răspunsul."
+
 #: activities/learn_decimals_additions/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Add decimal numbers up to 1."
@@ -16985,6 +17051,51 @@ msgstr ""
 "reprezentat cu bare. Fiecare bară reprezintă o unitate, și fiecare pătrat "
 "din bară reprezintă o zecime din această unitate. Fă clic pe pătrate pentru "
 "a scădea al doilea număr și a reprezenta rezultatul operației."
+
+#: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:16
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "A subtraction with two decimal numbers is displayed. Below it, the first "
+#| "number from the subtraction is represented with bars. One bar represents "
+#| "a full unit, and each square in it represents one tenth of this unit."
+msgctxt "Learn_decimals_subtractions|"
+msgid ""
+"A subtraction with two decimal numbers is displayed. Below it, the first "
+"number from the subtraction is represented with bars. One bar represents a "
+"full unit, and each square in it represents one tenth of this unit."
+msgstr ""
+"Se afișează scăderea a două fracții zecimale. Sub ea, primul număr din "
+"scădere este reprezentat cu bare. O bară reprezintă o unitate întreagă, și "
+"fiecare pătrat din ea reprezintă o zecime din această unitate."
+
+#: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:20
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Click on the squares to subtract them and display the result of the "
+#| "operation, and click on the OK button to validate your answer."
+msgctxt "Learn_decimals_subtractions|"
+msgid ""
+"Click on the squares to subtract them and display the result of the "
+"operation, and click on the OK button to validate your answer."
+msgstr ""
+"Fă clic pe pătrate pentru a le scădea și a afișa rezultatul operației, și fă "
+"clic pe butonul OK pentru a-ți valida răspunsul."
+
+#: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:24
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "If the answer is correct, type the corresponding result, and click on the "
+#| "OK button to validate your answer."
+msgctxt "Learn_decimals_subtractions|"
+msgid ""
+"If the answer is correct, type the corresponding result, and click on the OK "
+"button to validate your answer."
+msgstr ""
+"Dacă răspunsul este corect, scrie rezultatul corespunzător și fă clic pe "
+"butonul OK pentru a-ți valida răspunsul."
 
 #: activities/learn_decimals_subtractions/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -17145,6 +17256,36 @@ msgstr ""
 "portocale, și trage portocalele selectate în zona neocupată. Repetă acești "
 "pași până când numărul portocalelor trase corespunde cantității solicitate. "
 "Fă apoi clic butonul OK pentru a-ți valida răspunsul."
+
+#: activities/learn_quantities/Learn_quantities.qml:16
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "A quantity is requested. The arrow allows to select up to 10 oranges."
+msgctxt "Learn_quantities|"
+msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
+msgstr ""
+"Se solicită o cantitate. Săgeata permite selectarea a până la 10 portocale."
+
+#: activities/learn_quantities/Learn_quantities.qml:20
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Drag the arrow to select a number of oranges, and drag the selected "
+#| "oranges to the empty area. Repeat these steps until the number of oranges "
+#| "corresponds to the requested quantity. Then click on the OK button to "
+#| "validate your answer."
+msgctxt "Learn_quantities|"
+msgid ""
+"Drag the arrow to select a number of oranges, and drag the selected oranges "
+"to the empty area. Repeat these steps until the number of oranges "
+"corresponds to the requested quantity. Then click on the OK button to "
+"validate your answer."
+msgstr ""
+"Trage săgeata pentru a selecta numărul de portocale, și trage portocalele "
+"selectate în zona liberă. Repetă acești pași până când numărul de portocale "
+"corespunde cu cantitatea solicitată. Fă apoi clic pe butonul OK pentru a-ți "
+"valida răspunsul."
 
 #: activities/learn_quantities/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -20305,8 +20446,50 @@ msgstr ""
 "orice loc vacant. Un jucător câștigă atunci când celălalt jucător nu-și "
 "poate muta nici o piesă, sau a rămas cu doar două piese."
 
-#: activities/nine_men_morris/nine_men_morris.js:29
+#: activities/nine_men_morris/nine_men_morris.js:240
+#: activities/nine_men_morris/nine_men_morris.js:1086
 msgctxt "nine_men_morris|"
+msgid "Place a piece"
+msgstr "Plasează o piesă"
+
+#: activities/nine_men_morris/nine_men_morris.js:366
+#: activities/nine_men_morris/nine_men_morris.js:1144
+msgctxt "nine_men_morris|"
+msgid "Move a piece"
+msgstr "Mută o piesă"
+
+#: activities/nine_men_morris/nine_men_morris.js:918
+msgctxt "nine_men_morris|"
+msgid "Remove a piece"
+msgstr "Înlătură o piesă"
+
+#: activities/nine_men_morris/nine_men_morris.js:1121
+msgctxt "nine_men_morris|"
+msgid "Congratulations"
+msgstr "Felicitări!"
+
+#: activities/nine_men_morris/nine_men_morris.js:1124
+msgctxt "nine_men_morris|"
+msgid "Congratulations Player 1"
+msgstr "Felicitări Jucătorului 1!"
+
+#: activities/nine_men_morris/nine_men_morris.js:1135
+msgctxt "nine_men_morris|"
+msgid "Congratulations Player 2"
+msgstr "Felicitări Jucătorului 2!"
+
+#: activities/nine_men_morris/nine_men_morris.js:1138
+msgctxt "nine_men_morris|"
+msgid "Try again"
+msgstr "Încearcă din nou"
+
+#: activities/nine_men_morris/NineMenMorris.qml:348
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "You and Tux start with 9 pieces each, and take turns to place your pieces "
+#| "on the empty spots of the board (by clicking on the spots)."
+msgctxt "NineMenMorris|"
 msgid ""
 "You and Tux start with 9 pieces each, and take turns to place your pieces on "
 "the empty spots of the board (by clicking on the spots)."
@@ -20314,8 +20497,14 @@ msgstr ""
 "Tu și Tux începeți fiecare cu 9 piese, apoi faceți pe rând mutări cu ele, în "
 "spațiile libere de pe suprafața de joc (făcând clic pe acestea)."
 
-#: activities/nine_men_morris/nine_men_morris.js:33
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:352
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
+#| "remove it. Pieces of formed mill can not be removed unless no other "
+#| "pieces are left on the board."
+msgctxt "NineMenMorris|"
 msgid ""
 "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
 "remove it. Pieces of formed mill can not be removed unless no other pieces "
@@ -20325,8 +20514,14 @@ msgstr ""
 "lui Tux pe care s-o înlături. Piesele unei mori nu pot fi înlăturate decât "
 "dacă nu mai există alte piese pe suprafața de joc."
 
-#: activities/nine_men_morris/nine_men_morris.js:37
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:356
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "After all the pieces are placed, you and Tux will take turns to move "
+#| "them. Click on one of your pieces, and then on an adjacent empty spot to "
+#| "move it there. Green color spots indicates where you can move."
+msgctxt "NineMenMorris|"
 msgid ""
 "After all the pieces are placed, you and Tux will take turns to move them. "
 "Click on one of your pieces, and then on an adjacent empty spot to move it "
@@ -20336,8 +20531,13 @@ msgstr ""
 "ele. Fă clic pe una din piesele tale și apoi pe locul liber adiacent în care "
 "vrei s-o muți. Locul colorat în verde îți indică unde poți muta."
 
-#: activities/nine_men_morris/nine_men_morris.js:41
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:360
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
+#| "moved to any vacant spot on the board."
+msgctxt "NineMenMorris|"
 msgid ""
 "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
 "moved to any vacant spot on the board."
@@ -20345,51 +20545,19 @@ msgstr ""
 "Dacă ai rămas cu trei piese, acestea vor căpăta abilitatea de a „zbura”, "
 "putând fi deci mutate în orice loc liber de pe suprafața de joc."
 
-#: activities/nine_men_morris/nine_men_morris.js:45
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:364
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "If you immobilize the computer or leave it with less than 3 pieces, then "
+#| "you win the game."
+msgctxt "NineMenMorris|"
 msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
 "win the game."
 msgstr ""
 "Dacă ți-ai imobilizat adversarul sau l-ai lăsat cu mai puțin de trei piese, "
 "atunci ai câștigat jocul."
-
-#: activities/nine_men_morris/nine_men_morris.js:262
-#: activities/nine_men_morris/nine_men_morris.js:1108
-msgctxt "nine_men_morris|"
-msgid "Place a piece"
-msgstr "Plasează o piesă"
-
-#: activities/nine_men_morris/nine_men_morris.js:388
-#: activities/nine_men_morris/nine_men_morris.js:1166
-msgctxt "nine_men_morris|"
-msgid "Move a piece"
-msgstr "Mută o piesă"
-
-#: activities/nine_men_morris/nine_men_morris.js:940
-msgctxt "nine_men_morris|"
-msgid "Remove a piece"
-msgstr "Înlătură o piesă"
-
-#: activities/nine_men_morris/nine_men_morris.js:1143
-msgctxt "nine_men_morris|"
-msgid "Congratulations"
-msgstr "Felicitări!"
-
-#: activities/nine_men_morris/nine_men_morris.js:1146
-msgctxt "nine_men_morris|"
-msgid "Congratulations Player 1"
-msgstr "Felicitări Jucătorului 1!"
-
-#: activities/nine_men_morris/nine_men_morris.js:1157
-msgctxt "nine_men_morris|"
-msgid "Congratulations Player 2"
-msgstr "Felicitări Jucătorului 2!"
-
-#: activities/nine_men_morris/nine_men_morris.js:1160
-msgctxt "nine_men_morris|"
-msgid "Try again"
-msgstr "Încearcă din nou"
 
 #. Activity title
 #: activities/nine_men_morris_2players/ActivityInfo.qml:15
@@ -20456,13 +20624,13 @@ msgid "New note: %1"
 msgstr "Notă nouă: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:270
+#: activities/note_names/NoteNames.qml:271
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:448
+#: activities/note_names/NoteNames.qml:449
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20471,12 +20639,12 @@ msgstr ""
 "Această activitate necesită sunet, așa că vor fi redate niște sunete, chiar "
 "dacă vocile audio sau efectele sunt dezactivate în configurația principală."
 
-#: activities/note_names/NoteNames.qml:449
+#: activities/note_names/NoteNames.qml:450
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Ieși"
 
-#: activities/note_names/NoteNames.qml:450
+#: activities/note_names/NoteNames.qml:451
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Continuă"
@@ -20565,23 +20733,23 @@ msgstr ""
 "țintă. La primele nivele poți vedea ce număr trebuie să prinzi, în contorul "
 "din colțul din dreapta jos. La nivelele următoare, va trebui să-l ții minte."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:14
+#: activities/numbers-odd-even/NumbersOddEven.qml:15
 msgctxt "NumbersOddEven|"
 msgid "Catch the even numbers."
 msgstr "Prinde numerele pare."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:15
+#: activities/numbers-odd-even/NumbersOddEven.qml:16
 msgctxt "NumbersOddEven|"
 msgid "Catch the odd numbers."
 msgstr "Prinde numerele impare."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:42
+#: activities/numbers-odd-even/NumbersOddEven.qml:43
 msgctxt "NumbersOddEven|"
 msgid "This activity teaches about even and odd numbers."
 msgstr "Această activitate te învață despre numerele pare și impare."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:46
-#: activities/numbers-odd-even/NumbersOddEven.qml:56
+#: activities/numbers-odd-even/NumbersOddEven.qml:47
+#: activities/numbers-odd-even/NumbersOddEven.qml:55
 msgctxt "NumbersOddEven|"
 msgid ""
 "Even numbers are numbers which leave a remainder of 0 when divided by 2."
@@ -20592,7 +20760,7 @@ msgctxt "NumbersOddEven|"
 msgid "What is meant by remainder?"
 msgstr "Ce înseamnă restul unei împărțiri?"
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:60
+#: activities/numbers-odd-even/NumbersOddEven.qml:59
 msgctxt "NumbersOddEven|"
 msgid ""
 "Odd numbers are numbers which do not leave a remainder of 0 when divided by "
@@ -20600,9 +20768,9 @@ msgid ""
 msgstr ""
 "Numerele impare sunt cele care împărțite la 2 dau un rest diferit de 0."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:64
-#: activities/numbers-odd-even/NumbersOddEven.qml:68
-#: activities/numbers-odd-even/NumbersOddEven.qml:72
+#: activities/numbers-odd-even/NumbersOddEven.qml:63
+#: activities/numbers-odd-even/NumbersOddEven.qml:67
+#: activities/numbers-odd-even/NumbersOddEven.qml:71
 msgctxt "NumbersOddEven|"
 msgid "Exercise to test your understanding."
 msgstr "Exersează pentru a-ți testa cunoștințele dobândite."
@@ -22673,117 +22841,6 @@ msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "Alege instrucțiunile"
 
-#: activities/programmingMaze/programmingMaze.js:96
-msgctxt "programmingMaze|"
-msgid "Instruction Area:"
-msgstr "Zona de instrucțiuni:"
-
-#: activities/programmingMaze/programmingMaze.js:97
-msgctxt "programmingMaze|"
-msgid ""
-"There are 3 instructions which you can use to code and lead Tux to the fish:"
-msgstr ""
-"Sunt 3 instrucțiuni pe care le poți utiliza pentru a scrie codul și a-l "
-"conduce pe Tux la pește:"
-
-#: activities/programmingMaze/programmingMaze.js:98
-msgctxt "programmingMaze|"
-msgid ""
-"<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
-"facing."
-msgstr ""
-"<b>1. Mergi în față:</b> Îl mută pe Tux cu un pas înainte, în direcția spre "
-"care este îndreptat."
-
-#: activities/programmingMaze/programmingMaze.js:99
-msgctxt "programmingMaze|"
-msgid "<b>2. Turn left:</b> Turns Tux to the left."
-msgstr "<b>2. Mergi la stânga:</b> Îl întoarce pe Tux la stânga."
-
-#: activities/programmingMaze/programmingMaze.js:100
-msgctxt "programmingMaze|"
-msgid "<b>3. Turn right:</b> Turns Tux to the right."
-msgstr "<b>2. Mergi la dreapta:</b> Îl întoarce pe Tux la dreapta."
-
-#: activities/programmingMaze/programmingMaze.js:104
-msgctxt "programmingMaze|"
-msgid "Main Function:"
-msgstr "Funcția principală:"
-
-#: activities/programmingMaze/programmingMaze.js:105
-msgctxt "programmingMaze|"
-msgid "The execution of the code starts here."
-msgstr "Execuția codului începe aici."
-
-#: activities/programmingMaze/programmingMaze.js:106
-msgctxt "programmingMaze|"
-msgid ""
-"-Click on any instruction in the <b>instruction area</b> to add it to the "
-"<b>Main Function</b>."
-msgstr ""
-"- Fă clic pe orice instrucțiune din <b>zona de instrucțiuni</b> pentru a o "
-"adăuga la <b>Funcția Principală</b>."
-
-#: activities/programmingMaze/programmingMaze.js:107
-msgctxt "programmingMaze|"
-msgid ""
-"-The instructions will execute in order until there's none left, or until a "
-"dead-end, or when Tux reaches the fish."
-msgstr ""
-"- Instrucțiunile se vor executa în ordine, până când nu mai rămâne niciuna "
-"de executat, sau până când se ajunge într-un punct de unde nu mai poate "
-"merge mai departe, sau până când Tux ajunge la pește."
-
-#: activities/programmingMaze/programmingMaze.js:114
-msgctxt "programmingMaze|"
-msgid "Procedure:"
-msgstr "Procedura:"
-
-#: activities/programmingMaze/programmingMaze.js:115
-msgctxt "programmingMaze|"
-msgid ""
-"<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
-"the code by calling it where needed</b>."
-msgstr ""
-"<b>Procedura</b> este un set refolosibil de instrucțiuni, care poate fi "
-"<b>folosit în interiorul codului, apelând-o când este necesar</b>."
-
-#: activities/programmingMaze/programmingMaze.js:116
-msgctxt "programmingMaze|"
-msgid ""
-"-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
-"area</b> to add your code, click on the <b>Procedure</b> or <b>Main "
-"Function</b> label."
-msgstr ""
-"- Pentru a <b>comuta</b> între <b>Zona de procedură</b> și <b>Zona funcției "
-"principale</b>, pentru a-ți adăuga codul, fă clic pe <b>Procedură</b> sau pe "
-"eticheta <b>Funcția Principală</b>."
-
-#: activities/programmingMaze/programmingMaze.js:123
-msgctxt "programmingMaze|"
-msgid "Loop:"
-msgstr "Bucla:"
-
-#: activities/programmingMaze/programmingMaze.js:124
-msgctxt "programmingMaze|"
-msgid ""
-"<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
-"the number of times defined by the number inside it</b>."
-msgstr ""
-"<b>Bucla</b> este o secvență de instrucțiuni care sunt <b>continuu repetate, "
-"de atâtea ori cât precizează numărul din interiorul ei</b>."
-
-#: activities/programmingMaze/programmingMaze.js:125
-msgctxt "programmingMaze|"
-msgid ""
-"-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
-"area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
-"label."
-msgstr ""
-"- Pentru a <b>comuta</b> între <b>Zona de buclă</b> și <b>Zona funcției "
-"principale</b>, pentru a-ți adăuga codul, fă clic pe <b>Buclă</b> sau pe "
-"<b>Funcția Principală</b>."
-
 #: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
@@ -22804,6 +22861,180 @@ msgstr "Procedura"
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Bucla"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:542
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Instruction Area:"
+msgctxt "ProgrammingMaze|"
+msgid "Instruction Area:"
+msgstr "Zona de instrucțiuni:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:543
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "There are 3 instructions which you can use to code and lead Tux to the "
+#| "fish:"
+msgctxt "ProgrammingMaze|"
+msgid ""
+"There are 3 instructions which you can use to code and lead Tux to the fish:"
+msgstr ""
+"Sunt 3 instrucțiuni pe care le poți utiliza pentru a scrie codul și a-l "
+"conduce pe Tux la pește:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:544
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
+#| "facing."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
+"facing."
+msgstr ""
+"<b>1. Mergi în față:</b> Îl mută pe Tux cu un pas înainte, în direcția spre "
+"care este îndreptat."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:545
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "<b>2. Turn left:</b> Turns Tux to the left."
+msgctxt "ProgrammingMaze|"
+msgid "<b>2. Turn left:</b> Turns Tux to the left."
+msgstr "<b>2. Mergi la stânga:</b> Îl întoarce pe Tux la stânga."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:546
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "<b>3. Turn right:</b> Turns Tux to the right."
+msgctxt "ProgrammingMaze|"
+msgid "<b>3. Turn right:</b> Turns Tux to the right."
+msgstr "<b>2. Mergi la dreapta:</b> Îl întoarce pe Tux la dreapta."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:550
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Main Function:"
+msgctxt "ProgrammingMaze|"
+msgid "Main Function:"
+msgstr "Funcția principală:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:551
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "The execution of the code starts here."
+msgctxt "ProgrammingMaze|"
+msgid "The execution of the code starts here."
+msgstr "Execuția codului începe aici."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:552
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-Click on any instruction in the <b>instruction area</b> to add it to the "
+#| "<b>Main Function</b>."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-Click on any instruction in the <b>instruction area</b> to add it to the "
+"<b>Main Function</b>."
+msgstr ""
+"- Fă clic pe orice instrucțiune din <b>zona de instrucțiuni</b> pentru a o "
+"adăuga la <b>Funcția Principală</b>."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:553
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-The instructions will execute in order until there's none left, or until "
+#| "a dead-end, or when Tux reaches the fish."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-The instructions will execute in order until there's none left, or until a "
+"dead-end, or when Tux reaches the fish."
+msgstr ""
+"- Instrucțiunile se vor executa în ordine, până când nu mai rămâne niciuna "
+"de executat, sau până când se ajunge într-un punct de unde nu mai poate "
+"merge mai departe, sau până când Tux ajunge la pește."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:563
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Procedure:"
+msgctxt "ProgrammingMaze|"
+msgid "Procedure:"
+msgstr "Procedura:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:564
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "<b>Procedure</b> is a reusable set of instructions which can be <b>used "
+#| "in the code by calling it where needed</b>."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
+"the code by calling it where needed</b>."
+msgstr ""
+"<b>Procedura</b> este un set refolosibil de instrucțiuni, care poate fi "
+"<b>folosit în interiorul codului, apelând-o când este necesar</b>."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:565
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main "
+#| "Function area</b> to add your code, click on the <b>Procedure</b> or "
+#| "<b>Main Function</b> label."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
+"area</b> to add your code, click on the <b>Procedure</b> or <b>Main "
+"Function</b> label."
+msgstr ""
+"- Pentru a <b>comuta</b> între <b>Zona de procedură</b> și <b>Zona funcției "
+"principale</b>, pentru a-ți adăuga codul, fă clic pe <b>Procedură</b> sau pe "
+"eticheta <b>Funcția Principală</b>."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:575
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Loop:"
+msgctxt "ProgrammingMaze|"
+msgid "Loop:"
+msgstr "Bucla:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:576
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
+#| "the number of times defined by the number inside it</b>."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
+"the number of times defined by the number inside it</b>."
+msgstr ""
+"<b>Bucla</b> este o secvență de instrucțiuni care sunt <b>continuu repetate, "
+"de atâtea ori cât precizează numărul din interiorul ei</b>."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:577
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
+#| "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</"
+#| "b> label."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
+"area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
+"label."
+msgstr ""
+"- Pentru a <b>comuta</b> între <b>Zona de buclă</b> și <b>Zona funcției "
+"principale</b>, pentru a-ți adăuga codul, fă clic pe <b>Buclă</b> sau pe "
+"<b>Funcția Principală</b>."
 
 #: activities/programmingMaze/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -22880,7 +23111,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Enter sau Return: trimite răspunsul spre validare."
 
-#: activities/railroad/Railroad.qml:125
+#: activities/railroad/Railroad.qml:126
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -22889,7 +23120,7 @@ msgstr ""
 "Observă și ține minte trenul înainte de terminarea timpului de observare și "
 "apoi glisează articolele pentru a reconstitui un tren identic."
 
-#: activities/railroad/Railroad.qml:126
+#: activities/railroad/Railroad.qml:129
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -23109,7 +23340,7 @@ msgstr ""
 "pentru el butonul de lumină. Pentru a câștiga, trebuie să pornești toți "
 "consumatorii în timp ce funcționează toți producătorii de curent electric."
 
-#: activities/renewable_energy/RenewableEnergy.qml:302
+#: activities/renewable_energy/RenewableEnergy.qml:304
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -23118,7 +23349,7 @@ msgstr ""
 "Tux s-a întors cu barca de la pescuit. Refă-i înapoi sistemul electric, ca "
 "să aibă lumină în casă."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:307
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -23128,7 +23359,7 @@ msgstr ""
 "centrale eoliene și transformatoare, pentru a reactiva întregul sistem "
 "electric."
 
-#: activities/renewable_energy/RenewableEnergy.qml:306
+#: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -23139,14 +23370,14 @@ msgstr ""
 "butonul de lumină. Pentru a câștiga, trebuie să pornești toți consumatorii "
 "în timp ce funcționează toți producătorii de curent electric."
 
-#: activities/renewable_energy/RenewableEnergy.qml:308
+#: activities/renewable_energy/RenewableEnergy.qml:313
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Învață despre un sistem electric bazat pe energie regenerabilă. Distracție "
 "plăcută!"
 
-#: activities/renewable_energy/RenewableEnergy.qml:333
+#: activities/renewable_energy/RenewableEnergy.qml:339
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -24021,13 +24252,13 @@ msgctxt "ActivityInfo|"
 msgid "If there is a rest, it needs to be placed inside the candy jar."
 msgstr "Dacă există un rest, el trebuie plasat în borcanul de bomboane."
 
-#: activities/share/resource/1/Data.qml:13
+#: activities/share/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, no rest."
 msgstr "Maximum 25 de bomboane și 5 copii, fără rest."
 
-#: activities/share/resource/1/Data.qml:18
-#: activities/share/resource/2/Data.qml:18
+#: activities/share/resource/1/Data.qml:20
+#: activities/share/resource/2/Data.qml:20
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 2 pieces of candy equally between 2 of his girl friends. "
@@ -24038,12 +24269,12 @@ msgstr ""
 "să-l ajuți? Mai întâi, așează copiii în centru, apoi trage bomboanele înspre "
 "fiecare din ei."
 
-#: activities/share/resource/1/Data.qml:28
+#: activities/share/resource/1/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 4 pieces of candy equally among his friends."
 msgstr "Acum el vrea să împartă în mod egal 4 bomboane prietenilor lui."
 
-#: activities/share/resource/1/Data.qml:38
+#: activities/share/resource/1/Data.qml:40
 msgctxt "Data|"
 msgid ""
 "Can you now share 6 of Paul's pieces of candy equally among his friends?"
@@ -24051,7 +24282,7 @@ msgstr ""
 "Poți să împarți acum în mod egal cele 6 bomboane ale lui Paul prietenilor "
 "săi?"
 
-#: activities/share/resource/1/Data.qml:48
+#: activities/share/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid ""
 "Some of his friends already have pieces of candy. He wants to give them 7 "
@@ -24060,7 +24291,7 @@ msgstr ""
 "Câțiva din prietenii lui au deja bomboane. El vrea să le dea încă 7 "
 "bomboane, astfel încât toți să aibă același număr."
 
-#: activities/share/resource/1/Data.qml:58
+#: activities/share/resource/1/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 12 pieces of candy left. He eats 2 pieces of candy and he "
@@ -24071,7 +24302,7 @@ msgstr ""
 "prietenilor săi. Îl poți ajuta să împartă în mod egal cele 10 bomboane "
 "rămase?"
 
-#: activities/share/resource/1/Data.qml:70
+#: activities/share/resource/1/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "George wants to share 3 pieces of candy equally between 3 of his girl "
@@ -24080,7 +24311,7 @@ msgstr ""
 "George vrea să împartă în mod egal 3 bomboane la 3 dintre prietenele lui. Le "
 "poate el împărți bomboanele în mod egal?"
 
-#: activities/share/resource/1/Data.qml:80
+#: activities/share/resource/1/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 6 pieces of candy equally between 3 of her friends: 1 "
@@ -24089,7 +24320,7 @@ msgstr ""
 "Maria vrea să împartă în mod egal 6 bomboane la 3 prieteni de-ai ei: o fată "
 "și doi băieți. Le poate ea împărți bomboanele în mod egal?"
 
-#: activities/share/resource/1/Data.qml:90
+#: activities/share/resource/1/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "John wants to share 8 pieces of candy equally between 3 of his friends: 1 "
@@ -24100,7 +24331,7 @@ msgstr ""
 "fete. Băiatul are deja o bomboană. Poate Ion să fie sigur că cei 3 vor avea "
 "același număr de bomboane?"
 
-#: activities/share/resource/1/Data.qml:100
+#: activities/share/resource/1/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 12 pieces of candy equally between 3 of his friends: 2 "
@@ -24109,7 +24340,7 @@ msgstr ""
 "Paul vrea să-și împartă în mod egal cele 12 bomboane celor 3 prieteni ai "
 "lui: doi băieți și o fată. Le poate el împărți bomboanele în mod egal?"
 
-#: activities/share/resource/1/Data.qml:110
+#: activities/share/resource/1/Data.qml:112
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 11 pieces of candy between 3 of her friends: 1 boy and "
@@ -24120,8 +24351,8 @@ msgstr ""
 "băiat și două fete. Fetele au deja câteva bomboane. Le poate el împărți cele "
 "11 bomboane astfel încât toți să aibă în final același număr?"
 
-#: activities/share/resource/1/Data.qml:122
-#: activities/share/resource/2/Data.qml:112
+#: activities/share/resource/1/Data.qml:124
+#: activities/share/resource/2/Data.qml:114
 msgctxt "Data|"
 msgid ""
 "Alice wants to share 4 pieces of candy equally between 4 of her girl "
@@ -24130,12 +24361,12 @@ msgstr ""
 "Alina vrea să împartă în mod egal 4 bomboane la 4 dintre prietenele ei. O "
 "poți ajuta?"
 
-#: activities/share/resource/1/Data.qml:132
+#: activities/share/resource/1/Data.qml:134
 msgctxt "Data|"
 msgid "Now, Alice wants to give 8 pieces of candy to her friends."
 msgstr "Acum, Alina vrea să dea 8 bomboane prietenilor săi."
 
-#: activities/share/resource/1/Data.qml:142
+#: activities/share/resource/1/Data.qml:144
 msgctxt "Data|"
 msgid ""
 "Alice wants to give 10 pieces of candy to her friends, 1 girl and 3 boys, so "
@@ -24146,12 +24377,12 @@ msgstr ""
 "încât fiecare să aibă același număr de bomboane. Fetele au deja câteva "
 "bomboane."
 
-#: activities/share/resource/1/Data.qml:152
+#: activities/share/resource/1/Data.qml:154
 msgctxt "Data|"
 msgid "Alice wants to give 16 pieces of candy to her friends."
 msgstr "Acum, Alina vrea să dea 16 bomboane prietenilor săi."
 
-#: activities/share/resource/1/Data.qml:162
+#: activities/share/resource/1/Data.qml:164
 msgctxt "Data|"
 msgid ""
 "Alice wants to give pieces of candy to 4 friends. Some of them already have "
@@ -24162,7 +24393,7 @@ msgstr ""
 "bomboane. O poți ajuta să împartă cele 14 bomboane, astfel încât fiecare "
 "prieten să aibă în final același număr de bomboane?"
 
-#: activities/share/resource/1/Data.qml:174
+#: activities/share/resource/1/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Michael wants to share 5 pieces of candy equally between 5 of his girl "
@@ -24171,7 +24402,7 @@ msgstr ""
 "Mihai vrea să împartă 5 bomboane în mod egal celor 5 prietene ale lui. Îl "
 "poți ajuta?"
 
-#: activities/share/resource/1/Data.qml:184
+#: activities/share/resource/1/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Helen has 5 friends: 2 boys and 3 girls. She wants to give them 10 pieces of "
@@ -24180,7 +24411,7 @@ msgstr ""
 "Elena are 5 prieteni, doi băieți și trei fete. Ea vrea să le dea 10 "
 "bomboane. Ajut-o să împartă în mod egal bomboanele prietenilor ei."
 
-#: activities/share/resource/1/Data.qml:194
+#: activities/share/resource/1/Data.qml:196
 msgctxt "Data|"
 msgid ""
 "Michelle wants to share 12 pieces of candy equally between her 4 brothers "
@@ -24191,7 +24422,7 @@ msgstr ""
 "de-a ei. Sora ei are deja câteva bomboane. Ajut-o pe Mihaela să împartă "
 "bomboanele."
 
-#: activities/share/resource/1/Data.qml:204
+#: activities/share/resource/1/Data.qml:206
 msgctxt "Data|"
 msgid ""
 "Thomas wants to share his 20 pieces of candy with his friends: 1 boy and 4 "
@@ -24200,7 +24431,7 @@ msgstr ""
 "Toma vrea să împartă cele 20 de bomboane cu prietenii săi: un băiat și patru "
 "fete. Îl poți ajuta?"
 
-#: activities/share/resource/1/Data.qml:214
+#: activities/share/resource/1/Data.qml:216
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 20 pieces of candy equally between 5 of his friends. "
@@ -24209,7 +24440,7 @@ msgstr ""
 "Paul vrea să împartă în mod egal cele 20 de bomboane ale lui la 5 din "
 "prietenii săi. Ei deja au câte o bomboană. Îl poți ajuta?"
 
-#: activities/share/resource/1/Data.qml:226
+#: activities/share/resource/1/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally with 2 of his girl "
@@ -24218,7 +24449,7 @@ msgstr ""
 "Carol vrea să-și împartă cele 6 bomboane cu două din prietenele lui. Poate "
 "el împărți bomboanele în mod egal?"
 
-#: activities/share/resource/1/Data.qml:236
+#: activities/share/resource/1/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -24229,7 +24460,7 @@ msgstr ""
 "două fete și un băiat. Fetele au deja niște bomboane. Cum ar trebui ea să "
 "împartă prietenilor bomboanele astfel încât fiecare să aibă la fel?"
 
-#: activities/share/resource/1/Data.qml:246
+#: activities/share/resource/1/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 16 pieces of candy to share equally with his "
@@ -24240,7 +24471,7 @@ msgstr ""
 "prietenii lui: doi băieți și două fete. Ajută-l să dea bomboanele "
 "prietenilor."
 
-#: activities/share/resource/1/Data.qml:256
+#: activities/share/resource/1/Data.qml:258
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy between 4 of his friends: 2 girls "
@@ -24251,7 +24482,7 @@ msgstr ""
 "doi băieți. Băieții au deja câte o bomboană. El vrea ca fiecare din cei 4 să "
 "aibă în final același număr de bomboane. Îl poți ajuta?"
 
-#: activities/share/resource/1/Data.qml:266
+#: activities/share/resource/1/Data.qml:268
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 25 pieces of candy equally between 5 of her friends: 3 "
@@ -24260,27 +24491,27 @@ msgstr ""
 "Maria vrea să împartă în mod egal 25 de bomboane la 5 prieteni: 3 fete și 2 "
 "băieți. Poate ea împărți bomboanele în mod egal?"
 
-#: activities/share/resource/2/Data.qml:13
+#: activities/share/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, possible rest."
 msgstr "Maximum 25 de bomboane și 5 copii, cu un posibil rest."
 
-#: activities/share/resource/2/Data.qml:28
+#: activities/share/resource/2/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 5 pieces of candy among his friends."
 msgstr "Acum el vrea să împartă 5 bomboane prietenilor lui."
 
-#: activities/share/resource/2/Data.qml:38
+#: activities/share/resource/2/Data.qml:40
 msgctxt "Data|"
 msgid "Can you now share 7 of Paul's pieces of candy among his friends?"
 msgstr "Poți să împarți acum cele 7 bomboane ale lui Paul prietenilor săi?"
 
-#: activities/share/resource/2/Data.qml:48
+#: activities/share/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Can you now share 8 of Paul's pieces of candy among his friends?"
 msgstr "Poți să împarți acum cele 8 bomboane ale lui Paul prietenilor săi?"
 
-#: activities/share/resource/2/Data.qml:58
+#: activities/share/resource/2/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 11 pieces of candy left. He eats 2 pieces of candy and he "
@@ -24290,7 +24521,7 @@ msgstr ""
 "Lui Paul i-au rămas doar 11 bomboane. El mănâncă 2 bomboane și dă restul "
 "prietenilor săi. Îl poți ajuta să împartă în mod egal cele 9 bomboane rămase?"
 
-#: activities/share/resource/2/Data.qml:70
+#: activities/share/resource/2/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "Bob wants to share 3 pieces of candy equally between 3 of his girl friends. "
@@ -24299,7 +24530,7 @@ msgstr ""
 "Robert vrea să împartă în mod egal 3 bomboane celor 3 prietene ale lui. Le "
 "poate el împărți bomboanele în mod egal?"
 
-#: activities/share/resource/2/Data.qml:80
+#: activities/share/resource/2/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 8 pieces of candy between 3 of his friends: 1 boy and 2 "
@@ -24310,7 +24541,7 @@ msgstr ""
 "băiat și două fete. Băiatul are deja o bomboană. Le poate Paul împărți în "
 "mod egal bomboanele?"
 
-#: activities/share/resource/2/Data.qml:90
+#: activities/share/resource/2/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 8 pieces of candy between 3 of her friends: 1 boy and 2 "
@@ -24321,7 +24552,7 @@ msgstr ""
 "fete. Fetele au deja câte o bomboană. Le poate Maria împărți prietenilor în "
 "mod egal bomboanele?"
 
-#: activities/share/resource/2/Data.qml:100
+#: activities/share/resource/2/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 12 pieces of candy between 3 of his friends: 1 boy and "
@@ -24332,12 +24563,12 @@ msgstr ""
 "două fete. Băiatul are deja o bomboană. Poate Harry împărți bomboanele "
 "astfel încât fiecare prieten să aibă în final același număr?"
 
-#: activities/share/resource/2/Data.qml:122
+#: activities/share/resource/2/Data.qml:124
 msgctxt "Data|"
 msgid "Now, Alice wants to share 8 pieces of candy equally among her friends."
 msgstr "Acum, Alina vrea să împartă în mod egal 8 bomboane prietenilor ei."
 
-#: activities/share/resource/2/Data.qml:132
+#: activities/share/resource/2/Data.qml:134
 msgctxt "Data|"
 msgid ""
 "Can you help Alice share 10 pieces of candy equally among her friends: 1 "
@@ -24346,12 +24577,12 @@ msgstr ""
 "O poți ajuta pe Alina să împartă 10 bomboane prietenilor ei, o fată și trei "
 "băieți? Fata are deja câteva bomboane."
 
-#: activities/share/resource/2/Data.qml:142
+#: activities/share/resource/2/Data.qml:144
 msgctxt "Data|"
 msgid "Alice wants to share 16 pieces of candy equally among her friends."
 msgstr "Alina vrea să împartă în mod egal 16 bomboane prietenilor ei."
 
-#: activities/share/resource/2/Data.qml:152
+#: activities/share/resource/2/Data.qml:154
 msgctxt "Data|"
 msgid ""
 "Alice has 14 pieces of candy left. She wants to share them equally among her "
@@ -24362,7 +24593,7 @@ msgstr ""
 "ei. Băieții au deja câteva bomboane. O poți ajuta să împartă bomboanele în "
 "mod egal?"
 
-#: activities/share/resource/2/Data.qml:164
+#: activities/share/resource/2/Data.qml:166
 msgctxt "Data|"
 msgid ""
 "Help Jon share 11 pieces of candies equally between five girls. The rest "
@@ -24371,7 +24602,7 @@ msgstr ""
 "Ajută-l pe Bogdan să împartă în mod egal 11 bomboane la 5 fete. Restul "
 "bomboanelor rămase îi vor rămâne lui."
 
-#: activities/share/resource/2/Data.qml:174
+#: activities/share/resource/2/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Jon wants to share the rest of his pieces of candies with his brothers and "
@@ -24382,7 +24613,7 @@ msgstr ""
 "surorile sale. Poți să le împarți în mod egal între ei, știind că frații săi "
 "au deja două bomboane?"
 
-#: activities/share/resource/2/Data.qml:184
+#: activities/share/resource/2/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Help Tux split 19 pieces of candies between his friends: 4 boys and 1 girl."
@@ -24390,14 +24621,14 @@ msgstr ""
 "Ajută-l pe Tux să împartă în mod egal 19 bomboane prietenilor lui: patru "
 "băieți și o fată."
 
-#: activities/share/resource/2/Data.qml:194
+#: activities/share/resource/2/Data.qml:196
 msgctxt "Data|"
 msgid "Help Maria share 18 pieces of candy equally between 3 boys and 2 girls."
 msgstr ""
 "Ajut-o pe Maria să împartă în mod egal 18 bomboane la trei băieți și două "
 "fete."
 
-#: activities/share/resource/2/Data.qml:206
+#: activities/share/resource/2/Data.qml:208
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally between 2 of his girl "
@@ -24406,7 +24637,7 @@ msgstr ""
 "Carol vrea să împartă 6 bomboane la două din prietenele lui. Le poate el "
 "împărți bomboanele în mod egal?"
 
-#: activities/share/resource/2/Data.qml:216
+#: activities/share/resource/2/Data.qml:218
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -24417,7 +24648,7 @@ msgstr ""
 "două fete și un băiat. Cum ar trebui ea să împartă prietenilor în mod egal "
 "bomboanele?"
 
-#: activities/share/resource/2/Data.qml:226
+#: activities/share/resource/2/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 17 pieces of candy to share equally between his "
@@ -24427,7 +24658,7 @@ msgstr ""
 "Tatăl lui Ianis i-a dat 17 bomboane, să le împartă în mod egal cu prietenii: "
 "doi băieți și două fete. Ajută-l să dea bomboanele prietenilor."
 
-#: activities/share/resource/2/Data.qml:236
+#: activities/share/resource/2/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy equally between 4 of his friends: 2 "
@@ -24437,7 +24668,7 @@ msgstr ""
 "George vrea să împartă în mod egal 14 bomboane la 4 prieteni: două fete și "
 "doi băieți. Le poate el împărți în mod egal bomboanele?"
 
-#: activities/share/resource/2/Data.qml:246
+#: activities/share/resource/2/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 23 pieces of candy equally between 5 of her friends: 3 "
@@ -24447,12 +24678,12 @@ msgstr ""
 "Maria vrea să împartă în mod egal 23 de bomboane la 5 prieteni: trei fete și "
 "doi băieți. Le poate ea împărți bomboanele în mod egal?"
 
-#: activities/share/resource/3/Data.qml:13
+#: activities/share/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr "Maximum 30 de bomboane și 6 copii, cu un posibil rest."
 
-#: activities/share/share.js:98
+#: activities/share/share.js:115
 #, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -24463,7 +24694,7 @@ msgstr[0] "Plasează %n băiat"
 msgstr[1] "Plasează %n băieți "
 msgstr[2] "Așează %n băieți "
 
-#: activities/share/share.js:102
+#: activities/share/share.js:119
 #, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -24474,7 +24705,7 @@ msgstr[0] "și %n fată în centru. "
 msgstr[1] "și %n fete în centru. "
 msgstr[2] "și %n fete în centru. "
 
-#: activities/share/share.js:106
+#: activities/share/share.js:123
 #, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -24485,7 +24716,7 @@ msgstr[0] "Apoi împarte în mod egal %n bomboană între ei."
 msgstr[1] "Împarte apoi în mod egal %n bomboane între ei."
 msgstr[2] "Împarte apoi în mod egal %n bomboane între ei."
 
-#: activities/share/Share.qml:358
+#: activities/share/Share.qml:359
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
@@ -26082,7 +26313,7 @@ msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Învățare"
 
-#: activities/solar_system/SolarSystem.qml:156
+#: activities/solar_system/SolarSystem.qml:157
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -26091,7 +26322,7 @@ msgstr ""
 "Fă clic pe Soare sau pe o planetă pentru a afișa întrebările. Fiecare "
 "întrebare are 4 opțiuni, din care doar una este corectă."
 
-#: activities/solar_system/SolarSystem.qml:157
+#: activities/solar_system/SolarSystem.qml:160
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -26107,7 +26338,7 @@ msgstr ""
 "100%, urmărind măsurătorul de acuratețe sau alege să primești indicații și "
 "vei vedea răspunsul corect."
 
-#: activities/solar_system/SolarSystem.qml:162
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -26116,7 +26347,7 @@ msgstr ""
 "Inițial sunt 20 de întrebări cu 4 opțiuni la fiecare întrebare. Bara de "
 "progres din colțul dreapta-jos al ecranului îți arată scorul tău procentual."
 
-#: activities/solar_system/SolarSystem.qml:163
+#: activities/solar_system/SolarSystem.qml:173
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -26129,7 +26360,7 @@ msgstr ""
 "care nu ai răspuns corect.<br>Ți se vor pune maximum 25 de întrebări "
 "suplimentare, după care nu vei mai fi întrebat nimic."
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:176
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -26138,7 +26369,7 @@ msgstr ""
 "Trebuie să obții un scor de peste 90% pentru a trece evaluarea și a deveni "
 "un expert al Sistemului Solar!"
 
-#: activities/solar_system/SolarSystem.qml:349
+#: activities/solar_system/SolarSystem.qml:365
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26148,7 +26379,7 @@ msgstr ""
 "1. Cu cât este <b>mai departe</b> de Soare o planetă, cu atât este <b>mai "
 "mică</b> temperatura ei.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:350
+#: activities/solar_system/SolarSystem.qml:366
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26159,7 +26390,7 @@ msgstr ""
 "b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:369
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -26170,12 +26401,12 @@ msgstr ""
 "b>ama <b>v</b>ine <b>p</b>e <b>m</b>otocicleta <b>j</b>aponeză "
 "<b>s<b>urâzându-i <b>u</b>nui <b>n</b>ene.<br>"
 
-#: activities/solar_system/SolarSystem.qml:355
+#: activities/solar_system/SolarSystem.qml:371
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Indicații"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:379
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Vezi sistemul solar"
@@ -26296,13 +26527,21 @@ msgctxt "Controls|"
 msgid "Right Ballast Tank"
 msgstr "Rezervorul de balast din dreapta"
 
-#: activities/submarine/submarine.js:21
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:130
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Move the submarine to the other side of the screen."
+msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "Mută submarinul în partea cealaltă a ecranului."
 
-#: activities/submarine/submarine.js:22
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:133
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The leftmost item in the control panel is the engine of the submarine, "
+#| "indicating the current speed of the submarine."
+msgctxt "Submarine|"
 msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
 "indicating the current speed of the submarine."
@@ -26310,13 +26549,21 @@ msgstr ""
 "Elementul cel mai din stânga de pe panoul de control reprezintă motorul "
 "submarinului, indicând viteza curentă a submarinului."
 
-#: activities/submarine/submarine.js:23
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:136
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Increase or decrease the velocity of the submarine using the engine."
+msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr "Mărește sau micșorează viteza submarinului, folosind motorul."
 
-#: activities/submarine/submarine.js:24
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:139
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Press the + button to increase the velocity, or the - button to decrease "
+#| "the velocity."
+msgctxt "Submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
 "velocity."
@@ -26324,20 +26571,31 @@ msgstr ""
 "Apasă butonul + pentru a crește viteza, sau butonul - pentru a micșora "
 "viteza."
 
-#: activities/submarine/submarine.js:27
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:146
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "The item next to the engine is the ballast tank."
+msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "Elementul de lângă motor este rezervorul de balast."
 
-#: activities/submarine/submarine.js:28
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:149
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "The ballast tanks are used to float or dive under water."
+msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr ""
 "Rezervoarele de balast sunt folosite pentru a plutirea sau scufundarea "
 "submarinului."
 
-#: activities/submarine/submarine.js:29
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:152
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "If the ballast tanks are empty, the submarine will float. If the ballast "
+#| "tanks are full of water, the submarine will dive underwater."
+msgctxt "Submarine|"
 msgid ""
 "If the ballast tanks are empty, the submarine will float. If the ballast "
 "tanks are full of water, the submarine will dive underwater."
@@ -26345,8 +26603,14 @@ msgstr ""
 "Dacă rezervoarele de balast sunt goale, submarinul va pluti. Dacă "
 "rezervoarele sunt pline cu apă, atunci submarinul se va scufunda."
 
-#: activities/submarine/submarine.js:30
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:155
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Turning the upper valve on or off will alternatively allow or stop the "
+#| "water from filling in the ballast tank, thus allowing it to dive "
+#| "underwater."
+msgctxt "Submarine|"
 msgid ""
 "Turning the upper valve on or off will alternatively allow or stop the water "
 "from filling in the ballast tank, thus allowing it to dive underwater."
@@ -26355,8 +26619,14 @@ msgstr ""
 "să umple rezervoarele de balast, permițându-i astfel submarinului să "
 "plonjeze sub apă."
 
-#: activities/submarine/submarine.js:31
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:158
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Turning the lower valve on or off will alternatively allow or stop the "
+#| "water from flushing out the ballast tank, thus allowing it to float on "
+#| "the surface of the water."
+msgctxt "Submarine|"
 msgid ""
 "Turning the lower valve on or off will alternatively allow or stop the water "
 "from flushing out the ballast tank, thus allowing it to float on the surface "
@@ -26366,17 +26636,27 @@ msgstr ""
 "să fie evacuată din rezervoarele de balast, permițându-i astfel submarinului "
 "să se ridice și să plutească."
 
-#: activities/submarine/submarine.js:34
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:165
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The rightmost item in the control panel controls the diving planes of the "
+#| "submarine"
+msgctxt "Submarine|"
 msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
-"submarine"
+"submarine."
 msgstr ""
 "Elementul cel mai din dreapta de pe panoul de comandă controlează "
 "aripioarele de plonjare ale submarinului."
 
-#: activities/submarine/submarine.js:35
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:168
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The diving planes in a submarine are used to control the depth of the "
+#| "submarine accurately once it is underwater."
+msgctxt "Submarine|"
 msgid ""
 "The diving planes in a submarine are used to control the depth of the "
 "submarine accurately once it is underwater."
@@ -26384,8 +26664,13 @@ msgstr ""
 "Aripioarele de plonjare ale unui submarin sunt folosite pentru controlul "
 "precis al adâncimii submarinului aflat sub apă."
 
-#: activities/submarine/submarine.js:36
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:171
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Once the submarine is moving underwater, increasing or decreasing the "
+#| "angle of the planes will increase and decrease the depth of the submarine."
+msgctxt "Submarine|"
 msgid ""
 "Once the submarine is moving underwater, increasing or decreasing the angle "
 "of the planes will increase and decrease the depth of the submarine."
@@ -26393,8 +26678,13 @@ msgstr ""
 "Când submarinul se mișcă sub apă, mărirea sau micșorarea unghiului "
 "aripioarelor va mări sau va micșora adâncimea submarinului."
 
-#: activities/submarine/submarine.js:37
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:174
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The + button will increase the depth of the submarine, while the - button "
+#| "will decrease the depth of the submarine."
+msgctxt "Submarine|"
 msgid ""
 "The + button will increase the depth of the submarine, while the - button "
 "will decrease the depth of the submarine."
@@ -26402,13 +26692,19 @@ msgstr ""
 "Butonul + va mări adâncimea submarinului, în timp ce butonul - îi va micșora "
 "adâncimea."
 
-#: activities/submarine/submarine.js:38
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:177
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Grab the crown to open the gate."
+msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "Înșfacă coroana pentru a deschide poarta."
 
-#: activities/submarine/submarine.js:39
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:180
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Check out the help menu for the keyboard controls."
+msgctxt "Submarine|"
 msgid "Check out the help menu for the keyboard controls."
 msgstr ""
 "Uită-te în meniul de ajutor pentru a vedea scurtăturile de taste pentru "
@@ -27343,7 +27639,7 @@ msgstr ""
 "stație de epurare, pentru a activa întregul sistem de apă. Când sistemul s-a "
 "repornit și Tux este sub duș, apasă-i butonul de duș."
 
-#: activities/watercycle/Watercycle.qml:114
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -27352,13 +27648,13 @@ msgstr ""
 "Soarele este principala componentă a ciclului apei. Fă clic pe soare pentru "
 "a porni circuitul apei."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr ""
 "Când soarele răsare, apa din mare începe să se încălzească și se evaporă."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -27367,7 +27663,7 @@ msgstr ""
 "Vaporii de apă se condensează pentru a forma nori, iar când norii devin "
 "grei, plouă. Fă clic pe nor."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:118
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -27378,7 +27674,7 @@ msgstr ""
 "noi cu ajutorul pompelor, prin turnuri de apă. Fă clic pe stația de pompare "
 "pentru a furniza apă locuitorilor."
 
-#: activities/watercycle/Watercycle.qml:119
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -27386,18 +27682,18 @@ msgid ""
 msgstr ""
 "Observă turnul umplut cu apă. Activează stația de epurare făcând clic pe ea."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Super, apasă pe duș, fiindcă Tux ajunge acasă."
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:122
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "Extraordinar, ai completat circuitul apei! Poți continua să te joci."
 
-#: activities/watercycle/Watercycle.qml:139
+#: activities/watercycle/Watercycle.qml:141
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -27409,7 +27705,7 @@ msgstr ""
 "înapoi. Căldura soarelui furnizează energia necesară evaporării apei din "
 "marile rezervoare naturale, cum sunt oceanele."
 
-#: activities/watercycle/Watercycle.qml:142
+#: activities/watercycle/Watercycle.qml:144
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -27421,7 +27717,7 @@ msgstr ""
 "nori. Când norii întâlnesc un aer rece, atunci se declanșează "
 "precipitațiile, care cad pe pământ sub formă de ploaie."
 
-#: activities/watercycle/Watercycle.qml:145
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -27432,7 +27728,7 @@ msgstr ""
 "straturi de argilă, sub formă de pânză de apă freatică. Majoritatea apei "
 "curge însă înapoi în râuri, reîntorcându-se în cele din urmă în oceane."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:150
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -28528,25 +28824,47 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "Sunt pregătit"
 
-#: core/Tutorial.qml:140
+#: core/Tutorial.qml:139
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "Pasul precedent"
 
-#: core/Tutorial.qml:158
+#: core/Tutorial.qml:157
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "Pasul următor"
 
-#: core/Tutorial.qml:175
+#: core/Tutorial.qml:174
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "Sari peste"
 
-#: core/Tutorial.qml:175
+#: core/Tutorial.qml:174
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Start"
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid "Grammatical analysis"
+#~ msgstr "Analiză gramaticală"
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid "Learn to identify grammatical classes."
+#~ msgstr "Învață să identifici clasele gramaticale."
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid ""
+#~ "Select a grammatical class from the list, then select the box under a "
+#~ "word and assign it the class."
+#~ msgstr ""
+#~ "Selectează o clasă gramaticală din listă, apoi atribui-o unui cuvânt "
+#~ "făcând clic pe boxa de sub el."
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid "Leave the box blank if no class matches."
+#~ msgstr ""
+#~ "Nu alege nicio boxă dacă respectiva clasă nu se potrivește niciunui "
+#~ "cuvânt."
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"

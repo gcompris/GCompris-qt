@@ -2816,13 +2816,13 @@ msgstr ""
 "linha reta. Em uma tela sensível ao toque, você tem que tocar as duas mãos "
 "ao mesmo tempo."
 
-#: activities/ballcatch/Ballcatch.qml:228
+#: activities/ballcatch/Ballcatch.qml:227
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr "Toque as duas mãos ao mesmo tempo para jogar a bola em linha reta."
 
-#: activities/ballcatch/Ballcatch.qml:230
+#: activities/ballcatch/Ballcatch.qml:233
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2956,14 +2956,24 @@ msgstr ""
 "Ligue as lâmpadas certas para representar o número binário do número decimal "
 "fornecido. Quando você tiver conseguido, pressione OK."
 
-#: activities/binary_bulb/binary_bulb.js:20
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:84
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "This activity teaches how to convert decimal numbers to binary numbers."
+msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr ""
 "Esta atividade ensina como converter números decimais em números binários."
 
-#: activities/binary_bulb/binary_bulb.js:24
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:88
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Computers use transistors to count and transistors have only two states, "
+#| "0 and 1. Mathematically, these states are represented by 0 and 1, which "
+#| "makes up the binary system of numeration."
+msgctxt "BinaryBulb|"
 msgid ""
 "Computers use transistors to count and transistors have only two states, 0 "
 "and 1. Mathematically, these states are represented by 0 and 1, which makes "
@@ -2973,13 +2983,21 @@ msgstr ""
 "desligado e ligado. Matematicamente, esses estados são representados por 0 e "
 "1, que são os números que compõem o sistema de numeração binário."
 
-#: activities/binary_bulb/binary_bulb.js:28
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:92
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
+msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr "Na atividade 0 e 1 são simuladas por lâmpadas, ligadas ou desligadas."
 
-#: activities/binary_bulb/binary_bulb.js:32
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:96
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Binary system uses these numbers very efficiently, allowing to count from "
+#| "0 to 255 with 8 bits only."
+msgctxt "BinaryBulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
 "to 255 with 8 bits only."
@@ -2987,8 +3005,15 @@ msgstr ""
 "O sistema binário usa esses números de forma muito eficiente, permitindo "
 "contar de 0 a 255 somente com 8 bits."
 
-#: activities/binary_bulb/binary_bulb.js:36
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:100
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Each bit adds a progressive value, corresponding to the powers of 2, "
+#| "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → "
+#| "2²=4 , bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit "
+#| "8 → 2⁷=128."
+msgctxt "BinaryBulb|"
 msgid ""
 "Each bit adds a progressive value, corresponding to the powers of 2, "
 "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → 2²=4 , "
@@ -3000,14 +3025,22 @@ msgstr ""
 "2²=4 , bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit 8 "
 "→ 2⁷=128."
 
-#: activities/binary_bulb/binary_bulb.js:40
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:104
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
+msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr ""
 "Para converter um decimal 5 em um valor binário, 1 e 4 são adicionados."
 
-#: activities/binary_bulb/binary_bulb.js:44
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:108
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 "
+#| "is equal to binary 101."
+msgctxt "BinaryBulb|"
 msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
 "equal to binary 101."
@@ -3015,12 +3048,15 @@ msgstr ""
 "Seus bits correspondentes são definidos como 1, os outros são definidos como "
 "0. O decimal 5 é igual ao binário 101."
 
-#: activities/binary_bulb/binary_bulb.js:48
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:112
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid "This image will help you to compute bits' value."
+msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Esta imagem ajudará você a calcular o valor dos bits."
 
-#: activities/binary_bulb/BinaryBulb.qml:126
+#: activities/binary_bulb/BinaryBulb.qml:160
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3690,7 +3726,7 @@ msgstr ""
 "Você está no comando das comportas do canal. Abra as portas e as comportas "
 "na ordem certa, para que o Tux possa atravessá-las em ambas as direções."
 
-#: activities/canal_lock/CanalLock.qml:73
+#: activities/canal_lock/CanalLock.qml:74
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3699,7 +3735,7 @@ msgstr ""
 "Seu objetivo é guiar o Tux pelas comportas do canal para pegar as toras de "
 "madeira, usando os diferentes tipos de comportas disponíveis."
 
-#: activities/canal_lock/CanalLock.qml:75
+#: activities/canal_lock/CanalLock.qml:77
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3710,7 +3746,7 @@ msgstr ""
 "operadas clicando-se nelas. Duas comportas do mesmo tipo não podem ser "
 "operadas simultaneamente."
 
-#: activities/canal_lock/CanalLock.qml:77
+#: activities/canal_lock/CanalLock.qml:80
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -15088,26 +15124,45 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
 msgstr "Backspace: selecionar a palavra anterior"
 
-#: activities/grammar_analysis/grammar_analysis.js:37
+#: activities/grammar_analysis/grammar_analysis.js:398
 msgctxt "grammar_analysis|"
+msgid "Empty"
+msgstr "Vazia"
+
+#: activities/grammar_analysis/GrammarAnalysis.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Grammatical analysis"
+msgctxt "GrammarAnalysis|"
 msgid "Grammatical analysis"
 msgstr "Análise gramatical"
 
-#: activities/grammar_analysis/grammar_analysis.js:38
-#: activities/grammar_analysis/grammar_analysis.js:48
-msgctxt "grammar_analysis|"
+#: activities/grammar_analysis/GrammarAnalysis.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn to identify grammatical classes."
+msgctxt "GrammarAnalysis|"
 msgid "Learn to identify grammatical classes."
-msgstr "Aprenda a identificar as classes gramaticais."
+msgstr "Aprender a identificar as classes gramaticais."
 
-#: activities/grammar_analysis/grammar_analysis.js:39
-msgctxt "grammar_analysis|"
+#: activities/grammar_analysis/GrammarAnalysis.qml:28
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid ""
+#| "Find all the words corresponding to the requested grammatical classes."
+msgctxt "GrammarAnalysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr ""
 "Encontre todas as palavras correspondentes às classes gramaticais "
 "solicitadas."
 
-#: activities/grammar_analysis/grammar_analysis.js:40
-msgctxt "grammar_analysis|"
+#: activities/grammar_analysis/GrammarAnalysis.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select a grammatical class from the list, then select the box under a "
+#| "word and assign it the class."
+msgctxt "GrammarAnalysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
@@ -15115,40 +15170,13 @@ msgstr ""
 "Selecione uma classe gramatical na lista e, depois, selecione a caixa sob "
 "uma palavra para atribuir a classe gramatical a ela."
 
-#: activities/grammar_analysis/grammar_analysis.js:41
-msgctxt "grammar_analysis|"
+#: activities/grammar_analysis/GrammarAnalysis.qml:30
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Leave the box blank if no class matches."
+msgctxt "GrammarAnalysis|"
 msgid "Leave the box blank if no class matches."
 msgstr "Deixe a caixa em branco se nenhuma classe corresponder."
-
-#: activities/grammar_analysis/grammar_analysis.js:47
-msgctxt "grammar_analysis|"
-msgid "Grammatical classes"
-msgstr "Classes gramaticais"
-
-#: activities/grammar_analysis/grammar_analysis.js:49
-msgctxt "grammar_analysis|"
-msgid "Find all the words corresponding to the requested grammatical class."
-msgstr ""
-"Encontre todas as palavras correspondentes à classe gramatical solicitada."
-
-#: activities/grammar_analysis/grammar_analysis.js:50
-msgctxt "grammar_analysis|"
-msgid ""
-"Select the grammatical class from the list, then select the box under a word "
-"and assign it the class."
-msgstr ""
-"Selecione a classe gramatical na lista e, depois, selecione a caixa sob uma "
-"palavra para atribuir a classe gramatical a ela."
-
-#: activities/grammar_analysis/grammar_analysis.js:51
-msgctxt "grammar_analysis|"
-msgid "Leave the box blank if the class doesn't match."
-msgstr "Deixe a caixa em branco se não corresponder a nenhuma classe."
-
-#: activities/grammar_analysis/grammar_analysis.js:421
-msgctxt "grammar_analysis|"
-msgid "Empty"
-msgstr "Vazia"
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
@@ -15173,6 +15201,53 @@ msgstr ""
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
+msgid "Leave the box blank if the class doesn't match."
+msgstr "Deixe a caixa em branco se não corresponder a nenhuma classe."
+
+#: activities/grammar_classes/GrammarClasses.qml:15
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Grammatical classes"
+msgctxt "GrammarClasses|"
+msgid "Grammatical classes"
+msgstr "Classes gramaticais"
+
+#: activities/grammar_classes/GrammarClasses.qml:16
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn to identify grammatical classes."
+msgctxt "GrammarClasses|"
+msgid "Learn to identify grammatical classes."
+msgstr "Aprender a identificar as classes gramaticais."
+
+#: activities/grammar_classes/GrammarClasses.qml:17
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Find all the words corresponding to the requested grammatical class."
+msgctxt "GrammarClasses|"
+msgid "Find all the words corresponding to the requested grammatical class."
+msgstr ""
+"Encontre todas as palavras correspondentes à classe gramatical solicitada."
+
+#: activities/grammar_classes/GrammarClasses.qml:18
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid ""
+#| "Select the grammatical class from the list, then select the box under a "
+#| "word and assign it the class."
+msgctxt "GrammarClasses|"
+msgid ""
+"Select the grammatical class from the list, then select the box under a word "
+"and assign it the class."
+msgstr ""
+"Selecione a classe gramatical na lista e, depois, selecione a caixa sob uma "
+"palavra para atribuir a classe gramatical a ela."
+
+#: activities/grammar_classes/GrammarClasses.qml:19
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Leave the box blank if the class doesn't match."
+msgctxt "GrammarClasses|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr "Deixe a caixa em branco se não corresponder a nenhuma classe."
 
@@ -15276,7 +15351,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Setas para a esquerda e para a direita: move a espaçonave"
 
-#: activities/gravity/Gravity.qml:219
+#: activities/gravity/Gravity.qml:220
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -16763,8 +16838,13 @@ msgstr ""
 "número decimal exibido. Ao final, clique no botão OK para conferir sua "
 "resposta."
 
-#: activities/learn_decimals/learn_decimals.js:33
-msgctxt "learn_decimals|"
+#: activities/learn_decimals/Learn_decimals.qml:30
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "A decimal number is displayed. The bar with the arrow represents a full "
+#| "unit, and each square in it represents one tenth of this unit."
+msgctxt "Learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
 "unit, and each square in it represents one tenth of this unit."
@@ -16772,8 +16852,15 @@ msgstr ""
 "Um número decimal é exibido. A barra com a seta representa uma unidade "
 "inteira e cada quadrado nela representa um décimo dessa unidade."
 
-#: activities/learn_decimals/learn_decimals.js:37
-msgctxt "learn_decimals|"
+#: activities/learn_decimals/Learn_decimals.qml:34
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Drag the arrow to select a part of the bar, and drag the selected part of "
+#| "the bar to the empty area. Repeat these steps until the number of dropped "
+#| "bars corresponds to the displayed decimal number. Then click on the OK "
+#| "button to validate your answer."
+msgctxt "Learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
 "the bar to the empty area. Repeat these steps until the number of dropped "
@@ -16785,103 +16872,31 @@ msgstr ""
 "de barras arrastadas corresponda ao número decimal exibido. Ao final, clique "
 "no botão OK para conferir sua resposta."
 
-#: activities/learn_decimals/learn_decimals.js:44
-msgctxt "learn_decimals|"
-msgid ""
-"A subtraction with two decimal numbers is displayed. Below it, the first "
-"number from the subtraction is represented with bars. One bar represents a "
-"full unit, and each square in it represents one tenth of this unit."
-msgstr ""
-"Uma subtração com dois números decimais é exibida. Abaixo dela, o primeiro "
-"número da subtração é representado por barras. Uma barra representa uma "
-"unidade inteira e, cada quadrado, um décimo dessa unidade."
-
-#: activities/learn_decimals/learn_decimals.js:48
-msgctxt "learn_decimals|"
-msgid ""
-"Click on the squares to subtract them and display the result of the "
-"operation, and click on the OK button to validate your answer."
-msgstr ""
-"Clique nos quadrados para subtrai-los e exibir o resultado da operação e "
-"clique no botão OK para conferir sua resposta."
-
-#: activities/learn_decimals/learn_decimals.js:52
-#: activities/learn_decimals/learn_decimals.js:67
-msgctxt "learn_decimals|"
-msgid ""
-"If the answer is correct, type the corresponding result, and click on the OK "
-"button to validate your answer."
-msgstr ""
-"Caso a resposta esteja correta, digite o resultado correspondente e clique "
-"no botão OK para conferir sua resposta."
-
-#: activities/learn_decimals/learn_decimals.js:59
-msgctxt "learn_decimals|"
-msgid ""
-"An addition with two decimal numbers is displayed. The bar with the arrow "
-"represents a full unit, and each square in it represents one tenth of this "
-"unit."
-msgstr ""
-"Uma adição com dois números decimais é exibida. A barra com a seta "
-"representa uma unidade inteira e cada quadrado nela representa um décimo "
-"dessa unidade."
-
-#: activities/learn_decimals/learn_decimals.js:63
-msgctxt "learn_decimals|"
-msgid ""
-"Drag the arrow to select a part of the bar, and drag the selected part of "
-"the bar to the empty area. Repeat these steps until the number of dropped "
-"bars corresponds to the result of the addition, and click on the OK button "
-"to validate your answer."
-msgstr ""
-"Arraste a seta para selecionar parte da barra e, depois, arraste a parte "
-"selecionada da barra para a área vazia. Repita esses passos até que o número "
-"de barras arrastadas corresponda ao resultado da adição. Ao final, clique no "
-"botão OK para conferir sua resposta."
-
-#: activities/learn_decimals/learn_decimals.js:74
-msgctxt "learn_decimals|"
-msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
-msgstr "Qual a quantidade? A seta permite a seleção de até 10 laranjas."
-
-#: activities/learn_decimals/learn_decimals.js:78
-msgctxt "learn_decimals|"
-msgid ""
-"Drag the arrow to select a number of oranges, and drag the selected oranges "
-"to the empty area. Repeat these steps until the number of oranges "
-"corresponds to the requested quantity. Then click on the OK button to "
-"validate your answer."
-msgstr ""
-"Arraste a seta para selecionar uma quantidade de laranjas e, depois, arraste "
-"as laranjas selecionadas para a área vazia. Repita esses passos até que o "
-"número de laranjas corresponda à quantidade indicada. Ao final, clique no "
-"botão OK para conferir sua resposta."
-
-#: activities/learn_decimals/Learn_decimals.qml:142
+#: activities/learn_decimals/Learn_decimals.qml:150
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "Mostre o número: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:143
+#: activities/learn_decimals/Learn_decimals.qml:151
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "Mostre o resultado de: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:144
+#: activities/learn_decimals/Learn_decimals.qml:152
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "Mostre o resultado de: %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:145
+#: activities/learn_decimals/Learn_decimals.qml:153
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "Represente a quantidade: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:602
+#: activities/learn_decimals/Learn_decimals.qml:610
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -16952,6 +16967,57 @@ msgctxt "ActivityInfo|"
 msgid "Numbers: type the result"
 msgstr "Números: digite o resultado"
 
+#: activities/learn_decimals_additions/Learn_decimals_additions.qml:16
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "An addition with two decimal numbers is displayed. The bar with the arrow "
+#| "represents a full unit, and each square in it represents one tenth of "
+#| "this unit."
+msgctxt "Learn_decimals_additions|"
+msgid ""
+"An addition with two decimal numbers is displayed. The bar with the arrow "
+"represents a full unit, and each square in it represents one tenth of this "
+"unit."
+msgstr ""
+"Uma adição com dois números decimais é exibida. A barra com a seta "
+"representa uma unidade inteira e cada quadrado nela representa um décimo "
+"dessa unidade."
+
+#: activities/learn_decimals_additions/Learn_decimals_additions.qml:20
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Drag the arrow to select a part of the bar, and drag the selected part of "
+#| "the bar to the empty area. Repeat these steps until the number of dropped "
+#| "bars corresponds to the result of the addition, and click on the OK "
+#| "button to validate your answer."
+msgctxt "Learn_decimals_additions|"
+msgid ""
+"Drag the arrow to select a part of the bar, and drag the selected part of "
+"the bar to the empty area. Repeat these steps until the number of dropped "
+"bars corresponds to the result of the addition, and click on the OK button "
+"to validate your answer."
+msgstr ""
+"Arraste a seta para selecionar parte da barra e, depois, arraste a parte "
+"selecionada da barra para a área vazia. Repita esses passos até que o número "
+"de barras arrastadas corresponda ao resultado da adição. Ao final, clique no "
+"botão OK para conferir sua resposta."
+
+#: activities/learn_decimals_additions/Learn_decimals_additions.qml:24
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "If the answer is correct, type the corresponding result, and click on the "
+#| "OK button to validate your answer."
+msgctxt "Learn_decimals_additions|"
+msgid ""
+"If the answer is correct, type the corresponding result, and click on the OK "
+"button to validate your answer."
+msgstr ""
+"Caso a resposta esteja correta, digite o resultado correspondente e clique "
+"no botão OK para conferir sua resposta."
+
 #: activities/learn_decimals_additions/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Add decimal numbers up to 1."
@@ -17006,6 +17072,51 @@ msgstr ""
 "cada quadrado na barra representa um décimo dessa unidade. Clique nos "
 "quadrados para subtrair o segundo número e apresentar o o resultado da "
 "operação."
+
+#: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:16
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "A subtraction with two decimal numbers is displayed. Below it, the first "
+#| "number from the subtraction is represented with bars. One bar represents "
+#| "a full unit, and each square in it represents one tenth of this unit."
+msgctxt "Learn_decimals_subtractions|"
+msgid ""
+"A subtraction with two decimal numbers is displayed. Below it, the first "
+"number from the subtraction is represented with bars. One bar represents a "
+"full unit, and each square in it represents one tenth of this unit."
+msgstr ""
+"Uma subtração com dois números decimais é exibida. Abaixo dela, o primeiro "
+"número da subtração é representado por barras. Uma barra representa uma "
+"unidade inteira e, cada quadrado, um décimo dessa unidade."
+
+#: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:20
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Click on the squares to subtract them and display the result of the "
+#| "operation, and click on the OK button to validate your answer."
+msgctxt "Learn_decimals_subtractions|"
+msgid ""
+"Click on the squares to subtract them and display the result of the "
+"operation, and click on the OK button to validate your answer."
+msgstr ""
+"Clique nos quadrados para subtrai-los e exibir o resultado da operação e "
+"clique no botão OK para conferir sua resposta."
+
+#: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:24
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "If the answer is correct, type the corresponding result, and click on the "
+#| "OK button to validate your answer."
+msgctxt "Learn_decimals_subtractions|"
+msgid ""
+"If the answer is correct, type the corresponding result, and click on the OK "
+"button to validate your answer."
+msgstr ""
+"Caso a resposta esteja correta, digite o resultado correspondente e clique "
+"no botão OK para conferir sua resposta."
 
 #: activities/learn_decimals_subtractions/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -17174,6 +17285,35 @@ msgstr ""
 "laranjas e, depois, arraste as laranjas selecionadas para a área vazia. "
 "Repita esses passos até que o número de laranjas arrastadas corresponda ao "
 "valor indicado. Ao final, clique no botão OK para conferir sua resposta."
+
+#: activities/learn_quantities/Learn_quantities.qml:16
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "A quantity is requested. The arrow allows to select up to 10 oranges."
+msgctxt "Learn_quantities|"
+msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
+msgstr "Qual a quantidade? A seta permite a seleção de até 10 laranjas."
+
+#: activities/learn_quantities/Learn_quantities.qml:20
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Drag the arrow to select a number of oranges, and drag the selected "
+#| "oranges to the empty area. Repeat these steps until the number of oranges "
+#| "corresponds to the requested quantity. Then click on the OK button to "
+#| "validate your answer."
+msgctxt "Learn_quantities|"
+msgid ""
+"Drag the arrow to select a number of oranges, and drag the selected oranges "
+"to the empty area. Repeat these steps until the number of oranges "
+"corresponds to the requested quantity. Then click on the OK button to "
+"validate your answer."
+msgstr ""
+"Arraste a seta para selecionar uma quantidade de laranjas e, depois, arraste "
+"as laranjas selecionadas para a área vazia. Repita esses passos até que o "
+"número de laranjas corresponda à quantidade indicada. Ao final, clique no "
+"botão OK para conferir sua resposta."
 
 #: activities/learn_quantities/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -20345,8 +20485,50 @@ msgstr ""
 "jogador vence quando o outro não conseguir mover nenhuma peça ou tiver "
 "apenas 2 peças restantes."
 
-#: activities/nine_men_morris/nine_men_morris.js:29
+#: activities/nine_men_morris/nine_men_morris.js:240
+#: activities/nine_men_morris/nine_men_morris.js:1086
 msgctxt "nine_men_morris|"
+msgid "Place a piece"
+msgstr "Coloque uma peça"
+
+#: activities/nine_men_morris/nine_men_morris.js:366
+#: activities/nine_men_morris/nine_men_morris.js:1144
+msgctxt "nine_men_morris|"
+msgid "Move a piece"
+msgstr "Mova uma peça"
+
+#: activities/nine_men_morris/nine_men_morris.js:918
+msgctxt "nine_men_morris|"
+msgid "Remove a piece"
+msgstr "Remova uma peça"
+
+#: activities/nine_men_morris/nine_men_morris.js:1121
+msgctxt "nine_men_morris|"
+msgid "Congratulations"
+msgstr "Parabéns"
+
+#: activities/nine_men_morris/nine_men_morris.js:1124
+msgctxt "nine_men_morris|"
+msgid "Congratulations Player 1"
+msgstr "Parabéns Jogador 1"
+
+#: activities/nine_men_morris/nine_men_morris.js:1135
+msgctxt "nine_men_morris|"
+msgid "Congratulations Player 2"
+msgstr "Parabéns Jogador 2"
+
+#: activities/nine_men_morris/nine_men_morris.js:1138
+msgctxt "nine_men_morris|"
+msgid "Try again"
+msgstr "Tentar novamente"
+
+#: activities/nine_men_morris/NineMenMorris.qml:348
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "You and Tux start with 9 pieces each, and take turns to place your pieces "
+#| "on the empty spots of the board (by clicking on the spots)."
+msgctxt "NineMenMorris|"
 msgid ""
 "You and Tux start with 9 pieces each, and take turns to place your pieces on "
 "the empty spots of the board (by clicking on the spots)."
@@ -20354,8 +20536,14 @@ msgstr ""
 "Você e o Tux começam com 9 peças cada um e revezam para colocar suas peças "
 "nos espaços vazios do tabuleiro (clicando nos espaços)."
 
-#: activities/nine_men_morris/nine_men_morris.js:33
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:352
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
+#| "remove it. Pieces of formed mill can not be removed unless no other "
+#| "pieces are left on the board."
+msgctxt "NineMenMorris|"
 msgid ""
 "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
 "remove it. Pieces of formed mill can not be removed unless no other pieces "
@@ -20365,8 +20553,14 @@ msgstr ""
 "removê-la. As peças da trilha não podem ser removidas, a não ser que não "
 "existam mais peças disponíveis no tabuleiro."
 
-#: activities/nine_men_morris/nine_men_morris.js:37
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:356
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "After all the pieces are placed, you and Tux will take turns to move "
+#| "them. Click on one of your pieces, and then on an adjacent empty spot to "
+#| "move it there. Green color spots indicates where you can move."
+msgctxt "NineMenMorris|"
 msgid ""
 "After all the pieces are placed, you and Tux will take turns to move them. "
 "Click on one of your pieces, and then on an adjacent empty spot to move it "
@@ -20377,8 +20571,13 @@ msgstr ""
 "adjacente para movimentá-la para lá. Espaços coloridos de verde indicam para "
 "onde as peças podem ser movidas."
 
-#: activities/nine_men_morris/nine_men_morris.js:41
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:360
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
+#| "moved to any vacant spot on the board."
+msgctxt "NineMenMorris|"
 msgid ""
 "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
 "moved to any vacant spot on the board."
@@ -20386,51 +20585,19 @@ msgstr ""
 "Se ficar com apenas 3 peças, elas ganharão a capacidade de 'voar', podendo "
 "ser movidas para qualquer espaço vazio do tabuleiro."
 
-#: activities/nine_men_morris/nine_men_morris.js:45
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:364
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "If you immobilize the computer or leave it with less than 3 pieces, then "
+#| "you win the game."
+msgctxt "NineMenMorris|"
 msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
 "win the game."
 msgstr ""
 "Se conseguir imobilizar o computador ou deixá-lo com menos de 3 peças, você "
 "ganha o jogo."
-
-#: activities/nine_men_morris/nine_men_morris.js:262
-#: activities/nine_men_morris/nine_men_morris.js:1108
-msgctxt "nine_men_morris|"
-msgid "Place a piece"
-msgstr "Coloque uma peça"
-
-#: activities/nine_men_morris/nine_men_morris.js:388
-#: activities/nine_men_morris/nine_men_morris.js:1166
-msgctxt "nine_men_morris|"
-msgid "Move a piece"
-msgstr "Mova uma peça"
-
-#: activities/nine_men_morris/nine_men_morris.js:940
-msgctxt "nine_men_morris|"
-msgid "Remove a piece"
-msgstr "Remova uma peça"
-
-#: activities/nine_men_morris/nine_men_morris.js:1143
-msgctxt "nine_men_morris|"
-msgid "Congratulations"
-msgstr "Parabéns"
-
-#: activities/nine_men_morris/nine_men_morris.js:1146
-msgctxt "nine_men_morris|"
-msgid "Congratulations Player 1"
-msgstr "Parabéns Jogador 1"
-
-#: activities/nine_men_morris/nine_men_morris.js:1157
-msgctxt "nine_men_morris|"
-msgid "Congratulations Player 2"
-msgstr "Parabéns Jogador 2"
-
-#: activities/nine_men_morris/nine_men_morris.js:1160
-msgctxt "nine_men_morris|"
-msgid "Try again"
-msgstr "Tentar novamente"
 
 #. Activity title
 #: activities/nine_men_morris_2players/ActivityInfo.qml:15
@@ -20498,13 +20665,13 @@ msgid "New note: %1"
 msgstr "Nova nota: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:270
+#: activities/note_names/NoteNames.qml:271
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:448
+#: activities/note_names/NoteNames.qml:449
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20513,12 +20680,12 @@ msgstr ""
 "Essa atividade usa sons, por isso ela tocará alguns sons mesmo que o áudio "
 "de vozes ou efeitos esteja desabilitado na configuração principal."
 
-#: activities/note_names/NoteNames.qml:449
+#: activities/note_names/NoteNames.qml:450
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Sair"
 
-#: activities/note_names/NoteNames.qml:450
+#: activities/note_names/NoteNames.qml:451
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Continuar"
@@ -20608,23 +20775,23 @@ msgstr ""
 "pegar, no contador que fica no canto inferior direito da tela. Nos níveis "
 "mais avançados, você precisa lembrar dele."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:14
+#: activities/numbers-odd-even/NumbersOddEven.qml:15
 msgctxt "NumbersOddEven|"
 msgid "Catch the even numbers."
 msgstr "Pegue os números pares."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:15
+#: activities/numbers-odd-even/NumbersOddEven.qml:16
 msgctxt "NumbersOddEven|"
 msgid "Catch the odd numbers."
 msgstr "Pegue os números ímpares."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:42
+#: activities/numbers-odd-even/NumbersOddEven.qml:43
 msgctxt "NumbersOddEven|"
 msgid "This activity teaches about even and odd numbers."
 msgstr "Essa atividade ensina os números pares e ímpares."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:46
-#: activities/numbers-odd-even/NumbersOddEven.qml:56
+#: activities/numbers-odd-even/NumbersOddEven.qml:47
+#: activities/numbers-odd-even/NumbersOddEven.qml:55
 msgctxt "NumbersOddEven|"
 msgid ""
 "Even numbers are numbers which leave a remainder of 0 when divided by 2."
@@ -20636,16 +20803,16 @@ msgctxt "NumbersOddEven|"
 msgid "What is meant by remainder?"
 msgstr "O que se entende por resto de um número?"
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:60
+#: activities/numbers-odd-even/NumbersOddEven.qml:59
 msgctxt "NumbersOddEven|"
 msgid ""
 "Odd numbers are numbers which do not leave a remainder of 0 when divided by "
 "2."
 msgstr "Números ímpares são aqueles que deixam resto ao serem divididos por 2."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:64
-#: activities/numbers-odd-even/NumbersOddEven.qml:68
-#: activities/numbers-odd-even/NumbersOddEven.qml:72
+#: activities/numbers-odd-even/NumbersOddEven.qml:63
+#: activities/numbers-odd-even/NumbersOddEven.qml:67
+#: activities/numbers-odd-even/NumbersOddEven.qml:71
 msgctxt "NumbersOddEven|"
 msgid "Exercise to test your understanding."
 msgstr "Exercite para testar seus conhecimentos."
@@ -22712,114 +22879,6 @@ msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "Escolha as instruções"
 
-#: activities/programmingMaze/programmingMaze.js:96
-msgctxt "programmingMaze|"
-msgid "Instruction Area:"
-msgstr "Área de instruções:"
-
-#: activities/programmingMaze/programmingMaze.js:97
-msgctxt "programmingMaze|"
-msgid ""
-"There are 3 instructions which you can use to code and lead Tux to the fish:"
-msgstr "Existem 3 instruções que podem ser usada para guiar o Tux até o peixe:"
-
-#: activities/programmingMaze/programmingMaze.js:98
-msgctxt "programmingMaze|"
-msgid ""
-"<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
-"facing."
-msgstr ""
-"<b>1. Seta para cima:</b> move o Tux um passo à frente, na direção pra onde "
-"ele está olhando."
-
-#: activities/programmingMaze/programmingMaze.js:99
-msgctxt "programmingMaze|"
-msgid "<b>2. Turn left:</b> Turns Tux to the left."
-msgstr "<b>2. Seta circular para a esquerda:</b> Vira o Tux para a esquerda."
-
-#: activities/programmingMaze/programmingMaze.js:100
-msgctxt "programmingMaze|"
-msgid "<b>3. Turn right:</b> Turns Tux to the right."
-msgstr "<b>3. Seta circular para a direita:</b> Vira o Tux para a direita."
-
-#: activities/programmingMaze/programmingMaze.js:104
-msgctxt "programmingMaze|"
-msgid "Main Function:"
-msgstr "Função Principal:"
-
-#: activities/programmingMaze/programmingMaze.js:105
-msgctxt "programmingMaze|"
-msgid "The execution of the code starts here."
-msgstr "A execução do código começa aqui."
-
-#: activities/programmingMaze/programmingMaze.js:106
-msgctxt "programmingMaze|"
-msgid ""
-"-Click on any instruction in the <b>instruction area</b> to add it to the "
-"<b>Main Function</b>."
-msgstr ""
-"- Clique em qualquer instrução na <b>área de instruções</b> para adicioná-la "
-"na área <b>Função Principal</b>."
-
-#: activities/programmingMaze/programmingMaze.js:107
-msgctxt "programmingMaze|"
-msgid ""
-"-The instructions will execute in order until there's none left, or until a "
-"dead-end, or when Tux reaches the fish."
-msgstr ""
-"- As instruções serão executadas na ordem, até que: não sobre mais nenhuma, "
-"não seja possível executar a instrução ou o Tux chegue até o peixe."
-
-#: activities/programmingMaze/programmingMaze.js:114
-msgctxt "programmingMaze|"
-msgid "Procedure:"
-msgstr "Procedimentos"
-
-#: activities/programmingMaze/programmingMaze.js:115
-msgctxt "programmingMaze|"
-msgid ""
-"<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
-"the code by calling it where needed</b>."
-msgstr ""
-"<b>Procedimento</b> é um conjunto de instruções reutilizáveis que podem ser "
-"<b>usadas no código, sendo chamadas quando necessário</b>."
-
-#: activities/programmingMaze/programmingMaze.js:116
-msgctxt "programmingMaze|"
-msgid ""
-"-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
-"area</b> to add your code, click on the <b>Procedure</b> or <b>Main "
-"Function</b> label."
-msgstr ""
-"-Para <b>alternar</b> entre a <b>área de procedimentos</b> e a <b>Área de "
-"função principal</b> para adicionar o seu código, clique na etiqueta "
-"<b>Procedimento</b> ou na <b>Função principal</b>."
-
-#: activities/programmingMaze/programmingMaze.js:123
-msgctxt "programmingMaze|"
-msgid "Loop:"
-msgstr "Laço:"
-
-#: activities/programmingMaze/programmingMaze.js:124
-msgctxt "programmingMaze|"
-msgid ""
-"<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
-"the number of times defined by the number inside it</b>."
-msgstr ""
-"<b>Laço</b> é uma sequência de instruções que é <b>repetida uma quantidade "
-"de vezes, definida pelo número dentro do laço</b>."
-
-#: activities/programmingMaze/programmingMaze.js:125
-msgctxt "programmingMaze|"
-msgid ""
-"-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
-"area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
-"label."
-msgstr ""
-"-Para <b>alternar</b> entre a <b>área de laço</b> e a <b>área de função "
-"principal</b>, para adicionar o seu código, clique na etiqueta <b>Laço</b> "
-"ou na <b>Função principal</b>."
-
 #: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
@@ -22840,6 +22899,177 @@ msgstr "Procedimentos"
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Laço"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:542
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Instruction Area:"
+msgctxt "ProgrammingMaze|"
+msgid "Instruction Area:"
+msgstr "Área de instruções:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:543
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "There are 3 instructions which you can use to code and lead Tux to the "
+#| "fish:"
+msgctxt "ProgrammingMaze|"
+msgid ""
+"There are 3 instructions which you can use to code and lead Tux to the fish:"
+msgstr "Existem 3 instruções que podem ser usada para guiar o Tux até o peixe:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:544
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
+#| "facing."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
+"facing."
+msgstr ""
+"<b>1. Seta para cima:</b> move o Tux um passo à frente, na direção pra onde "
+"ele está olhando."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:545
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "<b>2. Turn left:</b> Turns Tux to the left."
+msgctxt "ProgrammingMaze|"
+msgid "<b>2. Turn left:</b> Turns Tux to the left."
+msgstr "<b>2. Seta circular para a esquerda:</b> Vira o Tux para a esquerda."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:546
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "<b>3. Turn right:</b> Turns Tux to the right."
+msgctxt "ProgrammingMaze|"
+msgid "<b>3. Turn right:</b> Turns Tux to the right."
+msgstr "<b>3. Seta circular para a direita:</b> Vira o Tux para a direita."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:550
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Main Function:"
+msgctxt "ProgrammingMaze|"
+msgid "Main Function:"
+msgstr "Função Principal:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:551
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "The execution of the code starts here."
+msgctxt "ProgrammingMaze|"
+msgid "The execution of the code starts here."
+msgstr "A execução do código começa aqui."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:552
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-Click on any instruction in the <b>instruction area</b> to add it to the "
+#| "<b>Main Function</b>."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-Click on any instruction in the <b>instruction area</b> to add it to the "
+"<b>Main Function</b>."
+msgstr ""
+"- Clique em qualquer instrução na <b>área de instruções</b> para adicioná-la "
+"na área <b>Função Principal</b>."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:553
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-The instructions will execute in order until there's none left, or until "
+#| "a dead-end, or when Tux reaches the fish."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-The instructions will execute in order until there's none left, or until a "
+"dead-end, or when Tux reaches the fish."
+msgstr ""
+"- As instruções serão executadas na ordem, até que: não sobre mais nenhuma, "
+"não seja possível executar a instrução ou o Tux chegue até o peixe."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:563
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Procedure:"
+msgctxt "ProgrammingMaze|"
+msgid "Procedure:"
+msgstr "Procedimentos"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:564
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "<b>Procedure</b> is a reusable set of instructions which can be <b>used "
+#| "in the code by calling it where needed</b>."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
+"the code by calling it where needed</b>."
+msgstr ""
+"<b>Procedimento</b> é um conjunto de instruções reutilizáveis que podem ser "
+"<b>usadas no código, sendo chamadas quando necessário</b>."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:565
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main "
+#| "Function area</b> to add your code, click on the <b>Procedure</b> or "
+#| "<b>Main Function</b> label."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
+"area</b> to add your code, click on the <b>Procedure</b> or <b>Main "
+"Function</b> label."
+msgstr ""
+"-Para <b>alternar</b> entre a <b>área de procedimentos</b> e a <b>Área de "
+"função principal</b> para adicionar o seu código, clique na etiqueta "
+"<b>Procedimento</b> ou na <b>Função principal</b>."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:575
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Loop:"
+msgctxt "ProgrammingMaze|"
+msgid "Loop:"
+msgstr "Laço:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:576
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
+#| "the number of times defined by the number inside it</b>."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
+"the number of times defined by the number inside it</b>."
+msgstr ""
+"<b>Laço</b> é uma sequência de instruções que é <b>repetida uma quantidade "
+"de vezes, definida pelo número dentro do laço</b>."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:577
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
+#| "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</"
+#| "b> label."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
+"area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
+"label."
+msgstr ""
+"-Para <b>alternar</b> entre a <b>área de laço</b> e a <b>área de função "
+"principal</b>, para adicionar o seu código, clique na etiqueta <b>Laço</b> "
+"ou na <b>Função principal</b>."
 
 #: activities/programmingMaze/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -22915,7 +23145,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Enter ou Return: enviar a sua resposta"
 
-#: activities/railroad/Railroad.qml:125
+#: activities/railroad/Railroad.qml:126
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -22924,7 +23154,7 @@ msgstr ""
 "Observe e memorize o trem antes que o tempo termine e arraste os itens para "
 "configurar um trem similar."
 
-#: activities/railroad/Railroad.qml:126
+#: activities/railroad/Railroad.qml:129
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -23146,7 +23376,7 @@ msgstr ""
 "em casa, clique no interruptor de luz. Para ganhar, você deve ligar todos os "
 "consumidores enquanto todos os produtores estiverem funcionando."
 
-#: activities/renewable_energy/RenewableEnergy.qml:302
+#: activities/renewable_energy/RenewableEnergy.qml:304
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -23155,7 +23385,7 @@ msgstr ""
 "O Tux retornou de uma pescaria com seu barco. Restaure o sistema elétrico, "
 "para que ele possa ter luz na sua casa."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:307
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -23164,7 +23394,7 @@ msgstr ""
 "Clique nos diferentes elementos ativos: sol, nuvem, represa, painel solar, "
 "parque eólico e transformadores, para poder reativar todo o sistema elétrico."
 
-#: activities/renewable_energy/RenewableEnergy.qml:306
+#: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -23175,12 +23405,12 @@ msgstr ""
 "clique no interruptor de luz. Para ganhar, você deve ligar todos os "
 "consumidores enquanto os produtores estiverem todos funcionando."
 
-#: activities/renewable_energy/RenewableEnergy.qml:308
+#: activities/renewable_energy/RenewableEnergy.qml:313
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "Conheça um sistema elétrico que usa energia renovável. Divirta-se."
 
-#: activities/renewable_energy/RenewableEnergy.qml:333
+#: activities/renewable_energy/RenewableEnergy.qml:339
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -24048,13 +24278,13 @@ msgctxt "ActivityInfo|"
 msgid "If there is a rest, it needs to be placed inside the candy jar."
 msgstr "Caso sobre um resto, ele deve ser colocado dentro do pote de doces."
 
-#: activities/share/resource/1/Data.qml:13
+#: activities/share/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, no rest."
 msgstr "Máximo de 25 doces e 5 crianças, sem resto."
 
-#: activities/share/resource/1/Data.qml:18
-#: activities/share/resource/2/Data.qml:18
+#: activities/share/resource/1/Data.qml:20
+#: activities/share/resource/2/Data.qml:20
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 2 pieces of candy equally between 2 of his girl friends. "
@@ -24065,19 +24295,19 @@ msgstr ""
 "lo? Primeiro, coloque as crianças no centro e, depois, arraste os doces para "
 "cada uma delas."
 
-#: activities/share/resource/1/Data.qml:28
+#: activities/share/resource/1/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 4 pieces of candy equally among his friends."
 msgstr "Agora ele quer dividir, igualmente, 4 doces entre seus amigos."
 
-#: activities/share/resource/1/Data.qml:38
+#: activities/share/resource/1/Data.qml:40
 msgctxt "Data|"
 msgid ""
 "Can you now share 6 of Paul's pieces of candy equally among his friends?"
 msgstr ""
 "Agora você pode dividir, igualmente, 6 doces do Paulo entre seus amigos?"
 
-#: activities/share/resource/1/Data.qml:48
+#: activities/share/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid ""
 "Some of his friends already have pieces of candy. He wants to give them 7 "
@@ -24086,7 +24316,7 @@ msgstr ""
 "Alguns de seus amigos já possuem doces. Ele quer distribuir, entre eles, "
 "mais 7 doces, de forma que, ao final, todos fiquem com a mesma quantidade."
 
-#: activities/share/resource/1/Data.qml:58
+#: activities/share/resource/1/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 12 pieces of candy left. He eats 2 pieces of candy and he "
@@ -24096,7 +24326,7 @@ msgstr ""
 "Agora o Paulo tem apenas 12 doces. Ele come 2 e dá o resto para seus amigos. "
 "Você pode ajudá-lo a dividir, igualmente, os 10 doces que restam?"
 
-#: activities/share/resource/1/Data.qml:70
+#: activities/share/resource/1/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "George wants to share 3 pieces of candy equally between 3 of his girl "
@@ -24105,7 +24335,7 @@ msgstr ""
 "Jorge quer dividir 3 doces entre suas 3 amigas. Será que ele consegue "
 "dividir esses doces igualmente?"
 
-#: activities/share/resource/1/Data.qml:80
+#: activities/share/resource/1/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 6 pieces of candy equally between 3 of her friends: 1 "
@@ -24114,7 +24344,7 @@ msgstr ""
 "Maria quer dividir 6 doces entre seus 3 amigos: 1 menina e 2 meninos. Será "
 "que ela consegue dividir esses doces igualmente?"
 
-#: activities/share/resource/1/Data.qml:90
+#: activities/share/resource/1/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "John wants to share 8 pieces of candy equally between 3 of his friends: 1 "
@@ -24125,7 +24355,7 @@ msgstr ""
 "meninas. O menino já tem um doce. Será que o João consegue dividir seus "
 "doces de forma que todo mundo tenha a mesma quantidade no final?"
 
-#: activities/share/resource/1/Data.qml:100
+#: activities/share/resource/1/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 12 pieces of candy equally between 3 of his friends: 2 "
@@ -24134,7 +24364,7 @@ msgstr ""
 "Paulo quer dividir seus 12 doces entre seus 3 amigos: 2 meninos e uma "
 "menina. Será que ele consegue dividir esses doces igualmente?"
 
-#: activities/share/resource/1/Data.qml:110
+#: activities/share/resource/1/Data.qml:112
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 11 pieces of candy between 3 of her friends: 1 boy and "
@@ -24145,8 +24375,8 @@ msgstr ""
 "meninas. As meninas já têm alguns doces. Será que a Maria consegue dividir "
 "seus doces de forma que todo mundo tenha a mesma quantidade no final?"
 
-#: activities/share/resource/1/Data.qml:122
-#: activities/share/resource/2/Data.qml:112
+#: activities/share/resource/1/Data.qml:124
+#: activities/share/resource/2/Data.qml:114
 msgctxt "Data|"
 msgid ""
 "Alice wants to share 4 pieces of candy equally between 4 of her girl "
@@ -24155,12 +24385,12 @@ msgstr ""
 "Alice quer dividir, igualmente, 4 doces entre suas 4 amigas. Você pode ajudá-"
 "la?"
 
-#: activities/share/resource/1/Data.qml:132
+#: activities/share/resource/1/Data.qml:134
 msgctxt "Data|"
 msgid "Now, Alice wants to give 8 pieces of candy to her friends."
 msgstr "Agora, Alice quer dar 8 doces para seus amigos."
 
-#: activities/share/resource/1/Data.qml:142
+#: activities/share/resource/1/Data.qml:144
 msgctxt "Data|"
 msgid ""
 "Alice wants to give 10 pieces of candy to her friends, 1 girl and 3 boys, so "
@@ -24171,12 +24401,12 @@ msgstr ""
 "forma que todo mundo fique com a mesma quantidade de doces. A menina já tem "
 "alguns doces."
 
-#: activities/share/resource/1/Data.qml:152
+#: activities/share/resource/1/Data.qml:154
 msgctxt "Data|"
 msgid "Alice wants to give 16 pieces of candy to her friends."
 msgstr "Alice quer dar 16 doces para seus amigos"
 
-#: activities/share/resource/1/Data.qml:162
+#: activities/share/resource/1/Data.qml:164
 msgctxt "Data|"
 msgid ""
 "Alice wants to give pieces of candy to 4 friends. Some of them already have "
@@ -24187,7 +24417,7 @@ msgstr ""
 "Você pode ajudá-la a dividir 14 doces de forma que todos os seus amigos "
 "fiquem com a mesma quantidade no final?"
 
-#: activities/share/resource/1/Data.qml:174
+#: activities/share/resource/1/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Michael wants to share 5 pieces of candy equally between 5 of his girl "
@@ -24196,7 +24426,7 @@ msgstr ""
 "Miguel quer dividir, igualmente, 5 doces entre suas 5 amigas. Você pode "
 "ajudá-lo?"
 
-#: activities/share/resource/1/Data.qml:184
+#: activities/share/resource/1/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Helen has 5 friends: 2 boys and 3 girls. She wants to give them 10 pieces of "
@@ -24205,7 +24435,7 @@ msgstr ""
 "Helena tem 5 amigos: 2 meninos e 3 meninas. Ela quer dar 10 doces para eles. "
 "Ajude-a a dividir, igualmente, os doces entre seus amigos!"
 
-#: activities/share/resource/1/Data.qml:194
+#: activities/share/resource/1/Data.qml:196
 msgctxt "Data|"
 msgid ""
 "Michelle wants to share 12 pieces of candy equally between her 4 brothers "
@@ -24215,7 +24445,7 @@ msgstr ""
 "Michelle quer dividir 12 doces entre 4 irmãos e 1 irmã, de forma que, ao "
 "final, todos fiquem com a mesma quantidade. A sua irmã já tem alguns doces."
 
-#: activities/share/resource/1/Data.qml:204
+#: activities/share/resource/1/Data.qml:206
 msgctxt "Data|"
 msgid ""
 "Thomas wants to share his 20 pieces of candy with his friends: 1 boy and 4 "
@@ -24224,7 +24454,7 @@ msgstr ""
 "Tomás quer dividir seus 20 doces entre seus amigos: 1 menino e 4 meninas. "
 "Você pode ajudá-lo?"
 
-#: activities/share/resource/1/Data.qml:214
+#: activities/share/resource/1/Data.qml:216
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 20 pieces of candy equally between 5 of his friends. "
@@ -24233,7 +24463,7 @@ msgstr ""
 "Paulo quer dividir, igualmente, 20 doces entre seus 5 amigos. Cada um deles "
 "já tem um doce. Você pode ajudá-lo?"
 
-#: activities/share/resource/1/Data.qml:226
+#: activities/share/resource/1/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally with 2 of his girl "
@@ -24242,7 +24472,7 @@ msgstr ""
 "Carlos quer dividir seus 6 doces entre 2 amigas. Será que ele consegue "
 "dividir os doces igualmente?"
 
-#: activities/share/resource/1/Data.qml:236
+#: activities/share/resource/1/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -24253,7 +24483,7 @@ msgstr ""
 "meninas e 1 menino. As meninas já têm alguns doces. Como ela deve dividir os "
 "doces de forma que, ao final, todos fiquem com a mesma quantidade?"
 
-#: activities/share/resource/1/Data.qml:246
+#: activities/share/resource/1/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 16 pieces of candy to share equally with his "
@@ -24263,7 +24493,7 @@ msgstr ""
 "O pai de Renato deu a ele 16 doces para dividir, igualmente, entre seus "
 "amigos: 2 meninos e 2 meninas. Ajude-o a dividir esses doces."
 
-#: activities/share/resource/1/Data.qml:256
+#: activities/share/resource/1/Data.qml:258
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy between 4 of his friends: 2 girls "
@@ -24274,7 +24504,7 @@ msgstr ""
 "meninos. Os meninos já têm um doce cada. E ele quer que, ao final, todos "
 "fiquem com a mesma quantidade."
 
-#: activities/share/resource/1/Data.qml:266
+#: activities/share/resource/1/Data.qml:268
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 25 pieces of candy equally between 5 of her friends: 3 "
@@ -24283,27 +24513,27 @@ msgstr ""
 "Maria quer dividir 25 doces entre seus 5 amigos: 3 meninas e 2 meninos. Será "
 "que ela consegue dividir esses doces igualmente?"
 
-#: activities/share/resource/2/Data.qml:13
+#: activities/share/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, possible rest."
 msgstr "Máximo de 25 doces e 5 crianças, pode ter resto."
 
-#: activities/share/resource/2/Data.qml:28
+#: activities/share/resource/2/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 5 pieces of candy among his friends."
 msgstr "Agora ele quer dividir 5 doces entre seus amigos."
 
-#: activities/share/resource/2/Data.qml:38
+#: activities/share/resource/2/Data.qml:40
 msgctxt "Data|"
 msgid "Can you now share 7 of Paul's pieces of candy among his friends?"
 msgstr "Agora você pode dividir 7 doces do Paulo entre seus amigos?"
 
-#: activities/share/resource/2/Data.qml:48
+#: activities/share/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Can you now share 8 of Paul's pieces of candy among his friends?"
 msgstr "Agora você pode dividir 8 doces do Paulo entre seus amigos?"
 
-#: activities/share/resource/2/Data.qml:58
+#: activities/share/resource/2/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 11 pieces of candy left. He eats 2 pieces of candy and he "
@@ -24313,7 +24543,7 @@ msgstr ""
 "Agora o Paulo tem apenas 11 doces. Ele come 2 e dá o resto para seus amigos. "
 "Você pode ajudá-lo a dividir, igualmente, os 9 doces que sobraram?"
 
-#: activities/share/resource/2/Data.qml:70
+#: activities/share/resource/2/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "Bob wants to share 3 pieces of candy equally between 3 of his girl friends. "
@@ -24322,7 +24552,7 @@ msgstr ""
 "Beto quer dividir 3 doces entre suas 3 amigas. Será que ele consegue dividir "
 "esses doces igualmente?"
 
-#: activities/share/resource/2/Data.qml:80
+#: activities/share/resource/2/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 8 pieces of candy between 3 of his friends: 1 boy and 2 "
@@ -24333,7 +24563,7 @@ msgstr ""
 "meninas. O menino já tem um doce. Será que o Henrique consegue dividir os "
 "doces de forma que, ao final, todo mundo fique com a mesma quantidade?"
 
-#: activities/share/resource/2/Data.qml:90
+#: activities/share/resource/2/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 8 pieces of candy between 3 of her friends: 1 boy and 2 "
@@ -24344,7 +24574,7 @@ msgstr ""
 "meninas. As meninas já têm alguns doces. Será que a Maria consegue dividir "
 "seus doces de forma que, no final, todo mundo fique com a mesma quantidade?"
 
-#: activities/share/resource/2/Data.qml:100
+#: activities/share/resource/2/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 12 pieces of candy between 3 of his friends: 1 boy and "
@@ -24356,12 +24586,12 @@ msgstr ""
 "dividir os doces de forma que, ao final, todo mundo fique com a mesma "
 "quantidade?"
 
-#: activities/share/resource/2/Data.qml:122
+#: activities/share/resource/2/Data.qml:124
 msgctxt "Data|"
 msgid "Now, Alice wants to share 8 pieces of candy equally among her friends."
 msgstr "Agora, Alice quer dividir, igualmente, 8 doces entre seus amigos."
 
-#: activities/share/resource/2/Data.qml:132
+#: activities/share/resource/2/Data.qml:134
 msgctxt "Data|"
 msgid ""
 "Can you help Alice share 10 pieces of candy equally among her friends: 1 "
@@ -24370,12 +24600,12 @@ msgstr ""
 "Você pode ajudar a Alice a dividir 10 doces entre seus amigos: 1 menina e 3 "
 "meninos? A menina já tem alguns doces."
 
-#: activities/share/resource/2/Data.qml:142
+#: activities/share/resource/2/Data.qml:144
 msgctxt "Data|"
 msgid "Alice wants to share 16 pieces of candy equally among her friends."
 msgstr "Alice quer dividir, igualmente, 16 doces entre seus amigos."
 
-#: activities/share/resource/2/Data.qml:152
+#: activities/share/resource/2/Data.qml:154
 msgctxt "Data|"
 msgid ""
 "Alice has 14 pieces of candy left. She wants to share them equally among her "
@@ -24386,7 +24616,7 @@ msgstr ""
 "Os meninos já têm alguns doces. Você pode a Alice a dividir os doces "
 "igualmente?"
 
-#: activities/share/resource/2/Data.qml:164
+#: activities/share/resource/2/Data.qml:166
 msgctxt "Data|"
 msgid ""
 "Help Jon share 11 pieces of candies equally between five girls. The rest "
@@ -24395,7 +24625,7 @@ msgstr ""
 "Ajude o João a dividir 11 pedaços de doce igualmente entre 5 meninas. O João "
 "vai ficar com o resto"
 
-#: activities/share/resource/2/Data.qml:174
+#: activities/share/resource/2/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Jon wants to share the rest of his pieces of candies with his brothers and "
@@ -24406,21 +24636,21 @@ msgstr ""
 "irmãs. Você consegue dividi-los igualmente, sabendo que seus irmãos já "
 "possuem 2 pedaços de doce?"
 
-#: activities/share/resource/2/Data.qml:184
+#: activities/share/resource/2/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Help Tux split 19 pieces of candies between his friends: 4 boys and 1 girl."
 msgstr ""
 "Ajude o Tux a dividir 19 doces entre seus amigos: 4 meninos e 1 menina."
 
-#: activities/share/resource/2/Data.qml:194
+#: activities/share/resource/2/Data.qml:196
 msgctxt "Data|"
 msgid "Help Maria share 18 pieces of candy equally between 3 boys and 2 girls."
 msgstr ""
 "Ajude Maria a dividir 18 pedaços de doce igualmente entre 3 meninos e 2 "
 "meninas."
 
-#: activities/share/resource/2/Data.qml:206
+#: activities/share/resource/2/Data.qml:208
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally between 2 of his girl "
@@ -24429,7 +24659,7 @@ msgstr ""
 "Carlos quer dividir seus 6 pedaços de doce igualmente entre 2 amigas. Será "
 "que ele consegue dividir os pedaços de doce igualmente?"
 
-#: activities/share/resource/2/Data.qml:216
+#: activities/share/resource/2/Data.qml:218
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -24439,7 +24669,7 @@ msgstr ""
 "Para seu aniversário, Elisabete tem 8 doces para dividir entre 3 amigos: 2 "
 "meninas e 1 menino. Como ela deveria dividir os doces entre seus amigos?"
 
-#: activities/share/resource/2/Data.qml:226
+#: activities/share/resource/2/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 17 pieces of candy to share equally between his "
@@ -24450,7 +24680,7 @@ msgstr ""
 "seus amigos: 2 meninos e 2 meninas. Ajude-o a dar os pedaços de doces para "
 "seus amigos."
 
-#: activities/share/resource/2/Data.qml:236
+#: activities/share/resource/2/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy equally between 4 of his friends: 2 "
@@ -24461,7 +24691,7 @@ msgstr ""
 "amigos: 2 meninas e 2 meninos. Será que ele consegue dividir os doces "
 "igualmente entre seus amigos?"
 
-#: activities/share/resource/2/Data.qml:246
+#: activities/share/resource/2/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 23 pieces of candy equally between 5 of her friends: 3 "
@@ -24472,12 +24702,12 @@ msgstr ""
 "meninas e 2 meninos. Será que ela consegue dividir os pedaços de doce "
 "igualmente entre seus amigos?"
 
-#: activities/share/resource/3/Data.qml:13
+#: activities/share/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr "Máximo de 30 pedaços de doces e 6 crianças, pode ter resto."
 
-#: activities/share/share.js:98
+#: activities/share/share.js:115
 #, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -24487,7 +24717,7 @@ msgid_plural "Place %n boy(s) "
 msgstr[0] "Coloque %n menino "
 msgstr[1] "Coloque %n meninos "
 
-#: activities/share/share.js:102
+#: activities/share/share.js:119
 #, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -24497,7 +24727,7 @@ msgid_plural "and %n girl(s) in the center. "
 msgstr[0] "e %n menina no centro. "
 msgstr[1] "e %n meninas no centro. "
 
-#: activities/share/share.js:106
+#: activities/share/share.js:123
 #, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -24507,7 +24737,7 @@ msgid_plural "Then split %n pieces of candy equally between them."
 msgstr[0] "Então divida %n pedaços de doce igualmente entre as crianças."
 msgstr[1] "Então divida %n pedaços de doce igualmente entre as crianças."
 
-#: activities/share/Share.qml:358
+#: activities/share/Share.qml:359
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
@@ -26100,7 +26330,7 @@ msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Aprendizagem"
 
-#: activities/solar_system/SolarSystem.qml:156
+#: activities/solar_system/SolarSystem.qml:157
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -26109,7 +26339,7 @@ msgstr ""
 "Clique no Sol ou em qualquer planeta para mostrar questões. Cada questão tem "
 "4 opções, das quais uma está correta."
 
-#: activities/solar_system/SolarSystem.qml:157
+#: activities/solar_system/SolarSystem.qml:160
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -26124,7 +26354,7 @@ msgstr ""
 "um acerto de 100% seguindo o medidor. Caso o botão de dica esteja visível, "
 "você pode clicar nele para obter uma ajuda para encontrar a resposta."
 
-#: activities/solar_system/SolarSystem.qml:162
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -26133,7 +26363,7 @@ msgstr ""
 "Existem 20 perguntas inicialmente com 4 opções cada. A barra de progresso no "
 "canto inferior direito da tela mostra sua pontuação porcentual."
 
-#: activities/solar_system/SolarSystem.qml:163
+#: activities/solar_system/SolarSystem.qml:173
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -26146,7 +26376,7 @@ msgstr ""
 "final, juntamente com a pergunta respondida incorretamente.<br>Serão feitas, "
 "no máximo, 25 perguntas, depois das quais nenhuma outra será adicionada."
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:176
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -26155,7 +26385,7 @@ msgstr ""
 "Você deve pontuar acima de 90% para passar na avaliação e se tornar um "
 "especialista em Sistema Solar!"
 
-#: activities/solar_system/SolarSystem.qml:349
+#: activities/solar_system/SolarSystem.qml:365
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26165,7 +26395,7 @@ msgstr ""
 "1. Quanto <b>mais distante</b> o planeta do Sol, <b>menor</b> é a "
 "temperatura.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:350
+#: activities/solar_system/SolarSystem.qml:366
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26176,7 +26406,7 @@ msgstr ""
 "do Sol</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:369
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -26187,12 +26417,12 @@ msgstr ""
 "na primeira letra de cada palavra - <b>M</b>eu <b>V</b>elho <b>T</b>io <b>M</"
 "b>andou <b>J</b>osé <b>S</b>acar <b>U</b>mas <b>N</b>otas.<br>"
 
-#: activities/solar_system/SolarSystem.qml:355
+#: activities/solar_system/SolarSystem.qml:371
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Dica"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:379
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Ver o sistema solar"
@@ -26313,13 +26543,21 @@ msgctxt "Controls|"
 msgid "Right Ballast Tank"
 msgstr "Tanque de lastro direito"
 
-#: activities/submarine/submarine.js:21
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:130
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Move the submarine to the other side of the screen."
+msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "Mova o submarino para o outro lado da tela."
 
-#: activities/submarine/submarine.js:22
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:133
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The leftmost item in the control panel is the engine of the submarine, "
+#| "indicating the current speed of the submarine."
+msgctxt "Submarine|"
 msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
 "indicating the current speed of the submarine."
@@ -26327,13 +26565,21 @@ msgstr ""
 "O item mais à esquerda no painel de controle é o motor do submarino, "
 "indicando a velocidade atual do submarino."
 
-#: activities/submarine/submarine.js:23
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:136
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Increase or decrease the velocity of the submarine using the engine."
+msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr "Aumente ou diminua a velocidade do submarino usando o motor."
 
-#: activities/submarine/submarine.js:24
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:139
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Press the + button to increase the velocity, or the - button to decrease "
+#| "the velocity."
+msgctxt "Submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
 "velocity."
@@ -26341,18 +26587,29 @@ msgstr ""
 "Pressione o botão + para aumentar a velocidade ou o botão - para diminuir a "
 "velocidade."
 
-#: activities/submarine/submarine.js:27
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:146
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "The item next to the engine is the ballast tank."
+msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "Os itens ao lado do motor são os tanques de lastro."
 
-#: activities/submarine/submarine.js:28
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:149
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "The ballast tanks are used to float or dive under water."
+msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr "Os tanques de lastro são usados para flutuar ou mergulhar na água."
 
-#: activities/submarine/submarine.js:29
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:152
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "If the ballast tanks are empty, the submarine will float. If the ballast "
+#| "tanks are full of water, the submarine will dive underwater."
+msgctxt "Submarine|"
 msgid ""
 "If the ballast tanks are empty, the submarine will float. If the ballast "
 "tanks are full of water, the submarine will dive underwater."
@@ -26360,8 +26617,14 @@ msgstr ""
 "Se os tanques de lastro estiverem vazios, o submarino flutuará. Se os "
 "tanques de lastro estiverem cheios de água, o submarino afundará."
 
-#: activities/submarine/submarine.js:30
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:155
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Turning the upper valve on or off will alternatively allow or stop the "
+#| "water from filling in the ballast tank, thus allowing it to dive "
+#| "underwater."
+msgctxt "Submarine|"
 msgid ""
 "Turning the upper valve on or off will alternatively allow or stop the water "
 "from filling in the ballast tank, thus allowing it to dive underwater."
@@ -26369,8 +26632,14 @@ msgstr ""
 "Ligar ou desligar a válvula superior permitirá ou impedirá que a água "
 "preencha o tanque de lastro, permitindo assim, que o submarino afunde."
 
-#: activities/submarine/submarine.js:31
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:158
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Turning the lower valve on or off will alternatively allow or stop the "
+#| "water from flushing out the ballast tank, thus allowing it to float on "
+#| "the surface of the water."
+msgctxt "Submarine|"
 msgid ""
 "Turning the lower valve on or off will alternatively allow or stop the water "
 "from flushing out the ballast tank, thus allowing it to float on the surface "
@@ -26379,17 +26648,27 @@ msgstr ""
 "Ligar ou desligar a válvula superior permitirá ou impedirá que a água saia "
 "do tanque de lastro, permitindo assim, que o submarino flutue."
 
-#: activities/submarine/submarine.js:34
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:165
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The rightmost item in the control panel controls the diving planes of the "
+#| "submarine"
+msgctxt "Submarine|"
 msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
-"submarine"
+"submarine."
 msgstr ""
 "O item mais à direita no painel de controle comanda os hidroplanos do "
 "submarino."
 
-#: activities/submarine/submarine.js:35
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:168
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The diving planes in a submarine are used to control the depth of the "
+#| "submarine accurately once it is underwater."
+msgctxt "Submarine|"
 msgid ""
 "The diving planes in a submarine are used to control the depth of the "
 "submarine accurately once it is underwater."
@@ -26397,8 +26676,13 @@ msgstr ""
 "Os hidroplanos em um submarino são usados para controlar a profundidade do "
 "submarino com precisão, uma vez que ele esteja submerso."
 
-#: activities/submarine/submarine.js:36
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:171
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Once the submarine is moving underwater, increasing or decreasing the "
+#| "angle of the planes will increase and decrease the depth of the submarine."
+msgctxt "Submarine|"
 msgid ""
 "Once the submarine is moving underwater, increasing or decreasing the angle "
 "of the planes will increase and decrease the depth of the submarine."
@@ -26407,8 +26691,13 @@ msgstr ""
 "diminuir o ângulo dos hidroplanos aumentará e diminuirá a profundidade do "
 "submarino."
 
-#: activities/submarine/submarine.js:37
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:174
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The + button will increase the depth of the submarine, while the - button "
+#| "will decrease the depth of the submarine."
+msgctxt "Submarine|"
 msgid ""
 "The + button will increase the depth of the submarine, while the - button "
 "will decrease the depth of the submarine."
@@ -26416,13 +26705,19 @@ msgstr ""
 "O botão + aumentará a profundidade do submarino, enquanto o botão - "
 "diminuirá a profundidade do submarino."
 
-#: activities/submarine/submarine.js:38
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:177
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Grab the crown to open the gate."
+msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "Pegue a coroa para abrir o portão."
 
-#: activities/submarine/submarine.js:39
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:180
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Check out the help menu for the keyboard controls."
+msgctxt "Submarine|"
 msgid "Check out the help menu for the keyboard controls."
 msgstr "Confira no menu de ajuda os controles do teclado."
 
@@ -27360,7 +27655,7 @@ msgstr ""
 "de águas estiver funcionando novamente e o Tux estiver no chuveiro, clique "
 "no botão do chuveiro para ele."
 
-#: activities/watercycle/Watercycle.qml:114
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -27369,14 +27664,14 @@ msgstr ""
 "O Sol é o componente principal do ciclo da água. Clique nele para iniciar o "
 "processo."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr ""
 "À medida que o Sol se vai elevando, a água do mar começa a aquecer e "
 "evaporar."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -27385,7 +27680,7 @@ msgstr ""
 " O vapor de água condensa-se para formar as nuvens e, quando as nuvens ficam "
 "pesadas, chove. Clique na nuvem."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:118
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -27396,7 +27691,7 @@ msgstr ""
 "elevados por meio de bombas, e, de lá enviada para nossas casas. Clique na "
 "bomba d'água para abastecer as casas."
 
-#: activities/watercycle/Watercycle.qml:119
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -27405,19 +27700,19 @@ msgstr ""
 "Veja o reservatório cheio de água. Ative a estação de tratamento de esgoto "
 "clicando nela."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Ótimo, clique no chuveiro assim que o Tux chegar em casa."
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:122
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr ""
 "Fantástico, você completou o ciclo da água. Você pode continuar jogando."
 
-#: activities/watercycle/Watercycle.qml:139
+#: activities/watercycle/Watercycle.qml:141
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -27429,7 +27724,7 @@ msgstr ""
 "do Sol oferece a energia para evaporar a água das massas de água, como os "
 "oceanos."
 
-#: activities/watercycle/Watercycle.qml:142
+#: activities/watercycle/Watercycle.qml:144
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -27441,7 +27736,7 @@ msgstr ""
 "nuvens se encontram com o ar frio sobre a terra, inicia sua precipitação, "
 "caindo sob a forma de chuva."
 
-#: activities/watercycle/Watercycle.qml:145
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -27452,7 +27747,7 @@ msgstr ""
 "águas subterrâneas. No entanto, a maior parte dela escoa, retornando aos "
 "oceanos através dos rios."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:150
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -28552,26 +28847,46 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "Estou pronto(a)"
 
-#: core/Tutorial.qml:140
+#: core/Tutorial.qml:139
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "Anterior"
 
 # Próxima instrução. (Alvarenga)
-#: core/Tutorial.qml:158
+#: core/Tutorial.qml:157
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "Próxima"
 
-#: core/Tutorial.qml:175
+#: core/Tutorial.qml:174
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "Pular"
 
-#: core/Tutorial.qml:175
+#: core/Tutorial.qml:174
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Iniciar"
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid "Grammatical analysis"
+#~ msgstr "Análise gramatical"
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid "Learn to identify grammatical classes."
+#~ msgstr "Aprenda a identificar as classes gramaticais."
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid ""
+#~ "Select a grammatical class from the list, then select the box under a "
+#~ "word and assign it the class."
+#~ msgstr ""
+#~ "Selecione uma classe gramatical na lista e, depois, selecione a caixa sob "
+#~ "uma palavra para atribuir a classe gramatical a ela."
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid "Leave the box blank if no class matches."
+#~ msgstr "Deixe a caixa em branco se nenhuma classe corresponder."
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"

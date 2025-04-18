@@ -2716,13 +2716,13 @@ msgstr ""
 "ഇടതും വലതും ഉള്ള ആരോ കീകൾ ഒരേ സമയം അമർത്തിക്കൊണ്ട് പന്തിനെ നേർരേഖയിൽ ചലിപ്പിക്കാം. ഒരു "
 "ടച്ച് സ്ക്രീനിൽ, രണ്ടു കൈപ്പത്തികളും ഒരേ സമയത്തു തൊടണം."
 
-#: activities/ballcatch/Ballcatch.qml:228
+#: activities/ballcatch/Ballcatch.qml:227
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr "രണ്ടു കൈപ്പത്തികളും ഒരേ സമയത്ത് തൊട്ടാൽ പന്തിനെ നേർരേഖയിൽ ചലിപ്പിക്കാം."
 
-#: activities/ballcatch/Ballcatch.qml:230
+#: activities/ballcatch/Ballcatch.qml:233
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2848,13 +2848,23 @@ msgstr ""
 "തന്നിരിക്കുന്ന ദശാംശ സംഖ്യയെ ബൈനറിയിൽ കാണിക്കാനായി ശരിയായ ബൾബുകൾ ഓണാക്കുക. "
 "ചെയ്തുകഴിഞ്ഞാൽ OK അമർത്തുക."
 
-#: activities/binary_bulb/binary_bulb.js:20
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:84
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "This activity teaches how to convert decimal numbers to binary numbers."
+msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr "ഈ പ്രവർത്തനം ദശാംശ സംഖ്യകളെ ബൈനറിയിലേക്ക് മാറ്റാൻ പഠിപ്പിക്കുന്നു."
 
-#: activities/binary_bulb/binary_bulb.js:24
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:88
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Computers use transistors to count and transistors have only two states, "
+#| "0 and 1. Mathematically, these states are represented by 0 and 1, which "
+#| "makes up the binary system of numeration."
+msgctxt "BinaryBulb|"
 msgid ""
 "Computers use transistors to count and transistors have only two states, 0 "
 "and 1. Mathematically, these states are represented by 0 and 1, which makes "
@@ -2864,14 +2874,22 @@ msgstr ""
 "ഉള്ളൂ, 0-വും 1-ഉം. ഗണിതശാസ്ത്രപരമായി ഈ അവസ്ഥകളെ 0, 1 എന്നിങ്ങനെ പ്രതിനിധീകരിക്കുന്നു, "
 "ഇങ്ങനെയാണ് ബൈനറി സംഖ്യ വ്യവസ്ഥ ഉണ്ടാക്കുന്നത്."
 
-#: activities/binary_bulb/binary_bulb.js:28
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:92
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
+msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr ""
 "ഈ പ്രവർത്തനത്തിൽ 0, 1 എന്നിവ ബൾബുകൾ ഉപയോഗിച്ച് കാണിച്ചിരിക്കുന്നു, സ്വിച്ച് ഓൺ അല്ലെങ്കിൽ ഓഫ്."
 
-#: activities/binary_bulb/binary_bulb.js:32
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:96
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Binary system uses these numbers very efficiently, allowing to count from "
+#| "0 to 255 with 8 bits only."
+msgctxt "BinaryBulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
 "to 255 with 8 bits only."
@@ -2879,8 +2897,15 @@ msgstr ""
 "ബൈനറി വ്യവസ്ഥ ഈ സംഖ്യകളെ കാര്യക്ഷമമായി ഉപയോഗിക്കുന്നു, 8 ബിറ്റുകൾ മാത്രം കൊണ്ട് 0 തൊട്ട് 255 "
 "വരെ എണ്ണാം."
 
-#: activities/binary_bulb/binary_bulb.js:36
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:100
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Each bit adds a progressive value, corresponding to the powers of 2, "
+#| "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → "
+#| "2²=4 , bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit "
+#| "8 → 2⁷=128."
+msgctxt "BinaryBulb|"
 msgid ""
 "Each bit adds a progressive value, corresponding to the powers of 2, "
 "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → 2²=4 , "
@@ -2892,13 +2917,21 @@ msgstr ""
 "b4 → 2³=8 , ബിറ്റ് b5 → 2⁴=16 , ബിറ്റ് b6 → 2⁵=32 , ബിറ്റ് b7 → 2⁶=64 , ബിറ്റ് b8 → "
 "2⁷=128."
 
-#: activities/binary_bulb/binary_bulb.js:40
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:104
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
+msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr "5 എന്ന ദശാംശ സംഖ്യയെ ബൈനറി മൂല്യത്തിലേക്ക് മാറ്റാൻ, 1-ഉം 4-ഉം കൂട്ടണം."
 
-#: activities/binary_bulb/binary_bulb.js:44
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:108
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 "
+#| "is equal to binary 101."
+msgctxt "BinaryBulb|"
 msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
 "equal to binary 101."
@@ -2906,12 +2939,15 @@ msgstr ""
 "അവയ്ക്ക് യോജിച്ച ബിറ്റുകൾ 1 ആയി ക്രമീകരിക്കുക, മറ്റുള്ളവ 0 ആക്കുക. ദശാംശ സംഖ്യ 5, ബൈനറി 101-"
 "നു സമമാണ്."
 
-#: activities/binary_bulb/binary_bulb.js:48
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:112
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid "This image will help you to compute bits' value."
+msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "ബിറ്റുകളുടെ മൂല്യം കാണാൻ ഈ ചിത്രം നിങ്ങളെ സഹായിക്കും."
 
-#: activities/binary_bulb/BinaryBulb.qml:126
+#: activities/binary_bulb/BinaryBulb.qml:160
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3567,7 +3603,7 @@ msgstr ""
 "കനാൽ പൂട്ടിന്റെ ഉത്തരവാദിത്വം നിങ്ങൾക്കാണ്. ടക്സിനു കനാലിലൂടെ ഇരുവശങ്ങളിലേക്കും സ‍ഞ്ചരിക്കാൻ "
 "കഴിയുന്ന രീതിയിൽ പൂട്ടുകളും  ഗേറ്റുകളും ശരിയായ ക്രമത്തിൽ തുറക്കൂ."
 
-#: activities/canal_lock/CanalLock.qml:73
+#: activities/canal_lock/CanalLock.qml:74
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3576,7 +3612,7 @@ msgstr ""
 "തന്നിട്ടുള്ള വിവിധ തരം ജലപ്പൂട്ടുകൾ ഉപയോഗിച്ച് മരത്തടികൾ എടുക്കാനായി ടക്സിനെ കനാൽ പൂട്ടിന്റെ "
 "അപ്പുറത്തെത്തിക്കലാണ് നിങ്ങളുടെ ലക്ഷ്യം."
 
-#: activities/canal_lock/CanalLock.qml:75
+#: activities/canal_lock/CanalLock.qml:77
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3587,7 +3623,7 @@ msgstr ""
 "ചെയ്താൽ അവയെ പ്രവർത്തിപ്പിക്കാം. ഒരേ തരത്തിലുള്ള രണ്ടു പൂട്ടുകളെ ഒരുമിച്ച് പ്രവർത്തിപ്പിക്കാൻ "
 "കഴിയില്ല."
 
-#: activities/canal_lock/CanalLock.qml:77
+#: activities/canal_lock/CanalLock.qml:80
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -14750,24 +14786,43 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
 msgstr "ബാക്ക്‌സ്പെയ്സ്: മുമ്പത്തെ വാക്കു തിരഞ്ഞെടുക്കാൻ"
 
-#: activities/grammar_analysis/grammar_analysis.js:37
+#: activities/grammar_analysis/grammar_analysis.js:398
 msgctxt "grammar_analysis|"
+msgid "Empty"
+msgstr "കാലി"
+
+#: activities/grammar_analysis/GrammarAnalysis.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Grammatical analysis"
+msgctxt "GrammarAnalysis|"
 msgid "Grammatical analysis"
 msgstr "വ്യാകരണ വിശകലനം"
 
-#: activities/grammar_analysis/grammar_analysis.js:38
-#: activities/grammar_analysis/grammar_analysis.js:48
-msgctxt "grammar_analysis|"
+#: activities/grammar_analysis/GrammarAnalysis.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn to identify grammatical classes."
+msgctxt "GrammarAnalysis|"
 msgid "Learn to identify grammatical classes."
 msgstr "വ്യാകരണത്തിലെ ശബ്ദഭേദങ്ങൾ തിരിച്ചറിയാൻ പഠിക്കാം."
 
-#: activities/grammar_analysis/grammar_analysis.js:39
-msgctxt "grammar_analysis|"
+#: activities/grammar_analysis/GrammarAnalysis.qml:28
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid ""
+#| "Find all the words corresponding to the requested grammatical classes."
+msgctxt "GrammarAnalysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr "ചോദിച്ചിരിക്കുന്ന ശബ്ദഭേദങ്ങൾക്ക് അനുയോജ്യമായ വാക്കുകൾ കണ്ടെത്തൂ."
 
-#: activities/grammar_analysis/grammar_analysis.js:40
-msgctxt "grammar_analysis|"
+#: activities/grammar_analysis/GrammarAnalysis.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select a grammatical class from the list, then select the box under a "
+#| "word and assign it the class."
+msgctxt "GrammarAnalysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
@@ -14775,39 +14830,13 @@ msgstr ""
 "തന്നിരിക്കുന്ന പട്ടികയിൽ നിന്നും ഒരു ശബ്ദഭേദം തിരഞ്ഞെടുക്കുക. എന്നിട്ട്, ഒരു വാക്കിനു താഴെയുള്ള "
 "കളം തിരഞ്ഞെടുത്ത് അതിലേക്ക് ആ ശബ്ദഭേദം കൊടുക്കുക."
 
-#: activities/grammar_analysis/grammar_analysis.js:41
-msgctxt "grammar_analysis|"
+#: activities/grammar_analysis/GrammarAnalysis.qml:30
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Leave the box blank if no class matches."
+msgctxt "GrammarAnalysis|"
 msgid "Leave the box blank if no class matches."
 msgstr "അനുയോജ്യമായ ഒരു ശബ്ദഭേദവും ഇല്ലെങ്കിൽ കളം ഒഴിച്ചിടാം."
-
-#: activities/grammar_analysis/grammar_analysis.js:47
-msgctxt "grammar_analysis|"
-msgid "Grammatical classes"
-msgstr "ശബ്ദഭേദങ്ങൾ (വ്യാകരണം)"
-
-#: activities/grammar_analysis/grammar_analysis.js:49
-msgctxt "grammar_analysis|"
-msgid "Find all the words corresponding to the requested grammatical class."
-msgstr "ചോദിച്ചിരിക്കുന്ന ശബ്ദഭേദത്തിന് അനുയോജ്യമായ വാക്കുകൾ കണ്ടെത്തൂ."
-
-#: activities/grammar_analysis/grammar_analysis.js:50
-msgctxt "grammar_analysis|"
-msgid ""
-"Select the grammatical class from the list, then select the box under a word "
-"and assign it the class."
-msgstr ""
-"തന്നിരിക്കുന്ന പട്ടികയിൽ നിന്നും ശബ്ദഭേദം തിരഞ്ഞെടുക്കുക. എന്നിട്ട്, ഒരു വാക്കിനു താഴെയുള്ള കളം "
-"തിരഞ്ഞെടുത്ത് അതിലേക്ക് ആ ശബ്ദഭേദം കൊടുക്കുക."
-
-#: activities/grammar_analysis/grammar_analysis.js:51
-msgctxt "grammar_analysis|"
-msgid "Leave the box blank if the class doesn't match."
-msgstr "ശബ്ദഭേദം അനുയോജ്യമായതല്ല എങ്കിൽ കളം ഒഴിച്ചിടാം."
-
-#: activities/grammar_analysis/grammar_analysis.js:421
-msgctxt "grammar_analysis|"
-msgid "Empty"
-msgstr "കാലി"
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
@@ -14832,6 +14861,52 @@ msgstr ""
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
+msgid "Leave the box blank if the class doesn't match."
+msgstr "ശബ്ദഭേദം അനുയോജ്യമായതല്ല എങ്കിൽ കളം ഒഴിച്ചിടാം."
+
+#: activities/grammar_classes/GrammarClasses.qml:15
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Grammatical classes"
+msgctxt "GrammarClasses|"
+msgid "Grammatical classes"
+msgstr "ശബ്ദഭേദങ്ങൾ (വ്യാകരണം)"
+
+#: activities/grammar_classes/GrammarClasses.qml:16
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn to identify grammatical classes."
+msgctxt "GrammarClasses|"
+msgid "Learn to identify grammatical classes."
+msgstr "വ്യാകരണത്തിലെ ശബ്ദഭേദങ്ങൾ തിരിച്ചറിയാൻ പഠിക്കാം."
+
+#: activities/grammar_classes/GrammarClasses.qml:17
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Find all the words corresponding to the requested grammatical class."
+msgctxt "GrammarClasses|"
+msgid "Find all the words corresponding to the requested grammatical class."
+msgstr "ചോദിച്ചിരിക്കുന്ന ശബ്ദഭേദത്തിന് അനുയോജ്യമായ വാക്കുകൾ കണ്ടെത്തൂ."
+
+#: activities/grammar_classes/GrammarClasses.qml:18
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid ""
+#| "Select the grammatical class from the list, then select the box under a "
+#| "word and assign it the class."
+msgctxt "GrammarClasses|"
+msgid ""
+"Select the grammatical class from the list, then select the box under a word "
+"and assign it the class."
+msgstr ""
+"തന്നിരിക്കുന്ന പട്ടികയിൽ നിന്നും ശബ്ദഭേദം തിരഞ്ഞെടുക്കുക. എന്നിട്ട്, ഒരു വാക്കിനു താഴെയുള്ള കളം "
+"തിരഞ്ഞെടുത്ത് അതിലേക്ക് ആ ശബ്ദഭേദം കൊടുക്കുക."
+
+#: activities/grammar_classes/GrammarClasses.qml:19
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Leave the box blank if the class doesn't match."
+msgctxt "GrammarClasses|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr "ശബ്ദഭേദം അനുയോജ്യമായതല്ല എങ്കിൽ കളം ഒഴിച്ചിടാം."
 
@@ -14930,7 +15005,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "ഇടതും വലതും ആരോകൾ: ബഹിരാകാശ കപ്പൽ ചലിപ്പിക്കാൻ"
 
-#: activities/gravity/Gravity.qml:219
+#: activities/gravity/Gravity.qml:220
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -16389,8 +16464,13 @@ msgstr ""
 "ദശാംശസംഖ്യയ്ക്കുതുല്യമാകുന്നതു വരെ ഈ ഘട്ടങ്ങൾ ആവർത്തിക്കുക. ശേഷം ഒകെ ബട്ടൺ അമർത്തി നിങ്ങളുടെ "
 "ഉത്തരം സ്ഥിരീകരിക്കുക."
 
-#: activities/learn_decimals/learn_decimals.js:33
-msgctxt "learn_decimals|"
+#: activities/learn_decimals/Learn_decimals.qml:30
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "A decimal number is displayed. The bar with the arrow represents a full "
+#| "unit, and each square in it represents one tenth of this unit."
+msgctxt "Learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
 "unit, and each square in it represents one tenth of this unit."
@@ -16398,8 +16478,15 @@ msgstr ""
 "ഒരു ദശാംശസംഖ്യ കാണിച്ചിരിക്കുന്നു. അമ്പടയാളമുള്ള പെട്ടി ഒരു യൂണിറ്റും പെട്ടിക്കകത്തെ ഓരോ "
 "സമചതുരവും പത്തിലൊന്ന് യൂണിറ്റും പ്രതിനിധാനം ചെയ്യുന്നു."
 
-#: activities/learn_decimals/learn_decimals.js:37
-msgctxt "learn_decimals|"
+#: activities/learn_decimals/Learn_decimals.qml:34
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Drag the arrow to select a part of the bar, and drag the selected part of "
+#| "the bar to the empty area. Repeat these steps until the number of dropped "
+#| "bars corresponds to the displayed decimal number. Then click on the OK "
+#| "button to validate your answer."
+msgctxt "Learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
 "the bar to the empty area. Repeat these steps until the number of dropped "
@@ -16411,103 +16498,31 @@ msgstr ""
 "തുല്യമാകുന്നതുവരെ ഈ ഘട്ടങ്ങൾ ആവർത്തിക്കുക. എന്നിട്ട് ഒകെ ബട്ടണിൽ ക്ലിക്കു ചെയ്ത് നിങ്ങളുടെ ഉത്തരം "
 "സ്ഥിരീകരിക്കുക."
 
-#: activities/learn_decimals/learn_decimals.js:44
-msgctxt "learn_decimals|"
-msgid ""
-"A subtraction with two decimal numbers is displayed. Below it, the first "
-"number from the subtraction is represented with bars. One bar represents a "
-"full unit, and each square in it represents one tenth of this unit."
-msgstr ""
-"രണ്ടു ദശാംശസംഖ്യകളുടെ കുറയ്ക്കൽ കാണിച്ചിരിക്കുന്നു. അതിനു താഴെയായി, കുറയ്ക്കലിലെ ആദ്യത്തെ സംഖ്യ "
-"ഒരു പെട്ടി ഉപയോഗിച്ച് കാണിച്ചിരിക്കുന്നു. ഒരു പെട്ടി ഒരു യൂണിറ്റും അതിലെ ഓരോ സമചതുരങ്ങളും "
-"പത്തിലൊന്ന് യൂണിറ്റും പ്രതിനിധാനം ചെയ്യുന്നു."
-
-#: activities/learn_decimals/learn_decimals.js:48
-msgctxt "learn_decimals|"
-msgid ""
-"Click on the squares to subtract them and display the result of the "
-"operation, and click on the OK button to validate your answer."
-msgstr ""
-"കുറയ്ക്കാനായി ചതുരങ്ങളിൽ ക്ലിക്ക് ചെയ്ത് തന്നിരിക്കുന്ന ക്രിയയുടെ ഉത്തരം കാണിക്കൂ. എന്നിട്ട് ഒകെ "
-"ബട്ടണിൽ ക്ലിക്കു ചെയ്ത് നിങ്ങളുടെ ഉത്തരം പരിശോധിക്കാം."
-
-#: activities/learn_decimals/learn_decimals.js:52
-#: activities/learn_decimals/learn_decimals.js:67
-msgctxt "learn_decimals|"
-msgid ""
-"If the answer is correct, type the corresponding result, and click on the OK "
-"button to validate your answer."
-msgstr ""
-"ഉത്തരം ശരിയാണെങ്കിൽ അതു ടൈപ്പ് ചെയ്യുക, എന്നിട്ട് ഒകെ ബട്ടണിൽ ക്ലിക്കു ചെയ്ത് നിങ്ങളുടെ ഉത്തരം "
-"പരിശോധിക്കൂ."
-
-#: activities/learn_decimals/learn_decimals.js:59
-msgctxt "learn_decimals|"
-msgid ""
-"An addition with two decimal numbers is displayed. The bar with the arrow "
-"represents a full unit, and each square in it represents one tenth of this "
-"unit."
-msgstr ""
-"രണ്ടു ദശാംശസംഖ്യകളുടെ കൂട്ടൽ കാണിച്ചിരിക്കുന്നു. അമ്പടയാളത്തോടുകൂടിയ പെട്ടി ഒരു യൂണിറ്റും അതിലെ "
-"ഓരോ സമചതുരങ്ങളും പത്തിലൊന്ന് യൂണിറ്റും പ്രതിനിധാനം ചെയ്യുന്നു."
-
-#: activities/learn_decimals/learn_decimals.js:63
-msgctxt "learn_decimals|"
-msgid ""
-"Drag the arrow to select a part of the bar, and drag the selected part of "
-"the bar to the empty area. Repeat these steps until the number of dropped "
-"bars corresponds to the result of the addition, and click on the OK button "
-"to validate your answer."
-msgstr ""
-"അമ്പടയാളം ഡ്രാഗു ചെയ്ത് പെട്ടിയുടെ ഒരു ഭാഗം തിരഞ്ഞെടുക്കാവുന്നതാണ്. ശേഷം തിരഞ്ഞെടുത്ത ഭാഗം "
-"ഒഴിഞ്ഞിടത്തേക്ക് ഡ്രാഗു ചെയ്യുക. വലിച്ചുവെച്ചിരിക്കുന്ന ഭാഗം കാണിച്ചിരിക്കുന്ന കൂട്ടലിന്റെ "
-"ഉത്തരത്തിനു തുല്യമാകുന്നതുവരെ ഈ ഘട്ടങ്ങൾ ആവർത്തിക്കുക. എന്നിട്ട് ഒകെ ബട്ടണിൽ ക്ലിക്കു ചെയ്ത് "
-"നിങ്ങളുടെ ഉത്തരം സ്ഥിരീകരിക്കുക."
-
-#: activities/learn_decimals/learn_decimals.js:74
-msgctxt "learn_decimals|"
-msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
-msgstr ""
-"ഒരു നിശ്ചത എണ്ണം ചോദിച്ചിരിക്കുന്നു. അമ്പടയാളം ഉപയോഗിച്ച് 10 ഓറഞ്ചുകൾ വരെ "
-"തിരഞ്ഞെടുക്കാവുന്നതാണ്."
-
-#: activities/learn_decimals/learn_decimals.js:78
-msgctxt "learn_decimals|"
-msgid ""
-"Drag the arrow to select a number of oranges, and drag the selected oranges "
-"to the empty area. Repeat these steps until the number of oranges "
-"corresponds to the requested quantity. Then click on the OK button to "
-"validate your answer."
-msgstr ""
-"അമ്പടയാളം ഡ്രാഗു ചെയ്ത് നിശ്ചിത എണ്ണം ഓറഞ്ചുകൾ തിരഞ്ഞെടുക്കുക. ശേഷം തിരഞ്ഞെടുത്ത ഓറഞ്ചുകൾ "
-"ഒഴിഞ്ഞിടത്തേക്ക് ഡ്രാഗു ചെയ്യുക. ഓറഞ്ചിന്റെ എണ്ണം കാണിച്ചിരിക്കുന്ന എണ്ണത്തിനു തുല്യമാകുന്നതുവരെ ഈ "
-"ഘട്ടങ്ങൾ ആവർത്തിക്കുക. എന്നിട്ട് ഒകെ ബട്ടണിൽ ക്ലിക്കു ചെയ്ത് നിങ്ങളുടെ ഉത്തരം സ്ഥിരീകരിക്കൂ."
-
-#: activities/learn_decimals/Learn_decimals.qml:142
+#: activities/learn_decimals/Learn_decimals.qml:150
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "ഈ സംഖ്യ കാണിക്കൂ: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:143
+#: activities/learn_decimals/Learn_decimals.qml:151
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "ഈ ക്രിയയുടെ ഉത്തരം കാണിക്കൂ: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:144
+#: activities/learn_decimals/Learn_decimals.qml:152
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "ഈ ക്രിയയുടെ ഉത്തരം കാണിക്കൂ: %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:145
+#: activities/learn_decimals/Learn_decimals.qml:153
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "ഈ എണ്ണം കാണിക്കൂ: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:602
+#: activities/learn_decimals/Learn_decimals.qml:610
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -16574,6 +16589,56 @@ msgctxt "ActivityInfo|"
 msgid "Numbers: type the result"
 msgstr "സംഖ്യകൾ: ഉത്തരം ടൈപ്പു ചെയ്യാൻ"
 
+#: activities/learn_decimals_additions/Learn_decimals_additions.qml:16
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "An addition with two decimal numbers is displayed. The bar with the arrow "
+#| "represents a full unit, and each square in it represents one tenth of "
+#| "this unit."
+msgctxt "Learn_decimals_additions|"
+msgid ""
+"An addition with two decimal numbers is displayed. The bar with the arrow "
+"represents a full unit, and each square in it represents one tenth of this "
+"unit."
+msgstr ""
+"രണ്ടു ദശാംശസംഖ്യകളുടെ കൂട്ടൽ കാണിച്ചിരിക്കുന്നു. അമ്പടയാളത്തോടുകൂടിയ പെട്ടി ഒരു യൂണിറ്റും അതിലെ "
+"ഓരോ സമചതുരങ്ങളും പത്തിലൊന്ന് യൂണിറ്റും പ്രതിനിധാനം ചെയ്യുന്നു."
+
+#: activities/learn_decimals_additions/Learn_decimals_additions.qml:20
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Drag the arrow to select a part of the bar, and drag the selected part of "
+#| "the bar to the empty area. Repeat these steps until the number of dropped "
+#| "bars corresponds to the result of the addition, and click on the OK "
+#| "button to validate your answer."
+msgctxt "Learn_decimals_additions|"
+msgid ""
+"Drag the arrow to select a part of the bar, and drag the selected part of "
+"the bar to the empty area. Repeat these steps until the number of dropped "
+"bars corresponds to the result of the addition, and click on the OK button "
+"to validate your answer."
+msgstr ""
+"അമ്പടയാളം ഡ്രാഗു ചെയ്ത് പെട്ടിയുടെ ഒരു ഭാഗം തിരഞ്ഞെടുക്കാവുന്നതാണ്. ശേഷം തിരഞ്ഞെടുത്ത ഭാഗം "
+"ഒഴിഞ്ഞിടത്തേക്ക് ഡ്രാഗു ചെയ്യുക. വലിച്ചുവെച്ചിരിക്കുന്ന ഭാഗം കാണിച്ചിരിക്കുന്ന കൂട്ടലിന്റെ "
+"ഉത്തരത്തിനു തുല്യമാകുന്നതുവരെ ഈ ഘട്ടങ്ങൾ ആവർത്തിക്കുക. എന്നിട്ട് ഒകെ ബട്ടണിൽ ക്ലിക്കു ചെയ്ത് "
+"നിങ്ങളുടെ ഉത്തരം സ്ഥിരീകരിക്കുക."
+
+#: activities/learn_decimals_additions/Learn_decimals_additions.qml:24
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "If the answer is correct, type the corresponding result, and click on the "
+#| "OK button to validate your answer."
+msgctxt "Learn_decimals_additions|"
+msgid ""
+"If the answer is correct, type the corresponding result, and click on the OK "
+"button to validate your answer."
+msgstr ""
+"ഉത്തരം ശരിയാണെങ്കിൽ അതു ടൈപ്പ് ചെയ്യുക, എന്നിട്ട് ഒകെ ബട്ടണിൽ ക്ലിക്കു ചെയ്ത് നിങ്ങളുടെ ഉത്തരം "
+"പരിശോധിക്കൂ."
+
 #: activities/learn_decimals_additions/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Add decimal numbers up to 1."
@@ -16623,6 +16688,51 @@ msgstr ""
 "ഉപയോഗിച്ച് കാണിച്ചിരിക്കുന്നു. ഒരു പെട്ടി ഒരു യൂണിറ്റും അതിലെ ഓരോ സമചതുരങ്ങളും പത്തിലൊന്ന് "
 "യൂണിറ്റും പ്രതിനിധാനം ചെയ്യുന്നു. സമചതുരങ്ങളിൽ ക്ലിക്കു ചെയ്ത് രണ്ടാമത്തെ സംഖ്യ കുറച്ച് ക്രിയയുടെ "
 "ഉത്തരം കാണിക്കുക."
+
+#: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:16
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "A subtraction with two decimal numbers is displayed. Below it, the first "
+#| "number from the subtraction is represented with bars. One bar represents "
+#| "a full unit, and each square in it represents one tenth of this unit."
+msgctxt "Learn_decimals_subtractions|"
+msgid ""
+"A subtraction with two decimal numbers is displayed. Below it, the first "
+"number from the subtraction is represented with bars. One bar represents a "
+"full unit, and each square in it represents one tenth of this unit."
+msgstr ""
+"രണ്ടു ദശാംശസംഖ്യകളുടെ കുറയ്ക്കൽ കാണിച്ചിരിക്കുന്നു. അതിനു താഴെയായി, കുറയ്ക്കലിലെ ആദ്യത്തെ സംഖ്യ "
+"ഒരു പെട്ടി ഉപയോഗിച്ച് കാണിച്ചിരിക്കുന്നു. ഒരു പെട്ടി ഒരു യൂണിറ്റും അതിലെ ഓരോ സമചതുരങ്ങളും "
+"പത്തിലൊന്ന് യൂണിറ്റും പ്രതിനിധാനം ചെയ്യുന്നു."
+
+#: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:20
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Click on the squares to subtract them and display the result of the "
+#| "operation, and click on the OK button to validate your answer."
+msgctxt "Learn_decimals_subtractions|"
+msgid ""
+"Click on the squares to subtract them and display the result of the "
+"operation, and click on the OK button to validate your answer."
+msgstr ""
+"കുറയ്ക്കാനായി ചതുരങ്ങളിൽ ക്ലിക്ക് ചെയ്ത് തന്നിരിക്കുന്ന ക്രിയയുടെ ഉത്തരം കാണിക്കൂ. എന്നിട്ട് ഒകെ "
+"ബട്ടണിൽ ക്ലിക്കു ചെയ്ത് നിങ്ങളുടെ ഉത്തരം പരിശോധിക്കാം."
+
+#: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:24
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "If the answer is correct, type the corresponding result, and click on the "
+#| "OK button to validate your answer."
+msgctxt "Learn_decimals_subtractions|"
+msgid ""
+"If the answer is correct, type the corresponding result, and click on the OK "
+"button to validate your answer."
+msgstr ""
+"ഉത്തരം ശരിയാണെങ്കിൽ അതു ടൈപ്പ് ചെയ്യുക, എന്നിട്ട് ഒകെ ബട്ടണിൽ ക്ലിക്കു ചെയ്ത് നിങ്ങളുടെ ഉത്തരം "
+"പരിശോധിക്കൂ."
 
 #: activities/learn_decimals_subtractions/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -16780,6 +16890,36 @@ msgstr ""
 "തിരഞ്ഞെടുക്കുക. ശേഷം തിരഞ്ഞെടുത്ത ഓറഞ്ചുകൾ ഒഴിഞ്ഞിടത്തേക്ക് ഡ്രാഗു ചെയ്യുക. ഓറഞ്ചിന്റെ എണ്ണം "
 "കാണിച്ചിരിക്കുന്ന എണ്ണത്തിനു തുല്യമാകുന്നതുവരെ ഈ ഘട്ടങ്ങൾ ആവർത്തിക്കുക. എന്നിട്ട് ഒകെ ബട്ടണിൽ "
 "ക്ലിക്കു ചെയ്ത് നിങ്ങളുടെ ഉത്തരം സ്ഥിരീകരിക്കുക."
+
+#: activities/learn_quantities/Learn_quantities.qml:16
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "A quantity is requested. The arrow allows to select up to 10 oranges."
+msgctxt "Learn_quantities|"
+msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
+msgstr ""
+"ഒരു നിശ്ചത എണ്ണം ചോദിച്ചിരിക്കുന്നു. അമ്പടയാളം ഉപയോഗിച്ച് 10 ഓറഞ്ചുകൾ വരെ "
+"തിരഞ്ഞെടുക്കാവുന്നതാണ്."
+
+#: activities/learn_quantities/Learn_quantities.qml:20
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Drag the arrow to select a number of oranges, and drag the selected "
+#| "oranges to the empty area. Repeat these steps until the number of oranges "
+#| "corresponds to the requested quantity. Then click on the OK button to "
+#| "validate your answer."
+msgctxt "Learn_quantities|"
+msgid ""
+"Drag the arrow to select a number of oranges, and drag the selected oranges "
+"to the empty area. Repeat these steps until the number of oranges "
+"corresponds to the requested quantity. Then click on the OK button to "
+"validate your answer."
+msgstr ""
+"അമ്പടയാളം ഡ്രാഗു ചെയ്ത് നിശ്ചിത എണ്ണം ഓറഞ്ചുകൾ തിരഞ്ഞെടുക്കുക. ശേഷം തിരഞ്ഞെടുത്ത ഓറഞ്ചുകൾ "
+"ഒഴിഞ്ഞിടത്തേക്ക് ഡ്രാഗു ചെയ്യുക. ഓറഞ്ചിന്റെ എണ്ണം കാണിച്ചിരിക്കുന്ന എണ്ണത്തിനു തുല്യമാകുന്നതുവരെ ഈ "
+"ഘട്ടങ്ങൾ ആവർത്തിക്കുക. എന്നിട്ട് ഒകെ ബട്ടണിൽ ക്ലിക്കു ചെയ്ത് നിങ്ങളുടെ ഉത്തരം സ്ഥിരീകരിക്കൂ."
 
 #: activities/learn_quantities/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -19869,8 +20009,50 @@ msgstr ""
 "പറപ്പിക്കാവുന്നതാണ്. എതിരാളിയ്ക്ക് ഒരു കരുവും അനക്കാൻ കഴിയാതാവുകയോ 2 കരുക്കൾ മാത്രം "
 "ബാക്കിവരുകയോ ചെയ്താൽ നിങ്ങൾ ജയിക്കും."
 
-#: activities/nine_men_morris/nine_men_morris.js:29
+#: activities/nine_men_morris/nine_men_morris.js:240
+#: activities/nine_men_morris/nine_men_morris.js:1086
 msgctxt "nine_men_morris|"
+msgid "Place a piece"
+msgstr "ഒരു കഷണം വെക്കുക"
+
+#: activities/nine_men_morris/nine_men_morris.js:366
+#: activities/nine_men_morris/nine_men_morris.js:1144
+msgctxt "nine_men_morris|"
+msgid "Move a piece"
+msgstr "ഒരു കഷണം നീക്കുക"
+
+#: activities/nine_men_morris/nine_men_morris.js:918
+msgctxt "nine_men_morris|"
+msgid "Remove a piece"
+msgstr "ഒരു കഷണം കളയുക"
+
+#: activities/nine_men_morris/nine_men_morris.js:1121
+msgctxt "nine_men_morris|"
+msgid "Congratulations"
+msgstr "ആശംസകൾ"
+
+#: activities/nine_men_morris/nine_men_morris.js:1124
+msgctxt "nine_men_morris|"
+msgid "Congratulations Player 1"
+msgstr "കളിക്കാരൻ/കളിക്കാരി 1-ന് ആശംസകൾ"
+
+#: activities/nine_men_morris/nine_men_morris.js:1135
+msgctxt "nine_men_morris|"
+msgid "Congratulations Player 2"
+msgstr "കളിക്കാരൻ/കളിക്കാരി 2-ന് ആശംസകൾ"
+
+#: activities/nine_men_morris/nine_men_morris.js:1138
+msgctxt "nine_men_morris|"
+msgid "Try again"
+msgstr "ഒന്നുകൂടി ശ്രമിക്കൂ"
+
+#: activities/nine_men_morris/NineMenMorris.qml:348
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "You and Tux start with 9 pieces each, and take turns to place your pieces "
+#| "on the empty spots of the board (by clicking on the spots)."
+msgctxt "NineMenMorris|"
 msgid ""
 "You and Tux start with 9 pieces each, and take turns to place your pieces on "
 "the empty spots of the board (by clicking on the spots)."
@@ -19878,8 +20060,14 @@ msgstr ""
 "നിങ്ങളും ടക്സും 9 കരുക്കൾ വീതം വെച്ച് തുടങ്ങും, ഊഴമനുസരിച്ച് കരുക്കൾ ബോർഡിലെ ഒഴിഞ്ഞിടത്ത് "
 "വെക്കണം (ഇടങ്ങളിൽ ക്ലിക്ക് ചെയ്തുകൊണ്ട്)."
 
-#: activities/nine_men_morris/nine_men_morris.js:33
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:352
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
+#| "remove it. Pieces of formed mill can not be removed unless no other "
+#| "pieces are left on the board."
+msgctxt "NineMenMorris|"
 msgid ""
 "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
 "remove it. Pieces of formed mill can not be removed unless no other pieces "
@@ -19889,8 +20077,14 @@ msgstr ""
 "എടുത്തുകളയാം. മറ്റു കഷണങ്ങളൊന്നും ബോർഡിൽ ബാക്കി ഇല്ലെങ്കിൽ മാത്രമേ രൂപീകരിച്ച ഒരു മില്ലിൽ "
 "നിന്നും കഷണങ്ങൾ എടുത്തുമാറ്റാവൂ."
 
-#: activities/nine_men_morris/nine_men_morris.js:37
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:356
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "After all the pieces are placed, you and Tux will take turns to move "
+#| "them. Click on one of your pieces, and then on an adjacent empty spot to "
+#| "move it there. Green color spots indicates where you can move."
+msgctxt "NineMenMorris|"
 msgid ""
 "After all the pieces are placed, you and Tux will take turns to move them. "
 "Click on one of your pieces, and then on an adjacent empty spot to move it "
@@ -19900,8 +20094,13 @@ msgstr ""
 "ഒന്നിൽ ക്ലിക്ക് ചെയ്ത് തൊട്ടടുത്തുള്ള ഒഴിഞ്ഞിടത്ത് ക്ലിക്ക് ചെയ്താൽ അതങ്ങോട്ട് നീക്കാം. നിങ്ങൾക്ക് "
 "നീക്കാൻ കഴിയുന്നിടം പച്ചനിറത്തിൽ സൂചിപ്പിക്കുന്നു."
 
-#: activities/nine_men_morris/nine_men_morris.js:41
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:360
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
+#| "moved to any vacant spot on the board."
+msgctxt "NineMenMorris|"
 msgid ""
 "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
 "moved to any vacant spot on the board."
@@ -19909,51 +20108,19 @@ msgstr ""
 "നിങ്ങളുടെ 3 കഷണങ്ങൾ ബാക്കി വന്നാൽ, നിങ്ങളുടെ കഷണങ്ങൾക്ക് 'പറക്കാനുള്ള' കഴിവു കിട്ടുകയും "
 "ബോർഡിലെ ഏത് ഒഴിഞ്ഞിടത്തേക്കും അതിനു നീങ്ങാൻ സാധിക്കുകയും ചെയ്യും."
 
-#: activities/nine_men_morris/nine_men_morris.js:45
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:364
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "If you immobilize the computer or leave it with less than 3 pieces, then "
+#| "you win the game."
+msgctxt "NineMenMorris|"
 msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
 "win the game."
 msgstr ""
 "ടക്സിനെ നിശ്ചലമാക്കുകയോ അതിന് 3 കഷണങ്ങളിൽ കുറവു മാത്രം ബാക്കി വരുന്ന രീതിയിൽ ആക്കുകയോ "
 "ചെയ്താൽ നിങ്ങൾ വിജയിക്കും."
-
-#: activities/nine_men_morris/nine_men_morris.js:262
-#: activities/nine_men_morris/nine_men_morris.js:1108
-msgctxt "nine_men_morris|"
-msgid "Place a piece"
-msgstr "ഒരു കഷണം വെക്കുക"
-
-#: activities/nine_men_morris/nine_men_morris.js:388
-#: activities/nine_men_morris/nine_men_morris.js:1166
-msgctxt "nine_men_morris|"
-msgid "Move a piece"
-msgstr "ഒരു കഷണം നീക്കുക"
-
-#: activities/nine_men_morris/nine_men_morris.js:940
-msgctxt "nine_men_morris|"
-msgid "Remove a piece"
-msgstr "ഒരു കഷണം കളയുക"
-
-#: activities/nine_men_morris/nine_men_morris.js:1143
-msgctxt "nine_men_morris|"
-msgid "Congratulations"
-msgstr "ആശംസകൾ"
-
-#: activities/nine_men_morris/nine_men_morris.js:1146
-msgctxt "nine_men_morris|"
-msgid "Congratulations Player 1"
-msgstr "കളിക്കാരൻ/കളിക്കാരി 1-ന് ആശംസകൾ"
-
-#: activities/nine_men_morris/nine_men_morris.js:1157
-msgctxt "nine_men_morris|"
-msgid "Congratulations Player 2"
-msgstr "കളിക്കാരൻ/കളിക്കാരി 2-ന് ആശംസകൾ"
-
-#: activities/nine_men_morris/nine_men_morris.js:1160
-msgctxt "nine_men_morris|"
-msgid "Try again"
-msgstr "ഒന്നുകൂടി ശ്രമിക്കൂ"
 
 #. Activity title
 #: activities/nine_men_morris_2players/ActivityInfo.qml:15
@@ -20020,13 +20187,13 @@ msgid "New note: %1"
 msgstr "പുതിയ സ്വരം: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:270
+#: activities/note_names/NoteNames.qml:271
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:448
+#: activities/note_names/NoteNames.qml:449
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20035,12 +20202,12 @@ msgstr ""
 "ഈ പ്രവർത്തനത്തിന് ശബ്ദം ആവശ്യമുണ്ട്, അതുകൊണ്ട് പ്രധാന കോൺഫിഗറേഷനിൽ ഓഡിയൊ ശബ്ദങ്ങളോ എഫക്ടുകളോ "
 "അസാധുവാക്കിയെന്നിരുന്നാലും ഇവിടെ ചില ശബ്ദങ്ങൾ പ്ലേ ചെയ്യും."
 
-#: activities/note_names/NoteNames.qml:449
+#: activities/note_names/NoteNames.qml:450
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "നിർത്തുക"
 
-#: activities/note_names/NoteNames.qml:450
+#: activities/note_names/NoteNames.qml:451
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "തുടരുക"
@@ -20127,23 +20294,23 @@ msgstr ""
 "ടാപ്പോ ചെയ്യാം. ആദ്യഘട്ടങ്ങളിൽ ഏതു സംഖ്യയാണ് പിടിക്കേണ്ടതെന്ന് അറിയുവാൻ താഴെ വലതു മൂലയിലുള്ള "
 "കൗണ്ടർ നോക്കാം. പിന്നീടുള്ള ഘട്ടങ്ങളിൽ ഓർത്തുവെച്ചുവേണം ചെയ്യാൻ."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:14
+#: activities/numbers-odd-even/NumbersOddEven.qml:15
 msgctxt "NumbersOddEven|"
 msgid "Catch the even numbers."
 msgstr "ഇരട്ടസംഖ്യകൾ പിടിക്കൂ."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:15
+#: activities/numbers-odd-even/NumbersOddEven.qml:16
 msgctxt "NumbersOddEven|"
 msgid "Catch the odd numbers."
 msgstr "ഒറ്റസംഖ്യകൾ പിടിക്കൂ."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:42
+#: activities/numbers-odd-even/NumbersOddEven.qml:43
 msgctxt "NumbersOddEven|"
 msgid "This activity teaches about even and odd numbers."
 msgstr "ഈ പ്രവർത്തനം ഒറ്റ സംഖ്യകളെയും ഇരട്ട സംഖ്യകളെയും കുറിച്ചു പഠിപ്പിക്കുന്നു."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:46
-#: activities/numbers-odd-even/NumbersOddEven.qml:56
+#: activities/numbers-odd-even/NumbersOddEven.qml:47
+#: activities/numbers-odd-even/NumbersOddEven.qml:55
 msgctxt "NumbersOddEven|"
 msgid ""
 "Even numbers are numbers which leave a remainder of 0 when divided by 2."
@@ -20154,16 +20321,16 @@ msgctxt "NumbersOddEven|"
 msgid "What is meant by remainder?"
 msgstr "ശിഷ്ടം എന്നാലെന്താണ്?"
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:60
+#: activities/numbers-odd-even/NumbersOddEven.qml:59
 msgctxt "NumbersOddEven|"
 msgid ""
 "Odd numbers are numbers which do not leave a remainder of 0 when divided by "
 "2."
 msgstr "2 കൊണ്ടു ഹരിക്കുമ്പോൾ 0 ശിഷ്ടമായി വരാത്ത സംഖ്യകളാണ് ഒറ്റ സംഖ്യകൾ."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:64
-#: activities/numbers-odd-even/NumbersOddEven.qml:68
-#: activities/numbers-odd-even/NumbersOddEven.qml:72
+#: activities/numbers-odd-even/NumbersOddEven.qml:63
+#: activities/numbers-odd-even/NumbersOddEven.qml:67
+#: activities/numbers-odd-even/NumbersOddEven.qml:71
 msgctxt "NumbersOddEven|"
 msgid "Exercise to test your understanding."
 msgstr "നിങ്ങൾക്കു കാര്യം പിടികിട്ടിയോ എന്നു പരിശോധിക്കൂ."
@@ -22191,111 +22358,6 @@ msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "നിർദ്ദേശങ്ങൾ തിരഞ്ഞെടുക്കുക"
 
-#: activities/programmingMaze/programmingMaze.js:96
-msgctxt "programmingMaze|"
-msgid "Instruction Area:"
-msgstr "നിർദ്ദേശ വിഭാഗം:"
-
-#: activities/programmingMaze/programmingMaze.js:97
-msgctxt "programmingMaze|"
-msgid ""
-"There are 3 instructions which you can use to code and lead Tux to the fish:"
-msgstr "ടക്സിനെ മീനിലേക്കെത്തിക്കാനായുള്ള കോഡുണ്ടാക്കാൻ ഉപയോഗിക്കാവുന്ന 3 നിർദ്ദേശങ്ങൾ ഉണ്ട്:"
-
-#: activities/programmingMaze/programmingMaze.js:98
-msgctxt "programmingMaze|"
-msgid ""
-"<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
-"facing."
-msgstr "<b>1. മുമ്പോട്ട് പോവുക:</b> ടക്സ് നോക്കുന്ന ദിശയിലേക്ക് ഒരു ചുവട് മുമ്പോട്ട് പോകുന്നു."
-
-#: activities/programmingMaze/programmingMaze.js:99
-msgctxt "programmingMaze|"
-msgid "<b>2. Turn left:</b> Turns Tux to the left."
-msgstr "<b>2. ഇടത്തേക്ക് തിരിയുക:</b> ടക്സ് ഇടത്തേക്ക് തിരിയുന്നു."
-
-#: activities/programmingMaze/programmingMaze.js:100
-msgctxt "programmingMaze|"
-msgid "<b>3. Turn right:</b> Turns Tux to the right."
-msgstr "<b>3. വലത്തേക്ക് തിരിയുക:</b> ടക്സ് വലത്തേക്ക് തിരിയുന്നു."
-
-#: activities/programmingMaze/programmingMaze.js:104
-msgctxt "programmingMaze|"
-msgid "Main Function:"
-msgstr "പ്രധാന ഫങ്ഷൻ:"
-
-#: activities/programmingMaze/programmingMaze.js:105
-msgctxt "programmingMaze|"
-msgid "The execution of the code starts here."
-msgstr "കോഡിന്റെ നടത്തിപ്പ് ഇവിടം തൊട്ടു തുടങ്ങുന്നു."
-
-#: activities/programmingMaze/programmingMaze.js:106
-msgctxt "programmingMaze|"
-msgid ""
-"-Click on any instruction in the <b>instruction area</b> to add it to the "
-"<b>Main Function</b>."
-msgstr ""
-"-<b>നിർദ്ദേശ വിഭാഗത്തിലെ</b> ഏതെങ്കിലും ഒരു നിർദ്ദേശത്തിൽ ക്ലിക്ക് ചെയ്താൽ അതിനെ "
-"<b>പ്രധാന ഫങ്ഷനിലേക്ക്</b> ചേർക്കാം."
-
-#: activities/programmingMaze/programmingMaze.js:107
-msgctxt "programmingMaze|"
-msgid ""
-"-The instructions will execute in order until there's none left, or until a "
-"dead-end, or when Tux reaches the fish."
-msgstr ""
-"-ഒരെണ്ണം പോലും ബാക്കിവരാത്തതുവരെയോ വഴി തീരുന്നിടത്തെത്തുന്നതുവരെയോ ടക്സ് "
-"മീനിലേക്കെത്തുന്നതുവരെയോ നിർദ്ദേശങ്ങൾ ക്രമത്തിൽ നടപ്പാകും."
-
-#: activities/programmingMaze/programmingMaze.js:114
-msgctxt "programmingMaze|"
-msgid "Procedure:"
-msgstr "പ്രൊസീജർ:"
-
-#: activities/programmingMaze/programmingMaze.js:115
-msgctxt "programmingMaze|"
-msgid ""
-"<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
-"the code by calling it where needed</b>."
-msgstr ""
-"<b>പ്രൊസീജർ</b> എന്നാൽ <b>ആവശ്യമുള്ളിടത്തുനിന്നും വിളിച്ച് കോഡിൽ ഉപയോഗിക്കാൻ കഴിയുന്ന</b> "
-"പുനരുപയോഗിക്കാവുന്ന ഒരു കൂട്ടം നിർദ്ദേശങ്ങളാണ്."
-
-#: activities/programmingMaze/programmingMaze.js:116
-msgctxt "programmingMaze|"
-msgid ""
-"-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
-"area</b> to add your code, click on the <b>Procedure</b> or <b>Main "
-"Function</b> label."
-msgstr ""
-"-നിങ്ങളുടെ കോഡ് ചേർക്കാനായി <b>പ്രൊസീജർ വിഭാഗവും</b> <b>പ്രധാന ഫങ്ഷൻ വിഭാഗവും</b> "
-"<b>തമ്മിൽ മാറ്റാൻ</b>, <b>പ്രൊസീജർ</b> എന്ന ലേബലിലൊ <b>പ്രധാന ഫങ്ഷൻ</b> എന്നതിലൊ "
-"ക്ലിക്ക് ചെയ്യുക."
-
-#: activities/programmingMaze/programmingMaze.js:123
-msgctxt "programmingMaze|"
-msgid "Loop:"
-msgstr "ലൂപ്:"
-
-#: activities/programmingMaze/programmingMaze.js:124
-msgctxt "programmingMaze|"
-msgid ""
-"<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
-"the number of times defined by the number inside it</b>."
-msgstr ""
-"<b>ലൂപ്</b> എന്നാൽ <b>അതിനകത്തു നിർവ്വചിച്ചിരിക്കുന്നത്രയും തവണ തുടർച്ചയായി ആവർത്തിക്കുന്ന</b> "
-"നിർദ്ദേശങ്ങളുടെ ഒരു ശ്രേണിയാണ്."
-
-#: activities/programmingMaze/programmingMaze.js:125
-msgctxt "programmingMaze|"
-msgid ""
-"-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
-"area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
-"label."
-msgstr ""
-"-നിങ്ങളുടെ കോഡ് ചേർക്കാനായി <b>ലൂപ് വിഭാഗവും</b> <b>പ്രധാന ഫങ്ഷൻ വിഭാഗവും</b> <b>തമ്മിൽ "
-"മാറ്റാൻ</b>, <b>ലൂപ്</b> എന്ന ലേബലിലോ <b>പ്രധാന ഫങ്ഷൻ</b> എന്നതിലോ ക്ലിക്ക് ചെയ്യുക."
-
 #: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
@@ -22316,6 +22378,174 @@ msgstr "പ്രൊസീജർ"
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "ലൂപ്"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:542
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Instruction Area:"
+msgctxt "ProgrammingMaze|"
+msgid "Instruction Area:"
+msgstr "നിർദ്ദേശ വിഭാഗം:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:543
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "There are 3 instructions which you can use to code and lead Tux to the "
+#| "fish:"
+msgctxt "ProgrammingMaze|"
+msgid ""
+"There are 3 instructions which you can use to code and lead Tux to the fish:"
+msgstr "ടക്സിനെ മീനിലേക്കെത്തിക്കാനായുള്ള കോഡുണ്ടാക്കാൻ ഉപയോഗിക്കാവുന്ന 3 നിർദ്ദേശങ്ങൾ ഉണ്ട്:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:544
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
+#| "facing."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
+"facing."
+msgstr "<b>1. മുമ്പോട്ട് പോവുക:</b> ടക്സ് നോക്കുന്ന ദിശയിലേക്ക് ഒരു ചുവട് മുമ്പോട്ട് പോകുന്നു."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:545
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "<b>2. Turn left:</b> Turns Tux to the left."
+msgctxt "ProgrammingMaze|"
+msgid "<b>2. Turn left:</b> Turns Tux to the left."
+msgstr "<b>2. ഇടത്തേക്ക് തിരിയുക:</b> ടക്സ് ഇടത്തേക്ക് തിരിയുന്നു."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:546
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "<b>3. Turn right:</b> Turns Tux to the right."
+msgctxt "ProgrammingMaze|"
+msgid "<b>3. Turn right:</b> Turns Tux to the right."
+msgstr "<b>3. വലത്തേക്ക് തിരിയുക:</b> ടക്സ് വലത്തേക്ക് തിരിയുന്നു."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:550
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Main Function:"
+msgctxt "ProgrammingMaze|"
+msgid "Main Function:"
+msgstr "പ്രധാന ഫങ്ഷൻ:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:551
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "The execution of the code starts here."
+msgctxt "ProgrammingMaze|"
+msgid "The execution of the code starts here."
+msgstr "കോഡിന്റെ നടത്തിപ്പ് ഇവിടം തൊട്ടു തുടങ്ങുന്നു."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:552
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-Click on any instruction in the <b>instruction area</b> to add it to the "
+#| "<b>Main Function</b>."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-Click on any instruction in the <b>instruction area</b> to add it to the "
+"<b>Main Function</b>."
+msgstr ""
+"-<b>നിർദ്ദേശ വിഭാഗത്തിലെ</b> ഏതെങ്കിലും ഒരു നിർദ്ദേശത്തിൽ ക്ലിക്ക് ചെയ്താൽ അതിനെ "
+"<b>പ്രധാന ഫങ്ഷനിലേക്ക്</b> ചേർക്കാം."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:553
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-The instructions will execute in order until there's none left, or until "
+#| "a dead-end, or when Tux reaches the fish."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-The instructions will execute in order until there's none left, or until a "
+"dead-end, or when Tux reaches the fish."
+msgstr ""
+"-ഒരെണ്ണം പോലും ബാക്കിവരാത്തതുവരെയോ വഴി തീരുന്നിടത്തെത്തുന്നതുവരെയോ ടക്സ് "
+"മീനിലേക്കെത്തുന്നതുവരെയോ നിർദ്ദേശങ്ങൾ ക്രമത്തിൽ നടപ്പാകും."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:563
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Procedure:"
+msgctxt "ProgrammingMaze|"
+msgid "Procedure:"
+msgstr "പ്രൊസീജർ:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:564
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "<b>Procedure</b> is a reusable set of instructions which can be <b>used "
+#| "in the code by calling it where needed</b>."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
+"the code by calling it where needed</b>."
+msgstr ""
+"<b>പ്രൊസീജർ</b> എന്നാൽ <b>ആവശ്യമുള്ളിടത്തുനിന്നും വിളിച്ച് കോഡിൽ ഉപയോഗിക്കാൻ കഴിയുന്ന</b> "
+"പുനരുപയോഗിക്കാവുന്ന ഒരു കൂട്ടം നിർദ്ദേശങ്ങളാണ്."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:565
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main "
+#| "Function area</b> to add your code, click on the <b>Procedure</b> or "
+#| "<b>Main Function</b> label."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
+"area</b> to add your code, click on the <b>Procedure</b> or <b>Main "
+"Function</b> label."
+msgstr ""
+"-നിങ്ങളുടെ കോഡ് ചേർക്കാനായി <b>പ്രൊസീജർ വിഭാഗവും</b> <b>പ്രധാന ഫങ്ഷൻ വിഭാഗവും</b> "
+"<b>തമ്മിൽ മാറ്റാൻ</b>, <b>പ്രൊസീജർ</b> എന്ന ലേബലിലൊ <b>പ്രധാന ഫങ്ഷൻ</b> എന്നതിലൊ "
+"ക്ലിക്ക് ചെയ്യുക."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:575
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Loop:"
+msgctxt "ProgrammingMaze|"
+msgid "Loop:"
+msgstr "ലൂപ്:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:576
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
+#| "the number of times defined by the number inside it</b>."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
+"the number of times defined by the number inside it</b>."
+msgstr ""
+"<b>ലൂപ്</b> എന്നാൽ <b>അതിനകത്തു നിർവ്വചിച്ചിരിക്കുന്നത്രയും തവണ തുടർച്ചയായി ആവർത്തിക്കുന്ന</b> "
+"നിർദ്ദേശങ്ങളുടെ ഒരു ശ്രേണിയാണ്."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:577
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
+#| "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</"
+#| "b> label."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
+"area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
+"label."
+msgstr ""
+"-നിങ്ങളുടെ കോഡ് ചേർക്കാനായി <b>ലൂപ് വിഭാഗവും</b> <b>പ്രധാന ഫങ്ഷൻ വിഭാഗവും</b> <b>തമ്മിൽ "
+"മാറ്റാൻ</b>, <b>ലൂപ്</b> എന്ന ലേബലിലോ <b>പ്രധാന ഫങ്ഷൻ</b> എന്നതിലോ ക്ലിക്ക് ചെയ്യുക."
 
 #: activities/programmingMaze/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -22390,7 +22620,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "എന്ററോ റിട്ടേണോ: നിങ്ങളുടെ ഉത്തരം കൊടുക്കാൻ"
 
-#: activities/railroad/Railroad.qml:125
+#: activities/railroad/Railroad.qml:126
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -22399,7 +22629,7 @@ msgstr ""
 "സമയം തീരും മുൻപ് തീവണ്ടി നിരീക്ഷിച്ച് ഓർത്തുവെയ്ക്കുക. എന്നിട്ട്, അതുപോലെയുള്ള തീവണ്ടി "
 "ഉണ്ടാക്കുവാൻ ഇനങ്ങളെ വലിച്ചിടൂ."
 
-#: activities/railroad/Railroad.qml:126
+#: activities/railroad/Railroad.qml:129
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -22611,7 +22841,7 @@ msgstr ""
 "വീട്ടിലെത്തുമ്പോൾ, ലൈറ്റിന്റെ സ്വിച്ച് അമർത്തുക. ജയിക്കുവാനായി, എല്ലാ ഉല്പാദനമാർഗങ്ങളും "
 "സജ്ജമായിരിക്കുമ്പോൾ എല്ലാ ഉപഭോക്താക്കളുടെയും സ്വിച്ച് ഓൺ ആക്കണം."
 
-#: activities/renewable_energy/RenewableEnergy.qml:302
+#: activities/renewable_energy/RenewableEnergy.qml:304
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22620,7 +22850,7 @@ msgstr ""
 "മീൻ പിടുത്തം കഴിഞ്ഞ് ടക്സ് വഞ്ചിയിൽ തിരിച്ചെത്തി. അവന് വീട്ടിൽ വെളിച്ചം കിട്ടുവാൻ വൈദ്യുത "
 "വിതരണ സംവിധാനം പ്രവർത്തിപ്പിക്കൂ."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:307
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22629,7 +22859,7 @@ msgstr ""
 "വ്യത്യസ്ത ഘടകങ്ങളിൽ ക്ലിക്ക് ചെയ്യൂ: സൂര്യൻ, മേഘം, അണക്കെട്ട്, സോളാർ നിര, കാറ്റാടിപ്പാടം, "
 "ട്രാൻസ്ഫോമറുകൾ. വൈദ്യുത സംവിധാനം മുഴുവൻ പ്രവർത്തന സജ്ജമായി പുനസ്ഥാപിക്കൂ."
 
-#: activities/renewable_energy/RenewableEnergy.qml:306
+#: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22640,13 +22870,13 @@ msgstr ""
 "ജയിക്കുവാനായി, എല്ലാ ഉല്പാദനമാർഗങ്ങളും സജ്ജമായിരിക്കുമ്പോൾ എല്ലാ ഉപഭോക്താക്കളുടെയും സ്വിച്ച് "
 "ഓൺ ആക്കണം."
 
-#: activities/renewable_energy/RenewableEnergy.qml:308
+#: activities/renewable_energy/RenewableEnergy.qml:313
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "പുനസ്ഥാപിക്കാവുന്ന ഊർജം ഉപയോഗിച്ചുള്ള വൈദ്യുത സംവിധാനത്തെ കുറിച്ച് പഠിക്കാം. ആസ്വദിക്കൂ. "
 
-#: activities/renewable_energy/RenewableEnergy.qml:333
+#: activities/renewable_energy/RenewableEnergy.qml:339
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -23497,13 +23727,13 @@ msgctxt "ActivityInfo|"
 msgid "If there is a rest, it needs to be placed inside the candy jar."
 msgstr "ബാക്കിയുണ്ടെങ്കിൽ അത് മിഠായി ഭരണിയിൽ വെക്കുക."
 
-#: activities/share/resource/1/Data.qml:13
+#: activities/share/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, no rest."
 msgstr "പരമാവധി 25 മിഠായികളും 5 കുട്ടികളും, ശിഷ്ടം ഇല്ല."
 
-#: activities/share/resource/1/Data.qml:18
-#: activities/share/resource/2/Data.qml:18
+#: activities/share/resource/1/Data.qml:20
+#: activities/share/resource/2/Data.qml:20
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 2 pieces of candy equally between 2 of his girl friends. "
@@ -23514,18 +23744,18 @@ msgstr ""
 "സഹായിച്ചുകൂടെ? ആദ്യം, കുട്ടികളെ നടുവിൽ വെക്കുക, എന്നിട്ട് മിഠായികൾ ഓരോരുത്തർക്കും വലിച്ച് "
 "വെക്കുക."
 
-#: activities/share/resource/1/Data.qml:28
+#: activities/share/resource/1/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 4 pieces of candy equally among his friends."
 msgstr "ഇനി അവന് 4 മിഠായികൾ അവന്റെ കൂട്ടുകാർക്കിടയിൽ തുല്യമായി പങ്കുവെയ്ക്കണം."
 
-#: activities/share/resource/1/Data.qml:38
+#: activities/share/resource/1/Data.qml:40
 msgctxt "Data|"
 msgid ""
 "Can you now share 6 of Paul's pieces of candy equally among his friends?"
 msgstr "പോളിന്റെ മിഠായികളിൽ 6 എണ്ണം അവന്റെ കൂട്ടുകാർക്കിടയിൽ തുല്യമായി പങ്കുവെയ്ക്കാമോ?"
 
-#: activities/share/resource/1/Data.qml:48
+#: activities/share/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid ""
 "Some of his friends already have pieces of candy. He wants to give them 7 "
@@ -23534,7 +23764,7 @@ msgstr ""
 "അവന്റെ ചില കൂട്ടുകാരുടെ കൈയിൽ മുൻപേ തന്നെ മിഠായികളുണ്ട്. അവരുടെ എല്ലാവരുടെയും കൈയിൽ തുല്യ "
 "എണ്ണം മിഠായികൾ ഉണ്ടാവുന്ന തരത്തിൽ 7 എണ്ണം കൂടി കൊടുക്കുവാൻ അവൻ ആഗ്രഹിക്കുന്നു."
 
-#: activities/share/resource/1/Data.qml:58
+#: activities/share/resource/1/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 12 pieces of candy left. He eats 2 pieces of candy and he "
@@ -23544,7 +23774,7 @@ msgstr ""
 "പോളിന് 12 മിഠായികൾ മാത്രമേ ബാക്കിയുള്ളൂ. 2 എണ്ണം അവൻ കഴിച്ചു ബാക്കി കൂട്ടുകാർക്ക് കൊടുക്കണം. "
 "ബാക്കിയുള്ള 10 മിഠായികൾ തുല്യമായി പങ്കുവെയ്ക്കാൻ അവനെ സഹായിക്കാമോ?"
 
-#: activities/share/resource/1/Data.qml:70
+#: activities/share/resource/1/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "George wants to share 3 pieces of candy equally between 3 of his girl "
@@ -23553,7 +23783,7 @@ msgstr ""
 "ചാൾസിന് 3 മിഠായികൾ 3 കൂട്ടുകാരികളുമായി തുല്യമായി പങ്കുവെയ്ക്കണം. മിഠായികൾ തുല്യമായി "
 "പങ്കുവെയ്ക്കാൻ അവനു കഴിയുമോ?"
 
-#: activities/share/resource/1/Data.qml:80
+#: activities/share/resource/1/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 6 pieces of candy equally between 3 of her friends: 1 "
@@ -23562,7 +23792,7 @@ msgstr ""
 "മരിയയ്ക്ക് 6 മിഠായികൾ 3 കൂട്ടുകാരുമായി തുല്യമായി പങ്കുവെയ്ക്കണം: 1 പെൺകുട്ടിയും 2 ആൺകുട്ടികളും. "
 "മിഠായികൾ തുല്യമായി പങ്കുവെയ്ക്കാൻ അവൾക്കു കഴിയുമോ?"
 
-#: activities/share/resource/1/Data.qml:90
+#: activities/share/resource/1/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "John wants to share 8 pieces of candy equally between 3 of his friends: 1 "
@@ -23573,7 +23803,7 @@ msgstr ""
 "ആൺകുട്ടിയുടെ കൈയിൽ മുൻപേ തന്നെ ഒരെണ്ണമുണ്ട്. എല്ലാവർക്കും തുല്യ എണ്ണം കിട്ടുമെന്നുറപ്പുവരുത്താൻ അവനു "
 "സാധിക്കുമോ?"
 
-#: activities/share/resource/1/Data.qml:100
+#: activities/share/resource/1/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 12 pieces of candy equally between 3 of his friends: 2 "
@@ -23582,7 +23812,7 @@ msgstr ""
 "ചാൾസിന് 12 മിഠായികൾ 3 കൂട്ടുകാരുമായി തുല്യമായി പങ്കുവെയ്ക്കണം: 2 ആൺകുട്ടികളും 1 പെൺകുട്ടിയും. "
 "മിഠായികൾ തുല്യമായി പങ്കുവെയ്ക്കാൻ അവനു കഴിയുമോ?"
 
-#: activities/share/resource/1/Data.qml:110
+#: activities/share/resource/1/Data.qml:112
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 11 pieces of candy between 3 of her friends: 1 boy and "
@@ -23593,8 +23823,8 @@ msgstr ""
 "പെൺകുട്ടികളും. പെൺകുട്ടികളുടെ കൈയിൽ മുൻപേ തന്നെ കുറച്ച് മിഠായികളുണ്ട്. എല്ലാവർക്കും തുല്യ എണ്ണം "
 "കിട്ടുന്ന വിധത്തിൽ മിഠായികൾ പങ്കുവെയ്ക്കുവാൻ അവൾക്കു സാധിക്കുമോ?"
 
-#: activities/share/resource/1/Data.qml:122
-#: activities/share/resource/2/Data.qml:112
+#: activities/share/resource/1/Data.qml:124
+#: activities/share/resource/2/Data.qml:114
 msgctxt "Data|"
 msgid ""
 "Alice wants to share 4 pieces of candy equally between 4 of her girl "
@@ -23603,12 +23833,12 @@ msgstr ""
 "ആലീസിന് 4 മിഠായികൾ അവളുടെ 4 കൂട്ടുകാരികളുമായി തുല്യമായി പങ്കുവെയ്ക്കണം. നിങ്ങൾക്ക് അവളെ "
 "സഹായിക്കാമോ?"
 
-#: activities/share/resource/1/Data.qml:132
+#: activities/share/resource/1/Data.qml:134
 msgctxt "Data|"
 msgid "Now, Alice wants to give 8 pieces of candy to her friends."
 msgstr "ഇനി, ആലീസിന് 8 മിഠായികൾ അവളുടെ കൂട്ടുകാർക്ക് കൊടുക്കണം"
 
-#: activities/share/resource/1/Data.qml:142
+#: activities/share/resource/1/Data.qml:144
 msgctxt "Data|"
 msgid ""
 "Alice wants to give 10 pieces of candy to her friends, 1 girl and 3 boys, so "
@@ -23619,12 +23849,12 @@ msgstr ""
 "എല്ലാവർക്കും തുല്യ എണ്ണം കിട്ടുന്ന വിധത്തിൽ വേണം മിഠായികൾ പങ്കുവെയ്ക്കുവാൻ. പെൺകുട്ടികളുടെ "
 "കൈയിൽ മുൻപേ തന്നെ കുറച്ച് മിഠായികളുണ്ട്."
 
-#: activities/share/resource/1/Data.qml:152
+#: activities/share/resource/1/Data.qml:154
 msgctxt "Data|"
 msgid "Alice wants to give 16 pieces of candy to her friends."
 msgstr "ആലീസിന് 16 മിഠായികൾ അവളുടെ കൂട്ടുകാർക്ക് കൊടുക്കണം."
 
-#: activities/share/resource/1/Data.qml:162
+#: activities/share/resource/1/Data.qml:164
 msgctxt "Data|"
 msgid ""
 "Alice wants to give pieces of candy to 4 friends. Some of them already have "
@@ -23635,7 +23865,7 @@ msgstr ""
 "മിഠായികളുണ്ട്. അവളുടെ കൂട്ടുകാർക്കെല്ലാം തുല്യമായ എണ്ണം കിട്ടുന്ന വിധത്തിൽ 14 മിഠായികൾ വീതം "
 "വെയ്ക്കുവാൻ അവളെ സഹായിക്കാമോ?"
 
-#: activities/share/resource/1/Data.qml:174
+#: activities/share/resource/1/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Michael wants to share 5 pieces of candy equally between 5 of his girl "
@@ -23643,7 +23873,7 @@ msgid ""
 msgstr ""
 "മിഷേലിന് 5 മിഠായികൾ അവന്റെ 5 കൂട്ടുകാരികളുമായി തുല്യമായി നിങ്ങൾക്ക് അവനെ സഹായിക്കാമോ?"
 
-#: activities/share/resource/1/Data.qml:184
+#: activities/share/resource/1/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Helen has 5 friends: 2 boys and 3 girls. She wants to give them 10 pieces of "
@@ -23652,7 +23882,7 @@ msgstr ""
 "ഹെലന് 5 കൂട്ടുകാരുണ്ട്: 2 ആൺകുട്ടികളും 3 പെൺകുട്ടികളും. അവൾക്ക് 10 മിഠായികൾ അവർക്ക് കൊടുക്കണം. "
 "മിഠായികൾ അവളുടെ കൂട്ടുകാർക്കിടയിൽ തുല്യമായി പങ്കുവെയ്ക്കുവാൻ സഹായിക്കൂ."
 
-#: activities/share/resource/1/Data.qml:194
+#: activities/share/resource/1/Data.qml:196
 msgctxt "Data|"
 msgid ""
 "Michelle wants to share 12 pieces of candy equally between her 4 brothers "
@@ -23663,7 +23893,7 @@ msgstr ""
 "കിട്ടുന്ന തരത്തിൽ തുല്യമായി പങ്കുവെയ്ക്കണം. അവളുടെ സഹോദരിയുടെ കൈയിൽ മുൻപേ തന്നെ കുറച്ച് "
 "മിഠായികളുണ്ട്."
 
-#: activities/share/resource/1/Data.qml:204
+#: activities/share/resource/1/Data.qml:206
 msgctxt "Data|"
 msgid ""
 "Thomas wants to share his 20 pieces of candy with his friends: 1 boy and 4 "
@@ -23672,7 +23902,7 @@ msgstr ""
 "തോമസിന് 20 മിഠായികൾ അവന്റെ കൂട്ടുകാരുമായി പങ്കുവെയ്ക്കണം: 1 ആൺകുട്ടിയും 4 പെൺകുട്ടികളും. "
 "അവനെ സഹായിക്കാമോ?"
 
-#: activities/share/resource/1/Data.qml:214
+#: activities/share/resource/1/Data.qml:216
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 20 pieces of candy equally between 5 of his friends. "
@@ -23681,7 +23911,7 @@ msgstr ""
 "ചാൾസിന് 20 മിഠായികൾ 5 കൂട്ടുകാരുമായി തുല്യമായി പങ്കുവെയ്ക്കണം. അവരുടെ ഓരോരുത്തരുടെയും കൈയിൽ "
 "ഒരു മിഠായി വീതമുണ്ട്. നിങ്ങൾക്ക് അവനെ സഹായിക്കാമോ?"
 
-#: activities/share/resource/1/Data.qml:226
+#: activities/share/resource/1/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally with 2 of his girl "
@@ -23690,7 +23920,7 @@ msgstr ""
 "ചാൾസിന് 6 മിഠായികൾ 2 കൂട്ടുകാരികളുമായി തുല്യമായി പങ്കുവെയ്ക്കണം. മിഠായികൾ തുല്യമായി "
 "പങ്കുവെയ്ക്കാൻ അവനു കഴിയുമോ?"
 
-#: activities/share/resource/1/Data.qml:236
+#: activities/share/resource/1/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -23701,7 +23931,7 @@ msgstr ""
 "ആൺകുട്ടിയും. പെൺകുട്ടികളുടെ കൈയിൽ മുൻപേ തന്നെ കുറച്ച് മിഠായികളുണ്ട്. എല്ലാവർക്കും തുല്യ എണ്ണം "
 "കിട്ടുന്ന തരത്തിൽ എങ്ങനെ അവൾ മിഠായികൾ പങ്കുവെയ്ക്കണം?"
 
-#: activities/share/resource/1/Data.qml:246
+#: activities/share/resource/1/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 16 pieces of candy to share equally with his "
@@ -23711,7 +23941,7 @@ msgstr ""
 "ജേസണിന്റെ അച്ഛൻ 16 മിഠായികൾ അവന്റെ കൂട്ടുകാരുമായി തുല്യമായി പങ്കുവെയ്ക്കാനായി അവനു കൊടുത്തു: "
 "2 ആൺകുട്ടികളും 2 പെൺകുട്ടികളും. മിഠായികൾ കൂട്ടുകാർക്ക് കൊടുക്കാൻ അവനെ സഹായിക്കൂ."
 
-#: activities/share/resource/1/Data.qml:256
+#: activities/share/resource/1/Data.qml:258
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy between 4 of his friends: 2 girls "
@@ -23722,7 +23952,7 @@ msgstr ""
 "ആൺകുട്ടികളുടെ ഓരോരുത്തരുടെയും കൈയിൽ ഒരു മിഠായി വീതം മുൻപേ തന്നെ ഉണ്ട്. എല്ലാവർക്കും തുല്യ "
 "എണ്ണം കൊടുക്കണമെന്നാണ് അവന്റെ ആഗ്രഹം."
 
-#: activities/share/resource/1/Data.qml:266
+#: activities/share/resource/1/Data.qml:268
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 25 pieces of candy equally between 5 of her friends: 3 "
@@ -23731,27 +23961,27 @@ msgstr ""
 "മരിയയ്ക്ക് 25 മിഠായികൾ 5 കൂട്ടുകാരുമായി തുല്യമായി പങ്കുവെയ്ക്കണം: 3 പെൺകുട്ടികളും 2 "
 "ആൺകുട്ടികളും. മിഠായികൾ തുല്യമായി പങ്കുവെയ്ക്കാൻ അവൾക്കു കഴിയുമോ?"
 
-#: activities/share/resource/2/Data.qml:13
+#: activities/share/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, possible rest."
 msgstr "പരമാവധി 25 മിഠായികളും 5 കുട്ടികളും, ശിഷ്ടം വരാം."
 
-#: activities/share/resource/2/Data.qml:28
+#: activities/share/resource/2/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 5 pieces of candy among his friends."
 msgstr "ഇനി അവന് 5 മിഠായികൾ അവന്റെ കൂട്ടുകാർക്കിടയിൽ പങ്കുവെയ്ക്കണം."
 
-#: activities/share/resource/2/Data.qml:38
+#: activities/share/resource/2/Data.qml:40
 msgctxt "Data|"
 msgid "Can you now share 7 of Paul's pieces of candy among his friends?"
 msgstr "പോളിന്റെ മിഠായികളിൽ 7 എണ്ണം അവന്റെ കൂട്ടുകാർക്കിടയിൽ പങ്കുവെയ്ക്കാമോ?"
 
-#: activities/share/resource/2/Data.qml:48
+#: activities/share/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Can you now share 8 of Paul's pieces of candy among his friends?"
 msgstr "പോളിന്റെ മിഠായികളിൽ 8 എണ്ണം അവന്റെ കൂട്ടുകാർക്കിടയിൽ പങ്കുവെയ്ക്കാമോ?"
 
-#: activities/share/resource/2/Data.qml:58
+#: activities/share/resource/2/Data.qml:60
 msgctxt "Data|"
 msgid ""
 "Paul has only 11 pieces of candy left. He eats 2 pieces of candy and he "
@@ -23761,7 +23991,7 @@ msgstr ""
 "പോളിന് 11 മിഠായികൾ മാത്രമേ ബാക്കിയുള്ളൂ. 2 എണ്ണം അവൻ കഴിച്ചു ബാക്കി കൂട്ടുകാർക്ക് കൊടുക്കണം. "
 "ബാക്കിയുള്ള 9 മിഠായികൾ തുല്യമായി പങ്കുവെയ്ക്കാൻ അവനെ സഹായിക്കാമോ?"
 
-#: activities/share/resource/2/Data.qml:70
+#: activities/share/resource/2/Data.qml:72
 msgctxt "Data|"
 msgid ""
 "Bob wants to share 3 pieces of candy equally between 3 of his girl friends. "
@@ -23770,7 +24000,7 @@ msgstr ""
 "ബോബിന് 3 മിഠായികൾ 3 കൂട്ടുകാരികളുമായി പങ്കുവെയ്ക്കണം. മിഠായികൾ തുല്യമായി പങ്കുവെയ്ക്കാൻ അവനു "
 "കഴിയുമോ?"
 
-#: activities/share/resource/2/Data.qml:80
+#: activities/share/resource/2/Data.qml:82
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 8 pieces of candy between 3 of his friends: 1 boy and 2 "
@@ -23781,7 +24011,7 @@ msgstr ""
 "കൈയിൽ മുൻപേ തന്നെ ഒരു മിഠായിയുണ്ട്. എല്ലാവർക്കും തുല്യമായ എണ്ണം മിഠായികൾ കിട്ടുന്ന തരത്തിൽ "
 "പങ്കുവെയ്ക്കുവാൻ അവനു കഴിയുമോ?"
 
-#: activities/share/resource/2/Data.qml:90
+#: activities/share/resource/2/Data.qml:92
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 8 pieces of candy between 3 of her friends: 1 boy and 2 "
@@ -23792,7 +24022,7 @@ msgstr ""
 "പെൺകുട്ടികളുടെ കൈയിൽ മുൻപേ തന്നെ കുറച്ച് മിഠായികൾ ഉണ്ട്. എല്ലാവർക്കും തുല്യമായ എണ്ണം "
 "മിഠായികൾ കിട്ടുന്ന തരത്തിൽ പങ്കുവെയ്ക്കുവാൻ അവൾക്കു കഴിയുമോ?"
 
-#: activities/share/resource/2/Data.qml:100
+#: activities/share/resource/2/Data.qml:102
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 12 pieces of candy between 3 of his friends: 1 boy and "
@@ -23803,12 +24033,12 @@ msgstr ""
 "ആൺകുട്ടിയുടെ കൈയിൽ മുൻപേ തന്നെ കുറച്ച് മിഠായികൾ ഉണ്ട്. എല്ലാവർക്കും തുല്യമായ എണ്ണം മിഠായികൾ "
 "കിട്ടുന്ന തരത്തിൽ പങ്കുവെയ്ക്കുവാൻ അവനു കഴിയുമോ?"
 
-#: activities/share/resource/2/Data.qml:122
+#: activities/share/resource/2/Data.qml:124
 msgctxt "Data|"
 msgid "Now, Alice wants to share 8 pieces of candy equally among her friends."
 msgstr "ഇനി, ആലീസിന് 8 മിഠായികൾ അവളുടെ കൂട്ടുകാർക്കിടയിൽ തുല്യമായി പങ്കുവെയ്ക്കണം."
 
-#: activities/share/resource/2/Data.qml:132
+#: activities/share/resource/2/Data.qml:134
 msgctxt "Data|"
 msgid ""
 "Can you help Alice share 10 pieces of candy equally among her friends: 1 "
@@ -23817,12 +24047,12 @@ msgstr ""
 "10 മിഠായികൾ കൂട്ടുകാർക്കിടയിൽ തുല്യമായി പങ്കുവെയ്ക്കാൻ ആലീസിനെ സഹായിക്കാമോ: 1 പെൺകുട്ടിയും "
 "3 ആൺകുട്ടികളും? പെൺകുട്ടിയുടെ കൈയിൽ മുൻപേ തന്നെ കുറച്ച് മിഠായികൾ ഉണ്ട്."
 
-#: activities/share/resource/2/Data.qml:142
+#: activities/share/resource/2/Data.qml:144
 msgctxt "Data|"
 msgid "Alice wants to share 16 pieces of candy equally among her friends."
 msgstr "ആലീസിന് 16 മിഠായികൾ അവളുടെ കൂട്ടുകാർക്കിടയിൽ തുല്യമായി പങ്കുവെയ്ക്കണം."
 
-#: activities/share/resource/2/Data.qml:152
+#: activities/share/resource/2/Data.qml:154
 msgctxt "Data|"
 msgid ""
 "Alice has 14 pieces of candy left. She wants to share them equally among her "
@@ -23833,7 +24063,7 @@ msgstr ""
 "ആൺകുട്ടികളുടെ കൈയിൽ മുൻപേ തന്നെ കുറച്ച് മിഠായികൾ ഉണ്ട്. മിഠായികൾ തുല്യമായി പങ്കുവെയ്ക്കാൻ "
 "അവളെ സഹായിക്കാമോ?"
 
-#: activities/share/resource/2/Data.qml:164
+#: activities/share/resource/2/Data.qml:166
 msgctxt "Data|"
 msgid ""
 "Help Jon share 11 pieces of candies equally between five girls. The rest "
@@ -23842,7 +24072,7 @@ msgstr ""
 "ജോണിനെ 11 മിഠായികൾ അഞ്ച് പെൺകുട്ടികൾക്കിടയിൽ തുല്യമായി പങ്കുവെയ്ക്കാൻ സഹായിക്കൂ. "
 "ബാക്കിയുള്ളത് ജോണിനാണ്."
 
-#: activities/share/resource/2/Data.qml:174
+#: activities/share/resource/2/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Jon wants to share the rest of his pieces of candies with his brothers and "
@@ -23853,20 +24083,20 @@ msgstr ""
 "സഹോദരന്മാരുടെ കയ്യിൽ മുൻപേ തന്നെ 2 മിഠായികൾ ഉണ്ടെന്നുള്ളത് ആലോചിച്ച് മിഠായി കഷണങ്ങൾ "
 "തുല്യമായി പങ്കുവെയ്ക്കാൻ നിങ്ങൾക്ക് കഴിയുമോ?"
 
-#: activities/share/resource/2/Data.qml:184
+#: activities/share/resource/2/Data.qml:186
 msgctxt "Data|"
 msgid ""
 "Help Tux split 19 pieces of candies between his friends: 4 boys and 1 girl."
 msgstr "19 മിഠായികൾ കൂട്ടുകാർക്ക് കൊടുക്കുവാൻ ടക്സിനെ സഹായിക്കൂ: 4 ആൺകുട്ടികളും 1 പെൺകുട്ടിയും."
 
-#: activities/share/resource/2/Data.qml:194
+#: activities/share/resource/2/Data.qml:196
 msgctxt "Data|"
 msgid "Help Maria share 18 pieces of candy equally between 3 boys and 2 girls."
 msgstr ""
 "മരിയയെ 18 മിഠായികൾ 3 ആൺകുട്ടികൾക്കും 2 പെൺകുട്ടികൾക്കും ഇടയിൽ തുല്യമായി പങ്കുവെയ്ക്കാൻ "
 "സഹായിക്കൂ."
 
-#: activities/share/resource/2/Data.qml:206
+#: activities/share/resource/2/Data.qml:208
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally between 2 of his girl "
@@ -23875,7 +24105,7 @@ msgstr ""
 "ചാൾസിന് 6 മിഠായികൾ 2 കൂട്ടുകാരികളുമായി തുല്യമായി പങ്കുവെയ്ക്കണം. മിഠായികൾ തുല്യമായി "
 "പങ്കുവെയ്ക്കാൻ അവനു കഴിയുമോ?"
 
-#: activities/share/resource/2/Data.qml:216
+#: activities/share/resource/2/Data.qml:218
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -23885,7 +24115,7 @@ msgstr ""
 "എലിസബത്തിന്റെ പിറന്നാളിന് 8 മിഠായികൾ 3 കൂട്ടുകാരുമായി പങ്കുവെയ്ക്കണം: 2 പെൺകുട്ടികളും 1 "
 "ആൺകുട്ടിയും. അവൾ എങ്ങനെ കൂട്ടുകാർക്കിടയിൽ മിഠായികൾ പങ്കുവെയ്ക്കണം?"
 
-#: activities/share/resource/2/Data.qml:226
+#: activities/share/resource/2/Data.qml:228
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 17 pieces of candy to share equally between his "
@@ -23895,7 +24125,7 @@ msgstr ""
 "ജേസണിന്റെ അച്ഛൻ 17 മിഠായികൾ കൂട്ടുകാരുമായി തുല്യമായി പങ്കുവെയ്ക്കാനായി അവനു കൊടുത്തു: 2 "
 "ആൺകുട്ടികളും 2 പെൺകുട്ടികളും. മിഠായികൾ കൂട്ടുകാർക്ക് കൊടുക്കാൻ അവനെ സഹായിക്കൂ."
 
-#: activities/share/resource/2/Data.qml:236
+#: activities/share/resource/2/Data.qml:238
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy equally between 4 of his friends: 2 "
@@ -23905,7 +24135,7 @@ msgstr ""
 "ജോർജിന് 14 മിഠായികൾ 4 കൂട്ടുകാരുമായി തുല്യമായി പങ്കുവെയ്ക്കണം: 2 ആൺകുട്ടികളും 2 "
 "പെൺകുട്ടികളും. മിഠായികൾ തുല്യമായി പങ്കുവെയ്ക്കുവാൻ അവനു സാധിക്കുമോ?"
 
-#: activities/share/resource/2/Data.qml:246
+#: activities/share/resource/2/Data.qml:248
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 23 pieces of candy equally between 5 of her friends: 3 "
@@ -23915,12 +24145,12 @@ msgstr ""
 "മരിയയ്ക്ക് 23 മിഠായികൾ 5 കൂട്ടുകാരുമായി തുല്യമായി പങ്കുവെയ്ക്കണം: 3 പെൺകുട്ടികളും 2 "
 "ആൺകുട്ടികളും. മിഠായികൾ തുല്യമായി പങ്കുവെയ്ക്കാൻ അവൾക്കു സാധിക്കുമോ?"
 
-#: activities/share/resource/3/Data.qml:13
+#: activities/share/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr "പരമാവധി 30 മിഠായികളും 6 കുട്ടികളും, ശിഷ്ടം വരാം."
 
-#: activities/share/share.js:98
+#: activities/share/share.js:115
 #, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -23930,7 +24160,7 @@ msgid_plural "Place %n boy(s) "
 msgstr[0] "%n ആൺകുട്ടിയെ(കളെ)യും "
 msgstr[1] "%n ആൺകുട്ടിയെ(കളെ)യും "
 
-#: activities/share/share.js:102
+#: activities/share/share.js:119
 #, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -23940,7 +24170,7 @@ msgid_plural "and %n girl(s) in the center. "
 msgstr[0] "%n പെൺകുട്ടിയെ(കളെ)യും നടുവിൽ വെയ്ക്കൂ. "
 msgstr[1] "%n പെൺകുട്ടിയെ(കളെ)യും നടുവിൽ വെയ്ക്കൂ. "
 
-#: activities/share/share.js:106
+#: activities/share/share.js:123
 #, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -23950,7 +24180,7 @@ msgid_plural "Then split %n pieces of candy equally between them."
 msgstr[0] "എന്നിട്ട് %n മിഠായികൾ അവർക്കിടയിൽ തുല്യമായി പങ്കുവെയ്ക്കൂ."
 msgstr[1] "എന്നിട്ട് %n മിഠായികൾ അവർക്കിടയിൽ തുല്യമായി പങ്കുവെയ്ക്കൂ."
 
-#: activities/share/Share.qml:358
+#: activities/share/Share.qml:359
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
@@ -25517,7 +25747,7 @@ msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "പഠിക്കൽ"
 
-#: activities/solar_system/SolarSystem.qml:156
+#: activities/solar_system/SolarSystem.qml:157
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -25526,7 +25756,7 @@ msgstr ""
 "ചോദ്യങ്ങൾ കാണാൻ ഒരു ഗ്രഹത്തിലോ സൂര്യനിലോ ക്ലിക്ക് ചെയ്യുക. ഓരോ ചോദ്യത്തിലും 4 ഓപ്ഷനുകൾ ഉണ്ട്, "
 "അതിൽ ഒന്ന് ശരിയാണ്."
 
-#: activities/solar_system/SolarSystem.qml:157
+#: activities/solar_system/SolarSystem.qml:160
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -25540,7 +25770,7 @@ msgstr ""
 "എന്നു കാണിക്കും. കൃത്യത മീറ്ററിൽ 100% എത്തുന്നതുവരെ ശ്രമിച്ചുകൊണ്ടിരിക്കൂ. സൂചനയ്ക്കുള്ള ബട്ടൺ "
 "കാണാമെങ്കിൽ അതിൽ ക്ലിക്കു ചെയ്ത് ഉത്തരം കണ്ടെത്താനുള്ള സൂചന നിങ്ങൾക്കു കിട്ടും."
 
-#: activities/solar_system/SolarSystem.qml:162
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -25549,7 +25779,7 @@ msgstr ""
 "തുടക്കത്തിൽ, 4 ഓപ്ഷനുകളോടു കൂടിയുള്ള 20 ചോദ്യങ്ങളുണ്ട്. സ്ക്രീനിന്റെ താഴെ വലതുഭാഗത്തുള്ള പ്രോഗ്രസ് "
 "ബാറിൽ നിങ്ങളുടെ സ്കോർ ശതമാനത്തിൽ കാണാം."
 
-#: activities/solar_system/SolarSystem.qml:163
+#: activities/solar_system/SolarSystem.qml:173
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -25561,14 +25791,14 @@ msgstr ""
 "സ്കോർ കുറയുകയും അവസാനം തെറ്റായ ഉത്തരം നല്കിയ ചോദ്യത്തോടൊപ്പം ഒരു ചോദ്യം കൂടി ചോദിക്കുകയും "
 "ചെയ്യുന്നു.<br>25 ചോദ്യങ്ങളിൽ കൂടുതൽ ചോദിക്കില്ല."
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:176
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
 "expert!"
 msgstr "സൗരയൂഥത്തിൽ വൈദഗ്ദ്ധ്യമുണ്ടാവാൻ 90% നു മുകളിൽ സ്കോർ നേടണം!"
 
-#: activities/solar_system/SolarSystem.qml:349
+#: activities/solar_system/SolarSystem.qml:365
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25578,7 +25808,7 @@ msgstr ""
 "1. ഒരു ഗ്രഹം സൂര്യനിൽ നിന്നും <b>അകലെ</b> ആണെങ്കിൽ, അതിന്റെ താപനില <b>കുറവ്</b> "
 "ആയിരിക്കും.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:350
+#: activities/solar_system/SolarSystem.qml:366
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25589,7 +25819,7 @@ msgstr ""
 "<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:369
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -25601,12 +25831,12 @@ msgstr ""
 "<b>ഭാ</b>രമുള്ള <b>ച</b>ക്ക <b>വ</b>ലിച്ചെറിയാതെ <b>ശീ</b>തീകരണ <b>യ</b>ന്ത്രത്തിൽ "
 "<b>നി</b>റച്ചു.<br>"
 
-#: activities/solar_system/SolarSystem.qml:355
+#: activities/solar_system/SolarSystem.qml:371
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "സൂചന"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:379
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "സൗരയൂഥം കാണുക"
@@ -25725,13 +25955,21 @@ msgctxt "Controls|"
 msgid "Right Ballast Tank"
 msgstr "വലതു ബാലസ്റ്റ് ടാങ്ക്"
 
-#: activities/submarine/submarine.js:21
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:130
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Move the submarine to the other side of the screen."
+msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "അന്തർവാഹിനിയെ സ്ക്രീനിന്റെ മറ്റേ അറ്റത്തേക്ക് ചലിപ്പിക്കൂ."
 
-#: activities/submarine/submarine.js:22
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:133
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The leftmost item in the control panel is the engine of the submarine, "
+#| "indicating the current speed of the submarine."
+msgctxt "Submarine|"
 msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
 "indicating the current speed of the submarine."
@@ -25739,30 +25977,49 @@ msgstr ""
 "ഏറ്റവും ഇടതുഭാഗത്തുള്ള കൺട്രോൾ പാനൽ അന്തർവാഹിനിയുടെ എഞ്ചിനാണ്. അത് അന്തർവാഹിനിയുടെ തത്സമയ "
 "വേഗത സൂചിപ്പിക്കുന്നു."
 
-#: activities/submarine/submarine.js:23
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:136
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Increase or decrease the velocity of the submarine using the engine."
+msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr "എഞ്ചിൻ ഉപയോഗിച്ച് അന്തർവാഹിനിയുടെ പ്രവേഗം കൂട്ടുകയോ കുറയ്ക്കുകയോ ചെയ്യാം."
 
-#: activities/submarine/submarine.js:24
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:139
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Press the + button to increase the velocity, or the - button to decrease "
+#| "the velocity."
+msgctxt "Submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
 "velocity."
 msgstr "+ ബട്ടൺ അമർത്തിയാൽ പ്രവേഗം കൂട്ടാം, - ബട്ടണിൽ പ്രവേഗം കുറയ്ക്കാം."
 
-#: activities/submarine/submarine.js:27
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:146
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "The item next to the engine is the ballast tank."
+msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "എഞ്ചിന് അടുത്തുള്ളതാണ് ബാലസ്റ്റ് ടാങ്ക്."
 
-#: activities/submarine/submarine.js:28
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:149
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "The ballast tanks are used to float or dive under water."
+msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr "ബാലസ്റ്റ് ടാങ്ക് പൊങ്ങിക്കിടക്കാനും വെള്ളത്തിനടിയിൽ ഊളിയിടാനും ഉപയോഗിക്കുന്നു."
 
-#: activities/submarine/submarine.js:29
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:152
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "If the ballast tanks are empty, the submarine will float. If the ballast "
+#| "tanks are full of water, the submarine will dive underwater."
+msgctxt "Submarine|"
 msgid ""
 "If the ballast tanks are empty, the submarine will float. If the ballast "
 "tanks are full of water, the submarine will dive underwater."
@@ -25770,8 +26027,14 @@ msgstr ""
 "ബാലസ്റ്റ് ടാങ്കുകൾ കാലിയാണെങ്കിൽ അന്തർവാഹിനി പൊങ്ങിക്കിടക്കും. ബാലസ്റ്റ് ടാങ്കുകൾ "
 "നിറഞ്ഞിരിക്കുകയാണെങ്കിൽ അന്തർവാഹിനി വെള്ളത്തിനടിയിൽ ഊളിയിടും."
 
-#: activities/submarine/submarine.js:30
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:155
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Turning the upper valve on or off will alternatively allow or stop the "
+#| "water from filling in the ballast tank, thus allowing it to dive "
+#| "underwater."
+msgctxt "Submarine|"
 msgid ""
 "Turning the upper valve on or off will alternatively allow or stop the water "
 "from filling in the ballast tank, thus allowing it to dive underwater."
@@ -25779,8 +26042,14 @@ msgstr ""
 "മുകളിലുള്ള വാൽവ് ഓണോ ഓഫോ എന്നതിനനുസരിച്ച് ബാലസ്റ്റ് ടാങ്കിലേക്ക് വെള്ളം നിറയ്ക്കുകയോ നിറയ്ക്കുന്നത് "
 "നിർത്തുകയോ ചെയ്യാം, ഇത് അന്തർവാഹിനിയെ വെള്ളത്തിനടിയിൽ ഊളിയിടാൻ സഹായിക്കും."
 
-#: activities/submarine/submarine.js:31
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:158
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Turning the lower valve on or off will alternatively allow or stop the "
+#| "water from flushing out the ballast tank, thus allowing it to float on "
+#| "the surface of the water."
+msgctxt "Submarine|"
 msgid ""
 "Turning the lower valve on or off will alternatively allow or stop the water "
 "from flushing out the ballast tank, thus allowing it to float on the surface "
@@ -25789,15 +26058,25 @@ msgstr ""
 "താഴെയുള്ള വാൽവ് ഓണോ ഓഫോ എന്നതിനനുസരിച്ച് ബാലസ്റ്റ് ടാങ്കിൽ നിന്നും വ‌െള്ളം ഒഴുക്കുകയോ ഒഴുക്കു "
 "നിർത്തുകയോ ചെയ്യാം, ഇത് അന്തർവാഹിനിയെ വെള്ളത്തിനു മുകളിൽ പൊങ്ങിക്കിടക്കാൻ സഹായിക്കും."
 
-#: activities/submarine/submarine.js:34
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:165
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The rightmost item in the control panel controls the diving planes of the "
+#| "submarine"
+msgctxt "Submarine|"
 msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
-"submarine"
+"submarine."
 msgstr "ഏറ്റവും വലതുഭാഗത്തുള്ള കൺട്രോൾ പാനൽ അന്തർവാഹിനിയുടെ ഡൈവിങ് പ്രതലത്തെ നിയന്ത്രിക്കുന്നു."
 
-#: activities/submarine/submarine.js:35
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:168
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The diving planes in a submarine are used to control the depth of the "
+#| "submarine accurately once it is underwater."
+msgctxt "Submarine|"
 msgid ""
 "The diving planes in a submarine are used to control the depth of the "
 "submarine accurately once it is underwater."
@@ -25805,8 +26084,13 @@ msgstr ""
 "വെള്ളത്തിനടിയിൽ അന്തർവാഹിനിയുടെ ആഴം കൃത്യമായി നിയന്ത്രിക്കാനാണ് ഡൈവിങ് പ്രതലങ്ങൾ "
 "ഉപയോഗിക്കുന്നത്."
 
-#: activities/submarine/submarine.js:36
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:171
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Once the submarine is moving underwater, increasing or decreasing the "
+#| "angle of the planes will increase and decrease the depth of the submarine."
+msgctxt "Submarine|"
 msgid ""
 "Once the submarine is moving underwater, increasing or decreasing the angle "
 "of the planes will increase and decrease the depth of the submarine."
@@ -25814,20 +26098,31 @@ msgstr ""
 "അന്തർവാഹിനി വെള്ളത്തിനടിയിൽ ചലിക്കുമ്പോൾ, പ്രതലത്തിന്റെ കോൺ കൂട്ടുകയോ കുറയ്ക്കുകയോ ചെയ്താൽ "
 "അന്തർവാഹിനിയുടെ ആഴം കൂട്ടുകയോ കുറയ്ക്കുകയോ ചെയ്യാം."
 
-#: activities/submarine/submarine.js:37
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:174
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The + button will increase the depth of the submarine, while the - button "
+#| "will decrease the depth of the submarine."
+msgctxt "Submarine|"
 msgid ""
 "The + button will increase the depth of the submarine, while the - button "
 "will decrease the depth of the submarine."
 msgstr "+ ബട്ടൺ അന്തർവാഹിനിയുടെ ആഴം കൂട്ടും, - ബട്ടൺ അന്തർവാഹിനിയുടെ ആഴം കുറയ്ക്കും."
 
-#: activities/submarine/submarine.js:38
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:177
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Grab the crown to open the gate."
+msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "ഗേറ്റ് തുറക്കാനായി കിരീടം എടുക്കൂ. "
 
-#: activities/submarine/submarine.js:39
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:180
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Check out the help menu for the keyboard controls."
+msgctxt "Submarine|"
 msgid "Check out the help menu for the keyboard controls."
 msgstr "കീബോർഡ് നിയന്ത്രണത്തിനായി ലഘുവിവരണം നോക്കൂ."
 
@@ -26723,19 +27018,19 @@ msgstr ""
 "ചെയ്യുന്ന സ്ഥലം, മലിനജല ശുദ്ധീകരണ പ്ലാന്റ് എന്നിങ്ങനെ. ഈ സംവിധാനം പ്രവർത്തനസജ്ജമായതിനു ശേഷം "
 "ടക്സിനു വേണ്ടി അവന്റെ ഷവറിന്റെ സ്വിച്ച് അമർത്തുക."
 
-#: activities/watercycle/Watercycle.qml:114
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
 "the water cycle."
 msgstr "ജലചക്രത്തിന്റെ പ്രധാന കണ്ണി സൂര്യനാണ്. സൂര്യനിൽ ക്ലിക്ക് ചെയ്ത് ജലചക്രം തുടങ്ങൂ."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "സൂര്യനുദിക്കുമ്പോൾ കടലിലെ വെള്ളം ചൂടായി ബാഷ്പീകരിക്കുന്നു."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -26744,7 +27039,7 @@ msgstr ""
 "ജലബാഷ്പം ഘനീഭവിച്ച് മേഘങ്ങൾ ഉണ്ടാകുന്നു, മേഘങ്ങൾക്ക് സാന്ദ്രത കൂടുമ്പോൾ അത് മഴയായി പെയ്യുന്നു. "
 "മേഘത്തിൽ ക്ലിക്ക് ചെയ്യൂ."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:118
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -26754,7 +27049,7 @@ msgstr ""
 "മഴ പെയ്ത് പുഴകൾ നിറഞ്ഞു കവിയുന്നു. ഈ വെള്ളം മോട്ടോർ പമ്പുകൾ വഴി വാട്ടർ ടവറുകൾ കടന്ന് "
 "നമ്മളിലേക്ക് എത്തുന്നു. മോട്ടോർ പമ്പിൽ ക്ലിക്ക് ചെയ്ത് നിവാസികൾക്ക് വെള്ളം വിതരണം ചെയ്യൂ."
 
-#: activities/watercycle/Watercycle.qml:119
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -26763,18 +27058,18 @@ msgstr ""
 "വെള്ളം നിറച്ചിരിക്കുന്ന ടവർ കണ്ടില്ലേ? മലിനജല ശുദ്ധീകരണ പ്ലാന്റിൽ ക്ലിക്ക് ചെയ്ത് അതിനെ "
 "പ്രവർത്തന സജ്ജമാക്കൂ."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "ഗംഭീരം, ടക്സ് വീട്ടിലെത്തുമ്പോഴേക്കും ഷവറിൽ ക്ലിക്ക് ചെയ്യൂ."
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:122
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "ഒന്നാന്തരം, നിങ്ങൾ ജലചക്രം പൂർത്തിയാക്കിയിരിക്കുന്നു. നിങ്ങൾക്ക് തുടർന്നും കളിക്കാം."
 
-#: activities/watercycle/Watercycle.qml:139
+#: activities/watercycle/Watercycle.qml:141
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26785,7 +27080,7 @@ msgstr ""
 "തിരിച്ചും പ്രവഹിക്കുമ്പോൾ ഉള്ള ജലത്തിന്റെ യാത്ര. സൂര്യതാപമാണ് സമുദ്രം പോലുള്ള ജലസ്രോതസ്സുകളിൽ "
 "നിന്നും ജലം ബാഷ്പീകരിക്കാനുള്ള ഊർജ്ജം നല്കുന്നത്."
 
-#: activities/watercycle/Watercycle.qml:142
+#: activities/watercycle/Watercycle.qml:144
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26796,7 +27091,7 @@ msgstr ""
 "ചെറിയ തുള്ളികൾ ഉണ്ടാക്കുന്നു. ഈ മേഘം കരയുടെ മുകളിൽ വെച്ച് തണുത്ത വായുവുമായി അടുത്തുവരുമ്പോൾ, "
 "ഊറലുണ്ടായി മഴയായി പതിക്കുന്നു."
 
-#: activities/watercycle/Watercycle.qml:145
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26807,7 +27102,7 @@ msgstr ""
 "ജലം എന്നു വിളിക്കുന്നു. പക്ഷേ, ഭൂരിഭാഗം വരുന്ന ജലവും ഒഴുകുന്നു, പുഴകളിലൂടെ അവ സമുദ്രത്തിലേക്ക് "
 "പതിക്കുന്നു."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:150
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -27869,25 +28164,45 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "ഞാൻ‍ തയ്യാറാണ്"
 
-#: core/Tutorial.qml:140
+#: core/Tutorial.qml:139
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "മുൻപുള്ളത്"
 
-#: core/Tutorial.qml:158
+#: core/Tutorial.qml:157
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "അടുത്തത്"
 
-#: core/Tutorial.qml:175
+#: core/Tutorial.qml:174
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "നോക്കാതെ വിടുക"
 
-#: core/Tutorial.qml:175
+#: core/Tutorial.qml:174
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "തുടങ്ങാം"
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid "Grammatical analysis"
+#~ msgstr "വ്യാകരണ വിശകലനം"
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid "Learn to identify grammatical classes."
+#~ msgstr "വ്യാകരണത്തിലെ ശബ്ദഭേദങ്ങൾ തിരിച്ചറിയാൻ പഠിക്കാം."
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid ""
+#~ "Select a grammatical class from the list, then select the box under a "
+#~ "word and assign it the class."
+#~ msgstr ""
+#~ "തന്നിരിക്കുന്ന പട്ടികയിൽ നിന്നും ഒരു ശബ്ദഭേദം തിരഞ്ഞെടുക്കുക. എന്നിട്ട്, ഒരു വാക്കിനു "
+#~ "താഴെയുള്ള കളം തിരഞ്ഞെടുത്ത് അതിലേക്ക് ആ ശബ്ദഭേദം കൊടുക്കുക."
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid "Leave the box blank if no class matches."
+#~ msgstr "അനുയോജ്യമായ ഒരു ശബ്ദഭേദവും ഇല്ലെങ്കിൽ കളം ഒഴിച്ചിടാം."
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
