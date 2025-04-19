@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-04-11 18:55+0300\n"
+"PO-Revision-Date: 2025-04-18 17:27+0300\n"
 "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -2969,22 +2969,12 @@ msgstr ""
 "ліку. Калі справіцеся, то націсніце OK."
 
 #: activities/binary_bulb/BinaryBulb.qml:84
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "This activity teaches how to convert decimal numbers to binary numbers."
 msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr ""
 "Гэтае практыкаванне навучае як канвертаваць дзесятковыя лічбы ў бінарныя."
 
 #: activities/binary_bulb/BinaryBulb.qml:88
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Computers use transistors to count and transistors have only two states, "
-#| "0 and 1. Mathematically, these states are represented by 0 and 1, which "
-#| "makes up the binary system of numeration."
 msgctxt "BinaryBulb|"
 msgid ""
 "Computers use transistors to count and transistors have only two states, 0 "
@@ -2992,23 +2982,15 @@ msgid ""
 "up the binary system of numeration."
 msgstr ""
 "Кампутары выкарыстоўваюць транзістары для ліку, а транзістары могуць мець "
-"толькі два станы: адкрыты і закрыты. Матэматычна, гэтыя становішчы "
-"выражаюцца як 0 і 1, якія складаюць бінарную сістэму."
+"толькі два станы: адкрыты і закрыты. Матэматычна гэтыя становішчы выражаюцца "
+"як 0 і 1, якія складаюць бінарную сістэму вылічэння."
 
 #: activities/binary_bulb/BinaryBulb.qml:92
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
-msgstr "Ў практыкаванні 0 і 1 сімулююцца выключанымі і ўключанымі лямпачкамі."
+msgstr "У практыкаванні 0 і 1 сімулююцца выключанымі і ўключанымі лямпачкамі."
 
 #: activities/binary_bulb/BinaryBulb.qml:96
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Binary system uses these numbers very efficiently, allowing to count from "
-#| "0 to 255 with 8 bits only."
 msgctxt "BinaryBulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
@@ -3018,13 +3000,6 @@ msgstr ""
 "лічыць ад 0 да 255, выкарыстоўваючы толькі 8 біт."
 
 #: activities/binary_bulb/BinaryBulb.qml:100
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Each bit adds a progressive value, corresponding to the powers of 2, "
-#| "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → "
-#| "2²=4 , bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit "
-#| "8 → 2⁷=128."
 msgctxt "BinaryBulb|"
 msgid ""
 "Each bit adds a progressive value, corresponding to the powers of 2, "
@@ -3032,24 +3007,16 @@ msgid ""
 "bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit 8 → "
 "2⁷=128."
 msgstr ""
-"Кожны біт дадае ў прагрэсію значэнне, якое адпавядае ступені 2, адлічваючы "
+"Кожны біт дадае нарастаючае значэнне, якое адпавядае ступені 2, адлічваючы "
 "справа налева: біт 1 → 2⁰=1 , біт 2 → 2¹=2 , біт 3 → 2²=4 , біт 4 → 2³=8 , "
 "біт 5 → 2⁴=16 , біт 6 → 2⁵=32 , біт 7 → 2⁶=64 , біт 8 → 2⁷=128."
 
 #: activities/binary_bulb/BinaryBulb.qml:104
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
-msgstr "Каб канвертаваць дзесятковую 5 у бінарнае значэнне, дадаюцца 1 і 4."
+msgstr "Каб канвертаваць дзесятковую 5 у бінарнае значэнне, складаюцца 1 і 4."
 
 #: activities/binary_bulb/BinaryBulb.qml:108
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 "
-#| "is equal to binary 101."
 msgctxt "BinaryBulb|"
 msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
@@ -3059,9 +3026,6 @@ msgstr ""
 "5 роўна бінарнаму 101."
 
 #: activities/binary_bulb/BinaryBulb.qml:112
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "This image will help you to compute bits' value."
 msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Гэтая выява дапаможа вам вылічыць значэнне бітаў."
@@ -16753,18 +16717,13 @@ msgid ""
 msgstr ""
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:24
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr ""
-"У выпадку слушнага адказу, увядзіце з клавіятуры адпаведны вынік і "
-"пстрыкніце па кнопцы OK каб спраўдзіць ваш адказ."
+"У выпадку слушнага адказу, увядзіце адпаведны вынік і пстрыкніце па кнопцы "
+"OK каб спраўдзіць ваш адказ."
 
 #: activities/learn_decimals_additions/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -16822,32 +16781,22 @@ msgid ""
 msgstr ""
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Click on the squares to subtract them and display the result of the "
-#| "operation, and click on the OK button to validate your answer."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
 "operation, and click on the OK button to validate your answer."
 msgstr ""
-"Пстрыкніце па квадратах, каб адняць іх і паказаць вынік аперацыі, і "
+"Пстрыкніце па квадратах, каб адняць іх і паказаць вынік аперацыі. Затым "
 "пстрыкніце па кнопцы OK каб спраўдзіць ваш адказ."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:24
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr ""
-"У выпадку слушнага адказу, увядзіце з клавіятуры адпаведны вынік і "
-"пстрыкніце па кнопцы OK каб спраўдзіць ваш адказ."
+"У выпадку калі адказ слушны, увядзіце адпаведны вынік і пстрыкніце па кнопцы "
+"OK каб спраўдзіць ваш адказ."
 
 #: activities/learn_decimals_subtractions/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -17007,12 +16956,6 @@ msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr ""
 
 #: activities/learn_quantities/Learn_quantities.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Arrange the pictures to make a coherent story. Drag the pictures from the "
-#| "sidebar to the corresponding dots, then click the OK button to validate "
-#| "your answer."
 msgctxt "Learn_quantities|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "
@@ -17020,8 +16963,9 @@ msgid ""
 "corresponds to the requested quantity. Then click on the OK button to "
 "validate your answer."
 msgstr ""
-"Упарадкуйце выявы, каб узнавіць паслядоўную гісторыю. Перацягвайце выявы з "
-"бакавой панэлі на адпаведныя пункты, затым пстрыкніце кнопку OK каб "
+"Перацягвайце стрэлку каб выбраць некалькі апельсінаў, і перацягвайце "
+"выбраныя апельсіны на пусты абшар. Паўтарайце гэтыя крокі, пакуль колькасць "
+"апельсінаў не стане роўнай паказанаму ліку. Затым пстрыкніце кнопку OK каб "
 "праверыць ваш адказ."
 
 #: activities/learn_quantities/resource/1/Data.qml:13
@@ -20155,26 +20099,15 @@ msgid "Try again"
 msgstr "Паспрабуйце нанова"
 
 #: activities/nine_men_morris/NineMenMorris.qml:348
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "You and Tux start with 9 pieces each, and take turns to place your pieces "
-#| "on the empty spots of the board (by clicking on the spots)."
 msgctxt "NineMenMorris|"
 msgid ""
 "You and Tux start with 9 pieces each, and take turns to place your pieces on "
 "the empty spots of the board (by clicking on the spots)."
 msgstr ""
 "Вы з Туксам кожны пачынаеце з дзевяццю фішкамі, і робіце імі хады ў вольныя "
-"пункты (пстрычком па пункту) на дошцы."
+"пункты на дошцы (пстрычком па выбранаму пункту)."
 
 #: activities/nine_men_morris/NineMenMorris.qml:352
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
-#| "remove it. Pieces of formed mill can not be removed unless no other "
-#| "pieces are left on the board."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
@@ -20182,8 +20115,8 @@ msgid ""
 "are left on the board."
 msgstr ""
 "Калі Вам удалося ўтварыць млын (радок з трох фішак), то Вы забіраеце фішку "
-"Тукса. Нельга забіраць фішкі з млыноў, пакуль яшчэ ёсць асобныя фішкі на "
-"дошцы."
+"Тукса. З сабраных млыноў можна забіраць фішкі толькі тады, калі няма асобных "
+"фішак на дошцы."
 
 #: activities/nine_men_morris/NineMenMorris.qml:356
 #, fuzzy
