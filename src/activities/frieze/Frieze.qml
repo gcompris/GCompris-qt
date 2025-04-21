@@ -106,7 +106,6 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
             anchors.topMargin: GCStyle.baseMargins
-            textItem.text: qsTr("What is the binary representation of %1?").arg(items.numberToConvert)
         }
 
         Item {
