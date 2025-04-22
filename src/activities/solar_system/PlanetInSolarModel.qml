@@ -30,8 +30,9 @@ Item {
         fontSizeMode: Text.Fit
         font.pointSize: NaN // need to clear font.pointSize explicitly
         font.pixelSize: parent.width * 0.18
-        color: "white"
+        color: GCStyle.whiteText
         text: planetName
+        anchors.margins: 2 * GCStyle.baseMargins
 
         states: [
                 State {
@@ -46,8 +47,6 @@ Item {
                     }
                     PropertyChanges {
                         planetNameText {
-                            anchors.bottomMargin: 20 * ApplicationInfo.ratio
-                            anchors.leftMargin: 0
                             horizontalAlignment: Text.AlignHCenter
                         }
                     }
@@ -64,8 +63,6 @@ Item {
                     }
                     PropertyChanges {
                         planetNameText {
-                            anchors.bottomMargin: 0
-                            anchors.leftMargin: 20 * ApplicationInfo.ratio
                             horizontalAlignment: Text.AlignLeft
                         }
                     }
@@ -89,8 +86,7 @@ Item {
     Image {
         id: planetImage
         z: -10
-        anchors.horizontalCenter: parent.horizontalCenter
-        anchors.verticalCenter: parent.verticalCenter
+        anchors.centerIn: parent
         width: parent.width * planetSize
         height: planetImage.width
         fillMode: Image.PreserveAspectFit
