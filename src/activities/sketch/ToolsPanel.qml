@@ -18,14 +18,14 @@ FoldablePanel {
     icon2Rotation: rotationSlider.visible ? rotationSlider.value : 0
     icon2Mirror: mirrorButton.visible ? mirrorButton.checked : false
 
-    readonly property int settingsColumnWidth: (settingsArea.width - ApplicationInfo.ratio - items.baseMargins * 2) * 0.5
-    readonly property int settingsLineHeight: (settingsArea.height - 6 * items.baseMargins) * 0.1
+    readonly property int settingsColumnWidth: (settingsArea.width - GCStyle.thinnestBorder - GCStyle.baseMargins) * 0.5
+    readonly property int settingsLineHeight: (settingsArea.height - 6 * GCStyle.halfMargins) * 0.1
     readonly property int settingsDoubleLineHeight: settingsLineHeight * 2
     readonly property int modeButtonsSize: Math.min(
-        (settingsColumnWidth - items.baseMargins * 2) * 0.33,
-        (settingsArea.height - items.baseMargins * 3 - settingsLineHeight * 3) * 0.5)
+        (settingsColumnWidth - GCStyle.baseMargins) * 0.33,
+        (settingsArea.height - GCStyle.halfMargins * 3 - settingsLineHeight * 3) * 0.5)
 
-    readonly property int stampButtonsSize: (settingsColumnWidth - items.baseMargins * 2) * 0.25
+    readonly property int stampButtonsSize: (settingsColumnWidth - GCStyle.baseMargins) * 0.25
 
     property Item activeToolPanel: brushToolPanel
 
@@ -244,10 +244,10 @@ FoldablePanel {
         anchors.top: parent.top
         anchors.left: parent.left
         anchors.right: parent.right
-        anchors.margins: items.baseMargins
+        anchors.margins: GCStyle.halfMargins
         height: toolButtonsSize
 
-        property int toolButtonsSize: Math.min((toolButtonsGrid.width - items.baseMargins * 5) * 0.16,
+        property int toolButtonsSize: Math.min((toolButtonsGrid.width - GCStyle.halfMargins * 5) * 0.16,
                                                60 * ApplicationInfo.ratio)
 
         GCText {
@@ -266,13 +266,13 @@ FoldablePanel {
 
         Grid {
             id: toolButtonsGrid
-            spacing: items.baseMargins
+            spacing: GCStyle.halfMargins
             columns: 6
             rows: 1
             height: parent.height
-            width: parent.width * 0.75 - items.baseMargins
+            width: parent.width * 0.75 - GCStyle.halfMargins
             anchors.left: toolsLabel.right
-            anchors.leftMargin: items.baseMargins
+            anchors.leftMargin: GCStyle.halfMargins
 
             property Item selectedButton: brushToolButton // NOTE init default value on start
 
@@ -354,11 +354,11 @@ FoldablePanel {
         id: panelVerticalSpacer
         color: items.contentColor
         opacity: 0.5
-        height: ApplicationInfo.ratio
+        height: GCStyle.thinnestBorder
         anchors.top: toolsArea.bottom
         anchors.left: parent.left
         anchors.right: parent.right
-        anchors.margins: items.baseMargins
+        anchors.margins: GCStyle.halfMargins
     }
 
     Item {
@@ -367,7 +367,7 @@ FoldablePanel {
         anchors.bottom: parent.bottom
         anchors.left: parent.left
         anchors.right: parent.right
-        anchors.margins: items.baseMargins
+        anchors.margins: GCStyle.halfMargins
 
         GCText {
             id: toolTitle
@@ -385,7 +385,7 @@ FoldablePanel {
             id: toolPanelArea
             width: toolsPanel.settingsColumnWidth
             anchors.top: toolTitle.bottom
-            anchors.topMargin: items.baseMargins
+            anchors.topMargin: GCStyle.halfMargins
             anchors.left: parent.left
             anchors.bottom: resetButtonArea.top
 
@@ -431,10 +431,11 @@ FoldablePanel {
                 height: toolsPanel.settingsLineHeight
                 anchors.left: parent.left
                 anchors.right: resetMode.left
-                anchors.rightMargin: items.baseMargins
+                anchors.rightMargin: GCStyle.halfMargins
                 anchors.verticalCenter: resetMode.verticalCenter
                 fontSize: regularSize
                 fontSizeMode: Text.Fit
+                wrapMode: Text.WordWrap
                 verticalAlignment: Text.AlignVCenter
                 horizontalAlignment: Text.AlignRight
             }
@@ -458,10 +459,8 @@ FoldablePanel {
             opacity: 0.5
             anchors.top: parent.top
             anchors.bottom: parent.bottom
-            anchors.left: toolPanelArea.right
-            anchors.leftMargin: items.baseMargins
-            anchors.right: modeSettingsArea.left
-            anchors.rightMargin: items.baseMargins
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: GCStyle.thinnestBorder
         }
 
         Item {
@@ -473,7 +472,7 @@ FoldablePanel {
 
             Column {
                 anchors.fill: parent
-                spacing: items.baseMargins
+                spacing: GCStyle.halfMargins
 
                 // Not more than 5 settings visible for a tool; current max. is 4
                 // visible values on start set according to roundBrush drawing tool

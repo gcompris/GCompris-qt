@@ -34,7 +34,7 @@ Item {
         anchors.horizontalCenter: parent.horizontalCenter
         columns: 3
         rows: 2
-        spacing: items.baseMargins
+        spacing: GCStyle.halfMargins
 
         SelectionButton {
             // rectangle mode

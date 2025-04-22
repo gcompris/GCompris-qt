@@ -10,7 +10,7 @@ import "../../core"
 
 Rectangle {
     id: backgroundSelector
-    color: items.panelColor
+    color: GCStyle.darkBg
     visible: false
     z: 1000
     property bool isDialog: true
@@ -55,10 +55,6 @@ Rectangle {
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.bottom: parent.bottom
-        columnWidth: (parent.width - 5 * items.baseMargins) * 0.5
-        lineHeight: toolsPanel.settingsLineHeight
-        doubleLineHeight: toolsPanel.settingsDoubleLineHeight
-        buttonSize: toolsPanel.modeButtonsSize
 
         palette: ["#ffffff","#e87836","#e8ba36","#75d11c","#1cd1d1","#1c8cd1","#cc78d6","#e07070","#000000"]
         defaultPalette: ["#ffffff","#e87836","#e8ba36","#75d11c","#1cd1d1","#1c8cd1","#cc78d6","#e07070","#000000"]

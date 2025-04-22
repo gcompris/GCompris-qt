@@ -45,14 +45,14 @@ Item {
         anchors.bottom: parent.bottom
         anchors.left: parent.left
         anchors.right: parent.right
-        anchors.margins: items.baseMargins
+        anchors.margins: GCStyle.halfMargins
         color: "#20FFFFFF"
-        radius: items.baseMargins
+        radius: GCStyle.halfMargins
 
         Flickable {
             id: textFlickable
             anchors.fill: parent
-            anchors.margins: items.baseMargins
+            anchors.margins: GCStyle.halfMargins
             clip: true
 
             function ensureVisible(r: var) {
@@ -74,7 +74,7 @@ Item {
                 wrapMode: TextEdit.Wrap
                 font.pointSize: 20
                 color: items.contentColor
-                selectionColor: items.panelColor
+                selectionColor: GCStyle.darkBg
                 onCursorRectangleChanged: textFlickable.ensureVisible(cursorRectangle);
             }
         }

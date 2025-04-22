@@ -35,7 +35,7 @@ Item {
         id: buttonIcon
         source: parent.iconSource
         anchors.fill: parent
-        anchors.margins: items.baseMargins
+        anchors.margins: GCStyle.halfMargins
         sourceSize.width: height
         sourceSize.height: height
         fillMode: Image.PreserveAspectFit
@@ -56,9 +56,9 @@ Item {
         id: highlight
         visible: selectionButton.isButtonSelected
         anchors.fill: parent
-        radius: items.baseMargins
+        radius: GCStyle.halfMargins
         border.color: items.contentColor
-        border.width: 2 * ApplicationInfo.ratio
+        border.width: GCStyle.thinBorder
         color: "transparent"
     }
 }

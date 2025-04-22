@@ -20,8 +20,8 @@ FoldablePanel {
     Column {
         id: panelLayout
         anchors.fill: parent
-        anchors.margins: items.baseMargins
-        spacing: items.baseMargins
+        anchors.margins: GCStyle.halfMargins
+        spacing: GCStyle.halfMargins
 
         readonly property int lineHeight: height * 0.15
         readonly property int buttonSize: Math.min(lineHeight, ApplicationInfo.ratio * 60)
@@ -52,7 +52,7 @@ FoldablePanel {
                 anchors.bottom: parent.bottom
                 anchors.left: parent.left
                 anchors.right: saveButton.left
-                anchors.margins: items.baseMargins
+                anchors.margins: GCStyle.halfMargins
                 horizontalAlignment: Text.AlignRight
                 verticalAlignment: Text.AlignVCenter
 
@@ -91,7 +91,7 @@ FoldablePanel {
                 anchors.bottom: parent.bottom
                 anchors.left: parent.left
                 anchors.right: openButton.left
-                anchors.margins: items.baseMargins
+                anchors.margins: GCStyle.halfMargins
                 horizontalAlignment: Text.AlignRight
                 verticalAlignment: Text.AlignVCenter
 
@@ -109,7 +109,7 @@ FoldablePanel {
             color: items.contentColor
             opacity: 0.5
             width: parent.width
-            height: ApplicationInfo.ratio
+            height: GCStyle.thinnestBorder
         }
 
         GCText {
@@ -121,7 +121,7 @@ FoldablePanel {
             height: panelLayout.lineHeight
             anchors.right: parent.right
             anchors.left: parent.left
-            anchors.margins: items.baseMargins
+            anchors.margins: GCStyle.halfMargins
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
         }
@@ -134,7 +134,7 @@ FoldablePanel {
                 id: bgColorButton
                 width: panelLayout.buttonSize
                 height: panelLayout.buttonSize
-                radius: items.baseMargins
+                radius: GCStyle.halfMargins
                 anchors.left: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
                 color: backgroundColorSelector.newBackgroundColor
@@ -150,7 +150,7 @@ FoldablePanel {
                 anchors.bottom: parent.bottom
                 anchors.left: parent.left
                 anchors.right: bgColorButton.left
-                anchors.margins: items.baseMargins
+                anchors.margins: GCStyle.halfMargins
                 horizontalAlignment: Text.AlignRight
                 verticalAlignment: Text.AlignVCenter
             }
@@ -172,7 +172,7 @@ FoldablePanel {
                 id: bgImageButton
                 width: panelLayout.buttonSize
                 height: panelLayout.buttonSize
-                radius: items.baseMargins
+                radius: GCStyle.halfMargins
                 anchors.left: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
                 color: "transparent"
@@ -180,7 +180,7 @@ FoldablePanel {
 
                 Image {
                     anchors.fill: parent
-                    anchors.margins: items.baseMargins
+                    anchors.margins: GCStyle.halfMargins
                     fillMode: Image.PreserveAspectFit
                     source: items.backgroundToLoad
                 }
@@ -196,7 +196,7 @@ FoldablePanel {
                 anchors.bottom: parent.bottom
                 anchors.left: parent.left
                 anchors.right: bgImageButton.left
-                anchors.margins: items.baseMargins
+                anchors.margins: GCStyle.halfMargins
                 horizontalAlignment: Text.AlignRight
                 verticalAlignment: Text.AlignVCenter
             }
@@ -237,7 +237,7 @@ FoldablePanel {
                 anchors.bottom: parent.bottom
                 anchors.left: parent.left
                 anchors.right: newButton.left
-                anchors.margins: items.baseMargins
+                anchors.margins: GCStyle.halfMargins
                 horizontalAlignment: Text.AlignRight
                 verticalAlignment: Text.AlignVCenter
 

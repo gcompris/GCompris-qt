@@ -29,7 +29,7 @@ Item {
     GridView {
         id: modeList
         anchors.fill: parent
-        anchors.bottomMargin: items.baseMargins
+        anchors.bottomMargin: GCStyle.halfMargins
         cellHeight: toolsPanel.stampButtonsSize
         cellWidth: toolsPanel.stampButtonsSize
         currentIndex: 0
@@ -44,10 +44,10 @@ Item {
             Rectangle {
                 z: -1
                 anchors.fill: parent
-                anchors.margins: items.baseMargins
+                anchors.margins: GCStyle.halfMargins
                 color: items.contentColor
                 opacity: 0.3
-                radius: items.baseMargins
+                radius: GCStyle.halfMargins
             }
         }
         ScrollBar.vertical: ScrollBar { policy: ScrollBar.AlwaysOn }

@@ -30,7 +30,7 @@ Item {
             id: sliderLabel
             text: ""
             color: items.contentColor
-            width: sliderSettings.width - sliderInfo.width - items.baseMargins * 2
+            width: sliderSettings.width - sliderInfo.width - GCStyle.baseMargins
             height: sliderSettings.controlsHeight
             fontSize: regularSize
             fontSizeMode: Text.Fit
@@ -53,7 +53,7 @@ Item {
             Rectangle {
                 id: sliderInfo
                 anchors.left: slider.right
-                anchors.leftMargin: items.baseMargins
+                anchors.leftMargin: GCStyle.halfMargins
                 anchors.bottom: slider.bottom
                 width: sliderSettings.controlsHeight * 1.5
                 height: width
@@ -64,7 +64,7 @@ Item {
                     id: infoImage
                     visible: sliderSettings.useImageInfo
                     anchors.centerIn: parent
-                    width: parent.width - items.baseMargins
+                    width: parent.width - GCStyle.halfMargins
                     height: width
                     sourceSize.width: width
                     sourceSize.height: width
@@ -78,7 +78,7 @@ Item {
                     text: slider.value
                     color: items.contentColor
                     anchors.centerIn: parent
-                    width: parent.width - items.baseMargins
+                    width: parent.width - GCStyle.halfMargins
                     height: width
                     fontSize: regularSize
                     fontSizeMode: Text.Fit

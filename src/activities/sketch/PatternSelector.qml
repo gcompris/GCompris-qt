@@ -45,7 +45,7 @@ Item {
     Row {
         width: parent.width
         height: parent.height
-        spacing: items.baseMargins
+        spacing: GCStyle.halfMargins
 
         Item {
             id: leftButton
@@ -72,7 +72,7 @@ Item {
 
         ListView {
             id: patternListView
-            width: patternSelector.width - patternSelector.height - items.baseMargins * 2
+            width: patternSelector.width - patternSelector.height - GCStyle.baseMargins
             height: parent.height
             orientation: ListView.Horizontal
             boundsBehavior: Flickable.StopAtBounds
@@ -81,7 +81,7 @@ Item {
                 width: height
                 color: "transparent"
                 border.color: items.contentColor
-                border.width: 2 * ApplicationInfo.ratio
+                border.width: GCStyle.thinBorder
                 x: patternListView.currentItem.x
                 y: patternListView.currentItem.y
             }
@@ -94,7 +94,7 @@ Item {
                 Canvas {
                     id: buttonCanvas
                     anchors.fill: parent
-                    anchors.margins: items.baseMargins
+                    anchors.margins: GCStyle.halfMargins
                     onPaint: {
                         var ctx = getContext("2d");
                         var pattern = ctx.createPattern(Qt.rgba(1,1,1,0.5), items.patternList[index]);
