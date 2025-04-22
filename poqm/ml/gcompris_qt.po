@@ -9686,15 +9686,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "ടാബ്: ഉത്തരം എഡിറ്റു ചെയ്യലും മാതൃക കാണലും തമ്മിൽ മാറാൻ"
 
-#: activities/frieze/Frieze.qml:109
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulb|"
-#| msgid "What is the binary representation of %1?"
-msgctxt "Frieze|"
-msgid "What is the binary representation of %1?"
-msgstr "എന്താണ് %1-ന്റെ ബൈനറി രൂപം?"
-
-#: activities/frieze/Frieze.qml:288
+#: activities/frieze/Frieze.qml:287
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "ഞാൻ‍ തയ്യാറാണ്"
@@ -27473,6 +27465,13 @@ msgstr "നോക്കാതെ വിടുക"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "തുടങ്ങാം"
+
+#, fuzzy
+#~| msgctxt "BinaryBulb|"
+#~| msgid "What is the binary representation of %1?"
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr "എന്താണ് %1-ന്റെ ബൈനറി രൂപം?"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"

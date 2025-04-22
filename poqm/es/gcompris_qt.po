@@ -9986,13 +9986,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Tabulador: cambiar entre editar el friso y ver el modelo"
 
-#: activities/frieze/Frieze.qml:109
-#, qt-format
-msgctxt "Frieze|"
-msgid "What is the binary representation of %1?"
-msgstr "¿Cuál es la representación binaria de %1?"
-
-#: activities/frieze/Frieze.qml:288
+#: activities/frieze/Frieze.qml:287
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Estoy preparado"
@@ -28115,3 +28109,7 @@ msgstr "Omitir"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Iniciar"
+
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr "¿Cuál es la representación binaria de %1?"

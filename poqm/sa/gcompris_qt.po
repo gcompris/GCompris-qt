@@ -9550,15 +9550,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "ट्याब्: फ्रीजस्य सम्पादनस्य मॉडलस्य दर्शनस्य च मध्ये स्विच् कुर्वन्तु"
 
-#: activities/frieze/Frieze.qml:109
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulb|"
-#| msgid "What is the binary representation of %1?"
-msgctxt "Frieze|"
-msgid "What is the binary representation of %1?"
-msgstr "%1 इत्यस्य द्विचक्रीयप्रतिपादनं किम् ?"
-
-#: activities/frieze/Frieze.qml:288
+#: activities/frieze/Frieze.qml:287
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "अहं सज्जः अस्मि"
@@ -27210,6 +27202,13 @@ msgstr "क्षिपते"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "प्रारंभः"
+
+#, fuzzy
+#~| msgctxt "BinaryBulb|"
+#~| msgid "What is the binary representation of %1?"
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr "%1 इत्यस्य द्विचक्रीयप्रतिपादनं किम् ?"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "<b>Keyboard controls:"

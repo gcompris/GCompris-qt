@@ -9637,15 +9637,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Tab: 指示エリアとメイン/処理エリアを切り替えます"
 
-#: activities/frieze/Frieze.qml:109
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulb|"
-#| msgid "What is the binary representation of %1?"
-msgctxt "Frieze|"
-msgid "What is the binary representation of %1?"
-msgstr "%1 を二進数で表すと？"
-
-#: activities/frieze/Frieze.qml:288
+#: activities/frieze/Frieze.qml:287
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr ""
@@ -27488,6 +27480,13 @@ msgstr "スキップ"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "スタート"
+
+#, fuzzy
+#~| msgctxt "BinaryBulb|"
+#~| msgid "What is the binary representation of %1?"
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr "%1 を二進数で表すと？"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"

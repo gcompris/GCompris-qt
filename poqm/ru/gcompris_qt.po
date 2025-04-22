@@ -9871,13 +9871,7 @@ msgstr ""
 "Tab: переключение между редактированием последовательности и просмотром "
 "модели"
 
-#: activities/frieze/Frieze.qml:109
-#, qt-format
-msgctxt "Frieze|"
-msgid "What is the binary representation of %1?"
-msgstr "Как выглядит число %1 в двоичной системе?"
-
-#: activities/frieze/Frieze.qml:288
+#: activities/frieze/Frieze.qml:287
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Я готов"
@@ -27948,6 +27942,10 @@ msgstr "Пропустить"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Начать"
+
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr "Как выглядит число %1 в двоичной системе?"
 
 #, fuzzy
 #~ msgctxt "ActivityInfo|"
