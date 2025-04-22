@@ -29,27 +29,16 @@ Item {
     property string closenessMeterValue
     property int numberOfCorrectAnswers: 0
 
-    Rectangle {
+    GCTextPanel {
         id: questionArea
-        anchors.right: score.left
+        panelWidth: parent.width - 3 * GCStyle.baseMargins - score.width
+        panelHeight: Math.min(60 * ApplicationInfo.ratio, parent.height * 0.2)
+        fixedHeight: true
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.horizontalCenterOffset: -(score.width + GCStyle.baseMargins) * 0.5
         anchors.top: parent.top
-        anchors.left: parent.left
-        anchors.margins: 10 * ApplicationInfo.ratio
-        height: questionText.height + 10 * ApplicationInfo.ratio
-        color: 'white'
-        radius: 10
-        border.width: 3
-        opacity: 0.8
-        border.color: "black"
-        GCText {
-            id: questionText
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            color: "black"
-            width: parent.width
-            wrapMode: Text.Wrap
-            text: mainQuizScreen.question
-        }
+        anchors.topMargin: GCStyle.baseMargins
+        textItem.text: mainQuizScreen.question
     }
 
     // Model of options for a question
@@ -61,57 +50,49 @@ Item {
     Grid {
         id: imageAndOptionGrid
         columns: (activityBackground.horizontalLayout && !items.assessmentMode && items.currentLevel != 1) ? 2 : 1
-        spacing: 10 * ApplicationInfo.ratio
-        anchors.top: (questionArea.y + questionArea.height) > (score.y + score.height) ? questionArea.bottom : score.bottom
+        spacing: GCStyle.baseMargins
+        anchors.top: questionArea.bottom
         anchors.left: parent.left
         anchors.right: parent.right
+        anchors.bottom: closenessMeter.top
+        anchors.margins: GCStyle.baseMargins
+
 
         // An item to hold image of the planet
         Item {
-            width: activityBackground.horizontalLayout ? activityBackground.width * 0.40
-                                               : activityBackground.width - imageAndOptionGrid.anchors.margins * 2
-            height: activityBackground.horizontalLayout ? activityBackground.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio
-                                                : (activityBackground.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.37
-
+            id: planetImageArea
+            width: activityBackground.horizontalLayout ?
+                (parent.width - GCStyle.baseMargins) * 0.5 : parent.width
+            height: activityBackground.horizontalLayout ?
+                parent.height : (parent.height - GCStyle.baseMargins) * 0.5
             visible: !items.assessmentMode && (items.currentLevel != 1)
 
             Image {
                 id: planetImageMain
-                sourceSize.width: Math.min(parent.width, parent.height) * 0.9
+                width: Math.min(parent.width, parent.height)
                 anchors.centerIn: parent
                 source: mainQuizScreen.planetRealImage
-                fillMode: Image.PreserveAspectCrop
+                fillMode: Image.PreserveAspectFit
             }
         }
 
         // An item to hold the list view of options
         Item {
-            width: ( items.assessmentMode || items.currentLevel == 1 ) ? mainQuizScreen.width
-                                                                    : activityBackground.horizontalLayout ? activityBackground.width * 0.55
-                                                                                                  : activityBackground.width - imageAndOptionGrid.anchors.margins * 2
-            height: activityBackground.horizontalLayout ? itemHeightHorizontal
-                                                : itemHeightVertical
-
-            readonly property real itemHeightHorizontal: activityBackground.height - bar.height - closenessMeter.height - questionArea.height - 10 * ApplicationInfo.ratio
-            readonly property real itemHeightVertical: (items.bcurrentLevel != 1 && !items.assessmentMode) ? itemHeightHorizontal * 0.39
-                                                                                                       : itemHeightHorizontal * 0.8
+            width: planetImageArea.visible ? planetImageArea.width : parent.width
+            height: planetImageArea.visible ? planetImageArea.height : parent.height
 
             ListView {
                 id: optionListView
-                anchors.verticalCenter: parent.verticalCenter
-                anchors.horizontalCenter: parent.horizontalCenter
-                width: activityBackground.horizontalLayout ? activityBackground.width * 0.40
-                                                   : activityBackground.width - imageAndOptionGrid.anchors.margins * 2
-                height: activityBackground.horizontalLayout ? activityBackground.height - bar.height - closenessMeter.height * 1.5 - questionArea.height - 50 * ApplicationInfo.ratio
-                                                    : parent.itemHeightVertical
-                spacing: activityBackground.horizontalLayout ? 10 * ApplicationInfo.ratio : 7.5 * ApplicationInfo.ratio
+                anchors.fill: parent
+                spacing: GCStyle.halfMargins
                 orientation: Qt.Vertical
                 verticalLayoutDirection: ListView.TopToBottom
                 interactive: false
                 model: optionListModel
                 currentIndex: -1
+                highlightFollowsCurrentItem: false
 
-                readonly property real buttonHeight: (height - 3 * spacing) / 4
+                readonly property int buttonHeight: (height - 3 * spacing) * 0.25
 
                 add: Transition {
                     NumberAnimation { properties: "y"; from: parent.y; duration: 500 }
@@ -123,12 +104,14 @@ Item {
                 property bool blockAnswerButtons: false
 
                 highlight: Rectangle {
-                    scale: 1.2
-                    color:  "#2881C3"
+                    color:  GCStyle.highlightColor
                     visible: activityBackground.keyboardMode
-                    radius: 10 * ApplicationInfo.ratio
-                    Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
-                    Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
+                    width: optionListView.width + GCStyle.halfMargins
+                    height: optionListView.buttonHeight + GCStyle.halfMargins
+                    x: -GCStyle.halfMargins * 0.5
+                    y: optionListView.currentIndex * (optionListView.buttonHeight + optionListView.spacing) - GCStyle.halfMargins * 0.5
+                    Behavior on x { NumberAnimation { duration: 100 } }
+                    Behavior on y { NumberAnimation { duration: 100 } }
                 }
 
                 delegate: AnswerButton {
@@ -191,21 +174,21 @@ Item {
 
     Rectangle {
         id: closenessMeter
-        x: activityBackground.width - width - 10 * ApplicationInfo.ratio
-        y: activityBackground.height - bar.height - height - 10 * ApplicationInfo.ratio
         width: 170 * ApplicationInfo.ratio
         height: 40 * ApplicationInfo.ratio
-        radius: width * 0.06
-        border.width: 2
-        border.color: "black"
-        opacity: 0.78
+        anchors.right: parent.right
+        anchors.bottom: parent.bottom
+        anchors.margins: GCStyle.baseMargins
+        anchors.bottomMargin: bar.height * 1.3
+        radius: GCStyle.halfMargins
+        color: GCStyle.lightTransparentBg
         visible: !items.assessmentMode
 
         GCText {
             id: closenessText
-            color: "black"
-            height: parent.height - 10 * ApplicationInfo.ratio
-            width: parent.width - 20 * ApplicationInfo.ratio
+            color: GCStyle.darkText
+            height: parent.height - GCStyle.baseMargins
+            width: parent.width - 2 * GCStyle.baseMargins
             anchors.centerIn: parent
             fontSizeMode: Text.Fit
             horizontalAlignment: Text.AlignHCenter
@@ -245,8 +228,12 @@ Item {
 
     GCProgressBar {
         id: progressBar
-        height: bar.height * 0.35
-        width: parent.width * 0.35
+        width: 160 * ApplicationInfo.ratio
+        height: 30 * ApplicationInfo.ratio
+        anchors.right: parent.right
+        anchors.bottom: parent.bottom
+        anchors.rightMargin: GCStyle.baseMargins + GCStyle.halfMargins
+        anchors.bottomMargin: bar.height * 1.3
 
         readonly property real percentage: (mainQuizScreen.numberOfCorrectAnswers / score.numberOfSubLevels) * 100
         message: qsTr("%1%").arg(value)
@@ -255,31 +242,31 @@ Item {
         to: 100
 
         visible: items.assessmentMode
-        y: parent.height - bar.height - height - 10 * ApplicationInfo.ratio
-        x: parent.width - width * 1.1
 
         Rectangle {
             z: -1
-            radius: 5 * ApplicationInfo.ratio
-            anchors.centerIn: parent
-            height: progressBar.height * 1.25
+            radius: GCStyle.halfMargins
+            anchors.fill: parent
+            anchors.margins: -GCStyle.halfMargins
             width: parent.width
-            color: "#80EEEEEE"
+            color: GCStyle.lightTransparentBg
         }
     }
 
     Rectangle {
         id: restartAssessmentMessage
-        width: parent.width
-        height: parent.height - bar.height * 1.25
+        width: parent.width - 2 * GCStyle.baseMargins
+        height: parent.height - bar.height * 1.3
         anchors.top: parent.top
-        anchors.margins: 10 * ApplicationInfo.ratio
+        anchors.margins: GCStyle.baseMargins
         anchors.horizontalCenter: parent.horizontalCenter
-        radius: 4 * ApplicationInfo.ratio
+        radius: GCStyle.halfMargins
+        color: GCStyle.lightBg
         visible: items.assessmentMode && items.restartAssessmentMessage
         z: 4
         GCText {
             anchors.fill: parent
+            anchors.margins: GCStyle.baseMargins
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             wrapMode: Text.WordWrap
@@ -309,8 +296,8 @@ Item {
         id: score
         anchors.bottom: undefined
         anchors.right: parent.right
-        anchors.rightMargin: 10 * ApplicationInfo.ratio
         anchors.top: parent.top
+        anchors.margins: GCStyle.baseMargins
         z: 0
         isScoreCounter: items.assessmentMode ? false : true
     }

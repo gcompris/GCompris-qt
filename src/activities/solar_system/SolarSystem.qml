@@ -39,8 +39,8 @@ ActivityBase {
                 origin.x: stars.width / 2; origin.y: stars.height / 2; angle: 0;
                     NumberAnimation on angle{
                     loops: Animation.Infinite
-                    from: 0
-                    to: 360
+                    from: 360
+                    to: 0
                     duration: 108000
                 }
             }
@@ -189,18 +189,26 @@ ActivityBase {
             id: planetsModel
         }
 
-        readonly property int itemWidth: horizontalLayout ? activityBackground.width * 0.11 : (activityBackground.height - bar.height * 1.5) * 0.11
+        Item {
+            id: layoutArea
+            anchors.fill: parent
+            anchors.margins: GCStyle.baseMargins
+            anchors.bottomMargin: bar.height * 1.3
+        }
+
+        readonly property int itemWidth: horizontalLayout ? layoutArea.width * 0.11 : layoutArea.height * 0.11
 
         // Arrangement of all the planets in the solar system
         GridView {
             id: planetView
+            anchors.centerIn: layoutArea
             layoutDirection: Qt.LeftToRight
             verticalLayoutDirection: GridView.BottomToTop
             clip: false
             interactive: false
             visible: items.solarSystemVisible
             cellWidth: activityBackground.itemWidth
-            cellHeight: cellWidth
+            cellHeight: activityBackground.itemWidth
             model: planetsModel
             keyNavigationWraps: true
             currentIndex: -1
@@ -208,9 +216,7 @@ ActivityBase {
                 scale: 1.2
                 color:  "#80FFFFFF"
                 visible: activityBackground.keyboardMode
-                radius: 10 * ApplicationInfo.ratio
-                Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
-                Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
+                radius: GCStyle.halfMargins
             }
 
             delegate: PlanetInSolarModel {
@@ -223,44 +229,35 @@ ActivityBase {
             State {
                 name: "hGrid"
                 when: activityBackground.horizontalLayout
-                AnchorChanges {
-                    target: planetView
-                    anchors.horizontalCenter: activityBackground.horizontalCenter
-                    anchors.verticalCenter: activityBackground.verticalCenter
-                    anchors.top: undefined
-                }
                 PropertyChanges {
                     planetView {
-                        width: activityBackground.width
-                        height: planetView.cellHeight
+                        width: layoutArea.width
+                        height: activityBackground.itemWidth
+                        anchors.verticalCenterOffset: bar.height * 0.65
                     }
                 }
                 PropertyChanges {
+                    // Center rotation on Sun center
                     stars {
-                        x: -stars.width * 0.48
-                        y: -stars.height * 0.5 + activityBackground.height * 0.5
+                        x: (-stars.width + activityBackground.itemWidth) * 0.5 + planetView.x
+                        y: (-stars.height + activityBackground.height) * 0.5
                     }
                 }
             },
             State {
                 name: "vGrid"
                 when: !activityBackground.horizontalLayout
-                AnchorChanges {
-                    target: planetView
-                    anchors.horizontalCenter: activityBackground.horizontalCenter
-                    anchors.verticalCenter: undefined
-                    anchors.top: activityBackground.top
-                }
                 PropertyChanges {
                     planetView {
-                        width: planetView.cellWidth
-                        height: activityBackground.height - bar.height * 1.5
+                        width: activityBackground.itemWidth
+                        height: layoutArea.height
                     }
                 }
                 PropertyChanges {
+                    // Center rotation on Sun center
                     stars {
-                        x: -stars.width * 0.5 + activityBackground.width * 0.5
-                        y: -stars.height * 0.5 + activityBackground.height * 0.9
+                        x: (-stars.width + activityBackground.width) * 0.5
+                        y: (-stars.height - activityBackground.itemWidth) * 0.5 + (activityBackground.height - bar.height * 1.3)
                     }
                 }
             }
@@ -271,11 +268,8 @@ ActivityBase {
             visible: items.quizScreenVisible
         }
 
-        Rectangle {
+        Item {
             id: solarSystemImageHint
-            radius: 30
-            border.width: 5
-            border.color: "black"
             width: parent.width
             height: parent.height
             visible: false
@@ -297,26 +291,22 @@ ActivityBase {
                 id: solarSystemImage
                 fillMode: Image.PreserveAspectCrop
                 source: "qrc:/gcompris/src/activities/solar_system/resource/background.svg"
-                width: horizontalLayout ? parent.width * 2.5 : parent.height * 2.5
-                height: stars.width
-                sourceSize.width: stars.width
-                sourceSize.height: stars.width
-                x: horizontalLayout ? -stars.width * 0.48 : -stars.width * 0.5 + parent.width * 0.5
-                y: horizontalLayout ? -stars.height * 0.5 + parent.height * 0.5 : -stars.height * 0.5 + parent.height * 0.9
+                anchors.fill: parent
+                sourceSize.width: Math.max(parent.width, parent.height)
+                anchors.centerIn: parent
             }
 
             GridView {
                 id: planetViewHint
-                y: horizontalLayout ? (parent.height - bar.height) / 2 - cellHeight/2 : 0
-                x: horizontalLayout ? 0 : parent.width / 2 - cellHeight / 2
+                anchors.centerIn: parent
                 layoutDirection: Qt.LeftToRight
                 verticalLayoutDirection: GridView.BottomToTop
-                width: horizontalLayout ? parent.width : cellWidth
-                height: horizontalLayout ? cellHeight : parent.height - bar.height
+                width: horizontalLayout ? parent.width - 2 * GCStyle.baseMargins : activityBackground.itemWidth
+                height: horizontalLayout ? activityBackground.itemWidth : parent.height - bar.height
                 clip: false
                 interactive: false
                 cellWidth: activityBackground.itemWidth
-                cellHeight: cellWidth
+                cellHeight: activityBackground.itemWidth
                 model: items.planetsModel
 
                 delegate: PlanetInSolarModel {
@@ -333,7 +323,7 @@ ActivityBase {
                 property: horizontalLayout ? "x" : "y"
                 from: horizontalLayout ? -width : -height
                 to: 0
-                duration: 1200
+                duration: 500
                 easing.type: Easing.OutBack
             }
 
@@ -349,7 +339,7 @@ ActivityBase {
                     target: solarSystemImageHint
                     property: horizontalLayout ? "x" : "y"
                     to: horizontalLayout ? -width : -height
-                    duration: 1200
+                    duration: 500
                     easing.type: Easing.InSine
                 }
 
