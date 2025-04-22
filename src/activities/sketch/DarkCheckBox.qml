@@ -21,15 +21,14 @@ CheckBox {
         sourceSize.height: checkBox.height * 0.8
         anchors.right: checkBox.right
         anchors.verticalCenter: parent.verticalCenter
-        anchors.margins: items.baseMargins
-        source:
-        checkBox.checked ? "qrc:/gcompris/src/core/resource/apply_white.svg" :
-        "qrc:/gcompris/src/core/resource/cancel_white.svg"
+        anchors.margins: GCStyle.halfMargins
+        source: checkBox.checked ? "qrc:/gcompris/src/core/resource/apply_white.svg" :
+            "qrc:/gcompris/src/core/resource/cancel_white.svg"
     }
     GCText {
         color: items.contentColor
         anchors.right: indicator.left
-        anchors.rightMargin: items.baseMargins
+        anchors.rightMargin: GCStyle.halfMargins
         anchors.left: checkBox.left
         anchors.verticalCenter: checkBox.verticalCenter
         height: checkBox.height * 0.5

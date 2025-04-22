@@ -42,8 +42,6 @@ ActivityBase {
             id: items
             property Item selectedTool: brushTool
             property Item openPanel
-
-            readonly property int baseMargins: 5 * ApplicationInfo.ratio
             readonly property bool isHorizontalLayout: activityBackground.width >= activityBackground.height
             property int buttonSize
             property real panelHandleWidth
@@ -77,8 +75,7 @@ ActivityBase {
             property alias smudgeSound: smudgeSound
             property alias newImageDialog: newImageDialog
             property alias creationHandler: creationHandler
-            readonly property color panelColor: "#383838"
-            readonly property color contentColor: "#D2D2D2"
+            readonly property color contentColor: "#d2d2d2"
             property var canvasImageSource
             property int undoIndex: 0
             readonly property real devicePixelRatio: Screen.devicePixelRatio
@@ -181,8 +178,8 @@ ActivityBase {
             id: layoutArea
             anchors.bottom: parent.bottom
             anchors.left: parent.left
-            anchors.bottomMargin: bar.height * 1.2 + items.baseMargins
-            anchors.leftMargin: items.baseMargins
+            anchors.bottomMargin: bar.height * 1.2 + GCStyle.halfMargins
+            anchors.leftMargin: GCStyle.halfMargins
         }
 
         Item {
@@ -525,18 +522,18 @@ ActivityBase {
 
         Rectangle {
             id: undoPanel
-            radius: items.baseMargins
-            color: items.panelColor
+            radius: GCStyle.halfMargins
+            color: GCStyle.darkBg
             height: items.panelHandleHeight
             border.color: items.contentColor
             anchors.right: activityBackground.right
-            anchors.margins: -items.baseMargins
+            anchors.margins: -GCStyle.halfMargins
 
             Grid {
                 id: undoRedoGrid
-                x: items.baseMargins
+                x: GCStyle.halfMargins
                 y: items.panelGridY
-                spacing: items.baseMargins
+                spacing: GCStyle.halfMargins
                 columns: items.panelHandleColumns
                 rows: items.panelHandleRows
 
@@ -585,19 +582,19 @@ ActivityBase {
                 when: items.isHorizontalLayout
 
                 PropertyChanges {
-                    items.buttonSize: Math.min(((activityBackground.height - bar.height * 1.2) - 15 * items.baseMargins) * 0.125, 50 * ApplicationInfo.ratio)
-                    items.panelHandleWidth: items.buttonSize + items.baseMargins * 3
-                    items.panelHandleHeight: items.buttonSize * 2 + items.baseMargins * 3
+                    items.buttonSize: Math.min(((activityBackground.height - bar.height * 1.2) - 15 * GCStyle.halfMargins) * 0.125, 50 * ApplicationInfo.ratio)
+                    items.panelHandleWidth: items.buttonSize + GCStyle.halfMargins * 3
+                    items.panelHandleHeight: items.buttonSize * 2 + GCStyle.halfMargins * 3
                     items.panelHandleColumns: 1
                     items.panelHandleRows: 2
-                    items.panelGridY: items.baseMargins
+                    items.panelGridY: GCStyle.halfMargins
 
-                    layoutArea.anchors.topMargin: items.baseMargins
-                    layoutArea.anchors.rightMargin: items.buttonSize + items.baseMargins * 3
+                    layoutArea.anchors.topMargin: GCStyle.halfMargins
+                    layoutArea.anchors.rightMargin: items.buttonSize + GCStyle.halfMargins * 3
 
-                    toolsPanel.handleOffset: items.panelHandleHeight + items.baseMargins
-                    colorsPanel.handleOffset: (items.panelHandleHeight + items.baseMargins) * 2
-                    undoPanel.y: items.panelHandleHeight * 3 + items.baseMargins * 3
+                    toolsPanel.handleOffset: items.panelHandleHeight + GCStyle.halfMargins
+                    colorsPanel.handleOffset: (items.panelHandleHeight + GCStyle.halfMargins) * 2
+                    undoPanel.y: items.panelHandleHeight * 3 + GCStyle.halfMargins * 3
                     undoPanel.width: items.panelHandleWidth
                 }
                 AnchorChanges {
@@ -611,20 +608,20 @@ ActivityBase {
                 when: !items.isHorizontalLayout
 
                 PropertyChanges {
-                    items.buttonSize: Math.min((activityBackground.width - 15 * items.baseMargins) * 0.125, 50 * ApplicationInfo.ratio)
-                    items.panelHandleWidth: items.buttonSize * 2 + items.baseMargins * 3
-                    items.panelHandleHeight: items.buttonSize + items.baseMargins * 3
+                    items.buttonSize: Math.min((activityBackground.width - 15 * GCStyle.halfMargins) * 0.125, 50 * ApplicationInfo.ratio)
+                    items.panelHandleWidth: items.buttonSize * 2 + GCStyle.halfMargins * 3
+                    items.panelHandleHeight: items.buttonSize + GCStyle.halfMargins * 3
                     items.panelHandleRows: 1
                     items.panelHandleColumns: 2
-                    items.panelGridY: items.baseMargins * 2
+                    items.panelGridY: GCStyle.halfMargins * 2
 
-                    layoutArea.anchors.topMargin: items.buttonSize + items.baseMargins * 3
-                    layoutArea.anchors.rightMargin: items.baseMargins
+                    layoutArea.anchors.topMargin: items.buttonSize + GCStyle.halfMargins * 3
+                    layoutArea.anchors.rightMargin: GCStyle.halfMargins
 
-                    toolsPanel.handleOffset: items.panelHandleWidth + items.baseMargins
-                    colorsPanel.handleOffset: (items.panelHandleWidth + items.baseMargins) * 2
-                    undoPanel.y: -items.baseMargins
-                    undoPanel.width: items.panelHandleWidth + items.baseMargins
+                    toolsPanel.handleOffset: items.panelHandleWidth + GCStyle.halfMargins
+                    colorsPanel.handleOffset: (items.panelHandleWidth + GCStyle.halfMargins) * 2
+                    undoPanel.y: -GCStyle.halfMargins
+                    undoPanel.width: items.panelHandleWidth + GCStyle.halfMargins
                 }
                 AnchorChanges {
                     target: layoutArea

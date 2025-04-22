@@ -80,7 +80,7 @@ FoldablePanel {
         id: handleColorDisplay
         parent: icon2
         anchors.fill: parent
-        anchors.margins: ApplicationInfo.ratio
+        anchors.margins: GCStyle.thinnestBorder
         z: -1
         radius: width * 0.5
         color: colorSelector.selectedColor
@@ -105,7 +105,7 @@ FoldablePanel {
 
             GridView {
                 id: paletteGrid
-                width: parent.width - items.baseMargins * 2
+                width: parent.width - GCStyle.baseMargins
                 height: width
                 cellWidth: width * 0.33
                 cellHeight: cellWidth
@@ -132,7 +132,7 @@ FoldablePanel {
         anchors.top: parent.top
         anchors.left: parent.left
         anchors.right: parent.right
-        anchors.margins: items.baseMargins
+        anchors.margins: GCStyle.halfMargins
         height: 50 * ApplicationInfo.ratio
 
         function selectPreviousPalette() {
@@ -171,7 +171,7 @@ FoldablePanel {
         Row {
             anchors.left: palettesLabel.right
             anchors.right: parent.right
-            spacing: items.baseMargins
+            spacing: GCStyle.halfMargins
 
             Item {
                 id: leftButton
@@ -200,7 +200,7 @@ FoldablePanel {
 
             ListView {
                 id: paletteListView
-                width: parent.width - leftButton.width - rightButton.width - items.baseMargins * 2
+                width: parent.width - leftButton.width - rightButton.width - GCStyle.baseMargins
                 height: leftButton.height
                 orientation: ListView.Horizontal
                 boundsBehavior: Flickable.StopAtBounds
@@ -209,7 +209,7 @@ FoldablePanel {
                     width: height
                     color: "transparent"
                     border.color: items.contentColor
-                    border.width: 2 * ApplicationInfo.ratio
+                    border.width: GCStyle.thinBorder
                     x: paletteListView.currentItem.x
                     y: paletteListView.currentItem.y
                 }
@@ -255,11 +255,11 @@ FoldablePanel {
         id: panelVerticalSpacer
         color: items.contentColor
         opacity: 0.5
-        height: ApplicationInfo.ratio
+        height: GCStyle.thinnestBorder
         anchors.top: paletteSelector.bottom
         anchors.left: parent.left
         anchors.right: parent.right
-        anchors.margins: items.baseMargins
+        anchors.margins: GCStyle.halfMargins
     }
 
     ColorSelector {
@@ -268,10 +268,6 @@ FoldablePanel {
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.bottom: parent.bottom
-        columnWidth: toolsPanel.settingsColumnWidth
-        lineHeight: toolsPanel.settingsLineHeight
-        doubleLineHeight: toolsPanel.settingsDoubleLineHeight
-        buttonSize: toolsPanel.modeButtonsSize
 
         palette: colorsPanel.paletteList[paletteListView.currentIndex]
         defaultPalette: colorsPanel.defaultPaletteList[paletteListView.currentIndex]

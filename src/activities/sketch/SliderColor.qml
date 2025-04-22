@@ -58,9 +58,9 @@ Item {
     Rectangle {
         // slider container for borders
         anchors.left: parent.left
-        anchors.leftMargin: items.baseMargins
+        anchors.leftMargin: GCStyle.halfMargins
         anchors.right: parent.right
-        anchors.rightMargin: items.baseMargins
+        anchors.rightMargin: GCStyle.halfMargins
         anchors.top: sliderTitle.bottom
         height: toolsPanel.settingsLineHeight
         color: items.contentColor
@@ -68,21 +68,21 @@ Item {
         Rectangle {
             id: valueSlider
             anchors.fill: parent
-            anchors.margins: 2 * ApplicationInfo.ratio
+            anchors.margins: GCStyle.thinBorder
             gradient: sliderColor.gradient
 
             Rectangle {
                 id: sliderHandle
-                height: parent.height + 8 * ApplicationInfo.ratio
-                width: 6 * ApplicationInfo.ratio
+                height: parent.height + GCStyle.fatBorder
+                width: 2 * GCStyle.midBorder
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.left: parent.left
-                anchors.leftMargin: valueSlider.width * value - 3 *  ApplicationInfo.ratio
+                anchors.leftMargin: valueSlider.width * value - GCStyle.midBorder
                 color: items.contentColor
                 property real value: 0
                 Rectangle {
                     height: valueSlider.height
-                    width: 2 * ApplicationInfo.ratio
+                    width: GCStyle.thinBorder
                     anchors.centerIn: parent
                     color: Qt.rgba(1,1,1,1)
                 }

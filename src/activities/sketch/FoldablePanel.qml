@@ -6,11 +6,11 @@
  */
 
 import QtQuick
+import "../../core"
 
 Rectangle {
     id: foldablePanel
-
-    color: items.panelColor
+    color: GCStyle.darkBg
     border.color: items.contentColor
 
     property real handleOffset
@@ -69,14 +69,14 @@ Rectangle {
         z: -1
         width: items.panelHandleWidth
         height: items.panelHandleHeight
-        radius: items.baseMargins
-        color: items.panelColor
-        border.color: items.contentColor
+        radius: GCStyle.halfMargins
+        color: foldablePanel.color
+        border.color: foldablePanel.border.color
 
         Grid {
-            x: items.baseMargins
+            x: GCStyle.halfMargins
             y: items.panelGridY
-            spacing: items.baseMargins
+            spacing: GCStyle.halfMargins
             columns: items.panelHandleColumns
             rows: items.panelHandleRows
 
@@ -111,7 +111,7 @@ Rectangle {
 
     Rectangle {
         id: borderMask
-        color: items.panelColor
+        color: foldablePanel.color
     }
 
     NumberAnimation {
@@ -194,7 +194,7 @@ Rectangle {
                 foldablePanel.x: activityBackground.width
                 foldablePanel.y: 0
                 handle.anchors.topMargin: foldablePanel.handleOffset
-                handle.anchors.rightMargin: -items.baseMargins
+                handle.anchors.rightMargin: -GCStyle.halfMargins
                 handle.anchors.leftMargin: 0
                 borderMask.width: foldablePanel.border.width
                 borderMask.height: handle.height - 2 * foldablePanel.border.width
@@ -221,7 +221,7 @@ Rectangle {
                 foldablePanel.height: activityBackground.height * 0.6
                 foldablePanel.x: 0
                 foldablePanel.y: -foldablePanel.height
-                handle.anchors.topMargin: -items.baseMargins
+                handle.anchors.topMargin: -GCStyle.halfMargins
                 handle.anchors.rightMargin: 0
                 handle.anchors.leftMargin: foldablePanel.handleOffset
                 borderMask.width: handle.width - 2 * foldablePanel.border.width

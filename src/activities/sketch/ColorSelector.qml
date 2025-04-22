@@ -13,10 +13,10 @@ import "../../core"
 Item {
     id: colorSelector
 
-    property int columnWidth: 1
-    property int lineHeight: 1
-    property int doubleLineHeight: 2
-    property int buttonSize: 1
+    readonly property int columnWidth: (width - GCStyle.thinnestBorder - GCStyle.halfMargins * 2) * 0.5
+    readonly property int lineHeight: (height - 6 * GCStyle.halfMargins) * 0.1
+    readonly property int doubleLineHeight: lineHeight * 2
+    readonly property int buttonSize: Math.min(doubleLineHeight, columnWidth * 0.25)
     property list<color> palette: []
     property list<color> defaultPalette: []
 
@@ -70,7 +70,7 @@ Item {
         anchors.top: parent.top
         anchors.bottom: resetPaletteArea.top
         anchors.left: parent.left
-        anchors.margins: items.baseMargins
+        anchors.margins: GCStyle.halfMargins
         width: colorSelector.columnWidth
 
         GCText {
@@ -89,16 +89,16 @@ Item {
             id: colorButton
 
             Item {
-                width: colorButtonsGridArea.colorButtonsWidth
-                height: colorButtonsGridArea.colorButtonsHeight
+                width: colorButtonsGridArea.colorButtonsSize
+                height: colorButtonsGridArea.colorButtonsSize
 
                 property alias buttonColor: buttonRectangle.color
 
                 Rectangle {
                     id: buttonRectangle
-                    width: colorButtonsGridArea.colorButtonsWidth - items.baseMargins * 2
-                    height: colorButtonsGridArea.colorButtonsHeight - items.baseMargins * 2
-                    radius: items.baseMargins
+                    width: colorButtonsGridArea.colorButtonsSize - GCStyle.baseMargins
+                    height: width
+                    radius: GCStyle.halfMargins
                     anchors.centerIn: parent
                     color: colorSelector.palette[index]
                     border.color: items.contentColor
@@ -117,26 +117,26 @@ Item {
             id: colorButtonsGridArea
             width: parent.width
             anchors.top: colorsTitle.bottom
-            anchors.topMargin: items.baseMargins
+            anchors.topMargin: GCStyle.halfMargins
             anchors.left: parent.left
             anchors.bottom: parent.bottom
 
-            readonly property int colorButtonsWidth: (width - items.baseMargins * 2) * 0.33
-            readonly property int colorButtonsHeight: (height - items.baseMargins * 2) * 0.33
+            readonly property int colorButtonsSize: (Math.min(width, height) - GCStyle.baseMargins) * 0.33
 
             GridView {
                 id: colorButtonsGrid
-                anchors.centerIn: parent
-                width: parent.colorButtonsWidth * 3
-                height: parent.colorButtonsHeight * 3
-                cellWidth: parent.colorButtonsWidth
-                cellHeight: parent.colorButtonsHeight
+                anchors.top: parent.top
+                anchors.horizontalCenter: parent.horizontalCenter
+                width: parent.colorButtonsSize * 3
+                height: width
+                cellWidth: parent.colorButtonsSize
+                cellHeight: parent.colorButtonsSize
                 highlight: Rectangle {
-                    width: colorButtonsGridArea.colorButtonsWidth
-                    height: colorButtonsGridArea.colorButtonsHeight
-                    radius: items.baseMargins
+                    width: colorButtonsGridArea.colorButtonsSize
+                    height: colorButtonsGridArea.colorButtonsSize
+                    radius: GCStyle.baseMargins
                     border.color: items.contentColor
-                    border.width: 2 * ApplicationInfo.ratio
+                    border.width: GCStyle.thinBorder
                     x: colorButtonsGrid.currentItem ? colorButtonsGrid.currentItem.x : 0
                     y: colorButtonsGrid.currentItem ? colorButtonsGrid.currentItem.y : 0
                 }
@@ -152,9 +152,9 @@ Item {
     Item {
         id: resetPaletteArea
         anchors.bottom: parent.bottom
-        anchors.bottomMargin: items.baseMargins
         anchors.left: parent.left
-        width: colorSelector.columnWidth
+        anchors.right: horizontalSpacer.left
+        anchors.margins: GCStyle.halfMargins
         height: colorSelector.doubleLineHeight
 
         GCText {
@@ -164,8 +164,9 @@ Item {
             height: colorSelector.lineHeight
             anchors.left: parent.left
             anchors.right: resetPaletteButton.left
-            anchors.rightMargin: items.baseMargins
-            anchors.verticalCenter: resetPaletteButton.verticalCenter
+            anchors.rightMargin: GCStyle.halfMargins
+            anchors.verticalCenter: parent.verticalCenter
+            wrapMode: Text.WordWrap
             fontSize: regularSize
             fontSizeMode: Text.Fit
             verticalAlignment: Text.AlignVCenter
@@ -191,22 +192,22 @@ Item {
         opacity: 0.5
         anchors.top: parent.top
         anchors.bottom: parent.bottom
-        anchors.left: colorButtonsArea.right
-        anchors.margins: items.baseMargins
-        width: ApplicationInfo.ratio
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.margins: GCStyle.halfMargins
+        width: GCStyle.thinnestBorder
     }
 
     Item {
         id: colorControlsArea
-        width: colorSelector.columnWidth - 2 * items.baseMargins
+        width: colorSelector.columnWidth - GCStyle.baseMargins
         anchors.top: parent.top
         anchors.bottom: parent.bottom
         anchors.left: horizontalSpacer.right
-        anchors.leftMargin: items.baseMargins
+        anchors.leftMargin: GCStyle.halfMargins
 
         Column {
             anchors.fill: parent
-            spacing: items.baseMargins
+            spacing: GCStyle.halfMargins
 
             GCText {
                 id: selectedColorTitle
@@ -224,9 +225,9 @@ Item {
                 id: selectedColorRectangle
                 width: parent.width * 0.6
                 height: colorSelector.lineHeight
-                radius: items.baseMargins
+                radius: GCStyle.halfMargins
                 border.color: items.contentColor
-                border.width: 2 * ApplicationInfo.ratio
+                border.width: GCStyle.thinBorder
                 anchors.horizontalCenter: parent.horizontalCenter
                 color: colorSelector.palette[0]
             }
@@ -314,10 +315,9 @@ Item {
     Item {
         id: resetColorArea
         anchors.bottom: parent.bottom
-        anchors.bottomMargin: items.baseMargins
         anchors.right: parent.right
-        anchors.rightMargin: 2 * items.baseMargins
-        width: colorSelector.columnWidth
+        anchors.left: horizontalSpacer.right
+        anchors.margins: GCStyle.halfMargins
         height: colorSelector.doubleLineHeight
 
         GCText {
@@ -328,8 +328,9 @@ Item {
             height: colorSelector.lineHeight
             anchors.left: parent.left
             anchors.right: resetColorButton.left
-            anchors.rightMargin: items.baseMargins
-            anchors.verticalCenter: resetColorButton.verticalCenter
+            anchors.rightMargin: GCStyle.halfMargins
+            anchors.verticalCenter: parent.verticalCenter
+            wrapMode: Text.WordWrap
             fontSize: regularSize
             fontSizeMode: Text.Fit
             verticalAlignment: Text.AlignVCenter
@@ -338,7 +339,7 @@ Item {
 
         ActionButton {
             id: resetColorButton
-            buttonSize: Math.min(parent.height, colorSelector.buttonSize)
+            buttonSize: colorSelector.buttonSize
             iconSource: "qrc:/gcompris/src/activities/sketch/resource/reload.svg"
             anchors.right: parent.right
             anchors.verticalCenter: parent.verticalCenter

@@ -6,6 +6,7 @@
  */
 
 import QtQuick
+import "../../core"
 
 Item {
     id: selectionButton
@@ -20,16 +21,14 @@ Item {
     Rectangle {
         id: buttonColor
         anchors.fill: parent
-        radius: items.baseMargins
-        border.color: items.contentColor
         color: items.contentColor
+        radius: GCStyle.halfMargins
         opacity: 0.1
     }
 
     Image {
         id: buttonIcon
-        source: parent.iconSource
-        height: parent.height - items.baseMargins
+        height: parent.height - GCStyle.halfMargins
         width: height
         sourceSize.width: height
         sourceSize.height: height

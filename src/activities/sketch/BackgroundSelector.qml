@@ -14,7 +14,7 @@ import "../../core"
 
 Rectangle {
     id: backgroundSelector
-    color: items.panelColor
+    color: GCStyle.darkBg
     visible: false
     z: 1000
     property bool isDialog: true
@@ -57,7 +57,7 @@ Rectangle {
         anchors.right: parent.right
         anchors.bottom: parent.bottom
         anchors.left: parent.left
-        anchors.margins: 2 * items.baseMargins
+        anchors.margins: GCStyle.baseMargins
         cellWidth: items.isHorizontalLayout ? Math.floor(width * 0.2) : width * 0.33
         cellHeight: cellWidth
         model: Activity.backgroundImageSet
@@ -73,7 +73,6 @@ Rectangle {
                 width: parent.width * 0.9
                 height: width
                 sourceSize.width: width
-                sourceSize.height: width
                 fillMode: Image.PreserveAspectFit
             }
             MouseArea {
