@@ -9483,13 +9483,7 @@ msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr ""
 "ჩანართი: გადართვა მიმდევრობის ჩასწორებასა და მოდელის დათვალიერებას შორის"
 
-#: activities/frieze/Frieze.qml:109
-#, qt-format
-msgctxt "Frieze|"
-msgid "What is the binary representation of %1?"
-msgstr "რა არის %1-ის ორობითი წარმოდგენა?"
-
-#: activities/frieze/Frieze.qml:288
+#: activities/frieze/Frieze.qml:287
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "მზად ვარ"
@@ -26455,6 +26449,10 @@ msgstr "გამოტოვება"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "დაწყება"
+
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr "რა არის %1-ის ორობითი წარმოდგენა?"
 
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Grammatical analysis"

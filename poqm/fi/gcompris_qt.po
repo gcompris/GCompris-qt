@@ -10650,15 +10650,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Väilyönti: vaihda näkymättömän ja näkyvän tilan välillä"
 
-#: activities/frieze/Frieze.qml:109
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulb|"
-#| msgid "What is the binary representation of %1?"
-msgctxt "Frieze|"
-msgid "What is the binary representation of %1?"
-msgstr "Mitä %1 on binaarisena?"
-
-#: activities/frieze/Frieze.qml:288
+#: activities/frieze/Frieze.qml:287
 #, fuzzy
 #| msgctxt "ReadyButton|"
 #| msgid "I am Ready"
@@ -29032,6 +29024,13 @@ msgstr "Ohita"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Käynnistä"
+
+#, fuzzy
+#~| msgctxt "BinaryBulb|"
+#~| msgid "What is the binary representation of %1?"
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr "Mitä %1 on binaarisena?"
 
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Grammatical analysis"

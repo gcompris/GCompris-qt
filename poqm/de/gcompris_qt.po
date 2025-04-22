@@ -10743,15 +10743,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Leertaste: Wechselt zwischen unsichtbarem und sichtbarem Modus"
 
-#: activities/frieze/Frieze.qml:109
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulb|"
-#| msgid "What is the binary representation of %1?"
-msgctxt "Frieze|"
-msgid "What is the binary representation of %1?"
-msgstr "Was ist die Binär-Darstellung von %1?"
-
-#: activities/frieze/Frieze.qml:288
+#: activities/frieze/Frieze.qml:287
 #, fuzzy
 #| msgctxt "ReadyButton|"
 #| msgid "I am Ready"
@@ -29742,6 +29734,13 @@ msgstr "Überspringen"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Start"
+
+#, fuzzy
+#~| msgctxt "BinaryBulb|"
+#~| msgid "What is the binary representation of %1?"
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr "Was ist die Binär-Darstellung von %1?"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"

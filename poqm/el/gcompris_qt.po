@@ -10533,16 +10533,7 @@ msgstr ""
 "Tab: Εναλλαγή μεταξύ επεξεργασίας της διακοσμητικής ταινίας και προβολής του "
 "μοντέλου ."
 
-#: activities/frieze/Frieze.qml:109
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulb|"
-#| msgid "What is the binary representation of %1?"
-msgctxt "Frieze|"
-msgid "What is the binary representation of %1?"
-msgstr ""
-"Ποια είναι η αναπαράσταση του αριθμού %1 στο δυαδικό σύστημα αρίθμησης;"
-
-#: activities/frieze/Frieze.qml:288
+#: activities/frieze/Frieze.qml:287
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Είμαι έτοιμος"
@@ -29087,6 +29078,14 @@ msgstr "Παράλειψη"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Έναρξη"
+
+#, fuzzy
+#~| msgctxt "BinaryBulb|"
+#~| msgid "What is the binary representation of %1?"
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr ""
+#~ "Ποια είναι η αναπαράσταση του αριθμού %1 στο δυαδικό σύστημα αρίθμησης;"
 
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Grammatical analysis"

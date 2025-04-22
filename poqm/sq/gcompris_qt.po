@@ -10347,15 +10347,7 @@ msgstr ""
 "Tasti Tab: kaloni nga mënyra përpunim bordurash në parje modeli, ose "
 "anasjelltas"
 
-#: activities/frieze/Frieze.qml:109
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulb|"
-#| msgid "What is the binary representation of %1?"
-msgctxt "Frieze|"
-msgid "What is the binary representation of %1?"
-msgstr "Cila është paraqitja dyore e %1?"
-
-#: activities/frieze/Frieze.qml:288
+#: activities/frieze/Frieze.qml:287
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Jam Gati"
@@ -28682,6 +28674,13 @@ msgstr "Anashkaloje"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Fillo"
+
+#, fuzzy
+#~| msgctxt "BinaryBulb|"
+#~| msgid "What is the binary representation of %1?"
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr "Cila është paraqitja dyore e %1?"
 
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Grammatical analysis"

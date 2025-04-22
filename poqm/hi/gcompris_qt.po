@@ -11076,15 +11076,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "निर्देश व स्कोर दिखाएँ"
 
-#: activities/frieze/Frieze.qml:109
-#, fuzzy, qt-format
-#| msgctxt "ActivityInfo|"
-#| msgid "Spatial representation"
-msgctxt "Frieze|"
-msgid "What is the binary representation of %1?"
-msgstr "त्रिआयामी प्रस्तुति"
-
-#: activities/frieze/Frieze.qml:288
+#: activities/frieze/Frieze.qml:287
 #, fuzzy
 #| msgctxt "ReadyButton|"
 #| msgid "I am Ready"
@@ -31661,6 +31653,13 @@ msgstr ""
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr ""
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Spatial representation"
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr "त्रिआयामी प्रस्तुति"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"

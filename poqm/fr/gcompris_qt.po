@@ -2940,22 +2940,12 @@ msgstr ""
 "nombre décimal donné. Appuie sur le bouton OK lorsque tu as terminé."
 
 #: activities/binary_bulb/BinaryBulb.qml:84
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "This activity teaches how to convert decimal numbers to binary numbers."
 msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr ""
 "Cette activité apprend à convertir un nombre décimal en nombre binaire."
 
 #: activities/binary_bulb/BinaryBulb.qml:88
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Computers use transistors to count and transistors have only two states, "
-#| "0 and 1. Mathematically, these states are represented by 0 and 1, which "
-#| "makes up the binary system of numeration."
 msgctxt "BinaryBulb|"
 msgid ""
 "Computers use transistors to count and transistors have only two states, 0 "
@@ -2967,9 +2957,6 @@ msgstr ""
 "0 et 1 qui sont nécessaires au système de numération binaire."
 
 #: activities/binary_bulb/BinaryBulb.qml:92
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr ""
@@ -2977,11 +2964,6 @@ msgstr ""
 "éteintes."
 
 #: activities/binary_bulb/BinaryBulb.qml:96
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Binary system uses these numbers very efficiently, allowing to count from "
-#| "0 to 255 with 8 bits only."
 msgctxt "BinaryBulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
@@ -2991,13 +2973,6 @@ msgstr ""
 "permettant de compter de 0 à 255 avec seulement 8 bits."
 
 #: activities/binary_bulb/BinaryBulb.qml:100
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Each bit adds a progressive value, corresponding to the powers of 2, "
-#| "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → "
-#| "2²=4 , bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit "
-#| "8 → 2⁷=128."
 msgctxt "BinaryBulb|"
 msgid ""
 "Each bit adds a progressive value, corresponding to the powers of 2, "
@@ -3011,19 +2986,11 @@ msgstr ""
 "2⁷=128."
 
 #: activities/binary_bulb/BinaryBulb.qml:104
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr "Pour obtenir le nombre décimal 5, on ajoute 1 et 4."
 
 #: activities/binary_bulb/BinaryBulb.qml:108
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 "
-#| "is equal to binary 101."
 msgctxt "BinaryBulb|"
 msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
@@ -3033,9 +3000,6 @@ msgstr ""
 "au nombre binaire 101."
 
 #: activities/binary_bulb/BinaryBulb.qml:112
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "This image will help you to compute bits' value."
 msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr ""
@@ -6060,9 +6024,6 @@ msgstr "Électronique numérique"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
 msgstr "Créer et simuler un schéma électronique numérique."
@@ -8701,17 +8662,11 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Monuments d'Inde"
+msgstr "Monuments de Chine"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Clique sur l'endroit où le monument est situé."
@@ -8848,17 +8803,11 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Monuments d'Inde"
+msgstr "Monuments d'Italie"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Clique sur l'endroit où le monument est situé."
@@ -8948,17 +8897,11 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Monuments de France"
+msgstr "Monuments du Japon"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Clique sur l'endroit où le monument est situé."
@@ -10506,15 +10449,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Tab : basculer entre l'édition de la frise et la vue du modèle"
 
-#: activities/frieze/Frieze.qml:109
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulb|"
-#| msgid "What is the binary representation of %1?"
-msgctxt "Frieze|"
-msgid "What is the binary representation of %1?"
-msgstr "Quelle est la représentation binaire de %1 ?"
-
-#: activities/frieze/Frieze.qml:288
+#: activities/frieze/Frieze.qml:287
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Je suis prêt"
@@ -15227,37 +15162,22 @@ msgid "Empty"
 msgstr "Effacer"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Grammatical analysis"
 msgctxt "GrammarAnalysis|"
 msgid "Grammatical analysis"
 msgstr "Analyse grammaticale"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "GrammarAnalysis|"
 msgid "Learn to identify grammatical classes."
 msgstr "Apprends à identifier les classes grammaticales."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:28
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid ""
-#| "Find all the words corresponding to the requested grammatical classes."
 msgctxt "GrammarAnalysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr ""
 "Trouve tous les mots correspondants aux classes grammaticales demandées."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a grammatical class from the list, then select the box under a "
-#| "word and assign it the class."
 msgctxt "GrammarAnalysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
@@ -15267,9 +15187,6 @@ msgstr ""
 "sous un mot pour lui attribuer cette classe."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Leave the box blank if no class matches."
 msgctxt "GrammarAnalysis|"
 msgid "Leave the box blank if no class matches."
 msgstr "Laisse la case vide si aucune classe ne correspond."
@@ -15301,35 +15218,21 @@ msgid "Leave the box blank if the class doesn't match."
 msgstr "Laisse la case vide si la classe ne correspond pas."
 
 #: activities/grammar_classes/GrammarClasses.qml:15
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Grammatical classes"
 msgctxt "GrammarClasses|"
 msgid "Grammatical classes"
 msgstr "Classes grammaticales"
 
 #: activities/grammar_classes/GrammarClasses.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "GrammarClasses|"
 msgid "Learn to identify grammatical classes."
 msgstr "Apprends à identifier les classes grammaticales."
 
 #: activities/grammar_classes/GrammarClasses.qml:17
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Find all the words corresponding to the requested grammatical class."
 msgctxt "GrammarClasses|"
 msgid "Find all the words corresponding to the requested grammatical class."
 msgstr "Trouve tous les mots correspondants à la classe grammaticale demandée."
 
 #: activities/grammar_classes/GrammarClasses.qml:18
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid ""
-#| "Select the grammatical class from the list, then select the box under a "
-#| "word and assign it the class."
 msgctxt "GrammarClasses|"
 msgid ""
 "Select the grammatical class from the list, then select the box under a word "
@@ -15339,9 +15242,6 @@ msgstr ""
 "mot et attribue lui la classe."
 
 #: activities/grammar_classes/GrammarClasses.qml:19
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Leave the box blank if the class doesn't match."
 msgctxt "GrammarClasses|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr "Laisse la case vide si la classe ne correspond pas."
@@ -16949,11 +16849,6 @@ msgstr ""
 "OK pour valider ta réponse."
 
 #: activities/learn_decimals/Learn_decimals.qml:30
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A decimal number is displayed. The bar with the arrow represents a full "
-#| "unit, and each square in it represents one tenth of this unit."
 msgctxt "Learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
@@ -16963,13 +16858,6 @@ msgstr ""
 "complète et chaque carré la composant représente un dixième de cette unité."
 
 #: activities/learn_decimals/Learn_decimals.qml:34
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a part of the bar, and drag the selected part of "
-#| "the bar to the empty area. Repeat these steps until the number of dropped "
-#| "bars corresponds to the displayed decimal number. Then click on the OK "
-#| "button to validate your answer."
 msgctxt "Learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -17077,12 +16965,6 @@ msgid "Numbers: type the result"
 msgstr "Nombres : saisis le résultat"
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "An addition with two decimal numbers is displayed. The bar with the arrow "
-#| "represents a full unit, and each square in it represents one tenth of "
-#| "this unit."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "An addition with two decimal numbers is displayed. The bar with the arrow "
@@ -17094,13 +16976,6 @@ msgstr ""
 "un dixième de cette unité."
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a part of the bar, and drag the selected part of "
-#| "the bar to the empty area. Repeat these steps until the number of dropped "
-#| "bars corresponds to the result of the addition, and click on the OK "
-#| "button to validate your answer."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -17114,11 +16989,6 @@ msgstr ""
 "de l'addition. Clique sur le bouton OK pour valider ta réponse."
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:24
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -17181,12 +17051,6 @@ msgstr ""
 "présente le résultat de l'opération."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A subtraction with two decimal numbers is displayed. Below it, the first "
-#| "number from the subtraction is represented with bars. One bar represents "
-#| "a full unit, and each square in it represents one tenth of this unit."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "A subtraction with two decimal numbers is displayed. Below it, the first "
@@ -17199,11 +17063,6 @@ msgstr ""
 "dixième de cette unité."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Click on the squares to subtract them and display the result of the "
-#| "operation, and click on the OK button to validate your answer."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
@@ -17213,11 +17072,6 @@ msgstr ""
 "l'opération. Ensuite, clique sur le bouton OK pour valider ta réponse."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:24
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -17391,10 +17245,6 @@ msgstr ""
 "réponse."
 
 #: activities/learn_quantities/Learn_quantities.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgctxt "Learn_quantities|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr ""
@@ -17402,13 +17252,6 @@ msgstr ""
 "oranges."
 
 #: activities/learn_quantities/Learn_quantities.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a number of oranges, and drag the selected "
-#| "oranges to the empty area. Repeat these steps until the number of oranges "
-#| "corresponds to the requested quantity. Then click on the OK button to "
-#| "validate your answer."
 msgctxt "Learn_quantities|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "
@@ -17923,12 +17766,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "Le chapeau du magicien"
+msgstr "Le chapeau du magicien (soustraction)"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -18027,12 +17867,9 @@ msgstr "%1 x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "Le chapeau du magicien"
+msgstr "Le chapeau du magicien (addition)"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -20643,11 +20480,6 @@ msgid "Try again"
 msgstr "Essaie encore"
 
 #: activities/nine_men_morris/NineMenMorris.qml:348
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "You and Tux start with 9 pieces each, and take turns to place your pieces "
-#| "on the empty spots of the board (by clicking on the spots)."
 msgctxt "NineMenMorris|"
 msgid ""
 "You and Tux start with 9 pieces each, and take turns to place your pieces on "
@@ -20657,12 +20489,6 @@ msgstr ""
 "sur les emplacements vides du plateau."
 
 #: activities/nine_men_morris/NineMenMorris.qml:352
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
-#| "remove it. Pieces of formed mill can not be removed unless no other "
-#| "pieces are left on the board."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
@@ -20674,12 +20500,6 @@ msgstr ""
 "être retirés sauf s'ils n'y a d'autres pions sur le plateau."
 
 #: activities/nine_men_morris/NineMenMorris.qml:356
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "After all the pieces are placed, you and Tux will take turns to move "
-#| "them. Click on one of your pieces, and then on an adjacent empty spot to "
-#| "move it there. Green color spots indicates where you can move."
 msgctxt "NineMenMorris|"
 msgid ""
 "After all the pieces are placed, you and Tux will take turns to move them. "
@@ -20692,11 +20512,6 @@ msgstr ""
 "surlignés en vert."
 
 #: activities/nine_men_morris/NineMenMorris.qml:360
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
-#| "moved to any vacant spot on the board."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
@@ -20706,11 +20521,6 @@ msgstr ""
 "n'importe quel emplacement du plateau."
 
 #: activities/nine_men_morris/NineMenMorris.qml:364
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you immobilize the computer or leave it with less than 3 pieces, then "
-#| "you win the game."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
@@ -23047,19 +22857,11 @@ msgid "Loop"
 msgstr "Boucle"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:542
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Instruction Area:"
 msgctxt "ProgrammingMaze|"
 msgid "Instruction Area:"
 msgstr "Zone d'instruction :"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:543
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "There are 3 instructions which you can use to code and lead Tux to the "
-#| "fish:"
 msgctxt "ProgrammingMaze|"
 msgid ""
 "There are 3 instructions which you can use to code and lead Tux to the fish:"
@@ -23067,11 +22869,6 @@ msgstr ""
 "Tu peux utiliser 3 instructions pour amener Tux à attraper un poisson :"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:544
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
-#| "facing."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
@@ -23081,43 +22878,26 @@ msgstr ""
 "face de lui."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:545
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgctxt "ProgrammingMaze|"
 msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgstr "<b>2. Tourne à gauche :</b> Tourne Tux vers la gauche."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:546
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgctxt "ProgrammingMaze|"
 msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgstr "<b>3. Tourne à droite :</b> Tourne Tux vers la droite."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:550
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Main Function:"
 msgctxt "ProgrammingMaze|"
 msgid "Main Function:"
 msgstr "Code principal :"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:551
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "The execution of the code starts here."
 msgctxt "ProgrammingMaze|"
 msgid "The execution of the code starts here."
 msgstr "L'exécution du code commence ici."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:552
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-Click on any instruction in the <b>instruction area</b> to add it to the "
-#| "<b>Main Function</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-Click on any instruction in the <b>instruction area</b> to add it to the "
@@ -23127,11 +22907,6 @@ msgstr ""
 "l'ajouter au <b>code principal</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:553
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-The instructions will execute in order until there's none left, or until "
-#| "a dead-end, or when Tux reaches the fish."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-The instructions will execute in order until there's none left, or until a "
@@ -23141,19 +22916,11 @@ msgstr ""
 "plus ; ou jusqu'à une impasse, ou lorsque Tux atteint un poisson."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:563
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Procedure:"
 msgctxt "ProgrammingMaze|"
 msgid "Procedure:"
 msgstr "Fonction :"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:564
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>Procedure</b> is a reusable set of instructions which can be <b>used "
-#| "in the code by calling it where needed</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
@@ -23163,12 +22930,6 @@ msgstr ""
 "<b>utilisée dans le code en rappelant ce groupe lorsqu'on en a besoin</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:565
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main "
-#| "Function area</b> to add your code, click on the <b>Procedure</b> or "
-#| "<b>Main Function</b> label."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
@@ -23180,19 +22941,11 @@ msgstr ""
 "b> ou sur le texte <b>Code principal</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:575
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Loop:"
 msgctxt "ProgrammingMaze|"
 msgid "Loop:"
 msgstr "Boucle :"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:576
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
-#| "the number of times defined by the number inside it</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
@@ -23202,12 +22955,6 @@ msgstr ""
 "continue le nombre de fois que tu précises en utilisant le compteur.</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:577
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
-#| "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</"
-#| "b> label."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
@@ -26773,19 +26520,11 @@ msgid "Right Ballast Tank"
 msgstr "Citerne de ballast droite"
 
 #: activities/submarine/Submarine.qml:130
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Move the submarine to the other side of the screen."
 msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "Déplace le sous-marin jusqu'à l'autre côté de l'écran."
 
 #: activities/submarine/Submarine.qml:133
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The leftmost item in the control panel is the engine of the submarine, "
-#| "indicating the current speed of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
@@ -26795,19 +26534,11 @@ msgstr ""
 "sous-marin et indique sa vitesse actuelle."
 
 #: activities/submarine/Submarine.qml:136
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Increase or decrease the velocity of the submarine using the engine."
 msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr "Augmente ou réduit la vitesse du sous-marin en utilisant le moteur."
 
 #: activities/submarine/Submarine.qml:139
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Press the + button to increase the velocity, or the - button to decrease "
-#| "the velocity."
 msgctxt "Submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
@@ -26816,17 +26547,11 @@ msgstr ""
 "Appuie sur le bouton + pour augmenter la vitesse ou sur - pour la réduire."
 
 #: activities/submarine/Submarine.qml:146
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The item next to the engine is the ballast tank."
 msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "L'objet à côté du moteur est le ballast."
 
 #: activities/submarine/Submarine.qml:149
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The ballast tanks are used to float or dive under water."
 msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr ""
@@ -26834,11 +26559,6 @@ msgstr ""
 "dans l'eau."
 
 #: activities/submarine/Submarine.qml:152
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "If the ballast tanks are empty, the submarine will float. If the ballast "
-#| "tanks are full of water, the submarine will dive underwater."
 msgctxt "Submarine|"
 msgid ""
 "If the ballast tanks are empty, the submarine will float. If the ballast "
@@ -26848,12 +26568,6 @@ msgstr ""
 "d'eau, le sous-marin va plonger dans l'eau."
 
 #: activities/submarine/Submarine.qml:155
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Turning the upper valve on or off will alternatively allow or stop the "
-#| "water from filling in the ballast tank, thus allowing it to dive "
-#| "underwater."
 msgctxt "Submarine|"
 msgid ""
 "Turning the upper valve on or off will alternatively allow or stop the water "
@@ -26864,12 +26578,6 @@ msgstr ""
 "marin."
 
 #: activities/submarine/Submarine.qml:158
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Turning the lower valve on or off will alternatively allow or stop the "
-#| "water from flushing out the ballast tank, thus allowing it to float on "
-#| "the surface of the water."
 msgctxt "Submarine|"
 msgid ""
 "Turning the lower valve on or off will alternatively allow or stop the water "
@@ -26881,11 +26589,6 @@ msgstr ""
 "la surface."
 
 #: activities/submarine/Submarine.qml:165
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The rightmost item in the control panel controls the diving planes of the "
-#| "submarine"
 msgctxt "Submarine|"
 msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
@@ -26895,11 +26598,6 @@ msgstr ""
 "marin"
 
 #: activities/submarine/Submarine.qml:168
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The diving planes in a submarine are used to control the depth of the "
-#| "submarine accurately once it is underwater."
 msgctxt "Submarine|"
 msgid ""
 "The diving planes in a submarine are used to control the depth of the "
@@ -26909,11 +26607,6 @@ msgstr ""
 "la profondeur du sous-marin une fois qu'il est dans l'eau."
 
 #: activities/submarine/Submarine.qml:171
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Once the submarine is moving underwater, increasing or decreasing the "
-#| "angle of the planes will increase and decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "Once the submarine is moving underwater, increasing or decreasing the angle "
@@ -26923,11 +26616,6 @@ msgstr ""
 "l'angle des gouvernails va augmenter ou réduire la profondeur du sous-marin."
 
 #: activities/submarine/Submarine.qml:174
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The + button will increase the depth of the submarine, while the - button "
-#| "will decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "The + button will increase the depth of the submarine, while the - button "
@@ -26937,17 +26625,11 @@ msgstr ""
 "le bouton - va la diminuer."
 
 #: activities/submarine/Submarine.qml:177
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Grab the crown to open the gate."
 msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "Capture la couronne pour ouvrir la porte."
 
 #: activities/submarine/Submarine.qml:180
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Check out the help menu for the keyboard controls."
 msgctxt "Submarine|"
 msgid "Check out the help menu for the keyboard controls."
 msgstr "Regarde dans le menu d'aide pour les contrôles avec le clavier."
@@ -29104,6 +28786,10 @@ msgstr "Ignorer"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Démarrer"
+
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr "Quelle est la représentation binaire de %1 ?"
 
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Grammatical analysis"

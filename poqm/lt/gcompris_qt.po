@@ -10298,15 +10298,7 @@ msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr ""
 "Tab: perjungti tarp ornamento redagavimo ir ornamento modelio peržiūros."
 
-#: activities/frieze/Frieze.qml:109
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulb|"
-#| msgid "What is the binary representation of %1?"
-msgctxt "Frieze|"
-msgid "What is the binary representation of %1?"
-msgstr "Koks yra %1 atitikmuo dvejetainėje sistemoje?"
-
-#: activities/frieze/Frieze.qml:288
+#: activities/frieze/Frieze.qml:287
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Aš pasiruošiau"
@@ -28615,6 +28607,13 @@ msgstr "Praleisti"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Pradėti"
+
+#, fuzzy
+#~| msgctxt "BinaryBulb|"
+#~| msgid "What is the binary representation of %1?"
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr "Koks yra %1 atitikmuo dvejetainėje sistemoje?"
 
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Grammatical analysis"

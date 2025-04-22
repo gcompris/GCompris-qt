@@ -9990,15 +9990,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "רווח: להחליף בין מצב נראה ומצב בלתי-נראה"
 
-#: activities/frieze/Frieze.qml:109
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulb|"
-#| msgid "What is the binary representation of %1?"
-msgctxt "Frieze|"
-msgid "What is the binary representation of %1?"
-msgstr "מהו הייצוג הבינארי של %1 ?"
-
-#: activities/frieze/Frieze.qml:288
+#: activities/frieze/Frieze.qml:287
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "אפשר להתחיל"
@@ -27972,6 +27964,13 @@ msgstr "לדלג"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "להתחיל"
+
+#, fuzzy
+#~| msgctxt "BinaryBulb|"
+#~| msgid "What is the binary representation of %1?"
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr "מהו הייצוג הבינארי של %1 ?"
 
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Grammatical analysis"
