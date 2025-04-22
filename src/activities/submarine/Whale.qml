@@ -38,9 +38,10 @@ Image {
 
     transform: Rotation {
         id: rotate;
-        origin.x: whale.width / 2;
+        origin.x: whale.width * 0.5
         origin.y: 0;
-        axis { x: 0; y: 1; z: 0 } angle: 0
+        axis { x: 0; y: 1; z: 0 }
+        angle: 0
     }
 
     SequentialAnimation {
@@ -85,7 +86,7 @@ Image {
             anchors.fill: parent
             Emitter {
                 x: parent.x
-                y: parent.y + parent.height / 2
+                y: parent.y + parent.height * 0.5
                 width: 1
                 height: 1
                 emitRate: 0.5

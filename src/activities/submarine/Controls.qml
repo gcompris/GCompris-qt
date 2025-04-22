@@ -1,10 +1,12 @@
 /* GCompris - Controls.qml
  *
  * SPDX-FileCopyrightText: 2017 RUDRA NIL BASU <rudra.nil.basu.1996@gmail.com>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Pascal Georges <pascal.georges1@free.fr> (GTK+ version)
  *   Rudra Nil Basu <rudra.nil.basu.1996@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (refactoring)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -14,93 +16,58 @@ import "../../core"
 
 Item {
     id: controls
-
     /* Engine Controller Properties */
-    property point enginePosition
-    property alias engineWidth : engine.width
-    property alias engineHeight : engine.height
     property alias submarineHorizontalSpeed : engineValues.text
 
     /* Ballast tanks Controller Properties */
     property alias leftTankVisible : leftBallastTankController.visible
-    property point leftBallastTankPosition
-    property alias leftBallastTankWidth : leftBallastTankDisplay.width
-    property alias leftBallastTankHeight : leftBallastTankDisplay.height
     property alias rotateLeftFill: rotateLeftFill
     property alias rotateLeftFlush: rotateLeftFlush
 
     property alias centralTankVisible : centralBallastTankController.visible
-    property point centralBallastTankPosition
-    property alias centralBallastTankWidth : centralBallastTankDisplay.width
-    property alias centralBallastTankHeight : centralBallastTankDisplay.height
     property alias rotateCentralFill: rotateCentralFill
     property alias rotateCentralFlush: rotateCentralFlush
 
     property alias rightTankVisible : rightBallastTankController.visible
-    property point rightBallastTankPosition
-    property alias rightBallastTankWidth : rightBallastTankDisplay.width
-    property alias rightBallastTankHeight : rightBallastTankDisplay.height
     property alias rotateRightFill: rotateRightFill
     property alias rotateRightFlush: rotateRightFlush
 
     /* Diving Plane Controller properties */
     property bool divingPlaneVisible
-    property point divingPlanePosition
-    property int divingPlaneWidth
-    property int divingPlaneHeight
 
-    property int buttonSize
-    property int buttonPlusY
-    property int buttonMinusY
-
-    property string fillColor : "#0DA5CB"
-
-    Image {
-        id: controlBackground
-        source: url + "board.svg"
-        width: activityBackground.width
-        height: activityBackground.height * 0.40
-        sourceSize.width: controlBackground.width
-        sourceSize.height: controlBackground.height
-        y: activityBackground.height - controlBackground.height
-    }
+    readonly property int buttonSize: Math.min(height / 2.5,
+                                        (width - 3 * GCStyle.baseMargins) / 16)
+    readonly property color fillColor : "#0DA5CB"
 
     Item {
-        Rectangle {
-            id: engine
-            x: enginePosition.x
-            y: enginePosition.y
-            radius: 10
-            color: "#323232"
-            border.width: 4
-            border.color: "#AEC6DD"
-            GCText {
-                id: engineValues
-                anchors {
-                    horizontalCenter: parent.horizontalCenter
-                    verticalCenter: parent.verticalCenter
-                }
-                color: "#D3E1EB"
-            }
-        }
+        id: engineArea
+        anchors.left: parent.left
+        anchors.right: ballastArea.left
+        anchors.rightMargin: GCStyle.baseMargins
+        anchors.top: parent.top
+        anchors.bottom: parent.bottom
+    }
+    Item {
+        id: engineGroup
+        width: buttonSize * 4
+        height: buttonSize * 2.5
+        anchors.horizontalCenter: engineArea.horizontalCenter
+        anchors.top: parent.top
         Image {
             id: incSpeed
             source: url + "up.svg"
-            width: buttonSize
-            height: buttonSize
-            sourceSize.width: incSpeed.width
-            sourceSize.height: incSpeed.height
-
+            width: controls.buttonSize
+            height: controls.buttonSize
+            sourceSize.width: controls.buttonSize
+            sourceSize.height: controls.buttonSize
             anchors {
-                right: engine.left
-                leftMargin: incSpeed.width / 2
+                left: parent.left
+                top: parent.top
             }
-            y: buttonPlusY
 
             MouseArea {
                 anchors.fill: parent
                 enabled: !tutorial.visible
-
                 onClicked: submarine.increaseHorizontalVelocity(1)
             }
         }
@@ -108,16 +75,14 @@ Item {
         Image {
             id: downSpeed
             source: url + "down.svg"
-            width: buttonSize
-            height: buttonSize
-            sourceSize.width: downSpeed.width
-            sourceSize.height: downSpeed.height
-
+            width: controls.buttonSize
+            height: controls.buttonSize
+            sourceSize.width: controls.buttonSize
+            sourceSize.height: controls.buttonSize
             anchors {
-                right: engine.left
-                leftMargin: downSpeed.width / 2
+                left: parent.left
+                bottom: parent.bottom
             }
-            y: buttonMinusY
 
             MouseArea {
                 anchors.fill: parent
@@ -126,32 +91,63 @@ Item {
                 onClicked: submarine.decreaseHorizontalVelocity(1)
             }
         }
+        Rectangle {
+            id: engine
+            anchors.left: incSpeed.right
+            width: controls.buttonSize * 3
+            height: parent.height
+            radius: GCStyle.tinyMargins
+            color: GCStyle.darkBg
+            border.width: GCStyle.thinBorder
+            border.color: "#AEC6DD"
+            GCText {
+                id: engineValues
+                anchors.fill: parent
+                anchors.margins: GCStyle.halfMargins
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                fontSizeMode: Text.Fit
+                color: GCStyle.lightText
+            }
+        }
+    }
+
+    Item {
+        id: ballastArea
+        width: controls.buttonSize * 8 + GCStyle.baseMargins
+        height: controls.buttonSize * 2.5
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.top: parent.top
     }
 
     // 3 Ballast Tanks
 
     Item {
         id: leftBallastTankController
+        width: engineGroup.width
+        height: engineGroup.height
+        anchors.left: ballastArea.left
+        anchors.top: ballastArea.top
         Rectangle {
             id: leftBallastTankDisplay
-            x: leftBallastTankPosition.x
-            y: leftBallastTankPosition.y
-
-            radius: 2
-
-            color: "#323232"
-            border.width: 4
+            anchors.right: parent.right
+            anchors.top: parent.top
+            width: engine.width
+            height: engine.height
+            radius: GCStyle.tinyMargins
+            color: GCStyle.darkBg
+            border.width: GCStyle.thinBorder
             border.color: "#AEC6DD"
 
             Rectangle {
-                width: leftBallastTankWidth * 0.85
-                height: (leftBallastTank.waterLevel / leftBallastTank.maxWaterLevel) * (leftBallastTankHeight - 8)
+                width: parent.width - GCStyle.halfMargins
+                height: (leftBallastTank.waterLevel / leftBallastTank.maxWaterLevel) *
+                    (parent.height - GCStyle.thinBorder * 2)
                 anchors {
                     bottom: parent.bottom
                     horizontalCenter: parent.horizontalCenter
-                    margins: 4
+                    margins: GCStyle.tinyMargins
                 }
-
                 color: fillColor
 
                 Behavior on height {
@@ -165,33 +161,32 @@ Item {
                 id: leftBallastTankLabel
                 text: qsTr("Left Ballast Tank")
                 wrapMode: Text.WordWrap
-                anchors.fill: leftBallastTankDisplay
-                anchors.margins: 4
+                anchors.fill: parent
+                anchors.margins: GCStyle.halfMargins
                 horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
                 fontSizeMode: Text.Fit
-                minimumPixelSize: 8
-                font.pixelSize: 70
-                color: "#B8D3E1EB"
+                color: GCStyle.lightText
             }
         }
 
         Image {
             id: leftBallastFill
             source: url + "vanne.svg"
-
-            x: leftBallastTankDisplay.x - buttonSize * 1.1
-            y: buttonPlusY
-            width: buttonSize
-            height: buttonSize
-            sourceSize.width: buttonSize
-            sourceSize.height: buttonSize
+            anchors.left: parent.left
+            anchors.top: parent.top
+            width: controls.buttonSize
+            height: controls.buttonSize
+            sourceSize.width: controls.buttonSize
+            sourceSize.height: controls.buttonSize
             rotation: 0
 
             transform: Rotation {
                 id: rotateLeftFill;
-                origin.x: leftBallastFill.width / 2;
-                origin.y: leftBallastFill.height / 2
-                axis { x: 0; y: 0; z: 1 } angle: 0
+                origin.x: leftBallastFill.width * 0.5
+                origin.y: leftBallastFill.height * 0.5
+                axis { x: 0; y: 0; z: 1 }
+                angle: 0
             }
 
             MouseArea {
@@ -208,20 +203,20 @@ Item {
         Image {
             id: leftBallastFlush
             source: url + "vanne.svg"
-
-            x: leftBallastTankDisplay.x - buttonSize * 1.1
-            y: buttonMinusY
-            width: buttonSize
-            height: buttonSize
-            sourceSize.width: buttonSize
-            sourceSize.height: buttonSize
+            anchors.left: parent.left
+            anchors.bottom: parent.bottom
+            width: controls.buttonSize
+            height: controls.buttonSize
+            sourceSize.width: controls.buttonSize
+            sourceSize.height: controls.buttonSize
             rotation: 0
 
             transform: Rotation {
                 id: rotateLeftFlush;
-                origin.x: leftBallastFill.width / 2;
-                origin.y: leftBallastFill.height / 2
-                axis { x: 0; y: 0; z: 1 } angle: 0
+                origin.x: leftBallastFill.width * 0.5
+                origin.y: leftBallastFill.height * 0.5
+                axis { x: 0; y: 0; z: 1 }
+                angle: 0
             }
 
             MouseArea {
@@ -239,27 +234,30 @@ Item {
 
     Item {
         id: centralBallastTankController
-
+        width: engineGroup.width
+        height: engineGroup.height
+        anchors.top: parent.top
+        anchors.horizontalCenter: ballastArea.horizontalCenter
         Rectangle {
             id: centralBallastTankDisplay
-            x: centralBallastTankPosition.x
-            y: centralBallastTankPosition.y
-
-            radius: 2
-
-            color: "#323232"
-            border.width: 4
+            width: engine.width
+            height: engine.height
+            anchors.right: parent.right
+            anchors.top: parent.top
+            radius: GCStyle.tinyMargins
+            color: GCStyle.darkBg
+            border.width: GCStyle.thinBorder
             border.color: "#AEC6DD"
 
             Rectangle {
-                width: centralBallastTankWidth * 0.85
-                height: (centralBallastTank.waterLevel / centralBallastTank.maxWaterLevel) * (centralBallastTankHeight - 8)
+                width: parent.width - GCStyle.halfMargins
+                height: (centralBallastTank.waterLevel / centralBallastTank.maxWaterLevel) *
+                    (parent.height - GCStyle.thinBorder * 2)
                 anchors {
                     bottom: parent.bottom
                     horizontalCenter: parent.horizontalCenter
-                    margins: 4
+                    margins: GCStyle.thinBorder
                 }
-
                 color: fillColor
 
                 Behavior on height {
@@ -274,32 +272,31 @@ Item {
                 text: qsTr("Central Ballast Tank")
                 wrapMode: Text.WordWrap
                 anchors.fill: centralBallastTankDisplay
-                anchors.margins: 4
+                anchors.margins: GCStyle.halfMargins
                 horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
                 fontSizeMode: Text.Fit
-                minimumPixelSize: 8
-                font.pixelSize: 70
-                color: "#B8D3E1EB"
+                color: GCStyle.lightText
             }
         }
 
         Image {
             id: centralBallastFill
             source: url + "vanne.svg"
-
-            x: centralBallastTankDisplay.x - buttonSize * 1.1
-            y: buttonPlusY
-            width: buttonSize
-            height: buttonSize
-            sourceSize.width: buttonSize
-            sourceSize.height: buttonSize
+            anchors.left: parent.left
+            anchors.top: parent.top
+            width: controls.buttonSize
+            height: controls.buttonSize
+            sourceSize.width: controls.buttonSize
+            sourceSize.height: controls.buttonSize
             rotation: 0
 
             transform: Rotation {
                 id: rotateCentralFill;
-                origin.x: centralBallastFill.width / 2;
-                origin.y: centralBallastFill.height / 2
-                axis { x: 0; y: 0; z: 1 } angle: 0
+                origin.x: centralBallastFill.width * 0.5
+                origin.y: centralBallastFill.height * 0.5
+                axis { x: 0; y: 0; z: 1 }
+                angle: 0
             }
 
             MouseArea {
@@ -316,20 +313,20 @@ Item {
         Image {
             id: centralBallastFlush
             source: url + "vanne.svg"
-
-            x: centralBallastTankDisplay.x - buttonSize * 1.1
-            y: buttonMinusY
-            width: buttonSize
-            height: buttonSize
-            sourceSize.width: buttonSize
-            sourceSize.height: buttonSize
+            anchors.left: parent.left
+            anchors.bottom: parent.bottom
+            width: controls.buttonSize
+            height: controls.buttonSize
+            sourceSize.width: controls.buttonSize
+            sourceSize.height: controls.buttonSize
             rotation: 0
 
             transform: Rotation {
                 id: rotateCentralFlush;
-                origin.x: centralBallastFill.width / 2;
-                origin.y: centralBallastFill.height / 2
-                axis { x: 0; y: 0; z: 1 } angle: 0
+                origin.x: centralBallastFill.width * 0.5
+                origin.y: centralBallastFill.height * 0.5
+                axis { x: 0; y: 0; z: 1 }
+                angle: 0
             }
 
             MouseArea {
@@ -346,27 +343,30 @@ Item {
 
     Item {
         id: rightBallastTankController
+        width: engineGroup.width
+        height: engineGroup.height
+        anchors.right: ballastArea.right
+        anchors.top: parent.top
 
         Rectangle {
             id: rightBallastTankDisplay
-            x: rightBallastTankPosition.x
-            y: rightBallastTankPosition.y
-
-            radius: 2
-
-            color: "#323232"
-            border.width: 4
+            anchors.right: parent.right
+            anchors.top: parent.top
+            width: engine.width
+            height: engine.height
+            radius: GCStyle.tinyMargins
+            color: GCStyle.darkBg
+            border.width: GCStyle.thinBorder
             border.color: "#AEC6DD"
 
             Rectangle {
-                width: rightBallastTankWidth * 0.85
-                height: (rightBallastTank.waterLevel / rightBallastTank.maxWaterLevel) * (rightBallastTankHeight - 8)
+                width: parent.width - GCStyle.halfMargins
+                height: (rightBallastTank.waterLevel / rightBallastTank.maxWaterLevel) * (parent.height - GCStyle.thinBorder * 2)
                 anchors {
                     bottom: parent.bottom
                     horizontalCenter: parent.horizontalCenter
-                    margins: 4
+                    margins: GCStyle.thinBorder
                 }
-
                 color: fillColor
 
                 Behavior on height {
@@ -381,32 +381,31 @@ Item {
                 text: qsTr("Right Ballast Tank")
                 wrapMode: Text.WordWrap
                 anchors.fill: rightBallastTankDisplay
-                anchors.margins: 4
+                anchors.margins: GCStyle.halfMargins
                 horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
                 fontSizeMode: Text.Fit
-                minimumPixelSize: 8
-                font.pixelSize: 70
-                color: "#B8D3E1EB"
+                color: GCStyle.lightText
             }
         }
 
         Image {
             id: rightBallastFill
             source: url + "vanne.svg"
-
-            x: rightBallastTankDisplay.x - buttonSize * 1.1
-            y: buttonPlusY
-            width: buttonSize
-            height: buttonSize
-            sourceSize.width: buttonSize
-            sourceSize.height: buttonSize
+            anchors.left: parent.left
+            anchors.top: parent.top
+            width: controls.buttonSize
+            height: controls.buttonSize
+            sourceSize.width: controls.buttonSize
+            sourceSize.height: controls.buttonSize
             rotation: 0
 
             transform: Rotation {
                 id: rotateRightFill;
-                origin.x: rightBallastFill.width / 2;
-                origin.y: rightBallastFill.height / 2
-                axis { x: 0; y: 0; z: 1 } angle: 0
+                origin.x: rightBallastFill.width * 0.5
+                origin.y: rightBallastFill.height * 0.5
+                axis { x: 0; y: 0; z: 1 }
+                angle: 0
             }
 
             MouseArea {
@@ -423,20 +422,20 @@ Item {
         Image {
             id: rightBallastFlush
             source: url + "vanne.svg"
-
-            x: rightBallastTankDisplay.x - buttonSize * 1.1
-            y: buttonMinusY
-            width: buttonSize
-            height: buttonSize
-            sourceSize.width: buttonSize
-            sourceSize.height: buttonSize
+            anchors.left: parent.left
+            anchors.bottom: parent.bottom
+            width: controls.buttonSize
+            height: controls.buttonSize
+            sourceSize.width: controls.buttonSize
+            sourceSize.height: controls.buttonSize
             rotation: 0
 
             transform: Rotation {
                 id: rotateRightFlush;
-                origin.x: rightBallastFill.width / 2;
-                origin.y: rightBallastFill.height / 2
-                axis { x: 0; y: 0; z: 1 } angle: 0
+                origin.x: rightBallastFill.width * 0.5
+                origin.y: rightBallastFill.height * 0.5
+                axis { x: 0; y: 0; z: 1 }
+                angle: 0
             }
 
             MouseArea {
@@ -493,7 +492,20 @@ Item {
     }
 
     Item {
+        id: divingPlaneArea
+        anchors.left: ballastArea.right
+        anchors.right: parent.right
+        anchors.top: parent.top
+        anchors.bottom: parent.bottom
+        anchors.leftMargin: GCStyle.baseMargins
+    }
+
+    Item {
         id: divingPlaneController
+        width: engineGroup.width
+        height: engineGroup.height
+        anchors.horizontalCenter: divingPlaneArea.horizontalCenter
+        anchors.top: parent.top
         visible: divingPlaneVisible
 
         property int maxRotationAngle: 30
@@ -501,33 +513,34 @@ Item {
         Image {
             id: divingPlanesImage
             source: url + "rudder.svg"
-            width: divingPlaneWidth
-            height: divingPlaneHeight
-            sourceSize.width: divingPlaneWidth
-            sourceSize.height: divingPlaneHeight
-            x: divingPlanePosition.x
-            y: divingPlanePosition.y
+            anchors.left: parent.left
+            anchors.verticalCenter: parent.verticalCenter
+            width: engine.width
+            height: controls.buttonSize
+            sourceSize.width: width
+            sourceSize.height: height
 
             transform: Rotation {
                 id: rotateDivingPlanes;
-                origin.x: divingPlanesImage.width;
-                origin.y: divingPlanesImage.height / 2
-                axis { x: 0; y: 0; z: 1 } angle: (submarine.wingsAngle / submarine.maxWingsAngle) * divingPlaneController.maxRotationAngle
+                origin.x: divingPlanesImage.width
+                origin.y: divingPlanesImage.height * 0.5
+                axis { x: 0; y: 0; z: 1 }
+                angle: (submarine.wingsAngle / submarine.maxWingsAngle) *
+                    divingPlaneController.maxRotationAngle
             }
         }
 
         Image {
             id: divingPlanesRotateUp
             source: url + "up.svg"
-            width: buttonSize
-            height: buttonSize
-            sourceSize.width: buttonSize
-            sourceSize.height: buttonSize
-
+            width: controls.buttonSize
+            height: controls.buttonSize
+            sourceSize.width: controls.buttonSize
+            sourceSize.height: controls.buttonSize
             anchors {
-                left: divingPlanesImage.right
+                right: parent.right
+                top: parent.top
             }
-            y: buttonPlusY
 
             MouseArea {
                 anchors.fill: parent
@@ -540,15 +553,14 @@ Item {
         Image {
             id: divingPlanesRotateDown
             source: url + "down.svg"
-            width: buttonSize
-            height: buttonSize
-            sourceSize.width: buttonSize
-            sourceSize.height: buttonSize
-
+            width: controls.buttonSize
+            height: controls.buttonSize
+            sourceSize.width: controls.buttonSize
+            sourceSize.height: controls.buttonSize
             anchors {
-                left: divingPlanesImage.right
+                right: parent.right
+                bottom: parent.bottom
             }
-            y: buttonMinusY
 
             MouseArea {
                 anchors.fill: parent
