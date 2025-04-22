@@ -1,10 +1,12 @@
 /* GCompris - submarine.qml
  *
  * SPDX-FileCopyrightText: 2017 RUDRA NIL BASU <rudra.nil.basu.1996@gmail.com>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Pascal Georges <pascal.georges1@free.fr> (GTK+ version)
  *   Rudra Nil Basu <rudra.nil.basu.1996@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (refactoring)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -37,6 +39,7 @@ ActivityBase {
                                     physicalWorld.running = false
 
         property bool hori: activityBackground.width >= activityBackground.height
+        readonly property int waterLevel: activityBackground.height / 15
 
         signal start
         signal stop
@@ -120,8 +123,8 @@ ActivityBase {
         Item {
             id: introArea
             anchors.fill: parent
-            anchors.margins: 10 * ApplicationInfo.ratio
-            anchors.bottomMargin: 10 * ApplicationInfo.ratio + parent.height * 0.4 // height of controlBackground in controls
+            anchors.margins: GCStyle.baseMargins
+            anchors.bottomMargin: GCStyle.baseMargins + parent.height * 0.4 // height of controlBackground in controls
         }
 
         ListModel {
@@ -208,17 +211,9 @@ ActivityBase {
         }
 
         Item {
-            id: waterLevel
-            x: 0
-            y: activityBackground.height / 15
-        }
-
-        Rectangle {
             id: maximumWaterDepth
-
             width: activityBackground.width
             height: 10
-            color: "transparent"
 
             y: activityBackground.height * 0.65
 
@@ -243,10 +238,8 @@ ActivityBase {
 
         Item {
             id: submarine
-
             z: 1
-
-            property point initialPosition: Qt.point(0,waterLevel.y - submarineImage.height/2)
+            property point initialPosition: Qt.point(0,activityBackground.waterLevel - submarineImage.height * 0.5)
             property bool isHit: false
             property int terminalVelocityIndex: 75
             property int maxAbsoluteRotationAngle: 15
@@ -572,7 +565,8 @@ ActivityBase {
 
             width: crown.width
             height: width * 0.7
-
+            sourceSize.width: width
+            sourceSize.height: height
             property bool isCaptured: false
 
             scale: isCaptured ? 1 : 0
@@ -607,14 +601,14 @@ ActivityBase {
             id: upperGate
             visible: (bar.level > 1) ? true : false
             width: activityBackground.width / 18
-            height: isGateOpen ? activityBackground.height * (5 / 36) : activityBackground.height * (5 / 12) + 4
-            y: -2
+            height: isGateOpen ? activityBackground.height * (5 / 36) : activityBackground.height * (5 / 12) + GCStyle.thinnestBorder * 2
+            y: -GCStle.thinnestBorder
             z: 2
             color: "#9E948A"
             border.color: "#766C62"
-            border.width: 2
+            border.width: GCStyle.thinnestBorder
             anchors.right: activityBackground.right
-            anchors.rightMargin: -2
+            anchors.rightMargin: -GCStyle.thinnestBorder
 
             property bool isGateOpen: false
 
@@ -647,16 +641,15 @@ ActivityBase {
 
         Rectangle {
             id: lowerGate
-            z: 1
             visible: upperGate.visible
             width: activityBackground.width / 18
-            height: activityBackground.height * (5 / 12) - subSchemaImage.height / 1.4
+            height: activityBackground.height - y
             y: activityBackground.height * (5 / 12)
             color: "#9E948A"
             border.color: "#766C62"
-            border.width: 2
+            border.width: GCStyle.thinnestBorder
             anchors.right:activityBackground.right
-            anchors.rightMargin: -2
+            anchors.rightMargin: -GCStyle.thinnestBorder
 
             Body {
                 id: lowerGateBody
@@ -679,22 +672,12 @@ ActivityBase {
             }
         }
 
-        Rectangle {
-            id: subSchemaImage
-            width: activityBackground.width/1.3
-            height: activityBackground.height/4
-            x: activityBackground.width/9
-            y: activityBackground.height/1.5
-            visible: false
-        }
-
         Image {
             id: crown
-
             width: submarineImage.width * 0.85
             height: crown.width * 0.5
-            sourceSize.width: crown.width
-            sourceSize.height: crown.height
+            sourceSize.width: width
+            sourceSize.height: height
             visible: ((bar.level > 2) && !isCaptured) ? true : false
             source: url + "crown.svg"
 
@@ -711,8 +694,8 @@ ActivityBase {
                 upperGate.isGateOpen = false
             }
 
-            x: activityBackground.width / 2
-            y: activityBackground.height - (subSchemaImage.height * 2)
+            x: activityBackground.width * 0.5
+            y: controlBackground.y - height * 1.5
             z: 1
 
             Body {
@@ -750,7 +733,6 @@ ActivityBase {
 
         Image {
             id: ship
-
             width: activityBackground.width / 9
             sourceSize.width: ship.width
             fillMode: Image.PreserveAspectFit
@@ -758,9 +740,8 @@ ActivityBase {
             visible: (bar.level > 3) ? true : false
             source: collided ? url + "boat-hit.svg" : url + "boat.svg"
             x: initialXPosition
+            y: activityBackground.waterLevel - height
             z: 1
-
-            anchors.bottom: waterLevel.top
 
             property bool movingLeft: true
             property bool collided: false
@@ -779,9 +760,10 @@ ActivityBase {
 
             transform: Rotation {
                 id: rotateShip
-                origin.x: ship.width / 2;
-                origin.y: 0;
-                axis { x: 0; y: 1; z: 0 } angle: 0
+                origin.x: ship.width * 0.5
+                origin.y: 0
+                axis { x: 0; y: 1; z: 0 }
+                angle: 0
             }
 
             SequentialAnimation {
@@ -846,6 +828,8 @@ ActivityBase {
             id: rock2
             width: activityBackground.width / 6
             height: rock2.width * 0.48
+            sourceSize.width: width
+            sourceSize.height: height
             z: 5
 
             visible: (bar.level > 4) ? true : false
@@ -854,9 +838,10 @@ ActivityBase {
             source: "qrc:/gcompris/src/activities/mining/resource/stone2.svg"
 
             transform: Rotation {
-                origin.x: rock2.width / 2;
-                origin.y: rock2.height / 2
-                axis { x: 0; y: 0; z: 1 } angle: 180
+                origin.x: rock2.width * 0.5
+                origin.y: rock2.height * 0.5
+                axis { x: 0; y: 0; z: 1 }
+                angle: 180
             }
 
             Body {
@@ -898,6 +883,8 @@ ActivityBase {
             id: rock1
             width: rock2.width
             height: rock2.width * 0.46
+            sourceSize.width: width
+            sourceSize.height: height
             z: 5
             visible: (bar.level > 6) ? true : false
             anchors.bottom: crown.bottom
@@ -940,13 +927,12 @@ ActivityBase {
             id: rock3
             width: activityBackground.width 
             height: activityBackground.height * 0.25
-            sourceSize.width: rock3.width
-            sourceSize.height: rock3.height
+            sourceSize.width: width
+            sourceSize.height: height
 
             visible: (bar.level > 2) ? true : false
             anchors.top: crown.top
             anchors.horizontalCenter: crown.left
-//             anchors.topMargin: height * 0.5
             source: url + "rocks.svg"
         }
         
@@ -966,41 +952,30 @@ ActivityBase {
             }
         }
 
+        Image {
+            id: controlBackground
+            z: 10
+            source: url + "board.svg"
+            width: activityBackground.width
+            height: activityBackground.height * 0.40
+            sourceSize.width: controlBackground.width
+            sourceSize.height: controlBackground.height
+            y: activityBackground.height - controlBackground.height
+        }
+
         Controls {
             id: controls
             z: 10
-            enginePosition.x: activityBackground.width * 0.1
-            enginePosition.y: buttonPlusY + buttonSize * 0.2
-            engineWidth: activityBackground.width / 8
-            engineHeight: hori ? buttonSize * 1.8 : buttonSize * 2.5
+            width: activityBackground.width - 2 * GCStyle.baseMargins
+            height: activityBackground.height - bar.height * 1.3 - y
+            x: GCStyle.baseMargins
+            y: activityBackground.height * 0.62
+
             submarineHorizontalSpeed: submarine.currentFinalVelocity * 1000
-
             leftTankVisible: bar.level >= 7 ? true : false
-            leftBallastTankPosition.x: activityBackground.width * 0.35
-            leftBallastTankPosition.y: enginePosition.y
-            leftBallastTankWidth: activityBackground.width / 8
-            leftBallastTankHeight: engineHeight
-
             centralTankVisible:  bar.level < 7 ? true : false
-            centralBallastTankPosition.x: activityBackground.width * 0.45
-            centralBallastTankPosition.y: enginePosition.y
-            centralBallastTankWidth: activityBackground.width / 8
-            centralBallastTankHeight: engineHeight
-
             rightTankVisible:  bar.level >= 7 ? true : false
-            rightBallastTankPosition.x: activityBackground.width * 0.6
-            rightBallastTankPosition.y: enginePosition.y
-            rightBallastTankWidth: activityBackground.width / 8
-            rightBallastTankHeight: engineHeight
-
             divingPlaneVisible: true
-            divingPlanePosition.x: activityBackground.width * 0.8
-            divingPlanePosition.y: enginePosition.y + (engineHeight * 0.5) - (divingPlaneHeight * 0.5)
-            divingPlaneWidth: hori ? activityBackground.width * 0.08 : activityBackground.width * 0.12
-            divingPlaneHeight: divingPlaneWidth * 0.33
-            buttonSize: hori ? subSchemaImage.height * 0.3 : subSchemaImage.height * 0.2
-            buttonPlusY: hori ? activityBackground.height * 0.61 : activityBackground.height * 0.63
-            buttonMinusY: enginePosition.y + engineHeight - buttonSize * 0.8
         }
 
         DialogHelp {
