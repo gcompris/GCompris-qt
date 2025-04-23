@@ -33,16 +33,11 @@ Item {
     Rectangle {
         id: answerRectangle
         color: "#EBEBEB"
-        radius: 15
+        radius: GCStyle.halfMargins
         anchors {
-            left: parent.left
-            right: parent.right
-            top: parent.top
-            bottom: parent.bottom
-            leftMargin: activityBackground.layoutMargins
-            topMargin: activityBackground.layoutMargins
-            bottomMargin: activityBackground.layoutMargins
-            rightMargin: activityBackground.layoutMargins + validationImage.height
+            fill: parent
+            margins: GCStyle.halfMargins
+            rightMargin: GCStyle.halfMargins + validationImage.height
 
         }
         property int cardWidth: answerRectangle.width / numberOfItemsInModel(addition)
@@ -81,7 +76,7 @@ Item {
         source: isCorrect ? correctAnswerImage : wrongAnswerImage
         anchors {
             left: answerRectangle.right
-            leftMargin: activityBackground.layoutMargins * 0.5
+            leftMargin: GCStyle.halfMargins
             verticalCenter: answerRectangle.verticalCenter
         }
     }

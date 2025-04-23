@@ -26,8 +26,6 @@ ActivityBase {
         signal start
         signal stop
 
-        property int layoutMargins: 10 * ApplicationInfo.ratio
-
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -48,7 +46,7 @@ ActivityBase {
             readonly property var levels: activity.datasets
             property alias okButton: okButton
             property alias score: score
-            property double cardSize: Core.fitItems(numberContainerArea.width, numberContainerArea.height, 6)
+            property int cardSize
             property bool isHorizontal: activityBackground.width >= activityBackground.height
             property bool buttonsBlocked: false
         }
@@ -70,10 +68,10 @@ ActivityBase {
             id: layoutArea
             anchors {
                 top: parent.top
-                bottom: bar.top
-                bottomMargin: bar.height * 0.2
                 left: parent.left
                 right: parent.right
+                bottom: score.top
+                margins: GCStyle.baseMargins
             }
         }
 
@@ -83,28 +81,21 @@ ActivityBase {
 
         Item {
             id: numberContainerArea
-            height: width * 0.67
-            width: (layoutArea.width - activityBackground.layoutMargins * 3) * 0.32
+            anchors.bottom: layoutArea.bottom
             anchors.left: layoutArea.left
-            anchors.verticalCenter: answerHolderArea.verticalCenter
-            anchors.leftMargin: activityBackground.layoutMargins
         }
 
         Rectangle {
             id: numberContainer
             width: items.cardSize * 3
             height: items.cardSize * Math.ceil(cardListModel.count / 3)
-            anchors.verticalCenter: numberContainerArea.verticalCenter
-            anchors.left: numberContainerArea.left
             color: "#80FFFFFF"
-            radius: 15
+            radius: GCStyle.halfMargins
 
             GridView {
                 id: container
-                height: parent.height
-                width: parent.width
+                anchors.fill: parent
                 interactive: false
-                anchors.centerIn: parent
                 cellHeight: items.cardSize
                 cellWidth: items.cardSize
                 model: cardListModel
@@ -126,23 +117,20 @@ ActivityBase {
         Item {
             id: answerHolderArea
             anchors {
-                left: numberContainer.right
                 top: layoutArea.top
-                bottom: score.top
-                right: score.left
-                margins: activityBackground.layoutMargins
+                right: layoutArea.right
             }
 
             ListView {
-                height: Math.min(items.cardSize * holderListModel.count, answerHolderArea.height)
-                width: Math.min(items.cardSize * 6, parent.width) // 6 as addition contains 6 cards + validation image
+                id: additionList
+                height: items.cardSize * holderListModel.count
+                width: items.cardSize * 6 // 6 as additions contains 5 cards + feedback image
                 interactive: false
-                anchors.centerIn: parent
+                anchors.verticalCenter: answerHolderArea.verticalCenter // other anchors in states
                 model: holderListModel
                 delegate: AnswerContainer {
-                    readonly property int minHeight: holderListModel.count == 0 ? items.cardSize : answerHolderArea.height / holderListModel.count
-                    height: Math.min(items.cardSize, minHeight)
-                    width: Math.min(height * 6, ListView.view.width)
+                    height: items.cardSize
+                    width: items.cardSize * 6
                 }
             }
         }
@@ -154,10 +142,10 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             anchors {
                 bottom: score.top
-                bottomMargin: activityBackground.layoutMargins
+                bottomMargin: GCStyle.baseMargins
                 horizontalCenter: score.horizontalCenter
             }
-            width: 60 * ApplicationInfo.ratio
+            width: Math.min(items.cardSize, GCStyle.bigButtonHeight)
             enabled: !items.buttonsBlocked
             onClicked: Activity.checkAnswer()
         }
@@ -166,9 +154,9 @@ ActivityBase {
             id: score
             anchors {
                 right: layoutArea.right
-                bottom: layoutArea.bottom
-                rightMargin: activityBackground.layoutMargins
-                bottomMargin: activityBackground.layoutMargins
+                rightMargin: (GCStyle.bigButtonHeight - width) * 0.5
+                bottom: activityBackground.bottom
+                bottomMargin: bar.height * 1.2
             }
             onStop: Activity.nextSubLevel()
         }
@@ -177,82 +165,65 @@ ActivityBase {
             State {
                 name: "horizontalLayout"
                 when: items.isHorizontal
-                AnchorChanges {
-                    target: numberContainerArea
-                    anchors {
-                        left: numberContainerArea.parent.left
-                        verticalCenter: answerHolderArea.verticalCenter
-                        horizontalCenter: undefined
-                        bottom: undefined
-                    }
-                }
                 PropertyChanges {
+                    items {
+                        // fit 10 items horizontally (3 card columns on left + 5 addition cards + feedback + okButton = 10)
+                        // and 3 vertically (3 additions)
+                        cardSize: Math.min((layoutArea.width - GCStyle.baseMargins * 2) / 10,
+                                        layoutArea.height / 3)
+                    }
                     numberContainerArea {
-                        anchors {
-                            leftMargin: activityBackground.layoutMargins
-                            bottomMargin: 0
-                        }
-                        height: numberContainerArea.width * 0.67
-                        width: (layoutArea.width - activityBackground.layoutMargins * 3) * 0.32
+                        height: layoutArea.height
+                        width: items.cardSize * 3
+                    }
+                    answerHolderArea {
+                        height: layoutArea.height
+                        width: layoutArea.width - GCStyle.baseMargins - numberContainerArea.width
                     }
                 }
                 AnchorChanges {
                     target: numberContainer
-                    anchors {
-                        verticalCenter: numberContainerArea.verticalCenter
-                        left: numberContainerArea.left
-                        horizontalCenter: undefined
-                    }
+                    anchors.right: numberContainerArea.right
+                    anchors.verticalCenter: numberContainerArea.verticalCenter
+                    anchors.top: undefined
+                    anchors.horizontalCenter: undefined
                 }
                 AnchorChanges {
-                    target: answerHolderArea
-                    anchors {
-                        left: numberContainer.right
-                        top: answerHolderArea.parent.top
-                        bottom: score.top
-                        right: score.left
-                    }
+                    target: additionList
+                    anchors.left: answerHolderArea.left
+                    anchors.horizontalCenter: undefined
                 }
             },
             State {
                 name: "verticalLayout"
                 when: !items.isHorizontal
-                AnchorChanges {
-                    target: numberContainerArea
-                    anchors {
-                        left: undefined
-                        verticalCenter: undefined
-                        horizontalCenter: layoutArea.horizontalCenter
-                        bottom: score.top
-                    }
-                }
                 PropertyChanges {
+                    items {
+                        // fit 6 items horizontally (5 addition cards + feedback)
+                        // and 5 vertically (3 additions + 2 card rows)
+                        cardSize: Math.min(layoutArea.width / 6,
+                                        (layoutArea.height - GCStyle.baseMargins) / 5)
+                    }
                     numberContainerArea {
-                        anchors {
-                            leftMargin: 0
-                            bottomMargin: activityBackground.layoutMargins
-                        }
-                        width: Math.min(layoutArea.width - score.width * 2 - activityBackground.layoutMargins * 4,
-                        layoutArea.height * 0.5)
-                        height: numberContainerArea.width * 0.67
+                        width: layoutArea.width
+                        height: items.cardSize * 2
+                    }
+                    answerHolderArea {
+                        width: layoutArea.width
+                        height: layoutArea.height - GCStyle.baseMargins - numberContainerArea.height
                     }
                 }
                 AnchorChanges {
                     target: numberContainer
-                    anchors {
-                        verticalCenter: numberContainerArea.verticalCenter
-                        left: undefined
-                        horizontalCenter: numberContainerArea.horizontalCenter
-                    }
+                    anchors.right: undefined
+                    anchors.verticalCenter: undefined
+                    anchors.top: numberContainerArea.top
+                    anchors.horizontalCenter: numberContainerArea.horizontalCenter
                 }
                 AnchorChanges {
-                    target: answerHolderArea
-                    anchors {
-                        left: layoutArea.left
-                        top: answerHolderArea.parent.top
-                        bottom: numberContainerArea.top
-                        right: layoutArea.right
-                    }
+                    target: additionList
+                    anchors.left: undefined
+                    anchors.horizontalCenter: answerHolderArea.horizontalCenter
                 }
             }
         ]
