@@ -32,27 +32,29 @@ ActivityBase {
         id: activityBackground
         color: "#b9d3ff"
 
-        property bool horizontalLayout: activityBackground.width >= activityBackground.height - bar.height * 1.2
         property int playX: playArea.x
         property int playY: playArea.y
-        property int playWidth: horizontalLayout ? activityBackground.height - bar.height * 1.2 : activityBackground.width
-        property int playHeight: playWidth
+        property int playWidth: Math.min(layoutArea.width, layoutArea.height)
         property double playRatio: playWidth / 1000
 
         signal start
         signal stop
 
-        /* In order to accept any screen ratio the play area is always a 1000x1000 square * playRatio
-         * and is centered in the background with a vertical offset of -bar.height * 0.6
-         */
+        Item {
+            id: layoutArea
+            anchors.fill: parent
+            anchors.margins: GCStyle.baseMargins
+            anchors.bottomMargin: bar.height * 1.2
+        }
 
+        /* In order to accept any screen ratio the play area is always a 1000x1000 square * playRatio
+         * and is centered in the layoutArea
+         */
         Rectangle {
             id: playArea
             width: activityBackground.playWidth
-            height: activityBackground.playHeight
-            anchors.verticalCenter: parent.verticalCenter
-            anchors.verticalCenterOffset: -bar.height * 0.6
-            anchors.horizontalCenter: parent.horizontalCenter
+            height: activityBackground.playWidth
+            anchors.centerIn: layoutArea
             border.width: 2
             border.color: "black"
             color: "transparent"
@@ -116,7 +118,7 @@ ActivityBase {
                 Image {
                     id: tansModel
                     x: activityBackground.playX + activityBackground.playWidth * modelData.x - width / 2
-                    y: activityBackground.playY + activityBackground.playHeight * modelData.y - height / 2
+                    y: activityBackground.playY + activityBackground.playWidth * modelData.y - height / 2
                     source: activity.resourceUrl + "m-" + modelData.img
                     sourceSize.width: modelData.width * activityBackground.playWidth
                     sourceSize.height: modelData.height * activityBackground.playWidth
@@ -134,7 +136,7 @@ ActivityBase {
             Item {
                 id: tansItem
                 x: activityBackground.playX + activityBackground.playWidth * xRatio - tans.width / 2
-                y: activityBackground.playY + activityBackground.playHeight * yRatio - tans.height / 2
+                y: activityBackground.playY + activityBackground.playWidth * yRatio - tans.height / 2
                 width: tans.width
                 height: tans.height
 
@@ -161,7 +163,7 @@ ActivityBase {
                 function positionToTans() {
                     return [
                     (x + width / 2 - activityBackground.playX) / activityBackground.playWidth,
-                    (y + height / 2 - activityBackground.playY) / activityBackground.playHeight
+                    (y + height / 2 - activityBackground.playY) / activityBackground.playWidth
                     ]
                 }
 
@@ -169,7 +171,7 @@ ActivityBase {
                 // binding. Call me to reset the binding.
                 function restoreBindings() {
                     x = Qt.binding(function() { return activityBackground.playX + activityBackground.playWidth * xRatio - width / 2})
-                    y = Qt.binding(function() { return activityBackground.playY + activityBackground.playHeight * yRatio - height / 2 })
+                    y = Qt.binding(function() { return activityBackground.playY + activityBackground.playWidth * yRatio - height / 2 })
                 }
 
                 Image {
