@@ -31,8 +31,6 @@ ActivityBase {
         signal start
         signal stop
 
-        property int layoutMargins: 10 * ApplicationInfo.ratio
-
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -96,10 +94,10 @@ ActivityBase {
 
             Item {
                 id: containerHolder
-                height: layoutArea.height - okButton.height * 2 - activityBackground.layoutMargins
-                width: layoutArea.width - (activityBackground.layoutMargins * 2)
+                height: layoutArea.height - okButton.height * 2 - GCStyle.baseMargins
+                width: layoutArea.width - (GCStyle.baseMargins * 2)
                 anchors.top: parent.top
-                anchors.topMargin: activityBackground.layoutMargins
+                anchors.topMargin: GCStyle.baseMargins
                 anchors.horizontalCenter: parent.horizontalCenter
                 Column {
                     Repeater {
@@ -124,7 +122,7 @@ ActivityBase {
 
             BarButton {
                 id: okButton
-                width: 60 * ApplicationInfo.ratio
+                width: GCStyle.bigButtonHeight
                 source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
                 anchors {
                     horizontalCenter: okButtonArea.horizontalCenter

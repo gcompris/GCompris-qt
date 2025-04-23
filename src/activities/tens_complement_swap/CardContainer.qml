@@ -5,6 +5,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
+import "../../core"
 
 Item {
     readonly property string correctAnswerImage: "qrc:/gcompris/src/core/resource/apply.svg"
@@ -13,11 +14,11 @@ Item {
     Rectangle {
         id: cardContainer
         color: "#EBEBEB"
-        height: items.isHorizontal ? parent.height - activityBackground.layoutMargins :
-                                    (parent.height - activityBackground.layoutMargins) * 0.67
+        height: items.isHorizontal ? parent.height - GCStyle.baseMargins :
+                                    (parent.height - GCStyle.baseMargins) * 0.67
         width: parent.width
         anchors.centerIn: parent
-        radius: 15
+        radius: GCStyle.halfMargins
 
         property int cardWidth: cardContainer.width / numberOfItemsInModel()
 
@@ -65,7 +66,7 @@ Item {
                 PropertyChanges {
                     validationImage {
                         height: cardContainer.height
-                        anchors.margins: activityBackground.layoutMargins * 0.5
+                        anchors.margins: GCStyle.baseMargins * 0.5
                     }
                 }
                 AnchorChanges {
@@ -84,7 +85,7 @@ Item {
                 PropertyChanges {
                     validationImage {
                         height: cardContainer.height * 0.5
-                        anchors.margins: -activityBackground.layoutMargins * 0.5
+                        anchors.margins: -GCStyle.baseMargins * 0.5
                     }
                 }
                 AnchorChanges {
