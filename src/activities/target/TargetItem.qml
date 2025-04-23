@@ -135,7 +135,7 @@ Image {
             height: size * ApplicationInfo.ratio
             color: model.color
             radius: width * 0.5
-            border.width: Math.min(1, ApplicationInfo.ratio)
+            border.width: GCStyle.thinnestBorder
             border.color: "#40000000"
             
             GCText {
