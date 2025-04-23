@@ -10,7 +10,7 @@
 import QtQuick 2.12
 import "sudoku.js" as Activity
 import core 1.0
-
+import "../../core"
 
 Rectangle {
     id: mCase
@@ -18,7 +18,7 @@ Rectangle {
     property bool isInitial
     property int gridIndex
 
-    property int gridLineSize: Math.round(2 * ApplicationInfo.ratio)
+    property int gridLineSize: GCStyle.thinBorder
 
     signal stop
 
