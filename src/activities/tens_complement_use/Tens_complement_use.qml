@@ -26,8 +26,6 @@ ActivityBase {
         signal start
         signal stop
 
-        property int layoutMargins: 10 * ApplicationInfo.ratio
-
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -82,10 +80,10 @@ ActivityBase {
         Item {
             id: numberContainerArea
             height: width * 0.67
-            width: (layoutArea.width - activityBackground.layoutMargins * 3) * 0.32
+            width: (layoutArea.width - GCStyle.baseMargins * 3) * 0.32
             anchors.left: layoutArea.left
             anchors.verticalCenter: answerHolderArea.verticalCenter
-            anchors.leftMargin: activityBackground.layoutMargins
+            anchors.leftMargin: GCStyle.baseMargins
         }
 
         Rectangle {
@@ -95,7 +93,7 @@ ActivityBase {
             anchors.verticalCenter: numberContainerArea.verticalCenter
             anchors.left: numberContainerArea.left
             color: "#80FFFFFF"
-            radius: 15
+            radius: GCStyle.halfMargins
 
             GridView {
                 id: container
@@ -127,17 +125,17 @@ ActivityBase {
                 left: numberContainer.right
                 top: layoutArea.top
                 bottom: score.top
-                right: score.left
+                right: okButton.left
             }
 
             ListView {
-                height: Math.min((items.cardSize * holderListModel.count + activityBackground.layoutMargins) * 2 , answerHolderArea.height)
+                height: Math.min((items.cardSize * holderListModel.count + GCStyle.baseMargins) * 2 , answerHolderArea.height)
                 width: parent.width
                 interactive: false
                 anchors.centerIn: parent
                 model: holderListModel
                 delegate: ContainerBox {
-                    height: Math.min((items.cardSize + activityBackground.layoutMargins) * 2, answerHolderArea.height / 2)
+                    height: Math.min((items.cardSize + GCStyle.baseMargins) * 2, answerHolderArea.height / 2)
                     width: Math.min(height * 5, ListView.view.width)
                 }
             }
@@ -150,10 +148,10 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             anchors {
                 bottom: score.top
-                bottomMargin: activityBackground.layoutMargins
-                horizontalCenter: score.horizontalCenter
+                right: layoutArea.right
+                margins: GCStyle.baseMargins
             }
-            width: 60 * ApplicationInfo.ratio
+            width: GCStyle.bigButtonHeight
             enabled: !items.buttonsBlocked
             onClicked: Activity.checkAnswer()
         }
@@ -161,10 +159,10 @@ ActivityBase {
         Score {
             id: score
             anchors {
-                right: layoutArea.right
+                right: undefined
                 bottom: layoutArea.bottom
-                rightMargin: activityBackground.layoutMargins
-                bottomMargin: activityBackground.layoutMargins
+                margins: GCStyle.baseMargins
+                horizontalCenter: okButton.horizontalCenter
             }
             onStop: Activity.nextSubLevel()
         }
@@ -185,11 +183,11 @@ ActivityBase {
                 PropertyChanges {
                     numberContainerArea {
                         anchors {
-                            leftMargin: activityBackground.layoutMargins
+                            leftMargin: GCStyle.baseMargins
                             bottomMargin: 0
                         }
                         height: numberContainerArea.width * 0.67
-                        width: (layoutArea.width - activityBackground.layoutMargins * 3) * 0.32
+                        width: (layoutArea.width - GCStyle.baseMargins * 3) * 0.32
                     }
                 }
                 AnchorChanges {
@@ -206,7 +204,7 @@ ActivityBase {
                         left: numberContainer.right
                         top: answerHolderArea.parent.top
                         bottom: score.top
-                        right: score.left
+                        right: okButton.left
                     }
                 }
             },
@@ -226,9 +224,9 @@ ActivityBase {
                     numberContainerArea {
                         anchors {
                             leftMargin: 0
-                            bottomMargin: activityBackground.layoutMargins
+                            bottomMargin: GCStyle.baseMargins
                         }
-                        width: Math.min(layoutArea.width - score.width * 2 - activityBackground.layoutMargins * 4,
+                        width: Math.min(layoutArea.width - okButton.width * 2 - GCStyle.baseMargins * 4,
                                     layoutArea.height * 0.35)
                         height: numberContainerArea.width * 0.67
                     }
