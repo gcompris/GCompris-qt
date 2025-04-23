@@ -24391,25 +24391,25 @@ msgctxt "ColorSelector|"
 msgid "Reset palette"
 msgstr "Επαναφορά παλέτας"
 
-#: activities/sketch/ColorSelector.qml:213
+#: activities/sketch/ColorSelector.qml:214
 msgctxt "ColorSelector|"
 msgid "Selected Color"
 msgstr "Επιλεγμένο χρώμα"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:237
+#: activities/sketch/ColorSelector.qml:238
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
 msgstr "Απόχρωση"
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:264
+#: activities/sketch/ColorSelector.qml:265
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
 msgstr "Κορεσμός"
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:289
+#: activities/sketch/ColorSelector.qml:290
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
 msgstr "Φωτεινότητα"
@@ -24476,23 +24476,23 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr "Εργαλεία διαβάθμισης"
 
-#: activities/sketch/Sketch.qml:673
+#: activities/sketch/Sketch.qml:670
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 "Δεν έχεις αποθηκεύσει την εικόνα. Θέλεις να κλείσεις αυτή τη δραστηριότητα;"
 
-#: activities/sketch/Sketch.qml:674
+#: activities/sketch/Sketch.qml:671
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "Θέλεις να διαγράψεις αυτή την εικόνα;"
 
-#: activities/sketch/Sketch.qml:675
+#: activities/sketch/Sketch.qml:672
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Ναι"
 
-#: activities/sketch/Sketch.qml:676
+#: activities/sketch/Sketch.qml:673
 msgctxt "Sketch|"
 msgid "No"
 msgstr "Όχι"
@@ -24522,42 +24522,42 @@ msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
 msgstr "Επαναφορά ρυθμίσεων εργαλείου"
 
-#: activities/sketch/ToolsPanel.qml:485
+#: activities/sketch/ToolsPanel.qml:484
 msgctxt "ToolsPanel|"
 msgid "Opacity"
 msgstr "Διαφάνεια"
 
-#: activities/sketch/ToolsPanel.qml:508
+#: activities/sketch/ToolsPanel.qml:507
 msgctxt "ToolsPanel|"
 msgid "Size"
 msgstr "Μέγεθος"
 
-#: activities/sketch/ToolsPanel.qml:528
+#: activities/sketch/ToolsPanel.qml:527
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "Ταχύτητα"
 
-#: activities/sketch/ToolsPanel.qml:548
+#: activities/sketch/ToolsPanel.qml:547
 msgctxt "ToolsPanel|"
 msgid "Density"
 msgstr "Πυκνότητα"
 
-#: activities/sketch/ToolsPanel.qml:568
+#: activities/sketch/ToolsPanel.qml:567
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
 msgstr "Μέγεθος τελείας"
 
-#: activities/sketch/ToolsPanel.qml:587
+#: activities/sketch/ToolsPanel.qml:586
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
 msgstr "Εξομάλυνση"
 
-#: activities/sketch/ToolsPanel.qml:648
+#: activities/sketch/ToolsPanel.qml:647
 msgctxt "ToolsPanel|"
 msgid "Rotation"
 msgstr "Περιστροφή"
 
-#: activities/sketch/ToolsPanel.qml:664
+#: activities/sketch/ToolsPanel.qml:663
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
 msgstr "Κατοπτρισμός εικόνας"
@@ -25802,19 +25802,19 @@ msgstr ""
 "Πόσο μεγάλος είναι ο Ποσειδώνας σε σύγκριση με τους άλλους πλανήτες του "
 "ηλιακού μας συστήματος;"
 
-#: activities/solar_system/QuizScreen.qml:213
+#: activities/solar_system/QuizScreen.qml:196
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "Ακρίβεια: %1"
 
-#: activities/solar_system/QuizScreen.qml:252
+#: activities/solar_system/QuizScreen.qml:239
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:287
+#: activities/solar_system/QuizScreen.qml:274
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
@@ -25822,7 +25822,7 @@ msgstr ""
 "Η συνολική σου βαθμολογία είναι: <font color=\"#3bb0de\">%1%</font>.<br><br>"
 "%2"
 
-#: activities/solar_system/QuizScreen.qml:287
+#: activities/solar_system/QuizScreen.qml:274
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -25834,7 +25834,7 @@ msgstr ""
 "γνώσεις σου ή κάνε εξάσκηση σε κανονική λειτουργία για να ανακαλύψεις "
 "περισσότερα για το ηλιακό μας σύστημα."
 
-#: activities/solar_system/QuizScreen.qml:287
+#: activities/solar_system/QuizScreen.qml:274
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
@@ -25927,7 +25927,7 @@ msgstr ""
 "Θα πρέπει να συγκεντρώσεις βαθμολογία μεγαλύτερη από 90% για να περάσεις την "
 "αξιολόγηση και να γίνεις ειδικός του ηλιακού μας συστήματος!"
 
-#: activities/solar_system/SolarSystem.qml:349
+#: activities/solar_system/SolarSystem.qml:339
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25938,7 +25938,7 @@ msgstr ""
 "<b>χαμηλότερη</b> είναι η θερμοκρασία του.<br><font color=\"#3bb0de\">%1</"
 "font>"
 
-#: activities/solar_system/SolarSystem.qml:350
+#: activities/solar_system/SolarSystem.qml:340
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25949,7 +25949,7 @@ msgstr ""
 "τον Ήλιο</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:343
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -25961,12 +25961,12 @@ msgstr ""
 "γράμματα των ονομάτων τους: <b>Ε</b>ρμής, <b>Α</b>φροδίτη, <b>Γ</b>η, <b>Ά</"
 "b>ρης, <b>Δ</b>ίας, <b>Κ</b>ρόνος, <b>Ου</b>ρανός, <b>Π</b>οσειδώνας.<br>"
 
-#: activities/solar_system/SolarSystem.qml:355
+#: activities/solar_system/SolarSystem.qml:345
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Υπόδειξη"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:353
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Προβολή του ηλιακού συστήματος."
@@ -26077,12 +26077,12 @@ msgctxt "ActivityInfo|"
 msgid "-: decrease diving planes angle"
 msgstr "-: Μείωση της γωνίας των πτερυγίων κατάδυσης."
 
-#: activities/submarine/Controls.qml:166
+#: activities/submarine/Controls.qml:162
 msgctxt "Controls|"
 msgid "Left Ballast Tank"
 msgstr "Αριστερή δεξαμενή πρόσθετου βάρους"
 
-#: activities/submarine/Controls.qml:274
+#: activities/submarine/Controls.qml:272
 msgctxt "Controls|"
 msgid "Central Ballast Tank"
 msgstr "Κεντρική δεξαμενή πρόσθετου βάρους"
