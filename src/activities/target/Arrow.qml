@@ -10,7 +10,7 @@
  */
 import QtQuick 2.12
 import core 1.0
-
+import "../../core"
 
 Repeater {
     id: arrowRepeater
@@ -31,7 +31,7 @@ Repeater {
         height: 15 * ApplicationInfo.ratio
         radius: width / 2
         anchors.centerIn: parent
-        border.width: 1 * ApplicationInfo.ratio
+        border.width: GCStyle.thinnestBorder
         border.color: "#60000000"
         opacity: 0
         color: "#d6d6d6"

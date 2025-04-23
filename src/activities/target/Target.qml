@@ -206,9 +206,9 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             width: 60 * ApplicationInfo.ratio
             anchors.bottom: bar.top
-            anchors.bottomMargin: 20 * ApplicationInfo.ratio
+            anchors.bottomMargin: bar.height * 0.5
             anchors.right: parent.right
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.rightMargin: GCStyle.baseMargins
             mouseArea.enabled: !items.inputLocked
             visible: items.currentArrow == items.nbArrow
             onClicked: {
