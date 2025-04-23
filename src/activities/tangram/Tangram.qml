@@ -28,10 +28,9 @@ ActivityBase {
 
     Keys.onPressed: (event) => { Activity.processPressedKey(event) }
 
-    pageComponent: Image {
+    pageComponent: Rectangle {
         id: activityBackground
-        source: activity.resourceUrl + "tangram/background.svg"
-        anchors.fill: parent
+        color: "#b9d3ff"
 
         property bool horizontalLayout: activityBackground.width >= activityBackground.height - bar.height * 1.2
         property int playX: playArea.x
