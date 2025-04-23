@@ -63,12 +63,13 @@ Image {
     onAttachArrow: (arrow) => {
         arrow.anchors.centerIn = undefined
         var coordArrow = parent.mapToItem(targetItem, arrow.x, arrow.y)
-        arrow.parent = targetItem
-        arrow.x = coordArrow.x
-        arrow.y = coordArrow.y
+        var coordArrowContainer = parent.mapToItem(arrowContainer, arrow.x, arrow.y)
+        arrow.parent = arrowContainer
+        arrow.x = coordArrowContainer.x
+        arrow.y = coordArrowContainer.y
 
-        var arrowCenterX = arrow.x + arrow.width / 2
-        var arrowCenterY = arrow.y + arrow.height / 2
+        var arrowCenterX = coordArrow.x + arrow.width / 2
+        var arrowCenterY = coordArrow.y + arrow.height / 2
 
         var centerX = targetItem.width / 2
         var centerY = targetItem.height / 2
@@ -152,5 +153,12 @@ Image {
             }
             
         }
+    }
+
+    Item {
+        id: arrowContainer
+        anchors.centerIn: targetItem
+        width: targetModel.count ? targetModel.get(0).size * ApplicationInfo.ratio : 0
+        height: width
     }
 }
