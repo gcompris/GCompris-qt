@@ -33,9 +33,7 @@ ActivityBase {
         signal start
         signal stop
 
-        property double baseMargins: 10 * ApplicationInfo.ratio
-        property double activityLayoutHeight: height - bar.height * 1.5
-        property bool isHorizontalLayout: width >= activityLayoutHeight
+        property bool isHorizontalLayout: layoutArea.width >= layoutArea.height
 
         Component.onCompleted: {
             dialogActivityConfig.initialize()
@@ -136,16 +134,26 @@ ActivityBase {
         Score {
             id: score
             z: 1003
-            height: 48 * ApplicationInfo.ratio
             anchors.bottom: bar.top
             anchors.right: activityBackground.right
-            anchors.bottomMargin: activityBackground.baseMargins
+            anchors.margins: GCStyle.baseMargins
             onStop: Activity.incrementLevel()
         }
 
         Keys.enabled: !items.buttonsBlocked
         Keys.onPressed: (event) => {
             Activity.onKeyPressed(event);
+        }
+
+        Item {
+            id: layoutArea
+            anchors {
+                right: parent.right
+                left: parent.left
+                top: parent.top
+                bottom: score.top
+                margins: GCStyle.baseMargins
+            }
         }
 
         SudokuListWidget {
@@ -159,17 +167,22 @@ ActivityBase {
 
         Item {
             id: gridLayout
-            anchors.margins: activityBackground.baseMargins
-            anchors.bottom: score.top
-            anchors.right: activityBackground.right
+            anchors.bottom: layoutArea.bottom
+            anchors.right: layoutArea.right
             states: [
                 State {
                     name: "horizontalLayout"
                     when: activityBackground.isHorizontalLayout
                     AnchorChanges {
                         target: gridLayout
-                        anchors.top: activityBackground.top
+                        anchors.top: layoutArea.top
                         anchors.left: availablePieces.right
+                    }
+                    PropertyChanges {
+                        gridLayout {
+                            anchors.leftMargin: GCStyle.baseMargins
+                            anchors.topMargin: 0
+                        }
                     }
                 },
                 State {
@@ -178,7 +191,13 @@ ActivityBase {
                     AnchorChanges {
                         target: gridLayout
                         anchors.top: availablePieces.bottom
-                        anchors.left: activityBackground.left
+                        anchors.left: layoutArea.left
+                    }
+                    PropertyChanges {
+                        gridLayout {
+                            anchors.leftMargin: 0
+                            anchors.topMargin: GCStyle.baseMargins
+                        }
                     }
                 }
             ]
@@ -256,7 +275,7 @@ ActivityBase {
             visible: nbRegions > 1
 
             anchors.fill: sudoColumn
-            property int regionLineSize: Math.round(4 * ApplicationInfo.ratio)
+            property int regionLineSize: GCStyle.thickBorder
 
             Repeater {
                 id: regionRepeater

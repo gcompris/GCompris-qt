@@ -17,12 +17,8 @@ Item {
     id: listWidget
     width: view.width
     height: view.height
-    anchors {
-        left: parent.left
-        leftMargin: activityBackground.baseMargins
-        top: parent.top
-        topMargin: activityBackground.baseMargins
-    }
+    anchors.top: layoutArea.top
+    anchors.left: layoutArea.left
 
     GCSoundEffect {
         id: scrollSound
@@ -40,7 +36,7 @@ Item {
     ListView {
         id: view
         interactive: false
-        spacing: 5 * ApplicationInfo.ratio
+        spacing: GCStyle.halfMargins
         model: mymodel
         delegate: listItemComponent
 
@@ -53,10 +49,11 @@ Item {
                 PropertyChanges {
                     view {
                         width: view.iconSize
-                        height: activityBackground.height - 2 * bar.height
+                        height: layoutArea.height
                         orientation: ListView.Vertical
-                        iconSize: Math.min((height - (mymodel.count - 1) * view.spacing) / mymodel.count,
-                        100 * ApplicationInfo.ratio)
+                        iconSize: Math.min(
+                            (height - (mymodel.count - 1) * view.spacing) / mymodel.count,
+                            GCStyle.bigButtonHeight)
                     }
                 }
             },
@@ -65,11 +62,12 @@ Item {
                 when: !activityBackground.isHorizontalLayout
                 PropertyChanges {
                     view {
-                        width: activityBackground.width - activityBackground.baseMargins * 2
+                        width: layoutArea.width
                         height: view.iconSize
                         orientation: ListView.Horizontal
-                        iconSize: Math.min((width - (model.count - 1) * view.spacing) / mymodel.count,
-                        100 * ApplicationInfo.ratio)
+                        iconSize: Math.min(
+                            (width - (model.count - 1) * view.spacing) / mymodel.count,
+                            GCStyle.bigButtonHeight)
                     }
                 }
             }
@@ -82,15 +80,15 @@ Item {
                 id: iconBg
                 width: view.iconSize
                 height: view.iconSize
-                color: "#AAFFFFFF"
-                radius: height * 0.1
+                color: GCStyle.lightTransparentBg
+                radius: GCStyle.halfMargins
 
                 Image {
                     id: icon
-                    anchors.centerIn: parent
-                    sourceSize.height: view.iconSize
+                    anchors.fill: parent
+                    sourceSize.height: height
                     source: model.imgName === undefined ? "" :
-                                                          Activity.url + model.imgName
+                                            Activity.url + model.imgName
                     z: iAmSelected ? 10 : 1
 
                     property bool iAmSelected: view.currentIndex == index
