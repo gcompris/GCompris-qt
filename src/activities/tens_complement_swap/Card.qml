@@ -15,20 +15,19 @@ Item {
                                 (selected || type === "symbolCard" ? parent.height : parent.height * 0.8)
         width: items.isHorizontal ? (selected ? parent.width : parent.width * 0.9) :
                                 (selected || type === "symbolCard" ? parent.width : parent.width * 0.9)
-        border.width: selected ? 12 : 3
+        border.width: selected ? GCStyle.thickerBorder : GCStyle.thinBorder
         border.color: ["numberCard", "inputCard"].indexOf(type) !== -1 ? "#9FB8E3" : "transparent"
-        radius: 15
+        radius: GCStyle.halfMargins
         anchors.centerIn: parent
 
         GCText {
-            width: parent.width
-            height: parent.height
-            anchors.centerIn: parent
-            color: "#373737"
+            anchors.fill: parent
+            anchors.margins: GCStyle.tinyMargins
+            color: GCStyle.darkText
             text: value
             wrapMode: Text.WordWrap
+            fontSize: largeSize
             fontSizeMode: Text.Fit
-            font.pointSize: Math.max(1, parent.width) // QFont::setPointSizeF: must be greater than 0.
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
         }
