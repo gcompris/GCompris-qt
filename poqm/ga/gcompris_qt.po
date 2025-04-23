@@ -26095,7 +26095,7 @@ msgctxt "ColorSelector|"
 msgid "Reset palette"
 msgstr ""
 
-#: activities/sketch/ColorSelector.qml:213
+#: activities/sketch/ColorSelector.qml:214
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Selected"
@@ -26104,13 +26104,13 @@ msgid "Selected Color"
 msgstr "Roghnaithe"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:237
+#: activities/sketch/ColorSelector.qml:238
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
 msgstr ""
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:264
+#: activities/sketch/ColorSelector.qml:265
 #, fuzzy
 #| msgctxt "Dataset|"
 #| msgid "Saturn"
@@ -26119,7 +26119,7 @@ msgid "Saturation"
 msgstr "Satarn"
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:289
+#: activities/sketch/ColorSelector.qml:290
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Lights Off"
@@ -26207,12 +26207,12 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr ""
 
-#: activities/sketch/Sketch.qml:673
+#: activities/sketch/Sketch.qml:670
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 
-#: activities/sketch/Sketch.qml:674
+#: activities/sketch/Sketch.qml:671
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Do you want to download them now?"
@@ -26220,7 +26220,7 @@ msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "Ar mhaith leat iad a íoslódáil anois?"
 
-#: activities/sketch/Sketch.qml:675
+#: activities/sketch/Sketch.qml:672
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -26228,7 +26228,7 @@ msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Ba mhaith"
 
-#: activities/sketch/Sketch.qml:676
+#: activities/sketch/Sketch.qml:673
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -26264,17 +26264,17 @@ msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
 msgstr ""
 
-#: activities/sketch/ToolsPanel.qml:485
+#: activities/sketch/ToolsPanel.qml:484
 msgctxt "ToolsPanel|"
 msgid "Opacity"
 msgstr ""
 
-#: activities/sketch/ToolsPanel.qml:508
+#: activities/sketch/ToolsPanel.qml:507
 msgctxt "ToolsPanel|"
 msgid "Size"
 msgstr ""
 
-#: activities/sketch/ToolsPanel.qml:528
+#: activities/sketch/ToolsPanel.qml:527
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Speed"
@@ -26282,12 +26282,12 @@ msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "Luas"
 
-#: activities/sketch/ToolsPanel.qml:548
+#: activities/sketch/ToolsPanel.qml:547
 msgctxt "ToolsPanel|"
 msgid "Density"
 msgstr ""
 
-#: activities/sketch/ToolsPanel.qml:568
+#: activities/sketch/ToolsPanel.qml:567
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Dots"
@@ -26295,12 +26295,12 @@ msgctxt "ToolsPanel|"
 msgid "Dots Size"
 msgstr "Poncanna"
 
-#: activities/sketch/ToolsPanel.qml:587
+#: activities/sketch/ToolsPanel.qml:586
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
 msgstr ""
 
-#: activities/sketch/ToolsPanel.qml:648
+#: activities/sketch/ToolsPanel.qml:647
 #, fuzzy
 #| msgctxt "Lang|"
 #| msgid "action"
@@ -26308,7 +26308,7 @@ msgctxt "ToolsPanel|"
 msgid "Rotation"
 msgstr "gníomh"
 
-#: activities/sketch/ToolsPanel.qml:664
+#: activities/sketch/ToolsPanel.qml:663
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Mirror the given image"
@@ -27598,25 +27598,25 @@ msgstr ""
 "Cé chomh mór is atá Neiptiún i gcomparáid leis na pláinéid eile atá inár "
 "nGrianchóras?"
 
-#: activities/solar_system/QuizScreen.qml:213
+#: activities/solar_system/QuizScreen.qml:196
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "Cruinneas: %1%"
 
-#: activities/solar_system/QuizScreen.qml:252
+#: activities/solar_system/QuizScreen.qml:239
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:287
+#: activities/solar_system/QuizScreen.qml:274
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr "Seo é do scór deiridh: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 
-#: activities/solar_system/QuizScreen.qml:287
+#: activities/solar_system/QuizScreen.qml:274
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -27624,7 +27624,7 @@ msgid ""
 "System."
 msgstr ""
 
-#: activities/solar_system/QuizScreen.qml:287
+#: activities/solar_system/QuizScreen.qml:274
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
@@ -27692,7 +27692,7 @@ msgid ""
 "expert!"
 msgstr ""
 
-#: activities/solar_system/SolarSystem.qml:365
+#: activities/solar_system/SolarSystem.qml:355
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -27700,7 +27700,7 @@ msgid ""
 "temperature.<br><font color=\"#3bb0de\">%1</font>"
 msgstr ""
 
-#: activities/solar_system/SolarSystem.qml:366
+#: activities/solar_system/SolarSystem.qml:356
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -27709,7 +27709,7 @@ msgid ""
 msgstr ""
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:369
+#: activities/solar_system/SolarSystem.qml:359
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -27717,12 +27717,12 @@ msgid ""
 "b>other <b>J</b>ust <b>S</b>erved <b>U</b>s <b>N</b>oodles.<br>"
 msgstr ""
 
-#: activities/solar_system/SolarSystem.qml:371
+#: activities/solar_system/SolarSystem.qml:361
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Leid"
 
-#: activities/solar_system/SolarSystem.qml:379
+#: activities/solar_system/SolarSystem.qml:369
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Amharc ar an Ghrianchóras"
@@ -27831,12 +27831,12 @@ msgctxt "ActivityInfo|"
 msgid "-: decrease diving planes angle"
 msgstr "- : Laghdaigh uilleann an phlána tumadóireachta"
 
-#: activities/submarine/Controls.qml:166
+#: activities/submarine/Controls.qml:162
 msgctxt "Controls|"
 msgid "Left Ballast Tank"
 msgstr "Dabhach bhaláiste ar chlé"
 
-#: activities/submarine/Controls.qml:274
+#: activities/submarine/Controls.qml:272
 msgctxt "Controls|"
 msgid "Central Ballast Tank"
 msgstr "Dabhach bhaláiste sa lár"
@@ -27846,7 +27846,7 @@ msgctxt "Controls|"
 msgid "Right Ballast Tank"
 msgstr "Dabhach bhaláiste ar dheis"
 
-#: activities/submarine/Submarine.qml:130
+#: activities/submarine/Submarine.qml:133
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Move the submarine to the other side of the screen."
@@ -27854,7 +27854,7 @@ msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "Bog an bád faoi thoinn chuig an taobh eile den scáileán."
 
-#: activities/submarine/Submarine.qml:133
+#: activities/submarine/Submarine.qml:136
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27868,7 +27868,7 @@ msgstr ""
 "Baineann an uirlis is faide ar chlé sa phainéal rialaithe le hinneall an "
 "bháid faoi thoinn, tugann sé luas an bháid faoi thoinn duit."
 
-#: activities/submarine/Submarine.qml:136
+#: activities/submarine/Submarine.qml:139
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Increase or decrease the velocity of the submarine using the engine."
@@ -27877,7 +27877,7 @@ msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr ""
 "Chun luas an bháid faoi thoinn a mhéadú nó a laghdú, úsáid an t-inneall."
 
-#: activities/submarine/Submarine.qml:139
+#: activities/submarine/Submarine.qml:142
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27891,7 +27891,7 @@ msgstr ""
 "Brúigh an cnaipe + chun an luas a mhéadú nó an cnaipe - chun an luas a "
 "laghdú."
 
-#: activities/submarine/Submarine.qml:146
+#: activities/submarine/Submarine.qml:149
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "The item next to the engine is the ballast tank."
@@ -27899,7 +27899,7 @@ msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "Tá an t-umar ballasta le fáil i lár an phainéil rialaithe."
 
-#: activities/submarine/Submarine.qml:149
+#: activities/submarine/Submarine.qml:152
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "The ballast tanks are used to float or dive under water."
@@ -27909,7 +27909,7 @@ msgstr ""
 "Úsáidtear na humair bhallasta le snámh ar an uisce nó le tumadh síos faoin "
 "uisce."
 
-#: activities/submarine/Submarine.qml:152
+#: activities/submarine/Submarine.qml:155
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27923,7 +27923,7 @@ msgstr ""
 "Má tá na humair bhallasta folamh, snámhfaidh an bád faoi thoinn. Má tá siad "
 "lán, rachaidh an bád faoi thoinn síos faoin uisce."
 
-#: activities/submarine/Submarine.qml:155
+#: activities/submarine/Submarine.qml:158
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27939,7 +27939,7 @@ msgstr ""
 "agus nuair a dhruidtear an chomhla cuirtear stop leis an uisce. Ar an dóigh "
 "seo is féidir leis an bhád faoi thoinn dhul faoin uisce."
 
-#: activities/submarine/Submarine.qml:158
+#: activities/submarine/Submarine.qml:161
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27956,7 +27956,7 @@ msgstr ""
 "uisce de bheith ag dul amach as na humair bhallasta. Ar an dóigh seo ligeann "
 "sé don bhád faoi thoinn snámh ar an uisce."
 
-#: activities/submarine/Submarine.qml:165
+#: activities/submarine/Submarine.qml:168
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27970,7 +27970,7 @@ msgstr ""
 "Rialaíonn an uirlis is faide ar dheis sa phainéal rialaithe, plána "
 "tumadóireachta an bháid faoi thoinn."
 
-#: activities/submarine/Submarine.qml:168
+#: activities/submarine/Submarine.qml:171
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27984,7 +27984,7 @@ msgstr ""
 "Úsáidtear na plánaí tumadóireachta chun doimhneacht an bhád faoi thoinn a "
 "rialú go cruinn nuair atá sé faoi uisce."
 
-#: activities/submarine/Submarine.qml:171
+#: activities/submarine/Submarine.qml:174
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27999,7 +27999,7 @@ msgstr ""
 "laghdaítear doimhneacht an bháid faoi thoinn nuair a mhéadaítear nó "
 "laghdaítear uillinn an phlána."
 
-#: activities/submarine/Submarine.qml:174
+#: activities/submarine/Submarine.qml:177
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -28013,7 +28013,7 @@ msgstr ""
 "Méadaítear doimhneacht an bháid faoi thoinn leis an chnaipe + agus "
 "laghdaítear an doimhneacht leis an chnaipe -."
 
-#: activities/submarine/Submarine.qml:177
+#: activities/submarine/Submarine.qml:180
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Grab the crown to open the gate."
@@ -28021,7 +28021,7 @@ msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "Faigh an choróin chun an geata a oscailt."
 
-#: activities/submarine/Submarine.qml:180
+#: activities/submarine/Submarine.qml:183
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Check out the help menu for the keyboard controls."

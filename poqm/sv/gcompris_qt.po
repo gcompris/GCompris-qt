@@ -24642,25 +24642,25 @@ msgctxt "ColorSelector|"
 msgid "Reset palette"
 msgstr "Återställ palett"
 
-#: activities/sketch/ColorSelector.qml:213
+#: activities/sketch/ColorSelector.qml:214
 msgctxt "ColorSelector|"
 msgid "Selected Color"
 msgstr "Vald färg"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:237
+#: activities/sketch/ColorSelector.qml:238
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
 msgstr "Färgton"
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:264
+#: activities/sketch/ColorSelector.qml:265
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
 msgstr "Färgmättnad"
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:289
+#: activities/sketch/ColorSelector.qml:290
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
 msgstr "Ljusstyrka"
@@ -24727,22 +24727,22 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr "Toningsverktyg"
 
-#: activities/sketch/Sketch.qml:673
+#: activities/sketch/Sketch.qml:670
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Du har inte sparat bilden. Vill du stänga aktiviteten?"
 
-#: activities/sketch/Sketch.qml:674
+#: activities/sketch/Sketch.qml:671
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "Vill du radera bilden?"
 
-#: activities/sketch/Sketch.qml:675
+#: activities/sketch/Sketch.qml:672
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Ja"
 
-#: activities/sketch/Sketch.qml:676
+#: activities/sketch/Sketch.qml:673
 msgctxt "Sketch|"
 msgid "No"
 msgstr "Nej"
@@ -24772,42 +24772,42 @@ msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
 msgstr "Återställ verktygsinställningar"
 
-#: activities/sketch/ToolsPanel.qml:485
+#: activities/sketch/ToolsPanel.qml:484
 msgctxt "ToolsPanel|"
 msgid "Opacity"
 msgstr "Ogenomskinlighet"
 
-#: activities/sketch/ToolsPanel.qml:508
+#: activities/sketch/ToolsPanel.qml:507
 msgctxt "ToolsPanel|"
 msgid "Size"
 msgstr "Storlek"
 
-#: activities/sketch/ToolsPanel.qml:528
+#: activities/sketch/ToolsPanel.qml:527
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "Hastighet"
 
-#: activities/sketch/ToolsPanel.qml:548
+#: activities/sketch/ToolsPanel.qml:547
 msgctxt "ToolsPanel|"
 msgid "Density"
 msgstr "Täthet"
 
-#: activities/sketch/ToolsPanel.qml:568
+#: activities/sketch/ToolsPanel.qml:567
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
 msgstr "Punktstorlek"
 
-#: activities/sketch/ToolsPanel.qml:587
+#: activities/sketch/ToolsPanel.qml:586
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
 msgstr "Utjämning"
 
-#: activities/sketch/ToolsPanel.qml:648
+#: activities/sketch/ToolsPanel.qml:647
 msgctxt "ToolsPanel|"
 msgid "Rotation"
 msgstr "Rotation"
 
-#: activities/sketch/ToolsPanel.qml:664
+#: activities/sketch/ToolsPanel.qml:663
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
 msgstr "Spegla bild"
@@ -26016,26 +26016,26 @@ msgctxt "Dataset|"
 msgid "How large is Neptune compared to other planets in the Solar System?"
 msgstr "Hur stor är Neptunus jämfört med andra planeter i solsystemet?"
 
-#: activities/solar_system/QuizScreen.qml:213
+#: activities/solar_system/QuizScreen.qml:196
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "Noggrannhet: %1 %"
 
-#: activities/solar_system/QuizScreen.qml:252
+#: activities/solar_system/QuizScreen.qml:239
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1 %"
 
-#: activities/solar_system/QuizScreen.qml:287
+#: activities/solar_system/QuizScreen.qml:274
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr ""
 "Din slutliga poäng blev: <font color=\"#3bb0de\">%1 %</font>.<br><br>%2"
 
-#: activities/solar_system/QuizScreen.qml:287
+#: activities/solar_system/QuizScreen.qml:274
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -26046,7 +26046,7 @@ msgstr ""
 "kunskaper igen, eller öva på normalt sätt för att lära dig mer om "
 "solsystemet."
 
-#: activities/solar_system/QuizScreen.qml:287
+#: activities/solar_system/QuizScreen.qml:274
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
@@ -26135,7 +26135,7 @@ msgid ""
 msgstr ""
 "Du ska ha över 90 % för att klara av bedömningen och bli en solsystemexpert!"
 
-#: activities/solar_system/SolarSystem.qml:365
+#: activities/solar_system/SolarSystem.qml:355
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26145,7 +26145,7 @@ msgstr ""
 "1. Ju <b>längre bort</b> en planet är från solen, desto <b>lägre</b> är dess "
 "temperatur.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:366
+#: activities/solar_system/SolarSystem.qml:356
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26156,7 +26156,7 @@ msgstr ""
 "<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:369
+#: activities/solar_system/SolarSystem.qml:359
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -26167,12 +26167,12 @@ msgstr ""
 "tänk på den första bokstaven i varje ord: <b>M</b>amma <b>V</b>attnar <b>J</"
 "b>orden <b>M</b>edan <b>J</b>ag <b>S</b>ätter <b>U</b>t <b>N</b>ya.<br>"
 
-#: activities/solar_system/SolarSystem.qml:371
+#: activities/solar_system/SolarSystem.qml:361
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Tips"
 
-#: activities/solar_system/SolarSystem.qml:379
+#: activities/solar_system/SolarSystem.qml:369
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Visa solsystemet"
@@ -26278,12 +26278,12 @@ msgctxt "ActivityInfo|"
 msgid "-: decrease diving planes angle"
 msgstr "-: minska dykrodrens vinkel"
 
-#: activities/submarine/Controls.qml:166
+#: activities/submarine/Controls.qml:162
 msgctxt "Controls|"
 msgid "Left Ballast Tank"
 msgstr "Vänster ballasttank"
 
-#: activities/submarine/Controls.qml:274
+#: activities/submarine/Controls.qml:272
 msgctxt "Controls|"
 msgid "Central Ballast Tank"
 msgstr "Central ballasttank"
@@ -26293,7 +26293,7 @@ msgctxt "Controls|"
 msgid "Right Ballast Tank"
 msgstr "Höger ballasttank"
 
-#: activities/submarine/Submarine.qml:130
+#: activities/submarine/Submarine.qml:133
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Move the submarine to the other side of the screen."
@@ -26301,7 +26301,7 @@ msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "Flytta u-båten till andra sidan skärmen."
 
-#: activities/submarine/Submarine.qml:133
+#: activities/submarine/Submarine.qml:136
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26315,7 +26315,7 @@ msgstr ""
 "Kontrollen längst till vänster på kontrollpanelen är u-båtens motor, som "
 "anger u-båtens nuvarande hastighet."
 
-#: activities/submarine/Submarine.qml:136
+#: activities/submarine/Submarine.qml:139
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Increase or decrease the velocity of the submarine using the engine."
@@ -26323,7 +26323,7 @@ msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr "Öka eller minska u-båtens hastighet med motorn."
 
-#: activities/submarine/Submarine.qml:139
+#: activities/submarine/Submarine.qml:142
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26337,7 +26337,7 @@ msgstr ""
 "Tryck på knappen + för att öka hastigheten, eller knappen - för att minska "
 "hastigheten."
 
-#: activities/submarine/Submarine.qml:146
+#: activities/submarine/Submarine.qml:149
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "The item next to the engine is the ballast tank."
@@ -26345,7 +26345,7 @@ msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "Föremålet intill motorn är ballasttanken."
 
-#: activities/submarine/Submarine.qml:149
+#: activities/submarine/Submarine.qml:152
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "The ballast tanks are used to float or dive under water."
@@ -26353,7 +26353,7 @@ msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr "Ballasttankarna används för att flyta eller dyka ner under vattenytan."
 
-#: activities/submarine/Submarine.qml:152
+#: activities/submarine/Submarine.qml:155
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26367,7 +26367,7 @@ msgstr ""
 "Om ballasttankarna är tomma flyter u-båten. Om ballasttankarna är fulla med "
 "vatten, dyker u-båten under vattenytan."
 
-#: activities/submarine/Submarine.qml:155
+#: activities/submarine/Submarine.qml:158
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26383,7 +26383,7 @@ msgstr ""
 "ballasttanken eller förhindrar det, och gör det därmed möjligt att dyka "
 "under vattenytan."
 
-#: activities/submarine/Submarine.qml:158
+#: activities/submarine/Submarine.qml:161
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26400,7 +26400,7 @@ msgstr ""
 "ut från ballasttanken eller förhindrar det, och gör det därmed möjligt att "
 "flyta på vattenytan."
 
-#: activities/submarine/Submarine.qml:165
+#: activities/submarine/Submarine.qml:168
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26412,7 +26412,7 @@ msgid ""
 "submarine."
 msgstr "Kontrollen längst till höger på kontrollpanelen styr u-båtens dykroder"
 
-#: activities/submarine/Submarine.qml:168
+#: activities/submarine/Submarine.qml:171
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26426,7 +26426,7 @@ msgstr ""
 "Dykrodren på en u-båt används för att noggrant styra u-båtens djup när den "
 "väl är under vattenytan."
 
-#: activities/submarine/Submarine.qml:171
+#: activities/submarine/Submarine.qml:174
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26440,7 +26440,7 @@ msgstr ""
 "När u-båten väl rör sig under ytan, ökas eller minskas u-båtens djup genom "
 "att öka eller minska vinkeln på rodren."
 
-#: activities/submarine/Submarine.qml:174
+#: activities/submarine/Submarine.qml:177
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26452,7 +26452,7 @@ msgid ""
 "will decrease the depth of the submarine."
 msgstr "Knappen + ökar u-båtens djup, medan knappen - minskar u-båtens djup."
 
-#: activities/submarine/Submarine.qml:177
+#: activities/submarine/Submarine.qml:180
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Grab the crown to open the gate."
@@ -26460,7 +26460,7 @@ msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "Ta tag i kronan för att öppna porten."
 
-#: activities/submarine/Submarine.qml:180
+#: activities/submarine/Submarine.qml:183
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Check out the help menu for the keyboard controls."

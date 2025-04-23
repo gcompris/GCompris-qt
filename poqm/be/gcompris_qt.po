@@ -24324,25 +24324,25 @@ msgctxt "ColorSelector|"
 msgid "Reset palette"
 msgstr ""
 
-#: activities/sketch/ColorSelector.qml:213
+#: activities/sketch/ColorSelector.qml:214
 msgctxt "ColorSelector|"
 msgid "Selected Color"
 msgstr "Абраны колер"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:237
+#: activities/sketch/ColorSelector.qml:238
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
 msgstr "Адценне"
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:264
+#: activities/sketch/ColorSelector.qml:265
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
 msgstr "Насычанасць"
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:289
+#: activities/sketch/ColorSelector.qml:290
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
 msgstr "Асвятлённасць"
@@ -24409,22 +24409,22 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr ""
 
-#: activities/sketch/Sketch.qml:673
+#: activities/sketch/Sketch.qml:670
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Вы не захавалі выяву. Вы жадаеце закрыць практыкаванне?"
 
-#: activities/sketch/Sketch.qml:674
+#: activities/sketch/Sketch.qml:671
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "Вы жадаеце сцерці гэтую выяву?"
 
-#: activities/sketch/Sketch.qml:675
+#: activities/sketch/Sketch.qml:672
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Так"
 
-#: activities/sketch/Sketch.qml:676
+#: activities/sketch/Sketch.qml:673
 msgctxt "Sketch|"
 msgid "No"
 msgstr "Не"
@@ -24454,42 +24454,42 @@ msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
 msgstr ""
 
-#: activities/sketch/ToolsPanel.qml:485
+#: activities/sketch/ToolsPanel.qml:484
 msgctxt "ToolsPanel|"
 msgid "Opacity"
 msgstr ""
 
-#: activities/sketch/ToolsPanel.qml:508
+#: activities/sketch/ToolsPanel.qml:507
 msgctxt "ToolsPanel|"
 msgid "Size"
 msgstr ""
 
-#: activities/sketch/ToolsPanel.qml:528
+#: activities/sketch/ToolsPanel.qml:527
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "Хуткасць"
 
-#: activities/sketch/ToolsPanel.qml:548
+#: activities/sketch/ToolsPanel.qml:547
 msgctxt "ToolsPanel|"
 msgid "Density"
 msgstr ""
 
-#: activities/sketch/ToolsPanel.qml:568
+#: activities/sketch/ToolsPanel.qml:567
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
 msgstr "Памер кропкі"
 
-#: activities/sketch/ToolsPanel.qml:587
+#: activities/sketch/ToolsPanel.qml:586
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
 msgstr ""
 
-#: activities/sketch/ToolsPanel.qml:648
+#: activities/sketch/ToolsPanel.qml:647
 msgctxt "ToolsPanel|"
 msgid "Rotation"
 msgstr "Паварот"
 
-#: activities/sketch/ToolsPanel.qml:664
+#: activities/sketch/ToolsPanel.qml:663
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
 msgstr "У люстраным выглядзе"
@@ -25705,25 +25705,25 @@ msgctxt "Dataset|"
 msgid "How large is Neptune compared to other planets in the Solar System?"
 msgstr "Якой велічыні Нептун у параўнанні з іншымі планетамі Сонечнай сістэмы?"
 
-#: activities/solar_system/QuizScreen.qml:213
+#: activities/solar_system/QuizScreen.qml:196
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "Дакладнасць: %1%"
 
-#: activities/solar_system/QuizScreen.qml:252
+#: activities/solar_system/QuizScreen.qml:239
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:287
+#: activities/solar_system/QuizScreen.qml:274
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr "Ваш фінальны лік: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 
-#: activities/solar_system/QuizScreen.qml:287
+#: activities/solar_system/QuizScreen.qml:274
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -25734,7 +25734,7 @@ msgstr ""
 "<br>Паспрабуйце праверыць свае веды яшчэ раз ці папрактыкуйцеся ў рэжыме "
 "навучання, каб даведацца больш пра Сонечную сістэму."
 
-#: activities/solar_system/QuizScreen.qml:287
+#: activities/solar_system/QuizScreen.qml:274
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
@@ -25822,7 +25822,7 @@ msgstr ""
 "Вам трэба набраць больш за 90% для праходжання ацэнкі і атрымання ўзроўня "
 "эксперту па Сонечнай сістэме!"
 
-#: activities/solar_system/SolarSystem.qml:365
+#: activities/solar_system/SolarSystem.qml:355
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25832,7 +25832,7 @@ msgstr ""
 "1. Чым <b>далей</b> планета ад Сонца, тым <b>меней</b> яе тэмпература."
 "<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:366
+#: activities/solar_system/SolarSystem.qml:356
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25843,7 +25843,7 @@ msgstr ""
 "<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:369
+#: activities/solar_system/SolarSystem.qml:359
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -25855,12 +25855,12 @@ msgstr ""
 "<b>З</b>емляне <b>М</b>арым <b>Ю</b>нацтва <b>С</b>узор'ямі <b>У</"
 "b>збагаціць <b>Н</b>азаўжды.<br>"
 
-#: activities/solar_system/SolarSystem.qml:371
+#: activities/solar_system/SolarSystem.qml:361
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Падказка"
 
-#: activities/solar_system/SolarSystem.qml:379
+#: activities/solar_system/SolarSystem.qml:369
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Агляд Сонечнай сістэмы"
@@ -25966,12 +25966,12 @@ msgctxt "ActivityInfo|"
 msgid "-: decrease diving planes angle"
 msgstr "-: паменшыць вугал гарызантальных рулей"
 
-#: activities/submarine/Controls.qml:166
+#: activities/submarine/Controls.qml:162
 msgctxt "Controls|"
 msgid "Left Ballast Tank"
 msgstr "Левая баластная цыстэрна"
 
-#: activities/submarine/Controls.qml:274
+#: activities/submarine/Controls.qml:272
 msgctxt "Controls|"
 msgid "Central Ballast Tank"
 msgstr "Цэнтральная баластная цыстэрна"
@@ -25981,7 +25981,7 @@ msgctxt "Controls|"
 msgid "Right Ballast Tank"
 msgstr "Правая баластная цыстэрна"
 
-#: activities/submarine/Submarine.qml:130
+#: activities/submarine/Submarine.qml:133
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Move the submarine to the other side of the screen."
@@ -25989,7 +25989,7 @@ msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "Кіруйце падводную лодку да супрацьлеглага краю экрана."
 
-#: activities/submarine/Submarine.qml:133
+#: activities/submarine/Submarine.qml:136
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26003,7 +26003,7 @@ msgstr ""
 "Леваруч на кантрольнай панэлі знаходзіцца кіраванне рухавіком з індыкатарам "
 "бягучай велічыні хуткасці падводнай лодкі."
 
-#: activities/submarine/Submarine.qml:136
+#: activities/submarine/Submarine.qml:139
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Increase or decrease the velocity of the submarine using the engine."
@@ -26013,7 +26013,7 @@ msgstr ""
 "Павялічвайце ці памяншайце хуткасць падводнай лодкі пры дапамозе кіравання "
 "рухавіком."
 
-#: activities/submarine/Submarine.qml:139
+#: activities/submarine/Submarine.qml:142
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26026,7 +26026,7 @@ msgid ""
 msgstr ""
 "Націсніце кнопку \"+\" для павелічэння хуткасці, альбо \"-\" для памяншэння."
 
-#: activities/submarine/Submarine.qml:146
+#: activities/submarine/Submarine.qml:149
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "The item next to the engine is the ballast tank."
@@ -26036,7 +26036,7 @@ msgstr ""
 "Наступным пасля кіравання рухавіком знаходзіцца блок кіравання баластнымі "
 "цыстэрнамі."
 
-#: activities/submarine/Submarine.qml:149
+#: activities/submarine/Submarine.qml:152
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "The ballast tanks are used to float or dive under water."
@@ -26045,7 +26045,7 @@ msgid "The ballast tanks are used to float or dive under water."
 msgstr ""
 "Баластныя цыстэрны выкарыстоўваюцца для ўсплывання ці пагружэння ў вадзе."
 
-#: activities/submarine/Submarine.qml:152
+#: activities/submarine/Submarine.qml:155
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26059,7 +26059,7 @@ msgstr ""
 "Калі баластныя цыстэрны пустыя, то падводная лодка ўсплывае. Калі яны "
 "напоўненыя вадой, то падводная лодка пагружаецца пад ваду."
 
-#: activities/submarine/Submarine.qml:155
+#: activities/submarine/Submarine.qml:158
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26074,7 +26074,7 @@ msgstr ""
 "Адкрыццё ці перакрыццё верхняга клапана будзе адпаведна запускаць ці спыняць "
 "падачу вады ў баластную цыстэрну, рэгулюючы пагружэнне пад вадой."
 
-#: activities/submarine/Submarine.qml:158
+#: activities/submarine/Submarine.qml:161
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26090,7 +26090,7 @@ msgstr ""
 "Адкрыццё ці перакрыццё ніжняга клапана будзе адпаведна дазваляць ці спыняць "
 "выцяканне вады з баластнай цыстэрны, рэгулюючы ўсплыванне да паверхні вады."
 
-#: activities/submarine/Submarine.qml:165
+#: activities/submarine/Submarine.qml:168
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26104,7 +26104,7 @@ msgstr ""
 "Праваруч на кантрольнай панэлі знаходзіцца блок кіравання гарызантальнымі "
 "рулямі падводнай лодкі"
 
-#: activities/submarine/Submarine.qml:168
+#: activities/submarine/Submarine.qml:171
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26118,7 +26118,7 @@ msgstr ""
 "Гарызантальныя рулі падводнай лодкі выкарыстоўваюцца для рэгулявання глыбіны "
 "занырвання пад вадой."
 
-#: activities/submarine/Submarine.qml:171
+#: activities/submarine/Submarine.qml:174
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26133,7 +26133,7 @@ msgstr ""
 "наклону рулей будзе павялічваць ці памяншаць глыбіню занырвання падводнай "
 "лодкі."
 
-#: activities/submarine/Submarine.qml:174
+#: activities/submarine/Submarine.qml:177
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26147,7 +26147,7 @@ msgstr ""
 "Кнопка \"+\" павялічыць глыбіню занырывання падводнай лодкі, тады як \"-\" "
 "паменшыць яе."
 
-#: activities/submarine/Submarine.qml:177
+#: activities/submarine/Submarine.qml:180
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Grab the crown to open the gate."
@@ -26155,7 +26155,7 @@ msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "Злавіце карону, каб адкрыць шлюз."
 
-#: activities/submarine/Submarine.qml:180
+#: activities/submarine/Submarine.qml:183
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Check out the help menu for the keyboard controls."

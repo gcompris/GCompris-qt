@@ -24839,25 +24839,25 @@ msgctxt "ColorSelector|"
 msgid "Reset palette"
 msgstr "Resetează paleta"
 
-#: activities/sketch/ColorSelector.qml:213
+#: activities/sketch/ColorSelector.qml:214
 msgctxt "ColorSelector|"
 msgid "Selected Color"
 msgstr "Culoarea selectată"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:237
+#: activities/sketch/ColorSelector.qml:238
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
 msgstr "Nuanța"
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:264
+#: activities/sketch/ColorSelector.qml:265
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
 msgstr "Saturația"
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:289
+#: activities/sketch/ColorSelector.qml:290
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
 msgstr "Strălucirea"
@@ -24924,22 +24924,22 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr "Instrumente pentru gradient"
 
-#: activities/sketch/Sketch.qml:673
+#: activities/sketch/Sketch.qml:670
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Nu ai salvat această imagine. Vrei să închizi această activitate?"
 
-#: activities/sketch/Sketch.qml:674
+#: activities/sketch/Sketch.qml:671
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "Vrei să ștergi această imagine?"
 
-#: activities/sketch/Sketch.qml:675
+#: activities/sketch/Sketch.qml:672
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Da"
 
-#: activities/sketch/Sketch.qml:676
+#: activities/sketch/Sketch.qml:673
 msgctxt "Sketch|"
 msgid "No"
 msgstr "Nu"
@@ -24969,42 +24969,42 @@ msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
 msgstr "Setările instrumentului de reset"
 
-#: activities/sketch/ToolsPanel.qml:485
+#: activities/sketch/ToolsPanel.qml:484
 msgctxt "ToolsPanel|"
 msgid "Opacity"
 msgstr "Opacitatea"
 
-#: activities/sketch/ToolsPanel.qml:508
+#: activities/sketch/ToolsPanel.qml:507
 msgctxt "ToolsPanel|"
 msgid "Size"
 msgstr "Mărimea"
 
-#: activities/sketch/ToolsPanel.qml:528
+#: activities/sketch/ToolsPanel.qml:527
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "Viteza"
 
-#: activities/sketch/ToolsPanel.qml:548
+#: activities/sketch/ToolsPanel.qml:547
 msgctxt "ToolsPanel|"
 msgid "Density"
 msgstr "Densitatea"
 
-#: activities/sketch/ToolsPanel.qml:568
+#: activities/sketch/ToolsPanel.qml:567
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
 msgstr "Mărimea punctelor"
 
-#: activities/sketch/ToolsPanel.qml:587
+#: activities/sketch/ToolsPanel.qml:586
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
 msgstr "Finețea"
 
-#: activities/sketch/ToolsPanel.qml:648
+#: activities/sketch/ToolsPanel.qml:647
 msgctxt "ToolsPanel|"
 msgid "Rotation"
 msgstr "Rotația"
 
-#: activities/sketch/ToolsPanel.qml:664
+#: activities/sketch/ToolsPanel.qml:663
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
 msgstr "Imaginea în oglindă"
@@ -26240,25 +26240,25 @@ msgid "How large is Neptune compared to other planets in the Solar System?"
 msgstr ""
 "Cât de mare este Neptun comparativ cu celelalte planete din Sistemul Solar?"
 
-#: activities/solar_system/QuizScreen.qml:213
+#: activities/solar_system/QuizScreen.qml:196
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "Acuratețe: %1"
 
-#: activities/solar_system/QuizScreen.qml:252
+#: activities/solar_system/QuizScreen.qml:239
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:287
+#: activities/solar_system/QuizScreen.qml:274
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr "Scorul tău final este: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 
-#: activities/solar_system/QuizScreen.qml:287
+#: activities/solar_system/QuizScreen.qml:274
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -26270,7 +26270,7 @@ msgstr ""
 "antrenează-te în modul normal pentru a afla mai multe informații despre "
 "Sistemul Solar."
 
-#: activities/solar_system/QuizScreen.qml:287
+#: activities/solar_system/QuizScreen.qml:274
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
@@ -26361,7 +26361,7 @@ msgstr ""
 "Trebuie să obții un scor de peste 90% pentru a trece evaluarea și a deveni "
 "un expert al Sistemului Solar!"
 
-#: activities/solar_system/SolarSystem.qml:365
+#: activities/solar_system/SolarSystem.qml:355
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26371,7 +26371,7 @@ msgstr ""
 "1. Cu cât este <b>mai departe</b> de Soare o planetă, cu atât este <b>mai "
 "mică</b> temperatura ei.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:366
+#: activities/solar_system/SolarSystem.qml:356
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26382,7 +26382,7 @@ msgstr ""
 "b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:369
+#: activities/solar_system/SolarSystem.qml:359
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -26393,12 +26393,12 @@ msgstr ""
 "b>ama <b>v</b>ine <b>p</b>e <b>m</b>otocicleta <b>j</b>aponeză "
 "<b>s<b>urâzându-i <b>u</b>nui <b>n</b>ene.<br>"
 
-#: activities/solar_system/SolarSystem.qml:371
+#: activities/solar_system/SolarSystem.qml:361
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Indicații"
 
-#: activities/solar_system/SolarSystem.qml:379
+#: activities/solar_system/SolarSystem.qml:369
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Vezi sistemul solar"
@@ -26504,12 +26504,12 @@ msgctxt "ActivityInfo|"
 msgid "-: decrease diving planes angle"
 msgstr "− : micșorează înclinarea aripioarelor de plonjare"
 
-#: activities/submarine/Controls.qml:166
+#: activities/submarine/Controls.qml:162
 msgctxt "Controls|"
 msgid "Left Ballast Tank"
 msgstr "Rezervorul de balast din stânga"
 
-#: activities/submarine/Controls.qml:274
+#: activities/submarine/Controls.qml:272
 msgctxt "Controls|"
 msgid "Central Ballast Tank"
 msgstr "Rezervorul de balast central"
@@ -26519,7 +26519,7 @@ msgctxt "Controls|"
 msgid "Right Ballast Tank"
 msgstr "Rezervorul de balast din dreapta"
 
-#: activities/submarine/Submarine.qml:130
+#: activities/submarine/Submarine.qml:133
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Move the submarine to the other side of the screen."
@@ -26527,7 +26527,7 @@ msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "Mută submarinul în partea cealaltă a ecranului."
 
-#: activities/submarine/Submarine.qml:133
+#: activities/submarine/Submarine.qml:136
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26541,7 +26541,7 @@ msgstr ""
 "Elementul cel mai din stânga de pe panoul de control reprezintă motorul "
 "submarinului, indicând viteza curentă a submarinului."
 
-#: activities/submarine/Submarine.qml:136
+#: activities/submarine/Submarine.qml:139
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Increase or decrease the velocity of the submarine using the engine."
@@ -26549,7 +26549,7 @@ msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr "Mărește sau micșorează viteza submarinului, folosind motorul."
 
-#: activities/submarine/Submarine.qml:139
+#: activities/submarine/Submarine.qml:142
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26563,7 +26563,7 @@ msgstr ""
 "Apasă butonul + pentru a crește viteza, sau butonul - pentru a micșora "
 "viteza."
 
-#: activities/submarine/Submarine.qml:146
+#: activities/submarine/Submarine.qml:149
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "The item next to the engine is the ballast tank."
@@ -26571,7 +26571,7 @@ msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "Elementul de lângă motor este rezervorul de balast."
 
-#: activities/submarine/Submarine.qml:149
+#: activities/submarine/Submarine.qml:152
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "The ballast tanks are used to float or dive under water."
@@ -26581,7 +26581,7 @@ msgstr ""
 "Rezervoarele de balast sunt folosite pentru a plutirea sau scufundarea "
 "submarinului."
 
-#: activities/submarine/Submarine.qml:152
+#: activities/submarine/Submarine.qml:155
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26595,7 +26595,7 @@ msgstr ""
 "Dacă rezervoarele de balast sunt goale, submarinul va pluti. Dacă "
 "rezervoarele sunt pline cu apă, atunci submarinul se va scufunda."
 
-#: activities/submarine/Submarine.qml:155
+#: activities/submarine/Submarine.qml:158
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26611,7 +26611,7 @@ msgstr ""
 "să umple rezervoarele de balast, permițându-i astfel submarinului să "
 "plonjeze sub apă."
 
-#: activities/submarine/Submarine.qml:158
+#: activities/submarine/Submarine.qml:161
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26628,7 +26628,7 @@ msgstr ""
 "să fie evacuată din rezervoarele de balast, permițându-i astfel submarinului "
 "să se ridice și să plutească."
 
-#: activities/submarine/Submarine.qml:165
+#: activities/submarine/Submarine.qml:168
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26642,7 +26642,7 @@ msgstr ""
 "Elementul cel mai din dreapta de pe panoul de comandă controlează "
 "aripioarele de plonjare ale submarinului."
 
-#: activities/submarine/Submarine.qml:168
+#: activities/submarine/Submarine.qml:171
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26656,7 +26656,7 @@ msgstr ""
 "Aripioarele de plonjare ale unui submarin sunt folosite pentru controlul "
 "precis al adâncimii submarinului aflat sub apă."
 
-#: activities/submarine/Submarine.qml:171
+#: activities/submarine/Submarine.qml:174
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26670,7 +26670,7 @@ msgstr ""
 "Când submarinul se mișcă sub apă, mărirea sau micșorarea unghiului "
 "aripioarelor va mări sau va micșora adâncimea submarinului."
 
-#: activities/submarine/Submarine.qml:174
+#: activities/submarine/Submarine.qml:177
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26684,7 +26684,7 @@ msgstr ""
 "Butonul + va mări adâncimea submarinului, în timp ce butonul - îi va micșora "
 "adâncimea."
 
-#: activities/submarine/Submarine.qml:177
+#: activities/submarine/Submarine.qml:180
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Grab the crown to open the gate."
@@ -26692,7 +26692,7 @@ msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "Înșfacă coroana pentru a deschide poarta."
 
-#: activities/submarine/Submarine.qml:180
+#: activities/submarine/Submarine.qml:183
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Check out the help menu for the keyboard controls."

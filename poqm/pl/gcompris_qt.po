@@ -24689,25 +24689,25 @@ msgctxt "ColorSelector|"
 msgid "Reset palette"
 msgstr "Wyzeruj paletę"
 
-#: activities/sketch/ColorSelector.qml:213
+#: activities/sketch/ColorSelector.qml:214
 msgctxt "ColorSelector|"
 msgid "Selected Color"
 msgstr "Kolor zaznaczenia"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:237
+#: activities/sketch/ColorSelector.qml:238
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
 msgstr "Odcień"
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:264
+#: activities/sketch/ColorSelector.qml:265
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
 msgstr "Nasycenie"
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:289
+#: activities/sketch/ColorSelector.qml:290
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
 msgstr "Jasność"
@@ -24774,22 +24774,22 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr "Narzędzia gradientów"
 
-#: activities/sketch/Sketch.qml:673
+#: activities/sketch/Sketch.qml:670
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Ten obraz jest niezapisany. Czy chcesz zamknąć tę aktywność?"
 
-#: activities/sketch/Sketch.qml:674
+#: activities/sketch/Sketch.qml:671
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "Czy na pewno wymazać ten obraz?"
 
-#: activities/sketch/Sketch.qml:675
+#: activities/sketch/Sketch.qml:672
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Tak"
 
-#: activities/sketch/Sketch.qml:676
+#: activities/sketch/Sketch.qml:673
 msgctxt "Sketch|"
 msgid "No"
 msgstr "Nie"
@@ -24819,42 +24819,42 @@ msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
 msgstr "Wyzeruj ustawienia narzędzia"
 
-#: activities/sketch/ToolsPanel.qml:485
+#: activities/sketch/ToolsPanel.qml:484
 msgctxt "ToolsPanel|"
 msgid "Opacity"
 msgstr "Nieprzezroczystość"
 
-#: activities/sketch/ToolsPanel.qml:508
+#: activities/sketch/ToolsPanel.qml:507
 msgctxt "ToolsPanel|"
 msgid "Size"
 msgstr "Rozmiar"
 
-#: activities/sketch/ToolsPanel.qml:528
+#: activities/sketch/ToolsPanel.qml:527
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "Szybkość"
 
-#: activities/sketch/ToolsPanel.qml:548
+#: activities/sketch/ToolsPanel.qml:547
 msgctxt "ToolsPanel|"
 msgid "Density"
 msgstr "Gęstość"
 
-#: activities/sketch/ToolsPanel.qml:568
+#: activities/sketch/ToolsPanel.qml:567
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
 msgstr "Rozmiar kropki"
 
-#: activities/sketch/ToolsPanel.qml:587
+#: activities/sketch/ToolsPanel.qml:586
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
 msgstr "Wygładzanie"
 
-#: activities/sketch/ToolsPanel.qml:648
+#: activities/sketch/ToolsPanel.qml:647
 msgctxt "ToolsPanel|"
 msgid "Rotation"
 msgstr "Obrót"
 
-#: activities/sketch/ToolsPanel.qml:664
+#: activities/sketch/ToolsPanel.qml:663
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
 msgstr "Odbij lustrzanie dany obraz"
@@ -26080,26 +26080,26 @@ msgstr ""
 "Jak duży jest Neptun w porównaniu do innych planet w naszym Układzie "
 "Słonecznym?"
 
-#: activities/solar_system/QuizScreen.qml:213
+#: activities/solar_system/QuizScreen.qml:196
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "Dokładność: %1%"
 
-#: activities/solar_system/QuizScreen.qml:252
+#: activities/solar_system/QuizScreen.qml:239
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:287
+#: activities/solar_system/QuizScreen.qml:274
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr ""
 "Twój ostateczny wynik to: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 
-#: activities/solar_system/QuizScreen.qml:287
+#: activities/solar_system/QuizScreen.qml:274
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -26110,7 +26110,7 @@ msgstr ""
 "Słonecznego!<br>Spróbuj jeszcze raz sprawdzić swoją wiedzę lub poćwicz w "
 "trybie normalnym, aby dowiedzieć się więcej o Układzie Słonecznym."
 
-#: activities/solar_system/QuizScreen.qml:287
+#: activities/solar_system/QuizScreen.qml:274
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
@@ -26201,7 +26201,7 @@ msgstr ""
 "Musisz ukończyć z wynikiem powyżej 90%, aby zdać i zostać ekspertem od "
 "Układu Słonecznego!"
 
-#: activities/solar_system/SolarSystem.qml:365
+#: activities/solar_system/SolarSystem.qml:355
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26211,7 +26211,7 @@ msgstr ""
 "1. Im <b>dalej</b> planeta znajduje się od Słońca, tym <b>niższa</b> jest "
 "jej temperatura.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:366
+#: activities/solar_system/SolarSystem.qml:356
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26222,7 +26222,7 @@ msgstr ""
 "słońca</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:369
+#: activities/solar_system/SolarSystem.qml:359
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -26234,12 +26234,12 @@ msgstr ""
 "b>xcellent <b>M</b>other <b>J</b>ust <b>S</b>erved <b>U</b>s <b>N</b>oodles."
 "<br>"
 
-#: activities/solar_system/SolarSystem.qml:371
+#: activities/solar_system/SolarSystem.qml:361
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Wskazówka"
 
-#: activities/solar_system/SolarSystem.qml:379
+#: activities/solar_system/SolarSystem.qml:369
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Obejrzyj układ słoneczny"
@@ -26346,12 +26346,12 @@ msgctxt "ActivityInfo|"
 msgid "-: decrease diving planes angle"
 msgstr "-: zmniejszanie kąta płetw nurkujących"
 
-#: activities/submarine/Controls.qml:166
+#: activities/submarine/Controls.qml:162
 msgctxt "Controls|"
 msgid "Left Ballast Tank"
 msgstr "Lewy zbiornik balastowy"
 
-#: activities/submarine/Controls.qml:274
+#: activities/submarine/Controls.qml:272
 msgctxt "Controls|"
 msgid "Central Ballast Tank"
 msgstr "Środkowy zbiornik balastowy"
@@ -26361,7 +26361,7 @@ msgctxt "Controls|"
 msgid "Right Ballast Tank"
 msgstr "Prawy zbiornik balastowy"
 
-#: activities/submarine/Submarine.qml:130
+#: activities/submarine/Submarine.qml:133
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Move the submarine to the other side of the screen."
@@ -26369,7 +26369,7 @@ msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "Przepłyń łodzią podwodną na drugą stronę ekranu."
 
-#: activities/submarine/Submarine.qml:133
+#: activities/submarine/Submarine.qml:136
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26383,7 +26383,7 @@ msgstr ""
 "Element najbardziej na lewo na panelu sterowniczym jest silnik łodzi "
 "podwodnej, wskazujący bieżącą szybkość łodzi podwodnej."
 
-#: activities/submarine/Submarine.qml:136
+#: activities/submarine/Submarine.qml:139
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Increase or decrease the velocity of the submarine using the engine."
@@ -26391,7 +26391,7 @@ msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr "Zwiększaj lub zmniejszaj szybkość łodzi podwodnej przy użyciu silnika."
 
-#: activities/submarine/Submarine.qml:139
+#: activities/submarine/Submarine.qml:142
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26405,7 +26405,7 @@ msgstr ""
 "Naciśnij przycisk +, aby zwiększyć szybkość lub przycisk -, aby zmniejszyć "
 "szybkość."
 
-#: activities/submarine/Submarine.qml:146
+#: activities/submarine/Submarine.qml:149
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "The item next to the engine is the ballast tank."
@@ -26413,7 +26413,7 @@ msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "Elementami obok silnika są zbiorniki wyporowe."
 
-#: activities/submarine/Submarine.qml:149
+#: activities/submarine/Submarine.qml:152
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "The ballast tanks are used to float or dive under water."
@@ -26423,7 +26423,7 @@ msgstr ""
 "Zbiorniki wyporowe są wykorzystywane do unoszenia się na wodzie lub "
 "zanurzania pod wodę."
 
-#: activities/submarine/Submarine.qml:152
+#: activities/submarine/Submarine.qml:155
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26438,7 +26438,7 @@ msgstr ""
 "wodzie. Jeśli zbiorniki balastowe są pełne wody, to łódź podwodna będzie się "
 "zanurzać."
 
-#: activities/submarine/Submarine.qml:155
+#: activities/submarine/Submarine.qml:158
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26453,7 +26453,7 @@ msgstr ""
 "Przełączanie górnego zaworu spowoduje zatrzymanie lub kontynuowanie "
 "napełniania zbiornika balastowego, umożliwiając zanurzanie się pod wodę."
 
-#: activities/submarine/Submarine.qml:158
+#: activities/submarine/Submarine.qml:161
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26469,7 +26469,7 @@ msgstr ""
 "Przełączanie dolnego zaworu spowoduje zatrzymanie lub kontynuowanie "
 "opróżniania zbiornika balastowego, umożliwiając pływanie na powierzchni wody."
 
-#: activities/submarine/Submarine.qml:165
+#: activities/submarine/Submarine.qml:168
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26482,7 +26482,7 @@ msgid ""
 msgstr ""
 "Element najbardziej na prawo na panelu sterowniczym są stery łodzi podwodnej"
 
-#: activities/submarine/Submarine.qml:168
+#: activities/submarine/Submarine.qml:171
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26496,7 +26496,7 @@ msgstr ""
 "Stery w łodzi podwodnej są używane do dokładnego sterowania głębokością "
 "zanurzenia, gdy znajduje się ona pod wodą."
 
-#: activities/submarine/Submarine.qml:171
+#: activities/submarine/Submarine.qml:174
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26510,7 +26510,7 @@ msgstr ""
 "W chwili, gdy łódź podwodna płynie pod wodą, zwiększanie lub zmniejszanie "
 "kąta sterów zwiększy lub zmniejszy głębokość zanurzenia łodzi podwodnej."
 
-#: activities/submarine/Submarine.qml:174
+#: activities/submarine/Submarine.qml:177
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26524,7 +26524,7 @@ msgstr ""
 "Przycisk + zwiększy zanurzenie łodzi podwodnej, podczas gdy przycisk - je "
 "zmniejszy ."
 
-#: activities/submarine/Submarine.qml:177
+#: activities/submarine/Submarine.qml:180
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Grab the crown to open the gate."
@@ -26532,7 +26532,7 @@ msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "Chwyć za koronę, aby otworzyć zaporę."
 
-#: activities/submarine/Submarine.qml:180
+#: activities/submarine/Submarine.qml:183
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Check out the help menu for the keyboard controls."

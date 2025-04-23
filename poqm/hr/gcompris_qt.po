@@ -24481,25 +24481,25 @@ msgctxt "ColorSelector|"
 msgid "Reset palette"
 msgstr "Ponovno postavi paletu"
 
-#: activities/sketch/ColorSelector.qml:213
+#: activities/sketch/ColorSelector.qml:214
 msgctxt "ColorSelector|"
 msgid "Selected Color"
 msgstr "Odabrana boja"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:237
+#: activities/sketch/ColorSelector.qml:238
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
 msgstr "Nijansa"
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:264
+#: activities/sketch/ColorSelector.qml:265
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
 msgstr "Zasićenost"
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:289
+#: activities/sketch/ColorSelector.qml:290
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
 msgstr "Svjetlina"
@@ -24566,22 +24566,22 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr "Alati za nijansiranje"
 
-#: activities/sketch/Sketch.qml:673
+#: activities/sketch/Sketch.qml:670
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Nisi spremio ovu sliku. Želiš li uistinu zatvoriti ovu aktivnost?"
 
-#: activities/sketch/Sketch.qml:674
+#: activities/sketch/Sketch.qml:671
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "Želiš li obrisati ovu sliku?"
 
-#: activities/sketch/Sketch.qml:675
+#: activities/sketch/Sketch.qml:672
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Da"
 
-#: activities/sketch/Sketch.qml:676
+#: activities/sketch/Sketch.qml:673
 msgctxt "Sketch|"
 msgid "No"
 msgstr "Ne"
@@ -24611,42 +24611,42 @@ msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
 msgstr "Ponovno postavi postavke alata"
 
-#: activities/sketch/ToolsPanel.qml:485
+#: activities/sketch/ToolsPanel.qml:484
 msgctxt "ToolsPanel|"
 msgid "Opacity"
 msgstr "Neprozirnost"
 
-#: activities/sketch/ToolsPanel.qml:508
+#: activities/sketch/ToolsPanel.qml:507
 msgctxt "ToolsPanel|"
 msgid "Size"
 msgstr "Veličina"
 
-#: activities/sketch/ToolsPanel.qml:528
+#: activities/sketch/ToolsPanel.qml:527
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "Brzina"
 
-#: activities/sketch/ToolsPanel.qml:548
+#: activities/sketch/ToolsPanel.qml:547
 msgctxt "ToolsPanel|"
 msgid "Density"
 msgstr "Gustoća"
 
-#: activities/sketch/ToolsPanel.qml:568
+#: activities/sketch/ToolsPanel.qml:567
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
 msgstr "Veličina točke"
 
-#: activities/sketch/ToolsPanel.qml:587
+#: activities/sketch/ToolsPanel.qml:586
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
 msgstr "Zaglađivanje"
 
-#: activities/sketch/ToolsPanel.qml:648
+#: activities/sketch/ToolsPanel.qml:647
 msgctxt "ToolsPanel|"
 msgid "Rotation"
 msgstr "Rotacija"
 
-#: activities/sketch/ToolsPanel.qml:664
+#: activities/sketch/ToolsPanel.qml:663
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
 msgstr "Zrcali sliku"
@@ -25866,26 +25866,26 @@ msgid "How large is Neptune compared to other planets in the Solar System?"
 msgstr ""
 "Koliko je velik Neptun u usporedbi s drugim planetima Sunčevog sustava?"
 
-#: activities/solar_system/QuizScreen.qml:213
+#: activities/solar_system/QuizScreen.qml:196
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "Preciznost: %1%"
 
-#: activities/solar_system/QuizScreen.qml:252
+#: activities/solar_system/QuizScreen.qml:239
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:287
+#: activities/solar_system/QuizScreen.qml:274
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr ""
 "Tvoj konačni rezultat je: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 
-#: activities/solar_system/QuizScreen.qml:287
+#: activities/solar_system/QuizScreen.qml:274
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -25896,7 +25896,7 @@ msgstr ""
 "<br>Pokušaj ponovno testirati tvoje vještine ili treniraj u normalnom načinu "
 "rada da bi saznao više o Sunčevom sustavu."
 
-#: activities/solar_system/QuizScreen.qml:287
+#: activities/solar_system/QuizScreen.qml:274
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
@@ -25986,7 +25986,7 @@ msgstr ""
 "Trebaš ostvariti više od 90% da bi prošao procjenu i postao stručnjak za "
 "Sunčev sustav!"
 
-#: activities/solar_system/SolarSystem.qml:365
+#: activities/solar_system/SolarSystem.qml:355
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25996,7 +25996,7 @@ msgstr ""
 "1. Što je planet <b>dalje</b> od Sunca, to je <b>niža</b> njegova "
 "temperatura.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:366
+#: activities/solar_system/SolarSystem.qml:356
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26007,7 +26007,7 @@ msgstr ""
 "<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:369
+#: activities/solar_system/SolarSystem.qml:359
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -26018,12 +26018,12 @@ msgstr ""
 "<b>ME</b>rkur <b>VE</b>nera <b>ZE</b>mlja <b >MA</b>rs <b>JU</b>piter <b>SA</"
 "b>turn <b>U</b>ran <b>NE</b>ptun.<br>"
 
-#: activities/solar_system/SolarSystem.qml:371
+#: activities/solar_system/SolarSystem.qml:361
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Savjet"
 
-#: activities/solar_system/SolarSystem.qml:379
+#: activities/solar_system/SolarSystem.qml:369
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Pogledaj Sunčev sustav"
@@ -26128,12 +26128,12 @@ msgctxt "ActivityInfo|"
 msgid "-: decrease diving planes angle"
 msgstr "-: smanji kut ronjenja"
 
-#: activities/submarine/Controls.qml:166
+#: activities/submarine/Controls.qml:162
 msgctxt "Controls|"
 msgid "Left Ballast Tank"
 msgstr "Lijevi balastni spremnik"
 
-#: activities/submarine/Controls.qml:274
+#: activities/submarine/Controls.qml:272
 msgctxt "Controls|"
 msgid "Central Ballast Tank"
 msgstr "Središnji balastni spremnik"
@@ -26143,7 +26143,7 @@ msgctxt "Controls|"
 msgid "Right Ballast Tank"
 msgstr "Desni balastni spremnik"
 
-#: activities/submarine/Submarine.qml:130
+#: activities/submarine/Submarine.qml:133
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Move the submarine to the other side of the screen."
@@ -26151,7 +26151,7 @@ msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "Pomakni podmornicu na drugu stranu ekrana."
 
-#: activities/submarine/Submarine.qml:133
+#: activities/submarine/Submarine.qml:136
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26165,7 +26165,7 @@ msgstr ""
 "Krajnja lijeva stavka na upravljačkoj ploči je motor podmornice, koji "
 "pokazuje trenutnu brzinu podmornice."
 
-#: activities/submarine/Submarine.qml:136
+#: activities/submarine/Submarine.qml:139
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Increase or decrease the velocity of the submarine using the engine."
@@ -26173,7 +26173,7 @@ msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr "Povećaj ili smanji brzinu podmornice pomoću motora."
 
-#: activities/submarine/Submarine.qml:139
+#: activities/submarine/Submarine.qml:142
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26185,7 +26185,7 @@ msgid ""
 "velocity."
 msgstr "Pritisni gumb + za povećanje brzine ili gumb - za smanjenje brzine."
 
-#: activities/submarine/Submarine.qml:146
+#: activities/submarine/Submarine.qml:149
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "The item next to the engine is the ballast tank."
@@ -26193,7 +26193,7 @@ msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "Objekt pored motora je balastni spremnik."
 
-#: activities/submarine/Submarine.qml:149
+#: activities/submarine/Submarine.qml:152
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "The ballast tanks are used to float or dive under water."
@@ -26201,7 +26201,7 @@ msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr "Balastni tankovi se koriste za plutanje ili ronjenje pod vodom."
 
-#: activities/submarine/Submarine.qml:152
+#: activities/submarine/Submarine.qml:155
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26215,7 +26215,7 @@ msgstr ""
 "Ako su balastni tankovi prazni, podmornica će plutati. Ako su balastni "
 "tankovi puni vode, podmornica će uroniti pod vodu."
 
-#: activities/submarine/Submarine.qml:155
+#: activities/submarine/Submarine.qml:158
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26231,7 +26231,7 @@ msgstr ""
 "zaustaviti punjenje vode balastnim spremnikom, čime će se omogućiti ronjenje "
 "pod vodom."
 
-#: activities/submarine/Submarine.qml:158
+#: activities/submarine/Submarine.qml:161
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26248,7 +26248,7 @@ msgstr ""
 "zaustaviti ispiranje vode iz balastnog tanka, čime će joj se omogućiti da "
 "pluta na površini vode."
 
-#: activities/submarine/Submarine.qml:165
+#: activities/submarine/Submarine.qml:168
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26262,7 +26262,7 @@ msgstr ""
 "Krajnja desna stavka na upravljačkoj ploči kontrolira ronilačke ravnine "
 "podmornice"
 
-#: activities/submarine/Submarine.qml:168
+#: activities/submarine/Submarine.qml:171
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26276,7 +26276,7 @@ msgstr ""
 "Ronilački zrakoplovi u podmornici koriste se za preciznu kontrolu dubine "
 "podmornice nakon što je pod vodom."
 
-#: activities/submarine/Submarine.qml:171
+#: activities/submarine/Submarine.qml:174
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26290,7 +26290,7 @@ msgstr ""
 "Kad se podmornica kreće pod vodom, povećanjem ili smanjenjem kuta ravnina "
 "povećat će se i smanjiti dubina podmornice."
 
-#: activities/submarine/Submarine.qml:174
+#: activities/submarine/Submarine.qml:177
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26304,7 +26304,7 @@ msgstr ""
 "Tipka + će povećati dubinu podmornice, dok će tipka - smanjiti dubinu "
 "podmornice."
 
-#: activities/submarine/Submarine.qml:177
+#: activities/submarine/Submarine.qml:180
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Grab the crown to open the gate."
@@ -26312,7 +26312,7 @@ msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "Zgrabi krunu da otvoriš vrata."
 
-#: activities/submarine/Submarine.qml:180
+#: activities/submarine/Submarine.qml:183
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Check out the help menu for the keyboard controls."
