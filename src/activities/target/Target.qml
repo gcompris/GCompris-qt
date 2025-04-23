@@ -246,7 +246,7 @@ ActivityBase {
                     { label: keyboard.backspace }
                 ] ]
             }
-            onKeypress: activityBackground.appendText(text)
+            onKeypress: (text) => activityBackground.appendText(text)
 
             onError: (msg) => console.log("VirtualKeyboard error: " + msg);
         }
