@@ -32,9 +32,7 @@ ActivityBase {
         fillMode: Image.PreserveAspectCrop
         focus: true
 
-        readonly property double scaleFactor: 1
         readonly property bool isPortrait: (height >= width)
-        readonly property int baseMargins: 5 * ApplicationInfo.ratio
 
         signal start
         signal stop
@@ -83,8 +81,8 @@ ActivityBase {
             anchors.left: parent.left
             anchors.top: parent.top
             anchors.bottom: bar.top
-            anchors.margins: activityBackground.baseMargins
-            spacing: activityBackground.baseMargins
+            anchors.margins: GCStyle.halfMargins
+            spacing: GCStyle.halfMargins
             width: Math.min(40 * ApplicationInfo.ratio, height / colorsRepeater.model.count - colorsColumn.spacing)
 
             add: Transition {
@@ -99,8 +97,8 @@ ActivityBase {
                 delegate: SearchItem {
                     width: colorsColumn.width
                     height: width
-                    border.width: 2
-                    border.color: "#373737"
+                    border.width: GCStyle.thinnestBorder
+                    border.color: GCStyle.darkBorder
                     searchItemIndex: itemIndex
                 }
             }
@@ -108,12 +106,12 @@ ActivityBase {
 
         Rectangle {
             id: tooltipRect
-            width: tooltipText.contentWidth + 10 * ApplicationInfo.ratio
-            height: tooltipText.contentHeight + activityBackground.baseMargins
-            radius: 4
+            width: tooltipText.contentWidth + GCStyle.baseMargins
+            height: tooltipText.contentHeight + GCStyle.halfMargins
+            radius: GCStyle.tinyMargins
             x: 0
             y: 0
-            color: "#FFF"
+            color: "#e4ffffff"
             opacity: 0
             z: 100
             property alias text: tooltipText.text
@@ -128,7 +126,7 @@ ActivityBase {
                 fontSize: mediumSize
                 fontSizeMode: Text.Fit
                 text: ""
-                color: "black"
+                color: GCStyle.darkText
             }
 
             Behavior on opacity {
@@ -152,7 +150,7 @@ ActivityBase {
                 tooltipRect.text = qsTr("This item is misplaced.");
             tooltipRect.x = Core.clamp(obj.x - tooltipRect.width * 0.5, 0, activityBackground.width - tooltipRect.width);
             tooltipRect.y = Core.clamp(obj.y - tooltipRect.height, 0, activityBackground.height - tooltipRect.height);
-            tooltipRect.opacity = 0.9;
+            tooltipRect.opacity = 1;
         }
 
         function showChooser(visible, guessIndex, item)
@@ -179,10 +177,9 @@ ActivityBase {
             z: 10
             color: "#80FFFFFF"
             height: currentRow.height
-            anchors.left: parent.left
-            anchors.leftMargin: 50 * ApplicationInfo.ratio
+            anchors.left: colorsColumn.right
             anchors.right: parent.right
-            anchors.rightMargin: 5 * ApplicationInfo.ratio
+            anchors.margins: GCStyle.halfMargins
             anchors.bottomMargin: bar.height
 
             state: ApplicationSettings.isBarHidden ? "hidden" : "shown"
@@ -214,9 +211,9 @@ ActivityBase {
                 visible: true
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
-                spacing: activityBackground.baseMargins
+                spacing: GCStyle.halfMargins
                 height: Math.min(60 * ApplicationInfo.ratio, currentWrapper.width / (currentRepeater.count + 1) - spacing)
-                width: (height + activityBackground.baseMargins) * (currentRepeater.count + 1)
+                width: (height + GCStyle.halfMargins) * (currentRepeater.count + 1)
 
                 Repeater {
                     id: currentRepeater
@@ -224,8 +221,8 @@ ActivityBase {
                         id: currentGuess
                         width: currentRow.height
                         height: width
-                        border.width: 2 * ApplicationInfo.ratio
-                        border.color: "#373737"
+                        border.width: GCStyle.thinBorder
+                        border.color: GCStyle.darkBorder
                         searchItemIndex: colIndex
                         opacity: 1.0
 
@@ -245,6 +242,7 @@ ActivityBase {
                                 if(!chooser.visible || chooserGrid.guessIndex != index) {
                                     showChooser(true, index, parent);
                                 } else {
+                                    chooserTimer.restart();
                                     var obj = items.guessModel.get(0).guess.get(index);
                                     if(chooserGrid.guessIndex === index) {
                                         if (mouse.button == Qt.LeftButton)
@@ -289,8 +287,8 @@ ActivityBase {
         Rectangle {
             id: chooserArrow
             z: 100
-            width: 10
-            height: 10
+            width: GCStyle.halfMargins
+            height: GCStyle.halfMargins
             visible: chooser.visible
             color: chooser.color
             rotation: 45
@@ -299,8 +297,8 @@ ActivityBase {
         Rectangle {
             id: chooser
             z: 100
-            width: chooserGrid.width + activityBackground.baseMargins
-            height: chooserGrid.height + activityBackground.baseMargins
+            width: chooserGrid.width + GCStyle.halfMargins
+            height: chooserGrid.height + GCStyle.halfMargins
             color: "darkgray"
             border.width: 0
             visible: false
@@ -338,11 +336,10 @@ ActivityBase {
                         width: parent.width * 0.9
                         height: width
                         anchors.centerIn: parent
-                        border.width: index == chooserGrid.colIndex ? 3 : 1
-                        border.color: "#373737"
+                        border.width: index == chooserGrid.colIndex ? GCStyle.midBorder : 1
+                        border.color: GCStyle.darkBorder
                         highlightSymbol: index == chooserGrid.colIndex
                         searchItemIndex: modelData
-                        radius: 5
                     }
 
                     MouseArea {
@@ -377,13 +374,13 @@ ActivityBase {
             anchors.right: currentWrapper.right
             anchors.top: parent.top
             anchors.bottom: currentWrapper.top
-            anchors.bottomMargin: activityBackground.baseMargins
+            anchors.bottomMargin: GCStyle.halfMargins
             boundsBehavior: Flickable.DragOverBounds
             verticalLayoutDirection: ListView.BottomToTop
 
-            readonly property int guessSize: Math.min(45 * ApplicationInfo.ratio, width * 0.6 / currentRepeater.model.count - activityBackground.baseMargins)
+            readonly property int guessSize: Math.min(45 * ApplicationInfo.ratio, width * 0.6 / currentRepeater.model.count - GCStyle.halfMargins)
 
-            spacing: activityBackground.baseMargins
+            spacing: GCStyle.halfMargins
 
             displaced: Transition {
                 NumberAnimation { easing.type: Easing.OutCubic; properties: "y"; duration: 300 }
@@ -395,7 +392,7 @@ ActivityBase {
                 id: guessRow
                 width: guessColumn.width
                 height: guessColumn.guessSize
-                spacing: activityBackground.baseMargins
+                spacing: GCStyle.halfMargins
                 property int rowIndex: index
                 visible: index != 0
 
@@ -407,7 +404,7 @@ ActivityBase {
 
                 Repeater {
                     id: guessRepeater
-                    width: (guessColumn.guessSize + activityBackground.baseMargins) * model.count
+                    width: (guessColumn.guessSize + GCStyle.halfMargins) * model.count
                     model: guess
 
                     delegate: Item { // wrapper needed for singleGuessStatusRect's opacity
@@ -418,7 +415,7 @@ ActivityBase {
 
                         Rectangle {
                             id: singleGuessStatusRect
-                            border.width: Math.max(1, ApplicationInfo.ratio)
+                            border.width: GCStyle.thinnestBorder
                             border.color: (status == Activity.STATUS_CORRECT) ? "white" : "black";
                             anchors.fill: parent
                             color: (status == Activity.STATUS_CORRECT) ? "black" : "white";
@@ -454,11 +451,11 @@ ActivityBase {
 
                         SearchItem {
                             id: singleGuess
-                            width: guessColumn.guessSize * 0.8
+                            width: guessColumn.guessSize * 0.9
                             height: width
                             anchors.centerIn: parent
-                            border.width: ApplicationInfo.ratio
-                            border.color: "#373737"
+                            border.width: GCStyle.thinnestBorder
+                            border.color: GCStyle.darkBorder
                             searchItemIndex: colIndex
                             opacity: 1.0
 
@@ -486,18 +483,18 @@ ActivityBase {
 
                 Item {
                     id: guessRowSpacer2
-                    width: activityBackground.baseMargins
+                    width: GCStyle.halfMargins
                     height: guessColumn.guessSize
                 }
 
                 Column {
                     id: guessResultColumn
 
-                    width: guessColumn.width - guessRowSpacer.width - guessRepeater.width - activityBackground.baseMargins
+                    width: guessColumn.width - guessRowSpacer.width - guessRepeater.width - GCStyle.halfMargins
                     height: guessColumn.guessSize
-                    spacing: 2
+                    spacing: GCStyle.tinyMargins
 
-                    readonly property int resultSize: Math.min(10 * ApplicationInfo.ratio,
+                    readonly property int resultSize: Math.min(GCStyle.baseMargins,
                                                             guessResultColumn.width / currentRepeater.count - guessResultColumn.spacing)
 
                     Item {
@@ -511,7 +508,7 @@ ActivityBase {
 
                         width: guessResultColumn.width
                         height: guessResultColumn.resultSize
-                        spacing: 2
+                        spacing: GCStyle.tinyMargins
 
                         Repeater {
                             id: guessResultCorrectRepeater
@@ -524,7 +521,7 @@ ActivityBase {
                                 height: guessResultColumn.resultSize
 
                                 radius: width * 0.5
-                                border.width: 1
+                                border.width: GCStyle.thinnestBorder
                                 border.color: "white"
                                 color: "black"
                             }
@@ -536,7 +533,7 @@ ActivityBase {
 
                         width: guessResultColumn.width
                         height: guessResultColumn.resultSize
-                        spacing: 2
+                        spacing: GCStyle.tinyMargins
 
                         Repeater {
                             id: guessResultMisplacedRepeater
@@ -549,7 +546,7 @@ ActivityBase {
                                 height: guessResultColumn.resultSize
 
                                 radius: width * 0.5
-                                border.width: 1
+                                border.width: GCStyle.thinnestBorder
                                 border.color: "black"
                                 color: "white"
                             }
@@ -600,11 +597,10 @@ ActivityBase {
         Score {
             id: score
             anchors.bottom: undefined
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
-            anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.left: undefined
             anchors.top: parent.top
             anchors.right: parent.right
+            anchors.margins: GCStyle.baseMargins
             onStop: Activity.nextSubLevel()
         }
     }
