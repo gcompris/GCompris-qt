@@ -33,13 +33,13 @@ Item {
     Rectangle {
         id: containerBg
         color: "#33FFFFFF"
-        radius: 15
+        radius: GCStyle.halfMargins
         anchors {
             left: parent.left
             right: parent.right
             top: parent.top
             bottom: parent.bottom
-            margins: activityBackground.layoutMargins
+            margins: GCStyle.baseMargins
         }
     }
 
@@ -52,7 +52,7 @@ Item {
             top: containerBg.top
             horizontalCenter: containerBg.horizontalCenter
         }
-        radius: 15
+        radius: GCStyle.halfMargins
         property int cardWidth: questionContainer.width / numberOfItemsInModel(addition)
 
 
@@ -79,7 +79,7 @@ Item {
             top: questionContainer.bottom
             left: containerBg.left
         }
-        radius: 15
+        radius: GCStyle.halfMargins
         property int cardWidth: questionContainer.width / numberOfItemsInModel(secondRow)
 
         ListView {
