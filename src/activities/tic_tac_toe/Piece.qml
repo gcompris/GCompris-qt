@@ -14,7 +14,6 @@ import core 1.0
 
 Image {
     id: piece
-
     opacity: 1.0
     sourceSize.width: width
     sourceSize.height: height

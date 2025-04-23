@@ -67,17 +67,25 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/sounds/smudge.wav"
         }
 
+        Item {
+            id: layoutArea
+            anchors.fill: parent
+            anchors.margins: GCStyle.baseMargins
+            anchors.bottomMargin: bar.height * 1.5
+            anchors.topMargin: GCStyle.baseMargins * 2 + player1score.height * 1.4
+        }
+
         Image {
             id: board
             source: Activity.url + "board.svg"
-            sourceSize.width: 4 * Math.min(activityBackground.width / 4, activityBackground.height / 6)
-            anchors {
-                verticalCenter: parent.verticalCenter
-                horizontalCenter: parent.horizontalCenter
-            }
-            property real itemSize: grid.height * 0.275
-            property real gridLeftMargin: width / 18
-            property real gridTopMargin: width / 20
+            width: Math.min(layoutArea.width, layoutArea.height)
+            height: width
+            sourceSize.width: width
+            anchors.centerIn: layoutArea
+            property real cellSize: grid.height / 3
+            property real squareSize: cellSize * 0.90625
+            property real pieceSize: cellSize * 0.8125
+            property real marginSize: (cellSize - pieceSize) * 0.5
 
             ListModel {
                 id: pieces
@@ -89,28 +97,34 @@ ActivityBase {
                 columns: 3
                 anchors {
                     fill: parent
-                    left: parent.left
-                    leftMargin: board.gridLeftMargin
-                    top: parent.top
-                    topMargin: board.gridTopMargin
                 }
-                spacing: board.width/16
+                spacing: 0
                 Repeater {
                     id: repeater
                     model: pieces
                     delegate: blueSquare
                     Component {
                         id: blueSquare
-                        Rectangle {
-                            width: board.itemSize
-                            height: board.itemSize
-                            border.color: "transparent"
-                            border.width: 3 * ApplicationInfo.ratio
-                            radius: 5 * ApplicationInfo.ratio
+                        Item {
+                            width: board.cellSize
+                            height: board.cellSize
                             state: "INITIAL"
-                            color: "#c7ecfb"
+                            property alias border: pieceBg.border
+                            property alias color: pieceBg.color
+
+                            Rectangle {
+                                id: pieceBg
+                                anchors.centerIn: parent
+                                width: board.squareSize
+                                height: board.squareSize
+                                border.color: "transparent"
+                                border.width: GCStyle.midBorder
+                                color: "#c7ecfb"
+                            }
                             Piece {
-                                anchors.fill: parent
+                                anchors.centerIn: parent
+                                width: board.pieceSize
+                                height: board.pieceSize
                                 state: stateTemp
                             }
                             states: [
@@ -149,11 +163,11 @@ ActivityBase {
                 id: createPiece
                 property real pieceX: 0
                 property real pieceY: 0
-                x: pieceX + board.gridLeftMargin
-                y: pieceY + board.gridTopMargin
+                x: pieceX + board.marginSize
+                y: pieceY + board.marginSize
                 state: (items.counter + items.playSecond) % 2 ? "2": "1"
-                width: board.itemSize
-                height: board.itemSize
+                width: board.pieceSize
+                height: board.pieceSize
                 opacity: 0
             }
         }
@@ -180,13 +194,12 @@ ActivityBase {
         ScoreItem {
             id: player1score
             player: 1
-            height: Math.min(activityBackground.height/7, Math.min(activityBackground.width/7, bar.height * 1.05))
+            height: Math.min(activityBackground.height/7, activityBackground.width/7, bar.height * 1.05)
             width: height*11/8
             anchors {
                 top: activityBackground.top
-                topMargin: 5
                 left: activityBackground.left
-                leftMargin: 5
+                margins: GCStyle.baseMargins
             }
             playerImageSource: "qrc:/gcompris/src/core/resource/player_1.svg"
             backgroundImageSource: Activity.url + "score_1.svg"
@@ -199,13 +212,12 @@ ActivityBase {
         ScoreItem {
             id: player2score
             player: 2
-            height: Math.min(activityBackground.height/7, Math.min(activityBackground.width/7, bar.height * 1.05))
-            width: height*11/8
+            height: player1score.height
+            width: player1score.width
             anchors {
                 top: activityBackground.top
-                topMargin: 5
                 right: activityBackground.right
-                rightMargin: 5
+                margins: GCStyle.baseMargins
             }
             playerImageSource: "qrc:/gcompris/src/core/resource/player_2.svg"
             backgroundImageSource: Activity.url + "score_2.svg"
