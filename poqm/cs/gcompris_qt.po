@@ -25414,12 +25414,12 @@ msgstr ""
 "správnou. Takto označené položky jsou automaticky vybrány v současném ale i "
 "budoucím zadání, dokud je neodznačíš opětovným dvojklikem."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Tato položka byla umístěna právně."
 
-#: activities/superbrain/Superbrain.qml:152
+#: activities/superbrain/Superbrain.qml:150
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Tato položka byla nesprávně umístěna."

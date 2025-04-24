@@ -24382,12 +24382,12 @@ msgid ""
 "you un-mark them, by double clicking on them again."
 msgstr ""
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr ""
 
-#: activities/superbrain/Superbrain.qml:152
+#: activities/superbrain/Superbrain.qml:150
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr ""
@@ -26212,7 +26212,3 @@ msgstr "跳过"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "开始"
-
-#~ msgctxt "Frieze|"
-#~ msgid "What is the binary representation of %1?"
-#~ msgstr "%1 的二进制表示是什么？"

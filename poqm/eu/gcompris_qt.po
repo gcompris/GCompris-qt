@@ -25933,12 +25933,12 @@ msgstr ""
 "hautatzen dira uneko eta etorkizuneko saiakeretan, harik eta, berriz ere, "
 "klik bikoitza eginez, marka kentzen diezun arte."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Elementu hau ondo kokatuta dago."
 
-#: activities/superbrain/Superbrain.qml:152
+#: activities/superbrain/Superbrain.qml:150
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Elementu hau gaizki kokatuta dago."

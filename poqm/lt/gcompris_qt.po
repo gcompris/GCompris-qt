@@ -25904,12 +25904,12 @@ msgstr ""
 "pažymimi kaip einamieji ir būsimi spėjimai, kol nenuimsi nuo jų žymes dukart "
 "juos paspausdamas ar patapšnodamas."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Šis objektas padėtas į tinkamą vietą."
 
-#: activities/superbrain/Superbrain.qml:152
+#: activities/superbrain/Superbrain.qml:150
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Šis objektas čia netinka."

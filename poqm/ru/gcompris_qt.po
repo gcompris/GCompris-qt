@@ -25947,12 +25947,12 @@ msgstr ""
 "правильного. После этого он будет автоматически выбираться в следующих "
 "попытках. Снять отметку можно повторным двойным щелчком."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Этот предмет помещён правильно"
 
-#: activities/superbrain/Superbrain.qml:152
+#: activities/superbrain/Superbrain.qml:150
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Этот предмет не на своём месте"

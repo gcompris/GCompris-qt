@@ -26416,12 +26416,12 @@ msgstr ""
 "valitakse automaatselt teie praegustes ja tulevastes oletustes, kuni te need "
 "tühistate, topeltklõpsates neid uuesti."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "See ese on õigesti paigutatud."
 
-#: activities/superbrain/Superbrain.qml:152
+#: activities/superbrain/Superbrain.qml:150
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "See ese on vales kohas."

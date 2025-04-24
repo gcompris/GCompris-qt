@@ -26436,12 +26436,12 @@ msgstr ""
 "kiotomatiki katika makadirio yako ya sasa na yajayo hadi utakapoviondoa, kwa "
 "kuvibofya mara mbili tena."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Kipengee hiki kimewekwa vizuri."
 
-#: activities/superbrain/Superbrain.qml:152
+#: activities/superbrain/Superbrain.qml:150
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Kipengee hiki kimewekwa vibaya."

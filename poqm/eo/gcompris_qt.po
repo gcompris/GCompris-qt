@@ -25783,12 +25783,12 @@ msgstr ""
 "markitaj eroj estas aŭtomate elektitaj en viaj nunaj kaj estontaj divenoj "
 "ĝis vi malmarkas ilin, per duobla klako sur ili denove."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Ĉi tiu objekto estas bone metita."
 
-#: activities/superbrain/Superbrain.qml:152
+#: activities/superbrain/Superbrain.qml:150
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Ĉi tiu objekto estas mislokigita."

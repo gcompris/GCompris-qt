@@ -25383,12 +25383,12 @@ msgstr ""
 "ובניחושים עתידיים שלך עד שמסירים את הסימון שלהם, שוב, באמצעות הקשה כפולה או "
 "לחיצה."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "פריט זה ממוקם נכון."
 
-#: activities/superbrain/Superbrain.qml:152
+#: activities/superbrain/Superbrain.qml:150
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "פריט זה ממוקם לא נכון."

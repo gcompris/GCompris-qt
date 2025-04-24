@@ -25515,12 +25515,12 @@ msgstr ""
 "もう一度ダブルクリックするまで、現在やこれからの回答についても自動的に選択さ"
 "れます。"
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "このアイテムは正しい場所にあります。"
 
-#: activities/superbrain/Superbrain.qml:152
+#: activities/superbrain/Superbrain.qml:150
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "このアイテムは違う場所にあります。"
