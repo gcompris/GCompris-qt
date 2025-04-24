@@ -66,16 +66,13 @@ ActivityBase {
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
-            // readonly property int digitHeight: 70
             readonly property double ratioWH: 1.6
-            readonly property int baseMargins: 10 * ApplicationInfo.ratio
-            readonly property int baseRadius: 2 * ApplicationInfo.ratio
             // size calculations are based on maximum 4 nbDigits and 4 nbLines
-            readonly property int digitWidth: Math.min(100 * ApplicationInfo.ratio, (layoutArea.width - baseMargins * 2) / (nbDigits + 2))
+            readonly property int digitWidth: Math.min(100 * ApplicationInfo.ratio, (layoutArea.width - GCStyle.baseMargins * 2) / (nbDigits + 2))
             property int digitHeight: 1
-            readonly property int digitBgWidth: digitWidth - items.baseMargins
-            readonly property int digitBgHeight: digitHeight - items.baseMargins
-            readonly property bool okOnSide: layoutArea.width - digitWidth * 6 - baseMargins * 2 >= 2 * (okButton.width + baseMargins * 2)
+            readonly property int digitBgWidth: digitWidth - GCStyle.baseMargins
+            readonly property int digitBgHeight: digitHeight - GCStyle.baseMargins
+            readonly property bool okOnSide: layoutArea.width - digitWidth * 6 - GCStyle.baseMargins * 2 >= 2 * (okButton.width + GCStyle.baseMargins * 2)
 
             property var levels: activity.datasets
             property int currentSubLevel: 0
@@ -92,7 +89,7 @@ ActivityBase {
             property alias numbersModel: numbersModel
             property alias resultNumber: resultNumber
             property alias board: board
-            property alias caption: caption
+            property alias caption: instructionPanel.textItem
             property alias numberRepeater: numberRepeater
             property alias okButton: okButton
             property alias numPad: numPad
@@ -119,41 +116,23 @@ ActivityBase {
 
         ListModel { id: numbersModel }
 
-        Item {
-            id: captionArea
+        GCTextPanel {
+            id: instructionPanel
+            panelWidth: parent.width - 3 * GCStyle.baseMargins - score.width
+            panelHeight: score.height
+            fixedHeight: true
+            anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: score.top
-            anchors.left: parent.left
-            anchors.right: score.left
-            anchors.bottom: score.bottom
-            anchors.leftMargin: items.baseMargins
-            anchors.rightMargin: items.baseMargins
-        }
-
-        Rectangle {
-            color: "#80FFFFFF"
-            anchors.centerIn: caption
-            width: caption.contentWidth + items.baseMargins * 2
-            height: caption.contentHeight + items.baseMargins
-            radius: items.baseRadius
-        }
-
-        GCText {
-            id: caption
-            anchors.fill: captionArea
-            anchors.margins: items.baseMargins
-            fontSize: regularSize
-            fontSizeMode: Text.Fit
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
+            anchors.horizontalCenterOffset: -(score.width + GCStyle.baseMargins) * 0.5
         }
 
         Item {
             id: layoutArea
-            anchors.top: captionArea.bottom
+            anchors.top: instructionPanel.bottom
             anchors.bottom: parent.bottom
             anchors.left: parent.left
             anchors.right: parent.right
-            anchors.margins: items.baseMargins
+            anchors.margins: GCStyle.baseMargins
             anchors.bottomMargin: bar.height * 1.5
         }
 
@@ -161,17 +140,17 @@ ActivityBase {
             id: board
             property int digitCount: 0
             property int result: 0
-            width: resultNumber.width + items.baseMargins * 2
-            height: childrenRect.height + items.baseMargins * 2
+            width: resultNumber.width + GCStyle.baseMargins * 2
+            height: childrenRect.height + GCStyle.baseMargins * 2
             anchors.top: layoutArea.top
             anchors.horizontalCenter: parent.horizontalCenter
-            color: "#F0F0F0"
-            radius: items.baseRadius
+            color: GCStyle.lightBg
+            radius: GCStyle.tinyMargins
 
             Column {
                 spacing: 0
-                x: items.baseMargins
-                y: items.baseMargins
+                x: GCStyle.baseMargins
+                y: GCStyle.baseMargins
                 Repeater {
                     id: numberRepeater
                     model: numbersModel
@@ -187,12 +166,12 @@ ActivityBase {
                 Item {
                     id: equalLine
                     width: resultNumber.width
-                    height: items.baseMargins
+                    height: GCStyle.baseMargins
                     Rectangle {
                         width: resultNumber.width
                         height: 2 * ApplicationInfo.ratio
                         anchors.centerIn: parent
-                        color: "#191919"
+                        color: GCStyle.darkerText
                     }
                 }
 
@@ -213,7 +192,7 @@ ActivityBase {
             anchors.right: layoutArea.right
             anchors.top: layoutArea.top
             anchors.bottom: layoutArea.bottom
-            anchors.margins: items.baseMargins
+            anchors.margins: GCStyle.baseMargins
         }
 
         BarButton {
@@ -221,7 +200,7 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             width: 60 * ApplicationInfo.ratio
             anchors.top: board.bottom
-            anchors.topMargin: items.baseMargins
+            anchors.topMargin: GCStyle.baseMargins
             anchors.horizontalCenter: parent.horizontalCenter
             onClicked: Activity.checkResult()
             mouseArea.enabled: !items.inputLocked
@@ -232,7 +211,7 @@ ActivityBase {
                 name: "okRight"
                 when: items.okOnSide
                 PropertyChanges {
-                    items.digitHeight: Math.min(items.digitWidth, (layoutArea.height - equalLine.height  - items.baseMargins * 2) / (items.nbLines + 1))
+                    items.digitHeight: Math.min(items.digitWidth, (layoutArea.height - equalLine.height  - GCStyle.baseMargins * 2) / (items.nbLines + 1))
                 }
                 AnchorChanges {
                     target: okButton
@@ -245,7 +224,7 @@ ActivityBase {
                 name: "okBottom"
                 when: !items.okOnSide
                 PropertyChanges {
-                    items.digitHeight: Math.min(items.digitWidth, (layoutArea.height - equalLine.height - okButton.height - items.baseMargins * 3) / (items.nbLines + 1))
+                    items.digitHeight: Math.min(items.digitWidth, (layoutArea.height - equalLine.height - okButton.height - GCStyle.baseMargins * 3) / (items.nbLines + 1))
                 }
                 AnchorChanges {
                     target: okButton
@@ -260,10 +239,10 @@ ActivityBase {
             id: miniPad
             property var current: null
             property bool isCarry: true
-            property string color: "#E5E5E5"
+            property color color: "#E5E5E5"
             property alias repeater: repeater
-            property int maxX: activityBackground.width - width - items.baseMargins
-            property int maxY: activityBackground.height - height - items.baseMargins
+            property int maxX: activityBackground.width - width - GCStyle.baseMargins
+            property int maxY: activityBackground.height - height - GCStyle.baseMargins
             height: 4 * items.digitBgHeight
             width: items.digitBgWidth
             padding: 0
@@ -277,9 +256,9 @@ ActivityBase {
                         width: items.digitBgWidth
                         height: items.digitBgHeight
                         color: miniPad.color
-                        radius: items.baseRadius
-                        border.color: "#808080"
-                        border.width: ApplicationInfo.ratio
+                        radius: GCStyle.tinyMargins
+                        border.color: GCStyle.grayBorder
+                        border.width: GCStyle.thinnestBorder
 
                         Rectangle {
                             color: "#33000000"
@@ -290,10 +269,11 @@ ActivityBase {
                         GCText {
                             id: padText
                             anchors.fill: parent
-                            anchors.centerIn: parent
+                            anchors.margins: GCStyle.tinyMargins
                             horizontalAlignment: Text.AlignHCenter
                             verticalAlignment: Text.AlignVCenter
-                            fontSize: tinySize
+                            fontSize: regularSize
+                            fontSizeMode: Text.Fit
                             text: modelData ? modelData : ""
                         }
 
@@ -334,8 +314,8 @@ ActivityBase {
         Popup {
             id: numPad
             property var currentDigit: null
-            property int maxX: activityBackground.width - width - items.baseMargins
-            property int maxY: activityBackground.height - height - items.baseMargins
+            property int maxX: activityBackground.width - width - GCStyle.baseMargins
+            property int maxY: activityBackground.height - height - GCStyle.baseMargins
             width: items.digitBgWidth * 3
             height: items.digitBgHeight * 4
             padding: 0
@@ -355,14 +335,13 @@ ActivityBase {
                     width: items.digitBgWidth
                     height: items.digitBgHeight
                     color: numArea.containsMouse ? "#C0C0C0" : "#E5E5E5"
-                    border.color: "#808080"
-                    border.width: ApplicationInfo.ratio
-                    radius: items.baseRadius
+                    border.color: GCStyle.grayBorder
+                    border.width: GCStyle.thinnestBorder
+                    radius: GCStyle.tinyMargins
 
                     GCText {
-                        anchors.centerIn: parent
-                        width: parent.width * 0.9
-                        height: parent.height * 0.9
+                        anchors.fill: parent
+                        anchors.margins: GCStyle.halfMargins
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                         fontSizeMode: Text.Fit
@@ -400,7 +379,7 @@ ActivityBase {
             text: qsTr("Ready")
             visible: !okButton.visible
             anchors.horizontalCenter: activityBackground.horizontalCenter
-            y: board.y + items.baseMargins + resultNumber.y
+            y: board.y + GCStyle.baseMargins + resultNumber.y
             height: resultNumber.height
             onClicked: Activity.checkDropped()
         }
