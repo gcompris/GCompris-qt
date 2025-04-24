@@ -149,7 +149,7 @@ ActivityBase {
                             id: gridDelegate
                             height: jamGrid.height / jamGrid.rows
                             width: height
-                            border.width: Math.max(1, 0.5 * ApplicationInfo.ratio)
+                            border.width: GCStyle.thinnestBorder
                             border.color: "#A2A2A2"
                             color: "transparent"
                         }
@@ -201,9 +201,8 @@ ActivityBase {
         Score {
             id: score
             anchors.top: parent.top
-            anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.right: parent.right
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.margins: GCStyle.baseMargins
             anchors.bottom: undefined
             onStop: Activity.nextSubLevel()
         }

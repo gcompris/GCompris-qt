@@ -72,8 +72,8 @@ Item {
             width: parent.width
             height: parent.height
             
-            border.width: ApplicationInfo.ratio
-            border.color: "white"
+            border.width: GCStyle.thinnestBorder
+            border.color: GCStyle.lightBorder
             
             MultiPointTouchArea {
                 id: rectTouch
