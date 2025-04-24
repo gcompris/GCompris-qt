@@ -133,6 +133,7 @@ ActivityBase {
             onIntroDone: {
                 tuxboat.state = "tuxboatRight";
                 sun.state = "sunDown";
+                infoPanel.setKey('start');
                 sun_area.enabled = true;
             }
             intro: [
@@ -282,8 +283,6 @@ ActivityBase {
                         ScriptAction { script: {
                                 boatparked.opacity = 1;
                                 shower.stop();
-                                if(!sun.hasRun)
-                                    infoPanel.setKey('start');
                             }
                         }
                     }
