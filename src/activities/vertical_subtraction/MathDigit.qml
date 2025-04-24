@@ -27,8 +27,8 @@ Item {
     function mapPadToItem(pad_, item_){
         var tempX = item_.mapToItem(activityBackground, 0, 0).x + item_.width * 0.5 - pad_.width * 0.5
         var tempY = item_.mapToItem(activityBackground, 0, 0).y + item_.height * 0.5 - pad_.height * 0.5
-        pad_.x = Core.clamp(tempX, items.baseMargins, pad_.maxX)
-        pad_.y = Core.clamp(tempY, items.baseMargins, pad_.maxY)
+        pad_.x = Core.clamp(tempX, GCStyle.baseMargins, pad_.maxX)
+        pad_.y = Core.clamp(tempY, GCStyle.baseMargins, pad_.maxY)
     }
 
     Rectangle {
@@ -38,8 +38,8 @@ Item {
         height: items.digitBgHeight
         color: (droppable && mouseArea.containsMouse) ? "#80A1CBD9" : "#00FFFFFF"
         border.color: "#A1CBD9"
-        border.width: 2 * ApplicationInfo.ratio
-        radius: items.baseRadius
+        border.width: GCStyle.thinBorder
+        radius: GCStyle.tinyMargins
     }
 
     GCText {
@@ -72,13 +72,12 @@ Item {
             color: tensMouseArea.containsMouse ? "#80A1CBD9" : "#00FFFFFF"
             border.color: (tensValue === 0) ? "#A1CBD9" : "#A1D9A1"
             border.width: ApplicationInfo.ratio
-            radius: items.baseRadius
+            radius: GCStyle.tinyMargins
         }
 
         GCText {
             id: tensText
             anchors.fill: tensBg
-            anchors.centerIn: tensBg
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             fontSize: regularSize
@@ -121,13 +120,12 @@ Item {
             color: carryMouseArea.containsMouse ? "#80A1CBD9" : "#00FFFFFF"
             border.color: (carryValue === 0) ? "#A1CBD9" : "#D9A1A1"
             border.width: ApplicationInfo.ratio
-            radius: items.baseRadius
+            radius: GCStyle.tinyMargins
         }
 
         GCText {
             id: incrText
             anchors.fill: carryBg
-            anchors.centerIn: carryBg
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             fontSize: regularSize
