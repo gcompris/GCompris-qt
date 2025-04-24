@@ -73,8 +73,8 @@ ActivityBase {
             waterplant.running = false;
             sewageplant.running = false;
             tower.level = 0;
-            info.visible = true;
-            info.setKey('start');
+            infoPanel.setKey('start');
+            infoPanel.visible = true;
             timer.restart();
         }
 
@@ -133,7 +133,6 @@ ActivityBase {
             onIntroDone: {
                 tuxboat.state = "tuxboatRight";
                 sun.state = "sunDown";
-                info.visible = true;
                 sun_area.enabled = true;
             }
             intro: ListModel {
@@ -181,7 +180,7 @@ ActivityBase {
                         layoutArea {
                             width: parent.height - bar.height * 1.2
                             anchors.bottomMargin: 0
-                            anchors.leftMargin: 10 * ApplicationInfo.ratio
+                            anchors.leftMargin: GCStyle.baseMargins
                         }
                     }
                     AnchorChanges {
@@ -284,7 +283,7 @@ ActivityBase {
                                 boatparked.opacity = 1;
                                 shower.stop();
                                 if(!sun.hasRun)
-                                    info.setKey('start');
+                                    infoPanel.setKey('start');
                             }
                         }
                     }
@@ -369,7 +368,7 @@ ActivityBase {
                     from: "sunDown"; to: "sunUp";
                     ScriptAction { script: {
                             bleepSound.play();
-                            info.setKey('sun');
+                            infoPanel.setKey('sun');
                             sun.hasRun = true;
                             vapor.animLoop = true;
                             vapor.state = "vaporUp";
@@ -446,7 +445,7 @@ ActivityBase {
                                     vapor.animLoop = false;
                                     vapor.state = "vaporUp";
                                 } else {
-                                    info.setKey("cloud");
+                                    infoPanel.setKey("cloud");
                                 }
                             }
                         }
@@ -518,7 +517,7 @@ ActivityBase {
             MouseArea {
                 id: cloud_area
                 anchors.fill: cloud
-                enabled: info.newKey === 'cloud'
+                enabled: infoPanel.newKey === 'cloud'
                 onClicked: {
                     sun.state = "sunDown";
                     rain.up();
@@ -566,7 +565,7 @@ ActivityBase {
             }
             function up() {
                 waterSound.play();
-                info.setKey('rain');
+                infoPanel.setKey('rain');
                 opacity = 1;
                 rainAnim.start();
             }
@@ -665,7 +664,7 @@ ActivityBase {
                 anchors.fill: parent
                 onClicked: {
                     bubbleSound.play();
-                    info.setKey('tower');
+                    infoPanel.setKey('tower');
                     waterplant.running = true;
                 }
             }
@@ -708,7 +707,7 @@ ActivityBase {
                 anchors.fill: parent
                 onClicked: {
                     bubbleSound.play();
-                    info.setKey('shower');
+                    infoPanel.setKey('shower');
                     sewageplant.running = true;
                 }
             }
@@ -797,7 +796,7 @@ ActivityBase {
                 tuxbath.visible = true;
 
                 if(!items.cycleDone) {
-                    info.setKey('done');
+                    infoPanel.setKey('done');
                     bonus.good('smiley');
                     items.cycleDone = true;
                 }
@@ -880,45 +879,54 @@ ActivityBase {
             }
         }
 
-        GCText {
-            id: info
-            visible: false
-            fontSize: smallSize
-            font.weight: Font.DemiBold
-            horizontalAlignment: Text.AlignHCenter
-            anchors {
-                top: parent.top
-                topMargin: 5 * ApplicationInfo.ratio
-                right: parent.right
-                rightMargin: 5 * ApplicationInfo.ratio
-                left: parent.left
-            }
-            width: parent.width
-            wrapMode: Text.WordWrap
+        GCTextPanel {
+            id: infoPanel
             z: 100
-            onTextChanged: textanim.start();
+            color: "#b2d2d2d2"
+            border.width: 0
+            panelWidth: 10 // set in states but is required so need an init value
+            panelHeight: layoutArea.height - GCStyle.halfMargins
+            opacity: 0
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: parent.top
+            anchors.topMargin: GCStyle.halfMargins
+            textItem.color: GCStyle.darkText
+            textItem.fontSize: textItem.smallSize
+            textItem.wrapMode: Text.WordWrap
+            textItem.onTextChanged: textanim.start();
             property string newKey
+
+            Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 200 } }
 
             states: [
                 State {
                     name: "verticalInfo"
                     when: items.isVertical
                     PropertyChanges {
-                        info.anchors.leftMargin: 5 * ApplicationInfo.ratio
+                        infoPanel {
+                            panelWidth: layoutArea.width
+                            anchors.horizontalCenterOffset: 0
+                        }
                     }
                 },
                 State {
                     name: "horizontalInfoSide"
                     when: !items.isVertical && items.textOnSide
                     PropertyChanges {
-                        info.anchors.leftMargin: layoutArea.width + 15 * ApplicationInfo.ratio
+                        infoPanel {
+                            panelWidth: activityBackground.width - layoutArea.width - 3 * GCStyle.halfMargins
+                            anchors.horizontalCenterOffset: layoutArea.width * 0.5 + GCStyle.halfMargins
+                        }
                     }
                 },
                 State {
                     name: "horizontalInfoOver"
                     when: !items.isVertical && !items.textOnSide
                     PropertyChanges {
-                        info.anchors.leftMargin: parent.width * 0.5
+                        infoPanel {
+                            panelWidth: (activityBackground.width - 3 * GCStyle.halfMargins) * 0.5
+                            anchors.horizontalCenterOffset: infoPanel.panelWidth * 0.5
+                        }
                     }
                 }
             ]
@@ -926,22 +934,21 @@ ActivityBase {
             SequentialAnimation {
                 id: textanim
                 NumberAnimation {
-                    target: info
+                    target: infoPanel
                     property: "opacity"
                     duration: 200
-                    from: 1
                     to: 0
                 }
                 ScriptAction {
-                    script: if(items.cycleDone && info.newKey != "done") info.visible = false;
+                    script: if(items.cycleDone && infoPanel.newKey != "done") infoPanel.visible = false;
                 }
                 PropertyAction {
-                    target: info
+                    target: infoPanel.textItem
                     property: 'text'
-                    value: items.dataset[info.newKey]
+                    value: items.dataset[infoPanel.newKey]
                 }
                 NumberAnimation {
-                    target: info
+                    target: infoPanel
                     property: "opacity"
                     duration: 200
                     from: 0
@@ -955,17 +962,6 @@ ActivityBase {
                     textanim.start();
                 }
             }
-        }
-
-        Rectangle {
-            id: infoBg
-            z: 99
-            anchors.fill: info
-            color: '#D2D2D2'
-            radius: width * 0.01
-            opacity: info.text ? 0.7 : 0
-            visible: info.visible
-            Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 200 } }
         }
 
         DialogHelp {
