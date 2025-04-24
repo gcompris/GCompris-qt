@@ -702,7 +702,7 @@ ActivityBase {
             property bool running: false
             MouseArea {
                 id: waste_area
-                enabled: river.opacity == 1
+                enabled: river.opacity == 1 && waterplant.running
                 anchors.fill: parent
                 onClicked: {
                     bubbleSound.play();
