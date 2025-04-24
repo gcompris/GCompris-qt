@@ -26275,12 +26275,12 @@ msgstr ""
 "варыянты будуць аўтаматычна выбірацца для будучага адказу, пакуль не зняць з "
 "іх гэтай пазнакі паўторным двайным пстрычком."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Гэты аб'ект размешчаны слушна."
 
-#: activities/superbrain/Superbrain.qml:152
+#: activities/superbrain/Superbrain.qml:150
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Гэты аб'ект не на сваім месцы."

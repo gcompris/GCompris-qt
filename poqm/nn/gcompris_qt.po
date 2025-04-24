@@ -26616,12 +26616,12 @@ msgstr ""
 "framtida, heilt du fjernar markeringa att ved eit nytt dobbeltklikk."
 
 # «item» er anten farge eller form, og «gjenstand» eller «element» vert feil/dårleg på norsk. Men det fungerer å kutta ut subtantivtet heilt.
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Denne er rett plassert."
 
-#: activities/superbrain/Superbrain.qml:152
+#: activities/superbrain/Superbrain.qml:150
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Denne er feilplassert."

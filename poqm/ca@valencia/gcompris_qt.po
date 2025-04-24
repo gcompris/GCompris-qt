@@ -26985,12 +26985,12 @@ msgstr ""
 "actuals i futures, fins que els desmarques altra vegada fent-hi doble clic o "
 "tocant-los."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Este objecte està ubicat correctament."
 
-#: activities/superbrain/Superbrain.qml:152
+#: activities/superbrain/Superbrain.qml:150
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Este objecte no està en la posició correcta."

@@ -27038,12 +27038,12 @@ msgstr ""
 "Στα επίπεδα 4 και 8 ένα σχήμα/χρώμα μπορεί να αντιστοιχεί σε περισσότερες "
 "από μία θέσεις."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Αυτό το αντικείμενο τοποθετήθηκε σωστά."
 
-#: activities/superbrain/Superbrain.qml:152
+#: activities/superbrain/Superbrain.qml:150
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Αυτό το αντικείμενο δεν τοποθετήθηκε σωστά."

@@ -26383,12 +26383,12 @@ msgstr ""
 "később is ki lesznek amíg mást ki nem jelölsz helyettük egy másikra való "
 "kattintással/koppintással."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Ez az elem a helyén van"
 
-#: activities/superbrain/Superbrain.qml:152
+#: activities/superbrain/Superbrain.qml:150
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Ez az elem nincs a helyén"

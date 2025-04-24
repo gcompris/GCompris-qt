@@ -26749,12 +26749,12 @@ msgstr ""
 "l'écran tactile pour automatiquement avoir la dernière couleur utilisée sur "
 "une case."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Cet élément est bien positionné."
 
-#: activities/superbrain/Superbrain.qml:152
+#: activities/superbrain/Superbrain.qml:150
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Cet élément est mal positionné."

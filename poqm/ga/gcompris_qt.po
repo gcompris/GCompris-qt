@@ -28141,12 +28141,12 @@ msgstr ""
 "le teacht go dtí go ndíroghnaíonn tú iad arís trína ndéchliceáil nó trína "
 "dtapáil."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Tá an mhír seo san áit cheart"
 
-#: activities/superbrain/Superbrain.qml:152
+#: activities/superbrain/Superbrain.qml:150
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Tá an mhír seo san áit chontráilte."

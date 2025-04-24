@@ -27617,12 +27617,12 @@ msgstr ""
 "kannst die Markierung wieder aufheben indem du nochmal auf sie doppelt "
 "klickst."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Dieses Feld ist am richtigen Ort."
 
-#: activities/superbrain/Superbrain.qml:152
+#: activities/superbrain/Superbrain.qml:150
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Dieses Feld ist am falschen Ort."

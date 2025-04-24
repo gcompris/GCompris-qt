@@ -27271,12 +27271,12 @@ msgstr ""
 "növbəti dəfə avtomatik seçiləcəkdir. Yenidən üzərinə iki dəfə vurmaqla bu "
 "işarəni ləğv etmək olar."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Bu element düzgün yerləşdirilib."
 
-#: activities/superbrain/Superbrain.qml:152
+#: activities/superbrain/Superbrain.qml:150
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Bu element yerində deyil."

@@ -29464,7 +29464,7 @@ msgstr ""
 "आइटम स्वचालित रूप से आपके वर्तमान और भविष्य के अनुमानों में चयनित होते हैं जब तक कि आप उन्हें "
 "दो-क्लिक या टैप करके दोबारा न छापें।"
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:148
 #, fuzzy
 #| msgctxt "Superbrain|"
 #| msgid "This item is well placed"
@@ -29472,7 +29472,7 @@ msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "इस वस्तु को अच्छी तरह से रखा गया है"
 
-#: activities/superbrain/Superbrain.qml:152
+#: activities/superbrain/Superbrain.qml:150
 #, fuzzy
 #| msgctxt "Superbrain|"
 #| msgid "This item is misplaced"

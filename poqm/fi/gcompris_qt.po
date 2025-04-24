@@ -27087,12 +27087,12 @@ msgstr ""
 "automaattisesti nykyisissä ja tulevissa arvauksissasi, kunnes poistat niiden "
 "merkinnät kaksoisnapsauttamalla niitä uudelleen."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Tämä on oikeassa paikassa."
 
-#: activities/superbrain/Superbrain.qml:152
+#: activities/superbrain/Superbrain.qml:150
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Tämä on väärässä paikassa."

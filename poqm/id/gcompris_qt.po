@@ -27242,12 +27242,12 @@ msgstr ""
 "tersebut dipilih secara otomatis dalam tebakanmu saat ini dan nanti sampai "
 "kamu tidak menandainya, sekali lagi dengan mengeklik atau mengetuk dua kali."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Benda ini telah diletakkan dengan baik."
 
-#: activities/superbrain/Superbrain.qml:152
+#: activities/superbrain/Superbrain.qml:150
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Benda ini diletakkan di tempat yang salah."

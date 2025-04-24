@@ -26637,12 +26637,12 @@ msgstr ""
 "seleccionan automáticamente en las suposiciones actuales y en las futuras "
 "hasta que los desmarques (volviendo a hacer doble clic sobre ellos)."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Este objeto está bien colocado."
 
-#: activities/superbrain/Superbrain.qml:152
+#: activities/superbrain/Superbrain.qml:150
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Este objeto está mal colocado."

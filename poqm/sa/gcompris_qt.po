@@ -25996,12 +25996,12 @@ msgstr ""
 "एतादृशानि चिह्नितानि वस्तूनि स्वयमेव भवतः वर्तमान-भविष्य-अनुमानयोः चयनितानि भवन्ति "
 "यावत् भवन्तः तान् अ-चिह्निताः न कुर्वन्ति, पुनः तेषु द्विवारं क्लिक् कृत्वा ।"
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "एतत् द्रव्यं सुस्थापितम् अस्ति।"
 
-#: activities/superbrain/Superbrain.qml:152
+#: activities/superbrain/Superbrain.qml:150
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "एतत् द्रव्यं दुर्स्थापितम् अस्ति।"
