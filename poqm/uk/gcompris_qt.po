@@ -11787,7 +11787,7 @@ msgstr "Культурні області Литви"
 #: activities/geo-country/resource/board/board17_0.qml:24
 msgctxt "board17_0|"
 msgid "Aukštaitija"
-msgstr "Аукшайтія"
+msgstr "Аукштайтія"
 
 #. Cultural region of Lithuania: Dzūkija
 #: activities/geo-country/resource/board/board17_0.qml:31
@@ -27247,7 +27247,7 @@ msgctxt "subtraction|"
 msgid "Solve: %1"
 msgstr "Розв'яжіть: %1"
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:400
+#: activities/vertical_subtraction/VerticalSubtraction.qml:379
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
 msgstr "Готово"
