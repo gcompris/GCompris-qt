@@ -133,7 +133,7 @@ ActivityBase {
                     signal hit(real x, real y)
                     signal checkOnScreen
 
-                    onHit: {
+                    onHit: (x, y) => {
                         if(!mouseArea.enabled)
                             return
 
@@ -327,6 +327,7 @@ ActivityBase {
             }
 
             MultiPointTouchArea {
+                id: touchArea
                 anchors.fill: parent
                 enabled: !bonus.isPlaying
                 mouseEnabled: false
@@ -335,7 +336,7 @@ ActivityBase {
                 // To determine if we zoom or unzoom
                 property int prevDist: 0
                 // To avoid having too many updates or the zoom flickers
-                    property date dateEvent: new Date()
+                property date dateEvent: new Date()
                 touchPoints: [
                             TouchPoint { id: point1 },
                             TouchPoint { id: point2 }
@@ -343,7 +344,11 @@ ActivityBase {
                 onReleased: prevDist = 0
                 onTouchUpdated: {
                     if(!point2.pressed) {
-                        mineObjects.itemAt(point1.x, point1.y).hit(point1.x, point1.y)
+                        var mappedPoint = touchArea.mapToItem(mineObjects, point1.x, point1.y)
+                        var gridItem = mineObjects.itemAt(mappedPoint.x, mappedPoint.y)
+                        if(gridItem) {
+                            gridItem.hit(mappedPoint.x, mappedPoint.y)
+                        }
                         return
                     }
                     // Calc Distance
