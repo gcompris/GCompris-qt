@@ -26612,7 +26612,7 @@ msgctxt "subtraction|"
 msgid "Solve: %1"
 msgstr "Tittel: %1"
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:400
+#: activities/vertical_subtraction/VerticalSubtraction.qml:379
 #, fuzzy
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
@@ -27873,8 +27873,3 @@ msgstr "Lukk"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Start"
-
-#, fuzzy
-#~ msgctxt "Frieze|"
-#~ msgid "What is the binary representation of %1?"
-#~ msgstr "Kva vert talet %1 i totalssystemet?"
