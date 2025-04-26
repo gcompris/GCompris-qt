@@ -19905,7 +19905,7 @@ msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr "metalpaint.wav – remixat și folosit la colectarea unui filon de aur"
 
-#: activities/mining/Mining.qml:442
+#: activities/mining/Mining.qml:447
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -19921,23 +19921,23 @@ msgstr ""
 "ecran tactil, glisează cu două degete pe ecran în direcții opuse, "
 "îndepărtându-le de scânteie."
 
-#: activities/mining/Mining.qml:458
+#: activities/mining/Mining.qml:463
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr ""
 "Perfect, faci zoom de apropiere. Continuă până când apare filonul de aur."
 
-#: activities/mining/Mining.qml:466
+#: activities/mining/Mining.qml:471
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Mmm, ai grijă, faci zoom de apropiere prea departe de scânteie."
 
-#: activities/mining/Mining.qml:474
+#: activities/mining/Mining.qml:479
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Acum vezi filonul de aur, fă clic pe el ca să-l apuci."
 
-#: activities/mining/Mining.qml:482
+#: activities/mining/Mining.qml:487
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -19946,17 +19946,17 @@ msgstr ""
 "Mmm, ești prea departe de filon ca să-l poți vedea. Dă zoom de depărtare și "
 "apoi din nou zoom de apropiere, cât mai aproape de scânteie."
 
-#: activities/mining/Mining.qml:490
+#: activities/mining/Mining.qml:495
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Dă acum zoom de depărtare și încearcă să găsești o altă scânteie."
 
-#: activities/mining/Mining.qml:498
+#: activities/mining/Mining.qml:503
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Continuă să dai zoom de îndepărtare până când zărești scânteia."
 
-#: activities/mining/Mining.qml:506
+#: activities/mining/Mining.qml:511
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Acum că vezi scânteia, continuă, poți să dai zoom de apropiere pe ea."

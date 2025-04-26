@@ -20060,7 +20060,7 @@ msgstr ""
 "metalpaint.wav - ri-miscelato e utilizzato quando viene raccolta una pepita "
 "d'oro"
 
-#: activities/mining/Mining.qml:442
+#: activities/mining/Mining.qml:447
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -20075,23 +20075,23 @@ msgstr ""
 "dita al centro. Su un'area a tocco, trascina due dita lontano dalla "
 "scintilla, una in ogni direzione."
 
-#: activities/mining/Mining.qml:458
+#: activities/mining/Mining.qml:463
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Perfetto stai usando lo zoom. Continua fino a vedere la pepita."
 
 # "Mmm, fai attenzione, stai riducendo lo zoom troppo lontano dalla scintilla."
-#: activities/mining/Mining.qml:466
+#: activities/mining/Mining.qml:471
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Mmm, fai attenzione, stai riducendo troppo lo zoom dalla scintilla."
 
-#: activities/mining/Mining.qml:474
+#: activities/mining/Mining.qml:479
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Ora vedi la pepita, fai clic su di essa per prenderla."
 
-#: activities/mining/Mining.qml:482
+#: activities/mining/Mining.qml:487
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -20100,17 +20100,17 @@ msgstr ""
 "Mmm, sei troppo lontano dalla pepita per vederla. Riduci lo zoom, poi "
 "aumentalo nuovamente fino a vedere la scintilla."
 
-#: activities/mining/Mining.qml:490
+#: activities/mining/Mining.qml:495
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Ora riduci lo zoom e prova a trovare qualche scintilla."
 
-#: activities/mining/Mining.qml:498
+#: activities/mining/Mining.qml:503
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Continua a ridurre lo zoom fino a vedere le scintille."
 
-#: activities/mining/Mining.qml:506
+#: activities/mining/Mining.qml:511
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Ora vedi le scintille, vai avanti, puoi aumentare lo zoom su di esse."

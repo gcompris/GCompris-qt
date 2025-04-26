@@ -19746,7 +19746,7 @@ msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr "metalpaint.wav -advesket hag implijet pa vez dastument ur fulenn aour"
 
-#: activities/mining/Mining.qml:442
+#: activities/mining/Mining.qml:447
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -19761,22 +19761,22 @@ msgstr ""
 "stekiñ, lak daou viz da riklañ pell diouzh al luc'hig, gant pep biz war un "
 "tu enep."
 
-#: activities/mining/Mining.qml:458
+#: activities/mining/Mining.qml:463
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Peurvat, o zoumañ emaout. Kendalc'h betek ma weli ar fulenn aour."
 
-#: activities/mining/Mining.qml:466
+#: activities/mining/Mining.qml:471
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Hmm, taol evezh, o zoumañ re bell diouzh al luc'hig emaout."
 
-#: activities/mining/Mining.qml:474
+#: activities/mining/Mining.qml:479
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Bremañ e welez ar fulenn aour, klik warni a-benn tapout anezhi."
 
-#: activities/mining/Mining.qml:482
+#: activities/mining/Mining.qml:487
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -19785,17 +19785,17 @@ msgstr ""
 "Hmm, re bell diouzh ar fulenn aour emaout evit gwelout anezhi. Dizoum ha "
 "zoum adarre an tostañ ar gwellañ ouzh ar fulenn."
 
-#: activities/mining/Mining.qml:490
+#: activities/mining/Mining.qml:495
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Bremañ, dizoum ha klask kavout ul luc'hig all."
 
-#: activities/mining/Mining.qml:498
+#: activities/mining/Mining.qml:503
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Kendalc'h gant an dizoumañ betek ma weli al luc'hig."
 
-#: activities/mining/Mining.qml:506
+#: activities/mining/Mining.qml:511
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Bremañ e welez al luc'hig, bec'h dezhi, gallout a rez zoumañ warni."

@@ -19346,7 +19346,7 @@ msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr "כשנאסף גוש זהב מתנגן metalpaint.wav שנכתב מחדש"
 
-#: activities/mining/Mining.qml:442
+#: activities/mining/Mining.qml:447
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -19360,22 +19360,22 @@ msgstr ""
 "ולגרור אצבע אחת על האזור הימני או שתי אצבעות במרכז. על משטח מגע, לגרור שתי "
 "אצבעות מהניצנוץ והחוצה, אחת בכל כיוון."
 
-#: activities/mining/Mining.qml:458
+#: activities/mining/Mining.qml:463
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "מיקוד נהדר. להמשיך עד שרואים גוש זהב."
 
-#: activities/mining/Mining.qml:466
+#: activities/mining/Mining.qml:471
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "אה, לשים לב, ההתמקדות רחוקה מדי מהניצנוץ."
 
-#: activities/mining/Mining.qml:474
+#: activities/mining/Mining.qml:479
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "עכשיו רואים את גוש הזהב, להקיש עליו כדי לתפוס אותו."
 
-#: activities/mining/Mining.qml:482
+#: activities/mining/Mining.qml:487
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -19384,17 +19384,17 @@ msgstr ""
 "אה, זה רחוק מדי מגוש הזהב בשביל לראות אותו. לצאת מההתמקדות ואז להתמקד מחדש "
 "הכי קרוב שאפשר לניצנוץ."
 
-#: activities/mining/Mining.qml:490
+#: activities/mining/Mining.qml:495
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "עכשיו להרחיב את המבט ולנסות למצוא ניצנוץ אחר."
 
-#: activities/mining/Mining.qml:498
+#: activities/mining/Mining.qml:503
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "להמשיך להרחיב את המבט עד שרואים את הניצנוץ."
 
-#: activities/mining/Mining.qml:506
+#: activities/mining/Mining.qml:511
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "עכשיו רואים את הניצנוץ, קדימה, אפשר להתמקד עליו."

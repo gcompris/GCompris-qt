@@ -19541,7 +19541,7 @@ msgstr ""
 "metalpaint.wav - перароблены і выкарыстоўваецца калі забіраецца залаты "
 "самародак"
 
-#: activities/mining/Mining.qml:442
+#: activities/mining/Mining.qml:447
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -19556,22 +19556,22 @@ msgstr ""
 "двума па цэнтры панэлі. На чулым экране, адначасова двума пальцамі - кожным "
 "у сваім напрамку - правядзіце ў бакі ад месца бляску."
 
-#: activities/mining/Mining.qml:458
+#: activities/mining/Mining.qml:463
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Ухвальна, вы набліжаецеся. Працягвайце, пакуль не пабачыце самародак."
 
-#: activities/mining/Mining.qml:466
+#: activities/mining/Mining.qml:471
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Хм, будзьце абачлівымі - вы набліжаеце задалёка ад месца бляску."
 
-#: activities/mining/Mining.qml:474
+#: activities/mining/Mining.qml:479
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Цяпер перад вамі самародак - пстрыкніце, каб узяць яго."
 
-#: activities/mining/Mining.qml:482
+#: activities/mining/Mining.qml:487
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -19580,17 +19580,17 @@ msgstr ""
 "Хм, вы задалёка ад самародка, каб бачыць яго. Аддаліце, а затым зноўку "
 "наблізьце як мага бліжэй да месца бляску."
 
-#: activities/mining/Mining.qml:490
+#: activities/mining/Mining.qml:495
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Цяпер аддаліце і паспрабуйце знайсці яшчэ бляск."
 
-#: activities/mining/Mining.qml:498
+#: activities/mining/Mining.qml:503
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Працягвайце аддаляцца пакуль не пабачыце бляск."
 
-#: activities/mining/Mining.qml:506
+#: activities/mining/Mining.qml:511
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Цяпер вы бачыце бляск - наперад, вы можаце набліжацца."
