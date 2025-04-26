@@ -2750,13 +2750,13 @@ msgstr ""
 "Pouez war ar biroù kleiz ha dehoù war un dro evit lakaat ar vell da vont war "
 "eeun. Gant ur skramm stekiñ, stok an daouarn war un dro."
 
-#: activities/ballcatch/Ballcatch.qml:228
+#: activities/ballcatch/Ballcatch.qml:227
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr "Stok an daouarn war un dro da lakaat ar vell da vont war eeun."
 
-#: activities/ballcatch/Ballcatch.qml:230
+#: activities/ballcatch/Ballcatch.qml:233
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2885,14 +2885,24 @@ msgstr ""
 "Lak war enaou ar c'hlogorennoù-tredan reizh evit sevel stumm daouredel un "
 "niver degel. Pa 'z eo echu ganit, klik war OK."
 
-#: activities/binary_bulb/binary_bulb.js:20
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:84
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "This activity teaches how to convert decimal numbers to binary numbers."
+msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr ""
 "Deskiñ a ra an obererezh-mañ penaos treiñ niveroù degel e niveroù daouredel."
 
-#: activities/binary_bulb/binary_bulb.js:24
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:88
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Computers use transistors to count and transistors have only two states, "
+#| "0 and 1. Mathematically, these states are represented by 0 and 1, which "
+#| "makes up the binary system of numeration."
+msgctxt "BinaryBulb|"
 msgid ""
 "Computers use transistors to count and transistors have only two states, 0 "
 "and 1. Mathematically, these states are represented by 0 and 1, which makes "
@@ -2903,14 +2913,22 @@ msgstr ""
 "diskouezet ar stummoù-se gant 0 hag 1, ar pezh zo diazez an niveriñ "
 "daouredel."
 
-#: activities/binary_bulb/binary_bulb.js:28
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:92
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
+msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr ""
 "En obererezh e vez arouezet 0 hag 1 gant klogorennoù-tredan war enaou pe get."
 
-#: activities/binary_bulb/binary_bulb.js:32
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:96
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Binary system uses these numbers very efficiently, allowing to count from "
+#| "0 to 255 with 8 bits only."
+msgctxt "BinaryBulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
 "to 255 with 8 bits only."
@@ -2918,8 +2936,15 @@ msgstr ""
 "Implijout a ra an niveriñ daouredel an niveroù-se en un doare efedus-kenañ, "
 "gouest da gontañ adalek 0 betek 255 gant 8 bit nemetken."
 
-#: activities/binary_bulb/binary_bulb.js:36
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:100
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Each bit adds a progressive value, corresponding to the powers of 2, "
+#| "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → "
+#| "2²=4 , bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit "
+#| "8 → 2⁷=128."
+msgctxt "BinaryBulb|"
 msgid ""
 "Each bit adds a progressive value, corresponding to the powers of 2, "
 "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → 2²=4 , "
@@ -2930,13 +2955,21 @@ msgstr ""
 "a zehoù da gleiz:  bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → 2²=4 , bit 4 → "
 "2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit 8 → 2⁷=128."
 
-#: activities/binary_bulb/binary_bulb.js:40
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:104
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
+msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr "Evit treiñ ur 5 degel en un talvoud daouredel e sammer 1 ha 4."
 
-#: activities/binary_bulb/binary_bulb.js:44
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:108
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 "
+#| "is equal to binary 101."
+msgctxt "BinaryBulb|"
 msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
 "equal to binary 101."
@@ -2944,12 +2977,15 @@ msgstr ""
 "Ar bitoù a glot gante a vez lakaet da 1, a re all da 0. Ar 5 degel a zo par "
 "d'ar 101 daouredel."
 
-#: activities/binary_bulb/binary_bulb.js:48
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:112
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid "This image will help you to compute bits' value."
+msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Ar skeudenn-mañ a ziskouezo dit penaos jediñ talvoud ar bitoù."
 
-#: activities/binary_bulb/BinaryBulb.qml:126
+#: activities/binary_bulb/BinaryBulb.qml:160
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3622,7 +3658,7 @@ msgstr ""
 "Te a ren ar skluz. Ret eo dit digeriñ an dorioù hag ar rañvellioù en urzh "
 "mat a-benn lakaat Tuks da dremen dre ar skluz d'un tu ha d'an tu all."
 
-#: activities/canal_lock/CanalLock.qml:73
+#: activities/canal_lock/CanalLock.qml:74
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3631,7 +3667,7 @@ msgstr ""
 "Da bal eo kas Tux dre ar skluz war-zu ar c'hefoù-koad en ur implijout tammoù "
 "disheñvel ar skluz."
 
-#: activities/canal_lock/CanalLock.qml:75
+#: activities/canal_lock/CanalLock.qml:77
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3641,7 +3677,7 @@ msgstr ""
 "Ar barrennoù a-blom ha livet a zo ar skluzioù da vezañ diblaset dre glikañ "
 "warne. N'haller ket diblasañ daoù tamm skluz eus ar memes stumm war un dro."
 
-#: activities/canal_lock/CanalLock.qml:77
+#: activities/canal_lock/CanalLock.qml:80
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -14559,24 +14595,43 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
 msgstr "Barrennig-Distro: dibab ar ger kent"
 
-#: activities/grammar_analysis/grammar_analysis.js:37
+#: activities/grammar_analysis/grammar_analysis.js:398
 msgctxt "grammar_analysis|"
+msgid "Empty"
+msgstr "Goullo"
+
+#: activities/grammar_analysis/GrammarAnalysis.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Grammatical analysis"
+msgctxt "GrammarAnalysis|"
 msgid "Grammatical analysis"
 msgstr "Dielfennañ yezhadurel"
 
-#: activities/grammar_analysis/grammar_analysis.js:38
-#: activities/grammar_analysis/grammar_analysis.js:48
-msgctxt "grammar_analysis|"
+#: activities/grammar_analysis/GrammarAnalysis.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn to identify grammatical classes."
+msgctxt "GrammarAnalysis|"
 msgid "Learn to identify grammatical classes."
 msgstr "Desk anavezout ar rummadoù yezhadurel."
 
-#: activities/grammar_analysis/grammar_analysis.js:39
-msgctxt "grammar_analysis|"
+#: activities/grammar_analysis/GrammarAnalysis.qml:28
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid ""
+#| "Find all the words corresponding to the requested grammatical classes."
+msgctxt "GrammarAnalysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr "Kav an holl c'herioù a glot gant ar rummadoù yezhadurel rekis."
 
-#: activities/grammar_analysis/grammar_analysis.js:40
-msgctxt "grammar_analysis|"
+#: activities/grammar_analysis/GrammarAnalysis.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select a grammatical class from the list, then select the box under a "
+#| "word and assign it the class."
+msgctxt "GrammarAnalysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
@@ -14584,39 +14639,13 @@ msgstr ""
 "Dibab ur rummad yezhadurel er roll, dibab goude ar voest dindan ur ger ha "
 "kinnig aze ar rummad."
 
-#: activities/grammar_analysis/grammar_analysis.js:41
-msgctxt "grammar_analysis|"
+#: activities/grammar_analysis/GrammarAnalysis.qml:30
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Leave the box blank if no class matches."
+msgctxt "GrammarAnalysis|"
 msgid "Leave the box blank if no class matches."
 msgstr "Laosk goullo ar voest ma n'eus rummad reizh ebet"
-
-#: activities/grammar_analysis/grammar_analysis.js:47
-msgctxt "grammar_analysis|"
-msgid "Grammatical classes"
-msgstr "Rummadoù yezhadurel"
-
-#: activities/grammar_analysis/grammar_analysis.js:49
-msgctxt "grammar_analysis|"
-msgid "Find all the words corresponding to the requested grammatical class."
-msgstr "Kav an holl c'herioù a glot gant ar rummadoù yezhadurel rekis."
-
-#: activities/grammar_analysis/grammar_analysis.js:50
-msgctxt "grammar_analysis|"
-msgid ""
-"Select the grammatical class from the list, then select the box under a word "
-"and assign it the class."
-msgstr ""
-"Dibab ur rummad yezhadurel er roll, dibab goude ar voest dindan ur ger ha "
-"kinnig aze ar rummad."
-
-#: activities/grammar_analysis/grammar_analysis.js:51
-msgctxt "grammar_analysis|"
-msgid "Leave the box blank if the class doesn't match."
-msgstr "Laosk goullo ar voest ma ne glot ket ar rummad."
-
-#: activities/grammar_analysis/grammar_analysis.js:421
-msgctxt "grammar_analysis|"
-msgid "Empty"
-msgstr "Goullo"
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
@@ -14641,6 +14670,52 @@ msgstr ""
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
+msgid "Leave the box blank if the class doesn't match."
+msgstr "Laosk goullo ar voest ma ne glot ket ar rummad."
+
+#: activities/grammar_classes/GrammarClasses.qml:15
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Grammatical classes"
+msgctxt "GrammarClasses|"
+msgid "Grammatical classes"
+msgstr "Rummadoù yezhadurel"
+
+#: activities/grammar_classes/GrammarClasses.qml:16
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn to identify grammatical classes."
+msgctxt "GrammarClasses|"
+msgid "Learn to identify grammatical classes."
+msgstr "Desk anavezout ar rummadoù yezhadurel."
+
+#: activities/grammar_classes/GrammarClasses.qml:17
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Find all the words corresponding to the requested grammatical class."
+msgctxt "GrammarClasses|"
+msgid "Find all the words corresponding to the requested grammatical class."
+msgstr "Kav an holl c'herioù a glot gant ar rummadoù yezhadurel rekis."
+
+#: activities/grammar_classes/GrammarClasses.qml:18
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid ""
+#| "Select the grammatical class from the list, then select the box under a "
+#| "word and assign it the class."
+msgctxt "GrammarClasses|"
+msgid ""
+"Select the grammatical class from the list, then select the box under a word "
+"and assign it the class."
+msgstr ""
+"Dibab ur rummad yezhadurel er roll, dibab goude ar voest dindan ur ger ha "
+"kinnig aze ar rummad."
+
+#: activities/grammar_classes/GrammarClasses.qml:19
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Leave the box blank if the class doesn't match."
+msgctxt "GrammarClasses|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr "Laosk goullo ar voest ma ne glot ket ar rummad."
 
@@ -14741,7 +14816,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Biroù kleiz ha dehoù: dilec'h an egorlestr"
 
-#: activities/gravity/Gravity.qml:219
+#: activities/gravity/Gravity.qml:220
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -16200,8 +16275,13 @@ msgstr ""
 "vo niver ar barrennoù laosket heñvel ouzh an niver degel diskouezet. Klik "
 "goude war ar bouton OK evit gwiriañ da respont."
 
-#: activities/learn_decimals/learn_decimals.js:33
-msgctxt "learn_decimals|"
+#: activities/learn_decimals/Learn_decimals.qml:30
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "A decimal number is displayed. The bar with the arrow represents a full "
+#| "unit, and each square in it represents one tenth of this unit."
+msgctxt "Learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
 "unit, and each square in it represents one tenth of this unit."
@@ -16209,8 +16289,15 @@ msgstr ""
 "Un niver degel a zo diskouezet. Ezteurel a ra barrenn ar biroù un unanenn "
 "glok, ha pep kombod a ziskouez un dekvedenn anezhi."
 
-#: activities/learn_decimals/learn_decimals.js:37
-msgctxt "learn_decimals|"
+#: activities/learn_decimals/Learn_decimals.qml:34
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Drag the arrow to select a part of the bar, and drag the selected part of "
+#| "the bar to the empty area. Repeat these steps until the number of dropped "
+#| "bars corresponds to the displayed decimal number. Then click on the OK "
+#| "button to validate your answer."
+msgctxt "Learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
 "the bar to the empty area. Repeat these steps until the number of dropped "
@@ -16222,103 +16309,31 @@ msgstr ""
 "barrennoù laosket heñvel ouzh an niver degel diskouezet. Klik goude war ar "
 "bouton OK evit gwiriañ da respont."
 
-#: activities/learn_decimals/learn_decimals.js:44
-msgctxt "learn_decimals|"
-msgid ""
-"A subtraction with two decimal numbers is displayed. Below it, the first "
-"number from the subtraction is represented with bars. One bar represents a "
-"full unit, and each square in it represents one tenth of this unit."
-msgstr ""
-"Ul lamadenn gant daou niver degel a zo diskouezet. Dindani e vez eztaolet "
-"niver kentañ al lamadenn gant barrennoù. Ezteurel a ra ur varrenn un unanenn "
-"glok, ha pep kombod a ziskouez un dekvedenn anezhi."
-
-#: activities/learn_decimals/learn_decimals.js:48
-msgctxt "learn_decimals|"
-msgid ""
-"Click on the squares to subtract them and display the result of the "
-"operation, and click on the OK button to validate your answer."
-msgstr ""
-"Klik war ar c'hombodoù evit lemel anezhe ha diskouez disoc'h ar jedadenn, ha "
-"klik goude war ar bouton OK evit gwiriañ da respont."
-
-#: activities/learn_decimals/learn_decimals.js:52
-#: activities/learn_decimals/learn_decimals.js:67
-msgctxt "learn_decimals|"
-msgid ""
-"If the answer is correct, type the corresponding result, and click on the OK "
-"button to validate your answer."
-msgstr ""
-"Ma 'z eo mat ar respont, bizskriv an disoc'h a glot ha klik war ar bouton OK "
-"evit gwiriañ da respont."
-
-#: activities/learn_decimals/learn_decimals.js:59
-msgctxt "learn_decimals|"
-msgid ""
-"An addition with two decimal numbers is displayed. The bar with the arrow "
-"represents a full unit, and each square in it represents one tenth of this "
-"unit."
-msgstr ""
-"Ur sammadenn gant daou niver degel a vez diskouezet. Ezteurel a ra barrenn "
-"ar biroù un unanenn glok, ha pep kombod a ziskouez un dekvedenn anezhi;"
-
-#: activities/learn_decimals/learn_decimals.js:63
-msgctxt "learn_decimals|"
-msgid ""
-"Drag the arrow to select a part of the bar, and drag the selected part of "
-"the bar to the empty area. Repeat these steps until the number of dropped "
-"bars corresponds to the result of the addition, and click on the OK button "
-"to validate your answer."
-msgstr ""
-"Rikl ar bir evit dibab ur rann eus ar varrenn, ha rikl ar rann dibabet eus "
-"ar varrenn betek an dachenn c'houllo. Kendalc'h mod-se betek ma vo niver ar "
-"barrennoù laosket heñvel ouzh an niver degel diskouezet. Klik goude war ar "
-"bouton OK evit gwiriañ da respont."
-
-#: activities/learn_decimals/learn_decimals.js:74
-msgctxt "learn_decimals|"
-msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
-msgstr ""
-"Ret eo kaout ur c'hementad. Gant ar bir e c'hallez dibab kement ha 10 "
-"orañjezenn."
-
-#: activities/learn_decimals/learn_decimals.js:78
-msgctxt "learn_decimals|"
-msgid ""
-"Drag the arrow to select a number of oranges, and drag the selected oranges "
-"to the empty area. Repeat these steps until the number of oranges "
-"corresponds to the requested quantity. Then click on the OK button to "
-"validate your answer."
-msgstr ""
-"Rikl ar bir evit dibab un niver a orañjez, ha rikl ar orañjez dibabet betek "
-"an dachenn c'houllo. Kendalc'h mod-se betek ma vo niver an orañjez heñvel "
-"ouzh ar c'hementad ret. Klik goude war ar bouton OK evit gwiriañ da respont."
-
-#: activities/learn_decimals/Learn_decimals.qml:142
+#: activities/learn_decimals/Learn_decimals.qml:150
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "Diskouez an niver: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:143
+#: activities/learn_decimals/Learn_decimals.qml:151
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "Diskouez an disoc'h evit: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:144
+#: activities/learn_decimals/Learn_decimals.qml:152
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "Diskouez an disoc'h evit: %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:145
+#: activities/learn_decimals/Learn_decimals.qml:153
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "Diskouez ar c'hementad: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:602
+#: activities/learn_decimals/Learn_decimals.qml:610
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -16386,6 +16401,56 @@ msgctxt "ActivityInfo|"
 msgid "Numbers: type the result"
 msgstr "Niveroù: bizskriv an disoc'h"
 
+#: activities/learn_decimals_additions/Learn_decimals_additions.qml:16
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "An addition with two decimal numbers is displayed. The bar with the arrow "
+#| "represents a full unit, and each square in it represents one tenth of "
+#| "this unit."
+msgctxt "Learn_decimals_additions|"
+msgid ""
+"An addition with two decimal numbers is displayed. The bar with the arrow "
+"represents a full unit, and each square in it represents one tenth of this "
+"unit."
+msgstr ""
+"Ur sammadenn gant daou niver degel a vez diskouezet. Ezteurel a ra barrenn "
+"ar biroù un unanenn glok, ha pep kombod a ziskouez un dekvedenn anezhi;"
+
+#: activities/learn_decimals_additions/Learn_decimals_additions.qml:20
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Drag the arrow to select a part of the bar, and drag the selected part of "
+#| "the bar to the empty area. Repeat these steps until the number of dropped "
+#| "bars corresponds to the result of the addition, and click on the OK "
+#| "button to validate your answer."
+msgctxt "Learn_decimals_additions|"
+msgid ""
+"Drag the arrow to select a part of the bar, and drag the selected part of "
+"the bar to the empty area. Repeat these steps until the number of dropped "
+"bars corresponds to the result of the addition, and click on the OK button "
+"to validate your answer."
+msgstr ""
+"Rikl ar bir evit dibab ur rann eus ar varrenn, ha rikl ar rann dibabet eus "
+"ar varrenn betek an dachenn c'houllo. Kendalc'h mod-se betek ma vo niver ar "
+"barrennoù laosket heñvel ouzh an niver degel diskouezet. Klik goude war ar "
+"bouton OK evit gwiriañ da respont."
+
+#: activities/learn_decimals_additions/Learn_decimals_additions.qml:24
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "If the answer is correct, type the corresponding result, and click on the "
+#| "OK button to validate your answer."
+msgctxt "Learn_decimals_additions|"
+msgid ""
+"If the answer is correct, type the corresponding result, and click on the OK "
+"button to validate your answer."
+msgstr ""
+"Ma 'z eo mat ar respont, bizskriv an disoc'h a glot ha klik war ar bouton OK "
+"evit gwiriañ da respont."
+
 #: activities/learn_decimals_additions/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Add decimal numbers up to 1."
@@ -16437,6 +16502,51 @@ msgstr ""
 "a vez diskouezet gant barrennoù. Eztaolet e vez un unanenn gant ur varrenn, "
 "ha pep kombod a ziskouez un dekvedenn anezhi. Klik war ar c'hombodoù evitl "
 "ober al lamadenn gant an eil niver ha diskoueziñ disoc'h ar jedadenn."
+
+#: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:16
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "A subtraction with two decimal numbers is displayed. Below it, the first "
+#| "number from the subtraction is represented with bars. One bar represents "
+#| "a full unit, and each square in it represents one tenth of this unit."
+msgctxt "Learn_decimals_subtractions|"
+msgid ""
+"A subtraction with two decimal numbers is displayed. Below it, the first "
+"number from the subtraction is represented with bars. One bar represents a "
+"full unit, and each square in it represents one tenth of this unit."
+msgstr ""
+"Ul lamadenn gant daou niver degel a zo diskouezet. Dindani e vez eztaolet "
+"niver kentañ al lamadenn gant barrennoù. Ezteurel a ra ur varrenn un unanenn "
+"glok, ha pep kombod a ziskouez un dekvedenn anezhi."
+
+#: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:20
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Click on the squares to subtract them and display the result of the "
+#| "operation, and click on the OK button to validate your answer."
+msgctxt "Learn_decimals_subtractions|"
+msgid ""
+"Click on the squares to subtract them and display the result of the "
+"operation, and click on the OK button to validate your answer."
+msgstr ""
+"Klik war ar c'hombodoù evit lemel anezhe ha diskouez disoc'h ar jedadenn, ha "
+"klik goude war ar bouton OK evit gwiriañ da respont."
+
+#: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:24
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "If the answer is correct, type the corresponding result, and click on the "
+#| "OK button to validate your answer."
+msgctxt "Learn_decimals_subtractions|"
+msgid ""
+"If the answer is correct, type the corresponding result, and click on the OK "
+"button to validate your answer."
+msgstr ""
+"Ma 'z eo mat ar respont, bizskriv an disoc'h a glot ha klik war ar bouton OK "
+"evit gwiriañ da respont."
 
 #: activities/learn_decimals_subtractions/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -16597,6 +16707,36 @@ msgstr ""
 "rikl an orañjez dibabet betek an dachenn c'houllo. Kendalc'h mod-se betek ma "
 "vo niver an orañjez laosket heñvel ouzh ar c'hementad ret. Klik goude war ar "
 "bouton OK evit gwiriañ da respont."
+
+#: activities/learn_quantities/Learn_quantities.qml:16
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "A quantity is requested. The arrow allows to select up to 10 oranges."
+msgctxt "Learn_quantities|"
+msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
+msgstr ""
+"Ret eo kaout ur c'hementad. Gant ar bir e c'hallez dibab kement ha 10 "
+"orañjezenn."
+
+#: activities/learn_quantities/Learn_quantities.qml:20
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Drag the arrow to select a number of oranges, and drag the selected "
+#| "oranges to the empty area. Repeat these steps until the number of oranges "
+#| "corresponds to the requested quantity. Then click on the OK button to "
+#| "validate your answer."
+msgctxt "Learn_quantities|"
+msgid ""
+"Drag the arrow to select a number of oranges, and drag the selected oranges "
+"to the empty area. Repeat these steps until the number of oranges "
+"corresponds to the requested quantity. Then click on the OK button to "
+"validate your answer."
+msgstr ""
+"Rikl ar bir evit dibab un niver a orañjez, ha rikl ar orañjez dibabet betek "
+"an dachenn c'houllo. Kendalc'h mod-se betek ma vo niver an orañjez heñvel "
+"ouzh ar c'hementad ret. Klik goude war ar bouton OK evit gwiriañ da respont."
 
 #: activities/learn_quantities/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -19197,7 +19337,7 @@ msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr "metalpaint.wav -advesket hag implijet pa vez dastument ur fulenn aour"
 
-#: activities/mining/Mining.qml:442
+#: activities/mining/Mining.qml:447
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -19212,22 +19352,22 @@ msgstr ""
 "stekiñ, lak daou viz da riklañ pell diouzh al luc'hig, gant pep biz war un "
 "tu enep."
 
-#: activities/mining/Mining.qml:458
+#: activities/mining/Mining.qml:463
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Peurvat, o zoumañ emaout. Kendalc'h betek ma weli ar fulenn aour."
 
-#: activities/mining/Mining.qml:466
+#: activities/mining/Mining.qml:471
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Hmm, taol evezh, o zoumañ re bell diouzh al luc'hig emaout."
 
-#: activities/mining/Mining.qml:474
+#: activities/mining/Mining.qml:479
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Bremañ e welez ar fulenn aour, klik warni a-benn tapout anezhi."
 
-#: activities/mining/Mining.qml:482
+#: activities/mining/Mining.qml:487
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -19236,17 +19376,17 @@ msgstr ""
 "Hmm, re bell diouzh ar fulenn aour emaout evit gwelout anezhi. Dizoum ha "
 "zoum adarre an tostañ ar gwellañ ouzh ar fulenn."
 
-#: activities/mining/Mining.qml:490
+#: activities/mining/Mining.qml:495
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Bremañ, dizoum ha klask kavout ul luc'hig all."
 
-#: activities/mining/Mining.qml:498
+#: activities/mining/Mining.qml:503
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Kendalc'h gant an dizoumañ betek ma weli al luc'hig."
 
-#: activities/mining/Mining.qml:506
+#: activities/mining/Mining.qml:511
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Bremañ e welez al luc'hig, bec'h dezhi, gallout a rez zoumañ warni."
@@ -19727,8 +19867,50 @@ msgstr ""
 "goullo. Gounit a ra ur c'hoari pa n'hell ket ar c'hoarier diblasañ pezh ebet "
 "ken pe pa ne chom nemet daou bezh gantañ."
 
-#: activities/nine_men_morris/nine_men_morris.js:29
+#: activities/nine_men_morris/nine_men_morris.js:240
+#: activities/nine_men_morris/nine_men_morris.js:1086
 msgctxt "nine_men_morris|"
+msgid "Place a piece"
+msgstr "Lak ur pezh"
+
+#: activities/nine_men_morris/nine_men_morris.js:366
+#: activities/nine_men_morris/nine_men_morris.js:1144
+msgctxt "nine_men_morris|"
+msgid "Move a piece"
+msgstr "Diblas ur pezh"
+
+#: activities/nine_men_morris/nine_men_morris.js:918
+msgctxt "nine_men_morris|"
+msgid "Remove a piece"
+msgstr "Lam ur pezh"
+
+#: activities/nine_men_morris/nine_men_morris.js:1121
+msgctxt "nine_men_morris|"
+msgid "Congratulations"
+msgstr "Gourc'hemennoù"
+
+#: activities/nine_men_morris/nine_men_morris.js:1124
+msgctxt "nine_men_morris|"
+msgid "Congratulations Player 1"
+msgstr "Gourc'hemennoù dit, c'hoarier 1"
+
+#: activities/nine_men_morris/nine_men_morris.js:1135
+msgctxt "nine_men_morris|"
+msgid "Congratulations Player 2"
+msgstr "Gourc'hemennoù dit, c'hoarier 2"
+
+#: activities/nine_men_morris/nine_men_morris.js:1138
+msgctxt "nine_men_morris|"
+msgid "Try again"
+msgstr "Klask ober adarre"
+
+#: activities/nine_men_morris/NineMenMorris.qml:348
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "You and Tux start with 9 pieces each, and take turns to place your pieces "
+#| "on the empty spots of the board (by clicking on the spots)."
+msgctxt "NineMenMorris|"
 msgid ""
 "You and Tux start with 9 pieces each, and take turns to place your pieces on "
 "the empty spots of the board (by clicking on the spots)."
@@ -19736,8 +19918,14 @@ msgstr ""
 "Te ha Tuks a grog gant 9 fezh, ha pep hini d'e dro a lak e bezhioù unan-hag-"
 "unan el lec'hioù frank ar plankenn c'hoari (dre glikañ war al lec'hioù)."
 
-#: activities/nine_men_morris/nine_men_morris.js:33
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:352
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
+#| "remove it. Pieces of formed mill can not be removed unless no other "
+#| "pieces are left on the board."
+msgctxt "NineMenMorris|"
 msgid ""
 "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
 "remove it. Pieces of formed mill can not be removed unless no other pieces "
@@ -19747,8 +19935,14 @@ msgstr ""
 "diskar a rez anezhañ eus ar c'hoari. Pezhioù ur vilin n'haller ket lemel a-"
 "raok ne chomfe ket pezhioù all war ar plankenn c'hoari."
 
-#: activities/nine_men_morris/nine_men_morris.js:37
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:356
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "After all the pieces are placed, you and Tux will take turns to move "
+#| "them. Click on one of your pieces, and then on an adjacent empty spot to "
+#| "move it there. Green color spots indicates where you can move."
+msgctxt "NineMenMorris|"
 msgid ""
 "After all the pieces are placed, you and Tux will take turns to move them. "
 "Click on one of your pieces, and then on an adjacent empty spot to move it "
@@ -19759,8 +19953,13 @@ msgstr ""
 "goullo stok outañ evit diblasañ anezhañ aze. Al lec'hioù o liv glas-gwer a "
 "ziskouez da belec'h e c'hallez fiñval."
 
-#: activities/nine_men_morris/nine_men_morris.js:41
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:360
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
+#| "moved to any vacant spot on the board."
+msgctxt "NineMenMorris|"
 msgid ""
 "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
 "moved to any vacant spot on the board."
@@ -19768,51 +19967,19 @@ msgstr ""
 "Ma ne chom nemet 3 fezh dit e vez gounezet gante an tu da \"nijal\" evit "
 "bezañ diblaset da ne vern peseurt lec'h frank war ar plankenn c'hoari."
 
-#: activities/nine_men_morris/nine_men_morris.js:45
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:364
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "If you immobilize the computer or leave it with less than 3 pieces, then "
+#| "you win the game."
+msgctxt "NineMenMorris|"
 msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
 "win the game."
 msgstr ""
 "Ma virez ouzh an urzhiataer da fiñval ken, pe ne laoskez nemet nebeutoc'h "
 "eget 3 fezh dezhañ e teu ar maout ganit."
-
-#: activities/nine_men_morris/nine_men_morris.js:262
-#: activities/nine_men_morris/nine_men_morris.js:1108
-msgctxt "nine_men_morris|"
-msgid "Place a piece"
-msgstr "Lak ur pezh"
-
-#: activities/nine_men_morris/nine_men_morris.js:388
-#: activities/nine_men_morris/nine_men_morris.js:1166
-msgctxt "nine_men_morris|"
-msgid "Move a piece"
-msgstr "Diblas ur pezh"
-
-#: activities/nine_men_morris/nine_men_morris.js:940
-msgctxt "nine_men_morris|"
-msgid "Remove a piece"
-msgstr "Lam ur pezh"
-
-#: activities/nine_men_morris/nine_men_morris.js:1143
-msgctxt "nine_men_morris|"
-msgid "Congratulations"
-msgstr "Gourc'hemennoù"
-
-#: activities/nine_men_morris/nine_men_morris.js:1146
-msgctxt "nine_men_morris|"
-msgid "Congratulations Player 1"
-msgstr "Gourc'hemennoù dit, c'hoarier 1"
-
-#: activities/nine_men_morris/nine_men_morris.js:1157
-msgctxt "nine_men_morris|"
-msgid "Congratulations Player 2"
-msgstr "Gourc'hemennoù dit, c'hoarier 2"
-
-#: activities/nine_men_morris/nine_men_morris.js:1160
-msgctxt "nine_men_morris|"
-msgid "Try again"
-msgstr "Klask ober adarre"
 
 #. Activity title
 #: activities/nine_men_morris_2players/ActivityInfo.qml:15
@@ -19880,13 +20047,13 @@ msgid "New note: %1"
 msgstr "Notenn nevez: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:270
+#: activities/note_names/NoteNames.qml:271
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:448
+#: activities/note_names/NoteNames.qml:449
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19896,12 +20063,12 @@ msgstr ""
 "zoken ma n'eo ket bet dibabet kaout ar mouezhioù pe an efedoù-son er "
 "c'hefluniañ pennañ."
 
-#: activities/note_names/NoteNames.qml:449
+#: activities/note_names/NoteNames.qml:450
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Mont kuit"
 
-#: activities/note_names/NoteNames.qml:450
+#: activities/note_names/NoteNames.qml:451
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Kenderc'hel"
@@ -19992,24 +20159,24 @@ msgstr ""
 "mat da dizhout. Da c'houzout pe niver zo da dapout e liveoù kentañ, taol ur "
 "sell er c'hornad a-zehoù en traoñ. El liveoù uheloc'h, dalc'h soñj ennañ"
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:14
+#: activities/numbers-odd-even/NumbersOddEven.qml:15
 msgctxt "NumbersOddEven|"
 msgid "Catch the even numbers."
 msgstr "Tap an niveroù par."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:15
+#: activities/numbers-odd-even/NumbersOddEven.qml:16
 msgctxt "NumbersOddEven|"
 msgid "Catch the odd numbers."
 msgstr "Tap an niveroù ampar."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:42
+#: activities/numbers-odd-even/NumbersOddEven.qml:43
 msgctxt "NumbersOddEven|"
 msgid "This activity teaches about even and odd numbers."
 msgstr ""
 "Deskiñ a ra an obererezh-mañ traoù diwar-benn an niveroù par hag ampar."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:46
-#: activities/numbers-odd-even/NumbersOddEven.qml:56
+#: activities/numbers-odd-even/NumbersOddEven.qml:47
+#: activities/numbers-odd-even/NumbersOddEven.qml:55
 msgctxt "NumbersOddEven|"
 msgid ""
 "Even numbers are numbers which leave a remainder of 0 when divided by 2."
@@ -20021,7 +20188,7 @@ msgctxt "NumbersOddEven|"
 msgid "What is meant by remainder?"
 msgstr "Petra eo nemorant un niver ?"
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:60
+#: activities/numbers-odd-even/NumbersOddEven.qml:59
 msgctxt "NumbersOddEven|"
 msgid ""
 "Odd numbers are numbers which do not leave a remainder of 0 when divided by "
@@ -20030,9 +20197,9 @@ msgstr ""
 "Niveroù ampar zo niveroù gant un nemorant n'eo ket par da 0 pa vezont ranne "
 "dre 2."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:64
-#: activities/numbers-odd-even/NumbersOddEven.qml:68
-#: activities/numbers-odd-even/NumbersOddEven.qml:72
+#: activities/numbers-odd-even/NumbersOddEven.qml:63
+#: activities/numbers-odd-even/NumbersOddEven.qml:67
+#: activities/numbers-odd-even/NumbersOddEven.qml:71
 msgctxt "NumbersOddEven|"
 msgid "Exercise to test your understanding."
 msgstr "Lakaat da gomprenedigezh da bleustriñ."
@@ -22084,114 +22251,6 @@ msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "Dibab an urzhioù"
 
-#: activities/programmingMaze/programmingMaze.js:96
-msgctxt "programmingMaze|"
-msgid "Instruction Area:"
-msgstr "Tachenn-urzhioù :"
-
-#: activities/programmingMaze/programmingMaze.js:97
-msgctxt "programmingMaze|"
-msgid ""
-"There are 3 instructions which you can use to code and lead Tux to the fish:"
-msgstr "Tri urzh a c'hallez implijout da godiñ evit kas Tuks betek ar pesk :"
-
-#: activities/programmingMaze/programmingMaze.js:98
-msgctxt "programmingMaze|"
-msgid ""
-"<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
-"facing."
-msgstr ""
-"<b>1. Mont war-raok :</b> Kas a ra Tuks ur c'hammed war-raok war-zu an hent "
-"dirazañ."
-
-#: activities/programmingMaze/programmingMaze.js:99
-msgctxt "programmingMaze|"
-msgid "<b>2. Turn left:</b> Turns Tux to the left."
-msgstr "<b>2. Treiñ a-gleiz :</b> Treiñ a ra Tuks war an tu kleiz."
-
-#: activities/programmingMaze/programmingMaze.js:100
-msgctxt "programmingMaze|"
-msgid "<b>3. Turn right:</b> Turns Tux to the right."
-msgstr "<b>3. Treiñ a-zehoù :</b> Treiñ a ra Tuks war an tu dehoù."
-
-#: activities/programmingMaze/programmingMaze.js:104
-msgctxt "programmingMaze|"
-msgid "Main Function:"
-msgstr "Arc'hwel pennañ :"
-
-#: activities/programmingMaze/programmingMaze.js:105
-msgctxt "programmingMaze|"
-msgid "The execution of the code starts here."
-msgstr "Amañ e krog ar c'hodiñ."
-
-#: activities/programmingMaze/programmingMaze.js:106
-msgctxt "programmingMaze|"
-msgid ""
-"-Click on any instruction in the <b>instruction area</b> to add it to the "
-"<b>Main Function</b>."
-msgstr ""
-"- Klik war un urzh e-barzh <b>tachenn an urzhioù</b> evit ouzhpennañ anezhañ "
-"d'ar <b>Arc'hwel pennañ</b>."
-
-#: activities/programmingMaze/programmingMaze.js:107
-msgctxt "programmingMaze|"
-msgid ""
-"-The instructions will execute in order until there's none left, or until a "
-"dead-end, or when Tux reaches the fish."
-msgstr ""
-"- An urzhioù a vo heuliet en urzh betek ne chomo hini ebet ken, pe betek un "
-"hent-dall, pe c'hoazh betek ma vo tizhet ar pesk gant Tuks."
-
-#: activities/programmingMaze/programmingMaze.js:114
-msgctxt "programmingMaze|"
-msgid "Procedure:"
-msgstr "Argerzhadur :"
-
-#: activities/programmingMaze/programmingMaze.js:115
-msgctxt "programmingMaze|"
-msgid ""
-"<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
-"the code by calling it where needed</b>."
-msgstr ""
-"<b>Argerzhadur</b> zo ur roll urzhioù adimplijapl a c'hall bezañ <b>implijet "
-"er c'hod dre c'hervel anezhañ pa vez ret</b>."
-
-#: activities/programmingMaze/programmingMaze.js:116
-msgctxt "programmingMaze|"
-msgid ""
-"-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
-"area</b> to add your code, click on the <b>Procedure</b> or <b>Main "
-"Function</b> label."
-msgstr ""
-"- Evit <b>dibab</b> etre an <b>Dachenn argerzhadurel</b> hag an <b>Dachenn "
-"bennañ</b> a-benn ouzhpennañ da god, klik war ar skritellig <b>Argerzhadur</"
-"b> pe <b>Arc'hwel pennañ</b>."
-
-#: activities/programmingMaze/programmingMaze.js:123
-msgctxt "programmingMaze|"
-msgid "Loop:"
-msgstr "Boukl"
-
-#: activities/programmingMaze/programmingMaze.js:124
-msgctxt "programmingMaze|"
-msgid ""
-"<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
-"the number of times defined by the number inside it</b>."
-msgstr ""
-"<b>Boukl</b> a zo un aridennad urzhioù a <b>c'hoarvez en-dro an niver a "
-"wezhioù hervez an niver bet lakaet enni</b>."
-
-#: activities/programmingMaze/programmingMaze.js:125
-msgctxt "programmingMaze|"
-msgid ""
-"-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
-"area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
-"label."
-msgstr ""
-"- Evit <b>dibab</b> etre ar mod <b>Tachenn ar boukl</b> hag ar stumm "
-"<b>Tachenn an Arc'hwel pennañ</b> a-benn ouzhpennañ da god, klik war ar "
-"skritellig <b>Boukl</b> pe <b>Arc'hwel pennañ</b>."
-
 #: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
@@ -22212,6 +22271,177 @@ msgstr "Argerzhadur"
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Boukl"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:542
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Instruction Area:"
+msgctxt "ProgrammingMaze|"
+msgid "Instruction Area:"
+msgstr "Tachenn-urzhioù :"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:543
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "There are 3 instructions which you can use to code and lead Tux to the "
+#| "fish:"
+msgctxt "ProgrammingMaze|"
+msgid ""
+"There are 3 instructions which you can use to code and lead Tux to the fish:"
+msgstr "Tri urzh a c'hallez implijout da godiñ evit kas Tuks betek ar pesk :"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:544
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
+#| "facing."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
+"facing."
+msgstr ""
+"<b>1. Mont war-raok :</b> Kas a ra Tuks ur c'hammed war-raok war-zu an hent "
+"dirazañ."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:545
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "<b>2. Turn left:</b> Turns Tux to the left."
+msgctxt "ProgrammingMaze|"
+msgid "<b>2. Turn left:</b> Turns Tux to the left."
+msgstr "<b>2. Treiñ a-gleiz :</b> Treiñ a ra Tuks war an tu kleiz."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:546
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "<b>3. Turn right:</b> Turns Tux to the right."
+msgctxt "ProgrammingMaze|"
+msgid "<b>3. Turn right:</b> Turns Tux to the right."
+msgstr "<b>3. Treiñ a-zehoù :</b> Treiñ a ra Tuks war an tu dehoù."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:550
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Main Function:"
+msgctxt "ProgrammingMaze|"
+msgid "Main Function:"
+msgstr "Arc'hwel pennañ :"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:551
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "The execution of the code starts here."
+msgctxt "ProgrammingMaze|"
+msgid "The execution of the code starts here."
+msgstr "Amañ e krog ar c'hodiñ."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:552
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-Click on any instruction in the <b>instruction area</b> to add it to the "
+#| "<b>Main Function</b>."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-Click on any instruction in the <b>instruction area</b> to add it to the "
+"<b>Main Function</b>."
+msgstr ""
+"- Klik war un urzh e-barzh <b>tachenn an urzhioù</b> evit ouzhpennañ anezhañ "
+"d'ar <b>Arc'hwel pennañ</b>."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:553
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-The instructions will execute in order until there's none left, or until "
+#| "a dead-end, or when Tux reaches the fish."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-The instructions will execute in order until there's none left, or until a "
+"dead-end, or when Tux reaches the fish."
+msgstr ""
+"- An urzhioù a vo heuliet en urzh betek ne chomo hini ebet ken, pe betek un "
+"hent-dall, pe c'hoazh betek ma vo tizhet ar pesk gant Tuks."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:563
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Procedure:"
+msgctxt "ProgrammingMaze|"
+msgid "Procedure:"
+msgstr "Argerzhadur :"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:564
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "<b>Procedure</b> is a reusable set of instructions which can be <b>used "
+#| "in the code by calling it where needed</b>."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
+"the code by calling it where needed</b>."
+msgstr ""
+"<b>Argerzhadur</b> zo ur roll urzhioù adimplijapl a c'hall bezañ <b>implijet "
+"er c'hod dre c'hervel anezhañ pa vez ret</b>."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:565
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main "
+#| "Function area</b> to add your code, click on the <b>Procedure</b> or "
+#| "<b>Main Function</b> label."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
+"area</b> to add your code, click on the <b>Procedure</b> or <b>Main "
+"Function</b> label."
+msgstr ""
+"- Evit <b>dibab</b> etre an <b>Dachenn argerzhadurel</b> hag an <b>Dachenn "
+"bennañ</b> a-benn ouzhpennañ da god, klik war ar skritellig <b>Argerzhadur</"
+"b> pe <b>Arc'hwel pennañ</b>."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:575
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Loop:"
+msgctxt "ProgrammingMaze|"
+msgid "Loop:"
+msgstr "Boukl"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:576
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
+#| "the number of times defined by the number inside it</b>."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
+"the number of times defined by the number inside it</b>."
+msgstr ""
+"<b>Boukl</b> a zo un aridennad urzhioù a <b>c'hoarvez en-dro an niver a "
+"wezhioù hervez an niver bet lakaet enni</b>."
+
+#: activities/programmingMaze/ProgrammingMaze.qml:577
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
+#| "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</"
+#| "b> label."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
+"area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
+"label."
+msgstr ""
+"- Evit <b>dibab</b> etre ar mod <b>Tachenn ar boukl</b> hag ar stumm "
+"<b>Tachenn an Arc'hwel pennañ</b> a-benn ouzhpennañ da god, klik war ar "
+"skritellig <b>Boukl</b> pe <b>Arc'hwel pennañ</b>."
 
 #: activities/programmingMaze/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -22288,7 +22518,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Mont-tre pe Distro: evit kinnig da respont"
 
-#: activities/railroad/Railroad.qml:125
+#: activities/railroad/Railroad.qml:126
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -22297,7 +22527,7 @@ msgstr ""
 "Sell mat ouzh an tren evit kaout soñj dioutañ a-raok ma echufe amzer ar "
 "munuter ha rikl goude-se an traoù evit sevel un tren heñvel outañ."
 
-#: activities/railroad/Railroad.qml:126
+#: activities/railroad/Railroad.qml:129
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -22513,7 +22743,7 @@ msgstr ""
 "ar gouloù evitañ. Evit gounit eo ret dit lakaat war enaou gouleier an holl "
 "dud e-pad ma vo pep tra o treiñ."
 
-#: activities/renewable_energy/RenewableEnergy.qml:303
+#: activities/renewable_energy/RenewableEnergy.qml:304
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22522,7 +22752,7 @@ msgstr ""
 "Distreiñ a ra Tuks goude un abadenn besketa war e vag. Lak reizhiad an "
 "tredan da dreiñ evit ma vo gouloù gant Tuks er gêr."
 
-#: activities/renewable_energy/RenewableEnergy.qml:305
+#: activities/renewable_energy/RenewableEnergy.qml:307
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22532,7 +22762,7 @@ msgstr ""
 "panelloù fotovoltaek, tourioù avel ha treuzfurmerioù a-benn adloc'hañ ar "
 "reizhiad tredan."
 
-#: activities/renewable_energy/RenewableEnergy.qml:307
+#: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22543,14 +22773,14 @@ msgstr ""
 "afell ar gouloù evitañ. Evit gounit eo ret dit lakaat war enaou gouleier an "
 "holl dud e-pad ma vo pep tra o treiñ."
 
-#: activities/renewable_energy/RenewableEnergy.qml:309
+#: activities/renewable_energy/RenewableEnergy.qml:313
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Desk traoù diwar-benn ur reizhiad tredan diwar ar gremm adnevesadus. "
 "Plijadur dit."
 
-#: activities/renewable_energy/RenewableEnergy.qml:334
+#: activities/renewable_energy/RenewableEnergy.qml:339
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -25436,7 +25666,7 @@ msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Deskiñ"
 
-#: activities/solar_system/SolarSystem.qml:156
+#: activities/solar_system/SolarSystem.qml:157
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -25445,7 +25675,7 @@ msgstr ""
 "Klik war an Heol pe ur blanedenn evit diskuliañ goulennoù. 4 dibab zo gant "
 "pep goulenn. Unan anezhe zo reizh nemetken."
 
-#: activities/solar_system/SolarSystem.qml:157
+#: activities/solar_system/SolarSystem.qml:160
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -25459,7 +25689,7 @@ msgstr ""
 "gwashañ. Klask adarre betek tapout ul live reizhder a 100% en ur heuliañ ar "
 "mucher reizhder pe an titour a ro dit ar respont mat."
 
-#: activities/solar_system/SolarSystem.qml:162
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -25468,7 +25698,7 @@ msgstr ""
 "20 goulenn diazez 'zo gant pep a 4 dibab. Dregantach da gont zo diskouezet "
 "dit gant barrenn ar mont war-raok war ar skramm en traoñ a-zehoù."
 
-#: activities/solar_system/SolarSystem.qml:163
+#: activities/solar_system/SolarSystem.qml:173
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -25481,7 +25711,7 @@ msgstr ""
 "respontet fall outañ.<br>Ne vo ket kinniget dit muioc'h eget 25 goulenn en "
 "holl."
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:176
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -25490,7 +25720,7 @@ msgstr ""
 "Ret eo dit  tapout muioc'h eget 90% evit dont da vezañ ur mailh war "
 "koskoriad an Heol!"
 
-#: activities/solar_system/SolarSystem.qml:339
+#: activities/solar_system/SolarSystem.qml:355
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25500,7 +25730,7 @@ msgstr ""
 "1. Seul <b> belloc'h </b> m'emañ ur blanedenn diouzh an Heol, seul <b> "
 "izeloc'h</b> eo he zemperadur.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:340
+#: activities/solar_system/SolarSystem.qml:356
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25511,7 +25741,7 @@ msgstr ""
 "an Heol</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:343
+#: activities/solar_system/SolarSystem.qml:359
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -25523,12 +25753,12 @@ msgstr ""
 "b>in- <b>M</b>e <b>Y</b>a <b>S</b>kuizh <b>O</b> <b>N</b>ijal.<br><font "
 "color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:345
+#: activities/solar_system/SolarSystem.qml:361
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Titour"
 
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:369
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Sell ouzh koskoriad an Heol"
@@ -25648,13 +25878,21 @@ msgctxt "Controls|"
 msgid "Right Ballast Tank"
 msgstr "Balastr dehoù"
 
-#: activities/submarine/submarine.js:21
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:133
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Move the submarine to the other side of the screen."
+msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "Kas ar splujvag betek penn all ar skramm."
 
-#: activities/submarine/submarine.js:22
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:136
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The leftmost item in the control panel is the engine of the submarine, "
+#| "indicating the current speed of the submarine."
+msgctxt "Submarine|"
 msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
 "indicating the current speed of the submarine."
@@ -25662,13 +25900,21 @@ msgstr ""
 "An tamm a-gleiz-tout er banell lankañ eo keflusker ar splujvag. Diskouez a "
 "ra tizh ar splujvag."
 
-#: activities/submarine/submarine.js:23
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:139
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Increase or decrease the velocity of the submarine using the engine."
+msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr "Kresk pe zigresk tizh ar splujvag en ur implijout ar c'heflusker."
 
-#: activities/submarine/submarine.js:24
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:142
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Press the + button to increase the velocity, or the - button to decrease "
+#| "the velocity."
+msgctxt "Submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
 "velocity."
@@ -25676,18 +25922,29 @@ msgstr ""
 "Pouez war ar bouton + evit kreskiñ an tizh, pe war ar bouton - evit "
 "digreskiñ an tizh."
 
-#: activities/submarine/submarine.js:27
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:149
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "The item next to the engine is the ballast tank."
+msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "An tamm tostañ ouzh ar c'heflusker eo ar balastroù."
 
-#: activities/submarine/submarine.js:28
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:152
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "The ballast tanks are used to float or dive under water."
+msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr "Servijout a ra ar balastroù da chom war-neuñv pe da splujañ."
 
-#: activities/submarine/submarine.js:29
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:155
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "If the ballast tanks are empty, the submarine will float. If the ballast "
+#| "tanks are full of water, the submarine will dive underwater."
+msgctxt "Submarine|"
 msgid ""
 "If the ballast tanks are empty, the submarine will float. If the ballast "
 "tanks are full of water, the submarine will dive underwater."
@@ -25695,8 +25952,14 @@ msgstr ""
 "Gant ballastroù goullo e floto ar splujvag. Gant ballastroù leun a zour e "
 "splujo ar splujvag."
 
-#: activities/submarine/submarine.js:30
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:158
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Turning the upper valve on or off will alternatively allow or stop the "
+#| "water from filling in the ballast tank, thus allowing it to dive "
+#| "underwater."
+msgctxt "Submarine|"
 msgid ""
 "Turning the upper valve on or off will alternatively allow or stop the water "
 "from filling in the ballast tank, thus allowing it to dive underwater."
@@ -25704,8 +25967,14 @@ msgstr ""
 "Digeriñ pe serriñ ar c'hlaped uhelañ a laosko pe a harzho an dour da leuniañ "
 "ar ballastroù, evit lakaat evel-se ar splujvag da splujañ."
 
-#: activities/submarine/submarine.js:31
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:161
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Turning the lower valve on or off will alternatively allow or stop the "
+#| "water from flushing out the ballast tank, thus allowing it to float on "
+#| "the surface of the water."
+msgctxt "Submarine|"
 msgid ""
 "Turning the lower valve on or off will alternatively allow or stop the water "
 "from flushing out the ballast tank, thus allowing it to float on the surface "
@@ -25714,16 +25983,26 @@ msgstr ""
 "Digeriñ pe serriñ ar c'hlaped izelañ a laosko pe a harzho an dour da guitaat "
 "ar ballastroù, evit lakaat evel-se ar splujvag da chom war-neuñv."
 
-#: activities/submarine/submarine.js:34
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:168
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The rightmost item in the control panel controls the diving planes of the "
+#| "submarine"
+msgctxt "Submarine|"
 msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
-"submarine"
+"submarine."
 msgstr ""
 "An tamm a-zehoù-tout er banell lankañ a gontroll barrenn-splujañ ar splujvag."
 
-#: activities/submarine/submarine.js:35
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:171
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The diving planes in a submarine are used to control the depth of the "
+#| "submarine accurately once it is underwater."
+msgctxt "Submarine|"
 msgid ""
 "The diving planes in a submarine are used to control the depth of the "
 "submarine accurately once it is underwater."
@@ -25731,8 +26010,13 @@ msgstr ""
 "Ar varrenn-splujañ en ur splujvag a implijer da gontrolliñ resis donder ur "
 "splujvag ur wech dindanvor."
 
-#: activities/submarine/submarine.js:36
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:174
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Once the submarine is moving underwater, increasing or decreasing the "
+#| "angle of the planes will increase and decrease the depth of the submarine."
+msgctxt "Submarine|"
 msgid ""
 "Once the submarine is moving underwater, increasing or decreasing the angle "
 "of the planes will increase and decrease the depth of the submarine."
@@ -25740,8 +26024,13 @@ msgstr ""
 "Ur wech m'emañ ar splujvag o vont dindanvor e vo kresket pe digresket donder "
 "ar splujvag en ur greskiñ pe digreskiñ korn ar barrenn-splujañ."
 
-#: activities/submarine/submarine.js:37
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:177
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The + button will increase the depth of the submarine, while the - button "
+#| "will decrease the depth of the submarine."
+msgctxt "Submarine|"
 msgid ""
 "The + button will increase the depth of the submarine, while the - button "
 "will decrease the depth of the submarine."
@@ -25749,13 +26038,19 @@ msgstr ""
 "Ar bouton + a gresko donder ar splujvag, padal ar bouton - a zigresko donder "
 "ar splujvag."
 
-#: activities/submarine/submarine.js:38
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:180
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Grab the crown to open the gate."
+msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "Tap krog er gurunenn evit digeriñ ar skluj."
 
-#: activities/submarine/submarine.js:39
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:183
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Check out the help menu for the keyboard controls."
+msgctxt "Submarine|"
 msgid "Check out the help menu for the keyboard controls."
 msgstr ""
 "Taol ur sell war ar prenestr sikour evit anavezout stokelloù lankañ ar "
@@ -26736,7 +27031,7 @@ msgstr ""
 "Dispar, echuet eo kelc'hiad an dour ganit. Kendalc'h gant da c'hoari ma fell "
 "dit."
 
-#: activities/watercycle/Watercycle.qml:140
+#: activities/watercycle/Watercycle.qml:141
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26747,7 +27042,7 @@ msgstr ""
 "douar betek an oabl hag an distro. Tommder an heol a bourchas ar gremm da "
 "lakaat an dour da aezhenniñ diouzh tachadoù dour evel ar morioù."
 
-#: activities/watercycle/Watercycle.qml:143
+#: activities/watercycle/Watercycle.qml:144
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26758,7 +27053,7 @@ msgstr ""
 "sevel a ra takennoùigoù dour er c'houmoul. Pa gej ar c'houmoul ouzh aer yen "
 "a-us d'an douare ra dour o kouezhañ e stumm glav."
 
-#: activities/watercycle/Watercycle.qml:146
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26769,7 +27064,7 @@ msgstr ""
 "dour-dindandouar. Met an darn vrasañ anezhañ a red war c'horre an douar, ul "
 "lod o vont betek ar morioù dre ar stêrioù."
 
-#: activities/watercycle/Watercycle.qml:148
+#: activities/watercycle/Watercycle.qml:150
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -27854,25 +28149,45 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "Prest on"
 
-#: core/Tutorial.qml:140
+#: core/Tutorial.qml:139
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "Diaraok"
 
-#: core/Tutorial.qml:158
+#: core/Tutorial.qml:157
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "War-lerc'h"
 
-#: core/Tutorial.qml:175
+#: core/Tutorial.qml:174
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "Tremen hepti"
 
-#: core/Tutorial.qml:175
+#: core/Tutorial.qml:174
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Kregiñ"
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid "Grammatical analysis"
+#~ msgstr "Dielfennañ yezhadurel"
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid "Learn to identify grammatical classes."
+#~ msgstr "Desk anavezout ar rummadoù yezhadurel."
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid ""
+#~ "Select a grammatical class from the list, then select the box under a "
+#~ "word and assign it the class."
+#~ msgstr ""
+#~ "Dibab ur rummad yezhadurel er roll, dibab goude ar voest dindan ur ger ha "
+#~ "kinnig aze ar rummad."
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid "Leave the box blank if no class matches."
+#~ msgstr "Laosk goullo ar voest ma n'eus rummad reizh ebet"
 
 #, fuzzy
 #~| msgctxt "BinaryBulb|"

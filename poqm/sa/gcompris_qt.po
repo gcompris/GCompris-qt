@@ -2680,13 +2680,13 @@ msgstr ""
 "वामदक्षिणबाणकीलौ एकस्मिन् समये नुदन्तु, कन्दुकं ऋजुरेखायां गन्तुं कर्तुं । स्पर्शपटले भवन्तः एकस्मिन् "
 "समये हस्तद्वयं स्पृशितुं अर्हन्ति ।"
 
-#: activities/ballcatch/Ballcatch.qml:228
+#: activities/ballcatch/Ballcatch.qml:227
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr "एकस्मिन् समये हस्तद्वयं ट्याप् कुर्वन्तु, कन्दुकं ऋजुरेखायां गन्तुं कर्तुं।"
 
-#: activities/ballcatch/Ballcatch.qml:230
+#: activities/ballcatch/Ballcatch.qml:233
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2811,13 +2811,23 @@ msgstr ""
 "दत्तस्य दशमलवसङ्ख्यायाः द्विचक्रीयस्य प्रतिनिधित्वार्थं दक्षिणबल्ब्स् चालू कुर्वन्तु । यदा भवता "
 "तत् प्राप्तं तदा OK नुदन्तु ।"
 
-#: activities/binary_bulb/binary_bulb.js:20
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:84
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "This activity teaches how to convert decimal numbers to binary numbers."
+msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr "एषा क्रिया दशमलवसङ्ख्याः द्विचक्रीयसङ्ख्यासु कथं परिवर्तयितव्याः इति शिक्षयति ।"
 
-#: activities/binary_bulb/binary_bulb.js:24
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:88
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Computers use transistors to count and transistors have only two states, "
+#| "0 and 1. Mathematically, these states are represented by 0 and 1, which "
+#| "makes up the binary system of numeration."
+msgctxt "BinaryBulb|"
 msgid ""
 "Computers use transistors to count and transistors have only two states, 0 "
 "and 1. Mathematically, these states are represented by 0 and 1, which makes "
@@ -2827,13 +2837,21 @@ msgstr ""
 "0 तथा 1. गणितीयदृष्ट्या एताः अवस्थाः 0 तथा 1 इत्यनेन प्रतिनिधिताः भवन्ति, येन संख्यायाः "
 "द्विचक्रीयप्रणाली भवति"
 
-#: activities/binary_bulb/binary_bulb.js:28
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:92
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
+msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr "क्रियाकलापस्य मध्ये 0 तथा 1 बल्बद्वारा अनुकरणं भवति, चालू वा निष्क्रियं वा भवति ।"
 
-#: activities/binary_bulb/binary_bulb.js:32
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:96
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Binary system uses these numbers very efficiently, allowing to count from "
+#| "0 to 255 with 8 bits only."
+msgctxt "BinaryBulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
 "to 255 with 8 bits only."
@@ -2841,8 +2859,15 @@ msgstr ""
 "द्विचक्रीयप्रणाली एतान् सङ्ख्यान् अतीव कुशलतया उपयुङ्क्ते, केवलं ८ बिट्-सहितं ० तः २५५ पर्यन्तं "
 "गणनां कर्तुं शक्नोति ।"
 
-#: activities/binary_bulb/binary_bulb.js:36
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:100
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Each bit adds a progressive value, corresponding to the powers of 2, "
+#| "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → "
+#| "2²=4 , bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit "
+#| "8 → 2⁷=128."
+msgctxt "BinaryBulb|"
 msgid ""
 "Each bit adds a progressive value, corresponding to the powers of 2, "
 "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → 2²=4 , "
@@ -2853,13 +2878,21 @@ msgstr ""
 "वामतः आरोहति: बिट् 1 → 20=1 , बिट् 2 → 21=2 , बिट् 3 → 22=4 , बिट् 4 → 23=8 , "
 "बिट् 5 → २४=१६ , बिट् ६ → २५=३२ , बिट् ७ → २६=६४ , बिट् ८ → २७=१२८ ।"
 
-#: activities/binary_bulb/binary_bulb.js:40
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:104
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
+msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr "दशमलवं 5 द्विचक्रीयमूल्ये परिवर्तयितुं 1 तथा 4 योजिताः भवन्ति ।"
 
-#: activities/binary_bulb/binary_bulb.js:44
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:108
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 "
+#| "is equal to binary 101."
+msgctxt "BinaryBulb|"
 msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
 "equal to binary 101."
@@ -2867,12 +2900,15 @@ msgstr ""
 "तेषां तत्सम्बद्धाः बिट् 1 इति सेट् भवन्ति, अन्ये 0 इति सेट् भवन्ति दशमलवः 5 द्विचक्रीय 101 "
 "इत्यस्य बराबरः भवति ।"
 
-#: activities/binary_bulb/binary_bulb.js:48
-msgctxt "binary_bulb|"
+#: activities/binary_bulb/BinaryBulb.qml:112
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid "This image will help you to compute bits' value."
+msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "एतत् चित्रं भवन्तं बिट्-मूल्यं गणयितुं साहाय्यं करिष्यति ।"
 
-#: activities/binary_bulb/BinaryBulb.qml:126
+#: activities/binary_bulb/BinaryBulb.qml:160
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3524,7 +3560,7 @@ msgstr ""
 "नहरस्य तालस्य प्रभारी त्वं असि। द्वाराणि तालानि च सम्यक् क्रमेण उद्घाटयन्तु, येन टक्सः "
 "द्वारेषु उभयदिशि गन्तुं शक्नोति ।"
 
-#: activities/canal_lock/CanalLock.qml:73
+#: activities/canal_lock/CanalLock.qml:74
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3533,7 +3569,7 @@ msgstr ""
 "भवतः लक्ष्यं तुक्सं नहरतालस्य पारं नेतुम् अस्ति यत् काष्ठकाष्ठानि प्राप्तुं शक्यते, उपलब्धानां "
 "विभिन्नप्रकारस्य जलकुण्डलानां उपयोगेन ।"
 
-#: activities/canal_lock/CanalLock.qml:75
+#: activities/canal_lock/CanalLock.qml:77
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3543,7 +3579,7 @@ msgstr ""
 "लम्बवत् वर्णयुक्ताः दण्डाः जलकुण्डलानां प्रतिनिधित्वं कुर्वन्ति, येषां उपरि क्लिक् कृत्वा संचालितुं "
 "शक्यते । समानप्रकारस्य तालद्वयं युगपत् चालयितुं न शक्यते ।"
 
-#: activities/canal_lock/CanalLock.qml:77
+#: activities/canal_lock/CanalLock.qml:80
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -14218,60 +14254,56 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
 msgstr "पृष्ठस्थानम् : पूर्वशब्दं चिनोतु"
 
-#: activities/grammar_analysis/grammar_analysis.js:37
-msgctxt "grammar_analysis|"
-msgid "Grammatical analysis"
-msgstr "व्याकरणविश्लेषणम्"
-
-#: activities/grammar_analysis/grammar_analysis.js:38
-#: activities/grammar_analysis/grammar_analysis.js:48
-msgctxt "grammar_analysis|"
-msgid "Learn to identify grammatical classes."
-msgstr "व्याकरणिकवर्गाणां परिचयं कर्तुं शिक्षन्तु।"
-
-#: activities/grammar_analysis/grammar_analysis.js:39
-msgctxt "grammar_analysis|"
-msgid "Find all the words corresponding to the requested grammatical classes."
-msgstr "अनुरोधितव्याकरणवर्गाणां अनुरूपाः सर्वे शब्दाः अन्वेष्टुम्।"
-
-#: activities/grammar_analysis/grammar_analysis.js:40
-msgctxt "grammar_analysis|"
-msgid ""
-"Select a grammatical class from the list, then select the box under a word "
-"and assign it the class."
-msgstr "सूचीतः व्याकरणीयवर्गं चिनोतु, ततः शब्दस्य अधः पेटीं चित्वा तस्मै वर्गं नियुक्तं कुर्वन्तु ।"
-
-#: activities/grammar_analysis/grammar_analysis.js:41
-msgctxt "grammar_analysis|"
-msgid "Leave the box blank if no class matches."
-msgstr "यदि कोऽपि वर्गः न मेलति तर्हि पेटी रिक्तं त्यजन्तु ।"
-
-#: activities/grammar_analysis/grammar_analysis.js:47
-msgctxt "grammar_analysis|"
-msgid "Grammatical classes"
-msgstr "व्याकरणिकवर्गाः"
-
-#: activities/grammar_analysis/grammar_analysis.js:49
-msgctxt "grammar_analysis|"
-msgid "Find all the words corresponding to the requested grammatical class."
-msgstr "अनुरोधितव्याकरणवर्गस्य अनुरूपाः सर्वे शब्दाः अन्वेष्टुम्।"
-
-#: activities/grammar_analysis/grammar_analysis.js:50
-msgctxt "grammar_analysis|"
-msgid ""
-"Select the grammatical class from the list, then select the box under a word "
-"and assign it the class."
-msgstr "सूचीतः व्याकरणीयवर्गं चिनोतु, ततः शब्दस्य अधः पेटी चित्वा तस्मै वर्गं नियुक्तं कुर्वन्तु ।"
-
-#: activities/grammar_analysis/grammar_analysis.js:51
-msgctxt "grammar_analysis|"
-msgid "Leave the box blank if the class doesn't match."
-msgstr "यदि वर्गः न मेलति तर्हि पेटी रिक्तं त्यजन्तु।"
-
-#: activities/grammar_analysis/grammar_analysis.js:421
+#: activities/grammar_analysis/grammar_analysis.js:398
 msgctxt "grammar_analysis|"
 msgid "Empty"
 msgstr "रिक्तम्‌"
+
+#: activities/grammar_analysis/GrammarAnalysis.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Grammatical analysis"
+msgctxt "GrammarAnalysis|"
+msgid "Grammatical analysis"
+msgstr "व्याकरणविश्लेषणम्"
+
+#: activities/grammar_analysis/GrammarAnalysis.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn to identify grammatical classes."
+msgctxt "GrammarAnalysis|"
+msgid "Learn to identify grammatical classes."
+msgstr "व्याकरणिकवर्गाणां परिचयं कर्तुं शिक्षन्तु।"
+
+#: activities/grammar_analysis/GrammarAnalysis.qml:28
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid ""
+#| "Find all the words corresponding to the requested grammatical classes."
+msgctxt "GrammarAnalysis|"
+msgid "Find all the words corresponding to the requested grammatical classes."
+msgstr "अनुरोधितव्याकरणवर्गाणां अनुरूपाः सर्वे शब्दाः अन्वेष्टुम्।"
+
+#: activities/grammar_analysis/GrammarAnalysis.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select a grammatical class from the list, then select the box under a "
+#| "word and assign it the class."
+msgctxt "GrammarAnalysis|"
+msgid ""
+"Select a grammatical class from the list, then select the box under a word "
+"and assign it the class."
+msgstr ""
+"सूचीतः व्याकरणिकं वर्गं चिनोतु, ततः शब्दस्य अधः पेटीं चित्वा तस्मै वर्गं नियुक्तं कुर्वन्तु ।"
+
+#: activities/grammar_analysis/GrammarAnalysis.qml:30
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Leave the box blank if no class matches."
+msgctxt "GrammarAnalysis|"
+msgid "Leave the box blank if no class matches."
+msgstr "यदि कोऽपि वर्गः न मेलति तर्हि पेटी रिक्तं त्यजन्तु ।"
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
@@ -14294,6 +14326,50 @@ msgstr "सूचीतः व्याकरणीयवर्गं चिन�
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
+msgid "Leave the box blank if the class doesn't match."
+msgstr "यदि वर्गः न मेलति तर्हि पेटी रिक्तं त्यजन्तु।"
+
+#: activities/grammar_classes/GrammarClasses.qml:15
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Grammatical classes"
+msgctxt "GrammarClasses|"
+msgid "Grammatical classes"
+msgstr "व्याकरणिकवर्गाः"
+
+#: activities/grammar_classes/GrammarClasses.qml:16
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn to identify grammatical classes."
+msgctxt "GrammarClasses|"
+msgid "Learn to identify grammatical classes."
+msgstr "व्याकरणिकवर्गाणां परिचयं कर्तुं शिक्षन्तु।"
+
+#: activities/grammar_classes/GrammarClasses.qml:17
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Find all the words corresponding to the requested grammatical class."
+msgctxt "GrammarClasses|"
+msgid "Find all the words corresponding to the requested grammatical class."
+msgstr "अनुरोधितव्याकरणवर्गस्य अनुरूपाः सर्वे शब्दाः अन्वेष्टुम्।"
+
+#: activities/grammar_classes/GrammarClasses.qml:18
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid ""
+#| "Select the grammatical class from the list, then select the box under a "
+#| "word and assign it the class."
+msgctxt "GrammarClasses|"
+msgid ""
+"Select the grammatical class from the list, then select the box under a word "
+"and assign it the class."
+msgstr "सूचीतः व्याकरणीयवर्गं चिनोतु, ततः शब्दस्य अधः पेटी चित्वा तस्मै वर्गं नियुक्तं कुर्वन्तु ।"
+
+#: activities/grammar_classes/GrammarClasses.qml:19
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Leave the box blank if the class doesn't match."
+msgctxt "GrammarClasses|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr "यदि वर्गः न मेलति तर्हि पेटी रिक्तं त्यजन्तु।"
 
@@ -14390,7 +14466,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "वामः दक्षिणः च बाणाः : अन्तरिक्षयानं चालयन्तु"
 
-#: activities/gravity/Gravity.qml:219
+#: activities/gravity/Gravity.qml:220
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15830,8 +15906,13 @@ msgstr ""
 "चयनितं भागं च रिक्तक्षेत्रे कर्षयन्तु । एतानि पदानि पुनः पुनः कुर्वन्तु यावत् पातितपट्टिकानां "
 "संख्या प्रदर्शितदशमलवसङ्ख्यायाः अनुरूपं न भवति । ततः भवतः उत्तरं प्रमाणीकर्तुं OK बटन् नुदन्तु ।"
 
-#: activities/learn_decimals/learn_decimals.js:33
-msgctxt "learn_decimals|"
+#: activities/learn_decimals/Learn_decimals.qml:30
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "A decimal number is displayed. The bar with the arrow represents a full "
+#| "unit, and each square in it represents one tenth of this unit."
+msgctxt "Learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
 "unit, and each square in it represents one tenth of this unit."
@@ -15839,8 +15920,15 @@ msgstr ""
 "दशमलवसङ्ख्या प्रदर्शिता भवति । बाणयुक्तः दण्डः पूर्णं एककं प्रतिनिधियति, तस्मिन् प्रत्येकं "
 "वर्गः अस्य एककस्य दशमांशं प्रतिनिधियति ।"
 
-#: activities/learn_decimals/learn_decimals.js:37
-msgctxt "learn_decimals|"
+#: activities/learn_decimals/Learn_decimals.qml:34
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Drag the arrow to select a part of the bar, and drag the selected part of "
+#| "the bar to the empty area. Repeat these steps until the number of dropped "
+#| "bars corresponds to the displayed decimal number. Then click on the OK "
+#| "button to validate your answer."
+msgctxt "Learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
 "the bar to the empty area. Repeat these steps until the number of dropped "
@@ -15851,100 +15939,31 @@ msgstr ""
 "पदानि पुनः पुनः कुर्वन्तु यावत् पातितपट्टिकानां संख्या प्रदर्शितदशमलवसङ्ख्यायाः अनुरूपं न भवति "
 "। ततः भवतः उत्तरं प्रमाणीकर्तुं OK बटन् नुदन्तु ।"
 
-#: activities/learn_decimals/learn_decimals.js:44
-msgctxt "learn_decimals|"
-msgid ""
-"A subtraction with two decimal numbers is displayed. Below it, the first "
-"number from the subtraction is represented with bars. One bar represents a "
-"full unit, and each square in it represents one tenth of this unit."
-msgstr ""
-"दशमलवसङ्ख्याद्वयेन सह घटनं प्रदर्शितं भवति । तस्य अधः घटावात् प्रथमा संख्या शलाकाभिः "
-"प्रतिपादिता भवति । एकः दण्डः पूर्णं एककं प्रतिनिधियति, तस्मिन् प्रत्येकं वर्गः अस्य एककस्य "
-"दशमांशं प्रतिनिधियति ।"
-
-#: activities/learn_decimals/learn_decimals.js:48
-msgctxt "learn_decimals|"
-msgid ""
-"Click on the squares to subtract them and display the result of the "
-"operation, and click on the OK button to validate your answer."
-msgstr ""
-"वर्गान् हृत्य क्रियायाः परिणामं प्रदर्शयितुं वर्गान् नुदन्तु, भवतः उत्तरं प्रमाणीकर्तुं OK बटन् "
-"नुदन्तु ।"
-
-#: activities/learn_decimals/learn_decimals.js:52
-#: activities/learn_decimals/learn_decimals.js:67
-msgctxt "learn_decimals|"
-msgid ""
-"If the answer is correct, type the corresponding result, and click on the OK "
-"button to validate your answer."
-msgstr ""
-"यदि उत्तरं सम्यक् अस्ति तर्हि तत्सम्बद्धं परिणामं टङ्कयित्वा, भवतः उत्तरं प्रमाणीकर्तुं OK बटन् "
-"नुदन्तु ।"
-
-#: activities/learn_decimals/learn_decimals.js:59
-msgctxt "learn_decimals|"
-msgid ""
-"An addition with two decimal numbers is displayed. The bar with the arrow "
-"represents a full unit, and each square in it represents one tenth of this "
-"unit."
-msgstr ""
-"दशमलवसङ्ख्याद्वययुक्तं योजनं प्रदर्शितं भवति । बाणयुक्तः दण्डः पूर्णं एककं प्रतिनिधियति, तस्मिन् "
-"प्रत्येकं वर्गः अस्य एककस्य दशमांशं प्रतिनिधियति ।"
-
-#: activities/learn_decimals/learn_decimals.js:63
-msgctxt "learn_decimals|"
-msgid ""
-"Drag the arrow to select a part of the bar, and drag the selected part of "
-"the bar to the empty area. Repeat these steps until the number of dropped "
-"bars corresponds to the result of the addition, and click on the OK button "
-"to validate your answer."
-msgstr ""
-"पट्टिकायाः भागं चिन्वितुं बाणं कर्षयन्तु, पट्टिकायाः चयनितं भागं रिक्तक्षेत्रे कर्षयन्तु । एतानि "
-"पदानि पुनः पुनः कुर्वन्तु यावत् पातितपट्टिकानां संख्या योजनस्य परिणामेण सह न सङ्गच्छते, अपि "
-"च भवतः उत्तरं प्रमाणीकर्तुं OK बटन् नुदन्तु ।"
-
-#: activities/learn_decimals/learn_decimals.js:74
-msgctxt "learn_decimals|"
-msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
-msgstr "परिमाणं प्रार्थ्यते। बाणः १० नारङ्गपर्यन्तं चयनं कर्तुं शक्नोति ।"
-
-#: activities/learn_decimals/learn_decimals.js:78
-msgctxt "learn_decimals|"
-msgid ""
-"Drag the arrow to select a number of oranges, and drag the selected oranges "
-"to the empty area. Repeat these steps until the number of oranges "
-"corresponds to the requested quantity. Then click on the OK button to "
-"validate your answer."
-msgstr ""
-"संतराणां संख्यां चिन्वितुं बाणं कर्षयन्तु, चयनितानि नारङ्गाः रिक्तक्षेत्रे कर्षयन्तु । एतानि "
-"पदानि पुनः पुनः कुर्वन्तु यावत् संतराणां संख्या याचितमात्रायाः अनुरूपं न भवति । ततः भवतः "
-"उत्तरं प्रमाणीकर्तुं OK बटन् नुदन्तु ।"
-
-#: activities/learn_decimals/Learn_decimals.qml:142
+#: activities/learn_decimals/Learn_decimals.qml:150
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "संख्यां प्रदर्शयतु: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:143
+#: activities/learn_decimals/Learn_decimals.qml:151
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "परिणामं प्रदर्शयतु: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:144
+#: activities/learn_decimals/Learn_decimals.qml:152
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "परिणामं प्रदर्शयतु: %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:145
+#: activities/learn_decimals/Learn_decimals.qml:153
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "परिमाणं प्रतिनिधियन्तु: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:602
+#: activities/learn_decimals/Learn_decimals.qml:610
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -16011,6 +16030,55 @@ msgctxt "ActivityInfo|"
 msgid "Numbers: type the result"
 msgstr "संख्याः : परिणामं टङ्कयन्तु"
 
+#: activities/learn_decimals_additions/Learn_decimals_additions.qml:16
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "An addition with two decimal numbers is displayed. The bar with the arrow "
+#| "represents a full unit, and each square in it represents one tenth of "
+#| "this unit."
+msgctxt "Learn_decimals_additions|"
+msgid ""
+"An addition with two decimal numbers is displayed. The bar with the arrow "
+"represents a full unit, and each square in it represents one tenth of this "
+"unit."
+msgstr ""
+"दशमलवसङ्ख्याद्वययुक्तं योजनं प्रदर्शितं भवति । बाणयुक्तः दण्डः पूर्णं एककं प्रतिनिधियति, तस्मिन् "
+"प्रत्येकं वर्गः अस्य एककस्य दशमांशं प्रतिनिधियति ।"
+
+#: activities/learn_decimals_additions/Learn_decimals_additions.qml:20
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Drag the arrow to select a part of the bar, and drag the selected part of "
+#| "the bar to the empty area. Repeat these steps until the number of dropped "
+#| "bars corresponds to the result of the addition, and click on the OK "
+#| "button to validate your answer."
+msgctxt "Learn_decimals_additions|"
+msgid ""
+"Drag the arrow to select a part of the bar, and drag the selected part of "
+"the bar to the empty area. Repeat these steps until the number of dropped "
+"bars corresponds to the result of the addition, and click on the OK button "
+"to validate your answer."
+msgstr ""
+"पट्टिकायाः भागं चिन्वितुं बाणं कर्षयन्तु, पट्टिकायाः चयनितं भागं रिक्तक्षेत्रे कर्षयन्तु । एतानि "
+"पदानि पुनः पुनः कुर्वन्तु यावत् पातितपट्टिकानां संख्या योजनस्य परिणामेण सह न सङ्गच्छते, अपि "
+"च भवतः उत्तरं प्रमाणीकर्तुं OK बटन् नुदन्तु ।"
+
+#: activities/learn_decimals_additions/Learn_decimals_additions.qml:24
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "If the answer is correct, type the corresponding result, and click on the "
+#| "OK button to validate your answer."
+msgctxt "Learn_decimals_additions|"
+msgid ""
+"If the answer is correct, type the corresponding result, and click on the OK "
+"button to validate your answer."
+msgstr ""
+"यदि उत्तरं सम्यक् अस्ति तर्हि तत्सम्बद्धं परिणामं टङ्कयित्वा, भवतः उत्तरं प्रमाणीकर्तुं OK बटन् "
+"नुदन्तु ।"
+
 #: activities/learn_decimals_additions/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Add decimal numbers up to 1."
@@ -16059,6 +16127,51 @@ msgstr ""
 "दशमलवसङ्ख्याद्वयेन सह घटनं प्रदर्शितं भवति । घटावात् प्रथमा संख्या शलाकाभिः प्रतिपादिता "
 "भवति । प्रत्येकं पट्टिका एकं एककं प्रतिनिधियति, दण्डे प्रत्येकं वर्गः अस्य एककस्य दशमांशं "
 "प्रतिनिधियति । द्वितीयसङ्ख्यां हृत्वा क्रियायाः परिणामं प्रतिनिधितुं वर्गेषु क्लिक् कुर्वन्तु"
+
+#: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:16
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "A subtraction with two decimal numbers is displayed. Below it, the first "
+#| "number from the subtraction is represented with bars. One bar represents "
+#| "a full unit, and each square in it represents one tenth of this unit."
+msgctxt "Learn_decimals_subtractions|"
+msgid ""
+"A subtraction with two decimal numbers is displayed. Below it, the first "
+"number from the subtraction is represented with bars. One bar represents a "
+"full unit, and each square in it represents one tenth of this unit."
+msgstr ""
+"दशमलवसङ्ख्याद्वयेन सह घटनं प्रदर्शितं भवति । तस्य अधः घटावात् प्रथमा संख्या शलाकाभिः "
+"प्रतिपादिता भवति । एकः दण्डः पूर्णं एककं प्रतिनिधियति, तस्मिन् प्रत्येकं वर्गः अस्य एककस्य "
+"दशमांशं प्रतिनिधियति ।"
+
+#: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:20
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Click on the squares to subtract them and display the result of the "
+#| "operation, and click on the OK button to validate your answer."
+msgctxt "Learn_decimals_subtractions|"
+msgid ""
+"Click on the squares to subtract them and display the result of the "
+"operation, and click on the OK button to validate your answer."
+msgstr ""
+"वर्गान् हृत्य क्रियायाः परिणामं प्रदर्शयितुं वर्गान् नुदन्तु, भवतः उत्तरं प्रमाणीकर्तुं OK बटन् "
+"नुदन्तु ।"
+
+#: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:24
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "If the answer is correct, type the corresponding result, and click on the "
+#| "OK button to validate your answer."
+msgctxt "Learn_decimals_subtractions|"
+msgid ""
+"If the answer is correct, type the corresponding result, and click on the OK "
+"button to validate your answer."
+msgstr ""
+"यदि उत्तरं सम्यक् अस्ति तर्हि तत्सम्बद्धं परिणामं टङ्कयित्वा, भवतः उत्तरं प्रमाणीकर्तुं OK बटन् "
+"नुदन्तु ।"
 
 #: activities/learn_decimals_subtractions/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -16216,6 +16329,34 @@ msgstr ""
 "एकं परिमाणं प्रार्थ्यते। संतराणां संख्यां चिन्वितुं बाणं कर्षयन्तु, चयनितानि नारङ्गाः रिक्तक्षेत्रे "
 "कर्षयन्तु । एतानि पदानि पुनः पुनः कुर्वन्तु यावत् पातितानां संतराणां संख्या अनुरोधितमात्रायाः "
 "अनुरूपं न भवति । ततः भवतः उत्तरं प्रमाणीकर्तुं OK बटन् नुदन्तु ।"
+
+#: activities/learn_quantities/Learn_quantities.qml:16
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "A quantity is requested. The arrow allows to select up to 10 oranges."
+msgctxt "Learn_quantities|"
+msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
+msgstr "परिमाणं प्रार्थ्यते। बाणः १० नारङ्गपर्यन्तं चयनं कर्तुं शक्नोति ।"
+
+#: activities/learn_quantities/Learn_quantities.qml:20
+#, fuzzy
+#| msgctxt "learn_decimals|"
+#| msgid ""
+#| "Drag the arrow to select a number of oranges, and drag the selected "
+#| "oranges to the empty area. Repeat these steps until the number of oranges "
+#| "corresponds to the requested quantity. Then click on the OK button to "
+#| "validate your answer."
+msgctxt "Learn_quantities|"
+msgid ""
+"Drag the arrow to select a number of oranges, and drag the selected oranges "
+"to the empty area. Repeat these steps until the number of oranges "
+"corresponds to the requested quantity. Then click on the OK button to "
+"validate your answer."
+msgstr ""
+"संतराणां संख्यां चिन्वितुं बाणं कर्षयन्तु, चयनितानि नारङ्गाः रिक्तक्षेत्रे कर्षयन्तु । एतानि "
+"पदानि पुनः पुनः कुर्वन्तु यावत् संतराणां संख्या याचितमात्रायाः अनुरूपं न भवति । ततः भवतः "
+"उत्तरं प्रमाणीकर्तुं OK बटन् नुदन्तु ।"
 
 #: activities/learn_quantities/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -18740,7 +18881,7 @@ msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr "metalpaint.wav - पुनः मिश्रितं कृत्वा सुवर्णस्य खण्डस्य संग्रहणे प्रयोगः भवति"
 
-#: activities/mining/Mining.qml:442
+#: activities/mining/Mining.qml:447
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -18754,22 +18895,22 @@ msgstr ""
 "तर्हि कर्सरं स्पार्क्ल् इत्यत्र दर्शयन्तु ततः दक्षिणक्षेत्रे एकां अङ्गुलीं वा केन्द्रे द्वौ अङ्गुलौ वा "
 "कर्षयन्तु । स्पर्शक्षेत्रे द्वौ अङ्गुलौ स्फुरणात् दूरं कर्षन्तु, एकैकं दिशि ।"
 
-#: activities/mining/Mining.qml:458
+#: activities/mining/Mining.qml:463
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "परिपूर्णं भवन्तः जूम कुर्वन्ति। यावत् भवन्तः नगेट् न पश्यन्ति तावत् निरन्तरं कुर्वन्तु।"
 
-#: activities/mining/Mining.qml:466
+#: activities/mining/Mining.qml:471
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "हुम्, सावधानं कुरु, त्वं स्पार्क्ल् इत्यस्मात् बहु दूरं जूमं करोषि।"
 
-#: activities/mining/Mining.qml:474
+#: activities/mining/Mining.qml:479
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "इदानीं भवन्तः nugget पश्यन्ति, तत् ग्रहीतुं तस्मिन् क्लिक् कुर्वन्तु ।"
 
-#: activities/mining/Mining.qml:482
+#: activities/mining/Mining.qml:487
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -18778,17 +18919,17 @@ msgstr ""
 "हुम्, त्वं तत् द्रष्टुं नगेट् इत्यस्मात् अतिदूरे असि। अनजूम् ततः पुनः स्पार्क्ल् इत्यस्मात् यथाशक्ति "
 "समीपे जूम कुर्वन्तु ।"
 
-#: activities/mining/Mining.qml:490
+#: activities/mining/Mining.qml:495
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "अधुना अनजूम् कृत्वा अन्यं स्पार्क्ल् अन्वेष्टुं प्रयतध्वम् ।"
 
-#: activities/mining/Mining.qml:498
+#: activities/mining/Mining.qml:503
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "यावत् भवन्तः स्पार्क्ल् न पश्यन्ति तावत् अनजूम् कुर्वन्तु।"
 
-#: activities/mining/Mining.qml:506
+#: activities/mining/Mining.qml:511
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "इदानीं भवन्तः स्पार्क्ल् पश्यन्ति, अग्रे गच्छन्तु, भवन्तः तस्मिन् जूम कर्तुं शक्नुवन्ति।"
@@ -19261,8 +19402,50 @@ msgstr ""
 "कर्तुं शक्नुवन्ति । एकः क्रीडकः तदा विजयते यदा अन्यः खिलाडी किमपि खण्डं चालयितुं न शक्नोति "
 "अथवा केवलं २ खण्डाः अवशिष्टाः सन्ति ।"
 
-#: activities/nine_men_morris/nine_men_morris.js:29
+#: activities/nine_men_morris/nine_men_morris.js:240
+#: activities/nine_men_morris/nine_men_morris.js:1086
 msgctxt "nine_men_morris|"
+msgid "Place a piece"
+msgstr "एकं खण्डं स्थापयतु"
+
+#: activities/nine_men_morris/nine_men_morris.js:366
+#: activities/nine_men_morris/nine_men_morris.js:1144
+msgctxt "nine_men_morris|"
+msgid "Move a piece"
+msgstr "एकं खण्डं चालयन्तु"
+
+#: activities/nine_men_morris/nine_men_morris.js:918
+msgctxt "nine_men_morris|"
+msgid "Remove a piece"
+msgstr "एकं खण्डं निष्कासयन्तु"
+
+#: activities/nine_men_morris/nine_men_morris.js:1121
+msgctxt "nine_men_morris|"
+msgid "Congratulations"
+msgstr "अभिनन्दनम्"
+
+#: activities/nine_men_morris/nine_men_morris.js:1124
+msgctxt "nine_men_morris|"
+msgid "Congratulations Player 1"
+msgstr "अभिनन्दनम् खिलाडी १"
+
+#: activities/nine_men_morris/nine_men_morris.js:1135
+msgctxt "nine_men_morris|"
+msgid "Congratulations Player 2"
+msgstr "अभिनन्दनम् खिलाडी २"
+
+#: activities/nine_men_morris/nine_men_morris.js:1138
+msgctxt "nine_men_morris|"
+msgid "Try again"
+msgstr "पुनः प्रयासं कुर्वन्तु"
+
+#: activities/nine_men_morris/NineMenMorris.qml:348
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "You and Tux start with 9 pieces each, and take turns to place your pieces "
+#| "on the empty spots of the board (by clicking on the spots)."
+msgctxt "NineMenMorris|"
 msgid ""
 "You and Tux start with 9 pieces each, and take turns to place your pieces on "
 "the empty spots of the board (by clicking on the spots)."
@@ -19270,8 +19453,14 @@ msgstr ""
 "भवन्तः टक्स च प्रत्येकं ९ खण्डैः आरभन्ते, क्रमेण च स्वस्य खण्डान् फलकस्य रिक्तस्थानेषु (स्थानेषु "
 "क्लिक् कृत्वा) स्थापयितुं शक्नुवन्ति ।"
 
-#: activities/nine_men_morris/nine_men_morris.js:33
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:352
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
+#| "remove it. Pieces of formed mill can not be removed unless no other "
+#| "pieces are left on the board."
+msgctxt "NineMenMorris|"
 msgid ""
 "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
 "remove it. Pieces of formed mill can not be removed unless no other pieces "
@@ -19281,8 +19470,14 @@ msgstr ""
 "यावत् अन्ये खण्डाः फलकस्य उपरि न अवशिष्यन्ते तावत् यावत् निर्मितस्य मिलस्य खण्डाः "
 "निष्कासयितुं न शक्यन्ते ।"
 
-#: activities/nine_men_morris/nine_men_morris.js:37
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:356
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "After all the pieces are placed, you and Tux will take turns to move "
+#| "them. Click on one of your pieces, and then on an adjacent empty spot to "
+#| "move it there. Green color spots indicates where you can move."
+msgctxt "NineMenMorris|"
 msgid ""
 "After all the pieces are placed, you and Tux will take turns to move them. "
 "Click on one of your pieces, and then on an adjacent empty spot to move it "
@@ -19292,8 +19487,13 @@ msgstr ""
 "ततः समीपस्थे रिक्तस्थाने नुदन्तु तत्र चालयितुं । हरितवर्णबिन्दवः भवन्तः कुत्र गन्तुं शक्नुवन्ति "
 "इति सूचयन्ति ।"
 
-#: activities/nine_men_morris/nine_men_morris.js:41
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:360
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
+#| "moved to any vacant spot on the board."
+msgctxt "NineMenMorris|"
 msgid ""
 "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
 "moved to any vacant spot on the board."
@@ -19301,50 +19501,18 @@ msgstr ""
 "यदि भवान् ३ खण्डैः सह अवशिष्टः भवति तर्हि तेषां 'उड्डयनस्य' क्षमता प्राप्यते, तेषु फलकस्य "
 "कस्मिन् अपि रिक्तस्थाने स्थानान्तरितुं शक्यते ।"
 
-#: activities/nine_men_morris/nine_men_morris.js:45
-msgctxt "nine_men_morris|"
+#: activities/nine_men_morris/NineMenMorris.qml:364
+#, fuzzy
+#| msgctxt "nine_men_morris|"
+#| msgid ""
+#| "If you immobilize the computer or leave it with less than 3 pieces, then "
+#| "you win the game."
+msgctxt "NineMenMorris|"
 msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
 "win the game."
 msgstr ""
 "यदि भवान् सङ्गणकं स्थिरं करोति अथवा ३ खण्डात् न्यूनं त्यजति तर्हि भवान् क्रीडां जिगीषति ।"
-
-#: activities/nine_men_morris/nine_men_morris.js:262
-#: activities/nine_men_morris/nine_men_morris.js:1108
-msgctxt "nine_men_morris|"
-msgid "Place a piece"
-msgstr "एकं खण्डं स्थापयतु"
-
-#: activities/nine_men_morris/nine_men_morris.js:388
-#: activities/nine_men_morris/nine_men_morris.js:1166
-msgctxt "nine_men_morris|"
-msgid "Move a piece"
-msgstr "एकं खण्डं चालयन्तु"
-
-#: activities/nine_men_morris/nine_men_morris.js:940
-msgctxt "nine_men_morris|"
-msgid "Remove a piece"
-msgstr "एकं खण्डं निष्कासयन्तु"
-
-#: activities/nine_men_morris/nine_men_morris.js:1143
-msgctxt "nine_men_morris|"
-msgid "Congratulations"
-msgstr "अभिनन्दनम्"
-
-#: activities/nine_men_morris/nine_men_morris.js:1146
-msgctxt "nine_men_morris|"
-msgid "Congratulations Player 1"
-msgstr "अभिनन्दनम् खिलाडी १"
-
-#: activities/nine_men_morris/nine_men_morris.js:1157
-msgctxt "nine_men_morris|"
-msgid "Congratulations Player 2"
-msgstr "अभिनन्दनम् खिलाडी २"
-
-#: activities/nine_men_morris/nine_men_morris.js:1160
-msgctxt "nine_men_morris|"
-msgid "Try again"
-msgstr "पुनः प्रयासं कुर्वन्तु"
 
 #. Activity title
 #: activities/nine_men_morris_2players/ActivityInfo.qml:15
@@ -19409,13 +19577,13 @@ msgid "New note: %1"
 msgstr "नवीनं टिप्पणी: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:270
+#: activities/note_names/NoteNames.qml:271
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:448
+#: activities/note_names/NoteNames.qml:449
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19424,12 +19592,12 @@ msgstr ""
 "अस्याः क्रियायाः कृते ध्वनिः आवश्यकः अस्ति, अतः मुख्यविन्यासे श्रव्यस्वरः अथवा प्रभावाः "
 "निष्क्रियाः सन्ति चेदपि एतत् केचन ध्वनयः वादयिष्यति ।"
 
-#: activities/note_names/NoteNames.qml:449
+#: activities/note_names/NoteNames.qml:450
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "परिजहातु"
 
-#: activities/note_names/NoteNames.qml:450
+#: activities/note_names/NoteNames.qml:451
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "अनुवर्तते"
@@ -19515,23 +19683,23 @@ msgstr ""
 "अथवा ट्याप् कुर्वन्तु । प्रथमस्तरयोः भवन्तः द्रष्टुं शक्नुवन्ति यत् भवन्तः अधः दक्षिणकोणे काउण्टरे "
 "कः सङ्ख्यां ग्रहीतव्याः इति । परवर्तीस्तरयोः भवद्भिः तत् स्मर्तव्यम् ।"
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:14
+#: activities/numbers-odd-even/NumbersOddEven.qml:15
 msgctxt "NumbersOddEven|"
 msgid "Catch the even numbers."
 msgstr "समसङ्ख्याः गृह्यताम्।"
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:15
+#: activities/numbers-odd-even/NumbersOddEven.qml:16
 msgctxt "NumbersOddEven|"
 msgid "Catch the odd numbers."
 msgstr "विषमसङ्ख्याः गृह्यताम्।"
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:42
+#: activities/numbers-odd-even/NumbersOddEven.qml:43
 msgctxt "NumbersOddEven|"
 msgid "This activity teaches about even and odd numbers."
 msgstr "एषा क्रिया समविषमसंख्यायोः विषये पाठयति ।"
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:46
-#: activities/numbers-odd-even/NumbersOddEven.qml:56
+#: activities/numbers-odd-even/NumbersOddEven.qml:47
+#: activities/numbers-odd-even/NumbersOddEven.qml:55
 msgctxt "NumbersOddEven|"
 msgid ""
 "Even numbers are numbers which leave a remainder of 0 when divided by 2."
@@ -19542,16 +19710,16 @@ msgctxt "NumbersOddEven|"
 msgid "What is meant by remainder?"
 msgstr "शेष इति किम् अभिप्रेतम्?"
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:60
+#: activities/numbers-odd-even/NumbersOddEven.qml:59
 msgctxt "NumbersOddEven|"
 msgid ""
 "Odd numbers are numbers which do not leave a remainder of 0 when divided by "
 "2."
 msgstr "विषमसङ्ख्याः ताः सङ्ख्याः सन्ति येषां 2 इत्यनेन विभक्तौ 0 इत्यस्य शेषं न त्यजति ।"
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:64
-#: activities/numbers-odd-even/NumbersOddEven.qml:68
-#: activities/numbers-odd-even/NumbersOddEven.qml:72
+#: activities/numbers-odd-even/NumbersOddEven.qml:63
+#: activities/numbers-odd-even/NumbersOddEven.qml:67
+#: activities/numbers-odd-even/NumbersOddEven.qml:71
 msgctxt "NumbersOddEven|"
 msgid "Exercise to test your understanding."
 msgstr "भवतः अवगमनस्य परीक्षणार्थं व्यायामं कुर्वन्तु।"
@@ -21547,111 +21715,6 @@ msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "निर्देशान् चिनोतु"
 
-#: activities/programmingMaze/programmingMaze.js:96
-msgctxt "programmingMaze|"
-msgid "Instruction Area:"
-msgstr "निर्देशक्षेत्रम् :"
-
-#: activities/programmingMaze/programmingMaze.js:97
-msgctxt "programmingMaze|"
-msgid ""
-"There are 3 instructions which you can use to code and lead Tux to the fish:"
-msgstr ""
-"तत्र ३ निर्देशाः सन्ति येषां उपयोगेन भवान् Tux इत्यस्य कोडं कर्तुं मत्स्यं प्रति नेतुम् च शक्नोति:"
-
-#: activities/programmingMaze/programmingMaze.js:98
-msgctxt "programmingMaze|"
-msgid ""
-"<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
-"facing."
-msgstr ""
-"<b>1. अग्रे गच्छतु :</b> टक्सं यस्य दिशि सम्मुखीभवति तस्मिन् दिशि एकं पदं अग्रे गच्छति।"
-
-#: activities/programmingMaze/programmingMaze.js:99
-msgctxt "programmingMaze|"
-msgid "<b>2. Turn left:</b> Turns Tux to the left."
-msgstr "<b>2. वामभागे गच्छतु :</b> टक्सं वामभागे गच्छति।"
-
-#: activities/programmingMaze/programmingMaze.js:100
-msgctxt "programmingMaze|"
-msgid "<b>3. Turn right:</b> Turns Tux to the right."
-msgstr "<b>3. दक्षिणं गच्छतु :</b> टक्सं दक्षिणतः गच्छति।"
-
-#: activities/programmingMaze/programmingMaze.js:104
-msgctxt "programmingMaze|"
-msgid "Main Function:"
-msgstr "मुख्य कार्य :"
-
-#: activities/programmingMaze/programmingMaze.js:105
-msgctxt "programmingMaze|"
-msgid "The execution of the code starts here."
-msgstr "अत्र कोडस्य निष्पादनं आरभ्यते ।"
-
-#: activities/programmingMaze/programmingMaze.js:106
-msgctxt "programmingMaze|"
-msgid ""
-"-Click on any instruction in the <b>instruction area</b> to add it to the "
-"<b>Main Function</b>."
-msgstr "<b>-निर्देशक्षेत्रे</b> यत्किमपि निर्देशं <b>मुख्यकार्यं</b> योजयितुं क्लिक् कुर्वन्तु ।"
-
-#: activities/programmingMaze/programmingMaze.js:107
-msgctxt "programmingMaze|"
-msgid ""
-"-The instructions will execute in order until there's none left, or until a "
-"dead-end, or when Tux reaches the fish."
-msgstr ""
-"-निर्देशाः क्रमेण निष्पादयिष्यन्ति यावत् कोऽपि न अवशिष्टः, अथवा यावत् मृतमार्गः, अथवा "
-"यदा टक्सः मत्स्यं प्राप्नोति।"
-
-#: activities/programmingMaze/programmingMaze.js:114
-msgctxt "programmingMaze|"
-msgid "Procedure:"
-msgstr "प्रक्रिया:"
-
-#: activities/programmingMaze/programmingMaze.js:115
-msgctxt "programmingMaze|"
-msgid ""
-"<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
-"the code by calling it where needed</b>."
-msgstr ""
-"<b>प्रक्रिया</b> पुनः उपयोगयोग्यः निर्देशसमूहः अस्ति यस्य <b>उपयोगः कोडमध्ये यत्र "
-"आवश्यकता भवति तत्र आह्वयित्वा उपयोक्तुं</b> शक्यते |"
-
-#: activities/programmingMaze/programmingMaze.js:116
-msgctxt "programmingMaze|"
-msgid ""
-"-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
-"area</b> to add your code, click on the <b>Procedure</b> or <b>Main "
-"Function</b> label."
-msgstr ""
-"-स्वकोड् योजयितुं <b>Procedure क्षेत्रस्य</b> <b>Main Function क्षेत्रस्य</b> च मध्ये "
-"<b>स्विच् कर्तुं</b> <b>Procedure</b> अथवा <b>Main Function</b> लेबल् इत्यत्र क्लिक् "
-"कुर्वन्तु ।"
-
-#: activities/programmingMaze/programmingMaze.js:123
-msgctxt "programmingMaze|"
-msgid "Loop:"
-msgstr "परिक्रम:"
-
-#: activities/programmingMaze/programmingMaze.js:124
-msgctxt "programmingMaze|"
-msgid ""
-"<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
-"the number of times defined by the number inside it</b>."
-msgstr ""
-"<b>लूप्</b> इति निर्देशानां क्रमः यस्य <b>अन्तः सङ्ख्यायाः परिभाषितं वारं निरन्तरं "
-"पुनरावृत्तिः</b> भवति |"
-
-#: activities/programmingMaze/programmingMaze.js:125
-msgctxt "programmingMaze|"
-msgid ""
-"-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
-"area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
-"label."
-msgstr ""
-"-स्वकोड् योजयितुं <b>Loop क्षेत्रस्य</b> <b>Main Function क्षेत्रस्य</b> च मध्ये <b>स्विच् "
-"कर्तुं</b> <b>Loop</b> अथवा <b>Main Function</b> लेबल् इत्यत्र क्लिक् कुर्वन्तु ।"
-
 #: activities/programmingMaze/ProgrammingMaze.qml:224
 #, qt-format
 msgctxt "ProgrammingMaze|"
@@ -21672,6 +21735,174 @@ msgstr "प्रक्रिया"
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "परिक्रम"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:542
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Instruction Area:"
+msgctxt "ProgrammingMaze|"
+msgid "Instruction Area:"
+msgstr "निर्देशक्षेत्रम् :"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:543
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "There are 3 instructions which you can use to code and lead Tux to the "
+#| "fish:"
+msgctxt "ProgrammingMaze|"
+msgid ""
+"There are 3 instructions which you can use to code and lead Tux to the fish:"
+msgstr ""
+"तत्र ३ निर्देशाः सन्ति येषां उपयोगेन भवान् Tux इत्यस्य कोडं कर्तुं मत्स्यं प्रति नेतुम् च शक्नोति:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:544
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
+#| "facing."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
+"facing."
+msgstr ""
+"<b>1. अग्रे गच्छतु :</b> टक्सं यस्य दिशि सम्मुखीभवति तस्मिन् दिशि एकं पदं अग्रे गच्छति।"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:545
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "<b>2. Turn left:</b> Turns Tux to the left."
+msgctxt "ProgrammingMaze|"
+msgid "<b>2. Turn left:</b> Turns Tux to the left."
+msgstr "<b>2. वामभागे गच्छतु :</b> टक्सं वामभागे गच्छति।"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:546
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "<b>3. Turn right:</b> Turns Tux to the right."
+msgctxt "ProgrammingMaze|"
+msgid "<b>3. Turn right:</b> Turns Tux to the right."
+msgstr "<b>3. दक्षिणं गच्छतु :</b> टक्सं दक्षिणतः गच्छति।"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:550
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Main Function:"
+msgctxt "ProgrammingMaze|"
+msgid "Main Function:"
+msgstr "मुख्य कार्य :"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:551
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "The execution of the code starts here."
+msgctxt "ProgrammingMaze|"
+msgid "The execution of the code starts here."
+msgstr "अत्र कोडस्य निष्पादनं आरभ्यते ।"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:552
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-Click on any instruction in the <b>instruction area</b> to add it to the "
+#| "<b>Main Function</b>."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-Click on any instruction in the <b>instruction area</b> to add it to the "
+"<b>Main Function</b>."
+msgstr "<b>-निर्देशक्षेत्रे</b> यत्किमपि निर्देशं <b>मुख्यकार्यं</b> योजयितुं क्लिक् कुर्वन्तु ।"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:553
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-The instructions will execute in order until there's none left, or until "
+#| "a dead-end, or when Tux reaches the fish."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-The instructions will execute in order until there's none left, or until a "
+"dead-end, or when Tux reaches the fish."
+msgstr ""
+"-निर्देशाः क्रमेण निष्पादयिष्यन्ति यावत् कोऽपि न अवशिष्टः, अथवा यावत् मृतमार्गः, अथवा "
+"यदा टक्सः मत्स्यं प्राप्नोति।"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:563
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Procedure:"
+msgctxt "ProgrammingMaze|"
+msgid "Procedure:"
+msgstr "प्रक्रिया:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:564
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "<b>Procedure</b> is a reusable set of instructions which can be <b>used "
+#| "in the code by calling it where needed</b>."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
+"the code by calling it where needed</b>."
+msgstr ""
+"<b>प्रक्रिया</b> पुनः उपयोगयोग्यः निर्देशसमूहः अस्ति यस्य <b>उपयोगः कोडमध्ये यत्र "
+"आवश्यकता भवति तत्र आह्वयित्वा उपयोक्तुं</b> शक्यते |"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:565
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main "
+#| "Function area</b> to add your code, click on the <b>Procedure</b> or "
+#| "<b>Main Function</b> label."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
+"area</b> to add your code, click on the <b>Procedure</b> or <b>Main "
+"Function</b> label."
+msgstr ""
+"-स्वकोड् योजयितुं <b>Procedure क्षेत्रस्य</b> <b>Main Function क्षेत्रस्य</b> च मध्ये "
+"<b>स्विच् कर्तुं</b> <b>Procedure</b> अथवा <b>Main Function</b> लेबल् इत्यत्र क्लिक् "
+"कुर्वन्तु ।"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:575
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid "Loop:"
+msgctxt "ProgrammingMaze|"
+msgid "Loop:"
+msgstr "परिक्रम:"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:576
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
+#| "the number of times defined by the number inside it</b>."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
+"the number of times defined by the number inside it</b>."
+msgstr ""
+"<b>लूप्</b> इति निर्देशानां क्रमः यस्य <b>अन्तः सङ्ख्यायाः परिभाषितं वारं निरन्तरं "
+"पुनरावृत्तिः</b> भवति |"
+
+#: activities/programmingMaze/ProgrammingMaze.qml:577
+#, fuzzy
+#| msgctxt "programmingMaze|"
+#| msgid ""
+#| "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
+#| "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</"
+#| "b> label."
+msgctxt "ProgrammingMaze|"
+msgid ""
+"-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
+"area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
+"label."
+msgstr ""
+"-स्वकोड् योजयितुं <b>Loop क्षेत्रस्य</b> <b>Main Function क्षेत्रस्य</b> च मध्ये <b>स्विच् "
+"कर्तुं</b> <b>Loop</b> अथवा <b>Main Function</b> लेबल् इत्यत्र क्लिक् कुर्वन्तु ।"
 
 #: activities/programmingMaze/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -21745,7 +21976,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "प्रविष्टं कुर्वन्तु वा प्रत्यागच्छन्तु: स्वस्य उत्तरं प्रस्तौतु"
 
-#: activities/railroad/Railroad.qml:125
+#: activities/railroad/Railroad.qml:126
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -21754,7 +21985,7 @@ msgstr ""
 "समयनिर्धारकस्य समाप्तेः पूर्वं रेलयानस्य अवलोकनं स्मरणं च कुर्वन्तु ततः समानं रेलयानं स्थापयितुं "
 "वस्तूनि कर्षयन्तु।"
 
-#: activities/railroad/Railroad.qml:126
+#: activities/railroad/Railroad.qml:129
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -21965,7 +22196,7 @@ msgstr ""
 "टक्सः तस्य गृहे अस्ति तदा तस्य कृते प्रकाशस्य बटनं धक्कायन्तु। विजयाय भवद्भिः सर्वान् उपभोक्तृन् "
 "चालू कर्तव्यं यदा सर्वे उत्पादकाः उपरि सन्ति।"
 
-#: activities/renewable_energy/RenewableEnergy.qml:303
+#: activities/renewable_energy/RenewableEnergy.qml:304
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -21974,7 +22205,7 @@ msgstr ""
 "टक्सः स्वस्य नौकायां मत्स्यपालनं कृत्वा पुनः आगतः अस्ति। विद्युत्व्यवस्थां पुनः उपरि आनयन्तु येन "
 "तस्य गृहे प्रकाशः भवितुं शक्नोति।"
 
-#: activities/renewable_energy/RenewableEnergy.qml:305
+#: activities/renewable_energy/RenewableEnergy.qml:307
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -21983,7 +22214,7 @@ msgstr ""
 "विभिन्नेषु सक्रियतत्त्वेषु क्लिक् कुर्वन्तु: सूर्यः, मेघः, बांधः, सौरसरणिः, पवनक्षेत्रं तथा च "
 "ट्रांसफार्मर्, सम्पूर्णं विद्युत्प्रणालीं पुनः सक्रियं कर्तुं।"
 
-#: activities/renewable_energy/RenewableEnergy.qml:307
+#: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -21993,12 +22224,12 @@ msgstr ""
 "यदा प्रणाली पुनः उपरि भवति तथा च टक्सः तस्य गृहे अस्ति तदा तस्य कृते प्रकाशस्य बटनं "
 "धक्कायन्तु। विजयाय भवद्भिः सर्वान् उपभोक्तृन् चालू कर्तव्यं यदा सर्वे उत्पादकाः उपरि सन्ति।"
 
-#: activities/renewable_energy/RenewableEnergy.qml:309
+#: activities/renewable_energy/RenewableEnergy.qml:313
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "नवीकरणीय ऊर्जायाः आधारेण विद्युत्प्रणाल्याः विषये ज्ञातव्यम्। अनुभवतु।"
 
-#: activities/renewable_energy/RenewableEnergy.qml:334
+#: activities/renewable_energy/RenewableEnergy.qml:339
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -24864,7 +25095,7 @@ msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "शिक्षण"
 
-#: activities/solar_system/SolarSystem.qml:156
+#: activities/solar_system/SolarSystem.qml:157
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -24873,7 +25104,7 @@ msgstr ""
 "प्रश्नान् प्रकाशयितुं सूर्यं वा कस्मिन् अपि ग्रहे क्लिक् कुर्वन्तु । प्रत्येकं प्रश्ने ४ विकल्पाः सन्ति, "
 "येषु एकः सम्यक् अस्ति ।"
 
-#: activities/solar_system/SolarSystem.qml:157
+#: activities/solar_system/SolarSystem.qml:160
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -24887,7 +25118,7 @@ msgstr ""
 "प्रयासं कुर्वन्तु यावत् भवन्तः निकटतामापकस्य अनुसरणं कृत्वा शतप्रतिशतम् निकटतां न प्राप्नुवन्ति। "
 "यदि हिन्ट् बटन् दृश्यते तर्हि उत्तरं अन्वेष्टुं हिन्ट् प्राप्तुं तस्मिन् क्लिक् कर्तुं शक्नुवन्ति ।"
 
-#: activities/solar_system/SolarSystem.qml:162
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -24896,7 +25127,7 @@ msgstr ""
 "प्रारम्भे २० प्रश्नाः सन्ति यत्र प्रत्येकं ४ विकल्पाः सन्ति । स्क्रीनस्य अधः दक्षिणभागे "
 "प्रगतिपट्टिका भवतः प्रतिशताङ्कं दर्शयति ।"
 
-#: activities/solar_system/SolarSystem.qml:163
+#: activities/solar_system/SolarSystem.qml:173
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -24909,14 +25140,14 @@ msgstr ""
 "भविष्यति।<br> अधिकतमं २५ प्रश्नाः पृष्टाः भविष्यन्ति तदनन्तरं अधिकः प्रश्नः न योजितः "
 "भविष्यति।"
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:176
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
 "expert!"
 msgstr "मूल्याङ्कनं उत्तीर्णं कर्तुं सौरमण्डलस्य विशेषज्ञः भवितुम् भवन्तः ९०% अधिकं स्कोरं कुर्वन्तु!"
 
-#: activities/solar_system/SolarSystem.qml:339
+#: activities/solar_system/SolarSystem.qml:355
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24926,7 +25157,7 @@ msgstr ""
 "1. सूर्यात् ग्रहः यावत् <b>दूरः भवति</b> तावत् तस्य तापमानं <b>न्यूनं</b> भवति ।<br> "
 "<font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:340
+#: activities/solar_system/SolarSystem.qml:356
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24937,7 +25168,7 @@ msgstr ""
 "<font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:343
+#: activities/solar_system/SolarSystem.qml:359
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -24948,12 +25179,12 @@ msgstr ""
 "परीक्ष्यताम् - <b>M</b> y <b>V</b> ery <b>E</b> xcellent <b>M</b> other <b>J</"
 "b> ust <b>S</b> erved <b>U</b> s <b>N</b> oodles.<br>"
 
-#: activities/solar_system/SolarSystem.qml:345
+#: activities/solar_system/SolarSystem.qml:361
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "संकेत"
 
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:369
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "सौरमण्डलं पश्यन्तु"
@@ -25072,42 +25303,69 @@ msgctxt "Controls|"
 msgid "Right Ballast Tank"
 msgstr "दक्षिण गिट्टी टंकी"
 
-#: activities/submarine/submarine.js:21
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:133
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Move the submarine to the other side of the screen."
+msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "पनडुब्बीं पटलस्य परं पार्श्वे चालयन्तु।"
 
-#: activities/submarine/submarine.js:22
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:136
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The leftmost item in the control panel is the engine of the submarine, "
+#| "indicating the current speed of the submarine."
+msgctxt "Submarine|"
 msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
 "indicating the current speed of the submarine."
 msgstr "नियन्त्रणपटले वामतमं वस्तु पनडुब्ब्याः इञ्जिनं भवति, यत् पनडुब्ब्याः वर्तमानवेगं सूचयति ।"
 
-#: activities/submarine/submarine.js:23
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:139
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Increase or decrease the velocity of the submarine using the engine."
+msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr "इञ्जिनस्य उपयोगेन पनडुब्ब्याः वेगं वर्धयन्तु न्यूनीकरोतु वा।"
 
-#: activities/submarine/submarine.js:24
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:142
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Press the + button to increase the velocity, or the - button to decrease "
+#| "the velocity."
+msgctxt "Submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
 "velocity."
 msgstr "वेगं वर्धयितुं + बटनं नुदन्तु, अथवा वेगं न्यूनीकर्तुं - बटनं नुदन्तु ।"
 
-#: activities/submarine/submarine.js:27
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:149
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "The item next to the engine is the ballast tank."
+msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "इञ्जिनस्य पार्श्वे यत् वस्तु अस्ति तत् गिट्टी टङ्की अस्ति ।"
 
-#: activities/submarine/submarine.js:28
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:152
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "The ballast tanks are used to float or dive under water."
+msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr "गिट्टी-टङ्कयः जलस्य अधः प्लवितुं वा गोतां कर्तुं वा उपयुज्यन्ते ।"
 
-#: activities/submarine/submarine.js:29
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:155
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "If the ballast tanks are empty, the submarine will float. If the ballast "
+#| "tanks are full of water, the submarine will dive underwater."
+msgctxt "Submarine|"
 msgid ""
 "If the ballast tanks are empty, the submarine will float. If the ballast "
 "tanks are full of water, the submarine will dive underwater."
@@ -25115,8 +25373,14 @@ msgstr ""
 "यदि गिट्टी-टङ्कयः शून्याः सन्ति तर्हि पनडुब्बी प्लवति । यदि गिट्टी-टङ्कयः जलपूर्णाः सन्ति "
 "तर्हि पनडुब्बी जलस्य अधः डुबकी मारयिष्यति ।"
 
-#: activities/submarine/submarine.js:30
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:158
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Turning the upper valve on or off will alternatively allow or stop the "
+#| "water from filling in the ballast tank, thus allowing it to dive "
+#| "underwater."
+msgctxt "Submarine|"
 msgid ""
 "Turning the upper valve on or off will alternatively allow or stop the water "
 "from filling in the ballast tank, thus allowing it to dive underwater."
@@ -25124,8 +25388,14 @@ msgstr ""
 "उपरितनकपाटं चालू वा निष्क्रियं वा कृत्वा वैकल्पिकरूपेण जलस्य गिट्टी-टङ्क्यां पूरणं वा निवर्तते "
 "वा, अतः जलस्य अधः गोतां कर्तुं शक्नोति"
 
-#: activities/submarine/submarine.js:31
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:161
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Turning the lower valve on or off will alternatively allow or stop the "
+#| "water from flushing out the ballast tank, thus allowing it to float on "
+#| "the surface of the water."
+msgctxt "Submarine|"
 msgid ""
 "Turning the lower valve on or off will alternatively allow or stop the water "
 "from flushing out the ballast tank, thus allowing it to float on the surface "
@@ -25134,15 +25404,25 @@ msgstr ""
 "अधोकपाटं चालू वा निष्क्रियं वा कृत्वा वैकल्पिकरूपेण जलं गिट्टी-टङ्कीं बहिः प्रक्षालितुं वा "
 "निवारयिष्यति वा, अतः जलस्य उपरि प्लवति"
 
-#: activities/submarine/submarine.js:34
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:168
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The rightmost item in the control panel controls the diving planes of the "
+#| "submarine"
+msgctxt "Submarine|"
 msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
-"submarine"
+"submarine."
 msgstr "नियन्त्रणपटले दक्षिणतमं वस्तु पनडुब्ब्याः गोताखोरीविमानं नियन्त्रयति"
 
-#: activities/submarine/submarine.js:35
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:171
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The diving planes in a submarine are used to control the depth of the "
+#| "submarine accurately once it is underwater."
+msgctxt "Submarine|"
 msgid ""
 "The diving planes in a submarine are used to control the depth of the "
 "submarine accurately once it is underwater."
@@ -25150,8 +25430,13 @@ msgstr ""
 "पनडुब्ब्यां गोताखोरीविमानानाम् उपयोगेन पनडुब्ब्याः एकवारं जलान्तरे गभीरताम् सम्यक् "
 "नियन्त्रयितुं भवति ।"
 
-#: activities/submarine/submarine.js:36
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:174
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "Once the submarine is moving underwater, increasing or decreasing the "
+#| "angle of the planes will increase and decrease the depth of the submarine."
+msgctxt "Submarine|"
 msgid ""
 "Once the submarine is moving underwater, increasing or decreasing the angle "
 "of the planes will increase and decrease the depth of the submarine."
@@ -25159,20 +25444,31 @@ msgstr ""
 "एकदा पनडुब्बी जलान्तरं गच्छति चेत् विमानानाम् कोणस्य वर्धनेन न्यूनीकरणेन वा पनडुब्ब्याः "
 "गभीरता वर्धते न्यूनीभवति च ।"
 
-#: activities/submarine/submarine.js:37
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:177
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid ""
+#| "The + button will increase the depth of the submarine, while the - button "
+#| "will decrease the depth of the submarine."
+msgctxt "Submarine|"
 msgid ""
 "The + button will increase the depth of the submarine, while the - button "
 "will decrease the depth of the submarine."
 msgstr "+ बटनेन पनडुब्ब्याः गभीरता वर्धते, - बटनेन पनडुब्ब्याः गभीरता न्यूनीभवति ।"
 
-#: activities/submarine/submarine.js:38
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:180
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Grab the crown to open the gate."
+msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "द्वारं उद्घाटयितुं मुकुटं गृह्यताम्।"
 
-#: activities/submarine/submarine.js:39
-msgctxt "submarine|"
+#: activities/submarine/Submarine.qml:183
+#, fuzzy
+#| msgctxt "submarine|"
+#| msgid "Check out the help menu for the keyboard controls."
+msgctxt "Submarine|"
 msgid "Check out the help menu for the keyboard controls."
 msgstr "कीबोर्डनियन्त्रणानां कृते सहायतामेनू पश्यन्तु ।"
 
@@ -26100,7 +26396,7 @@ msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "विलक्षणम्, भवता जलचक्रं सम्पन्नम्। भवन्तः निरन्तरं क्रीडितुं शक्नुवन्ति।"
 
-#: activities/watercycle/Watercycle.qml:140
+#: activities/watercycle/Watercycle.qml:141
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26110,7 +26406,7 @@ msgstr ""
 "जलचक्रं (जलचक्रम् इति अपि ज्ञायते) भूमितः आकाशं प्रति पुनः पुनः च परिभ्रमन् जलं या यात्रां "
 "करोति सूर्यस्य तापः समुद्रवत् जलपिण्डेभ्यः जलस्य वाष्पीकरणाय ऊर्जां प्रदाति ।"
 
-#: activities/watercycle/Watercycle.qml:143
+#: activities/watercycle/Watercycle.qml:144
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26121,7 +26417,7 @@ msgstr ""
 "निर्माय शीतलं भवति । यदा मेघाः स्थलस्य उपरि शीतलवायुः मिलन्ति तदा वर्षणं प्रवर्तते, "
 "वर्षारूपेण पतति च ।"
 
-#: activities/watercycle/Watercycle.qml:146
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26131,7 +26427,7 @@ msgstr ""
 "किञ्चित् जलं शिलामृत्तिकास्तरयोः मध्ये फसति, यत् भूजलम् इति उच्यते । परन्तु अधिकांशं जलं "
 "अपवाहरूपेण प्रवहति, अन्ते नदीभिः समुद्रेषु प्रत्यागच्छति ।"
 
-#: activities/watercycle/Watercycle.qml:148
+#: activities/watercycle/Watercycle.qml:150
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -27183,25 +27479,44 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "अहं सज्जः अस्मि"
 
-#: core/Tutorial.qml:140
+#: core/Tutorial.qml:139
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "पूर्वतनम्‌"
 
-#: core/Tutorial.qml:158
+#: core/Tutorial.qml:157
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "अग्रिम"
 
-#: core/Tutorial.qml:175
+#: core/Tutorial.qml:174
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "क्षिपते"
 
-#: core/Tutorial.qml:175
+#: core/Tutorial.qml:174
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "प्रारंभः"
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid "Grammatical analysis"
+#~ msgstr "व्याकरणविश्लेषणम्"
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid "Learn to identify grammatical classes."
+#~ msgstr "व्याकरणिकवर्गाणां परिचयं कर्तुं शिक्षन्तु।"
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid ""
+#~ "Select a grammatical class from the list, then select the box under a "
+#~ "word and assign it the class."
+#~ msgstr ""
+#~ "सूचीतः व्याकरणीयवर्गं चिनोतु, ततः शब्दस्य अधः पेटीं चित्वा तस्मै वर्गं नियुक्तं कुर्वन्तु ।"
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid "Leave the box blank if no class matches."
+#~ msgstr "यदि कोऽपि वर्गः न मेलति तर्हि पेटी रिक्तं त्यजन्तु ।"
 
 #, fuzzy
 #~| msgctxt "BinaryBulb|"
