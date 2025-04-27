@@ -33,6 +33,11 @@ QtObject {
                 ],
                "newDatasets": ["guess24"]
            },
+            { "versionCode": 250100, "content": [
+                qsTr("Many usability improvements"),
+                qsTr("Many bug fixes")
+                ]
+           },
             { "versionCode": 250000, "content": [
                 qsTr("Translation added for Sanskrit"),
                 qsTr("Many usability improvements"),
