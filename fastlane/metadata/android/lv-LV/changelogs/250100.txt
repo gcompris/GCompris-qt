@@ -1,0 +1,2 @@
+- Daudzi lietojamības uzlabojumi
+- Daudzi kļūdu labojumi
