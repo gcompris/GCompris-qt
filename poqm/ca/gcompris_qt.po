@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2025-03-06 08:54+0100\n"
+"PO-Revision-Date: 2025-04-26 08:21+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -3020,10 +3020,6 @@ msgstr ""
 "decimal indicat. Quan ho hàgiu aconseguit, premeu «OK»."
 
 #: activities/binary_bulb/BinaryBulb.qml:84
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "This activity teaches how to convert decimal numbers to binary numbers."
 msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr ""
@@ -3031,12 +3027,6 @@ msgstr ""
 "binaris."
 
 #: activities/binary_bulb/BinaryBulb.qml:88
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Computers use transistors to count and transistors have only two states, "
-#| "0 and 1. Mathematically, these states are represented by 0 and 1, which "
-#| "makes up the binary system of numeration."
 msgctxt "BinaryBulb|"
 msgid ""
 "Computers use transistors to count and transistors have only two states, 0 "
@@ -3048,37 +3038,23 @@ msgstr ""
 "0 i 1, els quals constitueixen el sistema binari de numeració."
 
 #: activities/binary_bulb/BinaryBulb.qml:92
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr ""
-"A l'activitat, el 0 i l'1 estan simulats per les bombetes, encesa o apagada."
+"A l'activitat, el 0 i l'1 estan simulats per les bombetes, enceses o "
+"apagades."
 
 #: activities/binary_bulb/BinaryBulb.qml:96
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Binary system uses these numbers very efficiently, allowing to count from "
-#| "0 to 255 with 8 bits only."
 msgctxt "BinaryBulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
 "to 255 with 8 bits only."
 msgstr ""
-"El sistema binari usa aquests números d'una manera molt eficient, permetent "
+"El sistema binari usa aquests nombres d'una manera molt eficient, permetent "
 "comptar des de 0 fins al 255 només amb 8 bits."
 
 # skip-rule: t-sp_co
 #: activities/binary_bulb/BinaryBulb.qml:100
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Each bit adds a progressive value, corresponding to the powers of 2, "
-#| "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → "
-#| "2²=4 , bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit "
-#| "8 → 2⁷=128."
 msgctxt "BinaryBulb|"
 msgid ""
 "Each bit adds a progressive value, corresponding to the powers of 2, "
@@ -3092,19 +3068,11 @@ msgstr ""
 "2⁷=128."
 
 #: activities/binary_bulb/BinaryBulb.qml:104
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr "Per a convertir un 5 decimal a un valor binari, s'afegeixen 1 i 4."
 
 #: activities/binary_bulb/BinaryBulb.qml:108
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 "
-#| "is equal to binary 101."
 msgctxt "BinaryBulb|"
 msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
@@ -3114,9 +3082,6 @@ msgstr ""
 "El 5 decimal és igual que el binari 101."
 
 #: activities/binary_bulb/BinaryBulb.qml:112
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "This image will help you to compute bits' value."
 msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Aquesta imatge t'ajudarà a calcular el valor dels bits."
@@ -14998,53 +14963,35 @@ msgid "Empty"
 msgstr "Buida"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Grammatical analysis"
 msgctxt "GrammarAnalysis|"
 msgid "Grammatical analysis"
 msgstr "Anàlisi gramatical"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "GrammarAnalysis|"
 msgid "Learn to identify grammatical classes."
-msgstr "Apreneu a identificar classes gramaticals."
+msgstr "Aprèn a identificar classes gramaticals."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:28
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid ""
-#| "Find all the words corresponding to the requested grammatical classes."
 msgctxt "GrammarAnalysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr ""
-"Trobeu totes les paraules corresponents a les classes gramaticals "
+"Troba totes les paraules corresponents a les classes gramaticals "
 "sol·licitades."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a grammatical class from the list, then select the box under a "
-#| "word and assign it the class."
 msgctxt "GrammarAnalysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Seleccioneu una classe gramatical de la llista, després seleccioneu el "
-"quadre sota d'una paraula i assigneu-hi la classe."
+"Selecciona una classe gramatical de la llista, després selecciona el quadre "
+"sota d'una paraula i assigna-hi la classe."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Leave the box blank if no class matches."
 msgctxt "GrammarAnalysis|"
 msgid "Leave the box blank if no class matches."
-msgstr "Deixeu el quadre en blanc si no coincideix cap classe."
+msgstr "Deixa el quadre en blanc si no coincideix cap classe."
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
@@ -15074,51 +15021,34 @@ msgid "Leave the box blank if the class doesn't match."
 msgstr "Deixeu el quadre en blanc si no coincideix cap classe."
 
 #: activities/grammar_classes/GrammarClasses.qml:15
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Grammatical classes"
 msgctxt "GrammarClasses|"
 msgid "Grammatical classes"
 msgstr "Classes gramaticals"
 
 #: activities/grammar_classes/GrammarClasses.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "GrammarClasses|"
 msgid "Learn to identify grammatical classes."
-msgstr "Apreneu a identificar classes gramaticals."
+msgstr "Aprèn a identificar classes gramaticals."
 
 #: activities/grammar_classes/GrammarClasses.qml:17
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Find all the words corresponding to the requested grammatical class."
 msgctxt "GrammarClasses|"
 msgid "Find all the words corresponding to the requested grammatical class."
 msgstr ""
-"Trobeu totes les paraules corresponents a la class gramatical sol·licitada."
+"Troba totes les paraules corresponents a la classe gramatical sol·licitada."
 
 #: activities/grammar_classes/GrammarClasses.qml:18
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid ""
-#| "Select the grammatical class from the list, then select the box under a "
-#| "word and assign it the class."
 msgctxt "GrammarClasses|"
 msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Seleccioneu la classe gramatical de la llista, després seleccioneu el quadre "
-"sota d'una paraula i assigneu-hi la classe."
+"Selecciona la classe gramatical de la llista, després selecciona el quadre "
+"sota d'una paraula i assigna-hi la classe."
 
 #: activities/grammar_classes/GrammarClasses.qml:19
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Leave the box blank if the class doesn't match."
 msgctxt "GrammarClasses|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr "Deixeu el quadre en blanc si no coincideix cap classe."
+msgstr "Deixa el quadre en blanc si no coincideix cap classe."
 
 #: activities/graph-coloring/ActivityConfig.qml:22
 #: activities/superbrain/ActivityConfig.qml:22
@@ -16694,11 +16624,6 @@ msgstr ""
 "sobre el botó «OK» per a validar la resposta."
 
 #: activities/learn_decimals/Learn_decimals.qml:30
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A decimal number is displayed. The bar with the arrow represents a full "
-#| "unit, and each square in it represents one tenth of this unit."
 msgctxt "Learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
@@ -16708,13 +16633,6 @@ msgstr ""
 "completa i cada quadre representa una dècima part d'aquesta unitat."
 
 #: activities/learn_decimals/Learn_decimals.qml:34
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a part of the bar, and drag the selected part of "
-#| "the bar to the empty area. Repeat these steps until the number of dropped "
-#| "bars corresponds to the displayed decimal number. Then click on the OK "
-#| "button to validate your answer."
 msgctxt "Learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -16823,12 +16741,6 @@ msgid "Numbers: type the result"
 msgstr "Nombres: escriu el resultat"
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "An addition with two decimal numbers is displayed. The bar with the arrow "
-#| "represents a full unit, and each square in it represents one tenth of "
-#| "this unit."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "An addition with two decimal numbers is displayed. The bar with the arrow "
@@ -16840,13 +16752,6 @@ msgstr ""
 "d'aquesta unitat."
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a part of the bar, and drag the selected part of "
-#| "the bar to the empty area. Repeat these steps until the number of dropped "
-#| "bars corresponds to the result of the addition, and click on the OK "
-#| "button to validate your answer."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -16860,11 +16765,6 @@ msgstr ""
 "la suma. Després, fes clic sobre el botó «OK» per a validar la resposta."
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:24
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -16926,12 +16826,6 @@ msgstr ""
 "quadrats per a restar el segon número i representar el resultat de l'operació"
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A subtraction with two decimal numbers is displayed. Below it, the first "
-#| "number from the subtraction is represented with bars. One bar represents "
-#| "a full unit, and each square in it represents one tenth of this unit."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "A subtraction with two decimal numbers is displayed. Below it, the first "
@@ -16943,11 +16837,6 @@ msgstr ""
 "cada quadre representa una dècima part d'aquesta unitat."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Click on the squares to subtract them and display the result of the "
-#| "operation, and click on the OK button to validate your answer."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
@@ -16957,11 +16846,6 @@ msgstr ""
 "i fes clic sobre el botó «OK» per a validar la resposta."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:24
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -17132,23 +17016,12 @@ msgstr ""
 "resposta."
 
 #: activities/learn_quantities/Learn_quantities.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgctxt "Learn_quantities|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr ""
 "Es demana una quantitat. La fletxa permet seleccionar fins a 10 taronges."
 
 #: activities/learn_quantities/Learn_quantities.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a number of oranges, and drag the selected "
-#| "oranges to the empty area. Repeat these steps until the number of oranges "
-#| "corresponds to the requested quantity. Then click on the OK button to "
-#| "validate your answer."
 msgctxt "Learn_quantities|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "
@@ -20347,11 +20220,6 @@ msgid "Try again"
 msgstr "Torneu-ho a provar"
 
 #: activities/nine_men_morris/NineMenMorris.qml:348
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "You and Tux start with 9 pieces each, and take turns to place your pieces "
-#| "on the empty spots of the board (by clicking on the spots)."
 msgctxt "NineMenMorris|"
 msgid ""
 "You and Tux start with 9 pieces each, and take turns to place your pieces on "
@@ -20362,12 +20230,6 @@ msgstr ""
 
 # skip-rule: kct-remove
 #: activities/nine_men_morris/NineMenMorris.qml:352
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
-#| "remove it. Pieces of formed mill can not be removed unless no other "
-#| "pieces are left on the board."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
@@ -20379,12 +20241,6 @@ msgstr ""
 "que no n'hi hagi altres al tauler."
 
 #: activities/nine_men_morris/NineMenMorris.qml:356
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "After all the pieces are placed, you and Tux will take turns to move "
-#| "them. Click on one of your pieces, and then on an adjacent empty spot to "
-#| "move it there. Green color spots indicates where you can move."
 msgctxt "NineMenMorris|"
 msgid ""
 "After all the pieces are placed, you and Tux will take turns to move them. "
@@ -20393,14 +20249,9 @@ msgid ""
 msgstr ""
 "Una vegada es col·loquen totes les peces, tu i en Tux fareu torns per a "
 "moure-les. Fes clic a una de les teves peces, i després en l'espai buit "
-"adjacent per a moure-l'hi. Els punts de color verd indicarà on es pot moure."
+"adjacent per a moure-l'hi. Els punts de color verd indicaran on es pot moure."
 
 #: activities/nine_men_morris/NineMenMorris.qml:360
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
-#| "moved to any vacant spot on the board."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
@@ -20410,17 +20261,12 @@ msgstr ""
 "podran moure a qualsevol lloc buit en el tauler."
 
 #: activities/nine_men_morris/NineMenMorris.qml:364
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you immobilize the computer or leave it with less than 3 pieces, then "
-#| "you win the game."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
 "win the game."
 msgstr ""
-"Si immobilitzes a l'ordinador o el deixes amb menys de 3 peces, llavors "
+"Si immobilitzes l'ordinador o el deixes amb menys de 3 peces, llavors "
 "guanyaràs el joc."
 
 # Nota: https://ca.wikipedia.org/wiki/Marro_de_nou
@@ -22780,19 +22626,11 @@ msgid "Loop"
 msgstr "Bucle"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:542
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Instruction Area:"
 msgctxt "ProgrammingMaze|"
 msgid "Instruction Area:"
 msgstr "Àrea d'instruccions:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:543
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "There are 3 instructions which you can use to code and lead Tux to the "
-#| "fish:"
 msgctxt "ProgrammingMaze|"
 msgid ""
 "There are 3 instructions which you can use to code and lead Tux to the fish:"
@@ -22800,11 +22638,6 @@ msgstr ""
 "Hi ha 3 instruccions que pots usar per a codificar i dur en Tux fins al peix:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:544
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
-#| "facing."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
@@ -22814,57 +22647,35 @@ msgstr ""
 "mira."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:545
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgctxt "ProgrammingMaze|"
 msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgstr "<b>2. Gira a l'esquerra:</b> fa girar en Tux a l'esquerra."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:546
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgctxt "ProgrammingMaze|"
 msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgstr "<b>3. Gira a la dreta:</b> fa girar en Tux a la dreta."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:550
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Main Function:"
 msgctxt "ProgrammingMaze|"
 msgid "Main Function:"
 msgstr "Funció principal:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:551
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "The execution of the code starts here."
 msgctxt "ProgrammingMaze|"
 msgid "The execution of the code starts here."
 msgstr "L'execució del codi comença aquí."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:552
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-Click on any instruction in the <b>instruction area</b> to add it to the "
-#| "<b>Main Function</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-Click on any instruction in the <b>instruction area</b> to add it to the "
 "<b>Main Function</b>."
 msgstr ""
-"- Feu clic a qualsevol instrucció en l'<b>àrea d'instruccions</b> per a "
+"- Fes clic a qualsevol instrucció en l'<b>àrea d'instruccions</b> per a "
 "afegir-la a la <b>Funció principal</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:553
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-The instructions will execute in order until there's none left, or until "
-#| "a dead-end, or when Tux reaches the fish."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-The instructions will execute in order until there's none left, or until a "
@@ -22874,19 +22685,11 @@ msgstr ""
 "a un carreró sense sortida o quan en Tux arribi fins al peix."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:563
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Procedure:"
 msgctxt "ProgrammingMaze|"
 msgid "Procedure:"
 msgstr "Procediment:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:564
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>Procedure</b> is a reusable set of instructions which can be <b>used "
-#| "in the code by calling it where needed</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
@@ -22896,12 +22699,6 @@ msgstr ""
 "poden <b>usar en el codi per a fer una crida quan sigui necessari</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:565
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main "
-#| "Function area</b> to add your code, click on the <b>Procedure</b> or "
-#| "<b>Main Function</b> label."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
@@ -22913,34 +22710,20 @@ msgstr ""
 "<b>Procediment</b> o <b>Funció principal</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:575
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Loop:"
 msgctxt "ProgrammingMaze|"
 msgid "Loop:"
 msgstr "Bucle:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:576
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
-#| "the number of times defined by the number inside it</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
 "the number of times defined by the number inside it</b>."
 msgstr ""
 "El <b>bucle</b> és una seqüència d'instruccions que es <b>repeteix "
-"contínuament el nombre de vegades definit pel número dins seu</b>."
+"contínuament el nombre de vegades definit pel nombre dins seu</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:577
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
-#| "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</"
-#| "b> label."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
@@ -26434,19 +26217,11 @@ msgid "Right Ballast Tank"
 msgstr "Tanc de llast de la dreta"
 
 #: activities/submarine/Submarine.qml:133
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Move the submarine to the other side of the screen."
 msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "Mou el submarí cap a l'altre costat de la pantalla."
 
 #: activities/submarine/Submarine.qml:136
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The leftmost item in the control panel is the engine of the submarine, "
-#| "indicating the current speed of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
@@ -26456,19 +26231,11 @@ msgstr ""
 "qual indica la velocitat actual."
 
 #: activities/submarine/Submarine.qml:139
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Increase or decrease the velocity of the submarine using the engine."
 msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr "Augmenta o disminueix la velocitat del submarí mitjançant el motor."
 
 #: activities/submarine/Submarine.qml:142
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Press the + button to increase the velocity, or the - button to decrease "
-#| "the velocity."
 msgctxt "Submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
@@ -26478,28 +26245,17 @@ msgstr ""
 "disminuir."
 
 #: activities/submarine/Submarine.qml:149
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The item next to the engine is the ballast tank."
 msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "L'element al costat del motor és el tanc de llast."
 
 #: activities/submarine/Submarine.qml:152
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The ballast tanks are used to float or dive under water."
 msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr ""
 "Els tancs de llast s'empren per a fer flotar o submergir-se sota l'aigua."
 
 #: activities/submarine/Submarine.qml:155
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "If the ballast tanks are empty, the submarine will float. If the ballast "
-#| "tanks are full of water, the submarine will dive underwater."
 msgctxt "Submarine|"
 msgid ""
 "If the ballast tanks are empty, the submarine will float. If the ballast "
@@ -26509,12 +26265,6 @@ msgstr ""
 "estan plens d'aigua, el submarí se submergirà sota l'aigua."
 
 #: activities/submarine/Submarine.qml:158
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Turning the upper valve on or off will alternatively allow or stop the "
-#| "water from filling in the ballast tank, thus allowing it to dive "
-#| "underwater."
 msgctxt "Submarine|"
 msgid ""
 "Turning the upper valve on or off will alternatively allow or stop the water "
@@ -26524,12 +26274,6 @@ msgstr ""
 "llast, permetent així que se submergeixi sota l'aigua."
 
 #: activities/submarine/Submarine.qml:161
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Turning the lower valve on or off will alternatively allow or stop the "
-#| "water from flushing out the ballast tank, thus allowing it to float on "
-#| "the surface of the water."
 msgctxt "Submarine|"
 msgid ""
 "Turning the lower valve on or off will alternatively allow or stop the water "
@@ -26540,25 +26284,15 @@ msgstr ""
 "de llast, omplint-se d'aire, permetent així que surti a la superfície."
 
 #: activities/submarine/Submarine.qml:168
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The rightmost item in the control panel controls the diving planes of the "
-#| "submarine"
 msgctxt "Submarine|"
 msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
 "submarine."
 msgstr ""
 "L'element més a la dreta del plafó de control controla els alerons "
-"d'immersió del submarí"
+"d'immersió del submarí."
 
 #: activities/submarine/Submarine.qml:171
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The diving planes in a submarine are used to control the depth of the "
-#| "submarine accurately once it is underwater."
 msgctxt "Submarine|"
 msgid ""
 "The diving planes in a submarine are used to control the depth of the "
@@ -26568,11 +26302,6 @@ msgstr ""
 "la profunditat del submarí una vegada que es troba sota l'aigua."
 
 #: activities/submarine/Submarine.qml:174
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Once the submarine is moving underwater, increasing or decreasing the "
-#| "angle of the planes will increase and decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "Once the submarine is moving underwater, increasing or decreasing the angle "
@@ -26582,11 +26311,6 @@ msgstr ""
 "dels alerons farà augmentar i disminuir la profunditat del submarí."
 
 #: activities/submarine/Submarine.qml:177
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The + button will increase the depth of the submarine, while the - button "
-#| "will decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "The + button will increase the depth of the submarine, while the - button "
@@ -26596,17 +26320,11 @@ msgstr ""
 "farà disminuir."
 
 #: activities/submarine/Submarine.qml:180
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Grab the crown to open the gate."
 msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "Agafa la corona per a obrir la porta."
 
 #: activities/submarine/Submarine.qml:183
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Check out the help menu for the keyboard controls."
 msgctxt "Submarine|"
 msgid "Check out the help menu for the keyboard controls."
 msgstr "Consulta el menú d'ajuda pels controls del teclat."
