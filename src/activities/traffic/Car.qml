@@ -65,7 +65,7 @@ Item {
         
         Rectangle {
             id: carRect
-            visible: (mode == "COLOR")
+            visible: (car.mode == "COLOR")
             
             z: 11
             anchors.fill: parent
@@ -113,7 +113,7 @@ Item {
         
         Image {
             id: carImage
-            visible: (mode == "IMAGE")
+            visible: (car.mode == "IMAGE")
             
             fillMode: Image.PreserveAspectFit
             anchors.fill: parent

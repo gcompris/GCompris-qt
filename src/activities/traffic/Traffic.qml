@@ -8,6 +8,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
 
 import QtQuick
 import core 1.0
@@ -99,7 +100,7 @@ ActivityBase {
                     when: items.isVertical
                     PropertyChanges {
                         jamBox {
-                            width: parent.width
+                            width: activityBackground.width
                         }
                     }
                     AnchorChanges {
@@ -113,12 +114,12 @@ ActivityBase {
                     when: !items.isVertical
                     PropertyChanges {
                         jamBox {
-                            width: parent.height - 64 * ApplicationInfo.ratio
+                            width: activityBackground.height - 64 * ApplicationInfo.ratio
                         }
                     }
                     AnchorChanges {
                         target: jamBox
-                        anchors.top: parent.top
+                        anchors.top: activityBackground.top
                         anchors.verticalCenter: undefined
                     }
                 }
@@ -160,7 +161,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         DialogChooseLevel {
@@ -168,7 +169,7 @@ ActivityBase {
             currentActivity: activity.activityInfo
 
             onClose: {
-                home()
+                activity.home()
             }
             onLoadData: {
                 if(activityData && activityData["mode"]) {
@@ -182,14 +183,14 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | reload | activityConfig }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onReloadClicked: Activity.initLevel()
             onActivityConfigClicked: {
-                displayDialog(dialogActivityConfig)
+                activity.displayDialog(dialogActivityConfig)
             }
         }
 
