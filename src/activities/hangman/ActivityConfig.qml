@@ -40,17 +40,17 @@ Item {
         GCDialogCheckBox {
             id: easyModeImageBox
             text: qsTr("Display the image to find as hint")
-            checked: easyModeImage
+            checked: activityConfiguration.easyModeImage
             onCheckedChanged: {
-                easyModeImage = checked
+                activityConfiguration.easyModeImage = checked
             }
         }
         GCDialogCheckBox {
             id: easyModeAudioBox
             text: qsTr("Speak the words to find (if available) when three attempts are remaining")
-            checked: easyModeAudio
+            checked: activityConfiguration.easyModeAudio
             onCheckedChanged: {
-                easyModeAudio = checked
+                activityConfiguration.easyModeAudio = checked
             }
         }
     }
