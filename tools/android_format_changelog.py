@@ -105,7 +105,7 @@ def main(argv):
 
     engine = QQmlEngine()
     # We need to register at least one file for GCompris package else it is not found
-    qmlRegisterType(ActivityInfo, "GCompris", 1, 0, "ActivityInfo")
+    qmlRegisterType(ActivityInfo, "core", 1, 0, "ActivityInfo")
 
     # TODO Need to check if we hardcode the list from the xml file or if we get it in GCompris...
 

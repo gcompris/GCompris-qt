@@ -159,7 +159,7 @@ def main(argv):
 
     engine = QQmlEngine()
     # We need to register at least one file for GCompris package else it is not found
-    qmlRegisterType(ActivityInfo, "GCompris", 1, 0, "ActivityInfo")
+    qmlRegisterType(ActivityInfo, "core", 1, 0, "ActivityInfo")
     component = QQmlComponent(engine)
     component.loadUrl(QUrl("src/core/ChangeLog.qml"))
     changelog_qml = component.create()
