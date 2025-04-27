@@ -8,6 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import core 1.0
 import QtQuick.Effects
@@ -21,7 +23,7 @@ ActivityBase {
 
     // Overload this in your activity to change it
     // Put you default-<locale>.json files in it
-    property string dataSetUrl: "qrc:/gcompris/src/activities/hangman/resource/"
+    readonly property string dataSetUrl: "qrc:/gcompris/src/activities/hangman/resource/"
 
     onStart: focus = true
     onStop:  { }
@@ -197,7 +199,7 @@ ActivityBase {
                 id: threshmask
                 visible: false
                 anchors.fill: parent
-                source: dataSetUrl + "fog.png"
+                source: activity.dataSetUrl + "fog.png"
             }
 
             MultiEffect {
@@ -216,10 +218,10 @@ ActivityBase {
             id: dialogActivityConfig
             currentActivity: activity.activityInfo
             onClose: {
-                home()
+                activity.home()
             }
             onSaveData: {
-                levelFolder = dialogActivityConfig.chosenLevels
+                activity.levelFolder = dialogActivityConfig.chosenLevels
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
             }
@@ -249,7 +251,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
@@ -258,13 +260,13 @@ ActivityBase {
             anchors.bottom: keyboard.top
             content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onActivityConfigClicked: {
-                displayDialog(dialogActivityConfig)
+                activity.displayDialog(dialogActivityConfig)
             }
         }
 
@@ -346,7 +348,7 @@ ActivityBase {
             anchors.bottom: parent.bottom
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
-            onKeypress: {
+            onKeypress: (text) => {
                 Activity.processKeyPress(text);
                 // Set the focus back to the InputText for keyboard input
                 Activity.focusTextInput();
