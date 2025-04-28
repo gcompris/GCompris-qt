@@ -15643,12 +15643,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Mēģināts: %1"
 
-#: activities/hangman/Hangman.qml:369
+#: activities/hangman/Hangman.qml:371
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Diemžēl tavai valodai vēl nav tulkojuma."
 
-#: activities/hangman/Hangman.qml:370
+#: activities/hangman/Hangman.qml:372
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -15658,7 +15658,7 @@ msgstr ""
 "„GCompris“ izstrādā KDE kopiena. Vari palīdzēt tulkot „GCompris“, "
 "pievienojoties tulkotāju komandai <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:372
+#: activities/hangman/Hangman.qml:374
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -27480,36 +27480,36 @@ msgctxt "ActivityInfo|"
 msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Ieraksti krītošo vārdu pirms tas sasniedz zemi."
 
-#: core/ChangeLog.qml:30 core/ChangeLog.qml:38 core/ChangeLog.qml:47
-#: core/ChangeLog.qml:53 core/ChangeLog.qml:58 core/ChangeLog.qml:64
-#: core/ChangeLog.qml:93 core/ChangeLog.qml:128 core/ChangeLog.qml:131
-#: core/ChangeLog.qml:137
+#: core/ChangeLog.qml:30 core/ChangeLog.qml:37 core/ChangeLog.qml:43
+#: core/ChangeLog.qml:52 core/ChangeLog.qml:58 core/ChangeLog.qml:63
+#: core/ChangeLog.qml:69 core/ChangeLog.qml:98 core/ChangeLog.qml:133
+#: core/ChangeLog.qml:136 core/ChangeLog.qml:142
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Daudzi lietojamības uzlabojumi"
 
-#: core/ChangeLog.qml:31 core/ChangeLog.qml:39 core/ChangeLog.qml:65
-#: core/ChangeLog.qml:74 core/ChangeLog.qml:81 core/ChangeLog.qml:94
-#: core/ChangeLog.qml:112 core/ChangeLog.qml:127 core/ChangeLog.qml:132
-#: core/ChangeLog.qml:138
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:44 core/ChangeLog.qml:70
+#: core/ChangeLog.qml:79 core/ChangeLog.qml:86 core/ChangeLog.qml:99
+#: core/ChangeLog.qml:117 core/ChangeLog.qml:132 core/ChangeLog.qml:137
+#: core/ChangeLog.qml:143
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "Daudzi jauni attēli"
 
-#: core/ChangeLog.qml:32 core/ChangeLog.qml:40 core/ChangeLog.qml:48
-#: core/ChangeLog.qml:54 core/ChangeLog.qml:59 core/ChangeLog.qml:66
-#: core/ChangeLog.qml:75 core/ChangeLog.qml:82 core/ChangeLog.qml:95
-#: core/ChangeLog.qml:133 core/ChangeLog.qml:139
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:38 core/ChangeLog.qml:45
+#: core/ChangeLog.qml:53 core/ChangeLog.qml:59 core/ChangeLog.qml:64
+#: core/ChangeLog.qml:71 core/ChangeLog.qml:80 core/ChangeLog.qml:87
+#: core/ChangeLog.qml:100 core/ChangeLog.qml:138 core/ChangeLog.qml:144
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "Daudzi kļūdu labojumi"
 
-#: core/ChangeLog.qml:37
+#: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
 msgid "Translation added for Sanskrit"
 msgstr "Pievienots sanskrita valodas tulkojums"
 
-#: core/ChangeLog.qml:41
+#: core/ChangeLog.qml:46
 msgctxt "ChangeLog|"
 msgid ""
 "Automatic application of new language when changing it in the menu (no need "
@@ -27518,28 +27518,28 @@ msgstr ""
 "Automātiska jaunas valodas pielietošana, to nomainot izvēlnē (nav "
 "nepieciešams pārstartēt „GCompris“)"
 
-#: core/ChangeLog.qml:42
+#: core/ChangeLog.qml:47
 msgctxt "ChangeLog|"
 msgid "Add splash screen at startup"
 msgstr "Ieslēdzoties parāda sākuma ekrānu"
 
-#: core/ChangeLog.qml:43
+#: core/ChangeLog.qml:48
 msgctxt "ChangeLog|"
 msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgstr ""
 "Jauna komandrindas opcija, lai pārslēgtu atveidotāju (--renderer atveidotājs)"
 
-#: core/ChangeLog.qml:52
+#: core/ChangeLog.qml:57
 msgctxt "ChangeLog|"
 msgid "Translation added for Latvian"
 msgstr "Pievienots latviešu valodas tulkojums"
 
-#: core/ChangeLog.qml:63
+#: core/ChangeLog.qml:68
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
 msgstr "Pievienots tulkojums bulgāru, galisiešu un svahili valodā"
 
-#: core/ChangeLog.qml:67
+#: core/ChangeLog.qml:72
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to directly start an activity at a specific level (--"
@@ -27548,17 +27548,17 @@ msgstr ""
 "Jaunas komandrindas iespējas, lai tiešā veidā sāktu darbību noteiktā līmenī "
 "(„--start-level“ līmenis izmantošanai ar „--launch“ aktivitāti)"
 
-#: core/ChangeLog.qml:72
+#: core/ChangeLog.qml:77
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
 msgstr "Pievienots arābu un esperanto tulkojums"
 
-#: core/ChangeLog.qml:73 core/ChangeLog.qml:80
+#: core/ChangeLog.qml:78 core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
 msgstr "Daudzi tulkojumu atjauninājumi"
 
-#: core/ChangeLog.qml:79
+#: core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
@@ -27567,22 +27567,22 @@ msgstr ""
 "Jaunas komandrindas iespējas ((--difficulty {value|min-max}), lai „GCompris“ "
 "palaistu ar noteiktu grūtības līmeni"
 
-#: core/ChangeLog.qml:86
+#: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr "Novērsta kļūme salīdzināšanas aktivitātē"
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "Ģeogrāfijas aktivitātei pievienota Spānijas karte"
 
-#: core/ChangeLog.qml:91
+#: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr "Ukraiņu valodai pievienotas balsis"
 
-#: core/ChangeLog.qml:92
+#: core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
@@ -27591,38 +27591,38 @@ msgstr ""
 "Jauna komandrindas iespēja, lai uzskaitītu visas aktivitātes un sāktu ar "
 "noteiktu"
 
-#: core/ChangeLog.qml:99
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
 "images set"
 msgstr "Samazināts pakotnes izmērs visām platformām un ārējām attēlu kopām"
 
-#: core/ChangeLog.qml:100
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Uzlabota attēlu kvalitāte vairākām aktivitātēm"
 
-#: core/ChangeLog.qml:101
+#: core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 "Labotas atsevišķas pārejas dažās platformās atjaunīgās enerģijas/ūdens cikla"
 
-#: core/ChangeLog.qml:102
+#: core/ChangeLog.qml:107
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 "Labotas diakritiskās zīmes taustiņa ignorēšana „Linux“ rakstīšanas "
 "aktivitātēs"
 
-#: core/ChangeLog.qml:103
+#: core/ChangeLog.qml:108
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 "Fiksēta līmeņa atiestatīšana, manuāli mainot līmeni Loģiskajās asociācijās"
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:112
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
@@ -27630,37 +27630,37 @@ msgstr ""
 "Labota alfabētiskā secība, nepāra un pāra skaitļi un skaitļi kārtošanas "
 "aktivitātēs"
 
-#: core/ChangeLog.qml:111 core/ChangeLog.qml:119
+#: core/ChangeLog.qml:116 core/ChangeLog.qml:124
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Vairāku kļūdu labojumi"
 
-#: core/ChangeLog.qml:113
+#: core/ChangeLog.qml:118
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Tulkojumu atjauninājumi krievu valodai"
 
-#: core/ChangeLog.qml:114
+#: core/ChangeLog.qml:119
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Jaunas balsis jaunnorvēģu valodai"
 
-#: core/ChangeLog.qml:118
+#: core/ChangeLog.qml:123
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "Tulkojumi bretoņu, čehu un maķedoniešu valodā."
 
-#: core/ChangeLog.qml:123
+#: core/ChangeLog.qml:128
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "Pievienots azerbaidžāņu valodas tulkojums"
 
-#: core/ChangeLog.qml:124
+#: core/ChangeLog.qml:129
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Jaunas kartes un karšu atjauninājumi ģeogrāfijas aktivitātēm"
 
-#: core/ChangeLog.qml:125
+#: core/ChangeLog.qml:130
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -27669,7 +27669,7 @@ msgstr ""
 "Jauna datu kopa, kas satur ciklu operācijas labirintu programmēšanai, un "
 "pamācītu attēli padarīti tulkojami"
 
-#: core/ChangeLog.qml:126
+#: core/ChangeLog.qml:131
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
@@ -27678,57 +27678,57 @@ msgstr ""
 "Līmeņa pievienošana, lai mācītu sprieguma avota ciklu analogās elektrības "
 "aktivitātē"
 
-#: core/ChangeLog.qml:136
+#: core/ChangeLog.qml:141
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "Jauna aktivitāšu iestatījumu izvēlne ar datu kopas atlasi"
 
-#: core/ChangeLog.qml:142
+#: core/ChangeLog.qml:147
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Jaunas apakškategorijas aktivitāšu organizēšanai"
 
-#: core/ChangeLog.qml:143
+#: core/ChangeLog.qml:148
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "Pievienots tulkojums maķedoniešu valodai."
 
-#: core/ChangeLog.qml:144
+#: core/ChangeLog.qml:149
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Jaunas aktivitātes: labirinta programmēšana un bērnu tangrams"
 
-#: core/ChangeLog.qml:145
+#: core/ChangeLog.qml:150
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Jauni fona mūzikas un skaļuma iestatījumi."
 
-#: core/ChangeLog.qml:146
+#: core/ChangeLog.qml:151
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Jauni ātruma iestatījumi vairākās aktivitātēs."
 
-#: core/ChangeLog.qml:147
+#: core/ChangeLog.qml:152
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Jauna iespēja šahā parādīt paņemtās figūras."
 
-#: core/ChangeLog.qml:148
+#: core/ChangeLog.qml:153
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Jauni attēli krāsu, papildu krāsu un mērķa spēlē."
 
-#: core/ChangeLog.qml:149
+#: core/ChangeLog.qml:154
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Jaunas balsis ASV angļu valodai."
 
-#: core/ChangeLog.qml:150 core/ChangeLog.qml:158
+#: core/ChangeLog.qml:155 core/ChangeLog.qml:163
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Daudzi sīki labojumi un uzlabojumi."
 
-#: core/ChangeLog.qml:151
+#: core/ChangeLog.qml:156
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -27737,18 +27737,18 @@ msgstr ""
 "Atjaunināts tulkojums vairākām valodām (bretoņu, Brazīlijas portugāļu, "
 "somu...)."
 
-#: core/ChangeLog.qml:152
+#: core/ChangeLog.qml:157
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr ""
 "Pievienota krievu valodas datu kopa klikšķināšanas uz burta aktivitātei."
 
-#: core/ChangeLog.qml:153
+#: core/ChangeLog.qml:158
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "Valodu aktivitāte holandiešu valodā."
 
-#: core/ChangeLog.qml:154
+#: core/ChangeLog.qml:159
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -27757,17 +27757,17 @@ msgstr ""
 "Valstu aktivitātē apvienoti Norvēģijas novadi Nūrtrendelāga un Sērtrendelāga "
 "vienā Trendelāgas novadā."
 
-#: core/ChangeLog.qml:155
+#: core/ChangeLog.qml:160
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr "Labojums Braila aktivitātēs, šūnām sākoties ar 1, bet ne 0."
 
-#: core/ChangeLog.qml:156
+#: core/ChangeLog.qml:161
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "Pievienots tulkojums basku, ungāru un malaju valodai."
 
-#: core/ChangeLog.qml:157
+#: core/ChangeLog.qml:162
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -27776,47 +27776,47 @@ msgstr ""
 "Izveidotā satura ielāde/saglabāšana (bērnu tekstapstrādes programma, "
 "līdzsvara kaste un klavieru kompozīcija)."
 
-#: core/ChangeLog.qml:158
+#: core/ChangeLog.qml:163
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Pievienots tulkojums skotu gēlu valodai."
 
-#: core/ChangeLog.qml:159
+#: core/ChangeLog.qml:164
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "Konfigurācijai ir pievienota licences lapa."
 
-#: core/ChangeLog.qml:159
+#: core/ChangeLog.qml:164
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Vairākas izkārtojuma izmaiņas ergonomikas uzlabošanai"
 
-#: core/ChangeLog.qml:160
+#: core/ChangeLog.qml:165
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr "Valodas aktivitāte ir pieejama poļu, zviedru un ukraiņu valodai."
 
-#: core/ChangeLog.qml:161
+#: core/ChangeLog.qml:166
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Meklēšanas iespēja."
 
-#: core/ChangeLog.qml:162
+#: core/ChangeLog.qml:167
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Izmaiņu žurnāls."
 
-#: core/ChangeLog.qml:163
+#: core/ChangeLog.qml:168
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Daudzi sīki labojumi."
 
-#: core/ChangeLog.qml:163
+#: core/ChangeLog.qml:168
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "Valodas aktivitāte pieejama franču valodai."
 
-#: core/ChangeLog.qml:164
+#: core/ChangeLog.qml:169
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -27825,7 +27825,7 @@ msgstr ""
 "Pievienots ielādēšanās virsekrāns, lai lietotāju informētu par notiekošajām "
 "darbībām (piemēram, aktivitātes ielādi), kas var aizņemt kādu laiku."
 
-#: core/ChangeLog.qml:164
+#: core/ChangeLog.qml:169
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -27835,12 +27835,12 @@ msgstr ""
 "(92% iztulkoti), krievu (98% iztulkoti), slovāku (92% iztulkoti), turku "
 "valodai."
 
-#: core/ChangeLog.qml:165
+#: core/ChangeLog.qml:170
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Pievienoti tulkojumi slovēņu, vācu un galisiešu valodai."
 
-#: core/ChangeLog.qml:219
+#: core/ChangeLog.qml:224
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"

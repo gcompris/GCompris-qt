@@ -15522,12 +15522,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Próbálkozások száma: %1"
 
-#: activities/hangman/Hangman.qml:369
+#: activities/hangman/Hangman.qml:371
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Sajnáljuk, de a fordítás még ne elérhető a választott nyelven."
 
-#: activities/hangman/Hangman.qml:370
+#: activities/hangman/Hangman.qml:372
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -15537,7 +15537,7 @@ msgstr ""
 "A GComprist a KDE közösség fejleszti. Te is csatlakozhatsz a fordító "
 "csapatunkba a <a href=\"%2\">%2</a> címen."
 
-#: activities/hangman/Hangman.qml:372
+#: activities/hangman/Hangman.qml:374
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -27305,36 +27305,36 @@ msgctxt "ActivityInfo|"
 msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Gépeld be a leeső teljes szót, mielőtt az leérne a földre!"
 
-#: core/ChangeLog.qml:30 core/ChangeLog.qml:38 core/ChangeLog.qml:47
-#: core/ChangeLog.qml:53 core/ChangeLog.qml:58 core/ChangeLog.qml:64
-#: core/ChangeLog.qml:93 core/ChangeLog.qml:128 core/ChangeLog.qml:131
-#: core/ChangeLog.qml:137
+#: core/ChangeLog.qml:30 core/ChangeLog.qml:37 core/ChangeLog.qml:43
+#: core/ChangeLog.qml:52 core/ChangeLog.qml:58 core/ChangeLog.qml:63
+#: core/ChangeLog.qml:69 core/ChangeLog.qml:98 core/ChangeLog.qml:133
+#: core/ChangeLog.qml:136 core/ChangeLog.qml:142
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Sok apró javítás és változtatás."
 
-#: core/ChangeLog.qml:31 core/ChangeLog.qml:39 core/ChangeLog.qml:65
-#: core/ChangeLog.qml:74 core/ChangeLog.qml:81 core/ChangeLog.qml:94
-#: core/ChangeLog.qml:112 core/ChangeLog.qml:127 core/ChangeLog.qml:132
-#: core/ChangeLog.qml:138
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:44 core/ChangeLog.qml:70
+#: core/ChangeLog.qml:79 core/ChangeLog.qml:86 core/ChangeLog.qml:99
+#: core/ChangeLog.qml:117 core/ChangeLog.qml:132 core/ChangeLog.qml:137
+#: core/ChangeLog.qml:143
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "Rengeteg új kép"
 
-#: core/ChangeLog.qml:32 core/ChangeLog.qml:40 core/ChangeLog.qml:48
-#: core/ChangeLog.qml:54 core/ChangeLog.qml:59 core/ChangeLog.qml:66
-#: core/ChangeLog.qml:75 core/ChangeLog.qml:82 core/ChangeLog.qml:95
-#: core/ChangeLog.qml:133 core/ChangeLog.qml:139
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:38 core/ChangeLog.qml:45
+#: core/ChangeLog.qml:53 core/ChangeLog.qml:59 core/ChangeLog.qml:64
+#: core/ChangeLog.qml:71 core/ChangeLog.qml:80 core/ChangeLog.qml:87
+#: core/ChangeLog.qml:100 core/ChangeLog.qml:138 core/ChangeLog.qml:144
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "Sok apró hibajavítás."
 
-#: core/ChangeLog.qml:37
+#: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
 msgid "Translation added for Sanskrit"
 msgstr "Új fordítások: szanszkrit"
 
-#: core/ChangeLog.qml:41
+#: core/ChangeLog.qml:46
 msgctxt "ChangeLog|"
 msgid ""
 "Automatic application of new language when changing it in the menu (no need "
@@ -27343,27 +27343,27 @@ msgstr ""
 "Az új nyelv automatikus alkalmazása a menüben történő váltáskor (nem kell "
 "újraindítani a GCompris-t)"
 
-#: core/ChangeLog.qml:42
+#: core/ChangeLog.qml:47
 msgctxt "ChangeLog|"
 msgid "Add splash screen at startup"
 msgstr "Nyitóképernyő indításkor"
 
-#: core/ChangeLog.qml:43
+#: core/ChangeLog.qml:48
 msgctxt "ChangeLog|"
 msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgstr "Új parancssori opció a renderelő váltásához (--renderer renderer)"
 
-#: core/ChangeLog.qml:52
+#: core/ChangeLog.qml:57
 msgctxt "ChangeLog|"
 msgid "Translation added for Latvian"
 msgstr "Új fordítások: litván"
 
-#: core/ChangeLog.qml:63
+#: core/ChangeLog.qml:68
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
 msgstr "Új fordítások: Szuahéli, Bolgár, és Gall."
 
-#: core/ChangeLog.qml:67
+#: core/ChangeLog.qml:72
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to directly start an activity at a specific level (--"
@@ -27373,17 +27373,17 @@ msgstr ""
 "indítható. (--start-szint indítása,együtt haszálandó a --launch activity "
 "parancssal)"
 
-#: core/ChangeLog.qml:72
+#: core/ChangeLog.qml:77
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
 msgstr "Új fordítások: Arab és Eszperantó."
 
-#: core/ChangeLog.qml:73 core/ChangeLog.qml:80
+#: core/ChangeLog.qml:78 core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
 msgstr "Rengeteg fordítási javítás."
 
-#: core/ChangeLog.qml:79
+#: core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
@@ -27392,22 +27392,22 @@ msgstr ""
 "Új parancssori művelettel kilistázhatók a tevékenységek vagy egy magadott "
 "indítható"
 
-#: core/ChangeLog.qml:86
+#: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr "Az összehasonlító tevékenységben jelentkező probléma javítása"
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "A földrajzi feladatokat Spanyolország térképével frissítettük."
 
-#: core/ChangeLog.qml:91
+#: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr "Új ukrán hangok"
 
-#: core/ChangeLog.qml:92
+#: core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
@@ -27416,7 +27416,7 @@ msgstr ""
 "Új parancssori művelettel kilistázhatók a tevékenységek vagy egy magadott "
 "indítható."
 
-#: core/ChangeLog.qml:99
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
@@ -27424,67 +27424,67 @@ msgid ""
 msgstr ""
 "A csomagméret kisewbb lett minden plattformon és a külső szóképek esetén is."
 
-#: core/ChangeLog.qml:100
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Javult a képek minősége több tevékenységnél."
 
-#: core/ChangeLog.qml:101
+#: core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 "Néhány fordítási javítés a megújuló energiák/a víz körforgása tevékenységek "
 "kapcsán egyes platformokon"
 
-#: core/ChangeLog.qml:102
+#: core/ChangeLog.qml:107
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr "A nem működő billentyűk javítása Linuxon néhány gépelési feladatban"
 
-#: core/ChangeLog.qml:103
+#: core/ChangeLog.qml:108
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 "A manuális pálya újraindításakor keletkező hiba javítása a logikai "
 "asszociációs feladatban"
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:112
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
 msgstr "Javítás az ABC sorrend, Páros páratlan, ás a Számsorrend feladatokban."
 
-#: core/ChangeLog.qml:111 core/ChangeLog.qml:119
+#: core/ChangeLog.qml:116 core/ChangeLog.qml:124
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Sok apró hibajavítás"
 
-#: core/ChangeLog.qml:113
+#: core/ChangeLog.qml:118
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Fríssített orosz fordítás"
 
-#: core/ChangeLog.qml:114
+#: core/ChangeLog.qml:119
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Új hangfájlok a nynorski norvég nyelvnél."
 
-#: core/ChangeLog.qml:118
+#: core/ChangeLog.qml:123
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "Új fordítások: Cseh és Macedón."
 
-#: core/ChangeLog.qml:123
+#: core/ChangeLog.qml:128
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "Új fordítások: azerbajdzsáni."
 
-#: core/ChangeLog.qml:124
+#: core/ChangeLog.qml:129
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Új illetve frissített térképek a földrajz alkalmazásokhoz."
 
-#: core/ChangeLog.qml:125
+#: core/ChangeLog.qml:130
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -27493,7 +27493,7 @@ msgstr ""
 "A programlabirintus új utatításkészlettel bővült a ciklusműveletek miatt, és "
 "a bemutató szint képei is le lettek fordítva."
 
-#: core/ChangeLog.qml:126
+#: core/ChangeLog.qml:131
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
@@ -27502,74 +27502,74 @@ msgstr ""
 "Egy szinttel kiegészült az analóg elektromosség tevékenység, mely megtanítja "
 "a ciklikus forrás elektromosságot."
 
-#: core/ChangeLog.qml:136
+#: core/ChangeLog.qml:141
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "Új menüelemek adatkészlet beállításokkal"
 
-#: core/ChangeLog.qml:142
+#: core/ChangeLog.qml:147
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Új alkategóriák a tevékenységek könnyebb átláthatóságához."
 
-#: core/ChangeLog.qml:143
+#: core/ChangeLog.qml:148
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "Új fordítások: Macedón."
 
-#: core/ChangeLog.qml:144
+#: core/ChangeLog.qml:149
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Új tevékenységek: Programlabirintus, Babartangram"
 
-#: core/ChangeLog.qml:145
+#: core/ChangeLog.qml:150
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Új háttérzenék és hangerő beállítási lehetőségek."
 
-#: core/ChangeLog.qml:146
+#: core/ChangeLog.qml:151
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Új sebesség beállítási lehetőségek több tevékenységnél."
 
-#: core/ChangeLog.qml:147
+#: core/ChangeLog.qml:152
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Új lehetőség: A sakkban jelzi a porgram az elfogott bábúkat."
 
-#: core/ChangeLog.qml:148
+#: core/ChangeLog.qml:153
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Új képek a Színek, További színek és Célpontok játékokban."
 
-#: core/ChangeLog.qml:149
+#: core/ChangeLog.qml:154
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Új hangfájlok  US Amerikai nyelvnél."
 
-#: core/ChangeLog.qml:150 core/ChangeLog.qml:158
+#: core/ChangeLog.qml:155 core/ChangeLog.qml:163
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Sok apró javítás és változtatás. Skót fordítás."
 
-#: core/ChangeLog.qml:151
+#: core/ChangeLog.qml:156
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
 "Finnish...)."
 msgstr "Fordítások bővítése (Breton, Brazil, Portugál, Finn...)."
 
-#: core/ChangeLog.qml:152
+#: core/ChangeLog.qml:157
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr "A kattints egy betűre alkalmazás, orosz adatbázissal bővült."
 
-#: core/ChangeLog.qml:153
+#: core/ChangeLog.qml:158
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "A nyelvi feladatok franciául is elérhetőek."
 
-#: core/ChangeLog.qml:154
+#: core/ChangeLog.qml:159
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -27579,17 +27579,17 @@ msgstr ""
 "Országfelismerős játékban.<br/>Az 1-el ekzdődő cellákat ahol nem 0 "
 "javítottuk a Braille feladatban.<br/>Magyar fordítás hozzáadva."
 
-#: core/ChangeLog.qml:155
+#: core/ChangeLog.qml:160
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr "A Braille tevékenységeknél az 1-el kezdődő cellák hibája javítvalett."
 
-#: core/ChangeLog.qml:156
+#: core/ChangeLog.qml:161
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "Új fordítások: Szlovén, Német, Gall."
 
-#: core/ChangeLog.qml:157
+#: core/ChangeLog.qml:162
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -27598,49 +27598,49 @@ msgstr ""
 "A saját munka betöltés/mentésének javítása (Baby Wordprocessor, Balance Box "
 "and Piano Composition)."
 
-#: core/ChangeLog.qml:158
+#: core/ChangeLog.qml:163
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Új fordítások: Szlovén, Német, Gall."
 
-#: core/ChangeLog.qml:159
+#: core/ChangeLog.qml:164
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "Licensz fül hozzáadva a beállításoknál."
 
-#: core/ChangeLog.qml:159
+#: core/ChangeLog.qml:164
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr ""
 "Licensz menü hozzáadva a  beéllítások menühöz. Több változtatás a könnyebb "
 "kezelhetőség miatt."
 
-#: core/ChangeLog.qml:160
+#: core/ChangeLog.qml:165
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr "A nyelvi feladatok lengyelül, svédül és ukránul is elérhetőek."
 
-#: core/ChangeLog.qml:161
+#: core/ChangeLog.qml:166
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Keresési lehetőség."
 
-#: core/ChangeLog.qml:162
+#: core/ChangeLog.qml:167
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Változások."
 
-#: core/ChangeLog.qml:163
+#: core/ChangeLog.qml:168
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Sok apró hibajavítás."
 
-#: core/ChangeLog.qml:163
+#: core/ChangeLog.qml:168
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "Sok apró javítás. A nyelvi feladatok franciául is elérhetőek."
 
-#: core/ChangeLog.qml:164
+#: core/ChangeLog.qml:169
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -27649,7 +27649,7 @@ msgstr ""
 "Töltöttség jelző beépítése, hogy a felhasználó tudja épp hol tart a program "
 "(például a tevékenységk között) ha pár másodpercet vesz igénybe. "
 
-#: core/ChangeLog.qml:164
+#: core/ChangeLog.qml:169
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -27658,12 +27658,12 @@ msgstr ""
 "Új nyelvi fájlok: Katalán (Valencian), Kínai (tradicionális), Finn (92%-ban "
 "kész), Orosz (98%-ban kész), Szlovák (92%-ban kész), Török."
 
-#: core/ChangeLog.qml:165
+#: core/ChangeLog.qml:170
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Új fordítások: Szlovén, Német, Gall."
 
-#: core/ChangeLog.qml:219
+#: core/ChangeLog.qml:224
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
