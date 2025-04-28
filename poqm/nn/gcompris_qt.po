@@ -2882,9 +2882,6 @@ msgstr ""
 
 #: activities/binary_bulb/BinaryBulb.qml:84
 #, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "This activity teaches how to convert decimal numbers to binary numbers."
 msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr ""
@@ -2893,11 +2890,6 @@ msgstr ""
 
 #: activities/binary_bulb/BinaryBulb.qml:88
 #, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Computers use transistors to count and transistors have only two states, "
-#| "0 and 1. Mathematically, these states are represented by 0 and 1, which "
-#| "makes up the binary system of numeration."
 msgctxt "BinaryBulb|"
 msgid ""
 "Computers use transistors to count and transistors have only two states, 0 "
@@ -2910,8 +2902,6 @@ msgstr ""
 
 #: activities/binary_bulb/BinaryBulb.qml:92
 #, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr ""
@@ -2919,10 +2909,6 @@ msgstr ""
 
 #: activities/binary_bulb/BinaryBulb.qml:96
 #, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Binary system uses these numbers very efficiently, allowing to count from "
-#| "0 to 255 with 8 bits only."
 msgctxt "BinaryBulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
@@ -2933,12 +2919,6 @@ msgstr ""
 
 #: activities/binary_bulb/BinaryBulb.qml:100
 #, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Each bit adds a progressive value, corresponding to the powers of 2, "
-#| "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → "
-#| "2²=4 , bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit "
-#| "8 → 2⁷=128."
 msgctxt "BinaryBulb|"
 msgid ""
 "Each bit adds a progressive value, corresponding to the powers of 2, "
@@ -2952,8 +2932,6 @@ msgstr ""
 
 #: activities/binary_bulb/BinaryBulb.qml:104
 #, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr ""
@@ -2961,10 +2939,6 @@ msgstr ""
 
 #: activities/binary_bulb/BinaryBulb.qml:108
 #, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 "
-#| "is equal to binary 101."
 msgctxt "BinaryBulb|"
 msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
@@ -2975,8 +2949,6 @@ msgstr ""
 
 #: activities/binary_bulb/BinaryBulb.qml:112
 #, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "This image will help you to compute bits' value."
 msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Du kan bruka denne teikninga for å rekna ut verdien til kvar bit."
@@ -14568,35 +14540,24 @@ msgstr "Tom"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:26
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Grammatical analysis"
 msgctxt "GrammarAnalysis|"
 msgid "Grammatical analysis"
 msgstr "Setningsanalyse"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:27
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "GrammarAnalysis|"
 msgid "Learn to identify grammatical classes."
 msgstr "Læra å kjenna att setningsledd."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:28
 #, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid ""
-#| "Find all the words corresponding to the requested grammatical classes."
 msgctxt "GrammarAnalysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr "Finna alle orda som har rett type setningsledd."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:29
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a grammatical class from the list, then select the box under a "
-#| "word and assign it the class."
 msgctxt "GrammarAnalysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
@@ -14607,8 +14568,6 @@ msgstr ""
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:30
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Leave the box blank if no class matches."
 msgctxt "GrammarAnalysis|"
 msgid "Leave the box blank if no class matches."
 msgstr ""
@@ -14643,34 +14602,24 @@ msgstr ""
 
 #: activities/grammar_classes/GrammarClasses.qml:15
 #, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Grammatical classes"
 msgctxt "GrammarClasses|"
 msgid "Grammatical classes"
 msgstr "Setningsledd"
 
 #: activities/grammar_classes/GrammarClasses.qml:16
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "GrammarClasses|"
 msgid "Learn to identify grammatical classes."
 msgstr "Læra å kjenna att setningsledd."
 
 #: activities/grammar_classes/GrammarClasses.qml:17
 #, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Find all the words corresponding to the requested grammatical class."
 msgctxt "GrammarClasses|"
 msgid "Find all the words corresponding to the requested grammatical class."
 msgstr "Finna alle orda som har rett type setningsledd."
 
 #: activities/grammar_classes/GrammarClasses.qml:18
 #, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid ""
-#| "Select the grammatical class from the list, then select the box under a "
-#| "word and assign it the class."
 msgctxt "GrammarClasses|"
 msgid ""
 "Select the grammatical class from the list, then select the box under a word "
@@ -14681,8 +14630,6 @@ msgstr ""
 
 #: activities/grammar_classes/GrammarClasses.qml:19
 #, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Leave the box blank if the class doesn't match."
 msgctxt "GrammarClasses|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr ""
@@ -15196,12 +15143,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Forsøk: %1"
 
-#: activities/hangman/Hangman.qml:369
+#: activities/hangman/Hangman.qml:371
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Me har dessverre ikkje ei omsetjing for språket ditt enno."
 
-#: activities/hangman/Hangman.qml:370
+#: activities/hangman/Hangman.qml:372
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -15211,7 +15158,7 @@ msgstr ""
 "GCompris er utvikla av KDE-fellesskapet. Du kan setja om GCompris til eit "
 "anna språk ved å verta med i ei omsetjingsgruppe på <a href=\"%2\">%2</a>."
 
-#: activities/hangman/Hangman.qml:372
+#: activities/hangman/Hangman.qml:374
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -16262,10 +16209,6 @@ msgstr ""
 
 #: activities/learn_decimals/Learn_decimals.qml:30
 #, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A decimal number is displayed. The bar with the arrow represents a full "
-#| "unit, and each square in it represents one tenth of this unit."
 msgctxt "Learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
@@ -16277,12 +16220,6 @@ msgstr ""
 
 #: activities/learn_decimals/Learn_decimals.qml:34
 #, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a part of the bar, and drag the selected part of "
-#| "the bar to the empty area. Repeat these steps until the number of dropped "
-#| "bars corresponds to the displayed decimal number. Then click on the OK "
-#| "button to validate your answer."
 msgctxt "Learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -16394,11 +16331,6 @@ msgstr "Siffer eller komma: Skriv inn svaret som eit tal"
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:16
 #, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "An addition with two decimal numbers is displayed. The bar with the arrow "
-#| "represents a full unit, and each square in it represents one tenth of "
-#| "this unit."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "An addition with two decimal numbers is displayed. The bar with the arrow "
@@ -16411,12 +16343,6 @@ msgstr ""
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:20
 #, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a part of the bar, and drag the selected part of "
-#| "the bar to the empty area. Repeat these steps until the number of dropped "
-#| "bars corresponds to the result of the addition, and click on the OK "
-#| "button to validate your answer."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -16430,10 +16356,6 @@ msgstr ""
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:24
 #, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -16500,11 +16422,6 @@ msgstr ""
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:16
 #, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A subtraction with two decimal numbers is displayed. Below it, the first "
-#| "number from the subtraction is represented with bars. One bar represents "
-#| "a full unit, and each square in it represents one tenth of this unit."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "A subtraction with two decimal numbers is displayed. Below it, the first "
@@ -16517,10 +16434,6 @@ msgstr ""
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:20
 #, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Click on the squares to subtract them and display the result of the "
-#| "operation, and click on the OK button to validate your answer."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
@@ -16532,10 +16445,6 @@ msgstr ""
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:24
 #, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -16709,9 +16618,6 @@ msgstr ""
 
 #: activities/learn_quantities/Learn_quantities.qml:16
 #, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgctxt "Learn_quantities|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr ""
@@ -16719,12 +16625,6 @@ msgstr ""
 
 #: activities/learn_quantities/Learn_quantities.qml:20
 #, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a number of oranges, and drag the selected "
-#| "oranges to the empty area. Repeat these steps until the number of oranges "
-#| "corresponds to the requested quantity. Then click on the OK button to "
-#| "validate your answer."
 msgctxt "Learn_quantities|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "
@@ -19912,10 +19812,6 @@ msgstr "Prøv på nytt"
 
 #: activities/nine_men_morris/NineMenMorris.qml:348
 #, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "You and Tux start with 9 pieces each, and take turns to place your pieces "
-#| "on the empty spots of the board (by clicking on the spots)."
 msgctxt "NineMenMorris|"
 msgid ""
 "You and Tux start with 9 pieces each, and take turns to place your pieces on "
@@ -19926,11 +19822,6 @@ msgstr ""
 
 #: activities/nine_men_morris/NineMenMorris.qml:352
 #, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
-#| "remove it. Pieces of formed mill can not be removed unless no other "
-#| "pieces are left on the board."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
@@ -19943,11 +19834,6 @@ msgstr ""
 
 #: activities/nine_men_morris/NineMenMorris.qml:356
 #, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "After all the pieces are placed, you and Tux will take turns to move "
-#| "them. Click on one of your pieces, and then on an adjacent empty spot to "
-#| "move it there. Green color spots indicates where you can move."
 msgctxt "NineMenMorris|"
 msgid ""
 "After all the pieces are placed, you and Tux will take turns to move them. "
@@ -19960,10 +19846,6 @@ msgstr ""
 
 #: activities/nine_men_morris/NineMenMorris.qml:360
 #, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
-#| "moved to any vacant spot on the board."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
@@ -19974,10 +19856,6 @@ msgstr ""
 
 #: activities/nine_men_morris/NineMenMorris.qml:364
 #, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you immobilize the computer or leave it with less than 3 pieces, then "
-#| "you win the game."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
@@ -22303,18 +22181,12 @@ msgstr "Lykkje"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:542
 #, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Instruction Area:"
 msgctxt "ProgrammingMaze|"
 msgid "Instruction Area:"
 msgstr "Instruksjonsområde:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:543
 #, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "There are 3 instructions which you can use to code and lead Tux to the "
-#| "fish:"
 msgctxt "ProgrammingMaze|"
 msgid ""
 "There are 3 instructions which you can use to code and lead Tux to the fish:"
@@ -22324,10 +22196,6 @@ msgstr ""
 
 #: activities/programmingMaze/ProgrammingMaze.qml:544
 #, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
-#| "facing."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
@@ -22338,42 +22206,30 @@ msgstr ""
 
 #: activities/programmingMaze/ProgrammingMaze.qml:545
 #, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgctxt "ProgrammingMaze|"
 msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgstr "<b>2. Snu mot venstre:</b> Snur Tux mot venstre."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:546
 #, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgctxt "ProgrammingMaze|"
 msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgstr "<b>2. Snu mot høgre:</b> Snur Tux mot høgre."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:550
 #, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Main Function:"
 msgctxt "ProgrammingMaze|"
 msgid "Main Function:"
 msgstr "Hovudfunksjon:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:551
 #, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "The execution of the code starts here."
 msgctxt "ProgrammingMaze|"
 msgid "The execution of the code starts here."
 msgstr "Køyringa av koden startar her."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:552
 #, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-Click on any instruction in the <b>instruction area</b> to add it to the "
-#| "<b>Main Function</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-Click on any instruction in the <b>instruction area</b> to add it to the "
@@ -22384,10 +22240,6 @@ msgstr ""
 
 #: activities/programmingMaze/ProgrammingMaze.qml:553
 #, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-The instructions will execute in order until there's none left, or until "
-#| "a dead-end, or when Tux reaches the fish."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-The instructions will execute in order until there's none left, or until a "
@@ -22398,18 +22250,12 @@ msgstr ""
 
 #: activities/programmingMaze/ProgrammingMaze.qml:563
 #, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Procedure:"
 msgctxt "ProgrammingMaze|"
 msgid "Procedure:"
 msgstr "Prosedyrar:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:564
 #, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>Procedure</b> is a reusable set of instructions which can be <b>used "
-#| "in the code by calling it where needed</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
@@ -22420,11 +22266,6 @@ msgstr ""
 
 #: activities/programmingMaze/ProgrammingMaze.qml:565
 #, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main "
-#| "Function area</b> to add your code, click on the <b>Procedure</b> or "
-#| "<b>Main Function</b> label."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
@@ -22437,18 +22278,12 @@ msgstr ""
 
 #: activities/programmingMaze/ProgrammingMaze.qml:575
 #, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Loop:"
 msgctxt "ProgrammingMaze|"
 msgid "Loop:"
 msgstr "Lykkje:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:576
 #, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
-#| "the number of times defined by the number inside it</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
@@ -22459,11 +22294,6 @@ msgstr ""
 
 #: activities/programmingMaze/ProgrammingMaze.qml:577
 #, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
-#| "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</"
-#| "b> label."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
@@ -25953,18 +25783,12 @@ msgstr "Høgre ballasttank"
 
 #: activities/submarine/Submarine.qml:133
 #, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Move the submarine to the other side of the screen."
 msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "Styr ubåten over til den andre sida av skjermen."
 
 #: activities/submarine/Submarine.qml:136
 #, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The leftmost item in the control panel is the engine of the submarine, "
-#| "indicating the current speed of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
@@ -25975,18 +25799,12 @@ msgstr ""
 
 #: activities/submarine/Submarine.qml:139
 #, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Increase or decrease the velocity of the submarine using the engine."
 msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr "Du kan bruka ubåtmotoren til å setja opp og ned farten."
 
 #: activities/submarine/Submarine.qml:142
 #, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Press the + button to increase the velocity, or the - button to decrease "
-#| "the velocity."
 msgctxt "Submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
@@ -25996,26 +25814,18 @@ msgstr "Trykk på «+» for å setja farten opp og «−» for å setja han ned.
 # På dette brettet er det berre éin ballasttank, den mindre.
 #: activities/submarine/Submarine.qml:149
 #, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The item next to the engine is the ballast tank."
 msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "Ved sida av motoren finn du ein ballasttank."
 
 #: activities/submarine/Submarine.qml:152
 #, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The ballast tanks are used to float or dive under water."
 msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr "Ballasttankar vert brukte til å få ubåtar til å dykka eller flyta opp."
 
 #: activities/submarine/Submarine.qml:155
 #, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "If the ballast tanks are empty, the submarine will float. If the ballast "
-#| "tanks are full of water, the submarine will dive underwater."
 msgctxt "Submarine|"
 msgid ""
 "If the ballast tanks are empty, the submarine will float. If the ballast "
@@ -26025,11 +25835,6 @@ msgstr ""
 
 #: activities/submarine/Submarine.qml:158
 #, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Turning the upper valve on or off will alternatively allow or stop the "
-#| "water from filling in the ballast tank, thus allowing it to dive "
-#| "underwater."
 msgctxt "Submarine|"
 msgid ""
 "Turning the upper valve on or off will alternatively allow or stop the water "
@@ -26038,11 +25843,6 @@ msgstr "Ved å opna øvre ventil kan du fylla tanken, slik at ubåten dykkar."
 
 #: activities/submarine/Submarine.qml:161
 #, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Turning the lower valve on or off will alternatively allow or stop the "
-#| "water from flushing out the ballast tank, thus allowing it to float on "
-#| "the surface of the water."
 msgctxt "Submarine|"
 msgid ""
 "Turning the lower valve on or off will alternatively allow or stop the water "
@@ -26054,10 +25854,6 @@ msgstr ""
 
 #: activities/submarine/Submarine.qml:168
 #, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The rightmost item in the control panel controls the diving planes of the "
-#| "submarine"
 msgctxt "Submarine|"
 msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
@@ -26066,10 +25862,6 @@ msgstr "Heilt til høgre på kontrollpanelet styrer du djupnrora til ubåten."
 
 #: activities/submarine/Submarine.qml:171
 #, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The diving planes in a submarine are used to control the depth of the "
-#| "submarine accurately once it is underwater."
 msgctxt "Submarine|"
 msgid ""
 "The diving planes in a submarine are used to control the depth of the "
@@ -26080,10 +25872,6 @@ msgstr ""
 
 #: activities/submarine/Submarine.qml:174
 #, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Once the submarine is moving underwater, increasing or decreasing the "
-#| "angle of the planes will increase and decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "Once the submarine is moving underwater, increasing or decreasing the angle "
@@ -26094,10 +25882,6 @@ msgstr ""
 
 #: activities/submarine/Submarine.qml:177
 #, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The + button will increase the depth of the submarine, while the - button "
-#| "will decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "The + button will increase the depth of the submarine, while the - button "
@@ -26108,16 +25892,12 @@ msgstr ""
 
 #: activities/submarine/Submarine.qml:180
 #, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Grab the crown to open the gate."
 msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "Ta krona for å opna porten."
 
 #: activities/submarine/Submarine.qml:183
 #, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Check out the help menu for the keyboard controls."
 msgctxt "Submarine|"
 msgid "Check out the help menu for the keyboard controls."
 msgstr "Informasjon om tastaturbruk finn du i hjelpemenyen."
@@ -27123,47 +26903,48 @@ msgctxt "ActivityInfo|"
 msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Skriv inn heile orda mens dei dalar ned, før dei når bakken."
 
-#: core/ChangeLog.qml:30
+#: core/ChangeLog.qml:30 core/ChangeLog.qml:36 core/ChangeLog.qml:45
+#: core/ChangeLog.qml:51 core/ChangeLog.qml:56 core/ChangeLog.qml:62
+#: core/ChangeLog.qml:91 core/ChangeLog.qml:126 core/ChangeLog.qml:129
+#: core/ChangeLog.qml:135
+msgctxt "ChangeLog|"
+msgid "Many usability improvements"
+msgstr "Er blitt mykje meir brukarvennleg"
+
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:38 core/ChangeLog.qml:46
+#: core/ChangeLog.qml:52 core/ChangeLog.qml:57 core/ChangeLog.qml:64
+#: core/ChangeLog.qml:73 core/ChangeLog.qml:80 core/ChangeLog.qml:93
+#: core/ChangeLog.qml:131 core/ChangeLog.qml:137
+msgctxt "ChangeLog|"
+msgid "Many bug fixes"
+msgstr "Mange feilrettingar"
+
+#: core/ChangeLog.qml:35
 #, fuzzy
 msgctxt "ChangeLog|"
 msgid "Translation added for Sanskrit"
 msgstr "Lagt til omsetjing for aserbajdsjansk"
 
-#: core/ChangeLog.qml:31 core/ChangeLog.qml:40 core/ChangeLog.qml:46
-#: core/ChangeLog.qml:51 core/ChangeLog.qml:57 core/ChangeLog.qml:86
-#: core/ChangeLog.qml:121 core/ChangeLog.qml:124 core/ChangeLog.qml:130
-msgctxt "ChangeLog|"
-msgid "Many usability improvements"
-msgstr "Er blitt mykje meir brukarvennleg"
-
-#: core/ChangeLog.qml:32 core/ChangeLog.qml:58 core/ChangeLog.qml:67
-#: core/ChangeLog.qml:74 core/ChangeLog.qml:87 core/ChangeLog.qml:105
-#: core/ChangeLog.qml:120 core/ChangeLog.qml:125 core/ChangeLog.qml:131
+#: core/ChangeLog.qml:37 core/ChangeLog.qml:63 core/ChangeLog.qml:72
+#: core/ChangeLog.qml:79 core/ChangeLog.qml:92 core/ChangeLog.qml:110
+#: core/ChangeLog.qml:125 core/ChangeLog.qml:130 core/ChangeLog.qml:136
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "Mange nye bilete"
 
-#: core/ChangeLog.qml:33 core/ChangeLog.qml:41 core/ChangeLog.qml:47
-#: core/ChangeLog.qml:52 core/ChangeLog.qml:59 core/ChangeLog.qml:68
-#: core/ChangeLog.qml:75 core/ChangeLog.qml:88 core/ChangeLog.qml:126
-#: core/ChangeLog.qml:132
-msgctxt "ChangeLog|"
-msgid "Many bug fixes"
-msgstr "Mange feilrettingar"
-
-#: core/ChangeLog.qml:34
+#: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"
 msgid ""
 "Automatic application of new language when changing it in the menu (no need "
 "to restart GCompris)"
 msgstr ""
 
-#: core/ChangeLog.qml:35
+#: core/ChangeLog.qml:40
 msgctxt "ChangeLog|"
 msgid "Add splash screen at startup"
 msgstr ""
 
-#: core/ChangeLog.qml:36
+#: core/ChangeLog.qml:41
 #, fuzzy
 msgctxt "ChangeLog|"
 msgid "New command-line option to switch the renderer (--renderer renderer)"
@@ -27171,18 +26952,18 @@ msgstr ""
 "Kommandolinje-val for å visa oversikt over aktivitetar og starta ein "
 "aktivitet direkte"
 
-#: core/ChangeLog.qml:45
+#: core/ChangeLog.qml:50
 #, fuzzy
 msgctxt "ChangeLog|"
 msgid "Translation added for Latvian"
 msgstr "Lagt til omsetjing for aserbajdsjansk"
 
-#: core/ChangeLog.qml:56
+#: core/ChangeLog.qml:61
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
 msgstr "Lagt til omsetjingar for bulgarsk, galisisk og swahili"
 
-#: core/ChangeLog.qml:60
+#: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to directly start an activity at a specific level (--"
@@ -27191,17 +26972,17 @@ msgstr ""
 "Nytt kommandolinjeval for å starta aktivitet direkte på valt nivå («--start-"
 "level nivå», som skal brukast saman med «--launch aktivitets-ID»)"
 
-#: core/ChangeLog.qml:65
+#: core/ChangeLog.qml:70
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
 msgstr "Lagt til omsetjing for arabisk og esperanto"
 
-#: core/ChangeLog.qml:66 core/ChangeLog.qml:73
+#: core/ChangeLog.qml:71 core/ChangeLog.qml:78
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
 msgstr "Mange oppdaterte omsetjingar"
 
-#: core/ChangeLog.qml:72
+#: core/ChangeLog.qml:77
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
@@ -27210,22 +26991,22 @@ msgstr ""
 "Nytt kommandolinjeval («--difficulty {verdi|min-maks}») for å starta "
 "GCompris med vald vanskegrad"
 
-#: core/ChangeLog.qml:79
+#: core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr "Retta feil i talsamanliknings­aktiviteten"
 
-#: core/ChangeLog.qml:83
+#: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "Kart over Spania i geografi-aktiviteten"
 
-#: core/ChangeLog.qml:84
+#: core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr "Ukrainske talefiler"
 
-#: core/ChangeLog.qml:85
+#: core/ChangeLog.qml:90
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
@@ -27234,7 +27015,7 @@ msgstr ""
 "Kommandolinje-val for å visa oversikt over aktivitetar og starta ein "
 "aktivitet direkte"
 
-#: core/ChangeLog.qml:92
+#: core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
@@ -27243,33 +27024,33 @@ msgstr ""
 "Redusert storleiken på program­pakkane (alle plattformer) og på den eksterne "
 "biletsamlinga"
 
-#: core/ChangeLog.qml:93
+#: core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Forbetra biletkvaliteten i fleire aktivitetar"
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 "Retta feil i nokre overgangs­animasjonar i aktivitetane «Fornybar energi» og "
 "«Vasskrinsløpet»"
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:100
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 "Retta problem med at dødtastar vart ignorerte i nokre skriveaktivitetar på "
 "Linux"
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 "Retta nullstilling av brettet når ein manuelt endra nivå i aktiviteten "
 "«Logiske samanhengar»"
 
-#: core/ChangeLog.qml:100
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
@@ -27277,37 +27058,37 @@ msgstr ""
 "Retta feil i aktivitetane «Rekkjefølgja på bokstavane i alfabetet», «Partal "
 "og oddetal» og «Tal i rekkjefølgje»"
 
-#: core/ChangeLog.qml:104 core/ChangeLog.qml:112
+#: core/ChangeLog.qml:109 core/ChangeLog.qml:117
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Fleire feilrettingar"
 
-#: core/ChangeLog.qml:106
+#: core/ChangeLog.qml:111
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Oppdatert omsetjing for russisk"
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:112
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Nynorske talefiler"
 
-#: core/ChangeLog.qml:111
+#: core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "Lagt til omsetjingar for bretonsk, tsjekkisk og makedonsk"
 
-#: core/ChangeLog.qml:116
+#: core/ChangeLog.qml:121
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "Lagt til omsetjing for aserbajdsjansk"
 
-#: core/ChangeLog.qml:117
+#: core/ChangeLog.qml:122
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Nye kart og oppdaterte kart for geografiske aktivitetar"
 
-#: core/ChangeLog.qml:118
+#: core/ChangeLog.qml:123
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -27316,64 +27097,64 @@ msgstr ""
 "Nytt datasett for lykkjer i programmerings­labyrinten, og gjort opplærings­"
 "bileta mogleg å omsetja"
 
-#: core/ChangeLog.qml:119
+#: core/ChangeLog.qml:124
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
 "activity"
 msgstr "Nytt brett for å læra om kortslutningar i analogteknikk-aktiviteten"
 
-#: core/ChangeLog.qml:129
+#: core/ChangeLog.qml:134
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "Ny innstillingsmeny i aktivitetane, med val av datasett"
 
-#: core/ChangeLog.qml:135
+#: core/ChangeLog.qml:140
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Nye organisering av aktivitetane, med underkategoriar"
 
-#: core/ChangeLog.qml:136
+#: core/ChangeLog.qml:141
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "Lagt til omsetjing for makedonsk"
 
-#: core/ChangeLog.qml:137
+#: core/ChangeLog.qml:142
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Nye aktivitetar: programmerings­labyrint og babytangram"
 
-#: core/ChangeLog.qml:138
+#: core/ChangeLog.qml:143
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Nye innstillingar for bakgrunnsmusikk og lydstyrke"
 
-#: core/ChangeLog.qml:139
+#: core/ChangeLog.qml:144
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Ny fartsinnstilling i fleire aktivitetar"
 
-#: core/ChangeLog.qml:140
+#: core/ChangeLog.qml:145
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Nytt alternativ i sjakk­aktivitetane for å visa brikkene som er tekne"
 
-#: core/ChangeLog.qml:141
+#: core/ChangeLog.qml:146
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Nye teikningar for fargar, avanserte fargar og målskivespelet"
 
-#: core/ChangeLog.qml:142
+#: core/ChangeLog.qml:147
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Nye talefiler for engelsk (amerikansk)"
 
-#: core/ChangeLog.qml:143 core/ChangeLog.qml:151
+#: core/ChangeLog.qml:148 core/ChangeLog.qml:156
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Mange små rettingar og forbetringar"
 
-#: core/ChangeLog.qml:144
+#: core/ChangeLog.qml:149
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -27382,17 +27163,17 @@ msgstr ""
 "Oppdatert omsetjing for fleire språk (nynorsk, bretonsk, brasiliansk "
 "portugisisk, finsk, …)"
 
-#: core/ChangeLog.qml:145
+#: core/ChangeLog.qml:150
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr "Lagt til russisk datasett i «Trykk på ein bokstav»-aktiviteten"
 
-#: core/ChangeLog.qml:146
+#: core/ChangeLog.qml:151
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "Språkaktiviteten er no tilgjengeleg på nederlandsk"
 
-#: core/ChangeLog.qml:147
+#: core/ChangeLog.qml:152
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -27401,18 +27182,18 @@ msgstr ""
 "Dei norske fylka Nord-Trøndelag og Sør-Trøndelag er slått saman til eitt i "
 "kartaktiviteten"
 
-#: core/ChangeLog.qml:148
+#: core/ChangeLog.qml:153
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
 "Feilretting i punktskrift-aktiviteten, der cellene startar med 1, ikkje 0"
 
-#: core/ChangeLog.qml:149
+#: core/ChangeLog.qml:154
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "Lagt til omsetjingar for baskisk, ungarsk og malayalam"
 
-#: core/ChangeLog.qml:150
+#: core/ChangeLog.qml:155
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -27421,47 +27202,47 @@ msgstr ""
 "Kan no lagra og opna filer (enkel teksthandsamar, balanseøskje og "
 "pianokomponering)"
 
-#: core/ChangeLog.qml:151
+#: core/ChangeLog.qml:156
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Lagt til omsetjing for skotsk-gælisk"
 
-#: core/ChangeLog.qml:152
+#: core/ChangeLog.qml:157
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "Lagt til lisensside i oppsettet"
 
-#: core/ChangeLog.qml:152
+#: core/ChangeLog.qml:157
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Fleire utformingsendringar for betre ergonomi"
 
-#: core/ChangeLog.qml:153
+#: core/ChangeLog.qml:158
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr "Språkaktiviteten finst no òg på polsk, svensk og ukrainsk"
 
-#: core/ChangeLog.qml:154
+#: core/ChangeLog.qml:159
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Ein søkjefunksjon"
 
-#: core/ChangeLog.qml:155
+#: core/ChangeLog.qml:160
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Ein endringslogg"
 
-#: core/ChangeLog.qml:156
+#: core/ChangeLog.qml:161
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Mange små rettingar"
 
-#: core/ChangeLog.qml:156
+#: core/ChangeLog.qml:161
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "Språkaktiviteten finst no òg på fransk"
 
-#: core/ChangeLog.qml:157
+#: core/ChangeLog.qml:162
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -27470,7 +27251,7 @@ msgstr ""
 "Lagt til innlastingsbilete som viser at noko kan ta nokre sekund å fullføra "
 "(for eksempel innlasting av ein aktivitet)"
 
-#: core/ChangeLog.qml:157
+#: core/ChangeLog.qml:162
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -27479,12 +27260,12 @@ msgstr ""
 "Lagt til omsetjingar for katalansk, kinesisk (tradisjonell), finsk (92 % "
 "omsett), russisk (98 % omsett), slovakisk (92 % omsett) og tyrkisk"
 
-#: core/ChangeLog.qml:158
+#: core/ChangeLog.qml:163
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Lagt til omsetjingar for slovensk, tysk og galisisk"
 
-#: core/ChangeLog.qml:212
+#: core/ChangeLog.qml:217
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
@@ -28168,24 +27949,3 @@ msgstr "Lukk"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Start"
-
-#~ msgctxt "grammar_analysis|"
-#~ msgid "Grammatical analysis"
-#~ msgstr "Setningsanalyse"
-
-#~ msgctxt "grammar_analysis|"
-#~ msgid "Learn to identify grammatical classes."
-#~ msgstr "Læra å kjenna att setningsledd."
-
-#~ msgctxt "grammar_analysis|"
-#~ msgid ""
-#~ "Select a grammatical class from the list, then select the box under a "
-#~ "word and assign it the class."
-#~ msgstr ""
-#~ "Vel ein type setningsledd frå lista, og trykk så på ein boks for å "
-#~ "tildela setningsledd­typen til tilhøyrande ord."
-
-#~ msgctxt "grammar_analysis|"
-#~ msgid "Leave the box blank if no class matches."
-#~ msgstr ""
-#~ "La feltet stå tomt dersom det ikkje finst ein passande type setningsledd."

@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2025-03-07 16:30+0200\n"
+"PO-Revision-Date: 2025-04-27 16:57+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -2912,10 +2912,6 @@ msgstr ""
 "десяткового числа. Коли лампи буде увімкнено, натисніть кнопку «Гаразд»."
 
 #: activities/binary_bulb/BinaryBulb.qml:84
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "This activity teaches how to convert decimal numbers to binary numbers."
 msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr ""
@@ -2923,12 +2919,6 @@ msgstr ""
 "двійкову форму запису."
 
 #: activities/binary_bulb/BinaryBulb.qml:88
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Computers use transistors to count and transistors have only two states, "
-#| "0 and 1. Mathematically, these states are represented by 0 and 1, which "
-#| "makes up the binary system of numeration."
 msgctxt "BinaryBulb|"
 msgid ""
 "Computers use transistors to count and transistors have only two states, 0 "
@@ -2940,9 +2930,6 @@ msgstr ""
 "точки зору математики, це відповідає двійковій системі числення."
 
 #: activities/binary_bulb/BinaryBulb.qml:92
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr ""
@@ -2950,11 +2937,6 @@ msgstr ""
 "увімкнено."
 
 #: activities/binary_bulb/BinaryBulb.qml:96
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Binary system uses these numbers very efficiently, allowing to count from "
-#| "0 to 255 with 8 bits only."
 msgctxt "BinaryBulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
@@ -2964,13 +2946,6 @@ msgstr ""
 "запису чисел від 0 до 255 потрібно лише 8 двійкових цифр або бітів."
 
 #: activities/binary_bulb/BinaryBulb.qml:100
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Each bit adds a progressive value, corresponding to the powers of 2, "
-#| "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → "
-#| "2²=4 , bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit "
-#| "8 → 2⁷=128."
 msgctxt "BinaryBulb|"
 msgid ""
 "Each bit adds a progressive value, corresponding to the powers of 2, "
@@ -2984,9 +2959,6 @@ msgstr ""
 "2⁴=16 , біт 6 → 2⁵=32 , біт 7 → 2⁶=64 , біт 8 → 2⁷=128."
 
 #: activities/binary_bulb/BinaryBulb.qml:104
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr ""
@@ -2994,11 +2966,6 @@ msgstr ""
 "4 і 1."
 
 #: activities/binary_bulb/BinaryBulb.qml:108
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 "
-#| "is equal to binary 101."
 msgctxt "BinaryBulb|"
 msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
@@ -3008,9 +2975,6 @@ msgstr ""
 "Отже, десяткове 5 має двійкову форму запису 101."
 
 #: activities/binary_bulb/BinaryBulb.qml:112
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "This image will help you to compute bits' value."
 msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Це зображення допоможе вам обчислити значення бітів."
@@ -14655,36 +14619,21 @@ msgid "Empty"
 msgstr "Порожньо"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Grammatical analysis"
 msgctxt "GrammarAnalysis|"
 msgid "Grammatical analysis"
 msgstr "Граматичний аналіз"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "GrammarAnalysis|"
 msgid "Learn to identify grammatical classes."
 msgstr "Вивчення ідентифікації за граматичними класами."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:28
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid ""
-#| "Find all the words corresponding to the requested grammatical classes."
 msgctxt "GrammarAnalysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr "Знайдіть усі слова, що належать до наданого граматичного класу."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a grammatical class from the list, then select the box under a "
-#| "word and assign it the class."
 msgctxt "GrammarAnalysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
@@ -14694,9 +14643,6 @@ msgstr ""
 "пов'язати його із класом."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Leave the box blank if no class matches."
 msgctxt "GrammarAnalysis|"
 msgid "Leave the box blank if no class matches."
 msgstr "Не заповнюйте, якщо не відповідає жоден клас."
@@ -14728,35 +14674,21 @@ msgid "Leave the box blank if the class doesn't match."
 msgstr "Не заповнюйте, якщо не відповідає жоден клас."
 
 #: activities/grammar_classes/GrammarClasses.qml:15
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Grammatical classes"
 msgctxt "GrammarClasses|"
 msgid "Grammatical classes"
 msgstr "Граматичні класи"
 
 #: activities/grammar_classes/GrammarClasses.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "GrammarClasses|"
 msgid "Learn to identify grammatical classes."
 msgstr "Вивчення ідентифікації за граматичними класами."
 
 #: activities/grammar_classes/GrammarClasses.qml:17
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Find all the words corresponding to the requested grammatical class."
 msgctxt "GrammarClasses|"
 msgid "Find all the words corresponding to the requested grammatical class."
 msgstr "Знайдіть усі слова, що належать до наданого граматичного класу."
 
 #: activities/grammar_classes/GrammarClasses.qml:18
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid ""
-#| "Select the grammatical class from the list, then select the box under a "
-#| "word and assign it the class."
 msgctxt "GrammarClasses|"
 msgid ""
 "Select the grammatical class from the list, then select the box under a word "
@@ -14766,9 +14698,6 @@ msgstr ""
 "пов'язати його із класом."
 
 #: activities/grammar_classes/GrammarClasses.qml:19
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Leave the box blank if the class doesn't match."
 msgctxt "GrammarClasses|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr "Не заповнюйте, якщо не відповідає жоден клас."
@@ -15277,12 +15206,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Спроби: %1"
 
-#: activities/hangman/Hangman.qml:369
+#: activities/hangman/Hangman.qml:371
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Вибачте, у нас ще немає перекладу потрібною вам мовою."
 
-#: activities/hangman/Hangman.qml:370
+#: activities/hangman/Hangman.qml:372
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -15292,7 +15221,7 @@ msgstr ""
 "GCompris розроблено спільнотою KDE. Щоб допомогти у перекладі GCompris, "
 "долучіться до команди перекладачів на сайті <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:372
+#: activities/hangman/Hangman.qml:374
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -16348,11 +16277,6 @@ msgstr ""
 "перевірити вашу відповідь."
 
 #: activities/learn_decimals/Learn_decimals.qml:30
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A decimal number is displayed. The bar with the arrow represents a full "
-#| "unit, and each square in it represents one tenth of this unit."
 msgctxt "Learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
@@ -16362,13 +16286,6 @@ msgstr ""
 "квадратик відповідає десятій від цієї одиниці."
 
 #: activities/learn_decimals/Learn_decimals.qml:34
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a part of the bar, and drag the selected part of "
-#| "the bar to the empty area. Repeat these steps until the number of dropped "
-#| "bars corresponds to the displayed decimal number. Then click on the OK "
-#| "button to validate your answer."
 msgctxt "Learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -16476,12 +16393,6 @@ msgid "Numbers: type the result"
 msgstr "Числа: введіть результат"
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "An addition with two decimal numbers is displayed. The bar with the arrow "
-#| "represents a full unit, and each square in it represents one tenth of "
-#| "this unit."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "An addition with two decimal numbers is displayed. The bar with the arrow "
@@ -16492,13 +16403,6 @@ msgstr ""
 "одиниці, а кожен квадратик відповідає десятій від цієї одиниці."
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a part of the bar, and drag the selected part of "
-#| "the bar to the empty area. Repeat these steps until the number of dropped "
-#| "bars corresponds to the result of the addition, and click on the OK "
-#| "button to validate your answer."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -16512,11 +16416,6 @@ msgstr ""
 "«Гаразд», щоб перевірити вашу відповідь."
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:24
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -16578,12 +16477,6 @@ msgstr ""
 "відняти друге число і відтворити результат виконання дії."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A subtraction with two decimal numbers is displayed. Below it, the first "
-#| "number from the subtraction is represented with bars. One bar represents "
-#| "a full unit, and each square in it represents one tenth of this unit."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "A subtraction with two decimal numbers is displayed. Below it, the first "
@@ -16595,11 +16488,6 @@ msgstr ""
 "кожен квадратик відповідає десятій від цієї одиниці."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Click on the squares to subtract them and display the result of the "
-#| "operation, and click on the OK button to validate your answer."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
@@ -16609,11 +16497,6 @@ msgstr ""
 "Потім натисніть кнопку «Гаразд», щоб перевірити вашу відповідь."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:24
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -16783,23 +16666,12 @@ msgstr ""
 "відповідь."
 
 #: activities/learn_quantities/Learn_quantities.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgctxt "Learn_quantities|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr ""
 "Вказано кількість. За допомогою стрілки можна вибрати до 10 помаранчів."
 
 #: activities/learn_quantities/Learn_quantities.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a number of oranges, and drag the selected "
-#| "oranges to the empty area. Repeat these steps until the number of oranges "
-#| "corresponds to the requested quantity. Then click on the OK button to "
-#| "validate your answer."
 msgctxt "Learn_quantities|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "
@@ -19993,11 +19865,6 @@ msgid "Try again"
 msgstr "Спробувати ще раз"
 
 #: activities/nine_men_morris/NineMenMorris.qml:348
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "You and Tux start with 9 pieces each, and take turns to place your pieces "
-#| "on the empty spots of the board (by clicking on the spots)."
 msgctxt "NineMenMorris|"
 msgid ""
 "You and Tux start with 9 pieces each, and take turns to place your pieces on "
@@ -20008,12 +19875,6 @@ msgstr ""
 "на відповідному кружку)."
 
 #: activities/nine_men_morris/NineMenMorris.qml:352
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
-#| "remove it. Pieces of formed mill can not be removed unless no other "
-#| "pieces are left on the board."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
@@ -20025,12 +19886,6 @@ msgstr ""
 "є інші фішки."
 
 #: activities/nine_men_morris/NineMenMorris.qml:356
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "After all the pieces are placed, you and Tux will take turns to move "
-#| "them. Click on one of your pieces, and then on an adjacent empty spot to "
-#| "move it there. Green color spots indicates where you can move."
 msgctxt "NineMenMorris|"
 msgid ""
 "After all the pieces are placed, you and Tux will take turns to move them. "
@@ -20043,11 +19898,6 @@ msgstr ""
 "можна пересунути фішку, буде позначено зеленим кольором."
 
 #: activities/nine_men_morris/NineMenMorris.qml:360
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
-#| "moved to any vacant spot on the board."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
@@ -20057,11 +19907,6 @@ msgstr ""
 "фішки на будь-який вільний кружечок на дошці."
 
 #: activities/nine_men_morris/NineMenMorris.qml:364
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you immobilize the computer or leave it with less than 3 pieces, then "
-#| "you win the game."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
@@ -22376,19 +22221,11 @@ msgid "Loop"
 msgstr "Цикл"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:542
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Instruction Area:"
 msgctxt "ProgrammingMaze|"
 msgid "Instruction Area:"
 msgstr "Область команд:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:543
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "There are 3 instructions which you can use to code and lead Tux to the "
-#| "fish:"
 msgctxt "ProgrammingMaze|"
 msgid ""
 "There are 3 instructions which you can use to code and lead Tux to the fish:"
@@ -22397,11 +22234,6 @@ msgstr ""
 "спрямовування Тукса до рибки:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:544
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
-#| "facing."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
@@ -22411,43 +22243,26 @@ msgstr ""
 "куди звернуто його очі."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:545
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgctxt "ProgrammingMaze|"
 msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgstr "<b>2. Повернути ліворуч:</b> повертає Тукса ліворуч."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:546
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgctxt "ProgrammingMaze|"
 msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgstr "<b>3. Повернути праворуч:</b> повертає Тукса праворуч."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:550
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Main Function:"
 msgctxt "ProgrammingMaze|"
 msgid "Main Function:"
 msgstr "Основна функція:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:551
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "The execution of the code starts here."
 msgctxt "ProgrammingMaze|"
 msgid "The execution of the code starts here."
 msgstr "Тут розпочинається виконання коду."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:552
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-Click on any instruction in the <b>instruction area</b> to add it to the "
-#| "<b>Main Function</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-Click on any instruction in the <b>instruction area</b> to add it to the "
@@ -22457,11 +22272,6 @@ msgstr ""
 "<b>Основної функції</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:553
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-The instructions will execute in order until there's none left, or until "
-#| "a dead-end, or when Tux reaches the fish."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-The instructions will execute in order until there's none left, or until a "
@@ -22471,19 +22281,11 @@ msgstr ""
 "або до позиції, у якій Тукс зможе попоїсти рибки."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:563
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Procedure:"
 msgctxt "ProgrammingMaze|"
 msgid "Procedure:"
 msgstr "Процедура:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:564
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>Procedure</b> is a reusable set of instructions which can be <b>used "
-#| "in the code by calling it where needed</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
@@ -22493,12 +22295,6 @@ msgstr ""
 "коді, кожного разу, коли у цьому є потреба</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:565
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main "
-#| "Function area</b> to add your code, click on the <b>Procedure</b> or "
-#| "<b>Main Function</b> label."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
@@ -22510,19 +22306,11 @@ msgstr ""
 "функція</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:575
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Loop:"
 msgctxt "ProgrammingMaze|"
 msgid "Loop:"
 msgstr "Цикл:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:576
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
-#| "the number of times defined by the number inside it</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
@@ -22532,12 +22320,6 @@ msgstr ""
 "вказану кількість разів</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:577
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
-#| "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</"
-#| "b> label."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
@@ -26015,19 +25797,11 @@ msgid "Right Ballast Tank"
 msgstr "Права баластна цистерна"
 
 #: activities/submarine/Submarine.qml:133
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Move the submarine to the other side of the screen."
 msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "Пропливіть на підводному човні до іншого краю екрана."
 
 #: activities/submarine/Submarine.qml:136
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The leftmost item in the control panel is the engine of the submarine, "
-#| "indicating the current speed of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
@@ -26037,20 +25811,12 @@ msgstr ""
 "швидкості руху підводного човна."
 
 #: activities/submarine/Submarine.qml:139
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Increase or decrease the velocity of the submarine using the engine."
 msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr ""
 "За допомогою рушія підводного човна можна регулювати швидкість його руху."
 
 #: activities/submarine/Submarine.qml:142
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Press the + button to increase the velocity, or the - button to decrease "
-#| "the velocity."
 msgctxt "Submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
@@ -26060,27 +25826,16 @@ msgstr ""
 "швидкості."
 
 #: activities/submarine/Submarine.qml:149
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The item next to the engine is the ballast tank."
 msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "Елемент, розташований поряд із елементом рушія, є баластною цистерною."
 
 #: activities/submarine/Submarine.qml:152
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The ballast tanks are used to float or dive under water."
 msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr "Баластні цистерни використовуються для сплиття або занурення."
 
 #: activities/submarine/Submarine.qml:155
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "If the ballast tanks are empty, the submarine will float. If the ballast "
-#| "tanks are full of water, the submarine will dive underwater."
 msgctxt "Submarine|"
 msgid ""
 "If the ballast tanks are empty, the submarine will float. If the ballast "
@@ -26091,12 +25846,6 @@ msgstr ""
 "воду."
 
 #: activities/submarine/Submarine.qml:158
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Turning the upper valve on or off will alternatively allow or stop the "
-#| "water from filling in the ballast tank, thus allowing it to dive "
-#| "underwater."
 msgctxt "Submarine|"
 msgid ""
 "Turning the upper valve on or off will alternatively allow or stop the water "
@@ -26106,12 +25855,6 @@ msgstr ""
 "заповнення баластних цистерн водою, уможливлюючи занурення підводного човна."
 
 #: activities/submarine/Submarine.qml:161
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Turning the lower valve on or off will alternatively allow or stop the "
-#| "water from flushing out the ballast tank, thus allowing it to float on "
-#| "the surface of the water."
 msgctxt "Submarine|"
 msgid ""
 "Turning the lower valve on or off will alternatively allow or stop the water "
@@ -26123,11 +25866,6 @@ msgstr ""
 "човна."
 
 #: activities/submarine/Submarine.qml:168
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The rightmost item in the control panel controls the diving planes of the "
-#| "submarine"
 msgctxt "Submarine|"
 msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
@@ -26137,11 +25875,6 @@ msgstr ""
 "горизонтальними рулями підводного човна"
 
 #: activities/submarine/Submarine.qml:171
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The diving planes in a submarine are used to control the depth of the "
-#| "submarine accurately once it is underwater."
 msgctxt "Submarine|"
 msgid ""
 "The diving planes in a submarine are used to control the depth of the "
@@ -26151,11 +25884,6 @@ msgstr ""
 "регулювання глибини занурення під водою."
 
 #: activities/submarine/Submarine.qml:174
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Once the submarine is moving underwater, increasing or decreasing the "
-#| "angle of the planes will increase and decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "Once the submarine is moving underwater, increasing or decreasing the angle "
@@ -26166,11 +25894,6 @@ msgstr ""
 "занурення підводного човна під час його руху."
 
 #: activities/submarine/Submarine.qml:177
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The + button will increase the depth of the submarine, while the - button "
-#| "will decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "The + button will increase the depth of the submarine, while the - button "
@@ -26180,17 +25903,11 @@ msgstr ""
 "а за допомогою кнопки «-» зменшити її."
 
 #: activities/submarine/Submarine.qml:180
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Grab the crown to open the gate."
 msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "Піймайте корону, щоб відкрити шлюз."
 
 #: activities/submarine/Submarine.qml:183
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Check out the help menu for the keyboard controls."
 msgctxt "Submarine|"
 msgid "Check out the help menu for the keyboard controls."
 msgstr "Ознайомитися із клавішами керування можна за допомогою меню довідки."
@@ -27248,34 +26965,35 @@ msgctxt "ActivityInfo|"
 msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Наберіть слово повністю, доки воно падає на землю."
 
-#: core/ChangeLog.qml:30
-msgctxt "ChangeLog|"
-msgid "Translation added for Sanskrit"
-msgstr "Додано переклад санскритом"
-
-#: core/ChangeLog.qml:31 core/ChangeLog.qml:40 core/ChangeLog.qml:46
-#: core/ChangeLog.qml:51 core/ChangeLog.qml:57 core/ChangeLog.qml:86
-#: core/ChangeLog.qml:121 core/ChangeLog.qml:124 core/ChangeLog.qml:130
+#: core/ChangeLog.qml:30 core/ChangeLog.qml:36 core/ChangeLog.qml:45
+#: core/ChangeLog.qml:51 core/ChangeLog.qml:56 core/ChangeLog.qml:62
+#: core/ChangeLog.qml:91 core/ChangeLog.qml:126 core/ChangeLog.qml:129
+#: core/ChangeLog.qml:135
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Багато поліпшень у зручності користування"
 
-#: core/ChangeLog.qml:32 core/ChangeLog.qml:58 core/ChangeLog.qml:67
-#: core/ChangeLog.qml:74 core/ChangeLog.qml:87 core/ChangeLog.qml:105
-#: core/ChangeLog.qml:120 core/ChangeLog.qml:125 core/ChangeLog.qml:131
-msgctxt "ChangeLog|"
-msgid "Many new images"
-msgstr "Багато нових малюнків"
-
-#: core/ChangeLog.qml:33 core/ChangeLog.qml:41 core/ChangeLog.qml:47
-#: core/ChangeLog.qml:52 core/ChangeLog.qml:59 core/ChangeLog.qml:68
-#: core/ChangeLog.qml:75 core/ChangeLog.qml:88 core/ChangeLog.qml:126
-#: core/ChangeLog.qml:132
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:38 core/ChangeLog.qml:46
+#: core/ChangeLog.qml:52 core/ChangeLog.qml:57 core/ChangeLog.qml:64
+#: core/ChangeLog.qml:73 core/ChangeLog.qml:80 core/ChangeLog.qml:93
+#: core/ChangeLog.qml:131 core/ChangeLog.qml:137
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "Багато виправлень вад"
 
-#: core/ChangeLog.qml:34
+#: core/ChangeLog.qml:35
+msgctxt "ChangeLog|"
+msgid "Translation added for Sanskrit"
+msgstr "Додано переклад санскритом"
+
+#: core/ChangeLog.qml:37 core/ChangeLog.qml:63 core/ChangeLog.qml:72
+#: core/ChangeLog.qml:79 core/ChangeLog.qml:92 core/ChangeLog.qml:110
+#: core/ChangeLog.qml:125 core/ChangeLog.qml:130 core/ChangeLog.qml:136
+msgctxt "ChangeLog|"
+msgid "Many new images"
+msgstr "Багато нових малюнків"
+
+#: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"
 msgid ""
 "Automatic application of new language when changing it in the menu (no need "
@@ -27284,29 +27002,29 @@ msgstr ""
 "Автоматичне застосування нової мови при зміні у меню (не потрібно "
 "перезапускати GCompris)"
 
-#: core/ChangeLog.qml:35
+#: core/ChangeLog.qml:40
 msgctxt "ChangeLog|"
 msgid "Add splash screen at startup"
 msgstr "Додано екран вітання під час запуску"
 
-#: core/ChangeLog.qml:36
+#: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
 msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgstr ""
 "Новий параметр командного рядка для перемикання засобу обробки зображення (--"
 "renderer засіб_обробки)"
 
-#: core/ChangeLog.qml:45
+#: core/ChangeLog.qml:50
 msgctxt "ChangeLog|"
 msgid "Translation added for Latvian"
 msgstr "Додано переклад латвійською мовою"
 
-#: core/ChangeLog.qml:56
+#: core/ChangeLog.qml:61
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
 msgstr "Додано переклади такими мовами: болгарською, галісійською і суахілі."
 
-#: core/ChangeLog.qml:60
+#: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to directly start an activity at a specific level (--"
@@ -27316,17 +27034,17 @@ msgstr ""
 "певному рівні (--start-level рівень, слід використовувати з параметром --"
 "launch вправа)"
 
-#: core/ChangeLog.qml:65
+#: core/ChangeLog.qml:70
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
 msgstr "Додано переклади арабською мовою і есперанто"
 
-#: core/ChangeLog.qml:66 core/ChangeLog.qml:73
+#: core/ChangeLog.qml:71 core/ChangeLog.qml:78
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
 msgstr "Багато оновлень перекладів"
 
-#: core/ChangeLog.qml:72
+#: core/ChangeLog.qml:77
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
@@ -27335,22 +27053,22 @@ msgstr ""
 "Новий параметр командного рядка (--difficulty {значення|min-max}) для "
 "запуску GCompris із вказаним рівнем складності вправ"
 
-#: core/ChangeLog.qml:79
+#: core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr "Виправлено ваду у вправі з порівняння"
 
-#: core/ChangeLog.qml:83
+#: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "До географічної вправи додано карту Іспанії"
 
-#: core/ChangeLog.qml:84
+#: core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr "Додано озвучення для української"
 
-#: core/ChangeLog.qml:85
+#: core/ChangeLog.qml:90
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
@@ -27359,7 +27077,7 @@ msgstr ""
 "Новий параметр командного рядка для показу списку усіх вправ та запуску "
 "специфічної вправи"
 
-#: core/ChangeLog.qml:92
+#: core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
@@ -27367,31 +27085,31 @@ msgid ""
 msgstr ""
 "Зменшено розмір пакунків та зовнішнього набору зображень для усіх платформ"
 
-#: core/ChangeLog.qml:93
+#: core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Удосконалено якість зображено у декількох вправах"
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 "Виправлено деякі переходи у вправах renewable_energy/watercycle на деяких "
 "платформах"
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:100
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 "Усунено непрацездатність сліпих клавіш у Linux у вправах із набирання тексту"
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 "Виправлено скидання рівнів при зміні рівня вручну у вправі на логічні зв'язки"
 
-#: core/ChangeLog.qml:100
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
@@ -27399,37 +27117,37 @@ msgstr ""
 "Виправлено вправи на послідовність абетки, парні і непарні числа та "
 "упорядковування чисел."
 
-#: core/ChangeLog.qml:104 core/ChangeLog.qml:112
+#: core/ChangeLog.qml:109 core/ChangeLog.qml:117
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Декілька виправлень вад"
 
-#: core/ChangeLog.qml:106
+#: core/ChangeLog.qml:111
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Оновлено переклад російською"
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:112
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Нове озвучування для норвезької"
 
-#: core/ChangeLog.qml:111
+#: core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "Додано переклади бретонською, чеською та македонською мовами."
 
-#: core/ChangeLog.qml:116
+#: core/ChangeLog.qml:121
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "Додано переклад азербайджанською мовою"
 
-#: core/ChangeLog.qml:117
+#: core/ChangeLog.qml:122
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Нові карти і оновлення карт для географічних вправ"
 
-#: core/ChangeLog.qml:118
+#: core/ChangeLog.qml:123
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -27438,7 +27156,7 @@ msgstr ""
 "Новий набір даних із циклами для програмованого лабіринту, уможливлення "
 "перекладу картинок у підручнику"
 
-#: core/ChangeLog.qml:119
+#: core/ChangeLog.qml:124
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
@@ -27447,57 +27165,57 @@ msgstr ""
 "Додавання рівня для вивчення замкнених електричних кіл у вправі з аналогової "
 "електроніки"
 
-#: core/ChangeLog.qml:129
+#: core/ChangeLog.qml:134
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "Нове меню параметрів вправи із вибором набору даних"
 
-#: core/ChangeLog.qml:135
+#: core/ChangeLog.qml:140
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Нові підкатегорії упорядковування вправ"
 
-#: core/ChangeLog.qml:136
+#: core/ChangeLog.qml:141
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "Додано переклад македонською мовою."
 
-#: core/ChangeLog.qml:137
+#: core/ChangeLog.qml:142
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Нові вправи — «Програмований лабіринт» та «Дитяча танграма»"
 
-#: core/ChangeLog.qml:138
+#: core/ChangeLog.qml:143
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Нові параметри фонової музики та гучності."
 
-#: core/ChangeLog.qml:139
+#: core/ChangeLog.qml:144
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Новий параметр швидкості у декількох вправах."
 
-#: core/ChangeLog.qml:140
+#: core/ChangeLog.qml:145
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Новий параметр гри у шахи для показу битих фігур."
 
-#: core/ChangeLog.qml:141
+#: core/ChangeLog.qml:146
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Нові зображення у іграх «Кольори», «Складні кольори» та «Ціль»."
 
-#: core/ChangeLog.qml:142
+#: core/ChangeLog.qml:147
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Нове озвучування для американської англійської."
 
-#: core/ChangeLog.qml:143 core/ChangeLog.qml:151
+#: core/ChangeLog.qml:148 core/ChangeLog.qml:156
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Багато незначних виправлень і поліпшень."
 
-#: core/ChangeLog.qml:144
+#: core/ChangeLog.qml:149
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -27506,17 +27224,17 @@ msgstr ""
 "Оновлено переклади декількома мовами (бретонською, бразильською "
 "португальською, фінською тощо)."
 
-#: core/ChangeLog.qml:145
+#: core/ChangeLog.qml:150
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr "Додано набір даних для вправи «Натисніть літеру» російською мовою."
 
-#: core/ChangeLog.qml:146
+#: core/ChangeLog.qml:151
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "Мовні вправи тепер доступні голландською."
 
-#: core/ChangeLog.qml:147
+#: core/ChangeLog.qml:152
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -27525,19 +27243,19 @@ msgstr ""
 "Об'єднання норвезьких губерній Нур-Треннелаг і Сер-Треннелаг до губернії "
 "Треннелаг у вправі з географії."
 
-#: core/ChangeLog.qml:148
+#: core/ChangeLog.qml:153
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
 "Виправлено вправи з азбуки Брайля, у яких нумерація комірок починається з 1, "
 "а не з 0."
 
-#: core/ChangeLog.qml:149
+#: core/ChangeLog.qml:154
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "Додано переклади баскською, угорською та малаялам."
 
-#: core/ChangeLog.qml:150
+#: core/ChangeLog.qml:155
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -27546,48 +27264,48 @@ msgstr ""
 "Завантаження і збереження створеного (Дитячий текстовий процесор, Рівновага "
 "у скриньці та Композиція на піаніно)."
 
-#: core/ChangeLog.qml:151
+#: core/ChangeLog.qml:156
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Додано переклад шотландською гельською мовою."
 
-#: core/ChangeLog.qml:152
+#: core/ChangeLog.qml:157
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "До налаштувань додано сторінку ліцензування."
 
-#: core/ChangeLog.qml:152
+#: core/ChangeLog.qml:157
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Декілька змін у компонуванні з метою поліпшити ергономічність."
 
-#: core/ChangeLog.qml:153
+#: core/ChangeLog.qml:158
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr ""
 "Мовні вправи тепер доступні польською, шведською та українською мовами."
 
-#: core/ChangeLog.qml:154
+#: core/ChangeLog.qml:159
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Можливість пошуку."
 
-#: core/ChangeLog.qml:155
+#: core/ChangeLog.qml:160
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Журнал змін."
 
-#: core/ChangeLog.qml:156
+#: core/ChangeLog.qml:161
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Багато невеличких виправлень."
 
-#: core/ChangeLog.qml:156
+#: core/ChangeLog.qml:161
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "Мовні вправи тепер доступні французькою."
 
-#: core/ChangeLog.qml:157
+#: core/ChangeLog.qml:162
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -27597,7 +27315,7 @@ msgstr ""
 "виконання певних дій (наприклад завантаження вправи), яке триває декілька "
 "секунд."
 
-#: core/ChangeLog.qml:157
+#: core/ChangeLog.qml:162
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -27607,12 +27325,12 @@ msgstr ""
 "китайською, фінською, (перекладено 92%), російською (перекладено 98%), "
 "словацькою (перекладено 92%), турецькою."
 
-#: core/ChangeLog.qml:158
+#: core/ChangeLog.qml:163
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Додано переклади такими мовами: словенською, німецькою, галісійською."
 
-#: core/ChangeLog.qml:212
+#: core/ChangeLog.qml:217
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"

@@ -14861,12 +14861,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "प्रयत्नः कृतः : %1"
 
-#: activities/hangman/Hangman.qml:369
+#: activities/hangman/Hangman.qml:371
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "क्षम्यतां, अस्माकं कृते अद्यापि भवतः भाषायाः अनुवादः नास्ति।"
 
-#: activities/hangman/Hangman.qml:370
+#: activities/hangman/Hangman.qml:372
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -14876,7 +14876,7 @@ msgstr ""
 "GCompris KDE समुदायेन विकसितम् अस्ति, भवान् <a href=\"%2\">%2</a> इत्यत्र अनुवाददलेन "
 "सह सम्मिलितः भूत्वा GCompris इत्यस्य अनुवादं कर्तुं शक्नोति"
 
-#: activities/hangman/Hangman.qml:372
+#: activities/hangman/Hangman.qml:374
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -26470,34 +26470,35 @@ msgctxt "ActivityInfo|"
 msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "यथा यथा पतति तथा, भूमौ प्राप्तुं पूर्वं सम्पूर्णं शब्दं टङ्कयन्तु।"
 
-#: core/ChangeLog.qml:30
-msgctxt "ChangeLog|"
-msgid "Translation added for Sanskrit"
-msgstr "संस्कृताय अनुवादः योजितः"
-
-#: core/ChangeLog.qml:31 core/ChangeLog.qml:40 core/ChangeLog.qml:46
-#: core/ChangeLog.qml:51 core/ChangeLog.qml:57 core/ChangeLog.qml:86
-#: core/ChangeLog.qml:121 core/ChangeLog.qml:124 core/ChangeLog.qml:130
+#: core/ChangeLog.qml:30 core/ChangeLog.qml:36 core/ChangeLog.qml:45
+#: core/ChangeLog.qml:51 core/ChangeLog.qml:56 core/ChangeLog.qml:62
+#: core/ChangeLog.qml:91 core/ChangeLog.qml:126 core/ChangeLog.qml:129
+#: core/ChangeLog.qml:135
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "अनेकाः उपयोगितासुधाराः"
 
-#: core/ChangeLog.qml:32 core/ChangeLog.qml:58 core/ChangeLog.qml:67
-#: core/ChangeLog.qml:74 core/ChangeLog.qml:87 core/ChangeLog.qml:105
-#: core/ChangeLog.qml:120 core/ChangeLog.qml:125 core/ChangeLog.qml:131
-msgctxt "ChangeLog|"
-msgid "Many new images"
-msgstr "अनेकाः नवीनाः चित्राणि"
-
-#: core/ChangeLog.qml:33 core/ChangeLog.qml:41 core/ChangeLog.qml:47
-#: core/ChangeLog.qml:52 core/ChangeLog.qml:59 core/ChangeLog.qml:68
-#: core/ChangeLog.qml:75 core/ChangeLog.qml:88 core/ChangeLog.qml:126
-#: core/ChangeLog.qml:132
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:38 core/ChangeLog.qml:46
+#: core/ChangeLog.qml:52 core/ChangeLog.qml:57 core/ChangeLog.qml:64
+#: core/ChangeLog.qml:73 core/ChangeLog.qml:80 core/ChangeLog.qml:93
+#: core/ChangeLog.qml:131 core/ChangeLog.qml:137
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "अनेकाः दोषनिवारणाः"
 
-#: core/ChangeLog.qml:34
+#: core/ChangeLog.qml:35
+msgctxt "ChangeLog|"
+msgid "Translation added for Sanskrit"
+msgstr "संस्कृताय अनुवादः योजितः"
+
+#: core/ChangeLog.qml:37 core/ChangeLog.qml:63 core/ChangeLog.qml:72
+#: core/ChangeLog.qml:79 core/ChangeLog.qml:92 core/ChangeLog.qml:110
+#: core/ChangeLog.qml:125 core/ChangeLog.qml:130 core/ChangeLog.qml:136
+msgctxt "ChangeLog|"
+msgid "Many new images"
+msgstr "अनेकाः नवीनाः चित्राणि"
+
+#: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"
 msgid ""
 "Automatic application of new language when changing it in the menu (no need "
@@ -26506,27 +26507,27 @@ msgstr ""
 "मेनू परिवर्तनं कुर्वन् नूतनभाषायाः स्वचालितं अनुप्रयोगं (GCompris पुनः आरभ्यत इति आवश्यकता "
 "नास्ति)"
 
-#: core/ChangeLog.qml:35
+#: core/ChangeLog.qml:40
 msgctxt "ChangeLog|"
 msgid "Add splash screen at startup"
 msgstr "प्रारम्भे splash screen योजयन्तु"
 
-#: core/ChangeLog.qml:36
+#: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
 msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgstr "रेण्डररं स्विच् कर्तुं नूतनः आदेशपङ्क्तिविकल्पः (--renderer renderer)"
 
-#: core/ChangeLog.qml:45
+#: core/ChangeLog.qml:50
 msgctxt "ChangeLog|"
 msgid "Translation added for Latvian"
 msgstr "लाट्वियन् कृते अनुवादः योजितः"
 
-#: core/ChangeLog.qml:56
+#: core/ChangeLog.qml:61
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
 msgstr "बल्गेरिया, गैलिशियन्, स्वाहिली च कृते अनुवादाः योजिताः"
 
-#: core/ChangeLog.qml:60
+#: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to directly start an activity at a specific level (--"
@@ -26535,17 +26536,17 @@ msgstr ""
 "विशिष्टस्तरस्य प्रत्यक्षतया क्रियाकलापस्य आरम्भार्थं नूतनः आदेशपङ्क्तिविकल्पः (--start-level "
 "level, --launch activity इत्यनेन सह उपयोक्तव्यः)"
 
-#: core/ChangeLog.qml:65
+#: core/ChangeLog.qml:70
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
 msgstr "अरबी-एस्पेरान्टो-भाषायाः अनुवादाः योजिताः"
 
-#: core/ChangeLog.qml:66 core/ChangeLog.qml:73
+#: core/ChangeLog.qml:71 core/ChangeLog.qml:78
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
 msgstr "अनेकाः अनुवादाः अद्यतनाः"
 
-#: core/ChangeLog.qml:72
+#: core/ChangeLog.qml:77
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
@@ -26554,29 +26555,29 @@ msgstr ""
 "विशिष्टकठिनतायां GCompris आरभ्यतुं नूतनः आदेश-पङ्क्तिविकल्पः (--difficulty {value|min-"
 "max})"
 
-#: core/ChangeLog.qml:79
+#: core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr "तुलनात्मकक्रियाकलापे समस्यां निवारयन्तु"
 
-#: core/ChangeLog.qml:83
+#: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "भूगोलक्रियाकलापार्थं स्पेनदेशस्य नक्शाः योजितः"
 
-#: core/ChangeLog.qml:84
+#: core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr "युक्रेनीयानां कृते स्वराः योजिताः"
 
-#: core/ChangeLog.qml:85
+#: core/ChangeLog.qml:90
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
 "one"
 msgstr "सर्वाणि क्रियाकलापाः सूचीकृत्य विशिष्टे आरम्भं कर्तुं नूतनः आदेशपङ्क्तिविकल्पः"
 
-#: core/ChangeLog.qml:92
+#: core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
@@ -26585,66 +26586,66 @@ msgstr ""
 "सर्वेषां मञ्चानां कृते संकुलानाम् आकारं न्यूनीकरोतु तथा च बाह्यशब्दप्रतिबिम्बसमूहस्य आकारं "
 "न्यूनीकरोतु"
 
-#: core/ChangeLog.qml:93
+#: core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "अनेकक्रियासु चित्राणां गुणवत्तां सुदृढं कुर्वन्तु"
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr "केषुचित् मञ्चेषु renewable_energy/watercycle इत्यत्र केचन संक्रमणानि निश्चययन्तु"
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:100
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr "टङ्कनक्रियाणां कृते Linux इत्यत्र उपेक्षितानि मृतकीलानि निश्चययन्तु"
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 "Logical associations इत्यत्र स्तरं मैन्युअल् रूपेण परिवर्तयन्ते सति level reset इति निश्चयं "
 "कुर्वन्तु"
 
-#: core/ChangeLog.qml:100
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
 msgstr ""
 "Alphabet sequence, Even and odd numbers तथा Numbers क्रमेण क्रियाकलापाः निश्चययन्तु"
 
-#: core/ChangeLog.qml:104 core/ChangeLog.qml:112
+#: core/ChangeLog.qml:109 core/ChangeLog.qml:117
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "अनेकाः दोषनिवारणाः"
 
-#: core/ChangeLog.qml:106
+#: core/ChangeLog.qml:111
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "रूसीभाषायाः कृते अनुवादः अद्यतनः"
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:112
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "नार्वेदेशस्य नायनोर्स्कस्य कृते नवीनाः स्वराः"
 
-#: core/ChangeLog.qml:111
+#: core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "ब्रेटोन्, चेक्, मैसिडोनियाभाषायाः अनुवादाः योजिताः"
 
-#: core/ChangeLog.qml:116
+#: core/ChangeLog.qml:121
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "अजरबैजानीभाषायाः कृते अनुवादः योजितः"
 
-#: core/ChangeLog.qml:117
+#: core/ChangeLog.qml:122
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "भूगोलक्रियाकलापानाम् कृते नवीननक्शाः नक्शानां अद्यतनीकरणं च"
 
-#: core/ChangeLog.qml:118
+#: core/ChangeLog.qml:123
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -26653,81 +26654,81 @@ msgstr ""
 "प्रोग्रामिंग् भूलभुलैया कृते लूप्स् ऑपरेशन्स् युक्तः नूतनः डाटासेट्, तथा च ट्यूटोरियल इमेज् अनुवादितं "
 "करोति"
 
-#: core/ChangeLog.qml:119
+#: core/ChangeLog.qml:124
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
 "activity"
 msgstr "एनालॉग् विद्युत्क्रियायां वोल्टेजस्रोतपाशं शिक्षितुं स्तरस्य योजनम्"
 
-#: core/ChangeLog.qml:129
+#: core/ChangeLog.qml:134
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "नूतनं Activity Settings मेन्यू, dataset चयनेन सह"
 
-#: core/ChangeLog.qml:135
+#: core/ChangeLog.qml:140
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "क्रियाकलापानाम् आयोजनार्थं नवीनाः उपवर्गाः"
 
-#: core/ChangeLog.qml:136
+#: core/ChangeLog.qml:141
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "मैसिडोनियाभाषायाः कृते अनुवादः योजितः।"
 
-#: core/ChangeLog.qml:137
+#: core/ChangeLog.qml:142
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "नवीन क्रियाकलाप प्रोग्रामिंग भूलभुलैया तथा बेबी टैंग्राम"
 
-#: core/ChangeLog.qml:138
+#: core/ChangeLog.qml:143
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "नवीनं पृष्ठभूमिसङ्गीतं तथा मात्रासेटिंग्स्।"
 
-#: core/ChangeLog.qml:139
+#: core/ChangeLog.qml:144
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "अनेकक्रियासु नूतनवेगस्थापनम्।"
 
-#: core/ChangeLog.qml:140
+#: core/ChangeLog.qml:145
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "गृहीतखण्डान् प्रदर्शयितुं शतरंजक्रीडायां नूतनः विकल्पः।"
 
-#: core/ChangeLog.qml:141
+#: core/ChangeLog.qml:146
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Colors, Advanced colors तथा Target game इत्यत्र नवीनाः चित्राणि।"
 
-#: core/ChangeLog.qml:142
+#: core/ChangeLog.qml:147
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "अमेरिकी आङ्ग्लभाषायाः कृते नवीनाः स्वराः।"
 
-#: core/ChangeLog.qml:143 core/ChangeLog.qml:151
+#: core/ChangeLog.qml:148 core/ChangeLog.qml:156
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "अनेकाः अल्पाः निश्चयाः सुधाराः च।"
 
-#: core/ChangeLog.qml:144
+#: core/ChangeLog.qml:149
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
 "Finnish...)."
 msgstr "अनुवादः बहुभाषाणां कृते अद्यतनः (ब्रेटन, ब्राजीलियन पुर्तगाली, फिनिश...)."
 
-#: core/ChangeLog.qml:145
+#: core/ChangeLog.qml:150
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr "अक्षरक्रियाकलापस्य क्लिक् इत्यस्य कृते रूसीदत्तांशसमूहं योजयतु।"
 
-#: core/ChangeLog.qml:146
+#: core/ChangeLog.qml:151
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "अधुना डच्भाषायां लैङ्ग् क्रियाकलापः उपलभ्यते ।"
 
-#: core/ChangeLog.qml:147
+#: core/ChangeLog.qml:152
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -26736,64 +26737,64 @@ msgstr ""
 "नार्वेदेशस्य काउण्टी Nord-Trøndelag तथा Sør-Trøndelag इत्येतयोः भू-देशक्रियाकलापयोः "
 "Trøndelag इत्यत्र विलयः कुर्वन्तु ।"
 
-#: core/ChangeLog.qml:148
+#: core/ChangeLog.qml:153
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr "ब्रेलक्रियासु यत्र कोष्ठकाः 1 तः आरभन्ते तत्र निश्चयं कुर्वन्तु, न तु 0 तः ।"
 
-#: core/ChangeLog.qml:149
+#: core/ChangeLog.qml:154
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "बास्क्, हङ्गरी, मलयालम्भाषायाः अनुवादः योजितः ।"
 
-#: core/ChangeLog.qml:150
+#: core/ChangeLog.qml:155
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
 "Composition)."
 msgstr "रचनानां लोडिंग्/सेविंग् (बेबी वर्डप्रोसेसर, बैलेन्स बॉक्स तथा पियानो रचना)।"
 
-#: core/ChangeLog.qml:151
+#: core/ChangeLog.qml:156
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "स्कॉटिश-गेलिक-भाषायाः अनुवादाः योजिताः ।"
 
-#: core/ChangeLog.qml:152
+#: core/ChangeLog.qml:157
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "विन्यासे अनुज्ञापत्रपृष्ठं योजितम् ।"
 
-#: core/ChangeLog.qml:152
+#: core/ChangeLog.qml:157
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "एर्गोनॉमी इत्यस्य उन्नयनार्थं विन्यासेषु बहुविधाः परिवर्तनाः।"
 
-#: core/ChangeLog.qml:153
+#: core/ChangeLog.qml:158
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr "अधुना पोलिश-स्वीडिश-युक्रेन-भाषासु लङ्ग-क्रियाकलापः उपलभ्यते ।"
 
-#: core/ChangeLog.qml:154
+#: core/ChangeLog.qml:159
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "अन्वेषणविशेषता।"
 
-#: core/ChangeLog.qml:155
+#: core/ChangeLog.qml:160
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "एकः परिवर्तनलेखः ।"
 
-#: core/ChangeLog.qml:156
+#: core/ChangeLog.qml:161
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "अनेकाः अल्पाः निश्चयाः।"
 
-#: core/ChangeLog.qml:156
+#: core/ChangeLog.qml:161
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "अधुना फ्रेंचभाषायां लङ्ग-क्रियाकलापः उपलभ्यते ।"
 
-#: core/ChangeLog.qml:157
+#: core/ChangeLog.qml:162
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -26802,7 +26803,7 @@ msgstr ""
 "उपयोक्तारं ज्ञापयितुं लोडिंग् ओवरले योजयित्वा यत् केचन क्रियाः भवन्ति (उदाहरणार्थं "
 "क्रियाकलापस्य लोडिंग्) तथा च केचन सेकेण्ड् यावत् समयः भवितुं शक्नोति ।"
 
-#: core/ChangeLog.qml:157
+#: core/ChangeLog.qml:162
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -26811,12 +26812,12 @@ msgstr ""
 "अनुवादाः योजिताः : कातालान (वैलेन्सिया), चीनी पारम्परिक, फिनिश (९२% अनुवाद), रूसी "
 "(९८% अनुवाद), स्लोवाक (९२% अनुवाद), तुर्की."
 
-#: core/ChangeLog.qml:158
+#: core/ChangeLog.qml:163
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "अनुवादाः योजिताः: स्लोवेनियाई, जर्मनभाषा, गैलिशियन्."
 
-#: core/ChangeLog.qml:212
+#: core/ChangeLog.qml:217
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
