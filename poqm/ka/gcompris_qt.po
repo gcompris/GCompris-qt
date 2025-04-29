@@ -2785,10 +2785,6 @@ msgid ""
 msgstr ""
 
 #: activities/binary_bulb/BinaryBulb.qml:84
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "This activity teaches how to convert decimal numbers to binary numbers."
 msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr "ეს აქტივობა ათობითი რიცხვების ორობითში გადაყვანას გასწავლით."
@@ -2802,9 +2798,6 @@ msgid ""
 msgstr ""
 
 #: activities/binary_bulb/BinaryBulb.qml:92
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr "აქტივობაში 0 და 1 სიმულირებულია ნათურებით, მათი ჩართვით ან გამორთვით."
@@ -2826,9 +2819,6 @@ msgid ""
 msgstr ""
 
 #: activities/binary_bulb/BinaryBulb.qml:104
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr ""
@@ -2843,9 +2833,6 @@ msgid ""
 msgstr ""
 
 #: activities/binary_bulb/BinaryBulb.qml:112
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "This image will help you to compute bits' value."
 msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "ეს ცხრილი ბიტის მნიშვნელობის გამოთვლაში დაგეხმარებათ."
@@ -12084,13 +12071,14 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to locate and place the continents and many countries on the world map."
 msgstr ""
+"ისწავლეთ კონტინენტებისა და ქვეყნების პოვნა და განლაგება მსოფლიო რუკაზე."
 
 #. Help manual
 #: activities/geography/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the map pieces to their correct location to complete the map."
-msgstr ""
+msgstr "გადაათრიეთ და დაყარეთ რუკის ნაწილები სწორ ადგილებზე - დაასრულეთ რუკა."
 
 #: activities/geography/resource/board/board10_0.qml:15
 msgctxt "board10_0|"
@@ -13729,6 +13717,8 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"აირჩიეთ გრამატიკული კლასი სიიდან, შემდეგ დასვით თოლია სიტყვის ქვეშ და "
+"მიანიჭეთ ის კლასს."
 
 #: activities/grammar_analysis/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -13769,36 +13759,21 @@ msgid "Empty"
 msgstr "ცარიელი"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Grammatical analysis"
 msgctxt "GrammarAnalysis|"
 msgid "Grammatical analysis"
 msgstr "გრამატიკული ანალიზი"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "GrammarAnalysis|"
 msgid "Learn to identify grammatical classes."
 msgstr "ისწავლეთ გრამატიკული კლასების ამოცნობა."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:28
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid ""
-#| "Find all the words corresponding to the requested grammatical classes."
 msgctxt "GrammarAnalysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr "იპოვეთ ყველა სიტყვა, რომელიც მოთხოვნილ გრამატიკულ კლასებს მიეკუთვნება."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:29
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid ""
-#| "Select a grammatical class from the list, then select the box under a "
-#| "word and assign it the class."
 msgctxt "GrammarAnalysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
@@ -13808,9 +13783,6 @@ msgstr ""
 "მიანიჭეთ ის კლასს."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Leave the box blank if no class matches."
 msgctxt "GrammarAnalysis|"
 msgid "Leave the box blank if no class matches."
 msgstr "დატოვეთ კვადრატი ცარიელი, თუ შესაბამისი კლასი არ არსებობს."
@@ -13842,35 +13814,21 @@ msgid "Leave the box blank if the class doesn't match."
 msgstr "დატოვეთ ველი ცარიელი, თუ კლასი არ ემთხვევა."
 
 #: activities/grammar_classes/GrammarClasses.qml:15
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Grammatical classes"
 msgctxt "GrammarClasses|"
 msgid "Grammatical classes"
 msgstr "გრამატიკული კლასები"
 
 #: activities/grammar_classes/GrammarClasses.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "GrammarClasses|"
 msgid "Learn to identify grammatical classes."
 msgstr "ისწავლეთ გრამატიკული კლასების ამოცნობა."
 
 #: activities/grammar_classes/GrammarClasses.qml:17
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Find all the words corresponding to the requested grammatical class."
 msgctxt "GrammarClasses|"
 msgid "Find all the words corresponding to the requested grammatical class."
 msgstr "იპოვეთ ყველა სიტყვა, რომელიც მოთხოვნილ გრამატიკულ კლასს შეესაბამება."
 
 #: activities/grammar_classes/GrammarClasses.qml:18
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid ""
-#| "Select the grammatical class from the list, then select the box under a "
-#| "word and assign it the class."
 msgctxt "GrammarClasses|"
 msgid ""
 "Select the grammatical class from the list, then select the box under a word "
@@ -13880,9 +13838,6 @@ msgstr ""
 "მიანიჭეთ ის კლასს."
 
 #: activities/grammar_classes/GrammarClasses.qml:19
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Leave the box blank if the class doesn't match."
 msgctxt "GrammarClasses|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr "დატოვეთ ველი ცარიელი, თუ კლასი არ ემთხვევა."
@@ -18329,7 +18284,7 @@ msgstr "მარცხენა და მარჯვენა ისრებ
 #: activities/money_cents/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
-msgstr ""
+msgstr "Tab: გადასვლა ქვედა და ზედა ადგილებს შორის"
 
 #: activities/money/money.js:148
 msgctxt "money|"
@@ -19095,7 +19050,7 @@ msgstr "დაალაგეთ მითითებული მოვლე�
 #: activities/ordering_chronology/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Learn to order an event sequence in chronological order."
-msgstr ""
+msgstr "ისწავლეთ მოვლენების ქრონოლოგიურად დალაგება."
 
 #. Help manual
 #: activities/ordering_chronology/ActivityInfo.qml:30
@@ -19241,7 +19196,7 @@ msgstr "დაალაგეთ მითითებული სიტყვ�
 #: activities/ordering_sentences/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Practice ordering words to form a meaningful sentence."
-msgstr ""
+msgstr "ივარჯიშეთ სიტყვების აზრიან წინადადებაში დალაგებაში."
 
 #. Help manual
 #: activities/ordering_sentences/ActivityInfo.qml:29
@@ -20851,9 +20806,6 @@ msgid "Loop"
 msgstr "მარყუჟი"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:542
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Instruction Area:"
 msgctxt "ProgrammingMaze|"
 msgid "Instruction Area:"
 msgstr "ინსტრუქციების ალაგი:"
@@ -20865,11 +20817,6 @@ msgid ""
 msgstr ""
 
 #: activities/programmingMaze/ProgrammingMaze.qml:544
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
-#| "facing."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
@@ -20879,43 +20826,26 @@ msgstr ""
 "ის აწყდება."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:545
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgctxt "ProgrammingMaze|"
 msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgstr "<b>2. მარცხნივ მიბრუნება:</b> მიაბრუნებს ტუქსს მარცხნივ."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:546
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgctxt "ProgrammingMaze|"
 msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgstr "<b>3. მარჯვნივ მიბრუნება:</b> მიაბრუნებს ტუქსს მარჯვნივ."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:550
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Main Function:"
 msgctxt "ProgrammingMaze|"
 msgid "Main Function:"
 msgstr "მთავარი ფუნქცია:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:551
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "The execution of the code starts here."
 msgctxt "ProgrammingMaze|"
 msgid "The execution of the code starts here."
 msgstr "კოდის შესრულება აქ იწყება."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:552
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-Click on any instruction in the <b>instruction area</b> to add it to the "
-#| "<b>Main Function</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-Click on any instruction in the <b>instruction area</b> to add it to the "
@@ -20932,9 +20862,6 @@ msgid ""
 msgstr ""
 
 #: activities/programmingMaze/ProgrammingMaze.qml:563
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Procedure:"
 msgctxt "ProgrammingMaze|"
 msgid "Procedure:"
 msgstr "პროცედურა:"
@@ -20955,19 +20882,11 @@ msgid ""
 msgstr ""
 
 #: activities/programmingMaze/ProgrammingMaze.qml:575
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Loop:"
 msgctxt "ProgrammingMaze|"
 msgid "Loop:"
 msgstr "მარყუჟი:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:576
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
-#| "the number of times defined by the number inside it</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
@@ -22409,7 +22328,7 @@ msgstr ""
 #: activities/share/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
-msgstr ""
+msgstr "მაქს 30 კონფეტი და 6 ბავშვი, შეიძლება დანარჩენი."
 
 #: activities/share/share.js:115
 #, qt-format
@@ -22476,7 +22395,7 @@ msgstr ""
 #: activities/simplepaint/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
-msgstr ""
+msgstr "Tab: გადართვა ფერების ამრჩევისა და ხატვის ადგილს შორის"
 
 #: activities/sketch/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
@@ -22744,7 +22663,7 @@ msgstr "რიცხვები კამათლით"
 #: activities/smallnumbers/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Count the number of dots on the dice before it reaches the ground."
-msgstr ""
+msgstr "დაითვალეთ წერტილები კამათელზე, სანამ ის მიწას მიაღწევს."
 
 #. Help goal
 #: activities/smallnumbers/ActivityInfo.qml:20
@@ -22765,6 +22684,7 @@ msgstr "თვლის უნარები."
 msgctxt "ActivityInfo|"
 msgid "Type the number of dots you see on each falling dice."
 msgstr ""
+"აკრიფეთ წერტილების რაოდენობა, რომელსაც თითოეულ ვარდნილ კამათელზე ხედავთ."
 
 #: activities/smallnumbers/resource/1/Data.qml:14
 #: activities/smallnumbers2/resource/1/Data.qml:14
@@ -22869,13 +22789,14 @@ msgstr "რიცხვები დომინოთი"
 #: activities/smallnumbers2/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Count the number of dots on the domino before it reaches the ground."
-msgstr ""
+msgstr "დაითვალეთ დომინოს წერტილები, სანამ ის მიწას მიაღწევს."
 
 #. Help manual
 #: activities/smallnumbers2/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Type the number of dots you see on each falling domino."
 msgstr ""
+"აკრიფეთ წერტილების რაოდენობა, რომელსაც თითოეულ ვარდნილ დომინოზე ხედავთ."
 
 #: activities/smallnumbers2/resource/1/Data.qml:18
 msgctxt "Data|"
@@ -24174,26 +24095,18 @@ msgid "Right Ballast Tank"
 msgstr "მარჯვენა ბალასტის ავზი"
 
 #: activities/submarine/Submarine.qml:133
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Move the submarine to the other side of the screen."
 msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "გადაიტანეთ წყალქვეშა ნავი ეკრანის მეორე მხარეს."
 
 #: activities/submarine/Submarine.qml:136
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The + button will increase the depth of the submarine, while the - button "
-#| "will decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
 "indicating the current speed of the submarine."
 msgstr ""
-"+ ღილაკი გაზრდის წყალქვეშა ნავის სიღრმეს, ხოლო ღილაკი შეამცირებს წყალქვეშა "
-"ნავის სიღრმეს."
+"კონტროლის პანელის ყველაზე მარცხენა ელემენტი წყალქვეშა ნავის ძრავაა და მის "
+"მიმდინარე სიჩქარეს აჩვენებს."
 
 #: activities/submarine/Submarine.qml:139
 msgctxt "Submarine|"
@@ -24201,31 +24114,18 @@ msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr ""
 
 #: activities/submarine/Submarine.qml:142
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The + button will increase the depth of the submarine, while the - button "
-#| "will decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
 "velocity."
-msgstr ""
-"+ ღილაკი გაზრდის წყალქვეშა ნავის სიღრმეს, ხოლო ღილაკი შეამცირებს წყალქვეშა "
-"ნავის სიღრმეს."
+msgstr "+ ღილაკი გაზრდის სიჩქარეს, - ღილაკი კი - შეამცირებს მას."
 
 #: activities/submarine/Submarine.qml:149
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The item next to the engine is the ballast tank."
 msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "ნივთი ძრავთან ბალასტის ავზია."
 
 #: activities/submarine/Submarine.qml:152
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The ballast tanks are used to float or dive under water."
 msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr "ბალასტის ავზები გამოიყენება, რომ ან იტივტივოთ, ან ჩაყვინთოთ წყალში."
@@ -24267,25 +24167,15 @@ msgid ""
 msgstr ""
 
 #: activities/submarine/Submarine.qml:174
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The + button will increase the depth of the submarine, while the - button "
-#| "will decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "Once the submarine is moving underwater, increasing or decreasing the angle "
 "of the planes will increase and decrease the depth of the submarine."
 msgstr ""
-"+ ღილაკი გაზრდის წყალქვეშა ნავის სიღრმეს, ხოლო ღილაკი შეამცირებს წყალქვეშა "
-"ნავის სიღრმეს."
+"როცა წყალქვეშა ნავი მოძრაობს წყალქვეშ, სიბრტყეების კუთხის გაზრდა ან "
+"შემცირება მისი სიღრმის გაზრდას და შემცირებას გამოიწვევს."
 
 #: activities/submarine/Submarine.qml:177
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The + button will increase the depth of the submarine, while the - button "
-#| "will decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "The + button will increase the depth of the submarine, while the - button "
@@ -24295,17 +24185,11 @@ msgstr ""
 "ნავის სიღრმეს."
 
 #: activities/submarine/Submarine.qml:180
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Grab the crown to open the gate."
 msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "აირეთ გვირგვინი, რომ კარიბჭე გააღოთ."
 
 #: activities/submarine/Submarine.qml:183
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Check out the help menu for the keyboard controls."
 msgctxt "Submarine|"
 msgid "Check out the help menu for the keyboard controls."
 msgstr "შეამოწმეთ დახმარების მენიუ კლავიატურით მართვისთვის."
