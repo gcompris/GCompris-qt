@@ -101,14 +101,6 @@ ActivityBase {
                     horizontalCenter: parent.horizontalCenter
                     top: parent.bottom
                     topMargin: -parent.height * 0.12 - (disc.height * disc.position)
-
-                    Behavior on topMargin {
-                        NumberAnimation {
-                            id: bouncebehavior
-                            duration: 100
-                            easing.type: Easing.OutQuint
-                        }
-                    }
                 }
 
                 Rectangle {
