@@ -40,6 +40,8 @@ Item {
     property string lastClefAdded
     property int distanceBetweenStaff: GCStyle.baseMargins
 
+    readonly property real scrollDistance: staffHeight + distanceBetweenStaff
+
     // Stores the note index which is selected.
     property int selectedIndex: -1
 
@@ -311,10 +313,6 @@ Item {
                                       "staffNb_": multipleStaff.currentEnteringStaff,
                                       "isDefaultClef_": true, "elementType_": "clef"})
 
-            if(!isUnflicked) {
-                flickableStaves.flick(0, - nbStaves * multipleStaff.height * 1.3)
-            }
-
             if(elementType === "clef") {
                 return 0
             }
@@ -331,6 +329,16 @@ Item {
                                       "clefType_": clefType, "highlightWhenPlayed_": highlightWhenPlayed,
                                       "staffNb_": multipleStaff.currentEnteringStaff,
                                       "isDefaultClef_": isDefaultClef, "elementType_": elementType})
+
+            if(!isUnflicked) {
+                if(flickableStaves.contentY < (multipleStaff.currentEnteringStaff - 1) * multipleStaff.scrollDistance) {
+                    // scroll down to see entered note
+                    flickableStaves.contentY = (multipleStaff.currentEnteringStaff - 1) * multipleStaff.scrollDistance
+                } else if(flickableStaves.contentY > multipleStaff.currentEnteringStaff * multipleStaff.scrollDistance) {
+                    // scroll up to see entered note
+                    flickableStaves.contentY = multipleStaff.currentEnteringStaff * multipleStaff.scrollDistance
+                }
+            }
         }
         else {
             var tempModel = createNotesBackup()
@@ -393,7 +401,7 @@ Item {
         // Remove the remaining unused staffs.
         if((multipleStaff.currentEnteringStaff + 1 < multipleStaff.nbStaves) && (multipleStaff.nbStaves > 2)) {
             nbStaves = multipleStaff.currentEnteringStaff + 1
-            flickableStaves.flick(0, - nbStaves * multipleStaff.height * 1.3)
+            flickableStaves.originY = 0
         }
 
         var lastMusicElement = musicElementModel.get(musicElementModel.count - 1)

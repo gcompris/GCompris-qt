@@ -245,8 +245,8 @@ ActivityBase {
             anchors.verticalCenter: multipleStaff.verticalCenter
             width: bar.height * 0.3
             height: width * 2
-            onUp: multipleStaff.flickableStaves.flick(0, multipleStaff.height * 1.3)
-            onDown: multipleStaff.flickableStaves.flick(0, -multipleStaff.height * 1.3)
+            onUp: multipleStaff.flickableStaves.contentY -= multipleStaff.scrollDistance
+            onDown: multipleStaff.flickableStaves.contentY += multipleStaff.scrollDistance
             upVisible: multipleStaff.flickableStaves.atYBeginning ? false : true
             downVisible: multipleStaff.flickableStaves.atYEnd ? false : true
         }
