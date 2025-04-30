@@ -75,6 +75,9 @@ ActivityBase {
         }
         onStop: { Activity.stop() }
 
+        onWidthChanged: { showChooser(false); }
+        onHeightChanged: { showChooser(false); }
+
         GCSoundEffect {
             id: smudgeSound
             source: "qrc:/gcompris/src/core/resource/sounds/smudge.wav"
