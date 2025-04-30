@@ -135,7 +135,7 @@ ActivityBase {
             id: tutorialInstruction
             intro: ListModel {}
             customIntroArea: introArea
-            z: 5
+            z: 100
         }
 
         onStart: { Activity.start(items) }
