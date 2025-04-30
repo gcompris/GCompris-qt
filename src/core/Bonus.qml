@@ -40,7 +40,7 @@ Image {
      * type:string
      * Url of the audio resource to be used as loosing sound.
      */
-    property string looseSound
+    property string looseSound: url + "sounds/crash.wav"
 
     /**
      * type:int
