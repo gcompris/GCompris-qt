@@ -11,6 +11,7 @@
  */
 .pragma library
 .import QtQuick 2.12 as Quick
+.import core 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/memory/resource/"
@@ -80,9 +81,10 @@ function initLevel() {
     for(var ix = 0;  ix < nbOfPair; ++ix) {
         // select a random item
         for(var j = 0; j < 2; ++j) {
+            var sound = (sounds && sounds[shuffleIds[ix]][j]) ? GCompris.ApplicationInfo.getAudioFilePath(sounds[shuffleIds[ix]][j]) : ""
             cardList.push( {
                 image: images ? images[shuffleIds[ix]][j] : "",
-                sound: sounds ? sounds[shuffleIds[ix]][j] : "",
+                sound: sound,
                 text: texts ? texts[shuffleIds[ix]][j] : "",
                 repeaterModel: repeaterModels ? repeaterModels[shuffleIds[ix]][j] : "",
                 matchCode: ix,

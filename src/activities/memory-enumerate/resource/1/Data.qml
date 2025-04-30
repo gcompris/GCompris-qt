@@ -36,9 +36,9 @@ Data {
 
     readonly property var sounds: [
                 ["",
-                 GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/alphabet/U0031.$CA")],
+                 "voices-$CA/$LOCALE/alphabet/U0031.$CA"],
                 ["",
-                 GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/alphabet/U0032.$CA")]
+                 "voices-$CA/$LOCALE/alphabet/U0032.$CA"]
             ]
 
     data: [

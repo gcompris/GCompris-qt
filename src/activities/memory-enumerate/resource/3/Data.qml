@@ -49,13 +49,13 @@ Data {
 
     readonly property var sounds: [
                 ["",
-                 GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/alphabet/U0031.$CA")],
+                 "voices-$CA/$LOCALE/alphabet/U0031.$CA"],
                 ["",
-                 GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/alphabet/U0032.$CA")],
+                 "voices-$CA/$LOCALE/alphabet/U0032.$CA"],
                 ["",
-                 GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/alphabet/U0033.$CA")],
+                 "voices-$CA/$LOCALE/alphabet/U0033.$CA"],
                 ["",
-                 GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/alphabet/U0034.$CA")],
+                 "voices-$CA/$LOCALE/alphabet/U0034.$CA"],
             ]
 
     data: [
