@@ -46,7 +46,6 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias activityBackground: activityBackground
-            property bool isVertical: activityBackground.width < activityBackground.height - bar.height * 1.2
             property alias bonus: bonus
             property alias harbor1Sound: harbor1Sound
             property alias harbor2Sound: harbor2Sound
@@ -147,41 +146,11 @@ ActivityBase {
 
         Item {
             id: layoutArea
-            width: parent.height - bar.height * 1.2
+            width: Math.min(parent.height - bar.height * 1.2, parent.width)
             height: width
             anchors.horizontalCenter: activityBackground.horizontalCenter
-            states: [
-                State {
-                    name: "verticalLayout"
-                    when: items.isVertical
-                    PropertyChanges {
-                        layoutArea {
-                            width: parent.width
-                            anchors.bottomMargin: bar.height * 0.2
-                        }
-                    }
-                    AnchorChanges {
-                        target: layoutArea
-                        anchors.top: undefined
-                        anchors.bottom: bar.top
-                    }
-                },
-                State {
-                    name: "horizontalLayout"
-                    when: !items.isVertical
-                    PropertyChanges {
-                        layoutArea {
-                            width: parent.height - bar.height * 1.2
-                            anchors.bottomMargin: 0
-                        }
-                    }
-                    AnchorChanges {
-                        target: layoutArea
-                        anchors.top: parent.top
-                        anchors.bottom: undefined
-                    }
-                }
-            ]
+            anchors.verticalCenter: activityBackground.verticalCenter
+            anchors.verticalCenterOffset: -bar.height * 0.6
         }
 
         Image {
