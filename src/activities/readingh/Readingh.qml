@@ -304,6 +304,7 @@ ActivityBase {
             text: qsTr("<font color=\"#373737\">Check if the word<br/></font><b><font color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\">is displayed</font>").arg(items.textToFind)
             color: "#373737"
             horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
             anchors.fill: wordToFindBoxBg
             anchors.margins: GCStyle.baseMargins
             fontSizeMode: Text.Fit
