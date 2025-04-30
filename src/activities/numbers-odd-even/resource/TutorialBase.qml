@@ -1,9 +1,11 @@
 /* GCompris - TutorialBase.qml
  *
  * SPDX-FileCopyrightText: 2019 Deepak Kumar <deepakdk2431@gmail.com>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Deepak Kumar <deepakdk2431@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -23,17 +25,16 @@ Rectangle {
         id: question
         anchors {
             left: parent.left
-            verticalCenter: parent.verticalCenter
-            leftMargin: parent.height * 0.1
             top: parent.top
-            topMargin: parent.height * 0.05
+            right: parent.right
+            margins: GCStyle.baseMargins
         }
+        height: (parent.height - 4 * GCStyle.baseMargins) * 0.2
         text: isEvenExpected ? qsTr("Choose the even number:") : qsTr("Choose the odd number:")
         fontSize: mediumSize
-        color: "black"
-        horizontalAlignment: Text.AlignLeft
-        width: 1.8 * parent.width
-        height: 1.8 * parent.height
+        color: GCStyle.darkText
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
         wrapMode: Text.WordWrap
         z: 2
     }
@@ -42,13 +43,13 @@ Rectangle {
         id: firstNumber
         textLabel: ""
         anchors {
-            top: parent.top
-            topMargin: parent.height * 0.3
-            left: parent.left
-            leftMargin: parent.width * 0.2
+            top: question.bottom
+            topMargin: GCStyle.baseMargins
+            horizontalCenter: parent.horizontalCenter
+            horizontalCenterOffset: -width
         }
-        width: parent.width * 0.2
-        height: parent.height * 0.4
+        width: Math.min(parent.width * 0.3, height * 1.5)
+        height: Math.min(parent.width * 0.3, (parent.height - 4 * GCStyle.baseMargins) * 0.3)
         isCorrectAnswer: (isEvenExpected && Number(textLabel) % 2 === 0) ||
                                 (!isEvenExpected && Number(textLabel) % 2 !== 0)
              onPressed: {
@@ -72,13 +73,13 @@ Rectangle {
         id: secondNumber
         textLabel: ""
         anchors {
-            top: parent.top
-            topMargin: parent.height * 0.3
-            left: parent.left
-            leftMargin: parent.width * 0.65
+            top: question.bottom
+            topMargin: GCStyle.baseMargins
+            horizontalCenter: parent.horizontalCenter
+            horizontalCenterOffset: width
         }
-        width: parent.width * 0.2
-        height: parent.height * 0.4
+        width: firstNumber.width
+        height: firstNumber.height
         isCorrectAnswer: (isEvenExpected && Number(textLabel) % 2 === 0) ||
                                 (!isEvenExpected && Number(textLabel) % 2 !== 0)
                onPressed: {
@@ -101,29 +102,28 @@ Rectangle {
     Rectangle {
         id: messageRectangle
         anchors {
-            horizontalCenter: parent.horizontalCenter
-            top: parent.top
-            topMargin: parent.height * 0.75
+            left: parent.left
+            right: parent.right
+            bottom: parent.bottom
+            top: firstNumber.bottom
+            margins: GCStyle.baseMargins
         }
-        opacity: 0.8
-        radius: 10
-        border.width: 6
-        color: "white"
-        border.color: "#87A6DD"
-        width: parent.width * 1.15
-        height: parent.height * 0.4
+        radius: GCStyle.halfMargins
+        border.width: GCStyle.thinBorder
+        color: GCStyle.lightBg
+        border.color: GCStyle.blueBorder
         visible: false
 
         GCText {
             id: message
             anchors {
-                centerIn: parent
-                margins: parent.border.width+1
+                fill: parent
+                margins: GCStyle.baseMargins
             }
             text: ""
             fontSizeMode: Text.Fit
             fontSize: smallSize
-            color: "black"
+            color: GCStyle.darkText
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             width: parent.width
