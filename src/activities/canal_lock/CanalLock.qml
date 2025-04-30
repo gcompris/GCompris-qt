@@ -145,20 +145,20 @@ ActivityBase {
             Image {
                 id: canalLeft
                 source: activity.resourceUrl + "canal_left.svg"
-                anchors.top: canal.top
                 anchors.left: canal.left
+                anchors.verticalCenter: canal.verticalCenter
                 width: (activityBackground.width - canal.paintedWidth) / 2 + 1
-                height: parent.height
+                height: parent.paintedHeight
                 sourceSize.height: height
                 fillMode: Image.TileHorizontally
             }
 
             Image {
                 source: activity.resourceUrl + "canal_right.svg"
-                anchors.top: canal.top
                 anchors.right: parent.right
+                anchors.verticalCenter: canal.verticalCenter
                 width: canalLeft.width
-                height: parent.height
+                height: canalLeft.height
                 sourceSize.height: height
                 fillMode: Image.TileHorizontally
             }
