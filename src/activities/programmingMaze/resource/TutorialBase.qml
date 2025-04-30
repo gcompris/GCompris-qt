@@ -382,7 +382,7 @@ Image {
             anchors.top: instructionAreaTuto.bottom
             anchors.topMargin: GCStyle.halfMargins
             width: parent.width / 2.3
-            height: parent.height / 8.9
+            height: parent.height / 4
             radius: GCStyle.halfMargins
             z: 3
             color: GCStyle.lightBg
@@ -397,6 +397,7 @@ Image {
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 fontSizeMode: Text.Fit
+                minimumPointSize: tinySize
                 wrapMode: Text.WordWrap
 
                 text: instructionText.text
@@ -405,10 +406,10 @@ Image {
 
         Item {
             id: runCodeLayout
-            height: constraintInstructionTuto.height
+            height: parent.height / 8.9
             anchors.left: constraintInstructionTuto.right
             anchors.right: mainFunctionCodeAreaTuto.left
-            anchors.verticalCenter: constraintInstructionTuto.verticalCenter
+            anchors.top: constraintInstructionTuto.top
 
             Image {
                 id: runCode
