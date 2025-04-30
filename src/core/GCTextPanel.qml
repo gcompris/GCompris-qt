@@ -83,5 +83,6 @@ Rectangle {
         // default text color and size
         color: GCStyle.lightText
         fontSize: mediumSize
+        minimumPointSize: tinySize
     }
 }
