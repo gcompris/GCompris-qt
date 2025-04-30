@@ -303,8 +303,8 @@ ActivityBase {
             if (targetY < GCStyle.halfMargins) {
                 targetY = GCStyle.halfMargins;
             }
-            if (targetY + chooser.height > activityBackground.height - GCStyle.halfMargins) {
-                targetY = activityBackground.height - chooser.height - GCStyle.halfMargins;
+            if (targetY + chooser.height > activityBackground.height - GCStyle.halfMargins - bar.height * 1.2) {
+                targetY = activityBackground.height - chooser.height - GCStyle.halfMargins - bar.height * 1.2;
             }
             chooser.x = targetX;
             chooser.y = targetY;
@@ -323,7 +323,7 @@ ActivityBase {
 
             GridView {
                 id: chooserGrid
-                cellWidth: graphRect.optDiameter
+                cellWidth: Math.max(graphRect.optDiameter, 50 * ApplicationInfo.ratio)
                 cellHeight: cellWidth
                 width: Math.ceil(count / 2) * cellWidth
                 height: 2 * cellHeight
@@ -347,7 +347,7 @@ ActivityBase {
                 delegate: Node {
                     id: chooserItem
                     required property int index
-                    width: graphRect.optDiameter - GCStyle.halfMargins
+                    width: chooserGrid.cellWidth - GCStyle.halfMargins
                     border.width: index == chooserGrid.colorIndex ? GCStyle.thinBorder : GCStyle.thinnestBorder
                     border.color: index == chooserGrid.colorIndex ? GCStyle.darkBorder : GCStyle.grayBorder
                     colorIndex: index
