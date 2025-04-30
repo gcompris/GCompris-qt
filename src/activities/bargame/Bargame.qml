@@ -300,13 +300,13 @@ ActivityBase {
                 id: ballIcon
                 source: items.isPlayer1Turn ? Activity.url + "ball_1b.svg" :
                                               Activity.url + "ball_2b.svg"
-                sourceSize.width: parent.height * 0.8
-                width: sourceSize.width
-                height: sourceSize.width
+                width: Math.min(parent.height * 0.8, (parent.width - 3 * GCStyle.halfMargins) * 0.6)
+                sourceSize.width: width
+                sourceSize.height: width
                 anchors {
                     verticalCenter: ballNumberPlate.verticalCenter
                     left: ballNumberPlate.left
-                    leftMargin: 10
+                    leftMargin: GCStyle.halfMargins
                 }
             }
             // Number label
@@ -315,11 +315,16 @@ ActivityBase {
                 text: items.numberOfBalls
                 color: "#C04040"
                 font.bold: true
-                fontSize: smallSize
+                fontSize: regularSize
+                fontSizeMode: Text.Fit
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
                 anchors {
+                    left: ballIcon.right
                     right: ballNumberPlate.right
-                    rightMargin: 10
-                    verticalCenter: ballNumberPlate.verticalCenter
+                    top: ballNumberPlate.top
+                    bottom: ballNumberPlate.bottom
+                    margins: GCStyle.halfMargins
                 }
             }
         }
