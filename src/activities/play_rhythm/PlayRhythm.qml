@@ -112,7 +112,7 @@ ActivityBase {
             border.color: GCStyle.blueBorder
             textItem.color: GCStyle.darkText
             panelWidth: parent.width - 3 * GCStyle.baseMargins - score.width
-            panelHeight: score.height
+            panelHeight: 50 * ApplicationInfo.ratio
             fixedHeight: true
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.horizontalCenterOffset: -(score.width + GCStyle.baseMargins) * 0.5
