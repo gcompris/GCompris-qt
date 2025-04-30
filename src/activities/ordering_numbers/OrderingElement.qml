@@ -86,7 +86,7 @@ Item {
             property string elementValue: orderingElement.elementValue
 
             width: (mode === 'chronology') ? 100 * ApplicationInfo.ratio :
-                Math.max(elementCaption.width, 65 * ApplicationInfo.ratio)
+                Math.max(elementCaption.width + 2 * GCStyle.baseMargins, 65 * ApplicationInfo.ratio)
 
             height: (mode === 'chronology') ? width :
                 ((mode === 'sentences') ? 42 * ApplicationInfo.ratio : width)
@@ -105,8 +105,7 @@ Item {
 
             GCText {
                 id: elementCaption
-                anchors.fill: parent
-                anchors.margins: GCStyle.baseMargins
+                anchors.centerIn: parent
                 color: GCStyle.darkText
                 verticalAlignment: Text.AlignVCenter
                 horizontalAlignment: Text.AlignHCenter
