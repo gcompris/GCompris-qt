@@ -8,6 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import core 1.0
 
@@ -26,7 +28,6 @@ ActivityBase {
 
         signal start
         signal stop
-        signal targetReached
 
         Keys.onPressed: (event) => {
             if(items.currentArrow != items.nbArrow)
@@ -78,6 +79,7 @@ ActivityBase {
 
             onNbArrowChanged: {
                 arrowRepeater.init(nbArrow)
+                items.currentArrow = 0
             }
         }
 
@@ -89,20 +91,22 @@ ActivityBase {
 
         TargetItem {
             id: targetItem
-        }
-
-        onTargetReached: {
-            items.arrowFlying = false
-            if(items.currentArrow == items.nbArrow) {
-                targetItem.stop()
-                targetItem.scoreText += " = "
-                userEntry.text = "?"
-                items.inputLocked = false
+            onTargetReached: {
+                items.arrowFlying = false
+                if(items.currentArrow == items.nbArrow) {
+                    targetItem.stop()
+                    targetItem.scoreText += " = "
+                    userEntry.text = "?"
+                    items.inputLocked = false
+                }
             }
         }
 
         Arrow {
             id: arrowRepeater
+            onReattachArrow: (arrow) => {
+                targetItem.attachArrow(arrow)
+            }
         }
 
         GCSoundEffect {
@@ -163,7 +167,7 @@ ActivityBase {
             }
         }
 
-        function appendText(text) {
+        function appendText(text: string) : bool {
             if(items.inputLocked)
                 return false
 
@@ -256,12 +260,12 @@ ActivityBase {
             currentActivity: activity.activityInfo
 
             onSaveData: {
-                levelFolder = dialogActivityConfig.chosenLevels
+                activity.levelFolder = dialogActivityConfig.chosenLevels
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
             }
             onClose: {
-                home()
+                activity.home()
             }
             onStartActivity: {
                 activityBackground.stop()
@@ -271,7 +275,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
@@ -280,10 +284,10 @@ ActivityBase {
             anchors.bottom: keyboard.top
             content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onActivityConfigClicked: {
-                displayDialog(dialogActivityConfig)
+                activity.displayDialog(dialogActivityConfig)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
