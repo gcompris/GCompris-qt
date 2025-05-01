@@ -21153,24 +21153,24 @@ msgstr ""
 "Məsələn: 2, 19, 51, 65, 103, 119, 169, 185, 505, 533, 701, 799, 845, 897, "
 "1001. Bütün bu saylar tək saylardıe və onlar 2-yə bölündükdə qalıq qalır."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the even number:"
 msgstr "Cüt sayları seçin:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the odd number:"
 msgstr "Tək sayları seçin:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:56
-#: activities/numbers-odd-even/resource/TutorialBase.qml:86
+#: activities/numbers-odd-even/resource/TutorialBase.qml:57
+#: activities/numbers-odd-even/resource/TutorialBase.qml:87
 msgctxt "TutorialBase|"
 msgid "Great"
 msgstr "Əla!"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:60
-#: activities/numbers-odd-even/resource/TutorialBase.qml:90
+#: activities/numbers-odd-even/resource/TutorialBase.qml:61
+#: activities/numbers-odd-even/resource/TutorialBase.qml:91
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -21179,8 +21179,8 @@ msgid ""
 msgstr ""
 "Bir xəta var: %1, 2-yə bölündükdə 1 qalıq qalır. Buna görə də bu tək saydır."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:63
-#: activities/numbers-odd-even/resource/TutorialBase.qml:93
+#: activities/numbers-odd-even/resource/TutorialBase.qml:64
+#: activities/numbers-odd-even/resource/TutorialBase.qml:94
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -23532,12 +23532,12 @@ msgstr ""
 "<font color=\"#373737\">Yoxlayın,<br/></font><b><font color=\"#315AAA\">%1</"
 "font></b><br/><font color=\"#373737\">sözü göründümü</font>"
 
-#: activities/readingh/Readingh.qml:363
+#: activities/readingh/Readingh.qml:364
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Bəli, mən onu gördüm!"
 
-#: activities/readingh/Readingh.qml:384
+#: activities/readingh/Readingh.qml:385
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Xeyr, o burada yoxdur!"
@@ -23704,7 +23704,7 @@ msgstr ""
 "olduqda işıqlandırmaq üçün işıq düyməsinə vurun. Qazanmaq üçün bütün "
 "istehsalçılar işə başlayanda istehlakçıları işə salmalısınız."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:273
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -23713,7 +23713,7 @@ msgstr ""
 "Tuks öz qayığında balıq tutmaqdan qayıdır. Elektrik sistemini bərpa edin ki "
 "o, evini işıqlandıra bilsin."
 
-#: activities/renewable_energy/RenewableEnergy.qml:307
+#: activities/renewable_energy/RenewableEnergy.qml:276
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -23723,7 +23723,7 @@ msgstr ""
 "elektrostansiyası və transformatorların üzərinə vurun ki, elektrik sistemi "
 "təkrar aktiv olsun."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:279
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -23734,12 +23734,12 @@ msgstr ""
 "üçün işıq düyməsinə vurun. Qazanmaq üçün bütün istehsalçılar işə başlayanda "
 "istehlakçıları işə salmalısınız."
 
-#: activities/renewable_energy/RenewableEnergy.qml:313
+#: activities/renewable_energy/RenewableEnergy.qml:282
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "Bərpa olunan enerjiyə əsaslanan elektrik sistemi haqqında öyrənin."
 
-#: activities/renewable_energy/RenewableEnergy.qml:339
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "

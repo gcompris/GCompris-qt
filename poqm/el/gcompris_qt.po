@@ -20988,24 +20988,24 @@ msgstr ""
 "897, 1001. Όλοι αυτοί είναι μονοί αριθμοί, καθώς αφήνουν υπόλοιπο όταν "
 "διαιρούνται με το 2."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the even number:"
 msgstr "Επίλεξε τον ζυγό (άρτιο) αριθμό:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the odd number:"
 msgstr "Επίλεξε τον μονό αριθμό:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:56
-#: activities/numbers-odd-even/resource/TutorialBase.qml:86
+#: activities/numbers-odd-even/resource/TutorialBase.qml:57
+#: activities/numbers-odd-even/resource/TutorialBase.qml:87
 msgctxt "TutorialBase|"
 msgid "Great"
 msgstr "Περίφημα"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:60
-#: activities/numbers-odd-even/resource/TutorialBase.qml:90
+#: activities/numbers-odd-even/resource/TutorialBase.qml:61
+#: activities/numbers-odd-even/resource/TutorialBase.qml:91
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -21015,8 +21015,8 @@ msgstr ""
 "Υπάρχει κάποιο σφάλμα: όταν ο αριθμός %1 διαιρείται με το 2 αφήνει υπόλοιπο. "
 "Επομένως, είναι μονός αριθμός."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:63
-#: activities/numbers-odd-even/resource/TutorialBase.qml:93
+#: activities/numbers-odd-even/resource/TutorialBase.qml:64
+#: activities/numbers-odd-even/resource/TutorialBase.qml:94
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -23351,12 +23351,12 @@ msgstr ""
 "<font color=\"#373737\">Έλεγξε αν η λέξη<br/></font><b><font color=\"#315AAA"
 "\">%1</font></b><br/><font color=\"#373737\">εμφανίζεται.</font>"
 
-#: activities/readingh/Readingh.qml:363
+#: activities/readingh/Readingh.qml:364
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Ναι, την είδα!"
 
-#: activities/readingh/Readingh.qml:384
+#: activities/readingh/Readingh.qml:385
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Όχι, δεν εμφανίστηκε"
@@ -23530,7 +23530,7 @@ msgstr ""
 "πρέπει να ανάψεις όλες τις συσκευές που καταναλώνουν ενέργεια, ενώ όλοι οι "
 "παραγωγοί είναι ενεργοί."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:273
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -23539,7 +23539,7 @@ msgstr ""
 "Ο Tux έχει επιστρέψει με τη βάρκα στου από το ψάρεμα. Φόρτισε το ηλεκτρικό "
 "σύστημα ώστε να έχει φως στο σπίτι του."
 
-#: activities/renewable_energy/RenewableEnergy.qml:307
+#: activities/renewable_energy/RenewableEnergy.qml:276
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -23549,7 +23549,7 @@ msgstr ""
 "συστοιχία φωτοβολταϊκών, αιολικό πάρκο και μετασχηματιστές, για να "
 "επανενεργοποιηθεί όλο το ηλεκτρικό σύστημα."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:279
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -23560,14 +23560,14 @@ msgstr ""
 "του φωτός. Για να κερδίσεις πρέπει να ανάψεις όλην την κατανάλωση ενώ όλοι "
 "οι παραγωγοί είναι ενεργοί."
 
-#: activities/renewable_energy/RenewableEnergy.qml:313
+#: activities/renewable_energy/RenewableEnergy.qml:282
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Μάθε για ηλεκτρικά συστήματα με βάση τις ανανεώσιμες πηγές ενέργειας. "
 "Απόλαυσέ το."
 
-#: activities/renewable_energy/RenewableEnergy.qml:339
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "

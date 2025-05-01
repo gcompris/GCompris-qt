@@ -21425,24 +21425,24 @@ msgstr ""
 "897, 1001. Alle diese Zahlen sind ungerade Zahlen, es bleibt kein Rest von 0 "
 "übrig, wenn sie durch 2 geteilt werden."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the even number:"
 msgstr "Wähle die gerade Zahl:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the odd number:"
 msgstr "Wähle die ungerade Zahl:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:56
-#: activities/numbers-odd-even/resource/TutorialBase.qml:86
+#: activities/numbers-odd-even/resource/TutorialBase.qml:57
+#: activities/numbers-odd-even/resource/TutorialBase.qml:87
 msgctxt "TutorialBase|"
 msgid "Great"
 msgstr "Großartig"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:60
-#: activities/numbers-odd-even/resource/TutorialBase.qml:90
+#: activities/numbers-odd-even/resource/TutorialBase.qml:61
+#: activities/numbers-odd-even/resource/TutorialBase.qml:91
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -21452,8 +21452,8 @@ msgstr ""
 "Das ist falsch: Bei der Division durch 2 bleibt bei %1 ein Rest von 1 übrig. "
 "Daher ist dies eine ungerade Zahl."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:63
-#: activities/numbers-odd-even/resource/TutorialBase.qml:93
+#: activities/numbers-odd-even/resource/TutorialBase.qml:64
+#: activities/numbers-odd-even/resource/TutorialBase.qml:94
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -23852,12 +23852,12 @@ msgstr ""
 "<font color=\"#373737\">Überprüfe, ob das Wort<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">angezeigt wird</font>"
 
-#: activities/readingh/Readingh.qml:363
+#: activities/readingh/Readingh.qml:364
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Ja, ich habe es gesehen."
 
-#: activities/readingh/Readingh.qml:384
+#: activities/readingh/Readingh.qml:385
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Nein, es wurde nicht angezeigt."
@@ -24024,7 +24024,7 @@ msgstr ""
 "Lichtschalter für ihn. Um zu gewinnen, musst du alle Verbraucher "
 "einschalten, wenn die Erzeuger in Betrieb sind."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:273
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -24033,7 +24033,7 @@ msgstr ""
 "Tux ist mit seinem Boot vom Fischen zurückgekommen. Stelle den Stromkreis "
 "wieder her, so dass er Licht in seiner Wohnung hat."
 
-#: activities/renewable_energy/RenewableEnergy.qml:307
+#: activities/renewable_energy/RenewableEnergy.qml:276
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -24043,7 +24043,7 @@ msgstr ""
 "Solarzellen, Windpark und Transformator), um den gesamten Stromkreis wieder "
 "zu aktivieren."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:279
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -24054,13 +24054,13 @@ msgstr ""
 "Lichtschalter für ihn drücken. Um zu gewinnen, musst du alle Verbraucher "
 "einschalten, wenn die Erzeuger in Betrieb sind."
 
-#: activities/renewable_energy/RenewableEnergy.qml:313
+#: activities/renewable_energy/RenewableEnergy.qml:282
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Lerne etwas über ein elektrisches System mit erneuerbarer Energie. Viel Spaß!"
 
-#: activities/renewable_energy/RenewableEnergy.qml:339
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "

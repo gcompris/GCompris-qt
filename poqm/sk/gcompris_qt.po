@@ -21047,24 +21047,24 @@ msgstr ""
 "1001. Všetky tieto čísla sú nepárnymi číslami, pretože nezanechajú zvyšok 0, "
 "keď sa vydelia 2."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the even number:"
 msgstr "Zvoľte párne číslo:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the odd number:"
 msgstr "Zvoľte nepárne číslo:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:56
-#: activities/numbers-odd-even/resource/TutorialBase.qml:86
+#: activities/numbers-odd-even/resource/TutorialBase.qml:57
+#: activities/numbers-odd-even/resource/TutorialBase.qml:87
 msgctxt "TutorialBase|"
 msgid "Great"
 msgstr "Výborne"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:60
-#: activities/numbers-odd-even/resource/TutorialBase.qml:90
+#: activities/numbers-odd-even/resource/TutorialBase.qml:61
+#: activities/numbers-odd-even/resource/TutorialBase.qml:91
 #, fuzzy, qt-format
 #| msgctxt "TutorialBase|"
 #| msgid ""
@@ -21078,8 +21078,8 @@ msgstr ""
 "Vyskytla sa chyba: ak je vydelené 2, %1 zanechá zvyšok ako 1. Preto je to "
 "nepárne číslo."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:63
-#: activities/numbers-odd-even/resource/TutorialBase.qml:93
+#: activities/numbers-odd-even/resource/TutorialBase.qml:64
+#: activities/numbers-odd-even/resource/TutorialBase.qml:94
 #, fuzzy, qt-format
 #| msgctxt "TutorialBase|"
 #| msgid ""
@@ -23445,12 +23445,12 @@ msgstr ""
 "<font color=\"#373737\">Skontrolujte, či je slovo<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">zobrazené</font>"
 
-#: activities/readingh/Readingh.qml:363
+#: activities/readingh/Readingh.qml:364
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Áno, videl som!"
 
-#: activities/readingh/Readingh.qml:384
+#: activities/readingh/Readingh.qml:385
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Nie, nebolo to tam!"
@@ -23637,7 +23637,7 @@ msgstr ""
 "svetla. Ak chcete vyhrať, musíte zapnúť všetkých spotrebiteľov, zatiaľ čo "
 "všetci výrobcovia sú v prevádzke."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:273
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -23646,7 +23646,7 @@ msgstr ""
 "Tux sa vrátil z rybolovu na svojej lodi. Obnovte elektrický systém, aby "
 "mohol mať doma svetlo."
 
-#: activities/renewable_energy/RenewableEnergy.qml:307
+#: activities/renewable_energy/RenewableEnergy.qml:276
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -23655,7 +23655,7 @@ msgstr ""
 "Kliknite na rôzne aktívne prvky: slnko, mrak, priehrada, solárne pole, "
 "veterná farma a transformátory, aby ste reaktivovali celý elektrický systém."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:279
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -23666,13 +23666,13 @@ msgstr ""
 "svetla. Ak chcete vyhrať, musíte zapnúť všetkých spotrebiteľov, zatiaľ čo "
 "všetci výrobcovia sú v prevádzke."
 
-#: activities/renewable_energy/RenewableEnergy.qml:313
+#: activities/renewable_energy/RenewableEnergy.qml:282
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Učte sa o elektrickom systéme založenom na obnoviteľnej energii. Bavte sa."
 
-#: activities/renewable_energy/RenewableEnergy.qml:339
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "

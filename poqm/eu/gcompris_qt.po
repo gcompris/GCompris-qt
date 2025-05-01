@@ -20705,24 +20705,24 @@ msgstr ""
 "1001. Zenbaki guzti hauek bakoitiak dira, izan ere bi zati berdinetan "
 "banatuz gero hondarra uzten dutelako."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the even number:"
 msgstr "Aukeratu zenbaki bikoitia:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the odd number:"
 msgstr "Aukeratu zenbaki bakoitia:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:56
-#: activities/numbers-odd-even/resource/TutorialBase.qml:86
+#: activities/numbers-odd-even/resource/TutorialBase.qml:57
+#: activities/numbers-odd-even/resource/TutorialBase.qml:87
 msgctxt "TutorialBase|"
 msgid "Great"
 msgstr "Bikain"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:60
-#: activities/numbers-odd-even/resource/TutorialBase.qml:90
+#: activities/numbers-odd-even/resource/TutorialBase.qml:61
+#: activities/numbers-odd-even/resource/TutorialBase.qml:91
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -20732,8 +20732,8 @@ msgstr ""
 "Errore bat dago: 2rekin zatitzean, %1-ek 1 hondarra uzten du. Beraz, zenbaki "
 "bakoitia da."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:63
-#: activities/numbers-odd-even/resource/TutorialBase.qml:93
+#: activities/numbers-odd-even/resource/TutorialBase.qml:64
+#: activities/numbers-odd-even/resource/TutorialBase.qml:94
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -23047,12 +23047,12 @@ msgstr ""
 "<font color=\"#373737\">Egiaztatu<br/></font><b><font color=\"#315AAA\">%1</"
 "font></b><br/><font color=\"#373737\">hitza azaltzen den</font>"
 
-#: activities/readingh/Readingh.qml:363
+#: activities/readingh/Readingh.qml:364
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Bai, ikusi dut!"
 
-#: activities/readingh/Readingh.qml:384
+#: activities/readingh/Readingh.qml:385
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Ez, hor ez zegoen!"
@@ -23220,7 +23220,7 @@ msgstr ""
 "sakatu argiaren botoia bere ordez. Irabazteko, kontsumitzaile guztiak piztu "
 "behar dituzu ekoizle guztiak martxan daudelarik."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:273
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -23229,7 +23229,7 @@ msgstr ""
 "Tux arrantza egitetik itzuli da bere ontzian. Aktiba ezazu sistema "
 "elektrikoa etxean argindarra izan dezan."
 
-#: activities/renewable_energy/RenewableEnergy.qml:307
+#: activities/renewable_energy/RenewableEnergy.qml:276
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -23239,7 +23239,7 @@ msgstr ""
 "plakak, haize-sorgailuak eta transformadoreak, sistema elektriko osoa "
 "berrabiarazteko."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:279
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -23250,14 +23250,14 @@ msgstr ""
 "bere ordez. Irabazteko, kontsumitzaile guztiak piztu behar dituzu ekoizle "
 "guztiak martxan daudelarik."
 
-#: activities/renewable_energy/RenewableEnergy.qml:313
+#: activities/renewable_energy/RenewableEnergy.qml:282
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Ikasi energia berriztagarrietan oinarritutako elektrizitate sistemei buruz. "
 "Gozatu."
 
-#: activities/renewable_energy/RenewableEnergy.qml:339
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
