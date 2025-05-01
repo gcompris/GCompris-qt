@@ -8,6 +8,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
 import QtQuick 2.12
 import core 1.0
 
@@ -27,13 +28,14 @@ Image {
     property int zoom: 2
     property alias model: targetModel
     property bool stopMe: false
-    property var scores: []
+    property list<int> scores: []
     property string scoreText
     property int scoreTotal
 
     signal start
     signal stop
     signal attachArrow(Item arrow)
+    signal targetReached
 
     onStart: {
         scores = []
@@ -50,7 +52,7 @@ Image {
     }
 
     // Avoid taking the same value or the animation won't restart
-    function getRandomOffset(oldValue) {
+    function getRandomOffset(oldValue: real) : real {
         if(oldValue != 0 && Math.random() < 0.5)
             return 0
         var maxSize = targetModel.get(0).size * ApplicationInfo.ratio
@@ -88,7 +90,7 @@ Image {
         scores.push(score)
         scoreTotal += score
         scoreText = scores.join(" + ")
-        parent.targetReached()
+        targetReached()
     }
 
     Behavior on anchors.horizontalCenterOffset {
@@ -99,8 +101,8 @@ Image {
             easing.type: Easing.InOutQuad
             onRunningChanged: {
                 if(!anim1.running) {
-                    var newValue = getRandomOffset(targetItem.anchors.horizontalCenterOffset)
-                    if(!stopMe)
+                    var newValue = targetItem.getRandomOffset(targetItem.anchors.horizontalCenterOffset)
+                    if(!targetItem.stopMe)
                         targetItem.anchors.horizontalCenterOffset =  newValue
                 }
             }
@@ -114,8 +116,8 @@ Image {
             easing.type: Easing.InOutQuad
             onRunningChanged: {
                 if(!anim2.running) {
-                    var newValue = getRandomOffset(targetItem.anchors.verticalCenterOffset)
-                    if(!stopMe)
+                    var newValue = targetItem.getRandomOffset(targetItem.anchors.verticalCenterOffset)
+                    if(!targetItem.stopMe)
                         targetItem.anchors.verticalCenterOffset =  newValue
                 }
             }
@@ -131,10 +133,14 @@ Image {
         model: targetModel
         
         Rectangle {
+            id: targetRectangle
+            required property int size
+            required property color circleColor
+            required property int score
             anchors.centerIn: targetItem
             width: size * ApplicationInfo.ratio
             height: size * ApplicationInfo.ratio
-            color: model.color
+            color: circleColor
             radius: width * 0.5
             border.width: GCStyle.thinnestBorder
             border.color: "#40000000"
@@ -148,7 +154,7 @@ Image {
                 font.pointSize: 20
                 minimumPointSize: 5
                 fontSizeMode: Text.Fit
-                text: score
+                text: targetRectangle.score
                 color: "#A0000000"
             }
             

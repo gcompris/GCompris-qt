@@ -8,6 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import core 1.0
 import "../../core"
@@ -17,12 +19,12 @@ Repeater {
     model: 0
     
     signal init(int nbArrow)
+    signal reattachArrow(Item arrow)
     
     onInit: (nbArrow) => {
         // Set to 0 to force a delete of previous arrows
         model = 0
         model = nbArrow
-        items.currentArrow = 0
     }
     
     Rectangle {
@@ -46,7 +48,7 @@ Repeater {
                 onRunningChanged: {
                     if(!anim.running) {
                         // Reparent the arrow on the target
-                        targetItem.attachArrow(arrow)
+                        arrowRepeater.reattachArrow(arrow)
                     }
                 }
             }
