@@ -10,6 +10,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
 
 import QtQuick 2.12
 import core 1.0
@@ -21,8 +22,6 @@ ActivityBase {
 
     onStart: focus = true
     onStop: {}
-
-    property string url: "qrc:/gcompris/src/activities/watercycle/resource/"
 
     pageComponent: Image {
         id: activityBackground
@@ -163,7 +162,7 @@ ActivityBase {
                     when: items.isVertical
                     PropertyChanges {
                         layoutArea {
-                            width: parent.width
+                            width: activityBackground.width
                             anchors.bottomMargin: bar.height * 0.2
                             anchors.leftMargin: 0
                         }
@@ -179,14 +178,14 @@ ActivityBase {
                     when: !items.isVertical
                     PropertyChanges {
                         layoutArea {
-                            width: parent.height - bar.height * 1.2
+                            width: activityBackground.height - bar.height * 1.2
                             anchors.bottomMargin: 0
                             anchors.leftMargin: GCStyle.baseMargins
                         }
                     }
                     AnchorChanges {
                         target: layoutArea
-                        anchors.top: parent.top
+                        anchors.top: activityBackground.top
                         anchors.bottom: undefined
                     }
                 }
@@ -201,7 +200,7 @@ ActivityBase {
             height: layoutArea.height * 0.305
             sourceSize.width: width
             sourceSize.height: height
-            source: activity.url + "sky.svg"
+            source: activity.resourceUrl + "sky.svg"
             z: 1
         }
 
@@ -213,8 +212,8 @@ ActivityBase {
             height: layoutArea.height * 0.7
             sourceSize.width: width
             sourceSize.height: height
-            source: activity.url + "sea.svg"
-            z:3
+            source: activity.resourceUrl + "sea.svg"
+            z: 3
         }
 
         Image {
@@ -222,14 +221,14 @@ ActivityBase {
             anchors.fill: layoutArea
             sourceSize.width: width
             sourceSize.height: height
-            source: activity.url + "landscape.svg"
+            source: activity.resourceUrl + "landscape.svg"
             z: 6
         }
 
         Image {
             id: tuxboat
             opacity: 1
-            source: activity.url + "boat.svg"
+            source: activity.resourceUrl + "boat.svg"
             width: layoutArea.width * 0.12
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
@@ -239,7 +238,7 @@ ActivityBase {
                 left: layoutArea.left
                 leftMargin: 0
             }
-            z:30
+            z: 30
             state: "tuxboatLeft"
 
             states: [
@@ -301,7 +300,7 @@ ActivityBase {
 
         Image {
             id: boatparked
-            source: activity.url + "boat_parked.svg"
+            source: activity.resourceUrl + "boat_parked.svg"
             width: layoutArea.width * 0.12
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
@@ -317,7 +316,7 @@ ActivityBase {
 
         Image {
             id: sun
-            source: activity.url + "sun.svg"
+            source: activity.resourceUrl + "sun.svg"
             width: layoutArea.width * 0.1
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
@@ -382,7 +381,7 @@ ActivityBase {
         Image {
             id: vapor
             opacity: 0
-            source: activity.url + "vapor.svg"
+            source: activity.resourceUrl + "vapor.svg"
             width: layoutArea.width * 0.1
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
@@ -461,7 +460,7 @@ ActivityBase {
         Image {
             id: cloud
             opacity: 0
-            source: activity.url + "cloud.svg"
+            source: activity.resourceUrl + "cloud.svg"
             sourceSize.width: layoutArea.width * 0.256
             fillMode: Image.PreserveAspectFit
             width: 0
@@ -526,7 +525,7 @@ ActivityBase {
 
         Image {
             id: rain
-            source: activity.url + "rain.svg"
+            source: activity.resourceUrl + "rain.svg"
             width: layoutArea.height * 0.146
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
@@ -576,7 +575,7 @@ ActivityBase {
 
         Image {
             id: river
-            source: activity.url + "river.svg"
+            source: activity.resourceUrl + "river.svg"
             width: layoutArea.width * 0.431
             sourceSize.width: width
             fillMode: Image.PreserveAspectFit
@@ -594,7 +593,7 @@ ActivityBase {
 
         Image {
             id: reservoir1
-            source: activity.url + "reservoir1.svg"
+            source: activity.resourceUrl + "reservoir1.svg"
             width: layoutArea.width * 0.112
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
@@ -611,7 +610,7 @@ ActivityBase {
 
         Image {
             id: reservoir2
-            source: activity.url + "reservoir2.svg"
+            source: activity.resourceUrl + "reservoir2.svg"
             width: layoutArea.width * 0.1604
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
@@ -628,7 +627,7 @@ ActivityBase {
 
         Image {
             id: reservoir3
-            source: activity.url + "reservoir3.svg"
+            source: activity.resourceUrl + "reservoir3.svg"
             width: layoutArea.width * 0.1965
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
@@ -645,7 +644,7 @@ ActivityBase {
 
         Image {
             id: waterplant
-            source: activity.url + "motor.svg"
+            source: activity.resourceUrl + "motor.svg"
             width: layoutArea.width * 0.083
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
@@ -674,7 +673,7 @@ ActivityBase {
             width: layoutArea.width * 0.354
             sourceSize.width: width
             fillMode: Image.PreserveAspectFit
-            source: activity.url + "fillwater.svg"
+            source: activity.resourceUrl + "fillwater.svg"
             opacity: waterplant.running ? 1 : 0.2
             anchors {
                 top: layoutArea.top
@@ -688,7 +687,7 @@ ActivityBase {
 
         Image {
             id: sewageplant
-            source: activity.url + "waste.svg"
+            source: activity.resourceUrl + "waste.svg"
             height: layoutArea.height * 0.144
             sourceSize.height: height
             fillMode: Image.PreserveAspectFit
@@ -717,7 +716,7 @@ ActivityBase {
             width: layoutArea.width * 0.275
             sourceSize.width: width
             fillMode: Image.PreserveAspectFit
-            source: activity.url + "wastewater.svg"
+            source: activity.resourceUrl + "wastewater.svg"
             opacity: sewageplant.running ? 1 : 0.2
             anchors {
                 top: layoutArea.top
@@ -731,7 +730,7 @@ ActivityBase {
 
         Image {
             id: tower
-            source: activity.url + "watertower.svg"
+            source: activity.resourceUrl + "watertower.svg"
             width: layoutArea.width * 0.135
             sourceSize.width: width
             fillMode: Image.PreserveAspectFit
@@ -747,7 +746,7 @@ ActivityBase {
             Image {
                 id: towerfill
                 scale: tower.level
-                source: activity.url + "watertowerfill.svg"
+                source: activity.resourceUrl + "watertowerfill.svg"
                 width: tower.width * 0.5
                 sourceSize.width: width
                 fillMode: Image.PreserveAspectFit
@@ -762,7 +761,7 @@ ActivityBase {
 
         Image {
             id: shower
-            source: activity.url + "shower.svg"
+            source: activity.resourceUrl + "shower.svg"
             width: layoutArea.width * 0.184
             sourceSize.width: width
             fillMode: Image.PreserveAspectFit
@@ -816,7 +815,7 @@ ActivityBase {
 
         Image {
             id: tuxbath
-            source: activity.url + "tuxbath.svg"
+            source: activity.resourceUrl + "tuxbath.svg"
             width: shower.width
             sourceSize.width: width
             fillMode: Image.PreserveAspectFit
@@ -827,7 +826,7 @@ ActivityBase {
 
         Image {
             id: city
-            source: activity.url + "city.svg"
+            source: activity.resourceUrl + "city.svg"
             width: layoutArea.width * 0.202
             sourceSize.width: width
             fillMode: Image.PreserveAspectFit
@@ -842,7 +841,7 @@ ActivityBase {
 
         Image {
             id: tuxHouse
-            source: activity.url + "tuxHouse.svg"
+            source: activity.resourceUrl + "tuxHouse.svg"
             width: layoutArea.width * 0.036
             sourceSize.width: width
             fillMode: Image.PreserveAspectFit
@@ -955,7 +954,7 @@ ActivityBase {
                 }
             }
 
-            function setKey(key) {
+            function setKey(key: string) {
                 if(newKey != key) {
                     newKey = key;
                     textanim.start();
@@ -965,17 +964,17 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home();
+            onClose: activity.home();
         }
 
         Bar {
             id: bar
             content: BarEnumContent { value: help | home | reload}
             onHelpClicked: {
-                displayDialog(dialogHelp);
+                activity.displayDialog(dialogHelp);
             }
-            onHomeClicked: home()
-            onReloadClicked: initLevel();
+            onHomeClicked: activity.home()
+            onReloadClicked: activityBackground.initLevel();
         }
 
         Bonus {
