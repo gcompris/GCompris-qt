@@ -8,4 +8,6 @@ GCOMPRIS_ADD_RESOURCE(activities/tic_tac_toe_2players
   *.qml
   RESOURCES
   *.svg
+  DEPENDENCIES
+  tic_tac_toe
 )

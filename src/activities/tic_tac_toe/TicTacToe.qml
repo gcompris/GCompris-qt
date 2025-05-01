@@ -7,6 +7,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 
 import "../../core"
@@ -59,7 +61,7 @@ ActivityBase {
             property alias bonus: bonus
         }
 
-        onStart: Activity.start(items, twoPlayer)
+        onStart: Activity.start(items, activity.twoPlayer)
         onStop: Activity.stop()
 
         GCSoundEffect {
@@ -106,12 +108,13 @@ ActivityBase {
                     Component {
                         id: blueSquare
                         Item {
+                            id: blueSquareItem
                             width: board.cellSize
                             height: board.cellSize
                             state: "INITIAL"
                             property alias border: pieceBg.border
                             property alias color: pieceBg.color
-
+                            required property string stateTemp
                             Rectangle {
                                 id: pieceBg
                                 anchors.centerIn: parent
@@ -125,7 +128,7 @@ ActivityBase {
                                 anchors.centerIn: parent
                                 width: board.pieceSize
                                 height: board.pieceSize
-                                state: stateTemp
+                                state: blueSquareItem.stateTemp
                             }
                             states: [
                                 State {
@@ -151,8 +154,8 @@ ActivityBase {
                                 hoverEnabled: enabled
                                 width: parent.width
                                 height: parent.height
-                                onEntered: { border.color = "#62db53" }
-                                onExited: { border.color = "transparent" }
+                                onEntered: { blueSquareItem.border.color = "#62db53" }
+                                onExited: { blueSquareItem.border.color = "transparent" }
                                 onClicked: { Activity.handleCreate(parent) }
                             }
                         }
@@ -230,15 +233,15 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
             id: bar
             level: items.currentLevel + 1
-            content: BarEnumContent { value: (twoPlayer ? (help | home | reload) : (help | home | level | reload))}
+            content: BarEnumContent { value: (activity.twoPlayer ? (help | home | reload) : (help | home | level | reload))}
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
