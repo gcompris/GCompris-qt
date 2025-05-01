@@ -20094,24 +20094,24 @@ msgstr ""
 "1001 Ezek a számok páratlanok, mivel ha kettővel osztom őket nem nullát "
 "adnak maradékul."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the even number:"
 msgstr "Válaszd ki a páros számot:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the odd number:"
 msgstr "Válaszd ki a páratlan számokat:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:56
-#: activities/numbers-odd-even/resource/TutorialBase.qml:86
+#: activities/numbers-odd-even/resource/TutorialBase.qml:57
+#: activities/numbers-odd-even/resource/TutorialBase.qml:87
 msgctxt "TutorialBase|"
 msgid "Great"
 msgstr "Remek"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:60
-#: activities/numbers-odd-even/resource/TutorialBase.qml:90
+#: activities/numbers-odd-even/resource/TutorialBase.qml:61
+#: activities/numbers-odd-even/resource/TutorialBase.qml:91
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -20120,8 +20120,8 @@ msgid ""
 msgstr ""
 "Hiba: ha %1-t kettővel osztom 1-et ad maradékul. Ezért ez egy páratlan szám."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:63
-#: activities/numbers-odd-even/resource/TutorialBase.qml:93
+#: activities/numbers-odd-even/resource/TutorialBase.qml:64
+#: activities/numbers-odd-even/resource/TutorialBase.qml:94
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -22408,12 +22408,12 @@ msgstr ""
 "<font color=\"#373737\">Ellenőrizd ha ez a szó<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">olvasható</font>"
 
-#: activities/readingh/Readingh.qml:363
+#: activities/readingh/Readingh.qml:364
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Igen, láttam!"
 
-#: activities/readingh/Readingh.qml:384
+#: activities/readingh/Readingh.qml:385
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Nem, nem volt ott!"
@@ -22580,7 +22580,7 @@ msgstr ""
 "rendszer visszakapcsol, és Tux hazaért kapcsold fel a lámpát neki. Ha nyerni "
 "akarsz minden elektromos eszközt be kell kapcsolnod."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:273
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22589,7 +22589,7 @@ msgstr ""
 "Tux visszatért a horgászatból. Állítsd vissza az elektromos rendszert, hogy "
 "lássa merre kell hazamennie!"
 
-#: activities/renewable_energy/RenewableEnergy.qml:307
+#: activities/renewable_energy/RenewableEnergy.qml:276
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22598,7 +22598,7 @@ msgstr ""
 "Kattints a különféle aktív elemekre pl: nap, felhő, gát, napelem, "
 "szélturbina,transzformátor, hogy bekapcsolhasd az elektromos rendszert!"
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:279
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22608,12 +22608,12 @@ msgstr ""
 "Ha a rendszer visszakapcsol, és Tux hazaért kapcsold fel a lámpát neki! Ha "
 "nyerni akarsz minden elektromos eszközt be kell kapcsolnod!"
 
-#: activities/renewable_energy/RenewableEnergy.qml:313
+#: activities/renewable_energy/RenewableEnergy.qml:282
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "Tanuljunk játékosan a megújuló enegriaforrásokról. "
 
-#: activities/renewable_energy/RenewableEnergy.qml:339
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "

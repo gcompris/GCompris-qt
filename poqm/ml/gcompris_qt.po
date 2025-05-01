@@ -19953,24 +19953,24 @@ msgstr ""
 "897, 1001. ഈ അക്കങ്ങളെ 2 കൊണ്ടു ഹരിച്ചാൽ 0 ശിഷ്ടമായി കിട്ടാത്തതുകൊണ്ട് ഇവയെല്ലാം ഒറ്റ "
 "സംഖ്യകളാണ്."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the even number:"
 msgstr "ഇരട്ട സംഖ്യ തിരഞ്ഞെടുക്കുക:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the odd number:"
 msgstr "ഒറ്റ സംഖ്യ തിരഞ്ഞെടുക്കുക:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:56
-#: activities/numbers-odd-even/resource/TutorialBase.qml:86
+#: activities/numbers-odd-even/resource/TutorialBase.qml:57
+#: activities/numbers-odd-even/resource/TutorialBase.qml:87
 msgctxt "TutorialBase|"
 msgid "Great"
 msgstr "ഗംഭീരം"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:60
-#: activities/numbers-odd-even/resource/TutorialBase.qml:90
+#: activities/numbers-odd-even/resource/TutorialBase.qml:61
+#: activities/numbers-odd-even/resource/TutorialBase.qml:91
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -19979,8 +19979,8 @@ msgid ""
 msgstr ""
 "ഒരു തെറ്റുണ്ട്: %1-നെ 2 കൊണ്ടു ഹരിക്കുമ്പോൾ 1 ശിഷ്ടമായി വരുന്നു. അതായത് ഇതൊരു ഒറ്റ സംഖ്യയാണ്."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:63
-#: activities/numbers-odd-even/resource/TutorialBase.qml:93
+#: activities/numbers-odd-even/resource/TutorialBase.qml:64
+#: activities/numbers-odd-even/resource/TutorialBase.qml:94
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -22257,12 +22257,12 @@ msgstr ""
 "<font color=\"#373737\">ഈ വാക്ക്<br/></font><b><font color=\"#315AAA\">%1</"
 "font></b><br/><font color=\"#373737\">കാണിക്കുന്നുണ്ടോ എന്ന് നോക്കൂ</font>"
 
-#: activities/readingh/Readingh.qml:363
+#: activities/readingh/Readingh.qml:364
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "ഞാൻ ആ വാക്ക് കണ്ടു!"
 
-#: activities/readingh/Readingh.qml:384
+#: activities/readingh/Readingh.qml:385
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "ആ വാക്ക് അവിടെ കണ്ടില്ല!"
@@ -22424,7 +22424,7 @@ msgstr ""
 "വീട്ടിലെത്തുമ്പോൾ, ലൈറ്റിന്റെ സ്വിച്ച് അമർത്തുക. ജയിക്കുവാനായി, എല്ലാ ഉല്പാദനമാർഗങ്ങളും "
 "സജ്ജമായിരിക്കുമ്പോൾ എല്ലാ ഉപഭോക്താക്കളുടെയും സ്വിച്ച് ഓൺ ആക്കണം."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:273
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22433,7 +22433,7 @@ msgstr ""
 "മീൻ പിടുത്തം കഴിഞ്ഞ് ടക്സ് വഞ്ചിയിൽ തിരിച്ചെത്തി. അവന് വീട്ടിൽ വെളിച്ചം കിട്ടുവാൻ വൈദ്യുത "
 "വിതരണ സംവിധാനം പ്രവർത്തിപ്പിക്കൂ."
 
-#: activities/renewable_energy/RenewableEnergy.qml:307
+#: activities/renewable_energy/RenewableEnergy.qml:276
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22442,7 +22442,7 @@ msgstr ""
 "വ്യത്യസ്ത ഘടകങ്ങളിൽ ക്ലിക്ക് ചെയ്യൂ: സൂര്യൻ, മേഘം, അണക്കെട്ട്, സോളാർ നിര, കാറ്റാടിപ്പാടം, "
 "ട്രാൻസ്ഫോമറുകൾ. വൈദ്യുത സംവിധാനം മുഴുവൻ പ്രവർത്തന സജ്ജമായി പുനസ്ഥാപിക്കൂ."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:279
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22453,13 +22453,13 @@ msgstr ""
 "ജയിക്കുവാനായി, എല്ലാ ഉല്പാദനമാർഗങ്ങളും സജ്ജമായിരിക്കുമ്പോൾ എല്ലാ ഉപഭോക്താക്കളുടെയും സ്വിച്ച് "
 "ഓൺ ആക്കണം."
 
-#: activities/renewable_energy/RenewableEnergy.qml:313
+#: activities/renewable_energy/RenewableEnergy.qml:282
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "പുനസ്ഥാപിക്കാവുന്ന ഊർജം ഉപയോഗിച്ചുള്ള വൈദ്യുത സംവിധാനത്തെ കുറിച്ച് പഠിക്കാം. ആസ്വദിക്കൂ. "
 
-#: activities/renewable_energy/RenewableEnergy.qml:339
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "

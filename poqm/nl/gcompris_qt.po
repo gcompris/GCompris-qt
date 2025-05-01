@@ -20163,24 +20163,24 @@ msgstr ""
 "897, 1001. Deze getallen zijn allemaal oneven getallen omdat ze geen rest 0 "
 "achterlaten bij delen door 2."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the even number:"
 msgstr "Kies het even getal:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the odd number:"
 msgstr "Kies het oneven getal:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:56
-#: activities/numbers-odd-even/resource/TutorialBase.qml:86
+#: activities/numbers-odd-even/resource/TutorialBase.qml:57
+#: activities/numbers-odd-even/resource/TutorialBase.qml:87
 msgctxt "TutorialBase|"
 msgid "Great"
 msgstr "Uitstekend"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:60
-#: activities/numbers-odd-even/resource/TutorialBase.qml:90
+#: activities/numbers-odd-even/resource/TutorialBase.qml:61
+#: activities/numbers-odd-even/resource/TutorialBase.qml:91
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -20190,8 +20190,8 @@ msgstr ""
 "Er is een fout: bij delen door 2, laat %1 een rest 1 achter. Dit is daarom "
 "een oneven getal."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:63
-#: activities/numbers-odd-even/resource/TutorialBase.qml:93
+#: activities/numbers-odd-even/resource/TutorialBase.qml:64
+#: activities/numbers-odd-even/resource/TutorialBase.qml:94
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -22450,12 +22450,12 @@ msgstr ""
 "<font color=\"#373737\">Controleer of het woord<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">wordt getoond</font>"
 
-#: activities/readingh/Readingh.qml:363
+#: activities/readingh/Readingh.qml:364
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Ja, ik heb het gezien!"
 
-#: activities/readingh/Readingh.qml:384
+#: activities/readingh/Readingh.qml:385
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Nee, het zat er niet bij!"
@@ -22624,7 +22624,7 @@ msgstr ""
 "lichtknop. Om te winnen moet je alle verbruikers inschakelen terwijl alle "
 "producenten werken."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:273
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22634,7 +22634,7 @@ msgstr ""
 "elektriciteitsvoorziening te herstellen zodat hij weer licht heeft in zijn "
 "huis."
 
-#: activities/renewable_energy/RenewableEnergy.qml:307
+#: activities/renewable_energy/RenewableEnergy.qml:276
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22644,7 +22644,7 @@ msgstr ""
 "windmolenpark en transformatoren om het gehele elektrische systeem opnieuw "
 "te activeren."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:279
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22655,14 +22655,14 @@ msgstr ""
 "lichtknop. Om te winnen moet je alle verbruikers aanschakelen terwijl alle "
 "producenten werken."
 
-#: activities/renewable_energy/RenewableEnergy.qml:313
+#: activities/renewable_energy/RenewableEnergy.qml:282
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Leer wat over een elektrisch systeem gebaseerd op duurzame energie. Veel "
 "plezier."
 
-#: activities/renewable_energy/RenewableEnergy.qml:339
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "

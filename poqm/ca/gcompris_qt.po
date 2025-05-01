@@ -20531,25 +20531,25 @@ msgstr ""
 "897, 1001. Tots aquests números són nombres senars, ja que no deixen una "
 "resta de 0 quan es divideixen per 2."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the even number:"
 msgstr "Tria el nombre parell:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the odd number:"
 msgstr "Tria el nombre senar:"
 
 # Nota: <https://ca.wikipedia.org/wiki/Sanchi>
-#: activities/numbers-odd-even/resource/TutorialBase.qml:56
-#: activities/numbers-odd-even/resource/TutorialBase.qml:86
+#: activities/numbers-odd-even/resource/TutorialBase.qml:57
+#: activities/numbers-odd-even/resource/TutorialBase.qml:87
 msgctxt "TutorialBase|"
 msgid "Great"
 msgstr "Genial"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:60
-#: activities/numbers-odd-even/resource/TutorialBase.qml:90
+#: activities/numbers-odd-even/resource/TutorialBase.qml:61
+#: activities/numbers-odd-even/resource/TutorialBase.qml:91
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -20559,8 +20559,8 @@ msgstr ""
 "Hi ha un error: quan es divideix per 2, %1 deixa una resta d'1. Per tant, "
 "aquest és un nombre senar."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:63
-#: activities/numbers-odd-even/resource/TutorialBase.qml:93
+#: activities/numbers-odd-even/resource/TutorialBase.qml:64
+#: activities/numbers-odd-even/resource/TutorialBase.qml:94
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -22869,12 +22869,12 @@ msgstr ""
 "<font color=\"#373737\">Comprova si es mostra<br/></font><font color="
 "\"#373737\">la paraula</font><br/><b><font color=\"#315AAA\">%1</font></b>"
 
-#: activities/readingh/Readingh.qml:363
+#: activities/readingh/Readingh.qml:364
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Sí, l'he vist!"
 
-#: activities/readingh/Readingh.qml:384
+#: activities/readingh/Readingh.qml:385
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "No, no hi era!"
@@ -23043,7 +23043,7 @@ msgstr ""
 "seva, premeu el botó de la llum per ell. Per a guanyar cal encendre tots els "
 "consumidors quan els productors estiguin actius."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:273
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -23052,7 +23052,7 @@ msgstr ""
 "En Tux torna de pesca en el seu vaixell. Has de tornar a posar en marxa el "
 "sistema elèctric per tal que pugui tenir llum a casa seva."
 
-#: activities/renewable_energy/RenewableEnergy.qml:307
+#: activities/renewable_energy/RenewableEnergy.qml:276
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -23062,7 +23062,7 @@ msgstr ""
 "solars, parcs eòlics i transformadors, amb la finalitat de reactivar tot el "
 "sistema elèctric."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:279
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -23073,14 +23073,14 @@ msgstr ""
 "la llum per ell. Per a guanyar cal encendre tots els consumidors quan els "
 "productors estiguin actius."
 
-#: activities/renewable_energy/RenewableEnergy.qml:313
+#: activities/renewable_energy/RenewableEnergy.qml:282
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Aprendre sobre un sistema elèctric basat en les energies renovables. Gaudiu-"
 "ne."
 
-#: activities/renewable_energy/RenewableEnergy.qml:339
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "

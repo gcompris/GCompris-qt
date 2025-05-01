@@ -72,13 +72,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->2025-01-30</date>
+>2025-05-21</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->25.0</releaseinfo>
+>25.1</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -189,7 +189,7 @@ for example 'xx.yy.zz'
 ><imageobject
 ><imagedata fileref="difficulty1.svg" format="SVG"/></imageobject
 ></inlinemediaobject
->1, 2 ou 3 étoiles jaunes - pour les enfants de 2 à 6 ans.</para
+>1, 2 ou 3 étoiles jaunes — pour les enfants de 2 à 6 ans.</para
 ></listitem
 > 
 <listitem
@@ -198,7 +198,7 @@ for example 'xx.yy.zz'
 ><imageobject
 ><imagedata fileref="difficulty4.svg" format="SVG"/></imageobject
 ></inlinemediaobject
->1, 2 ou 3 étoiles rouges - pour les enfants âgés de plus de 6 ans.</para
+>1, 2 ou 3 étoiles rouges — pour les enfants âgés de plus de 6 ans.</para
 ></listitem
 > 
 </itemizedlist>
@@ -645,7 +645,7 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; </para>
 <para
->Licence du programme pour 2000 - 2023 : Timothée Giet et autres </para>
+>Licence du programme pour 2000 - 2025 : Timothée Giet et autres </para>
 
 <para
 >Traduction française : l'équipe de traduction francophone de KDE <email

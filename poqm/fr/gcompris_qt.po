@@ -20412,24 +20412,24 @@ msgstr ""
 "897, 1001. Tous ces nombres sont des nombres impairs car leur reste n'est "
 "pas 0 quand ils sont divisés par 2."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the even number:"
 msgstr "Choisis le nombre pair :"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the odd number:"
 msgstr "Choisir le nombre impair :"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:56
-#: activities/numbers-odd-even/resource/TutorialBase.qml:86
+#: activities/numbers-odd-even/resource/TutorialBase.qml:57
+#: activities/numbers-odd-even/resource/TutorialBase.qml:87
 msgctxt "TutorialBase|"
 msgid "Great"
 msgstr "Excellent"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:60
-#: activities/numbers-odd-even/resource/TutorialBase.qml:90
+#: activities/numbers-odd-even/resource/TutorialBase.qml:61
+#: activities/numbers-odd-even/resource/TutorialBase.qml:91
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -20439,8 +20439,8 @@ msgstr ""
 "il y a une erreur : quand le nombre %1 est divisé par 2, le reste est égal à "
 "1. De ce fait, il s'agit d'un nombre impair."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:63
-#: activities/numbers-odd-even/resource/TutorialBase.qml:93
+#: activities/numbers-odd-even/resource/TutorialBase.qml:64
+#: activities/numbers-odd-even/resource/TutorialBase.qml:94
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -22717,12 +22717,12 @@ msgstr ""
 "<font color=\"#373737\">Vérifie si le mot<br/></font><b><font color=\"#315AAA"
 "\">%1</font></b><br/><font color=\"#373737\">est affiché</font>"
 
-#: activities/readingh/Readingh.qml:363
+#: activities/readingh/Readingh.qml:364
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Oui, je l'ai vu !"
 
-#: activities/readingh/Readingh.qml:384
+#: activities/readingh/Readingh.qml:385
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Non, il n'y était pas !"
@@ -22893,7 +22893,7 @@ msgstr ""
 "électriques et tandis que tous les systèmes de production d'électricité "
 "fonctionnent."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:273
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22902,7 +22902,7 @@ msgstr ""
 "Tux revient d'une partie de pêche sur son bateau. Remets le système "
 "électrique en état de marche pour qu'il ait de la lumière dans sa maison."
 
-#: activities/renewable_energy/RenewableEnergy.qml:307
+#: activities/renewable_energy/RenewableEnergy.qml:276
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22912,7 +22912,7 @@ msgstr ""
 "panneaux solaires, parc éolien et transformateur, de façon à réactiver le "
 "système électrique dans son intégralité."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:279
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22924,14 +22924,14 @@ msgstr ""
 "allumer tous les appareils électriques et tandis que tous les systèmes de "
 "production d'électricité fonctionnent."
 
-#: activities/renewable_energy/RenewableEnergy.qml:313
+#: activities/renewable_energy/RenewableEnergy.qml:282
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Apprends comment fonctionne un système électrique utilisant l'énergie "
 "renouvelable. Amuse-toi bien."
 
-#: activities/renewable_energy/RenewableEnergy.qml:339
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "

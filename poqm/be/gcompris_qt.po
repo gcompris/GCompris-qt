@@ -20108,24 +20108,24 @@ msgstr ""
 "897, 1001. Усе гэтыя лікі з'яўляюцца няцотнымі, так як астача пасля іх "
 "дзялення на 2 не раўняецца 0."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the even number:"
 msgstr "Выберыце цотны лік:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the odd number:"
 msgstr "Выберыце няцотны лік:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:56
-#: activities/numbers-odd-even/resource/TutorialBase.qml:86
+#: activities/numbers-odd-even/resource/TutorialBase.qml:57
+#: activities/numbers-odd-even/resource/TutorialBase.qml:87
 msgctxt "TutorialBase|"
 msgid "Great"
 msgstr "Выдатна"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:60
-#: activities/numbers-odd-even/resource/TutorialBase.qml:90
+#: activities/numbers-odd-even/resource/TutorialBase.qml:61
+#: activities/numbers-odd-even/resource/TutorialBase.qml:91
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -20135,8 +20135,8 @@ msgstr ""
 "Тут памылка: калі падзяліць на 2, то лік %1 пакідае астачу 1. Такім чынам, "
 "ён з'яўляецца няцотным лікам."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:63
-#: activities/numbers-odd-even/resource/TutorialBase.qml:93
+#: activities/numbers-odd-even/resource/TutorialBase.qml:64
+#: activities/numbers-odd-even/resource/TutorialBase.qml:94
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -22368,12 +22368,12 @@ msgstr ""
 "<font color=\"#373737\">Праверце, ці паказваецца слова <br/></font><b><font "
 "color=\"#315AAA\">%1</font></b><br/>"
 
-#: activities/readingh/Readingh.qml:363
+#: activities/readingh/Readingh.qml:364
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Так, я бачыў яго!"
 
-#: activities/readingh/Readingh.qml:384
+#: activities/readingh/Readingh.qml:385
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Не, яго не было!"
@@ -22537,7 +22537,7 @@ msgstr ""
 "яго. Каб перамагчы, вам трэба ўключыць усе спажыўцы электраэнергіі, пакуль "
 "уся вытворчая сістэма актыўная."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:273
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22546,7 +22546,7 @@ msgstr ""
 "Тукс вярнуўся з рыбалкі на сваёй лодцы. Узнавіце працу электрычнай сістэмы, "
 "каб дома ў Тукса з'явілася святло."
 
-#: activities/renewable_energy/RenewableEnergy.qml:307
+#: activities/renewable_energy/RenewableEnergy.qml:276
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22555,7 +22555,7 @@ msgstr ""
 "Выбірайце розныя актыўныя элементы: сонца, хмара, запруда, панэль сонечных "
 "батарэй, ветракі і трансфарматары, - каб узнавіць поўную электрычную сістэму."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:279
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22566,14 +22566,14 @@ msgstr ""
 "перамагчы, вам трэба ўключыць усе спажыўцы электраэнергіі, пакуль уся "
 "вытворчая сістэма актыўная."
 
-#: activities/renewable_energy/RenewableEnergy.qml:313
+#: activities/renewable_energy/RenewableEnergy.qml:282
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Пазнаёмцеся з электрычнай сістэмай, заснаванай на ўнаўляльнай энергіі. Калі "
 "ласка."
 
-#: activities/renewable_energy/RenewableEnergy.qml:339
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-12-28 21:08+0200\n"
+"PO-Revision-Date: 2025-04-30 12:20+0300\n"
 "Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
 "Language-Team: Albanian <kde-i18n-doc@kde.org>\n"
 "Language: sq\n"
@@ -2884,10 +2884,6 @@ msgstr ""
 "sistemi dhjetor. Kur ta keni bërë, shtypni OK."
 
 #: activities/binary_bulb/BinaryBulb.qml:84
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "This activity teaches how to convert decimal numbers to binary numbers."
 msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr ""
@@ -2895,12 +2891,6 @@ msgstr ""
 "numra dyorë."
 
 #: activities/binary_bulb/BinaryBulb.qml:88
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Computers use transistors to count and transistors have only two states, "
-#| "0 and 1. Mathematically, these states are represented by 0 and 1, which "
-#| "makes up the binary system of numeration."
 msgctxt "BinaryBulb|"
 msgid ""
 "Computers use transistors to count and transistors have only two states, 0 "
@@ -2912,20 +2902,12 @@ msgstr ""
 "1, mbi të cilat ngrihet sistemi dyor i numërimit."
 
 #: activities/binary_bulb/BinaryBulb.qml:92
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr ""
 "Te veprimtaria, 0 dhe 1 simulohen përmes llambash, të ndezura ose të fikura."
 
 #: activities/binary_bulb/BinaryBulb.qml:96
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Binary system uses these numbers very efficiently, allowing to count from "
-#| "0 to 255 with 8 bits only."
 msgctxt "BinaryBulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
@@ -2935,13 +2917,6 @@ msgstr ""
 "numërohet nga 0 deri në 255 vetëm me 8 elementë."
 
 #: activities/binary_bulb/BinaryBulb.qml:100
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Each bit adds a progressive value, corresponding to the powers of 2, "
-#| "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → "
-#| "2²=4 , bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit "
-#| "8 → 2⁷=128."
 msgctxt "BinaryBulb|"
 msgid ""
 "Each bit adds a progressive value, corresponding to the powers of 2, "
@@ -2955,9 +2930,6 @@ msgstr ""
 "elementi 7 → 2⁶=64 , elementi 8 → 2⁷=128."
 
 #: activities/binary_bulb/BinaryBulb.qml:104
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr ""
@@ -2965,26 +2937,18 @@ msgstr ""
 "1-shit."
 
 #: activities/binary_bulb/BinaryBulb.qml:108
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 "
-#| "is equal to binary 101."
 msgctxt "BinaryBulb|"
 msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
 "equal to binary 101."
 msgstr ""
-"Elementët përkatës për to vendosen si 1, të tjerët vendosen 0. 5 dhjetore "
+"Elementët përkatës për to vendosen si 1, të tjerët vendosen 0. 5-a dhjetore "
 "është e njëvlershme me dyorin 101."
 
 #: activities/binary_bulb/BinaryBulb.qml:112
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "This image will help you to compute bits' value."
 msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
-msgstr "Kjo figurë do t’ju ndihmojë të llogaritni vlerën e elementëve."
+msgstr "Kjo figurë do t’ju ndihmojë të njehsoni vlerën e elementëve."
 
 #: activities/binary_bulb/BinaryBulb.qml:160
 #, qt-format
@@ -14656,36 +14620,21 @@ msgid "Empty"
 msgstr "I zbrazët"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Grammatical analysis"
 msgctxt "GrammarAnalysis|"
 msgid "Grammatical analysis"
 msgstr "Analizë gramatikore"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "GrammarAnalysis|"
 msgid "Learn to identify grammatical classes."
 msgstr "Mësoni të identifikoni klasa gramatikore."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:28
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid ""
-#| "Find all the words corresponding to the requested grammatical classes."
 msgctxt "GrammarAnalysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
-msgstr "Gjeni krejt fjalët që përkojnë me klasat gramatikore të domosdoshme."
+msgstr "Gjeni krejt fjalët që përkojnë me klasat gramatikore të kërkuara."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a grammatical class from the list, then select the box under a "
-#| "word and assign it the class."
 msgctxt "GrammarAnalysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
@@ -14695,9 +14644,6 @@ msgstr ""
 "fjalën dhe caktojini klasën."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Leave the box blank if no class matches."
 msgctxt "GrammarAnalysis|"
 msgid "Leave the box blank if no class matches."
 msgstr "Nëse s’ka përkime, lëreni kutinë të zbrazët."
@@ -14729,35 +14675,21 @@ msgid "Leave the box blank if the class doesn't match."
 msgstr "Nëse klasa nuk përkon, lëreni kutinë të zbrazët."
 
 #: activities/grammar_classes/GrammarClasses.qml:15
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Grammatical classes"
 msgctxt "GrammarClasses|"
 msgid "Grammatical classes"
 msgstr "Klasa gramatikore"
 
 #: activities/grammar_classes/GrammarClasses.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "GrammarClasses|"
 msgid "Learn to identify grammatical classes."
 msgstr "Mësoni të identifikoni klasa gramatikore."
 
 #: activities/grammar_classes/GrammarClasses.qml:17
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Find all the words corresponding to the requested grammatical class."
 msgctxt "GrammarClasses|"
 msgid "Find all the words corresponding to the requested grammatical class."
 msgstr "Gjeni krejt fjalët që i përkojnë klasës së caktuar gramatikore."
 
 #: activities/grammar_classes/GrammarClasses.qml:18
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid ""
-#| "Select the grammatical class from the list, then select the box under a "
-#| "word and assign it the class."
 msgctxt "GrammarClasses|"
 msgid ""
 "Select the grammatical class from the list, then select the box under a word "
@@ -14767,9 +14699,6 @@ msgstr ""
 "një fjalë dhe caktojini klasën."
 
 #: activities/grammar_classes/GrammarClasses.qml:19
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Leave the box blank if the class doesn't match."
 msgctxt "GrammarClasses|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr "Nëse klasa s’përkon, lëreni kutinë të zbrazët."
@@ -16351,11 +16280,6 @@ msgstr ""
 "vlerësohet përgjigja juaj."
 
 #: activities/learn_decimals/Learn_decimals.qml:30
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A decimal number is displayed. The bar with the arrow represents a full "
-#| "unit, and each square in it represents one tenth of this unit."
 msgctxt "Learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
@@ -16365,13 +16289,6 @@ msgstr ""
 "plotë dhe çdo katror në të përfaqëson një të dhjetën e njësisë."
 
 #: activities/learn_decimals/Learn_decimals.qml:34
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a part of the bar, and drag the selected part of "
-#| "the bar to the empty area. Repeat these steps until the number of dropped "
-#| "bars corresponds to the displayed decimal number. Then click on the OK "
-#| "button to validate your answer."
 msgctxt "Learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -16479,12 +16396,6 @@ msgid "Numbers: type the result"
 msgstr "Numra: shtypni përfundimin"
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "An addition with two decimal numbers is displayed. The bar with the arrow "
-#| "represents a full unit, and each square in it represents one tenth of "
-#| "this unit."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "An addition with two decimal numbers is displayed. The bar with the arrow "
@@ -16496,13 +16407,6 @@ msgstr ""
 "njësie."
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a part of the bar, and drag the selected part of "
-#| "the bar to the empty area. Repeat these steps until the number of dropped "
-#| "bars corresponds to the result of the addition, and click on the OK "
-#| "button to validate your answer."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -16516,11 +16420,6 @@ msgstr ""
 "mandej klikoni mbi butonin OK, që të vlerësohet përgjigja juaj."
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:24
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -16581,12 +16480,6 @@ msgstr ""
 "numrin e dytë dhe të paraqitni përfundimin e veprimit"
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A subtraction with two decimal numbers is displayed. Below it, the first "
-#| "number from the subtraction is represented with bars. One bar represents "
-#| "a full unit, and each square in it represents one tenth of this unit."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "A subtraction with two decimal numbers is displayed. Below it, the first "
@@ -16598,11 +16491,6 @@ msgstr ""
 "katror në të përfaqëson një të dhjetën e kësaj njësie."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Click on the squares to subtract them and display the result of the "
-#| "operation, and click on the OK button to validate your answer."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
@@ -16612,11 +16500,6 @@ msgstr ""
 "mandej klikoni mbi butonin OK që të vlerësohet përgjigja juaj."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:24
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -16785,22 +16668,11 @@ msgstr ""
 "së kërkuar. Mandej klikoni mbi butonin OK që të vlerësohet përgjigja juaj."
 
 #: activities/learn_quantities/Learn_quantities.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgctxt "Learn_quantities|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr "Kërkohet një sasi. Shigjeta lejon të përzgjidhen deri në 10 portokaj."
 
 #: activities/learn_quantities/Learn_quantities.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a number of oranges, and drag the selected "
-#| "oranges to the empty area. Repeat these steps until the number of oranges "
-#| "corresponds to the requested quantity. Then click on the OK button to "
-#| "validate your answer."
 msgctxt "Learn_quantities|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "
@@ -19996,11 +19868,6 @@ msgid "Try again"
 msgstr "Riprovoni"
 
 #: activities/nine_men_morris/NineMenMorris.qml:348
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "You and Tux start with 9 pieces each, and take turns to place your pieces "
-#| "on the empty spots of the board (by clicking on the spots)."
 msgctxt "NineMenMorris|"
 msgid ""
 "You and Tux start with 9 pieces each, and take turns to place your pieces on "
@@ -20010,12 +19877,6 @@ msgstr ""
 "pazëna te fusha, një herë njëri, një herë tjetri (duke klikuar mbi vendet)."
 
 #: activities/nine_men_morris/NineMenMorris.qml:352
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
-#| "remove it. Pieces of formed mill can not be removed unless no other "
-#| "pieces are left on the board."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
@@ -20027,12 +19888,6 @@ msgstr ""
 "mos pastë mbetur më gur në fushë."
 
 #: activities/nine_men_morris/NineMenMorris.qml:356
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "After all the pieces are placed, you and Tux will take turns to move "
-#| "them. Click on one of your pieces, and then on an adjacent empty spot to "
-#| "move it there. Green color spots indicates where you can move."
 msgctxt "NineMenMorris|"
 msgid ""
 "After all the pieces are placed, you and Tux will take turns to move them. "
@@ -20045,11 +19900,6 @@ msgstr ""
 "tregojnë se ku mund të lëvizni."
 
 #: activities/nine_men_morris/NineMenMorris.qml:360
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
-#| "moved to any vacant spot on the board."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
@@ -20059,11 +19909,6 @@ msgstr ""
 "vendosen në çfarëdo vendi të zbrazët në fushë."
 
 #: activities/nine_men_morris/NineMenMorris.qml:364
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you immobilize the computer or leave it with less than 3 pieces, then "
-#| "you win the game."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
@@ -20325,24 +20170,24 @@ msgstr ""
 "897, 1001. Krejt këta numra janë numra tek, ngaqë për ta, mbetja pas "
 "pjesëtimit me 2, s’është 0."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the even number:"
 msgstr "Zgjidhni një numër çift:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the odd number:"
 msgstr "Zgjidhni një numër tek:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:56
-#: activities/numbers-odd-even/resource/TutorialBase.qml:86
+#: activities/numbers-odd-even/resource/TutorialBase.qml:57
+#: activities/numbers-odd-even/resource/TutorialBase.qml:87
 msgctxt "TutorialBase|"
 msgid "Great"
 msgstr "Bukur"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:60
-#: activities/numbers-odd-even/resource/TutorialBase.qml:90
+#: activities/numbers-odd-even/resource/TutorialBase.qml:61
+#: activities/numbers-odd-even/resource/TutorialBase.qml:91
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -20352,8 +20197,8 @@ msgstr ""
 "Ka një gabim: kur pjesëtohet me 2, %1 lë një mbetje baras me 1. Ndaj është "
 "numër tek."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:63
-#: activities/numbers-odd-even/resource/TutorialBase.qml:93
+#: activities/numbers-odd-even/resource/TutorialBase.qml:64
+#: activities/numbers-odd-even/resource/TutorialBase.qml:94
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -20738,7 +20583,6 @@ msgstr ""
 
 #: activities/oware/ActivityInfo.qml:23
 #: activities/oware_2players/ActivityInfo.qml:23
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid ""
 "Players take turns moving the seeds. On each turn, a player chooses one of "
@@ -22367,19 +22211,11 @@ msgid "Loop"
 msgstr "Qerthull"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:542
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Instruction Area:"
 msgctxt "ProgrammingMaze|"
 msgid "Instruction Area:"
 msgstr "Zonë Udhëzimesh:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:543
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "There are 3 instructions which you can use to code and lead Tux to the "
-#| "fish:"
 msgctxt "ProgrammingMaze|"
 msgid ""
 "There are 3 instructions which you can use to code and lead Tux to the fish:"
@@ -22388,11 +22224,6 @@ msgstr ""
 "peshku:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:544
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
-#| "facing."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
@@ -22402,43 +22233,26 @@ msgstr ""
 "përballë."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:545
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgctxt "ProgrammingMaze|"
 msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgstr "<b>2. Kthehu majtas:</b> E kthen Tux-in majtas."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:546
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgctxt "ProgrammingMaze|"
 msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgstr "<b>2. Kthehu djathtas:</b> E kthen Tux-in djathtas."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:550
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Main Function:"
 msgctxt "ProgrammingMaze|"
 msgid "Main Function:"
 msgstr "Funksioni Kryesor:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:551
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "The execution of the code starts here."
 msgctxt "ProgrammingMaze|"
 msgid "The execution of the code starts here."
 msgstr "Ekzekutimi i kodit nis këtu."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:552
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-Click on any instruction in the <b>instruction area</b> to add it to the "
-#| "<b>Main Function</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-Click on any instruction in the <b>instruction area</b> to add it to the "
@@ -22448,11 +22262,6 @@ msgstr ""
 "<b>Funksioni Kryesor</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:553
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-The instructions will execute in order until there's none left, or until "
-#| "a dead-end, or when Tux reaches the fish."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-The instructions will execute in order until there's none left, or until a "
@@ -22463,19 +22272,11 @@ msgstr ""
 "peshku."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:563
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Procedure:"
 msgctxt "ProgrammingMaze|"
 msgid "Procedure:"
 msgstr "Procedurë:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:564
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>Procedure</b> is a reusable set of instructions which can be <b>used "
-#| "in the code by calling it where needed</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
@@ -22485,12 +22286,6 @@ msgstr ""
 "<b>përdoret te kodi duke e thirrur kur duhet</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:565
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main "
-#| "Function area</b> to add your code, click on the <b>Procedure</b> or "
-#| "<b>Main Function</b> label."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
@@ -22502,19 +22297,11 @@ msgstr ""
 "<b>Procedurë</b> ose <b>Funksion Kryesor</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:575
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Loop:"
 msgctxt "ProgrammingMaze|"
 msgid "Loop:"
 msgstr "Qerthull:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:576
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
-#| "the number of times defined by the number inside it</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
@@ -22524,21 +22311,15 @@ msgstr ""
 "herë sa përcaktohet nga numri brenda tij</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:577
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
-#| "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</"
-#| "b> label."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
 "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
 "label."
 msgstr ""
-"- Që të <b>kaloni</b> nga <b>zona e Procedurës</b> te <b>zona e Funksionit "
+"- Që të <b>kaloni</b> nga <b>zona e Qerthullit</b> te <b>zona e Funksionit "
 "Kryesor</b> dhe anasjelltas, për të shtuar kod tuajin, klikoni mbi etiketën "
-"<b>Procedurë</b> ose <b>Funksion Kryesor</b>."
+"<b>Qerthull</b> ose <b>Funksion Kryesor</b>."
 
 #: activities/programmingMaze/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -22674,12 +22455,12 @@ msgstr ""
 "<font color=\"#373737\">Shihni nëse fjala<br/></font><b><font color=\"#315AAA"
 "\">%1</font></b><br/><font color=\"#373737\">është shfaqur</font>"
 
-#: activities/readingh/Readingh.qml:363
+#: activities/readingh/Readingh.qml:364
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Po, e pashë!"
 
-#: activities/readingh/Readingh.qml:384
+#: activities/readingh/Readingh.qml:385
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Jo, s’qe gjëkundi!"
@@ -22848,7 +22629,7 @@ msgstr ""
 "në shtëpi, shtypni butonin e dritës për të. Që të fitoni, duhet të ndizni "
 "krejt konsumatorët, teksa gjithë prodhuesit janë në punë."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:273
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22857,7 +22638,7 @@ msgstr ""
 "Tux-i është kthyer nga peshkimi me barkën e tij. Rivini në punë sistemin "
 "elektrik, që të ketë dritë në shtëpi."
 
-#: activities/renewable_energy/RenewableEnergy.qml:307
+#: activities/renewable_energy/RenewableEnergy.qml:276
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22867,7 +22648,7 @@ msgstr ""
 "kompleks turbinash me erë dhe transformatorë, që të mund të riaktivizoni "
 "tërë sistemin elektrik."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:279
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22878,14 +22659,14 @@ msgstr ""
 "butonin e dritës për të. Që të fitoni, duhet të ndizni krejt konsumatorët, "
 "teksa gjithë prodhuesit janë në punë."
 
-#: activities/renewable_energy/RenewableEnergy.qml:313
+#: activities/renewable_energy/RenewableEnergy.qml:282
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Mësoni rreth një sistemi elektrik të bazuar në energji të rinovueshme. Ju "
 "bëftë mirë."
 
-#: activities/renewable_energy/RenewableEnergy.qml:339
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -26024,19 +25805,11 @@ msgid "Right Ballast Tank"
 msgstr "Rezervuari i Djathtë i Balastit"
 
 #: activities/submarine/Submarine.qml:133
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Move the submarine to the other side of the screen."
 msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "Shpjereni nëndetësen në anën tjetër të ekranit."
 
 #: activities/submarine/Submarine.qml:136
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The leftmost item in the control panel is the engine of the submarine, "
-#| "indicating the current speed of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
@@ -26046,50 +25819,31 @@ msgstr ""
 "nëndetëses, me shpejtësinë aktuale të nëndetëses të shfaqur."
 
 #: activities/submarine/Submarine.qml:139
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Increase or decrease the velocity of the submarine using the engine."
 msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr "Rritni ose ulni shpejtësinë e nëndetëses duke përdorur motorin."
 
 #: activities/submarine/Submarine.qml:142
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Press the + button to increase the velocity, or the - button to decrease "
-#| "the velocity."
 msgctxt "Submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
 "velocity."
 msgstr ""
-"Që të rritni shpejtësinë, shtypni butonin +, ose që ta ulni shpejtësinë "
+"Që të rritni shpejtësinë, shtypni butonin +, ose që ta ulni shpejtësinë, "
 "shtypni butonin - ."
 
 #: activities/submarine/Submarine.qml:149
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The item next to the engine is the ballast tank."
 msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "Objekti në krah të motorit është depozita e balastit."
 
 #: activities/submarine/Submarine.qml:152
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The ballast tanks are used to float or dive under water."
 msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr ""
 "Depozitat e balastit përdoren për të pluskuar, ose për t’u zhytur nën ujë."
 
 #: activities/submarine/Submarine.qml:155
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "If the ballast tanks are empty, the submarine will float. If the ballast "
-#| "tanks are full of water, the submarine will dive underwater."
 msgctxt "Submarine|"
 msgid ""
 "If the ballast tanks are empty, the submarine will float. If the ballast "
@@ -26099,27 +25853,15 @@ msgstr ""
 "depozitat e balastit janë plot me ujë, nëndetësja do të zhytet në thellësi."
 
 #: activities/submarine/Submarine.qml:158
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Turning the upper valve on or off will alternatively allow or stop the "
-#| "water from filling in the ballast tank, thus allowing it to dive "
-#| "underwater."
 msgctxt "Submarine|"
 msgid ""
 "Turning the upper valve on or off will alternatively allow or stop the water "
 "from filling in the ballast tank, thus allowing it to dive underwater."
 msgstr ""
-"Duke hapur ose mbyllur valvulën e sipërmes, lejoni ose ndalni mbushjen me "
-"ujë të depozitës së balastit, duke lejuar kështu zhytjen nën ujë."
+"Duke hapur ose mbyllur valvulën e sipërme, lejoni ose ndalni mbushjen me ujë "
+"të depozitës së balastit, duke lejuar kështu zhytjen nën ujë."
 
 #: activities/submarine/Submarine.qml:161
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Turning the lower valve on or off will alternatively allow or stop the "
-#| "water from flushing out the ballast tank, thus allowing it to float on "
-#| "the surface of the water."
 msgctxt "Submarine|"
 msgid ""
 "Turning the lower valve on or off will alternatively allow or stop the water "
@@ -26131,25 +25873,15 @@ msgstr ""
 "ujit."
 
 #: activities/submarine/Submarine.qml:168
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The rightmost item in the control panel controls the diving planes of the "
-#| "submarine"
 msgctxt "Submarine|"
 msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
 "submarine."
 msgstr ""
 "Objekti i skajshëm i djathtë te paneli i kontrollit kontrollon planet "
-"zhytjes së nëndetëses"
+"zhytjes së nëndetëses."
 
 #: activities/submarine/Submarine.qml:171
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The diving planes in a submarine are used to control the depth of the "
-#| "submarine accurately once it is underwater."
 msgctxt "Submarine|"
 msgid ""
 "The diving planes in a submarine are used to control the depth of the "
@@ -26159,25 +25891,15 @@ msgstr ""
 "thellësinë e nëndetëses pasi kjo të jetë nën ujë."
 
 #: activities/submarine/Submarine.qml:174
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Once the submarine is moving underwater, increasing or decreasing the "
-#| "angle of the planes will increase and decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "Once the submarine is moving underwater, increasing or decreasing the angle "
 "of the planes will increase and decrease the depth of the submarine."
 msgstr ""
 "Pasi nëndetësja të lëvizë nën ujë, zmadhimi ose zvogëlimi i këndit të "
-"planeve do të rrisë ose ulë thellësinë e nëndetëses."
+"planeve do të rritë ose ulë thellësinë e nëndetëses."
 
 #: activities/submarine/Submarine.qml:177
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The + button will increase the depth of the submarine, while the - button "
-#| "will decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "The + button will increase the depth of the submarine, while the - button "
@@ -26187,17 +25909,11 @@ msgstr ""
 "thellësinë e nëndetëses."
 
 #: activities/submarine/Submarine.qml:180
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Grab the crown to open the gate."
 msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "Përlani kurorën, që të hapet porta."
 
 #: activities/submarine/Submarine.qml:183
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Check out the help menu for the keyboard controls."
 msgctxt "Submarine|"
 msgid "Check out the help menu for the keyboard controls."
 msgstr "Për kontroll përmes tastierës, shihni menunë e ndihmës."
@@ -26802,10 +26518,9 @@ msgid "Write your own addition and solve it."
 msgstr "Shkruani mbledhjen tuaj dhe kryejeni."
 
 #: activities/vertical_addition/resource/2/Data.qml:12
-#, fuzzy
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines, without carry."
-msgstr "Shkruani dhe bëni mbledhjen, 2 shifra, 3 rreshta."
+msgstr ""
 
 #: activities/vertical_addition/resource/3/Data.qml:12
 msgctxt "Data|"
@@ -26862,6 +26577,7 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by regrouping "
 "method."
 msgstr ""
+"Mësoni të bëni zbritje vertikale, me marrje hua sipas metodës së rigrupimit."
 
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:22
@@ -26899,10 +26615,9 @@ msgstr ""
 
 #: activities/vertical_subtraction/resource/1/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
-#, fuzzy
 msgctxt "Data|"
 msgid "Solve subtraction, 2 digits, 2 lines, without carry."
-msgstr "Bëni zbritjen, 3 ose 4 shifra, 2 rreshta."
+msgstr ""
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
@@ -26924,10 +26639,9 @@ msgstr "Shkruani zbritjen tuaj dhe kryejeni."
 
 #: activities/vertical_subtraction/resource/2/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
-#, fuzzy
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 2 lines, without carry."
-msgstr "Shkruani dhe bëni zbritjen, 3 ose 4 shifra, 2 rreshta."
+msgstr ""
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
@@ -27006,6 +26720,7 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by compensation "
 "method."
 msgstr ""
+"Mësoni të bëni zbritje vertikale, me marrje hua sipas metodës së kompensimit."
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24

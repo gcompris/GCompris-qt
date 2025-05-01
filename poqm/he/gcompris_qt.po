@@ -19852,24 +19852,24 @@ msgstr ""
 "1001. כל המספרים האלה הם מספרים אי-זוגיים כי הם לא נותנים שארית של 0 "
 "כשמחלקים אותם ב־2."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the even number:"
 msgstr "לבחור את המספרים הזוגיים:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the odd number:"
 msgstr "לבחור את המספרים האי-זוגיים:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:56
-#: activities/numbers-odd-even/resource/TutorialBase.qml:86
+#: activities/numbers-odd-even/resource/TutorialBase.qml:57
+#: activities/numbers-odd-even/resource/TutorialBase.qml:87
 msgctxt "TutorialBase|"
 msgid "Great"
 msgstr "נהדר"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:60
-#: activities/numbers-odd-even/resource/TutorialBase.qml:90
+#: activities/numbers-odd-even/resource/TutorialBase.qml:61
+#: activities/numbers-odd-even/resource/TutorialBase.qml:91
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -19877,8 +19877,8 @@ msgid ""
 "this is an odd number."
 msgstr "יש טעות: כשמחלקים אותו ב־2, %1 משאיר שארית 1. לכן זהו מספר אי-זוגי."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:63
-#: activities/numbers-odd-even/resource/TutorialBase.qml:93
+#: activities/numbers-odd-even/resource/TutorialBase.qml:64
+#: activities/numbers-odd-even/resource/TutorialBase.qml:94
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -22139,12 +22139,12 @@ msgstr ""
 "<font color=\"#373737\">האם המילה<br/></font><b><font color=\"#315AAA\">%1</"
 "font></b><br/><font color=\"#373737\">מופיעה</font>"
 
-#: activities/readingh/Readingh.qml:363
+#: activities/readingh/Readingh.qml:364
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "כן, ראיתי אותה!"
 
-#: activities/readingh/Readingh.qml:384
+#: activities/readingh/Readingh.qml:385
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "לא, היא לא הייתה שם!"
@@ -22308,7 +22308,7 @@ msgstr ""
 "ללחוץ על כפתור המנורה בשבילו. כדי לזכות עליך להפעיל את כל הצרכנים כאשר כל "
 "הספקים פועלים."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:273
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22317,7 +22317,7 @@ msgstr ""
 "טאקס חזר הביתה מהדיג (הוא לא באמת דג, הוא שוחה עם דולפינים) על הסירה שלו. "
 "צריך לחבר את החשמל כדי שיוכל להיות לו אור בבית."
 
-#: activities/renewable_energy/RenewableEnergy.qml:307
+#: activities/renewable_energy/RenewableEnergy.qml:276
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22326,7 +22326,7 @@ msgstr ""
 "ללחוץ על חלקים שונים בפעילות: שמש, ענן, סכר, מערכת סולארית, חוות רוח ושנאים "
 "כדי להפעיל מחדש את מערכת החשמל כולה."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:279
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22336,12 +22336,12 @@ msgstr ""
 "כשהמערכת שוב פועלת וטאקס נמצא בביתו, נא ללחוץ על כפתור המנורה בשבילו. כדי "
 "לזכות עליך להפעיל את כל הצרכנים כאשר כל הספקים פועלים."
 
-#: activities/renewable_energy/RenewableEnergy.qml:313
+#: activities/renewable_energy/RenewableEnergy.qml:282
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "ללמוד על מערכת חשמל המבוססת על אנרגיה מתחדשת. בכיף."
 
-#: activities/renewable_energy/RenewableEnergy.qml:339
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "

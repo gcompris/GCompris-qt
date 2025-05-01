@@ -20168,24 +20168,24 @@ msgstr ""
 "1001. Ĉiuj ĉi tiuj nombroj estas neparaj, ĉar ili ne lasas reston de 0. "
 "dividita per 2."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the even number:"
 msgstr "Elektu la paran nombron:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:31
+#: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
 msgid "Choose the odd number:"
 msgstr "Elektu la neparan nombron:"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:56
-#: activities/numbers-odd-even/resource/TutorialBase.qml:86
+#: activities/numbers-odd-even/resource/TutorialBase.qml:57
+#: activities/numbers-odd-even/resource/TutorialBase.qml:87
 msgctxt "TutorialBase|"
 msgid "Great"
 msgstr "Bonege"
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:60
-#: activities/numbers-odd-even/resource/TutorialBase.qml:90
+#: activities/numbers-odd-even/resource/TutorialBase.qml:61
+#: activities/numbers-odd-even/resource/TutorialBase.qml:91
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -20195,8 +20195,8 @@ msgstr ""
 "Estas eraro: dividite per 2, %1 lasas reston de 1. Tial ĉi tio estas nepara "
 "nombro."
 
-#: activities/numbers-odd-even/resource/TutorialBase.qml:63
-#: activities/numbers-odd-even/resource/TutorialBase.qml:93
+#: activities/numbers-odd-even/resource/TutorialBase.qml:64
+#: activities/numbers-odd-even/resource/TutorialBase.qml:94
 #, qt-format
 msgctxt "TutorialBase|"
 msgid ""
@@ -22489,12 +22489,12 @@ msgstr ""
 "<font color=\"#373737\">Kontrolu ĉu la vorto<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">montriĝas</font>"
 
-#: activities/readingh/Readingh.qml:363
+#: activities/readingh/Readingh.qml:364
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Jes, mi vidis ĝin!"
 
-#: activities/readingh/Readingh.qml:384
+#: activities/readingh/Readingh.qml:385
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Ne, ĝi ne estis tie!"
@@ -22656,7 +22656,7 @@ msgstr ""
 "butonon por li. Por gajni, vi devas ŝalti ĉiujn konsumantojn dum ĉiuj "
 "produktantoj estas ŝaltitaj."
 
-#: activities/renewable_energy/RenewableEnergy.qml:304
+#: activities/renewable_energy/RenewableEnergy.qml:273
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22665,7 +22665,7 @@ msgstr ""
 "Tux revenis de fiŝkaptado sur sia boato. Reportu la elektran sistemon por ke "
 "li povu havi lumon en sia hejmo."
 
-#: activities/renewable_energy/RenewableEnergy.qml:307
+#: activities/renewable_energy/RenewableEnergy.qml:276
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22674,7 +22674,7 @@ msgstr ""
 "Alklaku malsamajn aktivajn elementojn: suno, nubo, digo, suna aro, "
 "ventofarmo kaj transformiloj, por reaktivigi la tutan elektran sistemon."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:279
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22685,12 +22685,12 @@ msgstr ""
 "butonon por li. Por gajni, vi devas ŝalti ĉiujn konsumantojn dum ĉiuj "
 "produktantoj estas ŝaltitaj."
 
-#: activities/renewable_energy/RenewableEnergy.qml:313
+#: activities/renewable_energy/RenewableEnergy.qml:282
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "Lernu pri elektra sistemo bazita sur renovigebla energio. Ĝuu."
 
-#: activities/renewable_energy/RenewableEnergy.qml:339
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
