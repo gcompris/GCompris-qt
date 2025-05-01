@@ -10,8 +10,6 @@
 import QtQuick 2.12
 import "tic_tac_toe.js" as Activity
 
-import core 1.0
-
 Image {
     id: piece
     opacity: 1.0
