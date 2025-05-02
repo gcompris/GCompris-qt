@@ -26916,7 +26916,7 @@ msgstr ""
 "agua. Cuando el sistema vuelva a funcionar y Tux esté en la ducha, pulsa el "
 "interruptor del agua por él."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:114
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -26925,14 +26925,14 @@ msgstr ""
 "El sol es el principal componente del ciclo del agua. Pulsa sobre el sol "
 "para comenzar el ciclo del agua."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr ""
 "Cuando el sol va subiendo en el cielo, el agua del mar comienza a calentarse "
 "y se evapora."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -26941,7 +26941,7 @@ msgstr ""
 "El vapor de agua se condensa para formar nubes. Cuando las nubes están "
 "cargadas, llueve. Pulsa sobre la nube."
 
-#: activities/watercycle/Watercycle.qml:118
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -26952,7 +26952,7 @@ msgstr ""
 "nuestra casa usando bombas a motor y torres de agua. Pulsa sobre la bomba a "
 "motor para proporcionar agua a los habitantes."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:119
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -26961,18 +26961,18 @@ msgstr ""
 "Mira la torre llena de agua. Activa la estación de tratamiento de aguas "
 "pulsando sobre ella."
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "¡Bien! Pulsa en la ducha cuando Tux llegue a casa."
 
-#: activities/watercycle/Watercycle.qml:122
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "¡Fantástico! Has completado el ciclo del agua. Puedes seguir jugando."
 
-#: activities/watercycle/Watercycle.qml:141
+#: activities/watercycle/Watercycle.qml:140
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26984,7 +26984,7 @@ msgstr ""
 "calor del sol proporciona energía para evaporar el agua desde los cuerpos "
 "que la contienen, como los océanos."
 
-#: activities/watercycle/Watercycle.qml:144
+#: activities/watercycle/Watercycle.qml:143
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26995,7 +26995,7 @@ msgstr ""
 "agua se enfría formando gotitas en las nubes. Cuando las nubes se encuentran "
 "con aire frío sobre el suelo, esas gotas empiezan a caer en forma de lluvia."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:146
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -27006,7 +27006,7 @@ msgstr ""
 "que se llama agua subterránea. Pero la mayor parte del agua va a parar a "
 "corrientes de agua (como los ríos) que finalmente la devuelven al mar."
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:149
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "

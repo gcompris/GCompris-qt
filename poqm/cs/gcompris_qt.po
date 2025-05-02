@@ -26446,7 +26446,7 @@ msgstr ""
 "slunce, mraky, čerpadlo a čističku odpadních vod. Až se ti povede spustit "
 "celý systém, spusť pro Tuxe sprchu."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:114
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -26454,12 +26454,12 @@ msgid ""
 msgstr ""
 "Slunce je hlavní součástí koloběhu vody. Klikni na slunce pro započetí cyklu."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Když vyjde slunce, mořská voda se začne ohřívat a vypařuje se."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -26468,7 +26468,7 @@ msgstr ""
 "Vodní pára kondenzuje, aby vytvořila mraky a když jsou mraky těžké, začne "
 "pršet. Klikni na mrak."
 
-#: activities/watercycle/Watercycle.qml:118
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -26479,26 +26479,26 @@ msgstr ""
 "vodojemu, ze kterého se voda dostane k nám. Klikni na čerpadlo pro dodání "
 "vody obyvatelům."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:119
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
 "clicking on it."
 msgstr "Vodojem se plní vodou. Kliknutím aktivuj čističku odpadních vod."
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Výborně, klikni na sprchu, až Tux dorazí domů."
 
-#: activities/watercycle/Watercycle.qml:122
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr ""
 "Výborně, podařilo se ti dokončit koloběh vody. Můžeš pokračovat ve hře."
 
-#: activities/watercycle/Watercycle.qml:141
+#: activities/watercycle/Watercycle.qml:140
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26509,7 +26509,7 @@ msgstr ""
 "prochází při cirkulaci ze země do oblak a zpátky na zem. Sluneční svit "
 "poskytuje energii pro odpaření vody z vodních ploch, například z oceánů."
 
-#: activities/watercycle/Watercycle.qml:144
+#: activities/watercycle/Watercycle.qml:143
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26520,7 +26520,7 @@ msgstr ""
 "ochlazuje a tvoří malinké kapičky v mracích. Když se mraky setkají s "
 "chladným vzduchem nad pevninou, spustí se srážky a padají dolů jako déšť."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:146
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26530,7 +26530,7 @@ msgstr ""
 "Voda, která se zachytí mezi vrstvami horniny a hlíny se nazývá podzemní "
 "voda. Většina vody však odteče řekami do moře."
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:149
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "

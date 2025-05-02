@@ -26771,7 +26771,7 @@ msgstr ""
 "vassreinsingsanlegget – for å setja vasskrinsløpet i gang. Når du er ferdig "
 "og Tux har komme til dusjen, kan du trykkja på dusjknappen for han."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:114
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -26780,12 +26780,12 @@ msgstr ""
 "Sola er hovudkomponenten i vasskrinsløpet. Trykk på sola for å starta "
 "krinsløpet."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Når sola står opp, vert vatnet i havet varmare og tek til å fordampa."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -26794,7 +26794,7 @@ msgstr ""
 "Vassdamp vert kondensert til skyer, og når skyene vert tunge, regnar dei. "
 "Trykk på skya."
 
-#: activities/watercycle/Watercycle.qml:118
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -26805,7 +26805,7 @@ msgstr ""
 "til oss via vasspumper og vasstårn. Trykk på vasspumpe­stasjonen for å frakta "
 "vatn til innbyggjarane."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:119
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -26815,12 +26815,12 @@ msgstr ""
 "det i gang."
 
 # Tux har gjerne komme heim lenge før ein kjem til dette trinnet, så brukar «har komme» i staden for «kjem» her.
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Flott! Trykk på dusjen når Tux har komme heim."
 
-#: activities/watercycle/Watercycle.qml:122
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
@@ -26828,7 +26828,7 @@ msgstr ""
 "Fantastisk! Du har fullført vasskrinsløpet. Du kan halda fram med å spela, "
 "viss du vil."
 
-#: activities/watercycle/Watercycle.qml:141
+#: activities/watercycle/Watercycle.qml:140
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26839,7 +26839,7 @@ msgstr ""
 "land til skyer og tilbake. Sola gjev varmeenergi som fordampar vatnet frå "
 "havet og andre vassmassar."
 
-#: activities/watercycle/Watercycle.qml:144
+#: activities/watercycle/Watercycle.qml:143
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26850,7 +26850,7 @@ msgstr ""
 "ned og dannar små vassdropar i skyene. Når skyene møter kald luft over land, "
 "fell vatnet som regn."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:146
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26860,7 +26860,7 @@ msgstr ""
 "Noko av vatnet sit fast i jord og berg under jordoverflata. Dette vert kalla "
 "grunnvatn. Men det meste av vatnet renn ut i havet att, via elver."
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:149
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "

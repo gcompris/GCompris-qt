@@ -26996,7 +26996,7 @@ msgstr ""
 "ir atliekų šalinimo stoties, kad iš naujo aktyvuotum visą vandens sistemą. "
 "Kuomet sistema veikia, o Tuksas yra duše – nuspausk jam dušo mygtuką."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:114
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -27005,12 +27005,12 @@ msgstr ""
 "Saulė yra pagrindinis vandens ciklo elementas. Paspausk ant saulės, "
 "norėdamas įjungti vandens apytakos ratą."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Kuomet saulė pakyla, jūros vanduo pradeda šilti ir garuoti."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -27019,7 +27019,7 @@ msgstr ""
 "Vandens garai kondensuojasi, suformuodami debesis. Kai šie debesys tampa "
 "sunkūs, pradeda lyti. Paspausk ant debesies."
 
-#: activities/watercycle/Watercycle.qml:118
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -27029,7 +27029,7 @@ msgstr ""
 "Lietus priverčia upes patvinti, o vandens bokštų siurbliai šį vandenį "
 "susiurbia. Paspausk ant vandens siurblio, ir  tiek vandenį gyventojams."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:119
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -27038,18 +27038,18 @@ msgstr ""
 "Pažiūrėk į bokštą, pripildytą vandens. Aktyvuok atliekų tvarkymo stotį "
 "paspausdamas ant jos."
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Puiku. Paspausk ant dušo, Tuksui atvykus į namus."
 
-#: activities/watercycle/Watercycle.qml:122
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "Nuostabu, tu užbaigei vandens apytakos ratą! Gali žaisti toliau."
 
-#: activities/watercycle/Watercycle.qml:141
+#: activities/watercycle/Watercycle.qml:140
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -27061,7 +27061,7 @@ msgstr ""
 "atgalios. Saulės šiluma teikia energiją, kurios dėka vanduo išgaruoja iš "
 "vandens telkinių, tokių kaip vandenynai."
 
-#: activities/watercycle/Watercycle.qml:144
+#: activities/watercycle/Watercycle.qml:143
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -27073,7 +27073,7 @@ msgstr ""
 "Kai debesys susitinka su vėsiu oru, susidaro krituliai, kurie iškrenta "
 "lietumi."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:146
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -27084,7 +27084,7 @@ msgstr ""
 "gruntiniu vandeniu. Tačiau daugiausiai vandens nuteka, ir galiausiai jis per "
 "upes vėl grįžta į jūras."
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:149
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "

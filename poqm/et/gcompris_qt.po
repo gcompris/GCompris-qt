@@ -27518,7 +27518,7 @@ msgstr ""
 "ja kanalisatsioonijaam. Kui süsteem saab tööle ja Tux jõuab duši alla, "
 "vajuta tema eest dušinuppu."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:114
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -27526,12 +27526,12 @@ msgid ""
 msgstr ""
 "Päike on veeringe peamine osa. Veeringe käivitamiseks klõpsa päikesele."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Kui päike tõuseb, hakkab vesi meres soojenema ja aurustuma."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -27540,7 +27540,7 @@ msgstr ""
 "Veeaur kondenseerub pilvede moodustamiseks ja kui pilved muutuvad liiga "
 "raskeks, hakkab sadama. Klõpsake pilvel."
 
-#: activities/watercycle/Watercycle.qml:118
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -27550,7 +27550,7 @@ msgstr ""
 "Vihm täidab jõed rohke veega ja see tuuakse meie kätte pumpade abil "
 "veetornides. Klõpsa pumba peale, et vesi jõuaks elanikeni."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:119
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -27559,18 +27559,18 @@ msgstr ""
 "Vaata, kuidas veetorn veega täitub. Pane tööle kanalisatsioonijaam, tehes "
 "selle peal klõpsu."
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Suurepärane! Klõpsa nüüd dušil, kui Tux koju jõuab."
 
-#: activities/watercycle/Watercycle.qml:122
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "Fantastiline! Said veeringe korralikult käima. Võid edasi mängida."
 
-#: activities/watercycle/Watercycle.qml:141
+#: activities/watercycle/Watercycle.qml:140
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -27581,7 +27581,7 @@ msgstr ""
 "peale. Päikese kuumus annab piisavalt energiat, et aurustada vett isegi "
 "ookeanist."
 
-#: activities/watercycle/Watercycle.qml:144
+#: activities/watercycle/Watercycle.qml:143
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -27592,7 +27592,7 @@ msgstr ""
 "tilgad. Kui pilved kohtuvad jaheda õhuga, vallanduvad sademed ja sajab "
 "vihmana alla."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:146
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -27603,7 +27603,7 @@ msgstr ""
 "põhjaveeks. Aga enamik veest muudkui voolab ja jõuab viimaks jõgede kaudu "
 "jälle merre."
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:149
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "

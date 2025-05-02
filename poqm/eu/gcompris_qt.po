@@ -27023,7 +27023,7 @@ msgstr ""
 "eta ur-araztegia, ur-sistema osoa berraktibatzeko. Sistema berriz martxan "
 "dagoenean eta Tux dutxan dagoenean, sakatu dutxako botoia bere ordez."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:114
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -27032,13 +27032,13 @@ msgstr ""
 "Eguzkia da uraren zikloaren osagai nagusia. Egin klik eguzkian uraren zikloa "
 "abiatzeko."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr ""
 "Eguzkia gora dioan heinean, itsasoko ura berotu eta lurruntzen hasten da."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -27047,7 +27047,7 @@ msgstr ""
 "Ur-lurruna kondentsatzean hodeiak sortzen ditu, eta hodeiak astun "
 "bihurtzean, euria egiten du. Egin klik hodeian."
 
-#: activities/watercycle/Watercycle.qml:118
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -27058,7 +27058,7 @@ msgstr ""
 "garraiatzen zaigu ur-dorreetatik. Egin klik motoponpan biztanleei ura "
 "hornitzeko."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:119
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -27066,18 +27066,18 @@ msgid ""
 msgstr ""
 "Ikusi dorrea urez betea. Aktibatu ur-araztegia bere gainean klik eginez."
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Bikain! Egin klik dutxan, Tux etxera heltzean."
 
-#: activities/watercycle/Watercycle.qml:122
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "Oso ondo, uraren zikloa osatu duzu. Jolasten jarrai dezakezu."
 
-#: activities/watercycle/Watercycle.qml:141
+#: activities/watercycle/Watercycle.qml:140
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -27088,7 +27088,7 @@ msgstr ""
 "eta atzera egiten duen bidaia da. Eguzkiaren beroak ozeanoak eta beste ur-"
 "multzoetako ura lurruntzeko energia ematen du."
 
-#: activities/watercycle/Watercycle.qml:144
+#: activities/watercycle/Watercycle.qml:143
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -27100,7 +27100,7 @@ msgstr ""
 "freskoa topatzen dutenean, prezipitazioa eragin eta lurrera erotzen da euri "
 "gisa."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:146
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -27111,7 +27111,7 @@ msgstr ""
 "deiturikoa. Baino ur gehiena isurketa gisa jariatzen da, ibaietatik "
 "itsasoetara itzuliz."
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:149
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "

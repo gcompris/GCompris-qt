@@ -27171,7 +27171,7 @@ msgstr ""
 "σύστημα ύδρευσης. Όταν το σύστημα ύδρευσης λειτουργήσει και ο Tux είναι στο "
 "ντους, πάτησε το κουμπί του ντους για να κάνει μπάνιο."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:114
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -27180,14 +27180,14 @@ msgstr ""
 "Ο ήλιος είναι το κύριο στοιχείο του κύκλου του νερού. Κάνε κλικ στον ήλιο "
 "για να ξεκινήσει ο κύκλος του νερού."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr ""
 "Καθώς ο ήλιος ανεβαίνει στον ουρανό, το νερό στη θάλασσα αρχίζει να "
 "ζεσταίνεται και να εξατμίζεται."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -27196,7 +27196,7 @@ msgstr ""
 "Οι υδρατμοί συμπυκνώνονται για να σχηματίσουν σύννεφα και όταν αυτά γίνουν "
 "βαριά, αρχίζει να βρέχει. Κάντε κλικ στο σύννεφο."
 
-#: activities/watercycle/Watercycle.qml:118
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -27208,7 +27208,7 @@ msgstr ""
 "(υδραγωγεία). Κάνε κλικ στην αντλία για να τροφοδοτήσεις τους κατοίκους με "
 "νερό."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:119
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -27217,12 +27217,12 @@ msgstr ""
 "Δες τον πύργο γεμάτο με νερό. Ενεργοποίησε τον σταθμό επεξεργασίας λυμάτων "
 "κάνοντας κλικ πάνω του."
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Πολύ ωραία, κάνε κλικ στο ντους καθώς ο Tux φτάνει στο σπίτι."
 
-#: activities/watercycle/Watercycle.qml:122
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
@@ -27230,7 +27230,7 @@ msgstr ""
 "Φανταστικά! Ολοκλήρωσες τον κύκλο του νερού. Μπορείς να συνεχίσεις το "
 "παιχνίδι."
 
-#: activities/watercycle/Watercycle.qml:141
+#: activities/watercycle/Watercycle.qml:140
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -27242,7 +27242,7 @@ msgstr ""
 "παρέχει ενέργεια που εξατμίζει το νερό των ποταμών, των λιμνών, των θαλασσών "
 "και των ωκεανών."
 
-#: activities/watercycle/Watercycle.qml:144
+#: activities/watercycle/Watercycle.qml:143
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -27253,7 +27253,7 @@ msgstr ""
 "Οι υδρατμοί ψύχονται σχηματίζοντας μικροσκοπικά σταγονίδια στα σύννεφα και "
 "όταν αυτά συναντούν κρύο αέρα πάνω από τη γη, αρχίζει η βροχή."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:146
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -27264,7 +27264,7 @@ msgstr ""
 "Αλλά το μεγαλύτερο μέρος του νερού που πέφτει στη γη, ρέει συνεχώς και "
 "τελικά επιστρέφει στις θάλασσες μέσω των ποταμών."
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:149
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
