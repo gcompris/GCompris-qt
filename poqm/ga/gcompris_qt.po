@@ -28995,7 +28995,7 @@ msgstr ""
 "caidéalúcháin agus an t-ionad séarachais chun timthriall an uisce a chur sa "
 "tsiúl arís."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:114
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -29004,14 +29004,14 @@ msgstr ""
 "Is é an ghrian príomh-chomhpháirt timthriall an uisce. Cliceáil ar an ghrian "
 "chun an timthriall uisce a thoiseacht."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr ""
 "Agus an ghrian ag éirigh, tagann teas ar uisce na farraige agus tosaíonn sé "
 "ag galú."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:116
 #, fuzzy
 #| msgctxt "Watercycle|"
 #| msgid ""
@@ -29025,7 +29025,7 @@ msgstr ""
 " Comhdhlúthaíonn an ceo uisce chun néal a chruthú agus nuair a éiríonn an "
 "néal róthrom, tosaíonn sé ag cur báistí. Cliceáil ar an néal."
 
-#: activities/watercycle/Watercycle.qml:118
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -29036,7 +29036,7 @@ msgstr ""
 "uisce seo chugainn fríd chaidéal chuig túr uisce. Cliceáil ar an chaidéal "
 "chun uisce a chur ar fáil do na tithe."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:119
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -29045,12 +29045,12 @@ msgstr ""
 "Amharc ar an túr lán le huisce. Cliceáil ar an ionad séarachais chun é a "
 "chur ar siúl."
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Ar dóigh! Cliceáil ar an chith agus Tux ag teacht abhaile."
 
-#: activities/watercycle/Watercycle.qml:122
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
@@ -29058,7 +29058,7 @@ msgstr ""
 "Ar fheabhas! Tá timthriall an uisce críochnaithe agat. Is fédir leat "
 "leanstan ar aghaidh ag súgradh."
 
-#: activities/watercycle/Watercycle.qml:141
+#: activities/watercycle/Watercycle.qml:140
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -29070,7 +29070,7 @@ msgstr ""
 "arís. Soláthraíonn teas na gréine fuinneamh chun an t-uisce a ghalú ó "
 "fhoinsí uisce ar nós farraigí agus lochanna."
 
-#: activities/watercycle/Watercycle.qml:144
+#: activities/watercycle/Watercycle.qml:143
 #, fuzzy
 #| msgctxt "Watercycle|"
 #| msgid ""
@@ -29088,7 +29088,7 @@ msgstr ""
 "sna néalta. Nuair a bhuaileann na néalta le haer fuar os cionn an talaimh, "
 "tarlaíonn deascadh agus titeann an t-uisce mar fhearthainn."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:146
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -29100,7 +29100,7 @@ msgstr ""
 "dhromchla an talaimh agus de réir a chéile ar ais chun na farraige fríd na "
 "haibhneacha."
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:149
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "

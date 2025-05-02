@@ -27380,7 +27380,7 @@ msgstr ""
 "för att aktivera hela vattnets kretslopp igen. När vattnet är på igen och "
 "Tux står i duschen, tryck på duschknappen åt honom."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:114
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -27389,12 +27389,12 @@ msgstr ""
 "Solen är huvudkomponenten i vattnets kretslopp. Klicka på solen för att "
 "starta kretsloppet."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "När solen stiger, värms havets vatten upp och avdunstar."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -27403,7 +27403,7 @@ msgstr ""
 "Vattenånga kondenseras så att moln skapas, och när molnen blir tunga börjar "
 "det regna. Klicka på molnet."
 
-#: activities/watercycle/Watercycle.qml:118
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -27414,7 +27414,7 @@ msgstr ""
 "motordrivna pumpar och vattentorn. Klicka på pumpmotorn för att leverera "
 "vatten till invånarna."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:119
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -27423,19 +27423,19 @@ msgstr ""
 "Se hur tornet fylls med vatten. Aktivera reningsverket genom att klicka på "
 "det."
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Utmärkt, klicka på duschen när Tux kommer hem."
 
-#: activities/watercycle/Watercycle.qml:122
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr ""
 "Suveränt, du har gjort färdigt vattnets kretslopp. Du kan fortsätta leka."
 
-#: activities/watercycle/Watercycle.qml:141
+#: activities/watercycle/Watercycle.qml:140
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -27447,7 +27447,7 @@ msgstr ""
 "värme ger energi så att vatten kan avdunsta från vattensamlingar såsom "
 "oceaner."
 
-#: activities/watercycle/Watercycle.qml:144
+#: activities/watercycle/Watercycle.qml:143
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -27458,7 +27458,7 @@ msgstr ""
 "kallnar så att mycket små droppar formas i molnen. När molnen träffar på "
 "sval luft över land, utlöses nederbörd som faller ner som regn."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:146
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -27469,7 +27469,7 @@ msgstr ""
 "Men det mesta av vatten blir till avrinning, som till sist flyter tillbaka "
 "till haven via floder."
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:149
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "

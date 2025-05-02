@@ -26761,19 +26761,19 @@ msgstr ""
 "सम्पूर्णं जलव्यवस्थां पुनः सक्रियं कर्तुं । यदा प्रणाली पुनः उपरि भवति तथा च टक्सः शॉवरमध्ये "
 "भवति तदा तस्य कृते शॉवरस्य बटनं धक्कायन्तु।"
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:114
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
 "the water cycle."
 msgstr "सूर्यः जलचक्रस्य मुख्यः घटकः अस्ति । जलचक्रं आरभ्य सूर्ये क्लिक् कुर्वन्तु ।"
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "यथा यथा सूर्योदयः समुद्रस्य जलं तापनं प्रारभते, वाष्पीकरणं च भवति ।"
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -26781,7 +26781,7 @@ msgid ""
 msgstr ""
 "जलवाष्पः सघनः भूत्वा मेघान् निर्माति, मेघानां गुरुत्वे च वर्षा भवति । मेघे क्लिक् कुर्वन्तु ।"
 
-#: activities/watercycle/Watercycle.qml:118
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -26791,25 +26791,25 @@ msgstr ""
 "वर्षायाः कारणेन नद्यः प्रफुल्लिताः भवन्ति तथा च एतत् जलं जलगोपुरद्वारा मोटरपम्पद्वारा "
 "अस्माकं कृते परिवहनं भवति । निवासिनः जलस्य आपूर्तिं कर्तुं मोटरपम्पे क्लिक् कुर्वन्तु।"
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:119
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
 "clicking on it."
 msgstr "जलपूर्णं गोपुरं पश्यन्तु। तस्मिन् क्लिक् कृत्वा मलजलशुद्धिकरणस्थानकं सक्रियं कुर्वन्तु।"
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "महान्, शॉवरं क्लिक् कुर्वन्तु, यतः टक्सः गृहं आगच्छति।"
 
-#: activities/watercycle/Watercycle.qml:122
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "विलक्षणम्, भवता जलचक्रं सम्पन्नम्। भवन्तः निरन्तरं क्रीडितुं शक्नुवन्ति।"
 
-#: activities/watercycle/Watercycle.qml:141
+#: activities/watercycle/Watercycle.qml:140
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26819,7 +26819,7 @@ msgstr ""
 "जलचक्रं (जलचक्रम् इति अपि ज्ञायते) भूमितः आकाशं प्रति पुनः पुनः च परिभ्रमन् जलं या यात्रां "
 "करोति सूर्यस्य तापः समुद्रवत् जलपिण्डेभ्यः जलस्य वाष्पीकरणाय ऊर्जां प्रदाति ।"
 
-#: activities/watercycle/Watercycle.qml:144
+#: activities/watercycle/Watercycle.qml:143
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26830,7 +26830,7 @@ msgstr ""
 "निर्माय शीतलं भवति । यदा मेघाः स्थलस्य उपरि शीतलवायुः मिलन्ति तदा वर्षणं प्रवर्तते, "
 "वर्षारूपेण पतति च ।"
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:146
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26840,7 +26840,7 @@ msgstr ""
 "किञ्चित् जलं शिलामृत्तिकास्तरयोः मध्ये फसति, यत् भूजलम् इति उच्यते । परन्तु अधिकांशं जलं "
 "अपवाहरूपेण प्रवहति, अन्ते नदीभिः समुद्रेषु प्रत्यागच्छति ।"
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:149
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "

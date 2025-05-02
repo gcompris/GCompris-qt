@@ -27228,7 +27228,7 @@ msgstr ""
 "sustav. Kad se sustav ponovno pokrene i Tux bude pod tušem, pritisni tipku "
 "za tuš umjesto njega."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:114
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -27237,12 +27237,12 @@ msgstr ""
 "Sunce je glavna komponenta ciklusa vode. Klikni na Sunce da pokreneš ciklus "
 "vode."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Kako sunce izlazi, morska voda se počinje zagrijavati i isparavati."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -27251,7 +27251,7 @@ msgstr ""
 "Vodena para se kondenzira stvarajući oblake, a kada oblaci postanu teški "
 "onda pada kiša. Klikni na oblak."
 
-#: activities/watercycle/Watercycle.qml:118
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -27262,7 +27262,7 @@ msgstr ""
 "do nas preko motornih pumpi. Klikni na motornu pumpu za opskrbu vodom "
 "stanovnika."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:119
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -27271,18 +27271,18 @@ msgstr ""
 "Vidite toranj napunjen vodom. Aktiviraj stanicu za pročišćavanje otpadnih "
 "voda klikom na nju."
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Super, klikni na tuš, dok Tux stiže kući."
 
-#: activities/watercycle/Watercycle.qml:122
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "Fantastično, završio si vodeni ciklus. Možeš se nastaviti igrati."
 
-#: activities/watercycle/Watercycle.qml:141
+#: activities/watercycle/Watercycle.qml:140
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -27293,7 +27293,7 @@ msgstr ""
 "prolazi dok cirkulira od kopna do neba i natrag. Sunčeva toplina daje "
 "energiju za isparavanje vode iz vodenih tijela poput oceana."
 
-#: activities/watercycle/Watercycle.qml:144
+#: activities/watercycle/Watercycle.qml:143
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -27304,7 +27304,7 @@ msgstr ""
 "stvarajući sitne kapljice u oblacima. Kada se oblaci susreću s hladnim "
 "zrakom iznad kopna, stvaraju se oborine te počne padati kiša."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:146
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -27315,7 +27315,7 @@ msgstr ""
 "voda. Ali većina vode teče kao otjecanje, vraćajući se na kraju u mora preko "
 "rijeka."
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:149
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "

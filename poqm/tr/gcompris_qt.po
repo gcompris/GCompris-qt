@@ -27066,7 +27066,7 @@ msgstr ""
 "Güneş, bulut, pompa istasyonu ve kanalizasyon arıtma tesisi. Sistem geri "
 "geldiğinde ve Tux duşa girdiğinde, onun için duş düğmesine bas."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:114
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -27075,12 +27075,12 @@ msgstr ""
 "Güneş, su döngüsünün ana bileşenidir. Su döngüsünü başlatmak için güneşe "
 "tıkla."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Güneş yükseldikçe denizin suyu ısınmaya başlar ve buharlaşır."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -27089,7 +27089,7 @@ msgstr ""
 "Su buharı yoğunlaşarak bulutları oluşturur ve bulutlar ağırlaştığında yağmur "
 "yağar. Buluta tıkla."
 
-#: activities/watercycle/Watercycle.qml:118
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -27099,7 +27099,7 @@ msgstr ""
 "Yağmur, ırmakların dolmasına neden olur ve bu su, su kuleleri aracılığıyla "
 "pompalarla bize taşınır. Sakinlere su sağlamak için motorlu pompaya tıkla."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:119
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -27108,18 +27108,18 @@ msgstr ""
 "Suyla dolu kuleyi gör. Kanalizasyon arıtma istasyonunun üzerine tıklayarak "
 "etkinleştir."
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Harika, Tux eve geldiğinde duşa tıkla."
 
-#: activities/watercycle/Watercycle.qml:122
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "Harika, su döngüsünü tamamladın. Oynamayı sürdürebilirsin."
 
-#: activities/watercycle/Watercycle.qml:141
+#: activities/watercycle/Watercycle.qml:140
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -27130,7 +27130,7 @@ msgstr ""
 "yeniden geri dönerken yaptığı yolculuktur. Güneşin ısısı, okyanuslar gibi su "
 "kütlelerinden suyun buharlaşması için enerji sağlar."
 
-#: activities/watercycle/Watercycle.qml:144
+#: activities/watercycle/Watercycle.qml:143
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -27141,7 +27141,7 @@ msgstr ""
 "bulutlarda küçük damlacıklar oluşturur. Bulutlar kara üzerinde soğuk hava "
 "ile buluştuğunda, yağış tetiklenir ve yağmur olarak geri düşer."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:146
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -27152,7 +27152,7 @@ msgstr ""
 "tutulur. Ancak suyun çoğu aralardan sızar ve sonunda ırmaklar yoluyla "
 "denizlere döner."
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:149
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "

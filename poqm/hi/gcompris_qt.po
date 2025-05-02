@@ -30333,7 +30333,7 @@ msgstr ""
 "बादल, पम्पिंग स्टेशन और सीवेज ट्रीटमेंट प्लांट। जब तंत्र बैक अप हो जाता है और टक्स शॉवर में "
 "है, उसके लिए शॉवर बटन दबाएं।"
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:114
 #, fuzzy
 #| msgctxt "Watercycle|"
 #| msgid ""
@@ -30345,12 +30345,12 @@ msgid ""
 "the water cycle."
 msgstr "जल चक्र का मुख्य घटक सूर्य है। जल चक्र शुरू करने के लिए सूरज पर क्लिक करें।"
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "जैसे जैसे सूरज उगता है, समुद्र का पानी गर्म होने और वाष्पीकृत होने लगता है।"
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:116
 #, fuzzy
 #| msgctxt "Watercycle|"
 #| msgid ""
@@ -30364,7 +30364,7 @@ msgstr ""
 "बादल के रूप में जल वाष्प का मिश्रण होता है और जब बादल भारी हो जाते हैं, तो बारिश होती "
 "है क्लाउड पर क्लिक करें"
 
-#: activities/watercycle/Watercycle.qml:118
+#: activities/watercycle/Watercycle.qml:117
 #, fuzzy
 #| msgctxt "Watercycle|"
 #| msgid ""
@@ -30381,19 +30381,19 @@ msgstr ""
 "पंपों के माध्यम से ले जाया जाता है। निवासियों को पानी की आपूर्ति करने के लिए मोटर पंप पर "
 "क्लिक करें"
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:119
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
 "clicking on it."
 msgstr "पानी से भरे टॉवर को देखें। उस पर क्लिक करके मलजल उपचार स्टेशन को सक्रिय करें।"
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "बहुत बढ़िया, जैसे ही टक्स घर पर आता है, शॉवर पर क्लिक करें।"
 
-#: activities/watercycle/Watercycle.qml:122
+#: activities/watercycle/Watercycle.qml:121
 #, fuzzy
 #| msgctxt "Watercycle|"
 #| msgid "Fantastic, you have completed water cycle. You can continue playing."
@@ -30402,7 +30402,7 @@ msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "बहुत खूब, आपने जल चक्र पूरा कर लिया है। आप खेल जारी रख सकते हैं।"
 
-#: activities/watercycle/Watercycle.qml:141
+#: activities/watercycle/Watercycle.qml:140
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -30413,7 +30413,7 @@ msgstr ""
 "आकाश तक और फिर से वापस फैलता है। सूरज की गर्मी महासागरों जैसे जल निकायों से पानी को "
 "उखाड़ने के लिए ऊर्जा प्रदान करती है।"
 
-#: activities/watercycle/Watercycle.qml:144
+#: activities/watercycle/Watercycle.qml:143
 #, fuzzy
 #| msgctxt "Watercycle|"
 #| msgid ""
@@ -30430,7 +30430,7 @@ msgstr ""
 "छोटे बूंदों का निर्माण कर रहा है। जब बादल जमीन पर शांत हवा मिलते हैं, तो वर्षा शुरू होती "
 "है और बारिश के रूप में गिरती है।"
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:146
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -30440,7 +30440,7 @@ msgstr ""
 "कुछ पानी रॉक या मिट्टी की परतों के बीच फंस गया है, जिसे भूजल कहते हैं। लेकिन अधिकांश जल "
 "प्रवाह के रूप में बहता है, अंततः नदियों के माध्यम से समुद्र में लौटता है।"
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:149
 #, fuzzy
 #| msgctxt "Watercycle|"
 #| msgid ""

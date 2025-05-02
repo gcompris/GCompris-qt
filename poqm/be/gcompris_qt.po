@@ -27043,7 +27043,7 @@ msgstr ""
 "ачышчальнае абсталяванне, - каб узнавіць усю водную сістэму. Калі сістэма "
 "будзе гатовая і Тукс будзе ў душы - цісніце кнопку, каб уключыць душ."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:114
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -27052,12 +27052,12 @@ msgstr ""
 "Сонца ёсць галоўным кампанентам у працэсе цыркуляцыі вады. Пстрыкніце па "
 "сонцу, каб цыркуляцыя пачалася."
 
-#: activities/watercycle/Watercycle.qml:116
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Як толькі сонца ўзышло, вада ў моры пачынае награвацца і выпарацца."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:116
 #, fuzzy
 #| msgctxt "Watercycle|"
 #| msgid ""
@@ -27071,7 +27071,7 @@ msgstr ""
 "Кандэнсат пароў вады ўтвараюць аблокі і, калі аблокі становяцца цяжэйшымі, "
 "то ідзе дождж. Пстрыкніце па воблаку."
 
-#: activities/watercycle/Watercycle.qml:118
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -27082,7 +27082,7 @@ msgstr ""
 "пры дапамозе цыркуляцыйных помпаў. Пстрыкніце па помпах, каб пачаць даставу "
 "вады гараджанам."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:119
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -27091,18 +27091,18 @@ msgstr ""
 "Пабачце, як напоўнілася вадою вежа. Актывізуйце станцыю ачышчэння сцёкавай "
 "вады пстрычком па ёй."
 
-#: activities/watercycle/Watercycle.qml:121
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Выдатна, пстрыкніце па душу, як Тукс прыйдзе дамоў."
 
-#: activities/watercycle/Watercycle.qml:122
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "Ухвальна, вы сабралі ўсю водную сістэму. Можаце працягваць гульню."
 
-#: activities/watercycle/Watercycle.qml:141
+#: activities/watercycle/Watercycle.qml:140
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -27114,7 +27114,7 @@ msgstr ""
 "забяспечвае энергію для выпарэння вады з воднай прасторы зямлі, такой як "
 "акіян."
 
-#: activities/watercycle/Watercycle.qml:144
+#: activities/watercycle/Watercycle.qml:143
 #, fuzzy
 #| msgctxt "Watercycle|"
 #| msgid ""
@@ -27133,7 +27133,7 @@ msgstr ""
 "зямлёй, то распачынаюцца атмасферныя ападкі, вада падае долу ў выглядзе, "
 "напрыклад, дажджу."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:146
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -27144,7 +27144,7 @@ msgstr ""
 "яна грунтавой вадою. Але большасць вады з ападкаў у выніку сцякае рэкамі "
 "назад ў моры."
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:149
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
