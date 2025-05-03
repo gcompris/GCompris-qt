@@ -8,4 +8,6 @@ GCOMPRIS_ADD_RESOURCE(activities/mazerelative
   *.qml
   RESOURCES
   *.svg
+  DEPENDENCIES
+  maze
 )

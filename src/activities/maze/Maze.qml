@@ -8,6 +8,8 @@
 *
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import core 1.0
 
@@ -66,7 +68,7 @@ ActivityBase {
         }
 
         onStart: {
-            Activity.start(items, relativeMode, invisibleMode)
+            Activity.start(items, activity.relativeMode, activity.invisibleMode)
         }
         onStop: {
             timeAutoMove.stop()
@@ -112,8 +114,12 @@ ActivityBase {
             Repeater {
                 id: mazeRepeater
                 Item {
+                    id: mazeCase
                     width: items.cellSize
                     height: items.cellSize
+
+                    required property int modelData
+
                     Rectangle {
                         id: north
                         width: items.cellSize + items.wallSize
@@ -124,7 +130,7 @@ ActivityBase {
                         anchors.topMargin: -items.wallSize * 0.5
                         anchors.leftMargin: -items.wallSize * 0.5
                         color: "#B38B56"
-                        visible: modelData & 1 ? items.wallVisible : false
+                        visible: mazeCase.modelData & 1 ? items.wallVisible : false
                         z: 1
                     }
 
@@ -138,7 +144,7 @@ ActivityBase {
                         anchors.bottomMargin: -items.wallSize * 0.5
                         anchors.leftMargin: -items.wallSize * 0.5
                         color: "#B38B56"
-                        visible: modelData & 4 ? items.wallVisible : false
+                        visible: mazeCase.modelData & 4 ? items.wallVisible : false
                         z: 1
                     }
 
@@ -152,7 +158,7 @@ ActivityBase {
                         anchors.bottomMargin: -items.wallSize * 0.5
                         anchors.rightMargin: -items.wallSize * 0.5
                         color: "#B38B56"
-                        visible: modelData & 8 ? items.wallVisible : false
+                        visible: mazeCase.modelData & 8 ? items.wallVisible : false
                         z: 1
                     }
 
@@ -166,7 +172,7 @@ ActivityBase {
                         anchors.bottomMargin: -items.wallSize * 0.5
                         anchors.leftMargin: -items.wallSize * 0.5
                         color: "#B38B56"
-                        visible: modelData & 2 ? items.wallVisible : false
+                        visible: mazeCase.modelData & 2 ? items.wallVisible : false
                         z: 1
                     }
                 }
@@ -304,7 +310,7 @@ ActivityBase {
                 margins: GCStyle.baseMargins
             }
             width: fastmode.width
-            visible: invisibleMode
+            visible: activity.invisibleMode
             onClicked: {
                 items.wallVisible = !items.wallVisible
                 message.visible = items.wallVisible
@@ -356,7 +362,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
@@ -365,7 +371,7 @@ ActivityBase {
             content: BarEnumContent {
                 value: help | home | level
             }
-            onHelpClicked: displayDialog(dialogHelp)
+            onHelpClicked: activity.displayDialog(dialogHelp)
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
