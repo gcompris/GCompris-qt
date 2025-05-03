@@ -8,6 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import core 1.0
 
@@ -40,7 +42,6 @@ ActivityBase {
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
-            property string url: "qrc:/gcompris/src/activities/melody/resource/"
             property var question
             property var questionToPlay
             property var answer
@@ -85,7 +86,7 @@ ActivityBase {
                 fill: layoutArea
                 margins: GCStyle.baseMargins
             }
-            source: items.url + 'xylofon.svg'
+            source: activity.resourceUrl + 'xylofon.svg'
             sourceSize.width: width
             sourceSize.height: height
             fillMode: Image.PreserveAspectFit
@@ -93,70 +94,73 @@ ActivityBase {
 
         GCSoundEffect {
             id: knockSound
-            source: items.url + 'knock.wav'
+            source: activity.resourceUrl + 'knock.wav'
         }
 
-        Repeater {
-            id: parts
-            model: 4
-            Image {
-                id: part
-                source: items.url + 'xylofon_part' + (index + 1) + '.svg'
-                rotation: - 80
-                anchors.horizontalCenter: xylofon.horizontalCenter
-                anchors.horizontalCenterOffset: (- xylofon.paintedWidth) * 0.3 + xylofon.paintedWidth * index * 0.22
-                anchors.verticalCenter: xylofon.verticalCenter
-                anchors.verticalCenterOffset: - xylofon.paintedHeight * 0.1
-                sourceSize.width: xylofon.paintedWidth * 0.5
-                fillMode: Image.PreserveAspectFit
+        component PartDelegate : Image {
+            id: part
+            required property int index
+            property alias anim: anim
+            source: activity.resourceUrl + 'xylofon_part' + (index + 1) + '.svg'
+            rotation: - 80
+            anchors.horizontalCenter: xylofon.horizontalCenter
+            anchors.horizontalCenterOffset: (- xylofon.paintedWidth) * 0.3 + xylofon.paintedWidth * index * 0.22
+            anchors.verticalCenter: xylofon.verticalCenter
+            anchors.verticalCenterOffset: - xylofon.paintedHeight * 0.1
+            sourceSize.width: xylofon.paintedWidth * 0.5
+            fillMode: Image.PreserveAspectFit
 
-                property alias anim: anim
-                function play() {
-                    partSound.play()
+            function play() {
+                partSound.play()
+            }
+
+            GCSoundEffect {
+                id: partSound
+                source: activity.resourceUrl + 'xylofon_son' + (part.index + 1) + ".wav"
+            }
+
+            SequentialAnimation {
+                id: anim
+                NumberAnimation {
+                    target: part
+                    property: "scale"
+                    from: 1; to: 0.95
+                    duration: 150
+                    easing.type: Easing.InOutQuad
                 }
-
-                GCSoundEffect {
-                    id: partSound
-                    source: items.url + 'xylofon_son' + (index + 1) + ".wav"
+                NumberAnimation {
+                    target: part
+                    property: "scale"
+                    from: 0.95; to: 1
+                    duration: 150
+                    easing.type: Easing.OutElastic
                 }
+            }
 
-                SequentialAnimation {
-                    id: anim
-                    NumberAnimation {
-                        target: part
-                        property: "scale"
-                        from: 1; to: 0.95
-                        duration: 150
-                        easing.type: Easing.InOutQuad
-                    }
-                    NumberAnimation {
-                        target: part
-                        property: "scale"
-                        from: 0.95; to: 1
-                        duration: 150
-                        easing.type: Easing.OutElastic
-                    }
-                }
-
-                MouseArea {
-                    anchors.fill: parent
-                    enabled: !questionPlayer.running && !knock.running && !introDelay.running
-                              && !anim.running && !items.buttonsBlocked
-                    onClicked: {
-                        anim.start()
-                        activityBackground.playNote(index)
-                        items.answer.push(index)
-                        if(items.answer.length >= items.question.length) {
-                            items.buttonsBlocked = true;
-                            feedbackTimer.restart();
-                        }
+            MouseArea {
+                anchors.fill: parent
+                enabled: !questionPlayer.running && !knock.running && !introDelay.running
+                && !anim.running && !items.buttonsBlocked
+                onClicked: {
+                    anim.start()
+                    activityBackground.playNote(part.index)
+                    items.answer.push(part.index)
+                    if(items.answer.length >= items.question.length) {
+                        items.buttonsBlocked = true;
+                        feedbackTimer.restart();
                     }
                 }
             }
         }
 
+        Repeater {
+            id: parts
+            model: 4
+            delegate: PartDelegate {}
+        }
+
         function playNote(index: int) {
-            parts.itemAt(index).play()
+            (parts.itemAt(index) as PartDelegate).play()
         }
         Timer {
             id: introDelay
@@ -167,7 +171,7 @@ ActivityBase {
                     introDelay.restart()
                 }
                 else {
-                    parent.repeat()
+                    activityBackground.repeat()
                 }
             }
         }
@@ -187,7 +191,7 @@ ActivityBase {
             onTriggered: {
                 var partIndex = items.questionToPlay.shift()
                 if(partIndex !== undefined) {
-                    parts.itemAt(partIndex).anim.start()
+                    (parts.itemAt(partIndex) as PartDelegate).anim.start()
                     activityBackground.playNote(partIndex)
                     start()
                 }
@@ -214,7 +218,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
@@ -222,27 +226,27 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | repeat }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: {
                 score.stopWinAnimation();
                 score.currentSubLevel = 0;
                 items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
-                initLevel();
-                parent.repeat();
+                activityBackground.initLevel();
+                activityBackground.repeat();
             }
             onNextLevelClicked: {
-                parent.nextLevel();
-                parent.repeat();
+                activityBackground.nextLevel();
+                activityBackground.repeat();
             }
             onHomeClicked: activity.home()
-            onRepeatClicked: parent.repeat()
+            onRepeatClicked: activityBackground.repeat()
         }
 
         Bonus {
             id: bonus
             onWin: {
-                parent.nextLevel();
+                activityBackground.nextLevel();
                 introDelay.restart();
             }
         }
@@ -254,7 +258,7 @@ ActivityBase {
             anchors.rightMargin: GCStyle.baseMargins
             anchors.top: parent.top
             onStop: {
-                parent.nextSubLevel();
+                activityBackground.nextSubLevel();
                 introDelay.restart();
             }
         }
@@ -337,7 +341,7 @@ ActivityBase {
                 onButton1Hit: activity.home();
                 onClose: {
                     activityBackground.audioDisabled = false;
-                    initLevel();
+                    activityBackground.initLevel();
                     items.running = true;
                     introDelay.start();
                 }
