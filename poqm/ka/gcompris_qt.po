@@ -2110,6 +2110,8 @@ msgid ""
 "Provide audio-visual feedback when using the mouse to help discovering its "
 "usage for young children."
 msgstr ""
+"აუდიო-ვიზუალური უკუკავშირი თაგუნას გადაადგილებისას პატარა ბავშვებს მისი "
+"გამოყენების სწავლაში ეხმარება."
 
 #. Help prerequisite
 #: activities/baby_mouse/ActivityInfo.qml:21
@@ -2137,6 +2139,8 @@ msgid ""
 "The leftmost column contains 4 ducks, clicking on one of them produces a "
 "sound and an animation."
 msgstr ""
+"ყველაზე მარცხენა სვეტი 4 იხვს შეიცავს. ერთ-ერთ მათგანზე დაწკაპუნება ხმის "
+"გამოცემას და ანიმაციას იწვევს."
 
 #: activities/baby_mouse/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -2144,6 +2148,8 @@ msgid ""
 "The central area contains a blue duck, moving the mouse cursor or doing a "
 "drag gesture on a touchscreen makes the blue duck move."
 msgstr ""
+"ცენტრალური ადგილი შეიცავს ლურჯ იხვს. თაგუნას კურსორის გადაადგილება, ან "
+"გადათრევა ლურჯი იხვის გადაადგილებას იწვევს."
 
 #: activities/baby_mouse/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -2186,6 +2192,8 @@ msgid ""
 "Move a piece by dragging it. Use the rotation button if necessary. More "
 "complicated levels can be found in tangram activity."
 msgstr ""
+"წაიღეთ ნაწილი მისი გადათრევით. თუ საჭიროა, გამოიყენეთ ბრუნვის ღილაკი. უფრო "
+"ძნელი დონეები tangram-ში შეგიძლიათ, იპოვოთ."
 
 #: activities/baby_wordprocessor/ActivityConfig.qml:28
 msgctxt "ActivityConfig|"
@@ -2552,6 +2560,8 @@ msgid ""
 "When your level is finished you can save it to a file by clicking on the "
 "'Save' button on the side."
 msgstr ""
+"როცა თქვენი დონე დასრულდება, შეგიძლიათ, ის ფაილში შეინახოთ, გვერდით არსებული "
+"ღილაკით \"შენახვა\"."
 
 #: activities/balancebox/ActivityInfo.qml:43
 msgctxt "ActivityInfo|"
@@ -2559,6 +2569,9 @@ msgid ""
 "To return to the activity settings click on the home-button on the bar or "
 "press Escape on your keyboard or the back button on your mobile device."
 msgstr ""
+"აქტივობის მორგებაზე დასაბრუნებლად დააწკაპუნეთ საწყის-ღილაკზე პანელზე, ან "
+"დააჭირეთ ღილაკს Esc კლავიატურაზე, ან თქვენი მობილური მოწყობილობის უკან "
+"გადასვლის ღილაკზე."
 
 #: activities/balancebox/ActivityInfo.qml:44
 msgctxt "ActivityInfo|"
@@ -2574,6 +2587,8 @@ msgid ""
 "Either create your levels by starting the level editor in the activity "
 "settings menu and then load your file, or choose the 'built-in' level set."
 msgstr ""
+"ან შექმენით თქვენი დონეები დონეების რედაქტორში აქტივობების მორგების მენიუში "
+"და ჩატვირთეთ თქვენი ფაილი, ან აირჩიეთ 'ჩაშენებული' დონეების ნაკრები."
 
 #: activities/balancebox/balancebox.js:106
 #, qt-format
@@ -2587,6 +2602,8 @@ msgid ""
 "You selected the user-defined level set, but you have not yet loaded any "
 "user level!"
 msgstr ""
+"თქვენ აირჩიეთ მომხმარებლის აღწერილი დონეების ნაკრები, მაგრამ ისინი ჯერ არ "
+"ჩაგიტვირთავთ!"
 
 #: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
@@ -2783,6 +2800,8 @@ msgid ""
 "Turn on the right bulbs to represent the binary of the given decimal number. "
 "When you have achieved it, press OK."
 msgstr ""
+"ჩართეთ სწორი ნათურები, რომ წარმოადგინოთ მითითებული ათობითი რიცხვის ორობითი "
+"წარმოდგენა. როცა მიაღწევთ ამას, დააწკაპუნეთ ღილაკზე 'დიახ'."
 
 #: activities/binary_bulb/BinaryBulb.qml:84
 msgctxt "BinaryBulb|"
@@ -2796,6 +2815,9 @@ msgid ""
 "and 1. Mathematically, these states are represented by 0 and 1, which makes "
 "up the binary system of numeration."
 msgstr ""
+"კომპიუტერები დასათვლელად ტრანზისტორებს იყენებენ და ტრანზისტორებს, მხოლოდ, "
+"ორი მდგომარეობა აქვთ, 0 და 1. მათემატიკურად ეს მდგომარეობები წარმოდგენილია 0-"
+"ით და 1-ით, რაც მათ ათვლის სისტემას ორობითს ხდის."
 
 #: activities/binary_bulb/BinaryBulb.qml:92
 msgctxt "BinaryBulb|"
@@ -2808,6 +2830,8 @@ msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
 "to 255 with 8 bits only."
 msgstr ""
+"ორობითი სისტემა ამ რიცხვებს ძალიან ეფექტურად იყენებს. 0-დან 255-მდე "
+"დასათვლელად, მხოლოდ, 8 ბიტია საჭირო."
 
 #: activities/binary_bulb/BinaryBulb.qml:100
 msgctxt "BinaryBulb|"
@@ -2831,6 +2855,8 @@ msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
 "equal to binary 101."
 msgstr ""
+"მათი შესაბამისი ბიტები დაყენებულია 1-ზე, სხვები კი 0-ზე. ათობითი 5 ორობითში "
+"101-ს უდრის."
 
 #: activities/binary_bulb/BinaryBulb.qml:112
 msgctxt "BinaryBulb|"
@@ -4440,6 +4466,7 @@ msgid ""
 "Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
+"გადაადგილების თარიღები აღებულია საიტიდან &lt;https://www.wikipedia.org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -4950,6 +4977,8 @@ msgid ""
 "The shortest hand indicates the hours, a longer hand indicates the minutes, "
 "and the longest hand indicates the seconds."
 msgstr ""
+"მოკლე ისარი საათებზე მიუთითებს, გრძელი - წუთებზე, ყველაზე გრძელი კი - "
+"წამებზე."
 
 #: activities/clockgame/Clockgame.qml:112
 msgctxt "Clockgame|"
@@ -5035,6 +5064,7 @@ msgid ""
 "This activity teaches how mixing primary paint colors works (subtractive "
 "mixing)."
 msgstr ""
+"ეს აქტივობა ძირითადი ფერების შერევის წესებს ასწავლის (სუბტრაქტული შერევა)."
 
 #: activities/color_mix/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -5144,6 +5174,7 @@ msgid ""
 "This activity teaches how mixing primary light colors works (additive "
 "mixing)."
 msgstr ""
+"ეს აქტივობა ძირითადი სინათლის ფერების შერევას ასწავლის (დამატებითი შერევა)."
 
 #: activities/color_mix_light/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -5151,6 +5182,8 @@ msgid ""
 "Change the color by moving the sliders on the flashlights or by clicking on "
 "the + and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
+"შეცვალეთ ფერი სლაიდების გადათრევით, ან + და - ღილაკებზე დაჭერით. შემდეგ "
+"დააწკაპუნეთ ღილაკზე 'დიახ', რათა დაადასტუროთ თქვენი არჩევანი."
 
 #: activities/color_mix_light/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -5595,7 +5628,7 @@ msgctxt "board2_0|"
 msgid ""
 "Vincent van Gogh, The Bridge of Langlois at Arles with a lady with umbrella "
 "- 1888"
-msgstr ""
+msgstr "ვინცენტ ვან გოგი, ლანგლის ხიდი არლსთან და ქალბატონი ქოლგით - 1888"
 
 #: activities/details/resource/board/board3_0.qml:14
 msgctxt "board3_0|"
@@ -5666,6 +5699,8 @@ msgid ""
 "Drag electrical components from the side bar and drop them in the working "
 "area."
 msgstr ""
+"გადმოათრიეთ ელექტრული კომპონენტები გვერდითი პანელიდან და დაყარეთ ისინი "
+"სამუშაო ადგილზე."
 
 #: activities/digital_electricity/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -5673,6 +5708,8 @@ msgid ""
 "To connect two terminals with a wire, click on a first terminal, then on a "
 "second terminal."
 msgstr ""
+"იმისათვის, რომ ორი ტერმინალი მავთულით შეაერთოთ, ჯერ პირველ ტერმინალს "
+"დააჭირეთ, მერე კი მეორეს."
 
 #: activities/digital_electricity/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -5698,6 +5735,9 @@ msgid ""
 "To delete a component or a wire, select the delete tool (cross icon) from "
 "the tool menu, and click on the component or on the wire you want to delete."
 msgstr ""
+"იმისათვის, რომ სადენი, ან ნაწილი წაშალოთ, დააჭირეთ წაშლის ხელსაწყოს (ჯვარი "
+"ხატულა) შესაბამისი მენიუდან და დააწკაპუნეთ ნაწილზე, ან სადენზე, რომლის "
+"წაშლაც გნებავთ."
 
 #: activities/digital_electricity/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -5721,6 +5761,8 @@ msgid ""
 "You can read information about the selected component using the info button "
 "(i icon) from the tool menu."
 msgstr ""
+"იმისათვის, რომ მონიშნული ნაწილის შესახებ ინფორმაცია მიიღოთ, გამოიყენეთ "
+"ინფორმაციის ღილაკი (ხატულა i) ხელსაწყოების მენიუდან."
 
 #: activities/digital_electricity/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
@@ -5728,12 +5770,16 @@ msgid ""
 "You can zoom in or out the working area using the + and - keys, using the "
 "zoom buttons from the tool menu, or using pinch gestures on a touchscreen."
 msgstr ""
+"სამუშაო ადგილის გადიდება და დაპატარავება + და - ღილაკებით, ხელსაწყოების "
+"მენიუდან გადიდების ღილაკებით, ან სენსორულ ეკრანზე ჟესტებით შეგიძლიათ."
 
 #: activities/digital_electricity/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid ""
 "You can pan the working area by clicking on an empty area and dragging it."
 msgstr ""
+"სამუშაო ადგილის გადახვევა ცარიელ ადგილას დაწკაპუნებით და მისი გადათრევით "
+"შეგიძლიათ."
 
 #: activities/digital_electricity/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
