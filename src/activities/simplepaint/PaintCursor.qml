@@ -12,7 +12,6 @@
  */
 import QtQuick 2.12
 import "simplepaint.js" as Activity
-import core 1.0
 
 Item {
     id: cursor

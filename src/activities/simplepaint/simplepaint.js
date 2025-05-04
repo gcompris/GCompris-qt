@@ -121,10 +121,7 @@ var items
 
 var numberOfLevel = backgrounds.length
 
-var activityBackground
-
-function start(items_, _activityBackground) {
-    activityBackground = _activityBackground
+function start(items_) {
     items = items_
     Core.getInitialLevel(numberOfLevel);
     initLevel()

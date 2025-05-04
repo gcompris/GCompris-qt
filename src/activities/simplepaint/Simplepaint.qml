@@ -10,8 +10,9 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
 
-import QtQuick 2.12
+import QtQuick
 import core 1.0
 
 import "../../core"
@@ -119,7 +120,7 @@ ActivityBase {
 
         function spawnBlock() {
             if(!isColorTab) {
-                var block = paintGrid.childAt(cursor.x, cursor.y);
+                var block = paintGrid.childAt(cursor.x, cursor.y) as PaintItem;
                 if(block)
                     block.touched();
             }else {
@@ -131,7 +132,7 @@ ActivityBase {
             moveColorSelectorAnim.running = false;
             moveColorSelectorAnim.from = colorSelector.contentY;
             if(items.current_color != (items.colors.length-1)) {
-                colorSelector.positionViewAtIndex(items.current_color >= 1 ? items.current_color-2 : items.current_color, colorSelector.Contain);
+                colorSelector.positionViewAtIndex(items.current_color >= 1 ? items.current_color-2 : items.current_color, GridView.Contain);
             }else {
                 colorSelector.positionViewAtEnd();
             }
@@ -146,13 +147,12 @@ ActivityBase {
 
         QtObject {
             id: items
-            property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property int paintModel: 1
             property alias paintArea: paintArea
             property alias colorSelector: colorSelector
             property alias cursor: cursor
-            property var colors: bar.level < 10 ? Activity.colorsSimple : Activity.colorsAdvanced
+            property list<string> colors: bar.level < 10 ? Activity.colorsSimple : Activity.colorsAdvanced
             property int current_color: 1
             property string selectedColor: colors[current_color]
             property string backgroundImg: Activity.backgrounds[items.currentLevel]
@@ -162,7 +162,7 @@ ActivityBase {
             property int nbY: 1
         }
 
-        onStart: Activity.start(items, activityBackground);
+        onStart: Activity.start(items);
         onStop: Activity.stop();
 
         MultiPointTouchArea {
@@ -170,7 +170,7 @@ ActivityBase {
             property PaintItem block: null
             onPressed: (touchPoints) => {
                 items.keyboardControls = false;
-                isColorTab = false;
+                activityBackground.isColorTab = false;
                 block = null;
                 checkTouchPoint(touchPoints);
             }
@@ -233,6 +233,8 @@ ActivityBase {
                     id: colorSlot
                     width: colorSelector.cellWidth
                     height: colorSelector.cellHeight - GCStyle.baseMargins
+
+                    required property string modelData
                     Rectangle {
                         id: rect
                         width: parent.height
@@ -240,9 +242,9 @@ ActivityBase {
                         anchors.centerIn: parent
                         radius: GCStyle.halfMargins
                         z: iAmSelected ? 10 : 1
-                        color: modelData
+                        color: colorSlot.modelData
                         border.color: GCStyle.darkBorder
-                        border.width: modelData == "#00FFFFFF" ? 0 : 1
+                        border.width: colorSlot.modelData == "#00FFFFFF" ? 0 : 1
 
                         Image {
                             width: parent.width
@@ -250,13 +252,13 @@ ActivityBase {
                             sourceSize.width: width
                             sourceSize.height: height
                             source: Activity.url + "eraser.svg"
-                            visible: modelData == "#00FFFFFF" ? 1 : 0
+                            visible: colorSlot.modelData == "#00FFFFFF" ? 1 : 0
                             anchors.centerIn: parent
                         }
 
                         Rectangle {
                             id: colorCursor
-                            visible: items.keyboardControls && isColorTab
+                            visible: items.keyboardControls && activityBackground.isColorTab
                             anchors.centerIn: parent
                             width: rect.width + border.width * 0.5
                             height: width
@@ -266,7 +268,7 @@ ActivityBase {
                             border.color: "#E0FFFFFF"
                         }
 
-                        property bool iAmSelected: modelData == items.selectedColor
+                        property bool iAmSelected: colorSlot.modelData == items.selectedColor
 
                         states: [
                             State {
@@ -343,8 +345,8 @@ ActivityBase {
                             onClicked: {
                                 scrollSound.play();
                                 items.keyboardControls = false;
-                                items.selectedColor = modelData;
-                                items.current_color = items.colors.indexOf(modelData);
+                                items.selectedColor = colorSlot.modelData;
+                                items.current_color = items.colors.indexOf(colorSlot.modelData);
                                 items.selectedColor = items.colors[items.current_color];
                             }
                         }
@@ -406,7 +408,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelpLeftRight
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
@@ -414,12 +416,12 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | reload | level }
             onHelpClicked: {
-                displayDialog(dialogHelpLeftRight)
+                activity.displayDialog(dialogHelpLeftRight)
             }
             onReloadClicked: Activity.initLevel()
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: home()
+            onHomeClicked: activity.home()
         }
     }
 
