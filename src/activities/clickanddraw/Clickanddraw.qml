@@ -15,5 +15,5 @@ NumberSequence {
     mode: "clickanddraw"
     pointImageOpacity: 0
     dataset: Dataset.get()
-    url: "qrc:/gcompris/src/activities/number_sequence/resource/"
+    resourceUrl: "qrc:/gcompris/src/activities/number_sequence/resource/"
 }
