@@ -24,7 +24,7 @@ Item {
     /// index into text.split("") where next typed match should occur
     property int unmatchedIndex: 0;
     property string text
-    property var dominoValues
+    property list<int> dominoValues
     property bool wonState: false
     property string mode: "dot"
 
@@ -52,7 +52,7 @@ Item {
         onStopped: Activity.deleteWord(word);
     }
 
-    function checkMatch(c): bool
+    function checkMatch(c: string): bool
     {
         // We are in the ending animation
         if (wonState)
@@ -83,9 +83,9 @@ Item {
         id: domino
         width: 120 * ApplicationInfo.ratio
         mode: word.mode
-        visible: dominoValues.length != 0
-        value1: dominoValues[0]
-        value2: dominoValues[1]
+        visible: word.dominoValues.length != 0
+        value1: word.dominoValues[0]
+        value2: word.dominoValues[1]
         isClickable: false
 
         ParticleSystemStarLoader {
@@ -98,7 +98,7 @@ Item {
         id: down
         target: word
         property: "y"
-        to: parent.height
+        to: word.parent.height
         duration: 10000
 
         onStopped: {

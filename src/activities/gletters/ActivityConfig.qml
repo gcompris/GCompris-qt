@@ -42,7 +42,7 @@ Item {
         GCDialogCheckBox {
             id: uppercaseBox
             text: qsTr("Uppercase only mode")
-            checked: uppercaseOnly
+            checked: activityConfiguration.uppercaseOnly
         }
         GCText {
             id: speedSliderText
@@ -54,7 +54,7 @@ Item {
         GCSlider {
             id: speedSlider
             width: 250 * ApplicationInfo.ratio
-            value: speedSetting
+            value: activityConfiguration.speedSetting
             to: 10
             from: 1
             wheelEnabled: false

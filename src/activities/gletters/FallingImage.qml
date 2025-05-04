@@ -53,7 +53,7 @@ Item {
         onStopped: Activity.deleteWord(word);
     }
 
-    function checkMatch(c): bool
+    function checkMatch(c: string): bool
     {
         // We are in the ending animation
         if (wonState)
@@ -106,7 +106,7 @@ Item {
         id: down
         target: word
         property: "y"
-        to: parent.height
+        to: word.parent.height
         duration: 10000
 
         onStopped: {

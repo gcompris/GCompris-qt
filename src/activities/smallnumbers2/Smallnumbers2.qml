@@ -8,8 +8,6 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import QtQuick 2.12
-import core 1.0
 
 import "../gletters"
 
@@ -24,7 +22,7 @@ Gletters {
         return activity.dominoMode;
     }
 
-    function getDominoValues(key) {
+    function getDominoValues(key: int) : list<int> {
         var val1 = Math.floor(Math.random() * key)
         return [val1, key - val1]
     }

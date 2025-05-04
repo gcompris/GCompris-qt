@@ -9,7 +9,6 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-import core 1.0
 
 import "../gletters"
 
@@ -21,7 +20,7 @@ Gletters {
     useDataset: true
     dataSetUrl: "qrc:/gcompris/src/activities/smallnumbers/resource/"
 
-    function getImage(key) {
+    function getImage(key: string) : string {
         return dataSetUrl + "dice" + key + ".svg"
     }
 }
