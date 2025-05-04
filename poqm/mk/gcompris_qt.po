@@ -18250,7 +18250,7 @@ msgstr ""
 "горниот лев агол на екранот за да го овозможите или оневозможите режимот за "
 "брзо одење.\t"
 
-#: activities/maze/Maze.qml:340
+#: activities/maze/Maze.qml:346
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -18391,7 +18391,7 @@ msgstr ""
 "скалите на ксилофонот. Можете повторно да слушате со кликнување на копчето "
 "за повторување."
 
-#: activities/melody/Melody.qml:334
+#: activities/melody/Melody.qml:338
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -18400,12 +18400,12 @@ msgstr ""
 "Оваа активност бара звук, така што ќе репродуцира некои звуци дури и ако е "
 "аудиогласовите или ефектите се оневозможени во главната конфигурација."
 
-#: activities/melody/Melody.qml:335
+#: activities/melody/Melody.qml:339
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "Исклучи"
 
-#: activities/melody/Melody.qml:336
+#: activities/melody/Melody.qml:340
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "Продолжи"

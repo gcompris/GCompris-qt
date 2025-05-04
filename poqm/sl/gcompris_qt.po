@@ -17256,7 +17256,7 @@ msgstr ""
 "nižjih ravneh ali onemogočanje na višjih, je možnost mogoče preklopiti s "
 "klikom na ikono \"bosonog/obut\" v levem zgornjem kotu zaslona.\t"
 
-#: activities/maze/Maze.qml:340
+#: activities/maze/Maze.qml:346
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -17396,7 +17396,7 @@ msgstr ""
 "Poslušajte predvajano zaporedje zvokov in ga ponovite s kliki na ksilofon. "
 "Zaporedje lahko slišite znova s klikom na gumb za ponovitev."
 
-#: activities/melody/Melody.qml:334
+#: activities/melody/Melody.qml:338
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -17405,12 +17405,12 @@ msgstr ""
 "Za to dejavnost je potreben zvok, zato bo računalnik predvajal nekatere "
 "zvoke, četudi če so zvoki ali zvočni učinki v glavni nastavitvi onemogočeni."
 
-#: activities/melody/Melody.qml:335
+#: activities/melody/Melody.qml:339
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "Izhod"
 
-#: activities/melody/Melody.qml:336
+#: activities/melody/Melody.qml:340
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "Nadaljuj"

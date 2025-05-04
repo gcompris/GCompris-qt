@@ -17369,7 +17369,7 @@ msgstr ""
 "sarokban.\n"
 "\t"
 
-#: activities/maze/Maze.qml:340
+#: activities/maze/Maze.qml:346
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -17509,7 +17509,7 @@ msgstr ""
 "Hallgasd meg a hangsort, majd ismételd meg a xilofon lapjaira kattintva! Az "
 "Ismétlés gombra kattintva újra meghallgathatod a dallamot."
 
-#: activities/melody/Melody.qml:334
+#: activities/melody/Melody.qml:338
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -17518,12 +17518,12 @@ msgstr ""
 "Ez a feladat hangokat használ, így akkor is hallasz pár hangot, ho a "
 "főmenüben kikapcsoltad azokat!"
 
-#: activities/melody/Melody.qml:335
+#: activities/melody/Melody.qml:339
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "Kilépsz?"
 
-#: activities/melody/Melody.qml:336
+#: activities/melody/Melody.qml:340
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "Folytatás"

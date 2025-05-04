@@ -17487,7 +17487,7 @@ msgstr ""
 "сложном, щёлкни по значку «босиком/кроссовки» в левом верхнем углу экрана.\n"
 "\t"
 
-#: activities/maze/Maze.qml:340
+#: activities/maze/Maze.qml:346
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -17628,7 +17628,7 @@ msgstr ""
 "Прослушай последовательность звуков и повтори её, нажимая на бруски "
 "ксилофона. Ты можешь прослушать мелодию ещё раз, нажав кнопку повтора."
 
-#: activities/melody/Melody.qml:334
+#: activities/melody/Melody.qml:338
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -17637,13 +17637,13 @@ msgstr ""
 "Для этого упражнения необходим звук, поэтому оно будет воспроизводить звуки, "
 "даже если они отключены в основной конфигурации."
 
-#: activities/melody/Melody.qml:335
+#: activities/melody/Melody.qml:339
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "Выйти"
 
 # https://ru.wikipedia.org/wiki/%D0%A7%D0%B0%D1%81%D1%82%D0%B8_%D1%81%D0%B2%D0%B5%D1%82%D0%B0 --aspotashev
-#: activities/melody/Melody.qml:336
+#: activities/melody/Melody.qml:340
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "Продолжить"

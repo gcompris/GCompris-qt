@@ -17070,7 +17070,7 @@ msgstr ""
 "उपयोक्तुं इच्छति अथवा उन्नतस्तरयोः अक्षमीकरणं कर्तुम् इच्छति तर्हि run-fast-mode इत्यस्य "
 "टॉगलं कर्तुं स्क्रीनस्य उपरि वामकोणे \"barefoot / sportshoe\" इति चिह्नं नुदतु\t"
 
-#: activities/maze/Maze.qml:340
+#: activities/maze/Maze.qml:346
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -17207,7 +17207,7 @@ msgstr ""
 "वाद्यमानं ध्वनिक्रमं शृणुत, ज़ाइलोफोनस्य पट्टिकासु क्लिक् कृत्वा पुनः पुनः कुर्वन्तु । repeat बटन् "
 "नुत्वा पुनः ध्वनिक्रमं श्रोतुं शक्नुवन्ति ।"
 
-#: activities/melody/Melody.qml:334
+#: activities/melody/Melody.qml:338
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -17216,12 +17216,12 @@ msgstr ""
 "अस्याः क्रियायाः कृते ध्वनिः आवश्यकः अस्ति, अतः मुख्यविन्यासे श्रव्यस्वरः अथवा प्रभावाः "
 "निष्क्रियाः सन्ति चेदपि एतत् केचन ध्वनयः वादयिष्यति ।"
 
-#: activities/melody/Melody.qml:335
+#: activities/melody/Melody.qml:339
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "परिजहातु"
 
-#: activities/melody/Melody.qml:336
+#: activities/melody/Melody.qml:340
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "अनुवर्तते"

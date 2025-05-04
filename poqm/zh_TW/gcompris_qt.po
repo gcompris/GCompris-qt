@@ -17264,7 +17264,7 @@ msgstr ""
 "在更高的關卡中，會自動開啟快跑模式。如果您在前面的關卡要使用，或是要在進階關"
 "卡中關掉此功能，只需要點擊左上方的腳或運動鞋的圖示即可。\t"
 
-#: activities/maze/Maze.qml:340
+#: activities/maze/Maze.qml:346
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -17396,19 +17396,19 @@ msgstr ""
 "聽聽聲音播放的順序，然後在木琴上依序敲出正確的音。您可以點擊重複按鍵再聽一"
 "次。"
 
-#: activities/melody/Melody.qml:334
+#: activities/melody/Melody.qml:338
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr "這個遊戲需要播放聲音，所以即使您設定關閉聲音或音效，它還是會播出聲音。"
 
-#: activities/melody/Melody.qml:335
+#: activities/melody/Melody.qml:339
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "離開"
 
-#: activities/melody/Melody.qml:336
+#: activities/melody/Melody.qml:340
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "繼續"
