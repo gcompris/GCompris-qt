@@ -67,7 +67,7 @@ Item {
         onStopped: Activity.deleteWord(word);
     }
 
-    function checkMatch(c): bool
+    function checkMatch(c: string): bool
     {
         // We are in the ending animation
         if (wonState)
@@ -112,8 +112,8 @@ Item {
             id: highlightedWordText
             anchors.fill: parent
             text: ""
-            fontSize: parent.fontSize
-            font.bold: parent.font.bold
+            fontSize: wordText.fontSize
+            font.bold: wordText.font.bold
             color: "red"
             style: Text.Outline
             styleColor: GCStyle.whiteBorder
@@ -136,7 +136,7 @@ Item {
         id: down
         target: word
         property: "y"
-        to: parent.height
+        to: word.parent.height
         duration: 10000
 
         onStopped: {

@@ -12,4 +12,6 @@ GCOMPRIS_ADD_RESOURCE(activities/smallnumbers
   *.svg
   resource/*.svg
   resource/*.json
+  DEPENDENCIES
+  gletters
 )
