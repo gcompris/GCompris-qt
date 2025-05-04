@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-04-22 08:33+0300\n"
+"PO-Revision-Date: 2025-05-03 14:18+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 24.12.3\n"
+"X-Generator: Lokalize 25.04.0\n"
 "X-Qt-Contexts: true\n"
 "X-Poedit-Bookmarks: -1,2919,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
@@ -10381,7 +10381,7 @@ msgstr "מרילנד"
 #: activities/geo-country/resource/board/board10_0.qml:276
 msgctxt "board10_0|"
 msgid "New Jersey"
-msgstr "ניו ג'רזי"
+msgstr "ניו ג׳רזי"
 
 #. State of America: Delaware
 #: activities/geo-country/resource/board/board10_0.qml:283
@@ -10542,31 +10542,31 @@ msgstr "לציו"
 #: activities/geo-country/resource/board/board11_0.qml:108
 msgctxt "board11_0|"
 msgid "Abruzzo"
-msgstr "אברוזו"
+msgstr "אברוצו"
 
 #. Region of Italy: Molise
 #: activities/geo-country/resource/board/board11_0.qml:115
 msgctxt "board11_0|"
 msgid "Molise"
-msgstr "מוליסה"
+msgstr "מוליזה"
 
 #. Region of Italy: Campania
 #: activities/geo-country/resource/board/board11_0.qml:122
 msgctxt "board11_0|"
 msgid "Campania"
-msgstr "קמפניה"
+msgstr "קמפנייה"
 
 #. Region of Italy: Apulia
 #: activities/geo-country/resource/board/board11_0.qml:129
 msgctxt "board11_0|"
 msgid "Apulia"
-msgstr "אָפּוּליה"
+msgstr "פולייה"
 
 #. Region of Italy: Basilicata
 #: activities/geo-country/resource/board/board11_0.qml:136
 msgctxt "board11_0|"
 msgid "Basilicata"
-msgstr "בסיליקטה"
+msgstr "בזיליקטה"
 
 #. Region of Italy: Calabria
 #: activities/geo-country/resource/board/board11_0.qml:143
@@ -10595,13 +10595,13 @@ msgstr "מדינות ואיחודי מחוזות בהודו"
 #: activities/geo-country/resource/board/board12_0.qml:24
 msgctxt "board12_0|"
 msgid "Himachal Pradesh"
-msgstr "הימקל פרדש"
+msgstr "הימאצ׳ל פרדש"
 
 #. State of India: Punjab
 #: activities/geo-country/resource/board/board12_0.qml:31
 msgctxt "board12_0|"
 msgid "Punjab"
-msgstr "פונג'ב"
+msgstr "פנג׳אב"
 
 #. State of India: Uttarakhand
 #: activities/geo-country/resource/board/board12_0.qml:38
@@ -10631,7 +10631,7 @@ msgstr "ביהר"
 #: activities/geo-country/resource/board/board12_0.qml:66
 msgctxt "board12_0|"
 msgid "Gujarat"
-msgstr "גוּג'רט"
+msgstr "גוג׳ראט"
 
 #. State of India: Haryana
 #: activities/geo-country/resource/board/board12_0.qml:73
@@ -10643,25 +10643,25 @@ msgstr "הריאנה"
 #: activities/geo-country/resource/board/board12_0.qml:80
 msgctxt "board12_0|"
 msgid "Madhya Pradesh"
-msgstr "מדהייה פְּרָדֵש"
+msgstr "מאדהיה פרדש"
 
 #. State of India: Jharkhand
 #: activities/geo-country/resource/board/board12_0.qml:87
 msgctxt "board12_0|"
 msgid "Jharkhand"
-msgstr "ג'הרקהנד"
+msgstr "ג׳הרקאנד"
 
 #. State of India: Maharashtra
 #: activities/geo-country/resource/board/board12_0.qml:94
 msgctxt "board12_0|"
 msgid "Maharashtra"
-msgstr "מהרשנטה"
+msgstr "מהאראשטרה"
 
 #. State of India: Chhattisgarh
 #: activities/geo-country/resource/board/board12_0.qml:101
 msgctxt "board12_0|"
 msgid "Chhattisgarh"
-msgstr "צ'התיסגרה"
+msgstr "צ׳האטיסגאר"
 
 #. State of India: Goa
 #: activities/geo-country/resource/board/board12_0.qml:108
@@ -10673,7 +10673,7 @@ msgstr "גואה"
 #: activities/geo-country/resource/board/board12_0.qml:115
 msgctxt "board12_0|"
 msgid "Karnataka"
-msgstr "קרנטקה"
+msgstr "קרנאטקה"
 
 #. State of India: Telangana
 #: activities/geo-country/resource/board/board12_0.qml:122
@@ -10685,16 +10685,17 @@ msgstr "טלנגנה"
 #: activities/geo-country/resource/board/board12_0.qml:130
 msgctxt "board12_0|"
 msgid "Andhra Pradesh"
-msgstr "אנדהרה פראדֵש"
+msgstr "אנדרה פרדש"
 
 #. State of India: Kerala
 #: activities/geo-country/resource/board/board12_0.qml:137
 msgctxt "board12_0|"
 msgid "Kerala"
-msgstr "קֶרָלה"
+msgstr "קרלה"
 
 #. State of India: Tamil Nadu
 #: activities/geo-country/resource/board/board12_0.qml:144
+#, fuzzy
 msgctxt "board12_0|"
 msgid "Tamil Nadu"
 msgstr "טמיל נבּוּ"
@@ -10703,7 +10704,7 @@ msgstr "טמיל נבּוּ"
 #: activities/geo-country/resource/board/board12_0.qml:151
 msgctxt "board12_0|"
 msgid "West Bengal"
-msgstr "בנגל המערבית"
+msgstr "מערב בנגל"
 
 #. State of India: Sikkim
 #: activities/geo-country/resource/board/board12_0.qml:158
@@ -10715,19 +10716,19 @@ msgstr "סיקים"
 #: activities/geo-country/resource/board/board12_0.qml:165
 msgctxt "board12_0|"
 msgid "Assam"
-msgstr "אסם"
+msgstr "אסאם"
 
 #. State of India: Arunachal Pradesh
 #: activities/geo-country/resource/board/board12_0.qml:172
 msgctxt "board12_0|"
 msgid "Arunachal Pradesh"
-msgstr "ארונצ'ָל פראדֶש"
+msgstr "ארונאצ׳ל פרדש"
 
 #. State of India: Nagaland
 #: activities/geo-country/resource/board/board12_0.qml:179
 msgctxt "board12_0|"
 msgid "Nagaland"
-msgstr "נגלנד"
+msgstr "נאגאלנד"
 
 #. State of India: Odisha
 #: activities/geo-country/resource/board/board12_0.qml:186
@@ -10739,13 +10740,13 @@ msgstr "אודישה"
 #: activities/geo-country/resource/board/board12_0.qml:193
 msgctxt "board12_0|"
 msgid "Manipur"
-msgstr "מאניםּוּר"
+msgstr "מניפור"
 
 #. State of India: Mizoram
 #: activities/geo-country/resource/board/board12_0.qml:200
 msgctxt "board12_0|"
 msgid "Mizoram"
-msgstr "מיזורָם"
+msgstr "מיזוראם"
 
 #. State of India: Tripura
 #: activities/geo-country/resource/board/board12_0.qml:207
@@ -10757,13 +10758,13 @@ msgstr "טריפורה"
 #: activities/geo-country/resource/board/board12_0.qml:214
 msgctxt "board12_0|"
 msgid "Meghalaya"
-msgstr "מגאליה"
+msgstr "מגהלאיה"
 
 #. Union Territory of India: Andaman and Nicobar Islands
 #: activities/geo-country/resource/board/board12_0.qml:221
 msgctxt "board12_0|"
 msgid "Andaman and Nicobar Islands"
-msgstr "אנדמן ואיי ניקובר"
+msgstr "איי אנדמן וניקובר"
 
 #. Union Territory of India: Delhi
 #: activities/geo-country/resource/board/board12_0.qml:228
@@ -10775,13 +10776,13 @@ msgstr "דלהי"
 #: activities/geo-country/resource/board/board12_0.qml:235
 msgctxt "board12_0|"
 msgid "Chandigarh"
-msgstr "צ'נדיגרה"
+msgstr "צ׳אנדיגאר"
 
 #. Union Territory of India: Dadra and Nagar Haveli and Daman and Diu
 #: activities/geo-country/resource/board/board12_0.qml:243
 msgctxt "board12_0|"
 msgid "Dadra and Nagar Haveli and Daman and Diu"
-msgstr "דדרה ונגר הבלי ודאמן ודיוּ"
+msgstr "דדרה ונאגר האוולי ודאמאן ודיוּ"
 
 #. Union Territory of India: Ladakh
 #: activities/geo-country/resource/board/board12_0.qml:251
@@ -10793,13 +10794,13 @@ msgstr "לדָק"
 #: activities/geo-country/resource/board/board12_0.qml:258
 msgctxt "board12_0|"
 msgid "Lakshadweep"
-msgstr "לקשאדוּיפּ"
+msgstr "לקשאדוויפ"
 
 #. Union Territory of India: Jammu and Kashmir
 #: activities/geo-country/resource/board/board12_0.qml:265
 msgctxt "board12_0|"
 msgid "Jammu and Kashmir"
-msgstr "ג'מו וקשמיר"
+msgstr "ג׳אמו וקשמיר"
 
 #. Union Territory of India: Puducherry
 #: activities/geo-country/resource/board/board12_0.qml:272
@@ -10834,13 +10835,13 @@ msgstr "דרום אוסטרליה"
 #: activities/geo-country/resource/board/board13_0.qml:45
 msgctxt "board13_0|"
 msgid "Queensland"
-msgstr "קוינסלנד"
+msgstr "קווינסלנד"
 
 #. State of Australia: New South Wales
 #: activities/geo-country/resource/board/board13_0.qml:52
 msgctxt "board13_0|"
 msgid "New South Wales"
-msgstr "דרום וויילס החדשה"
+msgstr "ניו סאות׳ ויילס"
 
 #. State of Australia: Victoria
 #: activities/geo-country/resource/board/board13_0.qml:59
@@ -10869,13 +10870,13 @@ msgstr "הפְּרוֹבינְציוֹת של סין"
 #: activities/geo-country/resource/board/board14_0.qml:24
 msgctxt "board14_0|"
 msgid "Xinjiang"
-msgstr "חינג'יאנג"
+msgstr "שׂינְגְ׳יָאנְג"
 
 #. Province of China: Gansu
 #: activities/geo-country/resource/board/board14_0.qml:31
 msgctxt "board14_0|"
 msgid "Gansu"
-msgstr "גנסוּ"
+msgstr "גַאנְסוּ"
 
 #. Province of China: Inner Mongolia
 #: activities/geo-country/resource/board/board14_0.qml:38
@@ -10887,61 +10888,61 @@ msgstr "מונגוליה הפנימית"
 #: activities/geo-country/resource/board/board14_0.qml:45
 msgctxt "board14_0|"
 msgid "Ningxia"
-msgstr "נינגחיה"
+msgstr "נִינְגשְׂיָה"
 
 #. Province of China: Heilongjiang
 #: activities/geo-country/resource/board/board14_0.qml:52
 msgctxt "board14_0|"
 msgid "Heilongjiang"
-msgstr "היילונגג'יאנג"
+msgstr "חֵייְלוֹנְגְגְ׳יַאנְג"
 
 #. Province of China: Jilin
 #: activities/geo-country/resource/board/board14_0.qml:59
 msgctxt "board14_0|"
 msgid "Jilin"
-msgstr "ג'ילין"
+msgstr "גִ׳ילִין"
 
 #. Province of China: Liaoning
 #: activities/geo-country/resource/board/board14_0.qml:66
 msgctxt "board14_0|"
 msgid "Liaoning"
-msgstr "ליאונינג"
+msgstr "לְיַאונִינְג"
 
 #. Province of China: Tianjin
 #: activities/geo-country/resource/board/board14_0.qml:73
 msgctxt "board14_0|"
 msgid "Tianjin"
-msgstr "טיאנג'יאן"
+msgstr "טְייֵנְגִ׳ין"
 
 #. Province of China: Beijing
 #: activities/geo-country/resource/board/board14_0.qml:80
 msgctxt "board14_0|"
 msgid "Beijing"
-msgstr "בייג'ין"
+msgstr "בייג׳ינג"
 
 #. Province of China: Shandong
 #: activities/geo-country/resource/board/board14_0.qml:87
 msgctxt "board14_0|"
 msgid "Shandong"
-msgstr "שנדונג"
+msgstr "שַאנְדונְג"
 
 #. Province of China: Shanxi
 #: activities/geo-country/resource/board/board14_0.qml:94
 msgctxt "board14_0|"
 msgid "Shanxi"
-msgstr "שנחי"
+msgstr "שָׁאנשִׂי"
 
 #. Province of China: Shaanxi
 #: activities/geo-country/resource/board/board14_0.qml:101
 msgctxt "board14_0|"
 msgid "Shaanxi"
-msgstr "שאנחי"
+msgstr "שָׁאנשִׂי"
 
 #. Province of China: Qinghai
 #: activities/geo-country/resource/board/board14_0.qml:108
 msgctxt "board14_0|"
 msgid "Qinghai"
-msgstr "קינגחי"
+msgstr "צִ׳ינְגְהָאי"
 
 #. Province of China: Tibet
 #: activities/geo-country/resource/board/board14_0.qml:115
@@ -10953,103 +10954,103 @@ msgstr "טיבט"
 #: activities/geo-country/resource/board/board14_0.qml:122
 msgctxt "board14_0|"
 msgid "Sichuan"
-msgstr "סיחואן"
+msgstr "סְה־צְ׳ווַאן"
 
 #. Province of China: Chongqing
 #: activities/geo-country/resource/board/board14_0.qml:129
 msgctxt "board14_0|"
 msgid "Chongqing"
-msgstr "חונגקינג"
+msgstr "צ׳וֹנְגצִ׳ינְג"
 
 #. Province of China: Henan
 #: activities/geo-country/resource/board/board14_0.qml:136
 msgctxt "board14_0|"
 msgid "Henan"
-msgstr "הנן"
+msgstr "חֶנָאן"
 
 #. Province of China: Jiangsu
 #: activities/geo-country/resource/board/board14_0.qml:143
 msgctxt "board14_0|"
 msgid "Jiangsu"
-msgstr "ג'יאנגסו"
+msgstr "גְ׳יָאנְגְסוּ"
 
 #. Province of China: Anhui
 #: activities/geo-country/resource/board/board14_0.qml:150
 msgctxt "board14_0|"
 msgid "Anhui"
-msgstr "אנהוי"
+msgstr "אנחווי"
 
 #. Province of China: Hubei
 #: activities/geo-country/resource/board/board14_0.qml:157
 msgctxt "board14_0|"
 msgid "Hubei"
-msgstr "הובֵּיי"
+msgstr "חוּבֵּיי"
 
 #. Province of China: Shanghai
 #: activities/geo-country/resource/board/board14_0.qml:164
 msgctxt "board14_0|"
 msgid "Shanghai"
-msgstr "שנגהי"
+msgstr "שַׁאנְגְחַאי"
 
 #. Province of China: Zhejiang
 #: activities/geo-country/resource/board/board14_0.qml:171
 msgctxt "board14_0|"
 msgid "Zhejiang"
-msgstr "זהג'יאנג"
+msgstr "ג׳ג׳יאנג"
 
 #. Province of China: Fujian
 #: activities/geo-country/resource/board/board14_0.qml:178
 msgctxt "board14_0|"
 msgid "Fujian"
-msgstr "פוג'יאן"
+msgstr "פֿוּגְ׳יֵין"
 
 #. Province of China: Jiangxi
 #: activities/geo-country/resource/board/board14_0.qml:185
 msgctxt "board14_0|"
 msgid "Jiangxi"
-msgstr "ג'יאנגחי"
+msgstr "גְ׳יָאנְגְשִׂי"
 
 #. Province of China: Hunan
 #: activities/geo-country/resource/board/board14_0.qml:192
 msgctxt "board14_0|"
 msgid "Hunan"
-msgstr "הונאן"
+msgstr "חוּנָאן"
 
 #. Province of China: Guizhou
 #: activities/geo-country/resource/board/board14_0.qml:199
 msgctxt "board14_0|"
 msgid "Guizhou"
-msgstr "גויזהווּ"
+msgstr "גְװֵיג׳וֹאוּ"
 
 #. Province of China: Yunnan
 #: activities/geo-country/resource/board/board14_0.qml:206
 msgctxt "board14_0|"
 msgid "Yunnan"
-msgstr "יונן"
+msgstr "יוּנַּאן"
 
 #. Province of China: Guangxi
 #: activities/geo-country/resource/board/board14_0.qml:213
 msgctxt "board14_0|"
 msgid "Guangxi"
-msgstr "גואנגחי"
+msgstr "גְוַאנְגשִׂי"
 
 #. Province of China: Guangdong
 #: activities/geo-country/resource/board/board14_0.qml:220
 msgctxt "board14_0|"
 msgid "Guangdong"
-msgstr "גואנגדונג"
+msgstr "גְוָאנְגְדוֹנג"
 
 #. Province of China: Hainan
 #: activities/geo-country/resource/board/board14_0.qml:227
 msgctxt "board14_0|"
 msgid "Hainan"
-msgstr "הינן"
+msgstr "הָאיְנָאן"
 
 #. Province of China: Hebei
 #: activities/geo-country/resource/board/board14_0.qml:234
 msgctxt "board14_0|"
 msgid "Hebei"
-msgstr "הֵבֵּיי"
+msgstr "חֶבֵּיי"
 
 #: activities/geo-country/resource/board/board15_0.qml:16
 msgctxt "board15_0|"
@@ -11743,7 +11744,7 @@ msgstr "לה פּמפּה"
 #: activities/geo-country/resource/board/board3_0.qml:122
 msgctxt "board3_0|"
 msgid "Jujuy"
-msgstr "ג'וּג'וּי"
+msgstr "חוחוי"
 
 #. Province of Argentina: Formosa
 #: activities/geo-country/resource/board/board3_0.qml:129
@@ -11773,13 +11774,13 @@ msgstr "קורדובה"
 #: activities/geo-country/resource/board/board3_0.qml:157
 msgctxt "board3_0|"
 msgid "Chubut"
-msgstr "צ'וּבוּט"
+msgstr "צ׳ובוט"
 
 #. Province of Argentina: Chaco
 #: activities/geo-country/resource/board/board3_0.qml:164
 msgctxt "board3_0|"
 msgid "Chaco"
-msgstr "צ'קו"
+msgstr "צ׳אקו"
 
 #. Province of Argentina: Catamarca
 #: activities/geo-country/resource/board/board3_0.qml:171
@@ -12518,7 +12519,7 @@ msgstr "מרנהאו"
 #: activities/geo-country/resource/board/board7_0.qml:80
 msgctxt "board7_0|"
 msgid "Rio Grande do Sul"
-msgstr "ריו גרנדה דו סול"
+msgstr "ריו גראנדה דו סול"
 
 #. Federative unit of Brazil: Tocantins
 #: activities/geo-country/resource/board/board7_0.qml:87
@@ -12566,7 +12567,7 @@ msgstr "אקרה"
 #: activities/geo-country/resource/board/board7_0.qml:136
 msgctxt "board7_0|"
 msgid "Ceará"
-msgstr "סארה"
+msgstr "סיארה"
 
 #. Federative unit of Brazil: Amapá
 #: activities/geo-country/resource/board/board7_0.qml:143
@@ -12590,25 +12591,25 @@ msgstr "סנטה קטרינה"
 #: activities/geo-country/resource/board/board7_0.qml:164
 msgctxt "board7_0|"
 msgid "Paraíba"
-msgstr "פראיבה"
+msgstr "פאראיבה"
 
 #. Federative unit of Brazil: Rio Grande do Norte
 #: activities/geo-country/resource/board/board7_0.qml:171
 msgctxt "board7_0|"
 msgid "Rio Grande do Norte"
-msgstr "ריו גרנדה דו נורטה"
+msgstr "ריו גראנדה דו נורטה"
 
 #. Federative unit of Brazil: Espírito Santo
 #: activities/geo-country/resource/board/board7_0.qml:178
 msgctxt "board7_0|"
 msgid "Espírito Santo"
-msgstr "אספיריטו סנטו"
+msgstr "אספיריטו סאנטו"
 
 #. Federative unit of Brazil: Rio de Janeiro
 #: activities/geo-country/resource/board/board7_0.qml:185
 msgctxt "board7_0|"
 msgid "Rio de Janeiro"
-msgstr "ריו דה ז'אנרו"
+msgstr "ריו דה ז׳נרו"
 
 #. Federative unit of Brazil: Alagoas
 #: activities/geo-country/resource/board/board7_0.qml:192
@@ -12620,13 +12621,13 @@ msgstr "אלגואס"
 #: activities/geo-country/resource/board/board7_0.qml:199
 msgctxt "board7_0|"
 msgid "Sergipe"
-msgstr "סרגיפּה"
+msgstr "סרז׳יפה"
 
 #. Federative unit of Brazil: Distrito Federal
 #: activities/geo-country/resource/board/board7_0.qml:206
 msgctxt "board7_0|"
 msgid "Distrito Federal"
-msgstr "דיסטריו פדרל"
+msgstr "המחוז הפדרלי של ברזיל"
 
 #: activities/geo-country/resource/board/board8_0.qml:15
 msgctxt "board8_0|"
@@ -12655,7 +12656,7 @@ msgstr "הטריטוריות הצפוניות"
 #: activities/geo-country/resource/board/board8_0.qml:45
 msgctxt "board8_0|"
 msgid "Nunavut"
-msgstr "נוּנבוּט"
+msgstr "נונאווט"
 
 #. Provinces and territories of Canada: Alberta
 #: activities/geo-country/resource/board/board8_0.qml:52
@@ -12667,7 +12668,7 @@ msgstr "אלברטה"
 #: activities/geo-country/resource/board/board8_0.qml:59
 msgctxt "board8_0|"
 msgid "Saskatchewan"
-msgstr "ססקצ'ואן"
+msgstr "ססקצ׳ואן"
 
 #. Provinces and territories of Canada: Manitoba
 #: activities/geo-country/resource/board/board8_0.qml:66
@@ -12720,19 +12721,19 @@ msgstr "המדינות של מקסיקו"
 #: activities/geo-country/resource/board/board9_0.qml:24
 msgctxt "board9_0|"
 msgid "Zacatecas"
-msgstr "זקטקאס"
+msgstr "סקטקס"
 
 #. State of Mexico: Yucatán
 #: activities/geo-country/resource/board/board9_0.qml:31
 msgctxt "board9_0|"
 msgid "Yucatán"
-msgstr "יוקטאן"
+msgstr "יוקטן"
 
 #. State of Mexico: Veracruz
 #: activities/geo-country/resource/board/board9_0.qml:38
 msgctxt "board9_0|"
 msgid "Veracruz"
-msgstr "ורהקרוז"
+msgstr "וראקרוס"
 
 #. State of Mexico: Tlaxcala
 #: activities/geo-country/resource/board/board9_0.qml:45
@@ -12762,25 +12763,25 @@ msgstr "סונורה"
 #: activities/geo-country/resource/board/board9_0.qml:73
 msgctxt "board9_0|"
 msgid "Sinaloa"
-msgstr "סינלולה"
+msgstr "סינלואה"
 
 #. State of Mexico: San Luis Potosí
 #: activities/geo-country/resource/board/board9_0.qml:80
 msgctxt "board9_0|"
 msgid "San Luis Potosí"
-msgstr "סאן לואיס פוטוסי"
+msgstr "סן לואיס פוטוסי"
 
 #. State of Mexico: Quintana Roo
 #: activities/geo-country/resource/board/board9_0.qml:87
 msgctxt "board9_0|"
 msgid "Quintana Roo"
-msgstr "קוינטנה רו"
+msgstr "קינטנה רו"
 
 #. State of Mexico: Querétaro
 #: activities/geo-country/resource/board/board9_0.qml:94
 msgctxt "board9_0|"
 msgid "Querétaro"
-msgstr "קֻוֶרטארו"
+msgstr "קרטרו"
 
 #. State of Mexico: Puebla
 #: activities/geo-country/resource/board/board9_0.qml:101
@@ -12792,7 +12793,7 @@ msgstr "פּואבלה"
 #: activities/geo-country/resource/board/board9_0.qml:108
 msgctxt "board9_0|"
 msgid "Oaxaca"
-msgstr "וּאחקה"
+msgstr "ואחאקה"
 
 #. State of Mexico: Nuevo León
 #: activities/geo-country/resource/board/board9_0.qml:115
@@ -12816,31 +12817,31 @@ msgstr "מורלוס"
 #: activities/geo-country/resource/board/board9_0.qml:136
 msgctxt "board9_0|"
 msgid "Michoacán"
-msgstr "מיצ'ואקן"
+msgstr "מיצ׳ואקאן"
 
 #. State of Mexico: Jalisco
 #: activities/geo-country/resource/board/board9_0.qml:143
 msgctxt "board9_0|"
 msgid "Jalisco"
-msgstr "ג'ליסקו"
+msgstr "חליסקו"
 
 #. State of Mexico: Hidalgo
 #: activities/geo-country/resource/board/board9_0.qml:150
 msgctxt "board9_0|"
 msgid "Hidalgo"
-msgstr "הידלגו"
+msgstr "אידלגו"
 
 #. State of Mexico: Guerrero
 #: activities/geo-country/resource/board/board9_0.qml:157
 msgctxt "board9_0|"
 msgid "Guerrero"
-msgstr "גואררו"
+msgstr "גררו"
 
 #. State of Mexico: Guanajuato
 #: activities/geo-country/resource/board/board9_0.qml:164
 msgctxt "board9_0|"
 msgid "Guanajuato"
-msgstr "גואנהג'ואטו"
+msgstr "גואנחואטו"
 
 #. State of Mexico: Estado de México
 #: activities/geo-country/resource/board/board9_0.qml:171
@@ -12870,19 +12871,19 @@ msgstr "קואהוילה"
 #: activities/geo-country/resource/board/board9_0.qml:199
 msgctxt "board9_0|"
 msgid "Chiapas"
-msgstr "צ'יאפאס"
+msgstr "צ׳יאפאס"
 
 #. State of Mexico: Chihuahua
 #: activities/geo-country/resource/board/board9_0.qml:206
 msgctxt "board9_0|"
 msgid "Chihuahua"
-msgstr "צ'יוואווה"
+msgstr "צ׳יוואווה"
 
 #. State of Mexico: Campeche
 #: activities/geo-country/resource/board/board9_0.qml:213
 msgctxt "board9_0|"
 msgid "Campeche"
-msgstr "קמפצ'ה"
+msgstr "קמפצ׳ה"
 
 #. State of Mexico: Baja California
 #: activities/geo-country/resource/board/board9_0.qml:220
@@ -12947,17 +12948,17 @@ msgstr "קזחסטן"
 #: activities/geography/resource/board/board10_0.qml:31
 msgctxt "board10_0|"
 msgid "Kyrgyzstan"
-msgstr "קירגיסטאן"
+msgstr "קירגיסטן"
 
 #: activities/geography/resource/board/board10_0.qml:38
 msgctxt "board10_0|"
 msgid "Tajikistan"
-msgstr "טג'יקיסטאן"
+msgstr "טג׳יקיסטן"
 
 #: activities/geography/resource/board/board10_0.qml:45
 msgctxt "board10_0|"
 msgid "Turkmenistan"
-msgstr "טורקמניסטאן"
+msgstr "טורקמניסטן"
 
 #: activities/geography/resource/board/board10_0.qml:52
 msgctxt "board10_0|"
@@ -13067,7 +13068,7 @@ msgstr "מזרח טימור"
 #: activities/geography/resource/board/board12_0.qml:95
 msgctxt "board12_0|"
 msgid "Philippines"
-msgstr "פיליפינים"
+msgstr "הפיליפינים"
 
 #: activities/geography/resource/board/board13_0.qml:15
 msgctxt "board13_0|"
@@ -13112,7 +13113,7 @@ msgstr "אוקיאניה"
 #: activities/geography/resource/board/board14_0.qml:24
 msgctxt "board14_0|"
 msgid "Pitcairn Islands"
-msgstr "איי פיטקיירן"
+msgstr "איי פיטקרן"
 
 #: activities/geography/resource/board/board14_0.qml:31
 msgctxt "board14_0|"
@@ -13127,7 +13128,7 @@ msgstr "פפואה וגיניאה החדשה"
 #: activities/geography/resource/board/board14_0.qml:45
 msgctxt "board14_0|"
 msgid "Palau"
-msgstr "פלאוֹ"
+msgstr "פלאוּ"
 
 #: activities/geography/resource/board/board14_0.qml:52
 msgctxt "board14_0|"
@@ -13177,7 +13178,7 @@ msgstr "קיריבטי"
 #: activities/geography/resource/board/board14_0.qml:116
 msgctxt "board14_0|"
 msgid "Fiji"
-msgstr "פיג'י"
+msgstr "פיג׳י"
 
 #: activities/geography/resource/board/board14_0.qml:123
 msgctxt "board14_0|"
@@ -13307,7 +13308,7 @@ msgstr "מקסיקו"
 #: activities/geography/resource/board/board3_0.qml:52
 msgctxt "board3_0|"
 msgid "Jamaica"
-msgstr "ג'מייקה"
+msgstr "ג׳מייקה"
 
 #: activities/geography/resource/board/board3_0.qml:59
 msgctxt "board3_0|"
@@ -13412,7 +13413,7 @@ msgstr "קולומביה"
 #: activities/geography/resource/board/board4_0.qml:94
 msgctxt "board4_0|"
 msgid "Chile"
-msgstr "צ'ילה"
+msgstr "צ׳ילה"
 
 #: activities/geography/resource/board/board4_0.qml:101
 msgctxt "board4_0|"
@@ -13612,7 +13613,7 @@ msgstr "אסטוניה"
 #: activities/geography/resource/board/board6_0.qml:147
 msgctxt "board6_0|"
 msgid "Czechia"
-msgstr "צ'כיה"
+msgstr "צ׳כיה"
 
 #: activities/geography/resource/board/board6_0.qml:154
 msgctxt "board6_0|"
@@ -13697,7 +13698,7 @@ msgstr "רואנדה"
 #: activities/geography/resource/board/board7_0.qml:94
 msgctxt "board7_0|"
 msgid "Niger"
-msgstr "ניז'ר"
+msgstr "ניז׳ר"
 
 #: activities/geography/resource/board/board7_0.qml:101
 msgctxt "board7_0|"
@@ -13787,12 +13788,12 @@ msgstr "מצרים"
 #: activities/geography/resource/board/board7_0.qml:220
 msgctxt "board7_0|"
 msgid "Djibouti"
-msgstr "ג'יבוטי"
+msgstr "ג׳יבוטי"
 
 #: activities/geography/resource/board/board7_0.qml:227
 msgctxt "board7_0|"
 msgid "Chad"
-msgstr "צ'אד"
+msgstr "צ׳אד"
 
 #: activities/geography/resource/board/board7_0.qml:234
 msgctxt "board7_0|"
@@ -13817,7 +13818,7 @@ msgstr "בנין"
 #: activities/geography/resource/board/board7_0.qml:262
 msgctxt "board7_0|"
 msgid "Algeria"
-msgstr "אלג'יריה"
+msgstr "אלג׳יריה"
 
 #: activities/geography/resource/board/board8_0.qml:15
 msgctxt "board8_0|"
@@ -13827,7 +13828,7 @@ msgstr "דרום אפריקה"
 #: activities/geography/resource/board/board8_0.qml:24
 msgctxt "board8_0|"
 msgid "Zimbabwe"
-msgstr "זימבבווה"
+msgstr "זימבבואה"
 
 #: activities/geography/resource/board/board8_0.qml:31
 msgctxt "board8_0|"
@@ -13948,7 +13949,7 @@ msgstr "גאורגיה"
 #: activities/geography/resource/board/board9_0.qml:46
 msgctxt "board9_0|"
 msgid "Azerbaijan"
-msgstr "אזרבייג'ן"
+msgstr "אזרבייג׳ן"
 
 #: activities/geography/resource/board/board9_0.qml:53
 msgctxt "board9_0|"
@@ -13983,7 +13984,7 @@ msgstr "ישראל"
 #: activities/geography/resource/board/board9_0.qml:95
 msgctxt "board9_0|"
 msgid "Palestine"
-msgstr "פלסטין-השטחים"
+msgstr "הרשות הפלסטינית"
 
 #: activities/geography/resource/board/board9_0.qml:103
 msgctxt "board9_0|"
@@ -17539,7 +17540,7 @@ msgstr ""
 "מוקדמים יותר או כדי לבטל אותו בשלבים מתקדמים, ללחוץ על סמל \"יחף/נעלי-ספורט"
 "\" בפינה השמאלית העליונה של המסך להחליף \"מצב-רוץ-מהר\".\t"
 
-#: activities/maze/Maze.qml:340
+#: activities/maze/Maze.qml:346
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -17673,7 +17674,7 @@ msgstr ""
 "להקשיב לרצף הצלילים המנוגן ולחזור עליו באמצעות לחיצה על קלידי הקסילופון. "
 "אפשר להקשיב שוב לרצף הצלילים על ידי לחיצה על כפתור החזרה."
 
-#: activities/melody/Melody.qml:334
+#: activities/melody/Melody.qml:338
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -17682,12 +17683,12 @@ msgstr ""
 "פעילות זו דורשת צלילים, היא תנגן צלילים אפילו אם הגדרות הקול או האפקטים "
 "מבוטלות בהגדרות המרכזיות."
 
-#: activities/melody/Melody.qml:335
+#: activities/melody/Melody.qml:339
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "לצאת"
 
-#: activities/melody/Melody.qml:336
+#: activities/melody/Melody.qml:340
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "להמשיך"

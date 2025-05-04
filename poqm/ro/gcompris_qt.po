@@ -18030,7 +18030,7 @@ msgstr ""
 "pictograma de „picioare goale / pantofi sport” din colțul din stânga sus al "
 "ecranului, pentru a comuta între cele două regimuri.\t"
 
-#: activities/maze/Maze.qml:340
+#: activities/maze/Maze.qml:346
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -18175,7 +18175,7 @@ msgstr ""
 "Ascultă secvența de sunete cântată și repet-o, făcând clic pe barele "
 "xilofonului. Poți asculta din nou făcând clic pe butonul de repetare."
 
-#: activities/melody/Melody.qml:334
+#: activities/melody/Melody.qml:338
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -18184,12 +18184,12 @@ msgstr ""
 "Această activitate necesită sunet, astfel încât va reda câteva sunete, chiar "
 "dacă vocile audio sau efectele sunt dezactivate în configurația principală."
 
-#: activities/melody/Melody.qml:335
+#: activities/melody/Melody.qml:339
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "Ieși"
 
-#: activities/melody/Melody.qml:336
+#: activities/melody/Melody.qml:340
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "Continuă"

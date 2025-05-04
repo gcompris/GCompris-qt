@@ -17645,7 +17645,7 @@ msgstr ""
 "വേണമെങ്കിലോ ഉയർന്ന ഘട്ടങ്ങളിൽ ഇല്ലാതാക്കണമെങ്കിലോ, സ്ക്രീനിന്റെ മുകളിൽ ഇടതു മൂലയിലുള്ള "
 "\"കാലുകൾ / സ്പോർട്ഷൂ\" ഐക്കണിൽ ക്ലിക്ക് ചെയ്താൽ മതി.\t"
 
-#: activities/maze/Maze.qml:340
+#: activities/maze/Maze.qml:346
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -17784,7 +17784,7 @@ msgstr ""
 "പ്ലേ ചെയ്യുന്ന ശബ്ദ ശ്രേണി ശ്രദ്ധിച്ചു കേൾക്കൂ, എന്നിട്ട് സൈലോഫോണിന്റെ ബാറുകളിൽ ക്ലിക്ക് ചെയ്ത് അത് "
 "ആവർത്തിക്കൂ. വീണ്ടും കേൾക്കാൻ വായുടെ ചിഹ്നമുള്ള ബട്ടണിൽ ക്ലിക്ക് ചെയ്താൽ മതി."
 
-#: activities/melody/Melody.qml:334
+#: activities/melody/Melody.qml:338
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -17793,12 +17793,12 @@ msgstr ""
 "ഈ പ്രവർത്തനത്തിന് ശബ്ദം ആവശ്യമുണ്ട്, അതുകൊണ്ട് പ്രധാന കോൺഫിഗറേഷനിൽ ഓഡിയൊ ശബ്ദങ്ങളോ എഫക്റ്റുകളോ "
 "അസാധുവാക്കിയെന്നിരുന്നാലും ഇവിടെ ചില ശബ്ദങ്ങൾ പ്ലേ ചെയ്യും."
 
-#: activities/melody/Melody.qml:335
+#: activities/melody/Melody.qml:339
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "നിർത്തുക"
 
-#: activities/melody/Melody.qml:336
+#: activities/melody/Melody.qml:340
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "തുടരുക"

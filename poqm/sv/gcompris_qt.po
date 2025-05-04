@@ -17923,7 +17923,7 @@ msgstr ""
 "ikonen med \"barfota eller sportsko\" i skärmens övre vänstra hörn för att "
 "sätta på eller stänga av snabbmetoden.\t"
 
-#: activities/maze/Maze.qml:340
+#: activities/maze/Maze.qml:346
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -18064,7 +18064,7 @@ msgstr ""
 "xylofonens plattor. Du kan lyssna på ljudföljden igen genom att klicka på "
 "upprepningsknappen."
 
-#: activities/melody/Melody.qml:334
+#: activities/melody/Melody.qml:338
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -18073,12 +18073,12 @@ msgstr ""
 "Aktiviteten kräver ljud, så den spelar upp en del ljud även om röster eller "
 "effekter är inaktiverade i huvudinställningen."
 
-#: activities/melody/Melody.qml:335
+#: activities/melody/Melody.qml:339
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "Avsluta"
 
-#: activities/melody/Melody.qml:336
+#: activities/melody/Melody.qml:340
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "Fortsätt"

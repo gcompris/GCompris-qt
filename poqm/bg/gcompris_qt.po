@@ -17866,7 +17866,7 @@ msgstr ""
 "деактивиращ на по-високите нива, щракни върху иконата \"бос/спортни обувки\" "
 "в горния ляв ъгъл на екрана, за да превключиш режима.\t"
 
-#: activities/maze/Maze.qml:340
+#: activities/maze/Maze.qml:346
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -18009,7 +18009,7 @@ msgstr ""
 "върху пръчките на ксилофона. Можеш да прослушаш отново звуковата "
 "последователност, като щракнеш върху бутона за повторение."
 
-#: activities/melody/Melody.qml:334
+#: activities/melody/Melody.qml:338
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -18018,12 +18018,12 @@ msgstr ""
 "Това занимание изисква звук, така че програмата ще възпроизведе някои звуци, "
 "дори ако аудио гласовете или ефектите са изключени в основните настройки."
 
-#: activities/melody/Melody.qml:335
+#: activities/melody/Melody.qml:339
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "Изход"
 
-#: activities/melody/Melody.qml:336
+#: activities/melody/Melody.qml:340
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "Продължи"

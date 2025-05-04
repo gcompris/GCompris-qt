@@ -17769,7 +17769,7 @@ msgstr ""
 "spied uz basu kāju / sporta kurpju“ ikonas augšējā kreisajā ekrāna stūrī, "
 "lai ieslēgtu / izslēgtu skriešanas režīmu.\t"
 
-#: activities/maze/Maze.qml:340
+#: activities/maze/Maze.qml:346
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -17911,7 +17911,7 @@ msgstr ""
 "Noklausies skaņu secību un to atkārto, klikšķinot uz ksilofona plāksnītēm. "
 "Melodiju vari noklausīties vēlreiz, klikšķinot uz atkārtošanas pogas."
 
-#: activities/melody/Melody.qml:334
+#: activities/melody/Melody.qml:338
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -17920,12 +17920,12 @@ msgstr ""
 "Šai aktivitātei ir vajadzīga skaņa, tāpēc tajā programma atskaņos skaņu pat "
 "tad, ja pamata konfigurācijā balsis un efekti ir izslēgti."
 
-#: activities/melody/Melody.qml:335
+#: activities/melody/Melody.qml:339
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "Iziet"
 
-#: activities/melody/Melody.qml:336
+#: activities/melody/Melody.qml:340
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "Turpināt"

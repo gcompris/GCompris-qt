@@ -19579,7 +19579,7 @@ msgstr ""
 "टॉगल करने के लिए स्क्रीन के ऊपरी बाएं कोने में \"नंगे पैर / स्पोर्ट्शू\" पर क्लिक करें।\n"
 "\t"
 
-#: activities/maze/Maze.qml:340
+#: activities/maze/Maze.qml:346
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -19758,14 +19758,14 @@ msgstr ""
 "ध्वनि अनुक्रम को सुनें, और जीलोफ़ोन की सलाखों पर क्लिक करके इसे दोहराएं। दोबारा बटन पर "
 "क्लिक करके आप फिर से सुन सकते हैं।"
 
-#: activities/melody/Melody.qml:334
+#: activities/melody/Melody.qml:338
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
 
-#: activities/melody/Melody.qml:335
+#: activities/melody/Melody.qml:339
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Quit?"
@@ -19773,7 +19773,7 @@ msgctxt "Melody|"
 msgid "Quit"
 msgstr "बाहर जाएँ?"
 
-#: activities/melody/Melody.qml:336
+#: activities/melody/Melody.qml:340
 #, fuzzy
 #| msgctxt "board1_0|"
 #| msgid "Continents"
