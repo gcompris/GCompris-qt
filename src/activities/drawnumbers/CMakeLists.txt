@@ -10,4 +10,6 @@ GCOMPRIS_ADD_RESOURCE(activities/drawnumbers
   RESOURCES
   *.svg
   resource/*.svg
+  DEPENDENCIES
+  number_sequence
 )

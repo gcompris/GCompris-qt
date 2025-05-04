@@ -8,6 +8,8 @@
 *
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import core 1.0
 import "../../core"
@@ -20,7 +22,7 @@ ActivityBase {
     property string mode: "number_sequence"
     property var dataset: Dataset.get()
     property real pointImageOpacity: 1.0
-    property string url: "qrc:/gcompris/src/activities/number_sequence/resource/"
+
     onStart: focus = true
     onStop: {}
 
@@ -57,7 +59,7 @@ ActivityBase {
             property bool highlightEnabled: true // make the point to click bigger. Always true in drawletters, drawnumbers and clickanddraw
         }
 
-        onStart: { Activity.start(items, mode, dataset, url) }
+        onStart: { Activity.start(items, activity.mode, activity.dataset, activity.resourceUrl) }
         onStop: { Activity.stop() }
 
         GCSoundEffect {
@@ -96,6 +98,7 @@ ActivityBase {
                     opacity: 0
                     color: "#373737"
                     transformOrigin: Item.Left
+                    required property var modelData
                     x: modelData[0] * imageBack.width / 520
                     y: modelData[1] * imageBack.height / 520
                     property double x2: modelData[2] * imageBack.width / 520
@@ -107,59 +110,64 @@ ActivityBase {
                 }
             }
 
+            component PointImage : Image {
+                id: pointImage
+
+                required property int index
+                required property var modelData
+
+                source: activity.resourceUrl + (highlight ?
+                (activity.pointImageOpacity ? "bluepoint.svg" : "bluepointHighlight.svg") :
+                markedAsPointInternal ? "blackpoint.svg" : "greenpoint.svg")
+
+                sourceSize.height: (items.highlightEnabled && items.pointIndexToClick == index) ?
+                imageBack2.width * 0.08 : imageBack2.width * 0.04 //to change the size of dots
+
+                x: modelData[0] * imageBack.width / 520 - sourceSize.height/2
+                y: modelData[1] * imageBack.height / 520 - sourceSize.height/2
+                z: items.pointIndexToClick == index ? 1000 : index
+
+                // only hide last point for clickanddraw and number_sequence
+                // as the last point is also the first point
+                visible: (activity.mode == "clickanddraw" || activity.mode == "number_sequence") &&
+                index == pointImageRepeater.count - 1 &&
+                items.pointIndexToClick == 0 ? false : true
+
+                function drawSegment() {
+                    Activity.drawSegment(index)
+                }
+                property bool highlight: false
+                // draw a point instead of hiding the clicked node if it is
+                // the first point of the current line to draw
+                // (helpful to know where the line starts)
+                property bool markedAsPointInternal: markedAsPoint && items.pointIndexToClick == index+1
+                property bool markedAsPoint: false
+
+                scale: markedAsPointInternal ? 0.2 : 1
+                opacity: index >= items.pointIndexToClick || markedAsPointInternal ? 1 : 0
+
+                property real xAreaStart: x
+                property real xAreaEnd: x + width
+                property real yAreaStart: y
+                property real yAreaEnd: y + height
+
+                GCText {
+                    id: pointNumberText
+                    opacity: activity.pointImageOpacity
+                    text: pointImage.index + 1
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.verticalCenter: parent.verticalCenter
+                    fontSize: 11
+                    font.weight: Font.DemiBold
+                    style: Text.Outline
+                    styleColor: GCStyle.darkerBorder
+                    color: GCStyle.whiteText
+                }
+            }
+
             Repeater {
                 id: pointImageRepeater
-
-                Image {
-                    id: pointImage
-                    source: Activity.url + (highlight ?
-                    (pointImageOpacity ? "bluepoint.svg" : "bluepointHighlight.svg") :
-                    markedAsPointInternal ? "blackpoint.svg" : "greenpoint.svg")
-
-                    sourceSize.height: (items.highlightEnabled && items.pointIndexToClick == index) ?
-                    imageBack2.width * 0.08 : imageBack2.width * 0.04 //to change the size of dots
-
-                    x: modelData[0] * imageBack.width / 520 - sourceSize.height/2
-                    y: modelData[1] * imageBack.height / 520 - sourceSize.height/2
-                    z: items.pointIndexToClick == index ? 1000 : index
-
-                    // only hide last point for clickanddraw and number_sequence
-                    // as the last point is also the first point
-                    visible: (mode=="clickanddraw" || mode=="number_sequence") &&
-                    index == pointImageRepeater.count - 1 &&
-                    items.pointIndexToClick == 0 ? false : true
-
-                    function drawSegment() {
-                        Activity.drawSegment(index)
-                    }
-                    property bool highlight: false
-                    // draw a point instead of hiding the clicked node if it is
-                    // the first point of the current line to draw
-                    // (helpful to know where the line starts)
-                    property bool markedAsPointInternal: markedAsPoint && items.pointIndexToClick == index+1
-                    property bool markedAsPoint: false
-
-                    scale: markedAsPointInternal ? 0.2 : 1
-                    opacity: index >= items.pointIndexToClick || markedAsPointInternal ? 1 : 0
-
-                    property real xAreaStart: x
-                    property real xAreaEnd: x + width
-                    property real yAreaStart: y
-                    property real yAreaEnd: y + height
-
-                    GCText {
-                        id: pointNumberText
-                        opacity: pointImageOpacity
-                        text: index + 1
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        anchors.verticalCenter: parent.verticalCenter
-                        fontSize: 11
-                        font.weight: Font.DemiBold
-                        style: Text.Outline
-                        styleColor: GCStyle.darkerBorder
-                        color: GCStyle.whiteText
-                    }
-                }
+                delegate: PointImage {}
             }
 
             MultiPointTouchArea {
@@ -172,12 +180,12 @@ ActivityBase {
                     for(var i in touchPoints) {
                         var touch = touchPoints[i]
                         for(var p = 0; p < pointImageRepeater.count; p++) {
-                            var part = pointImageRepeater.itemAt(p)
+                            var part = pointImageRepeater.itemAt(p) as PointImage
                             // Could not make it work with the item.contains() api
                             if(touch.x > part.xAreaStart && touch.x < part.xAreaEnd &&
                                 touch.y > part.yAreaStart && touch.y < part.yAreaEnd) {
                                 part.drawSegment()
-                                }
+                            }
                         }
                     }
                 }
@@ -193,14 +201,14 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         DialogChooseLevel {
             id: dialogActivityConfig
             currentActivity: activity.activityInfo
 
-            onClose: home()
+            onClose: activity.home()
 
             onLoadData: {
                 if(activityData && activityData["mode"]) {
@@ -222,13 +230,13 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onActivityConfigClicked: {
-                displayDialog(dialogActivityConfig)
+                activity.displayDialog(dialogActivityConfig)
             }
         }
 

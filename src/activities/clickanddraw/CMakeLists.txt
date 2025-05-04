@@ -9,4 +9,6 @@ GCOMPRIS_ADD_RESOURCE(activities/clickanddraw
   *.js
   RESOURCES
   *.svg
+  DEPENDENCIES
+  number_sequence
 )

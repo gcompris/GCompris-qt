@@ -14,7 +14,6 @@ NumberSequence {
     mode: "drawletters"
     dataset: Dataset.get()
     pointImageOpacity: 0
-    url: "qrc:/gcompris/src/activities/drawletters/resource/"
 }
 
 
