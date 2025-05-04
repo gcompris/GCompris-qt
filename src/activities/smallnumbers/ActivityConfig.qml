@@ -33,7 +33,7 @@ Item {
         GCSlider {
             id: speedSlider
             width: 250 * ApplicationInfo.ratio
-            value: speedSetting
+            value: activityConfiguration.speedSetting
             to: 10
             from: 1
             wheelEnabled: false

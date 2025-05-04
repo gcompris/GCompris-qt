@@ -32,7 +32,7 @@ Item {
         width: activityConfiguration.width
         GCComboBox {
             id: modeBox
-            model: availableModes
+            model: activityConfiguration.availableModes
             boxBackground: activityConfiguration.configBackground
             label: qsTr("Select Domino Representation")
         }
@@ -46,7 +46,7 @@ Item {
         GCSlider {
             id: speedSlider
             width: 250 * ApplicationInfo.ratio
-            value: speedSetting
+            value: activityConfiguration.speedSetting
             to: 10
             from: 1
             wheelEnabled: false

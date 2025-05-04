@@ -10,4 +10,6 @@ GCOMPRIS_ADD_RESOURCE(activities/wordsgame
   *.svg
   resource/*.svg
   resource/*.json
+  DEPENDENCIES
+  gletters
 )

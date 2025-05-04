@@ -8,6 +8,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
 
 import QtQuick 2.12
 import core 1.0
@@ -35,12 +36,12 @@ ActivityBase {
     property string mode: "letter"
 
     // Override if you want to replace texts by your image
-    function getImage(key) {
+    function getImage(key: string) : string {
         return ""
     }
 
     // Override if you want to replace texts by the domino
-    function getDominoValues(key) {
+    function getDominoValues(key: int): list<int> {
         return []
     }
 
@@ -105,7 +106,7 @@ ActivityBase {
                 activityBackground.locale = overridenLocale
             }
 
-            Activity.start(items, uppercaseOnly, mode, speedSetting);
+            Activity.start(items, activity.uppercaseOnly, activity.mode, activity.speedSetting);
             Activity.focusTextInput()
         }
         onStop: { Activity.stop() }
@@ -159,10 +160,10 @@ ActivityBase {
             id: dialogActivityConfig
             currentActivity: activity.activityInfo
             onClose: {
-                home()
+                activity.home()
             }
             onSaveData: {
-                levelFolder = dialogActivityConfig.chosenLevels
+                activity.levelFolder = dialogActivityConfig.chosenLevels
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
             }
@@ -192,7 +193,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
@@ -201,13 +202,13 @@ ActivityBase {
             anchors.bottom: keyboard.top
             content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onActivityConfigClicked: {
-                displayDialog(dialogActivityConfig)
+                activity.displayDialog(dialogActivityConfig)
             }
         }
 
@@ -226,7 +227,7 @@ ActivityBase {
         }
 
         Connections {
-            target: audioVoices
+            target: activity.audioVoices
             function onDone() {
                 // If we have won, we wait until the last voice has played to play the bonus
                 if(items.inputLocked && !bonus.isPlaying) {
