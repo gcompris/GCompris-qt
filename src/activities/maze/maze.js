@@ -41,6 +41,9 @@ function initLevel() {
 
     items.win = false
 
+    // Reset number of cells to 0 to avoid "Grid contains more visible items than rows*columns" warning
+    items.mazeRepeater = 0
+
     /* Set main variables */
     if (items.currentLevel + 1 == 1) {
         mazeColumns = 4
