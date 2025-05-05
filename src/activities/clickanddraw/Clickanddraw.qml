@@ -13,7 +13,7 @@ import "clickanddraw_dataset.js" as Dataset
 
 NumberSequence {
     mode: "clickanddraw"
-    pointImageOpacity: 0
+    pointTextVisible: false
     dataset: Dataset.get()
     resourceUrl: "qrc:/gcompris/src/activities/number_sequence/resource/"
 }

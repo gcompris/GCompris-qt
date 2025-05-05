@@ -13,7 +13,7 @@ import "drawletters_dataset.js" as Dataset
 NumberSequence {
     mode: "drawletters"
     dataset: Dataset.get()
-    pointImageOpacity: 0
+    pointTextVisible: false
 }
 
 
