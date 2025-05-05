@@ -602,7 +602,7 @@ ActivityBase {
             visible: (bar.level > 1) ? true : false
             width: activityBackground.width / 18
             height: isGateOpen ? activityBackground.height * (5 / 36) : activityBackground.height * (5 / 12) + GCStyle.thinnestBorder * 2
-            y: -GCStle.thinnestBorder
+            y: -GCStyle.thinnestBorder
             z: 2
             color: "#9E948A"
             border.color: "#766C62"
@@ -695,7 +695,7 @@ ActivityBase {
             }
 
             x: activityBackground.width * 0.5
-            y: controlBackground.y - height * 1.5
+            y: activityBackground.height * 0.5
             z: 1
 
             Body {
