@@ -155,9 +155,11 @@ ActivityBase {
                     id: pointNumberText
                     visible: activity.pointTextVisible
                     text: pointImage.index + 1
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.verticalCenter: parent.verticalCenter
-                    fontSize: 11
+                    anchors.fill: parent
+                    fontSize: regularSize
+                    fontSizeMode: Text.Fit
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
                     font.weight: Font.DemiBold
                     style: Text.Outline
                     styleColor: GCStyle.darkerBorder
