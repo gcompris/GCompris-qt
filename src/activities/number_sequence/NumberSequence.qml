@@ -21,7 +21,7 @@ ActivityBase {
     id: activity
     property string mode: "number_sequence"
     property var dataset: Dataset.get()
-    property real pointImageOpacity: 1.0
+    property bool pointTextVisible: true
 
     onStart: focus = true
     onStop: {}
@@ -117,7 +117,7 @@ ActivityBase {
                 required property var modelData
 
                 source: activity.resourceUrl + (highlight ?
-                (activity.pointImageOpacity ? "bluepoint.svg" : "bluepointHighlight.svg") :
+                (activity.pointTextVisible ? "bluepoint.svg" : "bluepointHighlight.svg") :
                 markedAsPointInternal ? "blackpoint.svg" : "greenpoint.svg")
 
                 sourceSize.height: (items.highlightEnabled && items.pointIndexToClick == index) ?
@@ -153,7 +153,7 @@ ActivityBase {
 
                 GCText {
                     id: pointNumberText
-                    opacity: activity.pointImageOpacity
+                    visible: activity.pointTextVisible
                     text: pointImage.index + 1
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
