@@ -8580,12 +8580,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Le palais de Mysore"
+msgstr "Le palais du Potala"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8605,7 +8602,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "Armée de terre cuite"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8640,12 +8637,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "La tour Eiffel"
+msgstr "Les diaolou"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -20673,9 +20667,9 @@ msgid ""
 "You can click and drag from one point to the next ones, or click on each "
 "point one after the other."
 msgstr ""
-"Dessine l'image en cliquant sur chaque point dans l'ordre. Chaque fois que "
-"tu cliques sur un point bleu, le point bleu suivant apparaît. Tu peux aussi "
-"rester le clic appuyé et bouger sur les points au fur et à mesure."
+"Dessine l'image en cliquant sur chaque point dans l'ordre. Tu peux cliquer "
+"sur un point et rester avec le clic appuyé et bouger sur les points au fur "
+"et à mesure ou cliquer sur les points un par un."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
