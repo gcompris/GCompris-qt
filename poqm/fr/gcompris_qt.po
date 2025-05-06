@@ -20291,9 +20291,9 @@ msgid ""
 "You can click and drag from one point to the next ones, or click on each "
 "point one after the other."
 msgstr ""
-"Dessine l'image en cliquant sur chaque point dans l'ordre. Chaque fois que "
-"tu cliques sur un point bleu, le point bleu suivant apparaît. Tu peux aussi "
-"rester le clic appuyé et bouger sur les points au fur et à mesure."
+"Dessine l'image en cliquant sur chaque point dans l'ordre. Tu peux cliquer "
+"sur un point et rester avec le clic appuyé et bouger sur les points au fur "
+"et à mesure ou cliquer sur les points un par un."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
