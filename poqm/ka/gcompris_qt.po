@@ -2033,6 +2033,8 @@ msgid ""
 "Connect the provided red LED to the battery in forward bias. Don't worry "
 "about the broken LED for now."
 msgstr ""
+"მიაერთეთ მოცემული წითელი LED ელემენტს პირდაპირი წანაცვლებით. ამ დროისთვის ნუ "
+"ინერვიულებთ LED-ის გადაწვის შესახებ."
 
 #: activities/analog_electricity/TutorialDataset.qml:267
 msgctxt "TutorialDataset|"
@@ -2045,6 +2047,8 @@ msgid ""
 "One can limit the electrical energy by restricting the current flow in a "
 "circuit. That means using a resistor."
 msgstr ""
+"შეგიძლიათ, შეზღუდოთ ელექტროენერგია წრედში მიმდინარე დინების შეზღუდვით. ეს "
+"რეზისტორის გამოყენებას ნიშნავს."
 
 #: activities/analog_electricity/TutorialDataset.qml:269
 msgctxt "TutorialDataset|"
@@ -2780,6 +2784,7 @@ msgid ""
 "This activity helps you to learn the concept of conversion from decimal "
 "number system to binary number system."
 msgstr ""
+"ეს აქტივობა დაგეხმარებათ, ისწავლოთ ათობითი სისტემიდან ორობითში გადაყვანა."
 
 #. Help goal
 #: activities/binary_bulb/ActivityInfo.qml:20
@@ -3184,6 +3189,8 @@ msgid ""
 "In some levels, you need to find the day of the week for a given date. In "
 "this case, click on the corresponding day of the week in the list."
 msgstr ""
+"ზოგიერთ დონეზე გჭირდებათ, იპოვოთ კვირის დღე მოცემული თარიღისთვის. ამ "
+"შემთხვევაში სიაში კვირის შესაბამის დღეზე დააწკაპუნეთ."
 
 #: activities/calendar/ActivityInfo.qml:26
 #: activities/find_the_day/ActivityInfo.qml:26
@@ -3502,6 +3509,9 @@ msgid ""
 "You are in charge of the canal lock. Open the gates and the locks in the "
 "right order, so that Tux can travel through the gates in both directions."
 msgstr ""
+"თქვენ პასუხისმგებელი ბრძანდებით არხის ჩაკეტვაზე. გახსენით კარიბჭეები და "
+"საკეტები სწორი მიმდევრობით ისე, რომ ტუქსმა კარიბჭეებში მოძრაობა ორივე "
+"მხრიდან შეძლოს."
 
 #: activities/canal_lock/CanalLock.qml:74
 msgctxt "CanalLock|"
