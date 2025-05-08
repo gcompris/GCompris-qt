@@ -25257,7 +25257,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to solve vertical subtractions, with the borrowing by regrouping "
 "method."
-msgstr ""
+msgstr "ისწავლეთ ვერტიკალური გამოკლების ამოხსნა სესხებით გადაჯგუფების მეთოდით."
 
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:22
@@ -25399,7 +25399,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to solve vertical subtractions, with the borrowing by compensation "
 "method."
-msgstr ""
+msgstr "ისწავლეთ ვერტიკალური გამოკლებების ამოხსნა სესხების მეთოდით."
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
@@ -25441,6 +25441,8 @@ msgid ""
 "Tux has come back from fishing on his boat. Bring the water system back up "
 "so he can take a shower."
 msgstr ""
+"ტუქსი დაბრუნდა მის ნავზე თევზაობისთვის. დააბრუნეთ წყლის სისტემა, რომ მან "
+"შხაპის მიღება შეძლოს."
 
 #. Help goal
 #: activities/watercycle/ActivityInfo.qml:20
@@ -25464,6 +25466,7 @@ msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
 "the water cycle."
 msgstr ""
+"მზე წყლის ციკლის მთავარი ნაწილია. დააწკაპუნეთ მზეზე წყლის ციკლის დასაწყებად."
 
 #: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
@@ -25602,6 +25605,8 @@ msgid ""
 "Automatic application of new language when changing it in the menu (no need "
 "to restart GCompris)"
 msgstr ""
+"ახალი მენიუს ავტომატური გამოყენება მისი მენიუდან შეცვლისას (GCompris-ს "
+"რესტარტი არ დასჭირდება)"
 
 #: core/ChangeLog.qml:47
 msgctxt "ChangeLog|"
@@ -25612,6 +25617,8 @@ msgstr "გაშვების სურათის ჩვენება"
 msgctxt "ChangeLog|"
 msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgstr ""
+"ახალი ბრძანების სტრიქონის პარამეტრი რენდერერის გადასართველად (--renderer "
+"renderer)"
 
 #: core/ChangeLog.qml:57
 msgctxt "ChangeLog|"
@@ -25621,7 +25628,7 @@ msgstr "დაემატა თარგმანი ლატვიური�
 #: core/ChangeLog.qml:68
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
-msgstr ""
+msgstr "დაემატა თარგმანები ბულგარულად, გალიციურად და სვაჰილისთვის"
 
 #: core/ChangeLog.qml:72
 msgctxt "ChangeLog|"
@@ -25689,18 +25696,20 @@ msgstr ""
 #: core/ChangeLog.qml:107
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
-msgstr ""
+msgstr "გასწორდა მკვდარი ღილაკების გამოტოვება Linux-ზე აკრეფის აქტიობებისთვის"
 
 #: core/ChangeLog.qml:108
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
-msgstr ""
+msgstr "გასწორდა დონის ჩამოყრა, როცა ლოგიკური ასოცირებებში დონეს ხელით ცვლით"
 
 #: core/ChangeLog.qml:112
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
 msgstr ""
+"გასწორდა ანბანის მიმდევრობის, ლუდი და კენტი რიცხვების და რიცხვების დალაგების "
+"აქტივობები"
 
 #: core/ChangeLog.qml:116 core/ChangeLog.qml:124
 msgctxt "ChangeLog|"
@@ -25731,6 +25740,8 @@ msgstr "დაემატა თარგმანი აზერბაიჯ�
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr ""
+"ახალი რუკები და განახლება რუკებისთვის, რომლებიც გეოგრაფიული აქტივობებისთვის "
+"გამოიყენება"
 
 #: core/ChangeLog.qml:130
 msgctxt "ChangeLog|"
@@ -25803,6 +25814,8 @@ msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
 "Finnish...)."
 msgstr ""
+"განახლდა თარგმანები ბევრი ენისთვის (ბრეტონული, ბრაზილიური პორტუგალიური, "
+"ფინური...)."
 
 #: core/ChangeLog.qml:157
 msgctxt "ChangeLog|"
@@ -25837,6 +25850,8 @@ msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
 "Composition)."
 msgstr ""
+"ქმნილებების (ბავშვის სიტყვების პროცესორის, ბალანსის ყუთის და პიანინოს "
+"კომპოზიციების) შენახვა/ჩატვირთვა."
 
 #: core/ChangeLog.qml:163
 msgctxt "ChangeLog|"
@@ -25891,6 +25906,9 @@ msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
 "(92% translated), Russian (98% translated), Slovak (92% translated), Turkish."
 msgstr ""
+"დაემატა თარგმანები ენებისთვის: კატალანური (ვალენსია), ჩინური ტრადიციული, "
+"ფინური (92% ნათარგმნია), ღრუსული (98% ნათარგმნია), სლოვაკური (92% "
+"ნათარგმნია) და თურქული."
 
 #: core/ChangeLog.qml:170
 msgctxt "ChangeLog|"
@@ -25996,7 +26014,7 @@ msgstr ""
 #: core/DialogAbout.qml:72
 msgctxt "DialogAbout|"
 msgid "<b>GCompris</b> is a Free Software developed within the KDE community."
-msgstr ""
+msgstr "<b>GCompris</b> KDE-ის საზოგადოების მიერ შემუშავებული პროგრამაა."
 
 #: core/DialogAbout.qml:76
 #, qt-format
@@ -26444,6 +26462,8 @@ msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
 "is used."
 msgstr ""
+"მიუთითეთ, რომელ დონეზე დაიწყება აქტივობა. გამოიყენება მხოლოდ მაშინ, როცა "
+"იყენებთ პარამეტრს --launch."
 
 #: core/main.qml:238
 msgctxt "main|"
@@ -26451,6 +26471,8 @@ msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
 msgstr ""
+"გნებავთ ავტომატურად გადმოვწერო, ან განვაახლო შემდეგი გარე აქტივები GCompris-"
+"ის გაშვებისას?"
 
 #: core/main.qml:240
 msgctxt "main|"

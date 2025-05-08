@@ -1,16 +1,16 @@
 # Spanish translations for gcompris_voices.po package.
-# Copyright (C) 2017 This_file_is_part_of_KDE
-# This file is distributed under the same license as the PACKAGE package.
-#
+# Copyright (C) 2017-2025 This file is copyright:
+# This file is distributed under the same license as the gcompris package.
 # Automatically generated, 2017.
-# SPDX-FileCopyrightText: 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Eloy Cuadra <ecuadra@eloihr.net>
+#
+# SPDX-FileCopyrightText: 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Eloy Cuadra <ecuadra@eloihr.net>
 # SPDX-FileCopyrightText: 2018 Antoni Bella Pérez <antonibella5@yahoo.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-07 00:38+0000\n"
-"PO-Revision-Date: 2024-12-10 12:28+0100\n"
+"PO-Revision-Date: 2025-05-07 18:48+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -1391,59 +1391,3 @@ msgstr ""
 #, kde-format
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr "Escribe las palabras con el teclado antes de que lleguen al suelo."
-
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "Ponga aquí el texto del comentario para la voz de introducción"
-
-#~ msgid "play checkers against the computer"
-#~ msgstr "Juega a las damas contra el ordenador"
-
-#~ msgid ""
-#~ "Drag the arrow to select a part of the bar then drop it in the empty area "
-#~ "to represent the decimal number."
-#~ msgstr ""
-#~ "Arrastra la flecha para seleccionar una parte de la barra y suéltala en "
-#~ "el área vacía para representar el número decimal."
-
-#~ msgid ""
-#~ "Arrange the alphabets in the correct order by placing an alphabet in its "
-#~ "correct position"
-#~ msgstr ""
-#~ "Organiza los alfabetos en el orden correcto situándolos en su posición "
-#~ "correcta"
-
-#~ msgid ""
-#~ "Arrange the numbers in the correct order by placing a number in its "
-#~ "correct position"
-#~ msgstr ""
-#~ "Organiza los números en el orden correcto situando cada uno en su "
-#~ "posición correcta"
-
-#~ msgid ""
-#~ "Change the planets' gravitational force by moving the sliders up and "
-#~ "down. Be careful not to crash Tux's spaceship."
-#~ msgstr ""
-#~ "Cambia la fuerza gravitatoria de los planetas subiendo o bajando los "
-#~ "deslizadores. Ten cuidado para no estrellar la nave espacial de Tux."
-
-#~ msgid "Match the alphabet with its upper);"
-#~ msgstr "Empareja la letra con su mayúscula"
-
-#~ msgid ""
-#~ "Use the drawing tools to reproduce the right-hand side symmetrical figure."
-#~ msgstr ""
-#~ "Usa las herramientas de dibujo para reproducir la figura simétrica que "
-#~ "hay a la derecha."
-
-#~ msgid ""
-#~ "Take turns competing against Tux by clicking on a card and finding its "
-#~ "double."
-#~ msgstr ""
-#~ "Compite por turnos contra Tux haciendo clic sobre una carta y encontrando "
-#~ "su doble."
-
-#~ msgid "Play the end of the chess game against Tux"
-#~ msgstr "Juega el final de la partida de ajedrez contra Tux"
-
-#~ msgid "Slide the countries to redraw the whole map"
-#~ msgstr "Desliza los países para dibujar todo el mapa"

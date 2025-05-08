@@ -1,4 +1,6 @@
 # Spanish translations for gcompris_qt.po package.
+# Copyright (C) 2014-2025 This file is copyright:
+# This file is distributed under the same license as the gcompris package.
 #
 # SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Eloy Cuadra <ecuadra@eloihr.net>
 # SPDX-FileCopyrightText: 2015 Zohra Coudoin <zohra.coudoin@gcompris.net>
@@ -7,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"PO-Revision-Date: 2025-04-18 17:51+0100\n"
+"PO-Revision-Date: 2025-05-07 18:48+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -28657,7 +28659,3 @@ msgstr "Omitir"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Iniciar"
-
-#~ msgctxt "Frieze|"
-#~ msgid "What is the binary representation of %1?"
-#~ msgstr "¿Cuál es la representación binaria de %1?"

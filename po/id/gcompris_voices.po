@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gcompris-id\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-07 00:38+0000\n"
-"PO-Revision-Date: 2023-01-18 05:53\n"
+"PO-Revision-Date: 2025-04-30 02:01\n"
 "Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian\n"
 "Language: id\n"
@@ -21,14 +21,14 @@ msgstr ""
 "X-Crowdin-Project: gcompris-id\n"
 "X-Crowdin-Project-ID: 481873\n"
 "X-Crowdin-Language: id\n"
-"X-Crowdin-File: /gcompris-id/3.0/gcompris_voices.po\n"
-"X-Crowdin-File-ID: 63\n"
+"X-Crowdin-File: /gcompris-id/25.1/gcompris_voices.po\n"
+"X-Crowdin-File-ID: 132\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
 #: activities/adjacent_numbers/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the missing numbers."
-msgstr ""
+msgstr "Temukan angka yang hilang."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -43,8 +43,8 @@ msgid ""
 "Multiply the two numbers together and type in your answer before the balloon "
 "lands in the water"
 msgstr ""
-"Kalikan dua angka menjadi satu jawaban dan ketik jawabanmu sebelum balon "
-"mendarat di air"
+"Lipat gandakan dua angka menjadi satu jawaban dan ketik jawabanmu sebelum "
+"balon mendarat di air"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_div"
 #: activities/algebra_div/ActivityInfo.qml:18
@@ -88,16 +88,13 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "align4"
 #: activities/align4/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid ""
-#| "Click on the column where you wish your token to fall and try to align of "
-#| "4 tokens before Tux."
+#, kde-format
 msgid ""
 "Click on the column where you wish your token to fall and try to align 4 "
 "tokens before Tux."
 msgstr ""
-"Klik pada kolom di mana kamu ingin menjatuhkan bidak dan coba atur secara "
-"lurus 4 bidak sebelum Tux."
+"Klik pada kolom di mana kamu ingin menjatuhkan bidak dan coba untuk "
+"meluruskan 4 bidak sebelum Tux."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "align4_2players"
 #: activities/align4_2players/ActivityInfo.qml:18
@@ -216,17 +213,16 @@ msgstr "Buat sel Braille untuk suatu huruf."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calcudoku"
 #: activities/calcudoku/ActivityInfo.qml:17
-#, fuzzy, kde-format
-#| msgid ""
-#| "Select a number or a symbol and click its target area. Each symbol must "
-#| "appear only once in a row, in a column and in a subregion if any."
+#, kde-format
 msgid ""
 "Select a number and click on its target position. Each number must appear "
 "only once in a row and in a column. The numbers in the cells of a cage must "
 "produce the given result when combined using the given operator."
 msgstr ""
-"Pilih angka atau simbol dan klik area targetnya. Setiap simbol harus muncul "
-"hanya satu kali berturut-turut, di kolom dan di subwilayah jika ada."
+"Pilih sebuah angka dan klik pada posisi targetnya. Tiap angka harus muncul "
+"hanya sekali dalam satu baris dan satu kolom. Angka-angka di dalam kandang "
+"sel harus menghasilkan angka tertentu ketika digabungkan menggunakan "
+"operator yang diberikan."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18
@@ -502,7 +498,7 @@ msgstr ""
 #: activities/frieze/ActivityInfo.qml:17
 #, kde-format
 msgid "Reproduce and complete the frieze model."
-msgstr ""
+msgstr "Menyusun ulang dan menyelesaikan hiasan dinding."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -576,13 +572,13 @@ msgstr ""
 #: activities/graduated_line_read/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the value corresponding to the given spot on the graduated line."
-msgstr ""
+msgstr "Temukan nilai yang benar sesuai dengan titik pada garis graduasi."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
 #: activities/graduated_line_use/ActivityInfo.qml:17
 #, kde-format
 msgid "Place the given value on the graduated line."
-msgstr ""
+msgstr "Letakkan angka yang diberikan pada garis graduasi. "
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
@@ -590,7 +586,7 @@ msgstr ""
 #: activities/grammar_classes/ActivityInfo.qml:21
 #, kde-format
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr ""
+msgstr "Tetapkan kelas tata bahasa yang diminta ke kata-kata yang sesuai."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -614,6 +610,7 @@ msgstr ""
 #, kde-format
 msgid "Use the four numbers with given operators to find 24"
 msgstr ""
+"Gunakan empat angka dengan operator yang diberikan untuk mendapatkan nilai 24"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22
@@ -1216,7 +1213,7 @@ msgstr ""
 #: activities/sketch/ActivityInfo.qml:21
 #, kde-format
 msgid "Use the tools to draw images."
-msgstr ""
+msgstr "Gunakan peralatan untuk melukis gambar."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers"
 #: activities/smallnumbers/ActivityInfo.qml:18
@@ -1295,17 +1292,15 @@ msgstr "Klik pada sasaran untuk meluncurkan panah, lalu hitung skor kamu!"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_calculate"
 #: activities/tens_complement_calculate/ActivityInfo.qml:17
-#, fuzzy, kde-format
-#| msgid ""
-#| "Create pairs of numbers equal to ten. Select a number, then select "
-#| "another number of the same operation to swap their position."
+#, kde-format
 msgid ""
 "Create pairs of numbers equal to ten. Select a number, then select another "
 "number of the same operation to swap their position. Then, select the result "
 "box to type the result."
 msgstr ""
-"Buat pasangan angka yang sama dengan sepuluh. Pilih nomor, lalu pilih nomor "
-"lain dari operasi yang sama untuk menukar posisinya."
+"Buat pasangan angka yang sama dengan sepuluh. Pilih sebuah angka, lalu pilih "
+"angka lain dari operasi yang sama untuk menukar posisi mereka. Lalu, pilih "
+"kotak hasil untuk menuliskan hasilnya. "
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_find"
 #: activities/tens_complement_find/ActivityInfo.qml:17
@@ -1365,7 +1360,7 @@ msgstr ""
 #: activities/vertical_addition/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given addition."
-msgstr ""
+msgstr "Selesaikan penambahan yang diberikan. "
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction_compensation"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction"
@@ -1373,7 +1368,7 @@ msgstr ""
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given subtraction."
-msgstr ""
+msgstr "Selesaikan pengurangan yang diberikan."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "watercycle"
 #: activities/watercycle/ActivityInfo.qml:18
