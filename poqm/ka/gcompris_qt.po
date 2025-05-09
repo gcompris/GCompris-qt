@@ -6198,6 +6198,8 @@ msgid ""
 "Light the bulb using the two switches so that the bulb glows when one of the "
 "switch is on and the other is off."
 msgstr ""
+"აანთეთ ნათურა ორი გადამრთველით ისე, რომ ნათურა ენთოს მაშინ, თუ ერთ-ერთი "
+"გადამართველი ჩართულია, მეორე კი - გამორთული."
 
 #: activities/digital_electricity/TutorialDataset.qml:342
 msgctxt "TutorialDataset|"
