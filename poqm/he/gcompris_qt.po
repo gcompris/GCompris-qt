@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-05-03 14:18+0300\n"
+"PO-Revision-Date: 2025-05-09 08:00+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -22045,7 +22045,7 @@ msgstr "לבנות מחדש את דגם הרכבת בחלקו העליון של 
 #: activities/railroad/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Memory training."
-msgstr "אימוני זכרון."
+msgstr "אימוני זיכרון."
 
 #. Help manual
 #: activities/railroad/ActivityInfo.qml:25
