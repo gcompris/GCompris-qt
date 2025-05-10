@@ -8,6 +8,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
 import QtQuick 2.12
 import core 1.0
 
@@ -53,13 +54,13 @@ ActivityBase {
             property alias player2score: player2score
 
             property int mode: 1
-            property int gridSize: (horizontalLayout ? activityBackground.width : (activityBackground.height - bar.height * 1.2)) / Activity.levelsProperties[items.mode - 1].boardSize
+            property int gridSize: (activityBackground.horizontalLayout ? activityBackground.width : (activityBackground.height - bar.height * 1.2)) / Activity.levelsProperties[items.mode - 1].boardSize
             property bool isPlayer1Beginning: true
             property bool isPlayer1Turn: true
         }
 
         onStart: {
-            Activity.start(items, gameMode);
+            Activity.start(items, activity.gameMode);
             Activity.calculateWinPlaces();
         }
         onStop: { Activity.stop() }
@@ -75,7 +76,7 @@ ActivityBase {
         // Tux image
         Image {
             id: tux
-            visible: gameMode == 1
+            visible: activity.gameMode == 1
             source: "qrc:/gcompris/src/activities/ballcatch/resource/tux.svg"
             height: activityBackground.height * 0.2
             width: tux.height
@@ -88,7 +89,7 @@ ActivityBase {
             MouseArea {
                 id: tuxArea
                 hoverEnabled: enabled
-                enabled: gameMode == 1 && !answerBallsPlacement.children[0].visible
+                enabled: activity.gameMode == 1 && !answerBallsPlacement.children[0].visible
                 anchors.fill: parent
                 onClicked: {
                     items.isPlayer1Turn = false;
@@ -113,12 +114,12 @@ ActivityBase {
             states: [
                 State {
                     name: "horizontalBar"
-                    when: horizontalLayout
+                    when: activityBackground.horizontalLayout
                     PropertyChanges { boxModel { x: 0; y: activityBackground.height - bar.height * 2} }
                 },
                 State {
                     name: "verticalBar"
-                    when: !horizontalLayout
+                    when: !activityBackground.horizontalLayout
                     PropertyChanges { boxModel { x: activityBackground.width * 0.5; y: 0} }
                 }
             ]
@@ -126,7 +127,7 @@ ActivityBase {
             transform: Rotation {
                 origin.x: 0;
                 origin.y: 0;
-                angle: horizontalLayout ? 0 : 90
+                angle: activityBackground.horizontalLayout ? 0 : 90
             }
 
             // The empty boxes grid
@@ -139,6 +140,7 @@ ActivityBase {
                     model: boxes.columns
                     Image {
                         id: greenCase
+                        required property int index
                         source: Activity.url + ((index == boxes.columns - 1) ? "case_last.svg" : "case.svg")
                         sourceSize.width: items.gridSize
                         width: sourceSize.width
@@ -157,6 +159,7 @@ ActivityBase {
                 Repeater {
                     model: answerBallsPlacement.columns
                     Image {
+                        required property int index
                         source: Activity.url + "ball_1.svg"
                         sourceSize.width: items.gridSize
                         width: sourceSize.width
@@ -169,7 +172,6 @@ ActivityBase {
             // Masks
             Grid {
                 id: masks
-                anchors.centerIn: boxModel.Center
                 rows: 1
                 columns: Activity.levelsProperties[items.mode - 1].boardSize
                 Repeater {
@@ -177,6 +179,7 @@ ActivityBase {
                     model: masks.columns
                     Image {
                         id: greenMask
+                        required property int index
                         source: Activity.url + ((index == boxes.columns - 1) ? "mask_last.svg" : "mask.svg")
                         sourceSize.width: items.gridSize
                         width: sourceSize.width
@@ -184,7 +187,7 @@ ActivityBase {
                         // Numbering label
                         Rectangle {
                             id: bgNbTxt
-                            visible: ((index + 1) % 5 == 0 && index > 0) ? true : false
+                            visible: ((greenMask.index + 1) % 5 == 0 && greenMask.index > 0) ? true : false
                             color: "#42FFFFFF"
                             height: numberText.height * 1.2
                             width: height
@@ -192,22 +195,22 @@ ActivityBase {
                             anchors {
                                 horizontalCenter: parent.horizontalCenter
                                 bottom: parent.top
-                                bottomMargin: (horizontalLayout ? 4 * ApplicationInfo.ratio : -16 * ApplicationInfo.ratio)
+                                bottomMargin: (activityBackground.horizontalLayout ? 4 * ApplicationInfo.ratio : -16 * ApplicationInfo.ratio)
                             }
                             GCText {
                                 id: numberText
-                                text: index + 1
+                                text: greenMask.index + 1
                                 color: "#373737"
                                 fontSize: smallSize
                                 font.bold: true
-                                visible: ((index + 1) % 5 == 0 && index > 0) ? true : false
+                                visible: ((greenMask.index + 1) % 5 == 0 && greenMask.index > 0) ? true : false
                                 anchors {
                                     horizontalCenter: bgNbTxt.horizontalCenter
                                     verticalCenter: bgNbTxt.verticalCenter
                                 }
                             }
                             transform: Rotation {
-                                angle: horizontalLayout ? 0 : -90
+                                angle: activityBackground.horizontalLayout ? 0 : -90
                             }
                         }
                     }
@@ -236,7 +239,7 @@ ActivityBase {
                 enabled: true
                 onClicked: {
                     var value = items.numberOfBalls
-                    if (gameMode == 1 || items.isPlayer1Turn) {
+                    if (activity.gameMode == 1 || items.isPlayer1Turn) {
                         Activity.play(1, value);
                     } else {
                         Activity.play(2, value);
@@ -276,7 +279,7 @@ ActivityBase {
                 id: numberPlateArea
                 anchors.fill: parent
                 hoverEnabled: enabled
-                enabled: (gameMode == 1 && items.isPlayer1Turn == false) ? false : true
+                enabled: (activity.gameMode == 1 && items.isPlayer1Turn == false) ? false : true
                 onClicked: {
                     items.numberOfBalls ++;
                     var max = Activity.levelsProperties[items.mode - 1].maxNumberOfBalls
@@ -370,14 +373,14 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         DialogChooseLevel {
             id: dialogActivityConfig
             currentActivity: activity.activityInfo
 
-            onClose: home()
+            onClose: activity.home()
 
             onLoadData: {
                 if(activityData && activityData["mode"]) {
@@ -395,13 +398,13 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | reload | activityConfig }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onActivityConfigClicked: {
-                displayDialog(dialogActivityConfig)
+                activity.displayDialog(dialogActivityConfig)
             }
             onReloadClicked: Activity.restartLevel()
         }

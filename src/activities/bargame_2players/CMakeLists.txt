@@ -8,4 +8,6 @@ GCOMPRIS_ADD_RESOURCE(activities/bargame_2players
   *.qml
   RESOURCES
   *.svg
+  DEPENDENCIES
+  bargame
 )
