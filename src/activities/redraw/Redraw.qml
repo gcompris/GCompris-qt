@@ -8,6 +8,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
 import QtQuick 2.12
 import core 1.0
 import QtQuick.Effects
@@ -56,7 +57,7 @@ ActivityBase {
             property int numberOfColor
             property int numberOfLine: targetModelData.length / numberOfColumn
             property alias targetModel: targetModel
-            property var targetModelData
+            property list<int> targetModelData
             readonly property var levels: activity.datasets.length !== 0 ? activity.datasets : null
             property bool buttonsBlocked: false
             property var selectedRect: null
@@ -118,47 +119,53 @@ ActivityBase {
                 Repeater {
                     model: items.numberOfColor
                     Item {
+                        id: colorItem
                         width: colorSelectorFlick.width
                         height: width
+                        required property int modelData
                         Image {
                             id: img
-                            source: Activity.url + Activity.colorShortcut[modelData] + ".svg"
+                            source: Activity.url + Activity.colorShortcut[colorItem.modelData] + ".svg"
                             sourceSize.width: colorSelectorFlick.width
                             z: iAmSelected ? 10 : 1
 
-                            property bool iAmSelected: modelData == items.colorSelector
+                            property bool iAmSelected: colorItem.modelData == items.colorSelector
 
                             states: [
                                 State {
                                     name: "notclicked"
                                     when: !img.iAmSelected && !mouseArea.containsMouse
                                     PropertyChanges {
-                                        target: img
-                                        scale: 0.8
+                                        img {
+                                            scale: 0.8
+                                        }
                                     }
                                 },
                                 State {
                                     name: "clicked"
                                     when: mouseArea.pressed
                                     PropertyChanges {
-                                        target: img
-                                        scale: 0.7
+                                        img {
+                                            scale: 0.7
+                                        }
                                     }
                                 },
                                 State {
                                     name: "hover"
                                     when: mouseArea.containsMouse && !img.iAmSelected
                                     PropertyChanges {
-                                        target: img
-                                        scale: 1
+                                        img {
+                                            scale: 1
+                                        }
                                     }
                                 },
                                 State {
                                     name: "selected"
                                     when: img.iAmSelected
                                     PropertyChanges {
-                                        target: img
-                                        scale: 1.1
+                                        img {
+                                            scale: 1.1
+                                        }
                                     }
                                 }
                             ]
@@ -170,16 +177,16 @@ ActivityBase {
                                 hoverEnabled: true
                                 onClicked: {
                                     scrollSound.play()
-                                    items.colorSelector = modelData
+                                    items.colorSelector = colorItem.modelData
                                 }
                             }
                         }
                         GCText {
                             id: text1
                             anchors.fill: parent
-                            text: modelData
+                            text: colorItem.modelData
                             fontSize: regularSize
-                            z: modelData == items.colorSelector ? 12 : 2
+                            z: colorItem.modelData == items.colorSelector ? 12 : 2
                             font.bold: true
                             style: Text.Outline
                             styleColor: GCStyle.darkText
@@ -229,18 +236,20 @@ ActivityBase {
 
                 function reset() {
                     for(var i=0; i < items.userModel.count; ++i)
-                        userModel.itemAt(i).paint(items.colorSelector)
+                        (userModel.itemAt(i) as BlockItem).paint(items.colorSelector)
                     currentItem = 0
                     keyNavigation = false
                 }
 
                 function clearCurrentItem() {
-                    userModel.itemAt(currentItem).paint(0)
+                    var item = userModel.itemAt(currentItem) as BlockItem
+                    item.paint(0)
                 }
 
                 function paintCurrentItem() {
-                    userModel.itemAt(currentItem).playEffect(items.colorSelector)
-                    userModel.itemAt(currentItem).paint(items.colorSelector)
+                    var item = userModel.itemAt(currentItem) as BlockItem
+                    item.playEffect(items.colorSelector)
+                    item.paint(items.colorSelector)
                 }
 
                 function moveCurrentIndexRight() {
@@ -269,20 +278,23 @@ ActivityBase {
                         currentItem -= items.targetModelData.length
                 }
 
-                Item {
+                delegate: BlockItem {}
+                component BlockItem : Item {
                     id: userItem
                     width: activityBackground.cellSize
                     height: activityBackground.cellSize
                     property color color: Activity.colors[colorIndex]
                     property int colorIndex
+                    required property int index
+                    required property int modelData
 
-                    function paint(color) {
-                        colorIndex = color
+                    function paint(colorId: int) {
+                        colorIndex = colorId
                         color = Activity.colors[colorIndex] //Needs to be set explicitly before running checkModel()
                         Activity.checkModel()
                     }
 
-                    function playEffect(color) {
+                    function playEffect(color: int) {
                         if(color === 0)
                             brushSound.play()
                         else
@@ -295,7 +307,7 @@ ActivityBase {
                         hoverEnabled: !items.buttonsBlocked
                         onEntered:
                         {
-                            userModel.currentItem = index
+                            userModel.currentItem = userItem.index
                             // Enable displaying cursor
                             userModel.keyNavigation = true
                         }
@@ -304,10 +316,10 @@ ActivityBase {
                     Rectangle {
                         id: userRect
                         anchors.fill: parent
-                        property bool displayCursor: userModel.keyNavigation && userModel.currentItem == modelData
+                        property bool displayCursor: userModel.keyNavigation && userModel.currentItem == userItem.modelData
                         border.width: displayCursor ? 3 : 1
                         border.color: GCStyle.darkBorder
-                        color: parent.color
+                        color: userItem.color
 
                         Behavior on color {
                             ColorAnimation {
@@ -322,7 +334,7 @@ ActivityBase {
                         anchors.margins: GCStyle.tinyMargins
                         width: parent.width * 0.35
                         height: width
-                        text: parent.colorIndex == 0 ? "" : parent.colorIndex
+                        text: userItem.colorIndex == 0 ? "" : userItem.colorIndex
                         fontSize: regularSize
                         fontSizeMode: Text.Fit
                         horizontalAlignment: Text.AlignHCenter
@@ -381,14 +393,16 @@ ActivityBase {
                 id: targetModel
                 model: items.targetModelData
                 Item {
+                    id: targetBlock
                     width: activityBackground.cellSize
                     height: activityBackground.cellSize
                     property alias color: targetRect.color
+                    required property int modelData
 
                     Rectangle {
                         id: targetRect
                         anchors.fill: parent
-                        color: Activity.colors[modelData]
+                        color: Activity.colors[targetBlock.modelData]
                         border.width: 1
                         border.color: GCStyle.darkBorder
                     }
@@ -399,7 +413,7 @@ ActivityBase {
                         anchors.margins: GCStyle.tinyMargins
                         width: parent.width * 0.35
                         height: width
-                        text: modelData == 0 ? "" : modelData
+                        text: targetBlock.modelData == 0 ? "" : targetBlock.modelData
                         fontSize: regularSize
                         fontSizeMode: Text.Fit
                         horizontalAlignment: Text.AlignHCenter
@@ -447,7 +461,7 @@ ActivityBase {
             function checkTouchPoint(touchPoints) {
                 for(var i in touchPoints) {
                     var touch = touchPoints[i]
-                    var block = drawingArea.childAt(touch.x, touch.y)
+                    var block = drawingArea.childAt(touch.x, touch.y) as BlockItem
                     if(block) {
                         block.playEffect(items.colorSelector)
                         block.paint(items.colorSelector)
@@ -482,7 +496,7 @@ ActivityBase {
             id: dialogActivityConfig
             currentActivity: activity.activityInfo
             onSaveData: {
-                levelFolder = dialogActivityConfig.chosenLevels
+                activity.levelFolder = dialogActivityConfig.chosenLevels
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
                 activity.focus = true
@@ -493,7 +507,7 @@ ActivityBase {
                 }
             }
             onClose: {
-                home()
+                activity.home()
             }
             onStartActivity: {
                 activityBackground.stop()
@@ -503,7 +517,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
@@ -511,13 +525,13 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | activityConfig}
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onActivityConfigClicked: {
-                 displayDialog(dialogActivityConfig)
+                 activity.displayDialog(dialogActivityConfig)
              }
         }
 

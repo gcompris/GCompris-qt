@@ -10,4 +10,6 @@ GCOMPRIS_ADD_RESOURCE(activities/redraw_symmetrical
   resource/*/Data.qml
   RESOURCES
   *.svg
+  DEPENDENCIES
+  redraw
 )

@@ -13,24 +13,24 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/redraw/resource/"
-var colorShortcut = {
-    0: 'white',
-    1: 'red',
-    2: 'orange',
-    3: 'green',
-    4: 'blue',
-    5: 'yellow',
-    6: 'black'
-}
-var colors = {
-    0: '#33FFFFFF',
-    1: '#FFCC0000',
-    2: '#FFFCAE3D',
-    3: '#FF73D216',
-    4: '#FF3465A4',
-    5: '#FFEDD400',
-    6: '#FF2E3436'
-}
+var colorShortcut = [
+    'white',
+    'red',
+    'orange',
+    'green',
+    'blue',
+    'yellow',
+    'black'
+]
+var colors = [
+    '#33FFFFFF',
+    '#FFCC0000',
+    '#FFFCAE3D',
+    '#FF73D216',
+    '#FF3465A4',
+    '#FFEDD400',
+    '#FF2E3436'
+]
 
 
 var dataset
