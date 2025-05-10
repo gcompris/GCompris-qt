@@ -9,6 +9,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
 import QtQuick 2.12
 import core 1.0
 
@@ -67,17 +68,17 @@ ActivityBase {
             property bool buttonsBlocked: false
         }
 
-        onStart: { Activity.start(items, mode) }
+        onStart: { Activity.start(items, activity.mode) }
         onStop: { Activity.stop() }
 
         DialogChooseLevel {
             id: dialogActivityConfig
             currentActivity: activity.activityInfo
             onClose: {
-                home()
+                activity.home()
             }
             onSaveData: {
-                levelFolder = dialogActivityConfig.chosenLevels
+                activity.levelFolder = dialogActivityConfig.chosenLevels
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
             }
@@ -100,7 +101,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         Bar {
@@ -108,13 +109,13 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onActivityConfigClicked: {
-                displayDialog(dialogActivityConfig)
+                activity.displayDialog(dialogActivityConfig)
             }
         }
 
@@ -240,14 +241,16 @@ ActivityBase {
             spacing: 20
             anchors.fill: wordDisplayListBg
             anchors.margins: GCStyle.baseMargins
-            flow: mode == "readingh" ? Flow.LeftToRight : Flow.TopToBottom
-            layoutDirection: Core.isLeftToRightLocale(locale) ? Qt.LeftToRight : Qt.RightToLeft
+            flow: activity.mode == "readingh" ? Flow.LeftToRight : Flow.TopToBottom
+            layoutDirection: Core.isLeftToRightLocale(activityBackground.locale) ? Qt.LeftToRight : Qt.RightToLeft
 
             Repeater {
                 id: wordDisplayRepeater
                 model: Activity.words
                 property int idToHideBecauseOverflow: 0
                 delegate: GCText {
+                    required property string modelData
+                    required property int index
                     text: modelData
                     color: GCStyle.darkText
                     opacity: iAmReady.visible ? false : (index == items.currentIndex ? 1 : 0)
@@ -414,7 +417,7 @@ ActivityBase {
         Timer {
             id: wordDropTimer
             repeat: true
-            interval: items.currentIndex == -1 ? 100 : 5000 / speedSetting;
+            interval: items.currentIndex == -1 ? 100 : 5000 / activity.speedSetting;
             onTriggered: Activity.dropWord();
         }
 

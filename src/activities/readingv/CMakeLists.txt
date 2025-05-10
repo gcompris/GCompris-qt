@@ -8,4 +8,6 @@ GCOMPRIS_ADD_RESOURCE(activities/readingv
   *.qml
   RESOURCES
   *.svg
+  DEPENDENCIES
+  readingh
 )
