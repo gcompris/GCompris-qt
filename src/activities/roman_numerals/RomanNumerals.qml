@@ -8,6 +8,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
 import QtQuick 2.15
 import core 1.0
 
@@ -40,7 +41,7 @@ ActivityBase {
         signal stop
         signal resetFocus
 
-        property bool isHorizontal: width >= height
+        readonly property bool isHorizontal: width >= height
 
         onResetFocus: {
             if (!ApplicationInfo.isMobile)
@@ -256,7 +257,7 @@ ActivityBase {
 
             // conversion code copied from:
             // http://blog.stevenlevithan.com/archives/javascript-roman-numeral-converter
-            function arabic2Roman(num) {
+            function arabic2Roman(num: int) : string {
                 if (!+num || num > 3999)
                     return '';
                 var digits = String(+num).split(""),
@@ -270,15 +271,16 @@ ActivityBase {
                 return new Array(+digits.join("") + 1).join("M") + roman;
             }
 
-            function roman2Arabic(str) {
-                var	str = str.toUpperCase(),
-                        validator = /^M*(?:D?C{0,3}|C[MD])(?:L?X{0,3}|X[CL])(?:V?I{0,3}|I[XV])$/,
-                        token = /[MDLV]|C[MD]?|X[CL]?|I[XV]?/g,
-                        key = {M:1000,CM:900,D:500,CD:400,C:100,XC:90,L:50,XL:40,X:10,IX:9,V:5,IV:4,I:1},
-                num = 0, m;
-                if (!(str && validator.test(str)))
+            function roman2Arabic(str: string) : int {
+                var upperStr = str.toUpperCase();
+                var validator = /^M*(?:D?C{0,3}|C[MD])(?:L?X{0,3}|X[CL])(?:V?I{0,3}|I[XV])$/;
+                var token = /[MDLV]|C[MD]?|X[CL]?|I[XV]?/g;
+                var key = {M:1000,CM:900,D:500,CD:400,C:100,XC:90,L:50,XL:40,X:10,IX:9,V:5,IV:4,I:1};
+                var num = 0;
+                var m;
+                if (!(upperStr && validator.test(upperStr)))
                     return false;
-                while (m = token.exec(str))
+                while (m = token.exec(upperStr))
                     num += key[m[0]];
                 return num;
             }
@@ -351,7 +353,7 @@ ActivityBase {
                                 romanConverter.roman = text
                     }
 
-                function appendText(car) {
+                function appendText(car: string) {
                     if(car === keyboard.backspace) {
                         if(text && cursorPosition > 0) {
                             var oldPos = cursorPosition
@@ -446,7 +448,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         VirtualKeyboard {
@@ -484,7 +486,7 @@ ActivityBase {
                 ] ]
             }
 
-            onKeypress: textInput.appendText(text)
+            onKeypress: (text) => textInput.appendText(text)
 
             onError: (msg) => console.log("VirtualKeyboard error: " + msg);
         }
@@ -495,7 +497,7 @@ ActivityBase {
             anchors.bottom: keyboard.top
             content: BarEnumContent { value: help | home | level | hint }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: items.previousLevel()
             onNextLevelClicked: items.nextLevel()
