@@ -10,7 +10,6 @@
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
 import QtQuick 2.12
-import core 1.0
 
 import "gravity.js" as Activity
 
@@ -35,7 +34,7 @@ Image {
         id: down
         target: planet
         property: "y"
-        to: parent.height + height * 2
+        to: planet.parent.height + planet.height * 2
     }
 
     Image {

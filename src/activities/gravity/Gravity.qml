@@ -9,6 +9,8 @@
 *
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import core 1.0
 
@@ -66,7 +68,7 @@ ActivityBase {
             property alias stationDown: stationDown
             // the center value for the spaceship
             property double spaceshipX
-            property double spaceshipY: parent.height  * 0.5
+            property double spaceshipY: activityBackground.height  * 0.5
             property int borderMargin: spaceship.width * 0.5
             property int rightMargin: activityBackground.width - borderMargin
             property bool onScreenControls: ApplicationInfo.isMobile
@@ -181,7 +183,7 @@ ActivityBase {
         DialogHelp {
             id: dialogHelp
             onClose: {
-                home()
+                activity.home()
                 Activity.initLevel()
             }
         }
@@ -192,11 +194,11 @@ ActivityBase {
             content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
                 Activity.stop()
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: if(!bonus.isPlaying) Activity.previousLevel()
             onNextLevelClicked: if(!bonus.isPlaying) Activity.nextLevel()
-            onHomeClicked: home();
+            onHomeClicked: activity.home();
         }
 
         Bonus {
