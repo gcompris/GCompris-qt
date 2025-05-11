@@ -17,7 +17,7 @@ Data {
     readonly property string kg_2: qsTr("%1 kg").arg(2)
     readonly property string kg_3: qsTr("%1 kg").arg(3)
     readonly property string kg_5: qsTr("%1 kg").arg(5)
-    function kg(value) {
+    function kg(value: int) : string {
            /* kg == kilogram */
            return qsTr("%1 kg").arg(value)
        }

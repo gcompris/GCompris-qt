@@ -13,12 +13,12 @@ Data {
     objective: qsTr("Balance up to 10 kilograms including grams.")
     difficulty: 4
 
-    function g(value) {
+    function g(value: int) : string {
            /* g == gram */
            return qsTr("%1 g").arg(value)
        }
 
-    function kg(value) {
+    function kg(value: real) : string {
            /* kg == kilogram */
            return qsTr("%1 kg").arg(value)
        }

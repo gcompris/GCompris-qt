@@ -10,12 +10,13 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import core 1.0
 
 import "../../core"
 import "scalesboard.js" as Activity
-import "."
 
 ActivityBase {
     id: activity
@@ -47,7 +48,6 @@ ActivityBase {
             property alias activityBackground: activityBackground
             property alias goodAnswerSound: goodAnswerSound
             property alias badAnswerSound: badAnswerSound
-            property alias metalSound: metalSound
             property alias errorRectangle: errorRectangle
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
@@ -156,68 +156,66 @@ ActivityBase {
             source: Activity.url + "scale.svg"
             sourceSize.width: Math.min(layoutArea.width, layoutArea.height * 2)
             anchors.centerIn: layoutArea
-        }
 
-        Image {
-            id: needle
-            parent: scaleBoard
-            source: Activity.url + "needle.svg"
-            sourceSize.width: parent.width * 0.75
-            z: -1
-            property int angle: - activityBackground.scaleHeight * 0.35
-            anchors {
-                horizontalCenter: parent.horizontalCenter
-                verticalCenter: parent.verticalCenter
-                verticalCenterOffset: - parent.paintedHeight * 0.15
-            }
-            transform: Rotation {
-                origin.x: needle.width * 0.5
-                origin.y: needle.height * 0.9
-                angle: needle.angle
-            }
-            Behavior on angle {
-                NumberAnimation {
-                    duration: 500
-                    easing.type: Easing.InOutQuad
+            Image {
+                id: needle
+                source: Activity.url + "needle.svg"
+                sourceSize.width: parent.width * 0.75
+                z: -1
+                property int angle: - activityBackground.scaleHeight * 0.35
+                anchors {
+                    horizontalCenter: scaleBoard.horizontalCenter
+                    verticalCenter: scaleBoard.verticalCenter
+                    verticalCenterOffset: -scaleBoard.paintedHeight * 0.15
+                }
+                transform: Rotation {
+                    origin.x: needle.width * 0.5
+                    origin.y: needle.height * 0.9
+                    angle: needle.angle
+                }
+                Behavior on angle {
+                    NumberAnimation {
+                        duration: 500
+                        easing.type: Easing.InOutQuad
+                    }
                 }
             }
-        }
 
-        // === The Left plate ===
-        Image {
-            id: plateLeft
-            parent: scaleBoard
-            source: Activity.url + "plate.svg"
-            sourceSize.width: parent.width * 0.35
-            z: -10
+            // === The Left plate ===
+            Image {
+                id: plateLeft
+                source: Activity.url + "plate.svg"
+                sourceSize.width: parent.width * 0.35
+                z: -10
 
-            anchors {
-                horizontalCenter: parent.horizontalCenter
-                horizontalCenterOffset: - parent.paintedWidth * 0.3
-                verticalCenter: parent.verticalCenter
-                verticalCenterOffset: - parent.paintedHeight * 0.03 + activityBackground.scaleHeight
-            }
-            Behavior on anchors.verticalCenterOffset {
-                NumberAnimation {
-                    duration: 500
-                    easing.type: Easing.InOutQuad
+                anchors {
+                    horizontalCenter: scaleBoard.horizontalCenter
+                    horizontalCenterOffset: -scaleBoard.paintedWidth * 0.3
+                    verticalCenter: scaleBoard.verticalCenter
+                    verticalCenterOffset: -scaleBoard.paintedHeight * 0.03 + activityBackground.scaleHeight
+                }
+                Behavior on anchors.verticalCenterOffset {
+                    NumberAnimation {
+                        duration: 500
+                        easing.type: Easing.InOutQuad
+                    }
                 }
             }
 
             // The Left Drop Area
             MasseArea {
                 id: masseAreaLeft
-                parent: scaleBoard
                 width: plateLeft.width
                 anchors {
-                    horizontalCenter: parent.horizontalCenter
-                    horizontalCenterOffset: - parent.paintedWidth * 0.3
-                    verticalCenter: parent.verticalCenter
-                    verticalCenterOffset: - parent.paintedHeight * 0.44 + activityBackground.scaleHeight
+                    horizontalCenter: scaleBoard.horizontalCenter
+                    horizontalCenterOffset: -scaleBoard.paintedWidth * 0.3
+                    verticalCenter: scaleBoard.verticalCenter
+                    verticalCenterOffset: -scaleBoard.paintedHeight * 0.44 + activityBackground.scaleHeight
                 }
                 masseAreaCenter: masseAreaCenter
                 masseAreaLeft: masseAreaLeft
                 masseAreaRight: masseAreaRight
+                metalSound: metalSound
                 nbColumns: 3
 
                 Behavior on anchors.verticalCenterOffset {
@@ -227,42 +225,40 @@ ActivityBase {
                     }
                 }
             }
-        }
 
-        // === The Right plate ===
-        Image {
-            id: plateRight
-            parent: scaleBoard
-            source: Activity.url + "plate.svg"
-            sourceSize.width: parent.width * 0.35
-            z: -10
-            anchors {
-                horizontalCenter: parent.horizontalCenter
-                horizontalCenterOffset: parent.paintedWidth * 0.3
-                verticalCenter: parent.verticalCenter
-                verticalCenterOffset: - parent.paintedHeight * 0.03 - activityBackground.scaleHeight
-            }
-            Behavior on anchors.verticalCenterOffset {
-                NumberAnimation {
-                    duration: 500
-                    easing.type: Easing.InOutQuad
+            // === The Right plate ===
+            Image {
+                id: plateRight
+                source: Activity.url + "plate.svg"
+                sourceSize.width: parent.width * 0.35
+                z: -10
+                anchors {
+                    horizontalCenter: scaleBoard.horizontalCenter
+                    horizontalCenterOffset: scaleBoard.paintedWidth * 0.3
+                    verticalCenter: scaleBoard.verticalCenter
+                    verticalCenterOffset: -scaleBoard.paintedHeight * 0.03 - activityBackground.scaleHeight
+                }
+                Behavior on anchors.verticalCenterOffset {
+                    NumberAnimation {
+                        duration: 500
+                        easing.type: Easing.InOutQuad
+                    }
                 }
             }
-
             // The Right Drop Area
             MasseArea {
                 id: masseAreaRight
-                parent: scaleBoard
                 width: plateRight.width
                 anchors {
-                    horizontalCenter: parent.horizontalCenter
-                    horizontalCenterOffset: parent.paintedWidth * 0.3
-                    verticalCenter: parent.verticalCenter
-                    verticalCenterOffset: - parent.paintedHeight * 0.44 - activityBackground.scaleHeight
+                    horizontalCenter: scaleBoard.horizontalCenter
+                    horizontalCenterOffset: scaleBoard.paintedWidth * 0.3
+                    verticalCenter: scaleBoard.verticalCenter
+                    verticalCenterOffset: -scaleBoard.paintedHeight * 0.44 - activityBackground.scaleHeight
                 }
                 masseAreaCenter: masseAreaCenter
                 masseAreaLeft: masseAreaLeft
                 masseAreaRight: masseAreaRight
+                metalSound: metalSound
                 nbColumns: 3
                 dropEnabledForThisLevel: items.rightDrop
 
@@ -273,19 +269,19 @@ ActivityBase {
                     }
                 }
             }
-        }
 
-        // === The Initial Masses List ===
-        MasseArea {
-            id: masseAreaCenter
-            parent: scaleBoard
-            x: parent.width * 0.08
-            y: parent.height * 0.86 - height
-            width: parent.width * 0.84
-            masseAreaCenter: masseAreaCenter
-            masseAreaLeft: masseAreaLeft
-            masseAreaRight: masseAreaRight
-            nbColumns: masseModel.count
+            // === The Initial Masses List ===
+            MasseArea {
+                id: masseAreaCenter
+                x: parent.width * 0.08
+                y: parent.height * 0.86 - height
+                width: parent.width * 0.84
+                masseAreaCenter: masseAreaCenter
+                masseAreaLeft: masseAreaLeft
+                masseAreaRight: masseAreaRight
+                metalSound: metalSound
+                nbColumns: masseModel.count
+            }
         }
 
         GCTextPanel {
@@ -341,7 +337,7 @@ ActivityBase {
                         target: errorRectangle
                         anchors.left: plateLeft.right
                         anchors.right: plateRight.left
-                        anchors.top: parent.top
+                        anchors.top: scaleBoard.top
                         anchors.bottom: undefined
                     }
                 }
@@ -353,14 +349,14 @@ ActivityBase {
             currentActivity: activity.activityInfo
 
             onSaveData: {
-                levelFolder = dialogActivityConfig.chosenLevels
+                activity.levelFolder = dialogActivityConfig.chosenLevels
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
                 // restart activity on saving
                 activityBackground.start()
             }
             onClose: {
-                home()
+                activity.home()
             }
             onStartActivity: {
                 activityBackground.start()
@@ -369,7 +365,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         BarButton {
@@ -394,13 +390,13 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onActivityConfigClicked: {
-                displayDialog(dialogActivityConfig)
+                activity.displayDialog(dialogActivityConfig)
             }
             onLevelChanged: instructionPanel.textItem.text = items.levels[bar.level - 1].message ? items.levels[bar.level - 1].message : ""
         }

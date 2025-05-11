@@ -13,7 +13,7 @@ Data {
     objective: qsTr("Balance up to 20 grams.")
     difficulty: 3
 
-    function g(value) {
+    function g(value: int) : string {
         /* g == gram */
         return qsTr("%1 g").arg(value)
     }

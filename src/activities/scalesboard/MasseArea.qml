@@ -7,6 +7,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import QtQuick.Effects
 
@@ -25,9 +27,10 @@ Rectangle {
     property int nbColumns
     property int itemWidth: (width - masseFlow.spacing * (nbColumns - 1)) / nbColumns
 
-    property Item masseAreaCenter
-    property Item masseAreaLeft
-    property Item masseAreaRight
+    property MasseArea masseAreaCenter
+    property MasseArea masseAreaLeft
+    property MasseArea masseAreaRight
+    property GCSoundEffect metalSound
 
     property alias masseModel: masseModel
     property alias dropArea: dropArea
@@ -40,11 +43,11 @@ Rectangle {
         masseModel.clear()
     }
 
-    function removeWeight(value) {
+    function removeWeight(value: int) {
         weight -= value
     }
 
-    function removeMasse(masseArea, index, weight) {
+    function removeMasse(masseArea: Item, index: int, weight: int) {
         masseArea.removeWeight(weight)
         masseArea.masseModel.remove(index)
     }
@@ -52,7 +55,7 @@ Rectangle {
     /* weight is the absolute weight
      * text is the text being displayed on the masseAreaCenter
      */
-    function addMasse(img, weight, text, index, dragEnabled) {
+    function addMasse(img: string, weight: int, text: string, index: int, dragEnabled: bool) {
         masseModel.append( {
                               img: img,
                               weight: weight,
@@ -64,24 +67,24 @@ Rectangle {
         masseArea.weight += weight
     }
 
-    function setAllZonesDropEnabled(enabled) {
+    function setAllZonesDropEnabled(enabled: bool) {
         masseAreaCenter.dropEnabled = enabled
         masseAreaLeft.dropEnabled = enabled
         masseAreaRight.dropEnabled = enabled
     }
 
-    function showMasseInMasseArea(index) {
+    function showMasseInMasseArea(index: int) {
         masseAreaCenter.masseModel.get(index).opacity = 1.0
     }
 
-    function hideMasseInMasseArea(index) {
+    function hideMasseInMasseArea(index: int) {
         masseAreaCenter.masseModel.get(index).opacity = 0.0
     }
 
     ListModel {
         id: masseModel
 
-        function contains(masseIndex) {
+        function contains(masseIndex: int) : bool {
             for(var i = 0; i < masseModel.count; i++) {
                 if(masseModel.get(i).masseIndex == masseIndex) {
                     return masseModel.get(i).opacity == 1
@@ -99,7 +102,7 @@ Rectangle {
             verticalCenter: parent.verticalCenter
         }
         height: parent.height * 2
-        enabled: dropEnabledForThisLevel && dropEnabled
+        enabled: masseArea.dropEnabledForThisLevel && masseArea.dropEnabled
     }
 
     Flow {
@@ -110,7 +113,7 @@ Rectangle {
         add: Transition {
             NumberAnimation {
                 properties: "x"
-                from: parent.width * 0.05
+                from: masseFlow.width * 0.05
                 easing.type: Easing.InOutQuad
             }
         }
@@ -126,6 +129,9 @@ Rectangle {
             id: answer
             model: masseModel
             Image {
+                id: answerMasseItem
+                required property int index
+                required property var model
                 source: Activity.url + img
                 sourceSize.width: masseArea.itemWidth
                 opacity: model.opacity
@@ -139,7 +145,7 @@ Rectangle {
                 property int masseOriginY
                 property int originX
                 property int originY
-                property Item currentMasseArea: masseArea
+                property MasseArea currentMasseArea: masseArea
 
                 Drag.active: dragArea.drag.active
                 Drag.hotSpot.x: width * 0.5
@@ -165,26 +171,26 @@ Rectangle {
                     y = masseOriginY
                 }
 
-                onOpacityChanged: opacity == 1.0 ? currentMasseArea = masseAreaCenter : null
+                onOpacityChanged: opacity == 1.0 ? currentMasseArea = masseArea.masseAreaCenter : null
 
                 MouseArea {
                     id: dragArea
                     anchors.fill: parent
                     drag.target: parent
-                    enabled: model.dragEnabled && !items.buttonsBlocked
+                    enabled: answerMasseItem.model.dragEnabled && !items.buttonsBlocked
 
                     onPressed: {
-                        if(masseModel.contains(parent.masseIndex)) {
+                        if(masseModel.contains(answerMasseItem.masseIndex)) {
                             parent.initDrag()
                         }
                         else {
-                            setAllZonesDropEnabled(false)
+                            masseArea.setAllZonesDropEnabled(false)
                         }
                     }
 
-                    function dropOnPlate(masseArea) {
+                    function dropOnPlate(masseArea: Item) {
                         parent.Drag.cancel()
-                        if(parent.currentMasseArea == masseAreaCenter) {
+                        if(parent.currentMasseArea == masseArea.masseAreaCenter) {
                             masseArea.hideMasseInMasseArea(parent.masseIndex)
                             parent.replaceInMasse()
                         }
@@ -193,31 +199,31 @@ Rectangle {
                                            parent.text,
                                            parent.masseIndex,
                                            /* dragEnabled */ true)
-                        if(parent.currentMasseArea != masseAreaCenter) {
-                            removeMasse(parent.currentMasseArea,
-                                        parent.modelIndex, parent.weight)
+                        if(parent.currentMasseArea != masseArea.masseAreaCenter) {
+                            masseArea.removeMasse(parent.currentMasseArea,
+                                                  parent.modelIndex, parent.weight)
                         }
 
                         parent.currentMasseArea = masseArea
                     }
 
                     onReleased: {
-                        setAllZonesDropEnabled(true)
-                        items.metalSound.play()
-                        if(masseAreaLeft.dropArea.containsDrag &&
-                           parent.currentMasseArea != masseAreaLeft) {
-                            dropOnPlate(masseAreaLeft)
-                        } else if (masseAreaRight.dropArea.containsDrag &&
-                                   parent.currentMasseArea != masseAreaRight) {
-                            dropOnPlate(masseAreaRight)
-                        } else if (masseAreaCenter.dropArea.containsDrag &&
-                                   parent.dropArea != masseAreaCenter) {
+                        masseArea.setAllZonesDropEnabled(true)
+                        masseArea.metalSound.play()
+                        if(masseArea.masseAreaLeft.dropArea.containsDrag &&
+                           parent.currentMasseArea != masseArea.masseAreaLeft) {
+                            dropOnPlate(masseArea.masseAreaLeft)
+                        } else if (masseArea.masseAreaRight.dropArea.containsDrag &&
+                                   parent.currentMasseArea != masseArea.masseAreaRight) {
+                            dropOnPlate(masseArea.masseAreaRight)
+                        } else if (masseArea.masseAreaCenter.dropArea.containsDrag &&
+                                   parent.dropArea != masseArea.masseAreaCenter) {
                             parent.Drag.cancel()
-                            masseAreaCenter.showMasseInMasseArea(parent.masseIndex)
+                            masseArea.masseAreaCenter.showMasseInMasseArea(parent.masseIndex)
                             parent.replaceInMasse()
-                            if(parent.currentMasseArea != masseAreaCenter) {
-                                removeMasse(parent.currentMasseArea,
-                                            parent.modelIndex, parent.weight)
+                            if(parent.currentMasseArea != masseArea.masseAreaCenter) {
+                                masseArea.removeMasse(parent.currentMasseArea,
+                                                      parent.modelIndex, parent.weight)
                             }
                         } else {
                             parent.Drag.cancel()
@@ -231,7 +237,7 @@ Rectangle {
                     id: text
                     anchors.fill: parent
                     anchors.topMargin: parent.height * 0.5
-                    text: model.text
+                    text: answerMasseItem.model.text
                     color: GCStyle.whiteText
                     fontSizeMode: Text.Fit
                     minimumPointSize: 8

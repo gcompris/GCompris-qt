@@ -13,7 +13,7 @@ Data {
     objective: qsTr("Balance up to 20 ounces.")
     difficulty: 3
 
-    function oz(value) {
+    function oz(value: int) : string {
                /* oz == ounce */
                return qsTr("%1 oz").arg(value)
            }
