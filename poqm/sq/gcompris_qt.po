@@ -23073,7 +23073,7 @@ msgstr ""
 "Në tabelë shfaqet një fjalë. E shfaqur horizontalisht do të duket dhe "
 "zhduket një listë fjalësh. A u duk te lista fjala e dhënë?"
 
-#: activities/readingh/Readingh.qml:304
+#: activities/readingh/Readingh.qml:307
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -23083,12 +23083,12 @@ msgstr ""
 "<font color=\"#373737\">Shihni nëse fjala<br/></font><b><font color=\"#315AAA"
 "\">%1</font></b><br/><font color=\"#373737\">është shfaqur</font>"
 
-#: activities/readingh/Readingh.qml:364
+#: activities/readingh/Readingh.qml:367
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Po, e pashë!"
 
-#: activities/readingh/Readingh.qml:385
+#: activities/readingh/Readingh.qml:388
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Jo, s’qe gjëkundi!"

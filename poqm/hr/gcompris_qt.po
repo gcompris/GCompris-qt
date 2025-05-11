@@ -22819,7 +22819,7 @@ msgstr ""
 "Riječ je prikazana na ploči. Popis riječi, prikazan vodoravno, pojavit će se "
 "i nestati. Je li se navedena riječ pojavila na popisu?"
 
-#: activities/readingh/Readingh.qml:304
+#: activities/readingh/Readingh.qml:307
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22829,12 +22829,12 @@ msgstr ""
 "<font color=\"#373737\">Provjeri je li riječ<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">prikazana</font>"
 
-#: activities/readingh/Readingh.qml:364
+#: activities/readingh/Readingh.qml:367
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Da, vidio sam!"
 
-#: activities/readingh/Readingh.qml:385
+#: activities/readingh/Readingh.qml:388
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Ne, nije bila tamo!"

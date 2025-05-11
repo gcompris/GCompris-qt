@@ -23341,7 +23341,7 @@ msgstr ""
 "λέξεις θα εμφανιστεί για λίγο στα αριστερά. Η εμφανιζόμενη λέξη ανήκει ή όχι "
 "στον κατάλογο που είδες;"
 
-#: activities/readingh/Readingh.qml:304
+#: activities/readingh/Readingh.qml:307
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -23351,12 +23351,12 @@ msgstr ""
 "<font color=\"#373737\">Έλεγξε αν η λέξη<br/></font><b><font color=\"#315AAA"
 "\">%1</font></b><br/><font color=\"#373737\">εμφανίζεται.</font>"
 
-#: activities/readingh/Readingh.qml:364
+#: activities/readingh/Readingh.qml:367
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Ναι, την είδα!"
 
-#: activities/readingh/Readingh.qml:385
+#: activities/readingh/Readingh.qml:388
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Όχι, δεν εμφανίστηκε"

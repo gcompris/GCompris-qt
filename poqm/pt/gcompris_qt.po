@@ -24437,7 +24437,7 @@ msgstr ""
 "Aparece uma palavra no tabuleiro. Irá aparecer e desaparecer na horizontal "
 "uma lista de palavras. Será que a palavra indicada aparece na lista?"
 
-#: activities/readingh/Readingh.qml:304
+#: activities/readingh/Readingh.qml:307
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -24447,12 +24447,12 @@ msgstr ""
 "<font color=\"#373737\">Verifique se a palavra<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">está visível</font>"
 
-#: activities/readingh/Readingh.qml:364
+#: activities/readingh/Readingh.qml:367
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Sim, eu vi-a!"
 
-#: activities/readingh/Readingh.qml:385
+#: activities/readingh/Readingh.qml:388
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Não, não estava lá!"

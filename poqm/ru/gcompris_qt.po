@@ -22966,7 +22966,7 @@ msgstr ""
 "На доске написано загаданное слово. Список горизонтально написанных слов "
 "будет появляться и исчезать. Появилось ли заданное слово в списке?"
 
-#: activities/readingh/Readingh.qml:304
+#: activities/readingh/Readingh.qml:307
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22976,12 +22976,12 @@ msgstr ""
 "<font color=\"#373737\">Проверь, появится ли слово</font><br/><b><font color="
 "\"#315AAA\">%1</font></b>"
 
-#: activities/readingh/Readingh.qml:364
+#: activities/readingh/Readingh.qml:367
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Да, там оно было!"
 
-#: activities/readingh/Readingh.qml:385
+#: activities/readingh/Readingh.qml:388
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Нет, там его не было!"

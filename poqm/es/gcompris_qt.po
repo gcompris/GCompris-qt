@@ -23050,7 +23050,7 @@ msgstr ""
 "horizontalmente, aparecerá y desaparecerá. ¿Aparece la palabra mostrada en "
 "la lista?"
 
-#: activities/readingh/Readingh.qml:304
+#: activities/readingh/Readingh.qml:307
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -23060,12 +23060,12 @@ msgstr ""
 "<font color=\"#373737\">Comprueba si la palabra<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">se muestra</font>"
 
-#: activities/readingh/Readingh.qml:364
+#: activities/readingh/Readingh.qml:367
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Sí, ¡la he visto!"
 
-#: activities/readingh/Readingh.qml:385
+#: activities/readingh/Readingh.qml:388
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "No, ¡no estaba ahí!"

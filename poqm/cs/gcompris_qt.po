@@ -22497,7 +22497,7 @@ msgstr ""
 "Na tabuli se objeví slovo. Bude se ukazovat seznam slov zobrazovaný postupně "
 "zleva doprava. Objevilo se v tom seznamu zadané slovo?"
 
-#: activities/readingh/Readingh.qml:304
+#: activities/readingh/Readingh.qml:307
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22508,12 +22508,12 @@ msgstr ""
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">bylo na zobrazeno.</"
 "font>"
 
-#: activities/readingh/Readingh.qml:364
+#: activities/readingh/Readingh.qml:367
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Ano, bylo tam!"
 
-#: activities/readingh/Readingh.qml:385
+#: activities/readingh/Readingh.qml:388
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Ne, nebylo tam!"

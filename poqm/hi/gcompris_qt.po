@@ -25188,7 +25188,7 @@ msgstr ""
 "एक शब्द बोर्ड के शीर्ष दाईं ओर दिखाया गया है। शब्दों की एक सूची बाएं ओर दिखाई देगी और "
 "गायब हो जाएगी।  क्या दिए गए शब्द सूची से संबंधित हैं?"
 
-#: activities/readingh/Readingh.qml:304
+#: activities/readingh/Readingh.qml:307
 #, fuzzy, qt-format
 #| msgctxt "Readingh|"
 #| msgid ""
@@ -25202,12 +25202,12 @@ msgstr ""
 "<Font color = \"# 373737\">ये जांच करें की क्या<br/> <b> <font color=\"#315AAA\">"
 "%1</font></b><br/><font color=\"# 373737 \"> शब्द प्रदर्शित किया जा रहा है।"
 
-#: activities/readingh/Readingh.qml:364
+#: activities/readingh/Readingh.qml:367
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "हाँ , मैंने इसे देखा!"
 
-#: activities/readingh/Readingh.qml:385
+#: activities/readingh/Readingh.qml:388
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "नहीं, यह वहाँ नहीं था!"

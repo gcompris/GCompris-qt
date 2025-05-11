@@ -22429,7 +22429,7 @@ msgstr ""
 "फलकस्य उपरि एकः शब्दः दर्शितः अस्ति। क्षैतिजरूपेण प्रदर्शिता शब्दानां सूची दृश्यते, अन्तर्धानं "
 "च भविष्यति । दत्तः शब्दः सूचीयां आविर्भूतः वा ?"
 
-#: activities/readingh/Readingh.qml:304
+#: activities/readingh/Readingh.qml:307
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22439,12 +22439,12 @@ msgstr ""
 "<font color=\"#373737\">शब्दः अस्ति वा इति पश्यन्तु<br/></font> <b><font color="
 "\"#315AAA\">%1</font></b><br/> <font color=\"#373737\">प्रदर्शितं भवति</font>"
 
-#: activities/readingh/Readingh.qml:364
+#: activities/readingh/Readingh.qml:367
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "आम्, अहं दृष्टवान्!"
 
-#: activities/readingh/Readingh.qml:385
+#: activities/readingh/Readingh.qml:388
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "न, तत्र नासीत्!"

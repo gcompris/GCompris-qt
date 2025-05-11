@@ -22967,7 +22967,7 @@ msgstr ""
 "horizontaal getoond, die weer verdwijnt. Verscheen het gegeven woord in de "
 "lijst?"
 
-#: activities/readingh/Readingh.qml:304
+#: activities/readingh/Readingh.qml:307
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22977,12 +22977,12 @@ msgstr ""
 "<font color=\"#373737\">Controleer of het woord<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">wordt getoond</font>"
 
-#: activities/readingh/Readingh.qml:364
+#: activities/readingh/Readingh.qml:367
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Ja, ik heb het gezien!"
 
-#: activities/readingh/Readingh.qml:385
+#: activities/readingh/Readingh.qml:388
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Nee, het zat er niet bij!"

@@ -23004,7 +23004,7 @@ msgstr ""
 "Słowo jest pokazywane na planszy. Lista słów, wyświetlana w poziomie, będzie "
 "się pojawiać i znikać. Pytanie czy słowo pojawiło się na liście?"
 
-#: activities/readingh/Readingh.qml:304
+#: activities/readingh/Readingh.qml:307
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -23014,12 +23014,12 @@ msgstr ""
 "<font color=\"#373737\">Sprawdź czy słowo<br/></font><b><font color=\"#315AAA"
 "\">%1</font></b><br/><font color=\"#373737\">jest wyświetlane</font>"
 
-#: activities/readingh/Readingh.qml:364
+#: activities/readingh/Readingh.qml:367
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Tak widziałem je!"
 
-#: activities/readingh/Readingh.qml:385
+#: activities/readingh/Readingh.qml:388
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Nie nie było go tam!"

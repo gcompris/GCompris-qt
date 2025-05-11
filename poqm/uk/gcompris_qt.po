@@ -22964,7 +22964,7 @@ msgstr ""
 "На ігровому полі буде показано слово. Список слів, показаний горизонтально, "
 "з'являтиметься і зникатиме. Чи є задане слово у списку?"
 
-#: activities/readingh/Readingh.qml:304
+#: activities/readingh/Readingh.qml:307
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22974,12 +22974,12 @@ msgstr ""
 "<font color=\"#373737\">Визначте, чи показано слово<br/></font><b><font "
 "color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\"></font>"
 
-#: activities/readingh/Readingh.qml:364
+#: activities/readingh/Readingh.qml:367
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Так, воно там було!"
 
-#: activities/readingh/Readingh.qml:385
+#: activities/readingh/Readingh.qml:388
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Ні, його там не було!"

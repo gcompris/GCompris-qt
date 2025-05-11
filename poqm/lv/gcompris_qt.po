@@ -22737,7 +22737,7 @@ msgstr ""
 "Spēles zonā ir parādīts vārds. Parādīsies un pazudīs horizontāli novietots "
 "vārdu saraksts. Vai dotais vārds parādījās sarakstā?"
 
-#: activities/readingh/Readingh.qml:304
+#: activities/readingh/Readingh.qml:307
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22748,12 +22748,12 @@ msgstr ""
 "font><b><font color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\"></"
 "font>"
 
-#: activities/readingh/Readingh.qml:364
+#: activities/readingh/Readingh.qml:367
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Jā, es to redzēju!"
 
-#: activities/readingh/Readingh.qml:385
+#: activities/readingh/Readingh.qml:388
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Nē, tas sarakstā nebija!"
