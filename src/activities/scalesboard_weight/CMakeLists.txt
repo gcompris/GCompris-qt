@@ -10,4 +10,6 @@ GCOMPRIS_ADD_RESOURCE(activities/scalesboard_weight
   resource/*/Data.qml
   RESOURCES
   *.svg
+  DEPENDENCIES
+  scalesboard
 )

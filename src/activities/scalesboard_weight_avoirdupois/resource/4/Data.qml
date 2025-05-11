@@ -17,7 +17,7 @@ Data {
     readonly property string lb_2: qsTr("%1 lb").arg(2)
     readonly property string lb_3: qsTr("%1 lb").arg(3)
     readonly property string lb_5: qsTr("%1 lb").arg(5)
-    function lb(value) {
+    function lb(value: int) : string {
         /* lb == pound */
         return qsTr("%1 lb").arg(value)
     }
