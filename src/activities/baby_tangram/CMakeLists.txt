@@ -10,4 +10,6 @@ GCOMPRIS_ADD_RESOURCE(activities/baby_tangram
   RESOURCES
   *.svg
   resource/*/*.svg
+  DEPENDENCIES
+  tangram
 )

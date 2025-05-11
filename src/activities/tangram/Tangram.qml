@@ -9,13 +9,13 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
 import QtQuick 2.12
 import core 1.0
 
 import "../../core"
 import "tangram.js" as Activity
 import "dataset.js" as Dataset
-import "."
 
 ActivityBase {
     id: activity
@@ -77,8 +77,8 @@ ActivityBase {
             property alias userList: userList
             property alias userListModel: userList.model
             property Item selectedItem
-            property var currentTans: dataset[items.currentLevel]
-            property int numberOfLevel: dataset.length
+            property var currentTans: activity.dataset[items.currentLevel]
+            property int numberOfLevel: activity.dataset.length
             property bool editionMode: false
         }
 
@@ -100,7 +100,10 @@ ActivityBase {
             anchors.centerIn: playArea
         }
 
-        RotateMouseArea {}
+        RotateMouseArea {
+            enabled: items.selectedItem && items.selectedItem.selected && items.selectedItem.rotable
+            selectedItem: items.selectedItem
+        }
 
         DropArea {
             id: dropableArea
@@ -114,17 +117,20 @@ ActivityBase {
             id: modelList
             model: items.currentTans.pieces
             Item {
+                id: currentPiece
                 anchors.fill: activityBackground
+                required property var modelData
+                required property int index
                 Image {
                     id: tansModel
-                    x: activityBackground.playX + activityBackground.playWidth * modelData.x - width / 2
-                    y: activityBackground.playY + activityBackground.playWidth * modelData.y - height / 2
-                    source: activity.resourceUrl + "m-" + modelData.img
-                    sourceSize.width: modelData.width * activityBackground.playWidth
-                    sourceSize.height: modelData.height * activityBackground.playWidth
-                    z: index
-                    rotation: modelData.rotation
-                    mirror: modelData.flipping ? true : false
+                    x: activityBackground.playX + activityBackground.playWidth * currentPiece.modelData.x - width / 2
+                    y: activityBackground.playY + activityBackground.playWidth * currentPiece.modelData.y - height / 2
+                    source: activity.resourceUrl + "m-" + currentPiece.modelData.img
+                    sourceSize.width: currentPiece.modelData.width * activityBackground.playWidth
+                    sourceSize.height: currentPiece.modelData.height * activityBackground.playWidth
+                    z: currentPiece.index
+                    rotation: currentPiece.modelData.rotation
+                    mirror: currentPiece.modelData.flipping ? true : false
                     visible: true
                 }
             }
@@ -135,6 +141,8 @@ ActivityBase {
             model: items.currentTans.pieces
             Item {
                 id: tansItem
+                required property var modelData
+                required property int index
                 x: activityBackground.playX + activityBackground.playWidth * xRatio - tans.width / 2
                 y: activityBackground.playY + activityBackground.playWidth * yRatio - tans.height / 2
                 width: tans.width
@@ -176,10 +184,10 @@ ActivityBase {
 
                 Image {
                     id: tans
-                    mirror: !items.editionMode ? modelData.initFlipping : modelData.flipping
-                    source: activity.resourceUrl + modelData.img
-                    sourceSize.width: modelData.width * activityBackground.playWidth
-                    sourceSize.height: modelData.height * activityBackground.playWidth
+                    mirror: !items.editionMode ? tansItem.modelData.initFlipping : tansItem.modelData.flipping
+                    source: activity.resourceUrl + tansItem.modelData.img
+                    sourceSize.width: tansItem.modelData.width * activityBackground.playWidth
+                    sourceSize.height: tansItem.modelData.height * activityBackground.playWidth
                 }
                 // Manage to return a base rotation as it was provided in the model
                 function rotationToTans() {
@@ -226,7 +234,7 @@ ActivityBase {
                         activityBackground.checkWin()
                     }
                     onDoubleClicked: {
-                        flipMe()
+                        tansItem.flipMe()
                     }
                     onReleased: {
                         parent.Drag.drop()
@@ -255,7 +263,10 @@ ActivityBase {
                     fillMode: Image.PreserveAspectFit
                     z: tansItem.z + 1
 
-                    RotateMouseArea {}
+                    RotateMouseArea {
+                        enabled: items.selectedItem && items.selectedItem.selected && items.selectedItem.rotable
+                        selectedItem: items.selectedItem
+                    }
                 }
 
                 Image {
@@ -277,13 +288,13 @@ ActivityBase {
 
                 Behavior on x {
                     PropertyAnimation  {
-                        duration: animDuration
+                        duration: tansItem.animDuration
                         easing.type: Easing.InOutQuad
                     }
                 }
                 Behavior on y {
                     PropertyAnimation  {
-                        duration: animDuration
+                        duration: tansItem.animDuration
                         easing.type: Easing.InOutQuad
                     }
                 }
@@ -326,7 +337,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         File {
@@ -339,7 +350,7 @@ ActivityBase {
             content: BarEnumContent { value: help | home | level |
                                              (items.editionMode ? repeat : 0) }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
