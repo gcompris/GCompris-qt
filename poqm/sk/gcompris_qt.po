@@ -15368,7 +15368,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr ""
 
-#: activities/gravity/Gravity.qml:220
+#: activities/gravity/Gravity.qml:222
 #, fuzzy
 #| msgctxt "IntroGravity|"
 #| msgid ""
@@ -15388,7 +15388,7 @@ msgstr ""
 "oboch objektov a nepriamo úmerná druhej mocnine vzdialenosti, ktorá oddeľuje "
 "ich stredy."
 
-#: activities/gravity/Gravity.qml:223
+#: activities/gravity/Gravity.qml:225
 #, fuzzy
 #| msgctxt "IntroGravity|"
 #| msgid ""
@@ -15408,7 +15408,7 @@ msgstr ""
 "väčšia gravitačná sila. Preto, ak sa hmotnosť ktoréhokoľvek objektu zvyšuje, "
 "príťažlivá sila medzi nimi sa tiež zvyšuje"
 
-#: activities/gravity/Gravity.qml:226
+#: activities/gravity/Gravity.qml:228
 #, fuzzy
 #| msgctxt "IntroGravity|"
 #| msgid ""
@@ -15425,7 +15425,7 @@ msgstr ""
 "vzájomne na seba pôsobiacimi objektami, väčší odstup vedie k oslabeniu "
 "gravitačných síl."
 
-#: activities/gravity/Gravity.qml:229
+#: activities/gravity/Gravity.qml:231
 #, fuzzy
 #| msgctxt "IntroGravity|"
 #| msgid ""
@@ -15442,7 +15442,7 @@ msgstr ""
 "množstva okolitých planét. Nedostaňte sa príliš blízko k planétam, lebo do "
 "nich narazíte. Šípka ukazuje smer sily na vašej lodi."
 
-#: activities/gravity/Gravity.qml:232
+#: activities/gravity/Gravity.qml:234
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -23829,8 +23829,8 @@ msgctxt "ActivityInfo|"
 msgid "Letters: type roman numerals (with I, V, X, L, C, D and M)"
 msgstr ""
 
-#: activities/roman_numerals/RomanNumerals.qml:79
-#: activities/roman_numerals/RomanNumerals.qml:85
+#: activities/roman_numerals/RomanNumerals.qml:80
+#: activities/roman_numerals/RomanNumerals.qml:86
 msgctxt "RomanNumerals|"
 msgid ""
 "The roman numbers are all built out of these 7 numbers:\n"
@@ -23848,11 +23848,11 @@ msgstr ""
 " a M (1000).\n"
 " Zaujímavým zistením je, že rímsky číselný systém nemá číslo 0."
 
-#: activities/roman_numerals/RomanNumerals.qml:80
-#: activities/roman_numerals/RomanNumerals.qml:92
-#: activities/roman_numerals/RomanNumerals.qml:104
-#: activities/roman_numerals/RomanNumerals.qml:116
-#: activities/roman_numerals/RomanNumerals.qml:128
+#: activities/roman_numerals/RomanNumerals.qml:81
+#: activities/roman_numerals/RomanNumerals.qml:93
+#: activities/roman_numerals/RomanNumerals.qml:105
+#: activities/roman_numerals/RomanNumerals.qml:117
+#: activities/roman_numerals/RomanNumerals.qml:129
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Convert the roman number %1 in arabic."
@@ -23860,22 +23860,22 @@ msgctxt "RomanNumerals|"
 msgid "Convert the roman number %1 to arabic."
 msgstr "Preveďte rímske číslo %1 na arabské."
 
-#: activities/roman_numerals/RomanNumerals.qml:86
-#: activities/roman_numerals/RomanNumerals.qml:98
-#: activities/roman_numerals/RomanNumerals.qml:110
-#: activities/roman_numerals/RomanNumerals.qml:122
-#: activities/roman_numerals/RomanNumerals.qml:134
-#: activities/roman_numerals/RomanNumerals.qml:140
-#: activities/roman_numerals/RomanNumerals.qml:146
-#: activities/roman_numerals/RomanNumerals.qml:152
-#: activities/roman_numerals/RomanNumerals.qml:158
+#: activities/roman_numerals/RomanNumerals.qml:87
+#: activities/roman_numerals/RomanNumerals.qml:99
+#: activities/roman_numerals/RomanNumerals.qml:111
+#: activities/roman_numerals/RomanNumerals.qml:123
+#: activities/roman_numerals/RomanNumerals.qml:135
+#: activities/roman_numerals/RomanNumerals.qml:141
+#: activities/roman_numerals/RomanNumerals.qml:147
+#: activities/roman_numerals/RomanNumerals.qml:153
+#: activities/roman_numerals/RomanNumerals.qml:159
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the arabic number %1 to roman."
 msgstr "Preveďte arabské číslo %1 na rímske."
 
-#: activities/roman_numerals/RomanNumerals.qml:91
-#: activities/roman_numerals/RomanNumerals.qml:97
+#: activities/roman_numerals/RomanNumerals.qml:92
+#: activities/roman_numerals/RomanNumerals.qml:98
 msgctxt "RomanNumerals|"
 msgid ""
 "All the units except 4 and 9 are built using sums of I and V:\n"
@@ -23888,8 +23888,8 @@ msgstr ""
 " Jednotky 4 a 9 sú zostavené pomocou rozdielov:\n"
 "IV (5 – 1) a IX (10 – 1)."
 
-#: activities/roman_numerals/RomanNumerals.qml:103
-#: activities/roman_numerals/RomanNumerals.qml:109
+#: activities/roman_numerals/RomanNumerals.qml:104
+#: activities/roman_numerals/RomanNumerals.qml:110
 msgctxt "RomanNumerals|"
 msgid ""
 "All the tens except 40 and 90 are built using sums of X and L:\n"
@@ -23902,8 +23902,8 @@ msgstr ""
 "Desiatky 40 a 90 sú zostavené pomocou rozdielov:\n"
 "XL (10 zobraných z 50) a XC (10 zobraných zo 100)."
 
-#: activities/roman_numerals/RomanNumerals.qml:115
-#: activities/roman_numerals/RomanNumerals.qml:121
+#: activities/roman_numerals/RomanNumerals.qml:116
+#: activities/roman_numerals/RomanNumerals.qml:122
 msgctxt "RomanNumerals|"
 msgid ""
 "All the hundreds except 400 and 900 are built using sums of C and D:\n"
@@ -23916,8 +23916,8 @@ msgstr ""
 "Stovky 400 a 900 sú zostavené pomocou rozdielov:\n"
 "CD (100 zobraných z 500) a CM (100 zobraných z 1000)."
 
-#: activities/roman_numerals/RomanNumerals.qml:127
-#: activities/roman_numerals/RomanNumerals.qml:133
+#: activities/roman_numerals/RomanNumerals.qml:128
+#: activities/roman_numerals/RomanNumerals.qml:134
 msgctxt "RomanNumerals|"
 msgid ""
 "Sums of M are used for building thousands: M, MM, MMM.\n"
@@ -23933,19 +23933,19 @@ msgstr ""
 "rozdiely. Na druhej strane obmedzuje maximálne rímske číslo na 3999 "
 "(MMMCMXCIX)."
 
-#: activities/roman_numerals/RomanNumerals.qml:139
+#: activities/roman_numerals/RomanNumerals.qml:140
 msgctxt "RomanNumerals|"
 msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
 msgstr "Teraz viete pravidlá, môžete čítať a písať čísla rímskymi číslicami."
 
-#: activities/roman_numerals/RomanNumerals.qml:385
+#: activities/roman_numerals/RomanNumerals.qml:387
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Rímska hodnota: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:386
+#: activities/roman_numerals/RomanNumerals.qml:388
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"

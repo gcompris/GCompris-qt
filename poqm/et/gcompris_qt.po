@@ -15429,7 +15429,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Vasak- ja paremnool: liikuge kosmoselaeva"
 
-#: activities/gravity/Gravity.qml:220
+#: activities/gravity/Gravity.qml:222
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15441,7 +15441,7 @@ msgstr ""
 "sõltub otseselt mõlema objekti massist ja on pöördvõrdeline nende objektide "
 "keskpunkti lahutava vahemaa ruuduga."
 
-#: activities/gravity/Gravity.qml:223
+#: activities/gravity/Gravity.qml:225
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -15451,7 +15451,7 @@ msgstr ""
 "Kuna raskusjõud on võrdeline mõlema objekti massiga, siis mida suurema "
 "massiga objektid teineteist tõmbavad, seda tugevam on raskusjõud."
 
-#: activities/gravity/Gravity.qml:226
+#: activities/gravity/Gravity.qml:228
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -15462,7 +15462,7 @@ msgstr ""
 "objekti keskkoha vahemaa ruuduga, mis tähendab, et mida kaugemal objektid "
 "teineteisest asuvad, seda väiksem on raskusjõud."
 
-#: activities/gravity/Gravity.qml:229
+#: activities/gravity/Gravity.qml:231
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -15473,7 +15473,7 @@ msgstr ""
 "kuni jõuad kosmosejaama. Nool näitab sinu laeva mõjutava raskusjõu suunda ja "
 "tugevust."
 
-#: activities/gravity/Gravity.qml:232
+#: activities/gravity/Gravity.qml:234
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -23786,8 +23786,8 @@ msgctxt "ActivityInfo|"
 msgid "Letters: type roman numerals (with I, V, X, L, C, D and M)"
 msgstr "Tähed: trükkige rooma numbreid( I, V, X, L, C, D ja M)"
 
-#: activities/roman_numerals/RomanNumerals.qml:79
-#: activities/roman_numerals/RomanNumerals.qml:85
+#: activities/roman_numerals/RomanNumerals.qml:80
+#: activities/roman_numerals/RomanNumerals.qml:86
 msgctxt "RomanNumerals|"
 msgid ""
 "The roman numbers are all built out of these 7 numbers:\n"
@@ -23802,32 +23802,32 @@ msgstr ""
 "ja L (kümnelised 10 ja 50)C ja D (sajalised 100 ja 500) ja M (1000). Huvitav "
 "on ära märkida, et Rooma numbrite seast puudub null (0)."
 
-#: activities/roman_numerals/RomanNumerals.qml:80
-#: activities/roman_numerals/RomanNumerals.qml:92
-#: activities/roman_numerals/RomanNumerals.qml:104
-#: activities/roman_numerals/RomanNumerals.qml:116
-#: activities/roman_numerals/RomanNumerals.qml:128
+#: activities/roman_numerals/RomanNumerals.qml:81
+#: activities/roman_numerals/RomanNumerals.qml:93
+#: activities/roman_numerals/RomanNumerals.qml:105
+#: activities/roman_numerals/RomanNumerals.qml:117
+#: activities/roman_numerals/RomanNumerals.qml:129
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the roman number %1 to arabic."
 msgstr "Teisenda rooma number %1 araabia numbriks."
 
-#: activities/roman_numerals/RomanNumerals.qml:86
-#: activities/roman_numerals/RomanNumerals.qml:98
-#: activities/roman_numerals/RomanNumerals.qml:110
-#: activities/roman_numerals/RomanNumerals.qml:122
-#: activities/roman_numerals/RomanNumerals.qml:134
-#: activities/roman_numerals/RomanNumerals.qml:140
-#: activities/roman_numerals/RomanNumerals.qml:146
-#: activities/roman_numerals/RomanNumerals.qml:152
-#: activities/roman_numerals/RomanNumerals.qml:158
+#: activities/roman_numerals/RomanNumerals.qml:87
+#: activities/roman_numerals/RomanNumerals.qml:99
+#: activities/roman_numerals/RomanNumerals.qml:111
+#: activities/roman_numerals/RomanNumerals.qml:123
+#: activities/roman_numerals/RomanNumerals.qml:135
+#: activities/roman_numerals/RomanNumerals.qml:141
+#: activities/roman_numerals/RomanNumerals.qml:147
+#: activities/roman_numerals/RomanNumerals.qml:153
+#: activities/roman_numerals/RomanNumerals.qml:159
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the arabic number %1 to roman."
 msgstr "Teisenda araabia number %1 rooma numbriks."
 
-#: activities/roman_numerals/RomanNumerals.qml:91
-#: activities/roman_numerals/RomanNumerals.qml:97
+#: activities/roman_numerals/RomanNumerals.qml:92
+#: activities/roman_numerals/RomanNumerals.qml:98
 msgctxt "RomanNumerals|"
 msgid ""
 "All the units except 4 and 9 are built using sums of I and V:\n"
@@ -23840,8 +23840,8 @@ msgstr ""
 "4 ja 9 aga saadakse lahutamisel:\n"
 "IV (5 - 1) ja IX (10 - 1)."
 
-#: activities/roman_numerals/RomanNumerals.qml:103
-#: activities/roman_numerals/RomanNumerals.qml:109
+#: activities/roman_numerals/RomanNumerals.qml:104
+#: activities/roman_numerals/RomanNumerals.qml:110
 msgctxt "RomanNumerals|"
 msgid ""
 "All the tens except 40 and 90 are built using sums of X and L:\n"
@@ -23854,8 +23854,8 @@ msgstr ""
 "40 ja 90 aga saadakse lahutamisel:\n"
 "XL (50 - 10) ja XC (100 - 10)"
 
-#: activities/roman_numerals/RomanNumerals.qml:115
-#: activities/roman_numerals/RomanNumerals.qml:121
+#: activities/roman_numerals/RomanNumerals.qml:116
+#: activities/roman_numerals/RomanNumerals.qml:122
 msgctxt "RomanNumerals|"
 msgid ""
 "All the hundreds except 400 and 900 are built using sums of C and D:\n"
@@ -23868,8 +23868,8 @@ msgstr ""
 "400 ja 900 aga saadakse lahutamisel:\n"
 "CD (500 - 100) ja CM (1000 - 100)"
 
-#: activities/roman_numerals/RomanNumerals.qml:127
-#: activities/roman_numerals/RomanNumerals.qml:133
+#: activities/roman_numerals/RomanNumerals.qml:128
+#: activities/roman_numerals/RomanNumerals.qml:134
 msgctxt "RomanNumerals|"
 msgid ""
 "Sums of M are used for building thousands: M, MM, MMM.\n"
@@ -23884,7 +23884,7 @@ msgstr ""
 "lahutada. Teiselt poolt tähendab see aga, et suurim Rooma number on 3999 "
 "(MMMCMXCIX)."
 
-#: activities/roman_numerals/RomanNumerals.qml:139
+#: activities/roman_numerals/RomanNumerals.qml:140
 msgctxt "RomanNumerals|"
 msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
@@ -23892,13 +23892,13 @@ msgstr ""
 "Nüüd, kus tunned reegleid, võid vaevata kirjutada ja lugeda kõiki rooma "
 "numbreid."
 
-#: activities/roman_numerals/RomanNumerals.qml:385
+#: activities/roman_numerals/RomanNumerals.qml:387
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Rooma number: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:386
+#: activities/roman_numerals/RomanNumerals.qml:388
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"

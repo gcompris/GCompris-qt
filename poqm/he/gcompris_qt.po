@@ -14869,7 +14869,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "חיצים שמאלה וימינה: להזיז את החללית"
 
-#: activities/gravity/Gravity.qml:220
+#: activities/gravity/Gravity.qml:222
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -14881,7 +14881,7 @@ msgstr ""
 "המשיכה מעבר לכדור הארץ. הכח הזה של משיכת כבידה קשור באופן ישיר למאסה של שני "
 "הגופים וביחס הפוך לריבוע המרחק בין המרכזים שלהם."
 
-#: activities/gravity/Gravity.qml:223
+#: activities/gravity/Gravity.qml:225
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -14891,7 +14891,7 @@ msgstr ""
 "מכיון שכח המשיכה נמצא ביחס ישר למאסה של שני גופים שנמצאים באינטראקציה, גופים "
 "בעלי מאסה גדולה יותר ימשכו זה את זה בכח גדול יותר."
 
-#: activities/gravity/Gravity.qml:226
+#: activities/gravity/Gravity.qml:228
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -14901,7 +14901,7 @@ msgstr ""
 "אבל הכח הזה נמצא ביחס הפוך לריבוע המרחק בין שני העצמים המעורבים, מרחק גדול "
 "יותר יגרום לכח משיכה חלש יותר."
 
-#: activities/gravity/Gravity.qml:229
+#: activities/gravity/Gravity.qml:231
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -14911,7 +14911,7 @@ msgstr ""
 "המטרה היא להזיז את החללית ולהימנע מפגיעה בכוכבים עד שתגיעי לתחנת החלל.החץ "
 "מצביע על כיוון ועוצמת כח המשיכה שמופעל  על החללית שלך."
 
-#: activities/gravity/Gravity.qml:232
+#: activities/gravity/Gravity.qml:234
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -22882,8 +22882,8 @@ msgctxt "ActivityInfo|"
 msgid "Letters: type roman numerals (with I, V, X, L, C, D and M)"
 msgstr "אותיות: להקליד ספרות רומיות (עם M,‏ I,‏ V,‏ X,‏ L,‏ C,‏ D)"
 
-#: activities/roman_numerals/RomanNumerals.qml:79
-#: activities/roman_numerals/RomanNumerals.qml:85
+#: activities/roman_numerals/RomanNumerals.qml:80
+#: activities/roman_numerals/RomanNumerals.qml:86
 msgctxt "RomanNumerals|"
 msgid ""
 "The roman numbers are all built out of these 7 numbers:\n"
@@ -22901,32 +22901,32 @@ msgstr ""
 " ו־M (1000).\n"
 " הנקודה המעניינת היא שבמערכת הספרות הרומיות לא קיים המספר 0."
 
-#: activities/roman_numerals/RomanNumerals.qml:80
-#: activities/roman_numerals/RomanNumerals.qml:92
-#: activities/roman_numerals/RomanNumerals.qml:104
-#: activities/roman_numerals/RomanNumerals.qml:116
-#: activities/roman_numerals/RomanNumerals.qml:128
+#: activities/roman_numerals/RomanNumerals.qml:81
+#: activities/roman_numerals/RomanNumerals.qml:93
+#: activities/roman_numerals/RomanNumerals.qml:105
+#: activities/roman_numerals/RomanNumerals.qml:117
+#: activities/roman_numerals/RomanNumerals.qml:129
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the roman number %1 to arabic."
 msgstr "להמיר המספר הרומי %1 לספרות ערביות."
 
-#: activities/roman_numerals/RomanNumerals.qml:86
-#: activities/roman_numerals/RomanNumerals.qml:98
-#: activities/roman_numerals/RomanNumerals.qml:110
-#: activities/roman_numerals/RomanNumerals.qml:122
-#: activities/roman_numerals/RomanNumerals.qml:134
-#: activities/roman_numerals/RomanNumerals.qml:140
-#: activities/roman_numerals/RomanNumerals.qml:146
-#: activities/roman_numerals/RomanNumerals.qml:152
-#: activities/roman_numerals/RomanNumerals.qml:158
+#: activities/roman_numerals/RomanNumerals.qml:87
+#: activities/roman_numerals/RomanNumerals.qml:99
+#: activities/roman_numerals/RomanNumerals.qml:111
+#: activities/roman_numerals/RomanNumerals.qml:123
+#: activities/roman_numerals/RomanNumerals.qml:135
+#: activities/roman_numerals/RomanNumerals.qml:141
+#: activities/roman_numerals/RomanNumerals.qml:147
+#: activities/roman_numerals/RomanNumerals.qml:153
+#: activities/roman_numerals/RomanNumerals.qml:159
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the arabic number %1 to roman."
 msgstr "להמיר את המספר הערבי %1 לספרות רומיות."
 
-#: activities/roman_numerals/RomanNumerals.qml:91
-#: activities/roman_numerals/RomanNumerals.qml:97
+#: activities/roman_numerals/RomanNumerals.qml:92
+#: activities/roman_numerals/RomanNumerals.qml:98
 msgctxt "RomanNumerals|"
 msgid ""
 "All the units except 4 and 9 are built using sums of I and V:\n"
@@ -22939,8 +22939,8 @@ msgstr ""
 "ה4 וה9 נבנים באמצעות הפרשים:\n"
 "IV (5 – 1) ו IX (10 – 1)"
 
-#: activities/roman_numerals/RomanNumerals.qml:103
-#: activities/roman_numerals/RomanNumerals.qml:109
+#: activities/roman_numerals/RomanNumerals.qml:104
+#: activities/roman_numerals/RomanNumerals.qml:110
 #, fuzzy
 msgctxt "RomanNumerals|"
 msgid ""
@@ -22954,8 +22954,8 @@ msgstr ""
 "ה40 וה90 נבנים באמצעות הפרשים:\n"
 "בדוגמא XL (10 שנלקח מ50) וXC שזה (10 שנלקח מ100)."
 
-#: activities/roman_numerals/RomanNumerals.qml:115
-#: activities/roman_numerals/RomanNumerals.qml:121
+#: activities/roman_numerals/RomanNumerals.qml:116
+#: activities/roman_numerals/RomanNumerals.qml:122
 #, fuzzy
 msgctxt "RomanNumerals|"
 msgid ""
@@ -22969,8 +22969,8 @@ msgstr ""
 "ה400 וה900 נוצרים באמצעות הפרשים:\n"
 "כך שCD שבו (100 נלקח מ500) וCM שבו (100 נלקח מ1000)."
 
-#: activities/roman_numerals/RomanNumerals.qml:127
-#: activities/roman_numerals/RomanNumerals.qml:133
+#: activities/roman_numerals/RomanNumerals.qml:128
+#: activities/roman_numerals/RomanNumerals.qml:134
 #, fuzzy
 msgctxt "RomanNumerals|"
 msgid ""
@@ -22986,19 +22986,19 @@ msgstr ""
 "מאות. צריך להשתמש גם בהפרשים. מצד שני, זה מגביל את המספר המרבי בספרות רומיות "
 "ל־3999 (MMMCMXCIX)."
 
-#: activities/roman_numerals/RomanNumerals.qml:139
+#: activities/roman_numerals/RomanNumerals.qml:140
 msgctxt "RomanNumerals|"
 msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
 msgstr "עכשיו כשיודעים את החוקים, אפשר לקרוא ולכתוב ספרות רומיות."
 
-#: activities/roman_numerals/RomanNumerals.qml:385
+#: activities/roman_numerals/RomanNumerals.qml:387
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "ערך רומי: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:386
+#: activities/roman_numerals/RomanNumerals.qml:388
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"

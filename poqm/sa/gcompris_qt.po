@@ -14855,7 +14855,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "वामः दक्षिणः च बाणाः : अन्तरिक्षयानं चालयन्तु"
 
-#: activities/gravity/Gravity.qml:220
+#: activities/gravity/Gravity.qml:222
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -14867,7 +14867,7 @@ msgstr ""
 "पृथिव्याः परं विस्तारयति । इदं गुरुत्वाकर्षणबलं प्रत्यक्षतया उभयवस्तूनाम् द्रव्यमानेन आश्रितं "
 "भवति, तेषां केन्द्रान्तरस्य वर्गस्य च विपरीतरूपेण आनुपातिकं भवति"
 
-#: activities/gravity/Gravity.qml:223
+#: activities/gravity/Gravity.qml:225
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -14877,7 +14877,7 @@ msgstr ""
 "गुरुत्वाकर्षणबलं द्वयोः परस्परक्रियाशीलवस्तूनाम् द्रव्यमानस्य साक्षात् आनुपातिकत्वात् "
 "अधिकविशालवस्तूनि अधिकेन गुरुत्वाकर्षणबलेन परस्परं आकर्षयिष्यन्ति"
 
-#: activities/gravity/Gravity.qml:226
+#: activities/gravity/Gravity.qml:228
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -14887,7 +14887,7 @@ msgstr ""
 "परन्तु यतः एतत् बलं द्वयोः परस्परक्रियाशीलवस्तूनाम् अन्तरस्य वर्गस्य विपरीतरूपेण आनुपातिकं "
 "भवति, तस्मात् अधिकं दूरं दुर्बलतरं गुरुत्वाकर्षणबलं भविष्यति"
 
-#: activities/gravity/Gravity.qml:229
+#: activities/gravity/Gravity.qml:231
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -14897,7 +14897,7 @@ msgstr ""
 "भवतः लक्ष्यं अस्ति यत् अन्तरिक्षयानं चालयितुं यावत् भवन्तः अन्तरिक्षस्थानकं न प्राप्नुवन्ति तावत् "
 "ग्रहाणां प्रहारं परिहरन्तु । बाणः भवतः पोते गुरुत्वाकर्षणस्य दिशां तीव्रता च सूचयति ।"
 
-#: activities/gravity/Gravity.qml:232
+#: activities/gravity/Gravity.qml:234
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -22786,8 +22786,8 @@ msgctxt "ActivityInfo|"
 msgid "Letters: type roman numerals (with I, V, X, L, C, D and M)"
 msgstr "अक्षराणि : रोमन संख्याः प्रकाराः (I, V, X, L, C, D तथा M इत्यनेन सह)"
 
-#: activities/roman_numerals/RomanNumerals.qml:79
-#: activities/roman_numerals/RomanNumerals.qml:85
+#: activities/roman_numerals/RomanNumerals.qml:80
+#: activities/roman_numerals/RomanNumerals.qml:86
 msgctxt "RomanNumerals|"
 msgid ""
 "The roman numbers are all built out of these 7 numbers:\n"
@@ -22805,32 +22805,32 @@ msgstr ""
 " तथा म (१०००) ।\n"
 " अत्र एकं रोचकं अवलोकनं यत् रोमनसंख्यातन्त्रे ० सङ्ख्यायाः अभावः अस्ति ।"
 
-#: activities/roman_numerals/RomanNumerals.qml:80
-#: activities/roman_numerals/RomanNumerals.qml:92
-#: activities/roman_numerals/RomanNumerals.qml:104
-#: activities/roman_numerals/RomanNumerals.qml:116
-#: activities/roman_numerals/RomanNumerals.qml:128
+#: activities/roman_numerals/RomanNumerals.qml:81
+#: activities/roman_numerals/RomanNumerals.qml:93
+#: activities/roman_numerals/RomanNumerals.qml:105
+#: activities/roman_numerals/RomanNumerals.qml:117
+#: activities/roman_numerals/RomanNumerals.qml:129
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the roman number %1 to arabic."
 msgstr "रोमनसङ्ख्यां %1 अरबीभाषायां परिवर्तयन्तु ।"
 
-#: activities/roman_numerals/RomanNumerals.qml:86
-#: activities/roman_numerals/RomanNumerals.qml:98
-#: activities/roman_numerals/RomanNumerals.qml:110
-#: activities/roman_numerals/RomanNumerals.qml:122
-#: activities/roman_numerals/RomanNumerals.qml:134
-#: activities/roman_numerals/RomanNumerals.qml:140
-#: activities/roman_numerals/RomanNumerals.qml:146
-#: activities/roman_numerals/RomanNumerals.qml:152
-#: activities/roman_numerals/RomanNumerals.qml:158
+#: activities/roman_numerals/RomanNumerals.qml:87
+#: activities/roman_numerals/RomanNumerals.qml:99
+#: activities/roman_numerals/RomanNumerals.qml:111
+#: activities/roman_numerals/RomanNumerals.qml:123
+#: activities/roman_numerals/RomanNumerals.qml:135
+#: activities/roman_numerals/RomanNumerals.qml:141
+#: activities/roman_numerals/RomanNumerals.qml:147
+#: activities/roman_numerals/RomanNumerals.qml:153
+#: activities/roman_numerals/RomanNumerals.qml:159
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the arabic number %1 to roman."
 msgstr "अरबीसङ्ख्यां %1 रोमन इति परिवर्तयन्तु ।"
 
-#: activities/roman_numerals/RomanNumerals.qml:91
-#: activities/roman_numerals/RomanNumerals.qml:97
+#: activities/roman_numerals/RomanNumerals.qml:92
+#: activities/roman_numerals/RomanNumerals.qml:98
 msgctxt "RomanNumerals|"
 msgid ""
 "All the units except 4 and 9 are built using sums of I and V:\n"
@@ -22843,8 +22843,8 @@ msgstr ""
 " ४ तथा ९ एककयोः निर्माणं भेदानाम् उपयोगेन भवति : १.\n"
 "चतुर्थः (५ – १) नवमः (१० – १) च ।"
 
-#: activities/roman_numerals/RomanNumerals.qml:103
-#: activities/roman_numerals/RomanNumerals.qml:109
+#: activities/roman_numerals/RomanNumerals.qml:104
+#: activities/roman_numerals/RomanNumerals.qml:110
 msgctxt "RomanNumerals|"
 msgid ""
 "All the tens except 40 and 90 are built using sums of X and L:\n"
@@ -22857,8 +22857,8 @@ msgstr ""
 "४० ९० दश च भेदानाम् उपयोगेन निर्मिताः सन्ति : १.\n"
 "XL (५० तः १० गृहीतम्) XC (१०० तः १० गृहीतम्) च ।"
 
-#: activities/roman_numerals/RomanNumerals.qml:115
-#: activities/roman_numerals/RomanNumerals.qml:121
+#: activities/roman_numerals/RomanNumerals.qml:116
+#: activities/roman_numerals/RomanNumerals.qml:122
 msgctxt "RomanNumerals|"
 msgid ""
 "All the hundreds except 400 and 900 are built using sums of C and D:\n"
@@ -22871,8 +22871,8 @@ msgstr ""
 "४०० ९०० शतानि च भेदानाम् उपयोगेन निर्मिताः सन्ति :\n"
 "सीडी (५०० तः १०० गृहीतम्) सीएम (१०० १००० तः गृहीतम्) च ।"
 
-#: activities/roman_numerals/RomanNumerals.qml:127
-#: activities/roman_numerals/RomanNumerals.qml:133
+#: activities/roman_numerals/RomanNumerals.qml:128
+#: activities/roman_numerals/RomanNumerals.qml:134
 msgctxt "RomanNumerals|"
 msgid ""
 "Sums of M are used for building thousands: M, MM, MMM.\n"
@@ -22887,19 +22887,19 @@ msgstr ""
 "कर्तुं न शक्नुवन्ति, दश वा शतानि वा, भवन्तः भेदानाम् अपि उपयोगं कर्तुं शक्नुवन्ति । अपरपक्षे "
 "अधिकतमं रोमनसङ्ख्यां ३९९९ (MMMCMXCIX) यावत् सीमितं करोति ।"
 
-#: activities/roman_numerals/RomanNumerals.qml:139
+#: activities/roman_numerals/RomanNumerals.qml:140
 msgctxt "RomanNumerals|"
 msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
 msgstr "इदानीं भवन्तः नियमाः जानन्ति, रोमनसङ्ख्यासु संख्याः पठितुं लिखितुं च शक्नुवन्ति।"
 
-#: activities/roman_numerals/RomanNumerals.qml:385
+#: activities/roman_numerals/RomanNumerals.qml:387
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "रोमन मूल्यम् : %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:386
+#: activities/roman_numerals/RomanNumerals.qml:388
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
