@@ -2741,21 +2741,11 @@ msgid ""
 msgstr "打开右边的灯泡表示给定十进制数字的二进制数。完成后，按确定."
 
 #: activities/binary_bulb/BinaryBulb.qml:84
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "This activity teaches how to convert decimal numbers to binary numbers."
 msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr "这个活动教学如何将十进制数字转换为二进制数字。"
 
 #: activities/binary_bulb/BinaryBulb.qml:88
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Computers use transistors to count and transistors have only two states, "
-#| "0 and 1. Mathematically, these states are represented by 0 and 1, which "
-#| "makes up the binary system of numeration."
 msgctxt "BinaryBulb|"
 msgid ""
 "Computers use transistors to count and transistors have only two states, 0 "
@@ -2766,19 +2756,11 @@ msgstr ""
 "些状态由 0 和 1 表示，构成二元计算系统。"
 
 #: activities/binary_bulb/BinaryBulb.qml:92
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr "在活动0和1中用点亮或熄灭的灯泡模拟。"
 
 #: activities/binary_bulb/BinaryBulb.qml:96
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Binary system uses these numbers very efficiently, allowing to count from "
-#| "0 to 255 with 8 bits only."
 msgctxt "BinaryBulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
@@ -2786,13 +2768,6 @@ msgid ""
 msgstr "二进制系统非常有效地使用这些数字，只用8比特就可以从0到255计数。"
 
 #: activities/binary_bulb/BinaryBulb.qml:100
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Each bit adds a progressive value, corresponding to the powers of 2, "
-#| "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → "
-#| "2²=4 , bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit "
-#| "8 → 2⁷=128."
 msgctxt "BinaryBulb|"
 msgid ""
 "Each bit adds a progressive value, corresponding to the powers of 2, "
@@ -2805,19 +2780,11 @@ msgstr ""
 "8 → 2⁷=128。"
 
 #: activities/binary_bulb/BinaryBulb.qml:104
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr "要将十进制的 5 转换为二进制值，则添加1和4。"
 
 #: activities/binary_bulb/BinaryBulb.qml:108
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 "
-#| "is equal to binary 101."
 msgctxt "BinaryBulb|"
 msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
@@ -2825,9 +2792,6 @@ msgid ""
 msgstr "相应的位数设置为1，其他位数设置为0。十进制 5 等于二进制 101 。"
 
 #: activities/binary_bulb/BinaryBulb.qml:112
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "This image will help you to compute bits' value."
 msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "这个图片将帮助您计算位值。"
@@ -15877,13 +15841,6 @@ msgid ""
 msgstr ""
 
 #: activities/learn_decimals/Learn_decimals.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A decimal number is displayed. Drag the arrow to select a part of the "
-#| "unit bar, and drag the selected part of the bar to the empty area. Repeat "
-#| "these steps until the number of dropped bars corresponds to the displayed "
-#| "decimal number. Then click on the OK button to validate your answer."
 msgctxt "Learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -15891,9 +15848,6 @@ msgid ""
 "bars corresponds to the displayed decimal number. Then click on the OK "
 "button to validate your answer."
 msgstr ""
-"屏幕上会显示一个小数。拖动箭头选择单位长条的一部分，然后将选中的长条部分拖到"
-"空白区域。重复这些步骤，直到拖出的长条数量与显示的小数相符。然后点击“确定”按"
-"钮来验证你的答案。 "
 
 #: activities/learn_decimals/Learn_decimals.qml:150
 #, qt-format
@@ -15992,14 +15946,6 @@ msgid ""
 msgstr ""
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "An addition with two decimal numbers is displayed. Drag the arrow to "
-#| "select a part of the unit bar, and drag the selected part of the bar to "
-#| "the empty area. Repeat these steps until the number of dropped bars "
-#| "corresponds to the result of the addition, and click on the OK button to "
-#| "validate your answer."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -16007,24 +15953,13 @@ msgid ""
 "bars corresponds to the result of the addition, and click on the OK button "
 "to validate your answer."
 msgstr ""
-"屏幕上会显示一道两个小数相加的算式。拖动箭头选择单位长条的一部分，然后将选中"
-"的长条部分拖到空白区域。重复这些步骤，直到拖出的长条数量与加法运算的结果相"
-"符，接着点击“确定”按钮来验证答案。 "
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Arrange the pictures to make a coherent story. Drag the pictures from the "
-#| "sidebar to the corresponding dots, then click the OK button to validate "
-#| "your answer."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr ""
-"排列图片以组成一个连贯的故事。将图片从侧边栏拖到相应的点上，然后点击“确定”按"
-"钮来验证你的答案。"
 
 #: activities/learn_decimals_additions/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -16081,34 +16016,18 @@ msgid ""
 msgstr ""
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Change the color by moving the sliders on the paint tubes or by clicking "
-#| "on the + and - buttons. Then click on the OK button to validate your "
-#| "answer."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
 "operation, and click on the OK button to validate your answer."
 msgstr ""
-"通过移动绘画管上的滑块或点击 + 和 - 按钮来更改颜色。 然后点击“确定”按钮来验证"
-"您的答案。"
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Arrange the pictures to make a coherent story. Drag the pictures from the "
-#| "sidebar to the corresponding dots, then click the OK button to validate "
-#| "your answer."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr ""
-"排列图片以组成一个连贯的故事。将图片从侧边栏拖到相应的点上，然后点击“确定”按"
-"钮来验证你的答案。"
 
 #: activities/learn_decimals_subtractions/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -16268,13 +16187,6 @@ msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr ""
 
 #: activities/learn_quantities/Learn_quantities.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A decimal number is displayed. Drag the arrow to select a part of the "
-#| "unit bar, and drag the selected part of the bar to the empty area. Repeat "
-#| "these steps until the number of dropped bars corresponds to the displayed "
-#| "decimal number. Then click on the OK button to validate your answer."
 msgctxt "Learn_quantities|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "
@@ -16282,9 +16194,6 @@ msgid ""
 "corresponds to the requested quantity. Then click on the OK button to "
 "validate your answer."
 msgstr ""
-"屏幕上会显示一个小数。拖动箭头选择单位长条的一部分，然后将选中的长条部分拖到"
-"空白区域。重复这些步骤，直到拖出的长条数量与显示的小数相符。然后点击“确定”按"
-"钮来验证你的答案。 "
 
 #: activities/learn_quantities/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -19280,11 +19189,6 @@ msgid ""
 msgstr ""
 
 #: activities/nine_men_morris/NineMenMorris.qml:364
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you immobilize the computer or leave it with less than 3 pieces, then "
-#| "you win the game."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
@@ -21398,12 +21302,9 @@ msgid "Loop"
 msgstr ""
 
 #: activities/programmingMaze/ProgrammingMaze.qml:542
-#, fuzzy
-#| msgctxt "Lang|"
-#| msgid "construction"
 msgctxt "ProgrammingMaze|"
 msgid "Instruction Area:"
-msgstr "建筑"
+msgstr ""
 
 #: activities/programmingMaze/ProgrammingMaze.qml:543
 msgctxt "ProgrammingMaze|"
@@ -24686,9 +24587,6 @@ msgid "Right Ballast Tank"
 msgstr "右侧压水舱"
 
 #: activities/submarine/Submarine.qml:133
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Move the submarine to the other side of the screen."
 msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "移动潜艇到屏幕另一侧。"
@@ -26713,7 +26611,3 @@ msgstr "跳过"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "开始"
-
-#~ msgctxt "Frieze|"
-#~ msgid "What is the binary representation of %1?"
-#~ msgstr "%1 的二进制表示是什么？"
