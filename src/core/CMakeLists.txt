@@ -133,7 +133,7 @@ else()
   file(GLOB core_qml_files RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.qml *.js)
   file(GLOB core_resources_files RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} resource/*.${COMPRESSED_AUDIO} resource/*.gif resource/*.png resource/*.svg resource/*.pem resource/bonus/* resource/sounds/* resource/fonts/*.*)
 
-  set_source_files_properties(GCSingletonFontLoader.qml PROPERTIES
+  set_source_files_properties(GCSingletonFontLoader.qml GCStyle.qml PROPERTIES
     QT_QML_SINGLETON_TYPE TRUE
     )
   qt_add_qml_module(
