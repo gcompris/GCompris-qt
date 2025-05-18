@@ -57,10 +57,32 @@ ActivityBase {
             property int numberOfRowsCompleted: 0
             property alias score: score
             property bool buttonsBlocked: false
+            property alias client: client
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
+
+        Client {    // Client for server version. Prepare data from activity to server
+            id: client
+            getDataCallback: function() {
+                var results = new Array();
+                for(var i = 0; i < items.dataListModel.count; ++i) {
+                    var line = items.dataListModel.get(i);
+                    var result = {
+                        "leftNumber": line.leftHandSide,
+                        "rightNumber": line.rightHandSide,
+                        "operator": line.symbol,
+                        "correctAnswer": line.isCorrectAnswer
+                    }
+                    results.push(result)
+                }
+                var data = {
+                    "results": results
+                }
+                return data
+            }
+        }
 
         GCSoundEffect {
             id: goodAnswerSound
