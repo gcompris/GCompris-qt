@@ -112,6 +112,7 @@ function initLevel() {
     items.selectedLine = 0;
 
     items.buttonsBlocked = false;
+    items.client.startTiming(); // for server version
 }
 
 function checkAnswer() {
@@ -131,9 +132,11 @@ function checkAnswer() {
         items.score.currentSubLevel += 1;
         items.score.playWinAnimation();
         items.goodAnswerSound.play();
+        items.client.sendToServer(true);
     }
     else {
         items.badAnswerSound.play();
+        items.client.sendToServer(false);
     }
 }
 
