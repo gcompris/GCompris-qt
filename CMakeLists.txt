@@ -64,9 +64,7 @@ if(CMAKE_SYSTEM_NAME STREQUAL Android)
 endif()
 
 # Set executable filename
-if(ANDROID)
-  set(GCOMPRIS_EXECUTABLE_NAME GCompris)
-elseif(WIN32)
+if(ANDROID OR HAIKU OR WIN32)
   set(GCOMPRIS_EXECUTABLE_NAME GCompris)
 else()
   set(GCOMPRIS_EXECUTABLE_NAME gcompris-qt)
