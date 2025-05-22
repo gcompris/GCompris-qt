@@ -2852,6 +2852,8 @@ msgstr ""
 msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr ""
+"Tato aktivita učí, jak převádět čísla v desítkové soustavě na dvojkovou "
+"soustavu."
 
 #: activities/binary_bulb/BinaryBulb.qml:88
 msgctxt "BinaryBulb|"
@@ -2860,11 +2862,15 @@ msgid ""
 "and 1. Mathematically, these states are represented by 0 and 1, which makes "
 "up the binary system of numeration."
 msgstr ""
+"Počítače používají k počítání tranzistory a tranzistory mají pouze dva "
+"stavy, 0 a 1. Matematicky jsou tyto stavy reprezentovány čísly 0 a 1, které "
+"tvoří základ binárního systému."
 
 #: activities/binary_bulb/BinaryBulb.qml:92
 msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr ""
+"V aktivitě jsou čísla 0 a 1 simulovány zapnutými a vypnutými žárovkami."
 
 #: activities/binary_bulb/BinaryBulb.qml:96
 msgctxt "BinaryBulb|"
@@ -2872,6 +2878,8 @@ msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
 "to 255 with 8 bits only."
 msgstr ""
+"Binární systém používá tato čísla velmi efektivně a umožňuje počítat od 0 na "
+"255 pouze s 8 bity."
 
 #: activities/binary_bulb/BinaryBulb.qml:100
 msgctxt "BinaryBulb|"
@@ -2881,11 +2889,15 @@ msgid ""
 "bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit 8 → "
 "2⁷=128."
 msgstr ""
+"Každý bit přidává progresivní hodnotu, odpovídající mocninám 2, vzestupně "
+"zprava doleva: bit 1 → 2⁰ = 1, bit 2 → 2¹ = 2, bit 3 → 2² = 4, bit 4 → 2³ = "
+"8, bit 5 → 2⁴ = 16, bit 6 → 2⁵ = 32, bit 7 → 2⁶ = 64, bit 8 → 2⁷ = 128."
 
 #: activities/binary_bulb/BinaryBulb.qml:104
 msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr ""
+"Chcete-li převést 5 v desítkové soustavě na dvojkovou, sečtou se čísla 1 a 4."
 
 #: activities/binary_bulb/BinaryBulb.qml:108
 msgctxt "BinaryBulb|"
@@ -2893,11 +2905,13 @@ msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
 "equal to binary 101."
 msgstr ""
+"Jejich odpovídající bity jsou nastaveny na 1, ostatní jsou nastaveny na 0."
+"Desítkové číslo 5 se rovná se binárnímu 101."
 
 #: activities/binary_bulb/BinaryBulb.qml:112
 msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
-msgstr ""
+msgstr "Tento obrázek ti pomůže vypočítat bitovou hodnotu."
 
 #: activities/binary_bulb/BinaryBulb.qml:160
 #, qt-format
@@ -5813,7 +5827,7 @@ msgstr "Digitální elektřina"
 #: activities/digital_electricity/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr ""
+msgstr "Vytvoř a simuluj digitální logický obvod."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -14557,17 +14571,17 @@ msgstr "Prázdné"
 #: activities/grammar_analysis/GrammarAnalysis.qml:26
 msgctxt "GrammarAnalysis|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "Určování slovních druhů"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:27
 msgctxt "GrammarAnalysis|"
 msgid "Learn to identify grammatical classes."
-msgstr ""
+msgstr "Nauč se poznávat slovní druhy."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:28
 msgctxt "GrammarAnalysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
-msgstr ""
+msgstr "Najdi všechna slova odpovídající požadovanému slovnímu druhu."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:29
 msgctxt "GrammarAnalysis|"
@@ -14575,11 +14589,13 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Vyber slovní druh ze seznamu, pak vyber obdélník pod slovem a přiřaď mu "
+"tento druh."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:30
 msgctxt "GrammarAnalysis|"
 msgid "Leave the box blank if no class matches."
-msgstr ""
+msgstr "Pokud žádný ze slovních druhů neodpovídá, ponechej obdélník prázdný."
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
@@ -14610,17 +14626,17 @@ msgstr "Pokud žádný ze slovních druhů neodpovídá, ponechej obdélník pr�
 #: activities/grammar_classes/GrammarClasses.qml:15
 msgctxt "GrammarClasses|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "Slovní druhy"
 
 #: activities/grammar_classes/GrammarClasses.qml:16
 msgctxt "GrammarClasses|"
 msgid "Learn to identify grammatical classes."
-msgstr ""
+msgstr "Nauč se poznávat slovní druhy."
 
 #: activities/grammar_classes/GrammarClasses.qml:17
 msgctxt "GrammarClasses|"
 msgid "Find all the words corresponding to the requested grammatical class."
-msgstr ""
+msgstr "Najdi všechna slova odpovídající požadovanému slovnímu druhu."
 
 #: activities/grammar_classes/GrammarClasses.qml:18
 msgctxt "GrammarClasses|"
@@ -14628,11 +14644,13 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Vyber slovní druh ze seznamu, pak vyber obdélník pod slovem a přiřaď mu "
+"tento slovní druh."
 
 #: activities/grammar_classes/GrammarClasses.qml:19
 msgctxt "GrammarClasses|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr ""
+msgstr "Pokud žádný ze slovních druhů neodpovídá, ponechej obdélník prázdný."
 
 #: activities/graph-coloring/ActivityConfig.qml:22
 #: activities/superbrain/ActivityConfig.qml:22
@@ -16202,6 +16220,8 @@ msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
 "unit, and each square in it represents one tenth of this unit."
 msgstr ""
+"Zobrazuje se desetinné číslo. Lišta se šipkou představuje celou jednotku a "
+"každý čtvereček představuje jednu desetinu této jednotky."
 
 #: activities/learn_decimals/Learn_decimals.qml:34
 msgctxt "Learn_decimals|"
@@ -16211,6 +16231,10 @@ msgid ""
 "bars corresponds to the displayed decimal number. Then click on the OK "
 "button to validate your answer."
 msgstr ""
+"Přesuň šipku pro výběr části lišty, poté přesuň vybranou část lišty do "
+"prázdné oblasti. Opakuj tyto kroky dokud počet přesunutých lišt neodpovídá "
+"zobrazenému desetinnému číslu. Pak klikni na tlačítko OK pro ověření tvé "
+"odpovědi."
 
 #: activities/learn_decimals/Learn_decimals.qml:150
 #, qt-format
@@ -16311,6 +16335,8 @@ msgid ""
 "represents a full unit, and each square in it represents one tenth of this "
 "unit."
 msgstr ""
+"Zobrazuje se součet dvou desetinných čísel. Lišta představuje celou jednotku "
+"a každý čtvereček je jednou desetinou této jednotky."
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:20
 msgctxt "Learn_decimals_additions|"
@@ -16320,6 +16346,9 @@ msgid ""
 "bars corresponds to the result of the addition, and click on the OK button "
 "to validate your answer."
 msgstr ""
+"Přesuň šipku pro výběr části lišty, poté přesuň vybranou část lišty do "
+"prázdné oblasti. Opakuj tyto kroky dokud počet přesunutých lišt neodpovídá "
+"výsledku součtu. Pak klikni na tlačítko OK pro ověření tvé odpovědi."
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:24
 msgctxt "Learn_decimals_additions|"
@@ -16327,6 +16356,8 @@ msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr ""
+"Pokud je odpověď správná, napiš odpovídající výsledek a potvrď tvou odpověď "
+"kliknutím na tlačítko OK."
 
 #: activities/learn_decimals_additions/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -16387,6 +16418,9 @@ msgid ""
 "number from the subtraction is represented with bars. One bar represents a "
 "full unit, and each square in it represents one tenth of this unit."
 msgstr ""
+"Zobrazuje se rozdíl dvou desetinných čísel. Pod ním je první číslo z rozdílu "
+"zobrazeno pomocí lišt. Jedna lišta představuje celou jednotku a každý "
+"čtvereček je jednou desetinou této jednotky."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:20
 msgctxt "Learn_decimals_subtractions|"
@@ -16394,6 +16428,8 @@ msgid ""
 "Click on the squares to subtract them and display the result of the "
 "operation, and click on the OK button to validate your answer."
 msgstr ""
+"Klikni na čtverečky pro jejich odečtení a zobrazení výsledku operace. Poté "
+"klikni na tlačítko OK pro ověření tvé odpovědi."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:24
 msgctxt "Learn_decimals_subtractions|"
@@ -16401,6 +16437,8 @@ msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr ""
+"Pokud je odpověď správná, napiš odpovídající výsledek a potvrď tvou odpověď "
+"kliknutím na tlačítko OK."
 
 #: activities/learn_decimals_subtractions/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -16562,7 +16600,7 @@ msgstr ""
 #: activities/learn_quantities/Learn_quantities.qml:16
 msgctxt "Learn_quantities|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
-msgstr ""
+msgstr "Je vyžadováno množství. Šipka umožňuje výběr až 10 pomerančů. "
 
 #: activities/learn_quantities/Learn_quantities.qml:20
 msgctxt "Learn_quantities|"
@@ -16572,6 +16610,10 @@ msgid ""
 "corresponds to the requested quantity. Then click on the OK button to "
 "validate your answer."
 msgstr ""
+"Přesuň šipku pro výběr počtu pomerančů, poté přesuň vybrané pomeranče do "
+"prázdné oblasti. Opakuj tyto kroky dokud počet přesunutých pomerančů "
+"neodpovídá požadovanému množství. Pak klikni na tlačítko OK pro ověření tvé "
+"odpovědi."
 
 #: activities/learn_quantities/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -19704,6 +19746,8 @@ msgid ""
 "You and Tux start with 9 pieces each, and take turns to place your pieces on "
 "the empty spots of the board (by clicking on the spots)."
 msgstr ""
+"Ty a Tux začínáte každý s 9 kameny. Umísti své kameny na volná místa na "
+"desce (pomocí klikání na tato místa). "
 
 #: activities/nine_men_morris/NineMenMorris.qml:352
 msgctxt "NineMenMorris|"
@@ -19712,6 +19756,9 @@ msgid ""
 "remove it. Pieces of formed mill can not be removed unless no other pieces "
 "are left on the board."
 msgstr ""
+"Pokud postavíš mlýn (řadu 3 kamenů), tak vyber jeden Tuxům kámen, který bude "
+"odstraněn. Kameny, které tvoří mlýn, nemohou být odstraněny, dokud jsou na "
+"desce jiné kameny, které je možné odstranit."
 
 #: activities/nine_men_morris/NineMenMorris.qml:356
 msgctxt "NineMenMorris|"
@@ -19720,6 +19767,10 @@ msgid ""
 "Click on one of your pieces, and then on an adjacent empty spot to move it "
 "there. Green color spots indicates where you can move."
 msgstr ""
+"Poté co jsou všechny kameny umístěny, ty i Tux táhnete tak, že jednotlivé "
+"kameny přesouváte. Klikni na jeden ze svých kamenů a pak na sousední volné "
+"místo, aby se tam kámen přesunul. Zeleně vybarvená místa ukazují, kam je "
+"možné táhnout."
 
 #: activities/nine_men_morris/NineMenMorris.qml:360
 msgctxt "NineMenMorris|"
@@ -19727,6 +19778,8 @@ msgid ""
 "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
 "moved to any vacant spot on the board."
 msgstr ""
+"Pokud ti zbývají poslední 3 kameny, dostávají schopnost létat, takže se "
+"mohou přesunout na kterékoliv volné místo na desce."
 
 #: activities/nine_men_morris/NineMenMorris.qml:364
 msgctxt "NineMenMorris|"
@@ -19734,6 +19787,8 @@ msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
 "win the game."
 msgstr ""
+"Pokud znehybníš protihráče nebo mu zůstanou méně než 3 kameny, pak vyhráváš "
+"hru."
 
 #. Activity title
 #: activities/nine_men_morris_2players/ActivityInfo.qml:15
@@ -21987,13 +22042,15 @@ msgstr "Smyčka"
 #: activities/programmingMaze/ProgrammingMaze.qml:542
 msgctxt "ProgrammingMaze|"
 msgid "Instruction Area:"
-msgstr ""
+msgstr "Oblast příkazů:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:543
 msgctxt "ProgrammingMaze|"
 msgid ""
 "There are 3 instructions which you can use to code and lead Tux to the fish:"
 msgstr ""
+"Máš k dispozici 3 příkazy, které můžeš použít pro kódování a navedení Tuxe k "
+"rybě:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:544
 msgctxt "ProgrammingMaze|"
@@ -22001,26 +22058,28 @@ msgid ""
 "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
 "facing."
 msgstr ""
+"<b>1. Posun vpřed:</b> Přesune Tuxe o jeden krok kupředu ve směru, kam se "
+"dívá."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:545
 msgctxt "ProgrammingMaze|"
 msgid "<b>2. Turn left:</b> Turns Tux to the left."
-msgstr ""
+msgstr "<b>2. Otočení vlevo:</b> Tux se otočí doleva."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:546
 msgctxt "ProgrammingMaze|"
 msgid "<b>3. Turn right:</b> Turns Tux to the right."
-msgstr ""
+msgstr "<b>3. Otočení vpravo:</b> Tux se otočí doprava."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:550
 msgctxt "ProgrammingMaze|"
 msgid "Main Function:"
-msgstr ""
+msgstr "Hlavní funkce:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:551
 msgctxt "ProgrammingMaze|"
 msgid "The execution of the code starts here."
-msgstr ""
+msgstr "Zde začíná vykonávání kódu."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:552
 msgctxt "ProgrammingMaze|"
@@ -22028,6 +22087,8 @@ msgid ""
 "-Click on any instruction in the <b>instruction area</b> to add it to the "
 "<b>Main Function</b>."
 msgstr ""
+"-Klikni na některý příkaz v <b>oblasti příkazů</b>, aby mohl být přidán do "
+"<b>Hlavní funkce</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:553
 msgctxt "ProgrammingMaze|"
@@ -22035,11 +22096,13 @@ msgid ""
 "-The instructions will execute in order until there's none left, or until a "
 "dead-end, or when Tux reaches the fish."
 msgstr ""
+"-Příkazy se vykonají ve svém pořadí dokud žádný nezbude, nebo když se "
+"dostaneš do slepé uličky nebo když Tux dojde k rybě."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:563
 msgctxt "ProgrammingMaze|"
 msgid "Procedure:"
-msgstr ""
+msgstr "Procedura:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:564
 msgctxt "ProgrammingMaze|"
@@ -22047,6 +22110,8 @@ msgid ""
 "<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
 "the code by calling it where needed</b>."
 msgstr ""
+"<b>Procedura</b> je znovupoužitelná sada příkazů, kterou můžeš <b>použít v "
+"kódu jejím zavoláním kdekoliv je potřeba</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:565
 msgctxt "ProgrammingMaze|"
@@ -22055,11 +22120,14 @@ msgid ""
 "area</b> to add your code, click on the <b>Procedure</b> or <b>Main "
 "Function</b> label."
 msgstr ""
+"-Pro <b>přepnutí</b> mezi <b>oblastí Procedura</b> a <b>oblastí Hlavní "
+"funkce</b> za účelem přidání kódu, klikni na popisek <b>Procedura</b> nebo "
+"<b>Hlavní funkce</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:575
 msgctxt "ProgrammingMaze|"
 msgid "Loop:"
-msgstr ""
+msgstr "Smyčka:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:576
 msgctxt "ProgrammingMaze|"
@@ -22067,6 +22135,8 @@ msgid ""
 "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
 "the number of times defined by the number inside it</b>."
 msgstr ""
+"<b>Smyčka</b> je sada příkazů, která je <b>opakovaně několikrát prováděna</"
+"b>. Počet opakování je nastaven číslem uvnitř smyčky."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:577
 msgctxt "ProgrammingMaze|"
@@ -22075,6 +22145,9 @@ msgid ""
 "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
 "label."
 msgstr ""
+"-Pro <b>přepnutí</b> mezi <b>oblastí Smyčka</b> a <b>oblastí Hlavní funkce</"
+"b> za účelem přidání kódu, klikni na popisek <b>Smyčka</b> nebo <b>Hlavní "
+"funkce</b>."
 
 #: activities/programmingMaze/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -25498,7 +25571,7 @@ msgstr "Pravá balastní nádrž"
 #: activities/submarine/Submarine.qml:133
 msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
-msgstr ""
+msgstr "Přesuň ponorku na druhou stranu obrazovky."
 
 #: activities/submarine/Submarine.qml:136
 msgctxt "Submarine|"
@@ -25506,28 +25579,30 @@ msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
 "indicating the current speed of the submarine."
 msgstr ""
+"Položka na ovládacím panelu nejvíce vlevo je motor ponorky, který ukazuje "
+"aktuální rychlost ponorky."
 
 #: activities/submarine/Submarine.qml:139
 msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
-msgstr ""
+msgstr "Zvýšení nebo snížení rychlosti ponorky pomocí motoru."
 
 #: activities/submarine/Submarine.qml:142
 msgctxt "Submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
 "velocity."
-msgstr ""
+msgstr "Stiskem tlačítka + se zvýší rychlost, tlačítkem - se rychlost sníží."
 
 #: activities/submarine/Submarine.qml:149
 msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
-msgstr ""
+msgstr "Ta položka vedle motoru je balastní nádrž."
 
 #: activities/submarine/Submarine.qml:152
 msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
-msgstr ""
+msgstr "Balastní nádrže jsou používány pro plavání nebo potápění pod vodou."
 
 #: activities/submarine/Submarine.qml:155
 msgctxt "Submarine|"
@@ -25535,6 +25610,8 @@ msgid ""
 "If the ballast tanks are empty, the submarine will float. If the ballast "
 "tanks are full of water, the submarine will dive underwater."
 msgstr ""
+"Pokud jsou balastní nádrže prázdné, ponorka bude plavat. Pokud jsou balastní "
+"nádrže plné vody, ponorka se bude potápět pod vodu."
 
 #: activities/submarine/Submarine.qml:158
 msgctxt "Submarine|"
@@ -25542,6 +25619,8 @@ msgid ""
 "Turning the upper valve on or off will alternatively allow or stop the water "
 "from filling in the ballast tank, thus allowing it to dive underwater."
 msgstr ""
+"Otočením vyššího ventilu na zapnuto nebo vypnuto se buď zapíná nebo vypíná "
+"napouštění vody do balastní nádrže, aby mohlo dojít k potopení do hloubky."
 
 #: activities/submarine/Submarine.qml:161
 msgctxt "Submarine|"
@@ -25550,6 +25629,8 @@ msgid ""
 "from flushing out the ballast tank, thus allowing it to float on the surface "
 "of the water."
 msgstr ""
+"Otočením nižšího ventilu na zapnuto nebo vypnuto se buď zapíná nebo vypíná "
+"vytlačování vody z balastní nádrže, aby se dalo plavat na povrchu vody."
 
 #: activities/submarine/Submarine.qml:168
 msgctxt "Submarine|"
@@ -25557,6 +25638,7 @@ msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
 "submarine."
 msgstr ""
+"Položka nejvíce vpravo na ovládacím panelu řídí hloubková kormidla ponorky"
 
 #: activities/submarine/Submarine.qml:171
 msgctxt "Submarine|"
@@ -25564,6 +25646,8 @@ msgid ""
 "The diving planes in a submarine are used to control the depth of the "
 "submarine accurately once it is underwater."
 msgstr ""
+"Hloubková kormidla na ponorce se používají na přesnější ovládání hloubky "
+"ponorky jakmile je pod vodou."
 
 #: activities/submarine/Submarine.qml:174
 msgctxt "Submarine|"
@@ -25571,6 +25655,8 @@ msgid ""
 "Once the submarine is moving underwater, increasing or decreasing the angle "
 "of the planes will increase and decrease the depth of the submarine."
 msgstr ""
+"Jakmile se ponorka pod vodou pohybuje, zvyšování nebo snižování úhlu "
+"kormidel zvýší nebo sníží hloubku ponorky."
 
 #: activities/submarine/Submarine.qml:177
 msgctxt "Submarine|"
@@ -25578,16 +25664,17 @@ msgid ""
 "The + button will increase the depth of the submarine, while the - button "
 "will decrease the depth of the submarine."
 msgstr ""
+"Tlačítko + zvýší hloubku ponorky, zatímco tlačítko - hloubku ponorky sníží."
 
 #: activities/submarine/Submarine.qml:180
 msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
-msgstr ""
+msgstr "Seber korunu, aby se ti otevřela brána."
 
 #: activities/submarine/Submarine.qml:183
 msgctxt "Submarine|"
 msgid "Check out the help menu for the keyboard controls."
-msgstr ""
+msgstr "Pro informace o ovládání klávesnicí se podívej do nabídky Pomoc."
 
 #. Activity title
 #: activities/sudoku/ActivityInfo.qml:15
