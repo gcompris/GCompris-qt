@@ -1438,8 +1438,8 @@ msgid ""
 "Play with Tux. Take turns to click the line in which you want to drop a "
 "token. The first player to create a line of 4 tokens wins."
 msgstr ""
-"Jugueu amb en Tux. Per torns, feu clic damunt de la línia en la qual "
-"afegireu una fitxa. Qui primer cree una línia de 4 fitxes guanya."
+"Jugueu amb en Tux. Per torns, cliqueu damunt de la línia en la qual afegireu "
+"una fitxa. Qui primer cree una línia de 4 fitxes guanya."
 
 #: activities/align4/ActivityInfo.qml:23
 #: activities/align4_2players/ActivityInfo.qml:23
@@ -1493,7 +1493,7 @@ msgid ""
 "Play with a friend. Take turns to click the line in which you want to drop a "
 "token. The first player to create a line of 4 tokens wins."
 msgstr ""
-"Juga amb una amistat. Per torns, feu clic damunt de la línia en la qual "
+"Juga amb una amistat. Per torns, cliqueu damunt de la línia en la qual "
 "afegireu una fitxa. Qui primer cree una línia de 4 fitxes guanya."
 
 #. Activity title
@@ -1533,9 +1533,9 @@ msgid ""
 "or check the bottom right corner."
 msgstr ""
 "Atrapa les lletres de l'alfabet. Amb un teclat utilitza les tecles de cursor "
-"per a moure l'helicòpter. Amb un dispositiu apuntador senzillament fes clic "
-"o toca la ubicació de destinació. Per a saber quina lletra has d'atrapar "
-"pots recordar-la o comprovar el cantó inferior dret."
+"per a moure l'helicòpter. Amb un dispositiu apuntador senzillament clica o "
+"toca la ubicació de destinació. Per a saber quina lletra has d'atrapar pots "
+"recordar-la o comprovar el cantó inferior dret."
 
 #: activities/alphabet-sequence/ActivityInfo.qml:26
 #: activities/numbers-odd-even/ActivityInfo.qml:25
@@ -1626,8 +1626,8 @@ msgid ""
 "You can click on the component and then on the rotate buttons to rotate it "
 "or on the info button to get information about it."
 msgstr ""
-"Pots fer clic damunt del component i després sobre els botons de gir per a "
-"fer-lo girar o sobre el botó d'informació per a obtindre'n informació."
+"Pots clicar damunt del component i després sobre els botons de gir per a fer-"
+"lo girar o sobre el botó d'informació per a obtindre'n informació."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -1635,7 +1635,7 @@ msgid ""
 "You can click on the switch to open and close it. Likewise, you can change "
 "the rheostat value by dragging its slider."
 msgstr ""
-"Pots fer clic sobre l'interruptor per a obrir i tancar. De la mateixa "
+"Pots clicar damunt de l'interruptor per a obrir i tancar. De la mateixa "
 "manera, pots canviar el valor del reòstat arrossegant el seu control "
 "lliscant."
 
@@ -1645,8 +1645,8 @@ msgid ""
 "To connect two terminals, click on the first terminal, then on the second "
 "terminal. To deselect a terminal, click on any empty area."
 msgstr ""
-"Per a connectar dos terminals, fes clic damunt del primer terminal, després "
-"sobre el segon. Per a desseleccionar un terminal, fes clic damunt de "
+"Per a connectar dos terminals, clica damunt del primer terminal, després "
+"damunt del segon. Per a desseleccionar un terminal, clica damunt de "
 "qualsevol àrea buida."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
@@ -1655,9 +1655,9 @@ msgid ""
 "For repairing a broken bulb or LED, click on it after disconnecting it from "
 "the circuit. The simulation is updated in real time by any user action."
 msgstr ""
-"Per a reparar una bombeta o LED trencat, fes clic damunt seu per a "
-"desconnectar-lo del circuit. La simulació s'actualitza en temps real per a "
-"qualsevol acció de l'usuari."
+"Per a reparar una bombeta o LED trencat, clica damunt seu per a desconnectar-"
+"lo del circuit. La simulació s'actualitza en temps real per a qualsevol "
+"acció de l'usuari."
 
 #: activities/analog_electricity/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -1890,8 +1890,8 @@ msgid ""
 "For a detailed description of battery and bulb, click on those and then "
 "click on the info button."
 msgstr ""
-"Per a obtindre una descripció detallada de la bateria i la bombeta, fes clic "
-"damunt seu i després fes clic en el botó d'informació."
+"Per a obtindre una descripció detallada de la bateria i la bombeta, clica "
+"damunt seu i després clica damunt del botó d'informació."
 
 #: activities/analog_electricity/TutorialDataset.qml:104
 msgctxt "TutorialDataset|"
@@ -1900,7 +1900,7 @@ msgid ""
 "on a terminal, then on a second terminal."
 msgstr ""
 "Encén la bombeta amb la bateria proporcionada. Per a connectar dos "
-"terminals, fes clic damunt d'un terminal i després sobre el segon."
+"terminals, clica damunt d'un terminal i després damunt del segon."
 
 #: activities/analog_electricity/TutorialDataset.qml:117
 msgctxt "TutorialDataset|"
@@ -1947,8 +1947,8 @@ msgid ""
 "warning box to make it disappear and click on the OK button."
 msgstr ""
 "Crea un bucle de la font de voltatge amb les bateries proporcionades. "
-"Després fes clic en el quadro d'avís perquè desaparega i fes clic en el botó "
-"«OK»."
+"Després clica damunt del quadro d'avís perquè desaparega i clica damunt del "
+"botó «OK»."
 
 # skip-rule: ff-current
 #: activities/analog_electricity/TutorialDataset.qml:133
@@ -1965,7 +1965,7 @@ msgid ""
 "from the circuit. Don't forget to disable the delete button after removing "
 "the connected wires."
 msgstr ""
-"Per a reparar una bombeta trencada en esta activitat, fes clic damunt seu "
+"Per a reparar una bombeta trencada en esta activitat, clica damunt seu "
 "després de desconnectar-la del circuit. No oblides inhabilitar el botó de "
 "suprimir després de traure els cables connectats."
 
@@ -1985,7 +1985,7 @@ msgstr ""
 #: activities/analog_electricity/TutorialDataset.qml:149
 msgctxt "TutorialDataset|"
 msgid "You can click on the switch to open and close it."
-msgstr "Pots fer clic sobre l'interruptor per a obrir i tancar."
+msgstr "Pots clicar damunt de l'interruptor per a obrir i tancar."
 
 #: activities/analog_electricity/TutorialDataset.qml:150
 msgctxt "TutorialDataset|"
@@ -2171,7 +2171,7 @@ msgid ""
 "circuit to repair it."
 msgstr ""
 "L'energia elèctrica per damunt d'un cert límit pot trencar un LED. En esta "
-"activitat, pots fer clic damunt del LED roig trencat després de desconnectar-"
+"activitat, pots clicar damunt del LED roig trencat després de desconnectar-"
 "lo del circuit per a reparar-lo."
 
 #: activities/analog_electricity/TutorialDataset.qml:254
@@ -2298,7 +2298,7 @@ msgid ""
 "The leftmost column contains 4 ducks, clicking on one of them produces a "
 "sound and an animation."
 msgstr ""
-"La columna més a l'esquerra conté 4 ànecs, fent clic damunt d'un d'ells es "
+"La columna més a l'esquerra conté 4 ànecs, clicant damunt d'un d'ells es "
 "produirà un so i una animació."
 
 #: activities/baby_mouse/ActivityInfo.qml:25
@@ -2317,8 +2317,8 @@ msgid ""
 "The arrows area, clicking on one of them makes the blue duck move in the "
 "corresponding direction."
 msgstr ""
-"En l'àrea de les fletxes, fes clic damunt d'una d'elles i faràs que l'ànec "
-"blau es moga en la direcció corresponent."
+"En l'àrea de les fletxes, clica damunt d'una d'elles i faràs que l'ànec blau "
+"es moga en la direcció corresponent."
 
 #: activities/baby_mouse/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -2326,7 +2326,8 @@ msgid ""
 "Doing a simple click in the central area shows a marker at the click "
 "position."
 msgstr ""
-"Fent clic en l'àrea central es mostrarà un marcador a la posició del clic."
+"Clicant damunt de l'àrea central es mostrarà un marcador a la posició del "
+"clic."
 
 #. Activity title
 #: activities/baby_tangram/ActivityInfo.qml:15
@@ -2390,9 +2391,9 @@ msgid ""
 msgstr ""
 "Només hàs d'escriure en el teclat real o virtual com en un processador de "
 "textos.\n"
-"     Fent clic en el botó «Títol» es farà el text més gran. De manera "
-"similar, el botó «Subtítol» farà el text una mica menys gran. Fent clic en "
-"«Paràgraf» s'eliminarà el format."
+"     Quan es clique damunt del botó «Títol» es farà el text més gran. De "
+"manera similar, el botó «Subtítol» farà el text una mica menys gran. Quan es "
+"clique damunt «Paràgraf» s'eliminarà el format."
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -2402,7 +2403,7 @@ msgstr "«Fletxes»: per a navegar pel text"
 #: activities/baby_wordprocessor/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Shift + Arrows: select a part of the text"
-msgstr "«Majúscules+Fletxes»: per a seleccionar una part del text"
+msgstr "«Majús+Fletxes»: per a seleccionar una part del text"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -2667,7 +2668,7 @@ msgstr ""
 "En el menú de configuració de l'activitat, pots triar entre el conjunt de "
 "nivells predeterminat «Integrat» i un que podràs definir («Usuari»). Per a "
 "crear un conjunt de nivells, selecciona el conjunt de nivells «Usuari» i "
-"inicia l'editor de nivells fent clic damunt del botó corresponent."
+"inicia l'editor de nivells clicant damunt del botó corresponent."
 
 #: activities/balancebox/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -2735,7 +2736,7 @@ msgid ""
 msgstr ""
 "Totes les eines (excepte l'eina d'esborrar) alternen el seu objectiu "
 "respectiu en la cel·la en la qual s'ha fet clic: es pot col·locar un element "
-"fent clic damunt d'una cel·la buida, i en fer clic de nou sobre la mateixa "
+"clicant damunt d'una cel·la buida, i quan es clique de nou sobre la mateixa "
 "cel·la amb la mateixa eina, podràs eliminar de nou."
 
 #: activities/balancebox/ActivityInfo.qml:40
@@ -2746,9 +2747,9 @@ msgid ""
 "button on the bar or by pressing escape on your keyboard or the back-button "
 "on your mobile device."
 msgstr ""
-"Podràs provar un nivell modificat fent clic damunt del botó «Prova» que hi "
-"ha en el costat de la vista de l'editor. Podràs tornar des del mode de prova "
-"fent clic damunt del botó Inici que hi ha en la barra o prement «Esc» en el "
+"Podràs provar un nivell modificat clicant damunt del botó «Prova» que hi ha "
+"en el costat de la vista de l'editor. Podràs tornar des del mode de prova "
+"clicant damunt del botó Inici que hi ha en la barra o prement «Esc» en el "
 "teclat o el botó «Arrere» en el teu dispositiu mòbil."
 
 #: activities/balancebox/ActivityInfo.qml:41
@@ -2768,8 +2769,8 @@ msgid ""
 "When your level is finished you can save it to a file by clicking on the "
 "'Save' button on the side."
 msgstr ""
-"Quan finalitzes el teu nivell, podràs guardar-lo a un fitxer fent clic en el "
-"botó «Guarda» que hi ha en el costat."
+"Quan finalitzes el teu nivell, podràs guardar-lo a un fitxer clicant damunt "
+"del botó «Guarda» que hi ha en el costat."
 
 #: activities/balancebox/ActivityInfo.qml:43
 msgctxt "ActivityInfo|"
@@ -2777,16 +2778,16 @@ msgid ""
 "To return to the activity settings click on the home-button on the bar or "
 "press Escape on your keyboard or the back button on your mobile device."
 msgstr ""
-"Per a tornar a la configuració de l'activitat, fes clic damunt del botó "
-"Inici que hi ha en la barra, o prem «Esc» en el teclat o el botó «Arrere» en "
-"el dispositiu mòbil."
+"Per a tornar a la configuració de l'activitat, clica damunt del botó Inici "
+"que hi ha en la barra, o prem «Esc» en el teclat o el botó «Arrere» en el "
+"dispositiu mòbil."
 
 #: activities/balancebox/ActivityInfo.qml:44
 msgctxt "ActivityInfo|"
 msgid ""
 "Finally, to load your level set, click on the 'Load saved levels' button."
 msgstr ""
-"Finalment, per a carregar el teu conjunt de nivells, fes clic en el botó "
+"Finalment, per a carregar el teu conjunt de nivells, clica damunt del botó "
 "«Carrega els nivells guardats»."
 
 #: activities/balancebox/balancebox.js:72
@@ -2961,10 +2962,10 @@ msgid ""
 "button to place the balls in the holes. You win if Tux has to place the last "
 "ball. If you want Tux to begin, just click on him."
 msgstr ""
-"Fes clic damunt de la icona de bala per a seleccionar un nombre de bales, "
-"després fes clic en el botó «OK» per a situar-les en els forats. Guanyaràs "
+"Clica damunt de la icona de bala per a seleccionar un nombre de bales, "
+"després clica damunt del botó «OK» per a situar-les en els forats. Guanyaràs "
 "si en Tux ha de posar l'última bala. Si vols que comence en Tux, "
-"senzillament fes-hi clic."
+"senzillament clica-hi."
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -2980,8 +2981,8 @@ msgid ""
 "button to place the balls in the holes. You win if your friend has to place "
 "the last ball."
 msgstr ""
-"Fes clic damunt de la icona de bala per a seleccionar un nombre de bales, "
-"després fes clic en el botó «OK» per a situar-les en els forats. Guanyaràs "
+"Clica damunt de la icona de bala per a seleccionar un nombre de bales, "
+"després clica damunt del botó «OK» per a situar-les en els forats. Guanyaràs "
 "si l'oponent ha de posar l'última bala."
 
 #. Activity title
@@ -3146,8 +3147,8 @@ msgctxt "ActivityInfo|"
 msgid ""
 "You can open the braille chart by clicking on the blue braille cell icon."
 msgstr ""
-"Pots obrir la taula de braille fent clic damunt de la icona blava de la "
-"cel·la de braille."
+"Pots obrir la taula de braille clicant damunt de la icona blava de la cel·la "
+"de braille."
 
 #: activities/braille_alphabets/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -3224,8 +3225,8 @@ msgstr ""
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on me and try reproducing braille characters."
 msgstr ""
-"Quan estigues a punt, fes clic sobre meu i mira de reproduir els caràcters "
-"en braille."
+"Quan estigues a punt, clica damunt meu i mira de reproduir els caràcters en "
+"braille."
 
 #: activities/braille_alphabets/questions.js:12
 #: activities/braille_alphabets/questions.js:16
@@ -3257,8 +3258,8 @@ msgstr ""
 msgctxt "questions|"
 msgid "Click on the dots in the braille cell area to produce the letter %1."
 msgstr ""
-"Fes clic damunt dels punts en l'àrea de la cel·la de braille per a presentar "
-"la lletra %1."
+"Clica damunt dels punts en l'àrea de la cel·la de braille per a presentar la "
+"lletra %1."
 
 #: activities/braille_alphabets/questions.js:122
 #: activities/braille_alphabets/questions.js:126
@@ -3274,8 +3275,8 @@ msgstr ""
 msgctxt "questions|"
 msgid "Click on the dots in the braille cell area to produce the number %1."
 msgstr ""
-"Fes clic damunt dels punts en l'àrea de la cel·la de braille per a presentar "
-"el nombre %1."
+"Clica damunt dels punts en l'àrea de la cel·la de braille per a presentar el "
+"nombre %1."
 
 #: activities/braille_alphabets/questions.js:165
 #: activities/braille_alphabets/questions.js:169
@@ -3286,8 +3287,8 @@ msgstr ""
 msgctxt "questions|"
 msgid "Click on the dots in the braille cell area to produce the symbol %1."
 msgstr ""
-"Fes clic damunt dels punts en l'àrea de la cel·la de braille per a presentar "
-"el símbol %1."
+"Clica damunt dels punts en l'àrea de la cel·la de braille per a presentar el "
+"símbol %1."
 
 #. Activity title
 #: activities/braille_fun/ActivityInfo.qml:15
@@ -3321,7 +3322,7 @@ msgid ""
 "chart by clicking on the blue braille cell icon if you need some help."
 msgstr ""
 "Crea les cel·les en braille per a les lletres que hi ha en la bandera. "
-"Comprova la taula de braille fent clic damunt de la icona blava de la cel·la "
+"Comprova la taula de braille clicant damunt de la icona blava de la cel·la "
 "de braille per a obtindre ajuda."
 
 #. Activity title - the game is the KenKen but we cannot use KenKen as it is a trademark name
@@ -3363,7 +3364,7 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
-"Selecciona un nombre de la llista i fes clic en la seua posició de "
+"Selecciona un nombre de la llista i clica damunt de la seua posició de "
 "destinació per a emplenar la quadrícula. Cada nombre ha d'aparéixer només "
 "una vegada en una fila i en una columna. Les gàbies són grups de cel·les que "
 "proporcionen informació sobre com emplenar-les. Les gàbies fetes de més "
@@ -3434,7 +3435,7 @@ msgid ""
 "validate your answer by clicking on the OK button."
 msgstr ""
 "Revisa les instruccions i selecciona la data correcta al calendari, i "
-"després valida la resposta fent clic en el botó «OK»."
+"després valida la resposta clicant damunt del botó «OK»."
 
 #: activities/calendar/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:24
@@ -3444,8 +3445,8 @@ msgid ""
 "this case, click on the corresponding day of the week in the list."
 msgstr ""
 "En alguns nivells, necessitaràs trobar el dia de la setmana per a una data "
-"determinada. En este cas, fes clic damunt del dia corresponent de la setmana "
-"a la llista."
+"determinada. En este cas, clica damunt del dia corresponent de la setmana a "
+"la llista."
 
 #: activities/calendar/ActivityInfo.qml:26
 #: activities/find_the_day/ActivityInfo.qml:26
@@ -3785,7 +3786,7 @@ msgid ""
 "simultaneously."
 msgstr ""
 "Les barres verticals de color representen les rescloses d'aigua, les quals "
-"es poden fer operar fent-hi clic. No es poden operar simultàniament dues "
+"es poden fer operar clicant-hi. No es poden operar simultàniament dues "
 "rescloses del mateix tipus."
 
 #: activities/canal_lock/CanalLock.qml:80
@@ -3852,9 +3853,9 @@ msgid ""
 "set' to download the full word image set. Click on the cross or on 'Never "
 "show this dialog again' to play with the demo version."
 msgstr ""
-"No tens totes les imatges per a esta activitat. Fes clic en «Actualitza el "
+"No tens totes les imatges per a esta activitat. Clica damunt «Actualitza el "
 "conjunt d'imatges» per a descarregar el conjunt d'imatges complet per a les "
-"paraules. Fes clic en la «Creu» o a «No mostres este diàleg una altra "
+"paraules. Clica damunt de la «Creu» o a «No mostres este diàleg una altra "
 "vegada» per a jugar amb la versió de demostració."
 
 #: activities/categorization/Categorization.qml:153
@@ -4866,7 +4867,7 @@ msgid ""
 "answer."
 msgstr ""
 "Col·loca les imatges per a fer una història coherent. Arrossega les imatges "
-"des de la barra lateral als punts corresponents, després fes clic damunt del "
+"des de la barra lateral als punts corresponents, després clica damunt del "
 "botó «OK» per a validar la resposta."
 
 #: activities/chronos/ActivityInfo.qml:29
@@ -5203,14 +5204,14 @@ msgstr "Tria la teua configuració regional"
 #: activities/click_on_letter/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Click on a lowercase letter"
-msgstr "Fes clic en una lletra en minúscula"
+msgstr "Clica damunt d'una lletra en minúscula"
 
 #. Help title
 #: activities/click_on_letter/ActivityInfo.qml:17
 #: activities/click_on_letter_up/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Listen to a letter and click on it."
-msgstr "Escolta una lletra i fes clic damunt seu."
+msgstr "Escolta una lletra i clica damunt seu."
 
 #. Help goal
 #: activities/click_on_letter/ActivityInfo.qml:20
@@ -5233,8 +5234,8 @@ msgid ""
 "A letter is spoken. Click on the matching letter in the main area. You can "
 "listen to the letter again by clicking on the mouth icon."
 msgstr ""
-"Es llig una lletra. Fes clic damunt de la lletra corresponent en l'àrea "
-"principal. Pots escoltar-la de nou fent clic damunt de la icona de la boca."
+"Es llig una lletra. Clica damunt de la lletra corresponent en l'àrea "
+"principal. Pots escoltar-la de nou clicant damunt de la icona de la boca."
 
 #: activities/click_on_letter/ActivityInfo.qml:27
 #: activities/click_on_letter_up/ActivityInfo.qml:27
@@ -5255,7 +5256,7 @@ msgstr "«Tabulació»: per a repetir la pregunta"
 #: activities/click_on_letter_up/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Click on an uppercase letter"
-msgstr "Fes clic en una lletra en majúscula"
+msgstr "Clica damunt d'una lletra en majúscula"
 
 #. Help goal
 #: activities/click_on_letter_up/ActivityInfo.qml:20
@@ -5289,13 +5290,13 @@ msgstr "Va fins al nivell següent"
 #: activities/clickanddraw/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Click and draw"
-msgstr "Fes clic i dibuixa"
+msgstr "Clica i dibuixa"
 
 #. Help title
 #: activities/clickanddraw/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Draw the picture by clicking on the selected points."
-msgstr "Dibuixa la imatge fent clic damunt dels punts seleccionats."
+msgstr "Dibuixa la imatge clicant damunt dels punts seleccionats."
 
 #. Help goal
 #: activities/clickanddraw/ActivityInfo.qml:20
@@ -5308,7 +5309,7 @@ msgstr ""
 #: activities/clickanddraw/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Can move the mouse and click accurately on points."
-msgstr "Poder moure el ratolí i fer clic amb precisió sobre els punts."
+msgstr "Poder moure el ratolí i clicar amb precisió damunt dels punts."
 
 #. Help manual
 #: activities/clickanddraw/ActivityInfo.qml:24
@@ -5318,15 +5319,15 @@ msgid ""
 "selected the next blue one appears. You can click and drag from one point to "
 "the next ones, or click on each point one after the other."
 msgstr ""
-"Dibuixa la imatge fent clic en cada punt en ordre. Cada vegada que se "
-"selecciona un punt apareixerà el següent blau. Pots fer clic i arrossegar "
-"des d'un punt als següents, o fer clic en cada punt un darrere l'altre."
+"Dibuixa la imatge clicant damunt de cada punt en ordre. Cada vegada que se "
+"selecciona un punt apareixerà el següent blau. Pots clicar i arrossegar des "
+"d'un punt als següents, o clicar damunt de cada punt un darrere l'altre."
 
 #. Activity title
 #: activities/clickgame/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Click on me"
-msgstr "Fes clic sobre meu"
+msgstr "Clica damunt meu"
 
 #. Help title
 #: activities/clickgame/ActivityInfo.qml:17
@@ -5345,16 +5346,15 @@ msgstr "Practicar la coordinació motora, movent la mà amb precisió."
 msgctxt "ActivityInfo|"
 msgid "Can move a mouse or use a touchscreen and click on the correct place."
 msgstr ""
-"Poder moure un ratolí o utilitzar una pantalla tàctil i fer clic en el lloc "
-"correcte."
+"Poder moure un ratolí o utilitzar una pantalla tàctil i clicar damunt del "
+"lloc correcte."
 
 #. Help manual
 #: activities/clickgame/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "Catch all the moving fish by clicking or touching them with your finger."
-msgstr ""
-"Atrapa tots els peixos en moviment fent-hi clic o tocant-los amb un dit."
+msgstr "Atrapa tots els peixos en moviment clicant-hi o tocant-los amb un dit."
 
 #: activities/clockgame/ActivityConfig.qml:24
 msgctxt "ActivityConfig|"
@@ -5514,7 +5514,7 @@ msgid ""
 "the + and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
 "Canvia el color movent els controls lliscants que hi ha sobre els tubs de "
-"pintura o fent clic en els botons «+» i «-». Després, fes clic damunt del "
+"pintura o clicant damunt dels botons «+» i «-». Després, clica damunt del "
 "botó «OK» per a validar la resposta."
 
 #: activities/color_mix/ActivityInfo.qml:25
@@ -5636,7 +5636,7 @@ msgid ""
 "the + and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
 "Canvia el color movent els controls lliscants que hi ha sobre les llanternes "
-"o fent clic en els botons «+» i «-». Després, fes clic damunt del botó «OK» "
+"o clicant damunt dels botons «+» i «-». Després, clica damunt del botó «OK» "
 "per a validar la resposta."
 
 #: activities/color_mix_light/ActivityInfo.qml:25
@@ -5660,7 +5660,7 @@ msgstr "Colors"
 #: activities/colors/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Click on the right color."
-msgstr "Fes clic damunt del color correcte."
+msgstr "Clica damunt del color correcte."
 
 #. Help goal
 #: activities/colors/ActivityInfo.qml:20
@@ -5678,7 +5678,7 @@ msgstr "Identificar els colors."
 #: activities/colors/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Listen to the color and click on the matching duck."
-msgstr "Escolta el color i fes clic sobre l'ànec corresponent."
+msgstr "Escolta el color i clica damunt de l'ànec corresponent."
 
 #: activities/colors/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -5911,9 +5911,9 @@ msgid ""
 "right to move the selected item."
 msgstr ""
 "Mou els elements en el marc blau perquè coincidisquen amb la seua posició en "
-"el marc de model. Per a seleccionar un element, fes clic damunt seu. Al "
-"costat de la grua hi ha quatre fletxes que et permetran moure els elements. "
-"Per a moure també pots fer lliscar amunt/avall/esquerra/dreta amb el dit."
+"el marc de model. Per a seleccionar un element, clica damunt seu. Al costat "
+"de la grua hi ha quatre fletxes que et permetran moure els elements. Per a "
+"moure també pots fer lliscar amunt/avall/esquerra/dreta amb el dit."
 
 #: activities/crane/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -6196,8 +6196,8 @@ msgid ""
 "To connect two terminals with a wire, click on a first terminal, then on a "
 "second terminal."
 msgstr ""
-"Per a connectar dos terminals, fes clic damunt del primer terminal, després "
-"sobre el segon."
+"Per a connectar dos terminals, clica damunt del primer terminal, després "
+"damunt del segon."
 
 #: activities/digital_electricity/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -6215,8 +6215,8 @@ msgctxt "ActivityInfo|"
 msgid ""
 "In the side bar, you can click on the tool icon to access the tool menu."
 msgstr ""
-"En la barra lateral, pots fer clic damunt de la icona de l'eina per a "
-"accedir al menú d'eines."
+"En la barra lateral, pots clicar damunt de la icona de l'eina per a accedir "
+"al menú d'eines."
 
 #: activities/digital_electricity/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -6225,14 +6225,14 @@ msgid ""
 "the tool menu, and click on the component or on the wire you want to delete."
 msgstr ""
 "Per a suprimir un component o cable, selecciona l'eina de supressió (icona "
-"de creu) que hi ha en el menú d'eines i fes clic damunt del component o "
-"cable que vols suprimir."
+"de creu) que hi ha en el menú d'eines i clica damunt del component o cable "
+"que vols suprimir."
 
 #: activities/digital_electricity/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "To deselect a terminal or the delete tool, click on any empty area."
 msgstr ""
-"Per a desseleccionar un terminal o l'eina de supressió, fes clic en "
+"Per a desseleccionar un terminal o l'eina de supressió, clica damunt de "
 "qualsevol àrea buida."
 
 #: activities/digital_electricity/ActivityInfo.qml:31
@@ -6268,13 +6268,13 @@ msgctxt "ActivityInfo|"
 msgid ""
 "You can pan the working area by clicking on an empty area and dragging it."
 msgstr ""
-"Pots desplaçar l'àrea de treball fent clic damunt d'una àrea buida i "
+"Pots desplaçar l'àrea de treball clicant damunt d'una àrea buida i "
 "arrossegant."
 
 #: activities/digital_electricity/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "You can click on a switch component to open and close it."
-msgstr "Pots fer clic damunt d'un component interruptor per a obrir i tancar."
+msgstr "Pots clicar damunt d'un component interruptor per a obrir i tancar."
 
 #: activities/digital_electricity/components/AndGate.qml:21
 msgctxt "AndGate|"
@@ -6583,8 +6583,8 @@ msgid ""
 "To connect two terminals, click on a first terminal, then on a second "
 "terminal."
 msgstr ""
-"Per a connectar dos terminals, fes clic damunt del primer terminal, després "
-"sobre el segon."
+"Per a connectar dos terminals, clica damunt del primer terminal, després "
+"damunt del segon."
 
 #: activities/digital_electricity/TutorialDataset.qml:159
 msgctxt "TutorialDataset|"
@@ -6656,7 +6656,7 @@ msgid ""
 "the info button."
 msgstr ""
 "Per a obtindre una descripció més detallada de la porta NAND, selecciona-la "
-"i fes clic en el botó d'informació."
+"i clica damunt del botó d'informació."
 
 #: activities/digital_electricity/TutorialDataset.qml:218
 msgctxt "TutorialDataset|"
@@ -6762,7 +6762,7 @@ msgid ""
 "the info button."
 msgstr ""
 "Per a obtindre una descripció més detallada de la porta NOR, selecciona-la i "
-"fes clic en el botó d'informació."
+"clica damunt del botó d'informació."
 
 #: activities/digital_electricity/TutorialDataset.qml:357
 msgctxt "TutorialDataset|"
@@ -6945,8 +6945,8 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
-"Dibuixa les lletres connectant els punts en l'ordre correcte. Pots fer clic "
-"i arrossegar d'un punt als següents, o fer clic en cada punt un darrere "
+"Dibuixa les lletres connectant els punts en l'ordre correcte. Pots clicar i "
+"arrossegar d'un punt als següents, o clicar damunt de cada punt un darrere "
 "l'altre."
 
 #. Activity title
@@ -6975,8 +6975,8 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
-"Dibuixa els nombres connectant els punts en l'ordre correcte. Pots fer clic "
-"i arrossegar d'un punt als següents, o fer clic en cada punt un darrere "
+"Dibuixa els nombres connectant els punts en l'ordre correcte. Pots clicar i "
+"arrossegar d'un punt als següents, o clicar damunt de cada punt un darrere "
 "l'altre."
 
 #. Activity title
@@ -7012,7 +7012,7 @@ msgid ""
 "corresponding answer with the keyboard."
 msgstr ""
 "Primer, organitza correctament els elements perquè pugues comptar-los. "
-"Després, fes clic damunt d'un element a la llista de respostes que hi ha a "
+"Després, clica damunt d'un element a la llista de respostes que hi ha a "
 "l'àrea superior de l'esquerra i introduïx la resposta amb el teclat."
 
 #: activities/enumerate/ActivityInfo.qml:26
@@ -7168,19 +7168,19 @@ msgstr ""
 #: activities/erase_clic/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Click or tap"
-msgstr "Fes clic o toca"
+msgstr "Clica o toca"
 
 #. Help title
 #: activities/erase_clic/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Click or tap to erase the blocks and discover the hidden picture."
-msgstr "Fes clic o toca per a esborrar els blocs i descobrir la imatge oculta."
+msgstr "Clica o toca per a esborrar els blocs i descobrir la imatge oculta."
 
 #. Help manual
 #: activities/erase_clic/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Click or tap on the blocks to make them disappear."
-msgstr "Fes clic o toca els blocs per a fer-los desaparéixer."
+msgstr "Clica o toca els blocs per a fer-los desaparéixer."
 
 #. Activity title
 #: activities/explore_farm_animals/ActivityInfo.qml:15
@@ -7220,8 +7220,8 @@ msgid ""
 "level 2 and 3."
 msgstr ""
 "En el nivell u, els jugadors gaudixen explorant cada animal en la pantalla. "
-"Fes clic en un animal per a aprendre sobre seu: com s'anomena, quin so fa i "
-"com es veu. Estudia bé esta informació, ja que es posarà a prova en els "
+"Clica damunt d'un animal per a aprendre sobre seu: com s'anomena, quin so fa "
+"i com es veu. Estudia bé esta informació, ja que es posarà a prova en els "
 "nivells 2 i 3."
 
 #: activities/explore_farm_animals/ActivityInfo.qml:25
@@ -7232,8 +7232,8 @@ msgid ""
 "the animal sound repeated, click on the play button."
 msgstr ""
 "En el nivell dos, es reproduïx un so a l'atzar d'un animal, i hauràs de "
-"trobar de quin animal es tracta. Fes clic sobre l'animal corresponent. Si "
-"vols escoltar de nou el so de l'animal, fes clic damunt del botó «Reproduïx»."
+"trobar de quin animal es tracta. Clica damunt de l'animal corresponent. Si "
+"vols escoltar de nou el so de l'animal, clica damunt del botó «Reproduïx»."
 
 #: activities/explore_farm_animals/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -7241,8 +7241,8 @@ msgid ""
 "In level three, a random text prompt is displayed and you must click on the "
 "animal that matches the text."
 msgstr ""
-"En el nivell tres, es mostra un missatge de text a l'atzar i hauràs de fer "
-"clic sobre l'animal que coincidix amb el text."
+"En el nivell tres, es mostra un missatge de text a l'atzar i hauràs de "
+"clicar damunt de l'animal que coincidix amb el text."
 
 #: activities/explore_farm_animals/ExploreLevels.qml:306
 msgctxt "ExploreLevels|"
@@ -7447,17 +7447,17 @@ msgstr "Este animal produïx llana."
 #: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
 msgid "Click on each farm animal to discover them."
-msgstr "Fes clic en cada animal de granja per a descobrir-los."
+msgstr "Clica damunt de cada animal de granja per a descobrir-los."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:134
 msgctxt "board1|"
 msgid "Click on the farm animal that makes the sound you hear."
-msgstr "Fes clic en l'animal de granja quan sentes el so que fa."
+msgstr "Clica damunt de l'animal de granja quan sentes el so que fa."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:137
 msgctxt "board1|"
 msgid "Click the animal that matches the description."
-msgstr "Fes clic en l'animal que coincidix amb la descripció."
+msgstr "Clica damunt de l'animal que coincidix amb la descripció."
 
 #. Activity title
 #: activities/explore_monuments/ActivityInfo.qml:15
@@ -7494,8 +7494,8 @@ msgid ""
 "Click on the spots to learn about the monuments and then locate them on the "
 "map."
 msgstr ""
-"Fes clic damunt dels punts per a conéixer els monuments i, a continuació, "
-"localitzar-los al mapa."
+"Clica damunt dels punts per a conéixer els monuments i, a continuació, "
+"localitzar-los en el mapa."
 
 #: activities/explore_monuments/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -7666,7 +7666,7 @@ msgstr "Les 7 noves meravelles del món."
 #: activities/explore_monuments/resource/board/board1.qml:101
 msgctxt "board1|"
 msgid "Click on the location of the given monument."
-msgstr "Fes clic en el lloc on es troba el monument indicat."
+msgstr "Clica damunt del lloc on es troba el monument indicat."
 
 # Nota: <https://ca.wikipedia.org/wiki/Temple_Daurat>
 #: activities/explore_monuments/resource/board/board2.qml:18
@@ -7733,7 +7733,7 @@ msgstr ""
 "a la punta d'Apol·lo Bunder, la porta d'entrada dona al port de Mumbai, "
 "vorejada pel Mar Aràbic al barri de Colaba. La Porta de l'Índia és un "
 "monument que marca els principals ports de l'Índia i és una important "
-"atracció turística per als visitants que arriben en l'Índia per primera "
+"atracció turística per als visitants que arriben a l'Índia per primera "
 "vegada."
 
 # Nota: <https://ca.wikipedia.org/wiki/Sanchi>
@@ -7916,7 +7916,7 @@ msgstr "Monuments de l'Índia"
 #: activities/explore_monuments/resource/board/board2.qml:144
 msgctxt "board2|"
 msgid "Click on the location of the given monument."
-msgstr "Fes clic en el lloc on es troba el monument indicat."
+msgstr "Clica damunt del lloc on es troba el monument indicat."
 
 # Nota: <https://ca.wikipedia.org/wiki/Le_Mont-Saint-Michel>
 #: activities/explore_monuments/resource/board/board3.qml:18
@@ -7959,12 +7959,12 @@ msgid ""
 "is a dramatic representation of medieval architecture perched on a rocky "
 "spur that towers above the River Aude, southeast of the new town."
 msgstr ""
-"Amb més de 4 milions de visitants cada any, Carcassona es troba entre els "
-"destins turístics més prestigiosos de França, a l'altura del Mont Saint-"
-"Michel i Notre-Dame de París. Patrimoni de la humanitat per la UNESCO des de "
-"1997, Carcassona és una representació dramàtica de l'arquitectura medieval "
-"encimbellada en un promontori rocós que s'eleva sobre el riu Aude, al sud-"
-"est de la ciutat nova."
+"Amb més de 4 milions de visitants cada any, Carcassona es troba entre les "
+"destinacions turístiques més prestigioses de França, a l'altura del Mont "
+"Saint-Michel i Notre-Dame de París. Patrimoni de la humanitat per la UNESCO "
+"des de 1997, Carcassona és una representació dramàtica de l'arquitectura "
+"medieval encimbellada en un promontori rocós que s'eleva sobre el riu Aude, "
+"al sud-est de la ciutat nova."
 
 # Nota: <https://ca.wikipedia.org/wiki/Catedral_de_Reims>
 #: activities/explore_monuments/resource/board/board3.qml:40
@@ -8150,7 +8150,7 @@ msgstr "Monuments de França"
 #: activities/explore_monuments/resource/board/board3.qml:133
 msgctxt "board3|"
 msgid "Click on the location of the given monument."
-msgstr "Fes clic en el lloc on es troba el monument indicat."
+msgstr "Clica damunt del lloc on es troba el monument indicat."
 
 # Nota: <https://ca.wikipedia.org/wiki/Castell_de_Neuschwanstein>
 #: activities/explore_monuments/resource/board/board4.qml:18
@@ -8312,7 +8312,7 @@ msgstr "Monuments d'Alemanya"
 #: activities/explore_monuments/resource/board/board4.qml:100
 msgctxt "board4|"
 msgid "Click on the location of the given monument."
-msgstr "Fes clic en el lloc on es troba el monument indicat."
+msgstr "Clica damunt del lloc on es troba el monument indicat."
 
 #: activities/explore_monuments/resource/board/board5.qml:18
 #: activities/explore_monuments/resource/board/board5.qml:21
@@ -8567,7 +8567,7 @@ msgstr "Monuments dels EUA"
 #: activities/explore_monuments/resource/board/board5.qml:133
 msgctxt "board5|"
 msgid "Click on the location of the given monument."
-msgstr "Fes clic en el lloc on es troba el monument indicat."
+msgstr "Clica damunt del lloc on es troba el monument indicat."
 
 # Nota: https://ca.wikipedia.org/wiki/Pir%C3%A0mide_de_Kheops
 #: activities/explore_monuments/resource/board/board6.qml:17
@@ -8688,7 +8688,7 @@ msgstr "Piràmides egípcies"
 #: activities/explore_monuments/resource/board/board6.qml:66
 msgctxt "board6|"
 msgid "Click on the location of the given pyramid."
-msgstr "Fes clic en el lloc on es troba la piràmide indicada."
+msgstr "Clica damunt del lloc on es troba la piràmide indicada."
 
 #: activities/explore_monuments/resource/board/board7.qml:17
 #: activities/explore_monuments/resource/board/board7.qml:20
@@ -8873,7 +8873,7 @@ msgstr "Monuments de la Xina"
 #: activities/explore_monuments/resource/board/board7.qml:88
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
-msgstr "Fes clic en el lloc on es troba el monument indicat."
+msgstr "Clica damunt del lloc on es troba el monument indicat."
 
 #: activities/explore_monuments/resource/board/board8.qml:17
 #: activities/explore_monuments/resource/board/board8.qml:20
@@ -9071,7 +9071,7 @@ msgstr "Monuments d'Itàlia"
 #: activities/explore_monuments/resource/board/board8.qml:88
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
-msgstr "Fes clic en el lloc on es troba el monument indicat."
+msgstr "Clica damunt del lloc on es troba el monument indicat."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
@@ -9204,7 +9204,7 @@ msgstr "Monuments del Japó"
 #: activities/explore_monuments/resource/board/board9.qml:66
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
-msgstr "Fes clic en el lloc on es troba el monument indicat."
+msgstr "Clica damunt del lloc on es troba el monument indicat."
 
 #. Activity title
 #: activities/explore_world_animals/ActivityInfo.qml:19
@@ -9244,7 +9244,7 @@ msgid ""
 "2."
 msgstr ""
 "En el nivell u, els jugadors gaudixen explorant cada animal en la pantalla. "
-"Fes clic en el signe d'interrogació per a aprendre sobre l'animal; com "
+"Clica damunt del signe d'interrogació per a aprendre sobre l'animal; com "
 "s'anomena i el seu aspecte. Estudia bé esta informació, ja que es posarà a "
 "prova en el nivell 2."
 
@@ -9254,8 +9254,8 @@ msgid ""
 "In level two, a random text prompt is displayed and you must click on the "
 "animal that matches the text."
 msgstr ""
-"En el nivell dos, es mostra un missatge de text a l'atzar i hauràs de fer "
-"clic sobre l'animal que coincidix amb el text."
+"En el nivell dos, es mostra un missatge de text a l'atzar i hauràs de clicar "
+"damunt de l'animal que coincidix amb el text."
 
 # Nota: https://ca.wikipedia.org/wiki/Jaguar
 #: activities/explore_world_animals/resource/board/board1.qml:19
@@ -9349,7 +9349,7 @@ msgstr "Explora animals salvatges de tot el món."
 #: activities/explore_world_animals/resource/board/board1.qml:79
 msgctxt "board1|"
 msgid "Click on the location where the given animal lives."
-msgstr "Fes clic en el lloc on viu l'animal indicat."
+msgstr "Clica damunt del lloc on viu l'animal indicat."
 
 # Nota: https://ca.wikipedia.org/wiki/Camale%C3%B3
 #: activities/explore_world_animals/resource/board/board2.qml:19
@@ -9442,7 +9442,7 @@ msgstr "Explora animals salvatges de tot el món."
 #: activities/explore_world_animals/resource/board/board2.qml:79
 msgctxt "board2|"
 msgid "Click on the location where the given animal lives."
-msgstr "Fes clic en el lloc on viu l'animal indicat."
+msgstr "Clica damunt del lloc on viu l'animal indicat."
 
 # Nota: https://ca.wikipedia.org/wiki/Cocodril
 #: activities/explore_world_animals/resource/board/board3.qml:19
@@ -9534,7 +9534,7 @@ msgstr "Explora animals salvatges de tot el món."
 #: activities/explore_world_animals/resource/board/board3.qml:79
 msgctxt "board3|"
 msgid "Click on the location where the given animal lives."
-msgstr "Fes clic en el lloc on viu l'animal indicat."
+msgstr "Clica damunt del lloc on viu l'animal indicat."
 
 #. Activity title
 #: activities/explore_world_music/ActivityInfo.qml:15
@@ -9569,9 +9569,9 @@ msgid ""
 "each suitcase to learn about the music from that area, and listen to a short "
 "sample. Study well, because you will be tested in level 2 and 3."
 msgstr ""
-"En el primer nivell, gaudix explorant música d'arreu del món. Fes clic "
-"damunt de cada maleta per a conéixer la música d'esta zona i escoltar una "
-"xicoteta mostra. Estudia bé, ja que et posaran a prova en els nivells 2 i 3."
+"En el primer nivell, gaudix explorant música d'arreu del món. Clica damunt "
+"de cada maleta per a conéixer la música d'esta zona i escoltar una xicoteta "
+"mostra. Estudia bé, ja que et posaran a prova en els nivells 2 i 3."
 
 #: activities/explore_world_music/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -9581,7 +9581,7 @@ msgid ""
 "like to hear the music again."
 msgstr ""
 "En el segon nivell escoltaràs una mostra de música, i hauràs de seleccionar "
-"la ubicació amb què es correspon. Fes clic damunt del botó «Reproduïx» si la "
+"la ubicació amb què es correspon. Clica damunt del botó «Reproduïx» si la "
 "vols tornar a escoltar."
 
 #: activities/explore_world_music/ActivityInfo.qml:26
@@ -9750,17 +9750,17 @@ msgstr ""
 #: activities/explore_world_music/resource/board/board1.qml:130
 msgctxt "board1|"
 msgid "Explore world music. Click on the suitcases."
-msgstr "Explora les músiques del món. Fes clic en les maletes."
+msgstr "Explora les músiques del món. Clica damunt de les maletes."
 
 #: activities/explore_world_music/resource/board/board1.qml:133
 msgctxt "board1|"
 msgid "Click on the location that matches the music you hear."
-msgstr "Fes clic en el lloc que coincidisca amb la música que escoltes."
+msgstr "Clica damunt del lloc que coincidisca amb la música que escoltes."
 
 #: activities/explore_world_music/resource/board/board1.qml:136
 msgctxt "board1|"
 msgid "Click on the location that matches the text."
-msgstr "Fes clic en el lloc que coincidisca amb el text."
+msgstr "Clica damunt del lloc que coincidisca amb el text."
 
 #. Activity title
 #: activities/family/ActivityInfo.qml:15
@@ -10005,7 +10005,7 @@ msgstr "Seleccionar dues persones que tenen la relació indicada."
 #: activities/family_find_relative/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Reading, moving and clicking with the mouse."
-msgstr "Llegir, moure i fer clic amb el ratolí."
+msgstr "Llegir, moure i clicar amb el ratolí."
 
 #. Help manual
 #: activities/family_find_relative/ActivityInfo.qml:24
@@ -10019,7 +10019,7 @@ msgstr ""
 "Es mostra un arbre genealògic, amb algunes instruccions.\n"
 "Els cercles estan vinculats amb línies per a marcar les relacions. Les "
 "parelles casades estan marcades amb un anell al vincle.\n"
-"Fes clic en un parell de membres de la família que tinguen la relació "
+"Clica damunt d'un parell de membres de la família que tinguen la relació "
 "indicada."
 
 #. Activity title
@@ -10048,8 +10048,8 @@ msgid ""
 "Click or drag on any piece next to the empty space, and it will move to the "
 "empty space."
 msgstr ""
-"Fes clic o arrossega qualsevol peça al costat de l'espai buit i es "
-"desplaçarà a l'espai buit."
+"Clica o arrossega qualsevol peça al costat de l'espai buit i es desplaçarà a "
+"l'espai buit."
 
 #: activities/fifteen/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -10089,8 +10089,8 @@ msgid ""
 "clicking on the OK button."
 msgstr ""
 "Llig les instruccions i realitza el càlcul requerit per a trobar la data. "
-"Després selecciona esta data al calendari i valida la resposta fent clic en "
-"el botó «OK»."
+"Després selecciona esta data al calendari i valida la resposta clicant "
+"damunt del botó «OK»."
 
 # Nota: http://encycolorpedia.es/db6d7b
 #: activities/find_the_day/find_the_day_dataset.js:34
@@ -14912,11 +14912,11 @@ msgid ""
 "move and tap to swallow the numbers."
 msgstr ""
 "Si tens un teclat, pots emprar les tecles de cursor per a moure i prémer la "
-"barra espaiadora per a menjar-te els nombres. Amb un ratolí pots fer clic en "
-"el bloc del costat de la teua posició per a moure i fer clic de nou per a "
-"menjar-te els nombres. Amb una pantalla tàctil pots fer-ho com amb un ratolí "
-"o arrossegar el dit en la direcció que vullgues moure i tocar per a menjar-"
-"te els nombres."
+"barra espaiadora per a menjar-te els nombres. Amb un ratolí pots clicar "
+"damunt del bloc del costat de la teua posició per a moure i clicar de nou "
+"per a menjar-te els nombres. Amb una pantalla tàctil pots fer-ho com amb un "
+"ratolí o arrossegar el dit en la direcció que vullgues moure i tocar per a "
+"menjar-te els nombres."
 
 #: activities/gnumch-equality/ActivityInfo.qml:27
 #: activities/gnumch-factors/ActivityInfo.qml:27
@@ -15026,7 +15026,7 @@ msgstr "Els divisors de %1 són: %2"
 #: activities/gnumch-equality/Warning.qml:101
 msgctxt "Warning|"
 msgid "Press \"Return\" or click on me to continue."
-msgstr "Prem «Retorn» o fes clic sobre meu per a continuar."
+msgstr "Prem «Retorn» o clica damunt meu per a continuar."
 
 #: activities/gnumch-equality/WarnMonster.qml:39
 msgctxt "WarnMonster|"
@@ -16208,7 +16208,7 @@ msgstr "Hexàgon"
 #: activities/hexagon/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Find the strawberry by clicking on the blue fields."
-msgstr "Troba la fraula fent clic en els camps blaus."
+msgstr "Troba la fraula clicant damunt dels camps blaus."
 
 #. Help goal
 #: activities/hexagon/ActivityInfo.qml:20
@@ -16263,7 +16263,7 @@ msgid ""
 "Click on the OK button to check your answer."
 msgstr ""
 "Arrossega cada imatge des del costat fins al seu nom corresponent en l'àrea "
-"principal. Fes clic en el botó «OK» per a comprovar la resposta."
+"principal. Clica damunt del botó «OK» per a comprovar la resposta."
 
 #: activities/imagename/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
@@ -16490,7 +16490,7 @@ msgstr "Instruments musicals"
 #: activities/instruments/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Click on the correct musical instruments."
-msgstr "Fes clic en els instruments musicals correctes."
+msgstr "Clica damunt dels instruments musicals correctes."
 
 #. Help goal
 #: activities/instruments/ActivityInfo.qml:20
@@ -16502,7 +16502,7 @@ msgstr "Aprendre a reconéixer els instruments musicals."
 #: activities/instruments/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Click on the correct musical instrument."
-msgstr "Fes clic en els instruments musicals correctes."
+msgstr "Clica damunt dels instruments musicals correctes."
 
 #: activities/instruments/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -17140,8 +17140,8 @@ msgstr ""
 "Es mostra un nombre decimal. Arrossega la fletxa per a seleccionar una part "
 "de la barra d'unitats, arrossega la part seleccionada de la barra cap a "
 "l'àrea buida. Repetix estos passos fins que el nombre de barres col·locades "
-"es corresponga amb el nombre decimal mostrat. Després, fes clic damunt del "
-"botó «OK» per a validar la resposta."
+"es corresponga amb el nombre decimal mostrat. Després, clica damunt del botó "
+"«OK» per a validar la resposta."
 
 #: activities/learn_decimals/Learn_decimals.qml:30
 msgctxt "Learn_decimals|"
@@ -17163,7 +17163,7 @@ msgstr ""
 "Arrossega la fletxa per a seleccionar una part de la barra, arrossega la "
 "part seleccionada de la barra cap a l'àrea buida. Repetix estos passos fins "
 "que el nombre de barres col·locades es corresponga amb el nombre decimal "
-"mostrat. Després, fes clic damunt del botó «OK» per a validar la resposta."
+"mostrat. Després, clica damunt del botó «OK» per a validar la resposta."
 
 #: activities/learn_decimals/Learn_decimals.qml:150
 #, qt-format
@@ -17240,8 +17240,8 @@ msgstr ""
 "Es mostra una suma amb dos nombres decimals. Arrossega la fletxa per a "
 "seleccionar una part de la barra d'unitats, arrossega la part seleccionada "
 "de la barra cap a l'àrea buida. Repetix estos passos fins que el nombre de "
-"barres col·locades es corresponga amb el resultat de la suma. Després, fes "
-"clic damunt del botó «OK» per a validar la resposta."
+"barres col·locades es corresponga amb el resultat de la suma. Després, clica "
+"damunt del botó «OK» per a validar la resposta."
 
 #: activities/learn_decimals_additions/ActivityInfo.qml:23
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:23
@@ -17250,8 +17250,8 @@ msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr ""
-"Si la resposta és correcta, escriu el resultat corresponent i fes clic "
-"damunt del botó «OK» per a validar-la."
+"Si la resposta és correcta, escriu el resultat corresponent i clica damunt "
+"del botó «OK» per a validar-la."
 
 #: activities/learn_decimals_additions/ActivityInfo.qml:26
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:26
@@ -17281,7 +17281,7 @@ msgstr ""
 "Arrossega la fletxa per a seleccionar una part de la barra, arrossega la "
 "part seleccionada de la barra cap a l'àrea buida. Repetix estos passos fins "
 "que el nombre de barres col·locades es corresponga amb el resultat de la "
-"suma. Després, fes clic damunt del botó «OK» per a validar la resposta."
+"suma. Després, clica damunt del botó «OK» per a validar la resposta."
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:24
 msgctxt "Learn_decimals_additions|"
@@ -17289,8 +17289,8 @@ msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr ""
-"Si la resposta és correcta, escriu el resultat corresponent i fes clic "
-"damunt del botó «OK» per a validar-la."
+"Si la resposta és correcta, escriu el resultat corresponent i clica damunt "
+"del botó «OK» per a validar-la."
 
 #: activities/learn_decimals_additions/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -17341,7 +17341,7 @@ msgid ""
 msgstr ""
 "Es mostra una resta amb dos nombres decimals. El primer nombre de la resta "
 "es representa amb barres. Cada barra representa una unitat i cada quadro en "
-"la barra representa una dècima part d'esta unitat. Fes clic damunt dels "
+"la barra representa una dècima part d'esta unitat. Clica damunt dels "
 "quadrats per a restar el segon nombre i representar el resultat de l'operació"
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:16
@@ -17361,8 +17361,8 @@ msgid ""
 "Click on the squares to subtract them and display the result of the "
 "operation, and click on the OK button to validate your answer."
 msgstr ""
-"Fes clic damunt dels quadros per a restar i mostrar el resultat de "
-"l'operació, i fes clic damunt del botó «OK» per a validar la resposta."
+"Clica damunt dels quadros per a restar i mostrar el resultat de l'operació, "
+"i clica damunt del botó «OK» per a validar la resposta."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:24
 msgctxt "Learn_decimals_subtractions|"
@@ -17370,8 +17370,8 @@ msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr ""
-"Si la resposta és correcta, escriu el resultat corresponent i fes clic "
-"damunt del botó «OK» per a validar-la."
+"Si la resposta és correcta, escriu el resultat corresponent i clica damunt "
+"del botó «OK» per a validar-la."
 
 #: activities/learn_decimals_subtractions/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -17531,7 +17531,7 @@ msgstr ""
 "Es requerix una quantitat. Arrossega la fletxa per a seleccionar un nombre "
 "de taronges, arrossega les seleccionades fins a l'àrea buida. Repetix estos "
 "passos fins que el nombre de taronges es corresponga amb la quantitat "
-"requerida. Després, fes clic damunt del botó «OK» per a validar la resposta."
+"requerida. Després, clica damunt del botó «OK» per a validar la resposta."
 
 #: activities/learn_quantities/Learn_quantities.qml:16
 msgctxt "Learn_quantities|"
@@ -17549,8 +17549,8 @@ msgid ""
 msgstr ""
 "Arrossega la fletxa per a seleccionar un nombre de taronges, arrossega les "
 "seleccionades fins a l'àrea buida. Repetix estos passos fins que el nombre "
-"de taronges es corresponga amb la quantitat requerida. Després, fes clic "
-"damunt del botó «OK» per a validar la resposta."
+"de taronges es corresponga amb la quantitat requerida. Després, clica damunt "
+"del botó «OK» per a validar la resposta."
 
 #: activities/learn_quantities/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -17663,8 +17663,9 @@ msgid ""
 "A left click on a fish will move it to the pond. A right click on a monkey "
 "will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
-"Un clic esquerre en un peix el mourà a la bassa. Un clic dret en un mico el "
-"mourà a l'arbre. Es mostrarà un missatge si es fa un clic incorrecte."
+"Un clic esquerre damunt d'un peix el mourà a la bassa. Un clic dret damunt "
+"d'un mico el mourà a l'arbre. Es mostrarà un missatge si es fa un clic "
+"incorrecte."
 
 #. Activity title
 #: activities/leftright/ActivityInfo.qml:15
@@ -17695,8 +17696,8 @@ msgid ""
 "You can see a hand: is it a left hand or a right hand? Click on the left "
 "button, or the right button depending on the displayed hand."
 msgstr ""
-"Veuràs una mà: és la mà esquerra o la dreta? Fes clic en el botó esquerre o "
-"dret depenent de la mà mostrada."
+"Veuràs una mà: és la mà esquerra o la dreta? Clica damunt del botó esquerre "
+"o dret depenent de la mà mostrada."
 
 #: activities/leftright/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -17835,7 +17836,7 @@ msgid ""
 msgstr ""
 "L'efecte de prémer una finestra és canviar l'estat d'esta finestra i el dels "
 "seus veïns verticals i horitzontals immediats. Hauràs d'apagar tots els "
-"llums. Si fas clic damunt d'en Tux, es mostrarà la solució."
+"llums. Si fas clic sobre en Tux, es mostrarà la solució."
 
 #: activities/lightsoff/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -17926,7 +17927,7 @@ msgid ""
 "story pages. At the end, arrange the sequence in chronological order."
 msgstr ""
 "Llig la història d'en Louis Braille, la seua biografia i la invenció del "
-"sistema braille. Fes clic en els botons «Anterior» i «Següent» per a anar "
+"sistema braille. Clica damunt dels botons «Anterior» i «Següent» per a anar "
 "fins a la pàgina de la història respectiva. Al final, esmena la seqüència en "
 "l'ordre cronològic."
 
@@ -18078,15 +18079,15 @@ msgid ""
 "calculate how many stars are still under the hat. Click on the bottom area "
 "to input your answer and on the OK button to validate it."
 msgstr ""
-"Fes clic en el barret per a obrir-lo o tancar-lo. Els estreles entren i se "
+"Clica damunt del barret per a obrir-lo o tancar-lo. Els estreles entren i se "
 "n'escapen alguns. Has de comptar quants en queden encara davall el barret. "
-"Fes clic en l'àrea inferior per a introduir la teua resposta i en el botó "
-"«OK» per a validar-la."
+"Clica damunt de l'àrea inferior per a introduir la teua resposta i en el "
+"botó «OK» per a validar-la."
 
 #: activities/magic-hat-minus/MagicHat.qml:256
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
-msgstr "Fes clic en el barret per a començar el joc"
+msgstr "Clica damunt del barret per a començar el joc"
 
 #: activities/magic-hat-minus/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -18172,9 +18173,9 @@ msgid ""
 "Click on the bottom area to input your answer and on the OK button to "
 "validate it."
 msgstr ""
-"Fes clic en el barret per a obrir-lo. Quants estreles veus movent-se davall "
-"seu? Compta amb cura. Fes clic en l'àrea inferior per a introduir la teua "
-"resposta i en el botó «OK» per a validar-la."
+"Clica damunt del barret per a obrir-lo. Quants estreles veus movent-se "
+"davall seu? Compta amb cura. Clica damunt de l'àrea inferior per a introduir "
+"la teua resposta i en el botó «OK» per a validar-la."
 
 #: activities/magic-hat-plus/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -18293,7 +18294,7 @@ msgid ""
 msgstr ""
 "En els nivells superiors, el mode-carrera-ràpida s'habilitarà "
 "automàticament. Si vols emprar esta característica en els nivells anteriors "
-"o vols inhabilitar-la en els nivells avançats, fes clic damunt de la icona "
+"o vols inhabilitar-la en els nivells avançats, clica damunt de la icona "
 "«descalç / sabata esportiva» en el cantó superior esquerre de la pantalla.\t"
 
 #: activities/maze/Maze.qml:346
@@ -18426,7 +18427,7 @@ msgstr "Activitat d'entrenament per a l'oïda."
 #: activities/melody/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Move and click the mouse."
-msgstr "Moure i fer clic amb el ratolí."
+msgstr "Moure i clicar amb el ratolí."
 
 #. Help manual
 #: activities/melody/ActivityInfo.qml:24
@@ -18436,9 +18437,9 @@ msgid ""
 "xylophone's bars. You can listen again the sound sequence by clicking on the "
 "repeat button."
 msgstr ""
-"Escolta la seqüència de so que es reproduïx, i repetix-la fent clic en les "
-"barres del xilòfon. Pots escoltar-la una altra vegada fent clic en el botó "
-"«Repetix»."
+"Escolta la seqüència de so que es reproduïx, i repetix-la clicant damunt de "
+"les barres del xilòfon. Pots escoltar-la una altra vegada clicant damunt del "
+"botó «Repetix»."
 
 #: activities/melody/Melody.qml:338
 msgctxt "Melody|"
@@ -19397,7 +19398,7 @@ msgid ""
 "twins, they both disappear."
 msgstr ""
 "Cada targeta emet un so quan la descobrixes, i cada targeta té un parell amb "
-"exactament el mateix so. Fes clic en una targeta per a escoltar el seu so "
+"exactament el mateix so. Clica damunt d'una targeta per a escoltar el seu so "
 "ocult, i intenta aparellar-los. Només pots destapar dues targetes cada "
 "vegada, de manera que necessitaràs recordar on es troba cada so, mentre "
 "escoltes el seu parell. Quan destapis una parella, ambdues desapareixeran."
@@ -19448,10 +19449,10 @@ msgid ""
 "twins, they both disappear."
 msgstr ""
 "Cada targeta té una imatge en l'altra cara, i cada targeta té una parella "
-"exactament igual. Fes clic en una targeta per a veure la seua imatge oculta, "
-"i intenta aparellar-les. Només pots destapar dues targetes cada vegada, de "
-"manera que necessitaràs recordar on es troba una imatge, mentre busques la "
-"seua parella. Quan destapis una parella, ambdues desapareixeran."
+"exactament igual. Clica damunt d'una targeta per a veure la seua imatge "
+"oculta, i intenta aparellar-les. Només pots destapar dues targetes cada "
+"vegada, de manera que necessitaràs recordar on es troba una imatge, mentre "
+"busques la seua parella. Quan destapis una parella, ambdues desapareixeran."
 
 #. Activity title
 #: activities/memory-wordnumber/ActivityInfo.qml:15
@@ -19704,8 +19705,7 @@ msgstr "Inici: ix d'una activitat i torna al menú («Ctrl+W» o la tecla «Esc�
 msgctxt "ActivityInfo|"
 msgid "Arrows - Display the current level. Click to select another level"
 msgstr ""
-"«Fletxes»: mostra el nivell actual. Fes clic per a seleccionar un altre "
-"nivell"
+"«Fletxes»: mostra el nivell actual. Clica per a seleccionar un altre nivell"
 
 #: activities/menu/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -20072,7 +20072,7 @@ msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
 "that activity."
 msgstr ""
-"Col·loca les teues activitats preferides ací fent clic damunt del Sol que hi "
+"Col·loca les teues activitats preferides ací clicant damunt del Sol que hi "
 "ha en la part superior dreta de cada activitat."
 
 #: activities/menu/Menu.qml:781
@@ -20126,8 +20126,7 @@ msgstr ""
 "Mirant la paret de roca, veuràs una espurna en algun lloc. Mou-te al costat "
 "d'esta espurna i utilitza la roda del ratolí o el gest de zoom per a "
 "acostar. Quan arribes al nivell màxim de zoom, apareixerà una llavor d'or a "
-"la posició de l'espurna. Fes clic damunt de la llavor d'or per a arreplegar-"
-"la."
+"la posició de l'espurna. Clica damunt de la llavor d'or per a arreplegar-la."
 
 #: activities/mining/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -20199,7 +20198,7 @@ msgstr "Hum! Ves amb compte, estàs acostant el zoom massa lluny de l'espurna."
 #: activities/mining/Mining.qml:479
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
-msgstr "Ara veus la llavor, fes clic per a arreplegar-la."
+msgstr "Ara veus la llavor, clica per a arreplegar-la."
 
 #: activities/mining/Mining.qml:487
 msgctxt "Mining|"
@@ -20258,7 +20257,7 @@ msgid ""
 "the letter on your keyboard."
 msgstr ""
 "Es mostra una imatge en l'àrea principal i una paraula incompleta davall la "
-"imatge. Fes clic damunt de la lletra que falta per a completar la paraula o "
+"imatge. Clica damunt de la lletra que falta per a completar la paraula o "
 "escriu-la amb el teclat."
 
 #: activities/missing-letter/MissingLetter.qml:323
@@ -20321,9 +20320,9 @@ msgid ""
 "pay. If you want to remove a coin or a note, click or tap on it on the upper "
 "screen area."
 msgstr ""
-"Fes clic o toca en les monedes o en els bitllets de la part inferior de la "
-"pantalla per a pagar. Si vols traure una moneda o un bitllet, fes clic o "
-"toca sobre seu a l'àrea superior de la pantalla."
+"Clica o toca en les monedes o en els bitllets de la part inferior de la "
+"pantalla per a pagar. Si vols traure una moneda o un bitllet, clica o toca "
+"sobre seu a l'àrea superior de la pantalla."
 
 #: activities/money/ActivityInfo.qml:26
 #: activities/money_back/ActivityInfo.qml:26
@@ -20348,9 +20347,9 @@ msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
 "you want to remove a coin or a note, click on it on the upper screen area."
 msgstr ""
-"Fes clic en les monedes o en els bitllets de la part inferior de la pantalla "
-"per a pagar. Si vols traure una moneda o un bitllet, fes clic damunt seu en "
-"l'àrea superior de la pantalla."
+"Clica damunt de les monedes o dels bitllets de la part inferior de la "
+"pantalla per a pagar. Si vols traure una moneda o un bitllet, clica damunt "
+"seu a l'àrea superior de la pantalla."
 
 #: activities/money/money.js:179
 #, qt-format
@@ -20408,9 +20407,9 @@ msgid ""
 "his change. If you want to remove a coin or a note, click on it on the upper "
 "area of the screen."
 msgstr ""
-"Fes clic en les monedes o en els bitllets de la part inferior de la pantalla "
-"per a tornar el canvi a Tux. Si vols traure una moneda o un bitllet, fes "
-"clic damunt seu en l'àrea superior de la pantalla."
+"Clica damunt de les monedes o dels bitllets de la part inferior de la "
+"pantalla per a tornar el canvi a Tux. Si vols traure una moneda o un "
+"bitllet, clica damunt seu a l'àrea superior de la pantalla."
 
 #. Activity title
 #: activities/money_back_cents/ActivityInfo.qml:15
@@ -20444,9 +20443,9 @@ msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
 "you want to remove a coin or a note, click on it on the upper screen area."
 msgstr ""
-"Fes clic en les monedes o en els bitllets de la part inferior de la pantalla "
-"per a pagar. Si vols traure una moneda o un bitllet, fes clic damunt seu en "
-"l'àrea superior de la pantalla."
+"Clica damunt de les monedes o dels bitllets de la part inferior de la "
+"pantalla per a pagar. Si vols traure una moneda o un bitllet, clica damunt "
+"seu a l'àrea superior de la pantalla."
 
 #. Activity title
 #: activities/morse_code/ActivityInfo.qml:18
@@ -20485,8 +20484,8 @@ msgid ""
 msgstr ""
 "Se't demanarà que envies un missatge en codi Morse o que convertisques el "
 "missatge rebut en codi Morse a lletres o dígits. Per a aprendre el codi "
-"Morse, pots fer clic damunt de la icona de clau Morse per a consultar el "
-"mapa de traducció que conté el codi per a totes les lletres i dígits."
+"Morse, pots clicar damunt de la icona de clau Morse per a consultar el mapa "
+"de traducció que conté el codi per a totes les lletres i dígits."
 
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
@@ -20526,7 +20525,7 @@ msgstr ""
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
-"Quan estigues a punt, fes clic damunt d'en Tux i conversarem en codi Morse."
+"Quan estigues a punt, clica damunt d'en Tux i conversarem en codi Morse."
 
 #: activities/morse_code/MorseCode.qml:364
 #, qt-format
@@ -20634,8 +20633,8 @@ msgid ""
 "First select an item from the list, and then click on a spot of the mosaic "
 "to place the item."
 msgstr ""
-"Primer, selecciona un element des de la llista i després fes clic en un punt "
-"en el mosaic per a col·locar-lo."
+"Primer, selecciona un element des de la llista i després clica damunt d'un "
+"punt en el mosaic per a col·locar-lo."
 
 #: activities/mosaic/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -20752,7 +20751,7 @@ msgid ""
 "the empty spots of the board (by clicking on the spots)."
 msgstr ""
 "Tu i en Tux comenceu amb 9 peces cadascun, i fareu torns per a posar-les en "
-"els espais buits del tauler (fent clic damunt dels punts)."
+"els espais buits del tauler (clicant damunt dels punts)."
 
 # skip-rule: kct-remove
 #: activities/nine_men_morris/NineMenMorris.qml:352
@@ -20774,7 +20773,7 @@ msgid ""
 "there. Green color spots indicates where you can move."
 msgstr ""
 "Una vegada es col·loquen totes les peces, tu i en Tux fareu torns per a "
-"moure-les. Fes clic en una de les teues peces, i després en l'espai buit "
+"moure-les. Clica damunt d'una de les teues peces, i després en l'espai buit "
 "adjacent per a moure-l'hi. Els punts de color verd indicaran on es pot moure."
 
 #: activities/nine_men_morris/NineMenMorris.qml:360
@@ -20935,8 +20934,8 @@ msgid ""
 "You can click and drag from one point to the next ones, or click on each "
 "point one after the other."
 msgstr ""
-"Dibuixa la imatge fent clic damunt dels punts en ordre seqüencial numèric. "
-"Pots fer clic i arrossegar des d'un punt als següents, o fer clic en cada "
+"Dibuixa la imatge clicant damunt dels punts en ordre seqüencial numèric. "
+"Pots clicar i arrossegar des d'un punt als següents, o clicar damunt de cada "
 "punt un darrere l'altre."
 
 #. Activity title
@@ -20971,8 +20970,8 @@ msgid ""
 msgstr ""
 "Seguix les instruccions: atrapa els núvols amb un nombre parell o senar en "
 "l'ordre correcte. Amb un teclat, utilitza les tecles de cursor per a moure "
-"l'helicòpter. Amb un dispositiu apuntador, només fes clic o toca la ubicació "
-"de destinació. Per a saber quin nombre has d'atrapar, pots recordar-lo o "
+"l'helicòpter. Amb un dispositiu apuntador, només clica o toca la ubicació de "
+"destinació. Per a saber quin nombre has d'atrapar, pots recordar-lo o "
 "comprovar el cantó inferior dret. En els nivells posteriors, cal recordar-lo."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:15
@@ -21743,7 +21742,7 @@ msgid ""
 "Click on the grid squares to move Tux to the target following the arrow "
 "directions."
 msgstr ""
-"Fes clic damunt dels quadrats de quadrícula per a moure en Tux seguint les "
+"Clica damunt dels quadrats de quadrícula per a moure en Tux seguint les "
 "direccions de les fletxes."
 
 #: activities/path_decoding/ActivityInfo.qml:23
@@ -21871,7 +21870,7 @@ msgid ""
 msgstr ""
 "Fes doble clic o doble toc en un costat de la porteria per a xutar la "
 "pilota. Pots fer doble clic amb el botó esquerre, dret o mig del ratolí. Si "
-"no fas doble clic prou ràpid, en Tux atraparà la pilota. Fes clic damunt seu "
+"no fas doble clic prou ràpid, en Tux atraparà la pilota. Clica damunt seu "
 "perquè torne a la seua posició inicial."
 
 #: activities/penalty/Penalty.qml:239
@@ -21886,7 +21885,7 @@ msgstr ""
 #: activities/penalty/Penalty.qml:240
 msgctxt "Penalty|"
 msgid "Click or tap on the ball to bring it back to its initial position."
-msgstr "Fes clic o toca la pilota per a tornar-la a la seua posició inicial."
+msgstr "Clica o toca la pilota per a tornar-la a la seua posició inicial."
 
 #. Activity title
 #: activities/photo_hunter/ActivityInfo.qml:15
@@ -21914,7 +21913,7 @@ msgid ""
 "you find a difference you must click on it."
 msgstr ""
 "Observa les dues imatges detingudament. Existixen algunes diferències. Quan "
-"en trobes una, fes clic damunt seu."
+"en trobes una, clica damunt seu."
 
 #: activities/photo_hunter/PhotoHunter.qml:88
 msgctxt "PhotoHunter|"
@@ -21924,7 +21923,7 @@ msgstr "Arrossega el control lliscant per a mostrar les diferències."
 #: activities/photo_hunter/PhotoHunter.qml:89
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
-msgstr "Fes clic en les diferències entre les dues imatges."
+msgstr "Clica damunt de les diferències entre les dues imatges."
 
 #. Activity title
 #: activities/piano_composition/ActivityInfo.qml:16
@@ -21985,7 +21984,7 @@ msgid ""
 "with clicking the colored rectangle keys to write music."
 msgstr ""
 "Nivell 1: teclat de piano bàsic (només les tecles blanques) on els usuaris "
-"poden experimentar fent clic en les tecles rectangulars de color per a "
+"poden experimentar clicant damunt de les tecles rectangulars de color per a "
 "escriure música."
 
 #: activities/piano_composition/ActivityInfo.qml:27
@@ -22362,7 +22361,7 @@ msgid ""
 "Click on the note symbol to write different length notes such as whole "
 "notes, half notes, quarter notes and eighth notes."
 msgstr ""
-"Fes clic damunt del símbol de la nota per a escriure notes amb durades "
+"Clica damunt del símbol de la nota per a escriure notes amb durades "
 "diferents, com ara rodones, blanques, negres i corxeres."
 
 #: activities/piano_composition/piano_composition.js:39
@@ -22372,9 +22371,9 @@ msgid ""
 "the rest symbol to select the rest length and then click on the add button "
 "to enter it to the staff."
 msgstr ""
-"Els silencis equivalen a notes durant les quals es manté el silenci. Fes "
-"clic damunt del símbol de silenci per a seleccionar la seua duració i fes "
-"clic en el botó «Afig» per a introduir-lo al pentagrama."
+"Els silencis equivalen a notes durant les quals es manté el silenci. Clica "
+"damunt del símbol de silenci per a seleccionar la seua duració i clica "
+"damunt del botó «Afig» per a introduir-lo al pentagrama."
 
 #: activities/piano_composition/piano_composition.js:42
 msgctxt "piano_composition|"
@@ -22646,7 +22645,7 @@ msgid ""
 msgstr ""
 "Atrapa els núvols en ordre creixent. Amb un teclat utilitza les tecles de "
 "cursor per a moure l'helicòpter. Amb un dispositiu apuntador senzillament "
-"fes clic o toca la ubicació de destinació. Per a saber quin nombre has "
+"clica o toca la ubicació de destinació. Per a saber quin nombre has "
 "d'atrapar pots recordar-lo o comprovar el cantó inferior dret."
 
 #: activities/planegame/Sequence.qml:13
@@ -22704,7 +22703,7 @@ msgid ""
 "Some notes are played on the staff. Click on the keyboard keys matching the "
 "notes on the staff."
 msgstr ""
-"Es toquen algunes notes en el pentagrama. Fes clic sobre les tecles del "
+"Es toquen algunes notes en el pentagrama. Clica damunt de les tecles del "
 "teclat que coincidisquen amb les notes en el pentagrama."
 
 #: activities/play_piano/ActivityInfo.qml:29
@@ -22725,7 +22724,8 @@ msgstr "«Retrocés» o «Suprimir»: per a desfer"
 msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr ""
-"Fes clic en les tecles del piano que coincidisquen amb les notes indicades."
+"Clica damunt de les tecles del piano que coincidisquen amb les notes "
+"indicades."
 
 #: activities/play_piano/PlayPiano.qml:322
 msgctxt "PlayPiano|"
@@ -22779,8 +22779,8 @@ msgid ""
 "the same rhythm. If you clicked at correct times, another rhythm is played. "
 "If not, you must try again."
 msgstr ""
-"Escolta el ritme tocat. Quan estigues a punt, fes clic damunt del tambor "
-"seguint el mateix ritme. Si has fet clic en els moments correctes, es "
+"Escolta el ritme tocat. Quan estigues a punt, clica damunt del tambor "
+"seguint el mateix ritme. Si has fet clic damunt en els moments correctes, es "
 "reproduirà una altra vegada el ritme. Si no és així, hauràs d'intentar-ho de "
 "nou."
 
@@ -22791,8 +22791,8 @@ msgid ""
 "on the drum when the line is in the middle of the notes."
 msgstr ""
 "En els nivells senars es mostra una línia vertical en el pentagrama que "
-"seguix el ritme: fes clic damunt del tambor quan la línia es trobe enmig de "
-"les notes."
+"seguix el ritme: clica damunt del tambor quan la línia es trobe enmig de les "
+"notes."
 
 #: activities/play_rhythm/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -22803,19 +22803,18 @@ msgid ""
 msgstr ""
 "Fins i tot els nivells són més durs, perquè no hi ha línia vertical. Has de "
 "llegir la duració de les notes i tocar el ritme en conseqüència. També pots "
-"fer clic damunt del metrònom per a escoltar les negres com a referència."
+"clicar damunt del metrònom per a escoltar les negres com a referència."
 
 #: activities/play_rhythm/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Click on the reload button if you want to replay the rhythm."
 msgstr ""
-"Fes clic damunt del botó «Torna a carregar» si vols tornar a reproduir el "
-"ritme."
+"Clica damunt del botó «Torna a carregar» si vols tornar a reproduir el ritme."
 
 #: activities/play_rhythm/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Space bar: click on the drum"
-msgstr "Barra espaiadora: per a fer clic en el tambor"
+msgstr "Barra espaiadora: per a clicar damunt del tambor"
 
 #: activities/play_rhythm/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
@@ -22847,8 +22846,8 @@ msgid ""
 "Follow the vertical line and click on the drum or press space key to play "
 "the rhythm correctly."
 msgstr ""
-"Seguix la línia vertical i fes clic en el tambor o prem la tecla «Espai» per "
-"a tocar el ritme de manera correcta."
+"Seguix la línia vertical i clica damunt del tambor o prem la tecla «Espai» "
+"per a tocar el ritme de manera correcta."
 
 #: activities/play_rhythm/PlayRhythm.qml:406
 msgctxt "PlayRhythm|"
@@ -23197,7 +23196,7 @@ msgid ""
 "-Click on any instruction in the <b>instruction area</b> to add it to the "
 "<b>Main Function</b>."
 msgstr ""
-"- Fes clic en qualsevol instrucció en l'<b>àrea d'instruccions</b> per a "
+"- Clica damunt de qualsevol instrucció en l'<b>àrea d'instruccions</b> per a "
 "afegir-la a la <b>Funció principal</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:553
@@ -23231,7 +23230,7 @@ msgid ""
 "Function</b> label."
 msgstr ""
 "- Per a <b>canviar</b> entre l'<b>Àrea del procediment</b> i l'<b>Àrea de "
-"funcions principals</b> per a afegir el codi, fes clic damunt de l'etiqueta "
+"funcions principals</b> per a afegir el codi, clica damunt de l'etiqueta "
 "<b>Procediment</b> o <b>Funció principal</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:575
@@ -23256,8 +23255,8 @@ msgid ""
 "label."
 msgstr ""
 "- Per a <b>canviar</b> entre l'<b>Àrea del bucle</b> i l'<b>Àrea de funcions "
-"principals</b> per a afegir el codi, fes clic damunt de l'etiqueta <b>Bucle</"
-"b> o <b>Funció principal</b>."
+"principals</b> per a afegir el codi, clica damunt de l'etiqueta <b>Bucle</b> "
+"o <b>Funció principal</b>."
 
 #: activities/programmingMaze/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -23351,7 +23350,7 @@ msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
 msgstr ""
-"Si oblides el model, pots fer clic en el botó Consell per a tornar-lo a "
+"Si oblides el model, pots clicar damunt del botó «Consell» per a tornar-lo a "
 "veure."
 
 #. Activity title
@@ -23456,7 +23455,7 @@ msgid ""
 "First, select the proper color from the toolbar. Click on the grid and drag "
 "to paint, then release the click to stop painting."
 msgstr ""
-"Primer, tria el color adequat des de la barra d'eines. Fes clic en la "
+"Primer, tria el color adequat des de la barra d'eines. Clica damunt de la "
 "quadrícula i arrossega per a pintar, per a deixar de pintar senzillament "
 "deixa anar el botó del ratolí."
 
@@ -23562,7 +23561,7 @@ msgid ""
 "the system is back up and Tux is in his home, push the light button for him. "
 "To win you must switch on all the consumers while all the producers are up."
 msgstr ""
-"Fes clic en els diferents elements actius: sol, núvols, presa, panells "
+"Clica damunt dels diferents elements actius: sol, núvols, presa, panells "
 "solars, parcs eòlics i transformadors, amb la finalitat de reactivar tot el "
 "sistema elèctric. Quan el sistema estiga actiu i en Tux estiga a casa seua, "
 "prem el botó de la llum per ell. Per a guanyar cal encendre tots els "
@@ -23583,7 +23582,7 @@ msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
 "and transformers, in order to reactivate the entire electrical system."
 msgstr ""
-"Fes clic en els diferents elements actius: sol, núvols, presa, panells "
+"Clica damunt dels diferents elements actius: sol, núvols, presa, panells "
 "solars, parcs eòlics i transformadors, amb la finalitat de reactivar tot el "
 "sistema elèctric."
 
@@ -23685,10 +23684,10 @@ msgid ""
 "fish. Click the domino with the right mouse button to count backwards. When "
 "done, click on the OK button or hit the Enter key."
 msgstr ""
-"Fes clic en la fitxa de dominó per a mostrar quants glaçons hi ha entre en "
-"Tux i el peix. Fes clic en la fitxa de dominó amb el botó dret del ratolí "
-"per a comptar arrere. Quan hages acabat, fes clic en el botó «OK» o prem la "
-"tecla «Intro»."
+"Clica damunt de la fitxa de dominó per a mostrar quants glaçons hi ha entre "
+"en Tux i el peix. Clica damunt de la fitxa de dominó amb el botó dret del "
+"ratolí per a comptar arrere. Quan hages acabat, clica damunt del botó «OK» o "
+"prem la tecla «Intro»."
 
 #: activities/reversecount/resource/1/Data.qml:13
 #: activities/reversecount/resource/10/Data.qml:13
@@ -23749,8 +23748,8 @@ msgid ""
 "and from Arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
 "Aprén les regles per a llegir els nombres romans i practica la conversió a i "
-"dels nombres aràbics. Després, fes clic damunt del botó «OK» per a validar "
-"la resposta."
+"dels nombres aràbics. Després, clica damunt del botó «OK» per a validar la "
+"resposta."
 
 #: activities/roman_numerals/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -23859,9 +23858,9 @@ msgid ""
 "hand, it limits the maximum roman number to 3999 (MMMCMXCIX)."
 msgstr ""
 "S'utilitzen sumes de M per a construir els milers: M, MM, MMM.\n"
-"Tingues en compte que no pots unir més de tres símbols idèntics. La primera "
-"implicació d'esta regla és que no es poden utilitzar només sumes per a "
-"construir totes les unitats possibles, desenes o centenes, sinó que també "
+"Cal tindre en compte que no pots unir més de tres símbols idèntics. La "
+"primera implicació d'esta regla és que no es poden utilitzar només sumes per "
+"a construir totes les unitats possibles, desenes o centenes, sinó que també "
 "cal emprar diferències. D'altra banda, açò limita el nombre romà màxim a "
 "3999 (MMMCMXCIX)."
 
@@ -25473,9 +25472,9 @@ msgid ""
 "Each question contains 4 options. One of those is 100% correct. Try to "
 "answer the questions until you get 100% in the closeness meter."
 msgstr ""
-"Fes clic en un planeta o al sol i respon les següents preguntes. Cada "
-"pregunta conté 4 opcions. Una d'elles és 100% correcta. Intenta respondre "
-"les preguntes fins que obtingues un 100% al mesurador d'apropament."
+"Clica damunt d'un planeta o damunt del Sol i respon les següents preguntes. "
+"Cada pregunta conté 4 opcions. Una d'elles és 100% correcta. Intenta "
+"respondre les preguntes fins que obtingues un 100% al mesurador d'apropament."
 
 #: activities/solar_system/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -26539,8 +26538,8 @@ msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
 "options, out of which one is correct."
 msgstr ""
-"Fes clic en el Sol o en qualsevol planeta per a revelar les preguntes. Cada "
-"pregunta té 4 opcions, de les quals una serà la correcta."
+"Clica damunt del Sol o damunt de qualsevol planeta per a revelar les "
+"preguntes. Cada pregunta té 4 opcions, de les quals una serà la correcta."
 
 #: activities/solar_system/SolarSystem.qml:160
 msgctxt "SolarSystem|"
@@ -26551,12 +26550,12 @@ msgid ""
 "closeness by following the closeness meter. If the hint button is visible, "
 "you can click on it to get a hint to find the answer."
 msgstr ""
-"Després d'haver fet clic en un planeta, el mesurador d'apropament que hi ha "
-"en el cantó inferior dret de la pantalla, representarà el grau de correcció "
-"de la resposta seleccionada. La resposta menys correcta es representarà en "
-"un 1%. Torna-ho a provar fins que arribes a un apropament del 100% seguint "
-"el comptador d'apropament. Si el botó «Consell» és visible, pots fer-hi clic "
-"per a obtindre un consell que t'ajudarà a trobar la resposta."
+"Després d'haver fet clic damunt d'un planeta, el mesurador d'apropament que "
+"hi ha en el cantó inferior dret de la pantalla, representarà el grau de "
+"correcció de la resposta seleccionada. La resposta menys correcta es "
+"representarà en un 1%. Torna-ho a provar fins que arribes a un apropament "
+"del 100% seguint el comptador d'apropament. Si el botó «Consell» és visible, "
+"pots clicar-hi per a obtindre un consell que t'ajudarà a trobar la resposta."
 
 #: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
@@ -26655,7 +26654,7 @@ msgstr "Aprendre com controlar un submarí."
 #: activities/submarine/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Move and click using the mouse, physics basics."
-msgstr "Moure i fer clic amb el ratolí, física bàsica."
+msgstr "Moure i clicar amb el ratolí, física bàsica."
 
 #. Help manual
 #: activities/submarine/ActivityInfo.qml:24
@@ -26900,7 +26899,7 @@ msgid ""
 "something in a square, it might not be correct for the whole Sudoku. It can "
 "still be a mistake."
 msgstr ""
-"Selecciona un nombre o un símbol i fes clic en la seua posició de "
+"Selecciona un nombre o un símbol i clica damunt de la seua posició de "
 "destinació. Cada símbol ha d'aparéixer només una vegada en una fila, en una "
 "columna i en una subregió si n'hi ha. Si no es permet una acció, el joc "
 "mostrarà per què. Però compte: si pots col·locar alguna cosa en un quadrat, "
@@ -26968,22 +26967,22 @@ msgid ""
 "items are automatically selected in your current and future guesses until "
 "you un-mark them, by double clicking on them again."
 msgstr ""
-"Fes clic en els objectes fins que penses que has trobat la resposta "
-"correcta. Després fes clic en el botó «OK». Un punt negre voldrà dir que has "
-"trobat l'objecte correcte en la posició correcta, mentre que un punt blanc "
-"voldrà dir que un objecte és correcte però en la posició incorrecta. En els "
-"nivells inferiors, en Tux també et dona una indicació amb un quadrat negre "
-"sobre els objectes correctes en la posició correcta i un quadrat blanc sobre "
-"els objectes correctes en la posició incorrecta. En els nivells 4 i 8, un "
-"objecte pot restar ocult diverses vegades.<br/>Pots utilitzar el botó dret "
-"del ratolí per a posar els objectes en ordre invers o el selector d'objectes "
-"per a escollir directament un objecte de la llista. Mantín premut dos segons "
-"sobre un objecte per a triar automàticament l'últim objecte seleccionat en "
-"esta posició. Fes doble clic damunt d'un objecte seleccionat prèviament en "
-"el teu historial de conjectura per a marcar-lo com a «correcte». Estos "
-"objectes marcats seran seleccionats automàticament en les conjectures "
-"actuals i futures, fins que els desmarques altra vegada fent-hi doble clic o "
-"tocant-los."
+"Clica damunt dels objectes fins que penses que has trobat la resposta "
+"correcta. Després clica damunt del botó «OK». Un punt negre voldrà dir que "
+"has trobat l'objecte correcte en la posició correcta, mentre que un punt "
+"blanc voldrà dir que un objecte és correcte però en la posició incorrecta. "
+"En els nivells inferiors, en Tux també et dona una indicació amb un quadrat "
+"negre sobre els objectes correctes en la posició correcta i un quadrat blanc "
+"sobre els objectes correctes en la posició incorrecta. En els nivells 4 i 8, "
+"un objecte pot restar ocult diverses vegades.<br/>Pots utilitzar el botó "
+"dret del ratolí per a posar els objectes en ordre invers o el selector "
+"d'objectes per a escollir directament un objecte de la llista. Mantín premut "
+"dos segons sobre un objecte per a triar automàticament l'últim objecte "
+"seleccionat en esta posició. Fes doble clic damunt d'un objecte seleccionat "
+"prèviament en el teu historial de conjectura per a marcar-lo com a "
+"«correcte». Estos objectes marcats seran seleccionats automàticament en les "
+"conjectures actuals i futures, fins que els desmarques altra vegada fent-hi "
+"doble clic o tocant-los."
 
 #: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
@@ -27065,7 +27064,7 @@ msgid ""
 "a dart. When all your darts are thrown, you are asked to count your score. "
 "Enter the score with the keyboard."
 msgstr ""
-"Comprova la velocitat i la direcció del vent, després fes clic damunt de "
+"Comprova la velocitat i la direcció del vent, després clica damunt de "
 "l'objectiu per a llançar un dard. Quan hages llançat tots els dards, "
 "apareixerà una finestra que et demanarà que comptes la teua puntuació. "
 "Introduïx la puntuació amb el teclat."
@@ -27192,8 +27191,8 @@ msgid ""
 msgstr ""
 "Quan totes les línies estiguen completades, prem el botó «OK» per a validar "
 "les respostes. Si algunes respostes són incorrectes, apareixerà una icona de "
-"creu en les línies corresponents. Per a corregir els errors, fes clic en els "
-"nombres incorrectes per a eliminar-los i repetir els passos anteriors."
+"creu en les línies corresponents. Per a corregir els errors, clica damunt "
+"dels nombres incorrectes per a eliminar-los i repetir els passos anteriors."
 
 #. Help manual
 #: activities/tens_complement_find/ActivityInfo.qml:23
@@ -27354,8 +27353,8 @@ msgid ""
 "Play with Tux. Take turns to click on the square which you want to mark. The "
 "first player to create a line of 3 marks wins."
 msgstr ""
-"Juga amb en Tux. Per torns, feu clic damunt del quadrat que voleu marcar. "
-"Qui primer cree una línia de 3 marques guanya."
+"Juga amb en Tux. Per torns, cliqueu damunt del quadrat que voleu marcar. Qui "
+"primer cree una línia de 3 marques guanya."
 
 #: activities/tic_tac_toe/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -27375,7 +27374,7 @@ msgid ""
 "Play with a friend. Take turns to click on the square which you want to "
 "mark. The first player to create a line of 3 marks wins."
 msgstr ""
-"Juga amb una amistat. Per torns, feu clic damunt del quadrat que voleu "
+"Juga amb una amistat. Per torns, cliqueu damunt del quadrat que voleu "
 "marcar. Qui primer cree una línia de 3 marques guanya."
 
 #. Activity title
@@ -27452,9 +27451,9 @@ msgstr ""
 "de les desenes al costat del nombre superior de la columna següent: açò "
 "s'anomena portar-ne. A continuació, suma els nombres de la columna següent, "
 "inclòs el nombre portat, i repetix el procés fins que s'acabe l'operació. "
-"Una vegada trobat el resultat, fes clic en el botó «OK» per a validar la "
+"Una vegada trobat el resultat, clica damunt del botó «OK» per a validar la "
 "resposta. En alguns nivells, hauràs d'escriure l'operació indicada abans de "
-"resoldre-la; en este cas, fes clic en el botó «Preparat» quan l'operació "
+"resoldre-la; en este cas, clica damunt del botó «Preparat» quan l'operació "
 "s'haja escrit correctament i després resol-la."
 
 #: activities/vertical_addition/resource/1/Data.qml:12
@@ -27585,14 +27584,14 @@ msgstr ""
 "que el nombre inferior, pots amprar del minuend de la columna següent: per "
 "exemple, si afiges 10 unitats al nombre superior, hauràs d'eliminar una "
 "unitat del nombre superior de la columna següent. Açò s'anomena mètode de "
-"portar-ne per reagrupament. Per a fer-ho en esta activitat, fes clic en el "
+"portar-ne per reagrupament. Per a fer-ho en esta activitat, clica damunt del "
 "rectangle buit a l'esquerra del nombre superior, selecciona 1, i a la "
-"columna següent fes clic en el rectangle buit a la dreta del nombre superior "
-"i selecciona -1. Després escriu el resultat de la columna a la línia "
-"inferior, i fes el mateix a les columnes següents fins que l'operació haja "
-"acabat. Una vegada trobes el resultat, fes clic en el botó «OK» per a "
+"columna següent clica damunt del rectangle buit a la dreta del nombre "
+"superior i selecciona -1. Després escriu el resultat de la columna a la "
+"línia inferior, i fes el mateix a les columnes següents fins que l'operació "
+"haja acabat. Una vegada trobes el resultat, clica damunt del botó «OK» per a "
 "validar la resposta. En alguns nivells, hauràs d'escriure l'operació "
-"indicada abans de resoldre-la; en este cas, fes clic en el botó «Preparat» "
+"indicada abans de resoldre-la; en este cas, clica damunt del botó «Preparat» "
 "quan l'operació s'haja escrit correctament i després resol-la."
 
 #: activities/vertical_subtraction/resource/1/Data.qml:12
@@ -27743,26 +27742,26 @@ msgstr ""
 "que el nombre inferior, pots amprar del subtrahend de la columna següent: "
 "per exemple, si afiges 10 unitats al nombre superior, hauràs d'afegir una "
 "unitat del nombre inferior de la columna següent. Açò s'anomena mètode de "
-"portar-ne per compensació. Per a fer-ho en esta activitat, fes clic en el "
+"portar-ne per compensació. Per a fer-ho en esta activitat, clica damunt del "
 "rectangle buit a l'esquerra del nombre superior, selecciona 1, i a la "
-"columna següent fes clic en el rectangle buit a la dreta del nombre superior "
-"i selecciona +1. Després escriu el resultat de la columna a la línia "
-"inferior, i fes el mateix a les columnes següents fins que l'operació haja "
-"acabat. Una vegada trobes el resultat, fes clic en el botó D'acord per a "
-"validar la resposta. En alguns nivells, hauràs d'escriure l'operació "
-"indicada abans de resoldre-la; en este cas, fes clic en el botó Preparat "
+"columna següent clica damunt del rectangle buit a la dreta del nombre "
+"superior i selecciona +1. Després escriu el resultat de la columna a la "
+"línia inferior, i fes el mateix a les columnes següents fins que l'operació "
+"haja acabat. Una vegada trobes el resultat, clica damunt del botó D'acord "
+"per a validar la resposta. En alguns nivells, hauràs d'escriure l'operació "
+"indicada abans de resoldre-la; en este cas, clica damunt del botó Preparat "
 "quan l'operació s'haja escrit correctament i després resol-la. Si el nombre "
 "superior és més xicotet que el nombre inferior, pots demanar prestat del "
 "subtrahend a la columna següent: per exemple, si afiges 10 unitats al nombre "
 "superior, has d'afegir una unitat al nombre inferior de la columna següent. "
 "Açò s'anomena préstec per mètode de compensació. Per fer-ho en esta "
-"activitat, fes clic en el rectangle buit a l'esquerra del nombre superior, "
-"selecciona 1, i a la columna següent fes clic en el rectangle buit a la "
+"activitat, clica damunt del rectangle buit a l'esquerra del nombre superior, "
+"selecciona 1, i a la columna següent clica damunt del rectangle buit a la "
 "dreta del nombre inferior i selecciona +1. Després escriu el resultat de la "
 "columna a la línia inferior, i fes el mateix a les següents columnes fins "
-"que l'operació haja acabat. Una vegada trobat el resultat, fes clic en el "
+"que l'operació haja acabat. Una vegada trobat el resultat, clica damunt del "
 "botó D'acord per validar la resposta. En alguns nivells, hauràs d'escriure "
-"l'operació donada abans de resoldre-la; en este cas, fes clic en el botó "
+"l'operació donada abans de resoldre-la; en este cas, clica damunt del botó "
 "Prepara quan l'operació s'escriu correctament i després resol-la."
 
 #. Activity title
@@ -27796,8 +27795,8 @@ msgid ""
 "the system is back up and Tux is in the shower, push the shower button for "
 "him."
 msgstr ""
-"Fes clic en els diferents elements actius: sol, núvol, estació de bombeig i "
-"depuradora d'aigües residuals, per tal de tornar a activar tot el sistema "
+"Clica damunt dels diferents elements actius: sol, núvol, estació de bombeig "
+"i depuradora d'aigües residuals, per tal de tornar a activar tot el sistema "
 "d'aigües. Quan funcione el sistema i en Tux estiga en la dutxa, prem el botó "
 "de la dutxa per a dutxar-lo."
 
@@ -27807,7 +27806,7 @@ msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
 "the water cycle."
 msgstr ""
-"El sol és el principal component del cicle de l'aigua. Fes clic en el sol "
+"El sol és el principal component del cicle de l'aigua. Clica damunt del sol "
 "per a començar amb el cicle de l'aigua."
 
 #: activities/watercycle/Watercycle.qml:115
@@ -27824,7 +27823,7 @@ msgid ""
 "Click on the cloud."
 msgstr ""
 "El vapor d'aigua es condensa formant els núvols i quan esdevenen pesats, "
-"llavors comença a ploure. Fes clic en el núvol."
+"llavors comença a ploure. Clica damunt del núvol."
 
 #: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
@@ -27834,8 +27833,8 @@ msgid ""
 "residents."
 msgstr ""
 "La pluja provoca que s'òmpliguen els rius i esta aigua és transportada amb "
-"motobombes a través de torres d'aigua. Fes clic en la motobomba per tal de "
-"proveir d'aigua als residents."
+"motobombes a través de torres d'aigua. Clica damunt de la motobomba per tal "
+"de proveir d'aigua als residents."
 
 #: activities/watercycle/Watercycle.qml:119
 msgctxt "Watercycle|"
@@ -27843,13 +27842,13 @@ msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
 "clicking on it."
 msgstr ""
-"Veus la torre plena d'aigua. Activa la depuradora d'aigües residuals fent "
-"clic damunt seu."
+"Veus la torre plena d'aigua. Activa la depuradora d'aigües residuals clicant "
+"damunt seu."
 
 #: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
-msgstr "Bé! Fes clic en la dutxa quan en Tux arribe a casa."
+msgstr "Bé! Clica damunt de la dutxa quan en Tux arribe a casa."
 
 #: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
@@ -27902,8 +27901,8 @@ msgid ""
 "treatment, and at last regulate the switch to provide water to Tux's shower."
 msgstr ""
 "El teu objectiu és completar el cicle de l'aigua abans que en Tux arribe a "
-"casa. Fes clic en els diferents elements que componen el cicle de l'aigua. "
-"Primer fes clic en el sol, llavors en el núvol, en l'estació de bombament "
+"casa. Clica damunt dels diferents elements que componen el cicle de l'aigua. "
+"Primer clica damunt del sol, llavors en el núvol, en l'estació de bombament "
 "d'aigua, en la depuradora d'aigües residuals i finalment regula "
 "l'interruptor per a proporcionar aigua a la dutxa d'en Tux."
 
@@ -28206,7 +28205,7 @@ msgstr ""
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr ""
-"S'ha afegit el conjunt de dades en rus per a l'activitat «Fes clic en una "
+"S'ha afegit el conjunt de dades en rus per a l'activitat «Clica damunt d'una "
 "lletra»."
 
 #: core/ChangeLog.qml:158
@@ -29010,7 +29009,3 @@ msgstr "Omet"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Inicia"
-
-#~ msgctxt "Frieze|"
-#~ msgid "What is the binary representation of %1?"
-#~ msgstr "Quina és la representació binària de %1?"
