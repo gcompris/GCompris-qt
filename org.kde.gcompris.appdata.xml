@@ -251,7 +251,7 @@
     <p xml:lang="zh-CN">下面列出了软件提供的活动类型和它们包含的具体教学活动。</p>
     <p xml:lang="zh-TW">下方您可以看到該類別的遊戲清單。</p>
     <ul>
-      <li>computer discovery: keyboard, mouse, different mouse gestures, ...</li>
+      <li>computer discovery: keyboard, mouse, different mouse gestures, etc.</li>
       <li xml:lang="ar">استكشاف الحاسوب: لوحة المفاتيح والفأرة ومختلف إيماءات الفأرة وغيرها.</li>
       <li xml:lang="az">kompyuter ilə tanışlıq: klaviatura, siçan, müxtəlif siçan jestləri, ...</li>
       <li xml:lang="bg">запознаване с компютъра: клавиатура, мишка, различни жестове с мишката, ...</li>
@@ -301,7 +301,7 @@
       <li xml:lang="zh-CN">计算机启蒙：键盘、鼠标、鼠标手势……</li>
       <li xml:lang="zh-TW">電腦探索：鍵盤、滑鼠、不同的滑鼠手勢等</li>
       <li>arithmetic: table memory, enumeration, mirror image, balance
-    the scale, change giving, ...</li>
+    the scale, change giving, etc.</li>
       <li xml:lang="ar">الحساب: جدول الضرب والعدّ وصورة المرآة وموازنة كفّتا الميزان وإعطاء الباقي وغيرها.</li>
       <li xml:lang="az">hesab: cədvəl yaddaşı, sadalama, əks olunma, tarazlıq, verilmişlərin dəyişdirilməsi, ...</li>
       <li xml:lang="bg">аритметика: броене, смятане, създаване на огледално изображение, теглене с везни, боравене с пари, ...</li>
@@ -350,7 +350,7 @@
       <li xml:lang="x-test">xxarithmetic: table memory, enumeration, mirror image, balance the scale, change giving, ...xx</li>
       <li xml:lang="zh-CN">数学基础：乘法表记忆、识数、图形镜像、天平配平、找零……</li>
       <li xml:lang="zh-TW">數學運算：表格記憶、列舉、影像映射、平衡、找零計算等</li>
-      <li>science: the canal lock, color mixing, gravity concept, ...</li>
+      <li>science: the canal lock, color mixing, gravity concept, etc.</li>
       <li xml:lang="ar">العلوم: قفل القناة ومزج الألوان ومفهوم الجاذبيّة وغيرها.</li>
       <li xml:lang="az">elm: kanal kilidi, rəng qarışımı, cazibə anlayışı, ...</li>
       <li xml:lang="bg">наука: принципи на управление на шлюз, смесване на цветовете, гравитация, ...</li>
@@ -399,7 +399,7 @@
       <li xml:lang="x-test">xxscience: the canal lock, color mixing, gravity concept, ...xx</li>
       <li xml:lang="zh-CN">科学基础：船闸、颜色混合、重力概念……</li>
       <li xml:lang="zh-TW">科學：顏色混合、重力觀念、運河鎖等等</li>
-      <li>games: memory, connect 4, tic tac toe, sudoku, hanoi tower, ...</li>
+      <li>games: memory, connect 4, tic tac toe, sudoku, hanoi tower, etc.</li>
       <li xml:lang="ar">الألعاب: الذاكرة و«وصّل 4» و"إكس-أُو" و«سودوكو»، وبرج هانوي وغيرها.</li>
       <li xml:lang="az">oyunlar: yaddaş, 4 qoşulma, "X×O" oyunu, sudoku, Hanoy qülləsi, ...</li>
       <li xml:lang="bg">игри: памет, свържете 4, морски шах, судоку, кулата на Ханой, ...</li>
@@ -448,7 +448,7 @@
       <li xml:lang="x-test">xxgames: memory, connect 4, tic tac toe, sudoku, hanoi tower, ...xx</li>
       <li xml:lang="zh-CN">智力游戏：速记、四子棋、井子棋、数独、汉诺塔……</li>
       <li xml:lang="zh-TW">遊戲：記憶遊戲、四子棋、井字遊戲、數獨、河內塔等等</li>
-      <li>reading: reading practice, ...</li>
+      <li>reading: reading practice, etc.</li>
       <li xml:lang="ar">القراءة: ممارسة القراءة وغيرها.</li>
       <li xml:lang="az">oxu: oxu çalışması, ...</li>
       <li xml:lang="bg">четене: упражнения за четене, ...</li>
@@ -498,7 +498,7 @@
       <li xml:lang="zh-CN">阅读训练：阅读练习……</li>
       <li xml:lang="zh-TW">閱讀：閱讀練習等等</li>
       <li>other: learn to tell time, the braille system, maze, music
-    instruments, ...</li>
+    instruments, etc.</li>
       <li xml:lang="ar">أخرى: تعلّم قراءة الوقت ونظام «بريل» وألغاز متاهات والآلات الموسيقيّة وغيرها.</li>
       <li xml:lang="az">digər: saatdakı vaxtı demək, Brayla əlifbası, labirint, musiqi alətləri, ...</li>
       <li xml:lang="bg">други: запознаване с часовника, брайловата система, лабиринт, музикални инструменти, ...</li>
