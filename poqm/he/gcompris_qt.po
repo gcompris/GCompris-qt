@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-05-09 08:00+0300\n"
+"PO-Revision-Date: 2025-05-21 13:21+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 25.04.0\n"
+"X-Generator: Lokalize 25.04.1\n"
 "X-Qt-Contexts: true\n"
 "X-Poedit-Bookmarks: -1,2919,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
@@ -2572,20 +2572,23 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid ""
 "Finally, to load your level set, click on the 'Load saved levels' button."
-msgstr "לסיום, כדי לטעון את ערכת השלב, ללחוץ על כפתור 'לטעון שלבים שמורים'."
+msgstr ""
+"לסיום, כדי לטעון את ערכת השלבים, נא ללחוץ על הכפתור „טעינת שלבים שמורים”."
 
 #: activities/balancebox/balancebox.js:72
 msgctxt "balancebox|"
 msgid ""
 "Either create your levels by starting the level editor in the activity "
 "settings menu and then load your file, or choose the 'built-in' level set."
-msgstr "ליצור את השלבים שלך באמצעות פתיחה של עורך השלבים בהגדרות הפעילות"
+msgstr ""
+"אפשר ליצור את השלבים שלך באמצעות פתיחה של עורך השלבים בתפריט הגדרות הפעילות "
+"ואז לטעון את הקובץ שלך או לבחור בעורך השלבים המובנה."
 
 #: activities/balancebox/balancebox.js:106
 #, qt-format
 msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
-msgstr "הקובץ '%1' חסר! <br> חוזר לשלבים המובנים."
+msgstr "הקובץ „%1” חסר! <br> חוזר לשלבים המובנים."
 
 #: activities/balancebox/Balancebox.qml:70
 msgctxt "Balancebox|"
@@ -2621,12 +2624,12 @@ msgstr "לא"
 #: activities/balancebox/editor/BalanceboxEditor.qml:140
 msgctxt "BalanceboxEditor|"
 msgid "Load"
-msgstr "טען"
+msgstr "טעינה"
 
 #: activities/balancebox/editor/BalanceboxEditor.qml:147
 msgctxt "BalanceboxEditor|"
 msgid "Save"
-msgstr "שמור"
+msgstr "שמירה"
 
 #: activities/balancebox/editor/BalanceboxEditor.qml:154
 msgctxt "BalanceboxEditor|"
@@ -10914,13 +10917,13 @@ msgstr "אזורים תרבותיים של ליטא"
 #: activities/geo-country/resource/board/board17_0.qml:24
 msgctxt "board17_0|"
 msgid "Aukštaitija"
-msgstr "אווקשטייטיג'ה"
+msgstr "אוקשטאיטייה"
 
 #. Cultural region of Lithuania: Dzūkija
 #: activities/geo-country/resource/board/board17_0.qml:31
 msgctxt "board17_0|"
 msgid "Dzūkija"
-msgstr "דזוּקיג'ה"
+msgstr "דזוּקיה"
 
 #. Cultural region of Lithuania: Lithuania Minor
 #: activities/geo-country/resource/board/board17_0.qml:38
@@ -10932,13 +10935,13 @@ msgstr "ליטא הקטנה"
 #: activities/geo-country/resource/board/board17_0.qml:45
 msgctxt "board17_0|"
 msgid "Samogitia"
-msgstr "סמוגיטה"
+msgstr "זאמוט"
 
 #. Cultural region of Lithuania: Suvalkija
 #: activities/geo-country/resource/board/board17_0.qml:52
 msgctxt "board17_0|"
 msgid "Suvalkija"
-msgstr "סובלקיג'ה"
+msgstr "סובאלקיה"
 
 #: activities/geo-country/resource/board/board18_0.qml:13
 msgctxt "board18_0|"
