@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-05-26 15:52+0300\n"
+"PO-Revision-Date: 2025-05-28 11:05+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -8344,7 +8344,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr ""
+msgstr "בזיליקת סן מרקו"
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -8360,6 +8360,14 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
+"בזיליקת סן מרקו, נמצאת בוונציה שבאיטליה, היא יצירת מופת של ארכיטקטורה "
+"ביזנטית ואחת מנקודות הציון המפורסמות ביותר של העיר. נבנתה במקור ב־828 למטרת "
+"אכלוס השרידים של מרקוס הקדוש האוונגליסט, היא נבנתה מחדש בצורתה הנוכחית במאה "
+"ה־11. ידועה בזכות עיצובה העשיר, הבזיליקה שאבה השראה מעורבת בין מזרח למערב, "
+"כפי שניתן להבחין בזכות חמשת הכיפות שלה, הפסיפסים המדויקים והחזית המפוארת "
+"שמקושטת בפסלים וגילופים. החלל הפנימי מעוצב באופן עשיר ברצפות פסיפס מוזהבות "
+"ושיש, שמסמלים את העושר ועוצמה של רפובליקת ונציה. בסמוך לכיכר סן מרקו, היא "
+"נותרה סמל למורשת ההיסטורית, התרבותית והדתית של ונציה."
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
@@ -8394,12 +8402,9 @@ msgstr "נא ללחוץ על מקום אתר המורשת הנתון."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "שתיהן"
+msgstr "טירת הימג׳י"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -10706,10 +10711,9 @@ msgstr "קרלה"
 
 #. State of India: Tamil Nadu
 #: activities/geo-country/resource/board/board12_0.qml:144
-#, fuzzy
 msgctxt "board12_0|"
 msgid "Tamil Nadu"
-msgstr "טמיל נבּוּ"
+msgstr "טמיל נדוּ"
 
 #. State of India: West Bengal
 #: activities/geo-country/resource/board/board12_0.qml:151
@@ -22252,23 +22256,15 @@ msgid "Loop"
 msgstr "לולאה"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:542
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Instruction Area:"
 msgctxt "ProgrammingMaze|"
 msgid "Instruction Area:"
-msgstr "אזור הוראות:"
+msgstr "אזור הנחיות:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:543
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "There are 3 instructions which you can use to code and lead Tux to the "
-#| "fish:"
 msgctxt "ProgrammingMaze|"
 msgid ""
 "There are 3 instructions which you can use to code and lead Tux to the fish:"
-msgstr "ישנן 3 הוראות שניתן להשתמש בהן כדי לכתוב קוד ולהוביל את טאקס לדג:"
+msgstr "יש 3 הוראות שניתן להשתמש בהן כדי לכתוב קוד ולהוביל את טאקס לדג:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:544
 #, fuzzy
@@ -22300,12 +22296,9 @@ msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgstr "<b>3. לפנות ימינה:</b> מפנה את טאקס לימין."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:550
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Main Function:"
 msgctxt "ProgrammingMaze|"
 msgid "Main Function:"
-msgstr "פעולות עיקריות:"
+msgstr "פונקציה עיקרית:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:551
 #, fuzzy
@@ -22343,26 +22336,18 @@ msgstr ""
 "-ההוראות תבוצענה לפי הסדר עד האחרונה או עד מבוי סתום, או עד שטאקס מגיע לדג."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:563
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Procedure:"
 msgctxt "ProgrammingMaze|"
 msgid "Procedure:"
-msgstr "הליכים:"
+msgstr "הליך:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:564
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>Procedure</b> is a reusable set of instructions which can be <b>used "
-#| "in the code by calling it where needed</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
 "the code by calling it where needed</b>."
 msgstr ""
-"<b>הליך</b> הוא אוסף של הוראות שניתן לשימוש חוזר <b>בקוד כשקוראים לו כשצריך</"
-"b>"
+"<b>הליך</b> הוא אוסף של הוראות <b>לשימוש חוזר שאפשר להשתמש בו בקוד על ידי "
+"קריאה לו איפה שצריך</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:565
 #, fuzzy
@@ -22381,25 +22366,16 @@ msgstr ""
 "להוסיף את הקוד שלך, ללחוץ על <b>הליך</b> או תוית<b>אזור פעולות עיקריות</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:575
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Loop:"
 msgctxt "ProgrammingMaze|"
 msgid "Loop:"
 msgstr "לולאה:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:576
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
-#| "the number of times defined by the number inside it</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
 "the number of times defined by the number inside it</b>."
-msgstr ""
-"ה<b>לולאה</b> היא רצף של הוראות אשר <b>חוזר על עצמו לפי המספר שבתוכו</b>."
+msgstr "‏<b>לולאה</b> היא רצף של הוראות ש<b>חוזר על עצמו לפי המספר שבתוכו</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:577
 #, fuzzy
@@ -25951,25 +25927,16 @@ msgstr ""
 "יגדידלו או יקטינו את העומק של הצוללת."
 
 #: activities/submarine/Submarine.qml:177
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The + button will increase the depth of the submarine, while the - button "
-#| "will decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "The + button will increase the depth of the submarine, while the - button "
 "will decrease the depth of the submarine."
-msgstr ""
-"כפתור ה + יגדיל את העומק של הצוללת, בזמן שכפתור ה- יקטין את העומק של הצוללת."
+msgstr "הכפתור + יעמיק את הצוללת יותר, בזמן שהכפתור - יעלה אותה למעלה."
 
 #: activities/submarine/Submarine.qml:180
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Grab the crown to open the gate."
 msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
-msgstr "לתפוס את הכתר כדי לפתוח את השער."
+msgstr "יש לתפוס את הכתר כדי לפתוח את השער."
 
 #: activities/submarine/Submarine.qml:183
 #, fuzzy
