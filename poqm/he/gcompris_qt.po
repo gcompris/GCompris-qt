@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-05-21 13:21+0300\n"
+"PO-Revision-Date: 2025-05-28 11:02+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -10290,10 +10290,9 @@ msgstr "קרלה"
 
 #. State of India: Tamil Nadu
 #: activities/geo-country/resource/board/board12_0.qml:144
-#, fuzzy
 msgctxt "board12_0|"
 msgid "Tamil Nadu"
-msgstr "טמיל נבּוּ"
+msgstr "טמיל נדוּ"
 
 #. State of India: West Bengal
 #: activities/geo-country/resource/board/board12_0.qml:151
