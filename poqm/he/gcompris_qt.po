@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-05-28 11:05+0300\n"
+"PO-Revision-Date: 2025-05-29 16:00+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -2799,13 +2799,9 @@ msgstr ""
 "כשהצלחת, ללחוץ \"אישור\"."
 
 #: activities/binary_bulb/BinaryBulb.qml:84
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "This activity teaches how to convert decimal numbers to binary numbers."
 msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
-msgstr "פעילות זו מלמדת כיצד להפוך מספרים עשרוניים למספרים בינארים."
+msgstr "הפעילות הזאת מלמדת כיצד להפוך מספרים עשרוניים למספרים בינריים."
 
 #: activities/binary_bulb/BinaryBulb.qml:88
 #, fuzzy
@@ -2824,12 +2820,9 @@ msgstr ""
 "המצבים האלו מיוצגים באמצעות 0 ו 1 כך שנוצרת מערכת מיספור בינארית"
 
 #: activities/binary_bulb/BinaryBulb.qml:92
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
-msgstr "בפעילות הזו 0 וְ־1 מיוצגים באמצעות נורות, שניתן להפעיל ולכבות"
+msgstr "בפעילות הזו 0 ו־1 מיוצגים באמצעות נורות, שניתן להפעיל ולכבות."
 
 #: activities/binary_bulb/BinaryBulb.qml:96
 #, fuzzy
@@ -8189,12 +8182,19 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
+"ארמון פוטאלה, שניצב לו על ההר האדום בלהסה, טיבט, הוא סמל בולט של התרבות "
+"הטיבטית ואת מורשת עולמית של אונסק״ו. במקור הוא נבנה במאה השביעית והורחב במאה "
+"ה־17, הוא שימש כמגורי החורף של הדלאי לאמות ומרכז השלטון הטיבטי. מתנשא לגובה "
+"של 13 קומות עם למעלה מ־1,000 חדרים, הארמון משלב אדריכלות טיבטית מורכבת, "
+"ציורי קיר מלאי חיים ושרידים מקודשים. הוא מחולק לארמון הלבן, אזורי מגורים "
+"מנהליים, ולארמון האדום, שמיועד ללימודי דת ותפילות. ארמון פוטאלה מהווה עדות "
+"למורשת הרוחנית וההיסטורית של טיבט"
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "צבא הטרקוטה"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8206,6 +8206,11 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
+"צבא הטרקוטה הוא אוסף של אלפי חיילים, סוסים ומרכבות חימר שנקברו עם הקיסר "
+"הראשון של סין, צ׳ין שה-חואנג, כדי ללוות אותו לחיים שאחרי המוות. האתר התגלה ב־"
+"1974 ליד שי-אן, הדמויות מתוארכות ל־210 לפנה״ס ומסקרנות עקב הפרטים המדוקדקים "
+"שלהם, כל אחת מהלוחמים גולף במיוחד כדי לציין את הדרגות השונות של צבא סיני "
+"קדום."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
@@ -8261,7 +8266,7 @@ msgstr "נא ללחוץ על מקום אתר המורשת הנתון."
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "הפנתאון"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
