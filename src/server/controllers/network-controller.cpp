@@ -19,6 +19,8 @@
 #include <QUdpSocket>
 #include <QNetworkInterface>
 #include <QHostInfo>
+#include <QSettings>
+#include <QStandardPaths>
 
 #include "network-controller.h"
 
@@ -37,7 +39,10 @@ namespace controllers {
         connect(&pongTimer, &QTimer::timeout, this, &NetworkController::checkTimeout);
         pongTimer.start();
 
-        if (!tcpServer->listen(QHostAddress::Any, 5678)) {
+        QSettings config(QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation) + "/gcompris/gcompris-server.conf",
+                     QSettings::IniFormat);
+        quint32 port = config.value("General/port", "65524").toString().toUInt();
+        if (!tcpServer->listen(QHostAddress::Any, port)) {
             qWarning() << tr("Unable to start the server: %1.").arg(tcpServer->errorString());
         }
         else {
@@ -96,11 +101,15 @@ namespace controllers {
         QByteArray message = jsonDoc.toJson(QJsonDocument::Compact);
         qint64 messageSize = message.size();
 
+        QSettings config(QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation) + "/gcompris/gcompris-server.conf",
+                     QSettings::IniFormat);
+        quint32 port = config.value("General/port", "65524").toString().toUInt();
+
         sendNetLog(QString("Sending broadcast to %1\n with deviceId: %2").arg(broadcastIpList.join(", ")).arg(deviceId));
         for (const QString &ip: broadcastIpList) {
             qWarning() << "Broadcasting on:" << ip;
-            udpSocket->writeDatagram(reinterpret_cast<const char *>(&messageSize), sizeof(qint64), QHostAddress(ip), 5678);
-            qint64 data = udpSocket->writeDatagram(message.constData(), messageSize, QHostAddress(ip), 5678);
+            udpSocket->writeDatagram(reinterpret_cast<const char *>(&messageSize), sizeof(qint64), QHostAddress(ip), port);
+            qint64 data = udpSocket->writeDatagram(message.constData(), messageSize, QHostAddress(ip), port);
             // check count here ?
         }
     }
