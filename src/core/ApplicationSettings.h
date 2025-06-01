@@ -266,12 +266,18 @@ class ApplicationSettings : public QObject
     // keep last version ran. If different than ApplicationInfo.GCVersionCode(), it means a new version is running
     Q_PROPERTY(int lastGCVersionRan READ lastGCVersionRan WRITE setLastGCVersionRan NOTIFY lastGCVersionRanChanged)
 
-    /* server group */
+    /* teacher group */
     /**
-     * deviceId
+     * teacherId
      *
      */
-    Q_PROPERTY(QString deviceId READ deviceId WRITE setDeviceId NOTIFY deviceIdChanged)
+    Q_PROPERTY(QString teacherId READ teacherId WRITE setTeacherId NOTIFY teacherIdChanged)
+
+    /**
+     * teacherPort
+     *
+     */
+    Q_PROPERTY(QString teacherPort READ teacherPort WRITE setTeacherPort NOTIFY teacherPortChanged)
 
     /* no group */
     Q_PROPERTY(bool isBarHidden READ isBarHidden WRITE setBarHidden NOTIFY barHiddenChanged)
@@ -456,11 +462,18 @@ public:
         Q_EMIT downloadServerUrlChanged();
     }
 
-    QString deviceId() const { return m_deviceId; }
-    void setDeviceId(const QString &newDeviceId)
+    QString teacherId() const { return m_teacherId; }
+    void setTeacherId(const QString &newTeacherId)
     {
-        m_deviceId = newDeviceId;
-        Q_EMIT deviceIdChanged();
+        m_teacherId = newTeacherId;
+        Q_EMIT teacherIdChanged();
+    }
+
+    QString teacherPort() const { return m_teacherPort; }
+    void setTeacherPort(const QString &newTeacherPort)
+    {
+        m_teacherPort = newTeacherPort;
+        Q_EMIT teacherPortChanged();
     }
 
     QString cachePath() const { return m_cachePath; }
@@ -579,7 +592,8 @@ protected Q_SLOTS:
     Q_INVOKABLE void notifyUserDataPathChanged();
     Q_INVOKABLE void notifyExeCountChanged();
 
-    Q_INVOKABLE void notifyDeviceIdChanged();
+    Q_INVOKABLE void notifyTeacherIdChanged();
+    Q_INVOKABLE void notifyTeacherPortChanged();
     Q_INVOKABLE void notifyLastGCVersionRanChanged();
     Q_INVOKABLE void notifyRendererChanged();
 
@@ -660,7 +674,8 @@ Q_SIGNALS:
     void cachePathChanged();
     void userDataPathChanged();
 
-    void deviceIdChanged();
+    void teacherIdChanged();
+    void teacherPortChanged();
 
     void exeCountChanged();
 
@@ -712,7 +727,8 @@ private:
     QString m_cachePath;
     QString m_userDataPath;
 
-    QString m_deviceId;
+    QString m_teacherId;
+    QString m_teacherPort;
     quint32 m_exeCount;
 
     int m_lastGCVersionRan;

@@ -30,7 +30,7 @@ namespace {
     const char *INTERNAL_GROUP_KEY = "Internal";
     const char *FAVORITE_GROUP_KEY = "Favorite";
     const char *LEVELS_GROUP_KEY = "Levels";
-    const char *SERVER_GROUP_KEY = "Server";
+    const char *TEACHER_GROUP_KEY = "Teacher";
 
     const char *FULLSCREEN_KEY = "fullscreen";
     const char *PREVIOUS_HEIGHT_KEY = "previousHeight";
@@ -52,7 +52,8 @@ namespace {
     const char *USERDATA_PATH_KEY = "userDataPath";
     const char *RENDERER_KEY = "renderer";
 
-    const char *DEVICE_ID_KEY = "deviceId";
+    const char *TEACHER_ID_KEY = "teacherId";
+    const char *TEACHER_PORT_KEY = "teacherPort";
     const char *EXE_COUNT_KEY = "exeCount";
     const char *LAST_GC_VERSION_RAN = "lastGCVersionRan";
 
@@ -145,9 +146,10 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     m_renderer = m_config.value(RENDERER_KEY, GRAPHICAL_RENDERER).toString();
     m_config.endGroup();
 
-    // server group
-    m_config.beginGroup(SERVER_GROUP_KEY);
-    m_deviceId = m_config.value(DEVICE_ID_KEY, "").toString();
+    // teacher group
+    m_config.beginGroup(TEACHER_GROUP_KEY);
+    m_teacherId = m_config.value(TEACHER_ID_KEY, "").toString();
+    m_teacherPort = m_config.value(TEACHER_PORT_KEY, "65524").toString();
     m_config.endGroup();
 
     // internal group
@@ -183,7 +185,8 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     connect(this, &ApplicationSettings::exeCountChanged, this, &ApplicationSettings::notifyExeCountChanged);
     connect(this, &ApplicationSettings::barHiddenChanged, this, &ApplicationSettings::notifyBarHiddenChanged);
     connect(this, &ApplicationSettings::lastGCVersionRanChanged, this, &ApplicationSettings::notifyLastGCVersionRanChanged);
-    connect(this, &ApplicationSettings::deviceIdChanged, this, &ApplicationSettings::notifyDeviceIdChanged);
+    connect(this, &ApplicationSettings::teacherIdChanged, this, &ApplicationSettings::notifyTeacherIdChanged);
+    connect(this, &ApplicationSettings::teacherPortChanged, this, &ApplicationSettings::notifyTeacherPortChanged);
     connect(this, &ApplicationSettings::backgroundMusicVolumeChanged, this, &ApplicationSettings::notifyBackgroundMusicVolumeChanged);
     connect(this, &ApplicationSettings::audioEffectsVolumeChanged, this, &ApplicationSettings::notifyAudioEffectsVolumeChanged);
 
@@ -231,9 +234,10 @@ ApplicationSettings::~ApplicationSettings()
     m_config.setValue(RENDERER_KEY, m_renderer);
     m_config.endGroup();
 
-    // server group
-    m_config.beginGroup(SERVER_GROUP_KEY);
-    m_config.setValue(DEVICE_ID_KEY, m_deviceId);
+    // teacher group
+    m_config.beginGroup(TEACHER_GROUP_KEY);
+    m_config.setValue(TEACHER_ID_KEY, m_teacherId);
+    m_config.setValue(TEACHER_PORT_KEY, m_teacherPort);
     m_config.endGroup();
 
     // internal group
@@ -399,10 +403,16 @@ void ApplicationSettings::notifyDownloadServerUrlChanged()
     qDebug() << "downloadServerUrl set to: " << m_downloadServerUrl;
 }
 
-void ApplicationSettings::notifyDeviceIdChanged()
+void ApplicationSettings::notifyTeacherIdChanged()
 {
-    updateValueInConfig(SERVER_GROUP_KEY, DEVICE_ID_KEY, m_deviceId);
-    qDebug() << "deviceId set to: " << m_deviceId;
+    updateValueInConfig(TEACHER_GROUP_KEY, TEACHER_ID_KEY, m_teacherId);
+    qDebug() << "teacherId set to: " << m_teacherId;
+}
+
+void ApplicationSettings::notifyTeacherPortChanged()
+{
+    updateValueInConfig(TEACHER_GROUP_KEY, TEACHER_PORT_KEY, m_teacherPort);
+    qDebug() << "teacherPort set to: " << m_teacherPort;
 }
 
 void ApplicationSettings::notifyCachePathChanged()
@@ -502,6 +512,7 @@ void ApplicationSettings::updateValueInConfig(const QString &group,
                                               const QString &key, const T &value, bool sync)
 {
     m_config.beginGroup(group);
+
     m_config.setValue(key, value);
     m_config.endGroup();
     if (sync) {
