@@ -76,6 +76,7 @@ private Q_SLOTS:
     void onErrorOccurred(QAbstractSocket::SocketError socketError);
     void serverDisconnected();
     void ping();
+    void teacherPortChanged();
 
 private:
     void disconnectFromServer();

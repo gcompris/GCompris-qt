@@ -434,15 +434,36 @@ Item {
 
         Flow {
             GCText {
-                id: deviceIdLabel
-                text: qsTr("Server identifier")
+                id: teacherIdLabel
+                text: qsTr("Teacher identifier")
                 fontSize: mediumSize
                 width: dialogConfig.contentWidth / 2
                 wrapMode: Text.WordWrap
             }
             TextInput {
-                id: deviceIdInput
-                height: deviceIdLabel.height
+                id: teacherIdInput
+                height: teacherIdLabel.height
+                width: dialogConfig.contentWidth / 2
+
+                Rectangle {
+                    color: "transparent"
+                    anchors.fill: parent
+                    border.color: "red"
+                    border.width: 2
+                }
+            }
+        }
+        Flow {
+            GCText {
+                id: teacherPortLabel
+                text: qsTr("Teacher port")
+                fontSize: mediumSize
+                width: dialogConfig.contentWidth / 2
+                wrapMode: Text.WordWrap
+            }
+            TextInput {
+                id: teacherPortInput
+                height: teacherPortLabel.height
                 width: dialogConfig.contentWidth / 2
 
                 Rectangle {
@@ -474,7 +495,8 @@ Item {
     property int minFilter
     property int maxFilter
 
-    property alias deviceId: deviceIdInput.text
+    property alias teacherId: teacherIdInput.text
+    property alias teacherPort: teacherPortInput.text
 
     function extractMusicNameFromPath(musicPath: string): string {
         var musicDirectoryPath = ApplicationInfo.getAudioFilePath("backgroundMusic/")
@@ -514,7 +536,8 @@ Item {
         exitConfirmation = ApplicationSettings.exitConfirmation
         exitConfirmationBox.checked = exitConfirmation
 
-        deviceId = ApplicationSettings.deviceId
+        teacherId = ApplicationSettings.teacherId
+        teacherPort = ApplicationSettings.teacherPort
 
         baseFontSize = ApplicationSettings.baseFontSize
         fontLetterSpacing = ApplicationSettings.fontLetterSpacing
@@ -568,14 +591,21 @@ Item {
         ApplicationSettings.font = fonts.get(fontBox.currentIndex).text
         ApplicationSettings.fontCapitalization = fontCapitalizationModel.get(fontCapitalizationBox.currentIndex).value
 
-        deviceIdInput.accepted()
-        ApplicationSettings.deviceId = deviceId
+        teacherIdInput.accepted()
+        if(ApplicationSettings.teacherId != teacherId) {
+            ApplicationSettings.teacherId = teacherId
+        }
 
-        if(ApplicationSettings.filterLevelMin !== filterRepeater.minFilter ||
-           ApplicationSettings.filterLevelMax !== filterRepeater.maxFilter) {
-               ApplicationSettings.filterLevelMin = filterRepeater.minFilter
-               ApplicationSettings.filterLevelMax = filterRepeater.maxFilter
-               ActivityInfoTree.minMaxFiltersChanged(filterRepeater.minFilter, filterRepeater.maxFilter)
+        teacherPortInput.accepted()
+        if(ApplicationSettings.teacherPort != teacherPort) {
+            ApplicationSettings.teacherPort = teacherPort
+        }
+
+        if(ApplicationSettings.filterLevelMin !== minFilter ||
+           ApplicationSettings.filterLevelMax !== maxFilter) {
+               ApplicationSettings.filterLevelMin = minFilter
+               ApplicationSettings.filterLevelMax = maxFilter
+               ActivityInfoTree.minMaxFiltersChanged(minFilter, maxFilter)
         }
 
         ApplicationSettings.saveBaseFontSize();
