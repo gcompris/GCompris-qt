@@ -69,6 +69,7 @@ Window {
         property alias height: mainWindow.height
         property string lastLogin: ""
         property string serverID: "GCompris-Server"
+        property string port: "65524"
         property bool navigationPanelRight: true
     }
 
