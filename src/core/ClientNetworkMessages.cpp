@@ -27,10 +27,12 @@ ClientNetworkMessages::ClientNetworkMessages() :
     userId = -1;
     pingTimer.setInterval(netconst::PING_DELAY);
 
-    if (!udpSocket->bind(5678, QUdpSocket::ShareAddress))
-        qDebug() << "could not bind to UdpSocket";
+    ApplicationSettings *applicationSettings = ApplicationSettings::getInstance();
+    quint32 port = applicationSettings->teacherPort().toUInt();
+    if (!udpSocket->bind(port, QUdpSocket::ShareAddress))
+        qDebug() << "could not bind to UdpSocket on port" << port;
     else
-        qDebug() << "Connected to UdpSocket";
+        qDebug() << "Connected to UdpSocket on port" << port;
 
     tcpSocket->setSocketOption(QAbstractSocket::LowDelayOption, 1);
     tcpSocket->setSocketOption(QAbstractSocket::KeepAliveOption, 1);
@@ -42,16 +44,30 @@ ClientNetworkMessages::ClientNetworkMessages() :
     connect(tcpSocket, &QAbstractSocket::readyRead, this, &ClientNetworkMessages::readFromSocket);
 
     connect(&pingTimer, &QTimer::timeout, this, &ClientNetworkMessages::ping);
+    connect(applicationSettings, &ApplicationSettings::teacherPortChanged, this, &ClientNetworkMessages::teacherPortChanged);
 }
 
 ClientNetworkMessages::~ClientNetworkMessages()
 {
 }
 
+void ClientNetworkMessages::teacherPortChanged() {
+    disconnectFromServer();
+    forgetUser();
+    ApplicationSettings *applicationSettings = ApplicationSettings::getInstance();
+    quint32 port = applicationSettings->teacherPort().toUInt();
+    udpSocket->close();
+    if (!udpSocket->bind(port, QUdpSocket::ShareAddress))
+        qDebug() << "could not bind to UdpSocket on port" << port;
+    else
+        qDebug() << "Connected to UdpSocket on port" << port;
+}
+
 void ClientNetworkMessages::connectToServer(const QString &serverName)
 {
     ipServer = serverName;
-    int port = 5678;
+    ApplicationSettings *applicationSettings = ApplicationSettings::getInstance();
+    quint32 port = applicationSettings->teacherPort().toUInt();
 
     // if we are already connected to some server, disconnect from it first and then make a connection with new server
     if (_connected) { // and newServer != currentServer
@@ -125,7 +141,7 @@ void ClientNetworkMessages::udpRead()
     QJsonObject obj = jsonDoc.object();
     if (obj.contains("deviceId")) {
         QString requestDeviceId = obj.value("deviceId").toString();
-        if (ApplicationSettings::getInstance()->deviceId() == requestDeviceId) {
+        if (ApplicationSettings::getInstance()->teacherId() == requestDeviceId) {
             Q_EMIT requestConnection(requestDeviceId, address.toString()); // Run connectToServer if answer is yes
         }
     }
