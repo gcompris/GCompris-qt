@@ -96,10 +96,30 @@ Item {
                             onTextChanged: serverSettings.serverID = serverID.text
                         }
                     }
+                    Row {
+                        Layout.preferredHeight: 30
+                        Text {
+                            height: parent.height
+                            width: settingsView.labelWidth
+                            text: qsTr("Port")
+                            verticalAlignment: Text.AlignVCenter
+                            font.bold: true
+                            font.pixelSize: Style.defaultPixelSize + 1
+                        }
+                        UnderlinedTextInput {
+                            id: portField
+                            height: parent.height
+                            width: settingsView.infoWidth
+                            activeFocusOnTab: true
+                            focus: true
+                            defaultText: serverSettings.port
+                            onTextChanged: serverSettings.port = portField.text
+                        }
+                    }
 
                     InformationLine {
                         label: qsTr("Server is")
-                        info: serverRunning ? qsTr("Running") : qsTr("already running on port 5678")
+                        info: serverRunning ? qsTr("Running") : qsTr("Already running on port %1").arg(serverSettings.port)
                         textColor: serverRunning ? "green" : "red"
                     }
                     InformationLine { label: qsTr("Host name"); info: settingsView.hostInformations.hostName }

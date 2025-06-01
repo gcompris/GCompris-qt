@@ -204,6 +204,7 @@ Rectangle {
                     Layout.preferredHeight: 100
                     Layout.margins: 5
                     InformationLine { label: qsTr("Server ID:"); info: serverSettings.serverID }
+                    InformationLine { label: qsTr("Teacher port:"); info: serverSettings.port }
                     InformationLine { label: qsTr("Connected:"); info: (networkController) ? networkController.socketCount : 0}
                     InformationLine { label: qsTr("Logged:"); info: (networkController) ? networkController.loggedCount : 0 }
                     InformationLine { label: qsTr("Data received:"); info: (networkController) ? networkController.dataCount : 0 }
@@ -260,7 +261,7 @@ Rectangle {
         hostInformations = networkController.getHostInformations()
         serverRunning = networkController.isRunning()
         if (!serverRunning)
-            logPanel.appendLog(qsTr("Server already running on port 5678"))
+            logPanel.appendLog(qsTr("Server already running on port %1").arg(serverSettings.port))
          splitDevicesView.restoreState(serverSettings.value("splitDevicesView"))
     }
     Component.onDestruction: serverSettings.setValue("splitDevicesView", splitDevicesView.saveState())
