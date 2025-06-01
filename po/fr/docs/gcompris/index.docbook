@@ -330,7 +330,7 @@ for example 'xx.yy.zz'
 ><para
 ><userinput
 ><command
->gcompris --enable-kioskmode</command
+>gcompris --disable-kioskmode</command
 ></userinput
 > : active les boutons <guiicon
 >Arrêt</guiicon
