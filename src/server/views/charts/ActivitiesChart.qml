@@ -35,7 +35,7 @@ Item {
         if (activityList.length !== 0)
             clauses.push(`activity_id in (` + activityList.join(",") + `)`)
 
-        var start = calendar.strDateToSql('20240101')       // Beginning of time for GCompris-Server. Nothing older.
+        var start = calendar.strDateToSql('20240101')       // Beginning of time for GCompris-Teachers. Nothing older.
         var end = calendar.strDateToSql(new Date().toLocaleString(calendar.locale, 'yyyyMMdd'))
         if (calendar.startDate !== "") {
             start = calendar.strDateToSql(calendar.startDate)
