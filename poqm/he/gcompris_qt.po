@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-05-28 11:02+0300\n"
+"PO-Revision-Date: 2025-06-01 21:46+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -25552,12 +25552,9 @@ msgstr ""
 "השגיאות ולחצו על OK שוב."
 
 #: activities/tens_complement_calculate/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "2 pairs to make from 4 numbers."
 msgctxt "Data|"
 msgid "1 pair to make from 3 numbers."
-msgstr "ליצור 2 זוגות מ־4 מספרים."
+msgstr "ליצור זוג מ־3 מספרים."
 
 #: activities/tens_complement_calculate/resource/2/Data.qml:9
 #: activities/tens_complement_swap/resource/2/Data.qml:9
@@ -26311,16 +26308,13 @@ msgid "Translations added for Bulgarian, Galician and Swahili"
 msgstr "נוספו תרגומים לבולגרית, גליסית וסווהילי"
 
 #: core/ChangeLog.qml:65
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to directly start an activity at a specific level (--"
 "start-level level, to be used with --launch activity)"
-msgstr "אפשרות חדשה בשורת-הפקודה לרשום את כל הפעילויות ולהתחיל באחת ספציפית."
+msgstr ""
+"אפשרות חדשה בשורת הפקודות להתחלה ישירה של פעילות ברמה מסוימת (‎--start-level "
+"רמה, לשימוש עם ‎--launch פעילות)"
 
 #: core/ChangeLog.qml:70
 msgctxt "ChangeLog|"
