@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-05-29 16:00+0300\n"
+"PO-Revision-Date: 2025-06-01 21:47+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -25893,43 +25893,28 @@ msgstr ""
 "לאפשר לצוללת לצוף על פני המים."
 
 #: activities/submarine/Submarine.qml:168
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The rightmost item in the control panel controls the diving planes of the "
-#| "submarine"
 msgctxt "Submarine|"
 msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
 "submarine."
-msgstr "החלק הימני ביותר בלוח הפיקוד שולט על מישורי הצלילה של הצוללת"
+msgstr "החלק הימני ביותר בלוח הפיקוד שולט על מישורי הצלילה של הצוללת."
 
 #: activities/submarine/Submarine.qml:171
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The diving planes in a submarine are used to control the depth of the "
-#| "submarine accurately once it is underwater."
 msgctxt "Submarine|"
 msgid ""
 "The diving planes in a submarine are used to control the depth of the "
 "submarine accurately once it is underwater."
 msgstr ""
-"מישורי הצלילה בצוללת משמשים לשלוט על העומק המדוייק של הצוללת כשהיא מתחת למים."
+"מישורי הצלילה בצוללת משמשים לשלוט על העומק המדויק של הצוללת כשהיא מתחת למים."
 
 #: activities/submarine/Submarine.qml:174
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Once the submarine is moving underwater, increasing or decreasing the "
-#| "angle of the planes will increase and decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "Once the submarine is moving underwater, increasing or decreasing the angle "
 "of the planes will increase and decrease the depth of the submarine."
 msgstr ""
-"כאשר הצוללת נעה מתחת למים, להגדיל או להקטין את הזווית של מישור הצלילה "
-"יגדידלו או יקטינו את העומק של הצוללת."
+"כאשר הצוללת נעה מתחת למים, להגדיל או להקטין את הזווית של מישור הצלילה יגדילו "
+"או יקטינו את העומק של הצוללת."
 
 #: activities/submarine/Submarine.qml:177
 msgctxt "Submarine|"
@@ -25944,12 +25929,9 @@ msgid "Grab the crown to open the gate."
 msgstr "יש לתפוס את הכתר כדי לפתוח את השער."
 
 #: activities/submarine/Submarine.qml:183
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Check out the help menu for the keyboard controls."
 msgctxt "Submarine|"
 msgid "Check out the help menu for the keyboard controls."
-msgstr "לבדוק את תפריט העזרה לשליטה באמצעות המקלדת."
+msgstr "בתפריט העזרה ניתן ללמוד עוד על שליטה באמצעות המקלדת."
 
 #. Activity title
 #: activities/sudoku/ActivityInfo.qml:15
@@ -26225,12 +26207,9 @@ msgstr ""
 "השגיאות ולחצו על OK שוב."
 
 #: activities/tens_complement_calculate/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "2 pairs to make from 4 numbers."
 msgctxt "Data|"
 msgid "1 pair to make from 3 numbers."
-msgstr "ליצור 2 זוגות מ־4 מספרים."
+msgstr "ליצור זוג מ־3 מספרים."
 
 #: activities/tens_complement_calculate/resource/2/Data.qml:9
 #: activities/tens_complement_swap/resource/2/Data.qml:9
@@ -26985,16 +26964,13 @@ msgid "Translations added for Bulgarian, Galician and Swahili"
 msgstr "נוספו תרגומים לבולגרית, גליסית וסווהילי"
 
 #: core/ChangeLog.qml:72
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to directly start an activity at a specific level (--"
 "start-level level, to be used with --launch activity)"
-msgstr "אפשרות חדשה בשורת-הפקודה לרשום את כל הפעילויות ולהתחיל באחת ספציפית."
+msgstr ""
+"אפשרות חדשה בשורת הפקודות להתחלה ישירה של פעילות ברמה מסוימת (‎--start-level "
+"רמה, לשימוש עם ‎--launch פעילות)"
 
 #: core/ChangeLog.qml:77
 msgctxt "ChangeLog|"
