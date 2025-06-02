@@ -42,7 +42,7 @@ Item {
             }
             TopPanel.visible = true
             if (!serverRunning) {
-                errorDialog.message = [qsTr("GCompris-server is already running on this computer")
+                errorDialog.message = [qsTr("GCompris-teachers is already running on this computer")
                                      , qsTr("Only data browsing is permitted")]
                 errorDialog.open()
             }
@@ -66,7 +66,7 @@ Item {
             Text {
                 Layout.preferredHeight: 40
                 Layout.fillWidth: true
-                text: qsTr("GCompris-Server")
+                text: qsTr("GCompris Teachers Tool")
                 horizontalAlignment: Text.AlignHCenter
                 font.bold: true
                 font {
@@ -185,7 +185,7 @@ Item {
     }
 
     Component.onCompleted: {
-        topBanner.text = qsTr("GCompris-Server login")
+        topBanner.text = qsTr("GCompris Teachers Tool - Login")
         login.forceActiveFocus();
     }
 }

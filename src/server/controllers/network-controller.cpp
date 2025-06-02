@@ -39,7 +39,7 @@ namespace controllers {
         connect(&pongTimer, &QTimer::timeout, this, &NetworkController::checkTimeout);
         pongTimer.start();
 
-        QSettings config(QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation) + "/gcompris/gcompris-server.conf",
+        QSettings config(QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation) + "/gcompris/gcompris-teachers.conf",
                      QSettings::IniFormat);
         quint32 port = config.value("General/port", "65524").toString().toUInt();
         if (!tcpServer->listen(QHostAddress::Any, port)) {
@@ -101,7 +101,7 @@ namespace controllers {
         QByteArray message = jsonDoc.toJson(QJsonDocument::Compact);
         qint64 messageSize = message.size();
 
-        QSettings config(QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation) + "/gcompris/gcompris-server.conf",
+        QSettings config(QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation) + "/gcompris/gcompris-teachers.conf",
                      QSettings::IniFormat);
         quint32 port = config.value("General/port", "65524").toString().toUInt();
 
