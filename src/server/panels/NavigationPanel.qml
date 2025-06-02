@@ -81,7 +81,7 @@ Item {
             NavigationButton {
                 id: loginButton
                 iconCharacter: "\uf015"
-                description: qsTr("GCompris-Server login")
+                description: qsTr("Login")
                 onNavigationButtonClicked: navigationPanel.changeTo(0)
             }
             NavigationButton {

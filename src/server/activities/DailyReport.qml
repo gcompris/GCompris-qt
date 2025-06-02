@@ -46,7 +46,7 @@ ColumnLayout {
         if (activityList.length !== 0)
             clauses.push(`result_.activity_id in (` + activityList.join(",") + `)`)
 
-        var start = selector.calendar.strDateToSql('20240101')       // Beginning of time for GCompris-Server. Nothing older.
+        var start = selector.calendar.strDateToSql('20240101')       // Beginning of time for GCompris-Teachers. Nothing older.
         var end = selector.calendar.strDateToSql(new Date().toLocaleString(selector.calendar.locale, 'yyyyMMdd'))
         if (selector.calendar.startDate !== "") {
             start = selector.calendar.strDateToSql(selector.calendar.startDate)

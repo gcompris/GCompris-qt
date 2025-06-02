@@ -10,13 +10,13 @@
  *
  * Usage :
  *    $ php generate-doc.php
- * Build GCompris-Server.md documentation file
+ * Build GCompris-Teachers.md documentation file
  */
   $dirs        = Array(".", "components", "dialogs", "panels", "views", "singletons", "activities");
   $classes     = Array();
   $baseDir     = "../";
   $filePattern = "*";
-  $outputFile  = "GCompris-Server.md";
+  $outputFile  = "GCompris-Teachers.md";
 
   function readAndClean($file) {
     $content = file_get_contents($file);
@@ -51,7 +51,7 @@
     $out = preg_replace("/[\|\-\ `]{4}/","  ", $out);         // Remove tree chars
     $out = preg_replace("/ (\w)/"," * $1", $out);             // Add * before directory name
     $out = preg_replace("/\d+ \* directories\n/s","", $out);  // Remove last line from tree command
-    $out = preg_replace("/\.\.\//","**server/**", $out);      // Bold main directory
+    $out = preg_replace("/\.\.\//","**teachers/**", $out);      // Bold main directory
     return $out;
   }
 
@@ -70,13 +70,13 @@
   }
 
   $output = "";
-  $output .= "# GCompris server - Generated documentation.\n";
+  $output .= "# GCompris teachers - Generated documentation.\n";
   $output .= "## Qml object nesting hierarchy.\n";
   $output .= "  * [Main](".$classes["Main"].")\n";
   $depth = 1;                                                 // Depth controls indentation
   inspectClass("Main", $classes["Main"], $depth);             // Enter inspectClass from Main object in Main.qml
 
-  // $output .= "\n## Server directory hierarchy.\n";
+  // $output .= "\n## Teachers directory hierarchy.\n";
   // $output .= readTree();
 
   $output .= "\nFile generated on ".date('Y/m/d H:i:s e', time())." with ".basename(__FILE__)."\n";
