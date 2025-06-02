@@ -8,10 +8,10 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import QtQuick 2.12
-import QtQuick.Window 2.12
-import QtQml 2.12
-import QtQuick.Layouts 1.15
+import QtQuick
+import QtQuick.Window
+import QtQml
+import QtQuick.Layouts
 import QtCore // For Settings and StandardPaths
 
 import GCompris 1.0
@@ -23,13 +23,13 @@ import "singletons"
 import "views"
 
 /**
- * GCompris' main QML file defining the top level window.
+ * GCompris Teachers Tool main QML file defining the top level window.
  * @ingroup infrastructure
  *
  * Handles application start (Component.onCompleted) and shutdown (onClosing)
  * on the QML layer.
  *
- * Contains the top level StackView presenting and animating GCompris-server'
+ * Contains the top level StackView presenting and animating GCompris-teachers'
  * full screen views.
  *
  * @inherit QtQuick.Window
@@ -39,12 +39,12 @@ Window {
     property string databaseFile: serverSettings.lastLogin + ".sqlite"
     // file:/// is the prefix on Windows, file:// otherwise, both needs to be removed
     readonly property string prefixToRemove: ApplicationInfo.platform === ApplicationInfo.Windows ? "file:///" : "file://"
-    property string userDataPath: (StandardPaths.writableLocation(StandardPaths.GenericDataLocation) + "/gcompris-server").replace(prefixToRemove, "")
+    property string userDataPath: (StandardPaths.writableLocation(StandardPaths.GenericDataLocation) + "/gcompris-teachers").replace(prefixToRemove, "")
     property bool serverRunning: false
     property alias topBanner: topBanner
     minimumWidth: 800
     minimumHeight: 600
-    title: qsTr("GCompris server")
+    title: qsTr("GCompris Teachers Tool")
     color: Style.colorBackground
 
     onClosing: Server.quit(mainWindow)
@@ -68,7 +68,7 @@ Window {
         property alias width: mainWindow.width
         property alias height: mainWindow.height
         property string lastLogin: ""
-        property string serverID: "GCompris-Server"
+        property string serverID: "GCompris-Teachers"
         property string port: "65524"
         property bool navigationPanelRight: true
     }
