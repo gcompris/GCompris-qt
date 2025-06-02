@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<project name="GCompris-Server" id="Project-1acc" database="Sqlite" >
-	<comment><![CDATA[GCompris-server database.]]></comment>
+<project name="GCompris-Teachers" id="Project-1acc" database="Sqlite" >
+	<comment><![CDATA[GCompris-Teachers database.]]></comment>
 	<comment_tag name="Version" value="0.2" />
 	<schema name="Default" >
 		<table name="activity_" prior="activity" >
@@ -120,7 +120,7 @@ WHERE user_.user_id = group_user_.user_id
 		<entity schema="Default" name="teacher_" color="C1D8EE" x="289" y="119" />
 		<entity schema="Default" name="user_" color="C1D8EE" x="289" y="340" />
 		<shape x="51" y="51" style="Rectangle" color="FF0000" >
-			<comment><![CDATA[GCompris-Server database]]></comment>
+			<comment><![CDATA[GCompris-Teachers database]]></comment>
 		</shape>
 	</layout>
 </project>
