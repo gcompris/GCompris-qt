@@ -15,26 +15,26 @@ Row {
     id: informationLine
     property string label: ""
     property string info: ""
-    property string textColor: "black"
+    property string textColor: Style.selectedPalette.text
     property alias infoText: infoText
     Text {
-        height: Style.defaultLineHeight
+        height: Style.lineHeight
         width: labelWidth
         verticalAlignment: Text.AlignBottom
         text: informationLine.label
         font.bold: true
-        font.pixelSize: Style.defaultPixelSize
-        color: enabled ? "black" : "gray"
+        font.pixelSize: Style.textSize
+        color: enabled ? Style.selectedPalette.text : "gray"
     }
 
     Text {
         id: infoText
-        height: Style.defaultLineHeight
+        height: Style.lineHeight
         width: infoWidth
         verticalAlignment: Text.AlignBottom
         color: enabled ? informationLine.textColor : "gray"
         text: informationLine.info
-        font.pixelSize: Style.defaultPixelSize
+        font.pixelSize: Style.textSize
         wrapMode: Text.WrapAnywhere
     }
 }

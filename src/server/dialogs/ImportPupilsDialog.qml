@@ -29,7 +29,7 @@ Popup {
     closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
 
     background: Rectangle {
-        color: Style.colorBackgroundDialog
+        color: Style.selectedPalette.alternateBase
         radius: 5
         border.color: "darkgray"
         border.width: 2
@@ -64,7 +64,7 @@ Popup {
             horizontalAlignment: Text.AlignHCenter
             text: qsTr("Add pupils from CSV file")
             font.bold: true
-            color: Style.colorNavigationBarBackground
+            color: Style.selectedPalette.text
             font {
                 pixelSize: 20
                 bold: true
@@ -75,7 +75,7 @@ Popup {
             Layout.fillWidth: true
             Layout.preferredHeight: 70
             color: "lemonchiffon"
-            border.color: "lightgray"
+            border.color: Style.selectedPalette.accent
             border.width: 1
             Text {
                 anchors.fill: parent
@@ -84,6 +84,7 @@ Popup {
                 font {
                   pixelSize: 12
                 }
+                color: Style.selectedPalette.text
             }
         }
 

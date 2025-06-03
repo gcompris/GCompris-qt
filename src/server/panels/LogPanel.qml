@@ -24,7 +24,7 @@ Rectangle {
         messageLog.text = ""
     }
 
-    color: Style.colorBackground
+    color: Style.selectedPalette.base
 
     ScrollView {
         id: view
@@ -35,7 +35,7 @@ Rectangle {
             anchors.margins: 3
             readOnly: true
             wrapMode: TextEdit.WordWrap
-            font.pixelSize: Style.defaultPixelSize
+            font.pixelSize: Style.textSize
         }
     }
 }

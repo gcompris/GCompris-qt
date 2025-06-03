@@ -64,6 +64,7 @@ ColumnLayout {
 
         Text {
             text: resultModel.count + " " + qsTr("lines")
+            color: Style.selectedPalette.text
         }
 
         Item {
@@ -73,13 +74,14 @@ ColumnLayout {
             Layout.rightMargin: 15
             text: lineReport.activityName
             opacity: 0.4
+            color: Style.selectedPalette.text
         }
     }
 
     Rectangle {
         Layout.fillWidth: true
-        Layout.minimumHeight: Style.activityHeaderHeight
-        Layout.maximumHeight: Style.activityHeaderHeight
+        Layout.minimumHeight: Style.bigLineHeight
+        Layout.maximumHeight: Style.bigLineHeight
         Layout.leftMargin: 10
         Layout.rightMargin: 10
         Layout.topMargin: 5
@@ -99,6 +101,7 @@ ColumnLayout {
                 text: ""
                 font.pixelSize: 18
                 verticalAlignment: Text.AlignBottom
+                color: Style.selectedPalette.text
             }
 
             Text {
@@ -110,6 +113,7 @@ ColumnLayout {
                 verticalAlignment: Text.AlignBottom
                 horizontalAlignment: Text.AlignLeft
                 clip: true
+                color: Style.selectedPalette.text
             }
 
             Text {
@@ -120,11 +124,12 @@ ColumnLayout {
                 verticalAlignment: Text.AlignBottom
                 horizontalAlignment: Text.AlignRight
                 clip: true
+                color: Style.selectedPalette.text
             }
 
             Image {
-                Layout.preferredWidth: Style.activityHeaderHeight
-                Layout.preferredHeight: Style.activityHeaderHeight
+                Layout.preferredWidth: Style.bigLineHeight
+                Layout.preferredHeight: Style.bigLineHeight
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
                 Layout.rightMargin: 5
                 source: (lineReport.activityName !== "") ? "qrc:/gcompris/src/activities/" + Master.allActivities[activityName]["icon"] : ""
@@ -150,7 +155,7 @@ ColumnLayout {
             anchors.bottom: parent.bottom
             width: scrollLines.contentWidth
             model: resultModel
-            spacing: Style.linesSpacing
+            spacing: 0
             boundsBehavior: Flickable.StopAtBounds
             clip: true
 
@@ -162,7 +167,7 @@ ColumnLayout {
                 color: "white"
                 radius: 3
                 border.width: 1
-                border.color: "lightgray"
+                border.color: Style.selectedPalette.accent
                 Rectangle {
                     anchors.top: lineView.top
                     anchors.left: lineView.left
@@ -184,38 +189,42 @@ ColumnLayout {
                         Layout.preferredWidth: 170
                         RowLayout {
                             width: parent.width
-                            height: Style.defaultLineHeight
+                            height: Style.lineHeight
                             Text {
                                 Layout.fillWidth: true
-                                font.pixelSize: Style.defaultPixelSize
+                                font.pixelSize: Style.textSize
                                 text: Master.findObjectInModel(Master.userModel, function(item) { return item.user_id === user_id }).user_name
                                 // font.underline: true
+                                color: Style.selectedPalette.text
                             }
                             Text {
                                 Layout.preferredWidth: 25
-                                font.pixelSize: Style.defaultPixelSize
+                                font.pixelSize: Style.textSize
                                 Layout.preferredHeight: 20
                                 horizontalAlignment: Text.AlignRight
                                 text: qsTr("%1s").arg(result_duration)
+                                color: Style.selectedPalette.text
                             }
                         }
 
                         RowLayout {
                             width: parent.width
-                            height: Style.defaultLineHeight
+                            height: Style.lineHeight
                             Text {
                                 Layout.preferredWidth: 75
                                 Layout.preferredHeight: 20
-                                font.pixelSize: Style.defaultPixelSize
+                                font.pixelSize: Style.textSize
                                 text: qsTr("Level: <b>%1</b>").arg(JSON.parse(result_data).level)
                                 horizontalAlignment: Text.AlignLeft
+                                color: Style.selectedPalette.text
                             }
                             Text {
                                 Layout.fillWidth: true
                                 Layout.preferredHeight: 20
-                                font.pixelSize: Style.defaultPixelSize
+                                font.pixelSize: Style.textSize
                                 text: result_datetime.slice(-8)
                                 horizontalAlignment: Text.AlignRight
+                                color: Style.selectedPalette.text
                             }
                         }
                     }
@@ -237,7 +246,7 @@ ColumnLayout {
                     anchors.top: lineView.top
                     anchors.right: lineView.right
                     anchors.rightMargin: 5
-                    color: "gray"
+                    color: Style.selectedPalette.text
                     height: 20
                     text: Master.allActivities[lineRect.activity_line_name].title
                     horizontalAlignment: Text.AlignRight

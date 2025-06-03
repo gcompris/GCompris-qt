@@ -22,6 +22,7 @@ Item {
             height: 30
             font.pixelSize: 16
             text: lineView.jsonData.question
+            color: Style.selectedPalette.text
         }
         Row {
             height: 50
@@ -31,6 +32,7 @@ Item {
                 width: 80
                 horizontalAlignment: Text.AlignHCenter
                 font.pixelSize: 20
+                color: Style.selectedPalette.text
             }
             Text {
                 text: "\uf061"
@@ -38,6 +40,7 @@ Item {
                 width: 20
                 horizontalAlignment: Text.AlignHCenter
                 font.pixelSize: 20
+                color: Style.selectedPalette.text
             }
             Text {
                 text: lineView.jsonData.proposal

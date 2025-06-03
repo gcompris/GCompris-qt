@@ -111,7 +111,7 @@ Item {
             SplitView.preferredWidth: 210
             SplitView.minimumWidth: 210
             SplitView.maximumWidth: 300
-            color: Style.colorBackground
+            color: Style.selectedPalette.base
 
             ColumnLayout {
                 anchors.fill: parent
@@ -120,16 +120,16 @@ Item {
                 Rectangle {
                     Layout.fillWidth: true
                     Layout.preferredHeight: Style.mediumLineHeight
-                    color: Style.colorHeaderPane
+                    color: Style.selectedPalette.base
                     radius: 5
                     Text {
                         anchors.fill: parent
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
-                        font.pixelSize: Style.defaultPixelSize
+                        font.pixelSize: Style.textSize
                         font.bold: true
                         text: qsTr("Pupils management")
-                        color: enabled ? "black": "gray"
+                        color: enabled ? Style.selectedPalette.text : "gray"
                     }
                 }
 

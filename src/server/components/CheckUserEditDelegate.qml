@@ -14,11 +14,11 @@ import "../singletons"
 
 Control {
     id: checkUserEditDelegate
-    font.pixelSize: Style.defaultPixelSize
+    font.pixelSize: Style.textSize
     hoverEnabled: true
     Rectangle {
         anchors.fill: parent
-        color: checkUserEditDelegate.hovered ? Style.colorHeaderPane : "transparent"
+        color: checkUserEditDelegate.hovered ? Style.selectedPalette.base : "transparent"
     }
 
     SmallButton {
@@ -29,21 +29,20 @@ Control {
         width: parent.height - 4
         height: parent.height - 4
         visible: checkUserEditDelegate.hovered || editPupil.hovered
-        font.pixelSize: Style.defaultPixelSize
+        font.pixelSize: Style.textSize
         text: "\uf304"
         onClicked: modifyPupilDialog.openPupilDialog(index, user_name, user_id, user_password, groups_name, groups_id)
         ToolTip.visible: hovered
         ToolTip.text: qsTr("Edit pupil")
     }
 
-    CheckBox {
+    StyledCheckBox {
         id: checkButton
         anchors.fill: parent
         anchors.leftMargin: 15
         text: user_name
         checked: user_checked
         ButtonGroup.group: childGroup
-        indicator.scale: Style.checkerScale
         onClicked: {
             foldModel.setProperty(index, checkKey, checked)
             selectionClicked(foldModel.get(index)[indexKey], checked)
@@ -55,9 +54,9 @@ Control {
         anchors.right: parent.right
         width: parent.width / 2
         height: parent.height
-        font.pixelSize: Style.defaultPixelSize
+        font.pixelSize: Style.textSize
         verticalAlignment: Text.AlignVCenter
         text: groups_name
-        color: enabled ? "black": "gray"
+        color: enabled ? Style.selectedPalette.text: "gray"
     }
 }

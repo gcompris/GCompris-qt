@@ -12,6 +12,7 @@ import QtQuick.Controls.Basic
 
 import "../../singletons"
 import "../../panels"
+import "../../components"
 
 Item {
     id: allData
@@ -58,7 +59,7 @@ Item {
 
     Rectangle {
         anchors.fill: parent
-        color: Style.colorBackground
+        color: Style.selectedPalette.base
 
         Row {
             id: selectionRow
@@ -66,19 +67,20 @@ Item {
             height: 40
             spacing:5
             Label {
-                text: qsTr("Avalaible requests")
+                text: qsTr("Available requests")
                 width: 150
                 height: parent.height
                 font.bold: true
+                color: Style.selectedPalette.text
             }
 
-            ComboBox {
+            StyledComboBox {
                 id: what
                 width: 200
                 height: parent.height
                 model: [ "All users activities", "Pupils activities", "All groups", "Failed activities",
                     "User's groups", "Group's users", "Daily activities", "Daily ratios" ]
-                onActivated: allData.setRequest(index)
+                onCurrentIndexChanged: allData.setRequest(currentIndex)
             }
 
             Button {
@@ -93,12 +95,14 @@ Item {
                 width: 80
                 height: parent.height
                 font.bold: true
+                color: Style.selectedPalette.text
             }
 
             Label {
                 text: reqView.request
                 width: 500
                 height: parent.height
+                color: Style.selectedPalette.text
             }
         }
 

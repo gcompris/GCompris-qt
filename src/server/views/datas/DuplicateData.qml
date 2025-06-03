@@ -102,10 +102,18 @@ Item {
 
     Rectangle {
         anchors.fill: parent
-        color: Style.colorBackground
+        color: Style.selectedPalette.base
 
         SplitView {
+            id: horizontalSplit
             anchors.fill: parent
+
+            handle: Rectangle {
+                implicitWidth: horizontalSplit.orientation === Qt.Horizontal ? 6 : horizontalSplit.width
+                implicitHeight: horizontalSplit.orientation === Qt.Horizontal ? horizontalSplit.height : 6
+                color: SplitHandle.pressed ? Style.selectedPalette.highlight :
+                                            Style.selectedPalette.accent
+            }
 
             SelectorPanel {
                 id: selector
@@ -161,7 +169,7 @@ Item {
                 SplitView.minimumWidth: 250
                 SplitView.maximumWidth: 300
                 SplitView.fillHeight: true
-                color: Style.colorBackground
+                color: Style.selectedPalette.base
                 enabled: serverRunning
 
                 ColumnLayout {
@@ -170,8 +178,8 @@ Item {
 
                     Rectangle {
                         Layout.fillWidth: true
-                        Layout.preferredHeight: Style.defaultLineHeight
-                        color: Style.colorHeaderPane
+                        Layout.preferredHeight: Style.lineHeight
+                        color: Style.selectedPalette.base
                         radius: 5
                         Text {
                             anchors.fill: parent
@@ -179,16 +187,16 @@ Item {
                             verticalAlignment: Text.AlignVCenter
                             font.bold: true
                             text: qsTr("Commands")
-                            color: enabled ? "black": "gray"
+                            color: enabled ? Style.selectedPalette.text: "gray"
                         }
                     }
 
                     Text {
                         id: dateText
                         Layout.fillWidth: true
-                        Layout.preferredHeight: Style.defaultLineHeight
+                        Layout.preferredHeight: Style.lineHeight
                         horizontalAlignment: Text.AlignHCenter
-                        color: enabled ? "black": "gray"
+                        color: enabled ? Style.selectedPalette.text : "gray"
                     }
 
                     ViewButton {
@@ -234,6 +242,7 @@ Item {
                         Layout.preferredHeight: 20
                         Layout.preferredWidth: parent.width
                         horizontalAlignment: Text.AlignHCenter
+                        color: Style.selectedPalette.text
                     }
 
                     FoldDownRadio {

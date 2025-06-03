@@ -15,7 +15,7 @@ import "../singletons"
 
 Column {
     id: calendarPane
-    property int lineHeight: Style.defaultLineHeight
+    property int lineHeight: Style.lineHeight
     property alias title: parentBox.text
     property bool activated: true
     readonly property int minWidth: 266
@@ -60,7 +60,7 @@ Column {
         id: header
         width: parent.width
         height: calendarPane.lineHeight
-        color: Style.colorHeaderPane
+        color: Style.selectedPalette.base
         radius: 5
 
         Text {
@@ -72,8 +72,9 @@ Column {
             text: (calendarPane.startDate === "") ? qsTr("Calendar") :
                   (calendarPane.startDate === calendarPane.endDate) ? calendarPane.strDateToLocale(calendarPane.startDate) :
                                             calendarPane.strDateToLocale(calendarPane.startDate) + " - " + calendarPane.strDateToLocale(calendarPane.endDate)
-            font.pixelSize: Style.defaultPixelSize
+            font.pixelSize: Style.textSize
             font.bold: true
+            color: Style.selectedPalette.text
         }
 
         SmallButton {
@@ -84,7 +85,7 @@ Column {
             checkable: true
             checked: false
             text: checked ? "\uf0dd" : "\uf0d9"
-            font.pixelSize: Style.defaultPixelSize
+            font.pixelSize: Style.textSize
             onCheckedChanged: calendarPane.Layout.maximumHeight = (!checked) ? calendarPane.lineHeight : calendarPane.monthHeight
         }
     }
@@ -93,7 +94,7 @@ Column {
         id: calendarBlock
         width: parent.width
         height: childrenRect.height + 5
-        color: Style.colorBackgroundPane
+        color: Style.selectedPalette.alternateBase
 
         Column {
             spacing: 0
@@ -119,7 +120,7 @@ Column {
                     Layout.fillWidth: true
                     Layout.fillHeight: true
                     Layout.margins: 5
-                    color: Style.colorBackground
+                    color: Style.selectedPalette.base
                     radius: 3
                     border.width: monthMouseArea.containsMouse ? 2 : 1
 
@@ -130,7 +131,8 @@ Column {
                         verticalAlignment: Text.AlignVCenter
                         text: calendarPane.capitalizeFirstLetter(calendarPane.locale.monthName(monthGrid.month, Locale.LongFormat)) + " " + monthGrid.year
                         font.bold: true
-                        font.pixelSize: Style.defaultPixelSize + 2
+                        font.pixelSize: Style.textSize + 2
+                        color: Style.selectedPalette.text
                     }
 
                     MouseArea {
@@ -172,7 +174,7 @@ Column {
                 locale: monthGrid.locale
                 width: calendarPane.calWidth
                 height: 25
-                font.pixelSize: Style.defaultPixelSize
+                font.pixelSize: Style.textSize
             }
 
             MonthGrid {
@@ -182,14 +184,14 @@ Column {
                 locale: calendarPane.locale
                 width: calendarPane.calWidth
                 height: calendarPane.calHeight
-                font.pixelSize: Style.defaultPixelSize
+                font.pixelSize: Style.textSize
                 clip: true
 
                 delegate: Rectangle {
                     property string dateStr: new Date(model.year, model.month, model.day).toLocaleDateString(monthGrid.locale, "yyyyMMdd")
                     color: (model.month !== monthGrid.month) ? "transparent"
-                         : ((dateStr >= startDate) && (dateStr <= endDate)) ? Style.colorDateSelected
-                         : Style.colorBackground
+                         : ((dateStr >= startDate) && (dateStr <= endDate)) ? Style.selectedPalette.highlight
+                         : Style.selectedPalette.base
                     visible: (dateStr <= lastDate)
                     radius: 3
                     Layout.margins: 3
@@ -202,6 +204,7 @@ Column {
                         opacity: model.month === monthGrid.month ? 1 : 0
                         text: model.day
                         font: monthGrid.font
+                        color: Style.selectedPalette.text
 
                         MouseArea {
                             id: mouseArea

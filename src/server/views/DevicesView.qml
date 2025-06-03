@@ -24,7 +24,7 @@ Rectangle {
     property var ipList: []
     property int labelWidth: buttonsColumn.width / 2
     property int infoWidth: buttonsColumn.width / 2
-    property int lineHeight: Style.defaultLineHeight
+    property int lineHeight: Style.lineHeight
     property alias splitDevicesView: splitDevicesView
     color: "transparent"
     enabled: serverRunning
@@ -40,7 +40,7 @@ Rectangle {
         case NetConst.CONNECTION_LOST:
             return "yellow"
         case NetConst.DISCONNECTED:
-            return "lightgray"
+            return Style.selectedPalette.accent
         default:
             return "black"      // Should never be black
         }
@@ -113,7 +113,7 @@ Rectangle {
             SplitView.minimumWidth: 250
             SplitView.maximumWidth: 350
             SplitView.fillHeight: true
-            color: Style.colorBackground
+            color: Style.selectedPalette.base
 
             ColumnLayout {
                 anchors.fill: parent
@@ -121,17 +121,17 @@ Rectangle {
 
                 Rectangle {
                     Layout.fillWidth: true
-                    Layout.preferredHeight: Style.defaultLineHeight
-                    color: Style.colorHeaderPane
+                    Layout.preferredHeight: Style.lineHeight
+                    color: Style.selectedPalette.base
                     radius: 5
                     Text {
                         anchors.fill: parent
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
-                        font.pixelSize: Style.defaultPixelSize
+                        font.pixelSize: Style.textSize
                         font.bold: true
                         text: qsTr("Network")
-                        color: enabled ? "black": "gray"
+                        color: enabled ? Style.selectedPalette.text: "gray"
                     }
                 }
 
@@ -225,24 +225,24 @@ Rectangle {
 
             Rectangle {
                 Layout.fillWidth: true
-                Layout.preferredHeight: Style.defaultLineHeight
-                color: Style.colorHeaderPane
+                Layout.preferredHeight: Style.lineHeight
+                color: Style.selectedPalette.base
                 radius: 5
                 Text {
                     anchors.fill: parent
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
-                    font.pixelSize: Style.defaultPixelSize
+                    font.pixelSize: Style.textSize
                     font.bold: true
                     text: qsTr("Network logs")
-                    color: enabled ? "black": "gray"
+                    color: enabled ? Style.selectedPalette.text: "gray"
                 }
                 SmallButton {
-                    width: Style.defaultLineHeight
-                    height: Style.defaultLineHeight
+                    width: Style.lineHeight
+                    height: Style.lineHeight
                     anchors.top: parent.top
                     anchors.right: parent.right
-                    font.pixelSize: Style.defaultPixelSize
+                    font.pixelSize: Style.textSize
                     text: "\uf1f8"
                     ToolTip.visible: hovered
                     ToolTip.text: qsTr("Clear logs")

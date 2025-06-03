@@ -44,7 +44,7 @@ ToolBar {
 
     background: Rectangle {
         anchors.fill: parent
-        color: Style.colorBackground
+        color: Style.selectedPalette.base
     }
 
     RowLayout {

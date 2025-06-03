@@ -25,6 +25,7 @@ Item {
                 text: qsTr("Expected value")
                 font.bold: true
                 font.pixelSize: 14
+                color: Style.selectedPalette.text
             }
 
             Text {
@@ -34,6 +35,7 @@ Item {
                 text: lineItem.jsonData.expected
                 font.pixelSize: 14
                 horizontalAlignment: Text.AlignRight
+                color: Style.selectedPalette.text
             }
 
             Text {
@@ -43,6 +45,7 @@ Item {
                 text: (lineItem.jsonData.expected >>> 0).toString(2)
                 font.pixelSize: 14
                 horizontalAlignment: Text.AlignRight
+                color: Style.selectedPalette.text
             }
         }
 
@@ -54,6 +57,7 @@ Item {
                 text: qsTr("Input value")
                 font.bold: true
                 font.pixelSize: 14
+                color: Style.selectedPalette.text
             }
 
             Text {
@@ -61,7 +65,7 @@ Item {
                 width: 30
                 verticalAlignment: Text.AlignBottom
                 text: lineItem.jsonData.result
-                color: (lineItem.jsonData.result === lineItem.jsonData.expected) ? "black" : "red"
+                color: (lineItem.jsonData.result === lineItem.jsonData.expected) ? Style.selectedPalette.text : "red"
                 font.pixelSize: 14
                 horizontalAlignment: Text.AlignRight
             }
@@ -71,7 +75,7 @@ Item {
                 width: 120
                 verticalAlignment: Text.AlignBottom
                 text: (lineItem.jsonData.result >>> 0).toString(2)
-                color: (lineItem.jsonData.result === lineItem.jsonData.expected) ? "black" : "red"
+                color: (lineItem.jsonData.result === lineItem.jsonData.expected) ? Style.selectedPalette.text : "red"
                 font.pixelSize: 14
                 horizontalAlignment: Text.AlignRight
             }

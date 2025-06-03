@@ -119,7 +119,7 @@ Item  {
     // Component for boolean
     Component {
         id: boolInput
-        CheckBox {
+        StyledCheckBox {
             width: 15
             height: fieldEdit.height
             scale: 0.7
@@ -168,7 +168,7 @@ Item  {
                 Repeater {
                     id: rowRepeater
                     model: arrayModel
-                    CheckBox {
+                    StyledCheckBox {
                         height: fieldEdit.height
                         scale: 0.75
                         ButtonGroup.group: choiceButtonGroup
@@ -189,7 +189,7 @@ Item  {
             ComboBox {
                 width: 200
                 height: fieldEdit.height
-                font.pixelSize: Style.defaultPixelSize
+                font.pixelSize: Style.textSize
                 model: arrayModel
                 onCurrentTextChanged: aModel.setProperty(modelIndex, proto.name, currentText)
                 currentIndex: Master.findIndexInModel(arrayModel, function(item) { return item.content === choiceDefault })
@@ -214,7 +214,7 @@ Item  {
         onOpened: stringToArrayModel()
 
         background: Rectangle {
-            color: Style.colorBackgroundDialog
+            color: Style.selectedPalette.alternateBase
             radius: 5
             border.color: "darkgray"
             border.width: 2
@@ -318,7 +318,7 @@ Item  {
             verticalAlignment: Text.AlignBottom
             text: fieldEdit.proto.label
             font.bold: true
-            font.pixelSize: Style.defaultPixelSize
+            font.pixelSize: Style.textSize
             color: enabled ? "black" : "gray"
         }
 

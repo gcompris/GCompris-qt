@@ -45,7 +45,7 @@ Popup {
     }
 
     background: Rectangle {
-        color: "pink"
+        color: Style.selectedPalette.base
         radius: 5
         border.color: "black"
         border.width: 4
@@ -64,6 +64,7 @@ Popup {
                 bold: true
                 pixelSize: 20
             }
+            color: Style.selectedPalette.text
         }
 
         Repeater {
@@ -73,6 +74,7 @@ Popup {
                 height: 40
                 horizontalAlignment: Text.AlignHCenter
                 text: createDbDialog.message[index]
+                color: Style.selectedPalette.text
             }
         }
 
@@ -86,11 +88,12 @@ Popup {
             font {
                 pixelSize: 15
             }
+            color: Style.selectedPalette.text
         }
 
         UnderlinedTextInput {
             id: login
-            Layout.preferredHeight: Style.defaultLineHeight
+            Layout.preferredHeight: Style.lineHeight
             Layout.fillWidth: true
             Layout.leftMargin: 100
             Layout.rightMargin: 100
@@ -114,11 +117,12 @@ Popup {
             font {
                 pixelSize: 15
             }
+            color: Style.selectedPalette.text
         }
 
         UnderlinedTextInput {
             id: password
-            Layout.preferredHeight: Style.defaultLineHeight
+            Layout.preferredHeight: Style.lineHeight
             Layout.fillWidth: true
             Layout.leftMargin: 100
             Layout.rightMargin: 100
@@ -127,7 +131,7 @@ Popup {
             defaultText: serverSettings.lastLogin
         }
 
-        CheckBox {
+        StyledCheckBox {
             id: crypted
             Layout.fillWidth: true
             Layout.leftMargin: 100

@@ -23,6 +23,7 @@ Text {
     verticalAlignment: Text.AlignVCenter
     leftPadding: 50
     topPadding: 50
+    color: Style.selectedPalette.text
 
     function updateDataFromEditor() { }     // Nothing to do when no activity editor is available
 }

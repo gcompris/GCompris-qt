@@ -33,7 +33,7 @@ Popup {
     closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
 
     background: Rectangle {
-        color: Style.colorBackgroundDialog
+        color: Style.selectedPalette.alternateBase
         radius: 5
         border.color: "darkgray"
         border.width: 2
@@ -75,6 +75,7 @@ Popup {
                 pixelSize: 20
                 bold: true
             }
+            color: Style.selectedPalette.text
         }
 
         ScrollView {

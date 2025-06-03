@@ -18,7 +18,7 @@ import "../components"
 Item {
     id: settingsView
     property var hostInformations: ({})
-    property int labelWidth: 16 * Style.defaultPixelSize
+    property int labelWidth: 16 * Style.textSize
     property int infoWidth: scrollInfos.width - labelWidth - (2 * mainColumn.anchors.margins)
 
     File { id: file }
@@ -31,25 +31,45 @@ Item {
         source: 'qrc:/gcompris/src/server/resource/gcompris-icon.png'
     }
 
-    Column {
-        id: buttonsColumn
+    TabBar {
+        id: buttonBar
         anchors.top: logo.bottom
         anchors.left: logo.left
         anchors.right: logo.right
         anchors.margins: 10
-        spacing: 10
-        RoundButton {
-            width: parent.width
-            radius: 8
+        background: Item {}
+        spacing: Style.margins
+        currentIndex: 0
+        implicitWidth: logo.width
+
+        contentItem: ListView {
+            model: buttonBar.contentModel
+            currentIndex: buttonBar.currentIndex
+            width: childrenRect.width
+            height: childrenRect.height
+            spacing: buttonBar.spacing
+            orientation: ListView.Vertical
+            boundsBehavior: Flickable.StopAtBounds
+            flickableDirection: Flickable.AutoFlickIfNeeded
+            snapMode: ListView.SnapToItem
+
+            // highlightMoveDuration: 0
+            // highlightRangeMode: ListView.ApplyRange
+            // preferredHighlightBegin: 40
+            // preferredHighlightEnd: height - 40
+        }
+
+        StyledTabButton {
+            width: buttonBar.width
             text: qsTr("Settings")
             onClicked: swipe.currentIndex = 0
         }
-        RoundButton {
-            width: parent.width
-            radius: 8
+        StyledTabButton {
+            width: buttonBar.width
             text: qsTr("Help")
             onClicked: swipe.currentIndex = 1
         }
+
     }
 
     SwipeView {
@@ -59,6 +79,7 @@ Item {
         anchors.bottom: parent.bottom
         anchors.right: parent.right
         clip: true
+        currentIndex: buttonBar.currentIndex
 
         SplitView { // First item in SwipeView
             id: splitSettings
@@ -83,7 +104,8 @@ Item {
                             text: qsTr("Server ID")
                             verticalAlignment: Text.AlignVCenter
                             font.bold: true
-                            font.pixelSize: Style.defaultPixelSize + 1
+                            font.pixelSize: Style.textSize + 1
+                            color: Style.selectedPalette.text
                         }
 
                         UnderlinedTextInput {
@@ -104,7 +126,8 @@ Item {
                             text: qsTr("Port")
                             verticalAlignment: Text.AlignVCenter
                             font.bold: true
-                            font.pixelSize: Style.defaultPixelSize + 1
+                            font.pixelSize: Style.textSize + 1
+                            color: Style.selectedPalette.text
                         }
                         UnderlinedTextInput {
                             id: portField
@@ -158,9 +181,9 @@ Item {
 
                     RadioButtonLine {
                         label: qsTr("Font pixel size")
-                        radios: [11, 12, 13, 14, 15, 16, 17, 18]
-                        current: radios.indexOf(Style.defaultPixelSize)
-                        onRadioCheckChanged: (index) => { Style.defaultPixelSize = radios[index] }
+                        radios: [12, 14, 16, 18, 20]
+                        current: radios.indexOf(Style.textSize)
+                        onRadioCheckChanged: (index) => { Style.textSize = radios[index] }
                     }
 
                     Rectangle {
@@ -179,13 +202,14 @@ Item {
 
                 Text {
                     Layout.leftMargin: 10
-                    Layout.preferredHeight: Style.defaultLineHeight
+                    Layout.preferredHeight: Style.lineHeight
                     Layout.fillWidth: true
                     text: qsTr("%1 available activities").arg(Master.availableActivities.length)
-                    font.pixelSize: Style.defaultPixelSize
+                    font.pixelSize: Style.textSize
                     font.bold: true
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
+                    color: Style.selectedPalette.text
                 }
 
                 ScrollView {
@@ -196,12 +220,13 @@ Item {
                         Repeater {
                             model: Master.availableActivities
                             Text {
-                                height: Style.defaultLineHeight
+                                height: Style.lineHeight
                                 text: ((modelData !== undefined)
                                        && (Master.allActivities[modelData] !== undefined))
                                       ? Master.allActivities[modelData].title : ""
-                                font.pixelSize: Style.defaultPixelSize
+                                font.pixelSize: Style.textSize
                                 horizontalAlignment: Text.AlignHCenter
+                                color: Style.selectedPalette.text
                             }
                         }
                     }
@@ -216,8 +241,7 @@ Item {
         }
 
         Rectangle { // Help page
-            color: "white"
-            border.width: 1
+            color: Style.selectedPalette.base
             ScrollView {  // Second item in SwipeView
                 anchors.fill: parent
                 Text {
@@ -227,6 +251,7 @@ Item {
                     anchors.centerIn: parent
                     text: "Help page"
                     textFormat: Text.RichText
+                    color: Style.selectedPalette.text
                 }
             }
         }

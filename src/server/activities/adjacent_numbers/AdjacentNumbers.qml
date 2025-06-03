@@ -27,6 +27,7 @@ Item {
                 height: contentHeight + 5
                 text: qsTr("Tiles")
                 font.bold: true
+                color: Style.selectedPalette.text
             }
 
             Repeater {
@@ -36,6 +37,7 @@ Item {
                     text: modelData
                     width: 35
                     height: contentHeight + 5
+                    color: Style.selectedPalette.text
                 }
             }
         }
@@ -46,6 +48,7 @@ Item {
                 height: contentHeight + 5
                 text: qsTr("Answer")
                 font.bold: true
+                color: Style.selectedPalette.text
             }
 
             Repeater {
@@ -72,6 +75,7 @@ Item {
                     font.bold: true
                     width: 30
                     height: contentHeight + 5
+                    color: Style.selectedPalette.text
                 }
             }
         }

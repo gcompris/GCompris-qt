@@ -86,7 +86,7 @@ Item {
 
     Rectangle {
         anchors.fill: parent
-        color: Style.colorBackground
+        color: Style.selectedPalette.base
 
         Component {
             id: lineReport
@@ -126,6 +126,7 @@ Item {
                 id: helpText
                 x: 10
                 y: 10
+                color: Style.selectedPalette.text
             }
         }
     }

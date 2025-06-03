@@ -45,7 +45,7 @@ Item {
                         if (gradLine.jsonData.start + (box.index * step) === jsonData.expected) {
                             return (jsonData.proposal === jsonData.expected) ? "green" : "red"
                         }
-                        return "black"
+                        return Style.selectedPalette.text
                     }
                     font.pixelSize: 16
                 }

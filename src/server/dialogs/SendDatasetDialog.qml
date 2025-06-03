@@ -61,7 +61,7 @@ Popup {
     }
 
     background: Rectangle {
-        color: Style.colorBackgroundDialog
+        color: Style.selectedPalette.alternateBase
         radius: 5
         border.color: "darkgray"
         border.width: 2
@@ -83,13 +83,14 @@ Popup {
                 bold: true
                 pixelSize: 20
             }
+            color: Style.selectedPalette.text
         }
 
         Rectangle {
             id: groupNamesRectangle
             Layout.fillWidth: true
             Layout.fillHeight: true
-            color: Style.colorBackground
+            color: Style.selectedPalette.base
             border.color: "gray"
             border.width: 1
 

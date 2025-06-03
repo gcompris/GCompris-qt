@@ -30,14 +30,15 @@ Flow {
             property var proposal: wordsFlow.jsonData.proposal
             Text {
                 anchors.horizontalCenter: parent.horizontalCenter
-                height: Style.bigLineHeight
-                font.pixelSize: Style.bigPixelSize
+                height: Style.mediumLineHeight
+                font.pixelSize: Style.mediumTextSize
                 text: wordColumn.modelData
+                color: Style.selectedPalette.text
             }
             Text {
                 anchors.horizontalCenter: parent.horizontalCenter
-                height: Style.bigLineHeight
-                font.pixelSize: Style.bigPixelSize
+                height: Style.mediumLineHeight
+                font.pixelSize: Style.mediumTextSize
                 text: wordColumn.proposal[wordColumn.index]
                 color: (wordColumn.expected[wordColumn.index] === wordColumn.proposal[wordColumn.index]) ? "green" : "red"
             }
