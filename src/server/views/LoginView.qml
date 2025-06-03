@@ -10,7 +10,7 @@
  */
 import QtQuick 2.12
 import QtQuick.Layouts 1.12
-import GCompris 1.0
+import core 1.0
 
 import "../components"
 import "../singletons"
