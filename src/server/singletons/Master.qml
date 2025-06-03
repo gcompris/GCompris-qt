@@ -9,7 +9,7 @@
  */
 pragma Singleton
 
-import QtQuick 2.12
+import QtQuick
 import core 1.0
 
 import "qrc:/gcompris/src/server/server.js" as Server
