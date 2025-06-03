@@ -16,7 +16,7 @@
  */
 .pragma library
 .import QtQml 2.12 as Qml
-.import GCompris 1.0 as GCompris
+.import core 1.0 as GCompris
 
 var aboutToQuit = false;
 /**
