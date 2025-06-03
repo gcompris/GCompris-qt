@@ -8,7 +8,11 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 #include <QtDebug>
+#if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)
+#include <QGuiApplication>
+#else
 #include <QApplication>
+#endif
 #include <QQuickWindow>
 #include <QQmlApplicationEngine>
 #include <QStandardPaths>
@@ -32,7 +36,12 @@ int main(int argc, char *argv[])
     // Disable it because we already support HDPI display natively
     qunsetenv("QT_DEVICE_PIXEL_RATIO");
 
+#if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)
+    QGuiApplication app(argc, argv);
+#else
     QApplication app(argc, argv);
+#endif
+
 #if defined(UBUNTUTOUCH)
     app.setOrganizationName("org.kde.gcompris");
 #else

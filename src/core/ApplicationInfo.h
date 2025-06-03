@@ -21,6 +21,9 @@
 #include <QTranslator>
 #include <QtQml/qqmlregistration.h>
 
+// Can be removed when Qt6.9 is minimum version
+#include <QVersionNumber>
+
 class QQmlEngine;
 class QQuickWindow;
 
@@ -115,6 +118,12 @@ class ApplicationInfo : public QObject
      * Qt version string (runtime).
      */
     Q_PROPERTY(QString QTVersion READ QTVersion CONSTANT)
+
+    /**
+     * Qt minor version int (runtime).
+     * only use to get Qt < 6.9 for QtGraphs switch
+     */
+    Q_PROPERTY(int QTMinorVersion READ QTMinorVersion CONSTANT)
 
     /**
      * OpenSSL version string (runtime).
@@ -290,6 +299,8 @@ public:
     static QString GCVersion() { return VERSION; }
     static int GCVersionCode() { return VERSION_CODE; }
     static QString QTVersion() { return qVersion(); }
+    // Only used for the switch to QtGraphs, can be removed after Qt 6.9 minimum
+    static int QTMinorVersion() { return QVersionNumber::fromString(qVersion()).minorVersion(); }
     static QString OpenSSLVersion() { return QSslSocket::sslLibraryVersionString(); }
     static QString CompressedAudio() { return COMPRESSED_AUDIO; }
     static bool isDownloadAllowed() { return QString(DOWNLOAD_ALLOWED) == "ON"; }
