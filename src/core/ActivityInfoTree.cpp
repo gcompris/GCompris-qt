@@ -441,7 +441,7 @@ void ActivityInfoTree::createDataset(const QJsonObject &dataset)
         datasetDir.mkpath(datasetFolder);
     }
     const QString filename = datasetFolder + "/Data.qml";
-    QString qmlFile = QString("import GCompris 1.0\nData {\n    "
+    QString qmlFile = QString("import core 1.0\nData {\n    "
                               "objective: \"%1\"\n    difficulty: %2\n    "
                               "data: %3\n}\n")
                           .arg(dataset["dataset_objective"].toString())
