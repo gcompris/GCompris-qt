@@ -132,13 +132,14 @@ Item {
                     delegate: Rectangle {
                         height: 20
                         width: Definitions.columnsSize[modelData]
-                        color: Style.textInputBackground
+                        color: Style.selectedPalette.alternateBase
                         Text {
                             anchors.fill: parent
                             anchors.leftMargin: 3
                             horizontalAlignment: Definitions.columnsAlign[modelData]
                             text: ((modelData === undefined) || (linesModel.get(lineIndex) === undefined)) ? "" : linesModel.get(lineIndex)[modelData]
                             clip: true
+                            color: Style.selectedPalette.text
                         }
                     }
                 }
@@ -146,7 +147,7 @@ Item {
 
             Rectangle {
                 anchors.fill: parent
-                color: lineArea.containsMouse ? "burlywood" : "transparent"
+                color: lineArea.containsMouse ? Style.selectedPalette.accent : "transparent"
                 opacity: 0.3
                 MouseArea {
                     id: lineArea

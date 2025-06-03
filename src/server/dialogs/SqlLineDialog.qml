@@ -57,7 +57,7 @@ Popup {
     onAboutToShow: updateModels()
 
     background: Rectangle {
-        color: Style.colorBackgroundDialog
+        color: Style.selectedPalette.alternateBase
         radius: 5
         border.color: "darkgray"
         border.width: 2
@@ -74,6 +74,7 @@ Popup {
             text: sqlLineDialog.title
             font.bold: true
             font.pixelSize: 20
+            color: Style.selectedPalette.text
         }
 
         Repeater {
@@ -132,6 +133,7 @@ Popup {
                 text: sqlLineDialog.parentModel ? String(sqlLineDialog.lineIndex + 1) + " / " + String(sqlLineDialog.parentModel.count) : ""
                 font.bold: true
                 font.pixelSize: 20
+                color: Style.selectedPalette.text
             }
 
             ViewButton {

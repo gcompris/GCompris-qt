@@ -14,14 +14,14 @@ import "../singletons"
 
 Control {
     id: radioGroupEditDelegate
-    font.pixelSize: Style.defaultPixelSize
+    font.pixelSize: Style.textSize
     hoverEnabled: true
     Rectangle {
         anchors.fill: parent
-        color: radioGroupEditDelegate.hovered ? Style.colorHeaderPane : "transparent"
+        color: radioGroupEditDelegate.hovered ? Style.selectedPalette.base : "transparent"
     }
 
-    RadioButton {
+    StyledRadioButton {
         id: radioButton
         anchors.fill: parent
         anchors.leftMargin: 10
@@ -29,7 +29,6 @@ Control {
         text: group_name
         checked: group_checked
         ButtonGroup.group: childGroup
-        indicator.scale: Style.checkerScale
         onClicked: {
             if (currentChecked !== -1)
                 foldModel.setProperty(currentChecked, checkKey, false)
@@ -48,7 +47,7 @@ Control {
         width: parent.height - 4
         height: parent.height - 4
         visible: radioButton.hovered || deleteGroup.hovered || editGroup.hovered
-        font.pixelSize: Style.defaultPixelSize
+        font.pixelSize: Style.textSize
         text: "\uf304"
         onClicked: modifyGroupDialog.openGroupDialog(index, group_name, group_id, group_description)
         ToolTip.visible: hovered
@@ -64,7 +63,7 @@ Control {
         width: parent.height - 4
         height: parent.height - 4
         visible: radioButton.hovered || deleteGroup.hovered || editGroup.hovered
-        font.pixelSize: Style.defaultPixelSize
+        font.pixelSize: Style.textSize
         text: "\uf1f8"
         onClicked: removeGroupDialog.openGroupDialog(index, group_name, group_id, group_description)
         ToolTip.visible: hovered

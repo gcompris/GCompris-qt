@@ -33,7 +33,7 @@ Popup {
     signal datasetRemoved()
 
     background: Rectangle {
-        color: Style.colorBackgroundDialog
+        color: Style.selectedPalette.alternateBase
         radius: 5
         border.color: "darkgray"
         border.width: 2
@@ -72,6 +72,7 @@ Popup {
                 bold: true
                 pixelSize: 20
             }
+            color: Style.selectedPalette.text
         }
 
         Rectangle {
@@ -84,6 +85,7 @@ Popup {
             Text {
                 text: removeDatasetDialog.datasetName
                 anchors.horizontalCenter: parent.horizontalCenter
+                color: Style.selectedPalette.text
             }
         }
 

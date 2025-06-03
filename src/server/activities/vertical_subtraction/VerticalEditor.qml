@@ -82,7 +82,7 @@ Item {
 
                             Rectangle {
                                 anchors.fill: parent
-                                color: (mainView.current === index) ? Style.colorBackgroundPane : (index % 2) ? Style.colorEvenLine : Style.colorOddLine
+                                color: (mainView.current === index) ? Style.selectedPalette.highlight : (index % 2) ? Style.selectedPalette.base : Style.selectedPalette.alternateBase
                                 border.width: mainMouseArea.containsMouse ? 1 : 0
                             }
 

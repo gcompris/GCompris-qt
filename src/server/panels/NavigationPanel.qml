@@ -50,7 +50,8 @@ Item {
         }
     ]
 
-    width: isCollapsed ? Style.widthNavigationBarCollapsed : Style.widthNavigationBarExpanded
+    width: enabled ?
+        (isCollapsed ? Style.bigControlSize : Style.bigControlSize + 160) : 0
     clip: true
 
     function changeTo(index) {
@@ -67,7 +68,7 @@ Item {
 
     Rectangle {
         anchors.fill: parent
-        color: enabled ? Style.colorNavigationBarBackground : Style.colorNavigationBarBackgroundDisabled
+        color: Style.selectedPalette.alternateBase
 
         Column {
             id: buttons

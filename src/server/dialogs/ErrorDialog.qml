@@ -23,7 +23,7 @@ Popup {
     closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
 
     background: Rectangle {
-        color: Style.colorErrorDialog
+        color: Style.selectedPalette.base
         radius: 5
         border.color: "black"
         border.width: 4
@@ -37,6 +37,7 @@ Popup {
             Layout.fillWidth: true
             Layout.preferredHeight: 40
             horizontalAlignment: Text.AlignHCenter
+            color: Style.selectedPalette.text
             text: qsTr("Information")
             font {
                 bold: true
@@ -50,6 +51,7 @@ Popup {
                 Layout.fillWidth: true
                 height: 40
                 horizontalAlignment: Text.AlignHCenter
+                color: Style.selectedPalette.text
                 text: errorDialog.message[index]
             }
         }

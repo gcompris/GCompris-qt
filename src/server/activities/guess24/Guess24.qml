@@ -27,6 +27,7 @@ Item {
             font.bold: true
             horizontalAlignment: Text.AlignRight
             text: lineItem.jsonData.cards.join("\n")
+            color: Style.selectedPalette.text
         }
 
         Repeater {
@@ -35,6 +36,7 @@ Item {
                 required property string content_
                 anchors.topMargin: 6
                 text: content_
+                color: Style.selectedPalette.text
             }
         }
 

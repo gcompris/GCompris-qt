@@ -30,7 +30,7 @@ Popup {
     closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
 
     background: Rectangle {
-        color: Style.colorBackgroundDialog
+        color: Style.selectedPalette.alternateBase
         radius: 5
         border.color: "darkgray"
         border.width: 2
@@ -74,6 +74,7 @@ Popup {
                 bold: true
                 pixelSize: 20
             }
+            color: Style.selectedPalette.text
         }
 
         Rectangle {
@@ -96,6 +97,7 @@ Popup {
                     Text {
                         text: modelData
                         anchors.horizontalCenter: parent.horizontalCenter
+                        color: Style.selectedPalette.text
                     }
                 }
             }

@@ -21,7 +21,7 @@ Column {
     required property string checkKey
     required property string title
 
-    property int lineHeight: Style.defaultLineHeight
+    property int lineHeight: Style.lineHeight
     property bool activated: true
     property bool collapsable: true
     property int currentChecked: -1
@@ -47,17 +47,16 @@ Column {
     Rectangle {
         width: parent.width
         height: foldDown.lineHeight
-        color: Style.colorHeaderPane
+        color: Style.selectedPalette.base
         radius: 5
 
-        CheckBox {
+        StyledCheckBox {
             id: parentBox
             anchors.fill: parent
             anchors.leftMargin: 2
-            font.pixelSize: Style.defaultPixelSize
+            font.pixelSize: Style.textSize
             font.bold: true
             text: foldDown.title
-            indicator.scale: Style.checkerScale
             enabled: foldDownFilter.text === ""
             checkState: childGroup.checkState
             onClicked: {
@@ -74,13 +73,13 @@ Column {
             anchors.rightMargin: 5
             anchors.verticalCenter: parent.verticalCenter
             border.width: 1
-            border.color: focus ? "black" : Style.colorBackgroundPane
+            border.color: focus ? "black" : Style.selectedPalette.alternateBase
             TextInput {
                 id: foldDownFilter
                 anchors.fill: parent
                 verticalAlignment: Text.AlignVCenter
                 clip: true
-                font.pixelSize: Style.defaultPixelSize
+                font.pixelSize: Style.textSize
             }
         }
 
@@ -90,7 +89,7 @@ Column {
             height: foldDown.lineHeight
             anchors.right: counter.left
             checkable: true
-            font.pixelSize: Style.defaultPixelSize
+            font.pixelSize: Style.textSize
             text: "\uf0b0"
             onCheckedChanged: {
                 if (!checked) foldDownFilter.text = ""
@@ -107,11 +106,12 @@ Column {
             anchors.rightMargin: 5
             anchors.top: parent.top
             anchors.bottom: parent.bottom
-            font.pixelSize: Style.defaultPixelSize
+            font.pixelSize: Style.textSize
             font.bold: true
             text: foldDown.foldModel.count
             horizontalAlignment: Text.AlignRight
             verticalAlignment: Text.AlignVCenter
+            color: Style.selectedPalette.text
         }
 
         SmallButton {
@@ -119,7 +119,7 @@ Column {
             width: foldDown.lineHeight
             height: foldDown.lineHeight
             anchors.right: parent.right
-            font.pixelSize: Style.defaultPixelSize
+            font.pixelSize: Style.textSize
             visible: foldDown.collapsable
             checkable: true
             checked: true
@@ -134,7 +134,7 @@ Column {
         width: parent.width
         height: parent.height
         radius: 5
-        color: Style.colorBackgroundPane
+        color: Style.selectedPalette.alternateBase
 
         ScrollView {
             id: scrollLines
@@ -174,13 +174,16 @@ Column {
                             id: emptyDelegate
                             Control {
                                 id: lineBox
-                                font.pixelSize: Style.defaultPixelSize
+                                font.pixelSize: Style.textSize
                                 hoverEnabled: true
                                 Rectangle {
                                     anchors.fill: parent
-                                    color: lineBox.hovered ? Style.colorHeaderPane : "transparent"
+                                    color: lineBox.hovered ? Style.selectedPalette.base : "transparent"
                                 }
-                                Text { text: eval(nameKey) }
+                                Text {
+                                    text: eval(nameKey)
+                                    color: Style.selectedPalette.text
+                                }
                             }
                         }
 

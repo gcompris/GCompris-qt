@@ -14,19 +14,18 @@ import "../singletons"
 
 Control {
     id: checkActivityDelegate
-    font.pixelSize: Style.defaultPixelSize
+    font.pixelSize: Style.textSize
     hoverEnabled: true
     Rectangle {
         anchors.fill: parent
-        color: checkActivityDelegate.hovered ? Style.colorHeaderPane : "transparent"
+        color: checkActivityDelegate.hovered ? Style.selectedPalette.base : "transparent"
     }
-    CheckBox {
+    StyledCheckBox {
         anchors.fill: parent
         anchors.leftMargin: 10
         text : (Master.allActivities[activity_name] !== undefined) ? Master.allActivities[activity_name].title : ""
         checked: activity_checked
         ButtonGroup.group: childGroup
-        indicator.scale: Style.checkerScale
         onClicked: {
             foldModel.setProperty(index, checkKey, checked)
             selectionClicked(foldModel.get(index)[indexKey], checked)

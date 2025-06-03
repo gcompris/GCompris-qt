@@ -45,7 +45,7 @@ Window {
     minimumWidth: 800
     minimumHeight: 600
     title: qsTr("GCompris Teachers Tool")
-    color: Style.colorBackground
+    color: Style.selectedPalette.base
 
     onClosing: Server.quit(mainWindow)
 
@@ -120,8 +120,6 @@ Window {
                 case Qt.Key_Q:
                     Server.quit()
                     break
-//                case Qt.Key_Plus: Style.defaultPixelSize++; console.warn(Style.defaultPixelSize); break
-//                case Qt.Key_Minus: Style.defaultPixelSize--; console.warn(Style.defaultPixelSize); break
                 }
             }
         }

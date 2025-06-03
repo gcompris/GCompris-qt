@@ -21,7 +21,7 @@ Column {
     required property string checkKey
     required property string title
 
-    property int lineHeight: Style.defaultLineHeight
+    property int lineHeight: Style.lineHeight
     property bool activated: true
     property bool collapsable: true
     property int currentChecked: -1
@@ -43,7 +43,7 @@ Column {
     Rectangle {
         width: parent.width
         height: foldDown.lineHeight
-        color: Style.colorHeaderPane
+        color: Style.selectedPalette.base
         radius: 5
 
         SmallButton {
@@ -51,7 +51,7 @@ Column {
             width: foldDown.lineHeight
             height: foldDown.lineHeight
             anchors.left: parent.left
-            font.pixelSize: Style.defaultPixelSize
+            font.pixelSize: Style.textSize
             text: "\uf068"
             enabled: collapseButton.checked && ((childGroup.checkedButton != null) || (!childGroup.exclusive))
             onClicked: {    // Uncheck all buttons
@@ -71,10 +71,10 @@ Column {
             anchors.leftMargin: 5
             height: parent.height
             verticalAlignment: Text.AlignVCenter
-            font.pixelSize: Style.defaultPixelSize
+            font.pixelSize: Style.textSize
             font.bold: true
             text: (!collapseButton.checked) && (childGroup.checkedButton != null) ? childGroup.checkedButton.text : foldDown.title
-            color: enabled ? "black": "gray"
+            color: Style.selectedPalette.text
         }
 
         Text {
@@ -83,11 +83,12 @@ Column {
             anchors.rightMargin: 10
             anchors.top: parent.top
             anchors.bottom: parent.bottom
-            font.pixelSize: Style.defaultPixelSize
+            font.pixelSize: Style.textSize
             font.bold: true
             text: foldDown.foldModel.count
             horizontalAlignment: Text.AlignRight
             verticalAlignment: Text.AlignVCenter
+            color: Style.selectedPalette.text
         }
 
         SmallButton {
@@ -98,7 +99,7 @@ Column {
             visible: foldDown.collapsable
             checkable: true
             checked: true
-            font.pixelSize: Style.defaultPixelSize
+            font.pixelSize: Style.textSize
             text: checked ? "\uf0d7" : "\uf0d9"
             onCheckedChanged: foldDown.SplitView.maximumHeight = (foldDown.SplitView.maximumHeight === Infinity) ? 25 : Infinity
         }
@@ -110,7 +111,7 @@ Column {
         width: parent.width
         height: parent.height
         radius: 5
-        color: Style.colorBackgroundPane
+        color: Style.selectedPalette.alternateBase
         ScrollView {
             id: scrollLines
             anchors.fill: parent
@@ -148,13 +149,16 @@ Column {
                             id: emptyDelegate
                             Control {
                                 id: lineBox
-                                font.pixelSize: Style.defaultPixelSize
+                                font.pixelSize: Style.textSize
                                 hoverEnabled: true
                                 Rectangle {
                                     anchors.fill: parent
-                                    color: lineBox.hovered ? Style.colorHeaderPane : "transparent"
+                                    color: lineBox.hovered ? Style.selectedPalette.base : "transparent"
                                 }
-                                Text { text: eval(nameKey) }
+                                Text {
+                                    text: eval(nameKey)
+                                    color: Style.selectedPalette.text
+                                }
                             }
                         }
 

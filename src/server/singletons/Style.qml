@@ -1,74 +1,63 @@
 /* GCompris - Style.qml
  *
- * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
- *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 pragma Singleton
 
-import QtQuick 2.12
+import QtQuick
 
-Item {
-// Bruno's colors
-    readonly property color colorBackground: "beige"
-    readonly property color textInputBackground: "white"
-    readonly property color colorNavigationBarBackgroundDisabled: "wheat"
-    readonly property color colorNavigationBarBackground: "peru"
-    readonly property color colorBackgroundDialog: "wheat"
-    readonly property color colorButtonDialog: "sienna"
-    readonly property color colorHover: "lightcoral"
-    readonly property color colorNavigationBarFont: "maroon"
-    readonly property color colorErrorDialog: "tomato"
-    readonly property color colorButton: "burlywood"
-    readonly property color colorHoveredButton: "darkgoldenrod"
-    readonly property real widthNavigationButtonIcon: 70
-    readonly property real heightNavigationButtonIcon: 60
-    readonly property color colorEvenLine: "cornsilk"
-    readonly property color colorOddLine: "beige"
+QtObject {
 
-    readonly property color colorBackgroundPane: "wheat"
-    readonly property color colorHeaderPane: "burlywood"
-    readonly property color colorDateSelected: "peru"
+    readonly property Palette darkPalette: Palette {
+        accent: "#4a4a4a"
+        alternateBase: "#292929"
+        base: "#383838"
+        light: "#4a4a4a"
+        text: "#C0C0C0"
+        highlightedText: "#f2f2f2"
+        highlight: "#53728E"
+        window: "#7f7f7f"
+    }
 
-    readonly property real heightTopPanel: heightNavigationButtonIcon
+    readonly property Palette lightPalette: Palette {
+        accent: "#d0d0d0"
+        alternateBase: "#f4f4f4"
+        base: "#e4e4e4"
+        light: "#f2f2f2"
+        text: "#373737"
+        highlightedText: "#080808"
+        highlight: "#55a1ef"
+        window: "#7f7f7f"
+    }
 
-    property int defaultPixelSize: 12
-    property int bigPixelSize: defaultPixelSize * 3 / 2
-    property int defaultLineHeight: 1.8 * defaultPixelSize
-    property int bigLineHeight: 1.2 * bigPixelSize
-    property int mediumLineHeight: defaultLineHeight + 6
-    property int tableHeaderHeight: 20
-    property real checkerScale: 0.55
+    property bool isDarkTheme: true
+    readonly property Palette selectedPalette: isDarkTheme ? darkPalette : lightPalette
+    // used to load icons depending on selected theme
+    readonly property string themePrefix: isDarkTheme ? "dark_" : "light_"
 
-//    readonly property int defaultLineHeight: 25
-//    readonly property int mediumLineHeight: 35
-    readonly property int activityHeaderHeight: 50
-    readonly property int linesSpacing: -1
-    readonly property int displayLineHeight: 20
+    readonly property int defaultRadius: 4
+    readonly property int defaultBorderWidth: 2
 
-// Historical colors
-//     readonly property color colorBackground: "#ffffff"
-//    readonly property color colorBackgroundDialog: "azure"
+    readonly property int margins: 8
+    readonly property int smallMargins: 4
+    readonly property int bigMargins: 16
+    readonly property int hugeMargins: 32
 
-    readonly property real sizeScreenMargin: 20
-    readonly property real sizeControlSpacing: 10
+    readonly property int controlSize: 32
+    readonly property int bigControlSize: controlSize * 2
 
-//    readonly property color colorNavigationBarBackgroundDisabled: "#aaaaaa"
-//    readonly property color colorNavigationBarBackground: "#2a56c6"
-//    readonly property color colorNavigationBarFont: "#ffffff"
-    readonly property int pixelSizeNavigationBarIcon: 42
-    readonly property int pixelSizeNavigationBarText: 15
-    readonly property int pixelSizeTopPanelText: 25
-    readonly property real widthNavigationBarCollapsed: widthNavigationButtonIcon
-    readonly property real widthNavigationBarExpanded: widthNavigationButton
+    property int textSize: 16 // can be edited in settings
+    readonly property int mediumTextSize: textSize * 1.5
+    readonly property int bigTextSize: textSize * 2
 
-//    readonly property real widthNavigationButtonIcon: 80
-//    readonly property real heightNavigationButtonIcon: widthNavigationButtonIcon
-    readonly property real widthNavigationButtonDescription: 160
-    readonly property real heightNavigationButtonDescription: heightNavigationButtonIcon
-    readonly property real widthNavigationButton: widthNavigationButtonIcon + widthNavigationButtonDescription
-    readonly property real heightNavigationButton: Math.max(heightNavigationButtonIcon, heightNavigationButtonDescription)
+    readonly property int lineHeight: textSize + bigMargins
+    readonly property int mediumLineHeight: mediumTextSize + bigMargins
+    readonly property int bigLineHeight: bigTextSize + bigMargins
+
+    readonly property int textInputHeight: textSize + bigMargins
 }
