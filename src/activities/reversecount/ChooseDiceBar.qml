@@ -23,9 +23,12 @@ Item {
     property alias valueMax: domino.valueMax
     property alias mode: domino.mode
 
-    function click() {
-        ok.buttonClicked()
+    function moveTux() {
+        if(ok.enabled) {
+            Activity.moveTux(domino.value1 + domino.value2)
+        }
     }
+
 
     GCSoundEffect {
         id: dominoScroll
@@ -53,17 +56,6 @@ Item {
 
             enabled: chooseDiceBar.enabled
             onClicked: chooseDiceBar.moveTux();
-
-            getDataCallback: function() {
-                var data = {
-                    "index": Activity.fishIndex,
-                    "currentPosition": Activity.tuxIceBlockNumber,
-                    "dice1": chooseDiceBar.value1,
-                    "dice2": chooseDiceBar.value2,
-                    "goodAnswer": ((Activity.tuxIceBlockNumber+chooseDiceBar.value1+chooseDiceBar.value2) % Activity.iceBlocksLayout.length == (Activity.fishIndex % Activity.iceBlocksLayout.length))
-                }
-                return data
-            }
         }
 
         Domino {
