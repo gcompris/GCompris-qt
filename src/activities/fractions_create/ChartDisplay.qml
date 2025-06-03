@@ -6,6 +6,9 @@
  */
 import QtQuick
 
+import core 1.0
+import "../../core"
+
 import "fractions_create.js" as Activity
 
 Flow {
@@ -31,7 +34,8 @@ Flow {
             width: gridContainer.gridItemWidth
             height: gridContainer.gridItemHeight
             asynchronous: false
-            source: items.chartType === "pie" ? "PieChart.qml" : "RectangleChart.qml"
+            source: items.chartType === "pie" ? (ApplicationInfo.QTMinorVersion >= 9 ? "PieGraph.qml" : "PieChart.qml") :
+            "RectangleChart.qml"
             property bool horizontalLayout: items.horizontalLayout
             property int numberOfCharts: chartRepeater.model
         }

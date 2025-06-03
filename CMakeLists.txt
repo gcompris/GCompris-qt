@@ -85,8 +85,9 @@ endif()
 
 set(QT_MAJOR Qt6)
 
-set(QT_COMPONENTS Qml Quick Gui Multimedia Core Svg Network LinguistTools Sensors QuickControls2 QuickTemplates2 Charts Widgets QmlWorkerScript)
+set(QT_COMPONENTS Qml Quick Gui Multimedia Core Svg Network LinguistTools Sensors QuickControls2 QuickTemplates2 QmlWorkerScript)
 
+find_package(QT NAMES Qt6)
 find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} COMPONENTS
     ${QT_COMPONENTS})
 
@@ -94,6 +95,17 @@ set_package_properties(${QT_MAJOR} PROPERTIES TYPE REQUIRED)
 foreach(COMPONENT ${QT_COMPONENTS})
   set_package_properties(${QT_MAJOR}${COMPONENT} PROPERTIES TYPE REQUIRED)
 endforeach()
+
+set(QT_VERSION "${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}.${QT_VERSION_PATCH}")
+if(QT_VERSION VERSION_LESS "6.9.0")
+  find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} COMPONENTS Charts Widgets)
+  set_package_properties(${QT_MAJOR}Charts PROPERTIES TYPE REQUIRED)
+  set_package_properties(${QT_MAJOR}Widgets PROPERTIES TYPE REQUIRED)
+else()
+  find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} COMPONENTS Graphs Quick3D)
+  set_package_properties(${QT_MAJOR}Graphs PROPERTIES TYPE REQUIRED)
+  set_package_properties(${QT_MAJOR}Quick3D PROPERTIES TYPE REQUIRED)
+endif()
 
 # It seems to only be present on some Linux distributions, not FreeBSD for example and starting Qt6.6 so not enforcing it
 find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} OPTIONAL_COMPONENTS QuickControls2Basic)

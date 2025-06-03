@@ -73,10 +73,16 @@ elseif(CMAKE_HOST_APPLE)
   set_source_files_properties(${gcompris_RES} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
 endif()
 
-set(used_qt_modules ${QT_MAJOR}::Qml ${QT_MAJOR}::Quick ${QT_MAJOR}::Widgets ${QT_MAJOR}::Gui ${QT_MAJOR}::Multimedia ${QT_MAJOR}::Core ${QT_MAJOR}::Svg ${QT_MAJOR}::Sensors ${QT_MAJOR}::QuickControls2 ${QT_MAJOR}::QuickTemplates2 ${QT_MAJOR}::Charts ${QT_MAJOR}::QmlWorkerScript)
+set(used_qt_modules ${QT_MAJOR}::Qml ${QT_MAJOR}::Quick ${QT_MAJOR}::Gui ${QT_MAJOR}::Multimedia ${QT_MAJOR}::Core ${QT_MAJOR}::Svg ${QT_MAJOR}::Sensors ${QT_MAJOR}::QuickControls2 ${QT_MAJOR}::QuickTemplates2 ${QT_MAJOR}::QmlWorkerScript)
 
 if(TARGET ${QT_MAJOR}::CorePrivate)
   set(used_qt_modules ${used_qt_modules} ${QT_MAJOR}::CorePrivate)
+endif()
+
+if(QT_VERSION VERSION_LESS "6.9.0")
+  set(used_qt_modules ${used_qt_modules} ${QT_MAJOR}::Widgets ${QT_MAJOR}::Charts)
+else()
+  set(used_qt_modules ${used_qt_modules} ${QT_MAJOR}::Graphs ${QT_MAJOR}::Quick3D)
 endif()
 
 if(TARGET ${QT_MAJOR}::QuickControls2Basic)
@@ -230,8 +236,13 @@ if(BUILD_STANDALONE)
      QtQuick/${_lib_prefix}qtquick2plugin
      QtQuick/Shapes/${_lib_prefix}qmlshapesplugin
      QtMultimedia/${_lib_prefix}quickmultimediaplugin
-     QtSensors/${_lib_prefix}sensorsquickplugin
-     QtCharts/${_lib_prefix}qtchartsqml2plugin)
+     QtSensors/${_lib_prefix}sensorsquickplugin)
+
+  if(QT_VERSION VERSION_LESS "6.9.0")
+    set(_qml_plugins ${_qml_plugins} QtCharts/${_lib_prefix}qtchartsqml2plugin)
+  else()
+    set(_qml_plugins ${_qml_plugins} QtGraphs/${_lib_prefix}graphsplugin)
+  endif()
 
   # TODO Double check for ubuntutouch, we may need qtquickcontrols2/templates2!
   if(NOT UBUNTUTOUCH)
