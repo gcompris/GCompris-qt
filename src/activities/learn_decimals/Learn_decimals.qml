@@ -87,7 +87,6 @@ ActivityBase {
             property bool typeResult: false
             property double unit: activity.isQuantityMode ? 1 : 0.1
             property bool buttonsBlocked: false
-            property alias answerBackground: answerBackground
             property alias client: client
         }
 
