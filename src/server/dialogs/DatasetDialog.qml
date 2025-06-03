@@ -91,7 +91,7 @@ Popup {
     }
 
     background: Rectangle {
-        color: Style.colorBackgroundDialog
+        color: Style.selectedPalette.alternateBase
         radius: 5
         border.color: "darkgray"
         border.width: 2

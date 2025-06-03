@@ -5,6 +5,7 @@
  * Authors:
  *   Emmanuel Charruau <echarruau@gmail.com>
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -15,6 +16,7 @@ import "../singletons"
 
 Item {
     id: underlinedTextInput
+    height: Style.textInputHeight
 
     property string defaultText: "Default text, must be set in calling element"
     property alias text: textInput.text
@@ -27,22 +29,30 @@ Item {
     Rectangle {
         id: underlinePupilNameTextInput
         anchors.fill: parent
-        color: readOnlyText ? "transparent" : Style.textInputBackground
-        border.color: "lightgray"
+        color: readOnlyText ? "transparent" : Style.selectedPalette.alternateBase
+        border.color: Style.selectedPalette.accent
         border.width: readOnlyText ? 0 : 1
     }
 
     TextInput {
         id: textInput
-
-        anchors.fill: parent
-        anchors.margins: 3
-        text: defaultText
+        color: Style.selectedPalette.text
+        selectedTextColor: Style.selectedPalette.highlightedText
+        selectionColor: Style.selectedPalette.highlight
+        anchors {
+            fill: parent
+            leftMargin: Style.margins
+            rightMargin: Style.margins
+        }
+        clip: true
+        font.pixelSize: Style.textSize
+        font.bold: true
+        verticalAlignment: TextInput.AlignVCenter
         cursorVisible: false
         echoMode: TextInput.Normal
-        font.pixelSize: Style.defaultPixelSize
         selectByMouse: true
         focus: true
         readOnly: readOnlyText
+        text: defaultText
     }
 }

@@ -115,7 +115,7 @@ Popup {
     }
 
     background: Rectangle {
-        color: Style.colorBackgroundDialog
+        color: Style.selectedPalette.alternateBase
         radius: 5
         border.color: "darkgray"
         border.width: 2
@@ -135,6 +135,7 @@ Popup {
                 bold: true
                 pixelSize: 20
             }
+            color: Style.selectedPalette.text
         }
 
         Text {
@@ -145,12 +146,13 @@ Popup {
             font {
                 pixelSize: 15
             }
+            color: Style.selectedPalette.text
         }
 
         UnderlinedTextInput {
             id: pupilName
             Layout.fillWidth: true
-            Layout.preferredHeight: Style.defaultLineHeight
+            Layout.preferredHeight: Style.lineHeight
             activeFocusOnTab: true
         }
 
@@ -162,6 +164,7 @@ Popup {
             font {
                 pixelSize: 15
             }
+            color: Style.selectedPalette.text
         }
 
         Rectangle {
@@ -169,6 +172,7 @@ Popup {
             Layout.fillWidth: true
             Layout.preferredHeight: 40
             border.width: 1
+            color: Style.selectedPalette.accent
             ListView {
                 id: passwordView
                 anchors.fill: parent
@@ -205,6 +209,7 @@ Popup {
                 Layout.preferredHeight: 40
                 text: qsTr("Password images")
                 font.bold: true
+                color: Style.selectedPalette.text
             }
 
             ListView {
@@ -244,13 +249,14 @@ Popup {
             font {
                 pixelSize: 15
             }
+            color: Style.selectedPalette.text
         }
 
         Rectangle {
             id: groupNamesRectangle
             Layout.fillWidth: true
             Layout.fillHeight: true
-            color: Style.colorBackground
+            color: Style.selectedPalette.base
             border.color: "gray"
             border.width: 1
 
@@ -262,14 +268,9 @@ Popup {
                 boundsBehavior: Flickable.StopAtBounds
                 clip: true
                 model: tmpGroupModel
-                delegate: CheckDelegate {
+                delegate: StyledCheckDelegate {
                     id: groupSelect
                     property int group_Id: group_id
-                    background: Rectangle {
-                        anchors.fill: parent
-                        color: "transparent"
-                        border.color: parent.activeFocus ? "darkgray" : "transparent"
-                    }
                     activeFocusOnTab: true
                     text: group_name
                     width: groupNamesRectangle.width / 2

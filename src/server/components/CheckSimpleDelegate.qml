@@ -14,20 +14,19 @@ import "../singletons"
 
 Control {
     id: checkSimpleDelegate
-    font.pixelSize: Style.defaultPixelSize
+    font.pixelSize: Style.textSize
     hoverEnabled: true
     Rectangle {
         anchors.fill: parent
-        color: checkSimpleDelegate.hovered ? Style.colorHeaderPane : "transparent"
+        color: checkSimpleDelegate.hovered ? Style.selectedPalette.base : "transparent"
     }
-    CheckBox {
+    StyledCheckBox {
         id: checkBox
         anchors.fill: parent
         anchors.leftMargin: 10
         text: eval(nameKey)         // In these cases, eval is safe because no code injection is possible
         checked: eval(checkKey)     // Eval's parameter is an internal column name
         ButtonGroup.group: childGroup
-        indicator.scale: Style.checkerScale
         onClicked: {
             currentChecked = index
             foldModel.setProperty(index, checkKey, checked)

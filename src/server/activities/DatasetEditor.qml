@@ -6,11 +6,12 @@
  *   Emmanuel Charruau <echarruau@gmail.com>
  *   Bruno Anselme <be.root@free.fr>
  *   Johnny Jazeix <jazeix@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 /* This is the main editor page. Load specific activity ActivityEditor.qml if found. */
-import QtQuick 2.12
+import QtQuick
 
 import core 1.0
 import "qrc:/gcompris/src/server/server.js" as Server
@@ -36,7 +37,6 @@ Popup {
     property alias difficulty: cbDifficulty.currentIndex
     property string dataset_Content: ""
     property var currentActivity: null
-    property int currentPage: 0
 
     anchors.centerIn: Overlay.overlay
     width: parent.width
@@ -46,14 +46,14 @@ Popup {
 
     function openDataEditor(activity, selectedDataset) {
         activityIndex = activity
-        currentActivity=  Master.findObjectInModel(Master.allActivitiesModel, function(item) { return item.activity_id === activityIndex })
+        currentActivity = Master.findObjectInModel(Master.allActivitiesModel, function(item) { return item.activity_id === activityIndex })
         if (selectedDataset === undefined) {
             label = qsTr("Create dataset")
             addMode = true
             activity_Name = currentActivity["activity_name"]
             datasetName.text = ""
             dataset_Objective = ""
-            cbDifficulty.currentIndex = cbDifficulty.find(1)
+            cbDifficulty.currentIndex = cbDifficulty.model.indexOf("1")
             // dataset_Content = `import core 1.0\n\nData {\n    objective: ""\n    difficulty: 1\n    data: []\n}`
             dataset_Content = `[]`
         }
@@ -64,7 +64,7 @@ Popup {
             dataset_Id = selectedDataset.dataset_id
             datasetName.text = selectedDataset.dataset_name
             dataset_Objective = selectedDataset.dataset_objective
-            cbDifficulty.currentIndex = cbDifficulty.find(selectedDataset.dataset_difficulty)
+            cbDifficulty.currentIndex = cbDifficulty.model.indexOf(selectedDataset.dataset_difficulty.toString())
             dataset_Content = selectedDataset.dataset_content
         }
         open()
@@ -197,7 +197,7 @@ Popup {
     }
 
     background: Rectangle {
-        color: Style.colorBackgroundDialog
+        color: Style.selectedPalette.alternateBase
         radius: 5
         border.color: "darkgray"
         border.width: 2
@@ -214,6 +214,7 @@ Popup {
         ColumnLayout {
             Text {
                 id: groupDialogText
+                color: Style.selectedPalette.text
                 Layout.preferredWidth: 360
                 Layout.fillHeight: true
                 Layout.topMargin: 10
@@ -233,6 +234,7 @@ Popup {
 
             RowLayout {
                 Text {
+                    color: Style.selectedPalette.text
                     Layout.preferredWidth: 150
                     Layout.preferredHeight: 20
                     text: qsTr("Activity name")
@@ -243,6 +245,7 @@ Popup {
                 }
 
                 Text {
+                    color: Style.selectedPalette.text
                     id: activityName
                     text: currentActivity ? currentActivity.activity_title : ""
                     Layout.fillWidth: true
@@ -253,6 +256,7 @@ Popup {
 
             RowLayout {
                 Text {
+                    color: Style.selectedPalette.text
                     Layout.preferredWidth: 150
                     Layout.preferredHeight: 20
                     text: qsTr("Dataset name")
@@ -272,6 +276,7 @@ Popup {
 
             RowLayout {
                 Text {
+                    color: Style.selectedPalette.text
                     Layout.preferredWidth: 150
                     Layout.preferredHeight: 20
                     text: qsTr("Objective")
@@ -291,6 +296,7 @@ Popup {
 
             RowLayout {
                 Text {
+                    color: Style.selectedPalette.text
                     Layout.preferredWidth: 150
                     Layout.preferredHeight: 25
                     text: qsTr("Difficulty")
@@ -298,7 +304,7 @@ Popup {
                     font.pixelSize: 15
                 }
 
-                ComboBox {
+                StyledComboBox {
                     id: cbDifficulty
                     Layout.fillWidth: true
                     Layout.preferredHeight: 25
@@ -313,28 +319,28 @@ Popup {
     TabBar {
         id: bar
         width: 360
-        background: Rectangle { color: "transparent" }
-        spacing: 3
+        background: Item {}
+        spacing: Style.margins
         anchors.bottom: headLayout.bottom
-        TabButton {
+
+        StyledTabButton {
             text: qsTr("Editor")
-            background: Rectangle { color: Style.colorButton; radius: 5; border.width: (currentPage === 0) ? 2 : 1}
-            onClicked: currentPage = 0
         }
-        TabButton {
+        StyledTabButton {
             text: qsTr("Json")
-            background: Rectangle { color: Style.colorButton; radius: 5; border.width: (currentPage === 1) ? 2 : 1 }
             onClicked: {
-                if (editorLoader.sourceUrl !== "NoEditor.qml")
-                    datasetContent.text = datasetEditor.listModelToJson(editorLoader.item.prototypeStack, editorLoader.item.mainModel)
-                currentPage = 1
+                if(editorLoader.sourceUrl !== "NoEditor.qml") {
+                    datasetContent.text =
+                        datasetEditor.listModelToJson(editorLoader.item.prototypeStack,
+                                                      editorLoader.item.mainModel);
+                }
             }
         }
     }
 
 
     StackLayout {
-        currentIndex: currentPage
+        currentIndex: bar.currentIndex
         anchors.top: headLayout.bottom
         anchors.left: parent.left
         anchors.right: parent.right
@@ -348,7 +354,7 @@ Popup {
             Layout.fillHeight: true
             onSourceUrlChanged: {
                 setSource(sourceUrl)
-                currentPage = (sourceUrl !== "NoEditor.qml") ? 0 : 1
+                bar.currentIndex = (sourceUrl !== "NoEditor.qml") ? 0 : 1
             }
             property string textActivityData_: dataset_Content
         }

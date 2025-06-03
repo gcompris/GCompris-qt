@@ -63,7 +63,7 @@ Popup {
     }
 
     background: Rectangle {
-        color: Style.colorBackgroundDialog
+        color: Style.selectedPalette.alternateBase
         radius: 5
         border.color: "darkgray"
         border.width: 2
@@ -79,12 +79,13 @@ Popup {
             Layout.preferredHeight: 90
             horizontalAlignment: Text.AlignHCenter
             wrapMode: Text.WordWrap
-            text: pupilsToGroupsDialog.addMode ? qsTr("Do you want to add these children to the following groups?")
-                           : qsTr("Are you sure you want to remove these children from the following groups?")
+            text: pupilsToGroupsDialog.addMode ? qsTr("Do you want to add these pupils to the following groups?")
+                           : qsTr("Are you sure you want to remove these pupils from the following groups?")
             font {
                 bold: true
                 pixelSize: 20
             }
+            color: Style.selectedPalette.text
         }
 
         Rectangle {
@@ -93,6 +94,7 @@ Popup {
             Layout.preferredHeight: 200
             border.color: "gray"
             border.width: 1
+            color: Style.selectedPalette.base
 
             GridView {
                 anchors.fill: parent
@@ -107,6 +109,7 @@ Popup {
                     Text {
                         text: user_name
                         anchors.horizontalCenter: parent.horizontalCenter
+                        color: Style.selectedPalette.text
                     }
                 }
             }
@@ -116,7 +119,7 @@ Popup {
             id: groupNamesRectangle
             Layout.fillWidth: true
             Layout.fillHeight: true
-            color: Style.colorBackground
+            color: Style.selectedPalette.base
             border.color: "gray"
             border.width: 1
 
@@ -133,14 +136,9 @@ Popup {
                 clip: true
                 model: tmpGroupModel
 
-                delegate: CheckDelegate {
+                delegate: StyledCheckDelegate {
                     id: groupSelect
                     property int group_Id: group_id
-                    background: Rectangle {
-                        anchors.fill: parent
-                        color: "transparent"
-                        border.color: parent.activeFocus ? "darkgray" : "transparent"
-                    }
                     text: group_name
                     checked: group_checked
                     onCheckedChanged: tmpGroupModel.setProperty(index, "group_checked", checked)

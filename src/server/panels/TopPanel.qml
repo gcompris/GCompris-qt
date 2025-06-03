@@ -10,6 +10,7 @@
 import QtQuick 2.12
 
 import "../singletons"
+import "../components"
 
 Item {
 
@@ -20,21 +21,23 @@ Item {
         left: (serverSettings.navigationPanelRight) ? parent.left : navigationBar.right
         right: (serverSettings.navigationPanelRight) ? navigationBar.left : parent.right
     }
-    height: Style.heightTopPanel
+    height: Style.bigControlSize
 
     Rectangle {
         anchors.fill: parent
-        color: Style.colorNavigationBarBackground
+        color: Style.selectedPalette.alternateBase
 
-        Text {
-            id: topBannerTitleText
-            anchors.fill: parent
-            leftPadding: 20
-            font.pixelSize: Style.pixelSizeTopPanelText
-
-            color: Style.colorNavigationBarFont
+        DefaultLabel {
+            anchors {
+                left: parent.left
+                right: parent.right
+                margins: Style.margins
+                verticalCenter: parent.verticalCenter
+            }
+            height: Style.bigTextSize
+            color: Style.selectedPalette.text
+            font.bold: true
             text: topBanner.text
-            verticalAlignment: Text.AlignVCenter
         }
     }
 }

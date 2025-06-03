@@ -10,6 +10,8 @@
 import QtQuick 2.15
 import QtQuick.Controls.Basic
 
+import "../singletons"
+
 Button {
     id: smallButton
     text: qsTr("Button")
@@ -24,14 +26,15 @@ Button {
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         elide: Text.ElideRight
+        color: Style.selectedPalette.text
     }
 
     background: Rectangle {
         anchors.fill: parent
         anchors.margins: 2
         opacity: enabled ? 1 : 0.3
-        color: smallButton.checked ? "gainsboro" : "whitesmoke"
-        border.color: smallButton.hovered ? "lightskyblue" : "gray"
+        color: smallButton.checked ? Style.selectedPalette.highlight: Style.selectedPalette.base
+        border.color: smallButton.hovered ? Style.selectedPalette.highlight : Style.selectedPalette.accent
         border.width: 1
         radius: 2
     }
