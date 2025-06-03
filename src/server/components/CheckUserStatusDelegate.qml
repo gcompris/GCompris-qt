@@ -14,19 +14,18 @@ import "../singletons"
 
 Control {
     id: checkUserStatusDelegate
-    font.pixelSize: Style.defaultPixelSize
+    font.pixelSize: Style.textSize
     hoverEnabled: true
     Rectangle {
         anchors.fill: parent
-        color: checkUserStatusDelegate.hovered ? Style.colorHeaderPane : "transparent"
+        color: checkUserStatusDelegate.hovered ? Style.selectedPalette.base : "transparent"
     }
-    CheckBox {
+    StyledCheckBox {
         anchors.fill: parent
         anchors.leftMargin: 10
         text: user_name
         checked: user_checked
         ButtonGroup.group: childGroup
-        indicator.scale: Style.checkerScale
         onClicked: {
             foldModel.setProperty(index, checkKey, checked)
             selectionClicked(foldModel.get(index)[indexKey], checked)
@@ -44,6 +43,7 @@ Control {
         text: user_received ? user_received : ""
         verticalAlignment: Text.AlignVCenter
         horizontalAlignment: Text.AlignRight
+        color: Style.selectedPalette.text
     }
 
     Rectangle {

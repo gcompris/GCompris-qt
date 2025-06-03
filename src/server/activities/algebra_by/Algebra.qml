@@ -22,6 +22,7 @@ Item {
             width: 100
             horizontalAlignment: Text.AlignHCenter
             font.pixelSize: 20
+            color: Style.selectedPalette.text
         }
         Text {
             text: "="
@@ -29,6 +30,7 @@ Item {
             width: 20
             horizontalAlignment: Text.AlignHCenter
             font.pixelSize: 20
+            color: Style.selectedPalette.text
         }
         Text {
             text: lineItem.jsonData.result
@@ -36,6 +38,7 @@ Item {
             width: 50
             horizontalAlignment: Text.AlignHCenter
             font.pixelSize: 20
+            color: Style.selectedPalette.text
         }
         Text {
             text: lineItem.proposal
@@ -44,6 +47,7 @@ Item {
             color: (Number(lineItem.proposal) === Number(lineItem.jsonData.result)) ? "green" : "red"
             horizontalAlignment: Text.AlignHCenter
             font.pixelSize: 20
+            color: Style.selectedPalette.text
         }
     }
 }
