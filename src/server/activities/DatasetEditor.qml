@@ -12,7 +12,7 @@
 /* This is the main editor page. Load specific activity ActivityEditor.qml if found. */
 import QtQuick 2.12
 
-import GCompris 1.0
+import core 1.0
 import "qrc:/gcompris/src/server/server.js" as Server
 import QtQuick.Controls.Basic
 import QtQuick.Layouts
@@ -54,7 +54,7 @@ Popup {
             datasetName.text = ""
             dataset_Objective = ""
             cbDifficulty.currentIndex = cbDifficulty.find(1)
-            // dataset_Content = `import GCompris 1.0\n\nData {\n    objective: ""\n    difficulty: 1\n    data: []\n}`
+            // dataset_Content = `import core 1.0\n\nData {\n    objective: ""\n    difficulty: 1\n    data: []\n}`
             dataset_Content = `[]`
         }
         else {
