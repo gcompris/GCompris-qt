@@ -8,9 +8,9 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import QtQuick 2.12
+import QtQuick
 import QtQuick.Controls.Basic
-import QtQuick.Layouts 1.12
+import QtQuick.Layouts
 
 import "../singletons"
 import "../components"
