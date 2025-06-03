@@ -15,7 +15,7 @@
  * FIXME: how to include this file in kgenapidox's output?
  */
 .pragma library
-.import QtQml 2.12 as Qml
+.import QtQml as Qml
 .import core 1.0 as GCompris
 
 var aboutToQuit = false;

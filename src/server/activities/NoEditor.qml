@@ -9,10 +9,10 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import QtQuick 2.12
+import QtQuick
 import "qrc:/gcompris/src/server/server.js" as Server
 import QtQuick.Controls.Basic
-import QtQuick.Layouts 1.2
+import QtQuick.Layouts
 
 import "../singletons"
 import "../components"

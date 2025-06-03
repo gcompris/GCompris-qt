@@ -8,9 +8,9 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 // pragma ComponentBehavior: Bound
-import QtQuick 2.12
+import QtQuick
 import QtQuick.Controls.Basic
-import QtQuick.Layouts 1.15
+import QtQuick.Layouts
 
 import core 1.0
 
