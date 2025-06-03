@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
 #endif
 
     GComprisPlugin plugin;
-    plugin.registerTypes("GCompris");
+    plugin.registerTypes("core");
     ActivityInfoTree::registerResources();
 
     //    if (!QResource::registerResource(ApplicationInfo::getFilePath("core.rcc")))
@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
 
     qmlRegisterUncreatableMetaObject(
         netconst::staticMetaObject, // meta object created by Q_NAMESPACE macro
-        "GCompris", // import statement (can be any string)
+        "core", // import statement (can be any string)
         1, 0, // major and minor version of the import
         "NetConst", // name in QML (does not have to match C++ name)
         "Error: only enums" // error in case someone tries to create a MyNamespace object

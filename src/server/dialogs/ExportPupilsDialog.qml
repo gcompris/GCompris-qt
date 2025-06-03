@@ -12,7 +12,7 @@ import QtQuick.Controls.Basic
 import QtQuick.Layouts 1.12
 import QtCore // For StandardPaths
 import QtQuick.Dialogs // For FileDialog
-import GCompris 1.0
+import core 1.0
 
 import "../components"
 import "../singletons"

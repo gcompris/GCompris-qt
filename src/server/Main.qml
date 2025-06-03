@@ -14,7 +14,7 @@ import QtQml
 import QtQuick.Layouts
 import QtCore // For Settings and StandardPaths
 
-import GCompris 1.0
+import core 1.0
 import "qrc:/gcompris/src/server/server.js" as Server
 
 import "dialogs"
