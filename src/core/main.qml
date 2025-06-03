@@ -505,7 +505,7 @@ Window {
             requestAlreadyInProgress = true;
             connection.requestDeviceId = requestDeviceId;
             connection.serverIp = serverIp;
-            var dialog = Core.showMessageDialog(main,
+            var dialog = Core.showMessageDialog(pageView.currentItem,
                     qsTr("Do you want to connect to server %1?").arg(connection.requestDeviceId),
                     qsTr("Yes"), function() {
                         clientNetworkMessages.connectToServer(connection.serverIp)
@@ -520,8 +520,9 @@ Window {
         }
         function onLoginListReceived(logins) {
             chooseLogin.model = logins;
-            chooseLogin.visible = true
-            chooseLogin.start()
+            chooseLogin.parent = pageView.currentItem;
+            chooseLogin.visible = true;
+            chooseLogin.start();
         }
         function onPasswordRejected() {
             Core.showMessageDialog(main,
@@ -530,44 +531,57 @@ Window {
         }
     }
 
-    GCInputDialog {
+    GCDialog {
         id: chooseLogin
         visible: false
         active: visible
         focus: false
-        anchors.fill: parent
+        width: visible ? parent.width : 0
+        height: visible ? parent.height : 0
 
-        message: qsTr("Select your login")
-        onClose: chooseLogin.visible = false;
+        isDestructible: false
+        closeDialogOnClick: false
+
+        title: qsTr("Select your login")
+
+        property bool okPressed: false
 
         button1Text: qsTr("OK")
         button2Text: qsTr("Cancel")
         onButton1Hit: {
             if(chooseLogin.chosenLogin == "") {
-                closeDialogOnClick = false;
                 Core.showMessageDialog(
                     chooseLogin,
                     qsTr("Please select a login in the list or cancel."),
                     "", null,
                     "", null);
+                chooseLogin.alreadyClicked = false;
             }
             else {
-                closeDialogOnClick = true;
-                choosePassword.visible = true;
-                choosePassword.start();
+                chooseLogin.okPressed = true;
+                chooseLogin.stop();
             }
         }
         onButton2Hit: {
-            // We need to reset it in case it was changed before by selecting no login
-            closeDialogOnClick = true;
+            chooseLogin.stop();
+        }
+
+        onDeferredAction: {
+            chooseLogin.visible = false;
+            chooseLogin.parent = main.contentItem;
+            chooseLogin.alreadyClicked = false;
+            if(chooseLogin.okPressed) {
+                chooseLogin.okPressed = false;
+                choosePassword.parent = pageView.currentItem;
+                choosePassword.visible = true;
+                choosePassword.start();
+            }
         }
 
         property string chosenLogin
         property var model
         content: ListView {
             id: view
-            width: chooseLogin.width
-            height: 200 * ApplicationInfo.ratio
             contentHeight: 60 * ApplicationInfo.ratio * model.count
             interactive: true
             clip: true
@@ -595,20 +609,17 @@ Window {
             }
         }
     }
-    GCInputDialog {
+    GCDialog {
         id: choosePassword
         visible: false
         active: visible
         focus: false
-        anchors.fill: parent
-        message: qsTr("Enter your password")
+        width: visible ? parent.width : 0
+        height: visible ? parent.height : 0
+        isDestructible: false
+        closeDialogOnClick: false
 
-        onClose: {
-            // Reinitialise info once we have logged
-            passModel.clear()
-            chooseLogin.chosenLogin = ""
-            choosePassword.visible = false;
-        }
+        title: qsTr("Enter your password")
 
         button1Text: qsTr("OK")
         button2Text: qsTr("Cancel")
@@ -620,18 +631,35 @@ Window {
             console.warn("selected user name:", chooseLogin.chosenLogin)
             console.warn("selected password:", chosenPassword)
             clientNetworkMessages.sendLoginMessage(chooseLogin.chosenLogin, chosenPassword)
+            choosePassword.stop()
+        }
+        onButton2Hit: {
+            choosePassword.stop();
+        }
+
+        onDeferredAction: {
+            choosePassword.visible = false;
+            choosePassword.parent = main.contentItem;
+            choosePassword.alreadyClicked = false;
+            // Reinitialise info once we have logged
+            passModel.clear();
+            chooseLogin.chosenLogin = "";
         }
 
         ListModel { id: imagesModel }
         ListModel { id: passModel }
         content: Column {
-            spacing: 50
+            id: passwordSelector
+            spacing: GCStyle.baseMargins
+            readonly property int imageSize: Math.min(GCStyle.bigButtonHeight,
+                                        width / imagesModel.count - GCStyle.halfMargins,
+                                        height * 0.5 - GCStyle.baseMargins)
             ListView {
                 id: passwordChoice
-                width: choosePassword.width - 60
-                height: 70 * ApplicationInfo.ratio
+                width: parent.width
+                height: passwordSelector.imageSize
                 contentHeight: height
-                spacing: 20
+                spacing: GCStyle.halfMargins
                 anchors.horizontalCenter: parent.horizontalCenter
                 orientation: ListView.Horizontal
 
@@ -640,8 +668,7 @@ Window {
                 model: Core.shuffle(imagesModel)
                 delegate: Image {
                     source: "qrc:/gcompris/src/activities/algorithm/resource/" + icon_ + ".svg"
-                    sourceSize.width: passwordChoice.width / model.count
-                    sourceSize.height: sourceSize.width
+                    sourceSize.width: passwordSelector.imageSize
 
                     MouseArea {
                         anchors.fill: parent
@@ -654,10 +681,10 @@ Window {
             }
             ListView {
                 id: passwordView
-                width: (choosePassword.width / 2) - 60
-                height: 70 * ApplicationInfo.ratio
+                width: parent.width
+                height: passwordSelector.imageSize
                 contentHeight: height
-                spacing: 20
+                spacing: GCStyle.halfMargins
                 anchors.horizontalCenter: parent.horizontalCenter
                 orientation: ListView.Horizontal
 
@@ -666,8 +693,7 @@ Window {
                 model: passModel
                 delegate: Image {
                     source: "qrc:/gcompris/src/activities/algorithm/resource/" + icon_ + ".svg"
-                    sourceSize.width: passwordView.width / model.count
-                    sourceSize.height: sourceSize.width
+                    sourceSize.width: passwordSelector.imageSize
 
                     MouseArea {
                         anchors.fill: parent

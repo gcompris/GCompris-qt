@@ -41,6 +41,12 @@ Rectangle {
 
     /**
      * type:string
+     * Optional title, when intructionTxt is empty and only the
+     */
+    property alias title: title.text
+
+    /**
+     * type:string
      * Label of the first button.
      */
     property alias button1Text: button1.text
@@ -104,6 +110,15 @@ Rectangle {
      */
     property Component content
 
+    /**
+     * By default, we should close the dialog whenever a choice has been made.
+     * In some cases (an error), we don't want to close it so we let the choice.
+     */
+    property bool closeDialogOnClick: true
+
+    property alias active: extraLoader.active
+    property alias loader: extraLoader
+
     focus: true
     opacity: 0
 
@@ -121,7 +136,9 @@ Rectangle {
     onStart: {
         opacity = 1;
         gcdialog.forceActiveFocus();
-        parent.Keys.enabled = false;
+        if(parent) {
+            parent.Keys.enabled = false;
+        }
         alreadyClicked = false;
     }
     onStop: {
@@ -143,6 +160,36 @@ Rectangle {
     MultiPointTouchArea {
         // Just to catch mouse events
         anchors.fill: parent
+        enabled: gcdialog.visible
+    }
+
+    /* Optional title, used when instructionTxt is empty and only the extraLoader is used */
+
+    Rectangle {
+        id: titleArea
+        anchors {
+            top: buttonCancel.top
+            bottom: buttonCancel.bottom
+            left: parent.left
+            leftMargin: GCStyle.baseMargins
+            right: buttonCancel.left
+            rightMargin: GCStyle.baseMargins
+        }
+        radius: GCStyle.halfMargins
+        border.width: GCStyle.thinBorder
+        border.color: GCStyle.whiteBorder
+        color: GCStyle.lightBg
+        visible: title.text != ""
+
+        GCText {
+            id: title
+            anchors.fill: parent
+            anchors.margins: GCStyle.baseMargins
+            fontSize: regularSize
+            text: ""
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+        }
     }
 
     /* Message */
@@ -183,6 +230,7 @@ Rectangle {
                     anchors.horizontalCenter: parent.horizontalCenter
                     // need to remove the anchors (left and right) else sometimes text is hidden on the side
                     width: instructionFlick.width
+                    height: textIn === "" ? 0 : implicitHeight
                     wrapMode: TextEdit.WordWrap
                     textFormat: TextEdit.RichText
                     text: instructionStyle + "<body>" + textIn + "</body>"
@@ -192,7 +240,8 @@ Rectangle {
                 Loader {
                     id: extraLoader
                     anchors.top: instructionTxt.bottom
-                    anchors.topMargin: GCStyle.halfMargins
+                    anchors.margins: GCStyle.halfMargins
+                    height: instructionFlick.height - instructionTxt.height - GCStyle.halfMargins
                     active: gcdialog.content != null
                     sourceComponent: gcdialog.content
                     width: instructionFlick.width
@@ -225,12 +274,13 @@ Rectangle {
             }
             theme: "highContrast"
             visible: text != ""
-            property bool selected: true;
             enabled: !gcdialog.alreadyClicked
             onClicked: {
                 gcdialog.alreadyClicked = true;
                 gcdialog.button1Hit()
-                gcdialog.stop()
+                if(closeDialogOnClick) {
+                    gcdialog.stop();
+                }
             }
         }
 
@@ -249,7 +299,9 @@ Rectangle {
             onClicked: {
                 gcdialog.alreadyClicked = true;
                 gcdialog.button2Hit()
-                gcdialog.stop()
+                if(closeDialogOnClick) {
+                    gcdialog.stop();
+                }
             }
         }
     }
