@@ -6,7 +6,7 @@
  */
 
 .pragma library
-.import QtQuick 2.12 as Quick
+.import QtQuick as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/colors/resource/"

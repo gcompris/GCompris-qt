@@ -9,7 +9,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 pragma ComponentBehavior: Bound
-import QtQuick 2.15
+import QtQuick
 import core 1.0
 
 import "../../core"

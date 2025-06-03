@@ -10,7 +10,7 @@
  */
 pragma ComponentBehavior: Bound
 
-import QtQuick 2.12
+import QtQuick
 
 import "../../core"
 import "graph-coloring.js" as Activity

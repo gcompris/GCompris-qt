@@ -5,7 +5,7 @@
  */
 pragma ComponentBehavior: Bound
 
-import QtQuick 2.12
+import QtQuick
 import core 1.0
 
 import "../../core"

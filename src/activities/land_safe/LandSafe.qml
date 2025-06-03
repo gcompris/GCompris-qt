@@ -10,9 +10,9 @@
  */
 pragma ComponentBehavior: Bound
 
-import QtQuick 2.12
+import QtQuick
 import Box2D 2.0
-import QtQuick.Particles 2.12
+import QtQuick.Particles
 import core 1.0
 
 import "../../core"

@@ -8,8 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import QtQuick 2.12
-import QtQuick.Particles 2.12
+import QtQuick
+import QtQuick.Particles
 import Box2D 2.0
 import core 1.0
 

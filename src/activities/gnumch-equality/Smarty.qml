@@ -8,7 +8,7 @@
 *
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
-import QtQuick 2.12
+import QtQuick
 
 // Smarty is smart enough to follow the muncher. So he will go after him.
 Monster {

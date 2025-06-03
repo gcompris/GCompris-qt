@@ -5,7 +5,7 @@
  *
  */
 .pragma library
-.import QtQuick 2.12 as Quick
+.import QtQuick as Quick
 
 var items;
 var duckImages = ["pink_duck", "green_duck", "yellow_duck", "orange_duck"];

@@ -6,7 +6,7 @@
  *
  */
 .pragma library
-.import QtQuick 2.12 as Quick
+.import QtQuick as Quick
 .import "../../core/core.js" as Core
 
 var items;

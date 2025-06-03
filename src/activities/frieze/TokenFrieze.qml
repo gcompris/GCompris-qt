@@ -6,7 +6,7 @@
  * References : https://del-en-maternelle.fr/les-domaines/maths/les-algorithmes/
  *              https://irem.univ-nantes.fr/wp-content/uploads/2019/12/Algorithmes.pdf
  */
-import QtQuick 2.12
+import QtQuick
 import core 1.0
 
 import "qrc:/gcompris/src/core/core.js" as Core

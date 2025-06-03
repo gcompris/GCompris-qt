@@ -10,8 +10,8 @@
  */
 pragma ComponentBehavior: Bound
 
-import QtQuick 2.12
-import QtQuick.Shapes 1.5
+import QtQuick
+import QtQuick.Shapes
 import core 1.0
 
 import "../../core"

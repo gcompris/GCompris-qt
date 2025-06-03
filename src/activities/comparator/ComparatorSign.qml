@@ -7,7 +7,7 @@
 *   Timothée Giet <animtim@gmail.com>
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
-import QtQuick 2.12
+import QtQuick
 
 import "../../core"
 

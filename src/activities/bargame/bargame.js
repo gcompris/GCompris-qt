@@ -10,7 +10,7 @@
  */
 .pragma library
 .import core 1.0 as GCompris
-.import QtQuick 2.12 as Quick
+.import QtQuick as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var levelsProperties = [

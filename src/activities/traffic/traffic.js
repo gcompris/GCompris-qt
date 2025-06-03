@@ -10,8 +10,8 @@
  */
 
 .pragma library
-.import QtQuick 2.12 as Quick
-.import QtQml 2.12 as Qml
+.import QtQuick as Quick
+.import QtQml as Qml
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 /* The format and the dataset for the traffic game in gcompris

@@ -11,7 +11,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import QtQuick 2.15
+import QtQuick
 import "../../core"
 import "../../core/core.js" as Core
 import core 1.0

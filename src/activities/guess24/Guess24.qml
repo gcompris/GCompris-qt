@@ -13,7 +13,7 @@
  *  https://www.4nums.com/solutions/allsolvables/   (2023-07-08 datas)
  *  https://fr.y8.com/games/make_24
  */
-import QtQuick 2.12
+import QtQuick
 import core 1.0
 
 import "../../core"

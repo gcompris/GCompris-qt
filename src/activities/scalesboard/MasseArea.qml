@@ -9,7 +9,7 @@
  */
 pragma ComponentBehavior: Bound
 
-import QtQuick 2.12
+import QtQuick
 import QtQuick.Effects
 
 import "../../core"

@@ -5,8 +5,8 @@
  * SPDX-FileCopyrightText: 2024 Harsh Kumar <hadron43@yahoo.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import QtQuick 2.12
-import QtQml.Models 2.12
+import QtQuick
+import QtQml.Models
 
 import core 1.0
 import "../../core"
