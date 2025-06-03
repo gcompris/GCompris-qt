@@ -10,7 +10,7 @@
 import QtQuick 2.12
 import QtQuick.Controls.Basic
 
-import GCompris 1.0
+import core 1.0
 import "../singletons"
 import "../panels"
 import "../activities"

@@ -12,7 +12,7 @@ import QtQuick 2.15
 import QtQuick.Controls.Basic
 import QtQuick.Layouts 1.12
 
-import GCompris 1.0
+import core 1.0
 
 import "../singletons"
 import "../components"
