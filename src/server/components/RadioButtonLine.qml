@@ -29,8 +29,8 @@ Row {
         verticalAlignment: Text.AlignBottom
         text: radioButtonLine.label
         font.bold: true
-        font.pixelSize: Style.defaultPixelSize
-        color: enabled ? "black" : "gray"
+        font.pixelSize: Style.textSize
+        color: enabled ? Style.selectedPalette.text : "gray"
     }
 
     ButtonGroup {
@@ -40,13 +40,13 @@ Row {
 
     Repeater {
         model: radioButtonLine.radios
-        RadioButton {
+        StyledRadioButton {
+            id: aButton
             height: parent.height
             ButtonGroup.group: childGroup
             text: modelData
             checked: index === radioButtonLine.current
-            indicator.scale: Style.checkerScale
-            font.pixelSize: Style.defaultPixelSize
+            font.pixelSize: Style.textSize
             onClicked: radioButtonLine.radioCheckChanged(radioButtonLine.current = index)
         }
     }

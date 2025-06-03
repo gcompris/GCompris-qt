@@ -15,62 +15,54 @@ Item {
     id: navigationButton
     property alias iconCharacter: textIcon.text
     property alias description: textDescription.text
-    property color hoverColour: Style.colorHover
     property bool selected: false
 
     signal navigationButtonClicked()
 
+    height: Style.bigControlSize
     width: parent.width
-    height: Style.heightNavigationButton
 
     Rectangle {
         id: background
         anchors.fill: parent
-        color: enabled ? navigationButton.selected ? Style.colorBackground : Style.colorNavigationBarBackground : Style.colorNavigationBarBackgroundDisabled
+        color: navigationButton.selected ? Style.selectedPalette.highlight :
+            (mouseArea.containsMouse ? Style.selectedPalette.accent : Style.selectedPalette.alternateBase)
 
         Row {
+            opacity: enabled ? 1 : 0.5
             Text {
                 id: textIcon
-                width: Style.widthNavigationButtonIcon
-                height: Style.heightNavigationButtonIcon
-                font.pixelSize: Style.pixelSizeNavigationBarIcon
-
-                color: Style.colorNavigationBarFont
+                width: Style.bigControlSize
+                height: Style.bigControlSize
+                font.pixelSize: height * 0.5
+                color: navigationButton.selected || mouseArea.containsMouse ?
+                    Style.selectedPalette.highlightedText :
+                    Style.selectedPalette.text
                 text: "\uf11a"
                 verticalAlignment: Text.AlignVCenter
                 horizontalAlignment: Text.AlignHCenter
             }
-            Text {
+
+            DefaultLabel {
                 id: textDescription
-                width: Style.widthNavigationButtonDescription
-                height: Style.heightNavigationButtonDescription
-                color: Style.colorNavigationBarFont
+                width: background.width - Style.bigControlSize
+                height: Style.bigControlSize
+                horizontalAlignment: Text.AlignLeft
+                color: textIcon.color
+                font.pixelSize: Style.textSize
+                fontSizeMode: Text.FixedSize
                 text: "SET ME!!"
-                verticalAlignment: Text.AlignVCenter
-                font.pixelSize: Style.pixelSizeNavigationBarText
             }
         }
 
         MouseArea {
+            id: mouseArea
             anchors.fill: parent
             cursorShape: Qt.PointingHandCursor
             hoverEnabled: true
-            onEntered: if (!navigationButton.selected) background.state = "hover"
-            onExited: background.state = ""
             onClicked: {
-                background.state = ""
                 navigationButton.navigationButtonClicked()
             }
         }
-
-        states: [
-            State {
-                name: "hover"
-                PropertyChanges {
-                    target: background
-                    color: hoverColour
-                }
-            }
-        ]
     }
 }

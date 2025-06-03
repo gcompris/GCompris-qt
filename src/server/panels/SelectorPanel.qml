@@ -36,7 +36,7 @@ ColumnLayout {
     CalendarPane {
         id: calendarPane
         activated: selectorPanel.withCalendar
-        Layout.minimumHeight: Style.defaultLineHeight
+        Layout.minimumHeight: Style.lineHeight
         Layout.preferredHeight: monthHeight
         Layout.maximumHeight: collapseButton.checked ?  monthHeight : lineHeight
         Layout.fillWidth: true
@@ -51,8 +51,8 @@ ColumnLayout {
         handle: Rectangle {
             implicitWidth: 4
             implicitHeight: 6
-            color: SplitHandle.pressed ? "darksalmon"
-                : (SplitHandle.hovered ? Qt.lighter("goldenrod", 1.1) : "goldenrod")
+            color: SplitHandle.pressed ? Style.selectedPalette.highlight :
+                                        Style.selectedPalette.accent
         }
 
         FoldDownRadio {

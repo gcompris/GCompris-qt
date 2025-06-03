@@ -72,7 +72,7 @@ Popup {
     }
 
     background: Rectangle {
-        color: Style.colorBackgroundDialog
+        color: Style.selectedPalette.alternateBase
         radius: 5
         border.color: "darkgray"
         border.width: 2
@@ -92,6 +92,7 @@ Popup {
             font {
                 pixelSize: 20
             }
+            color: Style.selectedPalette.text
         }
 
         Text {
@@ -100,12 +101,13 @@ Popup {
             text: qsTr("Name")
             font.bold: true
             font.pixelSize: 15
+            color: Style.selectedPalette.text
         }
 
         UnderlinedTextInput {
             id: groupNameInput
             Layout.fillWidth: true
-            Layout.preferredHeight: Style.defaultLineHeight
+            Layout.preferredHeight: Style.lineHeight
             activeFocusOnTab: true
             readOnlyText: groupDialog.textInputReadOnly
         }
@@ -116,12 +118,13 @@ Popup {
             text: qsTr("Description")
             font.bold: true
             font.pixelSize: 15
+            color: Style.selectedPalette.text
         }
 
         UnderlinedTextInput {
             id: groupDescriptionInput
             Layout.fillWidth: true
-            Layout.preferredHeight: Style.defaultLineHeight
+            Layout.preferredHeight: Style.lineHeight
             activeFocusOnTab: true
             readOnlyText: groupDialog.textInputReadOnly
         }

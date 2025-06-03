@@ -5,6 +5,7 @@
  * Authors:
  *   Emmanuel Charruau <echarruau@gmail.com>
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -58,55 +59,46 @@ Item {
 
     Rectangle {
         anchors.fill: parent
-        color: Style.colorBackground
+        color: Style.selectedPalette.base
+
+        Item {
+            id: logoContainer
+            anchors {
+                top: parent.top
+                left: parent.left
+                right: parent.right
+            }
+            height: Math.max(parent.height * 0.33, logoImage.height + Style.hugeMargins * 2)
+            Image {
+                id: logoImage
+                source: 'qrc:/gcompris/src/server/resource/gcompris-logo-full.svg'
+                height: 180
+                sourceSize.height: height
+                anchors.centerIn: parent
+            }
+        }
+
         ColumnLayout {
-            anchors.centerIn: parent
-            width: 350
-            spacing: 10
-            Text {
-                Layout.preferredHeight: 40
-                Layout.fillWidth: true
-                text: qsTr("GCompris Teachers Tool")
-                horizontalAlignment: Text.AlignHCenter
-                font.bold: true
-                font {
-                    pixelSize: 25
-                }
-            }
+            id: loginColumn
+            Layout.alignment: Qt.AlignTop
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: logoContainer.bottom
+            width: parent.width
+            spacing: Style.margins
 
-            RowLayout {
-                Layout.fillWidth: true
-                Layout.preferredHeight: 200
-                Image {
-                    source: 'qrc:/gcompris/src/server/resource/gcompris-icon.png'
-                    Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft
-                }
-                Rectangle {
-                    Layout.fillWidth: true
-                    Layout.fillHeight: true
-                    color: "transparent"
-                }
-                Image {
-                    source: 'qrc:/gcompris/src/server/resource/aboutkde.png'
-                    Layout.alignment: Qt.AlignVCenter | Qt.AlignRight
-                }
-            }
-
-            Text {
+            DefaultLabel {
                 id: loginLabel
-                Layout.preferredHeight: 20
+                Layout.preferredHeight: Style.mediumTextSize
                 Layout.fillWidth: true
-                text: qsTr("Teacher login")
+                height: Style.mediumTextSize
                 font.bold: true
-                font {
-                    pixelSize: 15
-                }
+                text: qsTr("Teacher login")
             }
 
             UnderlinedTextInput {
                 id: login
-                Layout.preferredHeight: Style.defaultLineHeight
-                Layout.fillWidth: true
+                Layout.alignment: Qt.AlignHCenter
+                Layout.preferredWidth: 320
                 activeFocusOnTab: true
                 focus: true
                 defaultText: serverSettings.lastLogin
@@ -116,28 +108,27 @@ Item {
                 }
             }
 
-            Text {
+            DefaultLabel {
                 id: passwordLabel
-                Layout.preferredHeight: 20
+                Layout.preferredHeight: Style.mediumTextSize
                 Layout.fillWidth: true
-                text: qsTr("Password")
+                height: Style.mediumTextSize
                 font.bold: true
-                font {
-                    pixelSize: 15
-                }
+                text: qsTr("Password")
             }
 
             UnderlinedTextInput {
                 id: password
-                Layout.preferredHeight: Style.defaultLineHeight
-                Layout.fillWidth: true
+                Layout.alignment: Qt.AlignHCenter
+                Layout.preferredWidth: 320
                 activeFocusOnTab: true
                 echoMode: TextInput.Password
-                defaultText: serverSettings.lastLogin
+                defaultText: serverSettings.lastLogin // TODO: set empty default text...
             }
 
             RowLayout {
-                Layout.fillWidth: true
+                Layout.alignment: Qt.AlignHCenter
+                Layout.preferredWidth: 320
                 ViewButton {
                     id: connectTeacherButton
                     activeFocusOnTab: true
@@ -157,21 +148,23 @@ Item {
                 }
             }
 
-            Text {
+            DefaultLabel {
                 id: message
-                Layout.preferredHeight: 30
                 Layout.fillWidth: true
+                Layout.preferredHeight: Style.textSize
+                height: Style.textSize
+                font.bold: true
                 text: ""
-                color: "transparent"
-                horizontalAlignment: Text.AlignHCenter
-                font.pixelSize: 14
             }
 
-            Text {
+            DefaultLabel {
                 id: databaseFileValue
-                Layout.preferredHeight: 16
+                Layout.alignment: Qt.AlignHCenter
                 Layout.fillWidth: true
-                opacity: 0.3
+                Layout.preferredHeight: Style.textSize
+                height: Style.textSize
+                font.bold: true
+                opacity: 0.5
                 text: qsTr("Database file:") + " " + userDataPath + "/"+ databaseFile
             }
         }
@@ -185,7 +178,7 @@ Item {
     }
 
     Component.onCompleted: {
-        topBanner.text = qsTr("GCompris Teachers Tool - Login")
+        topBanner.text = qsTr("GCompris Teachers Tool")
         login.forceActiveFocus();
     }
 }

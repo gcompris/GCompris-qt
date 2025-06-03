@@ -1,0 +1,168 @@
+/* GCompris - StyledComboBox.qml
+ *
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
+ *
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
+pragma ComponentBehavior: Bound
+
+import QtQuick
+import QtQuick.Controls.Basic
+import "../singletons"
+
+AbstractButton {
+    id: button
+    height: Style.controlSize
+    text: model[currentIndex]
+    opacity: enabled ? 1 : 0.3
+
+    readonly property Item rootItem: Window.contentItem
+    property int maxHeight: Window.height - Style.bigMargins
+    property list<string> model: []
+    property alias currentIndex: menuList.currentIndex
+
+    Keys.onPressed: (event) => {
+        if(event.key == Qt.Key_Enter || event.key == Qt.Key_Return || event.key == Qt.Key_Space) {
+            button.checked = true;
+        }
+    }
+
+    onCheckedChanged: {
+        if(checked) {
+            showMenu();
+        } else {
+            hideMenu();
+        }
+    }
+
+    function hideMenu() {
+        menuContainer.parent = button;
+        menuContainer.x = 0;
+        menuContainer.y = 0;
+        menuContainer.z = 0;
+    }
+
+    function showMenu() {
+        var buttonGlobalPosition = button.mapToItem(rootItem, 0, 0);
+        var minY = Style.margins;
+        var maxY = rootItem.height - Style.margins - menuList.height;
+        var menuGlobalY = Math.max(minY, Math.min(buttonGlobalPosition.y, maxY));
+        menuContainer.parent = Window.contentItem;
+        for(var i=0; i < Window.contentItem.children.length; i++) {
+            var itemZ = Window.contentItem.children[i].z
+            menuContainer.z = Math.max(menuContainer.z, itemZ);
+        }
+        menuContainer.y = menuGlobalY;
+        menuContainer.x = buttonGlobalPosition.x;
+        menuList.forceActiveFocus();
+
+    }
+
+    background: Rectangle {
+        width: button.width
+        height: button.height
+        radius: Style.defaultRadius
+        border.color: Style.selectedPalette.accent
+        border.width: Style.defaultBorderWidth
+        color: button.down || button.checked ? Style.selectedPalette.accent :
+                                                Style.selectedPalette.base
+    }
+    DefaultLabel {
+        text: button.text
+        color: button.down ? Style.selectedPalette.highlightedText : Style.selectedPalette.text
+        anchors {
+            verticalCenter: parent.verticalCenter
+            left: button.left
+            right: button.right
+            leftMargin: Style.margins
+            rightMargin: Style.controlSize + Style.smallMargins * 2
+        }
+        horizontalAlignment: Text.AlignLeft
+        fontSizeMode: Text.VerticalFit
+    }
+    Image {
+        anchors {
+            right: parent.right
+            top: parent.top
+            bottom: parent.bottom
+            margins: Style.smallMargins
+        }
+        width: height
+        source: "../resource/icons/" + Style.themePrefix + "dropdownArrow.svg"
+        sourceSize.width: width
+    }
+
+    onClicked: {
+        checked = !checked;
+    }
+
+    Rectangle {
+        id: menuContainer
+        visible: button.checked
+        width: button.width
+        height: visible ? menuList.height + 2 * Style.defaultBorderWidth : 0
+        color: Style.selectedPalette.base
+        border.color: Style.selectedPalette.accent
+        border.width: Style.defaultBorderWidth
+
+        ListView {
+            id: menuList
+            x: Style.defaultBorderWidth
+            y: Style.defaultBorderWidth
+            width: parent.width - 2 * Style.defaultBorderWidth
+            height: Math.min(childrenRect.height, button.maxHeight)
+            clip: true
+            model: button.model
+            delegate: Rectangle {
+                id: menuItem
+                width: menuList.width
+                height: Style.controlSize
+                color: menuItem.index === menuList.currentIndex || listItemClick.pressed ?
+                    Style.selectedPalette.highlight :
+                    (listItemClick.containsMouse ? Style.selectedPalette.accent : "transparent")
+
+                required property int index
+
+                DefaultLabel {
+                    anchors {
+                        verticalCenter: parent.verticalCenter
+                        right: parent.right
+                        left: parent.left
+                        margins: Style.smallMargins
+                        leftMargin: Style.margins
+                        rightMargin: Style.margins
+                    }
+                    horizontalAlignment: Text.AlignLeft
+                    text: button.model[menuItem.index]
+                    color: menuItem.index === menuList.currentIndex || listItemClick.pressed ?
+                        Style.selectedPalette.highlightedText :
+                        Style.selectedPalette.text
+                }
+
+                MouseArea {
+                    id: listItemClick
+                    anchors.fill: parent
+                    hoverEnabled: true
+                    onClicked: {
+                        menuList.currentIndex = menuItem.index;
+                        button.checked = false;
+                    }
+                }
+            }
+
+            Keys.onPressed: (event) => {
+                if(event.key == Qt.Key_Enter || event.key == Qt.Key_Return || event.key == Qt.Key_Space) {
+                    button.checked = false;
+                    event.accepted = true;
+                    button.forceActiveFocus();
+                }
+            }
+
+            onActiveFocusChanged: {
+                if(!activeFocus) {
+                    button.checked = false;
+                }
+            }
+        }
+    }
+}

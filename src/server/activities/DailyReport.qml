@@ -101,16 +101,13 @@ ColumnLayout {
 
     Rectangle {     // Page header
         Layout.fillWidth: true
-        Layout.minimumHeight: Style.activityHeaderHeight
-        Layout.maximumHeight: Style.activityHeaderHeight
+        Layout.minimumHeight: Style.bigLineHeight
+        Layout.maximumHeight: Style.bigLineHeight
         Layout.leftMargin: 10
         Layout.rightMargin: 10
         Layout.topMargin: 5
         Layout.preferredWidth: lines.width
-        color: "white"
-        radius: 3
-        border.width: 1
-        border.color: "black"
+        color: Style.selectedPalette.alternateBase
         RowLayout {     // Page header (user and activity names, activity icon)
             anchors.fill: parent
             spacing: 5
@@ -121,6 +118,7 @@ ColumnLayout {
                 text: ""
                 font.pixelSize: 18
                 verticalAlignment: Text.AlignBottom
+                color: Style.selectedPalette.text
             }
 
             Text {
@@ -132,6 +130,7 @@ ColumnLayout {
                 verticalAlignment: Text.AlignBottom
                 horizontalAlignment: Text.AlignHCenter
                 clip: true
+                color: Style.selectedPalette.text
             }
 
             Text {
@@ -142,11 +141,12 @@ ColumnLayout {
                 verticalAlignment: Text.AlignBottom
                 horizontalAlignment: Text.AlignRight
                 clip: true
+                color: Style.selectedPalette.text
             }
 
             Image {
-                Layout.preferredWidth: Style.activityHeaderHeight
-                Layout.preferredHeight: Style.activityHeaderHeight
+                Layout.preferredWidth: Style.bigLineHeight
+                Layout.preferredHeight: Style.bigLineHeight
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
                 Layout.rightMargin: 5
                 source: (activityName !== "") ? "qrc:/gcompris/src/activities/" + Master.allActivities[activityName]["icon"] : ""
@@ -157,9 +157,9 @@ ColumnLayout {
         }
     }
 
-    Rectangle {     // Columns header with sort buttons
+    Item {     // Columns header with sort buttons
         Layout.fillWidth: true
-        Layout.preferredHeight: Style.tableHeaderHeight
+        Layout.preferredHeight: Style.lineHeight
         Layout.leftMargin: 10
         Layout.rightMargin: 10
         clip: true
@@ -171,57 +171,57 @@ ColumnLayout {
 
             RoundButton {
                 Layout.preferredWidth: Definitions.columnsSize["user_name"]
-                Layout.preferredHeight: Style.tableHeaderHeight
+                Layout.preferredHeight: Style.lineHeight
                 radius: 1
-                font.pixelSize: Style.defaultPixelSize
+                font.pixelSize: Style.textSize
                 text: Definitions.columnsLabel["user_name"] + ((sort === "user_name") ? " " + arrows[order] : "")
                 onClicked: dailyReport.sortTable("user_name")
             }
             RoundButton {
                 Layout.preferredWidth: Definitions.columnsSize["result_day"]
-                Layout.preferredHeight: Style.tableHeaderHeight
+                Layout.preferredHeight: Style.lineHeight
                 radius: 1
-                font.pixelSize: Style.defaultPixelSize
+                font.pixelSize: Style.textSize
                 text: Definitions.columnsLabel["result_day"] + ((sort === "result_day") ? " " + arrows[order] : "")
                 onClicked: dailyReport.sortTable("result_day")
             }
             RoundButton {
                 Layout.preferredWidth: Definitions.columnsSize["activity_name"]
-                Layout.preferredHeight: Style.tableHeaderHeight
+                Layout.preferredHeight: Style.lineHeight
                 radius: 1
-                font.pixelSize: Style.defaultPixelSize
+                font.pixelSize: Style.textSize
                 text: Definitions.columnsLabel["activity_name"] + ((sort === "activity_name") ? " " + arrows[order] : "")
                 onClicked: dailyReport.sortTable("activity_name")
             }
             RoundButton {
                 Layout.preferredWidth: Definitions.columnsSize["count_activity"]
-                Layout.preferredHeight: Style.tableHeaderHeight
+                Layout.preferredHeight: Style.lineHeight
                 radius: 1
-                font.pixelSize: Style.defaultPixelSize
+                font.pixelSize: Style.textSize
                 text: qsTr("Count") + ((dailyReport.sort === "count_activity") ? " " + dailyReport.arrows[dailyReport.order] : "")
                 onClicked: dailyReport.sortTable("count_activity")
             }
             RoundButton {
                 Layout.preferredWidth: Definitions.columnsSize["result_duration"]
-                Layout.preferredHeight: Style.tableHeaderHeight
+                Layout.preferredHeight: Style.lineHeight
                 radius: 1
-                font.pixelSize: Style.defaultPixelSize
+                font.pixelSize: Style.textSize
                 text: qsTr("Time") + ((dailyReport.sort === "sum_duration") ? " " + dailyReport.arrows[dailyReport.order] : "")
                 onClicked: dailyReport.sortTable("sum_duration")
             }
             RoundButton {
                 Layout.fillWidth: true
-                Layout.preferredHeight: Style.tableHeaderHeight
+                Layout.preferredHeight: Style.lineHeight
                 radius: 1
-                font.pixelSize: Style.defaultPixelSize
+                font.pixelSize: Style.textSize
                 text: resultModel.count + " " + qsTr("lines")
             }
 
             RoundButton {
                 Layout.preferredWidth: Definitions.columnsSize["success_ratio"]
-                Layout.preferredHeight: Style.tableHeaderHeight
+                Layout.preferredHeight: Style.lineHeight
                 radius: 1
-                font.pixelSize: Style.defaultPixelSize
+                font.pixelSize: Style.textSize
                 text: qsTr("Ratio") + ((dailyReport.sort === "success_ratio") ? " " + dailyReport.order : "")
                 onClicked: dailyReport.sortTable("success_ratio")
             }
@@ -248,7 +248,7 @@ ColumnLayout {
             anchors.bottom: parent.bottom
             width: scrollLines.contentWidth
             model: resultModel
-            spacing: Style.linesSpacing
+            spacing: 0
             boundsBehavior: Flickable.StopAtBounds
             clip: true
 
@@ -259,7 +259,7 @@ ColumnLayout {
                 hoverEnabled: true
                 Rectangle {
                     anchors.fill: parent
-                    color: dailyLine.hovered ? "lightgray" : "white"
+                    color: dailyLine.hovered ? Style.selectedPalette.accent : "white"
                     RowLayout {
                         id: infos
                         anchors.fill: parent
@@ -267,35 +267,39 @@ ColumnLayout {
                         Text {
                             Layout.preferredWidth: Definitions.columnsSize["user_name"]
                             Layout.preferredHeight: 20
-                            font.pixelSize: Style.defaultPixelSize
+                            font.pixelSize: Style.textSize
                             leftPadding: 5
                             text: user_name
+                            color: Style.selectedPalette.text
                         }
                         Text {
                             Layout.preferredWidth: Definitions.columnsSize["result_day"]
                             Layout.preferredHeight: 20
-                            font.pixelSize: Style.defaultPixelSize
+                            font.pixelSize: Style.textSize
                             leftPadding: 5
                             text: new Date(result_day).toLocaleDateString(Qt.locale())
+                            color: Style.selectedPalette.text
                         }
                         Text {
                             Layout.preferredWidth: Definitions.columnsSize["activity_name"]
                             Layout.preferredHeight: 20
-                            font.pixelSize: Style.defaultPixelSize
+                            font.pixelSize: Style.textSize
                             leftPadding: 10
                             text: Master.allActivities[activity_name]["title"]
+                            color: Style.selectedPalette.text
                         }
                         Text {
                             Layout.preferredWidth: Definitions.columnsSize["count_activity"]
                             Layout.preferredHeight: 20
-                            font.pixelSize: Style.defaultPixelSize
+                            font.pixelSize: Style.textSize
                             text: count_activity
                             horizontalAlignment: Text.AlignHCenter
+                            color: Style.selectedPalette.text
                         }
                         Text {
                             Layout.preferredWidth: Definitions.columnsSize["result_duration"]
                             Layout.preferredHeight: 20
-                            font.pixelSize: Style.defaultPixelSize
+                            font.pixelSize: Style.textSize
                             text: {
                                 var date = new Date(0)
                                 date.setSeconds(sum_duration)
@@ -303,6 +307,7 @@ ColumnLayout {
                                 return timeString
                             }
                             horizontalAlignment: Text.AlignHCenter
+                            color: Style.selectedPalette.text
                         }
                         Rectangle {
                             Layout.fillWidth: true
@@ -315,17 +320,18 @@ ColumnLayout {
                                 height: parent.height - 2
                                 x: 1
                                 y: 1
-                                color: Style.colorHeaderPane
+                                color: Style.selectedPalette.base
                             }
                         }
 
                         Text {
                             Layout.preferredWidth: Definitions.columnsSize["success_ratio"]
                             Layout.preferredHeight: 20
-                            font.pixelSize: Style.defaultPixelSize
+                            font.pixelSize: Style.textSize
                             rightPadding: 5
                             text: parseFloat(success_ratio * 100).toFixed(2)+" %"
                             horizontalAlignment: Text.AlignRight
+                            color: Style.selectedPalette.text
                         }
                     }
                 }
