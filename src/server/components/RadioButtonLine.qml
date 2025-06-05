@@ -1,9 +1,11 @@
 /* GCompris - RadioButtonLine.qml
  *
- * SPDX-FileCopyrightText: 2023 Bruno Anselme <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -15,39 +17,50 @@ import "../singletons"
 
 Row {
     id: radioButtonLine
+
+    height: Style.lineHeight
+
     property string label: ""
     property var radios: []
     property int current: 0
-    Layout.preferredHeight: title.height
+    property alias title: title
+    property alias radioRepeater: radioRepeater
+    property alias radioComponent: radioComponent
 
     signal radioCheckChanged(int index)
 
-    Text {
+    DefaultLabel {
         id: title
-        height: contentHeight + 5
-        width: labelWidth
-        verticalAlignment: Text.AlignBottom
-        text: radioButtonLine.label
+        horizontalAlignment: Text.AlignLeft
         font.bold: true
-        font.pixelSize: Style.textSize
         color: enabled ? Style.selectedPalette.text : "gray"
+        text: radioButtonLine.label
+        width: contentWidth
+
+        ButtonGroup {
+            id: childGroup
+            exclusive: true
+        }
     }
 
-    ButtonGroup {
-        id: childGroup
-        exclusive: true
-    }
+    Component {
+        id: radioComponent
 
-    Repeater {
-        model: radioButtonLine.radios
         StyledRadioButton {
-            id: aButton
-            height: parent.height
+            id: radioComponent
+            required property string modelData
+            required property int index
             ButtonGroup.group: childGroup
             text: modelData
             checked: index === radioButtonLine.current
-            font.pixelSize: Style.textSize
             onClicked: radioButtonLine.radioCheckChanged(radioButtonLine.current = index)
         }
+    }
+
+    Repeater {
+        id: radioRepeater
+        model: radioButtonLine.radios
+        width: radioButtonLine.width - title.width
+        delegate: radioComponent
     }
 }

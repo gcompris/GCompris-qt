@@ -1,9 +1,11 @@
 /* GCompris - SmallButton.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -14,15 +16,31 @@ import "../singletons"
 
 Button {
     id: smallButton
-    text: qsTr("Button")
+    text: ""
     hoverEnabled: true
+    height: Style.lineHeight
+    width: height
+
+    opacity: enabled ? 1 : 0.5
+
+    property bool toolTipOnHover: false
+    property alias toolTipText: styledToolTip.text
+
+    onHoveredChanged: {
+        if(!toolTipOnHover) {
+            return;
+        } else if(hovered) {
+            showToolTipTimer.restart();
+        } else {
+            showToolTipTimer.stop();
+            styledToolTip.visible = false;
+        }
+    }
 
     contentItem: Text {
-        anchors.fill: parent
+        anchors.fill: smallButton.background
         anchors.margins: 2
         text: smallButton.text
-        font: smallButton.font
-        opacity: enabled ? 1.0 : 0.3
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         elide: Text.ElideRight
@@ -31,11 +49,22 @@ Button {
 
     background: Rectangle {
         anchors.fill: parent
-        anchors.margins: 2
-        opacity: enabled ? 1 : 0.3
-        color: smallButton.checked ? Style.selectedPalette.highlight: Style.selectedPalette.base
-        border.color: smallButton.hovered ? Style.selectedPalette.highlight : Style.selectedPalette.accent
-        border.width: 1
-        radius: 2
+        anchors.margins: Style.defaultBorderWidth
+        color: smallButton.pressed || smallButton.checked ? Style.selectedPalette.highlight :
+            (smallButton.enabled && smallButton.hovered ? Style.selectedPalette.accent :
+            Style.selectedPalette.alternateBase)
+        border.color: smallButton.enabled && (smallButton.visualFocus || smallButton.hovered) ?
+            Style.selectedPalette.text : Style.selectedPalette.accent
+        border.width: smallButton.enabled && (smallButton.visualFocus || smallButton.hovered) ? 2 : 1
+    }
+
+    StyledToolTip {
+        id: styledToolTip
+    }
+
+    Timer {
+        id: showToolTipTimer
+        interval: 1000
+        onTriggered: styledToolTip.visible = true;
     }
 }
