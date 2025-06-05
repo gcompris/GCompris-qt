@@ -1,10 +1,12 @@
 /* GCompris - ManagePupilsView.qml
 *
 * SPDX-FileCopyrightText: 2021 Emmanuel Charruau <echarruau@gmail.com>
+* SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
 *
 * Authors:
 *   Emmanuel Charruau <echarruau@gmail.com>
 *   Bruno Anselme <be.root@free.fr>
+*   Timothée Giet <animtim@gmail.com>
 *
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
@@ -21,6 +23,14 @@ Item {
     enabled: serverRunning
 
     signal pupilsNamesListSelected(var pupilsNamesList)
+
+    GroupDialog {
+        id: addGroupDialog
+        label: qsTr("Add a group")
+        mode: GroupDialog.DialogType.Add
+        group_Name: ""
+        group_Description: ""
+    }
 
     GroupDialog {
         id: removeGroupDialog
@@ -41,59 +51,57 @@ Item {
         mode: GroupDialog.DialogType.Modify
     }
 
-    SplitView {
+    StyledSplitView {
         id: splitManagePupils
-        anchors.margins: 3
         anchors.fill: parent
 
-        ColumnLayout {  // Group list and Add button
-            SplitView.preferredWidth: 200
-            SplitView.minimumWidth: 180
+        property int minSplitWidth: width / 3
+        property int bigButtonWidth: Math.min(minSplitWidth - Style.bigMargins, 4 * Style.bigControlSize)
+        property int bigButtonHeight: Math.min(height / (buttonsColumn.children.length + 1) - Style.margins, Style.bigControlSize)
+        property int preferredSplitWidth: bigButtonWidth + Style.bigMargins
+
+        Column {  // Group list and Add button
+            SplitView.preferredWidth: splitManagePupils.preferredSplitWidth
+            SplitView.minimumWidth: splitManagePupils.bigButtonWidth
+            height: parent.height
 
             FoldDownRadio {
                 id: groupPane
-                Layout.fillHeight: true
-                Layout.fillWidth: true
+                width: parent.width
+                height: parent.height - addGroupButtonArea.height
                 title: qsTr("Groups")
                 foldModel: Master.groupModel
-                lineHeight: Style.mediumLineHeight
                 indexKey: "group_id"
                 nameKey: "group_name"
                 checkKey: "group_checked"
                 collapsable: false
                 delegateName: "radioGroupEdit"
                 onSelectionClicked: (modelId) => {
-                    Master.groupFilterId = modelId
-                    Master.filterUsers(Master.filteredUserModel, false)
+                    Master.groupFilterId = modelId;
+                    Master.filterUsers(Master.filteredUserModel, false);
                 }
             }
 
             // Add group button
-            Rectangle {
-                id: addGroupLabelRectangle
-                color: "transparent"
-                Layout.fillWidth: true
-                Layout.preferredHeight: 50
+            Item {
+                id: addGroupButtonArea
+                width: parent.width
+                height: addGroupButton.height + Style.bigMargins
 
                 ViewButton {
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.verticalCenter: parent.verticalCenter
+                    id: addGroupButton
+                    width: splitManagePupils.bigButtonWidth
+                    height: splitManagePupils.bigButtonHeight
+                    anchors.centerIn: parent
                     text: "\uf067 " + qsTr("Add a group")
-                    onClicked: addGroupDialog.open()
-                }
-
-                GroupDialog {
-                    id: addGroupDialog
-                    label: qsTr("Add a group")
-                    mode: GroupDialog.DialogType.Add
-                    group_Name: ""
-                    group_Description: ""
+                    onClicked: addGroupDialog.open();
                 }
             }
         }
 
         FoldDownCheck { // Pupils lists
             id: pupilPane
+            SplitView.fillWidth: true
             title: qsTr("Pupils and groups")
             foldModel: Master.filteredUserModel
             lineHeight: Style.mediumLineHeight
@@ -102,84 +110,82 @@ Item {
             checkKey: "user_checked"
             delegateName: "checkUserEdit"
             collapsable: false
-            SplitView.fillWidth: true
-            SplitView.minimumWidth: 300
         }
 
-        Rectangle {
-            id: buttonsColumn
-            SplitView.preferredWidth: 210
-            SplitView.minimumWidth: 210
-            SplitView.maximumWidth: 300
-            color: Style.selectedPalette.base
+        Item {
+            id: managementColumn
+            SplitView.preferredWidth: splitManagePupils.preferredSplitWidth
+            SplitView.minimumWidth: splitManagePupils.bigButtonWidth
+            SplitView.maximumWidth: splitManagePupils.preferredSplitWidth
 
-            ColumnLayout {
-                anchors.fill: parent
-                spacing: 15
+            Rectangle {
+                id: managementColumnTitle
+                anchors.top: parent.top
+                width: parent.width
+                height: Style.lineHeight
+                border.width: Style.defaultBorderWidth
+                border.color: Style.selectedPalette.accent
+                color: Style.selectedPalette.base
 
-                Rectangle {
-                    Layout.fillWidth: true
-                    Layout.preferredHeight: Style.mediumLineHeight
-                    color: Style.selectedPalette.base
-                    radius: 5
-                    Text {
-                        anchors.fill: parent
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        font.pixelSize: Style.textSize
-                        font.bold: true
-                        text: qsTr("Pupils management")
-                        color: enabled ? Style.selectedPalette.text : "gray"
-                    }
+                DefaultLabel {
+                    anchors.centerIn: parent
+                    width: parent.width - Style.bigMargins
+                    font.bold: true
+                    text: qsTr("Pupils management")
+                    color: enabled ? Style.selectedPalette.text : "gray"
                 }
+            }
+
+            Column {
+                id: buttonsColumn
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.top: managementColumnTitle.bottom
+                anchors.topMargin: Style.margins
+                height: childrenRect.height
+                width: childrenRect.width
+                spacing: Style.margins
 
                 ViewButton {
-                    Layout.alignment: Qt.AlignHCenter
-                    Layout.topMargin: 20
-                    Layout.preferredWidth: 200
+                    id: addPupilButton
+                    width: splitManagePupils.bigButtonWidth
+                    height: splitManagePupils.bigButtonHeight
                     text: "\uf234   " + qsTr("Add pupil")
                     onClicked: addPupilDialog.open()
                 }
 
                 ViewButton {
-                    Layout.alignment: Qt.AlignHCenter
-                    Layout.preferredWidth: 200
+                    width: splitManagePupils.bigButtonWidth
+                    height: splitManagePupils.bigButtonHeight
                     text: "\uf07c   " + qsTr("Add to groups")
                     onClicked: addPupilsToGroupsDialog.open()
                 }
 
                 ViewButton {
-                    Layout.alignment: Qt.AlignHCenter
-                    Layout.preferredWidth: 200
+                    width: splitManagePupils.bigButtonWidth
+                    height: splitManagePupils.bigButtonHeight
                     text: "\uf0c7   " + qsTr("Remove from groups")
                     onClicked: removePupilsFromGroupsDialog.open()
                 }
 
                 ViewButton {
-                    Layout.alignment: Qt.AlignHCenter
-                    Layout.preferredWidth: 200
+                    width: splitManagePupils.bigButtonWidth
+                    height: splitManagePupils.bigButtonHeight
                     text: "\uf0c7   " + qsTr("Export pupils")
                     onClicked: exportPupilsDialog.open()
                 }
 
                 ViewButton {
-                    Layout.alignment: Qt.AlignHCenter
-                    Layout.preferredWidth: 200
+                    width: splitManagePupils.bigButtonWidth
+                    height: splitManagePupils.bigButtonHeight
                     text:  "\uf235   " + qsTr("Import pupils")
                     onClicked: importPupilsDialog.open()
                 }
 
                 ViewButton {
-                    Layout.alignment: Qt.AlignHCenter
-                    Layout.preferredWidth: 200
+                    width: splitManagePupils.bigButtonWidth
+                    height: splitManagePupils.bigButtonHeight
                     text: "\uf503   " + qsTr("Remove pupils")
                     onClicked: removePupilsDialog.open()
-                }
-
-                Rectangle {
-                    Layout.preferredWidth: parent.width
-                    Layout.preferredHeight: parent.height
-                    color: "transparent"
                 }
             }
         }
