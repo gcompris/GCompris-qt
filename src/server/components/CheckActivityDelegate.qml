@@ -26,10 +26,12 @@ Control {
         text : (Master.allActivities[activity_name] !== undefined) ? Master.allActivities[activity_name].title : ""
         checked: activity_checked
         ButtonGroup.group: childGroup
-        onClicked: {
+        onCheckedChanged: {
             foldModel.setProperty(index, checkKey, checked)
+        }
+        onClicked: {
             selectionClicked(foldModel.get(index)[indexKey], checked)
-            //                currentChecked = index
+            // currentChecked = index
         }
     }
 }
