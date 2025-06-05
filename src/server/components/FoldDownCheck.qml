@@ -59,7 +59,7 @@ Column {
             enabled: foldDownFilter.text === ""
             linkedGroup: childGroup
             onClicked: {
-                foldDown.currentChecked = checked ? -2 : -1 // -2 = all checked, -1 = none
+                foldDown.currentChecked = parentBox.checked ? -2 : -1 // -2 = all checked, -1 = none
                 foldDown.selectionClicked(foldDown.currentChecked, checked)
             }
         }
