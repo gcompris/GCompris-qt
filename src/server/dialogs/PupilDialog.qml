@@ -268,7 +268,7 @@ Popup {
                 boundsBehavior: Flickable.StopAtBounds
                 clip: true
                 model: tmpGroupModel
-                delegate: StyledCheckDelegate {
+                delegate: StyledCheckBox {
                     id: groupSelect
                     property int group_Id: group_id
                     activeFocusOnTab: true
