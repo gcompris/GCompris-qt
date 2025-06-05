@@ -1,9 +1,11 @@
 /* GCompris - NavigationPanel.qml
  *
  * SPDX-FileCopyrightText: 2021 Emmanuel Charruau <echarruau@gmail.com>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Emmanuel Charruau <echarruau@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -88,7 +90,7 @@ Item {
             NavigationButton {
                 id: pupilsView
                 iconCharacter: "\uf0c0"
-                description: qsTr("Managing Pupils")
+                description: qsTr("Pupils and Groups")
                 onNavigationButtonClicked: navigationPanel.changeTo(1)
             }
             NavigationButton {
@@ -100,13 +102,13 @@ Item {
             NavigationButton {
                 id: activityDetails
                 iconCharacter: "\uf03a"
-                description: qsTr("Activities view")
+                description: qsTr("Activities")
                 onNavigationButtonClicked: navigationPanel.changeTo(3)
             }
             NavigationButton {
                 id: datasetsView
                 iconCharacter: "\uf15c"
-                description: qsTr("Datasets view")
+                description: qsTr("Datasets")
                 onNavigationButtonClicked: navigationPanel.changeTo(4)
             }
             NavigationButton {
@@ -124,7 +126,7 @@ Item {
             NavigationButton {
                 id: datasView
                 iconCharacter: "\uf188"
-                description: qsTr("Development views (work in progress)")
+                description: qsTr("Development (work in progress)")
                 onNavigationButtonClicked: navigationPanel.changeTo(7)
             }
 
