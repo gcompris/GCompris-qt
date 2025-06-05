@@ -13,47 +13,51 @@ import QtQuick.Controls.Basic
 
 import "../singletons"
 
-RadioButton {
+AbstractButton {
     id: control
+    height: Style.controlSize
+    implicitWidth: label.implicitWidth + controlImage.width + Style.margins
+    opacity: enabled ? 1 : 0.5
 
-    implicitWidth: implicitBackgroundWidth + leftInset + rightInset
-
-    implicitHeight: Math.max(implicitBackgroundHeight + topInset + bottomInset,
-                             implicitContentHeight + topPadding + bottomPadding,
-                             implicitIndicatorHeight + topPadding + bottomPadding)
-
-    indicator: Rectangle {
-        implicitWidth: 28
-        implicitHeight: 28
-
-        scale: 0.5
-
-        x: control.text ? (control.mirrored ? control.width - width - control.rightPadding : control.leftPadding) : control.leftPadding + (control.availableWidth - width) / 2
-        y: control.topPadding + (control.availableHeight - height) / 2
-
-        radius: width / 2
-        color: control.down ? Style.selectedPalette.accent : Style.selectedPalette.base
-        border.width: control.visualFocus ? 6 : 4
-        border.color: control.visualFocus ? Style.selectedPalette.highlight :
-                                            Style.selectedPalette.text
-
-        Rectangle {
-            x: (parent.width - width) / 2
-            y: (parent.height - height) / 2
-            width: 20
-            height: 20
-            radius: width / 2
-            color: Style.selectedPalette.text
-            visible: control.checked
+    onClicked: {
+        if(!checked) {
+            checked = !checked;
         }
     }
 
-    contentItem: DefaultLabel {
-        leftPadding: control.indicator && !control.mirrored ? control.indicator.width + control.spacing : 0
-        rightPadding: control.indicator && control.mirrored ? control.indicator.width + control.spacing : 0
-        horizontalAlignment: Text.AlignLeft
-        fontSizeMode: Text.FixedSize
-        font.pixelSize: Style.textSize
-        text: control.text
+    Row {
+        id: controlRow
+        height: Style.textSize
+        anchors.verticalCenter: parent.verticalCenter
+        Rectangle {
+            id: controlImage
+            height: Style.textSize
+            width: height
+            radius: width
+            color: control.down ? Style.selectedPalette.accent : Style.selectedPalette.base
+            border.width: control.visualFocus ? 3 : 2
+            border.color: control.visualFocus ? Style.selectedPalette.highlight :
+                                                Style.selectedPalette.text
+
+            Rectangle {
+                anchors.centerIn: parent
+                width: parent.width - parent.border.width * 2
+                height: width
+                radius: width
+                color: Style.selectedPalette.text
+                visible: control.checked
+            }
+        }
+
+        DefaultLabel {
+            id: label
+            leftPadding: Style.margins
+            rightPadding: Style.margins
+            width: control.width - controlImage.width - Style.margins
+            horizontalAlignment: Text.AlignLeft
+            fontSizeMode: Text.FixedSize
+            font.pixelSize: Style.textSize
+            text: control.text
+        }
     }
 }

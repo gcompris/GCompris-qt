@@ -1,9 +1,11 @@
 /* GCompris - CheckUserEditDelegate.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -14,7 +16,6 @@ import "../singletons"
 
 Control {
     id: checkUserEditDelegate
-    font.pixelSize: Style.textSize
     hoverEnabled: true
     Rectangle {
         anchors.fill: parent
@@ -24,22 +25,20 @@ Control {
     SmallButton {
         id: editPupil
         anchors.left: parent.left
-        anchors.verticalCenter: parent.verticalCenter
+        anchors.leftMargin: Style.margins
         hoverEnabled: true
-        width: parent.height - 4
-        height: parent.height - 4
-        visible: checkUserEditDelegate.hovered || editPupil.hovered
-        font.pixelSize: Style.textSize
+        // visible: checkUserEditDelegate.hovered || editPupil.hovered // No reason to make it visible only on hover if there's always space for it...
         text: "\uf304"
         onClicked: modifyPupilDialog.openPupilDialog(index, user_name, user_id, user_password, groups_name, groups_id)
-        ToolTip.visible: hovered
-        ToolTip.text: qsTr("Edit pupil")
+        toolTipOnHover: true
+        toolTipText: qsTr("Edit pupil")
     }
 
     StyledCheckBox {
         id: checkButton
-        anchors.fill: parent
-        anchors.leftMargin: 15
+        anchors.left: editPupil.right
+        anchors.leftMargin: Style.margins
+        width: (parent.width - editPupil.width - 4 * Style.margins) * 0.5
         text: user_name
         checked: user_checked
         ButtonGroup.group: childGroup
@@ -50,13 +49,13 @@ Control {
         }
     }
 
-    Text {
-        anchors.right: parent.right
-        width: parent.width / 2
-        height: parent.height
-        font.pixelSize: Style.textSize
-        verticalAlignment: Text.AlignVCenter
+    DefaultLabel {
+        anchors.left: checkButton.right
+        anchors.leftMargin: Style.margins
+        anchors.verticalCenter: parent.verticalCenter
+        width: checkButton.width
+        horizontalAlignment: Text.AlignLeft
         text: groups_name
-        color: enabled ? Style.selectedPalette.text: "gray"
+        opacity: enabled ? 1 : 0.5
     }
 }

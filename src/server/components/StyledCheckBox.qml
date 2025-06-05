@@ -13,52 +13,69 @@ import QtQuick.Controls.Basic
 
 import "../singletons"
 
-CheckBox {
+AbstractButton {
     id: control
+    height: Style.controlSize
+    implicitWidth: text === "" ? controlImage.width : label.implicitWidth + controlImage.width + Style.margins
+    checkable: true
+    opacity: enabled ? 1 : 0.5
 
-    implicitWidth: implicitBackgroundWidth + leftInset + rightInset
+    property ButtonGroup linkedGroup: null // set a ButtonGroup property to activate tristate reflecting its checkState
+    readonly property bool tristate: linkedGroup != null
+    property int checkState: tristate ? linkedGroup.checkState : (checked ? Qt.Checked : Qt.Unchecked)
 
-    implicitHeight: Math.max(implicitBackgroundHeight + topInset + bottomInset,
-                             implicitContentHeight + topPadding + bottomPadding,
-                             implicitIndicatorHeight + topPadding + bottomPadding)
-
-    indicator: Rectangle {
-        implicitWidth: 28
-        implicitHeight: 28
-
-        scale: 0.5
-
-        x: control.text ? (control.mirrored ? control.width - width - control.rightPadding : control.leftPadding) : control.leftPadding + (control.availableWidth - width) / 2
-        y: control.topPadding + (control.availableHeight - height) / 2
-
-        color: control.down ? Style.selectedPalette.accent : Style.selectedPalette.base
-        border.width: control.visualFocus ? 6 : 4
-        border.color: control.visualFocus ? Style.selectedPalette.highlight :
-                                            Style.selectedPalette.text
-
-        Rectangle {
-            anchors.centerIn: parent
-            width: parent.width * 0.5
-            height: width
-            color: Style.selectedPalette.text
-            visible: control.checkState === Qt.Checked
-        }
-
-        Rectangle {
-            anchors.centerIn: parent
-            width: parent.width * 0.5
-            height: parent.height * 0.2
-            color: Style.selectedPalette.text
-            visible: control.checkState === Qt.PartiallyChecked
+    onClicked: {
+        if(tristate) {
+            if(checkState === Qt.Checked) {
+                linkedGroup.checkState = Qt.Unchecked;
+            } else {
+                linkedGroup.checkState = Qt.Checked;
+            }
         }
     }
 
-    contentItem: DefaultLabel {
-        leftPadding: control.indicator && !control.mirrored ? control.indicator.width + control.spacing : 0
-        rightPadding: control.indicator && control.mirrored ? control.indicator.width + control.spacing : 0
-        horizontalAlignment: Text.AlignLeft
-        fontSizeMode: Text.FixedSize
-        font.pixelSize: Style.textSize
-        text: control.text
+    property alias label: label
+
+    Row {
+        id: controlRow
+        height: Style.textSize
+        anchors.verticalCenter: parent.verticalCenter
+
+        Rectangle {
+            id: controlImage
+            height: Style.textSize
+            width: height
+            color: control.down ? Style.selectedPalette.accent : Style.selectedPalette.base
+            border.width: control.visualFocus ? 3 : 2
+            border.color: control.visualFocus ? Style.selectedPalette.highlight :
+            Style.selectedPalette.text
+
+            Rectangle {
+                anchors.centerIn: parent
+                width: parent.width * 0.5
+                height: width
+                color: Style.selectedPalette.text
+                visible: control.checkState === Qt.Checked
+            }
+
+            Rectangle {
+                anchors.centerIn: parent
+                width: parent.width * 0.5
+                height: parent.height * 0.2
+                color: Style.selectedPalette.text
+                visible: control.checkState === Qt.PartiallyChecked
+            }
+        }
+
+        DefaultLabel {
+            id: label
+            leftPadding: Style.margins
+            rightPadding: Style.margins
+            width: control.width - controlImage.width - Style.margins
+            horizontalAlignment: Text.AlignLeft
+            fontSizeMode: Text.FixedSize
+            font.pixelSize: Style.textSize
+            text: control.text
+        }
     }
 }
