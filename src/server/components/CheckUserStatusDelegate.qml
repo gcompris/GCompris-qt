@@ -26,10 +26,12 @@ Control {
         text: user_name
         checked: user_checked
         ButtonGroup.group: childGroup
+        onCheckedChanged: {
+            foldModel.setProperty(index, checkKey, checked);
+        }
         onClicked: {
-            foldModel.setProperty(index, checkKey, checked)
-            selectionClicked(foldModel.get(index)[indexKey], checked)
-            currentChecked = index
+            selectionClicked(foldModel.get(index)[indexKey], checked);
+            currentChecked = index;
         }
     }
 
