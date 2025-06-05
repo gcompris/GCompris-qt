@@ -8,7 +8,7 @@
 import QtQuick
 import "../singletons"
 
-// A default text item with color, centered alignement and required properties for optimal Text.Fit.
+// A text item with default style values.
 // Usually one only needs to set its width and/or anchors (to have a defined width at least),
 // and change its horizontalAlignment if needed.
 
@@ -19,6 +19,6 @@ Text {
     font.pixelSize: height
     horizontalAlignment: Text.AlignHCenter
     verticalAlignment: Text.AlignVCenter
-    fontSizeMode: Text.Fit
+    fontSizeMode: Text.FixedSize
     elide: Text.ElideRight
 }

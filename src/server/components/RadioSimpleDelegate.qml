@@ -1,9 +1,11 @@
 /* GCompris - RadioSimpleDelegate.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -14,7 +16,6 @@ import "../singletons"
 
 Control {
     id: radioSimpleDelegate
-    font.pixelSize: Style.textSize
     hoverEnabled: true
     Rectangle {
         anchors.fill: parent
@@ -24,7 +25,8 @@ Control {
     StyledRadioButton {
         id: aButton
         anchors.fill: parent
-        anchors.leftMargin: 10
+        anchors.leftMargin: Style.margins
+        anchors.rightMargin: Style.margins
         text: eval(nameKey)         // In these cases, eval is safe because no code injection is possible
         checked: eval(checkKey)     // Eval's parameter is an internal column name
         ButtonGroup.group: childGroup

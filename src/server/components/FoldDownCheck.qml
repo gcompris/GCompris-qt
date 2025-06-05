@@ -1,9 +1,11 @@
 /* GCompris - FoldDownCheck.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -21,7 +23,7 @@ Column {
     required property string checkKey
     required property string title
 
-    property int lineHeight: Style.lineHeight
+    property int lineHeight: Style.lineHeight // TODO: remove once all instances have been updated to not use it.
     property bool activated: true
     property bool collapsable: true
     property int currentChecked: -1
@@ -40,91 +42,102 @@ Column {
     ButtonGroup {
         id: childGroup
         exclusive: foldDown.delegateName.includes("radio")
-        checkState: parentBox.checkState
     }
 
     // Folddown header
     Rectangle {
         width: parent.width
-        height: foldDown.lineHeight
+        height: Style.lineHeight
         color: Style.selectedPalette.base
-        radius: 5
+        border.width: Style.defaultBorderWidth
+        border.color: Style.selectedPalette.accent
 
         StyledCheckBox {
             id: parentBox
-            anchors.fill: parent
-            anchors.leftMargin: 2
-            font.pixelSize: Style.textSize
-            font.bold: true
-            text: foldDown.title
+            anchors.left: parent.left
+            anchors.margins: Style.margins + Style.smallMargins
             enabled: foldDownFilter.text === ""
-            checkState: childGroup.checkState
+            linkedGroup: childGroup
             onClicked: {
-                foldDown.currentChecked = checked ? -2 : -1          // -2 = all checked, -1 = none
+                foldDown.currentChecked = checked ? -2 : -1 // -2 = all checked, -1 = none
                 foldDown.selectionClicked(foldDown.currentChecked, checked)
             }
+        }
+
+        DefaultLabel {
+            id: columnTitle
+            anchors.left: parentBox.right
+            anchors.right: filterButton.left
+            anchors.margins: Style.margins
+            anchors.verticalCenter: parent.verticalCenter
+            horizontalAlignment: Text.AlignLeft
+            font.bold: true
+            text: foldDown.title
         }
 
         Rectangle {
             id: filterRect
             width: filterButton.checked ? 100 : 0
-            height: foldDown.lineHeight - 6
+            height: parent.height
             anchors.right: filterButton.left
-            anchors.rightMargin: 5
-            anchors.verticalCenter: parent.verticalCenter
-            border.width: 1
-            border.color: focus ? "black" : Style.selectedPalette.alternateBase
+            color: Style.selectedPalette.alternateBase
+            border.width: Style.defaultBorderWidth
+            border.color: focus ? Style.selectedPalette.highlight : Style.selectedPalette.accent
             TextInput {
                 id: foldDownFilter
                 anchors.fill: parent
+                anchors.leftMargin: Style.margins
+                anchors.rightMargin: Style.margins
                 verticalAlignment: Text.AlignVCenter
                 clip: true
                 font.pixelSize: Style.textSize
+                color: Style.selectedPalette.text
+                selectedTextColor: Style.selectedPalette.highlightedText
+                selectionColor: Style.selectedPalette.highlight
             }
         }
 
         SmallButton {
             id: filterButton
-            width: foldDown.lineHeight
-            height: foldDown.lineHeight
             anchors.right: counter.left
+            anchors.rightMargin: Style.smallMargins
             checkable: true
-            font.pixelSize: Style.textSize
             text: "\uf0b0"
             onCheckedChanged: {
-                if (!checked) foldDownFilter.text = ""
-                else foldDownFilter.focus = true
+                if(!checked) {
+                    foldDownFilter.text = "";
+                } else {
+                    foldDownFilter.focus = true
+                }
             }
-
-            ToolTip.visible: hovered
-            ToolTip.text: qsTr("Filter list")
+            toolTipOnHover: true
+            toolTipText: qsTr("Filter list")
         }
 
-        Text {
+        DefaultLabel {
             id: counter
-            anchors.right: foldDown.collapsable ? collapseButton.left: parent.right
-            anchors.rightMargin: 5
-            anchors.top: parent.top
-            anchors.bottom: parent.bottom
-            font.pixelSize: Style.textSize
+            anchors.right: collapseButton.left
+            anchors.rightMargin: Style.margins
+            anchors.verticalCenter: parent.verticalCenter
             font.bold: true
             text: foldDown.foldModel.count
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            color: Style.selectedPalette.text
         }
 
         SmallButton {
             id: collapseButton
-            width: foldDown.lineHeight
-            height: foldDown.lineHeight
+            width: visible ? height : 0
             anchors.right: parent.right
-            font.pixelSize: Style.textSize
             visible: foldDown.collapsable
             checkable: true
             checked: true
             text: checked ? "\uf0d7" : "\uf0d9"
-            onCheckedChanged: foldDown.SplitView.maximumHeight = (foldDown.SplitView.maximumHeight === Infinity) ? 25 : Infinity
+            onCheckedChanged: {
+                if(checked) {
+                    foldDown.SplitView.maximumHeight = Infinity;
+                } else {
+                    foldDown.SplitView.maximumHeight = Style.lineHeight;
+                }
+            }
         }
     }
 
@@ -133,7 +146,6 @@ Column {
         id: elements
         width: parent.width
         height: parent.height
-        radius: 5
         color: Style.selectedPalette.alternateBase
 
         ScrollView {
@@ -144,32 +156,31 @@ Column {
             ScrollBar.vertical.policy: ScrollBar.AlwaysOn
             Column {
                 id: boxes
-                spacing: 2
 
                 Repeater {
                     model: foldDown.foldModel
                     delegate: Loader {
                         width: elements.width
-                        height: foldDown.lineHeight
+                        height: Style.lineHeight
                         visible: String(eval(titleKey)).toUpperCase().includes(foldDownFilter.text.toUpperCase())
 
-                        sourceComponent: {
+                        source: {
                             switch(foldDown.delegateName) {
                             case "radio":
-                                return radioSimpleDelegate
+                                return "RadioSimpleDelegate.qml"
                             case "check":
-                                return checkSimpleDelegate
+                                return "CheckSimpleDelegate.qml"
                             case "checkUserEdit":
-                                return checkUserEditDelegate
+                                return "CheckUserEditDelegate.qml"
                             case "checkUserStatus":
-                                return checkUserStatusDelegate
+                                return "CheckUserStatusDelegate.qml"
                             case "checkActivity":
-                                return checkActivityDelegate
+                                return "CheckActivityDelegate.qml"
                             default:
-                                return emptyDelegate
+                                return ""
                             }
                         }
-
+/* Replaced with direct url in Loader source...
                         Component {     // Delegate for wrong delegateName
                             id: emptyDelegate
                             Control {
@@ -211,7 +222,7 @@ Column {
                         Component {
                             id: checkUserEditDelegate
                             CheckUserEditDelegate {}    // Add user's connection status
-                        }
+                        }*/
 
                     }
                 }
