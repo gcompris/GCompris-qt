@@ -19,10 +19,12 @@ Row {
     property string info: ""
     property string textColor: Style.selectedPalette.text
     property alias infoText: infoText
+    property int labelWidth: 0
+    property int infoWidth: 0
     spacing: Style.margins
 
     DefaultLabel {
-        width: labelWidth
+        width: informationLine.labelWidth > 0 ? informationLine.labelWidth : undefined
         horizontalAlignment: Text.AlignLeft
         text: informationLine.label
         font.bold: true
@@ -31,7 +33,7 @@ Row {
 
     DefaultLabel {
         id: infoText
-        width: infoWidth
+        width: informationLine.infoWidth > 0 ? informationLine.infoWidth : undefined
         horizontalAlignment: Text.AlignLeft
         color: enabled ? informationLine.textColor : "gray"
         text: informationLine.info

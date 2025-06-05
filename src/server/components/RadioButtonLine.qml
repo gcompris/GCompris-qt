@@ -31,6 +31,7 @@ Row {
 
     DefaultLabel {
         id: title
+        anchors.verticalCenter: parent.verticalCenter
         horizontalAlignment: Text.AlignLeft
         font.bold: true
         color: enabled ? Style.selectedPalette.text : "gray"

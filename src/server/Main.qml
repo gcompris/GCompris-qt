@@ -71,6 +71,8 @@ Window {
         property string serverID: "GCompris-Teachers"
         property string port: "65524"
         property bool navigationPanelRight: true
+        property bool darkTheme: true
+        onDarkThemeChanged: Style.isDarkTheme = darkTheme
     }
 
     TopPanel {
