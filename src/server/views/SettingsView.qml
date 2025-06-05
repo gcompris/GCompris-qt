@@ -1,9 +1,11 @@
 /* GCompris - SettingsView.qml
  *
  * SPDX-FileCopyrightText: 2023 Bruno Anselme <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -19,7 +21,7 @@ Item {
     id: settingsView
     property var hostInformations: ({})
     property int labelWidth: 16 * Style.textSize
-    property int infoWidth: scrollInfos.width - labelWidth - (2 * mainColumn.anchors.margins)
+    property int infoWidth: mainColumn.width - labelWidth - Style.margins
 
     File { id: file }
 
@@ -27,7 +29,7 @@ Item {
         id: logo
         anchors.top: parent.top
         anchors.left: parent.left
-        anchors.margins: 10
+        anchors.margins: Style.margins
         source: 'qrc:/gcompris/src/server/resource/gcompris-icon.png'
     }
 
@@ -36,7 +38,7 @@ Item {
         anchors.top: logo.bottom
         anchors.left: logo.left
         anchors.right: logo.right
-        anchors.margins: 10
+        anchors.margins: Style.margins
         background: Item {}
         spacing: Style.margins
         currentIndex: 0
@@ -83,34 +85,35 @@ Item {
 
         SplitView { // First item in SwipeView
             id: splitSettings
-            anchors.margins: 3
 
             ScrollView {
                 id: scrollInfos
-                SplitView.minimumWidth: 400
                 SplitView.fillWidth: true
                 SplitView.fillHeight: true
-                ColumnLayout {
+                Column {
                     id: mainColumn
-                    spacing: 2
-                    anchors.fill: parent
-                    anchors.margins: 10
+                    x: Style.margins
+                    width: splitSettings.width * 0.75 // TODO refactor that part properly...
+                    height: childrenRect.height
+                    spacing: Style.margins
+
+                    Item {
+                        width: 1
+                        height: Style.hugeMargins
+                    }
 
                     Row {
-                        Layout.preferredHeight: 30
-                        Text {
-                            height: parent.height
+                        spacing: Style.margins
+
+                        DefaultLabel {
                             width: settingsView.labelWidth
+                            horizontalAlignment: Text.AlignLeft
                             text: qsTr("Server ID")
-                            verticalAlignment: Text.AlignVCenter
                             font.bold: true
-                            font.pixelSize: Style.textSize + 1
-                            color: Style.selectedPalette.text
                         }
 
                         UnderlinedTextInput {
                             id: serverID
-                            height: parent.height
                             width: settingsView.infoWidth
                             activeFocusOnTab: true
                             focus: true
@@ -119,19 +122,17 @@ Item {
                         }
                     }
                     Row {
-                        Layout.preferredHeight: 30
-                        Text {
-                            height: parent.height
+                        spacing: Style.margins
+
+                        DefaultLabel {
                             width: settingsView.labelWidth
+                            horizontalAlignment: Text.AlignLeft
                             text: qsTr("Port")
-                            verticalAlignment: Text.AlignVCenter
                             font.bold: true
-                            font.pixelSize: Style.textSize + 1
-                            color: Style.selectedPalette.text
                         }
+
                         UnderlinedTextInput {
                             id: portField
-                            height: parent.height
                             width: settingsView.infoWidth
                             activeFocusOnTab: true
                             focus: true
@@ -169,6 +170,7 @@ Item {
                     Rectangle { Layout.fillWidth: true; Layout.preferredHeight: 1; color: "black" }
 
                     RadioButtonLine {
+                        title.width: settingsView.labelWidth
                         label: qsTr("Navigation panel")
                         radios: [qsTr("Left"), qsTr("Right")]
                         current: serverSettings.navigationPanelRight ? 1 : 0
@@ -180,24 +182,25 @@ Item {
                     }
 
                     RadioButtonLine {
+                        title.width: settingsView.labelWidth
                         label: qsTr("Font pixel size")
                         radios: [12, 14, 16, 18, 20]
                         current: radios.indexOf(Style.textSize)
                         onRadioCheckChanged: (index) => { Style.textSize = radios[index] }
                     }
 
-                    Rectangle {
-                        Layout.fillWidth: true
-                        Layout.fillHeight: true
-                        Layout.minimumHeight: 10
-                        color: "transparent"
+                    Item {
+                        width: 1
+                        height: Style.hugeMargins
                     }
                 }
             }
 
             ColumnLayout {
-                SplitView.preferredWidth: 250
-                SplitView.minimumWidth: 200
+                id: activitiesColumn
+                SplitView.preferredWidth: 200
+                SplitView.minimumWidth: 100
+                SplitView.maximumWidth: childrenRect.width
                 SplitView.fillHeight: true
 
                 Text {
