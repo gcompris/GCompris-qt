@@ -1,10 +1,12 @@
 /* GCompris - ViewButton.qml
  *
  * SPDX-FileCopyrightText: 2021 Emmanuel Charruau <echarruau@gmail.com>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Emmanuel Charruau <echarruau@gmail.com>
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -15,11 +17,15 @@ import "../singletons"
 
 Button {
     id: button
-    width: 180
-    height: Style.bigControlSize
+    width: button.defaultWidth
+    height: button.defaultHeight
+
+    property int defaultWidth: Style.bigControlSize * 4
+    property int defaultHeight: Style.bigControlSize
+
     opacity: enabled ? 1 : 0.5
     contentItem: Text {
-        anchors.fill: button
+        anchors.fill: button.background
         anchors.margins: Style.margins
         text: button.text
         horizontalAlignment: Text.AlignHCenter
@@ -33,7 +39,7 @@ Button {
     background: Rectangle {
         implicitWidth: button.width
         implicitHeight: button.height
-        radius: 5
+        radius: Style.defaultRadius
         color: button.pressed ? Style.selectedPalette.highlight :
             (button.enabled && button.hovered ? Style.selectedPalette.accent :
             Style.selectedPalette.alternateBase)
