@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.6\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -2033,6 +2033,8 @@ msgid ""
 "Connect the provided red LED to the battery in forward bias. Don't worry "
 "about the broken LED for now."
 msgstr ""
+"მიაერთეთ მოცემული წითელი LED ელემენტს პირდაპირი წანაცვლებით. ამ დროისთვის ნუ "
+"ინერვიულებთ LED-ის გადაწვის შესახებ."
 
 #: activities/analog_electricity/TutorialDataset.qml:267
 msgctxt "TutorialDataset|"
@@ -2045,6 +2047,8 @@ msgid ""
 "One can limit the electrical energy by restricting the current flow in a "
 "circuit. That means using a resistor."
 msgstr ""
+"შეგიძლიათ, შეზღუდოთ ელექტროენერგია წრედში მიმდინარე დინების შეზღუდვით. ეს "
+"რეზისტორის გამოყენებას ნიშნავს."
 
 #: activities/analog_electricity/TutorialDataset.qml:269
 msgctxt "TutorialDataset|"
@@ -2110,6 +2114,8 @@ msgid ""
 "Provide audio-visual feedback when using the mouse to help discovering its "
 "usage for young children."
 msgstr ""
+"აუდიო-ვიზუალური უკუკავშირი თაგუნას გადაადგილებისას პატარა ბავშვებს მისი "
+"გამოყენების სწავლაში ეხმარება."
 
 #. Help prerequisite
 #: activities/baby_mouse/ActivityInfo.qml:21
@@ -2137,6 +2143,8 @@ msgid ""
 "The leftmost column contains 4 ducks, clicking on one of them produces a "
 "sound and an animation."
 msgstr ""
+"ყველაზე მარცხენა სვეტი 4 იხვს შეიცავს. ერთ-ერთ მათგანზე დაწკაპუნება ხმის "
+"გამოცემას და ანიმაციას იწვევს."
 
 #: activities/baby_mouse/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -2144,6 +2152,8 @@ msgid ""
 "The central area contains a blue duck, moving the mouse cursor or doing a "
 "drag gesture on a touchscreen makes the blue duck move."
 msgstr ""
+"ცენტრალური ადგილი შეიცავს ლურჯ იხვს. თაგუნას კურსორის გადაადგილება, ან "
+"გადათრევა ლურჯი იხვის გადაადგილებას იწვევს."
 
 #: activities/baby_mouse/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -2186,6 +2196,8 @@ msgid ""
 "Move a piece by dragging it. Use the rotation button if necessary. More "
 "complicated levels can be found in tangram activity."
 msgstr ""
+"წაიღეთ ნაწილი მისი გადათრევით. თუ საჭიროა, გამოიყენეთ ბრუნვის ღილაკი. უფრო "
+"ძნელი დონეები tangram-ში შეგიძლიათ, იპოვოთ."
 
 #: activities/baby_wordprocessor/ActivityConfig.qml:28
 msgctxt "ActivityConfig|"
@@ -2552,6 +2564,8 @@ msgid ""
 "When your level is finished you can save it to a file by clicking on the "
 "'Save' button on the side."
 msgstr ""
+"როცა თქვენი დონე დასრულდება, შეგიძლიათ, ის ფაილში შეინახოთ, გვერდით არსებული "
+"ღილაკით \"შენახვა\"."
 
 #: activities/balancebox/ActivityInfo.qml:43
 msgctxt "ActivityInfo|"
@@ -2559,6 +2573,9 @@ msgid ""
 "To return to the activity settings click on the home-button on the bar or "
 "press Escape on your keyboard or the back button on your mobile device."
 msgstr ""
+"აქტივობის მორგებაზე დასაბრუნებლად დააწკაპუნეთ საწყის-ღილაკზე პანელზე, ან "
+"დააჭირეთ ღილაკს Esc კლავიატურაზე, ან თქვენი მობილური მოწყობილობის უკან "
+"გადასვლის ღილაკზე."
 
 #: activities/balancebox/ActivityInfo.qml:44
 msgctxt "ActivityInfo|"
@@ -2574,6 +2591,8 @@ msgid ""
 "Either create your levels by starting the level editor in the activity "
 "settings menu and then load your file, or choose the 'built-in' level set."
 msgstr ""
+"ან შექმენით თქვენი დონეები დონეების რედაქტორში აქტივობების მორგების მენიუში "
+"და ჩატვირთეთ თქვენი ფაილი, ან აირჩიეთ 'ჩაშენებული' დონეების ნაკრები."
 
 #: activities/balancebox/balancebox.js:106
 #, qt-format
@@ -2587,6 +2606,8 @@ msgid ""
 "You selected the user-defined level set, but you have not yet loaded any "
 "user level!"
 msgstr ""
+"თქვენ აირჩიეთ მომხმარებლის აღწერილი დონეების ნაკრები, მაგრამ ისინი ჯერ არ "
+"ჩაგიტვირთავთ!"
 
 #: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
@@ -2763,6 +2784,7 @@ msgid ""
 "This activity helps you to learn the concept of conversion from decimal "
 "number system to binary number system."
 msgstr ""
+"ეს აქტივობა დაგეხმარებათ, ისწავლოთ ათობითი სისტემიდან ორობითში გადაყვანა."
 
 #. Help goal
 #: activities/binary_bulb/ActivityInfo.qml:20
@@ -2783,6 +2805,8 @@ msgid ""
 "Turn on the right bulbs to represent the binary of the given decimal number. "
 "When you have achieved it, press OK."
 msgstr ""
+"ჩართეთ სწორი ნათურები, რომ წარმოადგინოთ მითითებული ათობითი რიცხვის ორობითი "
+"წარმოდგენა. როცა მიაღწევთ ამას, დააწკაპუნეთ ღილაკზე 'დიახ'."
 
 #: activities/binary_bulb/BinaryBulb.qml:84
 msgctxt "BinaryBulb|"
@@ -2796,6 +2820,9 @@ msgid ""
 "and 1. Mathematically, these states are represented by 0 and 1, which makes "
 "up the binary system of numeration."
 msgstr ""
+"კომპიუტერები დასათვლელად ტრანზისტორებს იყენებენ და ტრანზისტორებს, მხოლოდ, "
+"ორი მდგომარეობა აქვთ, 0 და 1. მათემატიკურად ეს მდგომარეობები წარმოდგენილია 0-"
+"ით და 1-ით, რაც მათ ათვლის სისტემას ორობითს ხდის."
 
 #: activities/binary_bulb/BinaryBulb.qml:92
 msgctxt "BinaryBulb|"
@@ -2808,6 +2835,8 @@ msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
 "to 255 with 8 bits only."
 msgstr ""
+"ორობითი სისტემა ამ რიცხვებს ძალიან ეფექტურად იყენებს. 0-დან 255-მდე "
+"დასათვლელად, მხოლოდ, 8 ბიტია საჭირო."
 
 #: activities/binary_bulb/BinaryBulb.qml:100
 msgctxt "BinaryBulb|"
@@ -2831,6 +2860,8 @@ msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
 "equal to binary 101."
 msgstr ""
+"მათი შესაბამისი ბიტები დაყენებულია 1-ზე, სხვები კი 0-ზე. ათობითი 5 ორობითში "
+"101-ს უდრის."
 
 #: activities/binary_bulb/BinaryBulb.qml:112
 msgctxt "BinaryBulb|"
@@ -3158,6 +3189,8 @@ msgid ""
 "In some levels, you need to find the day of the week for a given date. In "
 "this case, click on the corresponding day of the week in the list."
 msgstr ""
+"ზოგიერთ დონეზე გჭირდებათ, იპოვოთ კვირის დღე მოცემული თარიღისთვის. ამ "
+"შემთხვევაში სიაში კვირის შესაბამის დღეზე დააწკაპუნეთ."
 
 #: activities/calendar/ActivityInfo.qml:26
 #: activities/find_the_day/ActivityInfo.qml:26
@@ -3476,6 +3509,9 @@ msgid ""
 "You are in charge of the canal lock. Open the gates and the locks in the "
 "right order, so that Tux can travel through the gates in both directions."
 msgstr ""
+"თქვენ პასუხისმგებელი ბრძანდებით არხის ჩაკეტვაზე. გახსენით კარიბჭეები და "
+"საკეტები სწორი მიმდევრობით ისე, რომ ტუქსმა კარიბჭეებში მოძრაობა ორივე "
+"მხრიდან შეძლოს."
 
 #: activities/canal_lock/CanalLock.qml:74
 msgctxt "CanalLock|"
@@ -4440,6 +4476,7 @@ msgid ""
 "Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
+"გადაადგილების თარიღები აღებულია საიტიდან &lt;https://www.wikipedia.org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -4950,6 +4987,8 @@ msgid ""
 "The shortest hand indicates the hours, a longer hand indicates the minutes, "
 "and the longest hand indicates the seconds."
 msgstr ""
+"მოკლე ისარი საათებზე მიუთითებს, გრძელი - წუთებზე, ყველაზე გრძელი კი - "
+"წამებზე."
 
 #: activities/clockgame/Clockgame.qml:112
 msgctxt "Clockgame|"
@@ -5035,6 +5074,7 @@ msgid ""
 "This activity teaches how mixing primary paint colors works (subtractive "
 "mixing)."
 msgstr ""
+"ეს აქტივობა ძირითადი ფერების შერევის წესებს ასწავლის (სუბტრაქტული შერევა)."
 
 #: activities/color_mix/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -5144,6 +5184,7 @@ msgid ""
 "This activity teaches how mixing primary light colors works (additive "
 "mixing)."
 msgstr ""
+"ეს აქტივობა ძირითადი სინათლის ფერების შერევას ასწავლის (დამატებითი შერევა)."
 
 #: activities/color_mix_light/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -5151,6 +5192,8 @@ msgid ""
 "Change the color by moving the sliders on the flashlights or by clicking on "
 "the + and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
+"შეცვალეთ ფერი სლაიდების გადათრევით, ან + და - ღილაკებზე დაჭერით. შემდეგ "
+"დააწკაპუნეთ ღილაკზე 'დიახ', რათა დაადასტუროთ თქვენი არჩევანი."
 
 #: activities/color_mix_light/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -5595,7 +5638,7 @@ msgctxt "board2_0|"
 msgid ""
 "Vincent van Gogh, The Bridge of Langlois at Arles with a lady with umbrella "
 "- 1888"
-msgstr ""
+msgstr "ვინცენტ ვან გოგი, ლანგლის ხიდი არლსთან და ქალბატონი ქოლგით - 1888"
 
 #: activities/details/resource/board/board3_0.qml:14
 msgctxt "board3_0|"
@@ -5666,6 +5709,8 @@ msgid ""
 "Drag electrical components from the side bar and drop them in the working "
 "area."
 msgstr ""
+"გადმოათრიეთ ელექტრული კომპონენტები გვერდითი პანელიდან და დაყარეთ ისინი "
+"სამუშაო ადგილზე."
 
 #: activities/digital_electricity/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -5673,6 +5718,8 @@ msgid ""
 "To connect two terminals with a wire, click on a first terminal, then on a "
 "second terminal."
 msgstr ""
+"იმისათვის, რომ ორი ტერმინალი მავთულით შეაერთოთ, ჯერ პირველ ტერმინალს "
+"დააჭირეთ, მერე კი მეორეს."
 
 #: activities/digital_electricity/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -5698,6 +5745,9 @@ msgid ""
 "To delete a component or a wire, select the delete tool (cross icon) from "
 "the tool menu, and click on the component or on the wire you want to delete."
 msgstr ""
+"იმისათვის, რომ სადენი, ან ნაწილი წაშალოთ, დააჭირეთ წაშლის ხელსაწყოს (ჯვარი "
+"ხატულა) შესაბამისი მენიუდან და დააწკაპუნეთ ნაწილზე, ან სადენზე, რომლის "
+"წაშლაც გნებავთ."
 
 #: activities/digital_electricity/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -5721,6 +5771,8 @@ msgid ""
 "You can read information about the selected component using the info button "
 "(i icon) from the tool menu."
 msgstr ""
+"იმისათვის, რომ მონიშნული ნაწილის შესახებ ინფორმაცია მიიღოთ, გამოიყენეთ "
+"ინფორმაციის ღილაკი (ხატულა i) ხელსაწყოების მენიუდან."
 
 #: activities/digital_electricity/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
@@ -5728,12 +5780,16 @@ msgid ""
 "You can zoom in or out the working area using the + and - keys, using the "
 "zoom buttons from the tool menu, or using pinch gestures on a touchscreen."
 msgstr ""
+"სამუშაო ადგილის გადიდება და დაპატარავება + და - ღილაკებით, ხელსაწყოების "
+"მენიუდან გადიდების ღილაკებით, ან სენსორულ ეკრანზე ჟესტებით შეგიძლიათ."
 
 #: activities/digital_electricity/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid ""
 "You can pan the working area by clicking on an empty area and dragging it."
 msgstr ""
+"სამუშაო ადგილის გადახვევა ცარიელ ადგილას დაწკაპუნებით და მისი გადათრევით "
+"შეგიძლიათ."
 
 #: activities/digital_electricity/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
@@ -6142,6 +6198,8 @@ msgid ""
 "Light the bulb using the two switches so that the bulb glows when one of the "
 "switch is on and the other is off."
 msgstr ""
+"აანთეთ ნათურა ორი გადამრთველით ისე, რომ ნათურა ენთოს მაშინ, თუ ერთ-ერთი "
+"გადამართველი ჩართულია, მეორე კი - გამორთული."
 
 #: activities/digital_electricity/TutorialDataset.qml:342
 msgctxt "TutorialDataset|"
@@ -9036,7 +9094,7 @@ msgstr "იპოვეთ სწორი გასაყოფი და გ�
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to write a fraction corresponding to a given fractional representation."
-msgstr ""
+msgstr "წილადების ჩაწერის სწავლა მოცემული წილადის წარმოდგენის მიხედვით."
 
 #. Help manual
 #: activities/fractions_find/ActivityInfo.qml:22
@@ -9154,6 +9212,8 @@ msgid ""
 "Remember and copy this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"მიმდევრობების დამახსოვრება და კოპირება: ფორმების, ფერების/ნიშნების და "
+"ზომების ნებისმიერი კომბინაცია."
 
 #: activities/frieze/resource/10/Data.qml:17
 #: activities/frieze/resource/12/Data.qml:16
@@ -9169,6 +9229,8 @@ msgid ""
 "Copy and complete this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"დააკოპირეთ და დაასრულეთ ეს მიმდევრობა: ნიმუშები 4-სა და 7-ს შორის, ფორმების, "
+"ფერების/ნიშნების და ზომების ნებისმიერი კომბინაცია."
 
 #: activities/frieze/resource/11/Data.qml:16
 #: activities/frieze/resource/13/Data.qml:16
@@ -9186,6 +9248,8 @@ msgid ""
 "Remember and copy this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"დაიმახსოვრეთ და დააკოპირეთ ეს მიმდევრობა. 4-სა და 7-ს შორის, ფორმების, "
+"ფერების/ნიშნებისა და ზომების ნებისმიერი კომბინაცია."
 
 #: activities/frieze/resource/13/Data.qml:13
 msgctxt "Data|"
@@ -9193,6 +9257,8 @@ msgid ""
 "Copy and complete this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"დააკოპირეთ და დაასრულეთ ეს მიმდევრობა: ნიმუშები 6-სა და 8-ს შორის, ფორმების, "
+"ფერების/ნიშნებისა და ზომების ნებისმიერი კომბინაცია."
 
 #: activities/frieze/resource/14/Data.qml:13
 msgctxt "Data|"
@@ -9200,6 +9266,8 @@ msgid ""
 "Remember and copy this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"დაიმახსოვრეთ და დააკოპირეთ ეს მიმდევრობა: ნიმუშები 6-სა და 8-ს შორის, "
+"ფორმების, ფერების/ნიშნებისა და ზომების ნებისმიერი კომბინაცია."
 
 #: activities/frieze/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -9234,6 +9302,8 @@ msgid ""
 "Copy and complete this frieze: 3 or 4 shapes with 2 sizes and potentially "
 "same colors/signs."
 msgstr ""
+"დააკოპირეთ და დაასრულეთ ეს მიმდევრობა: 3, ან 4 ფორმა 2 ზომით და დიდი შანსით "
+"იგივე ფერებით/ნიშნებით."
 
 #: activities/frieze/resource/7/Data.qml:14
 msgctxt "Data|"
@@ -9241,6 +9311,8 @@ msgid ""
 "Copy this frieze: patterns between 12 and 15, any combination of shapes, "
 "colors/signs and sizes."
 msgstr ""
+"დააკოპირეთ ეს მიმდევრობა: ნიმუშები 12-სა და 15-ს შორის, ფორმების, ფერების/"
+"ნიშნებისა და ზომების ნებისმიერი კომბინაცია."
 
 #: activities/frieze/resource/8/Data.qml:14
 msgctxt "Data|"
@@ -9248,6 +9320,8 @@ msgid ""
 "Copy and complete this frieze: patterns between 10 and 12, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
+"დააკოპირეთ და დაასრულეთ ეს მიმდევრობა: ნიმუშები 10-სა და 12-ს შორის, "
+"ფორმების, ფერების/ნიშნებისა და ზომების ნებისმიერი კომბინაცია."
 
 #: activities/frieze/resource/9/Data.qml:14
 msgctxt "Data|"
@@ -9255,6 +9329,8 @@ msgid ""
 "Copy and complete this frieze: patterns between 16 and 20, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
+"დააკოპირეთ და დაასრულეთ ეს მიმდევრობა: ნიმუშები 16-სა და 20-ს შორის, "
+"ფორმების, ფერების/ნიშნებისა და ზომების ნებისმიერი კომბინაცია."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -14341,7 +14417,7 @@ msgstr "გამარტივებული ჰანოის ჯოშკ�
 #: activities/hanoi/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Copy the tower on the right-hand side onto the empty peg."
-msgstr ""
+msgstr "დააკოპირეთ კოშკი მარჯვენა მხრიდან ცარიელ პალოზე."
 
 #. Help goal
 #: activities/hanoi/ActivityInfo.qml:20
@@ -14373,7 +14449,7 @@ msgstr "ჰანოის კოშკები"
 #: activities/hanoi_real/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Move the tower from the left-hand side onto the right-side peg."
-msgstr ""
+msgstr "გადაიტანეთ კოშკი მარცხენა მხრიდან მარჯვენა მხარეს მდებარე პალოზე."
 
 #. Help manual
 #: activities/hanoi_real/ActivityInfo.qml:23
@@ -14403,6 +14479,7 @@ msgstr ""
 msgctxt "HanoiReal|"
 msgid "Move the entire stack to the right peg, one disc at a time."
 msgstr ""
+"გადაიტანეთ მთელი ნაკრები მარჯვენა პალოზე, ერთბაშად, მხოლოდ, ერთი დისკო."
 
 #: activities/hanoi_real/HanoiReal.qml:76
 msgctxt "HanoiReal|"
@@ -15298,7 +15375,7 @@ msgstr "ათობითი რიცხვების შესწავლ�
 #: activities/learn_decimals/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Associate the decimal form of a number with its graphic representation."
-msgstr ""
+msgstr "გადააბით რიცხვის ათობითი ფორმა მის გრაფიკულ გამოსახულებას."
 
 #. Help manual
 #: activities/learn_decimals/ActivityInfo.qml:22
@@ -15316,6 +15393,8 @@ msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
 "unit, and each square in it represents one tenth of this unit."
 msgstr ""
+"ნაჩვენებია რიცხვი ათობითში. პანელი ისრით წარმოადგენს სრულ ერთეულს და მასში "
+"არსებული თითოეული კვადრატი ამ ერთეულის მეათედს წარმოადგენს."
 
 #: activities/learn_decimals/Learn_decimals.qml:34
 msgctxt "Learn_decimals|"
@@ -15657,6 +15736,7 @@ msgstr ""
 msgctxt "Learn_quantities|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr ""
+"მოთხოვნილია რაოდენობა. ისარი საშუალებას გაძლევთ, 10-მდე ფორთოხალი აირჩიოთ."
 
 #: activities/learn_quantities/Learn_quantities.qml:20
 msgctxt "Learn_quantities|"
@@ -16051,6 +16131,8 @@ msgid ""
 "At the age of three, Louis became blind due to a severe infection that "
 "spread to his left eye."
 msgstr ""
+"3 წლის ასაკში ლუისი დაბრმავდა ინფექციის გამო, რომელიც მის მარცხენა თვალზე "
+"გავრცელდა."
 
 #: activities/louis-braille/louis_braille_data.js:27
 msgctxt "louis_braille_data|"
@@ -16058,6 +16140,8 @@ msgid ""
 "At the age of 10, he was sent to Paris to study at the Royal Institute for "
 "Blind Youth."
 msgstr ""
+"10 წლის ასაკში ის პარიზში გაგზავნეს ბრმა ახალგაზრდების სამეფო ინსტიტუტში "
+"სასწავლად."
 
 #: activities/louis-braille/louis_braille_data.js:32
 msgctxt "louis_braille_data|"
@@ -16097,6 +16181,8 @@ msgid ""
 "He revised and extended braille to include mathematics, symbols, "
 "punctuations and music notations."
 msgstr ""
+"მან შეასწორა და განავითარა ბრაილი, რომ მასში მათემატიკა, სიმბოლოები, "
+"პუნქტიაცია და მუსიკის ნოტაციებიც ყოფილიყო."
 
 #: activities/louis-braille/louis_braille_data.js:57
 msgctxt "louis_braille_data|"
@@ -17678,6 +17764,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "Home - Exit an activity, go back to menu (Ctrl+W or Escape key)"
 msgstr ""
+"საწყისი - აქტივობიდან გასვლა და მენიუში დაბრუნება (Ctrl+W, ან ღილაკი Esc)"
 
 #: activities/menu/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -18444,6 +18531,7 @@ msgstr ""
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
+"როცა მზად იქნებით, დააწკაპუნეთ ტუქსზე და ის მორზეს ანბანით დაგელაპარაკებათ."
 
 #: activities/morse_code/MorseCode.qml:364
 #, qt-format
@@ -18722,7 +18810,7 @@ msgstr "დაასახელეთ ნოტა"
 #: activities/note_names/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn the names of the notes, in bass and treble clef."
-msgstr ""
+msgstr "ისწავლეთ ნოტის სახელები ბასიდან დაწყებული და ვიოლინოთი დამთავრებული."
 
 #. Help goal
 #: activities/note_names/ActivityInfo.qml:23
@@ -18797,7 +18885,7 @@ msgstr "რიცხვების მიმდევრობა"
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the numbers one after the other according to the numerical sequence."
-msgstr ""
+msgstr "აირჩიეთ რიცხვები სათითაოდ მათი მიმდევრობის შესაბამისად."
 
 #. Help goal
 #: activities/number_sequence/ActivityInfo.qml:20
@@ -18825,12 +18913,13 @@ msgstr "კენტი და ლუწი რიცხვები"
 msgctxt "ActivityInfo|"
 msgid "Move the helicopter to catch the clouds having even or odd numbers."
 msgstr ""
+"გადააადგილეთ ვერტმფრენი, რომ დაიჭიროთ ღრუბლები კენტი ან ლუწი რიცხვებით."
 
 #. Help goal
 #: activities/numbers-odd-even/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize even and odd numbers and their numerical order."
-msgstr ""
+msgstr "ისწავლეთ, როგორ ამოიცნოთ ლუწი და კენტი რიცხვები და მათი მიმდევრობა."
 
 #. Help manual
 #: activities/numbers-odd-even/ActivityInfo.qml:23
@@ -18863,7 +18952,7 @@ msgstr "ეს აქტივობა ლუწ და კენტ რიც�
 msgctxt "NumbersOddEven|"
 msgid ""
 "Even numbers are numbers which leave a remainder of 0 when divided by 2."
-msgstr ""
+msgstr "ლუწი რიცხვების ორზე გაყოფის შემდეგ ნაშთი 0-ს უდრის."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:51
 msgctxt "NumbersOddEven|"
@@ -18876,6 +18965,8 @@ msgid ""
 "Odd numbers are numbers which do not leave a remainder of 0 when divided by "
 "2."
 msgstr ""
+"კენტი რიცხვები ისეთი რიცხვებია, რომლების ორზე გაყოფის შემდეგ ნაშთი 0-ს არ "
+"უდრის."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:63
 #: activities/numbers-odd-even/NumbersOddEven.qml:67
@@ -18892,6 +18983,9 @@ msgid ""
 " If 6 is divided by 2 the result is 3 and the remainder is 0.\n"
 " If 7 is divided by 2 the result is 3 and the remainder is 1."
 msgstr ""
+"ნაშთი რაოდენობაა, რომელიც ერთი რიცხვის მეორეზე გაყოფის შემდეგ \"რჩება\".\n"
+"თუ 6 იყოფა 2-ზე, მაშინ შედეგი 3-ის ტოლია და ნაშთი 0-ის\n"
+"თუ 7 იყოფა 2-ზე, მაშინ შედეგი 3-ის ტოლია და ნაშთი 1-ის."
 
 #: activities/numbers-odd-even/resource/Tutorial2.qml:22
 msgctxt "Tutorial2|"
@@ -18937,6 +19031,7 @@ msgid ""
 "There is an error: when divided by 2, %1 leaves a remainder of 1. Therefore "
 "this is an odd number."
 msgstr ""
+"შეცდომა: როცა %1 იყოფა 2-ზე, ნაშთი 1-ის ტოლია. ამიტომ, ეს რიცხვი კენტია."
 
 #: activities/numbers-odd-even/resource/TutorialBase.qml:64
 #: activities/numbers-odd-even/resource/TutorialBase.qml:94
@@ -18946,6 +19041,7 @@ msgid ""
 "There is an error: when divided by 2, %1 leaves a remainder of 0. Therefore "
 "this is an even number."
 msgstr ""
+"შეცდომა: როცა %1 იყოფა 2-ზე, ნაშთი 0-ის ტოლია. ამიტომ, ეს რიცხვი ლუწია."
 
 #. Activity title
 #: activities/ordering_alphabets/ActivityInfo.qml:21
@@ -18960,6 +19056,8 @@ msgid ""
 "Arrange the given letters in alphabetical order or in reverse alphabetical "
 "order as requested."
 msgstr ""
+"მითითებული ასოების დალაგება ანბანის მიხედვით, ან საპირისპიროდ, როგორც "
+"აირჩევთ."
 
 #. Help manual
 #: activities/ordering_alphabets/ActivityInfo.qml:30
@@ -19087,6 +19185,8 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Arrange the given numbers in ascending or descending order as requested."
 msgstr ""
+"დაალაგეთ მითითებული რიცხვების აღმავალი ან დაღმავალი მიმდევრობით, მოთხოვნის "
+"მიხედვით."
 
 #. Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
@@ -19465,7 +19565,7 @@ msgstr "კაცუსიკა ჰოკუსაი, კანაგავა
 #: activities/paintings/resource/board/board8_0.qml:14
 msgctxt "board8_0|"
 msgid "Utagawa Hiroshige, The Benzaiten Shrine at Inokashira in Snow - 1760-70"
-msgstr ""
+msgstr "უტაგავა ჰიროშიგე: თოვლით ბენზაიტენის ტაძარი ინოკაშირაში - 1760-70"
 
 #: activities/paintings/resource/board/board9_0.qml:14
 msgctxt "board9_0|"
@@ -19638,6 +19738,7 @@ msgstr ""
 msgctxt "Penalty|"
 msgid "Click or tap on the ball to bring it back to its initial position."
 msgstr ""
+"დააწკაპუნეთ, ან დაატყაპუნეთ ბურთზე, რომ ის მის საწყის ადგილას დააბრუნოთ."
 
 #. Activity title
 #: activities/photo_hunter/ActivityInfo.qml:15
@@ -21048,6 +21149,8 @@ msgstr "ვერტიკალურად კითხვის მეცა�
 msgctxt "ActivityInfo|"
 msgid "Read a vertical list of words and say if a given word is in it."
 msgstr ""
+"წაიკითხეთ სიტყვების ვერტიკალური სია და წარმოთქვით შიგნით არსებული ყველა "
+"სიტყვა."
 
 #. Help manual
 #: activities/readingv/ActivityInfo.qml:24
@@ -21128,7 +21231,7 @@ msgstr "მოცემული გამოსახულების ან�
 #: activities/redraw_symmetrical/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Reproduce the image symmetrically on the empty grid."
-msgstr ""
+msgstr "შექმენით გამოსახულება სიმეტრიულად ცარიელ ბადეზე."
 
 #. Help goal
 #: activities/redraw_symmetrical/ActivityInfo.qml:20
@@ -21209,6 +21312,8 @@ msgstr ""
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
+"ისწავლეთ განახლებად ენერგიაზე დაფუძნებული ელექტრული სისტემის შესახებ. "
+"ისიამოვნეთ."
 
 #: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
@@ -21317,6 +21422,8 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to read and write Roman numerals and convert them to Arabic numerals."
 msgstr ""
+"ისწავლეთ, როგორ წაიკითხოთ რომაული რიცხვები და როგორ გადაიყვანოთ ისინი "
+"არაბულში."
 
 #. Help manual
 #: activities/roman_numerals/ActivityInfo.qml:23
@@ -21428,6 +21535,7 @@ msgctxt "RomanNumerals|"
 msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
 msgstr ""
+"ახლა თქვენ იცით წესები და შეგიძლიათ რომაული რიცხვების წერა და მათი წაკითხვა."
 
 #: activities/roman_numerals/RomanNumerals.qml:385
 #, qt-format
@@ -24783,7 +24891,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to solve vertical subtractions, with the borrowing by regrouping "
 "method."
-msgstr ""
+msgstr "ისწავლეთ ვერტიკალური გამოკლების ამოხსნა სესხებით გადაჯგუფების მეთოდით."
 
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:22
@@ -24925,7 +25033,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to solve vertical subtractions, with the borrowing by compensation "
 "method."
-msgstr ""
+msgstr "ისწავლეთ ვერტიკალური გამოკლებების ამოხსნა სესხების მეთოდით."
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
@@ -24967,6 +25075,8 @@ msgid ""
 "Tux has come back from fishing on his boat. Bring the water system back up "
 "so he can take a shower."
 msgstr ""
+"ტუქსი დაბრუნდა მის ნავზე თევზაობისთვის. დააბრუნეთ წყლის სისტემა, რომ მან "
+"შხაპის მიღება შეძლოს."
 
 #. Help goal
 #: activities/watercycle/ActivityInfo.qml:20
@@ -24990,6 +25100,7 @@ msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
 "the water cycle."
 msgstr ""
+"მზე წყლის ციკლის მთავარი ნაწილია. დააწკაპუნეთ მზეზე წყლის ციკლის დასაწყებად."
 
 #: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
@@ -25127,6 +25238,8 @@ msgid ""
 "Automatic application of new language when changing it in the menu (no need "
 "to restart GCompris)"
 msgstr ""
+"ახალი მენიუს ავტომატური გამოყენება მისი მენიუდან შეცვლისას (GCompris-ს "
+"რესტარტი არ დასჭირდება)"
 
 #: core/ChangeLog.qml:40
 msgctxt "ChangeLog|"
@@ -25137,6 +25250,8 @@ msgstr "გაშვების სურათის ჩვენება"
 msgctxt "ChangeLog|"
 msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgstr ""
+"ახალი ბრძანების სტრიქონის პარამეტრი რენდერერის გადასართველად (--renderer "
+"renderer)"
 
 #: core/ChangeLog.qml:50
 msgctxt "ChangeLog|"
@@ -25146,7 +25261,7 @@ msgstr "დაემატა თარგმანი ლატვიური�
 #: core/ChangeLog.qml:61
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
-msgstr ""
+msgstr "დაემატა თარგმანები ბულგარულად, გალიციურად და სვაჰილისთვის"
 
 #: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
@@ -25214,18 +25329,20 @@ msgstr ""
 #: core/ChangeLog.qml:100
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
-msgstr ""
+msgstr "გასწორდა მკვდარი ღილაკების გამოტოვება Linux-ზე აკრეფის აქტიობებისთვის"
 
 #: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
-msgstr ""
+msgstr "გასწორდა დონის ჩამოყრა, როცა ლოგიკური ასოცირებებში დონეს ხელით ცვლით"
 
 #: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
 msgstr ""
+"გასწორდა ანბანის მიმდევრობის, ლუდი და კენტი რიცხვების და რიცხვების დალაგების "
+"აქტივობები"
 
 #: core/ChangeLog.qml:109 core/ChangeLog.qml:117
 msgctxt "ChangeLog|"
@@ -25256,6 +25373,8 @@ msgstr "დაემატა თარგმანი აზერბაიჯ�
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr ""
+"ახალი რუკები და განახლება რუკებისთვის, რომლებიც გეოგრაფიული აქტივობებისთვის "
+"გამოიყენება"
 
 #: core/ChangeLog.qml:123
 msgctxt "ChangeLog|"
@@ -25328,6 +25447,8 @@ msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
 "Finnish...)."
 msgstr ""
+"განახლდა თარგმანები ბევრი ენისთვის (ბრეტონული, ბრაზილიური პორტუგალიური, "
+"ფინური...)."
 
 #: core/ChangeLog.qml:150
 msgctxt "ChangeLog|"
@@ -25362,6 +25483,8 @@ msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
 "Composition)."
 msgstr ""
+"ქმნილებების (ბავშვის სიტყვების პროცესორის, ბალანსის ყუთის და პიანინოს "
+"კომპოზიციების) შენახვა/ჩატვირთვა."
 
 #: core/ChangeLog.qml:156
 msgctxt "ChangeLog|"
@@ -25416,6 +25539,9 @@ msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
 "(92% translated), Russian (98% translated), Slovak (92% translated), Turkish."
 msgstr ""
+"დაემატა თარგმანები ენებისთვის: კატალანური (ვალენსია), ჩინური ტრადიციული, "
+"ფინური (92% ნათარგმნია), ღრუსული (98% ნათარგმნია), სლოვაკური (92% "
+"ნათარგმნია) და თურქული."
 
 #: core/ChangeLog.qml:163
 msgctxt "ChangeLog|"
@@ -25521,7 +25647,7 @@ msgstr ""
 #: core/DialogAbout.qml:72
 msgctxt "DialogAbout|"
 msgid "<b>GCompris</b> is a Free Software developed within the KDE community."
-msgstr ""
+msgstr "<b>GCompris</b> KDE-ის საზოგადოების მიერ შემუშავებული პროგრამაა."
 
 #: core/DialogAbout.qml:76
 #, qt-format
@@ -25969,6 +26095,8 @@ msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
 "is used."
 msgstr ""
+"მიუთითეთ, რომელ დონეზე დაიწყება აქტივობა. გამოიყენება მხოლოდ მაშინ, როცა "
+"იყენებთ პარამეტრს --launch."
 
 #: core/main.qml:238
 msgctxt "main|"
@@ -25976,6 +26104,8 @@ msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
 msgstr ""
+"გნებავთ ავტომატურად გადმოვწერო, ან განვაახლო შემდეგი გარე აქტივები GCompris-"
+"ის გაშვებისას?"
 
 #: core/main.qml:240
 msgctxt "main|"
