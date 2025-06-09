@@ -8,10 +8,11 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import core 1.0
 
-import "."
 import "../../core"
 import "memory.js" as Activity
 
@@ -66,13 +67,13 @@ ActivityBase {
             property alias player2Score: player2Score
             property var playQueue
             property int selectionCount
-            readonly property var levels: activity.datasets !=  0 ? activity.datasets : activity.dataset
+            readonly property var levels: activity.datasets.length != 0 ? activity.datasets : activity.dataset
             property alias containerModel: containerModel
             property alias cardGrid: cardGrid
             property bool blockClicks: false
             property int columns
             property int rows
-            property bool isMultipleDatasetMode: activity.datasets != 0
+            property bool isMultipleDatasetMode: activity.datasets.length != 0
         }
 
         onStart: {
@@ -122,8 +123,10 @@ ActivityBase {
             property real cardImageHeight: Math.min(cellHeight - GCStyle.baseMargins,
                                                     (cellWidth - GCStyle.baseMargins) * 1.4)
 
+            readonly property CardItem currentCard: currentItem as CardItem
             model: containerModel
             delegate: CardItem {
+                required property var pairData_
                 pairData: pairData_
                 tuxTurn: activityBackground.items.tuxTurn
                 width: cardGrid.cellWidth
@@ -132,6 +135,10 @@ ActivityBase {
                 cardImageHeight: cardGrid.cardImageHeight
                 audioVoices: activity.audioVoices
                 onIsFoundChanged: activityBackground.keyNavigationVisible = false
+
+                Component.onCompleted: {
+                    activity.stop.connect(stop);
+                }
             }
             interactive: false
             highlightFollowsCurrentItem: true
@@ -156,7 +163,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         DialogChooseLevel {
@@ -164,7 +171,7 @@ ActivityBase {
             currentActivity: activity.activityInfo
 
             onSaveData: {
-                levelFolder = dialogActivityConfig.chosenLevels
+                activity.levelFolder = dialogActivityConfig.chosenLevels
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
             }
@@ -176,7 +183,7 @@ ActivityBase {
             }
 
             onClose: {
-                home()
+                activity.home()
             }
             onStartActivity: {
                 activityBackground.stop()
@@ -190,14 +197,14 @@ ActivityBase {
             level: items.currentLevel + 1
             content: BarEnumContent { value: (activity.activityInfo.hasConfig || items.isMultipleDatasetMode) ? (help | home | level | activityConfig ) : (help | home | level ) }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                activity.displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onActivityConfigClicked: {
-                displayDialog(dialogActivityConfig)
+                activity.displayDialog(dialogActivityConfig)
             }
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: home()
+            onHomeClicked: activity.home()
         }
 
         Item {
@@ -235,7 +242,7 @@ ActivityBase {
         states: [
             State {
                 name: "horizontalCards"
-                when: horizontalLayout
+                when: activityBackground.horizontalLayout
                 PropertyChanges {
                     scoreArea.width: player1Score.width * 1.4
                     player2Score.anchors.bottomMargin: player2Score.height * 0.4 + GCStyle.halfMargins
@@ -262,7 +269,7 @@ ActivityBase {
             },
             State {
                 name: "verticalCards"
-                when: !horizontalLayout
+                when: !activityBackground.horizontalLayout
                 PropertyChanges {
                     scoreArea.height: player1Score.height * 1.4
                     player2Score.anchors.bottomMargin: player2Score.height * 0.2
@@ -308,7 +315,7 @@ ActivityBase {
                         cardGrid.currentIndex -= 1;
                     }
                 }
-                while(cardGrid.currentItem.isFound && !items.blockClicks)
+                while(cardGrid.currentCard.isFound && !items.blockClicks)
             }
             else if(event.key === Qt.Key_Right) {
                 do {
@@ -318,7 +325,7 @@ ActivityBase {
                         cardGrid.currentIndex += 1
                     }
                 }
-                while(cardGrid.currentItem.isFound && !items.blockClicks)
+                while(cardGrid.currentCard.isFound && !items.blockClicks)
             }
             else if(event.key === Qt.Key_Up) {
                 do {
@@ -330,7 +337,7 @@ ActivityBase {
                             cardGrid.currentIndex += cardGrid.count - 1
                     }
                 }
-                while(cardGrid.currentItem.isFound && !items.blockClicks)
+                while(cardGrid.currentCard.isFound && !items.blockClicks)
             }
             else if(event.key === Qt.Key_Down) {
                 do {
@@ -342,10 +349,10 @@ ActivityBase {
                             cardGrid.currentIndex -= cardGrid.count - 1
                     }
                 }
-                while(cardGrid.currentItem.isFound && !items.blockClicks)
+                while(cardGrid.currentCard.isFound && !items.blockClicks)
             }
             else if(event.key === Qt.Key_Space || event.key === Qt.Key_Enter || event.key === Qt.Key_Return)
-                if(cardGrid.currentItem.isBack && !cardGrid.currentItem.isFound && !cardGrid.currentItem.tuxTurn && items.selectionCount < 2) cardGrid.currentItem.selected()
+                if(cardGrid.currentCard.isBack && !cardGrid.currentCard.isFound && !cardGrid.currentCard.tuxTurn && items.selectionCount < 2) cardGrid.currentCard.selected()
         }
 
         Loader {

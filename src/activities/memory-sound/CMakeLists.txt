@@ -11,4 +11,6 @@ GCOMPRIS_ADD_RESOURCE(activities/memory-sound
   *.svg
   resource/*.${COMPRESSED_AUDIO}
   resource/*.svg
+  DEPENDENCIES
+  memory
 )

@@ -19,12 +19,12 @@ Data {
 
     readonly property string imageUrl: "qrc:/gcompris/src/activities/memory-enumerate/resource/butterfly.svg"
 
-    readonly property var texts: [
+    readonly property list<var> texts: [
                 ["", 1],
                 ["", 2]
             ]
 
-    readonly property var repeaterModels: [
+    readonly property list<var> repeaterModels: [
         [
             [{ "itemX": 0.3, "itemY": 0.45, "itemSize": 0.3, "itemRotation": 30, "itemSource": imageUrl}], ''
         ],
@@ -34,7 +34,7 @@ Data {
         ]
     ]
 
-    readonly property var sounds: [
+    readonly property list<var> sounds: [
                 ["",
                  "voices-$CA/$LOCALE/alphabet/U0031.$CA"],
                 ["",
