@@ -13,8 +13,6 @@
 .import core 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var url = "qrc:/gcompris/src/activities/followline/resource/"
-
 var numberOfLevel = 8
 var items
 var createdLineParts
