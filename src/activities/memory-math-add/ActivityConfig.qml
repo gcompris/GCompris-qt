@@ -20,7 +20,7 @@ Item {
     property alias modeBox: modeBox
     width: flick.width
     height: childrenRect.height
-    property var availableModes: [
+    property list<var> availableModes: [
         { "text": qsTr("1 player"), "value": 1 },
         { "text": qsTr("2 players"), "value": 2 }
     ]
@@ -29,7 +29,7 @@ Item {
         width: parent.width
         GCComboBox {
             id: modeBox
-            model: availableModes
+            model: activityConfiguration.availableModes
             boxBackground: activityConfiguration.configBackground
             label: qsTr("Choose number of players")
         }

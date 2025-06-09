@@ -10,6 +10,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import core 1.0
 
@@ -31,10 +33,6 @@ Flipable {
     property GCAudio audioVoices
 
     signal stop
-
-    Component.onCompleted: {
-        activity.stop.connect(stop);
-    }
 
     onStop: {
         timer.stop();
@@ -64,10 +62,11 @@ Flipable {
         interval: 1500
         running: false
         repeat: false
-        onTriggered: selectionReady()
+        onTriggered: card.selectionReady()
     }
 
     back: Image {
+        id: backImage
         source: card.pairData.emptyCard
         anchors.centerIn: card
         width: card.cardImageWidth
@@ -77,16 +76,16 @@ Flipable {
         Image {
             id: contentImage
             source: card.pairData.image
-            width: parent.paintedWidth * 0.9
-            height: parent.paintedHeight * 0.9
+            width: backImage.paintedWidth * 0.9
+            height: backImage.paintedHeight * 0.9
             sourceSize.height: height
             anchors.centerIn: parent
             fillMode: Image.PreserveAspectFit
         }
         GCText {
             anchors.centerIn: parent
-            width: parent.paintedWidth * 0.9
-            height: parent.paintedHeight * 0.9
+            width: backImage.paintedWidth * 0.9
+            height: backImage.paintedHeight * 0.9
             fontSizeMode: Text.Fit
             fontSize: 64
             horizontalAlignment: Text.AlignHCenter
@@ -99,6 +98,7 @@ Flipable {
         Repeater {
             model: card.pairData.repeaterModel
             Image {
+                required property var modelData
                 source: modelData.itemSource
                 x: contentImage.x + contentImage.width * modelData.itemX
                 y: contentImage.y + contentImage.height * modelData.itemY
@@ -134,7 +134,7 @@ Flipable {
             NumberAnimation { target: rotation; property: "angle"; duration: 750 }
             ScriptAction { script: {
                 if(card.pairData.sound && !card.isBack)
-                    audioVoices.play(card.pairData.sound)
+                    card.audioVoices.play(card.pairData.sound)
                 }
             }
         }
@@ -143,7 +143,7 @@ Flipable {
     MouseArea {
         anchors.fill: parent
         enabled: card.isBack && !card.isFound && !card.tuxTurn && items.selectionCount < 2
-        onClicked: selected()
+        onClicked: card.selected()
     }
 
     function selected() {

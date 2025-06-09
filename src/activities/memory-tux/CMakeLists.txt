@@ -8,4 +8,6 @@ GCOMPRIS_ADD_RESOURCE(activities/memory-tux
   *.qml
   RESOURCES
   *.svg
+  DEPENDENCIES
+  memory
 )

@@ -9,4 +9,6 @@ GCOMPRIS_ADD_RESOURCE(activities/memory-math-add-minus
   resource/*/Data.qml
   RESOURCES
   *.svg
+  DEPENDENCIES
+  memory
 )

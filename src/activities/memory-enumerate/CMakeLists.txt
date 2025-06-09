@@ -10,4 +10,6 @@ GCOMPRIS_ADD_RESOURCE(activities/memory-enumerate
   RESOURCES
   *.svg
   resource/*.svg
+  DEPENDENCIES
+  memory
 )

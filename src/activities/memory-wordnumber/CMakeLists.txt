@@ -9,4 +9,6 @@ GCOMPRIS_ADD_RESOURCE(activities/memory-wordnumber
   *.js
   RESOURCES
   *.svg
+  DEPENDENCIES
+  memory
 )
