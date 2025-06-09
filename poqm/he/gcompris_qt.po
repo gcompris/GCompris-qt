@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-06-01 21:47+0300\n"
+"PO-Revision-Date: 2025-06-08 21:08+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -2804,20 +2804,14 @@ msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr "הפעילות הזאת מלמדת כיצד להפוך מספרים עשרוניים למספרים בינריים."
 
 #: activities/binary_bulb/BinaryBulb.qml:88
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Computers use transistors to count and transistors have only two states, "
-#| "0 and 1. Mathematically, these states are represented by 0 and 1, which "
-#| "makes up the binary system of numeration."
 msgctxt "BinaryBulb|"
 msgid ""
 "Computers use transistors to count and transistors have only two states, 0 "
 "and 1. Mathematically, these states are represented by 0 and 1, which makes "
 "up the binary system of numeration."
 msgstr ""
-"מחשבים משתמשים בדיודות כדי לספור, ולדיודות יש רק שני מצבים- 0 ו 1. חשבונית, "
-"המצבים האלו מיוצגים באמצעות 0 ו 1 כך שנוצרת מערכת מיספור בינארית"
+"מחשבים משתמשים בטרנזיסטורים כדי לספור, ולטרנזיסטורים יש רק שני מצבים: 0 ו־1. "
+"חשבונית, המצבים האלו מיוצגים באמצעות 0 ו־1 כך שנוצרת מערכת ספירה בינרית."
 
 #: activities/binary_bulb/BinaryBulb.qml:92
 msgctxt "BinaryBulb|"
@@ -2825,18 +2819,13 @@ msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr "בפעילות הזו 0 ו־1 מיוצגים באמצעות נורות, שניתן להפעיל ולכבות."
 
 #: activities/binary_bulb/BinaryBulb.qml:96
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Binary system uses these numbers very efficiently, allowing to count from "
-#| "0 to 255 with 8 bits only."
 msgctxt "BinaryBulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
 "to 255 with 8 bits only."
 msgstr ""
-"מערכת מספרים בינארית משתמשת במספרים באופן מאוד יעיל, ומאפשרת לספור מ0 עד 255 "
-"באמצעות 8 ביטים בלבד."
+"מערכת מספרים בינרית משתמשת במספרים באופן מאוד יעיל, ומאפשרת לספור מ־0 עד 255 "
+"באמצעות 8 סיביות בלבד."
 
 #: activities/binary_bulb/BinaryBulb.qml:100
 #, fuzzy
@@ -2866,26 +2855,18 @@ msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr "כדי להפוך 5 עשרוני לערך בינארי, 1 ו 4 מחוברים"
 
 #: activities/binary_bulb/BinaryBulb.qml:108
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 "
-#| "is equal to binary 101."
 msgctxt "BinaryBulb|"
 msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
 "equal to binary 101."
 msgstr ""
-"הביטים המקבילים להם מכוונים ל־1, האחרים מכוונים ל־0. 5 דצימלי שווה ל־101 "
-"בינארי"
+"הסיביות המקבילות להן מכוונות ל־1, האחרות מכוונות ל־0. 5 עשרוני שווה ל־101 "
+"בינרי."
 
 #: activities/binary_bulb/BinaryBulb.qml:112
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "This image will help you to compute bits' value."
 msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
-msgstr "רישום זה יעזור לך לחשב את ערכם של הביטים."
+msgstr "התמונה הזאת תסייע לך לחשב את ערכן של הסיביות."
 
 #: activities/binary_bulb/BinaryBulb.qml:160
 #, qt-format
@@ -6440,7 +6421,8 @@ msgid ""
 "It takes 4 bits as input represented in the binary coded decimal (BCD) "
 "format and converts the BCD number into a seven segment code."
 msgstr ""
-"הוא מקבל 4 ביטים בינארים דצימאלים כקלט (BCD) וממיר את מספר הBCD לקוד בבסיס 7."
+"הוא מקבל 4 סיביות בעשרוני בקידוד בינרי (BCD) כקלט וממיר את מספר ה־BCD לקוד "
+"בבסיס 7."
 
 #: activities/digital_electricity/TutorialDataset.qml:527
 msgctxt "TutorialDataset|"
@@ -17311,12 +17293,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "כובע קסמים"
+msgstr "כובע הקסמים (חיסור)"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -17407,12 +17386,9 @@ msgstr "%1x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "כובע קסמים"
+msgstr "כובע הקסמים (חיבור)"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -18967,10 +18943,9 @@ msgid "<b>Keyboard shortcuts:</b>"
 msgstr "<b>קיצורי מקשים:</b>"
 
 #: activities/menu/ActivityInfo.qml:39
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Ctrl+B: Show or Hide the control bar"
-msgstr "קטרל+נ (ctrl+b) להראות או להסתיר את סרגל השליטה"
+msgstr "Ctrl+B: הצגה או הסתרה של סרגל הבקרה"
 
 #: activities/menu/ActivityInfo.qml:40
 msgctxt "ActivityInfo|"
@@ -19037,12 +19012,9 @@ msgid "Language selector"
 msgstr "בורר השפה"
 
 #: activities/menu/ConfigurationItem.qml:116
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Enable automatic downloads/updates of sound files"
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
-msgstr "להפעיל הורדה/עידכון אוטומטי של קובצי קולות"
+msgstr "הפעלת הורדה/עדכון אוטומטי של משאבים חיצוניים"
 
 #: activities/menu/ConfigurationItem.qml:146
 msgctxt "ConfigurationItem|"
@@ -27074,7 +27046,7 @@ msgstr "נוסף תרגום לאזרית! מי היה מאמין."
 #: core/ChangeLog.qml:129
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
-msgstr "מפות חדשות ועידכונים למפות בפעילויות הגאוגרפיה"
+msgstr "מפות חדשות ועדכונים למפות בפעילויות הגאוגרפיה"
 
 #: core/ChangeLog.qml:130
 msgctxt "ChangeLog|"
