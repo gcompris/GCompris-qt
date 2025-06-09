@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-06-01 21:46+0300\n"
+"PO-Revision-Date: 2025-06-08 21:08+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -6408,7 +6408,8 @@ msgid ""
 "It takes 4 bits as input represented in the binary coded decimal (BCD) "
 "format and converts the BCD number into a seven segment code."
 msgstr ""
-"הוא מקבל 4 ביטים בינארים דצימאלים כקלט (BCD) וממיר את מספר הBCD לקוד בבסיס 7."
+"הוא מקבל 4 סיביות בעשרוני בקידוד בינרי (BCD) כקלט וממיר את מספר ה־BCD לקוד "
+"בבסיס 7."
 
 #: activities/digital_electricity/TutorialDataset.qml:527
 msgctxt "TutorialDataset|"
@@ -18416,10 +18417,9 @@ msgid "<b>Keyboard shortcuts:</b>"
 msgstr "<b>קיצורי מקשים:</b>"
 
 #: activities/menu/ActivityInfo.qml:39
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Ctrl+B: Show or Hide the control bar"
-msgstr "קטרל+נ (ctrl+b) להראות או להסתיר את סרגל השליטה"
+msgstr "Ctrl+B: הצגה או הסתרה של סרגל הבקרה"
 
 #: activities/menu/ActivityInfo.qml:40
 msgctxt "ActivityInfo|"
@@ -18486,12 +18486,9 @@ msgid "Language selector"
 msgstr "בורר השפה"
 
 #: activities/menu/ConfigurationItem.qml:116
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Enable automatic downloads/updates of sound files"
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
-msgstr "להפעיל הורדה/עידכון אוטומטי של קובצי קולות"
+msgstr "הפעלת הורדה/עדכון אוטומטי של משאבים חיצוניים"
 
 #: activities/menu/ConfigurationItem.qml:146
 msgctxt "ConfigurationItem|"
@@ -26418,7 +26415,7 @@ msgstr "נוסף תרגום לאזרית! מי היה מאמין."
 #: core/ChangeLog.qml:122
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
-msgstr "מפות חדשות ועידכונים למפות בפעילויות הגאוגרפיה"
+msgstr "מפות חדשות ועדכונים למפות בפעילויות הגאוגרפיה"
 
 #: core/ChangeLog.qml:123
 msgctxt "ChangeLog|"
