@@ -9,6 +9,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import core 1.0
 
@@ -23,7 +25,7 @@ ActivityBase {
 
     pageComponent: Image {
         id: activityBackground
-        source: Activity.url + "background.svg"
+        source: activity.resourceUrl + "background.svg"
         fillMode: Image.PreserveAspectCrop
         sourceSize.width: width
         sourceSize.height: height
@@ -72,7 +74,7 @@ ActivityBase {
 
         Image {
             id: fireman
-            source: Activity.url + "fireman.svg"
+            source: activity.resourceUrl + "fireman.svg"
             sourceSize.width: 182 * ApplicationInfo.ratio
             anchors {
                 left: parent.left
@@ -83,7 +85,7 @@ ActivityBase {
 
         Image {
             id: fire
-            source: Activity.url + "fire.svg"
+            source: activity.resourceUrl + "fire.svg"
             sourceSize.width: 90 * ApplicationInfo.ratio
             anchors {
                 right: parent.right
@@ -92,7 +94,7 @@ ActivityBase {
 
             Image {
                 id: fireflame
-                source: Activity.url + "fire_flame.svg"
+                source: activity.resourceUrl + "fire_flame.svg"
                 sourceSize.width: 90 * ApplicationInfo.ratio
                 anchors {
                     fill: parent
@@ -104,7 +106,7 @@ ActivityBase {
 
         Image {
             id: water
-            source: Activity.url + "water_spot.svg"
+            source: activity.resourceUrl + "water_spot.svg"
             sourceSize.width: 148 * ApplicationInfo.ratio
             z: 200
             opacity: 0
@@ -118,7 +120,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: activity.home()
         }
 
         function win() {
@@ -131,7 +133,7 @@ ActivityBase {
             id: bar
             level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level }
-            onHelpClicked: displayDialog(dialogHelp)
+            onHelpClicked: activity.displayDialog(dialogHelp)
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()

@@ -38,9 +38,9 @@ Item {
         height: parent.height * 0.9
         radius: height / 4
         z: 5
-        color: index < Activity.items.currentLock
+        color: part.index < Activity.items.currentLock
                ? "#3ca7e0"
-               : index === Activity.items.currentLock
+               : part.index === Activity.items.currentLock
                  ? "#dd3128"
                  : "#7A7F8E"
 
