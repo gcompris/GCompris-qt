@@ -182,7 +182,7 @@ ActivityBase {
                     for(var i in touchPoints) {
                         var touch = touchPoints[i]
                         for(var p = 0; p < pointImageRepeater.count; p++) {
-                            var part = pointImageRepeater.itemAt(p) as PointImage
+                            var part = pointImageRepeater.itemAt(p)
                             // Could not make it work with the item.contains() api
                             if(touch.x > part.xAreaStart && touch.x < part.xAreaEnd &&
                                 touch.y > part.yAreaStart && touch.y < part.yAreaEnd) {
