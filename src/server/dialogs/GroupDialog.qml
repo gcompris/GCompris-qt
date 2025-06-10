@@ -1,15 +1,16 @@
 /* GCompris - GroupDialog.qml
  *
  * SPDX-FileCopyrightText: 2021 Emmanuel Charruau <echarruau@gmail.com>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Emmanuel Charruau <echarruau@gmail.com>
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
-import QtQuick.Layouts
 import QtQuick.Controls.Basic
 import "../singletons"
 import "../components"
@@ -27,10 +28,11 @@ Popup {
     property string group_Description: ""
 
     anchors.centerIn: Overlay.overlay
-    width: 600
-    height: 250
+    width: dialogColumn.width + padding * 2
+    height: dialogColumn.height + padding * 2
     modal: true
     closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
+    // popupType: Popup.Item // TODO: uncomment when min Qt version >= 6.8
 
     function openGroupDialog(index, group_name, group_id, group_description) {
         modelIndex = index
@@ -72,59 +74,54 @@ Popup {
     }
 
     background: Rectangle {
-        color: Style.selectedPalette.alternateBase
-        radius: 5
-        border.color: "darkgray"
-        border.width: 2
+        color: Style.selectedPalette.base
+        radius: Style.defaultRadius
+        border.color: Style.selectedPalette.text
+        border.width: Style.defaultBorderWidth
     }
 
-    ColumnLayout {
-        anchors.fill: parent
+    Column {
+        id: dialogColumn
+        width: Math.max(550, OkCancelButtons.width)
+        height: childrenRect.height
         anchors.centerIn: parent
+        spacing: Style.margins
 
-        Text {
+        DefaultLabel {
             id: groupDialogText
-            Layout.fillWidth: true
-            Layout.preferredHeight: 40
-            horizontalAlignment: Text.AlignHCenter
+            width: parent.width
+            height: Style.mediumTextSize
             text: groupDialog.label
             font.bold: true
-            font {
-                pixelSize: 20
-            }
-            color: Style.selectedPalette.text
         }
 
-        Text {
-            Layout.fillWidth: true
-            Layout.preferredHeight: 40
+        Item {
+            height: Style.margins
+            width: 1
+        }
+
+        DefaultLabel {
+            width: parent.width
             text: qsTr("Name")
             font.bold: true
-            font.pixelSize: 15
-            color: Style.selectedPalette.text
         }
 
         UnderlinedTextInput {
             id: groupNameInput
-            Layout.fillWidth: true
-            Layout.preferredHeight: Style.lineHeight
+            width: parent.width
             activeFocusOnTab: true
             readOnlyText: groupDialog.textInputReadOnly
         }
 
-        Text {
-            Layout.fillWidth: true
-            Layout.preferredHeight: 40
+        DefaultLabel {
+            width: parent.width
             text: qsTr("Description")
             font.bold: true
-            font.pixelSize: 15
-            color: Style.selectedPalette.text
         }
 
         UnderlinedTextInput {
             id: groupDescriptionInput
-            Layout.fillWidth: true
-            Layout.preferredHeight: Style.lineHeight
+            width: parent.width
             activeFocusOnTab: true
             readOnlyText: groupDialog.textInputReadOnly
         }

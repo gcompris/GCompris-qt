@@ -1,15 +1,16 @@
 /* GCompris - ExportPupilsDialog.qml
  *
  * SPDX-FileCopyrightText: 2023 Bruno Anselme <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
 import QtQuick.Controls.Basic
-import QtQuick.Layouts
 import QtCore // For StandardPaths
 import QtQuick.Dialogs // For FileDialog
 import core 1.0
@@ -26,17 +27,18 @@ Popup {
     signal accepted()
 
     anchors.centerIn: Overlay.overlay
-    width: 800
-    height: 500
+    width: dialogColumn.childrenRect.width + 2 * padding
+    height: dialogColumn.childrenRect.height + 2 * padding
     modal: true
     focus: true
     closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
+    // popupType: Popup.Item // TODO: uncomment when min Qt version >= 6.8
 
     background: Rectangle {
-        color: Style.selectedPalette.alternateBase
-        radius: 5
-        border.color: "darkgray"
-        border.width: 2
+        color: Style.selectedPalette.base
+        radius: Style.defaultRadius
+        border.color: Style.selectedPalette.text
+        border.width: Style.defaultBorderWidth
     }
 
     File { id: file }
@@ -62,38 +64,60 @@ Popup {
         pupilsToCsv()
     }
 
-    ColumnLayout {
-        height: parent.height
-        width: parent.width
+    Column {
+        id: dialogColumn
+        width: 780
+        height: childrenRect.height
+        anchors.centerIn: parent
+        spacing: Style.margins
 
-        Text {
-            Layout.fillWidth: true
-            Layout.preferredHeight: 40
-            horizontalAlignment: Text.AlignHCenter
+        DefaultLabel {
+            width: parent.width
+            height: Style.mediumTextSize
+            fontSizeMode: Text.Fit
+            font.bold: true
             text: qsTr("Export pupils to CSV file")
-            font {
-                pixelSize: 20
-                bold: true
-            }
-            color: Style.selectedPalette.text
+        }
+
+        Item {
+            width: 1
+            height: Style.margins
         }
 
         ScrollView {
-            Layout.fillWidth: true
-            Layout.fillHeight: true
-            contentWidth: parent.width - 20
+            id: scrollLines
+            width: parent.width
+            height: 400
+            contentWidth: parent.width - Style.bigMargins
+            background: Rectangle {
+                color: Style.selectedPalette.alternateBase
+            }
+            ScrollBar.horizontal.policy: ScrollBar.AsNeeded
+            ScrollBar.horizontal.contentItem: Rectangle {
+                implicitHeight: 6
+                radius: height
+                opacity: scrollLines.contentWidth > scrollLines.width ? 0.5 : 0
+                color: parent.pressed ? Style.selectedPalette.highlight : Style.selectedPalette.text
+            }
+            ScrollBar.vertical.policy: ScrollBar.AsNeeded
+            ScrollBar.vertical.contentItem: Rectangle {
+                implicitWidth: 6
+                radius: width
+                opacity: scrollLines.contentHeight > scrollLines.height ? 0.5 : 0
+                color: parent.pressed ? Style.selectedPalette.highlight : Style.selectedPalette.text
+            }
 
             TextArea {
                 id: csvOutput
-                width: parent.width
-                height: parent.height
+                width: parent.contentWidth
                 wrapMode: Text.Wrap
-                clip: true
                 readOnly: true
+                color: Style.selectedPalette.text
             }
         }
 
         OkCancelButtons {
+            anchors.horizontalCenter: parent.horizontalCenter
             okText: qsTr("Save file")
             onCancelled: exportPupilsDialog.close()
             onValidated: fileDialog.open()
