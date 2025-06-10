@@ -850,6 +850,7 @@ namespace controllers {
         }
     }
 
+    // TODO: split function not used, replaced by QString.split(RegExp) in selectToJson... Remove it ?
     /**
        Let's assume we have a string `in` #<¿BILY/ú\u007F¯á\u000Eã\u0005S\u007FÁoktn/Ã\u0090,Ô&?m&\u009A4ùQë¤=,,!ãB¤:64È*
        We want to split on "," but not on "=,,"
@@ -912,11 +913,22 @@ namespace controllers {
                         }
                         else if (cryptedLists.contains(field)) { // decrypt merged fields
                             QString str = value.toString();
-                            QStringList names = split(value.toString(), COMMA_SEPARATOR, COMMA_CRYPTED_SEPARATOR);
+                            //// test string, after split should return QList("abc=,,", "def=", "ghi", "=jkl=,,mno", "pqr")
+                            // QString str = "abc=,,,def=,ghi,=jkl=,,mno,pqr";
+                            //// RegExp: a "," not preceded by "=,", and not followed by ","
+                            QStringList names =  str.split(QRegularExpression("(?<!(=,)),(?!(,))"));
+                            // QString joinedList = names.join(", ");
+                            // qDebug() << "split original string" << joinedList;
+                            // QString targetString = "abc=,,, def=, ghi, =jkl=,,mno, pqr";
+                            // if(joinedList == targetString) {
+                            //     qDebug() << "SUCCESS!!!";
+                            // } else {
+                            //     qDebug() << "split failed...";
+                            // }
                             for (int i = 0; i < names.size(); ++i) {
                                 names[i] = decryptText(names[i]);
                             }
-                            str = names.join(",");
+                            str = names.join(", ");
                             value = QVariant::fromValue(str);
                         }
                     }
