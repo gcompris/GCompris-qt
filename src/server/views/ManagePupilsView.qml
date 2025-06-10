@@ -41,13 +41,13 @@ Item {
 
     PupilDialog {
         id: modifyPupilDialog
-        label: qsTr("Modify pupil name and groups")
+        label: qsTr("Edit pupil's name and groups")
         addMode: false
     }
 
     GroupDialog {
         id: modifyGroupDialog
-        label: qsTr("Modify Group Name")
+        label: qsTr("Edit group name")
         mode: GroupDialog.DialogType.Modify
     }
 
@@ -149,13 +149,14 @@ Item {
                     id: addPupilButton
                     width: splitManagePupils.bigButtonWidth
                     height: splitManagePupils.bigButtonHeight
-                    text: "\uf234   " + qsTr("Add pupil")
+                    text: "\uf234   " + qsTr("Add a pupil")
                     onClicked: addPupilDialog.open()
                 }
 
                 ViewButton {
                     width: splitManagePupils.bigButtonWidth
                     height: splitManagePupils.bigButtonHeight
+                    enabled: pupilPane.childGroup.checkState != Qt.Unchecked // disable if nothing selected
                     text: "\uf07c   " + qsTr("Add to groups")
                     onClicked: addPupilsToGroupsDialog.open()
                 }
@@ -163,6 +164,7 @@ Item {
                 ViewButton {
                     width: splitManagePupils.bigButtonWidth
                     height: splitManagePupils.bigButtonHeight
+                    enabled: pupilPane.childGroup.checkState != Qt.Unchecked // disable if nothing selected
                     text: "\uf0c7   " + qsTr("Remove from groups")
                     onClicked: removePupilsFromGroupsDialog.open()
                 }
@@ -170,6 +172,7 @@ Item {
                 ViewButton {
                     width: splitManagePupils.bigButtonWidth
                     height: splitManagePupils.bigButtonHeight
+                    enabled: pupilPane.childGroup.checkState != Qt.Unchecked // disable if nothing selected
                     text: "\uf0c7   " + qsTr("Export pupils")
                     onClicked: exportPupilsDialog.open()
                 }
@@ -184,6 +187,7 @@ Item {
                 ViewButton {
                     width: splitManagePupils.bigButtonWidth
                     height: splitManagePupils.bigButtonHeight
+                    enabled: pupilPane.childGroup.checkState != Qt.Unchecked // disable if nothing selected
                     text: "\uf503   " + qsTr("Remove pupils")
                     onClicked: removePupilsDialog.open()
                 }
@@ -197,7 +201,7 @@ Item {
             user_Password: ""
             groups_Name: ""
             groups_Id: ""
-            label: qsTr("Add pupil name and its group(s)")
+            label: qsTr("Add a pupil")
         }
 
         ExportPupilsDialog {

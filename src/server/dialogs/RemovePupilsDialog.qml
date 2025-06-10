@@ -1,16 +1,17 @@
 /* GCompris - RemovePupilsDialog.qml
  *
  * SPDX-FileCopyrightText: 2021 Emmanuel Charruau <echarruau@gmail.com>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Emmanuel Charruau <echarruau@gmail.com>
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
 import QtQuick.Controls.Basic
-import QtQuick.Layouts
 
 import "../singletons"
 import "../components"
@@ -23,17 +24,18 @@ Popup {
     property var pupilIds: []
 
     anchors.centerIn: Overlay.overlay
-    width: 600
-    height: 300
+    width: dialogColumn.childrenRect.width + 2 * padding
+    height: dialogColumn.childrenRect.height + 2 * padding
     modal: true
     focus: true
     closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
+    // popupType: Popup.Item // TODO: uncomment when min Qt version >= 6.8
 
     background: Rectangle {
-        color: Style.selectedPalette.alternateBase
-        radius: 5
-        border.color: "darkgray"
-        border.width: 2
+        color: Style.selectedPalette.base
+        radius: Style.defaultRadius
+        border.color: Style.selectedPalette.text
+        border.width: Style.defaultBorderWidth
     }
 
     function validateDialog() {
@@ -58,52 +60,56 @@ Popup {
         pupilsNamesText = pupilsNamesList.join("\n")
     }
 
-    ColumnLayout {
-        anchors.fill: parent
+    Column {
+        id: dialogColumn
+        width: 780
+        height: childrenRect.height
         anchors.centerIn: parent
+        spacing: Style.margins
 
-        Text {
+        DefaultLabel {
             id: deletePupilGroupsText
-            Layout.fillWidth: true
-            Layout.preferredHeight: 90
-            Layout.preferredWidth: parent.width * 2/3
-            horizontalAlignment: Text.AlignHCenter
-            wrapMode: Text.WordWrap
-            text: qsTr("Are you sure you want to remove the following children from the database ?")
-            font {
-                bold: true
-                pixelSize: 20
-            }
-            color: Style.selectedPalette.text
+            width: parent.width
+            height: Style.mediumTextSize
+            fontSizeMode: Text.Fit
+            font.bold: true
+            text: qsTr("Are you sure you want to remove the following pupils from the database ?")
+        }
+
+        Item {
+            width: 1
+            height: Style.margins
         }
 
         Rectangle {
             id: pupilsNamesTextRectangle
-            Layout.fillWidth: true
-            Layout.fillHeight: true
-            border.color: "gray"
-            border.width: 1
+            width: parent.width
+            height: 400
+            color: Style.selectedPalette.alternateBase
 
             GridView {
+                id: pupilsGrid
                 anchors.fill: parent
-                cellWidth: width / 4
-                cellHeight: 20
-                anchors.margins: 3
+                anchors.margins: Style.margins
+                cellWidth: width * 0.25
+                cellHeight: Style.mediumLineHeight
                 boundsBehavior: Flickable.StopAtBounds
                 clip: true
                 model: removePupilsDialog.pupilsNamesText.split("\n")
-
-                delegate: Column {
-                    Text {
+                delegate: Item {
+                    width: pupilsGrid.cellWidth
+                    height: pupilsGrid.cellHeight
+                    DefaultLabel {
+                        width: parent.width - Style.margins
                         text: modelData
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        color: Style.selectedPalette.text
+                        anchors.centerIn: parent
                     }
                 }
             }
         }
 
         OkCancelButtons {
+            anchors.horizontalCenter: parent.horizontalCenter
             onCancelled: removePupilsDialog.close()
             onValidated: {
                 removePupilsDialog.validateDialog()

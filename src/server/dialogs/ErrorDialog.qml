@@ -1,14 +1,15 @@
 /* GCompris - ErrorDialog.qml
  *
  * SPDX-FileCopyrightText: 2023 Bruno Anselme <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
-import QtQuick.Layouts
 import QtQuick.Controls.Basic
 import "../components"
 import "../singletons"
@@ -18,47 +19,55 @@ Popup {
     property var message: []
     anchors.centerIn: Overlay.overlay
     width: 550
-    height: 300
+    height: 500
     modal: true
     closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
+    // popupType: Popup.Item // TODO: uncomment when min Qt version >= 6.8
 
     background: Rectangle {
         color: Style.selectedPalette.base
-        radius: 5
-        border.color: "black"
-        border.width: 4
+        radius: Style.defaultRadius
+        border.color: Style.selectedPalette.text
+        border.width: Style.defaultBorderWidth
     }
 
-    ColumnLayout {
-        anchors.fill: parent
-        anchors.centerIn: parent
+    DefaultLabel {
+        id: errorTitle
+        width: parent.width
+        height: Style.mediumTextSize
+        text: qsTr("Information")
+        font.bold: true
+    }
 
-        Text {
-            Layout.fillWidth: true
-            Layout.preferredHeight: 40
-            horizontalAlignment: Text.AlignHCenter
-            color: Style.selectedPalette.text
-            text: qsTr("Information")
-            font {
-                bold: true
-                pixelSize: 20
+    Item {
+        id: errorMessageArea
+        width: parent.width
+        anchors {
+            top: errorTitle.bottom
+            bottom: bottomButtons.top
+            margins: Style.margins
+        }
+        Column {
+            width: childrenRect.width
+            height: childrenRect.height
+            anchors.centerIn: parent
+            spacing: Style.margins
+            Repeater {
+                anchors.centerIn: parent
+                model: errorDialog.message
+                DefaultLabel {
+                    width: errorMessageArea.width
+                    text: errorDialog.message[index]
+                }
             }
         }
+    }
 
-        Repeater {
-            model: errorDialog.message
-            Text {
-                Layout.fillWidth: true
-                height: 40
-                horizontalAlignment: Text.AlignHCenter
-                color: Style.selectedPalette.text
-                text: errorDialog.message[index]
-            }
-        }
-
-        OkCancelButtons {
-            cancelButton.visible: false
-            onValidated: errorDialog.close()
-        }
+    OkCancelButtons {
+        id: bottomButtons
+        anchors.bottom: parent.bottom
+        anchors.horizontalCenter: parent.horizontalCenter
+        cancelButton.visible: false
+        onValidated: errorDialog.close()
     }
 }
