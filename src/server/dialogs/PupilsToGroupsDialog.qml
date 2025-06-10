@@ -1,16 +1,17 @@
 /* GCompris - PupilsToGroupsDialog.qml
  *
  * SPDX-FileCopyrightText: 2021 Johnny Jazeix <jazeix@gmail.com>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Johnny Jazeix <jazeix@gmail.com>
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
 import QtQuick.Controls.Basic
-import QtQuick.Layouts
 
 import "../singletons"
 import "../components"
@@ -21,11 +22,12 @@ Popup {
     property bool addMode: true        // add pupil or remove pupil mode
 
     anchors.centerIn: Overlay.overlay
-    width: 600
-    height: 500
+    width: dialogColumn.childrenRect.width + 2 * padding
+    height: dialogColumn.childrenRect.height + 2 * padding
     modal: true
     focus: true
     closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
+    // popupType: Popup.Item // TODO: uncomment when min Qt version >= 6.8
 
     ListModel { id: pupilModel }
     ListModel { id: tmpGroupModel }
@@ -63,53 +65,56 @@ Popup {
     }
 
     background: Rectangle {
-        color: Style.selectedPalette.alternateBase
-        radius: 5
-        border.color: "darkgray"
-        border.width: 2
+        color: Style.selectedPalette.base
+        radius: Style.defaultRadius
+        border.color: Style.selectedPalette.text
+        border.width: Style.defaultBorderWidth
     }
 
-    ColumnLayout {
-        anchors.fill: parent
+    Column {
+        id: dialogColumn
+        width: 780
+        height: childrenRect.height
         anchors.centerIn: parent
+        spacing: Style.margins
 
-        Text {
+        DefaultLabel {
             id: deletePupilGroupsText
-            Layout.fillWidth: true
-            Layout.preferredHeight: 90
-            horizontalAlignment: Text.AlignHCenter
-            wrapMode: Text.WordWrap
-            text: pupilsToGroupsDialog.addMode ? qsTr("Do you want to add these pupils to the following groups?")
-                           : qsTr("Are you sure you want to remove these pupils from the following groups?")
-            font {
-                bold: true
-                pixelSize: 20
-            }
-            color: Style.selectedPalette.text
+            width: parent.width
+            height: Style.mediumTextSize
+            fontSizeMode: Text.Fit
+            font.bold: true
+            text: pupilsToGroupsDialog.addMode ? qsTr("Select the groups to add these pupils to:")
+                                    : qsTr("Select the groups from which to remove these pupils:")
+        }
+
+        Item {
+            width: 1
+            height: Style.margins
         }
 
         Rectangle {
             id: pupilsNamesTextRectangle
-            Layout.fillWidth: true
-            Layout.preferredHeight: 200
-            border.color: "gray"
-            border.width: 1
-            color: Style.selectedPalette.base
+            width: parent.width
+            height: 200
+            color: Style.selectedPalette.alternateBase
 
             GridView {
+                id: pupilsGrid
                 anchors.fill: parent
-                cellWidth: width / 4
-                cellHeight: 20
-                anchors.margins: 3
+                anchors.margins: Style.margins
+                cellWidth: width * 0.25
+                cellHeight: Style.mediumLineHeight
                 boundsBehavior: Flickable.StopAtBounds
                 clip: true
                 model: pupilModel
-
-                delegate: Column {
-                    Text {
+                delegate: Item {
+                    width: pupilsGrid.cellWidth
+                    height: pupilsGrid.cellHeight
+                    DefaultLabel {
+                        width: parent.width - Style.margins
                         text: user_name
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        color: Style.selectedPalette.text
+                        anchors.centerIn: parent
                     }
                 }
             }
@@ -117,28 +122,27 @@ Popup {
 
         Rectangle {
             id: groupNamesRectangle
-            Layout.fillWidth: true
-            Layout.fillHeight: true
-            color: Style.selectedPalette.base
-            border.color: "gray"
+            width: parent.width
+            height: 200
+            border.color: Style.selectedPalette.accent
             border.width: 1
+            color: Style.selectedPalette.alternateBase
 
             GridView {
                 id: groupNamesListView
                 anchors.fill: parent
-                anchors.centerIn: parent
-                anchors.margins: 2
+                anchors.margins: Style.margins
                 cellWidth: width / 3
-                cellHeight: 30
+                cellHeight: Style.mediumLineHeight
                 boundsBehavior: Flickable.StopAtBounds
                 activeFocusOnTab: true
                 focus: true
                 clip: true
                 model: tmpGroupModel
-
                 delegate: StyledCheckBox {
                     id: groupSelect
                     property int group_Id: group_id
+                    width: groupNamesListView.cellWidth - Style.margins
                     text: group_name
                     checked: group_checked
                     onCheckedChanged: tmpGroupModel.setProperty(index, "group_checked", checked)
@@ -147,6 +151,7 @@ Popup {
         }
 
         OkCancelButtons {
+            anchors.horizontalCenter: parent.horizontalCenter
             onCancelled: pupilsToGroupsDialog.close()
             onValidated: pupilsToGroupsDialog.validateDialog()
         }
