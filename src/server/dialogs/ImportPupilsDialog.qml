@@ -1,16 +1,17 @@
 /* GCompris - ImportPupilsDialog.qml
  *
  * SPDX-FileCopyrightText: 2021 Emmanuel Charruau <echarruau@gmail.com>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Emmanuel Charruau <echarruau@gmail.com>
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
 import QtQuick.Controls.Basic
-import QtQuick.Layouts
 import QtCore // For StandardPaths
 import QtQuick.Dialogs // For FileDialog
 import core 1.0
@@ -22,17 +23,18 @@ Popup {
     id: importPupilsDialog
 
     anchors.centerIn: Overlay.overlay
-    width: 600
-    height: 500
+    width: Overlay.overlay.width
+    height: Overlay.overlay.height
     modal: true
     focus: true
     closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
+    // popupType: Popup.Item // TODO: uncomment when min Qt version >= 6.8
 
     background: Rectangle {
-        color: Style.selectedPalette.alternateBase
-        radius: 5
-        border.color: "darkgray"
-        border.width: 2
+        color: Style.selectedPalette.base
+        radius: Style.defaultRadius
+        border.color: Style.selectedPalette.text
+        border.width: Style.defaultBorderWidth
     }
 
     File { id: file }
@@ -54,79 +56,104 @@ Popup {
         Master.filterUsers(Master.filteredUserModel, false)
     }
 
-    ColumnLayout {
-        height: parent.height
+    Column {
+        id: topColumn
         width: parent.width
+        height: childrenRect.height
+        spacing: Style.margins
 
-        Text {
-            Layout.fillWidth: true
-            Layout.preferredHeight: 40
-            horizontalAlignment: Text.AlignHCenter
-            text: qsTr("Add pupils from CSV file")
+        DefaultLabel {
+            width: parent.width
+            height: Style.mediumTextSize
+            fontSizeMode: Text.Fit
             font.bold: true
-            color: Style.selectedPalette.text
-            font {
-                pixelSize: 20
-                bold: true
-            }
+            text: qsTr("Import pupils from CSV file")
+        }
+
+        Item {
+            height: Style.margins
+            width: 1
         }
 
         Rectangle {
-            Layout.fillWidth: true
-            Layout.preferredHeight: 70
-            color: "lemonchiffon"
-            border.color: Style.selectedPalette.accent
-            border.width: 1
+            width: parent.width
+            height: exampleText.height + Style.bigMargins
+            color: Style.selectedPalette.alternateBase
             Text {
-                anchors.fill: parent
-                anchors.margins: 3
-                text: qsTr("Format: name;groups;password\nExample:\nPatrick Dummy;group 1;1234\nPatricia Brown;group 1, group 2;4321\n")
-                font {
-                  pixelSize: 12
-                }
+                id: exampleText
+                width: parent.width - Style.bigMargins
+                anchors.centerIn: parent
+                font.pixelSize: Style.textSize
                 color: Style.selectedPalette.text
+                text: qsTr("Format: name;groups;password\nExample:\nPatrick Dummy;group 1;1234\nPatricia Brown;group 1,group 2;4321\n")
             }
         }
 
         ViewButton {
-            Layout.alignment: Qt.AlignHCenter
+            anchors.horizontalCenter: parent.horizontalCenter
             text: qsTr("Add CSV file")
             onClicked: fileDialog.open()
         }
+    }
 
-        ScrollView {
-            Layout.fillWidth: true
-            Layout.fillHeight: true
-            contentWidth: parent.width - 20
-
-            TextArea {
-                id: edit
-                width: parent.width
-                height: parent.height
-                wrapMode: Text.Wrap
-                clip: true
-            }
+    ScrollView {
+        id: scrollLines
+        width: parent.width
+        anchors.top: topColumn.bottom
+        anchors.bottom: bottomButtons.top
+        anchors.margins: Style.margins
+        contentWidth: width - Style.bigMargins
+        background: Rectangle {
+            color: Style.selectedPalette.alternateBase
+            border.color: Style.selectedPalette.accent
+            border.width: 1
+        }
+        ScrollBar.horizontal.policy: ScrollBar.AsNeeded
+        ScrollBar.horizontal.contentItem: Rectangle {
+            implicitHeight: 6
+            radius: height
+            opacity: scrollLines.contentWidth > scrollLines.width ? 0.5 : 0
+            color: parent.pressed ? Style.selectedPalette.highlight : Style.selectedPalette.text
+        }
+        ScrollBar.vertical.policy: ScrollBar.AsNeeded
+        ScrollBar.vertical.contentItem: Rectangle {
+            implicitWidth: 6
+            radius: width
+            opacity: scrollLines.contentHeight > scrollLines.height ? 0.5 : 0
+            color: parent.pressed ? Style.selectedPalette.highlight : Style.selectedPalette.text
         }
 
-        OkCancelButtons {
-            okText: qsTr("Import pupils")
-            onCancelled: importPupilsDialog.close()
-            onValidated: {
-                importPupilsDialog.pupilsAdd(edit.text);
-                importPupilsDialog.close();
-            }
+        TextArea {
+            id: edit
+            width: parent.contentWidth
+            wrapMode: Text.Wrap
+            color: Style.selectedPalette.text
+            selectionColor: Style.selectedPalette.highlight
+            selectedTextColor: Style.selectedPalette.highlightedText
+            font.pixelSize: Style.textSize
         }
+    }
 
-        FileDialog {
-            id: fileDialog
-            fileMode: FileDialog.OpenFile
-            defaultSuffix: "csv"
-            currentFolder: StandardPaths.writableLocation(StandardPaths.DocumentsLocation)
-            onAccepted: {
-                var str = file.read(currentFile)
-                edit.text += str
-            }
+    OkCancelButtons {
+        id: bottomButtons
+        anchors.bottom: parent.bottom
+        anchors.horizontalCenter: parent.horizontalCenter
+        okText: qsTr("Import pupils")
+        onCancelled: importPupilsDialog.close()
+        onValidated: {
+            importPupilsDialog.pupilsAdd(edit.text);
+            importPupilsDialog.close();
         }
+    }
 
+    FileDialog {
+        id: fileDialog
+        fileMode: FileDialog.OpenFile
+        defaultSuffix: "csv"
+        currentFolder: StandardPaths.writableLocation(StandardPaths.DocumentsLocation)
+        onAccepted: {
+            var str = file.read(currentFile)
+            edit.text += str
+        }
     }
 }
