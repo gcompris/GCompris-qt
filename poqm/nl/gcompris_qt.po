@@ -19267,7 +19267,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:356
+#: activities/memory/MemoryCommon.qml:363
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19276,12 +19276,12 @@ msgstr ""
 "Deze activiteit vereist geluid, dus zal het enig geluid laten horen zelfs "
 "als de stemmen of effecten zijn uitgeschakeld in de hoofdconfiguratie."
 
-#: activities/memory/MemoryCommon.qml:357
+#: activities/memory/MemoryCommon.qml:364
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Afsluiten"
 
-#: activities/memory/MemoryCommon.qml:358
+#: activities/memory/MemoryCommon.qml:365
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Doorgaan"

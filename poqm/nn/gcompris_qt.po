@@ -19072,7 +19072,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr ":"
 
-#: activities/memory/MemoryCommon.qml:356
+#: activities/memory/MemoryCommon.qml:363
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19081,12 +19081,12 @@ msgstr ""
 "Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
 "og lydeffektar er slått av i innstillingane."
 
-#: activities/memory/MemoryCommon.qml:357
+#: activities/memory/MemoryCommon.qml:364
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: activities/memory/MemoryCommon.qml:358
+#: activities/memory/MemoryCommon.qml:365
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Hald fram"

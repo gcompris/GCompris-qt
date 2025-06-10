@@ -19969,14 +19969,14 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:356
+#: activities/memory/MemoryCommon.qml:363
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
 
-#: activities/memory/MemoryCommon.qml:357
+#: activities/memory/MemoryCommon.qml:364
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Quit?"
@@ -19984,7 +19984,7 @@ msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Afslut?"
 
-#: activities/memory/MemoryCommon.qml:358
+#: activities/memory/MemoryCommon.qml:365
 #, fuzzy
 #| msgctxt "board1_0|"
 #| msgid "Continents"

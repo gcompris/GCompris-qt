@@ -18992,7 +18992,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:356
+#: activities/memory/MemoryCommon.qml:363
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19002,12 +19002,12 @@ msgstr ""
 "некаторыя гукі нават пры выключаных галасах ці аўдыаэфектах у галоўнай "
 "канфігурацыі."
 
-#: activities/memory/MemoryCommon.qml:357
+#: activities/memory/MemoryCommon.qml:364
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Выйсці"
 
-#: activities/memory/MemoryCommon.qml:358
+#: activities/memory/MemoryCommon.qml:365
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Працягнуць"
