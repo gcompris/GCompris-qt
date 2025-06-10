@@ -1,17 +1,18 @@
 /* GCompris - PupilDialog.qml
  *
  * SPDX-FileCopyrightText: 2021 Emmanuel Charruau <echarruau@gmail.com>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Emmanuel Charruau <echarruau@gmail.com>
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
 import "qrc:/gcompris/src/server/server.js" as Server
 import QtQuick.Controls.Basic
-import QtQuick.Layouts
 
 import "../singletons"
 import "../components"
@@ -31,9 +32,10 @@ Popup {
     property string groups_Name: ""
     property string groups_Id: ""
 
+    // popupType: Popup.Item // TODO: uncomment when min Qt version >= 6.8
     anchors.centerIn: Overlay.overlay
-    width: 550
-    height: 500
+    width: Overlay.overlay.width
+    height: Overlay.overlay.height
     modal: true
     closePolicy: Popup.CloseOnEscape
 
@@ -54,7 +56,7 @@ Popup {
 
     function savePupil() {
         if (pupilName.text === "") {
-            errorDialog.message = [ qsTr("Pupil name is empty") ]
+            errorDialog.message = [ qsTr("Pupil's name is empty") ]
             errorDialog.open()
             return
         }
@@ -115,178 +117,176 @@ Popup {
     }
 
     background: Rectangle {
-        color: Style.selectedPalette.alternateBase
-        radius: 5
-        border.color: "darkgray"
-        border.width: 2
+        color: Style.selectedPalette.base
+        radius: Style.defaultRadius
+        border.color: Style.selectedPalette.text
+        border.width: Style.defaultBorderWidth
     }
 
-    ColumnLayout {
-        anchors.fill: parent
-        anchors.centerIn: parent
+    Column {
+        id: topColumn
+        width: parent.width
+        height: childrenRect.height
+        spacing: Style.margins
 
-        Text {
+        Keys.onEnterPressed: savePupil()
+        Keys.onReturnPressed: savePupil()
+        Keys.onEscapePressed: pupilDialog.close()
+
+        DefaultLabel {
             id: groupDialogText
-            Layout.fillWidth: true
-            Layout.preferredHeight: 40
-            horizontalAlignment: Text.AlignHCenter
+            width: parent.width
+            height: Style.mediumTextSize
             text: pupilDialog.label
-            font {
-                bold: true
-                pixelSize: 20
-            }
-            color: Style.selectedPalette.text
+            font.bold: true
         }
 
-        Text {
-            Layout.fillWidth: true
-            Layout.preferredHeight: 40
-            text: qsTr("Pupil name")
+        Item {
+            id: spacerTitle
+            height: Style.margins
+            width: 1
+        }
+
+        DefaultLabel {
+            width: parent.width
+            text: qsTr("Pupil's name")
             font.bold: true
-            font {
-                pixelSize: 15
-            }
-            color: Style.selectedPalette.text
         }
 
         UnderlinedTextInput {
             id: pupilName
-            Layout.fillWidth: true
-            Layout.preferredHeight: Style.lineHeight
+            width: parent.width
             activeFocusOnTab: true
         }
 
-        Text {
-            Layout.fillWidth: true
-            Layout.preferredHeight: 40
+        DefaultLabel {
+            width: parent.width
             text: qsTr("Password")
             font.bold: true
-            font {
-                pixelSize: 15
-            }
-            color: Style.selectedPalette.text
         }
 
         Rectangle {
             id: passwordList
-            Layout.fillWidth: true
-            Layout.preferredHeight: 40
+            width: parent.width
+            height: Style.bigControlSize
             border.width: 1
-            color: Style.selectedPalette.accent
+            border.color: Style.selectedPalette.accent
+            color: Style.selectedPalette.alternateBase
             ListView {
                 id: passwordView
                 anchors.fill: parent
-                anchors.margins: 5
+                anchors.margins: Style.smallMargins
+                anchors.leftMargin: Style.margins
+                anchors.rightMargin: Style.margins
                 contentHeight: height
-                spacing: 20
+                spacing: Style.margins
                 anchors.horizontalCenter: parent.horizontalCenter
                 orientation: ListView.Horizontal
-
                 interactive: true
                 clip: true
                 model: passModel
                 delegate: Image {
                     source: "qrc:/gcompris/src/server/resource/" + icon_ + ".svg"
-                    sourceSize.width: 30
-                    sourceSize.height: 30
-                    width: 30
-                    height: 30
+                    sourceSize.height: height
+                    height: passwordView.height
 
                     MouseArea {
                         anchors.fill: parent
-                        onClicked: pupilDialog.passModel.remove(index, 1)
+                        onClicked: passModel.remove(index, 1)
                     }
                 }
             }
         }
 
-        RowLayout {
-            Layout.fillWidth: true
-            Layout.preferredHeight: 40
+        Rectangle {
+            width: parent.width
+            height: Style.bigControlSize
+            color: Style.selectedPalette.alternateBase
 
-            Text {
-                Layout.preferredWidth: 150
-                Layout.preferredHeight: 40
-                text: qsTr("Password images")
-                font.bold: true
-                color: Style.selectedPalette.text
-            }
+            Row {
+                anchors.fill: parent
+                anchors.leftMargin: Style.margins
+                anchors.rightMargin: Style.margins
+                spacing: Style.margins
 
-            ListView {
-                id: passwordChoice
-                Layout.fillWidth: true
-                Layout.preferredHeight: 40
-                spacing: 10
-                orientation: ListView.Horizontal
+                DefaultLabel {
+                    id: passwordImagesLabel
+                    anchors.verticalCenter: parent.verticalCenter
+                    text: qsTr("Password images:")
+                    font.bold: true
+                    color: Style.selectedPalette.text
+                }
 
-                interactive: true
-                clip: true
-                model: Server.shuffle(imagesModel)
-                delegate: Image {
-                    source: "qrc:/gcompris/src/server/resource/" + icon_ + ".svg"
-                    sourceSize.width: 30
-                    sourceSize.height: 30
-                    width: 30
-                    height: 30
+                ListView {
+                    id: passwordChoice
+                    width: parent.width - passwordImagesLabel.width - Style.margins
+                    height: parent.height - Style.margins
+                    anchors.verticalCenter: parent.verticalCenter
+                    spacing: Style.margins
+                    orientation: ListView.Horizontal
+                    interactive: true
+                    clip: true
+                    model: Server.shuffle(imagesModel)
+                    delegate: Image {
+                        source: "qrc:/gcompris/src/server/resource/" + icon_ + ".svg"
+                        sourceSize.height: height
+                        height: passwordChoice.height
 
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: {
-                            if (passModel.count < 4)
-                                passModel.append(imagesModel.get(index))
+                        MouseArea {
+                            anchors.fill: parent
+                            onClicked: {
+                                if (passModel.count < 4)
+                                    passModel.append(imagesModel.get(index))
+                            }
                         }
                     }
                 }
             }
         }
 
-        Text {
+        DefaultLabel {
             id: groupsListTitleText
-            Layout.fillWidth: true
-            Layout.preferredHeight: 40
+            width: parent.width
             text: qsTr("Groups")
             font.bold: true
-            font {
-                pixelSize: 15
-            }
-            color: Style.selectedPalette.text
         }
+    }
 
-        Rectangle {
-            id: groupNamesRectangle
-            Layout.fillWidth: true
-            Layout.fillHeight: true
-            color: Style.selectedPalette.base
-            border.color: "gray"
-            border.width: 1
+    Rectangle {
+        id: groupNamesRectangle
+        width: parent.width
+        anchors.top: topColumn.bottom
+        anchors.bottom: bottomButtons.top
+        anchors.margins: Style.margins
+        color: Style.selectedPalette.alternateBase
+        border.color: Style.selectedPalette.accent
+        border.width: 1
 
-            ListView {
-                id: groupNamesListView
-                anchors.fill: parent
-                anchors.centerIn: parent
-                anchors.margins: 4
-                boundsBehavior: Flickable.StopAtBounds
-                clip: true
-                model: tmpGroupModel
-                delegate: StyledCheckBox {
-                    id: groupSelect
-                    property int group_Id: group_id
-                    activeFocusOnTab: true
-                    text: group_name
-                    width: groupNamesRectangle.width / 2
-                    checked: group_checked
-                    onCheckedChanged: tmpGroupModel.setProperty(index, "group_checked", checked)
-                }
+        ListView {
+            id: groupNamesListView
+            anchors.fill: parent
+            anchors.centerIn: parent
+            anchors.margins: Style.margins
+            boundsBehavior: Flickable.StopAtBounds
+            clip: true
+            model: tmpGroupModel
+            delegate: StyledCheckBox {
+                id: groupSelect
+                property int group_Id: group_id
+                activeFocusOnTab: true
+                text: group_name
+                width: groupNamesRectangle.width * 0.5
+                checked: group_checked
+                onCheckedChanged: tmpGroupModel.setProperty(index, "group_checked", checked)
             }
         }
+    }
 
-        OkCancelButtons {
-            onCancelled: pupilDialog.close()
-            onValidated: savePupil()
-        }
-
-        Keys.onEnterPressed: savePupil()
-        Keys.onReturnPressed: savePupil()
-        Keys.onEscapePressed: pupilDialog.close()
+    OkCancelButtons {
+        id: bottomButtons
+        anchors.bottom: parent.bottom
+        anchors.horizontalCenter: parent.horizontalCenter
+        onCancelled: pupilDialog.close()
+        onValidated: savePupil()
     }
 }
