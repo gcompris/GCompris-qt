@@ -113,8 +113,13 @@ Column {
             anchors.fill: parent
             anchors.bottomMargin: Style.lineHeight
             ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
-            ScrollBar.vertical.policy: ScrollBar.AlwaysOn
-
+            ScrollBar.vertical.policy: ScrollBar.AsNeeded
+            ScrollBar.vertical.contentItem: Rectangle {
+                implicitWidth: 6
+                radius: width
+                opacity: scrollLines.contentHeight > scrollLines.height ? 0.5 : 0
+                color: parent.pressed ? Style.selectedPalette.highlight : Style.selectedPalette.text
+            }
             Column {
                 id: boxes
 
