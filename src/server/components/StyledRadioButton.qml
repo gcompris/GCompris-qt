@@ -34,14 +34,14 @@ AbstractButton {
             height: Style.textSize
             width: height
             radius: width
-            color: control.down ? Style.selectedPalette.accent : Style.selectedPalette.base
+            color: control.down ? Style.selectedPalette.accent : "transparent"
             border.width: control.visualFocus ? 3 : 2
             border.color: control.visualFocus ? Style.selectedPalette.highlight :
                                                 Style.selectedPalette.text
 
             Rectangle {
                 anchors.centerIn: parent
-                width: parent.width - parent.border.width * 2
+                width: parent.width * 0.5
                 height: width
                 radius: width
                 color: Style.selectedPalette.text
