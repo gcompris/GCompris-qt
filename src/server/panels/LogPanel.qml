@@ -1,9 +1,11 @@
 /* GCompris - LogPanel.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -12,7 +14,7 @@ import QtQuick.Controls.Basic
 
 import "../singletons"
 
-Rectangle {
+Item {
     id: logPanel
 
     function appendLog(mess) {
@@ -24,18 +26,19 @@ Rectangle {
         messageLog.text = ""
     }
 
-    color: Style.selectedPalette.base
-
     ScrollView {
         id: view
         anchors.fill: parent
 
         TextArea {
             id: messageLog
-            anchors.margins: 3
+            anchors.margins: Style.margins
             readOnly: true
             wrapMode: TextEdit.WordWrap
             font.pixelSize: Style.textSize
+            color: Style.selectedPalette.text
+            selectionColor: Style.selectedPalette.highlight
+            selectedTextColor: Style.selectedPalette.highlightedText
         }
     }
 }
