@@ -45,7 +45,7 @@ AbstractButton {
             id: controlImage
             height: Style.textSize
             width: height
-            color: control.down ? Style.selectedPalette.accent : Style.selectedPalette.base
+            color: control.down ? Style.selectedPalette.accent : "transparent"
             border.width: control.visualFocus ? 3 : 2
             border.color: control.visualFocus ? Style.selectedPalette.highlight :
             Style.selectedPalette.text
