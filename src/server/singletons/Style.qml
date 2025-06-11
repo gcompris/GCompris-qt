@@ -25,12 +25,12 @@ QtObject {
     }
 
     readonly property Palette lightPalette: Palette {
-        accent: "#979797"
+        accent: "#d0d0d0"
         alternateBase: "#f4f4f4"
-        base: "#d4d4d4"
+        base: "#e4e4e4"
         light: "#f2f2f2"
-        text: "#282828"
-        highlightedText: "#121212"
+        text: "#373737"
+        highlightedText: "#080808"
         highlight: "#55a1ef"
         window: "#7f7f7f"
     }
