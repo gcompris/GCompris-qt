@@ -137,6 +137,7 @@ Popup {
             id: groupDialogText
             width: parent.width
             height: Style.mediumTextSize
+            fontSizeMode: Text.Fit
             text: pupilDialog.label
             font.bold: true
         }
