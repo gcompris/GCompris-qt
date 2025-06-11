@@ -55,7 +55,7 @@ Control {
             anchors.rightMargin: Style.smallMargins
             hoverEnabled: true
             text: "\uf304"
-            onClicked: modifyGroupDialog.openGroupDialog(index, group_name, group_id, group_description)
+            onClicked: managePupilsView.editGroupDialog(index, group_name, group_id, group_description)
             toolTipOnHover: true
             toolTipText: qsTr("Edit group")
         }
@@ -67,7 +67,7 @@ Control {
             anchors.rightMargin: Style.margins
             hoverEnabled: true
             text: "\uf1f8"
-            onClicked: removeGroupDialog.openGroupDialog(index, group_name, group_id, group_description)
+            onClicked: managePupilsView.removeGroupDialog(index, group_name, group_id, group_description)
             toolTipOnHover: true
             toolTipText: qsTr("Delete group")
         }
