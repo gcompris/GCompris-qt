@@ -11,7 +11,6 @@
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
 import QtQuick
-import QtQuick.Layouts
 import QtQuick.Controls.Basic
 
 import "../components"
@@ -25,30 +24,79 @@ Item {
     signal pupilsNamesListSelected(var pupilsNamesList)
 
     GroupDialog {
-        id: addGroupDialog
-        label: qsTr("Add a group")
-        mode: GroupDialog.DialogType.Add
-        group_Name: ""
-        group_Description: ""
+        id: groupDialog
     }
 
-    GroupDialog {
-        id: removeGroupDialog
-        textInputReadOnly: true
-        label: qsTr("Are you sure you want to remove this group ?\n Pupils will not be removed.")
-        mode: GroupDialog.DialogType.Remove
+    function addGroupDialog() {
+        groupDialog.textInputReadOnly = false;
+        groupDialog.label = qsTr("Add a group");
+        groupDialog.subLabel = "";
+        groupDialog.mode = GroupDialog.DialogType.Add;
+        groupDialog.group_Name = "";
+        groupDialog.group_Description = "";
+        groupDialog.open();
+    }
+
+    function removeGroupDialog(index, group_name, group_id, group_description) {
+        groupDialog.textInputReadOnly = true;
+        groupDialog.label = qsTr("Are you sure you want to remove this group?");
+        groupDialog.subLabel = qsTr("Pupils will not be removed.");
+        groupDialog.mode = GroupDialog.DialogType.Remove;
+        groupDialog.openGroupDialog(index, group_name, group_id, group_description);
+    }
+
+    function editGroupDialog(index, group_name, group_id, group_description) {
+        groupDialog.textInputReadOnly = false;
+        groupDialog.label = qsTr("Edit group");
+        groupDialog.subLabel = "";
+        groupDialog.mode = GroupDialog.DialogType.Modify;
+        groupDialog.openGroupDialog(index, group_name, group_id, group_description);
     }
 
     PupilDialog {
-        id: modifyPupilDialog
-        label: qsTr("Edit pupil's name and groups")
-        addMode: false
+        id: pupilDialog
     }
 
-    GroupDialog {
-        id: modifyGroupDialog
-        label: qsTr("Edit group name")
-        mode: GroupDialog.DialogType.Modify
+    function addPupilDialog() {
+        pupilDialog.addMode = true;
+        pupilDialog.user_Name = "";
+        pupilDialog.user_Password = "";
+        pupilDialog.groups_Name = "";
+        pupilDialog.groups_Id = "";
+        pupilDialog.label = qsTr("Add a pupil");
+        pupilDialog.open();
+    }
+
+    function editPupilDialog(index, user_name, user_id, user_password, groups_name, groups_id) {
+        pupilDialog.addMode = false;
+        pupilDialog.label = qsTr("Edit pupil's name and groups");
+        pupilDialog.openPupilDialog(index, user_name, user_id, user_password, groups_name, groups_id);
+    }
+
+    ExportPupilsDialog {
+        id: exportPupilsDialog
+    }
+
+    ImportPupilsDialog {
+        id: importPupilsDialog
+    }
+
+    RemovePupilsDialog {
+        id: removePupilsDialog
+    }
+
+    PupilsToGroupsDialog {
+        id: pupilsToGroupsDialog
+    }
+
+    function addPupilsToGroupsDialog() {
+        pupilsToGroupsDialog.addMode = true;
+        pupilsToGroupsDialog.open();
+    }
+
+    function removePupilsFromGroupsDialog() {
+        pupilsToGroupsDialog.addMode = false;  // remove mode
+        pupilsToGroupsDialog.open();
     }
 
     StyledSplitView {
@@ -94,7 +142,7 @@ Item {
                     height: splitManagePupils.bigButtonHeight
                     anchors.centerIn: parent
                     text: "\uf067 " + qsTr("Add a group")
-                    onClicked: addGroupDialog.open();
+                    onClicked: managePupilsView.addGroupDialog();
                 }
             }
         }
@@ -150,7 +198,7 @@ Item {
                     width: splitManagePupils.bigButtonWidth
                     height: splitManagePupils.bigButtonHeight
                     text: "\uf234   " + qsTr("Add a pupil")
-                    onClicked: addPupilDialog.open()
+                    onClicked: managePupilsView.addPupilDialog()
                 }
 
                 ViewButton {
@@ -158,7 +206,7 @@ Item {
                     height: splitManagePupils.bigButtonHeight
                     enabled: pupilPane.childGroup.checkState != Qt.Unchecked // disable if nothing selected
                     text: "\uf07c   " + qsTr("Add to groups")
-                    onClicked: addPupilsToGroupsDialog.open()
+                    onClicked: managePupilsView.addPupilsToGroupsDialog()
                 }
 
                 ViewButton {
@@ -166,7 +214,7 @@ Item {
                     height: splitManagePupils.bigButtonHeight
                     enabled: pupilPane.childGroup.checkState != Qt.Unchecked // disable if nothing selected
                     text: "\uf0c7   " + qsTr("Remove from groups")
-                    onClicked: removePupilsFromGroupsDialog.open()
+                    onClicked: managePupilsView.removePupilsFromGroupsDialog()
                 }
 
                 ViewButton {
@@ -192,37 +240,6 @@ Item {
                     onClicked: removePupilsDialog.open()
                 }
             }
-        }
-
-        PupilDialog {
-            id: addPupilDialog
-            addMode: true
-            user_Name: ""
-            user_Password: ""
-            groups_Name: ""
-            groups_Id: ""
-            label: qsTr("Add a pupil")
-        }
-
-        ExportPupilsDialog {
-            id: exportPupilsDialog
-        }
-
-        ImportPupilsDialog {
-            id: importPupilsDialog
-        }
-
-        RemovePupilsDialog {
-            id: removePupilsDialog
-        }
-
-        PupilsToGroupsDialog {
-            id: addPupilsToGroupsDialog
-        }
-
-        PupilsToGroupsDialog {
-            id: removePupilsFromGroupsDialog
-            addMode: false     // remove mode
         }
     }
 

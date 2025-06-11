@@ -19,6 +19,7 @@ Popup {
     id: groupDialog
     enum DialogType { Add, Modify, Remove }
     property string label
+    property string subLabel: ""
     property bool textInputReadOnly: false
     property int mode: GroupDialog.DialogType.Modify
     // Database columns
@@ -82,7 +83,7 @@ Popup {
 
     Column {
         id: dialogColumn
-        width: Math.max(550, OkCancelButtons.width)
+        width: Math.max(750, bottomButtons.width)
         height: childrenRect.height
         anchors.centerIn: parent
         spacing: Style.margins
@@ -92,7 +93,15 @@ Popup {
             width: parent.width
             height: Style.mediumTextSize
             text: groupDialog.label
+            fontSizeMode: Text.Fit
             font.bold: true
+        }
+
+        DefaultLabel {
+            width: parent.width
+            fontSizeMode: Text.Fit
+            font.bold: true
+            text: groupDialog.subLabel
         }
 
         Item {
@@ -127,6 +136,8 @@ Popup {
         }
 
         OkCancelButtons {
+            id: bottomButtons
+            anchors.horizontalCenter: parent.horizontalCenter
             onCancelled: groupDialog.close()
             onValidated: groupDialog.saveGroup()
         }

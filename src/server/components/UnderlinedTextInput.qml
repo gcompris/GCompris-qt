@@ -29,9 +29,10 @@ Item {
     Rectangle {
         id: underlinePupilNameTextInput
         anchors.fill: parent
-        color: readOnlyText ? "transparent" : Style.selectedPalette.alternateBase
+        color: Style.selectedPalette.alternateBase
+        opacity: underlinedTextInput.readOnlyText ? 0.5 : 1
         border.color: Style.selectedPalette.accent
-        border.width: readOnlyText ? 0 : 1
+        border.width: underlinedTextInput.readOnlyText ? 0 : 1
     }
 
     TextInput {
