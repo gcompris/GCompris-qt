@@ -1,16 +1,17 @@
 /* GCompris - DevicesView.qml
  *
  * SPDX-FileCopyrightText: 2021 Johnny Jazeix <jazeix@gmail.com>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Johnny Jazeix <jazeix@gmail.com>
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
 import QtQuick.Controls.Basic
-import QtQuick.Layouts
 
 import core 1.0
 
@@ -18,27 +19,25 @@ import "../singletons"
 import "../components"
 import "../panels"
 
-Rectangle {
+Item {
     id: devicesView
     property var hostInformations: ({})
     property var ipList: []
-    property int labelWidth: buttonsColumn.width / 2
-    property int infoWidth: buttonsColumn.width / 2
-    property int lineHeight: Style.lineHeight
+    property int labelWidth: (buttonsColumn.width - Style.margins) * 0.5
+    property int infoWidth: labelWidth
     property alias splitDevicesView: splitDevicesView
-    color: "transparent"
     enabled: serverRunning
 
     function setConnectionColor(status) {
         switch (status) {
         case NetConst.NOT_CONNECTED:
-            return "white"
+            return "transparent"
         case NetConst.BAD_PASSWORD_INPUT:
-            return "red"
+            return "#db0c0c" // red
         case NetConst.CONNECTED:
-            return "green"
+            return "#1be523" // green
         case NetConst.CONNECTION_LOST:
-            return "yellow"
+            return "#d7d700" // yellow
         case NetConst.DISCONNECTED:
             return Style.selectedPalette.accent
         default:
@@ -63,9 +62,8 @@ Rectangle {
         }
     }
 
-    SplitView {
+    StyledSplitView {
         id: splitDevicesView
-        anchors.margins: 3
         anchors.fill: parent
 
         Connections {
@@ -80,14 +78,14 @@ Rectangle {
 
         FoldDownRadio {
             id: groupPane
+            SplitView.preferredWidth: splitDevicesView.width * 0.2
+            SplitView.minimumWidth: splitDevicesView.width * 0.15
             title: qsTr("Groups")
             foldModel: Master.groupModel
             indexKey: "group_id"
             nameKey: "group_name"
             checkKey: "group_checked"
             collapsable: false
-            SplitView.preferredWidth: 200
-            SplitView.minimumWidth: 150
             onSelectionClicked: (modelId) => {
                 Master.groupFilterId = modelId
                 Master.filterUsers(Master.filteredUserModel, false)
@@ -104,42 +102,52 @@ Rectangle {
             delegateName: "checkUserStatus"
             collapsable: false
             SplitView.fillWidth: true
-            SplitView.minimumWidth: 300
+            SplitView.minimumWidth: splitDevicesView.width * 0.25
         }
 
-        Rectangle {
-            id: buttonsColumn
-            SplitView.preferredWidth: 250
-            SplitView.minimumWidth: 250
-            SplitView.maximumWidth: 350
-            SplitView.fillHeight: true
-            color: Style.selectedPalette.base
+        Item {
+            id: networkColumn
+            SplitView.preferredWidth: splitDevicesView.width * 0.3
+            SplitView.minimumWidth: splitDevicesView.width * 0.25
+            height: parent.height
 
-            ColumnLayout {
-                anchors.fill: parent
-                spacing: 15
+            property int bigButtonWidth: Math.min(SplitView.minimumWidth - Style.bigMargins, 4 * Style.bigControlSize)
+            property int bigButtonHeight: Math.min(height / (buttonsColumn.children.length - 3) - Style.margins, Style.bigControlSize)
 
-                Rectangle {
-                    Layout.fillWidth: true
-                    Layout.preferredHeight: Style.lineHeight
-                    color: Style.selectedPalette.base
-                    radius: 5
-                    Text {
-                        anchors.fill: parent
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        font.pixelSize: Style.textSize
-                        font.bold: true
-                        text: qsTr("Network")
-                        color: enabled ? Style.selectedPalette.text: "gray"
-                    }
+            Rectangle {
+                id: networkColumnTitle
+                anchors.top: parent.top
+                width: parent.width
+                height: Style.lineHeight
+                border.width: Style.defaultBorderWidth
+                border.color: Style.selectedPalette.accent
+                color: Style.selectedPalette.base
+
+                DefaultLabel {
+                    anchors.centerIn: parent
+                    width: parent.width - Style.bigMargins
+                    font.bold: true
+                    text: qsTr("Network")
+                    color: enabled ? Style.selectedPalette.text : "gray"
                 }
+            }
+
+            Column {
+                id: buttonsColumn
+                anchors {
+                    top: networkColumnTitle.bottom
+                    bottom: parent.bottom
+                    left: parent.left
+                    right: parent.right
+                    margins: Style.margins
+                }
+                spacing: Style.margins
 
                 ViewButton {
                     id: connectDevicesButton
-                    Layout.topMargin: 20
-                    Layout.alignment: Qt.AlignHCenter
-                    Layout.preferredWidth: 200
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    width: networkColumn.bigButtonWidth
+                    height: networkColumn.bigButtonHeight
                     text: qsTr("Connect devices")
 
                     onClicked: {
@@ -150,8 +158,9 @@ Rectangle {
 
                 ViewButton {
                     id: loginListButton
-                    Layout.alignment: Qt.AlignHCenter
-                    Layout.preferredWidth: 200
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    width: networkColumn.bigButtonWidth
+                    height: networkColumn.bigButtonHeight
                     text: qsTr("Send login list")
 
                     onClicked: {
@@ -174,8 +183,9 @@ Rectangle {
 
                 ViewButton {
                     id: disconnectButton
-                    Layout.alignment: Qt.AlignHCenter
-                    Layout.preferredWidth: 200
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    width: networkColumn.bigButtonWidth
+                    height: networkColumn.bigButtonHeight
                     text: qsTr("Disconnect selected pupils")
 
                     onClicked: {
@@ -190,8 +200,9 @@ Rectangle {
 
                 ViewButton {
                     id: disconnectAllButton
-                    Layout.alignment: Qt.AlignHCenter
-                    Layout.preferredWidth: 200
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    width: networkColumn.bigButtonWidth
+                    height: networkColumn.bigButtonHeight
                     text: qsTr("Disconnect everybody")
 
                     onClicked: {
@@ -199,62 +210,87 @@ Rectangle {
                     }
                 }
 
-                ColumnLayout {
-                    Layout.fillWidth: true
-                    Layout.preferredHeight: 100
-                    Layout.margins: 5
-                    InformationLine { label: qsTr("Server ID:"); info: serverSettings.serverID }
-                    InformationLine { label: qsTr("Teacher port:"); info: serverSettings.port }
-                    InformationLine { label: qsTr("Connected:"); info: (networkController) ? networkController.socketCount : 0}
-                    InformationLine { label: qsTr("Logged:"); info: (networkController) ? networkController.loggedCount : 0 }
-                    InformationLine { label: qsTr("Data received:"); info: (networkController) ? networkController.dataCount : 0 }
+                Item {
+                    height: Style.margins
+                    width: 1
                 }
 
-                Rectangle {
-                    Layout.preferredWidth: parent.width
-                    Layout.preferredHeight: parent.height
-                    color: "transparent"
+                InformationLine {
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    label: qsTr("Server ID:")
+                    info: serverSettings.serverID
+                }
+                InformationLine {
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    label: qsTr("Teacher port:")
+                    info: serverSettings.port
+                }
+                InformationLine {
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    label: qsTr("Connected:")
+                    info: (networkController) ? networkController.socketCount : 0
+                }
+                InformationLine {
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    label: qsTr("Logged:")
+                    info: (networkController) ? networkController.loggedCount : 0
+                }
+                InformationLine {
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    label: qsTr("Data received:")
+                    info: (networkController) ? networkController.dataCount : 0
                 }
             }
         }
 
-        ColumnLayout {
-            spacing: 5
-            SplitView.preferredWidth: 300
-            SplitView.minimumWidth: 100
+        Item {
+            id: logsColumn
+            SplitView.preferredWidth: splitDevicesView.width * 0.2
+            SplitView.minimumWidth: splitDevicesView.width * 0.1
 
             Rectangle {
-                Layout.fillWidth: true
-                Layout.preferredHeight: Style.lineHeight
+                id: logsTitle
+                anchors.top: parent.top
+                width: parent.width
+                height: Style.lineHeight
+                border.width: Style.defaultBorderWidth
+                border.color: Style.selectedPalette.accent
                 color: Style.selectedPalette.base
-                radius: 5
-                Text {
-                    anchors.fill: parent
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    font.pixelSize: Style.textSize
+
+                DefaultLabel {
+                    anchors {
+                        verticalCenter: parent.verticalCenter
+                        left: parent.left
+                        right: clearButton.left
+                        margins: Style.margins
+                    }
                     font.bold: true
                     text: qsTr("Network logs")
-                    color: enabled ? Style.selectedPalette.text: "gray"
+                    color: enabled ? Style.selectedPalette.text : "gray"
                 }
+
                 SmallButton {
-                    width: Style.lineHeight
-                    height: Style.lineHeight
+                    id: clearButton
+                    width: height
+                    height: parent.height
                     anchors.top: parent.top
                     anchors.right: parent.right
-                    font.pixelSize: Style.textSize
                     text: "\uf1f8"
-                    ToolTip.visible: hovered
-                    ToolTip.text: qsTr("Clear logs")
+                    toolTipOnHover: true
+                    toolTipText: qsTr("Clear logs")
                     onClicked: logPanel.clearLog()
                 }
             }
+
             LogPanel {
                 id: logPanel
-                Layout.fillWidth: true
-                Layout.fillHeight: true
+                width: parent.width
+                anchors.top: logsTitle.bottom
+                anchors.bottom: parent.bottom
+                anchors.margins: Style.margins
             }
         }
+
     }
 
     Component.onCompleted: {
