@@ -150,6 +150,7 @@ Item {
         FoldDownCheck { // Pupils lists
             id: pupilPane
             SplitView.fillWidth: true
+            SplitView.minimumWidth: splitManagePupils.minSplitWidth
             title: qsTr("Pupils and groups")
             foldModel: Master.filteredUserModel
             lineHeight: Style.mediumLineHeight

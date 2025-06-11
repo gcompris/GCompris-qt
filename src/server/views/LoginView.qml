@@ -1,6 +1,7 @@
 /* GCompris - LoginView.qml
  *
  * SPDX-FileCopyrightText: 2021 Emmanuel Charruau <echarruau@gmail.com>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Emmanuel Charruau <echarruau@gmail.com>
