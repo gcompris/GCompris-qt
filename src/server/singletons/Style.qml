@@ -17,6 +17,7 @@ QtObject {
         accent: "#4a4a4a"
         alternateBase: "#292929"
         base: "#383838"
+        button: "#747474" // actually used for scrollbars
         light: "#4a4a4a"
         text: "#C0C0C0"
         highlightedText: "#f2f2f2"
@@ -28,6 +29,7 @@ QtObject {
         accent: "#d0d0d0"
         alternateBase: "#f4f4f4"
         base: "#e4e4e4"
+        button: "#949494" // actually used for scrollbars
         light: "#f2f2f2"
         text: "#373737"
         highlightedText: "#080808"

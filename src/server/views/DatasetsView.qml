@@ -40,7 +40,7 @@ Item {
             SplitView.minimumWidth: splitDatasetView.bigButtonWidth
             height: parent.height
 
-            FoldDownCheck {
+            FoldDown {
                 id: activityPane
                 width: parent.width
                 height: parent.height
@@ -50,6 +50,8 @@ Item {
                 nameKey: "activity_title"
                 checkKey: "activity_checked"
                 delegateName: "radio"
+                filterVisible: true
+                collapsable: false
                 onSelectionClicked: (modelId) => {
                     datasetsView.selectedActivity = modelId
                     datasetsView.selectedDataset = -1
@@ -58,7 +60,7 @@ Item {
             }
         }
 
-        FoldDownRadio { // Datasets lists
+        FoldDown { // Datasets lists
             id: datasetPane
             SplitView.fillWidth: true
             SplitView.minimumWidth: splitDatasetView.minSplitWidth
@@ -68,6 +70,7 @@ Item {
             nameKey: "dataset_name"
             checkKey: "dataset_checked"
             delegateName: "radio"
+            filterVisible: false
             collapsable: false
             onSelectionClicked: (modelId) => {
                 datasetsView.selectedDataset = modelId
@@ -194,10 +197,6 @@ Item {
 
     Component.onCompleted: {
         splitDatasetView.restoreState(serverSettings.value("splitDatasetView"))
-        // The two next lines force a filter on activityPane. Remove later. Save clicks while developing.
-        // activityPane.foldDownFilter.text = "verticale"
-        activityPane.foldDownFilter.text = "choice"
-        activityPane.filterButton.checked = true
     }
     Component.onDestruction: serverSettings.setValue("splitDatasetView", splitDatasetView.saveState())
 }
