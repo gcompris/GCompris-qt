@@ -24,6 +24,7 @@ Item {
             model: lineView.jsonData.results
             InformationLine {
                 required property var modelData
+                labelWidth: lineView.labelWidth
                 label: qsTr("Result")
                 info: modelData.leftNumber + " " + modelData.operator + " " + modelData.rightNumber
                 textColor: (modelData.correctAnswer) ? "green" : "red"
