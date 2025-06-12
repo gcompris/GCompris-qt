@@ -19,8 +19,6 @@ Popup {
     property string title: qsTr("Line details")
     property var parentModel: null
     property int lineIndex: 0
-    property int labelWidth: 150
-    property int infoWidth: 400
 
     anchors.centerIn: Overlay.overlay
     width: 600
@@ -81,6 +79,8 @@ Popup {
             model: recordModel
             delegate: InformationLine {
                 Layout.fillWidth: true
+                labelWidth: 150
+                infoWidth: 400
                 height: 20
                 label: name_
                 info: value_
@@ -98,6 +98,8 @@ Popup {
             model: dataModel
             delegate: InformationLine {
                 Layout.fillWidth: true
+                labelWidth: 150
+                infoWidth: 400
                 height: 20
                 label: name_
                 info: value_
