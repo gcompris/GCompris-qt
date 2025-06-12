@@ -15,7 +15,6 @@ import "../components"
 Column {
     id: defaultJsonDisplay
     property string jsonString: "{}"
-    property int labelWidth: 130        // used by InformationLine
     height: Style.lineHeight * dataModel.count
 
     ListModel { id: dataModel }
@@ -32,6 +31,7 @@ Column {
     Repeater {
         model: dataModel
         delegate: InformationLine {
+            labelWidth: 130
             height: Style.lineHeight
             label: name_
             info: value_
