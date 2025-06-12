@@ -189,6 +189,16 @@ Item {
                         onRadioCheckChanged: (index) => { Style.textSize = radios[index] }
                     }
 
+                    RadioButtonLine {
+                        title.width: settingsView.labelWidth
+                        label: qsTr("Theme")
+                        radios: [qsTr("Dark"), qsTr("Light")]
+                        current: serverSettings.darkTheme ? 0 : 1
+                        onRadioCheckChanged: {
+                            serverSettings.darkTheme = (current === 1) ? false : true
+                        }
+                    }
+
                     Item {
                         width: 1
                         height: Style.hugeMargins
