@@ -113,7 +113,7 @@ Item {
             SplitView.minimumWidth: splitManagePupils.bigButtonWidth
             height: parent.height
 
-            FoldDownRadio {
+            FoldDown {
                 id: groupPane
                 width: parent.width
                 height: parent.height - addGroupButtonArea.height
@@ -122,6 +122,7 @@ Item {
                 indexKey: "group_id"
                 nameKey: "group_name"
                 checkKey: "group_checked"
+                filterVisible: false
                 collapsable: false
                 delegateName: "radioGroupEdit"
                 onSelectionClicked: (modelId) => {
@@ -147,17 +148,17 @@ Item {
             }
         }
 
-        FoldDownCheck { // Pupils lists
+        FoldDown { // Pupils lists
             id: pupilPane
             SplitView.fillWidth: true
             SplitView.minimumWidth: splitManagePupils.minSplitWidth
             title: qsTr("Pupils and groups")
             foldModel: Master.filteredUserModel
-            lineHeight: Style.mediumLineHeight
             indexKey: "user_id"
             nameKey: "user_name"
             checkKey: "user_checked"
             delegateName: "checkUserEdit"
+            filterVisible: true
             collapsable: false
         }
 

@@ -38,7 +38,7 @@ ColumnLayout {
         activated: selectorPanel.withCalendar
         Layout.minimumHeight: Style.lineHeight
         Layout.preferredHeight: monthHeight
-        Layout.maximumHeight: collapseButton.checked ?  monthHeight : lineHeight
+        Layout.maximumHeight: collapseButton.checked ? monthHeight : Style.lineHeight
         Layout.fillWidth: true
     }
 
@@ -55,16 +55,19 @@ ColumnLayout {
                                         Style.selectedPalette.accent
         }
 
-        FoldDownRadio {
+        FoldDown {
             id: groupPane
             title: qsTr("Groups")
             foldModel: Master.groupModel
             indexKey: "group_id"
             nameKey: "group_name"
             checkKey: "group_checked"
+            delegateName: "radio"
+            filterVisible: false
+            collapsable: true
             activated: selectorPanel.withGroups
-            SplitView.preferredHeight: 8 * lineHeight
-            SplitView.minimumHeight: lineHeight
+            SplitView.preferredHeight: 8 * Style.lineHeight
+            SplitView.minimumHeight: Style.lineHeight
             SplitView.fillHeight: selectorPanel.withGroups && (!selectorPanel.withActivities && !selectorPanel.withPupils)
             onSelectionClicked: (modelId) => {
                 Master.groupFilterId = modelId
@@ -72,20 +75,23 @@ ColumnLayout {
             }
         }
 
-        FoldDownCheck {
+        FoldDown {
             id: pupilPane
             title: qsTr("Pupils")
             foldModel: selectorUserModel
             indexKey: "user_id"
             nameKey: "user_name"
             checkKey: "user_checked"
+            delegateName: "check"
+            filterVisible: true
+            collapsable: true
             activated: selectorPanel.withPupils
-            SplitView.preferredHeight: 8 * lineHeight
-            SplitView.minimumHeight: lineHeight
+            SplitView.preferredHeight: 8 * Style.lineHeight
+            SplitView.minimumHeight: Style.lineHeight
             SplitView.fillHeight: selectorPanel.withPupils && (!selectorPanel.withActivities)
         }
 
-        FoldDownCheck {
+        FoldDown {
             id: activityPane
             title: qsTr("Activities")
             foldModel: selectorActivityModel
@@ -94,9 +100,11 @@ ColumnLayout {
             checkKey: "activity_checked"
             titleKey: "activity_title"
             delegateName: "checkActivity"
+            filterVisible: true
+            collapsable: true
             activated: selectorPanel.withActivities
-            SplitView.preferredHeight: 8 * lineHeight
-            SplitView.minimumHeight: lineHeight
+            SplitView.preferredHeight: 8 * Style.lineHeight
+            SplitView.minimumHeight: Style.lineHeight
             SplitView.fillHeight: selectorPanel.withActivities
         }
 

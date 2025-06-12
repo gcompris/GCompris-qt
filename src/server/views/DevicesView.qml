@@ -74,7 +74,7 @@ Item {
             function onNetLog(message) { logPanel.appendLog(message) }
         }
 
-        FoldDownRadio {
+        FoldDown {
             id: groupPane
             SplitView.preferredWidth: splitDevicesView.width * 0.2
             SplitView.minimumWidth: splitDevicesView.width * 0.15
@@ -83,6 +83,8 @@ Item {
             indexKey: "group_id"
             nameKey: "group_name"
             checkKey: "group_checked"
+            delegateName: "radio"
+            filterVisible: false
             collapsable: false
             onSelectionClicked: (modelId) => {
                 Master.groupFilterId = modelId
@@ -90,7 +92,7 @@ Item {
             }
         }
 
-        FoldDownCheck {
+        FoldDown {
             id: pupilPane
             title: qsTr("Pupils")
             foldModel: Master.filteredUserModel
@@ -98,6 +100,7 @@ Item {
             nameKey: "user_name"
             checkKey: "user_checked"
             delegateName: "checkUserStatus"
+            filterVisible: true
             collapsable: false
             SplitView.fillWidth: true
             SplitView.minimumWidth: splitDevicesView.width * 0.25
