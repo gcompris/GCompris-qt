@@ -13,7 +13,6 @@ import QtQuick
 Item {
     id: lineItem
     required property var jsonData
-    property int labelWidth: 130        // used by InformationLine
     property var correctAnswer: []
     property var regex: /\((.*)\)/
     height: details.height

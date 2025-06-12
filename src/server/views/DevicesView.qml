@@ -23,8 +23,6 @@ Item {
     id: devicesView
     property var hostInformations: ({})
     property var ipList: []
-    property int labelWidth: (buttonsColumn.width - Style.margins) * 0.5
-    property int infoWidth: labelWidth
     property alias splitDevicesView: splitDevicesView
     enabled: serverRunning
 
@@ -143,6 +141,8 @@ Item {
                 }
                 spacing: Style.margins
 
+                property int labelWidth: (buttonsColumn.width - Style.margins) * 0.5
+
                 ViewButton {
                     id: connectDevicesButton
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -216,26 +216,36 @@ Item {
                 }
 
                 InformationLine {
+                    labelWidth: buttonsColumn.labelWidth
+                    infoWidth: buttonsColumn.labelWidth
                     anchors.horizontalCenter: parent.horizontalCenter
                     label: qsTr("Server ID:")
                     info: serverSettings.serverID
                 }
                 InformationLine {
+                    labelWidth: buttonsColumn.labelWidth
+                    infoWidth: buttonsColumn.labelWidth
                     anchors.horizontalCenter: parent.horizontalCenter
                     label: qsTr("Teacher port:")
                     info: serverSettings.port
                 }
                 InformationLine {
+                    labelWidth: buttonsColumn.labelWidth
+                    infoWidth: buttonsColumn.labelWidth
                     anchors.horizontalCenter: parent.horizontalCenter
                     label: qsTr("Connected:")
                     info: (networkController) ? networkController.socketCount : 0
                 }
                 InformationLine {
+                    labelWidth: buttonsColumn.labelWidth
+                    infoWidth: buttonsColumn.labelWidth
                     anchors.horizontalCenter: parent.horizontalCenter
                     label: qsTr("Logged:")
                     info: (networkController) ? networkController.loggedCount : 0
                 }
                 InformationLine {
+                    labelWidth: buttonsColumn.labelWidth
+                    infoWidth: buttonsColumn.labelWidth
                     anchors.horizontalCenter: parent.horizontalCenter
                     label: qsTr("Data received:")
                     info: (networkController) ? networkController.dataCount : 0
