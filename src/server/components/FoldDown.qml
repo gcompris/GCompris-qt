@@ -15,7 +15,7 @@ import QtQuick.Controls.Basic
 import "."
 import "../singletons"
 
-Column {
+Item {
     id: foldDown
     required property ListModel foldModel
     required property string indexKey
@@ -35,8 +35,6 @@ Column {
 
     enabled: activated
     visible: activated
-    spacing: 0
-    clip: true
 
     signal selectionClicked(int modelId, bool checked)
 
@@ -47,6 +45,7 @@ Column {
 
     // Folddown header
     Rectangle {
+        id: foldDownHeader
         width: parent.width
         height: Style.lineHeight
         color: Style.selectedPalette.base
@@ -169,23 +168,32 @@ Column {
     Rectangle {
         id: elements
         width: parent.width
-        height: parent.height
+        anchors.top: foldDownHeader.bottom
+        anchors.bottom: parent.bottom
         color: Style.selectedPalette.alternateBase
 
-        ScrollView {
+        Flickable {
             id: scrollLines
             anchors.fill: parent
-            anchors.bottomMargin: foldDown.lineHeight
-            ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
-            ScrollBar.vertical.policy: ScrollBar.AsNeeded
-            ScrollBar.vertical.contentItem: Rectangle {
-                implicitWidth: 6
-                radius: width
-                opacity: scrollLines.contentHeight > scrollLines.height ? 0.5 : 0
-                color: parent.pressed ? Style.selectedPalette.highlight : Style.selectedPalette.text
+            contentWidth: width
+            contentHeight: boxes.height
+            flickableDirection: Flickable.VerticalFlick
+            boundsBehavior: Flickable.StopAtBounds
+            clip: true
+
+            ScrollBar.vertical: ScrollBar {
+                policy: ScrollBar.AsNeeded
+                contentItem: Rectangle {
+                    implicitWidth: 6
+                    radius: width
+                    opacity: scrollLines.contentHeight > scrollLines.height ? 1 : 0
+                    color: parent.pressed ? Style.selectedPalette.highlight : Style.selectedPalette.button
+                }
             }
+
             Column {
                 id: boxes
+                height: implicitHeight
 
                 Repeater {
                     model: foldDown.foldModel
@@ -215,6 +223,11 @@ Column {
                             }
                         }
                     }
+                }
+
+                Item {
+                    width: 1
+                    height: Style.bigMargins
                 }
             }
         }
