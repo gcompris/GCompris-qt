@@ -21,19 +21,23 @@ Item {
     Column {
         id: details
         InformationLine {
+            labelWidth: lineView.labelWidth
             label: qsTr("Question")
             info: lineView.jsonData.question
             textColor: (lineView.jsonData.expected === lineView.jsonData.selected) ? "green" : "red"
         }
         InformationLine {
+            labelWidth: lineView.labelWidth
             label: qsTr("Expected")
             info: lineView.jsonData.expected.join(", ")
         }
         InformationLine {
+            labelWidth: lineView.labelWidth
             label: qsTr("selected")
             info: lineView.jsonData.selected.join(", ")
         }
         InformationLine {
+            labelWidth: lineView.labelWidth
             label: qsTr("Proposal")
             info: lineView.jsonData.proposal.join(", ")
             infoText.font.bold: true

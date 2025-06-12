@@ -25,10 +25,12 @@ Item {
     Column {
         id: details
         InformationLine {
+            labelWidth: lineItem.labelWidth
             label: qsTr("Expected")
             info: formatTime(lineItem.jsonData.expected)
         }
         InformationLine {
+            labelWidth: lineItem.labelWidth
             label: qsTr("Proposal")
             info: formatTime(lineItem.jsonData.proposal)
             textColor: (result_success) ? "green" : "red"
