@@ -89,31 +89,43 @@ Item {
         StyledSplitView { // First item in SwipeView
             id: splitSettings
 
-            ScrollView {
+            Flickable {
                 id: scrollInfos
                 SplitView.fillWidth: true
                 SplitView.fillHeight: true
 
-                ScrollBar.horizontal.policy: ScrollBar.AsNeeded
-                ScrollBar.horizontal.rightPadding: 10
-                ScrollBar.horizontal.contentItem: Rectangle {
-                    implicitHeight: 6
-                    radius: width
-                    opacity: scrollInfos.contentWidth > scrollInfos.width ? 0.5 : 0
-                    color: parent.pressed ? Style.selectedPalette.highlight : Style.selectedPalette.text
+                contentWidth: mainColumn.width
+                contentHeight: mainColumn.height
+                boundsBehavior: Flickable.StopAtBounds
+                clip: true
+
+                ScrollBar.horizontal: ScrollBar {
+                    policy: ScrollBar.AsNeeded
+                    rightPadding: 10
+                    contentItem: Rectangle {
+                        implicitHeight: 6
+                        radius: width
+                        opacity: scrollInfos.contentWidth > scrollInfos.width ? 1 : 0
+                        color: parent.pressed ? Style.selectedPalette.highlight : Style.selectedPalette.button
+                    }
                 }
-                ScrollBar.vertical.policy: ScrollBar.AsNeeded
-                ScrollBar.vertical.bottomPadding: 10
-                ScrollBar.vertical.contentItem: Rectangle {
-                    implicitWidth: 6
-                    radius: width
-                    opacity: scrollInfos.contentHeight > scrollInfos.height ? 0.5 : 0
-                    color: parent.pressed ? Style.selectedPalette.highlight : Style.selectedPalette.text
+
+                ScrollBar.vertical: ScrollBar {
+                    policy: ScrollBar.AsNeeded
+                    bottomPadding: 10
+                    contentItem: Rectangle {
+                        implicitWidth: 6
+                        radius: width
+                        opacity: scrollInfos.contentHeight > scrollInfos.height ? 1 : 0
+                        color: parent.pressed ? Style.selectedPalette.highlight : Style.selectedPalette.button
+                    }
                 }
 
                 Column {
                     id: mainColumn
                     x: Style.margins
+                    width: implicitWidth
+                    height: implicitHeight
                     spacing: Style.margins
 
                     property int idealWidth: scrollInfos.width - 3 * Style.margins
@@ -334,10 +346,9 @@ Item {
             Item {
                 id: activitiesListArea
                 SplitView.preferredWidth: Math.min(splitSettings.width * 0.3,
-                    activitiesColumn.childrenRect.width + 3 * Style.margins)
+                    activitiesColumn.width)
                 SplitView.minimumWidth: splitSettings.width * 0.1
-                SplitView.maximumWidth: activitiesColumn.childrenRect.width +
-                    3 * Style.margins
+                SplitView.maximumWidth: activitiesColumn.width
                 SplitView.fillHeight: true
 
                 Rectangle {
@@ -357,7 +368,7 @@ Item {
                     }
                 }
 
-                ScrollView {
+                Flickable {
                     id: activitiesScroll
                     anchors {
                         top: activitiesListTitle.bottom
@@ -366,51 +377,58 @@ Item {
                         bottom: parent.bottom
                     }
 
-                    ScrollBar.horizontal.policy: ScrollBar.AsNeeded
-                    ScrollBar.horizontal.rightPadding: 10
-                    ScrollBar.horizontal.contentItem: Rectangle {
-                        implicitHeight: 6
-                        radius: width
-                        opacity: activitiesScroll.contentWidth > activitiesScroll.width ? 0.5 : 0
-                        color: parent.pressed ? Style.selectedPalette.highlight : Style.selectedPalette.text
+                    contentWidth: activitiesColumn.width
+                    contentHeight: activitiesColumn.height
+                    boundsBehavior: Flickable.StopAtBounds
+                    clip: true
+
+                    ScrollBar.horizontal: ScrollBar {
+                        policy: ScrollBar.AsNeeded
+                        rightPadding: 10
+                        contentItem: Rectangle {
+                            implicitHeight: 6
+                            radius: width
+                            opacity: activitiesScroll.contentWidth > activitiesScroll.width ? 1 : 0
+                            color: parent.pressed ? Style.selectedPalette.highlight : Style.selectedPalette.button
+                        }
                     }
-                    ScrollBar.vertical.policy: ScrollBar.AsNeeded
-                    ScrollBar.vertical.bottomPadding: 10
-                    ScrollBar.vertical.contentItem: Rectangle {
-                        implicitWidth: 6
-                        radius: width
-                        opacity: activitiesScroll.contentHeight > activitiesScroll.height ? 0.5 : 0
-                        color: parent.pressed ? Style.selectedPalette.highlight : Style.selectedPalette.text
+
+                    ScrollBar.vertical: ScrollBar {
+                        policy: ScrollBar.AsNeeded
+                        bottomPadding: 10
+                        contentItem: Rectangle {
+                            implicitWidth: 6
+                            radius: width
+                            opacity: activitiesScroll.contentHeight > activitiesScroll.height ? 1 : 0
+                            color: parent.pressed ? Style.selectedPalette.highlight : Style.selectedPalette.button
+                        }
                     }
 
-                    Item {
-                        implicitWidth: childrenRect.width + 3 * Style.margins
-                        implicitHeight: childrenRect.height
+                    Column {
+                        id: activitiesColumn
+                        width: childrenRect.width + 3 * Style.margins
+                        height: childrenRect.height
+                        spacing: Style.margins
 
-                        Column {
-                            id: activitiesColumn
-                            x: Style.margins
-                            spacing: Style.margins
+                        Item {
+                            width: 1
+                            height: Style.margins
+                        }
 
-                            Item {
-                                width: 1
-                                height: Style.margins
+                        Repeater {
+                            model: Master.availableActivities
+                            DefaultLabel {
+                                x: Style.margins
+                                horizontalAlignment: Text.AlignLeft
+                                text: ((modelData !== undefined) &&
+                                    (Master.allActivities[modelData] !== undefined)) ?
+                                            Master.allActivities[modelData].title : ""
                             }
+                        }
 
-                            Repeater {
-                                model: Master.availableActivities
-                                DefaultLabel {
-                                    horizontalAlignment: Text.AlignLeft
-                                    text: ((modelData !== undefined)
-                                    && (Master.allActivities[modelData] !== undefined))
-                                    ? Master.allActivities[modelData].title : ""
-                                }
-                            }
-
-                            Item {
-                                width: 1
-                                height: Style.hugeMargins
-                            }
+                        Item {
+                            width: 1
+                            height: Style.hugeMargins
                         }
                     }
                 }
