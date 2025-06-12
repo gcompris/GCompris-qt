@@ -245,7 +245,7 @@ Item {
                         color: Style.selectedPalette.text
                     }
 
-                    FoldDownRadio {
+                    FoldDown {
                         id: allPupilPane
                         Layout.fillHeight: true
                         Layout.preferredWidth: parent.width
@@ -255,6 +255,8 @@ Item {
                         indexKey: "user_id"
                         nameKey: "user_name"
                         checkKey: "user_checked"
+                        delegateName: "radio"
+                        filterVisible: false
                         collapsable: false
                     }
                 }
