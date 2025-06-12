@@ -1,4 +1,4 @@
-/* GCompris - FoldDownCheck.qml
+/* GCompris - FoldDown.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
  * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
@@ -15,7 +15,7 @@ import QtQuick.Controls.Basic
 import "."
 import "../singletons"
 
-Column {
+Item {
     id: foldDown
     required property ListModel foldModel
     required property string indexKey
@@ -23,8 +23,8 @@ Column {
     required property string checkKey
     required property string title
 
-    property int lineHeight: Style.lineHeight // TODO: remove once all instances have been updated to not use it.
     property bool activated: true
+    property bool filterVisible: true
     property bool collapsable: true
     property int currentChecked: -1
     property string titleKey: nameKey
@@ -35,8 +35,6 @@ Column {
 
     enabled: activated
     visible: activated
-    spacing: 0
-    clip: true
 
     signal selectionClicked(int modelId, bool checked)
 
@@ -47,14 +45,35 @@ Column {
 
     // Folddown header
     Rectangle {
+        id: foldDownHeader
         width: parent.width
         height: Style.lineHeight
         color: Style.selectedPalette.base
         border.width: Style.defaultBorderWidth
         border.color: Style.selectedPalette.accent
 
+        // button used for radio lists
+        SmallButton {
+            id: clearButton
+            visible: childGroup.exclusive
+            anchors.left: parent.left
+            text: "\uf068"
+            enabled: collapseButton.checked && ((childGroup.checkedButton != null) || (!childGroup.exclusive))
+            onClicked: {    // Uncheck all buttons
+                if (childGroup.exclusive) {
+                    childGroup.checkedButton = null
+                    foldDown.currentChecked = -1
+                    foldDown.selectionClicked( -1, checked)
+                }
+                for (var i = 0; i < childGroup.buttons.length; i++)
+                    foldDown.foldModel.setProperty(i, foldDown.checkKey, false)
+            }
+        }
+
+        // button used for checkbox lists
         StyledCheckBox {
             id: parentBox
+            visible: !childGroup.exclusive
             anchors.left: parent.left
             anchors.margins: Style.margins + Style.smallMargins
             enabled: foldDownFilter.text === ""
@@ -78,6 +97,7 @@ Column {
 
         Rectangle {
             id: filterRect
+            visible: foldDown.filterVisible
             width: filterButton.checked ? 100 : 0
             height: parent.height
             anchors.right: filterButton.left
@@ -101,7 +121,9 @@ Column {
         SmallButton {
             id: filterButton
             anchors.right: counter.left
-            anchors.rightMargin: Style.smallMargins
+            anchors.rightMargin: visible ? Style.smallMargins : 0
+            width: visible ? height : 0
+            visible: foldDown.filterVisible
             checkable: true
             text: "\uf0b0"
             onCheckedChanged: {
@@ -146,23 +168,32 @@ Column {
     Rectangle {
         id: elements
         width: parent.width
-        height: parent.height
+        anchors.top: foldDownHeader.bottom
+        anchors.bottom: parent.bottom
         color: Style.selectedPalette.alternateBase
 
-        ScrollView {
+        Flickable {
             id: scrollLines
             anchors.fill: parent
-            anchors.bottomMargin: foldDown.lineHeight
-            ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
-            ScrollBar.vertical.policy: ScrollBar.AsNeeded
-            ScrollBar.vertical.contentItem: Rectangle {
-                implicitWidth: 6
-                radius: width
-                opacity: scrollLines.contentHeight > scrollLines.height ? 0.5 : 0
-                color: parent.pressed ? Style.selectedPalette.highlight : Style.selectedPalette.text
+            contentWidth: width
+            contentHeight: boxes.height
+            flickableDirection: Flickable.VerticalFlick
+            boundsBehavior: Flickable.StopAtBounds
+            clip: true
+
+            ScrollBar.vertical: ScrollBar {
+                policy: ScrollBar.AsNeeded
+                contentItem: Rectangle {
+                    implicitWidth: 6
+                    radius: width
+                    opacity: scrollLines.contentHeight > scrollLines.height ? 1 : 0
+                    color: parent.pressed ? Style.selectedPalette.highlight : Style.selectedPalette.button
+                }
             }
+
             Column {
                 id: boxes
+                height: implicitHeight
 
                 Repeater {
                     model: foldDown.foldModel
@@ -173,8 +204,6 @@ Column {
 
                         source: {
                             switch(foldDown.delegateName) {
-                            case "radio":
-                                return "RadioSimpleDelegate.qml"
                             case "check":
                                 return "CheckSimpleDelegate.qml"
                             case "checkUserEdit":
@@ -183,55 +212,22 @@ Column {
                                 return "CheckUserStatusDelegate.qml"
                             case "checkActivity":
                                 return "CheckActivityDelegate.qml"
+                            case "radio":
+                                return "RadioSimpleDelegate.qml"
+                            case "radioActivity":
+                                return "RadioActivityDelegate.qml"
+                            case "radioGroupEdit":
+                                return "RadioGroupEditDelegate.qml"
                             default:
                                 return ""
                             }
                         }
-/* Replaced with direct url in Loader source...
-                        Component {     // Delegate for wrong delegateName
-                            id: emptyDelegate
-                            Control {
-                                id: lineBox
-                                font.pixelSize: Style.textSize
-                                hoverEnabled: true
-                                Rectangle {
-                                    anchors.fill: parent
-                                    color: lineBox.hovered ? Style.selectedPalette.base : "transparent"
-                                }
-                                Text {
-                                    text: eval(nameKey)
-                                    color: Style.selectedPalette.text
-                                }
-                            }
-                        }
-
-                        // Externals delegates
-                        Component {
-                            id: radioSimpleDelegate
-                            RadioSimpleDelegate {}      // Basic radio button
-                        }
-
-                        Component {
-                            id: checkSimpleDelegate
-                            CheckSimpleDelegate {}      // Basic checkbox
-                        }
-
-                        Component {
-                            id: checkActivityDelegate
-                            CheckActivityDelegate {}    // Need to pick up the activity's title in allActivities
-                        }
-
-                        Component {
-                            id: checkUserStatusDelegate
-                            CheckUserStatusDelegate {}  // Add user's connection status
-                        }
-
-                        Component {
-                            id: checkUserEditDelegate
-                            CheckUserEditDelegate {}    // Add user's connection status
-                        }*/
-
                     }
+                }
+
+                Item {
+                    width: 1
+                    height: Style.bigMargins
                 }
             }
         }
