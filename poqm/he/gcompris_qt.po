@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-06-08 21:08+0300\n"
+"PO-Revision-Date: 2025-06-12 08:44+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -6675,12 +6675,9 @@ msgstr ""
 #: activities/erase_2clic/ActivityInfo.qml:20
 #: activities/erase_clic/ActivityInfo.qml:20
 #: activities/penalty/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Fine motor coordination."
 msgctxt "ActivityInfo|"
 msgid "Develop motor coordination skills."
-msgstr "מוטוריקה עדינה."
+msgstr "פיתוח מיומנויות מוטוריקה עדינה."
 
 #. Help manual
 #: activities/erase/ActivityInfo.qml:24
@@ -6697,16 +6694,11 @@ msgstr "הקשה כפולה או קליק כפול"
 
 #. Help title
 #: activities/erase_2clic/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Double tap or double click to erase the area and discover the background "
-#| "image."
 msgctxt "ActivityInfo|"
 msgid ""
 "Double tap or double click to erase the blocks and discover the hidden "
 "picture."
-msgstr "הקשה כפולה או קליק כפול כדי למחוק את האזור ולגלות את תמונת הרקע."
+msgstr "הקשה כפולה או קליק כפול כדי למחוק את הלבנים ולחשוף את התמונה הנסתרת."
 
 #. Help manual
 #: activities/erase_2clic/ActivityInfo.qml:24
@@ -6950,13 +6942,12 @@ msgid "Dog"
 msgstr "כלב"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:106
-#, fuzzy
 msgctxt "board1|"
 msgid ""
 "The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
 "are descendants of the wolf."
 msgstr ""
-"הכלב נובח \"האוּ\". ככל הנראה כלבים הם המין המבוּיָית העתיק ביותר. הם צאצאים של "
+"הכלב נובח „האוּ”. ככל הנראה כלבים הם המין המבוּיָית העתיק ביותר. הם צאצאים של "
 "הזאב."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
@@ -9986,12 +9977,9 @@ msgid "Enter: validate the answer"
 msgstr "Enter: אימות התשובה"
 
 #: activities/frieze/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: switch between invisible and visible modes"
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
-msgstr "רווח: להחליף בין מצב נראה ומצב בלתי-נראה"
+msgstr ""
 
 #: activities/frieze/Frieze.qml:287
 msgctxt "Frieze|"
@@ -14661,9 +14649,6 @@ msgid "Empty"
 msgstr "ריק"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Grammatical analysis"
 msgctxt "GrammarAnalysis|"
 msgid "Grammatical analysis"
 msgstr "ניתוח לשוני"
@@ -14734,17 +14719,11 @@ msgid "Leave the box blank if the class doesn't match."
 msgstr "יש להשאיר את הריבוע ריק אם היחסה לא תואמת."
 
 #: activities/grammar_classes/GrammarClasses.qml:15
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Grammatical classes"
 msgctxt "GrammarClasses|"
 msgid "Grammatical classes"
 msgstr "יחסות דקדוקיות"
 
 #: activities/grammar_classes/GrammarClasses.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "GrammarClasses|"
 msgid "Learn to identify grammatical classes."
 msgstr "למידה איך לזהות יחסות דקדוקיות."
@@ -14758,11 +14737,6 @@ msgid "Find all the words corresponding to the requested grammatical class."
 msgstr "איתור כל המילים שמתאימות ליחסה הדקדוקית המבוקשת."
 
 #: activities/grammar_classes/GrammarClasses.qml:18
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid ""
-#| "Select the grammatical class from the list, then select the box under a "
-#| "word and assign it the class."
 msgctxt "GrammarClasses|"
 msgid ""
 "Select the grammatical class from the list, then select the box under a word "
@@ -14772,9 +14746,6 @@ msgstr ""
 "היחסה."
 
 #: activities/grammar_classes/GrammarClasses.qml:19
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Leave the box blank if the class doesn't match."
 msgctxt "GrammarClasses|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr "יש להשאיר את הריבוע ריק אם היחסה לא תואמת."
@@ -15010,12 +14981,9 @@ msgid "Division required."
 msgstr "צריך חילוק."
 
 #: activities/guess24/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "משחק זיכרון: כל הפעולות (חיבור, חיסור, כפל וחילוק)"
+msgstr "כל הפעולות נחוצות."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -22244,30 +22212,19 @@ msgid ""
 msgstr "יש 3 הוראות שניתן להשתמש בהן כדי לכתוב קוד ולהוביל את טאקס לדג:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:544
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
-#| "facing."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
 "facing."
 msgstr ""
-"<b>1. לנוע קדימה:</b> מזיז את טאקס צעד אחד קדימה בכיוון שאליו הוא מסתכל."
+"<b>1. לנוע קדימה:</b> מזיזה את טאקס צעד אחד קדימה בכיוון שאליו הוא פונה."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:545
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgctxt "ProgrammingMaze|"
 msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgstr "<b>2. לפנות שמאלה:</b> מפנה את טאקס לשמאל."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:546
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgctxt "ProgrammingMaze|"
 msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgstr "<b>3. לפנות ימינה:</b> מפנה את טאקס לימין."
@@ -22278,12 +22235,9 @@ msgid "Main Function:"
 msgstr "פונקציה עיקרית:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:551
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "The execution of the code starts here."
 msgctxt "ProgrammingMaze|"
 msgid "The execution of the code starts here."
-msgstr "הפעלת הקוד מתחילה כאן."
+msgstr "הרצת הקוד מתחילה כאן."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:552
 #, fuzzy
@@ -22300,17 +22254,12 @@ msgstr ""
 "עיקריות</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:553
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-The instructions will execute in order until there's none left, or until "
-#| "a dead-end, or when Tux reaches the fish."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-The instructions will execute in order until there's none left, or until a "
 "dead-end, or when Tux reaches the fish."
 msgstr ""
-"-ההוראות תבוצענה לפי הסדר עד האחרונה או עד מבוי סתום, או עד שטאקס מגיע לדג."
+"-ההנחיות תבוצענה לפי הסדר עד האחרונה או עד מבוי סתום, או עד שטאקס מגיע לדג."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:563
 msgctxt "ProgrammingMaze|"
@@ -22327,20 +22276,14 @@ msgstr ""
 "קריאה לו איפה שצריך</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:565
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main "
-#| "Function area</b> to add your code, click on the <b>Procedure</b> or "
-#| "<b>Main Function</b> label."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
 "area</b> to add your code, click on the <b>Procedure</b> or <b>Main "
 "Function</b> label."
 msgstr ""
-"-כדי <b>להחליף</b> בין ה <b>אזור ההליכים</b> ו <b>אזור פעולות עיקריות</b>כדי "
-"להוסיף את הקוד שלך, ללחוץ על <b>הליך</b> או תוית<b>אזור פעולות עיקריות</b>."
+"-כדי <b>להחליף</b> בין <b>אזור ההליכים</b> ו<b>אזור הפונקציות העיקריות</b> "
+"לטובת הוספת הקוד שלך, יש ללחוץ על <b>הליך</b> או על <b>פונקציה עיקרית</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:575
 msgctxt "ProgrammingMaze|"
@@ -25783,12 +25726,9 @@ msgstr ""
 "של הצוללת."
 
 #: activities/submarine/Submarine.qml:139
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Increase or decrease the velocity of the submarine using the engine."
 msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
-msgstr "להגביר או להקטין את המהירות של הצוללת באמצעות המנוע."
+msgstr "להאיץ או להאיט את הצוללת באמצעות המנוע."
 
 #: activities/submarine/Submarine.qml:142
 #, fuzzy
@@ -25804,27 +25744,16 @@ msgstr ""
 "ללחוץ על כפתור ה+ כדי להגביר את המהירות או על כפתור ה- כדי להקטין את המהירות."
 
 #: activities/submarine/Submarine.qml:149
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The item next to the engine is the ballast tank."
 msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
-msgstr "החלק שליד המנוע הוא מֶיכל הנֵטֶל."
+msgstr "הפריט שליד המנוע הוא מֶיכל הנֵטֶל."
 
 #: activities/submarine/Submarine.qml:152
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The ballast tanks are used to float or dive under water."
 msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr "מיכלי הנֵטֶל משמשים לציפה או לצלילה תחת המים."
 
 #: activities/submarine/Submarine.qml:155
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "If the ballast tanks are empty, the submarine will float. If the ballast "
-#| "tanks are full of water, the submarine will dive underwater."
 msgctxt "Submarine|"
 msgid ""
 "If the ballast tanks are empty, the submarine will float. If the ballast "
@@ -25834,18 +25763,12 @@ msgstr ""
 "מתחת למים."
 
 #: activities/submarine/Submarine.qml:158
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Turning the upper valve on or off will alternatively allow or stop the "
-#| "water from filling in the ballast tank, thus allowing it to dive "
-#| "underwater."
 msgctxt "Submarine|"
 msgid ""
 "Turning the upper valve on or off will alternatively allow or stop the water "
 "from filling in the ballast tank, thus allowing it to dive underwater."
 msgstr ""
-"פתיחה או סגירה של הברז העליון תאפשר או תחסום את המים מלמלא את מיכלי הנֵטֶל וכך "
+"פתיחה או סגירה של הברז העליון תזרים או תעצור את המים מלמלא את מיכלי הנֵטֶל וכך "
 "לאפשר לצוללת לצלול מתחת למים."
 
 #: activities/submarine/Submarine.qml:161
