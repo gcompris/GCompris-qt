@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-06-08 21:08+0300\n"
+"PO-Revision-Date: 2025-06-12 08:44+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -6662,12 +6662,9 @@ msgstr ""
 #: activities/erase_2clic/ActivityInfo.qml:20
 #: activities/erase_clic/ActivityInfo.qml:20
 #: activities/penalty/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Fine motor coordination."
 msgctxt "ActivityInfo|"
 msgid "Develop motor coordination skills."
-msgstr "מוטוריקה עדינה."
+msgstr "פיתוח מיומנויות מוטוריקה עדינה."
 
 #. Help manual
 #: activities/erase/ActivityInfo.qml:24
@@ -6684,16 +6681,11 @@ msgstr "הקשה כפולה או קליק כפול"
 
 #. Help title
 #: activities/erase_2clic/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Double tap or double click to erase the area and discover the background "
-#| "image."
 msgctxt "ActivityInfo|"
 msgid ""
 "Double tap or double click to erase the blocks and discover the hidden "
 "picture."
-msgstr "הקשה כפולה או קליק כפול כדי למחוק את האזור ולגלות את תמונת הרקע."
+msgstr "הקשה כפולה או קליק כפול כדי למחוק את הלבנים ולחשוף את התמונה הנסתרת."
 
 #. Help manual
 #: activities/erase_2clic/ActivityInfo.qml:24
@@ -6937,13 +6929,12 @@ msgid "Dog"
 msgstr "כלב"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:106
-#, fuzzy
 msgctxt "board1|"
 msgid ""
 "The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
 "are descendants of the wolf."
 msgstr ""
-"הכלב נובח \"האוּ\". ככל הנראה כלבים הם המין המבוּיָית העתיק ביותר. הם צאצאים של "
+"הכלב נובח „האוּ”. ככל הנראה כלבים הם המין המבוּיָית העתיק ביותר. הם צאצאים של "
 "הזאב."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
@@ -9579,12 +9570,9 @@ msgid "Enter: validate the answer"
 msgstr "Enter: אימות התשובה"
 
 #: activities/frieze/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: switch between invisible and visible modes"
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
-msgstr "רווח: להחליף בין מצב נראה ומצב בלתי-נראה"
+msgstr ""
 
 #: activities/frieze/Frieze.qml:287
 msgctxt "Frieze|"
