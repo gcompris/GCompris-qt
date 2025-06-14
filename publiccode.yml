@@ -2,7 +2,7 @@
 # metadata file that makes public software easily discoverable.
 # More info at https://github.com/italia/publiccode.yml
 
-publiccodeYmlVersion: '0.3'
+publiccodeYmlVersion: '0.4.0'
 name: GCompris
 url: 'https://invent.kde.org/education/gcompris.git'
 releaseDate: '2025-06-10'
@@ -46,7 +46,7 @@ localisation:
     - cs_CZ
     - de_DE
     - el_GR
-    - eo_EO
+    - eo
     - es_ES
     - et_EE
     - eu_ES
