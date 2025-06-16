@@ -47,7 +47,7 @@ displayInConsole = False
 
 # Get last modification time of data set
 modtime = os.path.getmtime(dataset)
-modtime_utc = datetime.datetime.utcfromtimestamp(modtime)
+modtime_utc = datetime.datetime.fromtimestamp(modtime, datetime.UTC)
 modtime_utc_string = modtime_utc.strftime('%Y-%m-%d %H:%M') + '+0000'
 
 # Header
