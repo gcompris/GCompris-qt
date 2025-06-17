@@ -47,7 +47,12 @@ displayInConsole = False
 
 # Get last modification time of data set
 modtime = os.path.getmtime(dataset)
-modtime_utc = datetime.datetime.fromtimestamp(modtime, datetime.UTC)
+# In scripty machine, we have a python less than 3.11
+python_version = sys.version_info
+if python_version.major==3 and python_version.minor < 3.11:
+    modtime_utc = datetime.datetime.utcfromtimestamp(modtime)
+else:
+    modtime_utc = datetime.datetime.fromtimestamp(modtime, datetime.UTC)
 modtime_utc_string = modtime_utc.strftime('%Y-%m-%d %H:%M') + '+0000'
 
 # Header
