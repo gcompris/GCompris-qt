@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-06-12 08:44+0300\n"
+"PO-Revision-Date: 2025-06-22 14:08+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -9118,24 +9118,19 @@ msgstr "בחירה במספר החלקים המתאים לייצוג השבר ה
 
 #. Help goal
 #: activities/fractions_create/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to represent a quantity of objects."
 msgctxt "ActivityInfo|"
 msgid "Learn to represent a given fraction of a shape."
-msgstr "ללמוד לייצג את הכמות של פריטים."
+msgstr "ללמוד לייצג שבר מבוקש מתוך צורה."
 
 #. Help manual
 #: activities/fractions_create/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select the appropriate number of parts as described in the instructions."
 msgctxt "ActivityInfo|"
 msgid ""
 "A shape split in equal parts is displayed. Select the appropriate number of "
 "parts to represent the given fraction."
-msgstr "לבחור את המספר הנכון של חלקים בהתאם להוראות."
+msgstr ""
+"מוצגת צורה מחולקת לחלקים שווים. נא לבחור את מספר החלקים המתאים שמייצגים את "
+"השבר המבוקש."
 
 #: activities/fractions_create/fractions_create.js:78
 msgctxt "fractions_create|"
@@ -15860,13 +15855,6 @@ msgstr "שיוך הצורה העשרונית של מספר לייצוג החזו
 
 #. Help manual
 #: activities/learn_decimals/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A decimal number is displayed. Drag the arrow to select a part of the "
-#| "bar, and drag the selected part of the bar to the empty area. Repeat "
-#| "these steps until the number of dropped bars corresponds to the displayed "
-#| "decimal number. Then click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "A decimal number is displayed. Drag the arrow to select a part of the unit "
@@ -15874,9 +15862,9 @@ msgid ""
 "steps until the number of dropped bars corresponds to the displayed decimal "
 "number. Then click on the OK button to validate your answer."
 msgstr ""
-"מספר עשרוני מוצג. לגרור את החץ כדי לבחור חלק מהעמודה ולגרור את החלק הנבחר "
-"לאזור הריק. לחזור על הצעדים האלו עד שמספר העמודות שירדו מתאים למספר העשרוני. "
-"אז ללחוץ על OK כדי לאשר את התשובה."
+"מספר עשרוני מוצג. יש לגרור את החץ כדי לבחור חלק מעמודת היחידות ולגרור את "
+"החלק הנבחר לאזור הריק. לחזור על הצעדים האלו עד שמספר העמודות שירדו מתאים "
+"למספר העשרוני ואז ללחוץ על אישור כדי לבדוק את התשובה."
 
 #: activities/learn_decimals/Learn_decimals.qml:30
 msgctxt "Learn_decimals|"
