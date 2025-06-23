@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-06-12 08:44+0300\n"
+"PO-Revision-Date: 2025-06-22 22:04+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -8256,6 +8256,15 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
+"הפנתאון ברומא שבאיטליה הוא מקדש סמלי שנבנה סביב 126 לספירה במהלך שלטונו של "
+"הקיסר אדריאנוס, מבוסס על חורבות של מבנים קדומים יותר שהוקמו על ידי מרקוס "
+"אגריפה. ידוע בזכות הגאונות האדריכלית שלו, בעל גג כיפתי עצום עם פתח עגול "
+"במרכזו, שמסמל את גן העדן ומספק תאורה טבעית לחלל הפנימי. במקור הוקדש לכל "
+"האלים הרומאיים, לאחר מכן הוסב לכנסייה נוצרית, שזכתה לשם „כנסיית מרים הקדושה "
+"של הקדושים המעונים” (Santa Maria ad Martyres), ב־609 לספירה. הכיפה שלו, כיפת "
+"הבטון הלא מחוזקת הגדולה בעולם, מציגה הנדסה וסימטריה עוצרי נשימה שסיפקו השראה "
+"לאדריכלים במשך מאות שנים. היחסים ההרמוניים של הפנתאון כמו גם חשיבותו "
+"ההיסטורית הופכים אותו ליצירת מופת על־זמנית של אדריכלות קלסית."
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
@@ -9525,24 +9534,19 @@ msgstr "בחירה במספר החלקים המתאים לייצוג השבר ה
 
 #. Help goal
 #: activities/fractions_create/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to represent a quantity of objects."
 msgctxt "ActivityInfo|"
 msgid "Learn to represent a given fraction of a shape."
-msgstr "ללמוד לייצג את הכמות של פריטים."
+msgstr "ללמוד לייצג שבר מבוקש מתוך צורה."
 
 #. Help manual
 #: activities/fractions_create/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select the appropriate number of parts as described in the instructions."
 msgctxt "ActivityInfo|"
 msgid ""
 "A shape split in equal parts is displayed. Select the appropriate number of "
 "parts to represent the given fraction."
-msgstr "לבחור את המספר הנכון של חלקים בהתאם להוראות."
+msgstr ""
+"מוצגת צורה מחולקת לחלקים שווים. נא לבחור את מספר החלקים המתאים שמייצגים את "
+"השבר המבוקש."
 
 #: activities/fractions_create/fractions_create.js:78
 msgctxt "fractions_create|"
@@ -14654,28 +14658,16 @@ msgid "Grammatical analysis"
 msgstr "ניתוח לשוני"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "GrammarAnalysis|"
 msgid "Learn to identify grammatical classes."
 msgstr "למידה איך לזהות יחסות דקדוקיות."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:28
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid ""
-#| "Find all the words corresponding to the requested grammatical classes."
 msgctxt "GrammarAnalysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr "לאתר את כל המילים שמתאימות ליחסות הדקדוקיות המבוקשות."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a grammatical class from the list, then select the box under a "
-#| "word and assign it the class."
 msgctxt "GrammarAnalysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
@@ -14685,9 +14677,6 @@ msgstr ""
 "היחסה."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Leave the box blank if no class matches."
 msgctxt "GrammarAnalysis|"
 msgid "Leave the box blank if no class matches."
 msgstr "יש להשאיר את התיבה ריקה אם אין אף יחסה מתאימה."
@@ -14729,9 +14718,6 @@ msgid "Learn to identify grammatical classes."
 msgstr "למידה איך לזהות יחסות דקדוקיות."
 
 #: activities/grammar_classes/GrammarClasses.qml:17
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Find all the words corresponding to the requested grammatical class."
 msgctxt "GrammarClasses|"
 msgid "Find all the words corresponding to the requested grammatical class."
 msgstr "איתור כל המילים שמתאימות ליחסה הדקדוקית המבוקשת."
@@ -16291,13 +16277,6 @@ msgstr "שיוך הצורה העשרונית של מספר לייצוג החזו
 
 #. Help manual
 #: activities/learn_decimals/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A decimal number is displayed. Drag the arrow to select a part of the "
-#| "bar, and drag the selected part of the bar to the empty area. Repeat "
-#| "these steps until the number of dropped bars corresponds to the displayed "
-#| "decimal number. Then click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "A decimal number is displayed. Drag the arrow to select a part of the unit "
@@ -16305,9 +16284,9 @@ msgid ""
 "steps until the number of dropped bars corresponds to the displayed decimal "
 "number. Then click on the OK button to validate your answer."
 msgstr ""
-"מספר עשרוני מוצג. לגרור את החץ כדי לבחור חלק מהעמודה ולגרור את החלק הנבחר "
-"לאזור הריק. לחזור על הצעדים האלו עד שמספר העמודות שירדו מתאים למספר העשרוני. "
-"אז ללחוץ על OK כדי לאשר את התשובה."
+"מספר עשרוני מוצג. יש לגרור את החץ כדי לבחור חלק מעמודת היחידות ולגרור את "
+"החלק הנבחר לאזור הריק. לחזור על הצעדים האלו עד שמספר העמודות שירדו מתאים "
+"למספר העשרוני ואז ללחוץ על אישור כדי לבדוק את התשובה."
 
 #: activities/learn_decimals/Learn_decimals.qml:30
 #, fuzzy
