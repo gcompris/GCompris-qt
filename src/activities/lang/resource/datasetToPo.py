@@ -49,10 +49,10 @@ displayInConsole = False
 modtime = os.path.getmtime(dataset)
 # In scripty machine, we have a python less than 3.11
 python_version = sys.version_info
-if python_version.major==3 and python_version.minor < 3.11:
-    modtime_utc = datetime.datetime.utcfromtimestamp(modtime)
-else:
+if python_version.major == 3 and python_version.minor >= 11:
     modtime_utc = datetime.datetime.fromtimestamp(modtime, datetime.UTC)
+else:
+    modtime_utc = datetime.datetime.utcfromtimestamp(modtime)
 modtime_utc_string = modtime_utc.strftime('%Y-%m-%d %H:%M') + '+0000'
 
 # Header
