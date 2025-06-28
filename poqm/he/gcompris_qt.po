@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-06-22 14:08+0300\n"
+"PO-Revision-Date: 2025-06-26 09:59+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 25.04.1\n"
+"X-Generator: Lokalize 25.04.2\n"
 "X-Qt-Contexts: true\n"
 "X-Poedit-Bookmarks: -1,2919,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
@@ -19451,14 +19451,13 @@ msgstr ""
 
 #. Help manual
 #: activities/note_names/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Identify the notes correctly and score 100% to complete a level."
 msgctxt "ActivityInfo|"
 msgid ""
 "Identify the notes, play them on the piano keyboard, and achieve a score of "
 "100% to complete the level."
-msgstr "לזהות נכון את התווים ולהשיג ציון 100 כדי להשלים את השלב."
+msgstr ""
+"לזהות נכון את התווים, לנגן אותם על מקלדת הפסנתר ולהשיג ציון 100% כדי להשלים "
+"את השלב."
 
 #: activities/note_names/NoteNames.qml:201
 #, qt-format
@@ -21987,12 +21986,9 @@ msgstr "מראָה של התמונה הנתונה"
 
 #. Help title
 #: activities/redraw_symmetrical/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid "Reproduce the image symmetrically on the empty grid."
-msgstr "ליצור מחדש את המגדל בצד ימין באזור הריק."
+msgstr "ליצור א תהתמונה באופן סימטרי ברשת הריקה."
 
 #. Help goal
 #: activities/redraw_symmetrical/ActivityInfo.qml:20
@@ -22293,7 +22289,6 @@ msgstr ""
 
 #: activities/roman_numerals/RomanNumerals.qml:103
 #: activities/roman_numerals/RomanNumerals.qml:109
-#, fuzzy
 msgctxt "RomanNumerals|"
 msgid ""
 "All the tens except 40 and 90 are built using sums of X and L:\n"
@@ -22301,14 +22296,13 @@ msgid ""
 "The 40 and the 90 tens are built using differences:\n"
 "XL (10 taken from 50) and XC (10 taken from 100)."
 msgstr ""
-"כל העשרות חוץ מ40 ו90 בנויות באמצעות סכומים של X וL:\n"
+"כל העשרות חוץ מ־40 ו־90 מורכבות מסכומים של X ו־L:\n"
 "X, XX, XXX, L, LX, LXX, LXXX.\n"
-"ה40 וה90 נבנים באמצעות הפרשים:\n"
-"בדוגמא XL (10 שנלקח מ50) וXC שזה (10 שנלקח מ100)."
+"ה־40 וה־90 בנויים על הפרשים:\n"
+"לדוגמה XL (10 שהופחת מ־50) ו־XC (שזה 10 שהופחת מ־100)."
 
 #: activities/roman_numerals/RomanNumerals.qml:115
 #: activities/roman_numerals/RomanNumerals.qml:121
-#, fuzzy
 msgctxt "RomanNumerals|"
 msgid ""
 "All the hundreds except 400 and 900 are built using sums of C and D:\n"
@@ -22316,10 +22310,10 @@ msgid ""
 "The 400 and the 900 hundreds are built using differences:\n"
 "CD (100 taken from 500) and CM (100 taken from 1000)."
 msgstr ""
-"כל המאות חוץ מ 400 ו900 נבנות באמצעות C ו D:\n"
-"למשל C, CC, CCC, D, DC, DCC, DCCC.\n"
-"ה400 וה900 נוצרים באמצעות הפרשים:\n"
-"כך שCD שבו (100 נלקח מ500) וCM שבו (100 נלקח מ1000)."
+"כל המאות חוץ מ־400 ו־900 מורכבות מסכומים של C ו־D:\n"
+"C, CC, CCC, D, DC, DCC, DCCC.\n"
+"ה־400 וה־900 מורכבות עם הפרשים:\n"
+"כך ש־CD (שבו 100 מופחת מ־500) ו־CM (שבו 100 מופחת מ־1000)."
 
 #: activities/roman_numerals/RomanNumerals.qml:127
 #: activities/roman_numerals/RomanNumerals.qml:133
