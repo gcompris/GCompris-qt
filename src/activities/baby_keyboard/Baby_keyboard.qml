@@ -184,7 +184,6 @@ ActivityBase {
                 else
                     Activity.processKeyPress(text);
             }
-            shiftKey: true
             onError: (msg) => console.log("VirtualKeyboard error: " + msg);
             readonly property string newline: "\u21B2"
 
