@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-06-26 10:00+0300\n"
+"PO-Revision-Date: 2025-07-04 17:29+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -12920,7 +12920,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to locate and place the continents and many countries on the world map."
-msgstr ""
+msgstr "למידת איתור והצגת היבשות ומגוון מדינות על מפת העולם."
 
 #. Help manual
 #: activities/geography/ActivityInfo.qml:27
@@ -14047,7 +14047,7 @@ msgstr "להקליד את האותיות הנופלות לפני שהן מגיע
 #: activities/gletters/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Match letters on the keyboard with letters on the screen."
-msgstr ""
+msgstr "התאמת אותיות במקלדת לאותיות על המסך."
 
 #. Help manual
 #: activities/gletters/ActivityInfo.qml:23
@@ -14185,7 +14185,7 @@ msgstr "1 אינו מספר ראשוני."
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is a non-prime number, its divisors are: %2"
-msgstr ""
+msgstr "%1 הוא מספר לא ראשוני, המחלקים שלו הם: %2"
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
 #: activities/gnumch-equality/Warning.qml:67
@@ -16563,18 +16563,13 @@ msgstr ""
 "הOK כדי לאשר את התשובה."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:24
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr ""
-"אם התשובה נכונה, להקליד את התוצאה המתאימה וללחוץ על כפתור ה OK כדי לאמת את "
-"התשובה."
+"אם התשובה נכונה, יש להקליד את התוצאה המתאימה וללחוץ על הכפתור OK כדי לאמת את "
+"התשובה שלך."
 
 #: activities/learn_decimals_subtractions/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -16635,27 +16630,21 @@ msgstr "ללחוץ על זוג המתאים ליחסים הנתונים."
 
 #. Help goal
 #: activities/learn_digits/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare the numbers and choose the corresponding sign."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the numbers represented by a single digit and the corresponding "
 "quantities."
-msgstr "השוו את המספרים ובחרו את הסימן המתאים."
+msgstr "למידת המספרים שמיוצגים בספרה בודדת והכמויות התואמות."
 
 #. Help manual
 #: activities/learn_digits/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A digit is displayed on the screen. Fill the corresponding number of "
-#| "circles and validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "A digit is displayed on the screen. Fill the number of circles corresponding "
 "to the number represented by the digit and validate your answer."
-msgstr "סיפרה מוצגת על המסך. למלא את מספר העיגולים המתאים ולאשר את התשובה."
+msgstr ""
+"ספרה מוצגת על המסך. יש למלא את מספר העיגולים התואם למספר שמיוצג על ידי הספרה "
+"ולאמת את התשובה שלך."
 
 #: activities/learn_digits/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -16742,10 +16731,6 @@ msgstr ""
 "ללחוץ על כפתור ה־OK כדי לוודא את התשובה."
 
 #: activities/learn_quantities/Learn_quantities.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgctxt "Learn_quantities|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr "נדרשת כמות. החץ מאפשר לבחור עד 10 תפוזים."
@@ -19792,12 +19777,9 @@ msgstr "טחנות (נגד טוקס)."
 
 #. Help title
 #: activities/nine_men_morris/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (against Tux)"
 msgctxt "ActivityInfo|"
 msgid "Play the game Nine men's morris against Tux."
-msgstr "טחנות (נגד טוקס)."
+msgstr "לשחק במשחק הטחנות נגד טאקס."
 
 #. Help goal
 #: activities/nine_men_morris/ActivityInfo.qml:20
@@ -19924,12 +19906,9 @@ msgstr "טחנות (עם חבר/ה)"
 
 #. Help title
 #: activities/nine_men_morris_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "ActivityInfo|"
 msgid "Play the game Nine men's morris with a friend."
-msgstr "טחנות (עם חבר/ה)"
+msgstr "לשחק במשחק הטחנות עם חבר/ה."
 
 #. Help manual
 #: activities/nine_men_morris_2players/ActivityInfo.qml:23
@@ -25662,19 +25641,11 @@ msgid "Right Ballast Tank"
 msgstr "מיכל נטל ימני"
 
 #: activities/submarine/Submarine.qml:133
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Move the submarine to the other side of the screen."
 msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "להזיז את הצוללת לצידו השני של המסך."
 
 #: activities/submarine/Submarine.qml:136
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The leftmost item in the control panel is the engine of the submarine, "
-#| "indicating the current speed of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
@@ -25689,17 +25660,11 @@ msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr "להאיץ או להאיט את הצוללת באמצעות המנוע."
 
 #: activities/submarine/Submarine.qml:142
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Press the + button to increase the velocity, or the - button to decrease "
-#| "the velocity."
 msgctxt "Submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
 "velocity."
-msgstr ""
-"ללחוץ על כפתור ה+ כדי להגביר את המהירות או על כפתור ה- כדי להקטין את המהירות."
+msgstr "לחיצה על הכפתור + תאיץ את המהירות לעומת הכפתור - שיאיט את המהירות."
 
 #: activities/submarine/Submarine.qml:149
 msgctxt "Submarine|"
@@ -25730,20 +25695,14 @@ msgstr ""
 "לאפשר לצוללת לצלול מתחת למים."
 
 #: activities/submarine/Submarine.qml:161
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Turning the lower valve on or off will alternatively allow or stop the "
-#| "water from flushing out the ballast tank, thus allowing it to float on "
-#| "the surface of the water."
 msgctxt "Submarine|"
 msgid ""
 "Turning the lower valve on or off will alternatively allow or stop the water "
 "from flushing out the ballast tank, thus allowing it to float on the surface "
 "of the water."
 msgstr ""
-"לפתוח או לסגור את הברז התחתון יאפשר או יחסום את המים מלצאת ממיכלי הנֵטֶל וכך "
-"לאפשר לצוללת לצוף על פני המים."
+"פתיחת או סגירת הברז התחתון תאפשר או תחסום את המים מלצאת ממיכלי הנֵטֶל וכך "
+"יתאפשר לצוללת לצוף על פני המים."
 
 #: activities/submarine/Submarine.qml:168
 msgctxt "Submarine|"
