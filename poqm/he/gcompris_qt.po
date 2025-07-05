@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-06-26 09:59+0300\n"
+"PO-Revision-Date: 2025-07-04 17:29+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -12504,7 +12504,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to locate and place the continents and many countries on the world map."
-msgstr ""
+msgstr "למידת איתור והצגת היבשות ומגוון מדינות על מפת העולם."
 
 #. Help manual
 #: activities/geography/ActivityInfo.qml:27
@@ -13631,7 +13631,7 @@ msgstr "להקליד את האותיות הנופלות לפני שהן מגיע
 #: activities/gletters/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Match letters on the keyboard with letters on the screen."
-msgstr ""
+msgstr "התאמת אותיות במקלדת לאותיות על המסך."
 
 #. Help manual
 #: activities/gletters/ActivityInfo.qml:23
@@ -13769,7 +13769,7 @@ msgstr "1 אינו מספר ראשוני."
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is a non-prime number, its divisors are: %2"
-msgstr ""
+msgstr "%1 הוא מספר לא ראשוני, המחלקים שלו הם: %2"
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
 #: activities/gnumch-equality/Warning.qml:67
@@ -16154,27 +16154,21 @@ msgstr "ללחוץ על זוג המתאים ליחסים הנתונים."
 
 #. Help goal
 #: activities/learn_digits/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare the numbers and choose the corresponding sign."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the numbers represented by a single digit and the corresponding "
 "quantities."
-msgstr "השוו את המספרים ובחרו את הסימן המתאים."
+msgstr "למידת המספרים שמיוצגים בספרה בודדת והכמויות התואמות."
 
 #. Help manual
 #: activities/learn_digits/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A digit is displayed on the screen. Fill the corresponding number of "
-#| "circles and validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "A digit is displayed on the screen. Fill the number of circles corresponding "
 "to the number represented by the digit and validate your answer."
-msgstr "סיפרה מוצגת על המסך. למלא את מספר העיגולים המתאים ולאשר את התשובה."
+msgstr ""
+"ספרה מוצגת על המסך. יש למלא את מספר העיגולים התואם למספר שמיוצג על ידי הספרה "
+"ולאמת את התשובה שלך."
 
 #: activities/learn_digits/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -19295,12 +19289,9 @@ msgstr "טחנות (נגד טוקס)."
 
 #. Help title
 #: activities/nine_men_morris/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (against Tux)"
 msgctxt "ActivityInfo|"
 msgid "Play the game Nine men's morris against Tux."
-msgstr "טחנות (נגד טוקס)."
+msgstr "לשחק במשחק הטחנות נגד טאקס."
 
 #. Help goal
 #: activities/nine_men_morris/ActivityInfo.qml:20
@@ -19410,12 +19401,9 @@ msgstr "טחנות (עם חבר/ה)"
 
 #. Help title
 #: activities/nine_men_morris_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "ActivityInfo|"
 msgid "Play the game Nine men's morris with a friend."
-msgstr "טחנות (עם חבר/ה)"
+msgstr "לשחק במשחק הטחנות עם חבר/ה."
 
 #. Help manual
 #: activities/nine_men_morris_2players/ActivityInfo.qml:23
