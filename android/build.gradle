@@ -10,7 +10,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.4.1'
+        classpath 'com.android.tools.build:gradle:8.6.0'
     }
 }
 
@@ -39,7 +39,8 @@ android {
      * Changing them manually might break the compilation!
      *******************************************************/
 
-    compileSdkVersion androidCompileSdkVersion
+    namespace "net.gcompris.full"
+    compileSdkVersion 35
     ndkVersion androidNdkVersion
 
     // Extract native libraries from the APK
@@ -80,7 +81,7 @@ android {
     defaultConfig {
         resConfig "en"
         minSdkVersion 26
-        targetSdkVersion 34
+        targetSdkVersion 35
         ndk.abiFilters = qtTargetAbiList.split(",")
     }
 }
