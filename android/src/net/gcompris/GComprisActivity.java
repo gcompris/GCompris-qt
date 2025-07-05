@@ -14,8 +14,12 @@ package net.gcompris;
 import org.qtproject.qt.android.bindings.QtActivity;
 import android.media.AudioManager;
 import android.content.Context;
+import android.graphics.Insets;
+import android.graphics.Rect;
 import android.view.View;
+import android.view.WindowInsets;
 import android.view.WindowManager;
+import android.view.WindowMetrics;
 import java.text.Collator;
 import java.util.Locale;
 import java.util.Arrays;
@@ -46,10 +50,31 @@ public class GComprisActivity extends QtActivity
             | View.SYSTEM_UI_FLAG_FULLSCREEN
             | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
             | View.INVISIBLE;
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.P) {
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.VANILLA_ICE_CREAM) {
+            bypassEdgeToEdge();
+        } else if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.P) {
             this.getWindow().getAttributes().layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_NEVER;
         }
         this.getWindow().getDecorView().setSystemUiVisibility(systemUiVisibilityFlags);
+    }
+
+    // From Android 15, workaround forced edge-to-edge by calculating width/height to
+    // exclude displayCutout area. Based one doc example at:
+    // https://developer.android.com/reference/android/view/WindowMetrics#getBounds()
+    private void bypassEdgeToEdge() {
+        final WindowMetrics metrics = this.getWindowManager().getCurrentWindowMetrics();
+        // Gets all excluding insets
+        final WindowInsets windowInsets = metrics.getWindowInsets();
+        Insets insets = windowInsets.getInsetsIgnoringVisibility(WindowInsets.Type.displayCutout());
+
+        int insetsWidth = insets.right + insets.left;
+        int insetsHeight = insets.top + insets.bottom;
+
+        // Legacy size that Display#getSize reports
+        final Rect bounds = metrics.getBounds();
+        int legacyWidth = bounds.width() - insetsWidth;
+        int legacyHeight = bounds.height() - insetsHeight;
+        this.getWindow().setLayout(legacyWidth, legacyHeight);
     }
 
     @Override
