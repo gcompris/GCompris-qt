@@ -1,29 +1,29 @@
 /* GCompris - LineReport.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-// pragma ComponentBehavior: Bound
+
 import QtQuick
 import QtQuick.Controls.Basic
-import QtQuick.Layouts
 
 import core 1.0
 
 import "../singletons"
 import "../components"
 
-ColumnLayout {
+Item {
     id: lineReport
     property int userId: -1
     property int activityId: -1
     property string activityName: ""
     property string dayFilter: ""
-    spacing: 0
 
     function executeRequest() {
         resultModel.clear()
@@ -33,7 +33,6 @@ ColumnLayout {
         if (userId !== -1)
             clauses.push(`user_id=${userId}`)
         var user = Master.findObjectInModel(Master.userModel, function(item) { return item.user_id === userId })
-//        title.text = user.user_name
         var request = `SELECT *, date(result_datetime) AS result_day FROM result_ WHERE ` + clauses.join(" AND ")
         if (dayFilter !== "")
             request += ` AND result_day='${dayFilter}'`
@@ -46,213 +45,237 @@ ColumnLayout {
 
     ListModel { id: resultModel }
 
-    RowLayout {
-        Layout.leftMargin: 10
-        Layout.preferredHeight:30
-        ViewButton {
-            Layout.preferredWidth: 100
-            Layout.preferredHeight:26
-            text: qsTr("Back")
-            onClicked: lineReport.parent.pop()
-        }
-        ViewButton {
-            Layout.preferredWidth: 100
-            Layout.preferredHeight:26
-            text: qsTr("Refresh")
-            onClicked: lineReport.executeRequest()
-        }
+    Item {
+        id: topRow
+        width: parent.width - Style.margins * 2
+        height: Style.controlSize
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.top: parent.top
+        anchors.topMargin: Style.margins
 
-        Text {
-            text: resultModel.count + " " + qsTr("lines")
-            color: Style.selectedPalette.text
-        }
-
-        Item {
-            Layout.fillWidth: true
-        }
-        Text {
-            Layout.rightMargin: 15
-            text: lineReport.activityName
-            opacity: 0.4
-            color: Style.selectedPalette.text
-        }
-    }
-
-    Rectangle {
-        Layout.fillWidth: true
-        Layout.minimumHeight: Style.bigLineHeight
-        Layout.maximumHeight: Style.bigLineHeight
-        Layout.leftMargin: 10
-        Layout.rightMargin: 10
-        Layout.topMargin: 5
-        Layout.preferredWidth: lines.width
-        color: "white"
-        radius: 3
-        clip: true
-        border.width: 1
-        border.color: "black"
-        RowLayout {     // Page header (user and activity names, activity icon)
-            anchors.fill: parent
-            spacing: 5
-
-            Text {
-                id: title
-                Layout.leftMargin: 5
-                text: ""
-                font.pixelSize: 18
-                verticalAlignment: Text.AlignBottom
-                color: Style.selectedPalette.text
-            }
-
-            Text {
-                id: dateLabel
-                Layout.preferredWidth: 230
-                Layout.leftMargin: 20
-                text: new Date(lineReport.dayFilter).toLocaleDateString(Qt.locale())
-                font.pixelSize: 18
-                verticalAlignment: Text.AlignBottom
-                horizontalAlignment: Text.AlignLeft
-                clip: true
-                color: Style.selectedPalette.text
-            }
-
-            Text {
-                id: actiName
-                Layout.fillWidth: true
-                text: (lineReport.activityName !== "") ? Master.allActivities[activityName]["title"] : ""
-                font.pixelSize: 18
-                verticalAlignment: Text.AlignBottom
-                horizontalAlignment: Text.AlignRight
-                clip: true
-                color: Style.selectedPalette.text
-            }
-
-            Image {
-                Layout.preferredWidth: Style.bigLineHeight
-                Layout.preferredHeight: Style.bigLineHeight
-                Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-                Layout.rightMargin: 5
-                source: (lineReport.activityName !== "") ? "qrc:/gcompris/src/activities/" + Master.allActivities[activityName]["icon"] : ""
-                sourceSize.width: 100
-                sourceSize.height: 100
-            }
-
-        }
-    }
-
-    ScrollView {
-        id: scrollLines
-        Layout.fillHeight: true
-        Layout.fillWidth: true
-        Layout.leftMargin: 10
-        Layout.rightMargin: 10
-        ScrollBar.vertical.policy: ScrollBar.AlwaysOn
-
-        ListView {
-            id: lines
-            anchors.top: parent.top
+        Row {
             anchors.left: parent.left
-            anchors.bottom: parent.bottom
-            width: scrollLines.contentWidth
-            model: resultModel
-            spacing: 0
-            boundsBehavior: Flickable.StopAtBounds
-            clip: true
+            anchors.right: parent.right
+            height: Style.controlSize
+            spacing: Style.margins
 
-            delegate: Rectangle {
-                id: lineRect
-                property string activity_line_name: Master.findObjectInModel(Master.activityModel, function(item) { return item.activity_id === activity_id }).activity_name
-                height: Math.max(dataDisplay.height, infos.height) + 10
-                width: lines.width
-                color: "white"
-                radius: 3
-                border.width: 1
-                border.color: Style.selectedPalette.accent
-                Rectangle {
-                    anchors.top: lineView.top
-                    anchors.left: lineView.left
-                    anchors.margins: 3
-                    width: 175
-                    height: lineView.height - 6
-                    radius: 3
-                    color: result_success ? Qt.lighter("palegreen", 1.3) : Qt.lighter("lightcoral", 1.4)
-                }
+            ViewButton {
+                width: 150
+                height: Style.controlSize
+                text: qsTr("Back")
+                onClicked: lineReport.parent.pop()
+            }
+            ViewButton {
+                width: 150
+                height: Style.controlSize
+                text: qsTr("Refresh")
+                onClicked: lineReport.executeRequest()
+            }
 
-                RowLayout {
-                    id: lineView
-                    anchors.fill: parent
-                    spacing: 5
-                    Column {        // Left side informations (level, date, success)
-                        id: infos
-                        Layout.margins: 5
-                        Layout.alignment: Qt.AlignTop
-                        Layout.preferredWidth: 170
-                        RowLayout {
-                            width: parent.width
-                            height: Style.lineHeight
-                            Text {
-                                Layout.fillWidth: true
-                                font.pixelSize: Style.textSize
-                                text: Master.findObjectInModel(Master.userModel, function(item) { return item.user_id === user_id }).user_name
-                                // font.underline: true
-                                color: Style.selectedPalette.text
+            DefaultLabel {
+                anchors.verticalCenter: parent.verticalCenter
+                text: qsTr("Lines: %1").arg(resultModel.count)
+                color: Style.selectedPalette.text
+            }
+        }
+    }
+
+    Item {
+        id: reportTitle
+        height: Style.lineHeight * 2
+        width: topRow.width
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.top: topRow.bottom
+
+        Image {
+            id: actiIcon
+            source: (lineReport.activityName !== "") ?
+            "qrc:/gcompris/src/activities/" + Master.allActivities[activityName]["icon"] : ""
+            sourceSize.height: parent.height * 0.9
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.verticalCenterOffset: -height * 0.05 // little offset up as all icons have an empty area at the top
+        }
+
+        DefaultLabel {
+            id: actiName
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.left: actiIcon.right
+            anchors.leftMargin: Style.margins
+            width: (parent.width -  2 * Style.margins - actiIcon.width) * 0.5
+            font.bold: true
+            text: (lineReport.activityName !== "") ?
+            Master.allActivities[activityName]["title"] : ""
+        }
+
+        DefaultLabel {
+            id: dateLabel
+            width: actiName.width
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.right: parent.right
+            font.bold: true
+            text: new Date(lineReport.dayFilter).toLocaleDateString(Qt.locale())
+        }
+    }
+
+    Flickable {
+        id: scrollLines
+        width: topRow.width + Style.margins
+        anchors.left: topRow.left
+        anchors.top: reportTitle.bottom
+        anchors.bottom: parent.bottom
+        contentWidth: width
+        contentHeight: lines.height
+        flickableDirection: Flickable.VerticalFlick
+        boundsBehavior: Flickable.StopAtBounds
+        clip: true
+
+        ScrollBar.vertical: ScrollBar {
+            contentItem: Rectangle {
+                implicitWidth: 6
+                radius: width
+                color: parent.pressed ? Style.selectedPalette.highlight : Style.selectedPalette.button
+            }
+        }
+
+        Column {
+            id: lines
+            width: parent.width - 10 // margin for the ScrollBar
+            height: childrenRect.height
+            spacing: Style.tinyMargins
+
+            Repeater {
+                model: resultModel
+                delegate:  Rectangle {
+                    id: lineRect
+                    property string activity_line_name: Master.findObjectInModel(Master.activityModel, function(item) { return item.activity_id === activity_id }).activity_name
+                    height: Math.max(dataDisplay.height, infos.height)
+                    width: lines.width
+                    color: Style.selectedPalette.alternateBase
+                    radius: Style.defaultRadius
+                    border.width: Style.defaultBorderWidth
+                    border.color: Style.selectedPalette.accent
+
+                    Row {
+                        id: lineView
+                        anchors.fill: parent
+                        anchors.margins: Style.defaultBorderWidth
+                        spacing: Style.smallMargins
+
+                        Rectangle {  // Left side informations (name, level, date, success)
+                            id: infosArea
+                            width: infos.width + Style.margins * 2 + radius
+                            height: parent.height
+                            radius: Style.defaultRadius - Style.defaultBorderWidth
+                            color: result_success ? "#1600FF00" : "#16FF0000"
+
+                            Rectangle {
+                                id: radiusMask
+                                width: infosArea.radius * 2
+                                height: parent.height
+                                anchors.horizontalCenter: parent.right
+                                color: Style.selectedPalette.alternateBase
                             }
-                            Text {
-                                Layout.preferredWidth: 25
-                                font.pixelSize: Style.textSize
-                                Layout.preferredHeight: 20
-                                horizontalAlignment: Text.AlignRight
-                                text: qsTr("%1s").arg(result_duration)
-                                color: Style.selectedPalette.text
+
+                            Column {
+                                id: infos
+                                x: Style.margins
+                                height: childrenRect.height
+                                width: childrenRect.width
+                                anchors.verticalCenter: parent.verticalCenter
+
+                                property int maxWidth: lineView.width * 0.5 - Style.margins * 2 - infosArea.radius
+
+                                Item {
+                                    height: Style.lineHeight
+                                    width: childrenRect.width
+                                    DefaultLabel {
+                                        id: userNameLabel
+                                        width: Math.min(implicitWidth, infos.maxWidth)
+                                        font.bold: true
+                                        anchors.verticalCenter: parent.verticalCenter
+                                        text: Master.findObjectInModel(Master.userModel, function(item) { return item.user_id === user_id }).user_name
+                                    }
+                                }
+
+                                // visible only in Charts (pupils mode)
+                                Item {
+                                    height: Style.lineHeight
+                                    width: childrenRect.width
+                                    visible: activityName === ""
+                                    DefaultLabel {
+                                        id: activityNameLabel
+                                        width: Math.min(implicitWidth, infos.maxWidth)
+                                        anchors.verticalCenter: parent.verticalCenter
+                                        font.bold: true
+                                        text: Master.allActivities[lineRect.activity_line_name].title
+                                    }
+                                }
+
+                                Row {
+                                    height: Style.lineHeight
+                                    width: childrenRect.width
+                                    spacing: Style.margins
+
+                                    DefaultLabel {
+                                        id: levelLabel
+                                        width: Math.min(implicitWidth, infos.maxWidth)
+                                        anchors.verticalCenter: parent.verticalCenter
+                                        text: qsTr("Level: <b>%1</b>").arg(JSON.parse(result_data).level)
+                                    }
+
+                                    ResultIndicator {
+                                        resultSuccess: model.result_success
+                                    }
+                                }
+
+                                Item {
+                                    height: Style.lineHeight
+                                    width: Math.max(fakeResultDurationLabel.width, resultDurationLabel.width)
+                                    DefaultLabel {
+                                        id: resultDurationLabel
+                                        width: Math.min(implicitWidth, infos.maxWidth)
+                                        anchors.verticalCenter: parent.verticalCenter
+                                        //: Result duration in seconds. Example: "Duration: 25s"
+                                        text: qsTr("Duration: %1s").arg(result_duration)
+                                    }
+
+                                    // Used to provide max width space for resultDurationLabel
+                                    DefaultLabel {
+                                        id: fakeResultDurationLabel
+                                        visible: false
+                                        width: Math.min(implicitWidth, infos.maxWidth)
+                                        anchors.verticalCenter: parent.verticalCenter
+                                        //: Result duration in seconds. Example: "Duration: 25s"
+                                        text: qsTr("Duration: %1s").arg("0000")
+                                    }
+                                }
+
+                                Item {
+                                    height: Style.lineHeight
+                                    width: childrenRect.width
+                                    DefaultLabel {
+                                        id: resultDateTimeLabel
+                                        width: Math.min(implicitWidth, infos.maxWidth)
+                                        anchors.verticalCenter: parent.verticalCenter
+                                        text: result_datetime.slice(-8)
+                                    }
+                                }
                             }
                         }
 
-                        RowLayout {
-                            width: parent.width
-                            height: Style.lineHeight
-                            Text {
-                                Layout.preferredWidth: 75
-                                Layout.preferredHeight: 20
-                                font.pixelSize: Style.textSize
-                                text: qsTr("Level: <b>%1</b>").arg(JSON.parse(result_data).level)
-                                horizontalAlignment: Text.AlignLeft
-                                color: Style.selectedPalette.text
+                        Loader {    // Load default DataDisplay or individual activity DataDisplay
+                            id: dataDisplay
+                            width: parent.width - parent.spacing * 2 - infosArea.width
+                            anchors.verticalCenter: parent.verticalCenter
+                            clip: true
+                            source: {
+                                var url = `${Master.activityBaseUrl}/${lineRect.activity_line_name}/DataDisplay.qml`
+                                return file.exists(url) ? url : `${Master.activityBaseUrl}/DataDisplay.qml`
                             }
-                            Text {
-                                Layout.fillWidth: true
-                                Layout.preferredHeight: 20
-                                font.pixelSize: Style.textSize
-                                text: result_datetime.slice(-8)
-                                horizontalAlignment: Text.AlignRight
-                                color: Style.selectedPalette.text
-                            }
+                            property var jsonData_: (typeof result_data !== 'undefined') ? JSON.parse(result_data) : ({})
                         }
                     }
-
-                    Loader {    // Load default DataDisplay or individual activity DataDisplay
-                        id: dataDisplay
-                        Layout.fillWidth: true
-                        Layout.leftMargin: 5
-                        Layout.alignment: Qt.AlignTop
-                        source: {
-                            var url = `${Master.activityBaseUrl}/${lineRect.activity_line_name}/DataDisplay.qml`
-                            return file.exists(url) ? url : `${Master.activityBaseUrl}/DataDisplay.qml`
-                        }
-                        property var jsonData_: (typeof result_data !== 'undefined') ? JSON.parse(result_data) : ({})
-                    }
                 }
-
-                Text {
-                    anchors.top: lineView.top
-                    anchors.right: lineView.right
-                    anchors.rightMargin: 5
-                    color: Style.selectedPalette.text
-                    height: 20
-                    text: Master.allActivities[lineRect.activity_line_name].title
-                    horizontalAlignment: Text.AlignRight
-                    visible: activityName === ""
-                }
-
             }
         }
     }

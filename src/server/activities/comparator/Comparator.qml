@@ -4,6 +4,7 @@
  *
  * Authors:
  *   Johnny Jazeix <jazeix@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -11,24 +12,25 @@ pragma ComponentBehavior: Bound
 import QtQuick
 
 import "../../components"
+import "../../singletons"
 
 Item {
     id: lineView
     required property var jsonData
-    property int labelWidth: 130        // used by InformationLine
     height: details.height
 
     Column {
         id: details
         Repeater {
             model: lineView.jsonData.results
+
             InformationLine {
                 required property var modelData
-                labelWidth: lineView.labelWidth
-                label: qsTr("Result")
+                width: lineView.width
+                label: qsTr("Result:")
                 info: modelData.leftNumber + " " + modelData.operator + " " + modelData.rightNumber
-                textColor: (modelData.correctAnswer) ? "green" : "red"
-                infoText.font.bold: true
+                showResult: true
+                resultSuccess: modelData.correctAnswer
             }
         }
     }

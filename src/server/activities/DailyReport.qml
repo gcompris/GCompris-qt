@@ -1,35 +1,36 @@
 /* GCompris - DailyReport.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
 import QtQuick.Controls.Basic
-import QtQuick.Layouts
 
+import "../components"
 import "../singletons"
 
-ColumnLayout {
+Column {
     id: dailyReport
     property alias resultModel: resultModel
     property string sort: ""        // sort column
     property string order: ""       // ascending + or descending -
     property var arrows: ({ "": "", "+": "\uf0d7", "-": "\uf0d8" })
-    spacing: 3
 
     function executeRequest() {
         sort = order = ""
         resultModel.clear()
-        nameDisplay.text = ""
+        headerTitle.groupTitle = ""
         if (groupId !== -1) {
             var group = Master.findObjectInModel(Master.groupModel, function(item) { return item.group_id === groupId })
-            nameDisplay.text = group.group_name
+            headerTitle.groupTitle = group.group_name
         } else
-            nameDisplay.text = qsTr("All groups")
+            headerTitle.groupTitle = qsTr("All groups")
 
         // sum(duration) must apply only if success is true.
         var sumRequest = `CASE WHEN result_success=1 THEN result_duration WHEN result_success=0 THEN 0 END`
@@ -99,131 +100,121 @@ ColumnLayout {
 
     ListModel { id: resultModel }
 
-    Rectangle {     // Page header
-        Layout.fillWidth: true
-        Layout.minimumHeight: Style.bigLineHeight
-        Layout.maximumHeight: Style.bigLineHeight
-        Layout.leftMargin: 10
-        Layout.rightMargin: 10
-        Layout.topMargin: 5
-        Layout.preferredWidth: lines.width
-        color: Style.selectedPalette.alternateBase
-        RowLayout {     // Page header (user and activity names, activity icon)
-            anchors.fill: parent
-            spacing: 5
+    Rectangle {
+        id: header
+        width: parent.width
+        height: Style.lineHeight
+        color: Style.selectedPalette.base
+        border.width: Style.defaultBorderWidth
+        border.color: Style.selectedPalette.accent
 
-            Text {
-                id: nameDisplay
-                Layout.leftMargin: 5
-                text: ""
-                font.pixelSize: 18
-                verticalAlignment: Text.AlignBottom
-                color: Style.selectedPalette.text
+        Row {
+            anchors {
+                left: parent.left
+                right: parent.right
+                margins: Style.margins
             }
+            height: parent.height
+            spacing: Style.margins
 
-            Text {
-                id: dateLabel
-                Layout.preferredWidth: 250
-                Layout.leftMargin: 15
-                text: (calendar.title === qsTr("Calendar")) ? "" : calendar.title
-                font.pixelSize: 18
-                verticalAlignment: Text.AlignBottom
-                horizontalAlignment: Text.AlignHCenter
-                clip: true
-                color: Style.selectedPalette.text
+            DefaultLabel {
+                id: headerTitle
+                width: parent.width
+                anchors.verticalCenter: parent.verticalCenter
+                font.bold: true
+                //: Group name first, then Date range, with a space between them. Example: "Group Name 01/07/2025-08/07/2025"
+                text: calendarTitle != "" ? qsTr("%1 %2").arg(groupTitle).arg(calendarTitle) :
+                        groupTitle
+
+                property string groupTitle: ""
+                property string calendarTitle: (calendar.title === qsTr("Calendar")) ? "" : calendar.title
             }
-
-            Text {
-                id: actiName
-                Layout.fillWidth: true
-                text: (activityName !== "") ? Master.allActivities[activityName]["title"] : ""
-                font.pixelSize: 18
-                verticalAlignment: Text.AlignBottom
-                horizontalAlignment: Text.AlignRight
-                clip: true
-                color: Style.selectedPalette.text
-            }
-
-            Image {
-                Layout.preferredWidth: Style.bigLineHeight
-                Layout.preferredHeight: Style.bigLineHeight
-                Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-                Layout.rightMargin: 5
-                source: (activityName !== "") ? "qrc:/gcompris/src/activities/" + Master.allActivities[activityName]["icon"] : ""
-                sourceSize.width: 100
-                sourceSize.height: 100
-            }
-
         }
     }
 
-    Item {     // Columns header with sort buttons
-        Layout.fillWidth: true
-        Layout.preferredHeight: Style.lineHeight
-        Layout.leftMargin: 10
-        Layout.rightMargin: 10
-        clip: true
-        RowLayout {     // List header, columns names
-            id: header
-            anchors.fill: parent
-            height: parent.height
-            spacing: 2
+    Rectangle {  // Header with sort buttons
+        id: sectionsHeader
+        width: parent.width
+        height: Style.lineHeight
+        color: Style.selectedPalette.accent
 
-            RoundButton {
-                Layout.preferredWidth: Definitions.columnsSize["user_name"]
-                Layout.preferredHeight: Style.lineHeight
-                radius: 1
-                font.pixelSize: Style.textSize
-                text: Definitions.columnsLabel["user_name"] + ((sort === "user_name") ? " " + arrows[order] : "")
+        StyledSplitView {
+            id: sectionsSplit
+            width: parent.width - 10
+            height: parent.height
+
+            property int minSectionWidth: Math.min(width / 14, Style.controlSize * 2)
+            property int defaultNameWidth: width / 5 - 6 // -6 for the StyledSplitView handle
+            property int defaultNumberWidth: width / 10 - 6
+
+            SmallButton {
+                id: userNameButton
+                SplitView.minimumWidth: sectionsSplit.minSectionWidth
+                SplitView.preferredWidth: sectionsSplit.defaultNameWidth
+                neutralBorderWidth: 0
+                text: Definitions.columnsLabel["user_name"] +
+                    ((dailyReport.sort === "user_name") ?
+                        " " + dailyReport.arrows[dailyReport.order] : "")
                 onClicked: dailyReport.sortTable("user_name")
             }
-            RoundButton {
-                Layout.preferredWidth: Definitions.columnsSize["result_day"]
-                Layout.preferredHeight: Style.lineHeight
-                radius: 1
-                font.pixelSize: Style.textSize
-                text: Definitions.columnsLabel["result_day"] + ((sort === "result_day") ? " " + arrows[order] : "")
+            SmallButton {
+                id: dateButton
+                SplitView.minimumWidth: sectionsSplit.minSectionWidth
+                SplitView.preferredWidth: sectionsSplit.defaultNameWidth
+                neutralBorderWidth: 0
+                text: Definitions.columnsLabel["result_day"] +
+                    ((dailyReport.sort === "result_day") ?
+                        " " + dailyReport.arrows[dailyReport.order] : "")
                 onClicked: dailyReport.sortTable("result_day")
             }
-            RoundButton {
-                Layout.preferredWidth: Definitions.columnsSize["activity_name"]
-                Layout.preferredHeight: Style.lineHeight
-                radius: 1
-                font.pixelSize: Style.textSize
-                text: Definitions.columnsLabel["activity_name"] + ((sort === "activity_name") ? " " + arrows[order] : "")
+            SmallButton {
+                id: activityNameButton
+                SplitView.minimumWidth: sectionsSplit.minSectionWidth
+                SplitView.preferredWidth: sectionsSplit.defaultNameWidth
+                neutralBorderWidth: 0
+                text: Definitions.columnsLabel["activity_name"] +
+                    ((dailyReport.sort === "activity_name") ?
+                        " " + dailyReport.arrows[dailyReport.order] : "")
                 onClicked: dailyReport.sortTable("activity_name")
             }
-            RoundButton {
-                Layout.preferredWidth: Definitions.columnsSize["count_activity"]
-                Layout.preferredHeight: Style.lineHeight
-                radius: 1
-                font.pixelSize: Style.textSize
-                text: qsTr("Count") + ((dailyReport.sort === "count_activity") ? " " + dailyReport.arrows[dailyReport.order] : "")
+            SmallButton {
+                id: activityCountButton
+                SplitView.minimumWidth: sectionsSplit.minSectionWidth
+                SplitView.preferredWidth: sectionsSplit.defaultNumberWidth
+                neutralBorderWidth: 0
+                text: qsTr("Count") +
+                    ((dailyReport.sort === "count_activity") ?
+                        " " + dailyReport.arrows[dailyReport.order] : "")
                 onClicked: dailyReport.sortTable("count_activity")
             }
-            RoundButton {
-                Layout.preferredWidth: Definitions.columnsSize["result_duration"]
-                Layout.preferredHeight: Style.lineHeight
-                radius: 1
-                font.pixelSize: Style.textSize
-                text: qsTr("Time") + ((dailyReport.sort === "sum_duration") ? " " + dailyReport.arrows[dailyReport.order] : "")
+            SmallButton {
+                id: timeButton
+                SplitView.minimumWidth: sectionsSplit.minSectionWidth
+                SplitView.preferredWidth: sectionsSplit.defaultNumberWidth
+                neutralBorderWidth: 0
+                text: qsTr("Time") +
+                    ((dailyReport.sort === "sum_duration") ?
+                        " " + dailyReport.arrows[dailyReport.order] : "")
                 onClicked: dailyReport.sortTable("sum_duration")
             }
-            RoundButton {
-                Layout.fillWidth: true
-                Layout.preferredHeight: Style.lineHeight
-                radius: 1
-                font.pixelSize: Style.textSize
-                text: resultModel.count + " " + qsTr("lines")
-            }
-
-            RoundButton {
-                Layout.preferredWidth: Definitions.columnsSize["success_ratio"]
-                Layout.preferredHeight: Style.lineHeight
-                radius: 1
-                font.pixelSize: Style.textSize
-                text: qsTr("Ratio") + ((dailyReport.sort === "success_ratio") ? " " + dailyReport.order : "")
+            SmallButton {
+                id: successRatioButton
+                SplitView.minimumWidth: sectionsSplit.minSectionWidth
+                SplitView.preferredWidth: sectionsSplit.defaultNumberWidth
+                neutralBorderWidth: 0
+                text: qsTr("Ratio") +
+                    ((dailyReport.sort === "success_ratio") ?
+                        " " + dailyReport.arrows[dailyReport.order] : "")
                 onClicked: dailyReport.sortTable("success_ratio")
+            }
+            SmallButton {
+                id: linesButton
+                SplitView.minimumWidth: sectionsSplit.minSectionWidth
+                SplitView.preferredWidth: sectionsSplit.defaultNumberWidth
+                SplitView.fillWidth: true
+                neutralBorderWidth: 0
+                //: Number of result lines
+                text: qsTr("Lines: %1").arg(resultModel.count)
             }
         }
     }
@@ -233,113 +224,117 @@ ColumnLayout {
         LineReport {}
     }
 
-    ScrollView {
+    Flickable {
         id: scrollLines
-        Layout.fillHeight: true
-        Layout.fillWidth: true
-        Layout.leftMargin: 10
-        Layout.rightMargin: 10
-        ScrollBar.vertical.policy: ScrollBar.AlwaysOn
+        width: parent.width
+        height: parent.height - header.height - sectionsHeader.height
+        contentWidth: width
+        contentHeight: lines.height
+        flickableDirection: Flickable.VerticalFlick
+        boundsBehavior: Flickable.StopAtBounds
+        clip: true
 
-        ListView {      // Request rows
+        ScrollBar.vertical: ScrollBar {
+            contentItem: Rectangle {
+                implicitWidth: 6
+                radius: width
+                color: parent.pressed ? Style.selectedPalette.highlight : Style.selectedPalette.button
+            }
+        }
+
+        Column {
             id: lines
-            anchors.top: parent.top
-            anchors.left: parent.left
-            anchors.bottom: parent.bottom
-            width: scrollLines.contentWidth
-            model: resultModel
-            spacing: 0
-            boundsBehavior: Flickable.StopAtBounds
-            clip: true
+            width: parent.width
+            height: childrenRect.height
 
-            delegate: Control {
-                id: dailyLine
-                height: 26
-                width: lines.width
-                hoverEnabled: true
-                Rectangle {
-                    anchors.fill: parent
-                    color: dailyLine.hovered ? Style.selectedPalette.accent : "white"
-                    RowLayout {
-                        id: infos
+            Repeater {
+                model: resultModel
+                delegate: AbstractButton {
+                    id: dailyLine
+                    height: Style.lineHeight
+                    width: lines.width - 10 // margin for the ScrollBar
+                    hoverEnabled: true
+
+                    property color textColor: hovered ?
+                        Style.selectedPalette.highlightedText : Style.selectedPalette.text
+
+                    Rectangle {
                         anchors.fill: parent
-                        spacing: 2
-                        Text {
-                            Layout.preferredWidth: Definitions.columnsSize["user_name"]
-                            Layout.preferredHeight: 20
-                            font.pixelSize: Style.textSize
-                            leftPadding: 5
+                        color: dailyLine.pressed ? Style.selectedPalette.highlight :
+                            (dailyLine.hovered || dailyLine.activeFocus ? Style.selectedPalette.alternateBase :
+                            Style.selectedPalette.base)
+                        border.width: dailyLine.activeFocus && !dailyLine.pressed ? 2 : 0
+                        border.color: dailyLine.textColor
+                    }
+
+                    Row {
+                        id: infos
+                        x: Style.tinyMargins
+                        width: sectionsSplit.width - Style.smallMargins
+                        height: parent.height
+                        spacing: 6 // width of StyledSplitView handle
+                        DefaultLabel {
+                            width: userNameButton.width
+                            anchors.verticalCenter: parent.verticalCenter
+                            color: dailyLine.textColor
                             text: user_name
-                            color: Style.selectedPalette.text
                         }
-                        Text {
-                            Layout.preferredWidth: Definitions.columnsSize["result_day"]
-                            Layout.preferredHeight: 20
-                            font.pixelSize: Style.textSize
-                            leftPadding: 5
+                        DefaultLabel {
+                            width: dateButton.width
+                            anchors.verticalCenter: parent.verticalCenter
+                            color: dailyLine.textColor
                             text: new Date(result_day).toLocaleDateString(Qt.locale())
-                            color: Style.selectedPalette.text
                         }
-                        Text {
-                            Layout.preferredWidth: Definitions.columnsSize["activity_name"]
-                            Layout.preferredHeight: 20
-                            font.pixelSize: Style.textSize
-                            leftPadding: 10
+                        DefaultLabel {
+                            width: activityNameButton.width
+                            anchors.verticalCenter: parent.verticalCenter
+                            color: dailyLine.textColor
                             text: Master.allActivities[activity_name]["title"]
-                            color: Style.selectedPalette.text
                         }
-                        Text {
-                            Layout.preferredWidth: Definitions.columnsSize["count_activity"]
-                            Layout.preferredHeight: 20
-                            font.pixelSize: Style.textSize
+                        DefaultLabel {
+                            width: activityCountButton.width
+                            anchors.verticalCenter: parent.verticalCenter
+                            color: dailyLine.textColor
                             text: count_activity
-                            horizontalAlignment: Text.AlignHCenter
-                            color: Style.selectedPalette.text
                         }
-                        Text {
-                            Layout.preferredWidth: Definitions.columnsSize["result_duration"]
-                            Layout.preferredHeight: 20
-                            font.pixelSize: Style.textSize
+                        DefaultLabel {
+                            width: timeButton.width
+                            anchors.verticalCenter: parent.verticalCenter
+                            color: dailyLine.textColor
                             text: {
                                 var date = new Date(0)
                                 date.setSeconds(sum_duration)
                                 var timeString = date.toISOString().substring(11, 19)
                                 return timeString
                             }
-                            horizontalAlignment: Text.AlignHCenter
-                            color: Style.selectedPalette.text
+                        }
+                        DefaultLabel {
+                            width: successRatioButton.width
+                            anchors.verticalCenter: parent.verticalCenter
+                            color: dailyLine.textColor
+                            //: Success ratio, example: "50 %"
+                            text: qsTr("%1 %").arg(parseFloat(success_ratio * 100).toFixed(2))
                         }
                         Rectangle {
-                            Layout.fillWidth: true
-                            Layout.leftMargin: 5
-                            Layout.preferredHeight: 20
+                            width: linesButton.width - 4
+                            height: Style.textSize
+                            anchors.verticalCenter: parent.verticalCenter
                             border.width: 1
-                            border.color: "black"
+                            border.color: Style.selectedPalette.accent
+                            color: "red" // wrong answer ratio
                             Rectangle {
-                                width: (parent.width * success_ratio) -2
+                                width: (parent.width * success_ratio) - 2
                                 height: parent.height - 2
                                 x: 1
                                 y: 1
-                                color: Style.selectedPalette.base
+                                color: "green" // good answer ratio
                             }
                         }
-
-                        Text {
-                            Layout.preferredWidth: Definitions.columnsSize["success_ratio"]
-                            Layout.preferredHeight: 20
-                            font.pixelSize: Style.textSize
-                            rightPadding: 5
-                            text: parseFloat(success_ratio * 100).toFixed(2)+" %"
-                            horizontalAlignment: Text.AlignRight
-                            color: Style.selectedPalette.text
-                        }
                     }
-                }
-                MouseArea {
-                    anchors.fill: parent
+
                     onClicked: {
-                        pageStack.push(lineReport, { userId: user_id, activityId: activity_id, activityName: activity_name, dayFilter: result_day })
-                        pageStack.currentItem.executeRequest()
+                        pageStack.push(lineReport, { userId: user_id, activityId: activity_id, activityName: activity_name, dayFilter: result_day });
+                        pageStack.currentItem.executeRequest();
                     }
                 }
             }

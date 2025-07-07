@@ -35,9 +35,9 @@ Item {
 //                navigationBar.startNavigation(navigationBar.deviceView)
 //                navigationBar.startNavigation(navigationBar.datasView)
 //                navigationBar.startNavigation(navigationBar.chartsView)
-//                navigationBar.startNavigation(navigationBar.activityDetails)
+               navigationBar.startNavigation(navigationBar.activityDetails)
 //                navigationBar.startNavigation(navigationBar.settingsView)
-                navigationBar.startNavigation(navigationBar.datasetsView)
+                // navigationBar.startNavigation(navigationBar.datasetsView)
                 Master.initialize()
             } else {
                 message.text = qsTr("Incorrect password")
