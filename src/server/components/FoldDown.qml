@@ -146,14 +146,10 @@ Item {
             text: foldDown.foldModel.count
         }
 
-        SmallButton {
+        CollapseButton {
             id: collapseButton
-            width: visible ? height : 0
             anchors.right: parent.right
             visible: foldDown.collapsable
-            checkable: true
-            checked: true
-            text: checked ? "\uf0d7" : "\uf0d9"
             onCheckedChanged: {
                 if(checked) {
                     foldDown.SplitView.maximumHeight = Infinity;

@@ -1,9 +1,11 @@
 /* GCompris - ActivitiesView.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -11,6 +13,7 @@ import QtQuick
 import QtQuick.Controls.Basic
 
 import core 1.0
+import "../components"
 import "../singletons"
 import "../panels"
 import "../activities"
@@ -25,10 +28,9 @@ Item {
     property var activityList: []
     property string activityName: ""
 
-    SplitView {
+    StyledSplitView {
         id: splitActivitiesView
         anchors.fill: parent
-        anchors.margins: 3
 
         SelectorPanel {
             id: selector
@@ -81,6 +83,7 @@ Item {
 
         StackView {
             SplitView.fillWidth: true
+            SplitView.fillHeight: true
             id: pageStack
             initialItem: DailyReport { id: dailyReport }
             clip: true

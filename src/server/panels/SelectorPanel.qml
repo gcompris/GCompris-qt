@@ -1,20 +1,21 @@
 /* GCompris - SelectorPanel.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
 import QtQuick.Controls.Basic
-import QtQuick.Layouts
 
 import "../singletons"
 import "../components"
 
-ColumnLayout {
+Column {
     id: selectorPanel
     property alias calendar: calendarPane
     property alias groupPane: groupPane
@@ -24,7 +25,7 @@ ColumnLayout {
     property bool withPupils: true
     property bool withActivities: true
     property bool withCalendar: true
-    readonly property int minWidth: 266
+    readonly property int minWidth: 280
 
     function removeGroups()     { splitter.removeItem(groupPane) }
     function removePupils()     { splitter.removeItem(pupilPane) }
@@ -36,24 +37,14 @@ ColumnLayout {
     CalendarPane {
         id: calendarPane
         activated: selectorPanel.withCalendar
-        Layout.minimumHeight: Style.lineHeight
-        Layout.preferredHeight: monthHeight
-        Layout.maximumHeight: collapseButton.checked ? monthHeight : Style.lineHeight
-        Layout.fillWidth: true
     }
 
-    SplitView {
+    StyledSplitView {
         id: splitter
-        Layout.fillHeight: true
-        Layout.fillWidth: true
-        orientation: Qt.Vertical
+        width: parent.width
+        height: parent.height - calendarPane.height
 
-        handle: Rectangle {
-            implicitWidth: 4
-            implicitHeight: 6
-            color: SplitHandle.pressed ? Style.selectedPalette.highlight :
-                                        Style.selectedPalette.accent
-        }
+        orientation: Qt.Vertical
 
         FoldDown {
             id: groupPane
@@ -107,6 +98,5 @@ ColumnLayout {
             SplitView.minimumHeight: Style.lineHeight
             SplitView.fillHeight: selectorPanel.withActivities
         }
-
     }
 }
