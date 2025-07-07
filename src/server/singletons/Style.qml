@@ -47,6 +47,7 @@ QtObject {
 
     readonly property int margins: 8
     readonly property int smallMargins: 4
+    readonly property int tinyMargins: 2
     readonly property int bigMargins: 16
     readonly property int hugeMargins: 32
 
