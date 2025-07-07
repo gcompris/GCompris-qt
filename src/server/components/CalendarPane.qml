@@ -1,25 +1,27 @@
 /* GCompris - CalendarPane.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+
 import QtQuick
-import QtQuick.Layouts
 import QtQuick.Controls
 
+import "../components"
 import "../singletons"
 
 Column {
     id: calendarPane
-    property int lineHeight: Style.lineHeight
-    property alias title: parentBox.text
     property bool activated: true
-    readonly property int minWidth: 266
-
+    property alias title: title.text
+    height: childrenRect.height
+    width: parent.width
     enabled: activated
     visible: activated
     spacing: 0
@@ -33,9 +35,8 @@ Column {
     property string startDate: ""
     property string endDate: ""
     property string lastDate: ""
-    readonly property int calWidth: parent.width
-    readonly property int calHeight: 173
-    readonly property int monthHeight: lineHeight + calendarBlock.height + 5
+    readonly property int calHeight: Style.controlSize * 6
+    readonly property int monthHeight: Style.lineHeight + calendarBlock.height + 5
 
     signal calendarChanged()
 
@@ -44,126 +45,112 @@ Column {
     }
 
     function lastDayOfMonth(Year, Month) {
-        var date = new Date((new Date(Year, Month, 1)) - 1)
-        return date.toLocaleDateString(locale, Locale.ShortFormat).slice(0, 2)
+        var date = new Date((new Date(Year, Month, 1)) - 1);
+        return date.toLocaleDateString(locale, Locale.ShortFormat).slice(0, 2);
     }
 
     function strDateToLocale(strDate) {
-        return (new Date(strDate.slice(0,4), Number(strDate.slice(4, 6) - 1), strDate.slice(6, 8)).toLocaleDateString(locale, Locale.ShortFormat))
+        return (new Date(strDate.slice(0,4), Number(strDate.slice(4, 6) - 1), strDate.slice(6, 8)).toLocaleDateString(locale, Locale.ShortFormat));
     }
 
     function strDateToSql(strDate) {
-        return (new Date(strDate.slice(0,4), Number(strDate.slice(4, 6) - 1), strDate.slice(6, 8)).toLocaleDateString(locale, 'yyyy-MM-dd 00:00:00'))
+        return (new Date(strDate.slice(0,4), Number(strDate.slice(4, 6) - 1), strDate.slice(6, 8)).toLocaleDateString(locale, 'yyyy-MM-dd 00:00:00'));
     }
 
     Rectangle {
         id: header
         width: parent.width
-        height: calendarPane.lineHeight
+        height: Style.lineHeight
         color: Style.selectedPalette.base
-        radius: 5
+        border.width: Style.defaultBorderWidth
+        border.color: Style.selectedPalette.accent
 
-        Text {
-            id: parentBox
-            anchors.fill: parent
-            anchors.leftMargin: 2
+        DefaultLabel {
+            id: title
+            anchors {
+                left: parent.left
+                right: collapseButton.left
+                margins: Style.margins
+                verticalCenter: parent.verticalCenter
+            }
             horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
             text: (calendarPane.startDate === "") ? qsTr("Calendar") :
                   (calendarPane.startDate === calendarPane.endDate) ? calendarPane.strDateToLocale(calendarPane.startDate) :
                                             calendarPane.strDateToLocale(calendarPane.startDate) + " - " + calendarPane.strDateToLocale(calendarPane.endDate)
-            font.pixelSize: Style.textSize
             font.bold: true
             color: Style.selectedPalette.text
         }
 
-        SmallButton {
+        CollapseButton {
             id: collapseButton
-            width: calendarPane.lineHeight
-            height: calendarPane.lineHeight
             anchors.right: parent.right
-            checkable: true
             checked: false
-            text: checked ? "\uf0dd" : "\uf0d9"
-            font.pixelSize: Style.textSize
-            onCheckedChanged: calendarPane.Layout.maximumHeight = (!checked) ? calendarPane.lineHeight : calendarPane.monthHeight
         }
     }
 
     Rectangle {
         id: calendarBlock
         width: parent.width
-        height: childrenRect.height + 5
+        height: visible ? calendarColumn.height + calendarColumn.y : 0
         color: Style.selectedPalette.alternateBase
+        visible: collapseButton.checked
 
         Column {
+            id: calendarColumn
+            y: Style.tinyMargins
+            width: parent.width
+            height: childrenRect.height + Style.smallMargins
             spacing: 0
 
-            RowLayout {
+            Row {
                 id: monthSelector
-                width: calendarPane.calWidth
+                width: calendarPane.width - Style.smallMargins
+                anchors.horizontalCenter: parent.horizontalCenter
 
                 SmallButton {
                     id: leftButton
-                    Layout.preferredWidth: 25
-                    Layout.preferredHeight: 30
+                    width: Style.controlSize
+                    height: Style.controlSize
                     text: "<"
                     onClicked: {
-                        if (--calendarPane.currentMonth < 0) {
-                            calendarPane.currentMonth = 11
-                            calendarPane.currentYear--
+                        if(--calendarPane.currentMonth < 0) {
+                            calendarPane.currentMonth = 11;
+                            calendarPane.currentYear--;
                         }
                     }
                 }
 
-                Rectangle {
-                    Layout.fillWidth: true
-                    Layout.fillHeight: true
-                    Layout.margins: 5
-                    color: Style.selectedPalette.base
-                    radius: 3
-                    border.width: monthMouseArea.containsMouse ? 2 : 1
-
-                    Text {
-                        id: monthName
-                        anchors.fill: parent
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        text: calendarPane.capitalizeFirstLetter(calendarPane.locale.monthName(monthGrid.month, Locale.LongFormat)) + " " + monthGrid.year
-                        font.bold: true
-                        font.pixelSize: Style.textSize + 2
-                        color: Style.selectedPalette.text
+                SmallButton {
+                    height: Style.controlSize
+                    width: parent.width - leftButton.width * 2
+                    text: calendarPane.capitalizeFirstLetter(calendarPane.locale.monthName(monthGrid.month, Locale.LongFormat)) + " " + monthGrid.year
+                    onClicked: {
+                        calendarPane.startDate = String(calendarPane.currentYear) +
+                            ('00'+ (calendarPane.currentMonth + 1)).slice(-2) + '01';
+                        calendarPane.endDate = String(calendarPane.currentYear) +
+                            ('00'+ (calendarPane.currentMonth + 1)).slice(-2) +
+                            calendarPane.lastDayOfMonth(calendarPane.currentYear, calendarPane.currentMonth + 1);
+                        if(calendarPane.endDate > calendarPane.lastDate) {
+                            calendarPane.endDate = calendarPane.lastDate;
+                        }
+                        calendarPane.calendarChanged();
                     }
-
-                    MouseArea {
-                        id: monthMouseArea
-                        anchors.fill: parent
-                        acceptedButtons: Qt.LeftButton | Qt.RightButton
-                        hoverEnabled: true
-                        onClicked: {
-                            calendarPane.startDate = String(calendarPane.currentYear) + ('00'+ (calendarPane.currentMonth + 1)).slice(-2) + '01'
-                            calendarPane.endDate = String(calendarPane.currentYear) + ('00'+ (calendarPane.currentMonth + 1)).slice(-2) + calendarPane.lastDayOfMonth(calendarPane.currentYear, calendarPane.currentMonth + 1)
-                            if (calendarPane.endDate > calendarPane.lastDate)
-                                calendarPane.endDate = calendarPane.lastDate
-                            calendarPane.calendarChanged()
-                        }
-                        onDoubleClicked: {
-                            calendarPane.startDate = calendarPane.endDate = ""
-                            calendarPane.calendarChanged()
-                        }
+                    onDoubleClicked: {
+                        calendarPane.startDate = calendarPane.endDate = "";
+                        calendarPane.calendarChanged();
                     }
                 }
 
                 SmallButton {
                     id: rightButton
-                    Layout.preferredWidth: 25
-                    Layout.preferredHeight: 30
+                    width: Style.controlSize
+                    height: Style.controlSize
                     text: ">"
                     enabled: (String(calendarPane.currentYear) + ('00'+ (calendarPane.currentMonth + 1)).slice(-2)) < calendarPane.lastDate.slice(0,6)
                     onClicked: {
-                        if (++calendarPane.currentMonth > 11) {
-                            calendarPane.currentMonth = 0
-                            calendarPane.currentYear++
+                        if(++calendarPane.currentMonth > 11) {
+                            calendarPane.currentMonth = 0;
+                            calendarPane.currentYear++;
                         }
                     }
                 }
@@ -172,9 +159,20 @@ Column {
             DayOfWeekRow {
                 id: dayOfWeek
                 locale: monthGrid.locale
-                width: calendarPane.calWidth
+                width: calendarPane.width - Style.margins
+                anchors.horizontalCenter: parent.horizontalCenter
                 height: 25
                 font.pixelSize: Style.textSize
+                delegate: Text {
+                    text: shortName
+                    font: dayOfWeek.font
+                    fontSizeMode: Text.Fit
+                    color: Style.selectedPalette.text
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+
+                    required property string shortName
+                }
             }
 
             MonthGrid {
@@ -182,54 +180,65 @@ Column {
                 month: (calendarPane.currentMonth - 1 + 13) % 12
                 year: (calendarPane.currentMonth - 1 + 1 < 0) ? calendarPane.currentYear - 1 : calendarPane.currentYear
                 locale: calendarPane.locale
-                width: calendarPane.calWidth
+                width: dayOfWeek.width
                 height: calendarPane.calHeight
+                anchors.horizontalCenter: parent.horizontalCenter
                 font.pixelSize: Style.textSize
                 clip: true
 
                 delegate: Rectangle {
+                    id: dayDelegate
                     property string dateStr: new Date(model.year, model.month, model.day).toLocaleDateString(monthGrid.locale, "yyyyMMdd")
-                    color: (model.month !== monthGrid.month) ? "transparent"
-                         : ((dateStr >= startDate) && (dateStr <= endDate)) ? Style.selectedPalette.highlight
-                         : Style.selectedPalette.base
+
+                    property bool selected: ((dateStr >= calendarPane.startDate) && (dateStr <= calendarPane.endDate))
+
+                    property bool hovered: mouseArea.containsMouse
+
+                    color: selected ? Style.selectedPalette.highlight :
+                        (hovered ? Style.selectedPalette.accent : Style.selectedPalette.base)
+                    enabled: model.month === monthGrid.month
+                    opacity: enabled ? 1 : 0
                     visible: (dateStr <= lastDate)
                     radius: 3
-                    Layout.margins: 3
-                    border.width: (model.month !== monthGrid.month) ? 0 : mouseArea.containsMouse ? 2 : 1
+                    border.color: hovered ? Style.selectedPalette.text :
+                                            Style.selectedPalette.accent
+                    border.width: hovered ? 2 : 0
 
                     Text {
                         anchors.fill: parent
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
-                        opacity: model.month === monthGrid.month ? 1 : 0
+                        fontSizeMode: Text.Fit
                         text: model.day
-                        font: monthGrid.font
-                        color: Style.selectedPalette.text
+                        color: dayDelegate.selected || dayDelegate.hovered ?
+                                Style.selectedPalette.highlightedText :
+                                Style.selectedPalette.text
 
                         MouseArea {
                             id: mouseArea
                             anchors.fill: parent
                             acceptedButtons: Qt.LeftButton | Qt.RightButton
-                            enabled: (model.month === monthGrid.month)
                             hoverEnabled: true
-                            onClicked: {
+                            onClicked: (mouse)=> {
                                 var dateCopy = dateStr
-                                if (dateStr > lastDate)
-                                    dateCopy = lastDate
-                                if ((mouse.modifiers & (Qt.ControlModifier | Qt.ShiftModifier)) || (mouse.button === Qt.RightButton))
-                                    endDate = dateCopy
-                                else
-                                    startDate = endDate = dateCopy
-                                if (startDate > endDate) {  // swap dates
-                                    var mem = startDate
-                                    startDate = endDate
-                                    endDate = mem
+                                if(dateStr > lastDate) {
+                                    dateCopy = lastDate;
                                 }
-                                calendarChanged()
+                                if((mouse.modifiers & (Qt.ControlModifier | Qt.ShiftModifier)) || (mouse.button === Qt.RightButton)) {
+                                    endDate = dateCopy;
+                                } else {
+                                    startDate = endDate = dateCopy;
+                                }
+                                if(startDate > endDate) {  // swap dates
+                                    var mem = startDate;
+                                    startDate = endDate;
+                                    endDate = mem;
+                                }
+                                calendarChanged();
                             }
                             onDoubleClicked: {
-                                startDate = endDate = ""
-                                calendarChanged()
+                                startDate = endDate = "";
+                                calendarChanged();
                             }
                         }
                     }

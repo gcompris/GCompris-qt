@@ -32,7 +32,8 @@ TabButton {
             fontSizeMode: Text.FixedSize
             font.pixelSize: Style.textSize
             text: control.text
-            color: control.checked || control.hovered ? Style.selectedPalette.highlightedText : Style.selectedPalette.text
+            color: control.checked || control.hovered ? Style.selectedPalette.highlightedText :
+                    Style.selectedPalette.text
         }
     }
     background: Rectangle {
