@@ -24260,7 +24260,7 @@ msgctxt "Submarine|"
 msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
 "submarine."
-msgstr ""
+msgstr "控制面板最右侧的装置控制潜艇的水平舵。"
 
 #: activities/submarine/Submarine.qml:171
 msgctxt "Submarine|"
