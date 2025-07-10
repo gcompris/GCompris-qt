@@ -29,6 +29,7 @@ Item {
             Master.loadDatabase(fileName);
             if(Master.checkTeacher(login.text, password.text)) {
                 console.warn(login.text, "logged in.")
+                navigationBar.loginButton.visible = false
                 navigationBar.enabled = true
                 topBanner.visible = true
 //                navigationBar.startNavigation(navigationBar.pupilsView)
@@ -49,7 +50,6 @@ Item {
                 errorDialog.open()
             }
             dashboardView.enabled = false
-            navigationBar.loginButton.visible = false
             mainStack.children[mainStack.currentIndex].focus = true
         } else {
             console.warn("Database", databaseFile, "doesn't exist in", userDataPath)
