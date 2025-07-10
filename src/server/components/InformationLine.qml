@@ -15,16 +15,29 @@ import "../singletons"
 
 Row {
     id: informationLine
-    property string label: ""
-    property string info: ""
-    property string textColor: Style.selectedPalette.text
+    property alias label: labelText.text
+    property alias info: infoText.text
+    // TODO: remove all use of textColor (replace with visual symbols), then remove it here.
+    property color textColor: Style.selectedPalette.text
+    property alias labelText: labelText
     property alias infoText: infoText
     property int labelWidth: 0
     property int infoWidth: 0
+    height: Style.lineHeight
     spacing: Style.margins
+    clip: true
+
+    property bool showResult: false
+    property alias resultSuccess: infoResult.resultSuccess
+
+    property int infoResultWidth: showResult ? infoResult.width + spacing : 0
 
     DefaultLabel {
-        width: informationLine.labelWidth > 0 ? informationLine.labelWidth : undefined
+        id: labelText
+        width: informationLine.labelWidth > 0 ? informationLine.labelWidth :
+            Math.min(implicitWidth,
+                (informationLine.width - informationLine.spacing - informationLine.infoResultWidth) * 0.5)
+        anchors.verticalCenter: parent.verticalCenter
         horizontalAlignment: Text.AlignLeft
         text: informationLine.label
         font.bold: true
@@ -33,9 +46,17 @@ Row {
 
     DefaultLabel {
         id: infoText
-        width: informationLine.infoWidth > 0 ? informationLine.infoWidth : undefined
+        width: informationLine.infoWidth > 0 ? informationLine.infoWidth :
+            Math.min(implicitWidth, informationLine.width - informationLine.spacing - informationLine.infoResultWidth - labelText.width)
+        anchors.verticalCenter: parent.verticalCenter
         horizontalAlignment: Text.AlignLeft
         color: enabled ? informationLine.textColor : "gray"
         text: informationLine.info
+    }
+
+    ResultIndicator {
+        id: infoResult
+        visible: informationLine.showResult
+        resultSuccess: false
     }
 }
