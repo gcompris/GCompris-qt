@@ -33,7 +33,6 @@ Item {
         if (userId !== -1)
             clauses.push(`user_id=${userId}`)
         var user = Master.findObjectInModel(Master.userModel, function(item) { return item.user_id === userId })
-//        title.text = user.user_name
         var request = `SELECT *, date(result_datetime) AS result_day FROM result_ WHERE ` + clauses.join(" AND ")
         if (dayFilter !== "")
             request += ` AND result_day='${dayFilter}'`
@@ -93,6 +92,8 @@ Item {
             source: (lineReport.activityName !== "") ?
             "qrc:/gcompris/src/activities/" + Master.allActivities[activityName]["icon"] : ""
             sourceSize.height: parent.height
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.verticalCenterOffset: -height * 0.1 // little offset up as all icons have an empty area at the top
         }
 
         DefaultLabel {
@@ -118,8 +119,8 @@ Item {
 
     Flickable {
         id: scrollLines
-        width: topRow.width
-        anchors.horizontalCenter: parent.horizontalCenter
+        width: topRow.width + Style.margins
+        anchors.left: topRow.left
         anchors.top: reportTitle.bottom
         anchors.bottom: parent.bottom
         contentWidth: width
@@ -140,87 +141,123 @@ Item {
             id: lines
             width: parent.width - 10 // margin for the ScrollBar
             height: childrenRect.height
+            spacing: Style.tinyMargins
 
             Repeater {
                 model: resultModel
                 delegate:  Rectangle {
                     id: lineRect
                     property string activity_line_name: Master.findObjectInModel(Master.activityModel, function(item) { return item.activity_id === activity_id }).activity_name
-                    height: Math.max(dataDisplay.height, infos.height) + 10
+                    height: Math.max(dataDisplay.height, infos.height)
                     width: lines.width
                     color: Style.selectedPalette.alternateBase
                     radius: Style.defaultRadius
                     border.width: Style.defaultBorderWidth
                     border.color: Style.selectedPalette.accent
-                    Rectangle {
-                        anchors.top: lineView.top
-                        anchors.left: lineView.left
-                        anchors.margins: Style.defaultBorderWidth
-                        width: 170
-                        height: lineView.height - Style.defaultBorderWidth * 2
-                        radius: Style.defaultRadius
-                        color: result_success ? "green" : "red"
-                        opacity: 0.2
-                    }
 
                     Row {
                         id: lineView
                         anchors.fill: parent
+                        anchors.margins: Style.defaultBorderWidth
                         spacing: Style.smallMargins
-                        Column {        // Left side informations (level, date, success)
-                            id: infos
-                            height: childrenRect.height
-                            width: 170
-                            spacing: Style.smallMargins
-                            anchors.verticalCenter: parent.verticalCenter
-                            Row {
-                                width: parent.width - Style.margins
-                                height: Style.lineHeight
-                                anchors.horizontalCenter: parent.horizontalCenter
-                                spacing: Style.smallMargins
-                                DefaultLabel {
-                                    id: userNameLabel
-                                    width: parent.width - Style.smallMargins -
-                                        resultDurationLabel.width
-                                    anchors.verticalCenter: parent.verticalCenter
-                                    font.bold: true
-                                    text: Master.findObjectInModel(Master.userModel, function(item) { return item.user_id === user_id }).user_name
-                                }
-                                DefaultLabel {
-                                    id: resultDurationLabel
-                                    width: Style.controlSize
-                                    anchors.verticalCenter: parent.verticalCenter
-                                    horizontalAlignment: Text.AlignRight
-                                    text: qsTr("%1s").arg(result_duration)
-                                }
+
+                        Rectangle {  // Left side informations (name, level, date, success)
+                            id: infosArea
+                            width: infos.width + Style.margins * 2 + radius
+                            height: parent.height
+                            radius: Style.defaultRadius - Style.defaultBorderWidth
+                            color: result_success ? "#1600FF00" : "#16FF0000"
+
+                            Rectangle {
+                                id: radiusMask
+                                width: infosArea.radius * 2
+                                height: parent.height
+                                anchors.horizontalCenter: parent.right
+                                color: Style.selectedPalette.alternateBase
                             }
 
-                            Row {
-                                width: parent.width - Style.margins
-                                height: Style.lineHeight
-                                anchors.horizontalCenter: parent.horizontalCenter
-                                spacing: Style.smallMargins
-                                DefaultLabel {
-                                    id: levelLabel
-                                    width: (parent.width - parent.spacing) * 0.5
-                                    anchors.verticalCenter: parent.verticalCenter
-                                    horizontalAlignment: Text.AlignLeft
-                                    text: qsTr("Level: <b>%1</b>").arg(JSON.parse(result_data).level)
+                            Column {
+                                id: infos
+                                x: Style.margins
+                                height: childrenRect.height
+                                width: childrenRect.width
+                                anchors.verticalCenter: parent.verticalCenter
+
+                                Item {
+                                    height: Style.lineHeight
+                                    width: childrenRect.width
+                                    DefaultLabel {
+                                        id: userNameLabel
+                                        font.bold: true
+                                        anchors.verticalCenter: parent.verticalCenter
+                                        text: Master.findObjectInModel(Master.userModel, function(item) { return item.user_id === user_id }).user_name
+                                    }
                                 }
-                                DefaultLabel {
-                                    id: resultDateLabel
-                                    width: levelLabel.width
-                                    anchors.verticalCenter: parent.verticalCenter
-                                    horizontalAlignment: Text.AlignRight
-                                    text: result_datetime.slice(-8)
+
+                                // visible only in Charts (pupils mode)
+                                Item {
+                                    height: Style.lineHeight
+                                    width: childrenRect.width
+                                    visible: activityName === ""
+                                    DefaultLabel {
+                                        id: activityNameLabel
+                                        anchors.verticalCenter: parent.verticalCenter
+                                        font.bold: true
+                                        text: Master.allActivities[lineRect.activity_line_name].title
+                                    }
+                                }
+
+                                Row {
+                                    height: Style.lineHeight
+                                    width: childrenRect.width
+                                    spacing: Style.margins
+
+                                    DefaultLabel {
+                                        id: levelLabel
+                                        anchors.verticalCenter: parent.verticalCenter
+                                        text: qsTr("Level: <b>%1</b>").arg(JSON.parse(result_data).level)
+                                    }
+
+                                    ResultIndicator {
+                                        resultSuccess: model.result_success
+                                    }
+                                }
+
+                                Item {
+                                    height: Style.lineHeight
+                                    width: Math.max(fakeResultDurationLabel.width, resultDurationLabel.width)
+                                    DefaultLabel {
+                                        id: resultDurationLabel
+                                        anchors.verticalCenter: parent.verticalCenter
+                                        //: Result duration in seconds. Example: "Duration: 25s"
+                                        text: qsTr("Duration: %1s").arg(result_duration)
+                                    }
+
+                                    // Used to provide max width space for resultDurationLabel
+                                    DefaultLabel {
+                                        id: fakeResultDurationLabel
+                                        visible: false
+                                        anchors.verticalCenter: parent.verticalCenter
+                                        //: Result duration in seconds. Example: "Duration: 25s"
+                                        text: qsTr("Duration: %1s").arg("0000")
+                                    }
+                                }
+
+                                Item {
+                                    height: Style.lineHeight
+                                    width: childrenRect.width
+                                    DefaultLabel {
+                                        id: resultDateTimeLabel
+                                        anchors.verticalCenter: parent.verticalCenter
+                                        text: result_datetime.slice(-8)
+                                    }
                                 }
                             }
                         }
 
                         Loader {    // Load default DataDisplay or individual activity DataDisplay
                             id: dataDisplay
-                            width: parent.width - parent.spacing * 3 -
-                                infos.width - activityNameLabel.width
+                            width: parent.width - parent.spacing * 2 - infosArea.width
                             anchors.verticalCenter: parent.verticalCenter
                             source: {
                                 var url = `${Master.activityBaseUrl}/${lineRect.activity_line_name}/DataDisplay.qml`
@@ -228,17 +265,6 @@ Item {
                             }
                             property var jsonData_: (typeof result_data !== 'undefined') ? JSON.parse(result_data) : ({})
                         }
-                    }
-
-                    DefaultLabel {
-                        id: activityNameLabel
-                        width: 170
-                        anchors.right: lineView.right
-                        anchors.rightMargin: Style.smallMargins
-                        anchors.verticalCenter: parent.verticalCenter
-                        text: Master.allActivities[lineRect.activity_line_name].title
-                        horizontalAlignment: Text.AlignRight
-                        visible: activityName === ""
                     }
                 }
             }
