@@ -45,6 +45,7 @@ Button {
         text: smallButton.text
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
+        font.pixelSize: Style.textSize
         elide: Text.ElideRight
         color: smallButton.hovered || smallButton.checked ?
             Style.selectedPalette.highlightedText : Style.selectedPalette.text
