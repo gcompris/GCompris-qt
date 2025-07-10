@@ -20,40 +20,17 @@ Item {
     signal navigationButtonClicked()
 
     height: Style.bigControlSize
-    width: parent.width
+    width: isCollapsed ? Style.bigControlSize : buttonRow.width + Style.margins
+
+    required property bool isCollapsed
+    required property int panelWidth
 
     Rectangle {
         id: background
-        anchors.fill: parent
+        width: navigationButton.panelWidth
+        height: Style.bigControlSize
         color: navigationButton.selected ? Style.selectedPalette.highlight :
             (mouseArea.containsMouse ? Style.selectedPalette.accent : Style.selectedPalette.alternateBase)
-
-        Row {
-            opacity: enabled ? 1 : 0.5
-            Text {
-                id: textIcon
-                width: Style.bigControlSize
-                height: Style.bigControlSize
-                font.pixelSize: height * 0.5
-                color: navigationButton.selected || mouseArea.containsMouse ?
-                    Style.selectedPalette.highlightedText :
-                    Style.selectedPalette.text
-                text: "\uf11a"
-                verticalAlignment: Text.AlignVCenter
-                horizontalAlignment: Text.AlignHCenter
-            }
-
-            DefaultLabel {
-                id: textDescription
-                width: background.width - Style.bigControlSize
-                height: Style.bigControlSize
-                horizontalAlignment: Text.AlignLeft
-                color: textIcon.color
-                font.pixelSize: Style.textSize
-                fontSizeMode: Text.FixedSize
-                text: "SET ME!!"
-            }
-        }
 
         MouseArea {
             id: mouseArea
@@ -63,6 +40,35 @@ Item {
             onClicked: {
                 navigationButton.navigationButtonClicked()
             }
+        }
+    }
+
+    Row {
+        id: buttonRow
+        opacity: enabled ? 1 : 0.5
+        width: childrenRect.width
+        height: childrenRect.height
+        Text {
+            id: textIcon
+            width: Style.bigControlSize
+            height: Style.bigControlSize
+            font.pixelSize: height * 0.5
+            color: navigationButton.selected || mouseArea.containsMouse ?
+            Style.selectedPalette.highlightedText :
+            Style.selectedPalette.text
+            text: "\uf11a"
+            verticalAlignment: Text.AlignVCenter
+            horizontalAlignment: Text.AlignHCenter
+        }
+
+        DefaultLabel {
+            id: textDescription
+            height: Style.bigControlSize
+            horizontalAlignment: Text.AlignLeft
+            color: textIcon.color
+            font.pixelSize: Style.textSize
+            fontSizeMode: Text.FixedSize
+            text: "SET ME!!"
         }
     }
 }
