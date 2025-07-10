@@ -30,6 +30,7 @@ Button {
         text: button.text
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
+        font.pixelSize: Style.textSize
         elide: Text.ElideRight
         color: button.enabled && (button.pressed || button.hovered) ?
             Style.selectedPalette.highlightedText :
