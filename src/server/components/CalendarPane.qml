@@ -161,7 +161,7 @@ Column {
                 locale: monthGrid.locale
                 width: calendarPane.width - Style.margins
                 anchors.horizontalCenter: parent.horizontalCenter
-                height: 25
+                height: Style.lineHeight
                 font.pixelSize: Style.textSize
                 delegate: Text {
                     text: shortName
@@ -208,6 +208,7 @@ Column {
                         anchors.fill: parent
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
+                        font.pixelSize: Style.textSize
                         fontSizeMode: Text.Fit
                         text: model.day
                         color: dayDelegate.selected || dayDelegate.hovered ?
