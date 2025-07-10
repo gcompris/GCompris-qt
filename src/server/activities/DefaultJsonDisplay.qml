@@ -15,6 +15,7 @@ import "../components"
 Column {
     id: defaultJsonDisplay
     property string jsonString: "{}"
+    width: parent.width
     height: Style.lineHeight * dataModel.count
 
     ListModel { id: dataModel }
@@ -26,13 +27,13 @@ Column {
         for (var kkey in dataObj) {
             dataModel.append({ name_: kkey, value_: String(dataObj[kkey]) })
         }
+        console.log("here it is...")
     }
 
     Repeater {
         model: dataModel
         delegate: InformationLine {
-            labelWidth: 130
-            height: Style.lineHeight
+            width: defaultJsonDisplay.width
             label: name_
             info: value_
         }
