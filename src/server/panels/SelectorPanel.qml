@@ -25,7 +25,7 @@ Column {
     property bool withPupils: true
     property bool withActivities: true
     property bool withCalendar: true
-    readonly property int minWidth: 280
+    readonly property int minWidth: Style.textSize * 18
 
     function removeGroups()     { splitter.removeItem(groupPane) }
     function removePupils()     { splitter.removeItem(pupilPane) }
