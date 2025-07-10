@@ -323,7 +323,9 @@ Item {
                         label: qsTr("Font size")
                         radios: [12, 14, 16, 18, 20]
                         current: radios.indexOf(Style.textSize)
-                        onRadioCheckChanged: (index) => { Style.textSize = radios[index] }
+                        onRadioCheckChanged: (index) => {
+                            serverSettings.textSize = radios[index];
+                        }
                     }
 
                     RadioButtonLine {

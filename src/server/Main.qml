@@ -73,6 +73,8 @@ Window {
         property bool navigationPanelRight: true
         property bool darkTheme: true
         onDarkThemeChanged: Style.isDarkTheme = darkTheme
+        property int textSize: 16
+        onTextSizeChanged: Style.textSize = textSize
     }
 
     TopPanel {
