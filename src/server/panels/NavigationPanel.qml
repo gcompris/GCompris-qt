@@ -52,8 +52,7 @@ Item {
         }
     ]
 
-    width: enabled ?
-        (isCollapsed ? Style.bigControlSize : Style.bigControlSize + 160) : 0
+    width: enabled ? buttons.width : 0
     clip: true
 
     function changeTo(index) {
@@ -69,64 +68,83 @@ Item {
     }
 
     Rectangle {
-        anchors.fill: parent
+        height: parent.height
+        width: buttons.width
         color: Style.selectedPalette.alternateBase
 
         Column {
             id: buttons
-            width: parent.width
+            width: childrenRect.width
 
             NavigationButton {
                 iconCharacter: "\uf0c9"
                 description: ""
+                isCollapsed: navigationPanel.isCollapsed
+                panelWidth: navigationPanel.width
                 onNavigationButtonClicked: navigationPanel.isCollapsed = !navigationPanel.isCollapsed
             }
             NavigationButton {
                 id: loginButton
                 iconCharacter: "\uf015"
                 description: qsTr("Login")
+                isCollapsed: navigationPanel.isCollapsed
+                panelWidth: navigationPanel.width
                 onNavigationButtonClicked: navigationPanel.changeTo(0)
             }
             NavigationButton {
                 id: pupilsView
                 iconCharacter: "\uf0c0"
                 description: qsTr("Pupils and Groups")
+                isCollapsed: navigationPanel.isCollapsed
+                panelWidth: navigationPanel.width
                 onNavigationButtonClicked: navigationPanel.changeTo(1)
             }
             NavigationButton {
                 id: deviceView
                 iconCharacter: "\uf1e6"
                 description: qsTr("Connect devices")
+                isCollapsed: navigationPanel.isCollapsed
+                panelWidth: navigationPanel.width
                 onNavigationButtonClicked: navigationPanel.changeTo(2)
             }
             NavigationButton {
                 id: activityDetails
                 iconCharacter: "\uf03a"
                 description: qsTr("Activities")
+                isCollapsed: navigationPanel.isCollapsed
+                panelWidth: navigationPanel.width
                 onNavigationButtonClicked: navigationPanel.changeTo(3)
             }
             NavigationButton {
                 id: datasetsView
                 iconCharacter: "\uf15c"
                 description: qsTr("Datasets")
+                isCollapsed: navigationPanel.isCollapsed
+                panelWidth: navigationPanel.width
                 onNavigationButtonClicked: navigationPanel.changeTo(4)
             }
             NavigationButton {
                 id: chartsView
                 iconCharacter: "\uf681"
                 description: qsTr("Charts")
+                isCollapsed: navigationPanel.isCollapsed
+                panelWidth: navigationPanel.width
                 onNavigationButtonClicked: navigationPanel.changeTo(5)
             }
             NavigationButton {
                 id: settingsView
                 iconCharacter: "\uf0ad"
                 description: qsTr("Settings")
+                isCollapsed: navigationPanel.isCollapsed
+                panelWidth: navigationPanel.width
                 onNavigationButtonClicked: navigationPanel.changeTo(6)
             }
             NavigationButton {
                 id: datasView
                 iconCharacter: "\uf188"
-                description: qsTr("Development (work in progress)")
+                description: qsTr("Development (WIP)")
+                isCollapsed: navigationPanel.isCollapsed
+                panelWidth: navigationPanel.width
                 onNavigationButtonClicked: navigationPanel.changeTo(7)
             }
 
