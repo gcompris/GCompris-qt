@@ -43,7 +43,7 @@ AbstractButton {
 
         Rectangle {
             id: controlImage
-            height: Style.textSize
+            height: 2 * Math.round(Style.textSize * 0.5)
             width: height
             color: control.down ? Style.selectedPalette.accent : "transparent"
             border.width: control.visualFocus ? 3 : 2
@@ -52,7 +52,7 @@ AbstractButton {
 
             Rectangle {
                 anchors.centerIn: parent
-                width: parent.width * 0.5
+                width: controlImage.width - 8
                 height: width
                 color: Style.selectedPalette.text
                 visible: control.checkState === Qt.Checked
@@ -60,8 +60,8 @@ AbstractButton {
 
             Rectangle {
                 anchors.centerIn: parent
-                width: parent.width * 0.5
-                height: parent.height * 0.2
+                width: controlImage.width - 8
+                height: 2 * Math.round(controlImage.height * 0.1)
                 color: Style.selectedPalette.text
                 visible: control.checkState === Qt.PartiallyChecked
             }
