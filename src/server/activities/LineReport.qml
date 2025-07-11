@@ -91,9 +91,9 @@ Item {
             id: actiIcon
             source: (lineReport.activityName !== "") ?
             "qrc:/gcompris/src/activities/" + Master.allActivities[activityName]["icon"] : ""
-            sourceSize.height: parent.height
+            sourceSize.height: parent.height * 0.9
             anchors.verticalCenter: parent.verticalCenter
-            anchors.verticalCenterOffset: -height * 0.1 // little offset up as all icons have an empty area at the top
+            anchors.verticalCenterOffset: -height * 0.05 // little offset up as all icons have an empty area at the top
         }
 
         DefaultLabel {
@@ -183,11 +183,14 @@ Item {
                                 width: childrenRect.width
                                 anchors.verticalCenter: parent.verticalCenter
 
+                                property int maxWidth: lineView.width * 0.5 - Style.margins * 2 - infosArea.radius
+
                                 Item {
                                     height: Style.lineHeight
                                     width: childrenRect.width
                                     DefaultLabel {
                                         id: userNameLabel
+                                        width: Math.min(implicitWidth, infos.maxWidth)
                                         font.bold: true
                                         anchors.verticalCenter: parent.verticalCenter
                                         text: Master.findObjectInModel(Master.userModel, function(item) { return item.user_id === user_id }).user_name
@@ -201,6 +204,7 @@ Item {
                                     visible: activityName === ""
                                     DefaultLabel {
                                         id: activityNameLabel
+                                        width: Math.min(implicitWidth, infos.maxWidth)
                                         anchors.verticalCenter: parent.verticalCenter
                                         font.bold: true
                                         text: Master.allActivities[lineRect.activity_line_name].title
@@ -214,6 +218,7 @@ Item {
 
                                     DefaultLabel {
                                         id: levelLabel
+                                        width: Math.min(implicitWidth, infos.maxWidth)
                                         anchors.verticalCenter: parent.verticalCenter
                                         text: qsTr("Level: <b>%1</b>").arg(JSON.parse(result_data).level)
                                     }
@@ -228,6 +233,7 @@ Item {
                                     width: Math.max(fakeResultDurationLabel.width, resultDurationLabel.width)
                                     DefaultLabel {
                                         id: resultDurationLabel
+                                        width: Math.min(implicitWidth, infos.maxWidth)
                                         anchors.verticalCenter: parent.verticalCenter
                                         //: Result duration in seconds. Example: "Duration: 25s"
                                         text: qsTr("Duration: %1s").arg(result_duration)
@@ -237,6 +243,7 @@ Item {
                                     DefaultLabel {
                                         id: fakeResultDurationLabel
                                         visible: false
+                                        width: Math.min(implicitWidth, infos.maxWidth)
                                         anchors.verticalCenter: parent.verticalCenter
                                         //: Result duration in seconds. Example: "Duration: 25s"
                                         text: qsTr("Duration: %1s").arg("0000")
@@ -248,6 +255,7 @@ Item {
                                     width: childrenRect.width
                                     DefaultLabel {
                                         id: resultDateTimeLabel
+                                        width: Math.min(implicitWidth, infos.maxWidth)
                                         anchors.verticalCenter: parent.verticalCenter
                                         text: result_datetime.slice(-8)
                                     }
@@ -259,6 +267,7 @@ Item {
                             id: dataDisplay
                             width: parent.width - parent.spacing * 2 - infosArea.width
                             anchors.verticalCenter: parent.verticalCenter
+                            clip: true
                             source: {
                                 var url = `${Master.activityBaseUrl}/${lineRect.activity_line_name}/DataDisplay.qml`
                                 return file.exists(url) ? url : `${Master.activityBaseUrl}/DataDisplay.qml`
