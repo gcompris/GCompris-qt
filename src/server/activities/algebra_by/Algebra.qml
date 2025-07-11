@@ -4,50 +4,25 @@
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 pragma ComponentBehavior: Bound
 import QtQuick
+import "../../components"
+import "../../singletons"
 
-Item {
+InformationLine {
     id: lineItem
     required property var jsonData
     property string proposal: (jsonData.proposal !== "") ? jsonData.proposal : qsTr("timeout")
 
-    Row {
-        Text {
-            text: lineItem.jsonData.operation
-            height: 30
-            width: 100
-            horizontalAlignment: Text.AlignHCenter
-            font.pixelSize: 20
-            color: Style.selectedPalette.text
-        }
-        Text {
-            text: "="
-            height: 30
-            width: 20
-            horizontalAlignment: Text.AlignHCenter
-            font.pixelSize: 20
-            color: Style.selectedPalette.text
-        }
-        Text {
-            text: lineItem.jsonData.result
-            height: 30
-            width: 50
-            horizontalAlignment: Text.AlignHCenter
-            font.pixelSize: 20
-            color: Style.selectedPalette.text
-        }
-        Text {
-            text: lineItem.proposal
-            height: 30
-            width: 80
-            color: (Number(lineItem.proposal) === Number(lineItem.jsonData.result)) ? "green" : "red"
-            horizontalAlignment: Text.AlignHCenter
-            font.pixelSize: 20
-            color: Style.selectedPalette.text
-        }
-    }
+    //: %1 is an operation, %2 the result. Example: "2 x 5 = 10"
+    label: qsTr("%1 = %2").arg(lineItem.jsonData.operation).arg(lineItem.jsonData.result)
+    //: %1 is the answer. Example: "Answer: 10"
+    info: qsTr("Answer: %1").arg(lineItem.proposal)
+    infoText.font.bold: true
+    infoText.color: Style.selectedPalette.highlightedText
+    showResult: true
 }
