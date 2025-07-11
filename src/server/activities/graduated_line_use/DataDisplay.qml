@@ -11,5 +11,6 @@
 import "../graduated_line_read"
 
 GraduatedLine {
-    jsonData: jsonData_
+    jsonData: parent.jsonData_
+    resultSuccess: parent.resultSuccess_
 }
