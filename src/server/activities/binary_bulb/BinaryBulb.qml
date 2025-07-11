@@ -1,85 +1,61 @@
 /* GCompris - BinaryBulb.qml for binary_bulb
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 pragma ComponentBehavior: Bound
 import QtQuick
+import "../../components"
+import "../../singletons"
 
 Item {
     id: lineItem
     required property var jsonData
+    required property bool resultSuccess
     height: details.height
+
+    // Used to get longest text for aligned label columns.
+    TextMetrics {
+        id: expectedLabelSize
+        font.pixelSize: Style.textSize
+        font.bold: true
+        text: qsTr("Expected:")
+    }
+    TextMetrics {
+        id: answerLabelSize
+        font.pixelSize: Style.textSize
+        font.bold: true
+        text: qsTr("Answer:")
+    }
 
     Column {
         id: details
-        Row {
-            Text {
-                height: contentHeight + 5
-                width: 150
-                verticalAlignment: Text.AlignBottom
-                text: qsTr("Expected value")
-                font.bold: true
-                font.pixelSize: 14
-                color: Style.selectedPalette.text
-            }
 
-            Text {
-                height: contentHeight + 5
-                width: 30
-                verticalAlignment: Text.AlignBottom
-                text: lineItem.jsonData.expected
-                font.pixelSize: 14
-                horizontalAlignment: Text.AlignRight
-                color: Style.selectedPalette.text
-            }
-
-            Text {
-                height: contentHeight + 5
-                width: 120
-                verticalAlignment: Text.AlignBottom
-                text: (lineItem.jsonData.expected >>> 0).toString(2)
-                font.pixelSize: 14
-                horizontalAlignment: Text.AlignRight
-                color: Style.selectedPalette.text
-            }
+        InformationLine {
+            id: expectedLine
+            width: lineItem.width
+            label: expectedLabelSize.text
+            labelWidth: Math.max(expectedLabelSize.advanceWidth, answerLabelSize.advanceWidth) + 1
+            //: %1 is the numerical value, %2 is the binary value. Example: "5 (101)"
+            info: qsTr("%1 (%2)").arg(lineItem.jsonData.expected).arg((lineItem.jsonData.expected >>> 0).toString(2))
         }
 
-        Row {
-            Text {
-                height: contentHeight + 5
-                width: 150
-                verticalAlignment: Text.AlignBottom
-                text: qsTr("Input value")
-                font.bold: true
-                font.pixelSize: 14
-                color: Style.selectedPalette.text
-            }
-
-            Text {
-                height: contentHeight + 5
-                width: 30
-                verticalAlignment: Text.AlignBottom
-                text: lineItem.jsonData.result
-                color: (lineItem.jsonData.result === lineItem.jsonData.expected) ? Style.selectedPalette.text : "red"
-                font.pixelSize: 14
-                horizontalAlignment: Text.AlignRight
-            }
-
-            Text {
-                height: contentHeight + 5
-                width: 120
-                verticalAlignment: Text.AlignBottom
-                text: (lineItem.jsonData.result >>> 0).toString(2)
-                color: (lineItem.jsonData.result === lineItem.jsonData.expected) ? Style.selectedPalette.text : "red"
-                font.pixelSize: 14
-                horizontalAlignment: Text.AlignRight
-            }
+        InformationLine {
+            id: answerLine
+            width: lineItem.width
+            label: answerLabelSize.text
+            labelWidth: expectedLine.labelWidth
+            //: %1 is the numerical value, %2 is the binary value. Example: "5 (101)"
+            info: qsTr("%1 (%2)").arg(lineItem.jsonData.result).arg((lineItem.jsonData.result >>> 0).toString(2))
+            infoText.color: Style.selectedPalette.highlightedText
+            showResult: true
+            resultSuccess: lineItem.resultSuccess
         }
     }
-
 }

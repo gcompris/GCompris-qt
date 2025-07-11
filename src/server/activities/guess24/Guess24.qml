@@ -4,46 +4,82 @@
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 pragma ComponentBehavior: Bound
 import QtQuick
+import "../../components"
+import "../../singletons"
 
 Item {
     id: lineItem
     required property var jsonData
-    height: details.height
+    height: details.height + Style.bigMargins
     property string formattedCards: ""
 
     ListModel { id: stepsModel }
 
-    Row {
+    Flow {
         id: details
-        spacing: 15
-        Text {
-            anchors.topMargin: 4
-            anchors.rightMargin: 5
-            font.bold: true
-            horizontalAlignment: Text.AlignRight
-            text: lineItem.jsonData.cards.join("\n")
-            color: Style.selectedPalette.text
-        }
+        anchors.verticalCenter: parent.verticalCenter
+        width: parent.width
+        spacing: Style.margins
 
-        Repeater {
-            model: stepsModel
-            Text {
-                required property string content_
-                anchors.topMargin: 6
-                text: content_
+        Item {
+            id: cardsItem
+            height: cardsLabel.height + Style.bigMargins
+            width: childrenRect.width
+
+            DefaultLabel {
+                id: cardsLabel
+                height: implicitHeight
+                font.pixelSize: Style.textSize
+                font.bold: true
+                anchors.verticalCenter: parent.verticalCenter
+                horizontalAlignment: Text.AlignRight
+                text: lineItem.jsonData.cards.join("\n")
                 color: Style.selectedPalette.text
             }
         }
 
-        Text {
-            font.bold: true
-            text: (lineItem.jsonData.hints) ?  qsTr("Hints") + ": " + lineItem.jsonData.hints : ""
-            color: "red"
+        Repeater {
+            id: stepsRepeater
+            model: stepsModel
+            Rectangle {
+                id: stepsItem
+                height: stepsColumn.height + Style.bigMargins
+                width: stepsColumn.width + Style.bigMargins
+                border.width: Style.defaultBorderWidth
+                border.color: Style.selectedPalette.accent
+                color: "transparent"
+                required property string content_
+                required property int index
+
+                Column {
+                    id: stepsColumn
+                    anchors.centerIn: parent
+                    DefaultLabel {
+                        id: stepsLabel
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        height: implicitHeight
+                        font.pixelSize: Style.textSize
+                        text: stepsItem.content_
+                    }
+
+                    DefaultLabel {
+                        id: hintsLabel
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        visible: stepsItem.index === stepsRepeater.count - 1 &&
+                            lineItem.jsonData.hints
+                        font.bold: true
+                        font.italic: true
+                        //: %1 is number of hints displayed. Example: "Hints: 1"
+                        text: qsTr("Hints: %1").arg(lineItem.jsonData.hints)
+                    }
+                }
+            }
         }
     }
 

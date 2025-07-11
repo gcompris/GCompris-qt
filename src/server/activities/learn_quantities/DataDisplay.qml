@@ -11,5 +11,6 @@
 import "../learn_decimals"
 
 LearnDecimals {
-    jsonData: jsonData_
+    jsonData: parent.jsonData_
+    resultSuccess: parent.resultSuccess_
 }
