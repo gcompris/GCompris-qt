@@ -31,7 +31,7 @@ AbstractButton {
         anchors.verticalCenter: parent.verticalCenter
         Rectangle {
             id: controlImage
-            height: Style.textSize
+            height: 2 * Math.round(Style.textSize * 0.5)
             width: height
             radius: width
             color: control.down ? Style.selectedPalette.accent : "transparent"
@@ -41,7 +41,7 @@ AbstractButton {
 
             Rectangle {
                 anchors.centerIn: parent
-                width: parent.width * 0.5
+                width: controlImage.width - 8
                 height: width
                 radius: width
                 color: Style.selectedPalette.text
