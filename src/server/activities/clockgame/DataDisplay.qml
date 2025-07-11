@@ -9,5 +9,6 @@
  */
 
 ClockGame {
-    jsonData: jsonData_
+    jsonData: parent.jsonData_
+    resultSuccess: parent.resultSuccess_
 }

@@ -9,31 +9,51 @@
  */
 pragma ComponentBehavior: Bound
 import QtQuick
-
 import "../../components"
+import "../../singletons"
 
 Item {
     id: lineItem
     required property var jsonData
-    property int labelWidth: 130        // used by InformationLine
+    required property bool resultSuccess
     height: details.height
 
     function formatTime(list) {
         return ('00'+list[0]).slice(-2) + ":" + ('00'+list[1]).slice(-2) + ":" + ('00'+list[2]).slice(-2)
     }
 
+    // Used to get longest text for aligned label columns.
+    TextMetrics {
+        id: expectedLabelSize
+        font.pixelSize: Style.textSize
+        font.bold: true
+        text: qsTr("Expected:")
+    }
+    TextMetrics {
+        id: answerLabelSize
+        font.pixelSize: Style.textSize
+        font.bold: true
+        text: qsTr("Answer:")
+    }
+
     Column {
         id: details
         InformationLine {
-            labelWidth: lineItem.labelWidth
-            label: qsTr("Expected")
+            id: expectedLine
+            width: lineItem.width
+            labelWidth: Math.max(expectedLabelSize.advanceWidth, answerLabelSize.advanceWidth) + 1
+            label: expectedLabelSize.text
             info: formatTime(lineItem.jsonData.expected)
         }
         InformationLine {
-            labelWidth: lineItem.labelWidth
-            label: qsTr("Proposal")
+            id: answerLine
+            width: lineItem.width
+            labelWidth: expectedLine.labelWidth
+            label: answerLabelSize.text
             info: formatTime(lineItem.jsonData.proposal)
-            textColor: (result_success) ? "green" : "red"
+            infoText.color: Style.selectedPalette.highlightedText
+            showResult: true
+            resultSuccess: lineItem.resultSuccess
         }
     }
 }
