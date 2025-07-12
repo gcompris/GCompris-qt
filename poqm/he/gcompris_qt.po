@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-07-04 17:29+0300\n"
+"PO-Revision-Date: 2025-07-11 10:23+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 25.04.2\n"
+"X-Generator: Lokalize 25.04.3\n"
 "X-Qt-Contexts: true\n"
 "X-Poedit-Bookmarks: -1,2919,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
@@ -5237,12 +5237,9 @@ msgstr "לגלות ערבוב צבעים פשוט."
 
 #. Help goal
 #: activities/color_mix_light/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mix primary colors to match the given color."
 msgctxt "ActivityInfo|"
 msgid "Learn to mix primary light colors to match a given color."
-msgstr "לערבב את צבעי היסוד ולהתאם אותם לצבע נתון."
+msgstr "לימוד ערבוב צבעי אור עיקריים כדי לספק צבע מסוים."
 
 #. Help manual
 #: activities/color_mix_light/ActivityInfo.qml:23
@@ -16463,18 +16460,13 @@ msgstr ""
 "לאשר את התשובה."
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:24
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr ""
-"אם התשובה נכונה, להקליד את התוצאה המתאימה וללחוץ על כפתור ה OK כדי לאמת את "
-"התשובה."
+"אם התשובה נכונה, יש להקליד את התוצאה המתאימה וללחוץ על כפתור ה־OK כדי לתקף "
+"את התשובה שלך."
 
 #: activities/learn_decimals_additions/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -16505,18 +16497,11 @@ msgstr "ללמוד חיסור עם מספרים עשרוניים."
 
 #. Help goal
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn subtractions with decimal numbers by counting how many squares need "
-#| "to be subtracted to represent the result."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn subtraction with decimal numbers by manipulating their visual "
 "representation."
-msgstr ""
-"ללמוד חיסור עם מספרים עשרוניים באמצעות ספירה של כמות הריבועים הנדרשת כדי "
-"לייצג את התוצאה."
+msgstr "לימוד חיסור עם מספרים עשרוניים על ידי שינוי הייצוג החזותי שלהם."
 
 #. Help manual
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:22
@@ -16533,34 +16518,23 @@ msgstr ""
 "ללחוץ על הריבועים כדי להפחית את המספר השני ולייצג את תוצאת התרגיל."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A subtraction with two decimal numbers is displayed. Below it, the first "
-#| "number from the subtraction is represented with bars. One bar represents "
-#| "a full unit, and each square in it represents one tenth of this unit."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "A subtraction with two decimal numbers is displayed. Below it, the first "
 "number from the subtraction is represented with bars. One bar represents a "
 "full unit, and each square in it represents one tenth of this unit."
 msgstr ""
-"מוצג תרגיל חיסור של שני מספרים עשרוניים. מתחתיו, המספר הראשון מהחיסור מופיע "
-"בעמודות. עמודה אחת מייצגת יחידה שלמה וכל ריבוע בה מייצג עשירית של היחידה."
+"מופיע חיסור עם שתי ספרות עשרוניות. מתחתיהן, המספר הראשון מהחיסור מיוצג "
+"בעמודות. כל עמודה מייצגת יחידה שלמה וכל ריבוע בתוכה מייצג עשירית יחידה."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Click on the squares to subtract them and display the result of the "
-#| "operation, and click on the OK button to validate your answer."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
 "operation, and click on the OK button to validate your answer."
 msgstr ""
-"ללחוץ על הריבועים כדי להפחית אותם ולהציג את התוצאה של הפעולה וללחוץ על כפתור "
-"הOK כדי לאשר את התשובה."
+"יש ללחוץ על הריבועים כדי לחסר אותם ולהציג את התוצאה של הפעולה וללחוץ על "
+"כפתור ה־OK כדי לתקף את התשובה שלך."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:24
 msgctxt "Learn_decimals_subtractions|"
@@ -16621,12 +16595,9 @@ msgstr "ללמוד ספרות"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on a pair corresponding to the given relation."
 msgctxt "ActivityInfo|"
 msgid "Represent the number corresponding to the given digit."
-msgstr "ללחוץ על זוג המתאים ליחסים הנתונים."
+msgstr "לייצר את המספר המתאים לספרה שצוינה."
 
 #. Help goal
 #: activities/learn_digits/ActivityInfo.qml:20
@@ -16736,13 +16707,6 @@ msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr "נדרשת כמות. החץ מאפשר לבחור עד 10 תפוזים."
 
 #: activities/learn_quantities/Learn_quantities.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a number of oranges, and drag the selected "
-#| "oranges to the empty area. Repeat these steps until the number of oranges "
-#| "corresponds to the requested quantity. Then click on the OK button to "
-#| "validate your answer."
 msgctxt "Learn_quantities|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "
@@ -16750,9 +16714,9 @@ msgid ""
 "corresponds to the requested quantity. Then click on the OK button to "
 "validate your answer."
 msgstr ""
-"לגרור את החץ כדי לבחור מספר תפוזים ולגרור את התפוזים הנבחרים לאזור הריק. "
-"לחזור על הצעדים האלו עד שמספר התפוזים מתאים לכמות הנדרשת. אז להקיש על אישור "
-"כדי לוודא את התשובה."
+"יש לגרור את החץ כדי לבחור את מספר התפוזים ולגרור את התפוזים הנבחרים לאזור "
+"הריק. יש לחזור על הצעדים עד שמספר התפוזים יהיה תואם לכמות המבוקשת. לאחר מכן "
+"יש ללחוץ על כפתור OK כדי לתקף את התשובה שלך."
 
 #: activities/learn_quantities/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -19091,18 +19055,11 @@ msgid "All lowercase"
 msgstr "הכול באותיות קטנות"
 
 #: activities/menu/Menu.qml:89
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid ""
-#| "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
-#| "you want to download the corresponding sound files now?"
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, do you want to download the corresponding sound "
 "files now?"
-msgstr ""
-"נבחר מקום חדש. צריך לאתחל את GCompris כדי להשתמש בו.<br/> להוריד את קובצי "
-"הקול המתאימים עכשיו?"
+msgstr "בחרת הגדרות מקומיות חדשות, להוריד את קובצי השמע המתאימים כעת?"
 
 #: activities/menu/Menu.qml:90
 msgctxt "Menu|"
@@ -19575,13 +19532,6 @@ msgstr "אותיות לטיניות וספרות"
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "You are either asked to send a message in Morse code or convert the "
-#| "received Morse code message to letters or digits. To learn the Morse "
-#| "code, you can have a look at the translation map which contains the code "
-#| "for all the letters and digits."
 msgctxt "ActivityInfo|"
 msgid ""
 "You are either asked to send a message in Morse code or convert the received "
@@ -19589,9 +19539,9 @@ msgid ""
 "on the Morse key icon to have a look at the translation map which contains "
 "the code for all the letters and digits."
 msgstr ""
-"עליך לשלוח הודעה בקוד מורס או לקבל הודעת מורס ולתרגם אותה לאותיות או לספרות."
-"כדי ללמוד את קוד מורס אפשר להסתכל במפת התרגום, שמכילה את הקודים של כל "
-"האותיות והספרות."
+"יש לשלוח הודעה בקוד מורס או לקבל הודעת מורס ולתרגם אותה לאותיות או לספרות."
+"כדי ללמוד את קוד מורס אפשר ללחוץ על סמל מפתח מורס כדי להסתכל במפת התרגום, "
+"שמכילה את הקודים של כל האותיות והספרות."
 
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
@@ -25781,6 +25731,10 @@ msgid ""
 "something in a square, it might not be correct for the whole Sudoku. It can "
 "still be a mistake."
 msgstr ""
+"יש לבחור מספר או סימן וללחוץ על מקום היעד שלו. כל סימן חיב להופיע רק פעם אחת "
+"בכל שורה, עמודה ותת־אזור אם יש כזה. אם הפעולה אסור, המשחק יסביר למה. אך חשוב "
+"להיזהר: אם אפשר להציב משהו בריבוע, יכול להיות שהוא לא יהיה נכון לכל הסודוקו. "
+"זאת עדיין יכולה להיות טעות."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -26389,7 +26343,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to solve vertical subtractions, with the borrowing by regrouping "
 "method."
-msgstr ""
+msgstr "לימוד פתרון חיסור במאונך עם שיטת ההלוואה על ידי קיבוץ מחדש."
 
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:22
