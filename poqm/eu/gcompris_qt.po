@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2018-11-30 13:03+0000\n"
-"PO-Revision-Date: 2025-05-02 22:17+0200\n"
+"PO-Revision-Date: 2025-07-13 15:25+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.04.0\n"
+"X-Generator: Lokalize 25.04.3\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -2931,7 +2931,7 @@ msgid ""
 "2⁷=128."
 msgstr ""
 "Bit bakoitzak balio progresibo bat gehitzen du, 2ren berretzaileei "
-"dagokiona, eskuinetik ezkerretara gorakorra: 1. bit → 2⁰=  1 , 2. bit → 2¹=  "
+"dagokiona, eskuinetik ezkerretara goranzkoa: 1. bit → 2⁰=  1 , 2. bit → 2¹=  "
 "2 , 3. bit → 2²=  4 , 4. bit → 2³=  8 , 5. bit → 2⁴= 16 , 6. bit → 2⁵= 32 , "
 "7. bit → 2⁶= 64 , 8. bit → 2⁷=128."
 
@@ -20645,7 +20645,7 @@ msgstr ""
 #: activities/ordering_alphabets/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Ascending order, 5 defined letters."
-msgstr "Ordena gorakorra, 5 letra definituta."
+msgstr "Goranzko hurrenkera, 5 letra definituta."
 
 #. Add 5 letters in ascending lexicographical order, separated by | character. The objective is to give children these letters in random order and ask them to sort in ascending lexicographical order.
 #: activities/ordering_alphabets/resource/1/Data.qml:22
@@ -20662,7 +20662,7 @@ msgstr "c|f|g|l|m"
 #: activities/ordering_alphabets/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Descending order, 5 defined letters."
-msgstr "Ordena beherakorra, 5 letra definituta."
+msgstr "Beheranzko hurrenkera, 5 letra definituta."
 
 #. Add 5 letters in ascending lexicographical order, separated by | character. The objective is to give children these letters in random order and ask them to sort in descending lexicographical order.
 #: activities/ordering_alphabets/resource/2/Data.qml:22
@@ -20679,7 +20679,7 @@ msgstr "a|b|d|f|g"
 #: activities/ordering_alphabets/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Ascending order, 5 random letters."
-msgstr "Ordena gorakorra, ausazko 5 letra."
+msgstr "Goranzko hurrenkera, ausazko 5 letra."
 
 #. Translate the below string to the set of alphabets in ascending order in your language. The objective is to give children some random letters from this string, and ask them to order them in ascending order.
 #. ----------
@@ -20695,17 +20695,17 @@ msgstr "a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z"
 #: activities/ordering_alphabets/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Descending order, 5 random letters."
-msgstr "Ordena beherakorra, ausazko 5 letra."
+msgstr "Beheranzko hurrenkera, ausazko 5 letra."
 
 #: activities/ordering_alphabets/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Ascending order, 8 random letters."
-msgstr "Ordena gorakorra, ausazko 8 letra."
+msgstr "Goranzko hurrenkera, ausazko 8 letra."
 
 #: activities/ordering_alphabets/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Descending order, 8 random letters."
-msgstr "Ordena beherakorra, ausazko 8 letra."
+msgstr "Beheranzko hurrenkera, ausazko 8 letra."
 
 #. Activity title
 #: activities/ordering_chronology/ActivityInfo.qml:21
@@ -20762,7 +20762,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Arrange the given numbers in ascending or descending order as requested."
 msgstr ""
-"Antolatu emandako zenbakiak hurrenkera gorakorrean edo beherakorrean, "
+"Antolatu emandako zenbakiak goranzko edo beheranzko hurrenkera, "
 "eskatutakoaren arabera."
 
 #. Help goal
@@ -20790,12 +20790,12 @@ msgstr ""
 #: activities/ordering_numbers/ordering.js:66
 msgctxt "ordering|"
 msgid "Drag and drop the items in ascending order."
-msgstr "Arrastatu eta jaregin elementuak hurrenkera gorakorrean."
+msgstr "Arrastatu eta jaregin elementuak goranzko hurrenkeran."
 
 #: activities/ordering_numbers/ordering.js:67
 msgctxt "ordering|"
 msgid "Drag and drop the items in descending order."
-msgstr "Arrastatu eta jaregin elementuak hurrenkera beherakorrean."
+msgstr "Arrastatu eta jaregin elementuak beheranzko hurrenkeran."
 
 #: activities/ordering_numbers/ordering.js:68
 msgctxt "ordering|"
@@ -20822,42 +20822,42 @@ msgstr ""
 #: activities/ordering_numbers/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Ascending order, 5 defined numbers between 1 and 5."
-msgstr "Ordena gorakorra, 1 eta 5 artean definitutako 5 zenbaki."
+msgstr "Goranzko hurrenkera, 1 eta 5 artean definitutako 5 zenbaki."
 
 #: activities/ordering_numbers/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Descending order, 5 defined numbers between 1 and 5."
-msgstr "Ordena beherakorra, 1 eta 5 artean definitutako 5 zenbaki."
+msgstr "Beheranzko hurrenkera, 1 eta 5 artean definitutako 5 zenbaki."
 
 #: activities/ordering_numbers/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Ascending order, 5 random numbers between 2 and 10."
-msgstr "Ordena gorakorra, 2 eta 10 arteko ausazko 5 zenbaki."
+msgstr "Goranzko hurrenkera, 2 eta 10 arteko ausazko 5 zenbaki."
 
 #: activities/ordering_numbers/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Descending order, 5 random numbers between 2 and 10."
-msgstr "Ordena beherakorra, 2 eta 10 arteko ausazko 5 zenbaki."
+msgstr "Beheranzko hurrenkera, 2 eta 10 arteko ausazko 5 zenbaki."
 
 #: activities/ordering_numbers/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Ascending order, 5 random numbers between 8 and 20."
-msgstr "Ordena gorakorra, 8 eta 20 arteko ausazko 5 zenbaki."
+msgstr "Goranzko hurrenkera, 8 eta 20 arteko ausazko 5 zenbaki."
 
 #: activities/ordering_numbers/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Descending order, 5 random numbers between 8 and 20."
-msgstr "Ordena beherakorra, 8 eta 20 arteko ausazko 5 zenbaki."
+msgstr "Beheranzko hurrenkera, 8 eta 20 arteko ausazko 5 zenbaki."
 
 #: activities/ordering_numbers/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "Ascending order, 8 random numbers between 2 and 30."
-msgstr "Ordena gorakorra, 2 eta 30 arteko ausazko 8 zenbaki."
+msgstr "Goranzko hurrenkera, 2 eta 30 arteko ausazko 8 zenbaki."
 
 #: activities/ordering_numbers/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "Descending order, 8 random numbers between 2 and 30."
-msgstr "Ordena beherakorra, 2 eta 30 arteko ausazko 8 zenbaki."
+msgstr "Beheranzko hurrenkera, 2 eta 30 arteko ausazko 8 zenbaki."
 
 #. Activity title
 #: activities/ordering_sentences/ActivityInfo.qml:20

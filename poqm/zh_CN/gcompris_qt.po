@@ -7926,7 +7926,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr ""
+msgstr "日月双塔"
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -7941,12 +7941,17 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
+"位于中国桂林的日月双塔是象征城市文化与精神传承的标志性双塔建筑。最初建于唐"
+"代，后于 20 世纪重建，矗立于杉湖之畔，成为极具辨识度的城市地标。其中，日塔高 "
+"41 米，采用铜塔结构，是世界上最高的铜塔；月塔则高 35 米，以琉璃瓦砌筑而成。两"
+"塔通过一条水下玻璃隧道相连，寓意阴阳和谐共生。夜幕降临时，双塔华灯璀璨，既展"
+"现传统中式建筑之美，又融合现代工程巧思，成为游客必访的热门景点。"
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr ""
+msgstr "碉楼"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -7961,11 +7966,17 @@ msgid ""
 "UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
 "towers remain, offering insight into this unique architectural heritage."
 msgstr ""
+"位于中国广东省开平市的碉楼建筑群 ，是 19 世纪末至 20 世纪初为抵御盗匪侵袭与洪"
+"涝灾害而兴建的多层防御性碉楼。这些融合罗曼式、巴洛克式等西方建筑风格与传统中"
+"式元素的独特建筑，采用钢筋混凝土结构建造，既彰显了海外华侨的财富与影响力，也"
+"象征着近代中国乡村社会文化与经济的转型期。2007 年，开平碉楼被联合国教科文组织"
+"列入《世界遗产名录》，现存约 1800 座 (原有 3000 座) ，其沧桑风貌成为研究这段"
+"独特建筑遗产的活化石。"
 
 #: activities/explore_monuments/resource/board/board7.qml:85
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr ""
+msgstr "中国的名胜古迹"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
 msgctxt "board7|"
@@ -7976,7 +7987,7 @@ msgstr "点击给定名胜古迹的位置。"
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "万神庙"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -7993,12 +8004,19 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
+"位于意大利罗马的万神殿是古罗马建筑的巅峰之作，约公元 126 年由哈德良皇帝主持建"
+"造于原马库斯·阿格里帕所建神庙旧址之上。这座殿堂以建筑奇观闻名，其巨大的穹顶中"
+"央设有圆形天窗，象征苍穹，将自然光线引入室内，赋予空间神圣韵律。最初供奉罗马"
+"诸神，公元 609 年被改建为基督教教堂，更名为圣母与殉道者教堂。其无钢筋加固混凝"
+"土穹顶，至今仍是全球最大同类型穹顶，展现了古罗马卓越的工程智慧与对称美学，持"
+"续启发后世建筑师。万神殿和谐的比例与深厚的历史价值，使其成为古典建筑的永恒杰"
+"作。"
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "米兰大教堂"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8013,12 +8031,17 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
+"米兰大教堂是意大利米兰市中心的一座标志性哥特式杰作。历经近六个世纪的建造，它"
+"已成为全球规模最大的教堂之一，亦是米兰艺术与文化遗产的象征。其精美装饰的立面"
+"布满无数雕像、尖塔和石像鬼，展现了哥特式建筑的恢宏气势。游客可参观内部令人惊"
+"叹的彩绘玻璃窗与精雕细刻的大理石细节，或登上屋顶平台，饱览城市全景与阿尔卑斯"
+"山脉的壮丽景色。这座大教堂堪称意大利深厚历史与建筑辉煌的永恒见证。"
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr ""
+msgstr "圣母百花大教堂"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8034,12 +8057,18 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
+"佛罗伦萨圣母百花大教堂 (正式名称为 Cattedrale di Santa Maria del Fiore) 是意"
+"大利佛罗伦萨的标志性建筑，融合哥特式与文艺复兴风格精髓。其主体工程于 1436 年"
+"完工，以菲利波·布鲁内莱斯基设计的巨大红瓦穹顶闻名，这一穹顶至今仍是建筑史上的"
+"工程奇迹，亦是佛罗伦萨的城市象征。教堂 19 世纪增建的精美大理石立面，与富丽堂"
+"皇的内部装饰及艺术珍宝相得益彰。与乔托钟楼及圣约翰洗礼堂共同列入联合国教科文"
+"组织世界遗产名录，每年吸引数百万游客前来探访其深厚的历史文化与建筑成就。"
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr ""
+msgstr "比萨斜塔"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8054,12 +8083,17 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
+"比萨斜塔位于意大利比萨市，是全球知名的建筑奇观。作为当地大教堂的独立式钟楼，"
+"其因地基土壤不稳定导致的意外倾斜而闻名。该塔始建于 1173 年，建造历时近两个世"
+"纪，期间采取了措施试图稳定其倾斜角度。塔身高约 56 米 (183英尺) ，采用罗马式设"
+"计，共设八层，包含钟室，外墙装饰有精雕细刻的柱子与拱门。作为联合国教科文组织"
+"世界遗产名录的一部分，比萨斜塔至今仍是坚韧与智慧的象征。"
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr ""
+msgstr "圣马可大教堂"
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -8075,12 +8109,18 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
+"圣马可大教堂位于意大利威尼斯，是拜占庭式建筑的标志性杰作，亦为这座城市最著名"
+"的地标之一。该教堂最初建于公元 828 年，用于供奉福音传教士圣马可的圣物，并于 "
+"11 世纪以现存形制重建。其奢华设计融合东西方文化元素，五座圆顶、复杂的马赛克镶"
+"嵌工艺以及装饰华丽的正门立面 (镶嵌雕像与雕刻) 均体现这一特点。教堂内部以金色"
+"马赛克与大理石地面为主，彰显威尼斯共和国的财富与权力。毗邻圣马可广场，圣马可"
+"大教堂至今仍是威尼斯历史、文化与宗教遗产的象征。"
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr ""
+msgstr "庞贝"
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -8096,11 +8136,17 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
+"庞贝是古罗马城市，位于现代意大利那不勒斯附近，因公元 79 年维苏威火山喷发被火"
+"山灰掩埋而得以完整保存。此次火山喷发释放出火山灰、浮石与火山碎屑流的致命组"
+"合，瞬间吞噬整座城市及其居民，使建筑物、文物甚至人类遗骸以惊人的细节留存至"
+"今。庞贝遗址的发掘为古罗马日常生活、建筑与社会形态提供了宝贵洞见，揭示了这座"
+"拥有完善规划街道、民居、公共浴场与神庙的城市面貌。该遗址现已被列入联合国教科"
+"文组织世界遗产名录，成为人类历史上最重要的考古发现之一。"
 
 #: activities/explore_monuments/resource/board/board8.qml:85
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr ""
+msgstr "意大利的名胜古迹"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
 msgctxt "board8|"
@@ -8111,7 +8157,7 @@ msgstr "点击给定名胜古迹的位置。"
 #: activities/explore_monuments/resource/board/board9.qml:20
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr ""
+msgstr "姬路城"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -8124,12 +8170,16 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
+"姬路城是现存最完整的 17 世纪初日本城堡建筑典范，由83座建筑组成，其高度发达的"
+"防御系统与精巧的防护装置可追溯至幕府时期初期。这座纯木质结构的建筑杰作完美融"
+"合了功能性与美学价值：白色灰泥夯土墙统一了整体优雅的外观，建筑群与多层屋顶间"
+"的精妙布局更彰显设计巧思。"
 
 #: activities/explore_monuments/resource/board/board9.qml:28
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr ""
+msgstr "广岛和平纪念公园"
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -8145,12 +8195,18 @@ msgid ""
 "a solemn space for reflection, honoring the lives lost and advocating for "
 "global peace."
 msgstr ""
+"广岛和平纪念公园是和平的象征，也是对战争毁灭性后果的深刻警示。这座公园位于日"
+"本广岛市，旨在悼念 1945 年 8 月 6 日原子弹爆炸中的遇难者。公园内建有多座纪念"
+"碑，包括标志性的原子弹圆顶屋——这栋曾作为政府大楼的建筑，如今被列为联合国教科"
+"文组织世界遗产地。公园中还设有广岛和平纪念资料馆，向参观者系统阐述原子弹爆炸"
+"的历史事件，传递和平、非暴力理念，并呼吁推进全球核裁军进程。作为庄严肃穆的纪"
+"念空间，这里不仅缅怀逝者，更致力于倡导世界和平。"
 
 #: activities/explore_monuments/resource/board/board9.qml:39
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr ""
+msgstr "荒仓富士浅间神社"
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -8166,12 +8222,18 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
+"该神社创建于公元 705 年，旨在供奉当地的守护神。807 年富士山发生大规模喷发后，"
+"天皇曾派遣使者前来此地举行祈福仪式，以期平息火山灾害。据传在战国时期，著名武"
+"将武田信玄之父武田信虎与北条家交战时，曾在此扎营并祈求胜利，最终取得战役胜"
+"利，遂将随身佩剑献予神社。如今，本地居民与远方来客常来此参拜，以求驱邪避灾、"
+"家庭和睦、平安分娩。每至春季，神社周边樱花盛开，人群聚集于此，欣赏富士山与花"
+"海交相辉映的绝景。"
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr ""
+msgstr "冲绳首里城"
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -8187,11 +8249,17 @@ msgid ""
 "much of the castle was lost in a fire in 2019, but efforts to restore it are "
 "ongoing, reflecting its enduring importance to Okinawa's heritage."
 msgstr ""
+"位于日本冲绳县那霸市的首里城是联合国教科文组织世界遗产地，也是琉球王国丰富历"
+"史文化的重要象征。这座城堡最初建于 14 世纪，数百年来一直是琉球王国的政治、经"
+"济和文化中心。首里城以其独特的中国与日本建筑风格融合而闻名，拥有朱红色漆木结"
+"构、精美的装饰雕刻，并坐落于俯瞰全城的山丘高处。虽在二战期间被毁，但经过精心"
+"重建后成为重要旅游景点。令人痛心的是，2019 年的一场大火烧毁了城堡的大部分建"
+"筑，但修复工程仍在持续推进，彰显其对冲绳文化遗产的永恒意义。"
 
 #: activities/explore_monuments/resource/board/board9.qml:63
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr ""
+msgstr "日本的名胜古迹"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
 msgctxt "board9|"
@@ -14580,7 +14648,7 @@ msgstr ""
 #: activities/guess24/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "All operators required."
-msgstr ""
+msgstr "必须输入所有操作符。"
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -16644,7 +16712,7 @@ msgstr ""
 #: activities/magic-hat-minus/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr ""
+msgstr "魔术师的帽子 (减法) "
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -16734,7 +16802,7 @@ msgstr "%1x"
 #: activities/magic-hat-plus/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr ""
+msgstr "魔术师的帽子 (加法) "
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -24647,7 +24715,7 @@ msgctxt "Submarine|"
 msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
 "submarine."
-msgstr ""
+msgstr "控制面板最右侧的装置控制潜艇的水平舵。"
 
 #: activities/submarine/Submarine.qml:171
 msgctxt "Submarine|"
