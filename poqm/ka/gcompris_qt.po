@@ -18022,7 +18022,7 @@ msgstr "ფონტის ზომა"
 #: activities/menu/ConfigurationItem.qml:430
 msgctxt "ConfigurationItem|"
 msgid "Default"
-msgstr "ნაგულისხმები"
+msgstr "ნაგულისხმევი"
 
 #: activities/menu/ConfigurationItem.qml:406
 msgctxt "ConfigurationItem|"
