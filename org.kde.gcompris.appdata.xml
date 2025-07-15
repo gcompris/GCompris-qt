@@ -269,6 +269,7 @@
       <li xml:lang="tr">bilgisayarı keşfetme: klavye, fare, farklı fare hareketleri, vb.</li>
       <li xml:lang="uk">Знайомство з комп’ютером: клавіатура, миша, керування мишею…</li>
       <li xml:lang="x-test">xxcomputer discovery: keyboard, mouse, different mouse gestures, etc.xx</li>
+      <li xml:lang="zh-CN">计算机启蒙：键盘、鼠标、鼠标手势等。</li>
       <li>arithmetic: table memory, enumeration, mirror image, balance
     the scale, change giving, etc.</li>
       <li xml:lang="ar">الحساب: جدول الضرب والعدّ وصورة المرآة وموازنة كفّتا الميزان وإعطاء الباقي وغيرها.</li>
@@ -288,6 +289,7 @@
       <li xml:lang="tr">aritmetik: tablo belleği, numaralandırma, ayna görüntüsü, ölçeği dengelemek, para üstü, vb.</li>
       <li xml:lang="uk">Арифметика: запам’ятовування таблиць, нумерація, віддзеркалення, балансування масштабу, обчислення решти…</li>
       <li xml:lang="x-test">xxarithmetic: table memory, enumeration, mirror image, balance the scale, change giving, etc.xx</li>
+      <li xml:lang="zh-CN">数学基础：乘法表记忆、识数、图形镜像、天平配平、找零等。</li>
       <li>science: the canal lock, color mixing, gravity concept, etc.</li>
       <li xml:lang="ar">العلوم: قفل القناة ومزج الألوان ومفهوم الجاذبيّة وغيرها.</li>
       <li xml:lang="bg">наука: принципи на управление на шлюз, смесване на цветовете, гравитация и др.</li>
@@ -306,6 +308,7 @@
       <li xml:lang="tr">bilim: kanal kilidi, renk karışımı, yerçekimi kavramı, vb.</li>
       <li xml:lang="uk">Наука: шлюзування, змішування кольорів, поняття тяжіння…</li>
       <li xml:lang="x-test">xxscience: the canal lock, color mixing, gravity concept, etc.xx</li>
+      <li xml:lang="zh-CN">科学基础：船闸、颜色混合、重力概念等。</li>
       <li>games: memory, connect 4, tic tac toe, sudoku, hanoi tower, etc.</li>
       <li xml:lang="ar">الألعاب: الذاكرة و«وصّل 4» و"إكس-أُو" و«سودوكو»، وبرج هانوي وغيرها.</li>
       <li xml:lang="bg">игри: памет, свържете 4, морски шах, судоку, кулата на Ханой и др.</li>
@@ -324,6 +327,7 @@
       <li xml:lang="tr">oyunlar: bellek, dörtleme, üç taş, sudoku, hanoi kulesi, vb.</li>
       <li xml:lang="uk">Ігри: запам’ятовування, чотири-у-рядок, хрестики-нулики, судоку, ханойські вежі…</li>
       <li xml:lang="x-test">xxgames: memory, connect 4, tic tac toe, sudoku, hanoi tower, etc.xx</li>
+      <li xml:lang="zh-CN">智力游戏：速记、四子棋、井子棋、数独、汉诺塔等。</li>
       <li>reading: reading practice, etc.</li>
       <li xml:lang="ar">القراءة: ممارسة القراءة وغيرها.</li>
       <li xml:lang="bg">четене: упражнения за четене и др.</li>
@@ -342,6 +346,7 @@
       <li xml:lang="tr">okuma: okuma egzersizi, vb.</li>
       <li xml:lang="uk">Читання: вправи із читання…</li>
       <li xml:lang="x-test">xxreading: reading practice, etc.xx</li>
+      <li xml:lang="zh-CN">阅读训练：阅读练习等。</li>
       <li>other: learn to tell time, the braille system, maze, music
     instruments, etc.</li>
       <li xml:lang="ar">أخرى: تعلّم قراءة الوقت ونظام «بريل» وألغاز متاهات والآلات الموسيقيّة وغيرها.</li>
@@ -361,6 +366,7 @@
       <li xml:lang="tr">diğer: saati söylemeyi öğrenme, braille sistemi, labirent, müzik, çalgılar, vb.</li>
       <li xml:lang="uk">Інше: навчання позначенням часу, система Брайля, лабіринти, музичні інструменти…</li>
       <li xml:lang="x-test">xxother: learn to tell time, the braille system, maze, music instruments, etc.xx</li>
+      <li xml:lang="zh-CN">其他活动：时间识别、盲文、迷宫、乐器等。</li>
     </ul>
     <p>Currently GCompris offers in excess of 100 activities and more
     are being developed. GCompris is free software, that means that
