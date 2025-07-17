@@ -279,6 +279,7 @@ Item {
                                 return file.exists(url) ? url : `${Master.activityBaseUrl}/DataDisplay.qml`
                             }
                             property var jsonData_: (typeof lineRect.result_data !== 'undefined') ? JSON.parse(lineRect.result_data) : ({})
+                            property bool resultSuccess_: lineRect.result_success
                         }
                     }
                 }

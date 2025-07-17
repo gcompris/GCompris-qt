@@ -16,9 +16,9 @@ import "../../singletons"
 Item {
     id: lineItem
     required property var jsonData
+    required property bool resultSuccess
     property var correctAnswer: []
     property var regex: /\((.*)\)/
-    property bool resultSuccess: true
     height: details.height
 
     Column {
@@ -81,7 +81,6 @@ Item {
                             isResult = true;
                             if(Number(result[1]) != lineItem.correctAnswer[index]) {
                                 underline.visible = true;
-                                lineItem.resultSuccess = false;
                             }
                         } else {
                             text = modelData;
