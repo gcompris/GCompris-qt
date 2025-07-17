@@ -147,6 +147,12 @@ Item {
                 model: resultModel
                 delegate:  Rectangle {
                     id: lineRect
+                    required property int user_id
+                    required property int activity_id
+                    required property bool result_success
+                    required property var result_data
+                    required property int result_duration
+                    required property string result_datetime
                     property string activity_line_name: Master.findObjectInModel(Master.activityModel, function(item) { return item.activity_id === activity_id }).activity_name
                     height: Math.max(dataDisplay.height, infos.height)
                     width: lines.width
@@ -166,7 +172,7 @@ Item {
                             width: infos.width + Style.margins * 2 + radius
                             height: parent.height
                             radius: Style.defaultRadius - Style.defaultBorderWidth
-                            color: result_success ? "#1600FF00" : "#16FF0000"
+                            color: lineRect.result_success ? "#1600FF00" : "#16FF0000"
 
                             Rectangle {
                                 id: radiusMask
@@ -193,7 +199,7 @@ Item {
                                         width: Math.min(implicitWidth, infos.maxWidth)
                                         font.bold: true
                                         anchors.verticalCenter: parent.verticalCenter
-                                        text: Master.findObjectInModel(Master.userModel, function(item) { return item.user_id === user_id }).user_name
+                                        text: Master.findObjectInModel(Master.userModel, function(item) { return item.user_id === lineRect.user_id }).user_name
                                     }
                                 }
 
@@ -220,11 +226,11 @@ Item {
                                         id: levelLabel
                                         width: Math.min(implicitWidth, infos.maxWidth)
                                         anchors.verticalCenter: parent.verticalCenter
-                                        text: qsTr("Level: <b>%1</b>").arg(JSON.parse(result_data).level)
+                                        text: qsTr("Level: <b>%1</b>").arg(JSON.parse(lineRect.result_data).level)
                                     }
 
                                     ResultIndicator {
-                                        resultSuccess: model.result_success
+                                        resultSuccess: lineRect.result_success
                                     }
                                 }
 
@@ -236,7 +242,7 @@ Item {
                                         width: Math.min(implicitWidth, infos.maxWidth)
                                         anchors.verticalCenter: parent.verticalCenter
                                         //: Result duration in seconds. Example: "Duration: 25s"
-                                        text: qsTr("Duration: %1s").arg(result_duration)
+                                        text: qsTr("Duration: %1s").arg(lineRect.result_duration)
                                     }
 
                                     // Used to provide max width space for resultDurationLabel
@@ -257,7 +263,7 @@ Item {
                                         id: resultDateTimeLabel
                                         width: Math.min(implicitWidth, infos.maxWidth)
                                         anchors.verticalCenter: parent.verticalCenter
-                                        text: result_datetime.slice(-8)
+                                        text: lineRect.result_datetime.slice(-8)
                                     }
                                 }
                             }
@@ -272,7 +278,7 @@ Item {
                                 var url = `${Master.activityBaseUrl}/${lineRect.activity_line_name}/DataDisplay.qml`
                                 return file.exists(url) ? url : `${Master.activityBaseUrl}/DataDisplay.qml`
                             }
-                            property var jsonData_: (typeof result_data !== 'undefined') ? JSON.parse(result_data) : ({})
+                            property var jsonData_: (typeof lineRect.result_data !== 'undefined') ? JSON.parse(lineRect.result_data) : ({})
                         }
                     }
                 }
