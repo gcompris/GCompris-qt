@@ -9,5 +9,5 @@
  */
 
 GrammarDisplay {
-    jsonData: jsonData_
+    jsonData: parent.jsonData_
 }
