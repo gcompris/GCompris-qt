@@ -595,9 +595,9 @@ namespace controllers {
             }
         }
         if (activityId == -1) { // add new activity
-            activityId = addActivity(activityName);
+            activityId = addActivity(name);
         }
-        //    qWarning() << "Activity:" << activityName << rawData;
+        //    qWarning() << "Activity:" << name << rawData;
         // add new result to database
         query.prepare("INSERT INTO result_ (user_id, activity_id, result_data, result_success, result_duration) values(:user,:activity, :data, :success, :duration)");
         query.bindValue(":user", userId);
