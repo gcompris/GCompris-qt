@@ -74,6 +74,8 @@ namespace controllers {
 
     Q_SIGNALS:
         void dbError(QStringList message);
+        // signal connected in Master.qml to reload activity ListModel
+        void activityAdded();
 
     private:
         void triggerDBError(QSqlError sqlError, const QString &);
