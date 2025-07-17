@@ -596,6 +596,7 @@ namespace controllers {
         }
         if (activityId == -1) { // add new activity
             activityId = addActivity(name);
+            activityAdded();
         }
         //    qWarning() << "Activity:" << name << rawData;
         // add new result to database
