@@ -30,6 +30,15 @@ Item {
 
     signal netLog(string message)
 
+    // Reload activityModel after adding an activity in database from database-controller
+    Connections {
+        target: databaseController
+        function onActivityAdded() {
+            loadAllActivities(activityModel);
+            loadAllActivities(allActivitiesModel);
+        }
+    }
+
     File { id: file }
 
     ListModel { id: groupModel }
