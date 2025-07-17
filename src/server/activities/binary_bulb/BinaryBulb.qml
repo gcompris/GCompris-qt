@@ -17,6 +17,7 @@ import "../../singletons"
 Item {
     id: lineItem
     required property var jsonData
+    required property bool resultSuccess
     height: details.height
 
     // Used to get longest text for aligned label columns.
@@ -54,7 +55,7 @@ Item {
             info: qsTr("%1 (%2)").arg(lineItem.jsonData.result).arg((lineItem.jsonData.result >>> 0).toString(2))
             infoText.color: Style.selectedPalette.highlightedText
             showResult: true
-            resultSuccess: Number(lineItem.jsonData.expected) === Number(lineItem.jsonData.result)
+            resultSuccess: lineItem.resultSuccess
         }
     }
 }

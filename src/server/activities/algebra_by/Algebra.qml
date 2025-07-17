@@ -25,5 +25,4 @@ InformationLine {
     infoText.font.bold: true
     infoText.color: Style.selectedPalette.highlightedText
     showResult: true
-    resultSuccess: (Number(lineItem.proposal) === Number(lineItem.jsonData.result))
 }

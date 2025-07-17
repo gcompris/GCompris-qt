@@ -15,6 +15,7 @@ import "../../singletons"
 Item {
     id: lineItem
     required property var jsonData
+    required property bool resultSuccess
     height: details.height
 
     function formatTime(list) {
@@ -52,7 +53,7 @@ Item {
             info: formatTime(lineItem.jsonData.proposal)
             infoText.color: Style.selectedPalette.highlightedText
             showResult: true
-            resultSuccess: result_success
+            resultSuccess: lineItem.resultSuccess
         }
     }
 }
