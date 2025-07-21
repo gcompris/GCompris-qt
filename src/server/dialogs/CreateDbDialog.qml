@@ -4,11 +4,11 @@
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
-import QtQuick.Layouts
 import QtQuick.Controls.Basic
 import core 1.0
 import "../components"
@@ -16,10 +16,10 @@ import "../singletons"
 
 Popup {
     id: createDbDialog
-    property var message: [ qsTr("You are about to create a new GCompris database") ]
+    property var message: [ qsTr("You are about to create a new GCompris database.") ]
     anchors.centerIn: Overlay.overlay
-    width: 550
-    height: 330
+    width: 600
+    height: layoutColumn.height + Style.hugeMargins
     modal: true
     closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
 
@@ -46,86 +46,78 @@ Popup {
 
     background: Rectangle {
         color: Style.selectedPalette.base
-        radius: 5
-        border.color: "black"
-        border.width: 4
+        radius: Style.defaultRadius
+        border.color: Style.selectedPalette.accent
+        border.width: Style.defaultBorderWidth
     }
 
-    ColumnLayout {
-        anchors.fill: parent
+    Column {
+        id: layoutColumn
         anchors.centerIn: parent
+        width: parent.width - Style.hugeMargins
+        height: childrenRect.height
+        spacing: Style.margins
 
-        Text {
-            Layout.fillWidth: true
-            Layout.preferredHeight: 40
-            horizontalAlignment: Text.AlignHCenter
+        DefaultLabel {
+            width: parent.width
+            height: Style.mediumTextSize
+            wrapMode: Text.WordWrap
             text: qsTr("New database creation")
-            font {
-                bold: true
-                pixelSize: 20
-            }
-            color: Style.selectedPalette.text
+            font.bold: true
+        }
+
+        Item {
+            height: Style.margins
+            width: parent.width
         }
 
         Repeater {
             model: createDbDialog.message
-            Text {
-                Layout.fillWidth: true
-                height: 40
-                horizontalAlignment: Text.AlignHCenter
+
+            DefaultLabel {
+                width: layoutColumn.width
+                verticalAlignment: Text.AlignVCenter
+                wrapMode: Text.WordWrap
                 text: createDbDialog.message[index]
-                color: Style.selectedPalette.text
             }
         }
 
-        Text {
+        Item {
+            height: Style.margins
+            width: parent.width
+        }
+
+        DefaultLabel {
             id: loginLabel
-            Layout.preferredHeight: 20
-            Layout.fillWidth: true
-            horizontalAlignment: Text.AlignHCenter
+            width: parent.width
             text: qsTr("Teacher login")
             font.bold: true
-            font {
-                pixelSize: 15
-            }
-            color: Style.selectedPalette.text
         }
 
         UnderlinedTextInput {
             id: login
-            Layout.preferredHeight: Style.lineHeight
-            Layout.fillWidth: true
-            Layout.leftMargin: 100
-            Layout.rightMargin: 100
+            height: Style.lineHeight
+            width: parent.width
             activeFocusOnTab: true
             focus: true
             defaultText: serverSettings.lastLogin
-            onTextChanged: {
-//                serverSettings.lastLogin = text
-                createDbDialog.message.text = ""
-            }
+//             onTextChanged: {
+// //                serverSettings.lastLogin = text
+//                 createDbDialog.message.text = ""
+//             }
         }
 
-        Text {
+        DefaultLabel {
             id: passwordLabel
-            Layout.preferredHeight: 20
-            Layout.fillWidth: true
-            // anchors.horizontalCenter: parent.center
-            horizontalAlignment: Text.AlignHCenter
+            width: parent.width
             text: qsTr("Password")
             font.bold: true
-            font {
-                pixelSize: 15
-            }
-            color: Style.selectedPalette.text
         }
 
         UnderlinedTextInput {
             id: password
-            Layout.preferredHeight: Style.lineHeight
-            Layout.fillWidth: true
-            Layout.leftMargin: 100
-            Layout.rightMargin: 100
+            height: Style.lineHeight
+            width: parent.width
             activeFocusOnTab: true
             echoMode: TextInput.Password
             defaultText: serverSettings.lastLogin
@@ -133,14 +125,14 @@ Popup {
 
         StyledCheckBox {
             id: crypted
-            Layout.fillWidth: true
-            Layout.leftMargin: 100
-            Layout.rightMargin: 100
-            text: qsTr("Encrypted database (default will be yes)")
+            width: parent.width
+            text: qsTr("Encrypted database (enabled by default)")
             checked: true
         }
 
         OkCancelButtons {
+            id: okCancelButtons
+            buttonsWidth:(parent.width - Style.margins) * 0.5
             onCancelled: createDbDialog.close()
             onValidated: createDatabaseFile()
         }
