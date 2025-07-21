@@ -18,8 +18,8 @@ Popup {
     id: errorDialog
     property var message: []
     anchors.centerIn: Overlay.overlay
-    width: 550
-    height: 500
+    width: 600
+    height: layoutColumn.height + Style.hugeMargins
     modal: true
     closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
     // popupType: Popup.Item // TODO: uncomment when min Qt version >= 6.8
@@ -27,47 +27,52 @@ Popup {
     background: Rectangle {
         color: Style.selectedPalette.base
         radius: Style.defaultRadius
-        border.color: Style.selectedPalette.text
+        border.color: Style.selectedPalette.accent
         border.width: Style.defaultBorderWidth
     }
 
-    DefaultLabel {
-        id: errorTitle
-        width: parent.width
-        height: Style.mediumTextSize
-        text: qsTr("Information")
-        font.bold: true
-    }
+    Column {
+        id: layoutColumn
+        anchors.centerIn: parent
+        width: parent.width - Style.hugeMargins
+        height: childrenRect.height
+        spacing: Style.margins
 
-    Item {
-        id: errorMessageArea
-        width: parent.width
-        anchors {
-            top: errorTitle.bottom
-            bottom: bottomButtons.top
-            margins: Style.margins
+        DefaultLabel {
+            id: errorTitle
+            width: parent.width
+            height: Style.mediumTextSize
+            wrapMode: Text.WordWrap
+            text: qsTr("Information")
+            font.bold: true
         }
-        Column {
-            width: childrenRect.width
-            height: childrenRect.height
+
+        Item {
+            height: Style.margins
+            width: parent.width
+        }
+
+        Repeater {
             anchors.centerIn: parent
-            spacing: Style.margins
-            Repeater {
-                anchors.centerIn: parent
-                model: errorDialog.message
-                DefaultLabel {
-                    width: errorMessageArea.width
-                    text: errorDialog.message[index]
-                }
+            model: errorDialog.message
+            DefaultLabel {
+                height: implicitHeight
+                font.pixelSize: Style.textSize
+                width: layoutColumn.width
+                text: errorDialog.message[index]
             }
         }
-    }
 
-    OkCancelButtons {
-        id: bottomButtons
-        anchors.bottom: parent.bottom
-        anchors.horizontalCenter: parent.horizontalCenter
-        cancelButton.visible: false
-        onValidated: errorDialog.close()
+        Item {
+            height: Style.margins
+            width: parent.width
+        }
+
+        OkCancelButtons {
+            id: bottomButtons
+            anchors.horizontalCenter: parent.horizontalCenter
+            cancelButton.visible: false
+            onValidated: errorDialog.close()
+        }
     }
 }
