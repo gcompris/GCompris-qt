@@ -21,16 +21,20 @@ Row {
     property alias cancelButton: cancelButton
     property alias okButton: okButton
 
+    property int buttonsWidth: cancelButton.defaultWidth
+
     signal cancelled()
     signal validated()
 
     ViewButton {
         id: cancelButton
+        width: okCancelButtons.buttonsWidth
         text: okCancelButtons.cancelText
         onClicked: okCancelButtons.cancelled()
     }
     ViewButton {
         id: okButton
+        width: okCancelButtons.buttonsWidth
         text: okCancelButtons.okText
         onClicked: okCancelButtons.validated()
     }
