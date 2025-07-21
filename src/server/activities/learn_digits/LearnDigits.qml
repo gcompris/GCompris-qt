@@ -1,36 +1,31 @@
 /* GCompris - LearnDigits.qml for learn_digits, learn_additions, learn_subtractions
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2024 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 pragma ComponentBehavior: Bound
 import QtQuick
-
 import "../../components"
+import "../../singletons"
 
-Item {
-    id: lineView
+InformationLine {
+    id: lineItem
     required property var jsonData
-    property int labelWidth: 130        // used by InformationLine
-    height: details.height
+    property bool isOperation: false
 
-    Column {
-        id: details
-        InformationLine {
-            labelWidth: lineView.labelWidth
-            label: qsTr("Question")
-            info: lineView.jsonData.question
-        }
-        InformationLine {
-            labelWidth: lineView.labelWidth
-            label: qsTr("Proposal")
-            info: lineView.jsonData.answer
-            textColor: (lineView.jsonData.question === lineView.jsonData.answer) ? "green" : "red"
-            infoText.font.bold: true
-        }
-    }
+    label: isOperation ?
+        //: %1 is an operation, %2 the result. Example: "2 x 5 = 10"
+        qsTr("%1 = %2").arg(lineItem.jsonData.questionText).arg(lineItem.jsonData.question) :
+        lineItem.jsonData.questionText
+    //: %1 is the answer. Example: "Answer: 10"
+    info: qsTr("Answer: %1").arg(lineItem.jsonData.answer)
+    infoText.font.bold: true
+    infoText.color: Style.selectedPalette.highlightedText
+    showResult: true
 }
