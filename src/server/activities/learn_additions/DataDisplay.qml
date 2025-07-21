@@ -11,5 +11,7 @@
 import "../learn_digits"
 
 LearnDigits {
-    jsonData: jsonData_
+    jsonData: parent.jsonData_
+    resultSuccess: parent.resultSuccess_
+    isOperation: true
 }
