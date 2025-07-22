@@ -4,11 +4,13 @@
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
 import QtCharts
+import "../../components"
 import "../../singletons"
 import "../../activities"
 
@@ -16,6 +18,8 @@ Item {
     id: pupilsChart
     anchors.margins: 2
     property string activityName: ""
+    // initially hidden to avoid glitch visual while it's initialized.
+    visible: false
 
     function executeRequest() {
         if (!databaseController.isDatabaseLoaded())
@@ -84,54 +88,59 @@ Item {
         mySeries.axisY.max = (Math.floor(max / 10) + 1) * 10
     }
 
-    Rectangle {
+    Component {
+        id: lineReport
+        LineReport {}
+    }
+
+    ChartView {
         anchors.fill: parent
-        color: Style.selectedPalette.base
+        title: "User activities chart"
+        legend.alignment: Qt.AlignBottom
+        antialiasing: true
+        backgroundRoundness: 0
+        theme: Style.isDarkTheme ? ChartView.ChartThemeDark : ChartView.ChartThemeLight
 
-        Component {
-            id: lineReport
-            LineReport {}
-        }
+        StackedBarSeries {
+            id: mySeries
+            axisX: BarCategoryAxis {
+                labelsAngle: -90
+            }
 
-        ChartView {
-            anchors.fill: parent
-            title: "User activities chart"
-            legend.alignment: Qt.AlignBottom
-            antialiasing: true
-
-            StackedBarSeries {
-                id: mySeries
-                axisX: BarCategoryAxis {
-                    labelsAngle: -90
-                }
-
-                onClicked: (index, barset) => {
+            onClicked: (index, barset) => {
 //                    console.warn("Click:", index, barset.label)
-                    pupilsChart.parent.push(lineReport
-                                    , { userId: Number(barset.label)
-                                        , activityId: -1
-                                        , activityName: ""
-                                        , dayFilter: mySeries.axisX.categories[index]
-                                    })
-                    pupilsChart.parent.currentItem.executeRequest()
-                }
+                pupilsChart.parent.push(lineReport
+                                , { userId: Number(barset.label)
+                                    , activityId: -1
+                                    , activityName: ""
+                                    , dayFilter: mySeries.axisX.categories[index]
+                                })
+                pupilsChart.parent.currentItem.executeRequest()
+            }
 
-                onHovered: (status, index, barset) => {
-                    var user = Master.findObjectInModel(selector.pupilPane.foldModel
-                                                        , function(item) { return item.user_id === Number(barset.label) })
-                    helpText.text = status ? mySeries.axisX.categories[index] + "   " + user.user_name : ""
-                }
+            onHovered: (status, index, barset) => {
+                var user = Master.findObjectInModel(selector.pupilPane.foldModel
+                                                    , function(item) { return item.user_id === Number(barset.label) })
+                helpText.text = status ? mySeries.axisX.categories[index] + "   " + user.user_name : ""
             }
-            Text {
-                id: helpText
-                x: 10
-                y: 10
-                color: Style.selectedPalette.text
-            }
+        }
+        DefaultLabel {
+            id: helpText
+            x: Style.margins
+            y: Style.margins
+        }
+        // workaround for a glitchy white pixel on top-left corner (visible mostly on dark theme)
+        Rectangle {
+            x: 0
+            y: 0
+            width: 2
+            height: 2
+            color: Style.selectedPalette.base
         }
     }
 
     Component.onCompleted: {
-        executeRequest()
+        visible = true;
+        executeRequest();
     }
 }
