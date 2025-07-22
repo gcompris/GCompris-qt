@@ -22,72 +22,63 @@ Item {
 
     File { id: file }
 
-    Rectangle {
-        id: leftArea
-        color: Style.selectedPalette.alternateBase
+    Item {
+        id: tabButtonsArea
         anchors {
             top: parent.top
-            bottom: parent.bottom
             left: parent.left
+            right: parent.right
         }
-        width: buttonBar.width + 2 * Style.margins
+        height: Style.lineHeight + Style.bigMargins
 
 
         Image {
             id: logo
-            anchors.top: parent.top
-            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.left: parent.left
+            anchors.leftMargin: Style.margins
+            anchors.verticalCenter: parent.verticalCenter
+            height: Style.lineHeight
+            width: Style.lineHeight
+            mipmap: true
             source: 'qrc:/gcompris/src/server/resource/gcompris-icon.png'
         }
 
         TabBar {
             id: buttonBar
-            anchors.top: logo.bottom
-            anchors.left: parent.left
+            anchors.top: parent.top
+            anchors.bottom: parent.bottom
+            anchors.left: logo.right
+            anchors.right: parent.right
             anchors.margins: Style.margins
-            width: Math.max(128, logo.width)
             background: Item {}
             spacing: Style.margins
             currentIndex: 0
-            implicitWidth: width
-
-            contentItem: ListView {
-                model: buttonBar.contentModel
-                currentIndex: buttonBar.currentIndex
-                width: childrenRect.width
-                height: childrenRect.height
-                spacing: buttonBar.spacing
-                orientation: ListView.Vertical
-                boundsBehavior: Flickable.StopAtBounds
-                flickableDirection: Flickable.AutoFlickIfNeeded
-                snapMode: ListView.SnapToItem
-            }
 
             StyledTabButton {
-                width: buttonBar.width
                 text: qsTr("Settings")
-                onClicked: swipe.currentIndex = 0
+                onClicked: buttonBar.currentIndex = 0;
             }
             StyledTabButton {
-                width: buttonBar.width
                 text: qsTr("Help")
-                onClicked: swipe.currentIndex = 1
+                onClicked: buttonBar.currentIndex = 1;
             }
 
         }
     }
 
-    SwipeView {
-        id: swipe
-        anchors.top: parent.top
-        anchors.left: leftArea.right
-        anchors.bottom: parent.bottom
-        anchors.right: parent.right
-        clip: true
+    TabContainer {
+        anchors {
+            top: tabButtonsArea.bottom
+            right: parent.right
+            bottom: parent.bottom
+            left: parent.left
+        }
         currentIndex: buttonBar.currentIndex
 
-        StyledSplitView { // First item in SwipeView
+        StyledSplitView { // settings page
             id: splitSettings
+            anchors.fill: parent
+            visible: false
 
             Flickable {
                 id: scrollInfos
@@ -95,7 +86,7 @@ Item {
                 SplitView.fillHeight: true
 
                 contentWidth: mainColumn.width
-                contentHeight: mainColumn.height
+                contentHeight: mainColumn.height + Style.hugeMargins
                 boundsBehavior: Flickable.StopAtBounds
                 clip: true
 
@@ -121,6 +112,12 @@ Item {
                     }
                 }
 
+                Rectangle {
+                    width: mainColumn.labelWidth + Style.margins
+                    height: scrollInfos.contentHeight
+                    color: Style.selectedPalette.alternateBase
+                }
+
                 Column {
                     id: mainColumn
                     x: Style.margins
@@ -133,10 +130,42 @@ Item {
                                                       mainColumn.idealWidth * 0.35)
                     property int infoWidth: mainColumn.idealWidth - labelWidth - Style.margins
 
-                    Item {
-                        // This item makes sure that the view can be scrolled horizontally to view full name of database file
-                        width: databaseInfoline.width + 2 * Style.margins
-                        height: Style.hugeMargins
+                    RadioButtonLine {
+                        title.width: mainColumn.labelWidth + Style.margins
+                        label: qsTr("Menu panel")
+                        radios: [qsTr("Left"), qsTr("Right")]
+                        current: serverSettings.navigationPanelRight ? 1 : 0
+                        onRadioCheckChanged: {
+                            navigationBar.isCollapsed = false
+                            serverSettings.navigationPanelRight = (current === 1) ? true : false
+                            navigationBar.isCollapsed = true
+                        }
+                    }
+
+                    RadioButtonLine {
+                        title.width: mainColumn.labelWidth + Style.margins
+                        label: qsTr("Font size")
+                        radios: [12, 14, 16, 18, 20]
+                        current: radios.indexOf(Style.textSize)
+                        onRadioCheckChanged: (index) => {
+                            serverSettings.textSize = radios[index];
+                        }
+                    }
+
+                    RadioButtonLine {
+                        title.width: mainColumn.labelWidth + Style.margins
+                        label: qsTr("Theme")
+                        radios: [qsTr("Dark"), qsTr("Light")]
+                        current: serverSettings.darkTheme ? 0 : 1
+                        onRadioCheckChanged: {
+                            serverSettings.darkTheme = (current === 1) ? false : true
+                        }
+                    }
+
+                    Rectangle {
+                        width: mainColumn.idealWidth
+                        height: Style.defaultBorderWidth
+                        color: Style.selectedPalette.accent
                     }
 
                     Row {
@@ -157,7 +186,7 @@ Item {
                             activeFocusOnTab: true
                             focus: true
                             defaultText: serverSettings.serverID
-                            onTextChanged: serverSettings.serverID = serverID.text
+                                onTextChanged: serverSettings.serverID = serverID.text
                         }
                     }
 
@@ -179,19 +208,21 @@ Item {
                             activeFocusOnTab: true
                             focus: true
                             defaultText: serverSettings.port
-                            onTextChanged: serverSettings.port = portField.text
+                                onTextChanged: serverSettings.port = portField.text
                         }
                     }
 
                     InformationLine {
+                        width: parent.width
                         labelWidth: mainColumn.labelWidth
-                        infoWidth: mainColumn.infoWidth
                         label: qsTr("Server is")
                         info: serverRunning ? qsTr("Running") : qsTr("Already running on port %1").arg(serverSettings.port)
-                        textColor: serverRunning ? "green" : "red"
+                        showResult: true
+                        resultSuccess: serverRunning
                     }
 
                     InformationLine {
+
                         labelWidth: mainColumn.labelWidth
                         infoWidth: mainColumn.infoWidth
                         label: qsTr("Host name")
@@ -246,6 +277,7 @@ Item {
 
                     InformationLine {
                         id: databaseInfoline
+                        width: parent.width
                         labelWidth: mainColumn.labelWidth
                         // Don't restrict width to always allow viewing full name by scrolling horizontally
                         label: qsTr("Database file")
@@ -256,9 +288,7 @@ Item {
                         labelWidth: mainColumn.labelWidth
                         infoWidth: mainColumn.infoWidth
                         label: qsTr("Crypted database")
-                        info: (databaseController) ?
-                            (databaseController.isCrypted() ? qsTr("Yes") : qsTr("No"))
-                            : ""
+                        info: (databaseController && !databaseController.isCrypted()) ? qsTr("Yes") : qsTr("No")
                     }
                     InformationLine {
                         labelWidth: mainColumn.labelWidth
@@ -299,56 +329,13 @@ Item {
                         label: qsTr("Activities data received")
                         info: (networkController) ? networkController.dataCount : 0
                     }
-
-                    Rectangle {
-                        width: mainColumn.idealWidth
-                        height: Style.defaultBorderWidth
-                        color: Style.selectedPalette.accent
-                    }
-
-                    RadioButtonLine {
-                        title.width: mainColumn.labelWidth + Style.margins
-                        label: qsTr("Menu panel")
-                        radios: [qsTr("Left"), qsTr("Right")]
-                        current: serverSettings.navigationPanelRight ? 1 : 0
-                        onRadioCheckChanged: {
-                            navigationBar.isCollapsed = false
-                            serverSettings.navigationPanelRight = (current === 1) ? true : false
-                            navigationBar.isCollapsed = true
-                        }
-                    }
-
-                    RadioButtonLine {
-                        title.width: mainColumn.labelWidth + Style.margins
-                        label: qsTr("Font size")
-                        radios: [12, 14, 16, 18, 20]
-                        current: radios.indexOf(Style.textSize)
-                        onRadioCheckChanged: (index) => {
-                            serverSettings.textSize = radios[index];
-                        }
-                    }
-
-                    RadioButtonLine {
-                        title.width: mainColumn.labelWidth + Style.margins
-                        label: qsTr("Theme")
-                        radios: [qsTr("Dark"), qsTr("Light")]
-                        current: serverSettings.darkTheme ? 0 : 1
-                        onRadioCheckChanged: {
-                            serverSettings.darkTheme = (current === 1) ? false : true
-                        }
-                    }
-
-                    Item {
-                        width: 1
-                        height: Style.hugeMargins
-                    }
                 }
             }
 
             Item {
                 id: activitiesListArea
                 SplitView.preferredWidth: Math.min(splitSettings.width * 0.3,
-                    activitiesColumn.width)
+                                                   activitiesColumn.width)
                 SplitView.minimumWidth: splitSettings.width * 0.1
                 SplitView.maximumWidth: activitiesColumn.width
                 SplitView.fillHeight: true
@@ -380,7 +367,7 @@ Item {
                     }
 
                     contentWidth: activitiesColumn.width
-                    contentHeight: activitiesColumn.height
+                    contentHeight: activitiesColumn.height + Style.hugeMargins
                     boundsBehavior: Flickable.StopAtBounds
                     clip: true
 
@@ -423,47 +410,51 @@ Item {
                                 x: Style.margins
                                 horizontalAlignment: Text.AlignLeft
                                 text: ((modelData !== undefined) &&
-                                    (Master.allActivities[modelData] !== undefined)) ?
-                                            Master.allActivities[modelData].title : ""
+                                (Master.allActivities[modelData] !== undefined)) ?
+                                Master.allActivities[modelData].title : ""
                             }
-                        }
-
-                        Item {
-                            width: 1
-                            height: Style.hugeMargins
                         }
                     }
                 }
             }
-            Item {
-                // just to make a visual border between SwipeView pages
-                SplitView.maximumWidth: 0
-                width: 1
-                height: parent.height
-            }
         }
 
-        Item { // Help page
+        Flickable { // Help page
+            id: helpScroll
+            anchors.fill: parent
+            contentWidth: width
+            contentHeight: helpText.height + Style.hugeMargins
+            boundsBehavior: Flickable.StopAtBounds
+            clip: true
+            visible: false
 
-            ScrollView {  // Second item in SwipeView
-                anchors.fill: parent
-                Text {
-                    id: helpText
-                    anchors.fill: parent
-                    anchors.margins: 10
-                    anchors.centerIn: parent
-                    text: "Help page"
-                    textFormat: Text.RichText
-                    color: Style.selectedPalette.text
+            ScrollBar.vertical: ScrollBar {
+                policy: ScrollBar.AsNeeded
+                bottomPadding: 10
+                contentItem: Rectangle {
+                    implicitWidth: 6
+                    radius: width
+                    opacity: activitiesScroll.contentHeight > activitiesScroll.height ? 1 : 0
+                    color: parent.pressed ? Style.selectedPalette.highlight : Style.selectedPalette.button
                 }
+            }
+
+            Text {
+                id: helpText
+                width: parent.width - Style.bigMargins
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.top: parent.top
+                anchors.topMargin: Style.margins
+                wrapMode: Text.WordWrap
+                text: "Help page"
+                textFormat: Text.RichText
+                color: Style.selectedPalette.text
             }
         }
     }
 
     Component.onCompleted: {
         hostInformations = networkController.getHostInformations()
-        splitSettings.restoreState(serverSettings.value("splitSettings"))
         helpText.text = file.read("qrc:/gcompris/src/server/help/help-fr.html")
     }
-    Component.onDestruction: serverSettings.setValue("splitSettings", splitSettings.saveState())
 }
