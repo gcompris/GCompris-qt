@@ -5,6 +5,7 @@
  * Authors:
  *   Johnny Jazeix <jazeix@gmail.com>
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -328,11 +329,6 @@ namespace controllers {
         return locked;
     }
 
-    bool DatabaseController::isCrypted()
-    {
-        return dbEncrypted;
-    }
-
     //------------
     void DatabaseController::loadDatabase(const QString &databaseFile)
     {
@@ -358,6 +354,7 @@ namespace controllers {
             return false;
         }
         dbEncrypted = crypted;
+        cryptedChanged();
         qWarning() << "Encrypted database:" << dbEncrypted;
         setKey(password);
         return true;
@@ -385,6 +382,7 @@ namespace controllers {
             checkDBVersion(query.record().value("teacher_dbversion").toInt());
             QVariant dbCryptVariant = query.record().value("teacher_dbcrypted");
             dbEncrypted = (dbCryptVariant.isValid()) ? (dbCryptVariant.toInt() != 0) : false;
+            cryptedChanged();
             qWarning() << "Encrypted database:" << dbEncrypted;
             return true;
         }
