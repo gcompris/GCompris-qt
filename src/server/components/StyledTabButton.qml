@@ -14,21 +14,30 @@ import "../singletons"
 
 TabButton {
     id: control
+
+    property bool fixedWidth: false
+    width: fixedWidth ? 100 : implicitWidth // 100 is a default value, set the target width if you set fixedWidth true
+    height: Style.lineHeight
+    padding: Style.margins
+
     contentItem: Row {
+        id: contentRow
+        anchors.centerIn: parent
+        height: Style.textSize
         spacing: control.spacing
         layoutDirection: Qt.LeftToRight
 
         Image {
             id: buttonIcon
-            height: parent.height
-            width: height
+            height: Style.textSize
+            width: Style.textSize
             source: control.icon.source
             visible: source != ""
         }
 
         DefaultLabel {
             id: buttonText
-            width: control.width - buttonIcon.width
+            width: control.fixedWidth ? (control.width - buttonIcon.width - contentRow.spacing) : implicitWidth
             fontSizeMode: Text.FixedSize
             font.pixelSize: Style.textSize
             text: control.text
