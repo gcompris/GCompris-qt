@@ -287,8 +287,8 @@ Item {
                     InformationLine {
                         labelWidth: mainColumn.labelWidth
                         infoWidth: mainColumn.infoWidth
-                        label: qsTr("Crypted database")
-                        info: (databaseController && !databaseController.isCrypted()) ? qsTr("Yes") : qsTr("No")
+                        label: qsTr("Encrypted database")
+                        info: (databaseController && databaseController.isCrypted) ? qsTr("Yes") : qsTr("No")
                     }
                     InformationLine {
                         labelWidth: mainColumn.labelWidth
