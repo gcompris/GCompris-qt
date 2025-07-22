@@ -5,6 +5,7 @@
  * Authors:
  *   Johnny Jazeix <jazeix@gmail.com>
  *   Bruno Anselme <be.root@free.fr> - 2023
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  *
@@ -31,7 +32,7 @@ namespace controllers {
         explicit DatabaseController(QObject *parent = nullptr);
         ~DatabaseController();
 
-        Q_INVOKABLE bool isCrypted();
+        Q_PROPERTY(bool isCrypted MEMBER dbEncrypted NOTIFY cryptedChanged);
         Q_INVOKABLE bool isDatabaseLoaded();
         Q_INVOKABLE bool createTeacher(const QString &login, const QString &password, const bool crypted);
         Q_INVOKABLE bool checkTeacher(const QString &login, const QString &password);
@@ -76,6 +77,7 @@ namespace controllers {
         void dbError(QStringList message);
         // signal connected in Master.qml to reload activity ListModel
         void activityAdded();
+        void cryptedChanged();
 
     private:
         void triggerDBError(QSqlError sqlError, const QString &);
