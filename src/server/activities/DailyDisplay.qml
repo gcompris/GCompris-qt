@@ -8,13 +8,10 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
-import QtQuick.Layouts
 import QtQuick.Controls.Basic
 import "../singletons"
 
 DefaultJsonDisplay {
     id: jsonDisplay
     jsonString: (index >= 0) ? JSON.stringify(resultModel.get(index)) : "{}"
-    Layout.fillWidth: true
-    Layout.alignment: Qt.AlignTop
 }
