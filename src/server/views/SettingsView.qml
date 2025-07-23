@@ -18,6 +18,9 @@ import "../components"
 
 Item {
     id: settingsView
+    width: parent.width
+    height: parent.height
+
     property var hostInformations: ({})
 
     File { id: file }

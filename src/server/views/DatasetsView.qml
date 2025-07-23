@@ -21,6 +21,8 @@ import "../panels"
 
 Item {
     id: datasetsView
+    width: parent.width
+    height: parent.height
     enabled: serverRunning
 
     property int selectedActivity: -1

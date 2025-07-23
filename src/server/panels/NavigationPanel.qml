@@ -20,38 +20,14 @@ Item {
     property int lastIndex: 0
     property alias pupilsView: pupilsView
     property alias deviceView: deviceView
-    property alias datasView: datasView
-    property alias activityDetails: activityDetails
-    property alias chartsView: chartsView
+    property alias activitiesView: activitiesView
     property alias datasetsView: datasetsView
+    property alias chartsView: chartsView
     property alias settingsView: settingsView
+    property alias devView: devView
     property alias loginButton: loginButton
 
-    anchors {
-        top: parent.top
-        bottom: parent.bottom
-    }
-    states: [
-        State {
-            name: "left"
-            when: !serverSettings.navigationPanelRight
-            AnchorChanges {
-                target: navigationPanel
-                anchors.left: navigationPanel.parent.left
-                anchors.right: undefined
-            }
-        },
-        State {
-            name: "right"
-            when: serverSettings.navigationPanelRight
-            AnchorChanges {
-                target: navigationPanel
-                anchors.left: undefined
-                anchors.right: navigationPanel.parent.right
-            }
-        }
-    ]
-
+    height: parent.height
     width: enabled ? buttons.width : 0
     clip: true
 
@@ -64,7 +40,11 @@ Item {
     }
 
     function startNavigation(button) {
-        button.navigationButtonClicked()
+        if(!enabled) {
+            return;
+        } else {
+            button.navigationButtonClicked();
+        }
     }
 
     Rectangle {
@@ -108,7 +88,7 @@ Item {
                 onNavigationButtonClicked: navigationPanel.changeTo(2)
             }
             NavigationButton {
-                id: activityDetails
+                id: activitiesView
                 iconCharacter: "\uf03a"
                 description: qsTr("Activities")
                 isCollapsed: navigationPanel.isCollapsed
@@ -140,14 +120,13 @@ Item {
                 onNavigationButtonClicked: navigationPanel.changeTo(6)
             }
             NavigationButton {
-                id: datasView
+                id: devView
                 iconCharacter: "\uf188"
                 description: qsTr("Development (WIP)")
                 isCollapsed: navigationPanel.isCollapsed
                 panelWidth: navigationPanel.width
                 onNavigationButtonClicked: navigationPanel.changeTo(7)
             }
-
         }
     }
 }

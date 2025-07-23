@@ -21,6 +21,8 @@ import "../panels"
 
 Item {
     id: dashboardView
+    width: parent.width
+    height: parent.height
 
     function connectTeacher() {
         serverSettings.lastLogin = login.text
@@ -34,11 +36,11 @@ Item {
                 topBanner.visible = true
 //                navigationBar.startNavigation(navigationBar.pupilsView)
 //                navigationBar.startNavigation(navigationBar.deviceView)
-//                navigationBar.startNavigation(navigationBar.datasView)
+                navigationBar.startNavigation(navigationBar.activitiesView)
+//                navigationBar.startNavigation(navigationBar.datasetsView)
 //                navigationBar.startNavigation(navigationBar.chartsView)
-               navigationBar.startNavigation(navigationBar.activityDetails)
 //                navigationBar.startNavigation(navigationBar.settingsView)
-                // navigationBar.startNavigation(navigationBar.datasetsView)
+                // navigationBar.startNavigation(navigationBar.devView)
                 Master.initialize()
             } else {
                 message.text = qsTr("Incorrect password")
