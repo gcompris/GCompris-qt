@@ -28,6 +28,52 @@ Item {
     property bool trace: false
     property int groupFilterId: -1     // contains selected group id
 
+    readonly property var columnsLabel: ({
+        "user_id": qsTr("User ID"),
+        "user_name": qsTr("Name"),
+        "users_name": qsTr("Names"),
+        "user_password": qsTr("Password"),
+        "users_id": qsTr("Users IDs"),
+        "activity_id": qsTr("Activity Id"),
+        "activity_name": qsTr("Activity"),
+        "group_name": qsTr("Group"),
+        "group_description": qsTr("Description"),
+        "groups_name": qsTr("Groups"),
+        "groups_id": qsTr("Groups IDs"),
+        "result_datetime": qsTr("Date"),
+        "result_success": qsTr("Success"),
+        "result_duration": qsTr("Duration"),
+        "result_data": qsTr("Data"),
+        "result_day": qsTr("Date"),
+        "count_activity": qsTr("Count"),
+        "count_success": qsTr("Success"),
+        "count_failed": qsTr("Failed"),
+        "success_ratio": qsTr("Success ratio")
+    })
+
+    readonly property var columnsSize: ({
+        "user_id": 80,
+        "user_name": 150,
+        "users_name": 500,
+        "users_id": 300,
+        "user_password": 200,
+        "activity_id": 80,
+        "activity_name": 250,
+        "group_name": 130,
+        "group_description": 200,
+        "groups_name": 250,
+        "groups_id": 150,
+        "result_datetime": 150,
+        "result_success": 80,
+        "result_duration": 80,
+        "result_data": 800,
+        "result_day": 160,
+        "count_activity": 100,
+        "count_success": 80,
+        "count_failed": 80,
+        "success_ratio": 100
+    })
+
     signal netLog(string message)
 
     // Reload activityModel after adding an activity in database from database-controller

@@ -152,7 +152,7 @@ Column {
                 SplitView.minimumWidth: sectionsSplit.minSectionWidth
                 SplitView.preferredWidth: sectionsSplit.defaultNameWidth
                 neutralBorderWidth: 0
-                text: Definitions.columnsLabel["user_name"] +
+                text: Master.columnsLabel["user_name"] +
                     ((dailyReport.sort === "user_name") ?
                         " " + dailyReport.arrows[dailyReport.order] : "")
                 onClicked: dailyReport.sortTable("user_name")
@@ -162,7 +162,7 @@ Column {
                 SplitView.minimumWidth: sectionsSplit.minSectionWidth
                 SplitView.preferredWidth: sectionsSplit.defaultNameWidth
                 neutralBorderWidth: 0
-                text: Definitions.columnsLabel["result_day"] +
+                text: Master.columnsLabel["result_day"] +
                     ((dailyReport.sort === "result_day") ?
                         " " + dailyReport.arrows[dailyReport.order] : "")
                 onClicked: dailyReport.sortTable("result_day")
@@ -172,7 +172,7 @@ Column {
                 SplitView.minimumWidth: sectionsSplit.minSectionWidth
                 SplitView.preferredWidth: sectionsSplit.defaultNameWidth
                 neutralBorderWidth: 0
-                text: Definitions.columnsLabel["activity_name"] +
+                text: Master.columnsLabel["activity_name"] +
                     ((dailyReport.sort === "activity_name") ?
                         " " + dailyReport.arrows[dailyReport.order] : "")
                 onClicked: dailyReport.sortTable("activity_name")

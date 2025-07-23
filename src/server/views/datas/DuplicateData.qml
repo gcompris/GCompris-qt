@@ -4,11 +4,11 @@
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
-import QtQuick.Layouts
 import QtQuick.Controls.Basic
 
 import "../../singletons"
@@ -17,11 +17,13 @@ import "../../panels"
 
 Item {
     id: duplicateData
+    width: parent.width
+    height: parent.height
+
     property int groupId: Master.groupFilterId
     property var userList: []
     property var activityList: []
     property var randomDate: null
-    anchors.margins: 2
 
     function executeRequest() {
         reqView.request = ""
@@ -100,169 +102,142 @@ Item {
         executeRequest()
     }
 
-    Rectangle {
+    StyledSplitView {
+        id: horizontalSplit
         anchors.fill: parent
-        color: Style.selectedPalette.base
 
-        SplitView {
-            id: horizontalSplit
-            anchors.fill: parent
+        SelectorPanel {
+            id: selector
+            SplitView.preferredWidth: minWidth
+            SplitView.minimumWidth: minWidth
+            SplitView.fillHeight: true
 
-            handle: Rectangle {
-                implicitWidth: horizontalSplit.orientation === Qt.Horizontal ? 6 : horizontalSplit.width
-                implicitHeight: horizontalSplit.orientation === Qt.Horizontal ? horizontalSplit.height : 6
-                color: SplitHandle.pressed ? Style.selectedPalette.highlight :
-                                            Style.selectedPalette.accent
+            calendar.onCalendarChanged: duplicateData.executeRequest()
+
+            groupPane.onSelectionClicked: (modelId, checked) => {
+                duplicateData.groupId = modelId
+                duplicateData.userList = []
+                duplicateData.activityList = []
+                if (duplicateData.groupId === -1) {
+                    Master.unCheckModel(Master.groupModel, "group_checked")
+                    Master.loadAllActivities(activityPane.foldModel)
+                } else {
+                    Master.filterUsers(pupilPane.foldModel, false)
+                    Master.loadGroupActivities(activityPane.foldModel, duplicateData.groupId)
+                }
+                duplicateData.executeRequest()
             }
 
-            SelectorPanel {
-                id: selector
-                SplitView.preferredWidth: minWidth
-                SplitView.minimumWidth: minWidth
-                SplitView.maximumHeight: parent.height
-
-                calendar.onCalendarChanged: duplicateData.executeRequest()
-
-                groupPane.onSelectionClicked: (modelId, checked) => {
-                    duplicateData.groupId = modelId
-                    duplicateData.userList = []
-                    duplicateData.activityList = []
-                    if (duplicateData.groupId === -1) {
-                        Master.unCheckModel(Master.groupModel, "group_checked")
-                        Master.loadAllActivities(activityPane.foldModel)
-                    } else {
-                        Master.filterUsers(pupilPane.foldModel, false)
-                        Master.loadGroupActivities(activityPane.foldModel, duplicateData.groupId)
-                    }
-                    duplicateData.executeRequest()
+            pupilPane.onSelectionClicked: (modelId, checked) => {
+                Master.foldDownToList(pupilPane, duplicateData.userList, modelId, checked)
+                activityName = ""
+                activityPane.currentChecked = -1
+                if (userList.length === 0) {
+                    Master.loadAllActivities(activityPane.foldModel)
+                    activityList = []
+                } else {
+                    Master.loadUserActivities(activityPane.foldModel, userList, activityList, true)
                 }
-
-                pupilPane.onSelectionClicked: (modelId, checked) => {
-                    Master.foldDownToList(pupilPane, duplicateData.userList, modelId, checked)
-                    activityName = ""
-                    activityPane.currentChecked = -1
-                    if (userList.length === 0) {
-                        Master.loadAllActivities(activityPane.foldModel)
-                        activityList = []
-                    } else {
-                        Master.loadUserActivities(activityPane.foldModel, userList, activityList, true)
-                    }
-                    duplicateData.executeRequest()
-                }
-
-                activityPane.onSelectionClicked: (modelId, checked) => {
-                    Master.foldDownToList(activityPane, duplicateData.activityList, modelId, checked)
-                    duplicateData.executeRequest();
-                }
+                duplicateData.executeRequest()
             }
 
-            RequestPanel {
-                id: reqView
-                SplitView.fillWidth: true
-                request: ""
-                wantedColumns: [ "user_name", "activity_name", "result_datetime", "result_duration", "result_success"]
+            activityPane.onSelectionClicked: (modelId, checked) => {
+                Master.foldDownToList(activityPane, duplicateData.activityList, modelId, checked)
+                duplicateData.executeRequest();
             }
+        }
 
-            Rectangle {
+        RequestPanel {
+            id: reqView
+            SplitView.fillWidth: true
+            request: ""
+            wantedColumns: [ "user_name", "activity_name", "result_datetime", "result_duration", "result_success"]
+        }
+
+        Rectangle {
+            SplitView.preferredWidth: 250
+            SplitView.minimumWidth: 250
+            SplitView.maximumWidth: 300
+            SplitView.fillHeight: true
+            color: Style.selectedPalette.base
+            enabled: serverRunning
+
+            Column {
                 id: buttonsColumn
-                SplitView.preferredWidth: 250
-                SplitView.minimumWidth: 250
-                SplitView.maximumWidth: 300
-                SplitView.fillHeight: true
-                color: Style.selectedPalette.base
-                enabled: serverRunning
+                width: parent.width - Style.bigMargins
+                anchors.horizontalCenter: parent.horizontalCenter
+                spacing: Style.margins
 
-                ColumnLayout {
-                    anchors.fill: parent
-                    spacing: 5
+                DefaultLabel {
+                    width: parent.width
+                    height: Style.mediumTextSize
+                    font.bold: true
+                    text: qsTr("Commands")
+                    opacity: enabled ? 1 : 0.5
+                }
 
-                    Rectangle {
-                        Layout.fillWidth: true
-                        Layout.preferredHeight: Style.lineHeight
-                        color: Style.selectedPalette.base
-                        radius: 5
-                        Text {
-                            anchors.fill: parent
-                            horizontalAlignment: Text.AlignHCenter
-                            verticalAlignment: Text.AlignVCenter
-                            font.bold: true
-                            text: qsTr("Commands")
-                            color: enabled ? Style.selectedPalette.text: "gray"
-                        }
-                    }
+                DefaultLabel {
+                    id: dateText
+                    width: parent.width
+                    opacity: enabled ? 1 : 0.5
+                }
 
-                    Text {
-                        id: dateText
-                        Layout.fillWidth: true
-                        Layout.preferredHeight: Style.lineHeight
-                        horizontalAlignment: Text.AlignHCenter
-                        color: enabled ? Style.selectedPalette.text : "gray"
-                    }
+                ViewButton {
+                    id: newRandomDateButton
+                    width: parent.width
+                    text: qsTr("Random date")
+                    onClicked: duplicateData.newRandomDate()
+                }
 
-                    ViewButton {
-                        id: newRandomDateButton
-                        Layout.alignment: Qt.AlignHCenter
-                        Layout.bottomMargin: 5
-                        Layout.preferredWidth: 200
-                        text: qsTr("Random date")
-                        onClicked: duplicateData.newRandomDate()
-                    }
-
-                    ViewButton {
-                        id: duplicateButton
-                        Layout.alignment: Qt.AlignHCenter
-                        Layout.preferredWidth: 200
-                        text: qsTr("Duplicate")
-                        enabled: (reqView.count && (allPupilPane.currentChecked !== -1)) ? true : false
-                        opacity: enabled ? 1.0 : 0.5
-                        onClicked: {
-                            errorDialog.message = [qsTr("You are about to duplicate datas"), qsTr("No action now")]
-                            errorDialog.open()
+                ViewButton {
+                    id: duplicateButton
+                    width: parent.width
+                    text: qsTr("Duplicate")
+                    enabled: (reqView.count && (allPupilPane.currentChecked !== -1)) ? true : false
+                    opacity: enabled ? 1.0 : 0.5
+                    onClicked: {
+                        errorDialog.message = [qsTr("You are about to duplicate datas"), qsTr("No action now")]
+                        errorDialog.open()
 //                            duplication()
-                        }
                     }
+                }
 
-                    ViewButton {
-                        id: deleteButton
-                        Layout.alignment: Qt.AlignHCenter
-                        Layout.bottomMargin: 5
-                        Layout.preferredWidth: 200
-                        text: qsTr("Delete")
-                        enabled: reqView.count ? true : false
-                        opacity: reqView.count ? 1.0 : 0.5
-                        onClicked: {
-                            errorDialog.message = [qsTr("You are about to delete datas"), qsTr("No action now")]
-                            errorDialog.open()
+                ViewButton {
+                    id: deleteButton
+                    width: parent.width
+                    text: qsTr("Delete")
+                    enabled: reqView.count ? true : false
+                    opacity: reqView.count ? 1.0 : 0.5
+                    onClicked: {
+                        errorDialog.message = [qsTr("You are about to delete datas"), qsTr("No action now")]
+                        errorDialog.open()
 //                            deleteData()
-                        }
                     }
+                }
 
-                    Text {
-                        id: lastAction
-                        Layout.preferredHeight: 20
-                        Layout.preferredWidth: parent.width
-                        horizontalAlignment: Text.AlignHCenter
-                        color: Style.selectedPalette.text
-                    }
-
-                    FoldDown {
-                        id: allPupilPane
-                        Layout.fillHeight: true
-                        Layout.preferredWidth: parent.width
-                        Layout.bottomMargin: 10
-                        title: qsTr("Copy to")
-                        foldModel: Master.userModel
-                        indexKey: "user_id"
-                        nameKey: "user_name"
-                        checkKey: "user_checked"
-                        delegateName: "radio"
-                        filterVisible: false
-                        collapsable: false
-                    }
+                DefaultLabel {
+                    id: lastAction
+                    width: parent.width
                 }
             }
 
+            FoldDown {
+                id: allPupilPane
+                width: parent.width
+                anchors.top: buttonsColumn.bottom
+                anchors.topMargin: Style.margins
+                anchors.bottom: parent.bottom
+                title: qsTr("Copy to")
+                foldModel: Master.userModel
+                indexKey: "user_id"
+                nameKey: "user_name"
+                checkKey: "user_checked"
+                delegateName: "radio"
+                filterVisible: false
+                collapsable: false
+            }
         }
     }
+
     Component.onCompleted: newRandomDate()
 }
