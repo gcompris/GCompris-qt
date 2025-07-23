@@ -4,14 +4,16 @@
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
 import QtQuick.Controls.Basic
-import QtQuick.Layouts
 
-import "./datas"
+import "../components"
+import "../singletons"
+import "datas"
 
 Item {
     id: resultView
@@ -20,27 +22,46 @@ Item {
 
     property string activityName: ""
 
-    TabBar {
-        id: bar
-        anchors.top: parent.top
-        TabButton {
-            text: qsTr("Edit datas")
+    Item {
+        id: tabButtonsArea
+        anchors {
+            top: parent.top
+            left: parent.left
+            right: parent.right
         }
-        TabButton {
-            text: qsTr("All requests")
+        height: Style.lineHeight + Style.bigMargins
+
+        TabBar {
+            id: buttonBar
+            anchors.fill: parent
+            anchors.margins: Style.margins
+            background: Item {}
+            spacing: Style.margins
+            currentIndex: 0
+
+            StyledTabButton {
+                text: qsTr("Edit data")
+                onClicked: buttonBar.currentIndex = 0;
+            }
+            StyledTabButton {
+                text: qsTr("All requests")
+                onClicked: buttonBar.currentIndex = 1;
+            }
+
         }
     }
 
-    StackLayout {
-        id: contentStack
-        width: parent.width
-        anchors.top: bar.bottom
-        anchors.left: parent.left
-        anchors.right: parent.right
-        anchors.bottom: parent.bottom
-        anchors.margins: 4
-        currentIndex: bar.currentIndex
+    TabContainer {
+        anchors {
+            top: tabButtonsArea.bottom
+            left: parent.left
+            right: parent.right
+            bottom: parent.bottom
+        }
+        currentIndex: buttonBar.currentIndex
         DuplicateData {}
-        AllData {}
+        AllData {
+            visible: false
+        }
     }
 }
