@@ -11,7 +11,6 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
-import QtQuick.Layouts
 import core 1.0
 
 import "../components"
@@ -60,128 +59,120 @@ Item {
 
     CreateDbDialog { id: createDb }
 
-    Rectangle {
-        anchors.fill: parent
-        color: Style.selectedPalette.base
-
-        Item {
-            id: logoContainer
-            anchors {
-                top: parent.top
-                left: parent.left
-                right: parent.right
-            }
-            height: Math.max(parent.height * 0.33, logoImage.height + Style.hugeMargins * 2)
-            Image {
-                id: logoImage
-                source: 'qrc:/gcompris/src/server/resource/gcompris-logo-full.svg'
-                height: 180
-                sourceSize.height: height
-                anchors.centerIn: parent
-            }
+    Item {
+        id: logoContainer
+        anchors {
+            top: parent.top
+            left: parent.left
+            right: parent.right
+            bottom: loginColumn.top
+            margins: Style.bigMargins
         }
 
-        ColumnLayout {
-            id: loginColumn
-            Layout.alignment: Qt.AlignTop
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: logoContainer.bottom
+        Image {
+            id: logoImage
+            source: 'qrc:/gcompris/src/server/resource/gcompris-logo-full.svg'
+            height: Math.min(180, parent.height)
+            sourceSize.height: height
+            anchors.centerIn: parent
+        }
+    }
+
+    Column {
+        id: loginColumn
+        anchors.centerIn: parent
+        anchors.verticalCenterOffset: Style.hugeMargins
+        width: parent.width
+        spacing: Style.margins
+
+        DefaultLabel {
+            id: loginLabel
             width: parent.width
-            spacing: Style.margins
+            height: Style.mediumTextSize
+            font.bold: true
+            text: qsTr("Teacher login")
+        }
 
-            DefaultLabel {
-                id: loginLabel
-                Layout.preferredHeight: Style.mediumTextSize
-                Layout.fillWidth: true
-                height: Style.mediumTextSize
-                font.bold: true
-                text: qsTr("Teacher login")
-            }
-
-            UnderlinedTextInput {
-                id: login
-                Layout.alignment: Qt.AlignHCenter
-                Layout.preferredWidth: 320
-                activeFocusOnTab: true
-                focus: true
-                defaultText: serverSettings.lastLogin
-                onTextChanged: {
-                    serverSettings.lastLogin = text
-                    message.text = ""
-                }
-            }
-
-            DefaultLabel {
-                id: passwordLabel
-                Layout.preferredHeight: Style.mediumTextSize
-                Layout.fillWidth: true
-                height: Style.mediumTextSize
-                font.bold: true
-                text: qsTr("Password")
-            }
-
-            UnderlinedTextInput {
-                id: password
-                Layout.alignment: Qt.AlignHCenter
-                Layout.preferredWidth: 320
-                activeFocusOnTab: true
-                echoMode: TextInput.Password
-                defaultText: serverSettings.lastLogin // TODO: set empty default text...
-            }
-
-            RowLayout {
-                Layout.alignment: Qt.AlignHCenter
-                Layout.preferredWidth: 320
-                ViewButton {
-                    id: connectTeacherButton
-                    activeFocusOnTab: true
-                    text: qsTr("Login")
-                    opacity: enabled ? 1.0 : 0.3
-                    enabled: Master.fileExists(userDataPath + "/" + databaseFile)
-                    onClicked: connectTeacher()
-                }
-
-                ViewButton {
-                    id: createTeacherButton
-                    activeFocusOnTab: true
-                    text: qsTr("Create teacher database")
-                    opacity: enabled ? 1.0 : 0.3
-                    enabled: (!Master.fileExists(userDataPath + "/" + databaseFile)) && (login.text.length > 3)
-                    onClicked: createDb.open()
-                }
-            }
-
-            DefaultLabel {
-                id: message
-                Layout.fillWidth: true
-                Layout.preferredHeight: Style.textSize
-                height: Style.textSize
-                font.bold: true
-                text: ""
-            }
-
-            DefaultLabel {
-                id: databaseFileValue
-                Layout.alignment: Qt.AlignHCenter
-                Layout.fillWidth: true
-                Layout.preferredHeight: Style.textSize
-                height: Style.textSize
-                font.bold: true
-                opacity: 0.5
-                text: qsTr("Database file:") + " " + userDataPath + "/"+ databaseFile
+        UnderlinedTextInput {
+            id: login
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: 320
+            activeFocusOnTab: true
+            focus: true
+            defaultText: serverSettings.lastLogin
+            onTextChanged: {
+                serverSettings.lastLogin = text
+                message.text = ""
             }
         }
 
-        Keys.onReturnPressed: {
-            if (connectTeacherButton.enabled)
-                connectTeacher()
-            else if (createTeacherButton.enabled)
-                createDb.open()
+        DefaultLabel {
+            id: passwordLabel
+            width: parent.width
+            height: Style.mediumTextSize
+            font.bold: true
+            text: qsTr("Password")
+        }
+
+        UnderlinedTextInput {
+            id: password
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: 320
+            activeFocusOnTab: true
+            echoMode: TextInput.Password
+            defaultText: serverSettings.lastLogin // TODO: set empty default text...
+        }
+
+        Row {
+            anchors.horizontalCenter: parent.horizontalCenter
+            spacing: Style.margins
+            ViewButton {
+                id: connectTeacherButton
+                activeFocusOnTab: true
+                text: qsTr("Login")
+                opacity: enabled ? 1.0 : 0.3
+                enabled: Master.fileExists(userDataPath + "/" + databaseFile)
+                onClicked: connectTeacher()
+            }
+
+            ViewButton {
+                id: createTeacherButton
+                activeFocusOnTab: true
+                text: qsTr("Create teacher database")
+                opacity: enabled ? 1.0 : 0.3
+                enabled: (!Master.fileExists(userDataPath + "/" + databaseFile)) && (login.text.length > 3)
+                onClicked: createDb.open()
+            }
+        }
+
+        DefaultLabel {
+            id: message
+            width: parent.width
+            font.bold: true
+            text: ""
+        }
+
+        DefaultLabel {
+            id: databaseFileValue
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: parent.width
+            font.bold: true
+            fontSizeMode: Text.Fit
+            opacity: 0.5
+            text: qsTr("Database file:") + " " + userDataPath + "/"+ databaseFile
+        }
+    }
+
+    Keys.onReturnPressed: {
+        if(connectTeacherButton.enabled) {
+            connectTeacher();
+        } else if(createTeacherButton.enabled) {
+            createDb.open();
         }
     }
 
     Component.onCompleted: {
-        topBanner.text = qsTr("GCompris Teachers Tool")
+        topBanner.text = qsTr("GCompris Teachers Tool");
         login.forceActiveFocus();
     }
 }
