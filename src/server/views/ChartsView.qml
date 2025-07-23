@@ -18,6 +18,9 @@ import "charts"
 
 Item {
     id: chartsView
+    width: parent.width
+    height: parent.height
+
     property alias calendar: selector.calendar
     property var userList: []
     property var activityList: []

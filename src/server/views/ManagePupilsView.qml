@@ -19,6 +19,8 @@ import "../dialogs"
 
 Item {
     id: managePupilsView
+    width: parent.width
+    height: parent.height
     enabled: serverRunning
 
     signal pupilsNamesListSelected(var pupilsNamesList)
