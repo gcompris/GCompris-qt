@@ -10,14 +10,12 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
-import QtQuick.Layouts
 import QtQuick.Controls.Basic
 
 import "../singletons"
 
 Row {
     id: radioButtonLine
-
     height: Style.lineHeight
 
     property string label: ""
