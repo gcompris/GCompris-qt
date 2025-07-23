@@ -26,9 +26,10 @@ Rectangle {
 
     Text {
         anchors.fill: parent
-        anchors.margins: Style.smallMargins
+        anchors.margins: Style.defaultBorderWidth * 3
         verticalAlignment: Text.AlignVCenter
         horizontalAlignment: Text.AlignHCenter
+        font.pixelSize: height
         fontSizeMode: Text.Fit
         color: Style.selectedPalette.text
         text: resultSuccess ? "\uf00c" : "\uf00d"
