@@ -4,6 +4,7 @@
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -16,7 +17,8 @@ import "../../components"
 
 Item {
     id: allData
-    anchors.margins: 2
+    width: parent.width
+    height: parent.height
 
     function setRequest(i) {
         switch (i) {
@@ -57,60 +59,60 @@ Item {
         reqView.executeRequest()
     }
 
-    Rectangle {
-        anchors.fill: parent
-        color: Style.selectedPalette.base
+    Row {
+        id: selectionRow
+        x: Style.smallMargins
+        height: Style.lineHeight
+        spacing: Style.margins
 
-        Row {
-            id: selectionRow
-            width: parent.width
-            height: 40
-            spacing:5
-            Label {
-                text: qsTr("Available requests")
-                width: 150
-                height: parent.height
-                font.bold: true
-                color: Style.selectedPalette.text
-            }
-
-            StyledComboBox {
-                id: what
-                width: 200
-                height: parent.height
-                model: [ "All users activities", "Pupils activities", "All groups", "Failed activities",
-                    "User's groups", "Group's users", "Daily activities", "Daily ratios" ]
-                onCurrentIndexChanged: allData.setRequest(currentIndex)
-            }
-
-            Button {
-                text: "\uf021"
-                width: 40
-                height: parent.height
-                onClicked: reqView.executeRequest()
-            }
-
-            Label {
-                text: reqView.count + " " + qsTr("lines")
-                width: 80
-                height: parent.height
-                font.bold: true
-                color: Style.selectedPalette.text
-            }
-
-            Label {
-                text: reqView.request
-                width: 500
-                height: parent.height
-                color: Style.selectedPalette.text
-            }
+        DefaultLabel {
+            text: qsTr("Available requests")
+            font.bold: true
+            anchors.verticalCenter: parent.verticalCenter
         }
 
-        RequestPanel {
-            id: reqView
-            dynamicRoles: true      // required here because columns change with each request
-            anchors { top: selectionRow.bottom; left: parent.left; bottom: parent.bottom; right: parent.right}
+        StyledComboBox {
+            id: what
+            width: 250
+            model: [ qsTr("All users activities"), qsTr("Pupils activities"), qsTr("All groups"), qsTr("Failed activities"),
+                qsTr("User's groups"), qsTr("Group's users"), qsTr("Daily activities"), qsTr("Daily ratios") ]
+            onCurrentIndexChanged: allData.setRequest(currentIndex)
+        }
+
+        SmallButton {
+            text: "\uf021"
+            anchors.verticalCenter: parent.verticalCenter
+            onClicked: reqView.executeRequest()
+        }
+
+        DefaultLabel {
+            //: Number of lines
+            text: qsTr("%1 lines").arg(reqView.count)
+            anchors.verticalCenter: parent.verticalCenter
+            font.bold: true
         }
     }
+    DefaultLabel {
+        text: reqView.request
+        anchors {
+            left: selectionRow.right
+            right: parent.right
+            margins: Style.margins
+            verticalCenter: selectionRow.verticalCenter
+        }
+    }
+
+    RequestPanel {
+        id: reqView
+        dynamicRoles: true      // required here because columns change with each request
+        anchors {
+            top: selectionRow.bottom
+            topMargin: Style.margins
+            left: parent.left
+            bottom: parent.bottom
+            right: parent.right
+        }
+    }
+
     Component.onCompleted: setRequest(what.currentIndex)
 }

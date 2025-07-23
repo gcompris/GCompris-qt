@@ -4,6 +4,7 @@
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -11,6 +12,7 @@ import QtQuick
 import QtQuick.Controls.Basic
 import "qrc:/gcompris/src/server/server.js" as Server
 
+import "../components"
 import "../singletons"
 import "../dialogs"
 
@@ -47,8 +49,6 @@ Item {
             }
             actualColumns = Array.from(wantedColumns)       // Restore columns when model is ready with a deep copy
         }
-        if (linesModel.count)
-            tableResult.contentY = 0
     }
 
     function sortTable() {
@@ -72,98 +72,111 @@ Item {
         }
     }
 
-    ListView {
-        id: topHeader
-        anchors.top: parent.top
-        anchors.left: parent.left
-        anchors.right: parent.right
-        height: 26
-        orientation: ListView.Horizontal
-        boundsBehavior: Flickable.StopAtBounds
-        clip: true
+    Rectangle {  // Header with sort buttons
+        id: sectionsHeader
+        width: parent.width
+        height: Style.lineHeight
+        color: Style.selectedPalette.accent
 
-        model: requestPanel.actualColumns
-        delegate: Button {
-            text: Definitions.columnsLabel[modelData] + ((sort === modelData) ? " " + arrows[order] : "")
-            width: Definitions.columnsSize[modelData]
-            height: 24
-            ToolTip.visible: hovered
-            ToolTip.text: modelData
-            ToolTip.delay: 1500
-            onClicked: {
-                if (sort !== modelData)
-                    order = ""
-                order = (order === "") ? order = "+" : (order === "+") ? order = "-" : order = "+"
-                sort = (order !== "") ? modelData : ""
-                sortTable()
+        StyledSplitView {
+            id: sectionsSplit
+            width: parent.width - 10
+            height: parent.height
+
+            Repeater {
+                id: sectionButtons
+                model: requestPanel.actualColumns
+                delegate: SmallButton {
+                    text: Master.columnsLabel[modelData] + ((sort === modelData) ? " " + arrows[order] : "")
+                    SplitView.minimumWidth: Master.columnsSize[modelData] * 0.5
+                    SplitView.preferredWidth: Master.columnsSize[modelData]
+                    toolTipOnHover: true
+                    toolTipText: modelData
+                    onClicked: {
+                        if (sort !== modelData) {
+                            order = "";
+                        }
+                        order = (order === "") ? order = "+" : (order === "+") ? order = "-" : order = "+";
+                        sort = (order !== "") ? modelData : "";
+                        sortTable();
+                    }
+                }
             }
-        }
-
-        onContentXChanged: {
-            tableResult.contentX = contentX
         }
     }
 
-    TableView {
-        id: tableResult
-        clip: true
-        anchors {
-            top: topHeader.bottom
-            left: parent.left
-            bottom: parent.bottom
-            right: parent.right
-        }
-        rowSpacing: 2
+    Flickable {
+        id: scrollLines
+        width: parent.width
+        anchors.top: sectionsHeader.bottom
+        anchors.bottom: parent.bottom
+        contentWidth: width
+        contentHeight: lines.height
+        flickableDirection: Flickable.VerticalFlick
         boundsBehavior: Flickable.StopAtBounds
+        clip: true
 
-        ScrollBar.vertical: ScrollBar   { policy: ScrollBar.AsNeeded }
-        ScrollBar.horizontal: ScrollBar { policy: ScrollBar.AsNeeded }
+        ScrollBar.vertical: ScrollBar {
+            contentItem: Rectangle {
+                implicitWidth: 6
+                radius: width
+                color: parent.pressed ? Style.selectedPalette.highlight : Style.selectedPalette.button
+            }
+        }
 
-        model: linesModel
-        delegate: Item {
-            property int lineIndex: index
-            implicitHeight: 20
-            implicitWidth: childrenRect.width
+        Column {
+            id: lines
+            width: parent.width
+            height: childrenRect.height
 
-            Row {
-                height: 20
-                Repeater {
-                    model: actualColumns
-                    delegate: Rectangle {
-                        height: 20
-                        width: Definitions.columnsSize[modelData]
-                        color: Style.selectedPalette.alternateBase
-                        Text {
-                            anchors.fill: parent
-                            anchors.leftMargin: 3
-                            horizontalAlignment: Definitions.columnsAlign[modelData]
-                            text: ((modelData === undefined) || (linesModel.get(lineIndex) === undefined)) ? "" : linesModel.get(lineIndex)[modelData]
-                            clip: true
-                            color: Style.selectedPalette.text
+            Repeater {
+                model: linesModel
+                delegate: AbstractButton {
+                    id: lineButton
+                    // property int lineIndex: index
+                    required property int index
+                    height: Style.lineHeight
+                    width: lines.width - 10 // margin for the ScrollBar
+                    hoverEnabled: true
+
+                    property color textColor: hovered ?
+                        Style.selectedPalette.highlightedText : Style.selectedPalette.text
+
+                    Rectangle {
+                        anchors.fill: parent
+                        color: lineButton.pressed ? Style.selectedPalette.highlight :
+                            (lineButton.hovered || lineButton.activeFocus ? Style.selectedPalette.alternateBase :
+                            Style.selectedPalette.base)
+                        border.width: lineButton.activeFocus && !lineButton.pressed ? 2 : 0
+                        border.color: lineButton.textColor
+                    }
+
+                    Row {
+                        height: Style.lineHeight
+                        spacing: 6 // width of StyledSplitView handle
+
+                        Repeater {
+                            id: lineContentRepeater
+                            model: actualColumns
+                            delegate: DefaultLabel {
+                                required property int index
+                                required property string modelData
+                                width: sectionButtons.itemAt(index).width
+                                anchors.verticalCenter: parent.verticalCenter
+                                color: lineButton.textColor
+                                text: ((modelData === undefined) || (linesModel.get(lineButton.index) === undefined)) ? "" : linesModel.get(lineButton.index)[modelData]
+                            }
                         }
                     }
-                }
-            }
 
-            Rectangle {
-                anchors.fill: parent
-                color: lineArea.containsMouse ? Style.selectedPalette.accent : "transparent"
-                opacity: 0.3
-                MouseArea {
-                    id: lineArea
-                    anchors.fill: parent
-                    hoverEnabled: true
-                    onDoubleClicked: {
-                        viewSqlLineDialog.parentModel = linesModel
-                        viewSqlLineDialog.lineIndex = lineIndex
-                        viewSqlLineDialog.open()
+                    onClicked: {
+                        lineButton.focus = false;
+                        viewSqlLineDialog.parentModel = linesModel;
+                        viewSqlLineDialog.lineIndex = index;
+                        viewSqlLineDialog.open();
                     }
                 }
             }
-        }
-
-        onContentXChanged: {
-            topHeader.contentX = contentX
         }
     }
 
