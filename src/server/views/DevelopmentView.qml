@@ -15,6 +15,9 @@ import "./datas"
 
 Item {
     id: resultView
+    width: parent.width
+    height: parent.height
+
     property string activityName: ""
 
     TabBar {

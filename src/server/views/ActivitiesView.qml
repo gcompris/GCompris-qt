@@ -21,6 +21,9 @@ import "qrc:/gcompris/src/server/server.js" as Server
 
 Item {
     id: activitiesView
+    width: parent.width
+    height: parent.height
+
     property alias selector: selector
     property alias calendar: selector.calendar
     property int groupId: Master.groupFilterId

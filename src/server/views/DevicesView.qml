@@ -21,6 +21,9 @@ import "../panels"
 
 Item {
     id: devicesView
+    width: parent.width
+    height: parent.height
+
     property var hostInformations: ({})
     property var ipList: []
     property alias splitDevicesView: splitDevicesView
