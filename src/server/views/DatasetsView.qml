@@ -115,7 +115,7 @@ Item {
                 ViewButton {
                     width: splitDatasetView.bigButtonWidth
                     height: splitDatasetView.bigButtonHeight
-                    text: "\uf234   " + qsTr("Create dataset")
+                    text: "\uf234 " + qsTr("Create dataset")
                     enabled: datasetsView.selectedActivity != -1
                     onClicked: datasetEditor.openDataEditor(datasetsView.selectedActivity, undefined)
                 }
@@ -123,7 +123,7 @@ Item {
                 ViewButton {
                     width: splitDatasetView.bigButtonWidth
                     height: splitDatasetView.bigButtonHeight
-                    text: "\uf07c   " + qsTr("Update dataset")
+                    text: "\uf07c " + qsTr("Update dataset")
                     enabled: datasetsView.selectedDataset != -1
                     onClicked: datasetEditor.openDataEditor(datasetsView.selectedActivity, Master.getDataset(datasetsView.selectedDataset))
                 }
@@ -131,7 +131,7 @@ Item {
                 ViewButton {
                     width: splitDatasetView.bigButtonWidth
                     height: splitDatasetView.bigButtonHeight
-                    text: "\uf2f6   " + qsTr("Send to clients")
+                    text: "\uf2f6 " + qsTr("Send to clients")
                     enabled: datasetsView.selectedDataset != -1
                     onClicked: {
                         var dataset = Master.getDataset(datasetsView.selectedDataset)
@@ -149,7 +149,7 @@ Item {
                 ViewButton {
                     width: splitDatasetView.bigButtonWidth
                     height: splitDatasetView.bigButtonHeight
-                    text: "\uf506   " + qsTr("Remove on clients")
+                    text: "\uf506 " + qsTr("Remove from clients")
                     enabled: datasetsView.selectedDataset != -1
                     onClicked: {
                         var dataset = Master.getDataset(datasetsView.selectedDataset)
@@ -170,7 +170,7 @@ Item {
                     margins: Style.bigMargins
                     horizontalCenter: parent.horizontalCenter
                 }
-                text: "\uf0c7   " + qsTr("Remove dataset")
+                text: "\uf0c7 " + qsTr("Remove dataset")
                 enabled: datasetsView.selectedDataset != -1
                 onClicked: removeDatasetDialog.open()
             }

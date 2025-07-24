@@ -201,7 +201,7 @@ Item {
                     id: addPupilButton
                     width: splitManagePupils.bigButtonWidth
                     height: splitManagePupils.bigButtonHeight
-                    text: "\uf234   " + qsTr("Add a pupil")
+                    text: "\uf234 " + qsTr("Add a pupil")
                     onClicked: managePupilsView.addPupilDialog()
                 }
 
@@ -209,7 +209,7 @@ Item {
                     width: splitManagePupils.bigButtonWidth
                     height: splitManagePupils.bigButtonHeight
                     enabled: pupilPane.childGroup.checkState != Qt.Unchecked // disable if nothing selected
-                    text: "\uf07c   " + qsTr("Add to groups")
+                    text: "\uf07c " + qsTr("Add to groups")
                     onClicked: managePupilsView.addPupilsToGroupsDialog()
                 }
 
@@ -217,7 +217,7 @@ Item {
                     width: splitManagePupils.bigButtonWidth
                     height: splitManagePupils.bigButtonHeight
                     enabled: pupilPane.childGroup.checkState != Qt.Unchecked // disable if nothing selected
-                    text: "\uf0c7   " + qsTr("Remove from groups")
+                    text: "\uf0c7 " + qsTr("Remove from groups")
                     onClicked: managePupilsView.removePupilsFromGroupsDialog()
                 }
 
@@ -225,14 +225,14 @@ Item {
                     width: splitManagePupils.bigButtonWidth
                     height: splitManagePupils.bigButtonHeight
                     enabled: pupilPane.childGroup.checkState != Qt.Unchecked // disable if nothing selected
-                    text: "\uf0c7   " + qsTr("Export pupils")
+                    text: "\uf0c7 " + qsTr("Export pupils")
                     onClicked: exportPupilsDialog.open()
                 }
 
                 ViewButton {
                     width: splitManagePupils.bigButtonWidth
                     height: splitManagePupils.bigButtonHeight
-                    text:  "\uf235   " + qsTr("Import pupils")
+                    text:  "\uf235 " + qsTr("Import pupils")
                     onClicked: importPupilsDialog.open()
                 }
 
@@ -240,7 +240,7 @@ Item {
                     width: splitManagePupils.bigButtonWidth
                     height: splitManagePupils.bigButtonHeight
                     enabled: pupilPane.childGroup.checkState != Qt.Unchecked // disable if nothing selected
-                    text: "\uf503   " + qsTr("Remove pupils")
+                    text: "\uf503 " + qsTr("Remove pupils")
                     onClicked: removePupilsDialog.open()
                 }
             }
