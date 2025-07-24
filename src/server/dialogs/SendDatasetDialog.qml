@@ -5,12 +5,12 @@
 * Authors:
 *   Johnny Jazeix <jazeix@gmail.com>
 *   Bruno Anselme <be.root@free.fr>
+*   Timothée Giet <animtim@gmail.com>
 *
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
 import QtQuick
 import QtQuick.Controls.Basic
-import QtQuick.Layouts
 
 import core 1.0
 
@@ -50,6 +50,7 @@ Popup {
         }
     }
 
+    // TODO from networkController: send/remove only to selected users and not all connected
     function validateDialog() {
         if(sendMode) {
             networkController.sendDatasetToUsers(datasetToSend, {})
@@ -61,60 +62,60 @@ Popup {
     }
 
     background: Rectangle {
-        color: Style.selectedPalette.alternateBase
-        radius: 5
-        border.color: "darkgray"
-        border.width: 2
+        color: Style.selectedPalette.base
+        radius: Style.defaultRadius
+        border.color: Style.selectedPalette.accent
+        border.width: Style.defaultBorderWidth
     }
 
-    ColumnLayout {
+    Item {
+        id: focusItem
         anchors.fill: parent
-        anchors.centerIn: parent
 
-        Text {
-            id: deletePupilGroupsText
-            Layout.fillWidth: true
-            Layout.preferredHeight: 90
-            horizontalAlignment: Text.AlignHCenter
+        DefaultLabel {
+            id: titleText
+            width: parent.width
+            height: implicitHeight
+            font.pixelSize: Style.textSize
+            font.bold: true
             wrapMode: Text.WordWrap
-            text: sendDatasetDialog.sendMode ? qsTr("Do you want to send the dataset to the selected users?")
-            : qsTr("Are you sure you want to remove the dataset for the following users?")
-            font {
-                bold: true
-                pixelSize: 20
-            }
-            color: Style.selectedPalette.text
+            text: sendDatasetDialog.sendMode ? qsTr("Do you want to send the dataset to selected users?")
+            : qsTr("Are you sure you want to remove the dataset from selected users?")
         }
 
         Rectangle {
             id: groupNamesRectangle
-            Layout.fillWidth: true
-            Layout.fillHeight: true
-            color: Style.selectedPalette.base
-            border.color: "gray"
-            border.width: 1
+            width: parent.width
+            anchors.top: titleText.bottom
+            anchors.bottom: bottomButtons.top
+            anchors.margins: Style.margins
+            color: Style.selectedPalette.alternateBase
 
-            GridView {
+            ListView {
                 id: groupNamesListView
                 anchors.fill: parent
-                anchors.centerIn: parent
-                anchors.margins: 2
-                cellWidth: width / 3
-                cellHeight: 30
+                anchors.margins: Style.margins
                 boundsBehavior: Flickable.StopAtBounds
+                contentWidth: width
+                contentHeight: childrenRect.height
                 activeFocusOnTab: true
                 focus: true
                 clip: true
                 model: pupilModel
 
-                delegate: CheckDelegate {
+                ScrollBar.vertical: ScrollBar {
+                    contentItem: Rectangle {
+                        implicitWidth: 6
+                        radius: width
+                        visible: groupNamesListView.contentHeight > groupNamesListView.height
+                        color: parent.pressed ? Style.selectedPalette.highlight : Style.selectedPalette.button
+                    }
+                }
+
+                delegate: StyledCheckBox {
                     id: groupSelect
                     //property int group_Id: group_id
-                    background: Rectangle {
-                        anchors.fill: parent
-                        color: "transparent"
-                        border.color: parent.activeFocus ? "darkgray" : "transparent"
-                    }
+                    width: groupNamesListView.width
                     text: user_name
                     checked: user_checked
                     //onCheckedChanged: tmpGroupModel.setProperty(index, "group_checked", checked)
@@ -123,11 +124,14 @@ Popup {
         }
 
         OkCancelButtons {
-            onCancelled: sendDatasetDialog.close()
-            onValidated: sendDatasetDialog.validateDialog()
+            id: bottomButtons
+            anchors.bottom: parent.bottom
+            anchors.horizontalCenter: parent.horizontalCenter
+            onCancelled: sendDatasetDialog.close();
+            onValidated: sendDatasetDialog.validateDialog();
         }
 
-        Keys.onReturnPressed: sendDatasetDialog.validateDialog()
-        Keys.onEscapePressed: sendDatasetDialog.close()
+        Keys.onReturnPressed: bottomButtons.validated();
+        Keys.onEscapePressed: bottomButtons.cancelled();
     }
 }
