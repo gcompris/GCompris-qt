@@ -185,8 +185,6 @@ Item {
                             Column {
                                 id: infos
                                 x: Style.margins
-                                height: childrenRect.height
-                                width: childrenRect.width
                                 anchors.verticalCenter: parent.verticalCenter
 
                                 property int maxWidth: lineView.width * 0.5 - Style.margins * 2 - infosArea.radius
