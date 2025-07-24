@@ -6,12 +6,12 @@
  *   Emmanuel Charruau <echarruau@gmail.com>
  *   Bruno Anselme <be.root@free.fr>
  *   Johnny Jazeix <jazeix@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
 import QtQuick.Controls.Basic
-import QtQuick.Layouts
 
 import "../singletons"
 import "../components"
@@ -25,7 +25,7 @@ Popup {
 
     anchors.centerIn: Overlay.overlay
     width: 600
-    height: 300
+    height: 500
     modal: true
     focus: true
     closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
@@ -33,10 +33,10 @@ Popup {
     signal datasetRemoved()
 
     background: Rectangle {
-        color: Style.selectedPalette.alternateBase
-        radius: 5
-        border.color: "darkgray"
-        border.width: 2
+        color: Style.selectedPalette.base
+        radius: Style.defaultRadius
+        border.color: Style.selectedPalette.accent
+        border.width: Style.defaultBorderWidth
     }
 
     function validateDialog() {
@@ -56,45 +56,50 @@ Popup {
         }
     }
 
-    ColumnLayout {
+    Item {
+        id: focusItem
         anchors.fill: parent
-        anchors.centerIn: parent
 
-        Text {
-            id: deleteDatasetText
-            Layout.fillWidth: true
-            Layout.preferredHeight: 90
-            Layout.preferredWidth: parent.width * 2/3
-            horizontalAlignment: Text.AlignHCenter
+        DefaultLabel {
+            id: titleText
+            width: parent.width
+            height: implicitHeight
+            font.pixelSize: Style.textSize
+            font.bold: true
             wrapMode: Text.WordWrap
             text: qsTr("Are you sure you want to remove the following dataset from the database?")
-            font {
-                bold: true
-                pixelSize: 20
-            }
-            color: Style.selectedPalette.text
         }
 
         Rectangle {
-            id: datasetsNamesTextRectangle
-            Layout.fillWidth: true
-            Layout.fillHeight: true
-            border.color: "gray"
-            border.width: 1
+            id: datasetNameBgq
+            width: parent.width
+            anchors.top: titleText.bottom
+            anchors.bottom: bottomButtons.top
+            anchors.margins: Style.margins
+            color: Style.selectedPalette.alternateBase
 
-            Text {
+            DefaultLabel {
+                width: parent.width
+                height: implicitHeight
+                font.pixelSize: Style.textSize
+                wrapMode: Text.WordWrap
+                anchors.centerIn: parent
                 text: removeDatasetDialog.datasetName
-                anchors.horizontalCenter: parent.horizontalCenter
-                color: Style.selectedPalette.text
             }
         }
 
         OkCancelButtons {
-            onCancelled: removeDatasetDialog.close()
+            id: bottomButtons
+            anchors.bottom: parent.bottom
+            anchors.horizontalCenter: parent.horizontalCenter
+            onCancelled: removeDatasetDialog.close();
             onValidated: {
-                removeDatasetDialog.validateDialog()
-                removeDatasetDialog.close()
+                removeDatasetDialog.validateDialog();
+                removeDatasetDialog.close();
             }
         }
+
+        Keys.onReturnPressed: bottomButtons.validated();
+        Keys.onEscapePressed: bottomButtons.cancelled();
     }
 }
