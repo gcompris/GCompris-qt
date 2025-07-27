@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-07-24 11:17+0300\n"
+"PO-Revision-Date: 2025-07-25 11:34+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -8816,13 +8816,6 @@ msgstr "לקרוא, להזיז ולהקיש עם העכבר."
 
 #. Help manual
 #: activities/family_find_relative/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A family tree is shown, with some instructions.\n"
-#| "The circles are linked with lines to mark the relations. Married couples "
-#| "are marked with a ring on the link.\n"
-#| "Click on a pair of family members which corresponds to the given relation."
 msgctxt "ActivityInfo|"
 msgid ""
 "A family tree is shown, with some instructions.\n"
@@ -8830,10 +8823,9 @@ msgid ""
 "are marked with a ring on the link.\n"
 "Click on a pair of family members which have the given relationship."
 msgstr ""
-"מוצג עץ משפחה עם כמה הוראות.\n"
-"העיגולים מחוברים עם קווים לסמן את היחסים. זוגות נשואים מסומנים עם טבעת על "
-"הקשר.\n"
-"ללחוץ על זוג בני משפחה שמתאימים ליחסים המוצגים."
+"מופיע עץ משפחה עם כמה הוראות.\n"
+"העיגולים מחוברים בקווים לסימוןהיחסים. זוגות נשואים מסומנים עם טבעת על הקשר.\n"
+"יש ללחוץ על זוג בני משפחה שמתאימים ליחסים המוצגים."
 
 #. Activity title
 #: activities/fifteen/ActivityInfo.qml:15
