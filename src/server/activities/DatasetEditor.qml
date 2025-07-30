@@ -205,19 +205,36 @@ Popup {
 
     File { id: file }
 
+    Popup {
+        id: instructionPanel
+        anchors.centerIn: Overlay.overlay
+        width: parent.width
+        height: parent.height
+        visible: false
+
+        modal: true
+        Text {
+            anchors.fill: parent
+            text: editorLoader.item ? editorLoader.item.teacherInstructions : ""
+        }
+        MouseArea {
+            anchors.fill: parent
+            onClicked: instructionPanel.visible = false;
+        }
+    }
+
     RowLayout {
         id: headLayout
         anchors.top: parent.top
         anchors.left: parent.left
         anchors.right: parent.right
 
-        ColumnLayout {
+        RowLayout {
+            Layout.fillWidth: true
+            Layout.fillHeight: true
             Text {
                 id: groupDialogText
                 color: Style.selectedPalette.text
-                Layout.preferredWidth: 360
-                Layout.fillHeight: true
-                Layout.topMargin: 10
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignTop
                 text: label
@@ -225,6 +242,12 @@ Popup {
                     bold: true
                     pixelSize: 20
                 }
+            }
+            Button {
+                id: instructionsButton
+                text: qsTr("Instructions")
+                visible: editorLoader.sourceUrl !== "NoEditor.qml"
+                onClicked: instructionPanel.visible = true;
             }
         }
 
@@ -337,7 +360,6 @@ Popup {
             }
         }
     }
-
 
     StackLayout {
         currentIndex: bar.currentIndex
