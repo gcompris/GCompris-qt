@@ -17,13 +17,17 @@ import QtQuick.Layouts
 import "../singletons"
 import "../components"
 
-Text {
-    text: "No editor for this activity.\nSwitch to Data editor"
-    horizontalAlignment: Text.AlignHCenter
-    verticalAlignment: Text.AlignVCenter
-    leftPadding: 50
-    topPadding: 50
-    color: Style.selectedPalette.text
+DatasetEditorBase {
+    teacherInstructions: ""
+    Text {
+        anchors.fill: parent
+        text: "No editor for this activity.\nSwitch to Data editor"
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
+        leftPadding: 50
+        topPadding: 50
+        color: Style.selectedPalette.text
 
-    function updateDataFromEditor() { }     // Nothing to do when no activity editor is available
+        function updateDataFromEditor() { }     // Nothing to do when no activity editor is available
+    }
 }
