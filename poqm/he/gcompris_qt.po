@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-07-25 11:34+0300\n"
+"PO-Revision-Date: 2025-07-29 08:12+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -6482,6 +6482,8 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"נא לצייר את האותיות על ידי חיבור הנקודות בסדר הנכון. אפשר ללחוץ ולגרור "
+"מנקודה אחת לבאות או ללחוץ על כל נקודה בזאת אחר זאת."
 
 #. Activity title
 #: activities/drawnumbers/ActivityInfo.qml:15
@@ -16387,14 +16389,6 @@ msgstr "לימוד חיבור עם מספרים עשרוניים על ידי מ�
 
 #. Help manual
 #: activities/learn_decimals_additions/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "An addition with two decimal numbers is displayed. Drag the arrow to "
-#| "select a part of the bar, and drag the selected part of the bar to the "
-#| "empty area. Repeat these steps until the number of dropped bars "
-#| "corresponds to the result of the addition, and click on the OK button to "
-#| "validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "An addition with two decimal numbers is displayed. Drag the arrow to select "
@@ -16402,10 +16396,9 @@ msgid ""
 "area. Repeat these steps until the number of dropped bars corresponds to the "
 "result of the addition, and click on the OK button to validate your answer."
 msgstr ""
-"מוצג תרגיל חיבור עם שני מספרים עשרוניים. לגרור את החץ כדי לבחור חלק מהעמודה "
-"ולגרור את החלק הנבחר של העמודה לאזור הריק. לחזור על הצעדים האלו עד שמספר "
-"העמודות שנגררו מייצג את תוצאת תרגיל החיבור וללחוץ על כפתור ה־OK כדי לוודא את "
-"התוצאה."
+"מוצג חיבור עם שני מספרים עשרוניים. נא לגרור את החץ כדי לבחור חלק מהעמודה "
+"לאזור הריק. לאחר מכן לחזור על הצעדים האלה עד שמספר העמודות שנגררו תואם "
+"לתוצאת החיבור, לחיצה על OK תאמת את התשובה שלך."
 
 #: activities/learn_decimals_additions/ActivityInfo.qml:23
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:23
@@ -19453,20 +19446,14 @@ msgstr "להתאמן בשימוש בכסף ולתת לטוקס את העודף �
 #. Help manual
 #: activities/money_back/ActivityInfo.qml:24
 #: activities/money_back_cents/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the coins or on the notes at the bottom of the screen to pay. If "
-#| "you want to remove a coin or a note, click on it on the upper screen area."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to give Tux "
 "his change. If you want to remove a coin or a note, click on it on the upper "
 "area of the screen."
 msgstr ""
-"לחצו על המטבעות או השטרות בתחתית המסך כדי לשלם. \n"
-"אם ברצונכם להוריד מטבע או שטר, לחצו עליו בחלק המסך העליון. \n"
-"בסיום לחצו על אישור."
+"לחיצה על המטבעות או השטרות בתחתית המסך תחזיר לטאקס את העודף שלו. כדי להסיר "
+"מטבע או שטר, נא ללחוץ עליו בחלק העליון של המסך."
 
 #. Activity title
 #: activities/money_back_cents/ActivityInfo.qml:15
@@ -19964,19 +19951,14 @@ msgstr "ללמוד את הרצף המספרי."
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on the points in the numerical sequence order. "
 "You can click and drag from one point to the next ones, or click on each "
 "point one after the other."
 msgstr ""
-"לצייר את התמונה באמצעות הקשה על נקודות לפי הסדר. בכל פעם שנקודה נבחרת, "
-"הנקודה הבאה מופיעה בכחול"
+"נא לצייר את התמונה באמצעות לחיצה על הנקודות לפי הסדר המספרי. אפשר ללחוץ "
+"ולגרור מנקודה אחת לבאות, או ללחוץ על כל נקודה בזאת אחר זאת."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
