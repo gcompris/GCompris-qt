@@ -12,4 +12,5 @@ import "../vertical_subtraction"
 
 VerticalEditor {
     textActivityData: textActivityData_
+    teacherInstructions: qsTr("Vertical subtraction compensation instructions")
 }
