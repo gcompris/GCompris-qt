@@ -1,4 +1,4 @@
-/* GCompris - ActivityEditor.qml
+/* GCompris - ComparatorEditor.qml
  *
  * SPDX-FileCopyrightText: 2025 Johnny Jazeix <jazeix@gmail.com>
  *
@@ -14,7 +14,9 @@ import QtQuick.Layouts
 import "../../singletons"
 import "../../components"
 
-Item {
+import ".."
+
+DatasetEditorBase {
     id: editor
     required property string textActivityData               // Json array stringified as stored in database (dataset_/dataset_content)
     property ListModel mainModel: ({})                      // The main ListModel, declared as a property for dynamic creation
@@ -197,78 +199,3 @@ Item {
 
     Component.onCompleted: mainModel = datasetEditor.jsonToListModel(prototypeStack, JSON.parse(textActivityData))
 }
-
-/*function parseContent(content: string) {
-        var json = JSON.parse(content);
-        var values = json.values;
-        for(var j = 0 ; j < 1 ; ++ j) {
-            for(var i = 0; i < values[j].length; ++ i) {
-               dataModel.append({"leftNumber": Number(values[j][i][0]), "rightNumber": Number(values[j][i][1])});
-            }
-        }
-    }
-
-    function initialize(selectedDataset: var) {
-        dataModel.clear();
-        if(selectedDataset === undefined) {
-            datasetName.text = ""
-            datasetObjective.text = ""
-            difficultyText.text = 1
-            dataModel.append({"leftNumber": 0, "rightNumber": 0});
-        }
-        else {
-            dataset_Id = selectedDataset.dataset_id
-            datasetName.text = selectedDataset.dataset_name
-            datasetObjective.text = selectedDataset.dataset_objective
-            difficultyText.text = selectedDataset.dataset_difficulty
-            parseContent(selectedDataset.dataset_content)
-        }
-    }
-
-    function getData() {
-        var data = [];
-        // Only one sublevel for now
-        for(var j = 0; j < 1; ++ j) {
-            var sublevel = [];
-            for(var i = 0; i < dataModel.count; ++ i) {
-                sublevel.push([Number(dataModel.get(i).leftNumber), Number(dataModel.get(i).rightNumber)]);
-            }
-            data.push(sublevel)
-        }
-        var content = { random: false, values: data };
-        content = JSON.stringify(content);
-        return {
-            "name": datasetName.text,
-            "difficulty": Number(difficultyText.text),
-            "objective": datasetObjective.text,
-            "content": content
-        };
-    }*/
-
-/*            delegate: Row {
-                width: datasetContent.width
-                height: leftSpinBox.height
-                spacing: 10
-                SpinBox {
-                    id: leftSpinBox
-                    width: 200
-                    editable: true
-                    from: -10000000
-                    to: 10000000
-                    value: leftNumber
-                    onValueChanged: dataModel.setProperty(index, "leftNumber", value)
-                }
-                SpinBox {
-                    id: rightSpinBox
-                    width: 200
-                    editable: true
-                    from: -10000000
-                    to: 10000000
-                    value: rightNumber
-                    onValueChanged: dataModel.setProperty(index, "rightNumber", value)
-                }
-            }
-}
-        }
-    }*/
-

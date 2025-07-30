@@ -14,7 +14,9 @@ import QtQuick.Layouts
 import "../../singletons"
 import "../../components"
 
-Item {
+import ".."
+
+DatasetEditorBase {
     id: editor
     required property string textActivityData               // Json array stringified as stored in database (dataset_/dataset_content)
     property ListModel mainModel: ({})                      // The main ListModel, declared as a property for dynamic creation

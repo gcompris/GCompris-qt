@@ -1,4 +1,4 @@
-/* GCompris - ActivityEditor.qml for comparator
+/* GCompris - DatasetEditorBase.qml
  *
  * SPDX-FileCopyrightText: 2025 Johnny Jazeix <jazeix@gmail.com>
  *
@@ -7,8 +7,11 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+import QtQuick
 
-ComparatorEditor {
-    textActivityData: textActivityData_
-    teacherInstructions: qsTr("Comparator instructions")
+/**
+* Common data for all editors.
+*/
+Item {
+    required property string teacherInstructions
 }

@@ -10,4 +10,5 @@
 
 MultipleChoiceEditor {
     textActivityData: textActivityData_
+    teacherInstructions: qsTr("MultipleChoiceEditor instructions")
 }
