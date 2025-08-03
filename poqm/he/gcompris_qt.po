@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-07-29 08:12+0300\n"
+"PO-Revision-Date: 2025-08-02 23:42+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -10135,7 +10135,7 @@ msgstr "להציב את האזורים על מפות המדינות."
 #: activities/geo-country/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Learn to locate and place the regions of countries."
-msgstr ""
+msgstr "למידה איך לאתר ולהציב אזורים של מדינות."
 
 #. Help manual
 #: activities/geo-country/ActivityInfo.qml:27
@@ -12926,7 +12926,7 @@ msgstr "לאתר את המדינות"
 #: activities/geography/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Place the continents and countries on the world map."
-msgstr ""
+msgstr "הצגת יבשות ומדינות על מפת העולם."
 
 #. Help goal
 #: activities/geography/ActivityInfo.qml:24
@@ -20725,15 +20725,11 @@ msgstr "פיתוח מיומנויות בהמחשה ובקריאת מפות ול�
 #. Help manual
 #: activities/path_decoding/ActivityInfo.qml:22
 #: activities/path_decoding_relative/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the grid squares to move Tux following the given directions."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the grid squares to move Tux to the target following the arrow "
 "directions."
-msgstr "ללחוץ על המשבצות כדי להזיז את טוקס לפי ההוראות הנתונות."
+msgstr "אפשר ללחוץ על ריבועי הטבלה כדי להעביר את טאקס ליעד לפי כיוון החיצים."
 
 #: activities/path_decoding/ActivityInfo.qml:23
 #: activities/path_encoding/ActivityInfo.qml:23
@@ -22111,17 +22107,12 @@ msgid "The execution of the code starts here."
 msgstr "הרצת הקוד מתחילה כאן."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:552
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-Click on any instruction in the <b>instruction area</b> to add it to the "
-#| "<b>Main Function</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-Click on any instruction in the <b>instruction area</b> to add it to the "
 "<b>Main Function</b>."
 msgstr ""
-"-להקיש על כל הוראה ב <b>אזור ההוראות</b> כדי להוסיף אותה ל<b>אזור פעולות "
+"-לחיצה על כל אחת מההוראות ב<b>אזור ההוראות</b> תוסיף אותה ל<b>אזור פעולות "
 "עיקריות</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:553
@@ -22739,7 +22730,6 @@ msgstr ""
 
 #: activities/roman_numerals/RomanNumerals.qml:128
 #: activities/roman_numerals/RomanNumerals.qml:134
-#, fuzzy
 msgctxt "RomanNumerals|"
 msgid ""
 "Sums of M are used for building thousands: M, MM, MMM.\n"
@@ -22748,9 +22738,9 @@ msgid ""
 "possible units, tens or hundreds, you must use differences too. On the other "
 "hand, it limits the maximum roman number to 3999 (MMMCMXCIX)."
 msgstr ""
-"סכומים של M משמשים לבנייה של אלפים: M, MM, MMM.\n"
-"נא לשים לב שאי אפשר לחבר יותר משלושה סמלים זהים. ההשלכה הראשונה של החוק הזה "
-"היא שלא ניתן להשתמש בסכומים בלבד כדי לבנות את כל האחרות האפשריות, עשרות או "
+"סכומים של M משמשים לבנייה של אלפים: M,‏ MM,‏ MMM.\n"
+"נא לשים לב שאי אפשר לחבר יותר משלושה סימנים זהים. ההשלכה הראשונה של החוק הזה "
+"היא שלא ניתן להשתמש בסכומים בלבד כדי לבנות את כל האחדות האפשריות, עשרות או "
 "מאות. צריך להשתמש גם בהפרשים. מצד שני, זה מגביל את המספר המרבי בספרות רומיות "
 "ל־3999 (MMMCMXCIX)."
 
