@@ -365,7 +365,7 @@ msgstr "عدّ العناصر من خلال تنظيمها ثم اكتب الإ�
 #: activities/erase/ActivityInfo.qml:18
 #, kde-format
 msgid " Clear the window with your sponge and discover the hidden picture."
-msgstr "امسح النافذة بالإسفنجة واكتشف الصورة المخفية."
+msgstr "امحُ النافذة بالإسفنجة واكتشف الصورة المخفية."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "erase_2clic"
 #: activities/erase_2clic/ActivityInfo.qml:18
