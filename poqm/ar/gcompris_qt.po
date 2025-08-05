@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-08-03 11:22+0400\n"
+"PO-Revision-Date: 2025-08-04 21:07+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -2473,10 +2473,10 @@ msgid ""
 "set, select the 'user' level set and start the level editor by clicking on "
 "the corresponding button."
 msgstr ""
-"في قائمة إعدادات النشاط، يمكنك الاختيار بين خيار مجموعة المستويات "
-"\"الافتراضية\" وخيار مجموعة مستويات مخصصة لك تسمى (\"المستخدم\"). لإنشاء "
-"مجموعة مستويات ، اختر مستويات \"المستخدم\"، ثمّ شغّل محرر المستويات بالنقر على "
-"الزر المقابل."
+"في قائمة إعدادات النشاط، يمكنك الاختيار بين خيار مجموعة المستويات \"المبدئية"
+"\" وخيار مجموعة مستويات مخصصة لك تسمى (\"المستخدم\"). لإنشاء مجموعة "
+"مستويات ، اختر مستويات \"المستخدم\"، ثمّ شغّل محرر المستويات بالنقر على الزر "
+"المقابل."
 
 #: activities/balancebox/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -2594,13 +2594,13 @@ msgid ""
 "settings menu and then load your file, or choose the 'built-in' level set."
 msgstr ""
 "إما أن تنشئ المستويات الخاصة بك عن طريق بدء محرر المستوى في النشاط  قائمة "
-"إعدادات  النشاط ثم تحميل ملفك ، أو اختر مجموعة المستويات \"الافتراضية\"."
+"إعدادات  النشاط ثم تحميل ملفك ، أو اختر مجموعة المستويات \"المبدئية\"."
 
 #: activities/balancebox/balancebox.js:106
 #, qt-format
 msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
-msgstr "الملف '%1' مفقود!<br>العودة إلى المستويات الافتراضية."
+msgstr "الملف '%1' مفقود!<br>العودة إلى المستويات المبدئية."
 
 #: activities/balancebox/Balancebox.qml:70
 msgctxt "Balancebox|"
@@ -5946,7 +5946,7 @@ msgid ""
 "voltage of a circuit."
 msgstr ""
 "تعمل الدارات الرقمية مع حالتين فقط: 0 و 1. وهذا يسمح بتنفيذ عمليات رياضية "
-"مثل الجمع والطرح ...  وهي أساس تقنيات الحاسوب. في الواقع ، 0 غالبًا ما يُمثّّل "
+"مثل الجمع والطرح ...  وهي أساس تقنيات الحاسوب. في الواقع ، 0 غالبًا ما يُمثّل "
 "بجهد معدوم. أمّا  1 فيمثل وجود جهد في الدارة."
 
 #: activities/digital_electricity/components/OrGate.qml:21
@@ -6024,7 +6024,7 @@ msgid ""
 "voltage of a circuit."
 msgstr ""
 "تعمل الدوائر الرقمية مع حالتين فقط: 0 و 1. وهذا يسمح بتنفيذ عمليات رياضية "
-"مثل الجمع والطرح ...  وهي أساس تقنيات الحاسوب. في الواقع ، 0 غالبًا ما يُمثّّل "
+"مثل الجمع والطرح ...  وهي أساس تقنيات الحاسوب. في الواقع ، 0 غالبًا ما يُمثّل "
 "بجهد معدوم. أمّا  1 فيمثل وجود جهد في الدارة."
 
 #: activities/digital_electricity/DigitalElectricity.qml:248
@@ -6397,8 +6397,8 @@ msgid ""
 "default is 1 second, but it can be changed between 0.25 and 2s."
 msgstr ""
 "مولّد الإشارة في اليسار يستعمل لتوليد إشارة متناوبة بين 0 و 1، في فترة زمنية "
-"معطاة. الفترة الزمنية الافتراضية هي 1 ثانية، يمكن تغييرها ما بين 0.25 ثانية "
-"و 2 ثانية."
+"معطاة. الفترة الزمنية المبدئية هي 1 ثانية، يمكن تغييرها ما بين 0.25 ثانية و "
+"2 ثانية."
 
 #: activities/digital_electricity/TutorialDataset.qml:542
 msgctxt "TutorialDataset|"
@@ -14354,7 +14354,7 @@ msgstr ""
 "قاسمًا لعدد ثان ، فإن العدد الثاني مضاعفالعدد الأول.  يمكنك التفكير في "
 "المضاعفات باعتبارها عائلات ، والقواسم هم أفراد هذه العائلات.  القاسم 5 ، "
 "لديه أبوان 10، وأجداد 15 ، وأباء الأجداد 20، وأجداد الأجداد 25 ،وكل خطوة "
-"إضافية من 5 تضيف جَدّّا آخر!  لكن العدد 5 لا ينتمي إلى عائلة 8 أو عائلة 23. لا "
+"إضافية من 5 تضيف جَدّا آخر!  لكن العدد 5 لا ينتمي إلى عائلة 8 أو عائلة 23. لا "
 "يمكن ضرب 5 في أي عدد للحصول على 8. إذن ، 8 ليس من مضاعفات العدد 5. وهو كذلك "
 "للعدد 23.  فقط 5 ، 10 ، 15 ، 20 ، 25 ... هي مضاعفات  5."
 
@@ -14443,7 +14443,7 @@ msgstr "مفتاح الحذف للوراء: احذف الرقم الأخير"
 #: activities/graduated_line_read/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Delete: reset your answer"
-msgstr "مفتاح الحذف: مسح الإجابة"
+msgstr "مفتاح الحذف: صفّر إجابتك"
 
 #: activities/graduated_line_read/ActivityInfo.qml:28
 #: activities/graduated_line_use/ActivityInfo.qml:26
@@ -15202,7 +15202,7 @@ msgid ""
 "You can enter the letters using the virtual keyboard on the screen or with "
 "the real keyboard."
 msgstr ""
-"يمكنك إدخال الأحرف باستخدام لوحة المفاتيح الوهميّة على الشّاشة أو باستخدام "
+"يمكنك إدخال الأحرف باستخدام لوحة المفاتيح الافتراضية على الشّاشة أو باستخدام "
 "لوحة مفاتيح حقيقيّة."
 
 #: activities/hangman/ActivityInfo.qml:24
@@ -18852,7 +18852,7 @@ msgstr "منتقي اللغة"
 #: activities/menu/ConfigurationItem.qml:116
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
-msgstr "فعّل التّنزيل/التّحديث الآليّين لموارد الخارجية"
+msgstr "مكّن التّنزيل/التّحديث الآليّين لموارد الخارجية"
 
 #: activities/menu/ConfigurationItem.qml:146
 msgctxt "ConfigurationItem|"
@@ -18877,12 +18877,12 @@ msgstr "تمكين الأصوات المسموعة"
 #: activities/menu/ConfigurationItem.qml:182
 msgctxt "ConfigurationItem|"
 msgid "Enable audio effects"
-msgstr "فعّل التّأثيرات الصّوتيّة"
+msgstr "مكّن التّأثيرات الصّوتيّة"
 
 #: activities/menu/ConfigurationItem.qml:191
 msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
-msgstr "فعّل التّأثيرات الصّوتيّة"
+msgstr "صوت التّأثيرات الصّوتيّة"
 
 #: activities/menu/ConfigurationItem.qml:211
 msgctxt "ConfigurationItem|"
@@ -18943,7 +18943,7 @@ msgstr "ملء الشّاشة"
 #: activities/menu/ConfigurationItem.qml:341
 msgctxt "ConfigurationItem|"
 msgid "Virtual Keyboard"
-msgstr "لوحة المفاتيح الوهميّة"
+msgstr "لوحة المفاتيح الافتراضية"
 
 #: activities/menu/ConfigurationItem.qml:352
 msgctxt "ConfigurationItem|"
@@ -18984,7 +18984,7 @@ msgstr "تباعد المسافة بين الأحرف"
 #: activities/menu/ConfigurationItem.qml:619
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
-msgstr "حروف كبيرة وصغيرة (تلقائي)"
+msgstr "حروف كبيرة وصغيرة (آليّ)"
 
 #: activities/menu/ConfigurationItem.qml:623
 msgctxt "ConfigurationItem|"
@@ -21950,8 +21950,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "Enter: run the code or reset Tux when it fails to reach the fish"
 msgstr ""
-"أدخل: شغّل البرنامج أو إعادة تُكس إلى مكانه الأول عندما يفشل في الوصول إلى "
-"السمكة"
+"أدخل: شغّل البرنامج أو صفّر تُكس إلى مكانه الأول عندما يفشل في الوصول إلى السمكة"
 
 #: activities/programmingMaze/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
@@ -23840,7 +23839,7 @@ msgstr "لوحة الألوان"
 #: activities/sketch/ColorSelector.qml:162
 msgctxt "ColorSelector|"
 msgid "Reset palette"
-msgstr "إعادة تعيين لوح الألوان"
+msgstr "صفّر لوح الألوان"
 
 #: activities/sketch/ColorSelector.qml:214
 msgctxt "ColorSelector|"
@@ -23869,7 +23868,7 @@ msgstr "الخفة"
 #: activities/sketch/ColorSelector.qml:326
 msgctxt "ColorSelector|"
 msgid "Reset Color"
-msgstr "إعادة تعيين الألوان"
+msgstr "صفّر الألوان"
 
 #: activities/sketch/ColorsPanel.qml:159
 msgctxt "ColorsPanel|"
@@ -23970,7 +23969,7 @@ msgstr "أدوات"
 #: activities/sketch/ToolsPanel.qml:429
 msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
-msgstr "إعادة تعيين إعدادات الأدوات"
+msgstr "صفّر إعدادات الأدوات"
 
 #: activities/sketch/ToolsPanel.qml:484
 msgctxt "ToolsPanel|"
@@ -25698,10 +25697,10 @@ msgstr ""
 "الصحيح، ومربع أبيض على العناصر الصحيحة في الموضع الخاطئ. في المستويين 4 و "
 "8 ، سيُخفى عنصر ما عدة مرات. <br/> يمكنك استخدام زر  الفأرة الأيمن لقلب "
 "العناصر بالترتيب المعاكس، أو لاختيار عنصر من القائمة مباشرةً. اضغط لمدة "
-"ثانيتين على عنصر ما لاختيار العنصر الأخير المحدد في هذا الموضع تلقائيًا. انقر "
+"ثانيتين على عنصر ما لاختيار العنصر الأخير المحدد في هذا الموضع آليًّا. انقر "
 "نقرًا مزدوجًا فوق عنصر محدد مسبقًا في سجل التخمين الخاص بك لتمييزه على أنه "
-"\"صحيح\". يتم تحديد هذه العناصر المميزة تلقائيًا في تخميناتك الحالية "
-"والمستقبلية إلى أن تلغى تحديدها، بالنقر المزدوج عليها مرة أخرى."
+"\"صحيح\". يتم تحديد هذه العناصر المميزة آليًّا في تخميناتك الحالية والمستقبلية "
+"إلى أن تلغى تحديدها، بالنقر المزدوج عليها مرة أخرى."
 
 #: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
@@ -26669,18 +26668,18 @@ msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
-"New command-line option (--difficulty {value|min-max}) to start GCompris at "
-"specific difficulty"
+"خيار جديد لسطر الأوامر (--difficulty {value|min-max}) لبدء تشغيل فهمت بمستوى "
+"صعوبة محدد"
 
 #: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr "Fix issue in comparator activity"
+msgstr "إصلاح مشكلة في نشاط المقارنة"
 
 #: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
-msgstr "Map of Spain added for geography activity"
+msgstr "أضيفت خريطة إسبانيا لأنشطة الجغرافيا"
 
 #: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
@@ -26692,45 +26691,40 @@ msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
 "one"
-msgstr ""
-"New command-line option to list all the activities and start on a specific "
-"one"
+msgstr "خيار جديد في سطر الأوامر لإدراج جميع الأنشطة والبدء في نشاط معين"
 
 #: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
 "images set"
-msgstr ""
-"Reduce the size of the packages for all platforms and of the external word "
-"images set"
+msgstr "تقليل حجم الحزم لجميع المنصات وحجم مجموعة الصور الخارجية للكلمات"
 
 #: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
-msgstr "Improve images quality in several activities"
+msgstr "تحسين جودة الصور في العديد من الأنشطة"
 
 #: core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
-msgstr "Fix some transitions in renewable_energy/watercycle on some platforms"
+msgstr "إصلاح بعض الانتقالات في renewable_energy/watercycle على بعض المنصات"
 
 #: core/ChangeLog.qml:107
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
-msgstr "Fix dead keys ignored on Linux for typing activities"
+msgstr "إصلاح المفاتيح المعطلة التي يتم تجاهلها في لينكس أثناء الكتابة"
 
 #: core/ChangeLog.qml:108
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
-msgstr "Fix level reset when changing level manually in Logical associations"
+msgstr "إصلاح تصفير المستوى عند تغيير المستوى يدويًا في الارتباطات المنطقية"
 
 #: core/ChangeLog.qml:112
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
-msgstr ""
-"Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
+msgstr "إصلاح تسلسل الأبجدية، والأرقام الزوجية والفردية، والأرقام بالترتيب"
 
 #: core/ChangeLog.qml:116 core/ChangeLog.qml:124
 msgctxt "ChangeLog|"
@@ -26750,17 +26744,17 @@ msgstr "أصوات جديدة للنرويجية"
 #: core/ChangeLog.qml:123
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
-msgstr "Translations added for Breton, Czech and Macedonian"
+msgstr "أضيفت ترجمات للغة البريتونية والتشيكية والمقدونية"
 
 #: core/ChangeLog.qml:128
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
-msgstr "Translation added for Azerbaijani"
+msgstr "أضيفت الترجمة للأذربيجانية"
 
 #: core/ChangeLog.qml:129
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
-msgstr "New maps and update of the maps for geography activities"
+msgstr "خرائط جديدة وتحديث الخرائط لأنشطة الجغرافيا"
 
 #: core/ChangeLog.qml:130
 msgctxt "ChangeLog|"
@@ -26768,37 +26762,35 @@ msgid ""
 "New dataset containing loops operations for programming maze, and make "
 "tutorial images translated"
 msgstr ""
-"New dataset containing loops operations for programming maze, and make "
-"tutorial images translated"
+"مجموعة بيانات جديدة تحتوي على عمليات حلقات لبرمجة المتاهة، وترجمة الصور "
+"التعليمية"
 
 #: core/ChangeLog.qml:131
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
 "activity"
-msgstr ""
-"Addition of a level to teach voltage source loop in analog electricity "
-"activity"
+msgstr "إضافة مستوى لتعليم حلقة مصدر الجهد في نشاط الكهرباء التناظرية"
 
 #: core/ChangeLog.qml:141
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
-msgstr "New Activity Settings menu, with dataset selection"
+msgstr "قائمة إعدادات النشاط الجديدة، مع اختيار مجموعة البيانات"
 
 #: core/ChangeLog.qml:147
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
-msgstr "New sub-categories to organize activities"
+msgstr "فئات فرعية جديدة لتنظيم الأنشطة"
 
 #: core/ChangeLog.qml:148
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
-msgstr "Translation added for Macedonian."
+msgstr "أضيفت الترجمة إلى اللغة المقدونية.."
 
 #: core/ChangeLog.qml:149
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
-msgstr "New activities Programming Maze and Baby Tangram"
+msgstr "أنشطة جديدة برمجة المتاهة وبيبي تانجرام"
 
 #: core/ChangeLog.qml:150
 msgctxt "ChangeLog|"
@@ -26808,17 +26800,19 @@ msgstr "موسيقى خلفية جديدة وإعدادات الصوت."
 #: core/ChangeLog.qml:151
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
-msgstr "New speed setting in several activities."
+msgstr "إعدادات سرعة جديدة في العديد من الأنشطة."
 
 #: core/ChangeLog.qml:152
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
-msgstr "New option in chess to display captured pieces."
+msgstr "خيار جديد في لعبة الشطرنج لعرض القطع المستولى عليها."
 
 #: core/ChangeLog.qml:153
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
-msgstr "New images in Colors, Advanced colors and Target game."
+msgstr ""
+"New images in Colors, Advanced colors and Target game.صور جديدة في الألوان "
+"والألوان المتقدمة ولعبة الهدف."
 
 #: core/ChangeLog.qml:154
 msgctxt "ChangeLog|"
@@ -26828,7 +26822,7 @@ msgstr "أَصوات جديدة للإنجليزية US."
 #: core/ChangeLog.qml:155 core/ChangeLog.qml:163
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
-msgstr "Many little fixes and improvements."
+msgstr "العديد من الإصلاحات والتحسينات الصغيرة."
 
 #: core/ChangeLog.qml:156
 msgctxt "ChangeLog|"
@@ -26836,18 +26830,17 @@ msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
 "Finnish...)."
 msgstr ""
-"Translation updated for multiple languages (Breton, Brazilian Portuguese, "
-"Finnish...)."
+"تحديث الترجمة لعدة لغات (البريتونية، البرتغالية البرازيلية، الفنلندية...)."
 
 #: core/ChangeLog.qml:157
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
-msgstr "Add Russian dataset for Click on letter activity."
+msgstr "أضف مجموعة بيانات روسية لنشاط النقر على الحرف."
 
 #: core/ChangeLog.qml:158
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
-msgstr "Lang activity now available in Dutch."
+msgstr "نشاط اللغة متاح الآن باللغة الهولندية."
 
 #: core/ChangeLog.qml:159
 msgctxt "ChangeLog|"
@@ -26855,18 +26848,18 @@ msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
 "geo-country activity."
 msgstr ""
-"Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
-"geo-country activity."
+"دمج مقاطعتي نورد-تروندلاغ وسور-تروندلاغ النرويجيتين في تروندلاغ في نشاط "
+"البلد الجغرافي."
 
 #: core/ChangeLog.qml:160
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
-msgstr "Fix in braille activities where the cells start at 1, not 0."
+msgstr "إصلاح أنشطة برايل حيث تبدأ الخلايا من 1 وليس 0."
 
 #: core/ChangeLog.qml:161
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
-msgstr "Translation added for Basque, Hungarian and Malayalam."
+msgstr "أضيفت ترجمة للغة الباسكية والهنغارية والمالايالامية."
 
 #: core/ChangeLog.qml:162
 msgctxt "ChangeLog|"
@@ -26874,28 +26867,27 @@ msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
 "Composition)."
 msgstr ""
-"Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
-"Composition)."
+"تحميل/حفظ الإبداعات (Baby Wordprocessor و Balance Box و Piano Composition)."
 
 #: core/ChangeLog.qml:163
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
-msgstr "Translations added for Scottish Gaelic."
+msgstr "أضيفت ترجمات للغة الغيلية الاسكتلندية."
 
 #: core/ChangeLog.qml:164
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
-msgstr "License page added in configuration."
+msgstr "أضيفت صفحة الترخيص في الإعدادات."
 
 #: core/ChangeLog.qml:164
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
-msgstr "Multiple changes on layouts to improve the ergonomy."
+msgstr "تغييرات متعددة على التخطيطات لتحسين الراحة."
 
 #: core/ChangeLog.qml:165
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
-msgstr "Lang activity now available in Polish, Swedish and Ukrainian."
+msgstr "نشاط اللغة متاح الآن باللغات البولندية والسويدية والأوكرانية."
 
 #: core/ChangeLog.qml:166
 msgctxt "ChangeLog|"
@@ -26910,12 +26902,12 @@ msgstr "سجلّ التغييرات."
 #: core/ChangeLog.qml:168
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
-msgstr "Many little fixes."
+msgstr "العديد من الإصلاحات الصغيرة."
 
 #: core/ChangeLog.qml:168
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
-msgstr "Lang activity now available in French."
+msgstr "نشاط اللغة متاح الآن باللغة الفرنسية."
 
 #: core/ChangeLog.qml:169
 msgctxt "ChangeLog|"
@@ -26923,8 +26915,8 @@ msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
 "place (loading an activity for example) and can take some seconds."
 msgstr ""
-"Adding a loading overlay to let the user know that some actions are taking "
-"place (loading an activity for example) and can take some seconds."
+"إضافة تراكب تحميل لإعلام المستخدم بأن بعض الإجراءات جارية (تحميل نشاط على "
+"سبيل المثال) وقد تستغرق بضع ثوانٍ."
 
 #: core/ChangeLog.qml:169
 msgctxt "ChangeLog|"
@@ -26932,8 +26924,9 @@ msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
 "(92% translated), Russian (98% translated), Slovak (92% translated), Turkish."
 msgstr ""
-"Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
-"(92% translated), Russian (98% translated), Slovak (92% translated), Turkish."
+"أضيفت ترجمات للغات التالية: الكاتالانية (البلنسية)، الصينية التقليدية، "
+"الفنلندية (92% مترجمة)، الروسية (98% مترجمة)، السلوفاكية (92% مترجمة)، "
+"التركية."
 
 #: core/ChangeLog.qml:170
 msgctxt "ChangeLog|"
@@ -27405,7 +27398,7 @@ msgstr "ابدأ"
 #: core/LanguageList.qml:34
 msgctxt "LanguageList|"
 msgid "Your system default"
-msgstr "افتراضيّات نظامك"
+msgstr "مبدئيّات نظامك"
 
 #: core/LanguageList.qml:34
 msgctxt "LanguageList|"
@@ -27415,7 +27408,7 @@ msgstr "لغة \"فهمت\""
 #: core/main.cpp:76
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
-msgstr "شغّل «فهمت» بمؤشّر النّظام الافتراضيّ."
+msgstr "شغّل «فهمت» بمؤشّر النّظام المبدئيّ."
 
 #: core/main.cpp:80
 msgctxt "QObject|"
@@ -27435,7 +27428,7 @@ msgstr "شغّل «فهمت» بوضع النّافذة."
 #: core/main.cpp:92
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
-msgstr "شغّل «فهمت» والصّوت مفعّل."
+msgstr "شغّل «فهمت» والصّوت ممكّن."
 
 #: core/main.cpp:96
 msgctxt "QObject|"
@@ -27445,7 +27438,7 @@ msgstr "شغّل «فهمت» بلا صوت."
 #: core/main.cpp:99
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
-msgstr "تعطيل وضع الكشك (افتراضي)."
+msgstr "تعطيل وضع الكشك (مبدئي)."
 
 #: core/main.cpp:102
 msgctxt "QObject|"
@@ -27538,7 +27531,7 @@ msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
-msgstr "تتوفر بيانات جديدة لبعض الأنشطة. هل تريد تحديث اختيار بياناتها؟"
+msgstr "تتوفر بيانات جديدة لبعض الأنشطة. هل تريد تصفير بياناتها المحددة؟"
 
 #: core/main.qml:274
 msgctxt "main|"
