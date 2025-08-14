@@ -327,7 +327,7 @@ msgid ""
 " Click on each item in turn, in the blue frame, and move them to reproduce "
 "the pattern from the pink frame."
 msgstr ""
-"انقر على العناصر عنصرًا عنصرًا ، في الإطار الأزرق ، وحركها لرسم الشكل كما في "
+"انقر على العناصر عنصرًا عنصرًا، في الإطار الأزرق، وحركها لرسم الشكل كما في "
 "الإطار الوردي."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "details"
@@ -585,7 +585,7 @@ msgstr "اكتشف العدد عن طريق كتابة عدد من المجال 
 #: activities/hangman/ActivityInfo.qml:21
 #, kde-format
 msgid "A word is hidden, you must discover it letter by letter."
-msgstr "كلمة مخفية ، يجب أن تكتشفها حرفًا بحرف."
+msgstr "كلمة مخفية، يجب أن تكتشفها حرفًا بحرف."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hanoi"
 #: activities/hanoi/ActivityInfo.qml:18
@@ -612,7 +612,7 @@ msgid ""
 "Click on the hexagons to find the hidden object, the red zone indicates that "
 "you're close to it!"
 msgstr ""
-"انقر على الأشكال السداسية للعثور على الشيء المخفي ، تشير المنطقة الحمراء إلى "
+"انقر على الأشكال السداسية للعثور على الشيء المخفي، تشير المنطقة الحمراء إلى "
 "أنّك قريب منه!"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "imagename"
@@ -1174,8 +1174,8 @@ msgid ""
 "position."
 msgstr ""
 "اكتشف التشكيلة الصحيحة للألوان. النقطة المحاطة بمربع أسود تعني أن اللون صحيح "
-"في موضع صحيح ، أمّا النقطة المحاطة بمربع أبيض فتعني أن اللون صحيح ، لكن في "
-"موضع خاطئ."
+"في موضع صحيح، أمّا النقطة المحاطة بمربع أبيض فتعني أن اللون صحيح، لكن في موضع "
+"خاطئ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tangram"
 #: activities/tangram/ActivityInfo.qml:18
@@ -1190,7 +1190,7 @@ msgstr ""
 #: activities/target/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the target to launch darts, then count your final score!"
-msgstr "انقر فوق الهدف لإطلاق السهام ، ثم احسب نتيجتك النهائية!"
+msgstr "انقر فوق الهدف لإطلاق السهام، ثم احسب نتيجتك النهائية!"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_calculate"
 #: activities/tens_complement_calculate/ActivityInfo.qml:17
@@ -1210,7 +1210,7 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
-"أنشئ ثنائيات من الأعداد تساوي عشرة. اختر رقمًا في القائمة ، ثم اختر مكانًا "
+"أنشئ ثنائيات من الأعداد تساوي عشرة. اختر رقمًا في القائمة، ثم اختر مكانًا "
 "لتنقله إليها."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_swap"

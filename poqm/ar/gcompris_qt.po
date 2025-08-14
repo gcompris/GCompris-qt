@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-08-09 23:14+0400\n"
+"PO-Revision-Date: 2025-08-13 18:38+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -1584,7 +1584,7 @@ msgstr ""
 msgctxt "Battery|"
 msgid ""
 "If the current in a circuit is too high then the battery can be damaged."
-msgstr "إذا كان التيار في الدارة الكهربائية مرتفعًا جدًا ، قد يُتلف البطارية."
+msgstr "إذا كان التيار في الدارة الكهربائية مرتفعًا جدًا، قد يُتلف البطارية."
 
 #. 1st V for Voltage, 2nd V for Volt
 #: activities/analog_electricity/components/Battery.qml:21
@@ -1756,7 +1756,7 @@ msgctxt "TutorialDataset|"
 msgid ""
 "For a detailed description of battery and bulb, click on those and then "
 "click on the info button."
-msgstr "لمعرفة معلومات عن البطارية أو المصباح ، انقر عليه ثم على زر المعلومات."
+msgstr "لمعرفة معلومات عن البطارية أو المصباح، انقر عليه ثم على زر المعلومات."
 
 #: activities/analog_electricity/TutorialDataset.qml:104
 msgctxt "TutorialDataset|"
@@ -1790,8 +1790,8 @@ msgid ""
 "For example, if two terminals of one battery are directly connected "
 "together, it creates a voltage source loop."
 msgstr ""
-"على سبيل المثال ، إن وصلت طرفي بطارية واحدة معًا  وصلًا مباشرًا ، تخلق  حلقة "
-"جهد (دارة قصيرة)."
+"على سبيل المثال، إن وصلت طرفي بطارية واحدة معًا  وصلًا مباشرًا، تخلق  حلقة جهد "
+"(دارة قصيرة)."
 
 #: activities/analog_electricity/TutorialDataset.qml:119
 msgctxt "TutorialDataset|"
@@ -1921,7 +1921,7 @@ msgid ""
 "as Ω."
 msgstr ""
 "يرمز للمقاومة بـحرف R.  الأوم هو وحدة قياس المقاومة في النظام الدولي "
-"للوحدات ، ورمزه Ω."
+"للوحدات، ورمزه Ω."
 
 #: activities/analog_electricity/TutorialDataset.qml:196
 msgctxt "TutorialDataset|"
@@ -2124,8 +2124,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "The leftmost column contains 4 ducks, clicking on one of them produces a "
 "sound and an animation."
-msgstr ""
-"العمود في أقصى اليسار فيه 4 بطّات ، عند النقر على إحداها يصدر صوت وحركة."
+msgstr "العمود في أقصى اليسار فيه 4 بطّات، عند النقر على إحداها يصدر صوت وحركة."
 
 #: activities/baby_mouse/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -2213,7 +2212,7 @@ msgid ""
 msgstr ""
 "اكتب على لوحة المفاتيح الحقيقية أو المرئية فحسب، كما هو الحال في معالج "
 "النصوص. \n"
-"     النقر على زر \"العنوان\" سيجعل النص أكبر. وبالمثل ، فإن  زر \"العنوان "
+"     النقر على زر \"العنوان\" سيجعل النص أكبر. وبالمثل، فإن  زر \"العنوان "
 "الفرعي\" سيجعل النص أصغر قليلاً.  النقر فوق \"فقرة\" سيزيل  التنسيق."
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:26
@@ -2475,9 +2474,8 @@ msgid ""
 "the corresponding button."
 msgstr ""
 "في قائمة إعدادات النشاط، يمكنك الاختيار بين خيار مجموعة المستويات \"المبدئية"
-"\" وخيار مجموعة مستويات مخصصة لك تسمى (\"المستخدم\"). لإنشاء مجموعة "
-"مستويات ، اختر مستويات \"المستخدم\"، ثمّ شغّل محرر المستويات بالنقر على الزر "
-"المقابل."
+"\" وخيار مجموعة مستويات مخصصة لك تسمى (\"المستخدم\"). لإنشاء مجموعة مستويات، "
+"اختر مستويات \"المستخدم\"، ثمّ شغّل محرر المستويات بالنقر على الزر المقابل."
 
 #: activities/balancebox/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -2486,7 +2484,7 @@ msgid ""
 "editing tools on the side to modify the map cells of the currently active "
 "level in the editor:"
 msgstr ""
-"في <b> محرر المستوى</ b> ، يمكنك إنشاء مستويات لك. اختر أداة من  أدوات "
+"في <b> محرر المستوى</ b>، يمكنك إنشاء مستويات لك. اختر أداة من  أدوات "
 "التحرير على الجانب لتعديل خلايا الخريطة للمستوى النشط حاليًا في المحرر:"
 
 #: activities/balancebox/ActivityInfo.qml:31
@@ -2559,8 +2557,8 @@ msgid ""
 "buttons on the bar. Back in the editor you can continue editing the current "
 "level and test it again if needed."
 msgstr ""
-"في المحرر ، استعمل الأسهم لتغيير المستوى الذي تريد تعديله. عند العودة في "
-"المحرر ، يمكنك متابعة تعديل المستوى الحالي واختباره مرة أخرى إذا كان ضروريًا."
+"في المحرر، استعمل الأسهم لتغيير المستوى الذي تريد تعديله. عند العودة في "
+"المحرر، يمكنك متابعة تعديل المستوى الحالي واختباره مرة أخرى إذا كان ضروريًا."
 
 #: activities/balancebox/ActivityInfo.qml:42
 msgctxt "ActivityInfo|"
@@ -2568,7 +2566,7 @@ msgid ""
 "When your level is finished you can save it to a file by clicking on the "
 "'Save' button on the side."
 msgstr ""
-"عند الانتهاء من تعديل المستوى الحالي ، يمكنك حفظه في ملف بالنقر على  زر \"حفظ"
+"عند الانتهاء من تعديل المستوى الحالي، يمكنك حفظه في ملف بالنقر على  زر \"حفظ"
 "\" على الجانب."
 
 #: activities/balancebox/ActivityInfo.qml:43
@@ -2585,7 +2583,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Finally, to load your level set, click on the 'Load saved levels' button."
 msgstr ""
-"أخيرًا ، لتحميل مجموعة مستوياتك الخاصة، انقر على زر \"تحميل المستويات المحفوظة"
+"أخيرًا، لتحميل مجموعة مستوياتك الخاصة، انقر على زر \"تحميل المستويات المحفوظة"
 "\"."
 
 #: activities/balancebox/balancebox.js:72
@@ -2595,7 +2593,7 @@ msgid ""
 "settings menu and then load your file, or choose the 'built-in' level set."
 msgstr ""
 "إما أن تنشئ المستويات الخاصة بك عن طريق بدء محرر المستوى في النشاط  قائمة "
-"إعدادات  النشاط ثم تحميل ملفك ، أو اختر مجموعة المستويات \"المبدئية\"."
+"إعدادات  النشاط ثم تحميل ملفك، أو اختر مجموعة المستويات \"المبدئية\"."
 
 #: activities/balancebox/balancebox.js:106
 #, qt-format
@@ -2753,7 +2751,7 @@ msgid ""
 "button to place the balls in the holes. You win if Tux has to place the last "
 "ball. If you want Tux to begin, just click on him."
 msgstr ""
-"اضغط على زر الكرة لاختيار عدد الكرات ، ثم اضغط \"موافق\" لوضع الكرات في "
+"اضغط على زر الكرة لاختيار عدد الكرات، ثم اضغط \"موافق\" لوضع الكرات في "
 "الثقوب.ستفوز إذا كان على البطريق أن يضع الكرة الأخيرة. إذا كنت تريد من "
 "البطريق أن يبدأ، انقر عليه فقط."
 
@@ -2771,7 +2769,7 @@ msgid ""
 "button to place the balls in the holes. You win if your friend has to place "
 "the last ball."
 msgstr ""
-"اضغط على زر الكرة لاختيار عدد الكرات ، ثم اضغط \"موافق\" لوضع الكرات في "
+"اضغط على زر الكرة لاختيار عدد الكرات، ثم اضغط \"موافق\" لوضع الكرات في "
 "الثقوب.ستفوز إذا كان على صديقك أن يضع الكرة الأخيرة."
 
 #. Activity title
@@ -2809,14 +2807,14 @@ msgid ""
 "Turn on the right bulbs to represent the binary of the given decimal number. "
 "When you have achieved it, press OK."
 msgstr ""
-"أضِئ المصابيح لتمثيل العدد الثنائي للعدد العشري المعطى. بعد أن تنهي أضغط على "
+"أضِئ المصابيح لتنسخة العدد الثنائي للعدد العشري المعطى. بعد أن تنهي أضغط على "
 "موافق."
 
 #: activities/binary_bulb/BinaryBulb.qml:84
 msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr ""
-"يعلم هذا النشاط كيفية تحويل الأعداد من التمثيل العشري إلى التمثيل الثنائي."
+"يعلم هذا النشاط كيفية تحويل الأعداد من التنسخة العشري إلى التنسخة الثنائي."
 
 #: activities/binary_bulb/BinaryBulb.qml:88
 msgctxt "BinaryBulb|"
@@ -2826,12 +2824,12 @@ msgid ""
 "up the binary system of numeration."
 msgstr ""
 "تستخدم أجهزة الحاسوب الترانزستورات للعدّ والترانزستورات لها حالتان فقط: 0 و "
-"1. رياضيًا ، تُمثل هذه الحالات بـ 0 و 1 ، مما يشّكل نظام التعداد الثنائي."
+"1. رياضيًا، تُمثل هذه الحالات بـ 0 و 1، مما يشّكل نظام التعداد الثنائي."
 
 #: activities/binary_bulb/BinaryBulb.qml:92
 msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
-msgstr "في النشاط، نحاكي 0 و 1 بواسطة مصابيح ، مضيئة منطفئة."
+msgstr "في النشاط، نحاكي 0 و 1 بواسطة مصابيح، مضيئة منطفئة."
 
 #: activities/binary_bulb/BinaryBulb.qml:96
 msgctxt "BinaryBulb|"
@@ -2839,7 +2837,7 @@ msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
 "to 255 with 8 bits only."
 msgstr ""
-"يستخدم النظام الثنائي هذه الأرقام بكفاءة عالية ، مما يسمح بالعد من 0 إلى 255 "
+"يستخدم النظام الثنائي هذه الأرقام بكفاءة عالية، مما يسمح بالعد من 0 إلى 255 "
 "في 8 بت فقط."
 
 #: activities/binary_bulb/BinaryBulb.qml:100
@@ -2850,14 +2848,14 @@ msgid ""
 "bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit 8 → "
 "2⁷=128."
 msgstr ""
-"يضيف كل بت قيمة تدريجية، تتوافق مع قوى 2 ، تصاعديًا من اليمين إلى اليسار:  بت "
-"1 → 2⁰=1 ، بت 2 → 2¹=2 ، بت 3 → 2²=4 ،  بت 4 → 2³=8 ،بت 5 → 2⁴=16 ، بت 6 → "
-"2⁵=32 ،  بت 7 → 2⁶=64 ، بت 8 → 2⁷=128."
+"يضيف كل بت قيمة تدريجية، تتوافق مع قوى 2، تصاعديًا من اليمين إلى اليسار:  بت "
+"1 → 2⁰=1، بت 2 → 2¹=2، بت 3 → 2²=4،  بت 4 → 2³=8 ،بت 5 → 2⁴=16، بت 6 → "
+"2⁵=32،  بت 7 → 2⁶=64، بت 8 → 2⁷=128."
 
 #: activities/binary_bulb/BinaryBulb.qml:104
 msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
-msgstr "لتحويل عدد عشري 5 إلى قيمة ثنائية ، يُضاف 1 و 4."
+msgstr "لتحويل عدد عشري 5 إلى قيمة ثنائية، يُضاف 1 و 4."
 
 #: activities/binary_bulb/BinaryBulb.qml:108
 msgctxt "BinaryBulb|"
@@ -2865,7 +2863,7 @@ msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
 "equal to binary 101."
 msgstr ""
-"تُعيّن البتات المقابلة لها إلى 1 ، وتُعيّن البتات الأخرى إلى 0. العدد العشري 5 "
+"تُعيّن البتات المقابلة لها إلى 1، وتُعيّن البتات الأخرى إلى 0. العدد العشري 5 "
 "يساوي 101 في النظام الثنائي."
 
 #: activities/binary_bulb/BinaryBulb.qml:112
@@ -2877,7 +2875,7 @@ msgstr "هذه الصورة ستساعدك على حساب قيمة البتّا
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
-msgstr "ما هو التمثيل الثنائي لـ %1؟"
+msgstr "ما هو التنسخة الثنائي لـ %1؟"
 
 #: activities/binary_bulb/resource/tutorial4.qml:31
 msgctxt "tutorial4|"
@@ -2962,7 +2960,7 @@ msgid ""
 "Again, similar to the first line in the character chart but take care, the "
 "'W' letter was added afterward."
 msgstr ""
-"مرة أخرى ، على غرار السطر الأول في مخطط الحرف ، لكن انتبه، أُضيف الحرف \"W"
+"مرة أخرى، على غرار السطر الأول في مخطط الحرف، لكن انتبه، أُضيف الحرف \"W"
 "\"لاحقا."
 
 #: activities/braille_alphabets/braille_alphabets.js:68
@@ -3193,7 +3191,7 @@ msgid ""
 "Read the instructions and select the correct date on the calendar, and then "
 "validate your answer by clicking on the OK button."
 msgstr ""
-"اقرأ التعليمات ثم حدّد التاريخ الصحيح في التقويم ،  وأكدّ إجابتك بالنقر فوق "
+"اقرأ التعليمات ثم حدّد التاريخ الصحيح في التقويم،  وأكدّ إجابتك بالنقر فوق "
 "الزر \"موافق\"."
 
 #: activities/calendar/ActivityInfo.qml:24
@@ -3203,7 +3201,7 @@ msgid ""
 "In some levels, you need to find the day of the week for a given date. In "
 "this case, click on the corresponding day of the week in the list."
 msgstr ""
-"في بعض المستويات ، عليك العثور على اسم اليوم لتاريخ معين.  في هذه الحالة ، "
+"في بعض المستويات، عليك العثور على اسم اليوم لتاريخ معين.  في هذه الحالة ، "
 "انقر فوق اليوم المناسب من القائمة."
 
 #: activities/calendar/ActivityInfo.qml:26
@@ -3472,8 +3470,8 @@ msgid ""
 "Mark's birthday is on November 4. In 2017 his party was exactly two weeks "
 "later.<br> Find the date of his party in 2017"
 msgstr ""
-"وُلد مالك في 4 نوفمبر.  في عام 2017 ، كان حفل مولده بالضبط أسبوعين لاحقًا. "
-"<br> ابحث عن تاريخ حفله في عام 2017"
+"وُلد مالك في 4 نوفمبر.  في عام 2017، كان حفل مولده بالضبط أسبوعين لاحقًا. <br> "
+"ابحث عن تاريخ حفله في عام 2017"
 
 #: activities/calendar/calendar_dataset.js:296
 msgctxt "calendar_dataset|"
@@ -3540,7 +3538,7 @@ msgid ""
 "by clicking on them. Two locks of the same type cannot be operated "
 "simultaneously."
 msgstr ""
-"تمثل الأعمدة الملونة أقفال المياه ، والتي تعمل بالنقر عليها. لا يمكن فتح "
+"تمثل الأعمدة الملونة أقفال المياه، والتي تعمل بالنقر عليها. لا يمكن فتح "
 "قفلين من نفس النوع في وقت واحد."
 
 #: activities/canal_lock/CanalLock.qml:80
@@ -4305,8 +4303,8 @@ msgstr ""
 "     \"صنع فخ\". استخدم البيادق كطُعم. \n"
 "<b> التفسير </ b>: بهذه الطريقة يمكنك إغراء خصمك بعيدًا عن منطقة راحته. \n"
 "     تحلى بالصبر الكافي. \n"
-"<b> التفسير </ b>: لا تتسرع كثيرًا ، وتحلّ بالصبر. اسمح لنفسك أن تفكر  قليلا "
-"وحاول توقع تحركات خصمك القادمة ، حتى تمسك به أو تحمي  قطعك من هجماته."
+"<b> التفسير </ b>: لا تتسرع كثيرًا، وتحلّ بالصبر. اسمح لنفسك أن تفكر  قليلا "
+"وحاول توقع تحركات خصمك القادمة، حتى تمسك به أو تحمي  قطعك من هجماته."
 
 #: activities/chess/ActivityInfo.qml:31
 #: activities/chess_2players/ActivityInfo.qml:31
@@ -4318,7 +4316,7 @@ msgid ""
 "for 3 seconds."
 msgstr ""
 "نقرة واحدة على زر التراجع ستؤدي إلى التراجع عن خطوة واحدة. بنقرة واحدة على "
-"زر الإعادة  سيعيد حركة واحدة. للتراجع عن جميع الحركات ، اضغط باستمرار على زر "
+"زر الإعادة  سيعيد حركة واحدة. للتراجع عن جميع الحركات، اضغط باستمرار على زر "
 "التراجع لمدة 3 ثوانٍ."
 
 #: activities/chess/ActivityInfo.qml:32
@@ -4420,8 +4418,8 @@ msgstr ""
 "     \"صنع فخ\". استخدم البيادق كطُعم. \n"
 "<b> التفسير </ b>: بهذه الطريقة يمكنك إغراء خصمك بعيدًا عن منطقة راحته. \n"
 "     تحلى بالصبر الكافي. \n"
-"<b> التفسير </ b>: لا تتسرع كثيرًا ، وتحلّ بالصبر. اسمح لنفسك أن تفكر  قليلا "
-"وحاول توقع تحركات خصمك القادمة ، حتى تمسك به أو تحمي  قطعك من هجماته."
+"<b> التفسير </ b>: لا تتسرع كثيرًا، وتحلّ بالصبر. اسمح لنفسك أن تفكر  قليلا "
+"وحاول توقع تحركات خصمك القادمة، حتى تمسك به أو تحمي  قطعك من هجماته."
 
 #. Activity title
 #: activities/chess_partyend/ActivityInfo.qml:15
@@ -4471,8 +4469,8 @@ msgstr ""
 "     \"صنع فخ\". استخدم البيادق كطُعم. \n"
 "<b> التفسير </ b>: بهذه الطريقة يمكنك إغراء خصمك بعيدًا عن منطقة راحته. \n"
 "     تحلى بالصبر الكافي. \n"
-"<b> التفسير </ b>: لا تتسرع كثيرًا ، وتحلّ بالصبر. اسمح لنفسك أن تفكر  قليلا "
-"وحاول توقع تحركات خصمك القادمة ، حتى تمسك به أو تحمي  قطعك من هجماته."
+"<b> التفسير </ b>: لا تتسرع كثيرًا، وتحلّ بالصبر. اسمح لنفسك أن تفكر  قليلا "
+"وحاول توقع تحركات خصمك القادمة، حتى تمسك به أو تحمي  قطعك من هجماته."
 
 #. Activity title
 #: activities/chronos/ActivityInfo.qml:19
@@ -4930,7 +4928,7 @@ msgid ""
 "selected the next blue one appears. You can click and drag from one point to "
 "the next ones, or click on each point one after the other."
 msgstr ""
-"ارسم الصورة بالنقر على النقاط حسب الترتيب،في كل مرّة تحدد نقطة ، تتلون التي "
+"ارسم الصورة بالنقر على النقاط حسب الترتيب،في كل مرّة تحدد نقطة، تتلون التي "
 "بعدها بالأزرق. يمكنك النقر والسحب من نقطة لنقطة موالية، أو النقر على نقطة "
 "بعد أخرى."
 
@@ -5354,7 +5352,7 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
-"يتطلب هذا النشاط صوتًا ، لذلك ستشتغل بعض الأصوات حتى لو كان الصوت أو تأثيرات "
+"يتطلب هذا النشاط صوتًا، لذلك ستشتغل بعض الأصوات حتى لو كان الصوت أو تأثيرات "
 "الصوت معطلة في الإعدادات الرئيسة."
 
 #: activities/colors/FindIt.qml:267
@@ -5402,7 +5400,7 @@ msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
-"إذا كانت بعض الإجابات غير صحيحة ، فسيظهر رمز الزائد على السطر المعني. صحّح "
+"إذا كانت بعض الإجابات غير صحيحة، فسيظهر رمز الزائد على السطر المعني. صحّح "
 "الخطأ، ثم اضغط الزر \"موافق\" مرة أخرى."
 
 #: activities/comparator/ActivityInfo.qml:28
@@ -5515,9 +5513,8 @@ msgid ""
 "right to move the selected item."
 msgstr ""
 "انقل العناصر في الإطار الأزرق لتناسب مواضعها في إطار النموذج.لتحديد عنصر ، "
-"انقر عليه فحسب. بجانب الرافعة ، ستجد أربعة أسهم تسمح لك بتحريك العنصر "
-"المحدد. تستطيع السحب أيضًا لأعلى / لأسفل / لليسار / لليمين لتحريك العنصر "
-"المحدد."
+"انقر عليه فحسب. بجانب الرافعة، ستجد أربعة أسهم تسمح لك بتحريك العنصر المحدد. "
+"تستطيع السحب أيضًا لأعلى / لأسفل / لليسار / لليمين لتحريك العنصر المحدد."
 
 #: activities/crane/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -5632,7 +5629,7 @@ msgstr "قلعة إيليان دونان"
 #: activities/details/resource/board/board11_0.qml:14
 msgctxt "board11_0|"
 msgid "Gizah Pyramids, Egypt"
-msgstr "أهرامات الجيزة ، مصر"
+msgstr "أهرامات الجيزة، مصر"
 
 #: activities/details/resource/board/board12_0.qml:14
 msgctxt "board12_0|"
@@ -5657,7 +5654,7 @@ msgstr "باحة متحف اللوفر وهرمه"
 #: activities/details/resource/board/board16_0.qml:14
 msgctxt "board16_0|"
 msgid "Panorama of Château de Chenonceau, Indre-et-Loire, France."
-msgstr "بانوراما شاتو-دي-شينونسو ، إندر-إي-لوار ، فرنسا."
+msgstr "بانوراما شاتو-دي-شينونسو، إندر-إي-لوار، فرنسا."
 
 #: activities/details/resource/board/board17_0.qml:14
 msgctxt "board17_0|"
@@ -5667,7 +5664,7 @@ msgstr "طاحونة هوائية، الدانمارك"
 #: activities/details/resource/board/board18_0.qml:14
 msgctxt "board18_0|"
 msgid "Nagoya Castle, Aichi Prefecture, Japan."
-msgstr "قلعة ناغويا ، محافظة آيتشي ، اليابان."
+msgstr "قلعة ناغويا، محافظة آيتشي، اليابان."
 
 #: activities/details/resource/board/board19_0.qml:14
 msgctxt "board19_0|"
@@ -5677,12 +5674,12 @@ msgstr "تاج محلّ، الهند"
 #: activities/details/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
 msgid "Vincent van Gogh, Entrance Hall of Saint-Paul Hospital - 1889"
-msgstr "فنسنت فان جوخ ، مدخل قاعة مستشفى سان بول - 1889"
+msgstr "فنسنت فان جوخ، مدخل قاعة مستشفى سان بول - 1889"
 
 #: activities/details/resource/board/board20_0.qml:14
 msgctxt "board20_0|"
 msgid "Castle Neuschwanstein at Schwangau, Bavaria, Germany"
-msgstr "قلعة نويشفانشتاين في شفانجو ، بافاريا ، ألمانيا"
+msgstr "قلعة نويشفانشتاين في شفانجو، بافاريا، ألمانيا"
 
 #: activities/details/resource/board/board21_0.qml:14
 msgctxt "board21_0|"
@@ -5699,12 +5696,12 @@ msgstr "فنسنت فان جوخ جسر \"لانجلوا\" في \"آرل\" مع 
 #: activities/details/resource/board/board3_0.qml:14
 msgctxt "board3_0|"
 msgid "Vincent van Gogh, The Church at Auvers-sur-Oise - 1890"
-msgstr "فنسنت فان جوخ ، الكنيسة في أوفير سور واز - 1890"
+msgstr "فنسنت فان جوخ، الكنيسة في أوفير سور واز - 1890"
 
 #: activities/details/resource/board/board4_0.qml:14
 msgctxt "board4_0|"
 msgid "Vincent van Gogh, Painter on His Way to Work - 1888"
-msgstr "فنسنت فان جوخ ، رسام في طريقه إلى العمل - 1888"
+msgstr "فنسنت فان جوخ، رسام في طريقه إلى العمل - 1888"
 
 #: activities/details/resource/board/board5_0.qml:14
 msgctxt "board5_0|"
@@ -5724,12 +5721,12 @@ msgstr "فنسنت فان جوخ، المقهى الليلي - 1888"
 #: activities/details/resource/board/board8_0.qml:14
 msgctxt "board8_0|"
 msgid "Vincent van Gogh, Portrait of Pere Tanguy 1887-8"
-msgstr "فنسنت فان جوخ ، صورة بير تانجوي 1887-8"
+msgstr "فنسنت فان جوخ، صورة بير تانجوي 1887-8"
 
 #: activities/details/resource/board/board9_0.qml:14
 msgctxt "board9_0|"
 msgid "Notre Dame de Paris cathedral on the Île de la Cité in Paris, France."
-msgstr "كاتدرائية \"نوتردام دي باريس\" في \"إيل-دو-لاسيتي\" في باريس ، فرنسا."
+msgstr "كاتدرائية \"نوتردام دي باريس\" في \"إيل-دو-لاسيتي\" في باريس، فرنسا."
 
 #. Activity title
 #: activities/digital_electricity/ActivityInfo.qml:15
@@ -5882,9 +5879,9 @@ msgid ""
 "output is 1 if A = B, otherwise it's 0. The third output is 1 if A > B, "
 "otherwise it's 0. "
 msgstr ""
-"يأخذ المقارن رقمين في المدخل ، A و B. ويقارنهم ثم يخرج 3 قيم.  الناتج الأول "
-"يساوي 1 إذا كان  A &lt; B. وإلا فسيكون 0.  الناتج الثاني هو 1 إذا كان A = "
-"B ، وإلا فهو 0. الناتج الثالث يعطي 1 إذا A &gt; B، وإلا فسيكون 0. "
+"يأخذ المقارن رقمين في المدخل، A و B. ويقارنهم ثم يخرج 3 قيم.  الناتج الأول "
+"يساوي 1 إذا كان  A &lt; B. وإلا فسيكون 0.  الناتج الثاني هو 1 إذا كان A = B، "
+"وإلا فهو 0. الناتج الثالث يعطي 1 إذا A &gt; B، وإلا فسيكون 0. "
 
 #: activities/digital_electricity/components/DigitalLight.qml:20
 msgctxt "DigitalLight|"
@@ -5893,7 +5890,7 @@ msgid ""
 "turns green if the input is 1, and turns red if the input is 0."
 msgstr ""
 "يستخدم ضوء رقمي لإظهار مخارج المكونات الرقمية الأخرى. يظهر اللون الأخضر إذا "
-"كان الإدخال 1 ، ويصبح أحمر إذا كان الإدخال 0."
+"كان الإدخال 1، ويصبح أحمر إذا كان الإدخال 0."
 
 #: activities/digital_electricity/components/NandGate.qml:21
 msgctxt "NandGate|"
@@ -5901,8 +5898,8 @@ msgid ""
 "A NAND gate outputs the opposite of an AND gate. If all the inputs are 1, "
 "the output is equal to 0 and as soon as one input is equal to 0 it gives a 1:"
 msgstr ""
-"تنتج بوابة NAND عكس بوابة AND. إذا كانت جميع المدخلات 1 ، فإن المخرج يساوي "
-"0. وبمجرد أن يكون أحد المدخلات يساوي 0 ، فإنها يعطي 1:"
+"تنتج بوابة NAND عكس بوابة AND. إذا كانت جميع المدخلات 1، فإن المخرج يساوي 0. "
+"وبمجرد أن يكون أحد المدخلات يساوي 0، فإنها يعطي 1:"
 
 #: activities/digital_electricity/components/NandGate.qml:24
 msgctxt "NandGate|"
@@ -5917,7 +5914,7 @@ msgid ""
 "to 0:"
 msgstr ""
 "تخرج بوابة NOR عكس بوابة OR. بمجرد وجود 1 في  المدخلات ينتج المخرجات 0.  "
-"للحصول على 1 ، يجب أن تكون جميع المدخلات مساوية لـ 0:"
+"للحصول على 1، يجب أن تكون جميع المدخلات مساوية لـ 0:"
 
 #: activities/digital_electricity/components/NorGate.qml:24
 msgctxt "NorGate|"
@@ -5947,14 +5944,14 @@ msgid ""
 "voltage of a circuit."
 msgstr ""
 "تعمل الدارات الرقمية مع حالتين فقط: 0 و 1. وهذا يسمح بتنفيذ عمليات رياضية "
-"مثل الجمع والطرح ...  وهي أساس تقنيات الحاسوب. في الواقع ، 0 غالبًا ما يُمثّل "
+"مثل الجمع والطرح ...  وهي أساس تقنيات الحاسوب. في الواقع، 0 غالبًا ما يُمثّل "
 "بجهد معدوم. أمّا  1 فيمثل وجود جهد في الدارة."
 
 #: activities/digital_electricity/components/OrGate.qml:21
 msgctxt "OrGate|"
 msgid ""
 "An OR gate outputs 1 if any of the inputs is 1, otherwise its output is 0:"
-msgstr "بوابة OR تعطي 1 إذا كان أي من المدخلات 1 ، وإلا كان ناتجها 0:"
+msgstr "بوابة OR تعطي 1 إذا كان أي من المدخلات 1، وإلا كان ناتجها 0:"
 
 #: activities/digital_electricity/components/OrGate.qml:22
 msgctxt "OrGate|"
@@ -5971,7 +5968,7 @@ msgid ""
 msgstr ""
 "دارة العرض المكونة من 7 مقاطع تأخذ 7 مدخلات ثنائية. يتكوّن العارض من 7 قطع، "
 "كل قطعة تضيء حسب المدخلات.  عن طريق توليد تشكيلات مختلفة من  المدخلات "
-"الثنائية ، يمكن للعارض أن يظهر الأرقام من 0 إلى 9 وبعض الأحرف. المخطط هو:"
+"الثنائية، يمكن للعارض أن يظهر الأرقام من 0 إلى 9 وبعض الأحرف. المخطط هو:"
 
 #: activities/digital_electricity/components/SignalGenerator.qml:22
 msgctxt "SignalGenerator|"
@@ -6007,8 +6004,8 @@ msgid ""
 "of 1 in inputs is even. In this activity, a 2 inputs XOR gate is shown. The "
 "output for a 2 inputs XOR gate is:"
 msgstr ""
-"بوابة XOR  تخرج 1 إذا كان عدد الأرقام 1 في المدخلات فرديًا ، و 0 إذا كان عدد "
-"الأرقام   1 في المدخلات. في هذا النشاط ، نستعمل بوابة XOR ذات مدخلين. مخرج "
+"بوابة XOR  تخرج 1 إذا كان عدد الأرقام 1 في المدخلات فرديًا، و 0 إذا كان عدد "
+"الأرقام   1 في المدخلات. في هذا النشاط، نستعمل بوابة XOR ذات مدخلين. مخرج "
 "بوابة XOR ذات مدخلين هو:"
 
 #: activities/digital_electricity/components/XorGate.qml:23
@@ -6025,7 +6022,7 @@ msgid ""
 "voltage of a circuit."
 msgstr ""
 "تعمل الدوائر الرقمية مع حالتين فقط: 0 و 1. وهذا يسمح بتنفيذ عمليات رياضية "
-"مثل الجمع والطرح ...  وهي أساس تقنيات الحاسوب. في الواقع ، 0 غالبًا ما يُمثّل "
+"مثل الجمع والطرح ...  وهي أساس تقنيات الحاسوب. في الواقع، 0 غالبًا ما يُمثّل "
 "بجهد معدوم. أمّا  1 فيمثل وجود جهد في الدارة."
 
 #: activities/digital_electricity/DigitalElectricity.qml:248
@@ -6186,7 +6183,7 @@ msgid ""
 "For a more detailed description about the NAND gate, select it and click on "
 "the info button."
 msgstr ""
-"للحصول على معلومات أكثر تفصيلاً حول بوابة NAND ، حدّدها وانقر فوق زر المعلومات."
+"للحصول على معلومات أكثر تفصيلاً حول بوابة NAND، حدّدها وانقر فوق زر المعلومات."
 
 #: activities/digital_electricity/TutorialDataset.qml:218
 msgctxt "TutorialDataset|"
@@ -6281,7 +6278,7 @@ msgid ""
 "For a more detailed description about the NOR gate, select it and click on "
 "the info button."
 msgstr ""
-"للحصول على معلومات أكثر تفصيلاً حول بوابة NOR ، حدّدها وانقر فوق زر المعلومات."
+"للحصول على معلومات أكثر تفصيلاً حول بوابة NOR، حدّدها وانقر فوق زر المعلومات."
 
 #: activities/digital_electricity/TutorialDataset.qml:357
 msgctxt "TutorialDataset|"
@@ -6349,9 +6346,9 @@ msgid ""
 "output. The first value is 1 if A < B, the second value is 1 if A = B and "
 "the third value is 1 if A > B."
 msgstr ""
-"يأخذ المقارن رقمين في المدخل ، A و B ويقارنهم ثم يخرج  3 قيم  الناتج الأول "
-"يساوي 1 إذا كان  A &lt; B.والثاني 1 إذا كان A = B ، والثالث يعطي 1 إذا A "
-"&gt; B."
+"يأخذ المقارن رقمين في المدخل، A و B ويقارنهم ثم يخرج  3 قيم  الناتج الأول "
+"يساوي 1 إذا كان  A &lt; B.والثاني 1 إذا كان A = B، والثالث يعطي 1 إذا A &gt; "
+"B."
 
 #: activities/digital_electricity/TutorialDataset.qml:512
 msgctxt "TutorialDataset|"
@@ -6517,7 +6514,7 @@ msgid ""
 "on an item of the answers list in the top left area and enter the "
 "corresponding answer with the keyboard."
 msgstr ""
-"أولاً ، نظّم الأشياء حتى تتمكن من عدّها. ثم انقر فوق كل عنصر في قائمة الإجابات "
+"أولاً، نظّم الأشياء حتى تتمكن من عدّها. ثم انقر فوق كل عنصر في قائمة الإجابات "
 "في الجزء العلوي الأيسر وأدخل الإجابة المقابلة بلوحة المفاتيح."
 
 #: activities/enumerate/ActivityInfo.qml:26
@@ -6716,7 +6713,7 @@ msgid ""
 "it looks like. Study well this information, because you will be tested in "
 "level 2 and 3."
 msgstr ""
-"في المستوى الأول ، يستمتع اللاعبون باستكشاف كل حيوان على الشاشة. انقر فوق  "
+"في المستوى الأول، يستمتع اللاعبون باستكشاف كل حيوان على الشاشة. انقر فوق  "
 "الحيوان وتعلّم ما اسمه وما صوته وكيف يبدو. أدرس جيدًا هذه المعلومات، ستجتاز "
 "اختبارات في المستوى 2 و 3."
 
@@ -6727,7 +6724,7 @@ msgid ""
 "makes this sound. Click on the corresponding animal. If you'd like to hear "
 "the animal sound repeated, click on the play button."
 msgstr ""
-"في المستوى الثاني ، ستسمع صوت حيوان عشوائيًا وعليك أن تعرف الحيوان الذي يصدر "
+"في المستوى الثاني، ستسمع صوت حيوان عشوائيًا وعليك أن تعرف الحيوان الذي يصدر "
 "هذا الصوت. انقر على الحيوان المناسب. إذا كنت ترغب في تكرار سماع صوت "
 "الحيوان،  انقر على زر التشغيل."
 
@@ -6745,7 +6742,7 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
-"يتطلب هذا النشاط صوتًا ، لذلك ستشتغل بعض الأصوات حتى لو كان الصوت أو تأثيرات "
+"يتطلب هذا النشاط صوتًا، لذلك ستشتغل بعض الأصوات حتى لو كان الصوت أو تأثيرات "
 "الصوت معطلة في الإعدادات الرئيسة."
 
 #: activities/explore_farm_animals/ExploreLevels.qml:307
@@ -6771,7 +6768,7 @@ msgid ""
 "single-toed hooves."
 msgstr ""
 "صوت الحصان \"الصهيل\". الخيول تركض ركضا جيدا، مما يسمح لها بالهروب من "
-"الحيوانات المفترسة ، ولها إحساسٌ ممتازٌ بالتوازن. لديه حوافر."
+"الحيوانات المفترسة، ولها إحساسٌ ممتازٌ بالتوازن. لديه حوافر."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
 msgctxt "board1|"
@@ -6789,7 +6786,7 @@ msgid ""
 "The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
 "of long-distance flight. They have a comb on their head."
 msgstr ""
-"صوت الدجاجة \"نقنقة\". الدجاج المنزلي له أجنحة ، لكنه لا يطير بعيدا.لديها  "
+"صوت الدجاجة \"نقنقة\". الدجاج المنزلي له أجنحة، لكنه لا يطير بعيدا.لديها  "
 "عُرْفٌ على رأسها."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
@@ -7022,7 +7019,7 @@ msgstr ""
 "\"الكولوسيوم\" أشهر المعالم القديمة في روما.   يمكن التعرف عليه باعتباره "
 "نموذجا كلاسيكيا للملاعب في العصر الحالي، على الرغم من مرور 2000 سنة على "
 "إنشائه، وبقائه مهجورًا، ونهب كثير من حجارته للبناء. كان أول مدرج دائم يُبنى في "
-"روما، وأكثر إثارة للإعجاب في العالم القديم، لم يسبق له مثيل."
+"روما، وأكثر إثارة للإعجاب في العالم القديم، لم يسبق له نسخة."
 
 #: activities/explore_monuments/resource/board/board1.qml:41
 #: activities/explore_monuments/resource/board/board1.qml:44
@@ -7038,7 +7035,7 @@ msgid ""
 "become a cultural icon of both Rio de Janeiro and Brazil."
 msgstr ""
 "بُني \"تمثال المسيح المخلص\"  على طراز \"الآرت ديكو\" ليسوع المسيح في \"ريو "
-"دي جانيرو\" في البرازيل. يُعدّ رمزًا للمسيحية في جميع أنحاء العالم ، وصار أيضًا "
+"دي جانيرو\" في البرازيل. يُعدّ رمزًا للمسيحية في جميع أنحاء العالم، وصار أيضًا "
 "رمزًا ثقافيًا لمدينة \"ريو دي جانيرو\" ودولة البرازيل."
 
 #: activities/explore_monuments/resource/board/board1.qml:52
@@ -7056,7 +7053,7 @@ msgid ""
 "east to west of China."
 msgstr ""
 "أُدرِج سور الصين العظيم في قائمة التراث العالمي من قبل اليونسكو في عام 1987.  "
-"مثل تنين عملاق ، يجوب السور البلاد صعودا وهبوطا عبر الصحاري والمراعي والجبال "
+"مثل تنين عملاق، يجوب السور البلاد صعودا وهبوطا عبر الصحاري والمراعي والجبال "
 "والهضاب والسهول على ما يقرب من 13170 ميلا(21196 كم) من شرق الصين إلى غربها."
 
 #: activities/explore_monuments/resource/board/board1.qml:63
@@ -7080,7 +7077,7 @@ msgstr ""
 "الغابات الجبلية الاستوائية، في مكان جميل جدًا.  ربما كانت اروع مدينة بنتها "
 "إمبراطورية \"الإنكا\" في أوجها، تبدو جدرانها العملاقة والمدرجات والمنحدرات "
 "كأنها قُطعت قطعًا طبيعيًا من منحدرات الصخور المتراصّة. يقع المكان الطبيعي على "
-"المنحدرات الشرقية من جبال الأنديز ، ويشمل حوض الأمازون الأعلى بتنوعه الغني "
+"المنحدرات الشرقية من جبال الأنديز، ويشمل حوض الأمازون الأعلى بتنوعه الغني "
 "بالنباتات والحيوانات."
 
 #: activities/explore_monuments/resource/board/board1.qml:74
@@ -7250,7 +7247,7 @@ msgid ""
 "for the exquisite stone carvings that cover the entire structure."
 msgstr ""
 "معبد الشمس \"كونارك\" هندوسي من القرن الثالث عشر مكرّس لإله الشمس.على شكل "
-"عربة عملاقة ، يشتهر المعبد بالحجر الرائع ومنحوتات تغطي الهيكل بأكمله."
+"عربة عملاقة، يشتهر المعبد بالحجر الرائع ومنحوتات تغطي الهيكل بأكمله."
 
 #: activities/explore_monuments/resource/board/board2.qml:84
 #: activities/explore_monuments/resource/board/board2.qml:87
@@ -7267,7 +7264,7 @@ msgid ""
 "Wodeyar kings in the 14th century."
 msgstr ""
 "قصر ميسور أو \"قصر ميسور مهراجا\" من أكبر معالم الهند.يُعرف أيضًا باسم Amba "
-"Vilas ، ويقع في قلب مدينة ميسور.  بناه ملوك \"وديار\" في القرن الرابع عشر."
+"Vilas، ويقع في قلب مدينة ميسور.  بناه ملوك \"وديار\" في القرن الرابع عشر."
 
 #: activities/explore_monuments/resource/board/board2.qml:95
 #: activities/explore_monuments/resource/board/board2.qml:98
@@ -7636,8 +7633,8 @@ msgid ""
 "thousands of visitors, year after year, from Germany and abroad."
 msgstr ""
 "تعد كاتدرائية برلين أكبر كنيسة في المدينة، وهي مركز حيوي للكنيسة "
-"البروتستانتية في ألمانيا. تستقطب الآلاف من الزوار ، عامًا بعد عام ، من "
-"ألمانيا وخارجها."
+"البروتستانتية في ألمانيا. تستقطب الآلاف من الزوار، عامًا بعد عام، من ألمانيا "
+"وخارجها."
 
 #: activities/explore_monuments/resource/board/board4.qml:62
 #: activities/explore_monuments/resource/board/board4.qml:65
@@ -7745,7 +7742,7 @@ msgstr ""
 "الوطنية الأمريكية وموطن وأمّة نافاجو. اعتبر الوادي معلما وطنيا في عام 1931. "
 "حُفظت عدد من مواقع الأمريكيين الأصليين البكر، في ما يقرب من 84000 فدان من "
 "المنتزهات. في الوادي أيضًا مجموعة من التكوينات الجيولوجية الصخرية، من بينها "
-"العقرب\"  Spider Rock ، وهو برج من الحجر الرملي يبلغ ارتفاعه 800 قدم، يرتفع "
+"العقرب\"  Spider Rock، وهو برج من الحجر الرملي يبلغ ارتفاعه 800 قدم، يرتفع "
 "ارتفاعا مخيفا من قاع الوادي."
 
 #: activities/explore_monuments/resource/board/board5.qml:40
@@ -7762,7 +7759,7 @@ msgid ""
 "still a Spanish territory. Constructed out of the rare coquina limestone, "
 "the star-shaped Castillo also is the oldest masonry fort in the country."
 msgstr ""
-"تقع قلعة سان مارس في سانت أوغسطين بولاية فلوريدا ، تتربع على 20 فدانًا بُنيت "
+"تقع قلعة سان مارس في سانت أوغسطين بولاية فلوريدا، تتربع على 20 فدانًا بُنيت "
 "لتحصين المدينة في عام 1695، عندما كانت فلوريدا لا تزال أرضًا إسبانية. شيدت "
 "بالحجر الجيري في شكل نجمة وتعدّ أقدم حصن مبني في البلاد."
 
@@ -7824,7 +7821,7 @@ msgid ""
 msgstr ""
 "بني نُصب لينكولن التذكاري من الحجر الأبيض مع 36 عمودًا ضخما، يعدّ من أشهر "
 "الهياكل في الولايات المتحدة. يقع النصب التذكاري في الطرف الغربي من National "
-"Mall ، في حديقة West  Potomac، مثال في العمارة الكلاسيكية الجديدة. يتميز "
+"Mall، في حديقة West  Potomac، مثال في العمارة الكلاسيكية الجديدة. يتميز "
 "بتمثال ارتفاعه 19 قدمًا لأبراهام لينكولن جالسًا يتأمّل، وهو محاط بنقوش عليها "
 "خطاب تنصيب لينكولن الثاني و أشهر خطبه، خطبة جيتيسبيرغ."
 
@@ -7844,9 +7841,9 @@ msgid ""
 "exalted American presidents that symbolize this nation's rich history, "
 "rugged determination and lasting achievements."
 msgstr ""
-"يعدّ جبل رشمور نُصبا للديمقراطية، وجورج واشنطن ، وولادة أمريكا ونهضتها "
-"ومُثُلها.  يصور النحت الضخم في جبل رشمور أربعة وجوه للرؤساء الأمريكيي، ترمز "
-"إلى تاريخ أمريكا."
+"يعدّ جبل رشمور نُصبا للديمقراطية، وجورج واشنطن، وولادة أمريكا ونهضتها ومُثُلها.  "
+"يصور النحت الضخم في جبل رشمور أربعة وجوه للرؤساء الأمريكيي، ترمز إلى تاريخ "
+"أمريكا."
 
 #: activities/explore_monuments/resource/board/board5.qml:95
 #: activities/explore_monuments/resource/board/board5.qml:98
@@ -7870,9 +7867,9 @@ msgid ""
 msgstr ""
 "نصب نافاجو التذكاري الوطني يقع في شمال غرب إقليم أمّة نافاجو Navajo Nation في "
 "شمال ولاية أريزونا. أنشئ لحفظ على ثلاث مساكن أثرية على الجرف لأسلاف شعب "
-"بويبلوان.النصب مرتفع على هضبة شونتو ، ويطل على نظام تسيجي كانيون، غرب "
-"كاينتا ، أريزونا. ويضم مركزًا للزوار ومتحفًا، ومسارين للمشي، ومخيمين صغيران، "
-"ومنطقة نزهة."
+"بويبلوان.النصب مرتفع على هضبة شونتو، ويطل على نظام تسيجي كانيون، غرب كاينتا، "
+"أريزونا. ويضم مركزًا للزوار ومتحفًا، ومسارين للمشي، ومخيمين صغيران، ومنطقة "
+"نزهة."
 
 #: activities/explore_monuments/resource/board/board5.qml:106
 #: activities/explore_monuments/resource/board/board5.qml:109
@@ -7908,7 +7905,7 @@ msgid ""
 msgstr ""
 "حصن \"سمتر\"  البحري يقع في تشارلستون، في كارولينا الجنوبية. بُني بعد حرب عام "
 "1812. في هذا المكان أطلقت الرصاصات الأولى للحرب الأهلية.في داخل حصن سمتر، "
-"معروضات تاريخية للولايات المتحدة ، لا الصراع بين الشمال والجنوب الذي  أدى في "
+"معروضات تاريخية للولايات المتحدة، لا الصراع بين الشمال والجنوب الذي  أدى في "
 "النهاية إلى الحرب."
 
 #: activities/explore_monuments/resource/board/board5.qml:130
@@ -7942,7 +7939,7 @@ msgid ""
 msgstr ""
 "أهرامات الجيزة أقدم عجائب الدنيا السبع في العالم القديم. يُعرف أكبرها باسم "
 "هرم خوفو.  تقع الأهرامات في مقبرة الجيزة. في مصر. بدأ بناءها في عهد الفرعون "
-"خوفو ، ثم تابعه ابنه خفرع وأكمله منقرع أخيرًا. استغرق بناء الهرم  الأكبر 20 "
+"خوفو، ثم تابعه ابنه خفرع وأكمله منقرع أخيرًا. استغرق بناء الهرم  الأكبر 20 "
 "عامًا وبُني بمليوني حجر. يبلغ ارتفاع الهرم حوالي 139 متراً وهو أعلى هرم في مصر."
 
 #: activities/explore_monuments/resource/board/board6.qml:28
@@ -7968,7 +7965,7 @@ msgstr ""
 "الهرم إلى نصف ارتفاعه تقريبا تقرر بناء الجزء العلوي بزاوية 43 درجة. تقول "
 "إحدى الفرضيات أنه بسبب شدة انحدار الزاوية الأصلية للوزن المراد إضافته فوق "
 "الحجرات الداخلية، أصبحت الممرات كبيرة جدًا، مما أجبر البناة على تقليل الزاوية."
-"اليوم ، الهرم المنحني هو الهرم الوحيد في مصر الذي بقي غلافه الخارجي من الحجر "
+"اليوم، الهرم المنحني هو الهرم الوحيد في مصر الذي بقي غلافه الخارجي من الحجر "
 "الجيري مصقولًا سليمًا إلى حد كبير."
 
 #: activities/explore_monuments/resource/board/board6.qml:39
@@ -8540,7 +8537,7 @@ msgid ""
 "looks like. Study well this information, because you will be tested in level "
 "2."
 msgstr ""
-"في المستوى الأول ، يستمتع اللاعبون باستكشاف كل حيوان على الشاشة. انقر فوق  "
+"في المستوى الأول، يستمتع اللاعبون باستكشاف كل حيوان على الشاشة. انقر فوق  "
 "الحيوان وتعلّم ما اسمه وكيف يبدو. أدرس جيدًا هذه المعلومات، ستجتاز اختبارات في "
 "المستوى 2."
 
@@ -8626,9 +8623,9 @@ msgid ""
 "Narwhals are whales that live in the Arctic Ocean and have long tusks. These "
 "tusks remind many people of the mythical unicorn's horn."
 msgstr ""
-"حَريش البحر (تسمى أيضا الحوت الوحيد القَرن ، أو الحوت المرقط)  هي حيتان تعيش "
-"في المحيط المتجمد الشمالي ولها أنياب طويلة تذكّر كثيرًا من الناس بقرن وحيد "
-"القرن الأسطوري."
+"حَريش البحر (تسمى أيضا الحوت الوحيد القَرن، أو الحوت المرقط)  هي حيتان تعيش في "
+"المحيط المتجمد الشمالي ولها أنياب طويلة تذكّر كثيرًا من الناس بقرن وحيد القرن "
+"الأسطوري."
 
 #: activities/explore_world_animals/resource/board/board1.qml:76
 msgctxt "board1|"
@@ -8712,7 +8709,7 @@ msgid ""
 "However, it's not easy, so sometimes the moose has to stand on its hind legs "
 "to reach branches up to 4 meters!"
 msgstr ""
-"الموظ أكبر نوع من الأيائل ، يأكل حتى 25 كيلوغرام يوميًا.  ومع ذلك، هذا ليس "
+"الموظ أكبر نوع من الأيائل، يأكل حتى 25 كيلوغرام يوميًا.  ومع ذلك، هذا ليس "
 "بالأمر السهل، لذلك قد يضطر الأيل  إلى الوقوف على رجليه الخلفيتين للوصول إلى "
 "أغصان يصل ارتفاعها إلى 4 أمتار!"
 
@@ -8861,7 +8858,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "In the third level, you must select the location that matches the text "
 "description on the screen."
-msgstr "في المستوى الثالث ، عليك تحديد الموقع المناسب للوصف النصي على الشاشة."
+msgstr "في المستوى الثالث، عليك تحديد الموقع المناسب للوصف النصي على الشاشة."
 
 #: activities/explore_world_music/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -8881,8 +8878,8 @@ msgid ""
 "instruments, like the didgeridoo. It is made from a log and can be up to "
 "five meters long!"
 msgstr ""
-"كان السكان الأصليون هم أول من عاش في أستراليا. يغنون ويعزفون على الآلات ، "
-"مثل الديدغيريدو. إنه مصنوع من جذوع الأشجار وقد يصل طوله إلى خمسة أمتار!"
+"كان السكان الأصليون هم أول من عاش في أستراليا. يغنون ويعزفون على الآلات، مثل "
+"الديدغيريدو. إنه مصنوع من جذوع الأشجار وقد يصل طوله إلى خمسة أمتار!"
 
 #: activities/explore_world_music/resource/board/board1.qml:32
 #: activities/explore_world_music/resource/board/board1.qml:36
@@ -8929,7 +8926,7 @@ msgid ""
 "exciting with crowds cheering and performers yelling!"
 msgstr ""
 "تُقرع الطبول تايكو في اليابان. استخدمت في الأصل لتخويف الأعداء في المعركة."
-"إنها صاخبة للغاية ، وعروضها مثيرة للغاية مع هتاف الجماهير وصياح الطبّالين!"
+"إنها صاخبة للغاية، وعروضها مثيرة للغاية مع هتاف الجماهير وصياح الطبّالين!"
 
 #: activities/explore_world_music/resource/board/board1.qml:68
 #: activities/explore_world_music/resource/board/board1.qml:72
@@ -8945,8 +8942,8 @@ msgid ""
 "flutes, harps, and accordions."
 msgstr ""
 "تسمى الموسيقى الشعبية لهذه المنطقة بالموسيقى السلتية. غالبًا ما ترافقها قصيدة "
-"أو حكاية.تشمل الأدوات النموذجية مزمار القربة ، والكمان ، والمزامير ، "
-"والقيثارة ، والأكورديون."
+"أو حكاية.تشمل الأدوات النموذجية مزمار القربة، والكمان، والمزامير ، "
+"والقيثارة، والأكورديون."
 
 #: activities/explore_world_music/resource/board/board1.qml:80
 #: activities/explore_world_music/resource/board/board1.qml:84
@@ -8961,7 +8958,7 @@ msgid ""
 "a story by acting and singing. Opera singers, both male and female, learn "
 "special techniques to sing operas."
 msgstr ""
-"تشتهر إيطاليا بالأوبرا. وهي مسرح موسيقي يحكي فيه الممثلون قصة بالتمثيل "
+"تشتهر إيطاليا بالأوبرا. وهي مسرح موسيقي يحكي فيه الممثلون قصة بالتنسخة "
 "والغناء. مطربو الأوبرا  يتعلمون تقنيات خاصة للغناء."
 
 #: activities/explore_world_music/resource/board/board1.qml:92
@@ -8993,7 +8990,7 @@ msgid ""
 "parties."
 msgstr ""
 "المارياتشي نوعٌ مشهور من الموسيقى المكسيكية، يتميز بالقيثارات والأبواق "
-"والكمان. تلعب هذه الفرق الموسيقية في المناسبات ، بما في ذلك الأعراس والحفلات."
+"والكمان. تلعب هذه الفرق الموسيقية في المناسبات، بما في ذلك الأعراس والحفلات."
 
 #: activities/explore_world_music/resource/board/board1.qml:116
 #: activities/explore_world_music/resource/board/board1.qml:120
@@ -9045,7 +9042,7 @@ msgid ""
 "Learn the relationships in a family, according to the lineal system used in "
 "most Western societies."
 msgstr ""
-"تعرف على العلاقات داخل الأسرة ، وفقًا للنظام الخطي المستخدم في معظم المجتمعات "
+"تعرف على العلاقات داخل الأسرة، وفقًا للنظام الخطي المستخدم في معظم المجتمعات "
 "الغربية."
 
 #. Help prerequisite
@@ -9557,7 +9554,7 @@ msgstr "اختر عدد القطع المناسب حسب الكسر المطلو
 #: activities/fractions_create/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to represent a given fraction of a shape."
-msgstr "تعلّم تمثيل كسرًا من الشكل."
+msgstr "تعلّم تنسخة كسرًا من الشكل."
 
 #. Help manual
 #: activities/fractions_create/ActivityInfo.qml:22
@@ -9910,7 +9907,7 @@ msgid ""
 "denominator. Then count the number of selected parts, and set it as the "
 "numerator."
 msgstr ""
-"اكتب الكسر المطابق للتمثيل الكسري: أحسب عدد كل قطع الشكل الممثل، وضعه في "
+"اكتب الكسر المطابق للتنسخة الكسري: أحسب عدد كل قطع الشكل الممثل، وضعه في "
 "المقام (تحت السطر). ثم عُدّ القطع المحددة، وضعها في البسط (فوق السطر)."
 
 #: activities/fractions_find/resource/1/Data.qml:19
@@ -14122,7 +14119,7 @@ msgid ""
 msgstr ""
 "إذا كان لديك لوحة مفاتيح، استخدم الأسهم للتنقل، واضغط على مسافة لابتلاع "
 "الأرقام. أمّا بالفأرة، انقر على الطوبة المجاورة لموقعك للتحرك وانقر مرة أخرى "
-"لابتلاع الأرقام.أمّا باستخدام شاشة اللمس ، اسحب في الاتجاه المرغوب وانقر "
+"لابتلاع الأرقام.أمّا باستخدام شاشة اللمس، اسحب في الاتجاه المرغوب وانقر "
 "لابتلاع الأرقام."
 
 #: activities/gnumch-equality/ActivityInfo.qml:27
@@ -14273,8 +14270,8 @@ msgid ""
 "another family."
 msgstr ""
 "قواسم العدد هي كل الأعداد التي تقسمه دون باقٍ إلى أجزاء متساوية.على سبيل "
-"المثال ، قواسم العدد 6 هي 1 و 2 و 3 و 6. العدد 4 ليس من قواسم العدد 6 لأنه "
-"لا يقسمه أجزاء متساوية.  إذا كان عددا ما مضاعفا لعدد ثان، فالعدد الثاني قاسم "
+"المثال، قواسم العدد 6 هي 1 و 2 و 3 و 6. العدد 4 ليس من قواسم العدد 6 لأنه لا "
+"يقسمه أجزاء متساوية.  إذا كان عددا ما مضاعفا لعدد ثان، فالعدد الثاني قاسم "
 "للعدد الأول. يمكنك اعتبار المضاعفات عائلاتٍ، والقواسم أفراد في العائلات. لذا "
 "فالأفراد 1 و 2 و 3 و 6 تتناسب مع العائلة 6، لكن العدد 4 ينتمي إلى عائلة أخرى."
 "الأسرة 6 ولكن 4 تنتمي إلى عائلة أخرى."
@@ -14353,12 +14350,12 @@ msgstr ""
 "مضاعفات عدد ما هي كل الأعداد التي تساوي العدد الأصلي مضروبًا في عدد آخر. على "
 "سبيل المثال، 24 و 36 و 48 و  60 كلها من مضاعفات العدد 12.  25 ليس من مضاعفات "
 "العدد 12 لأنه لا يوجد أي عدد يمكن ضربه في 12 للحصول على 25.  إذا كان عددا ما "
-"قاسمًا لعدد ثان ، فإن العدد الثاني مضاعف العدد الأول.  يمكنك التفكير في "
-"المضاعفات باعتبارها عائلات ، والقواسم هم أفراد هذه العائلات.  القاسم 5 ، "
-"لديه أبوان 10، وأجداد 15 ، وأباء الأجداد 20، وأجداد الأجداد 25 ،وكل خطوة "
-"إضافية من 5 تضيف جَدّا آخر!  لكن العدد 5 لا ينتمي إلى عائلة 8 أو عائلة 23. لا "
-"يمكن ضرب 5 في أي عدد للحصول على 8. إذن ، 8 ليس من مضاعفات العدد 5. وهو كذلك "
-"للعدد 23.  فقط 5 ، 10 ، 15 ، 20 ، 25 ... هي مضاعفات  5."
+"قاسمًا لعدد ثان، فإن العدد الثاني مضاعف العدد الأول.  يمكنك التفكير في "
+"المضاعفات باعتبارها عائلات، والقواسم هم أفراد هذه العائلات.  القاسم 5 ، لديه "
+"أبوان 10، وأجداد 15، وأباء الأجداد 20، وأجداد الأجداد 25 ،وكل خطوة إضافية من "
+"5 تضيف جَدّا آخر!  لكن العدد 5 لا ينتمي إلى عائلة 8 أو عائلة 23. لا يمكن ضرب 5 "
+"في أي عدد للحصول على 8. إذن، 8 ليس من مضاعفات العدد 5. وهو كذلك للعدد 23.  "
+"فقط 5، 10، 15، 20، 25 ... هي مضاعفات  5."
 
 #. Activity title
 #: activities/gnumch-primes/ActivityInfo.qml:15
@@ -14391,11 +14388,11 @@ msgid ""
 "3 = 6). So 6 is not a prime number."
 msgstr ""
 "الأعداد الأولية هي أعداد لا تقبل القسمة إلا على نفسها و 1. على سبيل المثال ، "
-"3 عدد أولي ، لكن 4 ليس كذلك (لأن 4 يقبل القسمة على 2). يمكنك اعتبار الأعداد "
+"3 عدد أولي، لكن 4 ليس كذلك (لأن 4 يقبل القسمة على 2). يمكنك اعتبار الأعداد "
 "الأولية عائلات صغيرة جدًا ليس فيها سوى شخصين! فقط العدد نفسه و 1. لا تقبل "
 "العائلة أي أعداد أخرى فيها. 5 هو أحد هذه الأعداد الوحيدة (فقط 5 × 1 = 5). "
-"أما العدد 6، فيمكننا أن نرى أن 6 بها 2 و 3 في عائلتها أيضًا (6 × 1 = 6 ، 2 × "
-"3 = 6). إذن، 6 ليس عددًا أوليًا."
+"أما العدد 6، فيمكننا أن نرى أن 6 بها 2 و 3 في عائلتها أيضًا (6 × 1 = 6، 2 × 3 "
+"= 6). إذن، 6 ليس عددًا أوليًا."
 
 #. Activity title
 #: activities/graduated_line_read/ActivityInfo.qml:14
@@ -14776,7 +14773,7 @@ msgstr ""
 #: activities/graph-coloring/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Ability to distinguish different colors/shapes, sense of positions."
-msgstr "القدرة على التمييز بين الألوان والأشكال المختلفة ، الإحساس بالمواضع."
+msgstr "القدرة على التمييز بين الألوان والأشكال المختلفة، الإحساس بالمواضع."
 
 #. Help manual
 #: activities/graph-coloring/ActivityInfo.qml:24
@@ -14822,7 +14819,7 @@ msgid ""
 "anticipate by looking at the size and direction of the arrow showing the "
 "gravity force."
 msgstr ""
-"حرّك سفينة الفضاء بالاسم اليمنى واليسرى ، أو بالأزرار على شاشة الأجهزة "
+"حرّك سفينة الفضاء بالاسم اليمنى واليسرى، أو بالأزرار على شاشة الأجهزة "
 "المحمولة.حاول البقاء بالقرب من مركز الشاشة وتوّقع بالنظر إلى حجم السهم "
 "واتجاهه، السهم الذي يظهر قوة الجاذبية."
 
@@ -14850,7 +14847,7 @@ msgid ""
 "interacting objects, more massive objects will attract each other with a "
 "greater gravitational force."
 msgstr ""
-"نظرًا لأن قوة الجاذبية تتناسب طرديًا مع كتلة كلا الجسمين المتفاعلين ، فإن "
+"نظرًا لأن قوة الجاذبية تتناسب طرديًا مع كتلة كلا الجسمين المتفاعلين، فإن "
 "الأجسام الأكثر ضخامة ستجذب بعضها البعض بقوة جاذبية أكبر."
 
 #: activities/gravity/Gravity.qml:228
@@ -14860,7 +14857,7 @@ msgid ""
 "between the two interacting objects, more distance will result in weaker "
 "gravitational force."
 msgstr ""
-"ولكن نظرًا لأن هذه القوة تتناسب عكسًا مع مربع المسافة بين الجسمين المتفاعلين ، "
+"ولكن نظرًا لأن هذه القوة تتناسب عكسًا مع مربع المسافة بين الجسمين المتفاعلين، "
 "فإن المسافة الأكبر ستؤدي إلى قوة جاذبية أضعف."
 
 #: activities/gravity/Gravity.qml:231
@@ -15213,7 +15210,7 @@ msgid ""
 "If the option 'Display the image to find as hint' is activated, on every "
 "wrong try a part of the image representing the word will be revealed."
 msgstr ""
-"إذا تمّ تنشيط خيار \"عرض الصورة المبحوث عنها في التلميح\" ، فسيُكشف عن جزء من "
+"إذا تمّ تنشيط خيار \"عرض الصورة المبحوث عنها في التلميح\"، فسيُكشف عن جزء من "
 "الصورة  التي تمثل الكلمة عند كل محاولة خاطئة."
 
 #: activities/hangman/ActivityInfo.qml:25
@@ -15223,7 +15220,7 @@ msgid ""
 "corresponding voice is available, you will hear the word to find when three "
 "attempts are remaining."
 msgstr ""
-"إذا نُشط خيار \"نطق الكلمات التي تبحث عنها...\" ، وإذا كان الصوت المناسب "
+"إذا نُشط خيار \"نطق الكلمات التي تبحث عنها...\"، وإذا كان الصوت المناسب "
 "متاحًا، فستسمع الكلمة المطلوبة حين تبقى ثلاث محاولات."
 
 #: activities/hangman/hangman.js:212
@@ -15339,7 +15336,7 @@ msgstr ""
 #: activities/hanoi_real/HanoiReal.qml:75
 msgctxt "HanoiReal|"
 msgid "Move the entire stack to the right peg, one disc at a time."
-msgstr "انقل المكدس بأكمله إلى الوتد الأيمن ، قرصًا واحدًا في كل مرة."
+msgstr "انقل المكدس بأكمله إلى الوتد الأيمن، قرصًا واحدًا في كل مرة."
 
 #: activities/hanoi_real/HanoiReal.qml:76
 msgctxt "HanoiReal|"
@@ -15845,7 +15842,7 @@ msgid ""
 "and closer to the planet the acceleration increases."
 msgstr ""
 "التسارع الذي تسببه الجاذبية وتكتسبه مركبة الفضاء يتناسب طرديا مع كتلة الكوكب "
-"ويتناسب عكسيا مع مربع المسافة من مركز الكوكب.  وهكذا ، مع كل كوكب سوف يختلف "
+"ويتناسب عكسيا مع مربع المسافة من مركز الكوكب.  وهكذا، مع كل كوكب سوف يختلف "
 "التسارع، وكلما اقتربت سفينة الفضاء من الكوكب يزداد التسارع."
 
 #: activities/land_safe/ActivityInfo.qml:24
@@ -15855,8 +15852,8 @@ msgid ""
 "left keys to control the direction. On touch screens you can control the "
 "rocket through the corresponding on-screen buttons."
 msgstr ""
-"في المستويات الأولى ، استخدم مفتاحي أسهم أعلى/أسفل للتحكم في الدفع ومفتاح  "
-"أسهم يمين/يسار للتحكم في الاتجاه. على الشاشات اللمسية ، يمكنك التحكم في "
+"في المستويات الأولى، استخدم مفتاحي أسهم أعلى/أسفل للتحكم في الدفع ومفتاح  "
+"أسهم يمين/يسار للتحكم في الاتجاه. على الشاشات اللمسية، يمكنك التحكم في "
 "الصاروخ من خلال الأزرار المقابلة على الشاشة."
 
 #: activities/land_safe/ActivityInfo.qml:25
@@ -15866,7 +15863,7 @@ msgid ""
 "By rotating the spaceship you can trigger an acceleration in non-vertical "
 "direction using the up/down keys."
 msgstr ""
-"في المستويات الأعلى ، يمكنك استخدام السهمين يمين/يسار لتدوير سفينة الفضاء. "
+"في المستويات الأعلى، يمكنك استخدام السهمين يمين/يسار لتدوير سفينة الفضاء. "
 "عند تدوير سفينة الفضاء، يمكنك إطلاق تسارع في اتجاه غير عمودي باستخدام "
 "السهمين أعلى/أسفل."
 
@@ -15887,7 +15884,7 @@ msgstr ""
 "مقياس التسارع في الطرف الأيمن يوضّح التسارع الرأسي الكلي للصاروخ بما في ذلك "
 "قوة الجاذبية. في المنطقة الخضراء العليا من مقياس التسارع، يكون التسارع أكبر "
 "من قوة الجاذبية، وفي المنطقة الحمراء السفلية يكون التسارع أقل من الجاذبية، "
-"وعلى خط الأساس الأزرق في المنطقة الوسطى الصفراء ، تلغي القوتان بعضهما البعض."
+"وعلى خط الأساس الأزرق في المنطقة الوسطى الصفراء، تلغي القوتان بعضهما البعض."
 
 #: activities/land_safe/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -15900,8 +15897,8 @@ msgid ""
 "Left and Right arrows: at first levels, move to the sides; at higher levels, "
 "rotate the spaceship"
 msgstr ""
-"السهمان لليسار ولليمين: في المستويات الأولى ، للتحرّك إلى الجانبين ؛ في "
-"المستويات العليا ، لتدوير سفينة الفضاء"
+"السهمان لليسار ولليمين: في المستويات الأولى، للتحرّك إلى الجانبين؛ في "
+"المستويات العليا، لتدوير سفينة الفضاء"
 
 #: activities/land_safe/LandSafe.qml:584
 #, qt-format
@@ -16005,8 +16002,8 @@ msgid ""
 "horizontal direction you must first rotate and then accelerate."
 msgstr ""
 "يتحكم السهمان لأعلى ولأسفل في دفع المحرك الخلفي. <br/>  يتحكم الآن السهمان "
-"الأيمن والأيسر في دوران السفينة. <br/> لتحريك السفينة في الاتجاه الأفقي ، "
-"يجب عليك أولاً تدويرها ثم تسريعها."
+"الأيمن والأيسر في دوران السفينة. <br/> لتحريك السفينة في الاتجاه الأفقي، يجب "
+"عليك أولاً تدويرها ثم تسريعها."
 
 #. Activity title
 #: activities/lang/ActivityInfo.qml:21
@@ -16035,7 +16032,7 @@ msgid ""
 "voice and the image, then only from the voice, and finally an exercise to "
 "type the text."
 msgstr ""
-"راجع مجموعة من الكلمات. تُعرض كل كلمة بصوت ونص وصورة. <br/> عند الانتهاء ، "
+"راجع مجموعة من الكلمات. تُعرض كل كلمة بصوت ونص وصورة. <br/> عند الانتهاء، "
 "سيكون لديك تمارينُ للتعرف على النص من الصوت والصورة، ثم من الصوت فقط، وأخيرًا "
 "تمرين لكتابة النص."
 
@@ -16265,7 +16262,7 @@ msgstr "مثّل الأعداد العشرية المطلوب."
 #: activities/learn_decimals/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Associate the decimal form of a number with its graphic representation."
-msgstr "ربط الشكل العشري للعدد بتمثيله الرسومي."
+msgstr "ربط الشكل العشري للعدد بتنسخةه الرسومي."
 
 #. Help manual
 #: activities/learn_decimals/ActivityInfo.qml:22
@@ -16396,7 +16393,7 @@ msgid ""
 "represents a full unit, and each square in it represents one tenth of this "
 "unit."
 msgstr ""
-"تظهر عملية جمع لعددين عشريين. يمثل الشريط الواحد وحدة كاملة ، ويمثل كل مربع "
+"تظهر عملية جمع لعددين عشريين. يمثل الشريط الواحد وحدة كاملة، ويمثل كل مربع "
 "فيه عُشر هذه الوحدة."
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:20
@@ -16451,7 +16448,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn subtraction with decimal numbers by manipulating their visual "
 "representation."
-msgstr "تعلم طرح الأعداد العشرية باستعمال أشكال لتمثيل النتيجة."
+msgstr "تعلم طرح الأعداد العشرية باستعمال أشكال لتنسخة النتيجة."
 
 #. Help manual
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:22
@@ -16463,8 +16460,8 @@ msgid ""
 "squares to subtract the second number and represent the result of the "
 "operation"
 msgstr ""
-"تظهر عملية طرح لعددين عشريين.  أسفله ، يُمثل العدد الأول من عملية الطرح "
-"بأشرطة. يمثل الشريط الواحد وحدة كاملة ، ويمثل كل مربع فيه عُشر هذه الوحدة"
+"تظهر عملية طرح لعددين عشريين.  أسفله، يُمثل العدد الأول من عملية الطرح "
+"بأشرطة. يمثل الشريط الواحد وحدة كاملة، ويمثل كل مربع فيه عُشر هذه الوحدة"
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:16
 msgctxt "Learn_decimals_subtractions|"
@@ -16473,8 +16470,8 @@ msgid ""
 "number from the subtraction is represented with bars. One bar represents a "
 "full unit, and each square in it represents one tenth of this unit."
 msgstr ""
-"تظهر عملية طرح لعددين عشريين.  أسفله ، يُمثل العدد الأول من عملية الطرح "
-"بأشرطة. يمثل الشريط الواحد وحدة كاملة ، ويمثل كل مربع فيه عُشر هذه الوحدة."
+"تظهر عملية طرح لعددين عشريين.  أسفله، يُمثل العدد الأول من عملية الطرح "
+"بأشرطة. يمثل الشريط الواحد وحدة كاملة، ويمثل كل مربع فيه عُشر هذه الوحدة."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:20
 msgctxt "Learn_decimals_subtractions|"
@@ -16527,7 +16524,7 @@ msgstr "الأصابع"
 #: activities/learn_digits/ActivityConfig.qml:35
 msgctxt "ActivityConfig|"
 msgid "Digits representation"
-msgstr "تمثيل الأرقام"
+msgstr "تنسخة الأرقام"
 
 #: activities/learn_digits/ActivityConfig.qml:39
 msgctxt "ActivityConfig|"
@@ -16622,7 +16619,7 @@ msgstr "تعلّم الكميّات"
 #: activities/learn_quantities/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Learn to represent a quantity of objects."
-msgstr "تعلّم تمثيل كمية من الأشياء."
+msgstr "تعلّم تنسخة كمية من الأشياء."
 
 #. Help goal
 #: activities/learn_quantities/ActivityInfo.qml:19
@@ -16630,7 +16627,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn quantities by counting how many oranges are needed to represent the "
 "requested quantity."
-msgstr "تعلم الكميات بحساب كم برتقالةً تحتاج لتمثيل الكمية المطلوبة."
+msgstr "تعلم الكميات بحساب كم برتقالةً تحتاج لتنسخة الكمية المطلوبة."
 
 #. Help manual
 #: activities/learn_quantities/ActivityInfo.qml:22
@@ -16792,7 +16789,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Distinguish right and left hands from different points of view. Spatial "
 "representation."
-msgstr "التمييز بين اليد اليمنى واليسرى من جهات نظر مختلفة. التمثيل المكاني."
+msgstr "التمييز بين اليد اليمنى واليسرى من جهات نظر مختلفة. التنسخة المكاني."
 
 #. Help manual
 #: activities/leftright/ActivityInfo.qml:23
@@ -17058,8 +17055,7 @@ msgctxt "louis_braille_data|"
 msgid ""
 "At the age of three, Louis became blind due to a severe infection that "
 "spread to his left eye."
-msgstr ""
-"في سن الثالثة ، أصيب لويس بالعمى بسبب عدوى شديدة انتشرت في عينه اليسرى."
+msgstr "في سن الثالثة، أصيب لويس بالعمى بسبب عدوى شديدة انتشرت في عينه اليسرى."
 
 #: activities/louis-braille/louis_braille_data.js:27
 msgctxt "louis_braille_data|"
@@ -17067,7 +17063,7 @@ msgid ""
 "At the age of 10, he was sent to Paris to study at the Royal Institute for "
 "Blind Youth."
 msgstr ""
-"في سن العاشرة ، أُرسل إلى باريس للدراسة في المعهد الملكي للفتيان المكفوفين."
+"في سن العاشرة، أُرسل إلى باريس للدراسة في المعهد الملكي للفتيان المكفوفين."
 
 #: activities/louis-braille/louis_braille_data.js:32
 msgctxt "louis_braille_data|"
@@ -18419,8 +18415,8 @@ msgid ""
 "twins, they both disappear."
 msgstr ""
 "عند قلب بطاقة تصدر صوتًا عند قلبه، ولكل بطاقة بطاقة أخرى لها نفس الصوت.انقر "
-"على بطاقة لتسمع صوتها المخفي، وابحث عن مثيلتها. يمكنك فقط قلب بطاقتين في وقت "
-"واحد، لذلك عليك أن تتذكر مكان الصوت أثناء البحث عن المثيلة. عندما تقلب "
+"على بطاقة لتسمع صوتها المخفي، وابحث عن نسخةتها. يمكنك فقط قلب بطاقتين في وقت "
+"واحد، لذلك عليك أن تتذكر مكان الصوت أثناء البحث عن النسخةة. عندما تقلب "
 "البطاقتين المتماثلتين، تختفيان معًا."
 
 #. Activity title
@@ -18466,8 +18462,8 @@ msgid ""
 "twins, they both disappear."
 msgstr ""
 "كل بطاقة تخفي صورة، ولكل بطاقة بطاقة أخرى  مطابقة لها.انقر على بطاقة لترى "
-"صورتها المخفية، وابحث عن مثيلتها. يمكنك فقط قلب بطاقتين في وقت واحد، لذلك "
-"عليك أن تتذكر مكان الصورة أثناء البحث عن المثيلة. عندما تقلب البطاقتين "
+"صورتها المخفية، وابحث عن نسخةتها. يمكنك فقط قلب بطاقتين في وقت واحد، لذلك "
+"عليك أن تتذكر مكان الصورة أثناء البحث عن النسخةة. عندما تقلب البطاقتين "
 "المتماثلتين، تختفيان معًا."
 
 #. Activity title
@@ -18709,7 +18705,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "Home - Exit an activity, go back to menu (Ctrl+W or Escape key)"
 msgstr ""
-"الصفحة الرئيسة - الخروج من النشاط ، والعودة إلى القائمة (Ctrl + W أو مفتاح "
+"الصفحة الرئيسة - الخروج من النشاط، والعودة إلى القائمة (Ctrl + W أو مفتاح "
 "الإفلات)"
 
 #: activities/menu/ActivityInfo.qml:26
@@ -18774,7 +18770,7 @@ msgid ""
 "the minimum difficulty, and the second one the maximum difficulty."
 msgstr ""
 "إذا كان هناك رمزان مختلفان للنجوم في نشاط ما، فإن الرمز الأول يوضح الحد "
-"الأدنى من الصعوبة ، ويظهر الرمز الثاني أقصى صعوبة."
+"الأدنى من الصعوبة، ويظهر الرمز الثاني أقصى صعوبة."
 
 #: activities/menu/ActivityInfo.qml:38
 msgctxt "ActivityInfo|"
@@ -19183,7 +19179,7 @@ msgstr ""
 "ابحث عن بريق الذهب، وكبّر الصورة حوله. إذا لديك فأرة، وجّه المؤشر على البريق "
 "ثم استخدم عجلة التمرير.  إذا كانت لديك لوحة تعقب،  وجّه المؤشر على البريق ثم "
 "اسحب إصبعًا واحدًا على المنطقة اليمنى أو أصبعين في المنتصف. إذا لديك شاشة لمس، "
-"اسحب أصبعين بعيدًا عن البريق ، واحد في كل اتجاه."
+"اسحب أصبعين بعيدًا عن البريق، واحد في كل اتجاه."
 
 #: activities/mining/Mining.qml:463
 msgctxt "Mining|"
@@ -19504,10 +19500,10 @@ msgid ""
 msgstr ""
 "يمثل كل رمز مورس إما حرفًا نصيًا (حرفًا أو رقمًا) أو علامة مميزة ويُمثل بتسلسل "
 "فريد من النقاط والشرطات. مدة الشرطة ثلاثة أضعاف مدة النقطة. لزيادة سرعة "
-"الاتصال ، صمُمّت الشفرة بحيث يُرمز للأحرف الشائعة بسلسة أقصر من النقاط "
+"الاتصال، صمُمّت الشفرة بحيث يُرمز للأحرف الشائعة بسلسة أقصر من النقاط "
 "والشرطات. \n"
 "على سبيل المثال، حرف \"E\" هو الأكثر شيوعًا في اللغة الإنجليزية، لذا له أقصر "
-"رمز ، نقطة واحدة."
+"رمز، نقطة واحدة."
 
 #: activities/morse_code/FirstScreen.qml:87
 msgctxt "FirstScreen|"
@@ -19617,7 +19613,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "First select an item from the list, and then click on a spot of the mosaic "
 "to place the item."
-msgstr "حدد أولاً عنصرًا من القائمة ، ثم انقر فوق بقعة من الفسيفساء لوضع العنصر."
+msgstr "حدد أولاً عنصرًا من القائمة، ثم انقر فوق بقعة من الفسيفساء لوضع العنصر."
 
 #: activities/mosaic/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -19767,7 +19763,7 @@ msgctxt "NineMenMorris|"
 msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
 "win the game."
-msgstr "إذا شللت خصمك (تثبيت) أو تركته بأقل من 3 قطع ، فستفوز باللعبة."
+msgstr "إذا شللت خصمك (تثبيت) أو تركته بأقل من 3 قطع، فستفوز باللعبة."
 
 #. Activity title
 #: activities/nine_men_morris_2players/ActivityInfo.qml:15
@@ -19843,7 +19839,7 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
-"يتطلب هذا النشاط صوتًا ، لذلك ستشتغل بعض الأصوات حتى لو كان الصوت أو تأثيرات "
+"يتطلب هذا النشاط صوتًا، لذلك ستشتغل بعض الأصوات حتى لو كان الصوت أو تأثيرات "
 "الصوت معطلة في الإعدادات الرئيسة."
 
 #: activities/note_names/NoteNames.qml:450
@@ -20000,9 +19996,8 @@ msgid ""
 "892, 1000. All of these numbers are even numbers as they leave a remainder "
 "of 0 when divided by 2."
 msgstr ""
-"على سبيل المثال: 12 ، 38 ، 52 ، 68 ، 102 ، 118 ، 168 ، 188 ، 502 ، 532 ، "
-"700 ، 798 ، 842 ، 892 ، 1000. كل هذه الأرقام هي أرقام زَوْجِيَّة لأنّ 0 هو باقي "
-"قسمتها على 2."
+"على سبيل المثال: 12، 38، 52، 68، 102، 118، 168، 188، 502، 532، 700، 798، "
+"842، 892، 1000. كل هذه الأرقام هي أرقام زَوْجِيَّة لأنّ 0 هو باقي قسمتها على 2."
 
 #: activities/numbers-odd-even/resource/Tutorial3.qml:22
 msgctxt "Tutorial3|"
@@ -20011,9 +20006,9 @@ msgid ""
 "897, 1001. All of these numbers are odd numbers as they do not leave a "
 "remainder of 0 when divided by 2."
 msgstr ""
-"على سبيل المثال: 15 ، 19 ، 51 ، 65 ، 103 ، 119 ، 169 ، 185 ، 505 ، 533 ، "
-"701 ، 799 ، 845 ، 897 ، 1001. كل هذه الأرقام هي أرقام فردية  لأنّ 0 لا يكون "
-"هو باقي قسمتها على 2."
+"على سبيل المثال: 15، 19، 51، 65، 103، 119، 169، 185، 505، 533، 701، 799، "
+"845، 897، 1001. كل هذه الأرقام هي أرقام فردية  لأنّ 0 لا يكون هو باقي قسمتها "
+"على 2."
 
 #: activities/numbers-odd-even/resource/TutorialBase.qml:33
 msgctxt "TutorialBase|"
@@ -20038,7 +20033,7 @@ msgctxt "TutorialBase|"
 msgid ""
 "There is an error: when divided by 2, %1 leaves a remainder of 1. Therefore "
 "this is an odd number."
-msgstr "هُنَاكَ خَطَأ: عند قسمة %1 على 2 ، يكون الباقي هو 1. لذلك فهذا الرقم فَرْدِيّ."
+msgstr "هُنَاكَ خَطَأ: عند قسمة %1 على 2، يكون الباقي هو 1. لذلك فهذا الرقم فَرْدِيّ."
 
 #: activities/numbers-odd-even/resource/TutorialBase.qml:64
 #: activities/numbers-odd-even/resource/TutorialBase.qml:94
@@ -20047,7 +20042,7 @@ msgctxt "TutorialBase|"
 msgid ""
 "There is an error: when divided by 2, %1 leaves a remainder of 0. Therefore "
 "this is an even number."
-msgstr "هُنَاكَ خَطَأ: عند قسمة %1 على 2 ، يكون الباقي هو 0. لذلك فهذا الرقم زَوْجِيّ."
+msgstr "هُنَاكَ خَطَأ: عند قسمة %1 على 2، يكون الباقي هو 0. لذلك فهذا الرقم زَوْجِيّ."
 
 #. Activity title
 #: activities/ordering_alphabets/ActivityInfo.qml:21
@@ -20446,7 +20441,7 @@ msgstr ""
 "الذي قبله إذا فيه بذرتان أو ثلاث، حتى يصل  إلى منزل فيه ليس فيه 2 أو 3، أو "
 "لا ينتمي للخصم. تُوضع البذور التي التقطها اللاعب في منزل تسجيله. ومع ذلك ، "
 "إذا كانت النقلة ستلتقط كل بذور الخصم، فيُرفض الاستيلاء كي لا يمنع الخصم من "
-"مواصلة اللعبة ، وبدلاً من ذلك تُترك البذور على اللوحة."
+"مواصلة اللعبة، وبدلاً من ذلك تُترك البذور على اللوحة."
 
 #: activities/oware/ActivityInfo.qml:25
 #: activities/oware_2players/ActivityInfo.qml:25
@@ -20458,7 +20453,7 @@ msgid ""
 msgstr ""
 "إذا فرغت كل منازل الخصم، فيجب على اللاعب الحالي القيام بحركة تمنح الخصم "
 "بذوراً. إذا لم تكن هذه الخطوة ممكنة، يلتقط اللاعب الحالي جميع البذور الموجودة "
-"في منطقته ، ويُنهي اللعبة."
+"في منطقته، ويُنهي اللعبة."
 
 #: activities/oware/oware.js:107
 msgctxt "oware|"
@@ -20507,72 +20502,72 @@ msgid ""
 "Katsushika Hokusai, Viewing Sunset over the Ryogoku Bridge from the Ommaya "
 "Embankment - 1830"
 msgstr ""
-"كاتسوشيكا هوكوساي ، منظر غروب الشمس فوق جسر ريوغوكو من جسر أومايا - 1830"
+"كاتسوشيكا هوكوساي، منظر غروب الشمس فوق جسر ريوغوكو من جسر أومايا - 1830"
 
 #: activities/paintings/resource/board/board11_0.qml:14
 msgctxt "board11_0|"
 msgid "Katsushika Hokusa, Poppies - 1833-1834"
-msgstr "كاتسوشيكا هوغوسا ، لوحات الخشخاش - 1833-1834"
+msgstr "كاتسوشيكا هوغوسا، لوحات الخشخاش - 1833-1834"
 
 #: activities/paintings/resource/board/board12_0.qml:14
 msgctxt "board12_0|"
 msgid "Katsushika Hokusai, Kazusa sea Route - 1830."
-msgstr "كاتسوشيكا هوكوساي ، برج كازوسا - 1830."
+msgstr "كاتسوشيكا هوكوساي، برج كازوسا - 1830."
 
 #: activities/paintings/resource/board/board13_0.qml:14
 msgctxt "board13_0|"
 msgid "Michelangelo, Pieta - 1499"
-msgstr "مايكل أنجلو ، بيتا - 1499"
+msgstr "مايكل أنجلو، بيتا - 1499"
 
 #: activities/paintings/resource/board/board14_0.qml:14
 msgctxt "board14_0|"
 msgid "Leonardo da Vinci, Mona Lisa - 1503-19"
-msgstr "ليوناردو دافنشي ، الموناليزا - 1503-19"
+msgstr "ليوناردو دافنشي، الموناليزا - 1503-19"
 
 #: activities/paintings/resource/board/board15_0.qml:14
 msgctxt "board15_0|"
 msgid "Giovanni Bellini, La Pala di Pesaro - 1475-85"
-msgstr "جيوفاني بيليني ، La Pala di Pesaro - 1475-85"
+msgstr "جيوفاني بيليني، La Pala di Pesaro - 1475-85"
 
 #: activities/paintings/resource/board/board16_0.qml:14
 msgctxt "board16_0|"
 msgid "Albrecht Dürer, Lion - 1494"
-msgstr "ألبريشت دورر ، الأسد - 1494"
+msgstr "ألبريشت دورر، الأسد - 1494"
 
 #: activities/paintings/resource/board/board17_0.qml:14
 msgctxt "board17_0|"
 msgid "Pieter Brugel, The Harvesters - 1565"
-msgstr "بيتر بروجل ، الحاصدون - 1565"
+msgstr "بيتر بروجل، الحاصدون - 1565"
 
 #: activities/paintings/resource/board/board18_0.qml:14
 msgctxt "board18_0|"
 msgid "Pierre-Auguste Renoir, Girls At The Piano - 1892"
-msgstr "بيير أوغست رينوار ، فتيات في البيانو - 1892"
+msgstr "بيير أوغست رينوار، فتيات في البيانو - 1892"
 
 #: activities/paintings/resource/board/board19_0.qml:14
 msgctxt "board19_0|"
 msgid "Wassily Kandinsky, Composition VIII - 1923"
-msgstr "فاسيلي كاندينسكي ، التكوين الثامن - 1923"
+msgstr "فاسيلي كاندينسكي، التكوين الثامن - 1923"
 
 #: activities/paintings/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
 msgid "Pierre-Auguste Renoir, Bal du moulin de la Galette - 1876"
-msgstr "بيير أوغست رينوار ، الكرة في مولان دي لا غاليت - 1876"
+msgstr "بيير أوغست رينوار، الكرة في مولان دي لا غاليت - 1876"
 
 #: activities/paintings/resource/board/board20_0.qml:14
 msgctxt "board20_0|"
 msgid "Bazille, The Ramparts at Aigues-Mortes - 1867"
-msgstr "بازيل ، الأسوار في إيج مورتس - 1867"
+msgstr "بازيل، الأسوار في إيج مورتس - 1867"
 
 #: activities/paintings/resource/board/board21_0.qml:14
 msgctxt "board21_0|"
 msgid "Mary Cassatt, Summertime - 1894"
-msgstr "ماري كاسات ، الصيف - 1894"
+msgstr "ماري كاسات، الصيف - 1894"
 
 #: activities/paintings/resource/board/board22_0.qml:14
 msgctxt "board22_0|"
 msgid "Vincent Van Gogh, Village Street in Auvers - 1890"
-msgstr "فنسنت فان جوخ ، شارع القرية في أوفير - 1890"
+msgstr "فنسنت فان جوخ، شارع القرية في أوفير - 1890"
 
 #: activities/paintings/resource/board/board2_0.qml:14
 msgctxt "board2_0|"
@@ -20587,7 +20582,7 @@ msgstr "جوزيبي ارسيمبولدو، أمين المكتبة - 1566"
 #: activities/paintings/resource/board/board4_0.qml:14
 msgctxt "board4_0|"
 msgid "Katsushika Hokusai, Oiran and Kamuro"
-msgstr "كاتسوشيكا هوكوساي ، أويران خطة الأصلع"
+msgstr "كاتسوشيكا هوكوساي، أويران خطة الأصلع"
 
 #: activities/paintings/resource/board/board5_0.qml:14
 msgctxt "board5_0|"
@@ -20602,7 +20597,7 @@ msgstr "كاتسوشيكا هوكوساي، إيجيري في محافظة سو�
 #: activities/paintings/resource/board/board7_0.qml:14
 msgctxt "board7_0|"
 msgid "Katsushika Hokusai, The Great Wave off Kanagawa - 1823-1829"
-msgstr "كاتسوشيكا هوكوساي ، الموجة العظيمة قبالة كاناغاوا - 1823-1829"
+msgstr "كاتسوشيكا هوكوساي، الموجة العظيمة قبالة كاناغاوا - 1823-1829"
 
 #: activities/paintings/resource/board/board8_0.qml:14
 msgctxt "board8_0|"
@@ -20654,7 +20649,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "The directions are absolute, they do not depend on the current orientation "
 "of Tux."
-msgstr "الاتجاهات مطلقة ، فهي لا تعتمد على الاتجاه الحالي لـلبطريق."
+msgstr "الاتجاهات مطلقة، فهي لا تعتمد على الاتجاه الحالي لـلبطريق."
 
 #: activities/path_decoding/resource/1/Data.qml:13
 #: activities/path_decoding/resource/2/Data.qml:13
@@ -20696,7 +20691,7 @@ msgid ""
 "This means that UP moves forward, DOWN moves backward, LEFT moves to the "
 "left side of Tux and RIGHT moves to the right side of Tux."
 msgstr ""
-"هذا يعني أن السهم للأعلى يتحرك للأمام ، و السهم للأسف يتحرك للخلف ، و السهم "
+"هذا يعني أن السهم للأعلى يتحرك للأمام، و السهم للأسف يتحرك للخلف، و السهم "
 "لليسار يتحرك إلى الجانب الأيسر من البطريق و السهم لليمين يتحرك إلى الجانب "
 "الأيمن من البطريق تُكس."
 
@@ -20769,7 +20764,7 @@ msgid ""
 msgstr ""
 "انقر نقرًا مزدوجًا أو اضغط ضغطًا مزدوجًا على جانب المرمى لتسديد الكرة. يمكنك "
 "النقر نقرًا مزدوجًا فوق زر الفأرة الأيسر أو الأيمن أو الأوسط. إذا لم تنقر نقرًا "
-"مزدوجًا بسرعة كافية ، فإن البطريق يمسك الكرة.  يجب عليك النقر فوق الكرة "
+"مزدوجًا بسرعة كافية، فإن البطريق يمسك الكرة.  يجب عليك النقر فوق الكرة "
 "لإعادتها إلى موضعه الأول."
 
 #: activities/penalty/Penalty.qml:239
@@ -20850,12 +20845,12 @@ msgid ""
 "education or MuseScore (https://musescore.org), an open source music "
 "notation tool."
 msgstr ""
-"تدرّا على التأليف الموسيقي ، وزد الاهتمام بعزف الموسيقى باستخدام لوحة مفاتيح "
+"تدرّا على التأليف الموسيقي، وزد الاهتمام بعزف الموسيقى باستخدام لوحة مفاتيح "
 "البيانو.يقدّم هذا النشاط جوانب أساسية للموسيقى، ولكن هناك الكثير لاستكشافه "
 "حول التأليف الموسيقي. إذا كنت تستمتع بهذا النشاط ولكنك تريد أداة أكثر تقدمًا، "
-"فحاول تنزيل Minuet (https://minuet.kde.org/) ، وهو برنامج مفتوح المصدر "
-"لتعليم الموسيقى أو MuseScore (https://musescore.org) ، وهو أداة مفتوحة "
-"المصدر لتدوين الموسيقى."
+"فحاول تنزيل Minuet (https://minuet.kde.org/)، وهو برنامج مفتوح المصدر لتعليم "
+"الموسيقى أو MuseScore (https://musescore.org)، وهو أداة مفتوحة المصدر لتدوين "
+"الموسيقى."
 
 #. Help prerequisite
 #: activities/piano_composition/ActivityInfo.qml:23
@@ -20895,7 +20890,7 @@ msgid ""
 "Level 3: Option to choose between treble and bass clef, addition of black "
 "keys (sharp keys)."
 msgstr ""
-"المستوى 3: خيار للاختيار بين المفتاح الثلاثي صول والمفتاح الجهير فا ، إضافة "
+"المستوى 3: خيار للاختيار بين المفتاح الثلاثي صول والمفتاح الجهير فا، إضافة "
 "المفاتيح السوداء (المفاتيح الحادة)."
 
 #: activities/piano_composition/ActivityInfo.qml:29
@@ -20908,12 +20903,12 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Level 5: Option to select a note duration (whole, half, quarter, eighth "
 "notes)."
-msgstr "المستوى 5: خيار تحديد مدة الزمن (كاملة ، نصف ، ربع ، ثمن  زمن)."
+msgstr "المستوى 5: خيار تحديد مدة الزمن (كاملة، نصف، ربع، ثمن  زمن)."
 
 #: activities/piano_composition/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Level 6: Addition of rests (whole, half, quarter, eighth rests)."
-msgstr "المستوى 6: إضافة سكتات(كاملة ، نصف ، ربع ، ثمن سكتة)."
+msgstr "المستوى 6: إضافة سكتات(كاملة، نصف، ربع، ثمن سكتة)."
 
 #: activities/piano_composition/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -21308,7 +21303,7 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
-"يتطلب هذا النشاط صوتًا ، لذلك ستشتغل بعض الأصوات حتى لو كان الصوت أو تأثيرات "
+"يتطلب هذا النشاط صوتًا، لذلك ستشتغل بعض الأصوات حتى لو كان الصوت أو تأثيرات "
 "الصوت معطلة في الإعدادات الرئيسة."
 
 #: activities/piano_composition/Piano_composition.qml:551
@@ -21591,8 +21586,8 @@ msgid ""
 "On levels 1 to 5 you will practice treble clef notes and on levels 6 to 10 "
 "you will practice bass clef notes."
 msgstr ""
-"في المستويات من 1 إلى 5 ، ستتدرب على نغمات المفتاح الموسيقي الثلاثي صول، وفي "
-"المستويات من 6 إلى 10 ، ستتدرب على نغمات المفتاح الجهير فا."
+"في المستويات من 1 إلى 5، ستتدرب على نغمات المفتاح الموسيقي الثلاثي صول، وفي "
+"المستويات من 6 إلى 10، ستتدرب على نغمات المفتاح الجهير فا."
 
 #: activities/play_piano/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
@@ -21610,7 +21605,7 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
-"يتطلب هذا النشاط صوتًا ، لذلك ستشتغل بعض الأصوات حتى لو كان الصوت أو تأثيرات "
+"يتطلب هذا النشاط صوتًا، لذلك ستشتغل بعض الأصوات حتى لو كان الصوت أو تأثيرات "
 "الصوت معطلة في الإعدادات الرئيسة."
 
 #: activities/play_piano/PlayPiano.qml:323
@@ -21674,7 +21669,7 @@ msgid ""
 "notes length and play the rhythm accordingly. You can also click on the "
 "metronome to hear the quarter notes as reference."
 msgstr ""
-"المستويات الزوجية أصعب ، لأنه لا يوجد خط عمودي. يجب عليك قراءة طول العلامة "
+"المستويات الزوجية أصعب، لأنه لا يوجد خط عمودي. يجب عليك قراءة طول العلامة "
 "الموسيقية وتشغيل الإيقاع وفقًا لذلك. يمكنك أيضًا النقر فوق  رقّاص الإيقاع لسماع "
 "العلامات الربعية كمرجع."
 
@@ -21725,7 +21720,7 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
-"يتطلب هذا النشاط صوتًا ، لذلك ستشتغل بعض الأصوات حتى لو كان الصوت أو تأثيرات "
+"يتطلب هذا النشاط صوتًا، لذلك ستشتغل بعض الأصوات حتى لو كان الصوت أو تأثيرات "
 "الصوت معطلة في الإعدادات الرئيسة."
 
 #: activities/play_rhythm/PlayRhythm.qml:407
@@ -22166,7 +22161,7 @@ msgid ""
 "Space: add an item from the samples to the answer area, or swap two items in "
 "the answer area"
 msgstr ""
-"المسافة: لإضافة عنصر من منطقة الإجابة ، أو لتبديل عنصرين في منطقة الإجابة"
+"المسافة: لإضافة عنصر من منطقة الإجابة، أو لتبديل عنصرين في منطقة الإجابة"
 
 #: activities/railroad/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -22288,8 +22283,8 @@ msgid ""
 "First, select the proper color from the toolbar. Click on the grid and drag "
 "to paint, then release the click to stop painting."
 msgstr ""
-"أولاً ، حدد اللون المناسب من شريط الأدوات. اضغط على الشبكة واسحب  عليها "
-"للرسم ، ثم توقف عن الضغط للتوقف عن الرسم."
+"أولاً، حدد اللون المناسب من شريط الأدوات. اضغط على الشبكة واسحب  عليها للرسم، "
+"ثم توقف عن الضغط للتوقف عن الرسم."
 
 #: activities/redraw/ActivityInfo.qml:26
 #: activities/redraw_symmetrical/ActivityInfo.qml:26
@@ -22391,9 +22386,9 @@ msgid ""
 "To win you must switch on all the consumers while all the producers are up."
 msgstr ""
 "انقر فوق العناصر النشطة المختلفة: الشمس، والسحابة، والسد، ونظام الطاقة "
-"الشمسية، وطاحونة الرياح والمحوّلات ، من أجل تشغيل النظام الكهربائي بأكمله "
-"ثانية.  عندما يعود النظام للعمل والبطريق في منزله ، اضغط على زر الضوء من "
-"أجله. للفوز ، عليك تشغيل جميع المستهلكين بينما يكون جميع مصادر الطاقة فعّالة."
+"الشمسية، وطاحونة الرياح والمحوّلات، من أجل تشغيل النظام الكهربائي بأكمله "
+"ثانية.  عندما يعود النظام للعمل والبطريق في منزله، اضغط على زر الضوء من "
+"أجله. للفوز، عليك تشغيل جميع المستهلكين بينما يكون جميع مصادر الطاقة فعّالة."
 
 #: activities/renewable_energy/RenewableEnergy.qml:273
 msgctxt "RenewableEnergy|"
@@ -22410,7 +22405,7 @@ msgid ""
 "and transformers, in order to reactivate the entire electrical system."
 msgstr ""
 "انقر فوق العناصر النشطة المختلفة: الشمس، والسحابة، والسد، ونظام الطاقة "
-"الشمسية، وطاحونة الرياح والمحوّلات ، من أجل تشغيل النظام الكهربائي بأكمله "
+"الشمسية، وطاحونة الرياح والمحوّلات، من أجل تشغيل النظام الكهربائي بأكمله "
 "ثانية."
 
 #: activities/renewable_energy/RenewableEnergy.qml:279
@@ -22420,8 +22415,8 @@ msgid ""
 "him. To win you must switch on all the consumers while all the producers are "
 "up."
 msgstr ""
-"عندما يعود النظام للعمل والبطريق في منزله ، اضغط على زر الضوء من أجله. "
-"للفوز ، عليك تشغيل جميع المستهلكين بينما يكون جميع مصادر الطاقة فعّالة."
+"عندما يعود النظام للعمل والبطريق في منزله، اضغط على زر الضوء من أجله. للفوز، "
+"عليك تشغيل جميع المستهلكين بينما يكون جميع مصادر الطاقة فعّالة."
 
 #: activities/renewable_energy/RenewableEnergy.qml:282
 msgctxt "RenewableEnergy|"
@@ -22440,12 +22435,11 @@ msgid ""
 "equipment can shut down which, in the worst cases, can lead to a major "
 "regional blackout."
 msgstr ""
-"لا يمكنك استهلاك كهرباء أكثر مما ينتج. هناك قيود رئيسة في توزيع الكهرباء ، "
-"مع استثناءات طفيفة، لا يمكن تخزين الطاقة الكهربائية، وبالتالي يجب توليدها "
-"حسب الحاجة. لذلك، نحتاج إلى نظام تحكم متطور لضمان أن توليد الكهرباء يلبّي "
-"الطلب كما يجب. إذا لم يكن العرض والطلب متوازنين ، قد توقف محطات التوليد "
-"ومعدات النقل، مما قد يؤدي في أسوأ الحالات إلى انقطاع التيار الكهربائي في "
-"المنطقة."
+"لا يمكنك استهلاك كهرباء أكثر مما ينتج. هناك قيود رئيسة في توزيع الكهرباء، مع "
+"استثناءات طفيفة، لا يمكن تخزين الطاقة الكهربائية، وبالتالي يجب توليدها حسب "
+"الحاجة. لذلك، نحتاج إلى نظام تحكم متطور لضمان أن توليد الكهرباء يلبّي الطلب "
+"كما يجب. إذا لم يكن العرض والطلب متوازنين، قد توقف محطات التوليد ومعدات "
+"النقل، مما قد يؤدي في أسوأ الحالات إلى انقطاع التيار الكهربائي في المنطقة."
 
 #: activities/reversecount/ActivityConfig.qml:23
 #: activities/smallnumbers2/ActivityConfig.qml:21
@@ -22470,7 +22464,7 @@ msgstr "الصور"
 #: activities/smallnumbers2/ActivityConfig.qml:37
 msgctxt "ActivityConfig|"
 msgid "Select Domino Representation"
-msgstr "اختيار تمثيل الدومينو"
+msgstr "اختيار تنسخة الدومينو"
 
 #. Activity title
 #: activities/reversecount/ActivityInfo.qml:15
@@ -22591,7 +22585,7 @@ msgid ""
 "number 0."
 msgstr ""
 "تكتب جميع الأعداد الرومانية بهذه الأحرف السبعة: \n"
-"I و V (الوحدات ، 1 و 5) \n"
+"I و V (الوحدات، 1 و 5) \n"
 "X و L (عشرات و 10 و 50) \n"
 "C و D (مئات و 100 و 500) \n"
 "  و M (1000). \n"
@@ -22673,10 +22667,10 @@ msgid ""
 "possible units, tens or hundreds, you must use differences too. On the other "
 "hand, it limits the maximum roman number to 3999 (MMMCMXCIX)."
 msgstr ""
-"لكتابة الآلاف نستخدم M عدّة مرات: M ، MM ، MMM. \n"
+"لكتابة الآلاف نستخدم M عدّة مرات: M، MM، MMM. \n"
 "لاحظ أنه لا يمكنك ضم أكثر من ثلاثة رموز متطابقة.  المعنى الأول لهذه القاعدة "
 "أنك لا يمكنك استخدام الجمع فقط لكتابة ما تريد من وحدات أو عشرات أو مئات ، "
-"يجب عليك استخدام الطرح الخلافات أيضا. من ناحية أخرى ، فإن أقصى عدد يُمكن "
+"يجب عليك استخدام الطرح الخلافات أيضا. من ناحية أخرى، فإن أقصى عدد يُمكن "
 "كتابته بالأرقام الرومانية هو 3999 (MMMCMXCIX)."
 
 #: activities/roman_numerals/RomanNumerals.qml:140
@@ -22684,8 +22678,7 @@ msgctxt "RomanNumerals|"
 msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
 msgstr ""
-"الآن بعد أن تعرفت على القواعد ، يمكنك قراءة وكتابة الأعداد بالأرقام "
-"الرومانية."
+"الآن بعد أن تعرفت على القواعد، يمكنك قراءة وكتابة الأعداد بالأرقام الرومانية."
 
 #: activities/roman_numerals/RomanNumerals.qml:387
 #, qt-format
@@ -22715,7 +22708,7 @@ msgstr "اسحب الأوزان لأعلى لموازنة الكيل."
 #: activities/scalesboard/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Mental calculation, arithmetic equality."
-msgstr "الحساب الذهني ، المساواة الحسابية."
+msgstr "الحساب الذهني، المساواة الحسابية."
 
 #. Help manual
 #: activities/scalesboard/ActivityInfo.qml:23
@@ -22931,7 +22924,7 @@ msgstr "اسحب الأوزان وضعها لموازنة الكيل وحساب 
 #: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Mental calculation, arithmetic equality, unit conversion."
-msgstr "الحساب الذهني ، المساواة الحسابية ، تحويل الوحدات."
+msgstr "الحساب الذهني، المساواة الحسابية، تحويل الوحدات."
 
 #. Help manual
 #: activities/scalesboard_weight/ActivityInfo.qml:23
@@ -23278,7 +23271,7 @@ msgstr "إذا بقي شيء من الحلوى، فيجب وضعها داخل ج
 #: activities/share/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, no rest."
-msgstr "بحد أقصى 25 قطعة حلوى و 5 أطفال ، دون باقٍ."
+msgstr "بحد أقصى 25 قطعة حلوى و 5 أطفال، دون باقٍ."
 
 #: activities/share/resource/1/Data.qml:20
 #: activities/share/resource/2/Data.qml:20
@@ -23497,7 +23490,7 @@ msgstr ""
 #: activities/share/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, possible rest."
-msgstr "بحد أقصى 25 قطعة حلوى و 5 أطفال ، مع باقٍ محتمل."
+msgstr "بحد أقصى 25 قطعة حلوى و 5 أطفال، مع باقٍ محتمل."
 
 #: activities/share/resource/2/Data.qml:30
 msgctxt "Data|"
@@ -23672,7 +23665,7 @@ msgstr ""
 #: activities/share/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
-msgstr "بحد أقصى 30 قطعة حلوى و 6 أطفال ، مع باقٍ محتمل."
+msgstr "بحد أقصى 30 قطعة حلوى و 6 أطفال، مع باقٍ محتمل."
 
 #: activities/share/share.js:115
 #, qt-format
@@ -23750,7 +23743,7 @@ msgstr "حدد لونًا وارسم بالمستطيلات كما تشاء."
 #: activities/simplepaint/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
-msgstr "علامة التبويب: بدّل بين محدد اللون ومنطقة الرسم"
+msgstr "مفتاح الجدولة: بدّل بين محدد اللون ومنطقة الرسم"
 
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18
@@ -24230,7 +24223,7 @@ msgid ""
 "astronomy, try downloading KStars (https://edu.kde.org/kstars/) or "
 "Stellarium (https://stellarium.org/) which are astronomy Free Software."
 msgstr ""
-"تعلم معلومات عن النظام الشمسي. إذا رغبت في تعلم المزيد عن علم الفلك ، جرّب "
+"تعلم معلومات عن النظام الشمسي. إذا رغبت في تعلم المزيد عن علم الفلك، جرّب "
 "تنزيل برنامج نجومك (https://edu.kde.org/kstars/) أو Stellarium (https://"
 "stellarium.org/) وهي برامج مجانية لعلم الفلك."
 
@@ -25392,7 +25385,7 @@ msgstr "تعلّم التحكّم غوّاصة."
 #: activities/submarine/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Move and click using the mouse, physics basics."
-msgstr "حرك وانقر باستخدام الفأرة ، أساسيات الفيزياء."
+msgstr "حرك وانقر باستخدام الفأرة، أساسيات الفيزياء."
 
 #. Help manual
 #: activities/submarine/ActivityInfo.qml:24
@@ -25508,7 +25501,7 @@ msgctxt "Submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
 "velocity."
-msgstr "اضغط على الزر + لزيادة السرعة ، أو الزر - لتقليلها."
+msgstr "اضغط على الزر + لزيادة السرعة، أو الزر - لتقليلها."
 
 #: activities/submarine/Submarine.qml:149
 msgctxt "Submarine|"
@@ -25570,8 +25563,8 @@ msgid ""
 "Once the submarine is moving underwater, increasing or decreasing the angle "
 "of the planes will increase and decrease the depth of the submarine."
 msgstr ""
-"بمجرد أن تتحرك الغواصة تحت الماء ، فإن زيادة أو تقليل جُنيحات الغوص يزيد "
-"ويقلل من عمق الغواصة."
+"بمجرد أن تتحرك الغواصة تحت الماء، فإن زيادة أو تقليل جُنيحات الغوص يزيد ويقلل "
+"من عمق الغواصة."
 
 #: activities/submarine/Submarine.qml:177
 msgctxt "Submarine|"
@@ -25694,14 +25687,14 @@ msgstr ""
 "انقر فوق العناصر حتى تجد ما تعتقد أنه الإجابة الصحيحة. ثم انقر فوق الزر "
 "\"موافق\". تعني النقطة السوداء أنك وجدت العنصر الصحيح في الموضع الصحيح، "
 "بينما تعني النقطة البيضاء أن العنصر صحيح ولكنه في موضع خاطئ. في المستويات "
-"الأدنى ، يمنحك البطريق أيضًا علامة مربع أسود على العناصر الصحيحة في الموضع "
-"الصحيح، ومربع أبيض على العناصر الصحيحة في الموضع الخاطئ. في المستويين 4 و "
-"8 ، سيُخفى عنصر ما عدة مرات. <br/> يمكنك استخدام زر  الفأرة الأيمن لقلب "
-"العناصر بالترتيب المعاكس، أو لاختيار عنصر من القائمة مباشرةً. اضغط لمدة "
-"ثانيتين على عنصر ما لاختيار العنصر الأخير المحدد في هذا الموضع آليًّا. انقر "
-"نقرًا مزدوجًا فوق عنصر محدد مسبقًا في سجل التخمين الخاص بك لتمييزه على أنه "
-"\"صحيح\". تُحدَد هذه العناصر المميزة آليًّا في تخميناتك الحالية والمستقبلية إلى "
-"أن تلغى تحديدها، بالنقر المزدوج عليها مرة أخرى."
+"الأدنى، يمنحك البطريق أيضًا علامة مربع أسود على العناصر الصحيحة في الموضع "
+"الصحيح، ومربع أبيض على العناصر الصحيحة في الموضع الخاطئ. في المستويين 4 و 8، "
+"سيُخفى عنصر ما عدة مرات. <br/> يمكنك استخدام زر  الفأرة الأيمن لقلب العناصر "
+"بالترتيب المعاكس، أو لاختيار عنصر من القائمة مباشرةً. اضغط لمدة ثانيتين على "
+"عنصر ما لاختيار العنصر الأخير المحدد في هذا الموضع آليًّا. انقر نقرًا مزدوجًا "
+"فوق عنصر محدد مسبقًا في سجل التخمين الخاص بك لتمييزه على أنه \"صحيح\". تُحدَد "
+"هذه العناصر المميزة آليًّا في تخميناتك الحالية والمستقبلية إلى أن تلغى "
+"تحديدها، بالنقر المزدوج عليها مرة أخرى."
 
 #: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
@@ -25731,7 +25724,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Develop skills in spatial visualization, memorizing positions, and "
 "reproducing models."
-msgstr "تنمية مهاراتك في تحليل الموضع، تذكر المواضع، ونماذج التمثيل."
+msgstr "تنمية مهاراتك في تحليل الموضع، تذكر المواضع، ونماذج التنسخة."
 
 #. Help manual
 #: activities/tangram/ActivityInfo.qml:24
@@ -25908,7 +25901,7 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
-"أنشئ ثنائيات من الأعداد تساوي عشرة. اختر رقمًا في القائمة ، ثم اختر مكانًا "
+"أنشئ ثنائيات من الأعداد تساوي عشرة. اختر رقمًا في القائمة، ثم اختر مكانًا "
 "لتنقله إليها."
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
@@ -26011,7 +26004,7 @@ msgid ""
 "operation to move the selected number there."
 msgstr ""
 "فكّك عمليات الجمع لإنشاء أزواج من الأرقام تساوي عشرة داخل كل قوس. حدد رقمًا في "
-"القائمة ، ثم حدد مكانًا فارغًا لعملية ما لنقل الرقم المحدد هناك."
+"القائمة، ثم حدد مكانًا فارغًا لعملية ما لنقل الرقم المحدد هناك."
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
 msgctxt "Data|"
@@ -26462,7 +26455,7 @@ msgid ""
 msgstr ""
 "انقر فوق العناصر النشطة المختلفة: الشمس، والسحابة، ومحطة الضخ،ومحطات معالجة "
 "مياه الصرف الصحي، من أجل تشغيل نظام المياه بأكمله ثانية.  عندما يعود النظام "
-"للعمل والبطريق في منزله ، اضغط على زر الحمام من أجله."
+"للعمل والبطريق في منزله، اضغط على زر الحمام من أجله."
 
 #: activities/watercycle/Watercycle.qml:114
 msgctxt "Watercycle|"
@@ -26474,7 +26467,7 @@ msgstr "الشمس هي المكون الرئيسي لدورة الماء. ان�
 #: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
-msgstr "عندما تشرق الشمس ، تسخن مياه البحر وتتبخر."
+msgstr "عندما تشرق الشمس، تسخن مياه البحر وتتبخر."
 
 #: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
@@ -26511,7 +26504,7 @@ msgstr "رائع، اضغط على زر الحمام، حين يعود البط�
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
-msgstr "رائع ، لقد أكملت دورة الماء. يمكنك الاستمرار في اللعب."
+msgstr "رائع، لقد أكملت دورة الماء. يمكنك الاستمرار في اللعب."
 
 #: activities/watercycle/Watercycle.qml:140
 msgctxt "Watercycle|"
@@ -26554,8 +26547,8 @@ msgid ""
 "treatment, and at last regulate the switch to provide water to Tux's shower."
 msgstr ""
 "هدفك هو إكمال دورة الماء قبل وصول تُكس إلى المنزل. انقر فوق المكونات المختلفة "
-"التي تشكل دورة الماء. انقر أولاً على الشمس ، ثم على السحابة ، ومحطة ضخ المياه "
-"بالقرب من النهر ، ومحطة معالجة مياه الصرف الصحي ، وأخيراً افتح الحنفية لتزوّد "
+"التي تشكل دورة الماء. انقر أولاً على الشمس، ثم على السحابة، ومحطة ضخ المياه "
+"بالقرب من النهر، ومحطة معالجة مياه الصرف الصحي، وأخيراً افتح الحنفية لتزوّد "
 "الحمام بالماء."
 
 #. Activity title
@@ -27070,10 +27063,10 @@ msgid ""
 "system to register your wish. Make sure you use the severity called "
 "\"Wishlist\"."
 msgstr ""
-"يمكن دائمًا تحسين البرامج ، وفريق KDE جاهز لذلك. ومع ذلك ، أخبرنا - أيها "
+"يمكن دائمًا تحسين البرامج، وفريق KDE جاهز لذلك. ومع ذلك، أخبرنا - أيها "
 "المستخدم -حين لا يعمل شيء ما كما ينبغي، أو حين يمكن تحسينه. <br /> <br /> "
 "لدى كيدي نظام تتبع الأخطاء. انتقل إلى <a href=\"%1\">%1 </a> للإبلاغ عن خطأ "
-"ما. <br /> <br /> إذا لديك اقتراح للتحسين ، فلا تتردد في استخدام نظام تتبع "
+"ما. <br /> <br /> إذا لديك اقتراح للتحسين، فلا تتردد في استخدام نظام تتبع "
 "الأخطاء لتسجيل رغبتك. تأكد أنك تستخدم \"قائمة الرغبات\"."
 
 #: core/DialogAbout.qml:105
@@ -27110,7 +27103,7 @@ msgid ""
 "><br />Thank you very much in advance for your support."
 msgstr ""
 "إن كيدي متوفرة دون مقابل، ولكن صُنعها ليس كذلك.لذا قام فريق كيدي بإنشاء KDE e."
-"V ، وهي منظمة غير ربحية موجودة بشكل قانوني في في ألمانيا. تمثّل KDE e.V مشروع "
+"V، وهي منظمة غير ربحية موجودة بشكل قانوني في في ألمانيا. تمثّل KDE e.V مشروع "
 "كيدي في الأمور القانونية و المالية. طالع <a href=\"%1\">%1</a>  للمزيد من "
 "المعلومات حول KDE e.V.<br /><br />تستفيد كيدي من الدعم المالي. تستعمل الأغلب "
 "الأموال لتعويض الأعضاء و غيرهم عن التكاليف التي يتحملونها أثناء المساهمة في "
@@ -27485,8 +27478,8 @@ msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
-"حدّد مدى صعوبة النشاط لعرضه للجلسة. إما قيمة واحدة (2) ، أو مجال (3-6). يجب "
-"أن تنحصر القيم بين 1 و 6."
+"حدّد مدى صعوبة النشاط لعرضه للجلسة. إما قيمة واحدة (2)، أو مجال (3-6). يجب أن "
+"تنحصر القيم بين 1 و 6."
 
 #: core/main.cpp:130
 msgctxt "QObject|"
