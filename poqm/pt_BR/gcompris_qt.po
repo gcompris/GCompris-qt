@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-09 00:03-0300\n"
+"PO-Revision-Date: 2025-08-15 02:05-0300\n"
 "Last-Translator: Geraldo Simiao <geraldosimiao@fedoraproject.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Language: pt_BR\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 24.12.3\n"
+"X-Generator: Lokalize 25.08.0\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -2957,22 +2957,12 @@ msgstr ""
 "fornecido. Quando você tiver conseguido, pressione OK."
 
 #: activities/binary_bulb/BinaryBulb.qml:84
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "This activity teaches how to convert decimal numbers to binary numbers."
 msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr ""
 "Esta atividade ensina como converter números decimais em números binários."
 
 #: activities/binary_bulb/BinaryBulb.qml:88
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Computers use transistors to count and transistors have only two states, "
-#| "0 and 1. Mathematically, these states are represented by 0 and 1, which "
-#| "makes up the binary system of numeration."
 msgctxt "BinaryBulb|"
 msgid ""
 "Computers use transistors to count and transistors have only two states, 0 "
@@ -2984,19 +2974,11 @@ msgstr ""
 "1, que são os números que compõem o sistema de numeração binário."
 
 #: activities/binary_bulb/BinaryBulb.qml:92
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr "Na atividade 0 e 1 são simuladas por lâmpadas, ligadas ou desligadas."
 
 #: activities/binary_bulb/BinaryBulb.qml:96
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Binary system uses these numbers very efficiently, allowing to count from "
-#| "0 to 255 with 8 bits only."
 msgctxt "BinaryBulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
@@ -3006,13 +2988,6 @@ msgstr ""
 "contar de 0 a 255 somente com 8 bits."
 
 #: activities/binary_bulb/BinaryBulb.qml:100
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Each bit adds a progressive value, corresponding to the powers of 2, "
-#| "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → "
-#| "2²=4 , bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit "
-#| "8 → 2⁷=128."
 msgctxt "BinaryBulb|"
 msgid ""
 "Each bit adds a progressive value, corresponding to the powers of 2, "
@@ -3026,20 +3001,12 @@ msgstr ""
 "→ 2⁷=128."
 
 #: activities/binary_bulb/BinaryBulb.qml:104
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr ""
 "Para converter um decimal 5 em um valor binário, 1 e 4 são adicionados."
 
 #: activities/binary_bulb/BinaryBulb.qml:108
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 "
-#| "is equal to binary 101."
 msgctxt "BinaryBulb|"
 msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
@@ -3049,9 +3016,6 @@ msgstr ""
 "0. O decimal 5 é igual ao binário 101."
 
 #: activities/binary_bulb/BinaryBulb.qml:112
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "This image will help you to compute bits' value."
 msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Esta imagem ajudará você a calcular o valor dos bits."
@@ -8505,7 +8469,7 @@ msgstr "Clique no local onde se encontra a pirâmide indicada."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "Cidade proibida"
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8520,12 +8484,21 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
+"A Cidade proibida, localizada no coração de Pequim, na China, é um magnífico "
+"complexo de palácios imperiais que serviu como residência de imperadores "
+"chineses e centro político da nação por quase 500 anos, desde a dinastia "
+"Ming (1368-1644) até o fim da dinastia Qing (1644-1912). Construída entre "
+"1406 e 1420, esta extensa obra-prima arquitetônica se estende por 180 acres "
+"e apresenta mais de 980 edifícios preservados com 8.700 cômodos, exibindo o "
+"design palaciano tradicional chinês. Rodeada por um fosso e uma muralha "
+"maciça, a Cidade Proibida já foi inacessível ao público em geral, "
+"simbolizando o poder imperial e a exclusividade."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "Buda gigante de Leshan"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8540,15 +8513,21 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
+"O Buda gigante de Leshan, localizado na província de Sichuan, China, é uma "
+"estátua colossal esculpida em um penhasco na confluência dos rios Min, Dadu "
+"e Qingyi. Com 71 metros (233 pés), é a estátua pré-moderna mais alta do "
+"mundo e patrimônio mundial da UNESCO. Construída durante a Dinastia Tang "
+"(713-803 d.C.), a estátua representa Maitreya, o Buda do futuro, e foi "
+"criada para acalmar as águas turbulentas que ameaçavam o tráfego de barcos "
+"locais. Engenhosamente projetada, a estátua inclui um sistema de drenagem "
+"oculto para evitar a erosão. Sua expressão serena e seu artesanato "
+"intrincado a tornam um símbolo de realização espiritual e artística."
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Palácio de Mysore"
+msgstr "Palácio de Potala"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8563,12 +8542,21 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
+"O Palácio de Potala, situado na colina vermelha em Lhasa, Tibete, é um "
+"símbolo icônico da cultura tibetana e patrimônio mundial da UNESCO. "
+"Originalmente construído no século VII e ampliado no século XVII, serviu "
+"como residência de inverno dos Dalai Lamas e centro da governança tibetana. "
+"Com 13 andares e mais de 1.000 cômodos, o palácio combina arquitetura "
+"tibetana intrincada, murais vibrantes e relíquias sagradas. É dividido entre "
+"o palácio branco, que abriga áreas administrativas, e o palácio vermelho, "
+"dedicado a estudos religiosos e orações. O Palácio de Potala é um testemunho "
+"do legado espiritual e histórico do Tibete."
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "Exército de terracota"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8580,12 +8568,19 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
+"O exército de terracota é uma coleção de milhares de soldados, cavalos e "
+"carruagens de argila em tamanho real, enterrados com o primeiro imperador da "
+"China, Qin Shi Huang, para acompanhá-lo na vida após a morte. Descobertas em "
+"1974 perto de Xi'an, as figuras datam de aproximadamente 210 a.C. e são "
+"celebradas por seus detalhes incríveis, com cada guerreiro criado "
+"exclusivamente para representar as diversas patentes e funções de um antigo "
+"exército chinês."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr ""
+msgstr "Pagodes do sol e da lua"
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8600,15 +8595,21 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
+"Os Pagodes do sol e da lua, localizados em Guilin, China, são torres gêmeas "
+"icônicas que simbolizam a herança cultural e espiritual da cidade. "
+"Originalmente construídos durante a dinastia Tang, foram reconstruídos no "
+"século XX como marcos marcantes no Lago Shanhu. O Pagode do sol, com 41 "
+"metros de altura, é uma estrutura de bronze — a mais alta do gênero no mundo "
+"—, enquanto o Pagode da lua, com 35 metros, é construído com azulejos. Esses "
+"pagodes representam a harmonia do yin e do yang e são conectados por um "
+"túnel de vidro subaquático. Iluminados à noite, são atrações populares que "
+"exibem a arquitetura tradicional chinesa e a engenhosidade moderna."
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Torre Eiffel"
+msgstr "Torres Diaolou"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8623,19 +8624,23 @@ msgid ""
 "UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
 "towers remain, offering insight into this unique architectural heritage."
 msgstr ""
+"As Torres Diaolou, localizadas em Kaiping, província de Guangdong, China, "
+"são estruturas fortificadas de vários andares, construídas entre o final do "
+"século XIX e o início do século XX para proteção contra bandidos e "
+"inundações. Combinando estilos arquitetônicos ocidentais, como o românico e "
+"o barroco, com elementos tradicionais chineses, elas refletem a riqueza e a "
+"influência dos emigrantes chineses no exterior. Construídas em concreto "
+"armado, essas torres simbolizam um período de transição cultural e econômica "
+"na China rural. Declaradas patrimônio mundial da UNESCO em 2007, cerca de "
+"1.800 das 3.000 torres originais permanecem, oferecendo uma visão geral "
+"desse patrimônio arquitetônico único."
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Monumentos da Índia"
+msgstr "Monumentos da China"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Clique no local onde se encontra o monumento indicado."
@@ -8644,7 +8649,7 @@ msgstr "Clique no local onde se encontra o monumento indicado."
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "O Panteão"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8661,12 +8666,24 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
+"O Panteão de Roma, Itália, é um antigo templo icônico construído por volta "
+"de 126 d.C. durante o reinado do imperador Adriano, no local de estruturas "
+"anteriores encomendadas por Marco Agripa. Famoso por seu brilho "
+"arquitetônico, apresenta um enorme teto abobadado com um óculo central, "
+"simbolizando os céus, permitindo que a luz natural ilumine o interior. "
+"Originalmente dedicado a todos os deuses romanos, foi posteriormente "
+"convertido em uma igreja cristã, conhecida como Basílica de Santa Maria e os "
+"Mártires (Santa Maria ad Martyres), em 609 d.C. Sua cúpula, a maior cúpula "
+"de concreto não reforçado do mundo, exibe engenharia e simetria notáveis, "
+"inspirando arquitetos por séculos. As proporções harmoniosas e o significado "
+"histórico do Panteão o tornam uma obra-prima atemporal da arquitetura "
+"clássica."
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "Catedral de Milão"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8681,15 +8698,21 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
+"O Duomo di Milano, também conhecido como Catedral de Milão, é uma obra-prima "
+"gótica icônica localizada no coração de Milão, Itália. Construída ao longo "
+"de quase seis séculos, é uma das maiores catedrais do mundo e um símbolo do "
+"patrimônio artístico e cultural de Milão. Sua fachada intrincada é adornada "
+"com inúmeras estátuas, torres e gárgulas, refletindo a grandiosidade da "
+"arquitetura gótica. Os visitantes podem explorar seus interiores "
+"deslumbrantes, com belos vitrais e detalhes em mármore, ou subir ao terraço "
+"para vistas deslumbrantes da cidade e dos Alpes. O Duomo é um testemunho da "
+"rica história e do brilhantismo arquitetônico da Itália."
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Catedral de Worms"
+msgstr "Catedral de Florença"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8705,15 +8728,22 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
+"A Catedral de Florença, oficialmente conhecida como Catedral de Santa Maria "
+"del Fiore, é uma renomada obra-prima da arquitetura gótica e renascentista "
+"localizada em Florença, Itália. Concluída em 1436, é famosa por sua "
+"imponente cúpula de telhas vermelhas projetada por Filippo Brunelleschi, que "
+"permanece uma maravilha da engenharia e um símbolo da cidade. A intrincada "
+"fachada de mármore da catedral, adicionada no século XIX, complementa seu "
+"interior ricamente decorado e seus tesouros artísticos. Juntamente com o "
+"Campanário de Giotto e o Batistério de São João, faz parte do patrimônio "
+"mundial da UNESCO, atraindo milhões de visitantes anualmente por sua "
+"importância histórica, cultural e arquitetônica."
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Torre de Hanói"
+msgstr "Torre inclinada de Pisa"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8728,12 +8758,22 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
+"A Torre inclinada de Pisa, localizada na cidade italiana de Pisa, é uma "
+"maravilha arquitetônica de renome mundial. Construída como torre sineira "
+"independente para a catedral da cidade, é famosa por sua inclinação "
+"involuntária, causada pela instabilidade do solo da fundação. Iniciada em "
+"1173, a construção da torre durou quase 200 anos, durante os quais foram "
+"feitos esforços para estabilizar sua inclinação. Com aproximadamente 56 "
+"metros de altura, a torre, em seu estilo românico, apresenta oito andares, "
+"incluindo uma câmara sineira, adornada com colunas e arcos intrincadamente "
+"esculpidos. Reconhecida como patrimônio mundial da UNESCO, ela continua "
+"sendo um símbolo de resiliência e engenhosidade."
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr ""
+msgstr "Basílica de São Marcos"
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -8749,12 +8789,22 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
+"A Basílica de São Marcos, localizada em Veneza, Itália, é uma obra-prima "
+"icônica da arquitetura bizantina e um dos marcos mais famosos da cidade. "
+"Originalmente construída em 828 para abrigar as relíquias de São Marcos "
+"evangelista, foi reconstruída em sua forma atual no século XI. Conhecida por "
+"seu design opulento, a basílica apresenta uma mistura de influências "
+"orientais e ocidentais, evidente em suas cinco cúpulas, mosaicos intrincados "
+"e fachada ornamentada com estátuas e esculturas. O interior é ricamente "
+"decorado com mosaicos dourados e pisos de mármore, exibindo a riqueza e o "
+"poder da República de Veneza. Adjacente à Praça de São Marcos, continua "
+"sendo um símbolo do patrimônio histórico, cultural e religioso de Veneza."
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr ""
+msgstr "Pompéia"
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -8770,31 +8820,33 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
+"Pompeia foi uma antiga cidade romana localizada perto da atual Nápoles, "
+"Itália, famosa por sua preservação após ter sido soterrada pela erupção do "
+"monte Vesúvio em 79 d.C. A erupção liberou uma combinação mortal de cinzas, "
+"pedra-pomes e fluxos piroclásticos, que engolfaram a cidade e seus "
+"habitantes, preservando edifícios, artefatos e até restos mortais humanos "
+"com detalhes incríveis. As escavações de Pompeia forneceram informações "
+"valiosas sobre a vida cotidiana, a arquitetura e a sociedade romanas, "
+"revelando uma cidade com ruas, casas, banhos públicos e templos bem "
+"planejados. O sítio arqueológico é agora patrimônio mundial da UNESCO e "
+"continua sendo uma das descobertas arqueológicas mais importantes da "
+"história."
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Monumentos da Índia"
+msgstr "Monumentos da Itália"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Clique no local onde se encontra o monumento indicado."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Maiúsculas e Minúsculas"
+msgstr "Castelo Himeji"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -8807,12 +8859,20 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
+"Himeji-jo é o melhor exemplo sobrevivente da arquitetura de castelos "
+"japoneses do início do século XVII, compreendendo 83 edifícios com sistemas "
+"de defesa altamente desenvolvidos e engenhosos dispositivos de proteção que "
+"datam do início do período Shogun. É uma obra-prima da construção em "
+"madeira, combinando funcionalidade com apelo estético, tanto em sua "
+"aparência elegante, unificada pelas paredes de barro rebocado branco, quanto "
+"na sutileza das relações entre os volumes do edifício e as múltiplas camadas "
+"do telhado."
 
 #: activities/explore_monuments/resource/board/board9.qml:28
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr ""
+msgstr "Parque memorial da paz de Hiroshima"
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -8828,12 +8888,22 @@ msgid ""
 "a solemn space for reflection, honoring the lives lost and advocating for "
 "global peace."
 msgstr ""
+"O Parque Memorial da Paz de Hiroshima é um símbolo da paz e um lembrete das "
+"consequências devastadoras da guerra. Localizado em Hiroshima, Japão, o "
+"parque homenageia as vítimas do bombardeio atômico de 6 de agosto de 1945. O "
+"parque possui diversos monumentos, incluindo o icônico Domo da bomba "
+"atômica, que já foi um prédio governamental e agora é patrimônio mundial da "
+"UNESCO. O parque também abriga o Museu Memorial da Paz de Hiroshima, que "
+"educa os visitantes sobre os eventos que cercaram o bombardeio e promove uma "
+"mensagem de paz, não violência e a importância do desarmamento nuclear. Ele "
+"serve como um espaço solene para reflexão, homenageando as vidas perdidas e "
+"defendendo a paz global."
 
 #: activities/explore_monuments/resource/board/board9.qml:39
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr ""
+msgstr "Santuário Arkura Fuji Sengen"
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -8849,12 +8919,23 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
+"O santuário foi fundado em 705 para consagrar a divindade do local. Após a "
+"grande erupção do Monte Fuji em 807, o imperador enviou um emissário "
+"imperial a este santuário para realizar um ritual para interromper a "
+"erupção. Diz-se que durante o período dos reinos combatentes, quando Takeda "
+"Nobutora, pai de um famoso senhor da guerra, Takeda Shingen, lutou contra a "
+"Família Hojo, ele montou acampamento aqui, rezou pela vitória e venceu a "
+"batalha. Ele então dedicou sua espada a este santuário. Hoje, moradores "
+"locais e pessoas de longe visitam o santuário para afastar o mal, rezar pela "
+"felicidade da família e por um parto seguro. Na primavera, as cerejeiras "
+"florescem e multidões se reúnem para apreciar a vista deslumbrante do Monte "
+"Fuji."
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr ""
+msgstr "Castelo Okinawa Shuri"
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -8870,19 +8951,24 @@ msgid ""
 "much of the castle was lost in a fire in 2019, but efforts to restore it are "
 "ongoing, reflecting its enduring importance to Okinawa's heritage."
 msgstr ""
+"O Castelo de Shuri, localizado em Naha, Okinawa, Japão, é patrimônio mundial "
+"da UNESCO e um símbolo da rica história cultural do reino de Ryukyu. "
+"Originalmente construído no século XIV, o castelo serviu como centro "
+"político, econômico e cultural do reino por séculos. Famoso por sua fusão "
+"distinta de estilos arquitetônicos chinês e japonês, o Castelo de Shuri "
+"apresenta estruturas laqueadas em vermelho, decorações ornamentadas e uma "
+"posição imponente no topo de uma colina. Embora destruído durante a segunda "
+"guerra mundial, foi meticulosamente reconstruído e se tornou uma importante "
+"atração turística. Tragicamente, grande parte do castelo foi perdida em um "
+"incêndio em 2019, mas os esforços para restaurá-lo continuam, refletindo sua "
+"importância duradoura para o patrimônio de Okinawa."
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Monumentos da França"
+msgstr "Monumentos do Japão"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Clique no local onde se encontra o monumento indicado."
@@ -15124,26 +15210,16 @@ msgid "Empty"
 msgstr "Vazia"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Grammatical analysis"
 msgctxt "GrammarAnalysis|"
 msgid "Grammatical analysis"
 msgstr "Análise gramatical"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "GrammarAnalysis|"
 msgid "Learn to identify grammatical classes."
-msgstr "Aprender a identificar as classes gramaticais."
+msgstr "Aprenda a identificar as classes gramaticais."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:28
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid ""
-#| "Find all the words corresponding to the requested grammatical classes."
 msgctxt "GrammarAnalysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr ""
@@ -15151,11 +15227,6 @@ msgstr ""
 "solicitadas."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a grammatical class from the list, then select the box under a "
-#| "word and assign it the class."
 msgctxt "GrammarAnalysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
@@ -15165,9 +15236,6 @@ msgstr ""
 "uma palavra para atribuir a classe gramatical a ela."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Leave the box blank if no class matches."
 msgctxt "GrammarAnalysis|"
 msgid "Leave the box blank if no class matches."
 msgstr "Deixe a caixa em branco se nenhuma classe corresponder."
@@ -15199,36 +15267,22 @@ msgid "Leave the box blank if the class doesn't match."
 msgstr "Deixe a caixa em branco se não corresponder a nenhuma classe."
 
 #: activities/grammar_classes/GrammarClasses.qml:15
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Grammatical classes"
 msgctxt "GrammarClasses|"
 msgid "Grammatical classes"
 msgstr "Classes gramaticais"
 
 #: activities/grammar_classes/GrammarClasses.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "GrammarClasses|"
 msgid "Learn to identify grammatical classes."
-msgstr "Aprender a identificar as classes gramaticais."
+msgstr "Aprenda a identificar as classes gramaticais."
 
 #: activities/grammar_classes/GrammarClasses.qml:17
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Find all the words corresponding to the requested grammatical class."
 msgctxt "GrammarClasses|"
 msgid "Find all the words corresponding to the requested grammatical class."
 msgstr ""
 "Encontre todas as palavras correspondentes à classe gramatical solicitada."
 
 #: activities/grammar_classes/GrammarClasses.qml:18
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid ""
-#| "Select the grammatical class from the list, then select the box under a "
-#| "word and assign it the class."
 msgctxt "GrammarClasses|"
 msgid ""
 "Select the grammatical class from the list, then select the box under a word "
@@ -15238,9 +15292,6 @@ msgstr ""
 "palavra para atribuir a classe gramatical a ela."
 
 #: activities/grammar_classes/GrammarClasses.qml:19
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Leave the box blank if the class doesn't match."
 msgctxt "GrammarClasses|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr "Deixe a caixa em branco se não corresponder a nenhuma classe."
@@ -15491,12 +15542,9 @@ msgid "Division required."
 msgstr "Divisão obrigatória."
 
 #: activities/guess24/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "Jogo da memória com todas as operações"
+msgstr "Todos os operadores são necessários."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -16833,11 +16881,6 @@ msgstr ""
 "resposta."
 
 #: activities/learn_decimals/Learn_decimals.qml:30
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A decimal number is displayed. The bar with the arrow represents a full "
-#| "unit, and each square in it represents one tenth of this unit."
 msgctxt "Learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
@@ -16847,13 +16890,6 @@ msgstr ""
 "inteira e cada quadrado nela representa um décimo dessa unidade."
 
 #: activities/learn_decimals/Learn_decimals.qml:34
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a part of the bar, and drag the selected part of "
-#| "the bar to the empty area. Repeat these steps until the number of dropped "
-#| "bars corresponds to the displayed decimal number. Then click on the OK "
-#| "button to validate your answer."
 msgctxt "Learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -16962,12 +16998,6 @@ msgid "Numbers: type the result"
 msgstr "Números: digite o resultado"
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "An addition with two decimal numbers is displayed. The bar with the arrow "
-#| "represents a full unit, and each square in it represents one tenth of "
-#| "this unit."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "An addition with two decimal numbers is displayed. The bar with the arrow "
@@ -16979,13 +17009,6 @@ msgstr ""
 "dessa unidade."
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a part of the bar, and drag the selected part of "
-#| "the bar to the empty area. Repeat these steps until the number of dropped "
-#| "bars corresponds to the result of the addition, and click on the OK "
-#| "button to validate your answer."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -16999,11 +17022,6 @@ msgstr ""
 "botão OK para conferir sua resposta."
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:24
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -17068,12 +17086,6 @@ msgstr ""
 "operação."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A subtraction with two decimal numbers is displayed. Below it, the first "
-#| "number from the subtraction is represented with bars. One bar represents "
-#| "a full unit, and each square in it represents one tenth of this unit."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "A subtraction with two decimal numbers is displayed. Below it, the first "
@@ -17085,11 +17097,6 @@ msgstr ""
 "unidade inteira e, cada quadrado, um décimo dessa unidade."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Click on the squares to subtract them and display the result of the "
-#| "operation, and click on the OK button to validate your answer."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
@@ -17099,11 +17106,6 @@ msgstr ""
 "clique no botão OK para conferir sua resposta."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:24
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -17281,22 +17283,11 @@ msgstr ""
 "valor indicado. Ao final, clique no botão OK para conferir sua resposta."
 
 #: activities/learn_quantities/Learn_quantities.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgctxt "Learn_quantities|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr "Qual a quantidade? A seta permite a seleção de até 10 laranjas."
 
 #: activities/learn_quantities/Learn_quantities.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a number of oranges, and drag the selected "
-#| "oranges to the empty area. Repeat these steps until the number of oranges "
-#| "corresponds to the requested quantity. Then click on the OK button to "
-#| "validate your answer."
 msgctxt "Learn_quantities|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "
@@ -17806,12 +17797,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "O chapéu mágico"
+msgstr "O chapéu mágico (subtração)"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -17902,12 +17890,9 @@ msgstr "%1x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "O chapéu mágico"
+msgstr "O chapéu mágico (adição)"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -20517,11 +20502,6 @@ msgid "Try again"
 msgstr "Tentar novamente"
 
 #: activities/nine_men_morris/NineMenMorris.qml:348
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "You and Tux start with 9 pieces each, and take turns to place your pieces "
-#| "on the empty spots of the board (by clicking on the spots)."
 msgctxt "NineMenMorris|"
 msgid ""
 "You and Tux start with 9 pieces each, and take turns to place your pieces on "
@@ -20531,12 +20511,6 @@ msgstr ""
 "nos espaços vazios do tabuleiro (clicando nos espaços)."
 
 #: activities/nine_men_morris/NineMenMorris.qml:352
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
-#| "remove it. Pieces of formed mill can not be removed unless no other "
-#| "pieces are left on the board."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
@@ -20548,12 +20522,6 @@ msgstr ""
 "existam mais peças disponíveis no tabuleiro."
 
 #: activities/nine_men_morris/NineMenMorris.qml:356
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "After all the pieces are placed, you and Tux will take turns to move "
-#| "them. Click on one of your pieces, and then on an adjacent empty spot to "
-#| "move it there. Green color spots indicates where you can move."
 msgctxt "NineMenMorris|"
 msgid ""
 "After all the pieces are placed, you and Tux will take turns to move them. "
@@ -20566,11 +20534,6 @@ msgstr ""
 "onde as peças podem ser movidas."
 
 #: activities/nine_men_morris/NineMenMorris.qml:360
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
-#| "moved to any vacant spot on the board."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
@@ -20580,11 +20543,6 @@ msgstr ""
 "ser movidas para qualquer espaço vazio do tabuleiro."
 
 #: activities/nine_men_morris/NineMenMorris.qml:364
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you immobilize the computer or leave it with less than 3 pieces, then "
-#| "you win the game."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
@@ -22895,30 +22853,17 @@ msgid "Loop"
 msgstr "Laço"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:542
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Instruction Area:"
 msgctxt "ProgrammingMaze|"
 msgid "Instruction Area:"
 msgstr "Área de instruções:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:543
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "There are 3 instructions which you can use to code and lead Tux to the "
-#| "fish:"
 msgctxt "ProgrammingMaze|"
 msgid ""
 "There are 3 instructions which you can use to code and lead Tux to the fish:"
 msgstr "Existem 3 instruções que podem ser usada para guiar o Tux até o peixe:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:544
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
-#| "facing."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
@@ -22928,43 +22873,26 @@ msgstr ""
 "ele está olhando."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:545
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgctxt "ProgrammingMaze|"
 msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgstr "<b>2. Seta circular para a esquerda:</b> Vira o Tux para a esquerda."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:546
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgctxt "ProgrammingMaze|"
 msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgstr "<b>3. Seta circular para a direita:</b> Vira o Tux para a direita."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:550
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Main Function:"
 msgctxt "ProgrammingMaze|"
 msgid "Main Function:"
 msgstr "Função Principal:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:551
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "The execution of the code starts here."
 msgctxt "ProgrammingMaze|"
 msgid "The execution of the code starts here."
 msgstr "A execução do código começa aqui."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:552
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-Click on any instruction in the <b>instruction area</b> to add it to the "
-#| "<b>Main Function</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-Click on any instruction in the <b>instruction area</b> to add it to the "
@@ -22974,11 +22902,6 @@ msgstr ""
 "na área <b>Função Principal</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:553
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-The instructions will execute in order until there's none left, or until "
-#| "a dead-end, or when Tux reaches the fish."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-The instructions will execute in order until there's none left, or until a "
@@ -22988,19 +22911,11 @@ msgstr ""
 "não seja possível executar a instrução ou o Tux chegue até o peixe."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:563
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Procedure:"
 msgctxt "ProgrammingMaze|"
 msgid "Procedure:"
 msgstr "Procedimentos"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:564
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>Procedure</b> is a reusable set of instructions which can be <b>used "
-#| "in the code by calling it where needed</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
@@ -23010,12 +22925,6 @@ msgstr ""
 "<b>usadas no código, sendo chamadas quando necessário</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:565
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main "
-#| "Function area</b> to add your code, click on the <b>Procedure</b> or "
-#| "<b>Main Function</b> label."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
@@ -23027,19 +22936,11 @@ msgstr ""
 "<b>Procedimento</b> ou na <b>Função principal</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:575
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Loop:"
 msgctxt "ProgrammingMaze|"
 msgid "Loop:"
 msgstr "Laço:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:576
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
-#| "the number of times defined by the number inside it</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
@@ -23049,12 +22950,6 @@ msgstr ""
 "de vezes, definida pelo número dentro do laço</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:577
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
-#| "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</"
-#| "b> label."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
@@ -26538,19 +26433,11 @@ msgid "Right Ballast Tank"
 msgstr "Tanque de lastro direito"
 
 #: activities/submarine/Submarine.qml:133
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Move the submarine to the other side of the screen."
 msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "Mova o submarino para o outro lado da tela."
 
 #: activities/submarine/Submarine.qml:136
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The leftmost item in the control panel is the engine of the submarine, "
-#| "indicating the current speed of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
@@ -26560,19 +26447,11 @@ msgstr ""
 "indicando a velocidade atual do submarino."
 
 #: activities/submarine/Submarine.qml:139
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Increase or decrease the velocity of the submarine using the engine."
 msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr "Aumente ou diminua a velocidade do submarino usando o motor."
 
 #: activities/submarine/Submarine.qml:142
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Press the + button to increase the velocity, or the - button to decrease "
-#| "the velocity."
 msgctxt "Submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
@@ -26582,27 +26461,16 @@ msgstr ""
 "velocidade."
 
 #: activities/submarine/Submarine.qml:149
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The item next to the engine is the ballast tank."
 msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "Os itens ao lado do motor são os tanques de lastro."
 
 #: activities/submarine/Submarine.qml:152
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The ballast tanks are used to float or dive under water."
 msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr "Os tanques de lastro são usados para flutuar ou mergulhar na água."
 
 #: activities/submarine/Submarine.qml:155
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "If the ballast tanks are empty, the submarine will float. If the ballast "
-#| "tanks are full of water, the submarine will dive underwater."
 msgctxt "Submarine|"
 msgid ""
 "If the ballast tanks are empty, the submarine will float. If the ballast "
@@ -26612,12 +26480,6 @@ msgstr ""
 "tanques de lastro estiverem cheios de água, o submarino afundará."
 
 #: activities/submarine/Submarine.qml:158
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Turning the upper valve on or off will alternatively allow or stop the "
-#| "water from filling in the ballast tank, thus allowing it to dive "
-#| "underwater."
 msgctxt "Submarine|"
 msgid ""
 "Turning the upper valve on or off will alternatively allow or stop the water "
@@ -26627,12 +26489,6 @@ msgstr ""
 "preencha o tanque de lastro, permitindo assim, que o submarino afunde."
 
 #: activities/submarine/Submarine.qml:161
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Turning the lower valve on or off will alternatively allow or stop the "
-#| "water from flushing out the ballast tank, thus allowing it to float on "
-#| "the surface of the water."
 msgctxt "Submarine|"
 msgid ""
 "Turning the lower valve on or off will alternatively allow or stop the water "
@@ -26643,11 +26499,6 @@ msgstr ""
 "do tanque de lastro, permitindo assim, que o submarino flutue."
 
 #: activities/submarine/Submarine.qml:168
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The rightmost item in the control panel controls the diving planes of the "
-#| "submarine"
 msgctxt "Submarine|"
 msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
@@ -26657,11 +26508,6 @@ msgstr ""
 "submarino."
 
 #: activities/submarine/Submarine.qml:171
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The diving planes in a submarine are used to control the depth of the "
-#| "submarine accurately once it is underwater."
 msgctxt "Submarine|"
 msgid ""
 "The diving planes in a submarine are used to control the depth of the "
@@ -26671,11 +26517,6 @@ msgstr ""
 "submarino com precisão, uma vez que ele esteja submerso."
 
 #: activities/submarine/Submarine.qml:174
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Once the submarine is moving underwater, increasing or decreasing the "
-#| "angle of the planes will increase and decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "Once the submarine is moving underwater, increasing or decreasing the angle "
@@ -26686,11 +26527,6 @@ msgstr ""
 "submarino."
 
 #: activities/submarine/Submarine.qml:177
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The + button will increase the depth of the submarine, while the - button "
-#| "will decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "The + button will increase the depth of the submarine, while the - button "
@@ -26700,17 +26536,11 @@ msgstr ""
 "diminuirá a profundidade do submarino."
 
 #: activities/submarine/Submarine.qml:180
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Grab the crown to open the gate."
 msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "Pegue a coroa para abrir o portão."
 
 #: activities/submarine/Submarine.qml:183
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Check out the help menu for the keyboard controls."
 msgctxt "Submarine|"
 msgid "Check out the help menu for the keyboard controls."
 msgstr "Confira no menu de ajuda os controles do teclado."
