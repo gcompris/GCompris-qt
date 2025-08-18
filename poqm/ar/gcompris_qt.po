@@ -15430,7 +15430,7 @@ msgstr "الارتفاع: %1"
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
-msgstr "السّرعة: %1"
+msgstr "السرعة: %1"
 
 #: activities/land_safe/LandSafe.qml:615
 #, qt-format
