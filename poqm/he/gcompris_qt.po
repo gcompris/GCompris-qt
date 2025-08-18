@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-08-02 23:42+0300\n"
+"PO-Revision-Date: 2025-08-17 14:02+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 25.04.3\n"
+"X-Generator: Lokalize 25.08.0\n"
 "X-Qt-Contexts: true\n"
 "X-Poedit-Bookmarks: -1,2919,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
@@ -4495,22 +4495,12 @@ msgstr ""
 "מסרגל הצד לנקודות המתאימות ואז ללחוץ על כפתור ה־OK כדי לתקף את התשובה שלך."
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
-#| "Vegastrike which are released under the GPL license. The transportation "
-#| "images are copyright Franck Doucet. Dates of Transportation are based on "
-#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"צילום הירח הוא תחת זכויות היוצרים של נאס\"א. צלילי החלל לקוחים מ Tuxpaintו- "
-"Vegastrike ומשוחררים תחת רשיון GPL. איורי התעבורה הם תחת זכויות היוצרים של "
-"פרנק דוסט. תאריכי התעבורה מבוססים על ויקיפדיה. ‎&lt;https://www.wikipedia."
-"org&gt;."
+"תאריכי התעבורה מבוססים על אלו שנמצאים ב־&lt;https://www.wikipedia.org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -4954,12 +4944,9 @@ msgstr "תרגול תיאום מוטורי, הזזת היד בצורה מדוי�
 
 #. Help prerequisite
 #: activities/clickgame/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Can move mouse and click on the correct place."
 msgctxt "ActivityInfo|"
 msgid "Can move a mouse or use a touchscreen and click on the correct place."
-msgstr "אפשר להזיז את העכבר וללחוץ במקום הנכון."
+msgstr "אפשר להזיז את העכבר או להשתמש במסך מגע וללחוץ במקום הנכון."
 
 #. Help manual
 #: activities/clickgame/ActivityInfo.qml:24
@@ -5106,12 +5093,9 @@ msgstr "לגלות ערבוב צבעים."
 
 #. Help goal
 #: activities/color_mix/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mix primary colors to match the given color."
 msgctxt "ActivityInfo|"
 msgid "Learn to mix primary paint colors to match a given color."
-msgstr "לערבב את צבעי היסוד ולהתאם אותם לצבע נתון."
+msgstr "למידת ערבוב צבעי היסוד והתאמתם לצבע נתון."
 
 #. Help manual
 #: activities/color_mix/ActivityInfo.qml:23
@@ -16417,12 +16401,6 @@ msgid "Numbers: type the result"
 msgstr "מספרים: להקליד את התוצאה"
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "An addition with two decimal numbers is displayed. The bar with the arrow "
-#| "represents a full unit, and each square in it represents one tenth of "
-#| "this unit."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "An addition with two decimal numbers is displayed. The bar with the arrow "
