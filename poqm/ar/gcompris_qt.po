@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-08-14 11:46+0400\n"
+"PO-Revision-Date: 2025-08-20 18:22+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -2936,7 +2936,7 @@ msgstr "الأرقام: من 1 إلى 6 اختر/اترك النقاط المق�
 #: activities/braille_fun/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
-msgstr "مسافة: افتح أو اغلق مخطط برايل"
+msgstr "مسافة: افتح أو أغلق مخطط برايل"
 
 #: activities/braille_alphabets/braille_alphabets.js:43
 #: activities/braille_alphabets/braille_alphabets.js:53
