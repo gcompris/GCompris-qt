@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-08-19 13:48+0300\n"
+"PO-Revision-Date: 2025-08-26 14:17+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -5927,14 +5927,6 @@ msgid "NOT A"
 msgstr "איננו"
 
 #: activities/digital_electricity/components/One.qml:20
-#, fuzzy
-#| msgctxt "One|"
-#| msgid ""
-#| "Digital circuits work with only two states: 0 and 1. This allows to "
-#| "operate mathematical operations such as additions, subtractions... It is "
-#| "the basics of computer technics. In reality, 0 is often the "
-#| "representation of a voltage nearly equal to ground voltage and 1 is the "
-#| "representation of the supply voltage of a circuit."
 msgctxt "One|"
 msgid ""
 "Digital circuits work with only two states: 0 and 1. It is the basics of "
@@ -5942,9 +5934,9 @@ msgid ""
 "nearly equal to ground voltage and 1 is the representation of the supply "
 "voltage of a circuit."
 msgstr ""
-"צעגל חשמלי עובד רק בשני מצבים: 0 וְ־1. עובדה זו מאפשרת להפעיל פעולות מתמטיות "
-"כמו חיבור, חיסור... זהו הבסיס לטכנולוגיית המיחשוב. במציאות, 0 הוא לרוב ייצוג "
-"של זרם שכמעט שווה לזרם בקרקע ו1 מייצג את הזרם המסופק במעגל."
+"מעגלים חשמליים עובדים עם שני מצבים בלבד: 0 ו־1. זה הבסיס לטכניקה של המחשב. "
+"במציאות, 0 הוא בדרך כלל ייצוג שכמעט שווה למתח ההארקה ואילו 1 הוא הייצוג של "
+"מתח האספקה של מעגל."
 
 #: activities/digital_electricity/components/OrGate.qml:21
 msgctxt "OrGate|"
@@ -13925,12 +13917,9 @@ msgstr ""
 
 #. Help goal
 #: activities/graduated_line_read/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn to read a graduated line."
-msgstr "ללמוד את מחזור המים."
+msgstr "ללמוד איך לקרוא את קו המספרים."
 
 #. Help prerequisite
 #: activities/graduated_line_read/ActivityInfo.qml:21
@@ -14037,12 +14026,9 @@ msgstr ""
 
 #. Help goal
 #: activities/graduated_line_use/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to use a calendar."
 msgctxt "ActivityInfo|"
 msgid "Learn to use a graduated line."
-msgstr "ללמוד איך להשתמש בלוח שנה."
+msgstr "ללמוד איך להשתמש בקו המספרים."
 
 #. Help manual
 #: activities/graduated_line_use/ActivityInfo.qml:23
@@ -14556,18 +14542,11 @@ msgstr "ידע של סימנים חשבוניים."
 
 #. Help manual
 #: activities/guesscount/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag the appropriate numbers and the operators to the boxes to obtain the "
-#| "number to guess in the instruction."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag the numbers and operators to the boxes to obtain the number given in "
 "the instructions."
-msgstr ""
-"לגרור את המספרים המתאימים והסימנים לתיבות כדי להשיג את את המספר לניחוש "
-"שבהוראות."
+msgstr "יש לגרור את המספרים והסימנים לתיבות כדי להגיע למספר שסופק בהנחיות."
 
 #: activities/guesscount/Admin.qml:34
 #, qt-format
@@ -14802,12 +14781,9 @@ msgstr "מגדלים (אותיות)"
 
 #. Help title
 #: activities/hanoi/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid "Copy the tower on the right-hand side onto the empty peg."
-msgstr "ליצור מחדש את המגדל בצד ימין באזור הריק."
+msgstr "יש להעתיק את המגדל מהצד הימני לעמוד הריק."
 
 #. Help goal
 #: activities/hanoi/ActivityInfo.qml:20
@@ -14818,18 +14794,13 @@ msgstr "פיתוח חשיבה אסטרטגית."
 
 #. Help manual
 #: activities/hanoi/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and Drop one top piece at a time, from one tower to another, to "
-#| "reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop one top disc at a time, from one tower to another, to "
 "reproduce the tower on the right-hand side onto the empty peg."
 msgstr ""
-"לגרור ולהפיל חלק עליון אחד בכל פעם, ממגדל אחד לשני, כדי לשכפל את את המגדל "
-"הימני באזור הריק."
+"יש לגרור ולהפיל טבעת עליונה אחת בכל פעם, ממגדל אחד לשני, כדי לשכפל את את "
+"המגדל מימין לעמוד באזור הריק."
 
 #: activities/hanoi/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -14844,12 +14815,9 @@ msgstr "המגדל של האנוי"
 
 #. Help title
 #: activities/hanoi_real/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move the tower to the right side."
 msgctxt "ActivityInfo|"
 msgid "Move the tower from the left-hand side onto the right-side peg."
-msgstr "להעביר את המגדל לצד הימני."
+msgstr "להעביר את המגדל מהצד השמאלי לעמוד הימני."
 
 #. Help manual
 #: activities/hanoi_real/ActivityInfo.qml:23
@@ -25727,7 +25695,7 @@ msgstr ""
 #: activities/vertical_addition/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "לפתור חיבור, 2 ספרות, 2 שורות, בלי לזכור 1."
 
 #: activities/vertical_addition/resource/10/Data.qml:12
 msgctxt "Data|"
