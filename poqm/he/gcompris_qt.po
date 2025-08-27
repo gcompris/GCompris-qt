@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-08-19 13:48+0300\n"
+"PO-Revision-Date: 2025-08-26 14:17+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -5734,12 +5734,9 @@ msgstr "חשמל דיגיטאלי"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "יצירה והדמייה של מעגל דיגיטלי לוגי"
+msgstr "יצירה והדמיה של מעגל דיגיטלי לוגי."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -5937,14 +5934,6 @@ msgid "NOT A"
 msgstr "איננו"
 
 #: activities/digital_electricity/components/One.qml:20
-#, fuzzy
-#| msgctxt "One|"
-#| msgid ""
-#| "Digital circuits work with only two states: 0 and 1. This allows to "
-#| "operate mathematical operations such as additions, subtractions... It is "
-#| "the basics of computer technics. In reality, 0 is often the "
-#| "representation of a voltage nearly equal to ground voltage and 1 is the "
-#| "representation of the supply voltage of a circuit."
 msgctxt "One|"
 msgid ""
 "Digital circuits work with only two states: 0 and 1. It is the basics of "
@@ -5952,9 +5941,9 @@ msgid ""
 "nearly equal to ground voltage and 1 is the representation of the supply "
 "voltage of a circuit."
 msgstr ""
-"צעגל חשמלי עובד רק בשני מצבים: 0 וְ־1. עובדה זו מאפשרת להפעיל פעולות מתמטיות "
-"כמו חיבור, חיסור... זהו הבסיס לטכנולוגיית המיחשוב. במציאות, 0 הוא לרוב ייצוג "
-"של זרם שכמעט שווה לזרם בקרקע ו1 מייצג את הזרם המסופק במעגל."
+"מעגלים חשמליים עובדים עם שני מצבים בלבד: 0 ו־1. זה הבסיס לטכניקה של המחשב. "
+"במציאות, 0 הוא בדרך כלל ייצוג שכמעט שווה למתח ההארקה ואילו 1 הוא הייצוג של "
+"מתח האספקה של מעגל."
 
 #: activities/digital_electricity/components/OrGate.qml:21
 msgctxt "OrGate|"
@@ -14378,12 +14367,9 @@ msgstr ""
 
 #. Help goal
 #: activities/graduated_line_read/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn to read a graduated line."
-msgstr "ללמוד את מחזור המים."
+msgstr "ללמוד איך לקרוא את קו המספרים."
 
 #. Help prerequisite
 #: activities/graduated_line_read/ActivityInfo.qml:21
@@ -14490,12 +14476,9 @@ msgstr ""
 
 #. Help goal
 #: activities/graduated_line_use/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to use a calendar."
 msgctxt "ActivityInfo|"
 msgid "Learn to use a graduated line."
-msgstr "ללמוד איך להשתמש בלוח שנה."
+msgstr "ללמוד איך להשתמש בקו המספרים."
 
 #. Help manual
 #: activities/graduated_line_use/ActivityInfo.qml:23
@@ -15014,18 +14997,11 @@ msgstr "ידע של סימנים חשבוניים."
 
 #. Help manual
 #: activities/guesscount/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag the appropriate numbers and the operators to the boxes to obtain the "
-#| "number to guess in the instruction."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag the numbers and operators to the boxes to obtain the number given in "
 "the instructions."
-msgstr ""
-"לגרור את המספרים המתאימים והסימנים לתיבות כדי להשיג את את המספר לניחוש "
-"שבהוראות."
+msgstr "יש לגרור את המספרים והסימנים לתיבות כדי להגיע למספר שסופק בהנחיות."
 
 #: activities/guesscount/Admin.qml:34
 #, qt-format
@@ -15261,12 +15237,9 @@ msgstr "מגדלים (אותיות)"
 
 #. Help title
 #: activities/hanoi/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid "Copy the tower on the right-hand side onto the empty peg."
-msgstr "ליצור מחדש את המגדל בצד ימין באזור הריק."
+msgstr "יש להעתיק את המגדל מהצד הימני לעמוד הריק."
 
 #. Help goal
 #: activities/hanoi/ActivityInfo.qml:20
@@ -15277,18 +15250,13 @@ msgstr "פיתוח חשיבה אסטרטגית."
 
 #. Help manual
 #: activities/hanoi/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and Drop one top piece at a time, from one tower to another, to "
-#| "reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop one top disc at a time, from one tower to another, to "
 "reproduce the tower on the right-hand side onto the empty peg."
 msgstr ""
-"לגרור ולהפיל חלק עליון אחד בכל פעם, ממגדל אחד לשני, כדי לשכפל את את המגדל "
-"הימני באזור הריק."
+"יש לגרור ולהפיל טבעת עליונה אחת בכל פעם, ממגדל אחד לשני, כדי לשכפל את את "
+"המגדל מימין לעמוד באזור הריק."
 
 #: activities/hanoi/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -15303,12 +15271,9 @@ msgstr "המגדל של האנוי"
 
 #. Help title
 #: activities/hanoi_real/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move the tower to the right side."
 msgctxt "ActivityInfo|"
 msgid "Move the tower from the left-hand side onto the right-side peg."
-msgstr "להעביר את המגדל לצד הימני."
+msgstr "להעביר את המגדל מהצד השמאלי לעמוד הימני."
 
 #. Help manual
 #: activities/hanoi_real/ActivityInfo.qml:23
@@ -16292,13 +16257,6 @@ msgstr ""
 "עשירית מהיחידה."
 
 #: activities/learn_decimals/Learn_decimals.qml:34
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a part of the bar, and drag the selected part of "
-#| "the bar to the empty area. Repeat these steps until the number of dropped "
-#| "bars corresponds to the displayed decimal number. Then click on the OK "
-#| "button to validate your answer."
 msgctxt "Learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -16306,9 +16264,9 @@ msgid ""
 "bars corresponds to the displayed decimal number. Then click on the OK "
 "button to validate your answer."
 msgstr ""
-"לגרור את החץ כדי לבחור חלק מהעמודה ולגרור את החלק הנבחר לאזור הריק. לחזור על "
-"הצעדים האלו עד שמספר העמודות שירדו מתאים למספר העשרוני. אז ללחוץ על OK כדי "
-"לאשר את התשובה."
+"יש לגרור את החץ כדי לבחור חלק מהעמודה ולגרור את החלק הנבחר לאזור הריק. "
+"ולחזור על הצעדים האלו עד שמספר העמודות שירדו מתאים למספר העשרוני. לאחר מכן "
+"ללחוץ על OK כדי לאשר את התשובה."
 
 #: activities/learn_decimals/Learn_decimals.qml:150
 #, qt-format
@@ -19773,21 +19731,15 @@ msgstr ""
 "ניתן להסיר כלים מטחנות שנוצרו אלא אם לא נותרו כלים אחרים על הלוח."
 
 #: activities/nine_men_morris/NineMenMorris.qml:356
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "After all the pieces are placed, you and Tux will take turns to move "
-#| "them. Click on one of your pieces, and then on an adjacent empty spot to "
-#| "move it there. Green color spots indicates where you can move."
 msgctxt "NineMenMorris|"
 msgid ""
 "After all the pieces are placed, you and Tux will take turns to move them. "
 "Click on one of your pieces, and then on an adjacent empty spot to move it "
 "there. Green color spots indicates where you can move."
 msgstr ""
-"אחרי שכל הכלים ממוקמים, טוקס והשחקן יזיזו אותם בתורות. להקיש על אחד הכלים "
-"שלך ואז על נקודה ריקה שכנה כדי להזיז אותו לשם. נקודה בצבע ירוק מציינת לאן "
-"ניתן לזוז."
+"אחרי שכל הכלים ממוקמים, טאקס ומי שמשחק יזיזו אותם בתורות. יש ללחוץ על אחד "
+"הכלים שלך ואז על נקודה ריקה שכנה כדי להזיז אותו לשם. נקודה בצבע ירוק מציינת "
+"לאן ניתן לזוז."
 
 #: activities/nine_men_morris/NineMenMorris.qml:360
 msgctxt "NineMenMorris|"
@@ -26210,7 +26162,7 @@ msgstr ""
 #: activities/vertical_addition/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "לפתור חיבור, 2 ספרות, 2 שורות, בלי לזכור 1."
 
 #: activities/vertical_addition/resource/10/Data.qml:12
 msgctxt "Data|"
