@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-08-26 14:17+0300\n"
+"PO-Revision-Date: 2025-08-27 10:11+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -3076,13 +3076,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "סודוקו חישובי"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "יש לפתור את הסודוקו החישובי."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -6477,6 +6477,8 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"נא לצייר את הספרות על ידי חיבור הנקודות בסדר הנכון. אפשר ללחוץ ולגרור מנקודה "
+"אחת לבאות או ללחוץ על כל נקודה בזאת אחר זאת."
 
 #. Activity title
 #: activities/enumerate/ActivityInfo.qml:15
