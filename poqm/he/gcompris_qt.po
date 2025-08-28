@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-08-26 14:17+0300\n"
+"PO-Revision-Date: 2025-08-27 10:18+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -3083,13 +3083,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "סודוקו חישובי"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "יש לפתור את הסודוקו החישובי."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -6484,6 +6484,8 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"נא לצייר את הספרות על ידי חיבור הנקודות בסדר הנכון. אפשר ללחוץ ולגרור מנקודה "
+"אחת לבאות או ללחוץ על כל נקודה בזאת אחר זאת."
 
 #. Activity title
 #: activities/enumerate/ActivityInfo.qml:15
@@ -8235,7 +8237,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "קתדרלת מילאנו"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8250,6 +8252,14 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
+"קתדרלת מילאנו, הידועה גם בשם הדואומו של מילאנו, היא יצירת מופת גותית סמלית "
+"הממוקמת בלב מילאנו, איטליה. המבנה, שנבנה במשך כמעט שש מאות שנה, הוא אחת "
+"הקתדרלות הגדולות בעולם וסמל למורשת האמנותית והתרבותית של מילאנו. החזית "
+"המורכבת שלו מעוטרת באינספור פסלים, צריחים ומרזבי גרגוילים, המשקפים את הפאר "
+"של האדריכלות הגותית. המבקרים יכולים לחקור את מתחם הפנים המדהים שלו, הכולל "
+"חלונות ויטראז׳ יפהפיים ופרטי שיש מורכבים, או לעלות לגג לכדי לצפות בנוף עוצר "
+"נשימה על העיר ועל האלפים. הקתדרלה מהווה עדות להיסטוריה העשירה של איטליה "
+"ולמצוינות האדריכלית שלה."
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
