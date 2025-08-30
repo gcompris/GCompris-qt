@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-08-27 10:11+0300\n"
+"PO-Revision-Date: 2025-08-29 13:00+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -2715,7 +2715,7 @@ msgstr "ברגמה (נגד טאקס)"
 #: activities/bargame_2players/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Anticipate and force the other player to place a ball in the last hole."
-msgstr ""
+msgstr "יש לצפות מראש ולאלץ את השחקן השני להציב את הכדור בחור האחרון."
 
 #. Help goal
 #: activities/bargame/ActivityInfo.qml:20
@@ -3111,6 +3111,11 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
+"יש לבחור מספר מהרשימה וללחוץ על מקום היעד שלו כדי למלא את הטבלה. כל מספר "
+"חייב להופיע רק פעם אחת בשורה או בעמודה. הכלובים הן קבוצות של תאים שמספקים "
+"מידע על אופן המילוי שלהם. כלובים מורכבים מיותר מתא אחד מספקים תוצאה וסימן: "
+"כל המספרים בתא, כשמשלבים אותם עם הסימן, חייבים לייצר את התוצאה. כלובים "
+"שמורכבים מתא אחד מספקים את המספר שצריך למלא באופן ישיר."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
@@ -4903,19 +4908,15 @@ msgstr "ניתן להזיז את העכבר וללחוץ במדויק על הנ�
 
 #. Help manual
 #: activities/clickanddraw/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on each point in sequence. Each time a point is "
 "selected the next blue one appears. You can click and drag from one point to "
 "the next ones, or click on each point one after the other."
 msgstr ""
-"לצייר את התמונה באמצעות הקשה על נקודות לפי הסדר. בכל פעם שנקודה נבחרת, "
-"הנקודה הבאה מופיעה בכחול"
+"אפשר לצייר תמונה על ידי לחיצה על כל אחת מהנקודות ברצף. עם כל בחירה של נקודה "
+"הכחולה הבאה מופיעה. אפשר ללחוץ ולגרור מנקודה אחת לבאות, או ללחוץ עליהן בזו "
+"אחר זו."
 
 #. Activity title
 #: activities/clickgame/ActivityInfo.qml:15
@@ -5099,18 +5100,13 @@ msgid ""
 msgstr "פעילות זו מלמדת איך עירבוב של צבעים ראשוניים עובד (עירבוב מחסיר)."
 
 #: activities/color_mix/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Change the color by moving the sliders on the torches or by clicking on "
-#| "the + and - buttons. Then click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Change the color by moving the sliders on the paint tubes or by clicking on "
 "the + and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
-"לשנות את הצבע על ידי הזזה של המַחְלֵק על שפורפרות הצבע או על ידי לחיצה על "
-"כפתורי ה+ וה-. אז ללחוץ על כפתור הOK כדי לאשר את התשובה."
+"אפשר לשנות את הצבע על ידי הזזת המחוונים של שפופרות הצבע או בלחיצה על "
+"הכפתורים + (ועוד) ו־- (פחות). ואז ללחוץ על הכפתור OK כדי לאמת את התשובה."
 
 #: activities/color_mix/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -5219,18 +5215,13 @@ msgid ""
 msgstr "פעילות זו מלמדת איך עירבוב של צבעי אור עובד (עירבוב מוסיף)."
 
 #: activities/color_mix_light/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Change the color by moving the sliders on the torches or by clicking on "
-#| "the + and - buttons. Then click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Change the color by moving the sliders on the flashlights or by clicking on "
 "the + and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
-"לשנות את הצבע על ידי הזזה של המַחְלֵק על שפורפרות הצבע או על ידי לחיצה על "
-"כפתורי ה+ וה-. אז ללחוץ על כפתור הOK כדי לאשר את התשובה."
+"אפשר לשנות את הצבע על ידי הזזת המחוונים של הפנסים או בלחיצה על הכפתורים + "
+"(ועוד) ו־- (פחות). ואז ללחוץ על הכפתור OK כדי לאמת את התשובה."
 
 #: activities/color_mix_light/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -5582,15 +5573,11 @@ msgstr "פיתוח מיומנויות הבחנה וייצוג חזותי במר�
 
 #. Help manual
 #: activities/details/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Pick the pictures on the side and put them on the dots in the right order."
 msgctxt "ActivityInfo|"
 msgid ""
 "Find a picture detail in the sidebar, and drag it to the right spot on the "
 "picture."
-msgstr "לבחור מתוך התמונות במצד ולהניח אותן על הנקודות בסדר הנכון."
+msgstr "יש לאתר פרט בתמונה בסרגל הצד ולגרור אותו למקום הנכון בתמונה."
 
 #: activities/details/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -6005,14 +5992,6 @@ msgid "A XOR B"
 msgstr "A XOR B"
 
 #: activities/digital_electricity/components/Zero.qml:20
-#, fuzzy
-#| msgctxt "Zero|"
-#| msgid ""
-#| "Digital circuits work with only two states: 0 and 1. This allows to "
-#| "operate mathematical operations such as additions, subtractions... It is "
-#| "the basics of computer technics. In reality, 0 is often the "
-#| "representation of a voltage nearly equal to ground voltage and 1 is the "
-#| "representation of the supply voltage of a circuit."
 msgctxt "Zero|"
 msgid ""
 "Digital circuits work with only two states: 0 and 1. It is the basics of "
@@ -6020,9 +5999,9 @@ msgid ""
 "nearly equal to ground voltage and 1 is the representation of the supply "
 "voltage of a circuit."
 msgstr ""
-"מעגל חשמלי עובד רק בשני מצבים: 0 וְ־1. עובדה זו מאפשרת להפעיל פעולות מתמטיות "
-"כמו חיבור, חיסור... זהו הבסיס לטכנולוגיית המיחשוב. במציאות, 0 הוא לרוב ייצוג "
-"של זרם שכמעט שווה לזרם בקרקע ו־1 מייצג את הזרם המסופק במעגל."
+"מעגלים חשמליים עובדים עם שני מצבים בלבד: 0 ו־1. זה הבסיס לטכניקה של המחשב. "
+"במציאות, 0 הוא בדרך כלל ייצוג של מתח שכמעט שווה למתח ההארקה ואילו 1 הוא "
+"הייצוג של מתח האספקה של מעגל."
 
 #: activities/digital_electricity/DigitalElectricity.qml:248
 msgctxt "DigitalElectricity|"
@@ -6667,12 +6646,9 @@ msgstr "הקשה או קליק"
 
 #. Help title
 #: activities/erase_clic/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click or tap to erase the area and discover the background."
 msgctxt "ActivityInfo|"
 msgid "Click or tap to erase the blocks and discover the hidden picture."
-msgstr "להקיש או להקליק על האזור כדי לגלות את הרקע."
+msgstr "יש ללחוץ או לגעת כדי למחוק את הלבנים ולחשוף את התמונה המוסתרת."
 
 #. Help manual
 #: activities/erase_clic/ActivityInfo.qml:24
@@ -9060,6 +9036,9 @@ msgid ""
 "follow its direction. You score a goal when the ball reaches the other edge "
 "of the field."
 msgstr ""
+"יש ללחוץ על הכדור ולגרור מאחוריו כדי לצייר את קו הכיוון. ככל שהקו ארוך יותר "
+"כך הבעיטה תהיה חזקה יותר. כשמשחררים את הקו, הכדור ייבעט לכיוון שנבחר. שער "
+"מובקע כאשר הכדור מגיע לצד השני של המגרש."
 
 #. Activity title
 #: activities/fractions_create/ActivityInfo.qml:14
@@ -9432,6 +9411,9 @@ msgid ""
 "denominator. Then count the number of selected parts, and set it as the "
 "numerator."
 msgstr ""
+"יש לכתוב את השבר שמתאים לייצוג השבר: יש לספור את מספר החלקים של הצורה "
+"המיוצגת, ולהגדיר אותה בתור מונה. לאחר מכן לספור את הפריטים של החלקים הנבחרים "
+"ולהגדיר אותם בתור המכנה."
 
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
@@ -13909,13 +13891,13 @@ msgstr ""
 #: activities/graduated_line_read/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Read a graduated line"
-msgstr ""
+msgstr "קריאת קו מספרים"
 
 #. Help title
 #: activities/graduated_line_read/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Read values on a graduated line."
-msgstr ""
+msgstr "קריאת ערכים על קו מספרים."
 
 #. Help goal
 #: activities/graduated_line_read/ActivityInfo.qml:19
@@ -13937,6 +13919,8 @@ msgid ""
 "Use the number pad or your keyboard to enter the value corresponding to the "
 "given spot on the graduated line."
 msgstr ""
+"אפשר להשתמש בלוח המספרים שבמקלדת שלך כדי למלא את הערך המתאים לנקודה שסומנה "
+"על קו המספרים."
 
 #: activities/graduated_line_read/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -13962,7 +13946,7 @@ msgstr "רווח או Enter: לאשר את התשובה שלך"
 #: activities/graduated_line_read/graduated_line_read.js:115
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
-msgstr ""
+msgstr "(גבולות המשתנה)"
 
 #: activities/graduated_line_read/GraduatedLineRead.qml:17
 msgctxt "GraduatedLineRead|"
@@ -14018,13 +14002,13 @@ msgstr "המספר לאיתור הוא בין 0 ל־1,000,000."
 #: activities/graduated_line_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use a graduated line"
-msgstr ""
+msgstr "שימוש בקו מספרים"
 
 #. Help title
 #: activities/graduated_line_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Place values on a graduated line."
-msgstr ""
+msgstr "הצגת ערכים על קו מספרים"
 
 #. Help goal
 #: activities/graduated_line_use/ActivityInfo.qml:19
@@ -14039,6 +14023,7 @@ msgid ""
 "Use the arrows to move the cursor to the position corresponding to the given "
 "value on the graduated line."
 msgstr ""
+"יש להשתמש בחצים כדי להעביר את הסמן למקום שמתאים לערך שסופק בקו המספרים."
 
 #: activities/graduated_line_use/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -14048,70 +14033,52 @@ msgstr "חיצים שמאלה וימינה: להזיז את הסמן"
 #: activities/graduated_line_use/GraduatedLineUse.qml:10
 msgctxt "GraduatedLineUse|"
 msgid "Place the given number on the graduated line."
-msgstr ""
+msgstr "הצגת המספר שסופק בקו המספרים."
 
 #: activities/graduated_line_use/resource/1/Data.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Ascending order, 5 defined numbers between 1 and 5."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 5."
-msgstr "סדר עולה, 5 מספרים מוגדרים בין 1 ו־5."
+msgstr "מקום לאיתור בקו המספרים בין 1 ל־5."
 
 #: activities/graduated_line_use/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 7."
-msgstr "לנחש מספר בין 1 ל %1."
+msgstr "מקום לאיתור בקו המספרים בין 1 ל־7."
 
 #: activities/graduated_line_use/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 10."
-msgstr "לנחש מספר בין 1 ל %1."
+msgstr "מקום לאיתור בקו המספרים בין 1 ל־10."
 
 #: activities/graduated_line_use/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Result between 20 and 29."
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 20."
-msgstr "התוצאה בין 20 ל־29."
+msgstr "מקום לאיתור בקו המספרים בין 0 ל־20."
 
 #: activities/graduated_line_use/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Result between 30 and 50."
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 50."
-msgstr "התוצאה בין 30 ל־50."
+msgstr "מקום לאיתור בקו המספרים בין 0 ל־50."
 
 #: activities/graduated_line_use/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Result between 30 and 50."
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 100."
-msgstr "התוצאה בין 30 ל־50."
+msgstr "מקום לאיתור בקו המספרים בין 0 ל־100."
 
 #: activities/graduated_line_use/resource/7/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 1 000."
-msgstr ""
+msgstr "מקום לאיתור בקו המספרים בין 0 ל־‎1 000."
 
 #: activities/graduated_line_use/resource/8/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 10 000."
-msgstr ""
+msgstr "מקום לאיתור בקו המספרים בין 0 ל־‎10 000."
 
 #: activities/graduated_line_use/resource/9/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 1 000 000."
-msgstr ""
+msgstr "מקום לאיתור בקו המספרים בין 0 ל־‎1 000 000."
 
 #. Activity title
 #: activities/grammar_analysis/ActivityInfo.qml:18
@@ -14764,8 +14731,8 @@ msgid ""
 "GCompris is developed by the KDE community, you can translate GCompris by "
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
-"התוכנה GCompris מפותחת על ידי קהילת KDE, תוכל/י להצטרף לצוות המתרגמים/ות ב "
-"<a href=\"%2\">%2</a>"
+"התוכנה ג׳יקומפרי מפותחת על ידי קהילת KDE, אפשר להצטרף לצוות התרגום דרך <a "
+"href=\"%2\">%2</a>"
 
 #: activities/hangman/Hangman.qml:374
 msgctxt "Hangman|"
@@ -15467,7 +15434,7 @@ msgid ""
 "safe to land."
 msgstr ""
 "להשתמש בחיצים למעלה/למטה כדי לשלוט על הדחף. <br/> להשתמש בחיצים ימינה ושמאלה "
-"לשלוט על הכיוון.<br/>עליך לכוון את החללית של טוקס לעבר המנחת.<br/>המנחת הופך "
+"לשלוט על הכיוון.<br/>יש לכוון את החללית של טאקס לעבר המנחת.<br/>המנחת הופך "
 "לירוק כאשר המהירות בטוחה לנחיתה."
 
 #: activities/land_safe/resource/1/Data.qml:30
@@ -15586,7 +15553,7 @@ msgid ""
 "GCompris is developed by the KDE community, you can translate GCompris by "
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
-"התוכנה GCompris מפותחת על ידי קהילת KDE, אפשר להצטרף לצוות התרגום דרך <a "
+"התוכנה ג׳יקומפרי מפותחת על ידי קהילת KDE, אפשר להצטרף לצוות התרגום דרך <a "
 "href=\"%2\">%2</a>"
 
 #: activities/lang/Lang.qml:147
@@ -16343,7 +16310,7 @@ msgstr "חץ ימינה: תשובה ימנית"
 #: activities/leftright/Leftright.qml:156
 msgctxt "Leftright|"
 msgid "Left hand"
-msgstr "יש שמאל"
+msgstr "יד שמאל"
 
 #: activities/leftright/Leftright.qml:178
 msgctxt "Leftright|"
@@ -16426,8 +16393,8 @@ msgid ""
 "GCompris is developed by the KDE community, you can translate GCompris by "
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
-"התוכנה GCompris מפותחת על ידי קהילת KDE, תוכל/י להצטרף לצוות המתרגמים/ות ב "
-"<a href=\"%2\">%2</a>"
+"התוכנה ג׳יקומפרי מפותחת על ידי קהילת KDE, אפשר להצטרף לצוות התרגום דרך <a "
+"href=\"%2\">%2</a>"
 
 #: activities/letter-in-word/LetterInWord.qml:338
 msgctxt "LetterInWord|"
@@ -16849,8 +16816,7 @@ msgstr "פיתוח מיומנויות ייצוג חזותי במרחב והתמ�
 #: activities/mazerelative/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Use the arrow keys or swipe the screen to move Tux to the door."
-msgstr ""
-"באמצעות מקשי החיצים או החלקה על מסך-מגע לקדם את טוקס למעלה לכיוון הדלת."
+msgstr "מקשי החיצים או החלקה על מסך־מגע יקדמו את טאקס למעלה לכיוון הדלת."
 
 #: activities/maze/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -16858,7 +16824,7 @@ msgid ""
 "In first levels, Tux walks comfortably, one step on each move request, "
 "through the maze."
 msgstr ""
-"בשלבים הראשונים טוקס הולך בנוחות, צעד אחד בכל פעם שנדרשת התקדמות דרך המבוך."
+"בשלבים הראשונים טאקס צועד בנוחות, צעד אחד בכל פעם שנדרשת התקדמות דרך המבוך."
 
 #: activities/maze/ActivityInfo.qml:25
 #: activities/mazeinvisible/ActivityInfo.qml:25
@@ -16869,9 +16835,9 @@ msgid ""
 "If this run-fast-mode is enabled, Tux will run all the way automatically "
 "until he reaches a fork and you have to decide which way to go further."
 msgstr ""
-"למבוכים גדולים יותר, יש מצב הליכה מיוחד שנקרא 'מצב-רוץ-מהר'. אם 'מצב-רוץ-"
-"מהר' מופעל, טוקס ירוץ כל הדרך לבד עד שהוא מגיע להסתעפות וצריך להחליט באיזו "
-"דרך להמשיך."
+"למבוכים גדולים יותר, יש מצב הליכה מיוחד שנקרא ‚מצב-ריצה-מהירה’. אם ‚מצב-ריצה-"
+"מהירה’ מופעל, טאקס ירוץ כל הדרך אוטומטית עד שהוא מגיע להסתעפות וצריך להחליט "
+"באיזו דרך להמשיך."
 
 #: activities/maze/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -16880,8 +16846,8 @@ msgid ""
 "If Tux is barefoot, \"run-fast-mode\" is disabled. And if he wears red sport "
 "shoes, \"run-fast-mode\" is enabled."
 msgstr ""
-"אפשר לראות אם המצב הזה מופעל אם מסתכלים על הרגליים של טוקס: אם טוקס יחף "
-"\"מצב-רוץ-מהר\" כבוי ואם הוא נועל נעלי ספורט אדומות, \"מצב-רוץ-מהר\" דולק."
+"אפשר לראות אם המצב הזה מופעל אם מסתכלים על הרגליים של טאקס: אם טאקס יחף „מצב-"
+"ריצה-מהירה” כבוי ואם הוא נועל נעלי ספורט אדומות, „מצב-ריצה-מהירה” פועל."
 
 #: activities/maze/ActivityInfo.qml:27
 #: activities/mazeinvisible/ActivityInfo.qml:27
@@ -16893,9 +16859,10 @@ msgid ""
 "levels, click on the \"barefoot / sportshoe\" icon in the upper left corner "
 "of the screen to toggle the run-fast-mode.\t"
 msgstr ""
-"בשלבים מתקדמים יותר \"מצב-רוץ-מהר\" יופעל לבד. כדי להשתמש באפשרות הזו בשלבים "
-"מוקדמים יותר או כדי לבטל אותו בשלבים מתקדמים, ללחוץ על סמל \"יחף/נעלי-ספורט"
-"\" בפינה השמאלית העליונה של המסך להחליף \"מצב-רוץ-מהר\".\t"
+"בשלבים מתקדמים יותר „מצב-ריצה-מהירה” יופעל אוטומטית. כדי להשתמש באפשרות הזו "
+"בשלבים מוקדמים יותר או כדי לבטל אותו בשלבים מתקדמים, יש ללחוץ על סמל "
+"„יחף/נעלי-ספורט” בפינה השמאלית העליונה של המסך ולהפעיל/לכבות את „מצב-ריצה-"
+"מהירה”.\t"
 
 #: activities/maze/Maze.qml:346
 msgctxt "Maze|"
@@ -16908,13 +16875,13 @@ msgstr "הסתכל על מצבך וחזור למצב בלתי־נראה כדי �
 #: activities/mazeinvisible/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Invisible maze"
-msgstr "מבוך בלתי-נראה"
+msgstr "מבוך בלתי נראה"
 
 #. Help title
 #: activities/mazeinvisible/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Guide Tux out of the invisible maze."
-msgstr "להוביל את טוקס מחוץ למבוך הבלתי-נראה."
+msgstr "להוביל את טאקס מחוץ למבוך הבלתי נראה."
 
 #. Help goal
 #: activities/mazeinvisible/ActivityInfo.qml:20
@@ -16942,7 +16909,7 @@ msgid ""
 "At the first levels, Tux walks comfortably, one step on each move request, "
 "through the maze."
 msgstr ""
-"בשלבים הראשונים טוקס הולך בנוחות, צעד אחד בכל פעם שנדרשת התקדמות דרך המבוך."
+"בשלבים הראשונים טאקס צועד בנוחות, צעד אחד בכל פעם שנדרשת התקדמות דרך המבוך."
 
 #: activities/mazeinvisible/ActivityInfo.qml:26
 #: activities/mazerelative/ActivityInfo.qml:27
@@ -16952,8 +16919,8 @@ msgid ""
 "If Tux is barefooted, \"run-fast-mode\" is disabled. And if he wears red "
 "sport shoes, \"run-fast-mode\" is enabled."
 msgstr ""
-"אפשר לראות אם המצב הזה מופעל אם מסתכלים על הרגליים של טוקס: אם טוקס יחף "
-"\"מצב-רוץ-מהר\" כבוי ואם הוא נועל נעלי ספורט אדומות, \"מצב-רוץ-מהר\" דולק."
+"אפשר לראות אם המצב הזה מופעל אם מסתכלים על הרגליים של טאקס: אם טאקס יחף „מצב-"
+"ריצה-מהירה” כבוי ואם הוא נועל נעלי ספורט אדומות, „מצב-ריצה-מהירה” פועל."
 
 #: activities/mazeinvisible/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -16970,7 +16937,7 @@ msgstr "מבוך יחסי"
 #: activities/mazerelative/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Help Tux get out of this maze (moves are relative)."
-msgstr "לעזור לטוקס להחלץ מהמבוך (התנועה היא יחסית)."
+msgstr "לעזור לטאקס להיחלץ מהמבוך (התנועות הן יחסיות)."
 
 #: activities/mazerelative/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -17054,7 +17021,7 @@ msgstr "להמשיך"
 #: activities/memory-case-association-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Case association memory game against Tux"
-msgstr "משחק זכרון: אותיות גדולות וקטנות נגד טוקס"
+msgstr "משחק זכרון: אותיות גדולות וקטנות נגד טאקס"
 
 #. Help title
 #: activities/memory-case-association-tux/ActivityInfo.qml:17
@@ -17062,7 +17029,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Flip the cards to find the uppercase and lowercase of the same letter, "
 "playing against Tux."
-msgstr "להפוך את הקלפים כדי למצוא את זוגות של אות גדולה ואות קטנה, נגד טוקס."
+msgstr "להפוך את הקלפים כדי למצוא את זוגות של אות גדולה ואות קטנה, נגד טאקס."
 
 #. Help goal
 #: activities/memory-case-association-tux/ActivityInfo.qml:20
@@ -17252,7 +17219,7 @@ msgstr "משחק זכרון: כל הפעולות (חיבור, חיסור, כפל
 msgctxt "ActivityInfo|"
 msgid ""
 "Flip the cards to match an operation with its result, playing against Tux."
-msgstr "להפוך את הקלפים כדי להתאים פעולה עם התוצאה שלה, לשחק נגד טוקס."
+msgstr "להפוך את הקלפים כדי להתאים פעולה עם התוצאה שלה, לשחק נגד טאקס."
 
 #. Help goal
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:20
@@ -17391,7 +17358,7 @@ msgstr "להפוך את הקלפים כדי להתאים פעולה עם התו�
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Addition and subtraction memory game against Tux"
-msgstr "משחק זיכרון: חיבור וחיסור נגד טוקס"
+msgstr "משחק זיכרון: חיבור וחיסור נגד טאקס"
 
 #. Help title
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:17
@@ -17400,7 +17367,7 @@ msgid ""
 "Flip the cards to match an addition or a subtraction with its result, "
 "playing against Tux."
 msgstr ""
-"להפוך את הקלפים כדי להתאים חיבור או חיסור עם התוצאה שלו. לשחק נגד טוקס."
+"להפוך את הקלפים כדי להתאים חיבור או חיסור עם התוצאה שלו. לשחק נגד טאקס."
 
 #. Help goal
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:20
@@ -17443,14 +17410,14 @@ msgstr "להפוך את הקלפים כדי להתאים חיבור או חיס�
 #: activities/memory-math-add-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Addition memory game against Tux"
-msgstr "משחק זיכרון: חיבור נגד טוקס"
+msgstr "משחק זיכרון: חיבור נגד טאקס"
 
 #. Help title
 #: activities/memory-math-add-tux/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid ""
 "Flip the cards to match an addition with its result, playing against Tux."
-msgstr "להפוך את הקלפים כדי להתאים חיבור התוצאה שלו. לשחק נגד טוקס."
+msgstr "להפוך את הקלפים כדי להתאים חיבור התוצאה שלו. לשחק נגד טאקס."
 
 #. Help goal
 #: activities/memory-math-add-tux/ActivityInfo.qml:20
@@ -17544,14 +17511,14 @@ msgstr "להפוך את הקלפים כדי להתאים חיבור עם התו�
 #: activities/memory-math-div-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Division memory game against Tux"
-msgstr "משחק זיכרון: חילוק נגד טוקס"
+msgstr "משחק זיכרון: חילוק נגד טאקס"
 
 #. Help title
 #: activities/memory-math-div-tux/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid ""
 "Flip the cards to match a division with its result, playing against Tux."
-msgstr "להפוך את הקלפים כדי להתאים חילוק עם התוצאה שלו. משחק נגד טוקס."
+msgstr "להפוך את הקלפים כדי להתאים חילוק עם התוצאה שלו. משחק נגד טאקס."
 
 #. Help goal
 #: activities/memory-math-div-tux/ActivityInfo.qml:20
@@ -17657,14 +17624,14 @@ msgstr "חילוק"
 #: activities/memory-math-minus-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Subtraction memory game against Tux"
-msgstr "משחק זיכרון: חיסור נגד טוקס"
+msgstr "משחק זיכרון: חיסור נגד טאקס"
 
 #. Help title
 #: activities/memory-math-minus-tux/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid ""
 "Flip the cards to match a subtraction with its result, playing against Tux."
-msgstr "להפוך את הקלפים כדי להתאים חיסור עם התוצאה שלו. לשחק נגד טוקס."
+msgstr "להפוך את הקלפים כדי להתאים חיסור עם התוצאה שלו. לשחק נגד טאקס."
 
 #. Help goal
 #: activities/memory-math-minus-tux/ActivityInfo.qml:20
@@ -17758,7 +17725,7 @@ msgstr "להפוך את הקלפים כדי להתאים או חיסור עם ה
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Multiplication and division memory game against Tux"
-msgstr "משחק זכרון: כפל וחילוק נגד טוקס"
+msgstr "משחק זכרון: כפל וחילוק נגד טאקס"
 
 #. Help title
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:17
@@ -17766,7 +17733,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Flip the cards to match a multiplication or a division with its result, "
 "playing against Tux."
-msgstr "להפוך את הקלפים כדי להתאים כפל או חילוק עם התוצאה שלהם. משחק נגד טוקס."
+msgstr "להפוך את הקלפים כדי להתאים כפל או חילוק עם התוצאה שלהם. משחק נגד טאקס."
 
 #. Help goal
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:20
@@ -17809,7 +17776,7 @@ msgstr "להפוך את הקלפים כדי להתאים כפל או חילוק 
 #: activities/memory-math-mult-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Multiplication memory game against Tux"
-msgstr "משחק זיכרון: כפל נגד טוקס"
+msgstr "משחק זיכרון: כפל נגד טאקס"
 
 #. Help title
 #: activities/memory-math-mult-tux/ActivityInfo.qml:17
@@ -17817,7 +17784,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Flip the cards to match a multiplication with its result, playing against "
 "Tux."
-msgstr "להפוך את הקלפים כדי להתאים כפל עם התוצאה שלו. משחק נגד טוקס."
+msgstr "להפוך את הקלפים כדי להתאים כפל עם התוצאה שלו. משחק נגד טאקס."
 
 #. Help goal
 #: activities/memory-math-mult-tux/ActivityInfo.qml:20
@@ -17913,19 +17880,19 @@ msgstr "משחק זיכרון: כפל"
 #: activities/memory-math-mult/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Flip the cards to match a multiplication with its result."
-msgstr "להפוך את הקלפים כדי להתאים כפל עם התוצאה שלו."
+msgstr "להפוך את הקלפים כדי להתאים כפל לתוצאה שלו."
 
 #. Activity title
 #: activities/memory-sound-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Audio memory game against Tux"
-msgstr "משחק זיכרון: קולות נגד טוקס"
+msgstr "משחק זיכרון: קולות נגד טאקס"
 
 #. Help title
 #: activities/memory-sound-tux/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Flip the cards to match the sound pairs, playing against Tux."
-msgstr "להפוך את הקלפים כדי להתאים את זוגות הצלילים. משחק נגד טוקס."
+msgstr "להפוך את הקלפים כדי להתאים את זוגות הצלילים. משחק נגד טאקס."
 
 #. Help goal
 #: activities/memory-sound-tux/ActivityInfo.qml:20
@@ -17966,13 +17933,13 @@ msgstr "להפוך את הקלפים כדי להתאים את זוג הצליל�
 #: activities/memory-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Memory game with images against Tux"
-msgstr "משחק זיכרון: תמונות נגד טוקס"
+msgstr "משחק זיכרון: תמונות נגד טאקס"
 
 #. Help title
 #: activities/memory-tux/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Flip the cards to find the matching pairs, playing against Tux."
-msgstr "להפוך את הקלפים כדי למצוא את הזוגות המתאימים, לשחק נגד טוקס."
+msgstr "להפוך את הקלפים כדי למצוא את הזוגות המתאימים, לשחק נגד טאקס."
 
 #. Help goal
 #: activities/memory-tux/ActivityInfo.qml:20
@@ -18184,7 +18151,7 @@ msgstr "להמשיך"
 #: activities/menu/ActivityInfo.qml:13
 msgctxt "ActivityInfo|"
 msgid "GCompris Main Menu"
-msgstr "התפריט הראשי של ־GCompris"
+msgstr "התפריט הראשי של ג׳יקומפרי"
 
 #. Help title
 #: activities/menu/ActivityInfo.qml:15
@@ -18199,8 +18166,8 @@ msgid ""
 "GCompris is a high quality educational software suite, including a large "
 "number of activities for children aged 2 to 10."
 msgstr ""
-"חבילת הלומדות האיכותיות Gcompris כוללת מספר גדול של פעילויות לילדים וילדות "
-"בגילאי 2 עד 10."
+"חבילת הלומדות האיכותיות ג׳יקומפרי כוללת מספר גדול של פעילויות לילדים וילדות "
+"בגילאי שנתיים עד 10."
 
 #. Help prerequisite
 #: activities/menu/ActivityInfo.qml:19
@@ -18232,12 +18199,12 @@ msgstr ""
 #: activities/menu/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Home - Exit an activity, go back to menu (Ctrl+W or Escape key)"
-msgstr "הביתה- לצאת מהפעילות, לחזור לתפריט (קטרל+' או מקש אסקייפ)"
+msgstr "בית - לצאת מהפעילות, לחזור לתפריט (Ctrl+'‎ או מקש Esc)"
 
 #: activities/menu/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Arrows - Display the current level. Click to select another level"
-msgstr "חיצים- להציג את השלב הנוכחי. ללחוץ כדי לבחור שלב אחר"
+msgstr "חיצים - להציג את השלב הנוכחי. לחיצה לבחירת שלב אחר"
 
 #: activities/menu/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -18267,12 +18234,12 @@ msgstr "שלושה קווים - תפריט הגדרות הפעילות"
 #: activities/menu/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "G - About GCompris"
-msgstr "על GCompris"
+msgstr "ע - על ג׳יקומפרי"
 
 #: activities/menu/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Quit - Quit GCompris (Ctrl+Q)"
-msgstr "לצאת - לעזוב את GCompris ‏(Ctrl+/‎)"
+msgstr "לצאת - לעזוב את ג׳יקומפרי ‏(Ctrl+/‎)"
 
 #: activities/menu/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
@@ -18282,7 +18249,7 @@ msgstr "הכוכבים מסמלים את קבוצת הגיל המתאימה לכ
 #: activities/menu/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "1, 2 or 3 yellow stars - from 2 to 6 years old"
-msgstr "1, 2 או 3 כוכבים צהובים - גילאי 2 עד 6"
+msgstr "1, 2 או 3 כוכבים צהובים - גילאי שנתיים עד 6"
 
 #: activities/menu/ActivityInfo.qml:36
 msgctxt "ActivityInfo|"
@@ -18311,12 +18278,12 @@ msgstr "Ctrl+B: הצגה או הסתרה של סרגל הבקרה"
 #: activities/menu/ActivityInfo.qml:40
 msgctxt "ActivityInfo|"
 msgid "Ctrl+F: Toggle full screen"
-msgstr "קטרל+כ להחליף למסך מלא"
+msgstr "Ctrl+F: למלא את המסך/לחזור לחלון"
 
 #: activities/menu/ActivityInfo.qml:41
 msgctxt "ActivityInfo|"
 msgid "Ctrl+S: Toggle the activity section bar"
-msgstr "קטרל+ד להציג את סרגל נושאי הפעילות"
+msgstr "Ctrl+S: להציג/להסתיר את סרגל נושאי הפעילות"
 
 #: activities/menu/BackgroundMusicList.qml:57
 msgctxt "BackgroundMusicList|"
@@ -18326,7 +18293,7 @@ msgstr "מוזיקת רקע"
 #: activities/menu/BackgroundMusicList.qml:136
 msgctxt "BackgroundMusicList|"
 msgid "Disable the background music if you don't want to play them."
-msgstr "לכבות את מוזיקת הרקע כדי שלא שתתנגן."
+msgstr "השבתת מוזיקת הרקע כדי שלא שתתנגן."
 
 #. Current background music playing
 #: activities/menu/BackgroundMusicList.qml:173
@@ -18446,17 +18413,17 @@ msgstr "עוצמת מוזיקת רקע"
 #: activities/menu/ConfigurationItem.qml:305
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is installed"
-msgstr "ערכת דמות מילה מותקנת במלואה"
+msgstr "ערכת תמונות מילים מותקנת במלואה"
 
 #: activities/menu/ConfigurationItem.qml:305
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is not installed"
-msgstr "ערכת דמות מילה אינה מותקנת"
+msgstr "ערכת תמונות מילים אינה מותקנת"
 
 #: activities/menu/ConfigurationItem.qml:319
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
-msgstr "להוריד ערכת דמות מילה מלאה"
+msgstr "להוריד ערכת תמונות מילים מלאה"
 
 #: activities/menu/ConfigurationItem.qml:330
 msgctxt "ConfigurationItem|"
@@ -18471,7 +18438,7 @@ msgstr "מקלדת וירטואלית"
 #: activities/menu/ConfigurationItem.qml:352
 msgctxt "ConfigurationItem|"
 msgid "The activity section menu is visible"
-msgstr "תפריט חלקי הפעילות מוצג"
+msgstr "תפריט סעיפי הפעילות מוצג"
 
 #: activities/menu/ConfigurationItem.qml:362
 msgctxt "ConfigurationItem|"
@@ -18481,7 +18448,7 @@ msgstr "לבקש אישור לצאת"
 #: activities/menu/ConfigurationItem.qml:373
 msgctxt "ConfigurationItem|"
 msgid "Font selector"
-msgstr "בחירת גוֹפָן"
+msgstr "בורר גוֹפָנים"
 
 #: activities/menu/ConfigurationItem.qml:378
 msgctxt "ConfigurationItem|"
@@ -18681,7 +18648,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid ""
 "Thanks to the Tuxpaint team for providing the following sounds under GPL:"
-msgstr "תודה לצוות טוקספּיינט שסיפקו את הצלילים הבאים תחת רשיון GPL:"
+msgstr "תודה לצוות טאקספּיינט (Tuxpaint) שסיפקו את הצלילים הבאים תחת רשיון GPL:"
 
 #: activities/mining/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -18784,7 +18751,7 @@ msgstr ""
 #: activities/missing-letter/MissingLetter.qml:323
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
-msgstr "אנחנו מתנצלים, עדיין אין תרגום לעברית."
+msgstr "אנחנו מתנצלים, עדיין אין תרגום לשפה שלך."
 
 #: activities/missing-letter/MissingLetter.qml:324
 #, qt-format
@@ -18793,8 +18760,8 @@ msgid ""
 "GCompris is developed by the KDE community, you can translate GCompris by "
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
-"התוכנה GCompris מפותחת על ידי קהילת KDE, תוכל/י להצטרף לצוות המתרגמים/ות ב "
-"<a href=\"%2\">%2</a>"
+"התוכנה ג׳יקומפרי מפותחת על ידי קהילת KDE, אפשר להצטרף לצוות התרגום דרך <a "
+"href=\"%2\">%2</a>"
 
 #: activities/missing-letter/MissingLetter.qml:326
 msgctxt "MissingLetter|"
@@ -18876,7 +18843,7 @@ msgid ""
 "Tux just bought some items in your shop.\n"
 "He gives you %1, please give back his change."
 msgstr ""
-"טוקס קנה עכשיו מספר פריטים בחנות שלך.\n"
+"טאקס קנה עכשיו מספר פריטים בחנות שלך.\n"
 "הוא נותן לך %1, בבקשה להחזיר לו עודף."
 
 #: activities/money/resource/1/Data.qml:14
@@ -18907,14 +18874,14 @@ msgstr "כמות עד 1000 יחידות."
 #: activities/money_back/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Give Tux his change"
-msgstr "לתת לטוקס את העודף שלו"
+msgstr "לתת לטאקס את העודף שלו"
 
 #. Help title
 #: activities/money_back/ActivityInfo.qml:17
 #: activities/money_back_cents/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Practice money usage by giving Tux his change."
-msgstr "להתאמן בשימוש בכסף ולתת לטוקס את העודף שלו."
+msgstr "להתאמן בשימוש בכסף ולתת לטאקס את העודף שלו."
 
 #. Help manual
 #: activities/money_back/ActivityInfo.qml:24
@@ -18932,7 +18899,7 @@ msgstr ""
 #: activities/money_back_cents/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Give Tux his change, including cents"
-msgstr "לתת לטוקס את העודף שלו, כולל אגורות"
+msgstr "לתת לטאקס את העודף שלו, כולל אגורות"
 
 #. Help goal
 #: activities/money_back_cents/ActivityInfo.qml:20
@@ -19182,7 +19149,7 @@ msgstr "עד 24 פריטים, על מספר קווים."
 #: activities/nine_men_morris/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Nine men's morris (against Tux)"
-msgstr "טחנות (נגד טוקס)."
+msgstr "טחנות (נגד טאקס)."
 
 #. Help title
 #: activities/nine_men_morris/ActivityInfo.qml:17
@@ -19706,7 +19673,7 @@ msgstr "מסע לירח."
 #: activities/ordering_chronology/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Tux gathers an apple."
-msgstr "טוקס אוסף תפוח."
+msgstr "טאקס אוסף תפוח."
 
 #. Activity title
 #: activities/ordering_numbers/ActivityInfo.qml:20
@@ -19919,13 +19886,13 @@ msgstr ""
 #: activities/oware/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Play oware (against Tux)"
-msgstr "לשחק אוֹוַּרֵה (נגד טוקס)"
+msgstr "לשחק אוֹוַּרֵה (נגד טאקס)"
 
 #. Help title
 #: activities/oware/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Play the Oware strategy game against Tux."
-msgstr "לשחק את משחק האסטרטגיה אוֹוַּרֵה עם טוקס."
+msgstr "לשחק את משחק האסטרטגיה אוֹוַּרֵה עם טאקס."
 
 #. Help goal
 #: activities/oware/ActivityInfo.qml:19
@@ -20176,7 +20143,7 @@ msgstr "פיענוח נתיב"
 #: activities/path_decoding_relative/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Follow the given directions to help Tux reach the target."
-msgstr "לעקוב אחרי ההוראות הנתונות כדי לעזור לטוקס להגיע למטרה."
+msgstr "לעקוב אחרי ההוראות הנתונות כדי לעזור לטאקס להגיע למטרה."
 
 #. Help goal
 #: activities/path_decoding/ActivityInfo.qml:19
@@ -20204,7 +20171,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "The directions are absolute, they do not depend on the current orientation "
 "of Tux."
-msgstr "ההוראות הן מוחלטות, הן אינן תלויות בכיוון הנוכחי של טוקס."
+msgstr "הכיוונים הם מוחלטים, הם אינם תלויים בכיוון הנוכחי של טאקס."
 
 #: activities/path_decoding/resource/1/Data.qml:13
 #: activities/path_decoding/resource/2/Data.qml:13
@@ -20237,7 +20204,7 @@ msgstr "פענוח נתיב יחסי"
 #: activities/path_encoding_relative/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "The directions are relative to the current orientation of Tux."
-msgstr "ההוראות הן יחסיות לכיוון הנוכחי של טוקס."
+msgstr "ההוראות הן יחסיות לכיוון הנוכחי של טאקס."
 
 #: activities/path_decoding_relative/ActivityInfo.qml:24
 #: activities/path_encoding_relative/ActivityInfo.qml:24
@@ -20246,8 +20213,8 @@ msgid ""
 "This means that UP moves forward, DOWN moves backward, LEFT moves to the "
 "left side of Tux and RIGHT moves to the right side of Tux."
 msgstr ""
-"זה אומר שלמעלה מזיז קדימה, למטה מזיז אחורה, שמאלה מזיז לצד השמאלי של טוקס "
-"וימינה מזיז לצד הימני של טוקס."
+"זה אומר שלמעלה מזיז קדימה, למטה מזיז אחורה, שמאלה מזיז לצד השמאלי של טאקס "
+"וימינה מזיז לצד הימני של טאקס."
 
 #. Activity title
 #: activities/path_encoding/ActivityInfo.qml:14
@@ -20260,7 +20227,7 @@ msgstr "קידוד נתיב"
 #: activities/path_encoding_relative/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Move Tux along the path to reach the target."
-msgstr "להזיז את טוקס לאורך המסלול כדי להגיע למטרה."
+msgstr "להזיז את טאקס לאורך המסלול כדי להגיע למטרה."
 
 #. Help manual
 #: activities/path_encoding/ActivityInfo.qml:22
@@ -20268,7 +20235,7 @@ msgstr "להזיז את טוקס לאורך המסלול כדי להגיע למ�
 msgctxt "ActivityInfo|"
 msgid ""
 "Use the arrow buttons to move Tux along the path until he reaches the target."
-msgstr "להשתמש במקשי החיצים כדי להזיז את טוקס לאורך המסלול עד שהוא מגיע למטרה."
+msgstr "להשתמש במקשי החיצים כדי להזיז את טאקס לאורך המסלול עד שהוא מגיע למטרה."
 
 #: activities/path_encoding/ActivityInfo.qml:24
 #: activities/path_encoding_relative/ActivityInfo.qml:25
@@ -20316,8 +20283,8 @@ msgid ""
 "back to its initial position."
 msgstr ""
 "הקשה כפולה או לחיצה כפולה בצידו של השער לבעוט בכדור. אפשר להקיש הקשה כפולה "
-"בכפתור השמאלי, הימני או האמצעי של העכבר. אם לא מקישים פעמיים מהר מספיק, טוקס "
-"תופס את הכדור. צריך להקליק על הכדור כדי להחזיר אותו למקומו הראשון."
+"בכפתור השמאלי, הימני או האמצעי של העכבר. אם לא מקישים פעמיים מהר מספיק, טאקס "
+"תופס את הכדור. צריך ללחוץ על הכדור כדי להחזיר אותו למקום הראשוני שלו."
 
 #: activities/penalty/Penalty.qml:239
 msgctxt "Penalty|"
@@ -25379,15 +25346,6 @@ msgstr "מספרים מ־0 עד 30 וחיבור."
 
 #. Help manual
 #: activities/tens_complement_calculate/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create pairs of numbers equal to ten within each parentheses. Select a "
-#| "number, then select another number of the same operation to swap their "
-#| "position. When all the lines are completed, press the OK button to "
-#| "validate the answers. If some answers are incorrect, a cross icon will "
-#| "appear on the corresponding lines. Correct the errors, then press the OK "
-#| "button again."
 msgctxt "ActivityInfo|"
 msgid ""
 "Create pairs of numbers equal to ten within each parentheses. Select a "
@@ -25397,10 +25355,11 @@ msgid ""
 "are incorrect, a cross icon will appear on the corresponding lines. Correct "
 "the errors, then press the OK button again."
 msgstr ""
-"צרו זוגות מספרים שסכומם 10 בתוך כל זוג סוגריים. בחרו מספר, ואז בחרו מספר אחר "
-"של אותה הפעולה כדי להחליפם זה עם זה. כשכל השורות יהיו מלאות, לחצו על OK כדי "
-"לבדוק את התשובות. אם חלק מהתשובות אינן נכונות, יופיעו לידן סימני X. תַקנו את "
-"השגיאות ולחצו על OK שוב."
+"יצירת זוגות מספרים ששווים לעשר בתוך כל אחד מזוגות הסוגריים. יש לבחור מספר, "
+"ואז לבחור מספר אחד מאותה הפעולה כדי להחליף את המקומות שלהם. בכל שורה, יש "
+"למלא את הסכום הסופי בתיבה האחרונות. כאשר כל השורות הושלמו, יש ללחוץ על "
+"הכפתור OK כדי לאמת את התשובות. אם חלק מהתשובות שגויות, יופיע סימן של צלב על "
+"השורה המתאימה. יש לתקן את השגיאות וללחוץ על הכפתור OK שוב."
 
 #: activities/tens_complement_calculate/resource/1/Data.qml:36
 msgctxt "Data|"
@@ -25693,6 +25652,15 @@ msgid ""
 "it; in this case, click on the Ready button when the operation is written "
 "correctly and then solve it."
 msgstr ""
+"בחיבור במאונך, המספרים נכתבים זה מעל זה. יש ליישר אותם כראוי, החל מהעמודה "
+"הימנית. התוצאה נכתבת בשורה התחתונה. כדי לפתור את החיבור, יש להתחיל בהוספת "
+"המספרים לעמודה הראשונה (מימין), ולכתוב את התוצאה בשורה התחתונה של אותה "
+"העמודה. אם התוצאה יוצאת מספר דו־ספרתי, יש לכתוב רק את האחדות בתוצאה, ולהוסיף "
+"את ספרת העשרות למספר העליון בעמודה הבאה: זה נקרא שָׁמוֹר/carry/לזכור אחד. לאחר "
+"מכן להוסיף את המספרים של העמודה הבאה, כולל את מספר השמור, ולחזור על התהליך "
+"עד שהפעולה מסתיימת. לאחר שמצאת את התוצאה, יש ללחוץ על הכפתור OK כדי לאמת את "
+"התשובה שלך. בחלק מהשלבים, צריך לכתוב את הפעולה שסופקה לפני פתרונה, במקרה "
+"שכזה, יש ללחוץ על הכפתור „בהמתנה” לאחר שהפעולה נכתבה כראוי ואז לפתור אותה."
 
 #: activities/vertical_addition/resource/1/Data.qml:12
 msgctxt "Data|"
@@ -25808,6 +25776,21 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"בחיסור במאונך, מספרים נכתבים האחד מתחת לשני. יש ליישר אותם כראוי, בהתאם "
+"לעמודה הימנית. המספר העליון נקרא המחוסר: זאת הכמות שממנה אנו מתחילים, המספר "
+"השני הוא מה שנחסר כדי לקבל את ההפרש. המספר שמתחת נקרא המחסר: זאת הכמות "
+"לחיסור מהמחוסר כדי לקבל את ההפרש. התוצאה נכתבת בשורה התחתונה. כדי לפתור את "
+"החיסור, יש להתחיל בחיסור המספר התחתון מהעמודה הראשונה מהמספר העליון בעמודה "
+"הראשונה (מימין), ולכתוב את התוצאה בשורה התחתונה של אותה עמודה. אם המספר "
+"העליון קטן מהמספר התחתון, אפשר ללוות מהמספר המחוסר מהעמודה הבאה: למשל, אם "
+"מוסיפים 10 יחידות למספר העליון, צריך להסיר יחידה אחת מהמספר העליון של העמודה "
+"הבאה. זאת נקראת שיטת הלוואה על ידי קיבוץ מחדש. כדי לעשות זאת בפעילות הזאת, "
+"יש ללחוץ על הריבוע הריק משמאל לראש המספר, לבחור ב־1 ובעמודה הבאה ללחוץ על "
+"הריבוע הריק ולבחור ב־‎-1. לאחר מכן לכתוב את התוצאה של העמודה בשורה התחתונה, "
+"ולעשות את אותו הדבר בעמודות הבאות עד שהפעולה מסתיימת. לאחר שמצאת את התוצאה, "
+"יש ללחוץ על הכפתור OK כדי לאמת את התשובה שלך. בחלק מהשלבים, יש לכתוב את "
+"הפעולה שסופקה לפני הפתרון, במקרה שכזה יש ללחוץ על הכפתור „בהמתנה” כאשר "
+"הפעולה כתובה כראוי ואז לפתור אותה."
 
 #: activities/vertical_subtraction/resource/1/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
@@ -25943,6 +25926,21 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"בחיסור במאונך, מספרים נכתבים האחד מתחת לשני. יש ליישר אותם כראוי, בהתאם "
+"לעמודה הימנית. המספר העליון נקרא המחוסר: זאת הכמות שממנה אנו מתחילים, המספר "
+"השני הוא מה שנחסר כדי לקבל את ההפרש. המספר שמתחת נקרא המחסר: זאת הכמות "
+"לחיסור מהמחוסר כדי לקבל את ההפרש. התוצאה נכתבת בשורה התחתונה. כדי לפתור את "
+"החיסור, יש להתחיל בחיסור המספר התחתון מהעמודה הראשונה מהמספר העליון בעמודה "
+"הראשונה (מימין), ולכתוב את התוצאה בשורה התחתונה של אותה עמודה. אם המספר "
+"העליון קטן מהמספר התחתון, אפשר ללוות מהמספר המחסר מהעמודה הבאה: למשל, אם "
+"מוסיפים 10 יחידות למספר העליון, צריך להוסיף יחידה למספר התחתון של העמודה "
+"הבאה. זאת נקראת שיטת פריטה על ידי קיבוץ מחדש. כדי לעשות זאת בפעילות הזאת, יש "
+"ללחוץ על הריבוע הריק משמאל לראש המספר, לבחור ב־1 ובעמודה הבאה ללחוץ על "
+"הריבוע הריק ולבחור ב־‎+1. לאחר מכן לכתוב את התוצאה של העמודה בשורה התחתונה, "
+"ולעשות את אותו הדבר בעמודות הבאות עד שהפעולה מסתיימת. לאחר שמצאת את התוצאה, "
+"יש ללחוץ על הכפתור OK כדי לאמת את התשובה שלך. בחלק מהשלבים, יש לכתוב את "
+"הפעולה שסופקה לפני הפתרון, במקרה שכזה יש ללחוץ על הכפתור „בהמתנה” כאשר "
+"הפעולה כתובה כראוי ואז לפתור אותה."
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15
@@ -25957,8 +25955,8 @@ msgid ""
 "Tux has come back from fishing on his boat. Bring the water system back up "
 "so he can take a shower."
 msgstr ""
-"טוקס חזר הביתה מהדייג על הסירה שלו. צריך לחדש את פעולתה של מערכת המים כדי "
-"שיוכל להתקלח."
+"טאקס חזר הביתה מהדיג בסירה שלו. צריך לחדש את פעולתה של מערכת המים כדי שיוכל "
+"להתקלח."
 
 #. Help goal
 #: activities/watercycle/ActivityInfo.qml:20
@@ -25975,9 +25973,9 @@ msgid ""
 "the system is back up and Tux is in the shower, push the shower button for "
 "him."
 msgstr ""
-"ללחוץ על חלקים שונים שניתנים להפעלה: שמש, עננים, תחנת שאיבה ותחנת הניקוי של "
-"מי השופכין (מכון קולחין) כדי להפעיל מחדש את כל מערכת המים. כאשר המערכת פועלת "
-"מחדש וטוקס נמצא במקלחת, ללחוץ על כפתור המקלחת בשבילו."
+"יש ללחוץ על חלקים שונים שניתנים להפעלה: שמש, עננים, תחנת שאיבה ותחנת הניקוי "
+"של מי השופכין (מכון קולחין) כדי להפעיל מחדש את כל מערכת המים. כאשר המערכת "
+"פועלת מחדש וטאקס נמצא במקלחת, יש ללחוץ על כפתור המקלחת בשבילו."
 
 #: activities/watercycle/Watercycle.qml:114
 msgctxt "Watercycle|"
@@ -26022,7 +26020,7 @@ msgstr ""
 #: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
-msgstr "נהדר, ללחו. על המקלחת כשטוקס מגיע הביתה."
+msgstr "נהדר, ללחוץ על המקלחת כשטאקס מגיע הביתה."
 
 #: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
@@ -26068,9 +26066,9 @@ msgid ""
 "sun, then on the cloud, the water pumping station near the river, the sewage "
 "treatment, and at last regulate the switch to provide water to Tux's shower."
 msgstr ""
-"המטרה היא להשלים את מחזור המים לפני שטוקס מגיע הביתה. ללחוץ על מרכיבים שונים "
+"המטרה היא להשלים את מחזור המים לפני שטאקס מגיע הביתה. ללחוץ על מרכיבים שונים "
 "כדי ליצור את מחזור המים. קודם ללחוץ על השמש, אז על הענן, משאבת המים ליד "
-"הנהר, מכון טיהור השפכים ולבסוף לשלוט על המפסק כדי לספק מים למקלחת של טוקס."
+"הנהר, מכון טיהור השפכים ולבסוף לשלוט על המפסק כדי לספק מים למקלחת של טאקס."
 
 #. Activity title
 #: activities/wordsgame/ActivityInfo.qml:15
@@ -26576,7 +26574,7 @@ msgstr ""
 "והתוכנות שאנו יוצרים."
 
 #: core/DialogAbout.qml:93
-#, fuzzy, qt-format
+#, qt-format
 msgctxt "DialogAbout|"
 msgid ""
 "Software can always be improved, and the KDE team is ready to do so. "
@@ -26587,12 +26585,12 @@ msgid ""
 "system to register your wish. Make sure you use the severity called "
 "\"Wishlist\"."
 msgstr ""
-"תוכנות תמיד ניתנות לשיפור, וצוות KDE מוכן למשימה. על-אף זאת, את/ה, המשתמש/ת, "
-"חייב/ת להגיד לנו כשמשהו לא עובד כצפוי או יכול להעשות טוב יותר.<br /><br /"
-">לKDE יש מערכת לעקוב אחרי באגים. אפשר לבקר ב<a href=\"%1\">%1</a>כדי לדווח "
-"על באג.<br /><br />אם יש לך הצעות לשיפור את/ה מוזמן/ת להשתמש במערכת המעקב "
-"אחרי באגים כדי לרשום את הבקשה. לשים לב שמשתמשים ברמת חוּמרה שנקראת \"רשימת "
-"משאלות\" (\"Wishlist\")."
+"תוכנות תמיד ניתן לשפר, וצוות KDE ערוך ומזומן לכך. עם זאת, עליך - המשתמש/ת - "
+"מוטלת האחריות לספר לנו כשמשהו לא עובד כראוי או יכול להתבצע טוב יותר.<br /"
+"><br />ל־KDE יש מערכת מעקב תקלות. אפשר לגשת אל <a href=\"%1\">%1</a> כדי "
+"לדווח על תקלות.<br /><br />אם יש לך הצעה לשיפור אז אפשר להשתמש במערכת מעקב "
+"התקלות כדי לתעד את המשאלה שלך. נא לוודא שבחרת בדרגת חומרה (severity) שנקראת "
+"„Wishlist” (רשימת משאלות)."
 
 #: core/DialogAbout.qml:105
 #, qt-format
