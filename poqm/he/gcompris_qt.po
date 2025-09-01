@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-08-29 13:11+0300\n"
+"PO-Revision-Date: 2025-08-31 07:59+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -6963,7 +6963,7 @@ msgstr "התמונה נלקחה מוויקיפדיה."
 #: activities/explore_monuments/resource/board/board1.qml:22
 msgctxt "board1|"
 msgid "Chichén Itzá"
-msgstr "צ'יצֵ'ן איצָה"
+msgstr "צ׳יצֵ׳ן איצָה"
 
 #: activities/explore_monuments/resource/board/board1.qml:20
 msgctxt "board1|"
@@ -6973,9 +6973,9 @@ msgid ""
 "established before the period of Christopher Colombus and probably served as "
 "the religion center of Yucatan for a while."
 msgstr ""
-"צ'יצֵ'ן איצָה, שפירושו \"בפיה של באר איצה\" הוא עיר של עם המאיה בחצי-האי "
-"יוקטאן במקסיקו, בין וולאדוליד ומרידה. היא נוסדה לפני תקופתו של כריסטופר "
-"קולומבוס וככל הנראה שימשה כמרכז הדתי של יוקטאן למשך זמן מה."
+"צ׳יצֵ׳ן איצָה, שפירושו „בפה של באר איצה” הוא עיר של עם המאיה בחצי האי יוקטאן "
+"במקסיקו, בין וולאדוליד ומרידה. היא נוסדה לפני תקופתו של כריסטופר קולומבוס "
+"וככל הנראה שימשה כמרכז הדתי של יוקטאן למשך זמן מה."
 
 #: activities/explore_monuments/resource/board/board1.qml:30
 #: activities/explore_monuments/resource/board/board1.qml:33
@@ -7181,9 +7181,9 @@ msgid ""
 "relics of the Buddha. It was crowned by the chatra, a parasol-like structure "
 "symbolizing high rank, which was intended to honor and shelter the relics."
 msgstr ""
-"הסטופּה הגדולה בסנצ'י היא מבנה האבן העתיק ביותר בהודו והוקדש במקור על ידי "
+"הסטופּה הגדולה בסנצ׳י היא מבנה האבן העתיק ביותר בהודו והוקדש במקור על ידי "
 "השליט אשוקה הגדול במאה השלישית לפני הספירה. ליבת המבנה הייתה מבנה אבן כיפתי "
-"פשוט שנבנה על גבי שרידי בודהה. היא כותרה על ידי הצ'טרה, מבנה דמוי שמשייה "
+"פשוט שנבנה על גבי שרידי בודהה. היא כותרה על ידי הצ׳טרה, מבנה דמוי שמשייה "
 "המייצג דרגה גבוהה ויועד לכבד ולהגן על השרידים."
 
 #: activities/explore_monuments/resource/board/board2.qml:62
@@ -8955,8 +8955,8 @@ msgid ""
 "and violins. These bands play for many occasions, including weddings and "
 "parties."
 msgstr ""
-"מריאצ'י היא סוג מפורסם של מוזיקה מקסיקנית. משתמשים בגיטרות, חצוצרות "
-"וכינורות. הלהקות האלו מנגנות בארועים רבים כמו חתונות ומסיבות."
+"מריאצ׳י היא סוג מפורסם של מוזיקה מקסיקנית. משתמשים בגיטרות, חצוצרות "
+"וכינורות. הלהקות האלו מנגנות באירועים רבים כמו חתונות ומסיבות."
 
 #: activities/explore_world_music/resource/board/board1.qml:116
 #: activities/explore_world_music/resource/board/board1.qml:120
