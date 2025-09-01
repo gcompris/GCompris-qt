@@ -222,7 +222,7 @@ Rectangle {
                 anchors.margins: GCStyle.baseMargins
                 flickableDirection: Flickable.VerticalFlick
                 clip: true
-                contentHeight: instructionTxt.height + extraLoader.height + 2 * GCStyle.baseMargins
+                contentHeight: childrenRect.height
                 GCText {
                     id: instructionTxt
                     fontSize: regularSize
