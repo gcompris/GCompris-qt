@@ -141,6 +141,13 @@ Item {
      */
     signal homeClicked
 
+    /**
+     * Emitted when the serverStatus button was clicked.
+     *
+     * To display the server status dialog.
+     */
+    signal serverStatusClicked
+
     /// @cond INTERNAL_DOCS
 
     /*
@@ -213,6 +220,11 @@ Item {
         {
             'bid': downloadImage,
             'contentId': content.download,
+            'allowed': true
+        },
+        {
+            'bid': serverStatus,
+            'contentId': content.serverStatus,
             'allowed': true
         }
     ]
@@ -506,6 +518,24 @@ Item {
             }
         }
     }
-
+    Component {
+        id: serverStatus
+        BarButton {
+            width: bar.buttonSize
+            visible: barRow.isHidden === false
+            Rectangle {
+                z: -1
+                width: bar.buttonSize
+                height: bar.buttonSize
+                radius: width
+                border.color: "white"
+                border.width: width / 32
+                color: ApplicationInfo.serverStatusColor
+            }
+            onClicked: {
+                bar.serverStatusClicked();
+            }
+        }
+    }
     /// @endcond
 }
