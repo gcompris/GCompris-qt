@@ -312,6 +312,18 @@ public:
     void setBox2DInstalled(QQmlEngine &engine);
 
     /**
+     * Set to true after first connection to teacher's server, to indicate that the server status button should be visible.
+     */
+    Q_PROPERTY(bool serverConnectionAccepted MEMBER m_serverConnectionAccepted WRITE setServerConnectionAccepted NOTIFY serverConnectionAcceptedChanged)
+    Q_INVOKABLE void setServerConnectionAccepted(bool connectionAccepted);
+
+    /**
+     * Set the color of serverStatus button in the bar.
+     */
+    Q_PROPERTY(QString serverStatusColor MEMBER m_serverStatusColor WRITE setServerStatusColor NOTIFY serverStatusColorChanged)
+    Q_INVOKABLE void setServerStatusColor(QString statusColor);
+
+    /**
      * Returns the native screen orientation.
      *
      * Wraps QScreen::nativeOrientation: The native orientation of the screen
@@ -458,6 +470,8 @@ Q_SIGNALS:
     void fullscreenChanged();
     void useSoftwareRendererChanged();
     void isBox2DInstalledChanged();
+    void serverConnectionAcceptedChanged();
+    void serverStatusColorChanged();
 
 private:
     static ApplicationInfo *m_instance;
@@ -471,6 +485,8 @@ private:
     bool m_isBox2DInstalled;
     qreal m_ratio;
     qreal m_fontRatio;
+    bool m_serverConnectionAccepted = false;
+    QString m_serverStatusColor = "red";
 
     // Symbols fonts that user can't see
     QStringList m_excludedFonts;
