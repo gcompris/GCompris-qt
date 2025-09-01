@@ -251,6 +251,18 @@ void ApplicationInfo::setBox2DInstalled(QQmlEngine &engine)
     Q_EMIT isBox2DInstalledChanged();
 }
 
+void ApplicationInfo::setServerConnectionAccepted(bool connectionAccepted)
+{
+    m_serverConnectionAccepted = connectionAccepted;
+    Q_EMIT serverConnectionAcceptedChanged();
+}
+
+void ApplicationInfo::setServerStatusColor(QString statusColor)
+{
+    m_serverStatusColor = statusColor;
+    Q_EMIT serverStatusColorChanged();
+}
+
 // return the shortest possible locale name for the given locale, describing
 // a unique voices dataset
 QString ApplicationInfo::getVoicesLocale(const QString &locale)
