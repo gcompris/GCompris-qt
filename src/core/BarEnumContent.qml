@@ -110,4 +110,12 @@ QtObject {
      * Used for displaying the configuration of activities in the menu.
      */
     readonly property int activityConfig: 1024
+
+    /**
+     * type:int
+     * Representation of the server status button.
+     *
+     * Used for displaying the server status of teacher's admin tool.
+     */
+    readonly property int serverStatus: 2048
 }

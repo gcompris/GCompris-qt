@@ -141,6 +141,13 @@ Item {
      */
     signal homeClicked
 
+    /**
+     * Emitted when the serverStatus button was clicked.
+     *
+     * To display the server status dialog.
+     */
+    signal serverStatusClicked
+
     /// @cond INTERNAL_DOCS
 
     /*
@@ -213,6 +220,11 @@ Item {
         {
             'bid': downloadImage,
             'contentId': content.download,
+            'allowed': true
+        },
+        {
+            'bid': serverStatus,
+            'contentId': content.serverStatus,
             'allowed': true
         }
     ]
@@ -506,6 +518,24 @@ Item {
             }
         }
     }
-
+    Component {
+        id: serverStatus
+        BarButton {
+            source: "qrc:/gcompris/src/core/resource/bar_server.svg"
+            width: bar.buttonSize
+            visible: barRow.isHidden === false
+            Rectangle {
+                z: -1
+                width: bar.buttonSize * 0.97
+                height: width
+                radius: width
+                color: ApplicationInfo.serverStatusColor
+                anchors.centerIn: parent
+            }
+            onClicked: {
+                bar.serverStatusClicked();
+            }
+        }
+    }
     /// @endcond
 }

@@ -508,6 +508,7 @@ Window {
             var dialog = Core.showMessageDialog(pageView.currentItem,
                     qsTr("Do you want to connect to server %1?").arg(connection.requestDeviceId),
                     qsTr("Yes"), function() {
+                        ApplicationInfo.setServerConnectionAccepted(true)
                         clientNetworkMessages.connectToServer(connection.serverIp)
                         requestAlreadyInProgress = false
                         pageView.focus = true

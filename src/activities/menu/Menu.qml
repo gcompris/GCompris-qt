@@ -207,6 +207,22 @@ ActivityBase {
         property real sectionCellWidth: 1
         property real categoriesHeight: Math.max(45 * ApplicationInfo.ratio, sectionCellWidth * 0.5)
 
+        // messages for server status dialog
+        property string serverNotConnected: qsTr("GCompris is not connected to teacher's server.")
+        property string serverBadPassword: qsTr("GCompris is connected to teacher's server, but the password entered for selected user is wrong.")
+        property string serverLoggedIn: qsTr("GCompris is connected to teacher's server, and the user is authenticated.")
+        property string serverConnectionLost: qsTr("GCompris has lost the connection to teacher's server.")
+        property string serverDisconnected: qsTr("GCompris has been disconnected from teacher's server.")
+        property string serverConnected: qsTr("GCompris is connected to teacher's server, but the user is not yet authenticated.")
+        // Used to hot-reload the message if it changes while the dialog is displayed.
+        property var dialogServerStatus: null
+        property string serverStatusMessage: serverNotConnected
+        onServerStatusMessageChanged: {
+            if(dialogServerStatus) {
+                dialogServerStatus.message = serverStatusMessage;
+            }
+        }
+
         property var currentActiveGrid: activitiesGrid
         property bool keyboardMode: false
         Keys.onPressed: (event) => {
@@ -751,22 +767,28 @@ ActivityBase {
                     print("status changed to ", clientNetworkMessages.status);
                     switch(clientNetworkMessages.status) {
                     case NetConst.NOT_CONNECTED:
-                        networkStatus.color = "white"
-                        break
+                        ApplicationInfo.setServerStatusColor("#40000000"); // transparent black
+                        activityBackground.serverStatusMessage = activityBackground.serverNotConnected;
+                        break;
                     case NetConst.BAD_PASSWORD_INPUT:
-                        networkStatus.color = "red"
-                        break
+                        ApplicationInfo.setServerStatusColor("#d94444"); // red
+                        activityBackground.serverStatusMessage = activityBackground.serverBadPassword;
+                        break;
                     case NetConst.CONNECTED:
-                        networkStatus.color = "green"
-                        break
+                        ApplicationInfo.setServerStatusColor("#5cc854"); // green
+                        activityBackground.serverStatusMessage = activityBackground.serverLoggedIn;
+                        break;
                     case NetConst.CONNECTION_LOST:
-                        networkStatus.color = "yellow"
-                        break
+                        ApplicationInfo.setServerStatusColor("#e7bb36"); // yellow
+                        activityBackground.serverStatusMessage = activityBackground.serverConnectionLost;
+                        break;
                     case NetConst.DISCONNECTED:
-                        networkStatus.color = "lightgray"
-                        break
+                        ApplicationInfo.setServerStatusColor("#808080"); // gray
+                        activityBackground.serverStatusMessage = activityBackground.serverDisconnected;
+                        break;
                     default:
-                        networkStatus.color = "black"
+                        ApplicationInfo.setServerStatusColor("#801bd0d2"); // transparent blue
+                        activityBackground.serverStatusMessage = activityBackground.serverConnected;
                     }
                 }
             }
@@ -985,7 +1007,7 @@ ActivityBase {
             id: bar
             // No exit button on mobile, UI Guidelines prohibits it
             content: BarEnumContent {
-                value: help | config | activityConfig | about | (ApplicationInfo.isMobile ? 0 : exit)
+                value: help | config | activityConfig | about | (ApplicationInfo.isMobile ? 0 : exit) | (ApplicationInfo.serverConnectionAccepted ? serverStatus : 0)
             }
             anchors.bottom: keyboard.visible ? keyboard.top : parent.bottom
             onAboutClicked: {
@@ -996,6 +1018,11 @@ ActivityBase {
             onHelpClicked: {
                 searchTextField.focus = false
                 displayDialog(dialogHelp)
+            }
+
+            onServerStatusClicked: {
+                searchTextField.focus = false
+                activityBackground.showServerStatus()
             }
 
             onActivityConfigClicked: {
@@ -1014,15 +1041,6 @@ ActivityBase {
                 displayDialog(dialogActivityConfig)
             }
         }
-        Rectangle {
-            id: networkStatus
-            radius: width
-            width: 30 * activity.applicationInfoRatio
-            height: width
-            color: "red"
-            anchors.bottom: parent.bottom
-            anchors.right: parent.right
-        }
 
         DialogAbout {
             id: dialogAbout
@@ -1032,6 +1050,14 @@ ActivityBase {
             id: dialogHelp
             onClose: home()
             activityInfo: ActivityInfoTree.rootMenu
+        }
+
+        function showServerStatus() {
+            activityBackground.dialogServerStatus = Core.showMessageDialog(
+                pageView.currentItem,
+                activityBackground.serverStatusMessage,
+                "", null,
+                "", null);
         }
 
         DialogActivityConfig {
