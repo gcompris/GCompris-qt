@@ -159,7 +159,7 @@ msgstr "Colors avançats"
 #: activities/advanced_colors/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Select the butterfly of the correct color."
-msgstr "Selecciona la palometa del color correcte."
+msgstr "Tria la palometa del color correcte."
 
 #. Help goal
 #: activities/advanced_colors/ActivityInfo.qml:20
@@ -1616,9 +1616,8 @@ msgid ""
 "To delete a component or wire, select the deletion tool on top of the "
 "component selector, and select the component or wire."
 msgstr ""
-"Per a suprimir un component o cable, selecciona l'eina de supressió que hi "
-"ha en la part superior del selector de components i selecciona el component "
-"o cable."
+"Per a suprimir un component o cable, tria l'eina de supressió que hi ha en "
+"la part superior del selector de components i tria el component o cable."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -2269,8 +2268,8 @@ msgid ""
 "Provide audio-visual feedback when using the mouse to help discovering its "
 "usage for young children."
 msgstr ""
-"Proporcionar comentaris audiovisuals quan s'utilitza el ratolí per a ajudar "
-"a descobrir el seu ús a la canalla."
+"Proporcionar comentaris audiovisuals quan s'utilitza el ratolí per ajudar a "
+"descobrir el seu ús a la canalla."
 
 #. Help prerequisite
 #: activities/baby_mouse/ActivityInfo.qml:21
@@ -2600,7 +2599,7 @@ msgstr "Usuari"
 #: activities/balancebox/ActivityConfig.qml:34
 msgctxt "ActivityConfig|"
 msgid "Select your level set"
-msgstr "Seleccioneu el vostre conjunt de nivells"
+msgstr "Trieu el vostre conjunt de nivells"
 
 #: activities/balancebox/ActivityConfig.qml:41
 msgctxt "ActivityConfig|"
@@ -2667,8 +2666,8 @@ msgid ""
 msgstr ""
 "En el menú de configuració de l'activitat, pots triar entre el conjunt de "
 "nivells predeterminat «Integrat» i un que podràs definir («Usuari»). Per a "
-"crear un conjunt de nivells, selecciona el conjunt de nivells «Usuari» i "
-"inicia l'editor de nivells clicant damunt del botó corresponent."
+"crear un conjunt de nivells, tria el conjunt de nivells «Usuari» i inicia "
+"l'editor de nivells clicant damunt del botó corresponent."
 
 #: activities/balancebox/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -3364,14 +3363,13 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
-"Selecciona un nombre de la llista i clica damunt de la seua posició de "
-"destinació per a emplenar la quadrícula. Cada nombre ha d'aparéixer només "
-"una vegada en una fila i en una columna. Les gàbies són grups de cel·les que "
-"proporcionen informació sobre com emplenar-les. Les gàbies fetes de més "
-"d'una cel·la proporcionen un resultat i un operador: tots els nombres de la "
-"gàbia, quan es combinen utilitzant l'operador, han de produir el resultat. "
-"Les gàbies fetes només amb una cel·la proporcionen directament el nombre a "
-"introduir."
+"Tria un nombre de la llista i clica damunt de la seua posició de destinació "
+"per a emplenar la quadrícula. Cada nombre ha d'aparéixer només una vegada en "
+"una fila i en una columna. Les gàbies són grups de cel·les que proporcionen "
+"informació sobre com emplenar-les. Les gàbies fetes de més d'una cel·la "
+"proporcionen un resultat i un operador: tots els nombres de la gàbia, quan "
+"es combinen utilitzant l'operador, han de produir el resultat. Les gàbies "
+"fetes només amb una cel·la proporcionen directament el nombre a introduir."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
@@ -3413,7 +3411,7 @@ msgstr "Calendari"
 #: activities/calendar/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Read the instructions and select the correct date on the calendar."
-msgstr "Revisa les instruccions i selecciona la data correcta al calendari."
+msgstr "Revisa les instruccions i tria la data correcta al calendari."
 
 #. Help goal
 #: activities/calendar/ActivityInfo.qml:20
@@ -3434,8 +3432,8 @@ msgid ""
 "Read the instructions and select the correct date on the calendar, and then "
 "validate your answer by clicking on the OK button."
 msgstr ""
-"Revisa les instruccions i selecciona la data correcta al calendari, i "
-"després valida la resposta clicant damunt del botó «OK»."
+"Revisa les instruccions i tria la data correcta al calendari, i després "
+"valida la resposta clicant damunt del botó «OK»."
 
 #: activities/calendar/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:24
@@ -3498,32 +3496,32 @@ msgstr "Dissabte"
 #: activities/calendar/calendar_dataset.js:35
 msgctxt "calendar_dataset|"
 msgid "Select the 23rd"
-msgstr "Selecciona el dia 23"
+msgstr "Tria el dia 23"
 
 #: activities/calendar/calendar_dataset.js:39
 msgctxt "calendar_dataset|"
 msgid "Select the 1st"
-msgstr "Selecciona el dia 1"
+msgstr "Tria el dia 1"
 
 #: activities/calendar/calendar_dataset.js:43
 msgctxt "calendar_dataset|"
 msgid "Select the 16th"
-msgstr "Selecciona el dia 16"
+msgstr "Tria el dia 16"
 
 #: activities/calendar/calendar_dataset.js:47
 msgctxt "calendar_dataset|"
 msgid "Select the 28th"
-msgstr "Selecciona el dia 28"
+msgstr "Tria el dia 28"
 
 #: activities/calendar/calendar_dataset.js:51
 msgctxt "calendar_dataset|"
 msgid "Select the 11th"
-msgstr "Selecciona el dia 11"
+msgstr "Tria el dia 11"
 
 #: activities/calendar/calendar_dataset.js:55
 msgctxt "calendar_dataset|"
 msgid "Select the 20th"
-msgstr "Selecciona el dia 20"
+msgstr "Tria el dia 20"
 
 #: activities/calendar/calendar_dataset.js:75
 msgctxt "calendar_dataset|"
@@ -3563,62 +3561,62 @@ msgstr "Quin dia de la setmana és el 10è del mes indicat?"
 #: activities/calendar/calendar_dataset.js:119
 msgctxt "calendar_dataset|"
 msgid "Select a Monday between days 1 and 7 of the given month"
-msgstr "Selecciona un dilluns entre els dies 1 i 7 del mes indicat"
+msgstr "Tria un dilluns entre els dies 1 i 7 del mes indicat"
 
 #: activities/calendar/calendar_dataset.js:123
 msgctxt "calendar_dataset|"
 msgid "Select a Tuesday between days 8 and 16 of the given month"
-msgstr "Selecciona un dimarts entre els dies 8 i 16 del mes indicat"
+msgstr "Tria un dimarts entre els dies 8 i 16 del mes indicat"
 
 #: activities/calendar/calendar_dataset.js:127
 msgctxt "calendar_dataset|"
 msgid "Select a Wednesday between days 15 and 22 of the given month"
-msgstr "Selecciona un dimecres entre els dies 15 i 22 del mes indicat"
+msgstr "Tria un dimecres entre els dies 15 i 22 del mes indicat"
 
 #: activities/calendar/calendar_dataset.js:131
 msgctxt "calendar_dataset|"
 msgid "Select a Thursday between days 26 and 31 of the given month"
-msgstr "Selecciona un dijous entre els dies 26 i 31 del mes indicat"
+msgstr "Tria un dijous entre els dies 26 i 31 del mes indicat"
 
 #: activities/calendar/calendar_dataset.js:135
 msgctxt "calendar_dataset|"
 msgid "Select a Friday between days 20 and 25 of the given month"
-msgstr "Selecciona un divendres entre els dies 20 i 25 del mes indicat"
+msgstr "Tria un divendres entre els dies 20 i 25 del mes indicat"
 
 #: activities/calendar/calendar_dataset.js:139
 msgctxt "calendar_dataset|"
 msgid "Select a Saturday between days 13 and 23 of the given month"
-msgstr "Selecciona un dissabte entre els dies 13 i 23 del mes indicat"
+msgstr "Tria un dissabte entre els dies 13 i 23 del mes indicat"
 
 #: activities/calendar/calendar_dataset.js:143
 msgctxt "calendar_dataset|"
 msgid "Select a Sunday between days 5 and 17 of the given month"
-msgstr "Selecciona un diumenge entre els dies 5 i 17 del mes indicat"
+msgstr "Tria un diumenge entre els dies 5 i 17 del mes indicat"
 
 #: activities/calendar/calendar_dataset.js:162
 msgctxt "calendar_dataset|"
 msgid "Select the second day before the 15th of the given month"
-msgstr "Selecciona el segon dia abans del 15è dia del mes indicat"
+msgstr "Tria el segon dia abans del 15è dia del mes indicat"
 
 #: activities/calendar/calendar_dataset.js:166
 msgctxt "calendar_dataset|"
 msgid "Select the fourth Sunday of the given month"
-msgstr "Selecciona el quart diumenge del mes indicat"
+msgstr "Tria el quart diumenge del mes indicat"
 
 #: activities/calendar/calendar_dataset.js:170
 msgctxt "calendar_dataset|"
 msgid "Select the day one week after 13th of the given month"
-msgstr "Selecciona el dia una setmana després del 13è dia del mes indicat"
+msgstr "Tria el dia una setmana després del 13è dia del mes indicat"
 
 #: activities/calendar/calendar_dataset.js:174
 msgctxt "calendar_dataset|"
 msgid "Select the fifth Thursday of the given month"
-msgstr "Selecciona el cinquè dijous del mes indicat"
+msgstr "Tria el cinquè dijous del mes indicat"
 
 #: activities/calendar/calendar_dataset.js:178
 msgctxt "calendar_dataset|"
 msgid "Select the third day after 27th of the given month"
-msgstr "Selecciona el tercer dia després del 27è dia del mes indicat"
+msgstr "Tria el tercer dia després del 27è dia del mes indicat"
 
 #: activities/calendar/calendar_dataset.js:197
 msgctxt "calendar_dataset|"
@@ -3733,7 +3731,7 @@ msgid ""
 "the date of the sports competition on the calendar."
 msgstr ""
 "La competició esportiva es durà a terme l'últim divendres de setembre de "
-"2017.<br> Selecciona al calendari la data de la competició esportiva."
+"2017.<br> Tria al calendari la data de la competició esportiva."
 
 #. Activity title
 #: activities/canal_lock/ActivityInfo.qml:15
@@ -3796,8 +3794,8 @@ msgid ""
 "canal it is connected to. Use this property to help Tux get the job done."
 msgstr ""
 "El nivell de l'aigua dins de la resclosa canviarà segons el costat del canal "
-"al qual estiga connectada. Utilitza esta propietat per a ajudar a en Tux a "
-"fer el treball."
+"al qual estiga connectada. Utilitza esta propietat per ajudar a en Tux a fer "
+"el treball."
 
 #: activities/categorization/ActivityConfig.qml:38
 msgctxt "ActivityConfig|"
@@ -5527,9 +5525,9 @@ msgid ""
 "cyan (a special shade of blue), magenta (a special shade of pink), and "
 "yellow."
 msgstr ""
-"Les pintures i les tintes absorbeixen diferents colors de la llum que cau "
+"Les pintures i les tintes absorbixen diferents colors de la llum que cau "
 "sobre seu, restant-lo del que veus. Afegir una quantitat més gran de tinta "
-"fa que s'absorbeixi més llum, i la combinació de colors esdevé més fosca. "
+"fa que s'absorbisca més llum, i la combinació de colors esdevé més fosca. "
 "Podem mesclar senzillament tres colors primaris per a crear molts colors "
 "nous. Els colors primaris per a pintura/tinta són el cian (un to especial de "
 "blau), el magenta (un to especial de rosa), i el groc."
@@ -5788,9 +5786,9 @@ msgid ""
 "symbol for this pair. When each line contains a symbol, select the OK button "
 "to validate the answers."
 msgstr ""
-"Selecciona un parell de nombres de la llista. A continuació, selecciona el "
-"símbol de comparació correcte per a este parell. Quan cada línia continga un "
-"símbol, selecciona el botó «OK» per a validar les respostes."
+"Tria un parell de nombres de la llista. A continuació, tria el símbol de "
+"comparació correcte per a este parell. Quan cada línia continga un símbol, "
+"tria el botó «OK» per a validar les respostes."
 
 #: activities/comparator/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -5799,7 +5797,7 @@ msgid ""
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
 "Si alguna resposta és incorrecta, apareixerà una icona de creu en les línies "
-"corresponents. Corregix els errors i selecciona el botó «OK» de nou."
+"corresponents. Corregix els errors i tria el botó «OK» de nou."
 
 #: activities/comparator/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -6224,9 +6222,9 @@ msgid ""
 "To delete a component or a wire, select the delete tool (cross icon) from "
 "the tool menu, and click on the component or on the wire you want to delete."
 msgstr ""
-"Per a suprimir un component o cable, selecciona l'eina de supressió (icona "
-"de creu) que hi ha en el menú d'eines i clica damunt del component o cable "
-"que vols suprimir."
+"Per a suprimir un component o cable, tria l'eina de supressió (icona de "
+"creu) que hi ha en el menú d'eines i clica damunt del component o cable que "
+"vols suprimir."
 
 #: activities/digital_electricity/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -6655,8 +6653,8 @@ msgid ""
 "For a more detailed description about the NAND gate, select it and click on "
 "the info button."
 msgstr ""
-"Per a obtindre una descripció més detallada de la porta NAND, selecciona-la "
-"i clica damunt del botó d'informació."
+"Per a obtindre una descripció més detallada de la porta NAND, tria-la i "
+"clica damunt del botó d'informació."
 
 #: activities/digital_electricity/TutorialDataset.qml:218
 msgctxt "TutorialDataset|"
@@ -6761,8 +6759,8 @@ msgid ""
 "For a more detailed description about the NOR gate, select it and click on "
 "the info button."
 msgstr ""
-"Per a obtindre una descripció més detallada de la porta NOR, selecciona-la i "
-"clica damunt del botó d'informació."
+"Per a obtindre una descripció més detallada de la porta NOR, tria-la i clica "
+"damunt del botó d'informació."
 
 #: activities/digital_electricity/TutorialDataset.qml:357
 msgctxt "TutorialDataset|"
@@ -9772,7 +9770,7 @@ msgstr "Família"
 #: activities/family/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Select the name you should call this family member."
-msgstr "Selecciona el nom amb què has de cridar a este membre de la família."
+msgstr "Tria el nom amb què has de cridar a este membre de la família."
 
 #. Help goal
 #: activities/family/ActivityInfo.qml:20
@@ -9804,8 +9802,8 @@ msgstr ""
 "Es mostra un arbre genealògic.\n"
 "Els cercles estan vinculats amb línies per a marcar les relacions. Les "
 "parelles casades estan marcades amb un anell al vincle.\n"
-"Eres la persona del cercle blanc. Selecciona el nom amb què has de cridar a "
-"la persona del cercle taronja.\n"
+"Eres la persona del cercle blanc. Tria el nom amb què has de cridar a la "
+"persona del cercle taronja.\n"
 
 #: activities/family/Family.qml:251
 msgctxt "Family|"
@@ -9821,7 +9819,7 @@ msgstr "?"
 #, qt-format
 msgctxt "Family|"
 msgid "Select one of the pairs corresponding to: %1"
-msgstr "Selecciona una de les parelles corresponents a: %1"
+msgstr "Tria una de les parelles corresponents a: %1"
 
 #: activities/family/FamilyDataset.qml:95
 #: activities/family/FamilyDataset.qml:96
@@ -9999,7 +9997,7 @@ msgstr "Assenyala els familiars"
 #: activities/family_find_relative/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Select two people which have the given relationship."
-msgstr "Seleccionar dues persones que tenen la relació indicada."
+msgstr "Triar dues persones que tenen la relació indicada."
 
 #. Help prerequisite
 #: activities/family_find_relative/ActivityInfo.qml:22
@@ -10066,7 +10064,7 @@ msgstr "Troba el dia"
 #: activities/find_the_day/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Find the correct date and select it on the calendar."
-msgstr "Troba la data correcta i selecciona-la al calendari."
+msgstr "Troba la data correcta i tria-la al calendari."
 
 #. Help goal
 #: activities/find_the_day/ActivityInfo.qml:20
@@ -10296,8 +10294,7 @@ msgstr "Crea les fraccions"
 #: activities/fractions_create/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Select the appropriate number of parts to represent the given fraction."
-msgstr ""
-"Seleccionar el nombre adequat de parts que representen la fracció indicada."
+msgstr "Triar el nombre adequat de parts que representen la fracció indicada."
 
 #. Help goal
 #: activities/fractions_create/ActivityInfo.qml:19
@@ -10312,8 +10309,8 @@ msgid ""
 "A shape split in equal parts is displayed. Select the appropriate number of "
 "parts to represent the given fraction."
 msgstr ""
-"Es mostra una forma dividida en parts iguals. Selecciona el nombre adequat "
-"de parts per a representar la fracció indicada."
+"Es mostra una forma dividida en parts iguals. Tria el nombre adequat de "
+"parts per a representar la fracció indicada."
 
 #: activities/fractions_create/fractions_create.js:78
 msgctxt "fractions_create|"
@@ -10331,58 +10328,58 @@ msgstr "Fraccions simplificades amb un pastís."
 #: activities/fractions_create/resource/3/Data.qml:29
 msgctxt "Data|"
 msgid "Select one half of the pie."
-msgstr "Selecciona una meitat del pastís."
+msgstr "Tria una meitat del pastís."
 
 #: activities/fractions_create/resource/1/Data.qml:24
 #: activities/fractions_create/resource/3/Data.qml:35
 #: activities/fractions_create/resource/3/Data.qml:49
 msgctxt "Data|"
 msgid "Select one-third of the pie."
-msgstr "Selecciona un terç del pastís."
+msgstr "Tria un terç del pastís."
 
 #: activities/fractions_create/resource/1/Data.qml:30
 #: activities/fractions_create/resource/3/Data.qml:41
 #: activities/fractions_create/resource/3/Data.qml:55
 msgctxt "Data|"
 msgid "Select two-thirds of the pie."
-msgstr "Selecciona dos terços del pastís."
+msgstr "Tria dos terços del pastís."
 
 #: activities/fractions_create/resource/1/Data.qml:36
 #: activities/fractions_create/resource/3/Data.qml:61
 msgctxt "Data|"
 msgid "Select one-quarter of the pie."
-msgstr "Selecciona un quart del pastís."
+msgstr "Tria un quart del pastís."
 
 #: activities/fractions_create/resource/1/Data.qml:42
 #: activities/fractions_create/resource/3/Data.qml:67
 msgctxt "Data|"
 msgid "Select two-fifths of the pie."
-msgstr "Selecciona dos cinquens del pastís."
+msgstr "Tria dos cinquens del pastís."
 
 #: activities/fractions_create/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Select one pie and one-quarter of a pie."
-msgstr "Selecciona un pastís i un quart d'un altre pastís."
+msgstr "Tria un pastís i un quart d'un altre pastís."
 
 #: activities/fractions_create/resource/1/Data.qml:56
 msgctxt "Data|"
 msgid "Select one pie and two-fifths of a pie."
-msgstr "Selecciona un pastís i dos cinquens d'un altre pastís."
+msgstr "Tria un pastís i dos cinquens d'un altre pastís."
 
 #: activities/fractions_create/resource/1/Data.qml:62
 msgctxt "Data|"
 msgid "Select one pie and one-third of a pie."
-msgstr "Selecciona un pastís i un terç d'un altre pastís."
+msgstr "Tria un pastís i un terç d'un altre pastís."
 
 #: activities/fractions_create/resource/1/Data.qml:68
 msgctxt "Data|"
 msgid "Select one pie and one half of a pie."
-msgstr "Selecciona un pastís i una meitat d'un altre pastís."
+msgstr "Tria un pastís i una meitat d'un altre pastís."
 
 #: activities/fractions_create/resource/1/Data.qml:74
 msgctxt "Data|"
 msgid "Select one pie and three-quarters of a pie."
-msgstr "Selecciona un pastís i tres quarts d'un altre pastís."
+msgstr "Tria un pastís i tres quarts d'un altre pastís."
 
 #: activities/fractions_create/resource/10/Data.qml:9
 msgctxt "Data|"
@@ -10395,7 +10392,7 @@ msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the square."
 msgstr ""
-"Selecciona tantes parts com pugues sense agafar més de la meitat del quadrat."
+"Tria tantes parts com pugues sense agafar més de la meitat del quadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:9
 msgctxt "Data|"
@@ -10408,58 +10405,58 @@ msgstr "Fraccions simplificades amb un quadrat."
 #: activities/fractions_create/resource/4/Data.qml:29
 msgctxt "Data|"
 msgid "Select one half of the square."
-msgstr "Selecciona una meitat del quadrat."
+msgstr "Tria una meitat del quadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
 msgctxt "Data|"
 msgid "Select one-third of the square."
-msgstr "Selecciona un terç del quadrat."
+msgstr "Tria un terç del quadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
 msgctxt "Data|"
 msgid "Select two-thirds of the square."
-msgstr "Selecciona dos terços del quadrat."
+msgstr "Tria dos terços del quadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
-msgstr "Selecciona un quart del quadrat."
+msgstr "Tria un quart del quadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
 msgctxt "Data|"
 msgid "Select two-fifths of the square."
-msgstr "Selecciona dos cinquens del quadrat."
+msgstr "Tria dos cinquens del quadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Select one square and one-quarter of a square."
-msgstr "Selecciona un quadrat i un quart d'un altre quadrat."
+msgstr "Tria un quadrat i un quart d'un altre quadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:56
 msgctxt "Data|"
 msgid "Select one square and two-fifths of a square."
-msgstr "Selecciona un quadrat i dos cinquens d'un altre quadrat."
+msgstr "Tria un quadrat i dos cinquens d'un altre quadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:62
 msgctxt "Data|"
 msgid "Select one square and one-third of a square."
-msgstr "Selecciona un quadrat i un terç d'un altre quadrat."
+msgstr "Tria un quadrat i un terç d'un altre quadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:68
 msgctxt "Data|"
 msgid "Select one square and one half of a square."
-msgstr "Selecciona un quadrat i una meitat d'un altre quadrat."
+msgstr "Tria un quadrat i una meitat d'un altre quadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:74
 msgctxt "Data|"
 msgid "Select one square and three-quarters of a square."
-msgstr "Selecciona un quadrat i tres quarts d'un altre quadrat."
+msgstr "Tria un quadrat i tres quarts d'un altre quadrat."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -10469,7 +10466,7 @@ msgstr "Fraccions no simplificades amb un pastís."
 #: activities/fractions_create/resource/3/Data.qml:73
 msgctxt "Data|"
 msgid "Select three-fifths of the pie."
-msgstr "Selecciona tres cinquens del pastís."
+msgstr "Tria tres cinquens del pastís."
 
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
@@ -10479,7 +10476,7 @@ msgstr "Fraccions no simplificades amb un quadrat."
 #: activities/fractions_create/resource/4/Data.qml:73
 msgctxt "Data|"
 msgid "Select three-fifths of the square."
-msgstr "Selecciona tres cinquens del quadrat."
+msgstr "Tria tres cinquens del quadrat."
 
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -10489,48 +10486,48 @@ msgstr "Nombres decimals amb un pastís."
 #: activities/fractions_create/resource/5/Data.qml:18
 msgctxt "Data|"
 msgid "Select 0.5 pie."
-msgstr "Selecciona 0,5 pastissos."
+msgstr "Tria 0,5 pastissos."
 
 #: activities/fractions_create/resource/5/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 pie."
-msgstr "Selecciona 0,25 pastissos."
+msgstr "Tria 0,25 pastissos."
 
 #: activities/fractions_create/resource/5/Data.qml:30
 msgctxt "Data|"
 msgid "Select 0.4 pie."
-msgstr "Selecciona 0,4 pastissos."
+msgstr "Tria 0,4 pastissos."
 
 #: activities/fractions_create/resource/5/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 pie."
-msgstr "Selecciona 0,75 pastissos."
+msgstr "Tria 0,75 pastissos."
 
 #: activities/fractions_create/resource/5/Data.qml:42
 msgctxt "Data|"
 msgid "Select 0.8 pie."
-msgstr "Selecciona 0,8 pastissos."
+msgstr "Tria 0,8 pastissos."
 
 #: activities/fractions_create/resource/5/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 pies."
-msgstr "Selecciona 1,25 pastissos."
+msgstr "Tria 1,25 pastissos."
 
 #: activities/fractions_create/resource/5/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 pies."
-msgstr "Selecciona 1,4 pastissos."
+msgstr "Tria 1,4 pastissos."
 
 #: activities/fractions_create/resource/5/Data.qml:62
 #: activities/fractions_create/resource/5/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 pies."
-msgstr "Selecciona 1,5 pastissos."
+msgstr "Tria 1,5 pastissos."
 
 #: activities/fractions_create/resource/5/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 pies."
-msgstr "Selecciona 1,75 pastissos."
+msgstr "Tria 1,75 pastissos."
 
 #: activities/fractions_create/resource/6/Data.qml:9
 msgctxt "Data|"
@@ -10540,48 +10537,48 @@ msgstr "Nombres decimals amb un quadrat."
 #: activities/fractions_create/resource/6/Data.qml:18
 msgctxt "Data|"
 msgid "Select 0.5 square."
-msgstr "Selecciona 0,5 quadrats."
+msgstr "Tria 0,5 quadrats."
 
 #: activities/fractions_create/resource/6/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 square."
-msgstr "Selecciona 0,25 quadrats."
+msgstr "Tria 0,25 quadrats."
 
 #: activities/fractions_create/resource/6/Data.qml:30
 msgctxt "Data|"
 msgid "Select 0.4 square."
-msgstr "Selecciona 0,4 quadrats."
+msgstr "Tria 0,4 quadrats."
 
 #: activities/fractions_create/resource/6/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 square."
-msgstr "Selecciona 0,75 quadrats."
+msgstr "Tria 0,75 quadrats."
 
 #: activities/fractions_create/resource/6/Data.qml:42
 msgctxt "Data|"
 msgid "Select 0.8 square."
-msgstr "Selecciona 0,8 quadrats."
+msgstr "Tria 0,8 quadrats."
 
 #: activities/fractions_create/resource/6/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 squares."
-msgstr "Selecciona 1,25 quadrats."
+msgstr "Tria 1,25 quadrats."
 
 #: activities/fractions_create/resource/6/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 squares."
-msgstr "Selecciona 1,4 quadrats."
+msgstr "Tria 1,4 quadrats."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 squares."
-msgstr "Selecciona 1,5 quadrats."
+msgstr "Tria 1,5 quadrats."
 
 #: activities/fractions_create/resource/6/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 squares."
-msgstr "Selecciona 1,75 quadrats."
+msgstr "Tria 1,75 quadrats."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -10600,7 +10597,7 @@ msgstr "Tants per cent amb un pastís."
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the pie."
-msgstr "Selecciona %1% del pastís."
+msgstr "Tria %1% del pastís."
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
@@ -10617,7 +10614,7 @@ msgstr "Tants per cent amb un quadrat."
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
-msgstr "Selecciona %1% del quadrat."
+msgstr "Tria %1% del quadrat."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -10629,8 +10626,7 @@ msgstr "Preguntes específiques amb un pastís."
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the pie."
-msgstr ""
-"Selecciona tantes parts com pugues sense agafar més de la meitat del pastís."
+msgstr "Tria tantes parts com pugues sense agafar més de la meitat del pastís."
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
@@ -15432,8 +15428,8 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Selecciona una classe gramatical de la llista, després selecciona el quadro "
-"davall d'una paraula i assigna-hi la classe."
+"Tria una classe gramatical de la llista, després selecciona el quadro davall "
+"d'una paraula i assigna-hi la classe."
 
 #: activities/grammar_analysis/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -15497,8 +15493,8 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Selecciona una classe gramatical de la llista, després selecciona el quadro "
-"davall d'una paraula i assigna-hi la classe."
+"Tria una classe gramatical de la llista, després selecciona el quadro davall "
+"d'una paraula i assigna-hi la classe."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:30
 msgctxt "GrammarAnalysis|"
@@ -15524,8 +15520,8 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Selecciona la classe gramatical de la llista, després selecciona el quadro "
-"davall d'una paraula i assigna-hi la classe."
+"Tria la classe gramatical de la llista, després selecciona el quadro davall "
+"d'una paraula i assigna-hi la classe."
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -15554,8 +15550,8 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Selecciona la classe gramatical de la llista, després selecciona el quadro "
-"davall d'una paraula i assigna-hi la classe."
+"Tria la classe gramatical de la llista, després selecciona el quadro davall "
+"d'una paraula i assigna-hi la classe."
 
 #: activities/grammar_classes/GrammarClasses.qml:19
 msgctxt "GrammarClasses|"
@@ -15616,8 +15612,8 @@ msgid ""
 "node."
 msgstr ""
 "Col·loca els colors/formes en el gràfic de manera que dos nodes adjacents no "
-"tinguen el mateix color. Selecciona un node, després selecciona un element a "
-"la llista per a col·locar-lo al node."
+"tinguen el mateix color. Tria un node, després selecciona un element a la "
+"llista per a col·locar-lo al node."
 
 #: activities/graph-coloring/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -15827,7 +15823,7 @@ msgstr "Integrat"
 #: activities/guesscount/ActivityConfig.qml:72
 msgctxt "ActivityConfig|"
 msgid "Selected"
-msgstr "Seleccionat"
+msgstr "Triat"
 
 #: activities/guesscount/ActivityConfig.qml:72
 msgctxt "ActivityConfig|"
@@ -17732,7 +17728,7 @@ msgstr "Només 5 paraules"
 #: activities/letter-in-word/ActivityConfig.qml:54
 msgctxt "ActivityConfig|"
 msgid "Select the case for the letters to search"
-msgstr "Selecciona què emprar per a les lletres a buscar"
+msgstr "Tria què emprar per a les lletres a buscar"
 
 #: activities/letter-in-word/ActivityConfig.qml:57
 msgctxt "ActivityConfig|"
@@ -17780,8 +17776,8 @@ msgid ""
 "A letter is displayed on the flag attached to the plane. Select all the "
 "words in the list containing this letter and then press the OK button."
 msgstr ""
-"Apareixerà una lletra en la bandera arrossegada per l'avioneta, selecciona "
-"totes les paraules on aparega i, a continuació, prem el botó «OK»."
+"Apareixerà una lletra en la bandera arrossegada per l'avioneta, tria totes "
+"les paraules on aparega i, a continuació, prem el botó «OK»."
 
 #: activities/letter-in-word/LetterInWord.qml:335
 msgctxt "LetterInWord|"
@@ -18042,8 +18038,8 @@ msgid ""
 "Arrange the events in the order in which they happened. Select the line to "
 "move, then select its target position."
 msgstr ""
-"Organitza els esdeveniments en l'ordre en què succeïxen. Selecciona la línia "
-"per a moure i després selecciona la seua posició de destinació."
+"Organitza els esdeveniments en l'ordre en què succeïxen. Tria la línia per a "
+"moure i després selecciona la seua posició de destinació."
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
@@ -19651,7 +19647,7 @@ msgstr "Menú principal de GCompris"
 #: activities/menu/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Select an activity to run it."
-msgstr "Selecciona una activitat per a iniciar-la."
+msgstr "Tria una activitat per a iniciar-la."
 
 #. Help goal
 #: activities/menu/ActivityInfo.qml:17
@@ -19681,8 +19677,8 @@ msgid ""
 "At the bottom of the screen is the GCompris control bar. Notice that you can "
 "hide or show the bar by touching its anchor."
 msgstr ""
-"Selecciona una icona per a entrar en una activitat o per a mostrar una "
-"llista d'activitats en una categoria.\n"
+"Tria una icona per a entrar en una activitat o per a mostrar una llista "
+"d'activitats en una categoria.\n"
 "En la part inferior de la pantalla hi ha la barra de control de GCompris. "
 "Recorda que pots ocultar-la o mostrar-la tocant la seua àncora."
 
@@ -20633,8 +20629,8 @@ msgid ""
 "First select an item from the list, and then click on a spot of the mosaic "
 "to place the item."
 msgstr ""
-"Primer, selecciona un element des de la llista i després clica damunt d'un "
-"punt en el mosaic per a col·locar-lo."
+"Primer, tria un element des de la llista i després clica damunt d'un punt en "
+"el mosaic per a col·locar-lo."
 
 #: activities/mosaic/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -20761,9 +20757,9 @@ msgid ""
 "remove it. Pieces of formed mill can not be removed unless no other pieces "
 "are left on the board."
 msgstr ""
-"Si formes un molí (línia de 3 peces), a continuació, selecciona una peça "
-"d'en Tux i retira-la. Les peces d'un molí format no es poden retirar a menys "
-"que no n'hi haja altres al tauler."
+"Si formes un molí (línia de 3 peces), a continuació, tria una peça d'en Tux "
+"i retira-la. Les peces d'un molí format no es poden retirar a menys que no "
+"n'hi haja altres al tauler."
 
 #: activities/nine_men_morris/NineMenMorris.qml:356
 msgctxt "NineMenMorris|"
@@ -20917,8 +20913,7 @@ msgstr "Ordre dels nombres"
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the numbers one after the other according to the numerical sequence."
-msgstr ""
-"Selecciona els nombres un darrere l'altre segons la seqüència numèrica."
+msgstr "Tria els nombres un darrere l'altre segons la seqüència numèrica."
 
 #. Help goal
 #: activities/number_sequence/ActivityInfo.qml:20
@@ -21718,7 +21713,7 @@ msgstr "Descodifica el camí"
 msgctxt "ActivityInfo|"
 msgid "Follow the given directions to help Tux reach the target."
 msgstr ""
-"Seguix les indicacions donades per a ajudar a en Tux a arribar fins a "
+"Seguix les indicacions donades per ajudar a en Tux a arribar fins a "
 "l'objectiu."
 
 #. Help goal
@@ -22410,7 +22405,7 @@ msgstr "No"
 #: activities/piano_composition/Piano_composition.qml:423
 msgctxt "Piano_composition|"
 msgid "Select the type of melody to load."
-msgstr "Selecciona el tipus de la melodia que es carregarà."
+msgstr "Tria el tipus de la melodia que es carregarà."
 
 #: activities/piano_composition/Piano_composition.qml:428
 msgctxt "Piano_composition|"
@@ -22898,7 +22893,7 @@ msgid ""
 "answer."
 msgstr ""
 "Veuràs diferents imatges representant un infant i una caixa, hauràs "
-"d'esbrinar la posició de l'infant en relació amb la caixa i seleccionar la "
+"d'esbrinar la posició de l'infant en relació amb la caixa i triar la "
 "resposta correcta."
 
 #: activities/positions/ActivityInfo.qml:27
@@ -22921,7 +22916,7 @@ msgstr "al costat"
 #: activities/positions/resource/1/Data.qml:21
 msgctxt "Data|"
 msgid "Select the image where the child is beside the box."
-msgstr "Selecciona la imatge on l'infant es troba al costat de la caixa."
+msgstr "Tria la imatge on l'infant es troba al costat de la caixa."
 
 #. it refers to the behind position
 #: activities/positions/resource/1/Data.qml:26
@@ -22935,7 +22930,7 @@ msgstr "al darrere"
 #: activities/positions/resource/2/Data.qml:33
 msgctxt "Data|"
 msgid "Select the image where the child is behind the box."
-msgstr "Selecciona la imatge on l'infant es troba al darrere de la caixa."
+msgstr "Tria la imatge on l'infant es troba al darrere de la caixa."
 
 #. it refers to the in front of position
 #: activities/positions/resource/1/Data.qml:32
@@ -22949,7 +22944,7 @@ msgstr "al davant de"
 #: activities/positions/resource/2/Data.qml:39
 msgctxt "Data|"
 msgid "Select the image where the child is in front of the box."
-msgstr "Selecciona la imatge on l'infant es troba al davant de la caixa."
+msgstr "Tria la imatge on l'infant es troba al davant de la caixa."
 
 #. it refers to the inside position
 #: activities/positions/resource/1/Data.qml:38
@@ -22963,7 +22958,7 @@ msgstr "a l'interior"
 #: activities/positions/resource/2/Data.qml:45
 msgctxt "Data|"
 msgid "Select the image where the child is inside the box."
-msgstr "Selecciona la imatge on l'infant es troba a l'interior de la caixa."
+msgstr "Tria la imatge on l'infant es troba a l'interior de la caixa."
 
 #. it refers to the above position
 #: activities/positions/resource/1/Data.qml:44
@@ -22977,7 +22972,7 @@ msgstr "damunt"
 #: activities/positions/resource/2/Data.qml:51
 msgctxt "Data|"
 msgid "Select the image where the child is above the box."
-msgstr "Selecciona la imatge on l'infant es troba damunt de la caixa."
+msgstr "Tria la imatge on l'infant es troba damunt de la caixa."
 
 #. it refers to the beneath position
 #: activities/positions/resource/1/Data.qml:50
@@ -22991,7 +22986,7 @@ msgstr "davall"
 #: activities/positions/resource/2/Data.qml:57
 msgctxt "Data|"
 msgid "Select the image where the child is under the box."
-msgstr "Selecciona la imatge on l'infant es troba davall de la caixa."
+msgstr "Tria la imatge on l'infant es troba davall de la caixa."
 
 #: activities/positions/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -23008,7 +23003,7 @@ msgstr "a la dreta"
 #: activities/positions/resource/2/Data.qml:21
 msgctxt "Data|"
 msgid "Select the image where the child is at the right of the box."
-msgstr "Selecciona la imatge on l'infant es troba a la dreta de la caixa."
+msgstr "Tria la imatge on l'infant es troba a la dreta de la caixa."
 
 #. it refers to the position on the left side
 #: activities/positions/resource/2/Data.qml:26
@@ -23020,7 +23015,7 @@ msgstr "a l'esquerra"
 #: activities/positions/resource/2/Data.qml:27
 msgctxt "Data|"
 msgid "Select the image where the child is at the left of the box."
-msgstr "Selecciona la imatge on l'infant es troba a l'esquerra de la caixa."
+msgstr "Tria la imatge on l'infant es troba a l'esquerra de la caixa."
 
 #. Activity title
 #: activities/programmingMaze/ActivityInfo.qml:16
@@ -23032,7 +23027,7 @@ msgstr "Programar el camí"
 #: activities/programmingMaze/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Program the path to help Tux catch the fish."
-msgstr "Programar el camí per a ajudar en Tux a pescar el peix."
+msgstr "Programar el camí per ajudar en Tux a pescar el peix."
 
 #. Help goal
 #: activities/programmingMaze/ActivityInfo.qml:21
@@ -23068,8 +23063,8 @@ msgid ""
 "Up and Down arrows: increase or decrease the loop counter if the loop area "
 "is selected"
 msgstr ""
-"Amunt i Avall: per a fer augmentar o disminuir el comptador de bucle si se "
-"selecciona l'àrea de bucle"
+"Amunt i Avall: per a fer augmentar o disminuir el comptador de bucle si es "
+"tria l'àrea de bucle"
 
 #: activities/programmingMaze/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -23109,8 +23104,8 @@ msgid ""
 "Space."
 msgstr ""
 "Per a afegir una instrucció en l'àrea principal/de procediment/de bucle, "
-"selecciona-la des de l'àrea d'instruccions, després canvia a l'àrea "
-"principal/de procediment/de bucle i prem «Espai»."
+"tria-la des de l'àrea d'instruccions, després canvia a l'àrea principal/de "
+"procediment/de bucle i prem «Espai»."
 
 #: activities/programmingMaze/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
@@ -23120,8 +23115,8 @@ msgid ""
 "instruction and press Space."
 msgstr ""
 "Per a modificar una instrucció en l'àrea principal/de procediment/de bucle, "
-"selecciona-la des de l'àrea principal/de procediment/de bucle, després "
-"canvia a l'àrea d'instruccions, tria la nova instrucció i prem «Espai»."
+"tria-la des de l'àrea principal/de procediment/de bucle, després canvia a "
+"l'àrea d'instruccions, tria la nova instrucció i prem «Espai»."
 
 #: activities/programmingMaze/InstructionArea.qml:22
 msgctxt "InstructionArea|"
@@ -24968,8 +24963,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Select a color and paint the rectangles as you like to create a drawing."
 msgstr ""
-"Selecciona un color i pinta els rectangles com t'agrade per a crear un "
-"dibuix."
+"Tria un color i pinta els rectangles com t'agrade per a crear un dibuix."
 
 # skip-rule: kct-tab
 #: activities/simplepaint/ActivityInfo.qml:27
@@ -25003,7 +24997,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
 msgstr ""
-"Selecciona eines i colors des dels quadros plegables i dibuixa imatges."
+"Tria les eines i els colors des dels quadros plegables i dibuixa les imatges."
 "<br><br>"
 
 #: activities/sketch/ActivityInfo.qml:29
@@ -26899,11 +26893,11 @@ msgid ""
 "something in a square, it might not be correct for the whole Sudoku. It can "
 "still be a mistake."
 msgstr ""
-"Selecciona un nombre o un símbol i clica damunt de la seua posició de "
-"destinació. Cada símbol ha d'aparéixer només una vegada en una fila, en una "
-"columna i en una subregió si n'hi ha. Si no es permet una acció, el joc "
-"mostrarà per què. Però compte: si pots col·locar alguna cosa en un quadrat, "
-"pot ser que no siga correcte per a tot el Sudoku. Encara pot ser un error."
+"Tria un nombre o un símbol i clica damunt de la seua posició de destinació. "
+"Cada símbol ha d'aparéixer només una vegada en una fila, en una columna i en "
+"una subregió si n'hi ha. Si no es permet una acció, el joc mostrarà per què. "
+"Però compte: si pots col·locar alguna cosa en un quadrat, pot ser que no "
+"siga correcte per a tot el Sudoku. Encara pot ser un error."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -27137,9 +27131,9 @@ msgid ""
 "are incorrect, a cross icon will appear on the corresponding lines. Correct "
 "the errors, then press the OK button again."
 msgstr ""
-"Crea parells de nombres iguals a deu dins de cada parèntesi. Selecciona un "
-"nombre i, a continuació, selecciona un altre nombre de la mateixa operació "
-"per a intercanviar la seua posició. A cada línia, introduïx la suma final en "
+"Crea parells de nombres iguals a deu dins de cada parèntesi. Tria un nombre "
+"i, a continuació, tria un altre nombre de la mateixa operació per a "
+"intercanviar la seua posició. A cada línia, introduïx la suma final en "
 "l'últim quadro. Quan totes les línies estiguen completades, prem el botó "
 "«OK» per a validar les respostes. Si algunes respostes són incorrectes, "
 "apareixerà una icona de creu en les línies corresponents. Corregix els "
@@ -27201,8 +27195,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
-"Crea parells de nombres iguals a deu. Selecciona un nombre en la llista i, a "
-"continuació, selecciona un punt buit d'una operació per a moure el nombre "
+"Crea parells de nombres iguals a deu. Tria un nombre en la llista i, a "
+"continuació, tria un punt buit d'una operació per a moure el nombre "
 "seleccionat allà."
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
@@ -27258,12 +27252,12 @@ msgid ""
 "the answers. If some answers are incorrect, a cross icon will appear on the "
 "corresponding lines. Correct the errors, then press the OK button again."
 msgstr ""
-"Crea parells de nombres iguals a deu dins de cada parèntesi. Selecciona un "
-"nombre i, a continuació, selecciona un altre nombre de la mateixa operació "
-"per a intercanviar la seua posició. Quan totes les línies estiguen "
-"completades, prem el botó «OK» per a validar les respostes. Si algunes "
-"respostes són incorrectes, apareixerà una icona de creu en les línies "
-"corresponents. Corregix els errors, després torna a prémer el botó «OK»."
+"Crea parells de nombres iguals a deu dins de cada parèntesi. Tria un nombre "
+"i, a continuació, tria un altre nombre de la mateixa operació per a "
+"intercanviar la seua posició. Quan totes les línies estiguen completades, "
+"prem el botó «OK» per a validar les respostes. Si algunes respostes són "
+"incorrectes, apareixerà una icona de creu en les línies corresponents. "
+"Corregix els errors, després torna a prémer el botó «OK»."
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
 msgctxt "Data|"
@@ -27308,8 +27302,8 @@ msgid ""
 "operation to move the selected number there."
 msgstr ""
 "Descompon les sumes per a crear parells de nombres iguals a deu dins de cada "
-"parèntesi. Selecciona un nombre en la llista i, a continuació, selecciona un "
-"punt buit d'una operació per a moure el nombre seleccionat allà."
+"parèntesi. Tria un nombre en la llista i, a continuació, tria un punt buit "
+"d'una operació per a moure el nombre seleccionat allà."
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
 msgctxt "Data|"
@@ -27585,14 +27579,14 @@ msgstr ""
 "exemple, si afiges 10 unitats al nombre superior, hauràs d'eliminar una "
 "unitat del nombre superior de la columna següent. Açò s'anomena mètode de "
 "portar-ne per reagrupament. Per a fer-ho en esta activitat, clica damunt del "
-"rectangle buit a l'esquerra del nombre superior, selecciona 1, i a la "
-"columna següent clica damunt del rectangle buit a la dreta del nombre "
-"superior i selecciona -1. Després escriu el resultat de la columna a la "
-"línia inferior, i fes el mateix a les columnes següents fins que l'operació "
-"haja acabat. Una vegada trobes el resultat, clica damunt del botó «OK» per a "
-"validar la resposta. En alguns nivells, hauràs d'escriure l'operació "
-"indicada abans de resoldre-la; en este cas, clica damunt del botó «Preparat» "
-"quan l'operació s'haja escrit correctament i després resol-la."
+"rectangle buit a l'esquerra del nombre superior, tria 1, i a la columna "
+"següent clica damunt del rectangle buit a la dreta del nombre superior i "
+"tria -1. Després escriu el resultat de la columna a la línia inferior, i fes "
+"el mateix a les columnes següents fins que l'operació haja acabat. Una "
+"vegada trobes el resultat, clica damunt del botó «OK» per a validar la "
+"resposta. En alguns nivells, hauràs d'escriure l'operació indicada abans de "
+"resoldre-la; en este cas, clica damunt del botó «Preparat» quan l'operació "
+"s'haja escrit correctament i després resol-la."
 
 #: activities/vertical_subtraction/resource/1/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
@@ -27743,26 +27737,26 @@ msgstr ""
 "per exemple, si afiges 10 unitats al nombre superior, hauràs d'afegir una "
 "unitat del nombre inferior de la columna següent. Açò s'anomena mètode de "
 "portar-ne per compensació. Per a fer-ho en esta activitat, clica damunt del "
-"rectangle buit a l'esquerra del nombre superior, selecciona 1, i a la "
+"rectangle buit a l'esquerra del nombre superior, tria 1, i a la columna "
+"següent clica damunt del rectangle buit a la dreta del nombre superior i "
+"tria +1. Després escriu el resultat de la columna a la línia inferior, i fes "
+"el mateix a les columnes següents fins que l'operació haja acabat. Una "
+"vegada trobes el resultat, clica damunt del botó «D'acord» per a validar la "
+"resposta. En alguns nivells, hauràs d'escriure l'operació indicada abans de "
+"resoldre-la; en este cas, clica damunt del botó Preparat quan l'operació "
+"s'haja escrit correctament i després resol-la. Si el nombre superior és més "
+"xicotet que el nombre inferior, pots demanar prestat del subtrahend a la "
+"columna següent: per exemple, si afiges 10 unitats al nombre superior, has "
+"d'afegir una unitat al nombre inferior de la columna següent. Açò s'anomena "
+"préstec per mètode de compensació. Per fer-ho en esta activitat, clica "
+"damunt del rectangle buit a l'esquerra del nombre superior, tria 1, i a la "
 "columna següent clica damunt del rectangle buit a la dreta del nombre "
-"superior i selecciona +1. Després escriu el resultat de la columna a la "
-"línia inferior, i fes el mateix a les columnes següents fins que l'operació "
-"haja acabat. Una vegada trobes el resultat, clica damunt del botó «D'acord» "
-"per a validar la resposta. En alguns nivells, hauràs d'escriure l'operació "
-"indicada abans de resoldre-la; en este cas, clica damunt del botó Preparat "
-"quan l'operació s'haja escrit correctament i després resol-la. Si el nombre "
-"superior és més xicotet que el nombre inferior, pots demanar prestat del "
-"subtrahend a la columna següent: per exemple, si afiges 10 unitats al nombre "
-"superior, has d'afegir una unitat al nombre inferior de la columna següent. "
-"Açò s'anomena préstec per mètode de compensació. Per fer-ho en esta "
-"activitat, clica damunt del rectangle buit a l'esquerra del nombre superior, "
-"selecciona 1, i a la columna següent clica damunt del rectangle buit a la "
-"dreta del nombre inferior i selecciona +1. Després escriu el resultat de la "
-"columna a la línia inferior, i fes el mateix a les següents columnes fins "
-"que l'operació haja acabat. Una vegada trobat el resultat, clica damunt del "
-"botó «D'acord» per a validar la resposta. En alguns nivells, hauràs "
-"d'escriure l'operació donada abans de resoldre-la; en este cas, clica damunt "
-"del botó Prepara quan l'operació s'escriu correctament i després resol-la."
+"inferior i tria +1. Després escriu el resultat de la columna a la línia "
+"inferior, i fes el mateix a les següents columnes fins que l'operació haja "
+"acabat. Una vegada trobat el resultat, clica damunt del botó «D'acord» per a "
+"validar la resposta. En alguns nivells, hauràs d'escriure l'operació donada "
+"abans de resoldre-la; en este cas, clica damunt del botó Prepara quan "
+"l'operació s'escriu correctament i després resol-la."
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15
@@ -28865,8 +28859,7 @@ msgstr ""
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 msgstr ""
-"Selecciona el renderitzador (opengl, software, Direct3D11, Direct3D12, "
-"Metal)."
+"Tria el renderitzador (opengl, software, Direct3D11, Direct3D12, Metal)."
 
 #: core/main.cpp:117
 msgctxt "QObject|"
