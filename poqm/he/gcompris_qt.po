@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-08-31 07:59+0300\n"
+"PO-Revision-Date: 2025-09-02 11:58+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -656,7 +656,7 @@ msgstr "עליך למצוא את פרפר השנהב"
 #: activities/advanced_colors/advanced_colors.js:287
 msgctxt "advanced_colors|"
 msgid "Find the jade butterfly"
-msgstr "עליך למצוא את פרפר היָרקן (ג'ייד)"
+msgstr "צריך למצוא את פרפר היָרקן (ג'ייד)"
 
 #. Color #B57EDC
 #: activities/advanced_colors/advanced_colors.js:292
@@ -930,7 +930,7 @@ msgstr "מחק לאחור (בקספּייס): למחוק את הספרה האח�
 #: activities/roman_numerals/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer"
-msgstr "Enter: לאשר את התשובה שלך"
+msgstr "‏Enter: לאשר את התשובה שלך"
 
 #: activities/algebra_by/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -1546,8 +1546,8 @@ msgid ""
 "For repairing a broken bulb or LED, click on it after disconnecting it from "
 "the circuit. The simulation is updated in real time by any user action."
 msgstr ""
-"כדי לתקן נורה או לד שבורים, ללחוץ עליהם אחרי שמנתקים אותם מהמעגל. ההדמיה "
-"מתעדכנת בזמן אמת בעקבות כל פעולה של המשתמש/ת."
+"כדי לתקן נורה או נורית חיווי שבורים, יש ללחוץ עליהם אחרי שמנתקים אותם "
+"מהמעגל. ההדמיה מתעדכנת בזמן אמת בעקבות כל פעולה של המשתמש/ת."
 
 #: activities/analog_electricity/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -2090,8 +2090,8 @@ msgid ""
 "Provide audio-visual feedback when using the mouse to help discovering its "
 "usage for young children."
 msgstr ""
-"מספק משוב אודיו-ויזואלי כשמשתמשים בעכבר כדי לעזור לילדים קטנים לגלות את "
-"השימוש בו."
+"מספק משוב שמע-חזותי כשמשתמשים בעכבר כדי לעזור לילדים קטנים לגלות את השימוש "
+"בו."
 
 #. Help prerequisite
 #: activities/baby_mouse/ActivityInfo.qml:21
@@ -2764,7 +2764,7 @@ msgstr ""
 #: activities/binary_bulb/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Binary bulbs"
-msgstr "נורות בינאריות"
+msgstr "נורות בינריות"
 
 #. Help title
 #: activities/binary_bulb/ActivityInfo.qml:17
@@ -2773,14 +2773,14 @@ msgid ""
 "This activity helps you to learn the concept of conversion from decimal "
 "number system to binary number system."
 msgstr ""
-"הפעילות הזו עוזרת לך להבין את הרעיון של המרת מערכת  מספרים עשרונית למערכת "
-"מספרים בינארית."
+"הפעילות הזו עוזרת לך להבין את הרעיון של המרת ממערכת מספרים עשרונית למערכת "
+"מספרים בינרית."
 
 #. Help goal
 #: activities/binary_bulb/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "To get familiar with the binary number system."
-msgstr "הכרות עם מערכת המספרים הבינארית."
+msgstr "היכרות עם מערכת המספרים הבינרית."
 
 #. Help prerequisite
 #: activities/binary_bulb/ActivityInfo.qml:22
@@ -2795,8 +2795,8 @@ msgid ""
 "Turn on the right bulbs to represent the binary of the given decimal number. "
 "When you have achieved it, press OK."
 msgstr ""
-"להפעיל את הנוריות הנכונות כדי לייצג באופן בינארי את המספר העשרוני הנתון. "
-"כשהצלחת, ללחוץ \"אישור\"."
+"להפעיל את הנוריות הנכונות כדי לייצג באופן בינרי את המספר העשרוני הנתון. "
+"כשהצלחת, ללחוץ OK."
 
 #: activities/binary_bulb/BinaryBulb.qml:84
 msgctxt "BinaryBulb|"
@@ -2862,7 +2862,7 @@ msgstr "רישום זה יעזור לך לחשב את ערכם של הביטים
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
-msgstr "מהו הייצוג הבינארי של %1 ?"
+msgstr "מהו הייצוג הבינרי של %1 ?"
 
 #: activities/binary_bulb/resource/tutorial4.qml:31
 msgctxt "tutorial4|"
@@ -3482,7 +3482,7 @@ msgstr ""
 #: activities/canal_lock/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Operate a canal lock"
-msgstr "הפעלת מחסום התעלה"
+msgstr "הפעלת מחסום תעלה"
 
 #. Help title
 #: activities/canal_lock/ActivityInfo.qml:17
@@ -4282,7 +4282,7 @@ msgstr ""
 "    לנסות לדחוק את המלך של היריב לפינה.\n"
 "‏<b>הסבר</b>: כך למלך של היריב יהיו רק 3 משבצות שאליהן הוא יכול לזוז בִמקום 8 "
 "אִילו היה בְמקום אחר.\n"
-"    'לטמון מלכודת': להשתמש ברגלִים (חיילים) כפתיונות.\n"
+"    ‚לטמון מלכודת’: להשתמש ברגלִים (חיילים) כפתיונות.\n"
 "‏<b>הסבר</b>: כך אפשר לפתות את היריב לצאת מאיזור הנוחוּת שלו.\n"
 "    להיות סבלניים מספיק.\n"
 "‏<b>הסבר</b>: לא למהר יותר מדי, סבלנות. עדיף לחשוב קצת ולנסות לצפות את מהלכי "
@@ -4846,7 +4846,7 @@ msgstr "רווח: לבחור פריט"
 #: activities/colors/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: repeat the question"
-msgstr "טאב: לחזור על השאלה"
+msgstr "‏Tab: לחזור על השאלה"
 
 #. Activity title
 #: activities/click_on_letter_up/ActivityInfo.qml:15
@@ -5399,7 +5399,7 @@ msgstr "רווח: מכניס את הסימן שעל הכפתור הנוכחי"
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
-msgstr "Enter: בדיקת התשובות"
+msgstr "‏Enter: בדיקת התשובות"
 
 #: activities/comparator/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -5710,7 +5710,7 @@ msgstr "קתדרלת נוטרדאם הקתדרלה על האִיל דה לה ס�
 #: activities/digital_electricity/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Digital electricity"
-msgstr "חשמל דיגיטאלי"
+msgstr "חשמל דיגיטלי"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
@@ -5729,7 +5729,7 @@ msgstr "יצירה של מעגל דיגיטלי לוגי והדמייתו בזמ
 msgctxt "ActivityInfo|"
 msgid ""
 "Requires some basic understanding of the concept of digital electronics."
-msgstr "נדרשת הבנה בסיסית של הרעיון מאחורי חשמל דיגיטאלי."
+msgstr "נדרשת הבנה בסיסית של הרעיון מאחורי אלקטרוניקה דיגיטלית."
 
 #. Help manual
 #: activities/digital_electricity/ActivityInfo.qml:24
@@ -5845,8 +5845,8 @@ msgid ""
 "display numbers between 0 and 9. The output for a BCD To 7 Segment converter "
 "is:"
 msgstr ""
-"המרה של BCD לבסיס של 7 מקבלת 4 נתונים בינאריים ומפיקה תוצאה של 7 בינאריים "
-"המאפשרים להאיר את מקטע הBCD (עשרוני מקודד לבינארי) כדי להציג מספרים בין 0-9. "
+"המרה של BCD לבסיס של 7 מקבלת 4 נתונים בינריים ומפיקה תוצאה של 7 בינריים "
+"המאפשרים להאיר את מקטע הBCD (עשרוני מקודד לבינארי) כדי להציג מספרים בין 0‏-9. "
 "התוצאה של BCD מומרת לבסיס 7 היא:"
 
 #: activities/digital_electricity/components/Comparator.qml:22
@@ -5867,8 +5867,8 @@ msgid ""
 "A digital light is used to check the output of other digital components. It "
 "turns green if the input is 1, and turns red if the input is 0."
 msgstr ""
-"אור דיגיטאלי משמש לבדיקה של רכיבים דיגיטאלים אחרים. הוא מואר בירוק אם הנתון "
-"שנכנס הוא 1 והופך לאדום אם הנתון שנכנס בו 0."
+"אור דיגיטלי משמש לבדיקה של רכיבים דיגיטליים אחרים. הוא מואר בירוק אם הנתון "
+"שנכנס הוא 1 והופך לאדום אם הנתון שנכנס הוא 0."
 
 #: activities/digital_electricity/components/NandGate.qml:21
 msgctxt "NandGate|"
@@ -5946,7 +5946,7 @@ msgid ""
 msgstr ""
 "תצוגת בסיס 7 מקבלת קלט בינארי. התצוגה בנויה מ־7 חלקים וכל חלק מואר בהתאם "
 "לקלט שלו. באמצעות יצירת צירופים שונים של קלט, התצוגה יכולה לשמש להצגת מספרים "
-"מ0 עד 9 וכמה אותיות (באנגלית). התרשים הוא זה:"
+"מ־0 עד 9 וכמה אותיות (באנגלית). זה התרשים:"
 
 #: activities/digital_electricity/components/SignalGenerator.qml:22
 msgctxt "SignalGenerator|"
@@ -6026,7 +6026,7 @@ msgstr "קלט אחד"
 #: activities/digital_electricity/TutorialDataset.qml:33
 msgctxt "TutorialDataset|"
 msgid "Digital light"
-msgstr "אור דיגיטאלי"
+msgstr "אור דיגיטלי"
 
 #: activities/digital_electricity/TutorialDataset.qml:40
 msgctxt "TutorialDataset|"
@@ -6087,13 +6087,13 @@ msgstr "מונה BCD"
 msgctxt "TutorialDataset|"
 msgid ""
 "The digital light glows when its terminal is connected with an input of 1."
-msgstr "האור הדיגיטאלי נדלק כאשר המוליך שלו מחובר לקלט של 1."
+msgstr "האור הדיגיטלי נדלק כאשר המוליך שלו מחובר לקלט של 1."
 
 #: activities/digital_electricity/TutorialDataset.qml:145
 #: activities/digital_electricity/TutorialDataset.qml:202
 msgctxt "TutorialDataset|"
 msgid "Turn on the digital light using the provided inputs."
-msgstr "להדליק את האור הדיגיטאלי באמצעות הקלטים הניתנים."
+msgstr "להדליק את האור הדיגיטלי באמצעות הקלטים שסופקו."
 
 #: activities/digital_electricity/TutorialDataset.qml:146
 msgctxt "TutorialDataset|"
@@ -6112,7 +6112,7 @@ msgstr "שער ה AND מפיק פלט של 1 כאשר שני מוליכי הקל
 #: activities/digital_electricity/TutorialDataset.qml:160
 msgctxt "TutorialDataset|"
 msgid "Turn on the digital light using an AND gate and the provided inputs."
-msgstr "להדליק את האורות הדיגיטאלים באמצעות שערי AND והקלטים הניתנים."
+msgstr "להדליק את האורות הדיגיטליים באמצעות שערי AND והקלטים שסופקו."
 
 #: activities/digital_electricity/TutorialDataset.qml:173
 msgctxt "TutorialDataset|"
@@ -6125,7 +6125,7 @@ msgstr ""
 #: activities/digital_electricity/TutorialDataset.qml:174
 msgctxt "TutorialDataset|"
 msgid "Turn on the digital light using an OR gate and the provided inputs."
-msgstr "להדליק את האורות הדיגיטאלים באמצעות שערי OR והקלטים הניתנים."
+msgstr "להדליק את האורות הדיגיטליים באמצעות שערי OR והקלטים שסופקו."
 
 #: activities/digital_electricity/TutorialDataset.qml:187
 msgctxt "TutorialDataset|"
@@ -6135,18 +6135,18 @@ msgstr "אפשר לצייר מספר רב של חוטי חשמל מהדק הפל
 #: activities/digital_electricity/TutorialDataset.qml:188
 msgctxt "TutorialDataset|"
 msgid "Turn on the digital light using the provided components."
-msgstr "להדליק את האור הדיגיטאלי באמצעות הרכיבים הנתונים."
+msgstr "להדליק את האור הדיגיטלי באמצעות הרכיבים שסופקו."
 
 #: activities/digital_electricity/TutorialDataset.qml:201
 msgctxt "TutorialDataset|"
 msgid ""
 "The NOT gate takes a single binary input and flips the value in the output."
-msgstr "שער ה NOT (איננו) לוקח קלט בינארי יחיד והופך אותו בפלט."
+msgstr "שער NOT (איננו) לוקח קלט בינרי יחיד והופך את ערך הפלט."
 
 #: activities/digital_electricity/TutorialDataset.qml:215
 msgctxt "TutorialDataset|"
 msgid "The NAND gate takes two binary inputs and produces one binary output."
-msgstr "שער הNAND לוקח שני קלטים בינארים ומפיק אות בינארי אחד בפלט."
+msgstr "שער NAND (לא וגם) לוקח שני קלטים בינריים ומפיק אות בינרי אחד בפלט."
 
 #: activities/digital_electricity/TutorialDataset.qml:216
 msgctxt "TutorialDataset|"
@@ -6212,7 +6212,7 @@ msgstr "להשתמש בגשרים כך שהנורה תדלוק רק כשהמתג
 #: activities/digital_electricity/TutorialDataset.qml:308
 msgctxt "TutorialDataset|"
 msgid "The XOR Gate takes two binary inputs and produces one binary output."
-msgstr "שער הXOR מקבל שני קלטים בינארים ומפיק פלט בינארי אחד."
+msgstr "שער XOR (או בלעדי) מקבל שני קלטים בינריים ומפיק פלט בינרי אחד."
 
 #: activities/digital_electricity/TutorialDataset.qml:309
 msgctxt "TutorialDataset|"
@@ -6250,7 +6250,8 @@ msgid ""
 "A NOR gate takes 2 binary inputs and outputs 1 if both of them are 0, "
 "otherwise produces an output of 0."
 msgstr ""
-"שער NOR מקבל 2 קלטים בינארים ומפיק 1 אם שניהם 0, אחרת הוא מוציא פלט של 0."
+"שער NOR (לא או) מקבל 2 קלטים בינריים ומפיק 1 אם שניהם 0, אחרת הוא מוציא פלט "
+"של 0."
 
 #: activities/digital_electricity/TutorialDataset.qml:356
 msgctxt "TutorialDataset|"
@@ -6660,7 +6661,7 @@ msgstr "להקיש או לטפוף על הלבנים כדי להעלים אות�
 #: activities/explore_farm_animals/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Explore farm animals"
-msgstr "הכרות עם חיות משק"
+msgstr "היכרות עם חיות משק"
 
 #. Help title
 #: activities/explore_farm_animals/ActivityInfo.qml:17
@@ -7036,7 +7037,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board1.qml:66
 msgctxt "board1|"
 msgid "Machu Picchu"
-msgstr "מאצ'ו פּיצ'ו"
+msgstr "מאצ׳ו פּיצ׳ו"
 
 #: activities/explore_monuments/resource/board/board1.qml:64
 msgctxt "board1|"
@@ -7049,11 +7050,12 @@ msgid ""
 "slopes of the Andes, encompasses the upper Amazon basin with its rich "
 "diversity of flora and fauna."
 msgstr ""
-"מאצ'ו פיצ'ו ניצבת 2,430 מטרים מעל גובה פני הים, במרכזו של יער טרופי הררי, "
+"מאצ׳ו פיצ׳ו ניצבת 2,430 מטרים מעל גובה פני הים, במרכזו של יער טרופי הררי, "
 "באתר יפה במיוחד. היא הייתה, ככל הנראה, היצירה העירונית מדהימה ביותר של "
-"איפריית האינקה בתפארתה; הקירות הענקיים שלה, מדרגות האבן וההגבהות הנראות "
-"כאילו נחתכו באופן טבעי מהמצוקים. האתר הטבעי, במדרונות המזרחיים של האנדים, "
-"מאכלסות את אגן הניקוז העליון של האמזונס עם מגוון החי והצומח העשיר שבו."
+"אימפריית האינקה בתקופתה הזוהרת; הקירות הענקיים שלה, מדרגות האבן וההגבהות "
+"הנראות כאילו נחתכו באופן טבעי מהמצוקים. האתר הטבעי, במדרונות המזרחיים של "
+"האנדים, מאכלסות את אגן הניקוז העליון של האמזונס עם מגוון החי והצומח העשיר "
+"שבו."
 
 #: activities/explore_monuments/resource/board/board1.qml:74
 #: activities/explore_monuments/resource/board/board1.qml:77
@@ -7248,10 +7250,9 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board2.qml:98
 msgctxt "board2|"
 msgid "Charminar"
-msgstr "צ'ארמינר"
+msgstr "צ׳אר מינאר"
 
 #: activities/explore_monuments/resource/board/board2.qml:96
-#, fuzzy
 msgctxt "board2|"
 msgid ""
 "The Charminar in Hyderabad was constructed in 1591 by Mohammed Quli Qutab "
@@ -7260,9 +7261,10 @@ msgid ""
 "become synonymous with the monument. The Charminar is a massive and "
 "impressive structure with four minarets."
 msgstr ""
-"הצ'ארמינר בהידראבאד נבנה ב1591 על ידי מוחמד קוּלי קוּטבּ שאה. הוא בנה את "
-"הצארמינר לסמל את סוף המגפה בעיר הידראבאד. מאז הקמת הצ'ארמינר, העיר הידראבאד "
-"הפכה לכמעט נרדפת למונומנט. הצ'ארימר הוא מבנה עצום ומרשים עם ארבעה מינרטים."
+"הצ׳אר מינאר (ארבעה צריחים) בהידראבאד נבנה ב־1591 על ידי מוחמד קוּלי קוּטבּ שאה. "
+"הוא בנה את הצ׳אר מינאר לסימון סוף המגפה בעיר הידראבאד. מאז הקמת הצ׳אר מינר, "
+"העיר הידראבאד הפכה לכמעט שם נרדף לאתר הזה. הצ׳אר מינאר הוא מבנה עצום ומרשים "
+"עם ארבעה מינרטים."
 
 #: activities/explore_monuments/resource/board/board2.qml:106
 #: activities/explore_monuments/resource/board/board2.qml:109
@@ -7348,9 +7350,9 @@ msgid ""
 "water and can only be accessed at low tide."
 msgstr ""
 "מונט-סנט-מישל הוא אי גאות סלעי הממוקם בנורמאנדי, בפיו של נהר הקואֵסון, ליד "
-"העיר אווראנצ'ס. הנקודה הגבוהה ביותר באי היא הכיפה בראש מגדל הפעמונים של "
-"הטירה, 170 מטרים מעל פני הים. כרגע חיים פחות מ50 אנשים על האי. המאפיין "
-"הייחודי של מונט-סנט-מישל הוא שהאי מוקף כולו במים וניתן לגשת אליו רק בזמן שפל."
+"העיר אווראנצ׳ס. הנקודה הגבוהה ביותר באי היא הכיפה בראש מגדל הפעמונים של "
+"הטירה, 170 מטרים מעל פני הים. כרגע חיים פחות מ־50 אנשים על האי. המאפיין "
+"הייחודי של מון סנט מישל הוא שהאי מוקף כולו במים וניתן לגשת אליו רק בזמן שפל."
 
 #: activities/explore_monuments/resource/board/board3.qml:29
 #: activities/explore_monuments/resource/board/board3.qml:32
@@ -7494,7 +7496,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board3.qml:109
 msgctxt "board3|"
 msgid "Château de Chenonceau"
-msgstr "טירת דה צ'נונקו"
+msgstr "טירת שנונסו"
 
 #: activities/explore_monuments/resource/board/board3.qml:107
 msgctxt "board3|"
@@ -7506,9 +7508,9 @@ msgid ""
 "influenced the construction and development of this French Château over the "
 "centuries."
 msgstr ""
-"טירת דה צ'נונקו היא אחת מהטירות הרבות בעמק הלורי המציגה ארכיטקטורה והיסטוריה "
-"משמעותית ומושכת אלפי תיירים מכל רחבי העולם. טירת דה צ'נונקו נקראת לעיתים "
-"'טירת הגבירות' על ידי היסטוריונים בגלל הדמויות הנשיות שהשפיעו רבות על הבניה "
+"טירת שנונסו היא אחת מהטירות הרבות בעמק הלורי המציגה ארכיטקטורה והיסטוריה "
+"משמעותית ומושכת אלפי תיירים מכל רחבי העולם. טירת שנונסו נקראת לעיתים ‚טירת "
+"הגבירות’ על ידי היסטוריונים בגלל הדמויות הנשיות שהשפיעו רבות על הבניה "
 "והפיתוח של הטירה הצרפתית (château) הזו לאורך המאות."
 
 #: activities/explore_monuments/resource/board/board3.qml:117
@@ -7854,7 +7856,7 @@ msgstr ""
 "הכתובות (צאח בּיקין). האנדרטה ממוקמת גבוה על מישור שונטו, משקיפה על קניון "
 "צֵגי, מערבית לקייֵנטה, אריזונה. היא מכילה מרכז מבקרים עם מוזיאון, שני מסלולים "
 "קצרים להדרכה עצמאית במרומי המסה, שני אתרי לינה קטנים ואזור לפיקניק. מבקרים "
-"יכולים להשתתף בסיורים חינמיים של הסיירים (ריינג'רים) במצוק קיטסיל וחורבות "
+"יכולים להשתתף בסיורים חינמיים של הסיירים (ריינג׳רים) במצוק קיטסיל וחורבות "
 "בֵּטאטקין. אתר בית הכתובות נמצא עוד מערבה והוא סגור כרגע לקהל."
 
 #: activities/explore_monuments/resource/board/board5.qml:106
@@ -8364,12 +8366,12 @@ msgctxt "ActivityInfo|"
 msgid ""
 "In the third level, you must select the location that matches the text "
 "description on the screen."
-msgstr "בשלב השלישי עליך לבחור את האזור שמתאים לכיתוב התיאורי שעל המסך."
+msgstr "בשלב השלישי יש לבחור את האזור שמתאים לכיתוב התיאורי שעל המסך."
 
 #: activities/explore_world_music/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Images from https://commons.wikimedia.org/wiki, https://archive.org"
-msgstr "תמונות מתוך https://commons.wikimedia.org/wiki, https://archive.org"
+msgstr "תמונות מתוך https://commons.wikimedia.org/wiki,‏ https://archive.org"
 
 #: activities/explore_world_music/resource/board/board1.qml:20
 #: activities/explore_world_music/resource/board/board1.qml:24
@@ -8384,8 +8386,8 @@ msgid ""
 "instruments, like the didgeridoo. It is made from a log and can be up to "
 "five meters long!"
 msgstr ""
-"האבּוּריג'ינים היו האנשים הראשונים שחיו באוסטרליה. הם שרים ומנגנים בכלים כמו "
-"הדיג'ירידוּ שעשוי מבול עץ ויכול להגיע לאורך של 5 מטרים!"
+"האבּוּריג׳ינים היו האנשים הראשונים שחיו באוסטרליה. הם שרים ומנגנים בכלים כמו "
+"הדיג׳ירידוּ שעשוי מבול עץ ויכול להגיע לאורך של 5 מטרים!"
 
 #: activities/explore_world_music/resource/board/board1.qml:32
 #: activities/explore_world_music/resource/board/board1.qml:36
@@ -8399,7 +8401,7 @@ msgid ""
 "Music is a part of everyday life in Africa. African music features a great "
 "variety of drums, and they believe it is a sacred and magical instrument."
 msgstr ""
-"המוזיקה היא חלק מחיי היום-יום באפריקה. מוזיקה אפריקאית מכילה מגוון גדול של "
+"המוזיקה היא חלק מחיי היום־יום באפריקה. מוזיקה אפריקאית מכילה מגוון גדול של "
 "תופים שנחשבים לכלי נגינה קסום ומקודש."
 
 #: activities/explore_world_music/resource/board/board1.qml:44
@@ -8567,8 +8569,8 @@ msgid ""
 "person in the orange circle.\n"
 msgstr ""
 "מוצג עץ משפחה.\n"
-"המעגלים מחוברים בקווים כדי לסמן יחסים. זוגות נשואאים מסומנים בטבעת על הקשר\n"
-"את/ה האיש/ה במעגל הלבן. לבחור את השם שבו צריך לקרוא לאדם בעיגול הכתום.\n"
+"המעגלים מחוברים בקווים כדי לסמן יחסים. זוגות נשואים מסומנים בטבעות על הקשר.\n"
+"את/ה האיש/ה בעיגול הלבן. יש לבחור את השם שבו צריך לקרוא לאדם בעיגול הכתום.\n"
 
 #: activities/family/Family.qml:251
 msgctxt "Family|"
@@ -8652,7 +8654,7 @@ msgstr "אח"
 #: activities/family/FamilyDataset.qml:304
 msgctxt "FamilyDataset|"
 msgid "Cousin"
-msgstr "בן-דוד / בת-דוד"
+msgstr "בן/בת־דוד/ה"
 
 #: activities/family/FamilyDataset.qml:138
 #: activities/family/FamilyDataset.qml:162
@@ -8984,7 +8986,7 @@ msgstr "למצוא את התאריך חודשיים, שבוע ו־8 ימים ל�
 #: activities/followline/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Control the hose-pipe"
-msgstr "לשלוט בזרנוק מים"
+msgstr "שליטה בזרנוק מים"
 
 #. Help title
 #: activities/followline/ActivityInfo.qml:17
@@ -9449,16 +9451,13 @@ msgstr "מציאת מוֹנֶה וּמְכַנֶּה (עם ריבוע)"
 #: activities/frieze/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Frieze"
-msgstr ""
+msgstr "רצף"
 
 #. Help title
 #: activities/frieze/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Reproduce and complete the frieze."
-msgstr "להעתיק את המגדל."
+msgstr "לייצר מחדש ולהשלים את הרצף."
 
 #. Help goal
 #: activities/frieze/ActivityInfo.qml:19
@@ -9473,6 +9472,8 @@ msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
 "frieze or to reproduce it after you've memorized it."
 msgstr ""
+"יש לייצר מחדש את הרצף העליון. בחלק מהשלבים, צריך להשלים את הרצף או לייצר "
+"אותו מחדש אחרי שינון שלו בעל פה."
 
 #: activities/frieze/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -9480,30 +9481,24 @@ msgid "Left and right arrows: select a token"
 msgstr "חיצים שמאלה וימינה: בחירת אסימון"
 
 #: activities/frieze/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select an item"
 msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
-msgstr "רווח: לבחור "
+msgstr "רווח: לבחור את האסימון הנבחר לרצף"
 
 #: activities/frieze/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace or Delete: undo"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
-msgstr "Backspace או Delete: הסרת האסימון האחרון מה"
+msgstr "‏Backspace או Delete: הסרת האסימון האחרון מהרצף"
 
 #: activities/frieze/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
-msgstr "Enter: אימות התשובה"
+msgstr "‏Enter: אימות התשובה"
 
 #: activities/frieze/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
-msgstr ""
+msgstr "‏Tab: החלפה בין עריכת הרצף להצגת הדגם"
 
 #: activities/frieze/Frieze.qml:287
 msgctxt "Frieze|"
@@ -9513,7 +9508,7 @@ msgstr "אפשר להתחיל"
 #: activities/frieze/resource/1/Data.qml:28
 msgctxt "Data|"
 msgid "Copy this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "להעתיק את הרצף הזה: 2 צורות עם צבעים/סימנים שונים."
 
 #: activities/frieze/resource/1/Data.qml:31
 #: activities/frieze/resource/4/Data.qml:17
@@ -9521,7 +9516,7 @@ msgstr ""
 #: activities/frieze/resource/7/Data.qml:17
 msgctxt "Data|"
 msgid "Copy this frieze."
-msgstr ""
+msgstr "להעתיק את הרצף הזה."
 
 #: activities/frieze/resource/10/Data.qml:14
 msgctxt "Data|"
@@ -9529,6 +9524,7 @@ msgid ""
 "Remember and copy this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"לזכור ולהעתיק את הרצף הזה: כל צירוף של צורות, צבעים/סימנים וגדלים שונים."
 
 #: activities/frieze/resource/10/Data.qml:17
 #: activities/frieze/resource/12/Data.qml:16
@@ -9536,7 +9532,7 @@ msgstr ""
 #: activities/frieze/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Remember and copy this frieze."
-msgstr ""
+msgstr "לזכור ולהעתיק את הרצף הזה."
 
 #: activities/frieze/resource/11/Data.qml:13
 msgctxt "Data|"
@@ -9544,6 +9540,8 @@ msgid ""
 "Copy and complete this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"לזכור ולהשלים את הרצף הזה: תבניות בין 4 ל־7, כל צירוף של צורות, צבעים/סימנים "
+"וגדלים."
 
 #: activities/frieze/resource/11/Data.qml:16
 #: activities/frieze/resource/13/Data.qml:16
@@ -9553,7 +9551,7 @@ msgstr ""
 #: activities/frieze/resource/9/Data.qml:17
 msgctxt "Data|"
 msgid "Copy and complete this frieze."
-msgstr ""
+msgstr "להעתיק ולהשלים את הרצף הזה."
 
 #: activities/frieze/resource/12/Data.qml:13
 msgctxt "Data|"
@@ -9561,6 +9559,8 @@ msgid ""
 "Remember and copy this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"לזכור ולהעתיק את הרצף הזה: תבניות בין 4 ל־7, כל צירוף של צורות, צבעים/סימנים "
+"וגדלים שונים."
 
 #: activities/frieze/resource/13/Data.qml:13
 msgctxt "Data|"
@@ -9568,6 +9568,8 @@ msgid ""
 "Copy and complete this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"לזכור ולהשלים את הרצף הזה: תבניות בין 6 ל־8, כל צירוף של צורות, צבעים/סימנים "
+"וגדלים."
 
 #: activities/frieze/resource/14/Data.qml:13
 msgctxt "Data|"
@@ -9575,21 +9577,23 @@ msgid ""
 "Remember and copy this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"לזכור ולהעתיק את הרצף הזה: תבניות בין 6 ל־8, כל צירוף של צורות, צבעים/סימנים "
+"וגדלים שונים."
 
 #: activities/frieze/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Copy and complete this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "להעתיק ולהשלים את הרצף הזה: 2 צורות עם צבעים/סימנים שונים."
 
 #: activities/frieze/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Remember and copy this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "לזכור ולהעתיק את הרצף הזה: 2 צורות עם צבעים/סימנים שונים."
 
 #: activities/frieze/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: 3 or 4 shapes with different colors/signs."
-msgstr ""
+msgstr "להעתיק את הרצף הזה: 3 או 4 צורות עם צבעים/סימנים שונים."
 
 #: activities/frieze/resource/5/Data.qml:14
 msgctxt "Data|"
@@ -9597,6 +9601,7 @@ msgid ""
 "Copy this frieze: 3 or 4 shapes with 2 sizes and potentially same colors/"
 "signs."
 msgstr ""
+"להעתיק את הרצף הזה: 3 או 4 צורות ב־2 גדלים עם אפשרות לצבעים/סימנים זהים."
 
 #: activities/frieze/resource/6/Data.qml:14
 msgctxt "Data|"
@@ -9604,6 +9609,8 @@ msgid ""
 "Copy and complete this frieze: 3 or 4 shapes with 2 sizes and potentially "
 "same colors/signs."
 msgstr ""
+"להעתיק ולהשלים את הרצף הזה: 3 או 4 צורות ב־2 גדלים עם אפשרות לצבעים/סימנים "
+"זהים."
 
 #: activities/frieze/resource/7/Data.qml:14
 msgctxt "Data|"
@@ -9611,6 +9618,8 @@ msgid ""
 "Copy this frieze: patterns between 12 and 15, any combination of shapes, "
 "colors/signs and sizes."
 msgstr ""
+"לזכור את הרצף הזה: תבניות בין 12 ל־15, כל צירוף של צורות, צבעים/סימנים "
+"וגדלים."
 
 #: activities/frieze/resource/8/Data.qml:14
 msgctxt "Data|"
@@ -9618,6 +9627,8 @@ msgid ""
 "Copy and complete this frieze: patterns between 10 and 12, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
+"לזכור ולהשלים את הרצף הזה: תבניות בין 10 ל־12, כל צירוף של צורות, "
+"צבעים/סימנים וגדלים."
 
 #: activities/frieze/resource/9/Data.qml:14
 msgctxt "Data|"
@@ -9625,6 +9636,8 @@ msgid ""
 "Copy and complete this frieze: patterns between 16 and 20, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
+"לזכור ולהשלים את הרצף הזה: תבניות בין 16 ל־20, כל צירוף של צורות, "
+"צבעים/סימנים וגדלים."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -9848,13 +9861,13 @@ msgstr "אוהיו"
 #: activities/geo-country/resource/board/board10_0.qml:220
 msgctxt "board10_0|"
 msgid "West Virginia"
-msgstr "מערב וורג'יניה"
+msgstr "מערב וירג׳יניה"
 
 #. State of America: Virginia
 #: activities/geo-country/resource/board/board10_0.qml:227
 msgctxt "board10_0|"
 msgid "Virginia"
-msgstr "וורג'יניה"
+msgstr "וירג׳יניה"
 
 #. State of America: North Carolina
 #: activities/geo-country/resource/board/board10_0.qml:234
@@ -9962,7 +9975,7 @@ msgstr "וויומינג"
 #: activities/geo-country/resource/board/board10_0.qml:353
 msgctxt "board10_0|"
 msgid "Massachusetts"
-msgstr "מסצ'וסטס"
+msgstr "מסצ׳וסטס"
 
 #. State of America: Rhode Island
 #: activities/geo-country/resource/board/board10_0.qml:360
@@ -10128,7 +10141,7 @@ msgstr "אוטרקנד"
 #: activities/geo-country/resource/board/board12_0.qml:45
 msgctxt "board12_0|"
 msgid "Rajasthan"
-msgstr "רג'סטאן"
+msgstr "רג׳סטאן"
 
 #. State of India: Uttar Pradesh
 #: activities/geo-country/resource/board/board12_0.qml:52
@@ -10789,7 +10802,7 @@ msgstr "מונטנייה"
 #: activities/geo-country/resource/board/board16_0.qml:38
 msgctxt "board16_0|"
 msgid "Northern Dobruja"
-msgstr "דוברוג'ה הצפונית"
+msgstr "צפון דוברוג׳ה"
 
 #. Historical Region of Romania: Moldavia
 #: activities/geo-country/resource/board/board16_0.qml:45
@@ -11705,7 +11718,7 @@ msgstr "ואן"
 #: activities/geo-country/resource/board/board5_1.qml:31
 msgctxt "board5_1|"
 msgid "Tunceli"
-msgstr "תונצ'לי"
+msgstr "טונג׳לי"
 
 #. Province of Turkey: Trabzon
 #: activities/geo-country/resource/board/board5_1.qml:38
@@ -13579,7 +13592,7 @@ msgstr "להקליד את האותיות הנופלות במקלדת לפני ש
 #: activities/gnumch-equality/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Gnumch equality"
-msgstr "שוויון גנומצ'"
+msgstr "שוויון גנומץ׳"
 
 #. Help title
 #. ----------
@@ -13677,7 +13690,7 @@ msgstr "גורם של  %1"
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Multiple of %1"
-msgstr "מכפלה של  %1"
+msgstr "כפולה של %1"
 
 #: activities/gnumch-equality/TopPanel.qml:59
 #, qt-format
@@ -13735,7 +13748,7 @@ msgstr "זהירות, טרוגל!"
 #: activities/gnumch-factors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Gnumch factors"
-msgstr "גורמי גנומצ'"
+msgstr "גורמי גנומץ׳"
 
 #. Help title
 #: activities/gnumch-factors/ActivityInfo.qml:17
@@ -13822,7 +13835,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Guide the Number Muncher to all the multiples of the number at the bottom of "
 "the screen."
-msgstr "להוביל את זולל המספרים לכל המכפלות של המספר בתחתית המסך."
+msgstr "להוביל את זולל המספרים לכל הכפולות של המספר בתחתית המסך."
 
 # מיכפלות של מספר היא כל המספרים ששווים למספר המקורי כפול מספר אחר. לדוגמא 24, 36, 48 ו60 כולם מיכפלות של 12. 25 אינו מיכפלה של 12 מכיוון שאין שום מספר שלהכפיל אותו ב12 יתן 25. אם מספר אחד הוא המכפיל של מספר שני, אז המספר השני הוא
 #. Help manual
@@ -13855,7 +13868,7 @@ msgstr ""
 #: activities/gnumch-primes/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Gnumch primes"
-msgstr "גנוּמצ' ראשוניים"
+msgstr "גנוּמץ׳ ראשוניים"
 
 #. Help title
 #: activities/gnumch-primes/ActivityInfo.qml:17
@@ -13930,7 +13943,7 @@ msgstr "ספרות: למלא ספרות"
 #: activities/graduated_line_read/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Backspace: delete the last digit"
-msgstr "Backspace: למחוק את הספרה האחרונה"
+msgstr "‏Backspace: למחוק את הספרה האחרונה"
 
 #: activities/graduated_line_read/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14023,7 +14036,7 @@ msgid ""
 "Use the arrows to move the cursor to the position corresponding to the given "
 "value on the graduated line."
 msgstr ""
-"יש להשתמש בחצים כדי להעביר את הסמן למקום שמתאים לערך שסופק בקו המספרים."
+"יש להשתמש בחיצים כדי להעביר את הסמן למקום שמתאים לערך שסופק בקו המספרים."
 
 #: activities/graduated_line_use/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -14428,12 +14441,12 @@ msgstr "מקשי פעולות (+, -, *, /): נא לבחור פעולה"
 #: activities/guess24/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: cancel last operation"
-msgstr "Backspace או Delete: ביטול הפעולה האחרונה"
+msgstr "‏Backspace או Delete: ביטול הפעולה האחרונה"
 
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
-msgstr "טאב: לעבור בין מספרים וסימנים"
+msgstr "‏Tab: לעבור בין מספרים וסימנים"
 
 #: activities/guess24/Guess24.qml:123
 msgctxt "Guess24|"
@@ -14612,7 +14625,7 @@ msgstr "ספרות: להזין מספר"
 #: activities/guessnumber/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
-msgstr "בקספייס (מחיקה אחורה): למחוק מספר"
+msgstr "‏Backspace: למחוק מספר"
 
 #: activities/guessnumber/guessnumber.js:57
 msgctxt "guessnumber|"
@@ -14798,6 +14811,10 @@ msgid ""
 "one disc can be moved at a time, and a disc can never be placed on a smaller "
 "disc."
 msgstr ""
+"יש לגרור טבעת אחת בכל פעם, ממגדל אחד לאחר, כדי לייצר את המגדל מהצד השמאלי על "
+"המוט בצד הימני. אפשר להעביר את הטבעות קדימה ואחורה בחופשיות בין המוטות, כל "
+"עוד מתקיימים שני כללים: אפשר להעביר רק טבעת אחת בכל פעם, ואי אפשר להציב טבעת "
+"על טבעת שקטנה ממנה."
 
 #: activities/hanoi_real/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -14811,17 +14828,17 @@ msgid ""
 "inspired by it. (source Wikipedia: https://en.wikipedia.org/wiki/"
 "Tower_of_hanoi)"
 msgstr ""
-"החידה הומצאה על ידי המתמטיקאי הצרפתי אדוארד לוקאס ב 1883. ישנה אגדה אודות "
-"מקדשים הינדים שהנזירים בהם היו עסוקים תמיד בהזזת אוסף של 64 דיסקיות לפי "
-"החוקים של חידת המגדל של האנוי. לפי האגדה, העולם יגמר כאשר הנזירים יסיימו את "
-"מלאכתם. לכן החידה נקראת גם 'חידת מגדל הבראהמינים'. לא ברור אם לוקאס המציא את "
-"האגדה הזו או הושפע ממנה. (מקור וויקיפדיה : https://he.wikipedia.org/wiki/"
-"%D7%9E%D7%92%D7%93%D7%9C%D7%99_%D7%94%D7%90%D7%A0%D7%95%D7%99 )"
+"החידה הומצאה על ידי המתמטיקאי הצרפתי אדוארד לוקאס ב־1883. ישנה אגדה על "
+"מקדשים הינדיים שהנזירים בהם היו עסוקים תמיד בהזזת אוסף של 64 טבעות לפי "
+"החוקים של חידת המגדל של האנוי. לפי האגדה, העולם ייגמר כאשר הנזירים יסיימו את "
+"מלאכתם. לכן החידה נקראת גם ‚חידת מגדל הבראהמינים’. לא ברור אם לוקאס המציא את "
+"האגדה הזו או הושפע ממנה. (מקור ויקיפדיה : https://he.wikipedia.org/"
+"wiki/מגדלי_האנוי)"
 
 #: activities/hanoi_real/HanoiReal.qml:75
 msgctxt "HanoiReal|"
 msgid "Move the entire stack to the right peg, one disc at a time."
-msgstr "להזיז את כל הערמה אל המוט הימני, חתיכה אחת בכל פעם."
+msgstr "להזיז את כל הערמה אל המוט הימני, טבעת אחת בכל פעם."
 
 #: activities/hanoi_real/HanoiReal.qml:76
 msgctxt "HanoiReal|"
@@ -15139,7 +15156,7 @@ msgstr "להקיש על כלי הנגינה הנכון."
 #: activities/instruments/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Tab: repeat the instrument sound"
-msgstr "טאב: לחזור על הקול של הכלי."
+msgstr "‏Tab: לחזור על הקול של הכלי."
 
 #: activities/instruments/instruments.js:13
 #: activities/instruments/instruments.js:62
@@ -16057,7 +16074,7 @@ msgstr ""
 #: activities/learn_digits/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: say the digit again"
-msgstr "טאב: להגיד את הספרה שוב"
+msgstr "‏Tab: להגיד את הספרה שוב"
 
 #: activities/learn_digits/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -16431,7 +16448,7 @@ msgid ""
 "the lights. If you click on Tux, the solution is shown."
 msgstr ""
 "ההשפעה של לחיצה על חלון היא שינוי המצב של אותו חלון ושל השכנים הקרובים אליו "
-"במאונך ומאוזן. עליך לכבות את כל האורות. אם לוחצים על טאקס, הפתרון מופיע."
+"במאונך ומאוזן. יש לכבות את כל האורות. אם לוחצים על טאקס, הפתרון מופיע."
 
 #: activities/lightsoff/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -16573,8 +16590,8 @@ msgid ""
 "invention of night writing, a code of 12 raised dots to share information on "
 "battlefields."
 msgstr ""
-"צ'ארלס בּרבּיאר, חייל צרפתי, ביקר בבית הספר שלו וחלק את המצאתו לכתיבת לילה, "
-"קוד של 12 נקודות מוגבהות לשיתוף מידע בשדה הקרב."
+"שארל ברבייה, חייל צרפתי, ביקר בבית הספר שלו ושיתף את המצאתו לכתיבת לילה, קוד "
+"של 12 נקודות מוגבהות לשיתוף מידע בשדה הקרב."
 
 #: activities/louis-braille/louis_braille_data.js:42
 msgctxt "louis_braille_data|"
@@ -17968,7 +17985,7 @@ msgstr ""
 #: activities/memory-wordnumber/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Wordnumber memory game"
-msgstr "משחק זיכרון: אותיות-מספר"
+msgstr "משחק זיכרון: אותיות-מספרים"
 
 #. Help title
 #: activities/memory-wordnumber/ActivityInfo.qml:17
@@ -18824,7 +18841,7 @@ msgstr "חיצים שמאלה וימינה: לנווט בתוך אזור"
 #: activities/money_cents/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
-msgstr "טאב: לנווט בין האזור התחתון והעליון"
+msgstr "‏Tab: לנווט בין האזור התחתון והעליון"
 
 #: activities/money/money.js:148
 msgctxt "money|"
@@ -18874,7 +18891,7 @@ msgstr "כמות עד 1000 יחידות."
 #: activities/money_back/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Give Tux his change"
-msgstr "לתת לטאקס את העודף שלו"
+msgstr "להחזיר עודף לטאקס"
 
 #. Help title
 #: activities/money_back/ActivityInfo.qml:17
@@ -18899,7 +18916,7 @@ msgstr ""
 #: activities/money_back_cents/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Give Tux his change, including cents"
-msgstr "לתת לטאקס את העודף שלו, כולל אגורות"
+msgstr "להחזיר עודף לטאקס, כולל אגורות"
 
 #. Help goal
 #: activities/money_back_cents/ActivityInfo.qml:20
@@ -18980,8 +18997,8 @@ msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
-"קוד מוֹרְס, אשר פותח ע\"י סמיואל מורס (Samuel Morse), הוא שיטה לשלוח אותיות "
-"ומילים כסדרה של איתותי \"דולק/כבוי\" באורות או בנקישות."
+"קוד מוֹרְס, אשר פותח ע״י סמיואל מורס (Samuel Morse), הוא שיטה לשלוח אותיות "
+"ומילים כסדרה של איתותי „דולק/כבוי” באורות או בנקישות."
 
 # didn't translate the term "prosigns"
 #: activities/morse_code/FirstScreen.qml:66
@@ -18998,7 +19015,7 @@ msgstr ""
 "רוב סימני מורס מייצגים אותיות או מספרים. כל סימן מורס מורכב מסדרה ייחודית של "
 "נקודות וקווים. אורך השידור של קו ארוך פי שלוש מאורך השידור של נקודה. כדי "
 "לאפשר תקשורת מהירה, לאותיות הנפוצות ביותר הוקצו הסימנים הקצרים יותר. למשל, "
-"האות הנפוצה ביותר באנגלית, E, מיוצגת ע\"י הקוד הקצר ביותר, נקודה אחת."
+"האות הנפוצה ביותר באנגלית, E, מיוצגת ע״י הקוד הקצר ביותר, נקודה אחת."
 
 #: activities/morse_code/FirstScreen.qml:87
 msgctxt "FirstScreen|"
@@ -19088,7 +19105,7 @@ msgstr "תרגמו את ההודעה למילה."
 #: activities/mosaic/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Rebuild the mosaic"
-msgstr "העתיקו את הפסיפס"
+msgstr "העתקת פסיפס"
 
 #. Help title
 #: activities/mosaic/ActivityInfo.qml:17
@@ -19123,7 +19140,7 @@ msgstr "רווח או Enter: לבחור או למקם פריט"
 #: activities/mosaic/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the item list and the mosaic"
-msgstr "טאב: לנווט בין רשימת הפריטים וההרכבה"
+msgstr "‏Tab: לנווט בין רשימת הפריטים וההרכבה"
 
 #: activities/mosaic/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -19282,6 +19299,10 @@ msgid ""
 "fly to any vacant spot. A player wins when the other player can't move any "
 "piece or has only 2 pieces left."
 msgstr ""
+"לשחק עם חבר/ה. קודם לשחק בתורות כדי להציב תשע חתיכות, לאחר מכן לשחק בתורות "
+"כדי להזיז את החלקים שלך. אם נותרו לך רק 3 חלקים, אפשר להעיף אותם לכל מקום "
+"פנוי. שחקן או שחקנים יכולים לנצח כשהיריב או היריבה שלהם לא יכולים להעביר או "
+"שנותרו להם רק 2 חלקים."
 
 #. Activity title
 #: activities/note_names/ActivityInfo.qml:18
@@ -19843,7 +19864,7 @@ msgstr ""
 "יאיר|אוהב|פרחים\n"
 "המשפט|מסודר|ממש|נהדר\n"
 "איתן|צייר|לאבא|עפיפון|בשמיים\n"
-"בתחרות|הנקיון|זכתה|כיתה|ג'\n"
+"בתחרות|הניקיון|זכתה|כיתה|ג׳\n"
 "סבא|של|אלון|אוהב|לשיר."
 
 #: activities/ordering_sentences/resource/2/Data.qml:13
@@ -20000,7 +20021,7 @@ msgstr "לשחק את משחק האסטרטגיה אוֹוַּרֵה עם חבר
 #: activities/paintings/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Assemble the puzzle"
-msgstr "נא לחבר את הפאזל"
+msgstr "הרכבת פאזל"
 
 #. Help title
 #: activities/paintings/ActivityInfo.qml:22
@@ -20115,7 +20136,7 @@ msgstr "קָצוּשִיקָה הוֹקוּסַאי, אישה מחזיקה במ�
 #: activities/paintings/resource/board/board6_0.qml:14
 msgctxt "board6_0|"
 msgid "Katsushika Hokusai, Ejiri in Suruga Province - 1830-1833"
-msgstr "קָצוּשִיקָה הוֹקוּסַאי, אג'ירי במחוז סורוגה - 1830-1833"
+msgstr "קָצוּשִיקָה הוֹקוּסַאי, אג׳ירי במחוז סורוגה - 1830-1833"
 
 #: activities/paintings/resource/board/board7_0.qml:14
 msgctxt "board7_0|"
@@ -20373,7 +20394,7 @@ msgstr ""
 #: activities/piano_composition/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Familiarity with note naming conventions."
-msgstr "הכרות עם שמות מוסכמים לתווים."
+msgstr "היכרות עם שמות מוסכמים לתווים."
 
 #. Help manual
 #: activities/piano_composition/ActivityInfo.qml:25
@@ -20454,7 +20475,7 @@ msgstr "חיצים שמאלה וימינה: לשנות את האוקטבה של 
 #: activities/piano_composition/ActivityInfo.qml:38
 msgctxt "ActivityInfo|"
 msgid "Backspace: undo"
-msgstr "בקספייס (מחיקה אחורה): לבטל פעולה אחרונה"
+msgstr "‏Backspace: לבטל פעולה אחרונה"
 
 #: activities/piano_composition/ActivityInfo.qml:39
 msgctxt "ActivityInfo|"
@@ -21102,7 +21123,7 @@ msgstr ""
 #: activities/play_piano/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
-msgstr "בקספייס (מחיקה אחורה) או דליט: לבטל פעולה אחרונה"
+msgstr "‏Backspace או Delete: לבטל פעולה אחרונה"
 
 #: activities/play_piano/PlayPiano.qml:189
 msgctxt "PlayPiano|"
@@ -21196,7 +21217,7 @@ msgstr "רווח: להקיש על התוף"
 #: activities/play_rhythm/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Enter or Return: replay the rhythm"
-msgstr "Enter: לנגן את הקצב שוב"
+msgstr "‏Enter: לנגן את הקצב שוב"
 
 #: activities/play_rhythm/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
@@ -21206,7 +21227,7 @@ msgstr "למטה ולמעלה: להגביר או להאט את הקצב"
 #: activities/play_rhythm/ActivityInfo.qml:36
 msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
-msgstr "טאב: להתחיל או להפסיק את המטרונות אם הוא מופיע"
+msgstr "‏Tab: להתחיל או להפסיק את המטרונות אם הוא מופיע"
 
 #: activities/play_rhythm/PlayRhythm.qml:121
 msgctxt "PlayRhythm|"
@@ -21441,8 +21462,7 @@ msgstr ""
 #: activities/programmingMaze/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between instructions area and main/procedure/loop area"
-msgstr ""
-"טאב (Tab): כדי לעבור בין אזור ההוראות ואזור הקוד המרכזי/התהליכים/הלולאה"
+msgstr "‏Tab: כדי לעבור בין אזור ההוראות ואזור הקוד המרכזי/התהליכים/הלולאה"
 
 #: activities/programmingMaze/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -21452,7 +21472,7 @@ msgstr "דליט (Delete): מוחק את הפקודת הנבחרת באזור ה
 #: activities/programmingMaze/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Enter: run the code or reset Tux when it fails to reach the fish"
-msgstr "Enter: מריץ את הקוד או מחזיר את טאקס כשהוא נכשל להגיע לדג"
+msgstr "‏Enter: מריץ את הקוד או מחזיר את טאקס כשהוא נכשל להגיע לדג"
 
 #: activities/programmingMaze/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
@@ -21674,7 +21694,7 @@ msgstr "דליט (מחיקה) או בקספייס: למחוק את הפריט ה
 #: activities/railroad/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
-msgstr "Enter: להגיש את התשובה"
+msgstr "‏Enter: להגיש את התשובה"
 
 #: activities/railroad/Railroad.qml:126
 msgctxt "Railroad|"
@@ -21766,7 +21786,7 @@ msgstr ""
 #: activities/redraw/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Redraw the given image"
-msgstr "לצייר מחדש את הציור הנתון"
+msgstr "לצייר ציור נתון מחדש"
 
 #. Help title
 #: activities/redraw/ActivityInfo.qml:17
@@ -21843,7 +21863,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to identify a location in a grid and to reproduce a model "
 "symmetrically."
-msgstr ""
+msgstr "למידה איך לזהות מקום ברשת ולשחזר דגם באופן סימטרי."
 
 #: activities/redraw_symmetrical/resource/1/Data.qml:16
 msgctxt "Data|"
@@ -22200,7 +22220,7 @@ msgstr "ערך ערבי: %1"
 #: activities/scalesboard/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Balance the scales properly"
-msgstr "עליכם לאזן את המאזניים"
+msgstr "לאזן את המאזניים"
 
 #. Help title
 #: activities/scalesboard/ActivityInfo.qml:17
@@ -22438,9 +22458,9 @@ msgid ""
 "higher levels). They can be arranged in any order. Take care of the weight "
 "and the unit of the masses, remember that a kilogram (kg) is 1000 grams (g)."
 msgstr ""
-"כדי לאזן את המאזניים, להזיז את המאסות לצד השמאלי או הימני (בשלבים מתקדמים "
-"יותר). אפשר לסדר אותן בכל סדר. לשים לב למשקל וליחידות של המאסה, לזכור "
-"שקילוגרם (ק\"ג) הוא 1000 גרם (ג')."
+"כדי לאזן את המאזניים, יש להזיז את המסות לצד השמאלי או הימני (בשלבים מתקדמים "
+"יותר). אפשר לסדר אותן בכל סדר. לשים לב למשקל וליחידות של המסה, לזכור "
+"שקילוגרם (ק״ג) הוא 1000 גרם (ג׳)."
 
 #: activities/scalesboard_weight/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -22460,7 +22480,7 @@ msgstr "%1 ג׳"
 #: activities/scalesboard_weight/resource/1/Data.qml:26
 msgctxt "Data|"
 msgid "The \"g\" symbol at the end of a number means gram."
-msgstr "סימן \"ג'\" בסוף המספר מסמן גרם."
+msgstr "הסימן „ג׳” בסוף המספר מסמן גרם."
 
 #: activities/scalesboard_weight/resource/1/Data.qml:32
 msgctxt "Data|"
@@ -22486,7 +22506,7 @@ msgid ""
 "The \"g\" symbol at the end of a number means gram. \n"
 " Drop weights on the left side to balance the scales."
 msgstr ""
-"סימן ה\"ג'\" בסוף המספר מסמן גרם. קילוגרם אחד שווה ל־1000, גרם. להניח "
+"הסימן „ג׳” בסוף המספר מסמן גרם. קילוגרם אחד שווה ל־1000, גרם. אפשר להניח "
 "משקולות בצד השמאלי כדי לאזן את המאזניים."
 
 #: activities/scalesboard_weight/resource/2/Data.qml:45
@@ -22529,7 +22549,7 @@ msgstr "%1 ק״ג"
 #: activities/scalesboard_weight/resource/4/Data.qml:30
 msgctxt "Data|"
 msgid "The \"kg\" symbol at the end of a number means kilogram."
-msgstr "סימן 'ק\"ג' אחרי המספר מסמן קילוגרם."
+msgstr "הסימן „ק״ג” אחרי המספר מסמן קילוגרם."
 
 #: activities/scalesboard_weight/resource/4/Data.qml:31
 msgctxt "Data|"
@@ -22570,9 +22590,9 @@ msgid ""
 "\"heavy\" an object is. \n"
 " Drop weights on the left side to balance the scales."
 msgstr ""
-"סימן 'ק\"ג' אחרי המספר מסמן קילוגרם. קילוגרם היא מידה של מאסה, זו היא "
-"התייחסות לתפיסה הרווחת של כמה \"כבד\" חפץ. להניח משקולות בצד השמאלי כדי לאזן "
-"את המאזניים."
+"הסימן „ק״ג” אחרי המספר מסמן קילוגרם. קילוגרם היא מידה של מסה, זו היא "
+"התייחסות לתפיסה הרווחת של כמה „כבד” חפץ. יש להניח משקולות בצד השמאלי כדי "
+"לאזן את המאזניים."
 
 #: activities/scalesboard_weight/resource/6/Data.qml:44
 #: activities/scalesboard_weight/resource/6/Data.qml:50
@@ -22580,7 +22600,7 @@ msgctxt "Data|"
 msgid ""
 "Remember, one kilogram (\"kg\") equals 1000 grams (\"g\"). \n"
 " Drop weights on the left side to balance the scales."
-msgstr "לזכור, קילוגרם אחד (ק\"ג) שווה ל־1000 גרמים (ג')."
+msgstr "חשוב לזכור, קילוגרם אחד (ק״ג) שווה ל־1000 גרמים (ג׳)."
 
 #. Activity title
 #: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:15
@@ -23208,16 +23228,16 @@ msgstr[2] "ן־%n בנות במרכז"
 msgstr[3] "ו־%n בנות במרכז. "
 
 #: activities/share/share.js:123
-#, fuzzy, qt-format
+#, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
 "%n pieces of candy equally between them."
 msgid "Then split %n pieces of candy equally between them."
 msgid_plural "Then split %n pieces of candy equally between them."
-msgstr[0] "אז לחלק %n חתיכות של סוכריה ביניהם באופן שווה."
-msgstr[1] "אז לחלק %n חתיכות של סוכריות ביניהם."
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "ואז לחלק %n חתיכות של ממתק ביניהם באופן שווה."
+msgstr[1] "ואז לחלק %n חתיכות של ממתק ביניהם באופן שווה."
+msgstr[2] "ואז לחלק %n חתיכות של ממתק ביניהם באופן שווה."
+msgstr[3] "ואז לחלק %n חתיכות של ממתק ביניהם באופן שווה."
 
 #: activities/share/Share.qml:359
 #, qt-format
@@ -23253,7 +23273,7 @@ msgstr "נא לבחור צבע ולצייר ריבוע לטעמך כדי ליצ�
 #: activities/simplepaint/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
-msgstr "טאב: להחליף בין בוחר הצבעים ואזור הצביעה"
+msgstr "‏Tab: להחליף בין בורר הצבעים ואזור הצביעה"
 
 #: activities/sketch/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
@@ -23299,7 +23319,7 @@ msgstr "Ctrl + O: פתיחת תמונה"
 #: activities/sketch/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + N, Delete or Backspace: create a new image"
-msgstr "Ctrl + N,‏ Delete או Backspace: יצירת תמונה חדשה"
+msgstr "‏Ctrl + N,‏ Delete או Backspace: יצירת תמונה חדשה"
 
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -23307,10 +23327,9 @@ msgid "Brush smoothing concept from:"
 msgstr "רעיון החלקת המברשת מתוך:"
 
 #: activities/sketch/ActivityInfo.qml:30
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Sketch brush concept from:"
-msgstr "מברשת איור "
+msgstr "הרעיונות למברשות האיור באדיבות:"
 
 #: activities/sketch/BackgroundColorSelector.qml:40
 msgctxt "BackgroundColorSelector|"
@@ -23759,7 +23778,7 @@ msgstr "אסקייפ (Esc): לחזור למסך הקודם"
 #: activities/solar_system/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Tab: view the hint (only when the hint icon is visible)"
-msgstr "טאב: לצפות ברמז (רק כאשר סמל הרמז מוצג)"
+msgstr "‏Tab: לצפות ברמז (רק כאשר סמל הרמז מוצג)"
 
 #: activities/solar_system/Dataset.js:14
 msgctxt "Dataset|"
@@ -23883,7 +23902,7 @@ msgstr "השמש גדולה כמו:"
 #: activities/solar_system/Dataset.js:43
 msgctxt "Dataset|"
 msgid "1 million Earths"
-msgstr "מליון כדורי-ארץ"
+msgstr "מליון כדורי ארץ"
 
 #: activities/solar_system/Dataset.js:43
 msgctxt "Dataset|"
@@ -23898,7 +23917,7 @@ msgstr "1.3 מליון כדורי ארץ"
 #: activities/solar_system/Dataset.js:43
 msgctxt "Dataset|"
 msgid "5 million Earths"
-msgstr "5 מליון כדורי-ארץ"
+msgstr "5 מליון כדורי ארץ"
 
 #: activities/solar_system/Dataset.js:51
 msgctxt "Dataset|"
@@ -24021,12 +24040,12 @@ msgstr "כמה זמן נמשכת שנה אחת בכוכב חמה?"
 #: activities/solar_system/Dataset.js:235
 msgctxt "Dataset|"
 msgid "365 Earth days"
-msgstr "365 ימי כדור-ארץ"
+msgstr "365 ימים של כדור הארץ"
 
 #: activities/solar_system/Dataset.js:82
 msgctxt "Dataset|"
 msgid "433 Earth days"
-msgstr "433 ימי ארץ"
+msgstr "433 ימים של כדור הארץ"
 
 #: activities/solar_system/Dataset.js:82 activities/solar_system/Dataset.js:127
 msgctxt "Dataset|"
@@ -24082,22 +24101,22 @@ msgstr "נֹגה כבד כמו:"
 #: activities/solar_system/Dataset.js:109
 msgctxt "Dataset|"
 msgid "0.7 Earths"
-msgstr "0.7 כדור-הארץ"
+msgstr "0.7 כדור ארץ"
 
 #: activities/solar_system/Dataset.js:109
 msgctxt "Dataset|"
 msgid "0.8 Earths"
-msgstr "0.8 כדור-הארץ"
+msgstr "0.8 כדור ארץ"
 
 #: activities/solar_system/Dataset.js:109
 msgctxt "Dataset|"
 msgid "1.3 Earths"
-msgstr "1.3 כדור-הארץ"
+msgstr "1.3 כדורי ארץ"
 
 #: activities/solar_system/Dataset.js:109
 msgctxt "Dataset|"
 msgid "2.5 Earths"
-msgstr "2.5 כדור-הארץ"
+msgstr "2.5 כדורי ארץ"
 
 #: activities/solar_system/Dataset.js:114
 msgctxt "Dataset|"
@@ -24127,7 +24146,7 @@ msgstr "מה אורכה של שנה בנֹגה?"
 #: activities/solar_system/Dataset.js:121
 msgctxt "Dataset|"
 msgid "225 Earth days"
-msgstr "225 ימי כדור-ארץ"
+msgstr "225 ימים של כדור הארץ"
 
 #: activities/solar_system/Dataset.js:121
 msgctxt "Dataset|"
@@ -24137,7 +24156,7 @@ msgstr "116 ימים של כדור הארץ"
 #: activities/solar_system/Dataset.js:121
 msgctxt "Dataset|"
 msgid "100 Earth days"
-msgstr "107 ימי ארץ"
+msgstr "100 ימים של כדור הארץ"
 
 #: activities/solar_system/Dataset.js:126
 msgctxt "Dataset|"
@@ -24147,7 +24166,7 @@ msgstr "כמה זמן נמשך סיבוב אחד של נֹגה?"
 #: activities/solar_system/Dataset.js:127
 msgctxt "Dataset|"
 msgid "243 Earth days"
-msgstr "243 ימי כדור-ארץ"
+msgstr "243 ימים של כדור הארץ"
 
 #: activities/solar_system/Dataset.js:132
 msgctxt "Dataset|"
@@ -24383,12 +24402,12 @@ msgstr "687 ימים של כדור הארץ"
 #: activities/solar_system/Dataset.js:235
 msgctxt "Dataset|"
 msgid "30 Earth days"
-msgstr "30 ימי כדור-ארץ"
+msgstr "30 ימים של כדור הארץ"
 
 #: activities/solar_system/Dataset.js:235
 msgctxt "Dataset|"
 msgid "7 Earth days"
-msgstr "7 ימי ארץ"
+msgstr "7 ימים של כדור הארץ"
 
 #: activities/solar_system/Dataset.js:240
 msgctxt "Dataset|"
@@ -24653,7 +24672,7 @@ msgstr "נֶפּטון (רַהַב)"
 #: activities/solar_system/Dataset.js:386
 msgctxt "Dataset|"
 msgid "The maximum temperature on Saturn is -178 °C."
-msgstr "הטמפרטורה המקסימאלית בשבתאי היא -178 °C."
+msgstr "הטמפרטורה המרבית בשבתאי היא ‎-178 °C."
 
 #: activities/solar_system/Dataset.js:387
 msgctxt "Dataset|"
@@ -24741,8 +24760,8 @@ msgid ""
 "your skills again or train in normal mode to learn more about the Solar "
 "System."
 msgstr ""
-"עליך להשיג ציון גבוה מ90% כדי להפוך למומחה במערכת השמש!<br>לנסות לבחון שוב "
-"את היכולות או להתאמן במצב רגיל כדי ללמוד עוד על מערכת השמש."
+"יש להשיג ציון גבוה מ־90% כדי להביע מומחיות במערכת השמש!<br>כדאי לנסות לבחון "
+"שוב את היכולות או להתאמן במצב רגיל כדי ללמוד עוד על מערכת השמש."
 
 #: activities/solar_system/QuizScreen.qml:274
 msgctxt "QuizScreen|"
@@ -25194,12 +25213,12 @@ msgstr ""
 "ללחוץ על הפריטים עד שמתגלה התשובה הנכונה לדעתך. אז ללחוץ על כפתור OK. נקודה "
 "שחורה אומרת שמצאת את הפריט הנכון במקום הנכון, ואילו נקודה לבנה אומרת שמצאת "
 "את הפריט הנכון במקום שגוי. בשלבים הנמוכים, טוקס נותן מסמן בריבוע שחור פריט "
-"נכון שנמצא במקום נכון, ומסמן בריבוע לבן פריט נכון במקום שגוי. בשלבים 4 ו 8 "
+"נכון שנמצא במקום נכון, ומסמן בריבוע לבן פריט נכון במקום שגוי. בשלבים 4 ו־8 "
 "פריט עשוי להתחבא מספר פעמים.<br/>אפשר להשתמש בכפתור העכבר הימני כדי להפוך "
 "פריט בסדר ההפוך או בבוחר הפריטים כדי לבחור פריט ישירות. ללחוץ ולהחזיק את "
 "כפתור העכבר או במסך מגע כדי לבחור אוטומטית את הפריט האחרון שנבחר בעמודה. "
 "לחיצה כפולה או להקיש על הפריט הקודם שנבחר בהיסטורית הניחושים שלך כדי לסמן "
-"אותו כ'נכון'. פריטים שסומנו כנכונים נבחרים באופן אוטומטי בניחוש הנוכחי "
+"אותו כ‚נכון’. פריטים שסומנו כנכונים נבחרים באופן אוטומטי בניחוש הנוכחי "
 "ובניחושים עתידיים שלך עד שמסירים את הסימון שלהם, שוב, באמצעות הקשה כפולה או "
 "לחיצה."
 
@@ -25235,28 +25254,21 @@ msgstr "פיתוח מיומנויות ראייה מרחבית, זיכרון חז
 
 #. Help manual
 #: activities/tangram/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Move a piece by dragging it. The symmetrical button appears on items that "
-#| "supports it. Click on the rotation button or drag around it to rotate "
-#| "selected piece. Check the activity 'Baby Puzzle' for a simpler "
-#| "introduction to tangram."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move a piece by dragging it. The symmetrical button appears on items that "
 "support it. Drag the rotation button or around selected piece to rotate it. "
 "Check the activity 'Baby Puzzle' for a simpler introduction to tangram."
 msgstr ""
-"להזיז את החתיכות ע\"י גרירה שלהן. כפתור הסימטריה מופיע על פריטים שמאפשרים "
-"זאת. ללחוץ על כפתור הסיבוב או לגרור מסביב לחלק כדי לסובב אותו. אפשר לבדוק את "
-"'הרכבות לקטנטנים' להכרות פשוטה יותר עם טנגראם."
+"אפשר להזיז את החלקים ע״י גרירה שלהם. כפתור הסימטריה מופיע על פריטים שמאפשרים "
+"זאת. לחיצה על כפתור הסיבוב או גרירה מסביב לחלק תסובב אותו. אפשר לבחון את "
+"‚הרכבות לקטנטנים’ להיכרות פשוטה יותר עם טנגראם."
 
 #. Activity title
 #: activities/target/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Practice addition with a target game"
-msgstr "תרגל חיבור בעזרת משחק קליעה למטרה"
+msgstr "תרגול חיבור בקליעה למטרה"
 
 #. Help title
 #: activities/target/ActivityInfo.qml:17
@@ -25438,7 +25450,7 @@ msgstr "למצוא את שני המספרים."
 #: activities/tens_complement_swap/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Swap ten's complement"
-msgstr "משלים ל־10 ע\"י החלפות"
+msgstr "משלים ל־10 ע״י החלפות"
 
 #. Help title
 #: activities/tens_complement_swap/ActivityInfo.qml:16
