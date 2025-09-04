@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-09-02 11:58+0300\n"
+"PO-Revision-Date: 2025-09-02 15:12+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -2565,8 +2565,8 @@ msgid ""
 "To return to the activity settings click on the home-button on the bar or "
 "press Escape on your keyboard or the back button on your mobile device."
 msgstr ""
-"כדי לחזור להגדרות הפעילות ללחוץ על כפתור הבית על הלוח או 'אסקייפ' (Esc) "
-"במקלדת או 'אחורה' בנייד."
+"כדי לחזור להגדרות הפעילות ללחוץ על כפתור הבית על הלוח או ‚אסקייפ’ (Esc) "
+"במקלדת או ‚אחורה’ בנייד."
 
 #: activities/balancebox/ActivityInfo.qml:44
 msgctxt "ActivityInfo|"
@@ -5647,7 +5647,7 @@ msgstr "נאגויה טירה, פריפקטורה של איצ 'י, יפן."
 #: activities/details/resource/board/board19_0.qml:14
 msgctxt "board19_0|"
 msgid "Taj Mahal, Agra, India"
-msgstr "טאג' מהל, אגרה, הודו"
+msgstr "טאג׳ מהאל, אגרה, הודו"
 
 #: activities/details/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
@@ -7012,8 +7012,8 @@ msgid ""
 "Brazil. A symbol of Christianity across the world, the statue has also "
 "become a cultural icon of both Rio de Janeiro and Brazil."
 msgstr ""
-"ישוע הגואל הוא פסל ארט-דקו של ישוע בריוֹ דה ז'נרו, ברזיל. הוא סמל של הנצרות "
-"ברחבי העולם, הפסל הפך גם לסמל תרבותי של ריו דה ז'נרו וברזיל."
+"ישוע הגואל הוא פסל ארט־דקו של ישוע בריוֹ דה ז׳ניירו, ברזיל. הוא סמל של הנצרות "
+"ברחבי העולם, הפסל הפך גם לסמל תרבותי של ריו דה ז׳ניירו וברזיל."
 
 #: activities/explore_monuments/resource/board/board1.qml:52
 #: activities/explore_monuments/resource/board/board1.qml:55
@@ -7080,7 +7080,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board1.qml:85
 msgctxt "board1|"
 msgid "Taj Mahal, India"
-msgstr "טאג' מאהל, הודו"
+msgstr "טאג׳ מהאל, הודו"
 
 #: activities/explore_monuments/resource/board/board1.qml:86
 msgctxt "board1|"
@@ -7090,14 +7090,14 @@ msgid ""
 "the Mughal emperor Shah Jahan reigned to house the tomb of his favorite wife "
 "of three, Mumtaz Mahal."
 msgstr ""
-"הטאג' מאהל הוא מבנה קבר (מוֹזלאוּם) משיש שנמצא על הגדה הדרומית של נהר יאמוּנה "
-"בעיר ההודית אגרה. הוא הוקם ב1632 על-ידי שליט מוּאהל שח ג'הן לזכרה של אישתו "
-"האהובה משלוש, מומטז מאהל."
+"הטאג׳ מהאל הוא מבנה קבר (מָאוּזוֹלֵאוֹם) משיש שנמצא על הגדה הדרומית של נהר יאמוּנה "
+"בעיר ההודית אגרה. הוא הוקם ב־1632 על־ידי הקיסר המוגולי שאה ג׳האן לזכרה של "
+"אשתו האהובה מבין השלוש, מומתאז מהאל."
 
 #: activities/explore_monuments/resource/board/board1.qml:88
 msgctxt "board1|"
 msgid "Taj Mahal"
-msgstr "טאג' מאהל"
+msgstr "טאג׳ מהאל"
 
 #: activities/explore_monuments/resource/board/board1.qml:98
 msgctxt "board1|"
@@ -7142,9 +7142,9 @@ msgid ""
 "and pink sandstone, the palace sits on the edge of the City Palace, and "
 "extends to the zenana, or women's chambers."
 msgstr ""
-"האוּה מאהל הוא ארמון בג'ייפור, הודו, הנקרא כך כיון שהיה למעשה קיר מסך גבוה "
+"האוּה מהאל הוא ארמון בג׳ייפור, הודו, הנקרא כך כיון שהיה למעשה קיר מסך גבוה "
 "המאפשר לנשים ממשפחות אצולה לצפות בהופעות רחוב בלי להראות מבחוץ. נבנה מאבן "
-"חול אדומה וורודה, ארמון זה נמצא בקצהו של ארמון העיר, ונמשך עד הזֵנָנה או אגף "
+"חול אדומה ורודה, ארמון זה נמצא בקצהו של ארמון העיר, ונמשך עד הזֵנָנה או אגף "
 "הנשים."
 
 #: activities/explore_monuments/resource/board/board2.qml:40
@@ -7471,8 +7471,8 @@ msgid ""
 msgstr ""
 "כאשר מגיעים בכביש מקהורס, רוסאמאדור מופיעה לפתע, נאחזת בצורה מסוכנת בצוק מעל "
 "קניון אלזו. אחד הכפרים המפורסמים באירופה, רוסאמאדור לכאורה מפירה את חוקי "
-"המשיכה. ניתן לסכם על מצודת האמונה המסחררת באמצעות הפתגם הישן: \"בתים על "
-"הנהר, כנסיות על הבתים, סלעים על הכנסיות, מצודה על הסלעים\"."
+"המשיכה. ניתן לסכם על מצודת האמונה המסחררת באמצעות הפתגם הישן: „בתים על הנהר, "
+"כנסיות על הבתים, סלעים על הכנסיות, מצודה על הסלעים”."
 
 #: activities/explore_monuments/resource/board/board3.qml:95
 #: activities/explore_monuments/resource/board/board3.qml:98
@@ -7768,7 +7768,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board5.qml:65
 msgctxt "board5|"
 msgid "George Washington Birthplace"
-msgstr "מקום הולדתו של ג'ורג' וושינגטון"
+msgstr "מקום הולדתו של ג׳ורג׳ וושינגטון"
 
 #: activities/explore_monuments/resource/board/board5.qml:63
 msgctxt "board5|"
@@ -7779,10 +7779,10 @@ msgid ""
 "February 22, 1732. He lived here until age three, returning later as a "
 "teenager."
 msgstr ""
-"האתר הלאומי של מקום הולדתו של ג'ורג' וושינגטון שוכן במחוז ווסטמורלנד, "
-"ווירג'יניה, ארצות הברית. יושב בראשונה על ידי ג'ון וושינגטון, סבא-רבא של "
-"ג'ורג' וושינגטון. ג'ורג' וושינגטון נולד כאן ב22 בפברואר, 1732. הוא חי כאן עד "
-"גיל 3 וחזר מאוחר יותר כנער."
+"האתר הלאומי של מקום הולדתו של ג׳ורג׳ וושינגטון שוכן במחוז ווסטמורלנד, "
+"ווירג׳יניה, ארצות הברית. יושב בראשונה על ידי ג׳ון וושינגטון, סבא־רבא של "
+"ג׳ורג׳ וושינגטון. ג׳ורג׳ וושינגטון נולד כאן ב־22 בפברואר, 1732. הוא חי כאן "
+"עד גיל 3 וחזר מאוחר יותר כנער."
 
 #: activities/explore_monuments/resource/board/board5.qml:73
 #: activities/explore_monuments/resource/board/board5.qml:76
@@ -7824,7 +7824,7 @@ msgid ""
 "exalted American presidents that symbolize this nation's rich history, "
 "rugged determination and lasting achievements."
 msgstr ""
-"הר רשמור ניצב כמקדש לדמוקרטיה, אנדרטה ואתר הנצחה לג'ורג' וושינגטון, לידתה של "
+"הר רשמור ניצב כמקדש לדמוקרטיה, אנדרטה ואתר הנצחה לג׳ורג׳ וושינגטון, לידתה של "
 "האומה, צמיחתה והעקרונות שלה. הר רשמור מסמל את גדולתה של האומה דרך גדולתם של "
 "מנהיגיה. הפסל העצום של הר רשמור מציג את פניהם של ארבעה נשיאים אמריקאים "
 "יוצאים מהכלל המייצגים את ההיסטוריה העשירה של האומה האמריקאית, נחישותה האיתנה "
@@ -7892,7 +7892,7 @@ msgid ""
 "between North and South that eventually resulted in the war."
 msgstr ""
 "במקור נוסד כמבנה הגנה בעקבות המלחמה של 1812, כאן, במצודת הים של נמל "
-"צ'רלסטון, דרום קרוליינה, נורו היריות הראשונות של מלחמת האזרחים. בתוך מבצר "
+"צ׳רלסטון, דרום קרוליינה, נורו היריות הראשונות של מלחמת האזרחים. בתוך מבצר "
 "סומטר מספר תצוגות מציעות התבוננות בהיסטוריה של ארצות הברית, בעיקר החלוקה בין "
 "הצפון והדרום שבסופו של דבר הגיעה לכדי מלחמה."
 
@@ -8095,7 +8095,7 @@ msgstr ""
 #: activities/explore_world_animals/resource/board/board1.qml:44
 msgctxt "board1|"
 msgid "Giraffe"
-msgstr "ג'ירפה"
+msgstr "ג׳ירפה"
 
 #: activities/explore_world_animals/resource/board/board1.qml:42
 msgctxt "board1|"
@@ -8279,7 +8279,7 @@ msgstr "קואלות הן מכרסמים צמחונים החיים ביערות 
 #: activities/explore_world_animals/resource/board/board3.qml:55
 msgctxt "board3|"
 msgid "Ring-tailed lemur"
-msgstr "למור זנב-טבעת"
+msgstr "למור זנב־טבעת"
 
 #: activities/explore_world_animals/resource/board/board3.qml:53
 msgctxt "board3|"
@@ -11021,7 +11021,7 @@ msgstr "אוקיטניה"
 #: activities/geo-country/resource/board/board1_0.qml:51
 msgctxt "board1_0|"
 msgid "Provence-Alpes-Côte d'Azur"
-msgstr "פרובנס-אלפים-קוט דה אז'ור"
+msgstr "פרובאנס־אלפ־קוט ד׳אזור"
 
 #. Region of France: Auvergne-Rhône-Alpes
 #: activities/geo-country/resource/board/board1_0.qml:59
@@ -11402,7 +11402,7 @@ msgstr "פולין הפחותה"
 #: activities/geo-country/resource/board/board4_0.qml:108
 msgctxt "board4_0|"
 msgid "Łódź"
-msgstr "לודז'"
+msgstr "לודז׳"
 
 #. Province of Poland: Lubusz
 #: activities/geo-country/resource/board/board4_0.qml:115
@@ -14713,7 +14713,7 @@ msgid ""
 "If the option 'Display the image to find as hint' is activated, on every "
 "wrong try a part of the image representing the word will be revealed."
 msgstr ""
-"אם האפשרות 'להציג את התמונה לגילוי כרמז' מופעלת, בכל ניסיון שגוי, חלק "
+"אם האפשרות ‚להציג את התמונה לגילוי כרמז’ מופעלת, בכל ניסיון שגוי, חלק "
 "מהתמונה שמייצגת את המילה יתגלה."
 
 #: activities/hangman/ActivityInfo.qml:25
@@ -22755,13 +22755,13 @@ msgstr "להציג את המונים"
 #: activities/share/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Share pieces of candy"
-msgstr "לחלק חתיכות של סוכריות"
+msgstr "לחלק ממתקים"
 
 #. Help title
 #: activities/share/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Try to split the pieces of candy between a given number of children."
-msgstr "לנסות לחלק חתיכות של סוכריות בין הילדים והילדות במספר הנתון."
+msgstr "לנסות לחלק ממתקים בין הילדים והילדות במספר הנתון."
 
 #. Help goal
 #: activities/share/ActivityInfo.qml:20
@@ -22784,17 +22784,17 @@ msgid ""
 "rectangle."
 msgstr ""
 "לעקוב אחרי ההוראות שעל המסך: קודם, לגרור את המספר הנתון של בנים/בנות למרכז "
-"ואז לגרור חתיכות של סוכריות לכל ריבוע של ילד/ה."
+"ואז לגרור ממתקים לכל ריבוע של ילד/ה."
 
 #: activities/share/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "If there is a rest, it needs to be placed inside the candy jar."
-msgstr "אם ישנה שארית, צריך לשים אותה בתוך קערת הסוכריות."
+msgstr "אם ישנה שארית, צריך לשים אותה בתוך קערת הממתקים."
 
 #: activities/share/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, no rest."
-msgstr "עד 25 סוכריות ו־5 ילדים/ות, ללא שארית."
+msgstr "עד 25 ממתקים ו־5 ילדים/ות, ללא שארית."
 
 #: activities/share/resource/1/Data.qml:20
 #: activities/share/resource/2/Data.qml:20
@@ -22804,22 +22804,19 @@ msgid ""
 "Can you help him? First, place the children in the center, then drag the "
 "pieces of candy to each of them."
 msgstr ""
-"אפריים רוצה לחלוק 2 חתיכות של סוכריות בין 2 חברותיו. האם תוכלו לעזור לו לחלק "
-"אותן באופן שווה? ראשית, למקם את הילדים במרכז ואז לגרור את חלקי הסוכריות לכל "
-"אחד ואחת."
+"אפרים רוצה לחלוק 2 ממתקים עם 2 חברותיו. אפשר לעזור לו לחלק אותן באופן שווה? "
+"ראשית, למקם את הילדים במרכז ואז לגרור את הממתקים לכל אחד ואחת."
 
 #: activities/share/resource/1/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 4 pieces of candy equally among his friends."
-msgstr "עכשיו הוא רוצה לחלוק 4 חתיכות של סוכריות באופן שווה לחבריו וחברותיו."
+msgstr "עכשיו הוא רוצה לחלוק 4 ממתקים באופן שווה לחבריו וחברותיו."
 
 #: activities/share/resource/1/Data.qml:40
 msgctxt "Data|"
 msgid ""
 "Can you now share 6 of Paul's pieces of candy equally among his friends?"
-msgstr ""
-"האם ניתן לתת עכשיו לחלוק 6 חתיכות של סוכריות בצורה שווה לחברים והחברות של "
-"אפרים?"
+msgstr "האם ניתן עכשיו לחלוק 6 ממתקים בצורה שווה בין החברים והחברות של אפרים?"
 
 #: activities/share/resource/1/Data.qml:50
 msgctxt "Data|"
@@ -22827,8 +22824,7 @@ msgid ""
 "Some of his friends already have pieces of candy. He wants to give them 7 "
 "more pieces so that they all have the same amount."
 msgstr ""
-"לכמה מחבריו כבר יש חתיכות של סוכריה. הוא רוצה לתת להם עוד 7 חתיכות כך שלכולם "
-"תהיה אותה כמות."
+"לכמה מחבריו כבר יש ממתקים. הוא רוצה לתת להם עוד 7 כדי שלכולם תהיה אותה כמות."
 
 #: activities/share/resource/1/Data.qml:60
 msgctxt "Data|"
@@ -22837,8 +22833,8 @@ msgid ""
 "gives the rest to his friends. Can you help him split equally the 10 "
 "remaining pieces of candy?"
 msgstr ""
-"לאפרים נותרו רק 12 חתיכות של סוכריה. הוא אוכל שתי חתיכות של סוכריות והוא "
-"נותן את השאר לחבריו. תוכלו לעזור לו לחלק באופן שווה את 10 החתיכות שנשארו?"
+"לאפרים נותרו רק 12 ממתקים. הוא אכל שני ממתקים והוא נותן את השאר לחבריו. אפשר "
+"לעזור לו לחלק את 10 הממתקים שנשארו באופן שווה?"
 
 #: activities/share/resource/1/Data.qml:72
 msgctxt "Data|"
@@ -22846,8 +22842,8 @@ msgid ""
 "George wants to share 3 pieces of candy equally between 3 of his girl "
 "friends. Can he split the pieces of candy equally?"
 msgstr ""
-"יעקב רוצה לחלוק את 3 חתיכות הסוכריה שלו באופן שווה עם 3 חברותיו. האם בוא "
-"יכול לחלק את חתיכות הסוכריה בצורה שווה?"
+"יעקב רוצה לחלוק את 3 הממתקים שלו באופן שווה עם 3 חברותיו. האם אפשר לחלק את "
+"הממתקים בצורה שווה?"
 
 #: activities/share/resource/1/Data.qml:82
 msgctxt "Data|"
@@ -22855,8 +22851,8 @@ msgid ""
 "Maria wants to share 6 pieces of candy equally between 3 of her friends: 1 "
 "girl and 2 boys. Can she split the pieces of candy equally?"
 msgstr ""
-"אילת רוצה לחלוק את 6 חתיכות הסוכריה שלו עם 3 חברים: בת 1 ו 2 בנים. הטם היא "
-"תצליח לחלק את חתיכות הסוכריה בצורה שווה?"
+"איילת רוצה לחלוק את 6 הממתקים שלה בין 3 חברים: בת 1 ו־2 בנים. האם היא תצליח "
+"לחלק את הממתקים בצורה שווה?"
 
 #: activities/share/resource/1/Data.qml:92
 msgctxt "Data|"
@@ -22865,8 +22861,8 @@ msgid ""
 "boy and 2 girls. The boy already has one. Can he make sure that they all "
 "have the same amount?"
 msgstr ""
-"יונתן רוצה לחלוק באופן שווה 8 חתיכות של סוכריות בין 3 חבריו:  ילד 1 ו־2 "
-"ילדות. לָבֶּן כבר יש אחת. האם הוא הוא יכול להבטיח שלכולם יש את אותה כמות?"
+"יונתן רוצה לחלוק באופן שווה 8 ממתקים בין 3 חבריו: בן 1 ו־2 בנות. לָבֶּן כבר יש "
+"אחת. האם אפשר להבטיח שלכולם יש את אותה כמות?"
 
 #: activities/share/resource/1/Data.qml:102
 msgctxt "Data|"
@@ -22874,8 +22870,8 @@ msgid ""
 "Paul wants to share 12 pieces of candy equally between 3 of his friends: 2 "
 "boys and 1 girl. Can he split the pieces of candy equally?"
 msgstr ""
-"יעקב רוצה לחלוק 12 חתיכות סוכריה בשווה עם 3 חבריו: 2 בנים ובת 1. האם הוא "
-"יכול לחלק את חתיכות הסוכריה בצורה שווה?"
+"יעקב רוצה לחלוק 12 ממתקים בשווה עם 3 חבריו: 2 בנים ובת 1. האם אפשר לחלק את "
+"הממתקים בצורה שווה?"
 
 #: activities/share/resource/1/Data.qml:112
 msgctxt "Data|"
@@ -22884,9 +22880,9 @@ msgid ""
 "2 girls. The girls already have some pieces of candy. Can she split the "
 "pieces of candy so that they all have the same amount?"
 msgstr ""
-"נעמי רוצה לחלוק באופן שווה 11 חתיכות של סוכריות בין 3 חבריה:  ילד 1 ו־2 "
-"ילדות. לילדות כבר יש כמה חתיכות הסוכריה לכל אחד מהם. האם היא תצליח לחלק את "
-"חתיכות הסוכריה כך שלכולם יש את אותה הכמות?"
+"נעמי רוצה לחלוק באופן שווה 11 ממתקים בין 3 חבריה: בן 1 ו־2 בנות. לבנות כבר "
+"יש כמה ממתקים לכל אחת מהן. האם אפשר לחלק את הממתקים כך שלכולם תהיה את אותה "
+"הכמות?"
 
 #: activities/share/resource/1/Data.qml:124
 #: activities/share/resource/2/Data.qml:114
@@ -22894,13 +22890,12 @@ msgctxt "Data|"
 msgid ""
 "Alice wants to share 4 pieces of candy equally between 4 of her girl "
 "friends. Can you help her?"
-msgstr ""
-"עליזה רוצה לחלוק 4 חתיכות של סוכריות בשווה עם 4 חברותיה. תוכלו לעזור לה?"
+msgstr "עליזה רוצה לחלוק 4 ממתקים בשווה עם 4 חברותיה. יש לך איך לעזור לה?"
 
 #: activities/share/resource/1/Data.qml:134
 msgctxt "Data|"
 msgid "Now, Alice wants to give 8 pieces of candy to her friends."
-msgstr "עכשיו, עליזה רוצה לתת 8 חתיכות של סוכריות לחברותיה."
+msgstr "עכשיו, עליזה רוצה לחלק 8 ממתקים לחברותיה."
 
 #: activities/share/resource/1/Data.qml:144
 msgctxt "Data|"
@@ -22909,13 +22904,13 @@ msgid ""
 "that they all have the same amount. The girls already have some pieces of "
 "candy."
 msgstr ""
-"עליזה רוצה לתת 10 חתיכות סוכריה לחברים שלה, בת 1 ו־3 בנים כך שתהיה להם כמות "
-"זהה. לבנות כבר יש כמה חתיכות של סוכריה."
+"עליזה רוצה לחלק 10 ממתקים לחבריה, בת 1 ו־3 בנים כך שתהיה להם כמות זהה. לבנות "
+"כבר יש כמה ממתקים."
 
 #: activities/share/resource/1/Data.qml:154
 msgctxt "Data|"
 msgid "Alice wants to give 16 pieces of candy to her friends."
-msgstr "עליזה רוצה לתת 16 חתיכות של סוכריות לחבריה."
+msgstr "עליזה רוצה לתת 16 ממתקים לחבריה."
 
 #: activities/share/resource/1/Data.qml:164
 msgctxt "Data|"
@@ -22924,16 +22919,15 @@ msgid ""
 "some pieces of candy. Can you help her split 14 pieces of candy so that all "
 "her friends have the same amount?"
 msgstr ""
-"עליזה רוצה לתת חתיכות של סוכריה ל־4 חברים. לחלק מהם כבר יש כמה חתיכות של "
-"סוכריהץ האם תוכלו לעזור לו לחלק 14 חתיכות סוכריה כך שלכל החברים תהיה אותה "
-"כמות?"
+"עליזה רוצה לחלק ממתקים ל־4 חברים. לחלק מהם כבר יש כמה ממתקים. אפשר לעזור לו "
+"לחלק 14 ממתקים כך שלכל החברים תהיה אותה כמות?"
 
 #: activities/share/resource/1/Data.qml:176
 msgctxt "Data|"
 msgid ""
 "Michael wants to share 5 pieces of candy equally between 5 of his girl "
 "friends. Can you help him?"
-msgstr "מיכאל רוצה לחלוק 5 חתיכות של סוכריה בשווה 5 חברותיו. תוכלו לעזור לו?"
+msgstr "מיכאל רוצה לחלוק 5 ממתקים בשווה בין 5 חברותיו. אפשר לעזור לו?"
 
 #: activities/share/resource/1/Data.qml:186
 msgctxt "Data|"
@@ -22941,8 +22935,8 @@ msgid ""
 "Helen has 5 friends: 2 boys and 3 girls. She wants to give them 10 pieces of "
 "candy. Help her split the pieces of candy equally between her friends."
 msgstr ""
-"לחנה יש 5 חברים: 2 ילדים ו3 ילדות. היא רוצה לתת להם 10 חתיכות של סוכריה. "
-"לעזור לה לחלק את חתיכות הסוכריה בין חבריה וחברותיה."
+"לחנה יש 5 חברים: 2 בנים ו־3 בנות. היא רוצה לחלק להם 10 ממתקים. נא לעזור לה "
+"לחלק את הממתקים בין חבריה וחברותיה."
 
 #: activities/share/resource/1/Data.qml:196
 msgctxt "Data|"
@@ -22951,16 +22945,15 @@ msgid ""
 "and 1 sister, so that they all have the same amount. Her sister already has "
 "some pieces of candy."
 msgstr ""
-"למישל יש 12 חתיכות של סוכריה והיא רוצה לחלק אותם שווה בשווה עם 4 אחיה "
-"ואחותה. לאחותה כבר יש כמה חתיכות סוכריה."
+"למישל יש 12 ממתקים והיא רוצה לחלק אותם שווה בשווה עם 4 אחיה ואחותה. לאחותה "
+"כבר יש כמה ממתקים."
 
 #: activities/share/resource/1/Data.qml:206
 msgctxt "Data|"
 msgid ""
 "Thomas wants to share his 20 pieces of candy with his friends: 1 boy and 4 "
 "girls. Can you help him?"
-msgstr ""
-"תמיר רוצה לחלק 20 חתיכות של סוכריה עם חבריו: בן ו־4 בנות. אפשר לעזור לו?"
+msgstr "תמיר רוצה לחלק 20 ממתקים עם חבריו: בן ו־4 בנות. אפשר לעזור לו?"
 
 #: activities/share/resource/1/Data.qml:216
 msgctxt "Data|"
@@ -22968,8 +22961,8 @@ msgid ""
 "Paul wants to share 20 pieces of candy equally between 5 of his friends. "
 "They already have one piece of candy each. Can you help him?"
 msgstr ""
-"יעקב רוצה לחלוק בצורה שווה את 20 חתיכות הסוכריה שלו עם 5 חברים. כבר יש להם "
-"חתיכה אחת של סוכריה לכל אחד. האם תוכלו לעזור לו?"
+"יעקב רוצה לחלק בצורה שווה את 20 הממתקים שלו עם 5 חברים. כבר יש להם ממתק לכל "
+"אחד. אפשר לעזור לו?"
 
 #: activities/share/resource/1/Data.qml:228
 msgctxt "Data|"
@@ -22977,8 +22970,8 @@ msgid ""
 "Charles wants to share his 6 pieces of candy equally with 2 of his girl "
 "friends. Can he split the pieces of candy equally?"
 msgstr ""
-"יעקב רוצה לחלוק את 6 חתיכות הסוכריה שלו עם 2 חברותי. האם ניתן לעזור לו לחלק "
-"את חתיכות הסוכריה בצורה שווה?"
+"יעקב רוצה לחלק את 6 הממתקים שלו עם 2 חברותיו. האם ניתן לעזור לו לחלק את "
+"הממתקים בצורה שווה?"
 
 #: activities/share/resource/1/Data.qml:238
 msgctxt "Data|"
@@ -22987,8 +22980,8 @@ msgid ""
 "friends: 2 girls and 1 boy. The girls already have some pieces of candy. How "
 "should she split the pieces of candy so that they all have the same amount?"
 msgstr ""
-"ליום הולדתה, אליזבט קיבלה 8 חתיכות של סוכריה לחלק עם 3 חברים: 2 בנות ובן 1. "
-"איך עליה לחלק את חתיכות הסוכריה כך שלכולם תהיה אותה כמות?"
+"ליום הולדתה, אליזבט קיבלה 8 ממתקים לחלוק עם 3 חברים: 2 בנות ובן 1. איך עליה "
+"לחלק את הממתקים כך שלכולם תהיה אותה כמות?"
 
 #: activities/share/resource/1/Data.qml:248
 msgctxt "Data|"
@@ -22997,8 +22990,8 @@ msgid ""
 "friends: 2 boys and 2 girls. Help him give the pieces of candy to his "
 "friends."
 msgstr ""
-"אבא של יונה נתן לו 16 חתיכות סוכריה לחלוק בשווה עם חבריו: 2 בנים ו־2 בנות. "
-"נא לעזור לו לתת את חתיכות הסוכריה לחבריו."
+"אבא של יונה נתן לו 16 ממתקים לחלוק בשווה עם חבריו: 2 בנים ו־2 בנות. נא לעזור "
+"לו לחלק את הממתקים לחבריו."
 
 #: activities/share/resource/1/Data.qml:258
 msgctxt "Data|"
@@ -23007,9 +23000,8 @@ msgid ""
 "and 2 boys. The boys already have one piece of candy each. He wants all of "
 "them to have the same amount."
 msgstr ""
-"ג'ורג' רוצה לחלוק באופן שווה 14 חתיכות של סוכריות בין 4 חבריו: 2 בנים ו־2 "
-"בנות. לכל אחד מהבנים כבר יש חתיכת סוכריה אחת. הוא רוצה שלכל אחד תהיה את אותה "
-"כמות."
+"אלעד רוצה לחלוק באופן שווה 14 חתיכות של ממתקים בין 4 חבריו: 2 בנים ו־2 בנות. "
+"לכל אחד מהבנים כבר יש חתיכת ממתק אחת. הוא רוצה שלכל אחד תהיה את אותה כמות."
 
 #: activities/share/resource/1/Data.qml:268
 msgctxt "Data|"
@@ -23017,28 +23009,28 @@ msgid ""
 "Maria wants to share 25 pieces of candy equally between 5 of her friends: 3 "
 "girls and 2 boys. Can she split the pieces of candy equally?"
 msgstr ""
-"מרים רוצה לחלוק 25 חתיכות סוכריה עם 5 חברים: 3 בנות ו־2 בנים. האם תצליח לחלק "
-"את חתיכות הסוכריה בצורה שווה?"
+"מרים רוצה לחלוק 25 ממתקים עם 5 חברים: 3 בנות ו־2 בנים. האם תצליח לחלק את "
+"הממתקים באופן שווה?"
 
 #: activities/share/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, possible rest."
-msgstr "עד 25 סוכריות ו־5 ילדים/ות, תתכן שארית."
+msgstr "עד 25 ממתקים ו־5 ילדים/ות, תתכן שארית."
 
 #: activities/share/resource/2/Data.qml:30
 msgctxt "Data|"
 msgid "Now he wants to share 5 pieces of candy among his friends."
-msgstr "עכשיו הוא רוצה לתת 5 חתיכות של סוכריות לחבריו."
+msgstr "עכשיו הוא רוצה לחלק 5 ממתקים לחבריו."
 
 #: activities/share/resource/2/Data.qml:40
 msgctxt "Data|"
 msgid "Can you now share 7 of Paul's pieces of candy among his friends?"
-msgstr "האם ניתן לתת עכשיו 7 חתיכות של סוכריות לחברים של אפרים?"
+msgstr "האם ניתן לחלק כעת 7 ממתקים לחברים של אפרים?"
 
 #: activities/share/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Can you now share 8 of Paul's pieces of candy among his friends?"
-msgstr "אפשר לחלק עכשיו 8 חתיכות של סוכריות לחברים/ות של אפרים?"
+msgstr "אפשר לחלק עכשיו 8 ממתקיםלחברים/ות של אפרים?"
 
 #: activities/share/resource/2/Data.qml:60
 msgctxt "Data|"
@@ -23047,8 +23039,8 @@ msgid ""
 "gives the rest to his friends. Can you help him split equally the 9 "
 "remaining pieces of candy?"
 msgstr ""
-"לאפרים נשארו רק 11 חתיכות של סוכריה. הוא אוכל שתי חתיכות של סוכריות והוא "
-"נותן את השאר לחבריו. תוכלו לעזור לו לחלק באופן שווה את 9 החתיכות שנשארו?"
+"לאפרים נשארו רק 11 ממתקים. הוא אכל שני ממתקים והוא נותן את השאר לחבריו. אפשר "
+"לעזור לו לחלק את 9 הממתקים שנשארו באופן שווה?"
 
 #: activities/share/resource/2/Data.qml:72
 msgctxt "Data|"
@@ -23056,8 +23048,8 @@ msgid ""
 "Bob wants to share 3 pieces of candy equally between 3 of his girl friends. "
 "Can he split the pieces of candy equally?"
 msgstr ""
-"בני רוצה לחלוק בשווה 3 חתיכות סוכריה עם 3 חברותיו. האם ניתן לעזור לו לחלק את "
-"חתיכות הסוכריה בצורה שווה?"
+"בני רוצה לחלוק בשווה 3 ממתקים עם 3 חברותיו. האם ניתן לעזור לו לחלק את "
+"הממתקים באופן שווה?"
 
 #: activities/share/resource/2/Data.qml:82
 msgctxt "Data|"
@@ -23066,9 +23058,8 @@ msgid ""
 "girls. The boy already has one piece of candy. Can he split the pieces of "
 "candy so that they all have the same amount?"
 msgstr ""
-"אהרון רוצה לחלק באופן שווה 8 חתיכות של סוכריה בין 3 חברים: בן 1 ו־2 בנות. "
-"לחבר שלו כבר יש חתיכה 1 של סוכריה. האם הוא יכול לחלק את החתיכות כך שלכל אחד "
-"ואחת מהם/ן תהיה כמות שווה?"
+"אהרון רוצה לחלק באופן שווה 8 ממתקים בין 3 חברים: בן 1 ו־2 בנות. לחבר שלו כבר "
+"ממתק. האם אפשר לחלק את הממתקים כך שלכל אחד ואחת מהם/ן תהיה כמות שווה?"
 
 #: activities/share/resource/2/Data.qml:92
 msgctxt "Data|"
@@ -23077,9 +23068,8 @@ msgid ""
 "girls. The girls already have some pieces of candy. Can she split the pieces "
 "of candy so that they all have the same amount?"
 msgstr ""
-"מרים רוצה לחלק 8 חתיכות של סוכריה בין 3 חבריה: ילד 1 ו 2 ילדות. לילדות כבר "
-"יש כמה חתיכות של סוכריה. האם היא תוכל לחלק את חתיכות הסוכריות כך שלכולם תהיה "
-"את אותה הכמות?"
+"מרים רוצה לחלק 8 ממתקים בין 3 חבריה: בן 1 ו־2 בנות. לבנות כבר יש כמה ממתקים. "
+"האם אפשר לחלק את הממתקים כך שלכולם תהיה את אותה הכמות?"
 
 #: activities/share/resource/2/Data.qml:102
 msgctxt "Data|"
@@ -23088,14 +23078,13 @@ msgid ""
 "2 girls. The boy already has some pieces of candy. Can he split the pieces "
 "of candy so that they all have the same amount?"
 msgstr ""
-"אהרון רוצה לחלק 12 חתיכות של סוכריה בין 3 חבריו: בן 1 ו־2 בנות. לחבר שלו כבר "
-"יש כמה חתיכות של סוכריה. האם הוא יכול לחלק את החתיכות כך שלכל אחד ואחת מהם/ן "
-"תהיה כמות שווה?"
+"אהרון רוצה לחלק 12 ממתקים בין 3 חבריו: בן 1 ו־2 בנות. לחבר שלו כבר יש כמה "
+"ממתקים. האם אפשר לחלק את הממתקים כך שלכל אחד ואחת מהם/ן תהיה כמות שווה?"
 
 #: activities/share/resource/2/Data.qml:124
 msgctxt "Data|"
 msgid "Now, Alice wants to share 8 pieces of candy equally among her friends."
-msgstr "עכשיו, עליזה רוצה לתת 8 חתיכות של סוכריות לחברים."
+msgstr "עכשיו, עליזה רוצה לחלק 8 ממתקים לחברים."
 
 #: activities/share/resource/2/Data.qml:134
 msgctxt "Data|"
@@ -23103,13 +23092,13 @@ msgid ""
 "Can you help Alice share 10 pieces of candy equally among her friends: 1 "
 "girl and 3 boys? The girl already has some pieces of candy."
 msgstr ""
-"האם תוכלו לעזור לעליזה 10 חתיכות של סוכריה לחבריה: ילדה 1 ו־3 ילדים? לילדה "
-"כבר יש כמה חתיכות של סוכריה."
+"האם תוכלו לעזור לעליזה לחלק 10 ממתקים לחבריה: בת 1 ו־3 בנים? לילדה כבר יש "
+"כמה ממתקים."
 
 #: activities/share/resource/2/Data.qml:144
 msgctxt "Data|"
 msgid "Alice wants to share 16 pieces of candy equally among her friends."
-msgstr "עליזה רוצה לתת 16 חתיכות של סוכריות לחברים."
+msgstr "עליזה רוצה לתת 16 ממתקים לחברים."
 
 #: activities/share/resource/2/Data.qml:154
 msgctxt "Data|"
@@ -23118,15 +23107,15 @@ msgid ""
 "friends. The boys already have some pieces of candy. Can you help her split "
 "the pieces of candy equally?"
 msgstr ""
-"לעליזה נשארו 14 חתיכות של סוכריות. היא רוצה לתת את כולן לחברים. האם תוכלו "
-"לעזור לה לחלק את חתיכות הסוכריה באופן שווה?"
+"לעליזה נשארו 14 ממתקים. היא רוצה לתת את כולם לחברים. אפשר לעזור לה לחלק את "
+"הממתקים באופן שווה?"
 
 #: activities/share/resource/2/Data.qml:166
 msgctxt "Data|"
 msgid ""
 "Help Jon share 11 pieces of candies equally between five girls. The rest "
 "will remain to Jon."
-msgstr "לעזור ליונה לחלק 11 חתיכות של סוכריה בין 5 בנות. השארית תשאר ליונה."
+msgstr "לעזור ליונה לחלק 11 ממתקים בין 5 בנות. השארית תישאר ליונה."
 
 #: activities/share/resource/2/Data.qml:176
 msgctxt "Data|"
@@ -23135,8 +23124,8 @@ msgid ""
 "his sisters. Can you split them equally, knowing that his brothers already "
 "have 2 pieces of candy?"
 msgstr ""
-"יונה רוצה לחלוק את שארית חתיכות הסוכריה עם האחים והאחיות שלו. האם תוכלו לחלק "
-"אותן באופן שווה, כשאנחנו יודעים שלאחים שלו של יונה כבר יש 2 חתיכות של סוכריה?"
+"יונה רוצה לחלוק את שארית הממתקים עם האחים והאחיות שלו. האם אפשר לחלק אותן "
+"באופן שווה, כשאנחנו יודעים שלאחים שלו כבר יש 2 ממתקים?"
 
 #: activities/share/resource/2/Data.qml:186
 msgctxt "Data|"
@@ -23147,7 +23136,7 @@ msgstr "לעזור לטאקס לחלק 19 ממתקים לחבריו: 4 בנים 
 #: activities/share/resource/2/Data.qml:196
 msgctxt "Data|"
 msgid "Help Maria share 18 pieces of candy equally between 3 boys and 2 girls."
-msgstr "לעזור למירי לחלק 18 חתיכות של סוכריה בשווה בין שלושה בנים ו־2 בנות."
+msgstr "לעזור למירי לחלק 18 ממתקים שווה בשווה בין 3 בנים ו־2 בנות."
 
 #: activities/share/resource/2/Data.qml:208
 msgctxt "Data|"
@@ -23155,8 +23144,8 @@ msgid ""
 "Charles wants to share his 6 pieces of candy equally between 2 of his girl "
 "friends. Can he split the pieces of candy equally?"
 msgstr ""
-"יעקב רוצה לחלוק בשווה 6 חתיכות סוכריה עם 2 חברותיו. אפשר לעזור לו לחלק את "
-"חתיכות הסוכריה בצורה שווה?"
+"יעקב רוצה לחלק שווה בשווה 6 ממתקים עם 2 חברותיו. אפשר לעזור לו לחלק את "
+"הממתקים בצורה שווה?"
 
 #: activities/share/resource/2/Data.qml:218
 msgctxt "Data|"
@@ -23165,8 +23154,8 @@ msgid ""
 "friends equally: 2 girls and 1 boy. How should she split the pieces of candy "
 "between her friends?"
 msgstr ""
-"ליום הולדתה, עליזה ב. קיבלה 8 חתיכות של סוכריה לחלק עם 3 חברים: 2 בנות ובן "
-"1. איך עליה לחלק את חתיכות הסוכריה עם חבריה?"
+"ליום הולדתה, עליזה ב. קיבלה 8 ממתקים לחלוק עם 3 חברים: 2 בנות ובן 1. איך "
+"עליה לחלק את הממתקים בין חבריה?"
 
 #: activities/share/resource/2/Data.qml:228
 msgctxt "Data|"
@@ -23175,8 +23164,8 @@ msgid ""
 "friends: 2 boys and 2 girls. Help him give the pieces of candy to his "
 "friends."
 msgstr ""
-"אבא של יונה נתן לו 17 חתיכות של סוכריה לחלוק בשווה עם חבריו: 2 בנים ו2 בנות. "
-"מא לעזור לו לתת את חתיכות הסוכריה לחבריו."
+"אבא של יונה נתן לו 17 חתיכות של ממתקים לחלוק בשווה עם חבריו: 2 בנים ו־2 "
+"בנות. נא לעזור לו לחלק את חתיכות הממתקים לחבריו."
 
 #: activities/share/resource/2/Data.qml:238
 msgctxt "Data|"
@@ -23185,8 +23174,8 @@ msgid ""
 "girls and 2 boys. Can he equally split the pieces of candy between his "
 "friends?"
 msgstr ""
-"ג'ורג' רוצה לחלוק בשווה 14 חתיכות של סוכריות בין 4 חבריו: 2 ילדים ו־2 ילדות. "
-"האם הוא יכול לחלק באופן שווה את הסוכריות בין חבריו?"
+"אלעד רוצה לחלוק בשווה 14 חתיכות של ממתקים בין 4 חבריו: 2 ילדים ו־2 ילדות. "
+"האם הוא יכול לחלק באופן שווה את הממתקים בין חבריו?"
 
 #: activities/share/resource/2/Data.qml:248
 msgctxt "Data|"
@@ -23195,13 +23184,13 @@ msgid ""
 "girls and 2 boys. Can she share the pieces of candy equally between her "
 "friends?"
 msgstr ""
-"מרים רוצה לחלוק באופן שווה 23 חתיכות של סוכריות בין 5 חבריה: 3 ילדות ושני "
-"ילדים. האם היא תוכל לחלק את הסוכריות באופן שווה?"
+"מרים רוצה לחלוק באופן שווה 23 ממתקים בין 5 חבריה: 3 בנות ו־2 בנים. האם אפשר "
+"לחלק את הממתקים באופן שווה?"
 
 #: activities/share/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
-msgstr "עד 30 סוכריות ו־6 ילדים/ות, תתכן שארית."
+msgstr "עד 30 ממתקים ו־6 ילדים/ות, תתכן שארית."
 
 #: activities/share/share.js:115
 #, qt-format
@@ -23243,7 +23232,7 @@ msgstr[3] "ואז לחלק %n חתיכות של ממתק ביניהם באופן
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
-msgstr "אי אפשר לשים יותר מ %1 חתיכות של סוכריות באותו ריבוע"
+msgstr "אי אפשר לשים יותר מ־%1 חתיכות של ממתקים באותו ריבוע"
 
 #. Activity title
 #: activities/simplepaint/ActivityInfo.qml:15
@@ -26152,7 +26141,7 @@ msgstr ""
 #: core/ChangeLog.qml:40
 msgctxt "ChangeLog|"
 msgid "Add splash screen at startup"
-msgstr "הוספת מסך פתיחה עם העלייה"
+msgstr "נוסף מסך פתיחה עם העלייה"
 
 #: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
@@ -26211,7 +26200,7 @@ msgstr "מפת ספרד נוספה לפעילויות הגאוגרפיה."
 #: core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
-msgstr "הוספו קולות לתרגום האוקראיני"
+msgstr "נוספו קולות לתרגום האוקראיני"
 
 #: core/ChangeLog.qml:90
 msgctxt "ChangeLog|"
@@ -26245,13 +26234,13 @@ msgstr "תוקנו מספר מקשים מתים שמושתקים בלינוקס 
 #: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
-msgstr "תוקן איפוס השלב כשמחליפים שלבים ידנית ב'קישורים לוגים'"
+msgstr "תוקן איפוס השלב כשמחליפים שלבים ידנית ב‚הקשרים לוגיים’"
 
 #: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
-msgstr "תוקנו פעילויות סדר הא-ב, מספרים זוגיים ואי-זוגיים ומספרים לפי הסדר"
+msgstr "תוקנו פעילויות סדר הא־ב, מספרים זוגיים ואי־זוגיים ומספרים לפי הסדר"
 
 #: core/ChangeLog.qml:109 core/ChangeLog.qml:117
 msgctxt "ChangeLog|"
