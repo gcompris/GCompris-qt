@@ -35,7 +35,8 @@ Item  {
     Layout.preferredHeight: 22
     Layout.margins: 3
 
-    ListModel { id: arrayModel }        // Internal model for choiceInput, comboInput and stringsInput's popup
+    ListModel { id: arrayModel }        // Internal model for choiceInput
+    ListModel { id: stringModel }        // Internal model for stringsInput's popup and comboInput popup
 
     // Returns the appropriate component according to proto.type
     function getComponent() {
@@ -47,12 +48,16 @@ Item  {
             return textInput
         case "string_array":                                    // value is a stringified array of elements
             value = aModel.get(modelIndex)[proto.name]
-            jsonValue = JSON.parse(value)
+            stringToArrayModel()
             return stringsInput
         case "choice":
-            value = proto.def                                   // value contains default values for choiceInput
-            choiceDefault = aModel.get(modelIndex)[proto.name]  // current value in model
-            stringToArrayModel()
+            // choice is a ListModel where each element contains
+            // a "datasetValue" and a "displayedValue"
+            choiceDefault = aModel.get(modelIndex)[proto.name]
+            arrayModel.clear()
+            for(var i = 0; i < proto["values"].count; ++ i) {
+                arrayModel.append(proto["values"].get(i))
+            }
             return choiceInput
         case "comboInt":
             value = proto.def                                   // value contains value range for comboInput
@@ -75,9 +80,11 @@ Item  {
     // Build jsonValue and value from arrayModel
     function arrayModelToStringArray() {
         var arr = []
-        for (var i = 0; i < arrayModel.count; i++)
-            if (arrayModel.get(i).content !== "")               // Don't save empty strings
-                arr.push(arrayModel.get(i).content)
+        for (var i = 0; i < stringModel.count; i++) {
+            if (stringModel.get(i).content !== "") {              // Don't save empty strings
+                arr.push(stringModel.get(i).content)
+            }
+        }
         jsonValue = arr
         value = JSON.stringify(arr)
         aModel.setProperty(modelIndex, proto.name, value)
@@ -86,18 +93,18 @@ Item  {
     // Build jsonValue and arrayModel from value
     function stringToArrayModel() {
         jsonValue = JSON.parse(value)
-        arrayModel.clear()
-        jsonValue.forEach((element, index) => { arrayModel.append({ "content" : element}) })
+        stringModel.clear()
+        jsonValue.forEach((element, index) => { stringModel.append({ "content" : element}) })
     }
 
     // Build arrayModel from range values
     function stringToRange() {
         jsonValue = JSON.parse(value)
-        arrayModel.clear()
+        stringModel.clear()
         var start = Number(jsonValue[0])
         var end = Number(jsonValue[1])
         for (var i= start; i <= end; i++)
-            arrayModel.append({ "content" : String(i)})
+            stringModel.append({ "content" : String(i)})
     }
 
     // Component for string, int and model.count
@@ -161,7 +168,7 @@ Item  {
                 id: choiceButtonGroup
                 buttons: rowRepeater.children
                 exclusive: true
-                onClicked: (button) => aModel.setProperty(modelIndex, proto.name, button.text)
+                onClicked: (button) => aModel.setProperty(modelIndex, proto.name, button.datasetValue)
             }
             Row {
                 id: rowChoice
@@ -169,11 +176,13 @@ Item  {
                     id: rowRepeater
                     model: arrayModel
                     StyledCheckBox {
+                        required property string datasetValue
+                        required property string displayedValue
                         height: fieldEdit.height
                         scale: 0.75
                         ButtonGroup.group: choiceButtonGroup
-                        text: content
-                        checked: content === choiceDefault
+                        text: displayedValue
+                        checked: datasetValue === choiceDefault
                     }
                 }
             }
@@ -190,9 +199,9 @@ Item  {
                 width: 200
                 height: fieldEdit.height
                 font.pixelSize: Style.textSize
-                model: arrayModel
+                model: stringModel
                 onCurrentTextChanged: aModel.setProperty(modelIndex, proto.name, currentText)
-                currentIndex: Master.findIndexInModel(arrayModel, function(item) { return item.content === choiceDefault })
+                currentIndex: Master.findIndexInModel(stringModel, function(item) { return item.content === choiceDefault })
                 Component.onCompleted: if (choiceDefault === value) // if choiceDefault contains default values, it hasn't been initialized
                                            currentIndex = 0
 
@@ -239,19 +248,19 @@ Item  {
                 SmallButton {
                     height: fieldEdit.height
                     text: "\uf067"
-                    enabled: (arrayModel.count < 11)
+                    enabled: (stringModel.count < 11)
                     ToolTip.visible: hovered
                     ToolTip.text: qsTr("Add to end")
-                    onClicked: arrayModel.append({ "content": "" })
+                    onClicked: stringModel.append({ "content": "" })
                 }
 
                 SmallButton {
                     height: fieldEdit.height
                     text: "\uf068"
-                    enabled: (arrayModel.count > 0)
+                    enabled: (stringModel.count > 0)
                     ToolTip.visible: hovered
                     ToolTip.text: qsTr("Remove last")
-                    onClicked: arrayModel.remove(arrayModel.count - 1)
+                    onClicked: stringModel.remove(stringModel.count - 1)
                 }
 
                 Item { Layout.fillWidth: true }
@@ -260,7 +269,7 @@ Item  {
                     id: cancelButton
                     height: fieldEdit.height
                     Layout.preferredWidth: 100
-                    text: "Cancel"
+                    text: qsTr("Cancel")
                     onClicked: {
                         fieldEdit.forceActiveFocus()    // Restore focus before closing popup
                         stringsPopup.close()
@@ -271,7 +280,7 @@ Item  {
                     id: okButton
                     height: fieldEdit.height
                     Layout.preferredWidth: 100
-                    text: "OK"
+                    text: qsTr("Ok")
                     onClicked: {
                         arrayModelToStringArray()
                         fieldEdit.forceActiveFocus()    // Restore focus before closing popup
@@ -294,13 +303,13 @@ Item  {
                     spacing: 2
 
                     Repeater {
-                        model: arrayModel
+                        model: stringModel
                         UnderlinedTextInput {
                             width: parent.width
                             height: fieldEdit.height
                             activeFocusOnTab: true
                             text: content
-                            onTextChanged: arrayModel.setProperty(index, "content", text)
+                            onTextChanged: stringModel.setProperty(index, "content", text)
                         }
                     }
                 }
