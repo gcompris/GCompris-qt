@@ -40,7 +40,10 @@ DatasetEditorBase {
         ListElement { name: "correctAnswers";       label: qsTr("Correct answers");     type: "string_array";   def: "[]" }
         ListElement { name: "correctAnswerText";    label: qsTr("Correct answer text"); type: "string";         def: "" }
         ListElement { name: "wrongAnswerText";      label: qsTr("Wrong answer text");   type: "string";         def: "" }
-        ListElement { name: "mode";                 label: qsTr("Mode");                type: "choice";         def: `[ "oneAnswer", "multipleAnswers" ]` }
+        // mode is inserted in the global Component.onCompleted function.
+        // We cannot implement "choice" directly as ListElement due to the fact
+        // that the values are variables and only static values are accepted
+        //ListElement { name: "mode";                 label: qsTr("Mode");                type: "choice";         def: `[ "oneAnswer", "multipleAnswers" ]` }
     }
 
     RowLayout {
@@ -193,12 +196,12 @@ DatasetEditorBase {
                                 property int modelIndex: index
                                 spacing: 2
                                 FieldEdit { name: "shuffleAnswers" }
+                                FieldEdit { name: "mode" }
                                 FieldEdit { name: "question" }
                                 FieldEdit { name: "answers" }
                                 FieldEdit { name: "correctAnswers" }
                                 FieldEdit { name: "correctAnswerText" }
                                 FieldEdit { name: "wrongAnswerText" }
-                                FieldEdit { name: "mode" }
                             }
                         }
                     }
@@ -207,5 +210,14 @@ DatasetEditorBase {
         }
     }
 
-    Component.onCompleted: mainModel = datasetEditor.jsonToListModel(prototypeStack, JSON.parse(textActivityData))
+    readonly property var inputTypeChoices: [
+        { "datasetValue": "oneAnswer", "displayedValue": qsTr("One answer valid") },
+        { "datasetValue": "multipleAnswers", "displayedValue": qsTr("Multiple answers") }
+    ]
+    Component.onCompleted: {
+        // We insert dynamically here the choice
+        subPrototype.append({name: "mode", label: qsTr("Mode"), type: "choice", values: inputTypeChoices})
+
+        mainModel = datasetEditor.jsonToListModel(prototypeStack, JSON.parse(textActivityData))
+    }
 }
