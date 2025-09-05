@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-04-21 10:40+0300\n"
+"PO-Revision-Date: 2025-09-04 14:59+0300\n"
 "Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.04.0\n"
+"X-Generator: Lokalize 25.08.0\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -19389,7 +19389,7 @@ msgstr "Yazıtipi seçici"
 #: activities/menu/ConfigurationItem.qml:378
 msgctxt "ConfigurationItem|"
 msgid "Font size"
-msgstr "Yazıtipi boyutu"
+msgstr "Yazıtipi puntosu"
 
 #: activities/menu/ConfigurationItem.qml:397
 #: activities/menu/ConfigurationItem.qml:430
