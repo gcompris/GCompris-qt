@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-13 02:28+0000\n"
-"PO-Revision-Date: 2025-09-03 12:02+0300\n"
+"PO-Revision-Date: 2025-09-04 09:57+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -584,19 +584,19 @@ msgstr ""
 #: activities/imagename/ActivityInfo.qml:21
 #, kde-format
 msgid "Drag and drop each item above its name."
-msgstr ""
+msgstr "יש לגרור כל פריט מעל השם שלו."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "instruments"
 #: activities/instruments/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the correct musical instrument."
-msgstr ""
+msgstr "יש ללחוץ על כלי הנגינה הנכון."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "land_safe"
 #: activities/land_safe/ActivityInfo.qml:18
 #, kde-format
 msgid "Use the arrow keys to pilot your spaceship safely onto the landing pad."
-msgstr ""
+msgstr "יש להשתמש במקשי החיצים כדי לנווט את החללית שלך בבטחה אל מתחם הנחיתה."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "lang"
 #: activities/lang/ActivityInfo.qml:24
@@ -604,7 +604,7 @@ msgstr ""
 msgid ""
 "Select the language you want to learn then review the words before doing the "
 "exercises."
-msgstr ""
+msgstr "נא לבחור את השפה ללמידה ואז לברור את המילים בטרם ביצוע התרגולים."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_additions"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_subtractions"
@@ -1038,7 +1038,7 @@ msgstr ""
 #: activities/roman_numerals/ActivityInfo.qml:18
 #, kde-format
 msgid "Learn and practice roman to arabic numerals conversion"
-msgstr ""
+msgstr "למידה ותרגול של המרת ספרות רומיות לערביות"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard_weight_avoirdupois"
@@ -1048,7 +1048,7 @@ msgstr ""
 #: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:18
 #, kde-format
 msgid "Drag the weights up to balance the scales."
-msgstr ""
+msgstr "יש לגרור את המשקולות למעלה כדי לאזן את המאזניים."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "share"
 #: activities/share/ActivityInfo.qml:18
@@ -1143,6 +1143,9 @@ msgid ""
 "number of the same operation to swap their position. Then, select the result "
 "box to type the result."
 msgstr ""
+"יש ליצור צמדים של מספרים שערכם הוא עשר. יש לבחור מספר, ואז לבחור מספר נוסף "
+"באותה הפעולה כדי להחליף בין המקומות שלהם. לאחר מכן, לבחור את תיבת התוצאה כדי "
+"להקליד את התוצאה."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_find"
 #: activities/tens_complement_find/ActivityInfo.qml:17
@@ -1161,6 +1164,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number, then select another "
 "number of the same operation to swap their position."
 msgstr ""
+"יש ליצור צמדים של מספרים שערכם הוא עשר. יש לבחור מספר, ואז לבחור מספר נוסף "
+"באותה הפעולה כדי להחליף בין המקומות שלהם."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_use"
 #: activities/tens_complement_use/ActivityInfo.qml:17
@@ -1170,6 +1175,8 @@ msgid ""
 "number in the list, then select an empty spot of an operation to move the "
 "selected number there."
 msgstr ""
+"יש לפרק את הפעולות כדי לכלול צמד של מספרים שערכם שווה לעשר. לאחר מכן לבחור "
+"מספר מהרשימה, ואז לבחור מקום ריק של פעולה כדי להעביר את המספר לשם."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe"
