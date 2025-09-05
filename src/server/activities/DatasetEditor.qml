@@ -114,7 +114,7 @@ Popup {
                 obj[elt.name] = elt.def
                 break
             case "choice":
-                obj[elt.name] = JSON.parse(elt.def)[0]      // Select first element by default
+                obj[elt.name] = elt.values.get(0)["datasetValue"]      // Select first element by default
                 break
             default:
                 obj[elt.name] = elt.def
@@ -136,7 +136,9 @@ Popup {
                 var obj = aModel.get(i)
                 for (var key in obj) {
                     var prototype = Master.findObjectInModel(protoStack[depth], function(item) { return item.name === key })
-                    if (obj[key] instanceof ListModel) {
+                    if (prototype.type === "choice") {
+                        js += indent.repeat(depth + 2) + `"${key}": "${obj[key]}"`
+                    } else if (obj[key] instanceof ListModel) {
                         js += indent.repeat(depth + 2) + `"${key}": ` +  listModelToJson(protoStack, obj[key], depth + 1)
                     } else if (prototype.type === "string_array") {
                         js += indent.repeat(depth + 2) + `"${key}": ` + obj[key] // string_array are deserialized
@@ -165,7 +167,9 @@ Popup {
             var obj = {}
             for (var j = 0; j < protoStack[depth].count; j++) {
                 var prototype = protoStack[depth].get(j)
-                if (prototype.type === "string_array") {
+                if (prototype.type === "choice") {
+                    obj[prototype.name] = data[i][prototype.name]
+                } else if (prototype.type === "string_array") {
                     obj[prototype.name] = JSON.stringify(data[i][prototype.name])                           // string_array are serialized
                 } else if (prototype.type === 'model') {
                     obj[prototype.name] = jsonToListModel(protoStack, data[i][prototype.name], depth + 1)   // Nested ListModel
