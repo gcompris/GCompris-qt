@@ -1,4 +1,4 @@
-/* GCompris - DataDisplay.qml for graduated_line_use
+/* GCompris - DataDisplay.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
  *
@@ -10,7 +10,7 @@
 
 import "../graduated_line_read"
 
-GraduatedLine {
+GraduatedLineDataDisplay {
     jsonData: parent.jsonData_
     resultSuccess: parent.resultSuccess_
 }

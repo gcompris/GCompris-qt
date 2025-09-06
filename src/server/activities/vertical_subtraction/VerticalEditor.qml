@@ -1,4 +1,4 @@
-/* GCompris - VerticalEditor.qml for vertical_subtraction
+/* GCompris - VerticalEditor.qml
  *
  * SPDX-FileCopyrightText: 2025 Bruno Anselme <be.root@free.fr>
  *
