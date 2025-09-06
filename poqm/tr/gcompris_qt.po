@@ -11210,13 +11210,13 @@ msgstr "İç Moğolistan"
 #: activities/geo-country/resource/board/board14_0.qml:45
 msgctxt "board14_0|"
 msgid "Ningxia"
-msgstr "Ningşia"
+msgstr "Ninşia"
 
 #. Province of China: Heilongjiang
 #: activities/geo-country/resource/board/board14_0.qml:52
 msgctxt "board14_0|"
 msgid "Heilongjiang"
-msgstr "Heilongcang"
+msgstr "Heiloncien"
 
 #. Province of China: Jilin
 #: activities/geo-country/resource/board/board14_0.qml:59
@@ -11228,7 +11228,7 @@ msgstr "Cilin"
 #: activities/geo-country/resource/board/board14_0.qml:66
 msgctxt "board14_0|"
 msgid "Liaoning"
-msgstr "Liaoning"
+msgstr "Liaonin"
 
 #. Province of China: Tianjin
 #: activities/geo-country/resource/board/board14_0.qml:73
@@ -11246,7 +11246,7 @@ msgstr "Pekin"
 #: activities/geo-country/resource/board/board14_0.qml:87
 msgctxt "board14_0|"
 msgid "Shandong"
-msgstr "Şandong"
+msgstr "Şandon"
 
 #. Province of China: Shanxi
 #: activities/geo-country/resource/board/board14_0.qml:94
@@ -11312,13 +11312,13 @@ msgstr "Hubei"
 #: activities/geo-country/resource/board/board14_0.qml:164
 msgctxt "board14_0|"
 msgid "Shanghai"
-msgstr "Şanghay"
+msgstr "Şanhay"
 
 #. Province of China: Zhejiang
 #: activities/geo-country/resource/board/board14_0.qml:171
 msgctxt "board14_0|"
 msgid "Zhejiang"
-msgstr "Jıcieng"
+msgstr "Jıcien"
 
 #. Province of China: Fujian
 #: activities/geo-country/resource/board/board14_0.qml:178
