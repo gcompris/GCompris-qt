@@ -1,4 +1,4 @@
-/* GCompris - BinaryBulb.qml for binary_bulb
+/* GCompris - BinaryBulb.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
  * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>

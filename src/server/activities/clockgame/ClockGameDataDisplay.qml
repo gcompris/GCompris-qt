@@ -1,4 +1,4 @@
-/* GCompris - ClockGame.qml for clockgame
+/* GCompris - ClockGameDataDisplay.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
  *

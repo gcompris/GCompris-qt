@@ -1,4 +1,4 @@
-/* GCompris - DataDisplay.qml for binary_bulb
+/* GCompris - DataDisplay.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
  *
@@ -8,7 +8,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-BinaryBulb {
+BinaryBulbDataDisplay {
     jsonData: parent.jsonData_
     resultSuccess: parent.resultSuccess_
 }

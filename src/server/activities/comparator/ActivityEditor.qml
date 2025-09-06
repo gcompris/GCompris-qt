@@ -1,4 +1,4 @@
-/* GCompris - ActivityEditor.qml for comparator
+/* GCompris - ActivityEditor.qml
  *
  * SPDX-FileCopyrightText: 2025 Johnny Jazeix <jazeix@gmail.com>
  *

@@ -1,4 +1,4 @@
-/* GCompris - DataDisplay.qml for guess24
+/* GCompris - DataDisplay.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
  *
@@ -8,6 +8,6 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-Guess24 {
+Guess24DataDisplay {
     jsonData: parent.jsonData_
 }

@@ -1,4 +1,4 @@
-/* GCompris - MultipleChoiceEditor.qml for multiple_choice_questions
+/* GCompris - MultipleChoiceEditor.qml
  *
  * SPDX-FileCopyrightText: 2025 Bruno Anselme <be.root@free.fr>
  *
