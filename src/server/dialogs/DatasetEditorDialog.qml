@@ -1,4 +1,4 @@
-/* GCompris - DatasetEditor.qml
+/* GCompris - DatasetEditorDialog.qml
  *
  * SPDX-FileCopyrightText: 2021-2025 Emmanuel Charruau <echarruau@gmail.com>
  *
@@ -193,7 +193,7 @@ Popup {
 
     onAboutToShow: {
         var url = `${Master.activityBaseUrl}/${activity_Name}/ActivityEditor.qml`
-        editorLoader.sourceUrl = file.exists(url) ? url : `NoEditor.qml`
+        editorLoader.sourceUrl = file.exists(url) ? url : `${Master.activityBaseUrl}/NoEditor.qml`
     }
 
     onOpened: {
