@@ -1,4 +1,4 @@
-/* GCompris - LearnDecimals.qml for learn_decimals, learn_quantities, learn_decimals_additions, learn_decimals_subtraction
+/* GCompris - LearnDecimalsDataDisplay.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
  *
