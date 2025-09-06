@@ -176,7 +176,7 @@ Item {
             }
         }
 
-        DatasetEditor {
+        DatasetEditorDialog {
             id: datasetEditor
             addMode: true
             dataset_Name: ""
