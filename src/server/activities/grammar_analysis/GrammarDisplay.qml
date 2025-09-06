@@ -1,4 +1,4 @@
-/* GCompris - GrammarDisplay.qml for grammar_analysis
+/* GCompris - GrammarDisplay.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
  * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>

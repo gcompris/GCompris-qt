@@ -1,4 +1,4 @@
-/* GCompris - Guess24.qml for guess24
+/* GCompris - Guess24DataDisplay.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
  *

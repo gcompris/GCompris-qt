@@ -1,4 +1,4 @@
-/* GCompris - MultipleChoices.qml for multiple_choice_questions
+/* GCompris - MultipleChoicesDataDisplay.qml
  *
  * SPDX-FileCopyrightText: 2024 Johnny Jazeix <jazeix@gmail.fr>
  *
