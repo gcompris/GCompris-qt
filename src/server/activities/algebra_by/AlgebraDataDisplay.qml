@@ -1,7 +1,6 @@
-/* GCompris - LearnDigits.qml for learn_digits, learn_additions, learn_subtractions
+/* GCompris - AlgebraDataDisplay.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
- * SPDX-FileCopyrightText: 2024 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
@@ -17,14 +16,12 @@ import "../../singletons"
 InformationLine {
     id: lineItem
     required property var jsonData
-    property bool isOperation: false
+    property string proposal: (jsonData.proposal !== "") ? jsonData.proposal : qsTr("timeout")
 
-    label: isOperation ?
-        //: %1 is an operation, %2 the result. Example: "2 x 5 = 10"
-        qsTr("%1 = %2").arg(lineItem.jsonData.questionText).arg(lineItem.jsonData.question) :
-        lineItem.jsonData.questionText
+    //: %1 is an operation, %2 the result. Example: "2 x 5 = 10"
+    label: qsTr("%1 = %2").arg(lineItem.jsonData.operation).arg(lineItem.jsonData.result)
     //: %1 is the answer. Example: "Answer: 10"
-    info: qsTr("Answer: %1").arg(lineItem.jsonData.answer)
+    info: qsTr("Answer: %1").arg(lineItem.proposal)
     infoText.font.bold: true
     infoText.color: Style.selectedPalette.highlightedText
     showResult: true

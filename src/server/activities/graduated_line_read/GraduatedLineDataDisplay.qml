@@ -1,4 +1,4 @@
-/* GCompris - GraduatedLine.qml for graduated_line_read and graduated_line_use
+/* GCompris - GraduatedLineDataDisplay.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
  * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>

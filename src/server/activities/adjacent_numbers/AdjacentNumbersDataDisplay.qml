@@ -1,4 +1,4 @@
-/* GCompris - AdjacentNumbers.qml for adjacent_numbers
+/* GCompris - AdjacentNumbersDataDisplay.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
  *

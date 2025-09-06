@@ -1,4 +1,4 @@
-/* GCompris - DataDisplay.qml for multiple_choice_questions
+/* GCompris - DataDisplay.qml
  *
  * SPDX-FileCopyrightText: 2024 Johnny Jazeix <jazeix@gmail.fr>
  *
@@ -8,7 +8,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-MultipleChoices {
+MultipleChoiceDataDisplay {
     jsonData: parent.jsonData_
     resultSuccess: parent.resultSuccess_
 }

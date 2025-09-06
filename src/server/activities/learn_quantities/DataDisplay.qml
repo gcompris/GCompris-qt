@@ -1,4 +1,4 @@
-/* GCompris - DataDisplay.qml for learn_quantities
+/* GCompris - DataDisplay.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
  *
@@ -10,7 +10,7 @@
 
 import "../learn_decimals"
 
-LearnDecimals {
+LearnDecimalsDataDisplay {
     jsonData: parent.jsonData_
     resultSuccess: parent.resultSuccess_
 }

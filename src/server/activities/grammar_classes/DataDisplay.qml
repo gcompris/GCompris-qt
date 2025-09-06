@@ -1,4 +1,4 @@
-/* GCompris - DataDisplay.qml for grammar_classes
+/* GCompris - DataDisplay.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
  *

@@ -1,4 +1,4 @@
-/* GCompris - DataDisplay.qml for comparator
+/* GCompris - ComparatorDataDisplay.qml
  *
  * SPDX-FileCopyrightText: 2025 Johnny Jazeix <jazeix@gmail.com>
  *

@@ -1,4 +1,4 @@
-/* GCompris - DataDisplay.qml for learn_additions
+/* GCompris - DataDisplay.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
  *
@@ -10,7 +10,7 @@
 
 import "../learn_digits"
 
-LearnDigits {
+LearnDigitsDataDisplay {
     jsonData: parent.jsonData_
     resultSuccess: parent.resultSuccess_
     isOperation: true
