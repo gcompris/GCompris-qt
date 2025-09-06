@@ -13,6 +13,8 @@ import QtQuick
 import QtQml.Models
 import QtQuick.Controls.Basic
 
+import core 1.0
+
 import "../singletons"
 import "../components"
 import "../dialogs"
@@ -131,6 +133,40 @@ Item {
                 ViewButton {
                     width: splitDatasetView.bigButtonWidth
                     height: splitDatasetView.bigButtonHeight
+                    text: "\uf492 " + qsTr("Test dataset")
+                    enabled: datasetsView.selectedDataset != -1
+                    onClicked: {
+                        testDatasetWindow.visible = true
+                        var currentActivity = Master.findObjectInModel(Master.allActivitiesModel, function(item) { return item.activity_id === datasetsView.selectedActivity })
+                        print("Run ", currentActivity.activity_name, " with data " /*, Master.getDataset(datasetsView.selectedDataset).dataset_content*/)
+                        //ActivityInfoTree.currentActivity = currentActivity.activity_name
+                        
+activityLoader.setSource("qrc:/gcompris/src/activities/" + currentActivity.activity_name,
+                        {
+                            //'menu': activity,
+                            'activityInfo': ActivityInfoTree.currentActivity,
+                            //'levelFolder': currentLevels,
+                            //'audioVoices': audioVoices,
+                            //'loading': loading
+                        })
+                    }
+                }
+
+                Window {
+                    id: testDatasetWindow
+                    visible: false
+                    Loader {
+                        id: activityLoader
+                        asynchronous: true
+                        onStatusChanged: {
+                            loadActivity();
+                        }
+                    }
+                }
+
+                ViewButton {
+                    width: splitDatasetView.bigButtonWidth
+                    height: splitDatasetView.bigButtonHeight
                     text: "\uf2f6 " + qsTr("Send to clients")
                     enabled: datasetsView.selectedDataset != -1
                     onClicked: {
@@ -176,7 +212,7 @@ Item {
             }
         }
 
-        DatasetEditor {
+        DatasetEditorDialog {
             id: datasetEditor
             addMode: true
             dataset_Name: ""
