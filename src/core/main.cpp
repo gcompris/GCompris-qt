@@ -314,7 +314,6 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty("clientNetworkMessages", &clientNetworkMessages);
 #endif
 
-    engine.load(QUrl("qrc:/gcompris/src/core/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::quit, DownloadManager::getInstance(),
                      &DownloadManager::shutdown);
 
