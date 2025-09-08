@@ -432,46 +432,22 @@ Item {
             }
         }
 
-        Flow {
-            GCText {
-                id: teacherIdLabel
-                text: qsTr("Teacher identifier")
-                fontSize: mediumSize
-                width: dialogConfig.contentWidth / 2
-                wrapMode: Text.WordWrap
-            }
-            TextInput {
-                id: teacherIdInput
-                height: teacherIdLabel.height
-                width: dialogConfig.contentWidth / 2
-
-                Rectangle {
-                    color: "transparent"
-                    anchors.fill: parent
-                    border.color: "red"
-                    border.width: 2
-                }
-            }
+        Rectangle {
+            width: dialogConfig.contentWidth
+            height: GCStyle.thinBorder
+            color: GCStyle.darkBorder
         }
-        Flow {
-            GCText {
-                id: teacherPortLabel
-                text: qsTr("Teacher port")
-                fontSize: mediumSize
-                width: dialogConfig.contentWidth / 2
-                wrapMode: Text.WordWrap
-            }
-            TextInput {
-                id: teacherPortInput
-                height: teacherPortLabel.height
-                width: dialogConfig.contentWidth / 2
 
-                Rectangle {
-                    color: "transparent"
-                    anchors.fill: parent
-                    border.color: "red"
-                    border.width: 2
-                }
+        GCButton {
+            id: serverConfigButton
+            height: GCStyle.smallButtonHeight
+            width:  dialogConfig.contentWidth
+            text: qsTr("Teacher's server config")
+            onClicked: {
+                serverConfigPage.teacherId = dialogConfig.teacherId;
+                serverConfigPage.teacherPort = dialogConfig.teacherPort;
+                dialogConfig.visible = false;
+                serverConfigPage.visible = true;
             }
         }
     }
@@ -495,8 +471,8 @@ Item {
     property int minFilter
     property int maxFilter
 
-    property alias teacherId: teacherIdInput.text
-    property alias teacherPort: teacherPortInput.text
+    property string teacherId
+    property string teacherPort
 
     function extractMusicNameFromPath(musicPath: string): string {
         var musicDirectoryPath = ApplicationInfo.getAudioFilePath("backgroundMusic/")
@@ -591,12 +567,10 @@ Item {
         ApplicationSettings.font = fonts.get(fontBox.currentIndex).text
         ApplicationSettings.fontCapitalization = fontCapitalizationModel.get(fontCapitalizationBox.currentIndex).value
 
-        teacherIdInput.accepted()
         if(ApplicationSettings.teacherId != teacherId) {
             ApplicationSettings.teacherId = teacherId
         }
 
-        teacherPortInput.accepted()
         if(ApplicationSettings.teacherPort != teacherPort) {
             ApplicationSettings.teacherPort = teacherPort
         }

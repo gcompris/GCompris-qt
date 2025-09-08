@@ -1121,6 +1121,14 @@ ActivityBase {
                     dialogActivityConfig.configItem.visible = true
                 }
             }
+
+            ServerConfigPage {
+                id: serverConfigPage
+                onClose: {
+                    visible = false;
+                    dialogActivityConfig.configItem.visible = true;
+                }
+            }
         }
     }
 }
