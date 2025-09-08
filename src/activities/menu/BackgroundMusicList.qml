@@ -95,22 +95,26 @@ Rectangle {
                 boundsBehavior: Flickable.StopAtBounds
                 clip: true
 
-                Grid {
+                Flow {
                     id: musicGrid
-                    width: parent.width + GCStyle.halfMargins
+                    width: parent.width
                     spacing: GCStyle.halfMargins
+
+                    property int baseButtonWidth: 192 * ApplicationInfo.ratio
+                    property int buttonsPerLine: Math.floor(width / baseButtonWidth)
+                    property int buttonWidth: (width - (buttonsPerLine - 1) * spacing) / buttonsPerLine
 
                     Repeater {
                         model: dialogActivityConfig.configItem ? dialogActivityConfig.configItem.allBackgroundMusic : 0
 
                         Item {
-                            width: Math.floor((musicGrid.width - GCStyle.baseMargins) / 3)
-                            height: title.height
+                            width: musicGrid.buttonWidth
+                            height: GCStyle.smallButtonHeight
 
                             GCButton {
                                 text: modelData.slice(0, modelData.lastIndexOf('.'))
-                                width: parent.width - GCStyle.halfMargins
-                                height: parent.height - GCStyle.halfMargins
+                                width: parent.width
+                                height: parent.height
                                 theme: "dark"
                                 rightIconSize: selectedIcon.height + GCStyle.baseMargins
 
