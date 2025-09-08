@@ -25,9 +25,9 @@ Rectangle {
 
     Keys.onPressed: (event) => {
         if(event.key === Qt.Key_Down) {
-            scrollMusicList.down();
+            scrollItem.down();
         } else if(event.key === Qt.Key_Up) {
-            scrollMusicList.up();
+            scrollItem.up();
         }
     }
 
