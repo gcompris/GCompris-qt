@@ -18921,40 +18921,40 @@ msgctxt "BackgroundMusicList|"
 msgid "Background music"
 msgstr "पृष्ठभूमि संगीत"
 
-#: activities/menu/BackgroundMusicList.qml:136
+#: activities/menu/BackgroundMusicList.qml:140
 msgctxt "BackgroundMusicList|"
 msgid "Disable the background music if you don't want to play them."
 msgstr "यदि भवान् तान् वादयितुम् इच्छति तर्हि पृष्ठभूमिसङ्गीतं निष्क्रियं कुर्वन्तु ।"
 
 #. Current background music playing
-#: activities/menu/BackgroundMusicList.qml:173
+#: activities/menu/BackgroundMusicList.qml:177
 msgctxt "BackgroundMusicList|"
 msgid "Now Playing:"
 msgstr "अधुना क्रीडति:"
 
 #. Title of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:181
+#: activities/menu/BackgroundMusicList.qml:185
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Title: %1"
 msgstr "शीर्षकम् : %1"
 
 #. Artist of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:189
+#: activities/menu/BackgroundMusicList.qml:193
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Artist: %1"
 msgstr "कलाकारः %1"
 
 #. Year of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:197
+#: activities/menu/BackgroundMusicList.qml:201
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Year: %1"
 msgstr "वर्षः %1"
 
 #. Copyright of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:205
+#: activities/menu/BackgroundMusicList.qml:209
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Copyright: %1"

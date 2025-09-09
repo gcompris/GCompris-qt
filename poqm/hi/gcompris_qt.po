@@ -21381,19 +21381,19 @@ msgctxt "BackgroundMusicList|"
 msgid "Background music"
 msgstr "पृष्ठभूमि"
 
-#: activities/menu/BackgroundMusicList.qml:136
+#: activities/menu/BackgroundMusicList.qml:140
 msgctxt "BackgroundMusicList|"
 msgid "Disable the background music if you don't want to play them."
 msgstr ""
 
 #. Current background music playing
-#: activities/menu/BackgroundMusicList.qml:173
+#: activities/menu/BackgroundMusicList.qml:177
 msgctxt "BackgroundMusicList|"
 msgid "Now Playing:"
 msgstr ""
 
 #. Title of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:181
+#: activities/menu/BackgroundMusicList.qml:185
 #, fuzzy, qt-format
 #| msgctxt "BabyWordprocessor|"
 #| msgid "Title"
@@ -21402,7 +21402,7 @@ msgid "Title: %1"
 msgstr "शीर्षक"
 
 #. Artist of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:189
+#: activities/menu/BackgroundMusicList.qml:193
 #, fuzzy, qt-format
 #| msgctxt "LandSafe|"
 #| msgid "Altitude: %1"
@@ -21411,7 +21411,7 @@ msgid "Artist: %1"
 msgstr "ऊँचाई: %1"
 
 #. Year of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:197
+#: activities/menu/BackgroundMusicList.qml:201
 #, fuzzy, qt-format
 #| msgctxt "BabyWordprocessor|"
 #| msgid "Title"
@@ -21420,7 +21420,7 @@ msgid "Year: %1"
 msgstr "शीर्षक"
 
 #. Copyright of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:205
+#: activities/menu/BackgroundMusicList.qml:209
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Copyright: %1"
