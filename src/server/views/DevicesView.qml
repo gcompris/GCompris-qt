@@ -34,11 +34,11 @@ Item {
         case NetConst.NOT_CONNECTED:
             return "transparent"
         case NetConst.BAD_PASSWORD_INPUT:
-            return "#db0c0c" // red
+            return "#d94444" // red
         case NetConst.CONNECTED:
-            return "#1be523" // green
+            return "#5cc854" // green
         case NetConst.CONNECTION_LOST:
-            return "#d7d700" // yellow
+            return "#e7bb36" // yellow
         case NetConst.DISCONNECTED:
             return Style.selectedPalette.accent
         default:
