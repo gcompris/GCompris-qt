@@ -11,15 +11,14 @@
 import QtQuick
 import core 1.0
 
-/**
- * A QML component to visualize number of wins.
- * @ingroup components
- *
- * ScoreItem consists of player score (@ref playerScore)
- * and player image (@ref playerImageSource).
- * Mostly used in multi-player activities.
- *
- * @inherit QtQuick.Item
+/*!
+  \inqmlmodule core
+  A QML component to visualize number of wins.
+  \ingroup components
+
+  ScoreItem consists of player score (@ref playerScore)
+  and player image (@ref playerImageSource).
+  Mostly used in multi-player activities.
  */
 Item {
     id: scoreItem
@@ -34,7 +33,7 @@ Item {
      * type:string
      * Source of background image to display.
      *
-     * @sa backgroundImage.source
+     * \sa backgroundImage.source
      */
     property string backgroundImageSource
 
@@ -42,7 +41,7 @@ Item {
      * type:string
      * Source of player image to display.
      *
-     * @sa playerImage.source
+     * \sa playerImage.source
      */
     property string playerImageSource
 
@@ -50,7 +49,7 @@ Item {
      * type:int
      * Count of score(i.e. number of wins).
      *
-     * @sa scoreLabel.text
+     * \sa scoreLabel.text
      */
     property int playerScore
 
@@ -59,7 +58,7 @@ Item {
      * Holds the point from which the player image
      * is scaled on x-axis.
      *
-     * @sa scaleTransform.origin.x
+     * \sa scaleTransform.origin.x
      */
     property int playerScaleOriginX
 
@@ -68,7 +67,7 @@ Item {
      * Holds the point from which the player image
      * is scaled on y-axis.
      *
-     * @sa scaleTransform.origin.y
+     * \sa scaleTransform.origin.y
      */
     property int playerScaleOriginY
 

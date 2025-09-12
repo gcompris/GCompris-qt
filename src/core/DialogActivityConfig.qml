@@ -10,25 +10,25 @@
 import QtQuick
 import core 1.0
 
-/**
- * A QML component for a full screen configuration dialog.
- * @ingroup components
- *
- * All user editable settings are presented to the user in a
- * DialogActivityConfig dialog. The global configuration can be accessed
- * through the Bar in the main menu, activity specific configuration from the
- * respective activity.
- *
- * All config items that are shown in this dialog are persisted
- * using ApplicationSettings.
- *
- * For an example have a look at Menu.qml.
- *
- * For more details on how to add configuration to an activity cf.
- * [the wiki](https://invent.kde.org/education/gcompris/-/wikis/Developers-corner/Development-process#adding-a-configuration-for-a-specific-activity)
- *
- * @sa ApplicationSettings
- * @inherit QtQuick.Item
+/*!
+  \inqmlmodule core
+  A QML component for a full screen configuration dialog.
+  \ingroup components
+
+  All user editable settings are presented to the user in a
+  DialogActivityConfig dialog. The global configuration can be accessed
+  through the Bar in the main menu, activity specific configuration from the
+  respective activity.
+
+  All config items that are shown in this dialog are persisted
+  using ApplicationSettings.
+
+  For an example have a look at Menu.qml.
+
+  For more details on how to add configuration to an activity cf.
+  [the wiki](https://invent.kde.org/education/gcompris/-/wikis/Developers-corner/Development-process#adding-a-configuration-for-a-specific-activity)
+
+  \sa ApplicationSettings
  */
 Rectangle {
     id: dialogActivityContent

@@ -12,24 +12,23 @@ import QtMultimedia
 import core 1.0
 
 /**
- * A QML component for audio playback.
- * @ingroup components
- *
- * Wrapper component around QtQuick's Audio element, handling all audio
- * playback in GCompris uniformly.
- *
- * It maintains a queue of audio-sources (@ref files) that are played back
- * sequentially, to which the user can enqueue files that should be scheduled
- * for playback.
- *
- * To make sure an audio voice will be localized, replace the locale part
- * of the file by '$LOCALE'.
- *
- * To makes sure that all audio sources are normalized with respect to
- * ApplicationInfo.CompressedAudio replace the 'ogg' part of the file by
- * '$CA'.
- *
- * @inherit QtQuick.Item
+  \inqmlmodule core
+  A QML component for audio playback.
+  \ingroup components
+
+  Wrapper component around QtQuick's Audio element, handling all audio
+  playback in GCompris uniformly.
+
+  It maintains a queue of audio-sources (@ref files) that are played back
+  sequentially, to which the user can enqueue files that should be scheduled
+  for playback.
+
+  To make sure an audio voice will be localized, replace the locale part
+  of the file by '$LOCALE'.
+
+  To makes sure that all audio sources are normalized with respect to
+  ApplicationInfo.CompressedAudio replace the 'ogg' part of the file by
+  '$CA'.
  */
 Item {
     id: gcaudio
@@ -197,7 +196,7 @@ Item {
 
     /**
      * Flushes the list of scheduled files.
-     * @sa files
+     * \sa files
      */
     function clearQueue() {
         while(files.length > 0) {

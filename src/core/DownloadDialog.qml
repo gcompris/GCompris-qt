@@ -13,18 +13,18 @@ import QtQuick.Layouts
 import QtQuick.Controls.Basic
 import "qrc:/gcompris/src/core/core.js" as Core
 
-/**
- * A QML component visualizing download progress.
- * @ingroup infrastructure
- *
- * A GCDialog style dialog providing visual feedback for download progress.
- * Uses DownloadManager for download control.
- *
- * Can be conveniently instantiated dynamically using showDownloadDialog
- * from core.js.
- *
- * @inherit QtQuick.Item
- * @sa DownloadManager, showDownloadDialog
+/*!
+  \inqmlmodule core
+  A QML component visualizing download progress.
+  \ingroup infrastructure
+ 
+  A GCDialog style dialog providing visual feedback for download progress.
+  Uses DownloadManager for download control.
+ 
+  Can be conveniently instantiated dynamically using showDownloadDialog
+  from core.js.
+ 
+  \sa DownloadManager, showDownloadDialog
  */
 Item {
     id: downloadDialog

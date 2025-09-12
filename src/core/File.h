@@ -15,11 +15,10 @@
 #include <QString>
 #include <QtQml/qqmlregistration.h>
 #include <config.h>
-/**
- * @class File
- * @short A helper component for accessing local files from QML.
- * @ingroup components
- *
+/*!
+   \class File
+   \brief A helper component for accessing local files from QML.
+   \ingroup components
  */
 class File : public QObject
 {

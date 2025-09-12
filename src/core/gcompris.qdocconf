@@ -1,0 +1,53 @@
+include($KDE_DOCS/global/qt-module-defaults.qdocconf)
+
+project = core
+description = Internal API documentation to use in the different activities
+
+documentationinheaders = true
+
+headerdirs += .
+sourcedirs += . ../activities/template
+
+# what kind of sources should be processed
+sources.fileextensions = "*.cpp *.qdoc *.qml"
+# what kind of headers should be processed
+headers.fileextensions = "*.h"
+
+excludefiles += main.qml
+
+outputformats = HTML
+
+navigation.landingpage  = "GCompris"
+
+depends +=          \
+    qtcharts        \
+    qtcore          \
+    qtgui           \
+    qtmultimedia    \
+    qtqml           \
+    qtquick         \
+    qtquickcontrols \
+    qtsensors
+
+qhp.projects            = GCompris
+
+qhp.GCompris.file                = gcompris.qhp
+qhp.GCompris.namespace           = core
+qhp.GCompris.virtualFolder       = gcompris
+qhp.GCompris.indexTitle          = GCompris
+qhp.GCompris.indexRoot           =
+
+qhp.GCompris.subprojects         = core
+qhp.GCompris.subprojects.core.title = QML objects
+qhp.GCompris.subprojects.core.indexTitle = GCompris QML core
+qhp.GCompris.subprojects.core.selectors = qmlmodule:core
+qhp.GCompris.subprojects.core.sortPages = true
+
+qhp.GCompris.subprojects         = classes
+qhp.GCompris.subprojects.classes.title = C++ classes
+qhp.GCompris.subprojects.classes.indexTitle = GCompris C++ classes
+qhp.GCompris.subprojects.classes.selectors = qmlclasses:core
+qhp.GCompris.subprojects.classes.sortPages = true
+
+tagfile = gcompris.tags
+

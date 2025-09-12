@@ -10,17 +10,16 @@
 import QtQuick
 import core 1.0
 
-/**
- * A QML component providing an on screen keyboard.
- * @ingroup components
- *
- * VirtualKeyboard displays a virtual on screen keyboard that can be used
- * in applications that need keyboard support, especially on mobile devices.
- *
- * The component itself does not provide builtin localized keyboard layouts,
- * the user has to define the keyboard-layout dynamically.
- *
- * @inherit QtQuick.Item
+/*!
+  \inqmlmodule core
+  A QML component providing an on screen keyboard.
+  \ingroup components
+
+  VirtualKeyboard displays a virtual on screen keyboard that can be used
+  in applications that need keyboard support, especially on mobile devices.
+
+  The component itself does not provide builtin localized keyboard layouts,
+  the user has to define the keyboard-layout dynamically.
  */
 Item {
     id: keyboard
@@ -31,7 +30,7 @@ Item {
      * type:list
      *
      * Default basic qwerty-layout used unless the user provides another.
-     * @sa layout.
+     * \sa layout.
      */
     readonly property var qwertyLayout:
                       [  [ { label: "1", shiftLabel: "!" },
@@ -138,7 +137,7 @@ Item {
      *
      * Default is to use the qwertyLayout.
      *
-     * @sa qwertyLayout shiftKey
+     * \sa qwertyLayout shiftKey
      */
     property var layout: null
 

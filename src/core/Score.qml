@@ -10,26 +10,25 @@
 import QtQuick
 import core 1.0
 
-/**
- * A QML component to visualize sub-level progress.
- * @ingroup components
- *
- * Score usually consists of current-level (@ref currentSubLevel)
- * and the max number of levels (@ref numberOfSubLevels).
- *
- * It is mainly used as a score counter, starting at 0 and increasing
- * directly after a good answer.
- *
- * It can in some cases be used as a sub-level counter, starting at 1.
- * But it should be used as sub-level counter only if the sub-level increases
- * regardless of if the answer is good or bad, or if there is no answer to give
- * to reach next sub-level. In this case, don't forget to set the variable
- * "isScoreCounter" to false, so it will look a bit different visually.
- *
- * For other cases an activity can also directly define the whole message
- * it wants to be shown (@ref message).
- *
- * @inherit QtQuick.Rectangle
+/*!
+  \inqmlmodule core
+  A QML component to visualize sub-level progress.
+  \ingroup components
+
+  Score usually consists of current-level (@ref currentSubLevel)
+  and the max number of levels (@ref numberOfSubLevels).
+
+  It is mainly used as a score counter, starting at 0 and increasing
+  directly after a good answer.
+
+  It can in some cases be used as a sub-level counter, starting at 1.
+  But it should be used as sub-level counter only if the sub-level increases
+  regardless of if the answer is good or bad, or if there is no answer to give
+  to reach next sub-level. In this case, don't forget to set the variable
+  "isScoreCounter" to false, so it will look a bit different visually.
+
+  For other cases an activity can also directly define the whole message
+  it wants to be shown (@ref message).
  */
 Rectangle {
     id: score
@@ -38,7 +37,7 @@ Rectangle {
      * type:int
      * Size of the font used in pt.
      *
-     * @sa GCFont.fontSize.
+     * \sa GCFont.fontSize.
      */
     property alias fontSize: subLevelText.fontSize
 
@@ -46,7 +45,7 @@ Rectangle {
      * type:string
      * Define how text size is determined
      *
-     * @sa GCFont.fontSizeMode.
+     * \sa GCFont.fontSizeMode.
      */
     property alias fontSizeMode: subLevelText.fontSizeMode
     
@@ -60,7 +59,7 @@ Rectangle {
      * type:int
      * Total number of sub-levels to show.
      *
-     * @sa currentSubLevel
+     * \sa currentSubLevel
      */
     property int numberOfSubLevels
 
@@ -68,7 +67,7 @@ Rectangle {
      * type:int
      * Current sub-level to show.
      *
-     * @sa numberOfSubLevels
+     * \sa numberOfSubLevels
      */
     property int currentSubLevel
 

@@ -10,16 +10,16 @@
 import QtQuick
 import core 1.0
 
-/**
- * A QML loader that wraps ParticleSystemStar.
- * @ingroup components
- *
- * Wrapper loading/activating a @ref ParticleSystemStarLoader only if
- * the Android systems supports fragment shaders according to
- * ApplicationInfo.hasShader.
- *
- * @inherit QtQuick.Loader
- * @sa ParticleSystemStar ApplicationInfo.hasShader
+/*!
+  \inqmlmodule core
+  A QML loader that wraps ParticleSystemStar.
+  \ingroup components
+
+  Wrapper loading/activating a @ref ParticleSystemStarLoader only if
+  the Android systems supports fragment shaders according to
+  ApplicationInfo.hasShader.
+
+  \sa ParticleSystemStar ApplicationInfo.hasShader
  */
 Loader {
     anchors.fill: parent

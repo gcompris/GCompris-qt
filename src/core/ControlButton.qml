@@ -10,10 +10,11 @@
 import QtQuick
 import core 1.0
 
-/**
-* A QML to use as button
-*
-* Currently used in land_safe and gravity activities
+/*!
+ \inqmlmodule core
+ A QML to use as button
+
+ Currently used in land_safe and gravity activities
 */
 
 Image {

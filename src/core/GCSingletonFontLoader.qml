@@ -13,13 +13,13 @@ import core 1.0
 // FIXME: this triggers a doxygen error, why?
 pragma Singleton
 
-/**
- * A QML singleton helper to load currently active font based on current font
- * settings
- * @ingroup infrastructure
- *
- * @inherit QtQuick.QtObject
- * @sa ApplicationSettings.isEmbeddedFont, ApplicationSettings.font
+/*!
+  \inqmlmodule core
+  A QML singleton helper to load currently active font based on current font
+  settings
+  \ingroup infrastructure
+ 
+  \sa ApplicationSettings.isEmbeddedFont, ApplicationSettings.font
  */
 QtObject {
     property QtObject fontLoader: FontLoader {

@@ -34,7 +34,7 @@ include(FeatureSummary)
 include(GNUInstallDirs)
 
 # cmake modules setup
-find_package(ECM 1.4.0 QUIET NO_MODULE)
+find_package(ECM 6.11.0 QUIET NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${CMAKE_SOURCE_DIR}/cmake/)
 
 # KDE po to qm tools
@@ -130,9 +130,13 @@ if((UNIX AND NOT APPLE AND NOT ANDROID) OR WIN32)
   set_package_properties(OpenSSL PROPERTIES TYPE REQUIRED)
 endif()
 
-option(COMPILE_DOC "Enable compilation of GCompris docbook" OFF)
+option(COMPILE_DOC "Enable compilation of GCompris docbook and technical doc" OFF)
 if(COMPILE_DOC)
-  find_package(KF6 QUIET COMPONENTS DocTools)
+  #find_package(KF6 QUIET COMPONENTS DocTools)
+
+  if(ECM_FOUND)
+    include(ECMGenerateQDoc)
+  endif()
 endif()
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)

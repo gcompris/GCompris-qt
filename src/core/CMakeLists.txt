@@ -73,10 +73,10 @@ elseif(CMAKE_HOST_APPLE)
   set_source_files_properties(${gcompris_RES} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
 endif()
 
-set(used_qt_modules ${QT_MAJOR}::Qml ${QT_MAJOR}::Quick ${QT_MAJOR}::Widgets ${QT_MAJOR}::Gui ${QT_MAJOR}::Multimedia ${QT_MAJOR}::Core ${QT_MAJOR}::Svg ${QT_MAJOR}::Sensors ${QT_MAJOR}::QuickControls2 ${QT_MAJOR}::QuickTemplates2 ${QT_MAJOR}::Charts ${QT_MAJOR}::QmlWorkerScript ${QT_MAJOR}::CorePrivate)
+set(used_qt_modules ${QT_MAJOR}::Qml ${QT_MAJOR}::Quick ${QT_MAJOR}::Widgets ${QT_MAJOR}::Gui ${QT_MAJOR}::Multimedia ${QT_MAJOR}::Core ${QT_MAJOR}::Svg ${QT_MAJOR}::Sensors ${QT_MAJOR}::QuickControls2 ${QT_MAJOR}::QuickTemplates2 ${QT_MAJOR}::Charts ${QT_MAJOR}::QmlWorkerScript)
 
 if(TARGET ${QT_MAJOR}::QuickControls2Basic)
-  set(used_qt_modules ${used_qt_modules} ${QT_MAJOR}::QuickControls2Basic ${QT_MAJOR}::QuickControls2BasicPrivate)
+  set(used_qt_modules ${used_qt_modules} ${QT_MAJOR}::QuickControls2Basic)
   # This should not be needed! But for some reason, on windows it does not find
   # automatically the library so we need to install it manually
   if(WIN32)
@@ -86,7 +86,7 @@ if(TARGET ${QT_MAJOR}::QuickControls2Basic)
 endif()
 
 if(TARGET ${QT_MAJOR}::WaylandClient)
-    set(used_qt_modules ${used_qt_modules} ${QT_MAJOR}::WaylandClient ${QT_MAJOR}::WaylandClientPrivate)
+    set(used_qt_modules ${used_qt_modules} ${QT_MAJOR}::WaylandClient)
 endif()
 
 if(ANDROID)
@@ -100,16 +100,18 @@ else()
 endif()
 
 # only build the lib for testing purpose
-if(BUILD_TESTING)
-  if(WIN32)
-    add_library(gcompris_core STATIC ${gcompris_SRCS})
-  else()
-    add_library(gcompris_core SHARED ${gcompris_SRCS})
-  endif()
-  target_link_libraries(gcompris_core ${used_qt_modules})
+if(WIN32)
+  add_library(gcompris_core STATIC ${gcompris_SRCS})
+else()
+  add_library(gcompris_core SHARED ${gcompris_SRCS})
 endif()
 
+target_link_libraries(gcompris_core ${used_qt_modules})
 target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} ${used_qt_modules})
+
+if(COMPILE_DOC)
+  ecm_generate_qdoc(gcompris_core gcompris.qdocconf)
+endif()
 
 if(WITH_RCC)
   GCOMPRIS_ADD_RCC(core

@@ -15,8 +15,10 @@ import QtQuick
 import core 1.0
 import "qrc:/gcompris/src/core/core.js" as Core
 
-/**
- * A QML component for GCompris' navigation bar.
+/*!
+ * \inqmlmodule core
+ *
+ * \brief A QML component for GCompris' navigation bar.
  * @ingroup components
  *
  * The Bar is visible in all activities and the main menu screen. It can be
@@ -32,7 +34,7 @@ import "qrc:/gcompris/src/core/core.js" as Core
  * Cf. the Bar object used in Template.qml as an example of how a minimal
  * Bar implementation should look like.
  *
- * @sa BarButton, BarEnumContent
+ * \sa BarButton, BarEnumContent
  * @inherit QtQuick.Item
  */
 Item {
@@ -59,7 +61,7 @@ Item {
      * type:BarEnumContent
      * Defines the content/children of the bar.
      *
-     * @sa BarEnumContent
+     * \sa BarEnumContent
      */
     property BarEnumContent content
 

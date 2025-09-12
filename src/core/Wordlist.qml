@@ -11,32 +11,31 @@ import QtQuick
 import core 1.0
 import "core.js" as Core
 
-/**
- * A Wordlist component loads and maintains GCompris wordlists.
- * @ingroup components
- *
- * It loads wordlists from json-files, validates its content and exposes
- * wordlists and levels to activities.
- *
- * It expects and returns the following wordlist format (UTF8 encoded):
- *
- * @code
- * {
- *    "name":"default-gd",
- *    "description":"Gàidhlig",
- *    "locale":"gd",
- *    "levels":[ { "level":1,
- *                 "speed":150,                           <-- optional
- *                 "fallspeed":7000,                      <-- optional
- *                 "sublevels":10,                        <-- optional
- *                 "words":["a","jim", "beam", ... ]},    <-- mandatory
- *               { "level":2, ... }
- *             ]
- * }
- * @endcode
- *
- * @inherit QtQuick.Item
- * @sa JsonParser
+/*!
+  \inqmlmodule core
+  A Wordlist component loads and maintains GCompris wordlists.
+  \ingroup components
+
+  It loads wordlists from json-files, validates its content and exposes
+  wordlists and levels to activities.
+
+  It expects and returns the following wordlist format (UTF8 encoded):
+ 
+  \code
+  {
+     "name":"default-gd",
+     "description":"Gàidhlig",
+     "locale":"gd",
+     "levels":[ { "level":1,
+                  "speed":150,                           <-- optional
+                  "fallspeed":7000,                      <-- optional
+                  "sublevels":10,                        <-- optional
+                  "words":["a","jim", "beam", ... ]},    <-- mandatory
+                { "level":2, ... }
+              ]
+  }
+  \endcode
+  \sa JsonParser
  */
 Item {
     id: wordlist
@@ -178,7 +177,7 @@ Item {
      * Re-add a random word to a shuffled word list.
      *
      * @param type:string word Word to append.
-     * @sa initRandomWord
+     * \sa initRandomWord
      */
     function appendRandomWord(word) {
         randomWordList.unshift(word)
@@ -187,7 +186,7 @@ Item {
     /**
      * Returns the next random word from a shuffled wordlist.
      *
-     * @sa initRandomWord
+     * \sa initRandomWord
      */
     function getRandomWord() {
         return randomWordList.pop()

@@ -12,16 +12,16 @@
 import QtQuick
 import core 1.0
 
-/**
-* A QML component to visualize countdown.
-*
-* Balloon usually consists of timeout duration (@ref duration)
-* the timeout is called at the end of the down animation
-*
-* A balloon falls from top to bottom in a given duration on
-* calling startMoving method and stops on calling stopMoving method.
-*
-* @inherit QtQuick.Image
+/*!
+ \inqmlmodule core
+
+ \brief A QML component to visualize countdown.
+
+ Balloon usually consists of timeout duration (@ref duration)
+ the timeout is called at the end of the down animation
+
+ A balloon falls from top to bottom in a given duration on
+ calling startMoving method and stops on calling stopMoving method.
 */
 Image {
     id: balloon

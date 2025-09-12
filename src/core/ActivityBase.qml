@@ -11,186 +11,174 @@ import QtQuick
 import core 1.0
 import "qrc:/gcompris/src/core/core.js" as Core
 
-/**
- * The base QML component for activities in GCompris.
- * @ingroup components
- *
- * Each activity should be derived from this component. It is responsible for
- *
- * * Activity common key handling,
- * * unified audio handling,
- * * screen switching dynamics (from/to Menu/DialogHelp/etc.)
- *
- * The following common keys are handled so far:
- *
- * * @c Ctrl+w: Exit the current activity and return to the menu,
- *              or close the application if on the menu page.
- * * @c Back:   Same as above.
- * * @c Escape: Same as above.
- *
- * Cf. Template.qml for a sample skeleton activity.
- *
- * Cf.
- * [the wiki](https://invent.kde.org/education/gcompris/-/wikis/Developers-corner/Development-process#adding-a-new-activity)
- * for further information about creating a new activity.
- *
- * @inherit QtQuick.Item
- */
+/*!
+   \inqmlmodule core
+   \brief The base QML component for activities in GCompris.
+
+   \ingroup components
+ 
+   Each activity should be derived from this component. It is responsible for
+   \list
+   \li Activity common key handling,
+   \li unified audio handling,
+   \li screen switching dynamics (from/to Menu/DialogHelp/etc.)
+   \endlist
+  
+   The following common keys are handled so far:
+   \list
+   \li \c {Ctrl+w}: Exit the current activity and return to the menu,
+                or close the application if on the menu page.
+   \li \c {Back}:   Same as above.
+   \li \c {Escape}: Same as above.
+   \endlist
+   Cf. Template.qml for a sample skeleton activity.
+  
+   Cf.
+   \l {https://invent.kde.org/education/gcompris/-/wikis/Developers-corner/Development-process#adding-a-new-activity} {the wiki}
+   for further information about creating a new activity.
+*/
 Item {
     id: page
 
-    /**
-     * type:Item
-     * Parent object.
+    /*!
+     \brief Parent object.
      */
     property Item main: parent
 
-    /**
-     * type:Component
-     * The top-level component containing the visible viewport of an activity.
-     *
-     * Put all you want to present the user into this container. Mostly
-     * implemented using a Rectangle or Image component, itself
-     * containing further graphical elements. You are pretty free of doing
-     * whatever you want inside this component.
-     *
-     * Also common elements as Bar, Score, DialogHelp, etc. should be placed
-     * inside this element.
+    /*!
+       \brief The top-level component containing the visible viewport of an activity.
+       Put all you want to present the user into this container. Mostly
+       implemented using a Rectangle or Image component, itself
+       containing further graphical elements. You are pretty free of doing
+       whatever you want inside this component.
+      
+       Also common elements as Bar, Score, DialogHelp, etc. should be placed
+       inside this element.
      */
     property Component pageComponent
 
-    /**
-     * type:QtObject
-     * Reference to the menu activity.
-     *
-     * Populated automatically during activity-loading.
+    /*!
+     \brief Reference to the menu activity.
+     Populated automatically during activity-loading.
      */
     property QtObject menu
 
-    /**
-     * type:QtObject
-     * Reference to the ActivityInfo object of the activity.
-     *
-     * Populated automatically during activity-loading.
+    /*!
+     \brief Reference to the ActivityInfo object of the activity.
+     Populated automatically during activity-loading.
      */
     property QtObject activityInfo
 
-    /**
-     * type:GCAudio
-     * The global audio item for voices.
-     *
-     * Because of problems synchronizing multiple Audio objects between
-     * global/menu/main and individual activities, activities should refrain
-     * from implementing additional Audio elements.
-     *
-     * Instead append to this global object to play your voices after the
-     * intro music.
-     * @sa GCAudio audioVoices
+    /*!
+       \brief The global audio item for voices.
+      
+       Because of problems synchronizing multiple Audio objects between
+       global/menu/main and individual activities, activities should refrain
+       from implementing additional Audio elements.
+      
+       Instead append to this global object to play your voices after the
+       intro music.
+       \sa GCAudio
      */
     property GCAudio audioVoices
 
-    /**
-     * type:GCAudio
-     * The global audio item for background music.
-     *
-     * @sa GCAudio backgroundMusic
+    /*!
+       \brief The global audio item for background music.
+      
+       \sa GCAudio
      */
     property GCAudio backgroundMusic
 
-    /**
-     * type:string
-     * The resource folder for the current activity. The resources
-     * of each activity needs to be stored with the same pattern.
-     * "qrc:/gcompris/src/activities/" + activity name + "/resource/"
-     *
+    /*!
+      \brief The resource folder for the current activity. The resources
+       of each activity needs to be stored with the same pattern.
+       "qrc:/gcompris/src/activities/" + activity name + "/resource/"
+      
      */
     property string resourceUrl: (activityInfo && activityInfo.name) ? "qrc:/gcompris/src/activities/" + activityInfo.name.split('/')[0] + "/resource/": ""
 
-    /**
-     * type: bool
-     * It tells whether the activity is a musical activity or not(if the activity contains it's own audio effects).
-     *
-     * If the activity is a musical activity, on starting it the background music pauses and when the activity is quit, background music resumes.
-     *
-     * Set it as true if the activity is musical.
+    /*!
+       \brief It tells whether the activity is a musical activity or not(if the activity contains it's own audio effects).
+      
+       If the activity is a musical activity, on starting it the background music pauses and when the activity is quit, background music resumes.
+      
+       Set it as true if the activity is musical.
      */
     property bool isMusicalActivity: false
 
-    /**
-     * type:int
-     * The current level for this activity.
+    /*!
+      \brief The current level for this activity.
      */
     property int currentLevel: 0
 
     property var datasets: []
     property var levelFolder
 
-    /**
+    /*!
      * type:Loading
      * The global loading object.
      *
      * Start it to signal heavy computation in case of GUI freezes.
-     * @sa Loading
+     * \sa Loading
      */
     property Loading loading
 
-    /**
-     * type: bool
-     * Check if the activity is the menu or not.
-     * Set by default to false for all activities,
-     * and only set to true inside Menu.qml
+    /*!
+      \brief Check if the activity is the menu or not.
+      Set by default to false for all activities,
+      and only set to true inside Menu.qml
      */
     property bool isMenu: false
 
-    /**
-     * Emitted when the user wants to return to the Home/Menu screen.
+    /*!
+      Emitted when the user wants to return to the Home/Menu screen.
      */
     signal home
 
-    /**
-     * Emitted when the user wants to return several views back in the
-     * page stack.
+    /*!
+      Emitted when the user wants to return several views back in the
+      page stack.
      */
     signal back(Item to)
 
-    /**
-     * Emitted every time the activity has been started.
-     *
-     * Initialize your activity upon this signal.
+    /*!
+      Emitted every time the activity has been started.
+     
+      Initialize your activity upon this signal.
      */
     signal start
 
-    /**
-     * Emitted when the activity is about to stop
-     *
-     * Shutdown whatever you need to upon this signal.
+    /*!
+      Emitted when the activity is about to stop
+     
+      Shutdown whatever you need to upon this signal.
      */
     signal stop
 
-    /**
-     * Connected to stop signal
-     * Used to stop all the voices and sounds from the activity
+    /*!
+      Connected to stop signal
+      Used to stop all the voices and sounds from the activity
      */
     signal stopSounds
 
-    /**
-     * Emitted when dialog @p dialog should be shown
-     *
-     * Emit this signal when you want to show another dialog, e.g. on
-     * Bar.onHelpClicked
-     *
-     * @param dialog Dialog to show.
+    /*!
+      Emitted when dialog @p dialog should be shown
+     
+      Emit this signal when you want to show another dialog, e.g. on
+      Bar.onHelpClicked
+     
+      \a dialog Dialog to show.
      */
     signal displayDialog(Item dialog)
 
-    /**
-     * Emitted when multiple @p dialogs should be pushed on the page-stack
-     *
-     * Emit this signal when you want to stack >1 views. The last one will be
-     * shown the intermediated ones will be kept on the page stack for later
-     * pop() calls.
-     *
-     * @param dialogs Array of dialogs to push;
+    /*!
+      Emitted when multiple @p dialogs should be pushed on the page-stack
+     
+      Emit this signal when you want to stack >1 views. The last one will be
+      shown the intermediated ones will be kept on the page stack for later
+      pop() calls.
+     
+      \a dialogs Array of dialogs to push;
      */
     signal displayDialogs(var dialogs)
 

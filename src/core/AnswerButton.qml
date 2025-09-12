@@ -11,15 +11,14 @@
 import QtQuick
 import core 1.0
 
-/**
- * A QML component to display an answer button.
- *
- * AnswerButton consists of a text (@ref textLabel)
- * and animations on pressed.
- * Mostly used to present more than one option to select from
- * consisting of both good and bad answers.
- *
- * @inherit QtQuick.Item
+/*!
+  \inqmlmodule core
+  A QML component to display an answer button.
+
+  AnswerButton consists of a text (@ref textLabel)
+  and animations on pressed.
+  Mostly used to present more than one option to select from
+  consisting of both good and bad answers.
  */
 Item {
     id: button
@@ -28,7 +27,7 @@ Item {
      * type:string
      * Text to display on the button.
      *
-     * @sa label.text
+     * \sa label.text
      */
     property string textLabel
 

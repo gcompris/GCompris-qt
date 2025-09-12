@@ -1,0 +1,15 @@
+/*!
+doc: https://doc.qt.io/qt-6/27-qdoc-commands-alphabetical.html
+    \qmlmodule core
+    \title GCompris qml classes
+    \brief This is the core.
+*/
+/*!
+    \module classes
+    \title GCompris C++ classes
+    \brief This is the core.
+*/
+/*!
+    \group components
+    \brief components group!
+*/

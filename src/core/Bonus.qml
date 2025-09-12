@@ -13,19 +13,18 @@ import core 1.0
 // Requires the global property in the scope:
 // property GCAudio audioVoices
 
-/**
- * A QML component providing user feedback upon winning/loosing.
- * @ingroup components
- *
- * Usually triggered by an activity when a user has won/lost a level via the
- * @ref good / @ref bad methods. Bonus then provides visual and auditive
- * feedback to the user and emits the @ref win / @ref loose signals when
- * finished.
- *
- * Maintains a list of possible audio voice resources to be played back
- * upon winning/loosing events, and selects randomly from them when triggered.
- *
- * @inherit QtQuick.Image
+/*!
+  \inqmlmodule core
+  A QML component providing user feedback upon winning/loosing.
+  \ingroup components
+
+  Usually triggered by an activity when a user has won/lost a level via the
+  @ref good / @ref bad methods. Bonus then provides visual and auditive
+  feedback to the user and emits the @ref win / @ref loose signals when
+  finished.
+
+  Maintains a list of possible audio voice resources to be played back
+  upon winning/loosing events, and selects randomly from them when triggered.
  */
 Image {
     id: bonus

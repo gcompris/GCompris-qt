@@ -13,27 +13,27 @@ import core 1.0
 import "."
 
 /**
- * A QML component unifying text presentation in GCompris.
- * @ingroup components
- *
- * GCText wraps QtQuick's Text to provide
- *
- * (1) a uniform font-family,<br/>
- * (2) DPI based automatic font-scaling and<br/>
- * (3) application-wide manual font-sizing.<br/>
- *
- * Activities should almost always use the @ref fontSize property to
- * define font sizes, it implements both (2) and (3). <b>Do not</b> set
- * @c font.pointSize directly, or GCText's automatic scaling will be
- * deactivated. If you really need to enforce a fixed font size (which
- * might be the case for dialogs) use the fixFontSize property.
- *
- * The xxxSize properties are meant to be enum-like values for often needed
- * font sizes. (QtQuick does not support enum definitions on QML layer, cf.
- * Qt issue #14861.)
- *
- * @inherit QtQuick.Text
- * @sa GCSingletonFontLoader
+  \inqmlmodule core
+  A QML component unifying text presentation in GCompris.
+  @ingroup components
+
+  GCText wraps QtQuick's Text to provide
+
+  (1) a uniform font-family,<br/>
+  (2) DPI based automatic font-scaling and<br/>
+  (3) application-wide manual font-sizing.<br/>
+
+  Activities should almost always use the @ref fontSize property to
+  define font sizes, it implements both (2) and (3). <b>Do not</b> set
+  @c font.pointSize directly, or GCText's automatic scaling will be
+  deactivated. If you really need to enforce a fixed font size (which
+  might be the case for dialogs) use the fixFontSize property.
+
+  The xxxSize properties are meant to be enum-like values for often needed
+  font sizes. (QtQuick does not support enum definitions on QML layer, cf.
+  Qt issue #14861.)
+
+  \sa GCSingletonFontLoader
  */
 Text {
     /**

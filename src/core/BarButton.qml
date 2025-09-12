@@ -11,12 +11,14 @@ import QtQuick
 import core 1.0
 
 /**
- * Helper QML component for a button shown on the Bar.
- * @ingroup components
- *
- * Used internally by the Bar component.
- *
- * @sa Bar
+  \inqmlmodule core
+ 
+  \brief Helper QML component for a button shown on the Bar.
+  \ingroup components
+
+  Used internally by the Bar component.
+
+  \sa Bar
  */
 Image {
     id: button
