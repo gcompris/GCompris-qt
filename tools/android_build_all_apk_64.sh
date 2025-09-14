@@ -53,6 +53,7 @@ f_cmake()
 	  -DCMAKE_FIND_ROOT_PATH=${Qt6_BaseDIR}/${QtTarget}/lib/ \
 	  -DCMAKE_PREFIX_PATH=${Qt6_BaseDIR}/${QtTarget}/lib/cmake/Qt6 \
 	  -Wno-dev \
+	  -DUSE_16KB_PAGESIZE=ON \
 	  -DQML_BOX2D_MODULE=submodule \
 	  -DWITH_DOWNLOAD=$2 \
 	  -DWITH_KIOSK_MODE=$3 \
