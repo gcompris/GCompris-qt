@@ -128,6 +128,10 @@ endif()
 
 target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} ${used_qt_modules})
 
+if (USE_16KB_PAGESIZE)
+  target_link_options(${GCOMPRIS_EXECUTABLE_NAME} PRIVATE "-Wl,-z,max-page-size=16384")
+endif()
+
 if(WITH_RCC)
   GCOMPRIS_ADD_RCC(core
     QML_FILES
