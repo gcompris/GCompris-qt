@@ -61,6 +61,8 @@ if(CMAKE_SYSTEM_NAME STREQUAL Android)
   if(ANDROID_NDK_REVISION VERSION_LESS "25.0.0")
     message(FATAL_ERROR "android ndk 25 minimal required, actually using ${ANDROID_NDK_REVISION}")
   endif()
+
+  option(USE_16KB_PAGESIZE "For android, option to compile with 16 KB pages size (mandatory since Nov 2025)" OFF)
 endif()
 
 # Set executable filename
