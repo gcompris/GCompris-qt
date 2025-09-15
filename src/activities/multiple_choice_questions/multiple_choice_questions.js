@@ -43,11 +43,16 @@ function createLevel() {    // Create an array of exercice
                                    "wrongAnswerText_": wrongAnswerText,
                                    "checked_": false });
     }
+    items.buttonsBlocked = false;
 }
 
 function initLevel() {
-    items.buttonsBlocked = false;
+    items.errorRectangle.resetState();
+    items.feedbackArea.visible = false;
+    items.answerList.currentIndex = -1;
+    items.currentAnswerIndex = -1;
     items.currentSubLevel = 0;
+    items.score.currentSubLevel = 0;
     var level = items.levels[items.currentLevel]
     items.numberOfSubLevel = level.subLevels.length;
     if (level.shuffle) {
@@ -58,13 +63,15 @@ function initLevel() {
 }
 
 function nextLevel() {
-    items.score.stopWinAnimation()
+    items.score.stopWinAnimation();
+    items.errorRectangle.resetState();
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    items.score.stopWinAnimation()
+    items.score.stopWinAnimation();
+    items.errorRectangle.resetState();
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
@@ -85,11 +92,19 @@ function checkResult() {
     items.buttonsBlocked = true;
     var success = true;
 
-    for(var i = 0; i < items.answerModel.count; i++) {
-        var answer = items.answerModel.get(i)
-        if(answer.checked_ != answer.isSolution_) {
+    if(items.mode === "oneAnswer") {
+        var answer = items.answerModel.get(items.currentAnswerIndex);
+        if(!answer || !answer.isSolution_) {
             success = false;
-            break;
+        }
+
+    } else if(items.mode === "multipleAnswers") {
+        for(var i = 0; i < items.answerModel.count; i++) {
+            var answer = items.answerModel.get(i);
+            if(answer.checked_ != answer.isSolution_) {
+                success = false;
+                break;
+            }
         }
     }
 

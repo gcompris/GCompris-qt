@@ -4277,7 +4277,7 @@ SPDX-License-Identifier = "CC-BY-SA-4.0"
 [[annotations]]
 path = "src/activities/multiple_choice_questions/**.svg"
 precedence = "aggregate"
-SPDX-FileCopyrightText = "2024 Timothée Giet"
+SPDX-FileCopyrightText = "2025 Timothée Giet"
 SPDX-License-Identifier = "CC-BY-SA-4.0"
 
 [[annotations]]
