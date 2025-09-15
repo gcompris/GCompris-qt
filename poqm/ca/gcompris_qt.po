@@ -8,13 +8,13 @@
 # Xavier A. Conde Rueda <xavi.conde@gmail.com>, 2003, 2004, 2005, 2006, 2007.
 # Francesc Vilches Batet <francesc-vilches@gmail.com>, 2007, 2008.
 # Pau Iranzo <paugnu@gmail.com>, 2010.
-# Josep M. Ferrer <txemaq@gmail.com>, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025.
+# SPDX-FileCopyrightText: 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Josep M. Ferrer <txemaq@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2025-04-26 08:21+0200\n"
+"PO-Revision-Date: 2025-09-14 19:13+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 25.04.0\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -27947,13 +27947,13 @@ msgid ""
 "documentation, then a visit to <a href=\"%2\">%2</a> will provide you with "
 "what you need."
 msgstr ""
-"No heu de ser un desenvolupador de programari per a ser un membre de l'equip "
-"del KDE. Podeu unir-vos als equips d'idiomes que tradueixen les interfícies "
-"de programa. Podeu proporcionar gràfics, temes, sons i millorar la "
-"documentació. Vós decidiu!<br /><br />Visiteu <a href=\"%1\">%1</a> si voleu "
-"informació sobre projectes en els quals podeu participar.<br /><br />Si us "
-"cal més informació o documentació, llavors una visita a <a href=\"%2\">%2</"
-"a> us proporcionarà el que necessiteu."
+"No cal que desenvolupeu programari per a ser membre de l'equip de KDE. Podeu "
+"unir-vos als equips d'idiomes que tradueixen les interfícies dels programes. "
+"Podeu proporcionar gràfics, temes, sons i millorar la documentació. Vós "
+"decidiu!<br /><br />Visiteu <a href=\"%1\">%1</a> si voleu informació sobre "
+"projectes en els quals podeu participar.<br /><br />Si us cal més informació "
+"o documentació, llavors una visita a <a href=\"%2\">%2</a> us proporcionarà "
+"el que necessiteu."
 
 #: core/DialogAbout.qml:122
 #, qt-format

@@ -9,12 +9,13 @@
 # SPDX-FileCopyrightText: 2015, 2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Frederico Goncalves Guimaraes <frederico@teia.bio.br>
 # SPDX-FileCopyrightText: 2023, 2025 Geraldo Simiao <geraldosimiao@fedoraproject.org>
 # SPDX-FileCopyrightText: 2025 Guilherme Marçal Silva <guimarcalsilva@gmail.com>
+# SPDX-FileCopyrightText: 2025 Marcus Gama <marcus.gama@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-08-15 01:38-0300\n"
-"Last-Translator: Geraldo Simiao <geraldosimiao@fedoraproject.org>\n"
+"PO-Revision-Date: 2025-09-14 08:08-0300\n"
+"Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Language: pt_BR\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 25.08.0\n"
+"X-Generator: Lokalize 25.08.1\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -19173,7 +19174,7 @@ msgstr "Baixar o conjunto completo de imagens das palavras"
 #: activities/menu/ConfigurationItem.qml:330
 msgctxt "ConfigurationItem|"
 msgid "Fullscreen"
-msgstr "Tela inteira"
+msgstr "Tela cheia"
 
 #: activities/menu/ConfigurationItem.qml:341
 msgctxt "ConfigurationItem|"
@@ -27970,7 +27971,7 @@ msgstr "Abrir o GCompris sem cursor (modo de tela de toque)."
 #: core/main.cpp:84
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
-msgstr "Abrir o GCompris no modo de tela inteira."
+msgstr "Abrir o GCompris no modo de tela cheia."
 
 #: core/main.cpp:88
 msgctxt "QObject|"
