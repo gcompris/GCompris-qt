@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+SPDX-FileCopyrightText: 2025 Sune Vuorela
+
+SPDX-License-Identifier: BSD-2-Clause
+-->
+<suppressions>
+<suppress>
+<id>returnByReference</id>
+</suppress>
+<suppress>
+<id>useStlAlgorithm</id>
+</suppress>
+</suppressions>
+
