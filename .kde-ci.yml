@@ -11,6 +11,7 @@ Environment:
 Options:
   setup-dbus-session: False
   require-passing-tests-on: [ '@all' ]
-  cppcheck-arguments: '--suppress-xml=cppcheck-suppressions.xml'
+  cppcheck-arguments: '--enable=warning,style,performance --suppress-xml=cppcheck-suppressions.xml'
   cppcheck-ignore-files:
     - autotests
+    - tests
