@@ -1,16 +1,16 @@
 # SPDX-FileCopyrightText: None
 # SPDX-License-Identifier: CC0-1.0
 Dependencies:
-- 'on': ['Linux/Qt6', 'FreeBSD/Qt6', 'Windows/Qt6', 'Android/Qt6']
-  'require':
-    'frameworks/extra-cmake-modules': '@latest-kf6'
+  - 'on': ['Linux/Qt6', 'FreeBSD/Qt6', 'Windows/Qt6', 'Android/Qt6']
+    'require':
+      'frameworks/extra-cmake-modules': '@latest-kf6'
 
 Environment:
   KDECI_BUILD: "TRUE"
 
 Options:
-  setup-dbus-session: False
-  require-passing-tests-on: [ '@all' ]
+  setup-dbus-session: false
+  require-passing-tests-on: ['@all']
   cppcheck-arguments: '--enable=warning,style,performance --suppress-xml=cppcheck-suppressions.xml'
   cppcheck-ignore-files:
     - autotests

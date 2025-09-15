@@ -1,4 +1,4 @@
-# This repository adheres to the publiccode.yml standard by including this 
+# This repository adheres to the publiccode.yml standard by including this
 # metadata file that makes public software easily discoverable.
 # More info at https://github.com/italia/publiccode.yml
 
@@ -237,4 +237,3 @@ description:
       - https://cdn.kde.org/gcompris/images/developers_italia_it/algebra_plus.png
       - https://cdn.kde.org/gcompris/images/developers_italia_it/clockgame.png
       - https://cdn.kde.org/gcompris/images/developers_italia_it/programmingMaze.png
-

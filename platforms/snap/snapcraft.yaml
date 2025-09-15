@@ -22,7 +22,7 @@ apps:
 plugs:
   ffmpeg-2404:
     interface: content
-    target: ffmpeg-platform # the folder where this content snap will be mounted
+    target: ffmpeg-platform  # the folder where this content snap will be mounted
     default-provider: ffmpeg-2404
 environment:
   ALSA_CONFIG_PATH: "$SNAP/kf6/etc/asound.conf"
@@ -96,4 +96,3 @@ parts:
       for snap in "core24" "kf6-core24"; do
           cd "/snap/$snap/current" && find . -type f,l -exec rm -rf "${CRAFT_PRIME}/{}" \;
       done
-
