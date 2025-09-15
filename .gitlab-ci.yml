@@ -8,6 +8,8 @@ include:
       - /gitlab-templates/freebsd-qt6.yml
       - /gitlab-templates/flatpak.yml
       - /gitlab-templates/reuse-lint.yml
+      - /gitlab-templates/yaml-lint.yml
+      - /gitlab-templates/xml-lint.yml
       - /gitlab-templates/json-validation.yml
       - /gitlab-templates/cppcheck.yml
 
