@@ -27708,47 +27708,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "GCompris' भाषा"
 
-#: core/main.cpp:76
+#: core/main.cpp:85
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "पूर्वनिर्धारितप्रणालीकर्सरेण सह GCompris चालयन्तु ।"
 
-#: core/main.cpp:80
+#: core/main.cpp:89
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "कर्सर (टच स्क्रीन मोड) विना GCompris चालयन्तु ।"
 
-#: core/main.cpp:84
+#: core/main.cpp:93
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "GCompris पूर्णपर्दे मोड् मध्ये चालयन्तु ।"
 
-#: core/main.cpp:88
+#: core/main.cpp:97
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "विण्डो मोड् मध्ये GCompris चालयन्तु ।"
 
-#: core/main.cpp:92
+#: core/main.cpp:101
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "ध्वनिसक्षमं कृत्वा GCompris चालयन्तु ।"
 
-#: core/main.cpp:96
+#: core/main.cpp:105
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "ध्वनिं विना GCompris चालयन्तु।"
 
-#: core/main.cpp:99
+#: core/main.cpp:108
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "कियोस्क मोड् (पूर्वनिर्धारितं) अक्षमम् ।"
 
-#: core/main.cpp:102
+#: core/main.cpp:111
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "कियोस्क मोडं सक्षमं कुर्वन्तु।"
 
-#: core/main.cpp:106
+#: core/main.cpp:115
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
@@ -27758,7 +27758,7 @@ msgstr ""
 "renderer इत्यस्य उपयोगं कुर्वन्तु । अप्रचलितम्, तस्य स्थाने --renderer=सॉफ्टवेयरस्य उपयोगं "
 "कुर्वन्तु ।"
 
-#: core/main.cpp:109
+#: core/main.cpp:118
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -27768,22 +27768,22 @@ msgstr ""
 "कार्ड् इत्यस्य आधारेण सम्भाव्यतया क्रैश भवति) । अप्रचलितं, तस्य स्थाने --renderer=opengl "
 "इत्यस्य उपयोगं कुर्वन्तु ।"
 
-#: core/main.cpp:113
+#: core/main.cpp:122
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 msgstr "रेण्डररं (opengl, software, Direct3D11, Direct3D12, Metal) चयनं कुर्वन्तु ।"
 
-#: core/main.cpp:117
+#: core/main.cpp:126
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "GCompris आरभ्यमाणे क्रियाकलापं निर्दिशन्तु ।"
 
-#: core/main.cpp:122
+#: core/main.cpp:131
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "मानकनिर्गमस्य उपरि सर्वाणि उपलब्धानि क्रियाकलापाः निर्गच्छति ।"
 
-#: core/main.cpp:126
+#: core/main.cpp:135
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -27792,7 +27792,7 @@ msgstr ""
 "सत्रस्य कृते प्रदर्शयितुं क्रियाकलापकठिनतायाः परिधिं निर्दिशन्तु । एकं मूल्यं (२), परिधिः "
 "(३-६) वा । मूल्यानि १ तः ६ पर्यन्तं भवितुमर्हन्ति ।"
 
-#: core/main.cpp:130
+#: core/main.cpp:139
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "

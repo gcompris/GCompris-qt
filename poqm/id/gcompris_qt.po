@@ -28305,47 +28305,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "Bahasa GCompris"
 
-#: core/main.cpp:76
+#: core/main.cpp:85
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "Jalankan GCompris dengan kursor sistem bawaan."
 
-#: core/main.cpp:80
+#: core/main.cpp:89
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "Jalankan GCompris tanpa kursor (mode layar sentuh)."
 
-#: core/main.cpp:84
+#: core/main.cpp:93
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "Jalankan GCompris dalam mode layar penuh."
 
-#: core/main.cpp:88
+#: core/main.cpp:97
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "Jalankan GCompris dalam mode jendela."
 
-#: core/main.cpp:92
+#: core/main.cpp:101
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "Jalankan GCompris dengan suara diaktifkan."
 
-#: core/main.cpp:96
+#: core/main.cpp:105
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "Jalankan GCompris tanpa suara."
 
-#: core/main.cpp:99
+#: core/main.cpp:108
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Nonaktifkan mode kiosk (bawaan)."
 
-#: core/main.cpp:102
+#: core/main.cpp:111
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Aktifkan mode kiosk."
 
-#: core/main.cpp:106
+#: core/main.cpp:115
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
@@ -28355,7 +28355,7 @@ msgstr ""
 "seharusnya dapat berjalan dengan kartu grafis apapun). Sudah tidak digunakan "
 "lagi, gunakan --renderer=software sebagai gantinya."
 
-#: core/main.cpp:109
+#: core/main.cpp:118
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -28365,23 +28365,23 @@ msgstr ""
 "menyebabkan crash tergantung pada kartu grafis Anda). Sudah tidak digunakan "
 "lagi, gunakan --renderer=opengl sebagai gantinya."
 
-#: core/main.cpp:113
+#: core/main.cpp:122
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 msgstr ""
 "Pilih perender (opengl, perangkat lunak, Direct3D11, Direct3D12, Metal)."
 
-#: core/main.cpp:117
+#: core/main.cpp:126
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "Tentukan kegiatan ketika memulai GCompris."
 
-#: core/main.cpp:122
+#: core/main.cpp:131
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Keluaran semua kegiatan yang tersedia pada output standar."
 
-#: core/main.cpp:126
+#: core/main.cpp:135
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -28390,7 +28390,7 @@ msgstr ""
 "Menentukan rentang pada kesulitan aktivitas untuk menampilkan sesi. Antara "
 "nilai tunggal (2), atau rentang (3-6). Nilainya harus antara 1 dan 6."
 
-#: core/main.cpp:130
+#: core/main.cpp:139
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "

@@ -27395,47 +27395,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "השפה של ג׳יקומפרי"
 
-#: core/main.cpp:76
+#: core/main.cpp:85
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "להריץ את ג׳יקומפרי עם סמן ברירת המחדל של המערכת."
 
-#: core/main.cpp:80
+#: core/main.cpp:89
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "להריץ את ג׳יקומפרי ללא סמן (מצב מסך מגע)."
 
-#: core/main.cpp:84
+#: core/main.cpp:93
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "להריץ את ג׳יקומפרי במסך מלא."
 
-#: core/main.cpp:88
+#: core/main.cpp:97
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "להריץ את ג׳יקומפרי במצב חלון."
 
-#: core/main.cpp:92
+#: core/main.cpp:101
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "להריץ את ג׳יקומפרי כשהקולות פעילים."
 
-#: core/main.cpp:96
+#: core/main.cpp:105
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "להריץ את ג׳יקומפרי ללא שמע."
 
-#: core/main.cpp:99
+#: core/main.cpp:108
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "לבטל את מצב הקיוסק (ברירת מחדל)."
 
-#: core/main.cpp:102
+#: core/main.cpp:111
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "להפעיל את מצב הקיוסק."
 
-#: core/main.cpp:106
+#: core/main.cpp:115
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
@@ -27444,7 +27444,7 @@ msgstr ""
 "להשתמש במחולל תוכנה במקום ב־openׂGL (יותר איטי אבל אמור לרוץ עם כל כרטיס "
 "גרפי). השימוש הופסק, יש להשתמש ב־‎--renderer=software במקום."
 
-#: core/main.cpp:109
+#: core/main.cpp:118
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -27453,22 +27453,22 @@ msgstr ""
 "להשתמש במחולל openGL במקום בתוכנה (מהיר יותר אבל עשוי להתרסק, תלוי בכרטיס "
 "הגרפי שלך). השימוש בזה הופסק, יש להשתמש ב־‎--renderer=opengl במקום."
 
-#: core/main.cpp:113
+#: core/main.cpp:122
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 msgstr "נא לבחור מנוע עיבוד (opengl, תוכנה, Direct3D11,‏ Direct3D12, חומרה)."
 
-#: core/main.cpp:117
+#: core/main.cpp:126
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "לציין את הפעילות עם הפעלת ג׳יקומפרי."
 
-#: core/main.cpp:122
+#: core/main.cpp:131
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "הצגת כל הפעילויות האפשריות בפלט התקני (stdout)."
 
-#: core/main.cpp:126
+#: core/main.cpp:135
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -27477,7 +27477,7 @@ msgstr ""
 "נא לציין את טווח קושי הפעילות להצגה למפגש. ערך יחיד (2) או טווח (3‏-6). "
 "הערכים חייבים להיות בין 1 ל־6."
 
-#: core/main.cpp:130
+#: core/main.cpp:139
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
