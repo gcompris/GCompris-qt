@@ -273,7 +273,7 @@ ActivityBase {
         Item {
             id: circlesArea
             visible: false
-            property int itemWidth: 10 //temp values overriden with states
+            property int itemWidth: 10 //temp values overridden with states
             width: 10
             height: 10
             anchors.centerIn: circlesBackground

@@ -307,7 +307,7 @@ function redistribute() {
     if(lastPos.player === basePos.player && lastPos.index === basePos.index)
         nextAntiClockwise(lastPos)
 
-    // incremement count of seeds in corresponding pit
+    // increment count of seeds in corresponding pit
     var fromPit = (items.hand1.seeds ? items.hand1 : items.hand2)
     var toPit = (lastPos.player == 1 ? items.board.pitRepeater1.itemAt(lastPos.index) : items.board.pitRepeater2.itemAt(lastPos.index))
 

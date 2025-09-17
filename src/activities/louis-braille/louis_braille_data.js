@@ -49,7 +49,7 @@ var dataset = [
                  "img": baseUrl + "teach.svg"
              },
              {
-                 "text": qsTr("He revised and extended braille to include mathematics, symbols, punctuations and music notations."),
+                 "text": qsTr("He revised and extended braille to include mathematics, symbols, punctuation and music notations."),
                  "year": "1837",
                  "img": baseUrl + "maths.svg"
              },

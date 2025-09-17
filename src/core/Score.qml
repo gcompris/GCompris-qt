@@ -82,7 +82,7 @@ Rectangle {
 
     /**
      * type:bool
-     * Wether the component is used as a score counter (true)
+     * Whether the component is used as a score counter (true)
      * or something else, like a subLevel counter (false)
      */
     property bool isScoreCounter: true
@@ -111,7 +111,7 @@ Rectangle {
 
     /**
      * type:bool
-     * Wether the component has a fixed width.
+     * Whether the component has a fixed width.
      * If set to true, setting the width is required.
      */
     property bool fixedWidth: false

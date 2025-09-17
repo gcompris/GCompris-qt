@@ -14,7 +14,7 @@ var items
 var activityMode
 var maxSolutionSize = 0
 var mapToPad = {}       // Maps keyboard charcodes to numPad's indexes to animate graphics from computer's numpad
-var exercices = []
+var exercises = []
 
 function randInt(max) { return Math.floor(Math.random() * max) }
 
@@ -30,7 +30,7 @@ function longInt(val) {     // Format number to string (avoid exponential notati
     return str
 }
 
-function createExercice(idx, rules, s) {
+function createExercise(idx, rules, s) {
     var nbSeg = 2
     var step = rules.steps[s]
     var maxOffset = 0
@@ -61,24 +61,24 @@ function createExercice(idx, rules, s) {
     }
 }
 
-function createLevel() {    // Create an array of exercice
-    exercices = []
+function createLevel() {    // Create an array of exercise
+    exercises = []
     var levelRules = items.levels[items.currentLevel].rules
     for(var s = 0; s < levelRules.steps.length; s++) {
         var nbTicks = Math.floor((levelRules.range[1] - levelRules.range[0]) / levelRules.steps[s]) -1
         for(var i = 0; i < nbTicks; i++) {
-            var exo = createExercice(i, levelRules, s)
-            exercices.push(exo)
+            var exo = createExercise(i, levelRules, s)
+            exercises.push(exo)
         }
     }
 }
 
-function buildRuler() {     // Read from exercices with currentSubLevel index
+function buildRuler() {     // Read from exercises with currentSubLevel index
     items.solutionGrad = 0
     items.rulerModel.clear()
-    if (items.currentSubLevel % exercices.length === 0) // if first time or all exercices already done
-        Core.shuffle(exercices)                         //    shuffle exercices before restarting
-    var exo = exercices[items.currentSubLevel % exercices.length]
+    if (items.currentSubLevel % exercises.length === 0) // if first time or all exercises already done
+        Core.shuffle(exercises)                         //    shuffle exercises before restarting
+    var exo = exercises[items.currentSubLevel % exercises.length]
     var start = exo.start
     var thickStep = Math.floor(exo.rangeMax / 10)
     if (thickStep < 10)

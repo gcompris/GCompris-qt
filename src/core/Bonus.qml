@@ -14,7 +14,7 @@ import core 1.0
 // property GCAudio audioVoices
 
 /**
- * A QML component providing user feedback upon winning/loosing.
+ * A QML component providing user feedback upon winning/losing.
  * @ingroup components
  *
  * Usually triggered by an activity when a user has won/lost a level via the
@@ -23,7 +23,7 @@ import core 1.0
  * finished.
  *
  * Maintains a list of possible audio voice resources to be played back
- * upon winning/loosing events, and selects randomly from them when triggered.
+ * upon winning/losing events, and selects randomly from them when triggered.
  *
  * @inherit QtQuick.Image
  */
@@ -38,7 +38,7 @@ Image {
 
     /**
      * type:string
-     * Url of the audio resource to be used as loosing sound.
+     * Url of the audio resource to be used as losing sound.
      */
     property string looseSound: url + "sounds/crash.wav"
 
@@ -148,7 +148,7 @@ Image {
     /**
      * Triggers loose feedback.
      *
-     * Tries to play back a voice resource for loosing, if not found fall back
+     * Tries to play back a voice resource for losing, if not found fall back
      * to the looseSound.
      *
      * @param name Type of win image to show.

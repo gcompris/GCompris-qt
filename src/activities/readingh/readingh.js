@@ -77,7 +77,7 @@ function initSubLevel() {
     items.textToFind = items.wordlist.getRandomWord()
     Core.shuffle(level.words)
     words = level.words.slice(0, 15)
-    // add 1/2 probablity for yes/no answer
+    // add 1/2 probability for yes/no answer
     var probability = Math.random()
     if(probability > 0.5) {     // answer should be yes
         if(words.indexOf(items.textToFind) == -1) {

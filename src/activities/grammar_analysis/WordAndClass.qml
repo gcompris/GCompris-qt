@@ -33,7 +33,7 @@ Item {
     property string expected: ""            // Grammatical(s) class(es) expected
     property string proposition: ""         // Grammatical(s) class(es) proposed by user
     property int startPos: -1               // Number from this position
-    property list<string> classList: []     // Splitted expected value
+    property list<string> classList: []     // Split expected value
     property bool moveForward: true         // Move to next word after proposal (for keys navigation)
     property alias rowWords: rowWords
     property alias boxModel: boxModel

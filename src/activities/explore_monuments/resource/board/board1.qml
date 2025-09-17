@@ -17,7 +17,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
             "title": qsTr("Chichén Itzá"),
-            "text": qsTr("Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on the Yucatan Peninsula in Mexico, between Valladolid and Merida. It was established before the period of Christopher Colombus and probably served as the religion center of Yucatan for a while."),
+            "text": qsTr("Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on the Yucatan Peninsula in Mexico, between Valladolid and Merida. It was established before the period of Christopher Columbus and probably served as the religion center of Yucatan for a while."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/chichenItza.webp",
             "text2": qsTr("Chichén Itzá"),
             "x": "0.226",

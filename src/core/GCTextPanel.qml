@@ -44,14 +44,14 @@ Rectangle {
 
     /**
      * type:bool
-     * Wether the panel height should be fixed to panelHeight or
+     * Whether the panel height should be fixed to panelHeight or
      * relative to textItem's contentHeight.
      */
     property bool fixedHeight: false
 
     /**
      * type:bool
-     * Wether the panel should be hidden if text is empty.
+     * Whether the panel should be hidden if text is empty.
      */
     property bool hideIfEmpty: false
 

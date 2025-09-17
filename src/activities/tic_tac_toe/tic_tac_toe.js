@@ -21,8 +21,8 @@ var currentPlayer
 var currentLocation
 var twoPlayer
 var track = []      //For tracking moves
-var hx      //x co-ordinate needed for creating first image when playSecond is enabled
-var vy      //y co-ordinate needed for creating first image when playSecond is enabled
+var hx      //x coordinate needed for creating first image when playSecond is enabled
+var vy      //y coordinate needed for creating first image when playSecond is enabled
 var stopper     //For stopping game when doing reset
 
 function start(items_, twoPlayer_) {
@@ -283,7 +283,7 @@ function applyLogic(player) {
 
 /* One of the function used by applyLogic, giveNearest() returns the immediate empty position (up, down, left or right) to the 
  * position at which player played his turn. The logic is, that in most cases if computer plays just immediate to where the 
- * player has played, then player wont be able to get three consecutive marks. 
+ * player has played, then player won't be able to get three consecutive marks.
  * Returns -1 if no immediate empty position is found
 */
 function giveNearest() {

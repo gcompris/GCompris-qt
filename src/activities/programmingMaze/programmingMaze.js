@@ -59,7 +59,7 @@ var loopsNumber
  */
 var resetTux = false
 
-//Stores the currrent instruction which is going to be processed
+//Stores the current instruction which is going to be processed
 var currentInstruction
 
 var url = "qrc:/gcompris/src/activities/programmingMaze/resource/"
@@ -113,7 +113,7 @@ function stop() {
  *
  * The instructions can now be obtained from the look-up tables and executed when called.
  *
- * This saves the process of re-creating all the instruction objets, connecting them to their parent's slot and destroying
+ * This saves the process of re-creating all the instruction objects, connecting them to their parent's slot and destroying
  * them everytime for each instruction call which will be very redundant and quite memory consuming on devices with
  * less RAM, weak processing power and slow performance specially for "loops" mode.
  *
@@ -210,7 +210,7 @@ function initLevel() {
         createLoopObjectAndInstructions()
     }
 
-    // Stores the co-ordinates of the tile blocks in the current level
+    // Stores the coordinates of the tile blocks in the current level
     var currentLevelBlocksCoordinates = mazeBlocks[items.currentLevel].map
 
     items.mazeModel.model = currentLevelBlocksCoordinates
@@ -235,7 +235,7 @@ function initLevel() {
     items.player.y = currentLevelBlocksCoordinates[0].y * stepY + (stepY - items.player.height) / 2
     items.player.rotation = EAST
 
-    // Center fish at it's co-ordinate
+    // Center fish at it's coordinate
     items.fish.x = mazeBlocks[items.currentLevel].fish.x * stepX + (stepX - items.fish.width) / 2
     items.fish.y = mazeBlocks[items.currentLevel].fish.y * stepY + (stepY - items.fish.height) / 2
 

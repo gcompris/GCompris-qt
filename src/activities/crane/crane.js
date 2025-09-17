@@ -243,7 +243,7 @@ function getNextIndex() {
 
     for (var i = 0; i < items.answerRepeater.count; i++) {
         var currentItemIndex = items.answerRepeater.itemAt(i).initialIndex
-        // get the immediat bigger index
+        // get the immediate bigger index
         if (index < currentItemIndex) {
             if (min > currentItemIndex) {
                 // update min and index
@@ -269,13 +269,13 @@ function getNextIndex() {
 //touchscreen gestures
 function gesture(deltax, deltay) {
     if (Math.abs(deltax) > 40 || Math.abs(deltay) > 40)
-        if (deltax > 30 && Math.abs(deltay) < items.sensivity)
+        if (deltax > 30 && Math.abs(deltay) < items.sensitivity)
             move("right")
-        else if (deltax < -30 && Math.abs(deltay) < items.sensivity)
+        else if (deltax < -30 && Math.abs(deltay) < items.sensitivity)
             move("left")
-        else if (Math.abs(deltax) < items.sensivity && deltay > 30)
+        else if (Math.abs(deltax) < items.sensitivity && deltay > 30)
             move("down")
-        else if (Math.abs(deltax) < items.sensivity && deltay < 30)
+        else if (Math.abs(deltax) < items.sensitivity && deltay < 30)
             move("up")
 }
 

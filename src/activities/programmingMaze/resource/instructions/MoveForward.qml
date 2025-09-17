@@ -19,7 +19,7 @@ Instruction {
     property double playerXCoordinate: 0
     property double playerYCoordinate: 0
 
-    //If there has been an x-axis movement, x co-ordinate will be animated without any effect on y-axis movement and same vice-versa.
+    //If there has been an x-axis movement, x coordinate will be animated without any effect on y-axis movement and same vice-versa.
     ParallelAnimation {
         id: movementAnimation
         SmoothedAnimation {

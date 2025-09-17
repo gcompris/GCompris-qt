@@ -55,12 +55,12 @@ function loadDatas() {
     items.answerModel.clear()
     items.objective.text = ""
     goalArray = []
-    //--- Reset debug informations
+    //--- Reset debug information
     items.goalStr = ""
     items.phrase.text = ""
     items.response.text = ""
     items.inspector.message = ""
-    //--- End debug informations
+    //--- End debug information
 
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale);
     var fileName = "file://" + GCompris.ApplicationSettings.userDataPath + "/grammar" + grammarMode + "-xx.json"    // Translator file
@@ -404,14 +404,14 @@ function buildAnswer() {
         items.errors.text += "At least one goal class must be present"
     }
 
-    //--- Update debugging informations
+    //--- Update debugging information
     items.phrase.text = items.datasetModel.get(items.currentExercise).exercise.sentence
     items.response.text = items.datasetModel.get(items.currentExercise).exercise.answer
     items.inspector.message = JSON.stringify(parsed, null, 4)
-    //--- End debug informations
+    //--- End debug information
 }
 
-// Analyze an exercise. Store splitted parts and computed parts in an object
+// Analyze an exercise. Store split parts and computed parts in an object
 function analyzeExercise(level, exercise) {
     var parsed = {}                                                             // Object container for parsed segments
     parsed.sentence = exercise.sentence.replace(/\s+/,' ').trim()               // Trim multiple spaces
@@ -426,7 +426,7 @@ function analyzeExercise(level, exercise) {
     tempStr = tempStr.replace(/ +/g, ' ').trim()                                // Clear multiple spaces
     tempStr = tempStr.replace(/\([^\(\)]+\)/g,"\t")                             // Replace parentheses blocks with a tabulation char
     tempStr = tempStr.replace(/([\\'|’])/g,"$1 ")                               // Single quote as word delimiter
-    parsed.words = tempStr.split(/ /)                                           // Cleared string can be splitted now
+    parsed.words = tempStr.split(/ /)                                           // Cleared string can be split now
     if (parentheses !== null) {
         var idx = 0
         for (var i=0; i<parsed.words.length ; i++) {

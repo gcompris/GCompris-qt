@@ -230,7 +230,7 @@ function checkAnswer() {
 
 function pay(index) {
     items.paySound.play()
-    // Add it to the anwser
+    // Add it to the answer
     items.answerModel.append(items.pocketModel.get(index))
 
     // Remove it from the pocket

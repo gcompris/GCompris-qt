@@ -16,7 +16,7 @@
 ||      '-bbbBBB000w-wwWWWwwwww-bbbbbbbbbb-000wwwwwww-00bbbwwWW0-'
 ||      '-0000000000-0000000000-0000000000-0000000000-0000000000-'  (empty position)
 ||      '-bbbbbbbbbb-bbbbbbbbbb-0000000000-wwwwwwwwww-wwwwwwwwww-'  (start position)
-|| B. Position (external respresentation): string with length 51.
+|| B. Position (external representation): string with length 51.
 ||    Square numbers are represented by the position of the characters.
 ||    Position 0 is reserved for the side to move (B or W)
 ||    Valid characters: b B w W 0

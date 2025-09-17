@@ -237,7 +237,7 @@ When "debug information" is activated, you will see the following extra info.
 
 On the top-left of the screen, some info about the running exercise:
 
-![Activity informations](examples/activity-info.png)
+![Activity information](examples/activity-info.png)
 
 - The name of the activity.
 - The selected locale.
@@ -249,7 +249,7 @@ On the top-left of the screen, some info about the running exercise:
 
 ## Info about each word of the sentence
 
-![Debug informations](examples/activity-debug.png)
+![Debug information](examples/activity-debug.png)
 
 - The lines above the sentence allow to visualize the words, the separation spaces and the punctuation.
 - Above the words, the requested classes for the corresponding slots. A `_` means an empty slot is expected.

@@ -61,7 +61,7 @@ ActivityBase {
             property int columns
             property int rows
             property bool ok: true
-            property int sensivity: 80
+            property int sensitivity: 80
             property bool pieceIsMoving: false
             readonly property var levels: activity.datasets
             property double gridBaseWidth: board.width / items.columns

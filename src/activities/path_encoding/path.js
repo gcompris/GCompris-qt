@@ -59,10 +59,10 @@ function initLevel() {
 
     // reset initial position
     prevPos = [-1, -1];
-    // intialize position of tux
+    // initialize position of tux
     currPos = findStartAndLoadObstacles()
 
-    // find the initial direciton of tux
+    // find the initial direction of tux
     items.tux.init(findCorrectDirectionAbsolute(currPos[0], currPos[1], -1, -1))
 
     // reset mapView

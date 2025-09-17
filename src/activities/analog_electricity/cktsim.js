@@ -172,7 +172,7 @@ var cktsim = (function() {
 		if (name==undefined || name=='')
 		    name = '_' + properties['_json_'].toString();
 
-		// convert node names to circuit indicies
+		// convert node names to circuit indices
 		var connections = component[3];
 		for (var j = connections.length - 1; j >= 0; --j) {
 		    var node = connections[j];
@@ -959,7 +959,7 @@ var cktsim = (function() {
 	    var R = mat_rank(Mc);
 
 	    var one_if_alg = new Array(Nr);
-	    for (var row = 0; row < Nr; row++) {  // psuedo gnd row small
+	    for (var row = 0; row < Nr; row++) {  // pseudo gnd row small
 		for (var col = Nr - 1; col >= 0; --col)
 		    Mc[row][col] = 0;
 		if (mat_rank(Mc) == R)  // Zeroing row left rank unchanged

@@ -23,7 +23,7 @@ Most of the classes from the @ref infrastructure section are not of immediate
 use for activity developers, unless they want to contribute/extend core
 functionalities. One exception is the ApplicationInfo singleton
 that contains some accessor methods to the native layer, that are often of
-use for concrete activitites.
+use for concrete activities.
 */
 
 /**
@@ -60,7 +60,7 @@ QML scene.
 
 Each activity @em must add a navigation Bar to its viewport. Activities that
 support sublevels should use a Score element. The Bonus component can be used
-for audio feedback upon winning/loosing. If an activity uses per-activity
+for audio feedback upon winning/losing. If an activity uses per-activity
 configuration it should use DialogActivityConfig.
 
 For audio playback the GCAudio wrapper should be used, and GCText's purpose is

@@ -37,7 +37,7 @@ void ActivityInfo::setName(const QString &name)
 {
     m_name = name;
     // Once we are given a name, we can get the favorite property
-    // from the persistant configuration
+    // from the persistent configuration
     m_favorite = ApplicationSettings::getInstance()->isFavorite(m_name);
 
     if(!m_levels.empty()) {

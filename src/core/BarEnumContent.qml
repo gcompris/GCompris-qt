@@ -53,7 +53,7 @@ QtObject {
      * type:int
      * Representation of the home button.
      *
-     * Used for returning from an acitivity to the main menu.
+     * Used for returning from an activity to the main menu.
      */
     readonly property int home: 8
 

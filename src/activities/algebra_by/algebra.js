@@ -72,7 +72,7 @@ function initLevel() {
     /**
      It exists two types of levels:
       - the operation table where all operands are defined in the dataset
-      - the generated question, where the dataset specify constraits
+      - the generated question, where the dataset specify constraints
      Leveltype is determined by checking what is the inner structure of the dataset
     */
     if("operands" in dataset[items.currentLevel]) {

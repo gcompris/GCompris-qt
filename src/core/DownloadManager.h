@@ -67,7 +67,7 @@ namespace GCompris {
  * checksums that are expected to be stored in @c Contents files in each
  * upstream directory according to the syntax produced by the @c md5sum
  * tool. The checksums are used for checking whether a local rcc file is
- * up-to-date (to avoid unnecesary rcc downloads) and to verify that the
+ * up-to-date (to avoid unnecessary rcc downloads) and to verify that the
  * transfer was complete. Only valid rcc files (with correct checksums)
  * are registered.
  *

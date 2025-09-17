@@ -60,7 +60,7 @@ This script produces the file `resource/guess24.json` and outputs a report to th
     Print a report on stdout.
     
     Options
-      -v, --verbose              print informations on rejected formulas.
+      -v, --verbose              print information on rejected formulas.
       -s, --solutions            no solutions in output file.
       -r, --rate [LIMITRATE]     set minimum solved rate required (default 80).
       -h, --help                 display this help and exit.

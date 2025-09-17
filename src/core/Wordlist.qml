@@ -45,7 +45,7 @@ Item {
      * type:string
      * Default filename to be used if the language specific wordlist file could
      * not be loaded.
-     * Default is emtpy.
+     * Default is empty.
      */
     property string defaultFilename: ""
 

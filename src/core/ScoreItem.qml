@@ -95,7 +95,7 @@ Item {
 
     /**
      * type:bool
-     * Wether it is player's turn.
+     * Whether it is player's turn.
      */
     property bool playersTurn: false
 

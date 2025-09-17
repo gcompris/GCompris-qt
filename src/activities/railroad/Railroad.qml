@@ -348,7 +348,7 @@ ActivityBase {
                 highlightFollowsCurrentItem: false
             }
 
-            // Used to highlight a wagon selected for swaping via key navigations
+            // Used to highlight a wagon selected for swapping via key navigations
             Rectangle {
                 id: swapHighlight
                 width: answerZone.cellWidth

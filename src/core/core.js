@@ -211,7 +211,7 @@ function showDownloadDialog(parent, properties) {
  * Helper checking for availability of audio voices for the current locale and
  * informing the user in case they're missing.
  *
- * Can be used by acitivities that depend on audio voices to inform the user
+ * Can be used by activities that depend on audio voices to inform the user
  * of missing resources during startup.
  *
  * @param parent Parent QML object.
@@ -264,7 +264,7 @@ function quit(parent)
         });
         dialog.finished.connect(function() {Qt.quit();});
     } else if (GCompris.ApplicationSettings.exitConfirmation) {
-        // prevent the user from quitting accidentially by clicking back too often:
+        // prevent the user from quitting accidentally by clicking back too often:
         showMessageDialog(parent,
                 qsTr("Quit?") +
                 '\n' +

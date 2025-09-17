@@ -1,5 +1,5 @@
 <?php
-// Convert Guess24-difficulty.csv and Guess24-solutions.csv into a json file with required informations
+// Convert Guess24-difficulty.csv and Guess24-solutions.csv into a json file with required information
 // Usage from guess24 directory: $ php build-datas.php
 // Output a report on stdout and a json file for the activity.
 
@@ -35,7 +35,7 @@ if(isset($options["h"]) || isset($options["help"])) {
     print("Usage: php build-datas.php [OPTIONS]\n");
     print("Create file `$outputFile` from `$difficultyFile` and `$solutionFile`.\nPrint a report on stdout.\n\n");
     print("Options\n");
-    print("  -v, --verbose              print informations on rejected formulas.\n");
+    print("  -v, --verbose              print information on rejected formulas.\n");
     print("  -s, --solutions            no solutions in output file.\n");
     print("  -r, --rate [LIMITRATE]     set minimum solved rate required (default 80).\n");
     print("  -h, --help                 display this help and exit.\n");

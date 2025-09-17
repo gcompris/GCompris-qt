@@ -47,7 +47,7 @@ function printCalcudoku() {
         var casesCount = items.rows*items.columns;
         var rowCount = items.rows;
 
-        // Sorting is only useful to print the calcudoku, not in the real algorithm, so we onyl do it here, it does not affect the play
+        // Sorting is only useful to print the calcudoku, not in the real algorithm, so we only do it here, it does not affect the play
         currentCage.indexes.sort((a,b) => (a-b));
 
         for(var index = 0 ; index < currentCage.indexes.length ; ++ index) {

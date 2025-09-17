@@ -149,10 +149,10 @@ function moveSpaceship() {
     // calculate gravity
     if(planetsCounter > 0) {
         // calculate distance between planet center and spaceship center
-        var hypothenuse = Math.sqrt(
+        var hypotenuse = Math.sqrt(
             Math.pow((currentPlanet.x + (currentPlanet.width * 0.5)) - items.spaceshipX, 2) +
             Math.pow((currentPlanet.y + (currentPlanet.height * 0.5)) - items.spaceshipY, 2));
-        items.gravity = (planetGravity * (items.currentLevel * 0.33 + 1)) / Math.pow(hypothenuse, 2) * items.gravityFactor;
+        items.gravity = (planetGravity * (items.currentLevel * 0.33 + 1)) / Math.pow(hypotenuse, 2) * items.gravityFactor;
     } else {
         items.gravity = 0;
     }

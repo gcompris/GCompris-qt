@@ -24,7 +24,7 @@
       - rotation: item target rotation
       - moduloRotation: modulo rotation
       - initX: initial x position
-      - initY: innitial y position
+      - initY: initial y position
       - initRotation: initial rotation
       - initFlipping: initial flipping
 */

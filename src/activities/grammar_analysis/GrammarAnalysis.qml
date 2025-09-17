@@ -322,7 +322,7 @@ ActivityBase {
                 }
             }
             MouseArea {
-                // used to block all mouse input on activity interface execpt the OK button
+                // used to block all mouse input on activity interface except the OK button
                 anchors.fill: parent
                 enabled: items.buttonsBlocked
             }
@@ -414,7 +414,7 @@ ActivityBase {
         //--- Debugging zone.
         Text {
             id: hideDebug
-            text: "Alt+Left and Alt+Right to change exercise\nCtrl+Alt+Return to flip debug informations"
+            text: "Alt+Left and Alt+Right to change exercise\nCtrl+Alt+Return to flip debug information"
             anchors.top: scoreButtonContainer.bottom
             anchors.right: parent.right
             visible: activity.translationMode

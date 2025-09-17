@@ -1,4 +1,4 @@
-Important: These files must be UTF-8 formated.
+Important: These files must be UTF-8 formatted.
 
 To edit them, you can use gedit, oowrite or any text editor that supports UTF-8
 
@@ -6,7 +6,7 @@ To complete the translation, you must provide a single word list file for
 your locale named: src/activities/wordsgame/resource/default-XX.json
 Where XX is your target locale.
 
-Note that these words must be choosen to be simple in your language,
+Note that these words must be chosen to be simple in your language,
 don't necessary translate the english. Also, it is important to make sure
 that these words can be written with your keyboard in one key
 (no alt gr stuff or compose key).

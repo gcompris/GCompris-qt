@@ -41,7 +41,7 @@ function initLevel() {
             var maxValue = currentDataset.maximumFirstValue;
             var leftHandSide;
             var numberAlreadyExists = true;
-            var tryCount = 10; // Avoid too many attemps. There should not be too much duplicates.
+            var tryCount = 10; // Avoid too many attempts. There should not be too much duplicates.
             while(numberAlreadyExists && tryCount > 0) {
                 leftHandSide = Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
                 numberAlreadyExists = false;
