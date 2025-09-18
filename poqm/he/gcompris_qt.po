@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-09-03 12:17+0300\n"
+"PO-Revision-Date: 2025-09-17 11:20+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -3595,19 +3595,19 @@ msgid ""
 "set' to download the full word image set. Click on the cross or on 'Never "
 "show this dialog again' to play with the demo version."
 msgstr ""
-"לא כל התמונות לפעילות הזו נמצאות. צריך ללחוץ על עדכון כדי לקבל את כל האוסף. "
-"כדי לשחק בגירסת הדמו אפשר ללחוץ על הצלב או 'לעולם אל תציג את המידע הזה שוב' "
-"כדי לא לראות שוב את המידע הזה."
+"לא כל התמונות לפעילות הזו נמצאות. צריך ללחוץ על ‚לעדכן את אוסף התמונות’ כדי "
+"לקבל את כל האוסף. כדי לשחק בגרסת ההדגמה אפשר ללחוץ על הצלב או ‚לעולם לא "
+"להציג את החלונית הזאת שוב’ כדי לשחק בגרסת ההדגמה."
 
 #: activities/categorization/Categorization.qml:153
 msgctxt "Categorization|"
 msgid "Update the image set"
-msgstr "לעדכן את אוסף התמונת"
+msgstr "לעדכן את אוסף התמונות"
 
 #: activities/categorization/Categorization.qml:154
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
-msgstr "אל תראה את המידע הזה שוב"
+msgstr "לעולם לא להציג את החלונית הזאת שוב"
 
 #: activities/categorization/CategoryReview.qml:176
 msgctxt "CategoryReview|"
@@ -4303,9 +4303,9 @@ msgid ""
 "will redo one move. To undo all the moves, press and hold the undo button "
 "for 3 seconds."
 msgstr ""
-"לחיצה על כפתור \"לבטל\" תבטל את את המהלך האחרון, ולחיצה על כפתור \"עשה שוב\" "
-"תבצע שוב מהלך שבוטל. כדי לבטל את כל המהלכים, לחצו על כפתור \"לבטל\" למשך 3 "
-"שניות."
+"לחיצה על כפתור „ביטול” תבטל את את המהלך האחרון, ולחיצה על כפתור „ביצוע מחדש” "
+"תבצע שוב מהלך שבוטל. כדי לבטל את כל המהלכים, יש ללחוץ על כפתור „ביטול” למשך "
+"3 שניות."
 
 #: activities/chess/ActivityInfo.qml:32
 #: activities/chess_partyend/ActivityInfo.qml:32
@@ -5627,7 +5627,7 @@ msgstr "גשר מצודת לונדון"
 #: activities/details/resource/board/board14_0.qml:14
 msgctxt "board14_0|"
 msgid "Eiffel Tower, seen from the champ de Mars, Paris, France"
-msgstr "מגדל אייפל, אשר נראה מקמפ ד-מרס, פריס, צרפת"
+msgstr "מגדל אייפל, מנקודת מבט משאן דה מארס, פריז, צרפת"
 
 #: activities/details/resource/board/board15_0.qml:14
 msgctxt "board15_0|"
@@ -6747,8 +6747,8 @@ msgid ""
 "escape predators, and possess an excellent sense of balance. They have "
 "single-toed hooves."
 msgstr ""
-"הסוס צוהל \"נִיהה\". הסוסים מותאמים לריצה המאפשרת להם להימלט במהירות מטורפים "
-"ויש להם חוש איזון נהדר. הסוסים שייכים לסדרת מפריטי הפרסה."
+"הסוס צוהל „אִיהיהיהי”. הסוסים מותאמים לריצה המאפשרת להם להימלט במהירות "
+"מטורפים ויש להם חוש איזון נהדר. הסוסים שייכים לסדרת מפריטי הפרסה."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
 msgctxt "board1|"
@@ -6772,7 +6772,7 @@ msgstr ""
 #: activities/explore_farm_animals/resource/board/board1.qml:37
 msgctxt "board1|"
 msgid "This animal has a comb on its head."
-msgstr "לחיה זו יש \"מסרק\" על הראש."
+msgstr "לחיה הזאת יש „מסרק” על הראש."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6786,8 +6786,8 @@ msgid ""
 "developed sense of taste, with around 20,000 taste buds. They can detect "
 "odours 8km away."
 msgstr ""
-"הפרה גוֹעה \"מוּוּ\". לפרות יש שדה ראיה רחב של 330°. יש להן חוש טעם מפותח "
-"וכ20,000 פקעיות טעם. הן יכולות להבחין בריח ממרחק של 8 קילומטרים."
+"הפרה גוֹעה „מוּוּ”. לפרות יש שדה ראיה רחב של 330°. יש להן חוש טעם מפותח וכ־"
+"20,000 פקעיות טעם. הן יכולות לזהות ריח ממרחק של 8 קילומטרים."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
@@ -6806,7 +6806,7 @@ msgid ""
 "ability to chase mice and other rodents. They purr to communicate various "
 "emotions."
 msgstr ""
-"החתול מיילל \"מיאוּ\". בני האדם מעריכים חתולים בגלל הידידותיות שלהם והיכולת "
+"החתול מיילל „מיאוּ”. בני האדם מעריכים חתולים בגלל הידידותיות שלהם והיכולת "
 "שלהם לרדוף עכברים ומזיקים אחרים. הם מגרגרים כדי להביע מגוון רגשות."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
@@ -7033,9 +7033,9 @@ msgid ""
 "and plateaus, stretching approximately 13170 miles (21196 kilometers) from "
 "east to west of China."
 msgstr ""
-"החומה הגדולה של סין, נרשמה כאתר שימור עולמי של אונסק\"ו ב1987. כמו דרקון "
-"ענקי, היא מתפתלת לרוחב מדבריות, שדות, הרים ומישורים, נמתחת לאורך של 21,196 "
-"קילומטרים ממזרח למערב סין."
+"החומה הגדולה של סין, נרשמה כאתר מורשת עולמי של אונסק״ו ב־1987. כמו דרקון "
+"ענקי, היא מתפתלת לרוחב מדבריות, שדות, הרים ומישורים, משתרעת לאורך של 21,196 "
+"קילומטרים ממזרח סין למערבה."
 
 #: activities/explore_monuments/resource/board/board1.qml:63
 #: activities/explore_monuments/resource/board/board1.qml:66
@@ -7373,10 +7373,10 @@ msgid ""
 "is a dramatic representation of medieval architecture perched on a rocky "
 "spur that towers above the River Aude, southeast of the new town."
 msgstr ""
-"עם יותר מ4 מליון מבקרים בכל שנה, קארקסון הוא מיעדי התיירות הנחשבים ביותר "
-"בצרפת, יחד עם מונט-סנט-מישל ונוטרדם של פריז. זהו אתר מורשת עולמי של אונסק\"ו "
-"מאז 1997, קארקסון הוא ייצוג דרמטי של ארכיטקטורת ימי הביניים הממוקם על צוק "
-"האבן מעל נהר האָאוּדה, דרומית מזרחית לעיר החדשה."
+"עם יותר מ־4 מיליון מבקרים בכל שנה, קרקסון הוא מיעדי התיירות הנחשבים ביותר "
+"בצרפת, יחד עם מון-סן-מישל ונוטרדם של פריז. זהו אתר מורשת עולמי של אונסק״ו "
+"מאז 1997, קרקסון הוא ייצוג דרמתי של ארכיטקטורת ימי הביניים הממוקם על צוק "
+"האבן מעל נהר האוד, דרומית מזרחית לעיר החדשה."
 
 #: activities/explore_monuments/resource/board/board3.qml:40
 #: activities/explore_monuments/resource/board/board3.qml:43
@@ -7395,9 +7395,9 @@ msgid ""
 "1500000 visitors every year."
 msgstr ""
 "בגודלה, קתדרלת רֵיימס היא מבנה יוצא מהכלל: תוכננה להכיל קהל עצום, מידותיה "
-"הענקיות כוללות משטח של 6,650 מטרים רבועים ואורך של 122 מ'. יצירת מופת גותית "
-"ומקום ההכתרה של מלכי צרפת, זהו אתר מורשת עולמית של אונסק\"ו מאז 1991. המֵכּה "
-"של התיירים בחבל שמפיין מארח מליון וחצי מבקרים בכל שנה."
+"הענקיות כוללות מתחם מישורי של 6,650 מטרים רבועים ואורך של 122 מ׳. יצירת מופת "
+"גותית ומקום ההכתרה של מלכי צרפת, זהו אתר מורשת עולמית של אונסק״ו מאז 1991. "
+"מוקד עלייה מרכזי של התיירים בחבל שמפיין, מארח מיליון וחצי מבקרים בכל שנה."
 
 #: activities/explore_monuments/resource/board/board3.qml:51
 #: activities/explore_monuments/resource/board/board3.qml:54
@@ -7414,10 +7414,10 @@ msgid ""
 "stands almost 50 m high and is on three levels – the longest measuring 275 m "
 "– created a technical as well as an artistic masterpiece."
 msgstr ""
-"פּוֹן דוּ גאר נבנה מעט אחרי התקופה הצלבנית כדי לאפשר לאמת המים של נים (Nîmes) "
-"(שאורכה כמעט 50 ק\"מ) לחצות את נהר הגארדון. הארכיטקטים הרומאים ומהנדסי המים "
-"שתיכננו את הגשר הזה, שגובהו כמעט 50 מ' ובנוי בשלושה מפלסים שהארוך מביניהם "
-"מגיע ל־275 מ', יצרו יצירת מופת של תכנון הנדסי ואומנותי."
+"פּוֹן דוּ גאר נבנה מעט אחרי התקופה הצלבנית כדי לאפשר לאמת המים של נים (Nîmes - "
+"שאורכה כמעט 50 ק״מ) לחצות את נהר הגארדון. האדריכלים הרומאים ומהנדסי המים "
+"שתכננו את הגשר הזה, שגובהו כמעט 50 מ׳ ובנוי בשלושה מפלסים שהארוך מביניהם "
+"מגיע ל־275 מ׳, יצרו יצירת מופת של תכנון הנדסי ואומנותי."
 
 #: activities/explore_monuments/resource/board/board3.qml:62
 #: activities/explore_monuments/resource/board/board3.qml:65
@@ -7929,12 +7929,12 @@ msgid ""
 "stone have been used in the construction. The height of the pyramid is "
 "approximately 139 meters making it the highest pyramid of Egypt."
 msgstr ""
-"הפירמידה הגדולה של גיזה מוכרת גם כפרמידה של חוּפוֹ או הפרמידה של חֵוֹפּס. היא "
+"הפירמידה הגדולה של גיזה מוכרת גם כפרמידה של ח׳וּפוֹ או הפרמידה של חֵוֹפּס. היא "
 "נחשבת לעתיקה ביותר מבין שבעת פלאי העולם העתיק. היא גם הגדולה ביותר מבין "
-"שלושת הפירמידות בגיזה. היא נמצאת בעיר המתים של גיזה במצרים. תחילת הבניה "
-"הייתה של חופו, הפרעוני המצרי אז היא נמשכה על ידי בנו חפרי ולבסוף הושלמה על "
-"ידי מֵנקָרוֹ. נדרשו כמעט 20 שנה לבניית הפרמידה וכ2 מליון לבני אבן שימשו "
-"לבנייתה. גובהה של הפרמידה הוא כ139 מטרים ההופכים אותה לפרמידה הגבוהה בממצרים."
+"שלושת הפירמידות בגיזה. היא נמצאת בעיר המתים של גיזה במצרים. תחילת הבנייה "
+"הייתה של ח׳ופו, הפרעוני המצרי אז היא נמשכה על ידי בנו חפרי ולבסוף הושלמה על "
+"ידי מֵנקָרוֹ. נדרשו כמעט 20 שנה לבניית הפרמידה וכ־2 מיליון לבני אבן שימשו "
+"לבנייתה. גובהה של הפרמידה הוא כ־139 מטרים שהופכים אותה לפרמידה הגבוהה במצרים."
 
 #: activities/explore_monuments/resource/board/board6.qml:28
 #: activities/explore_monuments/resource/board/board6.qml:31
@@ -14215,7 +14215,7 @@ msgstr "המחלקים של %1 הם: %2"
 #: activities/gnumch-equality/Warning.qml:101
 msgctxt "Warning|"
 msgid "Press \"Return\" or click on me to continue."
-msgstr "ללחוץ \"המשך\" או ללחוץ עלי כדי להמשיך."
+msgstr "ללחוץ „חזרה” או ללחוץ עלי כדי להמשיך."
 
 #: activities/gnumch-equality/WarnMonster.qml:39
 msgctxt "WarnMonster|"
@@ -19334,9 +19334,8 @@ msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
 "you want to remove a coin or a note, click on it on the upper screen area."
 msgstr ""
-"לחצו על המטבעות או השטרות בתחתית המסך כדי לשלם. \n"
-"אם ברצונכם להוריד מטבע או שטר, לחצו עליו בחלק המסך העליון. \n"
-"בסיום לחצו על אישור."
+"כדי לשלם יש ללחוץ על המטבעות או השטרות בתחתית המסך. כדי להסיר מטבע או שטר, "
+"יש ללחוץ עליו בחלק העליון של המסך."
 
 #: activities/money/money.js:179
 #, qt-format
@@ -19505,7 +19504,7 @@ msgstr ""
 #: activities/morse_code/FirstScreen.qml:87
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
-msgstr "כשאתם מוכנים, לחצו על טאקס ונדבר בקוד מורס."
+msgstr "לאחר שסיימת להתכונן, יש ללחוץ על טאקס כדי לדבר בקוד מורס."
 
 #: activities/morse_code/MorseCode.qml:364
 #, qt-format
@@ -23171,8 +23170,8 @@ msgid ""
 "mass, a property which corresponds to the common perception of how \"heavy\" "
 "an object is. This unit is used in the USA."
 msgstr ""
-"סימן ה\"lb\" בסופו של המספר מציין פאונד. הפאונד היא מידה של מאסה, זו היא "
-"התייחסות לתפיסה הרווחת של כמה \"כבד\" חפץ. זו מידה שמשתמשים בה בארצות הברית."
+"הסימן „lb” בסוף מספר מציין פאונד. הפאונד היא יחידת מסה, זו היא התייחסות "
+"לתפיסה הרווחת של כמה „כבד” חפץ. במידה הזאת שמשתמשים בארצות הברית."
 
 #: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:84
 #: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:91
@@ -23196,8 +23195,8 @@ msgid ""
 "The \"oz\" symbol at the end of a number means ounce. \n"
 " Drop weights on the left side to balance the scales."
 msgstr ""
-"הסימן \"oz\" אחרי מספר מסמן אונקיה.  \n"
-"להניח משקולות בצד השמאלי כדי לאזן את המאזניים."
+"הסימן „oz” שמגיע אחרי מספר מסמן אונקיה.  \n"
+"נא להניח משקולות בצד השמאלי כדי לאזן את המאזניים."
 
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:13
 msgctxt "Data|"
@@ -23211,8 +23210,8 @@ msgid ""
 "Remember, one pound (\"lb\") equals sixteen ounces (\"oz\"). \n"
 " Drop the weights on the left side of the scales to balance it."
 msgstr ""
-"לזכור, פאונד אחד (\"lb\", ליבּרה) שווה לשש עשרה אונקיות (\"oz\").\n"
-"לגרור את המשקולות משמאל למאזניים כדי לאזן אותן."
+"חשוב לזכור, פאונד אחד („lb”, ליבּרה) שווה לשש עשרה אונקיות („oz”).\n"
+"נא לגרור את המשקולות משמאל למאזניים כדי לאזן אותן."
 
 #: activities/share/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -24363,22 +24362,22 @@ msgstr "השמש גדולה כמו:"
 #: activities/solar_system/Dataset.js:43
 msgctxt "Dataset|"
 msgid "1 million Earths"
-msgstr "מליון כדורי ארץ"
+msgstr "מיליון כדורי ארץ"
 
 #: activities/solar_system/Dataset.js:43
 msgctxt "Dataset|"
 msgid "2.6 million Earths"
-msgstr "2.6 מליון כדורי ארץ"
+msgstr "2.6 מיליון כדורי ארץ"
 
 #: activities/solar_system/Dataset.js:43
 msgctxt "Dataset|"
 msgid "1.3 million Earths"
-msgstr "1.3 מליון כדורי ארץ"
+msgstr "1.3 מיליון כדורי ארץ"
 
 #: activities/solar_system/Dataset.js:43
 msgctxt "Dataset|"
 msgid "5 million Earths"
-msgstr "5 מליון כדורי ארץ"
+msgstr "5 מיליון כדורי ארץ"
 
 #: activities/solar_system/Dataset.js:51
 msgctxt "Dataset|"
@@ -25876,9 +25875,9 @@ msgid ""
 "corresponding lines. To correct the errors, click on the wrong numbers to "
 "remove them and repeat the previous steps."
 msgstr ""
-"כשכל השורות יהיו מלאות, לחצו על OK כדי לבדוק את התשובות. אם חלק מהתשובות "
-"אינן נכונות, יופיע לידן סימן X. כדי לתקן את השגיאות, לחצו על המספרים השגויים "
-"כדי להסירם, וחזרו על הצעדים הקודמים."
+"כשכל השורות תתמלאנה, יש ללחוץ על OK כדי לבדוק את התשובות. אם חלק מהתשובות "
+"שגויות, יופיע לידן סימן X. כדי לתקן את השגיאות, יש ללחוץ על המספרים השגויים "
+"כדי להסירם, ולחזור על הצעדים הקודמים."
 
 #. Help manual
 #: activities/tens_complement_find/ActivityInfo.qml:23
@@ -25941,10 +25940,10 @@ msgid ""
 "the answers. If some answers are incorrect, a cross icon will appear on the "
 "corresponding lines. Correct the errors, then press the OK button again."
 msgstr ""
-"צרו זוגות מספרים שסכומם 10 בתוך כל זוג סוגריים. בחרו מספר, ואז בחרו מספר אחר "
-"של אותה הפעולה כדי להחליפם זה עם זה. כשכל השורות יהיו מלאות, לחצו על OK כדי "
-"לבדוק את התשובות. אם חלק מהתשובות אינן נכונות, יופיעו לידן סימני X. תַקנו את "
-"השגיאות ולחצו על OK שוב."
+"יש ליצור זוגות מספרים שסכומם 10 בתוך כל זוג סוגריים. נא לבחור מספר, ואז "
+"במספר אחר של אותה הפעולה כדי להחליפם זה עם זה. כשכל השורות תתמלאנה, יש ללחוץ "
+"על OK כדי לבדוק את התשובות. אם חלק מהתשובות אינן נכונות, יופיעו לידן סימן X. "
+"לאחר תיקון השגיאות יש ללחוץ שוב על OK."
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
 msgctxt "Data|"
@@ -26467,7 +26466,8 @@ msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
 "Click on the cloud."
 msgstr ""
-"אדי מים מתעבים ויוצרים עננים וכשהעננים נעשים כבדים, יורד גשם. לחצו על הענן."
+"אדי מים מתעבים ויוצרים עננים וכשהעננים נעשים כבדים, יורד גשם. נא ללחוץ על "
+"הענן."
 
 #: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
@@ -26989,7 +26989,7 @@ msgstr ""
 "יוסי זילברמן - דיבוב  &lt;yossizi@gmail.com&gt;,  \n"
 "ג'ורג' מריאנו &lt;mjminfo@yahoo.com&gt;, \n"
 "ראומה מרדכי &lt;reumamordechai@yahoo.com&gt;\n"
-"ירון שהרבני <sh.yaron@gmail.com>"
+"ירון שהרבני &lt;sh.yaron@gmail.com&gt;"
 
 #: core/DialogAbout.qml:55
 #, qt-format
