@@ -359,6 +359,8 @@ Rectangle {
                 width: titleRectangle.width * 0.25
                 theme: "settingsButton"
                 onClicked: {
+                    // Sort again levels to have the correct order
+                    chosenLevels.sort(function(a, b) { return (parseInt(a) - parseInt(b)) });
                     saveData();
                     if (inMenu === false) {
                         startActivity();
@@ -374,6 +376,8 @@ Rectangle {
                 visible: inMenu === true
                 theme: "settingsButton"
                 onClicked: {
+                    // Sort again levels to have the correct order
+                    chosenLevels.sort(function(a, b) { return (parseInt(a) - parseInt(b)) });
                     saveData();
                     startActivity();
                 }
