@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-13 02:28+0000\n"
-"PO-Revision-Date: 2025-09-17 11:52+0300\n"
+"PO-Revision-Date: 2025-09-19 08:26+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -508,7 +508,7 @@ msgstr ""
 #: activities/graduated_line_use/ActivityInfo.qml:17
 #, kde-format
 msgid "Place the given value on the graduated line."
-msgstr ""
+msgstr "יש להציב את המספר שסופק בקו המספרים."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
@@ -516,45 +516,45 @@ msgstr ""
 #: activities/grammar_classes/ActivityInfo.qml:21
 #, kde-format
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr ""
+msgstr "יש להקצות את היחסות הדקדוקיות המבוקשות למילים המתאימות."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
 #, kde-format
 msgid "Color the graph so that no two adjacent nodes have the same color."
-msgstr ""
+msgstr "יש לצבוע את התרשים כך שלא תהיינה שתי נקודות סמוכות באותו הצבע."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gravity"
 #: activities/gravity/ActivityInfo.qml:22
 #, kde-format
 msgid ""
 "Move the spaceship to avoid hitting the planets and reach the space station."
-msgstr ""
+msgstr "יש להזיז את החללית כדי לא לפגוע בכוכבים ולהגיע לתחנת החלל."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guess24"
 #: activities/guess24/ActivityInfo.qml:17
 #, kde-format
 msgid "Use the four numbers with given operators to find 24"
-msgstr ""
+msgstr "יש להשתמש בארבעת המספרים עם הפעולות שסופקו כדי למצוא 24"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22
 #, kde-format
 msgid ""
 "Use the numbers and operations suggested to find the results proposed above."
-msgstr ""
+msgstr "יש להשתמש במספרים ובפעולות המוצעות כדי למצוא את התוצאות המוצעות לעיל."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guessnumber"
 #: activities/guessnumber/ActivityInfo.qml:18
 #, kde-format
 msgid "Find out the number by typing a number from the range proposed."
-msgstr ""
+msgstr "יש למצוא את המספר על ידי הקלדת מספר מהטווח המוצע."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hangman"
 #: activities/hangman/ActivityInfo.qml:21
 #, kde-format
 msgid "A word is hidden, you must discover it letter by letter."
-msgstr ""
+msgstr "מילה מוסתרת, יש לחשוף אותה אות אחת אות."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hanoi"
 #: activities/hanoi/ActivityInfo.qml:18
@@ -562,7 +562,7 @@ msgstr ""
 msgid ""
 "Rebuild the same tower in the empty area as the one you see on the right "
 "hand side."
-msgstr ""
+msgstr "יש לבנות את אותו המגדל מחדש בשטח הריק כמו זה שרואים בצד הימני."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hanoi_real"
 #: activities/hanoi_real/ActivityInfo.qml:18
@@ -571,6 +571,8 @@ msgid ""
 "Rebuild the model tower on the right support. Take care, no disc may be "
 "placed atop a smaller disc."
 msgstr ""
+"יש לבנות את מגדל הדגם על התמיכה מימין. חשוב לשים לב, אי אפשר להציב אף טבעת "
+"על טבעת קטנה ממנה."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hexagon"
 #: activities/hexagon/ActivityInfo.qml:18
@@ -579,6 +581,8 @@ msgid ""
 "Click on the hexagons to find the hidden object, the red zone indicates that "
 "you're close to it!"
 msgstr ""
+"יש ללחוץ על המשושים כדי למצוא את הפריט המוסתר, האזור האדום מציין שהתקרבת "
+"מאוד!"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "imagename"
 #: activities/imagename/ActivityInfo.qml:21
@@ -612,7 +616,7 @@ msgstr "נא לבחור את השפה ללמידה ואז לברור את המי
 #: activities/learn_subtractions/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the circles to give the operation's result."
-msgstr ""
+msgstr "יש ללחוץ על העיגולים כדי לספק את תוצאת הפעולה."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals"
 #: activities/learn_decimals/ActivityInfo.qml:17
@@ -775,7 +779,7 @@ msgstr ""
 #: activities/memory-math-mult/ActivityInfo.qml:18
 #, kde-format
 msgid "Turn over two cards to match the calculation with its answer."
-msgstr ""
+msgstr "יש להפוך שני קלפים כדי ליצור התאמה בין החישוב לתוצאה שלו."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-sound"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-sound-tux"
@@ -834,19 +838,19 @@ msgstr ""
 #: activities/money_cents/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the money to pay."
-msgstr ""
+msgstr "יש ללחוץ על הכסף כדי לשלם."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
 #, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr ""
+msgstr "ניתן ללמוד ולתרגל את קוד מוֹרְס (Morse) הבינלאומי"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
 #, kde-format
 msgid "Put each item at the same place as in the given example."
-msgstr ""
+msgstr "יש לשים כל פריט באותו מקום כמו בדוגמא הנתונה."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
 #: activities/nine_men_morris/ActivityInfo.qml:18
@@ -855,6 +859,8 @@ msgid ""
 "Click on the dot where you wish to place your piece and try to take all "
 "Tux's pieces."
 msgstr ""
+"יש ללחוץ על הנקודה במקום בו ברצונך להציב את החלק שלך ולנסות לקחת את כל "
+"החלקים של טאקס."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris_2players"
 #: activities/nine_men_morris_2players/ActivityInfo.qml:18
@@ -863,18 +869,20 @@ msgid ""
 "Click on the dot where you wish to place your piece and try to take all your "
 "friend's pieces."
 msgstr ""
+"יש ללחוץ על הנקודה במקום בו ברצונך להציב את החלק שלך ולנסות לקחת את כל "
+"החלקים של היריב שלך."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "note_names"
 #: activities/note_names/ActivityInfo.qml:21
 #, kde-format
 msgid "Identify the note and press the correct piano key"
-msgstr ""
+msgstr "יש לזהות את התו וללחוץ על הקליד המתאים בפסנתר"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "number_sequence"
 #: activities/number_sequence/ActivityInfo.qml:18
 #, kde-format
 msgid "Draw the picture by touching the numbers in ascending order."
-msgstr ""
+msgstr "נא לצייר את התמונה על ידי נגיעה במספרים בסר עולה."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "numbers-odd-even"
 #: activities/numbers-odd-even/ActivityInfo.qml:18
@@ -883,6 +891,8 @@ msgid ""
 "Move the helicopter to catch the clouds having even or odd numbers, in the "
 "shown order."
 msgstr ""
+"יש להזיז את המסוק כדי לתפוס את העננים שיש להם מספרים זוגיים או אי־זוגיים, "
+"בסדר המופיע."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_alphabets"
 #: activities/ordering_alphabets/ActivityInfo.qml:24
