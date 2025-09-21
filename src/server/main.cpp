@@ -8,7 +8,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 #include <QtDebug>
-#include <QApplication>
+#include <QGuiApplication>
 #include <QQuickWindow>
 #include <QQmlApplicationEngine>
 #include <QStandardPaths>
@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 {
     ERR_load_crypto_strings();
 
-    QApplication app(argc, argv);
+    QGuiApplication app(argc, argv);
     //    app.setOrganizationName("KDE");           // set config dir to ~/.config/KDE
     app.setOrganizationName("gcompris"); // set config dir to ~/.config/gcompris
     app.setApplicationName(GCOMPRIS_TEACHERS_APPLICATION_NAME);

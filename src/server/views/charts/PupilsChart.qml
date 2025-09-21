@@ -9,7 +9,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
-import QtCharts
+import QtGraphs
 import "../../components"
 import "../../singletons"
 import "../../activities"
@@ -48,7 +48,7 @@ Item {
 
         var jsonModel = JSON.parse(databaseController.selectToJson(request))
 
-        mySeries.axisX.clear()
+        myView.axisX.clear()
         mySeries.clear()
         var spots = {}
         for (var i = 0; i < jsonModel.length; i++) {
@@ -83,9 +83,9 @@ Item {
                 colMax += vals[i]
             max = Math.max(max, colMax)
         }
-        mySeries.axisX.categories = Object.keys(spots).sort()       // Set axis
-        mySeries.axisY.min = 0
-        mySeries.axisY.max = (Math.floor(max / 10) + 1) * 10
+        myView.axisX.categories = Object.keys(spots).sort()       // Set axis
+        myView.axisY.min = 0
+        myView.axisY.max = (Math.floor(max / 10) + 1) * 10
     }
 
     Component {
@@ -93,19 +93,23 @@ Item {
         LineReport {}
     }
 
-    ChartView {
+    GraphsView {
+        id: myView
         anchors.fill: parent
-        title: "User activities chart"
-        legend.alignment: Qt.AlignBottom
+        //title: qsTr("User activities chart")
+        //legend.alignment: Qt.AlignBottom
         antialiasing: true
-        backgroundRoundness: 0
-        theme: Style.isDarkTheme ? ChartView.ChartThemeDark : ChartView.ChartThemeLight
+        theme: GraphsTheme { theme: Style.isDarkTheme ? GraphsTheme.Theme.YellowSeries : GraphsTheme.Theme.GreySeries }
 
-        StackedBarSeries {
+        axisX: BarCategoryAxis {
+            labelsAngle: -90
+        }
+        axisY: BarCategoryAxis {
+        }
+
+        BarSeries {
             id: mySeries
-            axisX: BarCategoryAxis {
-                labelsAngle: -90
-            }
+            barsType: BarSeries.BarsType.Stacked
 
             onClicked: (index, barset) => {
 //                    console.warn("Click:", index, barset.label)
@@ -113,16 +117,16 @@ Item {
                                 , { userId: Number(barset.label)
                                     , activityId: -1
                                     , activityName: ""
-                                    , dayFilter: mySeries.axisX.categories[index]
+                                    , dayFilter: myView.axisX.categories[index]
                                 })
                 pupilsChart.parent.currentItem.executeRequest()
             }
 
-            onHovered: (status, index, barset) => {
+            /*onHovered: (status, index, barset) => {
                 var user = Master.findObjectInModel(selector.pupilPane.foldModel
                                                     , function(item) { return item.user_id === Number(barset.label) })
-                helpText.text = status ? mySeries.axisX.categories[index] + "   " + user.user_name : ""
-            }
+                helpText.text = status ? myView.axisX.categories[index] + "   " + user.user_name : ""
+            }*/
         }
         DefaultLabel {
             id: helpText
