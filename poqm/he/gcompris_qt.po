@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-09-19 15:13+0300\n"
+"PO-Revision-Date: 2025-09-20 16:24+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -4891,7 +4891,7 @@ msgstr "לעבור לשלב הבא"
 #: activities/clickanddraw/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Click and draw"
-msgstr "חבר את הנקודות"
+msgstr "יש ללחוץ ולצייר"
 
 #. Help title
 #: activities/clickanddraw/ActivityInfo.qml:17
@@ -5277,58 +5277,58 @@ msgstr "רווח או Enter: לבחור תשובה"
 #: activities/colors/colors.js:87
 msgctxt "colors|"
 msgid "Find the yellow duck"
-msgstr "עליך למצוא את הברווז הצהוב"
+msgstr "יש למצוא את הברווז הצהוב"
 
 #: activities/colors/colors.js:18 activities/colors/colors.js:50
 msgctxt "colors|"
 msgid "Find the black duck"
-msgstr "עליך למצוא את הברווז השחור"
+msgstr "יש למצוא את הברווז השחור"
 
 #: activities/colors/colors.js:23 activities/colors/colors.js:60
 #: activities/colors/colors.js:97
 msgctxt "colors|"
 msgid "Find the green duck"
-msgstr "עליך למצוא את הברווז הירוק"
+msgstr "יש למצוא את הברווז הירוק"
 
 #: activities/colors/colors.js:28
 msgctxt "colors|"
 msgid "Find the red duck"
-msgstr "עליך למצוא את הברווז האדום"
+msgstr "יש למצוא את הברווז האדום"
 
 #: activities/colors/colors.js:33 activities/colors/colors.js:80
 msgctxt "colors|"
 msgid "Find the white duck"
-msgstr "עליך למצוא את הברווז הלבן"
+msgstr "יש למצוא את הברווז הלבן"
 
 #: activities/colors/colors.js:38 activities/colors/colors.js:122
 msgctxt "colors|"
 msgid "Find the blue duck"
-msgstr "עליך למצוא את הברווז הכחול"
+msgstr "יש למצוא את הברווז הכחול"
 
 #: activities/colors/colors.js:55 activities/colors/colors.js:92
 msgctxt "colors|"
 msgid "Find the brown duck"
-msgstr "עליך למצוא את הברווז החום"
+msgstr "יש למצוא את הברווז החום"
 
 #: activities/colors/colors.js:65 activities/colors/colors.js:102
 msgctxt "colors|"
 msgid "Find the grey duck"
-msgstr "עליך למצוא את הברווז האפור"
+msgstr "יש למצוא את הברווז האפור"
 
 #: activities/colors/colors.js:70 activities/colors/colors.js:107
 msgctxt "colors|"
 msgid "Find the orange duck"
-msgstr "עליך למצוא את הברווז הכתום"
+msgstr "יש למצוא את הברווז הכתום"
 
 #: activities/colors/colors.js:75 activities/colors/colors.js:112
 msgctxt "colors|"
 msgid "Find the purple duck"
-msgstr "עליך למצוא את הברווז הסגול"
+msgstr "יש למצוא את הברווז הסגול"
 
 #: activities/colors/colors.js:117
 msgctxt "colors|"
 msgid "Find the pink duck"
-msgstr "עליך למצוא את הברווז הוורוד"
+msgstr "יש למצוא את הברווז הוורוד"
 
 #: activities/colors/FindIt.qml:266
 msgctxt "FindIt|"
@@ -5632,7 +5632,7 @@ msgstr "מגדל אייפל, מנקודת מבט משאן דה מארס, פרי�
 #: activities/details/resource/board/board15_0.qml:14
 msgctxt "board15_0|"
 msgid "Courtyard of the Museum of Louvre, and its pyramid"
-msgstr "חצר מוזיאון הלובר, והפרמידה שבו"
+msgstr "חצר מוזיאון הלובר, והפירמידה שבו"
 
 #: activities/details/resource/board/board16_0.qml:14
 msgctxt "board16_0|"
@@ -5647,7 +5647,7 @@ msgstr "טחנת הרוח בסונדרהו, פנו, דנמרק"
 #: activities/details/resource/board/board18_0.qml:14
 msgctxt "board18_0|"
 msgid "Nagoya Castle, Aichi Prefecture, Japan."
-msgstr "נאגויה טירה, פריפקטורה של איצ 'י, יפן."
+msgstr "מבצר נגויה, מחוז אַיִצִ׳י, יפן."
 
 #: activities/details/resource/board/board19_0.qml:14
 msgctxt "board19_0|"
@@ -6071,12 +6071,12 @@ msgstr "משווה"
 #: activities/digital_electricity/TutorialDataset.qml:96
 msgctxt "TutorialDataset|"
 msgid "BCD to 7 segment"
-msgstr "בסיס BCD ל־7"
+msgstr "בסיס BCD ל־7 מקטעים"
 
 #: activities/digital_electricity/TutorialDataset.qml:103
 msgctxt "TutorialDataset|"
 msgid "7 segment display"
-msgstr "תצוגת בסיס 7"
+msgstr "תצוגת 7 מקטעים"
 
 #: activities/digital_electricity/TutorialDataset.qml:110
 msgctxt "TutorialDataset|"
@@ -6086,7 +6086,7 @@ msgstr "מחולל אותות"
 #: activities/digital_electricity/TutorialDataset.qml:117
 msgctxt "TutorialDataset|"
 msgid "BCD counter"
-msgstr "מונה BCD"
+msgstr "מונה BCD (עשרוני מקודד בבינרי)"
 
 #: activities/digital_electricity/TutorialDataset.qml:144
 msgctxt "TutorialDataset|"
@@ -6767,8 +6767,8 @@ msgid ""
 "The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
 "of long-distance flight. They have a comb on their head."
 msgstr ""
-"התרנגולת מקרקרת 'קלאאק'. לתרנגולות הבית יש כנפיים אך הן אינן מסוגלות לעוף "
-"רחוק. יש להן כרבולת על הראש."
+"התרנגולת מקרקרת „קַד-קַדָּה”. לתרנגולות הבית יש כנפיים אך הן אינן מסוגלות לשאת "
+"אותן למרחקים. יש להן כרבולת על הראש."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
 msgctxt "board1|"
@@ -6999,7 +6999,7 @@ msgid ""
 msgstr ""
 "הקולוסיאום או הוא המבנה המזוהה ביותר כיום עם הבניינים הקלסיים של רומא. אפילו "
 "2,000 שנה אחרי שנבנה, ולמרות מאות שבהן הבניין המוזנח נשדד לחומרי בניה, הוא "
-"מזוהה מיידית כתבנית הקלאסית של אצטדיון בימינו. זהו האמפיתאטרון הקבוע הראשון "
+"מזוהה מיידית כתבנית הקלסית של אצטדיון בימינו. זהו האמפיתאטרון הקבוע הראשון "
 "שהוקם ברומא, והזירה המרשימה ביותר שהעולם העתיק ראה."
 
 #: activities/explore_monuments/resource/board/board1.qml:41
@@ -7075,8 +7075,8 @@ msgid ""
 "of the Arab Nabataeans, it is a symbol of Jordan, as well as Jordan's most-"
 "visited tourist attraction."
 msgstr ""
-"פטרה היא עיר היסטורית וארכיאולוגית בנפה הדרומית של ירדן מען שמפורסמת "
-"בארכיטקטורת חיתוך האבן ומערכת הובלת המים שלה. נוסדה כנראה כבר ב312 לפני "
+"פטרה היא עיר היסטורית וארכיאולוגית בנפת מעאן, הנמצאת בדרום ירדן, המפורסמת "
+"באדריכלות חיתוך האבן ומערכת הובלת המים שלה. נוסדה כנראה כבר ב־312 לפני "
 "הספירה כעיר הבירה של הנָבַּטים, היא סמל של ירדן וגם מוקד המשיכה העיקרי לתיירים "
 "בירדן."
 
@@ -7195,7 +7195,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board2.qml:65
 msgctxt "board2|"
 msgid "Ajanta Caves"
-msgstr "מערות אגֵ'ֵנטה"
+msgstr "מערות אגֵ׳אנטה"
 
 #: activities/explore_monuments/resource/board/board2.qml:63
 msgctxt "board2|"
@@ -7301,8 +7301,8 @@ msgid ""
 "buffalo fights and other sports at Rupahi Pathar - particularly during the "
 "Rongali Bihu festival in the Ahom capital of Rangpur."
 msgstr ""
-"ראנג גאהר הוא בניין בן שתי קומות אשר שימש בעבר כמועדון הספורט המלכותי שבו "
-"מלכי אהום ואצילים צפו במשחקים כמו קרבות באפלו ותחרויות נוספות ברופאהי פָּטָ'ר- "
+"ראנג גאהר הוא בניין בגובה שתי קומות ששימש בעבר כמועדון הספורט המלכותי שבו "
+"מלכי אהום ואצילים צפו במשחקים כמו קרבות תאו ותחרויות נוספות ברופאהי פָּטְהָר - "
 "במיוחד בזמן פסטיבל רונגלי בּיהוּ באהום, בירת רנגפּוּר."
 
 #: activities/explore_monuments/resource/board/board2.qml:128
@@ -7670,8 +7670,8 @@ msgid ""
 "distinctive conical towers, Worms Cathedral was constructed in phases "
 "throughout the twelfth century and mostly completed by 1181."
 msgstr ""
-"קתדרלת וּוֹרמס (וּרמסר דוֹם) הידועה גם כקתדרלה של פטר הקדוש, היא קתדרלה רומנסקית "
-"בעיר הגרמנית וּוֹרמס. מבנה אבן-חול עם מגדלים חרוטיים בולטים, קתדרלת וּוֹרמס "
+"קתדרלת וּוֹרמס (וׂרמסר דוֹם) הידועה גם כקתדרלה של פטר הקדוש, היא קתדרלה רומנסקית "
+"בעיר הגרמנית וּוֹרמס. מבנה אבן חול עם מגדלים חרוטיים בולטים, קתדרלת וּוֹרמס "
 "נבנתה לסירוגין במהלך המאה השתיים עשרה והושלמה ברובה ב־1181."
 
 #: activities/explore_monuments/resource/board/board4.qml:97
@@ -7700,16 +7700,17 @@ msgid ""
 "in September 1542, three months after departing from Barra de Navidad on the "
 "west coast of Mexico."
 msgstr ""
-"ממוקם בפּוינט לוּמה בסאן-דיאגו, קליפורניה, האתר הלאומי קברילו לזכרו של האריפאי "
-"הראשון שהגיע לחוף המערבי של ארצות הברית, חואן רודריגז קברילו. קברילו, שנולד "
-"בפורטוגל, נשא את דגל ספרד בכיבושיו בעולם החדש. הוא הגיע למפרץ סאן-דייגו "
-"בספטמבר 1542, שלושה חודשים לאחר שיצא מבּארה דה נאוידד בחופה המערבי של מקסיקו."
+"ממוקם בפּוינט לוּמה בסאן-דיאגו, קליפורניה, האתר הלאומי קברילו לזכרו של "
+"האירופאי הראשון שהגיע לחוף המערבי של ארצות הברית, חואן רודריגז קברילו. "
+"קברילו, שנולד בפורטוגל, נשא את דגל ספרד בכיבושיו בעולם החדש. הוא הגיע למפרץ "
+"סאן־דייגו בספטמבר 1542, שלושה חודשים לאחר שיצא מבּארה דה נאוידד בחופה המערבי "
+"של מקסיקו."
 
 #: activities/explore_monuments/resource/board/board5.qml:29
 #: activities/explore_monuments/resource/board/board5.qml:32
 msgctxt "board5|"
 msgid "Canyon de Chelly"
-msgstr "קניון דה צֵ'לי"
+msgstr "קניון דה שלי"
 
 #: activities/explore_monuments/resource/board/board5.qml:30
 msgctxt "board5|"
@@ -7722,10 +7723,10 @@ msgid ""
 "formations, including Spider Rock, an 800-foot-tall sandstone spire that "
 "rises eerily from the bottom of the canyon floor."
 msgstr ""
-"הריסות קניון דה צ'ֵלי השלוות בצפון מזרח אריזונה הן גם חלק מהפארק הלאומי "
-"ומאומת הנבאחו, שנוסדו כאתר לאומי ב1931. מספר אתרים אמריקאים ילידים חשובים "
-"שמורים בכמעט 84,000 אקרים של אדמת פארק והקניון דה צ'לי מציע גם תצורות "
-"גאולוגיות דרום-מערביות הכוללות את סלע העכביש, חרוט הניצב לגובה 280 מטר "
+"הריסות קניון דה שלי המאופקות בצפון מזרח אריזונה הן גם חלק מהפארק הלאומי "
+"ומאומת הנבאחו, שנוסדו כאתר לאומי ב־1931. מספר אתרים אמריקאים ילידיים חשובים "
+"שמורים בכמעט 340,000 דונם של אדמת פארק, וקניון דה שלי מציע גם תצורות "
+"גאולוגיות דרום־מערביות הכוללות את סלע העכביש, חרוט הניצב לגובה 280 מטר "
 "ומתרומם מתחתית רצפת הקניון."
 
 #: activities/explore_monuments/resource/board/board5.qml:40
@@ -7742,10 +7743,10 @@ msgid ""
 "still a Spanish territory. Constructed out of the rare coquina limestone, "
 "the star-shaped Castillo also is the oldest masonry fort in the country."
 msgstr ""
-"ניצב על יותר מ20 אקרים בסנט אקוסטין, פלורידה, הקסטילו של סן מרקוס הושלמה "
-"כמבצר ההגנה של העיר ב1695, כאשר פלורידה הייתה עדיין שטח ספרדי. בנויה מאבן "
-"הגיר הנדירה קוקואינה, המצודה בצורת כוכב היא גם מבצר הבונים החופשיים העתיק "
-"ביותר במדינה."
+"בסנט אוגוסטין שבפלורידה ניצב הקסטילו של סן מרקו שמשתרע על פני למעלה מ־80 "
+"דונם ובנייתו הושלמה ב־1695 על מנת לכהן כמבצר הגנה, כאשר פלורידה עדיין הייתה "
+"שטח ספרדי. היא בנויה מאבן הגיר הנדירה קוקואינה, המצודה, בצורת כוכב, היא גם "
+"מבצר הבונים החופשיים העתיק ביותר במדינה."
 
 #: activities/explore_monuments/resource/board/board5.qml:51
 #: activities/explore_monuments/resource/board/board5.qml:54
@@ -7829,7 +7830,7 @@ msgid ""
 msgstr ""
 "הר רשמור ניצב כמקדש לדמוקרטיה, אנדרטה ואתר הנצחה לג׳ורג׳ וושינגטון, לידתה של "
 "האומה, צמיחתה והעקרונות שלה. הר רשמור מסמל את גדולתה של האומה דרך גדולתם של "
-"מנהיגיה. הפסל העצום של הר רשמור מציג את פניהם של ארבעה נשיאים אמריקאים "
+"מנהיגיה. הפסל העצום של הר רשמור מציג את פניהם של ארבעה נשיאים אמריקאיים "
 "יוצאים מהכלל המייצגים את ההיסטוריה העשירה של האומה האמריקאית, נחישותה האיתנה "
 "וההישגים שלה."
 
@@ -7883,7 +7884,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board5.qml:120
 msgctxt "board5|"
 msgid "Fort Sumter"
-msgstr "מבצר סוֹמטֵר"
+msgstr "מבצר סוֹמְטֵר"
 
 #: activities/explore_monuments/resource/board/board5.qml:118
 msgctxt "board5|"
@@ -7928,18 +7929,19 @@ msgid ""
 "stone have been used in the construction. The height of the pyramid is "
 "approximately 139 meters making it the highest pyramid of Egypt."
 msgstr ""
-"הפירמידה הגדולה של גיזה מוכרת גם כפרמידה של ח׳וּפוֹ או הפרמידה של חֵוֹפּס. היא "
+"הפירמידה הגדולה של גיזה מוכרת גם כפירמידה של ח׳וּפוֹ או הפירמידה של חֵוֹפּס. היא "
 "נחשבת לעתיקה ביותר מבין שבעת פלאי העולם העתיק. היא גם הגדולה ביותר מבין "
 "שלושת הפירמידות בגיזה. היא נמצאת בעיר המתים של גיזה במצרים. תחילת הבנייה "
 "הייתה של ח׳ופו, הפרעוני המצרי אז היא נמשכה על ידי בנו חפרי ולבסוף הושלמה על "
-"ידי מֵנקָרוֹ. נדרשו כמעט 20 שנה לבניית הפרמידה וכ־2 מיליון לבני אבן שימשו "
-"לבנייתה. גובהה של הפרמידה הוא כ־139 מטרים שהופכים אותה לפרמידה הגבוהה במצרים."
+"ידי מֵנקָרוֹ. נדרשו כמעט 20 שנה לבניית הפירמידה וכ־2 מיליון לבני אבן שימשו "
+"לבנייתה. גובהה של הפירמידה הוא כ־139 מטרים שהופכים אותה לפירמידה הגבוהה "
+"במצרים."
 
 #: activities/explore_monuments/resource/board/board6.qml:28
 #: activities/explore_monuments/resource/board/board6.qml:31
 msgctxt "board6|"
 msgid "Bent Pyramid"
-msgstr "פירמידת בֵּנט"
+msgstr "פירמידת בֵּנְט"
 
 #: activities/explore_monuments/resource/board/board6.qml:29
 msgctxt "board6|"
@@ -7953,11 +7955,11 @@ msgid ""
 "Pyramid is the only pyramid in Egypt of which the outer casing of polished "
 "limestone is still largely intact."
 msgstr ""
-"פירמידת בֵּנט נמצאת בדָשוּר והיא הפרמידה השנייה שנבנתה על ידי סנֵפֵרו הפרעוני. "
+"פירמידת בֵּנט נמצאת בדָשוּר והיא הפירמידה השנייה שנבנתה על ידי סנֵפֵרו הפרעוני. "
 "באופן מסתורי, הפירמידה האמיתית הזו עולה מן המדבר בזווית של 55 מעולת ואז לפתע "
 "משתנה לזווית מתונה יותר של 43 מעלות. השערה אחת גורסת שבגלל הזווית החדה של "
 "המבנה המקורי, המשקל שאמור היה להתווסף מעל התא הפנימי והמעברים יהיה גדול מדי, "
-"ואילץ את הבנאים לאמץ זווית קהה יותר. היום, פירמידת בֵּנט היא הפרמידה היחידה "
+"ואילץ את הבנאים לאמץ זווית קהה יותר. היום, פירמידת בֵּנט היא הפירמידה היחידה "
 "במצרים שבה הציפוי החיצוני של אבן גיר עדיין אינו הרוס ברובו."
 
 #: activities/explore_monuments/resource/board/board6.qml:39
@@ -7981,7 +7983,7 @@ msgstr ""
 "8 קילומטרים דרומית לסָקארה במצרים עומדות הפירמידות המסתוריות ודמויות המגדל של "
 "מידום שכיום דומות באופן מרוחק בלבד לפירמידות. הפירמידות נבנו ככל הנראה בזמן "
 "שליטתה של שושלת הפרעונים הרביעית סנֵפֵרוּ למרות שיש שמאמינים שהפירמידה נוסדה על "
-"ידי יורשו של סנֵפֵרוּ- חוּני. בשלב מסוים בזמן הבניה מדרגות הפרמידה מולאו באבן "
+"ידי יורשו של סנֵפֵרוּ - חוּני. בשלב מסוים בזמן הבניה מדרגות הפירמידה מולאו באבן "
 "גיר המכילות סימונים לנסיונות בניה של פירמידה אמיתית על ידי המצרים הקדמונים."
 
 #: activities/explore_monuments/resource/board/board6.qml:50
@@ -8002,9 +8004,9 @@ msgid ""
 msgstr ""
 "הפירמידה האדומה היא אחד הנסיונות המוצלחים והיפים ביותר של סנֵפרו הפרעוני "
 "בבניית הפירמידה הראשונה בעלת צדדים חלקים בזמן המצרים העתיקים. גובהה של "
-"הפרמידה 104 מטרים שהופכים אותה לפירמידה הרביעית בגובהה במצרים. הפירמידה "
-"נבנתה מאבן חול אדומה ומכאן שמה. אנשי מצרים המקומיים מכנים אותה אֵל-חֵרָם אֵל-"
-"וָּטוָט שפירושו 'פירמידת העטלפים'."
+"הפירמידה 104 מטרים שהופכים אותה לפירמידה הרביעית בגובהה במצרים. הפירמידה "
+"נבנתה מאבן חול אדומה ומכאן שמה. המקומיים במצריים מכנים אותה אֵל־הָרָם אֵל־וָּטוָאט "
+"שפירושו ‚פירמידת העטלפים’."
 
 #: activities/explore_monuments/resource/board/board6.qml:63
 msgctxt "board6|"
@@ -8609,8 +8611,8 @@ msgid ""
 "Narwhals are whales that live in the Arctic Ocean and have long tusks. These "
 "tusks remind many people of the mythical unicorn's horn."
 msgstr ""
-"ללוויתני חָדשֵן חדקרן אשר מתגוררים באוקיינוס הארקטי יש חיטים ארוכים. החיטים "
-"מזכירים לאנשים רבים לקרן של החד-קרן האגדי."
+"לחַדְשֵׁנים שמתגוררים באוקיינוס הארקטי יש חטים ארוכים. החטים מזכירים לאנשים רבים "
+"את הקרן של החד־קרן האגדי."
 
 #: activities/explore_world_animals/resource/board/board1.qml:76
 msgctxt "board1|"
@@ -8649,7 +8651,7 @@ msgid ""
 "The polar bear is one of the world's largest predatory mammals. It weighs up "
 "to a ton and can be as long as 3 meters!"
 msgstr ""
-"דֹב קוטב הוא אחד היונקים הטורפים הגדולים ביותר. הוא שוקל עד טונה ויכול להגיע "
+"דֹב קוטב הוא אחד היונקים הטורפים הגדולים ביותר. הוא שוקל עד טון ויכול להגיע "
 "לאורך של 3 מטרים!"
 
 #: activities/explore_world_animals/resource/board/board2.qml:41
@@ -8695,9 +8697,9 @@ msgid ""
 "However, it's not easy, so sometimes the moose has to stand on its hind legs "
 "to reach branches up to 4 meters!"
 msgstr ""
-"הגדול מכל האיילים, אייל הקורא אוכל עד 25 קילוגרם ליום. כיוון שזה לא תמיד "
-"פשוט למצוא מזון, אייל הקורא נאלץ לעמוד על רגליו האחוריות כדי להגיע לענפים עד "
-"לגובה של 4 מטר!"
+"הגדול מכל האיילים, האייל הקורא אוכל עד 25 קילוגרם ליום. כיוון שזה לא תמיד "
+"פשוט למצוא מזון, האייל הקורא נאלץ לעמוד על רגליו האחוריות כדי להגיע לענפים "
+"עד לגובה של 4 מטר!"
 
 #: activities/explore_world_animals/resource/board/board2.qml:76
 msgctxt "board2|"
@@ -8835,8 +8837,8 @@ msgid ""
 "location that corresponds to this music. Click on the play button if you'd "
 "like to hear the music again."
 msgstr ""
-"בשלב השני תושמע מוזיקה לדוגמה ועליך לבחור את האזור שמתאים למוזיקה הזו. ללחוץ "
-"על כפתור ההשמעה (פּליי) כדי לשמוע שוב את המוזיקה."
+"בשלב השני תושמע מוזיקה לדוגמה וצריך לבחור את האזור שמתאים למוזיקה הזו. אפשר "
+"ללחוץ על כפתור ההשמעה (פּליי) כדי לשמוע שוב את המוזיקה."
 
 #: activities/explore_world_music/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -10535,7 +10537,7 @@ msgstr "אומבריה"
 #: activities/geo-country/resource/board/board11_0.qml:94
 msgctxt "board11_0|"
 msgid "Marche"
-msgstr "מרצ'ה"
+msgstr "מרצ׳ה"
 
 #. Region of Italy: Lazio
 #: activities/geo-country/resource/board/board11_0.qml:101
@@ -10810,7 +10812,7 @@ msgstr "ג׳אמו וקשמיר"
 #: activities/geo-country/resource/board/board12_0.qml:272
 msgctxt "board12_0|"
 msgid "Puducherry"
-msgstr "פּוּדוּצ'רי"
+msgstr "פּוּדוּצ׳רי"
 
 #: activities/geo-country/resource/board/board13_0.qml:15
 msgctxt "board13_0|"
@@ -11124,7 +11126,7 @@ msgstr "דונדי"
 #: activities/geo-country/resource/board/board15_1.qml:38
 msgctxt "board15_1|"
 msgid "Perth and Kinross"
-msgstr "פרת' וקינרוס"
+msgstr "פרת׳ וקינרוס"
 
 #. Council area of Scotland: Stirling
 #: activities/geo-country/resource/board/board15_1.qml:45
@@ -26076,8 +26078,8 @@ msgid ""
 "room in order to let the red car move through the gate on the right."
 msgstr ""
 "המכוניות מסומנות בצבעים שונים. הן יכולות לנוע רק בקווים ישרים, לפי הכיוון בו "
-"הן נמצאות.  עליך לפנות את המכוניות האחרות כך שהמכונית האדומה תוכל לצאת דרך "
-"השער בצד ימין."
+"הן נמצאות. יש לפנות את המכוניות האחרות כדי שהמכונית האדומה תוכל לצאת דרך "
+"השער מימין."
 
 #. Activity title
 #: activities/vertical_addition/ActivityInfo.qml:15

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-07 00:38+0000\n"
-"PO-Revision-Date: 2025-09-19 08:26+0300\n"
+"PO-Revision-Date: 2025-09-20 15:19+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -52,7 +52,7 @@ msgstr "למצוא את תוצאת החילוק ולהקליד את התשובה
 msgid ""
 "Subtract the two numbers and type in your answer before the balloon lands in "
 "the water"
-msgstr ""
+msgstr "יש לחסר את אחד המספרים מהשני ולהקליד את התשובה לפני שהבלון נוחת במים"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_plus"
 #: activities/algebra_plus/ActivityInfo.qml:18
@@ -60,7 +60,7 @@ msgstr ""
 msgid ""
 "Add the two numbers together and type in your answer before the balloon "
 "lands in the water"
-msgstr ""
+msgstr "יש להוסיף את המספרים זה לזה ולהקליד את התשובה לפני שהבלון נוחת במים"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algorithm"
 #: activities/algorithm/ActivityInfo.qml:18
@@ -68,7 +68,7 @@ msgstr ""
 msgid ""
 "Click on the missing items on the table and follow the logical sequence "
 "displayed above it."
-msgstr ""
+msgstr "יש ללחוץ על הפריטים החסרים בטבלה ולעקוב אחר הרצף הלוגי שמופיע מעליה."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "align4"
 #: activities/align4/ActivityInfo.qml:18
@@ -77,6 +77,8 @@ msgid ""
 "Click on the column where you wish your token to fall and try to align 4 "
 "tokens before Tux."
 msgstr ""
+"יש ללחוץ על העמודה אליה ייפול האסימון שלך ולנסות לסדר 4 אסימונים ביחד לפני "
+"שטאקס מצליח."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "align4_2players"
 #: activities/align4_2players/ActivityInfo.qml:18
@@ -85,13 +87,15 @@ msgid ""
 "Click on the column where you wish your token to fall and try to align 4 "
 "tokens to win."
 msgstr ""
+"יש ללחוץ על העמודה אליה ייפול האסימון שלך ולנסות לסדר 4 אסימונים ביחד כדי "
+"לנצח."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "alphabet-sequence"
 #: activities/alphabet-sequence/ActivityInfo.qml:18
 #, kde-format
 msgid ""
 "Move the helicopter to catch the clouds following the order of the alphabet."
-msgstr ""
+msgstr "יש להזיז את המסוק ולתפוס את העננים לפי סדר הא־ב."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "analog_electricity"
 #: activities/analog_electricity/ActivityInfo.qml:18
@@ -819,12 +823,14 @@ msgid ""
 "Find the missing letter and complete the word by clicking on one of the "
 "letters proposed on the side."
 msgstr ""
+"יש למצוא את האות החסרה ולהשלים את המילה על ידי לחיצה על אחת או יותר מהאותיות "
+"המוצעות בצד."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "money"
 #: activities/money/ActivityInfo.qml:18
 #, kde-format
 msgid "Click or tap on the money to pay."
-msgstr ""
+msgstr "יש ללחוץ או לגעת בכסף כדי לשלם."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "money_back_cents"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "money_back"
@@ -832,7 +838,7 @@ msgstr ""
 #: activities/money_back_cents/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the money at the bottom of the screen to give Tux his change."
-msgstr ""
+msgstr "יש ללחוץ על הכסף שבתחתית המסך כדי להחזיר לטאקס את העוקף שלו."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "money_cents"
 #: activities/money_cents/ActivityInfo.qml:18
@@ -941,6 +947,7 @@ msgid ""
 "Click on the grid squares following the given directions to help Tux reach "
 "the target."
 msgstr ""
+"יש ללחוץ על ריבועי הרשת לפי לפי ההנחיות שסופקו כדי לסייע לטאקס להגיע ליעד."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "path_encoding"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "path_encoding_relative"
