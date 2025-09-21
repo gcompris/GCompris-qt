@@ -9,6 +9,7 @@
  */
 import QtQuick
 import core 1.0
+import "qrc:/gcompris/src/core/core.js" as Core
 
 /**
  * todo
@@ -48,6 +49,7 @@ Rectangle {
     property QtObject currentActivity
 
     property var chosenLevels: []
+    property var ignoredLevels: []
 
     property var activityData
     onActivityDataChanged: loadData()
@@ -145,6 +147,7 @@ Rectangle {
         difficultiesModel = [];
         // dataset information
         chosenLevels = currentActivity.currentLevels.slice()
+        ignoredLevels = ApplicationSettings.ignoredLevels(activityName)
         difficultiesModel = []
         for(var level in currentActivity.levels) {
             var data = currentActivity.getDataset(currentActivity.levels[level])
@@ -157,7 +160,6 @@ Rectangle {
             })
         }
         difficultiesRepeater.model = difficultiesModel
-
         // Defaults to config if in an activity else to dataset if in menu
         if(displayDatasetAtStart) {
             datasetVisibleButton.clicked()
@@ -310,9 +312,11 @@ Rectangle {
                                 onClicked: {
                                     if(checked) {
                                         chosenLevels.push(modelData.level)
+                                        ignoredLevels.splice(ignoredLevels.indexOf(modelData.level), 1)
                                     }
                                     else if(chosenLevels.length > 1) {
                                         chosenLevels.splice(chosenLevels.indexOf(modelData.level), 1)
+                                        ignoredLevels.push(modelData.level)
                                     }
                                     else {
                                         // At least one must be selected
@@ -360,7 +364,8 @@ Rectangle {
                 theme: "settingsButton"
                 onClicked: {
                     // Sort again levels to have the correct order
-                    chosenLevels.sort(function(a, b) { return (parseInt(a) - parseInt(b)) });
+                    Core.sortLevels(chosenLevels);
+                    ApplicationSettings.setIgnoredLevels(dialogChooseLevel.activityName, dialogChooseLevel.ignoredLevels)
                     saveData();
                     if (inMenu === false) {
                         startActivity();
@@ -377,7 +382,8 @@ Rectangle {
                 theme: "settingsButton"
                 onClicked: {
                     // Sort again levels to have the correct order
-                    chosenLevels.sort(function(a, b) { return (parseInt(a) - parseInt(b)) });
+                    Core.sortLevels(chosenLevels);
+                    ApplicationSettings.setIgnoredLevels(dialogChooseLevel.activityName, dialogChooseLevel.ignoredLevels)
                     saveData();
                     startActivity();
                 }

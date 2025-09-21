@@ -242,7 +242,7 @@ Item {
         datasets = [];
         var data = [];
         // sorting levelFolders in numeric manner
-        levelFolder.sort(function(a, b) { return (parseInt(a) - parseInt(b)) });
+        Core.sortLevels(levelFolder);
         for(var level in levelFolder) {
             var id = levelFolder[level];
             var dataset = activityInfo.getDataset(id);

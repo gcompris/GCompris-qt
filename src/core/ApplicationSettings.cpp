@@ -30,6 +30,7 @@ namespace {
     const char *INTERNAL_GROUP_KEY = "Internal";
     const char *FAVORITE_GROUP_KEY = "Favorite";
     const char *LEVELS_GROUP_KEY = "Levels";
+    const char *IGNORED_LEVELS_GROUP_KEY = "IgnoredLevels";
     const char *TEACHER_GROUP_KEY = "Teacher";
 
     const char *FULLSCREEN_KEY = "fullscreen";
@@ -189,6 +190,10 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     connect(this, &ApplicationSettings::teacherPortChanged, this, &ApplicationSettings::notifyTeacherPortChanged);
     connect(this, &ApplicationSettings::backgroundMusicVolumeChanged, this, &ApplicationSettings::notifyBackgroundMusicVolumeChanged);
     connect(this, &ApplicationSettings::audioEffectsVolumeChanged, this, &ApplicationSettings::notifyAudioEffectsVolumeChanged);
+
+    if (m_lastGCVersionRan < ApplicationInfo::GCVersionCode() && m_lastGCVersionRan < 260000) {
+        m_updateToNewIgnoreLevels = true;
+    }
 
     connect(this, &ApplicationSettings::localeChanged, ApplicationInfo::getInstance(), qOverload<>(&ApplicationInfo::switchLocale));
 }
@@ -507,6 +512,21 @@ QStringList ApplicationSettings::currentLevels(const QString &activity)
     return level;
 }
 
+void ApplicationSettings::setIgnoredLevels(const QString &activity, const QStringList &level, bool sync)
+{
+    if (!m_filterLevelOverridedByCommandLineOption) {
+        updateValueInConfig(IGNORED_LEVELS_GROUP_KEY, activity, level, sync);
+    }
+}
+
+QStringList ApplicationSettings::ignoredLevels(const QString &activity)
+{
+    m_config.beginGroup(IGNORED_LEVELS_GROUP_KEY);
+    QStringList level = m_config.value(activity, QStringList()).toStringList();
+    m_config.endGroup();
+    return level;
+}
+
 template <class T>
 void ApplicationSettings::updateValueInConfig(const QString &group,
                                               const QString &key, const T &value, bool sync)
@@ -543,6 +563,13 @@ void ApplicationSettings::saveActivityProgress(const QString &activity, int prog
 bool ApplicationSettings::useExternalWordset()
 {
     return DownloadManager::getInstance()->isDataRegistered("words-webp");
+}
+
+void ApplicationSettings::removeLevelsSection()
+{
+    m_config.beginGroup(LEVELS_GROUP_KEY);
+    m_config.remove("");
+    m_config.endGroup();
 }
 
 ApplicationSettings *ApplicationSettings::create(QQmlEngine *engine,

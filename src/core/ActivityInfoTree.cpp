@@ -332,6 +332,10 @@ void ActivityInfoTree::initialize(QQmlEngine *engine)
 #endif
     }
 
+    if (ApplicationSettings::getInstance()->getUpdateToNewIgnoreLevels()) {
+        ApplicationSettings::getInstance()->removeLevelsSection();
+    }
+
     // In case we have asked for a specific activity to start but the activity does not exist, we reinitialise the value
     if (m_startingActivity == startingActivity) {
         m_startingActivity = "";
