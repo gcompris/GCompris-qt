@@ -304,7 +304,6 @@ ActivityBase {
             onSaveData: {
                 levelFolder = dialogActivityConfig.chosenLevels
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
-                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
                 // restart activity on saving
                 activityBackground.start()
             }

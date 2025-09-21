@@ -42,10 +42,6 @@ void ActivityInfo::setName(const QString &name)
     // from the persistent configuration
     m_favorite = ApplicationSettings::getInstance()->isFavorite(m_name);
 
-    if(!m_levels.empty()) {
-        setCurrentLevels();
-    }
-
     Q_EMIT nameChanged();
 }
 
@@ -209,19 +205,40 @@ void ActivityInfo::setLevels(const QStringList &levels)
 {
     m_acceptDataset = !levels.empty();
     m_levels = levels;
-    setCurrentLevels();
 
     Q_EMIT levelsChanged();
 }
 
 void ActivityInfo::fillDatasets(QQmlEngine *engine)
 {
+    /* If we switch from a previous version to one above or equals to 26.0
+       we need to fill the ignoredLevels from the list of currentLevels stored
+       in configuration.
+       The currentLevels was previously used because we could not add external
+       datasets (but with this approach we cannot disable them, thus we change
+       to a list of ignored instead of currently used).
+    */
+    if (ApplicationSettings::getInstance()->getUpdateToNewIgnoreLevels()) {
+        QStringList currentLevelsInConf = ApplicationSettings::getInstance()->currentLevels(m_name);
+        if (!currentLevelsInConf.empty()) {
+            for (const QString &level: m_levels) {
+                if (!currentLevelsInConf.contains(level)) {
+                    m_ignoredLevels << level;
+                }
+            }
+        }
+        if (!m_ignoredLevels.empty()) {
+            ApplicationSettings::getInstance()->setIgnoredLevels(m_name.split('/')[0], m_ignoredLevels);
+        }
+    }
+
+    m_ignoredLevels = ApplicationSettings::getInstance()->ignoredLevels(m_name.split('/')[0]);
     quint32 levelMin = ApplicationSettings::getInstance()->filterLevelMin();
     quint32 levelMax = ApplicationSettings::getInstance()->filterLevelMax();
     for (const QString &level: std::as_const(m_levels)) {
         QString url = QString("qrc:/gcompris/src/activities/%1/resource/%2/Data.qml").arg(m_name.split('/')[0], level);
 
-        if(!QFileInfo::exists(url.sliced(3))) {
+        if (!QFileInfo::exists(url.sliced(3))) {
             qDebug() << "INFO: did not find level" << url.sliced(3) << "internally";
             removeDataset(level);
             continue;
@@ -254,11 +271,12 @@ void ActivityInfo::fillDatasets(QQmlEngine *engine)
         QObject *objectRoot = componentRoot.create();
         if (objectRoot != nullptr) {
             Dataset *dataset = qobject_cast<Dataset *>(objectRoot);
+            QString datasetName(datasetFileInfo.fileName());
+
             if (levelMin > dataset->difficulty() || levelMax < dataset->difficulty()) {
                 dataset->setEnabled(false);
             }
-            QString datasetName(datasetFileInfo.fileName());
-            m_currentLevels.push_back(datasetName);
+
             m_levels.push_back(datasetName);
             addDataset(datasetName, dataset);
             atLeastOneLevelAdded = true;
@@ -268,11 +286,11 @@ void ActivityInfo::fillDatasets(QQmlEngine *engine)
         }
     }
 
-    if(atLeastOneLevelAdded) {
-        Q_EMIT currentLevelsChanged();
+    if (atLeastOneLevelAdded) {
         Q_EMIT levelsChanged();
     }
 
+    setCurrentLevels();
     if (m_levels.empty()) {
         setMinimalDifficulty(m_difficulty);
         setMaximalDifficulty(m_difficulty);
@@ -326,28 +344,21 @@ void ActivityInfo::setCurrentLevels(const QStringList &currentLevels)
 void ActivityInfo::setCurrentLevels()
 {
     if (!m_name.isEmpty()) {
-        // by default, activate all existing levels
-        if (!m_levels.empty() && ApplicationSettings::getInstance()->currentLevels(m_name).empty()) {
-            ApplicationSettings::getInstance()->setCurrentLevels(m_name, m_levels);
+        m_ignoredLevels = ApplicationSettings::getInstance()->ignoredLevels(m_name.split('/')[0]);
+        // Fill m_currentLevels with all levels except the ignored ones
+        for (const QString &level: m_levels) {
+            if (!m_ignoredLevels.contains(level)) {
+                m_currentLevels << level;
+            }
         }
-        m_currentLevels = ApplicationSettings::getInstance()->currentLevels(m_name);
     }
     else {
         qWarning() << "ActivityInfo::setCurrentLevels(), name is empty";
     }
-    // Remove levels that could have been added in the configuration but are not existing
-    // Either we rename a dataset, or after working in another branch to add dataset and switching to a branch without it
-    QStringList levelsToRemove;
-    for (const QString &level: std::as_const(m_currentLevels)) {
-        if (!m_levels.contains(level)) {
-            qDebug() << QString("Invalid level %1 for activity %2, removing it").arg(level, m_name);
-            levelsToRemove << level;
-        }
-    }
-    for (const QString &level: std::as_const(levelsToRemove)) {
-        m_currentLevels.removeOne(level);
-    }
+
     computeMinMaxDifficulty();
+
+    Q_EMIT currentLevelsChanged();
 }
 
 void ActivityInfo::enableDatasetsBetweenDifficulties(quint32 levelMin, quint32 levelMax)
@@ -363,7 +374,6 @@ void ActivityInfo::enableDatasetsBetweenDifficulties(quint32 levelMin, quint32 l
         }
     }
     setCurrentLevels(newLevels);
-    ApplicationSettings::getInstance()->setCurrentLevels(m_name, m_currentLevels, false);
 }
 
 void ActivityInfo::addDataset(const QString &name, Dataset *dataset)

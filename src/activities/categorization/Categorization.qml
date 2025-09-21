@@ -97,7 +97,6 @@ ActivityBase {
                 activityData["displayUpdateDialogAtStart"] = items.displayUpdateDialogAtStart
                 levelFolder = dialogActivityConfig.chosenLevels
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
-                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
             }
 
             onStartActivity: {
