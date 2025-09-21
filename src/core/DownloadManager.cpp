@@ -508,7 +508,11 @@ bool DownloadManager::checksumMatches(DownloadJob *job, const QString &filename)
         return false;
 
     QFile file(filename);
-    file.open(QIODevice::ReadOnly);
+    bool fileOpened = file.open(QIODevice::ReadOnly);
+    if (!fileOpened) {
+        qWarning() << "Unable to open file" << filename;
+        return false;
+    }
     QCryptographicHash fileHasher(hashMethod);
     if (!fileHasher.addData(&file)) {
         qWarning() << "Could not read file for hashing: " << filename;
@@ -625,6 +629,7 @@ void DownloadManager::downloadInProgress(qint64 bytesReceived, qint64 bytesTotal
 
 void DownloadManager::finishAllDownloads(int code)
 {
+    Q_UNUSED(code)
     QList<QString> registeredFiles = resourceTypeToLocalFileName.values();
     // Remove all previous rcc for this kind of download
     for (auto *job: activeJobs) {
