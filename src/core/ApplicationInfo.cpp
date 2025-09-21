@@ -296,7 +296,11 @@ bool ApplicationInfo::loadAndroidTranslation(const QString &locale)
         return false;
     }
 
-    file.open(QIODevice::ReadOnly);
+    bool fileOpened = file.open(QIODevice::ReadOnly);
+    if (!fileOpened) {
+        qDebug() << "unable to open assets:/share/GCompris/gcompris_" << locale << ".qm";
+        return false;
+    }
     QDataStream in(&file);
 
     qint64 fileSize = file.size();
