@@ -321,7 +321,7 @@ public:
      * Set the color of serverStatus button in the bar.
      */
     Q_PROPERTY(QString serverStatusColor MEMBER m_serverStatusColor WRITE setServerStatusColor NOTIFY serverStatusColorChanged)
-    Q_INVOKABLE void setServerStatusColor(QString statusColor);
+    Q_INVOKABLE void setServerStatusColor(const QString &statusColor);
 
     /**
      * Returns the native screen orientation.
