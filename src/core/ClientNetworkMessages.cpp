@@ -47,10 +47,6 @@ ClientNetworkMessages::ClientNetworkMessages() :
     connect(applicationSettings, &ApplicationSettings::teacherPortChanged, this, &ClientNetworkMessages::teacherPortChanged);
 }
 
-ClientNetworkMessages::~ClientNetworkMessages()
-{
-}
-
 void ClientNetworkMessages::teacherPortChanged() {
     disconnectFromServer();
     forgetUser();
@@ -103,7 +99,6 @@ void ClientNetworkMessages::disconnectFromServer()
 
 void ClientNetworkMessages::connected()
 {
-    QTcpSocket *socket = qobject_cast<QTcpSocket *>(sender());
     _connected = true;
     if (login != "") {
         sendLoginMessage(login, password);
@@ -159,7 +154,7 @@ void ClientNetworkMessages::sendLoginMessage(const QString &newLogin, const QStr
     //    ApplicationSettings::getInstance()->setUserName(newLogin);      // Should be done after LOGIN_ACCEPT
 }
 
-void ClientNetworkMessages::sendMessage(QByteArray message)
+void ClientNetworkMessages::sendMessage(const QByteArray &message)
 {
     qint64 messageSize = message.size();
     tcpSocket->write(message.constData(), messageSize);
@@ -278,6 +273,8 @@ void ClientNetworkMessages::readFromSocket()
         case netconst::PONG:
             _wait4pong = false;
             break;
+        default:
+            qDebug() << "Received unknown message" << obj["aType"].toInt();
         }
     }
 }

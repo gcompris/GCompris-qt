@@ -258,7 +258,7 @@ void ApplicationInfo::setServerConnectionAccepted(bool connectionAccepted)
     Q_EMIT serverConnectionAcceptedChanged();
 }
 
-void ApplicationInfo::setServerStatusColor(QString statusColor)
+void ApplicationInfo::setServerStatusColor(const QString &statusColor)
 {
     m_serverStatusColor = statusColor;
     Q_EMIT serverStatusColorChanged();
