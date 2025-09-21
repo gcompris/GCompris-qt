@@ -600,7 +600,6 @@ ActivityBase {
                         }
                         onSaveData: {
                             currentLevels = dialogChooseLevel.chosenLevels
-                            ApplicationSettings.setCurrentLevels(name, currentLevels)
                         }
                         onStartActivity: {
                             activity.clickMode = "play"

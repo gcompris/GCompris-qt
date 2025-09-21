@@ -192,6 +192,8 @@ public:
     void setLevels(const QStringList &);
     QStringList currentLevels() const;
     void setCurrentLevels(const QStringList &);
+    QStringList ignoredLevels() const;
+    void setIgnoredLevels(const QStringList &);
     bool hasConfig() const;
     bool hasDataset() const;
     bool acceptDataset() const;
@@ -231,6 +233,7 @@ Q_SIGNALS:
     void createdInVersionChanged();
     void levelsChanged();
     void currentLevelsChanged();
+    void ignoredLevelsChanged();
     void datasetsChanged();
     /// @endcond
 
@@ -254,6 +257,7 @@ private:
     bool m_acceptDataset;
     QStringList m_levels;
     QStringList m_currentLevels;
+    QStringList m_ignoredLevels;
 
     /* The key is the name of the dataset */
     QMap<QString, Dataset *> m_datasets;
@@ -266,6 +270,8 @@ private:
      * Compute minimal and maximal difficulty depending on the current levels.
      */
     void computeMinMaxDifficulty();
+
+    friend class CoreActivityInfoTest;
 };
 
 #endif // ACTIVITYINFO_H
