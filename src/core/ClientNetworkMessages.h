@@ -41,7 +41,7 @@ Q_SIGNALS:
     void passwordRejected();
 
 public:
-    virtual ~ClientNetworkMessages();
+    virtual ~ClientNetworkMessages() = default;
     Q_INVOKABLE void connectToServer(const QString &serverName);
     Q_INVOKABLE void sendLoginMessage(const QString &login, const QString &newPassword);
     Q_INVOKABLE void sendActivityData(const QString &activity, const QJsonObject &data);
@@ -82,7 +82,7 @@ private:
     void disconnectFromServer();
     void forgetUser();
     QByteArray prepareMessage(QJsonObject &obj);
-    void sendMessage(QByteArray message);
+    void sendMessage(const QByteArray &message);
     void sendNextMessage();
     bool sendStoredData();
 
