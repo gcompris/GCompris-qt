@@ -628,8 +628,9 @@ void DownloadManager::downloadInProgress(qint64 bytesReceived, qint64 bytesTotal
     Q_EMIT downloadProgress(allJobsBytesReceived, allJobsBytesTotal);
 }
 
-void DownloadManager::finishAllDownloads(int /*code*/)
+void DownloadManager::finishAllDownloads(int code)
 {
+    Q_UNUSED(code)
     QList<QString> registeredFiles = resourceTypeToLocalFileName.values();
     // Remove all previous rcc for this kind of download
     for (auto *job: activeJobs) {
