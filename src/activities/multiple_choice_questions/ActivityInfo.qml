@@ -30,5 +30,5 @@ ActivityInfo {
   section: "computer"
   createdInVersion: 260000
   enabled: currentLevels.length != 0
-  levels: ""
+  levels: []
 }

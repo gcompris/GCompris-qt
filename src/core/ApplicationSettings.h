@@ -562,6 +562,10 @@ public:
         setFilterLevelMax(newFilterLevelMax);
     }
 
+    bool getUpdateToNewIgnoreLevels() {
+        return m_updateToNewIgnoreLevels;
+    }
+
 protected Q_SLOTS:
 
     Q_INVOKABLE void notifyAudioVoicesEnabledChanged();
@@ -602,8 +606,14 @@ protected Q_SLOTS:
 public Q_SLOTS:
     Q_INVOKABLE bool isFavorite(const QString &activity);
     Q_INVOKABLE void setFavorite(const QString &activity, bool favorite);
+
+    // Remove these three methods and all code related to "currentLevels" in 2027/2028, when we consider most people don't use anymore a GCompris before 26.0.
     Q_INVOKABLE void setCurrentLevels(const QString &activity, const QStringList &level, bool sync = true);
     Q_INVOKABLE QStringList currentLevels(const QString &activity);
+    void removeLevelsSection();
+
+    Q_INVOKABLE void setIgnoredLevels(const QString &activity, const QStringList &level, bool sync = true);
+    Q_INVOKABLE QStringList ignoredLevels(const QString &activity);
 
     Q_INVOKABLE void saveBaseFontSize();
     /// @endcond
@@ -737,6 +747,11 @@ private:
     bool m_isBarHidden;
 
     QSettings m_config;
+
+    /* Only set to true when update to 26.0+ version.
+       It is used in ActivityInfo to fill the first time the ignoredLevels from the levels to keep the compatibility with previous versions in case the user has filtered some datasets.
+    */
+    bool m_updateToNewIgnoreLevels = false;
 };
 
 #endif // APPLICATIONSETTINGS_H

@@ -109,6 +109,7 @@ void CoreActivityInfoTest::levelsTest()
     activityinfo.setName(QStringLiteral("activityTest"));
     QVERIFY(!activityinfo.hasDataset());
     activityinfo.setLevels({"1","2","3","4","5","6"});
+    activityinfo.setCurrentLevels();
     QStringList expected;
     expected << "1" << "2" << "3" << "4" << "5" << "6";
     QCOMPARE(activityinfo.levels(), expected);

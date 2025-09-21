@@ -499,7 +499,6 @@ ActivityBase {
             onSaveData: {
                 levelFolder = dialogActivityConfig.chosenLevels
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
-                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
             }
             onClose: {
                 activity.home()

@@ -377,6 +377,27 @@ function clamp(x_, min_, max_) {
     return Math.min(Math.max(x_, min_), max_);
 }
 
+/**
+   First sort the internal levels (which are numbers), then sort all the added datasets which should be words
+*/
+function sortLevels(chosenLevels) {
+    chosenLevels.sort(function(a, b) {
+        var first = parseInt(a)
+        var second = parseInt(b)
+        if (!first && !second) { // both are strings
+            return a.localeCompare(b)
+        }
+        else if (!first) { // first is a string
+            return 1
+        }
+        else if (!second) { // second is a string
+            return -1
+        }
+        // both are numbers
+        return first - second
+    });
+}
+
 function getPasswordImages() {
     return [ "apple", "banana", "cherries", "lemon", "orange", "pear", "pineapple", "plum" ]
 }
