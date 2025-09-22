@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-13 02:28+0000\n"
-"PO-Revision-Date: 2025-09-20 15:19+0300\n"
+"PO-Revision-Date: 2025-09-20 16:29+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -101,19 +101,19 @@ msgstr "יש להזיז את המסוק ולתפוס את העננים לפי ס
 #: activities/analog_electricity/ActivityInfo.qml:18
 #, kde-format
 msgid "Learn how analog electricity works and create your own circuit."
-msgstr ""
+msgstr "ללמוד איך עובד חשמל אנלוגי וליצור מעגלים משלך."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_keyboard"
 #: activities/baby_keyboard/ActivityInfo.qml:18
 #, kde-format
 msgid "Type any key on the keyboard and observe the result."
-msgstr ""
+msgstr "ניתן להקליד על כל אות במקלדת ולצפות בתוצאה."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_mouse"
 #: activities/baby_mouse/ActivityInfo.qml:17
 #, kde-format
 msgid "Move the mouse or touch the screen and observe the result."
-msgstr ""
+msgstr "יש להזיז את העכבר או לגעת במסך ולצפות בתוצאה."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_tangram"
 #: activities/baby_tangram/ActivityInfo.qml:18
@@ -127,25 +127,25 @@ msgstr ""
 #: activities/baby_wordprocessor/ActivityInfo.qml:18
 #, kde-format
 msgid "A simplistic word processor to play around with the keyboard"
-msgstr ""
+msgstr "מעבד תמלילים פשטני כדי להתנסות בתפעול המקלדת"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "babymatch"
 #: activities/babymatch/ActivityInfo.qml:21
 #, kde-format
 msgid "Drag and drop the objects matching the pictures"
-msgstr ""
+msgstr "יש לגרור ולשחרר את הפריטים שתואמים לתמונות"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "babyshapes"
 #: activities/babyshapes/ActivityInfo.qml:22
 #, kde-format
 msgid "Drag and drop the objects matching the shapes."
-msgstr ""
+msgstr "יש לגרור ולשחרר את הפריטים שתואמים לצורות."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "balancebox"
 #: activities/balancebox/ActivityInfo.qml:21
 #, kde-format
 msgid "Tilt the box to navigate the ball to the door."
-msgstr ""
+msgstr "יש להטות את התיבה כדי לנווט את הכדור לדלת."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ballcatch"
 #: activities/ballcatch/ActivityInfo.qml:18
