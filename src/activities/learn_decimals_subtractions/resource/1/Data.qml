@@ -12,17 +12,21 @@ import core 1.0
 Data {
     objective: qsTr("Subtract decimal numbers up to 1.")
     difficulty: 5
-    data: [
-        // maxValue represents the maximum decimal number generated.
+    data:  [
         {
-            "numberOfSubLevels": 1,
-            "minValue" : 0.1,
-            "maxValue" : 0.6
-        },
-        {
-            "numberOfSubLevels": 1,
-            "minValue" : 0.1,
-            "maxValue" : 1
+            "shuffle": true,
+            "subLevels":  [
+            {
+                "inputType": "range",
+                "minValue": 0.1,
+                "maxValue": 0.6
+            },
+            {
+                "inputType": "range",
+                "minValue": 0.1,
+                "maxValue": 1
+            }
+            ]
         }
     ]
 }

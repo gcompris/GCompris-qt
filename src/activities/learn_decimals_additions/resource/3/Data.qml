@@ -13,31 +13,35 @@ Data {
     objective: qsTr("Add decimal numbers up to 5.")
     difficulty: 5
     data: [
-        // maxValue represents the maximum addition result.
         {
-            "numberOfSubLevels": 1,
-            "minValue" : 0.6,
-            "maxValue" : 2.5
-        },
-        {
-            "numberOfSubLevels": 1,
-            "minValue" : 0.1,
-            "maxValue" : 3
-        },
-        {
-            "numberOfSubLevels": 1,
-            "minValue" : 1,
-            "maxValue" : 3.5
-        },
-        {
-            "numberOfSubLevels": 1,
-            "minValue" : 0.1,
-            "maxValue" : 4
-        },
-        {
-            "numberOfSubLevels": 1,
-            "minValue" : 2,
-            "maxValue" : 4.5
+            "shuffle": true,
+            "subLevels":  [
+                {
+                    "inputType": "range",
+                    "minValue": 0.6,
+                    "maxValue": 2.5
+                },
+                {
+                    "inputType": "range",
+                    "minValue": 0.1,
+                    "maxValue": 3
+                },
+                {
+                    "inputType": "range",
+                    "minValue": 1,
+                    "maxValue": 3.5
+                },
+                {
+                    "inputType": "range",
+                    "minValue": 0.1,
+                    "maxValue": 4
+                },
+                {
+                    "inputType": "range",
+                    "minValue": 2,
+                    "maxValue": 4.5
+                },
+            ]
         }
     ]
 }
