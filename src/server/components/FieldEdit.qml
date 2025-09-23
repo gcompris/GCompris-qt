@@ -26,10 +26,12 @@ Item  {
 
     // Other properties, initialized with previous properties. Should not be set.
     readonly property var proto: Master.findObjectInModel(aPrototype, function(item) { return item.name === name })
-    property string value
+    property var value
     property var jsonValue: ({})
     property string choiceDefault: ""   // Default value set for choiceInput, comboInput
     property bool readOnly: false       // true for type model. Value is set by aModel.count
+    property bool acceptChange:true
+    signal fieldValueChanged(string fieldName, var newValue, int modelIndex)
 
     Layout.fillWidth: true
     Layout.preferredHeight: 22
@@ -40,7 +42,7 @@ Item  {
 
     // Returns the appropriate component according to proto.type
     function getComponent() {
-        // console.warn(name, proto.type)
+
         switch (proto.type) {
         case "model":                                           // value is the number of elements of the sub model
             value = Qt.binding(function() { return aModel.get(modelIndex)[proto.name].count }) // Bind to be aware of aModel.count change
@@ -69,6 +71,10 @@ Item  {
             value = proto.def                                   // value contains boolean
             jsonValue = JSON.parse(value)
             return boolInput
+        case "boundedDecimal":
+            value = aModel.get(modelIndex)[proto.name]          // value is a decimal number
+            parseDecimalConfig()
+            return decimalsTextInput
         case "string":
         case "int":
         default:
@@ -107,6 +113,12 @@ Item  {
             stringModel.append({ "content" : String(i)})
     }
 
+    function parseDecimalConfig() {
+        jsonValue.range = JSON.parse(proto.decimalRange)
+        jsonValue.stepSize = parseInt(proto.stepSize)
+        jsonValue.decimals = parseInt(proto.decimals)
+    }
+
     // Component for string, int and model.count
     Component {
         id: textInput
@@ -119,10 +131,69 @@ Item  {
             clip: true
             readOnlyText: readOnly
             enabled: !readOnly
-            onTextChanged: if (enabled) aModel.setProperty(modelIndex, proto.name, text)
+            onTextChanged: {
+                if (enabled) aModel.setProperty(modelIndex, proto.name, text) }
         }
     }
+    Component {
+        id: decimalsTextInput
+        SpinBox {
+            id: spinBox
+            editable: true
+            width: 350
+            height: fieldEdit.height
+            Layout.fillWidth: false
+            Layout.preferredWidth: 350
+            Layout.preferredHeight: fieldEdit.height
 
+            contentItem: TextInput {
+                z: 2
+                text: spinBox.textFromValue(spinBox.value, spinBox.locale)
+                font: spinBox.font
+                color: spinBox.palette.text
+                horizontalAlignment: Qt.AlignHCenter
+                verticalAlignment: Qt.AlignVCenter
+                validator: DoubleValidator {
+                    bottom: jsonValue.range[0]
+                    top: jsonValue.range[1]
+                    decimals: jsonValue.decimals
+                    notation: DoubleValidator.StandardNotation
+                }
+            }
+
+            property int decimals: jsonValue.decimals   //how many decimals places we want
+            property real realValue: value / Math.pow(10, decimals) // 15-> 1.5
+            readonly property int decimalFactor: Math.pow(10, decimals) // 15/decimal factor -> 1.5
+            property real prevValue: realValue
+            from: jsonValue.range[0] * decimalFactor
+            to: jsonValue.range[1]  * decimalFactor
+            stepSize: jsonValue.stepSize
+            value: fieldEdit.value ? Math.round(parseFloat(fieldEdit.value) * decimalFactor) : 0
+            textFromValue: function(value, locale) {
+                return Number(value / decimalFactor).toLocaleString(locale, 'f', spinBox.decimals)
+            }
+            valueFromText: function(text, locale) {
+                return Math.round(Number.fromLocaleString(locale, text) * decimalFactor)
+            }
+
+            onRealValueChanged: {
+                if (aModel && typeof modelIndex !== "undefined") {
+                    fieldEdit.fieldValueChanged(proto.name, realValue.toFixed(decimals), modelIndex)
+
+                    //  check if parent accepted the change
+                    if (!fieldEdit.acceptChange) {
+                        // revert to previous value when acceptChange set to false
+                        value = Math.round(prevValue * decimalFactor)
+                        return
+                    }
+
+                    // change accepted ,update model and store new prevValue
+                    aModel.setProperty(modelIndex, proto.name, realValue.toFixed(decimals))
+                    prevValue = realValue
+                }
+            }
+        }
+    }
     // Component for boolean
     Component {
         id: boolInput
