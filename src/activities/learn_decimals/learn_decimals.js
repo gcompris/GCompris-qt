@@ -28,6 +28,8 @@ var userAnswer;
 var lastBarSquareUnits;
 var firstNumberList;
 var numberOfPossibleQuestions;
+var currentSubLevels;
+var currentSubLevelIndex;
 
 function start(items_) {
     items = items_;
@@ -50,18 +52,49 @@ function stop() {
 function initLevel() {
     items.errorRectangle.resetState();
     var data = dataset[items.currentLevel];
-    items.score.numberOfSubLevels = data.numberOfSubLevels;
+    currentSubLevelIndex = 0;
+    setupSubLevelData(data);
+
     items.draggedItems.clear();
     items.droppedItems.clear();
     items.largestNumberRepresentation.clear();
     items.typeResult = false;
-    minimumValue = dataset[items.currentLevel].minValue;
-    maximumValue = dataset[items.currentLevel].maxValue;
 
     checkAvailableQuestions();
+    displayDecimalNumberQuestion();
 
-    displayDecimalNumberQuestion()
+    setupDraggedItems();
+    items.buttonsBlocked = false;
+}
 
+function setupSubLevelData(data) {
+    var subLevels = data["subLevels"];
+    items.score.numberOfSubLevels = subLevels.length;
+
+    currentSubLevels = subLevels.slice(); // copy sublevels array
+
+    if (data.shuffle) {
+        currentSubLevels = Core.shuffle(currentSubLevels);
+    }
+
+    setMinMaxFromCurrentSubLevel();
+}
+
+function setMinMaxFromCurrentSubLevel() {
+    if (!currentSubLevels || currentSubLevelIndex >= currentSubLevels.length) {
+        console.warn("setMinMaxFromCurrentSubLevel: Invalid state - subLevelIndex:", currentSubLevelIndex, "subLevels length:", currentSubLevels ? currentSubLevels.length : "null");
+        return;
+    }
+
+    var currentSubLevel = currentSubLevels[currentSubLevelIndex];
+    // Set min max global values only when we have range based sublevel
+    if(currentSubLevel.inputType === "range") {
+        minimumValue = currentSubLevel.minValue;
+        maximumValue = currentSubLevel.maxValue;
+    }
+}
+
+function setupDraggedItems() {
     if(!items.isSubtractionMode) {
         //resetting the selected bar to 0.1 (the least draggable part)
         items.draggedItems.append({"selectedSquareNumbers" : 1 });
@@ -87,7 +120,6 @@ function initLevel() {
             largestNumber -= squaresNumber;
         }
     }
-    items.buttonsBlocked = false;
 }
 
 function nextLevel() {
@@ -109,11 +141,22 @@ function nextSubLevel() {
         items.bonus.good('flower');
     } else {
         items.droppedItems.clear();
+        items.largestNumberRepresentation.clear();
+        items.typeResult = false;
+        currentSubLevelIndex = items.score.currentSubLevel;
+
+        if(currentSubLevelIndex < currentSubLevels.length) {
+            setMinMaxFromCurrentSubLevel();
+        } else {
+            console.info("ERROR: SubLevel index out of bounds!");
+        }
 
         // In case number of sublevels are greater than the number of possibilities of the current level.
         checkAvailableQuestions();
-
         displayDecimalNumberQuestion();
+        if(items.isSubtractionMode) {
+            setupDraggedItems();
+        }
         items.buttonsBlocked = false;
     }
 }
@@ -122,14 +165,26 @@ function checkAvailableQuestions() {
     // In case all possible values from the provided range in the dataset are all displayed.
     var isAllDisplayed = true;
     numberOfPossibleQuestions = 0;
-
-    for(var i = minimumValue; i <= maximumValue; i += items.unit) {
-        numberOfPossibleQuestions += 1;
-        // i += items.unit can sometimes return weird numbers like 0.30000000000000004 or 0.7999999999999999
-        // so rounding it is needed for a safe check
-        var j = Math.round(i * 10) / 10;
-        if(firstNumberList.indexOf(j) == -1) {
-            isAllDisplayed = false;
+    var currentSubLevel = currentSubLevels[currentSubLevelIndex];
+    if(currentSubLevel.inputType === "fixed") {
+        numberOfPossibleQuestions = 1;
+        var firstNumber = currentSubLevel.fixedValue;
+        if(items.isQuantityMode) {
+            firstNumber = Math.round(firstNumber);
+        } else {
+            firstNumber = Math.round(firstNumber * 10) / 10;
+        }
+        // For fixed values, we can always generate the question
+        isAllDisplayed = false;
+    } else if(currentSubLevel.inputType === "range") {
+        for(var i = minimumValue; i <= maximumValue; i += items.unit) {
+            numberOfPossibleQuestions += 1;
+            // i += items.unit can sometimes return weird numbers like 0.30000000000000004 or 0.7999999999999999
+            // so rounding it is needed for a safe check
+            var j = Math.round(i * 10) / 10;
+            if(firstNumberList.indexOf(j) == -1) {
+                isAllDisplayed = false;
+            }
         }
     }
 
@@ -158,27 +213,51 @@ function organizeDroppedBars() {
 }
 
 function generateFirstNumber() {
+
+    var currentSubLevel = currentSubLevels[currentSubLevelIndex];
+    if(currentSubLevel.inputType === "fixed") {
+        if(items.isAdditionMode|| items.isSubtractionMode) {
+            firstNumber = currentSubLevel.firstNumber;
+        } else {
+            firstNumber = currentSubLevel.fixedValue;
+        }
+        return firstNumber;
+    }
     if(items.isAdditionMode) {
         maximumValue -= minimumValue;
     }
+    //else generate decimal number
     generatedNumber = generateDecimalNumbers(minimumValue, maximumValue);
+
     var loopCheck = 0;
     // if the number has already been asked, try to get a new one
     while(firstNumberList.indexOf(generatedNumber) !== -1) {
         generatedNumber = generateDecimalNumbers(minimumValue, maximumValue);
         //safety check to avoid stuck loop in case of js bugs
         loopCheck += 1;
-        if(loopCheck > numberOfPossibleQuestions)
+        if(loopCheck > numberOfPossibleQuestions) {
             firstNumberList = []
+        }
     }
 
     return generatedNumber;
 }
 
 function generateSecondNumber() {
-    if(items.isAdditionMode) {
-        maximumValue = dataset[items.currentLevel].maxValue;
-        maximumValue -= generatedNumber;
+    var currentSubLevel = currentSubLevels[currentSubLevelIndex];
+
+    if(items.isAdditionMode || items.isSubtractionMode) {
+        if(currentSubLevel.inputType === "fixed") {
+            return currentSubLevel.secondNumber;
+        } else if(currentSubLevel.inputType === "range") {
+            if(items.isAdditionMode) {
+                maximumValue = currentSubLevel.maxValue;
+                maximumValue -= generatedNumber;
+            } else if(items.isSubtractionMode) {
+                maximumValue = currentSubLevel.maxValue;
+                minimumValue = currentSubLevel.minValue;
+            }
+        }
     }
 
     do {
@@ -203,16 +282,17 @@ function displayDecimalNumberQuestion() {
             secondNumber = temp;
         }
     }
-
     // Storing the first decimal number in a list to avoid displaying the same number again for the rest of the levels.
     firstNumberList.push(firstNumber);
 
-    if(items.isQuantityMode)
+    if(items.isQuantityMode) {
         items.largestNumber = firstNumber.toString();
+    }
     else {
         items.largestNumber = toDecimalLocaleNumber(firstNumber);
         items.smallestNumber = toDecimalLocaleNumber(secondNumber);
     }
+
     items.answerBackground.userEntry = ""
     items.client.startTiming()      // for server version
 }
@@ -280,7 +360,8 @@ function verifyNumberTyping(typedAnswer) {
     if(parseFloat(typedAnswer) === parseFloat(correctAnswer)) {
         items.goodAnswerSound.play();
         items.client.sendToServer(true)
-        items.bonus.good('flower')
+        items.score.currentSubLevel += 1;
+        items.score.playWinAnimation();
     }
     else {
         items.client.sendToServer(false)
