@@ -9,14 +9,41 @@
  */
 import core 1.0
 
+
 Data {
     objective: qsTr("Between 20 and 50.")
     difficulty: 3
-    data: [
+    data:  [
         {
-            "numberOfSubLevels": 5,
-            "minValue" : 20,
-            "maxValue" : 50
+            "shuffle": true,
+            "subLevels":  [
+                {
+                    "inputType": "range",
+                    "minValue": 20,
+                    "maxValue": 50
+                },
+                {
+                    "inputType": "range",
+                    "minValue": 20,
+                    "maxValue": 50
+                },
+                {
+                    "inputType": "range",
+                    "minValue": 20,
+                    "maxValue": 50
+                },
+                {
+                    "inputType": "range",
+                    "minValue": 20,
+                    "maxValue": 50
+                },
+                {
+                    "inputType": "range",
+                    "minValue": 20,
+                    "maxValue": 50
+                },
+
+            ]
         }
     ]
 }
