@@ -11,33 +11,39 @@ import core 1.0
 
 Data {
     objective: qsTr("Add decimal numbers up to 3.")
-    difficulty: 5
-    data: [
-        // maxValue represents the maximum addition result.
+    difficulty: 1
+    data:  [
         {
-            "numberOfSubLevels": 1,
-            "minValue" : 0.1,
-            "maxValue" : 1
-        },
-        {
-            "numberOfSubLevels": 1,
-            "minValue" : 0.3,
-            "maxValue" : 1.5
-        },
-        {
-            "numberOfSubLevels": 1,
-            "minValue" : 0.1,
-            "maxValue" : 2
-        },
-        {
-            "numberOfSubLevels": 1,
-            "minValue" : 0.1,
-            "maxValue" : 2.5
-        },
-        {
-            "numberOfSubLevels": 1,
-            "minValue" : 0.1,
-            "maxValue" : 3
+            "shuffle": true,
+            "subLevels":  [
+                {
+                    "inputType": "range",
+                    "minValue": 0.1,
+                    "maxValue": 1
+                },
+                {
+                    "inputType": "range",
+                    "minValue": 0.3,
+                    "maxValue": 1.5
+                },
+                {
+                    "inputType": "range",
+                    "minValue": 0.1,
+                    "maxValue": 2
+                },
+                {
+                    "inputType": "range",
+                    "minValue": 0.1,
+                    "maxValue": 2.5
+                },
+
+                {
+                    "inputType": "range",
+                    "minValue": 0.1,
+                    "maxValue": 3
+                },
+
+            ]
         }
     ]
 }

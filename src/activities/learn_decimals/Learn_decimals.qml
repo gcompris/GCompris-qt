@@ -841,7 +841,7 @@ ActivityBase {
 
         Score {
             id: score
-            visible: !tutorialImage.visible && !isAdditionMode && !isSubtractionMode
+            visible: !tutorialImage.visible
             anchors.top: undefined
             anchors.bottom: undefined
             anchors.right: undefined
