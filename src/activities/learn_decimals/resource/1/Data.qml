@@ -12,12 +12,37 @@ import core 1.0
 Data {
     objective: qsTr("Between 0.1 and 1.")
     difficulty: 5
-    data: [
-        // maxValue represents the maximum decimal number generated.
+    data:  [
         {
-            "numberOfSubLevels": 5,
-            "minValue" : 0.1,
-            "maxValue" : 1
+            "shuffle": true,
+            "subLevels":  [
+                {
+                    "inputType": "range",
+                    "minValue": 0.1,
+                    "maxValue": 1
+                },
+                {
+                    "inputType": "range",
+                    "minValue": 0.1,
+                    "maxValue": 1
+                },
+                {
+                    "inputType": "range",
+                    "minValue": 0.1,
+                    "maxValue": 1
+                },
+                {
+                    "inputType": "range",
+                    "minValue": 0.1,
+                    "maxValue": 1
+                },
+                {
+                    "inputType": "range",
+                    "minValue": 0.1,
+                    "maxValue": 1
+                },
+
+            ]
         }
     ]
 }

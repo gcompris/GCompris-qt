@@ -9,14 +9,52 @@
  */
 import core 1.0
 
+// Data {
+//     objective: qsTr("Between 1 and 4.")
+//     difficulty: 2
+//     data: [
+//         {
+//             "numberOfSubLevels": 4,
+//             "minValue" : 1,
+//             "maxValue" : 4
+//         }
+//     ]
+// }
+
 Data {
     objective: qsTr("Between 1 and 4.")
     difficulty: 2
-    data: [
+    data:  [
         {
-            "numberOfSubLevels": 4,
-            "minValue" : 1,
-            "maxValue" : 4
+            "shuffle": true,
+            "subLevels":  [
+                {
+                    "inputType": "range",
+                    "minValue": 1,
+                    "maxValue": 4
+                },
+                {
+                    "inputType": "range",
+                    "minValue": 1,
+                    "maxValue": 4
+                },
+                {
+                    "inputType": "range",
+                    "minValue": 1,
+                    "maxValue": 4
+                },
+                {
+                    "inputType": "range",
+                    "minValue": 1,
+                    "maxValue": 4
+                },
+                {
+                    "inputType": "range",
+                    "minValue": 1,
+                    "maxValue": 4
+                },
+
+            ]
         }
     ]
 }
