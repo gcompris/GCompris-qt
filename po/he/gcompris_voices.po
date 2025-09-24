@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-13 02:28+0000\n"
-"PO-Revision-Date: 2025-09-20 16:29+0300\n"
+"PO-Revision-Date: 2025-09-22 22:58+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -296,7 +296,7 @@ msgstr ""
 #: activities/colors/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the right color"
-msgstr ""
+msgstr "יש ללחוץ על הצבע הנכון"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "comparator"
 #: activities/comparator/ActivityInfo.qml:20
@@ -744,14 +744,14 @@ msgstr ""
 #: activities/memory-case-association/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the upper case card with its lower case pair."
-msgstr ""
+msgstr "יש להתאים את הקלף עם האות הגדולה עם האות הקטנה התואמת לו."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-enumerate"
 #: activities/memory-enumerate/ActivityInfo.qml:18
 #, kde-format
 msgid ""
 "Match a number card with a card displaying the same number of butterflies."
-msgstr ""
+msgstr "יש להתאים בין קלף המספר לקלף שמציג את אותה כמות של פרפרים."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-minus"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add-tux"
@@ -815,6 +815,8 @@ msgid ""
 "cursor next to this sparkle and use the mousewheel or the zoom gesture to "
 "zoom in."
 msgstr ""
+"מהתבוננות בקיר האבן, אפשר לראות נצנוץ בנקודה כלשהי. יש להזיז את סמן העכבר "
+"ליד הנצנוץ ולהשתמש בגלגלת העכבר או בתנועת ההתקרבות כדי להתקרב."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "missing-letter"
 #: activities/missing-letter/ActivityInfo.qml:19
@@ -989,7 +991,7 @@ msgstr "יש להניע את המסוק עם מקשי החיצים ולתפוס 
 #: activities/play_piano/ActivityInfo.qml:22
 #, kde-format
 msgid "Click on the keyboard keys that match the notes that you see and hear"
-msgstr ""
+msgstr "יש ללחוץ על מקשי המקלדת שתואמים לתווים שמופיעים ומושמעים"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "play_rhythm"
 #: activities/play_rhythm/ActivityInfo.qml:22
@@ -1008,7 +1010,7 @@ msgstr "איתור המקום הנכון"
 #, kde-format
 msgid ""
 "Arrange the instructions and traverse the correct path to reach the fish."
-msgstr ""
+msgstr "יש לסדר את ההנחיות ולחצות את הנתיב הנכון כדי להגיע לדג."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "railroad"
 #: activities/railroad/ActivityInfo.qml:20
