@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-07 00:38+0000\n"
-"PO-Revision-Date: 2025-09-22 22:58+0300\n"
+"PO-Revision-Date: 2025-09-24 15:03+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -153,6 +153,7 @@ msgstr "יש להטות את התיבה כדי לנווט את הכדור לדל
 msgid ""
 "Press the left and right arrows at the same time to send the ball straight on"
 msgstr ""
+"יש ללחוץ על החיצים השמאלי והימני באותו הזמן כדי לשלוח את הכדור הישר קדימה"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame_2players"
@@ -163,6 +164,8 @@ msgid ""
 "Select the number of balls you wish to place in the holes and then click on "
 "the OK button. The winner is the one who hasn't put a ball in the red hole."
 msgstr ""
+"יש להקיש על מספר הכדורים לשים בחורים ואז על OK. ניצחון דורש שאותו השחקן או "
+"השחקנית לא ישימו כדור בחור האדום."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "binary_bulb"
 #: activities/binary_bulb/ActivityInfo.qml:18
@@ -171,18 +174,20 @@ msgid ""
 "Turn on the right bulbs to represent the binary of the given decimal number. "
 "When you have achieved it, press OK"
 msgstr ""
+"יש להפעיל את הנוריות הנכונות כדי לייצג באופן בינרי את המספר העשרוני הנתון. "
+"כשהצלחת, נא ללחוץ על OK"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "braille_alphabets"
 #: activities/braille_alphabets/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on Tux to start and then re-create the Braille cells."
-msgstr ""
+msgstr "יש ללחוץ על טאקס ואז ליצור מחדש את תאי הברייל."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "braille_fun"
 #: activities/braille_fun/ActivityInfo.qml:18
 #, kde-format
 msgid "Create the Braille cell for the letter."
-msgstr ""
+msgstr "יש ליצור תא ברייל לאות."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calcudoku"
 #: activities/calcudoku/ActivityInfo.qml:17
@@ -197,7 +202,7 @@ msgstr ""
 #: activities/calendar/ActivityInfo.qml:18
 #, kde-format
 msgid "Select the asked date on the calendar"
-msgstr ""
+msgstr "יש לבחור את התאריך המבוקש בלוח השנה"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "canal_lock"
 #: activities/canal_lock/ActivityInfo.qml:18
@@ -207,6 +212,8 @@ msgid ""
 "on the valves to cause either a drop or an increase in the water level, and "
 "click on the gates to open or close a path."
 msgstr ""
+"האחריות על המנעול היא עליך וצריך לעזור לטאקס לעבור. יש ללחוץ על השסתום כדי "
+"להוריד או להעלות את גובה המים וללחוץ על השערים כדי לסגור את השער."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "categorization"
 #: activities/categorization/ActivityInfo.qml:18
@@ -697,7 +704,7 @@ msgstr "היחשפת להיסטוריה של לואי ברייל."
 #: activities/magic-hat-minus/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the hat. How many stars are still hiding under the hat."
-msgstr ""
+msgstr "יש ללחוץ על הכובע. כמה כוכבים עדיין מסתתרים מתחת לכובע."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "magic-hat-plus"
 #: activities/magic-hat-plus/ActivityInfo.qml:18
@@ -706,6 +713,8 @@ msgid ""
 "Count the number of stars hidden under the hat and then click on the stars "
 "to indicate their number."
 msgstr ""
+"יש לספור את מספר הכוכבים שמסתתים מתחת לכובע וללחוץ על הכוכבים כדי לציין את "
+"כמותם."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "maze"
 #: activities/maze/ActivityInfo.qml:18
@@ -713,6 +722,8 @@ msgstr ""
 msgid ""
 "Use the arrows keys or swipe the touch screen to help Tux find his way out."
 msgstr ""
+"יש להשתמש במקשי החיצים או להחליק על מסך המגע כדי לסייע לטאקס למצוא את דרכו "
+"החוצה."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mazeinvisible"
 #: activities/mazeinvisible/ActivityInfo.qml:18
@@ -721,6 +732,8 @@ msgid ""
 "Use the arrow keys or swipe the touch screen to guide Tux out. Use the maze "
 "icon or the space key to see the map."
 msgstr ""
+"יש להשתמש במקשי החיצים או להחליק על מסך המגע כדי לנתב את טאקס. סמל המבוך או "
+"מקש הרווח יציגו את המפה."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mazerelative"
 #: activities/mazerelative/ActivityInfo.qml:18
@@ -729,6 +742,8 @@ msgid ""
 "Help Tux find his way out. Left and right are used to turn and up to go "
 "forward."
 msgstr ""
+"יש לסייע לטאקס למצוא את דרכו החוצה. שמאל וימין משמשים לפנייה ולמעלה כדי "
+"להתקדם."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "melody"
 #: activities/melody/ActivityInfo.qml:18
@@ -1037,7 +1052,7 @@ msgstr "יש להשתמש בכלי הציור כדי לבנות תבנית זה�
 #, kde-format
 msgid ""
 "Use the drawing tools to reproduce symmetrically the pattern on the right."
-msgstr ""
+msgstr "יש להשתמש בכלי הציור כדי לייצר מחדש שיקוף סימטרי של התבנית מימין."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "renewable_energy"
 #: activities/renewable_energy/ActivityInfo.qml:18
