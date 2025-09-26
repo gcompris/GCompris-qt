@@ -50,7 +50,7 @@ Image {
     }
 
     onLeave: {
-        if(opacity != 0) {
+        if(opacity != 0 && mouseArea.enabled) {
             block.opacity = 1.0
         }
     }
