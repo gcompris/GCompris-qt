@@ -13,17 +13,25 @@ import "../singletons"
 AbstractButton {
     id: button
     height: Style.controlSize
-    text: model[currentIndex]
+    text: menuList.currentItem ? menuList.currentItem.modelData : ""
     opacity: enabled ? 1 : 0.3
 
     readonly property Item rootItem: Window.contentItem
-    property int maxHeight: Window.height - Style.bigMargins
-    property list<string> model: []
+    property int maxHeight: Window.height
+    property alias model: menuList.model
     property alias currentIndex: menuList.currentIndex
+    property alias currentText: button.text
 
     Keys.onPressed: (event) => {
         if(event.key == Qt.Key_Enter || event.key == Qt.Key_Return || event.key == Qt.Key_Space) {
-            button.checked = true;
+            event.accepted = true;
+            button.checked = !button.checked;
+        } else if(event.key == Qt.Key_Down) {
+            event.accepted = true;
+            menuList.incrementCurrentIndex();
+        } else if(event.key == Qt.Key_Up) {
+            event.accepted = true;
+            menuList.decrementCurrentIndex();
         }
     }
 
@@ -35,7 +43,18 @@ AbstractButton {
         }
     }
 
+    onActiveFocusChanged: {
+        if(!activeFocus) {
+            checked = false;
+        }
+    }
+
+    onClicked: {
+        checked = !checked;
+    }
+
     function hideMenu() {
+        menuContainer.visible = false;
         menuContainer.parent = button;
         menuContainer.x = 0;
         menuContainer.y = 0;
@@ -44,7 +63,7 @@ AbstractButton {
 
     function showMenu() {
         var buttonGlobalPosition = button.mapToItem(rootItem, 0, 0);
-        var minY = Style.margins;
+        var minY = 0;
         var maxY = rootItem.height - Style.margins - menuList.height;
         var menuGlobalY = Math.max(minY, Math.min(buttonGlobalPosition.y, maxY));
         menuContainer.parent = Window.contentItem;
@@ -54,19 +73,19 @@ AbstractButton {
         }
         menuContainer.y = menuGlobalY;
         menuContainer.x = buttonGlobalPosition.x;
-        menuList.forceActiveFocus();
-
+        menuContainer.visible = true;
     }
 
     background: Rectangle {
         width: button.width
         height: button.height
         radius: Style.defaultRadius
-        border.color: Style.selectedPalette.accent
+        border.color: button.activeFocus ? Style.selectedPalette.text : Style.selectedPalette.accent
         border.width: Style.defaultBorderWidth
         color: button.down || button.checked ? Style.selectedPalette.accent :
                                                 Style.selectedPalette.base
     }
+
     DefaultLabel {
         text: button.text
         color: button.down ? Style.selectedPalette.highlightedText : Style.selectedPalette.text
@@ -80,6 +99,7 @@ AbstractButton {
         horizontalAlignment: Text.AlignLeft
         fontSizeMode: Text.VerticalFit
     }
+
     Image {
         anchors {
             right: parent.right
@@ -92,13 +112,9 @@ AbstractButton {
         sourceSize.width: width
     }
 
-    onClicked: {
-        checked = !checked;
-    }
-
     Rectangle {
         id: menuContainer
-        visible: button.checked
+        visible: false
         width: button.width
         height: visible ? menuList.height + 2 * Style.defaultBorderWidth : 0
         color: Style.selectedPalette.base
@@ -110,9 +126,9 @@ AbstractButton {
             x: Style.defaultBorderWidth
             y: Style.defaultBorderWidth
             width: parent.width - 2 * Style.defaultBorderWidth
-            height: Math.min(childrenRect.height, button.maxHeight)
+            height: Math.min(contentItem.childrenRect.height, button.maxHeight)
             clip: true
-            model: button.model
+            keyNavigationEnabled: false
             delegate: Rectangle {
                 id: menuItem
                 width: menuList.width
@@ -122,6 +138,7 @@ AbstractButton {
                     (listItemClick.containsMouse ? Style.selectedPalette.accent : "transparent")
 
                 required property int index
+                required property string modelData
 
                 DefaultLabel {
                     anchors {
@@ -133,7 +150,7 @@ AbstractButton {
                         rightMargin: Style.margins
                     }
                     horizontalAlignment: Text.AlignLeft
-                    text: button.model[menuItem.index]
+                    text: menuItem.modelData
                     color: menuItem.index === menuList.currentIndex || listItemClick.pressed ?
                         Style.selectedPalette.highlightedText :
                         Style.selectedPalette.text
@@ -147,20 +164,6 @@ AbstractButton {
                         menuList.currentIndex = menuItem.index;
                         button.checked = false;
                     }
-                }
-            }
-
-            Keys.onPressed: (event) => {
-                if(event.key == Qt.Key_Enter || event.key == Qt.Key_Return || event.key == Qt.Key_Space) {
-                    button.checked = false;
-                    event.accepted = true;
-                    button.forceActiveFocus();
-                }
-            }
-
-            onActiveFocusChanged: {
-                if(!activeFocus) {
-                    button.checked = false;
                 }
             }
         }
