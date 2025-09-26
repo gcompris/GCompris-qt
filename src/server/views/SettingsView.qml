@@ -189,7 +189,7 @@ Item {
                             activeFocusOnTab: true
                             focus: true
                             defaultText: serverSettings.serverID
-                                onTextChanged: serverSettings.serverID = serverID.text
+                            onTextChanged: serverSettings.serverID = serverID.text
                         }
                     }
 
@@ -211,7 +211,7 @@ Item {
                             activeFocusOnTab: true
                             focus: true
                             defaultText: serverSettings.port
-                                onTextChanged: serverSettings.port = portField.text
+                            onTextChanged: serverSettings.port = portField.text
                         }
                     }
 

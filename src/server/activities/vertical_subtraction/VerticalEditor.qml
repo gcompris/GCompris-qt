@@ -1,15 +1,16 @@
 /* GCompris - VerticalEditor.qml
  *
  * SPDX-FileCopyrightText: 2025 Bruno Anselme <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
 import QtQuick.Controls.Basic
-import QtQuick.Layouts
 
 import "../../singletons"
 import "../../components"
@@ -21,7 +22,6 @@ DatasetEditorBase {
     required property string textActivityData               // Json array stringified as stored in database (dataset_/dataset_content)
     property ListModel mainModel: ({})                      // The main ListModel, declared as a property for dynamic creation
     readonly property var prototypeStack: [ mainPrototype ] // A stack of prototypes (Only one here. There is no nested Listmodel)
-    property alias scrollMainLevel: scrollMainLevel         // To be accessible from mainToolBar
 
     ListModel {
         id: mainPrototype
@@ -34,88 +34,30 @@ DatasetEditorBase {
         ListElement { name: "withCarry";    label: qsTr("With carry");          type: "boolean";    def: "true" }
     }
 
-    RowLayout {
+    EditorBox {
+        id: levelEditor
         anchors.fill: parent
+        editorPrototype: mainPrototype
+        editorModel: editor.mainModel
 
-        Rectangle {
-            id: mainLevel
-            Layout.preferredWidth: 450
-            Layout.fillHeight: true
-            color: "snow"
-            border.width: 1
-
-            EditToolBar {
-                id: mainToolBar
-                aView: mainView
-                aPrototype: mainPrototype
-                aModel: mainModel
-                aScrollView: editor.scrollMainLevel
-
-                anchors.top: parent.top
-                anchors.left: parent.left
-                anchors.right: parent.right
-            }
-
-            ScrollView {
-                id: scrollMainLevel
-                anchors.top: mainToolBar.bottom
-                anchors.left: parent.left
-                anchors.right: parent.right
-                anchors.bottom: parent.bottom
-                anchors.margins: 2
-                ScrollBar.vertical.policy: ScrollBar.AlwaysOn
-                ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
-                contentHeight: mainView.implicitHeight
-                clip: true
-
-                ColumnLayout {
-                    id: mainView
-                    property int current: -1
-                    width: parent.width
-                    spacing: 2
-
-                    Repeater {
-                        id: mainRepeater
-                        model: mainModel
-                        Item {
-                            id: mainLineItem
-                            Layout.fillWidth: true
-                            height: childrenRect.height
-
-                            Rectangle {
-                                anchors.fill: parent
-                                color: (mainView.current === index) ? Style.selectedPalette.highlight : (index % 2) ? Style.selectedPalette.base : Style.selectedPalette.alternateBase
-                                border.width: mainMouseArea.containsMouse ? 1 : 0
-                            }
-
-                            MouseArea {
-                                id: mainMouseArea
-                                anchors.fill: parent
-                                hoverEnabled: true
-                                propagateComposedEvents: true
-                                onClicked: mainView.current = index
-                            }
-                            ColumnLayout {
-                                id: fieldsLayout
-                                // Properties required by FieldEdit. Must be in the parent
-                                property ListModel currentPrototype: mainPrototype
-                                property ListModel currentModel: mainModel
-                                property int modelIndex: index
-                                width: parent.width
-                                spacing: 2
-                                FieldEdit { name: "title" }
-                                FieldEdit { name: "nbSubLevel" }
-                                FieldEdit { name: "nbDigits" }
-                                FieldEdit { name: "nbLines" }
-                                FieldEdit { name: "alreadyLaid" }
-                                FieldEdit { name: "withCarry" }
-                            }
-                        }
-                    }
-                }
+        fieldsComponent: Component {
+            Column {
+                // Properties required by FieldEdit. Must be in the parent
+                property ListModel currentPrototype: levelEditor.editorPrototype
+                property ListModel currentModel: levelEditor.editorModel
+                property int modelIndex: parent.index
+                x: Style.margins
+                y: Style.margins
+                spacing: Style.smallMargins
+                FieldEdit { name: "title"; maxWidth: levelEditor.maxWidth }
+                FieldEdit { name: "nbSubLevel" }
+                FieldEdit { name: "nbDigits" }
+                FieldEdit { name: "nbLines" }
+                FieldEdit { name: "alreadyLaid" }
+                FieldEdit { name: "withCarry" }
             }
         }
-
-        Component.onCompleted:  mainModel = datasetEditor.jsonToListModel(prototypeStack, JSON.parse(textActivityData))
     }
+
+    Component.onCompleted:  mainModel = datasetEditor.jsonToListModel(prototypeStack, JSON.parse(textActivityData))
 }

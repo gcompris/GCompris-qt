@@ -1,20 +1,26 @@
 /* GCompris - FieldEdit.qml
  *
  * SPDX-FileCopyrightText: 2023 Bruno Anselme <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
-import QtQuick.Layouts
 import QtQuick.Controls.Basic
 
 import "../singletons"
 
 Item  {
     id: fieldEdit
+
+    property int minWidth: 200
+    property int maxWidth: 200 // set this on instances to optimize width, used to calculate maxWidth of Components.
+
+    readonly property int componentMaxWidth: Math.max(200, maxWidth - fieldLabel.width - 2 * Style.margins)
 
     // required property. Must be assigned at the time of creation
     required property string name
@@ -33,9 +39,8 @@ Item  {
     property bool acceptChange:true
     signal fieldValueChanged(string fieldName, var newValue, int modelIndex)
 
-    Layout.fillWidth: true
-    Layout.preferredHeight: 22
-    Layout.margins: 3
+    width: childrenRect.width
+    height: childrenRect.height
 
     ListModel { id: arrayModel }        // Internal model for choiceInput
     ListModel { id: stringModel }        // Internal model for stringsInput's popup and comboInput popup
@@ -45,7 +50,8 @@ Item  {
 
         switch (proto.type) {
         case "model":                                           // value is the number of elements of the sub model
-            value = Qt.binding(function() { return aModel.get(modelIndex)[proto.name].count }) // Bind to be aware of aModel.count change
+            // Bind to be aware of aModel.count change, with a check to avoid warnings on deletion
+            value = Qt.binding(function() { return aModel.get(modelIndex) ? aModel.get(modelIndex)[proto.name].count : null })
             readOnly = true
             return textInput
         case "string_array":                                    // value is a stringified array of elements
@@ -124,8 +130,7 @@ Item  {
         id: textInput
         UnderlinedTextInput {
             id: inputField
-            width: 350
-            height: fieldEdit.height
+            width: readOnly ? textInput.contentWidth + 2 * Style.margins : fieldEdit.componentMaxWidth
             activeFocusOnTab: true
             defaultText: (typeof value === "undefined") ? "?" : value
             clip: true
@@ -142,9 +147,6 @@ Item  {
             editable: true
             width: 350
             height: fieldEdit.height
-            Layout.fillWidth: false
-            Layout.preferredWidth: 350
-            Layout.preferredHeight: fieldEdit.height
 
             contentItem: TextInput {
                 z: 2
@@ -198,9 +200,6 @@ Item  {
     Component {
         id: boolInput
         StyledCheckBox {
-            width: 15
-            height: fieldEdit.height
-            scale: 0.7
             checked: jsonValue
             onCheckedChanged: aModel.setProperty(modelIndex, proto.name, checked)
         }
@@ -212,14 +211,13 @@ Item  {
         Row {
             property alias text: inputField.text
             SmallButton {
-                height: fieldEdit.height
+                id: popupButton
                 text: "\uf044"
                 onClicked: stringsPopup.open()
             }
             UnderlinedTextInput {
                 id: inputField
-                width: 350
-                height: fieldEdit.height
+                width: fieldEdit.componentMaxWidth - popupButton.width
                 activeFocusOnTab: true
                 text: (typeof value === "undefined") ? "?" : jsonValue.toString()
                 clip: true
@@ -233,7 +231,7 @@ Item  {
     Component {
         id: choiceInput
         Item {
-            height: fieldEdit.height
+            height: childrenRect.height
             width: childrenRect.width
             ButtonGroup {
                 id: choiceButtonGroup
@@ -249,8 +247,6 @@ Item  {
                     StyledCheckBox {
                         required property string datasetValue
                         required property string displayedValue
-                        height: fieldEdit.height
-                        scale: 0.75
                         ButtonGroup.group: choiceButtonGroup
                         text: displayedValue
                         checked: datasetValue === choiceDefault
@@ -263,19 +259,16 @@ Item  {
     // Component for comboInt
     Component {
         id: comboInput
-        Item {
-            height: fieldEdit.height
-            width: childrenRect.width
-            ComboBox {
-                width: 200
-                height: fieldEdit.height
-                font.pixelSize: Style.textSize
-                model: stringModel
-                onCurrentTextChanged: aModel.setProperty(modelIndex, proto.name, currentText)
-                currentIndex: Master.findIndexInModel(stringModel, function(item) { return item.content === choiceDefault })
-                Component.onCompleted: if (choiceDefault === value) // if choiceDefault contains default values, it hasn't been initialized
-                                           currentIndex = 0
-
+        StyledComboBox {
+            width: 200
+            font.pixelSize: Style.textSize
+            model: stringModel
+            onCurrentTextChanged: aModel.setProperty(modelIndex, proto.name, currentText)
+            currentIndex: Master.findIndexInModel(stringModel, function(item) { return item.content === choiceDefault })
+            Component.onCompleted: {
+                if(choiceDefault === value) { // if choiceDefault contains default values, it hasn't been initialized
+                    currentIndex = 0;
+                }
             }
         }
     }
@@ -283,8 +276,8 @@ Item  {
     // Popup window for string_array edition
     Popup {
         id: stringsPopup
-        width: 420
-        height: 350
+        width: 500
+        height: 600
         anchors.centerIn: Overlay.overlay
         clip: true
         modal: true
@@ -294,90 +287,96 @@ Item  {
         onOpened: stringToArrayModel()
 
         background: Rectangle {
-            color: Style.selectedPalette.alternateBase
-            radius: 5
-            border.color: "darkgray"
-            border.width: 2
+            color: Style.selectedPalette.base
+            radius: Style.defaultRadius
+            border.color: Style.selectedPalette.accent
+            border.width: Style.defaultBorderWidth
         }
 
-        ColumnLayout {
+        Item {
             anchors.fill: parent
-            spacing: 5
-            Text {
-                // width: parent.width
-                height: fieldEdit.height
-                Layout.fillWidth: true
-                horizontalAlignment: Text.AlignHCenter
-                text: proto.label
-            }
+            focus: true
 
-            RowLayout {
-                // width: parent.width
-                // width: 400
-                Layout.fillWidth: true
+            Keys.onReturnPressed: okButtons.validated()
+            Keys.onEscapePressed: okButtons.cancelled()
 
-                SmallButton {
-                    height: fieldEdit.height
-                    text: "\uf067"
-                    enabled: (stringModel.count < 11)
-                    ToolTip.visible: hovered
-                    ToolTip.text: qsTr("Add to end")
-                    onClicked: stringModel.append({ "content": "" })
-                }
+            Column {
+                id: topColumn
+                width: parent.width
+                height: childrenRect.height
+                spacing: Style.margins
 
-                SmallButton {
-                    height: fieldEdit.height
-                    text: "\uf068"
-                    enabled: (stringModel.count > 0)
-                    ToolTip.visible: hovered
-                    ToolTip.text: qsTr("Remove last")
-                    onClicked: stringModel.remove(stringModel.count - 1)
-                }
+                Item {
+                    height: Style.lineHeight
+                    width: parent.width
 
-                Item { Layout.fillWidth: true }
-
-                SmallButton {
-                    id: cancelButton
-                    height: fieldEdit.height
-                    Layout.preferredWidth: 100
-                    text: qsTr("Cancel")
-                    onClicked: {
-                        fieldEdit.forceActiveFocus()    // Restore focus before closing popup
-                        stringsPopup.close()
+                    DefaultLabel {
+                        anchors.centerIn: parent
+                        text: proto.label
                     }
                 }
 
-                SmallButton {
-                    id: okButton
-                    height: fieldEdit.height
-                    Layout.preferredWidth: 100
-                    text: qsTr("Ok")
-                    onClicked: {
-                        arrayModelToStringArray()
-                        fieldEdit.forceActiveFocus()    // Restore focus before closing popup
-                        stringsPopup.close()
+                Row {
+                    anchors.left: parent.left
+
+                    SmallButton {
+                        text: "\uf067"
+                        enabled: (stringModel.count < 11)
+                        toolTipOnHover: true
+                        toolTipText: qsTr("Add an entry")
+                        onClicked: {
+                            stringModel.append({ "content": "" });
+                            // Give focus to added line
+                            stringRepeater.itemAt(stringModel.count - 1).focus = true;
+                        }
+                    }
+
+                    SmallButton {
+                        text: "\uf068"
+                        enabled: (stringModel.count > 0)
+                        toolTipOnHover: true
+                        toolTipText: qsTr("Remove last entry")
+                        onClicked: stringModel.remove(stringModel.count - 1)
                     }
                 }
             }
 
-            ScrollView {
-                id: stringsScroll
-                Layout.fillWidth: true
-                Layout.fillHeight: true
-                Layout.margins: 2
+            Rectangle {
+                id: flickableBg
+                color: "#00000000"
+                border.color: Style.selectedPalette.accent
+                border.width: Style.defaultBorderWidth
+                anchors {
+                    top: topColumn.bottom
+                    bottom: okButtons.top
+                    left: parent.left
+                    right: parent.right
+                    topMargin: Style.margins
+                    bottomMargin: Style.margins
+                }
+            }
+
+            StyledFlickable {
+                id: stringsFlickable
+                anchors.fill: flickableBg
+                anchors.margins: Style.margins
+                anchors.rightMargin: 0
                 clip: true
+                contentWidth: stringsView.width
+                contentHeight: stringsView.height
 
-                ColumnLayout {
+                Column {
                     id: stringsView
                     property int current: -1
-                    width: parent.width
-                    spacing: 2
+                    width: stringsFlickable.width - 10
+                    spacing: Style.smallMargins
 
                     Repeater {
+                        id: stringRepeater
                         model: stringModel
+
                         UnderlinedTextInput {
                             width: parent.width
-                            height: fieldEdit.height
                             activeFocusOnTab: true
                             text: content
                             onTextChanged: stringModel.setProperty(index, "content", text)
@@ -386,20 +385,38 @@ Item  {
                 }
             }
 
-            Keys.onReturnPressed: okButton.clicked()
-            Keys.onEscapePressed: cancelButton.clicked()
+            OkCancelButtons {
+                id: okButtons
+                anchors {
+                    bottom: parent.bottom
+                    right: parent.right
+                    left: parent.left
+                }
+                buttonsWidth: (width - spacing) * 0.5
+                onCancelled: {
+                    fieldEdit.forceActiveFocus();    // Restore focus before closing popup
+                    stringsPopup.close();
+                }
+                onValidated:  {
+                    arrayModelToStringArray();
+                    fieldEdit.forceActiveFocus();    // Restore focus before closing popup
+                    stringsPopup.close();
+                }
+            }
         }
-    }
+    } // End of PopUp
 
-    RowLayout {
-        Text {      // Display label
-            Layout.preferredWidth: 150
-            height: fieldEdit.height
-            verticalAlignment: Text.AlignBottom
+    // Actual content
+    Row {
+        height: Style.lineHeight
+        width: childrenRect.width
+        spacing: Style.margins
+
+        DefaultLabel {      // Display label
+            id: fieldLabel
+            anchors.verticalCenter: parent.verticalCenter
             text: fieldEdit.proto.label
-            font.bold: true
-            font.pixelSize: Style.textSize
-            color: enabled ? "black" : "gray"
+            opacity: enabled ? 1 : 0.5
         }
 
         Loader {
