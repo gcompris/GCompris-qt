@@ -17,7 +17,7 @@ import "../singletons"
 Button {
     id: smallButton
     text: ""
-    hoverEnabled: true
+    hoverEnabled: enabled
     height: Style.lineHeight
     width: height
 

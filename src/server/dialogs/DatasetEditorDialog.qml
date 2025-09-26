@@ -1,6 +1,7 @@
 /* GCompris - DatasetEditorDialog.qml
  *
  * SPDX-FileCopyrightText: 2021-2025 Emmanuel Charruau <echarruau@gmail.com>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Emmanuel Charruau <echarruau@gmail.com>
@@ -16,14 +17,12 @@ import QtQuick
 import core 1.0
 import "qrc:/gcompris/src/server/server.js" as Server
 import QtQuick.Controls.Basic
-import QtQuick.Layouts
 
 import "../singletons"
 import "../components"
 
 Popup {
     id: datasetEditor
-
     property string label: "To be set by calling component."
     property bool textInputReadOnly: false
     property int activityIndex
@@ -34,13 +33,15 @@ Popup {
     property string dataset_Name: ""
     property string activity_Name: ""
     property alias dataset_Objective: datasetObjective.text
-    property alias difficulty: cbDifficulty.currentIndex
-    property string dataset_Content: ""
+    property alias difficulty: difficultySelector.currentIndex
+    property alias dataset_Content: datasetContent.text
     property var currentActivity: null
+    property string currentActivityTitle: currentActivity ? currentActivity.activity_title : ""
+    property string noEditorPath: `${Master.activityBaseUrl}/NoEditor.qml`
 
-    anchors.centerIn: Overlay.overlay
-    width: parent.width
-    height: parent.height
+    parent: Overlay.overlay
+    width: Overlay.overlay.width
+    height: Overlay.overlay.height
     modal: true
     closePolicy: Popup.NoAutoClose
 
@@ -53,7 +54,7 @@ Popup {
             activity_Name = currentActivity["activity_name"]
             datasetName.text = ""
             dataset_Objective = ""
-            cbDifficulty.currentIndex = cbDifficulty.model.indexOf("1")
+            difficultySelector.currentIndex = 0 // difficulty 1 by default
             // dataset_Content = `import core 1.0\n\nData {\n    objective: ""\n    difficulty: 1\n    data: []\n}`
             dataset_Content = `[]`
         }
@@ -64,7 +65,7 @@ Popup {
             dataset_Id = selectedDataset.dataset_id
             datasetName.text = selectedDataset.dataset_name
             dataset_Objective = selectedDataset.dataset_objective
-            cbDifficulty.currentIndex = cbDifficulty.model.indexOf(selectedDataset.dataset_difficulty.toString())
+            difficultySelector.currentIndex = selectedDataset.dataset_difficulty - 1 // index is difficulty - 1
             dataset_Content = selectedDataset.dataset_content
         }
         open()
@@ -77,7 +78,7 @@ Popup {
             return
         }
 
-        var difficulty = cbDifficulty.currentIndex + 1
+        var difficulty = difficultySelector.currentIndex + 1
         if (difficulty < 1 || difficulty > 6) {
             errorDialog.message = [ qsTr("Difficulty should be between 1 and 6") ]
             errorDialog.open()
@@ -193,7 +194,7 @@ Popup {
 
     onAboutToShow: {
         var url = `${Master.activityBaseUrl}/${activity_Name}/ActivityEditor.qml`
-        editorLoader.sourceUrl = file.exists(url) ? url : `${Master.activityBaseUrl}/NoEditor.qml`
+        editorLoader.sourceUrl = file.exists(url) ? url : datasetEditor.noEditorPath
     }
 
     onOpened: {
@@ -201,10 +202,7 @@ Popup {
     }
 
     background: Rectangle {
-        color: Style.selectedPalette.alternateBase
-        radius: 5
-        border.color: "darkgray"
-        border.width: 2
+        color: Style.selectedPalette.base
     }
 
     File { id: file }
@@ -215,206 +213,282 @@ Popup {
         width: parent.width
         height: parent.height
         visible: false
-
+        background: Rectangle {
+            color: Style.selectedPalette.base
+            radius: Style.defaultRadius
+            border.width: Style.defaultBorderWidth
+            border.color: Style.selectedPalette.accent
+        }
         modal: true
+
+        onOpened: {
+            popupControl.forceActiveFocus();
+        }
+
+        onClosed: {
+            instructionsButton.forceActiveFocus();
+        }
+
+        Item {
+            id: instructionTitleItem
+            height: Style.lineHeight
+            width: parent.width
+
+            DefaultLabel {
+                width: parent.width
+                anchors.verticalCenter: parent.verticalCenter
+                text: datasetEditor.currentActivityTitle
+                font.bold: true
+            }
+        }
+
         Text {
-            anchors.fill: parent
+            anchors {
+               top: instructionTitleItem.bottom
+               topMargin: Style.margins
+               bottom: parent.bottom
+               left: parent.left
+               right: parent.right
+            }
+            color: Style.selectedPalette.text
+            font.pixelSize: Style.textSize
             text: editorLoader.item ? editorLoader.item.teacherInstructions : ""
         }
+
         MouseArea {
+            id: popupControl
             anchors.fill: parent
-            onClicked: instructionPanel.visible = false;
+            onClicked: instructionPanel.close();
+            focus: true
+
+            Keys.onPressed: (event) => {
+                if(event.key == Qt.Key_Enter || event.key == Qt.Key_Return || event.key == Qt.Key_Space || event.key == Qt.Key_Escape) {
+                    event.accepted = true;
+                    instructionPanel.close();
+                }
+            }
         }
     }
 
-    RowLayout {
-        id: headLayout
-        anchors.top: parent.top
-        anchors.left: parent.left
-        anchors.right: parent.right
+    Column {
+        id: mainColumn
+        width: parent.width
+        spacing: Style.smallMargins
 
-        RowLayout {
-            Layout.fillWidth: true
-            Layout.fillHeight: true
-            Text {
-                id: groupDialogText
-                color: Style.selectedPalette.text
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignTop
-                text: label
-                font {
-                    bold: true
-                    pixelSize: 20
+        Item {
+            width: parent.width
+            height: Style.lineHeight
+
+            DefaultLabel {
+                anchors {
+                    left: parent.left
+                    right: parent.right
+                    margins: Style.margins
+                    verticalCenter: parent.verticalCenter
                 }
-            }
-            Button {
-                id: instructionsButton
-                text: qsTr("Instructions")
-                visible: editorLoader.sourceUrl !== "NoEditor.qml"
-                onClicked: instructionPanel.visible = true;
+                height: Style.textSize
+                color: Style.selectedPalette.text
+                font.bold: true
+                text: datasetEditor.label
             }
         }
 
-        ColumnLayout {
-            Layout.fillWidth: true
-            Layout.fillHeight: true
+        Item {
+            width: parent.width
+            height: infoContentColumn.height
 
-            RowLayout {
-                Text {
-                    color: Style.selectedPalette.text
-                    Layout.preferredWidth: 150
-                    Layout.preferredHeight: 20
-                    text: qsTr("Activity name")
-                    font.bold: true
-                    font {
-                        pixelSize: 15
-                    }
+            TabBar {
+                id: tabSelector
+                background: Item {}
+                spacing: Style.margins
+                anchors.bottom: parent.bottom
+
+                StyledTabButton {
+                    text: qsTr("Editor")
                 }
-
-                Text {
-                    color: Style.selectedPalette.text
-                    id: activityName
-                    text: currentActivity ? currentActivity.activity_title : ""
-                    Layout.fillWidth: true
-                    Layout.preferredHeight: 20
-                    activeFocusOnTab: true
+                StyledTabButton {
+                    text: qsTr("Raw JSON")
+                    onClicked: {
+                        if(editorLoader.sourceUrl !== datasetEditor.noEditorPath) {
+                            datasetContent.text = datasetEditor.listModelToJson(editorLoader.item.prototypeStack,
+                                                      editorLoader.item.mainModel);
+                        }
+                    }
                 }
             }
 
-            RowLayout {
-                Text {
-                    color: Style.selectedPalette.text
-                    Layout.preferredWidth: 150
-                    Layout.preferredHeight: 20
-                    text: qsTr("Dataset name")
-                    font.bold: true
-                    font {
-                        pixelSize: 15
+            Column {
+                id: infoLabelColumn
+                spacing: Style.smallMargins
+
+                property int maxWidth: mainColumn.width * 0.3
+
+                anchors {
+                    left: tabSelector.right
+                    margins: Style.margins
+                }
+
+                Item {
+                    height: Style.lineHeight
+                    width: childrenRect.width
+                    anchors.right: parent.right
+
+                    DefaultLabel {
+                        width: Math.min(implicitWidth, infoLabelColumn.maxWidth)
+                        anchors.verticalCenter: parent.verticalCenter
+                        horizontalAlignment: Text.AlignRight
+                        text: qsTr("Activity name")
+                        font.bold: true
+                    }
+                }
+
+                Item {
+                    height: Style.lineHeight
+                    width: childrenRect.width
+                    anchors.right: parent.right
+
+                    DefaultLabel {
+                        width: Math.min(implicitWidth, infoLabelColumn.maxWidth)
+                        anchors.verticalCenter: parent.verticalCenter
+                        horizontalAlignment: Text.AlignRight
+                        text: qsTr("Dataset name")
+                        font.bold: true
+                    }
+                }
+
+                Item {
+                    height: Style.lineHeight
+                    width: childrenRect.width
+                    anchors.right: parent.right
+
+                    DefaultLabel {
+                        width: Math.min(implicitWidth, infoLabelColumn.maxWidth)
+                        anchors.verticalCenter: parent.verticalCenter
+                        horizontalAlignment: Text.AlignRight
+                        text: qsTr("Goal")
+                        font.bold: true
+                    }
+                }
+
+                Item {
+                    height: Style.lineHeight
+                    width: childrenRect.width
+                    anchors.right: parent.right
+
+                    DefaultLabel {
+                        width: Math.min(implicitWidth, infoLabelColumn.maxWidth)
+                        anchors.verticalCenter: parent.verticalCenter
+                        horizontalAlignment: Text.AlignRight
+                        text: qsTr("Difficulty")
+                        font.bold: true
+                    }
+                }
+            }
+
+            Column {
+                id: infoContentColumn
+
+                anchors {
+                    left: infoLabelColumn.right
+                    right: parent.right
+                    leftMargin: Style.margins
+                }
+                spacing: Style.smallMargins
+
+                Item {
+                    height: Style.lineHeight
+                    width: infoContentColumn.width
+
+                    DefaultLabel {
+                        width: infoContentColumn.width
+                        anchors.verticalCenter: parent.verticalCenter
+                        horizontalAlignment: Text.AlignLeft
+                        text: datasetEditor.currentActivityTitle
                     }
                 }
 
                 UnderlinedTextInput {
                     id: datasetName
-                    Layout.fillWidth: true
-                    Layout.preferredHeight: 20
+                    width: parent.width
                     activeFocusOnTab: true
-                }
-            }
-
-            RowLayout {
-                Text {
-                    color: Style.selectedPalette.text
-                    Layout.preferredWidth: 150
-                    Layout.preferredHeight: 20
-                    text: qsTr("Objective")
-                    font.bold: true
-                    font {
-                        pixelSize: 15
-                    }
+                    focus: true
                 }
 
                 UnderlinedTextInput {
                     id: datasetObjective
-                    Layout.fillWidth: true
-                    Layout.preferredHeight: 20
+                    width: parent.width
                     activeFocusOnTab: true
-                }
-            }
-
-            RowLayout {
-                Text {
-                    color: Style.selectedPalette.text
-                    Layout.preferredWidth: 150
-                    Layout.preferredHeight: 25
-                    text: qsTr("Difficulty")
-                    font.bold: true
-                    font.pixelSize: 15
+                    focus: true
                 }
 
                 StyledComboBox {
-                    id: cbDifficulty
-                    Layout.fillWidth: true
-                    Layout.preferredHeight: 25
-                    font.pixelSize: 15
+                    id: difficultySelector
+                    width: parent.width
                     model: [ 1, 2, 3, 4, 5, 6 ]
                 }
             }
-
         }
     }
 
-    TabBar {
-        id: bar
-        width: 360
-        background: Item {}
-        spacing: Style.margins
-        anchors.bottom: headLayout.bottom
-
-        StyledTabButton {
-            text: qsTr("Editor")
-        }
-        StyledTabButton {
-            text: qsTr("Json")
-            onClicked: {
-                if(editorLoader.sourceUrl !== "NoEditor.qml") {
-                    datasetContent.text =
-                        datasetEditor.listModelToJson(editorLoader.item.prototypeStack,
-                                                      editorLoader.item.mainModel);
-                }
-            }
-        }
-    }
-
-    StackLayout {
-        currentIndex: bar.currentIndex
-        anchors.top: headLayout.bottom
+    TabContainer {
+        currentIndex: tabSelector.currentIndex
+        anchors.top: mainColumn.bottom
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.bottom: okButtons.top
-        anchors.margins: 5
+        anchors.topMargin: Style.margins
+        anchors.bottomMargin: Style.margins
 
         Loader {
             id: editorLoader
             property string sourceUrl: ""
-            Layout.fillWidth: true
-            Layout.fillHeight: true
+            width: parent.width
+            height: parent.height
             onSourceUrlChanged: {
-                setSource(sourceUrl)
-                bar.currentIndex = (sourceUrl !== "NoEditor.qml") ? 0 : 1
+                setSource(sourceUrl);
+                tabSelector.currentIndex = (sourceUrl !== datasetEditor.noEditorPath) ? 0 : 1;
             }
             property string textActivityData_: dataset_Content
         }
 
-        ScrollView {
-            id: scrollDatasetContent
-            Layout.fillWidth: true
-            Layout.fillHeight: true
-            ScrollBar.vertical.policy: ScrollBar.AlwaysOn
 
-            background: Rectangle { border.width: 1 }       // white background for json editor
+        StyledFlickable {
 
-            TextArea {
+            TextArea.flickable: TextArea {
                 id: datasetContent
                 clip: true
-                Layout.fillWidth: true
-                Layout.fillHeight: true
-                text: dataset_Content
-                font.pixelSize: 12
-                readOnly: (editorLoader.sourceUrl === "NoEditor.qml") ? false : true
+                background: Rectangle {
+                    color: Style.selectedPalette.alternateBase
+                }
+                color: Style.selectedPalette.text
+                font.pixelSize: Style.textSize
+                readOnly: (editorLoader.sourceUrl === datasetEditor.noEditorPath) ? false : true
             }
         }
+    }
+
+    ViewButton {
+        id: instructionsButton
+        anchors.bottom: parent.bottom
+        anchors.left: parent.left
+        width: Math.min(defaultWidth, parent.width / 3 - Style.margins)
+        text: qsTr("Instructions")
+        visible: editorLoader.sourceUrl !== datasetEditor.noEditorPath
+        onClicked: instructionPanel.open();
     }
 
     OkCancelButtons {
         id: okButtons
         anchors.bottom: parent.bottom
-        anchors.left: parent.left
         anchors.right: parent.right
+        buttonsWidth: instructionsButton.width
+        width: buttonsWidth * 2 + spacing
         onCancelled: datasetEditor.close()
         onValidated:  {
-            if (editorLoader.sourceUrl !== "NoEditor.qml")
-                datasetContent.text = datasetEditor.listModelToJson(editorLoader.item.prototypeStack, editorLoader.item.mainModel)
-            saveDataset()
+            if(editorLoader.sourceUrl !== datasetEditor.noEditorPath) {
+                datasetContent.text = datasetEditor.listModelToJson(editorLoader.item.prototypeStack, editorLoader.item.mainModel);
+            }
+            saveDataset();
         }
     }
 
