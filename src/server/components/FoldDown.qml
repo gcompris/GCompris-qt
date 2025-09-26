@@ -115,6 +115,7 @@ Item {
                 color: Style.selectedPalette.text
                 selectedTextColor: Style.selectedPalette.highlightedText
                 selectionColor: Style.selectedPalette.highlight
+                activeFocusOnTab: filterButton.checked
             }
         }
 
