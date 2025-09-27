@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-07 00:38+0000\n"
-"PO-Revision-Date: 2025-09-24 15:03+0300\n"
+"PO-Revision-Date: 2025-09-25 14:12+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -273,13 +273,13 @@ msgstr ""
 #: activities/clickanddraw/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the selected points and draw"
-msgstr ""
+msgstr "יש ללחוץ על הנקודות הנבחרות כדי לצייר"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "clickgame"
 #: activities/clickgame/ActivityInfo.qml:18
 #, kde-format
 msgid "Catch the fish before they leave the aquarium."
-msgstr ""
+msgstr "יש לתפוס את הדגים לפני שהם יוצאים מהאקווריום."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "clockgame"
 #: activities/clockgame/ActivityInfo.qml:18
