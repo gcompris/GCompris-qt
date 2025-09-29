@@ -17,7 +17,7 @@ Item {
     id: underlinedTextInput
     height: Style.textInputHeight
 
-    property string defaultText: "Default text, must be set in calling element"
+    required property string defaultText
     property alias text: textInput.text
     property alias echoMode: textInput.echoMode
     property bool readOnlyText: false

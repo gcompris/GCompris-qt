@@ -412,6 +412,7 @@ Popup {
                     width: parent.width
                     activeFocusOnTab: true
                     focus: true
+                    defaultText: ""
                 }
 
                 UnderlinedTextInput {
@@ -419,6 +420,7 @@ Popup {
                     width: parent.width
                     activeFocusOnTab: true
                     focus: true
+                    defaultText: ""
                 }
 
                 StyledComboBox {

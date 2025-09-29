@@ -158,6 +158,7 @@ Popup {
             id: pupilName
             width: parent.width
             activeFocusOnTab: true
+            defaultText: ""
         }
 
         DefaultLabel {
