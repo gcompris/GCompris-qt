@@ -44,7 +44,7 @@ Item {
             SplitView.preferredWidth: minWidth
             SplitView.minimumWidth: minWidth
             SplitView.maximumHeight: parent.height
-            activityPane.foldModel: Master.allActivitiesModel
+            activityPane.foldModel: Master.activityWithDataModel
 
             calendar.onCalendarChanged: chartsContainer.children[bar.currentIndex].currentItem.executeRequest()
 
