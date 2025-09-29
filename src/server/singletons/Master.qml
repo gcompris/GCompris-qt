@@ -23,6 +23,7 @@ Item {
     property alias groupModel: groupModel
     property alias activityModel: activityModel
     property alias allActivitiesModel: allActivitiesModel
+    property alias activityWithDataModel: activityWithDataModel
     property alias datasetModel: datasetModel
     property alias filteredDatasetModel: filteredDatasetModel
     property bool trace: false
@@ -82,6 +83,7 @@ Item {
         function onActivityAdded() {
             loadAllActivities(activityModel);
             loadAllActivities(allActivitiesModel);
+            loadActivitiesWithData(activityWithDataModel);
         }
     }
 
@@ -92,6 +94,7 @@ Item {
     ListModel { id: filteredUserModel }     // For checkBoxes lists (multiselection)
     ListModel { id: activityModel }         // Contains current user or group activities
     ListModel { id: allActivitiesModel }
+    ListModel { id: activityWithDataModel }
     ListModel { id: datasetModel }
     ListModel { id: filteredDatasetModel }  // For checkBoxes lists (multiselection)
     ListModel { id: tmpModel }              // Used for temporary requests inside functions
@@ -454,6 +457,22 @@ Item {
         listModelSort(model, (a, b) => (a.activity_title.localeCompare(b.activity_title)))
     }
 
+    function loadActivitiesWithData(model) {
+        var clauses = []
+        clauses.push(`activity_.activity_id=result_.activity_id`)
+        modelFromRequest(model, `SELECT DISTINCT result_.activity_id, activity_name
+                         FROM result_, user_, activity_
+                        WHERE ` + clauses.join(" AND ")
+                         , { activity_checked: false, activity_title: "" }
+                         )
+        for (var i = 0; i < model.count; i++) {
+            var activity = model.get(i)
+            activity.activity_title = allActivities[activity.activity_name].title
+        }
+        listModelSort(model, (a, b) => (a.activity_title.localeCompare(b.activity_title)))
+
+    }
+
     function loadGroupActivities(model, groupId) {
         modelFromRequest(model, `SELECT * FROM _group_activity_result WHERE group_id=${groupId}`
                          , { activity_checked: false, activity_title: "" }
@@ -646,6 +665,7 @@ Item {
         storeActivitiesWithDatasetInDatabase()
         loadAllActivities(activityModel)
         loadAllActivities(allActivitiesModel)
+        loadActivitiesWithData(activityWithDataModel)
         loadDatasets()
     }
 
