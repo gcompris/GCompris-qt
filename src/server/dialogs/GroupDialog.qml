@@ -120,6 +120,7 @@ Popup {
             width: parent.width
             activeFocusOnTab: true
             readOnlyText: groupDialog.textInputReadOnly
+            defaultText: ""
         }
 
         DefaultLabel {
@@ -133,6 +134,7 @@ Popup {
             width: parent.width
             activeFocusOnTab: true
             readOnlyText: groupDialog.textInputReadOnly
+            defaultText: ""
         }
 
         OkCancelButtons {
