@@ -219,7 +219,7 @@ Item  {
                 id: inputField
                 width: fieldEdit.componentMaxWidth - popupButton.width
                 activeFocusOnTab: true
-                text: (typeof value === "undefined") ? "?" : jsonValue.toString()
+                defaultText: (typeof value === "undefined") ? "?" : jsonValue.toString()
                 clip: true
                 readOnlyText: true
                 onTextChanged: textInput.select(0,0)    // Scroll text left for long lines
@@ -378,7 +378,7 @@ Item  {
                         UnderlinedTextInput {
                             width: parent.width
                             activeFocusOnTab: true
-                            text: content
+                            defaultText: content
                             onTextChanged: stringModel.setProperty(index, "content", text)
                         }
                     }
