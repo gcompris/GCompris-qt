@@ -53,7 +53,7 @@ Item {
                 pupilPane.currentChecked = -1
                 if (activitiesView.groupId === -1) {
                     Master.unCheckModel(Master.groupModel, "group_checked")
-                    Master.loadAllActivities(activityPane.foldModel)
+                    Master.loadActivitiesWithData(activityPane.foldModel)
                 } else {
                     Master.filterUsers(pupilPane.foldModel, false)
                     Master.loadGroupActivities(activityPane.foldModel, activitiesView.groupId)
@@ -68,7 +68,7 @@ Item {
                 activitiesView.activityName = ""
                 activityPane.currentChecked = -1
                 if (activitiesView.userList.length === 0) {
-                    Master.loadAllActivities(activityPane.foldModel)
+                    Master.loadActivitiesWithData(activityPane.foldModel)
                     activityList = []
                 } else {
                     Master.loadUserActivities(activityPane.foldModel, userList, activityList, true)
