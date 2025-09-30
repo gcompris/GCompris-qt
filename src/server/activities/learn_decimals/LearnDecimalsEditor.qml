@@ -1,15 +1,16 @@
 /* GCompris - LearnDecimalsEditor.qml
  *
  * SPDX-FileCopyrightText: 2025 Ashutosh Singh <ashutoshas2610@gmail.com>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Ashutosh Singh <ashutoshas2610@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
 import QtQuick.Controls.Basic
-import QtQuick.Layouts
 
 import "../../singletons"
 import "../../components"
@@ -19,9 +20,7 @@ DatasetEditorBase {
     id: editor
     required property string textActivityData               // Json array stringified as stored in database (dataset_/dataset_content)
     property ListModel mainModel: ({})                      // The main ListModel, declared as a property for dynamic creation
-    readonly property var prototypeStack: [ mainPrototype, subPrototype ]   // A stack of two prototypes
-    property alias scrollMainLevel: scrollMainLevel         // To be accessible from mainToolBar
-    property alias scrollSubLevel: scrollSubLevel           // To be accessible from subToolBar
+    readonly property var prototypeStack: [ mainPrototype, editor.subPrototype ]   // A stack of two prototypes
 
     ListModel {
         id: mainPrototype
@@ -30,234 +29,102 @@ DatasetEditorBase {
         ListElement { name: "subLevels";    label: qsTr("SubLevels");   type: "model";      def: "[]" }
     }
 
-    ListModel {
-        id: subPrototype
+    property ListModel subPrototype: ListModel {
         property bool multiple: true
         // inputType is inserted in the global Component.onCompleted function.
         // We cannot implement "choice" directly as ListElement due to the fact
         // that the values are variables and only static values are accepted
         //ListElement { name: "inputType"; label: qsTr("Input Type"); type: "choice"; def: '["Fixed", "Range"]' }
         ListElement { name: "fixedValue"; label: qsTr("Fixed Number"); type: "boundedDecimal"; def: "0"; decimalRange: '[0,6]'; stepSize: 1; decimals: 1 }
-        ListElement { name: "minValue"; label: qsTr("Min Value"); type: "boundedDecimal"; def: "0"; decimalRange: '[0,6]'; stepSize: 1; decimals: 1 }
-        ListElement { name: "maxValue"; label: qsTr("Max Value"); type: "boundedDecimal"; def: "0"; decimalRange: '[0,6]'; stepSize: 1; decimals: 1 }
+        ListElement { name: "minValue"; label: qsTr("Minimum Value"); type: "boundedDecimal"; def: "0"; decimalRange: '[0,6]'; stepSize: 1; decimals: 1 }
+        ListElement { name: "maxValue"; label: qsTr("Maximum Value"); type: "boundedDecimal"; def: "0"; decimalRange: '[0,6]'; stepSize: 1; decimals: 1 }
     }
 
-    QtObject {
-        id: validator
-        function validateRange(fieldName, newValue, modelIndex) {
-            var currentRow = subRepeater.model.get(modelIndex)
-            var minValue = parseFloat(currentRow.minValue)
-            var maxValue = parseFloat(currentRow.maxValue)
-
-            if (fieldName === "minValue" && newValue >= maxValue && maxValue >= 0) {
-                console.info("Min cannot be greater than max")
-                return false
-            }
-            if (fieldName === "maxValue" && newValue <= minValue && minValue >= 0) {
-                console.info("Max cannot be less than min")
-                return false
-            }
-            return true
-        }
-    }
-    RowLayout {
+    StyledSplitView {
         anchors.fill: parent
 
-        Rectangle {
-            id: mainLevel
-            Layout.preferredWidth: 250
-            Layout.fillHeight: true
-            color: "snow"
-            border.width: 1
+        EditorBox {
+            id: levelEditor
+            SplitView.minimumWidth: levelEditor.minWidth
+            SplitView.preferredWidth: editor.width * 0.2
+            SplitView.fillHeight: true
+            editorPrototype: mainPrototype
+            editorModel: editor.mainModel
 
-            EditToolBar {
-                id: mainToolBar
-                aView: mainView
-                aPrototype: mainPrototype
-                aModel: mainModel
-                aScrollView: editor.scrollMainLevel
-
-                anchors.top: parent.top
-                anchors.left: parent.left
-                anchors.right: parent.right
+            fieldsComponent: Component {
+                Column {
+                    // Properties required by FieldEdit. Must be in the parent
+                    property ListModel currentPrototype: levelEditor.editorPrototype
+                    property ListModel currentModel: levelEditor.editorModel
+                    property int modelIndex: parent.index
+                    x: Style.margins
+                    y: Style.margins
+                    spacing: Style.smallMargins
+                    FieldEdit { name: "shuffle" }
+                    FieldEdit { name: "subLevels" }
+                }
             }
 
-            ScrollView {
-                id: scrollMainLevel
-                anchors.top: mainToolBar.bottom
-                anchors.left: parent.left
-                anchors.right: parent.right
-                anchors.bottom: parent.bottom
-                anchors.margins: 2
-                ScrollBar.vertical.policy: ScrollBar.AlwaysOn
-                ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
-                contentHeight: mainView.implicitHeight
-                clip: true
-
-                ColumnLayout {
-                    id: mainView
-                    property int current: -1
-                    width: parent.width
-                    spacing: 2
-
-                    Repeater {
-                        id: mainRepeater
-                        model: mainModel
-                        Item {
-                            id: mainLineItem
-                            Layout.fillWidth: true
-                            height: childrenRect.height
-
-                            Rectangle {
-                                anchors.fill: parent
-                                color: (mainView.current === index) ? Style.selectedPalette.highlight : (index % 2) ? Style.selectedPalette.base : Style.selectedPalette.alternateBase
-                                border.width: mainMouseArea.containsMouse ? 1 : 0
-                            }
-
-                            MouseArea {
-                                id: mainMouseArea
-                                anchors.fill: parent
-                                hoverEnabled: true
-                                propagateComposedEvents: true
-                                onClicked: mainView.current = index
-                            }
-
-                            ColumnLayout {
-                                id: fieldsLayout
-                                // Properties required by FieldEdit. Must be in the parent
-                                property ListModel currentPrototype: mainPrototype
-                                property ListModel currentModel: mainModel
-                                property int modelIndex: index
-                                width: parent.width
-                                spacing: 2
-                                FieldEdit { name: "shuffle" }
-                                FieldEdit { name: "subLevels" }
-                            }
-                        }
-                    }
-
-                    onCurrentChanged: {
-                        subRepeater.model = mainModel.get(mainView.current).subLevels
-                        subView.current = -1
-                    }
+            onCurrentChanged: {
+                subLevelEditor.current = -1;
+                if(current > -1 && current < editorModel.count) {
+                    subLevelEditor.editorModel = editor.mainModel.get(levelEditor.current).subLevels;
+                } else {
+                    subLevelEditor.editorModel = null;
                 }
             }
         }
 
-        Rectangle {
-            id: subLevel
-            Layout.fillWidth: true
-            Layout.fillHeight: true
-            color: "snow"
-            border.width: 1
+        EditorBox {
+            id: subLevelEditor
+            SplitView.minimumWidth: subLevelEditor.minWidth
+            SplitView.fillWidth: true
+            SplitView.fillHeight: true
+            editorPrototype: editor.subPrototype
+            editorModel: null // set in levelEditor onCurrentChanged
 
-            EditToolBar {
-                id: subToolBar
-                aView: subView
-                aPrototype: subPrototype
-                aModel: (typeof subRepeater.model !== "undefined") ? subRepeater.model : null
-                aScrollView: editor.scrollSubLevel
+            toolBarEnabled: levelEditor.current != -1
 
-                anchors.top: parent.top
-                anchors.left: parent.left
-                anchors.right: parent.right
-            }
+            fieldsComponent: Component {
+                Column {
+                    id: fieldsColumn
+                    // Properties required by FieldEdit. Must be in the parent
+                    property ListModel currentPrototype: subLevelEditor.editorPrototype
+                    property ListModel currentModel: subLevelEditor.editorModel
+                    property int modelIndex: parent.index
+                    x: Style.margins
+                    y: Style.margins
+                    spacing: Style.smallMargins
 
-            ScrollView {
-                id: scrollSubLevel
-                anchors.top: subToolBar.bottom
-                anchors.left: parent.left
-                anchors.right: parent.right
-                anchors.bottom: parent.bottom
-                anchors.margins: 2
-                ScrollBar.vertical.policy: ScrollBar.AlwaysOn
-                ScrollBar.horizontal.policy: ScrollBar.AsNeeded
-                contentHeight: subView.implicitHeight
-                clip: true
+                    readonly property bool fixedMode: currentModel && currentModel.get(fieldsColumn.modelIndex) ?
+                        currentModel.get(fieldsColumn.modelIndex).inputType === "fixed" : false
 
-                ColumnLayout {
-                    id: subView
-                    property int current: -1
-                    width: parent.width
-                    spacing: 2
-
-                    Repeater {  // this portion content needs to be changes for now
-                        id: subRepeater
-                        delegate: Item {
-                            id: subLineItem
-                            width: scrollSubLevel.width
-                            height: childrenRect.height
-
-                            Rectangle {
-                                anchors.fill: parent
-                                color: (subView.current === index) ? Style.selectedPalette.highlight : (index % 2) ? Style.selectedPalette.base : Style.selectedPalette.alternateBase
-                                border.width: subMouseArea.containsMouse ? 1 : 0
-                            }
-
-                            MouseArea {
-                                id: subMouseArea
-                                anchors.fill: parent
-                                hoverEnabled: true
-                                propagateComposedEvents: true
-                                onClicked: subView.current = index
-                            }
-
-                            ColumnLayout {
-                                id: subFieldsLayout
-                                // Properties required by FieldEdit. Must be in the parent
-                                property ListModel currentPrototype: subPrototype
-                                property ListModel currentModel: subRepeater.model
-                                property int modelIndex: index
-                                spacing: 2
-                                FieldEdit { name: "inputType" }
-                                FieldEdit {
-                                    name: "fixedValue"
-                                    visible: inputType === "fixed"
-                                }
-                                FieldEdit {
-                                    id: minValueSpinBox
-                                    name: "minValue"
-                                    visible: inputType === "range"
-                                    onFieldValueChanged: (fieldName, newValue, modelIndex) => {
-                                        console.info("Min value changed:", fieldName, "=", newValue, "at index", modelIndex)
-                                        acceptChange = validator.validateRange("minValue", parseFloat(newValue), modelIndex)
-                                    }
-                                }
-                                FieldEdit {
-                                    id: maxValueSpinBox
-                                    name: "maxValue"
-                                    visible: inputType === "range"
-                                    onFieldValueChanged: (fieldName, newValue, modelIndex) => {
-                                        console.info("Max value changed:", fieldName, "=", newValue, "at index", modelIndex)
-                                        acceptChange = validator.validateRange("maxValue", parseFloat(newValue), modelIndex)
-                                    }
-                                }
-                                Item {
-                                    Layout.fillWidth: true
-                                    Layout.preferredHeight: visible ? 40 : 0 // Adjust height as needed
-                                    visible: inputType === "fixed"
-                                }
+                    FieldEdit { name: "inputType" }
+                    FieldEdit {
+                        name: "fixedValue"
+                        visible: fieldsColumn.fixedMode
+                    }
+                    FieldEdit {
+                        id: minValueField
+                        name: "minValue"
+                        visible: !fieldsColumn.fixedMode
+                        onValueChanged: {
+                            if(parseFloat(value) > parseFloat(maxValueField.value)) {
+                                maxValueField.value = value;
                             }
                         }
-
+                    }
+                    FieldEdit {
+                        id: maxValueField
+                        name: "maxValue"
+                        visible: !fieldsColumn.fixedMode
+                        onValueChanged: {
+                            if(parseFloat(value) < parseFloat(minValueField.value)) {
+                                minValueField.value = value;
+                            }
+                        }
                     }
                 }
-                // Text {
-                //     id: errorLabel
-                //     anchors {
-                //         left: parent.left
-                //         right: parent.right
-                //         bottom: parent.bottom
-                //         center:parent.horizontalCenter
-                //         margins: 10
-                //     }
-                //     height: visible ? implicitHeight : 0
-                //     text:  "hey there this is text"//validator.errorMessage
-                //     color: "red"
-                //     font.pixelSize: 12
-                //     visible: true /*text !== ""*/
-                //     wrapMode: Text.WordWrap
-                // }
             }
         }
     }
@@ -269,7 +136,7 @@ DatasetEditorBase {
 
     Component.onCompleted: {
         // We insert dynamically here the choice
-        subPrototype.insert(0, {name: "inputType", label: qsTr("Input Type"), type: "choice", values: inputTypeChoices})
+        editor.subPrototype.insert(0, {name: "inputType", label: qsTr("Input Type"), type: "choice", values: inputTypeChoices})
 
         mainModel = datasetEditor.jsonToListModel(prototypeStack, JSON.parse(textActivityData))
     }
