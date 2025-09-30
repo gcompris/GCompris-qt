@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-07 00:38+0000\n"
-"PO-Revision-Date: 2025-09-28 12:34+0300\n"
+"PO-Revision-Date: 2025-09-29 13:06+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -476,6 +476,8 @@ msgid ""
 "Guide the number eater with the arrow keys to the required numbers and press "
 "the space bar to swallow them."
 msgstr ""
+"יש להכווין את זולל המספרים בעזרת מקשי החיצים לעבר המספרים הנחוצים וללחוץ על "
+"רווח כדי לזלול אותם."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-factors"
 #: activities/gnumch-factors/ActivityInfo.qml:18
@@ -484,6 +486,8 @@ msgid ""
 "Guide the number eater with the arrow keys to the factors of the displayed "
 "number and press space to swallow them."
 msgstr ""
+"יש להכווין את זולל המספרים בעזרת מקשי החיצים לעבר הגורמים של המספר המוצג "
+"וללחוץ על רווח כדי לזלול אותם."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-inequality"
 #: activities/gnumch-inequality/ActivityInfo.qml:19
@@ -492,6 +496,8 @@ msgid ""
 "Guide the number eater with the arrow keys to the numbers that are different "
 "from the ones displayed and press the space bar to swallow them."
 msgstr ""
+"יש להכווין את זולל המספרים בעזרת מקשי החיצים לעבר המספרים ששונים מאלו "
+"שמוצגים וללחוץ על רווח כדי לזלול אותם."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-multiples"
 #: activities/gnumch-multiples/ActivityInfo.qml:18
@@ -500,6 +506,8 @@ msgid ""
 "Guide the number eater with the arrow keys to the multiples of the displayed "
 "number and press space to swallow them."
 msgstr ""
+"יש להכווין את זולל המספרים בעזרת מקשי החיצים לעבר הכפולות של המספר המוצג "
+"וללחוץ על רווח כדי לזלול אותם."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-primes"
 #: activities/gnumch-primes/ActivityInfo.qml:18
@@ -508,12 +516,14 @@ msgid ""
 "Guide the number eater with the arrow keys to the prime numbers and press "
 "space to swallow them."
 msgstr ""
+"יש להכווין את זולל המספרים בעזרת מקשי החיצים לעבר המספרים הראשוניים הנחוצים "
+"וללחוץ על רווח כדי לזלול אותם."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_read"
 #: activities/graduated_line_read/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the value corresponding to the given spot on the graduated line."
-msgstr ""
+msgstr "יש למצוא את הערך המתאים לנקודה שסומנה על קו המספרים."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
 #: activities/graduated_line_use/ActivityInfo.qml:17
@@ -636,6 +646,8 @@ msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
 "the bar to the empty area to represent the decimal number."
 msgstr ""
+"יש לגרור את החץ כדי לבחור חלק מהסרגל ולגרור את החלק הנבחר של הסרגל לאזור "
+"הריק כדי לייצר את המספר העשרוני."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals_additions"
 #: activities/learn_decimals_additions/ActivityInfo.qml:17
@@ -752,6 +764,7 @@ msgid ""
 "Listen to the sound sequence played, and reproduce it by clicking on the "
 "xylophone's bars"
 msgstr ""
+"יש להאזין לרצף הצלילים המושמעים ולהפיק אותם על ידי לחיצה על קלידי הקסילופון"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-case-association-tux"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-case-association"
