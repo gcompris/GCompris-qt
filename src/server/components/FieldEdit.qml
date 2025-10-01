@@ -180,8 +180,12 @@ Item  {
     Component {
         id: boolInput
         StyledCheckBox {
-            checked: jsonValue
-            onCheckedChanged: aModel.setProperty(modelIndex, proto.name, checked)
+            checked: fieldEdit.value == "true"
+            onCheckedChanged: {
+                aModel.setProperty(modelIndex, proto.name, checked)
+                fieldEdit.value = checked
+                fieldEdit.jsonValue = checked
+            }
         }
     }
 
