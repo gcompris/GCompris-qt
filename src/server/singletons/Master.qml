@@ -17,7 +17,6 @@ import "qrc:/gcompris/src/server/server.js" as Server
 Item {
     property string activityBaseUrl: "qrc:/gcompris/src/server/activities"
     property var allActivities: ({})        // From ActivityInfoTree.menuTreeFull
-    property var availableActivities: []    // Activities with available DataDisplay.qml
     property alias userModel: userModel
     property alias filteredUserModel: filteredUserModel
     property alias groupModel: groupModel
@@ -675,10 +674,6 @@ Item {
         for (var key in Object.keys(activities)) {  // Convert numeric keys to short activity name keys
             var newKey = activities[key]['name'].slice(0,activities[key]['name'].lastIndexOf('/'))
             allActivities[newKey] = activities[key]
-            if (file.exists(`${activityBaseUrl}/${newKey}/DataDisplay.qml`))
-                availableActivities.push(newKey)
         }
-        // Sort by translated activity title
-        availableActivities.sort((a, b) => (allActivities[a].title.localeCompare(allActivities[b].title)))
     }
 }
