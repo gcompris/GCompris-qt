@@ -36,6 +36,13 @@ Item {
         id: chartsSplitView
         anchors.fill: parent
 
+        Connections {
+            target: Master
+            function onDataAddedToUser(user, activityName) {
+                selector.refreshCurrentResults();
+            }
+        }
+
         SelectorPanel {
             id: selector
             withGroups: bar.currentIndex === 1
@@ -65,9 +72,13 @@ Item {
                 Master.foldDownToList(activityPane, chartsView.activityList, modelId, checked)
                 chartsContainer.children[bar.currentIndex].currentItem.executeRequest();
             }
+            function refreshCurrentResults() {
+                chartsContainer.children[bar.currentIndex].currentItem.executeRequest();
+            }
         }
 
         Item {
+            id: midItem
             SplitView.fillWidth: true
             SplitView.fillHeight: true
             SplitView.minimumWidth: chartsSplitView.width * 0.3
