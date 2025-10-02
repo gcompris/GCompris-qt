@@ -75,6 +75,8 @@ Item {
     })
 
     signal netLog(string message)
+    // We don't really use the attributes for now, just in case we need them
+    signal dataAddedToUser(int user, string activityName)
 
     // Reload activityModel after adding an activity in database from database-controller
     Connections {
@@ -520,7 +522,11 @@ Item {
         userModel.setProperty(idx, "user_received", userModel.get(idx).user_received + 1)
         // Update filteredUserModel
         idx = findIndexInModel(filteredUserModel, function(item) { return item.user_id === userId })
+
         filteredUserModel.setProperty(idx, "user_received", filteredUserModel.get(idx).user_received + 1)
+
+        loadUserActivities(activityWithDataModel, [], [], true)
+        dataAddedToUser(userId, activityName)
     }
 
     function getActivityId(activityName) {

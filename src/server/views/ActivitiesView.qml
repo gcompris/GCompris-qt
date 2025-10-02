@@ -35,6 +35,14 @@ Item {
         id: splitActivitiesView
         anchors.fill: parent
 
+        Connections {
+            target: Master
+            function onDataAddedToUser(user, activityName) {
+                Master.loadUserActivities(selector.activityPane.foldModel, activitiesView.userList, activitiesView.activityList, true)
+                dailyReport.executeRequest()
+            }
+        }
+
         SelectorPanel {
             id: selector
             SplitView.preferredWidth: minWidth
