@@ -583,10 +583,14 @@ Item {
                                 "dataset_objective": objective,
                                 "dataset_difficulty": difficulty,
                                 "dataset_content": content,
-                                "dataset_checked": false
+                                // The dataset is checked by default as we
+                                // just created it so we want it to be selected
+                                "dataset_checked": true
                               })
             if (trace) console.warn("Dataset created:", datasetName, objective)
         }
+        // If we are in the "create datasets" view, we want the view to be refreshed
+        filterDatasets(activityId, true)
         return datasetId
     }
 
