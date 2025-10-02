@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-07 00:38+0000\n"
-"PO-Revision-Date: 2025-09-29 13:06+0300\n"
+"PO-Revision-Date: 2025-09-30 08:58+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -252,6 +252,8 @@ msgid ""
 "Click on a white chess piece and green boxes will appear to indicate all the "
 "movements that piece can make. Try and get the black king into checkmate."
 msgstr ""
+"לחיצה על כלי שחמט לבן תציג תיבות ירוקות שמציינות את כל המהלכים האפשריים "
+"שאותו הכי יכול לבצע. המטרה היא להגיע למצב שחמט מול המלך השחור."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chronos"
 #: activities/chronos/ActivityInfo.qml:22
@@ -267,7 +269,7 @@ msgstr ""
 msgid ""
 "Click on the required letter. You can listen to it again by clicking on the "
 "mouth."
-msgstr ""
+msgstr "יש ללחוץ על האות הרצויה. אפשר להאזין לה שוב בלחיצה על הפה."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "clickanddraw"
 #: activities/clickanddraw/ActivityInfo.qml:18
@@ -285,19 +287,19 @@ msgstr "יש לתפוס את הדגים לפני שהם יוצאים מהאקו�
 #: activities/clockgame/ActivityInfo.qml:18
 #, kde-format
 msgid "Drag and drop the needles of the clock to display the required time"
-msgstr ""
+msgstr "יש לגרור את מחוגי השעון כדי שיציג את השעה המבוקשת"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "color_mix"
 #: activities/color_mix/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the color by moving the sliders on the tubes of paint"
-msgstr ""
+msgstr "יש להתחקות אחרי הצבע על ידי הזזת המחוונים על שפופרות הצבע"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "color_mix_light"
 #: activities/color_mix_light/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the color by moving the sliders on the torches"
-msgstr ""
+msgstr "יש להתחקות אחרי הצבע על ידי הזזת המחוונים על הלפידים"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "colors"
 #: activities/colors/ActivityInfo.qml:18
@@ -361,13 +363,13 @@ msgstr ""
 #: activities/erase_2clic/ActivityInfo.qml:18
 #, kde-format
 msgid "Double tap or double click on the bricks to discover the hidden picture"
-msgstr ""
+msgstr "נגיעה או לחיצה כפולות על הלבנים תחשוף את התמונה המוסתרת"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "erase_clic"
 #: activities/erase_clic/ActivityInfo.qml:18
 #, kde-format
 msgid "Click or tap on the transparent bricks and discover the hidden picture."
-msgstr ""
+msgstr "יש ללחוץ או לגעת בלבנים השקופות ולגלות את התמונה המוסתרת."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_farm_animals"
 #: activities/explore_farm_animals/ActivityInfo.qml:18
