@@ -7128,13 +7128,6 @@ msgid "Chichén Itzá"
 msgstr "Chichén Itzá"
 
 #: activities/explore_monuments/resource/board/board1.qml:20
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
-#| "the Yucatan Peninsula in Mexico, between Valladolid and Merida. It was "
-#| "established before the period of Christopher Colombus and probably served "
-#| "as the religion center of Yucatan for a while."
 msgctxt "board1|"
 msgid ""
 "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
@@ -7142,10 +7135,6 @@ msgid ""
 "established before the period of Christopher Columbus and probably served as "
 "the religion center of Yucatan for a while."
 msgstr ""
-"Chichen Itza, což znamená „u ústí studny Itza“, je mayské město na "
-"poloostrově Yucatán v Mexiku mezi Valladolidem a Meridou. Město bylo "
-"založeno před obdobím Kryštofa Colomba a pravděpodobně na chvíli sloužilo "
-"jako náboženské centrum."
 
 #: activities/explore_monuments/resource/board/board1.qml:30
 #: activities/explore_monuments/resource/board/board1.qml:33
@@ -17069,18 +17058,11 @@ msgid ""
 msgstr "Po promoci se stal učitelem a začal metodu tajně učit v Institutu."
 
 #: activities/louis-braille/louis_braille_data.js:52
-#, fuzzy
-#| msgctxt "louis_braille_data|"
-#| msgid ""
-#| "He revised and extended braille to include mathematics, symbols, "
-#| "punctuations and music notations."
 msgctxt "louis_braille_data|"
 msgid ""
 "He revised and extended braille to include mathematics, symbols, punctuation "
 "and music notations."
 msgstr ""
-"Později rozšířil Braillovo písmo o symboly, matematická znaménka, "
-"interpunkci a hudební zápis."
 
 #: activities/louis-braille/louis_braille_data.js:57
 msgctxt "louis_braille_data|"
