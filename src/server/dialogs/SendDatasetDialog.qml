@@ -79,16 +79,51 @@ Popup {
             font.pixelSize: Style.textSize
             font.bold: true
             wrapMode: Text.WordWrap
-            text: sendDatasetDialog.sendMode ? qsTr("Do you want to send the dataset to selected users?")
-            : qsTr("Are you sure you want to remove the dataset from selected users?")
+            text: sendDatasetDialog.sendMode ? qsTr("Do you want to send the dataset to selected pupils?")
+            : qsTr("Are you sure you want to remove the dataset from selected pupils?")
+        }
+
+        Rectangle {
+            id: listHeader
+            width: parent.width
+            height: Style.lineHeight
+            color: Style.selectedPalette.base
+            border.width: Style.defaultBorderWidth
+            border.color: Style.selectedPalette.accent
+            anchors.top: titleText.bottom
+            anchors.topMargin: Style.margins
+
+            StyledCheckBox {
+                id: checkAllButton
+                anchors.left: parent.left
+                anchors.margins: Style.margins
+                linkedGroup: pupilButtonsGroup
+            }
+
+            ButtonGroup {
+                id: pupilButtonsGroup
+                exclusive: false
+            }
+
+            DefaultLabel {
+                anchors {
+                    verticalCenter: parent.verticalCenter
+                    left: checkAllButton.right
+                    right: parent.right
+                    margins: Style.margins
+                }
+                horizontalAlignment: Text.AlignLeft
+                font.bold: true
+                text: qsTr("Pupils")
+            }
         }
 
         Rectangle {
             id: groupNamesRectangle
             width: parent.width
-            anchors.top: titleText.bottom
+            anchors.top: listHeader.bottom
             anchors.bottom: bottomButtons.top
-            anchors.margins: Style.margins
+            anchors.bottomMargin: Style.margins
             color: Style.selectedPalette.alternateBase
 
             ListView {
@@ -114,11 +149,10 @@ Popup {
 
                 delegate: StyledCheckBox {
                     id: groupSelect
-                    //property int group_Id: group_id
                     width: groupNamesListView.width
                     text: user_name
                     checked: user_checked
-                    //onCheckedChanged: tmpGroupModel.setProperty(index, "group_checked", checked)
+                    ButtonGroup.group: pupilButtonsGroup
                 }
             }
         }
