@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-01-22 17:22+0100\n"
+"PO-Revision-Date: 2025-10-04 19:27+0200\n"
 "Last-Translator: Jan Papez (honyczek) <honyczek@centrum.cz>\n"
 "Language-Team: Czech <kde-i18n-cs@kde.org>\n"
 "Language: cs\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 25.03.70\n"
+"X-Generator: Lokalize 25.08.1\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -7135,6 +7135,10 @@ msgid ""
 "established before the period of Christopher Columbus and probably served as "
 "the religion center of Yucatan for a while."
 msgstr ""
+"Chichen Itza, což znamená „u ústí studny Itza“, je mayské město na "
+"poloostrově Yucatán v Mexiku mezi Valladolidem a Meridou. Město bylo "
+"založeno před obdobím Kryštofa Colomba a pravděpodobně na chvíli sloužilo "
+"jako náboženské centrum Yucatanu."
 
 #: activities/explore_monuments/resource/board/board1.qml:30
 #: activities/explore_monuments/resource/board/board1.qml:33
@@ -8027,7 +8031,7 @@ msgstr "Klikni na umístění dané památky."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "Zakázané město"
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8047,7 +8051,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "Lešanský Buddha"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8067,7 +8071,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:42
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr ""
+msgstr "Palác Potala"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8087,7 +8091,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "Terakotová armáda"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8104,7 +8108,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr ""
+msgstr "Pagody Slunce a Měsíce"
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8124,7 +8128,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:75
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr ""
+msgstr "Věže Diaolou"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8143,18 +8147,18 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:85
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr ""
+msgstr "Čínské památky"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
-msgstr ""
+msgstr "Klikni na umístění dané památky."
 
 #: activities/explore_monuments/resource/board/board8.qml:17
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "Pantheon"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8176,7 +8180,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "Milánský dóm"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8196,7 +8200,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:42
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr ""
+msgstr "Katedrála ve Florencii"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8217,7 +8221,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:53
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr ""
+msgstr "Šikmá věž v Pise"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8237,7 +8241,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr ""
+msgstr "Bazilika svatého Marka"
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -8258,7 +8262,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr ""
+msgstr "Pompeje"
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -8278,18 +8282,18 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:85
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr ""
+msgstr "Italské památky"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
-msgstr ""
+msgstr "Klikni na umístění dané památky."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr ""
+msgstr "Hrad Himedži"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -8307,7 +8311,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr ""
+msgstr "Památník míru v Hirošimě"
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -8328,7 +8332,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr ""
+msgstr "Svatyně Arakura Fuji Sengen"
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -8349,7 +8353,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr ""
+msgstr "Hrad Šuri Okinawa"
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -8369,12 +8373,12 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board9.qml:63
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr ""
+msgstr "Japonské památky"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
-msgstr ""
+msgstr "Klikni na umístění dané památky."
 
 #. Activity title
 #: activities/explore_world_animals/ActivityInfo.qml:19
@@ -14890,7 +14894,7 @@ msgstr "Je potřeba dělení."
 #: activities/guess24/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "All operators required."
-msgstr ""
+msgstr "Jsou vyžadovány všechny operátory."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -17063,6 +17067,8 @@ msgid ""
 "He revised and extended braille to include mathematics, symbols, punctuation "
 "and music notations."
 msgstr ""
+"Revidoval a rozšířil Braillovo písmo o matematiku, symboly, interpunkci a "
+"hudební zápis."
 
 #: activities/louis-braille/louis_braille_data.js:57
 msgctxt "louis_braille_data|"
@@ -17095,7 +17101,7 @@ msgstr ""
 #: activities/magic-hat-minus/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr ""
+msgstr "Magický klobouk (odčítání)"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -17188,7 +17194,7 @@ msgstr "%1x"
 #: activities/magic-hat-plus/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr ""
+msgstr "Magický klobouk (sčítání)"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
