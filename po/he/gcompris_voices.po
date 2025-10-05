@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-13 02:28+0000\n"
-"PO-Revision-Date: 2025-09-30 08:58+0300\n"
+"PO-Revision-Date: 2025-10-04 11:01+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -219,7 +219,7 @@ msgstr ""
 #: activities/categorization/ActivityInfo.qml:18
 #, kde-format
 msgid "Categorize the items into the correct group"
-msgstr ""
+msgstr "יש לסווג את הפריטים לקבוצות הנכונות"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
 #: activities/checkers/ActivityInfo.qml:18
@@ -259,7 +259,7 @@ msgstr ""
 #: activities/chronos/ActivityInfo.qml:22
 #, kde-format
 msgid "Slide the pictures into the order that tells the story"
-msgstr ""
+msgstr "יש להחליק את התמונות בסדר הנכון שמספר את הסיפור"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "click_on_letter_up"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "click_on_letter"
@@ -312,7 +312,7 @@ msgstr "יש ללחוץ על הצבע הנכון"
 #, kde-format
 msgid ""
 "Select the correct comparator sign for each pair of numbers in the list."
-msgstr ""
+msgstr "יש לבחור את סימן ההשוואה הנכון לכל צמד מספרים ברשימה."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
@@ -357,7 +357,7 @@ msgstr "יש לספור את הרכיבים על ידי סידורים ואז ה
 #: activities/erase/ActivityInfo.qml:18
 #, kde-format
 msgid " Clear the window with your sponge and discover the hidden picture."
-msgstr ""
+msgstr "יש לנקות את החלון עם הספוג שלך ולגלות את התמונה המוסתרת."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "erase_2clic"
 #: activities/erase_2clic/ActivityInfo.qml:18
@@ -1073,7 +1073,7 @@ msgstr "יש להשתמש בכלי הציור כדי לייצר מחדש שיק�
 #: activities/renewable_energy/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the different stages that go to make up the power supply."
-msgstr ""
+msgstr "יש ללחוץ על השלבים השונים שמרכיבים את שרשרת אספקת החשמל."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "reversecount"
 #: activities/reversecount/ActivityInfo.qml:18
