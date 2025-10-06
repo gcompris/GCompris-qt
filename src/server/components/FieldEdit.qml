@@ -356,9 +356,11 @@ Item  {
 
                         UnderlinedTextInput {
                             required property string content
+                            required property int index
                             width: parent.width
                             activeFocusOnTab: true
                             defaultText: content
+                            onTextChanged: stringModel.setProperty(index, "content", text)
                         }
                     }
                 }
