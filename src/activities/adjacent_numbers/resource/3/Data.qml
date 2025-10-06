@@ -10,8 +10,6 @@ Data {
     difficulty: 4
     data: [
         {
-            //~ we show two numbers and the third one needs to be found (i.e.: 10, 20, ?)
-            "title": qsTr("Find the next number."),
             "lowerBound": 0,
             "upperBound": 80, // inclusive
             "step": 1,
@@ -23,8 +21,6 @@ Data {
             "numberPropositions": 4
         },
         {
-            //~ we show two numbers and the first one needs to be found (i.e.: ?, 10, 20)
-            "title": qsTr("Find the previous number."),
             "lowerBound": 0,
             "upperBound": 80, // inclusive
             "step": 1,
@@ -36,8 +32,6 @@ Data {
             "numberPropositions": 4
         },
         {
-            //~ we show two numbers and the one in the middle needs to be found (i.e.: 10, ?, 30)
-            "title": qsTr("Find the in-between number."),
             "lowerBound": 0,
             "upperBound": 80, // inclusive
             "step": 1,
@@ -49,8 +43,6 @@ Data {
             "numberPropositions": 4
         },
         {
-            //~ we show one number and the first and third need to be found (i.e.: ?, 20, ?)
-            "title": qsTr("Find the missing numbers."),
             "lowerBound": 0,
             "upperBound": 80, // inclusive
             "step": 1,
@@ -62,8 +54,6 @@ Data {
             "numberPropositions": 8
         },
         {
-            //~ we show two of four numbers and the two last need to be found
-            "title": qsTr("Find the next numbers."),
             "lowerBound": 0,
             "upperBound": 97, // inclusive
             "step": 1,
@@ -75,8 +65,6 @@ Data {
             "numberPropositions": 5
         },
         {
-            //~ we show two of four numbers and two first need to be found
-            "title": qsTr("Find the previous numbers."),
             "lowerBound": 0,
             "upperBound": 97, // inclusive
             "step": 1,
@@ -88,8 +76,6 @@ Data {
             "numberPropositions": 5
         },
         {
-            //~ we show two of four numbers, first and last need to be found
-            "title": qsTr("Find the missing numbers."),
             "lowerBound": 0,
             "upperBound": 97, // inclusive
             "step": 1,
@@ -101,8 +87,6 @@ Data {
             "numberPropositions": 7
         },
         {
-            //~ we show two of four numbers and ones in the middle need to be found
-            "title": qsTr("Find the in-between numbers."),
             "lowerBound": 0,
             "upperBound": 97, // inclusive
             "step": 1,
