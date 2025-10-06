@@ -10,8 +10,6 @@ Data {
     difficulty: 3
     data: [
         {
-            //~ we show two numbers and the third one needs to be found
-            "title": qsTr("Find the next number."),
             "lowerBound": 0,
             "upperBound": 18, // inclusive
             "step": 1,
@@ -23,8 +21,6 @@ Data {
             "numberPropositions": 5
         },
         {
-            //~ we show two of three numbers and the first one needs to be found
-            "title": qsTr("Find the previous number."),
             "lowerBound": 0,
             "upperBound": 18, // inclusive
             "step": 1,
@@ -36,8 +32,6 @@ Data {
             "numberPropositions": 5
         },
         {
-            //~ we show two of three numbers and the one in the middle needs to be found
-            "title": qsTr("Find the in-between number."),
             "lowerBound": 0,
             "upperBound": 18, // inclusive
             "step": 1,
@@ -49,8 +43,6 @@ Data {
             "numberPropositions": 5
         },
         {
-            //~ we show one of three numbers and first and third need to be found
-            "title": qsTr("Find the missing numbers."),
             "lowerBound": 0,
             "upperBound": 18, // inclusive
             "step": 1,

@@ -20,7 +20,7 @@ var expectedAnswer // The expected answer, as an array of strings
 // Check if level data contains all the expected keys
 function hasMandatoryKeys(level, levelIndex)
 {
-    var expectedKeys = ["title", "lowerBound", "upperBound", "step", "numberShown",
+    var expectedKeys = ["lowerBound", "upperBound", "step", "numberShown",
             "indicesToGuess", "numberRandomLevel", "fixedLevels", "numberPropositions"]
     var missingKeys = []
     for(const key of expectedKeys) {
@@ -115,6 +115,48 @@ function start(items_) {
 function stop() {
 }
 
+function setTitleText() {
+    items.numberOfNumbersToFind = dataset[currentExercise].indicesToGuess.length;
+    var numberOfNumbers = dataset[currentExercise].numberShown - 1; // count from 0 to match index in indicesToGuess
+    var isAtStart = dataset[currentExercise].indicesToGuess.indexOf(0) != -1;
+    var isAtEnd = dataset[currentExercise].indicesToGuess.indexOf(numberOfNumbers) != -1;
+    var isAtStartOnly = false
+    var isAtEndOnly = false
+    if(isAtStart && !isAtEnd) {
+        // check if all numbers to find are at the beginning
+        for(var i = 0; i < items.numberOfNumbersToFind; i++) {
+            if(dataset[currentExercise].indicesToGuess.indexOf(i) === -1) {
+                isAtStartOnly = false;
+                break;
+            }
+            isAtStartOnly = true;
+        }
+    } else if(!isAtStart && isAtEnd) {
+        // check if all numbers to find are at the end
+        for(var j = numberOfNumbers; j > numberOfNumbers - items.numberOfNumbersToFind; j--) {
+            if(dataset[currentExercise].indicesToGuess.indexOf(j) === -1) {
+                isAtEndOnly = false;
+                break;
+            }
+            isAtEndOnly = true;
+        }
+    }
+
+    if(isAtStartOnly) {
+        items.instruction.text = items.titlePrevNumbers;
+        return
+    } else if(isAtEndOnly) {
+        items.instruction.text = items.titleNextNumbers;
+        return
+    } else if(!isAtStart && !isAtEnd) {
+        items.instruction.text = items.titleMiddleNumbers;
+        return
+    } else {
+        items.instruction.text = items.titleMissingNumbers;
+        return
+    }
+}
+
 function initLevel() {
     items.bar.level = currentExercise + 1
 
@@ -124,11 +166,12 @@ function initLevel() {
     items.answerCompleted = false
     items.buttonsEnabled = true
 
-    items.instruction.text = dataset[currentExercise].title
-
     // Sublevel setup
     if(items.score.currentSubLevel === 0) // we need to generate the sublevels
     {
+        // Set title only once per level
+        setTitleText();
+
         subLevelStartTiles = []
         if(items.randomSubLevels) {
             const lowerBound = dataset[currentExercise].lowerBound

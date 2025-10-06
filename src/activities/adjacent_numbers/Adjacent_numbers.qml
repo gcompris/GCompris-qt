@@ -47,6 +47,26 @@ ActivityBase {
             property alias goodAnswerSound: goodAnswerSound
             property alias badAnswerSound: badAnswerSound
 
+            property int numberOfNumbersToFind: 0
+
+            // List of possible instruction text
+            //: One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
+            //~ singular Find the previous number
+            //~ plural Find the previous numbers
+            property string titlePrevNumbers: qsTr("Find the %n previous number(s).", "", numberOfNumbersToFind)
+            //: One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
+            //~ singular Find the next number
+            //~ plural Find the next numbers
+            property string titleNextNumbers: qsTr("Find the %n next number(s).", "", numberOfNumbersToFind)
+            //: One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
+            //~ singular Find the in-between number
+            //~ plural Find the in-between numbers
+            property string titleMiddleNumbers: qsTr("Find the %n in-between number(s)", "", numberOfNumbersToFind)
+            //: More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
+            //~ singular Find the missing number
+            //~ plural Find the missing numbers
+            property string titleMissingNumbers: qsTr("Find the %n missing numbers", "", numberOfNumbersToFind)
+
             // Activity options
             property bool randomSubLevels: true // not presented to the user
             property bool immediateAnswer: true
