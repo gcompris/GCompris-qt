@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-07 00:38+0000\n"
-"PO-Revision-Date: 2025-10-04 11:01+0300\n"
+"PO-Revision-Date: 2025-10-05 11:27+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -122,6 +122,7 @@ msgid ""
 "Move each puzzle piece, to obtain the completed puzzle. You can change their "
 "orientation by clicking on the arrows."
 msgstr ""
+"יש להזיז כל חלק בפאזל עד להשלמתו. אפשר לשנות את הכיוון בלחיצה על החיצים."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_wordprocessor"
 #: activities/baby_wordprocessor/ActivityInfo.qml:18
@@ -197,6 +198,9 @@ msgid ""
 "only once in a row and in a column. The numbers in the cells of a cage must "
 "produce the given result when combined using the given operator."
 msgstr ""
+"יש לבחור מספר וללחוץ על מקום היעד שלו. כל מספר חייב להופיע רק פעם אחת בכל "
+"שורה ועמודה. המספרים בתאים של כלוב חייבים להפיק את התוצאה שצוינה כשמבצעים "
+"עליהם את הפעולה שצוינה."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18
@@ -321,6 +325,8 @@ msgid ""
 " Click on each item in turn, in the blue frame, and move them to reproduce "
 "the pattern from the pink frame."
 msgstr ""
+"יש ללחוץ על כל אחד מהפריטים מהמסגרת הכחולה בתורו ואז להעביר אותם כדי לייצר "
+"את התבנית מהמסגרת הוורודה מחדש."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "details"
 #: activities/details/ActivityInfo.qml:21
@@ -415,6 +421,8 @@ msgid ""
 "release its space. You must put all the pieces in the correct order. The "
 "numbers on the pieces can help you."
 msgstr ""
+"יש ללחוץ או לגרור את רכיב שליד מקום פנוי, הרכיב יזוז וישחרר את מקומו. יש "
+"להציב את כל החלקים בסדר הנכון. המספרים על החלקים עשויים לסייע לך."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "find_the_day"
 #: activities/find_the_day/ActivityInfo.qml:18
@@ -658,6 +666,8 @@ msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
 "the bar to the empty area to represent the result of the addition."
 msgstr ""
+"יש לגרור את החץ כדי לבחור חלק מהסרגל ולגרור את החלק הנבחר של הסרגל לאזור "
+"הריק כדי לייצר את תוצאת החיבור."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals_subtractions"
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:17

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-09-20 16:24+0300\n"
+"PO-Revision-Date: 2025-10-05 12:51+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 25.08.0\n"
+"X-Generator: Lokalize 25.08.1\n"
 "X-Qt-Contexts: true\n"
 "X-Poedit-Bookmarks: -1,2919,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
@@ -2978,9 +2978,9 @@ msgid ""
 "in a rectangle containing two columns of three dots each. As seen on the "
 "left, each dot is referenced by a number from 1 to 6."
 msgstr ""
-"כל אות בברייל, או תא, מורכבת ממקומות לשש נקודות, מסודרות בריבוע המכיל שתי "
+"כל אות או תא בברייל, מורכבים ממקומות לשש נקודות, שמסודרות בריבוע עם שתי "
 "עמודות של שלוש נקודות בכל אחת. כמו שאפשר לראות משמאל, לכל נקודה יש סימון של "
-"מספר מ1 עד 6."
+"מספר מ־1 עד 6."
 
 #: activities/braille_alphabets/FirstScreen.qml:87
 msgctxt "FirstScreen|"
@@ -3326,7 +3326,7 @@ msgstr "לבחור יום רביעי בין ה־15 וה 22 בחודש"
 #: activities/calendar/calendar_dataset.js:131
 msgctxt "calendar_dataset|"
 msgid "Select a Thursday between days 26 and 31 of the given month"
-msgstr "לבחור יום חמישי בין  היום ה־26 וה 31 בחודש"
+msgstr "לבחור יום חמישי בין היום ה־26 וה 31 בחודש"
 
 #: activities/calendar/calendar_dataset.js:135
 msgctxt "calendar_dataset|"
@@ -5988,7 +5988,7 @@ msgid ""
 "output for a 2 inputs XOR gate is:"
 msgstr ""
 "פלט של שערי XOR יהיה 1 אם מספר ה־1 בקלט הוא אי-זוגי ו־0 אם מספר ה־1 בקלט "
-"זוגי.בפעילות זו מוצג שער XOR בעל שני קלטים. התוצאה לשער XOR בעל שני קלטים "
+"זוגי. בפעילות זו מוצג שער XOR בעל שני קלטים. התוצאה לשער XOR בעל שני קלטים "
 "היא:"
 
 #: activities/digital_electricity/components/XorGate.qml:23
@@ -6164,7 +6164,7 @@ msgctxt "TutorialDataset|"
 msgid ""
 "For a more detailed description about the NAND gate, select it and click on "
 "the info button."
-msgstr "למידע נוסף לגבי שער הNAND, לבחור אותו וללחוץ על כפתור המידע."
+msgstr "למידע נוסף לגבי שער NAND, יש לבחור אותו וללחוץ על כפתור המידע."
 
 #: activities/digital_electricity/TutorialDataset.qml:218
 msgctxt "TutorialDataset|"
@@ -6262,7 +6262,7 @@ msgctxt "TutorialDataset|"
 msgid ""
 "For a more detailed description about the NOR gate, select it and click on "
 "the info button."
-msgstr "למידע נוסף לגבי שער הNOR, לבחור אותו וללחוץ על כפתור המידע."
+msgstr "למידע נוסף לגבי שער NOR, יש לבחור אותו וללחוץ על כפתור המידע."
 
 #: activities/digital_electricity/TutorialDataset.qml:357
 msgctxt "TutorialDataset|"
@@ -7433,8 +7433,8 @@ msgid ""
 "century."
 msgstr ""
 "אמפיתאטרון רומאי זה מתוארך למאה הראשונה לפני הספירה והיה בראשיתו אתר לקרבות "
-"גלדיאטורים ומרוצי כרכרות בתקופה העתיקה. שונה פעמים רבות, שופץ לבסוף במהלך "
-"המאה ה19."
+"גלדיאטורים ומרוצי כרכרות בתקופה העתיקה. שונה פעמים רבות, השיפוץ האחרון שלו "
+"נערך במהלך המאה ה־19."
 
 #: activities/explore_monuments/resource/board/board3.qml:73
 #: activities/explore_monuments/resource/board/board3.qml:76
@@ -7560,9 +7560,9 @@ msgid ""
 "tourist attractions in Germany."
 msgstr ""
 "טירת סיפורי האגדות המיטבית, טירת נאושוָּנסטיין ניצבת על גבעה סלעית בדרום מערב "
-"בוואריה. היא הייתה ההשראה לטירת היפיפייה הנרדמת בדיסנילנד. הטירה הוזמנה על "
-"ידי המלך לודוויג השני מבוואריה שהוכרז בלתי-שפוי כשבניית הטירה כמעט הסתיימה "
-"ב1886 ונמצא מת מספר ימי לאחר מכן. טירת נאושוָּנסטיין היא הבניין המצולם ביותר "
+"בוואריה. היא הייתה ההשראה לטירת היפהפייה הנרדמת בדיסנילנד. הטירה הוזמנה על "
+"ידי המלך לודוויג השני מבוואריה שהוכרז בלתי שפוי כשבניית הטירה כמעט הסתיימה ב־"
+"1886 ונמצא מת מספר ימי לאחר מכן. טירת נאושוָּנסטיין היא הבניין המצולם ביותר "
 "במדינה ואחת האטרקציות התיירותיות הפופולריות ביותר בגרמניה."
 
 #: activities/explore_monuments/resource/board/board4.qml:29
@@ -7599,9 +7599,9 @@ msgid ""
 "Europe."
 msgstr ""
 "שער ברנדנבורג הוא שער העיר היחידי ששרד בברלין ומסמל את האיחוד מחדש של מזרח "
-"ומערב ברלין. נבנה במאה ה18, שער ברנדנבורג הוא הכניסה לאונטר דן לינדן, שדרת "
-"עצי התרזה המלבבת שבעבר הוליכה היישר של השליטים הפרוסים. הוא חשב לאחד מציוני "
-"הדרך המפורסמים באירופה."
+"ומערב ברלין. נבנה במאה ה־18, שער ברנדנבורג הוא הכניסה לאונטר דן לינדן, שדרת "
+"עצי התרזה המלבבת שבעבר הוליכה הישר לארמון השליטים הפרוסים. הוא נחשב לאחד "
+"מציוני הדרך המפורסמים באירופה."
 
 #: activities/explore_monuments/resource/board/board4.qml:51
 #: activities/explore_monuments/resource/board/board4.qml:54
@@ -7752,7 +7752,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board5.qml:54
 msgctxt "board5|"
 msgid "Castle Clinton"
-msgstr "טירת קלינטון"
+msgstr "מבצר קלינטון"
 
 #: activities/explore_monuments/resource/board/board5.qml:52
 msgctxt "board5|"
@@ -7763,10 +7763,10 @@ msgid ""
 "protect New York from a British invasion during the War of 1812, and was "
 "dedicated as a national monument in 1946."
 msgstr ""
-"מבצר אבן-חול עגול זה, היושב בתחתית האי מנהטן קודם לאי אליס בכ50 שנה כנקודת "
-"הבדיקה למהגרים הראשונה בארצות הברית. טירת קלינטון (nps.gov/cacl) נבנתה במקור "
-"כמבצר להגן על ניו-יורק מהבריטים במהלך המלחמה של 1812, והוקדשה כאתר לאומי "
-"ב1946."
+"מבצר אבן חול עגול זה, היושב בתחתית האי מנהטן קודם לאי אליס בכ־50 שנה כנקודת "
+"הבדיקה למהגרים הראשונה בארצות הברית. מבצר קלינטון (nps.gov/cacl) נבנתה במקור "
+"כמבצר להגן על ניו־יורק מהבריטים במהלך המלחמה של 1812, והוקדשה כאתר לאומי ב־"
+"1946."
 
 #: activities/explore_monuments/resource/board/board5.qml:62
 #: activities/explore_monuments/resource/board/board5.qml:65
@@ -7856,12 +7856,12 @@ msgid ""
 msgstr ""
 "האנדרטה הלאומית לנבחו היא אנדרטה לאומית שנמצאת בתוך החלק הצפון מערבי של "
 "הטריטוריה הלאומית של הנָבָחוֹ בצפון אריזונה, אשר הוקם כדי לשמר שלושה אתרי "
-"הריסות  שמורים היטב על המצוק של שושלת פואבלואן: קיטסיל, בּיטָטָהקין ובית "
-"הכתובות (צאח בּיקין). האנדרטה ממוקמת גבוה על מישור שונטו, משקיפה על קניון "
-"צֵגי, מערבית לקייֵנטה, אריזונה. היא מכילה מרכז מבקרים עם מוזיאון, שני מסלולים "
-"קצרים להדרכה עצמאית במרומי המסה, שני אתרי לינה קטנים ואזור לפיקניק. מבקרים "
-"יכולים להשתתף בסיורים חינמיים של הסיירים (ריינג׳רים) במצוק קיטסיל וחורבות "
-"בֵּטאטקין. אתר בית הכתובות נמצא עוד מערבה והוא סגור כרגע לקהל."
+"הריסות שמורים היטב על המצוק של שושלת פואבלואן: קיטסיל, בּיטָטָהקין ובית הכתובות "
+"(צאח בּיקין). האנדרטה ממוקמת גבוה על מישור שונטו, משקיפה על קניון צֵגי, מערבית "
+"לקייֵנטה, אריזונה. היא מכילה מרכז מבקרים עם מוזיאון, שני מסלולים קצרים להדרכה "
+"עצמאית במרומי המסה, שני אתרי לינה קטנים ואזור לפיקניק. מבקרים יכולים להשתתף "
+"בסיורים חינמיים של הסיירים (ריינג׳רים) במצוק קיטסיל וחורבות בֵּטאטקין. אתר בית "
+"הכתובות נמצא עוד מערבה והוא סגור כרגע לקהל."
 
 #: activities/explore_monuments/resource/board/board5.qml:106
 #: activities/explore_monuments/resource/board/board5.qml:109
@@ -8475,7 +8475,7 @@ msgid ""
 msgstr ""
 "מצודת שורי, שנמצאת בעיר נהה, במחוז אוקינאווה שביפן, היא אתר מורשת עולמית של "
 "אונסק״ו וסמל להיסטוריה התרבותית העשירה של ממלכת ריוקו. המצודה, נבנתה במקור "
-"במאה ה־14, שירתה כמרכז הפוליטי, התרבותי  והחברתי של הממלכה במשך עשרות שנים. "
+"במאה ה־14, שירתה כמרכז הפוליטי, התרבותי והחברתי של הממלכה במשך עשרות שנים. "
 "ידועה בזכות השילוב הייחודי בין הסגנון האדריכלי הסיני ליפני, העיטורים "
 "המהודרים ומקום התצפית הייחודי שלה. על אף שנחרבה במהלך מלחמת העולם השנייה, "
 "היא נבנתה בקפדנות מחדש והפכה ליעד תיירותי מוביל. למרבה הצער, רוב המצודה עלתה "
@@ -8993,7 +8993,7 @@ msgid ""
 "for rock n' roll music. This music features vocalists, guitars, and drums."
 msgstr ""
 "לארצות הברית יש גם מגוון גדול של סגנונות מוזיקליים, אבל אולי הסוג המפורסם "
-"ביותר היא מוזיקת רוק-אנ-רול. במוזיקה זו  משתמשים בזמרים, גיטרות ותופים."
+"ביותר היא מוזיקת רוק-אנ-רול. במוזיקה זו משתמשים בזמרים, גיטרות ותופים."
 
 #: activities/explore_world_music/resource/board/board1.qml:130
 msgctxt "board1|"
@@ -9261,7 +9261,8 @@ msgid ""
 "Click on a pair of family members which have the given relationship."
 msgstr ""
 "מופיע עץ משפחה עם כמה הוראות.\n"
-"העיגולים מחוברים בקווים לסימוןהיחסים. זוגות נשואים מסומנים עם טבעת על הקשר.\n"
+"העיגולים מחוברים בקווים לסימון היחסים. זוגות נשואים מסומנים עם טבעת על "
+"הקשר.\n"
 "יש ללחוץ על זוג בני משפחה שמתאימים ליחסים המוצגים."
 
 #. Activity title
@@ -9389,7 +9390,7 @@ msgstr "למצוא את היום בשבוע 17 ימים לפני ה־16 באוג
 #: activities/find_the_day/find_the_day_dataset.js:111
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 2 weeks and 3 days after January 12th."
-msgstr "למצוא את התאריך שבועיים ו3 ימים אחרי ה־12 בינואר."
+msgstr "למצוא את התאריך שבועיים ו־3 ימים אחרי ה־12 בינואר."
 
 #: activities/find_the_day/find_the_day_dataset.js:115
 msgctxt "find_the_day_dataset|"
@@ -12060,7 +12061,7 @@ msgstr "איסטנבול"
 #: activities/geo-country/resource/board/board5_0.qml:200
 msgctxt "board5_0|"
 msgid "Isparta"
-msgstr "איסםרטה"
+msgstr "איספרטה"
 
 #. Province of Turkey: Eskişehir
 #: activities/geo-country/resource/board/board5_0.qml:207
@@ -14163,7 +14164,7 @@ msgstr "לא שווה ל %1"
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Factor of %1"
-msgstr "גורם של  %1"
+msgstr "גורם של %1"
 
 #: activities/gnumch-equality/TopPanel.qml:57
 #, qt-format
@@ -14858,8 +14859,8 @@ msgid ""
 "reach the space station. The arrow indicates the direction and the intensity "
 "of the gravity on your ship."
 msgstr ""
-"המטרה היא להזיז את החללית ולהימנע מפגיעה בכוכבים עד שתגיעי לתחנת החלל.החץ "
-"מצביע על כיוון ועוצמת כח המשיכה שמופעל  על החללית שלך."
+"המטרה היא להזיז את החללית ולהימנע מפגיעה בכוכבים עד להגעה לתחנת החלל. החץ "
+"מצביע על כיוון ועוצמת כח המשיכה שמופעל על החללית שלך."
 
 #: activities/gravity/Gravity.qml:234
 msgctxt "Gravity|"
@@ -15238,7 +15239,7 @@ msgid ""
 "We switched to English for this activity but you can select another language "
 "in the configuration dialog."
 msgstr ""
-"עברנו לאנגלית  לצורך הפעילות הזו אבל אפשר לבחור שפה אחרת מתפריט ההגדרות."
+"עברנו לאנגלית לצורך הפעילות הזו אבל אפשר לבחור שפה אחרת מתפריט ההגדרות."
 
 #. Activity title
 #: activities/hanoi/ActivityInfo.qml:15
@@ -15839,7 +15840,7 @@ msgid ""
 "left keys to control the direction. On touch screens you can control the "
 "rocket through the corresponding on-screen buttons."
 msgstr ""
-"בשלב הראשון, להשתמש במקשי החיצים הלמעלה/למטה  כדי לשלוט בדחף ובמקי החיצים "
+"בשלב הראשון, להשתמש במקשי החיצים הלמעלה/למטה כדי לשלוט בדחף ובמקי החיצים "
 "ימינה/שמאלה כדי לשלוט על הכיוון. במסך מגע אפשר לשלוט בטיל באמצעות הכפתורים "
 "המתאימים על המסך."
 
@@ -16900,7 +16901,7 @@ msgid ""
 "We switched to English for this activity but you can select another language "
 "in the configuration dialog."
 msgstr ""
-"עברנו לאנגלית  לצורך הפעילות הזו אבל אפשר לבחור שפה אחרת מתפריט ההגדרות."
+"עברנו לאנגלית לצורך הפעילות הזו אבל אפשר לבחור שפה אחרת מתפריט ההגדרות."
 
 #. Activity title
 #: activities/lightsoff/ActivityInfo.qml:15
@@ -17036,7 +17037,7 @@ msgstr ""
 #: activities/louis-braille/louis_braille_data.js:12
 msgctxt "louis_braille_data|"
 msgid "Born on January 4th 1809 in Coupvray near Paris in France."
-msgstr "נולד ב4 בינואר 1809 בקופּריי ליד פריז, צרפת."
+msgstr "נולד ב־4 בינואר 1809 בקופּבריי ליד פריז, צרפת."
 
 #: activities/louis-braille/louis_braille_data.js:17
 msgctxt "louis_braille_data|"
@@ -17077,7 +17078,7 @@ msgstr ""
 #: activities/louis-braille/louis_braille_data.js:42
 msgctxt "louis_braille_data|"
 msgid "Louis trimmed Barbier's 12 dots into 6 and invented the braille system."
-msgstr "לואיס קיצץ את 12 הנקודות של בּרבּיאר ל6 והמציא את שיטת הברייל."
+msgstr "לואיס קיצץ את 12 הנקודות של בּרבּיאר ל־6 והמציא את שיטת הברייל."
 
 #: activities/louis-braille/louis_braille_data.js:47
 msgctxt "louis_braille_data|"
@@ -18830,7 +18831,7 @@ msgstr "שנה: %1"
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Copyright: %1"
-msgstr "זכויות יוצרים:  %1"
+msgstr "זכויות יוצרים: %1"
 
 #: activities/menu/ConfigurationItem.qml:48
 msgctxt "ConfigurationItem|"
@@ -19825,7 +19826,7 @@ msgstr ""
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
-msgstr "תו חדש:  %1"
+msgstr "תו חדש: %1"
 
 #. The following translation represents percentage.
 #: activities/note_names/NoteNames.qml:271
@@ -20308,7 +20309,7 @@ msgstr "לגרור את המילים הנתונות לאזור העליון כד
 #: activities/ordering_sentences/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Below 5 words."
-msgstr "פחות מ5 מילים."
+msgstr "פחות מ־5 מילים."
 
 #. These sentences should not need to be translated word by word. Please add at least 10 sentences, each one being between 3 and 5 words. Use | to separate group of words. The aim of the string is to shuffle the group of words and let the child reorder them correctly. We should not be able to form a correct sentence by shuffling some words in the final sentence.
 #: activities/ordering_sentences/resource/1/Data.qml:18
@@ -20348,7 +20349,7 @@ msgstr ""
 #: activities/ordering_sentences/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Below 10 words."
-msgstr "פחות מ10 מילים."
+msgstr "פחות מ־10 מילים."
 
 #. These sentences should not need to be translated word by word. Please add at least 10 sentences, each one being between 6 and 10 words. Use | to separate group of words. The aim of the string is to shuffle the group of words and let the child reorder them correctly. We should not be able to form a correct sentence by shuffling some words in the final sentence.
 #: activities/ordering_sentences/resource/2/Data.qml:18
@@ -20854,9 +20855,9 @@ msgstr ""
 "לפתח הבנה להלחנה של מוזיקה ולהגביר את העניין ביצירת מוזיקה באמצעות מקלדת של "
 "פסנתר. הפעילות מכסה נושאים בסיסיים רבים במוזיקה, אבל יש עוד הרבה לגלות על "
 "הלחנה של מוזיקה. אם נהנת מהפעילות הזאת אבל רוצה כלים מתקדמים יותר, אפשר "
-"להוריד את מינואט (Minuet)  (https://minuet.kde.org/) , תוכנה בקוד-פתוח "
-"לחינוך מוזיקלי או את מיוזסקור MuseScore (https://musescore.org/en/"
-"download) , תוכנה בקוד פתוח לכתיבת תווים."
+"להוריד את מינואט (Minuet) (https://minuet.kde.org/) , תוכנה בקוד-פתוח לחינוך "
+"מוזיקלי או את מיוזסקור MuseScore (https://musescore.org/en/download) , תוכנה "
+"בקוד פתוח לכתיבת תווים."
 
 #. Help prerequisite
 #: activities/piano_composition/ActivityInfo.qml:23
@@ -20955,7 +20956,7 @@ msgstr "דליט (מחיקה): למחוק את התווים הנבחרים או 
 msgctxt "ActivityInfo|"
 msgid ""
 "The synthesizer original code is from https://github.com/vsr83/miniSynth"
-msgstr "קוד המקור של הסינטיסייזר נמצא ב:  https://github.com/vsr83/miniSynth"
+msgstr "קוד המקור של הסינטיסייזר נמצא ב־https://github.com/vsr83/miniSynth"
 
 #. BPM is the abbreviation for Beats Per Minute.
 #: activities/piano_composition/BpmMeter.qml:47
@@ -22617,10 +22618,10 @@ msgid ""
 " The 4 and the 9 units are built using differences:\n"
 "IV (5 – 1) and IX (10 – 1)."
 msgstr ""
-"כל היחדות חוץ מ4 ו9 בנויות באמצעות סכומים של I וV:\n"
+"כל היחידות חוץ מ־4 ו־9 מורכבות מסכומים של I ו־V:\n"
 "I, II, III, V, VI, VII, VIII.\n"
-"ה4 וה9 נבנים באמצעות הפרשים:\n"
-"IV (5 – 1) ו IX (10 – 1)"
+"4 ו־9 נבנים באמצעות הפרשים:\n"
+"IV (5 – 1) ו־IX (10 – 1)"
 
 #: activities/roman_numerals/RomanNumerals.qml:104
 #: activities/roman_numerals/RomanNumerals.qml:110
@@ -23112,7 +23113,7 @@ msgid ""
 "sixteen ounces. \n"
 " Drop weights on the left side to balance the scales."
 msgstr ""
-"הסימן \"oz\" אחרי מספר מסמן אונקיה. פאונד אחד שווה 16 אונקיות.  \n"
+"הסימן \"oz\" אחרי מספר מסמן אונקיה. פאונד אחד שווה 16 אונקיות.\n"
 "להניח משקולות בצד השמאלי כדי לאזן את המאזניים."
 
 #: activities/scalesboard_weight_avoirdupois/resource/1/Data.qml:39
@@ -23196,7 +23197,7 @@ msgid ""
 "The \"oz\" symbol at the end of a number means ounce. \n"
 " Drop weights on the left side to balance the scales."
 msgstr ""
-"הסימן „oz” שמגיע אחרי מספר מסמן אונקיה.  \n"
+"הסימן „oz” שמגיע אחרי מספר מסמן אונקיה.\n"
 "נא להניח משקולות בצד השמאלי כדי לאזן את המאזניים."
 
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:13
@@ -23498,7 +23499,7 @@ msgstr "האם ניתן לחלק כעת 7 ממתקים לחברים של אפר�
 #: activities/share/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Can you now share 8 of Paul's pieces of candy among his friends?"
-msgstr "אפשר לחלק עכשיו 8 ממתקיםלחברים/ות של אפרים?"
+msgstr "אפשר לחלק עכשיו 8 ממתקים לחברים/ות של אפרים?"
 
 #: activities/share/resource/2/Data.qml:60
 msgctxt "Data|"
@@ -23755,7 +23756,7 @@ msgstr "מידע נוסף על כלי איור דיגיטליים."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
-msgstr "ניתן לבחור כלים וצבעים מהלוחות המתקפלים  ולצייר ציורים.<br><br>"
+msgstr "ניתן לבחור כלים וצבעים מהלוחות המתקפלים ולצייר ציורים.<br><br>"
 
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -24731,7 +24732,7 @@ msgstr "כמה ירחים יש לכדור הארץ?"
 #: activities/solar_system/Dataset.js:171
 msgctxt "Dataset|"
 msgid "How long is one rotation on Earth?"
-msgstr "כמה זמן נמשך  סיבוב אחד על כדור-הארץ?"
+msgstr "כמה זמן נמשך סיבוב אחד על כדור הארץ?"
 
 #: activities/solar_system/Dataset.js:172
 #: activities/solar_system/Dataset.js:229
@@ -25306,7 +25307,7 @@ msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
 "expert!"
 msgstr ""
-"צריך להשיג ציון של יותר מ90% כדי לעבור את ההערכה ולהפוך למומחה במערכת השמש!"
+"צריך להשיג ציון של יותר מ־90% כדי לעבור את ההערכה ולהפוך למומחה במערכת השמש!"
 
 #: activities/solar_system/SolarSystem.qml:355
 #, qt-format
@@ -25337,7 +25338,7 @@ msgid ""
 "b>other <b>J</b>ust <b>S</b>erved <b>U</b>s <b>N</b>oodles.<br>"
 msgstr ""
 "3. כדי ללמוד את מיקום כוכבי הלכת תמיד לזכור את השיר הזה. להבחין באות הראשונה "
-"בכל מילה -  <b>ח</b>ייכתי <b>נ</b>כון <b>א</b>ז <b>מ</b>צאתי <b>צ</b>חוק "
+"בכל מילה - <b>ח</b>ייכתי <b>נ</b>כון <b>א</b>ז <b>מ</b>צאתי <b>צ</b>חוק "
 "<b>ש</b>מדביק <b>א</b>נשים <b>נ</b>חמדים.<br>"
 
 #: activities/solar_system/SolarSystem.qml:361
@@ -27078,7 +27079,7 @@ msgid ""
 "documentation, then a visit to <a href=\"%2\">%2</a> will provide you with "
 "what you need."
 msgstr ""
-"אפשר להצטרף לחברות בצוות KDE גם ללא ידע בתכנות .בזכות הצטרפות לצוותים לפי "
+"אפשר להצטרף לחברות בצוות KDE גם ללא ידע בתכנות. בזכות הצטרפות לצוותים לפי "
 "שפה ניתן לתרגם את ממשקי היישומים. אפשר לספק גרפיקה, ערכות עיצוב, צלילים "
 "ושיפורים בתיעוד. הבחירה בידיך!<br /><br />מומלץ לבקר ב־<a href=\"%1\">%1</a> "
 "לקבלת מידע על חלק מהמיזמים בהם ניתן להשתתף.<br /><br />למידע נוסף או לתיעוד, "
