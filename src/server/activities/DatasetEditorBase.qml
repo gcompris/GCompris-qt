@@ -14,4 +14,8 @@ import QtQuick
 */
 Item {
     required property string teacherInstructions
+
+    function validateDataset() {
+        return true;
+    }
 }

@@ -68,7 +68,6 @@ ActivityBase {
             property string titleMissingNumbers: qsTr("Find the %n missing numbers", "", numberOfNumbersToFind)
 
             // Activity options
-            property bool randomSubLevels: true // not presented to the user
             property bool immediateAnswer: true
 
             // Updated by JS
