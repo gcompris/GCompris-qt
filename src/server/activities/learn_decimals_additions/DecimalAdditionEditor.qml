@@ -25,7 +25,7 @@ DatasetEditorBase {
         id: mainPrototype
         property bool multiple: true
         ListElement { name: "shuffle";      label: qsTr("Shuffle");     type: "boolean";    def: "true" }
-        ListElement { name: "subLevels";    label: qsTr("SubLevels");   type: "model";      def: "[]" }
+        ListElement { name: "subLevels";    label: qsTr("Sublevels");   type: "model";      def: "[]" }
     }
 
     ListModel {
@@ -34,7 +34,7 @@ DatasetEditorBase {
         // inputType is inserted in the global Component.onCompleted function.
         // We cannot implement "choice" directly as ListElement due to the fact
         // that the values are variables and only static values are accepted
-        //ListElement { name: "inputType"; label: qsTr("Input Type"); type: "choice"; def: '["Fixed", "Range"]' }
+        //ListElement { name: "inputType"; label: qsTr("Mode"); type: "choice"; def: '["Random", "Fixed"]' }
         ListElement { name: "firstNumber"; label: qsTr("First Number"); type: "boundedDecimal"; def: "0"; decimalRange :'[0,3]' ; stepSize: 1 ; decimals: 1 }
         ListElement { name: "secondNumber"; label: qsTr("Second Number"); type: "boundedDecimal"; def: "0"; decimalRange :'[0,3]' ; stepSize: 1 ; decimals: 1 }
         ListElement { name: "minValue"; label: qsTr("Minimum Value"); type: "boundedDecimal"; def: "0" ; decimalRange :'[0,3]' ; stepSize: 1  ; decimals: 1 }
@@ -137,13 +137,13 @@ DatasetEditorBase {
     }
 
     readonly property var inputTypeChoices: [
-        { "datasetValue": "fixed", "displayedValue": qsTr("Fixed") },
-        { "datasetValue": "range", "displayedValue": qsTr("Range") }
+        { "datasetValue": "range", "displayedValue": qsTr("Random") },
+        { "datasetValue": "fixed", "displayedValue": qsTr("Fixed") }
     ]
 
     Component.onCompleted: {
         // We insert dynamically here the choice
-        subPrototype.insert(0, {name: "inputType", label: qsTr("Input Type"), type: "choice", values: inputTypeChoices})
+        subPrototype.insert(0, {name: "inputType", label: qsTr("Mode"), type: "choice", values: inputTypeChoices})
 
         mainModel = datasetEditor.jsonToListModel(prototypeStack, JSON.parse(textActivityData))
     }

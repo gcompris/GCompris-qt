@@ -20,7 +20,7 @@ var expectedAnswer // The expected answer, as an array of strings
 // Check if level data contains all the expected keys
 function hasMandatoryKeys(level, levelIndex)
 {
-    var expectedKeys = ["lowerBound", "upperBound", "step", "numberShown",
+    var expectedKeys = ["randomSubLevels", "lowerBound", "upperBound", "step", "numberShown",
             "indicesToGuess", "numberRandomLevel", "fixedLevels", "numberPropositions"]
     var missingKeys = []
     for(const key of expectedKeys) {
@@ -72,12 +72,9 @@ function validateLevel(level, levelIndex)
         }
     }
 
-    for(var start of level.fixedLevels)
-    {
-        if(start < lowerBound ||
-           start > upperBound)
-        {
-            console.error("Invalid start value (" + start + ") for fixedLevels")
+    if(!level.randomSubLevels) {
+        if(level.fixedLevels.length <= 0) {
+            console.error("'fixedLevels' needs to be greater than 0 if randomSubLevels is false")
             valid = false
         }
     }
@@ -173,7 +170,7 @@ function initLevel() {
         setTitleText();
 
         subLevelStartTiles = []
-        if(items.randomSubLevels) {
+        if(dataset[currentExercise].randomSubLevels) {
             const lowerBound = dataset[currentExercise].lowerBound
             const upperBound = dataset[currentExercise].upperBound
             const step = dataset[currentExercise].step
