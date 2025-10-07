@@ -10,6 +10,7 @@ Data {
     difficulty: 2
     data: [
         {
+            "randomSubLevels": true,
             "lowerBound": 0,
             "upperBound": 8, // inclusive
             "step": 1,
@@ -17,10 +18,11 @@ Data {
             "indicesToGuess": [2],
 
             "numberRandomLevel": 5,
-            "fixedLevels": [1, 6, 3, 7, 5, 2, 4, 8, 0], // Defined by the first number of the set
+            "fixedLevels": [],
             "numberPropositions": 3
         },
         {
+            "randomSubLevels": true,
             "lowerBound": 0,
             "upperBound": 8, // inclusive
             "step": 1,
@@ -28,10 +30,11 @@ Data {
             "indicesToGuess": [0],
 
             "numberRandomLevel": 5,
-            "fixedLevels": [4, 7, 5, 2, 6, 1, 3, 8, 0], // Defined by the first number of the set
+            "fixedLevels": [],
             "numberPropositions": 3
         },
         {
+            "randomSubLevels": true,
             "lowerBound": 0,
             "upperBound": 8, // inclusive
             "step": 1,
@@ -39,10 +42,11 @@ Data {
             "indicesToGuess": [1],
 
             "numberRandomLevel": 5,
-            "fixedLevels": [4, 2, 7, 6, 3, 1, 0, 8], // Defined by the first number of the set
+            "fixedLevels": [],
             "numberPropositions": 3
         },
         {
+            "randomSubLevels": true,
             "lowerBound": 0,
             "upperBound": 8, // inclusive
             "step": 1,
@@ -50,7 +54,7 @@ Data {
             "indicesToGuess": [0, 2],
 
             "numberRandomLevel": 5,
-            "fixedLevels": [3, 6, 4, 7, 2, 1, 0, 5, 8], // Defined by the first number of the set
+            "fixedLevels": [],
             "numberPropositions": 5
         },
     ]

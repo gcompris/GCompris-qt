@@ -10,6 +10,7 @@ Data {
     difficulty: 6
     data: [
         {
+            "randomSubLevels": true,
             "lowerBound": -10,
             "upperBound": 8, // inclusive
             "step": 1,
@@ -17,10 +18,11 @@ Data {
             "indicesToGuess": [2],
 
             "numberRandomLevel": 5,
-            "fixedLevels": [-9, 7, 2, -4, 6, -10, -1, -8, -7, -2], // Defined by the first number of the set
+            "fixedLevels": [],
             "numberPropositions": 5
         },
         {
+            "randomSubLevels": true,
             "lowerBound": -10,
             "upperBound": 8, // inclusive
             "step": 1,
@@ -28,10 +30,11 @@ Data {
             "indicesToGuess": [0],
 
             "numberRandomLevel": 5,
-            "fixedLevels": [4, -6, -7, 7, 0, -3, 2, -10, -9, 8], // Defined by the first number of the set
+            "fixedLevels": [],
             "numberPropositions": 5
         },
         {
+            "randomSubLevels": true,
             "lowerBound": -5,
             "upperBound": 3, // inclusive
             "step": 1,
@@ -39,10 +42,11 @@ Data {
             "indicesToGuess": [1],
 
             "numberRandomLevel": 5,
-            "fixedLevels": [-4, 2, 3, -2, 0, -1, 1, -3], // Defined by the first number of the set
+            "fixedLevels": [],
             "numberPropositions": 3
         },
         {
+            "randomSubLevels": true,
             "lowerBound": -10,
             "upperBound": 8, // inclusive
             "step": 1,
@@ -50,10 +54,11 @@ Data {
             "indicesToGuess": [0, 3],
 
             "numberRandomLevel": 5,
-            "fixedLevels": [2, -1, -2, -4, 6, -7, 3, 0, -5], // Defined by the first number of the set
+            "fixedLevels": [],
             "numberPropositions": 7
         },
         {
+            "randomSubLevels": true,
             "lowerBound": -10,
             "upperBound": 6, // inclusive
             "step": 1,
@@ -61,7 +66,7 @@ Data {
             "indicesToGuess": [1, 2, 3],
 
             "numberRandomLevel": 5,
-            "fixedLevels": [2, -1, -2, -4, 6, -7, 3, 0, -5], // Defined by the first number of the set
+            "fixedLevels": [],
             "numberPropositions": 7
         },
     ]
