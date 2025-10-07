@@ -72,7 +72,7 @@ Item  {
             stringToRange()
             return comboInput
         case "boolean":
-            value = proto.def                                   // value contains boolean
+            value = aModel.get(modelIndex)[proto.name]          // value contains boolean
             jsonValue = JSON.parse(value)
             return boolInput
         case "boundedDecimal":
