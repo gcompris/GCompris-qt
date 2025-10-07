@@ -27,7 +27,7 @@ DatasetEditorBase {
         id: mainPrototype
         property bool multiple: true
         ListElement { name: "shuffle";      label: qsTr("Shuffle");     type: "boolean";    def: "true" }
-        ListElement { name: "subLevels";    label: qsTr("SubLevels");   type: "model";      def: "[]" }
+        ListElement { name: "subLevels";    label: qsTr("Sublevels");   type: "model";      def: "[]" }
     }
 
     ListModel {

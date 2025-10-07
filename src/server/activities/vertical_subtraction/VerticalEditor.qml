@@ -27,7 +27,7 @@ DatasetEditorBase {
         id: mainPrototype
         property bool multiple: false
         ListElement { name: "title";        label: qsTr("Title");               type: "string";     def: "" }
-        ListElement { name: "nbSubLevel";   label: qsTr("Exercise count");     type: "int";        def: "10" }
+        ListElement { name: "nbSubLevel";   label: qsTr("Sublevels");           type: "int";        def: "10" }
         ListElement { name: "nbDigits";     label: qsTr("Number of digits");    type: "comboInt";   def: "[2,5]" }  // def is a value range for int combos
         ListElement { name: "nbLines";      label: qsTr("Number of lines");     type: "comboInt";   def: "[2,5]" }
         ListElement { name: "alreadyLaid";  label: qsTr("Already laid");        type: "boolean";    def: "true" }

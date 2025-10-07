@@ -207,6 +207,7 @@ Popup {
 
     File { id: file }
 
+    // used for instructions and for invalid dataset warnings
     Popup {
         id: instructionPanel
         anchors.centerIn: Overlay.overlay
@@ -221,44 +222,64 @@ Popup {
         }
         modal: true
 
+        readonly property string warningText: qsTr("INVALID DATASET")
+
+        function setInstructionText(_isInstructions, _content) {
+            if(_isInstructions) {
+                instructionTitle.text = datasetEditor.currentActivityTitle;
+            } else {
+                instructionTitle.text = warningText;
+            }
+            instructionContent.text = _content;
+        }
+
         onOpened: {
-            popupControl.forceActiveFocus();
+            closePopupButton.forceActiveFocus();
         }
 
         onClosed: {
             instructionsButton.forceActiveFocus();
         }
 
-        Item {
-            id: instructionTitleItem
-            height: Style.lineHeight
-            width: parent.width
-
-            DefaultLabel {
-                width: parent.width
-                anchors.verticalCenter: parent.verticalCenter
-                text: datasetEditor.currentActivityTitle
-                font.bold: true
-            }
-        }
-
-        Text {
+        StyledFlickable {
+            id: instructionFlickable
             anchors {
-               top: instructionTitleItem.bottom
-               topMargin: Style.margins
-               bottom: parent.bottom
-               left: parent.left
-               right: parent.right
+                top: parent.top
+                left: parent.left
+                right: parent.right
+                bottom: closePopupButton.top
+                bottomMargin: Style.margins
             }
-            color: Style.selectedPalette.text
-            font.pixelSize: Style.textSize
-            text: editorLoader.item ? editorLoader.item.teacherInstructions : ""
+
+            Item {
+                id: instructionTitleItem
+                height: Style.lineHeight
+                width: instructionFlickable.width
+                DefaultLabel {
+                    id: instructionTitle
+                    width: parent.width
+                    anchors.verticalCenter: parent.verticalCenter
+                    font.bold: true
+                }
+            }
+
+            Text {
+                id: instructionContent
+                anchors.top: instructionTitleItem.bottom
+                anchors.topMargin: Style.margins
+                width: instructionFlickable.width - Style.margins
+                wrapMode: Text.Wrap
+                color: Style.selectedPalette.text
+                font.pixelSize: Style.textSize
+            }
         }
 
-        MouseArea {
-            id: popupControl
-            anchors.fill: parent
-            onClicked: instructionPanel.close();
+        OkCancelButtons {
+            id: closePopupButton
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.bottom: parent.bottom
+            cancelButton.visible: false
+            onValidated: instructionPanel.close();
             focus: true
 
             Keys.onPressed: (event) => {
@@ -476,7 +497,10 @@ Popup {
         width: Math.min(defaultWidth, parent.width / 3 - Style.margins)
         text: qsTr("Instructions")
         visible: editorLoader.sourceUrl !== datasetEditor.noEditorPath
-        onClicked: instructionPanel.open();
+        onClicked: {
+            instructionPanel.setInstructionText(true, editorLoader.item.teacherInstructions);
+            instructionPanel.open();
+        }
     }
 
     OkCancelButtons {
@@ -487,10 +511,12 @@ Popup {
         width: buttonsWidth * 2 + spacing
         onCancelled: datasetEditor.close()
         onValidated:  {
-            if(editorLoader.sourceUrl !== datasetEditor.noEditorPath) {
-                datasetContent.text = datasetEditor.listModelToJson(editorLoader.item.prototypeStack, editorLoader.item.mainModel);
+            if(editorLoader.item.validateDataset()) {
+                if(editorLoader.sourceUrl !== datasetEditor.noEditorPath) {
+                    datasetContent.text = datasetEditor.listModelToJson(editorLoader.item.prototypeStack, editorLoader.item.mainModel);
+                }
+                saveDataset();
             }
-            saveDataset();
         }
     }
 
