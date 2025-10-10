@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-04-18 17:27+0300\n"
+"PO-Revision-Date: 2025-10-10 11:34+0300\n"
 "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -22386,39 +22386,26 @@ msgid "Loop"
 msgstr ""
 
 #: activities/programmingMaze/ProgrammingMaze.qml:542
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Instruction Area:"
 msgctxt "ProgrammingMaze|"
 msgid "Instruction Area:"
 msgstr "Поле для інструкцый:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:543
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "There are 3 instructions which you can use to code and lead Tux to the "
-#| "fish:"
 msgctxt "ProgrammingMaze|"
 msgid ""
 "There are 3 instructions which you can use to code and lead Tux to the fish:"
 msgstr ""
-"Для таго каб правесці Тукса да рыбкі вам можаце карыстацца трыма "
-"інструкцыямі:"
+"Вось 3 інструкцыі, якімі вы можаце скарыстацца каб запраграмаваць і правесці "
+"Тукса да рыбкі:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:544
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
-#| "facing."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
 "facing."
 msgstr ""
 "<b>1. Рушыць наперад:</b> Перасоўвае Тукса на адзін крок наперад у накірунку "
-"яго погляду."
+"яго позірку."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:545
 #, fuzzy
@@ -22437,12 +22424,9 @@ msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgstr "<b>3. Павярнуць направа:</b> Паварочвае Тукса направа."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:550
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Main Function:"
 msgctxt "ProgrammingMaze|"
 msgid "Main Function:"
-msgstr "Праграма:"
+msgstr "Галоўная функцыя:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:551
 #, fuzzy
