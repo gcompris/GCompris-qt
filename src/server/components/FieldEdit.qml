@@ -52,6 +52,7 @@ Item  {
             value = Qt.binding(function() { return aModel.get(modelIndex) ? aModel.get(modelIndex)[proto.name].count : null })
             readOnly = true
             return textInput
+        case "number_array":
         case "string_array":                                    // value is a stringified array of elements
             value = aModel.get(modelIndex)[proto.name]
             stringToArrayModel()
