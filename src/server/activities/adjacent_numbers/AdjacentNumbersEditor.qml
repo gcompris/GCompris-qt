@@ -25,15 +25,14 @@ DatasetEditorBase {
     ListModel {
         id: mainPrototype
         property bool multiple: false
-        // TODO: fix FieldEdit to store int for boundedDecimal entries instead of strings, and add a way to store arrays of int (maybe with new int_array component?)...
         ListElement { name: "randomSubLevels";   label: qsTr("Random start numbers");  type: "boolean";        def: "true" }
         ListElement { name: "numberRandomLevel"; label: qsTr("Sublevels");            type: "boundedDecimal"; def: "5";  decimalRange: '[1,10]';      stepSize: 1; decimals: 0 }
-        ListElement { name: "fixedLevels";       label: qsTr("Start numbers");        type: "string_array";   def: '["0"]' }
+        ListElement { name: "fixedLevels";       label: qsTr("Start numbers");        type: "number_array";   def: '["0"]' }
         ListElement { name: "lowerBound";        label: qsTr("Minimum start number"); type: "boundedDecimal"; def: "0";  decimalRange: '[-10000, 10000]'; stepSize: 1; decimals: 0 }
         ListElement { name: "upperBound";        label: qsTr("Maximum start number"); type: "boundedDecimal"; def: "10"; decimalRange: '[-10000, 10000]'; stepSize: 1; decimals: 0 }
         ListElement { name: "step";              label: qsTr("Step between numbers"); type: "boundedDecimal"; def: "1";  decimalRange: '[1,1000]'; stepSize: 1; decimals: 0 }
         ListElement { name: "numberShown";       label: qsTr("Sequence length");      type: "boundedDecimal"; def: "3";  decimalRange: '[3,6]'; stepSize: 1; decimals: 0 }
-        ListElement { name: "indicesToGuess";    label: qsTr("Position of missing numbers"); type: "string_array"; def: '["0"]' }
+        ListElement { name: "indicesToGuess";    label: qsTr("Position of missing numbers"); type: "number_array"; def: '["0"]' }
         ListElement { name: "numberPropositions"; label: qsTr("Proposed numbers");    type: "boundedDecimal"; def: "3";  decimalRange: '[2,7]'; stepSize: 1; decimals: 0 }
     }
 
@@ -106,7 +105,6 @@ DatasetEditorBase {
     readonly property string indicesNotInRange: ("<ul><li>") +
         qsTr('"Position of missing numbers" contains invalid numbers.') + ("</li></ul>")
 
-    // TODO: update function when values are proper numbers and arrays instead of strings...
     function validateDataset() {
         var errorMessage = ""
         var currentDataset = editor.mainModel.get(0)
@@ -149,14 +147,14 @@ DatasetEditorBase {
             }
         }
         // Check that "Position of missing numbers" is not greater than "Sequence length" - 2
-        if(indicesToGuess.length > Number(currentDataset.numberShown) - 2) {
+        if(indicesToGuess.length > currentDataset.numberShown - 2) {
             errorMessage += indicesTooLong;
             isValid = false;
         }
         // Check that each index in "Position of missing numbers" is between 0 and ("Sequence length" - 1)
-        var maxIndexValue = Number(currentDataset.numberShown) - 1;
+        var maxIndexValue = currentDataset.numberShown - 1;
         for(var i = 0; i < indicesToGuess.length; i++) {
-            var indiceNumber = Number(indicesToGuess[i]);
+            var indiceNumber = indicesToGuess[i];
             if(indiceNumber < 0 || indiceNumber > maxIndexValue) {
                 errorMessage += indicesNotInRange;
                 isValid = false;

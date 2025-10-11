@@ -141,6 +141,10 @@ Popup {
                         js += indent.repeat(depth + 2) + `"${key}": "${obj[key]}"`
                     } else if (obj[key] instanceof ListModel) {
                         js += indent.repeat(depth + 2) + `"${key}": ` +  listModelToJson(protoStack, obj[key], depth + 1)
+                    } else if (prototype.type === "number_array") {
+                        // We convert all string elements to numbers
+                        var result = JSON.stringify(JSON.parse(obj[key]).map(Number));
+                        js += indent.repeat(depth + 2) + `"${key}": ` + result
                     } else if (prototype.type === "string_array") {
                         js += indent.repeat(depth + 2) + `"${key}": ` + obj[key] // string_array are deserialized
                     } else if (typeof obj[key] === "boolean") {
@@ -172,6 +176,9 @@ Popup {
                 var prototype = protoStack[depth].get(j)
                 if (prototype.type === "choice") {
                     obj[prototype.name] = data[i][prototype.name]
+                } else if (prototype.type === "number_array") {
+                    var result = JSON.parse(`[${data[i][prototype.name]}]`).map(String);
+                    obj[prototype.name] = JSON.stringify(result)                           // string_array are serialized
                 } else if (prototype.type === "string_array") {
                     obj[prototype.name] = JSON.stringify(data[i][prototype.name])                           // string_array are serialized
                 } else if (prototype.type === 'model') {
