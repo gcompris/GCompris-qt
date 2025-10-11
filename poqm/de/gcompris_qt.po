@@ -1,18 +1,18 @@
 # SPDX-FileCopyrightText: 2020, 2021, 2024 Alois Spitzbart <spitz234@hotmail.com>
 # Manuel <manu@dreivierteleins.de> 2014.
-# Gerhard Dieringer <GDieringer@compuserve.com>, 2000.
-# Martin Herweg <m.herweg@gmx.de>, 2001.
-# Ronny Standtke <Ronny.Standtke@gmx.net>, 2003-2007.
-# Hendrik Richter <hendrikr@gnome.org>, 2005.
-# Mario Blättermann <mario.blaettermann@gmail.com>, 2009, 2010, 2011.
+# SPDX-FileCopyrightText: 2000 Gerhard Dieringer <GDieringer@compuserve.com>
+# SPDX-FileCopyrightText: 2001 Martin Herweg <m.herweg@gmx.de>
+# SPDX-FileCopyrightText: 2003-2007 Ronny Standtke <Ronny.Standtke@gmx.net>
+# SPDX-FileCopyrightText: 2005 Hendrik Richter <hendrikr@gnome.org>
+# SPDX-FileCopyrightText: 2009, 2010, 2011 Mario Blättermann <mario.blaettermann@gmail.com>
 # Christian Kirbach <christian.kirbach@gmail.com>, 2009-2012, 2014.
-# Wolfgang Stöggl <c72578@yahoo.de>, 2012.
-# Burkhard Lück <lueck@hube-lueck.de>, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021.
-# Holger Kaelberer <holger.k@elberer.de>, 2015, 2016.
-# Frederik Schwarzer <schwarzer@kde.org>, 2015, 2016, 2020, 2021, 2022, 2023.
-# Daniel Schlep <info@danielschlep.de>, 2019.
-# Christian Buhtz <c.buhtz@posteo.jp>, 2020.
-# Lars Vogdt <lars@linux-schulserver.de>, 2023.
+# SPDX-FileCopyrightText: 2012 Wolfgang Stöggl <c72578@yahoo.de>
+# SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021 Burkhard Lück <lueck@hube-lueck.de>
+# SPDX-FileCopyrightText: 2015, 2016 Holger Kaelberer <holger.k@elberer.de>
+# SPDX-FileCopyrightText: 2015, 2016, 2020, 2021, 2022, 2023 Frederik Schwarzer <schwarzer@kde.org>
+# SPDX-FileCopyrightText: 2019 Daniel Schlep <info@danielschlep.de>
+# SPDX-FileCopyrightText: 2020 Christian Buhtz <c.buhtz@posteo.jp>
+# SPDX-FileCopyrightText: 2023 Lars Vogdt <lars@linux-schulserver.de>
 # Claudia und Emmanuel Charruau, 2015.
 msgid ""
 msgstr ""
