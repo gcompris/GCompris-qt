@@ -33,8 +33,8 @@ DatasetEditorBase {
     ListModel {
         id: subPrototype
         property bool multiple: true
-        ListElement { name: "leftNumber";       label: qsTr("Left number");     type: "number";        def: "" }
-        ListElement { name: "rightNumber";      label: qsTr("Right number");    type: "number";         def: "" }
+        ListElement { name: "leftNumber";       label: qsTr("Left number");     type: "real";        def: "" }
+        ListElement { name: "rightNumber";      label: qsTr("Right number");    type: "real";         def: "" }
     }
 
     StyledSplitView {
