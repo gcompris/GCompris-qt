@@ -145,6 +145,8 @@ Popup {
                         js += indent.repeat(depth + 2) + `"${key}": ` + obj[key] // string_array are deserialized
                     } else if (typeof obj[key] === "boolean") {
                         js += indent.repeat(depth + 2) + `"${key}": ${obj[key]}`
+                    } else if (prototype.type === "boundedDecimal" || prototype.type === "int" || prototype.type === "comboInt" || prototype.type === "real") {
+                        js += indent.repeat(depth + 2) + `"${key}": ${obj[key]}`
                     } else {
                         js += indent.repeat(depth + 2) + `"${key}": "${obj[key]}"`
                     }
@@ -174,6 +176,8 @@ Popup {
                     obj[prototype.name] = JSON.stringify(data[i][prototype.name])                           // string_array are serialized
                 } else if (prototype.type === 'model') {
                     obj[prototype.name] = jsonToListModel(protoStack, data[i][prototype.name], depth + 1)   // Nested ListModel
+                } else if (prototype.type === "boundedDecimal" || prototype.type === "int" || prototype.type === "comboInt" || prototype.type === "real") {
+                    obj[prototype.name] = String(data[i][prototype.name])
                 } else if (typeof data[i][prototype.name] !== 'undefined') {
                     obj[prototype.name] = data[i][prototype.name]
                 } else {
