@@ -25,6 +25,7 @@ Item {
 
     property int current: -1
     property bool toolBarEnabled: true
+    enabled: toolBarEnabled
 
     readonly property int minWidth: buttonsRow.width // used for SplitView.minimumWidth when in a StyledSplitView
     readonly property int maxWidth: scrollBg.width - 2 * Style.margins - 10 // used as maxWidth for FieldEdit items when needed

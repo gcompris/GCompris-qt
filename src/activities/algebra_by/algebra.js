@@ -25,6 +25,31 @@ var OperandsEnum = {
     DIVIDE_SIGN : "\u2215"
 }
 
+/* Possible dataset content
+ *
+ * [
+ *   {
+ *    "randomOperands": true, (tells if random operands should be generated, else use the operands list)
+ *    "numberSubLevels": 10, (allows to set the number of subLevels if operands are not defined, else default to 10)
+ *    "min": 0, (minimum operand value)
+ *    "max": 10, (maximum operand value)
+ *    "limit": 0, (if != 0, set the maximum result value allowed)
+ *    "shuffle": true, (if !randomOperands, tells if initial question order should be shuffled)
+ *    "operands": [ (if !randomOperands and operands are defined here, they are used and numberSubLevels/min/max/limit are not used)
+ *       {
+ *        "first": 1,
+ *        "second": 10,
+ *       },
+ *       {
+ *        "first": 2,
+ *        "second": 10
+ *       }
+ *     ]
+ *   }
+ * ]
+ *
+ */
+
 
 function start(items_, operand_, speedSetting_) {
     operand = operand_
@@ -75,17 +100,24 @@ function initLevel() {
       - the generated question, where the dataset specify constraints
      Leveltype is determined by checking what is the inner structure of the dataset
     */
-    if("operands" in dataset[items.currentLevel]) {
+    var fixedOperands = false;
+    if(!dataset[items.currentLevel].randomOperands && "operands" in dataset[items.currentLevel]) {
+        fixedOperands = true;
         items.score.numberOfSubLevels = dataset[items.currentLevel].operands.length;
-        for(var i = 0; i < items.score.numberOfSubLevels; i++)
+        for(var i = 0; i < items.score.numberOfSubLevels; i++) {
             subLevelData.push([dataset[items.currentLevel].operands[i].first, dataset[items.currentLevel].operands[i].second])
+        }
     }
     else {
         // Generate random operations
         var minOperandValue = dataset[items.currentLevel].min
         var maxOperandValue = dataset[items.currentLevel].max
         var limit = dataset[items.currentLevel].limit
-        items.score.numberOfSubLevels = 10;
+        if(dataset[items.currentLevel].numberSubLevels) {
+            items.score.numberOfSubLevels = dataset[items.currentLevel].numberSubLevels;
+        } else {
+            items.score.numberOfSubLevels = 10; // default to 10 if not sepecified
+        }
         for(var i = 0; i < items.score.numberOfSubLevels; i++)
         {
             var leftOperand = 0;
@@ -98,7 +130,9 @@ function initLevel() {
         }
     }
 
-    subLevelData = Core.shuffle(subLevelData)
+    if(!fixedOperands || (fixedOperands && dataset[items.currentLevel].shuffle)) {
+        subLevelData = Core.shuffle(subLevelData)
+    }
     calculateOperands()
     items.iAmReady.visible = true
     items.balloon.stopMoving()
@@ -162,7 +196,6 @@ function validateAnswer(screenAnswer)
 }
 
 function run() {
-    circularShiftElements()
     calculateOperands()
     items.numpad.resetText()
     items.iAmReady.visible = false
@@ -188,10 +221,15 @@ function checkAnswer() {
     }
 }
 
+function nextQuestion() {
+    circularShiftElements();
+    run();
+}
+
 function questionsLeft() {
     if(items.score.currentSubLevel >= items.score.numberOfSubLevels) {
         items.bonus.good("smiley")
     } else {
-        run()
+        nextQuestion();
     }
 }
