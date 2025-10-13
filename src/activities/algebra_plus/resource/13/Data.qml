@@ -14,6 +14,7 @@ Data {
     difficulty: 6
     data: [
         {
+            "randomOperands": true,
             "min": 0,
             "max": 100,
             "limit": 100
