@@ -14,9 +14,10 @@ Data {
     difficulty: 5
     data: [
         {
+            "randomOperands": true,
             "min": 0,
             "max": 10,
-            "limit": 0,
+            "limit": 0
         }
     ]
 }

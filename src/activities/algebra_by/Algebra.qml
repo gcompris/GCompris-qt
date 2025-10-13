@@ -253,7 +253,7 @@ ActivityBase {
             imageSize: okButton.width
             radius: GCStyle.halfMargins
             function releaseControls() {
-                Activity.run();
+                Activity.nextQuestion();
             }
         }
 

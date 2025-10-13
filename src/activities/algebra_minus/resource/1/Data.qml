@@ -14,6 +14,8 @@ Data {
     difficulty: 5
     data: [
         {
+            "randomOperands": false,
+            "shuffle": true,
             "operands": [
                 {
                     "first": 1,
