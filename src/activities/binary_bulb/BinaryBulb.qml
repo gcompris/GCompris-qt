@@ -14,15 +14,12 @@ import core 1.0
 
 import "../../core"
 import "binary_bulb.js" as Activity
-import "numbers.js" as Dataset
 
 ActivityBase {
     id: activity
 
     onStart: focus = true
     onStop: {}
-
-    property var dataset: Dataset.get()
 
     pageComponent: Image {
         id: activityBackground
@@ -33,6 +30,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -50,6 +48,7 @@ ActivityBase {
             property int numberOfBulbs: 0
             property int currentSelectedBulb: -1
             property alias score: score
+            readonly property var levels: activity.datasets
             property alias errorRectangle: errorRectangle
             property alias goodAnswerSound: goodAnswerSound
             property alias badAnswerSound: badAnswerSound
@@ -57,7 +56,7 @@ ActivityBase {
             property alias client: client
         }
 
-        onStart: { Activity.start(items, activity.dataset) }
+        onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
         GCSoundEffect {
@@ -186,7 +185,7 @@ ActivityBase {
                     required property int index
                     height: bulbsRow.height
                     width: Math.min(GCStyle.bigButtonHeight, (activityBackground.width - 2 * GCStyle.baseMargins) / 8)
-                    valueVisible: activity.dataset[items.currentLevel].bulbValueVisible
+                    valueVisible: items.levels[items.currentLevel].bulbValueVisible
                     position: index
                 }
             }
@@ -224,7 +223,7 @@ ActivityBase {
             fontSize: largeSize
             fontSizeMode: Text.Fit
             text: items.numberSoFar
-            visible: activity.dataset[items.currentLevel].enableHelp
+            visible: items.levels[items.currentLevel].enableHelp
         }
 
         BarButton {
@@ -246,12 +245,33 @@ ActivityBase {
             onClose: activity.home()
         }
 
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+            onClose: {
+                home()
+            }
+
+            onSaveData: {
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+            }
+
+            onStartActivity: {
+                activityBackground.stop()
+                activityBackground.start()
+            }
+        }
+
         Bar {
             id: bar
             level: items.currentLevel + 1
-            content: BarEnumContent { value: tutorialImage.visible ? (help | home) : (help | home | level) }
+            content: BarEnumContent { value: tutorialImage.visible ? (help | home | activityConfig) : (help | home | level | activityConfig) }
             onHelpClicked: {
                 activity.displayDialog(dialogHelp)
+            }
+            onActivityConfigClicked: {
+                displayDialog(dialogActivityConfig)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()

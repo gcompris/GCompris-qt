@@ -17,10 +17,9 @@ var dataset
 var url = "qrc:/gcompris/src/activities/binary_bulb/resource/"
 var levelDataset
 
-function start(items_, dataset_) {
+function start(items_) {
     items = items_
-    dataset = dataset_
-    numberOfLevel = dataset.length
+    numberOfLevel = items.levels.length
     items.currentLevel = Core.getInitialLevel(numberOfLevel)
 }
 
@@ -78,15 +77,32 @@ function changeState(index) {
 }
 
 function initLevel() {
+    dataset = items.levels[items.currentLevel]
     items.errorRectangle.resetState()
-    items.score.numberOfSubLevels = dataset[items.currentLevel].numbersToBeConverted.length
     items.score.currentSubLevel = 0
-    items.numberOfBulbs = dataset[items.currentLevel].bulbCount
-    levelDataset = Core.shuffle(dataset[items.currentLevel].numbersToBeConverted)
+    items.numberOfBulbs = dataset.bulbCount
+    var numberList = new Array();
+    if(dataset.random) {
+        var maxValue = Math.pow(2, dataset.bulbCount) - 1;
+        // Find between 1 and max-1
+        for(var i = 0; i < dataset.numberSubLevels; ++ i) {
+            numberList.push(Math.floor(Math.random() * maxValue) + 1)
+        }
+    }
+    else {
+        numberList = dataset.numbersToBeConverted;
+    }
+    if(dataset.shuffle) {
+        levelDataset = Core.shuffle(numberList)
+    }
+    else {
+        levelDataset = numberList
+    }
+
+    items.score.numberOfSubLevels = levelDataset.length
     initializeValues()
     resetBulbs()
     items.buttonsBlocked = false
-//    items.client.startTiming()      // for server version
 }
 
 function nextLevel() {
