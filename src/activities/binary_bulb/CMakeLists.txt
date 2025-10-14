@@ -8,6 +8,7 @@ GCOMPRIS_ADD_RESOURCE(activities/binary_bulb
   *.qml
   *.js
   resource/*.qml
+  resource/*/Data.qml
   RESOURCES
   *.svg
   resource/*.svg
