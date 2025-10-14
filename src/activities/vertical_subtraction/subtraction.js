@@ -200,6 +200,8 @@ function checkResult() {
         if (item.value === -1)                                          // Detect first non zero value. After empty digit are not allowed
             zeros = false
     }
+
+    items.client.sendToServer(ok)
     if (ok) {
         items.currentSubLevel++
         items.score.playWinAnimation()
@@ -229,6 +231,8 @@ function initLevel() {
     items.resultNumber.numberValue = "0"
     items.okButton.visible = items.alreadyLaid ? true : false
     items.inputLocked = false
+
+    items.client.startTiming()
 }
 
 function nextLevel() {
