@@ -99,10 +99,49 @@ ActivityBase {
             property alias crashSound: crashSound
             property alias completeTaskSound: completeTaskSound
             property alias errorRectangle: errorRectangle
+            property alias client: client
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
+
+        Client {    // Client for server version. Prepare data from activity to server
+            id: client
+            getDataCallback: function() {
+                // We send digit per digit for each number, allowing to have the carry and tens used for display
+                var numbers = new Array(items.numberRepeater.length);
+                for (var i = 0; i < items.numberRepeater.count; i++) {
+                    var number = items.numberRepeater.itemAt(i)
+                    var jsonNumber = new Array(number.digitRepeater.count)
+                    for (var j = 0; j < number.digitRepeater.count; j++) {
+                        var digit = number.digitRepeater.itemAt(j)
+                        jsonNumber[j] = {
+                            "expected": digit.expected,
+                            "tensValue": digit.tensValue,
+                            "carryValue": digit.carryValue,
+                            "value": digit.value
+                        }
+                    }
+                    numbers[i] = jsonNumber
+                }
+
+                var jsonResultNumber = new Array(items.resultNumber.digitRepeater.length);
+                for (var j = 0; j < items.resultNumber.digitRepeater.count; j++) {
+                    var digit = items.resultNumber.digitRepeater.itemAt(j)
+                    jsonResultNumber[j] = {
+                        "expected": digit.expected,
+                        "tensValue": digit.tensValue,
+                        "carryValue": digit.carryValue,
+                        "value": digit.value
+                    }
+                }
+                var data = {
+                    "numbers": numbers,
+                    "resultNumber": jsonResultNumber
+                }
+                return data
+            }
+        }
 
         GCSoundEffect {
             id: crashSound
