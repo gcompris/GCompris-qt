@@ -31,7 +31,7 @@ QtObject {
                 qsTr("Many new images"),
                 qsTr("Many bug fixes")
                 ],
-               "newDatasets": ["guess24"]
+               "newDatasets": ["guess24", "graduated_line_read", "graduated_line_use"]
            },
             { "versionCode": 250100, "content": [
                 qsTr("Many usability improvements"),

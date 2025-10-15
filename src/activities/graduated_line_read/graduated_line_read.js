@@ -18,15 +18,15 @@ var exercises = []
 
 function randInt(max) { return Math.floor(Math.random() * max) }
 
-function longInt(val) {     // Format number to string (avoid exponential notation)
-    val = Number(val)
-    var str = ""
-    while (val !== 0) {
-        var remainder = val % 10
-        str = String(remainder) + str
-        val = Math.floor(val / 10)
+function longInt(val) {
+    // we allow to have up to 5 numbers after the separator
+    var str = Core.convertNumberToLocaleString(val, GCompris.ApplicationInfo.localeShort, 'f', 5)
+    // Remove extra 0
+    str = str.replace(/0+$/,'');
+    // handle if last character is a separator, remove it
+    if(isNaN(str[str.length-1])) {
+        str = str.substr(0, str.length-1)
     }
-    if (str === "") str = "0"
     return str
 }
 
@@ -94,14 +94,18 @@ function buildRuler() {     // Read from exercises with currentSubLevel index
                                 , "thickness_": thick })
         start += exo.step
     }
-    maxSolutionSize = start.toString().length
     var min = (items.orientation === Qt.LeftToRight) ? 0 : items.rulerModel.count -1
     var max = (items.orientation === Qt.LeftToRight) ? items.rulerModel.count -1 : 0
-    items.leftLimit.text = longInt(items.rulerModel.get(min).value_)
-    items.rightLimit.text = longInt(items.rulerModel.get(max).value_)
+    var denominator = 1
+    if (items.levels[items.currentLevel].rules.denominator && items.levels[items.currentLevel].rules.denominator != 1) {
+        denominator = items.levels[items.currentLevel].rules.denominator
+    }
+    items.leftLimit.text = longInt(items.rulerModel.get(min).value_ / denominator)
+    items.rightLimit.text = longInt(items.rulerModel.get(max).value_ / denominator)
 
     items.solutionGrad = exo.solution
     items.answer = items.rulerModel.get(items.solutionGrad).value_.toString()
+    maxSolutionSize = String(longInt(items.answer) / denominator).length
     if (activityMode === "number2tick")   // Choose an other starting tick
         items.solutionGrad = randInt(exo.nbSeg - 2) + 1
 }
@@ -110,9 +114,30 @@ function createRuler() {
     var levelRules = items.levels[items.currentLevel].rules
     items.numberOfSubLevel = levelRules.nbOfQuestions
     buildRuler()
+    if(levelRules.denominator) {
+        items.denominator = levelRules.denominator
+    }
+    else {
+        items.denominator = 1
+    }
     var title = items.levels[items.currentLevel].title
     if (!levelRules.fitLimits)
         title = title.substr(0, title.length - 1) + " " + qsTr("(variable boundaries)") + title.substr(title.length - 1)
+}
+
+function updateNumpadWithDecimalPoint() {
+    // We only want to display the decimal point on levels with decimal numbers
+    var decimalPoint = Qt.locale(GCompris.ApplicationInfo.localeShort).decimalPoint;
+    // Arabic has a special decimal point but as we are displaying arabic numbers as Hebrew numbers, we use the . as separator
+    if(GCompris.ApplicationInfo.localeShort == "ar") {
+        decimalPoint = ".";
+    }
+    if(items.denominator == 1 && items.padModel.get(items.padModel.count-1).label == decimalPoint) {
+        items.padModel.remove(items.padModel.count-1);
+    }
+    else if(items.denominator != 1 && items.padModel.get(items.padModel.count-1).label != decimalPoint) {
+        items.padModel.append({ "label": decimalPoint, "key": Qt.Key_Period })
+    }
 }
 
 function moveLeft() {
@@ -140,12 +165,17 @@ function checkResult() {
     var success = false;
     switch (activityMode) {
     case "tick2number":
-        success = (items.cursor.children[items.solutionGrad].textValue === items.answer);
+        var locale = GCompris.ApplicationInfo.localeShort
+        if(locale == "ar") {
+            locale = "he";
+        }
+        var value = Number.fromLocaleString(Qt.locale(locale), items.cursor.children[items.solutionGrad].textValue) * items.denominator
+        success = (String(value) === items.answer)
         break
     case "number2tick":
-        success = (items.rulerModel.get(items.solutionGrad).value_.toString() === items.answer);
+        success = (items.rulerModel.get(items.solutionGrad).value_.toString() === items.answer)
         if (success)
-            items.cursor.children[items.solutionGrad].textValue = items.answer;
+            items.cursor.children[items.solutionGrad].textValue = items.boxText.text
         break
     }
     if (success) {
@@ -179,7 +209,8 @@ function initLevel() {
     items.currentSubLevel = 0;
     createLevel();
     createRuler();
- }
+    updateNumpadWithDecimalPoint();
+}
 
 function nextLevel() {
     items.score.stopWinAnimation()
@@ -224,6 +255,11 @@ function handleKeys(key) {
             break
         }
     }
+    // Handle separators the same (maybe, we'll need to add more here...)
+    if(key == Qt.Key_Comma) {
+        key = Qt.Key_Period
+    }
+
     switch (key) {
     case Qt.Key_Space:
     case Qt.Key_Return:
@@ -258,6 +294,24 @@ function handleKeys(key) {
             return
         if (items.cursor.children[items.solutionGrad].textValue.length < maxSolutionSize) {
             items.cursor.children[items.solutionGrad].textValue += key - '0'.charCodeAt(0)
+            items.numPad.currentIndex = mapToPad[key]
+            items.numPad.currentItem.state = "pressed"
+        } else {
+            items.smudgeSound.play()
+        }
+
+        break
+    case Qt.Key_Period:
+        if (activityMode === "number2tick")
+            return
+        var decimalPoint = Qt.locale(GCompris.ApplicationInfo.localeShort).decimalPoint
+        if(GCompris.ApplicationInfo.localeShort == "ar") {
+            decimalPoint = ".";
+        }
+
+        // Prevent to have multiple times the decimal point
+        if (items.cursor.children[items.solutionGrad].textValue.length < maxSolutionSize && items.cursor.children[items.solutionGrad].textValue.indexOf(decimalPoint) == -1) {
+            items.cursor.children[items.solutionGrad].textValue += decimalPoint
             items.numPad.currentIndex = mapToPad[key]
             items.numPad.currentItem.state = "pressed"
         } else {

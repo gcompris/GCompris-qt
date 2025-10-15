@@ -311,7 +311,9 @@ function convertNumberToLocaleString(decimalNumber, locale = GCompris.Applicatio
     // Special case for Arabic, we still want to use Arabic numerals, not Eastern Arabic numerals
     // For now, we consider dot separated numbers for Arabic
     var localeToConvertTo = (locale.startsWith("ar") ? "he" : locale);
-    return decimalNumber.toLocaleString(Qt.locale(localeToConvertTo), format, precision);
+    var qtLocale = Qt.locale(localeToConvertTo);
+    qtLocale.numberOptions = Qml.Locale.OmitGroupSeparator;
+    return decimalNumber.toLocaleString(qtLocale, format, precision);
 }
 
 function convertNumberToLocaleCurrencyString(number, locale) {

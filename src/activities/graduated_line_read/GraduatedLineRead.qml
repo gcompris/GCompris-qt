@@ -44,6 +44,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias score: score
             property alias numPad: numPad
+            property alias padModel: padModel
             property var levels: activity.datasets
             property alias goodAnswerSound: goodAnswerSound
             property alias badAnswerSound: badAnswerSound
@@ -57,10 +58,12 @@ ActivityBase {
             property alias rulerModel: rulerModel
             property alias leftLimit: leftLimit
             property alias rightLimit: rightLimit
+            property alias boxText: boxText
             property string answer: ""
             property alias errorRectangle: errorRectangle
             property bool buttonsBlocked: false
             property int segmentThickness: GCStyle.thinBorder
+            property int denominator: 1
         }
 
         onStart: { Activity.start(items, activity.activityMode) }
@@ -332,6 +335,7 @@ ActivityBase {
                 anchors.verticalCenter: leftButton.verticalCenter
                 visible: (activity.activityMode === "number2tick")
                 GCText {
+                    id: boxText
                     anchors.centerIn: parent
                     width: parent.width - GCStyle.baseMargins
                     height: parent.height - GCStyle.baseMargins
@@ -339,7 +343,14 @@ ActivityBase {
                     verticalAlignment: Text.AlignVCenter
                     fontSizeMode: Text.Fit
                     fontSize: mediumSize
-                    text: items.answer
+                    text: {
+                        if(items.denominator == 1) {
+                            return items.answer
+                        }
+                        else {
+                            return Activity.longInt(Number(items.answer) / items.denominator)
+                        }
+                    }
                 }
             }
 
