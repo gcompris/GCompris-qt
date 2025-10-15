@@ -1,13 +1,13 @@
 # Kristóf Kiszel <ulysses@kubuntu.org>, 2019.
-# Kristof Kiszel <kiszel.kristof@gmail.com>, 2021.
+# SPDX-FileCopyrightText: 2021, 2025 Kristof Kiszel <kiszel.kristof@gmail.com>
 # István Lipták <elistvan@gmail.com>, 2022, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-01-02 10:30+0100\n"
-"Last-Translator: István Lipták <elistvan@gmail.com>\n"
+"PO-Revision-Date: 2025-10-14 20:54+0200\n"
+"Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Loco-Source-Locale: hu_HU\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Lokalize 25.08.2\n"
 "X-Language: hu\n"
 "X-Qt-Contexts: true\n"
 "X-Loco-Parser: loco_parse_po\n"
@@ -27294,7 +27294,7 @@ msgstr "Letöltési hiba (code: %1): %2"
 #: core/DownloadDialog.qml:358
 msgctxt "DownloadDialog|"
 msgid "Your download finished successfully. The data files are now available."
-msgstr "A letöltés sikeresen befejeződött. Aza adatfájlok készen állnak."
+msgstr "A letöltés sikeresen befejeződött. Az adatfájlok készen állnak."
 
 #: core/DownloadDialog.qml:360
 msgctxt "DownloadDialog|"
