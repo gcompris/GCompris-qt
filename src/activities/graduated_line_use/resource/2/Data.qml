@@ -15,16 +15,20 @@ Data {
                 "fitLimits": true,
                 "range": [1, 7],
                 "steps": [1],
-                "segments": []
+                "segments": [],
+                "denominator": 7,
+                "useFractions": true
             }
         },
         {   "title": objective,
             "rules": {
                 "nbOfQuestions": 10,
                 "fitLimits": false,
-                "range": [1,7],
+                "range": [0,8],
                 "steps": [1],
-                "segments": [4, 6]
+                "segments": [4, 6],
+                "denominator": 2,
+                "useFractions": false
             }
         }
     ]

@@ -28,7 +28,8 @@ Data {
                 "range": [0,5],
                 "steps": [1],
                 "segments": [],
-                "denominator": 5
+                "denominator": 4,
+                "useFractions": false
             }
         }
     ]

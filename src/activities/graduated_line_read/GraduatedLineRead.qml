@@ -57,11 +57,13 @@ ActivityBase {
             property alias rulerModel: rulerModel
             property alias leftLimit: leftLimit
             property alias rightLimit: rightLimit
+            property alias boxText: boxText
             property string answer: ""
             property alias errorRectangle: errorRectangle
             property bool buttonsBlocked: false
             property int segmentThickness: GCStyle.thinBorder
             property int denominator: 1
+            property bool useFractions: true
         }
 
         onStart: { Activity.start(items, activity.activityMode) }
@@ -333,6 +335,7 @@ ActivityBase {
                 anchors.verticalCenter: leftButton.verticalCenter
                 visible: (activity.activityMode === "number2tick")
                 GCText {
+                    id: boxText
                     anchors.centerIn: parent
                     width: parent.width - GCStyle.baseMargins
                     height: parent.height - GCStyle.baseMargins
@@ -340,7 +343,7 @@ ActivityBase {
                     verticalAlignment: Text.AlignVCenter
                     fontSizeMode: Text.Fit
                     fontSize: mediumSize
-                    text: items.denominator == 1 ? items.answer : items.answer + " / " + items.denominator
+                    text: items.denominator == 1 ? items.answer : items.useFractions ? items.answer + " / " + items.denominator : Number(items.answer) / items.denominator
                 }
             }
 

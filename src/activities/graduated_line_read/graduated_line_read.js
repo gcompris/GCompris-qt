@@ -101,9 +101,14 @@ function buildRuler() {     // Read from exercises with currentSubLevel index
     if (items.levels[items.currentLevel].rules.denominator) {
         denominator = items.levels[items.currentLevel].rules.denominator
     }
-    items.leftLimit.text = longInt(items.rulerModel.get(min).value_ / denominator)
-    items.rightLimit.text = longInt(items.rulerModel.get(max).value_ / denominator)
-
+    if(items.levels[items.currentLevel].rules.useFractions) {
+        items.leftLimit.text = longInt(items.rulerModel.get(min).value_) + " / " + denominator
+        items.rightLimit.text = longInt(items.rulerModel.get(max).value_) + " / " + denominator
+    }
+    else {
+        items.leftLimit.text = longInt(items.rulerModel.get(min).value_ / denominator)
+        items.rightLimit.text = longInt(items.rulerModel.get(max).value_ / denominator)
+    }
     items.solutionGrad = exo.solution
     items.answer = items.rulerModel.get(items.solutionGrad).value_.toString()
     if (activityMode === "number2tick")   // Choose an other starting tick
@@ -120,7 +125,12 @@ function createRuler() {
     else {
         items.denominator = 1
     }
-
+    if(levelRules.useFractions) {
+        items.useFractions = levelRules.useFractions
+    }
+    else {
+        items.useFractions = false
+    }
     var title = items.levels[items.currentLevel].title
     if (!levelRules.fitLimits)
         title = title.substr(0, title.length - 1) + " " + qsTr("(variable boundaries)") + title.substr(title.length - 1)
@@ -156,7 +166,7 @@ function checkResult() {
     case "number2tick":
         success = (items.rulerModel.get(items.solutionGrad).value_.toString() === items.answer)
         if (success)
-            items.cursor.children[items.solutionGrad].textValue = items.denominator == 1 ? items.answer : items.answer + " / " + items.denominator
+            items.cursor.children[items.solutionGrad].textValue = items.boxText.text
         break
     }
     if (success) {
