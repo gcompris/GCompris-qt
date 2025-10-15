@@ -100,9 +100,26 @@ function buildRuler() {     // Read from exercises with currentSubLevel index
     if (items.levels[items.currentLevel].rules.denominator && items.levels[items.currentLevel].rules.denominator != 1) {
         denominator = items.levels[items.currentLevel].rules.denominator
     }
-    items.leftLimit.text = longInt(items.rulerModel.get(min).value_ / denominator)
-    items.rightLimit.text = longInt(items.rulerModel.get(max).value_ / denominator)
-
+    if(items.levels[items.currentLevel].rules.useFractions) {
+        var leftLimit = longInt(items.rulerModel.get(min).value_)
+        var rightLimit = longInt(items.rulerModel.get(max).value_)
+        if(leftLimit % denominator == 0) {
+            items.leftLimit.text = leftLimit / denominator
+        }
+        else {
+            items.leftLimit.text = leftLimit + " / " + denominator
+        }
+        if(rightLimit % denominator == 0) {
+            items.rightLimit.text = rightLimit / denominator
+        }
+        else {
+            items.rightLimit.text = rightLimit + " / " + denominator
+        }
+    }
+    else {
+        items.leftLimit.text = longInt(items.rulerModel.get(min).value_ / denominator)
+        items.rightLimit.text = longInt(items.rulerModel.get(max).value_ / denominator)
+    }
     items.solutionGrad = exo.solution
     items.answer = items.rulerModel.get(items.solutionGrad).value_.toString()
     maxSolutionSize = String(longInt(items.answer) / denominator).length
@@ -119,6 +136,12 @@ function createRuler() {
     }
     else {
         items.denominator = 1
+    }
+    if(levelRules.useFractions) {
+        items.useFractions = levelRules.useFractions
+    }
+    else {
+        items.useFractions = false
     }
     var title = items.levels[items.currentLevel].title
     if (!levelRules.fitLimits)
@@ -302,7 +325,7 @@ function handleKeys(key) {
 
         break
     case Qt.Key_Period:
-        if (activityMode === "number2tick" || items.denominator == 1)
+        if (activityMode === "number2tick" || items.useFractions)
             return
         var decimalPoint = Qt.locale(GCompris.ApplicationInfo.localeShort).decimalPoint
         if(GCompris.ApplicationInfo.localeShort == "ar") {

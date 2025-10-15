@@ -64,6 +64,7 @@ ActivityBase {
             property bool buttonsBlocked: false
             property int segmentThickness: GCStyle.thinBorder
             property int denominator: 1
+            property bool useFractions: true
         }
 
         onStart: { Activity.start(items, activity.activityMode) }
@@ -350,6 +351,14 @@ ActivityBase {
                     text: {
                         if(items.denominator == 1) {
                             return items.answer
+                        }
+                        else if (items.useFractions) {
+                            if(items.answer % items.denominator == 0) {
+                                return Activity.longInt(Number(items.answer) / items.denominator)
+                            }
+                            else {
+                                 return Number(items.answer) + " / " + items.denominator
+                           }
                         }
                         else {
                             return Activity.longInt(Number(items.answer) / items.denominator)
