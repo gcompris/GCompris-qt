@@ -97,8 +97,12 @@ function buildRuler() {     // Read from exercises with currentSubLevel index
     maxSolutionSize = start.toString().length
     var min = (items.orientation === Qt.LeftToRight) ? 0 : items.rulerModel.count -1
     var max = (items.orientation === Qt.LeftToRight) ? items.rulerModel.count -1 : 0
-    items.leftLimit.text = longInt(items.rulerModel.get(min).value_)
-    items.rightLimit.text = longInt(items.rulerModel.get(max).value_)
+    var denominator = 1
+    if (items.levels[items.currentLevel].rules.denominator) {
+        denominator = items.levels[items.currentLevel].rules.denominator
+    }
+    items.leftLimit.text = longInt(items.rulerModel.get(min).value_ / denominator)
+    items.rightLimit.text = longInt(items.rulerModel.get(max).value_ / denominator)
 
     items.solutionGrad = exo.solution
     items.answer = items.rulerModel.get(items.solutionGrad).value_.toString()
@@ -110,6 +114,13 @@ function createRuler() {
     var levelRules = items.levels[items.currentLevel].rules
     items.numberOfSubLevel = levelRules.nbOfQuestions
     buildRuler()
+    if(levelRules.denominator) {
+        items.denominator = levelRules.denominator
+    }
+    else {
+        items.denominator = 1
+    }
+
     var title = items.levels[items.currentLevel].title
     if (!levelRules.fitLimits)
         title = title.substr(0, title.length - 1) + " " + qsTr("(variable boundaries)") + title.substr(title.length - 1)
@@ -140,12 +151,12 @@ function checkResult() {
     var success = false;
     switch (activityMode) {
     case "tick2number":
-        success = (items.cursor.children[items.solutionGrad].textValue === items.answer);
+        success = (items.cursor.children[items.solutionGrad].textValue === items.answer)
         break
     case "number2tick":
-        success = (items.rulerModel.get(items.solutionGrad).value_.toString() === items.answer);
+        success = (items.rulerModel.get(items.solutionGrad).value_.toString() === items.answer)
         if (success)
-            items.cursor.children[items.solutionGrad].textValue = items.answer;
+            items.cursor.children[items.solutionGrad].textValue = items.denominator == 1 ? items.answer : items.answer + " / " + items.denominator
         break
     }
     if (success) {

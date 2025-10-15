@@ -25,9 +25,10 @@ Data {
             "rules": {
                 "nbOfQuestions": 6,
                 "fitLimits": true,
-                "range": [1,5],
+                "range": [0,5],
                 "steps": [1],
-                "segments": []
+                "segments": [],
+                "denominator": 5
             }
         }
     ]

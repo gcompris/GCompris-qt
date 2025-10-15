@@ -61,6 +61,7 @@ ActivityBase {
             property alias errorRectangle: errorRectangle
             property bool buttonsBlocked: false
             property int segmentThickness: GCStyle.thinBorder
+            property int denominator: 1
         }
 
         onStart: { Activity.start(items, activity.activityMode) }
@@ -339,7 +340,7 @@ ActivityBase {
                     verticalAlignment: Text.AlignVCenter
                     fontSizeMode: Text.Fit
                     fontSize: mediumSize
-                    text: items.answer
+                    text: items.denominator == 1 ? items.answer : items.answer + " / " + items.denominator
                 }
             }
 
