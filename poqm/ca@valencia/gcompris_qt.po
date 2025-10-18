@@ -6,9 +6,9 @@
 #
 # SPDX-FileCopyrightText: 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Antoni Bella Pérez <antonibella5@yahoo.com>
 # SPDX-FileCopyrightText: 2025 Anna Miró <ame.cic98@gmail.com>
-# Xavier A. Conde Rueda <xavi.conde@gmail.com>, 2003, 2004, 2005, 2006, 2007.
-# Francesc Vilches Batet <francesc-vilches@gmail.com>, 2007, 2008.
-# Pau Iranzo <paugnu@gmail.com>, 2010.
+# SPDX-FileCopyrightText: 2003, 2004, 2005, 2006, 2007 Xavier A. Conde Rueda <xavi.conde@gmail.com>
+# SPDX-FileCopyrightText: 2007, 2008 Francesc Vilches Batet <francesc-vilches@gmail.com>
+# SPDX-FileCopyrightText: 2010 Pau Iranzo <paugnu@gmail.com>
 # SPDX-FileCopyrightText: 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Josep M. Ferrer <txemaq@gmail.com>
 msgid ""
 msgstr ""
