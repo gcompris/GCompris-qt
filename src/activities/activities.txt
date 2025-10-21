@@ -46,6 +46,7 @@ comparator
 crane
 details
 digital_electricity
+drawing_wheels
 drawletters
 drawnumbers
 enumerate
