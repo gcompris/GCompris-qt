@@ -3910,6 +3910,12 @@ SPDX-FileCopyrightText = "2024 Godlove Kyando"
 SPDX-License-Identifier = "CC0-1.0"
 
 [[annotations]]
+path = "src/activities/lang/resource/content-ta.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Prasad Ramalingam"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
 path = "src/activities/lang/resource/content-tr.json"
 precedence = "aggregate"
 SPDX-FileCopyrightText = ["2020 Filiz Alver", "2022 Emir SARI"]
