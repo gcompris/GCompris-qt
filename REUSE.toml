@@ -3165,6 +3165,12 @@ SPDX-FileCopyrightText = "2013 gunchleoc"
 SPDX-License-Identifier = "CC0-1.0"
 
 [[annotations]]
+path = "src/activities/gletters/resource/default-kn.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Priya C H and Praveen Kumar"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
 path = "src/activities/gletters/resource/default-lt.json"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2013 gunchleoc"
