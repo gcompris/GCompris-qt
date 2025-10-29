@@ -1531,6 +1531,12 @@ SPDX-FileCopyrightText = "2022 Besnik Bleta"
 SPDX-License-Identifier = "CC0-1.0"
 
 [[annotations]]
+path = "src/activities/click_on_letter/resource/levels-ta.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Prasad Ramalingam"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
 path = "src/activities/click_on_letter/resource/levels-tr.json"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2023 Emir SARI"
