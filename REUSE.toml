@@ -3932,6 +3932,12 @@ SPDX-FileCopyrightText = "2023 Temuri Doghonadze"
 SPDX-License-Identifier = "CC0-1.0"
 
 [[annotations]]
+path = "src/activities/lang/resource/content-kn.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Priya C H and Praveen Kumar"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
 path = "src/activities/lang/resource/content-lt.json"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2021 Rolandas Jakštys"
