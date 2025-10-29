@@ -1,0 +1,18 @@
+[
+    { "level": 1, "questions": "ಅ|ಆ|ಇ|ಈ|ಉ|ಊ", "answers": "ಅ|ಆ|ಇ|ಈ|ಉ|ಊ" },
+    { "level": 2, "questions": "ಋ|ಎ|ಏ|ಐ|ಒ|ಓ", "answers": "ಋ|ಎ|ಏ|ಐ|ಒ|ಓ" },
+    { "level": 3, "questions": "ಕ|ಅ|ಗ|ಆ|ಙ|ಚ", "answers": "ಕ|ಅ|ಗ|ಆ|ಙ|ಚ" },
+    { "level": 4, "questions": "ಕ|ಖ|ಗ|ಘ|ಙ", "answers": "ಕ|ಖ|ಗ|ಘ|ಙ" },
+    { "level": 5, "questions": "ಚ|ಛ|ಜ|ಝ|ಞ", "answers": "ಚ|ಛ|ಜ|ಝ|ಞ" },
+    { "level": 6, "questions": "ಟ|ಠ|ಡ|ಢ|ಣ", "answers": "ಟ|ಠ|ಡ|ಢ|ಣ" },
+    { "level": 7, "questions": "ತ|ಥ|ದ|ಧ|ನ", "answers": "ತ|ಥ|ದ|ಧ|ನ" },
+    { "level": 8, "questions": "ಪ|ಫ|ಬ|ಭ|ಮ", "answers": "ಪ|ಫ|ಬ|ಭ|ಮ" },
+    { "level": 9, "questions": "ಯ|ರ|ಲ|ವ|ಶ", "answers": "ಯ|ರ|ಲ|ವ|ಶ" },
+    { "level": 10, "questions": "ಷ|ಸ|ಹ|ಳ|ಡ|ಭ", "answers": "ಷ|ಸ|ಹ|ಳ|ಡ|ಭ" },
+    { "level": 11, "questions": "ಕ|ಚ|ಟ|ತ|ಪ", "answers": "ಕ|ಚ|ಟ|ತ|ಪ" },
+    { "level": 12, "questions": "ಆ|ಆ|ಇ|ಈ|ಉ|ಊ|ಋ|ಎ|ಏ|ಐ|ಒ|ಓ|ಔ", "answers": "ಆ|ಆ|ಇ|ಈ|ಉ|ಊ|ಋ|ಎ|ಏ|ಐ|ಒ|ಓ|ಔ" },
+    { "level": 13, "questions": "ಕ|ಖ|ಗ|ಘ|ಙ|ಚ|ಛ|ಜ|ಝ|ಞ", "answers": "ಕ|ಖ|ಗ|ಘ|ಙ|ಚ|ಛ|ಜ|ಝ|ಞ" },
+    { "level": 14, "questions": "ಟ|ಠ|ಡ|ಢ|ಣ|ತ|ಥ|ದ|ಧ|ನ", "answers": "ಟ|ಠ|ಡ|ಢ|ಣ|ತ|ಥ|ದ|ಧ|ನ" },
+    { "level": 15, "questions": "ಪ|ಫ|ಬ|ಭ|ಮ|ಯ|ರ|ಲ|ವ|ಶ", "answers": "ಪ|ಫ|ಬ|ಭ|ಮ|ಯ|ರ|ಲ|ವ|ಶ" },
+    { "level": 16, "questions": "ಷ|ಸ|ಹ|ಳ|ಪ|ಬ|ಧ|ಖ|ಯ|ಮ|ಗ", "answers": "ಷ|ಸ|ಹ|ಳ|ಪ|ಬ|ಧ|ಖ|ಯ|ಮ|ಗ" }
+]
