@@ -270,6 +270,9 @@ void ClientNetworkMessages::readFromSocket()
         case netconst::DATASET_REMOVE:
             ActivityInfoTree::getInstance()->removeDataset(obj["content"].toObject());
             break;
+        case netconst::DATASET_REMOVE_ALL:
+            ActivityInfoTree::getInstance()->removeAllLocalDatasets();
+            break;
         case netconst::PONG:
             _wait4pong = false;
             break;
