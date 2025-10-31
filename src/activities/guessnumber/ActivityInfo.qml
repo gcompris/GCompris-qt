@@ -18,7 +18,6 @@ ActivityInfo {
   //  intro: "Find out the number by typing a number from the range proposed."
   //: Help goal
   goal: qsTr("Practice comparing numbers.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Read the instructions that give you the range of the number to find. Enter a number in the top right entry box. You will be told if your number is higher or lower than the one to find. Then try again until you find the correct answer. The distance between Tux and the right side of the screen represents how far you are from the number to find. If Tux is over or under the vertical center of the screen, it means your number is over or under the number to find.") + ("<br><br>") +

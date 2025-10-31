@@ -21,7 +21,6 @@ ActivityInfo {
   //intro: "Use the tools to draw images."
   //: Help goal
   goal: qsTr("Learn about some digital painting tools.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Select tools and colors from the foldable panels and draw images.<br><br>") +
