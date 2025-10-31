@@ -64,6 +64,7 @@ public:
 
     void createDataset(const QJsonObject &dataset);
     void removeDataset(const QJsonObject &dataset);
+    void removeAllLocalDatasets();
 
 protected:
     static ActivityInfoTree *m_instance;

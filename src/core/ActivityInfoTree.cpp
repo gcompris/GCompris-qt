@@ -485,7 +485,27 @@ void ActivityInfoTree::removeDataset(const QJsonObject &dataset)
         if (activity->name().split("/").at(0) == activityName) {
             activity->removeDataset(datasetName);
             activity->fillDatasets(engine);
+
+            if (QStringList ignoredLevels = ApplicationSettings::getInstance()->ignoredLevels(activityName); ignoredLevels.contains(datasetName)) {
+                ignoredLevels.removeOne(datasetName);
+                ApplicationSettings::getInstance()->setIgnoredLevels(activityName, ignoredLevels);
+            }
             break;
+        }
+    }
+}
+
+void ActivityInfoTree::removeAllLocalDatasets()
+{
+    const QString datasetFolder(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation));
+    QDir datasetsDir(datasetFolder);
+    for (const QFileInfo &activityFolder: datasetsDir.entryInfoList(QDir::AllDirs| QDir::NoDotAndDotDot)) {
+        QJsonObject dataset;
+        dataset["activity_name"] = activityFolder.fileName();
+        QDir activityDir(activityFolder.absoluteFilePath());
+        for (const QFileInfo &datasetFolder: activityDir.entryInfoList(QDir::AllDirs | QDir::NoDotAndDotDot)) {
+            dataset["dataset_name"] = datasetFolder.fileName();
+            removeDataset(dataset);
         }
     }
 }

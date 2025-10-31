@@ -27,6 +27,7 @@ namespace netconst {
         ACTIVITY_DATA,
         DATASET_CREATION,
         DATASET_REMOVE,
+        DATASET_REMOVE_ALL,
         PING,
         PONG
     };
