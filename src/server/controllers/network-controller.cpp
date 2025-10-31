@@ -187,9 +187,8 @@ namespace controllers {
         if (user) {
             sendNetLog(QString("Client disconnected: %1").arg(user->getUserName()));
             bool reconnected = false;
-            QList<QTcpSocket *> sockets = usersMap.keys();
-            for (int i = 0; i < sockets.size(); i++) {
-                UserData *loopUser = usersMap.value(sockets.at(i));
+
+            for (const auto &[_, loopUser] : std::as_const(usersMap).asKeyValueRange()) {
                 if ((user != loopUser) && (user->getUserId() == loopUser->getUserId())) {
                     reconnected = true;
                 }
@@ -211,12 +210,10 @@ namespace controllers {
     void NetworkController::disconnectSession(const int userId)
     {
         QJsonObject obj { { "aType", netconst::DISCONNECT } };
-        QList<QTcpSocket *> sockets = usersMap.keys();
-        for (int i = 0; i < sockets.size(); i++) {
-            UserData *loopUser = usersMap.value(sockets.at(i));
-            if (loopUser->getUserId() == userId) {
-                sendJson(sockets.at(i), obj);
-                sendNetLog(QString("Disconnect sent to user %1").arg(loopUser->getUserName()));
+        for (const auto &[socket, user] : std::as_const(usersMap).asKeyValueRange()) {
+            if (user->getUserId() == userId) {
+                sendJson(socket, obj);
+                sendNetLog(QString("Disconnect sent to user %1").arg(user->getUserName()));
             }
         }
         Q_EMIT socketCountChanged();
@@ -238,52 +235,66 @@ namespace controllers {
         obj.insert("content", QJsonArray::fromStringList(selectedUsers));
         int count = 0;
 
-        QList<QTcpSocket *> sockets = usersMap.keys();
-        for (int i = 0; i < sockets.size(); i++) {
-            if (usersMap.value(sockets.at(i))->getUserId() == -1) { // Send to non connected users
-                sendJson(sockets.at(i), obj);
+        for (const auto &[socket, user] : std::as_const(usersMap).asKeyValueRange()) {
+            if (user->getUserId() == -1) { // Send to non connected users
+                sendJson(socket, obj);
                 count++;
             }
         }
         sendNetLog(QString("Login list sended to %1 users").arg(count));
     }
 
-    void NetworkController::sendDatasetToUsers(const QJsonValue &dataset_content, const QStringList &selectedUsers)
+    void NetworkController::sendDatasetToUsers(const QJsonValue &dataset_content, const QList<int> &selectedUsersId)
     {
-        qDebug() << "NetworkController::sendDatasetToUsers" << dataset_content << selectedUsers;
+        qDebug() << "NetworkController::sendDatasetToUsers" << dataset_content << selectedUsersId;
         QJsonObject obj { { "aType", netconst::DATASET_CREATION } };
         obj.insert("content", dataset_content);
         int count = 0;
 
         qDebug() << obj;
-        QList<QTcpSocket *> sockets = usersMap.keys();
-        for (int i = 0; i < sockets.size(); i++) {
-        // TODO retrieve the selected users and only send to them, not all connected
-            if (usersMap.value(sockets.at(i))->getUserId() != -1) { // Send to non connected users
-                sendJson(sockets.at(i), obj);
+        for (const auto &[socket, user] : std::as_const(usersMap).asKeyValueRange()) {
+            int socketUserId = user->getUserId();
+            if (selectedUsersId.contains(socketUserId)) { // Send to connected users
+                sendJson(socket, obj);
                 count++;
             }
         }
         sendNetLog(QString("Dataset sent to %1 users").arg(count));
     }
 
-    void NetworkController::removeDatasetToUsers(const QJsonValue &dataset_content, const QStringList &selectedUsers)
+    void NetworkController::removeDatasetToUsers(const QJsonValue &dataset_content, const QList<int> &selectedUsersId)
     {
-        qDebug() << "NetworkController::removeDatasetToUsers" << dataset_content << selectedUsers;
+        qDebug() << "NetworkController::removeDatasetToUsers" << dataset_content << selectedUsersId;
         QJsonObject obj { { "aType", netconst::DATASET_REMOVE } };
         obj.insert("content", dataset_content);
         int count = 0;
 
         qDebug() << obj;
-        QList<QTcpSocket *> sockets = usersMap.keys();
-        for (int i = 0; i < sockets.size(); i++) {
-        // TODO retrieve the selected users and only send to them, not all connected
-            if (usersMap.value(sockets.at(i))->getUserId() != -1) { // Send to non connected users
-                sendJson(sockets.at(i), obj);
+        for (const auto &[socket, user] : std::as_const(usersMap).asKeyValueRange()) {
+            int socketUserId = user->getUserId();
+            if (selectedUsersId.contains(socketUserId)) { // Send to connected users
+                sendJson(socket, obj);
                 count++;
             }
         }
         sendNetLog(QString("Dataset removed for %1 users").arg(count));
+    }
+
+    void NetworkController::removeAllDatasetsToUsers(const QList<int> &selectedUsersId)
+    {
+        qDebug() << "NetworkController::removeAllDatasetsToUsers" << selectedUsersId;
+        QJsonObject obj { { "aType", netconst::DATASET_REMOVE_ALL } };
+        int count = 0;
+
+        qDebug() << obj;
+        for (const auto &[socket, user] : std::as_const(usersMap).asKeyValueRange()) {
+            int socketUserId = user->getUserId();
+            if (selectedUsersId.contains(socketUserId)) { // Send to connected users
+                sendJson(socket, obj);
+                count++;
+            }
+        }
+        sendNetLog(QString("All datasets removed for %1 users").arg(count));
     }
 
     void NetworkController::acceptPassword(const int userId, const QString &userName)
@@ -371,6 +382,7 @@ namespace controllers {
             }
         }
 
+        broadcastIPs << "127.0.0.255";
         broadcastIPs << "255.255.255.255";
 
         return QJsonObject {

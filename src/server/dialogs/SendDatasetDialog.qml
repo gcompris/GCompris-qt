@@ -19,8 +19,8 @@ import "../components"
 
 Popup {
     id: sendDatasetDialog
-
-    property bool sendMode: true        // send dataset or remove dataset from pupil
+    enum MessageType { Send, Remove, RemoveAll }
+    property int messageType: SendDatasetDialog.MessageType.Send
 
     property var datasetToSend
     anchors.centerIn: Overlay.overlay
@@ -35,8 +35,7 @@ Popup {
 
     function openDatasetDialog(dataset, mode) {
         datasetToSend = dataset
-        sendMode = mode
-        // print("JJ openDatasetDialog", JSON.stringify(datasetToSend), sendMode)
+        messageType = mode
         open()
     }
 
@@ -50,13 +49,25 @@ Popup {
         }
     }
 
-    // TODO from networkController: send/remove only to selected users and not all connected
     function validateDialog() {
-        if(sendMode) {
-            networkController.sendDatasetToUsers(datasetToSend, {})
+        var users = [];
+        // Retrieve checked users
+        for(var i = 0 ; i < pupilModel.count ; i ++) {
+            var user = pupilModel.get(i)
+            if(user.user_checked) {
+                users.push(user.user_id);
+            }
         }
-        else {
-            networkController.removeDatasetToUsers(datasetToSend, {})
+        switch(messageType) {
+            case SendDatasetDialog.MessageType.Send:
+            networkController.sendDatasetToUsers(datasetToSend, users)
+            break;
+            case SendDatasetDialog.MessageType.Remove:
+            networkController.removeDatasetToUsers(datasetToSend, users)
+            break;
+            case SendDatasetDialog.MessageType.RemoveAll:
+            networkController.removeAllDatasetsToUsers(users)
+            break;
         }
         sendDatasetDialog.close()
     }
@@ -79,8 +90,9 @@ Popup {
             font.pixelSize: Style.textSize
             font.bold: true
             wrapMode: Text.WordWrap
-            text: sendDatasetDialog.sendMode ? qsTr("Do you want to send the dataset to selected pupils?")
-            : qsTr("Are you sure you want to remove the dataset from selected pupils?")
+            text: sendDatasetDialog.messageType === SendDatasetDialog.MessageType.Send ? qsTr("Do you want to send the dataset to selected pupils?")
+            : sendDatasetDialog.messageType === SendDatasetDialog.MessageType.Remove ? qsTr("Are you sure you want to remove the dataset from selected pupils?")
+            : qsTr("Are you sure you want to remove all the existing datasets from selected pupils?")
         }
 
         Rectangle {
@@ -152,6 +164,7 @@ Popup {
                     width: groupNamesListView.width
                     text: user_name
                     checked: user_checked
+                    onCheckedChanged: user_checked = checked
                     ButtonGroup.group: pupilButtonsGroup
                 }
             }
