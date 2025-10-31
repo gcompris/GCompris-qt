@@ -142,7 +142,7 @@ Item {
                             "dataset_objective": dataset.dataset_objective,
                             "dataset_difficulty": dataset.dataset_difficulty,
                             "dataset_content": dataset.dataset_content};
-                        sendDatasetDialog.openDatasetDialog(datasetJson, true)
+                        sendDatasetDialog.openDatasetDialog(datasetJson, SendDatasetDialog.MessageType.Send)
                     }
                 }
 
@@ -157,22 +157,33 @@ Item {
                             "activity_name": dataset.activity_name,
                             "dataset_name": dataset.dataset_name,
                         };
-                        sendDatasetDialog.openDatasetDialog(datasetJson, false)
+                        sendDatasetDialog.openDatasetDialog(datasetJson, SendDatasetDialog.MessageType.Remove)
                     }
                 }
             }
 
-            ViewButton {
-                width: splitDatasetView.bigButtonWidth
-                height: splitDatasetView.bigButtonHeight
+            Column {
                 anchors {
                     bottom: parent.bottom
                     margins: Style.bigMargins
                     horizontalCenter: parent.horizontalCenter
                 }
-                text: "\uf0c7 " + qsTr("Remove dataset")
-                enabled: datasetsView.selectedDataset != -1
-                onClicked: removeDatasetDialog.open()
+                ViewButton {
+                    width: splitDatasetView.bigButtonWidth
+                    height: splitDatasetView.bigButtonHeight
+                    text: "\uf65d " + qsTr("Remove all from clients")
+                    onClicked: {
+                        sendDatasetDialog.openDatasetDialog({}, SendDatasetDialog.MessageType.RemoveAll)
+                    }
+                }
+
+                ViewButton {
+                    width: splitDatasetView.bigButtonWidth
+                    height: splitDatasetView.bigButtonHeight
+                    text: "\uf0c7 " + qsTr("Remove dataset")
+                    enabled: datasetsView.selectedDataset != -1
+                    onClicked: removeDatasetDialog.open()
+                }
             }
         }
 

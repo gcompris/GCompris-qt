@@ -92,8 +92,9 @@ namespace controllers {
         Q_INVOKABLE void disconnectSession(const int userId);
         Q_INVOKABLE void acceptPassword(const int userId, const QString &userName);
 
-        Q_INVOKABLE void sendDatasetToUsers(const QJsonValue &dataset_content, const QStringList &selectedUsers);
-        Q_INVOKABLE void removeDatasetToUsers(const QJsonValue &dataset_content, const QStringList &selectedUsers);
+        Q_INVOKABLE void sendDatasetToUsers(const QJsonValue &dataset_content, const QList<int> &selectedUsersId);
+        Q_INVOKABLE void removeDatasetToUsers(const QJsonValue &dataset_content, const QList<int> &selectedUsersId);
+        Q_INVOKABLE void removeAllDatasetsToUsers(const QList<int> &selectedUsersId);
 
         Q_INVOKABLE void disconnectPendingSockets();
 
