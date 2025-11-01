@@ -259,7 +259,7 @@ msgstr ""
 #: activities/graph-coloring/ActivityInfo.qml:25
 #: activities/gravity/ActivityInfo.qml:28
 #: activities/guess24/ActivityInfo.qml:24
-#: activities/guessnumber/ActivityInfo.qml:25
+#: activities/guessnumber/ActivityInfo.qml:24
 #: activities/instruments/ActivityInfo.qml:24
 #: activities/land_safe/ActivityInfo.qml:28 activities/lang/ActivityInfo.qml:33
 #: activities/learn_additions/ActivityInfo.qml:24
@@ -314,7 +314,7 @@ msgstr ""
 #: activities/redraw_symmetrical/ActivityInfo.qml:25
 #: activities/roman_numerals/ActivityInfo.qml:25
 #: activities/simplepaint/ActivityInfo.qml:24
-#: activities/sketch/ActivityInfo.qml:28
+#: activities/sketch/ActivityInfo.qml:27
 #: activities/smallnumbers/ActivityInfo.qml:25
 #: activities/smallnumbers2/ActivityInfo.qml:25
 #: activities/solar_system/ActivityInfo.qml:27
@@ -15797,7 +15797,7 @@ msgid "Practice comparing numbers."
 msgstr "கூட்டல் செயல்பாடுகள் பயிற்சி செய்வோம்."
 
 #. Help manual
-#: activities/guessnumber/ActivityInfo.qml:24
+#: activities/guessnumber/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Read the instructions that give you the range of the number to find. Enter a "
@@ -15816,12 +15816,12 @@ msgstr ""
 "குறிப்பிடுகிறது. டக்ஸ் திரையின் செங்குத்து மையத்திற்கு மேலே அல்லது கீழே இருந்தால், நீங்கள் "
 "கண்டுபிடிக்க வேண்டிய எண் மேலே அல்லது கீழே உள்ளது என்று பொருள்."
 
-#: activities/guessnumber/ActivityInfo.qml:26
+#: activities/guessnumber/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Digits: enter a number"
 msgstr "எண்கள்: ஒரு எண்ணை உள்ளிடுவதற்கு"
 
-#: activities/guessnumber/ActivityInfo.qml:27
+#: activities/guessnumber/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
 msgstr "பேக்ஸ்பேஸ்: ஒரு எண்ணை நீக்க"
@@ -25141,13 +25141,13 @@ msgid "Learn about some digital painting tools."
 msgstr "மடங்கு, காரணிகளைப் பற்றி கற்போம்."
 
 #. Help manual
-#: activities/sketch/ActivityInfo.qml:27
+#: activities/sketch/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
 msgstr ""
 
-#: activities/sketch/ActivityInfo.qml:29
+#: activities/sketch/ActivityInfo.qml:28
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Ctrl + Z: undo"
@@ -25155,12 +25155,12 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
 msgstr "Ctrl + Z: செயலை தவிர்க்க"
 
-#: activities/sketch/ActivityInfo.qml:30
+#: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
 msgstr ""
 
-#: activities/sketch/ActivityInfo.qml:31
+#: activities/sketch/ActivityInfo.qml:30
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Ctrl + A: select all the text"
@@ -25168,22 +25168,22 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
 msgstr "Ctrl + A: அனைத்து உரைகளையும் தேர்ந்தெடுக்க"
 
-#: activities/sketch/ActivityInfo.qml:32
+#: activities/sketch/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr ""
 
-#: activities/sketch/ActivityInfo.qml:33
+#: activities/sketch/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Ctrl + N, Delete or Backspace: create a new image"
 msgstr ""
 
-#: activities/sketch/ActivityInfo.qml:34
+#: activities/sketch/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Brush smoothing concept from:"
 msgstr ""
 
-#: activities/sketch/ActivityInfo.qml:35
+#: activities/sketch/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Sketch brush concept from:"
 msgstr ""

@@ -207,7 +207,7 @@ msgstr ""
 #: activities/graph-coloring/ActivityInfo.qml:25
 #: activities/gravity/ActivityInfo.qml:28
 #: activities/guess24/ActivityInfo.qml:24
-#: activities/guessnumber/ActivityInfo.qml:25
+#: activities/guessnumber/ActivityInfo.qml:24
 #: activities/instruments/ActivityInfo.qml:24
 #: activities/land_safe/ActivityInfo.qml:28 activities/lang/ActivityInfo.qml:33
 #: activities/learn_additions/ActivityInfo.qml:24
@@ -262,7 +262,7 @@ msgstr ""
 #: activities/redraw_symmetrical/ActivityInfo.qml:25
 #: activities/roman_numerals/ActivityInfo.qml:25
 #: activities/simplepaint/ActivityInfo.qml:24
-#: activities/sketch/ActivityInfo.qml:28
+#: activities/sketch/ActivityInfo.qml:27
 #: activities/smallnumbers/ActivityInfo.qml:25
 #: activities/smallnumbers2/ActivityInfo.qml:25
 #: activities/solar_system/ActivityInfo.qml:27
@@ -15206,7 +15206,7 @@ msgid "Practice comparing numbers."
 msgstr "സംഖ്യകൾ താരതമ്യം ചെയ്യാൻ പരിശീലിക്കൽ."
 
 #. Help manual
-#: activities/guessnumber/ActivityInfo.qml:24
+#: activities/guessnumber/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Read the instructions that give you the range of the number to find. Enter a "
@@ -15224,12 +15224,12 @@ msgstr ""
 "സൂചിപ്പിക്കുന്നു. ടക്സ് സ്ക്രീനിന്റെ ലംബ കേന്ദ്രത്തിനു മുകളിലോ താഴെയോ ആണെങ്കിൽ അതിനർത്ഥം, "
 "നിങ്ങളുടെ സംഖ്യ കണ്ടത്തേണ്ട സംഖ്യയുടെ മുകളിലോ താഴെയോ ആണെന്നാണ്."
 
-#: activities/guessnumber/ActivityInfo.qml:26
+#: activities/guessnumber/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Digits: enter a number"
 msgstr "സംഖ്യകൾ: ഒരു സംഖ്യ നൽകാൻ"
 
-#: activities/guessnumber/ActivityInfo.qml:27
+#: activities/guessnumber/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
 msgstr "ബാക്ക്‌സ്പെയ്സ്: ഒരു സംഖ്യ മായിക്കാൻ"
@@ -24021,44 +24021,44 @@ msgid "Learn about some digital painting tools."
 msgstr "ഡിജിറ്റൽ പെയിന്റിങ് ടൂളുകളെ കുറിച്ച് പഠിക്കൽ."
 
 #. Help manual
-#: activities/sketch/ActivityInfo.qml:27
+#: activities/sketch/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
 msgstr ""
 "ടൂളുകളും നിറങ്ങളും മടക്കാവുന്ന പാനലുകളിൽ നിന്നും തിരഞ്ഞെടുത്ത് ചിത്രങ്ങൾ വരയ്ക്കുക.<br><br>"
 
-#: activities/sketch/ActivityInfo.qml:29
+#: activities/sketch/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
 msgstr "Ctrl + Z: അൺഡു ചെയ്യാൻ"
 
-#: activities/sketch/ActivityInfo.qml:30
+#: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
 msgstr "Ctrl + Y: അവസാനം ചെയ്തത് വീണ്ടും ചെയ്യാൻ"
 
-#: activities/sketch/ActivityInfo.qml:31
+#: activities/sketch/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
 msgstr "Ctrl + S: ചിത്രം സേവ് ചെയ്യുക"
 
-#: activities/sketch/ActivityInfo.qml:32
+#: activities/sketch/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ctrl + O: ഒരു ചിത്രം തുറക്കുക"
 
-#: activities/sketch/ActivityInfo.qml:33
+#: activities/sketch/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Ctrl + N, Delete or Backspace: create a new image"
 msgstr "Ctrl + N, ഡിലീറ്റ്, ബാക്ക്സ്പെയ്സ്: പുതിയ ചിത്രം വരക്കുക"
 
-#: activities/sketch/ActivityInfo.qml:34
+#: activities/sketch/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Brush smoothing concept from:"
 msgstr "ബ്രഷ് സ്മൂതിങ് ആശയം കിട്ടിയത്:"
 
-#: activities/sketch/ActivityInfo.qml:35
+#: activities/sketch/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Sketch brush concept from:"
 msgstr "സ്കെച്ച് ബ്രഷ് ആശയം കിട്ടിയത്:"
