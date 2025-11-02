@@ -39,16 +39,25 @@ function initLevel() {
 }
 
 function initQuestion() {
-    differentTargetH();
-    differentCurrentH();
 
-    items.minutesHandVisible = items.levels[items.currentLevel].displayMinutesHand;
+    var currentLevel = items.levels[items.currentLevel];
+
+    if(currentLevel.useFixedHours && currentLevel.fixedHours !== undefined) {
+        items.targetH = currentLevel.fixedHours;
+        differentCurrentH();
+    }
+    else {
+        differentTargetH();
+        differentCurrentH();
+    }
+
+    items.minutesHandVisible = currentLevel.displayMinutesHand;
     if(!items.minutesHandVisible) {
         items.currentM = 0;
         items.targetM = 0;
     }
-    else if(items.levels[items.currentLevel].fixedMinutes !== undefined) {
-        items.targetM = items.levels[items.currentLevel].fixedMinutes;
+    else if(currentLevel.useFixedMinutes && currentLevel.fixedMinutes !== undefined) {
+        items.targetM = currentLevel.fixedMinutes;
         differentCurrentM();
     }
     else {
@@ -56,13 +65,13 @@ function initQuestion() {
         differentCurrentM();
     }
 
-    items.secondsHandVisible = items.levels[items.currentLevel].displaySecondsHand;
+    items.secondsHandVisible = currentLevel.displaySecondsHand;
     if(!items.secondsHandVisible) {
         items.currentS = 0;
         items.targetS = 0;
     }
-    else if(items.levels[items.currentLevel].fixedSeconds !== undefined) {
-        items.targetS = items.levels[items.currentLevel].fixedSeconds;
+    else if(currentLevel.useFixedSeconds && currentLevel.fixedSeconds !== undefined) {
+        items.targetS = currentLevel.fixedSeconds;
         differentCurrentS();
     }
     else {
@@ -70,36 +79,36 @@ function initQuestion() {
         differentCurrentS();
     }
 
-    if(items.levels[items.currentLevel].zonesVisible !== undefined) {
-        items.zonesVisible = items.levels[items.currentLevel].zonesVisible;
+    if(currentLevel.zonesVisible !== undefined) {
+        items.zonesVisible = currentLevel.zonesVisible;
     }
     else {
         items.zonesVisible = true;
     }
 
-    if(items.levels[items.currentLevel].hoursMarksVisible !== undefined) {
-        items.hoursMarksVisible = items.levels[items.currentLevel].hoursMarksVisible;
+    if(currentLevel.hoursMarksVisible !== undefined) {
+        items.hoursMarksVisible = currentLevel.hoursMarksVisible;
     }
     else {
         items.hoursMarksVisible = true;
     }
 
-    if(items.levels[items.currentLevel].hoursVisible !== undefined) {
-        items.hoursVisible = items.levels[items.currentLevel].hoursVisible;
+    if(currentLevel.hoursVisible !== undefined) {
+        items.hoursVisible = currentLevel.hoursVisible;
     }
     else {
         items.hoursVisible = true;
     }
 
-    if(items.levels[items.currentLevel].minutesVisible !== undefined) {
-        items.minutesVisible = items.levels[items.currentLevel].minutesVisible;
+    if(currentLevel.minutesVisible !== undefined) {
+        items.minutesVisible = currentLevel.minutesVisible;
     }
     else {
         items.minutesVisible = true;
     }
 
-    if(items.levels[items.currentLevel].noHint !== undefined) {
-        items.noHint = items.levels[items.currentLevel].noHint;
+    if(currentLevel.noHint !== undefined) {
+        items.noHint = currentLevel.noHint;
     }
     else {
         items.noHint = false;
