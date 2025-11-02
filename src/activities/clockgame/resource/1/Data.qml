@@ -15,8 +15,10 @@ Data {
     data: [
         {
             "numberOfSubLevels": 5,
+            "useFixedMinutes": true,
             "fixedMinutes": 0,
             "displayMinutesHand": false,
+            "useFixedSeconds": true,
             "fixedSeconds": 0,
             "displaySecondsHand": false
         }
