@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-09-19 06:51-0300\n"
-"Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
+"PO-Revision-Date: 2025-10-30 22:33-0300\n"
+"Last-Translator: Guilherme Marçal Silva <guimarcalsilva@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Language: pt_BR\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 25.08.1\n"
+"X-Generator: Lokalize 25.08.2\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -6974,7 +6974,7 @@ msgstr "Mova o mouse ou toque nos blocos da tela até todos eles desaparecerem."
 #: activities/erase_2clic/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Double tap or double click"
-msgstr "Duplo toque ou duplo clique"
+msgstr "Duplo toque ou clique duplo"
 
 #. Help title
 #: activities/erase_2clic/ActivityInfo.qml:17
@@ -21583,7 +21583,7 @@ msgstr "Cobrança de pênalti"
 msgctxt "ActivityInfo|"
 msgid "Double click or double tap on any side of the goal in order to score."
 msgstr ""
-"Dê um duplo clique ou toque duas vezes em qualquer lado do gol para marcar."
+"Dê um clique duplo ou toque duas vezes em qualquer lado do gol para marcar."
 
 #. Help manual
 #: activities/penalty/ActivityInfo.qml:23
@@ -21594,9 +21594,9 @@ msgid ""
 "click fast enough, Tux catches the ball. You must click on it to bring it "
 "back to its initial position."
 msgstr ""
-"Dê um duplo clique ou toque duas vezes em um lado do gol para chutar a bola. "
+"Dê um clique duplo ou toque duas vezes em um lado do gol para chutar a bola. "
 "Você pode clicar duas vezes no botão esquerdo ou direito do mouse. Se você "
-"não fizer o duplo clique rápido o suficiente, Tux defende a bola. Você deve "
+"não fizer o clique duplo rápido o suficiente, Tux defende a bola. Você deve "
 "clicar nela para trazê-la de volta à sua posição inicial."
 
 #: activities/penalty/Penalty.qml:239
@@ -21605,7 +21605,7 @@ msgid ""
 "Double click or double tap on the side of the goal you want to put the ball "
 "in."
 msgstr ""
-"Dê um duplo clique ou toque duas vezes no lado do gol em que você quer "
+"Dê um clique duplo ou toque duas vezes no lado do gol em que você quer "
 "colocar a bola."
 
 #: activities/penalty/Penalty.qml:240
@@ -26663,10 +26663,10 @@ msgstr ""
 "várias vezes.<br/>Você pode usar o botão direito do mouse para inverter a "
 "ordem dos itens ou o selecionador de itens para pegar um item diretamente da "
 "lista. Pressione um item por dois segundos para selecionar, automaticamente, "
-"o último item presente naquela posição. Dê um duplo clique em um item "
+"o último item presente naquela posição. Dê um clique duplo em um item "
 "selecionado previamente no seu histórico de palpites para marcá-lo como "
 "'correto''. Esses itens marcados serão automaticamente marcados nos palpites "
-"atuais e futuros, até que você os desmarque, dando um duplo clique neles "
+"atuais e futuros, até que você os desmarque, dando um clique duplo neles "
 "novamente."
 
 #: activities/superbrain/Superbrain.qml:148
