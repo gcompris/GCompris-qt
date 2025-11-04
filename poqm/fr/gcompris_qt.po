@@ -1861,7 +1861,7 @@ msgid ""
 "warning box to make it disappear and click on the OK button."
 msgstr ""
 "Crée une boucle de source de tension avec les piles fournies. Clique ensuite "
-"sur la case d'avertissement pour la faire disparaître et clique sur le "
+"sur la case d'avertissement pour la faire disparaitre et clique sur le "
 "bouton OK."
 
 #: activities/analog_electricity/TutorialDataset.qml:133
@@ -2235,7 +2235,7 @@ msgid ""
 "Doing a simple click in the central area shows a marker at the click "
 "position."
 msgstr ""
-"Un simple clic dans la zone centrale fait apparaître un marqueur à l'endroit "
+"Un simple clic dans la zone centrale fait apparaitre un marqueur à l'endroit "
 "du clic."
 
 #. Activity title
@@ -2303,7 +2303,7 @@ msgstr ""
 "Appuie sur le clavier physique ou virtuel comme dans un logiciel de "
 "traitement de texte.\n"
 "Appuie sur le bouton « Titre » pour faire grossir le texte. De la même "
-"façon, le bouton « Sous-titre » fera apparaître le texte en un peu moins "
+"façon, le bouton « Sous-titre » fera apparaitre le texte en un peu moins "
 "gros. Appuyer sur « Paragraphe » enlèvera la mise en forme."
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:26
@@ -3281,7 +3281,7 @@ msgid ""
 "of only one cell directly provide the number to enter."
 msgstr ""
 "Sélectionne un nombre dans la liste et clique sur la position où tu veux "
-"l'ajouter sur la grille. Chaque nombre ne doit apparaître qu'une seule fois "
+"l'ajouter sur la grille. Chaque nombre ne doit apparaitre qu'une seule fois "
 "sur une même ligne ou colonne. Les cages sont des groupes de cellules dans "
 "lesquelles une information est donnée pour aider au remplissage. Les cages "
 "composées de plus d'une case ont un résultat et un opérateur : il faut "
@@ -5203,7 +5203,7 @@ msgid ""
 "the next ones, or click on each point one after the other."
 msgstr ""
 "Dessine l'image en cliquant sur chaque point dans l'ordre. Chaque fois que "
-"tu cliques sur un point bleu, le point bleu suivant apparaît. Tu peux aussi "
+"tu cliques sur un point bleu, le point bleu suivant apparait. Tu peux aussi "
 "rester le clic appuyé et bouger sur les points au fur et à mesure."
 
 #. Activity title
@@ -5411,7 +5411,7 @@ msgstr ""
 "En peinture, les encres absorbent différentes couleurs de la lumière qui "
 "leur arrivent dessus, enlevant ces couleurs à ce que tu vois. Plus tu "
 "ajoutes d'encre, plus la lumière est absorbée et plus le mélange de couleurs "
-"paraît sombre. On peut en mélangeant seulement 3 couleurs primaires en "
+"parait sombre. On peut en mélangeant seulement 3 couleurs primaires en "
 "obtenir beaucoup d'autres. Les couleurs primaires pour la peinture ou "
 "l'encre sont le cyan (une sorte de bleu), le magenta (une sorte de rose), et "
 "le jaune."
@@ -5679,7 +5679,7 @@ msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
-"Si des réponses sont incorrectes, une croix apparaîtra sur les lignes "
+"Si des réponses sont incorrectes, une croix apparaitra sur les lignes "
 "correspondantes. Corrige ces erreurs et appuie sur le bouton OK pour valider "
 "tes nouvelles réponses."
 
@@ -7075,7 +7075,7 @@ msgstr ""
 #: activities/erase_clic/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Click or tap on the blocks to make them disappear."
-msgstr "Clique ou tape sur les rectangles pour les faire disparaître."
+msgstr "Clique ou tape sur les rectangles pour les faire disparaitre."
 
 #. Activity title
 #: activities/explore_farm_animals/ActivityInfo.qml:15
@@ -15554,7 +15554,7 @@ msgid ""
 "Drag the numbers and operators to the boxes to obtain the number given in "
 "the instructions."
 msgstr ""
-"Sélectionne les bons nombres et opérateurs dans les boîtes pour obtenir le "
+"Sélectionne les bons nombres et opérateurs dans les boites pour obtenir le "
 "nombre donné dans les instructions."
 
 #: activities/guesscount/Admin.qml:34
@@ -15793,7 +15793,7 @@ msgid ""
 "in the configuration dialog."
 msgstr ""
 "Nous avons basculé en anglais pour cette activité, mais tu peux choisir une "
-"autre langue dans la boîte de dialogue de configuration."
+"autre langue dans la boite de dialogue de configuration."
 
 #. Activity title
 #: activities/hanoi/ActivityInfo.qml:15
@@ -15971,7 +15971,7 @@ msgstr "Attrape et fais glisser les éléments au-dessus de leurs noms."
 #: activities/imagename/resource/board/board1_0.qml:59
 msgctxt "board1_0|"
 msgid "mail box"
-msgstr "boîte à lettres"
+msgstr "boite à lettres"
 
 #: activities/imagename/resource/board/board1_0.qml:67
 msgctxt "board1_0|"
@@ -16156,7 +16156,7 @@ msgstr "arbre"
 #: activities/imagename/resource/board/board7_0.qml:66
 msgctxt "board7_0|"
 msgid "mail box"
-msgstr "boîte à lettres"
+msgstr "boite à lettres"
 
 #: activities/imagename/resource/board/board7_0.qml:74
 msgctxt "board7_0|"
@@ -16648,7 +16648,7 @@ msgid ""
 "in the configuration dialog."
 msgstr ""
 "Nous avons basculé en anglais pour cette activité, mais tu peux choisir une "
-"autre langue dans la boîte de dialogue de configuration."
+"autre langue dans la boite de dialogue de configuration."
 
 #: activities/lang/Lang.qml:195 activities/lang/Lang.qml:196
 msgctxt "Lang|"
@@ -17380,7 +17380,7 @@ msgid ""
 msgstr ""
 "Un clic avec le bouton gauche sur un poisson va l'amener dans l'étang. Un "
 "clic avec le bouton droit sur un singe va l'amener dans l'arbre. Un message "
-"apparaîtra si tu n'utilises pas le bon bouton."
+"apparaitra si tu n'utilises pas le bon bouton."
 
 #. Activity title
 #: activities/leftright/ActivityInfo.qml:15
@@ -17523,7 +17523,7 @@ msgid ""
 "in the configuration dialog."
 msgstr ""
 "Nous avons basculé en anglais pour cette activité, mais tu peux choisir une "
-"autre langue dans la boîte de dialogue de configuration."
+"autre langue dans la boite de dialogue de configuration."
 
 #. Activity title
 #: activities/lightsoff/ActivityInfo.qml:15
@@ -19417,7 +19417,7 @@ msgstr ""
 "Sélectionne une icône pour démarrer une activité ou pour afficher une liste "
 "d'activités dans une catégorie ?\n"
 "La barre de contrôle est située en bas de l'écran principal. Tu peux le "
-"cacher ou le faire apparaître en touchant son ancre."
+"cacher ou le faire apparaitre en touchant son ancre."
 
 #: activities/menu/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
@@ -19863,7 +19863,7 @@ msgstr ""
 "En scrutant les roches, tu peux apercevoir des étincelles. Déplace-toi près "
 "de ces étincelles et utilise la roulette de ta souris ou le geste zoom "
 "(geste de la pince) pour zoomer. Lorsque tu atteins le niveau maximum de "
-"zoom, une pépite d'or apparaîtra à la position de l'étincelle. Clique sur la "
+"zoom, une pépite d'or apparaitra à la position de l'étincelle. Clique sur la "
 "pépite pour la récolter."
 
 #: activities/mining/ActivityInfo.qml:25
@@ -19876,7 +19876,7 @@ msgid ""
 msgstr ""
 "Après avoir récolté la pépite, utilise la roulette de la souris ou le geste "
 "de pincement pour dé-zoomer. Une fois que tu atteins le niveau minimum du "
-"zoom, une autre pépite apparaîtra. Collecte assez de pépites pour compléter "
+"zoom, une autre pépite apparaitra. Collecte assez de pépites pour compléter "
 "le niveau."
 
 #: activities/mining/ActivityInfo.qml:26
@@ -19901,7 +19901,7 @@ msgstr ""
 #: activities/mining/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "realrainbow.ogg - used when a new gold nugget appears"
-msgstr "realrainbow.ogg – utilisé quand une nouvelle pépite apparaît"
+msgstr "realrainbow.ogg – utilisé quand une nouvelle pépite apparait"
 
 #: activities/mining/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -20023,7 +20023,7 @@ msgid ""
 "in the configuration dialog."
 msgstr ""
 "Nous avons basculé en anglais pour cette activité, mais tu peux choisir une "
-"autre langue dans la boîte de dialogue de configuration."
+"autre langue dans la boite de dialogue de configuration."
 
 #. Activity title
 #: activities/money/ActivityInfo.qml:15
@@ -20252,7 +20252,7 @@ msgid ""
 "shortest code, a single dot."
 msgstr ""
 "Chaque symbole du code Morse représente soit un caractère de texte (lettre "
-"ou chiffre), soit une chaîne et est représenté par une séquence unique de "
+"ou chiffre), soit une chaine et est représenté par une séquence unique de "
 "points et de tirets. La durée d'un tiret est trois fois plus longue que "
 "celle d'un point. Afin d'augmenter la vitesse de communication, le code a "
 "été conçu de manière à ce que les lettres les plus courantes aient les "
@@ -21640,7 +21640,7 @@ msgstr ""
 #: activities/photo_hunter/PhotoHunter.qml:88
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
-msgstr "Fais glisser le curseur pour faire apparaître les différences."
+msgstr "Fais glisser le curseur pour faire apparaitre les différences."
 
 #: activities/photo_hunter/PhotoHunter.qml:89
 msgctxt "PhotoHunter|"
@@ -22600,7 +22600,7 @@ msgstr "Positions"
 #: activities/positions/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Find the boy's position in relation to the box."
-msgstr "Trouve la position de l'enfant par rapport à la boîte."
+msgstr "Trouve la position de l'enfant par rapport à la boite."
 
 #. Help goal
 #: activities/positions/ActivityInfo.qml:20
@@ -22616,8 +22616,8 @@ msgid ""
 "out the position of the boy in relation to the box and select the correct "
 "answer."
 msgstr ""
-"Différentes images montrant une boîte et un enfant te sont présentées. Il "
-"faut que tu retrouves la position de l'enfant par rapport à la boîte puis "
+"Différentes images montrant une boite et un enfant te sont présentées. Il "
+"faut que tu retrouves la position de l'enfant par rapport à la boite puis "
 "que tu sélectionnes la bonne réponse."
 
 #: activities/positions/ActivityInfo.qml:27
@@ -22639,7 +22639,7 @@ msgstr "à côté"
 #: activities/positions/resource/1/Data.qml:21
 msgctxt "Data|"
 msgid "Select the image where the child is beside the box."
-msgstr "Sélectionne l'image où l'enfant se trouve à côté de la boîte."
+msgstr "Sélectionne l'image où l'enfant se trouve à côté de la boite."
 
 #. it refers to the behind position
 #: activities/positions/resource/1/Data.qml:26
@@ -22652,7 +22652,7 @@ msgstr "derrière"
 #: activities/positions/resource/2/Data.qml:33
 msgctxt "Data|"
 msgid "Select the image where the child is behind the box."
-msgstr "Sélectionne l'image où l'enfant se trouve derrière la boîte."
+msgstr "Sélectionne l'image où l'enfant se trouve derrière la boite."
 
 #. it refers to the in front of position
 #: activities/positions/resource/1/Data.qml:32
@@ -22665,7 +22665,7 @@ msgstr "devant"
 #: activities/positions/resource/2/Data.qml:39
 msgctxt "Data|"
 msgid "Select the image where the child is in front of the box."
-msgstr "Sélectionne l'image où l'enfant se trouve devant de la boîte."
+msgstr "Sélectionne l'image où l'enfant se trouve devant de la boite."
 
 #. it refers to the inside position
 #: activities/positions/resource/1/Data.qml:38
@@ -22678,7 +22678,7 @@ msgstr "à l'intérieur"
 #: activities/positions/resource/2/Data.qml:45
 msgctxt "Data|"
 msgid "Select the image where the child is inside the box."
-msgstr "Sélectionne l'image où l'enfant se trouve à l'intérieur de la boîte."
+msgstr "Sélectionne l'image où l'enfant se trouve à l'intérieur de la boite."
 
 #. it refers to the above position
 #: activities/positions/resource/1/Data.qml:44
@@ -22691,7 +22691,7 @@ msgstr "au dessus"
 #: activities/positions/resource/2/Data.qml:51
 msgctxt "Data|"
 msgid "Select the image where the child is above the box."
-msgstr "Sélectionne l'image où l'enfant se trouve au dessus de la boîte."
+msgstr "Sélectionne l'image où l'enfant se trouve au dessus de la boite."
 
 #. it refers to the beneath position
 #: activities/positions/resource/1/Data.qml:50
@@ -22704,7 +22704,7 @@ msgstr "sous"
 #: activities/positions/resource/2/Data.qml:57
 msgctxt "Data|"
 msgid "Select the image where the child is under the box."
-msgstr "Sélectionne l'image où l'enfant se trouve au dessous de la boîte."
+msgstr "Sélectionne l'image où l'enfant se trouve au dessous de la boite."
 
 #: activities/positions/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -22720,7 +22720,7 @@ msgstr "à droite"
 #: activities/positions/resource/2/Data.qml:21
 msgctxt "Data|"
 msgid "Select the image where the child is at the right of the box."
-msgstr "Sélectionne l'image où l'enfant se trouve à droite de la boîte."
+msgstr "Sélectionne l'image où l'enfant se trouve à droite de la boite."
 
 #. it refers to the position on the left side
 #: activities/positions/resource/2/Data.qml:26
@@ -22731,7 +22731,7 @@ msgstr "à gauche"
 #: activities/positions/resource/2/Data.qml:27
 msgctxt "Data|"
 msgid "Select the image where the child is at the left of the box."
-msgstr "Sélectionne l'image où l'enfant se trouve à gauche de la boîte."
+msgstr "Sélectionne l'image où l'enfant se trouve à gauche de la boite."
 
 #. Activity title
 #: activities/programmingMaze/ActivityInfo.qml:16
@@ -23092,7 +23092,7 @@ msgid ""
 "appear and disappear. Did the given word appear in the list?"
 msgstr ""
 "Un mot est affiché sur le tableau. Une liste de mots affichés "
-"horizontalement apparaîtra et disparaîtra. Est-ce que le mot appartient à "
+"horizontalement apparaitra et disparaitra. Est-ce que le mot appartient à "
 "cette liste ?"
 
 #: activities/readingh/Readingh.qml:307
@@ -23137,7 +23137,7 @@ msgid ""
 "appear and disappear. Did the given word appear in the list?"
 msgstr ""
 "Un mot est affiché sur le tableau. Une liste de mots affichés verticalement "
-"apparaîtra et disparaîtra. Est-ce que le mot appartient à cette liste ?"
+"apparaitra et disparaitra. Est-ce que le mot appartient à cette liste ?"
 
 #. Activity title
 #: activities/redraw/ActivityInfo.qml:15
@@ -24193,7 +24193,7 @@ msgstr ""
 #: activities/share/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "If there is a rest, it needs to be placed inside the candy jar."
-msgstr "S'il y a un reste, il doit être placé dans la boîte à confiseries."
+msgstr "S'il y a un reste, il doit être placé dans la boite à confiseries."
 
 #: activities/share/resource/1/Data.qml:15
 msgctxt "Data|"
@@ -26679,7 +26679,7 @@ msgid ""
 "still be a mistake."
 msgstr ""
 "Sélectionne un nombre ou un symbole et clique sur une case pour l'y ajouter. "
-"Chaque symbole ne doit apparaître qu'une seule fois par rangée, par colonne "
+"Chaque symbole ne doit apparaitre qu'une seule fois par rangée, par colonne "
 "et par sous-région s'il y en a. Si une action n'est pas permise, le jeu vous "
 "indiquera pourquoi. Mais faites attention : ce n'est pas parce-que vous "
 "pouvez saisir un nombre ou un symbole dans une case que ce sera forcément "
@@ -26795,7 +26795,7 @@ msgid ""
 "support it. Drag the rotation button or around selected piece to rotate it. "
 "Check the activity 'Baby Puzzle' for a simpler introduction to tangram."
 msgstr ""
-"Déplace une pièce en la faisant glisser. Le bouton de symétrie apparaît sur "
+"Déplace une pièce en la faisant glisser. Le bouton de symétrie apparait sur "
 "les éléments qui le prennent en charge. Clique sur le bouton de rotation ou "
 "fais glisser ton doigt autour de la pièce pour la faire tourner si "
 "nécessaire. Pour débuter, des objets plus simples à assembler sont "
@@ -26912,7 +26912,7 @@ msgstr ""
 "Sélectionne un nombre, puis sélectionne un autre nombre de la même opération "
 "pour intervertir leurs positions. Lorsque toutes les lignes sont remplies, "
 "appuie sur le bouton OK pour valider les réponses. Si certaines réponses "
-"sont incorrectes, une icône en forme de croix apparaît sur les lignes "
+"sont incorrectes, une icône en forme de croix apparait sur les lignes "
 "correspondantes. Corrige les erreurs, puis appuie à nouveau sur le bouton OK."
 
 #: activities/tens_complement_calculate/resource/1/Data.qml:36
@@ -26961,7 +26961,7 @@ msgid ""
 msgstr ""
 "Lorsque toutes les lignes sont remplies, appuie sur le bouton OK pour "
 "valider les réponses. Si certaines réponses sont incorrectes, une icône en "
-"forme de croix apparaîtra sur les lignes correspondantes. Pour corriger les "
+"forme de croix apparaitra sur les lignes correspondantes. Pour corriger les "
 "erreurs, clique sur les mauvaises réponses pour les supprimer et répète les "
 "étapes précédentes."
 
@@ -27033,7 +27033,7 @@ msgstr ""
 "Sélectionne un nombre, puis sélectionne un autre nombre de la même opération "
 "pour intervertir leurs positions. Lorsque toutes les lignes sont remplies, "
 "appuie sur le bouton OK pour valider les réponses. Si certaines réponses "
-"sont incorrectes, une icône en forme de croix apparaît sur les lignes "
+"sont incorrectes, une icône en forme de croix apparait sur les lignes "
 "correspondantes. Corrige les erreurs, puis appuie à nouveau sur le bouton OK."
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
