@@ -438,7 +438,8 @@ QVariantList ActivityInfoTree::allCharacters()
 
 void ActivityInfoTree::createDataset(const QJsonObject &dataset)
 {
-    const QString datasetName(dataset["dataset_name"].toString());
+    // Prefix dataset filename with "c-" to ensure it's not a restricted name on some platform
+    const QString datasetName("c-" + dataset["dataset_name"].toString());
     const QString activityName(dataset["activity_name"].toString());
     const QString datasetFolder(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + "/" + activityName + '/' + datasetName);
     QDir datasetDir(datasetFolder);
