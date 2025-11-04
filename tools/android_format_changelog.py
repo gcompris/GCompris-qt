@@ -16,6 +16,8 @@ from PySide6.QtCore import QCoreApplication, QUrl
 from PySide6.QtQml import qmlRegisterType, QQmlComponent, QQmlEngine
 from python.ActivityInfo import ActivityInfo
 
+from python.LanguageList import supported_languages
+
 if len(sys.argv) < 2:
     print("Usage: android_format_changelog.py <version> [-v]")
     sys.exit(1)
@@ -115,7 +117,7 @@ def main(argv):
 
     output = ""
     # List taken from the android list in https://android.googlesource.com/platform/frameworks/base/+/master/core/res/res/values/locale_config.xml
-    for locale in ["en-US", "az-AZ", "be", "ca", "cs-CZ", "de-DE", "el-GR", "en-GB", "es-ES", "eu-ES", "fi-FI", "fr-FR", "gl-ES", "hr", "hu-HU", "id", "it-IT", "iw-IL", "ka-GE", "lt", "lv-LV", "mk-MK", "ml-IN", "nl-NL", "no-NO", "pl-PL", "pt-BR", "pt-PT", "ro", "ru-RU", "sa-IN", "sk", "sl", "sq", "sv-SE", "tr-TR", "uk", "zh-CN", "zh-TW"]:
+    for locale in supported_languages:
         is_translation_ok, locale_changes = generate_for_locale(changelog_qml, locale)
         if is_translation_ok:
             output += locale_changes

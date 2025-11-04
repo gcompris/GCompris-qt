@@ -17,6 +17,7 @@ from PySide6.QtCore import QCoreApplication, QUrl
 from PySide6.QtQml import qmlRegisterType, QQmlComponent, QQmlEngine
 import polib
 
+from python.LanguageList import supported_languages
 from python.ActivityInfo import ActivityInfo
 
 if len(sys.argv) < 2:
@@ -165,7 +166,7 @@ def main(argv):
     changelog_qml = component.create()
 
     # List taken from the android list
-    for locale in ["en-US", "ar-AR", "az-AZ", "be", "ca", "cs-CZ", "de-DE", "el-GR", "en-GB", "es-ES", "eu-ES", "fi-FI", "fr-FR", "gl-ES", "he", "hr", "hu-HU", "id", "it-IT", "ka-GE", "lt", "lv-LV", "mk-MK", "ml-IN", "nl-NL", "no-NO", "pl-PL", "pt-BR", "pt-PT", "ro", "ru-RU", "sa-IN", "sk", "sl", "sq", "sv-SE", "tr-TR", "uk", "zh-CN", "zh-TW"]:
+    for locale in supported_languages:
         is_translation_ok = generate_files_for_locale(changelog_qml, locale)
         if not is_translation_ok and verbose:
             print(f"Error when generating files for {locale}")
