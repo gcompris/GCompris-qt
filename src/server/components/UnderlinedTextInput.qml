@@ -22,6 +22,7 @@ Item {
     property alias echoMode: textInput.echoMode
     property bool readOnlyText: false
     property alias textInput: textInput
+    property alias validator: textInput.validator
 
     onFocusChanged: { if (focus) textInput.forceActiveFocus(); }
 
