@@ -445,6 +445,9 @@ Popup {
                     activeFocusOnTab: true
                     focus: true
                     defaultText: ""
+                    // Prevent specific characters in the filename and only 40 characters max:
+                    // <, :, ", /, >, |, ?, *, \, ', [, ], + 
+                    validator: RegularExpressionValidator { regularExpression: /^[^<:"\/>|?\*\\'\[\]\+]{0,40}/ }
                 }
 
                 UnderlinedTextInput {
