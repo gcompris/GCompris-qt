@@ -49,7 +49,10 @@ Item {
             enabled: !ApplicationInfo.isMobile
             hoverEnabled: !Activity.items.inputBlocked
             onEntered: {
-                if(Activity.items.currentLock <= part.index && !Activity.movedOut) {
+                // Limit to 5 the number of steps we can do at each time.
+                // Fix the issue where the child keep the mouse button click
+                // and go to the end of the pipe without following the line
+                if(part.index - Activity.items.currentLock <= 5 && !Activity.movedOut) {
                     Activity.items.currentLock = part.index
                     if(Activity.items.currentLock >= Activity.items.lastLock) {
                         Activity.items.waterSound.play()
