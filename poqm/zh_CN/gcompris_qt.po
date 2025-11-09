@@ -1338,7 +1338,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "You can create a line of 4 tokens either horizontally (lying down), "
 "vertically (standing up), or diagonally."
-msgstr "在水平 (平着放)，垂直 (竖着放) 或斜线其中一个方向上使四个硬币成一排。"
+msgstr "在水平 (平着放)，垂直 (竖着放) 或斜线其中一个方向上使 4 个硬币成一排。"
 
 #: activities/align4/ActivityInfo.qml:24 activities/bargame/ActivityInfo.qml:25
 #: activities/checkers/ActivityInfo.qml:26
