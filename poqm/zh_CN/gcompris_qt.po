@@ -1338,7 +1338,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "You can create a line of 4 tokens either horizontally (lying down), "
 "vertically (standing up), or diagonally."
-msgstr "在水平 (平着放)，垂直 (竖着放) 或斜线其中一个方向上使四个硬币成一排。"
+msgstr "在水平 (平着放)，垂直 (竖着放) 或斜线其中一个方向上使 4 个硬币成一排。"
 
 #: activities/align4/ActivityInfo.qml:24 activities/bargame/ActivityInfo.qml:25
 #: activities/checkers/ActivityInfo.qml:26
@@ -6834,6 +6834,9 @@ msgid ""
 "established before the period of Christopher Columbus and probably served as "
 "the religion center of Yucatan for a while."
 msgstr ""
+"奇琴伊察 (Chichen Itza) 意为“伊察之井的入口”，是位于墨西哥尤卡坦半岛上的一座"
+"玛雅城市，地处巴利亚多利德 (Valladolid) 与梅里达 (Merida) 之间。它在哥伦布时"
+"代之前就已建立，很可能曾一度作为尤卡坦地区的宗教中心。"
 
 #: activities/explore_monuments/resource/board/board1.qml:30
 #: activities/explore_monuments/resource/board/board1.qml:33
@@ -8246,6 +8249,13 @@ msgid ""
 "much of the castle was lost in a fire in 2019, but efforts to restore it are "
 "ongoing, reflecting its enduring importance to Okinawa's heritage."
 msgstr ""
+"首里城位于日本冲绳县那霸市，是联合国教科文组织世界遗产，也是琉球王国丰富文化"
+"历史的象征。该城堡始建于 14 世纪，数百年来一直是琉球王国的政治、经济和文化中"
+"心。首里城以其独特的中式与日式建筑风格融合而闻名，拥有朱红色漆涂的建筑、精美"
+"的装饰，以及居高临下的山顶位置。尽管在第二次世界大战期间被毁，但它经过精心重"
+"建后，成为了当地重要的旅游景点。不幸的是，2019 年的一场大火使城堡大部分建筑再"
+"次受损，但目前修复工作仍在持续进行中，彰显了首里城对冲绳文化遗产的持久重要意"
+"义。"
 
 #: activities/explore_monuments/resource/board/board9.qml:63
 msgctxt "board9|"
@@ -16675,6 +16685,7 @@ msgid ""
 "He revised and extended braille to include mathematics, symbols, punctuation "
 "and music notations."
 msgstr ""
+"他修订并扩展了盲文，将数学符号、通用符号、标点符号及音乐符号均纳入其中。"
 
 #: activities/louis-braille/louis_braille_data.js:57
 msgctxt "louis_braille_data|"
@@ -25381,6 +25392,18 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"在竖式减法中，数字需上下书写，且必须从最右侧的数位开始正确对齐。上方的数字称"
+"为被减数：它是计算的起始数值，另一数字将从它中减去以得到差。下方的数字称为减"
+"数：它是从被减数中减去、用于得到差的数值。计算结果写在最下方的横线上。计算减"
+"法时，首先用第一列 (最右侧) 的上方数字减去下方数字，并将结果写在该列的下方横"
+"线上。若上方数字小于下方数字，则需从被减数的下一列“借位”：例如，给当前列的上"
+"方数字加 10 个单位，同时需从下一列的上方数字中减去 1 个单位。这种方法称为“借"
+"位重组法”。在本活动中，借位的具体步骤如下：点击当前列上方数字左侧的空白方框，"
+"选择 1；然后在下一列中，点击上方数字右侧的空白方框，选择 -1。完成借位后，将当"
+"前列的计算结果写在下方横线上，之后对其余各列重复上述步骤，直至整个减法运算完"
+"成。得出结果后，点击“确认”按钮验证答案。在部分关卡中，你需要先写出给定的算"
+"式，再进行计算；这种情况下，当算式书写正确后，点击“准备就绪”按钮，随后再进行"
+"运算。"
 
 #: activities/vertical_subtraction/resource/1/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
@@ -25516,6 +25539,17 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"在竖式减法中，数字需上下书写，且必须从最右侧的数位开始正确对齐。上方的数字称"
+"为被减数：它是计算的起始数值，另一数字将从它中减去以得到差。下方的数字称为减"
+"数：它是从被减数中减去、用于得到差的数值。计算结果写在最下方的横线上。计算减"
+"法时，首先用第一列 (最右侧) 的上方数字减去下方数字，并将结果写在该列的下方横"
+"线上。若上方数字小于下方数字，则需从减数的下一列“借位”：例如，给当前列的上方"
+"数字加 10 个单位，同时需给下一列的下方数字加 1 个单位。这种方法称为“补偿借位"
+"法”。在本操作中，借位的具体步骤如下：点击当前列上方数字左侧的空白方框，选择 "
+"1；然后在下一列中，点击下方数字右侧的空白方框，选择 +1。完成借位后，将当前列"
+"的计算结果写在下方横线上，之后对其余各列重复上述步骤，直至整个减法运算完成。"
+"得出结果后，点击“确认”按钮验证答案。在部分关卡中，你需要先写出给定的算式，再"
+"进行计算；这种情况下，当算式书写正确后，点击“准备就绪”按钮，随后再进行运算。"
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15
