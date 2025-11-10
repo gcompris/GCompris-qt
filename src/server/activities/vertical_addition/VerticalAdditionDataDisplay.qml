@@ -21,6 +21,7 @@ Item {
 
     Column {
         id: details
+        anchors.verticalCenter: parent.verticalCenter
         Repeater {
             id: numberRepeater
             model: lineView.jsonData.numbers
@@ -38,7 +39,7 @@ Item {
 
     Column {
         id: resultDetails
-
+        anchors.verticalCenter: parent.verticalCenter
         anchors.left: details.right
         MathNumber {
             numberValue: lineView.jsonData.resultNumber
