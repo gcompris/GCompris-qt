@@ -61,6 +61,9 @@ ApplicationInfo::ApplicationInfo(QObject *parent) :
 
     QRect rect = qApp->primaryScreen()->geometry();
     m_ratio = qMin(qMax(rect.width(), rect.height()) / 800., qMin(rect.width(), rect.height()) / 520.);
+#if defined(UBUNTUTOUCH)
+    m_fontRatio = floor(m_ratio * 10) / 10;
+#else
     // calculate a factor for font-scaling, cf.
     // https://doc.qt.io/qt-5/scalability.html#calculating-scaling-ratio
     qreal refDpi = 216.;
@@ -69,10 +72,6 @@ ApplicationInfo::ApplicationInfo(QObject *parent) :
     qreal height = qMax(rect.width(), rect.height());
     qreal width = qMin(rect.width(), rect.height());
     qreal dpi = qApp->primaryScreen()->logicalDotsPerInch();
-
-#if defined(UBUNTUTOUCH)
-    m_fontRatio = floor(m_ratio * 10) / 10;
-#else
     m_fontRatio = qMax(qreal(1.0), qMin(height * refDpi / (dpi * refHeight), width * refDpi / (dpi * refWidth)));
 #endif
     m_isPortraitMode = m_isMobile ? rect.height() > rect.width() : false;
