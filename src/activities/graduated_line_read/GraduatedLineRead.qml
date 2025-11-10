@@ -104,7 +104,7 @@ ActivityBase {
             id: layoutArea
             anchors.top: instructionPanel.bottom
             anchors.bottom: activityBackground.bottom
-            anchors.bottomMargin: 1.2 * bar.height
+            anchors.bottomMargin: 1.5 * bar.height
             anchors.left: activityBackground.left
             anchors.right: activityBackground.right
             anchors.margins: GCStyle.baseMargins
@@ -281,14 +281,18 @@ ActivityBase {
             ListElement { label: "7";  key: Qt.Key_7 }
             ListElement { label: "8";  key: Qt.Key_8 }
             ListElement { label: "9";  key: Qt.Key_9 }
+            ListElement { label: "";  key: Qt.Key_Space } // empty, but set a key to avoid errors or warnings.
             ListElement { label: "4";  key: Qt.Key_4 }
             ListElement { label: "5";  key: Qt.Key_5 }
             ListElement { label: "6";  key: Qt.Key_6 }
+            ListElement { label: "";  key: Qt.Key_Space } // empty
             ListElement { label: "1";  key: Qt.Key_1 }
             ListElement { label: "2";  key: Qt.Key_2 }
             ListElement { label: "3";  key: Qt.Key_3 }
-            ListElement { label: "<<";  key: Qt.Key_Backspace }
+            ListElement { label: "";  key: Qt.Key_Space } // empty
             ListElement { label: "0";  key: Qt.Key_0 }
+            ListElement { label: "";  key: Qt.Key_Period } // only displayed for decimal levels
+            ListElement { label: "<<";  key: Qt.Key_Backspace }
             ListElement { label: "C";  key: Qt.Key_Delete }
         }
 
@@ -383,13 +387,15 @@ ActivityBase {
 
             GridView {
                 id: numPad
-                width: Math.ceil(3 * cellWidth)
+                width: Math.ceil(4 * cellWidth)
                 height: Math.ceil(4 * cellHeight)
-                cellWidth: Math.min(60 * ApplicationInfo.ratio, layoutArea.width / 9)
-                cellHeight: Math.min(40 * ApplicationInfo.ratio, tools.height / 4)
+                cellWidth: Math.min(60 * ApplicationInfo.ratio, maxCellWidth)
+                cellHeight: Math.min(60 * ApplicationInfo.ratio, tools.height * 0.25)
                 interactive: false
                 visible: (activity.activityMode === "tick2number")
                 model: padModel
+
+                property int maxCellWidth: (layoutArea.width - (score.width + GCStyle.baseMargins) * 2) * 0.25
 
                 delegate: Rectangle {
                     id: numKey
@@ -400,6 +406,8 @@ ActivityBase {
                     border.color: GCStyle.grayBorder
                     border.width: GCStyle.thinnestBorder
                     radius: GCStyle.tinyMargins
+                    enabled: visible
+                    visible: label != ""
 
                     required property var key
                     required property int index
@@ -483,8 +491,8 @@ ActivityBase {
             numberOfSubLevels: items.numberOfSubLevel
             currentSubLevel: items.currentSubLevel
             anchors.top: undefined
-            anchors.bottom: activityBackground.bottom
-            anchors.bottomMargin: bar.height * 1.5
+            anchors.bottom: layoutArea.bottom
+            anchors.bottomMargin: 0
             anchors.right: parent.right
             fixedWidth: true
             width: GCStyle.bigButtonHeight

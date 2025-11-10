@@ -132,11 +132,11 @@ function updateNumpadWithDecimalPoint() {
     if(GCompris.ApplicationInfo.localeShort == "ar") {
         decimalPoint = ".";
     }
-    if(items.denominator == 1 && items.padModel.get(items.padModel.count-1).label == decimalPoint) {
-        items.padModel.remove(items.padModel.count-1);
+    if(items.denominator == 1 && items.padModel.get(items.padModel.count-3).label == decimalPoint) {
+        items.padModel.set(items.padModel.count-3, {"label": "", "visible": false});
     }
-    else if(items.denominator != 1 && items.padModel.get(items.padModel.count-1).label != decimalPoint) {
-        items.padModel.append({ "label": decimalPoint, "key": Qt.Key_Period })
+    else if(items.denominator != 1 && items.padModel.get(items.padModel.count-3).label != decimalPoint) {
+        items.padModel.set(items.padModel.count-3, {"label": decimalPoint, "visible": true});
     }
 }
 
@@ -302,7 +302,7 @@ function handleKeys(key) {
 
         break
     case Qt.Key_Period:
-        if (activityMode === "number2tick")
+        if (activityMode === "number2tick" || items.denominator == 1)
             return
         var decimalPoint = Qt.locale(GCompris.ApplicationInfo.localeShort).decimalPoint
         if(GCompris.ApplicationInfo.localeShort == "ar") {
