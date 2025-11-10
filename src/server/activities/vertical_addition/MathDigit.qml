@@ -7,9 +7,9 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
-import core 1.0
 
-import "../../../core/"
+import "../../singletons"
+import "../../components"
 
 Item {
     id: mathDigit
@@ -30,87 +30,67 @@ Item {
     Rectangle {
         id: digitBg
         anchors.centerIn: parent
-        width: mathDigit.digitWidth - 2
-        height: mathDigit.digitHeight - 2
+        width: mathDigit.digitWidth - Style.defaultBorderWidth
+        height: mathDigit.digitHeight - Style.defaultBorderWidth
         color: "#FFFFFF"
         border.color: "#A1CBD9"
-        border.width: GCStyle.thinBorder
-        radius: GCStyle.tinyMargins
+        border.width: Style.defaultBorderWidth
+        radius: Style.defaultBorderWidth
     }
 
-    GCText {
+    DefaultLabel {
         id: digitValue
         width: digitBg.width * 0.5
-        height: digitBg.height
-        anchors.centerIn: parent
-        horizontalAlignment: Text.AlignHCenter
-        verticalAlignment: Text.AlignVCenter
-        fontSize: mediumSize
+        anchors.centerIn: digitBg
         fontSizeMode: Text.Fit
+        color: Style.lightPalette.text
         text: (value > -1) ? value : ""
     }
 
-    Item {
-        id: tens
-        width: digitBg.width * 0.5
-        height: digitBg.height
+    Rectangle {
+        id: tensBg
+        width: digitBg.width * 0.33
+        height: digitBg.height * 0.5 + Style.defaultBorderWidth * 2
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: digitBg.left
+        anchors.leftMargin: Style.defaultBorderWidth
+        color: "#00FFFFFF"
+        border.color: (tensValue === 0) ? "#A1CBD9" : "#A1D9A1"
+        border.width: Style.defaultBorderWidth
+        radius: Style.defaultBorderWidth
         visible: hasTens
 
-        Rectangle {
-            id: tensBg
-            width: digitBg.width * 0.3
-            height: digitBg.height * 0.5
-            anchors.verticalCenter: parent.verticalCenter
-            anchors.left: parent.left
-            anchors.leftMargin: digitBg.width * 0.05
-            color: "#00FFFFFF"
-            border.color: (tensValue === 0) ? "#A1CBD9" : "#A1D9A1"
-            border.width: ApplicationInfo.ratio
-            radius: GCStyle.tinyMargins
-        }
-
-        GCText {
+        DefaultLabel {
             id: tensText
-            anchors.fill: tensBg
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            fontSize: regularSize
+            anchors.fill: parent
+            anchors.margins: Style.defaultBorderWidth
             fontSizeMode: Text.Fit
+            elide: Text.ElideNone
+            color: Style.lightPalette.text
             text: (tensValue === 0) ? "" : tensValue
         }
     }
 
-    Item {
-        id: carry
-        width: tens.width
-        height: tens.height
+    Rectangle {
+        id: carryBg
+        width: tensBg.width
+        height: tensBg.height
         anchors.bottom: digitBg.bottom
         anchors.right: digitBg.right
-        opacity: hasCarry ? 1.0 : 0.0
+        anchors.margins: Style.defaultBorderWidth
+        color: "#00FFFFFF"
+        border.color: (carryValue === 0) ? "#A1CBD9" : "#D9A1A1"
+        border.width:Style.defaultBorderWidth
+        radius: Style.defaultBorderWidth
         visible: hasCarry
 
-        Rectangle {
-            id: carryBg
-            width: tensBg.width
-            height: tensBg.height
-            anchors.bottom: parent.bottom
-            anchors.right: parent.right
-            anchors.margins: tensBg.anchors.leftMargin
-            color: "#00FFFFFF"
-            border.color: (carryValue === 0) ? "#A1CBD9" : "#D9A1A1"
-            border.width: ApplicationInfo.ratio
-            radius: GCStyle.tinyMargins
-        }
-
-        GCText {
+        DefaultLabel {
             id: incrText
-            anchors.fill: carryBg
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            fontSize: regularSize
+            anchors.fill: parent
+            anchors.margins: tensText.anchors.margins
             fontSizeMode: Text.Fit
+            elide: Text.ElideNone
+            color: Style.lightPalette.text
             text: (carryValue === 0) ? "" : (carryValue > 0) ? `+${carryValue}` : carryValue
         }
     }

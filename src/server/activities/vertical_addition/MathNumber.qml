@@ -8,9 +8,8 @@
  */
 import QtQuick
 
-import core 1.0
-
-import "../../../core/"
+import "../../singletons"
+import "../../components"
 
 Item {
     id: mathNumber
@@ -26,8 +25,8 @@ Item {
     width: digitWidth * (digitCount + 1)
     height: digitHeight
 
-    property int digitWidth: 50
-    property int digitHeight: 50
+    property int digitWidth: Style.bigControlSize
+    property int digitHeight: Style.controlSize
 
     function buildDigits(aNumber) {
         digitsModel.clear()
@@ -53,7 +52,7 @@ Item {
             width: mathNumber.digitWidth
             height: mathNumber.digitHeight
             visible: (lineIndex !== 0) && (lineIndex !== -1)
-            GCText {
+            DefaultLabel {
                 id: operatorValue
                 text: (lineIndex === 0) ? "" : operator
                 anchors.centerIn: parent
@@ -61,8 +60,8 @@ Item {
                 height: parent.height
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                fontSize: largeSize
                 fontSizeMode: Text.Fit
+                color: Style.selectedPalette.text
             }
         }
 
