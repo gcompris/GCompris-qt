@@ -125,8 +125,9 @@ AbstractButton {
             id: menuList
             x: Style.defaultBorderWidth
             y: Style.defaultBorderWidth
+            contentHeight: contentItem.childrenRect.height
             width: parent.width - 2 * Style.defaultBorderWidth
-            height: Math.min(contentItem.childrenRect.height, button.maxHeight)
+            height: menuContainer.visible ? Math.min(contentHeight, button.maxHeight) : 0
             clip: true
             keyNavigationEnabled: false
             delegate: Rectangle {
