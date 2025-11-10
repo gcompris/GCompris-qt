@@ -203,7 +203,7 @@ QStringList ActivityInfo::levels() const
 
 void ActivityInfo::setLevels(const QStringList &levels)
 {
-    m_acceptDataset = !levels.empty();
+    m_acceptDataset = true;
     m_levels = levels;
 
     Q_EMIT levelsChanged();
