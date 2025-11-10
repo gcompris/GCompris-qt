@@ -19,8 +19,6 @@ Item {
     required property bool resultSuccess
     height: details.height
 
-    onJsonDataChanged: console.log(JSON.stringify(jsonData))
-
     // Used to get longest text for aligned label columns.
     TextMetrics {
         id: questionLabelSize
