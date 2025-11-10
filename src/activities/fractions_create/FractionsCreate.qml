@@ -59,12 +59,26 @@ ActivityBase {
             property bool fixedNumerator: true
             property bool fixedDenominator: true
             property bool buttonsBlocked: false
+            property alias client: client
         }
 
         onStart: {
             Activity.start(items, activity.mode);
         }
         onStop: { Activity.stop() }
+
+        Client {    // Client for server version. Prepare data from activity to server
+            id: client
+            getDataCallback: function() {
+                var data = {
+                    "numeratorValue": numeratorText.value,
+                    "denominatorValue": denominatorText.value,
+                    "numeratorToFind": items.numeratorToFind,
+                    "denominatorToFind": items.denominatorToFind,
+                }
+                return data
+            }
+        }
 
         Keys.enabled: !items.buttonsBlocked
 

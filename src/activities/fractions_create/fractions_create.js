@@ -83,6 +83,7 @@ function initSubLevel() {
 
     items.chartItem.initLevel();
     items.buttonsBlocked = false;
+    items.client.startTiming(); // for server version
 }
 
 function nextLevel() {
@@ -112,10 +113,12 @@ function goodAnswer() {
     items.score.currentSubLevel++;
     items.score.playWinAnimation();
     items.goodAnswerSound.play();
+    items.client.sendToServer(true);
 }
 
 function badAnswer() {
     items.buttonsBlocked = true;
     items.errorRectangle.startAnimation();
     items.badAnswerSound.play();
+    items.client.sendToServer(false);
 }
