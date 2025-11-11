@@ -14991,7 +14991,7 @@ msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
 msgstr "Espacio, Return o Intro: validar la respuesta"
 
-#: activities/graduated_line_read/graduated_line_read.js:115
+#: activities/graduated_line_read/graduated_line_read.js:125
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
 msgstr "(límites variables)"
@@ -15005,6 +15005,15 @@ msgstr "Encuentra el número que se pide."
 msgctxt "Data|"
 msgid "Number to find between 1 and 5."
 msgstr "Número que se debe encontrar entre 1 y 5."
+
+#: activities/graduated_line_read/resource/10/Data.qml:9
+#: activities/graduated_line_use/resource/10/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Number to find between 0 and 20."
+msgctxt "Data|"
+msgid "Decimal number to find between 0 and 4."
+msgstr "Número que se debe encontrar entre 0 y 20."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"

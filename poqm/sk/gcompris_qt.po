@@ -14937,7 +14937,7 @@ msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
 msgstr "Medzerník alebo Enter: overiť odpoveď"
 
-#: activities/graduated_line_read/graduated_line_read.js:115
+#: activities/graduated_line_read/graduated_line_read.js:125
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
 msgstr ""
@@ -14956,6 +14956,15 @@ msgstr "Nájdi motýľa hrdzavej farby"
 #| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 1 and 5."
+msgstr "Čísla medzi %1 a %2."
+
+#: activities/graduated_line_read/resource/10/Data.qml:9
+#: activities/graduated_line_use/resource/10/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Decimal number to find between 0 and 4."
 msgstr "Čísla medzi %1 a %2."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9

@@ -14943,7 +14943,7 @@ msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
 msgstr "Nafasi, Rudisha au Ingiza: thibitisha jibu lako"
 
-#: activities/graduated_line_read/graduated_line_read.js:115
+#: activities/graduated_line_read/graduated_line_read.js:125
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
 msgstr "(mipaka inayobadilika)"
@@ -14957,6 +14957,15 @@ msgstr "Tafuta nambari iliyoombwa."
 msgctxt "Data|"
 msgid "Number to find between 1 and 5."
 msgstr "Nambari ya kupata kati ya 1 na 5."
+
+#: activities/graduated_line_read/resource/10/Data.qml:9
+#: activities/graduated_line_use/resource/10/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Number to find between 0 and 20."
+msgctxt "Data|"
+msgid "Decimal number to find between 0 and 4."
+msgstr "Nambari ya kupata kati ya 0 na 20."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"

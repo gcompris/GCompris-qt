@@ -15888,7 +15888,7 @@ msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
 msgstr "Spás nó Iontráil: dearbhaigh freagra"
 
-#: activities/graduated_line_read/graduated_line_read.js:115
+#: activities/graduated_line_read/graduated_line_read.js:125
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
 msgstr ""
@@ -15907,6 +15907,15 @@ msgstr "Aimsigh an féileacán a bhfuil dath rua air"
 #| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Number to find between 1 and 5."
+msgstr "Uimhreacha idir 1 agus 8."
+
+#: activities/graduated_line_read/resource/10/Data.qml:9
+#: activities/graduated_line_use/resource/10/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between 1 and 8."
+msgctxt "Data|"
+msgid "Decimal number to find between 0 and 4."
 msgstr "Uimhreacha idir 1 agus 8."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9

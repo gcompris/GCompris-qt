@@ -14449,7 +14449,7 @@ msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
 msgstr "Space, Return or Enter: स्वस्य उत्तरस्य प्रमाणीकरणं कुर्वन्तु"
 
-#: activities/graduated_line_read/graduated_line_read.js:115
+#: activities/graduated_line_read/graduated_line_read.js:125
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
 msgstr "(चर सीमाः)"
@@ -14463,6 +14463,15 @@ msgstr "अनुरोधितं सङ्ख्यां ज्ञातव�
 msgctxt "Data|"
 msgid "Number to find between 1 and 5."
 msgstr "१ तः ५ पर्यन्तं ज्ञातुं संख्या ।"
+
+#: activities/graduated_line_read/resource/10/Data.qml:9
+#: activities/graduated_line_use/resource/10/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Number to find between 0 and 20."
+msgctxt "Data|"
+msgid "Decimal number to find between 0 and 4."
+msgstr "0 तः 20 पर्यन्तं ज्ञातुं संख्या ।"
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"
