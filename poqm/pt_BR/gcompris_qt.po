@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-10-30 22:33-0300\n"
-"Last-Translator: Guilherme Marçal Silva <guimarcalsilva@gmail.com>\n"
+"PO-Revision-Date: 2025-11-11 06:25-0300\n"
+"Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Language: pt_BR\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 25.08.2\n"
+"X-Generator: Lokalize 25.08.3\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -15012,12 +15012,9 @@ msgstr "Número a ser encontrado entre 1 e 5."
 
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Number to find between 0 and 20."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
-msgstr "Número a ser encontrado entre 0 e 20."
+msgstr "Número decimal a ser encontrado entre 0 e 4."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"

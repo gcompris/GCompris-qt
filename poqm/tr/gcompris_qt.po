@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-09-19 09:39+0300\n"
+"PO-Revision-Date: 2025-11-11 20:02+0300\n"
 "Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.08.1\n"
+"X-Generator: Lokalize 25.08.2\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -14789,12 +14789,9 @@ msgstr "1 ve 5 arasında bulunacak sayı."
 
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Number to find between 0 and 20."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
-msgstr "0 ve 20 arasında bulunacak sayı."
+msgstr "0 ve 4 arasında bulunacak ondalık sayı."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"

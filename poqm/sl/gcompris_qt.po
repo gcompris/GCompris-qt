@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-09-19 07:51+0200\n"
+"PO-Revision-Date: 2025-11-11 07:22+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "%100<=4 ? 2 : 3);\n"
 "X-Language: sl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.7\n"
+"X-Generator: Poedit 3.8\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -14776,12 +14776,9 @@ msgstr "Najdite število med 1 in 5."
 
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Number to find between 0 and 20."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
-msgstr "Najdite število med 0 in 20."
+msgstr "Najdite decimalno število med 0 in 4."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"

@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2025-09-19 12:16+0200\n"
+"PO-Revision-Date: 2025-11-11 10:04+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -15278,12 +15278,9 @@ msgstr "Nombre a trobar entre l'1 i el 5."
 
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Number to find between 0 and 20."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
-msgstr "Nombre a trobar entre el 0 i el 20."
+msgstr "Nombre decimal a trobar entre el 0 i el 4."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"

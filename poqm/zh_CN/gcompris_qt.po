@@ -14166,12 +14166,9 @@ msgstr ""
 
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
-msgstr "猜一个 1 和 %1 之间的数字。"
+msgstr ""
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"
