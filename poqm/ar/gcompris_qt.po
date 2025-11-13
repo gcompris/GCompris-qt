@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-10-15 17:39+0400\n"
+"PO-Revision-Date: 2025-11-12 18:50+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -14467,12 +14467,9 @@ msgstr "العدد المطلوب ما بين 1 و 5."
 
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Number to find between 0 and 20."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
-msgstr "العدد المطلوب ما بين 0 و 20."
+msgstr "العدد العشري المطلوب ما بين 0 و 20."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"
