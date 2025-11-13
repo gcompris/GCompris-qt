@@ -13222,7 +13222,7 @@ msgstr "Nepal"
 #: activities/geography/resource/board/board11_0.qml:59
 msgctxt "board11_0|"
 msgid "Bangladesh"
-msgstr "Bangladeš"
+msgstr "Bangladesh"
 
 #: activities/geography/resource/board/board11_0.qml:66
 msgctxt "board11_0|"
