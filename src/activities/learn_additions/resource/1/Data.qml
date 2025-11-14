@@ -17,9 +17,8 @@ Data {
     data: [
         {
             questionsArray: ["1 + 1", "1 + 2", "2 + 2"],
-            answersArray: [2,3,4],
-            circlesModel: 4
-
+            circlesModel: 4,
+            randomOrder: true
         }
     ]
 }
