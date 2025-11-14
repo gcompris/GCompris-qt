@@ -37,6 +37,9 @@ Item  {
     property string choiceDefault: ""   // Default value set for choiceInput, comboInput
     property bool readOnly: false       // true for type model. Value is set by aModel.count
 
+    // sent by decimalsTextInput, needed in some case to detect user interaction with the field
+    signal valueModified()
+
     width: childrenRect.width
     height: childrenRect.height
 
@@ -173,6 +176,10 @@ Item  {
                 aModel.setProperty(modelIndex, proto.name, realValueFixed);
                 // update fieldEdit value to be able to check it when needed
                 fieldEdit.value = realValueFixed;
+            }
+
+            onValueModified: {
+                fieldEdit.valueModified();
             }
         }
     }
@@ -406,6 +413,7 @@ Item  {
         }
 
         Loader {
+            id: fieldLoader
             Component.onCompleted: {                // Load appropriate component
                 sourceComponent = getComponent()    // sourceComponent must not be set as a binding to avoid binding loops
             }
