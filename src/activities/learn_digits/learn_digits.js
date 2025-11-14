@@ -16,7 +16,8 @@ var numberOfLevel;
 var items;
 var operationMode;
 var questionsArray;
-var answersArray;
+var currentQuestionIndex = -1;
+var randomOrder = true;
 var url = ""
 
 function start(items_, operationMode_) {
@@ -39,10 +40,9 @@ function initLevel() {
     items.question = 0
     items.questionText = ""
     items.answer = 0
+    currentQuestionIndex = -1;
+    randomOrder = items.levels[items.currentLevel].randomOrder;
     questionsArray = items.levels[items.currentLevel].questionsArray.slice(0);
-    if(operationMode) {
-        answersArray = items.levels[items.currentLevel].answersArray.slice(0);
-    }
     items.circlesModel = items.levels[items.currentLevel].circlesModel;
     items.score.currentSubLevel = 0;
     items.nbSubLevel = questionsArray.length;
@@ -73,34 +73,23 @@ function previousLevel() {
 }
 
 function removeLastQuestion() {
-    if(operationMode) {
-        for(var i = 0; i < questionsArray.length; i++) {
-            if(questionsArray[i] === items.questionText) {
-                questionsArray.splice(i, 1);
-                answersArray.splice(i, 1);
-                return;
-            }
-        }
-    } else {
-        for(var i = 0; i < questionsArray.length; i++) {
-            if(questionsArray[i] === items.question) {
-                questionsArray.splice(i, 1);
-                return;
-            }
-        }
-    }
+    questionsArray.splice(currentQuestionIndex, 1);
 }
 
 function initQuestion() {
     resetCircles();
     items.answer = 0;
-    var questionIndex = Math.floor(Math.random() * Math.floor(questionsArray.length - 1));
-    if(operationMode) {
-        items.question = answersArray[questionIndex];
-        items.questionText = questionsArray[questionIndex];
+    if(randomOrder) {
+        currentQuestionIndex = Math.round(Math.random() * (questionsArray.length - 1));
     } else {
-        items.question = questionsArray[questionIndex];
-        items.questionText = items.question.toString()
+        currentQuestionIndex = 0;
+    }
+    if(operationMode) {
+        items.question = eval?.(`"use strict";(${questionsArray[currentQuestionIndex]})`);
+        items.questionText = questionsArray[currentQuestionIndex];
+    } else {
+        items.question = parseInt(questionsArray[currentQuestionIndex]);
+        items.questionText = items.question;
         if(items.voicesEnabled)
             playLetter(items.questionText);
     }
