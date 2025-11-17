@@ -21,67 +21,66 @@ Item {
         id: details
         spacing: Style.margins
 
-        Item {
-            width: lineItem.width / 3
-            height: 50
+        DefaultLabel {
+            id: expectedLine
+            text: qsTr("Expected:")
             anchors.verticalCenter: parent.verticalCenter
-            DefaultLabel {
-                id: expectedLine
-                text: qsTr("Expected:")
-                anchors.verticalCenter: parent.verticalCenter
-            }
+        }
+
+        Column {
+            width: childrenRect.width
+            height: childrenRect.height
+            anchors.verticalCenter: parent.verticalCenter
+            spacing: Style.smallMargins
+
             DefaultLabel {
                 id: expectedNumerator
                 text: lineItem.jsonData.numeratorToFind
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.bottom: expectedFractionBar.bottom
-                anchors.bottomMargin: Style.margins
+                anchors.horizontalCenter: expectedFractionBar.horizontalCenter
             }
             Rectangle {
                 id: expectedFractionBar
-                width: expectedNumerator.width * 2
+                width: Math.max(expectedNumerator.width, expectedDenominator.width) + Style.bigMargins
                 height: Style.defaultBorderWidth
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.verticalCenter: parent.verticalCenter
             }
             DefaultLabel {
                 id: expectedDenominator
                 text: lineItem.jsonData.denominatorToFind
-                height: expectedNumerator.height
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.top: expectedFractionBar.bottom
-                anchors.topMargin: Style.margins
+                anchors.horizontalCenter: expectedFractionBar.horizontalCenter
             }
         }
+
         Item {
-            width: lineItem.width / 3
-            height: 50
+            width: Style.margins
+            height: 1
+        }
+
+        DefaultLabel {
+            id: actualLine
+            text: qsTr("Answer:")
             anchors.verticalCenter: parent.verticalCenter
-            DefaultLabel {
-                id: actualLine
-                text: qsTr("Actual:")
-                anchors.verticalCenter: parent.verticalCenter
-            }
+        }
+
+        Column {
+            width: childrenRect.width
+            height: childrenRect.height
+            anchors.verticalCenter: parent.verticalCenter
+            spacing: Style.smallMargins
+
             DefaultLabel {
                 id: actualNumerator
                 text: lineItem.jsonData.numeratorValue
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.bottom: actualSeparator.bottom
-                anchors.bottomMargin: Style.margins
+                anchors.horizontalCenter: actualSeparator.horizontalCenter
            }
             Rectangle {
                 id: actualSeparator
-                width: actualNumerator.width * 2
+                width: Math.max(actualNumerator.width, actualDenominator.width) + Style.bigMargins
                 height: Style.defaultBorderWidth
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.verticalCenter: parent.verticalCenter
             }
             DefaultLabel {
                 id: actualDenominator
                 text: lineItem.jsonData.denominatorValue
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.top: actualSeparator.bottom
-                anchors.topMargin: Style.margins
+                anchors.horizontalCenter: actualSeparator.horizontalCenter
             }
         }
     }
