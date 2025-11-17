@@ -14712,8 +14712,6 @@ msgstr "Tal frå 1 til 5"
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
 #, fuzzy
-#| msgctxt "Data|"
-#| msgid "Number to find between 0 and 20."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
 msgstr "Tal frå 0 til 20"
