@@ -25,6 +25,7 @@ Item {
 
     property int current: -1
     property bool toolBarEnabled: true
+    property bool addEnabled: true // used for some editors to limit the number of entries
     enabled: toolBarEnabled
 
     readonly property int minWidth: buttonsRow.width // used for SplitView.minimumWidth when in a StyledSplitView
@@ -62,7 +63,7 @@ Item {
         enabled: editorBox.toolBarEnabled
 
         // Properties initialized with parent properties.
-        readonly property bool addEnabled: editorBox.editorPrototype.multiple ? true : (editorBox.editorModel.count < 1)
+        readonly property bool addEnabled: editorBox.editorPrototype.multiple ? editorBox.addEnabled : (editorBox.editorModel.count < 1)
         readonly property bool removeEnabled: editorBox.current !== -1
         readonly property bool upEnabled: editorBox.editorPrototype.multiple ?
             ((editorBox.editorModel !== null) && (editorBox.editorModel.count > 1) &&
