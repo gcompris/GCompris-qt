@@ -10,5 +10,4 @@
 
 ComparatorEditor {
     textActivityData: textActivityData_
-    teacherInstructions: qsTr("Comparator instructions")
 }
