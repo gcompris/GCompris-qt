@@ -67,7 +67,7 @@ Popup {
             font.pixelSize: Style.textSize
             font.bold: true
             wrapMode: Text.WordWrap
-            text: qsTr("Are you sure you want to remove the following dataset from the database?")
+            text: qsTr("Are you sure you want to delete the following dataset from the database?")
         }
 
         Rectangle {
