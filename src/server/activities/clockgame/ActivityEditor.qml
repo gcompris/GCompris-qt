@@ -10,5 +10,4 @@
 
 ClockgameEditor {
     textActivityData: textActivityData_
-    teacherInstructions: qsTr("clockgame instructions")
 }
