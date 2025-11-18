@@ -345,6 +345,8 @@ void ActivityInfo::setCurrentLevels()
 {
     if (!m_name.isEmpty()) {
         m_ignoredLevels = ApplicationSettings::getInstance()->ignoredLevels(m_name.split('/')[0]);
+        // Clear m_currentLevels before filling it to avoid duplicates when reloading it after sending new level from the server
+        m_currentLevels.clear();
         // Fill m_currentLevels with all levels except the ignored ones
         for (const QString &level: m_levels) {
             if (!m_ignoredLevels.contains(level)) {
