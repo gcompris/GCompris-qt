@@ -261,6 +261,7 @@ void ActivityInfo::fillDatasets(QQmlEngine *engine)
 
     // Load user created levels
     bool atLeastOneLevelAdded = false;
+    QStringList externalLevels;
     const QString userDatasetPath(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + "/" + m_name.split('/')[0]);
     QDir userDatasetFolder(userDatasetPath);
     userDatasetFolder.setFilter(QDir::Dirs | QDir::NoSymLinks | QDir::NoDotAndDotDot);
@@ -276,8 +277,7 @@ void ActivityInfo::fillDatasets(QQmlEngine *engine)
             if (levelMin > dataset->difficulty() || levelMax < dataset->difficulty()) {
                 dataset->setEnabled(false);
             }
-
-            m_levels.push_back(datasetName);
+            externalLevels.push_back(datasetName);
             addDataset(datasetName, dataset);
             atLeastOneLevelAdded = true;
         }
@@ -285,6 +285,9 @@ void ActivityInfo::fillDatasets(QQmlEngine *engine)
             qDebug() << "ERROR: failed to load " << m_name << " " << componentRoot.errors();
         }
     }
+    // The sortLevels function in core.js expects to first sort external levels, then internal ones, so we put here the external levels at the beginning too
+    externalLevels.append(m_levels);
+    m_levels = externalLevels;
 
     if (atLeastOneLevelAdded) {
         Q_EMIT levelsChanged();

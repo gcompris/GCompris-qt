@@ -378,7 +378,7 @@ function clamp(x_, min_, max_) {
 }
 
 /**
-   First sort the internal levels (which are numbers), then sort all the added datasets which should be words
+   First sort the added datasets (which should be words), then sort all the internal levels (which are numbers)
 */
 function sortLevels(chosenLevels) {
     chosenLevels.sort(function(a, b) {
@@ -388,10 +388,10 @@ function sortLevels(chosenLevels) {
             return a.localeCompare(b)
         }
         else if (!first) { // first is a string
-            return 1
+            return -1
         }
         else if (!second) { // second is a string
-            return -1
+            return 1
         }
         // both are numbers
         return first - second
