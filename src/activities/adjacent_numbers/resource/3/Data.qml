@@ -58,6 +58,7 @@ Data {
             "numberPropositions": 8
         },
         {
+            "randomSubLevels": true,
             "lowerBound": 0,
             "upperBound": 97, // inclusive
             "step": 1,
