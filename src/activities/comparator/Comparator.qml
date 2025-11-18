@@ -168,19 +168,20 @@ ActivityBase {
             }
         }
 
-        Rectangle {
+        Item {
             id: wholeExerciceDisplay
-            height: items.lineHeight * lineRepeater.count
+            height: items.lineHeight * 5
             width: items.lineWidth
             anchors.horizontalCenter: layoutArea.horizontalCenter
             anchors.verticalCenter: layoutArea.verticalCenter
             anchors.verticalCenterOffset: (-GCStyle.bigButtonHeight - GCStyle.baseMargins) * 0.5
-            color: GCStyle.lightBg
+
             Column {
                 id: wholeExerciceDisplayContent
                 spacing: 0
-                width: parent.width
-                height: parent.height
+                width: childrenRect.width
+                height: childrenRect.height
+                anchors.centerIn: parent
                 Repeater {
                     id: lineRepeater
                     model: dataListModel
@@ -198,6 +199,7 @@ ActivityBase {
             anchors.bottom: wholeExerciceDisplay.bottom
             anchors.right: wholeExerciceDisplay.left
             anchors.margins: GCStyle.baseMargins
+            visible: dataListModel.count > 1
             property int buttonSize: Math.min(GCStyle.bigButtonHeight,
                                             (height - GCStyle.baseMargins) * 0.5)
             BarButton {
