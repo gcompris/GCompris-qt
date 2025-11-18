@@ -18,7 +18,7 @@ Rectangle {
 
     readonly property bool currentlySelected: index === items.selectedLine
 
-    color: items.selectedLine == index ? GCStyle.whiteBg : "transparent"
+    color: items.selectedLine == index ? GCStyle.whiteBg : GCStyle.lightBg
     border.color: GCStyle.blueBorder
     border.width: items.selectedLine == index ? GCStyle.thickBorder : 0
 
