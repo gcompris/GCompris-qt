@@ -131,7 +131,7 @@ Item {
                 ViewButton {
                     width: splitDatasetView.bigButtonWidth
                     height: splitDatasetView.bigButtonHeight
-                    text: "\uf2f6 " + qsTr("Send to clients")
+                    text: "\uf2f6 " + qsTr("Send dataset to clients")
                     enabled: datasetsView.selectedDataset != -1
                     onClicked: {
                         var dataset = Master.getDataset(datasetsView.selectedDataset)
@@ -149,7 +149,7 @@ Item {
                 ViewButton {
                     width: splitDatasetView.bigButtonWidth
                     height: splitDatasetView.bigButtonHeight
-                    text: "\uf506 " + qsTr("Remove from clients")
+                    text: "\uf506 " + qsTr("Remove dataset from clients")
                     enabled: datasetsView.selectedDataset != -1
                     onClicked: {
                         var dataset = Master.getDataset(datasetsView.selectedDataset)
@@ -168,10 +168,12 @@ Item {
                     margins: Style.bigMargins
                     horizontalCenter: parent.horizontalCenter
                 }
+                spacing: Style.margins
+
                 ViewButton {
                     width: splitDatasetView.bigButtonWidth
                     height: splitDatasetView.bigButtonHeight
-                    text: "\uf65d " + qsTr("Remove all from clients")
+                    text: "\uf65d " + qsTr("Remove all datasets from clients")
                     onClicked: {
                         sendDatasetDialog.openDatasetDialog({}, SendDatasetDialog.MessageType.RemoveAll)
                     }
@@ -180,7 +182,7 @@ Item {
                 ViewButton {
                     width: splitDatasetView.bigButtonWidth
                     height: splitDatasetView.bigButtonHeight
-                    text: "\uf0c7 " + qsTr("Remove dataset")
+                    text: "\uf0c7 " + qsTr("Delete dataset")
                     enabled: datasetsView.selectedDataset != -1
                     onClicked: removeDatasetDialog.open()
                 }
