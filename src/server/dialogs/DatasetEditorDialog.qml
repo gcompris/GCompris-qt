@@ -512,7 +512,11 @@ Popup {
         text: qsTr("Instructions")
         visible: editorLoader.sourceUrl !== datasetEditor.noEditorPath
         onClicked: {
-            instructionPanel.setInstructionText(true, editorLoader.item.teacherInstructions);
+            if(editorLoader.item.teacherInstructions != "") {
+                instructionPanel.setInstructionText(true, editorLoader.item.teacherInstructions);
+            } else {
+                instructionPanel.setInstructionText(true, qsTr("No specific instructions for this editor."));
+            }
             instructionPanel.open();
         }
     }

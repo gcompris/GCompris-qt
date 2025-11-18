@@ -13,7 +13,7 @@ import QtQuick
 * Common data for all editors.
 */
 Item {
-    required property string teacherInstructions
+    property string teacherInstructions: ""
 
     function validateDataset() {
         return true;
