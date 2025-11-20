@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-11-11 06:25-0300\n"
+"PO-Revision-Date: 2025-11-19 06:54-0300\n"
 "Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -27625,12 +27625,9 @@ msgstr ""
 "Digite a palavra completa enquanto ela cai, antes que ela chegue ao chão."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Kannada and Tamil"
-msgstr "Adição da tradução para letão"
+msgstr "Tradução adicionada para Kannada e Tamil"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38 core/ChangeLog.qml:44
 #: core/ChangeLog.qml:53 core/ChangeLog.qml:59 core/ChangeLog.qml:64

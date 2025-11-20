@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2025-11-11 10:04+0100\n"
+"PO-Revision-Date: 2025-11-19 10:34+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -27937,12 +27937,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Escriu la paraula completa mentre cau, abans que arribi a terra."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Kannada and Tamil"
-msgstr "S'han afegit les traduccions per al lituà"
+msgstr "S'han afegit les traduccions per al kanarès i el tàmil"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38 core/ChangeLog.qml:44
 #: core/ChangeLog.qml:53 core/ChangeLog.qml:59 core/ChangeLog.qml:64

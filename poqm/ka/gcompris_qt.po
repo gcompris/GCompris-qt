@@ -25579,12 +25579,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "აკრიფეთ სრული სიტყვა, სანამ ის დაბლა დავარდება, მისი ვარდნისას."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Kannada and Tamil"
-msgstr "დაემატა თარგმანი ლატვიურისთვის"
+msgstr "დაემატა თარგმანი კანადისთვის და ტამილურისთვის"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38 core/ChangeLog.qml:44
 #: core/ChangeLog.qml:53 core/ChangeLog.qml:59 core/ChangeLog.qml:64

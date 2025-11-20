@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-11-13 16:38+0100\n"
+"PO-Revision-Date: 2025-11-19 23:42+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -27495,12 +27495,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Typ het hele woord terwijl het valt, voor het de grond raakt."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Kannada and Tamil"
-msgstr "Vertalingen voor Lets toegevoegd."
+msgstr "Vertalingen voor Kannada en Tamil toegevoegd"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38 core/ChangeLog.qml:44
 #: core/ChangeLog.qml:53 core/ChangeLog.qml:59 core/ChangeLog.qml:64
