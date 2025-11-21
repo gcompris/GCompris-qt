@@ -9,5 +9,7 @@
  */
 FractionsCreateEditor {
     textActivityData: textActivityData_
-    teacherInstructions: qsTr("Fractions create instructions")
+    teacherInstructions: ("<b>") + qsTr("Rules to create a valid dataset:") + ("</b><br><ul><li>") +
+
+    qsTr('"Instruction" must contain some text telling the fraction to represent.') + ("</li></ul>")
 }

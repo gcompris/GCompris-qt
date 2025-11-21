@@ -10,5 +10,4 @@
 
 FractionsFindEditor {
     textActivityData: textActivityData_
-    teacherInstructions: qsTr("fractions find instructions")
 }
