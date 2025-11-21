@@ -233,6 +233,13 @@ Item {
         source: "virtualkeyboard_worker.js"
         onMessage: (messageObject) => {
             // worker finished
+
+            // Append objects from messageObject.newModel Array to rowListModel ListModel (Workaround for https://bugreports.qt.io/browse/QTBUG-140781)
+            rowListModel.clear();
+            messageObject.newModel.forEach((listObject) => {
+                rowListModel.append(listObject);
+            });
+
             activity.loading.stop();
             if (messageObject.error !== "") {
                 error(messageObject.error);
@@ -253,7 +260,7 @@ Item {
                                        shiftUpSymbol: keyboard.shiftUpSymbol,
                                        shiftDownSymbol: keyboard.shiftDownSymbol,
                                        a: a,
-                                       rowListModel: rowListModel
+                                       newModel: []
                                    });
     }
 

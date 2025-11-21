@@ -11,8 +11,6 @@
 WorkerScript.onMessage = function(msg) {
     var nRows;
     var maxButtons = 0;
-    msg.rowListModel.clear();
-    msg.rowListModel.sync();
     // validate layout syntax:
     if (!Array.isArray(msg.a) || msg.a.length < 1) {
         msg.error = "VirtualKeyboard: Invalid layout, array of length > 0";
@@ -66,15 +64,11 @@ WorkerScript.onMessage = function(msg) {
     for (i = 0; i < msg.a.length; i++) {
         var row = msg.a[i];
         var offset = 0;
-        msg.rowListModel.append({
-                                    rowNum: i,
-                                    offset: offset,
-                                    keys: row
-                                });
-        msg.rowListModel.sync();    // sync once per row, on Android where
-                                    // this seems to be executed on the GUI
-                                    // thread this leads to an update of
-                                    // the Loading overlay
+        msg.newModel.push({
+            rowNum: i,
+            offset: offset,
+            keys: row
+        })
     }
     msg.numRows = i;
     msg.initialized = (msg.numRows > 0);
