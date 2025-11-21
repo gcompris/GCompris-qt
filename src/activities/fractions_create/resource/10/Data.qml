@@ -10,19 +10,22 @@ Data {
     difficulty: 5
 
     data: [
-        [
         {
-            "chartType": "rectangle",
-            "numerator": 2,
-            "denominator": 5,
-            "instruction": qsTr("Select as many parts as you can without taking more than half of the square.")
-        },
-        {
-            "chartType": "rectangle",
-            "numerator": 3,
-            "denominator": 7,
-            "instruction": qsTr("Select as many parts as you can without taking more than half of the square.")
+            shuffle: true,
+            subLevels: [
+                {
+                    "chartType": "rectangle",
+                    "numerator": 2,
+                    "denominator": 5,
+                    "instruction": qsTr("Select as many parts as you can without taking more than half of the square.")
+                },
+                {
+                    "chartType": "rectangle",
+                    "numerator": 3,
+                    "denominator": 7,
+                    "instruction": qsTr("Select as many parts as you can without taking more than half of the square.")
+                }
+            ]
         }
-        ]
     ]
 }

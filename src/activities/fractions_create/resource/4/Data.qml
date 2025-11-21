@@ -10,68 +10,75 @@ Data {
     difficulty: 5
 
     data: [
-        [{
-            "chartType": "rectangle",
-            "numerator": 2,
-            "denominator": 4,
-            "instruction": qsTr("Select one half of the square.")
+        {
+            shuffle: true,
+            subLevels: [
+                {
+                    "chartType": "rectangle",
+                    "numerator": 2,
+                    "denominator": 4,
+                    "instruction": qsTr("Select one half of the square.")
+                },
+                {
+                    "chartType": "rectangle",
+                    "numerator": 4,
+                    "denominator": 8,
+                    "instruction": qsTr("Select one half of the square.")
+                },
+                {
+                    "chartType": "rectangle",
+                    "numerator": 5,
+                    "denominator": 10,
+                    "instruction": qsTr("Select one half of the square.")
+                },
+                {
+                    "chartType": "rectangle",
+                    "numerator": 3,
+                    "denominator": 9,
+                    "instruction": qsTr("Select one-third of the square.")
+                },
+                {
+                    "chartType": "rectangle",
+                    "numerator": 4,
+                    "denominator": 6,
+                    "instruction": qsTr("Select two-thirds of the square.")
+                }
+            ]
         },
         {
-            "chartType": "rectangle",
-            "numerator": 4,
-            "denominator": 8,
-            "instruction": qsTr("Select one half of the square.")
-        },
-        {
-            "chartType": "rectangle",
-            "numerator": 5,
-            "denominator": 10,
-            "instruction": qsTr("Select one half of the square.")
-        },
-        {
-            "chartType": "rectangle",
-            "numerator": 3,
-            "denominator": 9,
-            "instruction": qsTr("Select one-third of the square.")
-        },
-        {
-            "chartType": "rectangle",
-            "numerator": 4,
-            "denominator": 6,
-            "instruction": qsTr("Select two-thirds of the square.")
+            shuffle: true,
+            subLevels: [
+                {
+                    "chartType": "rectangle",
+                    "numerator": 2,
+                    "denominator": 6,
+                    "instruction": qsTr("Select one-third of the square.")
+                },
+                {
+                    "chartType": "rectangle",
+                    "numerator": 6,
+                    "denominator": 9,
+                    "instruction": qsTr("Select two-thirds of the square.")
+                },
+                {
+                    "chartType": "rectangle",
+                    "numerator": 2,
+                    "denominator": 8,
+                    "instruction": qsTr("Select one-quarter of the square.")
+                },
+                {
+                    "chartType": "rectangle",
+                    "numerator": 4,
+                    "denominator": 10,
+                    "instruction": qsTr("Select two-fifths of the square.")
+                },
+                {
+                    "chartType": "rectangle",
+                    "numerator": 6,
+                    "denominator": 10,
+                    "instruction": qsTr("Select three-fifths of the square.")
+                }
+            ]
         }
-        ],
-        [
-        {
-            "chartType": "rectangle",
-            "numerator": 2,
-            "denominator": 6,
-            "instruction": qsTr("Select one-third of the square.")
-        },
-        {
-            "chartType": "rectangle",
-            "numerator": 6,
-            "denominator": 9,
-            "instruction": qsTr("Select two-thirds of the square.")
-        },
-        {
-            "chartType": "rectangle",
-            "numerator": 2,
-            "denominator": 8,
-            "instruction": qsTr("Select one-quarter of the square.")
-        },
-        {
-            "chartType": "rectangle",
-            "numerator": 4,
-            "denominator": 10,
-            "instruction": qsTr("Select two-fifths of the square.")
-        },
-        {
-            "chartType": "rectangle",
-            "numerator": 6,
-            "denominator": 10,
-            "instruction": qsTr("Select three-fifths of the square.")
-        }
-        ]
     ]
 }

@@ -10,19 +10,22 @@ Data {
     difficulty: 5
 
     data: [
-        [
         {
-            "chartType": "pie",
-            "numerator": 2,
-            "denominator": 5,
-            "instruction": qsTr("Select as many parts as you can without taking more than half of the pie.")
-        },
-        {
-            "chartType": "pie",
-            "numerator": 3,
-            "denominator": 7,
-            "instruction": qsTr("Select as many parts as you can without taking more than half of the pie.")
+            shuffle: true,
+            subLevels: [
+                {
+                    "chartType": "pie",
+                    "numerator": 2,
+                    "denominator": 5,
+                    "instruction": qsTr("Select as many parts as you can without taking more than half of the pie.")
+                },
+                {
+                    "chartType": "pie",
+                    "numerator": 3,
+                    "denominator": 7,
+                    "instruction": qsTr("Select as many parts as you can without taking more than half of the pie.")
+                }
+            ]
         }
-        ]
     ]
 }
