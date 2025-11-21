@@ -11,5 +11,6 @@ import "../learn_decimals_additions"
 
 DecimalAdditionEditor {
     textActivityData: textActivityData_
-    teacherInstructions: qsTr("learn_decimal_subtractions instructions")
+
+    isAddition: false
 }

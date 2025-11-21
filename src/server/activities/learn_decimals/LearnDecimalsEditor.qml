@@ -35,6 +35,7 @@ DatasetEditorBase {
         // We cannot implement "choice" directly as ListElement due to the fact
         // that the values are variables and only static values are accepted
         //ListElement { name: "inputType"; label: qsTr("Mode"); type: "choice"; def: '["Random", "Fixed"]' }
+        // We can not display more than 6 bars, so max value is 6.
         ListElement { name: "fixedValue"; label: qsTr("Fixed Number"); type: "boundedDecimal"; def: "0"; decimalRange: '[0,6]'; stepSize: 1; decimals: 1 }
         ListElement { name: "minValue"; label: qsTr("Minimum Value"); type: "boundedDecimal"; def: "0"; decimalRange: '[0,6]'; stepSize: 1; decimals: 1 }
         ListElement { name: "maxValue"; label: qsTr("Maximum Value"); type: "boundedDecimal"; def: "0"; decimalRange: '[0,6]'; stepSize: 1; decimals: 1 }
@@ -108,7 +109,7 @@ DatasetEditorBase {
                         id: minValueField
                         name: "minValue"
                         visible: !fieldsColumn.fixedMode
-                        onValueChanged: {
+                        onValueModified: {
                             if(parseFloat(value) > parseFloat(maxValueField.value)) {
                                 maxValueField.value = value;
                             }
@@ -118,7 +119,7 @@ DatasetEditorBase {
                         id: maxValueField
                         name: "maxValue"
                         visible: !fieldsColumn.fixedMode
-                        onValueChanged: {
+                        onValueModified: {
                             if(parseFloat(value) < parseFloat(minValueField.value)) {
                                 minValueField.value = value;
                             }
@@ -127,6 +128,34 @@ DatasetEditorBase {
                 }
             }
         }
+    }
+
+    function validateDataset() {
+        var isValid = true;
+        var globalError = "";
+        var textError = "";
+        var currentDataset = editor.mainModel.get(0)
+        //check if dataset is not empty
+        if(!currentDataset) {
+            globalError = ("<ul><li>") + qsTr('Dataset is empty.') + ("</li></ul>")
+            instructionPanel.setInstructionText(false, globalError);
+            instructionPanel.open();
+            return false;
+        }
+        for(var datasetId = 0; datasetId < editor.mainModel.count; ++datasetId) {
+            currentDataset = editor.mainModel.get(datasetId);
+            var datasetQuestions = currentDataset.subLevels;
+            if(datasetQuestions.count < 1) {
+                isValid = false;
+                textError = textError + ("<li>") + qsTr('Level %1 must not be empty.').arg(datasetId+1) + ("</li>");
+            }
+        }
+        if(!isValid) {
+            globalError = qsTr("The following errors need to be fixed:<ul>%1</ul>").arg(textError)
+            instructionPanel.setInstructionText(false, globalError);
+            instructionPanel.open();
+        }
+        return isValid;
     }
 
     readonly property var inputTypeChoices: [

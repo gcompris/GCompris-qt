@@ -21,6 +21,8 @@ DatasetEditorBase {
     property ListModel mainModel: ({})                      // The main ListModel, declared as a property for dynamic creation
     readonly property var prototypeStack: [ mainPrototype, subPrototype ]   // A stack of two prototypes
 
+    property bool isAddition: true // false for subtraction
+
     ListModel {
         id: mainPrototype
         property bool multiple: true
@@ -35,10 +37,11 @@ DatasetEditorBase {
         // We cannot implement "choice" directly as ListElement due to the fact
         // that the values are variables and only static values are accepted
         //ListElement { name: "inputType"; label: qsTr("Mode"); type: "choice"; def: '["Random", "Fixed"]' }
-        ListElement { name: "firstNumber"; label: qsTr("First Number"); type: "boundedDecimal"; def: "0"; decimalRange :'[0,3]' ; stepSize: 1 ; decimals: 1 }
-        ListElement { name: "secondNumber"; label: qsTr("Second Number"); type: "boundedDecimal"; def: "0"; decimalRange :'[0,3]' ; stepSize: 1 ; decimals: 1 }
-        ListElement { name: "minValue"; label: qsTr("Minimum Value"); type: "boundedDecimal"; def: "0" ; decimalRange :'[0,3]' ; stepSize: 1  ; decimals: 1 }
-        ListElement { name: "maxValue"; label: qsTr("Maximum Value"); type: "boundedDecimal"; def: "0"; decimalRange :'[0,3]' ; stepSize: 1 ; decimals: 1 }
+        // We can display 6 bars for additions and 5 bars for subtractions, so limit the range to 5 in any case to make things simpler.
+        ListElement { name: "firstNumber"; label: qsTr("First Number"); type: "boundedDecimal"; def: "0"; decimalRange :'[0,5]' ; stepSize: 1 ; decimals: 1 }
+        ListElement { name: "secondNumber"; label: qsTr("Second Number"); type: "boundedDecimal"; def: "0"; decimalRange :'[0,5]' ; stepSize: 1 ; decimals: 1 }
+        ListElement { name: "minValue"; label: qsTr("Minimum Value"); type: "boundedDecimal"; def: "0" ; decimalRange :'[0,5]' ; stepSize: 1  ; decimals: 1 }
+        ListElement { name: "maxValue"; label: qsTr("Maximum Value"); type: "boundedDecimal"; def: "0"; decimalRange :'[0,5]' ; stepSize: 1 ; decimals: 1 }
     }
 
     StyledSplitView {
@@ -100,21 +103,54 @@ DatasetEditorBase {
                     readonly property bool fixedMode: currentModel && currentModel.get(fieldsColumn.modelIndex) ?
                     currentModel.get(fieldsColumn.modelIndex).inputType === "fixed" : false
 
+                    property double firstNumber: 0
+                    property double secondNumber: 0
+
+                    function clampSecondNumber() {
+                        if(editor.isAddition && firstNumber + secondNumber > 6) {
+                            secondNumber = 6 - firstNumber;
+                            secondNumberField.value = secondNumber.toString();
+                        } else if(!editor.isAddition && firstNumber - secondNumber < 0) {
+                            secondNumber = firstNumber;
+                            secondNumberField.value = secondNumber.toString();
+                        }
+                    }
+
+                    function clampFirstNumber() {
+                        if(editor.isAddition && firstNumber + secondNumber > 6) {
+                            firstNumber = 6 - secondNumber;
+                            firstNumberField.value = firstNumber.toString();
+                        } else if(!editor.isAddition && firstNumber - secondNumber < 0) {
+                            firstNumber = secondNumber;
+                            firstNumberField.value = firstNumber.toString();
+                        }
+                    }
+
                     FieldEdit { name: "inputType" }
                     FieldEdit {
+                        id: firstNumberField
                         name: "firstNumber"
                         visible: fieldsColumn.fixedMode
+                        onValueModified: {
+                            fieldsColumn.firstNumber = parseFloat(value);
+                            fieldsColumn.clampSecondNumber();
+                        }
                     }
                     FieldEdit {
+                        id: secondNumberField
                         name: "secondNumber"
                         visible: fieldsColumn.fixedMode
+                        onValueModified: {
+                            fieldsColumn.secondNumber = parseFloat(value);
+                            fieldsColumn.clampFirstNumber();
+                        }
                     }
 
                     FieldEdit {
                         id: minValueField
                         name: "minValue"
                         visible: !fieldsColumn.fixedMode
-                        onValueChanged: {
+                        onValueModified: {
                             if(parseFloat(value) > parseFloat(maxValueField.value)) {
                                 maxValueField.value = value;
                             }
@@ -125,7 +161,7 @@ DatasetEditorBase {
                         id: maxValueField
                         name: "maxValue"
                         visible:! fieldsColumn.fixedMode
-                        onValueChanged: {
+                        onValueModified: {
                             if(parseFloat(value) < parseFloat(minValueField.value)) {
                                 minValueField.value = value;
                             }
@@ -134,6 +170,34 @@ DatasetEditorBase {
                 }
             }
         }
+    }
+
+    function validateDataset() {
+        var isValid = true;
+        var globalError = "";
+        var textError = "";
+        var currentDataset = editor.mainModel.get(0)
+        //check if dataset is not empty
+        if(!currentDataset) {
+            globalError = ("<ul><li>") + qsTr('Dataset is empty.') + ("</li></ul>")
+            instructionPanel.setInstructionText(false, globalError);
+            instructionPanel.open();
+            return false;
+        }
+        for(var datasetId = 0; datasetId < editor.mainModel.count; ++datasetId) {
+            currentDataset = editor.mainModel.get(datasetId);
+            var datasetQuestions = currentDataset.subLevels;
+            if(datasetQuestions.count < 1) {
+                isValid = false;
+                textError = textError + ("<li>") + qsTr('Level %1 must not be empty.').arg(datasetId+1) + ("</li>");
+            }
+        }
+        if(!isValid) {
+            globalError = qsTr("The following errors need to be fixed:<ul>%1</ul>").arg(textError)
+            instructionPanel.setInstructionText(false, globalError);
+            instructionPanel.open();
+        }
+        return isValid;
     }
 
     readonly property var inputTypeChoices: [
