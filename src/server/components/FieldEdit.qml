@@ -33,6 +33,7 @@ Item  {
     // Other properties, initialized with previous properties. Should not be set.
     readonly property var proto: Master.findObjectInModel(aPrototype, function(item) { return item.name === name })
     property string value
+
     property var jsonValue: ({})
     property string choiceDefault: ""   // Default value set for choiceInput, comboInput
     property bool readOnly: false       // true for type model. Value is set by aModel.count
@@ -160,7 +161,7 @@ Item  {
             }
 
             property int decimals: jsonValue.decimals   //how many decimals places we want
-            property real realValue: value / Math.pow(10, decimals) // 15-> 1.5
+            property string realValue: (value / Math.pow(10, decimals)).toFixed(decimals) // 15-> "1.5"
             readonly property int decimalFactor: Math.pow(10, decimals) // 15/decimal factor -> 1.5
 
             textFromValue: function(value, locale) {
@@ -172,13 +173,13 @@ Item  {
             }
 
             onRealValueChanged: {
-                var realValueFixed = realValue.toFixed(decimals);
-                aModel.setProperty(modelIndex, proto.name, realValueFixed);
-                // update fieldEdit value to be able to check it when needed
-                fieldEdit.value = realValueFixed;
+                aModel.setProperty(modelIndex, proto.name, realValue);
             }
 
             onValueModified: {
+                // update fieldEdit value to be able to check it when needed
+                fieldEdit.value = realValue;
+                // call parent's signal
                 fieldEdit.valueModified();
             }
         }
