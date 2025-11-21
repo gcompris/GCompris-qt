@@ -213,7 +213,6 @@ function organizeDroppedBars() {
 }
 
 function generateFirstNumber() {
-
     var currentSubLevel = currentSubLevels[currentSubLevelIndex];
     if(currentSubLevel.inputType === "fixed") {
         if(items.isAdditionMode|| items.isSubtractionMode) {
@@ -259,11 +258,6 @@ function generateSecondNumber() {
             }
         }
     }
-
-    do {
-        generatedNumber = generateDecimalNumbers(minimumValue, maximumValue);
-    }
-    while(generatedNumber === firstNumber && items.isSubtractionMode);
 
     return generatedNumber;
 }
