@@ -10,5 +10,4 @@
 
 DecimalAdditionEditor {
      textActivityData: textActivityData_
-     teacherInstructions: qsTr("learn_decimals_addition instructions")
 }
