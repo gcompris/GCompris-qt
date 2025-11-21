@@ -30,15 +30,17 @@ function initLevel() {
     items.score.currentSubLevel = 0;
     items.errorRectangle.resetState();
 
-    items.numberOfSubLevels = levels[items.currentLevel].length;
+    items.numberOfSubLevels = levels[items.currentLevel].subLevels.length;
 
-    Core.shuffle(levels[items.currentLevel]);
+    if(levels[items.currentLevel].shuffle) {
+        Core.shuffle(levels[items.currentLevel].subLevels);
+    }
 
     initSubLevel();
 }
 
 function initSubLevel() {
-    var currentSubLevel = levels[items.currentLevel][items.score.currentSubLevel];
+    var currentSubLevel = levels[items.currentLevel].subLevels[items.score.currentSubLevel];
     items.chartType = currentSubLevel.chartType;
 
     items.fixedNumerator = currentSubLevel.fixedNumerator ? currentSubLevel.fixedNumerator : false;

@@ -10,79 +10,85 @@ Data {
     difficulty: 5
 
     data: [
-        [
         {
-            "chartType": "rectangle",
-            "fixedNumerator": true,
-            "fixedDenominator": false,
-            "maxFractions": 1,
-            "random": true
+            shuffle: true,
+            subLevels: [
+                {
+                    "chartType": "rectangle",
+                    "fixedNumerator": true,
+                    "fixedDenominator": false,
+                    "maxFractions": 1,
+                    "random": true
+                },
+                {
+                    "chartType": "rectangle",
+                    "fixedNumerator": true,
+                    "fixedDenominator": false,
+                    "maxFractions": 1,
+                    "random": true
+                },
+                {
+                    "chartType": "rectangle",
+                    "fixedNumerator": true,
+                    "fixedDenominator": false,
+                    "maxFractions": 1,
+                    "random": true
+                },
+                {
+                    "chartType": "rectangle",
+                    "fixedNumerator": true,
+                    "fixedDenominator": false,
+                    "maxFractions": 1,
+                    "random": true
+                },
+                {
+                    "chartType": "rectangle",
+                    "fixedNumerator": true,
+                    "fixedDenominator": false,
+                    "maxFractions": 1,
+                    "random": true
+                }
+            ]
         },
         {
-            "chartType": "rectangle",
-            "fixedNumerator": true,
-            "fixedDenominator": false,
-            "maxFractions": 1,
-            "random": true
-        },
-        {
-            "chartType": "rectangle",
-            "fixedNumerator": true,
-            "fixedDenominator": false,
-            "maxFractions": 1,
-            "random": true
-        },
-        {
-            "chartType": "rectangle",
-            "fixedNumerator": true,
-            "fixedDenominator": false,
-            "maxFractions": 1,
-            "random": true
-        },
-        {
-            "chartType": "rectangle",
-            "fixedNumerator": true,
-            "fixedDenominator": false,
-            "maxFractions": 1,
-            "random": true
-        },
-        ],
-        [
-        {
-            "chartType": "rectangle",
-            "fixedNumerator": true,
-            "fixedDenominator": false,
-            "maxFractions": 2,
-            "random": true
-        },
-        {
-            "chartType": "rectangle",
-            "fixedNumerator": true,
-            "fixedDenominator": false,
-            "maxFractions": 2,
-            "random": true
-        },
-        {
-            "chartType": "rectangle",
-            "fixedNumerator": true,
-            "fixedDenominator": false,
-            "maxFractions": 2,
-            "random": true
-        },
-        {
-            "chartType": "rectangle",
-            "fixedNumerator": true,
-            "fixedDenominator": false,
-            "maxFractions": 2,
-            "random": true
-        },
-        {
-            "chartType": "rectangle",
-            "fixedNumerator": true,
-            "fixedDenominator": false,
-            "maxFractions": 2,
-            "random": true
+            shuffle: true,
+            subLevels: [
+                {
+                    "chartType": "rectangle",
+                    "fixedNumerator": true,
+                    "fixedDenominator": false,
+                    "maxFractions": 2,
+                    "random": true
+                },
+                {
+                    "chartType": "rectangle",
+                    "fixedNumerator": true,
+                    "fixedDenominator": false,
+                    "maxFractions": 2,
+                    "random": true
+                },
+                {
+                    "chartType": "rectangle",
+                    "fixedNumerator": true,
+                    "fixedDenominator": false,
+                    "maxFractions": 2,
+                    "random": true
+                },
+                {
+                    "chartType": "rectangle",
+                    "fixedNumerator": true,
+                    "fixedDenominator": false,
+                    "maxFractions": 2,
+                    "random": true
+                },
+                {
+                    "chartType": "rectangle",
+                    "fixedNumerator": true,
+                    "fixedDenominator": false,
+                    "maxFractions": 2,
+                    "random": true
+                }
+            ]
         }
-        ]
     ]
 }
