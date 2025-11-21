@@ -20,79 +20,85 @@ Data {
     difficulty: 5
 
     data: [
-        [
         {
-            "chartType": "pie",
-            "fixedNumerator": false,
-            "fixedDenominator": true,
-            "maxFractions": 1,
-            "random": true
+            shuffle: true,
+            subLevels: [
+                {
+                    "chartType": "pie",
+                    "fixedNumerator": false,
+                    "fixedDenominator": true,
+                    "maxFractions": 1,
+                    "random": true
+                },
+                {
+                    "chartType": "pie",
+                    "fixedNumerator": false,
+                    "fixedDenominator": true,
+                    "maxFractions": 1,
+                    "random": true
+                },
+                {
+                    "chartType": "pie",
+                    "fixedNumerator": false,
+                    "fixedDenominator": true,
+                    "maxFractions": 1,
+                    "random": true
+                },
+                {
+                    "chartType": "pie",
+                    "fixedNumerator": false,
+                    "fixedDenominator": true,
+                    "maxFractions": 1,
+                    "random": true
+                },
+                {
+                    "chartType": "pie",
+                    "fixedNumerator": false,
+                    "fixedDenominator": true,
+                    "maxFractions": 1,
+                    "random": true
+                }
+            ]
         },
         {
-            "chartType": "pie",
-            "fixedNumerator": false,
-            "fixedDenominator": true,
-            "maxFractions": 1,
-            "random": true
-        },
-        {
-            "chartType": "pie",
-            "fixedNumerator": false,
-            "fixedDenominator": true,
-            "maxFractions": 1,
-            "random": true
-        },
-        {
-            "chartType": "pie",
-            "fixedNumerator": false,
-            "fixedDenominator": true,
-            "maxFractions": 1,
-            "random": true
-        },
-        {
-            "chartType": "pie",
-            "fixedNumerator": false,
-            "fixedDenominator": true,
-            "maxFractions": 1,
-            "random": true
+            shuffle: true,
+            subLevels: [
+                {
+                    "chartType": "pie",
+                    "fixedNumerator": false,
+                    "fixedDenominator": true,
+                    "maxFractions": 2,
+                    "random": true
+                },
+                {
+                    "chartType": "pie",
+                    "fixedNumerator": false,
+                    "fixedDenominator": true,
+                    "maxFractions": 2,
+                    "random": true
+                },
+                {
+                    "chartType": "pie",
+                    "fixedNumerator": false,
+                    "fixedDenominator": true,
+                    "maxFractions": 2,
+                    "random": true
+                },
+                {
+                    "chartType": "pie",
+                    "fixedNumerator": false,
+                    "fixedDenominator": true,
+                    "maxFractions": 2,
+                    "random": true
+                },
+                {
+                    "chartType": "pie",
+                    "fixedNumerator": false,
+                    "fixedDenominator": true,
+                    "maxFractions": 2,
+                    "random": true
+                }
+            ]
         }
-        ],
-        [
-        {
-            "chartType": "pie",
-            "fixedNumerator": false,
-            "fixedDenominator": true,
-            "maxFractions": 2,
-            "random": true
-        },
-        {
-            "chartType": "pie",
-            "fixedNumerator": false,
-            "fixedDenominator": true,
-            "maxFractions": 2,
-            "random": true
-        },
-        {
-            "chartType": "pie",
-            "fixedNumerator": false,
-            "fixedDenominator": true,
-            "maxFractions": 2,
-            "random": true
-        },
-        {
-            "chartType": "pie",
-            "fixedNumerator": false,
-            "fixedDenominator": true,
-            "maxFractions": 2,
-            "random": true
-        },
-        {
-            "chartType": "pie",
-            "fixedNumerator": false,
-            "fixedDenominator": true,
-            "maxFractions": 2,
-            "random": true
-        }
-        ]
     ]
 }
