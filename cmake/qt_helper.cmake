@@ -121,3 +121,40 @@ function(installQmlPlugin _plugin _dest_dir _lib)
   endif()
   set(_lib "${_install_path}/${_plugin_file}" PARENT_SCOPE)
 endfunction()
+
+#install_with_symlinks(FILE ${OPENSSL_CRYPTO_LIBRARY} DESTINATION bin)
+function(install_with_symlinks)
+    set(oneValueArgs FILE DESTINATION)
+    cmake_parse_arguments(ARGS "" "${oneValueArgs}"
+                          "" ${ARGN})
+
+    if(IS_SYMLINK ${ARGS_FILE})
+      set(SYMLINK_LIB)
+      file(READ_SYMLINK "${ARGS_FILE}" SYMLINK_LIB)
+      if(NOT IS_ABSOLUTE "${SYMLINK_LIB}")
+        get_filename_component(dir "${ARGS_FILE}" DIRECTORY)
+        set(SYMLINK_LIB "${dir}/${SYMLINK_LIB}")
+      endif()
+      install_with_symlinks(FILE ${SYMLINK_LIB} DESTINATION ${ARGS_DESTINATION})
+
+      # On some unix (ubuntu 18.04 at least), we can have things like
+      # libprotobuf.so -> libprotobuf.so.10.0.0
+      # libprotobuf.so.10 -> libprotobuf.so.10.0.0
+      # (where we would have expected libprotobuf.so -> libprotobuf.so.10 -> libprotobuf.so.10.0.0)
+      # in this case, we do a workaround to get the libprotobuf.so.10 using objdump
+      if(UNIX)
+  execute_process(COMMAND ${CMAKE_OBJDUMP} -p ${ARGS_FILE}
+    OUTPUT_VARIABLE OBJDUMP_OUTPUT)
+  string(REGEX REPLACE ".*SONAME *([A-Za-z0-9\.]*).*" "\\1"
+    LIB_SO_VAR ${OBJDUMP_OUTPUT})
+        get_filename_component(dir "${ARGS_FILE}" DIRECTORY)
+        set(LIB_SO_VAR "${dir}/${LIB_SO_VAR}")
+  if(NOT LIB_SO_VAR STREQUAL ARGS_FILE AND NOT LIB_SO_VAR STREQUAL ${SYMLINK_LIB})
+    install_with_symlinks(FILE ${LIB_SO_VAR} DESTINATION bin)
+  endif()
+  # end of workaround
+      endif()
+    endif()
+    message(STATUS "Install ${ARGS_FILE} in ${ARGS_DESTINATION}")
+    install(FILES ${ARGS_FILE} DESTINATION ${ARGS_DESTINATION})
+endfunction()
