@@ -31,10 +31,8 @@
 #include "ActivityInfoTree.h"
 #include "DownloadManager.h"
 
-#ifdef WITH_SERVER
 #include "ClientNetworkMessages.h"
 #include "netconst.h"
-#endif
 
 int main(int argc, char *argv[])
 {
@@ -297,7 +295,6 @@ int main(int argc, char *argv[])
     QString locale = config.value("General/locale", GC_DEFAULT_LOCALE).toString();
     ApplicationInfo::getInstance()->switchLocale(locale);
 
-#ifdef WITH_SERVER
     qmlRegisterUncreatableMetaObject(
       netconst::staticMetaObject,   // meta object created by Q_NAMESPACE macro
       "GCompris",                   // import statement (can be any string)
@@ -305,14 +302,11 @@ int main(int argc, char *argv[])
       "NetConst",                   // name in QML (does not have to match C++ name)
       "Error: only enums"           // error in case someone tries to create a MyNamespace object
     );
-#endif
 
     QQmlApplicationEngine engine;
 
-#ifdef WITH_SERVER
     ClientNetworkMessages clientNetworkMessages;
     engine.rootContext()->setContextProperty("clientNetworkMessages", &clientNetworkMessages);
-#endif
 
     QObject::connect(&engine, &QQmlApplicationEngine::quit, DownloadManager::getInstance(),
                      &DownloadManager::shutdown);

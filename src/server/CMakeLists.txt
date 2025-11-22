@@ -32,7 +32,7 @@ find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} COMPONENTS Charts Widgets)
 set_package_properties(${QT_MAJOR}Charts PROPERTIES TYPE REQUIRED)
 set_package_properties(${QT_MAJOR}Widgets PROPERTIES TYPE REQUIRED)
 
-set(used_qt_modules ${QT_MAJOR}::Qml ${QT_MAJOR}::Quick ${QT_MAJOR}::Gui ${QT_MAJOR}::Multimedia ${QT_MAJOR}::Core ${QT_MAJOR}::Svg ${QT_MAJOR}::Sensors ${QT_MAJOR}::QuickControls2 ${QT_MAJOR}::Charts ${QT_MAJOR}::Sql ${QT_MAJOR}::QuickDialogs2)
+set(used_qt_modules ${QT_MAJOR}::Qml ${QT_MAJOR}::Quick ${QT_MAJOR}::Gui ${QT_MAJOR}::Core ${QT_MAJOR}::Svg ${QT_MAJOR}::QuickControls2 ${QT_MAJOR}::Charts ${QT_MAJOR}::Sql)
 
 if(ANDROID)
   add_library(${GCOMPRIS_TEACHERS_EXECUTABLE_NAME} SHARED ${server_SRCS} ${server_MOC})
@@ -68,13 +68,6 @@ gcompris_add_rcc(server
   help/*.html
 )
 
-install(TARGETS ${GCOMPRIS_TEACHERS_EXECUTABLE_NAME}
-  ARCHIVE DESTINATION bin
-  RUNTIME DESTINATION bin
-  LIBRARY DESTINATION lib
-  BUNDLE DESTINATION .)
-
-# install a startup script for linux bundle
-if(BUILD_STANDALONE AND UNIX AND NOT APPLE AND NOT UBUNTUTOUCH AND NOT ANDROID )
-  install(PROGRAMS ../../tools/gcompris-teachers.sh DESTINATION bin)
+if(PACKAGE_SERVER)
+  include(PackageServer.cmake)
 endif()

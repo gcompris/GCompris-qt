@@ -178,7 +178,10 @@ if(ECM_FOUND)
     endif()
 endif()
 
+option(PACKAGE_GCOMPRIS "Package GCompris (default)" ON)
+
 option(BUILD_SERVER "Build the server along the application" ON)
+option(PACKAGE_SERVER "Package the server" OFF)
 
 if(BUILD_SERVER)
   find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} COMPONENTS Sql)

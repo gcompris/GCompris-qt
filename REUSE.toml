@@ -5094,7 +5094,7 @@ SPDX-FileCopyrightText = "2014 Johnny Jazeix"
 SPDX-License-Identifier = "CC0-1.0"
 
 [[annotations]]
-path = "src/core/qt.conf"
+path = ["src/core/qt.conf", "src/server/qt.conf"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2014 Thibaut ROMAIN"
 SPDX-License-Identifier = "CC0-1.0"
