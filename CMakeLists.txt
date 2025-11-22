@@ -123,6 +123,11 @@ endif()
 # It seems to only be present on some Linux distributions, not FreeBSD for example and starting Qt6.6 so not enforcing it
 find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} OPTIONAL_COMPONENTS QuickControls2Basic)
 
+# Needed for android internal paths
+if(ANDROID)
+  find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} COMPONENTS CorePrivate)
+  set_package_properties(${QT_MAJOR}CorePrivate PROPERTIES TYPE REQUIRED)
+endif()
 
 # Set Qt policy, introduced in Qt6.8
 if(QT_KNOWN_POLICY_QTP0004)
@@ -151,7 +156,10 @@ if(SHIP_SYSTEM_ICU)
 endif()
 
 find_package(OpenSSL)
-set_package_properties(OpenSSL PROPERTIES TYPE REQUIRED)
+# OpenSSL will be compiled as external_project for android
+if(NOT ANDROID)
+  set_package_properties(OpenSSL PROPERTIES TYPE REQUIRED)
+endif()
 
 option(COMPILE_DOC "Enable compilation of GCompris docbook" OFF)
 if(COMPILE_DOC)
