@@ -313,36 +313,35 @@ bool ApplicationInfo::loadAndroidTranslation(const QString &locale)
 }
 
 /**
- * Checks if the locale is supported. Locale may have been removed because
+ * Returns a list of supported locales. Locale may have been removed because
  * translation progress was not enough or invalid language put in configuration.
  */
-bool ApplicationInfo::isSupportedLocale(const QString &locale)
+QStringList ApplicationInfo::supportedLocales()
 {
-    bool isSupported = false;
+    QStringList supportedLocales;
     QQmlEngine engine;
     QQmlComponent component(&engine, QUrl("qrc:/gcompris/src/core/LanguageList.qml"));
     QObject *object = component.create();
     if (!object) {
-        qWarning() << "isSupportedLocale:" << component.errors();
-        return false;
+        qWarning() << "supportedLocales:" << component.errors();
+        return supportedLocales;
     }
     QVariant variant = object->property("languages");
     QJSValue languagesList = variant.value<QJSValue>();
     const int length = languagesList.property("length").toInt();
     for (int i = 0; i < length; ++i) {
-        if (languagesList.property(i).property("locale").toString() == locale) {
-            isSupported = true;
-        }
+        supportedLocales << languagesList.property(i).property("locale").toString();
     }
     delete object;
-    return isSupported;
+    return supportedLocales;
 }
 
 // Return the locale
 QString ApplicationInfo::loadTranslation(const QString &requestedLocale)
 {
     QString locale = requestedLocale;
-    if (!isSupportedLocale(locale)) {
+    QStringList locales = supportedLocales();
+    if (!locales.contains(locale)) {
         qDebug() << "locale" << locale << "not supported, defaulting to" << GC_DEFAULT_LOCALE;
         locale = GC_DEFAULT_LOCALE;
         ApplicationSettings::getInstance()->setLocale(locale);

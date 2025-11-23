@@ -295,6 +295,7 @@ public:
      */
     void switchLocale();
     void switchLocale(const QString &locale);
+    QStringList supportedLocales();
 
     static QString GCVersion() { return VERSION; }
     static int GCVersionCode() { return VERSION_CODE; }
@@ -479,7 +480,6 @@ private:
     static QQuickWindow *m_window;
 
     bool loadAndroidTranslation(const QString &locale);
-    bool isSupportedLocale(const QString &locale);
     QString loadTranslation(const QString &requestedLocale);
 };
 

@@ -139,6 +139,10 @@ int main(int argc, char *argv[])
                                       QObject::tr("Specify on which level to start the activity. Only used when --launch option is used."), "startLevel");
     parser.addOption(clStartOnLevel);
 
+    QCommandLineOption clLocale("locale",
+                              QObject::tr("Specify the locale when starting GCompris."), "locale");
+    parser.addOption(clLocale);
+
     parser.process(app);
 
 #ifdef WITH_RCC
@@ -200,6 +204,19 @@ int main(int argc, char *argv[])
     }
     if (parser.isSet(clWithKioskMode)) {
         ApplicationSettings::getInstance()->setKioskMode(true);
+    }
+    if (parser.isSet(clLocale)) {
+        QString locale = parser.value(clLocale);
+        if (locale != "system") {
+            locale += QStringLiteral(".UTF-8");
+        }
+        QStringList allLocales = ApplicationInfo::getInstance()->supportedLocales();
+        if (!allLocales.contains(locale)) {
+            qDebug() << "supported locales are:" << allLocales.replaceInStrings(".UTF-8", "").join(", ");
+        }
+        else {
+            ApplicationSettings::getInstance()->setLocale(locale);
+        }
     }
     // This will be removed later, for now, it is ignored if --renderer option is set
     if (parser.isSet(clSoftwareRenderer)) {

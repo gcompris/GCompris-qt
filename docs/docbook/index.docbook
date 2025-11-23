@@ -328,6 +328,10 @@ or make it show real car images instead of filled rectangles (traffic).</para>
 <entry>--opengl-renderer</entry>
 <entry>Use OpenGL renderer instead of software (faster and more graphical effects but can crash with some graphical cards). Deprecated, use “--renderer=opengl” instead.</entry>
 </row>
+<row>
+<entry>--locale=locale</entry>
+<entry>Run &gcompris; with the specified locale.</entry>
+</row>
 </tbody>
 </tgroup>
 </informaltable>
