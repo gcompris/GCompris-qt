@@ -94,6 +94,7 @@ ActivityBase {
             property alias okButton: okButton
             property alias numPad: numPad
             property alias miniPad: miniPad
+            property alias negativeNumberWarning: negativeNumberWarning
             property bool inputLocked: true
             property string createAdditionText: qsTr("Write your own addition and solve it.")
             property string createSubtractionText: qsTr("Write your own subtraction and solve it.")
@@ -223,6 +224,10 @@ ActivityBase {
                     digitsVisible: !readyButton.visible
                     enabled: okButton.visible
                     lineIndex: -1   // Means result number line
+
+                    onNumberValueChanged: {
+                        initNumberLine();
+                    }
                 }
             }
         }
@@ -434,6 +439,37 @@ ActivityBase {
             radius: board.radius
             imageSize: height * 0.5
             function releaseControls() { items.inputLocked = false; }
+        }
+
+        Rectangle {
+            id: negativeNumberWarning
+            visible: false
+            enabled: visible
+            anchors.fill: layoutArea
+            radius: GCStyle.halfMargins
+            color: GCStyle.darkBg
+            border.color: GCStyle.lightBorder
+            border.width: GCStyle.thinnestBorder
+
+            GCText {
+                anchors.fill: parent
+                anchors.margins: GCStyle.baseMargins
+                fontSizeMode: Text.Fit
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                wrapMode: Text.WordWrap
+                color: GCStyle.lightText
+                fontSize: mediumSize
+                text: qsTr("The result should not be a negative number.")
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    parent.visible = false;
+                    items.inputLocked = false;
+                }
+            }
         }
 
         DialogHelp {
