@@ -48,7 +48,9 @@ function calcDigitCount() {
 function buildNumbersModel() {
     items.numbersModel.clear()
     items.board.digitCount = Math.max(items.nbDigits, calcDigitCount(values))
-    if(items.operation === items.operationType.Addition) {
+    var needExtraColumn = false
+    if(items.operation === items.operationType.Addition && (items.withCarry || level.doItYourself)) {
+        needExtraColumn = true
         items.board.digitCount += 1     // add 1 slot for additions as the final sum can have one more digit
     }
     operationString = ""
@@ -57,6 +59,7 @@ function buildNumbersModel() {
         items.numbersModel.append({ "value_" :  values[i]
                                   , "digitCount_" : items.board.digitCount
                                   , "operator_" : operators[i]
+                                  , "restrictHighestColumn_": needExtraColumn
                                   })
         operationString += i ? ` ${operators[i]} ${values[i]}` : values[i]
         if (i > 0) {
@@ -67,7 +70,7 @@ function buildNumbersModel() {
     items.resultNumber.numberValue = ""
     if (level.doItYourself) {
         if(items.operation === items.operationType.Addition) {
-           items.caption.text = items.createAdditionText
+            items.caption.text = items.createAdditionText
         } else {
             items.caption.text = items.createSubtractionText
         }

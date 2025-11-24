@@ -18,6 +18,7 @@ Item {
     property int digitCount: 0
     property alias digitRepeater: digitRepeater
     property bool digitsVisible: true
+    property bool restrictHighestColumn: false
 
     signal clickedIn(var item)
 
@@ -39,6 +40,7 @@ Item {
                                    , "hasTens_": tens
                                    , "hasCarry_": (idx === 0) ? false : (items.method === VerticalSubtraction.OperationMethod.Regrouping) ? tens : carry
                                    , "droppable_": droppable
+                                   , "isRestricted_": mathNumber.restrictHighestColumn && nCount === 1
                                })
             nCount--
             idx++
@@ -146,6 +148,7 @@ Item {
                     expected: expected_
                     hasTens: hasTens_
                     hasCarry: hasCarry_
+                    isRestricted: isRestricted_
                 }
             }
             Component.onCompleted: {
