@@ -111,8 +111,64 @@ DatasetEditorBase {
         }
     }
 
+    function validateDataset() {
+        var isValid = true;
+        var globalError = "";
+        var textError = "";
+        var currentDataset = editor.mainModel.get(0);
+        //check if dataset is not empty
+        if(!currentDataset) {
+            globalError = ("<ul><li>") + qsTr('Dataset is empty.') + ("</li></ul>");
+            instructionPanel.setInstructionText(false, globalError);
+            instructionPanel.open();
+            return false;
+        }
+        for(var datasetId = 0; datasetId < editor.mainModel.count; ++datasetId) {
+            currentDataset = editor.mainModel.get(datasetId);
+            var datasetQuestions = currentDataset.subLevels;
+            if(datasetQuestions.count < 1) {
+                isValid = false;
+                textError = textError + ("<li>") + qsTr('Level %1 must not be empty.').arg(datasetId+1) + ("</li>");
+            } else {
+                for(var questionId = 0; questionId < datasetQuestions.count; ++questionId) {
+                    var currentQuestion = datasetQuestions.get(questionId);
+                    // Check the question is filled correctly
+                    if(currentQuestion.question === "") {
+                        isValid = false;
+                        textError = textError + ("<li>") + qsTr('"Question" in Sublevel %1 of Level %2 must not be empty.').arg(questionId+1).arg(datasetId+1) + ("</li>");
+                    }
+                    var answersArray = JSON.parse(currentQuestion.answers);
+                    if(answersArray.length < 1) {
+                        isValid = false;
+                        textError = textError + ("<li>") + qsTr('"Answers" in Sublevel %1 of Level %2 must not be empty.').arg(questionId+1).arg(datasetId+1) + ("</li>");
+                    }
+                    var correctAnswersArray = JSON.parse(currentQuestion.correctAnswers);
+                    if(correctAnswersArray.length < 1) {
+                        isValid = false;
+                        textError = textError + ("<li>") + qsTr('"Correct answers" in Sublevel %1 of Level %2 must not be empty.').arg(questionId+1).arg(datasetId+1) + ("</li>");
+                    }
+                    if(correctAnswersArray.length > 0) {
+                        for(var answerId = 0; answerId < correctAnswersArray.length; ++answerId) {
+                            var correctAnswer = correctAnswersArray[answerId];
+                            if(answersArray.indexOf(correctAnswer) === -1) {
+                                isValid = false;
+                                textError = textError + ("<li>") + qsTr('In Sublevel %1 of Level %2, the correct answer "%3" is not in the "Answers" list.').arg(questionId+1).arg(datasetId+1).arg(correctAnswer) + ("</li>");
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        if(!isValid) {
+            globalError = qsTr("The following errors need to be fixed:<ul>%1</ul>").arg(textError)
+            instructionPanel.setInstructionText(false, globalError);
+            instructionPanel.open();
+        }
+        return isValid;
+    }
+
     readonly property var inputTypeChoices: [
-        { "datasetValue": "oneAnswer", "displayedValue": qsTr("Single Answer") },
+        { "datasetValue": "oneAnswer", "displayedValue": qsTr("Single answer") },
         { "datasetValue": "multipleAnswers", "displayedValue": qsTr("Multiple answers") }
     ]
 
