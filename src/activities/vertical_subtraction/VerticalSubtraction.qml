@@ -202,6 +202,7 @@ ActivityBase {
                         digitCount: board.digitCount
                         droppable: !items.alreadyLaid
                         operator: operator_
+                        restrictHighestColumn: restrictHighestColumn_
                     }
                 }
 
