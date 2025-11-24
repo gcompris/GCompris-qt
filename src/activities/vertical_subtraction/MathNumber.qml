@@ -24,6 +24,10 @@ Item {
     width: items.digitWidth * (digitCount + 1)
     height: items.digitHeight
 
+    function initNumberLine() {
+        buildDigits(numberValue, lineIndex === 0, lineIndex === (items.nbLines - 1))
+    }
+
     function buildDigits(aNumber, tens, carry) {
         digitsModel.clear()
         var nCount = digitCount
@@ -54,7 +58,7 @@ Item {
     function copyDroppedValues() {
         for (var i = 0; i < digitRepeater.count; i++) {
             var value = digitRepeater.itemAt(i).value
-            digitsModel.get(i).expected_ = value
+            digitsModel.setProperty(i, "expected_", value)
         }
     }
 
@@ -70,6 +74,15 @@ Item {
         return ok
     }
 
+    function checkEmptyNumber() {   // Used for doItYourself to check if nothing has been entered
+        for(var i = 0; i < digitRepeater.count; i++) {
+            if(digitRepeater.itemAt(i).value != -1) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     function clearEmptyDigit() {                // Clear unrequired zeros on the left
         var finished = false
         for (var i = 0; i < digitsModel.count; i++) {
@@ -79,7 +92,7 @@ Item {
 
     function flipDroppable(drop) {  // bool
         for (var i = 0; i < digitsModel.count; i++) {
-            digitsModel.get(i).droppable_ = drop
+            digitsModel.setProperty(i, "droppable_", drop)
         }
     }
 
@@ -136,10 +149,8 @@ Item {
                 }
             }
             Component.onCompleted: {
-                buildDigits(numberValue, lineIndex === 0, lineIndex === (items.nbLines - 1))
+                mathNumber.initNumberLine();
             }
         }
     }
-
-    onNumberValueChanged: buildDigits(numberValue, lineIndex === 0, lineIndex === (items.nbLines - 1))
 }
