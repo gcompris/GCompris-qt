@@ -244,9 +244,15 @@ function initLevel() {
         level.doItYourself = false
     items.subLevelCount = level.nbSubLevel
     items.nbLines = level.nbLines
-    items.nbDigits= level.nbDigits
-    items.withCarry= level.withCarry
-    items.alreadyLaid= level.alreadyLaid
+    items.nbDigits = level.nbDigits
+    // In doItYourself mode, explicitely use withCarry and not alreadyLaid
+    if(level.doItYourself) {
+        items.withCarry = true
+        items.alreadyLaid = false
+    } else {
+        items.withCarry = level.withCarry
+        items.alreadyLaid = level.alreadyLaid
+    }
     if (items.withCarry)
         randomValues()
     else
