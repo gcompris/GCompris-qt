@@ -10,5 +10,4 @@
 
 VerticalEditor {
     textActivityData: textActivityData_
-    teacherInstructions: qsTr("vertical_subtraction instructions")
 }
