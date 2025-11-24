@@ -17,6 +17,10 @@ Item {
     property bool hasTens: false
     property bool hasCarry: false
     property bool droppable: false
+    // isRestricted is for highest column's digit in doItYourself mode addition,
+    // which should not be allowed to enter a number for the operation,
+    // but should be there to allow entering carry and for the result line
+    property bool isRestricted: false
     property int tensValue: 0
     property int carryValue: 0
     property int computedValue: ((value === -1) ? 0 : value) + (10 * tensValue) + carryValue
@@ -40,6 +44,7 @@ Item {
         border.color: "#A1CBD9"
         border.width: GCStyle.thinBorder
         radius: GCStyle.tinyMargins
+        opacity: mathDigit.isRestricted ? 0.3 : 1
     }
 
     GCText {
@@ -154,7 +159,7 @@ Item {
         id: mouseArea
         anchors.fill: parent
         hoverEnabled: enabled
-        enabled: mathNumber.enabled && droppable && !items.inputLocked
+        enabled: mathNumber.enabled && droppable && !items.inputLocked && !mathDigit.isRestricted
         onClicked: {
             items.numPad.currentDigit = parent
             mapPadToItem(items.numPad, digitBg)
