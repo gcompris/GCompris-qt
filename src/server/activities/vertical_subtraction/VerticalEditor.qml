@@ -26,12 +26,14 @@ DatasetEditorBase {
     ListModel {
         id: mainPrototype
         property bool multiple: false
-        ListElement { name: "title";        label: qsTr("Title");               type: "string";     def: "" }
-        ListElement { name: "nbSubLevel";   label: qsTr("Sublevels");           type: "int";        def: "10" }
-        ListElement { name: "nbDigits";     label: qsTr("Number of digits");    type: "comboInt";   def: "[2,5]" }  // def is a value range for int combos
-        ListElement { name: "nbLines";      label: qsTr("Number of lines");     type: "comboInt";   def: "[2,5]" }
-        ListElement { name: "alreadyLaid";  label: qsTr("Already laid");        type: "boolean";    def: "true" }
+        ListElement { name: "nbSubLevel";   label: qsTr("Sublevels");           type: "int";        def: "5" }
+        // Max 4 digits!
+        ListElement { name: "nbDigits";     label: qsTr("Number of digits");    type: "comboInt";   def: "[2,4]" }  // def is a value range for int combos
+        // Max 4 lines!
+        ListElement { name: "nbLines";      label: qsTr("Number of lines");     type: "comboInt";   def: "[2,4]" }
         ListElement { name: "withCarry";    label: qsTr("With carry");          type: "boolean";    def: "true" }
+        ListElement { name: "alreadyLaid";  label: qsTr("Already laid");        type: "boolean";    def: "true" }
+        ListElement { name: "doItYourself";  label: qsTr("Write your operation");        type: "boolean";    def: "false" }
     }
 
     EditorBox {
@@ -42,6 +44,7 @@ DatasetEditorBase {
 
         fieldsComponent: Component {
             Column {
+                id: fieldsColumn
                 // Properties required by FieldEdit. Must be in the parent
                 property ListModel currentPrototype: levelEditor.editorPrototype
                 property ListModel currentModel: levelEditor.editorModel
@@ -49,12 +52,34 @@ DatasetEditorBase {
                 x: Style.margins
                 y: Style.margins
                 spacing: Style.smallMargins
-                FieldEdit { name: "title"; maxWidth: levelEditor.maxWidth }
+
+                readonly property bool doItYourself: currentModel && currentModel.get(fieldsColumn.modelIndex) ?
+                    currentModel.get(fieldsColumn.modelIndex).doItYourself : false
+
+                onDoItYourselfChanged: {
+                    if(doItYourself) {
+                        withCarryField.value = false;
+                        alreadyLaidField.value = false;
+                    } else {
+                        withCarryField.value = lastWithCarry;
+                        alreadyLaidField.value = lastAlreadyLaid;
+                    }
+                }
+
                 FieldEdit { name: "nbSubLevel" }
                 FieldEdit { name: "nbDigits" }
                 FieldEdit { name: "nbLines" }
-                FieldEdit { name: "alreadyLaid" }
-                FieldEdit { name: "withCarry" }
+                FieldEdit {
+                    id: withCarryField
+                    name: "withCarry"
+                    visible: !fieldsColumn.doItYourself
+                }
+                FieldEdit {
+                    id: alreadyLaidField
+                    name: "alreadyLaid"
+                    visible: !fieldsColumn.doItYourself
+                }
+                FieldEdit { name: "doItYourself" }
             }
         }
     }
