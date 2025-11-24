@@ -12,7 +12,7 @@ Data {
     objective: qsTr("Write and solve subtraction, 2 digits, 2 lines, without carry.")
     difficulty: 1
     data: [
-        {   "title": objective,
+        {
             "nbSubLevel": 10,
             "nbDigits": 2,
             "nbLines": 2,
