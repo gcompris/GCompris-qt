@@ -12,7 +12,7 @@ Data {
     objective: qsTr("Write your own subtraction and solve it.")
     difficulty: 1
     data: [
-        {   "title": objective,
+        {
             "nbSubLevel": 10,
             "nbDigits": 4,
             "nbLines": 4,

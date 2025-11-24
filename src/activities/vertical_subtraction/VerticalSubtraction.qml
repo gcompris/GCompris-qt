@@ -95,6 +95,8 @@ ActivityBase {
             property alias numPad: numPad
             property alias miniPad: miniPad
             property bool inputLocked: true
+            property string createAdditionText: qsTr("Write your own addition and solve it.")
+            property string createSubtractionText: qsTr("Write your own subtraction and solve it.")
 
             property alias crashSound: crashSound
             property alias completeTaskSound: completeTaskSound

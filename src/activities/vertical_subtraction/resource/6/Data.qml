@@ -12,7 +12,7 @@ Data {
     objective: qsTr("Solve subtraction, 3 or 4 digits, 2 lines.")
     difficulty: 1
     data: [
-        {   "title": objective,
+        {
             "nbSubLevel": 10,
             "nbDigits": 3,
             "nbLines": 2,

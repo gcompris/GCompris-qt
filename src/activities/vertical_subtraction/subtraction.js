@@ -66,7 +66,12 @@ function buildNumbersModel() {
     items.board.result = result
     items.resultNumber.numberValue = ""
     if (level.doItYourself) {
-        items.caption.text = level.title
+        if(items.operation === items.operationType.Addition) {
+           items.caption.text = items.createAdditionText
+        } else {
+            items.caption.text = items.createSubtractionText
+        }
+
     } else {
         items.caption.text = (!items.alreadyLaid ? qsTr("Write:") : qsTr("Solve:")) + " " + operationString
     }
