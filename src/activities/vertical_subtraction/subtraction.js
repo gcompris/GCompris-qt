@@ -141,9 +141,20 @@ function checkDropped() {
     }
     items.inputLocked = true
     var ok = true
+    var isNegative = false
     if (level.doItYourself) {
-        for (var i = 0; i < items.numbersModel.count; i++)      // Copy value to expected
-            items.numberRepeater.itemAt(i).copyDroppedValues()
+        var notEmptyLines = 0
+        for (var i = 0; i < items.numbersModel.count; i++) {
+            if(!items.numberRepeater.itemAt(i).checkEmptyNumber()) {
+                notEmptyLines++
+            }
+            items.numberRepeater.itemAt(i).copyDroppedValues()  // Copy value to expected
+        }
+        if(notEmptyLines < 2) {    // if not at least 2 lines, stop here
+            items.errorRectangle.startAnimation()
+            items.crashSound.play()
+            return
+        }
         for (i = 0; i < items.numbersModel.count; i++)          // Check for valid lines
             ok = ok && items.numberRepeater.itemAt(i).checkEmptyDigit()
         if (ok) {
@@ -155,8 +166,10 @@ function checkDropped() {
                     result += (((i === 0) || (items.operation === items.operationType.Addition)) ? 1 : -1) * value
             }
             items.board.result = result
-            if (result < 0)
+            if (result < 0) {
                 ok = false
+                isNegative = true
+            }
         }
     } else {
         for (i = 0; i < items.numbersModel.count; i++)          // Check for valid lines
@@ -175,7 +188,11 @@ function checkDropped() {
         items.okButton.visible = true
         items.inputLocked = false
     } else {
-        items.errorRectangle.startAnimation();
+        if(isNegative) {
+            items.negativeNumberWarning.visible = true
+        } else {
+            items.errorRectangle.startAnimation()
+        }
         items.crashSound.play()
     }
 }
