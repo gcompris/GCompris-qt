@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2025-11-14 10:14+0100\n"
+"PO-Revision-Date: 2025-11-19 13:57+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -27647,12 +27647,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Digita la parola completa mentre cade, prima che tocchi terra."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Kannada and Tamil"
-msgstr "Traduzione aggiunta per lettone"
+msgstr "Aggiunta traduzione per Kannada e Tamil"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38 core/ChangeLog.qml:44
 #: core/ChangeLog.qml:53 core/ChangeLog.qml:59 core/ChangeLog.qml:64
