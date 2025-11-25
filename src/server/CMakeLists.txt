@@ -21,6 +21,16 @@ set(server_SRCS
   main.cpp
 )
 
+# Resources
+set(GCOMPRIS_TEACHERS_RESOURCES "${PROJECT_SOURCE_DIR}/installer")
+if(CMAKE_HOST_WIN32)
+  set(gcompris_teachers_icon GCompris-teachers.ico)
+  set(gcompris_teachers_RES
+    ${GCOMPRIS_TEACHERS_RESOURCES}/${gcompris_teachers_icon}
+    GCompris-teachers.rc
+  )
+endif()
+
 include_directories(
   ../core/  # messages
   "${CMAKE_CURRENT_BINARY_DIR}/../core"   # to find config.h
@@ -40,7 +50,7 @@ if(ANDROID)
 elseif(CMAKE_HOST_APPLE)
   add_executable(${GCOMPRIS_TEACHERS_EXECUTABLE_NAME} MACOSX_BUNDLE ${server_SRCS} ${server_MOC} ${gcompris_RES})
 elseif(CMAKE_HOST_WIN32)
-  add_executable(${GCOMPRIS_TEACHERS_EXECUTABLE_NAME} WIN32 ${server_SRCS} ${server_MOC} ${gcompris_RES})
+  add_executable(${GCOMPRIS_TEACHERS_EXECUTABLE_NAME} WIN32 ${server_SRCS} ${server_MOC} ${gcompris_teachers_RES})
 else()
   add_executable(${GCOMPRIS_TEACHERS_EXECUTABLE_NAME} ${server_SRCS} ${server_MOC} ${gcompris_RES})
 endif()
