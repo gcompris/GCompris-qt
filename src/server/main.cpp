@@ -116,7 +116,7 @@ int main(int argc, char *argv[])
         return -1;
     }
 
-    window->setIcon(QIcon(QPixmap(QString::fromUtf8(":/gcompris/src/server/resource/gcompris-icon.png"))));
+    window->setIcon(QIcon(QPixmap(QString::fromUtf8(":/gcompris/src/server/resource/gcompris-teachers-icon.png"))));
 
     window->show();
     return app.exec();
