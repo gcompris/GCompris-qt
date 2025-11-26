@@ -30,11 +30,10 @@ Item {
             Master.loadDatabase(fileName);
             if(Master.checkTeacher(login.text, password.text)) {
                 console.warn(login.text, "logged in.")
-                navigationBar.loginButton.visible = false
                 navigationBar.enabled = true
                 topBanner.visible = true
 //                navigationBar.startNavigation(navigationBar.pupilsView)
-               navigationBar.startNavigation(navigationBar.deviceView)
+                navigationBar.startNavigation(navigationBar.deviceView)
 //                navigationBar.startNavigation(navigationBar.activitiesView)
                // navigationBar.startNavigation(navigationBar.datasetsView)
 //                navigationBar.startNavigation(navigationBar.chartsView)

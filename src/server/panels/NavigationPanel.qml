@@ -65,6 +65,7 @@ Item {
             }
             NavigationButton {
                 id: loginButton
+                visible: false // disabled for now, until we support teacher logout and relogin
                 iconCharacter: "\uf015"
                 description: qsTr("Login")
                 isCollapsed: navigationPanel.isCollapsed
