@@ -32,6 +32,18 @@ SPDX-FileCopyrightText = ["2015 Burkhard Lück", "2015 Johnny Jazeix"]
 SPDX-License-Identifier = "CC0-1.0"
 
 [[annotations]]
+path = "docs/docbook/bar_*.png"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "docs/docbook/difficulty*.png"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
 path = "docs/docbook/**.png"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2020 Johnny Jazeix"
@@ -48,12 +60,6 @@ path = "docs/manual-general"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2018 Timothée Giet"
 SPDX-License-Identifier = "CC0-1.0"
-
-[[annotations]]
-path = "docs/docbook/**.svg"
-precedence = "aggregate"
-SPDX-FileCopyrightText = "2015 Timothée Giet"
-SPDX-License-Identifier = "CC-BY-SA-4.0"
 
 [[annotations]]
 path = "fastlane/metadata/android/en-US/images/**.png"

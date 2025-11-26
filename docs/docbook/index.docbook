@@ -120,36 +120,36 @@ there is section “Board Games”, which includes board games, like Chess, Tic-
 <para>Some categories have subcategories to better filter the activities. For math activities, we have three subcategories: numeration, arithmetic and measures.</para>
 <para>The stars indicate the age group for which each game is designed:</para> 
 <itemizedlist>
-<listitem><para><inlinemediaobject><imageobject><imagedata fileref="difficulty1.svg" format="SVG"/></imageobject>
+<listitem><para><inlinemediaobject><imageobject><imagedata fileref="difficulty1.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject>
 </inlinemediaobject>1, 2 or 3 yellow stars — for 2 to 6 years old.</para></listitem> 
-<listitem><para><inlinemediaobject><imageobject><imagedata fileref="difficulty4.svg" format="SVG"/></imageobject>
+<listitem><para><inlinemediaobject><imageobject><imagedata fileref="difficulty4.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject>
 </inlinemediaobject>1, 2 or 3 red stars — greater than 6 years old.</para></listitem> 
 </itemizedlist>
 
 <para>At the bottom of the screen there is a control bar for &gcompris;. The possible icons are (the icons are only displayed if they are available in the activity):</para>
 <itemizedlist>
-<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_home.svg" format="SVG"/></imageobject>
+<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_home.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject>
 </inlinemediaobject> Home — Leaves the current activity, returns to the previous menu.</para></listitem> 
-<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject>
+<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_ok.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject>
 </inlinemediaobject> “OK” — Validate, confirm your answer. Some activities do not detect automatically whether or not the child has completed the task. In this case, you have to click on this icon. You can also use the &Enter; key on your keyboard.</para></listitem> 
-<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject>
+<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_hint.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject>
 </inlinemediaobject> Light — Display a hint for the activity. We can help the children on some activities to guide them to find the answers.</para></listitem>
-<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_previous.svg" format="SVG"/></imageobject></inlinemediaobject>
-<inlinemediaobject><imageobject><imagedata fileref="bar_next.svg" format="SVG"/></imageobject></inlinemediaobject> 
+<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_previous.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject></inlinemediaobject>
+<inlinemediaobject><imageobject><imagedata fileref="bar_next.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject></inlinemediaobject>
 Arrows — The present level is displayed. Click on one of the arrows to select another level. 
 Generally, the activities offer several levels whose numbers depend on the activity. 
 In &gcompris;, it is possible to go to the next level without having completed the current level.</para></listitem> 
-<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_repeat.svg" format="SVG"/></imageobject>
+<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_repeat.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject>
 </inlinemediaobject> Lips — Ask &gcompris; to repeat the question.</para></listitem> 
-<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_help.svg" format="SVG"/></imageobject>
+<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_help.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject>
 </inlinemediaobject> Question mark — Display the help dialog box. Sometimes, an activity can be too complex to be described easily in the description area. In this case, this function gives access to additional information.</para></listitem> 
-<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_config.svg" format="SVG"/></imageobject>
+<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject>
 </inlinemediaobject> Tool box — Configuration menu. The configuration is saved in the user repository (folder) under the name <filename>.config/gcompris/gcompris-qt.conf</filename>. This is a text file which can be edited manually.</para></listitem> 
-<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject>
+<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_activity_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject>
 </inlinemediaobject> List item — Display the activity settings menu. There are two possible tabs here. First one, “Dataset”, allows to choose the levels of the activities depending on several objectives and the second one, “Options”, allows to update the configuration of the activity if available.</para></listitem>
-<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_about.svg" format="SVG"/></imageobject>
+<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_about.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject>
 </inlinemediaobject> Capital “G” — Information box on &gcompris;, presents the main contributors and the version of the software.</para></listitem> 
-<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject>
+<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_exit.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject>
 </inlinemediaobject> Power — Quit &gcompris;. You can also use the shortcut on your keyboard <keycombo action="simul">&Ctrl;<keycap>Q</keycap></keycombo>.</para></listitem> 
 </itemizedlist>
 </sect2>
