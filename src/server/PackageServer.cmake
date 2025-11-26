@@ -226,6 +226,9 @@ if(WIN32)
   # Create shortcuts in menu
   list(APPEND CPACK_NSIS_CREATE_ICONS_EXTRA "  CreateShortCut '$SMPROGRAMS\\\\$STARTMENU_FOLDER\\\\GCompris Teachers.lnk' '$INSTDIR\\\\bin\\\\gcompris-teachers.exe'")
   string(REPLACE ";" "\n" CPACK_NSIS_CREATE_ICONS_EXTRA "${CPACK_NSIS_CREATE_ICONS_EXTRA}")
+  # Delete shortcuts on uninstall
+  list(APPEND CPACK_NSIS_DELETE_ICONS_EXTRA "  Delete '$SMPROGRAMS\\\\$MUI_TEMP\\\\GCompris Teachers.lnk'")
+  string(REPLACE ";" "\n" CPACK_NSIS_DELETE_ICONS_EXTRA "${CPACK_NSIS_DELETE_ICONS_EXTRA}")
 else()
   set(CPACK_PACKAGE_ICON "${PROJECT_SOURCE_DIR}/images/256-apps-gcompris-teachers.png")
 endif()
