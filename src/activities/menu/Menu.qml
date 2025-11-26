@@ -1000,10 +1000,22 @@ ActivityBase {
 
         Bar {
             id: bar
-            // No exit button on mobile, UI Guidelines prohibits it
-            content: BarEnumContent {
-                value: help | config | activityConfig | about | (ApplicationInfo.isMobile ? 0 : exit) | (ApplicationInfo.serverConnectionAccepted ? serverStatus : 0)
+            // BUG: on Windows, dynamic values in BarEnumContent are not working, so using intermediate properties as workaround to display serverStatus button
+            property bool connectionAccepted: ApplicationInfo.serverConnectionAccepted
+            property BarEnumContent defaultContent: BarEnumContent {
+                value: help | config | activityConfig | about | (ApplicationInfo.isMobile ? 0 : exit)
             }
+            property BarEnumContent contentWithServerStatus: BarEnumContent {
+                value: help | config | activityConfig | about | (ApplicationInfo.isMobile ? 0 : exit) | serverStatus
+            }
+            onConnectionAcceptedChanged: {
+                if(connectionAccepted) {
+                    bar.content = bar.contentWithServerStatus;
+                }
+            }
+
+            // No exit button on mobile, UI Guidelines prohibits it
+            content: bar.defaultContent
             anchors.bottom: keyboard.visible ? keyboard.top : parent.bottom
             onAboutClicked: {
                 searchTextField.focus = false
