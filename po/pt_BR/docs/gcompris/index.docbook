@@ -102,13 +102,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->25/02/2023</date>
+>10/06/2025</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->3.1</releaseinfo>
+>25.1.1</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -150,7 +150,7 @@ for example 'xx.yy.zz'
 >Licença GPLv3</ulink
 >.</para>
 <para
->O &gcompris; está disponível para os seguintes sistemas operacionais: &GNU;/&Linux;, &BSD;, MacOSX, &Windows;, Android. Ele exige uma placa de vídeo com suporte a <emphasis
+>O &gcompris; está disponível para os seguintes sistemas operacionais: &GNU;/&Linux;, &BSD;, MacOSX, &Windows;, Android. Ele exige uma placa de vídeo 3D com suporte a <emphasis
 >OpenGL 2.1</emphasis
 > ou mais recente. Também é obrigatório o suporte a profundidade de cores de 32 bits.</para>
 </sect1>
@@ -206,7 +206,7 @@ for example 'xx.yy.zz'
 </screenshot>
 
 <para
->Cada ícone representa uma atividade ou um conjunto delas. Associados a cada uma atividade, existem outros ícones, menores, que fornecem informações adicionais sobre ela. Ao clicar no ícone, podem acontecer duas coisas: a atividade será aberta ou então aparecerá um sub-menu com outro conjunto de atividades. Existem 8 seções (categorias) de atividades que aparecem no alto da tela (ou nalateral esquerda, caso o aparelho esteja na vertical). Por exemplo, existe uma seção "Jogos de tabuleiro", que inclui os jogos deste categoria, como xadrez, jogo da velha ou ligue quatro.</para>
+>Cada ícone representa uma atividade ou um conjunto delas. Associados a cada uma atividade, existem outros ícones, menores, que fornecem informações adicionais sobre ela. Ao clicar no ícone, podem acontecer duas coisas: a atividade será aberta ou então aparecerá um sub-menu com outro conjunto de atividades. Existem 8 seções (categorias) de atividades que aparecem no alto da tela (ou na lateral esquerda, caso o aparelho esteja na vertical). Por exemplo, existe uma seção "Jogos de tabuleiro", que inclui os jogos deste categoria, como xadrez, jogo da velha ou ligue quatro.</para>
 <para
 >Algumas categorias possuem subcategorias, para melhor filtragem das atividades. Por exemplo, as atividades de matemática possuem três subcategorias: numeração, aritmética e medidas.</para>
 <para
@@ -374,7 +374,7 @@ for example 'xx.yy.zz'
 ><command
 >gcompris -f</command
 ></userinput
-> : executa &gcompris; no modo de tela inteira.</para
+> : executa &gcompris; no modo de tela cheia.</para
 ></listitem
 > 
 <listitem
@@ -431,7 +431,7 @@ for example 'xx.yy.zz'
 ></keycombo
 ></entry>
 <entry
->Alterna o modo de tela inteira.</entry>
+>Alterna o modo de tela cheia.</entry>
 </row>
 <row>
 <entry
@@ -534,7 +534,7 @@ for example 'xx.yy.zz'
 <entry
 >-f, --fullscreen</entry>
 <entry
->Executa o &gcompris; em modo de tela inteira.</entry>
+>Executa o &gcompris; em modo de tela cheia.</entry>
 </row>
 <row>
 <entry
@@ -586,6 +586,12 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>--start-level nível</entry>
+<entry
+>Especifica o nível em que a atividade deve ser iniciada, definido pela opção --launch, ao abrir o GCompris. É ignorada se não for definida nenhuma opção --launch ou caso o nível especificado seja inválido.</entry>
+</row>
+<row>
+<entry
 >--difficulty {valor|mín-máx}</entry>
 <entry
 >Para a sessão, força a dificuldade das atividades do GCompris para estar no valor ou entre os valores mínimo e máximo. Os valores devem estar entre 1 e 6, e se o formato for mín-máx, o valor mínimo deve ser menor que o valor máximo. Se não for o caso, o GCompris não será iniciado.</entry>
@@ -610,15 +616,22 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>--renderer={renderizador}</entry>
+<entry
+>Especifica qual renderizador gráfico deve ser utilizado. Em todas as plataformas, estão disponíveis onpelgl e software. No Windows, você pode usar direct3d11 ou direct3d12 (caso esteja compilado com o Qt
+>=6.6). No MacOS, você pode usar metal.</entry>
+</row>
+<row>
+<entry
 >--software-renderer</entry>
 <entry
->Usa a renderização por software ao invés da openGL (deve funcionar com qualquer placa de vídeo).</entry>
+>Usa a renderização por software ao invés da openGL (deve funcionar com qualquer placa de vídeo). Ultrapassado, use --renderer=software no lugar.</entry>
 </row>
 <row>
 <entry
 >--opengl-renderer</entry>
 <entry
->Usa a renderização openGL ao invés da via software (mais rápida e com mais efeitos gráficos, mas pode travar com algumas placas de vídeo).</entry>
+>Usa a renderização openGL ao invés da via software (mais rápida e com mais efeitos gráficos, mas pode travar com algumas placas de vídeo). Ultrapassado, use --renderer=opengl no lugar.</entry>
 </row>
 </tbody>
 </tgroup>
@@ -628,7 +641,7 @@ for example 'xx.yy.zz'
 <title
 >Exemplo no &Windows;</title>
 <para
->Você pode adicionar estas opções nas opções de execução do programa, no ícone do desktop do Windows. Segue um exemplo para executar o &gcompris; no modo de quiosque em tela inteira, sem o botão de configuração e o cursor:</para>
+>Você pode adicionar estas opções nas opções de execução do programa, no ícone do desktop do Windows. Segue um exemplo para executar o &gcompris; no modo de quiosque em tela cheia, sem o botão de configuração e o cursor:</para>
 <para
 ><userinput
 ><command
@@ -641,7 +654,7 @@ for example 'xx.yy.zz'
 <title
 >Exemplo no &GNU;/&Linux;</title>
 <para
->Crie um lançador de aplicativo e configure os parâmetros da linha de comandos. Aqui está um exemplo de execução o &gcompris; no modo quiosque em tela inteira, sem o botão de configuração e o cursor:</para
+>Crie um lançador de aplicativo e configure os parâmetros da linha de comandos. Aqui está um exemplo de execução o &gcompris; no modo quiosque em tela cheia, sem o botão de configuração e o cursor:</para
 > 
 <para
 ><userinput
@@ -662,7 +675,7 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; </para>
 <para
->Direitos autorais do programa 2000-2023 Timothée Giet e outros </para>
+>Direitos autorais do programa 2000-2025 Timothée Giet e outros </para>
 
 <para
 >Tradução de FELA <email
