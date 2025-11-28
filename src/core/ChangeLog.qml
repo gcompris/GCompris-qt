@@ -30,7 +30,6 @@ QtObject {
                 qsTr("Translation added for Kannada and Tamil"),
                 qsTr("New command-line option to set the locale (--locale locale)"),
                 qsTr("Many usability improvements"),
-                qsTr("Many new images"),
                 qsTr("Many bug fixes")
                 ],
                "newDatasets": ["guess24", "graduated_line_read", "graduated_line_use"]
