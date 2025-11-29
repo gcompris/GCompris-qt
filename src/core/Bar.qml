@@ -168,7 +168,7 @@ Item {
         {
             'bid': home,
             'contentId': content.home,
-            'allowed': true
+            'allowed': ApplicationSettings.isHomeButtonVisible
         },
         {
             'bid': previous,

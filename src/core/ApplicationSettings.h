@@ -175,6 +175,10 @@ class ApplicationSettings : public QObject
     Q_PROPERTY(bool isKioskMode READ isKioskMode WRITE setKioskMode NOTIFY kioskModeChanged)
 
     /**
+     * Whether hide/show home button in the bar.
+     */
+    Q_PROPERTY(bool isHomeButtonVisible READ isHomeButtonVisible WRITE setHomeButtonVisible NOTIFY homeButtonVisibleChanged)
+    /**
      * Whether the section selection row is visible in the menu view.
      */
     Q_PROPERTY(bool sectionVisible READ sectionVisible WRITE setSectionVisible NOTIFY sectionVisibleChanged)
@@ -417,6 +421,13 @@ public:
         Q_EMIT kioskModeChanged();
     }
 
+    bool isHomeButtonVisible() const { return m_isHomeButtonVisible; }
+    void setHomeButtonVisible(const bool newMode)
+    {
+        m_isHomeButtonVisible = newMode;
+        Q_EMIT homeButtonVisibleChanged();
+    }
+
     bool sectionVisible() const { return m_sectionVisible; }
     void setSectionVisible(const bool newMode)
     {
@@ -542,6 +553,7 @@ protected Q_SLOTS:
     Q_INVOKABLE void notifyFilterLevelMinChanged();
     Q_INVOKABLE void notifyFilterLevelMaxChanged();
     Q_INVOKABLE void notifyKioskModeChanged();
+    Q_INVOKABLE void notifyHomeButtonVisibleChanged();
     Q_INVOKABLE void notifySectionVisibleChanged();
     Q_INVOKABLE void notifyExitConfirmationChanged();
     Q_INVOKABLE void notifyFilteredBackgroundMusicChanged();
@@ -621,6 +633,7 @@ Q_SIGNALS:
     void filterLevelMaxChanged();
     void filterLevelOverridedByCommandLineOptionChanged();
     void kioskModeChanged();
+    void homeButtonVisibleChanged();
     void sectionVisibleChanged();
     void exitConfirmationChanged();
     void baseFontSizeChanged();
@@ -666,6 +679,7 @@ private:
     QString m_locale;
     QString m_font;
     bool m_isKioskMode;
+    bool m_isHomeButtonVisible = true;
     bool m_sectionVisible;
     bool m_exitConfirmation;
     QStringList m_filteredBackgroundMusic;

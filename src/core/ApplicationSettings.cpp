@@ -64,6 +64,7 @@ namespace {
     const char *DEFAULT_CURSOR = "defaultCursor";
     const char *NO_CURSOR = "noCursor";
     const char *KIOSK_KEY = "kiosk";
+    const char *HOME_BUTTON_VISIBLE_KEY = "homeButtonVisible";
     const char *SECTION_VISIBLE = "sectionVisible";
     const char *EXIT_CONFIRMATION = "exitConfirmation";
 
@@ -110,6 +111,7 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
 #else
     m_isKioskMode = m_config.value(KIOSK_KEY, false).toBool();
 #endif
+    m_isHomeButtonVisible = m_config.value(HOME_BUTTON_VISIBLE_KEY, true).toBool();
 
     m_sectionVisible = m_config.value(SECTION_VISIBLE, true).toBool();
     m_exitConfirmation = m_config.value(EXIT_CONFIRMATION, ApplicationInfo::getInstance()->isMobile() ? true : false).toBool();
@@ -166,6 +168,7 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     connect(this, &ApplicationSettings::sectionVisibleChanged, this, &ApplicationSettings::notifySectionVisibleChanged);
     connect(this, &ApplicationSettings::exitConfirmationChanged, this, &ApplicationSettings::notifyExitConfirmationChanged);
     connect(this, &ApplicationSettings::kioskModeChanged, this, &ApplicationSettings::notifyKioskModeChanged);
+    connect(this, &ApplicationSettings::homeButtonVisibleChanged, this, &ApplicationSettings::notifyHomeButtonVisibleChanged);
     connect(this, &ApplicationSettings::downloadServerUrlChanged, this, &ApplicationSettings::notifyDownloadServerUrlChanged);
     connect(this, &ApplicationSettings::cachePathChanged, this, &ApplicationSettings::notifyCachePathChanged);
     connect(this, &ApplicationSettings::userDataPathChanged, this, &ApplicationSettings::notifyUserDataPathChanged);
@@ -202,6 +205,7 @@ ApplicationSettings::~ApplicationSettings()
         m_config.setValue(FILTER_LEVEL_MAX, m_filterLevelMax);
     }
     m_config.setValue(KIOSK_KEY, m_isKioskMode);
+    m_config.setValue(HOME_BUTTON_VISIBLE_KEY, m_isHomeButtonVisible);
     m_config.setValue(SECTION_VISIBLE, m_sectionVisible);
     m_config.setValue(EXIT_CONFIRMATION, m_exitConfirmation);
     m_config.setValue(DEFAULT_CURSOR, m_defaultCursor);
@@ -357,6 +361,12 @@ void ApplicationSettings::notifyKioskModeChanged()
 {
     updateValueInConfig(GENERAL_GROUP_KEY, KIOSK_KEY, m_isKioskMode);
     qDebug() << "notifyKioskMode: " << m_isKioskMode;
+}
+
+void ApplicationSettings::notifyHomeButtonVisibleChanged()
+{
+    updateValueInConfig(GENERAL_GROUP_KEY, HOME_BUTTON_VISIBLE_KEY, m_isHomeButtonVisible);
+    qDebug() << "notifyHomeButtonVisible: " << m_isHomeButtonVisible;
 }
 
 void ApplicationSettings::notifySectionVisibleChanged()

@@ -29,6 +29,7 @@ QtObject {
             { "versionCode": 260000, "content": [
                 qsTr("Translation added for Kannada and Tamil"),
                 qsTr("New command-line option to set the locale (--locale locale)"),
+                qsTr("New command-line option to show/hide the Home button (--hide-home-button/--show-home-button)"),
                 qsTr("Many usability improvements"),
                 qsTr("Many bug fixes")
                 ],

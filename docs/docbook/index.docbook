@@ -317,6 +317,14 @@ or make it show real car images instead of filled rectangles (traffic).</para>
 <entry>Disable the kiosk mode (default).</entry>
 </row>
 <row>
+<entry>--show-home-button</entry>
+<entry>Show the Home button in the bar (default).</entry>
+</row>
+<row>
+<entry>--hide-home-button</entry>
+<entry>Hide the Home button in the bar.</entry>
+</row>
+<row>
 <entry>--renderer={renderer}</entry>
 <entry>Specify which graphical renderer to use. On all platforms, “opengl” and software are available. On Windows, you can use “direct3d11” or “direct3d12” (if it was compiled with Qt ≥ 6.6). On &macOS;, you can use “metal”.</entry>
 </row>

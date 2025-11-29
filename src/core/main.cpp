@@ -143,6 +143,14 @@ int main(int argc, char *argv[])
                               QObject::tr("Specify the locale when starting GCompris."), "locale");
     parser.addOption(clLocale);
 
+    QCommandLineOption clHideHomeButton("hide-home-button",
+                              QObject::tr("Hide the Home button in the bar."));
+    parser.addOption(clHideHomeButton);
+
+    QCommandLineOption clShowHomeButton("show-home-button",
+                              QObject::tr("Show the Home button in the bar (default)."));
+    parser.addOption(clShowHomeButton);
+
     parser.process(app);
 
 #ifdef WITH_RCC
@@ -204,6 +212,12 @@ int main(int argc, char *argv[])
     }
     if (parser.isSet(clWithKioskMode)) {
         ApplicationSettings::getInstance()->setKioskMode(true);
+    }
+    if (parser.isSet(clHideHomeButton)) {
+        ApplicationSettings::getInstance()->setHomeButtonVisible(false);
+    }
+    if (parser.isSet(clShowHomeButton)) {
+        ApplicationSettings::getInstance()->setHomeButtonVisible(true);
     }
     if (parser.isSet(clLocale)) {
         QString locale = parser.value(clLocale);
