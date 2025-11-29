@@ -295,7 +295,11 @@ bool ApplicationInfo::loadAndroidTranslation(const QString &locale)
         return false;
     }
 
-    file.open(QIODevice::ReadOnly);
+    bool isOpened = file.open(QIODevice::ReadOnly);
+    if (!isOpened) {
+        qDebug() << "Unable to open " << file.fileName();
+        return false;
+    }
     QDataStream in(&file);
 
     qint64 fileSize = file.size();

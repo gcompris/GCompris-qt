@@ -165,7 +165,7 @@ void ActivityInfoTree::filterByTag(const QString &tag, const QString &category, 
 bool ActivityInfoTree::launchedActivityMissGivenDifficulty() const{
     bool activityMissDifficulty = true;
     const auto constMenuTreeFull = m_menuTreeFull;
-    for (const auto &activity: constMenuTreeFull) {
+    for (const auto *activity: constMenuTreeFull) {
         if (activity->name() == m_startingActivity) {
             if (activity->maximalDifficulty() >= ApplicationSettings::getInstance()->filterLevelMin() &&
                 activity->minimalDifficulty() <= ApplicationSettings::getInstance()->filterLevelMax()) {
@@ -244,7 +244,7 @@ void ActivityInfoTree::exportAsSQL()
 
     int i(0);
     const auto constMenuTree = m_menuTree;
-    for (const auto &activity: constMenuTree) {
+    for (const auto *activity: constMenuTree) {
         qtOut << "INSERT INTO activities VALUES(" << i++ << ", "
               << "'" << activity->name() << "', "
               << "'" << activity->section() << "', "
@@ -344,6 +344,7 @@ void ActivityInfoTree::initialize(QQmlEngine *engine)
 
 ActivityInfoTree *ActivityInfoTree::create(QQmlEngine *engine, QJSEngine *scriptEngine)
 {
+    Q_UNUSED(engine)
     Q_UNUSED(scriptEngine)
 
     ActivityInfoTree *menuTree = getInstance();
@@ -409,7 +410,7 @@ QVariantList ActivityInfoTree::allCharacters()
 {
     QSet<QChar> keyboardChars;
     const auto constMenuTreeFull = m_menuTreeFull;
-    for (const auto &tree: constMenuTreeFull) {
+    for (const auto *tree: constMenuTreeFull) {
         const QString &title = tree->title();
         for (const QChar &letter: title) {
             if (letter.isLetterOrNumber() || letter == QLatin1Char('\'') || letter == QLatin1Char('-')) {
