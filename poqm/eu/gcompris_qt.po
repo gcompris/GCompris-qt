@@ -27412,21 +27412,22 @@ msgctxt "ChangeLog|"
 msgid "Translation added for Kannada and Tamil"
 msgstr "Letonieraren itzulpena gehitu da"
 
-#: core/ChangeLog.qml:31 core/ChangeLog.qml:38 core/ChangeLog.qml:44
+#: core/ChangeLog.qml:31
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "New command-line option to switch the renderer (--renderer renderer)"
+msgctxt "ChangeLog|"
+msgid "New command-line option to set the locale (--locale locale)"
+msgstr ""
+"errendatzailea trukatzeko komando-lerroko aukera berria (--renderer renderer)"
+
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:38 core/ChangeLog.qml:44
 #: core/ChangeLog.qml:53 core/ChangeLog.qml:59 core/ChangeLog.qml:64
 #: core/ChangeLog.qml:70 core/ChangeLog.qml:99 core/ChangeLog.qml:134
 #: core/ChangeLog.qml:137 core/ChangeLog.qml:143
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Erabilerraztasun hobekuntza ugari"
-
-#: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:71
-#: core/ChangeLog.qml:80 core/ChangeLog.qml:87 core/ChangeLog.qml:100
-#: core/ChangeLog.qml:118 core/ChangeLog.qml:133 core/ChangeLog.qml:138
-#: core/ChangeLog.qml:144
-msgctxt "ChangeLog|"
-msgid "Many new images"
-msgstr "Irudi berri ugari"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:39 core/ChangeLog.qml:46
 #: core/ChangeLog.qml:54 core/ChangeLog.qml:60 core/ChangeLog.qml:65
@@ -27440,6 +27441,13 @@ msgstr "Akats-konponketa ugari"
 msgctxt "ChangeLog|"
 msgid "Translation added for Sanskrit"
 msgstr "Sanskritorako itzulpena gehitu da"
+
+#: core/ChangeLog.qml:45 core/ChangeLog.qml:71 core/ChangeLog.qml:80
+#: core/ChangeLog.qml:87 core/ChangeLog.qml:100 core/ChangeLog.qml:118
+#: core/ChangeLog.qml:133 core/ChangeLog.qml:138 core/ChangeLog.qml:144
+msgctxt "ChangeLog|"
+msgid "Many new images"
+msgstr "Irudi berri ugari"
 
 #: core/ChangeLog.qml:47
 msgctxt "ChangeLog|"
@@ -28358,6 +28366,14 @@ msgid ""
 msgstr ""
 "Zehaztu jarduera zein mailatan hasi behar den. «--launch» aukera erabiltzen "
 "denean bakarri erabilia."
+
+#: core/main.cpp:143
+#, fuzzy
+#| msgctxt "QObject|"
+#| msgid "Specify the activity when starting GCompris."
+msgctxt "QObject|"
+msgid "Specify the locale when starting GCompris."
+msgstr "Zehaztu GCompris abiatzean hasiko den jarduera."
 
 #: core/main.qml:238
 msgctxt "main|"
