@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-11-19 20:26+0300\n"
+"PO-Revision-Date: 2025-11-29 10:11+0300\n"
 "Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -27207,13 +27207,10 @@ msgid "Translation added for Kannada and Tamil"
 msgstr "Kannada ve Tamil çevirileri eklendi"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgctxt "ChangeLog|"
 msgid "New command-line option to set the locale (--locale locale)"
 msgstr ""
-"Sunucuyu değiştirmek için yeni komut satırı seçeneği (--renderer sunucu)"
+"Yerel ayarı değiştirmek için yeni komut satırı seçeneği (--locale yerel ayar)"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:38 core/ChangeLog.qml:44
 #: core/ChangeLog.qml:53 core/ChangeLog.qml:59 core/ChangeLog.qml:64
@@ -28162,12 +28159,9 @@ msgstr ""
 "seçeneği kullanldığında kullanılır."
 
 #: core/main.cpp:143
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid "Specify the activity when starting GCompris."
 msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
-msgstr "GCompris’i başlatırken etkinliği belirt."
+msgstr "GCompris’i başlatırken kullanılacak yerel ayarı belirt."
 
 #: core/main.qml:238
 msgctxt "main|"

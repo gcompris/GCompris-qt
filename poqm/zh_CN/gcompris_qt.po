@@ -25707,12 +25707,9 @@ msgid "Translation added for Kannada and Tamil"
 msgstr ""
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgctxt "ChangeLog|"
 msgid "New command-line option to set the locale (--locale locale)"
-msgstr "用于切换渲染器的新的命令行选项 (--renderer renderer) 。"
+msgstr ""
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:38 core/ChangeLog.qml:44
 #: core/ChangeLog.qml:53 core/ChangeLog.qml:59 core/ChangeLog.qml:64

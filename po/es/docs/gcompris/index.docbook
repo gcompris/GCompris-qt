@@ -604,6 +604,12 @@ for example 'xx.yy.zz'
 <entry
 >Usar el renderizador OpenGL en lugar de renderizar por software (más rápido y con más efectos gráficos, aunque puede producir fallos con algunas tarjetas gráficas). Obsoleto (usar en su lugar «--renderer=opengl»).</entry>
 </row>
+<row>
+<entry
+>--locale=configuración-regional</entry>
+<entry
+>Ejecutar &gcompris; con la configuración regional indicada.</entry>
+</row>
 </tbody>
 </tgroup>
 </informaltable>

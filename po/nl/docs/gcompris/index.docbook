@@ -591,6 +591,12 @@ for example 'xx.yy.zz'
 <entry
 >Renderen met OpenGL gebruiken in plaats van software (sneller en meer grafische effecten maar kan crashen bij sommige grafische kaarten). Afgekeurd, in plaats daarvan “--renderer=opengl” gebruiken.</entry>
 </row>
+<row>
+<entry
+>--locale=taalcode</entry>
+<entry
+>&gcompris; uitvoeren met de gespecificeerde taalcode.</entry>
+</row>
 </tbody>
 </tgroup>
 </informaltable>

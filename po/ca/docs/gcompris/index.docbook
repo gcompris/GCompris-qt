@@ -590,6 +590,12 @@ for example 'xx.yy.zz'
 <entry
 >Utilitza el renderitzador OpenGL en comptes del de programari (més ràpid, però pot fallar amb algunes targetes gràfiques). Obsolet, en el seu lloc feu servir «--renderer=opengl».</entry>
 </row>
+<row>
+<entry
+>--locale=configuració_regional</entry>
+<entry
+>Executa el &gcompris; amb la configuració regional especificada.</entry>
+</row>
 </tbody>
 </tgroup>
 </informaltable>

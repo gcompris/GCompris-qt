@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"PO-Revision-Date: 2025-11-21 02:03+0100\n"
+"PO-Revision-Date: 2025-11-29 02:29+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -27595,14 +27595,11 @@ msgid "Translation added for Kannada and Tamil"
 msgstr "Se han añadido traducciones para el canarés y el tamil."
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgctxt "ChangeLog|"
 msgid "New command-line option to set the locale (--locale locale)"
 msgstr ""
-"Nueva opción de la línea de órdenes para cambiar el renderizador (--renderer "
-"renderizador)."
+"Nueva opción de la línea de órdenes para definir la configuración regional "
+"(--locale configuración-regional)."
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:38 core/ChangeLog.qml:44
 #: core/ChangeLog.qml:53 core/ChangeLog.qml:59 core/ChangeLog.qml:64
@@ -28568,12 +28565,9 @@ msgstr ""
 "empleado la opción «--launch»."
 
 #: core/main.cpp:143
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid "Specify the activity when starting GCompris."
 msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
-msgstr "Indicar la actividad al iniciar GCompris."
+msgstr "Indicar la configuración regional al iniciar GCompris."
 
 #: core/main.qml:238
 msgctxt "main|"

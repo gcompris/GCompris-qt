@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-11-19 20:29+0400\n"
+"PO-Revision-Date: 2025-11-29 21:40+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -26593,12 +26593,10 @@ msgid "Translation added for Kannada and Tamil"
 msgstr " إضافة ترجمة للغة الكانادا والتاميلية"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgctxt "ChangeLog|"
 msgid "New command-line option to set the locale (--locale locale)"
-msgstr "خيار جديد  في سطر الأوامر، لتعديل معالج العرض (--renderer renderer)"
+msgstr ""
+"خيار جديد  في سطر الأوامر، لتعيين اللغة والإعدادات المحلية (--locale locale)"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:38 core/ChangeLog.qml:44
 #: core/ChangeLog.qml:53 core/ChangeLog.qml:59 core/ChangeLog.qml:64
@@ -27507,12 +27505,9 @@ msgid ""
 msgstr "يُحدد في أي مستوى يبدأ النشاط. يُستخدم فقط عند استخدام خيار --launch."
 
 #: core/main.cpp:143
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid "Specify the activity when starting GCompris."
 msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
-msgstr "حدد النشاط عند بدء \"فهمتُ\"."
+msgstr "حدد اللغة والإعدادات المحلية عند بدء \"فهمتُ\"."
 
 #: core/main.qml:238
 msgctxt "main|"

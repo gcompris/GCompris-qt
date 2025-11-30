@@ -25584,14 +25584,10 @@ msgid "Translation added for Kannada and Tamil"
 msgstr "დაემატა თარგმანი კანადისთვის და ტამილურისთვის"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgctxt "ChangeLog|"
 msgid "New command-line option to set the locale (--locale locale)"
 msgstr ""
-"ახალი ბრძანების სტრიქონის პარამეტრი რენდერერის გადასართველად (--renderer "
-"renderer)"
+"ახალი ბრძანების სტრიქონის პარამეტრი ლოკალის დასაყენებლად (--locale ლოკალი)"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:38 core/ChangeLog.qml:44
 #: core/ChangeLog.qml:53 core/ChangeLog.qml:59 core/ChangeLog.qml:64
@@ -26488,12 +26484,9 @@ msgstr ""
 "იყენებთ პარამეტრს --launch."
 
 #: core/main.cpp:143
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid "Specify the activity when starting GCompris."
 msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
-msgstr "მიუთითეთ აქტივობა GComris-ის გაშვებისას."
+msgstr "მიუთითეთ ლოკალი GCompris-ის გაშვებისას."
 
 #: core/main.qml:238
 msgctxt "main|"

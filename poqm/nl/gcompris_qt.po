@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-11-19 23:42+0100\n"
+"PO-Revision-Date: 2025-11-29 11:46+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -27500,14 +27500,11 @@ msgid "Translation added for Kannada and Tamil"
 msgstr "Vertalingen voor Kannada en Tamil toegevoegd"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgctxt "ChangeLog|"
 msgid "New command-line option to set the locale (--locale locale)"
 msgstr ""
-"Nieuwe optie voor de opdrachtregel om de renderer om te schakelen (--"
-"renderer renderer)"
+"Nieuwe optie voor de opdrachtregel om de taalcode om te schakelen (--locale "
+"taalcode)"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:38 core/ChangeLog.qml:44
 #: core/ChangeLog.qml:53 core/ChangeLog.qml:59 core/ChangeLog.qml:64
@@ -28465,12 +28462,9 @@ msgstr ""
 "gebruikt wanneer de optie --launch wordt gebruikt."
 
 #: core/main.cpp:143
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid "Specify the activity when starting GCompris."
 msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
-msgstr "De activiteit specificeren bij starten van GCompris."
+msgstr "De taalcode specificeren bij starten van GCompris."
 
 #: core/main.qml:238
 msgctxt "main|"

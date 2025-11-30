@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2025-11-19 08:01+0200\n"
+"PO-Revision-Date: 2025-11-29 18:33+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -27494,14 +27494,10 @@ msgid "Translation added for Kannada and Tamil"
 msgstr "Додано переклад каннадською та тамільською мовами"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgctxt "ChangeLog|"
 msgid "New command-line option to set the locale (--locale locale)"
 msgstr ""
-"Новий параметр командного рядка для перемикання засобу обробки зображення (--"
-"renderer засіб_обробки)"
+"Новий параметр командного рядка для встановлення локалі (--locale локаль)"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:38 core/ChangeLog.qml:44
 #: core/ChangeLog.qml:53 core/ChangeLog.qml:59 core/ChangeLog.qml:64
@@ -28455,12 +28451,9 @@ msgstr ""
 "використано параметр --launch."
 
 #: core/main.cpp:143
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid "Specify the activity when starting GCompris."
 msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
-msgstr "Вказати вправу, яку слід розпочати після запуску GCompris."
+msgstr "Вказати локаль, яку слід використати після запуску GCompris."
 
 #: core/main.qml:238
 msgctxt "main|"
