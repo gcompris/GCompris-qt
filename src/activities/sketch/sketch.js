@@ -15,9 +15,6 @@ var currentLevel = 0;
 
 var canvasWidth = 1;
 var canvasHeight = 1;
-var undo = [];
-var redo = [];
-var currentSnapshot = "";
 
 var backgroundImageSet = [
     "qrc:/gcompris/src/core/resource/cancel_white.svg",
@@ -78,8 +75,8 @@ function stop() {
 }
 
 function initLevel() {
-    resetUndo();
-    resetRedo();
+    items.canvasArea.clearUndo();
+    items.canvasArea.clearRedo();
     initCanvas();
     items.canvasArea.init();
     items.isSaved = true;
@@ -103,61 +100,27 @@ function initCanvas() {
     items.canvasColor.color = items.backgroundColor;
     items.canvasImage.source = "";
     items.tempCanvas.initContext();
-    //add empty undo item to restore empty canvas
+    //add first empty undo to restore empty canvas
     items.tempCanvas.paintActionFinished();
 }
 
-function pushToUndo(undoPath) {
-    // push last snapshot png to UNDO stack
-    undo.push(undoPath);
-    currentSnapshot = undoPath;
-    // undo size hardcoded to 11 to limit memory use as it can easily get too heavy.
-    if(undo.length > 11) {
-        undo.shift();
-    }
-    items.undoIndex += 1;
-    if(items.undoIndex > 11) {
-        items.undoIndex = 1;
-    }
-}
-
-function resetUndo() {
-    if(undo.length > 0) {
-        undo = [];
-    }
-    items.undoIndex = 0;
-}
-
-function resetRedo() {
-    if(redo.length > 0) {
-        redo = [];
-    }
-}
-
 function undoAction() {
-    if(undo.length > 1) {
+    // 1st element of the list is always last possible state, never undo it
+    if(items.canvasArea.undoSize > 1) {
         items.scrollSound.play();
         items.canvasLocked = true;
-        redo.push(undo.pop());
-        items.canvasImageSource = undo[undo.length - 1];
-        items.canvasImage.source = items.canvasImageSource;
-        currentSnapshot = items.canvasImage.source
-        items.undoIndex -= 1;
-        if(items.undoIndex < 0) {
-            items.undoIndex = 10;
-        }
+        items.canvasArea.doUndo();
+        items.canvasArea.sendToImageSource();
         items.canvasLocked = false;
     }
 }
 
 function redoAction() {
-    if(redo.length > 0) {
+    if(items.canvasArea.redoSize > 0) {
         items.scrollSound.play();
         items.canvasLocked = true;
-        items.canvasImageSource = redo.pop();
-        items.canvasImage.source = items.canvasImageSource;
-        currentSnapshot = items.canvasImage.source
-        pushToUndo(items.canvasImageSource);
+        items.canvasArea.doRedo();
+        items.canvasArea.sendToImageSource();
         items.canvasLocked = false;
     }
 }
@@ -201,7 +164,9 @@ function newImage() {
 }
 
 function saveImageDialog() {
-    items.creationHandler.saveWindow(currentSnapshot);
+    console.log(items.canvas)
+    items.canvasArea.saveToFile(items.canvasArea.tempSaveFile);
+    items.creationHandler.saveWindow(items.canvasArea.tempSaveFile);
 }
 
 function openImageDialog() {

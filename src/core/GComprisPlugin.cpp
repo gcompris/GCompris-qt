@@ -14,6 +14,7 @@
 #include "File.h"
 #include "Directory.h"
 #include "DownloadManager.h"
+#include "GImageGrabber.h"
 #include "GSynth.h"
 #include <QQmlComponent>
 
@@ -31,6 +32,8 @@ void GComprisPlugin::registerTypes(const char *uri)
                           "File");
     qmlRegisterType<Directory>(uri, versionMajor, versionMinor,
                                "Directory");
+    qmlRegisterType<GImageGrabber>(uri, versionMajor, versionMinor,
+                               "GImageGrabber");
 
     qmlRegisterSingletonType<ApplicationInfo>(uri, versionMajor, versionMinor,
                                               "ApplicationInfo", ApplicationInfo::create);

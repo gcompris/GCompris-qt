@@ -32,6 +32,8 @@ set(gcompris_SRCS
   Directory.h
   DownloadManager.cpp
   DownloadManager.h
+  GImageGrabber.cpp
+  GImageGrabber.h
   main.cpp
   config.h.in
   synth/ADSRenvelope.cpp

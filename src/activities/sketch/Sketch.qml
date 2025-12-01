@@ -76,11 +76,7 @@ ActivityBase {
             property alias newImageDialog: newImageDialog
             property alias creationHandler: creationHandler
             readonly property color contentColor: "#d2d2d2"
-            property var canvasImageSource
-            property int undoIndex: 0
             readonly property real devicePixelRatio: Screen.devicePixelRatio
-            readonly property real grabWidth: canvasArea.width * devicePixelRatio
-            readonly property real grabHeight: canvasArea.height * devicePixelRatio
 
             readonly property var patternList: [
                                         Qt.SolidPattern,
@@ -182,13 +178,26 @@ ActivityBase {
             anchors.leftMargin: GCStyle.halfMargins
         }
 
-        Item {
+        GImageGrabber {
             id: canvasArea
             anchors.centerIn: layoutArea
+            // Storing undo with QQuickItemGrabResult uses quite some RAM, so limit on mobile which typically has less RAM than computers
+            maxUndo: ApplicationInfo.isMobile ? 5 : 10
+
+            property url tempSaveFile: StandardPaths.writableLocation(StandardPaths.TempLocation) + "/GCSketchSave.png"
 
             function init() {
                 canvasInput.resetPoints();
                 items.selectedTool.toolInit();
+            }
+
+            function sendToImageSource() {
+                canvasImage.source = canvasArea.getImageUrl();
+            }
+
+            onGrabReady: {
+                canvasArea.sendToImageSource();
+                tempCanvas.clearTempCanvas();
             }
 
             Rectangle {
@@ -196,6 +205,7 @@ ActivityBase {
                 anchors.fill: parent
             }
 
+            // Used to load background or saved image with size set to fit the canvas
             Image {
                 id: loadedImage
                 anchors.fill: parent
@@ -216,21 +226,6 @@ ActivityBase {
                 fillMode: Image.Stretch
                 cache: false
                 smooth: true
-
-                // After loading canvas result to image, clear Canvas and hide other drawing sources
-                onSourceChanged: {
-                    tempCanvas.ctx.clearRect(0, 0, tempCanvas.width, tempCanvas.height);
-                    tempCanvas.requestPaint();
-                    loadedImage.visible = false;
-                    geometryShape.visible = false;
-                    ovalShape.visible = false;
-                    lineShape.visible = false;
-                    gradientShape.visible = false;
-                    gradientShapePath.fillGradient = null;
-                    stampImage.visible = false;
-                    textShape.visible = false;
-                    items.canvasLocked = false;
-                }
             }
 
             Canvas {
@@ -244,28 +239,35 @@ ActivityBase {
                 clip: true // useful to avoid Rectangle, Shapes, etc... overflows
 
                 property var ctx
-                property url tempPath: StandardPaths.writableLocation(StandardPaths.TempLocation) + "/GCSketchCache"
 
                 function initContext() {
                     ctx = getContext("2d");
                 }
 
+                // After loading canvas result to image, clear Canvas and hide other drawing sources
+                function clearTempCanvas() {
+                    tempCanvas.ctx.clearRect(0, 0, tempCanvas.width, tempCanvas.height);
+                    tempCanvas.requestPaint();
+                    loadedImage.visible = false;
+                    geometryShape.visible = false;
+                    ovalShape.visible = false;
+                    lineShape.visible = false;
+                    gradientShape.visible = false;
+                    gradientShapePath.fillGradient = null;
+                    stampImage.visible = false;
+                    textShape.visible = false;
+                    items.canvasLocked = false;
+                }
+
                 function paintActionFinished() {
-                    canvasArea.grabToImage(function(result) {
-                        items.canvasImageSource = result.url;
-                        canvasImage.source = items.canvasImageSource;
-                        var undoPath = tempPath + items.undoIndex.toString() + ".png";
-                        result.saveToFile(undoPath);
-                        // push last snapshot to undo stack
-                        Activity.pushToUndo(undoPath);
-                        Activity.resetRedo();
-                    }, Qt.size(items.grabWidth, items.grabHeight))
+                    canvasArea.safeGrab(Qt.size(canvasArea.width, canvasArea.height));
+                    // next steps are in canvasArea onGrabReady...
                 }
 
                 MouseArea {
                     id: canvasInput
                     anchors.fill: parent
-                    enabled: items.openPanel == null
+                    enabled: items.openPanel == null && !items.canvasLocked
                     hoverEnabled: true
 
                     property var lastPoint
@@ -281,11 +283,9 @@ ActivityBase {
                     }
 
                     onPressed: {
-                        if(!items.canvasLocked) {
-                            items.isSaved = false;
-                            items.selectedTool.toolStart();
-                            items.toolStarted = true;
-                        }
+                        items.isSaved = false;
+                        items.selectedTool.toolStart();
+                        items.toolStarted = true;
                     }
 
                     onReleased: {
@@ -544,6 +544,8 @@ ActivityBase {
                     width: items.buttonSize
                     sourceSize.width: items.buttonSize
                     sourceSize.height: items.buttonSize
+                    enabled: canvasArea.undoSize > 1
+                    opacity: enabled ? 1 : 0.5
                     MouseArea {
                         anchors.fill: parent
                         enabled: !items.canvasLocked
@@ -563,6 +565,8 @@ ActivityBase {
                     width: items.buttonSize
                     sourceSize.width: items.buttonSize
                     sourceSize.height: items.buttonSize
+                    enabled: canvasArea.redoSize > 0
+                    opacity: enabled ? 1 : 0.5
                     MouseArea {
                         anchors.fill: parent
                         enabled: !items.canvasLocked
