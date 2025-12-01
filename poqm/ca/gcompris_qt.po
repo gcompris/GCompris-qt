@@ -28480,27 +28480,3 @@ msgstr "Omet"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Inicia"
-
-#~ msgctxt "grammar_analysis|"
-#~ msgid "Grammatical analysis"
-#~ msgstr "Anàlisi gramatical"
-
-#~ msgctxt "grammar_analysis|"
-#~ msgid "Learn to identify grammatical classes."
-#~ msgstr "Apreneu a identificar classes gramaticals."
-
-#~ msgctxt "grammar_analysis|"
-#~ msgid ""
-#~ "Select a grammatical class from the list, then select the box under a "
-#~ "word and assign it the class."
-#~ msgstr ""
-#~ "Seleccioneu una classe gramatical de la llista, després seleccioneu el "
-#~ "quadre sota d'una paraula i assigneu-hi la classe."
-
-#~ msgctxt "grammar_analysis|"
-#~ msgid "Leave the box blank if no class matches."
-#~ msgstr "Deixeu el quadre en blanc si no coincideix cap classe."
-
-#~ msgctxt "Frieze|"
-#~ msgid "What is the binary representation of %1?"
-#~ msgstr "Quina és la representació binària de %1?"
