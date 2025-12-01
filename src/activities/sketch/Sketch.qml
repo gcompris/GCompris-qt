@@ -25,6 +25,10 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+    // Storing undo with QQuickItemGrabResult uses quite some RAM,
+    // so limit more by default on mobile which typically has less RAM than computers
+    property int undoSetting: ApplicationInfo.isMobile ? 5 : 10
+
     pageComponent: Rectangle {
         id: activityBackground
         anchors.fill: parent
@@ -33,6 +37,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
+            dialogActivityConfig.initialize()
             activity.start.connect(start);
             activity.stop.connect(stop);
         }
@@ -181,8 +186,7 @@ ActivityBase {
         GImageGrabber {
             id: canvasArea
             anchors.centerIn: layoutArea
-            // Storing undo with QQuickItemGrabResult uses quite some RAM, so limit on mobile which typically has less RAM than computers
-            maxUndo: ApplicationInfo.isMobile ? 5 : 10
+            maxUndo: activity.undoSetting
 
             property url tempSaveFile: StandardPaths.writableLocation(StandardPaths.TempLocation) + "/GCSketchSave.png"
 
@@ -709,6 +713,19 @@ ActivityBase {
             onStatusChanged: if(status == Loader.Ready) item.start();
         }
 
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+            onClose: {
+                activity.home()
+            }
+            onLoadData: {
+                if(activityData && activityData["undoSetting"]) {
+                    activity.undoSetting = activityData["undoSetting"];
+                }
+            }
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home();
@@ -716,7 +733,7 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | reload }
+            content: BarEnumContent { value: help | home | reload | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelp);
             }
@@ -730,6 +747,9 @@ ActivityBase {
                     items.resetRequested = true;
                     newImageDialog.active = true;
                 }
+            }
+            onActivityConfigClicked: {
+                activity.displayDialog(dialogActivityConfig)
             }
         }
     }

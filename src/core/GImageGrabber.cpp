@@ -23,10 +23,27 @@ int GImageGrabber::maxUndo() const
 void GImageGrabber::setMaxUndo(const int &maxValue)
 {
     int value = maxValue;
-    if(value < 0) {
-        value = 0;
+    if(value < 1) {
+        value = 1;
     }
     m_maxUndo = value;
+
+    // max stored can always be maxUndo + 1 for current state
+    int maxStored = m_maxUndo + 1;
+    // if undoList has more than maxUndo, remove extra undo saved
+    if(m_undoSize > maxStored) {
+        int difference = m_undoSize - maxStored;
+        undoList.remove(0, difference);
+        setUndoSize(undoList.size());
+    }
+    // if (undoList + redoList) has more than maxUndo, remove extra redo saved
+    int totalSaved = m_undoSize + m_redoSize;
+    if(totalSaved > maxStored) {
+        int difference = totalSaved - maxStored;
+        redoList.remove(0, difference);
+        setRedoSize(redoList.size());
+    }
+
     Q_EMIT maxUndoChanged();
 }
 

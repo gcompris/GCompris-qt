@@ -31,6 +31,8 @@ class GImageGrabber : public QQuickItem
     *
     * Default is 10, use a lower number to optimize for low-memory devices,
     * and don't set too high value to limit memory used.
+    *
+    * Minimum is 1 (lower numbers will be set to 1)
     */
     Q_PROPERTY(int maxUndo READ maxUndo WRITE setMaxUndo NOTIFY maxUndoChanged)
     /**
