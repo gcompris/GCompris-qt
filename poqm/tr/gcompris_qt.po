@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-11-29 10:11+0300\n"
+"PO-Revision-Date: 2025-12-01 10:55+0300\n"
 "Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -27218,6 +27218,8 @@ msgid ""
 "New command-line option to show/hide the Home button (--hide-home-button/--"
 "show-home-button)"
 msgstr ""
+"Ana Sayfa düğmesini göstermek/gizlemek için yeni komut satırı seçeneği (--"
+"hide-home-button/--show-home-button)"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:39 core/ChangeLog.qml:45
 #: core/ChangeLog.qml:54 core/ChangeLog.qml:60 core/ChangeLog.qml:65
@@ -28173,12 +28175,12 @@ msgstr "GCompris’i başlatırken kullanılacak yerel ayarı belirt."
 #: core/main.cpp:147
 msgctxt "QObject|"
 msgid "Hide the Home button in the bar."
-msgstr ""
+msgstr "Çubuktaki ana sayfa düğmesini gizle."
 
 #: core/main.cpp:151
 msgctxt "QObject|"
 msgid "Show the Home button in the bar (default)."
-msgstr ""
+msgstr "Çubuktaki ana sayfa düğmesini göster."
 
 #: core/main.qml:238
 msgctxt "main|"

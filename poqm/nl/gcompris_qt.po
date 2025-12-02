@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-11-29 11:46+0100\n"
+"PO-Revision-Date: 2025-12-01 18:15+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -27512,6 +27512,8 @@ msgid ""
 "New command-line option to show/hide the Home button (--hide-home-button/--"
 "show-home-button)"
 msgstr ""
+"Nieuwe opties op de opdrachtregel om de knop Home te tonen/verbergen (--hide-"
+"home-button/--show-home-button)"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:39 core/ChangeLog.qml:45
 #: core/ChangeLog.qml:54 core/ChangeLog.qml:60 core/ChangeLog.qml:65
@@ -28476,12 +28478,12 @@ msgstr "De taalcode specificeren bij starten van GCompris."
 #: core/main.cpp:147
 msgctxt "QObject|"
 msgid "Hide the Home button in the bar."
-msgstr ""
+msgstr "Verberg de knop Home in de balk."
 
 #: core/main.cpp:151
 msgctxt "QObject|"
 msgid "Show the Home button in the bar (default)."
-msgstr ""
+msgstr "Toon de knop Home in de balk (standaard)."
 
 #: core/main.qml:238
 msgctxt "main|"

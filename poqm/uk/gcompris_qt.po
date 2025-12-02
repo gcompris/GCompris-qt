@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2025-11-29 18:33+0200\n"
+"PO-Revision-Date: 2025-12-01 14:57+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -27505,6 +27505,8 @@ msgid ""
 "New command-line option to show/hide the Home button (--hide-home-button/--"
 "show-home-button)"
 msgstr ""
+"Новий параметр командного рядка для показу або приховування кнопки "
+"«Домівка» (--hide-home-button/--show-home-button)"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:39 core/ChangeLog.qml:45
 #: core/ChangeLog.qml:54 core/ChangeLog.qml:60 core/ChangeLog.qml:65
@@ -28465,12 +28467,12 @@ msgstr "Вказати локаль, яку слід використати пі
 #: core/main.cpp:147
 msgctxt "QObject|"
 msgid "Hide the Home button in the bar."
-msgstr ""
+msgstr "Приховати кнопку «Домівка» на панелі."
 
 #: core/main.cpp:151
 msgctxt "QObject|"
 msgid "Show the Home button in the bar (default)."
-msgstr ""
+msgstr "Показувати кнопку «Домівка» на панелі (типовий варіант)."
 
 #: core/main.qml:238
 msgctxt "main|"

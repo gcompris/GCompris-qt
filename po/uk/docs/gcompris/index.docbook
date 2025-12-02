@@ -588,6 +588,18 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>--show-home-button</entry>
+<entry
+>Показувати кнопку «Домівка» на панелі (типовий варіант).</entry>
+</row>
+<row>
+<entry
+>--hide-home-button</entry>
+<entry
+>Приховати кнопку «Домівка» на панелі.</entry>
+</row>
+<row>
+<entry
 >--renderer={обробник}</entry>
 <entry
 >Вказати засіб обробки графіки. «opengl» та «software» доступні на усіх платформах. У Windows ви можете скористатися «direct3d11» або «direct3d12» (якщо програму було зібрано з Qt≥6.6). У &macOS; ви можете скористатися «metal».</entry>

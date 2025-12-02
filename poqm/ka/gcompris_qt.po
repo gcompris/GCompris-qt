@@ -25595,6 +25595,8 @@ msgid ""
 "New command-line option to show/hide the Home button (--hide-home-button/--"
 "show-home-button)"
 msgstr ""
+"ახალი ბრძანების სტრიქონის პარამეტრი საწყისზე გადასვლის ღილაკის საჩვენებლად/"
+"დასამალად (--hide-home-button/--show-home-button)"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:39 core/ChangeLog.qml:45
 #: core/ChangeLog.qml:54 core/ChangeLog.qml:60 core/ChangeLog.qml:65
@@ -26498,12 +26500,12 @@ msgstr "მიუთითეთ ლოკალი GCompris-ის გაშვ
 #: core/main.cpp:147
 msgctxt "QObject|"
 msgid "Hide the Home button in the bar."
-msgstr ""
+msgstr "საწყისზე გადასვლის ღილაკის დამალვა პანელიდან."
 
 #: core/main.cpp:151
 msgctxt "QObject|"
 msgid "Show the Home button in the bar (default)."
-msgstr ""
+msgstr "საწყისზე გადასვლის ღილაკის ჩვენება პანელზე (ნაგულისხმევი)."
 
 #: core/main.qml:238
 msgctxt "main|"

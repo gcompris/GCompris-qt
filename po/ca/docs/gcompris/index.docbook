@@ -574,6 +574,18 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>--show-home-button</entry>
+<entry
+>Mostra el botó Inici a la barra (predeterminat).</entry>
+</row>
+<row>
+<entry
+>--hide-home-button</entry>
+<entry
+>Oculta el botó Inici a la barra.</entry>
+</row>
+<row>
+<entry
 >--renderer={renderitzador}</entry>
 <entry
 >Especifica el renderitzador gràfic que s'emprarà. A totes les plataformes, són disponibles «opengl» i «software». Al Windows, podeu fer servir «direct3d11» o «direct3d12» (si es van compilar amb Qt ≥ 6.6). Al &macOS;, podeu fer servir «metal».</entry>

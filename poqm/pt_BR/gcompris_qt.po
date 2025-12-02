@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-11-29 08:28-0300\n"
+"PO-Revision-Date: 2025-12-01 08:24-0300\n"
 "Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -27640,6 +27640,8 @@ msgid ""
 "New command-line option to show/hide the Home button (--hide-home-button/--"
 "show-home-button)"
 msgstr ""
+"Nova opção de linha de comando para mostrar/ocultar o botão Início (--hide-"
+"home-button/--show-home-button)"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:39 core/ChangeLog.qml:45
 #: core/ChangeLog.qml:54 core/ChangeLog.qml:60 core/ChangeLog.qml:65
@@ -28607,12 +28609,12 @@ msgstr "Especificar um local ao abrir o GCompris."
 #: core/main.cpp:147
 msgctxt "QObject|"
 msgid "Hide the Home button in the bar."
-msgstr ""
+msgstr "Oculta o botão Início na barra."
 
 #: core/main.cpp:151
 msgctxt "QObject|"
 msgid "Show the Home button in the bar (default)."
-msgstr ""
+msgstr "Mostra o botão Início na barra (padrão)."
 
 #: core/main.qml:238
 msgctxt "main|"
