@@ -26,6 +26,8 @@ class GImageGrabber : public QQuickItem
 #ifndef WITH_RCC
     QML_ELEMENT
 #endif
+    friend class GImageGrabberTest;
+
     /**
     * Maximum number of undo stored
     *
