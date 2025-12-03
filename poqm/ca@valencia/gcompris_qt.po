@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2025-11-19 10:34+0100\n"
+"PO-Revision-Date: 2025-12-01 11:25+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -22385,7 +22385,7 @@ msgstr "Ara pots carregar música, així com guardar les teues composicions."
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Error saving melody to your file (%1)"
-msgstr "S'ha produït un error en guardar la melodia en el fitxer (%1)"
+msgstr "S'ha produït un error mentre es guardava la melodia al fitxer (%1)"
 
 #: activities/piano_composition/piano_composition.js:68
 #, qt-format
@@ -27942,14 +27942,11 @@ msgid "Translation added for Kannada and Tamil"
 msgstr "S'han afegit les traduccions per al kanarés i el tàmil"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgctxt "ChangeLog|"
 msgid "New command-line option to set the locale (--locale locale)"
 msgstr ""
-"Opció nova de la línia d'ordres per a canviar el renderitzador (--renderer "
-"renderitzador)"
+"Opció nova de la línia d'ordres per a definir la configuració regional (--"
+"locale configuració_regional)"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
@@ -27957,6 +27954,8 @@ msgid ""
 "New command-line option to show/hide the Home button (--hide-home-button/--"
 "show-home-button)"
 msgstr ""
+"Opció nova de la línia d'ordres per a mostrar/ocultar el botó Inici (--hide-"
+"home-button/--show-home-button)"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:39 core/ChangeLog.qml:45
 #: core/ChangeLog.qml:54 core/ChangeLog.qml:60 core/ChangeLog.qml:65
@@ -28918,22 +28917,19 @@ msgstr ""
 "s'utilitza l'opció --launch."
 
 #: core/main.cpp:143
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid "Specify the activity when starting GCompris."
 msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
-msgstr "Especifica l'activitat en iniciar GCompris."
+msgstr "Especifica la configuració regional en iniciar GCompris."
 
 #: core/main.cpp:147
 msgctxt "QObject|"
 msgid "Hide the Home button in the bar."
-msgstr ""
+msgstr "Oculta el botó Inici a la barra."
 
 #: core/main.cpp:151
 msgctxt "QObject|"
 msgid "Show the Home button in the bar (default)."
-msgstr ""
+msgstr "Mostra el botó Inici a la barra (predeterminat)."
 
 #: core/main.qml:238
 msgctxt "main|"
