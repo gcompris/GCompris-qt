@@ -21864,7 +21864,7 @@ msgstr "Ara pots carregar música, així com guardar les teues composicions."
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Error saving melody to your file (%1)"
-msgstr "S'ha produït un error en guardar la melodia en el fitxer (%1)"
+msgstr "S'ha produït un error mentre es guardava la melodia al fitxer (%1)"
 
 #: activities/piano_composition/piano_composition.js:68
 #, qt-format
