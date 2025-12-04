@@ -266,7 +266,19 @@ ActivityBase {
                     }
                     var line = getText(first, last)
                     remove(first, last)
-                    insert(first, '<' + tag + '>' + line + '</' + tag + '>')
+                    if(tag === "p") {
+                        insert(first, '<span style=" font-size:medium; font-weight:normal;">'
+                        + line
+                        + '</span>')
+                    } else if(tag === "h3") {
+                        insert(first, '<span style=" font-size:large; font-weight:bold;">'
+                            + line
+                            + '</span>')
+                    } else if(tag === "h2") {
+                        insert(first, '<span style=" font-size:x-large; font-weight:bold;">'
+                        + line
+                        + '</span>')
+                    }
                     cursorPosition = initialPosition
                 }
             }
