@@ -184,6 +184,7 @@ ActivityBase {
                 wrapMode: TextEdit.Wrap
                 onCursorRectangleChanged: flick.ensureVisible(cursorRectangle)
                 textFormat: TextEdit.RichText
+                inputMethodHints: Qt.ImhNoPredictiveText
                 color: GCStyle.darkText
                 font {
                     pointSize: (18 + ApplicationSettings.baseFontSize) * ApplicationInfo.fontRatio
