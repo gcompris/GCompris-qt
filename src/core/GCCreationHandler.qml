@@ -231,7 +231,7 @@ Rectangle {
         }
         Core.showMessageDialog(creationHandler,
                                qsTr("Saved successfully!"),
-                               qsTr("OK"), function() { close(); }, "", null, function() { restoreFocusTimer.restart(); });
+                               qsTr("OK"), function() { close(); }, "", null, function() { restoreFocusTimer.restart(); creationHandler.close(); });
         saved();
         refreshTimer.restart();
     }
