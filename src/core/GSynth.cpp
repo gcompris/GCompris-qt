@@ -42,7 +42,7 @@ GSynth::GSynth(QObject *parent) : QObject(parent)
     // On Windows, since Qt6, the audio does not work (https://bugreports.qt.io/browse/QTBUG-108672)
     // periodically push to QAudioSink using a timer works, but seems slower,
     // so we keep the previous way of playing audio for all the other systems.
-#if defined(Q_OS_WIN)
+#if defined(Q_OS_WIN) || QT_VERSION >= QT_VERSION_CHECK(6, 10, 0)
     m_pushTimer = new QTimer(this);
 
     auto io = m_audioSink->start();
