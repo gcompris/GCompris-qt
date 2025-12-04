@@ -24644,6 +24644,21 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
 msgstr "Tabulador: cambiar entre el selector de color y el área de dibujo"
 
+#: activities/sketch/ActivityConfig.qml:29
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Numbers from 1 to 19."
+msgctxt "ActivityConfig|"
+msgid "Number of undo: %1"
+msgstr "Números del 1 al 19."
+
+#: activities/sketch/ActivityConfig.qml:44
+msgctxt "ActivityConfig|"
+msgid ""
+"Warning: setting the number of undo too high can make the application crash "
+"if your device doesn't have enough memory."
+msgstr ""
+
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
@@ -24822,22 +24837,22 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr "Herramientas de degradado"
 
-#: activities/sketch/Sketch.qml:670
+#: activities/sketch/Sketch.qml:678
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "No has guardado la imagen. ¿Quieres cerrar esta actividad?"
 
-#: activities/sketch/Sketch.qml:671
+#: activities/sketch/Sketch.qml:679
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "¿Quieres borrar esta imagen?"
 
-#: activities/sketch/Sketch.qml:672
+#: activities/sketch/Sketch.qml:680
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Sí"
 
-#: activities/sketch/Sketch.qml:673
+#: activities/sketch/Sketch.qml:681
 msgctxt "Sketch|"
 msgid "No"
 msgstr "No"

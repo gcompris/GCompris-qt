@@ -189,7 +189,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="difficulty1.svg" format="SVG"/></imageobject
+><imagedata fileref="difficulty1.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
 ></inlinemediaobject
 >1, 2 o 3 estrellas amarillas: de 2 a 6 años de edad.</para
 ></listitem
@@ -198,7 +198,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="difficulty4.svg" format="SVG"/></imageobject
+><imagedata fileref="difficulty4.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
 ></inlinemediaobject
 >1, 2 o 3 estrellas rojas: mayor de 6 años de edad.</para
 ></listitem
@@ -212,7 +212,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_home.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_home.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Inicio: Abandona la actividad actual y vuelve al menú anterior.</para
 ></listitem
@@ -221,7 +221,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_ok.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > «Aceptar»: Validar o confirmar tu respuesta. Algunas actividades no detectan automáticamente cuándo has terminado la tarea. En este caso, debes hacer clic en este icono. También puedes usar la tecla &Enter; del teclado.</para
 ></listitem
@@ -230,7 +230,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_hint.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Luz: Muestra una pista para la actividad. Podemos ayudar al niño en algunas actividades para guiarlo a encontrar las respuestas.</para
 ></listitem>
@@ -238,11 +238,11 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_previous.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_previous.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject>
 <inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_next.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_next.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Flechas: Se muestra el nivel actual. Haz clic en una de las flechas para seleccionar otro nivel. Normalmente, las actividades ofrecen varios niveles. En &gcompris; es posible ir al siguiente nivel sin haber completado el nivel actual.</para
 ></listitem
@@ -251,7 +251,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_repeat.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_repeat.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Labios: Le piden a &gcompris; que repita la pregunta.</para
 ></listitem
@@ -260,7 +260,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_help.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_help.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Signo de interrogación: Muestra un cuadro de ayuda. A veces, una actividad puede ser demasiado compleja para describirla fácilmente en el área informativa. En este caso, esta función proporciona acceso a información adicional.</para
 ></listitem
@@ -269,7 +269,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Caja de herramientas: El menú de configuración. La configuración se guarda en la carpeta del usuario con el nombre <filename
 >.config/gcompris/gcompris-qt.conf</filename
@@ -280,7 +280,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_activity_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Listar elemento: Muestra el menú de propiedades de la actividad. Aquí existen dos pestañas posibles. La primera de ellas, «Conjunto de datos», permite escoger los niveles de las actividades dependiendo de varios objetivos; la segunda, «Opciones», permite actualizar la configuración de la actividad, si está disponible.</para
 ></listitem>
@@ -288,7 +288,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_about.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_about.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > «G» mayúscula: Cuadro de información sobre &gcompris; que muestra los colaboradores principales y la versión del software.</para
 ></listitem
@@ -297,7 +297,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_exit.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Botón de apagado: Sale de &gcompris;. También puedes usar el atajo de teclado <keycombo action="simul"
 >&Ctrl;<keycap
@@ -585,6 +585,18 @@ for example 'xx.yy.zz'
 >--disable-kioskmode</entry>
 <entry
 >Desactivar el modo kiosko (por omisión).</entry>
+</row>
+<row>
+<entry
+>--show-home-button</entry>
+<entry
+>Mostrar el botón «Inicio» en la barra (predeterminado)</entry>
+</row>
+<row>
+<entry
+>--hide-home-button</entry>
+<entry
+>Ocultar el botón «Inicio» en la barra.</entry>
 </row>
 <row>
 <entry

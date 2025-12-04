@@ -25562,6 +25562,21 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
 msgstr "Таб(Tab): префрлање помеѓу изборот на бои и зоната за цртање"
 
+#: activities/sketch/ActivityConfig.qml:29
+#, fuzzy, qt-format
+#| msgctxt "guessnumber|"
+#| msgid "Number found!"
+msgctxt "ActivityConfig|"
+msgid "Number of undo: %1"
+msgstr "Бројот е пронајден!"
+
+#: activities/sketch/ActivityConfig.qml:44
+msgctxt "ActivityConfig|"
+msgid ""
+"Warning: setting the number of undo too high can make the application crash "
+"if your device doesn't have enough memory."
+msgstr ""
+
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
@@ -25788,7 +25803,7 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr ""
 
-#: activities/sketch/Sketch.qml:670
+#: activities/sketch/Sketch.qml:678
 #, fuzzy
 #| msgctxt "Piano_composition|"
 #| msgid "You have not selected any note. Do you want to erase all the notes?"
@@ -25796,7 +25811,7 @@ msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Немате одберено ниедна нота. Дали сакате да ги избришате сите ноти?"
 
-#: activities/sketch/Sketch.qml:671
+#: activities/sketch/Sketch.qml:679
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Do you want to download it now?"
@@ -25804,7 +25819,7 @@ msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "Дали сакате да ја преземете сега?"
 
-#: activities/sketch/Sketch.qml:672
+#: activities/sketch/Sketch.qml:680
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -25812,7 +25827,7 @@ msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Да"
 
-#: activities/sketch/Sketch.qml:673
+#: activities/sketch/Sketch.qml:681
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -31377,10 +31392,6 @@ msgstr "Старт"
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Numbers from 1 to 1000 for the last level."
 #~ msgstr "Броеви од 1 до 1000 за последно ниво."
-
-#~ msgctxt "guessnumber|"
-#~ msgid "Number found!"
-#~ msgstr "Бројот е пронајден!"
 
 #~ msgctxt "Hangman|"
 #~ msgid "Select your locale"

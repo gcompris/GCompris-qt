@@ -25136,6 +25136,21 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
 msgstr "Səkmə (Tab): rəng seçimi və rəsm çəkmə sahəsi arasında keçid"
 
+#: activities/sketch/ActivityConfig.qml:29
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Numbers from 1 to 19."
+msgctxt "ActivityConfig|"
+msgid "Number of undo: %1"
+msgstr "1-dən 9-a qədər saylar."
+
+#: activities/sketch/ActivityConfig.qml:44
+msgctxt "ActivityConfig|"
+msgid ""
+"Warning: setting the number of undo too high can make the application crash "
+"if your device doesn't have enough memory."
+msgstr ""
+
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
@@ -25362,7 +25377,7 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr ""
 
-#: activities/sketch/Sketch.qml:670
+#: activities/sketch/Sketch.qml:678
 #, fuzzy
 #| msgctxt "Piano_composition|"
 #| msgid "You have not selected any note. Do you want to erase all the notes?"
@@ -25371,7 +25386,7 @@ msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 "Sizin seçilmiş heç bir notunuz yoxdur. Bütün notları silmək istəyirsiniz?"
 
-#: activities/sketch/Sketch.qml:671
+#: activities/sketch/Sketch.qml:679
 #, fuzzy
 #| msgctxt "Chess|"
 #| msgid "Do you really want to undo all the moves?"
@@ -25379,7 +25394,7 @@ msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "Bütün hərəkətləri geri qaytarmaq istəyirsiniz?"
 
-#: activities/sketch/Sketch.qml:672
+#: activities/sketch/Sketch.qml:680
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -25387,7 +25402,7 @@ msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Bəli"
 
-#: activities/sketch/Sketch.qml:673
+#: activities/sketch/Sketch.qml:681
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"

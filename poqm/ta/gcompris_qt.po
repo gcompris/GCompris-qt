@@ -25128,6 +25128,21 @@ msgid "Tab: switch between the color selector and the painting area"
 msgstr ""
 "டேபு: நிறம் தேர்ந்தெடுக்கும் பகுதியும் நிறம் கொடுக்கும் பகுதியும் ஒன்றோடொன்று மாறுவதற்கு"
 
+#: activities/sketch/ActivityConfig.qml:29
+#, fuzzy, qt-format
+#| msgctxt "guessnumber|"
+#| msgid "Number found!"
+msgctxt "ActivityConfig|"
+msgid "Number of undo: %1"
+msgstr "எண் கண்டுபிடிக்கப்பட்டது!"
+
+#: activities/sketch/ActivityConfig.qml:44
+msgctxt "ActivityConfig|"
+msgid ""
+"Warning: setting the number of undo too high can make the application crash "
+"if your device doesn't have enough memory."
+msgstr ""
+
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
@@ -25354,7 +25369,7 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr ""
 
-#: activities/sketch/Sketch.qml:670
+#: activities/sketch/Sketch.qml:678
 #, fuzzy
 #| msgctxt "Piano_composition|"
 #| msgid "You have not selected any note. Do you want to erase all the notes?"
@@ -25363,7 +25378,7 @@ msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 "நீங்கள் எந்த ஸ்வரங்களையும் தேர்ந்தெடுக்கவில்லை. எல்லா ஸ்வரங்களையும் அழிக்க விரும்புகிறீர்களா?"
 
-#: activities/sketch/Sketch.qml:671
+#: activities/sketch/Sketch.qml:679
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Do you want to download it now?"
@@ -25371,7 +25386,7 @@ msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "இப்போது பதிவிறக்கம் செய்ய விரும்புகிறீர்களா?"
 
-#: activities/sketch/Sketch.qml:672
+#: activities/sketch/Sketch.qml:680
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -25379,7 +25394,7 @@ msgctxt "Sketch|"
 msgid "Yes"
 msgstr "ஆம்"
 
-#: activities/sketch/Sketch.qml:673
+#: activities/sketch/Sketch.qml:681
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -30822,10 +30837,6 @@ msgstr "தொடங்கு"
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Numbers from 1 to 1000 for the last level."
 #~ msgstr "கடைசி நிலைக்கு 1 முதல் 1000 வரையிலான எண்கள்."
-
-#~ msgctxt "guessnumber|"
-#~ msgid "Number found!"
-#~ msgstr "எண் கண்டுபிடிக்கப்பட்டது!"
 
 #~ msgctxt "Hangman|"
 #~ msgid "Select your locale"

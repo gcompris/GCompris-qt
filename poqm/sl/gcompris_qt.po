@@ -24299,6 +24299,21 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
 msgstr "Tab: preklopi med izbiro barve in območjem za barvanje"
 
+#: activities/sketch/ActivityConfig.qml:29
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Numbers from 1 to 19."
+msgctxt "ActivityConfig|"
+msgid "Number of undo: %1"
+msgstr "Števila od 1 do 19."
+
+#: activities/sketch/ActivityConfig.qml:44
+msgctxt "ActivityConfig|"
+msgid ""
+"Warning: setting the number of undo too high can make the application crash "
+"if your device doesn't have enough memory."
+msgstr ""
+
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
@@ -24475,22 +24490,22 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr "Orodja za gradient"
 
-#: activities/sketch/Sketch.qml:670
+#: activities/sketch/Sketch.qml:678
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Te slike niste shranili. Ali želite zapreti to dejavnost?"
 
-#: activities/sketch/Sketch.qml:671
+#: activities/sketch/Sketch.qml:679
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "Ali želite izbrisati to sliko?"
 
-#: activities/sketch/Sketch.qml:672
+#: activities/sketch/Sketch.qml:680
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Da"
 
-#: activities/sketch/Sketch.qml:673
+#: activities/sketch/Sketch.qml:681
 msgctxt "Sketch|"
 msgid "No"
 msgstr "Ne"

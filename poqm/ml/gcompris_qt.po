@@ -24011,6 +24011,21 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
 msgstr "ടാബ്: നിറം തിരഞ്ഞെടുക്കുന്ന ഭാഗവും ചായമടിക്കുന്ന ഭാഗവും തമ്മിൽ മാറാൻ"
 
+#: activities/sketch/ActivityConfig.qml:29
+#, fuzzy, qt-format
+#| msgctxt "guessnumber|"
+#| msgid "Number found!"
+msgctxt "ActivityConfig|"
+msgid "Number of undo: %1"
+msgstr "സംഖ്യ കണ്ടെത്തി!"
+
+#: activities/sketch/ActivityConfig.qml:44
+msgctxt "ActivityConfig|"
+msgid ""
+"Warning: setting the number of undo too high can make the application crash "
+"if your device doesn't have enough memory."
+msgstr ""
+
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
@@ -24187,22 +24202,22 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr "ഗ്രേഡിയന്റ്"
 
-#: activities/sketch/Sketch.qml:670
+#: activities/sketch/Sketch.qml:678
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "നിങ്ങളുടെ ചിത്രം സേവ് ചെയ്തിട്ടില്ല. ഈ പ്രവർത്തനം നിർത്തണമോ?"
 
-#: activities/sketch/Sketch.qml:671
+#: activities/sketch/Sketch.qml:679
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "ഈ ചിത്രം മായിക്കണമോ?"
 
-#: activities/sketch/Sketch.qml:672
+#: activities/sketch/Sketch.qml:680
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "വേണം"
 
-#: activities/sketch/Sketch.qml:673
+#: activities/sketch/Sketch.qml:681
 msgctxt "Sketch|"
 msgid "No"
 msgstr "വേണ്ട"
@@ -29527,10 +29542,6 @@ msgstr "തുടങ്ങാം"
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Numbers from 1 to 1000 for the last level."
 #~ msgstr "1 തൊട്ട് 1000 വരെയുള്ള സംഖ്യകൾ അവസാനത്തെ ഘട്ടത്തിൽ."
-
-#~ msgctxt "guessnumber|"
-#~ msgid "Number found!"
-#~ msgstr "സംഖ്യ കണ്ടെത്തി!"
 
 #~ msgctxt "Hangman|"
 #~ msgid "Select your locale"

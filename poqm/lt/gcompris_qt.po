@@ -24579,6 +24579,21 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
 msgstr "Tab: pasirink tarp spalvų pasirinkimo įrankio ir piešimo zonos"
 
+#: activities/sketch/ActivityConfig.qml:29
+#, fuzzy, qt-format
+#| msgctxt "guessnumber|"
+#| msgid "Number found!"
+msgctxt "ActivityConfig|"
+msgid "Number of undo: %1"
+msgstr "Atspėjote skaičių!"
+
+#: activities/sketch/ActivityConfig.qml:44
+msgctxt "ActivityConfig|"
+msgid ""
+"Warning: setting the number of undo too high can make the application crash "
+"if your device doesn't have enough memory."
+msgstr ""
+
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
@@ -24755,22 +24770,22 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr "Spalvų perėjimo įrankiai."
 
-#: activities/sketch/Sketch.qml:670
+#: activities/sketch/Sketch.qml:678
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Tu neišsaugojai paveiksliuko. Ar tikrai nori užbaigti šią pamokėlę?"
 
-#: activities/sketch/Sketch.qml:671
+#: activities/sketch/Sketch.qml:679
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "Ar nori ištrinti šį paveikslėlį?"
 
-#: activities/sketch/Sketch.qml:672
+#: activities/sketch/Sketch.qml:680
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Taip"
 
-#: activities/sketch/Sketch.qml:673
+#: activities/sketch/Sketch.qml:681
 msgctxt "Sketch|"
 msgid "No"
 msgstr "Ne"
@@ -30287,10 +30302,6 @@ msgstr "Pradėti"
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Numbers from 1 to 1000 for the last level."
 #~ msgstr "Pažinti skaičius nuo 1 iki 100 (o paskutiniame lygyje - iki 1000)."
-
-#~ msgctxt "guessnumber|"
-#~ msgid "Number found!"
-#~ msgstr "Atspėjote skaičių!"
 
 #~ msgctxt "Hangman|"
 #~ msgid "Select your locale"

@@ -24767,6 +24767,21 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
 msgstr "Tab: comută între selectorul de culoare și zona de pictat"
 
+#: activities/sketch/ActivityConfig.qml:29
+#, fuzzy, qt-format
+#| msgctxt "guessnumber|"
+#| msgid "Number found!"
+msgctxt "ActivityConfig|"
+msgid "Number of undo: %1"
+msgstr "Număr aflat!"
+
+#: activities/sketch/ActivityConfig.qml:44
+msgctxt "ActivityConfig|"
+msgid ""
+"Warning: setting the number of undo too high can make the application crash "
+"if your device doesn't have enough memory."
+msgstr ""
+
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
@@ -24945,22 +24960,22 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr "Instrumente pentru gradient"
 
-#: activities/sketch/Sketch.qml:670
+#: activities/sketch/Sketch.qml:678
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Nu ai salvat această imagine. Vrei să închizi această activitate?"
 
-#: activities/sketch/Sketch.qml:671
+#: activities/sketch/Sketch.qml:679
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "Vrei să ștergi această imagine?"
 
-#: activities/sketch/Sketch.qml:672
+#: activities/sketch/Sketch.qml:680
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Da"
 
-#: activities/sketch/Sketch.qml:673
+#: activities/sketch/Sketch.qml:681
 msgctxt "Sketch|"
 msgid "No"
 msgstr "Nu"
@@ -31067,10 +31082,6 @@ msgstr "Start"
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Numbers from 1 to 1000 for the last level."
 #~ msgstr "Cerințe pentru ultimul nivel: numerele de la 1 la 1000."
-
-#~ msgctxt "guessnumber|"
-#~ msgid "Number found!"
-#~ msgstr "Număr aflat!"
 
 #~ msgctxt "board1_0|"
 #~ msgid "Drag and Drop each item onto its name"

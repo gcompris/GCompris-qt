@@ -25052,6 +25052,21 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
 msgstr "Tab: prepnúť medzi výberom farby a oblasťou pre maľovanie"
 
+#: activities/sketch/ActivityConfig.qml:29
+#, fuzzy, qt-format
+#| msgctxt "guessnumber|"
+#| msgid "Number found!"
+msgctxt "ActivityConfig|"
+msgid "Number of undo: %1"
+msgstr "Číslo nájdené!"
+
+#: activities/sketch/ActivityConfig.qml:44
+msgctxt "ActivityConfig|"
+msgid ""
+"Warning: setting the number of undo too high can make the application crash "
+"if your device doesn't have enough memory."
+msgstr ""
+
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
@@ -25278,7 +25293,7 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr ""
 
-#: activities/sketch/Sketch.qml:670
+#: activities/sketch/Sketch.qml:678
 #, fuzzy
 #| msgctxt "Piano_composition|"
 #| msgid "You have not selected any note. Do you want to erase all the notes?"
@@ -25286,7 +25301,7 @@ msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Nevybrali ste žiadnu notu. Chcete vymazať všetky noty?"
 
-#: activities/sketch/Sketch.qml:671
+#: activities/sketch/Sketch.qml:679
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Do you want to download them now?"
@@ -25294,7 +25309,7 @@ msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "Chcete ich teraz stiahnuť?"
 
-#: activities/sketch/Sketch.qml:672
+#: activities/sketch/Sketch.qml:680
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -25302,7 +25317,7 @@ msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Áno"
 
-#: activities/sketch/Sketch.qml:673
+#: activities/sketch/Sketch.qml:681
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -30873,10 +30888,6 @@ msgstr "Spustiť"
 #~ msgctxt "Guesscount|"
 #~ msgid "Select your mode"
 #~ msgstr "Vyberte si svoj režim"
-
-#~ msgctxt "guessnumber|"
-#~ msgid "Number found!"
-#~ msgstr "Číslo nájdené!"
 
 #~ msgctxt "Hangman|"
 #~ msgid "Select your locale"

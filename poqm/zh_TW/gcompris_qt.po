@@ -24223,6 +24223,21 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
 msgstr "Tab 鍵：在顏色選擇器與繪圖區間切換"
 
+#: activities/sketch/ActivityConfig.qml:29
+#, fuzzy, qt-format
+#| msgctxt "guessnumber|"
+#| msgid "Number found!"
+msgctxt "ActivityConfig|"
+msgid "Number of undo: %1"
+msgstr "找到數字了！"
+
+#: activities/sketch/ActivityConfig.qml:44
+msgctxt "ActivityConfig|"
+msgid ""
+"Warning: setting the number of undo too high can make the application crash "
+"if your device doesn't have enough memory."
+msgstr ""
+
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
@@ -24449,7 +24464,7 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr ""
 
-#: activities/sketch/Sketch.qml:670
+#: activities/sketch/Sketch.qml:678
 #, fuzzy
 #| msgctxt "Piano_composition|"
 #| msgid "You have not selected any note. Do you want to erase all the notes?"
@@ -24457,7 +24472,7 @@ msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "您沒有選擇任何音符。您要刪除所有的音符嗎？"
 
-#: activities/sketch/Sketch.qml:671
+#: activities/sketch/Sketch.qml:679
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Do you want to download them now?"
@@ -24465,7 +24480,7 @@ msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "您要現在下載嗎？"
 
-#: activities/sketch/Sketch.qml:672
+#: activities/sketch/Sketch.qml:680
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -24473,7 +24488,7 @@ msgctxt "Sketch|"
 msgid "Yes"
 msgstr "是"
 
-#: activities/sketch/Sketch.qml:673
+#: activities/sketch/Sketch.qml:681
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -29650,10 +29665,6 @@ msgstr "開始"
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Numbers from 1 to 1000 for the last level."
 #~ msgstr "在最後的階段，數字是從 1 到 1000。"
-
-#~ msgctxt "guessnumber|"
-#~ msgid "Number found!"
-#~ msgstr "找到數字了！"
 
 #~ msgctxt "board1_0|"
 #~ msgid "Drag and Drop each item onto its name"

@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2025-11-29 13:25+0100\n"
+"PO-Revision-Date: 2025-12-01 15:37+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -24688,6 +24688,22 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
 msgstr "Tab: alterna tra il selettore del colore e l'area di disegno"
 
+# Anche "Numero indovinato!" o "Hai trovato il numero!"
+#: activities/sketch/ActivityConfig.qml:29
+#, fuzzy, qt-format
+#| msgctxt "guessnumber|"
+#| msgid "Number found!"
+msgctxt "ActivityConfig|"
+msgid "Number of undo: %1"
+msgstr "Numero indovinato!"
+
+#: activities/sketch/ActivityConfig.qml:44
+msgctxt "ActivityConfig|"
+msgid ""
+"Warning: setting the number of undo too high can make the application crash "
+"if your device doesn't have enough memory."
+msgstr ""
+
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
@@ -24866,22 +24882,22 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr "Strumenti di sfumatura"
 
-#: activities/sketch/Sketch.qml:670
+#: activities/sketch/Sketch.qml:678
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Non hai salvato questa immagine. Vuoi chiudere questa attività?"
 
-#: activities/sketch/Sketch.qml:671
+#: activities/sketch/Sketch.qml:679
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "Vuoi cancellare questa immagine?"
 
-#: activities/sketch/Sketch.qml:672
+#: activities/sketch/Sketch.qml:680
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Sì"
 
-#: activities/sketch/Sketch.qml:673
+#: activities/sketch/Sketch.qml:681
 msgctxt "Sketch|"
 msgid "No"
 msgstr "No"
@@ -27664,6 +27680,8 @@ msgid ""
 "New command-line option to show/hide the Home button (--hide-home-button/--"
 "show-home-button)"
 msgstr ""
+"Nuova opzione della riga di comando per mostrare/nascondere il pulsante Home "
+"(--hide-home-button/--show-home-button)"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:39 core/ChangeLog.qml:45
 #: core/ChangeLog.qml:54 core/ChangeLog.qml:60 core/ChangeLog.qml:65
@@ -28624,12 +28642,12 @@ msgstr "Specifica la localizzazione all'avvio di GCompris."
 #: core/main.cpp:147
 msgctxt "QObject|"
 msgid "Hide the Home button in the bar."
-msgstr ""
+msgstr "Nascondi il pulsante Home nella barra."
 
 #: core/main.cpp:151
 msgctxt "QObject|"
 msgid "Show the Home button in the bar (default)."
-msgstr ""
+msgstr "Mostra il pulsante Home nella barra (predefinito)."
 
 #: core/main.qml:238
 msgctxt "main|"
@@ -31743,11 +31761,6 @@ msgstr "Inizia"
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Numbers from 1 to 1000 for the last level."
 #~ msgstr "Numeri da 1 a 1000 per l'ultimo livello."
-
-# Anche "Numero indovinato!" o "Hai trovato il numero!"
-#~ msgctxt "guessnumber|"
-#~ msgid "Number found!"
-#~ msgstr "Numero indovinato!"
 
 #~ msgctxt "board1_0|"
 #~ msgid "Drag and Drop each item onto its name"

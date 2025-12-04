@@ -189,7 +189,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="difficulty1.svg" format="SVG"/></imageobject
+><imagedata fileref="difficulty1.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
 ></inlinemediaobject
 >1, 2 o 3 stelle gialle — per bambini da 2 a 6 anni.</para
 ></listitem
@@ -198,7 +198,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="difficulty4.svg" format="SVG"/></imageobject
+><imagedata fileref="difficulty4.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
 ></inlinemediaobject
 >1, 2 o 3 stelle rosse — per bambini con più di 6 anni.</para
 ></listitem
@@ -212,7 +212,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_home.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_home.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Casa - Abbandona l'attività attuale, ritorna al menu precedente.</para
 ></listitem
@@ -221,7 +221,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_ok.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > «OK» — Convalida, conferma la risposta. Alcune attività non rilevano automaticamente se il bambino ha completato o meno l'attività. In questo caso, è necessario fare clic su questa icona. È possibile utilizzare anche il tasto &Enter; sulla tua tastiera.</para
 ></listitem
@@ -230,7 +230,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_hint.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Lampadina — Visualizza un suggerimento per l'attività. Possiamo aiutare i bambini su alcune attività per guidarli a trovare le risposte.</para
 ></listitem>
@@ -238,11 +238,11 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_previous.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_previous.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject>
 <inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_next.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_next.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Frecce — Il livello attuale è visualizzato. Fare clic su una delle frecce per selezionare un altro livello. In genere, le attività offrono diversi livelli il cui numero dipende dall'attività. In &gcompris;, è possibile passare al livello successivo senza aver completato il livello attuale.</para
 ></listitem
@@ -251,7 +251,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_repeat.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_repeat.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Labbra — Per chiedere a &gcompris; di ripetere la domanda.</para
 ></listitem
@@ -260,7 +260,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_help.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_help.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Punto interrogativo — Visualizza la finestra della guida. In alcuni casi, un'attività può essere troppo complessa per essere descritta semplicemente nell'area descrittiva. In questo caso, questa funzione fornisce l'accesso a informazioni aggiuntive.</para
 ></listitem
@@ -269,7 +269,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Attrezzi — Menu di configurazione. La configurazione è salvata nel deposito utente (cartella) con il nome <filename
 >.config/gcompris/gcompris-qt.conf</filename
@@ -280,7 +280,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_activity_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Elemento dell'elenco — visualizza il menu delle impostazioni dell'attività. Ci sono due possibili schede qui. La prima, «Insieme di dati», permette di scegliere i livelli delle attività in funzione di più obiettivi e la seconda, «Opzioni», permette di aggiornare la configurazione dell'attività, se disponibile.</para
 ></listitem>
@@ -288,7 +288,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_about.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_about.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > «G» maiuscola — La finestra informativa di &gcompris;, presenta i collaboratori principali e la versione del software.</para
 ></listitem
@@ -297,7 +297,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_exit.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Accensione — Esci da &gcompris;. È possibile utilizzare anche la scorciatoia sulla propria tastiera <keycombo action="simul"
 >&Ctrl;<keycap
@@ -588,6 +588,18 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>--show-home-button</entry>
+<entry
+>Mostra il pulsante Home nella barra (predefinito).</entry>
+</row>
+<row>
+<entry
+>--hide-home-button</entry>
+<entry
+>Nascondi il pulsante Home nella barra.</entry>
+</row>
+<row>
+<entry
 >--renderer={renderer}</entry>
 <entry
 >Specificare quale renderer grafico usare. Su tutte le piattaforme, «opengl» e software sono disponibili. Su Windows, puoi usare «direct3d11» o «direct3d12» (se è stato compilato con Qt ≥ 6.6). Su &macOS;, puoi usare metal.</entry>
@@ -603,6 +615,12 @@ for example 'xx.yy.zz'
 >--opengl-renderer</entry>
 <entry
 >Utilizzare il motore di rendering OpenGL invece di quello software (più veloce e più effetti grafici, ma con possibilità di chiusure inattese in base alla propria scheda video). Obsoleto, utilizzare invece «--renderer=opengl».</entry>
+</row>
+<row>
+<entry
+>--locale=localizzazione</entry>
+<entry
+>Esegue &gcompris; con la localizzazione specificata.</entry>
 </row>
 </tbody>
 </tgroup>
