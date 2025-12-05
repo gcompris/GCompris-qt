@@ -229,7 +229,7 @@ function undo() {
         move = state.undo();
         redo_stack.push(move)
     }
-    items.redo_stack = redo_stack
+    items.redo_stack = [...redo_stack]
     refresh()
 }
 
@@ -254,8 +254,7 @@ function redo() {
     }
 
     // Force refresh
-    items.redo_stack = []
-    items.redo_stack = redo_stack
+    items.redo_stack = [...redo_stack]
     clearAcceptMove()
 }
 

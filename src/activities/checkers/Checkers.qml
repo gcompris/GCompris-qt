@@ -445,9 +445,8 @@ ActivityBase {
             ScriptAction {
                 script: {
                     listJumps.shift()
-                    // only shifting does not trigger the onChanged
-                    var tmp = listJumps
-                    listJumps = tmp
+                    // only shifting does not trigger the onChanged, we need a deep copy change to trigger it (since Qt6.10, a temp variable is not enough to trigger the callback)
+                    listJumps = [...listJumps]
                     // only change player once all the jumps have been done
                     if(listJumps.length === 1) {
 
