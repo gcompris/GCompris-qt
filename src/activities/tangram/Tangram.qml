@@ -72,6 +72,7 @@ ActivityBase {
             property Item main: activity.main
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
+            property alias checkWinTimer: checkWinTimer
             property alias bonus: bonus
             property alias modelListModel: modelList.model
             property alias userList: userList
@@ -325,7 +326,7 @@ ActivityBase {
         }
 
         function checkWin() {
-            checkWinTimer.start()
+            checkWinTimer.restart()
         }
 
         GCText {
@@ -364,7 +365,6 @@ ActivityBase {
             Component.onCompleted: win.connect(nextLevel)
 
             function nextLevel() {
-                checkWinTimer.alreadyStarted = false
                 Activity.nextLevel()
             }
         }

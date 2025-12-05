@@ -24,6 +24,8 @@ function stop() {
 }
 
 function initLevel() {
+    items.checkWinTimer.stop();
+    items.checkWinTimer.alreadyStarted = false;
 }
 
 function nextLevel() {
