@@ -14,7 +14,6 @@
 #include <QQmlProperty>
 #include <QQmlComponent>
 #include <QResource>
-#include <QStandardPaths>
 #include <QCoreApplication>
 #include <QTextStream>
 #include <QLatin1StringView>
