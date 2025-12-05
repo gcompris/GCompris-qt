@@ -59,7 +59,7 @@ Image {
     Item {
         id: controlsArea
         width: parent.width * 0.8
-        height: parent.height * 0.4
+        height: parent.height * 0.5
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: parent.left
     }
@@ -131,6 +131,7 @@ Image {
         id: minusButton
         rotation: parent.rotation
         source: Activity.url + "minus.svg"
+        buttonsBlocked: chooser.buttonsBlocked
         anchors {
             verticalCenter: controlsArea.verticalCenter
             left: controlsArea.left

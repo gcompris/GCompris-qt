@@ -13,8 +13,8 @@ import "../../core"
 
 Item {
     id: button
-    width: parent.width * 0.15
-    height: width
+    width: parent.width * 0.2
+    height: parent.height
 
     property alias source: buttonImage.source
     property bool buttonsBlocked
@@ -29,15 +29,15 @@ Item {
         color: GCStyle.paperWhite
         border.color: GCStyle.darkBorder
         border.width: GCStyle.thinBorder
-    }
 
-    Image {
-        id: buttonImage
-        anchors.centerIn: parent
-        width: parent.width * 0.5
-        height: width
-        sourceSize.width: width
-        sourceSize.height: height
+        Image {
+            id: buttonImage
+            anchors.centerIn: parent
+            width: parent.width * 0.5
+            height: width
+            sourceSize.width: width
+            sourceSize.height: height
+        }
     }
 
     MouseArea {
@@ -53,7 +53,7 @@ Item {
         State {
             name: "notclicked"
             PropertyChanges {
-                button {
+                buttonBg {
                     scale: 1.0
                 }
             }
@@ -62,7 +62,7 @@ Item {
             name: "clicked"
             when: mouseArea.pressed
             PropertyChanges {
-                button {
+                buttonBg {
                     scale: 0.9
                 }
             }
@@ -71,7 +71,7 @@ Item {
             name: "hover"
             when: mouseArea.containsMouse
             PropertyChanges {
-                button {
+                buttonBg {
                     scale: 1.1
                 }
             }
