@@ -93,19 +93,18 @@ Image {
     MouseArea {
         id: mouseArea
         anchors.fill: parent
+        enabled: carriageItem.clickEnabled
         hoverEnabled: ApplicationInfo.isMobile ? false : true
 
         onClicked: {
-            if(carriageItem.clickEnabled) {
-                items.lastSelectedIndex = train.currentIndex
-                items.keyNavigationMode = false;
-                items.buttonsBlocked = true;
-                if (Activity.checkAnswer(index)) {
-                    successAnimation.restart();
-                    particle.burst(30);
-                } else {
-                    activityBackground.moveErrorRectangle(carriageItem);
-                }
+            items.lastSelectedIndex = train.currentIndex
+            items.keyNavigationMode = false;
+            items.buttonsBlocked = true;
+            if (Activity.checkAnswer(index)) {
+                successAnimation.restart();
+                particle.burst(30);
+            } else {
+                activityBackground.moveErrorRectangle(carriageItem);
             }
         }
     }
