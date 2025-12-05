@@ -50,7 +50,6 @@ ActivityBase {
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias board: board
-            property alias grid: answerGrid
             property alias answerRepeater: answerRepeater
             property alias modelRepeater: modelRepeater
             property alias gridRepeater: gridRepeater
@@ -60,13 +59,11 @@ ActivityBase {
             property int selected: -1
             property int columns
             property int rows
-            property bool ok: true
             property int sensitivity: 80
-            property bool pieceIsMoving: false
             readonly property var levels: activity.datasets
             property double gridBaseWidth: board.width / items.columns
             property double gridBaseHeight: board.height / items.rows
-            property bool buttonsBlocked: false
+            property bool buttonsBlocked: true
         }
 
         onStart: { Activity.start(items) }
@@ -193,8 +190,14 @@ ActivityBase {
             z: 4
             anchors.centerIn: board
 
+            onPositioningComplete: {
+                selector.resetSelector();
+            }
+
             Repeater {
                 id: answerRepeater
+                // used to be able to stop its anim
+                property Image movingFigure: null
 
                 Image {
                     id: figure
@@ -214,7 +217,6 @@ ActivityBase {
 
                     SequentialAnimation {
                         id: anim
-                        PropertyAction { target: items; property: "ok"; value: "false"}
                         NumberAnimation { target: figure; property: figure.animationProperty; from: figure.startPoint; to: figure.startPoint + figure.distance; duration: 200 }
                         PropertyAction { target: figure; property: "opacity"; value: 0 }
                         NumberAnimation { target: figure; property: figure.animationProperty; from: figure.startPoint + figure.distance; to: figure.startPoint; duration: 0; }
@@ -223,8 +225,6 @@ ActivityBase {
                         PropertyAction { target: answerRepeater.itemAt(items.selected); property: "initialIndex"; value: figure.initialIndex }
                         PropertyAction { target: figure; property: "initialIndex"; value: -1 }
                         PropertyAction { target: figure; property: "source"; value: "" }
-                        PropertyAction { target: items; property: "ok"; value: "true"}
-                        PropertyAction { target: items; property: "pieceIsMoving"; value: "false"}
                         ScriptAction { script: Activity.checkAnswer() }
                     }
 
@@ -247,8 +247,7 @@ ActivityBase {
 
                         // Select a figure with mouse/touch
                         onClicked: {
-                            if (activityBackground.source != "" && !items.pieceIsMoving)
-                                items.selected = figure.index
+                            items.selected = figure.index
                         }
                     }
                 }
@@ -263,48 +262,20 @@ ActivityBase {
             width: items.gridBaseWidth
             height: items.gridBaseHeight
             opacity: 1
-            state: "uninitialized"
-
-            x: 0
-            y: 0
+            x: answerRepeater.itemAt(items.selected) ? answerRepeater.itemAt(items.selected).x + board.x : board.x
+            y: answerRepeater.itemAt(items.selected) ? answerRepeater.itemAt(items.selected).y + board.y : board.y
             z: 100
+
+            // used on sublevel init to avoid being stuck inbetween if level changed during animation
+            function resetSelector() {
+                if(answerRepeater.itemAt(items.selected)) {
+                    x = answerRepeater.itemAt(items.selected).x + board.x
+                    y = answerRepeater.itemAt(items.selected).y + board.y
+                }
+            }
 
             Behavior on x { NumberAnimation { duration: 200 } }
             Behavior on y { NumberAnimation { duration: 200 } }
-
-            states: [
-                State {
-                    name: "uninitialized"
-                    PropertyChanges {
-                        selector {
-                            x: 0
-                            y: 0
-                        }
-                    }
-                    PropertyChanges {
-                        cable {
-                            height: 0
-                            x: 0
-                        }
-                    }
-                },
-                State {
-                    name: "initialized"
-                    PropertyChanges {
-                        selector {
-                            x: answerRepeater.itemAt(items.selected) ? answerRepeater.itemAt(items.selected).x + board.x : 0
-                            y: answerRepeater.itemAt(items.selected) ? answerRepeater.itemAt(items.selected).y + board.y : 0
-                        }
-                    }
-                    PropertyChanges {
-                        cable {
-                            height: answerRepeater.itemAt(items.selected) ? answerRepeater.itemAt(items.selected).y + board.y - crane_top.y : 0
-                            x: answerRepeater.itemAt(items.selected) ? answerRepeater.itemAt(items.selected).x + board.x + items.gridBaseWidth / 2 : 0
-                        }
-                    }
-                }
-            ]
-
         }
 
         Rectangle {
@@ -429,6 +400,7 @@ ActivityBase {
                 id: up
                 source: activity.resourceUrl+"arrow_up.svg"
                 height: crane_command.paintedHeight * 0.75
+                buttonsBlocked: items.buttonsBlocked
                 anchors {
                     right: parent.horizontalCenter
                     rightMargin: width * 1.15
@@ -440,6 +412,7 @@ ActivityBase {
                 id: down
                 source: activity.resourceUrl+"arrow_down.svg"
                 height: crane_command.paintedHeight * 0.75
+                buttonsBlocked: items.buttonsBlocked
                 anchors {
                     right: parent.horizontalCenter
                     rightMargin: width * 0.1
@@ -451,6 +424,7 @@ ActivityBase {
                 id: left
                 source: activity.resourceUrl+"arrow_left.svg"
                 height: crane_command.paintedHeight * 0.75
+                buttonsBlocked: items.buttonsBlocked
                 anchors {
                     left: parent.horizontalCenter
                     leftMargin: width * 0.1
@@ -462,6 +436,7 @@ ActivityBase {
                 id: right
                 source: activity.resourceUrl+"arrow_right.svg"
                 height: crane_command.paintedHeight * 0.75
+                buttonsBlocked: items.buttonsBlocked
                 anchors {
                     left: parent.horizontalCenter
                     leftMargin: width * 1.15
@@ -479,6 +454,9 @@ ActivityBase {
             z: 3
             anchors.top: crane_top.top
             anchors.topMargin: GCStyle.halfMargins
+            anchors.bottom: selector.top
+            anchors.bottomMargin: -GCStyle.thickBorder
+            anchors.horizontalCenter: selector.horizontalCenter
 
             Behavior on x { NumberAnimation { duration: 200 } }
             Behavior on height { NumberAnimation { duration: 200 } }

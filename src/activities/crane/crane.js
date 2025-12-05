@@ -61,6 +61,9 @@ function start(items_) {
 }
 
 function stop() {
+    if(items.answerRepeater.movingFigure) {
+        items.answerRepeater.movingFigure.anim.stop();
+    }
 }
 
 function initLevel() {
@@ -100,7 +103,6 @@ function initSubLevel() {
     for(i = 0; i < items.answerRepeater.count; i++) {
         if (items.answerRepeater.itemAt(i).source != "") {
             items.selected = i
-            items.selector.state = "initialized"
             break
         }
     }
@@ -281,22 +283,23 @@ function gesture(deltax, deltay) {
 
 //depending on the command, make a move to left/right/up/down or select next item
 function move(command) {
-    if (items.ok && !items.pieceIsMoving) {
-        var item = items.answerRepeater.itemAt(items.selected)
-        if (command === "left") {
-            if (items.selected % items.columns != 0)
-                makeMove(item, -item.width, item.x, -1, "x")
-        } else if (command === "right") {
-            if ((items.selected+1) % items.columns != 0)
-                makeMove(item, item.width, item.x, 1, "x")
-        } else if (command === "up") {
-            if (items.selected > items.columns-1)
-                makeMove(item, -item.height, item.y, -items.columns, "y")
-        } else if (command === "down") {
-            if (items.selected < (items.answerRepeater.count-items.columns))
-                makeMove(item, item.height, item.y, items.columns, "y")
+    if (!items.buttonsBlocked) {
+        items.buttonsBlocked = true;
+        items.answerRepeater.movingFigure = items.answerRepeater.itemAt(items.selected);
+        var item = items.answerRepeater.movingFigure;
+        if(command === "left" && (items.selected % items.columns != 0)) {
+                makeMove(item, -item.width, item.x, -1, "x");
+        } else if (command === "right" && ((items.selected+1) % items.columns != 0)) {
+                makeMove(item, item.width, item.x, 1, "x");
+        } else if (command === "up" && (items.selected > items.columns-1)) {
+                makeMove(item, -item.height, item.y, -items.columns, "y");
+        } else if (command === "down" && (items.selected < (items.answerRepeater.count-items.columns))) {
+                makeMove(item, item.height, item.y, items.columns, "y");
         } else if (command === "next") {
-            items.selected = getNextIndex()
+            items.selected = getNextIndex();
+            items.buttonsBlocked = false;
+        } else {
+            items.buttonsBlocked = false;
         }
     }
 }
@@ -304,17 +307,18 @@ function move(command) {
 //set the environment for making a move and start the animation
 function makeMove(item, distance, startPoint, add, animationProperty) {
     if (items.answerRepeater.itemAt(items.selected+add).source == "") {
-        items.pieceIsMoving = true
         //setup the animation
-        item.distance = distance
-        item.startPoint = startPoint
-        item.animationProperty = animationProperty
+        item.distance = distance;
+        item.startPoint = startPoint;
+        item.animationProperty = animationProperty;
 
         //update the selected item
         items.selected += add;
 
         //start the animation
-        item.anim.start()
+        item.anim.start();
+    } else {
+        items.buttonsBlocked = false;
     }
 }
 
@@ -324,22 +328,30 @@ function checkAnswer() {
     for (var i = 0; i < items.answerRepeater.count && hasWon; i++) {
         if (items.answerRepeater.itemAt(i).source != items.modelRepeater.itemAt(i).source) {
             hasWon = false
+            items.buttonsBlocked = false;
             return;
         }
     }
-    items.buttonsBlocked = true;
     items.score.currentSubLevel++;
     items.score.playWinAnimation();
     items.winSound.play();
 }
 
 function nextLevel() {
+    items.buttonsBlocked = true;
+    if(items.answerRepeater.movingFigure) {
+        items.answerRepeater.movingFigure.anim.stop();
+    }
     items.score.stopWinAnimation();
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
+    items.buttonsBlocked = true;
+    if(items.answerRepeater.movingFigure) {
+        items.answerRepeater.movingFigure.anim.stop();
+    }
     items.score.stopWinAnimation();
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();

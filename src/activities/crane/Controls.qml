@@ -15,6 +15,7 @@ import "crane.js" as Activity
 Image {
     id: controls
     property string command
+    property bool buttonsBlocked
     sourceSize.width: height
     fillMode: Image.PreserveAspectFit
     anchors {
@@ -22,6 +23,7 @@ Image {
     }
     MouseArea {
         anchors.fill: parent
+        enabled: !controls.buttonsBlocked
         onPressed: parent.opacity = 0.6
         onReleased: parent.opacity = 1
         onClicked: {
