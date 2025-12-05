@@ -34,6 +34,7 @@ Image {
 
         GCTextPanel {
             id: tutorialInstructionPanel
+            visible: !tutorialBase.isResultTyping
             panelWidth: parent.width - 2 * GCStyle.baseMargins
             panelHeight: Math.min(50 * ApplicationInfo.ratio, parent.height * 0.1)
             fixedHeight: true
@@ -42,6 +43,32 @@ Image {
             anchors.top: parent.top
             anchors.topMargin: GCStyle.halfMargins
             textItem.text: tutorialBase.instructionText
+        }
+
+        Rectangle {
+            id: answerBackgroundTuto
+            visible: tutorialBase.isResultTyping
+            width: topRectangleTutorial.width
+            height: tutorialInstructionPanel.panelHeight
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: parent.top
+            anchors.topMargin: GCStyle.halfMargins
+            color: GCStyle.lightBg
+            border.color: GCStyle.darkBorder
+            border.width: GCStyle.thinnestBorder
+            radius: GCStyle.halfMargins
+
+            GCText {
+                id: answerTextTuto
+                anchors.fill: parent
+                anchors.margins: GCStyle.tinyMargins
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                color: GCStyle.darkText
+                fontSize: smallSize
+                fontSizeMode: Text.Fit
+                text: tutorialBase.answerText
+            }
         }
 
         Item {
@@ -292,32 +319,6 @@ Image {
                 sourceSize.height: height
                 fillMode: Image.PreserveAspectFit
                 visible: topRectangleTutorial.visible && !activity.isSubtractionMode
-            }
-        }
-
-        Rectangle {
-            id: answerBackgroundTuto
-            visible: tutorialBase.isResultTyping
-            width: parent.width * 0.5
-            height: parent.height * 0.15
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: topRectangleTutorial.bottom
-            anchors.topMargin: GCStyle.halfMargins
-            color: GCStyle.lightBg
-            border.color: GCStyle.darkBorder
-            border.width: GCStyle.thinnestBorder
-            radius: GCStyle.halfMargins
-
-            GCText {
-                id: answerTextTuto
-                anchors.fill: parent
-                anchors.margins: GCStyle.tinyMargins
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                color: GCStyle.darkText
-                fontSize: smallSize
-                fontSizeMode: Text.Fit
-                text: tutorialBase.answerText
             }
         }
 

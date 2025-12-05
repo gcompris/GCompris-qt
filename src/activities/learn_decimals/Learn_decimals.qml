@@ -148,6 +148,7 @@ ActivityBase {
 
         GCTextPanel {
             id: instructionPanel
+            visible: !items.typeResult
             panelWidth: parent.width - 2 * (GCStyle.baseMargins + numpad.columnWidth)
             panelHeight: Math.min(50 * ApplicationInfo.ratio, activityBackground.height * 0.1)
             fixedHeight: true
@@ -165,6 +166,37 @@ ActivityBase {
             property string additionQuestion: qsTr("Display the result of: %1 + %2")
             property string subtractionQuestion: qsTr("Display the result of: %1 - %2")
             property string quantityQuestion: qsTr("Represent the quantity: %1")
+        }
+
+        Rectangle {
+            id: answerBackground
+            visible: items.typeResult
+            height: instructionPanel.panelHeight
+            width: instructionPanel.panelWidth
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: parent.top
+            anchors.topMargin: GCStyle.baseMargins
+            color: GCStyle.lightBg
+            border.color: GCStyle.darkBorder
+            border.width: GCStyle.thinnestBorder
+            radius: GCStyle.halfMargins
+
+            property string userEntry
+            property string resultText: qsTr("Enter the result: %1")
+
+            GCText {
+                id: userEntryText
+                anchors.centerIn: parent
+                width: parent.width - GCStyle.baseMargins
+                height: parent.height - 2 * GCStyle.baseMargins
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                fontSize: smallSize
+                fontSizeMode: Text.Fit
+                wrapMode: Text.WordWrap
+                color: GCStyle.darkText
+                text: answerBackground.resultText.arg(answerBackground.userEntry)
+            }
         }
 
         ListModel {
@@ -607,37 +639,6 @@ ActivityBase {
             }
         }
 
-        Rectangle {
-            id: answerBackground
-            visible: items.typeResult
-            height: okButton.height
-            anchors.left: topRectangle.left
-            anchors.right: okButton.left
-            anchors.rightMargin: GCStyle.baseMargins
-            anchors.verticalCenter: okButton.verticalCenter
-            color: GCStyle.lightBg
-            border.color: GCStyle.darkBorder
-            border.width: GCStyle.thinnestBorder
-            radius: GCStyle.halfMargins
-
-            property string userEntry
-            property string resultText: qsTr("Enter the result: %1")
-
-            GCText {
-                id: userEntryText
-                anchors.centerIn: parent
-                width: parent.width - GCStyle.baseMargins
-                height: parent.height - 2 * GCStyle.baseMargins
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                fontSize: smallSize
-                fontSizeMode: Text.Fit
-                wrapMode: Text.WordWrap
-                color: GCStyle.darkText
-                text: answerBackground.resultText.arg(answerBackground.userEntry)
-            }
-        }
-
         NumPad {
             id: numpad
             displayDecimalButton: true
@@ -741,7 +742,7 @@ ActivityBase {
             z: 20
             source: "qrc:/gcompris/src/activities/learn_decimals/resource/redArrow.svg"
             opacity: errorRectangle.opacity
-            visible: !isSubtractionMode && droppedItems.count === 0
+            visible: !isSubtractionMode && droppedItems.count === 0 && !items.typeResult
             width: GCStyle.bigButtonHeight
             height: width
             sourceSize.width: width
@@ -845,7 +846,7 @@ ActivityBase {
             anchors.bottom: undefined
             anchors.right: undefined
             anchors.left: parent.left
-            anchors.leftMargin: GCStyle.baseMargins
+            anchors.leftMargin: GCStyle.baseMargins + numpad.columnWidth
             anchors.verticalCenter: okButton.verticalCenter
             onStop: Activity.nextSubLevel()
         }
