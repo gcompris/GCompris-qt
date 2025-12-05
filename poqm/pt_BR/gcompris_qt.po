@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-12-01 08:24-0300\n"
+"PO-Revision-Date: 2025-12-04 07:12-0300\n"
 "Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -24671,12 +24671,10 @@ msgid "Tab: switch between the color selector and the painting area"
 msgstr "Tab: alternar entre a seleção de cores e a área de pintura"
 
 #: activities/sketch/ActivityConfig.qml:29
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 19."
+#, qt-format
 msgctxt "ActivityConfig|"
 msgid "Number of undo: %1"
-msgstr "Números de 1 a 19."
+msgstr "Números de desfazer: %1"
 
 #: activities/sketch/ActivityConfig.qml:44
 msgctxt "ActivityConfig|"
@@ -24684,6 +24682,8 @@ msgid ""
 "Warning: setting the number of undo too high can make the application crash "
 "if your device doesn't have enough memory."
 msgstr ""
+"Aviso: definir um número muito alto de ações de desfazer pode causar o "
+"travamento do aplicativo se o seu dispositivo não tiver memória suficiente."
 
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18

@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2025-12-01 11:25+0100\n"
+"PO-Revision-Date: 2025-12-04 10:52+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -24979,12 +24979,10 @@ msgstr ""
 "Tabulador: per a canviar entre el selector de color i l'àrea de pintura"
 
 #: activities/sketch/ActivityConfig.qml:29
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 19."
+#, qt-format
 msgctxt "ActivityConfig|"
 msgid "Number of undo: %1"
-msgstr "Nombres des de l'1 fins al 19."
+msgstr "Nombres desfer: %1"
 
 #: activities/sketch/ActivityConfig.qml:44
 msgctxt "ActivityConfig|"
@@ -24992,6 +24990,8 @@ msgid ""
 "Warning: setting the number of undo too high can make the application crash "
 "if your device doesn't have enough memory."
 msgstr ""
+"Avís: establir el nombre de desfer massa alt pot fer que l'aplicació falli "
+"si el dispositiu no té prou memòria."
 
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18

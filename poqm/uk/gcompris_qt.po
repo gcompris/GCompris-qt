@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2025-12-01 14:57+0200\n"
+"PO-Revision-Date: 2025-12-04 17:02+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -24551,12 +24551,10 @@ msgid "Tab: switch between the color selector and the painting area"
 msgstr "Tab: перемикання між засобом вибору кольору та областю малювання"
 
 #: activities/sketch/ActivityConfig.qml:29
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 19."
+#, qt-format
 msgctxt "ActivityConfig|"
 msgid "Number of undo: %1"
-msgstr "Числа від 1 до 19."
+msgstr "Кількість скасувань: %1"
 
 #: activities/sketch/ActivityConfig.qml:44
 msgctxt "ActivityConfig|"
@@ -24564,6 +24562,9 @@ msgid ""
 "Warning: setting the number of undo too high can make the application crash "
 "if your device doesn't have enough memory."
 msgstr ""
+"Попередження: встановлення надто великого значення для кількості скасувань "
+"може призвести до аварійного завершення роботи програми, якщо на вашому "
+"пристрої недостатньо оперативної пам'яті."
 
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18

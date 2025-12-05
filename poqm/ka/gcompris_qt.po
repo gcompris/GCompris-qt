@@ -22876,12 +22876,10 @@ msgid "Tab: switch between the color selector and the painting area"
 msgstr "Tab: გადართვა ფერების ამრჩევისა და ხატვის ადგილს შორის"
 
 #: activities/sketch/ActivityConfig.qml:29
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 19."
+#, qt-format
 msgctxt "ActivityConfig|"
 msgid "Number of undo: %1"
-msgstr "რიცხვები 1-დან 19-მდე."
+msgstr "გაუქმების რაოდენობა: %1"
 
 #: activities/sketch/ActivityConfig.qml:44
 msgctxt "ActivityConfig|"
@@ -23379,6 +23377,9 @@ msgid ""
 "Each question contains 4 options. One of those is 100% correct. Try to "
 "answer the questions until you get 100% in the closeness meter."
 msgstr ""
+"დააწკაპუნეთ პლანეტაზე ან მზეზე და უპასუხეთ შესაბამის კითხვებს. თითოეული "
+"კითხვა 4 არჩევანს შეიცავს. ერთ-ერთი 100%-ით სწორია. სცადეთ, უპასუხოთ "
+"კითხვებს, სანამ სისწორის 100%-ს არ მიუახლოვდებით."
 
 #: activities/solar_system/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
