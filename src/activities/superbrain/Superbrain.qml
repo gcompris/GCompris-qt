@@ -63,13 +63,12 @@ ActivityBase {
             property string mode: "color"
             property alias goodAnswerSound: goodAnswerSound
             property bool buttonsBlocked: false
+            property alias tooltipTimer: tooltipTimer
+            property alias chooserTimer: chooserTimer
         }
 
         onStart: { Activity.start(items) }
-        onStop: {
-            chooserTimer.stop()
-            Activity.stop()
-        }
+        onStop: { Activity.stop() }
 
         GCSoundEffect {
             id: goodAnswerSound
@@ -134,13 +133,33 @@ ActivityBase {
             }
         }
 
-        function showTooltip(visible, status, mouseArea)
-        {
+
+        Timer {
+            id: tooltipTimer
+            repeat: false
+            interval: 500
+            signal stopTimer
+            property MouseArea mouseAreaRect: null
+
+            onTriggered: {
+                if(mouseAreaRect) {
+                    showTooltip(true, mouseAreaRect.guessStatus, mouseAreaRect);
+                }
+            }
+
+            function resetTimer() {
+                mouseAreaRect = null;
+                tooltipTimer.stop();
+                showTooltip(false);
+            }
+        }
+
+        function showTooltip(visible, status, mouseArea) {
             if (!visible || status === Activity.STATUS_UNKNOWN) {
                 tooltipRect.opacity = 0;
                 return;
             }
-            showChooser(false);
+            chooserTimer.resetTimer();
 
             var obj = activityBackground.mapFromItem(mouseArea, mouseArea.mouseX, mouseArea.mouseY);
 
@@ -153,11 +172,20 @@ ActivityBase {
             tooltipRect.opacity = 1;
         }
 
-        function showChooser(visible, guessIndex, item)
-        {
+        Timer {
+            id: chooserTimer
+            interval: 5000
+            onTriggered: showChooser(false);
+
+            function resetTimer() {
+                chooserTimer.stop();
+                showChooser(false);
+            }
+        }
+
+        function showChooser(visible, guessIndex, item) {
             if (!visible) {
                 chooser.visible = false;
-                chooserTimer.stop();
                 return;
             }
             var modelObj = guessModel.get(0).guess.get(guessIndex);
@@ -230,7 +258,7 @@ ActivityBase {
                             id: mouseArea
                             anchors.fill: parent
                             acceptedButtons: Qt.LeftButton | Qt.RightButton
-                            enabled: !bonus.isPlaying
+                            enabled: !items.buttonsBlocked
                             hoverEnabled: ApplicationInfo.isMobile ? false : true
 
                             onPressAndHold: {
@@ -277,7 +305,8 @@ ActivityBase {
                     width: currentRow.height
                     visible: true
                     onClicked: {
-                        showChooser(false);
+                        tooltipTimer.resetTimer();
+                        chooserTimer.resetTimer();
                         Activity.checkGuess();
                     }
                 }
@@ -319,12 +348,6 @@ ActivityBase {
                 property int colIndex: 0 // index of selected color
                 property int guessIndex: 0 // index of target item in the row
 
-                Timer {
-                    id: chooserTimer
-                    interval: 5000
-                    onTriggered: showChooser(false);
-                }
-
                 model: new Array()
 
                 delegate: Item {
@@ -346,14 +369,14 @@ ActivityBase {
                         id: chooserMouseArea
                         anchors.fill: parent
                         acceptedButtons: Qt.LeftButton
-                        enabled: chooser.visible && !bonus.isPlaying
+                        enabled: chooser.visible && !items.buttonsBlocked
                         hoverEnabled: ApplicationInfo.isMobile ? false : true
 
                         onClicked: {
                             chooserGrid.colIndex = chooserItem.searchItemIndex;
                             var obj = items.guessModel.get(0);
                             obj.guess.setProperty(chooserGrid.guessIndex, "colIndex", chooserGrid.colIndex);
-                            showChooser(false);
+                            chooserTimer.resetTimer();
                         }
                     }
                 }
@@ -425,22 +448,18 @@ ActivityBase {
                                 id: mouseAreaRect
                                 anchors.fill: parent
                                 acceptedButtons: Qt.LeftButton
-                                enabled: guessRow.rowIndex > 0 && !bonus.isPlaying
+                                enabled: guessRow.rowIndex > 0 && !items.buttonsBlocked
                                 hoverEnabled: ApplicationInfo.isMobile ? false : true
 
-                                Timer {
-                                    id: tooltipTimer
-                                    repeat: false
-                                    interval: 500
-                                    signal stopTimer
-                                    onTriggered: showTooltip(true, status, mouseAreaRect)
+                                property int guessStatus: status
+
+                                onEntered: {
+                                    tooltipTimer.mouseAreaRect = mouseAreaRect;
+                                    tooltipTimer.restart();
                                 }
 
-                                onEntered: tooltipTimer.restart()
-
                                 onExited: {
-                                    tooltipTimer.stop()
-                                    showTooltip(false)
+                                    tooltipTimer.resetTimer();
                                 }
 
                                 onClicked: showTooltip(true, status, mouseAreaRect);

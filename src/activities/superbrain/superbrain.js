@@ -68,9 +68,13 @@ function start(items_) {
 }
 
 function stop() {
+    items.tooltipTimer.resetTimer();
+    items.chooserTimer.resetTimer();
 }
 
 function initLevel() {
+    items.tooltipTimer.resetTimer();
+    items.chooserTimer.resetTimer();
     // init sublevel
     ackColors = new Array(levels[items.currentLevel].numberOfPieces);
     items.score.numberOfSubLevels = maxSubLevel;
@@ -201,6 +205,8 @@ function previousLevel() {
 }
 
 function nextSubLevel() {
+    items.tooltipTimer.resetTimer();
+    items.chooserTimer.resetTimer();
     if(items.score.currentSubLevel >= maxSubLevel) {
         items.bonus.good("smiley");
     }
