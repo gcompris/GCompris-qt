@@ -259,6 +259,8 @@ function generateSecondNumber() {
         }
     }
 
+    generatedNumber = generateDecimalNumbers(minimumValue, maximumValue);
+
     return generatedNumber;
 }
 
