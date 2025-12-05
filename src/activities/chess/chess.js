@@ -147,7 +147,7 @@ function updateMessage(move) {
 
 function refresh(move) {
     items.blackTurn = state.to_play // 0=w 1=b
-    items.history = state.history
+    items.history = [...state.history]
     updateMessage(move)
 }
 
@@ -236,7 +236,7 @@ function undo() {
     }
     // without it, you can't move again the same piece
     Engine.p4_prepare(state)
-    items.redo_stack = redo_stack
+    items.redo_stack = [...redo_stack]
     refresh()
     items.positions = [] // Force a model reload
     items.positions = simplifiedState(state['board'])
@@ -262,8 +262,7 @@ function redo() {
     }
 
     // Force refresh
-    items.redo_stack = []
-    items.redo_stack = redo_stack
+    items.redo_stack = [...redo_stack]
 }
 
 // Random move depending on the level
