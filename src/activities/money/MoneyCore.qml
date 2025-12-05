@@ -98,13 +98,12 @@ ActivityBase {
                 (columnLayout.height - 3 * columnLayout.spacing) / 3.5 :
                 (columnLayout.height - 2 * columnLayout.spacing) / 3
             property int storeItemSize: Math.floor(
-                Core.fitItems(storeArea.width - GCStyle.halfMargins,
-                storeHeight - GCStyle.halfMargins, nbStoreColumns) - GCStyle.halfMargins)
+                Core.fitItems(storeAreaFlow.width, storeAreaFlow.height, nbStoreColumns)
+                - GCStyle.halfMargins)
 
             property int itemSize: Math.floor(
-                Math.min(Core.fitItems(columnLayout.width - GCStyle.halfMargins,
-                    storeHeight - GCStyle.halfMargins, items.moneyCount) - GCStyle.halfMargins,
-                    (storeHeight - GCStyle.halfMargins) * 0.5 - GCStyle.halfMargins))
+                Core.fitItems(columnLayout.width - GCStyle.halfMargins, storeHeight - GCStyle.halfMargins, items.moneyCount)
+                - GCStyle.halfMargins)
 
             // === The Answer Area ===
             MoneyArea {
@@ -138,7 +137,8 @@ ActivityBase {
                 Flow {
                     id: storeAreaFlow
                     anchors.fill: parent
-                    anchors.margins: GCStyle.halfMargins
+                    anchors.topMargin: GCStyle.halfMargins
+                    anchors.leftMargin: GCStyle.halfMargins
                     spacing: GCStyle.halfMargins
 
                     add: Transition {

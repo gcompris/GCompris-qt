@@ -25,7 +25,8 @@ Rectangle {
 
     Flow {
         anchors.fill: parent
-        anchors.margins: GCStyle.halfMargins
+        anchors.topMargin: GCStyle.halfMargins
+        anchors.leftMargin: GCStyle.halfMargins
         spacing: GCStyle.halfMargins
 
         add: Transition {
