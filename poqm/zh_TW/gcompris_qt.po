@@ -26310,12 +26310,12 @@ msgstr ""
 "示為「正確」。標記過的項目會在目前或之後猜測時自動選取，除非您再次雙擊或點擊"
 "以解除此標記。"
 
-#: activities/superbrain/Superbrain.qml:148
+#: activities/superbrain/Superbrain.qml:167
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "這個項目擺對了。"
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:169
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "這個項目擺錯了。"

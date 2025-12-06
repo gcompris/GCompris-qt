@@ -26570,12 +26570,12 @@ msgstr ""
 "елементи автоматично вибиратимуться у вашій поточній і наступній спробах, аж "
 "доки ви не скасуєте їхнє позначення повторним подвійним клацанням."
 
-#: activities/superbrain/Superbrain.qml:148
+#: activities/superbrain/Superbrain.qml:167
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Цей предмет там, де треба."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:169
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Цей предмет не на місці."

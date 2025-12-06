@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"PO-Revision-Date: 2025-12-02 01:35+0100\n"
+"PO-Revision-Date: 2025-12-04 11:22+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -24645,12 +24645,10 @@ msgid "Tab: switch between the color selector and the painting area"
 msgstr "Tabulador: cambiar entre el selector de color y el área de dibujo"
 
 #: activities/sketch/ActivityConfig.qml:29
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 19."
+#, qt-format
 msgctxt "ActivityConfig|"
 msgid "Number of undo: %1"
-msgstr "Números del 1 al 19."
+msgstr "Número de acciones para deshacer: %1"
 
 #: activities/sketch/ActivityConfig.qml:44
 msgctxt "ActivityConfig|"
@@ -24658,6 +24656,8 @@ msgid ""
 "Warning: setting the number of undo too high can make the application crash "
 "if your device doesn't have enough memory."
 msgstr ""
+"Advertencia: si el número de acciones que se pueden deshacer es muy grande, "
+"la aplicación puede fallar si no hay suficiente memoria."
 
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18
@@ -26660,12 +26660,12 @@ msgstr ""
 "seleccionan automáticamente en las suposiciones actuales y en las futuras "
 "hasta que los desmarques (volviendo a hacer doble clic sobre ellos)."
 
-#: activities/superbrain/Superbrain.qml:148
+#: activities/superbrain/Superbrain.qml:167
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Este objeto está bien colocado."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:169
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Este objeto está mal colocado."

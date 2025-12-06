@@ -25986,12 +25986,12 @@ msgstr ""
 "ചെയ്ത ഇനങ്ങൾ വീണ്ടും ഡബിൾ ക്ലിക്ക് ചെയ്ത് അൺ-മാർക്ക് ചെയ്യുന്നതുവരെ നിങ്ങളുടെ അപ്പോഴത്തെയും "
 "പിന്നീടുള്ളതുമായ ഊഹങ്ങളിൽ താനേ തിരഞ്ഞെടുക്കപ്പെടും."
 
-#: activities/superbrain/Superbrain.qml:148
+#: activities/superbrain/Superbrain.qml:167
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "ശരിയായ സ്ഥാനത്ത് വെച്ചിരിക്കുന്നു."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:169
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "തെറ്റായ സ്ഥാനത്ത് വെച്ചിരിക്കുന്നു."

@@ -27223,12 +27223,12 @@ msgstr ""
 "aktuálnom a budúcom hádaní, kým to neodznačíte dvojitým kliknutím alebo "
 "tapom."
 
-#: activities/superbrain/Superbrain.qml:148
+#: activities/superbrain/Superbrain.qml:167
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Táto položka je dobre umiestnená."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:169
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Táto položka je zle umiestnená."

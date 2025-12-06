@@ -26859,12 +26859,12 @@ msgstr ""
 "viitoare a ghicirilor tale, până când le demarchezi din nou, făcând dublu "
 "clic sau lovind scurt cu degetul pe ele."
 
-#: activities/superbrain/Superbrain.qml:148
+#: activities/superbrain/Superbrain.qml:167
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Acest obiect este pus la locul lui."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:169
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Acest obiect este pus greșit."

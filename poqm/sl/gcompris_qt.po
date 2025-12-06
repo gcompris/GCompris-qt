@@ -26279,12 +26279,12 @@ msgstr ""
 "prihodnjih ugibanjih, dokler jim ne odstranite oznake z dvoklikom ali "
 "pritiskom zaslona."
 
-#: activities/superbrain/Superbrain.qml:148
+#: activities/superbrain/Superbrain.qml:167
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Ta predmet je prav postavljen."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:169
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Ta predmet je postavljen narobe."

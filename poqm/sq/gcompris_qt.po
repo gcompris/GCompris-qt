@@ -26772,12 +26772,12 @@ msgstr ""
 "hamendësime të ardhshme, deri sa t’ua hiqni shenjën, duke dyklikuar sërish "
 "mbi ta."
 
-#: activities/superbrain/Superbrain.qml:148
+#: activities/superbrain/Superbrain.qml:167
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Ky objekt është vendosur mirë."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:169
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Ky objekt është vendosur gabim."

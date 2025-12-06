@@ -12013,7 +12013,7 @@ msgstr "Île de France"
 #: activities/geo-country/resource/board/board1_0.qml:91
 msgctxt "board1_0|"
 msgid "Brittany"
-msgstr "Grande Bretagne"
+msgstr "Bretagne"
 
 #. Region of France: Normandy
 #: activities/geo-country/resource/board/board1_0.qml:99
@@ -26779,12 +26779,12 @@ msgstr ""
 "l'écran tactile pour automatiquement avoir la dernière couleur utilisée sur "
 "une case."
 
-#: activities/superbrain/Superbrain.qml:148
+#: activities/superbrain/Superbrain.qml:167
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Cet élément est bien positionné."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:169
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Cet élément est mal positionné."

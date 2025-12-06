@@ -26469,12 +26469,12 @@ msgstr ""
 "във твоите текущи и бъдещи предположения, докато не ги размаркираш, като "
 "отново щракнеш два пъти върху тях."
 
-#: activities/superbrain/Superbrain.qml:148
+#: activities/superbrain/Superbrain.qml:167
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Този елемент е добре поставен."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:169
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Този елемент е неправилно поставен."

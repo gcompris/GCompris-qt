@@ -28232,12 +28232,12 @@ msgstr ""
 "seleccionadas automaticamente nas suas adivinhas actuais e futuras até que "
 "as desmarque, fazendo uma vez mais duplo-click ou um toque com o dedo."
 
-#: activities/superbrain/Superbrain.qml:148
+#: activities/superbrain/Superbrain.qml:167
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Este item está bem colocado."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:169
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Este item está mal colocado."

@@ -27275,12 +27275,12 @@ msgstr ""
 "எனக் குறிக்கலாம். இவ்வாறு குறிக்கப்பட்ட பொருட்களை மீண்டும் இருமுறை கிளிக் செய்து, குறி "
 "நீக்கும்வரை உங்கள் தற்போதைய, பின்னர் உள்ள யூகங்களில் பொருட்களை தானாகவே தேர்ந்தெடுக்கப்படும்."
 
-#: activities/superbrain/Superbrain.qml:148
+#: activities/superbrain/Superbrain.qml:167
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "சரியான இடத்தில் வைக்கப்பட்டுள்ளது."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:169
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "தவறான இடத்தில் வைக்கப்பட்டுள்ளது."

@@ -26623,12 +26623,12 @@ msgstr ""
 "evit da daolioù-esae all betek ma vo lamet kuit ar merk ganit en ur "
 "zaouglikañ pe daoustekiñ adarre."
 
-#: activities/superbrain/Superbrain.qml:148
+#: activities/superbrain/Superbrain.qml:167
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Lec'hiet mat eo an elfenn-mañ."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:169
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Lec'hiet fall eo an elfenn-mañ."

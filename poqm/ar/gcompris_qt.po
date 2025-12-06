@@ -25717,12 +25717,12 @@ msgstr ""
 "هذه العناصر المميزة آليًّا في تخميناتك الحالية والمستقبلية إلى أن تلغى "
 "تحديدها، بالنقر المزدوج عليها مرة أخرى."
 
-#: activities/superbrain/Superbrain.qml:148
+#: activities/superbrain/Superbrain.qml:167
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "هذا الشيء في موضع صحيح."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:169
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "هذا الشيء في موضع خاطئ."

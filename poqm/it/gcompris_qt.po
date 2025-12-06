@@ -26715,12 +26715,12 @@ msgstr ""
 "marcati sono selezionati automaticamente nei tentativi attuali e futuri fino "
 "a quando non decidi di smarcarli, nuovamente tramite doppio clic."
 
-#: activities/superbrain/Superbrain.qml:148
+#: activities/superbrain/Superbrain.qml:167
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Questo oggetto è ben posizionato."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:169
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Questo oggetto è fuori posto."

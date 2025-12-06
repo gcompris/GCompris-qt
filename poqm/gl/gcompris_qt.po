@@ -26494,12 +26494,12 @@ msgstr ""
 "automaticamente no intento actual e nos futuros ata que os desmarcas facendo "
 "clic duplo neles de novo."
 
-#: activities/superbrain/Superbrain.qml:148
+#: activities/superbrain/Superbrain.qml:167
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Este elemento está ben colocado."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:169
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Este elemento está mal colocado."

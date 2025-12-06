@@ -27311,12 +27311,12 @@ msgstr ""
 "ವಸ್ತುಗಳನ್ನು ಮತ್ತೆ ಡಬಲ್ ಕ್ಲಿಕ್ ಮಾಡಿ ಅದರ ಗುರುತನ್ನು ಅಳಿಸುವ ತನಕ ಈ ವಸ್ತುಗಳು  ನಿಮ್ಮ ಈಗಿನ  "
 "ಮತ್ತು ಮುಂದಿನ  ಊಹೆಗಳಿಗೆ ಸ್ವತಃ  ಆಯ್ಕೆ ಮಾಡಲ್ಪಡುವುದು."
 
-#: activities/superbrain/Superbrain.qml:148
+#: activities/superbrain/Superbrain.qml:167
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "ಸರಿಯಾದ ಸ್ಥಳದಲ್ಲಿ ಇರಿಸಲಾಗಿದೆ."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:169
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "ತಪ್ಪಾದ ಸ್ಥಾನದಲ್ಲಿ ಇರಿಸಲಾಗಿದೆ."
