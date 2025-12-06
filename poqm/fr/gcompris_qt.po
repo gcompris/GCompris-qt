@@ -11644,7 +11644,7 @@ msgstr "Île de France"
 #: activities/geo-country/resource/board/board1_0.qml:91
 msgctxt "board1_0|"
 msgid "Brittany"
-msgstr "Grande Bretagne"
+msgstr "Bretagne"
 
 #. Region of France: Normandy
 #: activities/geo-country/resource/board/board1_0.qml:99
