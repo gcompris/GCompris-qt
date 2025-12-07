@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-12-03 16:21+0400\n"
+"PO-Revision-Date: 2025-12-06 16:48+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -23752,12 +23752,10 @@ msgid "Tab: switch between the color selector and the painting area"
 msgstr "مفتاح الجدولة: بدّل بين محدد اللون ومنطقة الرسم"
 
 #: activities/sketch/ActivityConfig.qml:29
-#, fuzzy, qt-format
-#| msgctxt "guessnumber|"
-#| msgid "Number found!"
+#, qt-format
 msgctxt "ActivityConfig|"
 msgid "Number of undo: %1"
-msgstr "وجدت العدد!"
+msgstr "عدد عمليات التراجع: %1"
 
 #: activities/sketch/ActivityConfig.qml:44
 msgctxt "ActivityConfig|"
@@ -23765,6 +23763,8 @@ msgid ""
 "Warning: setting the number of undo too high can make the application crash "
 "if your device doesn't have enough memory."
 msgstr ""
+"تحذير: قد يؤدي تعيين عدد عمليات التراجع إلى مستوى مرتفع جدًا إلى تعطل التطبيق "
+"إذا لم يكن جهازك يحتوي على ذاكرة كافية."
 
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18
