@@ -421,6 +421,7 @@ add_custom_target(dist
 
 if(KF6_FOUND)
     add_subdirectory(docs/docbook)
+    kdoctools_install(po)
 endif()
 
 # qml-box2d
