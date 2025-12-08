@@ -119,9 +119,9 @@ ActivityBase {
                 source: img
                 type: activity.type
                 blockBackground: items.activityBackground
-                bar: bar
-                eraser1Sound: eraser1Sound
-                eraser2Sound: eraser2Sound
+                bar_: bar
+                eraser1Sound_: eraser1Sound
+                eraser2Sound_: eraser2Sound
             }
         }
 

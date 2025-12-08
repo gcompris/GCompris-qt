@@ -22,14 +22,14 @@ Image {
     property double iy
     property int nbx
     property int nby
-    required property Bar bar
-    required property GCSoundEffect eraser1Sound
-    required property GCSoundEffect eraser2Sound
+    required property Bar bar_
+    required property GCSoundEffect eraser1Sound_
+    required property GCSoundEffect eraser2Sound_
 
     x: ix * width
     y: iy * height
     width: blockBackground.width / nbx
-    height: (blockBackground.height - bar.height) / (nby + getMultipleOfRatioToAdjustHeight() * ApplicationInfo.ratio)
+    height: (blockBackground.height - bar_.height) / (nby + getMultipleOfRatioToAdjustHeight() * ApplicationInfo.ratio)
     sourceSize.width: width
     sourceSize.height: height
     opacity: 1.0
@@ -97,9 +97,9 @@ Image {
     function playSound()
     {
         if (ix % 2)
-            eraser1Sound.play()
+            eraser1Sound_.play()
         else
-            eraser2Sound.play()
+            eraser2Sound_.play()
     }
 
 }
