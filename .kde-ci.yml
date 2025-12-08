@@ -4,6 +4,8 @@ Dependencies:
   - 'on': ['Linux/Qt6', 'FreeBSD/Qt6', 'Windows/Qt6', 'Android/Qt6']
     'require':
       'frameworks/extra-cmake-modules': '@latest-kf6'
+      'frameworks/kdoctools': '@latest-kf6'
+
 
 Environment:
   KDECI_BUILD: "TRUE"
@@ -15,3 +17,4 @@ Options:
   cppcheck-ignore-files:
     - autotests
     - tests
+  cmake-options: '-DCOMPILE_DOC=ON'
