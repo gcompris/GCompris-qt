@@ -236,7 +236,7 @@ ActivityBase {
 
                 function reset() {
                     for(var i=0; i < items.userModel.count; ++i)
-                        (userModel.itemAt(i) as BlockItem).paint(items.colorSelector)
+                        userModel.itemAt(i).paint(items.colorSelector)
                     currentItem = 0
                     keyNavigation = false
                 }
@@ -461,7 +461,7 @@ ActivityBase {
             function checkTouchPoint(touchPoints) {
                 for(var i in touchPoints) {
                     var touch = touchPoints[i]
-                    var block = drawingArea.childAt(touch.x, touch.y) as BlockItem
+                    var block = drawingArea.childAt(touch.x, touch.y)
                     if(block) {
                         block.playEffect(items.colorSelector)
                         block.paint(items.colorSelector)
