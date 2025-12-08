@@ -160,7 +160,7 @@ ActivityBase {
         }
 
         function playNote(index: int) {
-            (parts.itemAt(index) as PartDelegate).play()
+            parts.itemAt(index).play()
         }
         Timer {
             id: introDelay
@@ -191,7 +191,7 @@ ActivityBase {
             onTriggered: {
                 var partIndex = items.questionToPlay.shift()
                 if(partIndex !== undefined) {
-                    (parts.itemAt(partIndex) as PartDelegate).anim.start()
+                    parts.itemAt(partIndex).anim.start()
                     activityBackground.playNote(partIndex)
                     start()
                 }
