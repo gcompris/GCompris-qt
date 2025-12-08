@@ -104,7 +104,7 @@ ActivityBase {
                 nby: m_nby
                 hasStrawberry: m_hasStrawberry
                 color: "#0099FF"
-                winSound: winSound
+                winSound_: winSound
                 Component.onCompleted: cellFill.data.push(cellColor)
 
                 onStrawberryFound: {

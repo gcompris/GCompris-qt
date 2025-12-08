@@ -17,7 +17,7 @@ import core 1.0
 
 Item {
     id: hexagon
-    property GCSoundEffect winSound
+    property GCSoundEffect winSound_
     property alias cellColor: cellColor
     property alias color: cellColor.fillColor
     property bool hasStrawberry: false
@@ -82,7 +82,7 @@ Item {
             border.opacity = 0
             isTouched = true
             strawberry.source = Activity.url + "strawberry.svg"
-            winSound.play()
+            winSound_.play()
             hexagon.strawberryFound()
             particles.burst(40)
         } else {
