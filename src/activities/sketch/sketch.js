@@ -164,7 +164,6 @@ function newImage() {
 }
 
 function saveImageDialog() {
-    console.log(items.canvas)
     items.canvasArea.saveToFile(items.canvasArea.tempSaveFile);
     items.creationHandler.saveWindow(items.canvasArea.tempSaveFile);
 }
