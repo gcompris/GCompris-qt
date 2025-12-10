@@ -100,6 +100,7 @@ function initLevel() {
     items.canvasArea.clearUndo()
     items.canvasArea.clearRedo()
     items.undoStack.clear()
+    items.canvasImage.source = ""
     items.gearTimer.stop()
     stop()    // Clear undo-redo stack models and temporary images
     const maxRadius = ((wheelKeys[0] + wheelThickness) * toothLength) / Math.PI     // Max size for svg
