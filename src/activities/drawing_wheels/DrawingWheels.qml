@@ -10,8 +10,11 @@
  *
  */
 import QtQuick
-import QtQuick.Controls // for Popup
 import QtQuick.Layouts
+// for Popup
+import QtQuick.Controls
+// for StandardPaths
+import QtCore
 import core 1.0
 
 import "../../core"
@@ -23,6 +26,10 @@ ActivityBase {
 
     onStart: focus = true
     onStop: {}
+
+    // Storing undo with QQuickItemGrabResult uses quite some RAM,
+    // so limit more by default on mobile which typically has less RAM than computers
+    property int undoSetting: ApplicationInfo.isMobile ? 5 : 10
 
     pageComponent: Rectangle {
         id: activityBackground
@@ -77,9 +84,9 @@ ActivityBase {
             property alias gearTeeth: gearTeeth.value       // Teeth count for the gear
             property alias theWheel: theWheel
             property alias theGear: theGear
-            property alias mainCanvas: mainCanvas
-            property alias animationCanvas: animationCanvas
-            property alias canvasImage: canvasImage         // Offscreen image to store and restore canvas
+            property alias canvasArea: canvasArea              // image grabber
+            property alias canvasImage: canvasImage            // loaded image
+            property alias animationCanvas: animationCanvas    // temporary canvas for drawing animation
             property alias penOffset: penOffset.value
             property alias penOpacity: penOpacity.value
             property alias gearTimer: gearTimer
@@ -94,6 +101,7 @@ ActivityBase {
             property alias undoStack: undoStack
             property alias svgTank: svgTank
             property alias newImageDialog: newImageDialog
+            property alias scrollSound: scrollSound
 
             property alias filePopup: filePopup
             property alias gearPopup: gearPopup
@@ -113,6 +121,8 @@ ActivityBase {
             property bool runCompleted: false // used to avoid moving the gear too far
             property bool startedFromOrigin: true
             property string actionAfter: ""
+            property bool canvasLocked: true
+            property bool isFileSaved: true
 
         }
 
@@ -123,67 +133,12 @@ ActivityBase {
 
         ListModel { id: gearsModel }
 
-        function pushToUndoStack(withImage = false) {
-            undoStack.pushData({
-                             "wheelAngle_": items.theGear.wheelAngle
-                           , "toothOffset_": items.toothOffset
-                           , "penOffset_": items.penOffset
-                           , "penOpacity_": items.penOpacity
-                           , "currentColor_": items.currentColor
-                           , "penColor_": items.penColor
-                           , "currentDotSize_": items.currentDotSize
-                           , "penWidth_": items.penWidth
-                           }
-                           , withImage)
-        }
-
-        function restoreFromStack(todo) {
-            if (todo === undefined)  return
-            Activity.initGear()
-            items.theGear.wheelAngle = todo.wheelAngle_
-            items.toothOffset = todo.toothOffset_
-            items.penOffset = todo.penOffset_
-            items.penOpacity = todo.penOpacity_
-            items.currentColor = todo.currentColor_
-            items.penColor = todo.penColor_
-            items.currentDotSize = todo.currentDotSize_
-            items.penWidth = todo.penWidth_
-            if (todo.savedFile !== "") {
-                canvasImage.reloaded = true
-                canvasImage.source = todo.savedFile
-                mainCanvas.requestPaint()
-            }
-
-            items.animationCanvas.initContext()
-            items.animationCanvas.ctx.lineWidth = items.penWidth
-            items.animationCanvas.ctx.strokeStyle = items.penColor
-            Activity.rotateGear(0)       // move pencil and gear in position, trigger repaint animationCanvas
-        }
-
-        // Update pen attributes before drawing to be restored on undo
-        function updateUndo() {
-            const todo = items.undoStack.getLastStacked()
-            todo.wheelAngle_ = items.theGear.wheelAngle
-            todo.toothOffset_ = items.toothOffset
-            todo.penOffset_ = items.penOffset
-            todo.penOpacity_ = items.penOpacity
-            todo.currentColor_ = items.currentColor
-            todo.penColor_ = items.penColor
-            todo.currentDotSize_ = items.currentDotSize
-            todo.penWidth_ = items.penWidth
-            items.undoStack.setLastStacked(todo)
-        }
-
         Keys.onPressed: (event) => {
             if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_Z)) {
-                restoreFromStack(undoStack.undoLast())
-                svgTank.undo()
-                svgTank.writeSvg()
+                Activity.undoAction()
                 event.accepted = true
             } else if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_Y)) {
-                restoreFromStack(undoStack.redoLast())
-                svgTank.redo()
-                svgTank.writeSvg()
+                Activity.redoAction()
                 event.accepted = true
             } else if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_S)) {
                 Activity.savePngDialog();
@@ -197,16 +152,64 @@ ActivityBase {
             }
         }
 
+        GCSoundEffect {
+            id: scrollSound
+            source: "qrc:/gcompris/src/core/resource/sounds/scroll.wav"
+        }
+
         UndoStack {
             id: undoStack
-            canvas: mainCanvas
-            filePrefix: "/GCDrawingWheels"
-            image: canvasImage
+            maxUndo: activity.undoSetting
+
+            function pushToUndoStack() {
+                undoStack.pushData({
+                    "wheelAngle_": items.theGear.wheelAngle
+                    , "toothOffset_": items.toothOffset
+                    , "penOffset_": items.penOffset
+                    , "penOpacity_": items.penOpacity
+                    , "currentColor_": items.currentColor
+                    , "penColor_": items.penColor
+                    , "currentDotSize_": items.currentDotSize
+                    , "penWidth_": items.penWidth
+                })
+            }
+
+            function restoreFromStack(todo) {
+                if (todo === undefined)  return
+                Activity.initGear()
+                items.theGear.wheelAngle = todo.wheelAngle_
+                items.toothOffset = todo.toothOffset_
+                items.penOffset = todo.penOffset_
+                items.penOpacity = todo.penOpacity_
+                items.currentColor = todo.currentColor_
+                items.penColor = todo.penColor_
+                items.currentDotSize = todo.currentDotSize_
+                items.penWidth = todo.penWidth_
+
+                items.animationCanvas.initContext()
+                items.animationCanvas.ctx.lineWidth = items.penWidth
+                items.animationCanvas.ctx.strokeStyle = items.penColor
+                Activity.rotateGear(0)       // move pencil and gear in position, trigger repaint animationCanvas
+            }
+
+            // Update pen attributes before drawing to be restored on undo
+            function updateUndo() {
+                const todo = undoStack.getLastStacked()
+                todo.wheelAngle_ = items.theGear.wheelAngle
+                todo.toothOffset_ = items.toothOffset
+                todo.penOffset_ = items.penOffset
+                todo.penOpacity_ = items.penOpacity
+                todo.currentColor_ = items.currentColor
+                todo.penColor_ = items.penColor
+                todo.currentDotSize_ = items.currentDotSize
+                todo.penWidth_ = items.penWidth
+                undoStack.setLastStacked(todo)
+            }
         }
 
         SvgTank {
             id: svgTank
-            fileName: undoStack.tempFile + ".svg"
+            fileName: canvasArea.tempSavePath + "/GCDrawingWheels.svg"
             stroke: items.penColor
             strokeWidth: items.penWidth
             svgOpacity: items.penOpacity
@@ -222,64 +225,74 @@ ActivityBase {
             anchors.bottomMargin: bar.height + GCStyle.halfMargins
             color: items.backgroundColor
 
-            Canvas {    // Once the drawing cycles are complete, animationCanvas is copied to mainCanvas with its opacity.
-                id: mainCanvas
-                property var ctx: null
-
-                // anchors.fill: parent
+            GImageGrabber {
+                id: canvasArea
                 width: items.imageSize
                 height: items.imageSize
                 anchors.centerIn: parent
                 anchors.margins: 0
-                renderStrategy: Canvas.Immediate
-                renderTarget: Canvas.Image
-                clip: true
+                maxUndo: activity.undoSetting
 
-                function initContext() {
-                    ctx = getContext("2d")
-                    ctx.fillStyle = items.backgroundColor
-                    ctx.fillRect(0, 0, width, height)
-                    ctx.lineCap = ctx.lineJoin = "round"
-                    requestPaint()
+                property url tempSavePath: StandardPaths.writableLocation(StandardPaths.TempLocation)
+
+                function sendToImageSource() {
+                    canvasImage.source = canvasArea.getImageUrl();
                 }
 
-                function redrawImage() {    // Called after resizing or reloading. Centered copy from canvasImage to mainCanvas
-                    if (ctx) {
-                        if (gearTimer.running) {
-                            gearTimer.stop()
-                            Activity.initGear()
-                            Core.showMessageDialog(parent, qsTr("Avoid resizing window while drawing"), "", null, "", null, null)
-                        }
-                        ctx.clearRect(0, 0, width, height); // view has changed, clear all
-                        ctx.drawImage(canvasImage, (width - canvasImage.sourceSize.width) * 0.5, (height - canvasImage.sourceSize.height) * 0.5)
-                        Activity.rotateGear(0)              // Move pen to new relative position. Update scene
+                onGrabReady: {
+                    canvasArea.sendToImageSource();
+                    animationCanvas.clearTempCanvas();
+                }
+
+                Rectangle {
+                    id: canvasColor
+                    anchors.fill: parent
+                    color: items.backgroundColor
+                }
+
+                Image {
+                    id: canvasImage
+                    anchors.fill: parent
+                    // DO NOT use Image.PreserveAspectFit, as it progressively adds some blur at each paint iteration when deviceRatio != 1...
+                    fillMode: Image.Stretch
+                    cache: false
+                    smooth: true
+                }
+
+                Canvas {    // The animation of the drawing is done in animationCanvas and copied to canvasImage once the drawing cycles are complete.
+                    id: animationCanvas
+                    property var ctx: null
+                    anchors.fill: parent
+                    anchors.margins: 0
+                    renderStrategy: Canvas.Immediate
+                    renderTarget: Canvas.Image
+                    clip: true
+                    opacity: items.penOpacity   // Pen opacity is applied to the whole canvas. Context drawing is always done with opacity 1.0
+
+                    function initContext() {
+                        ctx = getContext("2d")
+                        ctx.fillStyle = items.transparentColor
+                        ctx.clearRect(0, 0, width, height);
+                        ctx.lineCap = ctx.lineJoin = "round"
+                        requestPaint()
                     }
-                }
-                onWidthChanged: redrawImage()
-                onHeightChanged: redrawImage()
-            }
 
-            Canvas {    // The animation of the drawing is done in animationCanvas and copied to mainCanvas once the drawing cycles are complete.
-                id: animationCanvas
-                property var ctx: null
+                    function getPencilPosition() {
+                        return animationCanvas.mapFromItem(pencil, pencil.center, pencil.center)
+                    }
 
-                anchors.fill: mainCanvas
-                anchors.margins: 0
-                renderStrategy: Canvas.Immediate
-                renderTarget: Canvas.Image
-                clip: true
-                opacity: items.penOpacity   // Pen opacity is applied to the whole canvas. Context drawing is always done with opacity 1.0
+                    // After loading canvas result to image, clear Canvas and hide other drawing sources
+                    function clearTempCanvas() {
+                        animationCanvas.ctx.clearRect(0, 0, animationCanvas.width, animationCanvas.height);
+                        animationCanvas.requestPaint();
+                        items.canvasLocked = false;
+                    }
 
-                function initContext() {
-                    ctx = getContext("2d")
-                    ctx.fillStyle = items.transparentColor
-                    ctx.clearRect(0, 0, width, height);
-                    ctx.lineCap = ctx.lineJoin = "round"
-                    requestPaint()
-                }
-
-                function getPencilPosition() {
-                    return animationCanvas.mapFromItem(pencil, pencil.center, pencil.center)
+                    function paintActionFinished() {
+                        items.undoStack.pushToUndoStack();
+                        canvasArea.safeGrab(Qt.size(canvasArea.width, canvasArea.height));
+                        // next steps are in canvasArea onGrabReady...
+                    }
                 }
             }
 
@@ -316,22 +329,6 @@ ActivityBase {
                     x: (theGear.width * 0.5) - (width * 0.5)
                     y: (theGear.height * 0.5) - (height * 0.5) + items.penOffset
                 }
-            }
-        }
-
-        Image {     // Offscreen image containing a canvas copy, never visible. Used by undo/redo stacks
-            id: canvasImage
-            property bool reloaded: false
-            anchors.fill: canvasContainer
-            fillMode: Image.Pad
-            visible: false
-            onStatusChanged: {
-                if ((status === Image.Ready) && reloaded) {
-                    mainCanvas.redrawImage()
-                    reloaded = false
-                }
-                if (status === Image.Error)
-                    console.log("Error loading image")
             }
         }
 
@@ -403,13 +400,11 @@ ActivityBase {
                     source: "qrc:/gcompris/src/activities/sketch/resource/undo.svg"
                     toolTip: qsTr("Undo")
                     Layout.alignment:Qt.AlignHCenter
-                    enabled: (!gearTimer.running) && (undoStack.undoCount > 1)
+                    enabled: (!gearTimer.running) && (canvasArea.undoSize > 1)
                     opacity: enabled ? 1.0 : 0.5
                     selected: true
                     onPushed: {
-                        restoreFromStack(undoStack.undoLast())
-                        svgTank.undo()
-                        svgTank.writeSvg()
+                        Activity.undoAction();
                     }
                 }
 
@@ -419,14 +414,11 @@ ActivityBase {
                     toolTip: qsTr("Redo")
                     mirror: true
                     Layout.alignment:Qt.AlignHCenter
-                    enabled: (!gearTimer.running) && (undoStack.redoCount > 0)
+                    enabled: (!gearTimer.running) && (canvasArea.redoSize > 0)
                     opacity: enabled ? 1.0 : 0.5
                     selected: true
                     onPushed: {
-                        restoreFromStack(undoStack.redoLast())
-                        mainCanvas.requestPaint()
-                        svgTank.redo()
-                        svgTank.writeSvg()
+                        Activity.redoAction();
                     }
                 }
 
@@ -1055,12 +1047,15 @@ ActivityBase {
             fileExtensions: ["*.svg", "*.png", "*.jpg", "*.jpeg", "*.webp"]
             onClose: activity.focus = true;
             onFileLoaded: (data, filePath) => {
-                              Activity.initLevel()
-                              canvasImage.source = filePath
-                              mainCanvas.redrawImage()
-                              if (filePath.endsWith(".svg"))
-                                svgTank.loadSvg(file.read(filePath))  // Reset svgTank with loaded svg
-                              // Png images are not inserted into svgTank (too big and dirty render)
+                Activity.initLevel()
+                canvasImage.source = filePath
+                if (filePath.endsWith(".svg"))
+                    svgTank.loadSvg(file.read(filePath))  // Reset svgTank with loaded svg
+                    // Png images are not inserted into svgTank (too big and dirty render)
+            }
+
+            onSaved: {
+                items.isFileSaved = true;
             }
         }
 
@@ -1077,24 +1072,21 @@ ActivityBase {
                 onClose: newImageDialog.active = false
 
                 onButton1Hit: {
+                    items.isFileSaved = true
                     switch (items.actionAfter) {
                     case "home" :
                         activity.home()
                         break
                     case "next" :
-                        undoStack.clear()
                         Activity.nextLevel()
                         break
                     case "previous" :
-                        undoStack.clear()
                         Activity.previousLevel()
                         break
                     case "create" :
-                        undoStack.clear()
                         Activity.initLevel()
                         break
                     case "open" :
-                        undoStack.clear()
                         Activity.openImageDialog()
                         break
                     default:
@@ -1109,6 +1101,19 @@ ActivityBase {
             onStatusChanged: if(status == Loader.Ready) item.start()
         }
 
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+            onClose: {
+                activity.home()
+            }
+            onLoadData: {
+                if(activityData && activityData["undoSetting"]) {
+                    activity.undoSetting = activityData["undoSetting"];
+                }
+            }
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -1118,13 +1123,23 @@ ActivityBase {
             id: bar
             enabled: !gearTimer.running
             level: items.currentLevel + 1
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | reload | activityConfig }
             onHelpClicked: displayDialog(dialogHelp)
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onReloadClicked: Activity.initLevel()
+            onReloadClicked: {
+                if(!items.isFileSaved) {
+                    items.actionAfter = "create"
+                    newImageDialog.active = true
+                } else {
+                    Activity.initLevel()
+                }
+            }
+            onActivityConfigClicked: {
+                activity.displayDialog(dialogActivityConfig)
+            }
             onHomeClicked: {
-                if (!undoStack.isFileSaved) {
+                if (!items.isFileSaved) {
                     items.actionAfter = "home"
                     newImageDialog.active = true
                     return

@@ -1,6 +1,11 @@
 /* GCompris - drawing_wheels.js
  *
  * SPDX-FileCopyrightText: 2025 Bruno Anselme <be.root@free.fr>
+ *
+ * Authors:
+ *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
+ *
  * SPDX-License-Identifier: GPL-3.0-or-later
  *
  */
@@ -41,6 +46,8 @@ function start(items_) {
 }
 
 function stop() {
+    items.canvasArea.clearUndo();
+    items.canvasArea.clearRedo();
     items.undoStack.clear()
     items.file.rmpath(items.undoStack.tempFile + ".svg")          // remove temporary svg file on disk
 }
@@ -63,18 +70,18 @@ function shiftModel(model) {
 
 function savePngDialog() {
     items.creationHandler.svgMode = false
-    items.creationHandler.saveWindow(items.undoStack.lastSavedFile)
-    items.undoStack.isFileSaved = true
+    var fileName = items.canvasArea.tempSavePath + "/GCSketchSave.png"
+    items.canvasArea.saveToFile(fileName)
+    items.creationHandler.saveWindow(fileName)
 }
 
 function saveSvgDialog() {
     items.creationHandler.svgMode = true
-    items.creationHandler.saveWindow(items.undoStack.tempFile + ".svg")
-    items.undoStack.isFileSaved = true
+    items.creationHandler.saveWindow(items.svgTank.fileName)
 }
 
 function openImageDialog() {
-    if (!items.undoStack.isFileSaved) {
+    if (!items.isFileSaved) {
         items.actionAfter = "open"
         items.newImageDialog.active = true
         return
@@ -90,20 +97,25 @@ function resetWheel() {
 }
 
 function initLevel() {
+    items.canvasArea.clearUndo()
+    items.canvasArea.clearRedo()
+    items.undoStack.clear()
     items.gearTimer.stop()
-    stop()                          // Clear undo-redo stack models and temporary images
+    stop()    // Clear undo-redo stack models and temporary images
     const maxRadius = ((wheelKeys[0] + wheelThickness) * toothLength) / Math.PI     // Max size for svg
     items.imageSize = 2 * maxRadius
-    items.mainCanvas.initContext()
     items.animationCanvas.initContext()
-    items.activityBackground.pushToUndoStack(true)
+    //add first empty undo to canvasArea and to undoStack to restore empty canvas
+    items.animationCanvas.paintActionFinished();
     initWheel()
     items.toothOffset = 0
     items.svgTank.resetSvg(maxRadius, items.backgroundColor)
+    items.isFileSaved = true
+    items.canvasLocked = false
 }
 
 function nextLevel() {
-    if (!items.undoStack.isFileSaved) {
+    if (!items.isFileSaved) {
         items.actionAfter = "next"
         items.newImageDialog.active = true
         return
@@ -114,7 +126,7 @@ function nextLevel() {
 }
 
 function previousLevel() {
-    if (!items.undoStack.isFileSaved) {
+    if (!items.isFileSaved) {
         items.actionAfter = "previous"
         items.newImageDialog.active = true
         return
@@ -141,12 +153,14 @@ function initGear() {
 }
 
 function startGear() {
+    items.canvasLocked = true
+    items.isFileSaved = false
     if(items.theGear.wheelAngle != 0) {
-        items.startedFromOrigin = false;
+        items.startedFromOrigin = false
     } else {
-        items.startedFromOrigin = true;
+        items.startedFromOrigin = true
     }
-    items.activityBackground.updateUndo()   // Save pen and gear changes since last image stacked
+    items.undoStack.updateUndo()   // Save pen and gear changes since last image stacked
     const pos = items.animationCanvas.getPencilPosition()
     items.svgTank.openPath(pos.x, pos.y)
     items.animationCanvas.ctx.lineWidth = items.penWidth
@@ -158,12 +172,7 @@ function stopGear(completed = false) {
     items.gearTimer.stop()
     items.svgTank.finishPath()
     items.svgTank.writeSvg()
-    items.mainCanvas.ctx.globalAlpha = items.penOpacity     // Pen opacity is applied while copying canvas to canvas
-    items.mainCanvas.ctx.drawImage(items.animationCanvas, 0, 0)
-    items.mainCanvas.requestPaint()
-    items.mainCanvas.ctx.globalAlpha = 1.0
-    items.animationCanvas.initContext() // Clear animation canvas for next rounds
-    items.activityBackground.pushToUndoStack(true)
+    items.animationCanvas.paintActionFinished();
 }
 
 // Compute current position, draw or not, move and rotate gear, move pen
@@ -208,6 +217,33 @@ function rotateGear(angle) {
         stopGear(true)
     } else {
         items.svgTank.addLine(pos.x, pos.y)
+    }
+}
+
+function undoAction() {
+    // 1st element of the list is always last possible state, never undo it
+    if(items.canvasArea.undoSize > 1) {
+        items.scrollSound.play();
+        items.canvasLocked = true;
+        items.canvasArea.doUndo();
+        items.undoStack.restoreFromStack(items.undoStack.undoLast())
+        items.svgTank.undo()
+        items.svgTank.writeSvg()
+        items.canvasArea.sendToImageSource();
+        items.canvasLocked = false;
+    }
+}
+
+function redoAction() {
+    if(items.canvasArea.redoSize > 0) {
+        items.scrollSound.play();
+        items.canvasLocked = true;
+        items.canvasArea.doRedo();
+        items.undoStack.restoreFromStack(items.undoStack.redoLast())
+        items.svgTank.redo()
+        items.svgTank.writeSvg()
+        items.canvasArea.sendToImageSource();
+        items.canvasLocked = false;
     }
 }
 
