@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:48+0000\n"
+"POT-Creation-Date: 2025-12-11 00:39+0000\n"
 "PO-Revision-Date: 2025-03-19 17:39+0100\n"
 "Last-Translator: timo <animtim@gmail.com>\n"
 "Language-Team: French <kde-i18n-doc@kde.org>\n"
@@ -375,6 +375,13 @@ msgid "Learn how digital electronics work and create your own circuit."
 msgstr ""
 "Apprends comment fonctionne l'électronique numérique et crée ton propre "
 "circuit."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "drawing_wheels"
+#: activities/drawing_wheels/ActivityInfo.qml:17
+#, fuzzy, kde-format
+#| msgid "put here in comment the text for the intro voice"
+msgid "put here in comment the text for the intro voice"
+msgstr "Mettez ici en commentaire le texte pour la voix d'intro."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"
 #: activities/drawletters/ActivityInfo.qml:18
@@ -1400,11 +1407,6 @@ msgstr ""
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr ""
 "Saisis au clavier les mots qui tombent avant qu'ils ne touchent le sol."
-
-#, fuzzy
-#~| msgid "put here in comment the text for the intro voice"
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "Mettez ici en commentaire le texte pour la voix d'intro."
 
 #~ msgid "play checkers against the computer"
 #~ msgstr "Joue aux dames contre l'ordinateur."

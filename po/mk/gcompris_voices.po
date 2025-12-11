@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:48+0000\n"
+"POT-Creation-Date: 2025-12-11 00:39+0000\n"
 "PO-Revision-Date: 2021-03-15 13:32+0100\n"
 "Last-Translator: Igor Risteski <fikio@yahoo.com>\n"
 "Language-Team: Macedonian Team (mk)\n"
@@ -373,6 +373,12 @@ msgstr "Лизгајте ги сликите во нивните соодвет�
 #, kde-format
 msgid "Learn how digital electronics work and create your own circuit."
 msgstr "Дознајте како работи дигиталната електроника и создадете свое коло."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "drawing_wheels"
+#: activities/drawing_wheels/ActivityInfo.qml:17
+#, kde-format
+msgid "put here in comment the text for the intro voice"
+msgstr "ставете тука во коментар на текстот за воведниот глас"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"
 #: activities/drawletters/ActivityInfo.qml:18
@@ -1387,9 +1393,6 @@ msgstr ""
 #, kde-format
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr "Напишете ги зборовите на тастатурата пред да стигнат до земјата."
-
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "ставете тука во коментар на текстот за воведниот глас"
 
 #~ msgid "play checkers against the computer"
 #~ msgstr "играј дама против компјутерот"

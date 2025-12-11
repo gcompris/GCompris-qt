@@ -248,6 +248,7 @@ msgstr ""
 #: activities/colors/ActivityInfo.qml:25
 #: activities/comparator/ActivityInfo.qml:27
 #: activities/crane/ActivityInfo.qml:30
+#: activities/drawing_wheels/ActivityInfo.qml:24
 #: activities/enumerate/ActivityInfo.qml:25
 #: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
@@ -6961,6 +6962,298 @@ msgid ""
 "either the first switch is on and the second switch is off, or when the "
 "first switch is off and the second switch is on."
 msgstr ""
+
+#: activities/drawing_wheels/ActivityConfig.qml:29
+#: activities/sketch/ActivityConfig.qml:29
+#, fuzzy, qt-format
+#| msgctxt "guessnumber|"
+#| msgid "Number found!"
+msgctxt "ActivityConfig|"
+msgid "Number of undo: %1"
+msgstr "संख्या मिली!"
+
+#: activities/drawing_wheels/ActivityConfig.qml:44
+#: activities/sketch/ActivityConfig.qml:44
+msgctxt "ActivityConfig|"
+msgid ""
+"Warning: setting the number of undo too high can make the application crash "
+"if your device doesn't have enough memory."
+msgstr ""
+
+#. Activity title
+#: activities/drawing_wheels/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Draw Letters"
+msgctxt "ActivityInfo|"
+msgid "Drawing wheels"
+msgstr "अक्षर लिखें"
+
+# Ravi Ratlami <raviratlami@yahoo.com>, 2017.
+# G Karunakar <karunakar@indlinux.org>, 2017, 2018, 2020.
+# Utkarsh Tiwari <iamutkarshtiwari@gmail.com>, 2017.
+# Raghavendra Kamath <raghu@raghukamath.com>, 2021, 2022.
+# Raashi Saigal <raashisaigal26@gmail.com>, 2021.
+#. Help title
+#: activities/drawing_wheels/ActivityInfo.qml:16
+#, fuzzy
+#| msgid ""
+msgctxt "ActivityInfo|"
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2022-02-26 11:47+0530\n"
+"Last-Translator: Raghavendra Kamath <raghu@raghukamath.com>\n"
+"Language-Team: Hindi <kde-l10n-hi@kde.org>\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Language: en\n"
+"X-Qt-Contexts: true\n"
+"X-Generator: Lokalize 21.12.2\n"
+
+#. Help goal
+#: activities/drawing_wheels/ActivityInfo.qml:19
+msgctxt "ActivityInfo|"
+msgid ""
+"Make beautiful drawings by turning the gear in the cogwheel with the chosen "
+"pen."
+msgstr ""
+
+#. Help manual
+#: activities/drawing_wheels/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"Select wheel, gear, pen's position and color from the foldable panels and "
+"start the gear.<br><br>"
+msgstr ""
+
+#: activities/drawing_wheels/ActivityInfo.qml:25
+#: activities/sketch/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Ctrl + Z: undo last action"
+msgstr ""
+
+#: activities/drawing_wheels/ActivityInfo.qml:26
+#: activities/sketch/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Ctrl + Y: redo last action"
+msgstr ""
+
+#: activities/drawing_wheels/ActivityInfo.qml:27
+#: activities/sketch/ActivityInfo.qml:30
+#, fuzzy
+#| msgctxt "Categorization|"
+#| msgid "Update the image set"
+msgctxt "ActivityInfo|"
+msgid "Ctrl + S: save the image"
+msgstr "छवि सेट अद्यतन करें"
+
+#: activities/drawing_wheels/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "Categorization|"
+#| msgid "Update the image set"
+msgctxt "ActivityInfo|"
+msgid "Ctrl + D: save the drawing"
+msgstr "छवि सेट अद्यतन करें"
+
+#: activities/drawing_wheels/ActivityInfo.qml:29
+#: activities/sketch/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "Ctrl + O: open an image"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:353
+msgctxt "DrawingWheels|"
+msgid "Save drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:367
+msgctxt "DrawingWheels|"
+msgid "Wheel and gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:388
+msgctxt "DrawingWheels|"
+msgid "Pencil's color and width"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:401
+#, fuzzy
+#| msgctxt "Checkers|"
+#| msgid "Undo"
+msgctxt "DrawingWheels|"
+msgid "Undo"
+msgstr "पहले जैसा"
+
+#: activities/drawing_wheels/DrawingWheels.qml:414
+#, fuzzy
+#| msgctxt "Checkers|"
+#| msgid "Redo"
+msgctxt "DrawingWheels|"
+msgid "Redo"
+msgstr "फिर से करें"
+
+#: activities/drawing_wheels/DrawingWheels.qml:450
+msgctxt "DrawingWheels|"
+msgid "Stop drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:450
+msgctxt "DrawingWheels|"
+msgid "Start drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:482
+msgctxt "DrawingWheels|"
+msgid "Show wheel and gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:482
+msgctxt "DrawingWheels|"
+msgid "Hide wheel and gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:507
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Select your mode"
+msgctxt "DrawingWheels|"
+msgid "Save your image"
+msgstr "अपना मोड चुनें"
+
+#: activities/drawing_wheels/DrawingWheels.qml:523
+msgctxt "DrawingWheels|"
+msgid "Save as a drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:539
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Memory Game with images"
+msgctxt "DrawingWheels|"
+msgid "Open an image"
+msgstr "छवियों के साथ स्मरण के खेल"
+
+#: activities/drawing_wheels/DrawingWheels.qml:555
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Memory Game with images"
+msgctxt "DrawingWheels|"
+msgid "Create a new image"
+msgstr "छवियों के साथ स्मरण के खेल"
+
+#: activities/drawing_wheels/DrawingWheels.qml:598
+#: activities/drawing_wheels/DrawingWheels.qml:668
+msgctxt "DrawingWheels|"
+msgid "Wheel"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:630
+#: activities/drawing_wheels/DrawingWheels.qml:689
+msgctxt "DrawingWheels|"
+msgid "Gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:714
+#, fuzzy, qt-format
+#| msgctxt "SignalGenerator|"
+#| msgid "%1 s"
+msgctxt "DrawingWheels|"
+msgid "%1 spikes"
+msgstr "%1 s"
+
+#: activities/drawing_wheels/DrawingWheels.qml:722
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Speed"
+msgctxt "DrawingWheels|"
+msgid "Speed"
+msgstr "गति"
+
+#: activities/drawing_wheels/DrawingWheels.qml:734
+msgctxt "DrawingWheels|"
+msgid "Slow"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:749
+msgctxt "DrawingWheels|"
+msgid "Fast"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:781
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Draw Letters"
+msgctxt "DrawingWheels|"
+msgid "Palettes"
+msgstr "अक्षर लिखें"
+
+#: activities/drawing_wheels/DrawingWheels.qml:861
+#, fuzzy
+#| msgctxt "category_colors|"
+#| msgid "Colors"
+msgctxt "DrawingWheels|"
+msgid "Color"
+msgstr "रंग"
+
+#: activities/drawing_wheels/DrawingWheels.qml:888
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Font size"
+msgctxt "DrawingWheels|"
+msgid "Pensize"
+msgstr "फांट आकार"
+
+#: activities/drawing_wheels/DrawingWheels.qml:927
+msgctxt "DrawingWheels|"
+msgid "Opacity"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:955
+#, fuzzy
+#| msgctxt "board1_0|"
+#| msgid "Districts of France"
+msgctxt "DrawingWheels|"
+msgid "Distance to center"
+msgstr "फ्रांस के जिले"
+
+#: activities/drawing_wheels/DrawingWheels.qml:981
+msgctxt "DrawingWheels|"
+msgid "Starting tooth"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:1068
+msgctxt "DrawingWheels|"
+msgid "You did not save this image. Do you want to close this activity?"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:1069
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Do you want to download them now?"
+msgctxt "DrawingWheels|"
+msgid "Do you want to erase this image?"
+msgstr "क्या आप उन्हें अभी डाउनलोड करना चाहते हैं?"
+
+#: activities/drawing_wheels/DrawingWheels.qml:1070
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "Yes"
+msgctxt "DrawingWheels|"
+msgid "Yes"
+msgstr "हाँ "
+
+#: activities/drawing_wheels/DrawingWheels.qml:1071
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "No"
+msgctxt "DrawingWheels|"
+msgid "No"
+msgstr "नहीं"
 
 #. Activity title
 #: activities/drawletters/ActivityInfo.qml:15
@@ -27237,21 +27530,6 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
 msgstr ""
 
-#: activities/sketch/ActivityConfig.qml:29
-#, fuzzy, qt-format
-#| msgctxt "guessnumber|"
-#| msgid "Number found!"
-msgctxt "ActivityConfig|"
-msgid "Number of undo: %1"
-msgstr "संख्या मिली!"
-
-#: activities/sketch/ActivityConfig.qml:44
-msgctxt "ActivityConfig|"
-msgid ""
-"Warning: setting the number of undo too high can make the application crash "
-"if your device doesn't have enough memory."
-msgstr ""
-
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
@@ -27278,29 +27556,6 @@ msgstr "गुणज और भाज्य के बारे में जा
 msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
-msgstr ""
-
-#: activities/sketch/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Ctrl + Z: undo last action"
-msgstr ""
-
-#: activities/sketch/ActivityInfo.qml:29
-msgctxt "ActivityInfo|"
-msgid "Ctrl + Y: redo last action"
-msgstr ""
-
-#: activities/sketch/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "Categorization|"
-#| msgid "Update the image set"
-msgctxt "ActivityInfo|"
-msgid "Ctrl + S: save the image"
-msgstr "छवि सेट अद्यतन करें"
-
-#: activities/sketch/ActivityInfo.qml:31
-msgctxt "ActivityInfo|"
-msgid "Ctrl + O: open an image"
 msgstr ""
 
 #: activities/sketch/ActivityInfo.qml:32
@@ -31382,30 +31637,30 @@ msgctxt "QObject|"
 msgid "No data found for %1."
 msgstr ""
 
-#: core/GCCreationHandler.qml:175
+#: core/GCCreationHandler.qml:176
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "%1 deleted successfully!"
 msgstr ""
 
-#: core/GCCreationHandler.qml:176 core/GCCreationHandler.qml:181
-#: core/GCCreationHandler.qml:234
+#: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
+#: core/GCCreationHandler.qml:235
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr ""
 
-#: core/GCCreationHandler.qml:180
+#: core/GCCreationHandler.qml:181
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete %1!"
 msgstr ""
 
-#: core/GCCreationHandler.qml:214
+#: core/GCCreationHandler.qml:215
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
 msgstr ""
 
-#: core/GCCreationHandler.qml:215 core/GCCreationHandler.qml:222
+#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -31413,7 +31668,7 @@ msgctxt "GCCreationHandler|"
 msgid "Yes"
 msgstr "हाँ "
 
-#: core/GCCreationHandler.qml:215 core/GCCreationHandler.qml:222
+#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -31421,7 +31676,7 @@ msgctxt "GCCreationHandler|"
 msgid "No"
 msgstr "नहीं"
 
-#: core/GCCreationHandler.qml:221
+#: core/GCCreationHandler.qml:222
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Do you really want to quit GCompris?"
@@ -31429,22 +31684,22 @@ msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
 msgstr "क्या आप वाकई में जीकॉम्प्रिस से बाहर जाना चाहते हैं?"
 
-#: core/GCCreationHandler.qml:233
+#: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"
 msgid "Saved successfully!"
 msgstr ""
 
-#: core/GCCreationHandler.qml:264
+#: core/GCCreationHandler.qml:265
 msgctxt "GCCreationHandler|"
 msgid "Enter file name"
 msgstr ""
 
-#: core/GCCreationHandler.qml:264
+#: core/GCCreationHandler.qml:265
 msgctxt "GCCreationHandler|"
 msgid "Search"
 msgstr ""
 
-#: core/GCCreationHandler.qml:278
+#: core/GCCreationHandler.qml:279
 #, fuzzy
 #| msgctxt "BalanceboxEditor|"
 #| msgid "Save"
@@ -31452,12 +31707,12 @@ msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "सहेजें"
 
-#: core/GCCreationHandler.qml:384
+#: core/GCCreationHandler.qml:385
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr ""
 
-#: core/GCCreationHandler.qml:394
+#: core/GCCreationHandler.qml:395
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr ""
@@ -34749,10 +35004,6 @@ msgstr ""
 #~ msgctxt "Checkers|"
 #~ msgid "Undo"
 #~ msgstr "पहले जैसा"
-
-#~ msgctxt "Checkers|"
-#~ msgid "Redo"
-#~ msgstr "फिर से करें"
 
 #~ msgctxt "Checkers|"
 #~ msgid "Swap"

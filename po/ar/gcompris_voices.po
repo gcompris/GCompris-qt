@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:48+0000\n"
+"POT-Creation-Date: 2025-12-11 00:39+0000\n"
 "PO-Revision-Date: 2025-08-14 13:14+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -341,6 +341,12 @@ msgstr "ضع الصور في أماكنها"
 #, kde-format
 msgid "Learn how digital electronics work and create your own circuit."
 msgstr "تعلّم كيف تعمل الدارات الإلكترونية الرقمية وأنشئ دارتك."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "drawing_wheels"
+#: activities/drawing_wheels/ActivityInfo.qml:17
+#, kde-format
+msgid "put here in comment the text for the intro voice"
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"
 #: activities/drawletters/ActivityInfo.qml:18

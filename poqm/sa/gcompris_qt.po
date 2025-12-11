@@ -188,6 +188,7 @@ msgstr ""
 #: activities/colors/ActivityInfo.qml:25
 #: activities/comparator/ActivityInfo.qml:27
 #: activities/crane/ActivityInfo.qml:30
+#: activities/drawing_wheels/ActivityInfo.qml:24
 #: activities/enumerate/ActivityInfo.qml:25
 #: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
@@ -6471,6 +6472,297 @@ msgstr ""
 "द्वयोः स्विचयोः उपयोगेन बल्बं प्रज्वालयन्तु येन बल्बः केवलं तदा एव प्रकाशते यदा प्रथमः स्विचः "
 "चालू भवति द्वितीयः स्विचः निष्क्रियः भवति, अथवा प्रथमः स्विचः निष्क्रियः भवति द्वितीयः "
 "स्विचः चालू भवति"
+
+#: activities/drawing_wheels/ActivityConfig.qml:29
+#: activities/sketch/ActivityConfig.qml:29
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Numbers from 1 to 19."
+msgctxt "ActivityConfig|"
+msgid "Number of undo: %1"
+msgstr "१ तः १९ पर्यन्तं संख्याः ।"
+
+#: activities/drawing_wheels/ActivityConfig.qml:44
+#: activities/sketch/ActivityConfig.qml:44
+msgctxt "ActivityConfig|"
+msgid ""
+"Warning: setting the number of undo too high can make the application crash "
+"if your device doesn't have enough memory."
+msgstr ""
+
+#. Activity title
+#: activities/drawing_wheels/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "BrushToolPanel|"
+#| msgid "Drawing Tools"
+msgctxt "ActivityInfo|"
+msgid "Drawing wheels"
+msgstr "चित्रकलासाधनम्"
+
+# SPDX-FileCopyrightText: 2024 kali <skkalwar999@gmail.com>
+#. Help title
+#: activities/drawing_wheels/ActivityInfo.qml:16
+#, fuzzy
+#| msgid ""
+msgctxt "ActivityInfo|"
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2024-12-20 21:51+0530\n"
+"Last-Translator: kali <skkalwar999@gmail.com>\n"
+"Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
+"Language: sa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n>1);\n"
+"X-Qt-Contexts: true\n"
+"X-Generator: Lokalize 24.08.2\n"
+
+#. Help goal
+#: activities/drawing_wheels/ActivityInfo.qml:19
+msgctxt "ActivityInfo|"
+msgid ""
+"Make beautiful drawings by turning the gear in the cogwheel with the chosen "
+"pen."
+msgstr ""
+
+#. Help manual
+#: activities/drawing_wheels/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select tools and colors from the foldable panels and draw images.<br><br>"
+msgctxt "ActivityInfo|"
+msgid ""
+"Select wheel, gear, pen's position and color from the foldable panels and "
+"start the gear.<br><br>"
+msgstr "तन्तुयुक्तपटलेभ्यः साधनानि वर्णाः च चित्वा चित्राणि आकर्षयन्तु ।<br><br>"
+
+#: activities/drawing_wheels/ActivityInfo.qml:25
+#: activities/sketch/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Ctrl + Z: undo last action"
+msgstr "Ctrl + Z: अन्तिमक्रिया पूर्ववत"
+
+#: activities/drawing_wheels/ActivityInfo.qml:26
+#: activities/sketch/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Ctrl + Y: redo last action"
+msgstr "Ctrl + Y: अन्तिमक्रिया पुनः करो"
+
+#: activities/drawing_wheels/ActivityInfo.qml:27
+#: activities/sketch/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Ctrl + S: save the image"
+msgstr "Ctrl + S: चित्रं रक्षतु"
+
+#: activities/drawing_wheels/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Ctrl + S: save the image"
+msgctxt "ActivityInfo|"
+msgid "Ctrl + D: save the drawing"
+msgstr "Ctrl + S: चित्रं रक्षतु"
+
+#: activities/drawing_wheels/ActivityInfo.qml:29
+#: activities/sketch/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "Ctrl + O: open an image"
+msgstr "Ctrl + O: एकं चित्रं उद्घाटयन्तु"
+
+#: activities/drawing_wheels/DrawingWheels.qml:353
+msgctxt "DrawingWheels|"
+msgid "Save drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:367
+msgctxt "DrawingWheels|"
+msgid "Wheel and gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:388
+msgctxt "DrawingWheels|"
+msgid "Pencil's color and width"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:401
+#, fuzzy
+#| msgctxt "OptionsRow|"
+#| msgid "Undo"
+msgctxt "DrawingWheels|"
+msgid "Undo"
+msgstr "पूर्ववत"
+
+#: activities/drawing_wheels/DrawingWheels.qml:414
+msgctxt "DrawingWheels|"
+msgid "Redo"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:450
+msgctxt "DrawingWheels|"
+msgid "Stop drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:450
+msgctxt "DrawingWheels|"
+msgid "Start drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:482
+msgctxt "DrawingWheels|"
+msgid "Show wheel and gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:482
+msgctxt "DrawingWheels|"
+msgid "Hide wheel and gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:507
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Save your image"
+msgctxt "DrawingWheels|"
+msgid "Save your image"
+msgstr "स्वस्य चित्रं रक्षतु"
+
+#: activities/drawing_wheels/DrawingWheels.qml:523
+msgctxt "DrawingWheels|"
+msgid "Save as a drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:539
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Open an image"
+msgctxt "DrawingWheels|"
+msgid "Open an image"
+msgstr "एकं चित्रं उद्घाटयन्तु"
+
+#: activities/drawing_wheels/DrawingWheels.qml:555
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Create a new image"
+msgctxt "DrawingWheels|"
+msgid "Create a new image"
+msgstr "नूतनं चित्रं रचयन्तु"
+
+#: activities/drawing_wheels/DrawingWheels.qml:598
+#: activities/drawing_wheels/DrawingWheels.qml:668
+msgctxt "DrawingWheels|"
+msgid "Wheel"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:630
+#: activities/drawing_wheels/DrawingWheels.qml:689
+msgctxt "DrawingWheels|"
+msgid "Gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:714
+#, fuzzy, qt-format
+#| msgctxt "SignalGenerator|"
+#| msgid "%1 s"
+msgctxt "DrawingWheels|"
+msgid "%1 spikes"
+msgstr "%1 स"
+
+#: activities/drawing_wheels/DrawingWheels.qml:722
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Speed"
+msgctxt "DrawingWheels|"
+msgid "Speed"
+msgstr "गति"
+
+#: activities/drawing_wheels/DrawingWheels.qml:734
+msgctxt "DrawingWheels|"
+msgid "Slow"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:749
+msgctxt "DrawingWheels|"
+msgid "Fast"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:781
+#, fuzzy
+#| msgctxt "ColorsPanel|"
+#| msgid "Palettes"
+msgctxt "DrawingWheels|"
+msgid "Palettes"
+msgstr "पॅलेट्स"
+
+#: activities/drawing_wheels/DrawingWheels.qml:861
+#, fuzzy
+#| msgctxt "category_colors|"
+#| msgid "Colors"
+msgctxt "DrawingWheels|"
+msgid "Color"
+msgstr "वर्णाः"
+
+#: activities/drawing_wheels/DrawingWheels.qml:888
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Font size"
+msgctxt "DrawingWheels|"
+msgid "Pensize"
+msgstr "फन्ट् आकारः"
+
+#: activities/drawing_wheels/DrawingWheels.qml:927
+#, fuzzy
+#| msgctxt "ToolsPanel|"
+#| msgid "Opacity"
+msgctxt "DrawingWheels|"
+msgid "Opacity"
+msgstr "अपारदर्शिता"
+
+#: activities/drawing_wheels/DrawingWheels.qml:955
+#, fuzzy
+#| msgctxt "board9_0|"
+#| msgid "Districto Federal"
+msgctxt "DrawingWheels|"
+msgid "Distance to center"
+msgstr "संघीय जिला"
+
+#: activities/drawing_wheels/DrawingWheels.qml:981
+msgctxt "DrawingWheels|"
+msgid "Starting tooth"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:1068
+#, fuzzy
+#| msgctxt "Sketch|"
+#| msgid "You did not save this image. Do you want to close this activity?"
+msgctxt "DrawingWheels|"
+msgid "You did not save this image. Do you want to close this activity?"
+msgstr "भवता एतत् चित्रं न रक्षितम्। किं भवन्तः एतत् कार्यं पिधातुम् इच्छन्ति ?"
+
+#: activities/drawing_wheels/DrawingWheels.qml:1069
+#, fuzzy
+#| msgctxt "Sketch|"
+#| msgid "Do you want to erase this image?"
+msgctxt "DrawingWheels|"
+msgid "Do you want to erase this image?"
+msgstr "किं भवन्तः एतत् चित्रं मेटयितुम् इच्छन्ति ?"
+
+#: activities/drawing_wheels/DrawingWheels.qml:1070
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "Yes"
+msgctxt "DrawingWheels|"
+msgid "Yes"
+msgstr "आम्‌"
+
+#: activities/drawing_wheels/DrawingWheels.qml:1071
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "No"
+msgctxt "DrawingWheels|"
+msgid "No"
+msgstr "नहि"
 
 #. Activity title
 #: activities/drawletters/ActivityInfo.qml:15
@@ -24003,21 +24295,6 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
 msgstr "ट्याब्: वर्णचयनकस्य चित्रक्षेत्रस्य च मध्ये स्विच् कुर्वन्तु"
 
-#: activities/sketch/ActivityConfig.qml:29
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 19."
-msgctxt "ActivityConfig|"
-msgid "Number of undo: %1"
-msgstr "१ तः १९ पर्यन्तं संख्याः ।"
-
-#: activities/sketch/ActivityConfig.qml:44
-msgctxt "ActivityConfig|"
-msgid ""
-"Warning: setting the number of undo too high can make the application crash "
-"if your device doesn't have enough memory."
-msgstr ""
-
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
@@ -24042,26 +24319,6 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
 msgstr "तन्तुयुक्तपटलेभ्यः साधनानि वर्णाः च चित्वा चित्राणि आकर्षयन्तु ।<br><br>"
-
-#: activities/sketch/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Ctrl + Z: undo last action"
-msgstr "Ctrl + Z: अन्तिमक्रिया पूर्ववत"
-
-#: activities/sketch/ActivityInfo.qml:29
-msgctxt "ActivityInfo|"
-msgid "Ctrl + Y: redo last action"
-msgstr "Ctrl + Y: अन्तिमक्रिया पुनः करो"
-
-#: activities/sketch/ActivityInfo.qml:30
-msgctxt "ActivityInfo|"
-msgid "Ctrl + S: save the image"
-msgstr "Ctrl + S: चित्रं रक्षतु"
-
-#: activities/sketch/ActivityInfo.qml:31
-msgctxt "ActivityInfo|"
-msgid "Ctrl + O: open an image"
-msgstr "Ctrl + O: एकं चित्रं उद्घाटयन्तु"
 
 #: activities/sketch/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -27718,70 +27975,70 @@ msgctxt "QObject|"
 msgid "No data found for %1."
 msgstr "%1 कृते कोऽपि दत्तांशः न प्राप्तः ।"
 
-#: core/GCCreationHandler.qml:175
+#: core/GCCreationHandler.qml:176
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "%1 deleted successfully!"
 msgstr "%1 सफलतया विलोपितम्!"
 
-#: core/GCCreationHandler.qml:176 core/GCCreationHandler.qml:181
-#: core/GCCreationHandler.qml:234
+#: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
+#: core/GCCreationHandler.qml:235
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr "अस्तु"
 
-#: core/GCCreationHandler.qml:180
+#: core/GCCreationHandler.qml:181
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete %1!"
 msgstr "%1 विलोपयितुं असमर्थः!"
 
-#: core/GCCreationHandler.qml:214
+#: core/GCCreationHandler.qml:215
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
 msgstr "एतत्नाम्ना सञ्चिका पूर्वमेव अस्ति । किं भवन्तः तस्य स्थाने अन्यं स्थापयितुम् इच्छन्ति ?"
 
-#: core/GCCreationHandler.qml:215 core/GCCreationHandler.qml:222
+#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
 msgctxt "GCCreationHandler|"
 msgid "Yes"
 msgstr "आम्‌"
 
-#: core/GCCreationHandler.qml:215 core/GCCreationHandler.qml:222
+#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
 msgctxt "GCCreationHandler|"
 msgid "No"
 msgstr "नहि"
 
-#: core/GCCreationHandler.qml:221
+#: core/GCCreationHandler.qml:222
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
 msgstr "किं भवान् वास्तवमेव एतां सञ्चिकां विलोपयितुम् इच्छति ?"
 
-#: core/GCCreationHandler.qml:233
+#: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"
 msgid "Saved successfully!"
 msgstr "सफलतया रक्षितम् !"
 
-#: core/GCCreationHandler.qml:264
+#: core/GCCreationHandler.qml:265
 msgctxt "GCCreationHandler|"
 msgid "Enter file name"
 msgstr "सञ्चिकानाम प्रविष्टं कुर्वन्तु"
 
-#: core/GCCreationHandler.qml:264
+#: core/GCCreationHandler.qml:265
 msgctxt "GCCreationHandler|"
 msgid "Search"
 msgstr "अन्वेषण"
 
-#: core/GCCreationHandler.qml:278
+#: core/GCCreationHandler.qml:279
 msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "रक्ष्"
 
-#: core/GCCreationHandler.qml:384
+#: core/GCCreationHandler.qml:385
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "भार"
 
-#: core/GCCreationHandler.qml:394
+#: core/GCCreationHandler.qml:395
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "लुप्"

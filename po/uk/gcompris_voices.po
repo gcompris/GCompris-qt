@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:48+0000\n"
+"POT-Creation-Date: 2025-12-11 00:39+0000\n"
 "PO-Revision-Date: 2024-12-10 09:50+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -366,6 +366,12 @@ msgid "Learn how digital electronics work and create your own circuit."
 msgstr ""
 "Ознайомтеся із принципами роботи цифрової електроніки і створіть власний "
 "електронний пристрій."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "drawing_wheels"
+#: activities/drawing_wheels/ActivityInfo.qml:17
+#, kde-format
+msgid "put here in comment the text for the intro voice"
+msgstr "тут можна вказати коментар до тексту вступного голосового зауваження"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"
 #: activities/drawletters/ActivityInfo.qml:18
@@ -1389,10 +1395,6 @@ msgstr ""
 #, kde-format
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr "Встигніть ввести слова з клавіатури, доки вони не впали."
-
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr ""
-#~ "тут можна вказати коментар до тексту вступного голосового зауваження"
 
 #~ msgid "play checkers against the computer"
 #~ msgstr "зіграйте у шашки з комп'ютером"

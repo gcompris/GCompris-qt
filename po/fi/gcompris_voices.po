@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:48+0000\n"
+"POT-Creation-Date: 2025-12-11 00:39+0000\n"
 "PO-Revision-Date: 2025-03-03 19:07+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -369,6 +369,12 @@ msgstr "Siirrä kuvat oikeisiin kohteisiinsa"
 #, kde-format
 msgid "Learn how digital electronics work and create your own circuit."
 msgstr "Opi, kuinka digitaalinen elektroniikka toimii ja luo oma virtapiirisi."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "drawing_wheels"
+#: activities/drawing_wheels/ActivityInfo.qml:17
+#, kde-format
+msgid "put here in comment the text for the intro voice"
+msgstr "pane tähän kommenttina esittelyäänen teksti"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"
 #: activities/drawletters/ActivityInfo.qml:18
@@ -1379,9 +1385,6 @@ msgstr ""
 #, kde-format
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr "Kirjoita sanat näppäimistöllä ennen kuin putoavat maahan."
-
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "pane tähän kommenttina esittelyäänen teksti"
 
 #~ msgid "play checkers against the computer"
 #~ msgstr "pelaa tammea tietokonetta vastaan"

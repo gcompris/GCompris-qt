@@ -189,6 +189,7 @@ msgstr ""
 #: activities/colors/ActivityInfo.qml:25
 #: activities/comparator/ActivityInfo.qml:27
 #: activities/crane/ActivityInfo.qml:30
+#: activities/drawing_wheels/ActivityInfo.qml:24
 #: activities/enumerate/ActivityInfo.qml:25
 #: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
@@ -6574,6 +6575,291 @@ msgstr ""
 "Izmanto abus slēdžus, lai spuldze spīdētu tikai tad, kad ir ieslēgts pirmais "
 "slēdzis, bet izslēgts otrais slēdzis, vai tad, kad pirmais slēdzis ir "
 "izslēgts, bet otrais slēdzis ir ieslēgts."
+
+#: activities/drawing_wheels/ActivityConfig.qml:29
+#: activities/sketch/ActivityConfig.qml:29
+#, fuzzy, qt-format
+#| msgctxt "ActivityInfo|"
+#| msgid "Number"
+msgctxt "ActivityConfig|"
+msgid "Number of undo: %1"
+msgstr "Skaitlis"
+
+#: activities/drawing_wheels/ActivityConfig.qml:44
+#: activities/sketch/ActivityConfig.qml:44
+msgctxt "ActivityConfig|"
+msgid ""
+"Warning: setting the number of undo too high can make the application crash "
+"if your device doesn't have enough memory."
+msgstr ""
+
+#. Activity title
+#: activities/drawing_wheels/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "BrushToolPanel|"
+#| msgid "Drawing Tools"
+msgctxt "ActivityInfo|"
+msgid "Drawing wheels"
+msgstr "Zīmēšanas rīks"
+
+#. Help title
+#: activities/drawing_wheels/ActivityInfo.qml:16
+#, fuzzy
+#| msgid ""
+msgctxt "ActivityInfo|"
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+"X-Language: lv\n"
+"X-Qt-Contexts: true\n"
+
+#. Help goal
+#: activities/drawing_wheels/ActivityInfo.qml:19
+msgctxt "ActivityInfo|"
+msgid ""
+"Make beautiful drawings by turning the gear in the cogwheel with the chosen "
+"pen."
+msgstr ""
+
+#. Help manual
+#: activities/drawing_wheels/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select tools and colors from the foldable panels and draw images.<br><br>"
+msgctxt "ActivityInfo|"
+msgid ""
+"Select wheel, gear, pen's position and color from the foldable panels and "
+"start the gear.<br><br>"
+msgstr "Atlasi rīkus un krāsas no sakļaujamiem paneļiem un zīmē.<br><br>"
+
+#: activities/drawing_wheels/ActivityInfo.qml:25
+#: activities/sketch/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Ctrl + Z: undo last action"
+msgstr "„Ctrl“ + Z: atsauc pēdējo darbību"
+
+#: activities/drawing_wheels/ActivityInfo.qml:26
+#: activities/sketch/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Ctrl + Y: redo last action"
+msgstr "„Ctrl“ + Y: atatsauc pēdējo darbību"
+
+#: activities/drawing_wheels/ActivityInfo.qml:27
+#: activities/sketch/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Ctrl + S: save the image"
+msgstr "„Ctrl“ + S: saglabā zīmējumu"
+
+#: activities/drawing_wheels/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Ctrl + S: save the image"
+msgctxt "ActivityInfo|"
+msgid "Ctrl + D: save the drawing"
+msgstr "„Ctrl“ + S: saglabā zīmējumu"
+
+#: activities/drawing_wheels/ActivityInfo.qml:29
+#: activities/sketch/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "Ctrl + O: open an image"
+msgstr "„Ctrl“ + O: atver attēlu"
+
+#: activities/drawing_wheels/DrawingWheels.qml:353
+msgctxt "DrawingWheels|"
+msgid "Save drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:367
+msgctxt "DrawingWheels|"
+msgid "Wheel and gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:388
+msgctxt "DrawingWheels|"
+msgid "Pencil's color and width"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:401
+#, fuzzy
+#| msgctxt "OptionsRow|"
+#| msgid "Undo"
+msgctxt "DrawingWheels|"
+msgid "Undo"
+msgstr "Atsaukt"
+
+#: activities/drawing_wheels/DrawingWheels.qml:414
+msgctxt "DrawingWheels|"
+msgid "Redo"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:450
+msgctxt "DrawingWheels|"
+msgid "Stop drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:450
+msgctxt "DrawingWheels|"
+msgid "Start drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:482
+msgctxt "DrawingWheels|"
+msgid "Show wheel and gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:482
+msgctxt "DrawingWheels|"
+msgid "Hide wheel and gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:507
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Save your image"
+msgctxt "DrawingWheels|"
+msgid "Save your image"
+msgstr "Saglabā savu zīmējumu"
+
+#: activities/drawing_wheels/DrawingWheels.qml:523
+msgctxt "DrawingWheels|"
+msgid "Save as a drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:539
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Open an image"
+msgctxt "DrawingWheels|"
+msgid "Open an image"
+msgstr "Atvērt zīmējumu"
+
+#: activities/drawing_wheels/DrawingWheels.qml:555
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Create a new image"
+msgctxt "DrawingWheels|"
+msgid "Create a new image"
+msgstr "Izveidot jaunu attēlu"
+
+#: activities/drawing_wheels/DrawingWheels.qml:598
+#: activities/drawing_wheels/DrawingWheels.qml:668
+msgctxt "DrawingWheels|"
+msgid "Wheel"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:630
+#: activities/drawing_wheels/DrawingWheels.qml:689
+msgctxt "DrawingWheels|"
+msgid "Gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:714
+#, fuzzy, qt-format
+#| msgctxt "SignalGenerator|"
+#| msgid "%1 s"
+msgctxt "DrawingWheels|"
+msgid "%1 spikes"
+msgstr "%1 sek."
+
+#: activities/drawing_wheels/DrawingWheels.qml:722
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Speed"
+msgctxt "DrawingWheels|"
+msgid "Speed"
+msgstr "Ātrums"
+
+#: activities/drawing_wheels/DrawingWheels.qml:734
+msgctxt "DrawingWheels|"
+msgid "Slow"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:749
+msgctxt "DrawingWheels|"
+msgid "Fast"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:781
+#, fuzzy
+#| msgctxt "ColorsPanel|"
+#| msgid "Palettes"
+msgctxt "DrawingWheels|"
+msgid "Palettes"
+msgstr "Paletes"
+
+#: activities/drawing_wheels/DrawingWheels.qml:861
+#, fuzzy
+#| msgctxt "category_colors|"
+#| msgid "Colors"
+msgctxt "DrawingWheels|"
+msgid "Color"
+msgstr "Krāsas"
+
+#: activities/drawing_wheels/DrawingWheels.qml:888
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Font size"
+msgctxt "DrawingWheels|"
+msgid "Pensize"
+msgstr "Fonta izmērs"
+
+#: activities/drawing_wheels/DrawingWheels.qml:927
+#, fuzzy
+#| msgctxt "ToolsPanel|"
+#| msgid "Opacity"
+msgctxt "DrawingWheels|"
+msgid "Opacity"
+msgstr "Necaurspīdība"
+
+#: activities/drawing_wheels/DrawingWheels.qml:955
+#, fuzzy
+#| msgctxt "board9_0|"
+#| msgid "Districto Federal"
+msgctxt "DrawingWheels|"
+msgid "Distance to center"
+msgstr "Federālais distrikts"
+
+#: activities/drawing_wheels/DrawingWheels.qml:981
+msgctxt "DrawingWheels|"
+msgid "Starting tooth"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:1068
+#, fuzzy
+#| msgctxt "Sketch|"
+#| msgid "You did not save this image. Do you want to close this activity?"
+msgctxt "DrawingWheels|"
+msgid "You did not save this image. Do you want to close this activity?"
+msgstr "Tu vēl nesaglabāji zīmējumu. Vai vēlies aizvērt šo aktivitāti?"
+
+#: activities/drawing_wheels/DrawingWheels.qml:1069
+#, fuzzy
+#| msgctxt "Sketch|"
+#| msgid "Do you want to erase this image?"
+msgctxt "DrawingWheels|"
+msgid "Do you want to erase this image?"
+msgstr "Vai vēlies dzēst šo zīmējumu?"
+
+#: activities/drawing_wheels/DrawingWheels.qml:1070
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "Yes"
+msgctxt "DrawingWheels|"
+msgid "Yes"
+msgstr "Jā"
+
+#: activities/drawing_wheels/DrawingWheels.qml:1071
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "No"
+msgctxt "DrawingWheels|"
+msgid "No"
+msgstr "Nē"
 
 #. Activity title
 #: activities/drawletters/ActivityInfo.qml:15
@@ -24343,21 +24629,6 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
 msgstr "„Tab“ taustiņš: pārslēdzas starp krāsu atlasīšanas un krāsošanas zonu"
 
-#: activities/sketch/ActivityConfig.qml:29
-#, fuzzy, qt-format
-#| msgctxt "ActivityInfo|"
-#| msgid "Number"
-msgctxt "ActivityConfig|"
-msgid "Number of undo: %1"
-msgstr "Skaitlis"
-
-#: activities/sketch/ActivityConfig.qml:44
-msgctxt "ActivityConfig|"
-msgid ""
-"Warning: setting the number of undo too high can make the application crash "
-"if your device doesn't have enough memory."
-msgstr ""
-
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
@@ -24382,26 +24653,6 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
 msgstr "Atlasi rīkus un krāsas no sakļaujamiem paneļiem un zīmē.<br><br>"
-
-#: activities/sketch/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Ctrl + Z: undo last action"
-msgstr "„Ctrl“ + Z: atsauc pēdējo darbību"
-
-#: activities/sketch/ActivityInfo.qml:29
-msgctxt "ActivityInfo|"
-msgid "Ctrl + Y: redo last action"
-msgstr "„Ctrl“ + Y: atatsauc pēdējo darbību"
-
-#: activities/sketch/ActivityInfo.qml:30
-msgctxt "ActivityInfo|"
-msgid "Ctrl + S: save the image"
-msgstr "„Ctrl“ + S: saglabā zīmējumu"
-
-#: activities/sketch/ActivityInfo.qml:31
-msgctxt "ActivityInfo|"
-msgid "Ctrl + O: open an image"
-msgstr "„Ctrl“ + O: atver attēlu"
 
 #: activities/sketch/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -28068,70 +28319,70 @@ msgctxt "QObject|"
 msgid "No data found for %1."
 msgstr "Nav atrasti %1 dati."
 
-#: core/GCCreationHandler.qml:175
+#: core/GCCreationHandler.qml:176
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "%1 deleted successfully!"
 msgstr "%1 ir izdzēsts!"
 
-#: core/GCCreationHandler.qml:176 core/GCCreationHandler.qml:181
-#: core/GCCreationHandler.qml:234
+#: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
+#: core/GCCreationHandler.qml:235
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr "Labi"
 
-#: core/GCCreationHandler.qml:180
+#: core/GCCreationHandler.qml:181
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete %1!"
 msgstr "Neizdodas dzēst %1!"
 
-#: core/GCCreationHandler.qml:214
+#: core/GCCreationHandler.qml:215
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
 msgstr "Jau pastāv datne ar šādu nosaukumu. Vai vēlaties to aizstāt?"
 
-#: core/GCCreationHandler.qml:215 core/GCCreationHandler.qml:222
+#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
 msgctxt "GCCreationHandler|"
 msgid "Yes"
 msgstr "Jā"
 
-#: core/GCCreationHandler.qml:215 core/GCCreationHandler.qml:222
+#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
 msgctxt "GCCreationHandler|"
 msgid "No"
 msgstr "Nē"
 
-#: core/GCCreationHandler.qml:221
+#: core/GCCreationHandler.qml:222
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
 msgstr "Vai tiešām vēlies dzēst šo datni?"
 
-#: core/GCCreationHandler.qml:233
+#: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"
 msgid "Saved successfully!"
 msgstr "Saglabāts!"
 
-#: core/GCCreationHandler.qml:264
+#: core/GCCreationHandler.qml:265
 msgctxt "GCCreationHandler|"
 msgid "Enter file name"
 msgstr "Ierakstiet datnes nosaukumu"
 
-#: core/GCCreationHandler.qml:264
+#: core/GCCreationHandler.qml:265
 msgctxt "GCCreationHandler|"
 msgid "Search"
 msgstr "Meklēt"
 
-#: core/GCCreationHandler.qml:278
+#: core/GCCreationHandler.qml:279
 msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "Saglabāt"
 
-#: core/GCCreationHandler.qml:384
+#: core/GCCreationHandler.qml:385
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "Ielādēt"
 
-#: core/GCCreationHandler.qml:394
+#: core/GCCreationHandler.qml:395
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Dzēst"
@@ -29528,19 +29779,6 @@ msgstr "Sākt"
 #~ msgctxt "board4_1|"
 #~ msgid "Aviation"
 #~ msgstr "Saskaitīšana"
-
-#, fuzzy
-#~| msgid ""
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ msgstr ""
-#~ "MIME-Version: 1.0\n"
-#~ "Content-Type: text/plain; charset=UTF-8\n"
-#~ "Content-Transfer-Encoding: 8bit\n"
-#~ "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
-#~ "2);\n"
-#~ "X-Language: lv\n"
-#~ "X-Qt-Contexts: true\n"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Train your audio memory and remove all the violinists Tux."

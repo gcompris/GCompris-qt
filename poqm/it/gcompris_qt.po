@@ -188,6 +188,7 @@ msgstr ""
 #: activities/colors/ActivityInfo.qml:25
 #: activities/comparator/ActivityInfo.qml:27
 #: activities/crane/ActivityInfo.qml:30
+#: activities/drawing_wheels/ActivityInfo.qml:24
 #: activities/enumerate/ActivityInfo.qml:25
 #: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
@@ -6761,6 +6762,304 @@ msgstr ""
 "Accendi la lampadina utilizzando entrambi gli interruttori in modo che la "
 "lampadina si illumini solo quando il primo interruttore è acceso e il "
 "secondo è spento o il primo interruttore è spento e il secondo è acceso."
+
+# Anche "Numero indovinato!" o "Hai trovato il numero!"
+#: activities/drawing_wheels/ActivityConfig.qml:29
+#: activities/sketch/ActivityConfig.qml:29
+#, qt-format
+msgctxt "ActivityConfig|"
+msgid "Number of undo: %1"
+msgstr "Numero di annullamenti: %1"
+
+#: activities/drawing_wheels/ActivityConfig.qml:44
+#: activities/sketch/ActivityConfig.qml:44
+msgctxt "ActivityConfig|"
+msgid ""
+"Warning: setting the number of undo too high can make the application crash "
+"if your device doesn't have enough memory."
+msgstr ""
+"Attenzione: impostare un numero di annullamenti troppo alto può causare "
+"l'arresto anomalo dell'applicazione se il dispositivo non dispone di memoria "
+"sufficiente."
+
+#. Activity title
+#: activities/drawing_wheels/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "BrushToolPanel|"
+#| msgid "Drawing Tools"
+msgctxt "ActivityInfo|"
+msgid "Drawing wheels"
+msgstr "Strumenti di disegno"
+
+# Vincenzo Reale <smart2128@baslug.org>, 2014, 2015.
+# Paolo Gibellini <p.gibellini@gmail.com>, 2015.
+#. Help title
+#: activities/drawing_wheels/ActivityInfo.qml:16
+#, fuzzy
+#| msgid ""
+msgctxt "ActivityInfo|"
+msgid ""
+msgstr ""
+"Project-Id-Version: gcompris_qt\n"
+"PO-Revision-Date: 2015-03-08 09:55+0100\n"
+"Last-Translator: Vincenzo Reale <smart2128@baslug.org>\n"
+"Language-Team: Italian <kde-i18n-it@kde.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+"X-Qt-Contexts: true\n"
+
+#. Help goal
+#: activities/drawing_wheels/ActivityInfo.qml:19
+msgctxt "ActivityInfo|"
+msgid ""
+"Make beautiful drawings by turning the gear in the cogwheel with the chosen "
+"pen."
+msgstr ""
+
+#. Help manual
+#: activities/drawing_wheels/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select tools and colors from the foldable panels and draw images.<br><br>"
+msgctxt "ActivityInfo|"
+msgid ""
+"Select wheel, gear, pen's position and color from the foldable panels and "
+"start the gear.<br><br>"
+msgstr ""
+"Seleziona strumenti e colori dai pannelli pieghevoli e disegna immagini."
+"<br><br>"
+
+#: activities/drawing_wheels/ActivityInfo.qml:25
+#: activities/sketch/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Ctrl + Z: undo last action"
+msgstr "Ctrl + Z: annulla l'ultima azione"
+
+#: activities/drawing_wheels/ActivityInfo.qml:26
+#: activities/sketch/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Ctrl + Y: redo last action"
+msgstr "Ctrl + Y: ripeti l'ultima azione"
+
+#: activities/drawing_wheels/ActivityInfo.qml:27
+#: activities/sketch/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Ctrl + S: save the image"
+msgstr "Ctrl + S: salva l'immagine"
+
+#: activities/drawing_wheels/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Ctrl + S: save the image"
+msgctxt "ActivityInfo|"
+msgid "Ctrl + D: save the drawing"
+msgstr "Ctrl + S: salva l'immagine"
+
+#: activities/drawing_wheels/ActivityInfo.qml:29
+#: activities/sketch/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "Ctrl + O: open an image"
+msgstr "Ctrl + O: apri un'immagine"
+
+#: activities/drawing_wheels/DrawingWheels.qml:353
+msgctxt "DrawingWheels|"
+msgid "Save drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:367
+msgctxt "DrawingWheels|"
+msgid "Wheel and gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:388
+msgctxt "DrawingWheels|"
+msgid "Pencil's color and width"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:401
+#, fuzzy
+#| msgctxt "OptionsRow|"
+#| msgid "Undo"
+msgctxt "DrawingWheels|"
+msgid "Undo"
+msgstr "Annulla"
+
+#: activities/drawing_wheels/DrawingWheels.qml:414
+#, fuzzy
+#| msgctxt "Checkers|"
+#| msgid "Redo"
+msgctxt "DrawingWheels|"
+msgid "Redo"
+msgstr "Rifai"
+
+#: activities/drawing_wheels/DrawingWheels.qml:450
+msgctxt "DrawingWheels|"
+msgid "Stop drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:450
+msgctxt "DrawingWheels|"
+msgid "Start drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:482
+msgctxt "DrawingWheels|"
+msgid "Show wheel and gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:482
+msgctxt "DrawingWheels|"
+msgid "Hide wheel and gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:507
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Save your image"
+msgctxt "DrawingWheels|"
+msgid "Save your image"
+msgstr "Salva la tua immagine"
+
+#: activities/drawing_wheels/DrawingWheels.qml:523
+msgctxt "DrawingWheels|"
+msgid "Save as a drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:539
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Open an image"
+msgctxt "DrawingWheels|"
+msgid "Open an image"
+msgstr "Apri un'immagine"
+
+#: activities/drawing_wheels/DrawingWheels.qml:555
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Create a new image"
+msgctxt "DrawingWheels|"
+msgid "Create a new image"
+msgstr "Crea una nuova immagine"
+
+#: activities/drawing_wheels/DrawingWheels.qml:598
+#: activities/drawing_wheels/DrawingWheels.qml:668
+msgctxt "DrawingWheels|"
+msgid "Wheel"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:630
+#: activities/drawing_wheels/DrawingWheels.qml:689
+msgctxt "DrawingWheels|"
+msgid "Gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:714
+#, fuzzy, qt-format
+#| msgctxt "SignalGenerator|"
+#| msgid "%1 s"
+msgctxt "DrawingWheels|"
+msgid "%1 spikes"
+msgstr "%1 s"
+
+#: activities/drawing_wheels/DrawingWheels.qml:722
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Speed"
+msgctxt "DrawingWheels|"
+msgid "Speed"
+msgstr "Velocità"
+
+#: activities/drawing_wheels/DrawingWheels.qml:734
+msgctxt "DrawingWheels|"
+msgid "Slow"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:749
+msgctxt "DrawingWheels|"
+msgid "Fast"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:781
+#, fuzzy
+#| msgctxt "ColorsPanel|"
+#| msgid "Palettes"
+msgctxt "DrawingWheels|"
+msgid "Palettes"
+msgstr "Tavolozze"
+
+#: activities/drawing_wheels/DrawingWheels.qml:861
+#, fuzzy
+#| msgctxt "category_colors|"
+#| msgid "Colors"
+msgctxt "DrawingWheels|"
+msgid "Color"
+msgstr "Colori"
+
+#: activities/drawing_wheels/DrawingWheels.qml:888
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Font size"
+msgctxt "DrawingWheels|"
+msgid "Pensize"
+msgstr "Dimensione dei caratteri"
+
+#: activities/drawing_wheels/DrawingWheels.qml:927
+#, fuzzy
+#| msgctxt "ToolsPanel|"
+#| msgid "Opacity"
+msgctxt "DrawingWheels|"
+msgid "Opacity"
+msgstr "Opacità"
+
+#: activities/drawing_wheels/DrawingWheels.qml:955
+#, fuzzy
+#| msgctxt "board9_0|"
+#| msgid "Districto Federal"
+msgctxt "DrawingWheels|"
+msgid "Distance to center"
+msgstr "Distretto federale"
+
+#: activities/drawing_wheels/DrawingWheels.qml:981
+msgctxt "DrawingWheels|"
+msgid "Starting tooth"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:1068
+#, fuzzy
+#| msgctxt "Sketch|"
+#| msgid "You did not save this image. Do you want to close this activity?"
+msgctxt "DrawingWheels|"
+msgid "You did not save this image. Do you want to close this activity?"
+msgstr "Non hai salvato questa immagine. Vuoi chiudere questa attività?"
+
+#: activities/drawing_wheels/DrawingWheels.qml:1069
+#, fuzzy
+#| msgctxt "Sketch|"
+#| msgid "Do you want to erase this image?"
+msgctxt "DrawingWheels|"
+msgid "Do you want to erase this image?"
+msgstr "Vuoi cancellare questa immagine?"
+
+#: activities/drawing_wheels/DrawingWheels.qml:1070
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "Yes"
+msgctxt "DrawingWheels|"
+msgid "Yes"
+msgstr "Sì"
+
+#: activities/drawing_wheels/DrawingWheels.qml:1071
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "No"
+msgctxt "DrawingWheels|"
+msgid "No"
+msgstr "No"
 
 #. Activity title
 #: activities/drawletters/ActivityInfo.qml:15
@@ -24688,23 +24987,6 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
 msgstr "Tab: alterna tra il selettore del colore e l'area di disegno"
 
-# Anche "Numero indovinato!" o "Hai trovato il numero!"
-#: activities/sketch/ActivityConfig.qml:29
-#, qt-format
-msgctxt "ActivityConfig|"
-msgid "Number of undo: %1"
-msgstr "Numero di annullamenti: %1"
-
-#: activities/sketch/ActivityConfig.qml:44
-msgctxt "ActivityConfig|"
-msgid ""
-"Warning: setting the number of undo too high can make the application crash "
-"if your device doesn't have enough memory."
-msgstr ""
-"Attenzione: impostare un numero di annullamenti troppo alto può causare "
-"l'arresto anomalo dell'applicazione se il dispositivo non dispone di memoria "
-"sufficiente."
-
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
@@ -24731,26 +25013,6 @@ msgid ""
 msgstr ""
 "Seleziona strumenti e colori dai pannelli pieghevoli e disegna immagini."
 "<br><br>"
-
-#: activities/sketch/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Ctrl + Z: undo last action"
-msgstr "Ctrl + Z: annulla l'ultima azione"
-
-#: activities/sketch/ActivityInfo.qml:29
-msgctxt "ActivityInfo|"
-msgid "Ctrl + Y: redo last action"
-msgstr "Ctrl + Y: ripeti l'ultima azione"
-
-#: activities/sketch/ActivityInfo.qml:30
-msgctxt "ActivityInfo|"
-msgid "Ctrl + S: save the image"
-msgstr "Ctrl + S: salva l'immagine"
-
-#: activities/sketch/ActivityInfo.qml:31
-msgctxt "ActivityInfo|"
-msgid "Ctrl + O: open an image"
-msgstr "Ctrl + O: apri un'immagine"
 
 #: activities/sketch/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -28441,70 +28703,70 @@ msgctxt "QObject|"
 msgid "No data found for %1."
 msgstr "Nessun dato trovato per %1."
 
-#: core/GCCreationHandler.qml:175
+#: core/GCCreationHandler.qml:176
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "%1 deleted successfully!"
 msgstr "%1 eliminato correttamente!"
 
-#: core/GCCreationHandler.qml:176 core/GCCreationHandler.qml:181
-#: core/GCCreationHandler.qml:234
+#: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
+#: core/GCCreationHandler.qml:235
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr "OK"
 
-#: core/GCCreationHandler.qml:180
+#: core/GCCreationHandler.qml:181
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete %1!"
 msgstr "Impossibile eliminare %1!"
 
-#: core/GCCreationHandler.qml:214
+#: core/GCCreationHandler.qml:215
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
 msgstr "Un file con questo nome esiste già. Vuoi sostituirlo?"
 
-#: core/GCCreationHandler.qml:215 core/GCCreationHandler.qml:222
+#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
 msgctxt "GCCreationHandler|"
 msgid "Yes"
 msgstr "Sì"
 
-#: core/GCCreationHandler.qml:215 core/GCCreationHandler.qml:222
+#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
 msgctxt "GCCreationHandler|"
 msgid "No"
 msgstr "No"
 
-#: core/GCCreationHandler.qml:221
+#: core/GCCreationHandler.qml:222
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
 msgstr "Vuoi davvero eliminare questo file?"
 
-#: core/GCCreationHandler.qml:233
+#: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"
 msgid "Saved successfully!"
 msgstr "Salvato correttamente!"
 
-#: core/GCCreationHandler.qml:264
+#: core/GCCreationHandler.qml:265
 msgctxt "GCCreationHandler|"
 msgid "Enter file name"
 msgstr "Digita il nome del file"
 
-#: core/GCCreationHandler.qml:264
+#: core/GCCreationHandler.qml:265
 msgctxt "GCCreationHandler|"
 msgid "Search"
 msgstr "Cerca"
 
-#: core/GCCreationHandler.qml:278
+#: core/GCCreationHandler.qml:279
 msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "Salva"
 
-#: core/GCCreationHandler.qml:384
+#: core/GCCreationHandler.qml:385
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "Carica"
 
-#: core/GCCreationHandler.qml:394
+#: core/GCCreationHandler.qml:395
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Elimina"
@@ -33367,10 +33629,6 @@ msgstr "Inizia"
 #~ msgstr "Annulla"
 
 #~ msgctxt "Checkers|"
-#~ msgid "Redo"
-#~ msgstr "Rifai"
-
-#~ msgctxt "Checkers|"
 #~ msgid "Swap"
 #~ msgstr "Cambio"
 
@@ -34154,25 +34412,6 @@ msgstr "Inizia"
 #~ msgctxt "ConfigurationItem|"
 #~ msgid "Sounds"
 #~ msgstr "Suoni"
-
-# Vincenzo Reale <smart2128@baslug.org>, 2014, 2015.
-# Paolo Gibellini <p.gibellini@gmail.com>, 2015.
-#, fuzzy
-#~| msgid ""
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ msgstr ""
-#~ "Project-Id-Version: gcompris_qt\n"
-#~ "PO-Revision-Date: 2015-03-08 09:55+0100\n"
-#~ "Last-Translator: Vincenzo Reale <smart2128@baslug.org>\n"
-#~ "Language-Team: Italian <kde-i18n-it@kde.org>\n"
-#~ "Language: it\n"
-#~ "MIME-Version: 1.0\n"
-#~ "Content-Type: text/plain; charset=UTF-8\n"
-#~ "Content-Transfer-Encoding: 8bit\n"
-#~ "Plural-Forms: nplurals=2; plural=n != 1;\n"
-#~ "X-Generator: Lokalize 1.5\n"
-#~ "X-Qt-Contexts: true\n"
 
 #~ msgctxt "DialogConfig|"
 #~ msgid "Buy the full version"

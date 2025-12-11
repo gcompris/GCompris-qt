@@ -202,6 +202,7 @@ msgstr ""
 #: activities/colors/ActivityInfo.qml:25
 #: activities/comparator/ActivityInfo.qml:27
 #: activities/crane/ActivityInfo.qml:30
+#: activities/drawing_wheels/ActivityInfo.qml:24
 #: activities/enumerate/ActivityInfo.qml:25
 #: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
@@ -6916,6 +6917,312 @@ msgstr ""
 "només brillarà quan el primer interruptor estiga activat i el segon "
 "interruptor estiga desactivat, o quan el primer interruptor estiga "
 "desactivat i el segon interruptor estiga activat."
+
+#: activities/drawing_wheels/ActivityConfig.qml:29
+#: activities/sketch/ActivityConfig.qml:29
+#, qt-format
+msgctxt "ActivityConfig|"
+msgid "Number of undo: %1"
+msgstr "Nombres desfer: %1"
+
+#: activities/drawing_wheels/ActivityConfig.qml:44
+#: activities/sketch/ActivityConfig.qml:44
+msgctxt "ActivityConfig|"
+msgid ""
+"Warning: setting the number of undo too high can make the application crash "
+"if your device doesn't have enough memory."
+msgstr ""
+"Avís: establir el nombre de desfer massa alt pot fer que l'aplicació falle "
+"si el dispositiu no té prou memòria."
+
+#. Activity title
+#: activities/drawing_wheels/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "BrushToolPanel|"
+#| msgid "Drawing Tools"
+msgctxt "ActivityInfo|"
+msgid "Drawing wheels"
+msgstr "Eines de dibuix"
+
+# Translation of gcompris_qt.po to Catalan (Valencian)
+# Copyright (C) 2015-2025 This_file_is_part_of_KDE
+# Copyright (C) 2003-2010 Free Software Foundation, Inc.
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
+#
+# SPDX-FileCopyrightText: 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Antoni Bella Pérez <antonibella5@yahoo.com>
+# SPDX-FileCopyrightText: 2025 Anna Miró <ame.cic98@gmail.com>
+# SPDX-FileCopyrightText: 2003, 2004, 2005, 2006, 2007 Xavier A. Conde Rueda <xavi.conde@gmail.com>
+# SPDX-FileCopyrightText: 2007, 2008 Francesc Vilches Batet <francesc-vilches@gmail.com>
+# SPDX-FileCopyrightText: 2010 Pau Iranzo <paugnu@gmail.com>
+# SPDX-FileCopyrightText: 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Josep M. Ferrer <txemaq@gmail.com>
+#. Help title
+#: activities/drawing_wheels/ActivityInfo.qml:16
+#, fuzzy
+#| msgid ""
+msgctxt "ActivityInfo|"
+msgid ""
+msgstr ""
+"Project-Id-Version: gcompris\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2014-12-25 01:10+0000\n"
+"PO-Revision-Date: 2025-12-04 10:52+0100\n"
+"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"Language: ca@valencia\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Accelerator-Marker: &\n"
+"X-Generator: Lokalize 25.04.0\n"
+"X-Qt-Contexts: true\n"
+
+#. Help goal
+#: activities/drawing_wheels/ActivityInfo.qml:19
+msgctxt "ActivityInfo|"
+msgid ""
+"Make beautiful drawings by turning the gear in the cogwheel with the chosen "
+"pen."
+msgstr ""
+
+#. Help manual
+#: activities/drawing_wheels/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select tools and colors from the foldable panels and draw images.<br><br>"
+msgctxt "ActivityInfo|"
+msgid ""
+"Select wheel, gear, pen's position and color from the foldable panels and "
+"start the gear.<br><br>"
+msgstr ""
+"Tria les eines i els colors des dels quadros plegables i dibuixa les imatges."
+"<br><br>"
+
+#: activities/drawing_wheels/ActivityInfo.qml:25
+#: activities/sketch/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Ctrl + Z: undo last action"
+msgstr "«Ctrl+Z»: desfà l'última acció"
+
+#: activities/drawing_wheels/ActivityInfo.qml:26
+#: activities/sketch/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Ctrl + Y: redo last action"
+msgstr "«Ctrl+Y»: refà l'última acció"
+
+#: activities/drawing_wheels/ActivityInfo.qml:27
+#: activities/sketch/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Ctrl + S: save the image"
+msgstr "«Ctrl+S»: guarda la imatge"
+
+#: activities/drawing_wheels/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Ctrl + S: save the image"
+msgctxt "ActivityInfo|"
+msgid "Ctrl + D: save the drawing"
+msgstr "«Ctrl+S»: guarda la imatge"
+
+#: activities/drawing_wheels/ActivityInfo.qml:29
+#: activities/sketch/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "Ctrl + O: open an image"
+msgstr "«Ctrl+O»: obri una imatge"
+
+#: activities/drawing_wheels/DrawingWheels.qml:353
+msgctxt "DrawingWheels|"
+msgid "Save drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:367
+msgctxt "DrawingWheels|"
+msgid "Wheel and gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:388
+msgctxt "DrawingWheels|"
+msgid "Pencil's color and width"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:401
+#, fuzzy
+#| msgctxt "OptionsRow|"
+#| msgid "Undo"
+msgctxt "DrawingWheels|"
+msgid "Undo"
+msgstr "Desfés"
+
+#: activities/drawing_wheels/DrawingWheels.qml:414
+msgctxt "DrawingWheels|"
+msgid "Redo"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:450
+msgctxt "DrawingWheels|"
+msgid "Stop drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:450
+msgctxt "DrawingWheels|"
+msgid "Start drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:482
+msgctxt "DrawingWheels|"
+msgid "Show wheel and gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:482
+msgctxt "DrawingWheels|"
+msgid "Hide wheel and gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:507
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Save your image"
+msgctxt "DrawingWheels|"
+msgid "Save your image"
+msgstr "Guarda la imatge"
+
+#: activities/drawing_wheels/DrawingWheels.qml:523
+msgctxt "DrawingWheels|"
+msgid "Save as a drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:539
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Open an image"
+msgctxt "DrawingWheels|"
+msgid "Open an image"
+msgstr "Obri una imatge"
+
+#: activities/drawing_wheels/DrawingWheels.qml:555
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Create a new image"
+msgctxt "DrawingWheels|"
+msgid "Create a new image"
+msgstr "Crea una imatge nova"
+
+#: activities/drawing_wheels/DrawingWheels.qml:598
+#: activities/drawing_wheels/DrawingWheels.qml:668
+msgctxt "DrawingWheels|"
+msgid "Wheel"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:630
+#: activities/drawing_wheels/DrawingWheels.qml:689
+msgctxt "DrawingWheels|"
+msgid "Gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:714
+#, fuzzy, qt-format
+#| msgctxt "SignalGenerator|"
+#| msgid "%1 s"
+msgctxt "DrawingWheels|"
+msgid "%1 spikes"
+msgstr "%1 s"
+
+#: activities/drawing_wheels/DrawingWheels.qml:722
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Speed"
+msgctxt "DrawingWheels|"
+msgid "Speed"
+msgstr "Velocitat"
+
+#: activities/drawing_wheels/DrawingWheels.qml:734
+msgctxt "DrawingWheels|"
+msgid "Slow"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:749
+msgctxt "DrawingWheels|"
+msgid "Fast"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:781
+#, fuzzy
+#| msgctxt "ColorsPanel|"
+#| msgid "Palettes"
+msgctxt "DrawingWheels|"
+msgid "Palettes"
+msgstr "Paletes"
+
+#: activities/drawing_wheels/DrawingWheels.qml:861
+#, fuzzy
+#| msgctxt "category_colors|"
+#| msgid "Colors"
+msgctxt "DrawingWheels|"
+msgid "Color"
+msgstr "Colors"
+
+#: activities/drawing_wheels/DrawingWheels.qml:888
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Font size"
+msgctxt "DrawingWheels|"
+msgid "Pensize"
+msgstr "Mida de la lletra"
+
+#: activities/drawing_wheels/DrawingWheels.qml:927
+#, fuzzy
+#| msgctxt "ToolsPanel|"
+#| msgid "Opacity"
+msgctxt "DrawingWheels|"
+msgid "Opacity"
+msgstr "Opacitat"
+
+#: activities/drawing_wheels/DrawingWheels.qml:955
+#, fuzzy
+#| msgctxt "board9_0|"
+#| msgid "Districto Federal"
+msgctxt "DrawingWheels|"
+msgid "Distance to center"
+msgstr "Districte Federal"
+
+#: activities/drawing_wheels/DrawingWheels.qml:981
+msgctxt "DrawingWheels|"
+msgid "Starting tooth"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:1068
+#, fuzzy
+#| msgctxt "Sketch|"
+#| msgid "You did not save this image. Do you want to close this activity?"
+msgctxt "DrawingWheels|"
+msgid "You did not save this image. Do you want to close this activity?"
+msgstr "No has guardat esta imatge. Vols tancar esta activitat?"
+
+#: activities/drawing_wheels/DrawingWheels.qml:1069
+#, fuzzy
+#| msgctxt "Sketch|"
+#| msgid "Do you want to erase this image?"
+msgctxt "DrawingWheels|"
+msgid "Do you want to erase this image?"
+msgstr "Vols esborrar esta imatge?"
+
+#: activities/drawing_wheels/DrawingWheels.qml:1070
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "Yes"
+msgctxt "DrawingWheels|"
+msgid "Yes"
+msgstr "Sí"
+
+#: activities/drawing_wheels/DrawingWheels.qml:1071
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "No"
+msgctxt "DrawingWheels|"
+msgid "No"
+msgstr "No"
 
 #. Activity title
 #: activities/drawletters/ActivityInfo.qml:15
@@ -24978,21 +25285,6 @@ msgid "Tab: switch between the color selector and the painting area"
 msgstr ""
 "Tabulador: per a canviar entre el selector de color i l'àrea de pintura"
 
-#: activities/sketch/ActivityConfig.qml:29
-#, qt-format
-msgctxt "ActivityConfig|"
-msgid "Number of undo: %1"
-msgstr "Nombres desfer: %1"
-
-#: activities/sketch/ActivityConfig.qml:44
-msgctxt "ActivityConfig|"
-msgid ""
-"Warning: setting the number of undo too high can make the application crash "
-"if your device doesn't have enough memory."
-msgstr ""
-"Avís: establir el nombre de desfer massa alt pot fer que l'aplicació falle "
-"si el dispositiu no té prou memòria."
-
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
@@ -25020,26 +25312,6 @@ msgid ""
 msgstr ""
 "Tria les eines i els colors des dels quadros plegables i dibuixa les imatges."
 "<br><br>"
-
-#: activities/sketch/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Ctrl + Z: undo last action"
-msgstr "«Ctrl+Z»: desfà l'última acció"
-
-#: activities/sketch/ActivityInfo.qml:29
-msgctxt "ActivityInfo|"
-msgid "Ctrl + Y: redo last action"
-msgstr "«Ctrl+Y»: refà l'última acció"
-
-#: activities/sketch/ActivityInfo.qml:30
-msgctxt "ActivityInfo|"
-msgid "Ctrl + S: save the image"
-msgstr "«Ctrl+S»: guarda la imatge"
-
-#: activities/sketch/ActivityInfo.qml:31
-msgctxt "ActivityInfo|"
-msgid "Ctrl + O: open an image"
-msgstr "«Ctrl+O»: obri una imatge"
 
 #: activities/sketch/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -28738,70 +29010,70 @@ msgctxt "QObject|"
 msgid "No data found for %1."
 msgstr "No s'han trobat les dades per a %1."
 
-#: core/GCCreationHandler.qml:175
+#: core/GCCreationHandler.qml:176
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "%1 deleted successfully!"
 msgstr "S'ha suprimit %1 amb èxit!"
 
-#: core/GCCreationHandler.qml:176 core/GCCreationHandler.qml:181
-#: core/GCCreationHandler.qml:234
+#: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
+#: core/GCCreationHandler.qml:235
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr "D'acord"
 
-#: core/GCCreationHandler.qml:180
+#: core/GCCreationHandler.qml:181
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete %1!"
 msgstr "No s'ha pogut suprimir %1!"
 
-#: core/GCCreationHandler.qml:214
+#: core/GCCreationHandler.qml:215
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
 msgstr "Ja existix un fitxer amb este nom. Vols substituir-lo?"
 
-#: core/GCCreationHandler.qml:215 core/GCCreationHandler.qml:222
+#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
 msgctxt "GCCreationHandler|"
 msgid "Yes"
 msgstr "Sí"
 
-#: core/GCCreationHandler.qml:215 core/GCCreationHandler.qml:222
+#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
 msgctxt "GCCreationHandler|"
 msgid "No"
 msgstr "No"
 
-#: core/GCCreationHandler.qml:221
+#: core/GCCreationHandler.qml:222
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
 msgstr "Tens clar que vols suprimir este fitxer?"
 
-#: core/GCCreationHandler.qml:233
+#: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"
 msgid "Saved successfully!"
 msgstr "S'ha guardat correctament!"
 
-#: core/GCCreationHandler.qml:264
+#: core/GCCreationHandler.qml:265
 msgctxt "GCCreationHandler|"
 msgid "Enter file name"
 msgstr "Introduïx un nom de fitxer"
 
-#: core/GCCreationHandler.qml:264
+#: core/GCCreationHandler.qml:265
 msgctxt "GCCreationHandler|"
 msgid "Search"
 msgstr "Busca"
 
-#: core/GCCreationHandler.qml:278
+#: core/GCCreationHandler.qml:279
 msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "Guarda"
 
-#: core/GCCreationHandler.qml:384
+#: core/GCCreationHandler.qml:385
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "Carrega"
 
-#: core/GCCreationHandler.qml:394
+#: core/GCCreationHandler.qml:395
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Suprimix"

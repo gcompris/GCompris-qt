@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:48+0000\n"
+"POT-Creation-Date: 2025-12-11 00:39+0000\n"
 "PO-Revision-Date: 2024-12-10 07:22+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -351,6 +351,12 @@ msgstr "Pomaknite slike na njihove cilje"
 #, kde-format
 msgid "Learn how digital electronics work and create your own circuit."
 msgstr "Naučite se, kako deluje elektronika in si ustvarite svoje vezje."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "drawing_wheels"
+#: activities/drawing_wheels/ActivityInfo.qml:17
+#, kde-format
+msgid "put here in comment the text for the intro voice"
+msgstr "tu v komentar dodajte besedilo uvodnega glasu"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"
 #: activities/drawletters/ActivityInfo.qml:18
@@ -1344,9 +1350,6 @@ msgstr ""
 #, kde-format
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr "Vnesite besede na tipkovnici, preden pridejo do tal."
-
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "tu v komentar dodajte besedilo uvodnega glasu"
 
 #~ msgid "play checkers against the computer"
 #~ msgstr "igrajte damo proti računalniku"

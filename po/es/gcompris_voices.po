@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:48+0000\n"
+"POT-Creation-Date: 2025-12-11 00:39+0000\n"
 "PO-Revision-Date: 2025-09-20 16:29+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -365,6 +365,12 @@ msgstr "Arrastra las imágenes hasta sus respectivos destinos"
 msgid "Learn how digital electronics work and create your own circuit."
 msgstr ""
 "Aprende cómo funciona la electrónica digital y crea tu propio circuito."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "drawing_wheels"
+#: activities/drawing_wheels/ActivityInfo.qml:17
+#, kde-format
+msgid "put here in comment the text for the intro voice"
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"
 #: activities/drawletters/ActivityInfo.qml:18

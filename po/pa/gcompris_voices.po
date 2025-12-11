@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:48+0000\n"
+"POT-Creation-Date: 2025-12-11 00:39+0000\n"
 "PO-Revision-Date: 2020-10-13 21:32-0700\n"
 "Last-Translator: A S Alam <aalam.yellow@gmail.com>\n"
 "Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
@@ -318,6 +318,12 @@ msgstr ""
 #: activities/digital_electricity/ActivityInfo.qml:18
 #, kde-format
 msgid "Learn how digital electronics work and create your own circuit."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "drawing_wheels"
+#: activities/drawing_wheels/ActivityInfo.qml:17
+#, kde-format
+msgid "put here in comment the text for the intro voice"
 msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"

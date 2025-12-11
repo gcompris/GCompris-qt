@@ -211,6 +211,7 @@ msgstr ""
 #: activities/colors/ActivityInfo.qml:25
 #: activities/comparator/ActivityInfo.qml:27
 #: activities/crane/ActivityInfo.qml:30
+#: activities/drawing_wheels/ActivityInfo.qml:24
 #: activities/enumerate/ActivityInfo.qml:25
 #: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
@@ -6681,6 +6682,321 @@ msgstr ""
 "Зажги лампочку, используя оба переключателя. Лампочка должна гореть, если "
 "первый переключатель включён, а второй выключен или первый выключен, а "
 "второй включён."
+
+#: activities/drawing_wheels/ActivityConfig.qml:29
+#: activities/sketch/ActivityConfig.qml:29
+#, fuzzy, qt-format
+#| msgctxt "guessnumber|"
+#| msgid "Number found!"
+msgctxt "ActivityConfig|"
+msgid "Number of undo: %1"
+msgstr "Число найдено!"
+
+#: activities/drawing_wheels/ActivityConfig.qml:44
+#: activities/sketch/ActivityConfig.qml:44
+msgctxt "ActivityConfig|"
+msgid ""
+"Warning: setting the number of undo too high can make the application crash "
+"if your device doesn't have enough memory."
+msgstr ""
+
+#. Activity title
+#: activities/drawing_wheels/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "BrushToolPanel|"
+#| msgid "Drawing Tools"
+msgctxt "ActivityInfo|"
+msgid "Drawing wheels"
+msgstr "Рисование"
+
+# Translation of GCompris to Russian
+# Copyright (C) 2001-2002,2003, 2005, 2006, 2010 Free Software Foundation, Inc.
+# Copyright (C) 2015 This_file_is_part_of_KDE
+#
+# Anna Polesskaya and Kirill Polesski <rami@kaires.org>, 2003.
+# Alexey Lubimov <avl@altlinux.ru>, 2004-2004.
+# Valek Filippov <frob@df.ru>, 2001-2002.
+# Dubrovskiy Vyacheslav <dubrsl@altlinux.org>, 2005, 2006, 2010.
+# Andrey Cherepanov <skull@kde.ru>, 2007, 2010.
+# Yuri Kozlov <yuray@komyakino.ru>, 2011.
+# Yuri Myasoedov <omerta13@yandex.ru>, 2012.
+# Chris Leonard <cjlhomeaddress@gmail.com>, 2012.
+# Mayya Sharipova <mayya.sharipova@gmail.com>, 2013.
+# Andrey Cherepanov <cas@altlinux.org>, 2015.
+# Stas Solovey <whats_up@tut.by>, 2013, 2015.
+# Alexander Potashev <aspotashev@gmail.com>, 2015, 2016, 2017, 2018, 2019.
+# Alexandr Smirnov <smirnoff.al@gmail.com>, 2015, 2016.
+# Ilya Bizyaev <bizyaev@zoho.com>, 2017.
+# Anastasiia Iurshina <translater@iurshina.de>, 2018.
+# Victoria Ivanova <ivanova.informatics@gmail.com>, 2019.
+# Alexander Kurachenko <alexander@basealt.ru>, 2019.
+#. Help title
+#: activities/drawing_wheels/ActivityInfo.qml:16
+#, fuzzy
+msgctxt "ActivityInfo|"
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2019-11-06 17:15MSK\n"
+"Last-Translator: Alexander Kurachenko <alexander@basealt.ru>\n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Language: ru\n"
+"X-Qt-Contexts: true\n"
+"X-Generator: Lokalize 2.0\n"
+
+#. Help goal
+#: activities/drawing_wheels/ActivityInfo.qml:19
+msgctxt "ActivityInfo|"
+msgid ""
+"Make beautiful drawings by turning the gear in the cogwheel with the chosen "
+"pen."
+msgstr ""
+
+#. Help manual
+#: activities/drawing_wheels/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select tools and colors from the foldable panels and draw images.<br><br>"
+msgctxt "ActivityInfo|"
+msgid ""
+"Select wheel, gear, pen's position and color from the foldable panels and "
+"start the gear.<br><br>"
+msgstr ""
+"Выбери инструменты и цвета на складных панелях и нарисуй изображения.<br><br>"
+
+#: activities/drawing_wheels/ActivityInfo.qml:25
+#: activities/sketch/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Ctrl + Z: undo last action"
+msgstr "Ctrl + Z: отмена действия"
+
+#: activities/drawing_wheels/ActivityInfo.qml:26
+#: activities/sketch/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Ctrl + Y: redo last action"
+msgstr "Ctrl + Y: повтор действия"
+
+#: activities/drawing_wheels/ActivityInfo.qml:27
+#: activities/sketch/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Ctrl + S: save the image"
+msgstr "Ctrl + S: сохранение изображения"
+
+#: activities/drawing_wheels/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Ctrl + S: save the image"
+msgctxt "ActivityInfo|"
+msgid "Ctrl + D: save the drawing"
+msgstr "Ctrl + S: сохранение изображения"
+
+#: activities/drawing_wheels/ActivityInfo.qml:29
+#: activities/sketch/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "Ctrl + O: open an image"
+msgstr "Ctrl + O: открытие изображения"
+
+#: activities/drawing_wheels/DrawingWheels.qml:353
+msgctxt "DrawingWheels|"
+msgid "Save drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:367
+msgctxt "DrawingWheels|"
+msgid "Wheel and gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:388
+msgctxt "DrawingWheels|"
+msgid "Pencil's color and width"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:401
+#, fuzzy
+#| msgctxt "OptionsRow|"
+#| msgid "Undo"
+msgctxt "DrawingWheels|"
+msgid "Undo"
+msgstr "Отменить"
+
+#: activities/drawing_wheels/DrawingWheels.qml:414
+#, fuzzy
+#| msgctxt "Checkers|"
+#| msgid "Redo"
+msgctxt "DrawingWheels|"
+msgid "Redo"
+msgstr "Повторить"
+
+#: activities/drawing_wheels/DrawingWheels.qml:450
+msgctxt "DrawingWheels|"
+msgid "Stop drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:450
+msgctxt "DrawingWheels|"
+msgid "Start drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:482
+msgctxt "DrawingWheels|"
+msgid "Show wheel and gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:482
+msgctxt "DrawingWheels|"
+msgid "Hide wheel and gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:507
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Save your image"
+msgctxt "DrawingWheels|"
+msgid "Save your image"
+msgstr "Сохранить изображение"
+
+#: activities/drawing_wheels/DrawingWheels.qml:523
+msgctxt "DrawingWheels|"
+msgid "Save as a drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:539
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Open an image"
+msgctxt "DrawingWheels|"
+msgid "Open an image"
+msgstr "Открыть изображение"
+
+#: activities/drawing_wheels/DrawingWheels.qml:555
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Create a new image"
+msgctxt "DrawingWheels|"
+msgid "Create a new image"
+msgstr "Создать новое изображение"
+
+#: activities/drawing_wheels/DrawingWheels.qml:598
+#: activities/drawing_wheels/DrawingWheels.qml:668
+msgctxt "DrawingWheels|"
+msgid "Wheel"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:630
+#: activities/drawing_wheels/DrawingWheels.qml:689
+msgctxt "DrawingWheels|"
+msgid "Gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:714
+#, fuzzy, qt-format
+#| msgctxt "SignalGenerator|"
+#| msgid "%1 s"
+msgctxt "DrawingWheels|"
+msgid "%1 spikes"
+msgstr "%1 c"
+
+#: activities/drawing_wheels/DrawingWheels.qml:722
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Speed"
+msgctxt "DrawingWheels|"
+msgid "Speed"
+msgstr "Скорость"
+
+#: activities/drawing_wheels/DrawingWheels.qml:734
+msgctxt "DrawingWheels|"
+msgid "Slow"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:749
+msgctxt "DrawingWheels|"
+msgid "Fast"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:781
+#, fuzzy
+#| msgctxt "ColorsPanel|"
+#| msgid "Palettes"
+msgctxt "DrawingWheels|"
+msgid "Palettes"
+msgstr "Палитра"
+
+#: activities/drawing_wheels/DrawingWheels.qml:861
+#, fuzzy
+#| msgctxt "category_colors|"
+#| msgid "Colors"
+msgctxt "DrawingWheels|"
+msgid "Color"
+msgstr "Цвета"
+
+#: activities/drawing_wheels/DrawingWheels.qml:888
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Font size"
+msgctxt "DrawingWheels|"
+msgid "Pensize"
+msgstr "Размер шрифта"
+
+#: activities/drawing_wheels/DrawingWheels.qml:927
+#, fuzzy
+#| msgctxt "ToolsPanel|"
+#| msgid "Opacity"
+msgctxt "DrawingWheels|"
+msgid "Opacity"
+msgstr "Непрозрачность"
+
+#: activities/drawing_wheels/DrawingWheels.qml:955
+#, fuzzy
+#| msgctxt "board9_0|"
+#| msgid "Districto Federal"
+msgctxt "DrawingWheels|"
+msgid "Distance to center"
+msgstr "Федеральный округ"
+
+#: activities/drawing_wheels/DrawingWheels.qml:981
+msgctxt "DrawingWheels|"
+msgid "Starting tooth"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:1068
+#, fuzzy
+#| msgctxt "Sketch|"
+#| msgid "You did not save this image. Do you want to close this activity?"
+msgctxt "DrawingWheels|"
+msgid "You did not save this image. Do you want to close this activity?"
+msgstr "Изображение не было сохранено. Закрыть эту активность?"
+
+#: activities/drawing_wheels/DrawingWheels.qml:1069
+#, fuzzy
+#| msgctxt "Sketch|"
+#| msgid "Do you want to erase this image?"
+msgctxt "DrawingWheels|"
+msgid "Do you want to erase this image?"
+msgstr "Стереть это изображение?"
+
+#: activities/drawing_wheels/DrawingWheels.qml:1070
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "Yes"
+msgctxt "DrawingWheels|"
+msgid "Yes"
+msgstr "Да"
+
+#: activities/drawing_wheels/DrawingWheels.qml:1071
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "No"
+msgctxt "DrawingWheels|"
+msgid "No"
+msgstr "Нет"
 
 #. Activity title
 #: activities/drawletters/ActivityInfo.qml:15
@@ -24549,21 +24865,6 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
 msgstr "Tab: переключение между средством выбора цветов и областью рисования"
 
-#: activities/sketch/ActivityConfig.qml:29
-#, fuzzy, qt-format
-#| msgctxt "guessnumber|"
-#| msgid "Number found!"
-msgctxt "ActivityConfig|"
-msgid "Number of undo: %1"
-msgstr "Число найдено!"
-
-#: activities/sketch/ActivityConfig.qml:44
-msgctxt "ActivityConfig|"
-msgid ""
-"Warning: setting the number of undo too high can make the application crash "
-"if your device doesn't have enough memory."
-msgstr ""
-
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
@@ -24590,26 +24891,6 @@ msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
 msgstr ""
 "Выбери инструменты и цвета на складных панелях и нарисуй изображения.<br><br>"
-
-#: activities/sketch/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Ctrl + Z: undo last action"
-msgstr "Ctrl + Z: отмена действия"
-
-#: activities/sketch/ActivityInfo.qml:29
-msgctxt "ActivityInfo|"
-msgid "Ctrl + Y: redo last action"
-msgstr "Ctrl + Y: повтор действия"
-
-#: activities/sketch/ActivityInfo.qml:30
-msgctxt "ActivityInfo|"
-msgid "Ctrl + S: save the image"
-msgstr "Ctrl + S: сохранение изображения"
-
-#: activities/sketch/ActivityInfo.qml:31
-msgctxt "ActivityInfo|"
-msgid "Ctrl + O: open an image"
-msgstr "Ctrl + O: открытие изображения"
 
 #: activities/sketch/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -28427,70 +28708,70 @@ msgctxt "QObject|"
 msgid "No data found for %1."
 msgstr "Не найдены данные для %1."
 
-#: core/GCCreationHandler.qml:175
+#: core/GCCreationHandler.qml:176
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "%1 deleted successfully!"
 msgstr "%1 удалён."
 
-#: core/GCCreationHandler.qml:176 core/GCCreationHandler.qml:181
-#: core/GCCreationHandler.qml:234
+#: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
+#: core/GCCreationHandler.qml:235
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr "ОК"
 
-#: core/GCCreationHandler.qml:180
+#: core/GCCreationHandler.qml:181
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete %1!"
 msgstr "Не удалось удалить %1."
 
-#: core/GCCreationHandler.qml:214
+#: core/GCCreationHandler.qml:215
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
 msgstr "Файл с таким именем уже существует. Заменить его?"
 
-#: core/GCCreationHandler.qml:215 core/GCCreationHandler.qml:222
+#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
 msgctxt "GCCreationHandler|"
 msgid "Yes"
 msgstr "Да"
 
-#: core/GCCreationHandler.qml:215 core/GCCreationHandler.qml:222
+#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
 msgctxt "GCCreationHandler|"
 msgid "No"
 msgstr "Нет"
 
-#: core/GCCreationHandler.qml:221
+#: core/GCCreationHandler.qml:222
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
 msgstr "Удалить этот файл?"
 
-#: core/GCCreationHandler.qml:233
+#: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"
 msgid "Saved successfully!"
 msgstr "Сохранение выполнено."
 
-#: core/GCCreationHandler.qml:264
+#: core/GCCreationHandler.qml:265
 msgctxt "GCCreationHandler|"
 msgid "Enter file name"
 msgstr "Введите имя файла"
 
-#: core/GCCreationHandler.qml:264
+#: core/GCCreationHandler.qml:265
 msgctxt "GCCreationHandler|"
 msgid "Search"
 msgstr "Поиск"
 
-#: core/GCCreationHandler.qml:278
+#: core/GCCreationHandler.qml:279
 msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "Сохранить"
 
-#: core/GCCreationHandler.qml:384
+#: core/GCCreationHandler.qml:385
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "Загрузить"
 
-#: core/GCCreationHandler.qml:394
+#: core/GCCreationHandler.qml:395
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Удалить"
@@ -31324,10 +31605,6 @@ msgstr "Начать"
 #~ msgstr "Отменить"
 
 #~ msgctxt "Checkers|"
-#~ msgid "Redo"
-#~ msgstr "Повторить"
-
-#~ msgctxt "Checkers|"
 #~ msgid "Swap"
 #~ msgstr "Рокировка"
 
@@ -31888,45 +32165,6 @@ msgstr "Начать"
 #~ msgctxt "board4_1|"
 #~ msgid "Aviation"
 #~ msgstr "Авиация"
-
-# Translation of GCompris to Russian
-# Copyright (C) 2001-2002,2003, 2005, 2006, 2010 Free Software Foundation, Inc.
-# Copyright (C) 2015 This_file_is_part_of_KDE
-#
-# Anna Polesskaya and Kirill Polesski <rami@kaires.org>, 2003.
-# Alexey Lubimov <avl@altlinux.ru>, 2004-2004.
-# Valek Filippov <frob@df.ru>, 2001-2002.
-# Dubrovskiy Vyacheslav <dubrsl@altlinux.org>, 2005, 2006, 2010.
-# Andrey Cherepanov <skull@kde.ru>, 2007, 2010.
-# Yuri Kozlov <yuray@komyakino.ru>, 2011.
-# Yuri Myasoedov <omerta13@yandex.ru>, 2012.
-# Chris Leonard <cjlhomeaddress@gmail.com>, 2012.
-# Mayya Sharipova <mayya.sharipova@gmail.com>, 2013.
-# Andrey Cherepanov <cas@altlinux.org>, 2015.
-# Stas Solovey <whats_up@tut.by>, 2013, 2015.
-# Alexander Potashev <aspotashev@gmail.com>, 2015, 2016, 2017, 2018, 2019.
-# Alexandr Smirnov <smirnoff.al@gmail.com>, 2015, 2016.
-# Ilya Bizyaev <bizyaev@zoho.com>, 2017.
-# Anastasiia Iurshina <translater@iurshina.de>, 2018.
-# Victoria Ivanova <ivanova.informatics@gmail.com>, 2019.
-# Alexander Kurachenko <alexander@basealt.ru>, 2019.
-#, fuzzy
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ msgstr ""
-#~ "Project-Id-Version: \n"
-#~ "PO-Revision-Date: 2019-11-06 17:15MSK\n"
-#~ "Last-Translator: Alexander Kurachenko <alexander@basealt.ru>\n"
-#~ "Language-Team: \n"
-#~ "Language: ru\n"
-#~ "MIME-Version: 1.0\n"
-#~ "Content-Type: text/plain; charset=UTF-8\n"
-#~ "Content-Transfer-Encoding: 8bit\n"
-#~ "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-#~ "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-#~ "X-Language: ru\n"
-#~ "X-Qt-Contexts: true\n"
-#~ "X-Generator: Lokalize 2.0\n"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Train your audio memory and remove all the violinists Tux."

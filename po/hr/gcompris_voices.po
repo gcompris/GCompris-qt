@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:48+0000\n"
+"POT-Creation-Date: 2025-12-11 00:39+0000\n"
 "PO-Revision-Date: 2025-01-25 21:48+0100\n"
 "Last-Translator: Igor Dobrača <igor.dobraca@gmail.com>\n"
 "Language-Team: Croatian <kde-i18n-doc@kde.org>\n"
@@ -354,6 +354,12 @@ msgstr "Pomakni slike na odgovarajuće ciljeve"
 #, kde-format
 msgid "Learn how digital electronics work and create your own circuit."
 msgstr "Nauči kako radi digitalna elektronika i izradi vlastiti sklop."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "drawing_wheels"
+#: activities/drawing_wheels/ActivityInfo.qml:17
+#, kde-format
+msgid "put here in comment the text for the intro voice"
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"
 #: activities/drawletters/ActivityInfo.qml:18
