@@ -14,7 +14,11 @@
 .import QtQuick as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-const toothLength = 9                               // Could be a var to fit screen size
+const baseToothLength = 9
+// Values calculated in initCanvas()
+var toothLength = 9
+var canvasSize = 1
+
 const svgProtocol = "data:image/svg+xml;utf8,"
 const svgHeader = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n`
 const wheelThickness = 10
@@ -101,18 +105,31 @@ function initLevel() {
     items.canvasArea.clearRedo()
     items.undoStack.clear()
     items.canvasImage.source = ""
+    items.panelManager.closePanel()
+    items.backgroundColor = items.newBackgroundColor
     items.gearTimer.stop()
     stop()    // Clear undo-redo stack models and temporary images
-    const maxRadius = ((wheelKeys[0] + wheelThickness) * toothLength) / Math.PI     // Max size for svg
-    items.imageSize = 2 * maxRadius
+    initCanvas()
     items.animationCanvas.initContext()
     //add first empty undo to canvasArea and to undoStack to restore empty canvas
     items.animationCanvas.paintActionFinished();
     initWheel()
     items.toothOffset = 0
-    items.svgTank.resetSvg(maxRadius, items.backgroundColor)
+    items.svgTank.resetSvg(canvasSize, items.backgroundColor)
     items.isFileSaved = true
     items.canvasLocked = false
+}
+
+function initCanvas() {
+    // Base size with given baseToothLength,
+    const baseSize = 2 * (((wheelKeys[0] + wheelThickness) * baseToothLength) / Math.PI)
+    // Set canvas size, rounded to smallest even number to avoid bugs with software renderer...
+    canvasSize = Math.min(2 * parseInt(items.canvasContainer.width * 0.5), 2 * parseInt(items.canvasContainer.height * 0.5))
+    items.canvasArea.width = canvasSize;
+    items.canvasArea.height = canvasSize;
+    // Adapt toothLength to actual canvas size
+    var sizeMultiplier = canvasSize / baseSize
+    toothLength = baseToothLength * sizeMultiplier
 }
 
 function nextLevel() {
@@ -253,8 +270,11 @@ function newWheel(externalTeeth, internalTeeth) {
     const intRadius = (internalTeeth * toothLength) / Math.PI
     items.theWheel.extRadius = extRadius
     items.theWheel.intRadius = intRadius
+    var wheelSize = 2 + extRadius * 2
+    items.theWheel.width = wheelSize
+    items.theWheel.height = wheelSize
     var svg = svgHeader
-    svg += `<svg width="${1 + extRadius * 2}" height="${1 + extRadius * 2}" version="1.1" xmlns="http://www.w3.org/2000/svg">\n`
+    svg += `<svg width="${wheelSize}" height="${wheelSize}" version="1.1" xmlns="http://www.w3.org/2000/svg">\n`
 
     // External circle, add points clockwise
     svg += `<path d="M`
@@ -265,7 +285,7 @@ function newWheel(externalTeeth, internalTeeth) {
         point = points.shift()
         svg += `${point.shift()},${point.shift()} `
     }
-
+    svg += ` Z `
     // Internal serration, add points counter-clockwise
     svg += `M`
     points = newSerration(internalTeeth, extRadius)
@@ -276,7 +296,7 @@ function newWheel(externalTeeth, internalTeeth) {
     svg += `" fill="burlywood" stroke="blue" stroke-width="1" />\n`
 
     // Write teeth count on the wheel
-    svg += `<text x="${extRadius - 5}" y="${extRadius - intRadius - (wheelThickness / 2)}">${internalTeeth}</text>\n`
+    // svg += `<text x="${extRadius - 5}" y="${extRadius - intRadius - (wheelThickness / 2)}">${internalTeeth}</text>\n`
 
     svg += `</svg>`
     return svg
@@ -285,8 +305,11 @@ function newWheel(externalTeeth, internalTeeth) {
 function newGear(teethCount) {
     const radius = (teethCount * toothLength) / Math.PI
     items.theGear.extRadius = radius
+    var gearSize = 2 + radius * 2
+    items.theGear.width = gearSize
+    items.theGear.height = gearSize
     var svg = svgHeader
-    svg += `<svg width="${1 + radius * 2}" height="${1 + radius * 2}" version="1.1" xmlns="http://www.w3.org/2000/svg">\n`
+    svg += `<svg width="${gearSize}" height="${gearSize}" version="1.1" xmlns="http://www.w3.org/2000/svg">\n`
 
     // External serration, add points clockwise
     svg += `<path d="M`
@@ -296,10 +319,10 @@ function newGear(teethCount) {
         point = points.shift()
         svg += `${point.shift()},${point.shift()} `
     }
-    svg += `" fill="beige" stroke="blue" stroke-width="1" fill-opacity="0.4" />\n`
+    svg += `" fill="beige" stroke="blue" stroke-width="1" opacity="0.5" />\n`
 
     // Draw a dotted line along radius
-    svg += `<line x1="${radius}" y1="${radius}" x2="${radius}" y2="${radius * 2}" stroke="gray" stroke-dasharray="0" />\n`
+    svg += `<line x1="${radius + 1}" y1="${radius + 1}" x2="${radius + 1}" y2="${radius * 2 + 1}" stroke="gray" stroke-dasharray="0" opacity="0.5" />\n`
     // Write teeth count on the gear
     // svg += `<text x="${radius - 5}" y="${radius - 25}">${teethCount}</text>\n`
 

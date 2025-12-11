@@ -34,8 +34,8 @@ Item {
 
     File { id: file }
 
-    function resetSvg(radius_, color_) {
-        svgSize = 2 * radius_
+    function resetSvg(width_, color_) {
+        svgSize = width_
         source = ""
         path = ""
         fill = "none"

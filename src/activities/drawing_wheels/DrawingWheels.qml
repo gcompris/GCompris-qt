@@ -1,6 +1,7 @@
 /* GCompris - DrawingWheels.qml
  *
  * SPDX-FileCopyrightText: 2025 Bruno Anselme <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Anselme <be.root@free.fr>
@@ -10,9 +11,6 @@
  *
  */
 import QtQuick
-import QtQuick.Layouts
-// for Popup
-import QtQuick.Controls
 // for StandardPaths
 import QtCore
 import core 1.0
@@ -77,52 +75,51 @@ ActivityBase {
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
+            readonly property bool isHorizontalLayout: activityBackground.width >= activityBackground.height
 
             property alias creationHandler: creationHandler
 
-            property alias wheelTeeth: wheelTeeth.value     // Teeth count for the wheel
-            property alias gearTeeth: gearTeeth.value       // Teeth count for the gear
+            property alias wheelTeeth: wheelTeethSlider.value // Teeth count for the wheel
+            property alias gearTeeth: gearTeethSlider.value       // Teeth count for the gear
             property alias theWheel: theWheel
             property alias theGear: theGear
+            property alias canvasContainer: canvasContainer    // the initial area to setup the canvas
             property alias canvasArea: canvasArea              // image grabber
             property alias canvasImage: canvasImage            // loaded image
             property alias animationCanvas: animationCanvas    // temporary canvas for drawing animation
-            property alias penOffset: penOffset.value
-            property alias penOpacity: penOpacity.value
+            property alias penOffset: penOffsetSlider.value
+            property alias penOpacity: penOpacitySlider.value
             property alias gearTimer: gearTimer
             property alias toolsContainer: toolsContainer
-            property alias toothOffset: offsetTooth.value
+            property alias toothOffset: toothOffsetSlider.value
             property alias file: file
-            property alias currentColor: columnPen.currentColor
-            property alias currentDotSize: columnPen.currentDotSize
-            property alias currentWheel: gearGrid.currentWheel
-            property alias currentGear: gearGrid.currentGear
+            property alias currentWheel: wheelPanel.currentWheel
+            property alias currentGear: wheelPanel.currentWheel
             property alias gearsModel: gearsModel
             property alias undoStack: undoStack
             property alias svgTank: svgTank
             property alias newImageDialog: newImageDialog
             property alias scrollSound: scrollSound
+            property alias panelManager: panelManager
 
-            property alias filePopup: filePopup
-            property alias gearPopup: gearPopup
-            property alias penPopup: penPopup
-
-            readonly property string backgroundColor: "#ffffff"
-            readonly property string transparentColor: "#00000000"
-            readonly property color contentColor: "#d2d2d2"
-            property real maxRounds: Activity.computeLcm(wheelTeeth.value, gearTeeth.value) / wheelTeeth.value
-            property real spikesCount: Activity.computeLcm(wheelTeeth.value, gearTeeth.value) / gearTeeth.value
-            property string penColor: "#000000"
-            property int penWidth: 1
+            property color backgroundColor: Qt.rgba(1,1,1,1)
+            property color newBackgroundColor: backgroundColorSelector.newBackgroundColor
+            readonly property color transparentColor: Qt.rgba(0,0,0,0)
+            property real maxRounds: Activity.computeLcm(wheelTeethSlider.value, gearTeethSlider.value) /
+                                        wheelTeethSlider.value
+            property real spikesCount: Activity.computeLcm(wheelTeethSlider.value, gearTeethSlider.value) /
+                                        gearTeethSlider.value
+            property color penColor: Qt.rgba(0,0,0,1)
+            property alias penWidth: penSizeSlider.value
             property point lastPoint: Qt.point(0, 0)
             property int undoIndex: 0
             property int paletteIndex: 0
-            property int imageSize: 150     // will be set by initLevel
             property bool runCompleted: false // used to avoid moving the gear too far
             property bool startedFromOrigin: true
             property string actionAfter: ""
             property bool canvasLocked: true
             property bool isFileSaved: true
+            property int baseButtonSize: 60 * ApplicationInfo.ratio
 
         }
 
@@ -167,10 +164,12 @@ ActivityBase {
                     , "toothOffset_": items.toothOffset
                     , "penOffset_": items.penOffset
                     , "penOpacity_": items.penOpacity
-                    , "currentColor_": items.currentColor
                     , "penColor_": items.penColor
-                    , "currentDotSize_": items.currentDotSize
                     , "penWidth_": items.penWidth
+                    , "currentWheel_": items.currentWheel
+                    , "currentGear_": items.currentGear
+                    , "wheelTeeth_": items.wheelTeeth
+                    , "gearTeeth_": items.gearTeeth
                 })
             }
 
@@ -181,10 +180,12 @@ ActivityBase {
                 items.toothOffset = todo.toothOffset_
                 items.penOffset = todo.penOffset_
                 items.penOpacity = todo.penOpacity_
-                items.currentColor = todo.currentColor_
                 items.penColor = todo.penColor_
-                items.currentDotSize = todo.currentDotSize_
                 items.penWidth = todo.penWidth_
+                items.currentWheel = todo.currentWheel_
+                items.currentGear = todo.currentGear_
+                items.wheelTeeth = todo.wheelTeeth_
+                items.gearTeeth = todo.gearTeeth_
 
                 items.animationCanvas.initContext()
                 items.animationCanvas.ctx.lineWidth = items.penWidth
@@ -199,10 +200,12 @@ ActivityBase {
                 todo.toothOffset_ = items.toothOffset
                 todo.penOffset_ = items.penOffset
                 todo.penOpacity_ = items.penOpacity
-                todo.currentColor_ = items.currentColor
                 todo.penColor_ = items.penColor
-                todo.currentDotSize_ = items.currentDotSize
                 todo.penWidth_ = items.penWidth
+                todo.currentWheel_ = items.currentWheel
+                todo.currentGear_ = items.currentGear
+                todo.wheelTeeth_ = items.wheelTeeth
+                todo.gearTeeth_ = items.gearTeeth
                 undoStack.setLastStacked(todo)
             }
         }
@@ -215,22 +218,20 @@ ActivityBase {
             svgOpacity: items.penOpacity
         }
 
-        Rectangle {
+        Item {
+            id: layoutArea
+            anchors.fill: parent
+            anchors.margins: GCStyle.baseMargins
+            anchors.bottomMargin: bar.height * 1.2
+        }
+
+        Item {
             id: canvasContainer
-            anchors.top: parent.top
-            anchors.right: toolsContainer.left
-            anchors.bottom: parent.bottom
-            anchors.left: parent.left
-            anchors.margins: GCStyle.halfMargins
-            anchors.bottomMargin: bar.height + GCStyle.halfMargins
-            color: items.backgroundColor
+            anchors.fill: layoutArea
 
             GImageGrabber {
                 id: canvasArea
-                width: items.imageSize
-                height: items.imageSize
                 anchors.centerIn: parent
-                anchors.margins: 0
                 maxUndo: activity.undoSetting
 
                 property url tempSavePath: StandardPaths.writableLocation(StandardPaths.TempLocation)
@@ -248,6 +249,19 @@ ActivityBase {
                     id: canvasColor
                     anchors.fill: parent
                     color: items.backgroundColor
+                }
+
+                // Used to load saved image with size set to fit the canvas
+                Image {
+                    id: loadedImage
+                    anchors.fill: parent
+                    fillMode: Image.PreserveAspectFit
+                    cache: false
+                    smooth: true
+                    source: ""
+                    visible: false
+                    sourceSize.width: width
+                    sourceSize.height: height
                 }
 
                 Image {
@@ -285,6 +299,7 @@ ActivityBase {
                     function clearTempCanvas() {
                         animationCanvas.ctx.clearRect(0, 0, animationCanvas.width, animationCanvas.height);
                         animationCanvas.requestPaint();
+                        loadedImage.visible = false
                         items.canvasLocked = false;
                     }
 
@@ -301,10 +316,22 @@ ActivityBase {
                 id: theWheel
                 property real intRadius: 0
                 property real extRadius: 0
-                x: (canvasContainer.width * 0.5) - (width * 0.5)
-                y: (canvasContainer.height * 0.5) - (height * 0.5)
+                anchors.centerIn: canvasArea
                 visible: !hideGears.checked
+                opacity: 0.5
+                sourceSize.width: width
+                sourceSize.height: height
+
+                GCText {
+                    id: theWheelValue
+                    text: wheelTeethSlider.value
+                    anchors.top: theWheel.top
+                    anchors.horizontalCenter: theWheel.horizontalCenter
+                    fontSize: 8
+                    fixFontSize: true
+                }
             }
+
             Image {
                 id: theGear
                 property real centerX: 0
@@ -315,49 +342,48 @@ ActivityBase {
                 y: centerY + (canvasContainer.height * 0.5) - (height * 0.5)
                 rotation: 0
                 visible: !hideGears.checked
+                sourceSize.width: width
+                sourceSize.height: height
 
                 Rectangle {
                     id: pencil
                     property real center: width * 0.5
-                    width: 4 + items.penWidth
+                    width: 2 + items.penWidth
                     height: width
                     radius: width / 2
                     color: items.penColor
                     border.width: 1
-                    border.color: "black"
+                    border.color: "#80000000"
                     border.pixelAligned: false
-                    x: (theGear.width * 0.5) - (width * 0.5)
-                    y: (theGear.height * 0.5) - (height * 0.5) + items.penOffset
+                    anchors.centerIn: parent
+                    anchors.verticalCenterOffset: items.penOffset
                 }
             }
         }
 
         Rectangle {
             id: toolsContainer
-            anchors.topMargin: GCStyle.halfMargins
+            color: GCStyle.darkBg
             anchors.right: parent.right
             anchors.top: parent.top
-            anchors.bottom: parent.bottom
-            anchors.bottomMargin: bar.height + GCStyle.halfMargins
-            width: 80
-            color: GCStyle.darkBg
-            radius: 10
 
-            ColumnLayout {
-                id: tools
+            property int buttonSize: 1
+
+            Flow {
+                id: toolsFlow
                 anchors.fill: parent
+                anchors.margins: GCStyle.halfMargins
+                spacing: GCStyle.halfMargins
 
                 IconButton {
                     id: fileButton
                     source: "qrc:/gcompris/src/activities/sketch/resource/filesMenu.svg"
                     toolTip: qsTr("Save drawing")
-                    Layout.topMargin: GCStyle.baseMargins
-                    Layout.alignment:Qt.AlignHCenter
+                    width: toolsContainer.buttonSize
+                    selected: true
                     enabled: !gearTimer.running
-                    opacity: gearTimer.running ? 0.6 : 1.0
-                    onPushed: {
-                        mapPadToItem(items.filePopup, fileButton)
-                        items.filePopup.open()
+                    onClicked: {
+                        panelManager.showPanel(filePanel);
                     }
                 }
 
@@ -365,45 +391,73 @@ ActivityBase {
                     id: gearButton
                     source: "qrc:/gcompris/src/activities/drawing_wheels/resource/gear.svg"
                     toolTip: qsTr("Wheel and gear")
-                    Layout.alignment:Qt.AlignHCenter
+                    width: toolsContainer.buttonSize
+                    selected: true
                     enabled: !gearTimer.running
-                    opacity: gearTimer.running ? 0.5 : 1.0
-                    onPushed: {
-                        mapPadToItem(items.gearPopup, gearButton)
-                        items.gearPopup.open()
+                    onClicked: {
+                        panelManager.showPanel(wheelPanel);
                     }
                     GCText {
-                        anchors.fill: parent
                         anchors.centerIn: parent
+                        width: parent.width * 0.5
+                        height: width
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                         fontSize: tinySize
-                        text: gearTeeth.value
+                        fontSizeMode: Text.Fit
+                        fixFontSize: true
+                        color: GCStyle.whiteText
+                        text: gearTeethSlider.value
                     }
                 }
 
                 IconButton {
                     id: pencilButton
                     source: "qrc:/gcompris/src/activities/sketch/resource/brushTools.svg"
-                    toolTip: qsTr("Pencil's color and width")
-                    Layout.alignment:Qt.AlignHCenter
+                    toolTip: qsTr("Pencil size and position")
+                    width: toolsContainer.buttonSize
+                    selected: true
                     enabled: !gearTimer.running
-                    opacity: gearTimer.running ? 0.5 : 1.0
-                    onPushed: {
-                        mapPadToItem(items.penPopup, pencilButton)
-                        items.penPopup.open()
+                    onClicked: {
+                        panelManager.showPanel(penPanel);
                     }
+                }
+
+                IconButton {
+                    id: colorButton
+                    source: ""
+                    toolTip: qsTr("Color selector")
+                    width: toolsContainer.buttonSize
+                    selected: true
+                    enabled: !gearTimer.running
+                    onClicked: {
+                        panelManager.showPanel(colorsPanel)
+                    }
+
+                    Rectangle {
+                        anchors.fill: parent
+                        anchors.margins: GCStyle.thinnestBorder
+                        border.width: width * 0.085
+                        border.color: GCStyle.whiteBorder
+                        z: -1
+                        radius: width
+                        color: items.penColor
+                        scale: colorButton.buttonArea.pressed ? 0.9 : 1
+                    }
+                }
+
+                Item {
+                    id: flowSpacer
                 }
 
                 IconButton {
                     id: undoButton
                     source: "qrc:/gcompris/src/activities/sketch/resource/undo.svg"
                     toolTip: qsTr("Undo")
-                    Layout.alignment:Qt.AlignHCenter
+                    width: toolsContainer.buttonSize
                     enabled: (!gearTimer.running) && (canvasArea.undoSize > 1)
-                    opacity: enabled ? 1.0 : 0.5
                     selected: true
-                    onPushed: {
+                    onClicked: {
                         Activity.undoAction();
                     }
                 }
@@ -413,34 +467,32 @@ ActivityBase {
                     source: "qrc:/gcompris/src/activities/sketch/resource/undo.svg"
                     toolTip: qsTr("Redo")
                     mirror: true
-                    Layout.alignment:Qt.AlignHCenter
+                    width: toolsContainer.buttonSize
                     enabled: (!gearTimer.running) && (canvasArea.redoSize > 0)
-                    opacity: enabled ? 1.0 : 0.5
                     selected: true
-                    onPushed: {
+                    onClicked: {
                         Activity.redoAction();
                     }
                 }
 
                 Item {
-                    Layout.fillWidth: true
-                    Layout.fillHeight: true
-                }
+                    width: toolsContainer.buttonSize
+                    height: toolsContainer.buttonSize
 
-                GCProgressBar {
-                    id: revolutionProgress
-                    Layout.fillWidth: true
-                    Layout.preferredHeight: 30
-                    Layout.margins: 5
-                    from: 0
-                    value: items.theGear.wheelAngle / 360
-                    to: items.maxRounds
-                    GCText {
-                        anchors.fill: parent
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        fontSize: tinySize
-                        text: items.maxRounds
+                    GCProgressBar {
+                        id: revolutionProgress
+                        anchors.centerIn: parent
+                        width: toolsContainer.buttonSize
+                        from: 0
+                        value: items.theGear.wheelAngle / 360
+                        to: items.maxRounds
+                        GCText {
+                            anchors.fill: parent
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                            fontSize: tinySize
+                            text: items.maxRounds
+                        }
                     }
                 }
 
@@ -448,10 +500,9 @@ ActivityBase {
                     id: playButton
                     source: gearTimer.running ? "qrc:/gcompris/src/activities/drawing_wheels/resource/stop.svg" : "qrc:/gcompris/src/activities/drawing_wheels/resource/play.svg"
                     toolTip: gearTimer.running ? qsTr("Stop drawing") : qsTr("Start drawing")
-                    Layout.alignment:Qt.AlignHCenter
-                    Layout.bottomMargin: GCStyle.baseMargins
+                    width: toolsContainer.buttonSize
                     selected: true
-                    onPushed: {
+                    onClicked: {
                         if (gearTimer.running)
                             Activity.stopGear()
                         else
@@ -478,528 +529,734 @@ ActivityBase {
             id: hideGears
             property bool checked: false
             selected: true
+            width: toolsContainer.buttonSize
             source: checked ? "qrc:/gcompris/src/activities/drawing_wheels/resource/hidden.svg" : "qrc:/gcompris/src/activities/drawing_wheels/resource/visible.svg"
             toolTip: checked ? qsTr("Show wheel and gear") : qsTr("Hide wheel and gear")
             anchors.centerIn: hideGearsBG
-            onPushed: checked = !checked
+            onClicked: checked = !checked
         }
 
-        function mapPadToItem(pad_, item_){
-            pad_.x = Qt.binding(function() { return activityBackground.width - item_.width - 2 * GCStyle.baseMargins - pad_.width })
-            pad_.y = GCStyle.baseMargins
+        states: [
+            State {
+                name: "horizontalLayout"
+                when: items.isHorizontalLayout
+
+                PropertyChanges {
+                    toolsContainer.radius: GCStyle.halfMargins
+                    toolsContainer.height: layoutArea.height + GCStyle.baseMargins * 2
+                    toolsContainer.buttonSize: Math.min(items.baseButtonSize,
+                        (layoutArea.height - GCStyle.halfMargins) /
+                        (toolsFlow.children.length - 1) - GCStyle.halfMargins)
+                    toolsContainer.width: toolsContainer.buttonSize + GCStyle.baseMargins + GCStyle.halfMargins
+                    toolsContainer.anchors.rightMargin: -GCStyle.halfMargins
+                    toolsContainer.anchors.topMargin: -GCStyle.halfMargins
+
+                    toolsFlow.anchors.topMargin: GCStyle.baseMargins
+                    flowSpacer.height: toolsFlow.height -
+                        (toolsFlow.children.length - 1) *
+                        (toolsContainer.buttonSize + toolsFlow.spacing)
+                    flowSpacer.width: toolsContainer.buttonSize
+
+                    canvasContainer.anchors.topMargin: 0
+                    canvasContainer.anchors.rightMargin: toolsContainer.width
+
+                    filePanel.width: Math.min(activityBackground.width, fileColumn.width + GCStyle.baseMargins * 2)
+                    filePanel.maxWidth: Math.min(activityBackground.width - GCStyle.baseMargins * 2, 400 * ApplicationInfo.ratio)
+
+                }
+            },
+            State{
+                name: "verticalLayout"
+                when: !items.isHorizontalLayout
+
+                PropertyChanges {
+                    toolsContainer.radius: 0
+                    toolsContainer.width: activityBackground.width
+                    toolsContainer.buttonSize: Math.min(items.baseButtonSize,
+                        (toolsContainer.width - GCStyle.halfMargins) /
+                        (toolsFlow.children.length - 1) - GCStyle.halfMargins)
+                    toolsContainer.height: toolsContainer.buttonSize + GCStyle.baseMargins
+
+                    toolsFlow.anchors.topMargin: GCStyle.halfMargins
+                    flowSpacer.width: toolsFlow.width -
+                        (toolsFlow.children.length - 1) *
+                        (toolsContainer.buttonSize + toolsFlow.spacing)
+                    flowSpacer.height: toolsContainer.buttonSize
+
+                    canvasContainer.anchors.topMargin: toolsContainer.height
+                    canvasContainer.anchors.rightMargin: 0
+
+                    filePanel.width: activityBackground.width
+                    filePanel.maxWidth: activityBackground.width - GCStyle.baseMargins * 2
+                }
+            }
+        ]
+
+        // Panels
+        Rectangle {
+            id: panelManager
+            anchors.fill: parent
+            color: "#60000000"
+            visible: false
+            property Rectangle selectedPanel: null
+
+            function showPanel(panel_) {
+                if(panel_) {
+                    panelManager.selectedPanel = panel_;
+                    panelManager.visible = true;
+                    panelManager.selectedPanel.visible = true;
+                }
+            }
+
+            function closePanel() {
+                if(panelManager.selectedPanel) {
+                    panelManager.selectedPanel.visible = false;
+                }
+                panelManager.visible = false;
+                panelManager.selectedPanel = null;
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    if(panelManager.selectedPanel) {
+                       panelManager.closePanel();
+                    }
+                }
+            }
+
         }
 
-        // Popups
-        Popup {
-            id: filePopup
-            property int maxX: activityBackground.width - width - GCStyle.baseMargins
-            property int maxY: activityBackground.height - height - GCStyle.baseMargins
-            background: Rectangle {
-                radius: 5
-                color: GCStyle.darkBg
-            }
-            modal: true
-            contentItem: Grid {
-                columns: 2
-                spacing: GCStyle.baseMargins
-                horizontalItemAlignment: Grid.AlignRight
-                GCText {
-                    text: qsTr("Save your image")
-                    color: items.contentColor
-                    fontSize: smallSize
-                    fontSizeMode: Text.Fit
-                }
-                SelectionButton {
-                    id: saveButton
-                    buttonSize: 40* ApplicationInfo.ratio
-                    isButtonSelected: false
-                    iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileSave.svg"
-                    onButtonClicked: {
-                        filePopup.close()
-                        Activity.savePngDialog();
-                    }
-                }
-                GCText {
-                    text: qsTr("Save as a drawing")
-                    color: items.contentColor
-                    fontSize: smallSize
-                    fontSizeMode: Text.Fit
-                }
-                SelectionButton {
-                    id: saveSvgButton
-                    buttonSize: 40* ApplicationInfo.ratio
-                    isButtonSelected: false
-                    iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileSave.svg"
-                    onButtonClicked: {
-                        filePopup.close()
-                        Activity.saveSvgDialog();
-                    }
-                }
-                GCText {
-                    text: qsTr("Open an image")
-                    color: items.contentColor
-                    fontSize: smallSize
-                    fontSizeMode: Text.Fit
-                }
-                SelectionButton {
-                    id: openButton
-                    buttonSize: 40* ApplicationInfo.ratio
-                    isButtonSelected: false
-                    iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileOpen.svg"
-                    onButtonClicked: {
-                        filePopup.close()
-                        Activity.openImageDialog();
-                    }
-                }
-                GCText {
-                    text: qsTr("Create a new image")
-                    color: items.contentColor
-                    fontSize: smallSize
-                    fontSizeMode: Text.Fit
-                }
-                SelectionButton {
-                    buttonSize: 40 * ApplicationInfo.ratio
-                    isButtonSelected: false
-                    iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileNew.svg"
-                    onButtonClicked: {
-                        filePopup.close()
-                        if (!undoStack.isFileSaved) {
-                            items.actionAfter = "create"
-                            newImageDialog.active = true
-                            return
-                        }
-                        Activity.initLevel()
-                    }
-                }
-            }
-        }
+        Rectangle {
+            id: filePanel
+            radius: GCStyle.halfMargins
+            border.width: GCStyle.thinBorder
+            border.color: GCStyle.lightBorder
+            color: GCStyle.darkBg
+            height: fileColumn.height + GCStyle.baseMargins * 2
+            visible: false
 
-        Popup {
-            id: gearPopup
-            property int maxX: activityBackground.width - width - GCStyle.baseMargins
-            property int maxY: activityBackground.height - height - GCStyle.baseMargins
-            background: Rectangle {
-                radius: 5
-                color: GCStyle.darkBg
+            y: (!items.isHorizontalLayout || width > layoutArea.width) ? 0 : GCStyle.halfMargins
+            anchors.right: parent.right
+            anchors.rightMargin: width + toolsContainer.width > activityBackground.width ? 0 : toolsContainer.width
+
+            readonly property int buttonSize: Math.min(items.baseButtonSize,
+                                                       layoutArea.height * 0.1 - GCStyle.halfMargins)
+            property int maxWidth
+
+            MouseArea {
+                anchors.fill: parent
             }
-            modal: true
-            contentItem:
+
+            Column {
+                id: fileColumn
+                anchors.centerIn: parent
+                spacing: GCStyle.halfMargins
+
                 Column {
-                Grid {
-                    id: gearGrid
-                    property int currentWheel: 0
-                    property int currentGear: 0
-                    visible: items.currentLevel === 0
-                    columns: Activity.sets.length + 1
-                    spacing: GCStyle.baseMargins
-                    horizontalItemAlignment: Grid.AlignRight
-                    GCText {    // Wheel label
-                        id: wheelLabel
-                        text: qsTr("Wheel")
-                        color: items.contentColor
-                        fontSize: regularSize
+                    id: fileColumn1
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    spacing: GCStyle.halfMargins
+
+                    GCLabelButton {
+                        id: saveButton
+                        maxWidth: filePanel.maxWidth
+                        height: filePanel.buttonSize
+                        iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileSave.svg"
+                        text: qsTr("Save image (PNG)")
+                        textColor: GCStyle.contentColor
+
+                        onClicked: {
+                            panelManager.closePanel();
+                            Activity.savePngDialog();
+                        }
                     }
+
+                    GCLabelButton {
+                        id: saveSvgButton
+                        maxWidth: filePanel.maxWidth
+                        height: filePanel.buttonSize
+                        iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileSave.svg"
+                        text: qsTr("Save vector image (SVG)")
+                        textColor: GCStyle.contentColor
+
+                        onClicked: {
+                            panelManager.closePanel();
+                            Activity.saveSvgDialog();
+                        }
+                    }
+
+                    GCLabelButton {
+                        id: openButton
+                        maxWidth: filePanel.maxWidth
+                        height: filePanel.buttonSize
+                        iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileOpen.svg"
+                        text: qsTr("Open an image")
+                        textColor: GCStyle.contentColor
+
+                        onClicked: {
+                            panelManager.closePanel();
+                            Activity.openImageDialog();
+                        }
+                    }
+                }
+
+                Rectangle {
+                    id: verticalSpacer1
+                    color: GCStyle.contentColor
+                    opacity: 0.5
+                    height: GCStyle.thinnestBorder
+                    width: Math.max(fileColumn1.width, fileColumn2.width)
+                    anchors.horizontalCenter: parent.horizontalCenter
+                }
+
+                Column {
+                    id: fileColumn2
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    spacing: GCStyle.halfMargins
+
+                    GCLabelButton {
+                        id: newButton
+                        maxWidth: filePanel.maxWidth
+                        height: filePanel.buttonSize
+                        iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileNew.svg"
+                        text: qsTr("Create a new image")
+                        textColor: GCStyle.contentColor
+
+                        onClicked: {
+                            panelManager.closePanel();
+                            if(!items.isFileSaved) {
+                                items.actionAfter = "create";
+                                newImageDialog.active = true;
+                            } else {
+                                Activity.initLevel();
+                            }
+                        }
+                    }
+
+                    GCLabelButton {
+                        id: bgColorButton
+                        maxWidth: filePanel.maxWidth
+                        height: filePanel.buttonSize
+                        iconSource: ""
+                        text: qsTr("Background color")
+                        textColor: GCStyle.contentColor
+
+                        onClicked: {
+                            backgroundColorSelector.visible = true;
+                            displayDialog(backgroundColorSelector);
+                        }
+
+                        Rectangle {
+                            id: bgColorRect
+                            width: filePanel.buttonSize
+                            height: filePanel.buttonSize
+                            x: bgColorButton.buttonIcon.x
+                            scale: bgColorButton.buttonIcon.scale
+                            radius: GCStyle.halfMargins
+                            color: backgroundColorSelector.newBackgroundColor
+                            border.color: GCStyle.contentColor
+                        }
+                    }
+                }
+            }
+        }
+
+        Rectangle {
+            id: wheelPanel
+            radius: GCStyle.halfMargins
+            border.width: GCStyle.thinBorder
+            border.color: GCStyle.lightBorder
+            color: GCStyle.darkBg
+            width: items.isHorizontalLayout ? (wheelColumn.width + GCStyle.baseMargins * 2) : activityBackground.width
+            height: wheelColumn.height + GCStyle.baseMargins * 2
+            visible: false
+
+            property int currentWheel: 0
+            property int currentGear: 0
+
+            y: (!items.isHorizontalLayout || width > layoutArea.width) ? 0 : GCStyle.halfMargins
+            anchors.right: parent.right
+            anchors.rightMargin: width + toolsContainer.width > activityBackground.width ? 0 : toolsContainer.width
+
+            readonly property int maxWidth: Math.min(parent.width - GCStyle.baseMargins * 2, 450 * ApplicationInfo.ratio)
+            readonly property int maxHeight: Math.min(layoutArea.height, 250 * ApplicationInfo.ratio)
+            readonly property int buttonSize: Math.min(items.baseButtonSize,
+                                                       maxWidth * 0.1 - GCStyle.halfMargins,
+                                                       maxHeight * 0.2 - GCStyle.halfMargins)
+            readonly property int sliderSize: buttonSize * 6
+
+            Column {
+                id: wheelColumn
+                anchors.centerIn: parent
+                spacing: GCStyle.halfMargins
+
+                Row {
+                    id: wheelRow
+                    spacing: GCStyle.halfMargins
+
+                    GCText {
+                        color: GCStyle.contentColor
+                        fontSize: regularSize
+                        fontSizeMode: Text.Fit
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        height: wheelPanel.buttonSize
+                        width: wheelPanel.buttonSize * 3
+                        text: qsTr("Wheel")
+                    }
+
                     Repeater {  // Loop on wheels
                         model: Activity.wheelKeys
                         IconButton {
+                            visible: items.currentLevel === 0
                             source: "qrc:/gcompris/src/activities/drawing_wheels/resource/wheel.svg"
-                            selected: index === gearGrid.currentWheel
+                            selected: index === wheelPanel.currentWheel
+                            width: wheelPanel.buttonSize
                             GCText {
                                 anchors.centerIn: parent
+                                height: parent.height * 0.5
+                                width: height
                                 horizontalAlignment: Text.AlignHCenter
                                 verticalAlignment: Text.AlignVCenter
                                 fontSize: tinySize
-                                color: "white"
+                                fontSizeMode: Text.Fit
+                                fixFontSize: true
+                                color: GCStyle.whiteText
                                 text: modelData
                             }
-                            onPushed: {
-                                gearGrid.currentWheel = index
-                                wheelTeeth.value = parseInt(modelData)
-                                gearsModel.clear()
-                                for (var i = 0; i < Activity.sets[index].gears.length; i++) {
-                                    gearsModel.append({ "nbTeeth": Activity.sets[index].gears[i]})
+                            onClicked: {
+                                wheelPanel.currentWheel = index;
+                                wheelTeethSlider.value = parseInt(modelData);
+                                gearsModel.clear();
+                                for(var i = 0; i < Activity.sets[index].gears.length; i++) {
+                                    gearsModel.append({ "nbTeeth": Activity.sets[index].gears[i]});
                                 }
-                                if (gearGrid.currentGear > Activity.sets[index].gears.length - 1) {
-                                    gearGrid.currentGear = Activity.sets[index].gears.length - 1
-                                    gearTeeth.value = Activity.sets[index].gears[gearGrid.currentGear]
+                                if(wheelPanel.currentGear > Activity.sets[index].gears.length - 1) {
+                                    wheelPanel.currentGear = Activity.sets[index].gears.length - 1;
+                                    gearTeethSlider.value = Activity.sets[index].gears[wheelPanel.currentGear];
                                 }
                             }
                         }
                     }
-                    GCText {    // Gear label
-                        text: qsTr("Gear")
-                        color: items.contentColor
-                        fontSize: regularSize
-                        fontSizeMode: Text.Fit
-                    }
-                    Repeater {  // Loop on the gears of the selected set
-                        model: gearsModel
-                        IconButton {
-                            source: "qrc:/gcompris/src/activities/drawing_wheels/resource/gear.svg"
-                            selected: index === gearGrid.currentGear
-                            GCText {
-                                anchors.centerIn: parent
-                                horizontalAlignment: Text.AlignHCenter
-                                verticalAlignment: Text.AlignVCenter
-                                fontSize: tinySize
-                                text: nbTeeth
-                            }
-                            onPushed: {
-                                gearTeeth.value = nbTeeth
-                                gearGrid.currentGear = index
-                            }
-                        }
-                    }
-                    Repeater {  // Empty items to fill grid
-                        model: Activity.sets.length - gearsModel.count
-                        Rectangle {
-                            width: 10
-                            height: 10
-                            color: "transparent"
-                        }
-                    }
-                }
 
-                GridLayout {    // free wheel and gear teeth count
-                    columns: 3
-                    width: parent.width
-                    visible: items.currentLevel === 1
-                    GCText {    // Wheel label
-                        text: qsTr("Wheel")
-                        color: items.contentColor
-                        fontSize: tinySize
-                        fontSizeMode: Text.Fit
-                    }
                     GCSlider {
-                        id: wheelTeeth
-                        Layout.fillWidth: true
+                        id: wheelTeethSlider
+                        visible: items.currentLevel === 1;
+                        width: wheelPanel.sliderSize
+                        anchors.verticalCenter: parent.verticalCenter
                         from: 30
                         value: 96
                         to: 96
                         stepSize: 1
                         onValueChanged: Activity.initWheel()
                     }
-                    GCText {    // Wheel value
-                        text: wheelTeeth.value
-                        color: items.contentColor
-                        fontSize: tinySize
+
+                    GCText {
+                        visible: items.currentLevel === 1;
+                        color: GCStyle.contentColor
+                        fontSize: regularSize
                         fontSizeMode: Text.Fit
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        height: wheelPanel.buttonSize
+                        width: wheelPanel.buttonSize
+                        text: wheelTeethSlider.value
                     }
-                    GCText {    // Gear label
+
+                }
+
+                Row {
+                    id: geerRow
+                    spacing: GCStyle.halfMargins
+
+                    GCText {
+                        color: GCStyle.contentColor
+                        fontSize: regularSize
+                        fontSizeMode: Text.Fit
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        height: wheelPanel.buttonSize
+                        width: wheelPanel.buttonSize * 3
                         text: qsTr("Gear")
-                        color: items.contentColor
-                        fontSize: tinySize
-                        fontSizeMode: Text.Fit
                     }
+
+                    Repeater {  // Loop on gears
+                        model: gearsModel
+                        IconButton {
+                            visible: items.currentLevel === 0
+                            source: "qrc:/gcompris/src/activities/drawing_wheels/resource/wheel.svg"
+                            selected: index === wheelPanel.currentGear
+                            width: wheelPanel.buttonSize
+                            GCText {
+                                anchors.centerIn: parent
+                                height: parent.height * 0.5
+                                width: height
+                                horizontalAlignment: Text.AlignHCenter
+                                verticalAlignment: Text.AlignVCenter
+                                fontSize: tinySize
+                                fontSizeMode: Text.Fit
+                                fixFontSize: true
+                                color: GCStyle.whiteText
+                                text: modelData
+                            }
+                            onClicked: {
+                                gearTeethSlider.value = nbTeeth;
+                                wheelPanel.currentGear = index;
+                            }
+                        }
+                    }
+
                     GCSlider {
-                        id: gearTeeth
-                        width: 400
+                        id: gearTeethSlider
+                        visible: items.currentLevel === 1;
+                        width: wheelPanel.sliderSize
+                        anchors.verticalCenter: parent.verticalCenter
                         from: 10
                         value: 30
-                        to: wheelTeeth.value
+                        to: wheelTeethSlider.value
                         stepSize: 1
                         onValueChanged: Activity.initWheel()
                     }
-                    GCText {    // Wheel value
-                        text: gearTeeth.value
-                        color: items.contentColor
-                        fontSize: tinySize
+
+                    GCText {
+                        visible: items.currentLevel === 1;
+                        color: GCStyle.contentColor
+                        fontSize: regularSize
                         fontSizeMode: Text.Fit
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        height: wheelPanel.buttonSize
+                        width: wheelPanel.buttonSize
+                        text: gearTeethSlider.value
                     }
                 }
 
-                GCText {    // Spikes count
-                    width: gearGrid.width
+
+                GCText { // Spikes count
+                    color: GCStyle.contentColor
+                    fontSize: smallSize
+                    fontSizeMode: Text.Fit
                     horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    height: wheelPanel.buttonSize * 0.5
+                    width: wheelPanel.buttonSize * 10
                     text: qsTr("%1 spikes").arg(items.spikesCount)
-                    color: items.contentColor
-                    fontSize: smallSize
                 }
 
-                GCText {    // Speed label
-                    width: gearGrid.width
+                Rectangle { // Separator
+                    width: wheelPanel.buttonSize * 10
+                    height: GCStyle.thinBorder
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    color: GCStyle.contentColor
+                }
+
+                GCText { // Speed label
+                    color: GCStyle.contentColor
+                    fontSize: regularSize
+                    fontSizeMode: Text.Fit
                     horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    height: wheelPanel.buttonSize
+                    width: wheelPanel.buttonSize * 10
                     text: qsTr("Speed")
-                    color: items.contentColor
-                    fontSize: smallSize
                 }
 
-                GridLayout {    // Speed control
-                    width: gearGrid.width
+                Row {
+                    id: speedRow
+                    spacing: GCStyle.halfMargins
+                    anchors.horizontalCenter: parent.horizontalCenter
+
                     GCText {
-                        horizontalAlignment: Text.AlignHCenter
+                        color: GCStyle.contentColor
                         fontSize: smallSize
                         fontSizeMode: Text.Fit
-                        color: items.contentColor
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        height: wheelPanel.buttonSize
+                        width: wheelPanel.buttonSize * 2
                         text: qsTr("Slow")
                     }
+
                     GCSlider {  // Controls speed of the gear (time between each step)
                         id: timerValue
-                        Layout.columnSpan: Activity.sets.length
-                        Layout.fillWidth: true
+                        width: wheelPanel.sliderSize
+                        anchors.verticalCenter: parent.verticalCenter
                         from: 16
-                        value: 2
+                        value: 4
                         to: 1
                     }
+
                     GCText {
-                        horizontalAlignment: Text.AlignHCenter
+                        color: GCStyle.contentColor
                         fontSize: smallSize
                         fontSizeMode: Text.Fit
-                        color: items.contentColor
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        height: wheelPanel.buttonSize
+                        width: wheelPanel.buttonSize * 2
                         text: qsTr("Fast")
                     }
                 }
             }
         }
 
-        Popup {
-            id: penPopup
-            property int maxX: activityBackground.width - width - GCStyle.baseMargins
-            property int maxY: activityBackground.height - height - GCStyle.baseMargins
-            background: Rectangle {
-                radius: 5
-                color: GCStyle.darkBg
-            }
-            modal: true
-            contentItem:
-                Column {
-                id: columnPen
-                property int currentColor: 0
-                property int currentDotSize: 0
-                RowLayout { // Palettes
-                    id: rowPalette
-                    width: parent.width
-                    height: 80
-                    spacing: 10
-                    anchors.bottomMargin: 10
+        Rectangle {
+            id: penPanel
+            radius: GCStyle.halfMargins
+            border.width: GCStyle.thinBorder
+            border.color: GCStyle.lightBorder
+            color: GCStyle.darkBg
+            width: items.isHorizontalLayout ? (penColumn.width + GCStyle.baseMargins * 2) : activityBackground.width
+            height: penColumn.height + GCStyle.baseMargins * 2
+            visible: false
+
+            y: (!items.isHorizontalLayout || width > layoutArea.width) ? 0 : GCStyle.halfMargins
+            anchors.right: parent.right
+            anchors.rightMargin: width + toolsContainer.width > activityBackground.width ? 0 : toolsContainer.width
+
+            readonly property int maxWidth: Math.min(parent.width - GCStyle.baseMargins * 2, 450 * ApplicationInfo.ratio)
+            readonly property int maxHeight: Math.min(layoutArea.height, 250 * ApplicationInfo.ratio)
+            readonly property int buttonSize: Math.min(items.baseButtonSize,
+                                                       maxWidth * 0.1 - GCStyle.halfMargins,
+                                                       maxHeight * 0.2 - GCStyle.halfMargins)
+            readonly property int sliderSize: buttonSize * 6
+
+            Column {
+                id: penColumn
+                anchors.centerIn: parent
+                spacing: GCStyle.halfMargins
+
+                Row {
+                    id: penSizeRow
+                    spacing: GCStyle.halfMargins
+
                     GCText {
-                        Layout.preferredWidth: 180
-                        Layout.preferredHeight: 80
-                        fontSize: smallSize
+                        color: GCStyle.contentColor
+                        fontSize: regularSize
                         fontSizeMode: Text.Fit
-                        color: items.contentColor
-                        text: qsTr("Palettes")
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        height: wheelPanel.buttonSize
+                        width: wheelPanel.buttonSize * 3
+                        text: qsTr("Pen size")
                     }
 
-                    IconButton {
-                        source: "qrc:/gcompris/src/activities/sketch/resource/arrow.svg"
-                        width: 15
-                        height: 56
-                        onPushed: if (paletteListView.currentIndex > 0) paletteListView.currentIndex--
+                    GCSlider {
+                        id: penSizeSlider
+                        width: penPanel.sliderSize
+                        anchors.verticalCenter: parent.verticalCenter
+                        from: 1
+                        value: 2 // Default to 2, 1 can look less good/pixelated...
+                        to: 18
+                        stepSize: 1
                     }
 
-                    ListView {
-                        id: paletteListView
-                        Layout.fillWidth: true
-                        height: 56
-                        spacing: 2
-                        orientation: ListView.Horizontal
-                        boundsBehavior: Flickable.StopAtBounds
-                        highlightFollowsCurrentItem: true
-                        highlightMoveDuration: 100
-                        clip: true
-                        currentIndex: 0
-                        model: paletteList
-
-                        highlight: Rectangle {
-                            height: 56
-                            width: height
-                            color: "transparent"
-                            border.color: "white"
-                            border.width: (items.paletteIndex === paletteListView.currentIndex) ? 1 : 0
-                            x: paletteListView.currentItem.x
-                            y: paletteListView.currentItem.y
-                        }
-
-                        delegate: Item {
-                            width: 56
-                            height: 56
-                            Grid {
-                                property int currentPalette: index
-                                anchors.fill: parent
-                                anchors.margins: 1
-                                columns: 3
-                                Repeater {
-                                    model: activityBackground.paletteList[parent.currentPalette]
-                                    Rectangle {
-                                        width: 18
-                                        height: width
-                                        color: activityBackground.paletteList[parent.currentPalette][index]
-                                    }
-                                }
-                            }
-                            MouseArea {
-                                anchors.fill: parent
-                                onClicked: paletteListView.currentIndex = index
-                            }
-                        }
-
-                        onCurrentIndexChanged: {
-                            items.paletteIndex = currentIndex
-                            items.penColor = activityBackground.paletteList[items.paletteIndex][columnPen.currentColor]
-                        }
-                    }
-
-                    IconButton {
-                        source: "qrc:/gcompris/src/activities/sketch/resource/arrow.svg"
-                        width: 15
-                        height: 56
-                        mirror: true
-                        onPushed: if (paletteListView.currentIndex < paletteListView.count - 1) paletteListView.currentIndex++
+                    GCText {
+                        color: GCStyle.contentColor
+                        fontSize: regularSize
+                        fontSizeMode: Text.Fit
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        height: penPanel.buttonSize
+                        width: penPanel.buttonSize
+                        text: penSizeSlider.value
                     }
                 }
 
-                Grid {
-                    id: gridColor
-                    spacing: 10
-                    columns: 10
+                Row {
+                    id: penOpacityRow
+                    spacing: GCStyle.halfMargins
+
                     GCText {
-                        Layout.preferredWidth: 180
-                        fontSize: smallSize
+                        color: GCStyle.contentColor
+                        fontSize: regularSize
                         fontSizeMode: Text.Fit
-                        color: items.contentColor
-                        text: qsTr("Color")
-                    }
-
-                    Repeater {  // Color
-                        model: activityBackground.paletteList[items.paletteIndex]
-                        Rectangle {
-                            width: 50
-                            height: width
-                            color: modelData
-                            border.color: "white"
-                            border.width: (columnPen.currentColor === index) ? 1 : 0
-                            MouseArea {
-                                anchors.fill: parent
-                                hoverEnabled: true
-                                onClicked: {
-                                    items.penColor = modelData
-                                    columnPen.currentColor = index
-                                    items.animationCanvas.ctx.strokeStyle = items.penColor
-                                }
-                            }
-                        }
-                    }
-                    GCText {
-                        Layout.preferredWidth: 180
-                        fontSize: smallSize
-                        fontSizeMode: Text.Fit
-                        color: items.contentColor
-                        text: qsTr("Pensize")
-                    }
-                    Repeater {  // Pen size
-                        model: [ 1, 3, 5, 7, 9, 11, 13, 15, 17]
-                        Rectangle {
-                            width: 50
-                            height: width
-                            color: items.transparentColor
-                            border.color: "white"
-                            border.width: (columnPen.currentDotSize === index) ? 1 : 0
-                            Rectangle {
-                                anchors.centerIn: parent
-                                width: 2 * modelData
-                                height: width
-                                radius: modelData
-                                color: items.penColor
-                            }
-                            MouseArea {
-                                anchors.fill: parent
-                                hoverEnabled: true
-                                onClicked: {
-                                    items.penWidth = modelData
-                                    columnPen.currentDotSize = index
-                                    items.animationCanvas.ctx.lineWidth = items.penWidth
-
-                                }
-                            }
-                        }
-                    }
-                }
-                GridLayout {
-                    id: gridPen
-                    columns: 3
-                    rows: 2
-                    width: parent.width
-
-                    GCText {    // Opacity
-                        fontSize: smallSize
-                        color: items.contentColor
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        height: wheelPanel.buttonSize
+                        width: wheelPanel.buttonSize * 3
                         text: qsTr("Opacity")
                     }
+
                     GCSlider {
-                        id: penOpacity
-                        Layout.fillWidth: true
+                        id: penOpacitySlider
+                        width: penPanel.sliderSize
+                        anchors.verticalCenter: parent.verticalCenter
                         from: 0.1
                         value: 1.0
                         to: 1.0
                         stepSize: 0.1
                     }
+
                     Rectangle {
-                        color: "black"
-                        border.width: 1
-                        border.color: "white"
-                        Layout.preferredWidth: 60
-                        Layout.preferredHeight: 70
-                        Layout.alignment: Qt.AlignHCenter
-                        IconButton {
-                            anchors.fill: parent
-                            anchors.margins: 1
-                            source: "qrc:/gcompris/src/activities/sketch/resource/roundBrush.svg"
-                            opacity: penOpacity.value
+                        color: items.backgroundColor
+                        border.width: GCStyle.thinBorder
+                        border.color: GCStyle.contentColor
+                        width: penPanel.buttonSize
+                        height: penPanel.buttonSize
+
+                        Rectangle {
+                            anchors.centerIn: parent
+                            width: penSizeSlider.value
+                            height: width
+                            radius: width
+                            color: items.penColor
+                            opacity: penOpacitySlider.value
                         }
                     }
+                }
 
-                    GCText {    // Distance to center
-                        fontSize: smallSize
-                        color: items.contentColor
-                        text: qsTr("Distance to center")
+                Row {
+                    id: offsetRow
+                    spacing: GCStyle.halfMargins
+
+                    GCText {
+                        color: GCStyle.contentColor
+                        fontSize: regularSize
+                        fontSizeMode: Text.Fit
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        height: wheelPanel.buttonSize
+                        width: wheelPanel.buttonSize * 3
+                        text: qsTr("Offset")
                     }
+
                     GCSlider {
-                        id: penOffset
-                        Layout.fillWidth: true
+                        id: penOffsetSlider
+                        width: penPanel.sliderSize
+                        anchors.verticalCenter: parent.verticalCenter
                         from: 10
                         value: 40
                         to: Math.round((theGear.extRadius - Activity.wheelThickness) / 5) * 5
                         stepSize: 5
-                        onValueChanged: Activity.initGear()
-                    }
-                    GCText {
-                        Layout.alignment: Qt.AlignHCenter
-                        Layout.preferredHeight: 60
-                        Layout.preferredWidth: 70
-                        horizontalAlignment: Text.AlignHCenter
-                        fontSize: smallSize
-                        fontSizeMode: Text.Fit
-                        color: items.contentColor
-                        text: Math.round(penOffset.value / 5)
+                        onValueChanged: Activity.initGear();
                     }
 
-                    GCText {    // Starting tooth
-                        horizontalAlignment: Text.AlignRight
-                        fontSize: smallSize
-                        color: items.contentColor
-                        text: qsTr("Starting tooth")
-                    }
-                    GCSlider {
-                        id: offsetTooth
-                        Layout.fillWidth: true
-                        from: - Math.abs(gearTeeth.value / items.maxRounds)
-                        value: 0
-                        to: Math.abs(gearTeeth.value / items.maxRounds)
-                        stepSize: 1
-                        onValueChanged: Activity.initGear()
-                    }
                     GCText {
-                        Layout.alignment: Qt.AlignHCenter
-                        Layout.preferredWidth: 70
-                        Layout.preferredHeight: 60
+                        color: GCStyle.contentColor
+                        fontSize: regularSize
+                        fontSizeMode: Text.Fit
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
-                        fontSize: smallSize
-                        fontSizeMode: Text.Fit
-                        color: items.contentColor
-                        text: `${(items.toothOffset === 0) ? "" : Math.abs(items.toothOffset)} ${(items.toothOffset > 0) ? qsTr("right") : (items.toothOffset === 0) ? "" : qsTr("left")}`
+                        height: penPanel.buttonSize
+                        width: penPanel.buttonSize
+                        text: Math.round(penOffsetSlider.value / 5)
                     }
+                }
+
+                Row {
+                    id: startToothRow
+                    spacing: GCStyle.halfMargins
+
+                    GCText {
+                        color: GCStyle.contentColor
+                        fontSize: regularSize
+                        fontSizeMode: Text.Fit
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        height: wheelPanel.buttonSize
+                        width: wheelPanel.buttonSize * 3
+                        text: qsTr("Start tooth")
+                    }
+
+                    GCSlider {
+                        id: toothOffsetSlider
+                        width: penPanel.sliderSize
+                        anchors.verticalCenter: parent.verticalCenter
+                        from: - Math.abs(gearTeethSlider.value / items.maxRounds)
+                        value: 0
+                        to: Math.abs(gearTeethSlider.value / items.maxRounds)
+                        stepSize: 1
+                        onValueChanged: Activity.initGear();
+                    }
+
+                    GCText {
+                        color: GCStyle.contentColor
+                        fontSize: regularSize
+                        fontSizeMode: Text.Fit
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        height: penPanel.buttonSize
+                        width: penPanel.buttonSize
+                        text: items.toothOffset === 0 ? "0" :
+                            (items.toothOffset > 0 ? rightToothOffset : leftToothOffset)
+
+                        readonly property string leftToothOffset: "< " + Math.abs(items.toothOffset)
+                        readonly property string rightToothOffset: items.toothOffset + " >"
+                    }
+                }
+            }
+        }
+
+        Rectangle {
+            id: colorsPanel
+            radius: GCStyle.halfMargins
+            border.width: GCStyle.thinBorder
+            border.color: GCStyle.lightBorder
+            color: GCStyle.darkBg
+            width: items.isHorizontalLayout ? Math.min(parent.width, 450 * ApplicationInfo.ratio) :
+                                            activityBackground.width
+            height: Math.min(layoutArea.height * 0.9, 360 * ApplicationInfo.ratio)
+            visible: false
+
+            y: (!items.isHorizontalLayout || width > layoutArea.width) ? 0 : GCStyle.halfMargins
+            anchors.right: parent.right
+            anchors.rightMargin: width + toolsContainer.width > activityBackground.width ? 0 : toolsContainer.width
+
+            MouseArea {
+                // Just to catch click events before the panelManager
+                anchors.fill: parent
+            }
+
+            PaletteSelector {
+                id: paletteSelector
+                anchors.margins: GCStyle.baseMargins
+                onPaletteSelected: {
+                    colorSelector.reloadPaletteToButtons();
+                }
+            }
+
+            Rectangle {
+                id: panelVerticalSpacer
+                color: GCStyle.contentColor
+                opacity: 0.5
+                height: GCStyle.thinnestBorder
+                anchors.top: paletteSelector.bottom
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.margins: GCStyle.halfMargins
+            }
+
+            ColorSelector {
+                id: colorSelector
+                anchors.top: panelVerticalSpacer.bottom
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.bottom: parent.bottom
+                anchors.margins: GCStyle.halfMargins
+                anchors.topMargin: 0
+
+                palette: paletteSelector.currentPalette.modelData
+                defaultPalette: paletteSelector.defaultPaletteList[paletteSelector.currentIndex]
+
+                onSelectedColorChanged: {
+                    items.penColor = selectedColor;
+                    if(animationCanvas.ctx) {
+                        animationCanvas.ctx.strokeStyle = selectedColor;
+                    }
+                }
+
+                // save edited colors to palette lists and refresh paletteListView
+                onColorEdited: (colorIndex, editedColor) => {
+                    paletteSelector.currentPalette.modelData[colorIndex] = editedColor;
+                    paletteSelector.currentPalette.refreshColor(colorIndex, editedColor);
+                }
+                onResetSelectedPalette: {
+                    for(var i = 0; i < palette.length; i++) {
+                        paletteSelector.currentPalette.modelData[i] = palette[i];
+                    }
+                    paletteSelector.currentPalette.reloadPaletteColors(paletteSelector.paletteList[paletteSelector.currentIndex]);
                 }
             }
         }
@@ -1033,7 +1290,7 @@ ActivityBase {
             function rotateGear(numberOfSteps) {
                 for(var i = 0; i < numberOfSteps; i++) {
                     if(!items.runCompleted) {
-                        Activity.rotateGear(1) // 1 is rotation angle for curve drawing precision. Higher values make angular lines.
+                        Activity.rotateGear(2) // 2 is rotation angle for curve drawing precision. Higher values make angular lines. 1 can make refresh stutter because of too much calculation.
                     } else {
                         break;
                     }
@@ -1048,15 +1305,28 @@ ActivityBase {
             onClose: activity.focus = true;
             onFileLoaded: (data, filePath) => {
                 Activity.initLevel()
-                canvasImage.source = filePath
-                if (filePath.endsWith(".svg"))
+                if (filePath.endsWith(".svg")) {
                     svgTank.loadSvg(file.read(filePath))  // Reset svgTank with loaded svg
                     // Png images are not inserted into svgTank (too big and dirty render)
+                    loadedImage.sourceSize.width = loadedImage.width
+                    loadedImage.sourceSize.height = loadedImage.height
+                } else {
+                    loadedImage.sourceSize.width = undefined
+                    loadedImage.sourceSize.height = undefined
+                }
+                loadedImage.source = filePath
+                loadedImage.visible = true
             }
 
             onSaved: {
                 items.isFileSaved = true;
             }
+        }
+
+        BackgroundColorSelector {
+            id: backgroundColorSelector
+            visible: false
+            onClose: home();
         }
 
         Loader {
