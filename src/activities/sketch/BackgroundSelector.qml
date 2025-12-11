@@ -40,7 +40,7 @@ Rectangle {
     GCText {
         id: colorsTitle
         text: qsTr("Background image")
-        color: items.contentColor
+        color: GCStyle.contentColor
         height: exitButton.height
         anchors.top: parent.top
         anchors.left: parent.left

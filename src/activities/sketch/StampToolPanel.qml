@@ -45,7 +45,7 @@ Item {
                 z: -1
                 anchors.fill: parent
                 anchors.margins: GCStyle.halfMargins
-                color: items.contentColor
+                color: GCStyle.contentColor
                 opacity: 0.3
                 radius: GCStyle.halfMargins
             }

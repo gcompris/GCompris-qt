@@ -31,7 +31,7 @@ Item {
     GCText {
         id: textInputTitle
         text: qsTr("Type your text here")
-        color: items.contentColor
+        color: GCStyle.contentColor
         width: parent.width
         height: toolsPanel.settingsLineHeight
         fontSize: regularSize
@@ -73,7 +73,7 @@ Item {
                 anchors.fill: parent
                 wrapMode: TextEdit.Wrap
                 font.pointSize: 20
-                color: items.contentColor
+                color: GCStyle.contentColor
                 selectionColor: GCStyle.darkBg
                 onCursorRectangleChanged: textFlickable.ensureVisible(cursorRectangle);
             }

@@ -76,7 +76,7 @@ Item {
         GCText {
             id: colorsTitle
             text: qsTr("Palette Colors")
-            color: items.contentColor
+            color: GCStyle.contentColor
             width: parent.width
             height: colorSelector.lineHeight
             fontSize: regularSize
@@ -101,7 +101,7 @@ Item {
                     radius: GCStyle.halfMargins
                     anchors.centerIn: parent
                     color: colorSelector.palette[index]
-                    border.color: items.contentColor
+                    border.color: GCStyle.contentColor
                 }
                 MouseArea {
                     anchors.fill: parent
@@ -135,7 +135,7 @@ Item {
                     width: colorButtonsGridArea.colorButtonsSize
                     height: colorButtonsGridArea.colorButtonsSize
                     radius: GCStyle.baseMargins
-                    border.color: items.contentColor
+                    border.color: GCStyle.contentColor
                     border.width: GCStyle.thinBorder
                     x: colorButtonsGrid.currentItem ? colorButtonsGrid.currentItem.x : 0
                     y: colorButtonsGrid.currentItem ? colorButtonsGrid.currentItem.y : 0
@@ -160,7 +160,7 @@ Item {
         GCText {
             id: resetToolTitle
             text: qsTr("Reset palette")
-            color: items.contentColor
+            color: GCStyle.contentColor
             height: colorSelector.lineHeight
             anchors.left: parent.left
             anchors.right: resetPaletteButton.left
@@ -188,7 +188,7 @@ Item {
 
     Rectangle {
         id: horizontalSpacer
-        color: items.contentColor
+        color: GCStyle.contentColor
         opacity: 0.5
         anchors.top: parent.top
         anchors.bottom: parent.bottom
@@ -212,7 +212,7 @@ Item {
             GCText {
                 id: selectedColorTitle
                 text: qsTr("Selected Color")
-                color: items.contentColor
+                color: GCStyle.contentColor
                 width: parent.width
                 height: colorSelector.lineHeight
                 fontSize: regularSize
@@ -226,7 +226,7 @@ Item {
                 width: parent.width * 0.6
                 height: colorSelector.lineHeight
                 radius: GCStyle.halfMargins
-                border.color: items.contentColor
+                border.color: GCStyle.contentColor
                 border.width: GCStyle.thinBorder
                 anchors.horizontalCenter: parent.horizontalCenter
                 color: colorSelector.palette[0]
@@ -234,6 +234,7 @@ Item {
 
             SliderColor {
                 id: hueSelector
+                height: colorSelector.doubleLineHeight
                 //: Color hue
                 title: qsTr("Hue", "color hue")
                 gradient: Gradient {
@@ -261,6 +262,7 @@ Item {
 
             SliderColor {
                 id: saturationSelector
+                height: colorSelector.doubleLineHeight
                 //: Color saturation
                 title: qsTr("Saturation", "color saturation")
                 gradient: Gradient {
@@ -286,6 +288,7 @@ Item {
 
             SliderColor {
                 id: lightnessSelector
+                height: colorSelector.doubleLineHeight
                 //: Color lightness
                 title: qsTr("Lightness", "color lightness")
                 gradient: Gradient {
@@ -324,7 +327,7 @@ Item {
             id: resetColorTitle
             //: Reload default color for selected slot
             text: qsTr("Reset Color")
-            color: items.contentColor
+            color: GCStyle.contentColor
             height: colorSelector.lineHeight
             anchors.left: parent.left
             anchors.right: resetColorButton.left

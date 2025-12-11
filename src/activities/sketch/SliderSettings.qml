@@ -29,7 +29,7 @@ Item {
         GCText {
             id: sliderLabel
             text: ""
-            color: items.contentColor
+            color: GCStyle.contentColor
             width: sliderSettings.width - sliderInfo.width - GCStyle.baseMargins
             height: sliderSettings.controlsHeight
             fontSize: regularSize
@@ -58,7 +58,7 @@ Item {
                 width: sliderSettings.controlsHeight * 1.5
                 height: width
                 color: "transparent"
-                border.color: items.contentColor
+                border.color: GCStyle.contentColor
 
                 Image {
                     id: infoImage
@@ -76,7 +76,7 @@ Item {
                 GCText {
                     visible: !sliderSettings.useImageInfo
                     text: slider.value
-                    color: items.contentColor
+                    color: GCStyle.contentColor
                     anchors.centerIn: parent
                     width: parent.width - GCStyle.halfMargins
                     height: width

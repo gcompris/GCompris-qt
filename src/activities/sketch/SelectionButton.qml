@@ -23,14 +23,6 @@ Item {
 
     signal buttonClicked()
 
-    function buttonPressed() {
-        buttonIcon.scale = 0.9
-    }
-
-    function buttonReleased() {
-        buttonIcon.scale = 1
-    }
-
     Image {
         id: buttonIcon
         source: parent.iconSource
@@ -40,12 +32,12 @@ Item {
         sourceSize.height: height
         fillMode: Image.PreserveAspectFit
         anchors.centerIn: parent
+        scale: buttonArea.pressed ? 0.9 : 1
     }
 
     MouseArea {
+        id: buttonArea
         anchors.fill: parent
-        onPressed: buttonPressed();
-        onReleased: buttonReleased();
         enabled: !selectionButton.isButtonSelected
         onClicked: {
             selectionButton.buttonClicked();
@@ -57,7 +49,7 @@ Item {
         visible: selectionButton.isButtonSelected
         anchors.fill: parent
         radius: GCStyle.halfMargins
-        border.color: items.contentColor
+        border.color: GCStyle.contentColor
         border.width: GCStyle.thinBorder
         color: "transparent"
     }

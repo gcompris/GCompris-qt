@@ -11,7 +11,7 @@ import "../../core"
 Rectangle {
     id: foldablePanel
     color: GCStyle.darkBg
-    border.color: items.contentColor
+    border.color: GCStyle.contentColor
 
     property real handleOffset
     property alias icon1Source: icon1.source

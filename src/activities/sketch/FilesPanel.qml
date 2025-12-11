@@ -17,166 +17,118 @@ FoldablePanel {
     icon1Source: "qrc:/gcompris/src/activities/sketch/resource/filesMenu.svg"
     icon2Source: ""
 
+    readonly property int maxColumnWidth: width - GCStyle.baseMargins
+    readonly property int lineHeight: Math.min(50 * ApplicationInfo.ratio, height * 0.14)
+
     Column {
-        id: panelLayout
-        anchors.fill: parent
+        id: panelColumn1
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.top: parent.top
         anchors.margins: GCStyle.halfMargins
         spacing: GCStyle.halfMargins
 
-        readonly property int lineHeight: height * 0.15
-        readonly property int buttonSize: Math.min(lineHeight, ApplicationInfo.ratio * 60)
+        GCLabelButton {
+            id: saveButton
+            maxWidth: filesPanel.maxColumnWidth
+            height: filesPanel.lineHeight
+            iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileSave.svg"
+            text: qsTr("Save your image")
+            textColor: GCStyle.contentColor
 
-        Item {
-            width: parent.width
-            height: panelLayout.lineHeight
-
-            SelectionButton {
-                id: saveButton
-                buttonSize: panelLayout.buttonSize
-                isButtonSelected: false
-                iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileSave.svg"
-                onButtonClicked: {
-                    Activity.saveImageDialog();
-                }
-                anchors.left: parent.horizontalCenter
-                anchors.verticalCenter: parent.verticalCenter
-            }
-
-            GCText {
-                id: saveImageLabel
-                text: qsTr("Save your image")
-                color: items.contentColor
-                fontSize: regularSize
-                fontSizeMode: Text.Fit
-                anchors.top: parent.top
-                anchors.bottom: parent.bottom
-                anchors.left: parent.left
-                anchors.right: saveButton.left
-                anchors.margins: GCStyle.halfMargins
-                horizontalAlignment: Text.AlignRight
-                verticalAlignment: Text.AlignVCenter
-
-                MouseArea {
-                    anchors.fill: parent
-                    onPressed: saveButton.buttonPressed();
-                    onReleased: saveButton.buttonReleased();
-                    onClicked: saveButton.buttonClicked();
-                }
-            }
+            onClicked: Activity.saveImageDialog();
         }
 
-        Item {
-            width: parent.width
-            height: panelLayout.lineHeight
+        GCLabelButton {
+            id: openButton
+            maxWidth: filesPanel.maxColumnWidth
+            height: filesPanel.lineHeight
+            iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileOpen.svg"
+            text: qsTr("Open an image")
+            textColor: GCStyle.contentColor
 
-            SelectionButton {
-                id: openButton
-                buttonSize: panelLayout.buttonSize
-                isButtonSelected: false
-                iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileOpen.svg"
-                onButtonClicked: {
-                    Activity.openImageDialog();
-                }
-                anchors.left: parent.horizontalCenter
-                anchors.verticalCenter: parent.verticalCenter
+            onClicked: Activity.openImageDialog();
+        }
+    }
+
+    Rectangle {
+        id: verticalSpacer1
+        color: GCStyle.contentColor
+        opacity: 0.5
+        width: filesPanel.maxColumnWidth
+        height: GCStyle.thinnestBorder
+        anchors.top: panelColumn1.bottom
+        anchors.topMargin: GCStyle.halfMargins
+    }
+
+    GCText {
+        id: createImageLabel
+        text: qsTr("New image settings")
+        color: GCStyle.contentColor
+        fontSize: regularSize
+        fontSizeMode: Text.Fit
+        height: filesPanel.lineHeight
+        anchors.right: parent.right
+        anchors.left: parent.left
+        anchors.top: verticalSpacer1.bottom
+        anchors.margins: GCStyle.halfMargins
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
+    }
+
+    Column {
+        id: panelColumn2
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.top: createImageLabel.bottom
+        anchors.margins: GCStyle.halfMargins
+        spacing: GCStyle.halfMargins
+
+        GCLabelButton {
+            id: bgColorButton
+            maxWidth: filesPanel.maxColumnWidth
+            height: filesPanel.lineHeight
+            iconSource: ""
+            text: qsTr("Background color")
+            textColor: GCStyle.contentColor
+
+            onClicked: {
+                backgroundColorSelector.visible = true;
+                displayDialog(backgroundColorSelector);
             }
-
-            GCText {
-                id: openImageLabel
-                text: qsTr("Open an image")
-                color: items.contentColor
-                fontSize: regularSize
-                fontSizeMode: Text.Fit
-                anchors.top: parent.top
-                anchors.bottom: parent.bottom
-                anchors.left: parent.left
-                anchors.right: openButton.left
-                anchors.margins: GCStyle.halfMargins
-                horizontalAlignment: Text.AlignRight
-                verticalAlignment: Text.AlignVCenter
-
-                MouseArea {
-                    anchors.fill: parent
-                    onPressed: openButton.buttonPressed();
-                    onReleased: openButton.buttonReleased();
-                    onClicked: openButton.buttonClicked();
-                }
-            }
-        }
-
-        Rectangle {
-            id: verticalSpacer1
-            color: items.contentColor
-            opacity: 0.5
-            width: parent.width
-            height: GCStyle.thinnestBorder
-        }
-
-        GCText {
-            id: createImageLabel
-            text: qsTr("New image settings")
-            color: items.contentColor
-            fontSize: regularSize
-            fontSizeMode: Text.Fit
-            height: panelLayout.lineHeight
-            anchors.right: parent.right
-            anchors.left: parent.left
-            anchors.margins: GCStyle.halfMargins
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-        }
-
-        Item {
-            width: parent.width
-            height: panelLayout.lineHeight
 
             Rectangle {
-                id: bgColorButton
-                width: panelLayout.buttonSize
-                height: panelLayout.buttonSize
+                id: bgColorRect
+                width: filesPanel.lineHeight
+                height: filesPanel.lineHeight
+                x: bgColorButton.buttonIcon.x
+                scale: bgColorButton.buttonIcon.scale
                 radius: GCStyle.halfMargins
-                anchors.left: parent.horizontalCenter
-                anchors.verticalCenter: parent.verticalCenter
                 color: backgroundColorSelector.newBackgroundColor
-                border.color: items.contentColor
-            }
-
-            GCText {
-                text: qsTr("Background color")
-                color: items.contentColor
-                fontSize: regularSize
-                fontSizeMode: Text.Fit
-                anchors.top: parent.top
-                anchors.bottom: parent.bottom
-                anchors.left: parent.left
-                anchors.right: bgColorButton.left
-                anchors.margins: GCStyle.halfMargins
-                horizontalAlignment: Text.AlignRight
-                verticalAlignment: Text.AlignVCenter
-            }
-
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
-                    backgroundColorSelector.visible = true;
-                    displayDialog(backgroundColorSelector);
-                }
+                border.color: GCStyle.contentColor
             }
         }
 
-        Item {
-            width: parent.width
-            height: panelLayout.lineHeight
+        GCLabelButton {
+            id: bgImageButton
+            maxWidth: filesPanel.maxColumnWidth
+            height: filesPanel.lineHeight
+            iconSource: ""
+            text: qsTr("Background image")
+            textColor: GCStyle.contentColor
 
+            onClicked: {
+                backgroundSelector.visible = true;
+                displayDialog(backgroundSelector);
+            }
             Rectangle {
-                id: bgImageButton
-                width: panelLayout.buttonSize
-                height: panelLayout.buttonSize
+                id: bgImageRect
+                width: filesPanel.lineHeight
+                height: filesPanel.lineHeight
+                x: bgColorButton.buttonIcon.x
+                scale: bgImageButton.buttonIcon.scale
                 radius: GCStyle.halfMargins
-                anchors.left: parent.horizontalCenter
-                anchors.verticalCenter: parent.verticalCenter
                 color: "transparent"
-                border.color: items.contentColor
+                border.width: GCStyle.thinBorder
+                border.color: GCStyle.contentColor
 
                 Image {
                     anchors.fill: parent
@@ -186,67 +138,19 @@ FoldablePanel {
                 }
 
             }
-
-            GCText {
-                text: qsTr("Background image")
-                color: items.contentColor
-                fontSize: regularSize
-                fontSizeMode: Text.Fit
-                anchors.top: parent.top
-                anchors.bottom: parent.bottom
-                anchors.left: parent.left
-                anchors.right: bgImageButton.left
-                anchors.margins: GCStyle.halfMargins
-                horizontalAlignment: Text.AlignRight
-                verticalAlignment: Text.AlignVCenter
-            }
-
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
-                    backgroundSelector.visible = true;
-                    displayDialog(backgroundSelector);
-                }
-            }
         }
 
-        Item {
-            width: parent.width
-            height: panelLayout.lineHeight
+        GCLabelButton {
+            id: newButton
+            maxWidth: filesPanel.maxColumnWidth
+            height: filesPanel.lineHeight
+            iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileNew.svg"
+            text: qsTr("Create a new image")
+            textColor: GCStyle.contentColor
 
-            SelectionButton {
-                id: newButton
-                buttonSize: panelLayout.buttonSize
-                isButtonSelected: false
-                iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileNew.svg"
-                onButtonClicked: {
-                    Activity.requestNewImage();
-                    filesPanel.forceClose();
-                }
-                anchors.left: parent.horizontalCenter
-                anchors.verticalCenter: parent.verticalCenter
-            }
-
-            GCText {
-                id: newImageLabel
-                text: qsTr("Create a new image")
-                color: items.contentColor
-                fontSize: regularSize
-                fontSizeMode: Text.Fit
-                anchors.top: parent.top
-                anchors.bottom: parent.bottom
-                anchors.left: parent.left
-                anchors.right: newButton.left
-                anchors.margins: GCStyle.halfMargins
-                horizontalAlignment: Text.AlignRight
-                verticalAlignment: Text.AlignVCenter
-
-                MouseArea {
-                    anchors.fill: parent
-                    onPressed: newButton.buttonPressed();
-                    onReleased: newButton.buttonReleased();
-                    onClicked: newButton.buttonClicked();
-                }
+            onClicked: {
+                Activity.requestNewImage();
+                filesPanel.forceClose();
             }
         }
     }

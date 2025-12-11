@@ -26,7 +26,7 @@ CheckBox {
             "qrc:/gcompris/src/core/resource/cancel_white.svg"
     }
     GCText {
-        color: items.contentColor
+        color: GCStyle.contentColor
         anchors.right: indicator.left
         anchors.rightMargin: GCStyle.halfMargins
         anchors.left: checkBox.left

@@ -54,6 +54,9 @@ QtObject {
     readonly property color darkText: "#373737"
     readonly property color darkerText: "#191919"
 
+    // less light color used in Sketch and Drawing_wheels components
+    readonly property color contentColor: "#d2d2d2"
+
     readonly property color paperWhite: "#E8E8E8"
     readonly property color lightBg: "#f2f2f2"
     readonly property color lighterBg: "#f8f8f8"

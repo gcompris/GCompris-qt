@@ -80,7 +80,6 @@ ActivityBase {
             property alias smudgeSound: smudgeSound
             property alias newImageDialog: newImageDialog
             property alias creationHandler: creationHandler
-            readonly property color contentColor: "#d2d2d2"
             readonly property real devicePixelRatio: Screen.devicePixelRatio
 
             readonly property var patternList: [
@@ -529,7 +528,7 @@ ActivityBase {
             radius: GCStyle.halfMargins
             color: GCStyle.darkBg
             height: items.panelHandleHeight
-            border.color: items.contentColor
+            border.color: GCStyle.contentColor
             anchors.right: activityBackground.right
             anchors.margins: -GCStyle.halfMargins
 

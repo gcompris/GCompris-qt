@@ -21,7 +21,7 @@ Item {
     Rectangle {
         id: buttonColor
         anchors.fill: parent
-        color: items.contentColor
+        color: GCStyle.contentColor
         radius: GCStyle.halfMargins
         opacity: 0.1
     }

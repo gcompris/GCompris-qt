@@ -253,7 +253,7 @@ FoldablePanel {
         GCText {
             id: toolsLabel
             text: qsTr("Tools")
-            color: items.contentColor
+            color: GCStyle.contentColor
             width: parent.width * 0.25
             height: parent.height
             fontSize: regularSize
@@ -352,7 +352,7 @@ FoldablePanel {
 
     Rectangle {
         id: panelVerticalSpacer
-        color: items.contentColor
+        color: GCStyle.contentColor
         opacity: 0.5
         height: GCStyle.thinnestBorder
         anchors.top: toolsArea.bottom
@@ -372,7 +372,7 @@ FoldablePanel {
         GCText {
             id: toolTitle
             text: toolsPanel.activeToolPanel.toolTitle
-            color: items.contentColor
+            color: GCStyle.contentColor
             width: toolsPanel.settingsColumnWidth
             height: toolsPanel.settingsLineHeight
             fontSize: regularSize
@@ -427,7 +427,7 @@ FoldablePanel {
             GCText {
                 id: resetToolTitle
                 text: qsTr("Reset tool settings")
-                color: items.contentColor
+                color: GCStyle.contentColor
                 height: toolsPanel.settingsLineHeight
                 anchors.left: parent.left
                 anchors.right: resetMode.left
@@ -455,7 +455,7 @@ FoldablePanel {
 
         Rectangle {
             id: horizontalSpacer
-            color: items.contentColor
+            color: GCStyle.contentColor
             opacity: 0.5
             anchors.top: parent.top
             anchors.bottom: parent.bottom
@@ -602,7 +602,7 @@ FoldablePanel {
                     id: patternLabel
                     visible: patternSelector.visible
                     text: "Pattern"
-                    color: items.contentColor
+                    color: GCStyle.contentColor
                     width: toolsPanel.settingsColumnWidth
                     height: toolsPanel.settingsLineHeight
                     fontSize: regularSize

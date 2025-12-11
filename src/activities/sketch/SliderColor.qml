@@ -13,7 +13,7 @@ import "../../core"
 Item {
     id: sliderColor
     width: parent.width
-    height: toolsPanel.settingsDoubleLineHeight
+    height: 50 // Set proper value on instance
 
     property string title
     property Gradient gradient
@@ -44,10 +44,10 @@ Item {
         id: sliderTitle
         text: sliderColor.title
         width: parent.width
-        height: toolsPanel.settingsLineHeight
+        height: parent.height * 0.5
         anchors.left: parent.left
         anchors.top: parent.top
-        color: items.contentColor
+        color: GCStyle.contentColor
         fontSize: regularSize
         fontSizeMode: Text.Fit
         verticalAlignment: Text.AlignBottom
@@ -62,8 +62,8 @@ Item {
         anchors.right: parent.right
         anchors.rightMargin: GCStyle.halfMargins
         anchors.top: sliderTitle.bottom
-        height: toolsPanel.settingsLineHeight
-        color: items.contentColor
+        height: sliderTitle.height
+        color: GCStyle.contentColor
 
         Rectangle {
             id: valueSlider
@@ -78,7 +78,7 @@ Item {
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.left: parent.left
                 anchors.leftMargin: valueSlider.width * value - GCStyle.midBorder
-                color: items.contentColor
+                color: GCStyle.contentColor
                 property real value: 0
                 Rectangle {
                     height: valueSlider.height

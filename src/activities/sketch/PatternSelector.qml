@@ -80,7 +80,7 @@ Item {
                 height: leftButton.height
                 width: height
                 color: "transparent"
-                border.color: items.contentColor
+                border.color: GCStyle.contentColor
                 border.width: GCStyle.thinBorder
                 x: patternListView.currentItem.x
                 y: patternListView.currentItem.y
