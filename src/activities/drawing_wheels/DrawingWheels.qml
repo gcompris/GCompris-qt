@@ -659,20 +659,6 @@ ActivityBase {
                     spacing: GCStyle.halfMargins
 
                     GCLabelButton {
-                        id: saveButton
-                        maxWidth: filePanel.maxWidth
-                        height: filePanel.buttonSize
-                        iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileSave.svg"
-                        text: qsTr("Save image (PNG)")
-                        textColor: GCStyle.contentColor
-
-                        onClicked: {
-                            panelManager.closePanel();
-                            Activity.savePngDialog();
-                        }
-                    }
-
-                    GCLabelButton {
                         id: saveSvgButton
                         maxWidth: filePanel.maxWidth
                         height: filePanel.buttonSize
@@ -683,6 +669,20 @@ ActivityBase {
                         onClicked: {
                             panelManager.closePanel();
                             Activity.saveSvgDialog();
+                        }
+                    }
+
+                    GCLabelButton {
+                        id: saveButton
+                        maxWidth: filePanel.maxWidth
+                        height: filePanel.buttonSize
+                        iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileSave.svg"
+                        text: qsTr("Export image (PNG)")
+                        textColor: GCStyle.contentColor
+
+                        onClicked: {
+                            panelManager.closePanel();
+                            Activity.savePngDialog();
                         }
                     }
 
