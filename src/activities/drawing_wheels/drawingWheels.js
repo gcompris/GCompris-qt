@@ -53,10 +53,10 @@ function start(items_) {
 
 function stop() {
     items.gearTimer.stop();
+    items.file.rmpath(items.svgTank.fileName);         // remove temporary svg file on disk
     items.canvasArea.clearUndo();
     items.canvasArea.clearRedo();
     items.undoStack.clear()
-    items.file.rmpath(items.undoStack.tempFile + ".svg")          // remove temporary svg file on disk
 }
 
 function pushModel(model, data) {
@@ -75,15 +75,7 @@ function shiftModel(model) {
     return data
 }
 
-function savePngDialog() {
-    items.creationHandler.svgMode = false
-    var fileName = items.canvasArea.tempSavePath + "/GCSketchSave.png"
-    items.canvasArea.saveToFile(fileName)
-    items.creationHandler.saveWindow(fileName)
-}
-
 function saveSvgDialog() {
-    items.creationHandler.svgMode = true
     items.creationHandler.saveWindow(items.svgTank.fileName)
 }
 

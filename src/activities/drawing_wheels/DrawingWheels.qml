@@ -113,9 +113,6 @@ ActivityBase {
                 Activity.redoAction()
                 event.accepted = true
             } else if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_S)) {
-                Activity.savePngDialog();
-                event.accepted = true;
-            } else if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_D)) {
                 Activity.saveSvgDialog();
                 event.accepted = true;
             } else if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_O)) {
@@ -679,20 +676,6 @@ ActivityBase {
                         onClicked: {
                             panelManager.closePanel();
                             Activity.saveSvgDialog();
-                        }
-                    }
-
-                    GCLabelButton {
-                        id: saveButton
-                        maxWidth: panelManager.maxContentWidth
-                        height: filePanel.buttonSize
-                        iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileSave.svg"
-                        text: qsTr("Export image (PNG)")
-                        textColor: GCStyle.contentColor
-
-                        onClicked: {
-                            panelManager.closePanel();
-                            Activity.savePngDialog();
                         }
                     }
 
@@ -1321,19 +1304,14 @@ ActivityBase {
         GCCreationHandler {
             id: creationHandler
             imageMode: true
-            fileExtensions: ["*.svg", "*.png", "*.jpg", "*.jpeg", "*.webp"]
+            svgMode: true
+            fileExtensions: ["*.svg"]
             onClose: activity.focus = true;
             onFileLoaded: (data, filePath) => {
                 Activity.initLevel()
-                if (filePath.endsWith(".svg")) {
-                    svgTank.loadSvg(file.read(filePath))  // Reset svgTank with loaded svg
-                    // Png images are not inserted into svgTank (too big and dirty render)
-                    loadedImage.sourceSize.width = loadedImage.width
-                    loadedImage.sourceSize.height = loadedImage.height
-                } else {
-                    loadedImage.sourceSize.width = undefined
-                    loadedImage.sourceSize.height = undefined
-                }
+                svgTank.loadSvg(file.read(filePath))  // Reset svgTank with loaded svg
+                loadedImage.sourceSize.width = loadedImage.width
+                loadedImage.sourceSize.height = loadedImage.height
                 loadedImage.source = filePath
                 loadedImage.visible = true
             }
