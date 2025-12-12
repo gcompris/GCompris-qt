@@ -6916,22 +6916,33 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ctrl + O: Άνοιγμα εικόνας"
 
-#: activities/drawing_wheels/DrawingWheels.qml:353
+#: activities/drawing_wheels/DrawingWheels.qml:381
 msgctxt "DrawingWheels|"
 msgid "Save drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:367
+#: activities/drawing_wheels/DrawingWheels.qml:393
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:388
+#: activities/drawing_wheels/DrawingWheels.qml:417
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Piano composition"
 msgctxt "DrawingWheels|"
-msgid "Pencil's color and width"
-msgstr ""
+msgid "Pencil size and position"
+msgstr "Σύνθεση στο πιάνο"
 
-#: activities/drawing_wheels/DrawingWheels.qml:401
+#: activities/drawing_wheels/DrawingWheels.qml:429
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Font selector"
+msgctxt "DrawingWheels|"
+msgid "Color selector"
+msgstr "Επιλογή γραμματοσειράς"
+
+#: activities/drawing_wheels/DrawingWheels.qml:456
 #, fuzzy
 #| msgctxt "OptionsRow|"
 #| msgid "Undo"
@@ -6939,7 +6950,7 @@ msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Αναίρεση"
 
-#: activities/drawing_wheels/DrawingWheels.qml:414
+#: activities/drawing_wheels/DrawingWheels.qml:468
 #, fuzzy
 #| msgctxt "Checkers|"
 #| msgid "Redo"
@@ -6947,40 +6958,40 @@ msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "Ακύρωση αναίρεσης"
 
-#: activities/drawing_wheels/DrawingWheels.qml:450
+#: activities/drawing_wheels/DrawingWheels.qml:502
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:450
+#: activities/drawing_wheels/DrawingWheels.qml:502
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:482
+#: activities/drawing_wheels/DrawingWheels.qml:534
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:482
+#: activities/drawing_wheels/DrawingWheels.qml:534
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:507
+#: activities/drawing_wheels/DrawingWheels.qml:666
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Save your image"
 msgctxt "DrawingWheels|"
-msgid "Save your image"
+msgid "Save vector image (SVG)"
 msgstr "Αποθήκευση εικόνας"
 
-#: activities/drawing_wheels/DrawingWheels.qml:523
+#: activities/drawing_wheels/DrawingWheels.qml:680
 msgctxt "DrawingWheels|"
-msgid "Save as a drawing"
+msgid "Export image (PNG)"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:539
+#: activities/drawing_wheels/DrawingWheels.qml:694
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Open an image"
@@ -6988,7 +6999,7 @@ msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Άνοιγμα εικόνας"
 
-#: activities/drawing_wheels/DrawingWheels.qml:555
+#: activities/drawing_wheels/DrawingWheels.qml:723
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Create a new image"
@@ -6996,19 +7007,25 @@ msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Δημιουργία νέας εικόνας"
 
-#: activities/drawing_wheels/DrawingWheels.qml:598
-#: activities/drawing_wheels/DrawingWheels.qml:668
+#: activities/drawing_wheels/DrawingWheels.qml:742
+#, fuzzy
+#| msgctxt "BackgroundColorSelector|"
+#| msgid "Background color"
+msgctxt "DrawingWheels|"
+msgid "Background color"
+msgstr "Χρώμα παρασκηνίου"
+
+#: activities/drawing_wheels/DrawingWheels.qml:806
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:630
-#: activities/drawing_wheels/DrawingWheels.qml:689
+#: activities/drawing_wheels/DrawingWheels.qml:881
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:714
+#: activities/drawing_wheels/DrawingWheels.qml:944
 #, fuzzy, qt-format
 #| msgctxt "SignalGenerator|"
 #| msgid "%1 s"
@@ -7016,7 +7033,7 @@ msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 δ."
 
-#: activities/drawing_wheels/DrawingWheels.qml:722
+#: activities/drawing_wheels/DrawingWheels.qml:962
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Speed"
@@ -7024,41 +7041,25 @@ msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Ταχύτητα"
 
-#: activities/drawing_wheels/DrawingWheels.qml:734
+#: activities/drawing_wheels/DrawingWheels.qml:978
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:749
+#: activities/drawing_wheels/DrawingWheels.qml:998
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:781
-#, fuzzy
-#| msgctxt "ColorsPanel|"
-#| msgid "Palettes"
-msgctxt "DrawingWheels|"
-msgid "Palettes"
-msgstr "Παλέτες"
-
-#: activities/drawing_wheels/DrawingWheels.qml:861
-#, fuzzy
-#| msgctxt "category_colors|"
-#| msgid "Colors"
-msgctxt "DrawingWheels|"
-msgid "Color"
-msgstr "Απλά χρώματα"
-
-#: activities/drawing_wheels/DrawingWheels.qml:888
+#: activities/drawing_wheels/DrawingWheels.qml:1042
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font size"
 msgctxt "DrawingWheels|"
-msgid "Pensize"
+msgid "Pen size"
 msgstr "Μέγεθος γραμματοσειράς"
 
-#: activities/drawing_wheels/DrawingWheels.qml:927
+#: activities/drawing_wheels/DrawingWheels.qml:1079
 #, fuzzy
 #| msgctxt "ToolsPanel|"
 #| msgid "Opacity"
@@ -7066,20 +7067,20 @@ msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Διαφάνεια"
 
-#: activities/drawing_wheels/DrawingWheels.qml:955
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Districto Federal"
+#: activities/drawing_wheels/DrawingWheels.qml:1122
 msgctxt "DrawingWheels|"
-msgid "Distance to center"
-msgstr "Ομοσπονδιακή περιφέρεια"
-
-#: activities/drawing_wheels/DrawingWheels.qml:981
-msgctxt "DrawingWheels|"
-msgid "Starting tooth"
+msgid "Offset"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1068
+#: activities/drawing_wheels/DrawingWheels.qml:1160
+#, fuzzy
+#| msgctxt "IntroMessage|"
+#| msgid "Start"
+msgctxt "DrawingWheels|"
+msgid "Start tooth"
+msgstr "Έναρξη"
+
+#: activities/drawing_wheels/DrawingWheels.qml:1338
 #, fuzzy
 #| msgctxt "Sketch|"
 #| msgid "You did not save this image. Do you want to close this activity?"
@@ -7088,7 +7089,7 @@ msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 "Δεν έχεις αποθηκεύσει την εικόνα. Θέλεις να κλείσεις αυτή τη δραστηριότητα;"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1069
+#: activities/drawing_wheels/DrawingWheels.qml:1339
 #, fuzzy
 #| msgctxt "Sketch|"
 #| msgid "Do you want to erase this image?"
@@ -7096,7 +7097,7 @@ msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Θέλεις να διαγράψεις αυτή την εικόνα;"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1070
+#: activities/drawing_wheels/DrawingWheels.qml:1340
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -7104,7 +7105,7 @@ msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Ναι"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1071
+#: activities/drawing_wheels/DrawingWheels.qml:1341
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -25341,60 +25342,55 @@ msgid "Selected Color"
 msgstr "Επιλεγμένο χρώμα"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:238
+#: activities/sketch/ColorSelector.qml:239
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
 msgstr "Απόχρωση"
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:265
+#: activities/sketch/ColorSelector.qml:267
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
 msgstr "Κορεσμός"
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:290
+#: activities/sketch/ColorSelector.qml:293
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
 msgstr "Φωτεινότητα"
 
 #. Reload default color for selected slot
-#: activities/sketch/ColorSelector.qml:326
+#: activities/sketch/ColorSelector.qml:329
 msgctxt "ColorSelector|"
 msgid "Reset Color"
 msgstr "Επαναφορά χρώματος"
 
-#: activities/sketch/ColorsPanel.qml:159
-msgctxt "ColorsPanel|"
-msgid "Palettes"
-msgstr "Παλέτες"
-
-#: activities/sketch/FilesPanel.qml:47
+#: activities/sketch/FilesPanel.qml:35
 msgctxt "FilesPanel|"
 msgid "Save your image"
 msgstr "Αποθήκευση εικόνας"
 
-#: activities/sketch/FilesPanel.qml:86
+#: activities/sketch/FilesPanel.qml:46
 msgctxt "FilesPanel|"
 msgid "Open an image"
 msgstr "Άνοιγμα εικόνας"
 
-#: activities/sketch/FilesPanel.qml:117
+#: activities/sketch/FilesPanel.qml:65
 msgctxt "FilesPanel|"
 msgid "New image settings"
 msgstr "Ρυθμίσεις νέας εικόνας"
 
-#: activities/sketch/FilesPanel.qml:145
+#: activities/sketch/FilesPanel.qml:90
 msgctxt "FilesPanel|"
 msgid "Background color"
 msgstr "Χρώμα παρασκηνίου"
 
-#: activities/sketch/FilesPanel.qml:191
+#: activities/sketch/FilesPanel.qml:115
 msgctxt "FilesPanel|"
 msgid "Background image"
 msgstr "Εικόνα παρασκηνίου"
 
-#: activities/sketch/FilesPanel.qml:232
+#: activities/sketch/FilesPanel.qml:148
 msgctxt "FilesPanel|"
 msgid "Create a new image"
 msgstr "Δημιουργία νέας εικόνας"
@@ -25420,23 +25416,31 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr "Εργαλεία διαβάθμισης"
 
-#: activities/sketch/Sketch.qml:678
+#: activities/sketch/PaletteSelector.qml:148
+#, fuzzy
+#| msgctxt "ColorsPanel|"
+#| msgid "Palettes"
+msgctxt "PaletteSelector|"
+msgid "Palettes"
+msgstr "Παλέτες"
+
+#: activities/sketch/Sketch.qml:677
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 "Δεν έχεις αποθηκεύσει την εικόνα. Θέλεις να κλείσεις αυτή τη δραστηριότητα;"
 
-#: activities/sketch/Sketch.qml:679
+#: activities/sketch/Sketch.qml:678
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "Θέλεις να διαγράψεις αυτή την εικόνα;"
 
-#: activities/sketch/Sketch.qml:680
+#: activities/sketch/Sketch.qml:679
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Ναι"
 
-#: activities/sketch/Sketch.qml:681
+#: activities/sketch/Sketch.qml:680
 msgctxt "Sketch|"
 msgid "No"
 msgstr "Όχι"
@@ -29471,6 +29475,24 @@ msgstr "Παράλειψη"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Έναρξη"
+
+#, fuzzy
+#~| msgctxt "category_colors|"
+#~| msgid "Colors"
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Color"
+#~ msgstr "Απλά χρώματα"
+
+#, fuzzy
+#~| msgctxt "board9_0|"
+#~| msgid "Districto Federal"
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Distance to center"
+#~ msgstr "Ομοσπονδιακή περιφέρεια"
+
+#~ msgctxt "ColorsPanel|"
+#~ msgid "Palettes"
+#~ msgstr "Παλέτες"
 
 #, fuzzy
 #~| msgctxt "BinaryBulb|"

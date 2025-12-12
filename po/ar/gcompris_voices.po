@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-11 00:39+0000\n"
-"PO-Revision-Date: 2025-08-14 13:14+0400\n"
+"PO-Revision-Date: 2025-12-11 10:59+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -346,7 +346,7 @@ msgstr "تعلّم كيف تعمل الدارات الإلكترونية الر�
 #: activities/drawing_wheels/ActivityInfo.qml:17
 #, kde-format
 msgid "put here in comment the text for the intro voice"
-msgstr ""
+msgstr "ضع هنا في التعليق نص صوت المقدمة"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"
 #: activities/drawletters/ActivityInfo.qml:18

@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-12-04 10:09+0100\n"
+"PO-Revision-Date: 2025-12-11 13:01+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -6668,12 +6668,9 @@ msgstr ""
 
 #. Activity title
 #: activities/drawing_wheels/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "BrushToolPanel|"
-#| msgid "Drawing Tools"
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
-msgstr "Tekenhulpmiddelen"
+msgstr "Wielen tekenen"
 
 # SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Freek de Kruijf <freekdekruijf@kde.nl>
 # Jan Mussche <mijninternet2016@gmail.com>, 2018.
@@ -6685,7 +6682,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-12-04 10:09+0100\n"
+"PO-Revision-Date: 2025-12-11 13:01+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -6704,20 +6701,18 @@ msgid ""
 "Make beautiful drawings by turning the gear in the cogwheel with the chosen "
 "pen."
 msgstr ""
+"Maak prachtige tekeningen door met de gekozen pen aan het werktuig in het "
+"tandwiel te draaien."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select tools and colors from the foldable panels and draw images.<br><br>"
 msgctxt "ActivityInfo|"
 msgid ""
 "Select wheel, gear, pen's position and color from the foldable panels and "
 "start the gear.<br><br>"
 msgstr ""
-"Selecteer hulpmiddelen en kleuren uit de opvouwbare panelen en teken "
-"afbeeldingen.<br><br>"
+"Selecteer het wiel, het werktuig, de positie van de pen en de kleur via de "
+"uitklapbare panelen en start het werktuig.<br><br>"
 
 #: activities/drawing_wheels/ActivityInfo.qml:25
 #: activities/sketch/ActivityInfo.qml:28
@@ -6738,12 +6733,9 @@ msgid "Ctrl + S: save the image"
 msgstr "Ctrl + S: de afbeelding opslaan"
 
 #: activities/drawing_wheels/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + S: save the image"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + D: save the drawing"
-msgstr "Ctrl + S: de afbeelding opslaan"
+msgstr "Ctrl + D: sla de tekening op"
 
 #: activities/drawing_wheels/ActivityInfo.qml:29
 #: activities/sketch/ActivityInfo.qml:31
@@ -6751,198 +6743,167 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ctrl + O: een afbeelding openen"
 
-#: activities/drawing_wheels/DrawingWheels.qml:353
+#: activities/drawing_wheels/DrawingWheels.qml:381
 msgctxt "DrawingWheels|"
 msgid "Save drawing"
-msgstr ""
+msgstr "Tekening opslaan"
 
-#: activities/drawing_wheels/DrawingWheels.qml:367
+#: activities/drawing_wheels/DrawingWheels.qml:393
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
-msgstr ""
+msgstr "Wielen werktuig"
 
-#: activities/drawing_wheels/DrawingWheels.qml:388
-msgctxt "DrawingWheels|"
-msgid "Pencil's color and width"
-msgstr ""
-
-#: activities/drawing_wheels/DrawingWheels.qml:401
+#: activities/drawing_wheels/DrawingWheels.qml:417
 #, fuzzy
-#| msgctxt "OptionsRow|"
-#| msgid "Undo"
+#| msgctxt "ActivityInfo|"
+#| msgid "Piano composition"
+msgctxt "DrawingWheels|"
+msgid "Pencil size and position"
+msgstr "Pianocompositie"
+
+#: activities/drawing_wheels/DrawingWheels.qml:429
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Font selector"
+msgctxt "DrawingWheels|"
+msgid "Color selector"
+msgstr "Lettertype selecteren"
+
+#: activities/drawing_wheels/DrawingWheels.qml:456
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Ongedaan maken"
 
-#: activities/drawing_wheels/DrawingWheels.qml:414
-#, fuzzy
-#| msgctxt "Checkers|"
-#| msgid "Redo"
+#: activities/drawing_wheels/DrawingWheels.qml:468
 msgctxt "DrawingWheels|"
 msgid "Redo"
-msgstr "Opnieuw doen"
+msgstr "Opnieuw"
 
-#: activities/drawing_wheels/DrawingWheels.qml:450
+#: activities/drawing_wheels/DrawingWheels.qml:502
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
-msgstr ""
+msgstr "Tekenen stoppen"
 
-#: activities/drawing_wheels/DrawingWheels.qml:450
+#: activities/drawing_wheels/DrawingWheels.qml:502
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
-msgstr ""
+msgstr "Met tekenen beginnen"
 
-#: activities/drawing_wheels/DrawingWheels.qml:482
+#: activities/drawing_wheels/DrawingWheels.qml:534
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
-msgstr ""
+msgstr "Wiel en werktuig tonen"
 
-#: activities/drawing_wheels/DrawingWheels.qml:482
+#: activities/drawing_wheels/DrawingWheels.qml:534
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
-msgstr ""
+msgstr "Wiel en werktuig verbergen"
 
-#: activities/drawing_wheels/DrawingWheels.qml:507
+#: activities/drawing_wheels/DrawingWheels.qml:666
 #, fuzzy
-#| msgctxt "FilesPanel|"
+#| msgctxt "DrawingWheels|"
 #| msgid "Save your image"
 msgctxt "DrawingWheels|"
-msgid "Save your image"
+msgid "Save vector image (SVG)"
 msgstr "Sla uw afbeelding op"
 
-#: activities/drawing_wheels/DrawingWheels.qml:523
+#: activities/drawing_wheels/DrawingWheels.qml:680
 msgctxt "DrawingWheels|"
-msgid "Save as a drawing"
+msgid "Export image (PNG)"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:539
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Open an image"
+#: activities/drawing_wheels/DrawingWheels.qml:694
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Een afbeelding openen"
 
-#: activities/drawing_wheels/DrawingWheels.qml:555
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Create a new image"
+#: activities/drawing_wheels/DrawingWheels.qml:723
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Een nieuwe afbeelding aanmaken"
 
-#: activities/drawing_wheels/DrawingWheels.qml:598
-#: activities/drawing_wheels/DrawingWheels.qml:668
+#: activities/drawing_wheels/DrawingWheels.qml:742
+#, fuzzy
+#| msgctxt "BackgroundColorSelector|"
+#| msgid "Background color"
+msgctxt "DrawingWheels|"
+msgid "Background color"
+msgstr "Achtergrondkleur"
+
+#: activities/drawing_wheels/DrawingWheels.qml:806
 msgctxt "DrawingWheels|"
 msgid "Wheel"
-msgstr ""
+msgstr "Wiel"
 
-#: activities/drawing_wheels/DrawingWheels.qml:630
-#: activities/drawing_wheels/DrawingWheels.qml:689
+#: activities/drawing_wheels/DrawingWheels.qml:881
 msgctxt "DrawingWheels|"
 msgid "Gear"
-msgstr ""
+msgstr "Werktuig"
 
-#: activities/drawing_wheels/DrawingWheels.qml:714
-#, fuzzy, qt-format
-#| msgctxt "SignalGenerator|"
-#| msgid "%1 s"
+#: activities/drawing_wheels/DrawingWheels.qml:944
+#, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
-msgstr "%1 s"
+msgstr "%1 pieken"
 
-#: activities/drawing_wheels/DrawingWheels.qml:722
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
+#: activities/drawing_wheels/DrawingWheels.qml:962
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Snelheid"
 
-#: activities/drawing_wheels/DrawingWheels.qml:734
+#: activities/drawing_wheels/DrawingWheels.qml:978
 msgctxt "DrawingWheels|"
 msgid "Slow"
-msgstr ""
+msgstr "Traag"
 
-#: activities/drawing_wheels/DrawingWheels.qml:749
+#: activities/drawing_wheels/DrawingWheels.qml:998
 msgctxt "DrawingWheels|"
 msgid "Fast"
-msgstr ""
+msgstr "Snel"
 
-#: activities/drawing_wheels/DrawingWheels.qml:781
+#: activities/drawing_wheels/DrawingWheels.qml:1042
 #, fuzzy
-#| msgctxt "ColorsPanel|"
-#| msgid "Palettes"
+#| msgctxt "DrawingWheels|"
+#| msgid "Pensize"
 msgctxt "DrawingWheels|"
-msgid "Palettes"
-msgstr "Paletten"
+msgid "Pen size"
+msgstr "Pengrootte"
 
-#: activities/drawing_wheels/DrawingWheels.qml:861
-#, fuzzy
-#| msgctxt "category_colors|"
-#| msgid "Colors"
-msgctxt "DrawingWheels|"
-msgid "Color"
-msgstr "Kleuren"
-
-#: activities/drawing_wheels/DrawingWheels.qml:888
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font size"
-msgctxt "DrawingWheels|"
-msgid "Pensize"
-msgstr "Tekengrootte"
-
-#: activities/drawing_wheels/DrawingWheels.qml:927
-#, fuzzy
-#| msgctxt "ToolsPanel|"
-#| msgid "Opacity"
+#: activities/drawing_wheels/DrawingWheels.qml:1079
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Dekking"
 
-#: activities/drawing_wheels/DrawingWheels.qml:955
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Districto Federal"
+#: activities/drawing_wheels/DrawingWheels.qml:1122
 msgctxt "DrawingWheels|"
-msgid "Distance to center"
-msgstr "Districto Federal"
-
-#: activities/drawing_wheels/DrawingWheels.qml:981
-msgctxt "DrawingWheels|"
-msgid "Starting tooth"
+msgid "Offset"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1068
+#: activities/drawing_wheels/DrawingWheels.qml:1160
 #, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "You did not save this image. Do you want to close this activity?"
+#| msgctxt "DrawingWheels|"
+#| msgid "Starting tooth"
+msgctxt "DrawingWheels|"
+msgid "Start tooth"
+msgstr "Begintand"
+
+#: activities/drawing_wheels/DrawingWheels.qml:1338
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 "Je hebt deze afbeelding niet opgeslagen. Wil je deze activiteit sluiten?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1069
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "Do you want to erase this image?"
+#: activities/drawing_wheels/DrawingWheels.qml:1339
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Wil je deze afbeelding wissen?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1070
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
+#: activities/drawing_wheels/DrawingWheels.qml:1340
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Ja"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1071
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
+#: activities/drawing_wheels/DrawingWheels.qml:1341
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "Nee"
@@ -24944,60 +24905,55 @@ msgid "Selected Color"
 msgstr "Geselecteerde kleur"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:238
+#: activities/sketch/ColorSelector.qml:239
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
 msgstr "Tint"
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:265
+#: activities/sketch/ColorSelector.qml:267
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
 msgstr "Verzadiging"
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:290
+#: activities/sketch/ColorSelector.qml:293
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
 msgstr "Lichtheid"
 
 #. Reload default color for selected slot
-#: activities/sketch/ColorSelector.qml:326
+#: activities/sketch/ColorSelector.qml:329
 msgctxt "ColorSelector|"
 msgid "Reset Color"
 msgstr "Kleur terugzetten"
 
-#: activities/sketch/ColorsPanel.qml:159
-msgctxt "ColorsPanel|"
-msgid "Palettes"
-msgstr "Paletten"
-
-#: activities/sketch/FilesPanel.qml:47
+#: activities/sketch/FilesPanel.qml:35
 msgctxt "FilesPanel|"
 msgid "Save your image"
 msgstr "Sla uw afbeelding op"
 
-#: activities/sketch/FilesPanel.qml:86
+#: activities/sketch/FilesPanel.qml:46
 msgctxt "FilesPanel|"
 msgid "Open an image"
 msgstr "Een afbeelding openen"
 
-#: activities/sketch/FilesPanel.qml:117
+#: activities/sketch/FilesPanel.qml:65
 msgctxt "FilesPanel|"
 msgid "New image settings"
 msgstr "Instellingen van nieuwe afbeelding"
 
-#: activities/sketch/FilesPanel.qml:145
+#: activities/sketch/FilesPanel.qml:90
 msgctxt "FilesPanel|"
 msgid "Background color"
 msgstr "Achtergrondkleur"
 
-#: activities/sketch/FilesPanel.qml:191
+#: activities/sketch/FilesPanel.qml:115
 msgctxt "FilesPanel|"
 msgid "Background image"
 msgstr "Achtergrondafbeelding"
 
-#: activities/sketch/FilesPanel.qml:232
+#: activities/sketch/FilesPanel.qml:148
 msgctxt "FilesPanel|"
 msgid "Create a new image"
 msgstr "Een nieuwe afbeelding aanmaken"
@@ -25023,23 +24979,31 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr "Hulpmiddelen voor kleurverloop"
 
-#: activities/sketch/Sketch.qml:678
+#: activities/sketch/PaletteSelector.qml:148
+#, fuzzy
+#| msgctxt "DrawingWheels|"
+#| msgid "Palettes"
+msgctxt "PaletteSelector|"
+msgid "Palettes"
+msgstr "Paletten"
+
+#: activities/sketch/Sketch.qml:677
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 "Je hebt deze afbeelding niet opgeslagen. Wil je deze activiteit sluiten?"
 
-#: activities/sketch/Sketch.qml:679
+#: activities/sketch/Sketch.qml:678
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "Wil je deze afbeelding wissen?"
 
-#: activities/sketch/Sketch.qml:680
+#: activities/sketch/Sketch.qml:679
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Ja"
 
-#: activities/sketch/Sketch.qml:681
+#: activities/sketch/Sketch.qml:680
 msgctxt "Sketch|"
 msgid "No"
 msgstr "Nee"
@@ -28876,6 +28840,30 @@ msgstr "Overslaan"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Begin"
+
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Pencil's color and width"
+#~ msgstr "Kleur en breedte van potlood"
+
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Save as a drawing"
+#~ msgstr "Als tekening opslaan"
+
+#~| msgctxt "category_colors|"
+#~| msgid "Colors"
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Color"
+#~ msgstr "Kleur"
+
+#~| msgctxt "board9_0|"
+#~| msgid "Districto Federal"
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Distance to center"
+#~ msgstr "Afstand tot midden"
+
+#~ msgctxt "ColorsPanel|"
+#~ msgid "Palettes"
+#~ msgstr "Paletten"
 
 #~ msgctxt "Frieze|"
 #~ msgid "What is the binary representation of %1?"

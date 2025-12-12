@@ -6495,22 +6495,33 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:353
+#: activities/drawing_wheels/DrawingWheels.qml:381
 msgctxt "DrawingWheels|"
 msgid "Save drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:367
+#: activities/drawing_wheels/DrawingWheels.qml:393
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:388
+#: activities/drawing_wheels/DrawingWheels.qml:417
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Piano composition"
 msgctxt "DrawingWheels|"
-msgid "Pencil's color and width"
-msgstr ""
+msgid "Pencil size and position"
+msgstr "قطعه پیانو"
 
-#: activities/drawing_wheels/DrawingWheels.qml:401
+#: activities/drawing_wheels/DrawingWheels.qml:429
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Font selector"
+msgctxt "DrawingWheels|"
+msgid "Color selector"
+msgstr "انتخاب فونت"
+
+#: activities/drawing_wheels/DrawingWheels.qml:456
 #, fuzzy
 #| msgctxt "OptionsRow|"
 #| msgid "Undo"
@@ -6518,45 +6529,45 @@ msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "بازگشت"
 
-#: activities/drawing_wheels/DrawingWheels.qml:414
+#: activities/drawing_wheels/DrawingWheels.qml:468
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:450
+#: activities/drawing_wheels/DrawingWheels.qml:502
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:450
+#: activities/drawing_wheels/DrawingWheels.qml:502
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:482
+#: activities/drawing_wheels/DrawingWheels.qml:534
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:482
+#: activities/drawing_wheels/DrawingWheels.qml:534
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:507
+#: activities/drawing_wheels/DrawingWheels.qml:666
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Select your mode"
 msgctxt "DrawingWheels|"
-msgid "Save your image"
+msgid "Save vector image (SVG)"
 msgstr "حالت خود را انتخاب کنید"
 
-#: activities/drawing_wheels/DrawingWheels.qml:523
+#: activities/drawing_wheels/DrawingWheels.qml:680
 msgctxt "DrawingWheels|"
-msgid "Save as a drawing"
+msgid "Export image (PNG)"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:539
+#: activities/drawing_wheels/DrawingWheels.qml:694
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Many new images"
@@ -6564,7 +6575,7 @@ msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "تعداد زیادی تصویر جدید"
 
-#: activities/drawing_wheels/DrawingWheels.qml:555
+#: activities/drawing_wheels/DrawingWheels.qml:723
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Many new images"
@@ -6572,25 +6583,31 @@ msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "تعداد زیادی تصویر جدید"
 
-#: activities/drawing_wheels/DrawingWheels.qml:598
-#: activities/drawing_wheels/DrawingWheels.qml:668
+#: activities/drawing_wheels/DrawingWheels.qml:742
+#, fuzzy
+#| msgctxt "DownloadDialog|"
+#| msgid "Background"
+msgctxt "DrawingWheels|"
+msgid "Background color"
+msgstr "پس زمینه"
+
+#: activities/drawing_wheels/DrawingWheels.qml:806
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:630
-#: activities/drawing_wheels/DrawingWheels.qml:689
+#: activities/drawing_wheels/DrawingWheels.qml:881
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:714
+#: activities/drawing_wheels/DrawingWheels.qml:944
 #, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:722
+#: activities/drawing_wheels/DrawingWheels.qml:962
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Speed"
@@ -6598,61 +6615,48 @@ msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "سرعت"
 
-#: activities/drawing_wheels/DrawingWheels.qml:734
+#: activities/drawing_wheels/DrawingWheels.qml:978
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:749
+#: activities/drawing_wheels/DrawingWheels.qml:998
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:781
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Palestine"
-msgctxt "DrawingWheels|"
-msgid "Palettes"
-msgstr "فلسطین"
-
-#: activities/drawing_wheels/DrawingWheels.qml:861
-#, fuzzy
-#| msgctxt "category_colors|"
-#| msgid "Colors"
-msgctxt "DrawingWheels|"
-msgid "Color"
-msgstr "رنگ ها"
-
-#: activities/drawing_wheels/DrawingWheels.qml:888
+#: activities/drawing_wheels/DrawingWheels.qml:1042
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font size"
 msgctxt "DrawingWheels|"
-msgid "Pensize"
+msgid "Pen size"
 msgstr "اندازه فونت"
 
-#: activities/drawing_wheels/DrawingWheels.qml:927
+#: activities/drawing_wheels/DrawingWheels.qml:1079
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:955
+#: activities/drawing_wheels/DrawingWheels.qml:1122
 msgctxt "DrawingWheels|"
-msgid "Distance to center"
+msgid "Offset"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:981
+#: activities/drawing_wheels/DrawingWheels.qml:1160
+#, fuzzy
+#| msgctxt "IntroMessage|"
+#| msgid "Start"
 msgctxt "DrawingWheels|"
-msgid "Starting tooth"
-msgstr ""
+msgid "Start tooth"
+msgstr "شروع"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1068
+#: activities/drawing_wheels/DrawingWheels.qml:1338
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1069
+#: activities/drawing_wheels/DrawingWheels.qml:1339
 #, fuzzy
 #| msgctxt "Chess|"
 #| msgid "Do you really want to undo all the moves?"
@@ -6660,7 +6664,7 @@ msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "آیا مطمئن به بازگشت همه حرکات هستی؟"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1070
+#: activities/drawing_wheels/DrawingWheels.qml:1340
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -6668,7 +6672,7 @@ msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "بله"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1071
+#: activities/drawing_wheels/DrawingWheels.qml:1341
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -23444,7 +23448,7 @@ msgid "Selected Color"
 msgstr "انتخاب شده"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:238
+#: activities/sketch/ColorSelector.qml:239
 #, fuzzy
 #| msgctxt "board14_0|"
 #| msgid "Hubei"
@@ -23453,7 +23457,7 @@ msgid "Hue"
 msgstr "هوبئی"
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:265
+#: activities/sketch/ColorSelector.qml:267
 #, fuzzy
 #| msgctxt "Dataset|"
 #| msgid "Saturn"
@@ -23462,7 +23466,7 @@ msgid "Saturation"
 msgstr "زحل"
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:290
+#: activities/sketch/ColorSelector.qml:293
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Lights off"
@@ -23471,20 +23475,12 @@ msgid "Lightness"
 msgstr "چراغ ها خاموش!"
 
 #. Reload default color for selected slot
-#: activities/sketch/ColorSelector.qml:326
+#: activities/sketch/ColorSelector.qml:329
 msgctxt "ColorSelector|"
 msgid "Reset Color"
 msgstr ""
 
-#: activities/sketch/ColorsPanel.qml:159
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Palestine"
-msgctxt "ColorsPanel|"
-msgid "Palettes"
-msgstr "فلسطین"
-
-#: activities/sketch/FilesPanel.qml:47
+#: activities/sketch/FilesPanel.qml:35
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Select your mode"
@@ -23492,7 +23488,7 @@ msgctxt "FilesPanel|"
 msgid "Save your image"
 msgstr "حالت خود را انتخاب کنید"
 
-#: activities/sketch/FilesPanel.qml:86
+#: activities/sketch/FilesPanel.qml:46
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Many new images"
@@ -23500,7 +23496,7 @@ msgctxt "FilesPanel|"
 msgid "Open an image"
 msgstr "تعداد زیادی تصویر جدید"
 
-#: activities/sketch/FilesPanel.qml:117
+#: activities/sketch/FilesPanel.qml:65
 #, fuzzy
 #| msgctxt "DialogChooseLevel|"
 #| msgid "%1 settings"
@@ -23508,7 +23504,7 @@ msgctxt "FilesPanel|"
 msgid "New image settings"
 msgstr "تنظیمات %1"
 
-#: activities/sketch/FilesPanel.qml:145
+#: activities/sketch/FilesPanel.qml:90
 #, fuzzy
 #| msgctxt "DownloadDialog|"
 #| msgid "Background"
@@ -23516,7 +23512,7 @@ msgctxt "FilesPanel|"
 msgid "Background color"
 msgstr "پس زمینه"
 
-#: activities/sketch/FilesPanel.qml:191
+#: activities/sketch/FilesPanel.qml:115
 #, fuzzy
 #| msgctxt "DownloadDialog|"
 #| msgid "Background"
@@ -23524,7 +23520,7 @@ msgctxt "FilesPanel|"
 msgid "Background image"
 msgstr "پس زمینه"
 
-#: activities/sketch/FilesPanel.qml:232
+#: activities/sketch/FilesPanel.qml:148
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Many new images"
@@ -23553,12 +23549,20 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr ""
 
-#: activities/sketch/Sketch.qml:678
+#: activities/sketch/PaletteSelector.qml:148
+#, fuzzy
+#| msgctxt "board9_0|"
+#| msgid "Palestine"
+msgctxt "PaletteSelector|"
+msgid "Palettes"
+msgstr "فلسطین"
+
+#: activities/sketch/Sketch.qml:677
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 
-#: activities/sketch/Sketch.qml:679
+#: activities/sketch/Sketch.qml:678
 #, fuzzy
 #| msgctxt "Chess|"
 #| msgid "Do you really want to undo all the moves?"
@@ -23566,7 +23570,7 @@ msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "آیا مطمئن به بازگشت همه حرکات هستی؟"
 
-#: activities/sketch/Sketch.qml:680
+#: activities/sketch/Sketch.qml:679
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -23574,7 +23578,7 @@ msgctxt "Sketch|"
 msgid "Yes"
 msgstr "بله"
 
-#: activities/sketch/Sketch.qml:681
+#: activities/sketch/Sketch.qml:680
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -27323,6 +27327,20 @@ msgstr "پایان"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "شروع"
+
+#, fuzzy
+#~| msgctxt "category_colors|"
+#~| msgid "Colors"
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Color"
+#~ msgstr "رنگ ها"
+
+#, fuzzy
+#~| msgctxt "board9_0|"
+#~| msgid "Palestine"
+#~ msgctxt "ColorsPanel|"
+#~ msgid "Palettes"
+#~ msgstr "فلسطین"
 
 #, fuzzy
 #~| msgctxt "BinaryBulb|"

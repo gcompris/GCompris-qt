@@ -6700,22 +6700,33 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:353
+#: activities/drawing_wheels/DrawingWheels.qml:381
 msgctxt "DrawingWheels|"
 msgid "Save drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:367
+#: activities/drawing_wheels/DrawingWheels.qml:393
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:388
+#: activities/drawing_wheels/DrawingWheels.qml:417
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Piano composition"
 msgctxt "DrawingWheels|"
-msgid "Pencil's color and width"
-msgstr ""
+msgid "Pencil size and position"
+msgstr "Komponering for piano"
 
-#: activities/drawing_wheels/DrawingWheels.qml:401
+#: activities/drawing_wheels/DrawingWheels.qml:429
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Font selector"
+msgctxt "DrawingWheels|"
+msgid "Color selector"
+msgstr "Vel skrift"
+
+#: activities/drawing_wheels/DrawingWheels.qml:456
 #, fuzzy
 #| msgctxt "OptionsRow|"
 #| msgid "Undo"
@@ -6723,67 +6734,71 @@ msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Angra"
 
-#: activities/drawing_wheels/DrawingWheels.qml:414
+#: activities/drawing_wheels/DrawingWheels.qml:468
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:450
+#: activities/drawing_wheels/DrawingWheels.qml:502
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:450
+#: activities/drawing_wheels/DrawingWheels.qml:502
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:482
+#: activities/drawing_wheels/DrawingWheels.qml:534
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:482
+#: activities/drawing_wheels/DrawingWheels.qml:534
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:507
+#: activities/drawing_wheels/DrawingWheels.qml:666
 #, fuzzy
 msgctxt "DrawingWheels|"
-msgid "Save your image"
+msgid "Save vector image (SVG)"
 msgstr "Vel modus"
 
-#: activities/drawing_wheels/DrawingWheels.qml:523
+#: activities/drawing_wheels/DrawingWheels.qml:680
 msgctxt "DrawingWheels|"
-msgid "Save as a drawing"
+msgid "Export image (PNG)"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:539
+#: activities/drawing_wheels/DrawingWheels.qml:694
 #, fuzzy
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Mange nye bilete"
 
-#: activities/drawing_wheels/DrawingWheels.qml:555
+#: activities/drawing_wheels/DrawingWheels.qml:723
 #, fuzzy
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Mange nye bilete"
 
-#: activities/drawing_wheels/DrawingWheels.qml:598
-#: activities/drawing_wheels/DrawingWheels.qml:668
+#: activities/drawing_wheels/DrawingWheels.qml:742
+#, fuzzy
+msgctxt "DrawingWheels|"
+msgid "Background color"
+msgstr "Bakgrunn"
+
+#: activities/drawing_wheels/DrawingWheels.qml:806
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:630
-#: activities/drawing_wheels/DrawingWheels.qml:689
+#: activities/drawing_wheels/DrawingWheels.qml:881
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:714
+#: activities/drawing_wheels/DrawingWheels.qml:944
 #, fuzzy, qt-format
 #| msgctxt "SignalGenerator|"
 #| msgid "%1 s"
@@ -6791,7 +6806,7 @@ msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 s"
 
-#: activities/drawing_wheels/DrawingWheels.qml:722
+#: activities/drawing_wheels/DrawingWheels.qml:962
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Speed"
@@ -6799,70 +6814,55 @@ msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Fart"
 
-#: activities/drawing_wheels/DrawingWheels.qml:734
+#: activities/drawing_wheels/DrawingWheels.qml:978
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:749
+#: activities/drawing_wheels/DrawingWheels.qml:998
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:781
-#, fuzzy
-msgctxt "DrawingWheels|"
-msgid "Palettes"
-msgstr "Palestina"
-
-#: activities/drawing_wheels/DrawingWheels.qml:861
-#, fuzzy
-#| msgctxt "category_colors|"
-#| msgid "Colors"
-msgctxt "DrawingWheels|"
-msgid "Color"
-msgstr "Fargar"
-
-#: activities/drawing_wheels/DrawingWheels.qml:888
+#: activities/drawing_wheels/DrawingWheels.qml:1042
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font size"
 msgctxt "DrawingWheels|"
-msgid "Pensize"
+msgid "Pen size"
 msgstr "Skriftstorleik"
 
-#: activities/drawing_wheels/DrawingWheels.qml:927
+#: activities/drawing_wheels/DrawingWheels.qml:1079
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr ""
 
-# Finst ikkje lenger: https://snl.no/Distrito_Federal_-_tidligere_distrikt_i_Mexico
-#: activities/drawing_wheels/DrawingWheels.qml:955
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Districto Federal"
+#: activities/drawing_wheels/DrawingWheels.qml:1122
 msgctxt "DrawingWheels|"
-msgid "Distance to center"
-msgstr "Distrito Federal"
-
-#: activities/drawing_wheels/DrawingWheels.qml:981
-msgctxt "DrawingWheels|"
-msgid "Starting tooth"
+msgid "Offset"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1068
+#: activities/drawing_wheels/DrawingWheels.qml:1160
+#, fuzzy
+#| msgctxt "IntroMessage|"
+#| msgid "Start"
+msgctxt "DrawingWheels|"
+msgid "Start tooth"
+msgstr "Start"
+
+#: activities/drawing_wheels/DrawingWheels.qml:1338
 #, fuzzy
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Du har ikkje valt nokon note. Ønskjer du å fjerna alle notane?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1069
+#: activities/drawing_wheels/DrawingWheels.qml:1339
 #, fuzzy
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Er du sikker på at du vil angra alle trekka du har gjort?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1070
+#: activities/drawing_wheels/DrawingWheels.qml:1340
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -6870,7 +6870,7 @@ msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Ja"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1071
+#: activities/drawing_wheels/DrawingWheels.qml:1341
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -24744,69 +24744,63 @@ msgid "Selected Color"
 msgstr "Valt"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:238
+#: activities/sketch/ColorSelector.qml:239
 #, fuzzy
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
 msgstr "Hubei"
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:265
+#: activities/sketch/ColorSelector.qml:267
 #, fuzzy
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
 msgstr "Saturn"
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:290
+#: activities/sketch/ColorSelector.qml:293
 #, fuzzy
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
 msgstr "Av med lysa"
 
 #. Reload default color for selected slot
-#: activities/sketch/ColorSelector.qml:326
+#: activities/sketch/ColorSelector.qml:329
 msgctxt "ColorSelector|"
 msgid "Reset Color"
 msgstr ""
 
-#: activities/sketch/ColorsPanel.qml:159
-#, fuzzy
-msgctxt "ColorsPanel|"
-msgid "Palettes"
-msgstr "Palestina"
-
-#: activities/sketch/FilesPanel.qml:47
+#: activities/sketch/FilesPanel.qml:35
 #, fuzzy
 msgctxt "FilesPanel|"
 msgid "Save your image"
 msgstr "Vel modus"
 
-#: activities/sketch/FilesPanel.qml:86
+#: activities/sketch/FilesPanel.qml:46
 #, fuzzy
 msgctxt "FilesPanel|"
 msgid "Open an image"
 msgstr "Mange nye bilete"
 
-#: activities/sketch/FilesPanel.qml:117
+#: activities/sketch/FilesPanel.qml:65
 #, fuzzy
 msgctxt "FilesPanel|"
 msgid "New image settings"
 msgstr "%1-innstillingar"
 
-#: activities/sketch/FilesPanel.qml:145
+#: activities/sketch/FilesPanel.qml:90
 #, fuzzy
 msgctxt "FilesPanel|"
 msgid "Background color"
 msgstr "Bakgrunn"
 
-#: activities/sketch/FilesPanel.qml:191
+#: activities/sketch/FilesPanel.qml:115
 #, fuzzy
 msgctxt "FilesPanel|"
 msgid "Background image"
 msgstr "Bakgrunn"
 
-#: activities/sketch/FilesPanel.qml:232
+#: activities/sketch/FilesPanel.qml:148
 #, fuzzy
 msgctxt "FilesPanel|"
 msgid "Create a new image"
@@ -24833,25 +24827,31 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr ""
 
-#: activities/sketch/Sketch.qml:678
+#: activities/sketch/PaletteSelector.qml:148
+#, fuzzy
+msgctxt "PaletteSelector|"
+msgid "Palettes"
+msgstr "Palestina"
+
+#: activities/sketch/Sketch.qml:677
 #, fuzzy
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Du har ikkje valt nokon note. Ønskjer du å fjerna alle notane?"
 
-#: activities/sketch/Sketch.qml:679
+#: activities/sketch/Sketch.qml:678
 #, fuzzy
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "Er du sikker på at du vil angra alle trekka du har gjort?"
 
-#: activities/sketch/Sketch.qml:680
+#: activities/sketch/Sketch.qml:679
 #, fuzzy
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Ja"
 
-#: activities/sketch/Sketch.qml:681
+#: activities/sketch/Sketch.qml:680
 #, fuzzy
 msgctxt "Sketch|"
 msgid "No"
@@ -28637,3 +28637,23 @@ msgstr "Lukk"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Start"
+
+#, fuzzy
+#~| msgctxt "category_colors|"
+#~| msgid "Colors"
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Color"
+#~ msgstr "Fargar"
+
+# Finst ikkje lenger: https://snl.no/Distrito_Federal_-_tidligere_distrikt_i_Mexico
+#, fuzzy
+#~| msgctxt "board9_0|"
+#~| msgid "Districto Federal"
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Distance to center"
+#~ msgstr "Distrito Federal"
+
+#, fuzzy
+#~ msgctxt "ColorsPanel|"
+#~ msgid "Palettes"
+#~ msgstr "Palestina"

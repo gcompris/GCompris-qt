@@ -6294,65 +6294,73 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:353
+#: activities/drawing_wheels/DrawingWheels.qml:381
 msgctxt "DrawingWheels|"
 msgid "Save drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:367
+#: activities/drawing_wheels/DrawingWheels.qml:393
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:388
+#: activities/drawing_wheels/DrawingWheels.qml:417
+#, fuzzy
+#| msgctxt "DialogHelp|"
+#| msgid "Section: "
 msgctxt "DrawingWheels|"
-msgid "Pencil's color and width"
+msgid "Pencil size and position"
+msgstr "부분: "
+
+#: activities/drawing_wheels/DrawingWheels.qml:429
+msgctxt "DrawingWheels|"
+msgid "Color selector"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:401
+#: activities/drawing_wheels/DrawingWheels.qml:456
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:414
+#: activities/drawing_wheels/DrawingWheels.qml:468
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:450
+#: activities/drawing_wheels/DrawingWheels.qml:502
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:450
+#: activities/drawing_wheels/DrawingWheels.qml:502
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:482
+#: activities/drawing_wheels/DrawingWheels.qml:534
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:482
+#: activities/drawing_wheels/DrawingWheels.qml:534
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:507
+#: activities/drawing_wheels/DrawingWheels.qml:666
 #, fuzzy
 #| msgctxt "Traffic|"
 #| msgid "Select your mode"
 msgctxt "DrawingWheels|"
-msgid "Save your image"
+msgid "Save vector image (SVG)"
 msgstr "모드 선택"
 
-#: activities/drawing_wheels/DrawingWheels.qml:523
+#: activities/drawing_wheels/DrawingWheels.qml:680
 msgctxt "DrawingWheels|"
-msgid "Save as a drawing"
+msgid "Export image (PNG)"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:539
+#: activities/drawing_wheels/DrawingWheels.qml:694
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Download in progress"
@@ -6360,7 +6368,7 @@ msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "다운로드 진행 중"
 
-#: activities/drawing_wheels/DrawingWheels.qml:555
+#: activities/drawing_wheels/DrawingWheels.qml:723
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Download in progress"
@@ -6368,81 +6376,74 @@ msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "다운로드 진행 중"
 
-#: activities/drawing_wheels/DrawingWheels.qml:598
-#: activities/drawing_wheels/DrawingWheels.qml:668
+#: activities/drawing_wheels/DrawingWheels.qml:742
+#, fuzzy
+#| msgctxt "DownloadDialog|"
+#| msgid "Background"
+msgctxt "DrawingWheels|"
+msgid "Background color"
+msgstr "백그라운드 작업"
+
+#: activities/drawing_wheels/DrawingWheels.qml:806
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:630
-#: activities/drawing_wheels/DrawingWheels.qml:689
+#: activities/drawing_wheels/DrawingWheels.qml:881
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:714
+#: activities/drawing_wheels/DrawingWheels.qml:944
 #, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:722
+#: activities/drawing_wheels/DrawingWheels.qml:962
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:734
+#: activities/drawing_wheels/DrawingWheels.qml:978
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:749
+#: activities/drawing_wheels/DrawingWheels.qml:998
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:781
-msgctxt "DrawingWheels|"
-msgid "Palettes"
-msgstr ""
-
-#: activities/drawing_wheels/DrawingWheels.qml:861
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Colors"
-msgctxt "DrawingWheels|"
-msgid "Color"
-msgstr "색상"
-
-#: activities/drawing_wheels/DrawingWheels.qml:888
+#: activities/drawing_wheels/DrawingWheels.qml:1042
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font size"
 msgctxt "DrawingWheels|"
-msgid "Pensize"
+msgid "Pen size"
 msgstr "글꼴 크기"
 
-#: activities/drawing_wheels/DrawingWheels.qml:927
+#: activities/drawing_wheels/DrawingWheels.qml:1079
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:955
+#: activities/drawing_wheels/DrawingWheels.qml:1122
 msgctxt "DrawingWheels|"
-msgid "Distance to center"
+msgid "Offset"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:981
+#: activities/drawing_wheels/DrawingWheels.qml:1160
 msgctxt "DrawingWheels|"
-msgid "Starting tooth"
+msgid "Start tooth"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1068
+#: activities/drawing_wheels/DrawingWheels.qml:1338
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1069
+#: activities/drawing_wheels/DrawingWheels.qml:1339
 #, fuzzy
 #| msgctxt "main|"
 #| msgid "Do you want to download the corresponding sound files now?"
@@ -6450,7 +6451,7 @@ msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "해당하는 음성 파일을 다운로드하시겠습니까?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1070
+#: activities/drawing_wheels/DrawingWheels.qml:1340
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Yes"
@@ -6458,7 +6459,7 @@ msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "예"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1071
+#: activities/drawing_wheels/DrawingWheels.qml:1341
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "No"
@@ -23787,13 +23788,13 @@ msgid "Selected Color"
 msgstr "모드 선택"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:238
+#: activities/sketch/ColorSelector.qml:239
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
 msgstr ""
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:265
+#: activities/sketch/ColorSelector.qml:267
 #, fuzzy
 #| msgctxt "DialogHelp|"
 #| msgid "Section: "
@@ -23802,23 +23803,18 @@ msgid "Saturation"
 msgstr "부분: "
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:290
+#: activities/sketch/ColorSelector.qml:293
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
 msgstr ""
 
 #. Reload default color for selected slot
-#: activities/sketch/ColorSelector.qml:326
+#: activities/sketch/ColorSelector.qml:329
 msgctxt "ColorSelector|"
 msgid "Reset Color"
 msgstr ""
 
-#: activities/sketch/ColorsPanel.qml:159
-msgctxt "ColorsPanel|"
-msgid "Palettes"
-msgstr ""
-
-#: activities/sketch/FilesPanel.qml:47
+#: activities/sketch/FilesPanel.qml:35
 #, fuzzy
 #| msgctxt "Traffic|"
 #| msgid "Select your mode"
@@ -23826,7 +23822,7 @@ msgctxt "FilesPanel|"
 msgid "Save your image"
 msgstr "모드 선택"
 
-#: activities/sketch/FilesPanel.qml:86
+#: activities/sketch/FilesPanel.qml:46
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Download in progress"
@@ -23834,12 +23830,12 @@ msgctxt "FilesPanel|"
 msgid "Open an image"
 msgstr "다운로드 진행 중"
 
-#: activities/sketch/FilesPanel.qml:117
+#: activities/sketch/FilesPanel.qml:65
 msgctxt "FilesPanel|"
 msgid "New image settings"
 msgstr ""
 
-#: activities/sketch/FilesPanel.qml:145
+#: activities/sketch/FilesPanel.qml:90
 #, fuzzy
 #| msgctxt "DownloadDialog|"
 #| msgid "Background"
@@ -23847,7 +23843,7 @@ msgctxt "FilesPanel|"
 msgid "Background color"
 msgstr "백그라운드 작업"
 
-#: activities/sketch/FilesPanel.qml:191
+#: activities/sketch/FilesPanel.qml:115
 #, fuzzy
 #| msgctxt "DownloadDialog|"
 #| msgid "Background"
@@ -23855,7 +23851,7 @@ msgctxt "FilesPanel|"
 msgid "Background image"
 msgstr "백그라운드 작업"
 
-#: activities/sketch/FilesPanel.qml:232
+#: activities/sketch/FilesPanel.qml:148
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Download in progress"
@@ -23884,12 +23880,17 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr ""
 
-#: activities/sketch/Sketch.qml:678
+#: activities/sketch/PaletteSelector.qml:148
+msgctxt "PaletteSelector|"
+msgid "Palettes"
+msgstr ""
+
+#: activities/sketch/Sketch.qml:677
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 
-#: activities/sketch/Sketch.qml:679
+#: activities/sketch/Sketch.qml:678
 #, fuzzy
 #| msgctxt "main|"
 #| msgid "Do you want to download the corresponding sound files now?"
@@ -23897,7 +23898,7 @@ msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "해당하는 음성 파일을 다운로드하시겠습니까?"
 
-#: activities/sketch/Sketch.qml:680
+#: activities/sketch/Sketch.qml:679
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Yes"
@@ -23905,7 +23906,7 @@ msgctxt "Sketch|"
 msgid "Yes"
 msgstr "예"
 
-#: activities/sketch/Sketch.qml:681
+#: activities/sketch/Sketch.qml:680
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "No"
@@ -27596,6 +27597,13 @@ msgstr ""
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr ""
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Colors"
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Color"
+#~ msgstr "색상"
 
 #, fuzzy
 #~| msgctxt "Traffic|"

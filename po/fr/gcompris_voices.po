@@ -378,8 +378,7 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawing_wheels"
 #: activities/drawing_wheels/ActivityInfo.qml:17
-#, fuzzy, kde-format
-#| msgid "put here in comment the text for the intro voice"
+#, kde-format
 msgid "put here in comment the text for the intro voice"
 msgstr "Mettez ici en commentaire le texte pour la voix d'intro."
 
