@@ -1300,18 +1300,21 @@ ActivityBase {
             }
 
             function rotateGear(numberOfSteps) {
-                items.animationCanvas.ctx.beginPath()
-                items.animationCanvas.ctx.moveTo(items.lastPoint.x, items.lastPoint.y)
+                animationCanvas.ctx.beginPath();
+                animationCanvas.ctx.moveTo(items.lastPoint.x, items.lastPoint.y);
                 for(var i = 0; i < numberOfSteps; i++) {
                     if(!items.runCompleted) {
-                        Activity.rotateGear(3) // 3 is rotation angle for curve drawing precision. Higher values make angular lines. Smaller values can make refresh drop frames because of too much calculations.
+                        Activity.rotateGear(3); // 3 is rotation angle for curve drawing precision. Higher values make angular lines. Smaller values can make refresh drop frames because of too much calculations.
                     } else {
                         break;
                     }
                 }
-                items.animationCanvas.ctx.stroke()
-                items.animationCanvas.ctx.closePath()
-                animationCanvas.requestPaint()
+                animationCanvas.ctx.stroke();
+                animationCanvas.ctx.closePath();
+                animationCanvas.requestPaint();
+                if(items.runCompleted) {
+                    Activity.stopGear(true);
+                }
             }
         }
 

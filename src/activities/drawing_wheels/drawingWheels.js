@@ -226,7 +226,6 @@ function rotateGear(angle) {
         if(items.startedFromOrigin) {
             items.svgTank.closePath()
         }
-        stopGear(true)
     } else {
         items.svgTank.addLine(pos.x, pos.y)
     }
