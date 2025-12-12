@@ -45,7 +45,19 @@ Item {
     }
 
     function loadSvg(svgData) {
-        source = svgData.replace(/<\?xml[^>]*><svg[^>]*>(.*)<\/svg>/g, "$1")
+        // Find width of loaded file, calculate scale compared to current size, then apply group with transform.
+        // index of first width=", which should be of main svg tag
+        var widthStartIndex = svgData.search(`width="`)
+        var widthEndIndex = svgData.indexOf(`"`, widthStartIndex + 7)
+        var oldSize = parseInt(svgData.substring(widthStartIndex + 7, widthEndIndex))
+        var sizeScale = svgSize / oldSize
+        if(sizeScale != 1) {
+            source = `<g transform="scale(${sizeScale})">`
+            source += svgData.replace(/<\?xml[^>]*><svg[^>]*>(.*)<\/svg>/g, "$1")
+            source += `</g>`
+        } else {
+            source = svgData.replace(/<\?xml[^>]*><svg[^>]*>(.*)<\/svg>/g, "$1")
+        }
         path = ""
         undoStack = []
         redoStack = []
