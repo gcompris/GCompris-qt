@@ -52,6 +52,7 @@ function start(items_) {
 }
 
 function stop() {
+    items.gearTimer.stop();
     items.canvasArea.clearUndo();
     items.canvasArea.clearRedo();
     items.undoStack.clear()
