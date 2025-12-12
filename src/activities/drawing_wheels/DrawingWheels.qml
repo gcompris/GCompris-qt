@@ -120,7 +120,6 @@ ActivityBase {
             property bool canvasLocked: true
             property bool isFileSaved: true
             property int baseButtonSize: 60 * ApplicationInfo.ratio
-
         }
 
         onStart: { Activity.start(items) }
@@ -319,6 +318,10 @@ ActivityBase {
                 anchors.centerIn: canvasArea
                 visible: !hideGears.checked
                 opacity: 0.5
+                cache: false
+                asynchronous: true
+                retainWhileLoading: true
+                smooth: true
                 sourceSize.width: width
                 sourceSize.height: height
 
@@ -342,6 +345,10 @@ ActivityBase {
                 y: centerY + (canvasContainer.height * 0.5) - (height * 0.5)
                 rotation: 0
                 visible: !hideGears.checked
+                cache: false
+                asynchronous: true
+                retainWhileLoading: true
+                smooth: true
                 sourceSize.width: width
                 sourceSize.height: height
 
@@ -399,11 +406,11 @@ ActivityBase {
                     }
                     GCText {
                         anchors.centerIn: parent
-                        width: parent.width * 0.5
+                        width: parent.width * 0.6
                         height: width
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
-                        fontSize: tinySize
+                        fontSize: regularSize
                         fontSizeMode: Text.Fit
                         fixFontSize: true
                         color: GCStyle.whiteText
@@ -431,7 +438,7 @@ ActivityBase {
                     selected: true
                     enabled: !gearTimer.running
                     onClicked: {
-                        panelManager.showPanel(colorsPanel)
+                        panelManager.showPanel(colorPanel)
                     }
 
                     Rectangle {
@@ -530,7 +537,8 @@ ActivityBase {
             property bool checked: false
             selected: true
             width: toolsContainer.buttonSize
-            source: checked ? "qrc:/gcompris/src/activities/drawing_wheels/resource/hidden.svg" : "qrc:/gcompris/src/activities/drawing_wheels/resource/visible.svg"
+            source: checked ? "qrc:/gcompris/src/activities/drawing_wheels/resource/hidden.svg" :
+                "qrc:/gcompris/src/activities/drawing_wheels/resource/visible.svg"
             toolTip: checked ? qsTr("Show wheel and gear") : qsTr("Hide wheel and gear")
             anchors.centerIn: hideGearsBG
             onClicked: checked = !checked
@@ -560,8 +568,19 @@ ActivityBase {
                     canvasContainer.anchors.topMargin: 0
                     canvasContainer.anchors.rightMargin: toolsContainer.width
 
-                    filePanel.width: Math.min(activityBackground.width, fileColumn.width + GCStyle.baseMargins * 2)
-                    filePanel.maxWidth: Math.min(activityBackground.width - GCStyle.baseMargins * 2, 400 * ApplicationInfo.ratio)
+                    panelManager.maxPanelWidth: Math.min(canvasContainer.width - toolsContainer.width,
+                                                         500 * ApplicationInfo.ratio)
+                    panelManager.maxPanelHeight: canvasContainer.height
+                    panelManager.panelY: GCStyle.halfMargins
+                    panelManager.panelRightMargin: toolsContainer.width
+
+                    filePanel.width: Math.min(panelManager.maxPanelWidth,
+                                              fileColumn.width + GCStyle.baseMargins * 2)
+                    wheelPanel.width: Math.min(panelManager.maxPanelWidth,
+                                               wheelColumn.width + GCStyle.baseMargins * 2)
+                    penPanel.width: Math.min(panelManager.maxPanelWidth,
+                                             penColumn.width + GCStyle.baseMargins * 2)
+                    colorPanel.width: panelManager.maxPanelWidth
 
                 }
             },
@@ -573,8 +592,8 @@ ActivityBase {
                     toolsContainer.radius: 0
                     toolsContainer.width: activityBackground.width
                     toolsContainer.buttonSize: Math.min(items.baseButtonSize,
-                        (toolsContainer.width - GCStyle.halfMargins) /
-                        (toolsFlow.children.length - 1) - GCStyle.halfMargins)
+                                                (toolsContainer.width - GCStyle.halfMargins) /
+                                                (toolsFlow.children.length - 1) - GCStyle.halfMargins)
                     toolsContainer.height: toolsContainer.buttonSize + GCStyle.baseMargins
 
                     toolsFlow.anchors.topMargin: GCStyle.halfMargins
@@ -586,8 +605,16 @@ ActivityBase {
                     canvasContainer.anchors.topMargin: toolsContainer.height
                     canvasContainer.anchors.rightMargin: 0
 
+                    panelManager.maxPanelWidth: canvasContainer.width
+                    panelManager.maxPanelHeight: Math.min(canvasContainer.height - toolsContainer.height,
+                                                          360 * ApplicationInfo.ratio)
+                    panelManager.panelY: toolsContainer.height + GCStyle.halfMargins
+                    panelManager.panelRightMargin: 0
+
                     filePanel.width: activityBackground.width
-                    filePanel.maxWidth: activityBackground.width - GCStyle.baseMargins * 2
+                    wheelPanel.width: activityBackground.width
+                    penPanel.width: activityBackground.width
+                    colorPanel.width: activityBackground.width
                 }
             }
         ]
@@ -599,6 +626,14 @@ ActivityBase {
             color: "#60000000"
             visible: false
             property Rectangle selectedPanel: null
+
+            // set in states
+            property int maxPanelWidth
+            property int maxPanelHeight
+            property int panelY
+            property int panelRightMargin
+            property int maxContentWidth: maxPanelWidth - GCStyle.baseMargins * 2
+            property int maxContentHeight: maxPanelHeight - GCStyle.baseMargins * 2
 
             function showPanel(panel_) {
                 if(panel_) {
@@ -633,18 +668,18 @@ ActivityBase {
             border.width: GCStyle.thinBorder
             border.color: GCStyle.lightBorder
             color: GCStyle.darkBg
+            // width set in states
             height: fileColumn.height + GCStyle.baseMargins * 2
             visible: false
-
-            y: (!items.isHorizontalLayout || width > layoutArea.width) ? 0 : GCStyle.halfMargins
+            y: panelManager.panelY
             anchors.right: parent.right
-            anchors.rightMargin: width + toolsContainer.width > activityBackground.width ? 0 : toolsContainer.width
+            anchors.rightMargin: panelManager.panelRightMargin
 
             readonly property int buttonSize: Math.min(items.baseButtonSize,
-                                                       layoutArea.height * 0.1 - GCStyle.halfMargins)
-            property int maxWidth
+                    panelManager.maxContentHeight * 0.2 - GCStyle.halfMargins)
 
             MouseArea {
+                // Just to catch click events before the panelManager
                 anchors.fill: parent
             }
 
@@ -660,7 +695,7 @@ ActivityBase {
 
                     GCLabelButton {
                         id: saveSvgButton
-                        maxWidth: filePanel.maxWidth
+                        maxWidth: panelManager.maxContentWidth
                         height: filePanel.buttonSize
                         iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileSave.svg"
                         text: qsTr("Save vector image (SVG)")
@@ -674,7 +709,7 @@ ActivityBase {
 
                     GCLabelButton {
                         id: saveButton
-                        maxWidth: filePanel.maxWidth
+                        maxWidth: panelManager.maxContentWidth
                         height: filePanel.buttonSize
                         iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileSave.svg"
                         text: qsTr("Export image (PNG)")
@@ -688,7 +723,7 @@ ActivityBase {
 
                     GCLabelButton {
                         id: openButton
-                        maxWidth: filePanel.maxWidth
+                        maxWidth: panelManager.maxContentWidth
                         height: filePanel.buttonSize
                         iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileOpen.svg"
                         text: qsTr("Open an image")
@@ -717,7 +752,7 @@ ActivityBase {
 
                     GCLabelButton {
                         id: newButton
-                        maxWidth: filePanel.maxWidth
+                        maxWidth: panelManager.maxContentWidth
                         height: filePanel.buttonSize
                         iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileNew.svg"
                         text: qsTr("Create a new image")
@@ -736,7 +771,7 @@ ActivityBase {
 
                     GCLabelButton {
                         id: bgColorButton
-                        maxWidth: filePanel.maxWidth
+                        maxWidth: panelManager.maxContentWidth
                         height: filePanel.buttonSize
                         iconSource: ""
                         text: qsTr("Background color")
@@ -768,23 +803,29 @@ ActivityBase {
             border.width: GCStyle.thinBorder
             border.color: GCStyle.lightBorder
             color: GCStyle.darkBg
-            width: items.isHorizontalLayout ? (wheelColumn.width + GCStyle.baseMargins * 2) : activityBackground.width
+            // width set in states
             height: wheelColumn.height + GCStyle.baseMargins * 2
             visible: false
+            y: panelManager.panelY
+            anchors.right: parent.right
+            anchors.rightMargin: panelManager.panelRightMargin
+
+            // Size formula for one label and (7 buttons OR one slider and one value display)
+            // Values also used in penPanel (so take care if changing them...)
+            readonly property int buttonSize: Math.min(items.baseButtonSize,
+                    panelManager.maxContentWidth * 0.1 - GCStyle.halfMargins,
+                    panelManager.maxContentHeight * 0.2 - GCStyle.halfMargins)
+            readonly property int labelSize: (buttonSize + GCStyle.halfMargins) * 3 - GCStyle.halfMargins
+            readonly property int sliderSize: (buttonSize + GCStyle.halfMargins) * 6 - GCStyle.halfMargins
+            readonly property int fullWidth: (buttonSize + GCStyle.halfMargins) * 10 - GCStyle.halfMargins
 
             property int currentWheel: 0
             property int currentGear: 0
 
-            y: (!items.isHorizontalLayout || width > layoutArea.width) ? 0 : GCStyle.halfMargins
-            anchors.right: parent.right
-            anchors.rightMargin: width + toolsContainer.width > activityBackground.width ? 0 : toolsContainer.width
-
-            readonly property int maxWidth: Math.min(parent.width - GCStyle.baseMargins * 2, 450 * ApplicationInfo.ratio)
-            readonly property int maxHeight: Math.min(layoutArea.height, 250 * ApplicationInfo.ratio)
-            readonly property int buttonSize: Math.min(items.baseButtonSize,
-                                                       maxWidth * 0.1 - GCStyle.halfMargins,
-                                                       maxHeight * 0.2 - GCStyle.halfMargins)
-            readonly property int sliderSize: buttonSize * 6
+            MouseArea {
+                // Just to catch click events before the panelManager
+                anchors.fill: parent
+            }
 
             Column {
                 id: wheelColumn
@@ -802,7 +843,7 @@ ActivityBase {
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                         height: wheelPanel.buttonSize
-                        width: wheelPanel.buttonSize * 3
+                        width: wheelPanel.labelSize
                         text: qsTr("Wheel")
                     }
 
@@ -815,11 +856,11 @@ ActivityBase {
                             width: wheelPanel.buttonSize
                             GCText {
                                 anchors.centerIn: parent
-                                height: parent.height * 0.5
+                                height: parent.height * 0.6
                                 width: height
                                 horizontalAlignment: Text.AlignHCenter
                                 verticalAlignment: Text.AlignVCenter
-                                fontSize: tinySize
+                                fontSize: regularSize
                                 fontSizeMode: Text.Fit
                                 fixFontSize: true
                                 color: GCStyle.whiteText
@@ -877,7 +918,7 @@ ActivityBase {
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                         height: wheelPanel.buttonSize
-                        width: wheelPanel.buttonSize * 3
+                        width: wheelPanel.labelSize
                         text: qsTr("Gear")
                     }
 
@@ -885,16 +926,16 @@ ActivityBase {
                         model: gearsModel
                         IconButton {
                             visible: items.currentLevel === 0
-                            source: "qrc:/gcompris/src/activities/drawing_wheels/resource/wheel.svg"
+                            source: "qrc:/gcompris/src/activities/drawing_wheels/resource/gear.svg"
                             selected: index === wheelPanel.currentGear
                             width: wheelPanel.buttonSize
                             GCText {
                                 anchors.centerIn: parent
-                                height: parent.height * 0.5
+                                height: parent.height * 0.6
                                 width: height
                                 horizontalAlignment: Text.AlignHCenter
                                 verticalAlignment: Text.AlignVCenter
-                                fontSize: tinySize
+                                fontSize: regularSize
                                 fontSizeMode: Text.Fit
                                 fixFontSize: true
                                 color: GCStyle.whiteText
@@ -940,12 +981,12 @@ ActivityBase {
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                     height: wheelPanel.buttonSize * 0.5
-                    width: wheelPanel.buttonSize * 10
+                    width: wheelPanel.fullWidth
                     text: qsTr("%1 spikes").arg(items.spikesCount)
                 }
 
                 Rectangle { // Separator
-                    width: wheelPanel.buttonSize * 10
+                    width: wheelPanel.fullWidth
                     height: GCStyle.thinBorder
                     anchors.horizontalCenter: parent.horizontalCenter
                     color: GCStyle.contentColor
@@ -958,7 +999,7 @@ ActivityBase {
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                     height: wheelPanel.buttonSize
-                    width: wheelPanel.buttonSize * 10
+                    width: wheelPanel.fullWidth
                     text: qsTr("Speed")
                 }
 
@@ -974,7 +1015,7 @@ ActivityBase {
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                         height: wheelPanel.buttonSize
-                        width: wheelPanel.buttonSize * 2
+                        width: wheelPanel.buttonSize * 2 + GCStyle.baseMargins
                         text: qsTr("Slow")
                     }
 
@@ -994,7 +1035,7 @@ ActivityBase {
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                         height: wheelPanel.buttonSize
-                        width: wheelPanel.buttonSize * 2
+                        width: wheelPanel.buttonSize * 2 + GCStyle.baseMargins
                         text: qsTr("Fast")
                     }
                 }
@@ -1007,20 +1048,19 @@ ActivityBase {
             border.width: GCStyle.thinBorder
             border.color: GCStyle.lightBorder
             color: GCStyle.darkBg
-            width: items.isHorizontalLayout ? (penColumn.width + GCStyle.baseMargins * 2) : activityBackground.width
+            // width set in states
             height: penColumn.height + GCStyle.baseMargins * 2
             visible: false
-
-            y: (!items.isHorizontalLayout || width > layoutArea.width) ? 0 : GCStyle.halfMargins
+            y: panelManager.panelY
             anchors.right: parent.right
-            anchors.rightMargin: width + toolsContainer.width > activityBackground.width ? 0 : toolsContainer.width
+            anchors.rightMargin: panelManager.panelRightMargin
 
-            readonly property int maxWidth: Math.min(parent.width - GCStyle.baseMargins * 2, 450 * ApplicationInfo.ratio)
-            readonly property int maxHeight: Math.min(layoutArea.height, 250 * ApplicationInfo.ratio)
-            readonly property int buttonSize: Math.min(items.baseButtonSize,
-                                                       maxWidth * 0.1 - GCStyle.halfMargins,
-                                                       maxHeight * 0.2 - GCStyle.halfMargins)
-            readonly property int sliderSize: buttonSize * 6
+            // Reuse size properties from wheelPanel...s
+
+            MouseArea {
+                // Just to catch click events before the panelManager
+                anchors.fill: parent
+            }
 
             Column {
                 id: penColumn
@@ -1038,13 +1078,13 @@ ActivityBase {
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                         height: wheelPanel.buttonSize
-                        width: wheelPanel.buttonSize * 3
+                        width: wheelPanel.labelSize
                         text: qsTr("Pen size")
                     }
 
                     GCSlider {
                         id: penSizeSlider
-                        width: penPanel.sliderSize
+                        width: wheelPanel.sliderSize
                         anchors.verticalCenter: parent.verticalCenter
                         from: 1
                         value: 2 // Default to 2, 1 can look less good/pixelated...
@@ -1058,8 +1098,8 @@ ActivityBase {
                         fontSizeMode: Text.Fit
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
-                        height: penPanel.buttonSize
-                        width: penPanel.buttonSize
+                        height: wheelPanel.buttonSize
+                        width: wheelPanel.buttonSize
                         text: penSizeSlider.value
                     }
                 }
@@ -1075,13 +1115,13 @@ ActivityBase {
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                         height: wheelPanel.buttonSize
-                        width: wheelPanel.buttonSize * 3
+                        width: wheelPanel.labelSize
                         text: qsTr("Opacity")
                     }
 
                     GCSlider {
                         id: penOpacitySlider
-                        width: penPanel.sliderSize
+                        width: wheelPanel.sliderSize
                         anchors.verticalCenter: parent.verticalCenter
                         from: 0.1
                         value: 1.0
@@ -1093,8 +1133,8 @@ ActivityBase {
                         color: items.backgroundColor
                         border.width: GCStyle.thinBorder
                         border.color: GCStyle.contentColor
-                        width: penPanel.buttonSize
-                        height: penPanel.buttonSize
+                        width: wheelPanel.buttonSize
+                        height: wheelPanel.buttonSize
 
                         Rectangle {
                             anchors.centerIn: parent
@@ -1118,13 +1158,13 @@ ActivityBase {
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                         height: wheelPanel.buttonSize
-                        width: wheelPanel.buttonSize * 3
+                        width: wheelPanel.labelSize
                         text: qsTr("Offset")
                     }
 
                     GCSlider {
                         id: penOffsetSlider
-                        width: penPanel.sliderSize
+                        width: wheelPanel.sliderSize
                         anchors.verticalCenter: parent.verticalCenter
                         from: 10
                         value: 40
@@ -1139,8 +1179,8 @@ ActivityBase {
                         fontSizeMode: Text.Fit
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
-                        height: penPanel.buttonSize
-                        width: penPanel.buttonSize
+                        height: wheelPanel.buttonSize
+                        width: wheelPanel.buttonSize
                         text: Math.round(penOffsetSlider.value / 5)
                     }
                 }
@@ -1156,13 +1196,13 @@ ActivityBase {
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                         height: wheelPanel.buttonSize
-                        width: wheelPanel.buttonSize * 3
+                        width: wheelPanel.labelSize
                         text: qsTr("Start tooth")
                     }
 
                     GCSlider {
                         id: toothOffsetSlider
-                        width: penPanel.sliderSize
+                        width: wheelPanel.sliderSize
                         anchors.verticalCenter: parent.verticalCenter
                         from: - Math.abs(gearTeethSlider.value / items.maxRounds)
                         value: 0
@@ -1177,32 +1217,30 @@ ActivityBase {
                         fontSizeMode: Text.Fit
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
-                        height: penPanel.buttonSize
-                        width: penPanel.buttonSize
+                        height: wheelPanel.buttonSize
+                        width: wheelPanel.buttonSize
                         text: items.toothOffset === 0 ? "0" :
                             (items.toothOffset > 0 ? rightToothOffset : leftToothOffset)
 
-                        readonly property string leftToothOffset: "< " + Math.abs(items.toothOffset)
-                        readonly property string rightToothOffset: items.toothOffset + " >"
+                        readonly property string leftToothOffset: "← " + Math.abs(items.toothOffset)
+                        readonly property string rightToothOffset: items.toothOffset + " →"
                     }
                 }
             }
         }
 
         Rectangle {
-            id: colorsPanel
+            id: colorPanel
             radius: GCStyle.halfMargins
             border.width: GCStyle.thinBorder
             border.color: GCStyle.lightBorder
             color: GCStyle.darkBg
-            width: items.isHorizontalLayout ? Math.min(parent.width, 450 * ApplicationInfo.ratio) :
-                                            activityBackground.width
-            height: Math.min(layoutArea.height * 0.9, 360 * ApplicationInfo.ratio)
+            // width set in states
+            height: Math.min(panelManager.maxPanelHeight, 360 * ApplicationInfo.ratio)
             visible: false
-
-            y: (!items.isHorizontalLayout || width > layoutArea.width) ? 0 : GCStyle.halfMargins
+            y: panelManager.panelY
             anchors.right: parent.right
-            anchors.rightMargin: width + toolsContainer.width > activityBackground.width ? 0 : toolsContainer.width
+            anchors.rightMargin: panelManager.panelRightMargin
 
             MouseArea {
                 // Just to catch click events before the panelManager
@@ -1234,8 +1272,7 @@ ActivityBase {
                 anchors.left: parent.left
                 anchors.right: parent.right
                 anchors.bottom: parent.bottom
-                anchors.margins: GCStyle.halfMargins
-                anchors.topMargin: 0
+                anchors.margins: 0
 
                 palette: paletteSelector.currentPalette.modelData
                 defaultPalette: paletteSelector.defaultPaletteList[paletteSelector.currentIndex]
