@@ -1,6 +1,11 @@
 /* GCompris - SvgTank.qml
  *
  * SPDX-FileCopyrightText: 2025 Bruno Anselme <be.root@free.fr>
+ *
+ * Authors:
+ *   Bruno Anselme <be.root@free.fr>
+ *   Timothée Giet <animtim@gmail.com>
+ *
  * SPDX-License-Identifier: GPL-3.0-or-later
  *
  * Simple svg tank. Reset it, open path, add line or curve and close path. Write to svg file.
@@ -50,8 +55,8 @@ Item {
         var widthStartIndex = svgData.search(`width="`)
         var widthEndIndex = svgData.indexOf(`"`, widthStartIndex + 7)
         var oldSize = parseInt(svgData.substring(widthStartIndex + 7, widthEndIndex))
-        var sizeScale = svgSize / oldSize
-        if(sizeScale != 1) {
+        if(oldSize != svgSize) {
+            var sizeScale = svgSize / oldSize
             source = `<g transform="scale(${sizeScale})">`
             source += svgData.replace(/<\?xml[^>]*><svg[^>]*>(.*)<\/svg>/g, "$1")
             source += `</g>`
