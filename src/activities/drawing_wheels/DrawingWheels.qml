@@ -120,6 +120,10 @@ ActivityBase {
             property bool canvasLocked: true
             property bool isFileSaved: true
             property int baseButtonSize: 60 * ApplicationInfo.ratio
+            // NOTE: looks like on Image using data-URI SVG as source,
+            // the sourceSize linked to size doesn't work properly,
+            // so we need to multiply it ourselves by devicePixelRatio.
+            readonly property real devicePixelRatio: Screen.devicePixelRatio
         }
 
         onStart: { Activity.start(items) }
@@ -322,8 +326,8 @@ ActivityBase {
                 asynchronous: true
                 retainWhileLoading: true
                 smooth: true
-                sourceSize.width: width
-                sourceSize.height: height
+                sourceSize.width: width * items.devicePixelRatio
+                sourceSize.height: height * items.devicePixelRatio
 
                 GCText {
                     id: theWheelValue
@@ -349,8 +353,8 @@ ActivityBase {
                 asynchronous: true
                 retainWhileLoading: true
                 smooth: true
-                sourceSize.width: width
-                sourceSize.height: height
+                sourceSize.width: width * items.devicePixelRatio
+                sourceSize.height: height * items.devicePixelRatio
 
                 Rectangle {
                     id: pencil
