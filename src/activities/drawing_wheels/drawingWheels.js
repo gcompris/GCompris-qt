@@ -36,8 +36,10 @@ const sets = [
 var numberOfLevel = 2
 var items
 
-// calculated once after pressing play
+const toRadianMultiplier = Math.PI / 180
+// Used in rotateGear, and calculated once after pressing play
 var multipliedToothOffset = 0
+var radiusDistance = 0
 
 function start(items_) {
     items = items_
@@ -167,6 +169,7 @@ function initGear() {
     items.theGear.centerY = items.theWheel.intRadius - items.theGear.extRadius
     items.theGear.wheelAngle = 0
     multipliedToothOffset = items.toothOffset * 360 / items.wheelTeeth
+    radiusDistance = items.theGear.extRadius - items.theWheel.intRadius
     rotateGear(0)
 }
 
@@ -204,29 +207,20 @@ function rotateGear(angle) {
     // }
 
     items.theGear.wheelAngle += angle
-    const trueAngle = items.theGear.wheelAngle - (multipliedToothOffset)   // wheelAngle + toothOffset
-    const distance = items.theGear.extRadius - items.theWheel.intRadius
-    var multipliedAngle = trueAngle * Math.PI / 180
-    items.theGear.centerX = distance * Math.sin(multipliedAngle)
-    items.theGear.centerY = -distance * Math.cos(multipliedAngle)
-    const arc = items.theWheel.intRadius * ((trueAngle + (multipliedToothOffset)) * Math.PI / 180)
-    items.theGear.rotation = -(arc / items.theGear.extRadius) / Math.PI * 180 + trueAngle
+    const trueAngle = items.theGear.wheelAngle - multipliedToothOffset  // wheelAngle + toothOffset
+    const multipliedAngle = trueAngle * toRadianMultiplier
+    items.theGear.centerX = radiusDistance * Math.sin(multipliedAngle)
+    items.theGear.centerY = -radiusDistance * Math.cos(multipliedAngle)
+    const arc = items.theWheel.intRadius * ((trueAngle + multipliedToothOffset) * toRadianMultiplier)
+    items.theGear.rotation = -(arc / items.theGear.extRadius) / toRadianMultiplier + trueAngle
 
     const pos = items.animationCanvas.getPencilPosition()
-    if (angle > 0) {
-        items.animationCanvas.ctx.beginPath()
-        items.animationCanvas.ctx.moveTo(items.lastPoint.x, items.lastPoint.y)
+    if(angle > 0) {
+        // Other ctx actions before and after are in gearTimer's rotateGear in main QML file, for optimization.
         items.animationCanvas.ctx.lineTo(pos.x, pos.y)
-        items.animationCanvas.ctx.stroke()
-        items.animationCanvas.ctx.closePath()
-        items.svgTank.addLine(pos.x, pos.y)
-        // A quadratic arc double the size of the svg, result is not better. Kept as an example
-        // items.svgTank.addQuadratic(items.lastPoint.x, items.lastPoint.y, pos.x, pos.y)
     }
-    items.animationCanvas.requestPaint()
-    items.lastPoint.x = pos.x
-    items.lastPoint.y = pos.y
-    if ((items.theGear.wheelAngle / 360) >= items.maxRounds) {
+    items.lastPoint = pos
+    if((items.theGear.wheelAngle / 360) >= items.maxRounds) {
         items.runCompleted = true
         items.theGear.wheelAngle = 0
         if(items.startedFromOrigin) {
@@ -339,8 +333,8 @@ function newSerration(teethCount, penOffset) {  // Returns an array of points
     var x = 0
     var y = 0
     for (var angle = 0; angle <= 360; angle += step) {
-        x = penOffset + (radius - gap) * Math.sin(angle * Math.PI / 180) + 1
-        y = penOffset + (radius - gap) * Math.cos(angle * Math.PI / 180) + 1
+        x = penOffset + (radius - gap) * Math.sin(angle * toRadianMultiplier) + 1
+        y = penOffset + (radius - gap) * Math.cos(angle * toRadianMultiplier) + 1
         points.push( [ x.toFixed(3) ,y.toFixed(3)])
         bump = (bump + 1) % 4
         if (bump % 2)
@@ -356,8 +350,8 @@ function newCircle(teethCount, penOffset) {     // Returns an array of points
     var x = 0
     var y = 0
     for (var angle = 0; angle <= 360; angle += step) {
-        x = penOffset + radius * Math.sin(angle * Math.PI / 180) + 1
-        y = penOffset + radius * Math.cos(angle * Math.PI / 180) + 1
+        x = penOffset + radius * Math.sin(angle * toRadianMultiplier) + 1
+        y = penOffset + radius * Math.cos(angle * toRadianMultiplier) + 1
         points.push( [ x.toFixed(3) ,y.toFixed(3)])
     }
     return points
