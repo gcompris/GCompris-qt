@@ -118,7 +118,7 @@ function initLevel() {
 function initCanvas() {
     // Base size with given baseToothLength,
     const baseSize = 2 * (((wheelKeys[0] + wheelThickness) * baseToothLength) / Math.PI)
-    canvasSize = Math.floor(Math.min(items.canvasContainer.width, items.canvasContainer.height))
+    canvasSize = Math.round(Math.min(items.canvasContainer.width, items.canvasContainer.height))
     items.canvasArea.width = canvasSize;
     items.canvasArea.height = canvasSize;
     // Adapt toothLength to actual canvas size

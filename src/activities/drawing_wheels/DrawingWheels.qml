@@ -206,8 +206,8 @@ ActivityBase {
 
             GImageGrabber {
                 id: canvasArea
-                x: Math.floor((parent.width - width) * 0.5)
-                y: Math.floor((parent.height - height) * 0.5)
+                x: Math.round((parent.width - width) * 0.5)
+                y: Math.round((parent.height - height) * 0.5)
                 maxUndo: activity.undoSetting
 
                 property url tempSavePath: StandardPaths.writableLocation(StandardPaths.TempLocation)
@@ -330,10 +330,10 @@ ActivityBase {
 
                 Rectangle {
                     id: gearRadius
-                    anchors.top: parent.verticalCenter
-                    anchors.bottom: parent.bottom
                     x: (parent.width - width) * 0.5
+                    y: height
                     width: 1
+                    height: parent.height * 0.5
                     color: "#80808080"
                     border.width: 0
                     border.pixelAligned: false
