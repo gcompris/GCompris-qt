@@ -13,7 +13,7 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Drawing wheels")
   //: Help title
-  description: qsTr("")
+  description: ""
   //intro: "put here in comment the text for the intro voice"
   //: Help goal
   goal: qsTr("Make beautiful drawings by turning the gear in the cogwheel with the chosen pen.")
