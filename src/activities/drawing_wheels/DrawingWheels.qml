@@ -61,6 +61,7 @@ ActivityBase {
             property alias canvasImage: canvasImage            // loaded image
             property alias animationCanvas: animationCanvas    // temporary canvas for drawing animation
             property alias penOffset: penOffsetSlider.value
+            property real actualPenOffset: penOffset / devicePixelRatio
             property alias penOpacity: penOpacitySlider.value
             property alias gearTimer: gearTimer
             property alias toolsContainer: toolsContainer
@@ -84,6 +85,7 @@ ActivityBase {
                                         gearTeethSlider.value
             property color penColor: Qt.rgba(0,0,0,1)
             property alias penWidth: penSizeSlider.value
+            property real actualPenWidth: penWidth / devicePixelRatio
             property point lastPoint: Qt.point(0, 0)
             property int undoIndex: 0
             property bool runCompleted: false // used to avoid moving the gear too far
@@ -95,6 +97,7 @@ ActivityBase {
             // NOTE: looks like on Image using data-URI SVG as source,
             // the sourceSize linked to size doesn't work properly,
             // so we need to multiply it ourselves by devicePixelRatio.
+            // Also used to scale penWidth and penOffset.
             readonly property real devicePixelRatio: Screen.devicePixelRatio
         }
 
@@ -186,7 +189,7 @@ ActivityBase {
             id: svgTank
             fileName: canvasArea.tempSavePath + "/GCDrawingWheels.svg"
             stroke: items.penColor
-            strokeWidth: items.penWidth
+            strokeWidth: items.actualPenWidth
             svgOpacity: items.penOpacity
         }
 
@@ -203,7 +206,8 @@ ActivityBase {
 
             GImageGrabber {
                 id: canvasArea
-                anchors.centerIn: parent
+                x: Math.floor((parent.width - width) * 0.5)
+                y: Math.floor((parent.height - height) * 0.5)
                 maxUndo: activity.undoSetting
 
                 property url tempSavePath: StandardPaths.writableLocation(StandardPaths.TempLocation)
@@ -314,8 +318,8 @@ ActivityBase {
                 property real centerY: 0
                 property real extRadius: 50
                 property real wheelAngle: 0
-                x: centerX + (canvasContainer.width * 0.5) - (width * 0.5)
-                y: centerY + (canvasContainer.height * 0.5) - (height * 0.5)
+                x: centerX + (canvasContainer.width - width) * 0.5
+                y: centerY + (canvasContainer.height - height) * 0.5
                 rotation: 0
                 visible: !hideGears.checked
                 cache: false
@@ -325,17 +329,28 @@ ActivityBase {
                 sourceSize.height: height * items.devicePixelRatio
 
                 Rectangle {
+                    id: gearRadius
+                    anchors.top: parent.verticalCenter
+                    anchors.bottom: parent.bottom
+                    x: (parent.width - width) * 0.5
+                    width: 1
+                    color: "#80808080"
+                    border.width: 0
+                    border.pixelAligned: false
+                }
+
+                Rectangle {
                     id: pencil
                     property real center: width * 0.5
-                    width: 2 + items.penWidth
+                    width: 2 + items.actualPenWidth
                     height: width
-                    radius: width / 2
+                    radius: width
                     color: items.penColor
                     border.width: 1
                     border.color: "#80000000"
                     border.pixelAligned: false
-                    anchors.centerIn: parent
-                    anchors.verticalCenterOffset: items.penOffset
+                    x: (parent.width - width) * 0.5
+                    y: x + items.actualPenOffset
                 }
             }
         }
@@ -1096,7 +1111,7 @@ ActivityBase {
 
                         Rectangle {
                             anchors.centerIn: parent
-                            width: penSizeSlider.value
+                            width: items.actualPenWidth
                             height: width
                             radius: width
                             color: items.penColor
@@ -1126,7 +1141,7 @@ ActivityBase {
                         anchors.verticalCenter: parent.verticalCenter
                         from: 10
                         value: 40
-                        to: Math.round((theGear.extRadius - Activity.wheelThickness) / 5) * 5
+                        to: Math.round(theGear.extRadius * items.devicePixelRatio - Activity.wheelThickness) / 5 * 5
                         stepSize: 5
                         onValueChanged: Activity.initGear();
                     }

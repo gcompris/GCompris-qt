@@ -118,8 +118,7 @@ function initLevel() {
 function initCanvas() {
     // Base size with given baseToothLength,
     const baseSize = 2 * (((wheelKeys[0] + wheelThickness) * baseToothLength) / Math.PI)
-    // Set canvas size, rounded to smallest even number to avoid bugs with software renderer...
-    canvasSize = Math.min(2 * parseInt(items.canvasContainer.width * 0.5), 2 * parseInt(items.canvasContainer.height * 0.5))
+    canvasSize = Math.floor(Math.min(items.canvasContainer.width, items.canvasContainer.height))
     items.canvasArea.width = canvasSize;
     items.canvasArea.height = canvasSize;
     // Adapt toothLength to actual canvas size
@@ -177,7 +176,7 @@ function startGear() {
     items.undoStack.updateUndo()   // Save pen and gear changes since last image stacked
     const pos = items.animationCanvas.getPencilPosition()
     items.svgTank.openPath(pos.x, pos.y)
-    items.animationCanvas.ctx.lineWidth = items.penWidth
+    items.animationCanvas.ctx.lineWidth = items.actualPenWidth
     items.animationCanvas.ctx.strokeStyle = items.penColor
     items.gearTimer.startTimer()
 }
@@ -308,7 +307,7 @@ function newGear(teethCount) {
     svg += `" fill="beige" stroke="blue" stroke-width="1" opacity="0.5" />\n`
 
     // Draw a dotted line along radius
-    svg += `<line x1="${radius + 1}" y1="${radius + 1}" x2="${radius + 1}" y2="${radius * 2 + 1}" stroke="gray" stroke-dasharray="0" opacity="0.5" />\n`
+    // svg += `<line x1="${radius + 1}" y1="${radius + 1}" x2="${radius + 1}" y2="${radius * 2 + 1}" stroke="gray" stroke-dasharray="0" opacity="0.5" />\n`
     // Write teeth count on the gear
     // svg += `<text x="${radius - 5}" y="${radius - 25}">${teethCount}</text>\n`
 
