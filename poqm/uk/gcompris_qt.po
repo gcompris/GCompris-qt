@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2025-12-04 17:02+0200\n"
+"PO-Revision-Date: 2025-12-12 13:18+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -6723,12 +6723,9 @@ msgstr ""
 
 #. Activity title
 #: activities/drawing_wheels/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "BrushToolPanel|"
-#| msgid "Drawing Tools"
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
-msgstr "Інструменти малювання"
+msgstr "Колеса для малювання"
 
 # Translation of gcompris_qt.po to Ukrainian
 # Copyright (C) 2008-2021 This_file_is_part_of_KDE
@@ -6748,7 +6745,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2025-12-04 17:02+0200\n"
+"PO-Revision-Date: 2025-12-12 13:18+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -6768,20 +6765,18 @@ msgid ""
 "Make beautiful drawings by turning the gear in the cogwheel with the chosen "
 "pen."
 msgstr ""
+"Створіть чудові малюнки обертаючи шестерню у зубчастому колесі з "
+"використанням вибраного пера."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select tools and colors from the foldable panels and draw images.<br><br>"
 msgctxt "ActivityInfo|"
 msgid ""
 "Select wheel, gear, pen's position and color from the foldable panels and "
 "start the gear.<br><br>"
 msgstr ""
-"Виберіть інструменти та кольори на придатних до згортання панелях і малюйте."
-"<br><br>"
+"Виберіть колесо, шестерню, позицію пера та колір за допомогою панелей і "
+"запустіть малювання.<br><br>"
 
 #: activities/drawing_wheels/ActivityInfo.qml:25
 #: activities/sketch/ActivityInfo.qml:28
@@ -6802,12 +6797,9 @@ msgid "Ctrl + S: save the image"
 msgstr "Ctrl + S: зберегти зображення"
 
 #: activities/drawing_wheels/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + S: save the image"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + D: save the drawing"
-msgstr "Ctrl + S: зберегти зображення"
+msgstr "Ctrl + D: зберегти малюнок"
 
 #: activities/drawing_wheels/ActivityInfo.qml:29
 #: activities/sketch/ActivityInfo.qml:31
@@ -6815,195 +6807,143 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ctrl + O: відкрити зображення"
 
-#: activities/drawing_wheels/DrawingWheels.qml:381
+#: activities/drawing_wheels/DrawingWheels.qml:360
 msgctxt "DrawingWheels|"
 msgid "Save drawing"
-msgstr ""
+msgstr "Зберегти малюнок"
 
-#: activities/drawing_wheels/DrawingWheels.qml:393
+#: activities/drawing_wheels/DrawingWheels.qml:372
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
-msgstr ""
+msgstr "Колесо і шестерня"
 
-#: activities/drawing_wheels/DrawingWheels.qml:417
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Piano composition"
+#: activities/drawing_wheels/DrawingWheels.qml:396
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
-msgstr "Композиція на піаніно"
+msgstr "Розмір і розташування пера"
 
-#: activities/drawing_wheels/DrawingWheels.qml:429
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font selector"
+#: activities/drawing_wheels/DrawingWheels.qml:408
 msgctxt "DrawingWheels|"
 msgid "Color selector"
-msgstr "Вибір шрифту"
+msgstr "Вибір кольору"
 
-#: activities/drawing_wheels/DrawingWheels.qml:456
-#, fuzzy
-#| msgctxt "OptionsRow|"
-#| msgid "Undo"
+#: activities/drawing_wheels/DrawingWheels.qml:435
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Скасувати"
 
-#: activities/drawing_wheels/DrawingWheels.qml:468
+#: activities/drawing_wheels/DrawingWheels.qml:447
 msgctxt "DrawingWheels|"
 msgid "Redo"
-msgstr ""
+msgstr "Повторити"
 
-#: activities/drawing_wheels/DrawingWheels.qml:502
+#: activities/drawing_wheels/DrawingWheels.qml:481
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
-msgstr ""
+msgstr "Припинити малювання"
 
-#: activities/drawing_wheels/DrawingWheels.qml:502
+#: activities/drawing_wheels/DrawingWheels.qml:481
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
-msgstr ""
+msgstr "Почати малювання"
 
-#: activities/drawing_wheels/DrawingWheels.qml:534
+#: activities/drawing_wheels/DrawingWheels.qml:514
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
-msgstr ""
+msgstr "Показати колесо і шестерню"
 
-#: activities/drawing_wheels/DrawingWheels.qml:534
+#: activities/drawing_wheels/DrawingWheels.qml:514
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
-msgstr ""
+msgstr "Приховати колесо і шестерню"
 
-#: activities/drawing_wheels/DrawingWheels.qml:666
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
+#: activities/drawing_wheels/DrawingWheels.qml:673
 msgctxt "DrawingWheels|"
 msgid "Save vector image (SVG)"
-msgstr "Зберегти ваше зображення"
+msgstr "Зберегти векторне зображення (SVG)"
 
-#: activities/drawing_wheels/DrawingWheels.qml:680
-msgctxt "DrawingWheels|"
-msgid "Export image (PNG)"
-msgstr ""
-
-#: activities/drawing_wheels/DrawingWheels.qml:694
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Open an image"
+#: activities/drawing_wheels/DrawingWheels.qml:687
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Відкрити зображення"
 
-#: activities/drawing_wheels/DrawingWheels.qml:723
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Create a new image"
+#: activities/drawing_wheels/DrawingWheels.qml:716
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Створення зображення"
 
-#: activities/drawing_wheels/DrawingWheels.qml:742
-#, fuzzy
-#| msgctxt "BackgroundColorSelector|"
-#| msgid "Background color"
+#: activities/drawing_wheels/DrawingWheels.qml:735
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Колір тла"
 
-#: activities/drawing_wheels/DrawingWheels.qml:806
+#: activities/drawing_wheels/DrawingWheels.qml:805
 msgctxt "DrawingWheels|"
 msgid "Wheel"
-msgstr ""
+msgstr "Колесо"
 
-#: activities/drawing_wheels/DrawingWheels.qml:881
+#: activities/drawing_wheels/DrawingWheels.qml:880
 msgctxt "DrawingWheels|"
 msgid "Gear"
-msgstr ""
+msgstr "Зубцювате колесо"
 
-#: activities/drawing_wheels/DrawingWheels.qml:944
-#, fuzzy, qt-format
-#| msgctxt "SignalGenerator|"
-#| msgid "%1 s"
+#: activities/drawing_wheels/DrawingWheels.qml:943
+#, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
-msgstr "%1 с"
+msgstr "%1 зубців"
 
-#: activities/drawing_wheels/DrawingWheels.qml:962
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
+#: activities/drawing_wheels/DrawingWheels.qml:961
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Швидкість"
 
-#: activities/drawing_wheels/DrawingWheels.qml:978
+#: activities/drawing_wheels/DrawingWheels.qml:977
 msgctxt "DrawingWheels|"
 msgid "Slow"
-msgstr ""
+msgstr "Повільно"
 
-#: activities/drawing_wheels/DrawingWheels.qml:998
+#: activities/drawing_wheels/DrawingWheels.qml:997
 msgctxt "DrawingWheels|"
 msgid "Fast"
-msgstr ""
+msgstr "Швидко"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1042
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font size"
+#: activities/drawing_wheels/DrawingWheels.qml:1040
 msgctxt "DrawingWheels|"
 msgid "Pen size"
-msgstr "Розмір шрифту"
+msgstr "Товщина пера"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1079
-#, fuzzy
-#| msgctxt "ToolsPanel|"
-#| msgid "Opacity"
+#: activities/drawing_wheels/DrawingWheels.qml:1077
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Непрозорість"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1122
+#: activities/drawing_wheels/DrawingWheels.qml:1120
 msgctxt "DrawingWheels|"
 msgid "Offset"
-msgstr ""
+msgstr "Зсув"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1160
-#, fuzzy
-#| msgctxt "IntroMessage|"
-#| msgid "Start"
+#: activities/drawing_wheels/DrawingWheels.qml:1158
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
-msgstr "Почати"
+msgstr "Початковий зубець"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1338
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "You did not save this image. Do you want to close this activity?"
+#: activities/drawing_wheels/DrawingWheels.qml:1336
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Вами не збережено це зображення. Хочете закрити цю вправу?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1339
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "Do you want to erase this image?"
+#: activities/drawing_wheels/DrawingWheels.qml:1337
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Хочете витерти це зображення?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1340
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
+#: activities/drawing_wheels/DrawingWheels.qml:1338
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Так"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1341
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
+#: activities/drawing_wheels/DrawingWheels.qml:1339
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "Ні"
@@ -25009,9 +24949,6 @@ msgid "Gradient Tools"
 msgstr "Інструменти градієнта"
 
 #: activities/sketch/PaletteSelector.qml:148
-#, fuzzy
-#| msgctxt "ColorsPanel|"
-#| msgid "Palettes"
 msgctxt "PaletteSelector|"
 msgid "Palettes"
 msgstr "Палітри"
@@ -28876,6 +28813,10 @@ msgstr "Пропустити"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Почати"
+
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Export image (PNG)"
+#~ msgstr "Експортувати зображення (PNG)"
 
 #, fuzzy
 #~| msgctxt "category_colors|"

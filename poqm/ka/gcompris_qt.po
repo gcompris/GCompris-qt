@@ -6413,166 +6413,143 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ctrl + O: გამოსახულების გახსნა"
 
-#: activities/drawing_wheels/DrawingWheels.qml:381
+#: activities/drawing_wheels/DrawingWheels.qml:360
 msgctxt "DrawingWheels|"
 msgid "Save drawing"
 msgstr "ნახატის შენახვა"
 
-#: activities/drawing_wheels/DrawingWheels.qml:393
+#: activities/drawing_wheels/DrawingWheels.qml:372
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr "ბორბალი და გადაცემათა კოლოფი"
 
-#: activities/drawing_wheels/DrawingWheels.qml:417
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Piano composition"
+#: activities/drawing_wheels/DrawingWheels.qml:396
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
-msgstr "კომპოზიცია პიანინოზე"
+msgstr "ფანქრის ზომა და პოზიცია"
 
-#: activities/drawing_wheels/DrawingWheels.qml:429
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font selector"
+#: activities/drawing_wheels/DrawingWheels.qml:408
 msgctxt "DrawingWheels|"
 msgid "Color selector"
-msgstr "ფონტის ამრჩევი"
+msgstr "ფერის ამრჩევი"
 
-#: activities/drawing_wheels/DrawingWheels.qml:456
+#: activities/drawing_wheels/DrawingWheels.qml:435
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "გაუქმება"
 
-#: activities/drawing_wheels/DrawingWheels.qml:468
+#: activities/drawing_wheels/DrawingWheels.qml:447
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "გამეორება"
 
-#: activities/drawing_wheels/DrawingWheels.qml:502
+#: activities/drawing_wheels/DrawingWheels.qml:481
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr "ხატვის შეწყვეტა"
 
-#: activities/drawing_wheels/DrawingWheels.qml:502
+#: activities/drawing_wheels/DrawingWheels.qml:481
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr "ხატვის დაწყება"
 
-#: activities/drawing_wheels/DrawingWheels.qml:534
+#: activities/drawing_wheels/DrawingWheels.qml:514
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr "ბორბლისა და გადაცემათა კოლოფის ჩვენება"
 
-#: activities/drawing_wheels/DrawingWheels.qml:534
+#: activities/drawing_wheels/DrawingWheels.qml:514
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr "ბორბლისა და გადაცემათა კოლოფის დამალვა"
 
-#: activities/drawing_wheels/DrawingWheels.qml:666
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Save your image"
+#: activities/drawing_wheels/DrawingWheels.qml:673
 msgctxt "DrawingWheels|"
 msgid "Save vector image (SVG)"
-msgstr "თქვენი გამოსახულების შენახვა"
+msgstr "ვექტორული გამოსახულების შენახვა (SVG)"
 
-#: activities/drawing_wheels/DrawingWheels.qml:680
-msgctxt "DrawingWheels|"
-msgid "Export image (PNG)"
-msgstr ""
-
-#: activities/drawing_wheels/DrawingWheels.qml:694
+#: activities/drawing_wheels/DrawingWheels.qml:687
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "გამოსახულების გახსნა"
 
-#: activities/drawing_wheels/DrawingWheels.qml:723
+#: activities/drawing_wheels/DrawingWheels.qml:716
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "ახალი გამოსახულების შექმნა"
 
-#: activities/drawing_wheels/DrawingWheels.qml:742
-#, fuzzy
-#| msgctxt "BackgroundColorSelector|"
-#| msgid "Background color"
+#: activities/drawing_wheels/DrawingWheels.qml:735
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "ფონის ფერი"
 
-#: activities/drawing_wheels/DrawingWheels.qml:806
+#: activities/drawing_wheels/DrawingWheels.qml:805
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr "ბორბალი"
 
-#: activities/drawing_wheels/DrawingWheels.qml:881
+#: activities/drawing_wheels/DrawingWheels.qml:880
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr "გადაცემათა კოლოფი"
 
-#: activities/drawing_wheels/DrawingWheels.qml:944
+#: activities/drawing_wheels/DrawingWheels.qml:943
 #, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 კბილანა"
 
-#: activities/drawing_wheels/DrawingWheels.qml:962
+#: activities/drawing_wheels/DrawingWheels.qml:961
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "სიჩქარე"
 
-#: activities/drawing_wheels/DrawingWheels.qml:978
+#: activities/drawing_wheels/DrawingWheels.qml:977
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr "ნელი"
 
-#: activities/drawing_wheels/DrawingWheels.qml:998
+#: activities/drawing_wheels/DrawingWheels.qml:997
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr "სწრაფი"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1042
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Pensize"
+#: activities/drawing_wheels/DrawingWheels.qml:1040
 msgctxt "DrawingWheels|"
 msgid "Pen size"
-msgstr "კალმის ზომა"
+msgstr "ფანქრის ზომა"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1079
+#: activities/drawing_wheels/DrawingWheels.qml:1077
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "გაუმჭირვალობა"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1122
+#: activities/drawing_wheels/DrawingWheels.qml:1120
 msgctxt "DrawingWheels|"
 msgid "Offset"
-msgstr ""
+msgstr "წანაცვლება"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1160
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Starting tooth"
+#: activities/drawing_wheels/DrawingWheels.qml:1158
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "საწყისი კბილი"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1338
+#: activities/drawing_wheels/DrawingWheels.qml:1336
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "გამოსახულება არ შეგინახავთ. გნებავთ, დახუროთ ეს აქტივობა?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1339
+#: activities/drawing_wheels/DrawingWheels.qml:1337
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "გნებავთ ამ გამოსახულების წაშლა?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1340
+#: activities/drawing_wheels/DrawingWheels.qml:1338
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "დიახ"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1341
+#: activities/drawing_wheels/DrawingWheels.qml:1339
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "არა"
@@ -23265,9 +23242,6 @@ msgid "Gradient Tools"
 msgstr "გრადიენტის ხელსაწყები"
 
 #: activities/sketch/PaletteSelector.qml:148
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Palettes"
 msgctxt "PaletteSelector|"
 msgid "Palettes"
 msgstr "პალიტრები"
@@ -26844,6 +26818,10 @@ msgstr "გამოტოვება"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "დაწყება"
+
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Export image (PNG)"
+#~ msgstr "გამოსახულების გატანა (PNG)"
 
 #~ msgctxt "DrawingWheels|"
 #~ msgid "Pencil's color and width"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"PO-Revision-Date: 2025-12-11 11:58+0100\n"
+"PO-Revision-Date: 2025-12-12 11:08+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -6769,7 +6769,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"PO-Revision-Date: 2025-12-11 11:58+0100\n"
+"PO-Revision-Date: 2025-12-12 11:08+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -6831,166 +6831,143 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ctrl + O: abrir una imagen"
 
-#: activities/drawing_wheels/DrawingWheels.qml:381
+#: activities/drawing_wheels/DrawingWheels.qml:360
 msgctxt "DrawingWheels|"
 msgid "Save drawing"
 msgstr "Guardar el dibujo"
 
-#: activities/drawing_wheels/DrawingWheels.qml:393
+#: activities/drawing_wheels/DrawingWheels.qml:372
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr "Rueda y engranaje"
 
-#: activities/drawing_wheels/DrawingWheels.qml:417
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Piano composition"
+#: activities/drawing_wheels/DrawingWheels.qml:396
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
-msgstr "Composición para piano"
+msgstr "Tamaño y posición del lápiz"
 
-#: activities/drawing_wheels/DrawingWheels.qml:429
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font selector"
+#: activities/drawing_wheels/DrawingWheels.qml:408
 msgctxt "DrawingWheels|"
 msgid "Color selector"
-msgstr "Selector del tipo de letra"
+msgstr "Selector de color"
 
-#: activities/drawing_wheels/DrawingWheels.qml:456
+#: activities/drawing_wheels/DrawingWheels.qml:435
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Deshacer"
 
-#: activities/drawing_wheels/DrawingWheels.qml:468
+#: activities/drawing_wheels/DrawingWheels.qml:447
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "Rehacer"
 
-#: activities/drawing_wheels/DrawingWheels.qml:502
+#: activities/drawing_wheels/DrawingWheels.qml:481
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr "Dejar de dibujar"
 
-#: activities/drawing_wheels/DrawingWheels.qml:502
+#: activities/drawing_wheels/DrawingWheels.qml:481
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr "Empezar a dibujar"
 
-#: activities/drawing_wheels/DrawingWheels.qml:534
+#: activities/drawing_wheels/DrawingWheels.qml:514
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr "Mostrar la rueda y el engranaje"
 
-#: activities/drawing_wheels/DrawingWheels.qml:534
+#: activities/drawing_wheels/DrawingWheels.qml:514
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr "Ocultar la rueda y el engranaje"
 
-#: activities/drawing_wheels/DrawingWheels.qml:666
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Save your image"
+#: activities/drawing_wheels/DrawingWheels.qml:673
 msgctxt "DrawingWheels|"
 msgid "Save vector image (SVG)"
-msgstr "Guarda tu imagen"
+msgstr "Guardar imagen vectorial (SVG)"
 
-#: activities/drawing_wheels/DrawingWheels.qml:680
-msgctxt "DrawingWheels|"
-msgid "Export image (PNG)"
-msgstr ""
-
-#: activities/drawing_wheels/DrawingWheels.qml:694
+#: activities/drawing_wheels/DrawingWheels.qml:687
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Abrir una imagen"
 
-#: activities/drawing_wheels/DrawingWheels.qml:723
+#: activities/drawing_wheels/DrawingWheels.qml:716
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Crear una nueva imagen"
 
-#: activities/drawing_wheels/DrawingWheels.qml:742
-#, fuzzy
-#| msgctxt "BackgroundColorSelector|"
-#| msgid "Background color"
+#: activities/drawing_wheels/DrawingWheels.qml:735
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Color del fondo"
 
-#: activities/drawing_wheels/DrawingWheels.qml:806
+#: activities/drawing_wheels/DrawingWheels.qml:805
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr "Rueda"
 
-#: activities/drawing_wheels/DrawingWheels.qml:881
+#: activities/drawing_wheels/DrawingWheels.qml:880
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr "Engranaje"
 
-#: activities/drawing_wheels/DrawingWheels.qml:944
+#: activities/drawing_wheels/DrawingWheels.qml:943
 #, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 picos"
 
-#: activities/drawing_wheels/DrawingWheels.qml:962
+#: activities/drawing_wheels/DrawingWheels.qml:961
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Velocidad"
 
-#: activities/drawing_wheels/DrawingWheels.qml:978
+#: activities/drawing_wheels/DrawingWheels.qml:977
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr "Lenta"
 
-#: activities/drawing_wheels/DrawingWheels.qml:998
+#: activities/drawing_wheels/DrawingWheels.qml:997
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr "Rápida"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1042
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Pensize"
+#: activities/drawing_wheels/DrawingWheels.qml:1040
 msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "Tamaño del lápiz"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1079
+#: activities/drawing_wheels/DrawingWheels.qml:1077
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Opacidad"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1122
+#: activities/drawing_wheels/DrawingWheels.qml:1120
 msgctxt "DrawingWheels|"
 msgid "Offset"
-msgstr ""
+msgstr "Desplazamiento"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1160
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Starting tooth"
+#: activities/drawing_wheels/DrawingWheels.qml:1158
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "Diente inicial"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1338
+#: activities/drawing_wheels/DrawingWheels.qml:1336
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "No has guardado la imagen. ¿Quieres cerrar esta actividad?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1339
+#: activities/drawing_wheels/DrawingWheels.qml:1337
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "¿Quieres borrar esta imagen?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1340
+#: activities/drawing_wheels/DrawingWheels.qml:1338
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Sí"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1341
+#: activities/drawing_wheels/DrawingWheels.qml:1339
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "No"
@@ -25064,9 +25041,6 @@ msgid "Gradient Tools"
 msgstr "Herramientas de degradado"
 
 #: activities/sketch/PaletteSelector.qml:148
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Palettes"
 msgctxt "PaletteSelector|"
 msgid "Palettes"
 msgstr "Paletas"
@@ -28951,25 +28925,5 @@ msgid "Start"
 msgstr "Iniciar"
 
 #~ msgctxt "DrawingWheels|"
-#~ msgid "Pencil's color and width"
-#~ msgstr "Color y anchura del lápiz"
-
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save as a drawing"
-#~ msgstr "Guardar como dibujo"
-
-#~| msgctxt "category_colors|"
-#~| msgid "Colors"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Color"
-#~ msgstr "Color"
-
-#~| msgctxt "board9_0|"
-#~| msgid "Districto Federal"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Distance to center"
-#~ msgstr "Distancia al centro"
-
-#~ msgctxt "ColorsPanel|"
-#~ msgid "Palettes"
-#~ msgstr "Paletas"
+#~ msgid "Export image (PNG)"
+#~ msgstr "Exportar imagen (PNG)"

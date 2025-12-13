@@ -375,7 +375,7 @@ msgstr "Aprén com funciona l'electricitat digital i crea el teu propi circuit."
 #: activities/drawing_wheels/ActivityInfo.qml:17
 #, kde-format
 msgid "put here in comment the text for the intro voice"
-msgstr ""
+msgstr "indiqueu ací un comentari del text per a la veu d'entrada"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"
 #: activities/drawletters/ActivityInfo.qml:18

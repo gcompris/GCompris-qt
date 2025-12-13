@@ -6798,17 +6798,17 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ctrl + O; įkelti paveikslėlį"
 
-#: activities/drawing_wheels/DrawingWheels.qml:381
+#: activities/drawing_wheels/DrawingWheels.qml:360
 msgctxt "DrawingWheels|"
 msgid "Save drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:393
+#: activities/drawing_wheels/DrawingWheels.qml:372
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:417
+#: activities/drawing_wheels/DrawingWheels.qml:396
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Piano composition"
@@ -6816,7 +6816,7 @@ msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr "Pianino kompozicija"
 
-#: activities/drawing_wheels/DrawingWheels.qml:429
+#: activities/drawing_wheels/DrawingWheels.qml:408
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font selector"
@@ -6824,7 +6824,7 @@ msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr "Šrifto pasirinkimas"
 
-#: activities/drawing_wheels/DrawingWheels.qml:456
+#: activities/drawing_wheels/DrawingWheels.qml:435
 #, fuzzy
 #| msgctxt "OptionsRow|"
 #| msgid "Undo"
@@ -6832,32 +6832,32 @@ msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Atšauk veiksmą"
 
-#: activities/drawing_wheels/DrawingWheels.qml:468
+#: activities/drawing_wheels/DrawingWheels.qml:447
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:502
+#: activities/drawing_wheels/DrawingWheels.qml:481
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:502
+#: activities/drawing_wheels/DrawingWheels.qml:481
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:534
+#: activities/drawing_wheels/DrawingWheels.qml:514
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:534
+#: activities/drawing_wheels/DrawingWheels.qml:514
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:666
+#: activities/drawing_wheels/DrawingWheels.qml:673
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Save your image"
@@ -6865,12 +6865,7 @@ msgctxt "DrawingWheels|"
 msgid "Save vector image (SVG)"
 msgstr "Išsaugoti paveikslėlį"
 
-#: activities/drawing_wheels/DrawingWheels.qml:680
-msgctxt "DrawingWheels|"
-msgid "Export image (PNG)"
-msgstr ""
-
-#: activities/drawing_wheels/DrawingWheels.qml:694
+#: activities/drawing_wheels/DrawingWheels.qml:687
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Open an image"
@@ -6878,7 +6873,7 @@ msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Įkelti paveikslėlį"
 
-#: activities/drawing_wheels/DrawingWheels.qml:723
+#: activities/drawing_wheels/DrawingWheels.qml:716
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Create a new image"
@@ -6886,7 +6881,7 @@ msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Sukurti naują paveikslėlį"
 
-#: activities/drawing_wheels/DrawingWheels.qml:742
+#: activities/drawing_wheels/DrawingWheels.qml:735
 #, fuzzy
 #| msgctxt "BackgroundColorSelector|"
 #| msgid "Background color"
@@ -6894,17 +6889,17 @@ msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Fono spalva"
 
-#: activities/drawing_wheels/DrawingWheels.qml:806
+#: activities/drawing_wheels/DrawingWheels.qml:805
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:881
+#: activities/drawing_wheels/DrawingWheels.qml:880
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:944
+#: activities/drawing_wheels/DrawingWheels.qml:943
 #, fuzzy, qt-format
 #| msgctxt "SignalGenerator|"
 #| msgid "%1 s"
@@ -6912,7 +6907,7 @@ msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 s"
 
-#: activities/drawing_wheels/DrawingWheels.qml:962
+#: activities/drawing_wheels/DrawingWheels.qml:961
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Speed"
@@ -6920,17 +6915,17 @@ msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Greitis"
 
-#: activities/drawing_wheels/DrawingWheels.qml:978
+#: activities/drawing_wheels/DrawingWheels.qml:977
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:998
+#: activities/drawing_wheels/DrawingWheels.qml:997
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1042
+#: activities/drawing_wheels/DrawingWheels.qml:1040
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font size"
@@ -6938,7 +6933,7 @@ msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "Šrifto dydis"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1079
+#: activities/drawing_wheels/DrawingWheels.qml:1077
 #, fuzzy
 #| msgctxt "ToolsPanel|"
 #| msgid "Opacity"
@@ -6946,12 +6941,12 @@ msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Neskaidrumas"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1122
+#: activities/drawing_wheels/DrawingWheels.qml:1120
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1160
+#: activities/drawing_wheels/DrawingWheels.qml:1158
 #, fuzzy
 #| msgctxt "IntroMessage|"
 #| msgid "Start"
@@ -6959,7 +6954,7 @@ msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "Pradėti"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1338
+#: activities/drawing_wheels/DrawingWheels.qml:1336
 #, fuzzy
 #| msgctxt "Sketch|"
 #| msgid "You did not save this image. Do you want to close this activity?"
@@ -6967,7 +6962,7 @@ msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Tu neišsaugojai paveiksliuko. Ar tikrai nori užbaigti šią pamokėlę?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1339
+#: activities/drawing_wheels/DrawingWheels.qml:1337
 #, fuzzy
 #| msgctxt "Sketch|"
 #| msgid "Do you want to erase this image?"
@@ -6975,7 +6970,7 @@ msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Ar nori ištrinti šį paveikslėlį?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1340
+#: activities/drawing_wheels/DrawingWheels.qml:1338
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -6983,7 +6978,7 @@ msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Taip"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1341
+#: activities/drawing_wheels/DrawingWheels.qml:1339
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
