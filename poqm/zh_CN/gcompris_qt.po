@@ -22622,7 +22622,7 @@ msgstr "重置颜色"
 #: activities/sketch/ColorsPanel.qml:159
 msgctxt "ColorsPanel|"
 msgid "Palettes"
-msgstr "调色板"
+msgstr ""
 
 #: activities/sketch/FilesPanel.qml:47
 msgctxt "FilesPanel|"
