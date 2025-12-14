@@ -54,6 +54,7 @@ function start(items_) {
 function stop() {
     items.gearTimer.stop();
     items.file.rmpath(items.svgTank.fileName);         // remove temporary svg file on disk
+    items.file.rmpath(items.canvasArea.tempSaveFile);  // remove png snapshot file on disk
     items.canvasArea.clearUndo();
     items.canvasArea.clearRedo();
     items.undoStack.clear()
@@ -76,6 +77,9 @@ function shiftModel(model) {
 }
 
 function saveSvgDialog() {
+    // store png snapshot
+    items.canvasArea.saveToFile(items.canvasArea.tempSaveFile)
+    // Open dialog to save svg
     items.creationHandler.saveWindow(items.svgTank.fileName)
 }
 
@@ -96,6 +100,7 @@ function resetWheel() {
 }
 
 function initLevel() {
+    items.fileIsEmpty = true;
     items.canvasArea.clearUndo()
     items.canvasArea.clearRedo()
     items.undoStack.clear()
@@ -185,6 +190,7 @@ function stopGear(completed = false) {
     items.gearTimer.stop()
     items.svgTank.finishPath()
     items.svgTank.writeSvg()
+    items.fileIsEmpty = false
     items.animationCanvas.paintActionFinished();
 }
 

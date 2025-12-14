@@ -94,6 +94,7 @@ ActivityBase {
             property bool canvasLocked: true
             property bool isFileSaved: true
             property int baseButtonSize: 60 * ApplicationInfo.ratio
+            property bool fileIsEmpty: true
             // NOTE: looks like on Image using data-URI SVG as source,
             // the sourceSize linked to size doesn't work properly,
             // so we need to multiply it ourselves by devicePixelRatio.
@@ -210,7 +211,8 @@ ActivityBase {
                 y: Math.round((parent.height - height) * 0.5)
                 maxUndo: activity.undoSetting
 
-                property url tempSavePath: StandardPaths.writableLocation(StandardPaths.TempLocation)
+                readonly property url tempSavePath: StandardPaths.writableLocation(StandardPaths.TempLocation)
+                readonly property url tempSaveFile: tempSavePath + "/GCDrawingWheels.png"
 
                 function sendToImageSource() {
                     canvasImage.source = canvasArea.getImageUrl();
@@ -372,7 +374,7 @@ ActivityBase {
                 IconButton {
                     id: fileButton
                     source: "qrc:/gcompris/src/activities/sketch/resource/filesMenu.svg"
-                    toolTip: qsTr("Save drawing")
+                    toolTip: qsTr("File menu")
                     width: toolsContainer.buttonSize
                     selected: true
                     enabled: !gearTimer.running
@@ -685,8 +687,9 @@ ActivityBase {
                         maxWidth: panelManager.maxContentWidth
                         height: filePanel.buttonSize
                         iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileSave.svg"
-                        text: qsTr("Save vector image (SVG)")
+                        text: qsTr("Save image)")
                         textColor: GCStyle.contentColor
+                        enabled: !items.fileIsEmpty
 
                         onClicked: {
                             panelManager.closePanel();
@@ -1320,6 +1323,7 @@ ActivityBase {
             id: creationHandler
             imageMode: true
             svgMode: true
+            usePngSnapshot: true
             fileExtensions: ["*.svg"]
             onClose: activity.focus = true;
             onFileLoaded: (data, filePath) => {
@@ -1329,6 +1333,7 @@ ActivityBase {
                 loadedImage.sourceSize.height = loadedImage.height
                 loadedImage.source = filePath
                 loadedImage.visible = true
+                items.fileIsEmpty = false
             }
 
             onSaved: {

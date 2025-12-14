@@ -10,6 +10,7 @@ import core 1.0
 
 Item {
     id: labelButton
+    opacity: enabled ? 1 : 0.5
     width: buttonRow.childrenRect.width
     property int maxWidth: parent.width
     height: 10 // To be set in instance

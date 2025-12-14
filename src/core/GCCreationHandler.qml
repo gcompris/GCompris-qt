@@ -29,6 +29,8 @@ Rectangle {
     property var fileExtensions: []
     property string fileToOverwrite: ""
     property bool svgMode: false
+    // snapshot to save should have same name as file to save but with .png extension
+    property bool usePngSnapshot: false
 
     onVisibleChanged: {
         if(visible) {
@@ -67,6 +69,8 @@ Rectangle {
     readonly property string fileName: fileNameInput.text + (imageMode ?  svgMode ?  ".svg" : ".png" : ".json")
     readonly property string filePrefix: sharedDirectoryPath.startsWith("/") ? "file://" : "file:///"
     readonly property string fileSavePath: filePrefix + sharedDirectoryPath + fileName
+    // used for saving additional png snapshot if usePngSnapshot = true
+    property var snapshotToSave
 
     ListModel {
         id: fileNames
@@ -116,6 +120,10 @@ Rectangle {
         onTriggered: {
             refreshWindow();
         }
+    }
+
+    function replaceExtension(filePath_, newExtension_) {
+        return filePath_.replace(/\.[^/.]+$/, newExtension_);
     }
 
     function resetFileToOverwrite() {
@@ -175,6 +183,9 @@ Rectangle {
             Core.showMessageDialog(creationHandler,
                                    qsTr("%1 deleted successfully!").arg(filePath),
                                    qsTr("OK"), null, "", null, function() { restoreFocusTimer.restart(); });
+            if(usePngSnapshot) {
+                file.rmpath(replaceExtension(filePath, ".png"));
+            }
         }
         else {
             Core.showMessageDialog(creationHandler,
@@ -190,6 +201,9 @@ Rectangle {
         creationHandler.visible = true
         creationHandler.isSaveMode = true
         creationHandler.dataToSave = data
+        if(usePngSnapshot) {
+            creationHandler.snapshotToSave = replaceExtension(data, ".png");
+        }
         fileNameInput.forceActiveFocus()
         refreshWindow()
     }
@@ -227,6 +241,9 @@ Rectangle {
         dialogOpened = true;
         if(imageMode) {
             file.copy(creationHandler.dataToSave, fileSavePath);
+            if(usePngSnapshot) {
+                file.copy(creationHandler.snapshotToSave, replaceExtension(fileSavePath, ".png"));
+            }
         } else {
             file.write(JSON.stringify(creationHandler.dataToSave), fileSavePath);
         }
@@ -330,7 +347,7 @@ Rectangle {
             delegate: Item {
                 height: creationHandler.cellHeight
                 width: creationHandler.cellWidth
-                readonly property string fileName: fileName.text
+
                 Image {
                     id: fileIcon
                     width: creationHandler.cellWidth - GCStyle.baseMargins
@@ -341,12 +358,16 @@ Rectangle {
                     fillMode: Image.PreserveAspectFit
                     // the empty file is used to make a switch to reload overwritten image
                     source: creationHandler.imageMode ?
-                        (fileName.text == creationHandler.fileToOverwrite ? "qrc:/gcompris/src/core/resource/empty.svg" : filePrefix + sharedDirectoryPath + fileName.text) :
+                        (fileNameLabel.text == creationHandler.fileToOverwrite ? "qrc:/gcompris/src/core/resource/empty.svg" : filePrefix + sharedDirectoryPath + iconFileName) :
                         "qrc:/gcompris/src/core/resource/file_icon.svg"
+
+                    // if usePngSnapshot, Image will auto-detect file extension, using png in priority, else svg (png should be lighter to load than potentially heavy svg files)
+                    readonly property string iconFileName: creationHandler.usePngSnapshot ?
+                        creationHandler.replaceExtension(fileNameLabel.text, "") : fileNameLabel.text
                 }
 
                 GCText {
-                    id: fileName
+                    id: fileNameLabel
                     anchors.top: fileIcon.bottom
                     anchors.bottom: parent.bottom
                     anchors.left: parent.left
