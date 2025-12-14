@@ -6430,31 +6430,6 @@ msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
 msgstr "גלגלי איור"
 
-# Amihay Gal <Amihaygal@gmail.com>, 2019.
-# ami.g <amihaygal@gmail.com>, 2020, 2021, 2023.
-# SPDX-FileCopyrightText: 2024, 2025 Yaron Shahrabani <sh.yaron@gmail.com>
-#. Help title
-#: activities/drawing_wheels/ActivityInfo.qml:16
-#, fuzzy
-#| msgid ""
-msgctxt "ActivityInfo|"
-msgid ""
-msgstr ""
-"Project-Id-Version: GCompris\n"
-"POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-12-11 09:35+0200\n"
-"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: צוות התרגום של KDE ישראל\n"
-"Language: he\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
-"n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 25.08.3\n"
-"X-Qt-Contexts: true\n"
-"X-Poedit-Bookmarks: -1,2919,-1,-1,-1,-1,-1,-1,-1,-1\n"
-
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
@@ -6502,17 +6477,17 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ctrl + O: פתיחת תמונה"
 
-#: activities/drawing_wheels/DrawingWheels.qml:360
+#: activities/drawing_wheels/DrawingWheels.qml:375
 msgctxt "DrawingWheels|"
 msgid "Save drawing"
 msgstr "שמירת האיור"
 
-#: activities/drawing_wheels/DrawingWheels.qml:372
+#: activities/drawing_wheels/DrawingWheels.qml:387
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr "גלגל וגלגל שיניים"
 
-#: activities/drawing_wheels/DrawingWheels.qml:396
+#: activities/drawing_wheels/DrawingWheels.qml:411
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Piano composition"
@@ -6520,7 +6495,7 @@ msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr "הלחנה בפסנתר"
 
-#: activities/drawing_wheels/DrawingWheels.qml:408
+#: activities/drawing_wheels/DrawingWheels.qml:423
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font selector"
@@ -6528,37 +6503,37 @@ msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr "בורר גוֹפָנים"
 
-#: activities/drawing_wheels/DrawingWheels.qml:435
+#: activities/drawing_wheels/DrawingWheels.qml:450
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "הסגה"
 
-#: activities/drawing_wheels/DrawingWheels.qml:447
+#: activities/drawing_wheels/DrawingWheels.qml:462
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "ביצוע מחדש"
 
-#: activities/drawing_wheels/DrawingWheels.qml:481
+#: activities/drawing_wheels/DrawingWheels.qml:496
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr "הפסקת איור"
 
-#: activities/drawing_wheels/DrawingWheels.qml:481
+#: activities/drawing_wheels/DrawingWheels.qml:496
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr "התחלת איור"
 
-#: activities/drawing_wheels/DrawingWheels.qml:514
+#: activities/drawing_wheels/DrawingWheels.qml:529
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr "הצגת גלגל וגלגל שיניים"
 
-#: activities/drawing_wheels/DrawingWheels.qml:514
+#: activities/drawing_wheels/DrawingWheels.qml:529
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr "הסתרת גלגל וגלגל שיניים"
 
-#: activities/drawing_wheels/DrawingWheels.qml:673
+#: activities/drawing_wheels/DrawingWheels.qml:688
 #, fuzzy
 #| msgctxt "DrawingWheels|"
 #| msgid "Save your image"
@@ -6566,17 +6541,17 @@ msgctxt "DrawingWheels|"
 msgid "Save vector image (SVG)"
 msgstr "שמירת התמונה שלך"
 
-#: activities/drawing_wheels/DrawingWheels.qml:687
+#: activities/drawing_wheels/DrawingWheels.qml:702
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "פתיחת תמונה"
 
-#: activities/drawing_wheels/DrawingWheels.qml:716
+#: activities/drawing_wheels/DrawingWheels.qml:731
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "יצירת תמונה חדשה"
 
-#: activities/drawing_wheels/DrawingWheels.qml:735
+#: activities/drawing_wheels/DrawingWheels.qml:750
 #, fuzzy
 #| msgctxt "BackgroundColorSelector|"
 #| msgid "Background color"
@@ -6584,38 +6559,38 @@ msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "צבע רקע"
 
-#: activities/drawing_wheels/DrawingWheels.qml:805
+#: activities/drawing_wheels/DrawingWheels.qml:820
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr "גלגל"
 
-#: activities/drawing_wheels/DrawingWheels.qml:880
+#: activities/drawing_wheels/DrawingWheels.qml:895
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr "גלגל שיניים"
 
-#: activities/drawing_wheels/DrawingWheels.qml:943
+#: activities/drawing_wheels/DrawingWheels.qml:958
 #, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 שיניים"
 
-#: activities/drawing_wheels/DrawingWheels.qml:961
+#: activities/drawing_wheels/DrawingWheels.qml:976
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "מהירות"
 
-#: activities/drawing_wheels/DrawingWheels.qml:977
+#: activities/drawing_wheels/DrawingWheels.qml:992
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr "לאט"
 
-#: activities/drawing_wheels/DrawingWheels.qml:997
+#: activities/drawing_wheels/DrawingWheels.qml:1012
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr "מהר"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1040
+#: activities/drawing_wheels/DrawingWheels.qml:1055
 #, fuzzy
 #| msgctxt "DrawingWheels|"
 #| msgid "Pensize"
@@ -6623,17 +6598,17 @@ msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "גודל העט"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1077
+#: activities/drawing_wheels/DrawingWheels.qml:1092
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "אטימות"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1120
+#: activities/drawing_wheels/DrawingWheels.qml:1135
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1158
+#: activities/drawing_wheels/DrawingWheels.qml:1173
 #, fuzzy
 #| msgctxt "DrawingWheels|"
 #| msgid "Starting tooth"
@@ -6641,22 +6616,22 @@ msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "שן התחלתית"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1336
+#: activities/drawing_wheels/DrawingWheels.qml:1351
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "לא שמרת את התמונה הזאת. לסגור את הפעילות הזאת?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1337
+#: activities/drawing_wheels/DrawingWheels.qml:1352
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "למחוק את התמונה הזאת?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1338
+#: activities/drawing_wheels/DrawingWheels.qml:1353
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "כן"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1339
+#: activities/drawing_wheels/DrawingWheels.qml:1354
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "לא"
@@ -27872,6 +27847,29 @@ msgstr "לדלג"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "להתחיל"
+
+# Amihay Gal <Amihaygal@gmail.com>, 2019.
+# ami.g <amihaygal@gmail.com>, 2020, 2021, 2023.
+# SPDX-FileCopyrightText: 2024, 2025 Yaron Shahrabani <sh.yaron@gmail.com>
+#, fuzzy
+#~| msgid ""
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ msgstr ""
+#~ "Project-Id-Version: GCompris\n"
+#~ "POT-Creation-Date: 2019-09-04 13:03+0000\n"
+#~ "PO-Revision-Date: 2025-12-11 09:35+0200\n"
+#~ "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+#~ "Language-Team: צוות התרגום של KDE ישראל\n"
+#~ "Language: he\n"
+#~ "MIME-Version: 1.0\n"
+#~ "Content-Type: text/plain; charset=UTF-8\n"
+#~ "Content-Transfer-Encoding: 8bit\n"
+#~ "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 "
+#~ "&& n % 10 == 0) ? 2 : 3));\n"
+#~ "X-Generator: Lokalize 25.08.3\n"
+#~ "X-Qt-Contexts: true\n"
+#~ "X-Poedit-Bookmarks: -1,2919,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
 #~ msgctxt "DrawingWheels|"
 #~ msgid "Pencil's color and width"

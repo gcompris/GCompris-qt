@@ -6420,27 +6420,6 @@ msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
 msgstr "رسم حروف"
 
-# Sina Fesahati <sina.fesahati@protonmail.com>, 2023.
-#. Help title
-#: activities/drawing_wheels/ActivityInfo.qml:16
-#, fuzzy
-#| msgid ""
-msgctxt "ActivityInfo|"
-msgid ""
-msgstr ""
-"Project-Id-Version: \n"
-"PO-Revision-Date: 2023-07-03 12:06+0330\n"
-"Last-Translator: Sina Fesahati <sina.fesahati@protonmail.com>\n"
-"Language-Team: Persian <kde-i18n-doc@kde.org>\n"
-"Language: fa\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Qt-Contexts: true\n"
-"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
-"X-Generator: Lokalize 20.12.0\n"
-"X-Qt-Contexts: true\n"
-
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
@@ -6495,17 +6474,17 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:360
+#: activities/drawing_wheels/DrawingWheels.qml:375
 msgctxt "DrawingWheels|"
 msgid "Save drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:372
+#: activities/drawing_wheels/DrawingWheels.qml:387
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:396
+#: activities/drawing_wheels/DrawingWheels.qml:411
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Piano composition"
@@ -6513,7 +6492,7 @@ msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr "قطعه پیانو"
 
-#: activities/drawing_wheels/DrawingWheels.qml:408
+#: activities/drawing_wheels/DrawingWheels.qml:423
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font selector"
@@ -6521,7 +6500,7 @@ msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr "انتخاب فونت"
 
-#: activities/drawing_wheels/DrawingWheels.qml:435
+#: activities/drawing_wheels/DrawingWheels.qml:450
 #, fuzzy
 #| msgctxt "OptionsRow|"
 #| msgid "Undo"
@@ -6529,32 +6508,32 @@ msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "بازگشت"
 
-#: activities/drawing_wheels/DrawingWheels.qml:447
+#: activities/drawing_wheels/DrawingWheels.qml:462
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:481
+#: activities/drawing_wheels/DrawingWheels.qml:496
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:481
+#: activities/drawing_wheels/DrawingWheels.qml:496
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:514
+#: activities/drawing_wheels/DrawingWheels.qml:529
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:514
+#: activities/drawing_wheels/DrawingWheels.qml:529
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:673
+#: activities/drawing_wheels/DrawingWheels.qml:688
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Select your mode"
@@ -6562,7 +6541,7 @@ msgctxt "DrawingWheels|"
 msgid "Save vector image (SVG)"
 msgstr "حالت خود را انتخاب کنید"
 
-#: activities/drawing_wheels/DrawingWheels.qml:687
+#: activities/drawing_wheels/DrawingWheels.qml:702
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Many new images"
@@ -6570,7 +6549,7 @@ msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "تعداد زیادی تصویر جدید"
 
-#: activities/drawing_wheels/DrawingWheels.qml:716
+#: activities/drawing_wheels/DrawingWheels.qml:731
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Many new images"
@@ -6578,7 +6557,7 @@ msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "تعداد زیادی تصویر جدید"
 
-#: activities/drawing_wheels/DrawingWheels.qml:735
+#: activities/drawing_wheels/DrawingWheels.qml:750
 #, fuzzy
 #| msgctxt "DownloadDialog|"
 #| msgid "Background"
@@ -6586,23 +6565,23 @@ msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "پس زمینه"
 
-#: activities/drawing_wheels/DrawingWheels.qml:805
+#: activities/drawing_wheels/DrawingWheels.qml:820
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:880
+#: activities/drawing_wheels/DrawingWheels.qml:895
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:943
+#: activities/drawing_wheels/DrawingWheels.qml:958
 #, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:961
+#: activities/drawing_wheels/DrawingWheels.qml:976
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Speed"
@@ -6610,17 +6589,17 @@ msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "سرعت"
 
-#: activities/drawing_wheels/DrawingWheels.qml:977
+#: activities/drawing_wheels/DrawingWheels.qml:992
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:997
+#: activities/drawing_wheels/DrawingWheels.qml:1012
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1040
+#: activities/drawing_wheels/DrawingWheels.qml:1055
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font size"
@@ -6628,17 +6607,17 @@ msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "اندازه فونت"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1077
+#: activities/drawing_wheels/DrawingWheels.qml:1092
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1120
+#: activities/drawing_wheels/DrawingWheels.qml:1135
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1158
+#: activities/drawing_wheels/DrawingWheels.qml:1173
 #, fuzzy
 #| msgctxt "IntroMessage|"
 #| msgid "Start"
@@ -6646,12 +6625,12 @@ msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "شروع"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1336
+#: activities/drawing_wheels/DrawingWheels.qml:1351
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1337
+#: activities/drawing_wheels/DrawingWheels.qml:1352
 #, fuzzy
 #| msgctxt "Chess|"
 #| msgid "Do you really want to undo all the moves?"
@@ -6659,7 +6638,7 @@ msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "آیا مطمئن به بازگشت همه حرکات هستی؟"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1338
+#: activities/drawing_wheels/DrawingWheels.qml:1353
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -6667,7 +6646,7 @@ msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "بله"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1339
+#: activities/drawing_wheels/DrawingWheels.qml:1354
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -27322,6 +27301,25 @@ msgstr "پایان"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "شروع"
+
+# Sina Fesahati <sina.fesahati@protonmail.com>, 2023.
+#, fuzzy
+#~| msgid ""
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ msgstr ""
+#~ "Project-Id-Version: \n"
+#~ "PO-Revision-Date: 2023-07-03 12:06+0330\n"
+#~ "Last-Translator: Sina Fesahati <sina.fesahati@protonmail.com>\n"
+#~ "Language-Team: Persian <kde-i18n-doc@kde.org>\n"
+#~ "Language: fa\n"
+#~ "MIME-Version: 1.0\n"
+#~ "Content-Type: text/plain; charset=UTF-8\n"
+#~ "Content-Transfer-Encoding: 8bit\n"
+#~ "X-Qt-Contexts: true\n"
+#~ "Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+#~ "X-Generator: Lokalize 20.12.0\n"
+#~ "X-Qt-Contexts: true\n"
 
 #, fuzzy
 #~| msgctxt "category_colors|"

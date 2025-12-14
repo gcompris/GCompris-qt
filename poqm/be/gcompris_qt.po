@@ -6745,114 +6745,6 @@ msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
 msgstr "Маляванне літар"
 
-# Translation of gcompris_qt.po to Belarusian
-# Copyright (C) 2015 This file is part of KDE
-# This file is distributed under the license GPL version 3
-# or later versions approved by the membership of KDE e.V.
-#. Help title
-#: activities/drawing_wheels/ActivityInfo.qml:16
-#, fuzzy
-#| msgid ""
-msgctxt "ActivityInfo|"
-msgid ""
-msgstr ""
-"Project-Id-Version: gcompris-by\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-10-10 11:34+0300\n"
-"Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
-"Language-Team: Belarusian\n"
-"Language: be\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
-"%100>=11 && n%100<=14 ? 2 : 3);\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
-"%100>=11 && n%100<=14 ? 2 : 3);\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
-"%100>=11 && n%100<=14 ? 2 : 3);\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
-"%100>=11 && n%100<=14 ? 2 : 3);\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
-"%100>=11 && n%100<=14 ? 2 : 3);\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
-"%100>=11 && n%100<=14 ? 2 : 3);\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
-"%100>=11 && n%100<=14 ? 2 : 3);\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.5\n"
-"X-Crowdin-Project: gcompris-by\n"
-"X-Crowdin-Project-ID: 418508\n"
-"X-Crowdin-Language: be\n"
-"X-Crowdin-File: gcompris_qt.po\n"
-"X-Crowdin-File-ID: 10\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Crowdin-Project: gcompris-by\n"
-"X-Crowdin-Project-ID: 418508\n"
-"X-Crowdin-Language: be\n"
-"X-Crowdin-File: gcompris_qt.po\n"
-"X-Crowdin-File-ID: 10\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Crowdin-Project: gcompris-by\n"
-"X-Crowdin-Project-ID: 418508\n"
-"X-Crowdin-Language: be\n"
-"X-Crowdin-File: gcompris_qt.po\n"
-"X-Crowdin-File-ID: 10\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Crowdin-Project: gcompris-by\n"
-"X-Crowdin-Project-ID: 418508\n"
-"X-Crowdin-Language: be\n"
-"X-Crowdin-File: gcompris_qt.po\n"
-"X-Crowdin-File-ID: 10\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Crowdin-Project: gcompris-by\n"
-"X-Crowdin-Project-ID: 418508\n"
-"X-Crowdin-Language: be\n"
-"X-Crowdin-File: gcompris_qt.po\n"
-"X-Crowdin-File-ID: 10\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Crowdin-Project: gcompris-by\n"
-"X-Crowdin-Project-ID: 418508\n"
-"X-Crowdin-Language: be\n"
-"X-Crowdin-File: gcompris_qt.po\n"
-"X-Crowdin-File-ID: 10\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Crowdin-Project: gcompris-by\n"
-"X-Crowdin-Project-ID: 418508\n"
-"X-Crowdin-Language: be\n"
-"X-Crowdin-File: gcompris_qt.po\n"
-"X-Crowdin-File-ID: 10\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Crowdin-Project: gcompris-by\n"
-"X-Crowdin-Project-ID: 418508\n"
-"X-Crowdin-Language: be\n"
-"X-Crowdin-File: gcompris_qt.po\n"
-"X-Crowdin-File-ID: 10\n"
-
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
@@ -6901,17 +6793,17 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:360
+#: activities/drawing_wheels/DrawingWheels.qml:375
 msgctxt "DrawingWheels|"
 msgid "Save drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:372
+#: activities/drawing_wheels/DrawingWheels.qml:387
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:396
+#: activities/drawing_wheels/DrawingWheels.qml:411
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Piano composition"
@@ -6919,7 +6811,7 @@ msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr "Кампазіцыя на піяніна"
 
-#: activities/drawing_wheels/DrawingWheels.qml:408
+#: activities/drawing_wheels/DrawingWheels.qml:423
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font selector"
@@ -6927,7 +6819,7 @@ msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr "Выбар шрыфту"
 
-#: activities/drawing_wheels/DrawingWheels.qml:435
+#: activities/drawing_wheels/DrawingWheels.qml:450
 #, fuzzy
 #| msgctxt "OptionsRow|"
 #| msgid "Undo"
@@ -6935,7 +6827,7 @@ msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Адмяніць"
 
-#: activities/drawing_wheels/DrawingWheels.qml:447
+#: activities/drawing_wheels/DrawingWheels.qml:462
 #, fuzzy
 #| msgctxt "Checkers|"
 #| msgid "Redo"
@@ -6943,27 +6835,27 @@ msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "Паўтарыць"
 
-#: activities/drawing_wheels/DrawingWheels.qml:481
+#: activities/drawing_wheels/DrawingWheels.qml:496
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:481
+#: activities/drawing_wheels/DrawingWheels.qml:496
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:514
+#: activities/drawing_wheels/DrawingWheels.qml:529
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:514
+#: activities/drawing_wheels/DrawingWheels.qml:529
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:673
+#: activities/drawing_wheels/DrawingWheels.qml:688
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Save your image"
@@ -6971,7 +6863,7 @@ msgctxt "DrawingWheels|"
 msgid "Save vector image (SVG)"
 msgstr "Захавайце вашую выяву"
 
-#: activities/drawing_wheels/DrawingWheels.qml:687
+#: activities/drawing_wheels/DrawingWheels.qml:702
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Open an image"
@@ -6979,7 +6871,7 @@ msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Адкрыць выяву"
 
-#: activities/drawing_wheels/DrawingWheels.qml:716
+#: activities/drawing_wheels/DrawingWheels.qml:731
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Create a new image"
@@ -6987,7 +6879,7 @@ msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Стварыце новую выяву"
 
-#: activities/drawing_wheels/DrawingWheels.qml:735
+#: activities/drawing_wheels/DrawingWheels.qml:750
 #, fuzzy
 #| msgctxt "BackgroundColorSelector|"
 #| msgid "Background color"
@@ -6995,17 +6887,17 @@ msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Колер фону"
 
-#: activities/drawing_wheels/DrawingWheels.qml:805
+#: activities/drawing_wheels/DrawingWheels.qml:820
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:880
+#: activities/drawing_wheels/DrawingWheels.qml:895
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:943
+#: activities/drawing_wheels/DrawingWheels.qml:958
 #, fuzzy, qt-format
 #| msgctxt "SignalGenerator|"
 #| msgid "%1 s"
@@ -7013,7 +6905,7 @@ msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 с"
 
-#: activities/drawing_wheels/DrawingWheels.qml:961
+#: activities/drawing_wheels/DrawingWheels.qml:976
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Speed"
@@ -7021,17 +6913,17 @@ msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Хуткасць"
 
-#: activities/drawing_wheels/DrawingWheels.qml:977
+#: activities/drawing_wheels/DrawingWheels.qml:992
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:997
+#: activities/drawing_wheels/DrawingWheels.qml:1012
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1040
+#: activities/drawing_wheels/DrawingWheels.qml:1055
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font size"
@@ -7039,17 +6931,17 @@ msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "Памер шрыфту"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1077
+#: activities/drawing_wheels/DrawingWheels.qml:1092
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1120
+#: activities/drawing_wheels/DrawingWheels.qml:1135
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1158
+#: activities/drawing_wheels/DrawingWheels.qml:1173
 #, fuzzy
 #| msgctxt "IntroMessage|"
 #| msgid "Start"
@@ -7057,7 +6949,7 @@ msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "Пачаць"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1336
+#: activities/drawing_wheels/DrawingWheels.qml:1351
 #, fuzzy
 #| msgctxt "Sketch|"
 #| msgid "You did not save this image. Do you want to close this activity?"
@@ -7065,7 +6957,7 @@ msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Вы не захавалі выяву. Вы жадаеце закрыць практыкаванне?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1337
+#: activities/drawing_wheels/DrawingWheels.qml:1352
 #, fuzzy
 #| msgctxt "Sketch|"
 #| msgid "Do you want to erase this image?"
@@ -7073,7 +6965,7 @@ msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Вы жадаеце сцерці гэтую выяву?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1338
+#: activities/drawing_wheels/DrawingWheels.qml:1353
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -7081,7 +6973,7 @@ msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Так"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1339
+#: activities/drawing_wheels/DrawingWheels.qml:1354
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -28663,6 +28555,112 @@ msgstr "Прапусціць"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Пачаць"
+
+# Translation of gcompris_qt.po to Belarusian
+# Copyright (C) 2015 This file is part of KDE
+# This file is distributed under the license GPL version 3
+# or later versions approved by the membership of KDE e.V.
+#, fuzzy
+#~| msgid ""
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ msgstr ""
+#~ "Project-Id-Version: gcompris-by\n"
+#~ "POT-Creation-Date: \n"
+#~ "PO-Revision-Date: 2025-10-10 11:34+0300\n"
+#~ "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
+#~ "Language-Team: Belarusian\n"
+#~ "Language: be\n"
+#~ "MIME-Version: 1.0\n"
+#~ "Content-Type: text/plain; charset=UTF-8\n"
+#~ "Content-Transfer-Encoding: 8bit\n"
+#~ "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+#~ "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
+#~ "%100>=11 && n%100<=14 ? 2 : 3);\n"
+#~ "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+#~ "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
+#~ "%100>=11 && n%100<=14 ? 2 : 3);\n"
+#~ "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+#~ "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
+#~ "%100>=11 && n%100<=14 ? 2 : 3);\n"
+#~ "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+#~ "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
+#~ "%100>=11 && n%100<=14 ? 2 : 3);\n"
+#~ "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+#~ "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+#~ "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+#~ "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
+#~ "%100>=11 && n%100<=14 ? 2 : 3);\n"
+#~ "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+#~ "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
+#~ "%100>=11 && n%100<=14 ? 2 : 3);\n"
+#~ "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+#~ "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
+#~ "%100>=11 && n%100<=14 ? 2 : 3);\n"
+#~ "X-Qt-Contexts: true\n"
+#~ "X-Generator: Poedit 3.5\n"
+#~ "X-Crowdin-Project: gcompris-by\n"
+#~ "X-Crowdin-Project-ID: 418508\n"
+#~ "X-Crowdin-Language: be\n"
+#~ "X-Crowdin-File: gcompris_qt.po\n"
+#~ "X-Crowdin-File-ID: 10\n"
+#~ "X-Qt-Contexts: true\n"
+#~ "X-Generator: Poedit 2.2.1\n"
+#~ "X-Qt-Contexts: true\n"
+#~ "X-Generator: Poedit 2.2.1\n"
+#~ "X-Crowdin-Project: gcompris-by\n"
+#~ "X-Crowdin-Project-ID: 418508\n"
+#~ "X-Crowdin-Language: be\n"
+#~ "X-Crowdin-File: gcompris_qt.po\n"
+#~ "X-Crowdin-File-ID: 10\n"
+#~ "X-Qt-Contexts: true\n"
+#~ "X-Generator: Poedit 2.2.1\n"
+#~ "X-Crowdin-Project: gcompris-by\n"
+#~ "X-Crowdin-Project-ID: 418508\n"
+#~ "X-Crowdin-Language: be\n"
+#~ "X-Crowdin-File: gcompris_qt.po\n"
+#~ "X-Crowdin-File-ID: 10\n"
+#~ "X-Qt-Contexts: true\n"
+#~ "X-Generator: Poedit 2.2.1\n"
+#~ "X-Qt-Contexts: true\n"
+#~ "X-Generator: Poedit 2.2.1\n"
+#~ "X-Crowdin-Project: gcompris-by\n"
+#~ "X-Crowdin-Project-ID: 418508\n"
+#~ "X-Crowdin-Language: be\n"
+#~ "X-Crowdin-File: gcompris_qt.po\n"
+#~ "X-Crowdin-File-ID: 10\n"
+#~ "X-Qt-Contexts: true\n"
+#~ "X-Generator: Poedit 2.2.1\n"
+#~ "X-Crowdin-Project: gcompris-by\n"
+#~ "X-Crowdin-Project-ID: 418508\n"
+#~ "X-Crowdin-Language: be\n"
+#~ "X-Crowdin-File: gcompris_qt.po\n"
+#~ "X-Crowdin-File-ID: 10\n"
+#~ "X-Qt-Contexts: true\n"
+#~ "X-Generator: Poedit 2.2.1\n"
+#~ "X-Qt-Contexts: true\n"
+#~ "X-Generator: Poedit 2.2.1\n"
+#~ "X-Crowdin-Project: gcompris-by\n"
+#~ "X-Crowdin-Project-ID: 418508\n"
+#~ "X-Crowdin-Language: be\n"
+#~ "X-Crowdin-File: gcompris_qt.po\n"
+#~ "X-Crowdin-File-ID: 10\n"
+#~ "X-Qt-Contexts: true\n"
+#~ "X-Generator: Poedit 2.2.1\n"
+#~ "X-Crowdin-Project: gcompris-by\n"
+#~ "X-Crowdin-Project-ID: 418508\n"
+#~ "X-Crowdin-Language: be\n"
+#~ "X-Crowdin-File: gcompris_qt.po\n"
+#~ "X-Crowdin-File-ID: 10\n"
+#~ "X-Qt-Contexts: true\n"
+#~ "X-Generator: Poedit 2.2.1\n"
+#~ "X-Qt-Contexts: true\n"
+#~ "X-Generator: Poedit 2.2.1\n"
+#~ "X-Crowdin-Project: gcompris-by\n"
+#~ "X-Crowdin-Project-ID: 418508\n"
+#~ "X-Crowdin-Language: be\n"
+#~ "X-Crowdin-File: gcompris_qt.po\n"
+#~ "X-Crowdin-File-ID: 10\n"
 
 #, fuzzy
 #~| msgctxt "category_colors|"

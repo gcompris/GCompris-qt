@@ -6664,34 +6664,6 @@ msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
 msgstr "Marrazteko gurpilak"
 
-# Translation for gcompris_qt.po to Euskara/Basque (eu).
-# Copyright (C) 2018-2025 This file is copyright:
-# This file is distributed under the same license as the GCompris package.
-# SPDX-FileCopyrightText: 2023, 2024, 2025 KDE euskaratzeko proiektuaren arduraduna <xalba@ni.eus>
-#
-# Translators:
-# Alexander Gabilondo <alexgabe@irakasle.net>, 2018, 2019, 2022.
-# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2019, 2020, 2021, 2022, 2023, 2024, 2025.
-#. Help title
-#: activities/drawing_wheels/ActivityInfo.qml:16
-#, fuzzy
-#| msgid ""
-msgctxt "ActivityInfo|"
-msgid ""
-msgstr ""
-"Project-Id-Version: GCompris\n"
-"POT-Creation-Date: 2018-11-30 13:03+0000\n"
-"PO-Revision-Date: 2025-12-11 18:30+0100\n"
-"Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
-"Language-Team: Basque <kde-i18n-eu@kde.org>\n"
-"Language: eu\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.08.3\n"
-"X-Qt-Contexts: true\n"
-
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
@@ -6741,17 +6713,17 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ktrl + O: irudi bat irekitzeko"
 
-#: activities/drawing_wheels/DrawingWheels.qml:360
+#: activities/drawing_wheels/DrawingWheels.qml:375
 msgctxt "DrawingWheels|"
 msgid "Save drawing"
 msgstr "Gorde marrazkia"
 
-#: activities/drawing_wheels/DrawingWheels.qml:372
+#: activities/drawing_wheels/DrawingWheels.qml:387
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr "Gurpila eta engranajea"
 
-#: activities/drawing_wheels/DrawingWheels.qml:396
+#: activities/drawing_wheels/DrawingWheels.qml:411
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Piano composition"
@@ -6759,7 +6731,7 @@ msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr "Pianorako konposizioa"
 
-#: activities/drawing_wheels/DrawingWheels.qml:408
+#: activities/drawing_wheels/DrawingWheels.qml:423
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font selector"
@@ -6767,37 +6739,37 @@ msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr "Letra-tipo hautatzailea"
 
-#: activities/drawing_wheels/DrawingWheels.qml:435
+#: activities/drawing_wheels/DrawingWheels.qml:450
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Desegin"
 
-#: activities/drawing_wheels/DrawingWheels.qml:447
+#: activities/drawing_wheels/DrawingWheels.qml:462
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "Berregin"
 
-#: activities/drawing_wheels/DrawingWheels.qml:481
+#: activities/drawing_wheels/DrawingWheels.qml:496
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr "Utzi marrazteari"
 
-#: activities/drawing_wheels/DrawingWheels.qml:481
+#: activities/drawing_wheels/DrawingWheels.qml:496
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr "Hasi marrazten"
 
-#: activities/drawing_wheels/DrawingWheels.qml:514
+#: activities/drawing_wheels/DrawingWheels.qml:529
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr "Erakutsi gurpila eta engranajea"
 
-#: activities/drawing_wheels/DrawingWheels.qml:514
+#: activities/drawing_wheels/DrawingWheels.qml:529
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr "Ezkutatu gurpila eta engranajea"
 
-#: activities/drawing_wheels/DrawingWheels.qml:673
+#: activities/drawing_wheels/DrawingWheels.qml:688
 #, fuzzy
 #| msgctxt "DrawingWheels|"
 #| msgid "Save your image"
@@ -6805,17 +6777,17 @@ msgctxt "DrawingWheels|"
 msgid "Save vector image (SVG)"
 msgstr "Gorde zure irudia"
 
-#: activities/drawing_wheels/DrawingWheels.qml:687
+#: activities/drawing_wheels/DrawingWheels.qml:702
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Ireki irudi bat"
 
-#: activities/drawing_wheels/DrawingWheels.qml:716
+#: activities/drawing_wheels/DrawingWheels.qml:731
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Sortu irudi berri bat"
 
-#: activities/drawing_wheels/DrawingWheels.qml:735
+#: activities/drawing_wheels/DrawingWheels.qml:750
 #, fuzzy
 #| msgctxt "BackgroundColorSelector|"
 #| msgid "Background color"
@@ -6823,38 +6795,38 @@ msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Atzeko planoaren kolorea"
 
-#: activities/drawing_wheels/DrawingWheels.qml:805
+#: activities/drawing_wheels/DrawingWheels.qml:820
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr "Gurpila"
 
-#: activities/drawing_wheels/DrawingWheels.qml:880
+#: activities/drawing_wheels/DrawingWheels.qml:895
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr "Engranajea"
 
-#: activities/drawing_wheels/DrawingWheels.qml:943
+#: activities/drawing_wheels/DrawingWheels.qml:958
 #, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 hortz"
 
-#: activities/drawing_wheels/DrawingWheels.qml:961
+#: activities/drawing_wheels/DrawingWheels.qml:976
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Abiadura"
 
-#: activities/drawing_wheels/DrawingWheels.qml:977
+#: activities/drawing_wheels/DrawingWheels.qml:992
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr "Mantso"
 
-#: activities/drawing_wheels/DrawingWheels.qml:997
+#: activities/drawing_wheels/DrawingWheels.qml:1012
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr "Azkar"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1040
+#: activities/drawing_wheels/DrawingWheels.qml:1055
 #, fuzzy
 #| msgctxt "DrawingWheels|"
 #| msgid "Pensize"
@@ -6862,17 +6834,17 @@ msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "Arkatzaren neurria"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1077
+#: activities/drawing_wheels/DrawingWheels.qml:1092
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Opakutasuna"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1120
+#: activities/drawing_wheels/DrawingWheels.qml:1135
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1158
+#: activities/drawing_wheels/DrawingWheels.qml:1173
 #, fuzzy
 #| msgctxt "DrawingWheels|"
 #| msgid "Starting tooth"
@@ -6880,22 +6852,22 @@ msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "Hasierako hortza"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1336
+#: activities/drawing_wheels/DrawingWheels.qml:1351
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Ez duzu irudi hau gorde. Jarduera hau itxi nahi duzu?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1337
+#: activities/drawing_wheels/DrawingWheels.qml:1352
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Irudi hau ezabatu nahi duzu?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1338
+#: activities/drawing_wheels/DrawingWheels.qml:1353
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Bai"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1339
+#: activities/drawing_wheels/DrawingWheels.qml:1354
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "Ez"
@@ -28739,6 +28711,32 @@ msgstr "Saihestu"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Hasi"
+
+# Translation for gcompris_qt.po to Euskara/Basque (eu).
+# Copyright (C) 2018-2025 This file is copyright:
+# This file is distributed under the same license as the GCompris package.
+# SPDX-FileCopyrightText: 2023, 2024, 2025 KDE euskaratzeko proiektuaren arduraduna <xalba@ni.eus>
+#
+# Translators:
+# Alexander Gabilondo <alexgabe@irakasle.net>, 2018, 2019, 2022.
+# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2019, 2020, 2021, 2022, 2023, 2024, 2025.
+#, fuzzy
+#~| msgid ""
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ msgstr ""
+#~ "Project-Id-Version: GCompris\n"
+#~ "POT-Creation-Date: 2018-11-30 13:03+0000\n"
+#~ "PO-Revision-Date: 2025-12-11 18:30+0100\n"
+#~ "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
+#~ "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
+#~ "Language: eu\n"
+#~ "MIME-Version: 1.0\n"
+#~ "Content-Type: text/plain; charset=UTF-8\n"
+#~ "Content-Transfer-Encoding: 8bit\n"
+#~ "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#~ "X-Generator: Lokalize 25.08.3\n"
+#~ "X-Qt-Contexts: true\n"
 
 #~ msgctxt "DrawingWheels|"
 #~ msgid "Pencil's color and width"

@@ -6218,31 +6218,6 @@ msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
 msgstr ""
 
-# Korean translation.
-# Copyright (C) 2004 THE gcompris COPYRIGHT HOLDER
-# This file is distributed under the same license as the gcompris package.
-# Gareth Owen <gowen72@yahoo.com>, 2004.
-# Shinjo Park <kde@peremen.name>, 2015, 2020, 2022.
-#
-#. Help title
-#: activities/drawing_wheels/ActivityInfo.qml:16
-#, fuzzy
-#| msgid ""
-msgctxt "ActivityInfo|"
-msgid ""
-msgstr ""
-"Project-Id-Version: gcompris\n"
-"PO-Revision-Date: 2022-05-15 22:15+0200\n"
-"Last-Translator: Shinjo Park <kde@peremen.name>\n"
-"Language-Team: Korean <kde-kr@kde.org>\n"
-"Language: ko\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 21.12.3\n"
-"X-Qt-Contexts: true\n"
-
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
@@ -6294,17 +6269,17 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:360
+#: activities/drawing_wheels/DrawingWheels.qml:375
 msgctxt "DrawingWheels|"
 msgid "Save drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:372
+#: activities/drawing_wheels/DrawingWheels.qml:387
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:396
+#: activities/drawing_wheels/DrawingWheels.qml:411
 #, fuzzy
 #| msgctxt "DialogHelp|"
 #| msgid "Section: "
@@ -6312,42 +6287,42 @@ msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr "부분: "
 
-#: activities/drawing_wheels/DrawingWheels.qml:408
+#: activities/drawing_wheels/DrawingWheels.qml:423
 msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:435
+#: activities/drawing_wheels/DrawingWheels.qml:450
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:447
+#: activities/drawing_wheels/DrawingWheels.qml:462
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:481
+#: activities/drawing_wheels/DrawingWheels.qml:496
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:481
+#: activities/drawing_wheels/DrawingWheels.qml:496
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:514
+#: activities/drawing_wheels/DrawingWheels.qml:529
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:514
+#: activities/drawing_wheels/DrawingWheels.qml:529
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:673
+#: activities/drawing_wheels/DrawingWheels.qml:688
 #, fuzzy
 #| msgctxt "Traffic|"
 #| msgid "Select your mode"
@@ -6355,7 +6330,7 @@ msgctxt "DrawingWheels|"
 msgid "Save vector image (SVG)"
 msgstr "모드 선택"
 
-#: activities/drawing_wheels/DrawingWheels.qml:687
+#: activities/drawing_wheels/DrawingWheels.qml:702
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Download in progress"
@@ -6363,7 +6338,7 @@ msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "다운로드 진행 중"
 
-#: activities/drawing_wheels/DrawingWheels.qml:716
+#: activities/drawing_wheels/DrawingWheels.qml:731
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Download in progress"
@@ -6371,7 +6346,7 @@ msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "다운로드 진행 중"
 
-#: activities/drawing_wheels/DrawingWheels.qml:735
+#: activities/drawing_wheels/DrawingWheels.qml:750
 #, fuzzy
 #| msgctxt "DownloadDialog|"
 #| msgid "Background"
@@ -6379,38 +6354,38 @@ msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "백그라운드 작업"
 
-#: activities/drawing_wheels/DrawingWheels.qml:805
+#: activities/drawing_wheels/DrawingWheels.qml:820
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:880
+#: activities/drawing_wheels/DrawingWheels.qml:895
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:943
+#: activities/drawing_wheels/DrawingWheels.qml:958
 #, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:961
+#: activities/drawing_wheels/DrawingWheels.qml:976
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:977
+#: activities/drawing_wheels/DrawingWheels.qml:992
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:997
+#: activities/drawing_wheels/DrawingWheels.qml:1012
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1040
+#: activities/drawing_wheels/DrawingWheels.qml:1055
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font size"
@@ -6418,27 +6393,27 @@ msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "글꼴 크기"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1077
+#: activities/drawing_wheels/DrawingWheels.qml:1092
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1120
+#: activities/drawing_wheels/DrawingWheels.qml:1135
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1158
+#: activities/drawing_wheels/DrawingWheels.qml:1173
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1336
+#: activities/drawing_wheels/DrawingWheels.qml:1351
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1337
+#: activities/drawing_wheels/DrawingWheels.qml:1352
 #, fuzzy
 #| msgctxt "main|"
 #| msgid "Do you want to download the corresponding sound files now?"
@@ -6446,7 +6421,7 @@ msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "해당하는 음성 파일을 다운로드하시겠습니까?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1338
+#: activities/drawing_wheels/DrawingWheels.qml:1353
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Yes"
@@ -6454,7 +6429,7 @@ msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "예"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1339
+#: activities/drawing_wheels/DrawingWheels.qml:1354
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "No"
@@ -27592,6 +27567,29 @@ msgstr ""
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr ""
+
+# Korean translation.
+# Copyright (C) 2004 THE gcompris COPYRIGHT HOLDER
+# This file is distributed under the same license as the gcompris package.
+# Gareth Owen <gowen72@yahoo.com>, 2004.
+# Shinjo Park <kde@peremen.name>, 2015, 2020, 2022.
+#
+#, fuzzy
+#~| msgid ""
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ msgstr ""
+#~ "Project-Id-Version: gcompris\n"
+#~ "PO-Revision-Date: 2022-05-15 22:15+0200\n"
+#~ "Last-Translator: Shinjo Park <kde@peremen.name>\n"
+#~ "Language-Team: Korean <kde-kr@kde.org>\n"
+#~ "Language: ko\n"
+#~ "MIME-Version: 1.0\n"
+#~ "Content-Type: text/plain; charset=UTF-8\n"
+#~ "Content-Transfer-Encoding: 8bit\n"
+#~ "Plural-Forms: nplurals=1; plural=0;\n"
+#~ "X-Generator: Lokalize 21.12.3\n"
+#~ "X-Qt-Contexts: true\n"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"

@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-12-12 07:20-0300\n"
+"PO-Revision-Date: 2025-12-13 04:25-0300\n"
 "Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Language: pt_BR\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 25.08.3\n"
+"X-Generator: Poedit 3.8\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -1136,7 +1136,7 @@ msgstr ""
 #: activities/algebra_minus/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Subtraction of small numbers."
-msgstr "Subtração de números pequenos"
+msgstr "Subtração de números pequenos."
 
 # Help manual
 #. Help manual
@@ -1241,7 +1241,7 @@ msgstr ""
 #: activities/algebra_plus/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Simple addition. Can recognize written numbers."
-msgstr "Adição simples. Saber reconhecer números escritos"
+msgstr "Adição simples. Saber reconhecer números escritos."
 
 # Help manual
 #. Help manual
@@ -1469,7 +1469,7 @@ msgstr "Aprender a ordem alfabética."
 #: activities/alphabet-sequence/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Can decode letters."
-msgstr "Saber identificar as letras"
+msgstr "Saber identificar as letras."
 
 # Help manual
 #. Help manual
@@ -1844,7 +1844,7 @@ msgid ""
 "creates a short circuit (also called short) in the electrical circuit."
 msgstr ""
 "Ao conectar dois terminais que não deveriam ser conectados, forma-se um "
-"curto circuito (também conhecido como curto) no circuito elétrico. "
+"curto circuito (também conhecido como curto) no circuito elétrico."
 
 #: activities/analog_electricity/TutorialDataset.qml:118
 msgctxt "TutorialDataset|"
@@ -2074,7 +2074,7 @@ msgid ""
 " A red LED converts electrical energy into red light energy under particular "
 "conditions."
 msgstr ""
-"Um LED vermelho converte energia elétrica em energia luminosa vermelha, sob "
+" Um LED vermelho converte energia elétrica em energia luminosa vermelha, sob "
 "condições particulares."
 
 #: activities/analog_electricity/TutorialDataset.qml:252
@@ -2743,7 +2743,7 @@ msgid ""
 "user level!"
 msgstr ""
 "Você escolheu usar o conjunto de níveis personalizados, mas você ainda não "
-"abriu nenhum nível desse tipo."
+"abriu nenhum nível desse tipo!"
 
 #: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
@@ -2886,7 +2886,7 @@ msgstr ""
 #: activities/bargame_2players/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Ability to count."
-msgstr "Habilidade para contar"
+msgstr "Habilidade para contar."
 
 #. Help manual
 #: activities/bargame/ActivityInfo.qml:24
@@ -2946,7 +2946,7 @@ msgstr "Familiarizar-se com o sistema de números binários."
 #: activities/binary_bulb/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Decimal number system."
-msgstr "Sistema numérico decimal"
+msgstr "Sistema numérico decimal."
 
 #. Help manual
 #: activities/binary_bulb/ActivityInfo.qml:24
@@ -3237,7 +3237,7 @@ msgstr "Pratique a escrita em braille."
 #: activities/braille_fun/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Braille alphabet."
-msgstr "Alfabeto Braille"
+msgstr "Alfabeto Braille."
 
 #. Help manual
 #: activities/braille_fun/ActivityInfo.qml:24
@@ -3260,7 +3260,7 @@ msgstr "Calcudoku"
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr "Resolva o Calcudoku"
+msgstr "Resolva o Calcudoku."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3313,7 +3313,7 @@ msgstr "Grades pequenas com operadores + e −."
 #: activities/calcudoku/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "Grades pequenas com operadores +, − e ×,"
+msgstr "Grades pequenas com operadores +, − e ×,."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
@@ -3349,7 +3349,7 @@ msgstr "Aprender a usar o calendário."
 #: activities/calendar/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Concept of week, month and year."
-msgstr "Conceitos de semana, mês e ano"
+msgstr "Conceitos de semana, mês e ano."
 
 #. Help manual
 #: activities/calendar/ActivityInfo.qml:24
@@ -3630,7 +3630,7 @@ msgid ""
 "Braille Day in 2018"
 msgstr ""
 "O Dia do Braille é celebrado um dia antes de 5 de janeiro.<br> Encontre a "
-"data do Dia do Braille em 2018."
+"data do Dia do Braille em 2018"
 
 #: activities/calendar/calendar_dataset.js:292
 msgctxt "calendar_dataset|"
@@ -3640,7 +3640,7 @@ msgid ""
 msgstr ""
 "O aniversário de Marcos é no dia 4 de novembro. Em 2017, sua festa aconteceu "
 "exatamente duas semanas depois.<br> Encontre a data do aniversário dele em "
-"2017."
+"2017"
 
 #: activities/calendar/calendar_dataset.js:296
 msgctxt "calendar_dataset|"
@@ -3767,7 +3767,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "Review the instructions and then drag and drop the items as specified."
 msgstr ""
-"Veja as instruções e então arraste os itens para os locais especificados"
+"Veja as instruções e então arraste os itens para os locais especificados."
 
 #: activities/categorization/Categorization.qml:150
 msgctxt "Categorization|"
@@ -4408,7 +4408,7 @@ msgid ""
 msgstr ""
 "A biblioteca de damas utilizada é a draughts.js &lt;https://github.com/"
 "shubhendusaurabh/draughts.js&gt;. O manual veio da Wikipédia: &lt;https://en."
-"wikipedia.org/wiki/Draughts&gt;."
+"wikipedia.org/wiki/Draughts&gt;"
 
 #: activities/checkers/checkers.js:69
 msgctxt "checkers|"
@@ -6167,7 +6167,7 @@ msgstr ""
 "Um comparador recebe 2 números como entrada, A e B. Compara-os e gera 3 "
 "valores. A primeira saída é 1 se A <B, caso contrário, é zero. A segunda é 1 "
 "se A = B, caso contrário, é zero. A terceira é 1 se A> B, caso contrário. é "
-"zero."
+"zero. "
 
 #: activities/digital_electricity/components/DigitalLight.qml:20
 msgctxt "DigitalLight|"
@@ -6772,39 +6772,6 @@ msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
 msgstr "Rodas de desenho"
 
-# Translation of gcompris_qt.po to Brazilian Portuguese
-# Copyright (C) 2014-2016 This_file_is_part_of_KDE
-# This file is distributed under the same license as the PACKAGE package.
-#
-# Aracele Torres <aracele@kde.org>, 2014.
-# Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2014, 2015, 2017, 2018, 2019, 2020, 2022, 2023.
-# André Marcelo Alvarenga <alvarenga@kde.org>, 2014, 2015, 2016.
-# Edely <edely.gomes@gmail.com>, 2015.
-# SPDX-FileCopyrightText: 2015, 2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Frederico Goncalves Guimaraes <frederico@teia.bio.br>
-# SPDX-FileCopyrightText: 2023, 2025 Geraldo Simiao <geraldosimiao@fedoraproject.org>
-# SPDX-FileCopyrightText: 2025 Guilherme Marçal Silva <guimarcalsilva@gmail.com>
-# SPDX-FileCopyrightText: 2025 Marcus Gama <marcus.gama@gmail.com>
-#. Help title
-#: activities/drawing_wheels/ActivityInfo.qml:16
-#, fuzzy
-#| msgid ""
-msgctxt "ActivityInfo|"
-msgid ""
-msgstr ""
-"Project-Id-Version: gcompris_qt\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-12-12 07:20-0300\n"
-"Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
-"Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
-"Language: pt_BR\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Language: pt_BR\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 25.08.3\n"
-
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
@@ -6854,144 +6821,144 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ctrl + O: abre uma imagem"
 
-#: activities/drawing_wheels/DrawingWheels.qml:360
+#: activities/drawing_wheels/DrawingWheels.qml:375
 msgctxt "DrawingWheels|"
 msgid "Save drawing"
 msgstr "Salvar desenho"
 
-#: activities/drawing_wheels/DrawingWheels.qml:372
+#: activities/drawing_wheels/DrawingWheels.qml:387
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr "Roda e engrenagem"
 
-#: activities/drawing_wheels/DrawingWheels.qml:396
+#: activities/drawing_wheels/DrawingWheels.qml:411
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr "Posição e tamanho da caneta"
 
-#: activities/drawing_wheels/DrawingWheels.qml:408
+#: activities/drawing_wheels/DrawingWheels.qml:423
 msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr "Seletor do cor"
 
-#: activities/drawing_wheels/DrawingWheels.qml:435
+#: activities/drawing_wheels/DrawingWheels.qml:450
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Desfazer"
 
-#: activities/drawing_wheels/DrawingWheels.qml:447
+#: activities/drawing_wheels/DrawingWheels.qml:462
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "Refazer"
 
-#: activities/drawing_wheels/DrawingWheels.qml:481
+#: activities/drawing_wheels/DrawingWheels.qml:496
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr "Parar desenho"
 
-#: activities/drawing_wheels/DrawingWheels.qml:481
+#: activities/drawing_wheels/DrawingWheels.qml:496
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr "Iniciar desenho"
 
-#: activities/drawing_wheels/DrawingWheels.qml:514
+#: activities/drawing_wheels/DrawingWheels.qml:529
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr "Mostrar roda e engrenagem"
 
-#: activities/drawing_wheels/DrawingWheels.qml:514
+#: activities/drawing_wheels/DrawingWheels.qml:529
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr "Ocultar roda e engrenagem"
 
-#: activities/drawing_wheels/DrawingWheels.qml:673
+#: activities/drawing_wheels/DrawingWheels.qml:688
 msgctxt "DrawingWheels|"
 msgid "Save vector image (SVG)"
 msgstr "Salvar imagem vetorial (SVG)"
 
-#: activities/drawing_wheels/DrawingWheels.qml:687
+#: activities/drawing_wheels/DrawingWheels.qml:702
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Abrir uma imagem"
 
-#: activities/drawing_wheels/DrawingWheels.qml:716
+#: activities/drawing_wheels/DrawingWheels.qml:731
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Criar uma nova imagem"
 
 # Baixar os arquivos de som em "segundo plano" (Alvarenga).
-#: activities/drawing_wheels/DrawingWheels.qml:735
+#: activities/drawing_wheels/DrawingWheels.qml:750
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Cor do fundo"
 
-#: activities/drawing_wheels/DrawingWheels.qml:805
+#: activities/drawing_wheels/DrawingWheels.qml:820
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr "Roda"
 
-#: activities/drawing_wheels/DrawingWheels.qml:880
+#: activities/drawing_wheels/DrawingWheels.qml:895
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr "Engrenagem"
 
-#: activities/drawing_wheels/DrawingWheels.qml:943
+#: activities/drawing_wheels/DrawingWheels.qml:958
 #, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 espinhos"
 
-#: activities/drawing_wheels/DrawingWheels.qml:961
+#: activities/drawing_wheels/DrawingWheels.qml:976
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Velocidade"
 
-#: activities/drawing_wheels/DrawingWheels.qml:977
+#: activities/drawing_wheels/DrawingWheels.qml:992
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr "Lenta"
 
-#: activities/drawing_wheels/DrawingWheels.qml:997
+#: activities/drawing_wheels/DrawingWheels.qml:1012
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr "Rápida"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1040
+#: activities/drawing_wheels/DrawingWheels.qml:1055
 msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "Tamanho da caneta"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1077
+#: activities/drawing_wheels/DrawingWheels.qml:1092
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Opacidade"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1120
+#: activities/drawing_wheels/DrawingWheels.qml:1135
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr "Deslocamento"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1158
+#: activities/drawing_wheels/DrawingWheels.qml:1173
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "Iniciar dente"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1336
+#: activities/drawing_wheels/DrawingWheels.qml:1351
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Você não salvou esta imagem. Deseja realmente fechar a atividade?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1337
+#: activities/drawing_wheels/DrawingWheels.qml:1352
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Deseja realmente apagar esta imagem?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1338
+#: activities/drawing_wheels/DrawingWheels.qml:1353
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Sim"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1339
+#: activities/drawing_wheels/DrawingWheels.qml:1354
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "Não"
@@ -12322,7 +12289,7 @@ msgstr "Normandia"
 #: activities/geo-country/resource/board/board1_0.qml:107
 msgctxt "board1_0|"
 msgid "Hauts de France"
-msgstr "Altos da França "
+msgstr "Altos da França"
 
 #. Region of France: Grand est
 #: activities/geo-country/resource/board/board1_0.qml:115
@@ -15197,7 +15164,7 @@ msgstr "Leia a reta numérica"
 #: activities/graduated_line_read/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Read values on a graduated line."
-msgstr "Ler valores em uma reta numérica"
+msgstr "Ler valores em uma reta numérica."
 
 #. Help goal
 #: activities/graduated_line_read/ActivityInfo.qml:19
@@ -16222,7 +16189,7 @@ msgstr ""
 #: activities/imagename/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Name the image"
-msgstr "Qual o nome da imagem?"
+msgstr "Nome da imagem"
 
 #. Help title
 #: activities/imagename/ActivityInfo.qml:20
@@ -16260,7 +16227,7 @@ msgstr ""
 #: activities/imagename/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
 msgid "Drag and Drop each item above its name"
-msgstr "Arraste e solte cada item sobre seu nome."
+msgstr "Arraste e solte cada item sobre seu nome"
 
 #: activities/imagename/resource/board/board1_0.qml:59
 msgctxt "board1_0|"
@@ -17203,7 +17170,7 @@ msgstr "Entre 1 e 5."
 #: activities/learn_decimals_additions/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Addition with decimal numbers"
-msgstr "Adição com números decimais."
+msgstr "Adição com números decimais"
 
 # Help prerequisite
 #. Help title
@@ -17305,7 +17272,7 @@ msgstr "Adição de números decimais até 5."
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Subtraction with decimal numbers"
-msgstr "Subtração com números decimais."
+msgstr "Subtração com números decimais"
 
 # Help prerequisite
 #. Help title
@@ -17338,7 +17305,7 @@ msgstr ""
 "subtração é representado por barras. Cada barra representa uma unidade e "
 "cada quadrado na barra representa um décimo dessa unidade. Clique nos "
 "quadrados para subtrair o segundo número e apresentar o o resultado da "
-"operação."
+"operação"
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:16
 msgctxt "Learn_decimals_subtractions|"
@@ -17643,7 +17610,7 @@ msgstr "Subtrações com 1, 2, 3, 4, 5, 6, 7, 8 e 9."
 #: activities/left_right_click/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Mouse click training"
-msgstr "Treinar cliques com o mouse."
+msgstr "Treinar cliques com o mouse"
 
 #. Help title
 #: activities/left_right_click/ActivityInfo.qml:16
@@ -17775,7 +17742,7 @@ msgstr "Aprender a encontrar determinadas letras em palavras."
 #: activities/letter-in-word/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Spelling, letter recognition."
-msgstr "Soletrar, reconhecer letras"
+msgstr "Soletrar, reconhecer letras."
 
 #. Help manual
 #: activities/letter-in-word/ActivityInfo.qml:24
@@ -18432,7 +18399,7 @@ msgstr "Treinar a audição."
 #: activities/melody/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Move and click the mouse."
-msgstr "Movimento e clique do mouse"
+msgstr "Movimento e clique do mouse."
 
 #. Help manual
 #: activities/melody/ActivityInfo.qml:24
@@ -19202,7 +19169,7 @@ msgstr "Vire as cartas para encontrar a subtração associada ao seu resultado."
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Multiplication and division memory game against Tux"
-msgstr "Jogo da memória com multiplicações e divisões, contra o Tux."
+msgstr "Jogo da memória com multiplicações e divisões, contra o Tux"
 
 #. Help title
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:17
@@ -20262,7 +20229,7 @@ msgstr "Aprender a soletrar palavras."
 #: activities/missing-letter/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Word reading."
-msgstr "Leitura de palavras"
+msgstr "Leitura de palavras."
 
 #. Help manual
 #: activities/missing-letter/ActivityInfo.qml:25
@@ -21072,7 +21039,7 @@ msgstr "Escolha o número ímpar:"
 #: activities/numbers-odd-even/resource/TutorialBase.qml:87
 msgctxt "TutorialBase|"
 msgid "Great"
-msgstr "Muito bem!"
+msgstr "Muito bem"
 
 #: activities/numbers-odd-even/resource/TutorialBase.qml:61
 #: activities/numbers-odd-even/resource/TutorialBase.qml:91
@@ -21631,7 +21598,7 @@ msgstr "Wassily Kandinsky, Composição VIII - 1923"
 #: activities/paintings/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
 msgid "Pierre-Auguste Renoir, Bal du moulin de la Galette - 1876"
-msgstr " Pierre-Auguste Renoir, Baile no Moulin de la Galette - 1876"
+msgstr "Pierre-Auguste Renoir, Baile no Moulin de la Galette - 1876"
 
 #: activities/paintings/resource/board/board20_0.qml:14
 msgctxt "board20_0|"
@@ -23168,7 +23135,7 @@ msgstr ""
 #: activities/programmingMaze/ProgrammingMaze.qml:563
 msgctxt "ProgrammingMaze|"
 msgid "Procedure:"
-msgstr "Procedimentos"
+msgstr "Procedimentos:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:564
 msgctxt "ProgrammingMaze|"
@@ -23782,7 +23749,7 @@ msgstr ""
 "Todas as dezenas exceto 40 e 90 são construídas usando somas de X e L:\n"
 "X, XX, XXX, L, LX, LXX, LXXX.\n"
 "As dezenas 40 e 90 são construídas usando diferenças:\n"
-"XL (10 subtraídos de 50) e XC (10 subtraídos de 100). "
+"XL (10 subtraídos de 50) e XC (10 subtraídos de 100)."
 
 #: activities/roman_numerals/RomanNumerals.qml:116
 #: activities/roman_numerals/RomanNumerals.qml:122
@@ -24548,7 +24515,7 @@ msgstr ""
 #: activities/share/resource/1/Data.qml:154
 msgctxt "Data|"
 msgid "Alice wants to give 16 pieces of candy to her friends."
-msgstr "Alice quer dar 16 doces para seus amigos"
+msgstr "Alice quer dar 16 doces para seus amigos."
 
 #: activities/share/resource/1/Data.qml:164
 msgctxt "Data|"
@@ -24577,7 +24544,7 @@ msgid ""
 "candy. Help her split the pieces of candy equally between her friends."
 msgstr ""
 "Helena tem 5 amigos: 2 meninos e 3 meninas. Ela quer dar 10 doces para eles. "
-"Ajude-a a dividir, igualmente, os doces entre seus amigos!"
+"Ajude-a a dividir, igualmente, os doces entre seus amigos."
 
 #: activities/share/resource/1/Data.qml:196
 msgctxt "Data|"
@@ -24767,7 +24734,7 @@ msgid ""
 "will remain to Jon."
 msgstr ""
 "Ajude o João a dividir 11 pedaços de doce igualmente entre 5 meninas. O João "
-"vai ficar com o resto"
+"vai ficar com o resto."
 
 #: activities/share/resource/2/Data.qml:176
 msgctxt "Data|"
@@ -24891,7 +24858,7 @@ msgstr "Você não pode colocar mais que %1 doces no mesmo retângulo"
 #: activities/simplepaint/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Draw in a grid"
-msgstr "Desenhe em uma grade."
+msgstr "Desenhe em uma grade"
 
 #. Help title
 #: activities/simplepaint/ActivityInfo.qml:17
@@ -27736,7 +27703,7 @@ msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
 "Click on the cloud."
 msgstr ""
-" O vapor de água condensa-se para formar as nuvens e, quando as nuvens ficam "
+"O vapor de água condensa-se para formar as nuvens e, quando as nuvens ficam "
 "pesadas, chove. Clique na nuvem."
 
 #: activities/watercycle/Watercycle.qml:117
@@ -27885,7 +27852,7 @@ msgstr "Várias melhorias de usabilidade"
 #: core/ChangeLog.qml:102 core/ChangeLog.qml:140 core/ChangeLog.qml:146
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
-msgstr "Várias correções de erros."
+msgstr "Várias correções de erros"
 
 #: core/ChangeLog.qml:44
 msgctxt "ChangeLog|"
@@ -28078,7 +28045,7 @@ msgstr ""
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr ""
-"Novo menu de configurações da atividade, com a seleção de conjuntos de dados."
+"Novo menu de configurações da atividade, com a seleção de conjuntos de dados"
 
 #: core/ChangeLog.qml:149
 msgctxt "ChangeLog|"
@@ -28114,7 +28081,7 @@ msgstr "Nova opção no xadrez de exibição das peças capturadas."
 #: core/ChangeLog.qml:155
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
-msgstr "Novas imagens em Cores, Cores Avançadas e Tiro ao Alvo"
+msgstr "Novas imagens em Cores, Cores Avançadas e Tiro ao Alvo."
 
 #: core/ChangeLog.qml:156
 msgctxt "ChangeLog|"
@@ -28959,6 +28926,35 @@ msgstr "Pular"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Iniciar"
+
+# Translation of gcompris_qt.po to Brazilian Portuguese
+# Copyright (C) 2014-2016 This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Aracele Torres <aracele@kde.org>, 2014.
+# Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2014, 2015, 2017, 2018, 2019, 2020, 2022, 2023.
+# André Marcelo Alvarenga <alvarenga@kde.org>, 2014, 2015, 2016.
+# Edely <edely.gomes@gmail.com>, 2015.
+# SPDX-FileCopyrightText: 2015, 2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Frederico Goncalves Guimaraes <frederico@teia.bio.br>
+# SPDX-FileCopyrightText: 2023, 2025 Geraldo Simiao <geraldosimiao@fedoraproject.org>
+# SPDX-FileCopyrightText: 2025 Guilherme Marçal Silva <guimarcalsilva@gmail.com>
+# SPDX-FileCopyrightText: 2025 Marcus Gama <marcus.gama@gmail.com>
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ msgstr ""
+#~ "Project-Id-Version: gcompris_qt\n"
+#~ "POT-Creation-Date: \n"
+#~ "PO-Revision-Date: 2025-12-12 07:20-0300\n"
+#~ "Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
+#~ "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
+#~ "Language: pt_BR\n"
+#~ "MIME-Version: 1.0\n"
+#~ "Content-Type: text/plain; charset=UTF-8\n"
+#~ "Content-Transfer-Encoding: 8bit\n"
+#~ "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+#~ "X-Language: pt_BR\n"
+#~ "X-Qt-Contexts: true\n"
+#~ "X-Generator: Lokalize 25.08.3\n"
 
 #~ msgctxt "DrawingWheels|"
 #~ msgid "Export image (PNG)"

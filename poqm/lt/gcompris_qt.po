@@ -6707,44 +6707,6 @@ msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
 msgstr "Piešimo įrankiai"
 
-# translation of GCompris-QT to Lithuanian
-# Lithuanian translation of GCompris.
-# Copyright (C)
-#
-# Liudas Dmitrijevas <liudasdm@gmail.com>, 2003.
-# Eglė Kriaučiūnienė <egle@akl.lt>, 2001-2014.
-# Gintautas Miliauskas <gintas@akl.lt>, 2006.
-# Jurgis Pralgauskis <jurgis@ljms.lt>, 2007.
-# Aurimas Černius <aurisc4@gmail.com>, 2013, 2014.
-# Mantas Kriaučiūnas <tinklas@tinklas.eu>, 2001-2021.
-# Jonas Jakštys <jonasjakstys1@gmail.com>, 2021, 2023, 2025.
-# Jokūbas Jakštys <rolasorama@gmail.com>, 2025.
-# Rolandas Jakštys <rolandas@jakstys.lt>, 2021-2025.
-# Bernardas Liukaitis <BernardasL@protonmail.com>, 2021-2024.
-#
-#. Help title
-#: activities/drawing_wheels/ActivityInfo.qml:16
-#, fuzzy
-#| msgid ""
-msgctxt "ActivityInfo|"
-msgid ""
-msgstr ""
-"Project-Id-Version: GCompris-QT\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-02-08 20:09+0200\n"
-"Last-Translator: Rolandas Jakštys <rolandas@jakstys.lt>\n"
-"Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
-"Language: lt\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
-"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Poedit 3.5\n"
-"X-Language: lt\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Qt-Contexts: true\n"
-
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
@@ -6798,17 +6760,17 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ctrl + O; įkelti paveikslėlį"
 
-#: activities/drawing_wheels/DrawingWheels.qml:360
+#: activities/drawing_wheels/DrawingWheels.qml:375
 msgctxt "DrawingWheels|"
 msgid "Save drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:372
+#: activities/drawing_wheels/DrawingWheels.qml:387
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:396
+#: activities/drawing_wheels/DrawingWheels.qml:411
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Piano composition"
@@ -6816,7 +6778,7 @@ msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr "Pianino kompozicija"
 
-#: activities/drawing_wheels/DrawingWheels.qml:408
+#: activities/drawing_wheels/DrawingWheels.qml:423
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font selector"
@@ -6824,7 +6786,7 @@ msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr "Šrifto pasirinkimas"
 
-#: activities/drawing_wheels/DrawingWheels.qml:435
+#: activities/drawing_wheels/DrawingWheels.qml:450
 #, fuzzy
 #| msgctxt "OptionsRow|"
 #| msgid "Undo"
@@ -6832,32 +6794,32 @@ msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Atšauk veiksmą"
 
-#: activities/drawing_wheels/DrawingWheels.qml:447
+#: activities/drawing_wheels/DrawingWheels.qml:462
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:481
+#: activities/drawing_wheels/DrawingWheels.qml:496
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:481
+#: activities/drawing_wheels/DrawingWheels.qml:496
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:514
+#: activities/drawing_wheels/DrawingWheels.qml:529
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:514
+#: activities/drawing_wheels/DrawingWheels.qml:529
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:673
+#: activities/drawing_wheels/DrawingWheels.qml:688
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Save your image"
@@ -6865,7 +6827,7 @@ msgctxt "DrawingWheels|"
 msgid "Save vector image (SVG)"
 msgstr "Išsaugoti paveikslėlį"
 
-#: activities/drawing_wheels/DrawingWheels.qml:687
+#: activities/drawing_wheels/DrawingWheels.qml:702
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Open an image"
@@ -6873,7 +6835,7 @@ msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Įkelti paveikslėlį"
 
-#: activities/drawing_wheels/DrawingWheels.qml:716
+#: activities/drawing_wheels/DrawingWheels.qml:731
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Create a new image"
@@ -6881,7 +6843,7 @@ msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Sukurti naują paveikslėlį"
 
-#: activities/drawing_wheels/DrawingWheels.qml:735
+#: activities/drawing_wheels/DrawingWheels.qml:750
 #, fuzzy
 #| msgctxt "BackgroundColorSelector|"
 #| msgid "Background color"
@@ -6889,17 +6851,17 @@ msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Fono spalva"
 
-#: activities/drawing_wheels/DrawingWheels.qml:805
+#: activities/drawing_wheels/DrawingWheels.qml:820
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:880
+#: activities/drawing_wheels/DrawingWheels.qml:895
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:943
+#: activities/drawing_wheels/DrawingWheels.qml:958
 #, fuzzy, qt-format
 #| msgctxt "SignalGenerator|"
 #| msgid "%1 s"
@@ -6907,7 +6869,7 @@ msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 s"
 
-#: activities/drawing_wheels/DrawingWheels.qml:961
+#: activities/drawing_wheels/DrawingWheels.qml:976
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Speed"
@@ -6915,17 +6877,17 @@ msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Greitis"
 
-#: activities/drawing_wheels/DrawingWheels.qml:977
+#: activities/drawing_wheels/DrawingWheels.qml:992
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:997
+#: activities/drawing_wheels/DrawingWheels.qml:1012
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1040
+#: activities/drawing_wheels/DrawingWheels.qml:1055
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font size"
@@ -6933,7 +6895,7 @@ msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "Šrifto dydis"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1077
+#: activities/drawing_wheels/DrawingWheels.qml:1092
 #, fuzzy
 #| msgctxt "ToolsPanel|"
 #| msgid "Opacity"
@@ -6941,12 +6903,12 @@ msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Neskaidrumas"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1120
+#: activities/drawing_wheels/DrawingWheels.qml:1135
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1158
+#: activities/drawing_wheels/DrawingWheels.qml:1173
 #, fuzzy
 #| msgctxt "IntroMessage|"
 #| msgid "Start"
@@ -6954,7 +6916,7 @@ msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "Pradėti"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1336
+#: activities/drawing_wheels/DrawingWheels.qml:1351
 #, fuzzy
 #| msgctxt "Sketch|"
 #| msgid "You did not save this image. Do you want to close this activity?"
@@ -6962,7 +6924,7 @@ msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Tu neišsaugojai paveiksliuko. Ar tikrai nori užbaigti šią pamokėlę?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1337
+#: activities/drawing_wheels/DrawingWheels.qml:1352
 #, fuzzy
 #| msgctxt "Sketch|"
 #| msgid "Do you want to erase this image?"
@@ -6970,7 +6932,7 @@ msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Ar nori ištrinti šį paveikslėlį?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1338
+#: activities/drawing_wheels/DrawingWheels.qml:1353
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -6978,7 +6940,7 @@ msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Taip"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1339
+#: activities/drawing_wheels/DrawingWheels.qml:1354
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -29009,6 +28971,42 @@ msgstr "Praleisti"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Pradėti"
+
+# translation of GCompris-QT to Lithuanian
+# Lithuanian translation of GCompris.
+# Copyright (C)
+#
+# Liudas Dmitrijevas <liudasdm@gmail.com>, 2003.
+# Eglė Kriaučiūnienė <egle@akl.lt>, 2001-2014.
+# Gintautas Miliauskas <gintas@akl.lt>, 2006.
+# Jurgis Pralgauskis <jurgis@ljms.lt>, 2007.
+# Aurimas Černius <aurisc4@gmail.com>, 2013, 2014.
+# Mantas Kriaučiūnas <tinklas@tinklas.eu>, 2001-2021.
+# Jonas Jakštys <jonasjakstys1@gmail.com>, 2021, 2023, 2025.
+# Jokūbas Jakštys <rolasorama@gmail.com>, 2025.
+# Rolandas Jakštys <rolandas@jakstys.lt>, 2021-2025.
+# Bernardas Liukaitis <BernardasL@protonmail.com>, 2021-2024.
+#
+#, fuzzy
+#~| msgid ""
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ msgstr ""
+#~ "Project-Id-Version: GCompris-QT\n"
+#~ "POT-Creation-Date: \n"
+#~ "PO-Revision-Date: 2025-02-08 20:09+0200\n"
+#~ "Last-Translator: Rolandas Jakštys <rolandas@jakstys.lt>\n"
+#~ "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
+#~ "Language: lt\n"
+#~ "MIME-Version: 1.0\n"
+#~ "Content-Type: text/plain; charset=UTF-8\n"
+#~ "Content-Transfer-Encoding: 8bit\n"
+#~ "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
+#~ "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
+#~ "X-Generator: Poedit 3.5\n"
+#~ "X-Language: lt\n"
+#~ "X-Poedit-SourceCharset: UTF-8\n"
+#~ "X-Qt-Contexts: true\n"
 
 #, fuzzy
 #~| msgctxt "category_colors|"
