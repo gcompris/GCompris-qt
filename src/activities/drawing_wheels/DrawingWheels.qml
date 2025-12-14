@@ -687,7 +687,7 @@ ActivityBase {
                         maxWidth: panelManager.maxContentWidth
                         height: filePanel.buttonSize
                         iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileSave.svg"
-                        text: qsTr("Save image)")
+                        text: qsTr("Save your image")
                         textColor: GCStyle.contentColor
                         enabled: !items.fileIsEmpty
 
