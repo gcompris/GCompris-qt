@@ -13,7 +13,7 @@ import core 1.0
 ActivityInfo {
   name: "drawing_wheels/DrawingWheels.qml"
   difficulty: 1
-  icon: "drawing_wheels/be.root.svg"
+  icon: "drawing_wheels/drawing_wheels.svg"
   author: "Bruno Anselme &lt;be.root@free.fr&gt;, Timothée Giet &lt;animtim@gmail.com&gt;"
   //: Activity title
   title: qsTr("Drawing wheels")

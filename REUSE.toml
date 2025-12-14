@@ -1831,13 +1831,13 @@ SPDX-FileCopyrightText = "2018 Timothée Giet"
 SPDX-License-Identifier = "CC-BY-SA-4.0"
 
 [[annotations]]
-path = ["src/activities/drawing_wheels/resource/play.svg", "src/activities/drawing_wheels/resource/stop.svg", "src/activities/drawing_wheels/resource/visible.svg", "src/activities/drawing_wheels/resource/hidden.svg"]
+path = [, "src/activities/drawing_wheels/drawing_wheels.svg", "src/activities/drawing_wheels/resource/play.svg", "src/activities/drawing_wheels/resource/stop.svg", "src/activities/drawing_wheels/resource/visible.svg", "src/activities/drawing_wheels/resource/hidden.svg"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2018, 2025 Timothée Giet"
 SPDX-License-Identifier = "CC-BY-SA-4.0"
 
 [[annotations]]
-path = ["src/activities/drawing_wheels/resource/gear.svg", "src/activities/drawing_wheels/resource/wheel.svg", "src/activities/drawing_wheels/be.root.svg" ]
+path = ["src/activities/drawing_wheels/resource/gear.svg", "src/activities/drawing_wheels/resource/wheel.svg"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2025 Bruno Anselme"
 SPDX-License-Identifier = "CC-BY-SA-4.0"
