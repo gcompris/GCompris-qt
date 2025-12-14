@@ -80,11 +80,11 @@ Item {
     }
 
     function clear(color) { // fill background
-        source += `<rect x="0" y="0" width="${Math.ceil(svgSize)}" height="${Math.ceil(svgSize)}" stroke="none" fill="${color}" />\n`
+        source += `<rect x="0" y="0" width="${Math.ceil(svgSize)}" height="${Math.ceil(svgSize)}" style="fill:${color};stroke:none;" />\n`
     }
 
     function rectangle(w, h, color) {
-        undoStack.push(`<rect x="0" y="0" width="${w}" height="${h}" stroke="none" fill="${color}" />`)
+        undoStack.push(`<rect x="0" y="0" width="${w}" height="${h}" style="fill:${color};stroke:none;" />`)
     }
 
     function openPath(x, y) {
@@ -104,7 +104,7 @@ Item {
     }
 
     function finishPath() {
-        undoStack.push(`<path d="${path}" fill="${fill}" stroke="${stroke}" stroke-width="${strokeWidth}" opacity="${svgOpacity}" stroke-linecap="round" stroke-linejoin="round"/>\n`)
+        undoStack.push(`<path d="${path}" style="fill:${fill};stroke:${stroke};stroke-width:${strokeWidth};opacity:${svgOpacity};stroke-linecap:round;stroke-linejoin:round;"/>\n`)
         path = ""
         redoStack = []      // redo stack is cleared when a new path is pushed
     }
