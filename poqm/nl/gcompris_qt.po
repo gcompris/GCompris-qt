@@ -189,7 +189,7 @@ msgstr ""
 #: activities/colors/ActivityInfo.qml:25
 #: activities/comparator/ActivityInfo.qml:27
 #: activities/crane/ActivityInfo.qml:30
-#: activities/drawing_wheels/ActivityInfo.qml:24
+#: activities/drawing_wheels/ActivityInfo.qml:29
 #: activities/enumerate/ActivityInfo.qml:25
 #: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
@@ -6667,198 +6667,207 @@ msgstr ""
 "laten crashen als uw apparaat niet genoeg geheugen heeft."
 
 #. Activity title
-#: activities/drawing_wheels/ActivityInfo.qml:14
+#: activities/drawing_wheels/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
 msgstr "Wielen tekenen"
 
-#. Help goal
-#: activities/drawing_wheels/ActivityInfo.qml:19
+#. Help title
+#: activities/drawing_wheels/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Touch the numbers in the right order."
 msgctxt "ActivityInfo|"
-msgid ""
-"Make beautiful drawings by turning the gear in the cogwheel with the chosen "
-"pen."
-msgstr ""
-"Maak prachtige tekeningen door met de gekozen pen aan het werktuig in het "
-"tandwiel te draaien."
+msgid "Roll the gear in the cogwheel to draw."
+msgstr "Raak de getallen aan in de juiste volgorde."
+
+#. Help goal
+#: activities/drawing_wheels/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn about some digital painting tools."
+msgctxt "ActivityInfo|"
+msgid "Discover hypotrochoids and use them as digital painting tools."
+msgstr "Leren over enige hulpmiddelen voor tekenen."
 
 #. Help manual
-#: activities/drawing_wheels/ActivityInfo.qml:23
+#: activities/drawing_wheels/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid ""
-"Select wheel, gear, pen's position and color from the foldable panels and "
-"start the gear.<br><br>"
+"Make beautiful drawings by rolling the gear in the cogwheel with the chosen "
+"pen. Select a wheel size, a gear size, pen's settings and color from the "
+"popup panels, and press the play button to roll the gear. You can use the "
+"file menu to save your image, open a previously saved image, or create a new "
+"image with selected background color. Saving an image will save it in an SVG "
+"file (vector format), along with a PNG file (pixel format). Only the SVG "
+"file can be opened again from the activity.<br><br>"
 msgstr ""
-"Selecteer het wiel, het werktuig, de positie van de pen en de kleur via de "
-"uitklapbare panelen en start het werktuig.<br><br>"
 
-#: activities/drawing_wheels/ActivityInfo.qml:25
+#: activities/drawing_wheels/ActivityInfo.qml:30
 #: activities/sketch/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
 msgstr "Ctrl + Z: laatste actie ongedaan maken"
 
-#: activities/drawing_wheels/ActivityInfo.qml:26
+#: activities/drawing_wheels/ActivityInfo.qml:31
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
 msgstr "Ctrl + Y: laatste actie weer opnieuw doen"
 
-#: activities/drawing_wheels/ActivityInfo.qml:27
+#: activities/drawing_wheels/ActivityInfo.qml:32
 #: activities/sketch/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
 msgstr "Ctrl + S: de afbeelding opslaan"
 
-#: activities/drawing_wheels/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Ctrl + D: save the drawing"
-msgstr "Ctrl + D: sla de tekening op"
-
-#: activities/drawing_wheels/ActivityInfo.qml:29
+#: activities/drawing_wheels/ActivityInfo.qml:33
 #: activities/sketch/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ctrl + O: een afbeelding openen"
 
-#: activities/drawing_wheels/DrawingWheels.qml:375
+#: activities/drawing_wheels/DrawingWheels.qml:377
 msgctxt "DrawingWheels|"
-msgid "Save drawing"
-msgstr "Tekening opslaan"
+msgid "File menu"
+msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:387
+#: activities/drawing_wheels/DrawingWheels.qml:389
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr "Wielen werktuig"
 
-#: activities/drawing_wheels/DrawingWheels.qml:411
+#: activities/drawing_wheels/DrawingWheels.qml:413
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr "Potloodgrootte en positie"
 
-#: activities/drawing_wheels/DrawingWheels.qml:423
+#: activities/drawing_wheels/DrawingWheels.qml:425
 msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr "Kleurenkiezer"
 
-#: activities/drawing_wheels/DrawingWheels.qml:450
+#: activities/drawing_wheels/DrawingWheels.qml:452
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Ongedaan maken"
 
-#: activities/drawing_wheels/DrawingWheels.qml:462
+#: activities/drawing_wheels/DrawingWheels.qml:464
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "Opnieuw"
 
-#: activities/drawing_wheels/DrawingWheels.qml:496
+#: activities/drawing_wheels/DrawingWheels.qml:498
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr "Tekenen stoppen"
 
-#: activities/drawing_wheels/DrawingWheels.qml:496
+#: activities/drawing_wheels/DrawingWheels.qml:498
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr "Met tekenen beginnen"
 
-#: activities/drawing_wheels/DrawingWheels.qml:529
+#: activities/drawing_wheels/DrawingWheels.qml:531
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr "Wiel en werktuig tonen"
 
-#: activities/drawing_wheels/DrawingWheels.qml:529
+#: activities/drawing_wheels/DrawingWheels.qml:531
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr "Wiel en werktuig verbergen"
 
-#: activities/drawing_wheels/DrawingWheels.qml:688
+#: activities/drawing_wheels/DrawingWheels.qml:690
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Save your image"
 msgctxt "DrawingWheels|"
-msgid "Save vector image (SVG)"
-msgstr "Sla afbeelding op (SVG)"
+msgid "Save your image"
+msgstr "Sla uw afbeelding op"
 
-#: activities/drawing_wheels/DrawingWheels.qml:702
+#: activities/drawing_wheels/DrawingWheels.qml:705
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Een afbeelding openen"
 
-#: activities/drawing_wheels/DrawingWheels.qml:731
+#: activities/drawing_wheels/DrawingWheels.qml:734
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Een nieuwe afbeelding aanmaken"
 
-#: activities/drawing_wheels/DrawingWheels.qml:750
+#: activities/drawing_wheels/DrawingWheels.qml:753
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Achtergrondkleur"
 
-#: activities/drawing_wheels/DrawingWheels.qml:820
+#: activities/drawing_wheels/DrawingWheels.qml:823
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr "Wiel"
 
-#: activities/drawing_wheels/DrawingWheels.qml:895
+#: activities/drawing_wheels/DrawingWheels.qml:898
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr "Werktuig"
 
-#: activities/drawing_wheels/DrawingWheels.qml:958
+#: activities/drawing_wheels/DrawingWheels.qml:961
 #, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 pieken"
 
-#: activities/drawing_wheels/DrawingWheels.qml:976
+#: activities/drawing_wheels/DrawingWheels.qml:979
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Snelheid"
 
-#: activities/drawing_wheels/DrawingWheels.qml:992
+#: activities/drawing_wheels/DrawingWheels.qml:995
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr "Traag"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1012
+#: activities/drawing_wheels/DrawingWheels.qml:1015
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr "Snel"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1055
+#: activities/drawing_wheels/DrawingWheels.qml:1058
 msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "Pengrootte"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1092
+#: activities/drawing_wheels/DrawingWheels.qml:1095
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Dekking"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1135
+#: activities/drawing_wheels/DrawingWheels.qml:1138
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr "Offset"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1173
+#: activities/drawing_wheels/DrawingWheels.qml:1176
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "Begintand"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1351
+#: activities/drawing_wheels/DrawingWheels.qml:1356
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 "Je hebt deze afbeelding niet opgeslagen. Wil je deze activiteit sluiten?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1352
+#: activities/drawing_wheels/DrawingWheels.qml:1357
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Wil je deze afbeelding wissen?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1353
+#: activities/drawing_wheels/DrawingWheels.qml:1358
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Ja"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1354
+#: activities/drawing_wheels/DrawingWheels.qml:1359
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "Nee"
@@ -28473,70 +28482,70 @@ msgctxt "QObject|"
 msgid "No data found for %1."
 msgstr "Geen gegevens gevonden voor %1."
 
-#: core/GCCreationHandler.qml:176
+#: core/GCCreationHandler.qml:184
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "%1 deleted successfully!"
 msgstr "%1 met succes verwijderd!"
 
-#: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
-#: core/GCCreationHandler.qml:235
+#: core/GCCreationHandler.qml:185 core/GCCreationHandler.qml:193
+#: core/GCCreationHandler.qml:252
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr "OK"
 
-#: core/GCCreationHandler.qml:181
+#: core/GCCreationHandler.qml:192
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete %1!"
 msgstr "Kan %1 niet verwijderen!"
 
-#: core/GCCreationHandler.qml:215
+#: core/GCCreationHandler.qml:229
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
 msgstr "Een bestand met deze naam bestaat al. Wil je het vervangen?"
 
-#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
+#: core/GCCreationHandler.qml:230 core/GCCreationHandler.qml:237
 msgctxt "GCCreationHandler|"
 msgid "Yes"
 msgstr "Ja"
 
-#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
+#: core/GCCreationHandler.qml:230 core/GCCreationHandler.qml:237
 msgctxt "GCCreationHandler|"
 msgid "No"
 msgstr "Nee"
 
-#: core/GCCreationHandler.qml:222
+#: core/GCCreationHandler.qml:236
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
 msgstr "Wil je echt dit bestand verwijderen?"
 
-#: core/GCCreationHandler.qml:234
+#: core/GCCreationHandler.qml:251
 msgctxt "GCCreationHandler|"
 msgid "Saved successfully!"
 msgstr "Met succes opgeslagen!"
 
-#: core/GCCreationHandler.qml:265
+#: core/GCCreationHandler.qml:282
 msgctxt "GCCreationHandler|"
 msgid "Enter file name"
 msgstr "Bestandnaam invoeren"
 
-#: core/GCCreationHandler.qml:265
+#: core/GCCreationHandler.qml:282
 msgctxt "GCCreationHandler|"
 msgid "Search"
 msgstr "Zoeken"
 
-#: core/GCCreationHandler.qml:279
+#: core/GCCreationHandler.qml:296
 msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "Opslaan"
 
-#: core/GCCreationHandler.qml:385
+#: core/GCCreationHandler.qml:406
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "Laden"
 
-#: core/GCCreationHandler.qml:395
+#: core/GCCreationHandler.qml:416
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Verwijderen"
@@ -28792,6 +28801,34 @@ msgstr "Overslaan"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Begin"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Make beautiful drawings by turning the gear in the cogwheel with the "
+#~ "chosen pen."
+#~ msgstr ""
+#~ "Maak prachtige tekeningen door met de gekozen pen aan het werktuig in het "
+#~ "tandwiel te draaien."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Select wheel, gear, pen's position and color from the foldable panels and "
+#~ "start the gear.<br><br>"
+#~ msgstr ""
+#~ "Selecteer het wiel, het werktuig, de positie van de pen en de kleur via "
+#~ "de uitklapbare panelen en start het werktuig.<br><br>"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Ctrl + D: save the drawing"
+#~ msgstr "Ctrl + D: sla de tekening op"
+
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Save drawing"
+#~ msgstr "Tekening opslaan"
+
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Save vector image (SVG)"
+#~ msgstr "Sla afbeelding op (SVG)"
 
 # SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Freek de Kruijf <freekdekruijf@kde.nl>
 # Jan Mussche <mijninternet2016@gmail.com>, 2018.
@@ -29209,10 +29246,6 @@ msgstr "Begin"
 #~ msgstr ""
 #~ "Speel tegen een vriend. Om beurten moet je eerst negen stukken plaatsen "
 #~ "en daarna om de beurt jouw stukken verplaatsen."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Touch the numbers in the right order."
-#~ msgstr "Raak de getallen aan in de juiste volgorde."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Can decide chronological order of events."

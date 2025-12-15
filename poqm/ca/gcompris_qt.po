@@ -201,7 +201,7 @@ msgstr ""
 #: activities/colors/ActivityInfo.qml:25
 #: activities/comparator/ActivityInfo.qml:27
 #: activities/crane/ActivityInfo.qml:30
-#: activities/drawing_wheels/ActivityInfo.qml:24
+#: activities/drawing_wheels/ActivityInfo.qml:29
 #: activities/enumerate/ActivityInfo.qml:25
 #: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
@@ -6933,197 +6933,203 @@ msgstr ""
 "si el dispositiu no té prou memòria."
 
 #. Activity title
-#: activities/drawing_wheels/ActivityInfo.qml:14
+#: activities/drawing_wheels/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
 msgstr "Rodes de dibuix"
 
-#. Help goal
-#: activities/drawing_wheels/ActivityInfo.qml:19
+#. Help title
+#: activities/drawing_wheels/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
-msgid ""
-"Make beautiful drawings by turning the gear in the cogwheel with the chosen "
-"pen."
+msgid "Roll the gear in the cogwheel to draw."
 msgstr ""
-"Fes dibuixos bonics girant l'engranatge a la roda dentada amb el llapis "
-"triat."
+
+#. Help goal
+#: activities/drawing_wheels/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn about some digital painting tools."
+msgctxt "ActivityInfo|"
+msgid "Discover hypotrochoids and use them as digital painting tools."
+msgstr "Aprendre sobre algunes eines de pintura digital."
 
 #. Help manual
-#: activities/drawing_wheels/ActivityInfo.qml:23
+#: activities/drawing_wheels/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid ""
-"Select wheel, gear, pen's position and color from the foldable panels and "
-"start the gear.<br><br>"
+"Make beautiful drawings by rolling the gear in the cogwheel with the chosen "
+"pen. Select a wheel size, a gear size, pen's settings and color from the "
+"popup panels, and press the play button to roll the gear. You can use the "
+"file menu to save your image, open a previously saved image, or create a new "
+"image with selected background color. Saving an image will save it in an SVG "
+"file (vector format), along with a PNG file (pixel format). Only the SVG "
+"file can be opened again from the activity.<br><br>"
 msgstr ""
-"Selecciona la roda, l'engranatge, la posició del llapis i el color de les "
-"subfinestres plegables i inicia l'engranatge.<br><br>"
 
-#: activities/drawing_wheels/ActivityInfo.qml:25
+#: activities/drawing_wheels/ActivityInfo.qml:30
 #: activities/sketch/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
 msgstr "Ctrl + Z: desfà l'última acció"
 
-#: activities/drawing_wheels/ActivityInfo.qml:26
+#: activities/drawing_wheels/ActivityInfo.qml:31
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
 msgstr "Ctrl + Y: refà l'última acció"
 
-#: activities/drawing_wheels/ActivityInfo.qml:27
+#: activities/drawing_wheels/ActivityInfo.qml:32
 #: activities/sketch/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
 msgstr "Ctrl + S: desa la imatge"
 
-#: activities/drawing_wheels/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Ctrl + D: save the drawing"
-msgstr "Ctrl + S: desa el dibuix"
-
-#: activities/drawing_wheels/ActivityInfo.qml:29
+#: activities/drawing_wheels/ActivityInfo.qml:33
 #: activities/sketch/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ctrl + O: obre una imatge"
 
-#: activities/drawing_wheels/DrawingWheels.qml:375
+#: activities/drawing_wheels/DrawingWheels.qml:377
 msgctxt "DrawingWheels|"
-msgid "Save drawing"
-msgstr "Desa el dibuix"
+msgid "File menu"
+msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:387
+#: activities/drawing_wheels/DrawingWheels.qml:389
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr "Roda i engranatge"
 
-#: activities/drawing_wheels/DrawingWheels.qml:411
+#: activities/drawing_wheels/DrawingWheels.qml:413
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr "Mida i posició del llapis"
 
-#: activities/drawing_wheels/DrawingWheels.qml:423
+#: activities/drawing_wheels/DrawingWheels.qml:425
 msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr "Selector de color"
 
-#: activities/drawing_wheels/DrawingWheels.qml:450
+#: activities/drawing_wheels/DrawingWheels.qml:452
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Desfés"
 
-#: activities/drawing_wheels/DrawingWheels.qml:462
+#: activities/drawing_wheels/DrawingWheels.qml:464
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "Refés"
 
-#: activities/drawing_wheels/DrawingWheels.qml:496
+#: activities/drawing_wheels/DrawingWheels.qml:498
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr "Atura el dibuix"
 
-#: activities/drawing_wheels/DrawingWheels.qml:496
+#: activities/drawing_wheels/DrawingWheels.qml:498
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr "Inicia el dibuix"
 
-#: activities/drawing_wheels/DrawingWheels.qml:529
+#: activities/drawing_wheels/DrawingWheels.qml:531
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr "Mostra la roda i l'engranatge"
 
-#: activities/drawing_wheels/DrawingWheels.qml:529
+#: activities/drawing_wheels/DrawingWheels.qml:531
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr "Oculta la roda i l'engranatge"
 
-#: activities/drawing_wheels/DrawingWheels.qml:688
+#: activities/drawing_wheels/DrawingWheels.qml:690
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Save your image"
 msgctxt "DrawingWheels|"
-msgid "Save vector image (SVG)"
-msgstr "Desa la imatge vectorial (SVG)"
+msgid "Save your image"
+msgstr "Desa la imatge"
 
-#: activities/drawing_wheels/DrawingWheels.qml:702
+#: activities/drawing_wheels/DrawingWheels.qml:705
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Obre una imatge"
 
-#: activities/drawing_wheels/DrawingWheels.qml:731
+#: activities/drawing_wheels/DrawingWheels.qml:734
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Crea una imatge nova"
 
-#: activities/drawing_wheels/DrawingWheels.qml:750
+#: activities/drawing_wheels/DrawingWheels.qml:753
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Color de fons"
 
-#: activities/drawing_wheels/DrawingWheels.qml:820
+#: activities/drawing_wheels/DrawingWheels.qml:823
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr "Roda"
 
-#: activities/drawing_wheels/DrawingWheels.qml:895
+#: activities/drawing_wheels/DrawingWheels.qml:898
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr "Engranatge"
 
-#: activities/drawing_wheels/DrawingWheels.qml:958
+#: activities/drawing_wheels/DrawingWheels.qml:961
 #, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 dents"
 
-#: activities/drawing_wheels/DrawingWheels.qml:976
+#: activities/drawing_wheels/DrawingWheels.qml:979
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Velocitat"
 
-#: activities/drawing_wheels/DrawingWheels.qml:992
+#: activities/drawing_wheels/DrawingWheels.qml:995
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr "Lenta"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1012
+#: activities/drawing_wheels/DrawingWheels.qml:1015
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr "Ràpida"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1055
+#: activities/drawing_wheels/DrawingWheels.qml:1058
 msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "Mida del llapis"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1092
+#: activities/drawing_wheels/DrawingWheels.qml:1095
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Opacitat"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1135
+#: activities/drawing_wheels/DrawingWheels.qml:1138
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr "Decalatge"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1173
+#: activities/drawing_wheels/DrawingWheels.qml:1176
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "Dent d'inici"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1351
+#: activities/drawing_wheels/DrawingWheels.qml:1356
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "No has desat aquesta imatge. Vols tancar aquesta activitat?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1352
+#: activities/drawing_wheels/DrawingWheels.qml:1357
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Vols esborrar aquesta imatge?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1353
+#: activities/drawing_wheels/DrawingWheels.qml:1358
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Sí"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1354
+#: activities/drawing_wheels/DrawingWheels.qml:1359
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "No"
@@ -28918,70 +28924,70 @@ msgctxt "QObject|"
 msgid "No data found for %1."
 msgstr "No s'han trobat les dades per a %1."
 
-#: core/GCCreationHandler.qml:176
+#: core/GCCreationHandler.qml:184
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "%1 deleted successfully!"
 msgstr "S'ha suprimit %1 amb èxit!"
 
-#: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
-#: core/GCCreationHandler.qml:235
+#: core/GCCreationHandler.qml:185 core/GCCreationHandler.qml:193
+#: core/GCCreationHandler.qml:252
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr "D'acord"
 
-#: core/GCCreationHandler.qml:181
+#: core/GCCreationHandler.qml:192
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete %1!"
 msgstr "No s'ha pogut suprimir %1!"
 
-#: core/GCCreationHandler.qml:215
+#: core/GCCreationHandler.qml:229
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
 msgstr "Ja existeix un fitxer amb aquest nom. Vols substituir-lo?"
 
-#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
+#: core/GCCreationHandler.qml:230 core/GCCreationHandler.qml:237
 msgctxt "GCCreationHandler|"
 msgid "Yes"
 msgstr "Sí"
 
-#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
+#: core/GCCreationHandler.qml:230 core/GCCreationHandler.qml:237
 msgctxt "GCCreationHandler|"
 msgid "No"
 msgstr "No"
 
-#: core/GCCreationHandler.qml:222
+#: core/GCCreationHandler.qml:236
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
 msgstr "Tens clar que vols suprimir aquest fitxer?"
 
-#: core/GCCreationHandler.qml:234
+#: core/GCCreationHandler.qml:251
 msgctxt "GCCreationHandler|"
 msgid "Saved successfully!"
 msgstr "S'ha desat correctament!"
 
-#: core/GCCreationHandler.qml:265
+#: core/GCCreationHandler.qml:282
 msgctxt "GCCreationHandler|"
 msgid "Enter file name"
 msgstr "Introdueix un nom de fitxer"
 
-#: core/GCCreationHandler.qml:265
+#: core/GCCreationHandler.qml:282
 msgctxt "GCCreationHandler|"
 msgid "Search"
 msgstr "Cerca"
 
-#: core/GCCreationHandler.qml:279
+#: core/GCCreationHandler.qml:296
 msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "Desa"
 
-#: core/GCCreationHandler.qml:385
+#: core/GCCreationHandler.qml:406
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "Carrega"
 
-#: core/GCCreationHandler.qml:395
+#: core/GCCreationHandler.qml:416
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Suprimeix"
@@ -29239,6 +29245,34 @@ msgstr "Omet"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Inicia"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Make beautiful drawings by turning the gear in the cogwheel with the "
+#~ "chosen pen."
+#~ msgstr ""
+#~ "Fes dibuixos bonics girant l'engranatge a la roda dentada amb el llapis "
+#~ "triat."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Select wheel, gear, pen's position and color from the foldable panels and "
+#~ "start the gear.<br><br>"
+#~ msgstr ""
+#~ "Selecciona la roda, l'engranatge, la posició del llapis i el color de les "
+#~ "subfinestres plegables i inicia l'engranatge.<br><br>"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Ctrl + D: save the drawing"
+#~ msgstr "Ctrl + S: desa el dibuix"
+
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Save drawing"
+#~ msgstr "Desa el dibuix"
+
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Save vector image (SVG)"
+#~ msgstr "Desa la imatge vectorial (SVG)"
 
 # Translation of gcompris_qt.po to Catalan
 # Copyright (C) 2015-2025 This_file_is_part_of_KDE

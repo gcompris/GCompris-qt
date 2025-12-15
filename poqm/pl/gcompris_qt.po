@@ -189,7 +189,7 @@ msgstr ""
 #: activities/colors/ActivityInfo.qml:25
 #: activities/comparator/ActivityInfo.qml:27
 #: activities/crane/ActivityInfo.qml:30
-#: activities/drawing_wheels/ActivityInfo.qml:24
+#: activities/drawing_wheels/ActivityInfo.qml:29
 #: activities/enumerate/ActivityInfo.qml:25
 #: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
@@ -6640,7 +6640,7 @@ msgid ""
 msgstr ""
 
 #. Activity title
-#: activities/drawing_wheels/ActivityInfo.qml:14
+#: activities/drawing_wheels/ActivityInfo.qml:19
 #, fuzzy
 #| msgctxt "BrushToolPanel|"
 #| msgid "Drawing Tools"
@@ -6648,69 +6648,72 @@ msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
 msgstr "Narzędzia rysowania"
 
-#. Help goal
-#: activities/drawing_wheels/ActivityInfo.qml:19
-msgctxt "ActivityInfo|"
-msgid ""
-"Make beautiful drawings by turning the gear in the cogwheel with the chosen "
-"pen."
-msgstr ""
-
-#. Help manual
-#: activities/drawing_wheels/ActivityInfo.qml:23
+#. Help title
+#: activities/drawing_wheels/ActivityInfo.qml:21
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select tools and colors from the foldable panels and draw images.<br><br>"
+#| msgid "Touch the numbers in the right order."
+msgctxt "ActivityInfo|"
+msgid "Roll the gear in the cogwheel to draw."
+msgstr "Dotykaj liczb w odpowiedniej kolejności."
+
+#. Help goal
+#: activities/drawing_wheels/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn about some digital painting tools."
+msgctxt "ActivityInfo|"
+msgid "Discover hypotrochoids and use them as digital painting tools."
+msgstr "Naucz się obsługi narzędzi do cyfrowego malowania."
+
+#. Help manual
+#: activities/drawing_wheels/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid ""
-"Select wheel, gear, pen's position and color from the foldable panels and "
-"start the gear.<br><br>"
-msgstr "Wybierz narzędzia i barwy z zwijalnych pasków i rysuj obrazy.<br> <br>"
+"Make beautiful drawings by rolling the gear in the cogwheel with the chosen "
+"pen. Select a wheel size, a gear size, pen's settings and color from the "
+"popup panels, and press the play button to roll the gear. You can use the "
+"file menu to save your image, open a previously saved image, or create a new "
+"image with selected background color. Saving an image will save it in an SVG "
+"file (vector format), along with a PNG file (pixel format). Only the SVG "
+"file can be opened again from the activity.<br><br>"
+msgstr ""
 
-#: activities/drawing_wheels/ActivityInfo.qml:25
+#: activities/drawing_wheels/ActivityInfo.qml:30
 #: activities/sketch/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
 msgstr "Ctrl + Z: wycofaj ostatnie działanie"
 
-#: activities/drawing_wheels/ActivityInfo.qml:26
+#: activities/drawing_wheels/ActivityInfo.qml:31
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
 msgstr "Ctrl + Y: ponów ostatnie działanie"
 
-#: activities/drawing_wheels/ActivityInfo.qml:27
+#: activities/drawing_wheels/ActivityInfo.qml:32
 #: activities/sketch/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
 msgstr "Ctrl + S: zapisz obraz"
 
-#: activities/drawing_wheels/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + S: save the image"
-msgctxt "ActivityInfo|"
-msgid "Ctrl + D: save the drawing"
-msgstr "Ctrl + S: zapisz obraz"
-
-#: activities/drawing_wheels/ActivityInfo.qml:29
+#: activities/drawing_wheels/ActivityInfo.qml:33
 #: activities/sketch/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ctrl + O: otwórz obraz"
 
-#: activities/drawing_wheels/DrawingWheels.qml:375
+#: activities/drawing_wheels/DrawingWheels.qml:377
 msgctxt "DrawingWheels|"
-msgid "Save drawing"
+msgid "File menu"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:387
+#: activities/drawing_wheels/DrawingWheels.qml:389
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:411
+#: activities/drawing_wheels/DrawingWheels.qml:413
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Piano composition"
@@ -6718,7 +6721,7 @@ msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr "Kompozycje pianistyczne"
 
-#: activities/drawing_wheels/DrawingWheels.qml:423
+#: activities/drawing_wheels/DrawingWheels.qml:425
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font selector"
@@ -6726,7 +6729,7 @@ msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr "Wybór czcionki"
 
-#: activities/drawing_wheels/DrawingWheels.qml:450
+#: activities/drawing_wheels/DrawingWheels.qml:452
 #, fuzzy
 #| msgctxt "OptionsRow|"
 #| msgid "Undo"
@@ -6734,7 +6737,7 @@ msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Cofnij"
 
-#: activities/drawing_wheels/DrawingWheels.qml:462
+#: activities/drawing_wheels/DrawingWheels.qml:464
 #, fuzzy
 #| msgctxt "Checkers|"
 #| msgid "Redo"
@@ -6742,35 +6745,35 @@ msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "Powtórz"
 
-#: activities/drawing_wheels/DrawingWheels.qml:496
+#: activities/drawing_wheels/DrawingWheels.qml:498
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:496
+#: activities/drawing_wheels/DrawingWheels.qml:498
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:529
+#: activities/drawing_wheels/DrawingWheels.qml:531
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:529
+#: activities/drawing_wheels/DrawingWheels.qml:531
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:688
+#: activities/drawing_wheels/DrawingWheels.qml:690
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Save your image"
 msgctxt "DrawingWheels|"
-msgid "Save vector image (SVG)"
+msgid "Save your image"
 msgstr "Zapisz swój obraz"
 
-#: activities/drawing_wheels/DrawingWheels.qml:702
+#: activities/drawing_wheels/DrawingWheels.qml:705
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Open an image"
@@ -6778,7 +6781,7 @@ msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Otwórz obraz"
 
-#: activities/drawing_wheels/DrawingWheels.qml:731
+#: activities/drawing_wheels/DrawingWheels.qml:734
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Create a new image"
@@ -6786,7 +6789,7 @@ msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Utwórz nowy obraz"
 
-#: activities/drawing_wheels/DrawingWheels.qml:750
+#: activities/drawing_wheels/DrawingWheels.qml:753
 #, fuzzy
 #| msgctxt "BackgroundColorSelector|"
 #| msgid "Background color"
@@ -6794,17 +6797,17 @@ msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Barwa tła"
 
-#: activities/drawing_wheels/DrawingWheels.qml:820
+#: activities/drawing_wheels/DrawingWheels.qml:823
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:895
+#: activities/drawing_wheels/DrawingWheels.qml:898
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:958
+#: activities/drawing_wheels/DrawingWheels.qml:961
 #, fuzzy, qt-format
 #| msgctxt "SignalGenerator|"
 #| msgid "%1 s"
@@ -6812,7 +6815,7 @@ msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 s"
 
-#: activities/drawing_wheels/DrawingWheels.qml:976
+#: activities/drawing_wheels/DrawingWheels.qml:979
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Speed"
@@ -6820,17 +6823,17 @@ msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Szybkość"
 
-#: activities/drawing_wheels/DrawingWheels.qml:992
+#: activities/drawing_wheels/DrawingWheels.qml:995
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1012
+#: activities/drawing_wheels/DrawingWheels.qml:1015
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1055
+#: activities/drawing_wheels/DrawingWheels.qml:1058
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font size"
@@ -6838,7 +6841,7 @@ msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "Rozmiar czcionki"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1092
+#: activities/drawing_wheels/DrawingWheels.qml:1095
 #, fuzzy
 #| msgctxt "ToolsPanel|"
 #| msgid "Opacity"
@@ -6846,12 +6849,12 @@ msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Nieprzezroczystość"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1135
+#: activities/drawing_wheels/DrawingWheels.qml:1138
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1173
+#: activities/drawing_wheels/DrawingWheels.qml:1176
 #, fuzzy
 #| msgctxt "IntroMessage|"
 #| msgid "Start"
@@ -6859,7 +6862,7 @@ msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "Rozpocznij"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1351
+#: activities/drawing_wheels/DrawingWheels.qml:1356
 #, fuzzy
 #| msgctxt "Sketch|"
 #| msgid "You did not save this image. Do you want to close this activity?"
@@ -6867,7 +6870,7 @@ msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Ten obraz jest niezapisany. Czy chcesz zamknąć tę aktywność?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1352
+#: activities/drawing_wheels/DrawingWheels.qml:1357
 #, fuzzy
 #| msgctxt "Sketch|"
 #| msgid "Do you want to erase this image?"
@@ -6875,7 +6878,7 @@ msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Czy na pewno wymazać ten obraz?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1353
+#: activities/drawing_wheels/DrawingWheels.qml:1358
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -6883,7 +6886,7 @@ msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Tak"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1354
+#: activities/drawing_wheels/DrawingWheels.qml:1359
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -28428,70 +28431,70 @@ msgctxt "QObject|"
 msgid "No data found for %1."
 msgstr "Nie znaleziono danych dla %1."
 
-#: core/GCCreationHandler.qml:176
+#: core/GCCreationHandler.qml:184
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "%1 deleted successfully!"
 msgstr "Usunięto pomyślnie %1!"
 
-#: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
-#: core/GCCreationHandler.qml:235
+#: core/GCCreationHandler.qml:185 core/GCCreationHandler.qml:193
+#: core/GCCreationHandler.qml:252
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr "OK"
 
-#: core/GCCreationHandler.qml:181
+#: core/GCCreationHandler.qml:192
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete %1!"
 msgstr "Nie można usunąć %1!"
 
-#: core/GCCreationHandler.qml:215
+#: core/GCCreationHandler.qml:229
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
 msgstr "Plik o tej nazwie już istnieje. Czy chcesz go zastąpić?"
 
-#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
+#: core/GCCreationHandler.qml:230 core/GCCreationHandler.qml:237
 msgctxt "GCCreationHandler|"
 msgid "Yes"
 msgstr "Tak"
 
-#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
+#: core/GCCreationHandler.qml:230 core/GCCreationHandler.qml:237
 msgctxt "GCCreationHandler|"
 msgid "No"
 msgstr "Nie"
 
-#: core/GCCreationHandler.qml:222
+#: core/GCCreationHandler.qml:236
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
 msgstr "Czy na pewno usunąć ten plik?"
 
-#: core/GCCreationHandler.qml:234
+#: core/GCCreationHandler.qml:251
 msgctxt "GCCreationHandler|"
 msgid "Saved successfully!"
 msgstr "Zapisano pomyślnie!"
 
-#: core/GCCreationHandler.qml:265
+#: core/GCCreationHandler.qml:282
 msgctxt "GCCreationHandler|"
 msgid "Enter file name"
 msgstr "Podaj nazwę pliku"
 
-#: core/GCCreationHandler.qml:265
+#: core/GCCreationHandler.qml:282
 msgctxt "GCCreationHandler|"
 msgid "Search"
 msgstr "Znajdź"
 
-#: core/GCCreationHandler.qml:279
+#: core/GCCreationHandler.qml:296
 msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "Zapisz"
 
-#: core/GCCreationHandler.qml:385
+#: core/GCCreationHandler.qml:406
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "Wczytaj"
 
-#: core/GCCreationHandler.qml:395
+#: core/GCCreationHandler.qml:416
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Usuń"
@@ -28752,6 +28755,31 @@ msgstr "Pomiń"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Rozpocznij"
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid ""
+#~| "Select tools and colors from the foldable panels and draw images.<br><br>"
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Select wheel, gear, pen's position and color from the foldable panels and "
+#~ "start the gear.<br><br>"
+#~ msgstr ""
+#~ "Wybierz narzędzia i barwy z zwijalnych pasków i rysuj obrazy.<br> <br>"
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Ctrl + S: save the image"
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Ctrl + D: save the drawing"
+#~ msgstr "Ctrl + S: zapisz obraz"
+
+#, fuzzy
+#~| msgctxt "FilesPanel|"
+#~| msgid "Save your image"
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Save vector image (SVG)"
+#~ msgstr "Zapisz swój obraz"
 
 #, fuzzy
 #~| msgid ""
@@ -29139,10 +29167,6 @@ msgstr "Rozpocznij"
 #~ msgstr ""
 #~ "Zagraj przeciwko koledze. Najpierw na zmianę ustawiacie dziewięć pionków, "
 #~ "a następnie na zmianę wykonujecie nimi ruchy."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Touch the numbers in the right order."
-#~ msgstr "Dotykaj liczb w odpowiedniej kolejności."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Can decide chronological order of events."

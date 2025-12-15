@@ -216,7 +216,7 @@ msgstr ""
 #: activities/colors/ActivityInfo.qml:25
 #: activities/comparator/ActivityInfo.qml:27
 #: activities/crane/ActivityInfo.qml:30
-#: activities/drawing_wheels/ActivityInfo.qml:24
+#: activities/drawing_wheels/ActivityInfo.qml:29
 #: activities/enumerate/ActivityInfo.qml:25
 #: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
@@ -6724,7 +6724,7 @@ msgid ""
 msgstr ""
 
 #. Activity title
-#: activities/drawing_wheels/ActivityInfo.qml:14
+#: activities/drawing_wheels/ActivityInfo.qml:19
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Draw letters"
@@ -6732,23 +6732,32 @@ msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
 msgstr "文字をかく"
 
-#. Help goal
-#: activities/drawing_wheels/ActivityInfo.qml:19
+#. Help title
+#: activities/drawing_wheels/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
-msgid ""
-"Make beautiful drawings by turning the gear in the cogwheel with the chosen "
-"pen."
+msgid "Roll the gear in the cogwheel to draw."
+msgstr ""
+
+#. Help goal
+#: activities/drawing_wheels/ActivityInfo.qml:24
+msgctxt "ActivityInfo|"
+msgid "Discover hypotrochoids and use them as digital painting tools."
 msgstr ""
 
 #. Help manual
-#: activities/drawing_wheels/ActivityInfo.qml:23
+#: activities/drawing_wheels/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid ""
-"Select wheel, gear, pen's position and color from the foldable panels and "
-"start the gear.<br><br>"
+"Make beautiful drawings by rolling the gear in the cogwheel with the chosen "
+"pen. Select a wheel size, a gear size, pen's settings and color from the "
+"popup panels, and press the play button to roll the gear. You can use the "
+"file menu to save your image, open a previously saved image, or create a new "
+"image with selected background color. Saving an image will save it in an SVG "
+"file (vector format), along with a PNG file (pixel format). Only the SVG "
+"file can be opened again from the activity.<br><br>"
 msgstr ""
 
-#: activities/drawing_wheels/ActivityInfo.qml:25
+#: activities/drawing_wheels/ActivityInfo.qml:30
 #: activities/sketch/ActivityInfo.qml:28
 #, fuzzy
 #| msgctxt "ActivityInfo|"
@@ -6757,13 +6766,13 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
 msgstr "Ctrl + Z: 元に戻す"
 
-#: activities/drawing_wheels/ActivityInfo.qml:26
+#: activities/drawing_wheels/ActivityInfo.qml:31
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
 msgstr ""
 
-#: activities/drawing_wheels/ActivityInfo.qml:27
+#: activities/drawing_wheels/ActivityInfo.qml:32
 #: activities/sketch/ActivityInfo.qml:30
 #, fuzzy
 #| msgctxt "ActivityInfo|"
@@ -6772,89 +6781,81 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
 msgstr "Ctrl + A: すべてのテキストを選択"
 
-#: activities/drawing_wheels/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + A: select all the text"
-msgctxt "ActivityInfo|"
-msgid "Ctrl + D: save the drawing"
-msgstr "Ctrl + A: すべてのテキストを選択"
-
-#: activities/drawing_wheels/ActivityInfo.qml:29
+#: activities/drawing_wheels/ActivityInfo.qml:33
 #: activities/sketch/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:375
+#: activities/drawing_wheels/DrawingWheels.qml:377
 msgctxt "DrawingWheels|"
-msgid "Save drawing"
+msgid "File menu"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:387
+#: activities/drawing_wheels/DrawingWheels.qml:389
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:411
+#: activities/drawing_wheels/DrawingWheels.qml:413
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:423
+#: activities/drawing_wheels/DrawingWheels.qml:425
 msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:450
+#: activities/drawing_wheels/DrawingWheels.qml:452
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:462
+#: activities/drawing_wheels/DrawingWheels.qml:464
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:496
+#: activities/drawing_wheels/DrawingWheels.qml:498
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:496
+#: activities/drawing_wheels/DrawingWheels.qml:498
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:529
+#: activities/drawing_wheels/DrawingWheels.qml:531
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:529
+#: activities/drawing_wheels/DrawingWheels.qml:531
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:688
+#: activities/drawing_wheels/DrawingWheels.qml:690
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Select your mode"
 msgctxt "DrawingWheels|"
-msgid "Save vector image (SVG)"
+msgid "Save your image"
 msgstr "モードを選んでください"
 
-#: activities/drawing_wheels/DrawingWheels.qml:702
+#: activities/drawing_wheels/DrawingWheels.qml:705
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:731
+#: activities/drawing_wheels/DrawingWheels.qml:734
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:750
+#: activities/drawing_wheels/DrawingWheels.qml:753
 #, fuzzy
 #| msgctxt "DownloadDialog|"
 #| msgid "Background"
@@ -6862,17 +6863,17 @@ msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "バックグラウンド"
 
-#: activities/drawing_wheels/DrawingWheels.qml:820
+#: activities/drawing_wheels/DrawingWheels.qml:823
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:895
+#: activities/drawing_wheels/DrawingWheels.qml:898
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:958
+#: activities/drawing_wheels/DrawingWheels.qml:961
 #, fuzzy, qt-format
 #| msgctxt "SignalGenerator|"
 #| msgid "%1 s"
@@ -6880,7 +6881,7 @@ msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 秒"
 
-#: activities/drawing_wheels/DrawingWheels.qml:976
+#: activities/drawing_wheels/DrawingWheels.qml:979
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Speed"
@@ -6888,32 +6889,32 @@ msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "はやさ"
 
-#: activities/drawing_wheels/DrawingWheels.qml:992
+#: activities/drawing_wheels/DrawingWheels.qml:995
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1012
+#: activities/drawing_wheels/DrawingWheels.qml:1015
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1055
+#: activities/drawing_wheels/DrawingWheels.qml:1058
 msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1092
+#: activities/drawing_wheels/DrawingWheels.qml:1095
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1135
+#: activities/drawing_wheels/DrawingWheels.qml:1138
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1173
+#: activities/drawing_wheels/DrawingWheels.qml:1176
 #, fuzzy
 #| msgctxt "IntroMessage|"
 #| msgid "Start"
@@ -6921,12 +6922,12 @@ msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "スタート"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1351
+#: activities/drawing_wheels/DrawingWheels.qml:1356
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1352
+#: activities/drawing_wheels/DrawingWheels.qml:1357
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Do you really want to quit GCompris?"
@@ -6934,7 +6935,7 @@ msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "GCompris を終了しますか？"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1353
+#: activities/drawing_wheels/DrawingWheels.qml:1358
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -6942,7 +6943,7 @@ msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "はい"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1354
+#: activities/drawing_wheels/DrawingWheels.qml:1359
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -27973,40 +27974,40 @@ msgctxt "QObject|"
 msgid "No data found for %1."
 msgstr ""
 
-#: core/GCCreationHandler.qml:176
+#: core/GCCreationHandler.qml:184
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "%1 deleted successfully!"
 msgstr "%1 を削除しました!"
 
-#: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
-#: core/GCCreationHandler.qml:235
+#: core/GCCreationHandler.qml:185 core/GCCreationHandler.qml:193
+#: core/GCCreationHandler.qml:252
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr ""
 
-#: core/GCCreationHandler.qml:181
+#: core/GCCreationHandler.qml:192
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete %1!"
 msgstr "%1 を削除できませんでした!"
 
-#: core/GCCreationHandler.qml:215
+#: core/GCCreationHandler.qml:229
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
 msgstr "この名前のファイルは既に存在します。上書きしますか？"
 
-#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
+#: core/GCCreationHandler.qml:230 core/GCCreationHandler.qml:237
 msgctxt "GCCreationHandler|"
 msgid "Yes"
 msgstr "はい"
 
-#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
+#: core/GCCreationHandler.qml:230 core/GCCreationHandler.qml:237
 msgctxt "GCCreationHandler|"
 msgid "No"
 msgstr "いいえ"
 
-#: core/GCCreationHandler.qml:222
+#: core/GCCreationHandler.qml:236
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Do you really want to quit GCompris?"
@@ -28014,32 +28015,32 @@ msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
 msgstr "GCompris を終了しますか？"
 
-#: core/GCCreationHandler.qml:234
+#: core/GCCreationHandler.qml:251
 msgctxt "GCCreationHandler|"
 msgid "Saved successfully!"
 msgstr "セーブしました!"
 
-#: core/GCCreationHandler.qml:265
+#: core/GCCreationHandler.qml:282
 msgctxt "GCCreationHandler|"
 msgid "Enter file name"
 msgstr "ファイル名を入力"
 
-#: core/GCCreationHandler.qml:265
+#: core/GCCreationHandler.qml:282
 msgctxt "GCCreationHandler|"
 msgid "Search"
 msgstr "検索"
 
-#: core/GCCreationHandler.qml:279
+#: core/GCCreationHandler.qml:296
 msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "保存"
 
-#: core/GCCreationHandler.qml:385
+#: core/GCCreationHandler.qml:406
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "よみこみ"
 
-#: core/GCCreationHandler.qml:395
+#: core/GCCreationHandler.qml:416
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "削除"
@@ -28307,6 +28308,20 @@ msgstr "スキップ"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "スタート"
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Ctrl + A: select all the text"
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Ctrl + D: save the drawing"
+#~ msgstr "Ctrl + A: すべてのテキストを選択"
+
+#, fuzzy
+#~| msgctxt "ActivityConfig|"
+#~| msgid "Select your mode"
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Save vector image (SVG)"
+#~ msgstr "モードを選んでください"
 
 # Fumiaki Okushi <fumiaki.okushi@gmail.com>, 2021.
 #, fuzzy

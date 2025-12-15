@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-11 00:39+0000\n"
+"POT-Creation-Date: 2025-12-15 00:38+0000\n"
 "PO-Revision-Date: 2017-05-20 22:03-0700\n"
 "Last-Translator: Japanese KDE translation team <kde-jp@kde.org>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -318,9 +318,9 @@ msgid "Learn how digital electronics work and create your own circuit."
 msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawing_wheels"
-#: activities/drawing_wheels/ActivityInfo.qml:17
+#: activities/drawing_wheels/ActivityInfo.qml:22
 #, kde-format
-msgid "put here in comment the text for the intro voice"
+msgid "Roll the gear in the cogwheel to draw."
 msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"

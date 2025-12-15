@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2018-11-30 13:03+0000\n"
-"PO-Revision-Date: 2025-12-11 18:30+0100\n"
+"PO-Revision-Date: 2025-12-14 19:15+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -195,7 +195,7 @@ msgstr ""
 #: activities/colors/ActivityInfo.qml:25
 #: activities/comparator/ActivityInfo.qml:27
 #: activities/crane/ActivityInfo.qml:30
-#: activities/drawing_wheels/ActivityInfo.qml:24
+#: activities/drawing_wheels/ActivityInfo.qml:29
 #: activities/enumerate/ActivityInfo.qml:25
 #: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
@@ -6659,215 +6659,206 @@ msgstr ""
 "lezake zure gailuak behar adina memoria ez duenean."
 
 #. Activity title
-#: activities/drawing_wheels/ActivityInfo.qml:14
+#: activities/drawing_wheels/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
 msgstr "Marrazteko gurpilak"
 
-#. Help goal
-#: activities/drawing_wheels/ActivityInfo.qml:19
+#. Help title
+#: activities/drawing_wheels/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Touch the numbers in the right order."
 msgctxt "ActivityInfo|"
-msgid ""
-"Make beautiful drawings by turning the gear in the cogwheel with the chosen "
-"pen."
-msgstr ""
-"Egin marrazki ederrak hortz dun gurpileko engranajea hautatutako "
-"arkatzarekin biratuz."
+msgid "Roll the gear in the cogwheel to draw."
+msgstr "Ukitu zenbakiak ordena zuzenean."
+
+#. Help goal
+#: activities/drawing_wheels/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn about some digital painting tools."
+msgctxt "ActivityInfo|"
+msgid "Discover hypotrochoids and use them as digital painting tools."
+msgstr "Ikasi marrazteko tresna digital batzuei buruz."
 
 #. Help manual
-#: activities/drawing_wheels/ActivityInfo.qml:23
+#: activities/drawing_wheels/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid ""
-"Select wheel, gear, pen's position and color from the foldable panels and "
-"start the gear.<br><br>"
+"Make beautiful drawings by rolling the gear in the cogwheel with the chosen "
+"pen. Select a wheel size, a gear size, pen's settings and color from the "
+"popup panels, and press the play button to roll the gear. You can use the "
+"file menu to save your image, open a previously saved image, or create a new "
+"image with selected background color. Saving an image will save it in an SVG "
+"file (vector format), along with a PNG file (pixel format). Only the SVG "
+"file can be opened again from the activity.<br><br>"
 msgstr ""
-"Hautatu gurpila, engranajea, arkatzaren kokapena eta kolorea panel "
-"tolesgarrietan eta engranajea abiarazi.<br><br>"
 
-#: activities/drawing_wheels/ActivityInfo.qml:25
+#: activities/drawing_wheels/ActivityInfo.qml:30
 #: activities/sketch/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
 msgstr "Ktrl + Z: azken ekintza desegiteko"
 
-#: activities/drawing_wheels/ActivityInfo.qml:26
+#: activities/drawing_wheels/ActivityInfo.qml:31
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
 msgstr "Ktrl + Y: azken ekintza berregiteko"
 
-#: activities/drawing_wheels/ActivityInfo.qml:27
+#: activities/drawing_wheels/ActivityInfo.qml:32
 #: activities/sketch/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
 msgstr "Ktrl + S: irudia gordetzeko"
 
-#: activities/drawing_wheels/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Ctrl + D: save the drawing"
-msgstr "Ktrl + D: gorde marrazkia"
-
-#: activities/drawing_wheels/ActivityInfo.qml:29
+#: activities/drawing_wheels/ActivityInfo.qml:33
 #: activities/sketch/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ktrl + O: irudi bat irekitzeko"
 
-#: activities/drawing_wheels/DrawingWheels.qml:375
+#: activities/drawing_wheels/DrawingWheels.qml:377
 msgctxt "DrawingWheels|"
-msgid "Save drawing"
-msgstr "Gorde marrazkia"
+msgid "File menu"
+msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:387
+#: activities/drawing_wheels/DrawingWheels.qml:389
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr "Gurpila eta engranajea"
 
-#: activities/drawing_wheels/DrawingWheels.qml:411
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Piano composition"
+#: activities/drawing_wheels/DrawingWheels.qml:413
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
-msgstr "Pianorako konposizioa"
+msgstr "Arkatzaren neurria eta kokapena"
 
-#: activities/drawing_wheels/DrawingWheels.qml:423
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font selector"
+#: activities/drawing_wheels/DrawingWheels.qml:425
 msgctxt "DrawingWheels|"
 msgid "Color selector"
-msgstr "Letra-tipo hautatzailea"
+msgstr "Kolore hautatzailea"
 
-#: activities/drawing_wheels/DrawingWheels.qml:450
+#: activities/drawing_wheels/DrawingWheels.qml:452
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Desegin"
 
-#: activities/drawing_wheels/DrawingWheels.qml:462
+#: activities/drawing_wheels/DrawingWheels.qml:464
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "Berregin"
 
-#: activities/drawing_wheels/DrawingWheels.qml:496
+#: activities/drawing_wheels/DrawingWheels.qml:498
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr "Utzi marrazteari"
 
-#: activities/drawing_wheels/DrawingWheels.qml:496
+#: activities/drawing_wheels/DrawingWheels.qml:498
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr "Hasi marrazten"
 
-#: activities/drawing_wheels/DrawingWheels.qml:529
+#: activities/drawing_wheels/DrawingWheels.qml:531
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr "Erakutsi gurpila eta engranajea"
 
-#: activities/drawing_wheels/DrawingWheels.qml:529
+#: activities/drawing_wheels/DrawingWheels.qml:531
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr "Ezkutatu gurpila eta engranajea"
 
-#: activities/drawing_wheels/DrawingWheels.qml:688
+#: activities/drawing_wheels/DrawingWheels.qml:690
 #, fuzzy
-#| msgctxt "DrawingWheels|"
+#| msgctxt "FilesPanel|"
 #| msgid "Save your image"
 msgctxt "DrawingWheels|"
-msgid "Save vector image (SVG)"
+msgid "Save your image"
 msgstr "Gorde zure irudia"
 
-#: activities/drawing_wheels/DrawingWheels.qml:702
+#: activities/drawing_wheels/DrawingWheels.qml:705
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Ireki irudi bat"
 
-#: activities/drawing_wheels/DrawingWheels.qml:731
+#: activities/drawing_wheels/DrawingWheels.qml:734
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Sortu irudi berri bat"
 
-#: activities/drawing_wheels/DrawingWheels.qml:750
-#, fuzzy
-#| msgctxt "BackgroundColorSelector|"
-#| msgid "Background color"
+#: activities/drawing_wheels/DrawingWheels.qml:753
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Atzeko planoaren kolorea"
 
-#: activities/drawing_wheels/DrawingWheels.qml:820
+#: activities/drawing_wheels/DrawingWheels.qml:823
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr "Gurpila"
 
-#: activities/drawing_wheels/DrawingWheels.qml:895
+#: activities/drawing_wheels/DrawingWheels.qml:898
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr "Engranajea"
 
-#: activities/drawing_wheels/DrawingWheels.qml:958
+#: activities/drawing_wheels/DrawingWheels.qml:961
 #, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 hortz"
 
-#: activities/drawing_wheels/DrawingWheels.qml:976
+#: activities/drawing_wheels/DrawingWheels.qml:979
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Abiadura"
 
-#: activities/drawing_wheels/DrawingWheels.qml:992
+#: activities/drawing_wheels/DrawingWheels.qml:995
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr "Mantso"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1012
+#: activities/drawing_wheels/DrawingWheels.qml:1015
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr "Azkar"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1055
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Pensize"
+#: activities/drawing_wheels/DrawingWheels.qml:1058
 msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "Arkatzaren neurria"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1092
+#: activities/drawing_wheels/DrawingWheels.qml:1095
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Opakutasuna"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1135
+#: activities/drawing_wheels/DrawingWheels.qml:1138
 msgctxt "DrawingWheels|"
 msgid "Offset"
-msgstr ""
+msgstr "Desplazamendua"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1173
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Starting tooth"
+#: activities/drawing_wheels/DrawingWheels.qml:1176
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "Hasierako hortza"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1351
+#: activities/drawing_wheels/DrawingWheels.qml:1356
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Ez duzu irudi hau gorde. Jarduera hau itxi nahi duzu?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1352
+#: activities/drawing_wheels/DrawingWheels.qml:1357
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Irudi hau ezabatu nahi duzu?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1353
+#: activities/drawing_wheels/DrawingWheels.qml:1358
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Bai"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1354
+#: activities/drawing_wheels/DrawingWheels.qml:1359
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "Ez"
@@ -24859,9 +24850,6 @@ msgid "Gradient Tools"
 msgstr "Gradiente-tresnak"
 
 #: activities/sketch/PaletteSelector.qml:148
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Palettes"
 msgctxt "PaletteSelector|"
 msgid "Palettes"
 msgstr "Paletak"
@@ -28390,70 +28378,70 @@ msgctxt "QObject|"
 msgid "No data found for %1."
 msgstr "Ez da aurkitu %1(e)ren daturik."
 
-#: core/GCCreationHandler.qml:176
+#: core/GCCreationHandler.qml:184
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "%1 deleted successfully!"
 msgstr "%1 ondo ezabatu da!"
 
-#: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
-#: core/GCCreationHandler.qml:235
+#: core/GCCreationHandler.qml:185 core/GCCreationHandler.qml:193
+#: core/GCCreationHandler.qml:252
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr "Ados"
 
-#: core/GCCreationHandler.qml:181
+#: core/GCCreationHandler.qml:192
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete %1!"
 msgstr "Ezin da %1 ezabatu!"
 
-#: core/GCCreationHandler.qml:215
+#: core/GCCreationHandler.qml:229
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
 msgstr "Izen hau duen fitxategi bat jada badago. Ordezkatu nahi duzu?"
 
-#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
+#: core/GCCreationHandler.qml:230 core/GCCreationHandler.qml:237
 msgctxt "GCCreationHandler|"
 msgid "Yes"
 msgstr "Bai"
 
-#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
+#: core/GCCreationHandler.qml:230 core/GCCreationHandler.qml:237
 msgctxt "GCCreationHandler|"
 msgid "No"
 msgstr "Ez"
 
-#: core/GCCreationHandler.qml:222
+#: core/GCCreationHandler.qml:236
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
 msgstr "Irudi hau benetan ezabatu nahi duzu?"
 
-#: core/GCCreationHandler.qml:234
+#: core/GCCreationHandler.qml:251
 msgctxt "GCCreationHandler|"
 msgid "Saved successfully!"
 msgstr "Ongi gorde da!"
 
-#: core/GCCreationHandler.qml:265
+#: core/GCCreationHandler.qml:282
 msgctxt "GCCreationHandler|"
 msgid "Enter file name"
 msgstr "Sartu fitxategi-izena"
 
-#: core/GCCreationHandler.qml:265
+#: core/GCCreationHandler.qml:282
 msgctxt "GCCreationHandler|"
 msgid "Search"
 msgstr "Bilatu"
 
-#: core/GCCreationHandler.qml:279
+#: core/GCCreationHandler.qml:296
 msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "Gorde"
 
-#: core/GCCreationHandler.qml:385
+#: core/GCCreationHandler.qml:406
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "Zamatu"
 
-#: core/GCCreationHandler.qml:395
+#: core/GCCreationHandler.qml:416
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Ezabatu"
@@ -28711,6 +28699,36 @@ msgstr "Saihestu"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Hasi"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Make beautiful drawings by turning the gear in the cogwheel with the "
+#~ "chosen pen."
+#~ msgstr ""
+#~ "Egin marrazki ederrak hortz dun gurpileko engranajea hautatutako "
+#~ "arkatzarekin biratuz."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Select wheel, gear, pen's position and color from the foldable panels and "
+#~ "start the gear.<br><br>"
+#~ msgstr ""
+#~ "Hautatu gurpila, engranajea, arkatzaren kokapena eta kolorea panel "
+#~ "tolesgarrietan eta engranajea abiarazi.<br><br>"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Ctrl + D: save the drawing"
+#~ msgstr "Ktrl + D: gorde marrazkia"
+
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Save drawing"
+#~ msgstr "Gorde marrazkia"
+
+#~| msgctxt "DrawingWheels|"
+#~| msgid "Save your image"
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Save vector image (SVG)"
+#~ msgstr "Gorde bektore-irudia (SVG)"
 
 # Translation for gcompris_qt.po to Euskara/Basque (eu).
 # Copyright (C) 2018-2025 This file is copyright:
@@ -29118,10 +29136,6 @@ msgstr "Hasi"
 #~ msgstr ""
 #~ "Jokatu lagun batekin. Aurrena, txandaka, kokatu bederatzi pieza, ondoren, "
 #~ "txandaka aritu zuen piezak mugitzeko."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Touch the numbers in the right order."
-#~ msgstr "Ukitu zenbakiak ordena zuzenean."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Can decide chronological order of events."

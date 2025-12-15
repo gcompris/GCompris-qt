@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-11 00:39+0000\n"
+"POT-Creation-Date: 2025-12-15 00:38+0000\n"
 "PO-Revision-Date: 2024-06-11 12:34+0200\n"
 "Last-Translator: Aiswarya Kaitheri Kandoth <aiswaryakk29@gmail.com>\n"
 "Language-Team: Malayalam <kde-i18n-doc@kde.org>\n"
@@ -350,10 +350,10 @@ msgstr ""
 "ഡിജിറ്റൽ വൈദ്യുതി എങ്ങനെ പ്രവർത്തിക്കുന്നുവെന്ന് പഠിച്ച് നിങ്ങളുടെ സ്വന്തം സർക്യൂട്ട് നിർമ്മിക്കൂ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawing_wheels"
-#: activities/drawing_wheels/ActivityInfo.qml:17
+#: activities/drawing_wheels/ActivityInfo.qml:22
 #, kde-format
-msgid "put here in comment the text for the intro voice"
-msgstr " "
+msgid "Roll the gear in the cogwheel to draw."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"
 #: activities/drawletters/ActivityInfo.qml:18
@@ -1330,6 +1330,9 @@ msgstr ""
 #, kde-format
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr "വാക്കുകൾ താഴെ എത്തുന്നതിന് മുമ്പ് നിങ്ങളുടെ കീബോർഡിൽ ടൈപ്പ് ചെയ്യുക."
+
+#~ msgid "put here in comment the text for the intro voice"
+#~ msgstr " "
 
 #~ msgid "play checkers against the computer"
 #~ msgstr "കംപ്യൂട്ടറിന് എതിരെ ചെക്കേർസ് കളിക്കാം."

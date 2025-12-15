@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-11 00:39+0000\n"
+"POT-Creation-Date: 2025-12-15 00:38+0000\n"
 "PO-Revision-Date: 2024-12-11 20:14+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
@@ -360,10 +360,10 @@ msgstr ""
 "Aprende como funciona a electrónica dixital e crea o teu propio circuíto."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawing_wheels"
-#: activities/drawing_wheels/ActivityInfo.qml:17
+#: activities/drawing_wheels/ActivityInfo.qml:22
 #, kde-format
-msgid "put here in comment the text for the intro voice"
-msgstr "pon aquí en comentario o texto para a voz de introdución"
+msgid "Roll the gear in the cogwheel to draw."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"
 #: activities/drawletters/ActivityInfo.qml:18
@@ -1371,6 +1371,9 @@ msgstr ""
 #, kde-format
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr "Preme as palabras no teclado antes de que cheguen ao chan."
+
+#~ msgid "put here in comment the text for the intro voice"
+#~ msgstr "pon aquí en comentario o texto para a voz de introdución"
 
 #~ msgid "play checkers against the computer"
 #~ msgstr "Xoga ás damas contra o computador"
