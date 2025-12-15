@@ -401,7 +401,9 @@ Rectangle {
         visible: !creationHandler.isSaveMode
         GCButton {
             id: loadButton
-            width: (viewContainer.width - GCStyle.baseMargins) * 0.5
+            width: openFolder.visible ?
+                (viewContainer.width - GCStyle.halfMargins) / 3 - GCStyle.halfMargins :
+                (viewContainer.width - GCStyle.halfMargins) * 0.5 - GCStyle.halfMargins
             height: buttonRow.visible ? Math.min(saveButton.height, safeSizeHint.height * 0.3) : 0
             text: qsTr("Load")
             enabled: creationsList.currentIndex != -1
@@ -417,6 +419,17 @@ Rectangle {
             enabled: creationsList.currentIndex != -1
             theme: "highContrast"
             onClicked: confirmFileDeleteDialog()
+        }
+
+        GCButton {
+            id: openFolder
+            width: loadButton.width
+            height: loadButton.height
+            text: qsTr("Open folder")
+            enabled: visible
+            visible: ApplicationInfo.isMobile ? false : true
+            theme: "highContrast"
+            onClicked: Qt.openUrlExternally(filePrefix + sharedDirectoryPath)
         }
     }
 
