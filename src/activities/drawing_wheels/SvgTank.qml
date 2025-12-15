@@ -28,7 +28,7 @@ Item {
     property string source: ""
     property string path:""
     property string stroke: "black"
-    property int strokeWidth: 1
+    property real strokeWidth: 1
     property string fill: "none"
     property real svgOpacity: 1.0
 
