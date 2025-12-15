@@ -68,7 +68,8 @@ Rectangle {
     readonly property string sharedDirectoryPath: ApplicationSettings.userDataPath + "/" + activityName + "/"
     readonly property string fileName: fileNameInput.text + (imageMode ?  svgMode ?  ".svg" : ".png" : ".json")
     readonly property string filePrefix: sharedDirectoryPath.startsWith("/") ? "file://" : "file:///"
-    readonly property string fileSavePath: filePrefix + sharedDirectoryPath + fileName
+    readonly property string fileFullPath: sharedDirectoryPath + fileName
+    readonly property string fileSavePath: filePrefix + fileFullPath
     // used for saving additional png snapshot if usePngSnapshot = true
     property var snapshotToSave
 
@@ -181,7 +182,7 @@ Rectangle {
         var filePath = filePrefix + sharedDirectoryPath + fileNames.get(creationsList.currentIndex).name
         if(file.rmpath(filePath)) {
             Core.showMessageDialog(creationHandler,
-                                   qsTr("%1 deleted successfully!").arg(filePath),
+                                   qsTr("File deleted successfully!") + "<br><br>" + fileFullPath,
                                    qsTr("OK"), null, "", null, function() { restoreFocusTimer.restart(); });
             if(usePngSnapshot) {
                 file.rmpath(replaceExtension(filePath, ".png"));
@@ -189,7 +190,7 @@ Rectangle {
         }
         else {
             Core.showMessageDialog(creationHandler,
-                                   qsTr("Unable to delete %1!").arg(filePath),
+                                   qsTr("Unable to delete file!") + "<br><br>" + fileFullPath,
                                    qsTr("OK"), null, "", null, function() { restoreFocusTimer.restart(); });
         }
 
@@ -248,7 +249,7 @@ Rectangle {
             file.write(JSON.stringify(creationHandler.dataToSave), fileSavePath);
         }
         Core.showMessageDialog(creationHandler,
-                               qsTr("Saved successfully!") + "<br><br>" + fileSavePath,
+                               qsTr("Saved successfully!") + "<br><br>" + fileFullPath,
                                qsTr("OK"), function() { close(); }, "", null, function() { restoreFocusTimer.restart(); creationHandler.close(); });
         saved();
         refreshTimer.restart();
