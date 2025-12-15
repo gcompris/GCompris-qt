@@ -248,7 +248,7 @@ Rectangle {
             file.write(JSON.stringify(creationHandler.dataToSave), fileSavePath);
         }
         Core.showMessageDialog(creationHandler,
-                               qsTr("Saved successfully!"),
+                               qsTr("Saved successfully!") + "<br><br>" + fileSavePath,
                                qsTr("OK"), function() { close(); }, "", null, function() { restoreFocusTimer.restart(); creationHandler.close(); });
         saved();
         refreshTimer.restart();
