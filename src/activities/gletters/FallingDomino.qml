@@ -24,7 +24,7 @@ Item {
     /// index into text.split("") where next typed match should occur
     property int unmatchedIndex: 0;
     property string text
-    property list<int> dominoValues
+    property var dominoValues
     property bool wonState: false
     property string mode: "dot"
 
