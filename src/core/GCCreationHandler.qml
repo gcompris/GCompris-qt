@@ -190,7 +190,7 @@ Rectangle {
         }
         else {
             Core.showMessageDialog(creationHandler,
-                                   qsTr("Unable to delete file!") + "<br><br>" + fileFullPath,
+                                   qsTr("Unable to delete the file!") + "<br><br>" + fileFullPath,
                                    qsTr("OK"), null, "", null, function() { restoreFocusTimer.restart(); });
         }
 
