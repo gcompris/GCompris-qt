@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-12-15 10:43+0200\n"
+"PO-Revision-Date: 2025-12-16 09:51+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -27524,12 +27524,9 @@ msgid "No data found for %1."
 msgstr "לא נמצאו נתונים עבור %1."
 
 #: core/GCCreationHandler.qml:185
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr "%1 נמחק בהצלחה!"
+msgstr "הקובץ נמחק בהצלחה!"
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -27538,12 +27535,9 @@ msgid "OK"
 msgstr "אישור"
 
 #: core/GCCreationHandler.qml:193
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
-msgstr "לא ניתן למחוק את %1!"
+msgstr "לא ניתן למחוק את הקובץ!"
 
 #: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
@@ -27598,7 +27592,7 @@ msgstr "למחוק"
 #: core/GCCreationHandler.qml:429
 msgctxt "GCCreationHandler|"
 msgid "Open folder"
-msgstr ""
+msgstr "פתיחת תיקייה"
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"

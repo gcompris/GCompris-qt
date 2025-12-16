@@ -26508,12 +26508,9 @@ msgid "No data found for %1."
 msgstr "%1-სთვის მონაცემები ვერ ვიპოვე."
 
 #: core/GCCreationHandler.qml:185
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr "%1 წარმატებით წაიშალა!"
+msgstr "ფაილი წარმატებით წაიშალა!"
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -26522,12 +26519,9 @@ msgid "OK"
 msgstr "დიახ"
 
 #: core/GCCreationHandler.qml:193
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
-msgstr "%1-ის წაშლა შეუძლებელია!"
+msgstr "ფაილის წაშლა შეუძლებელია!"
 
 #: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
@@ -26582,7 +26576,7 @@ msgstr "წაშლა"
 #: core/GCCreationHandler.qml:429
 msgctxt "GCCreationHandler|"
 msgid "Open folder"
-msgstr ""
+msgstr "საქაღალდის გახსნა"
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
