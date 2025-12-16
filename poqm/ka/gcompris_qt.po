@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.8\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -20853,11 +20853,13 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between instructions area and main/procedure/loop area"
 msgstr ""
+"Tab: გადართვა ინსტრუქციის ადგილსა და მთავარ/პროცედურის/მარყუჟის ადგილებს "
+"შორის"
 
 #: activities/programmingMaze/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Delete: remove selected instruction from main/procedure/loop area"
-msgstr ""
+msgstr "Delete: მონიშნული ინსტრუქციის წაშლა მთავარი/პროცედურის/მარყუჟის არედან"
 
 #: activities/programmingMaze/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -22990,6 +22992,9 @@ msgid ""
 "Each question contains 4 options. One of those is 100% correct. Try to "
 "answer the questions until you get 100% in the closeness meter."
 msgstr ""
+"დააწკაპუნეთ პლანეტაზე ან მზეზე და უპასუხეთ შესაბამის კითხვებს. თითოეული "
+"კითხვა 4 არჩევანს შეიცავს. ერთ-ერთი 100%-ით სწორია. სცადეთ, უპასუხოთ "
+"კითხვებს, სანამ სისწორის 100%-ს არ მიუახლოვდებით."
 
 #: activities/solar_system/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -24145,7 +24150,7 @@ msgstr "<b>ბალასტის ავზები</b>"
 #: activities/submarine/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "W or Up arrow: switch filling of the central ballast tank"
-msgstr ""
+msgstr "W ან ისარი მაღლა: ცენტრალური ბალასტის ავზის შევსების გადართვა"
 
 #: activities/submarine/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
