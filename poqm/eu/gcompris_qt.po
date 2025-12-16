@@ -28378,73 +28378,82 @@ msgctxt "QObject|"
 msgid "No data found for %1."
 msgstr "Ez da aurkitu %1(e)ren daturik."
 
-#: core/GCCreationHandler.qml:184
-#, qt-format
+#: core/GCCreationHandler.qml:185
+#, fuzzy
+#| msgctxt "GCCreationHandler|"
+#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
-msgid "%1 deleted successfully!"
+msgid "File deleted successfully!"
 msgstr "%1 ondo ezabatu da!"
 
-#: core/GCCreationHandler.qml:185 core/GCCreationHandler.qml:193
-#: core/GCCreationHandler.qml:252
+#: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
+#: core/GCCreationHandler.qml:253
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr "Ados"
 
-#: core/GCCreationHandler.qml:192
-#, qt-format
+#: core/GCCreationHandler.qml:193
+#, fuzzy
+#| msgctxt "GCCreationHandler|"
+#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
-msgid "Unable to delete %1!"
+msgid "Unable to delete the file!"
 msgstr "Ezin da %1 ezabatu!"
 
-#: core/GCCreationHandler.qml:229
+#: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
 msgstr "Izen hau duen fitxategi bat jada badago. Ordezkatu nahi duzu?"
 
-#: core/GCCreationHandler.qml:230 core/GCCreationHandler.qml:237
+#: core/GCCreationHandler.qml:231 core/GCCreationHandler.qml:238
 msgctxt "GCCreationHandler|"
 msgid "Yes"
 msgstr "Bai"
 
-#: core/GCCreationHandler.qml:230 core/GCCreationHandler.qml:237
+#: core/GCCreationHandler.qml:231 core/GCCreationHandler.qml:238
 msgctxt "GCCreationHandler|"
 msgid "No"
 msgstr "Ez"
 
-#: core/GCCreationHandler.qml:236
+#: core/GCCreationHandler.qml:237
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
 msgstr "Irudi hau benetan ezabatu nahi duzu?"
 
-#: core/GCCreationHandler.qml:251
+#: core/GCCreationHandler.qml:252
 msgctxt "GCCreationHandler|"
 msgid "Saved successfully!"
 msgstr "Ongi gorde da!"
 
-#: core/GCCreationHandler.qml:282
+#: core/GCCreationHandler.qml:283
 msgctxt "GCCreationHandler|"
 msgid "Enter file name"
 msgstr "Sartu fitxategi-izena"
 
-#: core/GCCreationHandler.qml:282
+#: core/GCCreationHandler.qml:283
 msgctxt "GCCreationHandler|"
 msgid "Search"
 msgstr "Bilatu"
 
-#: core/GCCreationHandler.qml:296
+#: core/GCCreationHandler.qml:297
 msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "Gorde"
 
-#: core/GCCreationHandler.qml:406
+#: core/GCCreationHandler.qml:409
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "Zamatu"
 
-#: core/GCCreationHandler.qml:416
+#: core/GCCreationHandler.qml:419
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Ezabatu"
+
+#: core/GCCreationHandler.qml:429
+msgctxt "GCCreationHandler|"
+msgid "Open folder"
+msgstr ""
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"

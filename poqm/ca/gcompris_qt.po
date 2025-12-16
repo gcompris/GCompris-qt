@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2025-12-12 09:14+0100\n"
+"PO-Revision-Date: 2025-12-15 10:49+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -6942,16 +6942,14 @@ msgstr "Rodes de dibuix"
 #: activities/drawing_wheels/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Roll the gear in the cogwheel to draw."
-msgstr ""
+msgstr "Fes rodar l'engranatge a la roda dentada per a dibuixar."
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr "Aprendre sobre algunes eines de pintura digital."
+msgstr ""
+"Descobreix els hipotrocoides i utilitza'ls com a eines de pintura digital."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:28
@@ -6965,6 +6963,14 @@ msgid ""
 "file (vector format), along with a PNG file (pixel format). Only the SVG "
 "file can be opened again from the activity.<br><br>"
 msgstr ""
+"Fes dibuixos bonics fent rodar l'engranatge a la roda dentada amb el llapis "
+"escollit. Selecciona una mida de la roda, una mida de l'engranatge, la "
+"configuració del llapis i el color dels panells emergents, i prem el botó de "
+"reproducció per a fer rodar l'engranatge. Pots utilitzar el menú de fitxer "
+"per a desar la imatge, obrir una imatge desada prèviament o crear una imatge "
+"nova amb el color de fons seleccionat. Desar una imatge la desarà en un "
+"fitxer SVG (format vectorial), juntament amb un fitxer PNG (format píxel). "
+"Només el fitxer SVG es pot obrir de nou des de l'activitat.<br><br>"
 
 #: activities/drawing_wheels/ActivityInfo.qml:30
 #: activities/sketch/ActivityInfo.qml:28
@@ -6993,7 +6999,7 @@ msgstr "Ctrl + O: obre una imatge"
 #: activities/drawing_wheels/DrawingWheels.qml:377
 msgctxt "DrawingWheels|"
 msgid "File menu"
-msgstr ""
+msgstr "Menú de fitxer"
 
 #: activities/drawing_wheels/DrawingWheels.qml:389
 msgctxt "DrawingWheels|"
@@ -7041,9 +7047,6 @@ msgid "Hide wheel and gear"
 msgstr "Oculta la roda i l'engranatge"
 
 #: activities/drawing_wheels/DrawingWheels.qml:690
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Desa la imatge"
@@ -28924,73 +28927,82 @@ msgctxt "QObject|"
 msgid "No data found for %1."
 msgstr "No s'han trobat les dades per a %1."
 
-#: core/GCCreationHandler.qml:184
-#, qt-format
+#: core/GCCreationHandler.qml:185
+#, fuzzy
+#| msgctxt "GCCreationHandler|"
+#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
-msgid "%1 deleted successfully!"
+msgid "File deleted successfully!"
 msgstr "S'ha suprimit %1 amb èxit!"
 
-#: core/GCCreationHandler.qml:185 core/GCCreationHandler.qml:193
-#: core/GCCreationHandler.qml:252
+#: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
+#: core/GCCreationHandler.qml:253
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr "D'acord"
 
-#: core/GCCreationHandler.qml:192
-#, qt-format
+#: core/GCCreationHandler.qml:193
+#, fuzzy
+#| msgctxt "GCCreationHandler|"
+#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
-msgid "Unable to delete %1!"
+msgid "Unable to delete the file!"
 msgstr "No s'ha pogut suprimir %1!"
 
-#: core/GCCreationHandler.qml:229
+#: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
 msgstr "Ja existeix un fitxer amb aquest nom. Vols substituir-lo?"
 
-#: core/GCCreationHandler.qml:230 core/GCCreationHandler.qml:237
+#: core/GCCreationHandler.qml:231 core/GCCreationHandler.qml:238
 msgctxt "GCCreationHandler|"
 msgid "Yes"
 msgstr "Sí"
 
-#: core/GCCreationHandler.qml:230 core/GCCreationHandler.qml:237
+#: core/GCCreationHandler.qml:231 core/GCCreationHandler.qml:238
 msgctxt "GCCreationHandler|"
 msgid "No"
 msgstr "No"
 
-#: core/GCCreationHandler.qml:236
+#: core/GCCreationHandler.qml:237
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
 msgstr "Tens clar que vols suprimir aquest fitxer?"
 
-#: core/GCCreationHandler.qml:251
+#: core/GCCreationHandler.qml:252
 msgctxt "GCCreationHandler|"
 msgid "Saved successfully!"
 msgstr "S'ha desat correctament!"
 
-#: core/GCCreationHandler.qml:282
+#: core/GCCreationHandler.qml:283
 msgctxt "GCCreationHandler|"
 msgid "Enter file name"
 msgstr "Introdueix un nom de fitxer"
 
-#: core/GCCreationHandler.qml:282
+#: core/GCCreationHandler.qml:283
 msgctxt "GCCreationHandler|"
 msgid "Search"
 msgstr "Cerca"
 
-#: core/GCCreationHandler.qml:296
+#: core/GCCreationHandler.qml:297
 msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "Desa"
 
-#: core/GCCreationHandler.qml:406
+#: core/GCCreationHandler.qml:409
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "Carrega"
 
-#: core/GCCreationHandler.qml:416
+#: core/GCCreationHandler.qml:419
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Suprimeix"
+
+#: core/GCCreationHandler.qml:429
+msgctxt "GCCreationHandler|"
+msgid "Open folder"
+msgstr ""
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"

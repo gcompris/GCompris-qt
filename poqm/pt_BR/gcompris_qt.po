@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-12-13 04:25-0300\n"
+"PO-Revision-Date: 2025-12-15 06:25-0300\n"
 "Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Language: pt_BR\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Lokalize 25.08.3\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -6774,21 +6774,16 @@ msgstr "Rodas de desenho"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Touch the numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Roll the gear in the cogwheel to draw."
-msgstr "Toque os números na ordem correta."
+msgstr "Gire a engrenagem na roda dentada para desenhar."
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr "Aprender algumas ferramentas de desenho digital."
+msgstr ""
+"Descubra os hipotrocóides e use-os como ferramentas de pintura digital."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:28
@@ -6802,6 +6797,15 @@ msgid ""
 "file (vector format), along with a PNG file (pixel format). Only the SVG "
 "file can be opened again from the activity.<br><br>"
 msgstr ""
+"Faça desenhos incríveis girando a engrenagem na roda dentada com a caneta "
+"escolhida. Selecione o tamanho da roda, o tamanho da engrenagem, as "
+"configurações da caneta e a cor nos painéis pop-up e pressione o botão de "
+"reprodução para girar a engrenagem. Você pode usar o menu Arquivo para "
+"salvar sua imagem, abrir uma imagem salva anteriormente ou criar uma nova "
+"imagem com a cor de fundo selecionada. Ao salvar uma imagem, ela será salva "
+"em um arquivo SVG (formato vetorial), juntamente com um arquivo PNG (formato "
+"de pixel). Somente o arquivo SVG pode ser aberto novamente a partir da "
+"atividade.<br><br>"
 
 #: activities/drawing_wheels/ActivityInfo.qml:30
 #: activities/sketch/ActivityInfo.qml:28
@@ -6830,7 +6834,7 @@ msgstr "Ctrl + O: abre uma imagem"
 #: activities/drawing_wheels/DrawingWheels.qml:377
 msgctxt "DrawingWheels|"
 msgid "File menu"
-msgstr ""
+msgstr "Menu Arquivo"
 
 #: activities/drawing_wheels/DrawingWheels.qml:389
 msgctxt "DrawingWheels|"
@@ -6878,9 +6882,6 @@ msgid "Hide wheel and gear"
 msgstr "Ocultar roda e engrenagem"
 
 #: activities/drawing_wheels/DrawingWheels.qml:690
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Salvar sua imagem"
@@ -28611,73 +28612,82 @@ msgctxt "QObject|"
 msgid "No data found for %1."
 msgstr "Não foi encontrado nenhum dado para %1."
 
-#: core/GCCreationHandler.qml:184
-#, qt-format
+#: core/GCCreationHandler.qml:185
+#, fuzzy
+#| msgctxt "GCCreationHandler|"
+#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
-msgid "%1 deleted successfully!"
+msgid "File deleted successfully!"
 msgstr "%1 excluído com sucesso!"
 
-#: core/GCCreationHandler.qml:185 core/GCCreationHandler.qml:193
-#: core/GCCreationHandler.qml:252
+#: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
+#: core/GCCreationHandler.qml:253
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr "OK"
 
-#: core/GCCreationHandler.qml:192
-#, qt-format
+#: core/GCCreationHandler.qml:193
+#, fuzzy
+#| msgctxt "GCCreationHandler|"
+#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
-msgid "Unable to delete %1!"
+msgid "Unable to delete the file!"
 msgstr "Não foi possível excluir %1!"
 
-#: core/GCCreationHandler.qml:229
+#: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
 msgstr "Um arquivo com este nome já existe. Deseja substitui-lo?"
 
-#: core/GCCreationHandler.qml:230 core/GCCreationHandler.qml:237
+#: core/GCCreationHandler.qml:231 core/GCCreationHandler.qml:238
 msgctxt "GCCreationHandler|"
 msgid "Yes"
 msgstr "Sim"
 
-#: core/GCCreationHandler.qml:230 core/GCCreationHandler.qml:237
+#: core/GCCreationHandler.qml:231 core/GCCreationHandler.qml:238
 msgctxt "GCCreationHandler|"
 msgid "No"
 msgstr "Não"
 
-#: core/GCCreationHandler.qml:236
+#: core/GCCreationHandler.qml:237
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
 msgstr "Deseja realmente excluir este arquivo?"
 
-#: core/GCCreationHandler.qml:251
+#: core/GCCreationHandler.qml:252
 msgctxt "GCCreationHandler|"
 msgid "Saved successfully!"
 msgstr "Salvo com sucesso!"
 
-#: core/GCCreationHandler.qml:282
+#: core/GCCreationHandler.qml:283
 msgctxt "GCCreationHandler|"
 msgid "Enter file name"
 msgstr "Digite o nome do arquivo"
 
-#: core/GCCreationHandler.qml:282
+#: core/GCCreationHandler.qml:283
 msgctxt "GCCreationHandler|"
 msgid "Search"
 msgstr "Pesquisar"
 
-#: core/GCCreationHandler.qml:296
+#: core/GCCreationHandler.qml:297
 msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "Salvar"
 
-#: core/GCCreationHandler.qml:406
+#: core/GCCreationHandler.qml:409
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "Abrir"
 
-#: core/GCCreationHandler.qml:416
+#: core/GCCreationHandler.qml:419
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Excluir"
+
+#: core/GCCreationHandler.qml:429
+msgctxt "GCCreationHandler|"
+msgid "Open folder"
+msgstr ""
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-12-11 09:35+0200\n"
+"PO-Revision-Date: 2025-12-15 10:43+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -1983,7 +1983,7 @@ msgctxt "TutorialDataset|"
 msgid ""
 " A red LED converts electrical energy into red light energy under particular "
 "conditions."
-msgstr " נורת לֶד אדומה ממירה אנרגיה חשמלית לאור אדום בתנאים מסוימים."
+msgstr " נורית אדומה ממירה אנרגיה חשמלית לאור אדום בתנאים מסוימים."
 
 #: activities/analog_electricity/TutorialDataset.qml:252
 msgctxt "TutorialDataset|"
@@ -6432,21 +6432,15 @@ msgstr "גלגלי איור"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Touch the numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Roll the gear in the cogwheel to draw."
-msgstr "לגעת במספרים בסדר הנכון."
+msgstr "יש לגלגל את גלגל השיניים כדי לצייר."
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr "מידע נוסף על כלי איור דיגיטליים."
+msgstr "להיחשף להיפוטרוכואידים ולהשתמש בהם ככלי ציור דיגיטליים."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:28
@@ -6460,6 +6454,12 @@ msgid ""
 "file (vector format), along with a PNG file (pixel format). Only the SVG "
 "file can be opened again from the activity.<br><br>"
 msgstr ""
+"יצירת ציורים מהממים על ידי סיבוב גלגל השיניים עם העט הנבחר. אפשר לבחור גודל "
+"גלגל, הגדרות עט וצבע מהלוחות הצצים וללחוץ על כפתור ההפעלה כדי לסובב את גלגל "
+"השיניים. אפשר להשתמש בתפריט הקובץ כדי לשמור את התמונה שלך, לפתוח תמונה "
+"שנשמרה בעבר או ליצור תמונה חדשה עם צבע רקע מסוים. השמירה תשמור את התמונה "
+"בתסדיר SVG (תבנית וקטורית), לצד קובץ PNG (תבנית עם פיקסלים). אפשר לפתוח רק "
+"את קובץ ה־SVG שוב מתו הפעילות.<br><br>"
 
 #: activities/drawing_wheels/ActivityInfo.qml:30
 #: activities/sketch/ActivityInfo.qml:28
@@ -6488,7 +6488,7 @@ msgstr "Ctrl + O: פתיחת תמונה"
 #: activities/drawing_wheels/DrawingWheels.qml:377
 msgctxt "DrawingWheels|"
 msgid "File menu"
-msgstr ""
+msgstr "תפריט קובץ"
 
 #: activities/drawing_wheels/DrawingWheels.qml:389
 msgctxt "DrawingWheels|"
@@ -6496,20 +6496,14 @@ msgid "Wheel and gear"
 msgstr "גלגל וגלגל שיניים"
 
 #: activities/drawing_wheels/DrawingWheels.qml:413
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Piano composition"
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
-msgstr "הלחנה בפסנתר"
+msgstr "גודל ומקום עיפרון"
 
 #: activities/drawing_wheels/DrawingWheels.qml:425
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font selector"
 msgctxt "DrawingWheels|"
 msgid "Color selector"
-msgstr "בורר גוֹפָנים"
+msgstr "בורר צבעים"
 
 #: activities/drawing_wheels/DrawingWheels.qml:452
 msgctxt "DrawingWheels|"
@@ -6542,12 +6536,9 @@ msgid "Hide wheel and gear"
 msgstr "הסתרת גלגל וגלגל שיניים"
 
 #: activities/drawing_wheels/DrawingWheels.qml:690
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
-msgstr "שמירת התמונה שלך"
+msgstr "שמירת תמונה וקטורית (SVG)"
 
 #: activities/drawing_wheels/DrawingWheels.qml:705
 msgctxt "DrawingWheels|"
@@ -6560,9 +6551,6 @@ msgid "Create a new image"
 msgstr "יצירת תמונה חדשה"
 
 #: activities/drawing_wheels/DrawingWheels.qml:753
-#, fuzzy
-#| msgctxt "BackgroundColorSelector|"
-#| msgid "Background color"
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "צבע רקע"
@@ -6599,12 +6587,9 @@ msgid "Fast"
 msgstr "מהר"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1058
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Pensize"
 msgctxt "DrawingWheels|"
 msgid "Pen size"
-msgstr "גודל העט"
+msgstr "גודל עט"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1095
 msgctxt "DrawingWheels|"
@@ -6614,12 +6599,9 @@ msgstr "אטימות"
 #: activities/drawing_wheels/DrawingWheels.qml:1138
 msgctxt "DrawingWheels|"
 msgid "Offset"
-msgstr ""
+msgstr "היסט"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1176
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Starting tooth"
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "שן התחלתית"
@@ -24128,9 +24110,6 @@ msgid "Gradient Tools"
 msgstr "כלי מדרגים"
 
 #: activities/sketch/PaletteSelector.qml:148
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Palettes"
 msgctxt "PaletteSelector|"
 msgid "Palettes"
 msgstr "לוחות צבעים"
@@ -27544,73 +27523,82 @@ msgctxt "QObject|"
 msgid "No data found for %1."
 msgstr "לא נמצאו נתונים עבור %1."
 
-#: core/GCCreationHandler.qml:184
-#, qt-format
+#: core/GCCreationHandler.qml:185
+#, fuzzy
+#| msgctxt "GCCreationHandler|"
+#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
-msgid "%1 deleted successfully!"
+msgid "File deleted successfully!"
 msgstr "%1 נמחק בהצלחה!"
 
-#: core/GCCreationHandler.qml:185 core/GCCreationHandler.qml:193
-#: core/GCCreationHandler.qml:252
+#: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
+#: core/GCCreationHandler.qml:253
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr "אישור"
 
-#: core/GCCreationHandler.qml:192
-#, qt-format
+#: core/GCCreationHandler.qml:193
+#, fuzzy
+#| msgctxt "GCCreationHandler|"
+#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
-msgid "Unable to delete %1!"
+msgid "Unable to delete the file!"
 msgstr "לא ניתן למחוק את %1!"
 
-#: core/GCCreationHandler.qml:229
+#: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
 msgstr "כבר קיים קובץ בשם הזה, להחליף אותו?"
 
-#: core/GCCreationHandler.qml:230 core/GCCreationHandler.qml:237
+#: core/GCCreationHandler.qml:231 core/GCCreationHandler.qml:238
 msgctxt "GCCreationHandler|"
 msgid "Yes"
 msgstr "כן"
 
-#: core/GCCreationHandler.qml:230 core/GCCreationHandler.qml:237
+#: core/GCCreationHandler.qml:231 core/GCCreationHandler.qml:238
 msgctxt "GCCreationHandler|"
 msgid "No"
 msgstr "לא"
 
-#: core/GCCreationHandler.qml:236
+#: core/GCCreationHandler.qml:237
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
 msgstr "למחוק את הקובץ הזה?"
 
-#: core/GCCreationHandler.qml:251
+#: core/GCCreationHandler.qml:252
 msgctxt "GCCreationHandler|"
 msgid "Saved successfully!"
 msgstr "נשמר בהצלחה!"
 
-#: core/GCCreationHandler.qml:282
+#: core/GCCreationHandler.qml:283
 msgctxt "GCCreationHandler|"
 msgid "Enter file name"
 msgstr "למלא את שם הקובץ"
 
-#: core/GCCreationHandler.qml:282
+#: core/GCCreationHandler.qml:283
 msgctxt "GCCreationHandler|"
 msgid "Search"
 msgstr "חיפוש"
 
-#: core/GCCreationHandler.qml:296
+#: core/GCCreationHandler.qml:297
 msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "שמירה"
 
-#: core/GCCreationHandler.qml:406
+#: core/GCCreationHandler.qml:409
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "לטעון"
 
-#: core/GCCreationHandler.qml:416
+#: core/GCCreationHandler.qml:419
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "למחוק"
+
+#: core/GCCreationHandler.qml:429
+msgctxt "GCCreationHandler|"
+msgid "Open folder"
+msgstr ""
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"

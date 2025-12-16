@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-12-12 07:23+0100\n"
+"PO-Revision-Date: 2025-12-16 06:44+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -6627,21 +6627,16 @@ msgstr "Risalna kolesa"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Touch the numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Roll the gear in the cogwheel to draw."
-msgstr "Dotaknite se številk v pravem zaporedju."
+msgstr "Za risanje zavrtite zobnik v zobniku."
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr "Spoznajte nekaj orodij za digitalno slikanje."
+msgstr ""
+"Odkrijte hipotrohoide in jih uporabite kot orodja za digitalno slikanje."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:28
@@ -6655,6 +6650,13 @@ msgid ""
 "file (vector format), along with a PNG file (pixel format). Only the SVG "
 "file can be opened again from the activity.<br><br>"
 msgstr ""
+"Ustvarite čudovite risbe tako, da z izbranim peresom zavrtite zobnik v "
+"zobniku. V pojavnih ploščah izberite velikost kolesa, velikost zobnika, "
+"nastavitve peresa in barvo ter pritisnite gumb za predvajanje, da zavrtite "
+"zobnik. V meniju Datoteka lahko shranite sliko, odprete prej shranjeno sliko "
+"ali ustvarite novo sliko z izbrano barvo ozadja. Shranjevanje slike jo bo "
+"shranilo v datoteko SVG (vektorska oblika) skupaj z datoteko PNG (rastrska "
+"oblika). Iz dejavnosti je mogoče ponovno odpreti samo datoteko SVG.<br><br>"
 
 #: activities/drawing_wheels/ActivityInfo.qml:30
 #: activities/sketch/ActivityInfo.qml:28
@@ -6683,7 +6685,7 @@ msgstr "Ctrl + O: odpri sliko"
 #: activities/drawing_wheels/DrawingWheels.qml:377
 msgctxt "DrawingWheels|"
 msgid "File menu"
-msgstr ""
+msgstr "Datotečni mei"
 
 #: activities/drawing_wheels/DrawingWheels.qml:389
 msgctxt "DrawingWheels|"
@@ -6731,9 +6733,6 @@ msgid "Hide wheel and gear"
 msgstr "Skrij kolo in mehanizem"
 
 #: activities/drawing_wheels/DrawingWheels.qml:690
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Shrani svojo sliko"
@@ -28160,73 +28159,82 @@ msgctxt "QObject|"
 msgid "No data found for %1."
 msgstr "Ni najdenih podatkov za %1."
 
-#: core/GCCreationHandler.qml:184
-#, qt-format
+#: core/GCCreationHandler.qml:185
+#, fuzzy
+#| msgctxt "GCCreationHandler|"
+#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
-msgid "%1 deleted successfully!"
+msgid "File deleted successfully!"
 msgstr "%1 uspešno izbrisana!"
 
-#: core/GCCreationHandler.qml:185 core/GCCreationHandler.qml:193
-#: core/GCCreationHandler.qml:252
+#: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
+#: core/GCCreationHandler.qml:253
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr "V redu"
 
-#: core/GCCreationHandler.qml:192
-#, qt-format
+#: core/GCCreationHandler.qml:193
+#, fuzzy
+#| msgctxt "GCCreationHandler|"
+#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
-msgid "Unable to delete %1!"
+msgid "Unable to delete the file!"
 msgstr "Ni mogoče izbrisati %1!"
 
-#: core/GCCreationHandler.qml:229
+#: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
 msgstr "Datoteka s tem imenom že obstaja. Ali jo želite zamenjati?"
 
-#: core/GCCreationHandler.qml:230 core/GCCreationHandler.qml:237
+#: core/GCCreationHandler.qml:231 core/GCCreationHandler.qml:238
 msgctxt "GCCreationHandler|"
 msgid "Yes"
 msgstr "Da"
 
-#: core/GCCreationHandler.qml:230 core/GCCreationHandler.qml:237
+#: core/GCCreationHandler.qml:231 core/GCCreationHandler.qml:238
 msgctxt "GCCreationHandler|"
 msgid "No"
 msgstr "Ne"
 
-#: core/GCCreationHandler.qml:236
+#: core/GCCreationHandler.qml:237
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
 msgstr "Ali res želite izbrisati to datoteko?"
 
-#: core/GCCreationHandler.qml:251
+#: core/GCCreationHandler.qml:252
 msgctxt "GCCreationHandler|"
 msgid "Saved successfully!"
 msgstr "Uspešno shranjeno!"
 
-#: core/GCCreationHandler.qml:282
+#: core/GCCreationHandler.qml:283
 msgctxt "GCCreationHandler|"
 msgid "Enter file name"
 msgstr "Vnesite ime datoteke"
 
-#: core/GCCreationHandler.qml:282
+#: core/GCCreationHandler.qml:283
 msgctxt "GCCreationHandler|"
 msgid "Search"
 msgstr "Išči"
 
-#: core/GCCreationHandler.qml:296
+#: core/GCCreationHandler.qml:297
 msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "Shrani"
 
-#: core/GCCreationHandler.qml:406
+#: core/GCCreationHandler.qml:409
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "Naloži"
 
-#: core/GCCreationHandler.qml:416
+#: core/GCCreationHandler.qml:419
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Izbriši"
+
+#: core/GCCreationHandler.qml:429
+msgctxt "GCCreationHandler|"
+msgid "Open folder"
+msgstr ""
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"

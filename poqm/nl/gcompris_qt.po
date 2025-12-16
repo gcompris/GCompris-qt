@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-12-12 11:57+0100\n"
+"PO-Revision-Date: 2025-12-15 11:14+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -6674,21 +6674,17 @@ msgstr "Wielen tekenen"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Touch the numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Roll the gear in the cogwheel to draw."
-msgstr "Raak de getallen aan in de juiste volgorde."
+msgstr "Draai het tandwiel in het raderwerk om te tekenen."
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr "Leren over enige hulpmiddelen voor tekenen."
+msgstr ""
+"Ontdek hypotrochoïden en gebruik ze als digitale hulpmiddelen voor "
+"schilderen."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:28
@@ -6702,6 +6698,15 @@ msgid ""
 "file (vector format), along with a PNG file (pixel format). Only the SVG "
 "file can be opened again from the activity.<br><br>"
 msgstr ""
+"Maak prachtige tekeningen door het tandwiel in het raderwerk te laten "
+"draaien met de gekozen pen. Selecteer een wielgrootte, een tandwielgrootte, "
+"peninstellingen en kleur in de pop-upvensters en druk op de afspeelknop om "
+"het tandwiel te laten draaien. U kunt het menu 'Bestand' gebruiken om uw "
+"afbeelding op te slaan, een eerder opgeslagen afbeelding te openen of een "
+"nieuwe afbeelding te maken met de geselecteerde achtergrondkleur. Het "
+"opslaan van een afbeelding slaat deze op als een SVG-bestand (vectorformaat) "
+"en als een PNG-bestand (pixelformaat). Alleen het SVG-bestand kan vanuit de "
+"activiteit opnieuw worden geopend.<br><br>"
 
 #: activities/drawing_wheels/ActivityInfo.qml:30
 #: activities/sketch/ActivityInfo.qml:28
@@ -6730,12 +6735,12 @@ msgstr "Ctrl + O: een afbeelding openen"
 #: activities/drawing_wheels/DrawingWheels.qml:377
 msgctxt "DrawingWheels|"
 msgid "File menu"
-msgstr ""
+msgstr "Menu Bestand"
 
 #: activities/drawing_wheels/DrawingWheels.qml:389
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
-msgstr "Wielen werktuig"
+msgstr "Wiel en tandwiel"
 
 #: activities/drawing_wheels/DrawingWheels.qml:413
 msgctxt "DrawingWheels|"
@@ -6770,17 +6775,14 @@ msgstr "Met tekenen beginnen"
 #: activities/drawing_wheels/DrawingWheels.qml:531
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
-msgstr "Wiel en werktuig tonen"
+msgstr "Wiel en tandwiel tonen"
 
 #: activities/drawing_wheels/DrawingWheels.qml:531
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
-msgstr "Wiel en werktuig verbergen"
+msgstr "Wiel en tandwiel verbergen"
 
 #: activities/drawing_wheels/DrawingWheels.qml:690
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Sla uw afbeelding op"
@@ -6808,7 +6810,7 @@ msgstr "Wiel"
 #: activities/drawing_wheels/DrawingWheels.qml:898
 msgctxt "DrawingWheels|"
 msgid "Gear"
-msgstr "Werktuig"
+msgstr "Tandwiel"
 
 #: activities/drawing_wheels/DrawingWheels.qml:961
 #, qt-format
@@ -28482,73 +28484,82 @@ msgctxt "QObject|"
 msgid "No data found for %1."
 msgstr "Geen gegevens gevonden voor %1."
 
-#: core/GCCreationHandler.qml:184
-#, qt-format
+#: core/GCCreationHandler.qml:185
+#, fuzzy
+#| msgctxt "GCCreationHandler|"
+#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
-msgid "%1 deleted successfully!"
+msgid "File deleted successfully!"
 msgstr "%1 met succes verwijderd!"
 
-#: core/GCCreationHandler.qml:185 core/GCCreationHandler.qml:193
-#: core/GCCreationHandler.qml:252
+#: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
+#: core/GCCreationHandler.qml:253
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr "OK"
 
-#: core/GCCreationHandler.qml:192
-#, qt-format
+#: core/GCCreationHandler.qml:193
+#, fuzzy
+#| msgctxt "GCCreationHandler|"
+#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
-msgid "Unable to delete %1!"
+msgid "Unable to delete the file!"
 msgstr "Kan %1 niet verwijderen!"
 
-#: core/GCCreationHandler.qml:229
+#: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
 msgstr "Een bestand met deze naam bestaat al. Wil je het vervangen?"
 
-#: core/GCCreationHandler.qml:230 core/GCCreationHandler.qml:237
+#: core/GCCreationHandler.qml:231 core/GCCreationHandler.qml:238
 msgctxt "GCCreationHandler|"
 msgid "Yes"
 msgstr "Ja"
 
-#: core/GCCreationHandler.qml:230 core/GCCreationHandler.qml:237
+#: core/GCCreationHandler.qml:231 core/GCCreationHandler.qml:238
 msgctxt "GCCreationHandler|"
 msgid "No"
 msgstr "Nee"
 
-#: core/GCCreationHandler.qml:236
+#: core/GCCreationHandler.qml:237
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
 msgstr "Wil je echt dit bestand verwijderen?"
 
-#: core/GCCreationHandler.qml:251
+#: core/GCCreationHandler.qml:252
 msgctxt "GCCreationHandler|"
 msgid "Saved successfully!"
 msgstr "Met succes opgeslagen!"
 
-#: core/GCCreationHandler.qml:282
+#: core/GCCreationHandler.qml:283
 msgctxt "GCCreationHandler|"
 msgid "Enter file name"
 msgstr "Bestandnaam invoeren"
 
-#: core/GCCreationHandler.qml:282
+#: core/GCCreationHandler.qml:283
 msgctxt "GCCreationHandler|"
 msgid "Search"
 msgstr "Zoeken"
 
-#: core/GCCreationHandler.qml:296
+#: core/GCCreationHandler.qml:297
 msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "Opslaan"
 
-#: core/GCCreationHandler.qml:406
+#: core/GCCreationHandler.qml:409
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "Laden"
 
-#: core/GCCreationHandler.qml:416
+#: core/GCCreationHandler.qml:419
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Verwijderen"
+
+#: core/GCCreationHandler.qml:429
+msgctxt "GCCreationHandler|"
+msgid "Open folder"
+msgstr ""
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
