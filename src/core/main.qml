@@ -543,7 +543,7 @@ Window {
         isDestructible: false
         closeDialogOnClick: false
 
-        title: qsTr("Select your login")
+        title: qsTr("Select your username")
 
         property bool okPressed: false
 
@@ -553,7 +553,7 @@ Window {
             if(chooseLogin.chosenLogin == "") {
                 Core.showMessageDialog(
                     chooseLogin,
-                    qsTr("Please select a login in the list or cancel."),
+                    qsTr("Please select your username in the list or cancel."),
                     "", null,
                     "", null);
                 chooseLogin.alreadyClicked = false;
