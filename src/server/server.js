@@ -39,24 +39,6 @@ function shortActivityName(str) {
     return str.replace(/\/.*/, "")
 }
 
-// Copy, should be removed from core.js
-function getPasswordImages() {
-    return [ "apple", "banana", "cherries", "lemon", "orange", "pear", "pineapple", "plum" ]
-}
-
-/**
- * Shuffle the array @p o and returns it.
- *
- * @param o Array to shuffle.
- * @returns A shuffled array.
- */
-// Copy from core.js
-function shuffle(o) {
-    for(var j, x, i = o.length; i;
-        j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-    return o;
-}
-
 function debug_model(model) {
     for (var i = 0; i < model.count; i++) {
         console.warn(JSON.stringify(model.get(i)))

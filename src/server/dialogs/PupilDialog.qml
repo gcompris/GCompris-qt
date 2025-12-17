@@ -11,7 +11,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
-import "qrc:/gcompris/src/server/server.js" as Server
+import "qrc:/gcompris/src/core/core.js" as Core
 import QtQuick.Controls.Basic
 
 import "../singletons"
@@ -98,7 +98,7 @@ Popup {
         }
 
         imagesModel.clear()
-        var passImages = Server.getPasswordImages()
+        var passImages = Core.getPasswordImages()
         for (i = 0; i < passImages.length; i++)     // Move string array to ListModel
             imagesModel.append({ "icon_": passImages[i] })
 
@@ -228,7 +228,7 @@ Popup {
                     orientation: ListView.Horizontal
                     interactive: true
                     clip: true
-                    model: Server.shuffle(imagesModel)
+                    model: Core.shuffle(imagesModel)
                     delegate: Image {
                         source: "qrc:/gcompris/src/server/resource/" + icon_ + ".svg"
                         sourceSize.height: height
