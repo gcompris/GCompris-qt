@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2025-12-12 13:18+0200\n"
+"PO-Revision-Date: 2025-12-16 21:55+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -6729,21 +6729,17 @@ msgstr "Колеса для малювання"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Touch the numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Roll the gear in the cogwheel to draw."
-msgstr "Торкніться чисел у правильному порядку."
+msgstr "Покрутіть шестерню у зубчастому колесі, щоб намалювати візерунок."
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr "Навчання користуванню інструментами цифрового малювання."
+msgstr ""
+"Відкрийте для себе гіпотрохоїди та використовуйте їх як інструменти "
+"цифрового малювання."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:28
@@ -6757,6 +6753,15 @@ msgid ""
 "file (vector format), along with a PNG file (pixel format). Only the SVG "
 "file can be opened again from the activity.<br><br>"
 msgstr ""
+"Створюйте гарні малюнки, обертаючи шестерню у зубчастому колесі за допомогою "
+"вибраного пера. Виберіть розмір колеса, розмір шестерні, налаштування пера "
+"та колір за допомогою контекстних панелей і натисніть кнопку відтворення, "
+"щоб почати обертання шестерні. Ви можете скористатися меню «Файл», щоб "
+"зберегти зображення, відкрити раніше збережене зображення або створити "
+"зображення з вибраним кольором тла. Збереження зображення призведе до "
+"збереження файла даних SVG (векторний формат) разом із файлом PNG "
+"(піксельний формат). З вікна вправи можна знову відкрити лише файл SVG."
+"<br><br>"
 
 #: activities/drawing_wheels/ActivityInfo.qml:30
 #: activities/sketch/ActivityInfo.qml:28
@@ -6785,7 +6790,7 @@ msgstr "Ctrl + O: відкрити зображення"
 #: activities/drawing_wheels/DrawingWheels.qml:377
 msgctxt "DrawingWheels|"
 msgid "File menu"
-msgstr ""
+msgstr "Меню «Файл»"
 
 #: activities/drawing_wheels/DrawingWheels.qml:389
 msgctxt "DrawingWheels|"
@@ -6833,9 +6838,6 @@ msgid "Hide wheel and gear"
 msgstr "Приховати колесо і шестерню"
 
 #: activities/drawing_wheels/DrawingWheels.qml:690
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Зберегти ваше зображення"
@@ -28471,12 +28473,9 @@ msgid "No data found for %1."
 msgstr "Не знайдено даних для %1."
 
 #: core/GCCreationHandler.qml:185
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr "%1 успішно вилучено!"
+msgstr "Файл успішно вилучено!"
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -28485,12 +28484,9 @@ msgid "OK"
 msgstr "Гаразд"
 
 #: core/GCCreationHandler.qml:193
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
-msgstr "Не вдалося вилучити %1!"
+msgstr "Не вдалося вилучити файл!"
 
 #: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
@@ -28545,7 +28541,7 @@ msgstr "Вилучити"
 #: core/GCCreationHandler.qml:429
 msgctxt "GCCreationHandler|"
 msgid "Open folder"
-msgstr ""
+msgstr "Відкрити теку"
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"

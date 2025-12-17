@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2025-12-12 09:14+0100\n"
+"PO-Revision-Date: 2025-12-16 09:43+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -6945,16 +6945,14 @@ msgstr "Rodes de dibuix"
 #: activities/drawing_wheels/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Roll the gear in the cogwheel to draw."
-msgstr ""
+msgstr "Fes rodar l'engranatge a la roda dentada per a dibuixar."
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr "Aprendre sobre algunes eines de pintura digital."
+msgstr ""
+"Descobrix els hipotrocoides i utilitza'ls com a eines de pintura digital."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:28
@@ -6968,6 +6966,14 @@ msgid ""
 "file (vector format), along with a PNG file (pixel format). Only the SVG "
 "file can be opened again from the activity.<br><br>"
 msgstr ""
+"Fes dibuixos bonics fent rodar l'engranatge a la roda dentada amb el llapis "
+"escollit. Tria una mida de la roda, una mida de l'engranatge, la "
+"configuració del llapis i el color dels panells emergents, i prem el botó de "
+"reproducció per a fer rodar l'engranatge. Pots utilitzar el menú de fitxer "
+"per a guardar la imatge, obrir una imatge guardada prèviament o crear una "
+"imatge nova amb el color de fons seleccionat. Guardar una imatge la guardarà "
+"en un fitxer SVG (format vectorial), juntament amb un fitxer PNG (format "
+"píxel). Només el fitxer SVG es pot obrir de nou des de l'activitat.<br><br>"
 
 #: activities/drawing_wheels/ActivityInfo.qml:30
 #: activities/sketch/ActivityInfo.qml:28
@@ -6996,7 +7002,7 @@ msgstr "«Ctrl+O»: obri una imatge"
 #: activities/drawing_wheels/DrawingWheels.qml:377
 msgctxt "DrawingWheels|"
 msgid "File menu"
-msgstr ""
+msgstr "Menú de fitxer"
 
 #: activities/drawing_wheels/DrawingWheels.qml:389
 msgctxt "DrawingWheels|"
@@ -7044,9 +7050,6 @@ msgid "Hide wheel and gear"
 msgstr "Oculta la roda i l'engranatge"
 
 #: activities/drawing_wheels/DrawingWheels.qml:690
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Guarda la imatge"
@@ -28924,12 +28927,9 @@ msgid "No data found for %1."
 msgstr "No s'han trobat les dades per a %1."
 
 #: core/GCCreationHandler.qml:185
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr "S'ha suprimit %1 amb èxit!"
+msgstr "El fitxer s'ha suprimit correctament!"
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -28938,12 +28938,9 @@ msgid "OK"
 msgstr "D'acord"
 
 #: core/GCCreationHandler.qml:193
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
-msgstr "No s'ha pogut suprimir %1!"
+msgstr "No s'ha pogut suprimir el fitxer!"
 
 #: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
@@ -28998,7 +28995,7 @@ msgstr "Suprimix"
 #: core/GCCreationHandler.qml:429
 msgctxt "GCCreationHandler|"
 msgid "Open folder"
-msgstr ""
+msgstr "Obri una carpeta"
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
@@ -29252,35 +29249,3 @@ msgstr "Omet"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Inicia"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Make beautiful drawings by turning the gear in the cogwheel with the "
-#~ "chosen pen."
-#~ msgstr ""
-#~ "Fes dibuixos bonics girant l'engranatge a la roda dentada amb el llapis "
-#~ "triat."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Select wheel, gear, pen's position and color from the foldable panels and "
-#~ "start the gear.<br><br>"
-#~ msgstr ""
-#~ "Tria la roda, l'engranatge, la posició del llapis i el color de les "
-#~ "subfinestres plegables i inicia l'engranatge.<br><br>"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Ctrl + D: save the drawing"
-#~ msgstr "«Ctrl+S»: guarda el dibuix"
-
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save drawing"
-#~ msgstr "Guarda el dibuix"
-
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save vector image (SVG)"
-#~ msgstr "Guarda la imatge vectorial (SVG)"
-
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Export image (PNG)"
-#~ msgstr "Exporta la imatge (PNG)"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"PO-Revision-Date: 2025-12-13 10:48+0100\n"
+"PO-Revision-Date: 2025-12-17 00:49+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -6757,16 +6757,14 @@ msgstr "Ruedas de dibujo"
 #: activities/drawing_wheels/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Roll the gear in the cogwheel to draw."
-msgstr ""
+msgstr "Gira el engranaje en la rueda dentada para dibujar."
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr "Aprende a usar algunas herramientas de dibujo digital."
+msgstr ""
+"Descubre los hipotrocoides y úsalos como herramientas de dibujo digital."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:28
@@ -6780,6 +6778,15 @@ msgid ""
 "file (vector format), along with a PNG file (pixel format). Only the SVG "
 "file can be opened again from the activity.<br><br>"
 msgstr ""
+"Crea bonitos dibujos haciendo rodar el engranaje en la rueda dentada con el "
+"lápiz escogido. Selecciona un tamaño de rueda, un tamaño de engranaje, los "
+"ajustes y el color del lápiz en los paneles emergentes y pulsa el botón "
+"«Reproducir» para hacer girar el engranaje. Puedes usar el menú Archivo para "
+"guardar la imagen, abrir una imagen previamente guardada o crear una nueva "
+"imagen con el color de fondo seleccionado. Las imágenes se guardan en un "
+"archivo SVG (en formato vectorial) junto a otro archivo PNG (en formato de "
+"píxeles). Solo el archivo SVG se puede abrir de nuevo en esta actividad."
+"<br><br>"
 
 #: activities/drawing_wheels/ActivityInfo.qml:30
 #: activities/sketch/ActivityInfo.qml:28
@@ -6808,7 +6815,7 @@ msgstr "Ctrl + O: abrir una imagen"
 #: activities/drawing_wheels/DrawingWheels.qml:377
 msgctxt "DrawingWheels|"
 msgid "File menu"
-msgstr ""
+msgstr "Menú Archivo"
 
 #: activities/drawing_wheels/DrawingWheels.qml:389
 msgctxt "DrawingWheels|"
@@ -6856,9 +6863,6 @@ msgid "Hide wheel and gear"
 msgstr "Ocultar la rueda y el engranaje"
 
 #: activities/drawing_wheels/DrawingWheels.qml:690
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Guardar la imagen"
@@ -28580,12 +28584,9 @@ msgid "No data found for %1."
 msgstr "No se han encontrado datos para %1."
 
 #: core/GCCreationHandler.qml:185
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr "%1 se ha borrado con éxito."
+msgstr "Archivo borrado correctamente."
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -28594,12 +28595,9 @@ msgid "OK"
 msgstr "Aceptar"
 
 #: core/GCCreationHandler.qml:193
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
-msgstr "No se puede borrar %1"
+msgstr "No se ha podido borrar el archivo."
 
 #: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
@@ -28654,7 +28652,7 @@ msgstr "Borrar"
 #: core/GCCreationHandler.qml:429
 msgctxt "GCCreationHandler|"
 msgid "Open folder"
-msgstr ""
+msgstr "Abrir carpeta"
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
@@ -28909,31 +28907,3 @@ msgstr "Omitir"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Iniciar"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Make beautiful drawings by turning the gear in the cogwheel with the "
-#~ "chosen pen."
-#~ msgstr ""
-#~ "Crea bonitos dibujos girando el engranaje de la rueda con el lápiz que "
-#~ "escojas."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Select wheel, gear, pen's position and color from the foldable panels and "
-#~ "start the gear.<br><br>"
-#~ msgstr ""
-#~ "Selecciona la rueda, el engranaje, la posición y el color del lápiz en "
-#~ "los paneles plegables y pon en marcha el mecanismo.<br><br>"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Ctrl + D: save the drawing"
-#~ msgstr "Ctrl + D: guardar el dibujo"
-
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save drawing"
-#~ msgstr "Guardar el dibujo"
-
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save vector image (SVG)"
-#~ msgstr "Guardar imagen vectorial (SVG)"

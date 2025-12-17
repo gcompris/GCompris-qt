@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2018-11-30 13:03+0000\n"
-"PO-Revision-Date: 2025-12-14 19:15+0100\n"
+"PO-Revision-Date: 2025-12-16 20:34+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.08.3\n"
+"X-Generator: Lokalize 25.12.0\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -6666,21 +6666,16 @@ msgstr "Marrazteko gurpilak"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Touch the numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Roll the gear in the cogwheel to draw."
-msgstr "Ukitu zenbakiak ordena zuzenean."
+msgstr "Biratu hortz dun gurpileko engranajea marrazteko."
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr "Ikasi marrazteko tresna digital batzuei buruz."
+msgstr ""
+"Ezagutu hipotrokoideak eta erabil itzazu marrazketa digitaleko tresna gisa."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:28
@@ -6694,6 +6689,15 @@ msgid ""
 "file (vector format), along with a PNG file (pixel format). Only the SVG "
 "file can be opened again from the activity.<br><br>"
 msgstr ""
+"Marrazki ederrak egin hortz dun gurpileko engranajea hautatutako "
+"arkatzarekin biratuz. Hautatu gurpil-neurria, engranaje-neurria, arkatzaren "
+"ezarpenak eta kolorea panel gainerakorretatik, eta sakatu jo botoia "
+"engranajea birarazteko. Fitxategia menua erabil dezakezu zure irudia "
+"gordetzeko, aurrez gordetako irudi bat irekitzeko, edo  hautatutako atzeko "
+"planoko kolorearekin irudi berri bat sortzeko. Irudi bat gordetzean SVG "
+"fitxategi (bektore formatua) batean egingo du, PNG fitxategi (pixel "
+"formatua) batekin batera. Jardueratik SVG fitxategia bakarrik ireki daiteke "
+"berriro."
 
 #: activities/drawing_wheels/ActivityInfo.qml:30
 #: activities/sketch/ActivityInfo.qml:28
@@ -6722,7 +6726,7 @@ msgstr "Ktrl + O: irudi bat irekitzeko"
 #: activities/drawing_wheels/DrawingWheels.qml:377
 msgctxt "DrawingWheels|"
 msgid "File menu"
-msgstr ""
+msgstr "Fitxategia menua"
 
 #: activities/drawing_wheels/DrawingWheels.qml:389
 msgctxt "DrawingWheels|"
@@ -6770,9 +6774,6 @@ msgid "Hide wheel and gear"
 msgstr "Ezkutatu gurpila eta engranajea"
 
 #: activities/drawing_wheels/DrawingWheels.qml:690
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Gorde zure irudia"
@@ -28379,12 +28380,9 @@ msgid "No data found for %1."
 msgstr "Ez da aurkitu %1(e)ren daturik."
 
 #: core/GCCreationHandler.qml:185
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr "%1 ondo ezabatu da!"
+msgstr "Fitxategi ondo ezabatu da!"
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -28393,12 +28391,9 @@ msgid "OK"
 msgstr "Ados"
 
 #: core/GCCreationHandler.qml:193
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
-msgstr "Ezin da %1 ezabatu!"
+msgstr "Ezin da fitxategia ezabatu!"
 
 #: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
@@ -28453,7 +28448,7 @@ msgstr "Ezabatu"
 #: core/GCCreationHandler.qml:429
 msgctxt "GCCreationHandler|"
 msgid "Open folder"
-msgstr ""
+msgstr "Ireki karpeta"
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
