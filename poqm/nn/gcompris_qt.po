@@ -195,7 +195,7 @@ msgstr ""
 #: activities/colors/ActivityInfo.qml:25
 #: activities/comparator/ActivityInfo.qml:27
 #: activities/crane/ActivityInfo.qml:30
-#: activities/drawing_wheels/ActivityInfo.qml:29
+#: activities/drawing_wheels/ActivityInfo.qml:28
 #: activities/enumerate/ActivityInfo.qml:25
 #: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
@@ -6640,7 +6640,7 @@ msgid "Discover hypotrochoids and use them as digital painting tools."
 msgstr "Læra om multiplum og faktorar."
 
 #. Help manual
-#: activities/drawing_wheels/ActivityInfo.qml:28
+#: activities/drawing_wheels/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Make beautiful drawings by rolling the gear in the cogwheel with the chosen "
@@ -6652,27 +6652,27 @@ msgid ""
 "file can be opened again from the activity.<br><br>"
 msgstr ""
 
-#: activities/drawing_wheels/ActivityInfo.qml:30
+#: activities/drawing_wheels/ActivityInfo.qml:29
 #: activities/sketch/ActivityInfo.qml:28
 #, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
 msgstr "Ctrl + Z: Angra"
 
-#: activities/drawing_wheels/ActivityInfo.qml:31
+#: activities/drawing_wheels/ActivityInfo.qml:30
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
 msgstr ""
 
-#: activities/drawing_wheels/ActivityInfo.qml:32
+#: activities/drawing_wheels/ActivityInfo.qml:31
 #: activities/sketch/ActivityInfo.qml:30
 #, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
 msgstr "Ctrl + A: Merk all teksten"
 
-#: activities/drawing_wheels/ActivityInfo.qml:33
+#: activities/drawing_wheels/ActivityInfo.qml:32
 #: activities/sketch/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
