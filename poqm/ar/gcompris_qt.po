@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-12-13 11:07+0400\n"
+"PO-Revision-Date: 2025-12-18 10:25+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -6450,21 +6450,15 @@ msgstr "عجلات الرسم"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Touch the numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Roll the gear in the cogwheel to draw."
-msgstr "المس الأرقام بالترتيب صحيح."
+msgstr "دوّر الترس في العجلة المسننة للرسم."
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr "أدوات رسم للتدرب على الأرقام."
+msgstr "اكتشف الهوبوتروكود واستخدمها كأدوات رسم رقمية."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
@@ -6478,6 +6472,12 @@ msgid ""
 "file (vector format), along with a PNG file (pixel format). Only the SVG "
 "file can be opened again from the activity.<br><br>"
 msgstr ""
+"ارسم رسومات جميلة عن طريق تدوير الترس في العجلة المسننة باستخدام القلم "
+"المختار. حدد حجم العجلة وحجم الترس وإعدادات القلم واللون من اللوحات "
+"المنبثقة، ثم اضغط على زر التشغيل لتدوير الترس. يمكنك استخدام قائمة الملفات "
+"لحفظ صورتك أو فتح صورة محفوظة مسبقًا أو إنشاء صورة جديدة بلون خلفية محدد. "
+"سيؤدي حفظ الصورة إلى حفظها في ملف SVG (تنسيق متجه) مع ملف PNG (تنسيق بكسل). "
+"لا يمكن فتح سوى ملف SVG مرة أخرى من النشاط.<br><br>"
 
 #: activities/drawing_wheels/ActivityInfo.qml:29
 #: activities/sketch/ActivityInfo.qml:28
@@ -6506,7 +6506,7 @@ msgstr "Ctrl + O: افتح صورة"
 #: activities/drawing_wheels/DrawingWheels.qml:377
 msgctxt "DrawingWheels|"
 msgid "File menu"
-msgstr ""
+msgstr "قائمة ملف"
 
 #: activities/drawing_wheels/DrawingWheels.qml:389
 msgctxt "DrawingWheels|"
@@ -6554,9 +6554,6 @@ msgid "Hide wheel and gear"
 msgstr "أخفِ العجلة والترس"
 
 #: activities/drawing_wheels/DrawingWheels.qml:690
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "احفظ صورتك"
@@ -27530,12 +27527,9 @@ msgid "No data found for %1."
 msgstr "لا بيانات لـ%1."
 
 #: core/GCCreationHandler.qml:185
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr "حُذف %1 بِنَجاح!"
+msgstr "حُذف الملف بِنَجاح!"
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -27544,12 +27538,9 @@ msgid "OK"
 msgstr "حسنا"
 
 #: core/GCCreationHandler.qml:193
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
-msgstr "لا يُمْكِن حَذْف %1!"
+msgstr "لا يُمْكِن حَذْف الملف!"
 
 #: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
@@ -27604,7 +27595,7 @@ msgstr "احذف"
 #: core/GCCreationHandler.qml:429
 msgctxt "GCCreationHandler|"
 msgid "Open folder"
-msgstr ""
+msgstr "افتح مجلدًا"
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
