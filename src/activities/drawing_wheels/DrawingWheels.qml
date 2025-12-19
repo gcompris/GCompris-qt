@@ -68,7 +68,7 @@ ActivityBase {
             property alias toothOffset: toothOffsetSlider.value
             property alias file: file
             property alias currentWheel: wheelPanel.currentWheel
-            property alias currentGear: wheelPanel.currentWheel
+            property alias currentGear: wheelPanel.currentGear
             property alias gearsModel: gearsModel
             property alias undoStack: undoStack
             property alias svgTank: svgTank
@@ -151,17 +151,18 @@ ActivityBase {
 
             function restoreFromStack(todo) {
                 if (todo === undefined)  return
-                Activity.initGear()
                 items.theGear.wheelAngle = todo.wheelAngle_
                 items.toothOffset = todo.toothOffset_
                 items.penOffset = todo.penOffset_
                 items.penOpacity = todo.penOpacity_
                 items.penColor = todo.penColor_
                 items.penWidth = todo.penWidth_
-                items.currentWheel = todo.currentWheel_
+                // Always load currentGear before currentWheel, else currentGear risks to change on currentWheelChanged.
                 items.currentGear = todo.currentGear_
+                items.currentWheel = todo.currentWheel_
                 items.wheelTeeth = todo.wheelTeeth_
                 items.gearTeeth = todo.gearTeeth_
+                Activity.initGear()
 
                 items.animationCanvas.initContext()
                 items.animationCanvas.ctx.lineWidth = items.penWidth
@@ -798,6 +799,17 @@ ActivityBase {
             property int currentWheel: 0
             property int currentGear: 0
 
+            onCurrentWheelChanged: {
+                gearsModel.clear();
+                for(var i = 0; i < Activity.sets[currentWheel].gears.length; i++) {
+                    gearsModel.append({ "nbTeeth": Activity.sets[currentWheel].gears[i]});
+                }
+                if(wheelPanel.currentGear > Activity.sets[currentWheel].gears.length - 1) {
+                    wheelPanel.currentGear = Activity.sets[currentWheel].gears.length - 1;
+                    gearTeethSlider.value = Activity.sets[currentWheel].gears[wheelPanel.currentGear];
+                }
+            }
+
             MouseArea {
                 // Just to catch click events before the panelManager
                 anchors.fill: parent
@@ -845,14 +857,6 @@ ActivityBase {
                             onClicked: {
                                 wheelPanel.currentWheel = index;
                                 wheelTeethSlider.value = parseInt(modelData);
-                                gearsModel.clear();
-                                for(var i = 0; i < Activity.sets[index].gears.length; i++) {
-                                    gearsModel.append({ "nbTeeth": Activity.sets[index].gears[i]});
-                                }
-                                if(wheelPanel.currentGear > Activity.sets[index].gears.length - 1) {
-                                    wheelPanel.currentGear = Activity.sets[index].gears.length - 1;
-                                    gearTeethSlider.value = Activity.sets[index].gears[wheelPanel.currentGear];
-                                }
                             }
                         }
                     }
