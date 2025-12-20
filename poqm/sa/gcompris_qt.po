@@ -6551,17 +6551,17 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ctrl + O: एकं चित्रं उद्घाटयन्तु"
 
-#: activities/drawing_wheels/DrawingWheels.qml:377
+#: activities/drawing_wheels/DrawingWheels.qml:378
 msgctxt "DrawingWheels|"
 msgid "File menu"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:389
+#: activities/drawing_wheels/DrawingWheels.qml:390
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:413
+#: activities/drawing_wheels/DrawingWheels.qml:414
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Piano composition"
@@ -6569,7 +6569,7 @@ msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr "पियानो रचना"
 
-#: activities/drawing_wheels/DrawingWheels.qml:425
+#: activities/drawing_wheels/DrawingWheels.qml:426
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font selector"
@@ -6577,7 +6577,7 @@ msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr "फ़ॉन्ट चयनकर्ता"
 
-#: activities/drawing_wheels/DrawingWheels.qml:452
+#: activities/drawing_wheels/DrawingWheels.qml:453
 #, fuzzy
 #| msgctxt "OptionsRow|"
 #| msgid "Undo"
@@ -6585,32 +6585,32 @@ msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "पूर्ववत"
 
-#: activities/drawing_wheels/DrawingWheels.qml:464
+#: activities/drawing_wheels/DrawingWheels.qml:465
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:498
+#: activities/drawing_wheels/DrawingWheels.qml:499
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:498
+#: activities/drawing_wheels/DrawingWheels.qml:499
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:531
+#: activities/drawing_wheels/DrawingWheels.qml:532
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:531
+#: activities/drawing_wheels/DrawingWheels.qml:532
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:690
+#: activities/drawing_wheels/DrawingWheels.qml:691
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Save your image"
@@ -6618,7 +6618,7 @@ msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "स्वस्य चित्रं रक्षतु"
 
-#: activities/drawing_wheels/DrawingWheels.qml:705
+#: activities/drawing_wheels/DrawingWheels.qml:706
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Open an image"
@@ -6626,7 +6626,7 @@ msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "एकं चित्रं उद्घाटयन्तु"
 
-#: activities/drawing_wheels/DrawingWheels.qml:734
+#: activities/drawing_wheels/DrawingWheels.qml:735
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Create a new image"
@@ -6634,7 +6634,7 @@ msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "नूतनं चित्रं रचयन्तु"
 
-#: activities/drawing_wheels/DrawingWheels.qml:753
+#: activities/drawing_wheels/DrawingWheels.qml:754
 #, fuzzy
 #| msgctxt "BackgroundColorSelector|"
 #| msgid "Background color"
@@ -6642,17 +6642,17 @@ msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "पृष्ठभूमि रंग"
 
-#: activities/drawing_wheels/DrawingWheels.qml:823
+#: activities/drawing_wheels/DrawingWheels.qml:835
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:898
+#: activities/drawing_wheels/DrawingWheels.qml:902
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:961
+#: activities/drawing_wheels/DrawingWheels.qml:965
 #, fuzzy, qt-format
 #| msgctxt "SignalGenerator|"
 #| msgid "%1 s"
@@ -6660,7 +6660,7 @@ msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 स"
 
-#: activities/drawing_wheels/DrawingWheels.qml:979
+#: activities/drawing_wheels/DrawingWheels.qml:983
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Speed"
@@ -6668,17 +6668,17 @@ msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "गति"
 
-#: activities/drawing_wheels/DrawingWheels.qml:995
+#: activities/drawing_wheels/DrawingWheels.qml:999
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1015
+#: activities/drawing_wheels/DrawingWheels.qml:1019
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1058
+#: activities/drawing_wheels/DrawingWheels.qml:1062
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font size"
@@ -6686,7 +6686,7 @@ msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "फन्ट् आकारः"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1095
+#: activities/drawing_wheels/DrawingWheels.qml:1099
 #, fuzzy
 #| msgctxt "ToolsPanel|"
 #| msgid "Opacity"
@@ -6694,12 +6694,12 @@ msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "अपारदर्शिता"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1138
+#: activities/drawing_wheels/DrawingWheels.qml:1142
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1176
+#: activities/drawing_wheels/DrawingWheels.qml:1180
 #, fuzzy
 #| msgctxt "IntroMessage|"
 #| msgid "Start"
@@ -6707,7 +6707,7 @@ msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "प्रारंभः"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1356
+#: activities/drawing_wheels/DrawingWheels.qml:1360
 #, fuzzy
 #| msgctxt "Sketch|"
 #| msgid "You did not save this image. Do you want to close this activity?"
@@ -6715,7 +6715,7 @@ msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "भवता एतत् चित्रं न रक्षितम्। किं भवन्तः एतत् कार्यं पिधातुम् इच्छन्ति ?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1357
+#: activities/drawing_wheels/DrawingWheels.qml:1361
 #, fuzzy
 #| msgctxt "Sketch|"
 #| msgid "Do you want to erase this image?"
@@ -6723,7 +6723,7 @@ msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "किं भवन्तः एतत् चित्रं मेटयितुम् इच्छन्ति ?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1358
+#: activities/drawing_wheels/DrawingWheels.qml:1362
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -6731,7 +6731,7 @@ msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "आम्‌"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1359
+#: activities/drawing_wheels/DrawingWheels.qml:1363
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"

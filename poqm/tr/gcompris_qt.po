@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-12-01 10:55+0300\n"
-"Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
+"PO-Revision-Date: 2025-12-19 12:55+0300\n"
+"Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.08.2\n"
+"X-Generator: Lokalize 25.11.80\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -2271,42 +2271,42 @@ msgstr "Oklar: Metinde dolaş"
 #: activities/baby_wordprocessor/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Shift + Arrows: select a part of the text"
-msgstr "Üst Karakter + Oklar: Metnin bir bölümünü seç"
+msgstr "Üst Karakter+Oklar: Metnin bir bölümünü seç"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + A: select all the text"
-msgstr "Kontrol + A: Tüm metni seç"
+msgstr "Kontrol+A: Tüm metni seç"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Ctrl + C: copy selected text"
-msgstr "Kontrol + C: Seçili metni kopyala"
+msgstr "Kontrol+C: Seçili metni kopyala"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Ctrl + X: cut selected text"
-msgstr "Kontrol + X: Seçili metni kes"
+msgstr "Kontrol+X: Seçili metni kes"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Ctrl + V: paste copied or cut text"
-msgstr "Kontrol + V: Kopyalanan veya kesilen metni yapıştır"
+msgstr "Kontrol+V: Kopyalanan veya kesilen metni yapıştır"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Ctrl + D: delete selected text"
-msgstr "Kontrol + D: Seçili metni sil"
+msgstr "Kontrol+D: Seçili metni sil"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo"
-msgstr "Kontrol + Z: Geri al"
+msgstr "Kontrol+Z: Geri al"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Shift + Z: redo"
-msgstr "Kontrol + Üst Karakter + Z: Yinele"
+msgstr "Kontrol+Üst Karakter+Z: Yinele"
 
 #: activities/baby_wordprocessor/BabyWordprocessor.qml:90
 msgctxt "BabyWordprocessor|"
@@ -6577,12 +6577,10 @@ msgstr ""
 
 #: activities/drawing_wheels/ActivityConfig.qml:29
 #: activities/sketch/ActivityConfig.qml:29
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 19."
+#, qt-format
 msgctxt "ActivityConfig|"
 msgid "Number of undo: %1"
-msgstr "1’den 19’a kadar sayılar."
+msgstr "Geri alma sayısı: %1"
 
 #: activities/drawing_wheels/ActivityConfig.qml:44
 #: activities/sketch/ActivityConfig.qml:44
@@ -6591,30 +6589,27 @@ msgid ""
 "Warning: setting the number of undo too high can make the application crash "
 "if your device doesn't have enough memory."
 msgstr ""
+"Uyarı: Aygıtınızda yeterli bellek yoksa geri alma sayısını çok yüksek yapmak "
+"uygulamanın çökmesine neden olabilir."
 
 #. Activity title
 #: activities/drawing_wheels/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "BrushToolPanel|"
-#| msgid "Drawing Tools"
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
-msgstr "Çizim Araçları"
+msgstr "Çizim tekerlekleri"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Roll the gear in the cogwheel to draw."
-msgstr ""
+msgstr "Dişli çarktaki dişliyi döndürerek çizim yap."
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr "Sayısal boyama araçları hakkında bilgi edin."
+msgstr ""
+"İç teker eğrilerini keşfet ve onları dijital resim araçları olarak kullan."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
@@ -6628,12 +6623,19 @@ msgid ""
 "file (vector format), along with a PNG file (pixel format). Only the SVG "
 "file can be opened again from the activity.<br><br>"
 msgstr ""
+"Seçtiğin kalemle dişli çarkı döndürerek güzel çizimler yap. Açılan "
+"panellerden bir çark boyutu, bir dişli boyutu, kalem ayarları ve renk seç ve "
+"dişliyi döndürmek için oynat düğmesine bas. Dosya menüsünü kullanarak "
+"resmini kaydedebilir, önceden kaydedilmiş bir resmi açabilir veya seçilen "
+"arka plan rengiyle yeni bir resim oluşturabilirsin. Bir resmi kaydetmek, onu "
+"bir SVG dosyası (vektör biçim) ve bir PNG dosyası (piksel biçim) olarak "
+"kaydeder. Etkinlikten yalnızca SVG dosyası yeniden açılabilir.<br><br>"
 
 #: activities/drawing_wheels/ActivityInfo.qml:29
 #: activities/sketch/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
-msgstr "Kontrol + Z: Son eylemi geri al"
+msgstr "Kontrol+Z: Son eylemi geri al"
 
 #: activities/drawing_wheels/ActivityInfo.qml:30
 #: activities/sketch/ActivityInfo.qml:29
@@ -6645,7 +6647,7 @@ msgstr "Kontrol+Y: Son eylemi geri al"
 #: activities/sketch/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
-msgstr "Kontrol + S: Görseli kaydet"
+msgstr "Kontrol+S: Görseli kaydet"
 
 #: activities/drawing_wheels/ActivityInfo.qml:32
 #: activities/sketch/ActivityInfo.qml:31
@@ -6653,190 +6655,143 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Kontrol+0: Bir görsel aç"
 
-#: activities/drawing_wheels/DrawingWheels.qml:377
+#: activities/drawing_wheels/DrawingWheels.qml:378
 msgctxt "DrawingWheels|"
 msgid "File menu"
-msgstr ""
+msgstr "Dosya menüsü"
 
-#: activities/drawing_wheels/DrawingWheels.qml:389
+#: activities/drawing_wheels/DrawingWheels.qml:390
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
-msgstr ""
+msgstr "Tekerlek ve dişli çark"
 
-#: activities/drawing_wheels/DrawingWheels.qml:413
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Piano composition"
+#: activities/drawing_wheels/DrawingWheels.qml:414
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
-msgstr "Piyano kompozisyonu"
+msgstr "Kalem boyutu ve konumu"
 
-#: activities/drawing_wheels/DrawingWheels.qml:425
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font selector"
+#: activities/drawing_wheels/DrawingWheels.qml:426
 msgctxt "DrawingWheels|"
 msgid "Color selector"
-msgstr "Yazıtipi seçici"
+msgstr "Renk seçicisi"
 
-#: activities/drawing_wheels/DrawingWheels.qml:452
-#, fuzzy
-#| msgctxt "OptionsRow|"
-#| msgid "Undo"
+#: activities/drawing_wheels/DrawingWheels.qml:453
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Geri al"
 
-#: activities/drawing_wheels/DrawingWheels.qml:464
+#: activities/drawing_wheels/DrawingWheels.qml:465
 msgctxt "DrawingWheels|"
 msgid "Redo"
-msgstr ""
+msgstr "Yinele"
 
-#: activities/drawing_wheels/DrawingWheels.qml:498
+#: activities/drawing_wheels/DrawingWheels.qml:499
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
-msgstr ""
+msgstr "Çizmeyi durdur"
 
-#: activities/drawing_wheels/DrawingWheels.qml:498
+#: activities/drawing_wheels/DrawingWheels.qml:499
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
-msgstr ""
+msgstr "Çizmeyi başlat"
 
-#: activities/drawing_wheels/DrawingWheels.qml:531
+#: activities/drawing_wheels/DrawingWheels.qml:532
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
-msgstr ""
+msgstr "Tekerleği ve dişli çarkı göster"
 
-#: activities/drawing_wheels/DrawingWheels.qml:531
+#: activities/drawing_wheels/DrawingWheels.qml:532
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
-msgstr ""
+msgstr "Tekerleği ve dişli çarkı gizle"
 
-#: activities/drawing_wheels/DrawingWheels.qml:690
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
+#: activities/drawing_wheels/DrawingWheels.qml:691
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Görselini kaydet"
 
-#: activities/drawing_wheels/DrawingWheels.qml:705
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Open an image"
+#: activities/drawing_wheels/DrawingWheels.qml:706
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Görsel aç"
 
-#: activities/drawing_wheels/DrawingWheels.qml:734
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Create a new image"
+#: activities/drawing_wheels/DrawingWheels.qml:735
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Yeni görsel oluştur"
 
-#: activities/drawing_wheels/DrawingWheels.qml:753
-#, fuzzy
-#| msgctxt "BackgroundColorSelector|"
-#| msgid "Background color"
+#: activities/drawing_wheels/DrawingWheels.qml:754
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Arka plan rengi"
 
-#: activities/drawing_wheels/DrawingWheels.qml:823
+#: activities/drawing_wheels/DrawingWheels.qml:835
 msgctxt "DrawingWheels|"
 msgid "Wheel"
-msgstr ""
+msgstr "Tekerlek"
 
-#: activities/drawing_wheels/DrawingWheels.qml:898
+#: activities/drawing_wheels/DrawingWheels.qml:902
 msgctxt "DrawingWheels|"
 msgid "Gear"
-msgstr ""
+msgstr "Dişli çark"
 
-#: activities/drawing_wheels/DrawingWheels.qml:961
-#, fuzzy, qt-format
-#| msgctxt "SignalGenerator|"
-#| msgid "%1 s"
+#: activities/drawing_wheels/DrawingWheels.qml:965
+#, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
-msgstr "%1 s"
+msgstr "%1 sivri uç"
 
-#: activities/drawing_wheels/DrawingWheels.qml:979
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
+#: activities/drawing_wheels/DrawingWheels.qml:983
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Hız"
 
-#: activities/drawing_wheels/DrawingWheels.qml:995
+#: activities/drawing_wheels/DrawingWheels.qml:999
 msgctxt "DrawingWheels|"
 msgid "Slow"
-msgstr ""
+msgstr "Yavaş"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1015
+#: activities/drawing_wheels/DrawingWheels.qml:1019
 msgctxt "DrawingWheels|"
 msgid "Fast"
-msgstr ""
+msgstr "Hızlı"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1058
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font size"
+#: activities/drawing_wheels/DrawingWheels.qml:1062
 msgctxt "DrawingWheels|"
 msgid "Pen size"
-msgstr "Yazıtipi puntosu"
+msgstr "Kalem büyüklüğü"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1095
-#, fuzzy
-#| msgctxt "ToolsPanel|"
-#| msgid "Opacity"
+#: activities/drawing_wheels/DrawingWheels.qml:1099
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Matlık"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1138
+#: activities/drawing_wheels/DrawingWheels.qml:1142
 msgctxt "DrawingWheels|"
 msgid "Offset"
-msgstr ""
+msgstr "Ofset"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1176
-#, fuzzy
-#| msgctxt "IntroMessage|"
-#| msgid "Start"
+#: activities/drawing_wheels/DrawingWheels.qml:1180
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
-msgstr "Başlat"
+msgstr "Dişi başlat"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1356
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "You did not save this image. Do you want to close this activity?"
+#: activities/drawing_wheels/DrawingWheels.qml:1360
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Bu görseli kaydetmedin. Bu etkinliği kapatmak mı istiyorsun?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1357
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "Do you want to erase this image?"
+#: activities/drawing_wheels/DrawingWheels.qml:1361
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Bu görseli silmek mi istiyorsun?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1358
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
+#: activities/drawing_wheels/DrawingWheels.qml:1362
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Evet"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1359
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
+#: activities/drawing_wheels/DrawingWheels.qml:1363
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "Hayır"
@@ -19406,7 +19361,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "Home - Exit an activity, go back to menu (Ctrl+W or Escape key)"
 msgstr ""
-"Ana Sayfa — Bir etkinlikten çık, menüye geri dön (Kontrol + W veya Vazgeç "
+"Ana Sayfa — Bir etkinlikten çık, menüye geri dön (Kontrol+W veya Vazgeç "
 "düğmesi)"
 
 #: activities/menu/ActivityInfo.qml:26
@@ -19447,7 +19402,7 @@ msgstr "G — GCompris Hakkında"
 #: activities/menu/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Quit - Quit GCompris (Ctrl+Q)"
-msgstr "Çık — GCompris’ten çık (Kontrol + Q)"
+msgstr "Çık — GCompris’ten çık (Kontrol+Q)"
 
 #: activities/menu/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
@@ -19481,17 +19436,17 @@ msgstr "<b> Klavye kısayolları:</b>"
 #: activities/menu/ActivityInfo.qml:39
 msgctxt "ActivityInfo|"
 msgid "Ctrl+B: Show or Hide the control bar"
-msgstr "Kontrol + B: Denetim çubuğunu göster veya gizle"
+msgstr "Kontrol+B: Denetim çubuğunu göster veya gizle"
 
 #: activities/menu/ActivityInfo.qml:40
 msgctxt "ActivityInfo|"
 msgid "Ctrl+F: Toggle full screen"
-msgstr "Kontrol + F; Tam ekranı aç/kapat"
+msgstr "Kontrol+F; Tam ekranı aç/kapat"
 
 #: activities/menu/ActivityInfo.qml:41
 msgctxt "ActivityInfo|"
 msgid "Ctrl+S: Toggle the activity section bar"
-msgstr "Kontrol + S: Etkinlik bölümü çubuğunu aç/kapat"
+msgstr "Kontrol+S: Etkinlik bölümü çubuğunu aç/kapat"
 
 #: activities/menu/BackgroundMusicList.qml:57
 msgctxt "BackgroundMusicList|"
@@ -19657,7 +19612,7 @@ msgstr "Çıkarken onay iste"
 #: activities/menu/ConfigurationItem.qml:373
 msgctxt "ConfigurationItem|"
 msgid "Font selector"
-msgstr "Yazıtipi seçici"
+msgstr "Yazıtipi seçicisi"
 
 #: activities/menu/ConfigurationItem.qml:378
 msgctxt "ConfigurationItem|"
@@ -24720,9 +24675,6 @@ msgid "Gradient Tools"
 msgstr "Gradyan Araçları"
 
 #: activities/sketch/PaletteSelector.qml:148
-#, fuzzy
-#| msgctxt "ColorsPanel|"
-#| msgid "Palettes"
 msgctxt "PaletteSelector|"
 msgid "Palettes"
 msgstr "Paletler"
@@ -28226,12 +28178,9 @@ msgid "No data found for %1."
 msgstr "%1 için veri bulunamadı."
 
 #: core/GCCreationHandler.qml:185
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr "%1 başarıyla silindi!"
+msgstr "Dosya başarıyla silindi!"
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -28240,12 +28189,9 @@ msgid "OK"
 msgstr "Tamam"
 
 #: core/GCCreationHandler.qml:193
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
-msgstr "%1 silinemiyor!"
+msgstr "Dosya silinemiyor!"
 
 #: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
@@ -28300,7 +28246,7 @@ msgstr "Sil"
 #: core/GCCreationHandler.qml:429
 msgctxt "GCCreationHandler|"
 msgid "Open folder"
-msgstr ""
+msgstr "Klasör aç"
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"

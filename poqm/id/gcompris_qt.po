@@ -6821,17 +6821,17 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ctrl + O: buka gambar"
 
-#: activities/drawing_wheels/DrawingWheels.qml:377
+#: activities/drawing_wheels/DrawingWheels.qml:378
 msgctxt "DrawingWheels|"
 msgid "File menu"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:389
+#: activities/drawing_wheels/DrawingWheels.qml:390
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:413
+#: activities/drawing_wheels/DrawingWheels.qml:414
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Piano composition"
@@ -6839,7 +6839,7 @@ msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr "Komposisi piano"
 
-#: activities/drawing_wheels/DrawingWheels.qml:425
+#: activities/drawing_wheels/DrawingWheels.qml:426
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font selector"
@@ -6847,7 +6847,7 @@ msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr "Memilih fonta"
 
-#: activities/drawing_wheels/DrawingWheels.qml:452
+#: activities/drawing_wheels/DrawingWheels.qml:453
 #, fuzzy
 #| msgctxt "OptionsRow|"
 #| msgid "Undo"
@@ -6855,32 +6855,32 @@ msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Batalkan"
 
-#: activities/drawing_wheels/DrawingWheels.qml:464
+#: activities/drawing_wheels/DrawingWheels.qml:465
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:498
+#: activities/drawing_wheels/DrawingWheels.qml:499
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:498
+#: activities/drawing_wheels/DrawingWheels.qml:499
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:531
+#: activities/drawing_wheels/DrawingWheels.qml:532
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:531
+#: activities/drawing_wheels/DrawingWheels.qml:532
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:690
+#: activities/drawing_wheels/DrawingWheels.qml:691
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Save your image"
@@ -6888,7 +6888,7 @@ msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Simpan gambarmu"
 
-#: activities/drawing_wheels/DrawingWheels.qml:705
+#: activities/drawing_wheels/DrawingWheels.qml:706
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Open an image"
@@ -6896,7 +6896,7 @@ msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Buka gambar"
 
-#: activities/drawing_wheels/DrawingWheels.qml:734
+#: activities/drawing_wheels/DrawingWheels.qml:735
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Create a new image"
@@ -6904,7 +6904,7 @@ msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Buat gambar baru"
 
-#: activities/drawing_wheels/DrawingWheels.qml:753
+#: activities/drawing_wheels/DrawingWheels.qml:754
 #, fuzzy
 #| msgctxt "BackgroundColorSelector|"
 #| msgid "Background color"
@@ -6912,17 +6912,17 @@ msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Warna latar belakang"
 
-#: activities/drawing_wheels/DrawingWheels.qml:823
+#: activities/drawing_wheels/DrawingWheels.qml:835
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:898
+#: activities/drawing_wheels/DrawingWheels.qml:902
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:961
+#: activities/drawing_wheels/DrawingWheels.qml:965
 #, fuzzy, qt-format
 #| msgctxt "SignalGenerator|"
 #| msgid "%1 s"
@@ -6930,7 +6930,7 @@ msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 s"
 
-#: activities/drawing_wheels/DrawingWheels.qml:979
+#: activities/drawing_wheels/DrawingWheels.qml:983
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Speed"
@@ -6938,17 +6938,17 @@ msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Kecepatan"
 
-#: activities/drawing_wheels/DrawingWheels.qml:995
+#: activities/drawing_wheels/DrawingWheels.qml:999
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1015
+#: activities/drawing_wheels/DrawingWheels.qml:1019
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1058
+#: activities/drawing_wheels/DrawingWheels.qml:1062
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font size"
@@ -6956,7 +6956,7 @@ msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "Ukuran fonta"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1095
+#: activities/drawing_wheels/DrawingWheels.qml:1099
 #, fuzzy
 #| msgctxt "ToolsPanel|"
 #| msgid "Opacity"
@@ -6964,12 +6964,12 @@ msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Keburaman"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1138
+#: activities/drawing_wheels/DrawingWheels.qml:1142
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1176
+#: activities/drawing_wheels/DrawingWheels.qml:1180
 #, fuzzy
 #| msgctxt "IntroMessage|"
 #| msgid "Start"
@@ -6977,7 +6977,7 @@ msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "Mulai"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1356
+#: activities/drawing_wheels/DrawingWheels.qml:1360
 #, fuzzy
 #| msgctxt "Sketch|"
 #| msgid "You did not save this image. Do you want to close this activity?"
@@ -6986,7 +6986,7 @@ msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 "Kamu tidak menyimpan gambar ini. Apakah kamu ingin menutup aktivitas ini?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1357
+#: activities/drawing_wheels/DrawingWheels.qml:1361
 #, fuzzy
 #| msgctxt "Sketch|"
 #| msgid "Do you want to erase this image?"
@@ -6994,7 +6994,7 @@ msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Apakah kamu ingin menghapus gambar ini?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1358
+#: activities/drawing_wheels/DrawingWheels.qml:1362
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -7002,7 +7002,7 @@ msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Ya"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1359
+#: activities/drawing_wheels/DrawingWheels.qml:1363
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"

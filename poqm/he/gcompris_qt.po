@@ -6485,143 +6485,143 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ctrl + O: פתיחת תמונה"
 
-#: activities/drawing_wheels/DrawingWheels.qml:377
+#: activities/drawing_wheels/DrawingWheels.qml:378
 msgctxt "DrawingWheels|"
 msgid "File menu"
 msgstr "תפריט קובץ"
 
-#: activities/drawing_wheels/DrawingWheels.qml:389
+#: activities/drawing_wheels/DrawingWheels.qml:390
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr "גלגל וגלגל שיניים"
 
-#: activities/drawing_wheels/DrawingWheels.qml:413
+#: activities/drawing_wheels/DrawingWheels.qml:414
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr "גודל ומקום עיפרון"
 
-#: activities/drawing_wheels/DrawingWheels.qml:425
+#: activities/drawing_wheels/DrawingWheels.qml:426
 msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr "בורר צבעים"
 
-#: activities/drawing_wheels/DrawingWheels.qml:452
+#: activities/drawing_wheels/DrawingWheels.qml:453
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "הסגה"
 
-#: activities/drawing_wheels/DrawingWheels.qml:464
+#: activities/drawing_wheels/DrawingWheels.qml:465
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "ביצוע מחדש"
 
-#: activities/drawing_wheels/DrawingWheels.qml:498
+#: activities/drawing_wheels/DrawingWheels.qml:499
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr "הפסקת איור"
 
-#: activities/drawing_wheels/DrawingWheels.qml:498
+#: activities/drawing_wheels/DrawingWheels.qml:499
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr "התחלת איור"
 
-#: activities/drawing_wheels/DrawingWheels.qml:531
+#: activities/drawing_wheels/DrawingWheels.qml:532
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr "הצגת גלגל וגלגל שיניים"
 
-#: activities/drawing_wheels/DrawingWheels.qml:531
+#: activities/drawing_wheels/DrawingWheels.qml:532
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr "הסתרת גלגל וגלגל שיניים"
 
-#: activities/drawing_wheels/DrawingWheels.qml:690
+#: activities/drawing_wheels/DrawingWheels.qml:691
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "שמירת תמונה וקטורית (SVG)"
 
-#: activities/drawing_wheels/DrawingWheels.qml:705
+#: activities/drawing_wheels/DrawingWheels.qml:706
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "פתיחת תמונה"
 
-#: activities/drawing_wheels/DrawingWheels.qml:734
+#: activities/drawing_wheels/DrawingWheels.qml:735
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "יצירת תמונה חדשה"
 
-#: activities/drawing_wheels/DrawingWheels.qml:753
+#: activities/drawing_wheels/DrawingWheels.qml:754
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "צבע רקע"
 
-#: activities/drawing_wheels/DrawingWheels.qml:823
+#: activities/drawing_wheels/DrawingWheels.qml:835
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr "גלגל"
 
-#: activities/drawing_wheels/DrawingWheels.qml:898
+#: activities/drawing_wheels/DrawingWheels.qml:902
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr "גלגל שיניים"
 
-#: activities/drawing_wheels/DrawingWheels.qml:961
+#: activities/drawing_wheels/DrawingWheels.qml:965
 #, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 שיניים"
 
-#: activities/drawing_wheels/DrawingWheels.qml:979
+#: activities/drawing_wheels/DrawingWheels.qml:983
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "מהירות"
 
-#: activities/drawing_wheels/DrawingWheels.qml:995
+#: activities/drawing_wheels/DrawingWheels.qml:999
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr "לאט"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1015
+#: activities/drawing_wheels/DrawingWheels.qml:1019
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr "מהר"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1058
+#: activities/drawing_wheels/DrawingWheels.qml:1062
 msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "גודל עט"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1095
+#: activities/drawing_wheels/DrawingWheels.qml:1099
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "אטימות"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1138
+#: activities/drawing_wheels/DrawingWheels.qml:1142
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr "היסט"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1176
+#: activities/drawing_wheels/DrawingWheels.qml:1180
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "שן התחלתית"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1356
+#: activities/drawing_wheels/DrawingWheels.qml:1360
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "לא שמרת את התמונה הזאת. לסגור את הפעילות הזאת?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1357
+#: activities/drawing_wheels/DrawingWheels.qml:1361
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "למחוק את התמונה הזאת?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1358
+#: activities/drawing_wheels/DrawingWheels.qml:1362
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "כן"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1359
+#: activities/drawing_wheels/DrawingWheels.qml:1363
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "לא"

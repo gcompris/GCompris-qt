@@ -6723,143 +6723,143 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ktrl + O: irudi bat irekitzeko"
 
-#: activities/drawing_wheels/DrawingWheels.qml:377
+#: activities/drawing_wheels/DrawingWheels.qml:378
 msgctxt "DrawingWheels|"
 msgid "File menu"
 msgstr "Fitxategia menua"
 
-#: activities/drawing_wheels/DrawingWheels.qml:389
+#: activities/drawing_wheels/DrawingWheels.qml:390
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr "Gurpila eta engranajea"
 
-#: activities/drawing_wheels/DrawingWheels.qml:413
+#: activities/drawing_wheels/DrawingWheels.qml:414
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr "Arkatzaren neurria eta kokapena"
 
-#: activities/drawing_wheels/DrawingWheels.qml:425
+#: activities/drawing_wheels/DrawingWheels.qml:426
 msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr "Kolore hautatzailea"
 
-#: activities/drawing_wheels/DrawingWheels.qml:452
+#: activities/drawing_wheels/DrawingWheels.qml:453
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Desegin"
 
-#: activities/drawing_wheels/DrawingWheels.qml:464
+#: activities/drawing_wheels/DrawingWheels.qml:465
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "Berregin"
 
-#: activities/drawing_wheels/DrawingWheels.qml:498
+#: activities/drawing_wheels/DrawingWheels.qml:499
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr "Utzi marrazteari"
 
-#: activities/drawing_wheels/DrawingWheels.qml:498
+#: activities/drawing_wheels/DrawingWheels.qml:499
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr "Hasi marrazten"
 
-#: activities/drawing_wheels/DrawingWheels.qml:531
+#: activities/drawing_wheels/DrawingWheels.qml:532
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr "Erakutsi gurpila eta engranajea"
 
-#: activities/drawing_wheels/DrawingWheels.qml:531
+#: activities/drawing_wheels/DrawingWheels.qml:532
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr "Ezkutatu gurpila eta engranajea"
 
-#: activities/drawing_wheels/DrawingWheels.qml:690
+#: activities/drawing_wheels/DrawingWheels.qml:691
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Gorde zure irudia"
 
-#: activities/drawing_wheels/DrawingWheels.qml:705
+#: activities/drawing_wheels/DrawingWheels.qml:706
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Ireki irudi bat"
 
-#: activities/drawing_wheels/DrawingWheels.qml:734
+#: activities/drawing_wheels/DrawingWheels.qml:735
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Sortu irudi berri bat"
 
-#: activities/drawing_wheels/DrawingWheels.qml:753
+#: activities/drawing_wheels/DrawingWheels.qml:754
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Atzeko planoaren kolorea"
 
-#: activities/drawing_wheels/DrawingWheels.qml:823
+#: activities/drawing_wheels/DrawingWheels.qml:835
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr "Gurpila"
 
-#: activities/drawing_wheels/DrawingWheels.qml:898
+#: activities/drawing_wheels/DrawingWheels.qml:902
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr "Engranajea"
 
-#: activities/drawing_wheels/DrawingWheels.qml:961
+#: activities/drawing_wheels/DrawingWheels.qml:965
 #, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 hortz"
 
-#: activities/drawing_wheels/DrawingWheels.qml:979
+#: activities/drawing_wheels/DrawingWheels.qml:983
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Abiadura"
 
-#: activities/drawing_wheels/DrawingWheels.qml:995
+#: activities/drawing_wheels/DrawingWheels.qml:999
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr "Mantso"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1015
+#: activities/drawing_wheels/DrawingWheels.qml:1019
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr "Azkar"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1058
+#: activities/drawing_wheels/DrawingWheels.qml:1062
 msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "Arkatzaren neurria"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1095
+#: activities/drawing_wheels/DrawingWheels.qml:1099
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Opakutasuna"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1138
+#: activities/drawing_wheels/DrawingWheels.qml:1142
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr "Desplazamendua"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1176
+#: activities/drawing_wheels/DrawingWheels.qml:1180
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "Hasierako hortza"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1356
+#: activities/drawing_wheels/DrawingWheels.qml:1360
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Ez duzu irudi hau gorde. Jarduera hau itxi nahi duzu?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1357
+#: activities/drawing_wheels/DrawingWheels.qml:1361
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Irudi hau ezabatu nahi duzu?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1358
+#: activities/drawing_wheels/DrawingWheels.qml:1362
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Bai"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1359
+#: activities/drawing_wheels/DrawingWheels.qml:1363
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "Ez"
