@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-03-06 22:32+0300\n"
+"PO-Revision-Date: 2025-12-19 12:55+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.03.70\n"
+"X-Generator: Lokalize 25.11.80\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -2270,42 +2270,42 @@ msgstr "Oklar: Metinde dolaş"
 #: activities/baby_wordprocessor/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Shift + Arrows: select a part of the text"
-msgstr "Üst Karakter + Oklar: Metnin bir bölümünü seç"
+msgstr "Üst Karakter+Oklar: Metnin bir bölümünü seç"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + A: select all the text"
-msgstr "Kontrol + A: Tüm metni seç"
+msgstr "Kontrol+A: Tüm metni seç"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Ctrl + C: copy selected text"
-msgstr "Kontrol + C: Seçili metni kopyala"
+msgstr "Kontrol+C: Seçili metni kopyala"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Ctrl + X: cut selected text"
-msgstr "Kontrol + X: Seçili metni kes"
+msgstr "Kontrol+X: Seçili metni kes"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Ctrl + V: paste copied or cut text"
-msgstr "Kontrol + V: Kopyalanan veya kesilen metni yapıştır"
+msgstr "Kontrol+V: Kopyalanan veya kesilen metni yapıştır"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Ctrl + D: delete selected text"
-msgstr "Kontrol + D: Seçili metni sil"
+msgstr "Kontrol+D: Seçili metni sil"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo"
-msgstr "Kontrol + Z: Geri al"
+msgstr "Kontrol+Z: Geri al"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Shift + Z: redo"
-msgstr "Kontrol + Üst Karakter + Z: Yinele"
+msgstr "Kontrol+Üst Karakter+Z: Yinele"
 
 #: activities/baby_wordprocessor/BabyWordprocessor.qml:90
 msgctxt "BabyWordprocessor|"
@@ -18617,7 +18617,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "Home - Exit an activity, go back to menu (Ctrl+W or Escape key)"
 msgstr ""
-"Ana Sayfa — Bir etkinlikten çık, menüye geri dön (Kontrol + W veya Vazgeç "
+"Ana Sayfa — Bir etkinlikten çık, menüye geri dön (Kontrol+W veya Vazgeç "
 "düğmesi)"
 
 #: activities/menu/ActivityInfo.qml:26
@@ -18658,7 +18658,7 @@ msgstr "G — GCompris Hakkında"
 #: activities/menu/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Quit - Quit GCompris (Ctrl+Q)"
-msgstr "Çık — GCompris’ten çık (Kontrol + Q)"
+msgstr "Çık — GCompris’ten çık (Kontrol+Q)"
 
 #: activities/menu/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
@@ -18692,17 +18692,17 @@ msgstr "<b> Klavye kısayolları:</b>"
 #: activities/menu/ActivityInfo.qml:39
 msgctxt "ActivityInfo|"
 msgid "Ctrl+B: Show or Hide the control bar"
-msgstr "Kontrol + B: Denetim çubuğunu göster veya gizle"
+msgstr "Kontrol+B: Denetim çubuğunu göster veya gizle"
 
 #: activities/menu/ActivityInfo.qml:40
 msgctxt "ActivityInfo|"
 msgid "Ctrl+F: Toggle full screen"
-msgstr "Kontrol + F; Tam ekranı aç/kapat"
+msgstr "Kontrol+F; Tam ekranı aç/kapat"
 
 #: activities/menu/ActivityInfo.qml:41
 msgctxt "ActivityInfo|"
 msgid "Ctrl+S: Toggle the activity section bar"
-msgstr "Kontrol + S: Etkinlik bölümü çubuğunu aç/kapat"
+msgstr "Kontrol+S: Etkinlik bölümü çubuğunu aç/kapat"
 
 #: activities/menu/BackgroundMusicList.qml:57
 msgctxt "BackgroundMusicList|"
@@ -18868,7 +18868,7 @@ msgstr "Çıkarken onay iste"
 #: activities/menu/ConfigurationItem.qml:373
 msgctxt "ConfigurationItem|"
 msgid "Font selector"
-msgstr "Yazıtipi seçici"
+msgstr "Yazıtipi seçicisi"
 
 #: activities/menu/ConfigurationItem.qml:378
 msgctxt "ConfigurationItem|"
@@ -23804,7 +23804,7 @@ msgstr ""
 #: activities/sketch/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
-msgstr "Kontrol + Z: Son eylemi geri al"
+msgstr "Kontrol+Z: Son eylemi geri al"
 
 #: activities/sketch/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -23814,7 +23814,7 @@ msgstr "Kontrol+Y: Son eylemi geri al"
 #: activities/sketch/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
-msgstr "Kontrol + S: Görseli kaydet"
+msgstr "Kontrol+S: Görseli kaydet"
 
 #: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
