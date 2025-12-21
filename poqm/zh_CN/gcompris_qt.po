@@ -6304,12 +6304,9 @@ msgstr ""
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr "学习一些数字绘画工具。"
+msgstr ""
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
@@ -6399,12 +6396,9 @@ msgid "Hide wheel and gear"
 msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:691
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
-msgstr "保存您的图像"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:706
 msgctxt "DrawingWheels|"
@@ -26610,12 +26604,9 @@ msgid "No data found for %1."
 msgstr ""
 
 #: core/GCCreationHandler.qml:185
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr "%1 删除成功！"
+msgstr ""
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -26624,12 +26615,9 @@ msgid "OK"
 msgstr "确认"
 
 #: core/GCCreationHandler.qml:193
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
-msgstr "无法删除 %1！"
+msgstr ""
 
 #: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"

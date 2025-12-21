@@ -72,13 +72,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->2025-05-21</date>
+>2025-06-10</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->25.1</releaseinfo>
+>25.1.1</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -187,7 +187,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="difficulty1.svg" format="SVG"/></imageobject
+><imagedata fileref="difficulty1.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
 ></inlinemediaobject
 >1, 2 ou 3 étoiles jaunes — pour les enfants de 2 à 6 ans.</para
 ></listitem
@@ -196,7 +196,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="difficulty4.svg" format="SVG"/></imageobject
+><imagedata fileref="difficulty4.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
 ></inlinemediaobject
 >1, 2 ou 3 étoiles rouges — pour les enfants âgés de plus de 6 ans.</para
 ></listitem
@@ -210,16 +210,16 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_home.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_home.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> Maison — Quitte l'activité en cours, retourne au menu.</para
+> Accueil — Quitte l'activité en cours, retourne au menu.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_ok.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > « Ok » — confirmer votre réponse. Certaines activités ne détectent pas automatiquement si l'enfant a réussi le niveau ou pas. Dans ces cas, vous devez cliquer sur cet icône. Vous pouvez aussi utiliser la touche &Enter; de votre clavier pour valider la réponse.</para
 ></listitem
@@ -228,7 +228,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_hint.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Ampoule — Affiche un indice pour cette activité. Nous essayons d'aider les enfants dans certaines activités pour les aider à trouver les réponses.</para
 ></listitem>
@@ -236,11 +236,11 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_previous.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_previous.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject>
 <inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_next.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_next.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Flèches — le niveau actuel est affiché. Cliquez sur l'une des flèches pour choisir un autre niveau. En général, les activités disposent de plusieurs niveaux et leur nombre dépend de l'activité. Dans &gcompris;, il est possible de passer au niveau suivant sans avoir complété le niveau actuel.</para
 ></listitem
@@ -249,7 +249,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_repeat.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_repeat.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Lèvres — demande à &gcompris; de répéter la question.</para
 ></listitem
@@ -258,16 +258,16 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_help.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_help.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> Point d'interrogation — affiche la boîte d'aide. Parfois, une activité peut être trop complexe pour être décrite facilement dans la zone de description. Dans ce cas, cette fonctionnalité donne accès à plus d'informations.</para
+> Point d'interrogation — affiche la boite d'aide. Parfois, une activité peut être trop complexe pour être décrite facilement dans la zone de description. Dans ce cas, cette fonctionnalité donne accès à plus d'informations.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Boîte à outils — le menu de configuration. La configuration est enregistrée dans le dépôt (dossier) utilisateur sous le nom <filename
 >.config/gcompris/gcompris-qt.conf</filename
@@ -278,7 +278,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_activity_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Liste d'objets — affiche la configuration des activités. Il peut y avoir deux onglets ici. Le premier « Jeux de données » permet de choisir les niveaux des activités en fonction d'objectifs et le second « Options » permet de mettre à jour la configuration de l'activité.</para
 ></listitem>
@@ -286,16 +286,16 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_about.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_about.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> « G » — boîte d'informations de &gcompris;, elle affiche les contributeurs principaux de &gcompris; et la version du logiciel.</para
+> « G » — boite d'informations de &gcompris;, elle affiche les contributeurs principaux de &gcompris; et la version du logiciel.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_exit.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Arrêt — fermer &gcompris;. Vous pouvez aussi utiliser le raccourci <keycombo action="simul"
 >&Ctrl;<keycap
@@ -586,6 +586,18 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>--show-home-button</entry>
+<entry
+>Afficher le bouton Accueil dans la barre (mode par défaut).</entry>
+</row>
+<row>
+<entry
+>--hide-home-button</entry>
+<entry
+>Masquez le bouton Accueil dans la barre.</entry>
+</row>
+<row>
+<entry
 >--renderer={renderer}</entry>
 <entry
 >Spécifie le moteur de rendu graphique à utiliser. Sur toutes les plateformes, opengl et le rendu logiciel sont disponibles. Sous Windows, vous pouvez utiliser direct3d11 ou direct3d12 (si GCompris a été compilé avec Qt
@@ -602,6 +614,12 @@ for example 'xx.yy.zz'
 >--opengl-renderer</entry>
 <entry
 >Utilise le mode de rendu avec OpenGL à la place du mode de rendu logiciel (plus rapide et avec des effets graphiques mais peut ne pas fonctionner sur certaines cartes graphiques). Utiliser --renderer=opengl de préférence, cette option sera supprimée.</entry>
+</row>
+<row>
+<entry
+>--locale=locale</entry>
+<entry
+>Démarre &gcompris; avec la langue demandée.</entry>
 </row>
 </tbody>
 </tgroup>
