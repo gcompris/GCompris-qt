@@ -15,7 +15,6 @@ import core 1.0
 
 import "../singletons"
 import "../components"
-import ".."
 
 Item {
     id: settingsView

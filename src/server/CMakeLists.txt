@@ -62,7 +62,6 @@ target_link_libraries(${GCOMPRIS_TEACHERS_EXECUTABLE_NAME} gcompris_core)
 gcompris_add_rcc(server
   QML_FILES
   Main.qml
-  ServerLanguageList.qml
   views/*.qml
   views/*/*.qml
   activities/*.qml
