@@ -215,6 +215,13 @@ Item {
             InformationLine {
                 labelWidth: labelArea.width
                 infoText.width: infoText.implicitWidth
+                label: qsTr("GCompris version")
+                info: ApplicationInfo.GCVersion
+            }
+
+            InformationLine {
+                labelWidth: labelArea.width
+                infoText.width: infoText.implicitWidth
                 label: qsTr("Qt version")
                 info: ApplicationInfo.QTVersion
             }
