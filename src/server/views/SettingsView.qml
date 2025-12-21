@@ -104,7 +104,7 @@ Item {
                     font.bold: true
                 }
 
-                ComboBox {
+                StyledComboBox {
                     id: language
                     model: settingsView.languages
                     width: mainColumn.infoWidth
@@ -112,8 +112,11 @@ Item {
                     focus: true
                     textRole: "text"
                     valueRole: "locale"
-                    currentIndex: indexOfValue(serverSettings.locale)
                     onCurrentIndexChanged: serverSettings.locale = valueAt(currentIndex);
+
+                    Component.onCompleted: {
+                        currentIndex = indexOfValue(serverSettings.locale);
+                    }
                }
             }
 

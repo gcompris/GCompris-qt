@@ -13,14 +13,39 @@ import "../singletons"
 AbstractButton {
     id: button
     height: Style.controlSize
-    text: menuList.currentItem ? menuList.currentItem.modelData : ""
+    text: menuList.currentItem ? menuList.currentItem.text : ""
     opacity: enabled ? 1 : 0.3
 
+    // For now, supports model as list of number/string or list of objects with key-value pairs to define text and role.
     readonly property Item rootItem: Window.contentItem
     property int maxHeight: Window.height
     property alias model: menuList.model
     property alias currentIndex: menuList.currentIndex
     property alias currentText: button.text
+
+    // Properties and functions usable only if model is a list of objects with key-value pairs.
+    property string textRole: ""
+    property string valueRole: ""
+
+    function textAt(index_) {
+        return model[index_][textRole];
+    }
+
+    function valueAt(index_) {
+        return model[index_][valueRole];
+    }
+
+    function indexOfValue(value_) {
+        var valueIndex = -1;
+        for(var i = 0; i < model.length; i++) {
+            if(model[i][valueRole] === value_) {
+                valueIndex = i;
+                break;
+            }
+        }
+        return valueIndex;
+    }
+
 
     Keys.onPressed: (event) => {
         if(event.key == Qt.Key_Enter || event.key == Qt.Key_Return || event.key == Qt.Key_Space) {
@@ -139,7 +164,10 @@ AbstractButton {
                     (listItemClick.containsMouse ? Style.selectedPalette.accent : "transparent")
 
                 required property int index
-                required property string modelData
+                required property var modelData
+
+                readonly property string text: button.textRole != "" ?
+                    menuItem.modelData[button.textRole] : menuItem.modelData
 
                 DefaultLabel {
                     anchors {
@@ -151,7 +179,7 @@ AbstractButton {
                         rightMargin: Style.margins
                     }
                     horizontalAlignment: Text.AlignLeft
-                    text: menuItem.modelData
+                    text: menuItem.text
                     color: menuItem.index === menuList.currentIndex || listItemClick.pressed ?
                         Style.selectedPalette.highlightedText :
                         Style.selectedPalette.text
