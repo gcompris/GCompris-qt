@@ -77,6 +77,8 @@ Window {
         property int textSize: 16
         onTextSizeChanged: Style.textSize = textSize
         property string locale: "system"
+
+        onLocaleChanged: ApplicationInfo.switchLocale(locale)
     }
 
     Row {

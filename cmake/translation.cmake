@@ -7,9 +7,30 @@
 function(gcompris_create_translation_files)
   set(options)
   set(oneValueArgs)
-  set(multiValueArgs FILENAME LOG)
+  set(multiValueArgs FILENAME)
   cmake_parse_arguments(_QM "${options}" "${oneValueArgs}" "${multiValueArgs}" ${ARGN})
   set(rcc_files "")
+
+  # Get all supported locales by GCompris from LanguageList.qml file, excluded the commented ones
+  set(locale_filename "${CMAKE_SOURCE_DIR}/src/core/LanguageList.qml")
+  if(${_QM_FILENAME} STREQUAL "gcompris_teachers")
+    set(locale_filename "${CMAKE_SOURCE_DIR}/src/server/ServerLanguageList.qml")
+  endif()
+
+  file(STRINGS "${locale_filename}" handledGComprisLocaleList ENCODING UTF-8 REGEX "[^//]{.*UTF-8")
+  foreach(localeLine ${handledGComprisLocaleList})
+    # We match the pattern locale.UTF-8
+    string(REGEX MATCH ".*\"([a-zA-Z_@]*)\.UTF-8.*" _ ${localeLine})
+    set(localeFull ${CMAKE_MATCH_1})
+    list(APPEND gcomprisLocales ${localeFull})
+    # Add simplified locale
+    string(REGEX MATCH "([a-zA-Z@]*)_.*" _ ${localeFull})
+    set(localeShort ${CMAKE_MATCH_1})
+    list(APPEND gcomprisLocales ${localeShort})
+  endforeach()
+  # Remove all duplicated shortened locales
+  list(REMOVE_DUPLICATES gcomprisLocales)
+
   # Get all po files in poqm/
   file(GLOB TRANSLATIONS_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "poqm/*/${_QM_FILENAME}.po")
   foreach(PoSource ${TRANSLATIONS_FILES})
@@ -17,16 +38,12 @@ function(gcompris_create_translation_files)
     string(REGEX MATCH "poqm/([a-zA-Z@_\-]*)/${_QM_FILENAME}.po" _ ${PoSource})
     set(locale ${CMAKE_MATCH_1})
 
-    # search in src/core/LanguageList the line corresponding to the locale. If exists, then add the custom_command
+    # search in the languages list the line corresponding to the locale. If exists, then add the custom_command
     if(NOT ${locale} IN_LIST gcomprisLocales)
-      if(${_QM_LOG})
-        message(STATUS "Locale ${locale} not supported by GCompris")
-      endif()
+      list(APPEND unsupported_languages ${locale})
       continue()
     endif()
-    if(${_QM_LOG})
-      message(STATUS "Locale ${locale} is supported by GCompris")
-    endif()
+    list(APPEND supported_languages ${locale})
 
     # Changes the .po extension to .ts
     string(REPLACE ".po" ".ts" TsSource ${PoSource})
@@ -57,4 +74,9 @@ function(gcompris_create_translation_files)
   add_custom_target(BuildTranslations${_QM_FILENAME} ALL
     DEPENDS ${QM_FILES}
   )
+
+  list(JOIN supported_languages ", " supported_str)
+  list(JOIN unsupported_languages ", " unsupported_str)
+  message(STATUS "Supported locales for ${_QM_FILENAME}: ${supported_str}")
+  message(STATUS "Unsupported locales for ${_QM_FILENAME}: ${unsupported_str} (we have a po file but not enough translated)")
 endfunction()

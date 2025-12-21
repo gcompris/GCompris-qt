@@ -15,6 +15,7 @@ import core 1.0
 
 import "../singletons"
 import "../components"
+import ".."
 
 Item {
     id: settingsView
@@ -22,6 +23,12 @@ Item {
     height: parent.height
 
     property var hostInformations: ({})
+
+    property var languages: allLangs.languages
+
+    ServerLanguageList {
+        id: allLangs
+    }
 
     Rectangle {
         id: topLiner
@@ -86,6 +93,31 @@ Item {
                 }
             }
 
+            Row {
+                spacing: Style.margins
+                height: Style.lineHeight
+
+                DefaultLabel {
+                    width: labelArea.width
+                    anchors.verticalCenter: parent.verticalCenter
+                    horizontalAlignment: Text.AlignLeft
+                    text: qsTr("Language selector")
+                    font.bold: true
+                }
+
+                ComboBox {
+                    id: language
+                    model: settingsView.languages
+                    width: mainColumn.infoWidth
+                    activeFocusOnTab: true
+                    focus: true
+                    textRole: "text"
+                    valueRole: "locale"
+                    currentIndex: indexOfValue(serverSettings.locale)
+                    onCurrentIndexChanged: serverSettings.locale = valueAt(currentIndex);
+               }
+            }
+
             Rectangle {
                 id: lineSpacer
                 width: scrollInfos.width - 2 * Style.margins
@@ -111,7 +143,7 @@ Item {
                     activeFocusOnTab: true
                     focus: true
                     defaultText: serverSettings.serverID
-                        onTextChanged: serverSettings.serverID = serverID.text
+                    onTextChanged: serverSettings.serverID = serverID.text
                 }
             }
 
@@ -133,7 +165,7 @@ Item {
                     activeFocusOnTab: true
                     focus: true
                     defaultText: serverSettings.port
-                        onTextChanged: serverSettings.port = portField.text
+                    onTextChanged: serverSettings.port = portField.text
                 }
             }
 

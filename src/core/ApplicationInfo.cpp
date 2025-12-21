@@ -224,9 +224,8 @@ void ApplicationInfo::notifyFullscreenChanged()
 }
 
 // Would be better to create a component importing Box2D 2.0 using QQmlContext and test if it exists but it does not work.
-void ApplicationInfo::setBox2DInstalled(QQmlEngine &engine)
+void ApplicationInfo::setBox2DInstalled()
 {
-    m_engine = &engine;
     /*
       QQmlContext *context = new QQmlContext(engine.rootContext());
       context->setContextObject(&myDataSet);
@@ -237,7 +236,7 @@ void ApplicationInfo::setBox2DInstalled(QQmlEngine &engine)
       box2dInstalled = (component != nullptr);
     */
     bool box2dInstalled = false;
-    const QStringList importPathList = engine.importPathList();
+    const QStringList importPathList = m_engine->importPathList();
     for (const QString &folder: importPathList) {
         if (QDir(folder).entryList().contains(QLatin1String("Box2D.2.0"))) {
             if (QDir(folder + "/Box2D.2.0").entryList().contains("qmldir")) {
@@ -396,10 +395,10 @@ QString ApplicationInfo::loadTranslation(const QString &applicationName, const Q
     return locale;
 }
 
-void ApplicationInfo::switchLocale()
+void ApplicationInfo::switchLocale(const QString &locale)
 {
     for (const auto &[applicationName, translator] : m_translators) {
-        switchLocale(applicationName, ApplicationSettings::getInstance()->locale());
+        switchLocale(applicationName, locale);
     }
 }
 
@@ -414,6 +413,11 @@ void ApplicationInfo::switchLocale(const QString &application, const QString &lo
     if (m_engine) {
         m_engine->retranslate();
     }
+}
+
+void ApplicationInfo::setEngine(QQmlEngine &engine)
+{
+    m_engine = &engine;
 }
 
 ApplicationInfo *ApplicationInfo::create(QQmlEngine *engine,

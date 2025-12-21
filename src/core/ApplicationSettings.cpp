@@ -195,7 +195,7 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
         m_updateToNewIgnoreLevels = true;
     }
 
-    connect(this, &ApplicationSettings::localeChanged, ApplicationInfo::getInstance(), qOverload<>(&ApplicationInfo::switchLocale));
+    connect(this, &ApplicationSettings::localeChanged, ApplicationInfo::getInstance(), []() { ApplicationInfo::getInstance()->switchLocale(); } );
 }
 
 ApplicationSettings::~ApplicationSettings()

@@ -260,30 +260,13 @@ add_custom_target(
 include(cmake/rcc.cmake)
 
 # Translations handling
-
-# Get all supported locales by GCompris from LanguageList.qml file, excluded the commented ones
-file(STRINGS "${CMAKE_SOURCE_DIR}/src/core/LanguageList.qml" handledGComprisLocaleList ENCODING UTF-8 REGEX "[^//]{.*UTF-8")
-foreach(localeLine ${handledGComprisLocaleList})
-  # We match the pattern locale.UTF-8
-  string(REGEX MATCH ".*\"([a-zA-Z_@]*)\.UTF-8.*" _ ${localeLine})
-  set(localeFull ${CMAKE_MATCH_1})
-  list(APPEND gcomprisLocales ${localeFull})
-  # Add simplified locale
-  string(REGEX MATCH "([a-zA-Z@]*)_.*" _ ${localeFull})
-  set(localeShort ${CMAKE_MATCH_1})
-  list(APPEND gcomprisLocales ${localeShort})
-
-endforeach()
-# Remove all duplicated shortened locales
-list(REMOVE_DUPLICATES gcomprisLocales)
-
 #skipping translations can be useful during dev builds
 option(SKIP_TRANSLATIONS "Skip building translation files" OFF)
 if(NOT SKIP_TRANSLATIONS)
   include(cmake/translation.cmake)
-  gcompris_create_translation_files(FILENAME gcompris_qt LOG 1)
+  gcompris_create_translation_files(FILENAME gcompris_qt)
   if(BUILD_SERVER)
-    gcompris_create_translation_files(FILENAME gcompris_teachers LOG 0)
+    gcompris_create_translation_files(FILENAME gcompris_teachers)
   endif()
 endif()
 

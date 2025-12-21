@@ -320,7 +320,8 @@ int main(int argc, char *argv[])
     engine.addImportPath(QStringLiteral("assets:/"));
 #endif
 
-    ApplicationInfo::getInstance()->setBox2DInstalled(engine);
+    ApplicationInfo::getInstance()->setEngine(engine);
+    ApplicationInfo::getInstance()->setBox2DInstalled();
 
     // We load the main file after checking for box2d to avoid computing multiple times the menu
     engine.load(QUrl("qrc:/gcompris/src/core/main.qml"));

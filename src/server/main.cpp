@@ -77,8 +77,7 @@ int main(int argc, char *argv[])
     // Load translations
     QSettings config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + "/gcompris/" + GCOMPRIS_TEACHERS_APPLICATION_NAME + ".conf",
                      QSettings::IniFormat);
-    QString locale = config.value("General/locale", GC_DEFAULT_LOCALE).toString();
-
+    QString locale = config.value("locale", GC_DEFAULT_LOCALE).toString();
     ApplicationInfo::getInstance()->switchLocale(QStringLiteral("gcompris_qt"), locale);
     // Load translations
     ApplicationInfo::getInstance()->switchLocale(QStringLiteral("gcompris_teachers"), locale);
@@ -92,6 +91,7 @@ int main(int argc, char *argv[])
     // Create the engine and Main qml object
     QQmlApplicationEngine engine;
 
+    ApplicationInfo::getInstance()->setEngine(engine);
     // Create the activities
     ActivityInfoTree::getInstance()->initialize(&engine);
 

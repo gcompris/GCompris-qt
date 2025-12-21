@@ -293,7 +293,7 @@ public:
      * Switch the locale in GCompris to the new one.
      * The locale will be fetched from ApplicationSettings if not passed in parameter
      */
-    void switchLocale();
+    Q_INVOKABLE void switchLocale(const QString &locale = ApplicationSettings::getInstance()->locale());
     void switchLocale(const QString &application, const QString &locale);
     QStringList supportedLocales();
 
@@ -309,7 +309,9 @@ public:
     void setUseSoftwareRenderer(bool useSoftwareRenderer) { m_useSoftwareRenderer = useSoftwareRenderer; }
 
     bool isBox2DInstalled() const { return m_isBox2DInstalled; }
-    void setBox2DInstalled(QQmlEngine &engine);
+    void setBox2DInstalled();
+
+    void setEngine(QQmlEngine &engine);
 
     /**
      * Set to true after first connection to teacher's server, to indicate that the server status button should be visible.
