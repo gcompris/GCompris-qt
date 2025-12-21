@@ -353,8 +353,8 @@ ActivityInfoTree *ActivityInfoTree::create(QQmlEngine *engine, QJSEngine *script
     Q_UNUSED(engine)
     Q_UNUSED(scriptEngine)
 
-    ActivityInfoTree *menuTree = getInstance();
-    return menuTree;
+    ActivityInfoTree *tree = getInstance();
+    return tree;
 }
 
 void ActivityInfoTree::registerResources()
@@ -498,8 +498,8 @@ void ActivityInfoTree::removeDataset(const QJsonObject &dataset)
 
 void ActivityInfoTree::removeAllLocalDatasets()
 {
-    const QString datasetFolder(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation));
-    QDir datasetsDir(datasetFolder);
+    const QString datasetRootFolder(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation));
+    QDir datasetsDir(datasetRootFolder);
     for (const QFileInfo &activityFolder: datasetsDir.entryInfoList(QDir::AllDirs| QDir::NoDotAndDotDot)) {
         QJsonObject dataset;
         dataset["activity_name"] = activityFolder.fileName();
