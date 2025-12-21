@@ -298,12 +298,12 @@ QVariantList ApplicationInfo::localeSort(QVariantList list,
     return list;
 }
 
-bool ApplicationInfo::loadAndroidTranslation(const QString &locale)
+bool ApplicationInfo::loadAndroidTranslation(const QString &applicationName, const QString &locale)
 {
-    QFile file("assets:/share/GCompris/gcompris_" + locale + ".qm");
+    QFile file("assets:/share/GCompris/" + applicationName + "_" + locale + ".qm");
 
     if (!file.exists()) {
-        qDebug() << "file assets:/share/GCompris/gcompris_" << locale << ".qm does not exist";
+        qDebug() << "file assets:/share/GCompris/" + applicationName + "_" + locale + ".qm does not exist";
         return false;
     }
 
@@ -319,7 +319,7 @@ bool ApplicationInfo::loadAndroidTranslation(const QString &locale)
 
     in.readRawData((char *)data, fileSize);
 
-    if (!m_translator.load(data, fileSize)) {
+    if (!m_translators[applicationName].load(data, fileSize)) {
         qDebug() << "Unable to load translation for locale " << locale << ", use en_US by default";
         free(data);
         return false;
@@ -353,7 +353,7 @@ QStringList ApplicationInfo::supportedLocales()
 }
 
 // Return the locale
-QString ApplicationInfo::loadTranslation(const QString &requestedLocale)
+QString ApplicationInfo::loadTranslation(const QString &applicationName, const QString &requestedLocale)
 {
     QString locale = requestedLocale;
     QStringList locales = supportedLocales();
@@ -380,35 +380,36 @@ QString ApplicationInfo::loadTranslation(const QString &requestedLocale)
 
 #if (defined(Q_OS_LINUX) || defined(Q_OS_UNIX))
     // only useful for translators: load from $application_dir/../share/... if exists as it is where kde scripts install translations
-    if (m_translator.load("gcompris_qt.qm", QString("%1/../share/locale/%2/LC_MESSAGES").arg(QCoreApplication::applicationDirPath(), locale))) {
+    if (m_translators[applicationName].load(applicationName, QString("%1/../share/locale/%2/LC_MESSAGES").arg(QCoreApplication::applicationDirPath(), locale))) {
         qDebug() << "load translation for locale " << locale << " in " << QString("%1/../share/locale/%2/LC_MESSAGES").arg(QCoreApplication::applicationDirPath(), locale);
     }
-    else if (m_translator.load("gcompris_qt.qm", QString("%1/../share/locale/%2/LC_MESSAGES").arg(QCoreApplication::applicationDirPath(), locale.split('_')[0]))) {
+    else if (m_translators[applicationName].load(applicationName + ".qm", QString("%1/../share/locale/%2/LC_MESSAGES").arg(QCoreApplication::applicationDirPath(), locale.split('_')[0]))) {
         qDebug() << "load translation for locale " << locale << " in " << QString("%1/../share/locale/%2/LC_MESSAGES").arg(QCoreApplication::applicationDirPath(), locale.split('_')[0]);
     }
     else
 #endif
-        if (!m_translator.load("gcompris_" + locale, QString("%1/%2/translations").arg(QCoreApplication::applicationDirPath(), GCOMPRIS_DATA_FOLDER))) {
-        qDebug() << "Unable to load translation for locale " << locale << ", use en_US by default";
-    }
+        if (!m_translators[applicationName].load(applicationName + "_" + locale, QString("%1/%2/translations").arg(QCoreApplication::applicationDirPath(), GCOMPRIS_DATA_FOLDER))) {
+            qDebug() << "Unable to load translation for locale " << locale << ", use en_US by default";
+        }
 #endif
+
     return locale;
 }
 
 void ApplicationInfo::switchLocale()
 {
-    switchLocale(ApplicationSettings::getInstance()->locale());
+    for (const auto &[applicationName, translator] : m_translators) {
+        switchLocale(applicationName, ApplicationSettings::getInstance()->locale());
+    }
 }
 
-void ApplicationInfo::switchLocale(const QString &locale)
+void ApplicationInfo::switchLocale(const QString &application, const QString &locale)
 {
-    qDebug() << "switch locale to" << locale;
-
     // Remove previous translation
-    QCoreApplication::removeTranslator(&m_translator);
-    loadTranslation(locale);
+    QCoreApplication::removeTranslator(&m_translators[application]);
+    loadTranslation(application, locale);
     // Apply translation
-    QCoreApplication::installTranslator(&m_translator);
+    QCoreApplication::installTranslator(&m_translators[application]);
 
     if (m_engine) {
         m_engine->retranslate();

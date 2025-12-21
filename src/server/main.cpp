@@ -12,10 +12,10 @@
 #include <QQuickWindow>
 #include <QQmlApplicationEngine>
 #include <QStandardPaths>
-#include <QTranslator>
 
 #include "GComprisPlugin.h"
 #include "ApplicationInfo.h"
+#include "ApplicationSettings.h"
 #include "ActivityInfoTree.h"
 
 #include <QFontDatabase>
@@ -55,8 +55,6 @@ int main(int argc, char *argv[])
     plugin.registerTypes("core");
     ActivityInfoTree::registerResources();
 
-    //    if (!QResource::registerResource(ApplicationInfo::getFilePath("core.rcc")))
-    //        qDebug() << "Failed to load the resource file " << ApplicationInfo::getFilePath("core.rcc");
     if (!QResource::registerResource(ApplicationInfo::getFilePath("activities_light.rcc")))
         qDebug() << "Failed to load the resource file " << ApplicationInfo::getFilePath("activities_light.rcc");
     if (!QResource::registerResource(ApplicationInfo::getFilePath("server.rcc")))
@@ -77,12 +75,13 @@ int main(int argc, char *argv[])
     }
 
     // Load translations
-    QTranslator translator;
-    if (!translator.load("gcompris_" + QLocale::system().name(), QString("%1/%2/translations").arg(QCoreApplication::applicationDirPath(), GCOMPRIS_DATA_FOLDER))) {
-        qDebug() << "Unable to load translation for locale " << QLocale::system().name() << ", use en_US by default";
-    }
-    // Apply translation
-    app.installTranslator(&translator);
+    QSettings config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + "/gcompris/" + GCOMPRIS_TEACHERS_APPLICATION_NAME + ".conf",
+                     QSettings::IniFormat);
+    QString locale = config.value("General/locale", GC_DEFAULT_LOCALE).toString();
+
+    ApplicationInfo::getInstance()->switchLocale(QStringLiteral("gcompris_qt"), locale);
+    // Load translations
+    ApplicationInfo::getInstance()->switchLocale(QStringLiteral("gcompris_teachers"), locale);
 
     // Set global font
     qint32 fontId = QFontDatabase::addApplicationFont(":/gcompris/src/server/resource/fa-solid-900.ttf");

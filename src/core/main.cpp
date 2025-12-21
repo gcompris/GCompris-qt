@@ -293,7 +293,7 @@ int main(int argc, char *argv[])
 
     // Load translations
     QString locale = config.value("General/locale", GC_DEFAULT_LOCALE).toString();
-    ApplicationInfo::getInstance()->switchLocale(locale);
+    ApplicationInfo::getInstance()->switchLocale(QStringLiteral("gcompris_qt"), locale);
 
     qmlRegisterUncreatableMetaObject(
       netconst::staticMetaObject,   // meta object created by Q_NAMESPACE macro

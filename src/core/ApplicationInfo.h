@@ -294,7 +294,7 @@ public:
      * The locale will be fetched from ApplicationSettings if not passed in parameter
      */
     void switchLocale();
-    void switchLocale(const QString &locale);
+    void switchLocale(const QString &application, const QString &locale);
     QStringList supportedLocales();
 
     static QString GCVersion() { return VERSION; }
@@ -476,7 +476,7 @@ Q_SIGNALS:
 private:
     static ApplicationInfo *m_instance;
     QQmlEngine *m_engine { nullptr };
-    QTranslator m_translator;
+    std::unordered_map<QString, QTranslator> m_translators;
     int m_applicationWidth;
     Platform m_platform;
     bool m_isPortraitMode;
@@ -495,8 +495,8 @@ private:
 
     static QQuickWindow *m_window;
 
-    bool loadAndroidTranslation(const QString &locale);
-    QString loadTranslation(const QString &requestedLocale);
+    bool loadAndroidTranslation(const QString &application, const QString &locale);
+    QString loadTranslation(const QString &application, const QString &requestedLocale);
 };
 
 #endif // APPLICATIONINFO_H

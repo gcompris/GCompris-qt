@@ -76,6 +76,7 @@ Window {
         onDarkThemeChanged: Style.isDarkTheme = darkTheme
         property int textSize: 16
         onTextSizeChanged: Style.textSize = textSize
+        property string locale: "system"
     }
 
     Row {
