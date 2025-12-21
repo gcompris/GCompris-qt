@@ -3,14 +3,14 @@ Some of the activities are game orientated, but nonetheless
     still educational.
 Below you can find a list of categories with some of the
     activities available in that category.
-- computer discovery: keyboard, mouse, different mouse gestures, ...
+- computer discovery: keyboard, mouse, different mouse gestures, etc.
 - arithmetic: table memory, enumeration, mirror image, balance
-    the scale, change giving, ...
-- science: the canal lock, color mixing, gravity concept, ...
-- games: memory, connect 4, tic tac toe, sudoku, hanoi tower, ...
-- reading: reading practice, ...
+    the scale, change giving, etc.
+- science: the canal lock, color mixing, gravity concept, etc.
+- games: memory, connect 4, tic tac toe, sudoku, hanoi tower, etc.
+- reading: reading practice, etc.
 - other: learn to tell time, the braille system, maze, music
-    instruments, ...
+    instruments, etc.
 Currently GCompris offers in excess of 100 activities and more
     are being developed. GCompris is free software, that means that
     you can adapt it to your own needs, improve it and, most

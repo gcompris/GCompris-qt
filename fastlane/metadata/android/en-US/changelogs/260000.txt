@@ -1,0 +1,7 @@
+- Drawing wheels
+- Multiple-choice questions
+- Translation added for Kannada and Tamil
+- New command-line option to set the locale (--locale locale)
+- New command-line option to show/hide the Home button (--hide-home-button/--show-home-button)
+- Many usability improvements
+- Many bug fixes
