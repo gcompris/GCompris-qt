@@ -72,13 +72,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->2025-05-21</date>
+>2025-06-10</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->25.1</releaseinfo>
+>25.1.1</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -212,7 +212,7 @@ for example 'xx.yy.zz'
 ><imageobject
 ><imagedata fileref="bar_home.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> Maison - Quitte l'activité en cours, retourne au menu.</para
+> Accueil - Quitte l'activité en cours, retourne au menu.</para
 ></listitem
 > 
 <listitem
@@ -260,7 +260,7 @@ for example 'xx.yy.zz'
 ><imageobject
 ><imagedata fileref="bar_help.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> Point d'interrogation - affiche la boîte d'aide. Parfois, une activité peut être trop complexe pour être décrite facilement dans la zone de description. Dans ce cas, cette fonctionnalité donne accès à plus d'informations.</para
+> Point d'interrogation - affiche la boite d'aide. Parfois, une activité peut être trop complexe pour être décrite facilement dans la zone de description. Dans ce cas, cette fonctionnalité donne accès à plus d'informations.</para
 ></listitem
 > 
 <listitem
@@ -288,7 +288,7 @@ for example 'xx.yy.zz'
 ><imageobject
 ><imagedata fileref="bar_about.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> « G » - boîte d'informations de &gcompris;, elle affiche les contributeurs principaux de &gcompris; et la version du logiciel.</para
+> « G » - boite d'informations de &gcompris;, elle affiche les contributeurs principaux de &gcompris; et la version du logiciel.</para
 ></listitem
 > 
 <listitem
