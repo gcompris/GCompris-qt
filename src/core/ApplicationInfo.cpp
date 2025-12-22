@@ -373,8 +373,8 @@ QString ApplicationInfo::loadTranslation(const QString &applicationName, const Q
     locale.remove(".UTF-8");
 
 #if defined(Q_OS_ANDROID)
-    if (!loadAndroidTranslation(locale))
-        loadAndroidTranslation(ApplicationInfo::localeShort(locale));
+    if (!loadAndroidTranslation(applicationName, locale))
+        loadAndroidTranslation(applicationName, ApplicationInfo::localeShort(locale));
 #else
 
 #if (defined(Q_OS_LINUX) || defined(Q_OS_UNIX))
