@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-15 00:38+0000\n"
+"POT-Creation-Date: 2025-12-22 00:38+0000\n"
 "PO-Revision-Date: 2025-03-19 17:39+0100\n"
 "Last-Translator: timo <animtim@gmail.com>\n"
 "Language-Team: French <kde-i18n-doc@kde.org>\n"
@@ -978,6 +978,12 @@ msgstr "Apprends et entraîne-toi à utiliser le code Morse."
 #, kde-format
 msgid "Put each item at the same place as in the given example."
 msgstr "Reconstitue la mosaïque en sélectionnant les objets."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "multiple_choice_questions"
+#: activities/multiple_choice_questions/ActivityInfo.qml:19
+#, kde-format
+msgid "Answer the questions."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
 #: activities/nine_men_morris/ActivityInfo.qml:18

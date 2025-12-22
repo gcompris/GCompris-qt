@@ -76,6 +76,50 @@ msgctxt "ActivityInfo|"
 msgid "Find the requested numbers and drag them to the corresponding spot."
 msgstr "Tafuta nambari zilizoombwa na uziburute hadi mahali sambamba."
 
+#. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
+#: activities/adjacent_numbers/Adjacent_numbers.qml:56
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Find the previous numbers."
+msgctxt "Adjacent_numbers|"
+msgid "Find the %n previous number(s)."
+msgid_plural "Find the %n previous number(s)."
+msgstr[0] "Tafuta nambari zilizopita."
+msgstr[1] "Tafuta nambari zilizopita."
+
+#. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
+#: activities/adjacent_numbers/Adjacent_numbers.qml:60
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Find the next numbers."
+msgctxt "Adjacent_numbers|"
+msgid "Find the %n next number(s)."
+msgid_plural "Find the %n next number(s)."
+msgstr[0] "Tafuta nambari zinazofuata."
+msgstr[1] "Tafuta nambari zinazofuata."
+
+#. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
+#: activities/adjacent_numbers/Adjacent_numbers.qml:64
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Find the in-between numbers."
+msgctxt "Adjacent_numbers|"
+msgid "Find the %n in-between number(s)"
+msgid_plural "Find the %n in-between number(s)"
+msgstr[0] "Tafuta nambari za kati."
+msgstr[1] "Tafuta nambari za kati."
+
+#. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
+#: activities/adjacent_numbers/Adjacent_numbers.qml:68
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Find the missing numbers"
+msgctxt "Adjacent_numbers|"
+msgid "Find the %n missing numbers"
+msgid_plural "Find the %n missing numbers"
+msgstr[0] "Tafuta nambari ambazo hazipo"
+msgstr[1] "Tafuta nambari ambazo hazipo"
+
 #: activities/adjacent_numbers/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Find numbers between 1 and 10."
@@ -90,41 +134,6 @@ msgstr "Tafuta nambari kati ya 0 na 20."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 100."
 msgstr "Tafuta nambari kati ya 0 na 100."
-
-#: activities/adjacent_numbers/resource/3/Data.qml:14
-msgctxt "Data|"
-msgid "Find the next number."
-msgstr "Tafuta nambari inayofuata."
-
-#: activities/adjacent_numbers/resource/3/Data.qml:27
-msgctxt "Data|"
-msgid "Find the previous number."
-msgstr "Tafuta nambari iliyotangulia."
-
-#: activities/adjacent_numbers/resource/3/Data.qml:40
-msgctxt "Data|"
-msgid "Find the in-between number."
-msgstr "Tafuta nambari ya kati."
-
-#: activities/adjacent_numbers/resource/3/Data.qml:53
-msgctxt "Data|"
-msgid "Find the missing numbers."
-msgstr "Tafuta nambari ambazo hazipo."
-
-#: activities/adjacent_numbers/resource/3/Data.qml:66
-msgctxt "Data|"
-msgid "Find the next numbers."
-msgstr "Tafuta nambari zinazofuata."
-
-#: activities/adjacent_numbers/resource/3/Data.qml:79
-msgctxt "Data|"
-msgid "Find the previous numbers."
-msgstr "Tafuta nambari zilizopita."
-
-#: activities/adjacent_numbers/resource/3/Data.qml:105
-msgctxt "Data|"
-msgid "Find the in-between numbers."
-msgstr "Tafuta nambari za kati."
 
 #: activities/adjacent_numbers/resource/4/Data.qml:9
 msgctxt "Data|"
@@ -250,6 +259,7 @@ msgstr ""
 #: activities/money_back_cents/ActivityInfo.qml:25
 #: activities/money_cents/ActivityInfo.qml:25
 #: activities/mosaic/ActivityInfo.qml:24
+#: activities/multiple_choice_questions/ActivityInfo.qml:25
 #: activities/numbers-odd-even/ActivityInfo.qml:24
 #: activities/piano_composition/ActivityInfo.qml:33
 #: activities/planegame/ActivityInfo.qml:24
@@ -2920,7 +2930,7 @@ msgstr ""
 "Washa balbu za kulia ili kuwakilisha jozi ya nambari ya desimali "
 "iliyotolewa. Unapoifanikisha, bonyeza Sawa."
 
-#: activities/binary_bulb/BinaryBulb.qml:84
+#: activities/binary_bulb/BinaryBulb.qml:95
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid ""
@@ -2931,7 +2941,7 @@ msgstr ""
 "Shughuli hii inafundisha jinsi ya kubadilisha nambari za desimali hadi "
 "nambari za binary."
 
-#: activities/binary_bulb/BinaryBulb.qml:88
+#: activities/binary_bulb/BinaryBulb.qml:99
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid ""
@@ -2948,7 +2958,7 @@ msgstr ""
 "na 1. Kihisabati, mataifa haya yanawakilishwa na 0 na 1, ambayo hufanya "
 "mfumo wa binary wa kuhesabu."
 
-#: activities/binary_bulb/BinaryBulb.qml:92
+#: activities/binary_bulb/BinaryBulb.qml:103
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
@@ -2956,7 +2966,7 @@ msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr "Katika shughuli 0 na 1 huigwa na balbu, huwashwa au kuzimwa."
 
-#: activities/binary_bulb/BinaryBulb.qml:96
+#: activities/binary_bulb/BinaryBulb.qml:107
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid ""
@@ -2970,7 +2980,7 @@ msgstr ""
 "Mfumo wa binary hutumia nambari hizi kwa ufanisi sana, kuruhusu kuhesabu "
 "kutoka 0 hadi 255 na biti 8 pekee."
 
-#: activities/binary_bulb/BinaryBulb.qml:100
+#: activities/binary_bulb/BinaryBulb.qml:111
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid ""
@@ -2990,7 +3000,7 @@ msgstr ""
 "2²=4 , bit 4 → 2³=8 , kidogo 5 → 2⁴=16 , kidogo 6 → 2⁵=32 , kidogo 7 → "
 "2⁶=64 , kidogo 8 → 2⁷= 128."
 
-#: activities/binary_bulb/BinaryBulb.qml:104
+#: activities/binary_bulb/BinaryBulb.qml:115
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
@@ -2998,7 +3008,7 @@ msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr "Ili kubadilisha desimali 5 kuwa thamani ya binary, 1 na 4 huongezwa."
 
-#: activities/binary_bulb/BinaryBulb.qml:108
+#: activities/binary_bulb/BinaryBulb.qml:119
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid ""
@@ -3012,7 +3022,7 @@ msgstr ""
 "Biti zao zinazolingana zimewekwa kuwa 1, zingine zimewekwa 0. Desimali 5 ni "
 "sawa na binary 101."
 
-#: activities/binary_bulb/BinaryBulb.qml:112
+#: activities/binary_bulb/BinaryBulb.qml:123
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid "This image will help you to compute bits' value."
@@ -3020,11 +3030,51 @@ msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Picha hii itakusaidia kukokotoa thamani ya biti."
 
-#: activities/binary_bulb/BinaryBulb.qml:160
+#: activities/binary_bulb/BinaryBulb.qml:171
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
 msgstr "Je, uwakilishi wa binary wa %1 ni upi?"
+
+#: activities/binary_bulb/resource/1/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 3 (with counter and with values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/2/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 3 (without counter and with values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/3/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 15 (with counter and with values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/4/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 15 (without counter and with values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/5/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 255 (with counter and with values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/6/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 255 (without counter and with values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/7/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 15 (without counter and without values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/8/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 255 (without counter and without values visible)."
+msgstr ""
 
 #: activities/binary_bulb/resource/tutorial4.qml:31
 msgctxt "tutorial4|"
@@ -3764,7 +3814,7 @@ msgid "Review the instructions and then drag and drop the items as specified."
 msgstr ""
 "Kagua maagizo na kisha uburute na uangushe vipengee kama ilivyobainishwa."
 
-#: activities/categorization/Categorization.qml:150
+#: activities/categorization/Categorization.qml:149
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3775,12 +3825,12 @@ msgstr ""
 "kupakua seti kamili ya picha ya neno. Bofya kwenye msalaba au kwenye "
 "'Usionyeshe kidirisha hiki tena' ili kucheza na toleo la onyesho."
 
-#: activities/categorization/Categorization.qml:153
+#: activities/categorization/Categorization.qml:152
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Sasisha seti ya picha"
 
-#: activities/categorization/Categorization.qml:154
+#: activities/categorization/Categorization.qml:153
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Usiwahi kuonyesha mazungumzo haya tena"
@@ -5289,12 +5339,12 @@ msgstr ""
 "Mkono mfupi zaidi unaonyesha saa, mkono mrefu zaidi unaonyesha dakika, na "
 "mkono mrefu zaidi unaonyesha sekunde."
 
-#: activities/clockgame/Clockgame.qml:112
+#: activities/clockgame/Clockgame.qml:124
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Weka saa iwe:"
 
-#: activities/clockgame/Clockgame.qml:115
+#: activities/clockgame/Clockgame.qml:127
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5302,7 +5352,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n hour"
 msgstr[1] "%n hours"
 
-#: activities/clockgame/Clockgame.qml:118
+#: activities/clockgame/Clockgame.qml:130
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5310,7 +5360,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n minute"
 msgstr[1] "%n minutes"
 
-#: activities/clockgame/Clockgame.qml:121
+#: activities/clockgame/Clockgame.qml:133
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5715,7 +5765,7 @@ msgctxt "ActivityInfo|"
 msgid "&lt;, &gt; or =: enter the corresponding symbol"
 msgstr "&lt;,&gt; au =: ingiza ishara inayolingana"
 
-#: activities/comparator/resource/1/Data.qml:36
+#: activities/comparator/resource/1/Data.qml:53
 #: activities/tens_complement_find/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
@@ -10278,7 +10328,7 @@ msgid ""
 "parts to represent the given fraction."
 msgstr "Chagua idadi inayofaa ya sehemu kama ilivyoelezewa katika maagizo."
 
-#: activities/fractions_create/fractions_create.js:78
+#: activities/fractions_create/fractions_create.js:80
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
 msgstr "Tafuta sehemu iliyowakilishwa."
@@ -10288,61 +10338,61 @@ msgctxt "Data|"
 msgid "Simplified fractions with a pie."
 msgstr "Vipande vilivyorahisishwa na pai."
 
-#: activities/fractions_create/resource/1/Data.qml:18
-#: activities/fractions_create/resource/3/Data.qml:17
-#: activities/fractions_create/resource/3/Data.qml:23
-#: activities/fractions_create/resource/3/Data.qml:29
+#: activities/fractions_create/resource/1/Data.qml:20
+#: activities/fractions_create/resource/3/Data.qml:20
+#: activities/fractions_create/resource/3/Data.qml:26
+#: activities/fractions_create/resource/3/Data.qml:32
 msgctxt "Data|"
 msgid "Select one half of the pie."
 msgstr "Chagua nusu ya mkate."
 
-#: activities/fractions_create/resource/1/Data.qml:24
-#: activities/fractions_create/resource/3/Data.qml:35
-#: activities/fractions_create/resource/3/Data.qml:49
+#: activities/fractions_create/resource/1/Data.qml:26
+#: activities/fractions_create/resource/3/Data.qml:38
+#: activities/fractions_create/resource/3/Data.qml:55
 msgctxt "Data|"
 msgid "Select one-third of the pie."
 msgstr "Chagua theluthi moja ya pai."
 
-#: activities/fractions_create/resource/1/Data.qml:30
-#: activities/fractions_create/resource/3/Data.qml:41
-#: activities/fractions_create/resource/3/Data.qml:55
+#: activities/fractions_create/resource/1/Data.qml:32
+#: activities/fractions_create/resource/3/Data.qml:44
+#: activities/fractions_create/resource/3/Data.qml:61
 msgctxt "Data|"
 msgid "Select two-thirds of the pie."
 msgstr "Chagua theluthi mbili ya pai."
 
-#: activities/fractions_create/resource/1/Data.qml:36
-#: activities/fractions_create/resource/3/Data.qml:61
+#: activities/fractions_create/resource/1/Data.qml:38
+#: activities/fractions_create/resource/3/Data.qml:67
 msgctxt "Data|"
 msgid "Select one-quarter of the pie."
 msgstr "Chagua robo moja ya pai."
 
-#: activities/fractions_create/resource/1/Data.qml:42
-#: activities/fractions_create/resource/3/Data.qml:67
+#: activities/fractions_create/resource/1/Data.qml:44
+#: activities/fractions_create/resource/3/Data.qml:73
 msgctxt "Data|"
 msgid "Select two-fifths of the pie."
 msgstr "Chagua mbili ya tano ya pai."
 
-#: activities/fractions_create/resource/1/Data.qml:50
+#: activities/fractions_create/resource/1/Data.qml:55
 msgctxt "Data|"
 msgid "Select one pie and one-quarter of a pie."
 msgstr "Chagua pai moja na robo moja ya pai."
 
-#: activities/fractions_create/resource/1/Data.qml:56
+#: activities/fractions_create/resource/1/Data.qml:61
 msgctxt "Data|"
 msgid "Select one pie and two-fifths of a pie."
 msgstr "Chagua pai moja na mbili ya tano ya pai."
 
-#: activities/fractions_create/resource/1/Data.qml:62
+#: activities/fractions_create/resource/1/Data.qml:67
 msgctxt "Data|"
 msgid "Select one pie and one-third of a pie."
 msgstr "Chagua pai moja na theluthi moja ya pai."
 
-#: activities/fractions_create/resource/1/Data.qml:68
+#: activities/fractions_create/resource/1/Data.qml:73
 msgctxt "Data|"
 msgid "Select one pie and one half of a pie."
 msgstr "Chagua pai moja na nusu ya pai."
 
-#: activities/fractions_create/resource/1/Data.qml:74
+#: activities/fractions_create/resource/1/Data.qml:79
 msgctxt "Data|"
 msgid "Select one pie and three-quarters of a pie."
 msgstr "Chagua pai moja na robo tatu ya pai."
@@ -10352,8 +10402,8 @@ msgctxt "Data|"
 msgid "Specific questions with a square."
 msgstr "Maswali mahususi yenye mraba."
 
-#: activities/fractions_create/resource/10/Data.qml:18
-#: activities/fractions_create/resource/10/Data.qml:24
+#: activities/fractions_create/resource/10/Data.qml:20
+#: activities/fractions_create/resource/10/Data.qml:26
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the square."
@@ -10364,61 +10414,61 @@ msgctxt "Data|"
 msgid "Simplified fractions with a square."
 msgstr "Sehemu zilizorahisishwa na mraba."
 
-#: activities/fractions_create/resource/2/Data.qml:18
-#: activities/fractions_create/resource/4/Data.qml:17
-#: activities/fractions_create/resource/4/Data.qml:23
-#: activities/fractions_create/resource/4/Data.qml:29
+#: activities/fractions_create/resource/2/Data.qml:20
+#: activities/fractions_create/resource/4/Data.qml:20
+#: activities/fractions_create/resource/4/Data.qml:26
+#: activities/fractions_create/resource/4/Data.qml:32
 msgctxt "Data|"
 msgid "Select one half of the square."
 msgstr "Chagua nusu ya mraba."
 
-#: activities/fractions_create/resource/2/Data.qml:24
-#: activities/fractions_create/resource/4/Data.qml:35
-#: activities/fractions_create/resource/4/Data.qml:49
+#: activities/fractions_create/resource/2/Data.qml:26
+#: activities/fractions_create/resource/4/Data.qml:38
+#: activities/fractions_create/resource/4/Data.qml:55
 msgctxt "Data|"
 msgid "Select one-third of the square."
 msgstr "Chagua theluthi moja ya mraba."
 
-#: activities/fractions_create/resource/2/Data.qml:30
-#: activities/fractions_create/resource/4/Data.qml:41
-#: activities/fractions_create/resource/4/Data.qml:55
+#: activities/fractions_create/resource/2/Data.qml:32
+#: activities/fractions_create/resource/4/Data.qml:44
+#: activities/fractions_create/resource/4/Data.qml:61
 msgctxt "Data|"
 msgid "Select two-thirds of the square."
 msgstr "Chagua theluthi mbili ya mraba."
 
-#: activities/fractions_create/resource/2/Data.qml:36
-#: activities/fractions_create/resource/4/Data.qml:61
+#: activities/fractions_create/resource/2/Data.qml:38
+#: activities/fractions_create/resource/4/Data.qml:67
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
 msgstr "Chagua robo moja ya mraba."
 
-#: activities/fractions_create/resource/2/Data.qml:42
-#: activities/fractions_create/resource/4/Data.qml:67
+#: activities/fractions_create/resource/2/Data.qml:44
+#: activities/fractions_create/resource/4/Data.qml:73
 msgctxt "Data|"
 msgid "Select two-fifths of the square."
 msgstr "Chagua mbili kwa tano ya mraba."
 
-#: activities/fractions_create/resource/2/Data.qml:50
+#: activities/fractions_create/resource/2/Data.qml:55
 msgctxt "Data|"
 msgid "Select one square and one-quarter of a square."
 msgstr "Chagua mraba mmoja na robo moja ya mraba."
 
-#: activities/fractions_create/resource/2/Data.qml:56
+#: activities/fractions_create/resource/2/Data.qml:61
 msgctxt "Data|"
 msgid "Select one square and two-fifths of a square."
 msgstr "Chagua mraba moja na mbili ya tano ya mraba."
 
-#: activities/fractions_create/resource/2/Data.qml:62
+#: activities/fractions_create/resource/2/Data.qml:67
 msgctxt "Data|"
 msgid "Select one square and one-third of a square."
 msgstr "Chagua mraba moja na theluthi moja ya mraba."
 
-#: activities/fractions_create/resource/2/Data.qml:68
+#: activities/fractions_create/resource/2/Data.qml:73
 msgctxt "Data|"
 msgid "Select one square and one half of a square."
 msgstr "Chagua mraba moja na nusu ya mraba."
 
-#: activities/fractions_create/resource/2/Data.qml:74
+#: activities/fractions_create/resource/2/Data.qml:79
 msgctxt "Data|"
 msgid "Select one square and three-quarters of a square."
 msgstr "Chagua mraba mmoja na robo tatu ya mraba."
@@ -10428,7 +10478,7 @@ msgctxt "Data|"
 msgid "Non-simplified fractions with a pie."
 msgstr "Sehemu zisizorahisishwa na pai."
 
-#: activities/fractions_create/resource/3/Data.qml:73
+#: activities/fractions_create/resource/3/Data.qml:79
 msgctxt "Data|"
 msgid "Select three-fifths of the pie."
 msgstr "Chagua tatu ya tano ya pai."
@@ -10438,7 +10488,7 @@ msgctxt "Data|"
 msgid "Non-simplified fractions with a square."
 msgstr "Sehemu zisizorahisishwa zenye mraba."
 
-#: activities/fractions_create/resource/4/Data.qml:73
+#: activities/fractions_create/resource/4/Data.qml:79
 msgctxt "Data|"
 msgid "Select three-fifths of the square."
 msgstr "Chagua tatu ya tano ya mraba."
@@ -10448,48 +10498,48 @@ msgctxt "Data|"
 msgid "Decimal numbers with a pie."
 msgstr "Nambari za decimal na pai."
 
-#: activities/fractions_create/resource/5/Data.qml:18
+#: activities/fractions_create/resource/5/Data.qml:20
 msgctxt "Data|"
 msgid "Select 0.5 pie."
 msgstr "Chagua pie 0.5."
 
-#: activities/fractions_create/resource/5/Data.qml:24
+#: activities/fractions_create/resource/5/Data.qml:26
 msgctxt "Data|"
 msgid "Select 0.25 pie."
 msgstr "Chagua pie 0.25."
 
-#: activities/fractions_create/resource/5/Data.qml:30
+#: activities/fractions_create/resource/5/Data.qml:32
 msgctxt "Data|"
 msgid "Select 0.4 pie."
 msgstr "Chagua pie 0.4."
 
-#: activities/fractions_create/resource/5/Data.qml:36
+#: activities/fractions_create/resource/5/Data.qml:38
 msgctxt "Data|"
 msgid "Select 0.75 pie."
 msgstr "Chagua pie 0.75."
 
-#: activities/fractions_create/resource/5/Data.qml:42
+#: activities/fractions_create/resource/5/Data.qml:44
 msgctxt "Data|"
 msgid "Select 0.8 pie."
 msgstr "Chagua pie 0.8."
 
-#: activities/fractions_create/resource/5/Data.qml:50
+#: activities/fractions_create/resource/5/Data.qml:55
 msgctxt "Data|"
 msgid "Select 1.25 pies."
 msgstr "Chagua mikate 1.25."
 
-#: activities/fractions_create/resource/5/Data.qml:56
+#: activities/fractions_create/resource/5/Data.qml:61
 msgctxt "Data|"
 msgid "Select 1.4 pies."
 msgstr "Chagua mikate 1.4."
 
-#: activities/fractions_create/resource/5/Data.qml:62
-#: activities/fractions_create/resource/5/Data.qml:68
+#: activities/fractions_create/resource/5/Data.qml:67
+#: activities/fractions_create/resource/5/Data.qml:73
 msgctxt "Data|"
 msgid "Select 1.5 pies."
 msgstr "Chagua mikate 1.5."
 
-#: activities/fractions_create/resource/5/Data.qml:74
+#: activities/fractions_create/resource/5/Data.qml:79
 msgctxt "Data|"
 msgid "Select 1.75 pies."
 msgstr "Chagua mikate 1.75."
@@ -10499,48 +10549,48 @@ msgctxt "Data|"
 msgid "Decimal numbers with a square."
 msgstr "Nambari za decimal zilizo na mraba."
 
-#: activities/fractions_create/resource/6/Data.qml:18
+#: activities/fractions_create/resource/6/Data.qml:20
 msgctxt "Data|"
 msgid "Select 0.5 square."
 msgstr "Chagua mraba 0.5."
 
-#: activities/fractions_create/resource/6/Data.qml:24
+#: activities/fractions_create/resource/6/Data.qml:26
 msgctxt "Data|"
 msgid "Select 0.25 square."
 msgstr "Chagua mraba 0.25."
 
-#: activities/fractions_create/resource/6/Data.qml:30
+#: activities/fractions_create/resource/6/Data.qml:32
 msgctxt "Data|"
 msgid "Select 0.4 square."
 msgstr "Chagua mraba 0.4."
 
-#: activities/fractions_create/resource/6/Data.qml:36
+#: activities/fractions_create/resource/6/Data.qml:38
 msgctxt "Data|"
 msgid "Select 0.75 square."
 msgstr "Chagua mraba 0.75."
 
-#: activities/fractions_create/resource/6/Data.qml:42
+#: activities/fractions_create/resource/6/Data.qml:44
 msgctxt "Data|"
 msgid "Select 0.8 square."
 msgstr "Chagua mraba 0.8."
 
-#: activities/fractions_create/resource/6/Data.qml:50
+#: activities/fractions_create/resource/6/Data.qml:55
 msgctxt "Data|"
 msgid "Select 1.25 squares."
 msgstr "Chagua mraba 1.25."
 
-#: activities/fractions_create/resource/6/Data.qml:56
+#: activities/fractions_create/resource/6/Data.qml:61
 msgctxt "Data|"
 msgid "Select 1.4 squares."
 msgstr "Chagua mraba 1.4."
 
-#: activities/fractions_create/resource/6/Data.qml:62
-#: activities/fractions_create/resource/6/Data.qml:68
+#: activities/fractions_create/resource/6/Data.qml:67
+#: activities/fractions_create/resource/6/Data.qml:73
 msgctxt "Data|"
 msgid "Select 1.5 squares."
 msgstr "Chagua mraba 1.5."
 
-#: activities/fractions_create/resource/6/Data.qml:74
+#: activities/fractions_create/resource/6/Data.qml:79
 msgctxt "Data|"
 msgid "Select 1.75 squares."
 msgstr "Chagua mraba 1.75."
@@ -10551,14 +10601,14 @@ msgid "Percentages with a pie."
 msgstr "Asilimia na pai."
 
 #. Select %1 percent of the pie.
-#: activities/fractions_create/resource/7/Data.qml:19
-#: activities/fractions_create/resource/7/Data.qml:26
-#: activities/fractions_create/resource/7/Data.qml:33
-#: activities/fractions_create/resource/7/Data.qml:40
-#: activities/fractions_create/resource/7/Data.qml:47
-#: activities/fractions_create/resource/7/Data.qml:56
-#: activities/fractions_create/resource/7/Data.qml:63
-#: activities/fractions_create/resource/7/Data.qml:70
+#: activities/fractions_create/resource/7/Data.qml:21
+#: activities/fractions_create/resource/7/Data.qml:28
+#: activities/fractions_create/resource/7/Data.qml:35
+#: activities/fractions_create/resource/7/Data.qml:42
+#: activities/fractions_create/resource/7/Data.qml:49
+#: activities/fractions_create/resource/7/Data.qml:61
+#: activities/fractions_create/resource/7/Data.qml:68
+#: activities/fractions_create/resource/7/Data.qml:75
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the pie."
@@ -10570,12 +10620,12 @@ msgid "Percentages with a square."
 msgstr "Asilimia na mraba."
 
 #. Select %1 percent of the square.
-#: activities/fractions_create/resource/8/Data.qml:19
-#: activities/fractions_create/resource/8/Data.qml:26
-#: activities/fractions_create/resource/8/Data.qml:33
-#: activities/fractions_create/resource/8/Data.qml:42
-#: activities/fractions_create/resource/8/Data.qml:49
-#: activities/fractions_create/resource/8/Data.qml:56
+#: activities/fractions_create/resource/8/Data.qml:21
+#: activities/fractions_create/resource/8/Data.qml:28
+#: activities/fractions_create/resource/8/Data.qml:35
+#: activities/fractions_create/resource/8/Data.qml:47
+#: activities/fractions_create/resource/8/Data.qml:54
+#: activities/fractions_create/resource/8/Data.qml:61
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
@@ -10586,8 +10636,8 @@ msgctxt "Data|"
 msgid "Specific questions with a pie."
 msgstr "Maswali maalum na pai."
 
-#: activities/fractions_create/resource/9/Data.qml:18
-#: activities/fractions_create/resource/9/Data.qml:24
+#: activities/fractions_create/resource/9/Data.qml:20
+#: activities/fractions_create/resource/9/Data.qml:26
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the pie."
@@ -15435,7 +15485,7 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
 msgstr "Backspace: chagua neno lililotangulia"
 
-#: activities/grammar_analysis/grammar_analysis.js:398
+#: activities/grammar_analysis/grammar_analysis.js:401
 msgctxt "grammar_analysis|"
 msgid "Empty"
 msgstr "Tupu"
@@ -15772,7 +15822,7 @@ msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
 msgstr "Jedwali: badilisha kati ya nambari na waendeshaji"
 
-#: activities/guess24/Guess24.qml:123
+#: activities/guess24/Guess24.qml:135
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr "Tumia nambari nne zilizo na waendeshaji fulani kupata 24."
@@ -16083,12 +16133,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Umejaribu: %1"
 
-#: activities/hangman/Hangman.qml:371
+#: activities/hangman/Hangman.qml:370
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Samahani, bado hatuna tafsiri ya lugha yako."
 
-#: activities/hangman/Hangman.qml:372
+#: activities/hangman/Hangman.qml:371
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -16098,7 +16148,7 @@ msgstr ""
 "GCompris imetengenezwa na jumuiya ya KDE, unaweza kutafsiri GCompris kwa "
 "kujiunga na timu ya utafsiri kwenye <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:374
+#: activities/hangman/Hangman.qml:373
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -16959,117 +17009,117 @@ msgstr ""
 "Tulibadilisha hadi Kiingereza kwa shughuli hii lakini unaweza kuchagua lugha "
 "nyingine kwenye kidirisha cha usanidi."
 
-#: activities/lang/Lang.qml:195 activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:194 activities/lang/Lang.qml:195
 msgctxt "Lang|"
 msgid "other"
 msgstr "nyingine"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "action"
 msgstr "kitendo"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "adjective"
 msgstr "kivumishi"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "color"
 msgstr "rangi"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "number"
 msgstr "nambari"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "people"
 msgstr "watu"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "bodyparts"
 msgstr "sehemu za mwili"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "clothes"
 msgstr "nguo"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "emotion"
 msgstr "hisia"
 
-#: activities/lang/Lang.qml:201
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "job"
 msgstr "kazi"
 
-#: activities/lang/Lang.qml:201
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "sport"
 msgstr "mchezo"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "nature"
 msgstr "asili"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "animal"
 msgstr "mnyama"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "fruit"
 msgstr "matunda"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "plant"
 msgstr "mmea"
 
-#: activities/lang/Lang.qml:204
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "vegetables"
 msgstr "mboga"
 
-#: activities/lang/Lang.qml:204
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "object"
 msgstr "kitu"
 
-#: activities/lang/Lang.qml:205
+#: activities/lang/Lang.qml:204
 msgctxt "Lang|"
 msgid "construction"
 msgstr "ujenzi"
 
-#: activities/lang/Lang.qml:206
+#: activities/lang/Lang.qml:205
 msgctxt "Lang|"
 msgid "furniture"
 msgstr "samani"
 
-#: activities/lang/Lang.qml:206
+#: activities/lang/Lang.qml:205
 msgctxt "Lang|"
 msgid "houseware"
 msgstr "vyombo vya nyumbani"
 
-#: activities/lang/Lang.qml:207
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "tool"
 msgstr "chombo"
 
-#: activities/lang/Lang.qml:207
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "food"
 msgstr "chakula"
 
-#: activities/lang/Lang.qml:208
+#: activities/lang/Lang.qml:207
 msgctxt "Lang|"
 msgid "transport"
 msgstr "usafiri"
@@ -17206,31 +17256,31 @@ msgstr ""
 "inalingana na nambari ya desimali iliyoonyeshwa. Kisha ubofye kitufe cha "
 "Sawa ili kuthibitisha jibu lako."
 
-#: activities/learn_decimals/Learn_decimals.qml:150
+#: activities/learn_decimals/Learn_decimals.qml:165
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "Onyesha nambari: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:151
+#: activities/learn_decimals/Learn_decimals.qml:166
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "Onyesha matokeo ya: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:152
+#: activities/learn_decimals/Learn_decimals.qml:167
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "Onyesha matokeo ya: %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:153
+#: activities/learn_decimals/Learn_decimals.qml:168
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "Wakilisha wingi: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:610
+#: activities/learn_decimals/Learn_decimals.qml:185
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -17241,8 +17291,8 @@ msgctxt "Data|"
 msgid "Between 0.1 and 1."
 msgstr "Kati ya 0.1 na 1."
 
-#: activities/learn_decimals/resource/2/Data.qml:13
-#: activities/learn_quantities/resource/3/Data.qml:13
+#: activities/learn_decimals/resource/2/Data.qml:27
+#: activities/learn_quantities/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Between 1 and 5."
 msgstr "Kati ya 1 na 5."
@@ -17684,7 +17734,7 @@ msgctxt "Data|"
 msgid "Between 1 and 3."
 msgstr "Kati ya 1 na 3."
 
-#: activities/learn_quantities/resource/2/Data.qml:13
+#: activities/learn_quantities/resource/2/Data.qml:25
 msgctxt "Data|"
 msgid "Between 1 and 4."
 msgstr "Kati ya 1 na 4."
@@ -17699,12 +17749,12 @@ msgctxt "Data|"
 msgid "Between 1 and 10."
 msgstr "Kati ya 1 na 10."
 
-#: activities/learn_quantities/resource/6/Data.qml:13
+#: activities/learn_quantities/resource/6/Data.qml:15
 msgctxt "Data|"
 msgid "Between 10 and 20."
 msgstr "Kati ya 10 na 20."
 
-#: activities/learn_quantities/resource/7/Data.qml:13
+#: activities/learn_quantities/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "Between 20 and 50."
 msgstr "Kati ya 20 na 50."
@@ -18229,7 +18279,7 @@ msgstr ""
 "Unapaswa kuhesabu nyota ngapi bado ziko chini ya kofia. Bofya kwenye eneo la "
 "chini ili kuingiza jibu lako na kwenye kitufe cha Sawa ili kulithibitisha."
 
-#: activities/magic-hat-minus/MagicHat.qml:256
+#: activities/magic-hat-minus/MagicHat.qml:255
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Bonyeza kofia ili kuanza mchezo"
@@ -19799,7 +19849,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:363
+#: activities/memory/MemoryCommon.qml:362
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19808,12 +19858,12 @@ msgstr ""
 "Shughuli hii inahitaji sauti, kwa hivyo itacheza baadhi ya sauti hata kama "
 "sauti au madoido yamezimwa katika usanidi mkuu."
 
-#: activities/memory/MemoryCommon.qml:364
+#: activities/memory/MemoryCommon.qml:363
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Toka"
 
-#: activities/memory/MemoryCommon.qml:365
+#: activities/memory/MemoryCommon.qml:364
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Endelea"
@@ -20147,17 +20197,22 @@ msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Nafasi za herufi"
 
-#: activities/menu/ConfigurationItem.qml:619
+#: activities/menu/ConfigurationItem.qml:445
+msgctxt "ConfigurationItem|"
+msgid "Teacher's server config"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:653
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Kesi iliyochanganywa (chaguo-msingi)"
 
-#: activities/menu/ConfigurationItem.qml:623
+#: activities/menu/ConfigurationItem.qml:657
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Herufi kubwa zote"
 
-#: activities/menu/ConfigurationItem.qml:627
+#: activities/menu/ConfigurationItem.qml:661
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Herufi ndogo zote"
@@ -20242,7 +20297,42 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Msamiati"
 
-#: activities/menu/Menu.qml:662
+#: activities/menu/Menu.qml:211
+msgctxt "Menu|"
+msgid "GCompris is not connected to teacher's server."
+msgstr ""
+
+#: activities/menu/Menu.qml:212
+msgctxt "Menu|"
+msgid ""
+"GCompris is connected to teacher's server, but the password entered for "
+"selected user is wrong."
+msgstr ""
+
+#: activities/menu/Menu.qml:213
+msgctxt "Menu|"
+msgid ""
+"GCompris is connected to teacher's server, and the user is authenticated."
+msgstr ""
+
+#: activities/menu/Menu.qml:214
+msgctxt "Menu|"
+msgid "GCompris has lost the connection to teacher's server."
+msgstr ""
+
+#: activities/menu/Menu.qml:215
+msgctxt "Menu|"
+msgid "GCompris has been disconnected from teacher's server."
+msgstr ""
+
+#: activities/menu/Menu.qml:216
+msgctxt "Menu|"
+msgid ""
+"GCompris is connected to teacher's server, but the user is not yet "
+"authenticated."
+msgstr ""
+
+#: activities/menu/Menu.qml:677
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -20251,15 +20341,38 @@ msgstr ""
 "Weka shughuli zako uzipendazo hapa kwa kubofya jua kwenye sehemu ya juu "
 "kulia ya shughuli hiyo."
 
-#: activities/menu/Menu.qml:781
+#: activities/menu/Menu.qml:824
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Tafuta shughuli mahususi"
 
-#: activities/menu/Menu.qml:810
+#: activities/menu/Menu.qml:853
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Mipangilio ya Shughuli"
+
+#: activities/menu/ServerConfigPage.qml:61
+msgctxt "ServerConfigPage|"
+msgid "Teacher's server settings"
+msgstr ""
+
+#: activities/menu/ServerConfigPage.qml:111
+msgctxt "ServerConfigPage|"
+msgid "Teacher's identifier"
+msgstr ""
+
+#: activities/menu/ServerConfigPage.qml:142
+msgctxt "ServerConfigPage|"
+msgid "Server port"
+msgstr ""
+
+#: activities/menu/ServerConfigPage.qml:177
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Guess a number between 1 and %1."
+msgctxt "ServerConfigPage|"
+msgid "Server port must be a number between 0 and 65535."
+msgstr "Nadhani nambari kati ya 1 na %1."
 
 #. Activity title
 #: activities/mining/ActivityInfo.qml:15
@@ -20440,12 +20553,12 @@ msgstr ""
 "ya picha. Bofya herufi inayokosekana ili kukamilisha neno, au charaza herufi "
 "kwenye kibodi yako."
 
-#: activities/missing-letter/MissingLetter.qml:323
+#: activities/missing-letter/MissingLetter.qml:322
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Samahani, bado hatuna tafsiri ya lugha yako."
 
-#: activities/missing-letter/MissingLetter.qml:324
+#: activities/missing-letter/MissingLetter.qml:323
 #, qt-format
 msgctxt "MissingLetter|"
 msgid ""
@@ -20455,7 +20568,7 @@ msgstr ""
 "GCompris imetengenezwa na jumuiya ya KDE, unaweza kutafsiri GCompris kwa "
 "kujiunga na timu ya utafsiri kwenye <a href=\"%2\">%2</a>"
 
-#: activities/missing-letter/MissingLetter.qml:326
+#: activities/missing-letter/MissingLetter.qml:325
 msgctxt "MissingLetter|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -20871,6 +20984,100 @@ msgstr "Hadi vipengee 16, kwenye mistari mingi."
 msgctxt "Data|"
 msgid "Up to 24 items, on multiple lines."
 msgstr "Hadi vipengee 24, kwenye mistari mingi."
+
+#. Activity title
+#: activities/multiple_choice_questions/ActivityInfo.qml:16
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Multiplications."
+msgctxt "ActivityInfo|"
+msgid "Multiple-choice questions"
+msgstr "Kuzidisha."
+
+#. Help title
+#: activities/multiple_choice_questions/ActivityInfo.qml:18
+msgctxt "ActivityInfo|"
+msgid "A generic activity for multiple-choice questions."
+msgstr ""
+
+#. Help goal
+#: activities/multiple_choice_questions/ActivityInfo.qml:21
+msgctxt "ActivityInfo|"
+msgid "Answer questions sent by the teacher."
+msgstr ""
+
+#. Help manual
+#: activities/multiple_choice_questions/ActivityInfo.qml:24
+msgctxt "ActivityInfo|"
+msgid ""
+"Click an answer to select it, then press the OK button to validate. Some "
+"questions require a single answer, other questions require multiple answers. "
+"For some questions, after validating the answer, a feedback text panel will "
+"be displayed: click anywhere to close this panel after reading it."
+msgstr ""
+
+#: activities/multiple_choice_questions/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Arrows: navigate through the answers"
+msgctxt "ActivityInfo|"
+msgid "Up and Down arrows: navigate through the answer list"
+msgstr "Mishale: pitia majibu"
+
+#: activities/multiple_choice_questions/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space: select or deselect a circle"
+msgctxt "ActivityInfo|"
+msgid "Space: select or deselect the highlighted answer"
+msgstr "Nafasi: chagua au ondoa mduara"
+
+#: activities/multiple_choice_questions/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer when the OK button is visible"
+msgctxt "ActivityInfo|"
+msgid "Enter: validate your answer, or close the feedback text panel"
+msgstr "Ingiza: thibitisha jibu lako wakati kitufe cha OK kinaonekana"
+
+#: activities/multiple_choice_questions/resource/1/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find the next number."
+msgctxt "Data|"
+msgid "Find the correct answer."
+msgstr "Tafuta nambari inayofuata."
+
+#: activities/multiple_choice_questions/resource/1/Data.qml:17
+#, fuzzy
+#| msgctxt "GraduatedLineRead|"
+#| msgid "Find the requested number."
+msgctxt "Data|"
+msgid "What is the first number?"
+msgstr "Tafuta nambari iliyoombwa."
+
+#: activities/multiple_choice_questions/resource/1/Data.qml:26
+msgctxt "Data|"
+msgid "What is a color?"
+msgstr ""
+
+#: activities/multiple_choice_questions/resource/1/Data.qml:40
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice the addition of numbers."
+msgctxt "Data|"
+msgid "What are the first two numbers?"
+msgstr "Fanya mazoezi ya kuongeza nambari."
+
+#: activities/multiple_choice_questions/resource/1/Data.qml:49
+msgctxt "Data|"
+msgid "What are animals?"
+msgstr ""
+
+#: activities/multiple_choice_questions/resource/1/Data.qml:63
+msgctxt "Data|"
+msgid "Answers always in order, select the first one"
+msgstr ""
 
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
@@ -23675,7 +23882,7 @@ msgstr ""
 "Neno linaonyeshwa kwenye ubao. Orodha ya maneno, iliyoonyeshwa kwa usawa, "
 "itaonekana na kutoweka. Je, neno lililotolewa lilionekana kwenye orodha?"
 
-#: activities/readingh/Readingh.qml:307
+#: activities/readingh/Readingh.qml:306
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -23685,12 +23892,12 @@ msgstr ""
 "<font color=\"#373737\">Angalia ikiwa neno<br/></font> <b><font color="
 "\"#315AAA\">%1</font></b><br/> <font color=\"#373737\">inaonyeshwa</font>"
 
-#: activities/readingh/Readingh.qml:367
+#: activities/readingh/Readingh.qml:366
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Ndiyo niliona!"
 
-#: activities/readingh/Readingh.qml:388
+#: activities/readingh/Readingh.qml:387
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Hapana, haikuwepo!"
@@ -28145,18 +28352,18 @@ msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
 msgstr "Utoaji na 1, 2 na 3."
 
-#: activities/vertical_subtraction/subtraction.js:71
+#: activities/vertical_subtraction/subtraction.js:79
 msgctxt "subtraction|"
 msgid "Write:"
 msgstr ""
 
-#: activities/vertical_subtraction/subtraction.js:71
+#: activities/vertical_subtraction/subtraction.js:79
 msgctxt "subtraction|"
 msgid "Solve:"
 msgstr ""
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
-#: activities/vertical_subtraction/subtraction.js:169
+#: activities/vertical_subtraction/subtraction.js:190
 #, fuzzy, qt-format
 #| msgctxt "BackgroundMusicList|"
 #| msgid "Title: %1"
@@ -28164,13 +28371,34 @@ msgctxt "subtraction|"
 msgid "Solve: %1"
 msgstr "Kichwa: %1"
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:379
+#: activities/vertical_subtraction/VerticalSubtraction.qml:99
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Learn subtraction table of 1."
+msgctxt "VerticalSubtraction|"
+msgid "Write your own addition and solve it."
+msgstr "Jifunze jedwali la kutoa 1."
+
+#: activities/vertical_subtraction/VerticalSubtraction.qml:100
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Learn subtraction table of 1."
+msgctxt "VerticalSubtraction|"
+msgid "Write your own subtraction and solve it."
+msgstr "Jifunze jedwali la kutoa 1."
+
+#: activities/vertical_subtraction/VerticalSubtraction.qml:426
 #, fuzzy
 #| msgctxt "Frieze|"
 #| msgid "I am Ready"
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
 msgstr "Niko tayari"
+
+#: activities/vertical_subtraction/VerticalSubtraction.qml:464
+msgctxt "VerticalSubtraction|"
+msgid "The result should not be a negative number."
+msgstr ""
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
@@ -29009,33 +29237,33 @@ msgctxt "DialogActivityConfig|"
 msgid "Configuration"
 msgstr "usanidi"
 
-#: core/DialogChooseLevel.qml:45
+#: core/DialogChooseLevel.qml:46
 #, qt-format
 msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
 msgstr "%1 mipangilio"
 
-#: core/DialogChooseLevel.qml:205
+#: core/DialogChooseLevel.qml:208
 msgctxt "DialogChooseLevel|"
 msgid "Dataset"
 msgstr "Seti ya data"
 
-#: core/DialogChooseLevel.qml:218
+#: core/DialogChooseLevel.qml:221
 msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "Machaguo"
 
-#: core/DialogChooseLevel.qml:348
+#: core/DialogChooseLevel.qml:353
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "Sitisha"
 
-#: core/DialogChooseLevel.qml:356
+#: core/DialogChooseLevel.qml:361
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "Hifadhi"
 
-#: core/DialogChooseLevel.qml:370
+#: core/DialogChooseLevel.qml:378
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "Hifadhi na anza"
@@ -29147,30 +29375,30 @@ msgctxt "QObject|"
 msgid "Could not open target file %1"
 msgstr "Haikuweza kufungua faili lengwa %1"
 
-#: core/DownloadManager.cpp:710
+#: core/DownloadManager.cpp:711
 msgctxt "QObject|"
 msgid "Invalid format of Contents file"
 msgstr "Umbizo batili la faili ya Yaliyomo"
 
-#: core/DownloadManager.cpp:732
+#: core/DownloadManager.cpp:733
 #, qt-format
 msgctxt "QObject|"
 msgid "The url %1 does not exist."
 msgstr "Url %1 dhaipo."
 
-#: core/DownloadManager.cpp:745
+#: core/DownloadManager.cpp:746
 #, qt-format
 msgctxt "QObject|"
 msgid "Checksum of downloaded file does not match: %1"
 msgstr "Hundi ya faili iliyopakuliwa hailingani: %1"
 
-#: core/DownloadManager.cpp:767
+#: core/DownloadManager.cpp:768
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
 msgstr "Hakuna sauti zilizopatikana za %1."
 
-#: core/DownloadManager.cpp:772
+#: core/DownloadManager.cpp:773
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
@@ -29289,47 +29517,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "Lugha ya GCompris"
 
-#: core/main.cpp:85
+#: core/main.cpp:88
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "Endesha GCompris ukitumia kiteuzi chaguo-msingi cha mfumo."
 
-#: core/main.cpp:89
+#: core/main.cpp:92
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "Endesha GCompris bila kishale (modi ya skrini ya kugusa)."
 
-#: core/main.cpp:93
+#: core/main.cpp:96
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "Endesha GCompris katika hali ya skrini nzima."
 
-#: core/main.cpp:97
+#: core/main.cpp:100
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "Endesha GCompris katika hali ya dirisha."
 
-#: core/main.cpp:101
+#: core/main.cpp:104
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "Endesha GCompris ukiwasha sauti."
 
-#: core/main.cpp:105
+#: core/main.cpp:108
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "Endesha GCompris bila sauti."
 
-#: core/main.cpp:108
+#: core/main.cpp:111
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Zima hali ya kiosk (chaguo-msingi)."
 
-#: core/main.cpp:111
+#: core/main.cpp:114
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Washa modi ya kioski."
 
-#: core/main.cpp:115
+#: core/main.cpp:118
 #, fuzzy
 #| msgctxt "QObject|"
 #| msgid ""
@@ -29343,7 +29571,7 @@ msgstr ""
 "Tumia kionyeshi cha programu badala ya openGL (polepole lakini inapaswa "
 "kuendeshwa na kadi yoyote ya picha)."
 
-#: core/main.cpp:118
+#: core/main.cpp:121
 #, fuzzy
 #| msgctxt "QObject|"
 #| msgid ""
@@ -29357,22 +29585,22 @@ msgstr ""
 "Tumia kionyeshi cha openGL badala ya programu (haraka zaidi lakini itaacha "
 "kufanya kazi kulingana na kadi yako ya picha)."
 
-#: core/main.cpp:122
+#: core/main.cpp:125
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 msgstr ""
 
-#: core/main.cpp:126
+#: core/main.cpp:129
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "Bainisha shughuli unapoanzisha GCompris."
 
-#: core/main.cpp:131
+#: core/main.cpp:134
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Hutoa shughuli zote zinazopatikana kwenye pato la kawaida."
 
-#: core/main.cpp:135
+#: core/main.cpp:138
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -29381,7 +29609,7 @@ msgstr ""
 "Bainisha anuwai ya ugumu wa shughuli ya kuonyesha kwa kipindi. Ama thamani "
 "moja (2), au masafa (3-6). Thamani lazima ziwe kati ya 1 na 6."
 
-#: core/main.cpp:139
+#: core/main.cpp:142
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
@@ -29390,7 +29618,7 @@ msgstr ""
 "Bainisha ni ngazi gani ya kuanza shughuli. Inatumika tu wakati --launch "
 "chaguo linatumika."
 
-#: core/main.cpp:143
+#: core/main.cpp:146
 #, fuzzy
 #| msgctxt "QObject|"
 #| msgid "Specify the activity when starting GCompris."
@@ -29398,12 +29626,12 @@ msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
 msgstr "Bainisha shughuli unapoanzisha GCompris."
 
-#: core/main.cpp:147
+#: core/main.cpp:150
 msgctxt "QObject|"
 msgid "Hide the Home button in the bar."
 msgstr ""
 
-#: core/main.cpp:151
+#: core/main.cpp:154
 msgctxt "QObject|"
 msgid "Show the Home button in the bar (default)."
 msgstr ""
@@ -29432,12 +29660,12 @@ msgctxt "main|"
 msgid "Background music"
 msgstr "Muziki wa usuli"
 
-#: core/main.qml:248
+#: core/main.qml:248 core/main.qml:510
 msgctxt "main|"
 msgid "Yes"
 msgstr "Ndiyo"
 
-#: core/main.qml:255
+#: core/main.qml:255 core/main.qml:516
 msgctxt "main|"
 msgid "No"
 msgstr "Hapana"
@@ -29456,7 +29684,7 @@ msgctxt "main|"
 msgid "Apply"
 msgstr "Omba"
 
-#: core/main.qml:275
+#: core/main.qml:275 core/main.qml:551 core/main.qml:626
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Sitisha"
@@ -29496,6 +29724,49 @@ msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris imesasishwa! Hapa kuna mabadiliko mapya:<br/>"
 
+#: core/main.qml:509
+#, fuzzy, qt-format
+#| msgctxt "main|"
+#| msgid "Do you want to download it now?"
+msgctxt "main|"
+msgid "Do you want to connect to server %1?"
+msgstr "Je, ungependa kuipakua sasa?"
+
+#: core/main.qml:530
+#, qt-format
+msgctxt "main|"
+msgid "Password rejected by server %1"
+msgstr ""
+
+#: core/main.qml:531 core/main.qml:550 core/main.qml:625
+#, fuzzy
+#| msgctxt "Hangman|"
+#| msgid "OK"
+msgctxt "main|"
+msgid "OK"
+msgstr "Sawa"
+
+#: core/main.qml:546
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Select your mode"
+msgctxt "main|"
+msgid "Select your username"
+msgstr "Chagua hali yako"
+
+#: core/main.qml:556
+msgctxt "main|"
+msgid "Please select your username in the list or cancel."
+msgstr ""
+
+#: core/main.qml:623
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer"
+msgctxt "main|"
+msgid "Enter your password"
+msgstr "Ingiza: thibitisha jibu lako"
+
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"
 msgid "I am Ready"
@@ -29520,6 +29791,18 @@ msgstr "Ruka"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Anzisha"
+
+#~ msgctxt "Data|"
+#~ msgid "Find the previous number."
+#~ msgstr "Tafuta nambari iliyotangulia."
+
+#~ msgctxt "Data|"
+#~ msgid "Find the in-between number."
+#~ msgstr "Tafuta nambari ya kati."
+
+#~ msgctxt "Data|"
+#~ msgid "Find the missing numbers."
+#~ msgstr "Tafuta nambari ambazo hazipo."
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
@@ -30107,10 +30390,6 @@ msgstr "Anzisha"
 #~ msgstr ""
 #~ "Nakili na ukamilishe ukaushaji huu: mchanganyiko wowote wa maumbo, rangi/"
 #~ "ishara na saizi."
-
-#~ msgctxt "Data|"
-#~ msgid "Find the missing numbers"
-#~ msgstr "Tafuta nambari ambazo hazipo"
 
 #~ msgctxt "board11_1|"
 #~ msgid "Verbania"
@@ -33138,10 +33417,6 @@ msgstr "Anzisha"
 #~ msgctxt "main|"
 #~ msgid "The background music is not yet downloaded. "
 #~ msgstr "Muziki wa usuli bado haujapakuliwa."
-
-#~ msgctxt "main|"
-#~ msgid "Do you want to download it now?"
-#~ msgstr "Je, ungependa kuipakua sasa?"
 
 #~ msgctxt "Data|"
 #~ msgid "Countries of Australia."

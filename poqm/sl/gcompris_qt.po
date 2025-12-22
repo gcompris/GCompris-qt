@@ -78,6 +78,58 @@ msgctxt "ActivityInfo|"
 msgid "Find the requested numbers and drag them to the corresponding spot."
 msgstr "Poiščite zahtevane številke in jih povlecite na ustrezno mesto."
 
+#. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
+#: activities/adjacent_numbers/Adjacent_numbers.qml:56
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Find the previous numbers."
+msgctxt "Adjacent_numbers|"
+msgid "Find the %n previous number(s)."
+msgid_plural "Find the %n previous number(s)."
+msgstr[0] "Poiščite prejšnja števila."
+msgstr[1] "Poiščite prejšnja števila."
+msgstr[2] "Poiščite prejšnja števila."
+msgstr[3] "Poiščite prejšnja števila."
+
+#. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
+#: activities/adjacent_numbers/Adjacent_numbers.qml:60
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Find the next numbers."
+msgctxt "Adjacent_numbers|"
+msgid "Find the %n next number(s)."
+msgid_plural "Find the %n next number(s)."
+msgstr[0] "Poiščite naslednja števila."
+msgstr[1] "Poiščite naslednja števila."
+msgstr[2] "Poiščite naslednja števila."
+msgstr[3] "Poiščite naslednja števila."
+
+#. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
+#: activities/adjacent_numbers/Adjacent_numbers.qml:64
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Find the in-between numbers."
+msgctxt "Adjacent_numbers|"
+msgid "Find the %n in-between number(s)"
+msgid_plural "Find the %n in-between number(s)"
+msgstr[0] "Poiščite vmesna števila."
+msgstr[1] "Poiščite vmesna števila."
+msgstr[2] "Poiščite vmesna števila."
+msgstr[3] "Poiščite vmesna števila."
+
+#. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
+#: activities/adjacent_numbers/Adjacent_numbers.qml:68
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Find the missing numbers"
+msgctxt "Adjacent_numbers|"
+msgid "Find the %n missing numbers"
+msgid_plural "Find the %n missing numbers"
+msgstr[0] "Poiščite manjkajoča števila"
+msgstr[1] "Poiščite manjkajoča števila"
+msgstr[2] "Poiščite manjkajoča števila"
+msgstr[3] "Poiščite manjkajoča števila"
+
 #: activities/adjacent_numbers/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Find numbers between 1 and 10."
@@ -92,41 +144,6 @@ msgstr "Poiščite števila med 0 in 20."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 100."
 msgstr "Poiščite števila med 0 in 100."
-
-#: activities/adjacent_numbers/resource/3/Data.qml:14
-msgctxt "Data|"
-msgid "Find the next number."
-msgstr "Poiščite naslednje število."
-
-#: activities/adjacent_numbers/resource/3/Data.qml:27
-msgctxt "Data|"
-msgid "Find the previous number."
-msgstr "Poiščite prejšnje število."
-
-#: activities/adjacent_numbers/resource/3/Data.qml:40
-msgctxt "Data|"
-msgid "Find the in-between number."
-msgstr "Poiščite vmesno število."
-
-#: activities/adjacent_numbers/resource/3/Data.qml:53
-msgctxt "Data|"
-msgid "Find the missing numbers."
-msgstr "Poiščite manjkajoča števila."
-
-#: activities/adjacent_numbers/resource/3/Data.qml:66
-msgctxt "Data|"
-msgid "Find the next numbers."
-msgstr "Poiščite naslednja števila."
-
-#: activities/adjacent_numbers/resource/3/Data.qml:79
-msgctxt "Data|"
-msgid "Find the previous numbers."
-msgstr "Poiščite prejšnja števila."
-
-#: activities/adjacent_numbers/resource/3/Data.qml:105
-msgctxt "Data|"
-msgid "Find the in-between numbers."
-msgstr "Poiščite vmesna števila."
 
 #: activities/adjacent_numbers/resource/4/Data.qml:9
 msgctxt "Data|"
@@ -252,6 +269,7 @@ msgstr ""
 #: activities/money_back_cents/ActivityInfo.qml:25
 #: activities/money_cents/ActivityInfo.qml:25
 #: activities/mosaic/ActivityInfo.qml:24
+#: activities/multiple_choice_questions/ActivityInfo.qml:25
 #: activities/numbers-odd-even/ActivityInfo.qml:24
 #: activities/piano_composition/ActivityInfo.qml:33
 #: activities/planegame/ActivityInfo.qml:24
@@ -2861,12 +2879,12 @@ msgstr ""
 "Vklopite žarnice na desni, tako da predstavljajo dvojiško številko danega "
 "decimalnega števila. Ko ste to dosegli, pritisnite V redu."
 
-#: activities/binary_bulb/BinaryBulb.qml:84
+#: activities/binary_bulb/BinaryBulb.qml:95
 msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr "Ta dejavnost uči pretvorbo decimalnih števil v dvojiška števila."
 
-#: activities/binary_bulb/BinaryBulb.qml:88
+#: activities/binary_bulb/BinaryBulb.qml:99
 msgctxt "BinaryBulb|"
 msgid ""
 "Computers use transistors to count and transistors have only two states, 0 "
@@ -2877,14 +2895,14 @@ msgstr ""
 "dve stanji, 0 in 1. Matematično sta ta stanja predstavljena z 0 in 1, kar "
 "pomeni, da uporabljajo binarni sistem števil."
 
-#: activities/binary_bulb/BinaryBulb.qml:92
+#: activities/binary_bulb/BinaryBulb.qml:103
 msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr ""
 "V dejavnosti sta 0 in 1 predstavljeni z žarnico, ki je bodisi prižgana ali "
 "ugasnjena."
 
-#: activities/binary_bulb/BinaryBulb.qml:96
+#: activities/binary_bulb/BinaryBulb.qml:107
 msgctxt "BinaryBulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
@@ -2893,7 +2911,7 @@ msgstr ""
 "Binarni sistem te številke uporablja zelo učinkovito in omogoča štetje od 0 "
 "do 255 s samo 8 biti."
 
-#: activities/binary_bulb/BinaryBulb.qml:100
+#: activities/binary_bulb/BinaryBulb.qml:111
 msgctxt "BinaryBulb|"
 msgid ""
 "Each bit adds a progressive value, corresponding to the powers of 2, "
@@ -2905,14 +2923,14 @@ msgstr ""
 "proti levi: bit 1 → 2⁰ = 1, bit 2 → 2¹ = 2, bit 3 → 2² = 4, bit 4 → 2³ = 8, "
 "bit 5 → 2⁴ = 16, bit 6 → 2⁵ = 32, bit 7 → 2⁶ = 64, bit 8 → 2⁷ = 128."
 
-#: activities/binary_bulb/BinaryBulb.qml:104
+#: activities/binary_bulb/BinaryBulb.qml:115
 msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr ""
 "Če želite decimalno vrednost 5 pretvoriti v dvojiško vrednost, seštejete 1 "
 "in 4."
 
-#: activities/binary_bulb/BinaryBulb.qml:108
+#: activities/binary_bulb/BinaryBulb.qml:119
 msgctxt "BinaryBulb|"
 msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
@@ -2921,16 +2939,56 @@ msgstr ""
 "Njihovi ustrezni biti so nastavljeni na 1, ostali pa na 0. Decimalno 5 enako "
 "binarnemu 101."
 
-#: activities/binary_bulb/BinaryBulb.qml:112
+#: activities/binary_bulb/BinaryBulb.qml:123
 msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Ta slika vam bo pomagala izračunati vrednost bitov."
 
-#: activities/binary_bulb/BinaryBulb.qml:160
+#: activities/binary_bulb/BinaryBulb.qml:171
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
 msgstr "Kakšen je binarni prikaz %1?"
+
+#: activities/binary_bulb/resource/1/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 3 (with counter and with values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/2/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 3 (without counter and with values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/3/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 15 (with counter and with values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/4/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 15 (without counter and with values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/5/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 255 (with counter and with values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/6/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 255 (without counter and with values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/7/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 15 (without counter and without values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/8/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 255 (without counter and without values visible)."
+msgstr ""
 
 #: activities/binary_bulb/resource/tutorial4.qml:31
 msgctxt "tutorial4|"
@@ -3665,7 +3723,7 @@ msgctxt "ActivityInfo|"
 msgid "Review the instructions and then drag and drop the items as specified."
 msgstr "Proučite navodila in povlecite in spustite elemente, kot je določeno."
 
-#: activities/categorization/Categorization.qml:150
+#: activities/categorization/Categorization.qml:149
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3677,12 +3735,12 @@ msgstr ""
 "različico ali 'Nikoli ne pokaži tega pogovornega okna kasneje', če ne želite "
 "nikoli več videti tega pogovornega okna."
 
-#: activities/categorization/Categorization.qml:153
+#: activities/categorization/Categorization.qml:152
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Posodobi zbirko slik"
 
-#: activities/categorization/Categorization.qml:154
+#: activities/categorization/Categorization.qml:153
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Nikoli več ne kaži tega pogovornega okna"
@@ -5155,12 +5213,12 @@ msgstr ""
 "Najkrajši kazalec kaže ure, daljši kazalec minute in najdaljši kazalec kaže "
 "sekunde."
 
-#: activities/clockgame/Clockgame.qml:112
+#: activities/clockgame/Clockgame.qml:124
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Nastavi uro na:"
 
-#: activities/clockgame/Clockgame.qml:115
+#: activities/clockgame/Clockgame.qml:127
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5170,7 +5228,7 @@ msgstr[1] "%n uri"
 msgstr[2] "%n ur"
 msgstr[3] "%n ur"
 
-#: activities/clockgame/Clockgame.qml:118
+#: activities/clockgame/Clockgame.qml:130
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5180,7 +5238,7 @@ msgstr[1] "%n minuta"
 msgstr[2] "%n minuti"
 msgstr[3] "%n minute"
 
-#: activities/clockgame/Clockgame.qml:121
+#: activities/clockgame/Clockgame.qml:133
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5560,7 +5618,7 @@ msgctxt "ActivityInfo|"
 msgid "&lt;, &gt; or =: enter the corresponding symbol"
 msgstr "&lt;, &gt; ali =: vnesite ustrezni simbol"
 
-#: activities/comparator/resource/1/Data.qml:36
+#: activities/comparator/resource/1/Data.qml:53
 #: activities/tens_complement_find/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
@@ -10079,7 +10137,7 @@ msgstr ""
 "Prikaže se oblika, razdeljena na enake dele. Izberite ustrezno število "
 "delov, ki bodo predstavljali dani ulomek."
 
-#: activities/fractions_create/fractions_create.js:78
+#: activities/fractions_create/fractions_create.js:80
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
 msgstr "Najdite predstavljen ulomek."
@@ -10089,61 +10147,61 @@ msgctxt "Data|"
 msgid "Simplified fractions with a pie."
 msgstr "Poenostavite ulomke s torto."
 
-#: activities/fractions_create/resource/1/Data.qml:18
-#: activities/fractions_create/resource/3/Data.qml:17
-#: activities/fractions_create/resource/3/Data.qml:23
-#: activities/fractions_create/resource/3/Data.qml:29
+#: activities/fractions_create/resource/1/Data.qml:20
+#: activities/fractions_create/resource/3/Data.qml:20
+#: activities/fractions_create/resource/3/Data.qml:26
+#: activities/fractions_create/resource/3/Data.qml:32
 msgctxt "Data|"
 msgid "Select one half of the pie."
 msgstr "Izberite eno polovico torte."
 
-#: activities/fractions_create/resource/1/Data.qml:24
-#: activities/fractions_create/resource/3/Data.qml:35
-#: activities/fractions_create/resource/3/Data.qml:49
+#: activities/fractions_create/resource/1/Data.qml:26
+#: activities/fractions_create/resource/3/Data.qml:38
+#: activities/fractions_create/resource/3/Data.qml:55
 msgctxt "Data|"
 msgid "Select one-third of the pie."
 msgstr "Izberite eno tretjino torte."
 
-#: activities/fractions_create/resource/1/Data.qml:30
-#: activities/fractions_create/resource/3/Data.qml:41
-#: activities/fractions_create/resource/3/Data.qml:55
+#: activities/fractions_create/resource/1/Data.qml:32
+#: activities/fractions_create/resource/3/Data.qml:44
+#: activities/fractions_create/resource/3/Data.qml:61
 msgctxt "Data|"
 msgid "Select two-thirds of the pie."
 msgstr "Izberite dve tretjini torte."
 
-#: activities/fractions_create/resource/1/Data.qml:36
-#: activities/fractions_create/resource/3/Data.qml:61
+#: activities/fractions_create/resource/1/Data.qml:38
+#: activities/fractions_create/resource/3/Data.qml:67
 msgctxt "Data|"
 msgid "Select one-quarter of the pie."
 msgstr "Izberite eno četrtino torte."
 
-#: activities/fractions_create/resource/1/Data.qml:42
-#: activities/fractions_create/resource/3/Data.qml:67
+#: activities/fractions_create/resource/1/Data.qml:44
+#: activities/fractions_create/resource/3/Data.qml:73
 msgctxt "Data|"
 msgid "Select two-fifths of the pie."
 msgstr "Izberite dve petini torte."
 
-#: activities/fractions_create/resource/1/Data.qml:50
+#: activities/fractions_create/resource/1/Data.qml:55
 msgctxt "Data|"
 msgid "Select one pie and one-quarter of a pie."
 msgstr "Izberite eno torto in eno četrtino torte."
 
-#: activities/fractions_create/resource/1/Data.qml:56
+#: activities/fractions_create/resource/1/Data.qml:61
 msgctxt "Data|"
 msgid "Select one pie and two-fifths of a pie."
 msgstr "Izberite eno torto in dve petini torte."
 
-#: activities/fractions_create/resource/1/Data.qml:62
+#: activities/fractions_create/resource/1/Data.qml:67
 msgctxt "Data|"
 msgid "Select one pie and one-third of a pie."
 msgstr "Izberite eno torto in eno tretjino torte."
 
-#: activities/fractions_create/resource/1/Data.qml:68
+#: activities/fractions_create/resource/1/Data.qml:73
 msgctxt "Data|"
 msgid "Select one pie and one half of a pie."
 msgstr "Izberite eno torto in eno polovico torte."
 
-#: activities/fractions_create/resource/1/Data.qml:74
+#: activities/fractions_create/resource/1/Data.qml:79
 msgctxt "Data|"
 msgid "Select one pie and three-quarters of a pie."
 msgstr "Izberite eno torto in tri četrtine torte."
@@ -10153,8 +10211,8 @@ msgctxt "Data|"
 msgid "Specific questions with a square."
 msgstr "Specifična vprašanja s kvadratom."
 
-#: activities/fractions_create/resource/10/Data.qml:18
-#: activities/fractions_create/resource/10/Data.qml:24
+#: activities/fractions_create/resource/10/Data.qml:20
+#: activities/fractions_create/resource/10/Data.qml:26
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the square."
@@ -10166,61 +10224,61 @@ msgctxt "Data|"
 msgid "Simplified fractions with a square."
 msgstr "Poenostavljeni ulomki s kvadratom."
 
-#: activities/fractions_create/resource/2/Data.qml:18
-#: activities/fractions_create/resource/4/Data.qml:17
-#: activities/fractions_create/resource/4/Data.qml:23
-#: activities/fractions_create/resource/4/Data.qml:29
+#: activities/fractions_create/resource/2/Data.qml:20
+#: activities/fractions_create/resource/4/Data.qml:20
+#: activities/fractions_create/resource/4/Data.qml:26
+#: activities/fractions_create/resource/4/Data.qml:32
 msgctxt "Data|"
 msgid "Select one half of the square."
 msgstr "Izberite eno polovico kvadrata."
 
-#: activities/fractions_create/resource/2/Data.qml:24
-#: activities/fractions_create/resource/4/Data.qml:35
-#: activities/fractions_create/resource/4/Data.qml:49
+#: activities/fractions_create/resource/2/Data.qml:26
+#: activities/fractions_create/resource/4/Data.qml:38
+#: activities/fractions_create/resource/4/Data.qml:55
 msgctxt "Data|"
 msgid "Select one-third of the square."
 msgstr "Izberite eno tretjino kvadrata."
 
-#: activities/fractions_create/resource/2/Data.qml:30
-#: activities/fractions_create/resource/4/Data.qml:41
-#: activities/fractions_create/resource/4/Data.qml:55
+#: activities/fractions_create/resource/2/Data.qml:32
+#: activities/fractions_create/resource/4/Data.qml:44
+#: activities/fractions_create/resource/4/Data.qml:61
 msgctxt "Data|"
 msgid "Select two-thirds of the square."
 msgstr "Izberite dve tretjini kvadrata."
 
-#: activities/fractions_create/resource/2/Data.qml:36
-#: activities/fractions_create/resource/4/Data.qml:61
+#: activities/fractions_create/resource/2/Data.qml:38
+#: activities/fractions_create/resource/4/Data.qml:67
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
 msgstr "Izberite eno četrtino kvadrata."
 
-#: activities/fractions_create/resource/2/Data.qml:42
-#: activities/fractions_create/resource/4/Data.qml:67
+#: activities/fractions_create/resource/2/Data.qml:44
+#: activities/fractions_create/resource/4/Data.qml:73
 msgctxt "Data|"
 msgid "Select two-fifths of the square."
 msgstr "Izberite dve petini kvadrata."
 
-#: activities/fractions_create/resource/2/Data.qml:50
+#: activities/fractions_create/resource/2/Data.qml:55
 msgctxt "Data|"
 msgid "Select one square and one-quarter of a square."
 msgstr "Izberite en kvadrat in eno četrtino kvadrata."
 
-#: activities/fractions_create/resource/2/Data.qml:56
+#: activities/fractions_create/resource/2/Data.qml:61
 msgctxt "Data|"
 msgid "Select one square and two-fifths of a square."
 msgstr "Izberite en kvadrat in dve petini kvadrata."
 
-#: activities/fractions_create/resource/2/Data.qml:62
+#: activities/fractions_create/resource/2/Data.qml:67
 msgctxt "Data|"
 msgid "Select one square and one-third of a square."
 msgstr "Izberite en kvadrata in eno tretjino kvadrata."
 
-#: activities/fractions_create/resource/2/Data.qml:68
+#: activities/fractions_create/resource/2/Data.qml:73
 msgctxt "Data|"
 msgid "Select one square and one half of a square."
 msgstr "Izberite en kvadrat in eno polovico kvadrata."
 
-#: activities/fractions_create/resource/2/Data.qml:74
+#: activities/fractions_create/resource/2/Data.qml:79
 msgctxt "Data|"
 msgid "Select one square and three-quarters of a square."
 msgstr "Izberite en kvadrat in tri četrtine kvadrata."
@@ -10230,7 +10288,7 @@ msgctxt "Data|"
 msgid "Non-simplified fractions with a pie."
 msgstr "Ne-poenostavljeni ulomki s torto."
 
-#: activities/fractions_create/resource/3/Data.qml:73
+#: activities/fractions_create/resource/3/Data.qml:79
 msgctxt "Data|"
 msgid "Select three-fifths of the pie."
 msgstr "Izberite tri petine torte."
@@ -10240,7 +10298,7 @@ msgctxt "Data|"
 msgid "Non-simplified fractions with a square."
 msgstr "Ne-poenostavljeni ulomki s kvadratom."
 
-#: activities/fractions_create/resource/4/Data.qml:73
+#: activities/fractions_create/resource/4/Data.qml:79
 msgctxt "Data|"
 msgid "Select three-fifths of the square."
 msgstr "Izberite tri petine kvadrata."
@@ -10250,48 +10308,48 @@ msgctxt "Data|"
 msgid "Decimal numbers with a pie."
 msgstr "Decimalna števila s torto."
 
-#: activities/fractions_create/resource/5/Data.qml:18
+#: activities/fractions_create/resource/5/Data.qml:20
 msgctxt "Data|"
 msgid "Select 0.5 pie."
 msgstr "Izberite 0,5 torte."
 
-#: activities/fractions_create/resource/5/Data.qml:24
+#: activities/fractions_create/resource/5/Data.qml:26
 msgctxt "Data|"
 msgid "Select 0.25 pie."
 msgstr "Izberite 0,25 torte."
 
-#: activities/fractions_create/resource/5/Data.qml:30
+#: activities/fractions_create/resource/5/Data.qml:32
 msgctxt "Data|"
 msgid "Select 0.4 pie."
 msgstr "Izberite 0,4 torte."
 
-#: activities/fractions_create/resource/5/Data.qml:36
+#: activities/fractions_create/resource/5/Data.qml:38
 msgctxt "Data|"
 msgid "Select 0.75 pie."
 msgstr "Izberite 0,75 torte."
 
-#: activities/fractions_create/resource/5/Data.qml:42
+#: activities/fractions_create/resource/5/Data.qml:44
 msgctxt "Data|"
 msgid "Select 0.8 pie."
 msgstr "Izberite 0,8 torte."
 
-#: activities/fractions_create/resource/5/Data.qml:50
+#: activities/fractions_create/resource/5/Data.qml:55
 msgctxt "Data|"
 msgid "Select 1.25 pies."
 msgstr "Izberite 1,25 tort."
 
-#: activities/fractions_create/resource/5/Data.qml:56
+#: activities/fractions_create/resource/5/Data.qml:61
 msgctxt "Data|"
 msgid "Select 1.4 pies."
 msgstr "Izberite 1,4 tort."
 
-#: activities/fractions_create/resource/5/Data.qml:62
-#: activities/fractions_create/resource/5/Data.qml:68
+#: activities/fractions_create/resource/5/Data.qml:67
+#: activities/fractions_create/resource/5/Data.qml:73
 msgctxt "Data|"
 msgid "Select 1.5 pies."
 msgstr "Izberite 1,5 tort."
 
-#: activities/fractions_create/resource/5/Data.qml:74
+#: activities/fractions_create/resource/5/Data.qml:79
 msgctxt "Data|"
 msgid "Select 1.75 pies."
 msgstr "Izberite 1,75 tort."
@@ -10301,48 +10359,48 @@ msgctxt "Data|"
 msgid "Decimal numbers with a square."
 msgstr "Decimalna števila s kvadratom."
 
-#: activities/fractions_create/resource/6/Data.qml:18
+#: activities/fractions_create/resource/6/Data.qml:20
 msgctxt "Data|"
 msgid "Select 0.5 square."
 msgstr "Izberite 0,5 kvadrata."
 
-#: activities/fractions_create/resource/6/Data.qml:24
+#: activities/fractions_create/resource/6/Data.qml:26
 msgctxt "Data|"
 msgid "Select 0.25 square."
 msgstr "Izberite 0,25 kvadrata."
 
-#: activities/fractions_create/resource/6/Data.qml:30
+#: activities/fractions_create/resource/6/Data.qml:32
 msgctxt "Data|"
 msgid "Select 0.4 square."
 msgstr "Izberite 0,4 kvadrata."
 
-#: activities/fractions_create/resource/6/Data.qml:36
+#: activities/fractions_create/resource/6/Data.qml:38
 msgctxt "Data|"
 msgid "Select 0.75 square."
 msgstr "Izberite 0,75 kvadrata."
 
-#: activities/fractions_create/resource/6/Data.qml:42
+#: activities/fractions_create/resource/6/Data.qml:44
 msgctxt "Data|"
 msgid "Select 0.8 square."
 msgstr "Izberite 0,8 kvadrata."
 
-#: activities/fractions_create/resource/6/Data.qml:50
+#: activities/fractions_create/resource/6/Data.qml:55
 msgctxt "Data|"
 msgid "Select 1.25 squares."
 msgstr "Izberite 1,25 kvadrata."
 
-#: activities/fractions_create/resource/6/Data.qml:56
+#: activities/fractions_create/resource/6/Data.qml:61
 msgctxt "Data|"
 msgid "Select 1.4 squares."
 msgstr "Izberite 1,4 kvadrata."
 
-#: activities/fractions_create/resource/6/Data.qml:62
-#: activities/fractions_create/resource/6/Data.qml:68
+#: activities/fractions_create/resource/6/Data.qml:67
+#: activities/fractions_create/resource/6/Data.qml:73
 msgctxt "Data|"
 msgid "Select 1.5 squares."
 msgstr "Izberite 1,5 kvadratov."
 
-#: activities/fractions_create/resource/6/Data.qml:74
+#: activities/fractions_create/resource/6/Data.qml:79
 msgctxt "Data|"
 msgid "Select 1.75 squares."
 msgstr "Izberite 1,75 kvadratov."
@@ -10353,14 +10411,14 @@ msgid "Percentages with a pie."
 msgstr "Odstotki s torto."
 
 #. Select %1 percent of the pie.
-#: activities/fractions_create/resource/7/Data.qml:19
-#: activities/fractions_create/resource/7/Data.qml:26
-#: activities/fractions_create/resource/7/Data.qml:33
-#: activities/fractions_create/resource/7/Data.qml:40
-#: activities/fractions_create/resource/7/Data.qml:47
-#: activities/fractions_create/resource/7/Data.qml:56
-#: activities/fractions_create/resource/7/Data.qml:63
-#: activities/fractions_create/resource/7/Data.qml:70
+#: activities/fractions_create/resource/7/Data.qml:21
+#: activities/fractions_create/resource/7/Data.qml:28
+#: activities/fractions_create/resource/7/Data.qml:35
+#: activities/fractions_create/resource/7/Data.qml:42
+#: activities/fractions_create/resource/7/Data.qml:49
+#: activities/fractions_create/resource/7/Data.qml:61
+#: activities/fractions_create/resource/7/Data.qml:68
+#: activities/fractions_create/resource/7/Data.qml:75
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the pie."
@@ -10372,12 +10430,12 @@ msgid "Percentages with a square."
 msgstr "Odstotki s kvadratom."
 
 #. Select %1 percent of the square.
-#: activities/fractions_create/resource/8/Data.qml:19
-#: activities/fractions_create/resource/8/Data.qml:26
-#: activities/fractions_create/resource/8/Data.qml:33
-#: activities/fractions_create/resource/8/Data.qml:42
-#: activities/fractions_create/resource/8/Data.qml:49
-#: activities/fractions_create/resource/8/Data.qml:56
+#: activities/fractions_create/resource/8/Data.qml:21
+#: activities/fractions_create/resource/8/Data.qml:28
+#: activities/fractions_create/resource/8/Data.qml:35
+#: activities/fractions_create/resource/8/Data.qml:47
+#: activities/fractions_create/resource/8/Data.qml:54
+#: activities/fractions_create/resource/8/Data.qml:61
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
@@ -10388,8 +10446,8 @@ msgctxt "Data|"
 msgid "Specific questions with a pie."
 msgstr "Specifična vprašanja s torto."
 
-#: activities/fractions_create/resource/9/Data.qml:18
-#: activities/fractions_create/resource/9/Data.qml:24
+#: activities/fractions_create/resource/9/Data.qml:20
+#: activities/fractions_create/resource/9/Data.qml:26
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the pie."
@@ -15194,7 +15252,7 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
 msgstr "Vračalka: izberi prejšnjo besedo"
 
-#: activities/grammar_analysis/grammar_analysis.js:398
+#: activities/grammar_analysis/grammar_analysis.js:401
 msgctxt "grammar_analysis|"
 msgid "Empty"
 msgstr "Prazno"
@@ -15495,7 +15553,7 @@ msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
 msgstr "Tabulator: preklop med števili in operatorji"
 
-#: activities/guess24/Guess24.qml:123
+#: activities/guess24/Guess24.qml:135
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr "Uporabite štiri števila z danimi operatorji, da najdete 24."
@@ -15791,12 +15849,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Poskusov: %1"
 
-#: activities/hangman/Hangman.qml:371
+#: activities/hangman/Hangman.qml:370
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Žal še ni prevoda za vaš jezik."
 
-#: activities/hangman/Hangman.qml:372
+#: activities/hangman/Hangman.qml:371
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -15806,7 +15864,7 @@ msgstr ""
 "GCompris razvija skupnost KDE, za prevajanje GCompris se pridružite ekipi "
 "prevajanja na <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:374
+#: activities/hangman/Hangman.qml:373
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -16653,117 +16711,117 @@ msgstr ""
 "Za to dejavnost smo preklopili na angleški jezik, a lahko v pogovornem oknu "
 "nastavitev izbereš drug jezik."
 
-#: activities/lang/Lang.qml:195 activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:194 activities/lang/Lang.qml:195
 msgctxt "Lang|"
 msgid "other"
 msgstr "drugo"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "action"
 msgstr "dejanje"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "adjective"
 msgstr "pridevnik"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "color"
 msgstr "barva"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "number"
 msgstr "številka"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "people"
 msgstr "ljudje"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "bodyparts"
 msgstr "deli telesa"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "clothes"
 msgstr "oblačila"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "emotion"
 msgstr "čustvo"
 
-#: activities/lang/Lang.qml:201
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "job"
 msgstr "poklic"
 
-#: activities/lang/Lang.qml:201
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "sport"
 msgstr "šport"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "nature"
 msgstr "narava"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "animal"
 msgstr "žival"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "fruit"
 msgstr "sadež"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "plant"
 msgstr "rastlina"
 
-#: activities/lang/Lang.qml:204
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "vegetables"
 msgstr "zelenjava"
 
-#: activities/lang/Lang.qml:204
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "object"
 msgstr "predmet"
 
-#: activities/lang/Lang.qml:205
+#: activities/lang/Lang.qml:204
 msgctxt "Lang|"
 msgid "construction"
 msgstr "grajenje"
 
-#: activities/lang/Lang.qml:206
+#: activities/lang/Lang.qml:205
 msgctxt "Lang|"
 msgid "furniture"
 msgstr "pohištvo"
 
-#: activities/lang/Lang.qml:206
+#: activities/lang/Lang.qml:205
 msgctxt "Lang|"
 msgid "houseware"
 msgstr "gospodinjski izdelek"
 
-#: activities/lang/Lang.qml:207
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "tool"
 msgstr "orodje"
 
-#: activities/lang/Lang.qml:207
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "food"
 msgstr "hrana"
 
-#: activities/lang/Lang.qml:208
+#: activities/lang/Lang.qml:207
 msgctxt "Lang|"
 msgid "transport"
 msgstr "prevoz"
@@ -16872,31 +16930,31 @@ msgstr ""
 "ustreza prikazani decimalni številki. Nato kliknite gumb V redu, da "
 "preverite svoj odgovor."
 
-#: activities/learn_decimals/Learn_decimals.qml:150
+#: activities/learn_decimals/Learn_decimals.qml:165
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "Prikaži število: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:151
+#: activities/learn_decimals/Learn_decimals.qml:166
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "Prikaži rezultat: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:152
+#: activities/learn_decimals/Learn_decimals.qml:167
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "Prikaži rezultat: %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:153
+#: activities/learn_decimals/Learn_decimals.qml:168
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "Predstavite količino: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:610
+#: activities/learn_decimals/Learn_decimals.qml:185
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -16907,8 +16965,8 @@ msgctxt "Data|"
 msgid "Between 0.1 and 1."
 msgstr "Med 0,1 in 1."
 
-#: activities/learn_decimals/resource/2/Data.qml:13
-#: activities/learn_quantities/resource/3/Data.qml:13
+#: activities/learn_decimals/resource/2/Data.qml:27
+#: activities/learn_quantities/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Between 1 and 5."
 msgstr "Med 1 in 5."
@@ -17261,7 +17319,7 @@ msgctxt "Data|"
 msgid "Between 1 and 3."
 msgstr "Med 1 in 3."
 
-#: activities/learn_quantities/resource/2/Data.qml:13
+#: activities/learn_quantities/resource/2/Data.qml:25
 msgctxt "Data|"
 msgid "Between 1 and 4."
 msgstr "Med 1 in 4."
@@ -17276,12 +17334,12 @@ msgctxt "Data|"
 msgid "Between 1 and 10."
 msgstr "Med 1 in 10."
 
-#: activities/learn_quantities/resource/6/Data.qml:13
+#: activities/learn_quantities/resource/6/Data.qml:15
 msgctxt "Data|"
 msgid "Between 10 and 20."
 msgstr "Med 10 in 20."
 
-#: activities/learn_quantities/resource/7/Data.qml:13
+#: activities/learn_quantities/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "Between 20 and 50."
 msgstr "Med 20 in 50."
@@ -17780,7 +17838,7 @@ msgstr ""
 "pobegne. Morate prešteti, koliko jih je še pod klobukom. Kliknite na spodnje "
 "območje za vnos vašega odgovora in na gumb V redu, da preverite svoj odgovor."
 
-#: activities/magic-hat-minus/MagicHat.qml:256
+#: activities/magic-hat-minus/MagicHat.qml:255
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Kliknite na klobuk, da začnete igro"
@@ -19292,7 +19350,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:363
+#: activities/memory/MemoryCommon.qml:362
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19301,12 +19359,12 @@ msgstr ""
 "Za to dejavnost je potreben zvok, zato bo računalnik predvajal nekatere "
 "zvoke, četudi če so zvoki ali zvočni učinki v glavni nastavitvi onemogočeni."
 
-#: activities/memory/MemoryCommon.qml:364
+#: activities/memory/MemoryCommon.qml:363
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Izhod"
 
-#: activities/memory/MemoryCommon.qml:365
+#: activities/memory/MemoryCommon.qml:364
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Nadaljuj"
@@ -19639,17 +19697,22 @@ msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Razmik med črkami pisave"
 
-#: activities/menu/ConfigurationItem.qml:619
+#: activities/menu/ConfigurationItem.qml:445
+msgctxt "ConfigurationItem|"
+msgid "Teacher's server config"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:653
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Mešana velikost (privzeto)"
 
-#: activities/menu/ConfigurationItem.qml:623
+#: activities/menu/ConfigurationItem.qml:657
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "VELIKE ČRKE"
 
-#: activities/menu/ConfigurationItem.qml:627
+#: activities/menu/ConfigurationItem.qml:661
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Samo male črke"
@@ -19733,7 +19796,42 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Besedišče"
 
-#: activities/menu/Menu.qml:662
+#: activities/menu/Menu.qml:211
+msgctxt "Menu|"
+msgid "GCompris is not connected to teacher's server."
+msgstr ""
+
+#: activities/menu/Menu.qml:212
+msgctxt "Menu|"
+msgid ""
+"GCompris is connected to teacher's server, but the password entered for "
+"selected user is wrong."
+msgstr ""
+
+#: activities/menu/Menu.qml:213
+msgctxt "Menu|"
+msgid ""
+"GCompris is connected to teacher's server, and the user is authenticated."
+msgstr ""
+
+#: activities/menu/Menu.qml:214
+msgctxt "Menu|"
+msgid "GCompris has lost the connection to teacher's server."
+msgstr ""
+
+#: activities/menu/Menu.qml:215
+msgctxt "Menu|"
+msgid "GCompris has been disconnected from teacher's server."
+msgstr ""
+
+#: activities/menu/Menu.qml:216
+msgctxt "Menu|"
+msgid ""
+"GCompris is connected to teacher's server, but the user is not yet "
+"authenticated."
+msgstr ""
+
+#: activities/menu/Menu.qml:677
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19742,15 +19840,38 @@ msgstr ""
 "Postavite svoje najljubše dejavnosti sem tako, da kliknete na sonce zgoraj "
 "desno pri tej dejavnosti."
 
-#: activities/menu/Menu.qml:781
+#: activities/menu/Menu.qml:824
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Poišči posebne dejavnosti"
 
-#: activities/menu/Menu.qml:810
+#: activities/menu/Menu.qml:853
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Nastavitve dejavnosti"
+
+#: activities/menu/ServerConfigPage.qml:61
+msgctxt "ServerConfigPage|"
+msgid "Teacher's server settings"
+msgstr ""
+
+#: activities/menu/ServerConfigPage.qml:111
+msgctxt "ServerConfigPage|"
+msgid "Teacher's identifier"
+msgstr ""
+
+#: activities/menu/ServerConfigPage.qml:142
+msgctxt "ServerConfigPage|"
+msgid "Server port"
+msgstr ""
+
+#: activities/menu/ServerConfigPage.qml:177
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Guess a number between 1 and %1."
+msgctxt "ServerConfigPage|"
+msgid "Server port must be a number between 0 and 65535."
+msgstr "Uganite število med 1 in %1."
 
 #. Activity title
 #: activities/mining/ActivityInfo.qml:15
@@ -19924,12 +20045,12 @@ msgstr ""
 "Kliknite na manjkajočo črko, da dokončate besedo ali vtipkajte črko na "
 "tipkovnici."
 
-#: activities/missing-letter/MissingLetter.qml:323
+#: activities/missing-letter/MissingLetter.qml:322
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Se opravičujemo, žal še ni prevoda za vaš jezik."
 
-#: activities/missing-letter/MissingLetter.qml:324
+#: activities/missing-letter/MissingLetter.qml:323
 #, qt-format
 msgctxt "MissingLetter|"
 msgid ""
@@ -19939,7 +20060,7 @@ msgstr ""
 "GCompris razvija skupnost KDE, za prevajanje GCompris se pridružite ekipi "
 "prevajanja na <a href=\"%2\">%2</a>"
 
-#: activities/missing-letter/MissingLetter.qml:326
+#: activities/missing-letter/MissingLetter.qml:325
 msgctxt "MissingLetter|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -20332,6 +20453,100 @@ msgstr "Do 16 elementov v več vrsticah."
 msgctxt "Data|"
 msgid "Up to 24 items, on multiple lines."
 msgstr "Do 24 elementov v več vrsticah."
+
+#. Activity title
+#: activities/multiple_choice_questions/ActivityInfo.qml:16
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Multiplication."
+msgctxt "ActivityInfo|"
+msgid "Multiple-choice questions"
+msgstr "Množenje."
+
+#. Help title
+#: activities/multiple_choice_questions/ActivityInfo.qml:18
+msgctxt "ActivityInfo|"
+msgid "A generic activity for multiple-choice questions."
+msgstr ""
+
+#. Help goal
+#: activities/multiple_choice_questions/ActivityInfo.qml:21
+msgctxt "ActivityInfo|"
+msgid "Answer questions sent by the teacher."
+msgstr ""
+
+#. Help manual
+#: activities/multiple_choice_questions/ActivityInfo.qml:24
+msgctxt "ActivityInfo|"
+msgid ""
+"Click an answer to select it, then press the OK button to validate. Some "
+"questions require a single answer, other questions require multiple answers. "
+"For some questions, after validating the answer, a feedback text panel will "
+"be displayed: click anywhere to close this panel after reading it."
+msgstr ""
+
+#: activities/multiple_choice_questions/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Arrows: navigate through the answers"
+msgctxt "ActivityInfo|"
+msgid "Up and Down arrows: navigate through the answer list"
+msgstr "Puščice: krmarite skozi odgovore"
+
+#: activities/multiple_choice_questions/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space: select or deselect a circle"
+msgctxt "ActivityInfo|"
+msgid "Space: select or deselect the highlighted answer"
+msgstr "Preslednica: izberite ali počistite izbor kroga"
+
+#: activities/multiple_choice_questions/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer when the OK button is visible"
+msgctxt "ActivityInfo|"
+msgid "Enter: validate your answer, or close the feedback text panel"
+msgstr "Enter: preverite odgovor, ko je viden gumb V redu"
+
+#: activities/multiple_choice_questions/resource/1/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find the next number."
+msgctxt "Data|"
+msgid "Find the correct answer."
+msgstr "Poiščite naslednje število."
+
+#: activities/multiple_choice_questions/resource/1/Data.qml:17
+#, fuzzy
+#| msgctxt "GraduatedLineRead|"
+#| msgid "Find the requested number."
+msgctxt "Data|"
+msgid "What is the first number?"
+msgstr "Poiščite zahtevano število."
+
+#: activities/multiple_choice_questions/resource/1/Data.qml:26
+msgctxt "Data|"
+msgid "What is a color?"
+msgstr ""
+
+#: activities/multiple_choice_questions/resource/1/Data.qml:40
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice the addition of numbers."
+msgctxt "Data|"
+msgid "What are the first two numbers?"
+msgstr "Vaje seštevanja."
+
+#: activities/multiple_choice_questions/resource/1/Data.qml:49
+msgctxt "Data|"
+msgid "What are animals?"
+msgstr ""
+
+#: activities/multiple_choice_questions/resource/1/Data.qml:63
+msgctxt "Data|"
+msgid "Answers always in order, select the first one"
+msgstr ""
 
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
@@ -22948,7 +23163,7 @@ msgstr ""
 "Na tabli je prikazana beseda. Seznam besed, prikazan vodoravno, se bo "
 "pojavil in izginil. Ali je se dana beseda pokazala v seznamu ali ne?"
 
-#: activities/readingh/Readingh.qml:307
+#: activities/readingh/Readingh.qml:306
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22958,12 +23173,12 @@ msgstr ""
 "<font color=\"#373737\">Preverite, če je beseda<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">prikazana</font>"
 
-#: activities/readingh/Readingh.qml:367
+#: activities/readingh/Readingh.qml:366
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Da, videl sem jo!"
 
-#: activities/readingh/Readingh.qml:388
+#: activities/readingh/Readingh.qml:387
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Ne, nisem je videl!"
@@ -27140,27 +27355,48 @@ msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
 msgstr "Rešite odštevanje 4 ali 5 števk, 2 vrstici."
 
-#: activities/vertical_subtraction/subtraction.js:71
+#: activities/vertical_subtraction/subtraction.js:79
 msgctxt "subtraction|"
 msgid "Write:"
 msgstr "Zapišite:"
 
-#: activities/vertical_subtraction/subtraction.js:71
+#: activities/vertical_subtraction/subtraction.js:79
 msgctxt "subtraction|"
 msgid "Solve:"
 msgstr "Rešite:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
-#: activities/vertical_subtraction/subtraction.js:169
+#: activities/vertical_subtraction/subtraction.js:190
 #, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
 msgstr "Rešite: %1"
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:379
+#: activities/vertical_subtraction/VerticalSubtraction.qml:99
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Write your own addition and solve it."
+msgctxt "VerticalSubtraction|"
+msgid "Write your own addition and solve it."
+msgstr "Napišite svoj seštevek in ga rešite."
+
+#: activities/vertical_subtraction/VerticalSubtraction.qml:100
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Write your own subtraction and solve it."
+msgctxt "VerticalSubtraction|"
+msgid "Write your own subtraction and solve it."
+msgstr "Napišite svoje odštevanje in ga rešite."
+
+#: activities/vertical_subtraction/VerticalSubtraction.qml:426
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
 msgstr "Pripravljeni"
+
+#: activities/vertical_subtraction/VerticalSubtraction.qml:464
+msgctxt "VerticalSubtraction|"
+msgid "The result should not be a negative number."
+msgstr ""
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
@@ -27992,33 +28228,33 @@ msgctxt "DialogActivityConfig|"
 msgid "Configuration"
 msgstr "Nastavitve"
 
-#: core/DialogChooseLevel.qml:45
+#: core/DialogChooseLevel.qml:46
 #, qt-format
 msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
 msgstr "%1 nastavitve"
 
-#: core/DialogChooseLevel.qml:205
+#: core/DialogChooseLevel.qml:208
 msgctxt "DialogChooseLevel|"
 msgid "Dataset"
 msgstr "Zbirka podatkov"
 
-#: core/DialogChooseLevel.qml:218
+#: core/DialogChooseLevel.qml:221
 msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "Možnosti"
 
-#: core/DialogChooseLevel.qml:348
+#: core/DialogChooseLevel.qml:353
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "Prekliči"
 
-#: core/DialogChooseLevel.qml:356
+#: core/DialogChooseLevel.qml:361
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "Shrani"
 
-#: core/DialogChooseLevel.qml:370
+#: core/DialogChooseLevel.qml:378
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "Shrani in začni"
@@ -28130,30 +28366,30 @@ msgctxt "QObject|"
 msgid "Could not open target file %1"
 msgstr "Ni bilo mogoče odpreti ciljne datoteke %1"
 
-#: core/DownloadManager.cpp:710
+#: core/DownloadManager.cpp:711
 msgctxt "QObject|"
 msgid "Invalid format of Contents file"
 msgstr "Neveljavna oblika datoteke vsebine"
 
-#: core/DownloadManager.cpp:732
+#: core/DownloadManager.cpp:733
 #, qt-format
 msgctxt "QObject|"
 msgid "The url %1 does not exist."
 msgstr "Spletni naslov %1 ne obstaja."
 
-#: core/DownloadManager.cpp:745
+#: core/DownloadManager.cpp:746
 #, qt-format
 msgctxt "QObject|"
 msgid "Checksum of downloaded file does not match: %1"
 msgstr "Kontrolna vsota prenesene datoteke ne ustreza: %1"
 
-#: core/DownloadManager.cpp:767
+#: core/DownloadManager.cpp:768
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
 msgstr "Ni najdenih glasov za %1."
 
-#: core/DownloadManager.cpp:772
+#: core/DownloadManager.cpp:773
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
@@ -28260,47 +28496,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "Jezik GComprisa"
 
-#: core/main.cpp:85
+#: core/main.cpp:88
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "Zaženi GCompris s privzeto sistemsko kazalko."
 
-#: core/main.cpp:89
+#: core/main.cpp:92
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "Zaženi GCompris brez kazalke (način za dotik)."
 
-#: core/main.cpp:93
+#: core/main.cpp:96
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "Zaženi GCompris v celozaslonskem načinu."
 
-#: core/main.cpp:97
+#: core/main.cpp:100
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "Zaženi GCompris v okenskem načinu."
 
-#: core/main.cpp:101
+#: core/main.cpp:104
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "Zaženi GCompris z omogočenimi zvoki."
 
-#: core/main.cpp:105
+#: core/main.cpp:108
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "Zaženi GCompris brez zvokov."
 
-#: core/main.cpp:108
+#: core/main.cpp:111
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Onemogoči način kioska (privzeto)."
 
-#: core/main.cpp:111
+#: core/main.cpp:114
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Omogoči način kioska."
 
-#: core/main.cpp:115
+#: core/main.cpp:118
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
@@ -28310,7 +28546,7 @@ msgstr ""
 "delovati s katerokoli grafično kartico). Zastarelo, namesto tega uporabite --"
 "renderer=software."
 
-#: core/main.cpp:118
+#: core/main.cpp:121
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -28320,22 +28556,22 @@ msgstr ""
 "odvisno od vaše grafične kartice). Zastarelo, namesto tega uporabite --"
 "renderer=opengl."
 
-#: core/main.cpp:122
+#: core/main.cpp:125
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 msgstr "Izberite renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 
-#: core/main.cpp:126
+#: core/main.cpp:129
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "Določi dejavnost ob zagonu programa GCompris."
 
-#: core/main.cpp:131
+#: core/main.cpp:134
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Usmeri izhod vseh razpoložljivih dejavnosti na standardni izhod."
 
-#: core/main.cpp:135
+#: core/main.cpp:138
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -28344,7 +28580,7 @@ msgstr ""
 "Določite obseg zahtevnosti dejavnosti prikaza seje. Lahko je le ena vrednost "
 "(2) ali obseg (3-6). Vrednosti morajo biti med 1 in 6."
 
-#: core/main.cpp:139
+#: core/main.cpp:142
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
@@ -28353,17 +28589,17 @@ msgstr ""
 "Določite, na kateri ravni naj se aktivnost začne. Uporabljeno samo, če je "
 "uporabljena možnost --launch."
 
-#: core/main.cpp:143
+#: core/main.cpp:146
 msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
 msgstr "Določi lokalno okolje ob zagonu programa GCompris."
 
-#: core/main.cpp:147
+#: core/main.cpp:150
 msgctxt "QObject|"
 msgid "Hide the Home button in the bar."
 msgstr "Skrij gumb Domov v vrstici."
 
-#: core/main.cpp:151
+#: core/main.cpp:154
 msgctxt "QObject|"
 msgid "Show the Home button in the bar (default)."
 msgstr "Skrij gumb Domov v vrstici (privzeto)."
@@ -28392,12 +28628,12 @@ msgctxt "main|"
 msgid "Background music"
 msgstr "Glasba v ozadju"
 
-#: core/main.qml:248
+#: core/main.qml:248 core/main.qml:510
 msgctxt "main|"
 msgid "Yes"
 msgstr "Da"
 
-#: core/main.qml:255
+#: core/main.qml:255 core/main.qml:516
 msgctxt "main|"
 msgid "No"
 msgstr "Ne"
@@ -28416,7 +28652,7 @@ msgctxt "main|"
 msgid "Apply"
 msgstr "Uveljavi"
 
-#: core/main.qml:275
+#: core/main.qml:275 core/main.qml:551 core/main.qml:626
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Prekliči"
@@ -28456,6 +28692,49 @@ msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris je bil posodobljen! Tukaj so novosti:<br/>"
 
+#: core/main.qml:509
+#, fuzzy, qt-format
+#| msgctxt "DrawingWheels|"
+#| msgid "Do you want to erase this image?"
+msgctxt "main|"
+msgid "Do you want to connect to server %1?"
+msgstr "Ali želite izbrisati to sliko?"
+
+#: core/main.qml:530
+#, qt-format
+msgctxt "main|"
+msgid "Password rejected by server %1"
+msgstr ""
+
+#: core/main.qml:531 core/main.qml:550 core/main.qml:625
+#, fuzzy
+#| msgctxt "Balancebox|"
+#| msgid "OK"
+msgctxt "main|"
+msgid "OK"
+msgstr "V redu"
+
+#: core/main.qml:546
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Select your mode"
+msgctxt "main|"
+msgid "Select your username"
+msgstr "Izberite vaš način"
+
+#: core/main.qml:556
+msgctxt "main|"
+msgid "Please select your username in the list or cancel."
+msgstr ""
+
+#: core/main.qml:623
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer"
+msgctxt "main|"
+msgid "Enter your password"
+msgstr "Enter: potrdite odgovor"
+
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"
 msgid "I am Ready"
@@ -28480,6 +28759,18 @@ msgstr "Preskoči"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Zaženi"
+
+#~ msgctxt "Data|"
+#~ msgid "Find the previous number."
+#~ msgstr "Poiščite prejšnje število."
+
+#~ msgctxt "Data|"
+#~ msgid "Find the in-between number."
+#~ msgstr "Poiščite vmesno število."
+
+#~ msgctxt "Data|"
+#~ msgid "Find the missing numbers."
+#~ msgstr "Poiščite manjkajoča števila."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -29055,10 +29346,6 @@ msgstr "Zaženi"
 #~ msgstr ""
 #~ "Kopirajte in dokončajte ta friz: različne kombinacije oblik, barv/znakov "
 #~ "in velikosti."
-
-#~ msgctxt "Data|"
-#~ msgid "Find the missing numbers"
-#~ msgstr "Poiščite manjkajoča števila"
 
 #~ msgctxt "Guesscount|"
 #~ msgid "%1/%2"

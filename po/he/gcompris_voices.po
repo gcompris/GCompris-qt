@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-15 00:38+0000\n"
+"POT-Creation-Date: 2025-12-22 00:38+0000\n"
 "PO-Revision-Date: 2025-12-15 04:46+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -905,6 +905,12 @@ msgstr "ניתן ללמוד ולתרגל את קוד מוֹרְס (Morse) הבי
 #, kde-format
 msgid "Put each item at the same place as in the given example."
 msgstr "יש לשים כל פריט באותו מקום כמו בדוגמא הנתונה."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "multiple_choice_questions"
+#: activities/multiple_choice_questions/ActivityInfo.qml:19
+#, kde-format
+msgid "Answer the questions."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
 #: activities/nine_men_morris/ActivityInfo.qml:18

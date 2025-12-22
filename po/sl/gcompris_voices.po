@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-15 00:38+0000\n"
+"POT-Creation-Date: 2025-12-22 00:38+0000\n"
 "PO-Revision-Date: 2025-12-15 05:33+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -933,6 +933,12 @@ msgstr "Naučite se in vadite mednarodno Morsejevo kodo"
 #, kde-format
 msgid "Put each item at the same place as in the given example."
 msgstr "Vsak predmet postavite na isto mesto kot v danem primeru."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "multiple_choice_questions"
+#: activities/multiple_choice_questions/ActivityInfo.qml:19
+#, kde-format
+msgid "Answer the questions."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
 #: activities/nine_men_morris/ActivityInfo.qml:18

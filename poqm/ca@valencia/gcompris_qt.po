@@ -89,6 +89,50 @@ msgid "Find the requested numbers and drag them to the corresponding spot."
 msgstr ""
 "Troba els nombres sol·licitats i arrossega'ls fins al punt corresponent."
 
+#. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
+#: activities/adjacent_numbers/Adjacent_numbers.qml:56
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Find the previous numbers."
+msgctxt "Adjacent_numbers|"
+msgid "Find the %n previous number(s)."
+msgid_plural "Find the %n previous number(s)."
+msgstr[0] "Troba els nombres anteriors."
+msgstr[1] "Troba els nombres anteriors."
+
+#. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
+#: activities/adjacent_numbers/Adjacent_numbers.qml:60
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Find the next numbers."
+msgctxt "Adjacent_numbers|"
+msgid "Find the %n next number(s)."
+msgid_plural "Find the %n next number(s)."
+msgstr[0] "Troba els nombres següents."
+msgstr[1] "Troba els nombres següents."
+
+#. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
+#: activities/adjacent_numbers/Adjacent_numbers.qml:64
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Find the in-between numbers."
+msgctxt "Adjacent_numbers|"
+msgid "Find the %n in-between number(s)"
+msgid_plural "Find the %n in-between number(s)"
+msgstr[0] "Troba els nombres intermedis."
+msgstr[1] "Troba els nombres intermedis."
+
+#. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
+#: activities/adjacent_numbers/Adjacent_numbers.qml:68
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Find the missing numbers."
+msgctxt "Adjacent_numbers|"
+msgid "Find the %n missing numbers"
+msgid_plural "Find the %n missing numbers"
+msgstr[0] "Troba els nombres que falten."
+msgstr[1] "Troba els nombres que falten."
+
 #: activities/adjacent_numbers/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Find numbers between 1 and 10."
@@ -103,41 +147,6 @@ msgstr "Troba nombres entre 0 i 20."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 100."
 msgstr "Troba nombres entre 0 i 100."
-
-#: activities/adjacent_numbers/resource/3/Data.qml:14
-msgctxt "Data|"
-msgid "Find the next number."
-msgstr "Troba el nombre següent."
-
-#: activities/adjacent_numbers/resource/3/Data.qml:27
-msgctxt "Data|"
-msgid "Find the previous number."
-msgstr "Troba el nombre anterior."
-
-#: activities/adjacent_numbers/resource/3/Data.qml:40
-msgctxt "Data|"
-msgid "Find the in-between number."
-msgstr "Troba els nombres intermedis."
-
-#: activities/adjacent_numbers/resource/3/Data.qml:53
-msgctxt "Data|"
-msgid "Find the missing numbers."
-msgstr "Troba els nombres que falten."
-
-#: activities/adjacent_numbers/resource/3/Data.qml:66
-msgctxt "Data|"
-msgid "Find the next numbers."
-msgstr "Troba els nombres següents."
-
-#: activities/adjacent_numbers/resource/3/Data.qml:79
-msgctxt "Data|"
-msgid "Find the previous numbers."
-msgstr "Troba els nombres anteriors."
-
-#: activities/adjacent_numbers/resource/3/Data.qml:105
-msgctxt "Data|"
-msgid "Find the in-between numbers."
-msgstr "Troba els nombres intermedis."
 
 #: activities/adjacent_numbers/resource/4/Data.qml:9
 msgctxt "Data|"
@@ -263,6 +272,7 @@ msgstr ""
 #: activities/money_back_cents/ActivityInfo.qml:25
 #: activities/money_cents/ActivityInfo.qml:25
 #: activities/mosaic/ActivityInfo.qml:24
+#: activities/multiple_choice_questions/ActivityInfo.qml:25
 #: activities/numbers-odd-even/ActivityInfo.qml:24
 #: activities/piano_composition/ActivityInfo.qml:33
 #: activities/planegame/ActivityInfo.qml:24
@@ -3023,14 +3033,14 @@ msgstr ""
 "Encén les bombetes correctes per a representar el binari del nombre decimal "
 "indicat. Quan ho hages aconseguit, prem «OK»."
 
-#: activities/binary_bulb/BinaryBulb.qml:84
+#: activities/binary_bulb/BinaryBulb.qml:95
 msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr ""
 "Esta activitat t'ensenya com convertir els nombres decimals en nombres "
 "binaris."
 
-#: activities/binary_bulb/BinaryBulb.qml:88
+#: activities/binary_bulb/BinaryBulb.qml:99
 msgctxt "BinaryBulb|"
 msgid ""
 "Computers use transistors to count and transistors have only two states, 0 "
@@ -3041,14 +3051,14 @@ msgstr ""
 "tenen dos estats, 0 i 1. Matemàticament, estos estats són representats per 0 "
 "i 1, els quals constituïxen el sistema binari de numeració."
 
-#: activities/binary_bulb/BinaryBulb.qml:92
+#: activities/binary_bulb/BinaryBulb.qml:103
 msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr ""
 "En l'activitat, el 0 i l'1 estan simulats per les bombetes, enceses o "
 "apagades."
 
-#: activities/binary_bulb/BinaryBulb.qml:96
+#: activities/binary_bulb/BinaryBulb.qml:107
 msgctxt "BinaryBulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
@@ -3058,7 +3068,7 @@ msgstr ""
 "permetent comptar des de 0 fins al 255 només amb 8 bits."
 
 # skip-rule: t-sp_co
-#: activities/binary_bulb/BinaryBulb.qml:100
+#: activities/binary_bulb/BinaryBulb.qml:111
 msgctxt "BinaryBulb|"
 msgid ""
 "Each bit adds a progressive value, corresponding to the powers of 2, "
@@ -3071,12 +3081,12 @@ msgstr ""
 "bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit 8 → "
 "2⁷=128."
 
-#: activities/binary_bulb/BinaryBulb.qml:104
+#: activities/binary_bulb/BinaryBulb.qml:115
 msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr "Per a convertir un 5 decimal a un valor binari, s'afigen 1 i 4."
 
-#: activities/binary_bulb/BinaryBulb.qml:108
+#: activities/binary_bulb/BinaryBulb.qml:119
 msgctxt "BinaryBulb|"
 msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
@@ -3085,16 +3095,56 @@ msgstr ""
 "Els seus bits corresponents s'establixen a 1, els altres s'establixen a 0. "
 "El 5 decimal és igual que el binari 101."
 
-#: activities/binary_bulb/BinaryBulb.qml:112
+#: activities/binary_bulb/BinaryBulb.qml:123
 msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Esta imatge t'ajudarà a calcular el valor dels bits."
 
-#: activities/binary_bulb/BinaryBulb.qml:160
+#: activities/binary_bulb/BinaryBulb.qml:171
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
 msgstr "Quina és la representació binària de %1?"
+
+#: activities/binary_bulb/resource/1/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 3 (with counter and with values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/2/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 3 (without counter and with values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/3/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 15 (with counter and with values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/4/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 15 (without counter and with values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/5/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 255 (with counter and with values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/6/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 255 (without counter and with values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/7/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 15 (without counter and without values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/8/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 255 (without counter and without values visible)."
+msgstr ""
 
 #: activities/binary_bulb/resource/tutorial4.qml:31
 msgctxt "tutorial4|"
@@ -3845,7 +3895,7 @@ msgstr ""
 "Revisa les instruccions i després arrossega i deixa anar els elements com "
 "s'especifica."
 
-#: activities/categorization/Categorization.qml:150
+#: activities/categorization/Categorization.qml:149
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3857,12 +3907,12 @@ msgstr ""
 "paraules. Clica damunt de la «Creu» o a «No mostres este diàleg una altra "
 "vegada» per a jugar amb la versió de demostració."
 
-#: activities/categorization/Categorization.qml:153
+#: activities/categorization/Categorization.qml:152
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Actualitza el conjunt d'imatges"
 
-#: activities/categorization/Categorization.qml:154
+#: activities/categorization/Categorization.qml:153
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "No mostres este diàleg una altra vegada"
@@ -5417,12 +5467,12 @@ msgstr ""
 "La maneta més curta indica les hores, la que és una mica més llarga indica "
 "els minuts i la més llarga indica els segons."
 
-#: activities/clockgame/Clockgame.qml:112
+#: activities/clockgame/Clockgame.qml:124
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Posa el rellotge a l'hora:"
 
-#: activities/clockgame/Clockgame.qml:115
+#: activities/clockgame/Clockgame.qml:127
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5430,7 +5480,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n hora"
 msgstr[1] "%n hores"
 
-#: activities/clockgame/Clockgame.qml:118
+#: activities/clockgame/Clockgame.qml:130
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5438,7 +5488,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n minut"
 msgstr[1] "%n minuts"
 
-#: activities/clockgame/Clockgame.qml:121
+#: activities/clockgame/Clockgame.qml:133
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5825,7 +5875,7 @@ msgctxt "ActivityInfo|"
 msgid "&lt;, &gt; or =: enter the corresponding symbol"
 msgstr "&lt;, &gt; o =: introduïx el símbol corresponent"
 
-#: activities/comparator/resource/1/Data.qml:36
+#: activities/comparator/resource/1/Data.qml:53
 #: activities/tens_complement_find/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
@@ -10535,7 +10585,7 @@ msgstr ""
 "Es mostra una forma dividida en parts iguals. Tria el nombre adequat de "
 "parts per a representar la fracció indicada."
 
-#: activities/fractions_create/fractions_create.js:78
+#: activities/fractions_create/fractions_create.js:80
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
 msgstr "Troba la fracció representada."
@@ -10545,61 +10595,61 @@ msgctxt "Data|"
 msgid "Simplified fractions with a pie."
 msgstr "Fraccions simplificades amb un pastís."
 
-#: activities/fractions_create/resource/1/Data.qml:18
-#: activities/fractions_create/resource/3/Data.qml:17
-#: activities/fractions_create/resource/3/Data.qml:23
-#: activities/fractions_create/resource/3/Data.qml:29
+#: activities/fractions_create/resource/1/Data.qml:20
+#: activities/fractions_create/resource/3/Data.qml:20
+#: activities/fractions_create/resource/3/Data.qml:26
+#: activities/fractions_create/resource/3/Data.qml:32
 msgctxt "Data|"
 msgid "Select one half of the pie."
 msgstr "Tria una meitat del pastís."
 
-#: activities/fractions_create/resource/1/Data.qml:24
-#: activities/fractions_create/resource/3/Data.qml:35
-#: activities/fractions_create/resource/3/Data.qml:49
+#: activities/fractions_create/resource/1/Data.qml:26
+#: activities/fractions_create/resource/3/Data.qml:38
+#: activities/fractions_create/resource/3/Data.qml:55
 msgctxt "Data|"
 msgid "Select one-third of the pie."
 msgstr "Tria un terç del pastís."
 
-#: activities/fractions_create/resource/1/Data.qml:30
-#: activities/fractions_create/resource/3/Data.qml:41
-#: activities/fractions_create/resource/3/Data.qml:55
+#: activities/fractions_create/resource/1/Data.qml:32
+#: activities/fractions_create/resource/3/Data.qml:44
+#: activities/fractions_create/resource/3/Data.qml:61
 msgctxt "Data|"
 msgid "Select two-thirds of the pie."
 msgstr "Tria dos terços del pastís."
 
-#: activities/fractions_create/resource/1/Data.qml:36
-#: activities/fractions_create/resource/3/Data.qml:61
+#: activities/fractions_create/resource/1/Data.qml:38
+#: activities/fractions_create/resource/3/Data.qml:67
 msgctxt "Data|"
 msgid "Select one-quarter of the pie."
 msgstr "Tria un quart del pastís."
 
-#: activities/fractions_create/resource/1/Data.qml:42
-#: activities/fractions_create/resource/3/Data.qml:67
+#: activities/fractions_create/resource/1/Data.qml:44
+#: activities/fractions_create/resource/3/Data.qml:73
 msgctxt "Data|"
 msgid "Select two-fifths of the pie."
 msgstr "Tria dos cinquens del pastís."
 
-#: activities/fractions_create/resource/1/Data.qml:50
+#: activities/fractions_create/resource/1/Data.qml:55
 msgctxt "Data|"
 msgid "Select one pie and one-quarter of a pie."
 msgstr "Tria un pastís i un quart d'un altre pastís."
 
-#: activities/fractions_create/resource/1/Data.qml:56
+#: activities/fractions_create/resource/1/Data.qml:61
 msgctxt "Data|"
 msgid "Select one pie and two-fifths of a pie."
 msgstr "Tria un pastís i dos cinquens d'un altre pastís."
 
-#: activities/fractions_create/resource/1/Data.qml:62
+#: activities/fractions_create/resource/1/Data.qml:67
 msgctxt "Data|"
 msgid "Select one pie and one-third of a pie."
 msgstr "Tria un pastís i un terç d'un altre pastís."
 
-#: activities/fractions_create/resource/1/Data.qml:68
+#: activities/fractions_create/resource/1/Data.qml:73
 msgctxt "Data|"
 msgid "Select one pie and one half of a pie."
 msgstr "Tria un pastís i una meitat d'un altre pastís."
 
-#: activities/fractions_create/resource/1/Data.qml:74
+#: activities/fractions_create/resource/1/Data.qml:79
 msgctxt "Data|"
 msgid "Select one pie and three-quarters of a pie."
 msgstr "Tria un pastís i tres quarts d'un altre pastís."
@@ -10609,8 +10659,8 @@ msgctxt "Data|"
 msgid "Specific questions with a square."
 msgstr "Preguntes específiques amb un quadrat."
 
-#: activities/fractions_create/resource/10/Data.qml:18
-#: activities/fractions_create/resource/10/Data.qml:24
+#: activities/fractions_create/resource/10/Data.qml:20
+#: activities/fractions_create/resource/10/Data.qml:26
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the square."
@@ -10622,61 +10672,61 @@ msgctxt "Data|"
 msgid "Simplified fractions with a square."
 msgstr "Fraccions simplificades amb un quadrat."
 
-#: activities/fractions_create/resource/2/Data.qml:18
-#: activities/fractions_create/resource/4/Data.qml:17
-#: activities/fractions_create/resource/4/Data.qml:23
-#: activities/fractions_create/resource/4/Data.qml:29
+#: activities/fractions_create/resource/2/Data.qml:20
+#: activities/fractions_create/resource/4/Data.qml:20
+#: activities/fractions_create/resource/4/Data.qml:26
+#: activities/fractions_create/resource/4/Data.qml:32
 msgctxt "Data|"
 msgid "Select one half of the square."
 msgstr "Tria una meitat del quadrat."
 
-#: activities/fractions_create/resource/2/Data.qml:24
-#: activities/fractions_create/resource/4/Data.qml:35
-#: activities/fractions_create/resource/4/Data.qml:49
+#: activities/fractions_create/resource/2/Data.qml:26
+#: activities/fractions_create/resource/4/Data.qml:38
+#: activities/fractions_create/resource/4/Data.qml:55
 msgctxt "Data|"
 msgid "Select one-third of the square."
 msgstr "Tria un terç del quadrat."
 
-#: activities/fractions_create/resource/2/Data.qml:30
-#: activities/fractions_create/resource/4/Data.qml:41
-#: activities/fractions_create/resource/4/Data.qml:55
+#: activities/fractions_create/resource/2/Data.qml:32
+#: activities/fractions_create/resource/4/Data.qml:44
+#: activities/fractions_create/resource/4/Data.qml:61
 msgctxt "Data|"
 msgid "Select two-thirds of the square."
 msgstr "Tria dos terços del quadrat."
 
-#: activities/fractions_create/resource/2/Data.qml:36
-#: activities/fractions_create/resource/4/Data.qml:61
+#: activities/fractions_create/resource/2/Data.qml:38
+#: activities/fractions_create/resource/4/Data.qml:67
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
 msgstr "Tria un quart del quadrat."
 
-#: activities/fractions_create/resource/2/Data.qml:42
-#: activities/fractions_create/resource/4/Data.qml:67
+#: activities/fractions_create/resource/2/Data.qml:44
+#: activities/fractions_create/resource/4/Data.qml:73
 msgctxt "Data|"
 msgid "Select two-fifths of the square."
 msgstr "Tria dos cinquens del quadrat."
 
-#: activities/fractions_create/resource/2/Data.qml:50
+#: activities/fractions_create/resource/2/Data.qml:55
 msgctxt "Data|"
 msgid "Select one square and one-quarter of a square."
 msgstr "Tria un quadrat i un quart d'un altre quadrat."
 
-#: activities/fractions_create/resource/2/Data.qml:56
+#: activities/fractions_create/resource/2/Data.qml:61
 msgctxt "Data|"
 msgid "Select one square and two-fifths of a square."
 msgstr "Tria un quadrat i dos cinquens d'un altre quadrat."
 
-#: activities/fractions_create/resource/2/Data.qml:62
+#: activities/fractions_create/resource/2/Data.qml:67
 msgctxt "Data|"
 msgid "Select one square and one-third of a square."
 msgstr "Tria un quadrat i un terç d'un altre quadrat."
 
-#: activities/fractions_create/resource/2/Data.qml:68
+#: activities/fractions_create/resource/2/Data.qml:73
 msgctxt "Data|"
 msgid "Select one square and one half of a square."
 msgstr "Tria un quadrat i una meitat d'un altre quadrat."
 
-#: activities/fractions_create/resource/2/Data.qml:74
+#: activities/fractions_create/resource/2/Data.qml:79
 msgctxt "Data|"
 msgid "Select one square and three-quarters of a square."
 msgstr "Tria un quadrat i tres quarts d'un altre quadrat."
@@ -10686,7 +10736,7 @@ msgctxt "Data|"
 msgid "Non-simplified fractions with a pie."
 msgstr "Fraccions no simplificades amb un pastís."
 
-#: activities/fractions_create/resource/3/Data.qml:73
+#: activities/fractions_create/resource/3/Data.qml:79
 msgctxt "Data|"
 msgid "Select three-fifths of the pie."
 msgstr "Tria tres cinquens del pastís."
@@ -10696,7 +10746,7 @@ msgctxt "Data|"
 msgid "Non-simplified fractions with a square."
 msgstr "Fraccions no simplificades amb un quadrat."
 
-#: activities/fractions_create/resource/4/Data.qml:73
+#: activities/fractions_create/resource/4/Data.qml:79
 msgctxt "Data|"
 msgid "Select three-fifths of the square."
 msgstr "Tria tres cinquens del quadrat."
@@ -10706,48 +10756,48 @@ msgctxt "Data|"
 msgid "Decimal numbers with a pie."
 msgstr "Nombres decimals amb un pastís."
 
-#: activities/fractions_create/resource/5/Data.qml:18
+#: activities/fractions_create/resource/5/Data.qml:20
 msgctxt "Data|"
 msgid "Select 0.5 pie."
 msgstr "Tria 0,5 pastissos."
 
-#: activities/fractions_create/resource/5/Data.qml:24
+#: activities/fractions_create/resource/5/Data.qml:26
 msgctxt "Data|"
 msgid "Select 0.25 pie."
 msgstr "Tria 0,25 pastissos."
 
-#: activities/fractions_create/resource/5/Data.qml:30
+#: activities/fractions_create/resource/5/Data.qml:32
 msgctxt "Data|"
 msgid "Select 0.4 pie."
 msgstr "Tria 0,4 pastissos."
 
-#: activities/fractions_create/resource/5/Data.qml:36
+#: activities/fractions_create/resource/5/Data.qml:38
 msgctxt "Data|"
 msgid "Select 0.75 pie."
 msgstr "Tria 0,75 pastissos."
 
-#: activities/fractions_create/resource/5/Data.qml:42
+#: activities/fractions_create/resource/5/Data.qml:44
 msgctxt "Data|"
 msgid "Select 0.8 pie."
 msgstr "Tria 0,8 pastissos."
 
-#: activities/fractions_create/resource/5/Data.qml:50
+#: activities/fractions_create/resource/5/Data.qml:55
 msgctxt "Data|"
 msgid "Select 1.25 pies."
 msgstr "Tria 1,25 pastissos."
 
-#: activities/fractions_create/resource/5/Data.qml:56
+#: activities/fractions_create/resource/5/Data.qml:61
 msgctxt "Data|"
 msgid "Select 1.4 pies."
 msgstr "Tria 1,4 pastissos."
 
-#: activities/fractions_create/resource/5/Data.qml:62
-#: activities/fractions_create/resource/5/Data.qml:68
+#: activities/fractions_create/resource/5/Data.qml:67
+#: activities/fractions_create/resource/5/Data.qml:73
 msgctxt "Data|"
 msgid "Select 1.5 pies."
 msgstr "Tria 1,5 pastissos."
 
-#: activities/fractions_create/resource/5/Data.qml:74
+#: activities/fractions_create/resource/5/Data.qml:79
 msgctxt "Data|"
 msgid "Select 1.75 pies."
 msgstr "Tria 1,75 pastissos."
@@ -10757,48 +10807,48 @@ msgctxt "Data|"
 msgid "Decimal numbers with a square."
 msgstr "Nombres decimals amb un quadrat."
 
-#: activities/fractions_create/resource/6/Data.qml:18
+#: activities/fractions_create/resource/6/Data.qml:20
 msgctxt "Data|"
 msgid "Select 0.5 square."
 msgstr "Tria 0,5 quadrats."
 
-#: activities/fractions_create/resource/6/Data.qml:24
+#: activities/fractions_create/resource/6/Data.qml:26
 msgctxt "Data|"
 msgid "Select 0.25 square."
 msgstr "Tria 0,25 quadrats."
 
-#: activities/fractions_create/resource/6/Data.qml:30
+#: activities/fractions_create/resource/6/Data.qml:32
 msgctxt "Data|"
 msgid "Select 0.4 square."
 msgstr "Tria 0,4 quadrats."
 
-#: activities/fractions_create/resource/6/Data.qml:36
+#: activities/fractions_create/resource/6/Data.qml:38
 msgctxt "Data|"
 msgid "Select 0.75 square."
 msgstr "Tria 0,75 quadrats."
 
-#: activities/fractions_create/resource/6/Data.qml:42
+#: activities/fractions_create/resource/6/Data.qml:44
 msgctxt "Data|"
 msgid "Select 0.8 square."
 msgstr "Tria 0,8 quadrats."
 
-#: activities/fractions_create/resource/6/Data.qml:50
+#: activities/fractions_create/resource/6/Data.qml:55
 msgctxt "Data|"
 msgid "Select 1.25 squares."
 msgstr "Tria 1,25 quadrats."
 
-#: activities/fractions_create/resource/6/Data.qml:56
+#: activities/fractions_create/resource/6/Data.qml:61
 msgctxt "Data|"
 msgid "Select 1.4 squares."
 msgstr "Tria 1,4 quadrats."
 
-#: activities/fractions_create/resource/6/Data.qml:62
-#: activities/fractions_create/resource/6/Data.qml:68
+#: activities/fractions_create/resource/6/Data.qml:67
+#: activities/fractions_create/resource/6/Data.qml:73
 msgctxt "Data|"
 msgid "Select 1.5 squares."
 msgstr "Tria 1,5 quadrats."
 
-#: activities/fractions_create/resource/6/Data.qml:74
+#: activities/fractions_create/resource/6/Data.qml:79
 msgctxt "Data|"
 msgid "Select 1.75 squares."
 msgstr "Tria 1,75 quadrats."
@@ -10809,14 +10859,14 @@ msgid "Percentages with a pie."
 msgstr "Tants per cent amb un pastís."
 
 #. Select %1 percent of the pie.
-#: activities/fractions_create/resource/7/Data.qml:19
-#: activities/fractions_create/resource/7/Data.qml:26
-#: activities/fractions_create/resource/7/Data.qml:33
-#: activities/fractions_create/resource/7/Data.qml:40
-#: activities/fractions_create/resource/7/Data.qml:47
-#: activities/fractions_create/resource/7/Data.qml:56
-#: activities/fractions_create/resource/7/Data.qml:63
-#: activities/fractions_create/resource/7/Data.qml:70
+#: activities/fractions_create/resource/7/Data.qml:21
+#: activities/fractions_create/resource/7/Data.qml:28
+#: activities/fractions_create/resource/7/Data.qml:35
+#: activities/fractions_create/resource/7/Data.qml:42
+#: activities/fractions_create/resource/7/Data.qml:49
+#: activities/fractions_create/resource/7/Data.qml:61
+#: activities/fractions_create/resource/7/Data.qml:68
+#: activities/fractions_create/resource/7/Data.qml:75
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the pie."
@@ -10828,12 +10878,12 @@ msgid "Percentages with a square."
 msgstr "Tants per cent amb un quadrat."
 
 #. Select %1 percent of the square.
-#: activities/fractions_create/resource/8/Data.qml:19
-#: activities/fractions_create/resource/8/Data.qml:26
-#: activities/fractions_create/resource/8/Data.qml:33
-#: activities/fractions_create/resource/8/Data.qml:42
-#: activities/fractions_create/resource/8/Data.qml:49
-#: activities/fractions_create/resource/8/Data.qml:56
+#: activities/fractions_create/resource/8/Data.qml:21
+#: activities/fractions_create/resource/8/Data.qml:28
+#: activities/fractions_create/resource/8/Data.qml:35
+#: activities/fractions_create/resource/8/Data.qml:47
+#: activities/fractions_create/resource/8/Data.qml:54
+#: activities/fractions_create/resource/8/Data.qml:61
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
@@ -10844,8 +10894,8 @@ msgctxt "Data|"
 msgid "Specific questions with a pie."
 msgstr "Preguntes específiques amb un pastís."
 
-#: activities/fractions_create/resource/9/Data.qml:18
-#: activities/fractions_create/resource/9/Data.qml:24
+#: activities/fractions_create/resource/9/Data.qml:20
+#: activities/fractions_create/resource/9/Data.qml:26
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the pie."
@@ -15694,7 +15744,7 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
 msgstr "Tecla de retrocés: selecciona la paraula anterior"
 
-#: activities/grammar_analysis/grammar_analysis.js:398
+#: activities/grammar_analysis/grammar_analysis.js:401
 msgctxt "grammar_analysis|"
 msgid "Empty"
 msgstr "Buida"
@@ -16004,7 +16054,7 @@ msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
 msgstr "«Tabulació»: canvia entre nombres i operadors"
 
-#: activities/guess24/Guess24.qml:123
+#: activities/guess24/Guess24.qml:135
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr "Utilitza els quatre nombres amb els operadors donats per a trobar 24."
@@ -16303,12 +16353,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Intent: %1"
 
-#: activities/hangman/Hangman.qml:371
+#: activities/hangman/Hangman.qml:370
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Ho sentim, encara no tenim una traducció al vostre idioma."
 
-#: activities/hangman/Hangman.qml:372
+#: activities/hangman/Hangman.qml:371
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -16318,7 +16368,7 @@ msgstr ""
 "GCompris és desenvolupat per la comunitat KDE, el podeu traduir unint-vos a "
 "un equip de traducció a <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:374
+#: activities/hangman/Hangman.qml:373
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -17169,117 +17219,117 @@ msgstr ""
 "Per a esta activitat canviarem a l'anglés, però pots seleccionar un altre "
 "idioma en el diàleg de configuració."
 
-#: activities/lang/Lang.qml:195 activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:194 activities/lang/Lang.qml:195
 msgctxt "Lang|"
 msgid "other"
 msgstr "Altres"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "action"
 msgstr "Accions"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "adjective"
 msgstr "Adjectius"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "color"
 msgstr "Colors"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "number"
 msgstr "Nombres"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "people"
 msgstr "Persones"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "bodyparts"
 msgstr "Parts del cos"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "clothes"
 msgstr "Roba"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "emotion"
 msgstr "Emocions"
 
-#: activities/lang/Lang.qml:201
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "job"
 msgstr "Treball"
 
-#: activities/lang/Lang.qml:201
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "sport"
 msgstr "Esports"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "nature"
 msgstr "Natura"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "animal"
 msgstr "Animals"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "fruit"
 msgstr "Fruits"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "plant"
 msgstr "Plantes"
 
-#: activities/lang/Lang.qml:204
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "vegetables"
 msgstr "Vegetals"
 
-#: activities/lang/Lang.qml:204
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "object"
 msgstr "Objectes"
 
-#: activities/lang/Lang.qml:205
+#: activities/lang/Lang.qml:204
 msgctxt "Lang|"
 msgid "construction"
 msgstr "Construcció"
 
-#: activities/lang/Lang.qml:206
+#: activities/lang/Lang.qml:205
 msgctxt "Lang|"
 msgid "furniture"
 msgstr "Mobles"
 
-#: activities/lang/Lang.qml:206
+#: activities/lang/Lang.qml:205
 msgctxt "Lang|"
 msgid "houseware"
 msgstr "Articles de la llar"
 
-#: activities/lang/Lang.qml:207
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "tool"
 msgstr "Eines"
 
-#: activities/lang/Lang.qml:207
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "food"
 msgstr "Menjar"
 
-#: activities/lang/Lang.qml:208
+#: activities/lang/Lang.qml:207
 msgctxt "Lang|"
 msgid "transport"
 msgstr "Transport"
@@ -17390,31 +17440,31 @@ msgstr ""
 "que el nombre de barres col·locades es corresponga amb el nombre decimal "
 "mostrat. Després, clica damunt del botó «OK» per a validar la resposta."
 
-#: activities/learn_decimals/Learn_decimals.qml:150
+#: activities/learn_decimals/Learn_decimals.qml:165
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "Mostra el nombre: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:151
+#: activities/learn_decimals/Learn_decimals.qml:166
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "Mostra el resultat de: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:152
+#: activities/learn_decimals/Learn_decimals.qml:167
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "Mostra el resultat de: %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:153
+#: activities/learn_decimals/Learn_decimals.qml:168
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "Representa la quantitat: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:610
+#: activities/learn_decimals/Learn_decimals.qml:185
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -17425,8 +17475,8 @@ msgctxt "Data|"
 msgid "Between 0.1 and 1."
 msgstr "Entre el 0,1 i l'1."
 
-#: activities/learn_decimals/resource/2/Data.qml:13
-#: activities/learn_quantities/resource/3/Data.qml:13
+#: activities/learn_decimals/resource/2/Data.qml:27
+#: activities/learn_quantities/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Between 1 and 5."
 msgstr "Entre l'1 i el 5."
@@ -17782,7 +17832,7 @@ msgctxt "Data|"
 msgid "Between 1 and 3."
 msgstr "Entre l'1 i el 3."
 
-#: activities/learn_quantities/resource/2/Data.qml:13
+#: activities/learn_quantities/resource/2/Data.qml:25
 msgctxt "Data|"
 msgid "Between 1 and 4."
 msgstr "Entre l'1 i el 4."
@@ -17797,12 +17847,12 @@ msgctxt "Data|"
 msgid "Between 1 and 10."
 msgstr "Entre l'1 i el 10."
 
-#: activities/learn_quantities/resource/6/Data.qml:13
+#: activities/learn_quantities/resource/6/Data.qml:15
 msgctxt "Data|"
 msgid "Between 10 and 20."
 msgstr "Entre el 10 i el 20."
 
-#: activities/learn_quantities/resource/7/Data.qml:13
+#: activities/learn_quantities/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "Between 20 and 50."
 msgstr "Entre el 20 i el 50."
@@ -18309,7 +18359,7 @@ msgstr ""
 "Clica damunt de l'àrea inferior per a introduir la teua resposta i en el "
 "botó «OK» per a validar-la."
 
-#: activities/magic-hat-minus/MagicHat.qml:256
+#: activities/magic-hat-minus/MagicHat.qml:255
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Clica damunt del barret per a començar el joc"
@@ -19846,7 +19896,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:363
+#: activities/memory/MemoryCommon.qml:362
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19856,12 +19906,12 @@ msgstr ""
 "si les veus d'àudio o els efectes estan inhabilitats en la configuració "
 "principal."
 
-#: activities/memory/MemoryCommon.qml:364
+#: activities/memory/MemoryCommon.qml:363
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Ix"
 
-#: activities/memory/MemoryCommon.qml:365
+#: activities/memory/MemoryCommon.qml:364
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Continua"
@@ -20197,17 +20247,22 @@ msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Espai entre les lletres"
 
-#: activities/menu/ConfigurationItem.qml:619
+#: activities/menu/ConfigurationItem.qml:445
+msgctxt "ConfigurationItem|"
+msgid "Teacher's server config"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:653
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Combinat (predeterminat)"
 
-#: activities/menu/ConfigurationItem.qml:623
+#: activities/menu/ConfigurationItem.qml:657
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Tot en majúscula"
 
-#: activities/menu/ConfigurationItem.qml:627
+#: activities/menu/ConfigurationItem.qml:661
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Tot en minúscula"
@@ -20291,7 +20346,42 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Vocabulari"
 
-#: activities/menu/Menu.qml:662
+#: activities/menu/Menu.qml:211
+msgctxt "Menu|"
+msgid "GCompris is not connected to teacher's server."
+msgstr ""
+
+#: activities/menu/Menu.qml:212
+msgctxt "Menu|"
+msgid ""
+"GCompris is connected to teacher's server, but the password entered for "
+"selected user is wrong."
+msgstr ""
+
+#: activities/menu/Menu.qml:213
+msgctxt "Menu|"
+msgid ""
+"GCompris is connected to teacher's server, and the user is authenticated."
+msgstr ""
+
+#: activities/menu/Menu.qml:214
+msgctxt "Menu|"
+msgid "GCompris has lost the connection to teacher's server."
+msgstr ""
+
+#: activities/menu/Menu.qml:215
+msgctxt "Menu|"
+msgid "GCompris has been disconnected from teacher's server."
+msgstr ""
+
+#: activities/menu/Menu.qml:216
+msgctxt "Menu|"
+msgid ""
+"GCompris is connected to teacher's server, but the user is not yet "
+"authenticated."
+msgstr ""
+
+#: activities/menu/Menu.qml:677
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -20300,15 +20390,38 @@ msgstr ""
 "Col·loca les teues activitats preferides ací clicant damunt del Sol que hi "
 "ha en la part superior dreta de cada activitat."
 
-#: activities/menu/Menu.qml:781
+#: activities/menu/Menu.qml:824
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Busca activitats específiques"
 
-#: activities/menu/Menu.qml:810
+#: activities/menu/Menu.qml:853
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Configureu l'activitat"
+
+#: activities/menu/ServerConfigPage.qml:61
+msgctxt "ServerConfigPage|"
+msgid "Teacher's server settings"
+msgstr ""
+
+#: activities/menu/ServerConfigPage.qml:111
+msgctxt "ServerConfigPage|"
+msgid "Teacher's identifier"
+msgstr ""
+
+#: activities/menu/ServerConfigPage.qml:142
+msgctxt "ServerConfigPage|"
+msgid "Server port"
+msgstr ""
+
+#: activities/menu/ServerConfigPage.qml:177
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Guess a number between 1 and %1."
+msgctxt "ServerConfigPage|"
+msgid "Server port must be a number between 0 and 65535."
+msgstr "Endevina un nombre entre l'1 i %1."
 
 #. Activity title
 #: activities/mining/ActivityInfo.qml:15
@@ -20485,12 +20598,12 @@ msgstr ""
 "imatge. Clica damunt de la lletra que falta per a completar la paraula o "
 "escriu-la amb el teclat."
 
-#: activities/missing-letter/MissingLetter.qml:323
+#: activities/missing-letter/MissingLetter.qml:322
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Ho sentim, encara no tenim una traducció al vostre idioma."
 
-#: activities/missing-letter/MissingLetter.qml:324
+#: activities/missing-letter/MissingLetter.qml:323
 #, qt-format
 msgctxt "MissingLetter|"
 msgid ""
@@ -20500,7 +20613,7 @@ msgstr ""
 "GCompris és desenvolupat per la comunitat KDE, el podeu traduir unint-vos a "
 "un equip de traducció a <a href=\"%2\">%2</a>"
 
-#: activities/missing-letter/MissingLetter.qml:326
+#: activities/missing-letter/MissingLetter.qml:325
 msgctxt "MissingLetter|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -20896,6 +21009,102 @@ msgstr "Fins a 16 elements en múltiples línies."
 msgctxt "Data|"
 msgid "Up to 24 items, on multiple lines."
 msgstr "Fins a 24 elements en múltiples línies."
+
+#. Activity title
+#: activities/multiple_choice_questions/ActivityInfo.qml:16
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Multiplication."
+msgctxt "ActivityInfo|"
+msgid "Multiple-choice questions"
+msgstr "Multiplicar."
+
+#. Help title
+#: activities/multiple_choice_questions/ActivityInfo.qml:18
+msgctxt "ActivityInfo|"
+msgid "A generic activity for multiple-choice questions."
+msgstr ""
+
+#. Help goal
+#: activities/multiple_choice_questions/ActivityInfo.qml:21
+msgctxt "ActivityInfo|"
+msgid "Answer questions sent by the teacher."
+msgstr ""
+
+#. Help manual
+#: activities/multiple_choice_questions/ActivityInfo.qml:24
+msgctxt "ActivityInfo|"
+msgid ""
+"Click an answer to select it, then press the OK button to validate. Some "
+"questions require a single answer, other questions require multiple answers. "
+"For some questions, after validating the answer, a feedback text panel will "
+"be displayed: click anywhere to close this panel after reading it."
+msgstr ""
+
+#: activities/multiple_choice_questions/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Arrows: navigate through the answers"
+msgctxt "ActivityInfo|"
+msgid "Up and Down arrows: navigate through the answer list"
+msgstr "«Fletxes»: per a navegar a través de les respostes"
+
+#: activities/multiple_choice_questions/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space: select or deselect a circle"
+msgctxt "ActivityInfo|"
+msgid "Space: select or deselect the highlighted answer"
+msgstr "«Espai»: per a seleccionar o desseleccionar un cercle"
+
+#: activities/multiple_choice_questions/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer when the OK button is visible"
+msgctxt "ActivityInfo|"
+msgid "Enter: validate your answer, or close the feedback text panel"
+msgstr "«Retorn»: per a validar la resposta quan el botó «OK» siga visible"
+
+#: activities/multiple_choice_questions/resource/1/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find the next number."
+msgctxt "Data|"
+msgid "Find the correct answer."
+msgstr "Troba el nombre següent."
+
+# Nota: http://encycolorpedia.es/b7410e
+# https://en.wikipedia.org/wiki/Rust_(color)
+#: activities/multiple_choice_questions/resource/1/Data.qml:17
+#, fuzzy
+#| msgctxt "GraduatedLineRead|"
+#| msgid "Find the requested number."
+msgctxt "Data|"
+msgid "What is the first number?"
+msgstr "Troba el nombre requerit."
+
+#: activities/multiple_choice_questions/resource/1/Data.qml:26
+msgctxt "Data|"
+msgid "What is a color?"
+msgstr ""
+
+#: activities/multiple_choice_questions/resource/1/Data.qml:40
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice the addition of numbers."
+msgctxt "Data|"
+msgid "What are the first two numbers?"
+msgstr "Practica la suma de nombres."
+
+#: activities/multiple_choice_questions/resource/1/Data.qml:49
+msgctxt "Data|"
+msgid "What are animals?"
+msgstr ""
+
+#: activities/multiple_choice_questions/resource/1/Data.qml:63
+msgctxt "Data|"
+msgid "Answers always in order, select the first one"
+msgstr ""
 
 # Nota: https://ca.wikipedia.org/wiki/Marro_de_nou
 #. Activity title
@@ -23607,7 +23816,7 @@ msgstr ""
 "paraules, mostrades d'una en una i desapareixeran. Pertany la paraula donada "
 "en la llista?"
 
-#: activities/readingh/Readingh.qml:307
+#: activities/readingh/Readingh.qml:306
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -23617,12 +23826,12 @@ msgstr ""
 "<font color=\"#373737\">Comprova si es mostra<br/></font><font color="
 "\"#373737\">la paraula</font><br/><b><font color=\"#315AAA\">%1</font></b>"
 
-#: activities/readingh/Readingh.qml:367
+#: activities/readingh/Readingh.qml:366
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Sí, l'he vist!"
 
-#: activities/readingh/Readingh.qml:388
+#: activities/readingh/Readingh.qml:387
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "No, no hi era!"
@@ -27869,27 +28078,48 @@ msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
 msgstr "Resol la resta, 4 o 5 dígits, 2 línies."
 
-#: activities/vertical_subtraction/subtraction.js:71
+#: activities/vertical_subtraction/subtraction.js:79
 msgctxt "subtraction|"
 msgid "Write:"
 msgstr "Escriu:"
 
-#: activities/vertical_subtraction/subtraction.js:71
+#: activities/vertical_subtraction/subtraction.js:79
 msgctxt "subtraction|"
 msgid "Solve:"
 msgstr "Resol:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
-#: activities/vertical_subtraction/subtraction.js:169
+#: activities/vertical_subtraction/subtraction.js:190
 #, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
 msgstr "Resol: %1"
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:379
+#: activities/vertical_subtraction/VerticalSubtraction.qml:99
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Write your own addition and solve it."
+msgctxt "VerticalSubtraction|"
+msgid "Write your own addition and solve it."
+msgstr "Escriu la teua pròpia suma i resol-la."
+
+#: activities/vertical_subtraction/VerticalSubtraction.qml:100
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Write your own subtraction and solve it."
+msgctxt "VerticalSubtraction|"
+msgid "Write your own subtraction and solve it."
+msgstr "Escriu la teua pròpia resta i resol-la."
+
+#: activities/vertical_subtraction/VerticalSubtraction.qml:426
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
 msgstr "Preparat"
+
+#: activities/vertical_subtraction/VerticalSubtraction.qml:464
+msgctxt "VerticalSubtraction|"
+msgid "The result should not be a negative number."
+msgstr ""
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
@@ -28757,33 +28987,33 @@ msgctxt "DialogActivityConfig|"
 msgid "Configuration"
 msgstr "Configuració"
 
-#: core/DialogChooseLevel.qml:45
+#: core/DialogChooseLevel.qml:46
 #, qt-format
 msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
 msgstr "Configuració de %1"
 
-#: core/DialogChooseLevel.qml:205
+#: core/DialogChooseLevel.qml:208
 msgctxt "DialogChooseLevel|"
 msgid "Dataset"
 msgstr "Conjunt de dades"
 
-#: core/DialogChooseLevel.qml:218
+#: core/DialogChooseLevel.qml:221
 msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "Opcions"
 
-#: core/DialogChooseLevel.qml:348
+#: core/DialogChooseLevel.qml:353
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "Cancel·la"
 
-#: core/DialogChooseLevel.qml:356
+#: core/DialogChooseLevel.qml:361
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "Guarda"
 
-#: core/DialogChooseLevel.qml:370
+#: core/DialogChooseLevel.qml:378
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "Guarda i comença"
@@ -28897,30 +29127,30 @@ msgctxt "QObject|"
 msgid "Could not open target file %1"
 msgstr "No s'ha pogut obrir el fitxer objectiu %1"
 
-#: core/DownloadManager.cpp:710
+#: core/DownloadManager.cpp:711
 msgctxt "QObject|"
 msgid "Invalid format of Contents file"
 msgstr "Format no vàlid del fitxer de continguts"
 
-#: core/DownloadManager.cpp:732
+#: core/DownloadManager.cpp:733
 #, qt-format
 msgctxt "QObject|"
 msgid "The url %1 does not exist."
 msgstr "L'URL %1 no existix."
 
-#: core/DownloadManager.cpp:745
+#: core/DownloadManager.cpp:746
 #, qt-format
 msgctxt "QObject|"
 msgid "Checksum of downloaded file does not match: %1"
 msgstr "La suma de verificació del fitxer baixat no coincidix: %1"
 
-#: core/DownloadManager.cpp:767
+#: core/DownloadManager.cpp:768
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
 msgstr "No s'han trobat les veus per a %1."
 
-#: core/DownloadManager.cpp:772
+#: core/DownloadManager.cpp:773
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
@@ -29027,47 +29257,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "Idioma de GCompris"
 
-#: core/main.cpp:85
+#: core/main.cpp:88
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "Executa GCompris amb el cursor predeterminat del sistema."
 
-#: core/main.cpp:89
+#: core/main.cpp:92
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "Executa GCompris sense cursor (mode de pantalla tàctil)."
 
-#: core/main.cpp:93
+#: core/main.cpp:96
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "Executa GCompris en el mode de pantalla completa."
 
-#: core/main.cpp:97
+#: core/main.cpp:100
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "Executa GCompris en el mode de finestra."
 
-#: core/main.cpp:101
+#: core/main.cpp:104
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "Executa GCompris amb el so habilitat."
 
-#: core/main.cpp:105
+#: core/main.cpp:108
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "Executa GCompris sense so."
 
-#: core/main.cpp:108
+#: core/main.cpp:111
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Inhabilita el mode quiosc (predeterminat)."
 
-#: core/main.cpp:111
+#: core/main.cpp:114
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Habilita el mode quiosc."
 
-#: core/main.cpp:115
+#: core/main.cpp:118
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
@@ -29077,7 +29307,7 @@ msgstr ""
 "s'executa amb qualsevol targeta gràfica). Obsolet, en el seu lloc fes servir "
 "--renderer=software."
 
-#: core/main.cpp:118
+#: core/main.cpp:121
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -29087,23 +29317,23 @@ msgstr ""
 "pot fallar depenent de la vostra targeta gràfica). Obsolet, en el seu lloc "
 "fes servir --renderer=opengl."
 
-#: core/main.cpp:122
+#: core/main.cpp:125
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 msgstr ""
 "Tria el renderitzador (opengl, software, Direct3D11, Direct3D12, Metal)."
 
-#: core/main.cpp:126
+#: core/main.cpp:129
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "Especifica l'activitat en iniciar GCompris."
 
-#: core/main.cpp:131
+#: core/main.cpp:134
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Mostra totes les activitats disponibles en l'eixida estàndard."
 
-#: core/main.cpp:135
+#: core/main.cpp:138
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -29113,7 +29343,7 @@ msgstr ""
 "la sessió. O bé un valor únic (2), o un interval (3-6). Els valors han "
 "d'estar entre l'1 i el 6."
 
-#: core/main.cpp:139
+#: core/main.cpp:142
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
@@ -29122,17 +29352,17 @@ msgstr ""
 "Especifica en quin nivell iniciar l'activitat. Només s'utilitza quan "
 "s'utilitza l'opció --launch."
 
-#: core/main.cpp:143
+#: core/main.cpp:146
 msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
 msgstr "Especifica la configuració regional en iniciar GCompris."
 
-#: core/main.cpp:147
+#: core/main.cpp:150
 msgctxt "QObject|"
 msgid "Hide the Home button in the bar."
 msgstr "Oculta el botó Inici a la barra."
 
-#: core/main.cpp:151
+#: core/main.cpp:154
 msgctxt "QObject|"
 msgid "Show the Home button in the bar (default)."
 msgstr "Mostra el botó Inici a la barra (predeterminat)."
@@ -29161,12 +29391,12 @@ msgctxt "main|"
 msgid "Background music"
 msgstr "Música de fons"
 
-#: core/main.qml:248
+#: core/main.qml:248 core/main.qml:510
 msgctxt "main|"
 msgid "Yes"
 msgstr "Sí"
 
-#: core/main.qml:255
+#: core/main.qml:255 core/main.qml:516
 msgctxt "main|"
 msgid "No"
 msgstr "No"
@@ -29185,7 +29415,7 @@ msgctxt "main|"
 msgid "Apply"
 msgstr "Aplica"
 
-#: core/main.qml:275
+#: core/main.qml:275 core/main.qml:551 core/main.qml:626
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Cancel·la"
@@ -29225,6 +29455,49 @@ msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris ha sigut actualitzat! Estos són els nous canvis:<br/>"
 
+#: core/main.qml:509
+#, fuzzy, qt-format
+#| msgctxt "DrawingWheels|"
+#| msgid "Do you want to erase this image?"
+msgctxt "main|"
+msgid "Do you want to connect to server %1?"
+msgstr "Vols esborrar esta imatge?"
+
+#: core/main.qml:530
+#, qt-format
+msgctxt "main|"
+msgid "Password rejected by server %1"
+msgstr ""
+
+#: core/main.qml:531 core/main.qml:550 core/main.qml:625
+#, fuzzy
+#| msgctxt "Balancebox|"
+#| msgid "OK"
+msgctxt "main|"
+msgid "OK"
+msgstr "D'acord"
+
+#: core/main.qml:546
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Select your mode"
+msgctxt "main|"
+msgid "Select your username"
+msgstr "Tria el teu mode"
+
+#: core/main.qml:556
+msgctxt "main|"
+msgid "Please select your username in the list or cancel."
+msgstr ""
+
+#: core/main.qml:623
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer"
+msgctxt "main|"
+msgid "Enter your password"
+msgstr "«Retorn»: per a validar la resposta"
+
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"
 msgid "I am Ready"
@@ -29249,3 +29522,11 @@ msgstr "Omet"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Inicia"
+
+#~ msgctxt "Data|"
+#~ msgid "Find the previous number."
+#~ msgstr "Troba el nombre anterior."
+
+#~ msgctxt "Data|"
+#~ msgid "Find the in-between number."
+#~ msgstr "Troba els nombres intermedis."

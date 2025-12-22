@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-15 00:38+0000\n"
+"POT-Creation-Date: 2025-12-22 00:38+0000\n"
 "PO-Revision-Date: 2020-11-14 17:12+0530\n"
 "Last-Translator: G Karunakar <karunakar@indlinux.org>\n"
 "Language-Team: Hindi <kde-l10n-hi@kde.org>\n"
@@ -855,6 +855,12 @@ msgstr ""
 #: activities/mosaic/ActivityInfo.qml:18
 #, kde-format
 msgid "Put each item at the same place as in the given example."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "multiple_choice_questions"
+#: activities/multiple_choice_questions/ActivityInfo.qml:19
+#, kde-format
+msgid "Answer the questions."
 msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"

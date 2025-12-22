@@ -7,7 +7,43 @@ msgstr ""
 "X-Language: en\n"
 "X-Qt-Contexts: true\n"
 
-#: ../activities/clockgame/Clockgame.qml:115
+#. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
+#: ../activities/adjacent_numbers/Adjacent_numbers.qml:56
+#, qt-format
+msgctxt "Adjacent_numbers|"
+msgid "Find the %n previous number(s)."
+msgid_plural "Find the %n previous number(s)."
+msgstr[0] "Find the previous number"
+msgstr[1] "Find the previous numbers"
+
+#. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
+#: ../activities/adjacent_numbers/Adjacent_numbers.qml:60
+#, qt-format
+msgctxt "Adjacent_numbers|"
+msgid "Find the %n next number(s)."
+msgid_plural "Find the %n next number(s)."
+msgstr[0] "Find the next number"
+msgstr[1] "Find the next numbers"
+
+#. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
+#: ../activities/adjacent_numbers/Adjacent_numbers.qml:64
+#, qt-format
+msgctxt "Adjacent_numbers|"
+msgid "Find the %n in-between number(s)"
+msgid_plural "Find the %n in-between number(s)"
+msgstr[0] "Find the in-between number"
+msgstr[1] "Find the in-between numbers"
+
+#. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
+#: ../activities/adjacent_numbers/Adjacent_numbers.qml:68
+#, qt-format
+msgctxt "Adjacent_numbers|"
+msgid "Find the %n missing numbers"
+msgid_plural "Find the %n missing numbers"
+msgstr[0] "Find the missing number"
+msgstr[1] "Find the missing numbers"
+
+#: ../activities/clockgame/Clockgame.qml:127
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -15,7 +51,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n hour"
 msgstr[1] "%n hours"
 
-#: ../activities/clockgame/Clockgame.qml:118
+#: ../activities/clockgame/Clockgame.qml:130
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -23,7 +59,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n minute"
 msgstr[1] "%n minutes"
 
-#: ../activities/clockgame/Clockgame.qml:121
+#: ../activities/clockgame/Clockgame.qml:133
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"

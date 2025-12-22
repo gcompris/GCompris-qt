@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-15 00:38+0000\n"
+"POT-Creation-Date: 2025-12-22 00:38+0000\n"
 "PO-Revision-Date: 2025-02-24 15:45+0300\n"
 "Last-Translator: Mariya Shikunova <translation-team@basealt.ru>\n"
 "Language-Team: Basealt Translation Team\n"
@@ -934,6 +934,12 @@ msgstr "Научись пользоваться международной аз�
 #, kde-format
 msgid "Put each item at the same place as in the given example."
 msgstr "Расположи предметы так же, как в примере."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "multiple_choice_questions"
+#: activities/multiple_choice_questions/ActivityInfo.qml:19
+#, kde-format
+msgid "Answer the questions."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
 #: activities/nine_men_morris/ActivityInfo.qml:18
