@@ -10,7 +10,7 @@
 # This script builds an 'embedded' apk that includes a list of resources.
 # =======================================================================
 
-Qt6_BaseDIR=~/Qt6/6.6.3
+Qt6_BaseDIR=~/Qt6/6.10.1
 export ANDROID_NDK_ROOT=$ANDROID_NDK
 
 if [ "$#" -eq 1 ]; then
@@ -59,8 +59,8 @@ f_cmake()
     fi
 
     cmake -DCMAKE_TOOLCHAIN_FILE=${ANDROID_NDK}/build/cmake/android.toolchain.cmake \
-          -DCMAKE_ANDROID_API=26 \
-          -DANDROID_PLATFORM=26 \
+          -DCMAKE_ANDROID_API=28 \
+          -DANDROID_PLATFORM=28 \
 	  -DCMAKE_BUILD_TYPE=Release \
 	  -DANDROID_ABI=$1 \
 	  -DCMAKE_FIND_ROOT_PATH=${Qt6_BaseDIR}/${QtTarget}/lib/ \

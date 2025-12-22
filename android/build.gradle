@@ -40,7 +40,7 @@ android {
      *******************************************************/
 
     namespace "net.gcompris.full"
-    compileSdkVersion 35
+    compileSdkVersion 36
     ndkVersion androidNdkVersion
 
     // Extract native libraries from the APK
@@ -80,8 +80,8 @@ android {
 
     defaultConfig {
         resConfig "en"
-        minSdkVersion 26
-        targetSdkVersion 35
+        minSdkVersion 28
+        targetSdkVersion 36
         ndk.abiFilters = qtTargetAbiList.split(",")
     }
 }
