@@ -33,7 +33,7 @@ DatasetEditorBase {
     ListModel {
         id: subPrototype
         property bool multiple: true
-        ListElement { name: "fixedNumerator";     label: qsTr("Static numerator ");      type: "boolean";      def: "false" }
+        ListElement { name: "fixedNumerator";     label: qsTr("Static numerator");      type: "boolean";      def: "false" }
         ListElement { name: "fixedDenominator";   label: qsTr("Static denominator");    type: "boolean";      def: "false" }
         ListElement { name: "numerator"; label: qsTr("Numerator"); type: "boundedDecimal"; def: "1"; decimalRange: "[1,24]"; stepSize: 1; decimals: 0 }
         ListElement { name: 'denominator'; label: qsTr("Denominator"); type: "boundedDecimal"; def: "2"; decimalRange: '[2,12]'; stepSize: 1; decimals: 0 }
