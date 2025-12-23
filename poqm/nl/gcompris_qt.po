@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-12-16 18:19+0100\n"
+"PO-Revision-Date: 2025-12-22 11:19+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: nl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 25.08.3\n"
+"X-Generator: Lokalize 25.12.0\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -78,47 +78,39 @@ msgstr "Zoek de gevraagde getallen, sleep ze naar de bijbehorende plek."
 
 #. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the previous numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n previous number(s)."
 msgid_plural "Find the %n previous number(s)."
-msgstr[0] "Zoek de vorige getallen."
-msgstr[1] "Zoek de vorige getallen."
+msgstr[0] "Zoek het %n vorige getal."
+msgstr[1] "Zoek de %n vorige getallen."
 
 #. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:60
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the next numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n next number(s)."
 msgid_plural "Find the %n next number(s)."
-msgstr[0] "Zoek de volgende getallen."
-msgstr[1] "Zoek de volgende getallen."
+msgstr[0] "Zoek het %n volgende getal."
+msgstr[1] "Zoek de %n volgende getallen."
 
 #. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:64
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the in-between numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n in-between number(s)"
 msgid_plural "Find the %n in-between number(s)"
-msgstr[0] "Zoek de getallen er tussen."
-msgstr[1] "Zoek de getallen er tussen."
+msgstr[0] "Zoek het ene getal er tussen."
+msgstr[1] "Zoek de %n getallen er tussen."
 
 #. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:68
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the missing numbers"
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n missing numbers"
 msgid_plural "Find the %n missing numbers"
-msgstr[0] "Zoek de ontbrekende getallen"
-msgstr[1] "Zoek de ontbrekende getallen"
+msgstr[0] "Zoek het ene ontbrekende getal"
+msgstr[1] "Zoek de %n ontbrekende getallen"
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
 msgctxt "Data|"
@@ -2984,42 +2976,42 @@ msgstr "Wat is de binaire representatie van %1?"
 #: activities/binary_bulb/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 3 (with counter and with values visible)."
-msgstr ""
+msgstr "Tel tot 3 (met teller en met zichtbare waarden)."
 
 #: activities/binary_bulb/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 3 (without counter and with values visible)."
-msgstr ""
+msgstr "Tel tot 3 (zonder teller en met zichtbare waarden)."
 
 #: activities/binary_bulb/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (with counter and with values visible)."
-msgstr ""
+msgstr "Tel tot 15 (met teller en met zichtbare waarden)."
 
 #: activities/binary_bulb/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (without counter and with values visible)."
-msgstr ""
+msgstr "Tel tot 15 (zonder teller en met zichtbare waarden)."
 
 #: activities/binary_bulb/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (with counter and with values visible)."
-msgstr ""
+msgstr "Tel tot 255 (met teller en met zichtbare waarden)."
 
 #: activities/binary_bulb/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (without counter and with values visible)."
-msgstr ""
+msgstr "Tel tot 255 (zonder teller en met zichtbare waarden)."
 
 #: activities/binary_bulb/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (without counter and without values visible)."
-msgstr ""
+msgstr "Tel tot 15 (zonder teller en zonder zichtbare waarden)."
 
 #: activities/binary_bulb/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (without counter and without values visible)."
-msgstr ""
+msgstr "Tel tot 255 (zonder teller en zonder zichtbare waarden)."
 
 #: activities/binary_bulb/resource/tutorial4.qml:31
 msgctxt "tutorial4|"
@@ -19901,7 +19893,7 @@ msgstr "Ruimte tussen letters"
 #: activities/menu/ConfigurationItem.qml:445
 msgctxt "ConfigurationItem|"
 msgid "Teacher's server config"
-msgstr ""
+msgstr "Configuratie van server van docent"
 
 #: activities/menu/ConfigurationItem.qml:653
 msgctxt "ConfigurationItem|"
@@ -20000,7 +19992,7 @@ msgstr "Woordenschat"
 #: activities/menu/Menu.qml:211
 msgctxt "Menu|"
 msgid "GCompris is not connected to teacher's server."
-msgstr ""
+msgstr "GCompris is niet verbonden met de server van de docent."
 
 #: activities/menu/Menu.qml:212
 msgctxt "Menu|"
@@ -20008,22 +20000,26 @@ msgid ""
 "GCompris is connected to teacher's server, but the password entered for "
 "selected user is wrong."
 msgstr ""
+"GCompris is verbonden met de server van de docent, maar het ingevoerde "
+"wachtwoord voor de geselecteerde gebruiker is fout."
 
 #: activities/menu/Menu.qml:213
 msgctxt "Menu|"
 msgid ""
 "GCompris is connected to teacher's server, and the user is authenticated."
 msgstr ""
+"GCompris is verbonden met de server van de docent en de gebruiker is "
+"geïdentificeerd."
 
 #: activities/menu/Menu.qml:214
 msgctxt "Menu|"
 msgid "GCompris has lost the connection to teacher's server."
-msgstr ""
+msgstr "GCompris heeft de verbinding met de server van de docent verloren."
 
 #: activities/menu/Menu.qml:215
 msgctxt "Menu|"
 msgid "GCompris has been disconnected from teacher's server."
-msgstr ""
+msgstr "GCompris is been losgekoppeld van de server van de docent."
 
 #: activities/menu/Menu.qml:216
 msgctxt "Menu|"
@@ -20031,6 +20027,8 @@ msgid ""
 "GCompris is connected to teacher's server, but the user is not yet "
 "authenticated."
 msgstr ""
+"GCompris is verbonden met de server van de docent en de gebruiker is nog "
+"niet geïdentificeerd."
 
 #: activities/menu/Menu.qml:677
 msgctxt "Menu|"
@@ -20054,25 +20052,22 @@ msgstr "Instellingen voor activiteiten"
 #: activities/menu/ServerConfigPage.qml:61
 msgctxt "ServerConfigPage|"
 msgid "Teacher's server settings"
-msgstr ""
+msgstr "Serverinstellingen van docent"
 
 #: activities/menu/ServerConfigPage.qml:111
 msgctxt "ServerConfigPage|"
 msgid "Teacher's identifier"
-msgstr ""
+msgstr "Identifier van docent"
 
 #: activities/menu/ServerConfigPage.qml:142
 msgctxt "ServerConfigPage|"
 msgid "Server port"
-msgstr ""
+msgstr "Poort van server"
 
 #: activities/menu/ServerConfigPage.qml:177
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "ServerConfigPage|"
 msgid "Server port must be a number between 0 and 65535."
-msgstr "Raad een getal tussen 1 en %1."
+msgstr "Poort van server moet een getal tussen 0 en 65535 zijn."
 
 #. Activity title
 #: activities/mining/ActivityInfo.qml:15
@@ -20665,24 +20660,21 @@ msgstr "Tot 24 items, op een meerdere lijnen."
 
 #. Activity title
 #: activities/multiple_choice_questions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication."
 msgctxt "ActivityInfo|"
 msgid "Multiple-choice questions"
-msgstr "Vermenigvuldigen."
+msgstr "Meerkeuzevragen"
 
 #. Help title
 #: activities/multiple_choice_questions/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "A generic activity for multiple-choice questions."
-msgstr ""
+msgstr "Een generieke activiteit voor meerkeuzevragen."
 
 #. Help goal
 #: activities/multiple_choice_questions/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Answer questions sent by the teacher."
-msgstr ""
+msgstr "Beantwoord vragen verzonden door de docent."
 
 #. Help manual
 #: activities/multiple_choice_questions/ActivityInfo.qml:24
@@ -20693,69 +20685,60 @@ msgid ""
 "For some questions, after validating the answer, a feedback text panel will "
 "be displayed: click anywhere to close this panel after reading it."
 msgstr ""
+"Klik op een antwoord om het te selecteren en druk vervolgens op de OK-knop "
+"om te bevestigen. Sommige vragen vereisen één antwoord, andere vragen "
+"vereisen meerdere antwoorden. Bij sommige vragen wordt na het bevestigen van "
+"het antwoord een tekstvenster met terugkoppeling weergegeven: klik ergens om "
+"dit venster te sluiten nadat u het hebt gelezen."
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate through the answers"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: navigate through the answer list"
-msgstr "Pijlen: navigeren door de antwoorden"
+msgstr "Pijlen omhoog en omlaag: navigeren door de lijst met antwoorden"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select or deselect a circle"
 msgctxt "ActivityInfo|"
 msgid "Space: select or deselect the highlighted answer"
-msgstr "Spatiebalk: een rondje selecteren of de selectie ongedaan maken"
+msgstr ""
+"Spatiebalk: selecteer of maak de selectie ongedaan van het geaccentueerde "
+"antwoord"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
-msgstr "Enter: kijken of jouw antwoord goed is wanneer de knop OK zichtbaar is"
+msgstr ""
+"Enter: kijken of jouw antwoord goed is of sluit het tekstpaneel voor "
+"terugkoppeling"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find the next number."
 msgctxt "Data|"
 msgid "Find the correct answer."
-msgstr "Zoek het volgorde getal."
+msgstr "Zoek het juiste antwoord."
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:17
-#, fuzzy
-#| msgctxt "GraduatedLineRead|"
-#| msgid "Find the requested number."
 msgctxt "Data|"
 msgid "What is the first number?"
-msgstr "Zoek het gevraagde getal."
+msgstr "Wat is het eerste getal?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:26
 msgctxt "Data|"
 msgid "What is a color?"
-msgstr ""
+msgstr "Wat is een kleur?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:40
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "Data|"
 msgid "What are the first two numbers?"
-msgstr "Oefenen met optellen van getallen."
+msgstr "Wat zijn de eerste twee getallen?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:49
 msgctxt "Data|"
 msgid "What are animals?"
-msgstr ""
+msgstr "Wat zijn dieren?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:63
 msgctxt "Data|"
 msgid "Answers always in order, select the first one"
-msgstr ""
+msgstr "Antwoorden altijd in volgorde, selecteer de eerste"
 
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
@@ -27669,17 +27652,11 @@ msgid "Solve: %1"
 msgstr "Oplossen: %1 "
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:99
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own addition and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own addition and solve it."
 msgstr "Schrijf uw eigen optelling en los het op."
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:100
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own subtraction and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own subtraction and solve it."
 msgstr "Schrijf uw eigen aftrekking en los het op."
@@ -27692,7 +27669,7 @@ msgstr "Klaar"
 #: activities/vertical_subtraction/VerticalSubtraction.qml:464
 msgctxt "VerticalSubtraction|"
 msgid "The result should not be a negative number."
-msgstr ""
+msgstr "Het resultaat zou geen negatief getal moeten zijn."
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
@@ -29011,47 +28988,36 @@ msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris is bijgewerkt! Hier zijn de nieuwe wijzigingen:<br/>"
 
 #: core/main.qml:509
-#, fuzzy, qt-format
-#| msgctxt "main|"
-#| msgid "Do you want to download it now?"
+#, qt-format
 msgctxt "main|"
 msgid "Do you want to connect to server %1?"
-msgstr "Wil je het nu downloaden?"
+msgstr "Wil je verbinden met server %1?"
 
 #: core/main.qml:530
 #, qt-format
 msgctxt "main|"
 msgid "Password rejected by server %1"
-msgstr ""
+msgstr "Wachtwoord geweigerd door server %1"
 
 #: core/main.qml:531 core/main.qml:550 core/main.qml:625
-#, fuzzy
-#| msgctxt "Balancebox|"
-#| msgid "OK"
 msgctxt "main|"
 msgid "OK"
 msgstr "OK"
 
 #: core/main.qml:546
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "main|"
 msgid "Select your username"
-msgstr "Selecteer jouw modus"
+msgstr "Selecteer jouw gebruikersnaam"
 
 #: core/main.qml:556
 msgctxt "main|"
 msgid "Please select your username in the list or cancel."
-msgstr ""
+msgstr "Selecteer in de lijst jouw gebruikersnaam of annuleer."
 
 #: core/main.qml:623
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "main|"
 msgid "Enter your password"
-msgstr "Enter: kijken of het antwoord goed is"
+msgstr "Voer jouw wachtwoord in"
 
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"

@@ -76,47 +76,39 @@ msgstr "იპოვეთ მოთხოვნილი რიცხვებ�
 
 #. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the previous numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n previous number(s)."
 msgid_plural "Find the %n previous number(s)."
-msgstr[0] "იპოვეთ წინა რიცხვები."
-msgstr[1] "იპოვეთ წინა რიცხვები."
+msgstr[0] "იპოვეთ %n წინა რიცხვი."
+msgstr[1] "იპოვეთ %n წინა რიცხვი."
 
 #. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:60
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the next numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n next number(s)."
 msgid_plural "Find the %n next number(s)."
-msgstr[0] "იპოვეთ შემდეგი რიცხვები."
-msgstr[1] "იპოვეთ შემდეგი რიცხვები."
+msgstr[0] "იპოვეთ %n შემდეგი რიცხვი."
+msgstr[1] "იპოვეთ %n შემდეგი რიცხვი."
 
 #. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:64
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the in-between numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n in-between number(s)"
 msgid_plural "Find the %n in-between number(s)"
-msgstr[0] "იპოვეთ შუალედური რიცხვები."
-msgstr[1] "იპოვეთ შუალედური რიცხვები."
+msgstr[0] "იპოვეთ %n რიცხვი შუალედიდან"
+msgstr[1] "იპოვეთ %n რიცხვი შუალედიდან"
 
 #. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:68
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the missing numbers"
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n missing numbers"
 msgid_plural "Find the %n missing numbers"
-msgstr[0] "იპოვეთ ნაკლული რიცხვები"
-msgstr[1] "იპოვეთ ნაკლული რიცხვები"
+msgstr[0] "იპოვეთ %n ნაკლული რიცხვი"
+msgstr[1] "იპოვეთ %n ნაკლული რიცხვი"
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
 msgctxt "Data|"
@@ -2888,42 +2880,42 @@ msgstr "რა არის %1-ის ორობითი წარმოდ�
 #: activities/binary_bulb/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 3 (with counter and with values visible)."
-msgstr ""
+msgstr "დათვალეთ სამამდე (ხილული მთვლელით და მნიშვნელობებით)."
 
 #: activities/binary_bulb/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 3 (without counter and with values visible)."
-msgstr ""
+msgstr "დათვალეთ სამამდე (უხილავი მთვლელით და ხილული მნიშვნელობებით)."
 
 #: activities/binary_bulb/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (with counter and with values visible)."
-msgstr ""
+msgstr "დათვალეთ თხუთმეტამდე (ხილული მთვლელით და მნიშვნელობებით)."
 
 #: activities/binary_bulb/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (without counter and with values visible)."
-msgstr ""
+msgstr "დათვალეთ თხუთმეტამდე (უხილავი მთვლელით და ხილული მნიშვნელობებით)."
 
 #: activities/binary_bulb/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (with counter and with values visible)."
-msgstr ""
+msgstr "დათვალეთ 255-მდე (ხილული მთვლელით და მნიშვნელობებით)."
 
 #: activities/binary_bulb/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (without counter and with values visible)."
-msgstr ""
+msgstr "დათვალეთ 255-მდე (უხილავი მთვლელით და ხილული მნიშვნელობებით)."
 
 #: activities/binary_bulb/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (without counter and without values visible)."
-msgstr ""
+msgstr "დათვალეთ თხუთმეტამდე (უხილავი მთვლელით და მნიშვნელობებით)."
 
 #: activities/binary_bulb/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (without counter and without values visible)."
-msgstr ""
+msgstr "დათვალეთ 255-მდე (უხილავი მთვლელით და მნიშვნელობებით)."
 
 #: activities/binary_bulb/resource/tutorial4.qml:31
 msgctxt "tutorial4|"
@@ -18671,7 +18663,7 @@ msgstr "დაშორება ფონტის სიმბლოებს 
 #: activities/menu/ConfigurationItem.qml:445
 msgctxt "ConfigurationItem|"
 msgid "Teacher's server config"
-msgstr ""
+msgstr "მასწავლებლის სერვერის მორგება"
 
 #: activities/menu/ConfigurationItem.qml:653
 msgctxt "ConfigurationItem|"
@@ -18768,7 +18760,7 @@ msgstr "ლექსიკონი"
 #: activities/menu/Menu.qml:211
 msgctxt "Menu|"
 msgid "GCompris is not connected to teacher's server."
-msgstr ""
+msgstr "GCompris არაა დაკავშირებული მასწავლებლის სერვერთან."
 
 #: activities/menu/Menu.qml:212
 msgctxt "Menu|"
@@ -18776,22 +18768,25 @@ msgid ""
 "GCompris is connected to teacher's server, but the password entered for "
 "selected user is wrong."
 msgstr ""
+"GCompris დაკავშირებულია მასწავლებლის სერვერთან, მაგრამ არჩეული სერვერისთვის "
+"შეყვანილი პაროლი არასწორია."
 
 #: activities/menu/Menu.qml:213
 msgctxt "Menu|"
 msgid ""
 "GCompris is connected to teacher's server, and the user is authenticated."
 msgstr ""
+"GCompris დაკავშირებულია მასწავლებლის სერვერთან და მომხმარებელი ავტორიზებულია."
 
 #: activities/menu/Menu.qml:214
 msgctxt "Menu|"
 msgid "GCompris has lost the connection to teacher's server."
-msgstr ""
+msgstr "GCompris-მა დაკარგა კავშირი მასწავლებლის სერვერთან."
 
 #: activities/menu/Menu.qml:215
 msgctxt "Menu|"
 msgid "GCompris has been disconnected from teacher's server."
-msgstr ""
+msgstr "GCompris გათიშულია მასწავლებლის სერვერიდან."
 
 #: activities/menu/Menu.qml:216
 msgctxt "Menu|"
@@ -18799,6 +18794,8 @@ msgid ""
 "GCompris is connected to teacher's server, but the user is not yet "
 "authenticated."
 msgstr ""
+"GCompris დაკავშირებულია მასწავლებლის სერვერთან, მაგრამ მომხმარებელს "
+"ავთენტიკაცია ჯერ არ გაუვლია."
 
 #: activities/menu/Menu.qml:677
 msgctxt "Menu|"
@@ -18822,25 +18819,22 @@ msgstr "აქტივობის მორგება"
 #: activities/menu/ServerConfigPage.qml:61
 msgctxt "ServerConfigPage|"
 msgid "Teacher's server settings"
-msgstr ""
+msgstr "მასწავლებლის სერვერის მორგება"
 
 #: activities/menu/ServerConfigPage.qml:111
 msgctxt "ServerConfigPage|"
 msgid "Teacher's identifier"
-msgstr ""
+msgstr "მასწავლებლის იდენტიფიკატორი"
 
 #: activities/menu/ServerConfigPage.qml:142
 msgctxt "ServerConfigPage|"
 msgid "Server port"
-msgstr ""
+msgstr "სერვერის პორტი"
 
 #: activities/menu/ServerConfigPage.qml:177
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "ServerConfigPage|"
 msgid "Server port must be a number between 0 and 65535."
-msgstr "გამოიცანით რიცხვი შუალედიდან 1-%1."
+msgstr "სერვერის პორტი უნდა იყოს რიცხვი შუალედიდან 0-65535."
 
 #. Activity title
 #: activities/mining/ActivityInfo.qml:15
@@ -19374,24 +19368,21 @@ msgstr "24 ელემენტამდე ერთზე მეტ ხაზ
 
 #. Activity title
 #: activities/multiple_choice_questions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication."
 msgctxt "ActivityInfo|"
 msgid "Multiple-choice questions"
-msgstr "გამრავლება."
+msgstr "მრავალპასუხიანი კითხვები"
 
 #. Help title
 #: activities/multiple_choice_questions/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "A generic activity for multiple-choice questions."
-msgstr ""
+msgstr "ზოგადი აქტივობა მრავალარჩევნიანი კითხვებისთვის."
 
 #. Help goal
 #: activities/multiple_choice_questions/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Answer questions sent by the teacher."
-msgstr ""
+msgstr "უპასუხეთ მასწავლებლის მიერ გამოგზავნილ კითხვებს."
 
 #. Help manual
 #: activities/multiple_choice_questions/ActivityInfo.qml:24
@@ -19404,67 +19395,50 @@ msgid ""
 msgstr ""
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate through the answers"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: navigate through the answer list"
-msgstr "ისრები: ნავიგაცია პანელებში"
+msgstr "ისრები ზემოთ და ქვემოთ: ნავიგაცია პასუხების სიაში"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select or deselect a circle"
 msgctxt "ActivityInfo|"
 msgid "Space: select or deselect the highlighted answer"
-msgstr "ჰარე: მონიშნეთ ან მოხსენით მონიშვნა წრეს"
+msgstr "ჰარე: მონიშნეთ ან მოხსენით მონიშვნა გამოკვეთილ პასუხს"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
-msgstr "შეყვანა: გადაამოწმეთ თქვენი პასუხი, როცა ღილაკი 'დიახ' ხილულია"
+msgstr ""
+"შეყვანა: გადაამოწმეთ თქვენი პასუხი, ან დახურეთ უკუკავშირის ტექსტის პანელი"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find the next number."
 msgctxt "Data|"
 msgid "Find the correct answer."
-msgstr "იპოვეთ შემდეგი რიცხვი."
+msgstr "იპოვეთ სწორი პასუხი."
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:17
-#, fuzzy
-#| msgctxt "GraduatedLineRead|"
-#| msgid "Find the requested number."
 msgctxt "Data|"
 msgid "What is the first number?"
-msgstr "იპოვეთ მოთხოვნილი რიცხვი."
+msgstr "რომელია პირველი რიცხვი?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:26
 msgctxt "Data|"
 msgid "What is a color?"
-msgstr ""
+msgstr "რა არის ფერი?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:40
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "Data|"
 msgid "What are the first two numbers?"
-msgstr "ივარჯიშეთ რიცხვების მიმატებაში."
+msgstr "რომელია პირველი ორი რიცხვი?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:49
 msgctxt "Data|"
 msgid "What are animals?"
-msgstr ""
+msgstr "რა არიან ცხოველები?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:63
 msgctxt "Data|"
 msgid "Answers always in order, select the first one"
-msgstr ""
+msgstr "უპასუხეთ ყოველთვის რიგში. აირჩიეთ პირველი"
 
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
@@ -25797,17 +25771,11 @@ msgid "Solve: %1"
 msgstr "ამოხსნა: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:99
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own addition and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own addition and solve it."
 msgstr "დაწერეთ თქვენი საკუთარი მიმატება და ამოხსენით ის."
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:100
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own subtraction and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own subtraction and solve it."
 msgstr "დაწერთ თქვენი გამოკლება და ამოხსენით ის."
@@ -25820,7 +25788,7 @@ msgstr "მზადაა"
 #: activities/vertical_subtraction/VerticalSubtraction.qml:464
 msgctxt "VerticalSubtraction|"
 msgid "The result should not be a negative number."
-msgstr ""
+msgstr "შედეგი უარყოფითი რიცხვი არ უნდა იყოს."
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
@@ -26210,6 +26178,8 @@ msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
 "activity"
 msgstr ""
+"დამატებითი დონე ძაბვის წყაროს მარყუჟის სასწავლებლად ანალოგურ ელექტროობის "
+"აქტივობაში"
 
 #: core/ChangeLog.qml:143
 msgctxt "ChangeLog|"
@@ -27026,47 +26996,36 @@ msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris განახლდა! აი, რა ცვლილებებია მასში.<br/>"
 
 #: core/main.qml:509
-#, fuzzy, qt-format
-#| msgctxt "DrawingWheels|"
-#| msgid "Do you want to erase this image?"
+#, qt-format
 msgctxt "main|"
 msgid "Do you want to connect to server %1?"
-msgstr "გნებავთ ამ გამოსახულების წაშლა?"
+msgstr "გნებავთ მიუერთდეთ სერვერს %1?"
 
 #: core/main.qml:530
 #, qt-format
 msgctxt "main|"
 msgid "Password rejected by server %1"
-msgstr ""
+msgstr "პაროლი უარყოფილია სერვერის %1 მიერ"
 
 #: core/main.qml:531 core/main.qml:550 core/main.qml:625
-#, fuzzy
-#| msgctxt "Balancebox|"
-#| msgid "OK"
 msgctxt "main|"
 msgid "OK"
 msgstr "დიახ"
 
 #: core/main.qml:546
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "main|"
 msgid "Select your username"
-msgstr "აირჩიეთ თქვენი რეჟიმი"
+msgstr "აირჩიეთ თქვენი მომმხარებლის სახელი"
 
 #: core/main.qml:556
 msgctxt "main|"
 msgid "Please select your username in the list or cancel."
-msgstr ""
+msgstr "აირჩიეთ თქვენი მომხმარებლის სახელი სიიდან, ან გააუქმეთ."
 
 #: core/main.qml:623
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "main|"
 msgid "Enter your password"
-msgstr "შეყვანა: გადაამოწმეთ თქვენი პასუხი"
+msgstr "შეიყვანეთ თქვენი პაროლი"
 
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"

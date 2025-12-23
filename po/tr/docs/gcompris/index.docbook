@@ -1,0 +1,689 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       Git -->
+  <!ENTITY gcompris "<application
+>GCompris</application
+>">
+  <!ENTITY kappname "&gcompris;"
+><!-- replace kmyapplication here
+                                            do *not* replace kappname-->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Turkish "INCLUDE"
+> <!-- ONLY If you are writing non-English
+                                     original documentation, change
+                                     the language here -->
+
+  <!-- Do not define any other entities; instead, use the entities
+       from entities/general.entities and en/user.entities. -->
+]>
+<book id="gcompris" lang="&language;">
+
+<bookinfo>
+<title
+>&gcompris; Yönetimi El Kitabı</title>
+
+<authorgroup>
+<author>
+<personname
+><firstname
+>Johnny</firstname
+> <surname
+>Jazeix</surname
+> </personname>
+</author>
+<author>
+<personname
+><firstname
+>Timothée</firstname
+> <surname
+>Giet</surname
+> </personname>
+</author>
+
+<othercredit role="developer">
+<othername
+>&gcompris; Takımı</othername>
+<contrib
+>Geliştiriciler</contrib>
+</othercredit
+> 
+
+<othercredit role="translator"
+><firstname
+>Emir</firstname
+><surname
+>SARI</surname
+><affiliation
+><address
+><email
+>emir_sari@icloud.com</email
+></address
+></affiliation
+><contrib
+>Çeviri</contrib
+></othercredit
+> 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Date of the documentation
+Don't forget to include this last date.
+Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
+-->
+<date
+>2026-02-04</date>
+
+<!--version information of the application and kde this documentation is valid for.
+for example 'xx.yy.zz'
+-->
+<releaseinfo
+>26.0</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>&gcompris;, birden çok etkinlik içeren bir eğitim yazılımıdır. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>eğitim</keyword>
+<keyword
+>çocuklar</keyword>
+<keyword
+>oyunlar</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="administration-handbook">
+<title
+>Yönetim El Kitabı</title>
+
+<sect1 id="introduction">
+<title
+>Giriş</title>
+<para
+>&gcompris;, çok çeşitli etkinlikler içeren, zengin bir eğitim yazılım paketidir.</para>
+<para
+>Çeşitli alanları kapsamayı amaçlayan çeşitli etkinlikler sunar. Konular arasında okuma ve yazma, aritmetik, coğrafya, fen bilimleri ve diğer konular yer almaktadır. Hem evde hem de okulda kullanılmak üzere hazırlanmıştır.</para>
+<para
+>&gcompris;’in amacı eğlenceli; ancak her zaman eğitici etkinlikler sunmaktır.</para>
+<para
+>&gcompris;, &kde; projesinin bir parçasıdır ve <ulink url="https://www.gnu.org/licenses/agpl-3.0.html"
+>AGPLv3 lisansı</ulink
+> altında yayımlanır. Analog elektrik etkinliği dışındaki tüm kod <ulink url="https://www.gnu.org/licenses/gpl.html"
+>GPLv3 lisansı</ulink
+> altındadır.</para>
+<para
+>&gcompris;, aşağıdaki işletim sistemlerinde kullanılabilirdir: &GNU;/&Linux;, &BSD;, &macOS;, &Windows;, Android. <emphasis
+>OpenGL 2.1</emphasis
+> veya daha yukarısı için destek içeren bir 3B kart gerektirir. 32 bitlik renk derinliği zorunludur.</para>
+</sect1>
+
+<sect1 id="installation">
+<title
+>Kurulum</title>
+<para
+>Yazılım, birkaç biçimde sunulur. Sizin durumunuza uygun olanı aşağıdan seçin.</para>
+<itemizedlist>
+<listitem
+><para
+>&GNU;/&Linux;: &GNU;/&Linux; dağıtımınız tarafından sağlanan paketleri kullanın. &gcompris; kullandığınız &Linux; dağıtımında yoksa lütfen &gcompris;’in içerilmesi için onlarla iletişime geçin.</para
+></listitem>
+<listitem
+><para
+>&Windows;: Klasik bir &Windows; kurulum programı veya Microsoft Store üzerinden sağlanır.</para
+></listitem>
+<listitem
+><para
+>&macOS;: Klasik bir disk kalıbı ile sağlanır.</para
+></listitem>
+<listitem
+><para
+>Android: F-Droid veya Google Play mağazası üzerinden sağlanır. APK dosyası da bulunur.</para
+></listitem>
+</itemizedlist>
+</sect1>
+
+<sect1 id="user-interface">
+<title
+>Kullanıcı Arayüzü</title>
+<para
+>Arayüz, küçük çocuklar tarafından kolay kullanım için tasarlanmıştır. &gcompris; bir fare ile denetlenir. Etkinliklerin çoğunda klavye ile dolaşım da bulunur.</para>
+
+<sect2 id="main-window">
+<title
+>Ana pencere</title>
+<para
+>Programı başlattığınızda &gcompris;, etkinliklerin listesini sunan bir grafik arayüz ve altta bir denetim çubuğu gösterir.</para>
+<screenshot>
+<screeninfo
+>Burada &gcompris;’in ana penceresinin bir ekran görüntüsünü görebilirsiniz.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="gcompris-main-menu.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>&gcompris; Ana Penceresi</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+
+<para
+>Her simge bir etkinliği temsil eder. Her birinin etrafında, etkinlik hakkında ek bilgi veren küçük simgeler bulabilirsiniz. Simgeye basit bir tıklama sizi bir etkinliğe veya etkinlikler menüsüne götürecektir. Üstte veya solda (yalnızca yönünüz dikey ise) yer alan 8 etkinlik bölümü (kategorisi) vardır. Örneğin, Satranç, Üç Taş veya Dördünü Hizala gibi masa oyunlarını içeren “Masa Oyunları” bölümü vardır.</para>
+<para
+>Bazı kategorilerde etkinlikleri daha iyi süzmek için alt kategoriler bulunur. Matematik etkinlikleri için üç alt kategorimiz bulunmaktadır: Sayılar, aritmetik ve ölçüler.</para>
+<para
+>Yıldızlar, her oyunun hangi yaş grubu için tasarlandığını göstermektedir:</para
+> 
+<itemizedlist>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="difficulty1.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
+></inlinemediaobject
+>1, 2 veya 3 sarı yıldız — 2–6 yaş arası için.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="difficulty4.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
+></inlinemediaobject
+>1, 2 veya 3 kırmızı yıldız — 6 yaş üzeri için.</para
+></listitem
+> 
+</itemizedlist>
+
+<para
+>Ekranın alt kısmında &gcompris; için bir denetim çubuğu bulunur. Olası simgeler şunlardır (simgeler yalnızca etkinlikte varsa görüntülenir):</para>
+<itemizedlist>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_home.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Ana Sayfa — Geçerli etkinliği terk eder, önceki menüye döner.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_ok.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> “OK” — Doğrulayın, yanıtınızı onaylayın. Bazı etkinlikler çocuğun görevi tamamlayıp tamamlamadığını kendiliğinden algılamaz. Bu durumda, bu simgeye tıklamanız gerekir. Klavyenizdeki &Enter; düğmesini de kullanabilirsiniz.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_hint.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Işık — Etkinlik için bir ipucu gösterin. Bazı etkinliklerde çocuklara yanıtları bulmaları için yardımcı olabiliriz.</para
+></listitem>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_previous.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject>
+<inlinemediaobject
+><imageobject
+><imagedata fileref="bar_next.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Oklar — Geçerli düzey görüntülenir. Başka bir düzey seçmek için oklardan birine tıklayın. Genel olarak etkinlikler, sayıları etkinliğe bağlı olan çeşitli düzeyler sunar. &gcompris;’te, geçerli düzeyi tamamlamadan bir sonraki düzeye geçmek olanaklıdır.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_repeat.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Dudaklar — &gcompris;’e soruyu yinelemesini söyleyin.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_help.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Soru işareti — Yardım iletişim kutusunu görüntüleyin. Bazen, bir etkinlik, açıklama bölümünde açıklamak için pek karmaşık olabilir. Bu durumda, bu işlev ek bilgiye erişim sağlar.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Araç kutusu — Yapılandırma menüsü. Yapılandırma, <filename
+>.config/gcompris/gcompris-qt.conf</filename
+> adıyla kullanıcının kişisel klasörüne kaydedilir. Bu, elle düzenlenebilir bir metin dosyasıdır.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_activity_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Liste ögesi — Etkinlik ayarları menüsünü görüntüleyin. Burada iki olası sekme vardır. Birincisi, “Veri Kümesi”, çeşitli hedeflere bağlı olarak etkinliklerin düzeylerini seçmeye izin verir ve ikincisi, “Seçenekler”, varsa etkinliğin yapılandırmasını güncellemeye izin verir.</para
+></listitem>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_about.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Büyük “G” harfi — &gcompris; yazılımının bilgi kutusu; ana katkıcıları ve yazılımın sürümünü görüntüler.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_exit.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Güç — &gcompris; uygulamasından çıkar. Ayrıca klavyenizdeki <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> kısayolunu da kullanabilirsiniz.</para
+></listitem
+> 
+</itemizedlist>
+</sect2>
+
+<sect2 id="kiosk-mode">
+<title
+>Otomat Kipi</title>
+<para
+>&gcompris;’i çok küçük çocuklarla veya bir otomat üzerinde kullanıyorsanız bazı seçenekleri devre dışı bırakabilirsiniz:</para>
+<itemizedlist>
+<listitem
+><para
+><userinput
+><command
+>gcompris --enable-kioskmode</command
+></userinput
+>: <guiicon
+>Çık</guiicon
+> ve <guiicon
+>Yapılandırma</guiicon
+> düğmelerini devre dışı bırakır.</para
+></listitem
+> 
+<listitem
+><para
+><userinput
+><command
+>gcompris --disable-kioskmode</command
+></userinput
+>: <guiicon
+>Çık</guiicon
+> ve <guiicon
+>Yapılandırma</guiicon
+> düğmelerini etkinleştirir.</para
+></listitem>
+<listitem
+><para
+><userinput
+><command
+>gcompris -f</command
+></userinput
+>: &gcompris;’i tam ekran kipinde çalıştırır.</para
+></listitem
+> 
+<listitem
+><para
+><userinput
+><command
+>gcompris -C</command
+></userinput
+>: İmleci devre dışı bırakır (dokunmatik ekran kipi).</para
+></listitem
+> 
+</itemizedlist>
+<para
+>Bu seçenekler elbette birlikte kullanılabilir.</para>
+</sect2>
+
+<sect2 id="keyboard-shortcuts">
+<title
+>Klavye Kısayolları</title>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>Kısayol</entry>
+<entry
+>Eylem</entry>
+</row>
+<row>
+<entry
+>&Esc; veya <keycombo action="simul"
+>&Ctrl;<keycap
+>W</keycap
+></keycombo
+></entry>
+<entry
+>Geçerli etkinlikten/iletişim kutusundan çıkın ve ana menüye dönün.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></entry>
+<entry
+>Herhangi bir bildirim olmaksızın &gcompris;’ten çıkın.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>F</keycap
+></keycombo
+></entry>
+<entry
+>Tam ekran kipini açın/kapatın.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>M</keycap
+></keycombo
+></entry>
+<entry
+>Sesi açın/kapatın.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>B</keycap
+></keycombo
+></entry>
+<entry
+>Denetim çubuğunu görüntüleyin veya gizleyin.</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</sect2>
+
+</sect1>
+
+<sect1 id="internationalization">
+<title
+>Uluslararasılaştırma hakkında</title>
+<para
+>&gcompris; uluslararasılaştırılmıştır ve 35’ten fazla dilde kullanılabilir. Dilinizin var olup olmadığını denetleek istiyorsanız &gcompris;’i başlatabilir ve yapılandırma seçeneğinden bakabilirsiniz.</para>
+<para
+>Dikkatli olun; bazı diller düzgünce görüntülenebilmek için belirli yazıtiplerine gereksinim duyarlar.</para
+> 
+<para
+>Diliniz desteklenmiyorsa yazılıma katkıda bulunabilir ve dilinizin çevirisini ekleyebilirsiniz. İlgileniyorsanız diliniz için olan &kde; <ulink url="https://l10n.kde.org/teams"
+>çeviri takımına</ulink
+> ulaşın. Dilinizin çeviri yüzdesini <ulink url="https://l10n.kde.org/"
+>&kde; çevirileri web sitesinden</ulink
+> takip edebilirsiniz.</para>
+</sect1>
+
+<sect1 id="learning-language">
+<title
+>Dil öğrenimi</title>
+<para
+>&gcompris;’i öğrenmekte olduğunuz bir yabancı dilde kullanabilirsiniz. Yapılandırma menüsünden başka bir dil seçin. Bu dil için olan isteğe bağlı ses modüllerini de indirmeyi unutmayın.</para>
+</sect1>
+
+<sect1 id="customizing-activities">
+<title
+>Etkinlikleri özelleştirmek</title>
+<para
+>İçlerindeki yapılandırma düğmesini kullanarak bazı etkinlikleri özelleştirebilirsiniz. Örneğin, bazı metin etkinliklerinde (sözcük oyunu gibi) yerel ayarlar yapabilir veya dolu dikdörtgenler (trafik) yerine gerçek araba görsellerini göstermesini sağlayabilirsiniz.</para>
+
+<para
+>Birden çok etkinlik için yapılandırmada birkaç veri kümesi seçilebilir. Her birinin açıklanan belirli bir hedefi vardır.</para>
+<screenshot>
+<screeninfo
+>“Ögeleri say” etkinliğinin veri kümesi</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="dataset.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>“Ögeleri say” etkinliğinin veri kümesi</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+
+<para
+>Bu etkinlik için olan seçenekleri yapılandırabilirsiniz.</para>
+<screenshot>
+<screeninfo
+>“Ögeleri say” etkinliğinin seçim kipi</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="activity-config.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>“Ögeleri say” etkinliğinin seçim kipi</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</sect1>
+
+<sect1 id="console-switches">
+<title
+>Konsol parametreleri</title>
+<para
+>&gcompris;’i bir komut satırından “--help” seçeneğiyle çalıştırmak, kabul ettiği tüm parametreleri görüntüler.</para>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>-f, --fullscreen</entry>
+<entry
+>&gcompris;’i tam ekran kipinde çalıştırın.</entry>
+</row>
+<row>
+<entry
+>-w, --window</entry>
+<entry
+>&gcompris;’i pencere kipinde çalıştırın.</entry>
+</row>
+<row>
+<entry
+>-s, --sound</entry>
+<entry
+>&gcompris;’i ses etkin olarak çalıştırın.</entry>
+</row>
+<row>
+<entry
+>-m, --mute</entry>
+<entry
+>&gcompris;’i ses olmadan çalıştırın.</entry>
+</row>
+<row>
+<entry
+>-c, --cursor</entry>
+<entry
+>&gcompris;’i öntanımlı sistem imleciyle çalıştırın.</entry>
+</row>
+<row>
+<entry
+>-C, --nocursor</entry>
+<entry
+>&gcompris;’i imleç olmadan çalıştırın (dokunmatik ekran kipi).</entry>
+</row>
+<row>
+<entry
+>-v, --version</entry>
+<entry
+>&gcompris;’in sürümünü yazdırın.</entry>
+</row>
+<row>
+<entry
+>-l, --list-activities</entry>
+<entry
+>Tüm kullanılabilir etkinliklerin bir listesini standart çıktıya verir.</entry>
+</row>
+<row>
+<entry
+>--launch activity</entry>
+<entry
+>&gcompris;’i başlatırken açılacak etkinliği belirtin.</entry>
+</row>
+<row>
+<entry
+>--start-level düzey</entry>
+<entry
+>&gcompris; başlatılırken “--launch” seçeneğiyle belirtilen etkinliğin hangi düzeyinin açılacağını belirtin. “--launch” seçeneği yoksa veya verilen seçenek geçersizse yok sayılır.</entry>
+</row>
+<row>
+<entry
+>--difficulty {değer|en az-en çok}</entry>
+<entry
+>Bu oturum için &gcompris; etkinliklerinin zorluğunu ya bu değerde ya da bu iki değer arasında olmasını zorlayın. Değerleri 1–6 arasında olmalıdır ve eğer en az/en çok biçiminde verilmişse en az değer en çok değerden büyük olmamalıdır. Böyle değilse &gcompris; başlamaz.</entry>
+</row>
+<row>
+<entry
+>--export-activities-as-sql</entry>
+<entry
+>Etkinlikleri SQL olarak dışa aktarın.</entry>
+</row>
+<row>
+<entry
+>--enable-kioskmode</entry>
+<entry
+>Otomat kipini etkinleştirin (Çık ve Yapılandırma düğmelerini gizler).</entry>
+</row>
+<row>
+<entry
+>--disable-kioskmode</entry>
+<entry
+>Otomat kipini devre dışı bırakın (öntanımlı).</entry>
+</row>
+<row>
+<entry
+>--show-home-button</entry>
+<entry
+>Çubukta ana sayfa düğmesini gösterin (öntanımlı).</entry>
+</row>
+<row>
+<entry
+>--hide-home-button</entry>
+<entry
+>Çubuktaki ana sayfa düğmesini gizleyin.</entry>
+</row>
+<row>
+<entry
+>--renderer={sunucu}</entry>
+<entry
+>Hangi grafiksel sunucunun kullanılacağını belirtin. “opengl” ve yazılım sunucusu tüm platformlarda vardır. Windows üzerinde “direct3d11” veya “direct3d12” kullanabilirsiniz (Qt ≥ 6.6 ile derlenmişse). &macOS; üzerinde “metal” kullanılabilir.</entry>
+</row>
+<row>
+<entry
+>--software-renderer</entry>
+<entry
+>OpenGL yerine yazılım sunucusunu kullanın (herhangi bir grafik kartıyla çalışır). Bu seçenek kullanımdan kalkmıştır, yerine “--renderer=software” kullanın.</entry>
+</row>
+<row>
+<entry
+>--opengl-renderer</entry>
+<entry
+>Yazılım yerine OpenGL sunucusunu kullanın (daha hızlıdır ve daha çok grafiksel efekt sunar; ancak bazı grafik kartlarıyla çökme yaşanabilir). Bu seçenek kullanımdan kalkmıştır, yerine “--renderer=opengl” kullanın.</entry>
+</row>
+<row>
+<entry
+>--locale=locale</entry>
+<entry
+>&gcompris;’i belirtilen yerel ayarla çalıştırın.</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+
+<sect2 id="windows-example">
+<title
+>&Windows; örneği</title>
+<para
+>Bu bayrakları masaüstü simgesi özelliklerine ekleyebilirsiniz. İşte &gcompris;’i otomat kipinde ve tam ekranda, yapılandırma düğmesi ve imleç olmadan çalıştıran bir örnek:</para>
+<para
+><userinput
+><command
+>"C:\Program Files\GCompris-Qt\bin\GCompris.exe" --enable-kioskmode -f -C</command
+></userinput
+></para>
+</sect2>
+
+<sect2 id="gnu-linux-example">
+<title
+>&GNU;/&Linux; örneği</title>
+<para
+>Bir uygulama başlatıcısı oluşturun ve komut satırı parametrelerini yapılandırın. İşte &gcompris;’i otomat kipinde ve tam ekranda, yapılandırma düğmesi ve imleç olmadan çalıştıran bir örnek:</para
+> 
+<para
+><userinput
+><command
+>gcompris-qt --enable-kioskmode -f -C</command
+></userinput
+></para>
+</sect2>
+
+</sect1>
+
+</chapter>
+<chapter id="credits">
+
+<title
+>Emeği Geçenler ve Lisans</title>
+
+<para
+>&gcompris; </para>
+<para
+>© 2000–2025 Timothée Giet ve diğerleri </para>
+
+<para
+>Çeviri: Emir SARI<email
+>emir_sari@icloud.com</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

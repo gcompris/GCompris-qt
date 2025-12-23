@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2025-12-16 09:43+0100\n"
+"PO-Revision-Date: 2025-12-22 11:06+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -90,47 +90,39 @@ msgstr "Troba els nombres sol·licitats i arrossega'ls al punt corresponent."
 
 #. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the previous numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n previous number(s)."
 msgid_plural "Find the %n previous number(s)."
-msgstr[0] "Troba els nombres anteriors."
-msgstr[1] "Troba els nombres anteriors."
+msgstr[0] "Troba el %n nombre anterior."
+msgstr[1] "Troba els %n nombres anteriors."
 
 #. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:60
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the next numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n next number(s)."
 msgid_plural "Find the %n next number(s)."
-msgstr[0] "Troba els nombres següents."
-msgstr[1] "Troba els nombres següents."
+msgstr[0] "Troba el %n nombre següent."
+msgstr[1] "Troba els %n nombres següents."
 
 #. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:64
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the in-between numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n in-between number(s)"
 msgid_plural "Find the %n in-between number(s)"
-msgstr[0] "Troba els nombres intermedis."
-msgstr[1] "Troba els nombres intermedis."
+msgstr[0] "Troba el %n nombre intermedi"
+msgstr[1] "Troba els %n nombres intermedis"
 
 #. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:68
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the missing numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n missing numbers"
 msgid_plural "Find the %n missing numbers"
-msgstr[0] "Troba els nombres que manquen."
-msgstr[1] "Troba els nombres que manquen."
+msgstr[0] "Troba el %n nombre que manca"
+msgstr[1] "Troba els %n nombres que manquen"
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
 msgctxt "Data|"
@@ -3106,42 +3098,42 @@ msgstr "Quina és la representació binària de %1?"
 #: activities/binary_bulb/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 3 (with counter and with values visible)."
-msgstr ""
+msgstr "Compta fins a 3 (amb comptador i amb valors visibles)."
 
 #: activities/binary_bulb/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 3 (without counter and with values visible)."
-msgstr ""
+msgstr "Compta fins a 3 (sense comptador i amb valors visibles)."
 
 #: activities/binary_bulb/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (with counter and with values visible)."
-msgstr ""
+msgstr "Compta fins a 15 (amb comptador i amb valors visibles)."
 
 #: activities/binary_bulb/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (without counter and with values visible)."
-msgstr ""
+msgstr "Compta fins a 15 (sense comptador i amb valors visibles)."
 
 #: activities/binary_bulb/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (with counter and with values visible)."
-msgstr ""
+msgstr "Compta fins a 255 (amb comptador i amb valors visibles)."
 
 #: activities/binary_bulb/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (without counter and with values visible)."
-msgstr ""
+msgstr "Compta fins a 255 (sense comptador i amb valors visibles)."
 
 #: activities/binary_bulb/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (without counter and without values visible)."
-msgstr ""
+msgstr "Compta fins a 15 (sense comptador i amb valors visibles)."
 
 #: activities/binary_bulb/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (without counter and without values visible)."
-msgstr ""
+msgstr "Compta fins a 255 (sense comptador i amb valors visibles)."
 
 #: activities/binary_bulb/resource/tutorial4.qml:31
 msgctxt "tutorial4|"
@@ -20254,7 +20246,7 @@ msgstr "Espai entre les lletres"
 #: activities/menu/ConfigurationItem.qml:445
 msgctxt "ConfigurationItem|"
 msgid "Teacher's server config"
-msgstr ""
+msgstr "Configuració del servidor del professorat"
 
 #: activities/menu/ConfigurationItem.qml:653
 msgctxt "ConfigurationItem|"
@@ -20353,7 +20345,7 @@ msgstr "Vocabulari"
 #: activities/menu/Menu.qml:211
 msgctxt "Menu|"
 msgid "GCompris is not connected to teacher's server."
-msgstr ""
+msgstr "El GCompris no està connectat al servidor del professorat."
 
 #: activities/menu/Menu.qml:212
 msgctxt "Menu|"
@@ -20361,22 +20353,26 @@ msgid ""
 "GCompris is connected to teacher's server, but the password entered for "
 "selected user is wrong."
 msgstr ""
+"El GCompris està connectat al servidor del professorat, però la contrasenya "
+"de l'usuari seleccionat és incorrecta."
 
 #: activities/menu/Menu.qml:213
 msgctxt "Menu|"
 msgid ""
 "GCompris is connected to teacher's server, and the user is authenticated."
 msgstr ""
+"El GCompris està connectat al servidor del professorat, i l'usuari està "
+"autenticat."
 
 #: activities/menu/Menu.qml:214
 msgctxt "Menu|"
 msgid "GCompris has lost the connection to teacher's server."
-msgstr ""
+msgstr "El GCompris ha perdut la connexió amb el servidor del professorat."
 
 #: activities/menu/Menu.qml:215
 msgctxt "Menu|"
 msgid "GCompris has been disconnected from teacher's server."
-msgstr ""
+msgstr "El GCompris s'ha desconnectat del servidor del professorat."
 
 #: activities/menu/Menu.qml:216
 msgctxt "Menu|"
@@ -20384,6 +20380,8 @@ msgid ""
 "GCompris is connected to teacher's server, but the user is not yet "
 "authenticated."
 msgstr ""
+"El GCompris està connectat al servidor del professorat, però l'usuari encara "
+"no està autenticat."
 
 #: activities/menu/Menu.qml:677
 msgctxt "Menu|"
@@ -20407,25 +20405,22 @@ msgstr "Configuració de l'activitat"
 #: activities/menu/ServerConfigPage.qml:61
 msgctxt "ServerConfigPage|"
 msgid "Teacher's server settings"
-msgstr ""
+msgstr "Configuració del servidor del professorat"
 
 #: activities/menu/ServerConfigPage.qml:111
 msgctxt "ServerConfigPage|"
 msgid "Teacher's identifier"
-msgstr ""
+msgstr "Identificador del professor/a"
 
 #: activities/menu/ServerConfigPage.qml:142
 msgctxt "ServerConfigPage|"
 msgid "Server port"
-msgstr ""
+msgstr "Port del servidor"
 
 #: activities/menu/ServerConfigPage.qml:177
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "ServerConfigPage|"
 msgid "Server port must be a number between 0 and 65535."
-msgstr "Endevina un nombre entre l'1 i el %1."
+msgstr "El port del servidor ha de ser un número entre 0 i 65535."
 
 #. Activity title
 #: activities/mining/ActivityInfo.qml:15
@@ -21015,24 +21010,21 @@ msgstr "Fins a 24 elements en múltiples línies."
 
 #. Activity title
 #: activities/multiple_choice_questions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication."
 msgctxt "ActivityInfo|"
 msgid "Multiple-choice questions"
-msgstr "Multiplicar."
+msgstr "Preguntes d'elecció múltiple"
 
 #. Help title
 #: activities/multiple_choice_questions/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "A generic activity for multiple-choice questions."
-msgstr ""
+msgstr "Una activitat genèrica de preguntes d'elecció múltiple."
 
 #. Help goal
 #: activities/multiple_choice_questions/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Answer questions sent by the teacher."
-msgstr ""
+msgstr "Respon les preguntes enviades pel professor/a."
 
 #. Help manual
 #: activities/multiple_choice_questions/ActivityInfo.qml:24
@@ -21043,71 +21035,61 @@ msgid ""
 "For some questions, after validating the answer, a feedback text panel will "
 "be displayed: click anywhere to close this panel after reading it."
 msgstr ""
+"Fes clic a una resposta per a seleccionar-la i, a continuació, prem el botó "
+"D'acord per a validar. Algunes preguntes requereixen una resposta única, "
+"altres preguntes requereixen respostes múltiples. Per a algunes preguntes, "
+"després de validar la resposta, es mostrarà una subfinestra de text de "
+"comentari: fes clic a qualsevol lloc per tancar aquesta subfinestra després "
+"de llegir-la."
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate through the answers"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: navigate through the answer list"
-msgstr "Fletxes: per a navegar a través de les respostes"
+msgstr "Fletxes amunt i avall: navegació a través de la llista de respostes"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select or deselect a circle"
 msgctxt "ActivityInfo|"
 msgid "Space: select or deselect the highlighted answer"
-msgstr "Espai: per a seleccionar o desseleccionar un cercle"
+msgstr "Espai: selecciona o desselecciona la resposta ressaltada"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
-msgstr "Retorn: per a validar la resposta quan el botó «OK» sigui visible"
+msgstr ""
+"Retorn: per a validar la resposta o tancar la subfinestra de text de "
+"comentari"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find the next number."
 msgctxt "Data|"
 msgid "Find the correct answer."
-msgstr "Troba el nombre següent."
+msgstr "Troba la resposta correcta."
 
 # Nota: http://encycolorpedia.es/b7410e
 # https://en.wikipedia.org/wiki/Rust_(color)
 #: activities/multiple_choice_questions/resource/1/Data.qml:17
-#, fuzzy
-#| msgctxt "GraduatedLineRead|"
-#| msgid "Find the requested number."
 msgctxt "Data|"
 msgid "What is the first number?"
-msgstr "Troba el nombre requerit."
+msgstr "Què és el primer número?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:26
 msgctxt "Data|"
 msgid "What is a color?"
-msgstr ""
+msgstr "Què és un color?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:40
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "Data|"
 msgid "What are the first two numbers?"
-msgstr "Practica la suma de nombres."
+msgstr "Què són els dos primers números?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:49
 msgctxt "Data|"
 msgid "What are animals?"
-msgstr ""
+msgstr "Què són els animals?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:63
 msgctxt "Data|"
 msgid "Answers always in order, select the first one"
-msgstr ""
+msgstr "Respostes sempre en ordre, selecciona la primera"
 
 # Nota: https://ca.wikipedia.org/wiki/Marro_de_nou
 #. Activity title
@@ -28096,17 +28078,11 @@ msgid "Solve: %1"
 msgstr "Resol: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:99
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own addition and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own addition and solve it."
 msgstr "Escriu la teva pròpia suma i resol-la."
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:100
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own subtraction and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own subtraction and solve it."
 msgstr "Escriu la teva pròpia resta i resol-la."
@@ -28119,7 +28095,7 @@ msgstr "Preparat"
 #: activities/vertical_subtraction/VerticalSubtraction.qml:464
 msgctxt "VerticalSubtraction|"
 msgid "The result should not be a negative number."
-msgstr ""
+msgstr "El resultat no pot ser un nombre negatiu."
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
@@ -29458,47 +29434,36 @@ msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "El GCompris ha estat actualitzat! Aquests són els nous canvis:<br/>"
 
 #: core/main.qml:509
-#, fuzzy, qt-format
-#| msgctxt "DrawingWheels|"
-#| msgid "Do you want to erase this image?"
+#, qt-format
 msgctxt "main|"
 msgid "Do you want to connect to server %1?"
-msgstr "Vols esborrar aquesta imatge?"
+msgstr "Vols connectar amb el servidor %1?"
 
 #: core/main.qml:530
 #, qt-format
 msgctxt "main|"
 msgid "Password rejected by server %1"
-msgstr ""
+msgstr "Contrasenya rebutjada pel servidor %1"
 
 #: core/main.qml:531 core/main.qml:550 core/main.qml:625
-#, fuzzy
-#| msgctxt "Balancebox|"
-#| msgid "OK"
 msgctxt "main|"
 msgid "OK"
 msgstr "D'acord"
 
 #: core/main.qml:546
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "main|"
 msgid "Select your username"
-msgstr "Tria el teu mode"
+msgstr "Selecciona el teu usuari"
 
 #: core/main.qml:556
 msgctxt "main|"
 msgid "Please select your username in the list or cancel."
-msgstr ""
+msgstr "Selecciona el teu usuari de la llista o cancel·la."
 
 #: core/main.qml:623
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "main|"
 msgid "Enter your password"
-msgstr "Retorn: per a validar la resposta"
+msgstr "Introdueix la contrasenya"
 
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"
