@@ -14,7 +14,7 @@ $EXTRACT_TR_STRINGS `find activities/ core/ \
                           -name \*.js -not -path "activities/template/*"` \
                     -o $podir/gcompris_qt.pot
 
-$EXTRACT_TR_STRINGS `find server/ -name \*.cpp -o -name \*.h -o -name \*.qml -o -name \*.js` -o $podir/gcompris_teachers.pot
+$EXTRACT_TR_STRINGS `find server/ -name \*.cpp -o -name \*.h -o -name \*.qml -o -name \*.js` -o $podir/gcompris_teachers_qt.pot
 
 # create a pot for the voices text to keep them up-to-date with the audio files
 find . -name ActivityInfo.qml -not -path "*template*" -exec awk -f activityintro2msg.awk {} \; > rc.cpp

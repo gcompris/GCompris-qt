@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
     QString locale = config.value("locale", GC_DEFAULT_LOCALE).toString();
     ApplicationInfo::getInstance()->switchLocale(QStringLiteral("gcompris_qt"), locale);
     // Load translations
-    ApplicationInfo::getInstance()->switchLocale(QStringLiteral("gcompris_teachers"), locale);
+    ApplicationInfo::getInstance()->switchLocale(QStringLiteral("gcompris_teachers_qt"), locale);
 
     // Set global font
     qint32 fontId = QFontDatabase::addApplicationFont(":/gcompris/src/server/resource/fa-solid-900.ttf");

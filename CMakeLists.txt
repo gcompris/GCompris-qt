@@ -266,7 +266,7 @@ if(NOT SKIP_TRANSLATIONS)
   include(cmake/translation.cmake)
   gcompris_create_translation_files(FILENAME gcompris_qt)
   if(BUILD_SERVER)
-    gcompris_create_translation_files(FILENAME gcompris_teachers)
+    gcompris_create_translation_files(FILENAME gcompris_teachers_qt)
   endif()
 endif()
 
