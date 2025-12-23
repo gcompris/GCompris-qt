@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2018-11-30 13:03+0000\n"
-"PO-Revision-Date: 2025-12-16 20:34+0100\n"
+"PO-Revision-Date: 2025-07-13 15:25+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.12.0\n"
+"X-Generator: Lokalize 25.04.3\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -2942,9 +2942,9 @@ msgid ""
 "2⁷=128."
 msgstr ""
 "Bit bakoitzak balio progresibo bat gehitzen du, 2ren berretzaileei "
-"dagokiona, eskuinetik ezkerretara goranzkoa: 1. bit → 2⁰=  1 , 2. bit → 2¹=  "
-"2 , 3. bit → 2²=  4 , 4. bit → 2³=  8 , 5. bit → 2⁴= 16 , 6. bit → 2⁵= 32 , "
-"7. bit → 2⁶= 64 , 8. bit → 2⁷=128."
+"dagokiona, eskuinetik ezkerretara gorakorra: 1. bit → 2⁰=1 ,  2. bit → "
+"2¹=2 ,   3. bit → 2²=4 ,   4. bit → 2³=   8 , 5. bit → 2⁴=16 , 6. bit → "
+"2⁵=32 , 7. bit → 2⁶=64 , 8. bit → 2⁷=128."
 
 #: activities/binary_bulb/BinaryBulb.qml:115
 msgctxt "BinaryBulb|"
@@ -5939,9 +5939,12 @@ msgstr "Elektrizitate digitala"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "Zirkuitu logiko digital bat sortzea eta simulatzea."
+msgstr "Zirkuitu logiko digital bat sortzea eta simulatzea"
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -6693,10 +6696,12 @@ msgstr ""
 
 #: activities/drawing_wheels/ActivityConfig.qml:29
 #: activities/sketch/ActivityConfig.qml:29
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "guessnumber|"
+#| msgid "Number found!"
 msgctxt "ActivityConfig|"
 msgid "Number of undo: %1"
-msgstr "Desegite kopurua: %1"
+msgstr "Zenbakia asmatu duzu!"
 
 #: activities/drawing_wheels/ActivityConfig.qml:44
 #: activities/sketch/ActivityConfig.qml:44
@@ -6705,27 +6710,33 @@ msgid ""
 "Warning: setting the number of undo too high can make the application crash "
 "if your device doesn't have enough memory."
 msgstr ""
-"Abisua: desegite kopurua altuegi jartzeak aplikazioa kraskatzea eragin "
-"lezake zure gailuak behar adina memoria ez duenean."
 
 #. Activity title
 #: activities/drawing_wheels/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "BrushToolPanel|"
+#| msgid "Drawing Tools"
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
-msgstr "Marrazteko gurpilak"
+msgstr "Marrazteko tresnak"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Touch the numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Roll the gear in the cogwheel to draw."
-msgstr "Biratu hortz dun gurpileko engranajea marrazteko."
+msgstr "Ukitu zenbakiak ordena zuzenean."
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr ""
-"Ezagutu hipotrokoideak eta erabil itzazu marrazketa digitaleko tresna gisa."
+msgstr "Ikasi marrazteko tresna digital batzuei buruz."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
@@ -6739,15 +6750,6 @@ msgid ""
 "file (vector format), along with a PNG file (pixel format). Only the SVG "
 "file can be opened again from the activity.<br><br>"
 msgstr ""
-"Marrazki ederrak egin hortz dun gurpileko engranajea hautatutako "
-"arkatzarekin biratuz. Hautatu gurpil-neurria, engranaje-neurria, arkatzaren "
-"ezarpenak eta kolorea panel gainerakorretatik, eta sakatu jo botoia "
-"engranajea birarazteko. Fitxategia menua erabil dezakezu zure irudia "
-"gordetzeko, aurrez gordetako irudi bat irekitzeko, edo  hautatutako atzeko "
-"planoko kolorearekin irudi berri bat sortzeko. Irudi bat gordetzean SVG "
-"fitxategi (bektore formatua) batean egingo du, PNG fitxategi (pixel "
-"formatua) batekin batera. Jardueratik SVG fitxategia bakarrik ireki daiteke "
-"berriro."
 
 #: activities/drawing_wheels/ActivityInfo.qml:29
 #: activities/sketch/ActivityInfo.qml:28
@@ -6776,29 +6778,41 @@ msgstr "Ktrl + O: irudi bat irekitzeko"
 #: activities/drawing_wheels/DrawingWheels.qml:378
 msgctxt "DrawingWheels|"
 msgid "File menu"
-msgstr "Fitxategia menua"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:390
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
-msgstr "Gurpila eta engranajea"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:414
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Piano composition"
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
-msgstr "Arkatzaren neurria eta kokapena"
+msgstr "Pianorako konposizioa"
 
 #: activities/drawing_wheels/DrawingWheels.qml:426
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Font selector"
 msgctxt "DrawingWheels|"
 msgid "Color selector"
-msgstr "Kolore hautatzailea"
+msgstr "Letra-tipo hautatzailea"
 
 #: activities/drawing_wheels/DrawingWheels.qml:453
+#, fuzzy
+#| msgctxt "OptionsRow|"
+#| msgid "Undo"
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Desegin"
 
 #: activities/drawing_wheels/DrawingWheels.qml:465
+#, fuzzy
+#| msgctxt "Checkers|"
+#| msgid "Redo"
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "Berregin"
@@ -6806,39 +6820,51 @@ msgstr "Berregin"
 #: activities/drawing_wheels/DrawingWheels.qml:499
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
-msgstr "Utzi marrazteari"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:499
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
-msgstr "Hasi marrazten"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:532
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
-msgstr "Erakutsi gurpila eta engranajea"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:532
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
-msgstr "Ezkutatu gurpila eta engranajea"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:691
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Gorde zure irudia"
 
 #: activities/drawing_wheels/DrawingWheels.qml:706
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Open an image"
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Ireki irudi bat"
 
 #: activities/drawing_wheels/DrawingWheels.qml:735
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Create a new image"
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Sortu irudi berri bat"
 
 #: activities/drawing_wheels/DrawingWheels.qml:754
+#, fuzzy
+#| msgctxt "BackgroundColorSelector|"
+#| msgid "Background color"
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Atzeko planoaren kolorea"
@@ -6846,20 +6872,25 @@ msgstr "Atzeko planoaren kolorea"
 #: activities/drawing_wheels/DrawingWheels.qml:835
 msgctxt "DrawingWheels|"
 msgid "Wheel"
-msgstr "Gurpila"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:902
 msgctxt "DrawingWheels|"
 msgid "Gear"
-msgstr "Engranajea"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:965
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "SignalGenerator|"
+#| msgid "%1 s"
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
-msgstr "%1 hortz"
+msgstr "%1 s"
 
 #: activities/drawing_wheels/DrawingWheels.qml:983
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Speed"
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Abiadura"
@@ -6867,19 +6898,25 @@ msgstr "Abiadura"
 #: activities/drawing_wheels/DrawingWheels.qml:999
 msgctxt "DrawingWheels|"
 msgid "Slow"
-msgstr "Mantso"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:1019
 msgctxt "DrawingWheels|"
 msgid "Fast"
-msgstr "Azkar"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:1062
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Font size"
 msgctxt "DrawingWheels|"
 msgid "Pen size"
-msgstr "Arkatzaren neurria"
+msgstr "Letra-tipoaren neurria"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1099
+#, fuzzy
+#| msgctxt "ToolsPanel|"
+#| msgid "Opacity"
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Opakutasuna"
@@ -6887,29 +6924,44 @@ msgstr "Opakutasuna"
 #: activities/drawing_wheels/DrawingWheels.qml:1142
 msgctxt "DrawingWheels|"
 msgid "Offset"
-msgstr "Desplazamendua"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:1180
+#, fuzzy
+#| msgctxt "IntroMessage|"
+#| msgid "Start"
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
-msgstr "Hasierako hortza"
+msgstr "Hasi"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1360
+#, fuzzy
+#| msgctxt "Sketch|"
+#| msgid "You did not save this image. Do you want to close this activity?"
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Ez duzu irudi hau gorde. Jarduera hau itxi nahi duzu?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1361
+#, fuzzy
+#| msgctxt "Sketch|"
+#| msgid "Do you want to erase this image?"
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Irudi hau ezabatu nahi duzu?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1362
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "Yes"
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Bai"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1363
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "No"
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "Ez"
@@ -7514,6 +7566,13 @@ msgid "Chichén Itzá"
 msgstr "Chichén Itzá"
 
 #: activities/explore_monuments/resource/board/board1.qml:20
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid ""
+#| "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
+#| "the Yucatan Peninsula in Mexico, between Valladolid and Merida. It was "
+#| "established before the period of Christopher Colombus and probably served "
+#| "as the religion center of Yucatan for a while."
 msgctxt "board1|"
 msgid ""
 "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
@@ -8615,7 +8674,7 @@ msgstr "Egin klik adierazitako piramidea kokatua dagoen tokian."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr "Hiri Debekatua"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8630,21 +8689,12 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
-"Hiri Debekatua, Txinan, Beijing erdi-erdian kokatua, jauregi inperial multzo "
-"aparta da, 500 urtez Txinako enperadoreen bizileku eta nazioaren erdigune "
-"politiko izan zena, Ming dinastiatik (1368–1644) Qing dinastiaren amaierara "
-"arte (1644–1912). 1406 eta 1420 artean eraikia, hedadura handiko arkitektura-"
-"maisulan honek 73 hektarea hartzen ditu, eta txinatar jauregi-diseinu "
-"tradizionala erakusten duten 8.700 gela dituzten 980 eraikin kontserbatzen "
-"dira. Lubanarro batez eta harresi masibo batez inguratua, garai batean Hiri "
-"Debekaturako sarbidea publiko orokorrarentzat galarazita zegoen, botere eta "
-"esklusibotasun inperialaren ikur."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr "Leshan Buda erraldoia"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8659,22 +8709,15 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
-"Leshan-eko Buda Erraldoia, Txinako Sichuan probintzian kokatua, Min, Dadu "
-"eta Qingyi ibaien elkargunean dagoen amildegi batean zizelkatutako estatua "
-"kolosal bat da. 71 metroko (233 oin) garaierarekin, munduko estatua aurre-"
-"moderno garaiena da, eta UNESCOren Gizateriaren leku-ondare izendatua dago. "
-"Tang dinastiaren (713–803 K.o.) garaian eraikia, estatuak Maitreya, "
-"etorkizuneko Buda irudikatzen du, eta tokiko itsasontzien trafikoa "
-"mehatxatzen zuten ur nahasiak baretzeko sortu zen. Modu burutsuan "
-"diseinatua, estatuak higadura saihesteko ezkutuko drainatze sistema bat du. "
-"Bere adierazpen lasaiak eta artisautza korapilotsuak, lorpen espiritual eta "
-"artistikoaren ikur bihurtzen dute."
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Potala jauregia"
+msgstr "Mysore Jauregia"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8689,22 +8732,12 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
-"Potala jauregia, Tibeten, Lhasako Muino Gorriaren gainean kokatua, Tibeteko "
-"kulturaren ikur bat da, eta UNESCOren Gizateriaren leku-ondare izendatua "
-"dago. Jatorrian VII. mendean eraikia, eta XVII. mendean zabaldua, Dalai-"
-"Lamen neguko egoitza eta tibetar gobernantzaren erdigune gisa baliatu zen. "
-"13 solairuko garaieran altxatzen da, 1.000 gela baino gehiagorekin, "
-"jauregiak tibetar arkitektura korapilotsua, horma-irudi biziak eta erlikia "
-"sakratuak uztartzen ditu. Administrazio-eremuak hartzen dituen Jauregi "
-"Zurian, eta erlijio-ikasketei eta otoitzari eskainitako Jauregi Gorrian "
-"banatuta dago. Potala jauregia Tibeten ondare espiritual eta historikoaren "
-"lekuko da."
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr "Terrakotazko armada"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8716,19 +8749,12 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
-"Terrakotazko armada, Qin Shi Huang Txinako lehen enperadoreari bizitzaren "
-"ondoren laguntzeko, berarekin batera lurperatu zituzten neurri naturaleko "
-"buztinezko milaka soldadu, zaldi eta gurdien bilduma da. Irudiak 1974an "
-"Xi'an-etik gertu aurkitu zituzten, gutxi gorabehera K. a. 210 urtekoak dira "
-"eta beren xehetasun harrigarriagatik ospea dute, gudari bakoitza modu "
-"berezian landuta dago antzinako txinatar armada baten maila eta eginkizun "
-"askotarikoak irudikatzeko."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr "Eguzko eta Ilargi pagodak"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8743,21 +8769,15 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
-"Eguzki eta Ilargi Pagodak, Guilin-en, Txinan, kokatuak, hiriko ondare "
-"kultural eta espirituala sinbolizatzen duten dorre biki ikonikoak dira. "
-"Jatorriz Tang dinastiaren garaian eraikiak, XX. mendean Shanhu aintzirako "
-"mugarri deigarri gisa berreraiki zituzten. Eguzki Pagodak, 41 metroko "
-"garaierarekin, brontzezko egitura bat da —munduko mota honetako garaiena—, "
-"eta ilargi Pagoda, 35 metrokoa, teila beiraztatuz eraikia dago. Pagoda "
-"horiek yin eta yang-en harmonia irudikatzen dute eta urpeko beirazko tunek "
-"batek lotzen ditu. Gauez argiztatuta, Txinako arkitektura tradizionala eta "
-"asmamen modernoa erakusten dituzte erakargarri ezagunak dira."
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Diaolou dorreak"
+msgstr "Eiffel dorrea"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8772,32 +8792,28 @@ msgid ""
 "UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
 "towers remain, offering insight into this unique architectural heritage."
 msgstr ""
-"Diaolou dorreak, Kaiping-en, Txinako Guangdong probintzian dauden XIX. "
-"mendearen amaieratik XX. mendearen hasiera arte bidelapur eta uholdeetatik "
-"babesteko eraikitako solairu anitzeko egitura gotortuak dira. Mendebaldeko "
-"estilo arkitektonikoa, hala nola erromanikoa eta barrokoa, elementu txinatar "
-"tradizionalekin nahastuz, itsasoz haraindiko txinatar emigratzaileen "
-"aberastasuna eta eragina islatzen dute. Hormigoi armatuz eraikiak, Txina "
-"nekazariaren trantsizio kultural eta ekonomikoaren garai bat sinbolizatzen "
-"dute. 2007an UNESCOren Gizateriaren leku-ondare izendatua, jatorrizko 3.000 "
-"dorreetatik 1.800 inguru geratzen dira, ondare arkitektoniko paregabe honen "
-"ikuspegia eskainiz."
 
 #: activities/explore_monuments/resource/board/board7.qml:85
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Txinako monumentuak"
+msgstr "Indiako monumentuak"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
-msgstr "Egin klik adierazitako monumentuaren kokalekuan."
+msgstr "Egin klik adierazitako monumentua kokatua dagoen tokian."
 
 #: activities/explore_monuments/resource/board/board8.qml:17
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr "Panteoia"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8814,24 +8830,12 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
-"Erromako Panteoia (Italia) antzinako tenplu ikoniko bat da, K.o. 126. urte "
-"inguruan eraiki zen Hadriano enperadorearen agintaldian, lehenago Marko "
-"Agripak eraikiarazitako egituren tokian. Bere arkitektura-bikaintasunagatik "
-"ospetsua, erdian idi-begi bat duen kupula erraldoi bat du, zerua "
-"sinbolizatzen du, argi naturalari barrualdea argitzen uzten diona. Jatorrian "
-"jainko erromatar guztiei eskainia, geroago K.o. 609 urtean eliza kristau "
-"bihurtu zuten, Martirien Santa Maria basilika (Santa Maria ad Martyres) gisa "
-"ezagutzen da. Bere kupulak, munduko hormigoi armaturik gabeko kupularik "
-"handiena, ingeniaritza eta simetria bikainak erakusten ditu, mendeetan zehar "
-"arkitektoen inspirazio-iturri izan da. Panteoiaren proportzio harmonikoek "
-"eta garrantzi historiak arkitektura klasikoaren denboraz gaindiko maisulan "
-"bihurtzen dute."
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr "Milango Duomoa"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8846,22 +8850,15 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
-"Milango Duomoa (Italieraz Duomo di Milano), Milango Katedrala bezala ere "
-"ezaguna, Milango (Italia) bihotzean kokatua dagoen maisulan gotiko ikoniko "
-"bat da. sei mende ingurutan zehar eraikia, munduko katedral handienetako bat "
-"da eta Milango ondare artistiko eta kulturalaren ikurra da. Bere fatxada "
-"korapilotsua ezin konta ahala estatua, orratz, eta gargolez apaindua dago, "
-"arkitektura gotikoaren handitasuna islatuz. Bisitariek bere barnealde "
-"ikusgarriak esploratu ditzakete, beirate ederrak eta marmolezko xehetasun "
-"korapilotsuak dituztenak, edo teilatura igo hiriaren eta Alpeen ikuspegi "
-"liluragarriak ikusteko. Duomoa Italiaren historia eta arkitektura-"
-"bikaintasunaren lekuko da."
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
+#, fuzzy
+#| msgctxt "board4|"
+#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Florentziako katedrala"
+msgstr "Worms-eko Katedrala"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8877,22 +8874,15 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
-"Florentziako katedrala, ofizialki Cattedrale di Santa Maria del Fiore "
-"deitua, Italiako Florentzia hirian dagoen arkitektura gotiko eta "
-"errenazentistaren maisulan ospetsua da. 1436an bukatua, ospetsua da Filippo "
-"Brunelleschik diseinatutako kupula erraldoi gorri-teilakatuagatik, "
-"ingeniaritzaren mirari eta hiriaren ikur izaten jarraitzen duena. "
-"Katedraleko marmolezko fatxada korapilatsuak, XIX. mendean gehitua, bere "
-"barnealdeko apaindura aberatsa eta altxor artistikoak osatzen ditu. "
-"Giottoren Kanpandorrearekin eta San Joanen Bataiategiarekin batera, "
-"UNESCOren Gizateriaren Ondarearen zati da, eta urtero milioika bisitari "
-"erakartzen ditu bere esanahi historiko, kultural eta arkitektonikoagatik."
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Hanoiko dorre makurtua"
+msgstr "Hanoiko Dorrea"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8907,22 +8897,12 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
-"Pisako Dorre Inklinatua, Italiako Pisa hirian dagoena, mundu mailako izen "
-"handiko mirari arkitektoniko bat da. Hiriko katedralaren kanpandorre "
-"independente gisa eraikia, nahigabeko inklinazioagatik ospetsua da, "
-"lurzoruko zimendu ezegonkorrak eragindakoa. 1173an hasita, bere eraikuntza "
-"ia 200 urtez luzatu zen, eta urte horietan bere inklinazioa egonkortzeko "
-"ahaleginak egin ziren. 56 metro inguruko (183 oin) altuerarekin, dorrearen "
-"diseinu erromanikoak zortzi solairu ditu, kanpai-ganbera bat barne, modu "
-"korapilatsuan landutako zutabe eta arkuz apaindua. UNESCOren Gizateriaren "
-"Ondare gisa aitortua, erresilientzia eta asmamenaren ikur izaten jarraitzen "
-"du."
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr "San Marko basilika"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -8938,22 +8918,12 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
-"San Marko basilika, Venezian, Italian kokatua, bizantziarren arkitekturaren "
-"maisulan ikoniko bat da eta hiriko mugarri ospetsuenetako bat. Jatorriz "
-"828an eraiki zen San Marko ebanjelariaren erlikiak gordetzeko, eta XI. "
-"mendean gaur egungo forman berreraiki zen. Bere diseinu oparoagatik ezaguna, "
-"basilikak ekialdeko eta mendebaldeko eraginen nahasketa du, bere bost "
-"kupuletan, mosaiko korapilotsuetan eta estatua eta tailuekin apaindutako "
-"fatxada edertuetan agerikoa dena. Barrualdea urrezko mosaikoekin eta "
-"marmolezko zoruekin aberaski apainduta dago, Veneziako Errepublikaren "
-"aberastasuna eta boterea erakutsiz. San Marko Plazaren alboan, Veneziako "
-"ondare historiko, kultural eta erlijiosoaren ikur izaten jarraitzen du."
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr "Ponpeia"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -8969,33 +8939,31 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
-"Ponpeia antzinako hiri erromatar bat izan zen, egungo Napolestik, Italia, "
-"gertu kokatua, oso ezaguna den bezala K.o. 79 urtean Vesuvio mendiaren "
-"erupzioak lurperatu ondoren ondo kontserbatu zena. Erupzioak errauts, apar-"
-"harri, eta isuri piroklastiko konbinazio hilgarria askatu zuen, hiria eta "
-"bertako biztanleak irentsi zituena, eraikinak, artefaktuak, eta baita giza "
-"aztarnak ere xehetasun harrigarriz gordez. indusketek ikuspegi baliotsuak "
-"eman dituzte erromatarren eguneroko bizimoduari, arkitekturari eta "
-"gizarteari buruz, kaleak, etxeak, bainu publikoak eta tenpluak ondo "
-"planifikatuta dituen hiria agerian utziz. Aztarnategia gaur egun UNESCOren "
-"Gizateriaren Ondarea da eta historiako aurkikuntza arkeologiko "
-"garrantzitsuenetako bat izaten jarraitzen du."
 
 #: activities/explore_monuments/resource/board/board8.qml:85
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Italiako monumentuak"
+msgstr "Indiako monumentuak"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
-msgstr "Egin klik adierazitako monumentuaren kokalekuan."
+msgstr "Egin klik adierazitako monumentua kokatua dagoen tokian."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Himeji gaztelua"
+msgstr "Letra xeheak eta larriak nahastuta"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -9008,19 +8976,12 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
-"Himeji-jo XVII. mendearen hasierako Japoniako gaztelu-arkitekturaren "
-"adibiderik onena da, defentsa-sistema oso garatuak eta Shogun garaiaren "
-"hasierako babes-gailu burutsuak dituzten 83 eraikinek osatzen dute. Zurezko "
-"eraikuntzaren maisulan bat da, funtzioa erakargarritasun estetikoarekin "
-"uztartzen dituena, bai zuriz luzitutako lurrezko horma bateratutako itxura "
-"dotorean, baita eraikin-masen eta teilatu-geruza anizkoitzen arteko "
-"erlazioaren sotiltasunean ere."
 
 #: activities/explore_monuments/resource/board/board9.qml:28
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr "Hiroshimako Bakearen Oroimenezko Parkea"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -9036,22 +8997,12 @@ msgid ""
 "a solemn space for reflection, honoring the lives lost and advocating for "
 "global peace."
 msgstr ""
-"Hiroshimako Bakearen Oroimenezko Parketa bakearen ikur eta gerraren ondorio "
-"suntsitzaileen oroigarri bat da. Hiroshiman, Japonian kokatua, parkeak "
-"1945eko abuztuaren 6ko bonbardaketa atomikoaren biktimak oroitzen ditu. "
-"Parkean hainbat monumentu daude, besteak beste, Bonba Atomikoaren Kupula "
-"ikonikoa, garai batean gobernuaren eraikina izan zena eta gaur egun "
-"UNESCOren Gizateriaren Ondare dena. Parkeak Hiroshimako Bakearen Oroimenezko "
-"Museoa ere hartzen du, bisitariak bonbardaketaren inguruko gertakariei buruz "
-"hezi eta bakearen, indarkeriarik ezaren eta desarme nuklearraren mezua "
-"sustatzen duena. Hausnarketarako espazio solemne gisa balio du, galdutako "
-"bizitzak omenduz eta bake globalaren alde eginez."
 
 #: activities/explore_monuments/resource/board/board9.qml:39
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr "Arakura Fuji Sengen santutegia"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -9067,23 +9018,12 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
-"Santutegia 705ean sortu zen, tokiaren jainkotasuna sagaratzeko. Fuji "
-"mendiaren 807 urteko erupzio handiaren ondoren, enperadoreak inperioko "
-"ordezkari bat bidali zuen santutegi honetara erupzioa geldiarazteko erritual "
-"bat egiteko. Esaten denez, Estatu Gerlarien garaian, Takeda Nobutora-k, "
-"Takeda Shingen gerra-jaun ospetsuaren aita, Hojo sendiarekin borrokatu "
-"zuenean, kanpalekua bertan ezarri, garaipenaren alde otoitz egin eta bataila "
-"irabazi zuen. Ondoren, bere ezpata santutegi honi eskaini zion. Gaur egun, "
-"bertakoek eta urrunekoek santutegia bisitatzen dute gaiztakeria uxatzeko, "
-"familiaren zoriontasunaren eta erditze seguruaren alde otoitz egiteko. "
-"Udaberrian, gereziondoak loratzen dira eta jendetza biltzen da Fuji "
-"mendiaren ikuspegi txundigarriaz gozatzeko."
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr "Okinawako Shuri gaztelua"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -9099,27 +9039,22 @@ msgid ""
 "much of the castle was lost in a fire in 2019, but efforts to restore it are "
 "ongoing, reflecting its enduring importance to Okinawa's heritage."
 msgstr ""
-"Shuri gaztelua, Nahan (Okinawa, Japonia) dagoena, UNESCOren Gizateriaren "
-"Ondarea, eta Ryukyu Erresumaren historia kultural aberatsaren sinboloa da. "
-"Jatorrian XIV. mendean eraikia, gaztelua mendeetan zehar erresumaren "
-"erdigune politiko, ekonomiko, eta kulturala izan zen. Txinako eta Japoniako "
-"estilo arkitektonikoen bategite bereizgarriagatik ospetsua, Shuri gazteluak "
-"bermiloi koloreko egitura lakatuak, apaindura edertuak, eta muino gaineko "
-"kokapen ikusgarria ditu. Bigarren Mundu Gerran suntsitu zuten arren, "
-"zehaztasunez berreraiki zuten eta erakargarri turistiko garrantzitsu bihurtu "
-"zen. Zoritxarrez, gazteluaren zati handi bat sute batean galdu zen 2019an, "
-"baina hura lehengoratzeko ahaleginean ari dira, Okinawaren ondarearentzat "
-"duen garrantzi iraunkorra islatuz."
 
 #: activities/explore_monuments/resource/board/board9.qml:63
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Japoniako monumentuak"
+msgstr "Frantziako monumentuak"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
-msgstr "Egin klik adierazitako monumentuaren kokalekuan."
+msgstr "Egin klik adierazitako monumentua kokatua dagoen tokian."
 
 #. Activity title
 #: activities/explore_world_animals/ActivityInfo.qml:19
@@ -15147,9 +15082,12 @@ msgstr "1 eta 5 artean aurkitu beharreko zenbakia."
 
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Number to find between 0 and 20."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
-msgstr "0 eta 4 artean aurkitu beharreko zenbaki hamartarra."
+msgstr "0 eta 20 artean aurkitu beharreko zenbakia."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"
@@ -15677,9 +15615,12 @@ msgid "Division required."
 msgstr "Zatiketa beharrezkoa da."
 
 #: activities/guess24/resource/6/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "Eragile guztiak behar dira."
+msgstr "Eragiketa guztien oroimen jokoa"
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -17873,13 +17814,18 @@ msgstr ""
 "ezkutuan institutuan hura irakasten zuen bitartean."
 
 #: activities/louis-braille/louis_braille_data.js:52
+#, fuzzy
+#| msgctxt "louis_braille_data|"
+#| msgid ""
+#| "He revised and extended braille to include mathematics, symbols, "
+#| "punctuations and music notations."
 msgctxt "louis_braille_data|"
 msgid ""
 "He revised and extended braille to include mathematics, symbols, punctuation "
 "and music notations."
 msgstr ""
-"Braille berrikusi eta hedatu zuen, matematika, ikurrak, puntuazioa eta "
-"musika-notazioa barneratzeko."
+"Braille berrikusi eta hedatu zuen, matematika, ikurrak, puntuazioak eta "
+"musika-notazioak barneratzeko."
 
 #: activities/louis-braille/louis_braille_data.js:57
 msgctxt "louis_braille_data|"
@@ -17910,9 +17856,12 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "Magoaren kapela (kenketa)"
+msgstr "Magoaren kapela"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -18004,9 +17953,12 @@ msgstr "%1x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "Magoaren kapela (batuketa)"
+msgstr "Magoaren kapela"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -25058,6 +25010,9 @@ msgid "Gradient Tools"
 msgstr "Gradiente-tresnak"
 
 #: activities/sketch/PaletteSelector.qml:148
+#, fuzzy
+#| msgctxt "ColorsPanel|"
+#| msgid "Palettes"
 msgctxt "PaletteSelector|"
 msgid "Palettes"
 msgstr "Paletak"
@@ -27445,6 +27400,31 @@ msgstr "Kenketa taulak."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "In a vertical subtraction, numbers are written one below the other. They "
+#| "need to be lined-up properly, starting from the column on the right-hand "
+#| "side. The top number is called the minuend: it is the amount that we are "
+#| "starting with, that another number is being subtracted from to get the "
+#| "difference. The number below is called the subtrahend: it is the amount "
+#| "to substract from the minuend to get the difference. The result is "
+#| "written on the bottom line. To solve the subtraction, start by "
+#| "subtracting the bottom number of the first column from the top number of "
+#| "the first column (on the right-hand side), and write the result on the "
+#| "bottom line of the same column. If the top number is smaller than the "
+#| "bottom number, you can borrow from the minuend on the next column: for "
+#| "example, if you add 10 units to the top number, you need to remove one "
+#| "unit from the top number of the next column. This is called the borrowing "
+#| "by regrouping method. To do that in this activity, click on the empty "
+#| "rectangle on the left of the top number, select 1, and on the next column "
+#| "click on the empty rectangle on the right of the top number and select "
+#| "-1. Then write the result of the column on the bottom line, and do the "
+#| "same on the next columns until the operation is finished. Once you have "
+#| "found the result, click on the OK button to validate your answer. In some "
+#| "levels, you will be need to write the given operation before solving it; "
+#| "in this case, click on the Ready button when the operation is written "
+#| "correctly and then solve it."
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -27524,7 +27504,7 @@ msgstr "Kenketa idatzi eta ebatzi, 2 digitu, 2 lerro, geroko eraman gabe."
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Kenketa ebatzi, 2 edo 3 digitu, 2 lerro."
+msgstr "Kenketa ebatzi, 2 edo 2 digitu, 3 lerro."
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
@@ -27622,6 +27602,31 @@ msgstr ""
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "In a vertical subtraction, numbers are written one below the other. They "
+#| "need to be lined-up properly, starting from the column on the right-hand "
+#| "side. The top number is called the minuend: it is the amount that we are "
+#| "starting with, that another number is being subtracted from to get the "
+#| "difference. The number below is called the subtrahend: it is the amount "
+#| "to substract from the minuend to get the difference. The result is "
+#| "written on the bottom line. To solve the subtraction, start by "
+#| "subtracting the bottom number of the first column from the top number of "
+#| "the first column (on the right-hand side), and write the result on the "
+#| "bottom line of the same column. If the top number is smaller than the "
+#| "bottom number, you can borrow from the subtrahend on the next column: for "
+#| "example, if you add 10 units to the top number, you need to add one unit "
+#| "to the bottom number of the next column. This is called the borrowing by "
+#| "compensation method. To do that in this activity, click on the empty "
+#| "rectangle on the left of the top number, select 1, and on the next column "
+#| "click on the empty rectangle on the right of the bottom number and select "
+#| "+1. Then write the result of the column on the bottom line, and do the "
+#| "same on the next columns until the operation is finished. Once you have "
+#| "found the result, click on the OK button to validate your answer. In some "
+#| "levels, you will be need to write the given operation before solving it; "
+#| "in this case, click on the Ready button when the operation is written "
+#| "correctly and then solve it."
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -27834,16 +27839,21 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Tekleatu hitz osoa erortzen ari den bitartean, lurra ukitu aurretik."
 
 #: core/ChangeLog.qml:30
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Kannada and Tamil"
-msgstr "Kannada eta Tamilera itzulpenak gehitu dira"
+msgstr "Letonieraren itzulpena gehitu da"
 
 #: core/ChangeLog.qml:31
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgctxt "ChangeLog|"
 msgid "New command-line option to set the locale (--locale locale)"
 msgstr ""
-"Tokiko konfigurazioak ezartzeko komando-lerroko aukera berria (--locale "
-"locale)"
+"errendatzailea trukatzeko komando-lerroko aukera berria (--renderer renderer)"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
@@ -27851,8 +27861,6 @@ msgid ""
 "New command-line option to show/hide the Home button (--hide-home-button/--"
 "show-home-button)"
 msgstr ""
-"Etxea botoia erakusteko/ezkutatzeko komando-lerroko aukera berria (--hide-"
-"home-button/--show-home-button)"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:39 core/ChangeLog.qml:45
 #: core/ChangeLog.qml:54 core/ChangeLog.qml:60 core/ChangeLog.qml:65
@@ -28608,9 +28616,12 @@ msgid "No data found for %1."
 msgstr "Ez da aurkitu %1(e)ren daturik."
 
 #: core/GCCreationHandler.qml:185
+#, fuzzy
+#| msgctxt "GCCreationHandler|"
+#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr "Fitxategi ondo ezabatu da!"
+msgstr "%1 ondo ezabatu da!"
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -28619,9 +28630,12 @@ msgid "OK"
 msgstr "Ados"
 
 #: core/GCCreationHandler.qml:193
+#, fuzzy
+#| msgctxt "GCCreationHandler|"
+#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
-msgstr "Ezin da fitxategia ezabatu!"
+msgstr "Ezin da %1 ezabatu!"
 
 #: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
@@ -28676,7 +28690,7 @@ msgstr "Ezabatu"
 #: core/GCCreationHandler.qml:429
 msgctxt "GCCreationHandler|"
 msgid "Open folder"
-msgstr "Ireki karpeta"
+msgstr ""
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
@@ -28804,19 +28818,22 @@ msgstr ""
 "denean bakarri erabilia."
 
 #: core/main.cpp:146
+#, fuzzy
+#| msgctxt "QObject|"
+#| msgid "Specify the activity when starting GCompris."
 msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
-msgstr "Zehaztu tokiko konfigurazioak GCompris abiatzean."
+msgstr "Zehaztu GCompris abiatzean hasiko den jarduera."
 
 #: core/main.cpp:150
 msgctxt "QObject|"
 msgid "Hide the Home button in the bar."
-msgstr "Ezkutatu barrako Etxea botoia."
+msgstr ""
 
 #: core/main.cpp:154
 msgctxt "QObject|"
 msgid "Show the Home button in the bar (default)."
-msgstr "Erakutsi barrako Etxea botoia (lehenetsia)."
+msgstr ""
 
 #: core/main.qml:238
 msgctxt "main|"
@@ -28987,90 +29004,6 @@ msgstr "Hasi"
 #~ msgid "Find the missing numbers."
 #~ msgstr "Aurkitu falta den zenbakiak."
 
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Make beautiful drawings by turning the gear in the cogwheel with the "
-#~ "chosen pen."
-#~ msgstr ""
-#~ "Egin marrazki ederrak hortz dun gurpileko engranajea hautatutako "
-#~ "arkatzarekin biratuz."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Select wheel, gear, pen's position and color from the foldable panels and "
-#~ "start the gear.<br><br>"
-#~ msgstr ""
-#~ "Hautatu gurpila, engranajea, arkatzaren kokapena eta kolorea panel "
-#~ "tolesgarrietan eta engranajea abiarazi.<br><br>"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Ctrl + D: save the drawing"
-#~ msgstr "Ktrl + D: gorde marrazkia"
-
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save drawing"
-#~ msgstr "Gorde marrazkia"
-
-#~| msgctxt "DrawingWheels|"
-#~| msgid "Save your image"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save vector image (SVG)"
-#~ msgstr "Gorde bektore-irudia (SVG)"
-
-# Translation for gcompris_qt.po to Euskara/Basque (eu).
-# Copyright (C) 2018-2025 This file is copyright:
-# This file is distributed under the same license as the GCompris package.
-# SPDX-FileCopyrightText: 2023, 2024, 2025 KDE euskaratzeko proiektuaren arduraduna <xalba@ni.eus>
-#
-# Translators:
-# Alexander Gabilondo <alexgabe@irakasle.net>, 2018, 2019, 2022.
-# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2019, 2020, 2021, 2022, 2023, 2024, 2025.
-#, fuzzy
-#~| msgid ""
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ msgstr ""
-#~ "Project-Id-Version: GCompris\n"
-#~ "POT-Creation-Date: 2018-11-30 13:03+0000\n"
-#~ "PO-Revision-Date: 2025-12-11 18:30+0100\n"
-#~ "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
-#~ "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
-#~ "Language: eu\n"
-#~ "MIME-Version: 1.0\n"
-#~ "Content-Type: text/plain; charset=UTF-8\n"
-#~ "Content-Transfer-Encoding: 8bit\n"
-#~ "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#~ "X-Generator: Lokalize 25.08.3\n"
-#~ "X-Qt-Contexts: true\n"
-
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Pencil's color and width"
-#~ msgstr "Arkatzaren kolorea eta zabalera"
-
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save as a drawing"
-#~ msgstr "Gorde marrazki gisa"
-
-#~| msgctxt "category_colors|"
-#~| msgid "Colors"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Color"
-#~ msgstr "Kolorea"
-
-#~| msgctxt "board9_0|"
-#~| msgid "Districto Federal"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Distance to center"
-#~ msgstr "Erdigunearekiko distantzia"
-
-#~ msgctxt "ColorsPanel|"
-#~ msgid "Palettes"
-#~ msgstr "Paletak"
-
-#~ msgctxt "Frieze|"
-#~ msgid "What is the binary representation of %1?"
-#~ msgstr "Zein da %1(e)ren irudikapen bitarra?"
-
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Grammatical analysis"
 #~ msgstr "Gramatika-azterketa"
@@ -29090,6 +29023,10 @@ msgstr "Hasi"
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Leave the box blank if no class matches."
 #~ msgstr "Dagokion klaserik ez badago, utzi kutxa hutsik."
+
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr "Zein da %1(e)ren irudikapen bitarra?"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "<b>Keyboard controls:"

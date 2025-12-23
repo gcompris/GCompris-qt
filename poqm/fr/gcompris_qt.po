@@ -6075,6 +6075,9 @@ msgstr "Électronique numérique"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
 msgstr "Créer et simuler un schéma électronique numérique."
@@ -8910,9 +8913,12 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Le palais du Potala"
+msgstr "Le palais de Mysore"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8932,7 +8938,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr "Armée de terre cuite"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8967,9 +8973,12 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Les diaolou"
+msgstr "La tour Eiffel"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8986,11 +8995,17 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:85
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Monuments de Chine"
+msgstr "Monuments d'Inde"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Clique sur l'endroit où le monument est situé."
@@ -9127,11 +9142,17 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:85
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Monuments d'Italie"
+msgstr "Monuments d'Inde"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Clique sur l'endroit où le monument est situé."
@@ -9221,11 +9242,17 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:63
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Monuments du Japon"
+msgstr "Monuments de France"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Clique sur l'endroit où le monument est situé."
@@ -18104,9 +18131,12 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "Le chapeau du magicien (soustraction)"
+msgstr "Le chapeau du magicien"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -18205,9 +18235,12 @@ msgstr "%1 x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "Le chapeau du magicien (addition)"
+msgstr "Le chapeau du magicien"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -29442,66 +29475,6 @@ msgstr "Démarrer"
 #~ msgid "Find the missing numbers."
 #~ msgstr "Trouve les nombres manquants."
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid ""
-#~| "Select tools and colors from the foldable panels and draw images.<br><br>"
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Select wheel, gear, pen's position and color from the foldable panels and "
-#~ "start the gear.<br><br>"
-#~ msgstr ""
-#~ "Sélectionne les outils et les couleurs des panneaux pliables et dessiner "
-#~ "tes images.<br><br>"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Ctrl + S: save the image"
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Ctrl + D: save the drawing"
-#~ msgstr "Ctrl + S : enregistrer l'image"
-
-#, fuzzy
-#~| msgctxt "FilesPanel|"
-#~| msgid "Save your image"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save vector image (SVG)"
-#~ msgstr "Enregistrer une image"
-
-#, fuzzy
-#~| msgid ""
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ msgstr ""
-#~ "MIME-Version: 1.0\n"
-#~ "Content-Type: text/plain; charset=UTF-8\n"
-#~ "Content-Transfer-Encoding: 8bit\n"
-#~ "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-#~ "X-Language: fr\n"
-#~ "X-Qt-Contexts: true\n"
-
-#, fuzzy
-#~| msgctxt "category_colors|"
-#~| msgid "Colors"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Color"
-#~ msgstr "Couleurs"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "Districto Federal"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Distance to center"
-#~ msgstr "District fédéral"
-
-#~ msgctxt "ColorsPanel|"
-#~ msgid "Palettes"
-#~ msgstr "Palettes"
-
-#~ msgctxt "Frieze|"
-#~ msgid "What is the binary representation of %1?"
-#~ msgstr "Quelle est la représentation binaire de %1 ?"
-
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Grammatical analysis"
 #~ msgstr "Analyse grammaticale"
@@ -29521,6 +29494,10 @@ msgstr "Démarrer"
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Leave the box blank if no class matches."
 #~ msgstr "Laisse la case vide si aucune classe grammaticale ne correspond."
+
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr "Quelle est la représentation binaire de %1 ?"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
@@ -34908,6 +34885,18 @@ msgstr "Démarrer"
 #~ msgctxt "ConfigurationItem|"
 #~ msgid "Sounds"
 #~ msgstr "Sons"
+
+#, fuzzy
+#~| msgid ""
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ msgstr ""
+#~ "MIME-Version: 1.0\n"
+#~ "Content-Type: text/plain; charset=UTF-8\n"
+#~ "Content-Transfer-Encoding: 8bit\n"
+#~ "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+#~ "X-Language: fr\n"
+#~ "X-Qt-Contexts: true\n"
 
 #~ msgctxt "DialogConfig|"
 #~ msgid "Buy the full version"

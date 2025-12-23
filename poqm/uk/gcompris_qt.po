@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2025-12-16 21:55+0200\n"
+"PO-Revision-Date: 2025-04-27 16:57+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -5995,9 +5995,12 @@ msgstr "Цифрова електроніка"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "Створення і імітація роботи цифрових логічних ланцюгів."
+msgstr "Створення і імітація роботи цифрових логічних ланцюгів"
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -6763,10 +6766,12 @@ msgstr ""
 
 #: activities/drawing_wheels/ActivityConfig.qml:29
 #: activities/sketch/ActivityConfig.qml:29
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Numbers from 1 to 19."
 msgctxt "ActivityConfig|"
 msgid "Number of undo: %1"
-msgstr "Кількість скасувань: %1"
+msgstr "Числа від 1 до 19."
 
 #: activities/drawing_wheels/ActivityConfig.qml:44
 #: activities/sketch/ActivityConfig.qml:44
@@ -6775,29 +6780,33 @@ msgid ""
 "Warning: setting the number of undo too high can make the application crash "
 "if your device doesn't have enough memory."
 msgstr ""
-"Попередження: встановлення надто великого значення для кількості скасувань "
-"може призвести до аварійного завершення роботи програми, якщо на вашому "
-"пристрої недостатньо оперативної пам'яті."
 
 #. Activity title
 #: activities/drawing_wheels/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "BrushToolPanel|"
+#| msgid "Drawing Tools"
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
-msgstr "Колеса для малювання"
+msgstr "Інструменти малювання"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Touch the numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Roll the gear in the cogwheel to draw."
-msgstr "Покрутіть шестерню у зубчастому колесі, щоб намалювати візерунок."
+msgstr "Торкніться чисел у правильному порядку."
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr ""
-"Відкрийте для себе гіпотрохоїди та використовуйте їх як інструменти "
-"цифрового малювання."
+msgstr "Навчання користуванню інструментами цифрового малювання."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
@@ -6811,15 +6820,6 @@ msgid ""
 "file (vector format), along with a PNG file (pixel format). Only the SVG "
 "file can be opened again from the activity.<br><br>"
 msgstr ""
-"Створюйте гарні малюнки, обертаючи шестерню у зубчастому колесі за допомогою "
-"вибраного пера. Виберіть розмір колеса, розмір шестерні, налаштування пера "
-"та колір за допомогою контекстних панелей і натисніть кнопку відтворення, "
-"щоб почати обертання шестерні. Ви можете скористатися меню «Файл», щоб "
-"зберегти зображення, відкрити раніше збережене зображення або створити "
-"зображення з вибраним кольором тла. Збереження зображення призведе до "
-"збереження файла даних SVG (векторний формат) разом із файлом PNG "
-"(піксельний формат). З вікна вправи можна знову відкрити лише файл SVG."
-"<br><br>"
 
 #: activities/drawing_wheels/ActivityInfo.qml:29
 #: activities/sketch/ActivityInfo.qml:28
@@ -6848,24 +6848,33 @@ msgstr "Ctrl + O: відкрити зображення"
 #: activities/drawing_wheels/DrawingWheels.qml:378
 msgctxt "DrawingWheels|"
 msgid "File menu"
-msgstr "Меню «Файл»"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:390
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
-msgstr "Колесо і шестерня"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:414
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Piano composition"
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
-msgstr "Розмір і розташування пера"
+msgstr "Композиція на піаніно"
 
 #: activities/drawing_wheels/DrawingWheels.qml:426
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Font selector"
 msgctxt "DrawingWheels|"
 msgid "Color selector"
-msgstr "Вибір кольору"
+msgstr "Вибір шрифту"
 
 #: activities/drawing_wheels/DrawingWheels.qml:453
+#, fuzzy
+#| msgctxt "OptionsRow|"
+#| msgid "Undo"
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Скасувати"
@@ -6873,44 +6882,56 @@ msgstr "Скасувати"
 #: activities/drawing_wheels/DrawingWheels.qml:465
 msgctxt "DrawingWheels|"
 msgid "Redo"
-msgstr "Повторити"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:499
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
-msgstr "Припинити малювання"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:499
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
-msgstr "Почати малювання"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:532
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
-msgstr "Показати колесо і шестерню"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:532
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
-msgstr "Приховати колесо і шестерню"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:691
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Зберегти ваше зображення"
 
 #: activities/drawing_wheels/DrawingWheels.qml:706
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Open an image"
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Відкрити зображення"
 
 #: activities/drawing_wheels/DrawingWheels.qml:735
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Create a new image"
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Створення зображення"
 
 #: activities/drawing_wheels/DrawingWheels.qml:754
+#, fuzzy
+#| msgctxt "BackgroundColorSelector|"
+#| msgid "Background color"
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Колір тла"
@@ -6918,20 +6939,25 @@ msgstr "Колір тла"
 #: activities/drawing_wheels/DrawingWheels.qml:835
 msgctxt "DrawingWheels|"
 msgid "Wheel"
-msgstr "Колесо"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:902
 msgctxt "DrawingWheels|"
 msgid "Gear"
-msgstr "Зубцювате колесо"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:965
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "SignalGenerator|"
+#| msgid "%1 s"
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
-msgstr "%1 зубців"
+msgstr "%1 с"
 
 #: activities/drawing_wheels/DrawingWheels.qml:983
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Speed"
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Швидкість"
@@ -6939,19 +6965,25 @@ msgstr "Швидкість"
 #: activities/drawing_wheels/DrawingWheels.qml:999
 msgctxt "DrawingWheels|"
 msgid "Slow"
-msgstr "Повільно"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:1019
 msgctxt "DrawingWheels|"
 msgid "Fast"
-msgstr "Швидко"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:1062
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Font size"
 msgctxt "DrawingWheels|"
 msgid "Pen size"
-msgstr "Товщина пера"
+msgstr "Розмір шрифту"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1099
+#, fuzzy
+#| msgctxt "ToolsPanel|"
+#| msgid "Opacity"
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Непрозорість"
@@ -6959,29 +6991,44 @@ msgstr "Непрозорість"
 #: activities/drawing_wheels/DrawingWheels.qml:1142
 msgctxt "DrawingWheels|"
 msgid "Offset"
-msgstr "Зсув"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:1180
+#, fuzzy
+#| msgctxt "IntroMessage|"
+#| msgid "Start"
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
-msgstr "Початковий зубець"
+msgstr "Почати"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1360
+#, fuzzy
+#| msgctxt "Sketch|"
+#| msgid "You did not save this image. Do you want to close this activity?"
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Вами не збережено це зображення. Хочете закрити цю вправу?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1361
+#, fuzzy
+#| msgctxt "Sketch|"
+#| msgid "Do you want to erase this image?"
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Хочете витерти це зображення?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1362
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "Yes"
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Так"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1363
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "No"
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "Ні"
@@ -7579,6 +7626,13 @@ msgid "Chichén Itzá"
 msgstr "Чичен-Іца"
 
 #: activities/explore_monuments/resource/board/board1.qml:20
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid ""
+#| "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
+#| "the Yucatan Peninsula in Mexico, between Valladolid and Merida. It was "
+#| "established before the period of Christopher Colombus and probably served "
+#| "as the religion center of Yucatan for a while."
 msgctxt "board1|"
 msgid ""
 "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
@@ -8689,7 +8743,7 @@ msgstr "Натисніть на карті місце, де розташован
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr "Заборонене місто"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8704,21 +8758,12 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
-"Заборонене місто, розташоване в самому центрі Пекіна, Китай, є чудовим "
-"імператорським палацовим комплексом, який слугував резиденцією китайських "
-"імператорів і політичним центром держави протягом майже 500 років, від "
-"династії Мін (1368–1644) до кінця династії Цін (1644–1912). Побудований між "
-"1406 і 1420 роками, цей розгалужений архітектурний шедевр має площу 180 "
-"акрів і містить понад 980 збережених будівель із 8700 кімнатами, які "
-"демонструють традиційний китайський палацовий дизайн. Оточене ровом і "
-"масивною стіною, Заборонене місто колись було недоступне для широкого "
-"загалу, символізуючи імперську владу та виключність."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr "Гігантський Будда у Лешані"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8733,21 +8778,15 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
-"Гігантський Будда у Лешані, розташований у провінції Сичуань, Китай, є "
-"колосальною статуєю, висіченою у скелі на місці злиття річок Мін, Даду та "
-"Ціньї. Заввишки 71 метр (233 фути) це найвища досучасна статуя у світі та "
-"об’єкт Всесвітньої спадщини ЮНЕСКО. Побудована під час династії Тан (713–803 "
-"рр. н. е.), статуя є відтворенням Майтреї, Будди майбутнього, і була "
-"створена, щоб заспокоїти бурхливі води, які загрожують місцевому руху "
-"човнів. Геніально розроблена статуя включає приховану дренажну систему для "
-"запобігання ерозії. Умиротвореність статуї та її витонченість роблять її "
-"символом духовних і мистецьких досягнень."
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Палац Потала"
+msgstr "Майсурський палац"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8762,20 +8801,12 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
-"Палац Потала, розташований на Червоному пагорбі у Лхасі, Тибет, є знаковим "
-"символом тибетської культури та об'єктом Всесвітньої спадщини ЮНЕСКО. "
-"Побудований у 7 столітті та розширений у 17 столітті, він слугував зимовою "
-"резиденцією Далай-лам і центром тибетського управління. 13-поверховий палац "
-"із понад 1000 кімнатами поєднує в собі складну тибетську архітектуру, "
-"яскраві фрески та священні реліквії. Він розділений на Білий палац, де "
-"розміщені адміністративні зони, і Червоний палац — центр вивчення релігії та "
-"молитов. Палац Потала є свідченням духовної та історичної спадщини Тибету."
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr "Теракотова армія"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8787,18 +8818,12 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
-"Теракотова армія — це колекція тисяч глиняних солдатів, коней і колісниць у "
-"натуральну величину, похованих разом із першим імператором Китаю Цинь Ши "
-"Хуаном, щоб супроводжувати його в загробному житті. Фігури, виявлені в 1974 "
-"році поблизу Сіаню, датуються приблизно 210 роком до нашої ери і славляться "
-"своєю неймовірною деталізацією. Кожного воїна було виготовлено окремо, щоб "
-"представити різноманітні ранги та ролі стародавньої китайської армії."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr "Пагоди Сонця і Місяця"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8813,21 +8838,15 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
-"Пагоди Сонця та Місяця, розташовані в Гуйліні, Китай, є знаковими вежами-"
-"близнюками, які символізують культурну та духовну спадщину міста. Побудовані "
-"за часів династії Тан, вони були реконструйовані в 20 столітті як чудові "
-"пам'ятки на озері Шаньху. Пагода Сонця, висотою 41 метр, є бронзовою "
-"спорудою — найвищою у своєму роді у світі, тоді як Пагода Місяця, висотою 35 "
-"метрів, побудована з глазурованих плиток. Ці пагоди уособлюють гармонію інь "
-"і янь і з’єднані підводним скляним тунелем. Освітлені вночі, вони є "
-"популярними пам'ятками, що демонструють традиційну китайську архітектуру та "
-"сучасну винахідливість."
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Башти Дяолоу"
+msgstr "Ейфелева вежа"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8842,22 +8861,19 @@ msgid ""
 "UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
 "towers remain, offering insight into this unique architectural heritage."
 msgstr ""
-"Вежі Дяолоу у Кайпіні, провінція Гуандун, Китай, є укріпленими "
-"багатоповерховими спорудами, побудованими з кінця 19 до початку 20 століття "
-"для захисту від бандитів і повеней. Поєднуючи західні архітектурні стилі, "
-"такі як романський і бароко, з традиційними китайськими елементами, вони є "
-"свідченням багатства та впливу китайських емігрантів за кордоном. Побудовані "
-"із залізобетону, ці вежі символізують період культурного та економічного "
-"переходу у сільській місцевості Китаю. У 2007 році було включено до списку "
-"Всесвітньої спадщини ЮНЕСКО. Збереглося близько 1800 із початкових 3000 веж. "
-"За їх допомогою можна ознайомитися з цією унікальною архітектурною спадщиною."
 
 #: activities/explore_monuments/resource/board/board7.qml:85
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Монументи Китаю"
+msgstr "Монументи Індії"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Натисніть на карті місце, де розташовано вказаний монумент."
@@ -8866,7 +8882,7 @@ msgstr "Натисніть на карті місце, де розташован
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr "Пантеон"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8883,24 +8899,12 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
-"Пантеон у Римі, Італія, є відомим стародавнім храмом, побудованим приблизно "
-"у 126 р. нашої ери під час правління імператора Адріана на місці попередніх "
-"споруд, побудованих на замовлення Марка Агріппи. Відомий своєю архітектурною "
-"яскравістю, він має масивний купольний дах із центральним окулусом, який "
-"символізує небеса, дозволяючи природному світлу освітлювати інтер’єр. "
-"Спочатку він був присвячений всім римським богам, але пізніше був "
-"перетворений на християнську церкву, відому як Базиліка Святої Марії та "
-"мучеників (Santa Maria ad Martyres), у 609 році нашої ери. Його купол, "
-"найбільший неармований бетонний купол у світі, демонструє дивовижну техніку "
-"та симетрію, надихаючи архітекторів протягом століть. Гармонійні пропорції "
-"та історичне значення Пантеону роблять його позачасовим шедевром класичної "
-"архітектури."
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr "Дуомо ді Мілано"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8915,21 +8919,15 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
-"Дуомо ді Мілано, також відомий як Міланський собор, є культовим готичним "
-"шедевром, розташованим у центрі Мілана, Італія. Будувався протягом майже "
-"шести століть. Це один із найбільших соборів у світі та символ художньої та "
-"культурної спадщини Мілана. Його хитромудрий фасад прикрашений незліченними "
-"статуями, шпилями та горгульями, що є свідченням величі готичної "
-"архітектури. Відвідувачі можуть оглянути його приголомшливі інтер'єри з "
-"красивими вітражами та складними мармуровими деталями або піднятися на дах, "
-"щоб побачити захопливий вид на місто та Альпи. Дуомо є свідченням багатої "
-"історії та архітектурного блиску Італії."
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
+#, fuzzy
+#| msgctxt "board4|"
+#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Флорентійський кафедральний собор"
+msgstr "Вормський кафедральний собор"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8945,22 +8943,15 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
-"Флорентійський собор, офіційно відомий як Cattedrale di Santa Maria del "
-"Fiore, є відомим шедевром архітектури готики та ренесансу, розташованим у "
-"Флоренції, Італія. Завершений у 1436 році, він відомий своїм масивним "
-"червоним черепичним куполом, розробленим Філіппо Брунеллескі, який "
-"залишається інженерним дивом і символом міста. Складний мармуровий фасад "
-"собору, добудований у 19 столітті, доповнює його багатий інтер'єр і "
-"мистецькі скарби. Разом із дзвіницею Джотто та баптистерієм Святого Іоанна "
-"він є частиною Всесвітньої спадщини ЮНЕСКО, щороку приваблює мільйони "
-"відвідувачів завдяки своїй історичній, культурній та архітектурній "
-"значущості."
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Пізанська вежа"
+msgstr "Спрощена ханойська башта"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8975,21 +8966,12 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
-"Пізанська вежа, розташована в італійському місті Піза, є всесвітньо відомим "
-"архітектурним дивом. Побудована як окремо стояча дзвіниця для міського "
-"собору, вона відома своїм ненавмисним нахилом, спричиненим рухом ґрунту під "
-"фундаментом. Будівництво вежі, розпочате в 1173 році, тривало майже 200 "
-"років, протягом яких намагалися стабілізувати її нахил. Романська вежа "
-"висотою приблизно 56 метрів (183 фути) має вісім поверхів, включаючи "
-"дзвіницю, прикрашену вигадливо різьбленими колонами та арками. Визнана "
-"об'єктом Всесвітньої спадщини ЮНЕСКО, вона залишається символом стійкості та "
-"винахідливості."
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr "Базиліка св. Марка"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -9005,22 +8987,12 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
-"Базиліка Святого Марка, розташована у Венеції, Італія, є культовим шедевром "
-"візантійської архітектури та однією з найвідоміших пам'яток міста. "
-"Побудована у 828 році для розміщення мощей святого євангеліста Марка, вона "
-"була перебудована у своєму нинішньому вигляді в 11 столітті. Базиліка, "
-"відома своїм розкішним дизайном, характеризується поєднанням східних і "
-"західних впливів, що помітно в її п'яти куполах, складній мозаїці та "
-"вишуканому фасаді, прикрашеному статуями та різьбленням. Інтер'єр багато "
-"прикрашений золотою мозаїкою та мармуровою підлогою, що демонструє багатство "
-"та могутність Венеціанської республіки. Примикаючи до площі Сан-Марко, вона "
-"залишається символом історичної, культурної та релігійної спадщини Венеції."
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr "Помпеї"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -9036,32 +9008,31 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
-"Помпеї були стародавнім римським містом, розташованим поблизу сучасного "
-"Неаполя, Італія, знаменитим тим, що збереглося після виверження вулкана "
-"Везувій у 79 році нашої ери. Виверження призвело до смертоносної комбінації "
-"потоків попелу, пемзи та пірокластики, які поглинули місто та його "
-"мешканців, зберігаючи будівлі, артефакти та навіть людські останки в "
-"неймовірних деталях. Розкопки Помпеї дали цінну інформацію про повсякденне "
-"римське життя, архітектуру та суспільство, виявивши місто з добре "
-"спланованими вулицями, будинками, громадськими лазнями та храмами. Зараз це "
-"місце є об'єктом Всесвітньої спадщини ЮНЕСКО та залишається одним із "
-"найважливіших археологічних відкриттів в історії."
 
 #: activities/explore_monuments/resource/board/board8.qml:85
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Монументи Італії"
+msgstr "Монументи Індії"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Натисніть на карті місце, де розташовано вказаний монумент."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Замок Хімеджі"
+msgstr "Мішаний регістр"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -9074,20 +9045,12 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
-"Замок Хімеджі є найкращим збереженим зразком архітектури японського замку "
-"початку 17-го століття, що складається з 83 будівель з високорозвиненою "
-"системою захисту та геніальними захисними пристроями, що датуються початком "
-"періоду сьогунів. Це шедевр дерев’яного будівництва, який поєднує в собі "
-"функціональність з естетичною привабливістю, як у своєму елегантному "
-"зовнішньому вигляді, об’єднаному білими оштукатуреними земляними стінами, "
-"так і в тонкому взаємозв’язку між будівельними масивами та кількома шарами "
-"даху."
 
 #: activities/explore_monuments/resource/board/board9.qml:28
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr "Меморіальний парк миру в Хіросімі"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -9103,21 +9066,12 @@ msgid ""
 "a solemn space for reflection, honoring the lives lost and advocating for "
 "global peace."
 msgstr ""
-"Меморіальний парк миру в Хіросімі є символом миру та нагадуванням про "
-"руйнівні наслідки війни. Розташований у Хіросімі, Японія, парк вшановує "
-"пам’ять жертв атомного бомбардування 6 серпня 1945 року. У парку є кілька "
-"пам’ятників, зокрема культовий Купол атомної бомби, який колись був урядовою "
-"будівлею, а зараз є об'єктом Всесвітньої спадщини ЮНЕСКО. У парку також "
-"розташований Меморіальний музей миру в Хіросімі, який розповідає "
-"відвідувачам про події, пов'язані з бомбардуванням, і пропагує ідеї миру, "
-"ненасильства та важливості ядерного роззброєння. Він служить урочистим "
-"місцем для роздумів, вшанування втрачених життів і захисту глобального миру."
 
 #: activities/explore_monuments/resource/board/board9.qml:39
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr "Храм Аракура-Фуджі-Сенген"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -9133,22 +9087,12 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
-"Храм було засновано в 705 році для вшанування божества цього місця. Після "
-"великого виверження гори Фудзі у 807 році імператор відправив "
-"імператорського посланця до цього храму, щоб провести ритуал, щоб зупинити "
-"виверження. Кажуть, що під час періоду Воюючих царств, коли Такеда Нобутора, "
-"батько відомого воєначальника Такеда Сінгена, бився з родиною Ходзьо, він "
-"розбив тут табір, молився про перемогу та виграв битву. Тоді він присвятив "
-"свій меч цій святині. Сьогодні місцеві та здалеку відвідують святиню, щоб "
-"відкараскатися від зла, помолитися за сімейне щастя та щасливі пологи. "
-"Навесні цвітуть вишневі дерева, і натовпи збираються, щоб насолодитися "
-"приголомшливим видом на гору Фудзі."
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr "Замок Шюрі в Окінаві"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -9164,25 +9108,19 @@ msgid ""
 "much of the castle was lost in a fire in 2019, but efforts to restore it are "
 "ongoing, reflecting its enduring importance to Okinawa's heritage."
 msgstr ""
-"Замок Шюрі, розташований у місті Наха, Окінава, Японія, є об'єктом "
-"Всесвітньої спадщини ЮНЕСКО та символом багатої культурної історії "
-"королівства Рюкю. Побудований у XIV столітті, замок протягом століть "
-"слугував політичним, економічним і культурним центром королівства. Замок "
-"Шюрі, відомий своїм характерним поєднанням китайського та японського "
-"архітектурних стилів, вирізняється червоними лакованими будівлями, ошатними "
-"прикрасами та чудовим розташуванням на вершині пагорба. Хоча він був "
-"зруйнований під час Другої світової війни, він був ретельно реконструйований "
-"і став ключовою туристичною визначною пам'яткою. На жаль, велика частина "
-"замку була втрачена під час пожежі в 2019 році, але зусилля з його "
-"відновлення тривають, що є свідченням його незмінної важливості для спадщини "
-"Окінави."
 
 #: activities/explore_monuments/resource/board/board9.qml:63
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Монументи Японії"
+msgstr "Монументи Франції"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Натисніть на карті місце, де розташовано вказаний монумент."
@@ -15210,9 +15148,12 @@ msgstr "Число для пошуку від 1 та 5."
 
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Number to find between 0 and 20."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
-msgstr "Десяткове число для пошуку від 0 до 4."
+msgstr "Число для пошуку від 0 та 20."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"
@@ -15739,9 +15680,12 @@ msgid "Division required."
 msgstr "Потрібне ділення."
 
 #: activities/guess24/resource/6/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "Слід вказати усі оператори."
+msgstr "Гра на пам'ять зі всіма операціями"
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -17938,6 +17882,11 @@ msgstr ""
 "запису, таємно навчаючи його у інституті."
 
 #: activities/louis-braille/louis_braille_data.js:52
+#, fuzzy
+#| msgctxt "louis_braille_data|"
+#| msgid ""
+#| "He revised and extended braille to include mathematics, symbols, "
+#| "punctuations and music notations."
 msgctxt "louis_braille_data|"
 msgid ""
 "He revised and extended braille to include mathematics, symbols, punctuation "
@@ -17975,9 +17924,12 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "Чарівний капелюх (віднімання)"
+msgstr "Чарівний капелюх"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -18069,9 +18021,12 @@ msgstr "%1⨯"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "Чарівний капелюх (додавання)"
+msgstr "Чарівний капелюх"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -25144,6 +25099,9 @@ msgid "Gradient Tools"
 msgstr "Інструменти градієнта"
 
 #: activities/sketch/PaletteSelector.qml:148
+#, fuzzy
+#| msgctxt "ColorsPanel|"
+#| msgid "Palettes"
 msgctxt "PaletteSelector|"
 msgid "Palettes"
 msgstr "Палітри"
@@ -27538,6 +27496,31 @@ msgstr "Таблиці віднімання."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "In a vertical subtraction, numbers are written one below the other. They "
+#| "need to be lined-up properly, starting from the column on the right-hand "
+#| "side. The top number is called the minuend: it is the amount that we are "
+#| "starting with, that another number is being subtracted from to get the "
+#| "difference. The number below is called the subtrahend: it is the amount "
+#| "to substract from the minuend to get the difference. The result is "
+#| "written on the bottom line. To solve the subtraction, start by "
+#| "subtracting the bottom number of the first column from the top number of "
+#| "the first column (on the right-hand side), and write the result on the "
+#| "bottom line of the same column. If the top number is smaller than the "
+#| "bottom number, you can borrow from the minuend on the next column: for "
+#| "example, if you add 10 units to the top number, you need to remove one "
+#| "unit from the top number of the next column. This is called the borrowing "
+#| "by regrouping method. To do that in this activity, click on the empty "
+#| "rectangle on the left of the top number, select 1, and on the next column "
+#| "click on the empty rectangle on the right of the top number and select "
+#| "-1. Then write the result of the column on the bottom line, and do the "
+#| "same on the next columns until the operation is finished. Once you have "
+#| "found the result, click on the OK button to validate your answer. In some "
+#| "levels, you will be need to write the given operation before solving it; "
+#| "in this case, click on the Ready button when the operation is written "
+#| "correctly and then solve it."
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -27704,7 +27687,7 @@ msgstr ""
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
-msgstr "Вертикальне віднімання (компенсація)"
+msgstr "Вертикальне віднімання (компесанція)"
 
 #. Help goal
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:20
@@ -27718,6 +27701,31 @@ msgstr ""
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "In a vertical subtraction, numbers are written one below the other. They "
+#| "need to be lined-up properly, starting from the column on the right-hand "
+#| "side. The top number is called the minuend: it is the amount that we are "
+#| "starting with, that another number is being subtracted from to get the "
+#| "difference. The number below is called the subtrahend: it is the amount "
+#| "to substract from the minuend to get the difference. The result is "
+#| "written on the bottom line. To solve the subtraction, start by "
+#| "subtracting the bottom number of the first column from the top number of "
+#| "the first column (on the right-hand side), and write the result on the "
+#| "bottom line of the same column. If the top number is smaller than the "
+#| "bottom number, you can borrow from the subtrahend on the next column: for "
+#| "example, if you add 10 units to the top number, you need to add one unit "
+#| "to the bottom number of the next column. This is called the borrowing by "
+#| "compensation method. To do that in this activity, click on the empty "
+#| "rectangle on the left of the top number, select 1, and on the next column "
+#| "click on the empty rectangle on the right of the bottom number and select "
+#| "+1. Then write the result of the column on the bottom line, and do the "
+#| "same on the next columns until the operation is finished. Once you have "
+#| "found the result, click on the OK button to validate your answer. In some "
+#| "levels, you will be need to write the given operation before solving it; "
+#| "in this case, click on the Ready button when the operation is written "
+#| "correctly and then solve it."
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -27931,15 +27939,22 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Наберіть слово повністю, доки воно падає на землю."
 
 #: core/ChangeLog.qml:30
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Kannada and Tamil"
-msgstr "Додано переклад каннадською та тамільською мовами"
+msgstr "Додано переклад латвійською мовою"
 
 #: core/ChangeLog.qml:31
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgctxt "ChangeLog|"
 msgid "New command-line option to set the locale (--locale locale)"
 msgstr ""
-"Новий параметр командного рядка для встановлення локалі (--locale локаль)"
+"Новий параметр командного рядка для перемикання засобу обробки зображення (--"
+"renderer засіб_обробки)"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
@@ -27947,8 +27962,6 @@ msgid ""
 "New command-line option to show/hide the Home button (--hide-home-button/--"
 "show-home-button)"
 msgstr ""
-"Новий параметр командного рядка для показу або приховування кнопки "
-"«Домівка» (--hide-home-button/--show-home-button)"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:39 core/ChangeLog.qml:45
 #: core/ChangeLog.qml:54 core/ChangeLog.qml:60 core/ChangeLog.qml:65
@@ -28709,9 +28722,12 @@ msgid "No data found for %1."
 msgstr "Не знайдено даних для %1."
 
 #: core/GCCreationHandler.qml:185
+#, fuzzy
+#| msgctxt "GCCreationHandler|"
+#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr "Файл успішно вилучено!"
+msgstr "%1 успішно вилучено!"
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -28720,9 +28736,12 @@ msgid "OK"
 msgstr "Гаразд"
 
 #: core/GCCreationHandler.qml:193
+#, fuzzy
+#| msgctxt "GCCreationHandler|"
+#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
-msgstr "Не вдалося вилучити файл!"
+msgstr "Не вдалося вилучити %1!"
 
 #: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
@@ -28777,7 +28796,7 @@ msgstr "Вилучити"
 #: core/GCCreationHandler.qml:429
 msgctxt "GCCreationHandler|"
 msgid "Open folder"
-msgstr "Відкрити теку"
+msgstr ""
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
@@ -28905,19 +28924,22 @@ msgstr ""
 "використано параметр --launch."
 
 #: core/main.cpp:146
+#, fuzzy
+#| msgctxt "QObject|"
+#| msgid "Specify the activity when starting GCompris."
 msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
-msgstr "Вказати локаль, яку слід використати після запуску GCompris."
+msgstr "Вказати вправу, яку слід розпочати після запуску GCompris."
 
 #: core/main.cpp:150
 msgctxt "QObject|"
 msgid "Hide the Home button in the bar."
-msgstr "Приховати кнопку «Домівка» на панелі."
+msgstr ""
 
 #: core/main.cpp:154
 msgctxt "QObject|"
 msgid "Show the Home button in the bar (default)."
-msgstr "Показувати кнопку «Домівка» на панелі (типовий варіант)."
+msgstr ""
 
 #: core/main.qml:238
 msgctxt "main|"
@@ -29010,7 +29032,7 @@ msgstr "GCompris оновлено! Ось список змін:<br/>"
 
 #: core/main.qml:509
 #, fuzzy, qt-format
-#| msgctxt "DrawingWheels|"
+#| msgctxt "Sketch|"
 #| msgid "Do you want to erase this image?"
 msgctxt "main|"
 msgid "Do you want to connect to server %1?"
@@ -29088,89 +29110,6 @@ msgstr "Почати"
 #~ msgid "Find the missing numbers."
 #~ msgstr "Знайдіть пропущені числа."
 
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Make beautiful drawings by turning the gear in the cogwheel with the "
-#~ "chosen pen."
-#~ msgstr ""
-#~ "Створіть чудові малюнки обертаючи шестерню у зубчастому колесі з "
-#~ "використанням вибраного пера."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Select wheel, gear, pen's position and color from the foldable panels and "
-#~ "start the gear.<br><br>"
-#~ msgstr ""
-#~ "Виберіть колесо, шестерню, позицію пера та колір за допомогою панелей і "
-#~ "запустіть малювання.<br><br>"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Ctrl + D: save the drawing"
-#~ msgstr "Ctrl + D: зберегти малюнок"
-
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save drawing"
-#~ msgstr "Зберегти малюнок"
-
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save vector image (SVG)"
-#~ msgstr "Зберегти векторне зображення (SVG)"
-
-# Translation of gcompris_qt.po to Ukrainian
-# Copyright (C) 2008-2021 This_file_is_part_of_KDE
-# This file is distributed under the license LGPL version 2.1 or
-# version 3 or later versions approved by the membership of KDE e.V.
-#
-# Ivan Onyshchuk <onivan@mail.ru>, 2008, 2009, 2010.
-# Yuri Chornoivan <yurchor@ukr.net>, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025.
-#, fuzzy
-#~| msgid ""
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ msgstr ""
-#~ "Project-Id-Version: gcompris_qt\n"
-#~ "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-#~ "product=gcompris&keywords=I18N+L10N&component=general\n"
-#~ "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-#~ "PO-Revision-Date: 2025-12-12 13:18+0200\n"
-#~ "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
-#~ "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
-#~ "Language: uk\n"
-#~ "MIME-Version: 1.0\n"
-#~ "Content-Type: text/plain; charset=UTF-8\n"
-#~ "Content-Transfer-Encoding: 8bit\n"
-#~ "X-Qt-Contexts: true\n"
-#~ "X-Generator: Lokalize 23.04.3\n"
-#~ "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
-#~ "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-#~ "X-Qt-Contexts: true\n"
-
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Export image (PNG)"
-#~ msgstr "Експортувати зображення (PNG)"
-
-#, fuzzy
-#~| msgctxt "category_colors|"
-#~| msgid "Colors"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Color"
-#~ msgstr "Кольори"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "Districto Federal"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Distance to center"
-#~ msgstr "Федеральний округ"
-
-#~ msgctxt "ColorsPanel|"
-#~ msgid "Palettes"
-#~ msgstr "Палітри"
-
-#~ msgctxt "Frieze|"
-#~ msgid "What is the binary representation of %1?"
-#~ msgstr "Яким є двійкове представлення числа %1?"
-
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Grammatical analysis"
 #~ msgstr "Граматичний аналіз"
@@ -29190,6 +29129,10 @@ msgstr "Почати"
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Leave the box blank if no class matches."
 #~ msgstr "Не заповнюйте, якщо не відповідає жоден клас."
+
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr "Яким є двійкове представлення числа %1?"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "<b>Keyboard controls:"

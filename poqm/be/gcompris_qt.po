@@ -6,94 +6,94 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-10-10 11:34+0300\n"
+"PO-Revision-Date: 2025-01-22 09:44+0300\n"
 "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Qt-Contexts: true\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Crowdin-Project: gcompris-by\n"
+"X-Crowdin-Project-ID: 418508\n"
+"X-Crowdin-Language: be\n"
+"X-Crowdin-File: gcompris_qt.po\n"
+"X-Crowdin-File-ID: 10\n"
+"X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
 "%100>=11 && n%100<=14 ? 2 : 3);\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
 "%100>=11 && n%100<=14 ? 2 : 3);\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Crowdin-Project: gcompris-by\n"
+"X-Crowdin-Project-ID: 418508\n"
+"X-Crowdin-Language: be\n"
+"X-Crowdin-File: gcompris_qt.po\n"
+"X-Crowdin-File-ID: 10\n"
+"X-Qt-Contexts: true\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Crowdin-Project: gcompris-by\n"
+"X-Crowdin-Project-ID: 418508\n"
+"X-Crowdin-Language: be\n"
+"X-Crowdin-File: gcompris_qt.po\n"
+"X-Crowdin-File-ID: 10\n"
+"X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
 "%100>=11 && n%100<=14 ? 2 : 3);\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
 "%100>=11 && n%100<=14 ? 2 : 3);\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Crowdin-Project: gcompris-by\n"
+"X-Crowdin-Project-ID: 418508\n"
+"X-Crowdin-Language: be\n"
+"X-Crowdin-File: gcompris_qt.po\n"
+"X-Crowdin-File-ID: 10\n"
+"X-Qt-Contexts: true\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Crowdin-Project: gcompris-by\n"
+"X-Crowdin-Project-ID: 418508\n"
+"X-Crowdin-Language: be\n"
+"X-Crowdin-File: gcompris_qt.po\n"
+"X-Crowdin-File-ID: 10\n"
+"X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
 "%100>=11 && n%100<=14 ? 2 : 3);\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Crowdin-Project: gcompris-by\n"
+"X-Crowdin-Project-ID: 418508\n"
+"X-Crowdin-Language: be\n"
+"X-Crowdin-File: gcompris_qt.po\n"
+"X-Crowdin-File-ID: 10\n"
+"X-Qt-Contexts: true\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Crowdin-Project: gcompris-by\n"
+"X-Crowdin-Project-ID: 418508\n"
+"X-Crowdin-Language: be\n"
+"X-Crowdin-File: gcompris_qt.po\n"
+"X-Crowdin-File-ID: 10\n"
+"X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
 "%100>=11 && n%100<=14 ? 2 : 3);\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
 "%100>=11 && n%100<=14 ? 2 : 3);\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.5\n"
-"X-Crowdin-Project: gcompris-by\n"
-"X-Crowdin-Project-ID: 418508\n"
-"X-Crowdin-Language: be\n"
-"X-Crowdin-File: gcompris_qt.po\n"
-"X-Crowdin-File-ID: 10\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Crowdin-Project: gcompris-by\n"
-"X-Crowdin-Project-ID: 418508\n"
-"X-Crowdin-Language: be\n"
-"X-Crowdin-File: gcompris_qt.po\n"
-"X-Crowdin-File-ID: 10\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Crowdin-Project: gcompris-by\n"
-"X-Crowdin-Project-ID: 418508\n"
-"X-Crowdin-Language: be\n"
-"X-Crowdin-File: gcompris_qt.po\n"
-"X-Crowdin-File-ID: 10\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Crowdin-Project: gcompris-by\n"
-"X-Crowdin-Project-ID: 418508\n"
-"X-Crowdin-Language: be\n"
-"X-Crowdin-File: gcompris_qt.po\n"
-"X-Crowdin-File-ID: 10\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Crowdin-Project: gcompris-by\n"
-"X-Crowdin-Project-ID: 418508\n"
-"X-Crowdin-Language: be\n"
-"X-Crowdin-File: gcompris_qt.po\n"
-"X-Crowdin-File-ID: 10\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Crowdin-Project: gcompris-by\n"
-"X-Crowdin-Project-ID: 418508\n"
-"X-Crowdin-Language: be\n"
-"X-Crowdin-File: gcompris_qt.po\n"
-"X-Crowdin-File-ID: 10\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Crowdin-Project: gcompris-by\n"
-"X-Crowdin-Project-ID: 418508\n"
-"X-Crowdin-Language: be\n"
-"X-Crowdin-File: gcompris_qt.po\n"
-"X-Crowdin-File-ID: 10\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Qt-Contexts: true\n"
 "X-Generator: Poedit 2.2.1\n"
 "X-Crowdin-Project: gcompris-by\n"
 "X-Crowdin-Project-ID: 418508\n"
@@ -3001,13 +3001,13 @@ msgid ""
 "up the binary system of numeration."
 msgstr ""
 "Кампутары выкарыстоўваюць транзістары для ліку, а транзістары могуць мець "
-"толькі два станы: адкрыты і закрыты. Матэматычна гэтыя становішчы выражаюцца "
-"як 0 і 1, якія складаюць бінарную сістэму вылічэння."
+"толькі два станы: адкрыты і закрыты. Матэматычна, гэтыя становішчы "
+"выражаюцца як 0 і 1, якія складаюць бінарную сістэму."
 
 #: activities/binary_bulb/BinaryBulb.qml:103
 msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
-msgstr "У практыкаванні 0 і 1 сімулююцца выключанымі і ўключанымі лямпачкамі."
+msgstr "Ў практыкаванні 0 і 1 сімулююцца выключанымі і ўключанымі лямпачкамі."
 
 #: activities/binary_bulb/BinaryBulb.qml:107
 msgctxt "BinaryBulb|"
@@ -3026,14 +3026,14 @@ msgid ""
 "bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit 8 → "
 "2⁷=128."
 msgstr ""
-"Кожны біт дадае нарастаючае значэнне, якое адпавядае ступені 2, адлічваючы "
+"Кожны біт дадае ў прагрэсію значэнне, якое адпавядае ступені 2, адлічваючы "
 "справа налева: біт 1 → 2⁰=1 , біт 2 → 2¹=2 , біт 3 → 2²=4 , біт 4 → 2³=8 , "
 "біт 5 → 2⁴=16 , біт 6 → 2⁵=32 , біт 7 → 2⁶=64 , біт 8 → 2⁷=128."
 
 #: activities/binary_bulb/BinaryBulb.qml:115
 msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
-msgstr "Каб канвертаваць дзесятковую 5 у бінарнае значэнне, складаюцца 1 і 4."
+msgstr "Каб канвертаваць дзесятковую 5 у бінарнае значэнне, дадаюцца 1 і 4."
 
 #: activities/binary_bulb/BinaryBulb.qml:119
 msgctxt "BinaryBulb|"
@@ -6027,6 +6027,9 @@ msgstr "Лічбавая электроніка"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
 msgstr "Стварыце лічбавую лагічную схему і сімулюйце яе працу."
@@ -8793,9 +8796,12 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Палац у Потале"
+msgstr "Палац у Майсоры"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8850,9 +8856,12 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Вежа Дзяолоў"
+msgstr "Эйфелева вежа"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8869,11 +8878,17 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:85
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Помнікі Кітая"
+msgstr "Манументы Індыі"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Выберыце мясцовасць, дзе размяшчаецца дадзены манумент."
@@ -8922,9 +8937,12 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
+#, fuzzy
+#| msgctxt "board4|"
+#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "сабор Санта-Марыя-дэль-Ф’ёрэ"
+msgstr "Вормскі кафедральны сабор"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8943,9 +8961,12 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Пізанская вежа"
+msgstr "Вежа Ханою"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -9004,20 +9025,29 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:85
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Манументы Італіі"
+msgstr "Манументы Індыі"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Выберыце мясцовасць, дзе размяшчаецца дадзены манумент."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Замак Хімеджы"
+msgstr "Змешаны рэгістр"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -9095,11 +9125,17 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:63
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Манументы Японіі"
+msgstr "Манументы Францыі"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Выберыце мясцовасць, дзе размяшчаецца дадзены манумент."
@@ -15619,9 +15655,12 @@ msgid "Division required."
 msgstr "Патрабуецца дзяленне."
 
 #: activities/guess24/resource/6/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "Патрабуюцца ўсе аператары."
+msgstr "Гульня з усімі аперацыямі напамяць"
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -17060,8 +17099,8 @@ msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr ""
-"У выпадку слушнага адказу, увядзіце адпаведны вынік і пстрыкніце па кнопцы "
-"OK каб спраўдзіць ваш адказ."
+"У выпадку слушнага адказу, увядзіце з клавіятуры адпаведны вынік і "
+"пстрыкніце па кнопцы OK каб спраўдзіць ваш адказ."
 
 #: activities/learn_decimals_additions/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -17124,7 +17163,7 @@ msgid ""
 "Click on the squares to subtract them and display the result of the "
 "operation, and click on the OK button to validate your answer."
 msgstr ""
-"Пстрыкніце па квадратах, каб адняць іх і паказаць вынік аперацыі. Затым "
+"Пстрыкніце па квадратах, каб адняць іх і паказаць вынік аперацыі, і "
 "пстрыкніце па кнопцы OK каб спраўдзіць ваш адказ."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:24
@@ -17133,8 +17172,8 @@ msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr ""
-"У выпадку калі адказ слушны, увядзіце адпаведны вынік і пстрыкніце па кнопцы "
-"OK каб спраўдзіць ваш адказ."
+"У выпадку слушнага адказу, увядзіце з клавіятуры адпаведны вынік і "
+"пстрыкніце па кнопцы OK каб спраўдзіць ваш адказ."
 
 #: activities/learn_decimals_subtractions/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -17294,6 +17333,12 @@ msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr ""
 
 #: activities/learn_quantities/Learn_quantities.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Arrange the pictures to make a coherent story. Drag the pictures from the "
+#| "sidebar to the corresponding dots, then click the OK button to validate "
+#| "your answer."
 msgctxt "Learn_quantities|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "
@@ -17301,9 +17346,8 @@ msgid ""
 "corresponds to the requested quantity. Then click on the OK button to "
 "validate your answer."
 msgstr ""
-"Перацягвайце стрэлку каб выбраць некалькі апельсінаў, і перацягвайце "
-"выбраныя апельсіны на пусты абшар. Паўтарайце гэтыя крокі, пакуль колькасць "
-"апельсінаў не стане роўнай паказанаму ліку. Затым пстрыкніце кнопку OK каб "
+"Упарадкуйце выявы, каб узнавіць паслядоўную гісторыю. Перацягвайце выявы з "
+"бакавой панэлі на адпаведныя пункты, затым пстрыкніце кнопку OK каб "
 "праверыць ваш адказ."
 
 #: activities/learn_quantities/resource/1/Data.qml:13
@@ -17794,9 +17838,12 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "Каптурок чараўніка (адыманне)"
+msgstr "Магічны каптурок"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -17887,9 +17934,12 @@ msgstr "%1x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "Каптурок чараўніка (складанне)"
+msgstr "Магічны каптурок"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -20605,7 +20655,7 @@ msgid ""
 "the empty spots of the board (by clicking on the spots)."
 msgstr ""
 "Вы з Туксам кожны пачынаеце з дзевяццю фішкамі, і робіце імі хады ў вольныя "
-"пункты на дошцы (пстрычком па выбранаму пункту)."
+"пункты (пстрычком па пункту) на дошцы."
 
 #: activities/nine_men_morris/NineMenMorris.qml:352
 msgctxt "NineMenMorris|"
@@ -20615,16 +20665,10 @@ msgid ""
 "are left on the board."
 msgstr ""
 "Калі Вам удалося ўтварыць млын (радок з трох фішак), то Вы забіраеце фішку "
-"Тукса. З сабраных млыноў можна забіраць фішкі толькі тады, калі няма асобных "
-"фішак на дошцы."
+"Тукса. Нельга забіраць фішкі з млыноў, пакуль яшчэ ёсць асобныя фішкі на "
+"дошцы."
 
 #: activities/nine_men_morris/NineMenMorris.qml:356
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "After all the pieces are placed, you and Tux will take turns to move "
-#| "them. Click on one of your pieces, and then on an adjacent empty spot to "
-#| "move it there. Green color spots indicates where you can move."
 msgctxt "NineMenMorris|"
 msgid ""
 "After all the pieces are placed, you and Tux will take turns to move them. "
@@ -20637,11 +20681,6 @@ msgstr ""
 "падказваюць мажлівыя хады."
 
 #: activities/nine_men_morris/NineMenMorris.qml:360
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
-#| "moved to any vacant spot on the board."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
@@ -20651,11 +20690,6 @@ msgstr ""
 "\"лятаць\" і могуць ставіцца на любое вольнае месца на дошцы."
 
 #: activities/nine_men_morris/NineMenMorris.qml:364
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you immobilize the computer or leave it with less than 3 pieces, then "
-#| "you win the game."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
@@ -22889,8 +22923,8 @@ msgctxt "ProgrammingMaze|"
 msgid ""
 "There are 3 instructions which you can use to code and lead Tux to the fish:"
 msgstr ""
-"Вось 3 інструкцыі, якімі вы можаце скарыстацца каб запраграмаваць і правесці "
-"Тукса да рыбкі:"
+"Для таго каб правесці Тукса да рыбкі вам можаце карыстацца трыма "
+"інструкцыямі:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:544
 msgctxt "ProgrammingMaze|"
@@ -22899,20 +22933,14 @@ msgid ""
 "facing."
 msgstr ""
 "<b>1. Рушыць наперад:</b> Перасоўвае Тукса на адзін крок наперад у накірунку "
-"яго позірку."
+"яго погляду."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:545
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgctxt "ProgrammingMaze|"
 msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgstr "<b>2. Павярнуць налева</b> Паварочвае Тукса налева."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:546
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgctxt "ProgrammingMaze|"
 msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgstr "<b>3. Павярнуць направа:</b> Паварочвае Тукса направа."
@@ -22920,22 +22948,14 @@ msgstr "<b>3. Павярнуць направа:</b> Паварочвае Тук
 #: activities/programmingMaze/ProgrammingMaze.qml:550
 msgctxt "ProgrammingMaze|"
 msgid "Main Function:"
-msgstr "Галоўная функцыя:"
+msgstr "Праграма:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:551
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "The execution of the code starts here."
 msgctxt "ProgrammingMaze|"
 msgid "The execution of the code starts here."
 msgstr "Выкананне коду пачынаецца адсюль."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:552
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-Click on any instruction in the <b>instruction area</b> to add it to the "
-#| "<b>Main Function</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-Click on any instruction in the <b>instruction area</b> to add it to the "
@@ -22945,11 +22965,6 @@ msgstr ""
 "<b>праграму</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:553
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-The instructions will execute in order until there's none left, or until "
-#| "a dead-end, or when Tux reaches the fish."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-The instructions will execute in order until there's none left, or until a "
@@ -22959,19 +22974,11 @@ msgstr ""
 "не трапіцца тупік, ці пакуль Тукс не дасягне рыбкі."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:563
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Procedure:"
 msgctxt "ProgrammingMaze|"
 msgid "Procedure:"
 msgstr "Працэдура:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:564
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>Procedure</b> is a reusable set of instructions which can be <b>used "
-#| "in the code by calling it where needed</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
@@ -22981,12 +22988,6 @@ msgstr ""
 "<b>ужыты ў кодзе выкліканнем яе ў патрэбным месцы</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:565
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main "
-#| "Function area</b> to add your code, click on the <b>Procedure</b> or "
-#| "<b>Main Function</b> label."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
@@ -23010,12 +23011,6 @@ msgid ""
 msgstr ""
 
 #: activities/programmingMaze/ProgrammingMaze.qml:577
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
-#| "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</"
-#| "b> label."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
@@ -26455,19 +26450,11 @@ msgid "Right Ballast Tank"
 msgstr "Правая баластная цыстэрна"
 
 #: activities/submarine/Submarine.qml:133
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Move the submarine to the other side of the screen."
 msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "Кіруйце падводную лодку да супрацьлеглага краю экрана."
 
 #: activities/submarine/Submarine.qml:136
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The leftmost item in the control panel is the engine of the submarine, "
-#| "indicating the current speed of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
@@ -26477,9 +26464,6 @@ msgstr ""
 "бягучай велічыні хуткасці падводнай лодкі."
 
 #: activities/submarine/Submarine.qml:139
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Increase or decrease the velocity of the submarine using the engine."
 msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr ""
@@ -26487,11 +26471,6 @@ msgstr ""
 "рухавіком."
 
 #: activities/submarine/Submarine.qml:142
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Press the + button to increase the velocity, or the - button to decrease "
-#| "the velocity."
 msgctxt "Submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
@@ -26500,9 +26479,6 @@ msgstr ""
 "Націсніце кнопку \"+\" для павелічэння хуткасці, альбо \"-\" для памяншэння."
 
 #: activities/submarine/Submarine.qml:149
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The item next to the engine is the ballast tank."
 msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr ""
@@ -26510,20 +26486,12 @@ msgstr ""
 "цыстэрнамі."
 
 #: activities/submarine/Submarine.qml:152
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The ballast tanks are used to float or dive under water."
 msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr ""
 "Баластныя цыстэрны выкарыстоўваюцца для ўсплывання ці пагружэння ў вадзе."
 
 #: activities/submarine/Submarine.qml:155
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "If the ballast tanks are empty, the submarine will float. If the ballast "
-#| "tanks are full of water, the submarine will dive underwater."
 msgctxt "Submarine|"
 msgid ""
 "If the ballast tanks are empty, the submarine will float. If the ballast "
@@ -26533,12 +26501,6 @@ msgstr ""
 "напоўненыя вадой, то падводная лодка пагружаецца пад ваду."
 
 #: activities/submarine/Submarine.qml:158
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Turning the upper valve on or off will alternatively allow or stop the "
-#| "water from filling in the ballast tank, thus allowing it to dive "
-#| "underwater."
 msgctxt "Submarine|"
 msgid ""
 "Turning the upper valve on or off will alternatively allow or stop the water "
@@ -26548,12 +26510,6 @@ msgstr ""
 "падачу вады ў баластную цыстэрну, рэгулюючы пагружэнне пад вадой."
 
 #: activities/submarine/Submarine.qml:161
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Turning the lower valve on or off will alternatively allow or stop the "
-#| "water from flushing out the ballast tank, thus allowing it to float on "
-#| "the surface of the water."
 msgctxt "Submarine|"
 msgid ""
 "Turning the lower valve on or off will alternatively allow or stop the water "
@@ -26564,11 +26520,6 @@ msgstr ""
 "выцяканне вады з баластнай цыстэрны, рэгулюючы ўсплыванне да паверхні вады."
 
 #: activities/submarine/Submarine.qml:168
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The rightmost item in the control panel controls the diving planes of the "
-#| "submarine"
 msgctxt "Submarine|"
 msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
@@ -26578,11 +26529,6 @@ msgstr ""
 "рулямі падводнай лодкі"
 
 #: activities/submarine/Submarine.qml:171
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The diving planes in a submarine are used to control the depth of the "
-#| "submarine accurately once it is underwater."
 msgctxt "Submarine|"
 msgid ""
 "The diving planes in a submarine are used to control the depth of the "
@@ -26592,11 +26538,6 @@ msgstr ""
 "занырвання пад вадой."
 
 #: activities/submarine/Submarine.qml:174
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Once the submarine is moving underwater, increasing or decreasing the "
-#| "angle of the planes will increase and decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "Once the submarine is moving underwater, increasing or decreasing the angle "
@@ -26607,11 +26548,6 @@ msgstr ""
 "лодкі."
 
 #: activities/submarine/Submarine.qml:177
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The + button will increase the depth of the submarine, while the - button "
-#| "will decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "The + button will increase the depth of the submarine, while the - button "
@@ -26621,17 +26557,11 @@ msgstr ""
 "паменшыць яе."
 
 #: activities/submarine/Submarine.qml:180
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Grab the crown to open the gate."
 msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "Злавіце карону, каб адкрыць шлюз."
 
 #: activities/submarine/Submarine.qml:183
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Check out the help menu for the keyboard controls."
 msgctxt "Submarine|"
 msgid "Check out the help menu for the keyboard controls."
 msgstr "Праз меню дапамогі можна даведацца пра кіраванне з клавіятуры."
@@ -28859,146 +28789,11 @@ msgstr "Пачаць"
 #~ msgstr "Знайдзіце адсутныя лікі."
 
 #, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Ctrl + S: save the image"
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Ctrl + D: save the drawing"
-#~ msgstr "Ctrl + S: захаваць выяву"
-
-#, fuzzy
-#~| msgctxt "FilesPanel|"
-#~| msgid "Save your image"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save vector image (SVG)"
-#~ msgstr "Захавайце вашую выяву"
-
-# Translation of gcompris_qt.po to Belarusian
-# Copyright (C) 2015 This file is part of KDE
-# This file is distributed under the license GPL version 3
-# or later versions approved by the membership of KDE e.V.
-#, fuzzy
-#~| msgid ""
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ msgstr ""
-#~ "Project-Id-Version: gcompris-by\n"
-#~ "POT-Creation-Date: \n"
-#~ "PO-Revision-Date: 2025-10-10 11:34+0300\n"
-#~ "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
-#~ "Language-Team: Belarusian\n"
-#~ "Language: be\n"
-#~ "MIME-Version: 1.0\n"
-#~ "Content-Type: text/plain; charset=UTF-8\n"
-#~ "Content-Transfer-Encoding: 8bit\n"
-#~ "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-#~ "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
-#~ "%100>=11 && n%100<=14 ? 2 : 3);\n"
-#~ "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-#~ "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
-#~ "%100>=11 && n%100<=14 ? 2 : 3);\n"
-#~ "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-#~ "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
-#~ "%100>=11 && n%100<=14 ? 2 : 3);\n"
-#~ "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-#~ "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
-#~ "%100>=11 && n%100<=14 ? 2 : 3);\n"
-#~ "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-#~ "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-#~ "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-#~ "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
-#~ "%100>=11 && n%100<=14 ? 2 : 3);\n"
-#~ "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-#~ "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
-#~ "%100>=11 && n%100<=14 ? 2 : 3);\n"
-#~ "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-#~ "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
-#~ "%100>=11 && n%100<=14 ? 2 : 3);\n"
-#~ "X-Qt-Contexts: true\n"
-#~ "X-Generator: Poedit 3.5\n"
-#~ "X-Crowdin-Project: gcompris-by\n"
-#~ "X-Crowdin-Project-ID: 418508\n"
-#~ "X-Crowdin-Language: be\n"
-#~ "X-Crowdin-File: gcompris_qt.po\n"
-#~ "X-Crowdin-File-ID: 10\n"
-#~ "X-Qt-Contexts: true\n"
-#~ "X-Generator: Poedit 2.2.1\n"
-#~ "X-Qt-Contexts: true\n"
-#~ "X-Generator: Poedit 2.2.1\n"
-#~ "X-Crowdin-Project: gcompris-by\n"
-#~ "X-Crowdin-Project-ID: 418508\n"
-#~ "X-Crowdin-Language: be\n"
-#~ "X-Crowdin-File: gcompris_qt.po\n"
-#~ "X-Crowdin-File-ID: 10\n"
-#~ "X-Qt-Contexts: true\n"
-#~ "X-Generator: Poedit 2.2.1\n"
-#~ "X-Crowdin-Project: gcompris-by\n"
-#~ "X-Crowdin-Project-ID: 418508\n"
-#~ "X-Crowdin-Language: be\n"
-#~ "X-Crowdin-File: gcompris_qt.po\n"
-#~ "X-Crowdin-File-ID: 10\n"
-#~ "X-Qt-Contexts: true\n"
-#~ "X-Generator: Poedit 2.2.1\n"
-#~ "X-Qt-Contexts: true\n"
-#~ "X-Generator: Poedit 2.2.1\n"
-#~ "X-Crowdin-Project: gcompris-by\n"
-#~ "X-Crowdin-Project-ID: 418508\n"
-#~ "X-Crowdin-Language: be\n"
-#~ "X-Crowdin-File: gcompris_qt.po\n"
-#~ "X-Crowdin-File-ID: 10\n"
-#~ "X-Qt-Contexts: true\n"
-#~ "X-Generator: Poedit 2.2.1\n"
-#~ "X-Crowdin-Project: gcompris-by\n"
-#~ "X-Crowdin-Project-ID: 418508\n"
-#~ "X-Crowdin-Language: be\n"
-#~ "X-Crowdin-File: gcompris_qt.po\n"
-#~ "X-Crowdin-File-ID: 10\n"
-#~ "X-Qt-Contexts: true\n"
-#~ "X-Generator: Poedit 2.2.1\n"
-#~ "X-Qt-Contexts: true\n"
-#~ "X-Generator: Poedit 2.2.1\n"
-#~ "X-Crowdin-Project: gcompris-by\n"
-#~ "X-Crowdin-Project-ID: 418508\n"
-#~ "X-Crowdin-Language: be\n"
-#~ "X-Crowdin-File: gcompris_qt.po\n"
-#~ "X-Crowdin-File-ID: 10\n"
-#~ "X-Qt-Contexts: true\n"
-#~ "X-Generator: Poedit 2.2.1\n"
-#~ "X-Crowdin-Project: gcompris-by\n"
-#~ "X-Crowdin-Project-ID: 418508\n"
-#~ "X-Crowdin-Language: be\n"
-#~ "X-Crowdin-File: gcompris_qt.po\n"
-#~ "X-Crowdin-File-ID: 10\n"
-#~ "X-Qt-Contexts: true\n"
-#~ "X-Generator: Poedit 2.2.1\n"
-#~ "X-Qt-Contexts: true\n"
-#~ "X-Generator: Poedit 2.2.1\n"
-#~ "X-Crowdin-Project: gcompris-by\n"
-#~ "X-Crowdin-Project-ID: 418508\n"
-#~ "X-Crowdin-Language: be\n"
-#~ "X-Crowdin-File: gcompris_qt.po\n"
-#~ "X-Crowdin-File-ID: 10\n"
-
-#, fuzzy
-#~| msgctxt "category_colors|"
-#~| msgid "Colors"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Color"
-#~ msgstr "Колеры"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "Districto Federal"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Distance to center"
-#~ msgstr "Федэральная акруга"
-
-#~ msgctxt "ColorsPanel|"
-#~ msgid "Palettes"
-#~ msgstr "Палітры"
-
+#~| msgctxt "BinaryBulb|"
+#~| msgid "What is the binary representation of %1?"
 #~ msgctxt "Frieze|"
 #~ msgid "What is the binary representation of %1?"
-#~ msgstr "Якое бінарнае прадстаўленне мае лік %1?"
+#~ msgstr "Якое бітавае прадстаўленне мае лік %1?"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "<b>Keyboard controls:"

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-22 00:38+0000\n"
-"PO-Revision-Date: 2025-12-18 10:25+0400\n"
+"POT-Creation-Date: 2025-12-23 02:37+0000\n"
+"PO-Revision-Date: 2025-08-14 13:14+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -346,7 +346,7 @@ msgstr "تعلّم كيف تعمل الدارات الإلكترونية الر�
 #: activities/drawing_wheels/ActivityInfo.qml:22
 #, kde-format
 msgid "Roll the gear in the cogwheel to draw."
-msgstr "دوّر الترس في العجلة المسننة للرسم."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"
 #: activities/drawletters/ActivityInfo.qml:18
@@ -1293,9 +1293,6 @@ msgstr ""
 #, kde-format
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr "اكتب الكلمات على لوحة المفاتيح قبل أن تصل إلى الأرض."
-
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "ضع هنا في التعليق نص صوت المقدمة"
 
 #~ msgid "play checkers against the computer"
 #~ msgstr "العب ”لعبة الداما“ مع الحاسوب"

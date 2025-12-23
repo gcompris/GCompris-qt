@@ -6046,10 +6046,10 @@ msgstr "Listrik Digital"
 #: activities/digital_electricity/ActivityInfo.qml:17
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital electric schema."
+#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "Membuat dan mensimulasikan skema listrik digital."
+msgstr "Membuat dan mensimulasikan sirkuit listrik digital"
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -29172,101 +29172,6 @@ msgstr "Mulai"
 #~ msgid "Find the missing numbers."
 #~ msgstr "Temukan angka yang hilang."
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid ""
-#~| "Select tools and colors from the foldable panels and draw images.<br><br>"
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Select wheel, gear, pen's position and color from the foldable panels and "
-#~ "start the gear.<br><br>"
-#~ msgstr ""
-#~ "Pilih alat dan warna dari panel yang dapat dilipat dan lukislah gambar. "
-#~ "<br><br>"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Ctrl + S: save the image"
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Ctrl + D: save the drawing"
-#~ msgstr "Ctrl + S: simpan gambar"
-
-#, fuzzy
-#~| msgctxt "FilesPanel|"
-#~| msgid "Save your image"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save vector image (SVG)"
-#~ msgstr "Simpan gambarmu"
-
-# Indonesian translation of gcompris
-#
-# Sokibi <istanalinux@gmail.com>, 2017-2025.
-# Iwan S. Tahari <iwantahari@gmail.com>,2017-2021.
-# Ahmad Haris <ahmadharis1982@gmail.com>, 2017, 2021-2024.
-# Ahmad Rasyid Salim <ahmadrasyidsalim@outlook.com>, 2017.
-# Aris Winardi <ariswinardy@gmail.com>, 2017.
-# Cahaya Maulidian <winluxhuman@gmail.com>, 2017.
-# Didiet A. Pambudiono <pambudiono.os@gmail.com>, 2017.
-# Faiq Aminuddin <dampuawang@gmail.com>, 2017, 2021.
-# Muhammad Rafi <rafi4142@gmail.com>, 2017.
-# Rania Amina <reaamina@gmail.com>, 2017, 2021.
-# Riva <rivawahyuda@gmail.com>, 2017.
-# Saputro Aryulianto <saputroyulianto@gmail.com>, 2017.
-# Syah Dwi Prihatmoko <syahdwi92@gmail.com>, 2017.
-# Wantoyo <wantoyek@gmail.com>, 2017, 2022, 2023.
-# rhirye <rhiryebatalipoe@gmail.com>, 2017.
-# Andika Triwidada <andika@gmail.com>, 2019-2025.
-# Wisnu Adi Santoso <waditos@gmail.com>, 2024.
-# Sartika Lestari <sartikaalestariii@gmail.com>, 2024, 2025.
-#
-#, fuzzy
-#~| msgid ""
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ msgstr ""
-#~ "Project-Id-Version: gcompris-id\n"
-#~ "POT-Creation-Date: \n"
-#~ "PO-Revision-Date: 2025-05-01 16:41+0700\n"
-#~ "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
-#~ "Language-Team: Indonesian\n"
-#~ "Language: id\n"
-#~ "MIME-Version: 1.0\n"
-#~ "Content-Type: text/plain; charset=UTF-8\n"
-#~ "Content-Transfer-Encoding: 8bit\n"
-#~ "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#~ "X-Generator: Poedit 3.5\n"
-#~ "X-Qt-Contexts: true\n"
-#~ "X-Crowdin-Project: gcompris-id\n"
-#~ "X-Crowdin-Project-ID: 481873\n"
-#~ "X-Crowdin-Language: id\n"
-#~ "X-Crowdin-File: /gcompris-id/25.1/gcompris_qt.po\n"
-#~ "X-Crowdin-File-ID: 130\n"
-
-#, fuzzy
-#~| msgctxt "category_colors|"
-#~| msgid "Colors"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Color"
-#~ msgstr "Warna-warna"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "Districto Federal"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Distance to center"
-#~ msgstr "Districto Federal"
-
-#~ msgctxt "ColorsPanel|"
-#~ msgid "Palettes"
-#~ msgstr "Palet"
-
-#, fuzzy
-#~| msgctxt "BinaryBulb|"
-#~| msgid "What is the binary representation of %1?"
-#~ msgctxt "Frieze|"
-#~ msgid "What is the binary representation of %1?"
-#~ msgstr "Apa bilangan biner dari %1?"
-
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Grammatical analysis"
 #~ msgstr "Analisa tata bahasa"
@@ -29286,6 +29191,13 @@ msgstr "Mulai"
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Leave the box blank if no class matches."
 #~ msgstr "Biarkan kotak kosong jika tidak ada kelas yang sesuai."
+
+#, fuzzy
+#~| msgctxt "BinaryBulb|"
+#~| msgid "What is the binary representation of %1?"
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr "Apa bilangan biner dari %1?"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"

@@ -5926,9 +5926,12 @@ msgstr "Elektronika cyfrowa"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "Twórz i symuluj cyfrowe układy elektroniczne."
+msgstr "Twórz i symuluj cyfrowe układy elektroniczne"
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -8676,7 +8679,7 @@ msgstr "Naciśnij na miejscu występowania tej piramidy."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr "Zakazane Miasto"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8691,21 +8694,12 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
-"Zakazane Miasto, znajdujące się w sercu Beijin w Chinach, jest wspaniałym "
-"imperialnym pałacem, który służył jako dom cesarzy chińskich i jako ośrodek "
-"polityczny narodu prze niemal 500 lat, od dynastii Ming (1368-1644) do końca "
-"dynastii Qing (1644-1912). Budowany na przestrzeni 1406 i 1420, to rozległe "
-"arcydzieło architektoniczne mieści się na 180 akrach i stanowi 980 "
-"zachowanych budynków z 8700 pokojami, przedstawiającymi wspaniałe, "
-"tradycyjne, chińskie wzornictwo. Okrążone fosą i masywnym murem, Zakazane "
-"Miasto było niegdyś niedostępne dla ogółu ludności, co symbolizowało "
-"imperialną moc i wyjątkowość."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr "Gigantyczny Buddha Leshan"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8723,9 +8717,12 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Pałac Potala"
+msgstr "Pałac Mysore"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8745,7 +8742,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr "Terakotowa Armia"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8762,7 +8759,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr "Pagody Słońca i Księżyca"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8780,9 +8777,12 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Wieże Diaolou"
+msgstr "Wieża Eiffla"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8799,11 +8799,17 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:85
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Zabytki Chin"
+msgstr "Zabytki Indii"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Naciśnij na miejscu występowania danego zbytku."
@@ -8812,7 +8818,7 @@ msgstr "Naciśnij na miejscu występowania danego zbytku."
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr "Panteon"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8829,24 +8835,12 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
-"Panteon w Rzymie we Włoszech jest ikoniczną, starożytną świątynią wybudowaną "
-"ok. 126 roku nasze ery podczas rządów Cesarza Hariana w miejscu poprzednich "
-"struktur zleconych przez Marcusa Agrippa. Ceniony za swoją architektoniczną "
-"doskonałość, posiada ogromny zasklepiony dach z rozetą w środku, "
-"symbolizującą niebo i umożliwiającą światłu dziennemu oświetlanie wnętrza. "
-"Pierwotnie wybudowany na cześć wszystkich bogów rzymskich, później "
-"przekształcony w 609 naszej ery na kościół chrześcijański, znany jako "
-"Bazylika Św. Marii i Męczenników Santa Maria ad Martyres). Jego kopuła, "
-"największa, niezbrojona betonowa kopuła na świecie, stanowi o niezwykłej "
-"inżynierii i symetrii, która inspiruje architektów od wieków. Harmoniczne "
-"proporcje i historyczne znaczenie, czyni go ponadczasowym arcydziełem "
-"klasycznej architektury."
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr "Duomo Di Milano"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8861,22 +8855,15 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
-"Duomo di Milano, znane także jako Katedra w Mediolanie, jest znanym gotyckim "
-"arcydziełem, znajdującym się w sercu Mediolanu we Włoszech. Budowany przez "
-"niemal sześć wieków, jest to jedna z największych katedr na świecie i symbol "
-"dziedzictwa architektonicznego i kulturowego Mediolanu. Jej zmyślna fasada, "
-"zdobiona niezliczonymi statuami, iglicami i gargulcami, odzwierciedla "
-"wielkość gotyckiej architektury. Odwiedzający mogą podziwiać jej zapierające "
-"dech w piersiach wnętrza, witraże oraz zmyślne marmurowe szczegóły. Mogą "
-"także skierować wzrok ku sufitowi, aby chłonąć zapierające dech w piersiach "
-"widoki miasta i alp. Duomo stanowi dziedzictwo bogatej historii i "
-"doskonałości architektonicznej."
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
+#, fuzzy
+#| msgctxt "board4|"
+#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Katedra we Florencji"
+msgstr "Katedra w Wormacji"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8892,22 +8879,15 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
-"Katedra w Florencji, oficjalnie znana jako Cattedrale di Santa Maria del "
-"Fiore, jest uznanym arcydziełem gotyckiej i renesansowej architektury, które "
-"znajduje się we Florencji we Włoszech. Ukończona w 1436, znana jest ze swej "
-"masywnej kopuły wyłożonej czerwonymi dachówkami i zaprojektowanej przez "
-"Filippo Brunelleschi, która pozostaje cudem architektonicznym oraz symbolem "
-"miasta. Zmyślna fasada marmurowa katedry, dodana w 19-tym wieku, uzupełnia "
-"jej bogato zdobione wnętrze i artystyczne bogactwo. Razem z Campanilą Giotta "
-"oraz Baptysterium Św. Jana, składa się na Miejsce Dziedzictwa Światowego "
-"UNESCO i przyciąga miliony odwiedzających rocznie ze względu na swoją "
-"historyczne, kulturowe i architektoniczne znacznie."
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Krzywa Wieża w Pizie"
+msgstr "Wieża Hanoi"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8922,21 +8902,12 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
-"Krzywa Wieża w Pizie, znajdująca się we włoskim mieście Pisa, jest światowo "
-"uznanym cudem. Zbudowana jako wolnostojąca dzwonnica dla katedry miejskiej, "
-"znana jest ze swojego niezamierzonego pochylenia, spowodowanego niestabilnym "
-"fundamentem. Zaczęta w 1173, budowa wieży zajęła niemal 200 lat, podczas "
-"której próbowano ustabilizować jej pochylenie. Wznosi się na około 56 metrów "
-"(183 stopy), i zawiera 8 pięter we wzornictwie rzymskim, a także komnatę z "
-"dzwonem przyozdobioną zmyślnie wyrzeźbionymi kolumnami i łukami. Uznana za "
-"Miejsce Dziedzictwa Światowego UNESCO, pozostaje symbolem wytrwałości "
-"pomysłowości."
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr "Bazylika Św. Marka"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -8957,7 +8928,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr "Pompeje"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -8973,32 +8944,31 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
-"Pompeje były starożytnym miastem rzymskim, znajdującym się obok "
-"współczesnego Neapolu we Włoszech, które zachowały się po przykryciu ich "
-"przez erupcję Góry Wezuwiusz w 79 roku naszej ery. Erupcja wyzwoliła "
-"śmiertelne połączenie popiołu, pumeksu oraz piroklastycznych prądów, które "
-"pokryło miasto i ich mieszkańców, zachowują budynki, artefakty, a nawet "
-"ludzkie pozostałości w niesamowitych szczegółach. Odkrywki w Pompei "
-"dostarczyły cennej wiedzy na temat życia Rzymskiego, architektury, "
-"społeczeństwa, a także dobrze rozplanowanych ulic, domów, łaźni publicznych "
-"i świątyń. Miejsce jest teraz Miejscem Dziedzictwa Światowego UNESCO i "
-"pozostaje jednym z najważniejszych odkryć archeologicznych w historii."
 
 #: activities/explore_monuments/resource/board/board8.qml:85
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Zabytki Włoch"
+msgstr "Zabytki Indii"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Naciśnij na miejscu występowania danego zbytku."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Zamek Himeji"
+msgstr "Mieszana wielkość liter"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -9011,19 +8981,12 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
-"Himeji-jo jest najznamienitszym zachowanym przykładem wczesnej 17-to "
-"wiecznej japońskiej architektury zamkowej. Składa się z 83 budynków z wysoko "
-"rozwiniętymi systemami obronnymi i pomysłowymi urządzeniami ochronnymi z "
-"początków okresu Shogun. Jest to arcydzieło budownictwa w drewnie, łączące "
-"funkcjonalność z estetycznym powabem, zarówno w swoim wytwornym wyglądzie "
-"ujednoliconym z wytynkowanymi na biało ścianami ziemnymi, jak i subtelnością "
-"stosunków pomiędzy masami budynków i mnogością warstw dachów."
 
 #: activities/explore_monuments/resource/board/board9.qml:28
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr "Park Pomniku Pokoju Hiroshima"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -9039,22 +9002,12 @@ msgid ""
 "a solemn space for reflection, honoring the lives lost and advocating for "
 "global peace."
 msgstr ""
-"Park Pomnika Pokoju Hiroshimy jest symbolem pokoju i upamiętnieniem "
-"niszczących skutków wojny. Znajdujący się w Hiroshimie w Japonii, park jest "
-"poświęcony pamięci ofiar bombardowania atomowego z 6. sierpnia 1945. W parku "
-"znajduje się kilka pomników, m. in. znaną Kopułę Bomby Atomowej, która "
-"kiedyś była budynkiem rządowym, a teraz stanowi Miejsce Dziedzictwa "
-"Światowego UNESCO. W parku znajduje się też Muzeum Pamięci Pokoju w "
-"Hiroshimie, które zaznajamia odwiedzających z wydarzeniami związanymi z "
-"bombardowaniem i szerzy postawę pokoju, pozbycia się przemocy oraz "
-"rozbrojenia atomowego. Przestrzeń ta jest uroczystym miejscem do refleksji, "
-"szanowania utraconych żyć i szerzenia pokoju na świecie."
 
 #: activities/explore_monuments/resource/board/board9.qml:39
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr "Świątynia Arakura Fuji Sengen"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -9070,39 +9023,14 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
-"Świątynia została założona w 705, aby uczcić bóstwo tego miejsca. W "
-"następstwie wielkiej erupcji Góry Fuji w 807, cesarz wysłał imperialny "
-"orszak do tej świątyni, aby odprawili rytuał zatrzymania erupcji. Mówiono, "
-"że w czasie Okresu Walczących Regionów, gdy Takeda Nobutora, ojciec słynnego "
-"wodza wojennego Takedy Shingena, walczył z Rodziną Hojo, ustanowił tam obóz, "
-"pomodlił się o zwycięstwo i wygrał bitwę. W następstwie przeznaczył swój "
-"miecz tej świątyni. Dzisiaj, ludność miejscowa oraz przyjezdna z dalekich "
-"miejsc, odwiedza świątynię, aby odsunąć złe, pomodlić się o szczęście w "
-"rodzinie, a także pomyślne narodziny dzieci. Wiosnę, kwitnące drzewo wiśni "
-"zakwita i tłumy zbierają się, aby podziwiać zapierający dech w piersiach "
-"widok na Górę Fuji."
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr "Zamek Okinawa Shuri"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:51
-#, fuzzy
-#| msgctxt "board9|"
-#| msgid ""
-#| "Shuri Castle, located in Naha, Okinawa, Japan, is a UNESCO World Heritage "
-#| "Site and a symbol of the Ryukyu Kingdom's rich cultural history. "
-#| "Originally constructed in the 14th century, the castle served as the "
-#| "political, economic, and cultural hub of the kingdom for centuries. "
-#| "Renowned for its distinctive fusion of Chinese and Japanese architectural "
-#| "styles, Shuri Castle features vermillion lacquered structures, ornate "
-#| "decorations, and a commanding hilltop position. Though destroyed during "
-#| "World War II, it was meticulously reconstructed and became a key tourist "
-#| "attraction. Tragically, much of the castle was lost in a fire in 2019, "
-#| "but efforts to restore it are ongoing, reflecting its enduring importance "
-#| "to Okinawa's heritage."
 msgctxt "board9|"
 msgid ""
 "Shuri Castle, located in Naha, Okinawa, Japan, is a UNESCO World Heritage "
@@ -9116,24 +9044,19 @@ msgid ""
 "much of the castle was lost in a fire in 2019, but efforts to restore it are "
 "ongoing, reflecting its enduring importance to Okinawa's heritage."
 msgstr ""
-"Zamek Shuri, znajdujący się w Naha w Okinawa w Japonii jest miejscem "
-"dziedzictwa światowego UNESCO i symbolem historycznym bogactwa kulturowego "
-"Królestwa Ryukyu. Pierwotnie stworzony w 14-tym wieku, zamek służył "
-"królestwu przez wieki jako ośrodek polityczny, ekonomiczny i kulturowy. "
-"Ceniony za swoje wyróżniające się połączenie stylów architektonicznych z "
-"Chin i Japonii, Zamek Shuri posiada struktury lakierowane na cyno-brązowo, "
-"zdobienia oraz umiejscowienie na wzgórzu. Mimo że został zniszczony podczas "
-"drugiej wojny światowej, to został ze szczegółami odtworzony i stał się "
-"atrakcją turystyczną. Tragicznie, większa część zamku została utracona w "
-"pożarze w 2019, lecz trwają prace nad jego odtworzeniem, co odzwierciedla "
-"jego nieustającą ważność w dziedzictwie Okinawy."
 
 #: activities/explore_monuments/resource/board/board9.qml:63
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Zabytki Japonii"
+msgstr "Zabytki Francji"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Naciśnij na miejscu występowania danego zbytku."
@@ -17913,9 +17836,12 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "Kapelusz magika (odejmowanie)"
+msgstr "Kapelusz magika"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -18006,9 +17932,12 @@ msgstr "%1x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "Kapelusz magika (dodawanie)"
+msgstr "Kapelusz magika"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -29052,66 +28981,6 @@ msgstr "Rozpocznij"
 #~ msgid "Find the missing numbers."
 #~ msgstr "Znajdź brakujące liczby."
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid ""
-#~| "Select tools and colors from the foldable panels and draw images.<br><br>"
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Select wheel, gear, pen's position and color from the foldable panels and "
-#~ "start the gear.<br><br>"
-#~ msgstr ""
-#~ "Wybierz narzędzia i barwy z zwijalnych pasków i rysuj obrazy.<br> <br>"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Ctrl + S: save the image"
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Ctrl + D: save the drawing"
-#~ msgstr "Ctrl + S: zapisz obraz"
-
-#, fuzzy
-#~| msgctxt "FilesPanel|"
-#~| msgid "Save your image"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save vector image (SVG)"
-#~ msgstr "Zapisz swój obraz"
-
-#, fuzzy
-#~| msgid ""
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ msgstr ""
-#~ "MIME-Version: 1.0\n"
-#~ "Content-Type: text/plain; charset=UTF-8\n"
-#~ "Content-Transfer-Encoding: 8bit\n"
-#~ "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n"
-#~ "%100<10 || n%100>=20) ? 1 : 2);\n"
-#~ "X-Language: pl\n"
-#~ "X-Qt-Contexts: true\n"
-
-#, fuzzy
-#~| msgctxt "category_colors|"
-#~| msgid "Colors"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Color"
-#~ msgstr "Barwy"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "Districto Federal"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Distance to center"
-#~ msgstr "Obwody Federalne"
-
-#~ msgctxt "ColorsPanel|"
-#~ msgid "Palettes"
-#~ msgstr "Palety"
-
-#~ msgctxt "Frieze|"
-#~ msgid "What is the binary representation of %1?"
-#~ msgstr "Jaka jest reprezentacja dwójkowa %1?"
-
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Grammatical analysis"
 #~ msgstr "Analiza gramatyczna"
@@ -29131,6 +29000,10 @@ msgstr "Rozpocznij"
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Leave the box blank if no class matches."
 #~ msgstr "Pozostaw pole pustym, jeśli żadna z klas nie pasuje."
+
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr "Jaka jest reprezentacja dwójkowa %1?"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "<b>Keyboard controls:"
@@ -34534,6 +34407,19 @@ msgstr "Rozpocznij"
 #~ msgctxt "ConfigurationItem|"
 #~ msgid "Sounds"
 #~ msgstr "Dźwięki"
+
+#, fuzzy
+#~| msgid ""
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ msgstr ""
+#~ "MIME-Version: 1.0\n"
+#~ "Content-Type: text/plain; charset=UTF-8\n"
+#~ "Content-Transfer-Encoding: 8bit\n"
+#~ "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n"
+#~ "%100<10 || n%100>=20) ? 1 : 2);\n"
+#~ "X-Language: pl\n"
+#~ "X-Qt-Contexts: true\n"
 
 #~ msgctxt "DialogConfig|"
 #~ msgid "Buy the full version"

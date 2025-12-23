@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-22 00:38+0000\n"
+"POT-Creation-Date: 2025-12-23 02:37+0000\n"
 "PO-Revision-Date: 2025-01-05 10:58+0100\n"
 "Last-Translator: Envel Kervoas <envelkervoas@free.fr>\n"
 "Language-Team: Breton <kde-i18n-doc@kde.org>\n"
@@ -1378,11 +1378,11 @@ msgstr ""
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr "Bizskriv ar gerioù gant da glavier a-raok ma vo tizhet al leur gante."
 
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "Lak amañ en displegadenn an testenn evit mouezh an digoradur."
-
 #~ msgid "play checkers against the computer"
 #~ msgstr "C'hoari damez a-enep an urzhiataer"
+
+#~ msgid "put here in comment the text for the intro voice"
+#~ msgstr "Lak amañ en displegadenn an testenn evit mouezh an digoradur."
 
 #~ msgid ""
 #~ "Change the planets' gravitational force by moving the sliders up and "

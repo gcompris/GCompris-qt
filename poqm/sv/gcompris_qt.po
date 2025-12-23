@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-11-21 01:48+0100\n"
+"PO-Revision-Date: 2025-03-26 17:13+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: sv\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 25.08.3\n"
+"X-Generator: Lokalize 24.12.0\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -5925,9 +5925,12 @@ msgstr "Digital elektricitet"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "Skapa och simulera en digital logikkrets."
+msgstr "Skapa och simulera en digital logikkrets"
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -7525,6 +7528,13 @@ msgid "Chichén Itzá"
 msgstr "Chichén Itzá"
 
 #: activities/explore_monuments/resource/board/board1.qml:20
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid ""
+#| "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
+#| "the Yucatan Peninsula in Mexico, between Valladolid and Merida. It was "
+#| "established before the period of Christopher Colombus and probably served "
+#| "as the religion center of Yucatan for a while."
 msgctxt "board1|"
 msgid ""
 "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
@@ -7534,7 +7544,7 @@ msgid ""
 msgstr ""
 "Chichen Itza, som betyder “vid Itza-källans mynning”, är en Mayastad på "
 "Yucatanhalvön i Mexico, mellan Valladolid och Merida. Den grundades innan "
-"Christopher Columbus tid och fungerade troligen som det religiösa centret på "
+"Christopher Colombus tid och fungerade troligen som det religiösa centret på "
 "Yucatan under en period."
 
 #: activities/explore_monuments/resource/board/board1.qml:30
@@ -8634,7 +8644,7 @@ msgstr "Klicka på platsen för den angivna pyramiden."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr "Förbjudna staden"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8649,21 +8659,12 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
-"Den förbjudna staden, som ligger i hjärtat av Peking i Kina, är ett "
-"magnifikt kejserligt palatskomplex som fungerade som hem för kinesiska "
-"kejsare och nationens politiska centrum i nästan 500 år, från Ming-dynastin "
-"(1368–1644) till slutet av Qing-dynastin (1644–1912). Byggt mellan 1406 och "
-"1420, sträcker sig det vidsträckta arkitektoniska mästerverket över 180 "
-"hektar och har över 980 bevarade byggnader med 8 700 rum, som visar upp "
-"traditionell kinesisk palatsliknande design. Omgiven av en vallgrav och en "
-"massiv mur var den förbjudna staden en gång otillgänglig för allmänheten, "
-"vilket symboliserade imperialistisk makt och exklusivitet."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr "Jättebuddhan i Leshan"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8678,21 +8679,15 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
-"Jättebuddhan i Leshan, belägen i Sichuan-provinsen i Kina, är en kolossal "
-"staty uthuggen från en klippa vid sammanflödet av floderna Min, Dadu och "
-"Qingyi. Med sin höjd av 71 meter (233 fot), är det den högsta forntida "
-"statyn i världen och medlem av UNESCO: s världsarvslista. Byggd under "
-"Tangdynastin (713–803 e.Kr.), representerar statyn Maitreya, framtidens "
-"Buddha, och skapades för att lugna det turbulenta vattnet som hotar lokal "
-"båttrafik. Genialiskt designad, inkluderar statyn ett dolt dräneringssystem "
-"för att förhindra erosion. Dess fridfulla uttryck och invecklade hantverk "
-"gör den till en symbol för andlig och konstnärlig prestation."
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Potalapalatset"
+msgstr "Mysorepalatset"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8707,21 +8702,12 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
-"Potala-palatset, beläget på den röda klippan i Lhasa i Tibet, är en berömd "
-"symbol för tibetansk kultur och medlem av UNESCO: s världsarvslista. "
-"Ursprungligen byggd på 700-talet och utvidgad på 1600-talet, fungerade det "
-"som vinterresidens för Dalai Lama och centrum för tibetanskt styre. "
-"Palatset, som är 13 våningar högt med över 1 000 rum, kombinerar intrikat "
-"tibetansk arkitektur, livfulla väggmålningar och heliga reliker. Det är "
-"uppdelat i Vita palatset, med administrativa områden, och Röda palatset, "
-"tillägnat religionsstudier och bön. Potala-palatset är ett vittnesbörd över "
-"Tibets andliga och historiska arv."
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr "Terrakottaarmén"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8733,18 +8719,12 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
-"Terrakottaarmén är en samling av tusentals lersoldater, hästar och vagnar i "
-"naturlig storlek begravda med Kinas första kejsare, Qin Shi Huang, för att "
-"följa med honom i livet efter detta. Upptäckt 1974 nära Xi'an, går figurerna "
-"tillbaka till cirka 210 f.Kr. och hyllas för sina otroliga detaljer, med "
-"varje krigare unikt utformad för att representera de olika leden och "
-"rollerna i en gammal kinesisk armé."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr "Sol- och månpagoderna"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8759,21 +8739,15 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
-"Sol- och månpagoderna, som ligger i Guilin i Kina, är berömda tvillingtorn "
-"som symboliserar stadens kulturella och andliga arv. De byggdes "
-"ursprungligen under Tangdynastin och rekonstruerades på 1900-talet som "
-"slående landmärken vid sjön Shanhu. Solpagoden, som är 41 meter hög, är en "
-"bronsstruktur, den högsta i sitt slag i världen, medan månpagoden, på 35 "
-"meter, är byggd av glaserade keramikplattor. Pagoderna representerar "
-"harmonin mellan yin och yang och är förbundna med en undervattenstunnel av "
-"glas. De är upplysta på natten och är populära attraktioner som visar upp "
-"traditionell kinesisk arkitektur och modern uppfinningsrikedom."
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Diaolou-tornen"
+msgstr "Eiffeltornet"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8788,23 +8762,19 @@ msgid ""
 "UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
 "towers remain, offering insight into this unique architectural heritage."
 msgstr ""
-"Diaolou-tornen, som finns i Kaiping, Guangdong-provinsen, i Kina, är befästa "
-"flervåningsbyggnader byggda från slutet av 1800-talet till början av 1900-"
-"talet för att skydda mot banditer och översvämningar. De blandar "
-"västerländska arkitektoniska stilar som romansk och barock med traditionella "
-"kinesiska element, och återspeglar rikedomen och inflytandet från utländska "
-"kinesiska emigranter. Tornen är byggda med armerad betong och symboliserar "
-"en period av kulturell och ekonomisk förvandling på landsbygden i Kina. De "
-"lades till i UNESCO:s världsarvslista 2007. Cirka 1 800 finns kvar av de "
-"ursprungliga 3 000 tornen, vilka ger en inblick i detta unika arkitektoniska "
-"arv."
 
 #: activities/explore_monuments/resource/board/board7.qml:85
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Kinas monument"
+msgstr "Indiens monument"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Klicka på platsen för det angivna monumentet."
@@ -8813,7 +8783,7 @@ msgstr "Klicka på platsen för det angivna monumentet."
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr "Pantheon"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8830,23 +8800,12 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
-"Pantheon i Rom i Italien, är ett berömt antikt tempel byggt runt 126 e.Kr. "
-"under kejsar Hadrianus regeringstid, på platsen för tidigare byggnader "
-"beställda av Marcus Agrippa. Det är känt för sin arkitektoniska briljans och "
-"har ett massivt kupoltak med en central oculus, som symboliserar himlen, "
-"vilket tillåter naturligt ljus att lysa upp interiören. Ursprungligen "
-"tillägnad alla romerska gudar, omvandlades den senare till en kristen kyrka, "
-"känd som Santa Maria ad Martyres (Santa Maria Rotonda), år 609 e.Kr. Dess "
-"kupol, den största oarmerade betongkupolen i världen, visar anmärkningsvärd "
-"ingenjörskonst och symmetri, och har inspirerat arkitekter i århundraden. "
-"Pantheons harmoniska proportioner och historiska betydelse gör det till ett "
-"tidlöst mästerverk av klassisk arkitektur."
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr "Milanos katedral"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8861,21 +8820,15 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
-"Duomo di Milano, även känd som Milanos katedral, är ett berömt gotiskt "
-"mästerverk beläget i hjärtat av Milano i Italien. Byggnationen pågick under "
-"nästan sex århundraden. Den är en av de största katedralerna i världen och "
-"en symbol för Milanos konstnärliga och kulturella arv. Dess intrikata fasad "
-"är prydd med otaliga statyer, spiror och gargouiller, vilket återspeglar "
-"storheten i gotisk arkitektur. Besökare kan utforska dess fantastiska "
-"interiör, med vackra målade glasfönster och intrikata marmordetaljer, eller "
-"gå upp till taket för en hisnande utsikt över staden och Alperna. Katedralen "
-"är ett vittnesbörd över Italiens rika historia och arkitektoniska briljans."
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
+#, fuzzy
+#| msgctxt "board4|"
+#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Katedralen i Florens"
+msgstr "Worms katedral"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8891,21 +8844,15 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
-"Katedralen i Florens, officiellt känd som Cattedrale di Santa Maria del "
-"Fiore, är ett berömt mästerverk av gotisk och renässansarkitektur som ligger "
-"i Florens i Italien. Den färdigställdes 1436 och är känd för sin massiva "
-"rödkaklade kupol designad av Filippo Brunelleschi, som förblir ett tekniskt "
-"underverk och en symbol för staden. Katedralens invecklade marmorfasad, "
-"tillkom på 1800-talet, och kompletterar dess rikt dekorerade interiör och "
-"konstnärliga skatter. Tillsammans med Giottos klocktorn och dopkapellet "
-"utgör den ett av UNESCO: s världsarv, och drar miljontals besökare årligen "
-"för dess historiska, kulturella och arkitektoniska betydelse."
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Lutande tornet i Pisa"
+msgstr "Tornen i Hanoi"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8920,21 +8867,12 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
-"Det lutande tornet i Pisa, som ligger i den italienska staden Pisa, är ett "
-"globalt välkänt arkitektoniskt underverk. Det är byggt som det fristående "
-"klocktornet för stadens katedral och är berömt för sin oavsiktliga lutning, "
-"orsakad av instabil grund. Tornets konstruktion började 1173 och sträckte "
-"sig över nästan 200 år, under vilka ansträngningar gjordes för att "
-"stabilisera dess lutning. Med cirka 56 meters (183 fot) höjd, har tornets "
-"romanska design åtta våningar, inklusive en klockkammare, prydd med intrikat "
-"snidade pelare och valv. Erkänd som ett av UNESCO: s världsarv, förblir det "
-"en symbol för motståndskraft och uppfinningsrikedom."
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr "Markuskyrkan i Venedig"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -8950,22 +8888,12 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
-"Markuskyrkan, som ligger i Venedig i Italien, är ett berömt mästerverk av "
-"bysantinsk arkitektur och ett av stadens mest kända landmärken. "
-"Ursprungligen byggd 828 för att hysa relikerna av evangelisten Markus, "
-"byggdes den om till sin nuvarande form på 1000-talet. Känd för sin "
-"överdådiga design, har basilikan en blandning av österländska och "
-"västerländska influenser, uppenbar i de fem kupolerna, invecklade mosaikerna "
-"och utsmyckade fasaden prydd med statyer och sniderier. Interiören är rikt "
-"dekorerad med guldmosaik och marmorgolv, som visar upp den venetianska "
-"republikens rikedom och makt. I närheten av Markusplatsen, är den "
-"fortfarande en symbol för Venedigs historiska, kulturella och religiösa arv."
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr "Pompeji"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -8981,32 +8909,31 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
-"Pompeji var en forntida romersk stad belägen nära dagens Neapel, Italien, "
-"berömt bevarad efter att ha begravts av vulkanen Vesuvius utbrott år 79 e."
-"Kr. Utbrottet släppte lös en dödlig kombination av aska, pimpsten och "
-"pyroklastiska flöden, som uppslukade staden och dess invånare, och bevarade "
-"byggnader, föremål och till och med mänskliga kvarlevor i otrolig detalj. "
-"Utgrävningar av Pompeji har gett värdefulla insikter i det romerska dagliga "
-"livet, arkitekturen och samhället, och avslöjat en stad med välplanerade "
-"gator, hem, offentliga bad och tempel. Platsen är nu uppsatt på UNESCO: s "
-"världsarvslista och är fortfarande en av de viktigaste arkeologiska "
-"upptäckterna genom historien."
 
 #: activities/explore_monuments/resource/board/board8.qml:85
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Italiens monument"
+msgstr "Indiens monument"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Klicka på platsen för det angivna monumentet."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Himeji slott"
+msgstr "Blandade bokstäver"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -9019,19 +8946,12 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
-"Himeji slott är det finaste bevarade exemplet på japansk slottsarkitektur "
-"från början av 1600-talet, och består av 83 byggnader med högt utvecklade "
-"försvarssystem och geniala skyddsanordningar från början av Shogun-perioden. "
-"Det är ett mästerverk av konstruktion i trä, som kombinerar funktion med "
-"estetisk dragningskraft, både i sitt eleganta utseende bestående av "
-"vitputsade jordväggar och i subtiliteten i förhållandet mellan byggnaderna "
-"och de många taken."
 
 #: activities/explore_monuments/resource/board/board9.qml:28
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr "Hiroshimas fredspark"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -9047,21 +8967,12 @@ msgid ""
 "a solemn space for reflection, honoring the lives lost and advocating for "
 "global peace."
 msgstr ""
-"Hiroshimas fredspark är en symbol för fred och en påminnelse om krigets "
-"förödande konsekvenser. Beläget i Hiroshima i Japan, är parken ett "
-"minnesmärke över offren för atombombningen den 6 augusti 1945. Parken har "
-"flera monument, inklusive det berömda fredsmonumentet, som en gång var en "
-"regeringsbyggnad och nu är uppsatt på UNESCO:s världsarvslista. Parken "
-"rymmer också fredsmuseet, som informerar besökare om händelserna kring "
-"bombningen och främjar ett budskap om fred, ickevåld och vikten av "
-"kärnvapennedrustning. Det fungerar som ett högtidligt utrymme för "
-"eftertanke, hedrar de förlorade liven och förespråkar global fred."
 
 #: activities/explore_monuments/resource/board/board9.qml:39
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr "Arakura Fuji Sengen helgedom"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -9077,22 +8988,12 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
-"Helgedomen grundades 705 för att befästa platsens gudom. Efter det stora "
-"utbrottet av Fuji 807 sände kejsaren ett kejserligt sändebud till helgedomen "
-"för att utföra en ritual för att stoppa utbrottet. Det sägs att under de "
-"stridande staternas period, när Takeda Nobutora, far till en berömd "
-"krigsherre Takeda Shingen, kämpade mot familjen Hojo, slog han läger här, "
-"bad om seger och vann striden. Han tillägnade sedan sitt svärd till "
-"helgedomen. Idag besöker lokalbefolkningen och långväga resenärer helgedomen "
-"för att avvärja ondska, för att be om familjelycka och säkra födslar. På "
-"våren blommar körsbärsträden och folkmassor samlas för att njuta av den "
-"fantastiska utsikten över Fuji."
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr "Okinawa Shuri slott"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -9108,24 +9009,19 @@ msgid ""
 "much of the castle was lost in a fire in 2019, but efforts to restore it are "
 "ongoing, reflecting its enduring importance to Okinawa's heritage."
 msgstr ""
-"Shuri slottet, som ligger i Naha, Okinawa, Japan, är uppsatt på UNESCO: s "
-"världsarvslista och är en symbol för kungariket Ryukyus rika kulturhistoria. "
-"Slottet, som ursprungligen byggdes på 1300-talet, fungerade som det "
-"politiska, ekonomiska och kulturella navet i kungariket i århundraden. Shuri "
-"slottet är känt för sin distinkta blandning av kinesiska och japanska "
-"arkitektoniska stilar och har cinnoberlackerade strukturer, utsmyckade "
-"dekorationer och ett mäktigt läge på en klippa. Trots att det förstördes "
-"under andra världskriget, rekonstruerades det minutiöst och har blivit en "
-"viktig turistattraktion. Tragiskt nog gick mycket av slottet förlorat i en "
-"brand 2019, men ansträngningarna att återställa det pågår, vilket "
-"återspeglar dess bestående betydelse för Okinawas arv."
 
 #: activities/explore_monuments/resource/board/board9.qml:63
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Japans monument"
+msgstr "Frankrikes monument"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Klicka på platsen för det angivna monumentet."
@@ -15132,9 +15028,12 @@ msgstr "Tal att hitta mellan 1 och 5."
 
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Number to find between 0 and 20."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
-msgstr "Decimaltal att hitta mellan 0 och 4."
+msgstr "Tal att hitta mellan 0 och 20."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"
@@ -15660,9 +15559,12 @@ msgid "Division required."
 msgstr "Division behövs."
 
 #: activities/guess24/resource/6/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "Alla räknesätt krävs."
+msgstr "Minnesspel med alla räknesätt"
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -17837,6 +17739,11 @@ msgstr ""
 "hemlighet lära ut den på institutet."
 
 #: activities/louis-braille/louis_braille_data.js:52
+#, fuzzy
+#| msgctxt "louis_braille_data|"
+#| msgid ""
+#| "He revised and extended braille to include mathematics, symbols, "
+#| "punctuations and music notations."
 msgctxt "louis_braille_data|"
 msgid ""
 "He revised and extended braille to include mathematics, symbols, punctuation "
@@ -17875,9 +17782,12 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "Den magiska hatten (subtraktion)"
+msgstr "Den magiska hatten"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -17969,9 +17879,12 @@ msgstr "%1 gånger"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "Den magiska hatten (addition)"
+msgstr "Den magiska hatten"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -27329,6 +27242,31 @@ msgstr "Subtraktionstabeller."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "In a vertical subtraction, numbers are written one below the other. They "
+#| "need to be lined-up properly, starting from the column on the right-hand "
+#| "side. The top number is called the minuend: it is the amount that we are "
+#| "starting with, that another number is being subtracted from to get the "
+#| "difference. The number below is called the subtrahend: it is the amount "
+#| "to substract from the minuend to get the difference. The result is "
+#| "written on the bottom line. To solve the subtraction, start by "
+#| "subtracting the bottom number of the first column from the top number of "
+#| "the first column (on the right-hand side), and write the result on the "
+#| "bottom line of the same column. If the top number is smaller than the "
+#| "bottom number, you can borrow from the minuend on the next column: for "
+#| "example, if you add 10 units to the top number, you need to remove one "
+#| "unit from the top number of the next column. This is called the borrowing "
+#| "by regrouping method. To do that in this activity, click on the empty "
+#| "rectangle on the left of the top number, select 1, and on the next column "
+#| "click on the empty rectangle on the right of the top number and select "
+#| "-1. Then write the result of the column on the bottom line, and do the "
+#| "same on the next columns until the operation is finished. Once you have "
+#| "found the result, click on the OK button to validate your answer. In some "
+#| "levels, you will be need to write the given operation before solving it; "
+#| "in this case, click on the Ready button when the operation is written "
+#| "correctly and then solve it."
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -27507,6 +27445,31 @@ msgstr ""
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "In a vertical subtraction, numbers are written one below the other. They "
+#| "need to be lined-up properly, starting from the column on the right-hand "
+#| "side. The top number is called the minuend: it is the amount that we are "
+#| "starting with, that another number is being subtracted from to get the "
+#| "difference. The number below is called the subtrahend: it is the amount "
+#| "to substract from the minuend to get the difference. The result is "
+#| "written on the bottom line. To solve the subtraction, start by "
+#| "subtracting the bottom number of the first column from the top number of "
+#| "the first column (on the right-hand side), and write the result on the "
+#| "bottom line of the same column. If the top number is smaller than the "
+#| "bottom number, you can borrow from the subtrahend on the next column: for "
+#| "example, if you add 10 units to the top number, you need to add one unit "
+#| "to the bottom number of the next column. This is called the borrowing by "
+#| "compensation method. To do that in this activity, click on the empty "
+#| "rectangle on the left of the top number, select 1, and on the next column "
+#| "click on the empty rectangle on the right of the bottom number and select "
+#| "+1. Then write the result of the column on the bottom line, and do the "
+#| "same on the next columns until the operation is finished. Once you have "
+#| "found the result, click on the OK button to validate your answer. In some "
+#| "levels, you will be need to write the given operation before solving it; "
+#| "in this case, click on the Ready button when the operation is written "
+#| "correctly and then solve it."
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -27720,9 +27683,12 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Skriv hela ordet under tiden det faller, innan det når marken."
 
 #: core/ChangeLog.qml:30
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Kannada and Tamil"
-msgstr "Översättning tillagd för Kanaresiska och Tamilska"
+msgstr "Översättning tillagd för lettiska"
 
 #: core/ChangeLog.qml:31
 #, fuzzy
@@ -28880,72 +28846,6 @@ msgstr "Starta"
 #~ msgid "Find the missing numbers."
 #~ msgstr "Finn de saknade talen."
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid ""
-#~| "Select tools and colors from the foldable panels and draw images.<br><br>"
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Select wheel, gear, pen's position and color from the foldable panels and "
-#~ "start the gear.<br><br>"
-#~ msgstr ""
-#~ "Välj verktyg och färger från de vikbara panelerna och rita bilder.<br><br>"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Ctrl + S: save the image"
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Ctrl + D: save the drawing"
-#~ msgstr "Ctrl + S: spara bilden"
-
-#, fuzzy
-#~| msgctxt "FilesPanel|"
-#~| msgid "Save your image"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save vector image (SVG)"
-#~ msgstr "Spara din bild"
-
-# SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Stefan Asserhäll <stefan.asserhall@gmail.com>
-#, fuzzy
-#~| msgid ""
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ msgstr ""
-#~ "Project-Id-Version: \n"
-#~ "PO-Revision-Date: 2025-11-21 01:48+0100\n"
-#~ "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
-#~ "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
-#~ "Language: sv\n"
-#~ "MIME-Version: 1.0\n"
-#~ "Content-Type: text/plain; charset=UTF-8\n"
-#~ "Content-Transfer-Encoding: 8bit\n"
-#~ "Plural-Forms: nplurals=2; plural=n != 1;\n"
-#~ "X-Language: sv\n"
-#~ "X-Qt-Contexts: true\n"
-#~ "X-Generator: Lokalize 25.08.3\n"
-
-#, fuzzy
-#~| msgctxt "category_colors|"
-#~| msgid "Colors"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Color"
-#~ msgstr "Färger"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "Districto Federal"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Distance to center"
-#~ msgstr "Distrito Federal"
-
-#~ msgctxt "ColorsPanel|"
-#~ msgid "Palettes"
-#~ msgstr "Paletter"
-
-#~ msgctxt "Frieze|"
-#~ msgid "What is the binary representation of %1?"
-#~ msgstr "Vad är den binära representationen av %1?"
-
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Grammatical analysis"
 #~ msgstr "Grammatikanalys"
@@ -28965,6 +28865,10 @@ msgstr "Starta"
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Leave the box blank if no class matches."
 #~ msgstr "Lämna rutan tom om ingen ordklass stämmer."
+
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr "Vad är den binära representationen av %1?"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "<b>Keyboard controls:"

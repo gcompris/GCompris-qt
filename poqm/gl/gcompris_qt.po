@@ -5966,6 +5966,9 @@ msgstr "Electricidade dixital"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
 msgstr "Crea e simular un circuíto lóxico dixital."
@@ -8677,7 +8680,7 @@ msgstr "Preme a localización da pirámide."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr "Cidade Prohibida"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8692,21 +8695,12 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
-"A Cidade Prohibida, sita no corazón de Pequín, é un complexo palaciano "
-"imperial magnífico que serviu de casa dos emperadores chineses e de centro "
-"político da nación durante case 500 anos, desde a dinastía Ming (1368–1644) "
-"ata a fin da dinastía Qing (1644–1912). Construída entre 1406 e 1420, esta "
-"extensa obra mestra de arquitectura ocupa máis de 70 hectáreas e conta con "
-"máis de 980 edificios preservados con 8 700 dependencias, e é exemplo do "
-"deseño palaciano chinés tradicional. Rodeada por un  foso e unha muralla "
-"enorme, a Cidade Prohibida estaba outrora vedada ao público, como símbolo do "
-"poder e a exclusividade imperiais."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr "Gran Buda de Leshan"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8721,21 +8715,15 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
-"O Gran Buda de Leshan, sito na provincia chinesa de Sichuan, é unha estatua "
-"colosal esculpida nun cantil, na confluencia entre os ríos, Min, Dadu e "
-"Qingyi. Con 71 metros de altura, é a estatua pre-moderna máis alta do mundo, "
-"e patrimonio da humanidade da UNESCO. Construída durante a dinastía Tang "
-"(713–803 a.C.), a estatua representa a Maitreya, o Buda do futuro, e creouse "
-"para calmar as turbulentas augas que ameazaban o tráfico local de barcos. De "
-"deseño enxeñoso, a estatua inclúe un sistema oculto de drenaxe para evitar a "
-"erosión. A súa expresión serena e a súa complexa artesanía son símbolos de "
-"logros espirituais e artísticos."
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Palacio de Potala"
+msgstr "Palacio de Mysore"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8750,22 +8738,12 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
-"O Palacio de Potala, que repousa na «Cordilleira Vermella» (Marpo Ri) de "
-"Lhasa, no Tíbet, é un símbolo icónico da cultura tibetana e patrimonio da "
-"humanidade da UNESCO. Construído orixinalmente no século VII e expandido no "
-"XVII, serviu como residencia de inverno dos Dalai Lamas e como centro de "
-"goberno tibetano. Con 13 plantas de altura e máis de 1 000 dependencias, o "
-"palacio combina a complexa arquitectura tibetana, vibrantes murais e "
-"reliquias sagradas. Divídese no Palacio Branco, que contén as zonas de "
-"administración, e o Palacio Vermello, dedicado aos estudos relixiosos e ao "
-"rezo. O Palacio de Potala é testemuña do espírito e do legado histórico do "
-"Tíbet."
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr "Guerreiros de Terracota"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8777,19 +8755,12 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
-"Os Guerreiros de Terracota son unha colección de milleiros de soldados, "
-"cabalos e carros de arxila de tamaño real soterrados co primeiro emperador "
-"chinés, Qin Shi Huang, para acompañalo na outra vida. Descubertos en 1974 "
-"preto de Xi'an, as figuras datan aproximadamente do ano 210 a.C., e "
-"salientan polo seu incríbel nivel de detalle, xa que cada guerreiro é "
-"distinto, en representación da diversidade de rangos e roles do antigo "
-"exército chinés."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr "Pagodes do Sol e da Lúa"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8804,21 +8775,15 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
-"Os Pagodes do Sol e da Lúa, sitas en Guilin, na China, son icónicas torres "
-"xemelgas que simbolizan o patrimonio cultural e espiritual da cidade. "
-"Construídos orixinalmente durante a dinastía Tang, reconstruíronse no século "
-"XX como un dos atractivos da lagoa Shanhu. O Pagode do Sol, con 41 metros de "
-"altura, é unha estrutura de bronce, a máis alta delas do mundo, e o Pagode "
-"da Lúa, de 35 metros, está construída con teselas de cristal. Estes pagodes "
-"representan a harmonía do yin e o yang, e están conectados por un túnel "
-"subterráneo de cristal. Iluminados pola noite, son unha atracción popular "
-"que combina arquitectura chinesa tradicional con enxeñaría moderna."
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Diaolou"
+msgstr "Torre Eiffel"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8833,23 +8798,19 @@ msgid ""
 "UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
 "towers remain, offering insight into this unique architectural heritage."
 msgstr ""
-"As Diaolou, sitas en Kaiping, na provincia chinesa de Guangdong, son "
-"estruturas fortificadas de varias plantas construídas entre finas do século "
-"XIX e principios do XX para protección de bandidos e de inundacións. "
-"Mesturan estilos arquitectónicos occidentais como o románico ou o barroco "
-"con elementos chineses tradicionais para reflectir a riqueza e influencia "
-"dos emigrantes chineses no estranxeiro. Construídas de formigón armado, as "
-"torres simbolizan un período de transición cultural e económica na China "
-"rural. Designadas patrimonio da humanidade pola UNESCO en 2007, continúan en "
-"pé arredor de 1 800 das 3 000 torres orixinais, que dan a coñecer este "
-"patrimonio arquitectónico único."
 
 #: activities/explore_monuments/resource/board/board7.qml:85
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Monumentos da China"
+msgstr "Monumentos da India"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Preme a localización do monumento."
@@ -8858,9 +8819,8 @@ msgstr "Preme a localización do monumento."
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr "Panteón"
+msgstr ""
 
-# skip-rule: trasno-command_reverse
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
 msgid ""
@@ -8876,26 +8836,13 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
-"O Panteón de Roma, en Italia, é un templo antigo icónico construído arredor "
-"do ano 126 a.C., durante o reinado do emperador Hadriano, onde estruturas "
-"anteriores construídas por orde de Marco Agripa. Famoso pola súa enxeñaría "
-"arquitectónica, conta cun enorme teito de bóveda cun óculo central, que "
-"simboliza o ceo, e permite a entrada de luz natural que ilumina o interior. "
-"Dedicado orixinalmente a todos os deuses romanos, converteuse posteriormente "
-"nunha igrexa cristiá, coñecida como a Basílica de Santa María e os Mártires "
-"(Santa Maria ad Martyres), no 609 a.C. A súa bóveda, a bóveda de formigón "
-"non armado máis grande do mundo, salienta pola súa técnica e simétrica, que "
-"inspirou outras obras arquitectónicas durante séculos. As súas proporcións "
-"harmónicas e relevancia histórica convértena nunha obra mestra atemporal de "
-"arquitectura clásica."
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr "Catedral de Milán"
+msgstr ""
 
-# skip-rule: trasno-locate, trasno-history, trasno-icon_reverse
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
 msgid ""
@@ -8909,22 +8856,15 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
-"A Catedral de Milán, tamén coñecida como Duomo Di Milano, é unha obra mestra "
-"do gótico sita no corazón de Milán, en Italia. Construída ao longo de case "
-"seis séculos, é unha das catedrais máis grandes do mundo e símbolo do "
-"patrimonio artístico e cultural de Milán. A súa complexa fachada está "
-"adornada con innumerábeis estatuas, chapiteis e gárgolas, proba da "
-"grandiosidade da arquitectura gótica. O público visitante pode explorar o "
-"seu flamante interior, con xanelas con preciosas vidreiras góticas e "
-"complexos detalles en mármore, ou subir á azotea, que ofrece unhas vistas "
-"sen igual da cidade e dos Alpes. A catedral é icona da riqueza histórica e "
-"arquitectónica de Italia."
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
+#, fuzzy
+#| msgctxt "board4|"
+#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Catedral de Florencia"
+msgstr "Catedral de Worms"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8940,22 +8880,15 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
-"A Catedral de Florencia, coñecida oficialmente como Cattedrale di Santa "
-"Maria del Fiore, é unha recoñecida obra mestra das arquitecturas gótica e "
-"renacentista, sita en Florencia, en Italia. Completada en 1436, é famosa "
-"pola súa enorme bóveda de teselas vermellas deseñada por Filippo "
-"Brunelleschi, unha marabilla de enxeñaría e símbolo da cidade. A complexa "
-"fachada de mármore da catedral, engadida no século XIX, complementa a súa "
-"riqueza decorativa interior e ous seus tesouros artísticos. Xunto co "
-"Campanario de Giotto e o Baptisterio de San Xoán, conforma un patrimonio da "
-"humanidade da UNESCO que atrae a millóns de visitantes cada ano pola súa "
-"relevancia histórica, cultural e arquitectónica."
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Torre Inclinada de Pisa"
+msgstr "A torre de Hanoi"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8970,22 +8903,12 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
-"A Torre Inclinada de Pisa, sita na cidade italiana de Pisa, é unha marabilla "
-"arquitectónica mundialmente famosa. Construída como campanario independente "
-"da catedral da cidade, é famosa pola súa inclinación accidental debida á "
-"inestabilidade do solo sobre o que se levantou. Iniciada en 1173, a torre "
-"construíuse ao longo de case 200 anos, que incluíron esforzos para "
-"estabilizar a súa inclinación. Cuns 56 metros de altura, o deseño románico "
-"da torre está formado por oito plantas, incluída a cámara da campá, "
-"adornadas con columnas e arcos finamente esculpidos. Recoñecida como "
-"patrimonio da humanidade pola UNESCO, continúa a ser un símbolo de "
-"resistencia e enxeño."
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr "Basílica de San Marcos"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -9001,25 +8924,13 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
-"A Basílica de San Marcos, sita en Venecia, en Italia, é unha obra mestra "
-"icónica da arquitectura bizantina e un dos atractivos máis famosos da "
-"cidade. Construída orixinalmente no ano 828 para aloxar as reliquias de San "
-"Marcos o Evanxelista, reconstruíuse coa súa forma actual no século XI. "
-"Coñecida polo seu deseño ostentoso, a basílica conta cunha mestura de "
-"influencias orientais e occidentais, evidente nas súas cinco bóvedas, nos "
-"seus complexos mosaicos, e na súa fachada decorada con estatuas e "
-"esculturas. O interior está decorado con mosaicos de ouro e chan de mármore, "
-"mostra da riqueza e poder da República de Venecia. Sita canda a praza de San "
-"Marcos, continúa a ser un símbolo do patrimonio histórico, cultural e "
-"relixioso de Venecia."
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr "Pompeia"
+msgstr ""
 
-# skip-rule: trasno-locate, trasno-history, trasno-provide
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
 msgid ""
@@ -9034,33 +8945,31 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
-"Pompeia foi unha cidade romana sita na localización moderna de Nápoles, en "
-"Italia. É famosa porque se preservou tras quedar soterrada a causa da "
-"erupción do Monte Vesuvio no ano 79 a.C. A erupción desatou unha combinación "
-"mortal de cinza e lava que enguliu a cidade e os seus habitantes, "
-"preservando os edificios, artefactos, e incluso restos humanos, todo cun "
-"incríbel nivel de detalle. As escavacións de Pompeia descubriron valiosa "
-"información sobre a vida romana, a súa arquitectura, e a súa sociedade, "
-"amosando unha cidade de rúas ben planificadas, casas, baños públicos, e "
-"templos. O sitio está considerado patrimonio da humanidade pola UNESCO e "
-"continúa a ser un dos descubrimentos arqueolóxicos máis importantes da "
-"historia."
 
 #: activities/explore_monuments/resource/board/board8.qml:85
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Monumentos de Italia"
+msgstr "Monumentos da India"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Preme a localización do monumento."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Castelo de Himeji"
+msgstr "Mestura"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -9073,19 +8982,12 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
-"Himeji-jo é o mellor exemplo que se conserva da arquitectura xaponesa de "
-"castelos de principios do século XVII. Está formado por 83 edificios con "
-"sistemas de defensa moi desenvolvidos e enxeñosos dispositivos de protección "
-"que datan do inicio do período feudal. É unha obra mestra de construción en "
-"madeira, que combina función e estética, tanto na súa aparencia elegante, "
-"unificada polas murallas de terral revocados en branco, como na sutileza da "
-"relación entre as masas de edificios e as varias capas de tellados."
 
 #: activities/explore_monuments/resource/board/board9.qml:28
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr "Parque Conmemorativo da Paz de Hiroshima"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -9101,24 +9003,13 @@ msgid ""
 "a solemn space for reflection, honoring the lives lost and advocating for "
 "global peace."
 msgstr ""
-"O Parque Conmemorativo da Paz de Hiroshima é un símbolo de paz e un "
-"recordatorio das consecuencias devastadoras da guerra. Sito en Hiroshima, no "
-"Xapón, o parque conmemora as vítimas da bomba atómica do 6 de agosto de "
-"1945. O parque conta con varios monumentos, incluída a bóveda da bomba "
-"atómica, outrora edificio do goberno que a UNESCO denominou patrimonio da "
-"humanidade. O parque alberga tamén o Museo Conmemorativo da Paz de "
-"Hiroshima, que informa a quen o visita da sucesión de acontecementos que "
-"levaron ao bombardeo, e promove unha mensaxe de paz, de non violencia, e da "
-"importancia do desarme nuclear. Serve como espazo solemne de reflexión que "
-"fai honor ás vidas perdidas e avoga pola paz mundial."
 
 #: activities/explore_monuments/resource/board/board9.qml:39
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr "Santuario Arakura Fuji Sengen"
+msgstr ""
 
-# skip-rule: trasno-file-a_reverse
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
 msgid ""
@@ -9133,39 +9024,14 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
-"O santuario fundouse no ano 705 para venerar á deidade local. Tras a gran "
-"erupción do Monte Fuji no ano 807, o emperador enviou un emisario imperial "
-"ao santuario para celebrar un ritual para deter a erupción. Disque durante o "
-"Período dos Reinos Combatentes, cando Takeda Nobutora —pai do famoso "
-"guerreiro Takeda Shinge— combateu coa familia Hojo, este acampou aquí, rezou "
-"pola vitoria, e gañou a batalla. Despois dedicou a súa espada ao santuario. "
-"Na actualidade, tanto a xente do lugar como de fóra visita o santuario para "
-"protexerse do mal, rezar pola felicidade da familia, e por partos seguros. "
-"En primavera, os cereixos florecen e multitudes reúnense para gozar da vista "
-"do Monte Fuji."
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr "Castelo de Shuri de Okinawa"
+msgstr ""
 
-# skip-rule: trasno-locate, trasno-history
 #: activities/explore_monuments/resource/board/board9.qml:51
-#, fuzzy
-#| msgctxt "board9|"
-#| msgid ""
-#| "Shuri Castle, located in Naha, Okinawa, Japan, is a UNESCO World Heritage "
-#| "Site and a symbol of the Ryukyu Kingdom's rich cultural history. "
-#| "Originally constructed in the 14th century, the castle served as the "
-#| "political, economic, and cultural hub of the kingdom for centuries. "
-#| "Renowned for its distinctive fusion of Chinese and Japanese architectural "
-#| "styles, Shuri Castle features vermillion lacquered structures, ornate "
-#| "decorations, and a commanding hilltop position. Though destroyed during "
-#| "World War II, it was meticulously reconstructed and became a key tourist "
-#| "attraction. Tragically, much of the castle was lost in a fire in 2019, "
-#| "but efforts to restore it are ongoing, reflecting its enduring importance "
-#| "to Okinawa's heritage."
 msgctxt "board9|"
 msgid ""
 "Shuri Castle, located in Naha, Okinawa, Japan, is a UNESCO World Heritage "
@@ -9179,24 +9045,19 @@ msgid ""
 "much of the castle was lost in a fire in 2019, but efforts to restore it are "
 "ongoing, reflecting its enduring importance to Okinawa's heritage."
 msgstr ""
-"O Castelo de Shuri, sito en Naha, Okinawa, no Xapón, é un patrimonio da "
-"humanidade da UNESCO e un símbolo da riqueza cultural e histórica do Reino "
-"de Ryukyu. Construído orixinalmente no século XIV, o castelo serviu de "
-"centro político, económico e cultural do reino durante séculos. Famoso pola "
-"súa fusión única de estilos arquitectónicos chinés e xaponés, o Castelo de "
-"Shuri presenta estruturas lacadas en vermellón, decoracións ornamentadas e "
-"unha posición dominante nun outeiro. Aínda que foi destruído durante a "
-"Segunda Guerra Mundial, reconstruíuse meticulosamente e converteuse nunha "
-"importante atracción turística. Traxicamente, gran parte do castelo perdeuse "
-"nun incendio en 2019, pero os esforzos para restauralo continúan, sinal da "
-"súa perdurábel importancia para o patrimonio de Okinawa."
 
 #: activities/explore_monuments/resource/board/board9.qml:63
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Monumentos do Xapón"
+msgstr "Monumentos de Francia"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Preme a localización do monumento."
@@ -15754,9 +15615,12 @@ msgid "Division required."
 msgstr "Requírese dividir."
 
 #: activities/guess24/resource/6/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "Necesítanse todos os operadores."
+msgstr "Xogo de memoria con todas as operacións"
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -17986,9 +17850,12 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "O sombreiro máxico (resta)"
+msgstr "O sombreiro máxico"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -18079,9 +17946,12 @@ msgstr "%1×"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "O sombreiro máxico (suma)"
+msgstr "O sombreiro máxico"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -29118,66 +28988,6 @@ msgstr "Iniciar"
 #~ msgid "Find the missing numbers."
 #~ msgstr "Atopa os números que faltan."
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid ""
-#~| "Select tools and colors from the foldable panels and draw images.<br><br>"
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Select wheel, gear, pen's position and color from the foldable panels and "
-#~ "start the gear.<br><br>"
-#~ msgstr ""
-#~ "Selecciona ferramentas e cores nos paneis pregábeis e debuxa imaxes."
-#~ "<br><br>"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Ctrl + S: save the image"
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Ctrl + D: save the drawing"
-#~ msgstr "Ctrl + S: gardar a imaxe"
-
-#, fuzzy
-#~| msgctxt "FilesPanel|"
-#~| msgid "Save your image"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save vector image (SVG)"
-#~ msgstr "Gardar a imaxe"
-
-#, fuzzy
-#~| msgid ""
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ msgstr ""
-#~ "MIME-Version: 1.0\n"
-#~ "Content-Type: text/plain; charset=UTF-8\n"
-#~ "Content-Transfer-Encoding: 8bit\n"
-#~ "Plural-Forms: nplurals=2; plural=n != 1;\n"
-#~ "X-Language: gl\n"
-#~ "X-Qt-Contexts: true\n"
-
-#, fuzzy
-#~| msgctxt "category_colors|"
-#~| msgid "Colors"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Color"
-#~ msgstr "Cores"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "Districto Federal"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Distance to center"
-#~ msgstr "Cidade de México"
-
-#~ msgctxt "ColorsPanel|"
-#~ msgid "Palettes"
-#~ msgstr "Paletas"
-
-#~ msgctxt "Frieze|"
-#~ msgid "What is the binary representation of %1?"
-#~ msgstr "Cal é a representación binaria de %1?"
-
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Grammatical analysis"
 #~ msgstr "Análise gramatical"
@@ -29198,6 +29008,10 @@ msgstr "Iniciar"
 #~ msgid "Leave the box blank if no class matches."
 #~ msgstr ""
 #~ "Deixa a caixa baleira se ningunha categoría gramatical se corresponde."
+
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr "Cal é a representación binaria de %1?"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "<b>Keyboard controls:"
@@ -29228,22 +29042,6 @@ msgstr "Iniciar"
 #~ msgctxt "Data|"
 #~ msgid "Solve subtraction, 3 digits, 3 lines."
 #~ msgstr "Resolver restas de 3 díxitos e 3 liñas."
-
-#~ msgctxt "Balancebox|"
-#~ msgid "Ok"
-#~ msgstr "Aceptar"
-
-#~ msgctxt "GCCreationHandler|"
-#~ msgid "Ok"
-#~ msgstr "Aceptar"
-
-#~ msgctxt "Menu|"
-#~ msgid ""
-#~ "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
-#~ "you want to download the corresponding sound files now?"
-#~ msgstr ""
-#~ "Seleccionou unha nova configuración rexional, reinicie GCompris para "
-#~ "usala.<br/>Quere descargar agora os ficheiros de son correspondentes?"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Logic training activity."
@@ -29276,6 +29074,10 @@ msgstr "Iniciar"
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Discover the keyboard and the letters."
 #~ msgstr "Descubre o teclado e as letras."
+
+#~ msgctxt "Balancebox|"
+#~ msgid "Ok"
+#~ msgstr "Aceptar"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -29347,6 +29149,23 @@ msgstr "Iniciar"
 #~ msgctxt "ActivityInfo|"
 #~ msgid "A shape split in equal parts is displayed on screen."
 #~ msgstr "Na pantalla amósase unha forma dividida en partes iguais."
+
+#~ msgctxt "Data|"
+#~ msgid "Copy and complete this frieze"
+#~ msgstr "Copia e completa o fresco"
+
+#~ msgctxt "Data|"
+#~ msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
+#~ msgstr ""
+#~ "Copia o fresco: calquera combinación de formas, cores, signos e tamaños."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Copy and complete this frieze: any combination of shapes, colors/signs "
+#~ "and sizes."
+#~ msgstr ""
+#~ "Copia e completa o fresco: calquera combinación de formas, cores, signos "
+#~ "e tamaños."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -29466,6 +29285,14 @@ msgstr "Iniciar"
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Reading numbers, memory."
 #~ msgstr "Lectura de números, memoria."
+
+#~ msgctxt "Menu|"
+#~ msgid ""
+#~ "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
+#~ "you want to download the corresponding sound files now?"
+#~ msgstr ""
+#~ "Seleccionou unha nova configuración rexional, reinicie GCompris para "
+#~ "usala.<br/>Quere descargar agora os ficheiros de son correspondentes?"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -29695,26 +29522,9 @@ msgstr "Iniciar"
 #~ msgid "Keyboard training."
 #~ msgstr "Adestramento co teclado."
 
-#~ msgctxt "Data|"
-#~ msgid "Copy and complete this frieze"
-#~ msgstr "Copia e completa o fresco"
-
-#~ msgctxt "Data|"
-#~ msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
-#~ msgstr ""
-#~ "Copia o fresco: calquera combinación de formas, cores, signos e tamaños."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Copy and complete this frieze: any combination of shapes, colors/signs "
-#~ "and sizes."
-#~ msgstr ""
-#~ "Copia e completa o fresco: calquera combinación de formas, cores, signos "
-#~ "e tamaños."
-
-#~ msgctxt "Guesscount|"
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
+#~ msgctxt "GCCreationHandler|"
+#~ msgid "Ok"
+#~ msgstr "Aceptar"
 
 #~ msgctxt "board5_2|"
 #~ msgid "1791 Comte de Sivrac's Celerifere"
@@ -29739,6 +29549,10 @@ msgstr "Iniciar"
 #~ msgctxt "Warning|"
 #~ msgid "and %1 are the divisors of %2."
 #~ msgstr "e %1 son os divisores de %2."
+
+#~ msgctxt "Guesscount|"
+#~ msgid "%1/%2"
+#~ msgstr "%1/%2"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
@@ -29809,6 +29623,28 @@ msgstr "Iniciar"
 #~ msgctxt "Data|"
 #~ msgid "Find denominator (with a rectangle)."
 #~ msgstr "Muíño (cunha amiga ou amigo)"
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid ""
+#~| "Play with the computer. Take turns to click on the square which you want "
+#~| "to mark. First player to create a line of 3 marks wins"
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click the line in which you want to "
+#~ "drop a token. The first player to create a line of 4 tokens wins."
+#~ msgstr ""
+#~ "Xoga contra a intelixencia artificial. Por quendas, preme a caixa que "
+#~ "queiras marcar. Gaña o primeiro xogador que consiga crear unha liña de 3 "
+#~ "marcas."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play checkers against the computer"
+#~ msgstr "Xoga ás damas contra o computador"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play chess against your friend"
+#~ msgstr "Xogar ao xadrez contra un amigo"
 
 # Fonte: http://www.ivoox.com/nomeando-as-voces-dos-animais-audios-mp3_rf_665908_1.html
 #~ msgctxt "board1|"
@@ -29908,20 +29744,6 @@ msgstr "Iniciar"
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
 #~| msgid ""
-#~| "Play with the computer. Take turns to click on the square which you want "
-#~| "to mark. First player to create a line of 3 marks wins"
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click the line in which you want to "
-#~ "drop a token. The first player to create a line of 4 tokens wins."
-#~ msgstr ""
-#~ "Xoga contra a intelixencia artificial. Por quendas, preme a caixa que "
-#~ "queiras marcar. Gaña o primeiro xogador que consiga crear unha liña de 3 "
-#~ "marcas."
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid ""
 #~| "Play with the computer. First take turns to place nine pieces, and then "
 #~| "take turns to move pieces"
 #~ msgctxt "ActivityInfo|"
@@ -29963,14 +29785,6 @@ msgstr "Iniciar"
 #~ "org/."
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid "Play checkers against the computer"
-#~ msgstr "Xoga ás damas contra o computador"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Play chess against your friend"
-#~ msgstr "Xogar ao xadrez contra un amigo"
-
-#~ msgctxt "ActivityInfo|"
 #~ msgid "Drawing by Stephane Cabaraux"
 #~ msgstr "Debuxo de Stephane Cabaraux"
 
@@ -29978,253 +29792,54 @@ msgstr "Iniciar"
 #~ msgid "Drawing by Stephane Cabaraux."
 #~ msgstr "Debuxo de Stephane Cabaraux."
 
-#, fuzzy
-#~| msgctxt "ProgrammingMaze|"
-#~| msgid ""
-#~| "Click on Tux or press Enter key to reset it or RELOAD button to reload "
-#~| "the level."
-#~ msgctxt "ProgrammingMaze|"
-#~ msgid ""
-#~ "Click on Tux or press the Enter key to reset it or click on the RELOAD "
-#~ "button to reload the level."
-#~ msgstr ""
-#~ "Preme a Tux ou preme a tecla Intro para restabelecelo ou o botón de "
-#~ "actualizar para actualizar o nivel."
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Decimal number system."
-#~ msgctxt "Data|"
-#~ msgid "Basic decimal numbers."
-#~ msgstr "Sistema de numeración binario."
-
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Mouse-manipulation"
 #~ msgstr "Manexo do rato"
 
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Knowing alphabets"
-#~ msgstr "Saber os alfabetos"
-
 #, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Reading."
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Reading"
-#~ msgstr "Lectura."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Counting skills"
-#~ msgstr "Habilidade para contar"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Braille Alphabet Codes"
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Compare alphabets."
-#~ msgstr "Códigos do alfabeto braille"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
+#~| msgctxt "Dataset|"
 #~| msgid ""
-#~| "Drag and drop the map pieces to correct locations to redraw the whole "
-#~| "map."
-#~ msgctxt "ordering|"
-#~ msgid "Drag and drop the letters in correct position in descending order."
+#~| "Use the gates such that the bulb will glow only when the switch is "
+#~| "turned off and remain off when the switch is turned on."
+#~ msgctxt "TutorialDataset|"
+#~ msgid ""
+#~ "Use the gates so that the bulb glows only when the switch is turned off "
+#~ "and remains off when the switch is turned on."
 #~ msgstr ""
-#~ "Arrastra e solta as pezas do mapa aos lugares correctos para debuxar de "
-#~ "novo o mapa completo."
+#~ "Usa as portas de xeito que a lámpada se ilumine só cando o conmutador "
+#~ "está apagado e quede apagada cando se acenda o conmutador."
 
-#~ msgctxt "board15_0|"
-#~ msgid "Northern Scotland"
-#~ msgstr "Norte de Escocia"
-
-#, fuzzy
-#~| msgctxt "board2_0|"
-#~| msgid "Iceland"
-#~ msgctxt "board15_0|"
-#~ msgid "Shetland"
-#~ msgstr "Islandia"
-
-#, fuzzy
-#~| msgctxt "board5_0|"
-#~| msgid "Switzerland"
-#~ msgctxt "board15_0|"
-#~ msgid "Sutherland"
-#~ msgstr "Suíza"
-
-#~ msgctxt "board15_1|"
-#~ msgid "Southern Scotland"
-#~ msgstr "Sur de Escocia"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Northern Scotland"
-#~ msgstr "Norte de Escocia"
-
-#, fuzzy
-#~| msgctxt "board2_0|"
-#~| msgid "Iceland"
-#~ msgctxt "board15_2|"
-#~ msgid "Shetland"
-#~ msgstr "Islandia"
-
-#, fuzzy
-#~| msgctxt "board5_0|"
-#~| msgid "Switzerland"
-#~ msgctxt "board15_2|"
-#~ msgid "Sutherland"
-#~ msgstr "Suíza"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Southern Scotland"
-#~ msgstr "Sur de Escocia"
-
-#, fuzzy
-#~| msgctxt "DialogConfig|"
-#~| msgid "Scottish Gaelic"
-#~ msgctxt "board15_3|"
-#~ msgid "Scottish Borders"
-#~ msgstr "Gaélico escocés"
-
-#, fuzzy
-#~| msgctxt "board8_0|"
-#~| msgid "South Africa"
-#~ msgctxt "board15_3|"
-#~ msgid "South Ayrshire"
-#~ msgstr "Sudáfrica"
-
-#, fuzzy
-#~| msgctxt "board10_0|"
-#~| msgid "East Timor"
-#~ msgctxt "board15_3|"
-#~ msgid "East Ayrshire"
-#~ msgstr "Timor Leste"
-
-#, fuzzy
-#~| msgctxt "board2_0|"
-#~| msgid "North America"
-#~ msgctxt "board15_3|"
-#~ msgid "North Ayrshire"
-#~ msgstr "América do Norte"
+#~ msgctxt "board10_1|"
+#~ msgid "United States of America"
+#~ msgstr "Estados Unidos de América"
 
 #~ msgctxt "board11_1|"
 #~ msgid "Districts of Northern Italy"
 #~ msgstr "Distritos do norte de Italia"
 
-#, fuzzy
-#~| msgctxt "board6_0|"
-#~| msgid "Albania"
-#~ msgctxt "board11_1|"
-#~ msgid "Verbania"
-#~ msgstr "Albania"
-
-#, fuzzy
-#~| msgctxt "board6_0|"
-#~| msgid "Moldova"
-#~ msgctxt "board11_1|"
-#~ msgid "Padova"
-#~ msgstr "Moldavia"
-
-#, fuzzy
-#~| msgctxt "board4_0|"
-#~| msgid "Venezuela"
-#~ msgctxt "board11_1|"
-#~ msgid "Venezia"
-#~ msgstr "Venezuela"
-
-#, fuzzy
-#~| msgctxt "IntroMessage|"
-#~| msgid "Previous"
-#~ msgctxt "board11_1|"
-#~ msgid "Treviso"
-#~ msgstr "Anterior"
-
 #~ msgctxt "board11_2|"
 #~ msgid "Districts of Central Italy"
 #~ msgstr "Distritos do centro de Italia"
-
-#, fuzzy
-#~| msgctxt "board4_0|"
-#~| msgid "Peru"
-#~ msgctxt "board11_2|"
-#~ msgid "Perugia"
-#~ msgstr "Perú"
-
-#, fuzzy
-#~| msgctxt "Reversecount|"
-#~| msgid "Romans"
-#~ msgctxt "board11_2|"
-#~ msgid "Roma"
-#~ msgstr "Números romanos"
 
 #~ msgctxt "board11_3|"
 #~ msgid "Districts of Southern Italy"
 #~ msgstr "Distritos do sur de Italia"
 
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "Pakistan"
-#~ msgctxt "board11_3|"
-#~ msgid "Oristano"
-#~ msgstr "Paquistán"
+#~ msgctxt "board12_0|"
+#~ msgid "States of India"
+#~ msgstr "Estados da India"
 
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid "Japan"
-#~ msgctxt "board11_3|"
-#~ msgid "Trapani"
-#~ msgstr "Xapón"
+#~ msgctxt "board15_0|"
+#~ msgid "Northern Scotland"
+#~ msgstr "Norte de Escocia"
 
-#, fuzzy
-#~| msgctxt "board4_0|"
-#~| msgid "Argentina"
-#~ msgctxt "board11_3|"
-#~ msgid "Agrigento"
-#~ msgstr "Arxentina"
+#~ msgctxt "board15_2|"
+#~ msgid "Northern Scotland"
+#~ msgstr "Norte de Escocia"
 
-#, fuzzy
-#~| msgctxt "board4_0|"
-#~| msgid "grater"
-#~ msgctxt "board11_3|"
-#~ msgid "Matera"
-#~ msgstr "relador"
-
-#, fuzzy
-#~| msgctxt "dataset|"
-#~| msgid "eleven"
-#~ msgctxt "board11_3|"
-#~ msgid "Benevento"
-#~ msgstr "once"
-
-#~ msgctxt "board1_0|"
-#~ msgid "Districts of France"
-#~ msgstr "Distritos de Francia"
-
-#, fuzzy
-#~| msgctxt "DialogConfig|"
-#~| msgid "Breton"
-#~ msgctxt "board1_0|"
-#~ msgid "Bretagne"
-#~ msgstr "Bretón"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Districts of Poland"
-#~ msgstr "Distritos de Polonia"
-
-#, fuzzy
-#~| msgctxt "board2_0|"
-#~| msgid "Alaska"
-#~ msgctxt "board4_0|"
-#~ msgid "Slaskie"
-#~ msgstr "Alasca"
-
-#~ msgctxt "board13_0|"
-#~ msgid "Districts of Australia"
-#~ msgstr "Distritos de Australia"
-
-#~ msgctxt "board14_0|"
-#~ msgid "Districts of China"
-#~ msgstr "Distritos da China"
+#~ msgctxt "board15_3|"
+#~ msgid "Southern Scotland"
+#~ msgstr "Sur de Escocia"
 
 #~ msgctxt "board5_0|"
 #~ msgid "Districts of Turkey"
@@ -30234,213 +29849,17 @@ msgstr "Iniciar"
 #~ msgid "Districts of Turkey"
 #~ msgstr "Distritos de Turquía"
 
-#, fuzzy
-#~| msgctxt "Warning|"
-#~| msgid "and"
-#~ msgctxt "board5_2|"
-#~ msgid "Van"
-#~ msgstr "e"
-
-#, fuzzy
-#~| msgctxt "board5_0|"
-#~| msgid "France"
-#~ msgctxt "board5_2|"
-#~ msgid "Tunceli"
-#~ msgstr "Francia"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "Malaysia"
-#~ msgctxt "board5_2|"
-#~ msgid "Malatya"
-#~ msgstr "Malaisia"
-
-#, fuzzy
-#~| msgctxt "DialogConfig|"
-#~| msgid "Slovak"
-#~ msgctxt "board5_2|"
-#~ msgid "Yalova"
-#~ msgstr "Eslovaco"
-
-#, fuzzy
-#~| msgctxt "DialogConfig|"
-#~| msgid "Danish"
-#~ msgctxt "board5_2|"
-#~ msgid "Manisa"
-#~ msgstr "Danés"
-
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid "Italy"
-#~ msgctxt "board5_2|"
-#~ msgid "Antalya"
-#~ msgstr "Italia"
-
-#~ msgctxt "board12_0|"
-#~ msgid "States of India"
-#~ msgstr "Estados da India"
-
-#~ msgctxt "board10_1|"
-#~ msgid "United States of America"
-#~ msgstr "Estados Unidos de América"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "North Korea"
-#~ msgctxt "board10_1|"
-#~ msgid "North Dakota"
-#~ msgstr "Corea do Norte"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "South Korea"
-#~ msgctxt "board10_1|"
-#~ msgid "South Dakota"
-#~ msgstr "Corea do Sur"
-
-#, fuzzy
-#~| msgctxt "category_colors|"
-#~| msgid "Colors"
-#~ msgctxt "board10_1|"
-#~ msgid "Colorado"
-#~ msgstr "Cores"
-
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid "Mexico"
-#~ msgctxt "board10_1|"
-#~ msgid "New Mexico"
-#~ msgstr "México"
-
-#, fuzzy
-#~| msgctxt "board2_0|"
-#~| msgid "Alaska"
-#~ msgctxt "board10_1|"
-#~ msgid "Alaska"
-#~ msgstr "Alasca"
-
-#, fuzzy
-#~| msgctxt "board10_0|"
-#~| msgid "Hawaii"
-#~ msgctxt "board10_1|"
-#~ msgid "Hawaii"
-#~ msgstr "Havai"
-
-#, fuzzy
-#~| msgctxt "board7_0|"
-#~| msgid "Tunisia"
-#~ msgctxt "board10_1|"
-#~ msgid "Louisiana"
-#~ msgstr "Tunisia"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "India"
-#~ msgctxt "board10_1|"
-#~ msgid "Indiana"
-#~ msgstr "India"
-
-#, fuzzy
-#~| msgctxt "board2_0|"
-#~| msgid "North America"
-#~ msgctxt "board10_1|"
-#~ msgid "North Carolina"
-#~ msgstr "América do Norte"
-
-#, fuzzy
-#~| msgctxt "board8_0|"
-#~| msgid "South Africa"
-#~ msgctxt "board10_1|"
-#~ msgid "South Carolina"
-#~ msgstr "Sudáfrica"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "Asia|Georgia"
-#~ msgctxt "board10_1|"
-#~ msgid "Georgia"
-#~ msgstr "Xeorxia"
-
-#, fuzzy
-#~| msgctxt "Calendar|"
-#~| msgid "Friday"
-#~ msgctxt "board10_1|"
-#~ msgid "Florida"
-#~ msgstr "Venres"
-
-#, fuzzy
-#~| msgctxt "board5_0|"
-#~| msgid "Ireland"
-#~ msgctxt "board10_1|"
-#~ msgid "Maryland"
-#~ msgstr "Irlanda"
-
-#, fuzzy
-#~| msgctxt "board6_0|"
-#~| msgid "Ukraine"
-#~ msgctxt "board10_1|"
-#~ msgid "Maine"
-#~ msgstr "Ucraína"
-
-#, fuzzy
-#~| msgctxt "board10_0|"
-#~| msgid "Cook Islands"
-#~ msgctxt "board10_1|"
-#~ msgid "Rhode Island"
-#~ msgstr "Illas Cook"
-
-#, fuzzy
-#~| msgctxt "board10_0|"
-#~| msgid "Indonesia"
-#~ msgctxt "board14_0|"
-#~ msgid "Indonesia"
-#~ msgstr "Indonesia"
-
-#, fuzzy
-#~| msgctxt "board10_0|"
-#~| msgid "Northern Mariana Islands"
-#~ msgctxt "board14_0|"
+#~ msgctxt "board10_0|"
 #~ msgid "Northern Mariana Islands"
 #~ msgstr "Illas Marianas do Norte"
 
-#, fuzzy
-#~| msgctxt "board10_0|"
-#~| msgid "American Samoa"
-#~ msgctxt "board14_0|"
+#~ msgctxt "board10_0|"
 #~ msgid "American Samoa"
 #~ msgstr "Samoa Americana"
 
 #~ msgctxt "board10_0|"
 #~ msgid "Australia"
 #~ msgstr "Australia"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Asia"
-#~ msgstr "Asia"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Russia"
-#~ msgstr "Rusia"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Japan"
-#~ msgstr "Xapón"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Indonesia"
-#~ msgstr "Indonesia"
-
-#~ msgctxt "board8_0|"
-#~ msgid "Swaziland"
-#~ msgstr "Suazilandia"
-
-#~ msgctxt "board2_0|"
-#~ msgid "Alaska"
-#~ msgstr "Alasca"
-
-#~ msgctxt "board2_0|"
-#~ msgid "Iceland"
-#~ msgstr "Islandia"
 
 #~ msgctxt "board3_1|"
 #~ msgid "Central America"
@@ -30502,61 +29921,21 @@ msgstr "Iniciar"
 #~ msgid "Bahamas"
 #~ msgstr "Bahamas"
 
-#~ msgctxt "Dataset|"
-#~ msgid "433 days"
-#~ msgstr "433 días"
+#~ msgctxt "board9_0|"
+#~ msgid "Asia"
+#~ msgstr "Asia"
 
-#~ msgctxt "Dataset|"
-#~ msgid "88 days"
-#~ msgstr "88 días"
+#~ msgctxt "board9_0|"
+#~ msgid "Russia"
+#~ msgstr "Rusia"
 
-#~ msgctxt "Dataset|"
-#~ msgid "107 days"
-#~ msgstr "107 días"
+#~ msgctxt "board9_0|"
+#~ msgid "Japan"
+#~ msgstr "Xapón"
 
-#~ msgctxt "Dataset|"
-#~ msgid "225 days"
-#~ msgstr "225 días"
-
-#~ msgctxt "Dataset|"
-#~ msgid "116 days"
-#~ msgstr "116 días"
-
-#~ msgctxt "Dataset|"
-#~ msgid "100 days"
-#~ msgstr "100 días"
-
-#~ msgctxt "Dataset|"
-#~ msgid "687 days"
-#~ msgstr "687 días"
-
-#~ msgctxt "Dataset|"
-#~ msgid "1 year"
-#~ msgstr "1 ano"
-
-#~ msgctxt "Dataset|"
-#~ msgid "24 years"
-#~ msgstr "24 anos"
-
-#~ msgctxt "Dataset|"
-#~ msgid "68 years"
-#~ msgstr "68 anos"
-
-#~ msgctxt "Dataset|"
-#~ msgid "84 years"
-#~ msgstr "84 anos"
-
-#~ msgctxt "Dataset|"
-#~ msgid "165 years"
-#~ msgstr "165 anos"
-
-#~ msgctxt "Dataset|"
-#~ msgid "3 years"
-#~ msgstr "3 anos"
-
-#~ msgctxt "Dataset|"
-#~ msgid "100 years"
-#~ msgstr "100 anos"
+#~ msgctxt "board9_0|"
+#~ msgid "Indonesia"
+#~ msgstr "Indonesia"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Gnumch Equality"
@@ -30566,363 +29945,20 @@ msgstr "Iniciar"
 #~ msgid "Image Name"
 #~ msgstr "Nome da imaxe"
 
-#, fuzzy
-#~| msgctxt "Dataset|"
-#~| msgid ""
-#~| "Use the gates such that the bulb will glow only when the switch is "
-#~| "turned off and remain off when the switch is turned on."
-#~ msgctxt "TutorialDataset|"
-#~ msgid ""
-#~ "Use the gates so that the bulb glows only when the switch is turned off "
-#~ "and remains off when the switch is turned on."
-#~ msgstr ""
-#~ "Usa as portas de xeito que a lámpada se ilumine só cando o conmutador "
-#~ "está apagado e quede apagada cando se acenda o conmutador."
-
-#, fuzzy
-#~| msgctxt "board5_0|"
-#~| msgid "Denmark"
-#~ msgctxt "board6_0|"
-#~ msgid "Telemark"
-#~ msgstr "Dinamarca"
-
-#, fuzzy
-#~| msgctxt "Lang|"
-#~| msgid "plant"
-#~ msgctxt "board6_0|"
-#~ msgid "Oppland"
-#~ msgstr "planta"
-
-#, fuzzy
-#~| msgctxt "board6_0|"
-#~| msgid "Poland"
-#~ msgctxt "board6_0|"
-#~ msgid "Hordaland"
-#~ msgstr "Polonia"
-
-#, fuzzy
-#~| msgctxt "board5_0|"
-#~| msgid "Denmark"
-#~ msgctxt "board6_0|"
-#~ msgid "Hedmark"
-#~ msgstr "Dinamarca"
-
-# O nome de Paul adaptouse ao galego escollendo o nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board0|"
-#~| msgid ""
-#~| "Paul wants to equally share 2 pieces of candy between 2 of his friends: "
-#~| "one girl and one boy. Can you help him? First, place the children in "
-#~| "center, then drag the pieces of candy to each of them."
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Paul wants to equally share 2 pieces of candy between 2 of his girl "
-#~ "friends. Can you help him? First, place the children in the center, then "
-#~ "drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Martín quere compartir de maneira equitativa 2 doces entre 2 dos seus "
-#~ "amigos: unha nena e un neno. Podes axudalo? Primeiro, coloca a nena e o "
-#~ "neno no centro, e a continuación arrastra os doces a cada un deles."
-
-#, fuzzy
-#~| msgctxt "board0|"
-#~| msgid "Now he wants to give 4 pieces of candy to his friends."
-#~ msgctxt "Data|"
-#~ msgid "Now he wants to give 5 pieces of candy to his friends."
-#~ msgstr "Agora quere darlles 4 doces ás súas amigas e amigos."
-
-#, fuzzy
-#~| msgctxt "board0|"
-#~| msgid "Can you now give 6 of Paul's pieces of candy to his friends?"
-#~ msgctxt "Data|"
-#~ msgid "Can you now give 7 of Paul's pieces of candy to his friends?"
-#~ msgstr "Podes darlles 6 os doces de Martín aos seus amigos?"
-
-#, fuzzy
-#~| msgctxt "board0|"
-#~| msgid "Now he wants to give 4 pieces of candy to his friends."
-#~ msgctxt "Data|"
-#~ msgid "He wants to give 8 more pieces of candy to his friends."
-#~ msgstr "Agora quere darlles 4 doces ás súas amigas e amigos."
-
-# O nome de Bob adaptouse ao galego escollendo o oitavo nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board5|"
-#~| msgid ""
-#~| "Bob wants to give 5 pieces of candy to his friends: two boys and one "
-#~| "girl, his girlfriend already has one candy. Can you help him equally "
-#~| "split the pieces of candy so that each friend will have the same amount "
-#~| "of pieces of candy?"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Bob wants to give 3 pieces of candy to his girl friends. Can you help him "
-#~ "equally split the pieces of candy so that each friend will have the same "
-#~ "amount?"
-#~ msgstr ""
-#~ "Manuel quere darlles 5 doces ás súas amigas e amigos: dous nenos e unha "
-#~ "nena. A nena xa ten un doce. Podes axudalo a repartir os doces de maneira "
-#~ "equitativa de xeito que cada amiga ou amigo teña o mesmo número de doces?"
-
-# O nome de Harry adaptouse ao galego escollendo o noveno nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board5|"
-#~| msgid ""
-#~| "Harry wants to equally share 8 pieces of candy between his friends: one "
-#~| "boy and two girls. Place the children in center, then drag the pieces of "
-#~| "candy to each of them so that each of them has an equal number of pieces "
-#~| "of candy."
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Harry wants to equally share 8 pieces of candy between his friends: 1 boy "
-#~ "and 2 girls. Place the children in the center, then drag the pieces of "
-#~ "candy so that each of them has an equal number of it."
-#~ msgstr ""
-#~ "Adrián quere compartir de maneira equitativa 8 doces entre as súas amigas "
-#~ "e amigos: un neno e dúas nenas. Coloca as nenas e nenos no centro e a "
-#~ "continuación arrastra os doces a cada un de xeito que cada un acabe co "
-#~ "mesmo número de doces."
-
-#, fuzzy
-#~| msgctxt "board5|"
-#~| msgid "Can you now give 6 of Harry's pieces of candy to his friends?"
-#~ msgctxt "Data|"
-#~ msgid "Can you now give 8 of Harry's pieces of candy to his friends?"
-#~ msgstr "Podes darlles agora 6 dos doces de Adrián ás súas amigas e amigos?"
-
-# O nome de Alice adaptouse ao galego escollendo o segundo nome de nena máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenas), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board2|"
-#~| msgid ""
-#~| "Alice wants to equally share 3 pieces of candy between 3 of her friends: "
-#~| "one girl and two boys. Can you help her? First, place the children in "
-#~| "the center, then drag the pieces of candy to each of them."
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Alice wants to equally share 4 pieces of candy between 4 of her girl "
-#~ "friends. Can you help her? First, place the children in the center, then "
-#~ "drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Martina quere compartir de maneira equitativa 3 doces entre 3 dos seus "
-#~ "amigos: unha nena e dous nenos. Podes axudala? Primeiro, coloca a nena e "
-#~ "os neno no centro, e a continuación arrastra os doces a cada un deles."
-
-# O nome de Charles adaptouse ao galego escollendo o sexto nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board4|"
-#~| msgid ""
-#~| "Charles wants to share his 8 pieces of candy with 3 of his friends: one "
-#~| "boy and two girls. Can he split the pieces of candy equally?"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Charles wants to share his 6 pieces of candy with 2 of his girl friends. "
-#~ "Can he split the pieces of candy equally?"
-#~ msgstr ""
-#~ "Lucas quere compartir os seus 8 doces con 3 das súas amigas e amigos: un "
-#~ "neno e dúas nenas. Pode repartir os doces de maneira equitativa?"
-
-# O nome de Jason adaptouse ao galego escollendo o sétimo nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board4|"
-#~| msgid ""
-#~| "Jason's father gave him 14 pieces of candy to share with his friends: "
-#~| "two boys and three girls. Help him give the pieces of candy to his "
-#~| "friends!"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Jason's father gave him 17 pieces of candy to share with his friends: 2 "
-#~ "boys and 2 girls. Help him give the pieces of candy to his friends."
-#~ msgstr ""
-#~ "O pai de Leo deulle 14 doces para compartir coas súas amigas e amigos: "
-#~ "dous nenos e tres nenas. Axúdao a darlles os doces ás súas amigas e "
-#~ "amigos!"
-
-# O nome de George adaptouse ao galego escollendo o segundo nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid ""
-#~| "George wants to equally share 3 pieces of candy between 2 of his "
-#~| "friends: one girl and one boy. Can he equally split the pieces of candy "
-#~| "between his friends? First, place the children in center, then drag the "
-#~| "pieces of candy to each of them. Be careful, a rest will remain!"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "George wants to equally share 14 pieces of candy between 4 of his "
-#~ "friends: 2 girls and 2 boys. Can he equally split the pieces of candy "
-#~ "between his friends? First, place the children in center, then drag the "
-#~ "pieces of candy to each of them. Be careful."
-#~ msgstr ""
-#~ "Hugo quere compartir de maneira equitativa 3 doces entre 2 das súas "
-#~ "amigas e amigos. Pode repartir os doces de maneira equitativa entre eles? "
-#~ "Primeiro coloca a nena e o neno no centro, e a continuación arrastra os "
-#~ "doces a cada un deles. Ten coidado, vai quedar un resto!"
-
-# O nome de Maria adaptouse ao galego escollendo o nome de nena máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenas), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid ""
-#~| "Maria wants to equally share 5 pieces of candy between 3 of her friends: "
-#~| "one girl and two boys. Can she equally split the pieces of candy between "
-#~| "her friends? First, place the children in center, then drag the pieces "
-#~| "of candy to each of them. Be careful, a rest will remain!"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Maria wants to equally share 23 pieces of candy between 5 of her friends: "
-#~ "3 girls and 2 boys. Can she equally split the pieces of candy between her "
-#~ "friends? First, place the children in center, then drag the pieces of "
-#~ "candy to each of them. Be careful, a rest will remain."
-#~ msgstr ""
-#~ "Noa quere compartir de maneira equitativa 5 doces entre 3 das súas amigas "
-#~ "e amigos: unha nena e dous nenos. Pode repartir os doces de maneira "
-#~ "equitativa entre eles? Primeiro coloca a nena e os neno no centro, e a "
-#~ "continuación arrastra os doces a cada un deles. Ten coidado, vai quedar "
-#~ "un resto!"
-
-#, fuzzy
-#~| msgctxt "board0|"
-#~| msgid "Now he wants to give 4 pieces of candy to his friends."
-#~ msgctxt "Data|"
-#~ msgid "He wants to give 7 more pieces of candy to his friends."
-#~ msgstr "Agora quere darlles 4 doces ás súas amigas e amigos."
-
-# O nome de John adaptouse ao galego escollendo o terceiro nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid ""
-#~| "John wants to equally share 10 pieces of candy between 3 of his friends: "
-#~| "one boy and two girls. Can he equally split the pieces of candy between "
-#~| "his friends? First, place the children in center, then drag the pieces "
-#~| "of candy to each of them."
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "George wants to equally share 3 pieces of candy between 3 of his girl "
-#~ "friends. Can he equally split the pieces of candy? First, place the "
-#~ "children in the center, then drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Mateo quere compartir de maneira equitativa 10 doces entre 3 das súas "
-#~ "amigas e amigos: un neno e dúas nenas. Pode repartir os doces de maneira "
-#~ "equitativa entre eles? Primeiro coloca o neno e as nenas no centro, e a "
-#~ "continuación arrastra os doces a cada un deles."
-
-# O nome de Alice adaptouse ao galego escollendo o segundo nome de nena máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenas), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board2|"
-#~| msgid ""
-#~| "Alice wants to equally share 3 pieces of candy between 3 of her friends: "
-#~| "one girl and two boys. Can you help her? First, place the children in "
-#~| "the center, then drag the pieces of candy to each of them."
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Maria wants to equally share 6 pieces of candy between 3 of her friends: "
-#~ "1 girl and 2 boys. Can she equally split the pieces of candy? First, "
-#~ "place the children in the center, then drag the pieces of candy to each "
-#~ "of them."
-#~ msgstr ""
-#~ "Martina quere compartir de maneira equitativa 3 doces entre 3 dos seus "
-#~ "amigos: unha nena e dous nenos. Podes axudala? Primeiro, coloca a nena e "
-#~ "os neno no centro, e a continuación arrastra os doces a cada un deles."
-
-# O nome de John adaptouse ao galego escollendo o terceiro nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid ""
-#~| "John wants to equally share 10 pieces of candy between 3 of his friends: "
-#~| "one boy and two girls. Can he equally split the pieces of candy between "
-#~| "his friends? First, place the children in center, then drag the pieces "
-#~| "of candy to each of them."
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Paul wants to equally share 12 pieces of candy between 3 of his friends: "
-#~ "2 boys and 1 girl. Can he equally split the pieces of candy? First, place "
-#~ "the children in the center, then drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Mateo quere compartir de maneira equitativa 10 doces entre 3 das súas "
-#~ "amigas e amigos: un neno e dúas nenas. Pode repartir os doces de maneira "
-#~ "equitativa entre eles? Primeiro coloca o neno e as nenas no centro, e a "
-#~ "continuación arrastra os doces a cada un deles."
-
-#, fuzzy
-#~| msgctxt "board2|"
-#~| msgid ""
-#~| "Can you help Alice give 9 pieces of candy to her friends: one girl and "
-#~| "two boys?"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Can you help Alice give 10 pieces of candy to her friends, 1 girl and 3 "
-#~ "boys?"
-#~ msgstr ""
-#~ "Podes axudar a Martina a darlles 9 doces ás súas amigas e amigos: unha "
-#~ "nena e dous nenos?"
-
-# O nome de Michael adaptouse ao galego escollendo o cuarto nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board3|"
-#~| msgid ""
-#~| "Michael wants to equally share 5 pieces of candy between 2 of his "
-#~| "friends: one girl and one boy. Can you help him? First, place the "
-#~| "children in center, then drag the pieces of candy to each of them!"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Michael wants to equally share 5 pieces of candy between 5 of his girl "
-#~ "friends. Can you help him? First, place the children in the center, then "
-#~ "drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Pablo quere compartir de maneira equitativa 5 doces entre 2 dos seus "
-#~ "amigos: unha nena e un neno. Podes axudalo? Primeiro, coloca a nena e o "
-#~ "neno no centro, e a continuación arrastra os doces a cada un deles!"
-
-# O nome de Paul adaptouse ao galego escollendo o nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board0|"
-#~| msgid ""
-#~| "Paul wants to equally share 2 pieces of candy between 2 of his friends: "
-#~| "one girl and one boy. Can you help him? First, place the children in "
-#~| "center, then drag the pieces of candy to each of them."
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Paul wants to equally share 20 pieces of candy between 5 of his friends: "
-#~ "2 girls and 3 boys. Can you help him? First, place the children in the "
-#~ "center, then drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Martín quere compartir de maneira equitativa 2 doces entre 2 dos seus "
-#~ "amigos: unha nena e un neno. Podes axudalo? Primeiro, coloca a nena e o "
-#~ "neno no centro, e a continuación arrastra os doces a cada un deles."
-
-# O nome de Elizabeth adaptouse ao galego escollendo o quinto nome de nena máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenas), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board4|"
-#~| msgid ""
-#~| "For her birthday, Elizabeth has 12 pieces of candy to share with 4 of "
-#~| "her friends: two girls and two boys. How should she split the pieces of "
-#~| "candy to her friends?"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
-#~ "friends: 2 girls and 1 boy. How should she split the pieces of candy?"
-#~ msgstr ""
-#~ "Polo seu aniversario, Sara ten 12 doces para compartir con 4 das súas "
-#~ "amigas e amigos: dúas nenas e dous nenos. Como debería compartir os doces "
-#~ "coas súas amigas e amigos?"
-
-#, fuzzy
-#~| msgctxt "Menu|"
-#~| msgid "Music"
-#~ msgctxt "board5_1|"
-#~ msgid "Mus"
-#~ msgstr "Música"
-
-#, fuzzy
-#~| msgctxt "Menu|"
-#~| msgid "Music"
-#~ msgctxt "board5_2|"
-#~ msgid "Mus"
-#~ msgstr "Música"
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Knowing alphabets"
+#~ msgstr "Saber os alfabetos"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
-#~| msgid "Balance Box"
-#~ msgctxt "Data|"
-#~ msgid "Balance up to 5."
-#~ msgstr "Caixa de equilibrio"
+#~| msgid ""
+#~| "1. <i><u>To navigate through instructions in the current code area "
+#~| "having keyboard focus</i></u>:"
+#~ msgctxt "ActivityInfo|"
+#~ msgid "1. To navigate through the instructions in the selected area:"
+#~ msgstr ""
+#~ "1. <i><u>Para navegar polas instrucións da zona de código actual que ten "
+#~ "o foco do teclado</i></u>:"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
@@ -31005,6 +30041,284 @@ msgstr "Iniciar"
 #~ msgstr ""
 #~ "<li>A continuación navega ata a zona de instrucións usando <b>Tab</b> e "
 #~ "selecciona a nova instrución premendo <b>Espazo</b>.</li></ul><br>"
+
+#, fuzzy
+#~| msgctxt "ProgrammingMaze|"
+#~| msgid ""
+#~| "Click on Tux or press Enter key to reset it or RELOAD button to reload "
+#~| "the level."
+#~ msgctxt "ProgrammingMaze|"
+#~ msgid ""
+#~ "Click on Tux or press the Enter key to reset it or click on the RELOAD "
+#~ "button to reload the level."
+#~ msgstr ""
+#~ "Preme a Tux ou preme a tecla Intro para restabelecelo ou o botón de "
+#~ "actualizar para actualizar o nivel."
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Balance Box"
+#~ msgctxt "Data|"
+#~ msgid "Balance up to 5."
+#~ msgstr "Caixa de equilibrio"
+
+#, fuzzy
+#~| msgctxt "board0|"
+#~| msgid "Now he wants to give 4 pieces of candy to his friends."
+#~ msgctxt "Data|"
+#~ msgid "He wants to give 7 more pieces of candy to his friends."
+#~ msgstr "Agora quere darlles 4 doces ás súas amigas e amigos."
+
+# O nome de John adaptouse ao galego escollendo o terceiro nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
+#, fuzzy
+#~| msgctxt "board1|"
+#~| msgid ""
+#~| "John wants to equally share 10 pieces of candy between 3 of his friends: "
+#~| "one boy and two girls. Can he equally split the pieces of candy between "
+#~| "his friends? First, place the children in center, then drag the pieces "
+#~| "of candy to each of them."
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "George wants to equally share 3 pieces of candy between 3 of his girl "
+#~ "friends. Can he equally split the pieces of candy? First, place the "
+#~ "children in the center, then drag the pieces of candy to each of them."
+#~ msgstr ""
+#~ "Mateo quere compartir de maneira equitativa 10 doces entre 3 das súas "
+#~ "amigas e amigos: un neno e dúas nenas. Pode repartir os doces de maneira "
+#~ "equitativa entre eles? Primeiro coloca o neno e as nenas no centro, e a "
+#~ "continuación arrastra os doces a cada un deles."
+
+# O nome de Alice adaptouse ao galego escollendo o segundo nome de nena máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenas), a falta de datos máis actuais.
+#, fuzzy
+#~| msgctxt "board2|"
+#~| msgid ""
+#~| "Alice wants to equally share 3 pieces of candy between 3 of her friends: "
+#~| "one girl and two boys. Can you help her? First, place the children in "
+#~| "the center, then drag the pieces of candy to each of them."
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Maria wants to equally share 6 pieces of candy between 3 of her friends: "
+#~ "1 girl and 2 boys. Can she equally split the pieces of candy? First, "
+#~ "place the children in the center, then drag the pieces of candy to each "
+#~ "of them."
+#~ msgstr ""
+#~ "Martina quere compartir de maneira equitativa 3 doces entre 3 dos seus "
+#~ "amigos: unha nena e dous nenos. Podes axudala? Primeiro, coloca a nena e "
+#~ "os neno no centro, e a continuación arrastra os doces a cada un deles."
+
+# O nome de John adaptouse ao galego escollendo o terceiro nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
+#, fuzzy
+#~| msgctxt "board1|"
+#~| msgid ""
+#~| "John wants to equally share 10 pieces of candy between 3 of his friends: "
+#~| "one boy and two girls. Can he equally split the pieces of candy between "
+#~| "his friends? First, place the children in center, then drag the pieces "
+#~| "of candy to each of them."
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Paul wants to equally share 12 pieces of candy between 3 of his friends: "
+#~ "2 boys and 1 girl. Can he equally split the pieces of candy? First, place "
+#~ "the children in the center, then drag the pieces of candy to each of them."
+#~ msgstr ""
+#~ "Mateo quere compartir de maneira equitativa 10 doces entre 3 das súas "
+#~ "amigas e amigos: un neno e dúas nenas. Pode repartir os doces de maneira "
+#~ "equitativa entre eles? Primeiro coloca o neno e as nenas no centro, e a "
+#~ "continuación arrastra os doces a cada un deles."
+
+# O nome de Alice adaptouse ao galego escollendo o segundo nome de nena máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenas), a falta de datos máis actuais.
+#, fuzzy
+#~| msgctxt "board2|"
+#~| msgid ""
+#~| "Alice wants to equally share 3 pieces of candy between 3 of her friends: "
+#~| "one girl and two boys. Can you help her? First, place the children in "
+#~| "the center, then drag the pieces of candy to each of them."
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Alice wants to equally share 4 pieces of candy between 4 of her girl "
+#~ "friends. Can you help her? First, place the children in the center, then "
+#~ "drag the pieces of candy to each of them."
+#~ msgstr ""
+#~ "Martina quere compartir de maneira equitativa 3 doces entre 3 dos seus "
+#~ "amigos: unha nena e dous nenos. Podes axudala? Primeiro, coloca a nena e "
+#~ "os neno no centro, e a continuación arrastra os doces a cada un deles."
+
+#, fuzzy
+#~| msgctxt "board2|"
+#~| msgid ""
+#~| "Can you help Alice give 9 pieces of candy to her friends: one girl and "
+#~| "two boys?"
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Can you help Alice give 10 pieces of candy to her friends, 1 girl and 3 "
+#~ "boys?"
+#~ msgstr ""
+#~ "Podes axudar a Martina a darlles 9 doces ás súas amigas e amigos: unha "
+#~ "nena e dous nenos?"
+
+# O nome de Michael adaptouse ao galego escollendo o cuarto nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
+#, fuzzy
+#~| msgctxt "board3|"
+#~| msgid ""
+#~| "Michael wants to equally share 5 pieces of candy between 2 of his "
+#~| "friends: one girl and one boy. Can you help him? First, place the "
+#~| "children in center, then drag the pieces of candy to each of them!"
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Michael wants to equally share 5 pieces of candy between 5 of his girl "
+#~ "friends. Can you help him? First, place the children in the center, then "
+#~ "drag the pieces of candy to each of them."
+#~ msgstr ""
+#~ "Pablo quere compartir de maneira equitativa 5 doces entre 2 dos seus "
+#~ "amigos: unha nena e un neno. Podes axudalo? Primeiro, coloca a nena e o "
+#~ "neno no centro, e a continuación arrastra os doces a cada un deles!"
+
+# O nome de Paul adaptouse ao galego escollendo o nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
+#, fuzzy
+#~| msgctxt "board0|"
+#~| msgid ""
+#~| "Paul wants to equally share 2 pieces of candy between 2 of his friends: "
+#~| "one girl and one boy. Can you help him? First, place the children in "
+#~| "center, then drag the pieces of candy to each of them."
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Paul wants to equally share 20 pieces of candy between 5 of his friends: "
+#~ "2 girls and 3 boys. Can you help him? First, place the children in the "
+#~ "center, then drag the pieces of candy to each of them."
+#~ msgstr ""
+#~ "Martín quere compartir de maneira equitativa 2 doces entre 2 dos seus "
+#~ "amigos: unha nena e un neno. Podes axudalo? Primeiro, coloca a nena e o "
+#~ "neno no centro, e a continuación arrastra os doces a cada un deles."
+
+# O nome de Elizabeth adaptouse ao galego escollendo o quinto nome de nena máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenas), a falta de datos máis actuais.
+#, fuzzy
+#~| msgctxt "board4|"
+#~| msgid ""
+#~| "For her birthday, Elizabeth has 12 pieces of candy to share with 4 of "
+#~| "her friends: two girls and two boys. How should she split the pieces of "
+#~| "candy to her friends?"
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
+#~ "friends: 2 girls and 1 boy. How should she split the pieces of candy?"
+#~ msgstr ""
+#~ "Polo seu aniversario, Sara ten 12 doces para compartir con 4 das súas "
+#~ "amigas e amigos: dúas nenas e dous nenos. Como debería compartir os doces "
+#~ "coas súas amigas e amigos?"
+
+#, fuzzy
+#~| msgctxt "board0|"
+#~| msgid "Now he wants to give 4 pieces of candy to his friends."
+#~ msgctxt "Data|"
+#~ msgid "He wants to give 8 more pieces of candy to his friends."
+#~ msgstr "Agora quere darlles 4 doces ás súas amigas e amigos."
+
+#, fuzzy
+#~| msgctxt "board5|"
+#~| msgid "Can you now give 6 of Harry's pieces of candy to his friends?"
+#~ msgctxt "Data|"
+#~ msgid "Can you now give 8 of Harry's pieces of candy to his friends?"
+#~ msgstr "Podes darlles agora 6 dos doces de Adrián ás súas amigas e amigos?"
+
+# O nome de George adaptouse ao galego escollendo o segundo nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
+#, fuzzy
+#~| msgctxt "board1|"
+#~| msgid ""
+#~| "George wants to equally share 3 pieces of candy between 2 of his "
+#~| "friends: one girl and one boy. Can he equally split the pieces of candy "
+#~| "between his friends? First, place the children in center, then drag the "
+#~| "pieces of candy to each of them. Be careful, a rest will remain!"
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "George wants to equally share 14 pieces of candy between 4 of his "
+#~ "friends: 2 girls and 2 boys. Can he equally split the pieces of candy "
+#~ "between his friends? First, place the children in center, then drag the "
+#~ "pieces of candy to each of them. Be careful."
+#~ msgstr ""
+#~ "Hugo quere compartir de maneira equitativa 3 doces entre 2 das súas "
+#~ "amigas e amigos. Pode repartir os doces de maneira equitativa entre eles? "
+#~ "Primeiro coloca a nena e o neno no centro, e a continuación arrastra os "
+#~ "doces a cada un deles. Ten coidado, vai quedar un resto!"
+
+# O nome de Maria adaptouse ao galego escollendo o nome de nena máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenas), a falta de datos máis actuais.
+#, fuzzy
+#~| msgctxt "board1|"
+#~| msgid ""
+#~| "Maria wants to equally share 5 pieces of candy between 3 of her friends: "
+#~| "one girl and two boys. Can she equally split the pieces of candy between "
+#~| "her friends? First, place the children in center, then drag the pieces "
+#~| "of candy to each of them. Be careful, a rest will remain!"
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Maria wants to equally share 23 pieces of candy between 5 of her friends: "
+#~ "3 girls and 2 boys. Can she equally split the pieces of candy between her "
+#~ "friends? First, place the children in center, then drag the pieces of "
+#~ "candy to each of them. Be careful, a rest will remain."
+#~ msgstr ""
+#~ "Noa quere compartir de maneira equitativa 5 doces entre 3 das súas amigas "
+#~ "e amigos: unha nena e dous nenos. Pode repartir os doces de maneira "
+#~ "equitativa entre eles? Primeiro coloca a nena e os neno no centro, e a "
+#~ "continuación arrastra os doces a cada un deles. Ten coidado, vai quedar "
+#~ "un resto!"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Counting skills"
+#~ msgstr "Habilidade para contar"
+
+#~ msgctxt "Dataset|"
+#~ msgid "433 days"
+#~ msgstr "433 días"
+
+#~ msgctxt "Dataset|"
+#~ msgid "88 days"
+#~ msgstr "88 días"
+
+#~ msgctxt "Dataset|"
+#~ msgid "107 days"
+#~ msgstr "107 días"
+
+#~ msgctxt "Dataset|"
+#~ msgid "225 days"
+#~ msgstr "225 días"
+
+#~ msgctxt "Dataset|"
+#~ msgid "116 days"
+#~ msgstr "116 días"
+
+#~ msgctxt "Dataset|"
+#~ msgid "100 days"
+#~ msgstr "100 días"
+
+#~ msgctxt "Dataset|"
+#~ msgid "687 days"
+#~ msgstr "687 días"
+
+#~ msgctxt "Dataset|"
+#~ msgid "1 year"
+#~ msgstr "1 ano"
+
+#~ msgctxt "Dataset|"
+#~ msgid "24 years"
+#~ msgstr "24 anos"
+
+#~ msgctxt "Dataset|"
+#~ msgid "68 years"
+#~ msgstr "68 anos"
+
+#~ msgctxt "Dataset|"
+#~ msgid "84 years"
+#~ msgstr "84 anos"
+
+#~ msgctxt "Dataset|"
+#~ msgid "165 years"
+#~ msgstr "165 anos"
+
+#~ msgctxt "Dataset|"
+#~ msgid "3 years"
+#~ msgstr "3 anos"
+
+#~ msgctxt "Dataset|"
+#~ msgid "100 years"
+#~ msgstr "100 anos"
 
 #~ msgctxt "MagicHat|"
 #~ msgid "−"
@@ -32508,6 +31822,10 @@ msgstr "Iniciar"
 #~ msgid "Numbers"
 #~ msgstr "Números arábigos"
 
+#~ msgctxt "Reversecount|"
+#~ msgid "Romans"
+#~ msgstr "Números romanos"
+
 #~ msgctxt "Dataset|"
 #~ msgid "1000 degrees celsius"
 #~ msgstr "1000 graos Celsius"
@@ -33214,6 +32532,18 @@ msgstr "Iniciar"
 #~ msgid "Sounds"
 #~ msgstr "Sons"
 
+#, fuzzy
+#~| msgid ""
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ msgstr ""
+#~ "MIME-Version: 1.0\n"
+#~ "Content-Type: text/plain; charset=UTF-8\n"
+#~ "Content-Transfer-Encoding: 8bit\n"
+#~ "Plural-Forms: nplurals=2; plural=n != 1;\n"
+#~ "X-Language: gl\n"
+#~ "X-Qt-Contexts: true\n"
+
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Train your audio memory and remove all the violinists Tux."
 #~ msgstr ""
@@ -33226,6 +32556,10 @@ msgstr "Iniciar"
 #~ msgctxt "DialogConfig|"
 #~ msgid "English (United States)"
 #~ msgstr "Inglés (Estados Unidos)"
+
+#~ msgctxt "DialogConfig|"
+#~ msgid "Breton"
+#~ msgstr "Bretón"
 
 #~ msgctxt "DialogConfig|"
 #~ msgid "Spanish"

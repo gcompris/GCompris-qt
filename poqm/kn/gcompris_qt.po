@@ -29892,67 +29892,6 @@ msgstr "ಪ್ರಾರಂಭಿಸೋಣ"
 #~ msgid "Find the in-between number."
 #~ msgstr "ಎರಡೂ ಸಂಖ್ಯೆಗಳನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ."
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Ctrl + A: select all the text"
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Ctrl + D: save the drawing"
-#~ msgstr "Ctrl + A: ಟೆಕ್ಸ್ಟನ್ನು ಪೂರ್ತಿಯಾಗಿ ಆರಿಸಲು"
-
-#, fuzzy
-#~| msgctxt "ActivityConfig|"
-#~| msgid "Select your mode"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save vector image (SVG)"
-#~ msgstr "ಮೋಡ್ ಆರಿಸಿರಿ"
-
-# Priya C H <priyachandragiri@gmail.com>, 2024.
-# Praveen Kumar <praveenseethangoli@gmail.com>, 2024.
-# Ravishankar <doddamani79@gmail.com>, 2024.
-# Shreesha Kumar M P <shreeshaedneer@gmail.com>, 2024.
-# Divyaganga P <dgangap@gmail.com>, 2024.
-# Melvin D Souza <melwids90@gmail.com>, 2024.
-# Shylesh Bhat <shyleshnerchal@gmail.com>, 2024.
-# Punashya K <punashya3@gmail.com>, 2024.
-#, fuzzy
-#~| msgid ""
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ msgstr ""
-#~ "Project-Id-Version: \n"
-#~ "POT-Creation-Date: \n"
-#~ "PO-Revision-Date: 2025-10-29 05:39+0100\n"
-#~ "Last-Translator: Praveen Kumar <praveenseethangoli@gmail.com>\n"
-#~ "Language-Team: Kannada <kde-i18n-doc@kde.org>\n"
-#~ "Language: kn\n"
-#~ "MIME-Version: 1.0\n"
-#~ "Content-Type: text/plain; charset=UTF-8\n"
-#~ "Content-Transfer-Encoding: 8bit\n"
-#~ "Plural-Forms: nplurals=2; plural=n != 1;\n"
-#~ "X-Qt-Contexts: true\n"
-#~ "X-Generator: Poedit 3.5\n"
-
-#, fuzzy
-#~| msgctxt "category_colors|"
-#~| msgid "Colors"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Color"
-#~ msgstr "ಬಣ್ಣಗಳು"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "Districto Federal"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Distance to center"
-#~ msgstr "ಡಿಸ್ಟ್ರಿಕ್ಟೊ ಫೆಡರಲ್"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "Palestine"
-#~ msgctxt "ColorsPanel|"
-#~ msgid "Palettes"
-#~ msgstr "ಪ್ಯಾಲಸ್ತೈನ್"
-
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Logic training activity."
 #~ msgstr "ತಾರ್ಕಿಕ ಚಿಂತನೆಯ ತರಬೇತಿ."

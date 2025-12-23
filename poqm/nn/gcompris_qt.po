@@ -6653,6 +6653,8 @@ msgstr ""
 #: activities/drawing_wheels/ActivityConfig.qml:29
 #: activities/sketch/ActivityConfig.qml:29
 #, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Numbers from 1 to 19."
 msgctxt "ActivityConfig|"
 msgid "Number of undo: %1"
 msgstr "Tal frå 1 til 19"
@@ -6668,6 +6670,8 @@ msgstr ""
 #. Activity title
 #: activities/drawing_wheels/ActivityInfo.qml:19
 #, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Draw letters"
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
 msgstr "Teikn bokstavar"
@@ -6736,18 +6740,24 @@ msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:414
 #, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Piano composition"
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr "Komponering for piano"
 
 #: activities/drawing_wheels/DrawingWheels.qml:426
 #, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Font selector"
 msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr "Vel skrift"
 
 #: activities/drawing_wheels/DrawingWheels.qml:453
 #, fuzzy
+#| msgctxt "OptionsRow|"
+#| msgid "Undo"
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Angra"
@@ -6813,12 +6823,16 @@ msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:965
 #, fuzzy, qt-format
+#| msgctxt "SignalGenerator|"
+#| msgid "%1 s"
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 s"
 
 #: activities/drawing_wheels/DrawingWheels.qml:983
 #, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Speed"
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Fart"
@@ -6835,6 +6849,8 @@ msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:1062
 #, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Font size"
 msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "Skriftstorleik"
@@ -6851,6 +6867,8 @@ msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:1180
 #, fuzzy
+#| msgctxt "IntroMessage|"
+#| msgid "Start"
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "Start"
@@ -6869,12 +6887,16 @@ msgstr "Er du sikker på at du vil angra alle trekka du har gjort?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1362
 #, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "Yes"
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Ja"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1363
 #, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "No"
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "Nei"
@@ -7464,6 +7486,12 @@ msgstr "Chichén Itzá"
 
 #: activities/explore_monuments/resource/board/board1.qml:20
 #, fuzzy
+#| msgctxt "board1|"
+#| msgid ""
+#| "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
+#| "the Yucatan Peninsula in Mexico, between Valladolid and Merida. It was "
+#| "established before the period of Christopher Colombus and probably served "
+#| "as the religion center of Yucatan for a while."
 msgctxt "board1|"
 msgid ""
 "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
@@ -8602,6 +8630,8 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
 #, fuzzy
+#| msgctxt "board2|"
+#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
 msgstr "Palasset i Mysore"
@@ -8660,6 +8690,8 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
 #, fuzzy
+#| msgctxt "board3|"
+#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
 msgstr "Eiffeltårnet"
@@ -8680,12 +8712,16 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:85
 #, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
 msgstr "Byggverk i India"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
 #, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Trykk på staden der byggverket ligg."
@@ -8735,6 +8771,8 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
 #, fuzzy
+#| msgctxt "board4|"
+#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
 msgstr "Wormser Dom"
@@ -8757,6 +8795,8 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
 #, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
 msgstr "Tårnet i Hanoi"
@@ -8819,12 +8859,16 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:85
 #, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
 msgstr "Byggverk i India"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
 #, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Trykk på staden der byggverket ligg."
@@ -8832,6 +8876,8 @@ msgstr "Trykk på staden der byggverket ligg."
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
 #, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
 msgstr "Både store og små bokstavar"
@@ -8913,12 +8959,16 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:63
 #, fuzzy
+#| msgctxt "board3|"
+#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
 msgstr "Byggverk i Frankrike"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
 #, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Trykk på staden der byggverket ligg."
@@ -14992,6 +15042,8 @@ msgstr "Tal frå 1 til 5"
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
 #, fuzzy
+#| msgctxt "Data|"
+#| msgid "Number to find between 0 and 20."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
 msgstr "Tal frå 0 til 20"
@@ -15530,6 +15582,8 @@ msgstr "Krev deling"
 
 #: activities/guess24/resource/6/Data.qml:13
 #, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
 msgstr "Biletlotto med alle aritmetiske operasjonar"
@@ -17751,6 +17805,10 @@ msgstr ""
 
 #: activities/louis-braille/louis_braille_data.js:52
 #, fuzzy
+#| msgctxt "louis_braille_data|"
+#| msgid ""
+#| "He revised and extended braille to include mathematics, symbols, "
+#| "punctuations and music notations."
 msgctxt "louis_braille_data|"
 msgid ""
 "He revised and extended braille to include mathematics, symbols, punctuation "
@@ -17789,6 +17847,8 @@ msgstr ""
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
 #, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
 msgstr "Trollmannens hatt"
@@ -17887,6 +17947,8 @@ msgstr "%1 ×"
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
 #, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
 msgstr "Trollmannens hatt"
@@ -28492,6 +28554,8 @@ msgstr "Fann ikkje datafiler for %1."
 
 #: core/GCCreationHandler.qml:185
 #, fuzzy
+#| msgctxt "GCCreationHandler|"
+#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
 msgstr "%1 er no sletta."
@@ -28504,6 +28568,8 @@ msgstr ""
 
 #: core/GCCreationHandler.qml:193
 #, fuzzy
+#| msgctxt "GCCreationHandler|"
+#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
 msgstr "Klarte ikkje sletta %1."
@@ -28689,6 +28755,8 @@ msgstr ""
 
 #: core/main.cpp:146
 #, fuzzy
+#| msgctxt "QObject|"
+#| msgid "Specify the activity when starting GCompris."
 msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
 msgstr "Vel kva aktivitet GCompris skal starta med."

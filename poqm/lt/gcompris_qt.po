@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris-QT\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-02-08 20:09+0200\n"
+"PO-Revision-Date: 2025-05-11 07:47+0300\n"
 "Last-Translator: Rolandas Jakštys <rolandas@jakstys.lt>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
@@ -26,7 +26,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.6\n"
 "X-Language: lt\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Qt-Contexts: true\n"
@@ -2906,22 +2906,12 @@ msgstr ""
 "dvejetainį skaičių. Įžiebęs visas lemputes, spausk mygtuką OK."
 
 #: activities/binary_bulb/BinaryBulb.qml:95
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "This activity teaches how to convert decimal numbers to binary numbers."
 msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr ""
 "Ši pamokėlė moko, kaip konvertuoti dešimtainius skaičius į dvejetainius."
 
 #: activities/binary_bulb/BinaryBulb.qml:99
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Computers use transistors to count and transistors have only two states, "
-#| "0 and 1. Mathematically, these states are represented by 0 and 1, which "
-#| "makes up the binary system of numeration."
 msgctxt "BinaryBulb|"
 msgid ""
 "Computers use transistors to count and transistors have only two states, 0 "
@@ -2933,20 +2923,12 @@ msgstr ""
 "dvejetainę skaičiavimo sistemą."
 
 #: activities/binary_bulb/BinaryBulb.qml:103
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr ""
 "Pamokėlėje 0 ir 1 atstoja lemputės, kurias galima įjungti arba išjungti."
 
 #: activities/binary_bulb/BinaryBulb.qml:107
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Binary system uses these numbers very efficiently, allowing to count from "
-#| "0 to 255 with 8 bits only."
 msgctxt "BinaryBulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
@@ -2956,13 +2938,6 @@ msgstr ""
 "nuo 0 iki 255 naudodama tik 8 bitus."
 
 #: activities/binary_bulb/BinaryBulb.qml:111
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Each bit adds a progressive value, corresponding to the powers of 2, "
-#| "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → "
-#| "2²=4 , bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit "
-#| "8 → 2⁷=128."
 msgctxt "BinaryBulb|"
 msgid ""
 "Each bit adds a progressive value, corresponding to the powers of 2, "
@@ -2975,19 +2950,11 @@ msgstr ""
 "bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit 8 → 2⁷=128."
 
 #: activities/binary_bulb/BinaryBulb.qml:115
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr "Dešimtainį skaičių 5 paversti dvejetainiu, reik sudėti 1 ir 4."
 
 #: activities/binary_bulb/BinaryBulb.qml:119
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 "
-#| "is equal to binary 101."
 msgctxt "BinaryBulb|"
 msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
@@ -2997,9 +2964,6 @@ msgstr ""
 "Dešimtainis skaičius 5 lygus dvejetainei reikšmei 101."
 
 #: activities/binary_bulb/BinaryBulb.qml:123
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "This image will help you to compute bits' value."
 msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Šis paveikslėlis padės tau suskaičiuoti bitų reikšmę."
@@ -7627,7 +7591,7 @@ msgid ""
 msgstr ""
 "Čičen Ica, kuri reiškia „Prie Icos šulinio žiočių“ yra majų miestas Jukatano "
 "pusiasalyje, Meksikoje, tarp Valadolido ir Meridos. Jis buvo įkurtas dar iki "
-"Kristupo Kolumbo laikų ir greičiausiai kurį laiką buvo laikomas Jutakano "
+"Kristupo Kolumbo laikų ir greičiausiai kurį laiką buvo laikomas Jukatano "
 "religiniu centru."
 
 #: activities/explore_monuments/resource/board/board1.qml:30
@@ -13642,7 +13606,7 @@ msgstr "Uzbekija"
 #: activities/geography/resource/board/board11_0.qml:15
 msgctxt "board11_0|"
 msgid "South Asia"
-msgstr "Pietų Afrika"
+msgstr "Pietų Azija"
 
 #: activities/geography/resource/board/board11_0.qml:24
 msgctxt "board11_0|"
@@ -14347,7 +14311,7 @@ msgstr "Sudanas"
 #: activities/geography/resource/board/board7_0.qml:59
 msgctxt "board7_0|"
 msgid "South Sudan"
-msgstr "Pietų Afrika"
+msgstr "Pietų Sudanas"
 
 #: activities/geography/resource/board/board7_0.qml:66
 msgctxt "board7_0|"
@@ -14582,7 +14546,7 @@ msgstr "Pusiaujo Gvinėja"
 #: activities/geography/resource/board/board8_0.qml:136
 msgctxt "board8_0|"
 msgid "Democratic Republic of the Congo"
-msgstr "Kongo demokratinė respublika"
+msgstr "Kongo Demokratinė Respublika"
 
 #: activities/geography/resource/board/board8_0.qml:143
 msgctxt "board8_0|"
@@ -14678,7 +14642,7 @@ msgstr "Kuveitas"
 #: activities/geography/resource/board/board9_0.qml:124
 msgctxt "board9_0|"
 msgid "Qatar"
-msgstr "Kuveitas"
+msgstr "Kataras"
 
 #: activities/geography/resource/board/board9_0.qml:131
 msgctxt "board9_0|"
@@ -15337,36 +15301,21 @@ msgid "Empty"
 msgstr "Tuščia"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Grammatical analysis"
 msgctxt "GrammarAnalysis|"
 msgid "Grammatical analysis"
 msgstr "Kalbos dalių analizė"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "GrammarAnalysis|"
 msgid "Learn to identify grammatical classes."
 msgstr "Mokykis atpažinti kalbos dalis."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:28
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid ""
-#| "Find all the words corresponding to the requested grammatical classes."
 msgctxt "GrammarAnalysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr "Rask visus žodžius, atitinkančius nurodytas kalbos dalis."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a grammatical class from the list, then select the box under a "
-#| "word and assign it the class."
 msgctxt "GrammarAnalysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
@@ -15376,9 +15325,6 @@ msgstr ""
 "kalbos dalį."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Leave the box blank if no class matches."
 msgctxt "GrammarAnalysis|"
 msgid "Leave the box blank if no class matches."
 msgstr "Palik laukelį tuščią, jei nėra tinkamos kalbos dalies."
@@ -15410,35 +15356,21 @@ msgid "Leave the box blank if the class doesn't match."
 msgstr "Palik laukelį tuščią, jei kalbos dalis nesutampa."
 
 #: activities/grammar_classes/GrammarClasses.qml:15
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Grammatical classes"
 msgctxt "GrammarClasses|"
 msgid "Grammatical classes"
 msgstr "Kalbos dalys"
 
 #: activities/grammar_classes/GrammarClasses.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "GrammarClasses|"
 msgid "Learn to identify grammatical classes."
 msgstr "Mokykis atpažinti kalbos dalis."
 
 #: activities/grammar_classes/GrammarClasses.qml:17
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Find all the words corresponding to the requested grammatical class."
 msgctxt "GrammarClasses|"
 msgid "Find all the words corresponding to the requested grammatical class."
 msgstr "Rask visus žodžius, atitinkančius nurodytas kalbos dalis."
 
 #: activities/grammar_classes/GrammarClasses.qml:18
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid ""
-#| "Select the grammatical class from the list, then select the box under a "
-#| "word and assign it the class."
 msgctxt "GrammarClasses|"
 msgid ""
 "Select the grammatical class from the list, then select the box under a word "
@@ -15448,9 +15380,6 @@ msgstr ""
 "jam tą kalbos dalį."
 
 #: activities/grammar_classes/GrammarClasses.qml:19
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Leave the box blank if the class doesn't match."
 msgctxt "GrammarClasses|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr "Palik laukelį tuščią, jei nėra tinkamos kalbos dalies pasirinkimo."
@@ -17035,11 +16964,6 @@ msgstr ""
 "mygtuką OK, taip patvirtindamas savo atsakymą."
 
 #: activities/learn_decimals/Learn_decimals.qml:30
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A decimal number is displayed. The bar with the arrow represents a full "
-#| "unit, and each square in it represents one tenth of this unit."
 msgctxt "Learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
@@ -17049,13 +16973,6 @@ msgstr ""
 "kiekvienas kvadratėlis joje – dešimtadalį šio vieneto."
 
 #: activities/learn_decimals/Learn_decimals.qml:34
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a part of the bar, and drag the selected part of "
-#| "the bar to the empty area. Repeat these steps until the number of dropped "
-#| "bars corresponds to the displayed decimal number. Then click on the OK "
-#| "button to validate your answer."
 msgctxt "Learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -17161,12 +17078,6 @@ msgid "Numbers: type the result"
 msgstr "Skaičiai: įvesk rezultatą"
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "An addition with two decimal numbers is displayed. The bar with the arrow "
-#| "represents a full unit, and each square in it represents one tenth of "
-#| "this unit."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "An addition with two decimal numbers is displayed. The bar with the arrow "
@@ -17177,13 +17088,6 @@ msgstr ""
 "visą vienetą, o kiekvienas kvadratėlis joje – dešimtadalį šio vieneto."
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a part of the bar, and drag the selected part of "
-#| "the bar to the empty area. Repeat these steps until the number of dropped "
-#| "bars corresponds to the result of the addition, and click on the OK "
-#| "button to validate your answer."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -17197,11 +17101,6 @@ msgstr ""
 "patvirtindamas savo atsakymą."
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:24
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -17262,12 +17161,6 @@ msgstr ""
 "kvadratėlius ir parodyk atimties veiksmo rezultatą"
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A subtraction with two decimal numbers is displayed. Below it, the first "
-#| "number from the subtraction is represented with bars. One bar represents "
-#| "a full unit, and each square in it represents one tenth of this unit."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "A subtraction with two decimal numbers is displayed. Below it, the first "
@@ -17279,11 +17172,6 @@ msgstr ""
 "visą vienetą, o kiekvienas kvadratėlis joje – dešimtadalį šio vieneto."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Click on the squares to subtract them and display the result of the "
-#| "operation, and click on the OK button to validate your answer."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
@@ -17293,11 +17181,6 @@ msgstr ""
 "atimties rezultatas. Spustelėk mygtuką OK, taip patvirtindamas savo atsakymą."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:24
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -17465,10 +17348,6 @@ msgstr ""
 "OK, taip patvirtindamas savo atsakymą."
 
 #: activities/learn_quantities/Learn_quantities.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgctxt "Learn_quantities|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr ""
@@ -17476,13 +17355,6 @@ msgstr ""
 "pasirinkti iki 10 apelsinų."
 
 #: activities/learn_quantities/Learn_quantities.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a number of oranges, and drag the selected "
-#| "oranges to the empty area. Repeat these steps until the number of oranges "
-#| "corresponds to the requested quantity. Then click on the OK button to "
-#| "validate your answer."
 msgctxt "Learn_quantities|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "
@@ -20829,11 +20701,6 @@ msgid "Try again"
 msgstr "Bandyk iš naujo"
 
 #: activities/nine_men_morris/NineMenMorris.qml:348
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "You and Tux start with 9 pieces each, and take turns to place your pieces "
-#| "on the empty spots of the board (by clicking on the spots)."
 msgctxt "NineMenMorris|"
 msgid ""
 "You and Tux start with 9 pieces each, and take turns to place your pieces on "
@@ -20843,12 +20710,6 @@ msgstr ""
 "dėliojate juos ant tuščių duobučių (spustelėdami ant jų) lentoje."
 
 #: activities/nine_men_morris/NineMenMorris.qml:352
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
-#| "remove it. Pieces of formed mill can not be removed unless no other "
-#| "pieces are left on the board."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
@@ -20860,12 +20721,6 @@ msgstr ""
 "lentoje dar yra pavienių priešininko akmenėlių."
 
 #: activities/nine_men_morris/NineMenMorris.qml:356
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "After all the pieces are placed, you and Tux will take turns to move "
-#| "them. Click on one of your pieces, and then on an adjacent empty spot to "
-#| "move it there. Green color spots indicates where you can move."
 msgctxt "NineMenMorris|"
 msgid ""
 "After all the pieces are placed, you and Tux will take turns to move them. "
@@ -20878,11 +20733,6 @@ msgstr ""
 "reiškia, kad į jas galima įdėti."
 
 #: activities/nine_men_morris/NineMenMorris.qml:360
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
-#| "moved to any vacant spot on the board."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
@@ -20892,11 +20742,6 @@ msgstr ""
 "bet kurią tuščią vietą lentoje."
 
 #: activities/nine_men_morris/NineMenMorris.qml:364
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you immobilize the computer or leave it with less than 3 pieces, then "
-#| "you win the game."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
@@ -23187,30 +23032,17 @@ msgid "Loop"
 msgstr "Ciklas"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:542
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Instruction Area:"
 msgctxt "ProgrammingMaze|"
 msgid "Instruction Area:"
 msgstr "Komandų sritis:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:543
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "There are 3 instructions which you can use to code and lead Tux to the "
-#| "fish:"
 msgctxt "ProgrammingMaze|"
 msgid ""
 "There are 3 instructions which you can use to code and lead Tux to the fish:"
 msgstr "Galite naudoti 3 komandas programuodami kad Tuksas pasiektų žuvį:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:544
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
-#| "facing."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
@@ -23220,43 +23052,26 @@ msgstr ""
 "kryptimi."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:545
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgctxt "ProgrammingMaze|"
 msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgstr "<b>2. Suk kairėn:</b> Pasuka Tuksą į kairę."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:546
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgctxt "ProgrammingMaze|"
 msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgstr "<b>3. Suk dešinėn:</b> Pasuka Tuksą į dešinę."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:550
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Main Function:"
 msgctxt "ProgrammingMaze|"
 msgid "Main Function:"
 msgstr "Pagrindinė (main) funkcija:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:551
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "The execution of the code starts here."
 msgctxt "ProgrammingMaze|"
 msgid "The execution of the code starts here."
 msgstr "Programos kodo vykdymas pradedamas čia."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:552
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-Click on any instruction in the <b>instruction area</b> to add it to the "
-#| "<b>Main Function</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-Click on any instruction in the <b>instruction area</b> to add it to the "
@@ -23266,11 +23081,6 @@ msgstr ""
 "prie <b>Pagrindinės funkcijos</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:553
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-The instructions will execute in order until there's none left, or until "
-#| "a dead-end, or when Tux reaches the fish."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-The instructions will execute in order until there's none left, or until a "
@@ -23280,19 +23090,11 @@ msgstr ""
 "aklavietę ar pasieks žuvį."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:563
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Procedure:"
 msgctxt "ProgrammingMaze|"
 msgid "Procedure:"
 msgstr "Procedūra:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:564
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>Procedure</b> is a reusable set of instructions which can be <b>used "
-#| "in the code by calling it where needed</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
@@ -23303,12 +23105,6 @@ msgstr ""
 "naudingas</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:565
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main "
-#| "Function area</b> to add your code, click on the <b>Procedure</b> or "
-#| "<b>Main Function</b> label."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
@@ -23320,19 +23116,11 @@ msgstr ""
 "funkcija</b>"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:575
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Loop:"
 msgctxt "ProgrammingMaze|"
 msgid "Loop:"
 msgstr "Ciklas:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:576
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
-#| "the number of times defined by the number inside it</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
@@ -23342,12 +23130,6 @@ msgstr ""
 "apibrėžia joje esantis skaičius – ciklo skaitliukas</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:577
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
-#| "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</"
-#| "b> label."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
@@ -26808,19 +26590,11 @@ msgid "Right Ballast Tank"
 msgstr "Priekinė balasto cisterna"
 
 #: activities/submarine/Submarine.qml:133
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Move the submarine to the other side of the screen."
 msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "Nuplukdyk povandeninį laivą į kitą ekrano pusę."
 
 #: activities/submarine/Submarine.qml:136
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The leftmost item in the control panel is the engine of the submarine, "
-#| "indicating the current speed of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
@@ -26830,20 +26604,12 @@ msgstr ""
 "rodantis povandeninio laivo judėjimo greitį."
 
 #: activities/submarine/Submarine.qml:139
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Increase or decrease the velocity of the submarine using the engine."
 msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr ""
 "Padidink arba sumažink povandeninio laivo greitį, naudodamasis varikliu."
 
 #: activities/submarine/Submarine.qml:142
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Press the + button to increase the velocity, or the - button to decrease "
-#| "the velocity."
 msgctxt "Submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
@@ -26853,27 +26619,16 @@ msgstr ""
 "sumažintum."
 
 #: activities/submarine/Submarine.qml:149
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The item next to the engine is the ballast tank."
 msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "Detalė šalia variklio yra balasto cisterna."
 
 #: activities/submarine/Submarine.qml:152
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The ballast tanks are used to float or dive under water."
 msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr "Naudojant balasto cisternas galima plūduriuoti arba nerti po vandeniu."
 
 #: activities/submarine/Submarine.qml:155
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "If the ballast tanks are empty, the submarine will float. If the ballast "
-#| "tanks are full of water, the submarine will dive underwater."
 msgctxt "Submarine|"
 msgid ""
 "If the ballast tanks are empty, the submarine will float. If the ballast "
@@ -26883,12 +26638,6 @@ msgstr ""
 "balasto cisternos pilnos vandens, laisvas panirs po vandeniu."
 
 #: activities/submarine/Submarine.qml:158
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Turning the upper valve on or off will alternatively allow or stop the "
-#| "water from filling in the ballast tank, thus allowing it to dive "
-#| "underwater."
 msgctxt "Submarine|"
 msgid ""
 "Turning the upper valve on or off will alternatively allow or stop the water "
@@ -26898,12 +26647,6 @@ msgstr ""
 "nustos tekėti. Tai leis laivui panirti po vandeniu."
 
 #: activities/submarine/Submarine.qml:161
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Turning the lower valve on or off will alternatively allow or stop the "
-#| "water from flushing out the ballast tank, thus allowing it to float on "
-#| "the surface of the water."
 msgctxt "Submarine|"
 msgid ""
 "Turning the lower valve on or off will alternatively allow or stop the water "
@@ -26914,25 +26657,15 @@ msgstr ""
 "nustos ištekėti. Tai leis laivui iškilti į vandens paviršių."
 
 #: activities/submarine/Submarine.qml:168
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The rightmost item in the control panel controls the diving planes of the "
-#| "submarine"
 msgctxt "Submarine|"
 msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
 "submarine."
 msgstr ""
 "Valdymo pulto dešinėje esantys mygtukai valdo povandeninio laivo panėrimo "
-"mentes"
+"mentes."
 
 #: activities/submarine/Submarine.qml:171
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The diving planes in a submarine are used to control the depth of the "
-#| "submarine accurately once it is underwater."
 msgctxt "Submarine|"
 msgid ""
 "The diving planes in a submarine are used to control the depth of the "
@@ -26942,11 +26675,6 @@ msgstr ""
 "laivui judant po vandeniu."
 
 #: activities/submarine/Submarine.qml:174
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Once the submarine is moving underwater, increasing or decreasing the "
-#| "angle of the planes will increase and decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "Once the submarine is moving underwater, increasing or decreasing the angle "
@@ -26956,11 +26684,6 @@ msgstr ""
 "plokštumos kampas padidins arba sumažins povandeninio laivo panirimo gylį."
 
 #: activities/submarine/Submarine.qml:177
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The + button will increase the depth of the submarine, while the - button "
-#| "will decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "The + button will increase the depth of the submarine, while the - button "
@@ -26970,20 +26693,14 @@ msgstr ""
 "povandeninį laivą."
 
 #: activities/submarine/Submarine.qml:180
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Grab the crown to open the gate."
 msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
-msgstr "Čiupk už karūnos, kad atidarytum vartus."
+msgstr "Čiupk už karūnos ir atidaryk vartus."
 
 #: activities/submarine/Submarine.qml:183
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Check out the help menu for the keyboard controls."
 msgctxt "Submarine|"
 msgid "Check out the help menu for the keyboard controls."
-msgstr "Patyrinėk pagalbos meniu dėl valdymo klavišų."
+msgstr "Patyrinėk valdymo klavišų pagalbos meniu."
 
 #. Activity title
 #: activities/sudoku/ActivityInfo.qml:15
@@ -27223,7 +26940,7 @@ msgid ""
 "Swap the numbers to create pairs equal to ten and input the answer of the "
 "final sum."
 msgstr ""
-"Apkeisk skaičius, kad sukurtum poras, lygias dešimt, ir įvesk atsakymą – "
+"Apkeisdamas skaičius sukurk poras, lygias dešimt, ir įvesk atsakymą – "
 "galutinę sumą."
 
 #. Help goal
@@ -27304,11 +27021,11 @@ msgid ""
 "corresponding lines. To correct the errors, click on the wrong numbers to "
 "remove them and repeat the previous steps."
 msgstr ""
-"Kai visos eilutės bus užbaigtos, paspausk „OK“ mygtuką, kad pateiktum savo "
-"atsakymus. Jeigu kai kurie atsakymai bus neteisingi, bus parodytas kryžiukas "
-"prie atitinkamos eilutės. Norint ištaisyti klaidas, reikia pasirinkti "
-"neteisingus skaičius ir taip juos pašalinti prieš kartojant buvusius "
-"žingsnius."
+"Kai visos eilutės bus užbaigtos, paspausk „OK“ mygtuką, taip pateikdamas "
+"savo atsakymus. Jeigu kai kurie atsakymai bus neteisingi, bus parodytas "
+"kryžiukas prie atitinkamos eilutės. Norint ištaisyti klaidas, reikia "
+"pasirinkti neteisingus skaičius ir taip juos pašalinti prieš kartojant "
+"buvusius žingsnius."
 
 #. Help manual
 #: activities/tens_complement_find/ActivityInfo.qml:23
@@ -27346,7 +27063,7 @@ msgstr "Apkeisk dešimties dėmenis"
 #: activities/tens_complement_swap/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Swap the numbers to create pairs equal to ten."
-msgstr "Apkeisk skaičius, kad sukurtum poras, lygias dešimt."
+msgstr "Apkeisdamas skaičius sukurk poras, lygias dešimt."
 
 #. Help goal
 #: activities/tens_complement_swap/ActivityInfo.qml:19
@@ -27968,8 +27685,9 @@ msgid ""
 "him."
 msgstr ""
 "Paspausk ant skirtingų aktyvių elementų: saulės, debesies, siurblio stoties "
-"ir atliekų šalinimo stoties, kad iš naujo aktyvuotum visą vandens sistemą. "
-"Kuomet sistema veikia, o Tuksas yra duše – nuspausk jam dušo mygtuką."
+"ir atliekų šalinimo stoties, taip iš naujo aktyvuodamas visą vandens "
+"sistemą. Kuomet sistema veikia, o Tuksas yra duše – nuspausk jam dušo "
+"mygtuką."
 
 #: activities/watercycle/Watercycle.qml:114
 msgctxt "Watercycle|"
@@ -28691,12 +28409,12 @@ msgstr ""
 "atstovauja KDE bendruomenę teisiniuose bei finansiniuose reikaluose. Daugiau "
 "informacijos apie KDE e.V. galite rasti čia: <a href=\"%1\">%1</a>.\n"
 "<br /><br />Prie KDE projekto galima prisidėti įvairiais būdais, tarp jų ir "
-"finansiniais. Mes lėšas naudojame, kad padengtume narių bei kitų žmonių "
-"išlaidas, kurias jie patiria bendradarbiaudami su mumis. Kitos lėšos yra "
-"naudojamos teisinei paramai bei konferencijų ir susirinkimų organizavimui. "
-"<br /> <br /> Mes norėtume paskatinti Jus paremti mūsų pastangas finansine "
-"auka, pasinaudojant vienu iš būdų, aprašytu <a href=\"%2\">%2</a>.<br /><br /"
-">. Iš anksto labai dėkojame už Jūsų paramą."
+"finansiniais. Mes lėšas naudojame  padengti narių bei kitų žmonių išlaidas, "
+"kurias jie patiria bendradarbiaudami su mumis. Kitos lėšos yra naudojamos "
+"teisinei paramai bei konferencijų ir susirinkimų organizavimui. <br /> <br /"
+"> Mes norėtume paskatinti Jus paremti mūsų pastangas finansine auka, "
+"pasinaudojant vienu iš būdų, aprašytu <a href=\"%2\">%2</a>.<br /><br />. Iš "
+"anksto labai dėkojame už Jūsų paramą."
 
 #: core/DialogAbout.qml:139
 #, qt-format
@@ -29276,92 +28994,6 @@ msgstr "Pradėti"
 #~ msgid "Find the missing numbers."
 #~ msgstr "Rask trūkstamuosius skaičius."
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid ""
-#~| "Select tools and colors from the foldable panels and draw images.<br><br>"
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Select wheel, gear, pen's position and color from the foldable panels and "
-#~ "start the gear.<br><br>"
-#~ msgstr ""
-#~ "Pasirink įrankius ir spalvas iš išskleidžiamų skydelių ir piešk.<br><br>"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Ctrl + S: save the image"
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Ctrl + D: save the drawing"
-#~ msgstr "Ctrl + S: Išsaugoti paveikslėlį"
-
-#, fuzzy
-#~| msgctxt "FilesPanel|"
-#~| msgid "Save your image"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save vector image (SVG)"
-#~ msgstr "Išsaugoti paveikslėlį"
-
-# translation of GCompris-QT to Lithuanian
-# Lithuanian translation of GCompris.
-# Copyright (C)
-#
-# Liudas Dmitrijevas <liudasdm@gmail.com>, 2003.
-# Eglė Kriaučiūnienė <egle@akl.lt>, 2001-2014.
-# Gintautas Miliauskas <gintas@akl.lt>, 2006.
-# Jurgis Pralgauskis <jurgis@ljms.lt>, 2007.
-# Aurimas Černius <aurisc4@gmail.com>, 2013, 2014.
-# Mantas Kriaučiūnas <tinklas@tinklas.eu>, 2001-2021.
-# Jonas Jakštys <jonasjakstys1@gmail.com>, 2021, 2023, 2025.
-# Jokūbas Jakštys <rolasorama@gmail.com>, 2025.
-# Rolandas Jakštys <rolandas@jakstys.lt>, 2021-2025.
-# Bernardas Liukaitis <BernardasL@protonmail.com>, 2021-2024.
-#
-#, fuzzy
-#~| msgid ""
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ msgstr ""
-#~ "Project-Id-Version: GCompris-QT\n"
-#~ "POT-Creation-Date: \n"
-#~ "PO-Revision-Date: 2025-02-08 20:09+0200\n"
-#~ "Last-Translator: Rolandas Jakštys <rolandas@jakstys.lt>\n"
-#~ "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
-#~ "Language: lt\n"
-#~ "MIME-Version: 1.0\n"
-#~ "Content-Type: text/plain; charset=UTF-8\n"
-#~ "Content-Transfer-Encoding: 8bit\n"
-#~ "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
-#~ "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-#~ "X-Generator: Poedit 3.5\n"
-#~ "X-Language: lt\n"
-#~ "X-Poedit-SourceCharset: UTF-8\n"
-#~ "X-Qt-Contexts: true\n"
-
-#, fuzzy
-#~| msgctxt "category_colors|"
-#~| msgid "Colors"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Color"
-#~ msgstr "Spalvos"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "Districto Federal"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Distance to center"
-#~ msgstr "Federacinė apygarda"
-
-#~ msgctxt "ColorsPanel|"
-#~ msgid "Palettes"
-#~ msgstr "Paletės"
-
-#, fuzzy
-#~| msgctxt "BinaryBulb|"
-#~| msgid "What is the binary representation of %1?"
-#~ msgctxt "Frieze|"
-#~ msgid "What is the binary representation of %1?"
-#~ msgstr "Koks yra %1 atitikmuo dvejetainėje sistemoje?"
-
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Grammatical analysis"
 #~ msgstr "Kalbos dalių analizė"
@@ -29381,6 +29013,13 @@ msgstr "Pradėti"
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Leave the box blank if no class matches."
 #~ msgstr "Palik laukelį tuščią, jei netinka nė viena kalbos dalis."
+
+#, fuzzy
+#~| msgctxt "BinaryBulb|"
+#~| msgid "What is the binary representation of %1?"
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr "Koks yra %1 atitikmuo dvejetainėje sistemoje?"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"

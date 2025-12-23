@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-05-22 10:49+0200\n"
-"PO-Revision-Date: 2025-03-22 22:36+0100\n"
+"PO-Revision-Date: 2025-02-22 21:54+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -5933,9 +5933,12 @@ msgstr "Cifereca elektro"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "Kreu kaj simulu cifereclogikan cirkviton."
+msgstr "Kreu kaj simulu cifereclogikan skemon."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -7679,7 +7682,7 @@ msgstr "La Novaj 7 Mirindaĵoj de la Mondo."
 #: activities/explore_monuments/resource/board/board1.qml:101
 msgctxt "board1|"
 msgid "Click on the location of the given monument."
-msgstr "Alklaku la lokon de la donita monumento."
+msgstr "Klaku sur la loko de la donita monumento."
 
 #: activities/explore_monuments/resource/board/board2.qml:18
 #: activities/explore_monuments/resource/board/board2.qml:21
@@ -7915,7 +7918,7 @@ msgstr "Monumentoj de Barato"
 #: activities/explore_monuments/resource/board/board2.qml:144
 msgctxt "board2|"
 msgid "Click on the location of the given monument."
-msgstr "Alklaku la lokon de la donita monumento."
+msgstr "Klaku sur la loko de la donita monumento."
 
 #: activities/explore_monuments/resource/board/board3.qml:18
 #: activities/explore_monuments/resource/board/board3.qml:21
@@ -8132,7 +8135,7 @@ msgstr "Monumentoj de Francio"
 #: activities/explore_monuments/resource/board/board3.qml:133
 msgctxt "board3|"
 msgid "Click on the location of the given monument."
-msgstr "Alklaku la lokon de la donita monumento."
+msgstr "Klaku sur la loko de la donita monumento."
 
 #: activities/explore_monuments/resource/board/board4.qml:18
 #: activities/explore_monuments/resource/board/board4.qml:21
@@ -8282,7 +8285,7 @@ msgstr "Monumentoj de Germanio"
 #: activities/explore_monuments/resource/board/board4.qml:100
 msgctxt "board4|"
 msgid "Click on the location of the given monument."
-msgstr "Alklaku la lokon de la donita monumento."
+msgstr "Klaku sur la loko de la donita monumento."
 
 #: activities/explore_monuments/resource/board/board5.qml:18
 #: activities/explore_monuments/resource/board/board5.qml:21
@@ -8521,7 +8524,7 @@ msgstr "Monumentoj de Usono"
 #: activities/explore_monuments/resource/board/board5.qml:133
 msgctxt "board5|"
 msgid "Click on the location of the given monument."
-msgstr "Alklaku la lokon de la donita monumento."
+msgstr "Klaku sur la loko de la donita monumento."
 
 #: activities/explore_monuments/resource/board/board6.qml:17
 #: activities/explore_monuments/resource/board/board6.qml:20
@@ -8643,7 +8646,7 @@ msgstr "Alklaku la lokon de la donita piramido."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr "Malpermesita Urbo"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8663,7 +8666,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr "Leshan Giganta Budho"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8681,9 +8684,12 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Palaco Potala"
+msgstr "Palaco Mysore"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8738,9 +8744,12 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Turoj Diaoloŭ"
+msgstr "Ejfelturo"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8757,11 +8766,17 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:85
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Monumentoj de Ĉinio"
+msgstr "Monumentoj de Barato"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Klaku sur la loko de la donita monumento."
@@ -8770,7 +8785,7 @@ msgstr "Klaku sur la loko de la donita monumento."
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr "La Panteono"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8792,7 +8807,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr "Kupolo de Milano"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8810,9 +8825,12 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
+#, fuzzy
+#| msgctxt "board4|"
+#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Katedralo de Florenco"
+msgstr "Worms Katedralo"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8831,9 +8849,12 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Klinanta Turo de Pizo"
+msgstr "La Turo de Hanojo"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8874,7 +8895,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr "Pompejo"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -8892,20 +8913,29 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:85
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Monumentoj de Italio"
+msgstr "Monumentoj de Barato"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Klaku sur la loko de la donita monumento."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Kastelo Himeji"
+msgstr "Miksita Kazo"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -8983,11 +9013,17 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:63
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Monumentoj de Japanio"
+msgstr "Monumentoj de Francio"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Klaku sur la loko de la donita monumento."
@@ -15483,7 +15519,7 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr "Uzu la kvar nombrojn kun donitaj operatoroj por trovi 24."
+msgstr "Uzu la kvar nombroj kun donitaj operatoroj por trovi 24."
 
 #: activities/guess24/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -15542,9 +15578,12 @@ msgid "Division required."
 msgstr "Postulas dividadon."
 
 #: activities/guess24/resource/6/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "Ĉiuj operatoroj bezonatas."
+msgstr "Ĉiuj operacioj memorludo"
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -17765,9 +17804,12 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "La magiistoĉapelo (subtraho)"
+msgstr "La magiistoĉapelo"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -17859,9 +17901,12 @@ msgstr "%1x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "La magiistoĉapelo (adicio)"
+msgstr "La magiistoĉapelo"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -27592,7 +27637,7 @@ msgstr ""
 #: core/ChangeLog.qml:49
 msgctxt "ChangeLog|"
 msgid "Add splash screen at startup"
-msgstr "Aldono de ŝprucekrano je starto"
+msgstr ""
 
 #: core/ChangeLog.qml:50
 msgctxt "ChangeLog|"
@@ -28673,67 +28718,6 @@ msgstr "Komenci"
 #~ msgid "Find the in-between number."
 #~ msgstr "Trovu la interan nombron."
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Ctrl + S: save the image"
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Ctrl + D: save the drawing"
-#~ msgstr "Ctrl + A: elektu la tutan tekston"
-
-#, fuzzy
-#~| msgctxt "FilesPanel|"
-#~| msgid "Save your image"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save vector image (SVG)"
-#~ msgstr "Elektu vian reĝimon"
-
-# translation of gcompris_qt.pot to esperanto
-# Copyright (C) 2015 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gcompris package.
-# Oliver Kellogg <olivermkellogg@gmail.com>, 2023.
-#
-#, fuzzy
-#~| msgid ""
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ msgstr ""
-#~ "Project-Id-Version: gcompris\n"
-#~ "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-#~ "POT-Creation-Date: 2020-05-22 10:49+0200\n"
-#~ "PO-Revision-Date: 2025-03-22 22:36+0100\n"
-#~ "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
-#~ "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
-#~ "Language: eo\n"
-#~ "MIME-Version: 1.0\n"
-#~ "Content-Type: text/plain; charset=UTF-8\n"
-#~ "Content-Transfer-Encoding: 8bit\n"
-#~ "X-Generator: translate-po (https://github.com/zcribe/translate-po)\n"
-#~ "Plural-Forms: nplurals=2; plural=n != 1;\n"
-#~ "X-Language: eo\n"
-#~ "X-Qt-Contexts: true\n"
-
-#, fuzzy
-#~| msgctxt "category_colors|"
-#~| msgid "Colors"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Color"
-#~ msgstr "Koloroj"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "Districto Federal"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Distance to center"
-#~ msgstr "Federala Distrikto"
-
-#~ msgctxt "ColorsPanel|"
-#~ msgid "Palettes"
-#~ msgstr "Paletroj"
-
-#~ msgctxt "Frieze|"
-#~ msgid "What is the binary representation of %1?"
-#~ msgstr "Kio estas la duuma prezento de %1?"
-
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Grammatical analysis"
 #~ msgstr "Gramatika analizo"
@@ -28753,3 +28737,10 @@ msgstr "Komenci"
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Leave the box blank if no class matches."
 #~ msgstr "Lasu la skatolon malplena se neniu klaso kongruas."
+
+#, fuzzy
+#~| msgctxt "BinaryBulb|"
+#~| msgid "What is the binary representation of %1?"
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr "Kio estas la binara prezento de %1?"

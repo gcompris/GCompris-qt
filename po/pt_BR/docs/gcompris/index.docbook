@@ -150,7 +150,7 @@ for example 'xx.yy.zz'
 >Licença GPLv3</ulink
 >.</para>
 <para
->O &gcompris; está disponível para os seguintes sistemas operacionais: &GNU;/&Linux;, &BSD;, &macOS;, &Windows;, Android. Ele exige uma placa de vídeo 3D com suporte a <emphasis
+>O &gcompris; está disponível para os seguintes sistemas operacionais: &GNU;/&Linux;, &BSD;, MacOSX, &Windows;, Android. Ele exige uma placa de vídeo 3D com suporte a <emphasis
 >OpenGL 2.1</emphasis
 > ou mais recente. Também é obrigatório o suporte a profundidade de cores de 32 bits.</para>
 </sect1>
@@ -159,11 +159,11 @@ for example 'xx.yy.zz'
 <title
 >Instalação</title>
 <para
->O software está disponível de diversas formas. Escolha aquela que for mais adequada para você.</para>
+>O software está disponível de diversas formas. Escolha aquela que for mais adequada para você. </para>
 <itemizedlist>
 <listitem
 ><para
->&GNU;/&Linux;: use os pacotes disponibilizados pela sua distribuição &GNU;/&Linux;. Se o &gcompris; não for empacotado para a sua distribuição &Linux;, entre em contato com os responsáveis pelo empacotamento para pedir a inclusão do &gcompris;.</para
+>&GNU;/&Linux;: use os pacotes disponibilizados pela sua distribuição &GNU;/&Linux;. Se o &gcompris; não for empacotado para a sua distribuição &Linux;, entre em contato com os responsáveis pelo empacotamento para pedir a inclusão do &gcompris; na sua distribuição &Linux;.</para
 ></listitem>
 <listitem
 ><para
@@ -171,11 +171,11 @@ for example 'xx.yy.zz'
 ></listitem>
 <listitem
 ><para
->&macOS;: disponibilizado através de um instalador clássico.</para
+>MacOSX: disponibilizado através de um instalador clássico.</para
 ></listitem>
 <listitem
 ><para
->Android: distribuído pelo F-Droid ou pela Google Play. O arquivo APK também está disponível.</para
+>Android: distribuído pelo F-Droid ou pela Google Play. O arquivo apk também está disponível.</para
 ></listitem>
 </itemizedlist>
 </sect1>
@@ -217,18 +217,18 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="difficulty1.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
+><imagedata fileref="difficulty1.svg" format="SVG"/></imageobject
 ></inlinemediaobject
->1, 2 ou 3 estrelas amarelas — para 2 a 6 anos de idade.</para
+>1, 2 ou 3 estrelas amarelas - para 2 a 6 anos de idade.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="difficulty4.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
+><imagedata fileref="difficulty4.svg" format="SVG"/></imageobject
 ></inlinemediaobject
->1, 2 ou 3 estrelas vermelhas — maiores de 6 anos de idade.</para
+>1, 2 ou 3 estrelas vermelhas - maiores de 6 anos de idade.</para
 ></listitem
 > 
 </itemizedlist>
@@ -240,66 +240,66 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_home.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+><imagedata fileref="bar_home.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> Home — Sai da atividade e retorna ao menu anterior.</para
+> Home - Sai da atividade e retorna ao menu anterior.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_ok.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> "OK" — Verifica e/ou confirma a sua resposta. Algumas atividades não detectam automaticamente se a criança completou ou não a tarefa. Nesse caso, você precisa clicar nesse ícone. Você também pode usar a tecla &Enter;.</para
+> "OK" - Verifica e/ou confirma a sua resposta. Algumas atividades não detectam automaticamente se a criança completou ou não a tarefa. Nesse caso, você precisa clicar nesse ícone. Você também pode usar a tecla &Enter;.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_hint.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> Lâmpada — Mostra uma dica para a atividade. Nós podemos ajudar as crianças em algumas atividades, para orientá-las a encontrar a resposta.</para
+> Lâmpada - Mostra uma dica para a atividade. Nós podemos ajudar as crianças em algumas atividades, para orientá-las a encontrar a resposta.</para
 ></listitem>
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_previous.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
+><imagedata fileref="bar_previous.svg" format="SVG"/></imageobject
 ></inlinemediaobject>
 <inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_next.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
+><imagedata fileref="bar_next.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> Setas — O nível de dificuldade atual da atividade é exibido como um número entre duas setas. Clique em uma delas para aumentar ou diminuir o nível. Geralmente, as atividades diversos níveis, em números variáveis. No &gcompris;, é possível ir para o próximo nível sem ter concluído o nível atual.</para
+> Setas - O nível de dificuldade atual da atividade é exibido como um número entre duas setas. Clique em uma delas para aumentar ou diminuir o nível. Geralmente, as atividades diversos níveis, em números variáveis. No &gcompris;, é possível ir para o próximo nível sem ter concluído o nível atual.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_repeat.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+><imagedata fileref="bar_repeat.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> Boca — Pede ao &gcompris; para repetir a questão.</para
+> Boca - Pede ao &gcompris; para repetir a questão.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_help.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+><imagedata fileref="bar_help.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> Interrogação — Mostra a ajuda. Algumas atividades podem ser muito complexas para serem explicadas somente na descrição. Nesses casos, esta função fornece acesso a informações adicionais.</para
+> Interrogação - Mostra a ajuda. Algumas atividades podem ser muito complexas para serem explicadas somente na descrição. Nesses casos, esta função fornece acesso a informações adicionais.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> Caixa de ferramentas — Menu de configuração. A configuração é salva no repositório (pasta) do usuário, com o nome <filename
+> Caixa de ferramentas - Menu de configuração. A configuração é salva no repositório (pasta) do usuário, com o nome <filename
 > .config/gcompris/gcompris-qt.conf </filename
 >. Este é um arquivo de texto que pode ser editado manualmente.</para
 ></listitem
@@ -308,26 +308,26 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_activity_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> Lista de itens — Mostra o menu de configurações da atividade. Existem duas abas possíveis aqui. A primeira, "Conjunto de dados", permite selecionar os níveis das atividades, dependendo de uma série de objetivos. Já a segunda, "Opções", permite definir as configurações da atividade, caso esteja disponível.</para
+> Lista de itens - Mostra o menu de configurações da atividade. Existem duas abas possíveis aqui. A primeira, "Conjunto de dados", permite selecionar os níveis das atividades, dependendo de uma série de objetivos. Já a segunda, "Opções", permite definir as configurações da atividade, caso esteja disponível. </para
 ></listitem>
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_about.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+><imagedata fileref="bar_about.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> "G" maiúsculo — Informações sobre o &gcompris;, apresentando os principais contribuidores e a versão do software.</para
+> "G" maiúsculo - Informações sobre o &gcompris;, apresentando os principais contribuidores e a versão do software.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_exit.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> Energia — Sai do &gcompris;. Você também pode usar o atalho de teclado <keycombo action="simul"
+> Energia - Sai do &gcompris;. Você também pode usar o atalho de teclado <keycombo action="simul"
 >&Ctrl;<keycap
 >Q</keycap
 ></keycombo
@@ -374,7 +374,7 @@ for example 'xx.yy.zz'
 ><command
 >gcompris -f</command
 ></userinput
->: executar &gcompris; em modo de tela cheia</para
+> : executa &gcompris; no modo de tela cheia.</para
 ></listitem
 > 
 <listitem
@@ -466,7 +466,7 @@ for example 'xx.yy.zz'
 <para
 >O &gcompris; é traduzido e está disponível para mais de 35 idiomas. Para verificar se o seu idioma está disponível, inicie o &gcompris; e selecione-o nas opções de configuração.</para>
 <para
->Atenção ao fato de que alguns idiomas necessita de fontes específicas para serem exibidos corretamente.</para
+>Atenção ao fato de que alguns idiomas necessita de fontes específicas para serem exibidos corretamente. </para
 > 
 <para
 >Caso o seu idioma não seja suportado, você pode contribuir com o nosso software, adicionando a tradução para seu idioma. Se tiver interesse, você pode entrar em contato com a <ulink url="https://l10n.kde.org/teams"
@@ -524,9 +524,9 @@ for example 'xx.yy.zz'
 
 <sect1 id="console-switches">
 <title
->Parâmetros da linha de comando</title>
+>Opções da linha de comando</title>
 <para
->Ao executar o &gcompris; a partir da linha de comando com a opção "--help" serão exibidos todos os parâmetros que ele aceita:</para>
+>Ao executar o &gcompris; a partir da linha de comando com a opção --help serão exibidos todos os parâmetros que ele aceita:</para>
 <informaltable>
 <tgroup cols="2">
 <tbody>
@@ -582,19 +582,19 @@ for example 'xx.yy.zz'
 <entry
 >--launch atividade</entry>
 <entry
->Especifique a atividade quando iniciar o &gcompris;.</entry>
+>Especifique a atividade quando iniciar o GCompris.</entry>
 </row>
 <row>
 <entry
 >--start-level nível</entry>
 <entry
->Especifica o nível em que a atividade deve ser iniciada, definido pela opção --launch, ao abrir o &gcompris;. É ignorada se não for definida nenhuma opção --launch ou caso o nível especificado seja inválido.</entry>
+>Especifica o nível em que a atividade deve ser iniciada, definido pela opção --launch, ao abrir o GCompris. É ignorada se não for definida nenhuma opção --launch ou caso o nível especificado seja inválido.</entry>
 </row>
 <row>
 <entry
 >--difficulty {valor|mín-máx}</entry>
 <entry
->Para a sessão, força a dificuldade das atividades do &gcompris; para estar no valor ou entre os valores mínimo e máximo. Os valores devem estar entre 1 e 6, e se o formato for mín-máx, o valor mínimo deve ser menor que o valor máximo. Se não for o caso, o &gcompris; não será iniciado.</entry>
+>Para a sessão, força a dificuldade das atividades do GCompris para estar no valor ou entre os valores mínimo e máximo. Os valores devem estar entre 1 e 6, e se o formato for mín-máx, o valor mínimo deve ser menor que o valor máximo. Se não for o caso, o GCompris não será iniciado.</entry>
 </row>
 <row>
 <entry
@@ -616,40 +616,22 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
->--show-home-button</entry>
-<entry
->Mostra o botão Início na barra (padrão).</entry>
-</row>
-<row>
-<entry
->--hide-home-button</entry>
-<entry
->Oculta o botão Início na barra.</entry>
-</row>
-<row>
-<entry
 >--renderer={renderizador}</entry>
 <entry
->Especifica qual renderizador gráfico deve ser utilizado. Em todas as plataformas, estão disponíveis "opengl" e software. No Windows, você pode usar "direct3d11" ou "direct3d12" (caso esteja compilado com o Qt
->=6.6). No &macOS;, você pode usar "metal".</entry>
+>Especifica qual renderizador gráfico deve ser utilizado. Em todas as plataformas, estão disponíveis onpelgl e software. No Windows, você pode usar direct3d11 ou direct3d12 (caso esteja compilado com o Qt
+>=6.6). No MacOS, você pode usar metal.</entry>
 </row>
 <row>
 <entry
 >--software-renderer</entry>
 <entry
->Usa a renderização por software ao invés da OpenGL (deve funcionar com qualquer placa de vídeo). Ultrapassado, use "--renderer=software" no lugar.</entry>
+>Usa a renderização por software ao invés da openGL (deve funcionar com qualquer placa de vídeo). Ultrapassado, use --renderer=software no lugar.</entry>
 </row>
 <row>
 <entry
 >--opengl-renderer</entry>
 <entry
->Usa a renderização OpenGL ao invés da via software (mais rápida e com mais efeitos gráficos, mas pode travar com algumas placas de vídeo). Ultrapassado, use "--renderer=opengl" no lugar.</entry>
-</row>
-<row>
-<entry
->--locale=local</entry>
-<entry
->Executa o &gcompris; com o local especificado.</entry>
+>Usa a renderização openGL ao invés da via software (mais rápida e com mais efeitos gráficos, mas pode travar com algumas placas de vídeo). Ultrapassado, use --renderer=opengl no lugar.</entry>
 </row>
 </tbody>
 </tgroup>

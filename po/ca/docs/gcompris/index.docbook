@@ -108,20 +108,20 @@ for example 'xx.yy.zz'
 >llicència GPL versió 3</ulink
 >.</para>
 <para
->El &gcompris; està disponible en els sistemes operatius següents: &GNU;/&Linux;, &BSD;, &macOS;, &Windows; i Android. Es requereix una targeta 3D amb implementació de l'<emphasis
+>El &gcompris; està disponible en els sistemes operatius següents: &GNU;/&Linux;, &BSD;, MacOSX i Android. Es requereix una targeta 3D amb implementació de l'<emphasis
 >OpenGL 2.1</emphasis
-> o superior. És obligatòria una profunditat de color de 32 bits.</para>
+> o superior. És obligatori una profunditat de color de 32 bits.</para>
 </sect1>
 
 <sect1 id="installation">
 <title
 >Instal·lació</title>
 <para
->El programari es lliura segons diverses formes. Seguiu el procediment d'acord amb el vostre cas.</para>
+>El programari es lliura segons diverses formes. Seguiu el procediment d'acord amb el vostre cas. </para>
 <itemizedlist>
 <listitem
 ><para
->&GNU;/&Linux;: utilitzeu els paquets lliurats per la vostra distribució de &GNU;/&Linux;. Si el &gcompris; no està empaquetat en la vostra distribució de &Linux;, si us plau, contacteu-hi per a demanar la inclusió del &gcompris;.</para
+>&GNU;/&Linux;: utilitzeu els paquets lliurats per la vostra distribució de &GNU;/&Linux;. Si el &gcompris; no està empaquetat en la vostra distribució de &Linux;, si us plau, contacteu-hi per a demanar la inclusió del &gcompris; en la vostra distribució de &Linux;.</para
 ></listitem>
 <listitem
 ><para
@@ -129,11 +129,11 @@ for example 'xx.yy.zz'
 ></listitem>
 <listitem
 ><para
->&macOS;: lliurat amb un instal·lador clàssic.</para
+>MacOSX: lliurat amb un instal·lador clàssic.</para
 ></listitem>
 <listitem
 ><para
->Android: distribuït per la botiga F-Droid o la Google Play Store. També està disponible el fitxer APK.</para
+>Android: distribuït per la botiga F-Droid o la Google Play Store. També està disponible el fitxer «apk».</para
 ></listitem>
 </itemizedlist>
 </sect1>
@@ -164,7 +164,7 @@ for example 'xx.yy.zz'
 </screenshot>
 
 <para
->Cada icona representa una activitat. Al voltant de cadascuna trobareu petites icones que ofereixen informació addicional sobre l'activitat. Un simple clic a la icona us durà a una activitat o un menú d'activitats. Hi ha 8 seccions (categories) d'activitats, que estan ubicades a la part superior o esquerra (només si la vostra orientació és vertical). Per exemple, hi ha la secció «Jocs de taula», la qual inclou jocs de taula com els Escacs, Tres en ratlla o Alinea 4.</para>
+>Cada icona representa una activitat. Al voltant de cadascuna trobareu petites icones que ofereixen informació addicional sobre l'activitat. Un simple clic a la icona us durà a una activitat o un menú d'activitats. Hi ha 8 seccions (categories) d'activitats, que estan ubicades a la part superior o esquerra (només si la vostra orientació és vertical). Per exemple, hi ha la secció «Jocs de taula», la qual inclou jocs de taula com els escacs, tres en ratlla o alinea 4.</para>
 <para
 >Algunes categories tenen subcategories per a filtrar millor les activitats. Per a les activitats matemàtiques, tenim tres subcategories: numeració, aritmètica i mesures.</para>
 <para
@@ -268,7 +268,11 @@ for example 'xx.yy.zz'
 ><imageobject
 ><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> Element de llista: mostra el menú de configuració de l'activitat. Aquí hi ha dues pestanyes possibles. La primera, «Conjunt de dades», permet triar el nivell de les activitats en funció de diversos objectius, i la segona, «Opcions», si està disponible permet actualitzar la configuració de l'activitat.</para
+> Element de llista: mostra el menú de configuració de l'activitat. Aquí hi ha dues pestanyes possibles. La primera, <guilabel
+>Conjunt de dades</guilabel
+>, permet triar el nivell de les activitats en funció de diversos objectius, i la segona, <guilabel
+>Opcions</guilabel
+>, si està disponible permet actualitzar la configuració de l'activitat. </para
 ></listitem>
 <listitem
 ><para
@@ -307,7 +311,7 @@ for example 'xx.yy.zz'
 ><command
 >gcompris --enable-kioskmode</command
 ></userinput
->: inhabilita els botons <guiicon
+> : inhabilita els botons <guiicon
 >Surt</guiicon
 > i <guiicon
 >Configuració</guiicon
@@ -320,7 +324,7 @@ for example 'xx.yy.zz'
 ><command
 >gcompris --disable-kioskmode</command
 ></userinput
->: habilita els botons <guiicon
+> : habilita els botons <guiicon
 >Surt</guiicon
 > i <guiicon
 >Configuració</guiicon
@@ -332,7 +336,7 @@ for example 'xx.yy.zz'
 ><command
 >gcompris -f</command
 ></userinput
->: executa el &gcompris; en el mode de pantalla completa.</para
+> : executa el &gcompris; en el mode de pantalla completa.</para
 ></listitem
 > 
 <listitem
@@ -341,7 +345,7 @@ for example 'xx.yy.zz'
 ><command
 >gcompris -C</command
 ></userinput
->: inhabilita el cursor (mode de pantalla tàctil).</para
+> : inhabilita el cursor (mode de pantalla tàctil).</para
 ></listitem
 > 
 </itemizedlist>
@@ -424,7 +428,7 @@ for example 'xx.yy.zz'
 <para
 >El &gcompris; és internacionalitzat i està disponible en més de 35 idiomes. Per a comprovar si està disponible el vostre idioma, podeu iniciar el &gcompris; i seleccionar el vostre idioma en l'opció de configuració.</para>
 <para
->Aneu amb compte, alguns idiomes necessiten una lletra específica per a mostrar-se correctament.</para
+>Aneu amb compte, alguns idiomes necessiten una lletra específica per a mostrar-se correctament. </para
 > 
 <para
 >Si no s'admet el vostre idioma, podeu col·laborar amb el programari i afegir-hi la seva traducció. Si hi esteu interessat, podeu posar-vos en contacte amb l'<ulink url="https://l10n.kde.org/teams"
@@ -482,9 +486,9 @@ for example 'xx.yy.zz'
 
 <sect1 id="console-switches">
 <title
->Paràmetres de la consola</title>
+>Opcions de la consola</title>
 <para
->En executar el &gcompris; des d'una consola d'ordres amb l'opció «--help», es mostraran tots els paràmetres que accepta:</para>
+>En executar el &gcompris; des d'una consola d'ordres amb l'opció --help, es mostraran tots els paràmetres que accepta:</para>
 <informaltable>
 <tgroup cols="2">
 <tbody>
@@ -540,19 +544,19 @@ for example 'xx.yy.zz'
 <entry
 >--launch activitat</entry>
 <entry
->Especifica l'activitat en iniciar el &gcompris;.</entry>
+>Especifica l'activitat en iniciar el GCompris.</entry>
 </row>
 <row>
 <entry
 >--start-level nivell</entry>
 <entry
->Especifica el nivell en el qual iniciar l'activitat especificada amb l'opció --launch en iniciar el &gcompris;. S'ignora si no hi ha cap opció --launch, o si el nivell especificat no és vàlid.</entry>
+>Especifica el nivell en el qual iniciar l'activitat especificada amb l'opció --launch en iniciar el GCompris. S'ignora si no hi ha cap opció --launch, o si el nivell especificat no és vàlid.</entry>
 </row>
 <row>
 <entry
 >--difficulty {valor|mín.-màx.}</entry>
 <entry
->Per a la sessió, força la dificultat de les activitats del &gcompris; a estar en un valor o entre valors mínims i màxims. Els valors han d'estar entre 1 i 6, i si el format és mín.-màx., el valor mínim ha de ser inferior al valor màxim. Si no és així, el &gcompris; no s'iniciarà.</entry>
+>Per a la sessió, força la dificultat de les activitats del GCompris a estar en un valor o entre valors mínims i màxims. Els valors han d'estar entre 1 i 6, i si el format és mín.-màx., el valor mínim ha de ser inferior al valor màxim. Si no és així, el GCompris no s'iniciarà.</entry>
 </row>
 <row>
 <entry
@@ -574,39 +578,22 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
->--show-home-button</entry>
-<entry
->Mostra el botó Inici a la barra (predeterminat).</entry>
-</row>
-<row>
-<entry
->--hide-home-button</entry>
-<entry
->Oculta el botó Inici a la barra.</entry>
-</row>
-<row>
-<entry
 >--renderer={renderitzador}</entry>
 <entry
->Especifica el renderitzador gràfic que s'emprarà. A totes les plataformes, són disponibles «opengl» i «software». Al Windows, podeu fer servir «direct3d11» o «direct3d12» (si es van compilar amb Qt ≥ 6.6). Al &macOS;, podeu fer servir «metal».</entry>
+>Especifica el renderitzador gràfic que s'emprarà. A totes les plataformes, són disponibles «opengl» i «software». Al Windows, podeu fer servir «direct3d11» o «direct3d12» (si es van compilar amb Qt
+>=6.6). Al MacOS, podeu fer servir «metal».</entry>
 </row>
 <row>
 <entry
 >--software-renderer</entry>
 <entry
->Utilitza el renderitzador per programari en lloc d'OpenGL (s'executa amb qualsevol targeta gràfica). Obsolet, en el seu lloc feu servir «--renderer=software».</entry>
+>Utilitza el renderitzador per programari en lloc d'openGL (s'executa amb qualsevol targeta gràfica). Obsolet, en el seu lloc feu servir --renderer=software.</entry>
 </row>
 <row>
 <entry
 >--opengl-renderer</entry>
 <entry
->Utilitza el renderitzador OpenGL en comptes del de programari (més ràpid, però pot fallar amb algunes targetes gràfiques). Obsolet, en el seu lloc feu servir «--renderer=opengl».</entry>
-</row>
-<row>
-<entry
->--locale=configuració_regional</entry>
-<entry
->Executa el &gcompris; amb la configuració regional especificada.</entry>
+>Utilitza el renderitzador openGL en comptes del de programari (més ràpid, però pot fallar amb algunes targetes gràfiques). Obsolet, en el seu lloc feu servir --renderer=opengl.</entry>
 </row>
 </tbody>
 </tgroup>
@@ -650,7 +637,7 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; </para>
 <para
->Copyright del programa © 2000–2025 Timothée Giet i altres </para>
+>Copyright del programa 2000-2025 Timothée Giet i altres </para>
 
 <para
 >Traductor de la documentació: &credits.Antoni.Bella;</para

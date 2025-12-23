@@ -12,8 +12,8 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf6-trunk/messages/gcompris/gcompris_qt.pot\n"
-"X-Crowdin-File-ID: 53746\n"
+"X-Crowdin-File: /kf6-stable/messages/gcompris/gcompris_qt.pot\n"
+"X-Crowdin-File-ID: 56776\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -5658,9 +5658,12 @@ msgstr "数字电路"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "创建并模拟一个数字逻辑电路."
+msgstr "创建并模拟一个数字逻辑电路"
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -6323,10 +6326,12 @@ msgstr ""
 
 #: activities/drawing_wheels/ActivityConfig.qml:29
 #: activities/sketch/ActivityConfig.qml:29
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Numbers from 1 to 19."
 msgctxt "ActivityConfig|"
 msgid "Number of undo: %1"
-msgstr ""
+msgstr "1到19的数字。"
 
 #: activities/drawing_wheels/ActivityConfig.qml:44
 #: activities/sketch/ActivityConfig.qml:44
@@ -6338,9 +6343,12 @@ msgstr ""
 
 #. Activity title
 #: activities/drawing_wheels/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "BrushToolPanel|"
+#| msgid "Drawing Tools"
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
-msgstr ""
+msgstr "绘图工具"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
@@ -6350,9 +6358,12 @@ msgstr ""
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr ""
+msgstr "学习一些数字绘画工具。"
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
@@ -6407,14 +6418,20 @@ msgid "Pencil size and position"
 msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:426
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Font selector"
 msgctxt "DrawingWheels|"
 msgid "Color selector"
-msgstr ""
+msgstr "字体选择器"
 
 #: activities/drawing_wheels/DrawingWheels.qml:453
+#, fuzzy
+#| msgctxt "OptionsRow|"
+#| msgid "Undo"
 msgctxt "DrawingWheels|"
 msgid "Undo"
-msgstr ""
+msgstr "撤销"
 
 #: activities/drawing_wheels/DrawingWheels.qml:465
 msgctxt "DrawingWheels|"
@@ -6442,24 +6459,36 @@ msgid "Hide wheel and gear"
 msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:691
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
-msgstr ""
+msgstr "保存您的图像"
 
 #: activities/drawing_wheels/DrawingWheels.qml:706
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Open an image"
 msgctxt "DrawingWheels|"
 msgid "Open an image"
-msgstr ""
+msgstr "打开图片"
 
 #: activities/drawing_wheels/DrawingWheels.qml:735
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Create a new image"
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
-msgstr ""
+msgstr "创建新的图像"
 
 #: activities/drawing_wheels/DrawingWheels.qml:754
+#, fuzzy
+#| msgctxt "BackgroundColorSelector|"
+#| msgid "Background color"
 msgctxt "DrawingWheels|"
 msgid "Background color"
-msgstr ""
+msgstr "背景色"
 
 #: activities/drawing_wheels/DrawingWheels.qml:835
 msgctxt "DrawingWheels|"
@@ -6472,15 +6501,20 @@ msgid "Gear"
 msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:965
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "SignalGenerator|"
+#| msgid "%1 s"
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
-msgstr ""
+msgstr "%1 s"
 
 #: activities/drawing_wheels/DrawingWheels.qml:983
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Speed"
 msgctxt "DrawingWheels|"
 msgid "Speed"
-msgstr ""
+msgstr "速度"
 
 #: activities/drawing_wheels/DrawingWheels.qml:999
 msgctxt "DrawingWheels|"
@@ -6493,14 +6527,20 @@ msgid "Fast"
 msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:1062
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Font size"
 msgctxt "DrawingWheels|"
 msgid "Pen size"
-msgstr ""
+msgstr "字体大小"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1099
+#, fuzzy
+#| msgctxt "ToolsPanel|"
+#| msgid "Opacity"
 msgctxt "DrawingWheels|"
 msgid "Opacity"
-msgstr ""
+msgstr "不透明度"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1142
 msgctxt "DrawingWheels|"
@@ -6508,29 +6548,44 @@ msgid "Offset"
 msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:1180
+#, fuzzy
+#| msgctxt "IntroMessage|"
+#| msgid "Start"
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
-msgstr ""
+msgstr "起始位置"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1360
+#, fuzzy
+#| msgctxt "Sketch|"
+#| msgid "You did not save this image. Do you want to close this activity?"
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
-msgstr ""
+msgstr "您没有保存此图像。您想要关闭此活动吗？"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1361
+#, fuzzy
+#| msgctxt "Sketch|"
+#| msgid "Do you want to erase this image?"
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
-msgstr ""
+msgstr "您想要删除这个图像吗？"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1362
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "Yes"
 msgctxt "DrawingWheels|"
 msgid "Yes"
-msgstr ""
+msgstr "是"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1363
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "No"
 msgctxt "DrawingWheels|"
 msgid "No"
-msgstr ""
+msgstr "否"
 
 #. Activity title
 #: activities/drawletters/ActivityInfo.qml:15
@@ -7085,6 +7140,13 @@ msgid "Chichén Itzá"
 msgstr "奇琴伊察"
 
 #: activities/explore_monuments/resource/board/board1.qml:20
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid ""
+#| "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
+#| "the Yucatan Peninsula in Mexico, between Valladolid and Merida. It was "
+#| "established before the period of Christopher Colombus and probably served "
+#| "as the religion center of Yucatan for a while."
 msgctxt "board1|"
 msgid ""
 "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
@@ -7092,9 +7154,9 @@ msgid ""
 "established before the period of Christopher Columbus and probably served as "
 "the religion center of Yucatan for a while."
 msgstr ""
-"奇琴伊察 (Chichen Itza) 意为“伊察之井的入口”，是位于墨西哥尤卡坦半岛上的一座"
-"玛雅城市，地处巴利亚多利德 (Valladolid) 与梅里达 (Merida) 之间。它在哥伦布时"
-"代之前就已建立，很可能曾一度作为尤卡坦地区的宗教中心。"
+"奇琴伊察 (意为“伊察水井的入口”)，是坐落在墨西哥尤卡坦半岛 (在巴利亚多利德和梅"
+"里达之间) 上的玛雅古城。它在哥伦布发现新大陆前就已经存在了，是尤卡坦当地的宗"
+"教中心。"
 
 #: activities/explore_monuments/resource/board/board1.qml:30
 #: activities/explore_monuments/resource/board/board1.qml:33
@@ -8088,7 +8150,7 @@ msgstr "单击给定金字塔的位置。"
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr "故宫"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8103,17 +8165,12 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
-"设在中国北京市中心的紫禁城是一个伟大的帝国宫殿，它是近500年来从明王朝"
-"(1368-1644) 到清王朝末端(1644-1912)中国帝国王的家园和国家政治中心。在"
-"1406-1420之间建造了这个建筑杰作，面积180英亩，存在980多座共包含8700个房间的受"
-"保护建筑。 表现了中国古老的宫殿设计。建筑被护城河和围墙包围，且紫禁城通常不向"
-"公众开放，象征了皇权的权利和集权。"
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr "乐山大佛"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8128,18 +8185,15 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
-"中国四川省的乐山大佛， 是一座在岷江、大渡河和青衣江汇合处的巨型雕像。 它高71"
-"米（233英尺），不仅是联合国教科文组织定义的世界文化遗产，也是世界上最高的前现"
-"代雕像。佛像在唐代(713–803)修建，其形象为代表未来的弥勒佛。并希望该工程能让当"
-"地危害船只的河流不再凶险。佛像的设计非常精巧，在佛像的内部包含一个隐藏的排水"
-"系统，防止了侵蚀。其宁静的表情和精巧的建造手法让该佛像成为人类精神和艺术的一"
-"大成就。"
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "布达拉宫"
+msgstr "迈索尔宫"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8154,17 +8208,12 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
-"布达拉宫被修建在中国西藏拉萨的红山上，是西藏文化的象征，也是联合国教科文组织"
-"定义的世界文化遗产。布达拉宫最初在7世纪修建并在17世纪被扩建。布达拉宫是达赖喇"
-"嘛的冬季住所且是西藏的统治中心，布达拉宫有13层且有1000多个房间，该宫殿将复杂"
-"的西藏建筑，充满活力的壁画和神圣的遗迹组合在一起。布达拉宫分为白宫，住房区和"
-"专用于宗教学习和祈祷的红宫。布达拉宫是西藏精神和历史遗产的象征。"
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr "兵马俑"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8176,15 +8225,12 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
-"兵马俑是与中国史上第一位皇帝秦始皇陪葬的数以千计的真人大小的陶制士兵，战马。"
-"兵马俑在1974年在西安附近被发现，该遗迹可以被追溯到公元前210年，且拥有难以置信"
-"的细节。每个士兵都是独立制作并用此来代表古中国军队的不同军衔和角色。"
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr "日月双塔"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8199,17 +8245,15 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
-"位于中国桂林的日月双塔是象征城市文化与精神传承的标志性双塔建筑。最初建于唐"
-"代，后于 20 世纪重建，矗立于杉湖之畔，成为极具辨识度的城市地标。其中，日塔高 "
-"41 米，采用铜塔结构，是世界上最高的铜塔；月塔则高 35 米，以琉璃瓦砌筑而成。两"
-"塔通过一条水下玻璃隧道相连，寓意阴阳和谐共生。夜幕降临时，双塔华灯璀璨，既展"
-"现传统中式建筑之美，又融合现代工程巧思，成为游客必访的热门景点。"
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "碉楼"
+msgstr "埃菲尔铁塔"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8224,19 +8268,19 @@ msgid ""
 "UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
 "towers remain, offering insight into this unique architectural heritage."
 msgstr ""
-"位于中国广东省开平市的碉楼建筑群 ，是 19 世纪末至 20 世纪初为抵御盗匪侵袭与洪"
-"涝灾害而兴建的多层防御性碉楼。这些融合罗曼式、巴洛克式等西方建筑风格与传统中"
-"式元素的独特建筑，采用钢筋混凝土结构建造，既彰显了海外华侨的财富与影响力，也"
-"象征着近代中国乡村社会文化与经济的转型期。2007 年，开平碉楼被联合国教科文组织"
-"列入《世界遗产名录》，现存约 1800 座 (原有 3000 座) ，其沧桑风貌成为研究这段"
-"独特建筑遗产的活化石。"
 
 #: activities/explore_monuments/resource/board/board7.qml:85
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "中国的名胜古迹"
+msgstr "印度的名胜古迹"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "点击给定名胜古迹的位置。"
@@ -8245,7 +8289,7 @@ msgstr "点击给定名胜古迹的位置。"
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr "万神庙"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8262,19 +8306,12 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
-"位于意大利罗马的万神殿是古罗马建筑的巅峰之作，约公元 126 年由哈德良皇帝主持建"
-"造于原马库斯·阿格里帕所建神庙旧址之上。这座殿堂以建筑奇观闻名，其巨大的穹顶中"
-"央设有圆形天窗，象征苍穹，将自然光线引入室内，赋予空间神圣韵律。最初供奉罗马"
-"诸神，公元 609 年被改建为基督教教堂，更名为圣母与殉道者教堂。其无钢筋加固混凝"
-"土穹顶，至今仍是全球最大同类型穹顶，展现了古罗马卓越的工程智慧与对称美学，持"
-"续启发后世建筑师。万神殿和谐的比例与深厚的历史价值，使其成为古典建筑的永恒杰"
-"作。"
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr "米兰大教堂"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8289,17 +8326,15 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
-"米兰大教堂是意大利米兰市中心的一座标志性哥特式杰作。历经近六个世纪的建造，它"
-"已成为全球规模最大的教堂之一，亦是米兰艺术与文化遗产的象征。其精美装饰的立面"
-"布满无数雕像、尖塔和石像鬼，展现了哥特式建筑的恢宏气势。游客可参观内部令人惊"
-"叹的彩绘玻璃窗与精雕细刻的大理石细节，或登上屋顶平台，饱览城市全景与阿尔卑斯"
-"山脉的壮丽景色。这座大教堂堪称意大利深厚历史与建筑辉煌的永恒见证。"
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
+#, fuzzy
+#| msgctxt "board4|"
+#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "圣母百花大教堂"
+msgstr "沃尔姆斯大教堂"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8315,18 +8350,15 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
-"佛罗伦萨圣母百花大教堂 (正式名称为 Cattedrale di Santa Maria del Fiore) 是意"
-"大利佛罗伦萨的标志性建筑，融合哥特式与文艺复兴风格精髓。其主体工程于 1436 年"
-"完工，以菲利波·布鲁内莱斯基设计的巨大红瓦穹顶闻名，这一穹顶至今仍是建筑史上的"
-"工程奇迹，亦是佛罗伦萨的城市象征。教堂 19 世纪增建的精美大理石立面，与富丽堂"
-"皇的内部装饰及艺术珍宝相得益彰。与乔托钟楼及圣约翰洗礼堂共同列入联合国教科文"
-"组织世界遗产名录，每年吸引数百万游客前来探访其深厚的历史文化与建筑成就。"
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "比萨斜塔"
+msgstr "汉诺塔"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8341,17 +8373,12 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
-"比萨斜塔位于意大利比萨市，是全球知名的建筑奇观。作为当地大教堂的独立式钟楼，"
-"其因地基土壤不稳定导致的意外倾斜而闻名。该塔始建于 1173 年，建造历时近两个世"
-"纪，期间采取了措施试图稳定其倾斜角度。塔身高约 56 米 (183英尺) ，采用罗马式设"
-"计，共设八层，包含钟室，外墙装饰有精雕细刻的柱子与拱门。作为联合国教科文组织"
-"世界遗产名录的一部分，比萨斜塔至今仍是坚韧与智慧的象征。"
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr "圣马可大教堂"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -8367,18 +8394,12 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
-"圣马可大教堂位于意大利威尼斯，是拜占庭式建筑的标志性杰作，亦为这座城市最著名"
-"的地标之一。该教堂最初建于公元 828 年，用于供奉福音传教士圣马可的圣物，并于 "
-"11 世纪以现存形制重建。其奢华设计融合东西方文化元素，五座圆顶、复杂的马赛克镶"
-"嵌工艺以及装饰华丽的正门立面 (镶嵌雕像与雕刻) 均体现这一特点。教堂内部以金色"
-"马赛克与大理石地面为主，彰显威尼斯共和国的财富与权力。毗邻圣马可广场，圣马可"
-"大教堂至今仍是威尼斯历史、文化与宗教遗产的象征。"
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr "庞贝"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -8394,28 +8415,31 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
-"庞贝是古罗马城市，位于现代意大利那不勒斯附近，因公元 79 年维苏威火山喷发被火"
-"山灰掩埋而得以完整保存。此次火山喷发释放出火山灰、浮石与火山碎屑流的致命组"
-"合，瞬间吞噬整座城市及其居民，使建筑物、文物甚至人类遗骸以惊人的细节留存至"
-"今。庞贝遗址的发掘为古罗马日常生活、建筑与社会形态提供了宝贵洞见，揭示了这座"
-"拥有完善规划街道、民居、公共浴场与神庙的城市面貌。该遗址现已被列入联合国教科"
-"文组织世界遗产名录，成为人类历史上最重要的考古发现之一。"
 
 #: activities/explore_monuments/resource/board/board8.qml:85
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "意大利的名胜古迹"
+msgstr "印度的名胜古迹"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "点击给定名胜古迹的位置。"
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "姬路城"
+msgstr "混合大小写"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -8428,16 +8452,12 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
-"姬路城是现存最完整的 17 世纪初日本城堡建筑典范，由83座建筑组成，其高度发达的"
-"防御系统与精巧的防护装置可追溯至幕府时期初期。这座纯木质结构的建筑杰作完美融"
-"合了功能性与美学价值：白色灰泥夯土墙统一了整体优雅的外观，建筑群与多层屋顶间"
-"的精妙布局更彰显设计巧思。"
 
 #: activities/explore_monuments/resource/board/board9.qml:28
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr "广岛和平纪念公园"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -8453,18 +8473,12 @@ msgid ""
 "a solemn space for reflection, honoring the lives lost and advocating for "
 "global peace."
 msgstr ""
-"广岛和平纪念公园是和平的象征，也是对战争毁灭性后果的深刻警示。这座公园位于日"
-"本广岛市，旨在悼念 1945 年 8 月 6 日原子弹爆炸中的遇难者。公园内建有多座纪念"
-"碑，包括标志性的原子弹圆顶屋——这栋曾作为政府大楼的建筑，如今被列为联合国教科"
-"文组织世界遗产地。公园中还设有广岛和平纪念资料馆，向参观者系统阐述原子弹爆炸"
-"的历史事件，传递和平、非暴力理念，并呼吁推进全球核裁军进程。作为庄严肃穆的纪"
-"念空间，这里不仅缅怀逝者，更致力于倡导世界和平。"
 
 #: activities/explore_monuments/resource/board/board9.qml:39
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr "荒仓富士浅间神社"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -8480,18 +8494,12 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
-"该神社创建于公元 705 年，旨在供奉当地的守护神。807 年富士山发生大规模喷发后，"
-"天皇曾派遣使者前来此地举行祈福仪式，以期平息火山灾害。据传在战国时期，著名武"
-"将武田信玄之父武田信虎与北条家交战时，曾在此扎营并祈求胜利，最终取得战役胜"
-"利，遂将随身佩剑献予神社。如今，本地居民与远方来客常来此参拜，以求驱邪避灾、"
-"家庭和睦、平安分娩。每至春季，神社周边樱花盛开，人群聚集于此，欣赏富士山与花"
-"海交相辉映的绝景。"
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr "冲绳首里城"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -8507,20 +8515,19 @@ msgid ""
 "much of the castle was lost in a fire in 2019, but efforts to restore it are "
 "ongoing, reflecting its enduring importance to Okinawa's heritage."
 msgstr ""
-"首里城位于日本冲绳县那霸市，是联合国教科文组织世界遗产，也是琉球王国丰富文化"
-"历史的象征。该城堡始建于 14 世纪，数百年来一直是琉球王国的政治、经济和文化中"
-"心。首里城以其独特的中式与日式建筑风格融合而闻名，拥有朱红色漆涂的建筑、精美"
-"的装饰，以及居高临下的山顶位置。尽管在第二次世界大战期间被毁，但它经过精心重"
-"建后，成为了当地重要的旅游景点。不幸的是，2019 年的一场大火使城堡大部分建筑再"
-"次受损，但目前修复工作仍在持续进行中，彰显了首里城对冲绳文化遗产的持久重要意"
-"义。"
 
 #: activities/explore_monuments/resource/board/board9.qml:63
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "日本的名胜古迹"
+msgstr "法国的名胜古迹"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "点击给定名胜古迹的位置。"
@@ -14424,9 +14431,12 @@ msgstr ""
 
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
-msgstr ""
+msgstr "猜一个 1 和 %1 之间的数字。"
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"
@@ -14911,9 +14921,12 @@ msgid "Division required."
 msgstr ""
 
 #: activities/guess24/resource/6/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "必须输入所有操作符。"
+msgstr "运算记忆游戏"
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -16944,12 +16957,16 @@ msgid ""
 msgstr "他在毕业后成为了一名老师，在学校教书时私下传授这一改进的盲文系统。"
 
 #: activities/louis-braille/louis_braille_data.js:52
+#, fuzzy
+#| msgctxt "louis_braille_data|"
+#| msgid ""
+#| "He revised and extended braille to include mathematics, symbols, "
+#| "punctuations and music notations."
 msgctxt "louis_braille_data|"
 msgid ""
 "He revised and extended braille to include mathematics, symbols, punctuation "
 "and music notations."
-msgstr ""
-"他修订并扩展了盲文，将数学符号、通用符号、标点符号及音乐符号均纳入其中。"
+msgstr "他扩充并完善了盲文，使之涵盖了数学、符号、标点和音乐记号。"
 
 #: activities/louis-braille/louis_braille_data.js:57
 msgctxt "louis_braille_data|"
@@ -16976,9 +16993,12 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "魔术师的帽子 (减法) "
+msgstr "魔法帽"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -17066,9 +17086,12 @@ msgstr "%1x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "魔术师的帽子 (加法) "
+msgstr "魔法帽"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -23526,9 +23549,12 @@ msgid "Gradient Tools"
 msgstr "渐变工具"
 
 #: activities/sketch/PaletteSelector.qml:148
+#, fuzzy
+#| msgctxt "ColorSelector|"
+#| msgid "Palette Colors"
 msgctxt "PaletteSelector|"
 msgid "Palettes"
-msgstr ""
+msgstr "调色板的颜色"
 
 #: activities/sketch/Sketch.qml:677
 msgctxt "Sketch|"
@@ -25766,6 +25792,31 @@ msgstr " 减法表。"
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "In a vertical subtraction, numbers are written one below the other. They "
+#| "need to be lined-up properly, starting from the column on the right-hand "
+#| "side. The top number is called the minuend: it is the amount that we are "
+#| "starting with, that another number is being subtracted from to get the "
+#| "difference. The number below is called the subtrahend: it is the amount "
+#| "to substract from the minuend to get the difference. The result is "
+#| "written on the bottom line. To solve the subtraction, start by "
+#| "subtracting the bottom number of the first column from the top number of "
+#| "the first column (on the right-hand side), and write the result on the "
+#| "bottom line of the same column. If the top number is smaller than the "
+#| "bottom number, you can borrow from the minuend on the next column: for "
+#| "example, if you add 10 units to the top number, you need to remove one "
+#| "unit from the top number of the next column. This is called the borrowing "
+#| "by regrouping method. To do that in this activity, click on the empty "
+#| "rectangle on the left of the top number, select 1, and on the next column "
+#| "click on the empty rectangle on the right of the top number and select "
+#| "-1. Then write the result of the column on the bottom line, and do the "
+#| "same on the next columns until the operation is finished. Once you have "
+#| "found the result, click on the OK button to validate your answer. In some "
+#| "levels, you will be need to write the given operation before solving it; "
+#| "in this case, click on the Ready button when the operation is written "
+#| "correctly and then solve it."
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -25790,18 +25841,17 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
-"在竖式减法中，数字需上下书写，且必须从最右侧的数位开始正确对齐。上方的数字称"
-"为被减数：它是计算的起始数值，另一数字将从它中减去以得到差。下方的数字称为减"
-"数：它是从被减数中减去、用于得到差的数值。计算结果写在最下方的横线上。计算减"
-"法时，首先用第一列 (最右侧) 的上方数字减去下方数字，并将结果写在该列的下方横"
-"线上。若上方数字小于下方数字，则需从被减数的下一列“借位”：例如，给当前列的上"
-"方数字加 10 个单位，同时需从下一列的上方数字中减去 1 个单位。这种方法称为“借"
-"位重组法”。在本活动中，借位的具体步骤如下：点击当前列上方数字左侧的空白方框，"
-"选择 1；然后在下一列中，点击上方数字右侧的空白方框，选择 -1。完成借位后，将当"
-"前列的计算结果写在下方横线上，之后对其余各列重复上述步骤，直至整个减法运算完"
-"成。得出结果后，点击“确认”按钮验证答案。在部分关卡中，你需要先写出给定的算"
-"式，再进行计算；这种情况下，当算式书写正确后，点击“准备就绪”按钮，随后再进行"
-"运算。"
+"在竖式减法中，数字一个写在另一个下方。它们需要从右侧的列开始正确对齐。上面的"
+"数字称为被减数：它是我们起始的数量，另一个数要从这个数中减去，以得到差值。下"
+"面的数字称为减数：它是要从被减数中减去以得到差值的数。结果写在最下面一行。\n"
+"要解决减法运算，先从第一列（右侧）的上面数字减去下面数字，然后将结果写在同一"
+"列的最下面一行。如果上面的数字小于下面的数字，你可以从下一列的被减数借位：例"
+"如，如果你给上面的数字加上 10 个单位，你需要从下一列上面的数字中减去 1 个单"
+"位。这就叫做借位分组法。在这个活动中，要做到这一点，请点击上面数字左边的空白"
+"矩形，选择 1 ，然后在下一列点击上面数字右边的空白矩形并选择 -1 。然后将该列的"
+"结果写在最下面一行，对接下来的列也做同样操作，直到运算完成。一旦你得出结果，"
+"点击“确定”按钮来验证你的答案。在某些关卡中，你需要在求解之前写出给定的运算式"
+"子；在这种情况下，当运算式子正确写出后，点击“准备就绪”按钮，然后再求解。 "
 
 #: activities/vertical_subtraction/resource/1/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
@@ -25934,6 +25984,31 @@ msgstr "学习用补偿法来解决竖式减法。"
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "In a vertical subtraction, numbers are written one below the other. They "
+#| "need to be lined-up properly, starting from the column on the right-hand "
+#| "side. The top number is called the minuend: it is the amount that we are "
+#| "starting with, that another number is being subtracted from to get the "
+#| "difference. The number below is called the subtrahend: it is the amount "
+#| "to substract from the minuend to get the difference. The result is "
+#| "written on the bottom line. To solve the subtraction, start by "
+#| "subtracting the bottom number of the first column from the top number of "
+#| "the first column (on the right-hand side), and write the result on the "
+#| "bottom line of the same column. If the top number is smaller than the "
+#| "bottom number, you can borrow from the subtrahend on the next column: for "
+#| "example, if you add 10 units to the top number, you need to add one unit "
+#| "to the bottom number of the next column. This is called the borrowing by "
+#| "compensation method. To do that in this activity, click on the empty "
+#| "rectangle on the left of the top number, select 1, and on the next column "
+#| "click on the empty rectangle on the right of the bottom number and select "
+#| "+1. Then write the result of the column on the bottom line, and do the "
+#| "same on the next columns until the operation is finished. Once you have "
+#| "found the result, click on the OK button to validate your answer. In some "
+#| "levels, you will be need to write the given operation before solving it; "
+#| "in this case, click on the Ready button when the operation is written "
+#| "correctly and then solve it."
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -25958,17 +26033,17 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
-"在竖式减法中，数字需上下书写，且必须从最右侧的数位开始正确对齐。上方的数字称"
-"为被减数：它是计算的起始数值，另一数字将从它中减去以得到差。下方的数字称为减"
-"数：它是从被减数中减去、用于得到差的数值。计算结果写在最下方的横线上。计算减"
-"法时，首先用第一列 (最右侧) 的上方数字减去下方数字，并将结果写在该列的下方横"
-"线上。若上方数字小于下方数字，则需从减数的下一列“借位”：例如，给当前列的上方"
-"数字加 10 个单位，同时需给下一列的下方数字加 1 个单位。这种方法称为“补偿借位"
-"法”。在本操作中，借位的具体步骤如下：点击当前列上方数字左侧的空白方框，选择 "
-"1；然后在下一列中，点击下方数字右侧的空白方框，选择 +1。完成借位后，将当前列"
-"的计算结果写在下方横线上，之后对其余各列重复上述步骤，直至整个减法运算完成。"
-"得出结果后，点击“确认”按钮验证答案。在部分关卡中，你需要先写出给定的算式，再"
-"进行计算；这种情况下，当算式书写正确后，点击“准备就绪”按钮，随后再进行运算。"
+"在竖式减法中，数字上下依次书写。从最右边的列开始，它们必须正确对齐。上面的数"
+"字称为被减数：它是我们起始的数量，通过从这个数中减去另一个数来得到差值。下面"
+"的数字称为减数：它是从被减数中减去以得出差值的数量。结果写在最下面一行。要进"
+"行减法运算，请先从最右边第一列的上面数字减去下面数字，然后将结果写在同一列的"
+"最下面一行。如果上面的数字小于下面的数字，您可以从下一列的减数借位：例如，如"
+"果您给上面的数字加上10个单位，您需要给下一列的下面数字加上 1 个单位。这称为补"
+"偿借位法。在本活动中，要实现这一点，点击上面数字左边的空白矩形，选择 1 ，然后"
+"在下一列点击下面数字右边的空白矩形并选择 +1 。然后将该列的结果写在最下面一"
+"行，对后续各列重复此操作，直到运算完成。一旦得出结果，点击“确定”按钮来验证答"
+"案。在某些关卡中，您需要在求解之前写出给定的算式；这种情况下，当算式正确写出"
+"后，点击“准备就绪”按钮，然后再进行求解。 "
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15
@@ -26115,14 +26190,20 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr ""
 
 #: core/ChangeLog.qml:30
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Kannada and Tamil"
-msgstr ""
+msgstr "已添加拉脱维亚语的翻译"
 
 #: core/ChangeLog.qml:31
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgctxt "ChangeLog|"
 msgid "New command-line option to set the locale (--locale locale)"
-msgstr ""
+msgstr "用于切换渲染器的新的命令行选项 (--renderer renderer) 。"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
@@ -26825,9 +26906,12 @@ msgid "No data found for %1."
 msgstr ""
 
 #: core/GCCreationHandler.qml:185
+#, fuzzy
+#| msgctxt "GCCreationHandler|"
+#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr ""
+msgstr "%1 删除成功！"
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -26836,9 +26920,12 @@ msgid "OK"
 msgstr "确认"
 
 #: core/GCCreationHandler.qml:193
+#, fuzzy
+#| msgctxt "GCCreationHandler|"
+#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
-msgstr ""
+msgstr "无法删除 %1！"
 
 #: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"

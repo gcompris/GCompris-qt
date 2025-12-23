@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-12-16 06:24-0300\n"
-"Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
+"PO-Revision-Date: 2025-10-30 22:47-0300\n"
+"Last-Translator: Guilherme Marçal Silva <guimarcalsilva@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Language: pt_BR\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 25.08.3\n"
+"X-Generator: Lokalize 25.08.2\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -1146,7 +1146,7 @@ msgstr ""
 #: activities/algebra_minus/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Subtraction of small numbers."
-msgstr "Subtração de números pequenos."
+msgstr "Subtração de números pequenos"
 
 # Help manual
 #. Help manual
@@ -1251,7 +1251,7 @@ msgstr ""
 #: activities/algebra_plus/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Simple addition. Can recognize written numbers."
-msgstr "Adição simples. Saber reconhecer números escritos."
+msgstr "Adição simples. Saber reconhecer números escritos"
 
 # Help manual
 #. Help manual
@@ -1479,7 +1479,7 @@ msgstr "Aprender a ordem alfabética."
 #: activities/alphabet-sequence/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Can decode letters."
-msgstr "Saber identificar as letras."
+msgstr "Saber identificar as letras"
 
 # Help manual
 #. Help manual
@@ -1854,7 +1854,7 @@ msgid ""
 "creates a short circuit (also called short) in the electrical circuit."
 msgstr ""
 "Ao conectar dois terminais que não deveriam ser conectados, forma-se um "
-"curto circuito (também conhecido como curto) no circuito elétrico."
+"curto circuito (também conhecido como curto) no circuito elétrico. "
 
 #: activities/analog_electricity/TutorialDataset.qml:118
 msgctxt "TutorialDataset|"
@@ -2084,7 +2084,7 @@ msgid ""
 " A red LED converts electrical energy into red light energy under particular "
 "conditions."
 msgstr ""
-" Um LED vermelho converte energia elétrica em energia luminosa vermelha, sob "
+"Um LED vermelho converte energia elétrica em energia luminosa vermelha, sob "
 "condições particulares."
 
 #: activities/analog_electricity/TutorialDataset.qml:252
@@ -2753,7 +2753,7 @@ msgid ""
 "user level!"
 msgstr ""
 "Você escolheu usar o conjunto de níveis personalizados, mas você ainda não "
-"abriu nenhum nível desse tipo!"
+"abriu nenhum nível desse tipo."
 
 #: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
@@ -2896,7 +2896,7 @@ msgstr ""
 #: activities/bargame_2players/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Ability to count."
-msgstr "Habilidade para contar."
+msgstr "Habilidade para contar"
 
 #. Help manual
 #: activities/bargame/ActivityInfo.qml:24
@@ -2956,7 +2956,7 @@ msgstr "Familiarizar-se com o sistema de números binários."
 #: activities/binary_bulb/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Decimal number system."
-msgstr "Sistema numérico decimal."
+msgstr "Sistema numérico decimal"
 
 #. Help manual
 #: activities/binary_bulb/ActivityInfo.qml:24
@@ -3287,7 +3287,7 @@ msgstr "Pratique a escrita em braille."
 #: activities/braille_fun/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Braille alphabet."
-msgstr "Alfabeto Braille."
+msgstr "Alfabeto Braille"
 
 #. Help manual
 #: activities/braille_fun/ActivityInfo.qml:24
@@ -3310,7 +3310,7 @@ msgstr "Calcudoku"
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr "Resolva o Calcudoku."
+msgstr "Resolva o Calcudoku"
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3363,7 +3363,7 @@ msgstr "Grades pequenas com operadores + e −."
 #: activities/calcudoku/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "Grades pequenas com operadores +, − e ×,."
+msgstr "Grades pequenas com operadores +, − e ×,"
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
@@ -3399,7 +3399,7 @@ msgstr "Aprender a usar o calendário."
 #: activities/calendar/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Concept of week, month and year."
-msgstr "Conceitos de semana, mês e ano."
+msgstr "Conceitos de semana, mês e ano"
 
 #. Help manual
 #: activities/calendar/ActivityInfo.qml:24
@@ -3680,7 +3680,7 @@ msgid ""
 "Braille Day in 2018"
 msgstr ""
 "O Dia do Braille é celebrado um dia antes de 5 de janeiro.<br> Encontre a "
-"data do Dia do Braille em 2018"
+"data do Dia do Braille em 2018."
 
 #: activities/calendar/calendar_dataset.js:292
 msgctxt "calendar_dataset|"
@@ -3690,7 +3690,7 @@ msgid ""
 msgstr ""
 "O aniversário de Marcos é no dia 4 de novembro. Em 2017, sua festa aconteceu "
 "exatamente duas semanas depois.<br> Encontre a data do aniversário dele em "
-"2017"
+"2017."
 
 #: activities/calendar/calendar_dataset.js:296
 msgctxt "calendar_dataset|"
@@ -3817,7 +3817,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "Review the instructions and then drag and drop the items as specified."
 msgstr ""
-"Veja as instruções e então arraste os itens para os locais especificados."
+"Veja as instruções e então arraste os itens para os locais especificados"
 
 #: activities/categorization/Categorization.qml:149
 msgctxt "Categorization|"
@@ -4458,7 +4458,7 @@ msgid ""
 msgstr ""
 "A biblioteca de damas utilizada é a draughts.js &lt;https://github.com/"
 "shubhendusaurabh/draughts.js&gt;. O manual veio da Wikipédia: &lt;https://en."
-"wikipedia.org/wiki/Draughts&gt;"
+"wikipedia.org/wiki/Draughts&gt;."
 
 #: activities/checkers/checkers.js:69
 msgctxt "checkers|"
@@ -6057,9 +6057,12 @@ msgstr "Eletricidade digital"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "Crie e simule um circuito elétrico digital."
+msgstr "Crie e simule um circuito elétrico digital"
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -6217,7 +6220,7 @@ msgstr ""
 "Um comparador recebe 2 números como entrada, A e B. Compara-os e gera 3 "
 "valores. A primeira saída é 1 se A <B, caso contrário, é zero. A segunda é 1 "
 "se A = B, caso contrário, é zero. A terceira é 1 se A> B, caso contrário. é "
-"zero. "
+"zero."
 
 #: activities/digital_electricity/components/DigitalLight.qml:20
 msgctxt "DigitalLight|"
@@ -6801,10 +6804,12 @@ msgstr ""
 
 #: activities/drawing_wheels/ActivityConfig.qml:29
 #: activities/sketch/ActivityConfig.qml:29
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Numbers from 1 to 19."
 msgctxt "ActivityConfig|"
 msgid "Number of undo: %1"
-msgstr "Números de desfazer: %1"
+msgstr "Números de 1 a 19."
 
 #: activities/drawing_wheels/ActivityConfig.qml:44
 #: activities/sketch/ActivityConfig.qml:44
@@ -6813,27 +6818,33 @@ msgid ""
 "Warning: setting the number of undo too high can make the application crash "
 "if your device doesn't have enough memory."
 msgstr ""
-"Aviso: definir um número muito alto de ações de desfazer pode causar o "
-"travamento do aplicativo se o seu dispositivo não tiver memória suficiente."
 
 #. Activity title
 #: activities/drawing_wheels/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "BrushToolPanel|"
+#| msgid "Drawing Tools"
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
-msgstr "Rodas de desenho"
+msgstr "Ferramentas de desenho"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Touch the numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Roll the gear in the cogwheel to draw."
-msgstr "Gire a engrenagem na roda dentada para desenhar."
+msgstr "Toque os números na ordem correta."
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr ""
-"Descubra os hipotrocóides e use-os como ferramentas de pintura digital."
+msgstr "Aprender algumas ferramentas de desenho digital."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
@@ -6847,15 +6858,6 @@ msgid ""
 "file (vector format), along with a PNG file (pixel format). Only the SVG "
 "file can be opened again from the activity.<br><br>"
 msgstr ""
-"Faça desenhos incríveis girando a engrenagem na roda dentada com a caneta "
-"escolhida. Selecione o tamanho da roda, o tamanho da engrenagem, as "
-"configurações da caneta e a cor nos painéis pop-up e pressione o botão de "
-"reprodução para girar a engrenagem. Você pode usar o menu Arquivo para "
-"salvar sua imagem, abrir uma imagem salva anteriormente ou criar uma nova "
-"imagem com a cor de fundo selecionada. Ao salvar uma imagem, ela será salva "
-"em um arquivo SVG (formato vetorial), juntamente com um arquivo PNG (formato "
-"de pixel). Somente o arquivo SVG pode ser aberto novamente a partir da "
-"atividade.<br><br>"
 
 #: activities/drawing_wheels/ActivityInfo.qml:29
 #: activities/sketch/ActivityInfo.qml:28
@@ -6884,24 +6886,33 @@ msgstr "Ctrl + O: abre uma imagem"
 #: activities/drawing_wheels/DrawingWheels.qml:378
 msgctxt "DrawingWheels|"
 msgid "File menu"
-msgstr "Menu Arquivo"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:390
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
-msgstr "Roda e engrenagem"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:414
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Piano composition"
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
-msgstr "Posição e tamanho da caneta"
+msgstr "Composição para piano"
 
 #: activities/drawing_wheels/DrawingWheels.qml:426
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Font selector"
 msgctxt "DrawingWheels|"
 msgid "Color selector"
-msgstr "Seletor do cor"
+msgstr "Seletor de fonte"
 
 #: activities/drawing_wheels/DrawingWheels.qml:453
+#, fuzzy
+#| msgctxt "OptionsRow|"
+#| msgid "Undo"
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Desfazer"
@@ -6909,45 +6920,57 @@ msgstr "Desfazer"
 #: activities/drawing_wheels/DrawingWheels.qml:465
 msgctxt "DrawingWheels|"
 msgid "Redo"
-msgstr "Refazer"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:499
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
-msgstr "Parar desenho"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:499
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
-msgstr "Iniciar desenho"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:532
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
-msgstr "Mostrar roda e engrenagem"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:532
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
-msgstr "Ocultar roda e engrenagem"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:691
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Salvar sua imagem"
 
 #: activities/drawing_wheels/DrawingWheels.qml:706
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Open an image"
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Abrir uma imagem"
 
 #: activities/drawing_wheels/DrawingWheels.qml:735
+#, fuzzy
+#| msgctxt "FilesPanel|"
+#| msgid "Create a new image"
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Criar uma nova imagem"
 
 # Baixar os arquivos de som em "segundo plano" (Alvarenga).
 #: activities/drawing_wheels/DrawingWheels.qml:754
+#, fuzzy
+#| msgctxt "BackgroundColorSelector|"
+#| msgid "Background color"
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Cor do fundo"
@@ -6955,20 +6978,25 @@ msgstr "Cor do fundo"
 #: activities/drawing_wheels/DrawingWheels.qml:835
 msgctxt "DrawingWheels|"
 msgid "Wheel"
-msgstr "Roda"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:902
 msgctxt "DrawingWheels|"
 msgid "Gear"
-msgstr "Engrenagem"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:965
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "SignalGenerator|"
+#| msgid "%1 s"
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
-msgstr "%1 espinhos"
+msgstr "%1 s"
 
 #: activities/drawing_wheels/DrawingWheels.qml:983
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Speed"
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Velocidade"
@@ -6976,19 +7004,25 @@ msgstr "Velocidade"
 #: activities/drawing_wheels/DrawingWheels.qml:999
 msgctxt "DrawingWheels|"
 msgid "Slow"
-msgstr "Lenta"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:1019
 msgctxt "DrawingWheels|"
 msgid "Fast"
-msgstr "Rápida"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:1062
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Font size"
 msgctxt "DrawingWheels|"
 msgid "Pen size"
-msgstr "Tamanho da caneta"
+msgstr "Tamanho da fonte"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1099
+#, fuzzy
+#| msgctxt "ToolsPanel|"
+#| msgid "Opacity"
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Opacidade"
@@ -6996,29 +7030,44 @@ msgstr "Opacidade"
 #: activities/drawing_wheels/DrawingWheels.qml:1142
 msgctxt "DrawingWheels|"
 msgid "Offset"
-msgstr "Deslocamento"
+msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:1180
+#, fuzzy
+#| msgctxt "IntroMessage|"
+#| msgid "Start"
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
-msgstr "Iniciar dente"
+msgstr "Iniciar"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1360
+#, fuzzy
+#| msgctxt "Sketch|"
+#| msgid "You did not save this image. Do you want to close this activity?"
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Você não salvou esta imagem. Deseja realmente fechar a atividade?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1361
+#, fuzzy
+#| msgctxt "Sketch|"
+#| msgid "Do you want to erase this image?"
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Deseja realmente apagar esta imagem?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1362
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "Yes"
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Sim"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1363
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "No"
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "Não"
@@ -7616,6 +7665,13 @@ msgid "Chichén Itzá"
 msgstr "Chichén Itzá"
 
 #: activities/explore_monuments/resource/board/board1.qml:20
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid ""
+#| "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
+#| "the Yucatan Peninsula in Mexico, between Valladolid and Merida. It was "
+#| "established before the period of Christopher Colombus and probably served "
+#| "as the religion center of Yucatan for a while."
 msgctxt "board1|"
 msgid ""
 "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
@@ -8745,7 +8801,7 @@ msgstr "Clique no local onde se encontra a pirâmide indicada."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr "Cidade proibida"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8760,21 +8816,12 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
-"A Cidade proibida, localizada no coração de Pequim, na China, é um magnífico "
-"complexo de palácios imperiais que serviu como residência de imperadores "
-"chineses e centro político da nação por quase 500 anos, desde a dinastia "
-"Ming (1368-1644) até o fim da dinastia Qing (1644-1912). Construída entre "
-"1406 e 1420, esta extensa obra-prima arquitetônica se estende por 180 acres "
-"e apresenta mais de 980 edifícios preservados com 8.700 cômodos, exibindo o "
-"design palaciano tradicional chinês. Rodeada por um fosso e uma muralha "
-"maciça, a Cidade Proibida já foi inacessível ao público em geral, "
-"simbolizando o poder imperial e a exclusividade."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr "Buda gigante de Leshan"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8789,21 +8836,15 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
-"O Buda gigante de Leshan, localizado na província de Sichuan, China, é uma "
-"estátua colossal esculpida em um penhasco na confluência dos rios Min, Dadu "
-"e Qingyi. Com 71 metros (233 pés), é a estátua pré-moderna mais alta do "
-"mundo e patrimônio mundial da UNESCO. Construída durante a Dinastia Tang "
-"(713-803 d.C.), a estátua representa Maitreya, o Buda do futuro, e foi "
-"criada para acalmar as águas turbulentas que ameaçavam o tráfego de barcos "
-"locais. Engenhosamente projetada, a estátua inclui um sistema de drenagem "
-"oculto para evitar a erosão. Sua expressão serena e seu artesanato "
-"intrincado a tornam um símbolo de realização espiritual e artística."
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Palácio de Potala"
+msgstr "Palácio de Mysore"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8818,21 +8859,12 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
-"O Palácio de Potala, situado na colina vermelha em Lhasa, Tibete, é um "
-"símbolo icônico da cultura tibetana e patrimônio mundial da UNESCO. "
-"Originalmente construído no século VII e ampliado no século XVII, serviu "
-"como residência de inverno dos Dalai Lamas e centro da governança tibetana. "
-"Com 13 andares e mais de 1.000 cômodos, o palácio combina arquitetura "
-"tibetana intrincada, murais vibrantes e relíquias sagradas. É dividido entre "
-"o palácio branco, que abriga áreas administrativas, e o palácio vermelho, "
-"dedicado a estudos religiosos e orações. O Palácio de Potala é um testemunho "
-"do legado espiritual e histórico do Tibete."
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr "Exército de terracota"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8844,19 +8876,12 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
-"O exército de terracota é uma coleção de milhares de soldados, cavalos e "
-"carruagens de argila em tamanho real, enterrados com o primeiro imperador da "
-"China, Qin Shi Huang, para acompanhá-lo na vida após a morte. Descobertas em "
-"1974 perto de Xi'an, as figuras datam de aproximadamente 210 a.C. e são "
-"celebradas por seus detalhes incríveis, com cada guerreiro criado "
-"exclusivamente para representar as diversas patentes e funções de um antigo "
-"exército chinês."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr "Pagodes do sol e da lua"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8871,21 +8896,15 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
-"Os Pagodes do sol e da lua, localizados em Guilin, China, são torres gêmeas "
-"icônicas que simbolizam a herança cultural e espiritual da cidade. "
-"Originalmente construídos durante a dinastia Tang, foram reconstruídos no "
-"século XX como marcos marcantes no Lago Shanhu. O Pagode do sol, com 41 "
-"metros de altura, é uma estrutura de bronze — a mais alta do gênero no mundo "
-"—, enquanto o Pagode da lua, com 35 metros, é construído com azulejos. Esses "
-"pagodes representam a harmonia do yin e do yang e são conectados por um "
-"túnel de vidro subaquático. Iluminados à noite, são atrações populares que "
-"exibem a arquitetura tradicional chinesa e a engenhosidade moderna."
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Torres Diaolou"
+msgstr "Torre Eiffel"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8900,23 +8919,19 @@ msgid ""
 "UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
 "towers remain, offering insight into this unique architectural heritage."
 msgstr ""
-"As Torres Diaolou, localizadas em Kaiping, província de Guangdong, China, "
-"são estruturas fortificadas de vários andares, construídas entre o final do "
-"século XIX e o início do século XX para proteção contra bandidos e "
-"inundações. Combinando estilos arquitetônicos ocidentais, como o românico e "
-"o barroco, com elementos tradicionais chineses, elas refletem a riqueza e a "
-"influência dos emigrantes chineses no exterior. Construídas em concreto "
-"armado, essas torres simbolizam um período de transição cultural e econômica "
-"na China rural. Declaradas patrimônio mundial da UNESCO em 2007, cerca de "
-"1.800 das 3.000 torres originais permanecem, oferecendo uma visão geral "
-"desse patrimônio arquitetônico único."
 
 #: activities/explore_monuments/resource/board/board7.qml:85
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Monumentos da China"
+msgstr "Monumentos da Índia"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Clique no local onde se encontra o monumento indicado."
@@ -8925,7 +8940,7 @@ msgstr "Clique no local onde se encontra o monumento indicado."
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr "O Panteão"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8942,24 +8957,12 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
-"O Panteão de Roma, Itália, é um antigo templo icônico construído por volta "
-"de 126 d.C. durante o reinado do imperador Adriano, no local de estruturas "
-"anteriores encomendadas por Marco Agripa. Famoso por seu brilho "
-"arquitetônico, apresenta um enorme teto abobadado com um óculo central, "
-"simbolizando os céus, permitindo que a luz natural ilumine o interior. "
-"Originalmente dedicado a todos os deuses romanos, foi posteriormente "
-"convertido em uma igreja cristã, conhecida como Basílica de Santa Maria e os "
-"Mártires (Santa Maria ad Martyres), em 609 d.C. Sua cúpula, a maior cúpula "
-"de concreto não reforçado do mundo, exibe engenharia e simetria notáveis, "
-"inspirando arquitetos por séculos. As proporções harmoniosas e o significado "
-"histórico do Panteão o tornam uma obra-prima atemporal da arquitetura "
-"clássica."
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr "Catedral de Milão"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8974,21 +8977,15 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
-"O Duomo di Milano, também conhecido como Catedral de Milão, é uma obra-prima "
-"gótica icônica localizada no coração de Milão, Itália. Construída ao longo "
-"de quase seis séculos, é uma das maiores catedrais do mundo e um símbolo do "
-"patrimônio artístico e cultural de Milão. Sua fachada intrincada é adornada "
-"com inúmeras estátuas, torres e gárgulas, refletindo a grandiosidade da "
-"arquitetura gótica. Os visitantes podem explorar seus interiores "
-"deslumbrantes, com belos vitrais e detalhes em mármore, ou subir ao terraço "
-"para vistas deslumbrantes da cidade e dos Alpes. O Duomo é um testemunho da "
-"rica história e do brilhantismo arquitetônico da Itália."
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
+#, fuzzy
+#| msgctxt "board4|"
+#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Catedral de Florença"
+msgstr "Catedral de Worms"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -9004,22 +9001,15 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
-"A Catedral de Florença, oficialmente conhecida como Catedral de Santa Maria "
-"del Fiore, é uma renomada obra-prima da arquitetura gótica e renascentista "
-"localizada em Florença, Itália. Concluída em 1436, é famosa por sua "
-"imponente cúpula de telhas vermelhas projetada por Filippo Brunelleschi, que "
-"permanece uma maravilha da engenharia e um símbolo da cidade. A intrincada "
-"fachada de mármore da catedral, adicionada no século XIX, complementa seu "
-"interior ricamente decorado e seus tesouros artísticos. Juntamente com o "
-"Campanário de Giotto e o Batistério de São João, faz parte do patrimônio "
-"mundial da UNESCO, atraindo milhões de visitantes anualmente por sua "
-"importância histórica, cultural e arquitetônica."
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Torre inclinada de Pisa"
+msgstr "Torre de Hanói"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -9034,22 +9024,12 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
-"A Torre inclinada de Pisa, localizada na cidade italiana de Pisa, é uma "
-"maravilha arquitetônica de renome mundial. Construída como torre sineira "
-"independente para a catedral da cidade, é famosa por sua inclinação "
-"involuntária, causada pela instabilidade do solo da fundação. Iniciada em "
-"1173, a construção da torre durou quase 200 anos, durante os quais foram "
-"feitos esforços para estabilizar sua inclinação. Com aproximadamente 56 "
-"metros de altura, a torre, em seu estilo românico, apresenta oito andares, "
-"incluindo uma câmara sineira, adornada com colunas e arcos intrincadamente "
-"esculpidos. Reconhecida como patrimônio mundial da UNESCO, ela continua "
-"sendo um símbolo de resiliência e engenhosidade."
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr "Basílica de São Marcos"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -9065,22 +9045,12 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
-"A Basílica de São Marcos, localizada em Veneza, Itália, é uma obra-prima "
-"icônica da arquitetura bizantina e um dos marcos mais famosos da cidade. "
-"Originalmente construída em 828 para abrigar as relíquias de São Marcos "
-"evangelista, foi reconstruída em sua forma atual no século XI. Conhecida por "
-"seu design opulento, a basílica apresenta uma mistura de influências "
-"orientais e ocidentais, evidente em suas cinco cúpulas, mosaicos intrincados "
-"e fachada ornamentada com estátuas e esculturas. O interior é ricamente "
-"decorado com mosaicos dourados e pisos de mármore, exibindo a riqueza e o "
-"poder da República de Veneza. Adjacente à Praça de São Marcos, continua "
-"sendo um símbolo do patrimônio histórico, cultural e religioso de Veneza."
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr "Pompéia"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -9096,33 +9066,31 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
-"Pompeia foi uma antiga cidade romana localizada perto da atual Nápoles, "
-"Itália, famosa por sua preservação após ter sido soterrada pela erupção do "
-"monte Vesúvio em 79 d.C. A erupção liberou uma combinação mortal de cinzas, "
-"pedra-pomes e fluxos piroclásticos, que engolfaram a cidade e seus "
-"habitantes, preservando edifícios, artefatos e até restos mortais humanos "
-"com detalhes incríveis. As escavações de Pompeia forneceram informações "
-"valiosas sobre a vida cotidiana, a arquitetura e a sociedade romanas, "
-"revelando uma cidade com ruas, casas, banhos públicos e templos bem "
-"planejados. O sítio arqueológico é agora patrimônio mundial da UNESCO e "
-"continua sendo uma das descobertas arqueológicas mais importantes da "
-"história."
 
 #: activities/explore_monuments/resource/board/board8.qml:85
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Monumentos da Itália"
+msgstr "Monumentos da Índia"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Clique no local onde se encontra o monumento indicado."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Castelo Himeji"
+msgstr "Maiúsculas e Minúsculas"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -9135,20 +9103,12 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
-"Himeji-jo é o melhor exemplo sobrevivente da arquitetura de castelos "
-"japoneses do início do século XVII, compreendendo 83 edifícios com sistemas "
-"de defesa altamente desenvolvidos e engenhosos dispositivos de proteção que "
-"datam do início do período Shogun. É uma obra-prima da construção em "
-"madeira, combinando funcionalidade com apelo estético, tanto em sua "
-"aparência elegante, unificada pelas paredes de barro rebocado branco, quanto "
-"na sutileza das relações entre os volumes do edifício e as múltiplas camadas "
-"do telhado."
 
 #: activities/explore_monuments/resource/board/board9.qml:28
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr "Parque memorial da paz de Hiroshima"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -9164,22 +9124,12 @@ msgid ""
 "a solemn space for reflection, honoring the lives lost and advocating for "
 "global peace."
 msgstr ""
-"O Parque Memorial da Paz de Hiroshima é um símbolo da paz e um lembrete das "
-"consequências devastadoras da guerra. Localizado em Hiroshima, Japão, o "
-"parque homenageia as vítimas do bombardeio atômico de 6 de agosto de 1945. O "
-"parque possui diversos monumentos, incluindo o icônico Domo da bomba "
-"atômica, que já foi um prédio governamental e agora é patrimônio mundial da "
-"UNESCO. O parque também abriga o Museu Memorial da Paz de Hiroshima, que "
-"educa os visitantes sobre os eventos que cercaram o bombardeio e promove uma "
-"mensagem de paz, não violência e a importância do desarmamento nuclear. Ele "
-"serve como um espaço solene para reflexão, homenageando as vidas perdidas e "
-"defendendo a paz global."
 
 #: activities/explore_monuments/resource/board/board9.qml:39
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr "Santuário Arkura Fuji Sengen"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -9195,23 +9145,12 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
-"O santuário foi fundado em 705 para consagrar a divindade do local. Após a "
-"grande erupção do Monte Fuji em 807, o imperador enviou um emissário "
-"imperial a este santuário para realizar um ritual para interromper a "
-"erupção. Diz-se que durante o período dos reinos combatentes, quando Takeda "
-"Nobutora, pai de um famoso senhor da guerra, Takeda Shingen, lutou contra a "
-"Família Hojo, ele montou acampamento aqui, rezou pela vitória e venceu a "
-"batalha. Ele então dedicou sua espada a este santuário. Hoje, moradores "
-"locais e pessoas de longe visitam o santuário para afastar o mal, rezar pela "
-"felicidade da família e por um parto seguro. Na primavera, as cerejeiras "
-"florescem e multidões se reúnem para apreciar a vista deslumbrante do Monte "
-"Fuji."
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr "Castelo Okinawa Shuri"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -9227,24 +9166,19 @@ msgid ""
 "much of the castle was lost in a fire in 2019, but efforts to restore it are "
 "ongoing, reflecting its enduring importance to Okinawa's heritage."
 msgstr ""
-"O Castelo de Shuri, localizado em Naha, Okinawa, Japão, é patrimônio mundial "
-"da UNESCO e um símbolo da rica história cultural do reino de Ryukyu. "
-"Originalmente construído no século XIV, o castelo serviu como centro "
-"político, econômico e cultural do reino por séculos. Famoso por sua fusão "
-"distinta de estilos arquitetônicos chinês e japonês, o Castelo de Shuri "
-"apresenta estruturas laqueadas em vermelho, decorações ornamentadas e uma "
-"posição imponente no topo de uma colina. Embora destruído durante a segunda "
-"guerra mundial, foi meticulosamente reconstruído e se tornou uma importante "
-"atração turística. Tragicamente, grande parte do castelo foi perdida em um "
-"incêndio em 2019, mas os esforços para restaurá-lo continuam, refletindo sua "
-"importância duradoura para o patrimônio de Okinawa."
 
 #: activities/explore_monuments/resource/board/board9.qml:63
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Monumentos do Japão"
+msgstr "Monumentos da França"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Clique no local onde se encontra o monumento indicado."
@@ -12349,7 +12283,7 @@ msgstr "Normandia"
 #: activities/geo-country/resource/board/board1_0.qml:107
 msgctxt "board1_0|"
 msgid "Hauts de France"
-msgstr "Altos da França"
+msgstr "Altos da França "
 
 #. Region of France: Grand est
 #: activities/geo-country/resource/board/board1_0.qml:115
@@ -15224,7 +15158,7 @@ msgstr "Leia a reta numérica"
 #: activities/graduated_line_read/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Read values on a graduated line."
-msgstr "Ler valores em uma reta numérica."
+msgstr "Ler valores em uma reta numérica"
 
 #. Help goal
 #: activities/graduated_line_read/ActivityInfo.qml:19
@@ -15287,9 +15221,12 @@ msgstr "Número a ser encontrado entre 1 e 5."
 
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Number to find between 0 and 20."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
-msgstr "Número decimal a ser encontrado entre 0 e 4."
+msgstr "Número a ser encontrado entre 0 e 20."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"
@@ -15499,7 +15436,7 @@ msgstr "Análise gramatical"
 #: activities/grammar_analysis/GrammarAnalysis.qml:27
 msgctxt "GrammarAnalysis|"
 msgid "Learn to identify grammatical classes."
-msgstr "Aprenda a identificar as classes gramaticais."
+msgstr "Aprender a identificar as classes gramaticais."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:28
 msgctxt "GrammarAnalysis|"
@@ -15556,7 +15493,7 @@ msgstr "Classes gramaticais"
 #: activities/grammar_classes/GrammarClasses.qml:16
 msgctxt "GrammarClasses|"
 msgid "Learn to identify grammatical classes."
-msgstr "Aprenda a identificar as classes gramaticais."
+msgstr "Aprender a identificar as classes gramaticais."
 
 #: activities/grammar_classes/GrammarClasses.qml:17
 msgctxt "GrammarClasses|"
@@ -15824,9 +15761,12 @@ msgid "Division required."
 msgstr "Divisão obrigatória."
 
 #: activities/guess24/resource/6/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "Todos os operadores são necessários."
+msgstr "Jogo da memória com todas as operações"
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -16249,7 +16189,7 @@ msgstr ""
 #: activities/imagename/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Name the image"
-msgstr "Nome da imagem"
+msgstr "Qual o nome da imagem?"
 
 #. Help title
 #: activities/imagename/ActivityInfo.qml:20
@@ -16287,7 +16227,7 @@ msgstr ""
 #: activities/imagename/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
 msgid "Drag and Drop each item above its name"
-msgstr "Arraste e solte cada item sobre seu nome"
+msgstr "Arraste e solte cada item sobre seu nome."
 
 #: activities/imagename/resource/board/board1_0.qml:59
 msgctxt "board1_0|"
@@ -17230,7 +17170,7 @@ msgstr "Entre 1 e 5."
 #: activities/learn_decimals_additions/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Addition with decimal numbers"
-msgstr "Adição com números decimais"
+msgstr "Adição com números decimais."
 
 # Help prerequisite
 #. Help title
@@ -17332,7 +17272,7 @@ msgstr "Adição de números decimais até 5."
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Subtraction with decimal numbers"
-msgstr "Subtração com números decimais"
+msgstr "Subtração com números decimais."
 
 # Help prerequisite
 #. Help title
@@ -17365,7 +17305,7 @@ msgstr ""
 "subtração é representado por barras. Cada barra representa uma unidade e "
 "cada quadrado na barra representa um décimo dessa unidade. Clique nos "
 "quadrados para subtrair o segundo número e apresentar o o resultado da "
-"operação"
+"operação."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:16
 msgctxt "Learn_decimals_subtractions|"
@@ -17670,7 +17610,7 @@ msgstr "Subtrações com 1, 2, 3, 4, 5, 6, 7, 8 e 9."
 #: activities/left_right_click/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Mouse click training"
-msgstr "Treinar cliques com o mouse"
+msgstr "Treinar cliques com o mouse."
 
 #. Help title
 #: activities/left_right_click/ActivityInfo.qml:16
@@ -17802,7 +17742,7 @@ msgstr "Aprender a encontrar determinadas letras em palavras."
 #: activities/letter-in-word/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Spelling, letter recognition."
-msgstr "Soletrar, reconhecer letras."
+msgstr "Soletrar, reconhecer letras"
 
 #. Help manual
 #: activities/letter-in-word/ActivityInfo.qml:24
@@ -18042,6 +17982,11 @@ msgstr ""
 "o ensinava, secretamente, no Instituto."
 
 #: activities/louis-braille/louis_braille_data.js:52
+#, fuzzy
+#| msgctxt "louis_braille_data|"
+#| msgid ""
+#| "He revised and extended braille to include mathematics, symbols, "
+#| "punctuations and music notations."
 msgctxt "louis_braille_data|"
 msgid ""
 "He revised and extended braille to include mathematics, symbols, punctuation "
@@ -18079,9 +18024,12 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "O chapéu mágico (subtração)"
+msgstr "O chapéu mágico"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -18172,9 +18120,12 @@ msgstr "%1x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "O chapéu mágico (adição)"
+msgstr "O chapéu mágico"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -18459,7 +18410,7 @@ msgstr "Treinar a audição."
 #: activities/melody/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Move and click the mouse."
-msgstr "Movimento e clique do mouse."
+msgstr "Movimento e clique do mouse"
 
 #. Help manual
 #: activities/melody/ActivityInfo.qml:24
@@ -19229,7 +19180,7 @@ msgstr "Vire as cartas para encontrar a subtração associada ao seu resultado."
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Multiplication and division memory game against Tux"
-msgstr "Jogo da memória com multiplicações e divisões, contra o Tux"
+msgstr "Jogo da memória com multiplicações e divisões, contra o Tux."
 
 #. Help title
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:17
@@ -20352,7 +20303,7 @@ msgstr "Aprender a soletrar palavras."
 #: activities/missing-letter/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Word reading."
-msgstr "Leitura de palavras."
+msgstr "Leitura de palavras"
 
 #. Help manual
 #: activities/missing-letter/ActivityInfo.qml:25
@@ -21257,7 +21208,7 @@ msgstr "Escolha o número ímpar:"
 #: activities/numbers-odd-even/resource/TutorialBase.qml:87
 msgctxt "TutorialBase|"
 msgid "Great"
-msgstr "Muito bem"
+msgstr "Muito bem!"
 
 #: activities/numbers-odd-even/resource/TutorialBase.qml:61
 #: activities/numbers-odd-even/resource/TutorialBase.qml:91
@@ -21816,7 +21767,7 @@ msgstr "Wassily Kandinsky, Composição VIII - 1923"
 #: activities/paintings/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
 msgid "Pierre-Auguste Renoir, Bal du moulin de la Galette - 1876"
-msgstr "Pierre-Auguste Renoir, Baile no Moulin de la Galette - 1876"
+msgstr " Pierre-Auguste Renoir, Baile no Moulin de la Galette - 1876"
 
 #: activities/paintings/resource/board/board20_0.qml:14
 msgctxt "board20_0|"
@@ -23353,7 +23304,7 @@ msgstr ""
 #: activities/programmingMaze/ProgrammingMaze.qml:563
 msgctxt "ProgrammingMaze|"
 msgid "Procedure:"
-msgstr "Procedimentos:"
+msgstr "Procedimentos"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:564
 msgctxt "ProgrammingMaze|"
@@ -23967,7 +23918,7 @@ msgstr ""
 "Todas as dezenas exceto 40 e 90 são construídas usando somas de X e L:\n"
 "X, XX, XXX, L, LX, LXX, LXXX.\n"
 "As dezenas 40 e 90 são construídas usando diferenças:\n"
-"XL (10 subtraídos de 50) e XC (10 subtraídos de 100)."
+"XL (10 subtraídos de 50) e XC (10 subtraídos de 100). "
 
 #: activities/roman_numerals/RomanNumerals.qml:116
 #: activities/roman_numerals/RomanNumerals.qml:122
@@ -24733,7 +24684,7 @@ msgstr ""
 #: activities/share/resource/1/Data.qml:154
 msgctxt "Data|"
 msgid "Alice wants to give 16 pieces of candy to her friends."
-msgstr "Alice quer dar 16 doces para seus amigos."
+msgstr "Alice quer dar 16 doces para seus amigos"
 
 #: activities/share/resource/1/Data.qml:164
 msgctxt "Data|"
@@ -24762,7 +24713,7 @@ msgid ""
 "candy. Help her split the pieces of candy equally between her friends."
 msgstr ""
 "Helena tem 5 amigos: 2 meninos e 3 meninas. Ela quer dar 10 doces para eles. "
-"Ajude-a a dividir, igualmente, os doces entre seus amigos."
+"Ajude-a a dividir, igualmente, os doces entre seus amigos!"
 
 #: activities/share/resource/1/Data.qml:196
 msgctxt "Data|"
@@ -24952,7 +24903,7 @@ msgid ""
 "will remain to Jon."
 msgstr ""
 "Ajude o João a dividir 11 pedaços de doce igualmente entre 5 meninas. O João "
-"vai ficar com o resto."
+"vai ficar com o resto"
 
 #: activities/share/resource/2/Data.qml:176
 msgctxt "Data|"
@@ -25076,7 +25027,7 @@ msgstr "Você não pode colocar mais que %1 doces no mesmo retângulo"
 #: activities/simplepaint/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Draw in a grid"
-msgstr "Desenhe em uma grade"
+msgstr "Desenhe em uma grade."
 
 #. Help title
 #: activities/simplepaint/ActivityInfo.qml:17
@@ -25260,6 +25211,9 @@ msgid "Gradient Tools"
 msgstr "Ferramentas de gradiente"
 
 #: activities/sketch/PaletteSelector.qml:148
+#, fuzzy
+#| msgctxt "ColorsPanel|"
+#| msgid "Palettes"
 msgctxt "PaletteSelector|"
 msgid "Palettes"
 msgstr "Paletas"
@@ -27658,6 +27612,31 @@ msgstr "Tabuada de subtração."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "In a vertical subtraction, numbers are written one below the other. They "
+#| "need to be lined-up properly, starting from the column on the right-hand "
+#| "side. The top number is called the minuend: it is the amount that we are "
+#| "starting with, that another number is being subtracted from to get the "
+#| "difference. The number below is called the subtrahend: it is the amount "
+#| "to substract from the minuend to get the difference. The result is "
+#| "written on the bottom line. To solve the subtraction, start by "
+#| "subtracting the bottom number of the first column from the top number of "
+#| "the first column (on the right-hand side), and write the result on the "
+#| "bottom line of the same column. If the top number is smaller than the "
+#| "bottom number, you can borrow from the minuend on the next column: for "
+#| "example, if you add 10 units to the top number, you need to remove one "
+#| "unit from the top number of the next column. This is called the borrowing "
+#| "by regrouping method. To do that in this activity, click on the empty "
+#| "rectangle on the left of the top number, select 1, and on the next column "
+#| "click on the empty rectangle on the right of the top number and select "
+#| "-1. Then write the result of the column on the bottom line, and do the "
+#| "same on the next columns until the operation is finished. Once you have "
+#| "found the result, click on the OK button to validate your answer. In some "
+#| "levels, you will be need to write the given operation before solving it; "
+#| "in this case, click on the Ready button when the operation is written "
+#| "correctly and then solve it."
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -27838,6 +27817,31 @@ msgstr ""
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "In a vertical subtraction, numbers are written one below the other. They "
+#| "need to be lined-up properly, starting from the column on the right-hand "
+#| "side. The top number is called the minuend: it is the amount that we are "
+#| "starting with, that another number is being subtracted from to get the "
+#| "difference. The number below is called the subtrahend: it is the amount "
+#| "to substract from the minuend to get the difference. The result is "
+#| "written on the bottom line. To solve the subtraction, start by "
+#| "subtracting the bottom number of the first column from the top number of "
+#| "the first column (on the right-hand side), and write the result on the "
+#| "bottom line of the same column. If the top number is smaller than the "
+#| "bottom number, you can borrow from the subtrahend on the next column: for "
+#| "example, if you add 10 units to the top number, you need to add one unit "
+#| "to the bottom number of the next column. This is called the borrowing by "
+#| "compensation method. To do that in this activity, click on the empty "
+#| "rectangle on the left of the top number, select 1, and on the next column "
+#| "click on the empty rectangle on the right of the bottom number and select "
+#| "+1. Then write the result of the column on the bottom line, and do the "
+#| "same on the next columns until the operation is finished. Once you have "
+#| "found the result, click on the OK button to validate your answer. In some "
+#| "levels, you will be need to write the given operation before solving it; "
+#| "in this case, click on the Ready button when the operation is written "
+#| "correctly and then solve it."
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -27942,7 +27946,7 @@ msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
 "Click on the cloud."
 msgstr ""
-"O vapor de água condensa-se para formar as nuvens e, quando as nuvens ficam "
+" O vapor de água condensa-se para formar as nuvens e, quando as nuvens ficam "
 "pesadas, chove. Clique na nuvem."
 
 #: activities/watercycle/Watercycle.qml:117
@@ -28059,14 +28063,22 @@ msgstr ""
 "Digite a palavra completa enquanto ela cai, antes que ela chegue ao chão."
 
 #: core/ChangeLog.qml:30
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Kannada and Tamil"
-msgstr "Tradução adicionada para Kannada e Tamil"
+msgstr "Adição da tradução para letão"
 
 #: core/ChangeLog.qml:31
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgctxt "ChangeLog|"
 msgid "New command-line option to set the locale (--locale locale)"
-msgstr "Nova opção de linha de comando para definir o local (--locale local)"
+msgstr ""
+"Nova opção de linha de comando para alternar o renderizador (--renderer "
+"renderizador)"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
@@ -28074,8 +28086,6 @@ msgid ""
 "New command-line option to show/hide the Home button (--hide-home-button/--"
 "show-home-button)"
 msgstr ""
-"Nova opção de linha de comando para mostrar/ocultar o botão Início (--hide-"
-"home-button/--show-home-button)"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:39 core/ChangeLog.qml:45
 #: core/ChangeLog.qml:54 core/ChangeLog.qml:60 core/ChangeLog.qml:65
@@ -28091,7 +28101,7 @@ msgstr "Várias melhorias de usabilidade"
 #: core/ChangeLog.qml:102 core/ChangeLog.qml:140 core/ChangeLog.qml:146
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
-msgstr "Várias correções de erros"
+msgstr "Várias correções de erros."
 
 #: core/ChangeLog.qml:44
 msgctxt "ChangeLog|"
@@ -28284,7 +28294,7 @@ msgstr ""
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr ""
-"Novo menu de configurações da atividade, com a seleção de conjuntos de dados"
+"Novo menu de configurações da atividade, com a seleção de conjuntos de dados."
 
 #: core/ChangeLog.qml:149
 msgctxt "ChangeLog|"
@@ -28320,7 +28330,7 @@ msgstr "Nova opção no xadrez de exibição das peças capturadas."
 #: core/ChangeLog.qml:155
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
-msgstr "Novas imagens em Cores, Cores Avançadas e Tiro ao Alvo."
+msgstr "Novas imagens em Cores, Cores Avançadas e Tiro ao Alvo"
 
 #: core/ChangeLog.qml:156
 msgctxt "ChangeLog|"
@@ -28842,9 +28852,12 @@ msgid "No data found for %1."
 msgstr "Não foi encontrado nenhum dado para %1."
 
 #: core/GCCreationHandler.qml:185
+#, fuzzy
+#| msgctxt "GCCreationHandler|"
+#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr "Arquivo excluído com sucesso!"
+msgstr "%1 excluído com sucesso!"
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -28853,9 +28866,12 @@ msgid "OK"
 msgstr "OK"
 
 #: core/GCCreationHandler.qml:193
+#, fuzzy
+#| msgctxt "GCCreationHandler|"
+#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
-msgstr "Não foi possível excluir o arquivo!"
+msgstr "Não foi possível excluir %1!"
 
 #: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
@@ -28910,7 +28926,7 @@ msgstr "Excluir"
 #: core/GCCreationHandler.qml:429
 msgctxt "GCCreationHandler|"
 msgid "Open folder"
-msgstr "Abrir pasta"
+msgstr ""
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
@@ -29039,19 +29055,22 @@ msgstr ""
 "opção --launch for utilizada."
 
 #: core/main.cpp:146
+#, fuzzy
+#| msgctxt "QObject|"
+#| msgid "Specify the activity when starting GCompris."
 msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
-msgstr "Especificar um local ao abrir o GCompris."
+msgstr "Especificar uma atividade ao abrir o GCompris."
 
 #: core/main.cpp:150
 msgctxt "QObject|"
 msgid "Hide the Home button in the bar."
-msgstr "Oculta o botão Início na barra."
+msgstr ""
 
 #: core/main.cpp:154
 msgctxt "QObject|"
 msgid "Show the Home button in the bar (default)."
-msgstr "Mostra o botão Início na barra (padrão)."
+msgstr ""
 
 #: core/main.qml:238
 msgctxt "main|"
@@ -29145,7 +29164,7 @@ msgstr "O GCompris foi atualizado! Aqui estão as novas alterações:<br/>"
 
 #: core/main.qml:509
 #, fuzzy, qt-format
-#| msgctxt "DrawingWheels|"
+#| msgctxt "Sketch|"
 #| msgid "Do you want to erase this image?"
 msgctxt "main|"
 msgid "Do you want to connect to server %1?"
@@ -29224,95 +29243,6 @@ msgstr "Iniciar"
 #~ msgid "Find the missing numbers."
 #~ msgstr "Encontre os números faltantes."
 
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Make beautiful drawings by turning the gear in the cogwheel with the "
-#~ "chosen pen."
-#~ msgstr ""
-#~ "Faça belos desenhos girando a engrenagem na roda dentada com a caneta "
-#~ "escolhida."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Select wheel, gear, pen's position and color from the foldable panels and "
-#~ "start the gear.<br><br>"
-#~ msgstr ""
-#~ "Selecione a roda, a engrenagem, a posição da caneta e a cor nos painéis "
-#~ "dobráveis ​​e inicie a engrenagem.<br><br>"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Ctrl + D: save the drawing"
-#~ msgstr "Ctrl + D: salva o desenho"
-
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save drawing"
-#~ msgstr "Salvar desenho"
-
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save vector image (SVG)"
-#~ msgstr "Salvar imagem vetorial (SVG)"
-
-# Translation of gcompris_qt.po to Brazilian Portuguese
-# Copyright (C) 2014-2016 This_file_is_part_of_KDE
-# This file is distributed under the same license as the PACKAGE package.
-#
-# Aracele Torres <aracele@kde.org>, 2014.
-# Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2014, 2015, 2017, 2018, 2019, 2020, 2022, 2023.
-# André Marcelo Alvarenga <alvarenga@kde.org>, 2014, 2015, 2016.
-# Edely <edely.gomes@gmail.com>, 2015.
-# SPDX-FileCopyrightText: 2015, 2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Frederico Goncalves Guimaraes <frederico@teia.bio.br>
-# SPDX-FileCopyrightText: 2023, 2025 Geraldo Simiao <geraldosimiao@fedoraproject.org>
-# SPDX-FileCopyrightText: 2025 Guilherme Marçal Silva <guimarcalsilva@gmail.com>
-# SPDX-FileCopyrightText: 2025 Marcus Gama <marcus.gama@gmail.com>
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ msgstr ""
-#~ "Project-Id-Version: gcompris_qt\n"
-#~ "POT-Creation-Date: \n"
-#~ "PO-Revision-Date: 2025-12-12 07:20-0300\n"
-#~ "Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
-#~ "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
-#~ "Language: pt_BR\n"
-#~ "MIME-Version: 1.0\n"
-#~ "Content-Type: text/plain; charset=UTF-8\n"
-#~ "Content-Transfer-Encoding: 8bit\n"
-#~ "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-#~ "X-Language: pt_BR\n"
-#~ "X-Qt-Contexts: true\n"
-#~ "X-Generator: Lokalize 25.08.3\n"
-
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Export image (PNG)"
-#~ msgstr "Exportar imagem (PNG)"
-
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Pencil's color and width"
-#~ msgstr "Cor e largura do lápis"
-
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save as a drawing"
-#~ msgstr "Salvar como um desenho"
-
-#~| msgctxt "category_colors|"
-#~| msgid "Colors"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Color"
-#~ msgstr "Cor"
-
-#~| msgctxt "board9_0|"
-#~| msgid "Districto Federal"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Distance to center"
-#~ msgstr "Distância para o centro"
-
-#~ msgctxt "ColorsPanel|"
-#~ msgid "Palettes"
-#~ msgstr "Paletas"
-
-#~ msgctxt "Frieze|"
-#~ msgid "What is the binary representation of %1?"
-#~ msgstr "Qual é a representação binária de %1?"
-
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Grammatical analysis"
 #~ msgstr "Análise gramatical"
@@ -29332,6 +29262,10 @@ msgstr "Iniciar"
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Leave the box blank if no class matches."
 #~ msgstr "Deixe a caixa em branco se nenhuma classe corresponder."
+
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr "Qual é a representação binária de %1?"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
