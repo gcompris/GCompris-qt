@@ -5,7 +5,11 @@
 #=============================================================================
 include(qt_helper)
 
-set(GCOMPRIS_TEACHERS_EXECUTABLE_NAME gcompris-teachers)
+if(HAIKU)
+  set(GCOMPRIS_TEACHERS_EXECUTABLE_NAME GCompris-Teachers)
+else()
+  set(GCOMPRIS_TEACHERS_EXECUTABLE_NAME gcompris-teachers)
+endif()
 
 # server
 set(server_SRCS
