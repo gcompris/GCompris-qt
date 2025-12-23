@@ -5,7 +5,7 @@
 #=============================================================================
 include(qt_helper)
 
-if(HAIKU)
+if(HAIKU OR WIN32)
   set(GCOMPRIS_TEACHERS_EXECUTABLE_NAME GCompris-Teachers)
 else()
   set(GCOMPRIS_TEACHERS_EXECUTABLE_NAME gcompris-teachers)
