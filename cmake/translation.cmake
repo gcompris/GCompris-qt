@@ -13,7 +13,7 @@ function(gcompris_create_translation_files)
 
   # Get all supported locales by GCompris from LanguageList.qml file, excluded the commented ones
   set(locale_filename "${CMAKE_SOURCE_DIR}/src/core/LanguageList.qml")
-  if(${_QM_FILENAME} STREQUAL "gcompris_teachers")
+  if(${_QM_FILENAME} STREQUAL "gcompris_teachers_qt")
     set(locale_filename "${CMAKE_SOURCE_DIR}/src/server/components/ServerLanguageList.qml")
   endif()
 
