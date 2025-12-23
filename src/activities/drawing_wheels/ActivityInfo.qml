@@ -24,7 +24,7 @@ ActivityInfo {
   goal: qsTr("Discover hypotrochoids and use them as digital painting tools.")
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Make beautiful drawings by rolling the gear in the cogwheel with the chosen pen. Select a wheel size, a gear size, pen's settings and color from the popup panels, and press the play button to roll the gear. You can use the file menu to save your image, open a previously saved image, or create a new image with selected background color. Saving an image will save it in an SVG file (vector format), along with a PNG file (pixel format). Only the SVG file can be opened again from the activity.<br><br>") +
+  manual: qsTr("Make beautiful drawings by rolling the gear in the cogwheel with the chosen pen. Select a wheel size, a gear size, pen's settings and color from the popup panels, and press the play button to roll the gear. You can use the file menu to save your image, open a previously saved image, or create a new image with selected background color. Saving an image will save it in an SVG file (vector format), along with a PNG file (pixel format). Only the SVG file can be opened again from the activity.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
           qsTr("Ctrl + Z: undo last action") + ("</li><li>") +
           qsTr("Ctrl + Y: redo last action") + ("</li><li>") +
