@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-12-22 14:12+0300\n"
+"PO-Revision-Date: 2025-12-23 12:13+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -6638,7 +6638,7 @@ msgstr ""
 #: activities/drawing_wheels/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
-msgstr "Çizim tekerlekleri"
+msgstr "Çizim çarkı"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
@@ -6655,6 +6655,16 @@ msgstr ""
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Make beautiful drawings by rolling the gear in the cogwheel with the "
+#| "chosen pen. Select a wheel size, a gear size, pen's settings and color "
+#| "from the popup panels, and press the play button to roll the gear. You "
+#| "can use the file menu to save your image, open a previously saved image, "
+#| "or create a new image with selected background color. Saving an image "
+#| "will save it in an SVG file (vector format), along with a PNG file (pixel "
+#| "format). Only the SVG file can be opened again from the activity.<br><br>"
 msgctxt "ActivityInfo|"
 msgid ""
 "Make beautiful drawings by rolling the gear in the cogwheel with the chosen "
@@ -6663,7 +6673,7 @@ msgid ""
 "file menu to save your image, open a previously saved image, or create a new "
 "image with selected background color. Saving an image will save it in an SVG "
 "file (vector format), along with a PNG file (pixel format). Only the SVG "
-"file can be opened again from the activity.<br><br>"
+"file can be opened again from the activity."
 msgstr ""
 "Seçtiğin kalemle dişli çarkı döndürerek güzel çizimler yap. Açılan "
 "panellerden bir çark boyutu, bir dişli boyutu, kalem ayarları ve renk seç ve "
@@ -27133,8 +27143,8 @@ msgstr ""
 "yazılır. Eklemeyi çözmek için ilk sütunun numaralarını (sağ tarafta) "
 "ekleyerek başla ve sonucu aynı sütunun alt satırına yaz. Sonuç iki basamaklı "
 "bir sayı verirse yalnızca sonuçtaki birimler basamağını yazın ve bir sonraki "
-"sütunun üst numarasının yanındaki onlarca basamağı ekle: Buna taşıma denir. "
-"Ardından, taşıma numarası da içerilecek biçimde bir sonraki sütunun "
+"sütunun üst numarasının yanındaki onlarca basamağı ekle: Buna elde denir. "
+"Ardından, elde olan sayı da içerilecek biçimde bir sonraki sütunun "
 "numaralarını ekle ve işlem bitene kadar işlemi yinele. Sonucu bulduktan "
 "sonra, yanıtını doğrulamak için OK düğmesine tıkla. Bazı düzeylerde, verilen "
 "işlemi çözmeden önce yazman gerekir; bu durumda, işlem doğru yazıldığında "
@@ -27143,7 +27153,7 @@ msgstr ""
 #: activities/vertical_addition/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines, without carry."
-msgstr "Toplamayı yap; 2 basamak, 2 satır, taşımadan."
+msgstr "Toplamayı yap; 2 basamak, 2 satır, elde olmadan."
 
 #: activities/vertical_addition/resource/10/Data.qml:12
 msgctxt "Data|"
@@ -27163,7 +27173,7 @@ msgstr "Kendi toplamanı yaz ve yap."
 #: activities/vertical_addition/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines, without carry."
-msgstr "Toplamayı yaz ve yap; 2 basamak, 2 satır, taşımadan."
+msgstr "Toplamayı yaz ve yap; 2 basamak, 2 satır, elde olmadan."
 
 #: activities/vertical_addition/resource/3/Data.qml:12
 msgctxt "Data|"
@@ -27276,7 +27286,7 @@ msgstr ""
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 2 digits, 2 lines, without carry."
-msgstr "Çıkarmayı yap; 2 basamak, 2 satır, taşımadan."
+msgstr "Çıkarmayı yap; 2 basamak, 2 satır, elde olmadan."
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
@@ -27300,7 +27310,7 @@ msgstr "Kendi çıkarmanı yaz ve yap."
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 2 lines, without carry."
-msgstr "Çıkarmayı yaz ve yap; 2 basamak, 2 satır, taşımadan."
+msgstr "Çıkarmayı yaz ve yap; 2 basamak, 2 satır, elde olmadan."
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12

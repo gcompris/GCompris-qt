@@ -60,13 +60,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->10 de juny de 2025</date>
+>4 de febrer de 2026</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->25.1.1</releaseinfo>
+>26.0</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -175,7 +175,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="difficulty1.svg" format="SVG"/></imageobject
+><imagedata fileref="difficulty1.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
 ></inlinemediaobject
 >1, 2 o 3 estrelles grogues: dels 2 als 6 anys.</para
 ></listitem
@@ -184,7 +184,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="difficulty4.svg" format="SVG"/></imageobject
+><imagedata fileref="difficulty4.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
 ></inlinemediaobject
 >1, 2 o 3 estrelles vermelles: més grans de 6 anys.</para
 ></listitem
@@ -198,7 +198,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_home.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_home.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Inici: Deixa l'activitat actual i torna al menú anterior.</para
 ></listitem
@@ -207,7 +207,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_ok.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > «D'acord»: Valida, confirmant la vostra resposta. Algunes activitats no detecten automàticament si l'infant ha completat la tasca. En aquest cas, haureu de fer clic en aquesta icona. També podeu utilitzar la tecla &Intro; al teclat.</para
 ></listitem
@@ -216,7 +216,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_hint.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Llum: mostra un consell per a l'activitat. Podem ajudar a la canalla en algunes activitats per a guiar-los a trobar les respostes.</para
 ></listitem>
@@ -224,11 +224,11 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_previous.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_previous.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject>
 <inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_next.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_next.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Fletxes: Es mostren al nivell actual. Feu clic en les fletxes per a seleccionar un altre nivell. Generalment, les activitats ofereixen diversos nivells on els nombres dependran de l'activitat. Al &gcompris;, és possible anar al següent nivell sense haver completat el nivell actual.</para
 ></listitem
@@ -237,7 +237,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_repeat.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_repeat.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Llavi: Demana al &gcompris; que repeteixi la pregunta.</para
 ></listitem
@@ -246,7 +246,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_help.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_help.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Signe d'interrogació: Mostra el diàleg d'ajuda. A vegades, una activitat pot ser massa complexa per a ser descrita amb facilitat a l'àrea de descripció. En aquest cas, aquesta funció dona accés a informació addicional.</para
 ></listitem
@@ -255,7 +255,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Quadre d'eines: El menú de configuració. La configuració es desa al repositori de l'usuari (carpeta) amb el nom <filename
 >.config/gcompris/gcompris-qt.conf</filename
@@ -266,7 +266,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_activity_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Element de llista: mostra el menú de configuració de l'activitat. Aquí hi ha dues pestanyes possibles. La primera, «Conjunt de dades», permet triar el nivell de les activitats en funció de diversos objectius, i la segona, «Opcions», si està disponible permet actualitzar la configuració de l'activitat.</para
 ></listitem>
@@ -274,7 +274,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_about.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_about.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > La «G» majúscula: Mostra un rètol informatiu sobre el &gcompris;, on es presenten els col·laboradors principals i la versió del programari.</para
 ></listitem
@@ -283,7 +283,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_exit.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Encendre: Surt del &gcompris;. També podeu utilitzar la drecera de teclat <keycombo action="simul"
 >&Ctrl;<keycap

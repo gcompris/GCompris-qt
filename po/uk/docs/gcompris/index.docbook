@@ -74,13 +74,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->10 червня 2025 року</date>
+>4 лютого 2026 року</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->25.1.1</releaseinfo>
+>26.0</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -189,7 +189,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="difficulty1.svg" format="SVG"/></imageobject
+><imagedata fileref="difficulty1.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
 ></inlinemediaobject
 >1, 2 або 3 жовтих зірочки — для дітей віком від 2 до 6 років.</para
 ></listitem
@@ -198,7 +198,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="difficulty4.svg" format="SVG"/></imageobject
+><imagedata fileref="difficulty4.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
 ></inlinemediaobject
 >1, 2 або 3 червоних зірочки — для дітей, старших за 6 років.</para
 ></listitem
@@ -212,7 +212,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_home.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_home.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Хатка — полишити поточну вправу, повернутися до попереднього меню.</para
 ></listitem
@@ -221,7 +221,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_ok.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > «Гаразд» — підтвердити відповідь. У деяких вправах не передбачено автоматичної перевірки того, чи було завершено виконання вправи. У таких випадках слід натискати цю піктограму. Також можна скористатися клавішею &Enter; на клавіатурі комп’ютера.</para
 ></listitem
@@ -230,7 +230,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_hint.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Лампа — показати підказку до вправи. За допомогою підказки можна допомогти дитині у деяких вправах, надавши настанови для визначення правильної відповіді.</para
 ></listitem>
@@ -238,11 +238,11 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_previous.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_previous.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject>
 <inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_next.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_next.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Стрілки — показує поточний рівень. Натисніть одну зі стрілок, щоб вибрати інший рівень. Загалом, у вправ є декілька рівнів, кількість яких залежить від вправи. У &gcompris; можна переходити до наступного рівня, навіть якщо не завершено вправляння на попередньому рівні.</para
 ></listitem
@@ -251,7 +251,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_repeat.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_repeat.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Губи — попросити &gcompris; повторити питання.</para
 ></listitem
@@ -260,7 +260,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_help.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_help.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Знак питання — показати панель із довідкою. Іноді, вправа може бути надто складною, щоб усі її аспекти можна було описати на панелі опису. У цьому випадку за допомогою цієї кнопки можна отримати доступ до додаткової інформації.</para
 ></listitem
@@ -269,7 +269,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Відкрутка з ключем — меню налаштувань. Налаштування зберігаються у сховищі користувача (теці) з назвою <filename
 >.config/gcompris/gcompris-qt.conf</filename
@@ -280,7 +280,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_activity_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Пункт списку — показує меню параметрів вправи. Тут передбачено дві вкладки. Перша, «Набір даних», уможливлює вибір рівнів вправ, залежно від мети, а друга, «Параметри», надає змогу оновити налаштування вправи, якщо такі доступні.</para
 ></listitem>
@@ -288,7 +288,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_about.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_about.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Велика «G» — інформаційна панель щодо &gcompris;, містить список основних учасників розробки та дані щодо версії програмного забезпечення.</para
 ></listitem
@@ -297,7 +297,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_exit.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Символ живлення — вийти з &gcompris;. З цією ж метою ви можете скористатися клавіатурним скороченням <keycombo action="simul"
 >&Ctrl;<keycap
