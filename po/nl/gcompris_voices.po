@@ -1,14 +1,14 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# SPDX-FileCopyrightText: 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Freek de Kruijf <freekdekruijf@kde.nl>
+# SPDX-FileCopyrightText: 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Freek de Kruijf <freekdekruijf@kde.nl>
 # Jan Mussche <mijninternet2016@gmail.com>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-23 02:37+0000\n"
-"PO-Revision-Date: 2024-12-10 12:44+0100\n"
+"PO-Revision-Date: 2025-12-23 17:50+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.08.3\n"
+"X-Generator: Lokalize 25.12.0\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
 #: activities/adjacent_numbers/ActivityInfo.qml:17
@@ -368,7 +368,7 @@ msgstr "Leer hoe digitale elektronica werkt en bouw je eigen circuit."
 #: activities/drawing_wheels/ActivityInfo.qml:22
 #, kde-format
 msgid "Roll the gear in the cogwheel to draw."
-msgstr ""
+msgstr "Draai het tandwiel in het raderwerk om te tekenen."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"
 #: activities/drawletters/ActivityInfo.qml:18
@@ -979,7 +979,7 @@ msgstr "Zet elk item op dezelfde plaats als in het gegeven voorbeeld."
 #: activities/multiple_choice_questions/ActivityInfo.qml:19
 #, kde-format
 msgid "Answer the questions."
-msgstr ""
+msgstr "Beantwoord de vragen."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
 #: activities/nine_men_morris/ActivityInfo.qml:18

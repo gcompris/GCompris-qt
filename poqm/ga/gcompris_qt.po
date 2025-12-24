@@ -11,12 +11,6 @@ msgstr ""
 "Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n < 11 ? "
 "3 : 4\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: crowdin.com\n"
-"X-Crowdin-Project: gcomptest\n"
-"X-Crowdin-Language: ga-IE\n"
-"X-Crowdin-File: gcompris_qt.po\n"
-"X-Crowdin-Project-ID: 131772\n"
-"X-Crowdin-File-ID: 26\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -7206,7 +7200,7 @@ msgid ""
 "file menu to save your image, open a previously saved image, or create a new "
 "image with selected background color. Saving an image will save it in an SVG "
 "file (vector format), along with a PNG file (pixel format). Only the SVG "
-"file can be opened again from the activity.<br><br>"
+"file can be opened again from the activity."
 msgstr ""
 
 #: activities/drawing_wheels/ActivityInfo.qml:29

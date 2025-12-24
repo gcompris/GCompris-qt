@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2025-09-14 19:13+0200\n"
+"PO-Revision-Date: 2025-12-23 09:14+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -89,47 +89,39 @@ msgstr "Troba els nombres sol·licitats i arrossega'ls al punt corresponent."
 
 #. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the previous numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n previous number(s)."
 msgid_plural "Find the %n previous number(s)."
-msgstr[0] "Troba els nombres anteriors."
-msgstr[1] "Troba els nombres anteriors."
+msgstr[0] "Troba el %n nombre anterior."
+msgstr[1] "Troba els %n nombres anteriors."
 
 #. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:60
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the next numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n next number(s)."
 msgid_plural "Find the %n next number(s)."
-msgstr[0] "Troba els nombres següents."
-msgstr[1] "Troba els nombres següents."
+msgstr[0] "Troba el %n nombre següent."
+msgstr[1] "Troba els %n nombres següents."
 
 #. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:64
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the in-between numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n in-between number(s)"
 msgid_plural "Find the %n in-between number(s)"
-msgstr[0] "Troba els nombres intermedis."
-msgstr[1] "Troba els nombres intermedis."
+msgstr[0] "Troba el %n nombre intermedi"
+msgstr[1] "Troba els %n nombres intermedis"
 
 #. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:68
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the missing numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n missing numbers"
 msgid_plural "Find the %n missing numbers"
-msgstr[0] "Troba els nombres que manquen."
-msgstr[1] "Troba els nombres que manquen."
+msgstr[0] "Troba el %n nombre que manca"
+msgstr[1] "Troba els %n nombres que manquen"
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
 msgctxt "Data|"
@@ -3106,42 +3098,42 @@ msgstr "Quina és la representació binària de %1?"
 #: activities/binary_bulb/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 3 (with counter and with values visible)."
-msgstr ""
+msgstr "Compta fins a 3 (amb comptador i amb valors visibles)."
 
 #: activities/binary_bulb/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 3 (without counter and with values visible)."
-msgstr ""
+msgstr "Compta fins a 3 (sense comptador i amb valors visibles)."
 
 #: activities/binary_bulb/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (with counter and with values visible)."
-msgstr ""
+msgstr "Compta fins a 15 (amb comptador i amb valors visibles)."
 
 #: activities/binary_bulb/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (without counter and with values visible)."
-msgstr ""
+msgstr "Compta fins a 15 (sense comptador i amb valors visibles)."
 
 #: activities/binary_bulb/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (with counter and with values visible)."
-msgstr ""
+msgstr "Compta fins a 255 (amb comptador i amb valors visibles)."
 
 #: activities/binary_bulb/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (without counter and with values visible)."
-msgstr ""
+msgstr "Compta fins a 255 (sense comptador i amb valors visibles)."
 
 #: activities/binary_bulb/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (without counter and without values visible)."
-msgstr ""
+msgstr "Compta fins a 15 (sense comptador i amb valors visibles)."
 
 #: activities/binary_bulb/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (without counter and without values visible)."
-msgstr ""
+msgstr "Compta fins a 255 (sense comptador i amb valors visibles)."
 
 #: activities/binary_bulb/resource/tutorial4.qml:31
 msgctxt "tutorial4|"
@@ -6211,12 +6203,9 @@ msgstr "Electricitat digital"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "Crea i simula un circuit lògic digital"
+msgstr "Crea i simula un circuit lògic digital."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -6973,12 +6962,10 @@ msgstr ""
 
 #: activities/drawing_wheels/ActivityConfig.qml:29
 #: activities/sketch/ActivityConfig.qml:29
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 19."
+#, qt-format
 msgctxt "ActivityConfig|"
 msgid "Number of undo: %1"
-msgstr "Números des de l'1 fins al 19."
+msgstr "Nombres desfer: %1"
 
 #: activities/drawing_wheels/ActivityConfig.qml:44
 #: activities/sketch/ActivityConfig.qml:44
@@ -6987,33 +6974,40 @@ msgid ""
 "Warning: setting the number of undo too high can make the application crash "
 "if your device doesn't have enough memory."
 msgstr ""
+"Avís: establir el nombre de desfer massa alt pot fer que l'aplicació falli "
+"si el dispositiu no té prou memòria."
 
 #. Activity title
 #: activities/drawing_wheels/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "BrushToolPanel|"
-#| msgid "Drawing Tools"
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
-msgstr "Eines de dibuix"
+msgstr "Rodes de dibuix"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Roll the gear in the cogwheel to draw."
-msgstr ""
+msgstr "Fes rodar l'engranatge a la roda dentada per a dibuixar."
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr "Aprendre sobre algunes eines de pintura digital."
+msgstr ""
+"Descobreix els hipotrocoides i utilitza'ls com a eines de pintura digital."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Make beautiful drawings by rolling the gear in the cogwheel with the "
+#| "chosen pen. Select a wheel size, a gear size, pen's settings and color "
+#| "from the popup panels, and press the play button to roll the gear. You "
+#| "can use the file menu to save your image, open a previously saved image, "
+#| "or create a new image with selected background color. Saving an image "
+#| "will save it in an SVG file (vector format), along with a PNG file (pixel "
+#| "format). Only the SVG file can be opened again from the activity.<br><br>"
 msgctxt "ActivityInfo|"
 msgid ""
 "Make beautiful drawings by rolling the gear in the cogwheel with the chosen "
@@ -7022,8 +7016,16 @@ msgid ""
 "file menu to save your image, open a previously saved image, or create a new "
 "image with selected background color. Saving an image will save it in an SVG "
 "file (vector format), along with a PNG file (pixel format). Only the SVG "
-"file can be opened again from the activity.<br><br>"
+"file can be opened again from the activity."
 msgstr ""
+"Fes dibuixos bonics fent rodar l'engranatge a la roda dentada amb el llapis "
+"escollit. Selecciona una mida de la roda, una mida de l'engranatge, la "
+"configuració del llapis i el color dels panells emergents, i prem el botó de "
+"reproducció per a fer rodar l'engranatge. Pots utilitzar el menú de fitxer "
+"per a desar la imatge, obrir una imatge desada prèviament o crear una imatge "
+"nova amb el color de fons seleccionat. Desar una imatge la desarà en un "
+"fitxer SVG (format vectorial), juntament amb un fitxer PNG (format píxel). "
+"Només el fitxer SVG es pot obrir de nou des de l'activitat.<br><br>"
 
 #: activities/drawing_wheels/ActivityInfo.qml:29
 #: activities/sketch/ActivityInfo.qml:28
@@ -7052,33 +7054,24 @@ msgstr "Ctrl + O: obre una imatge"
 #: activities/drawing_wheels/DrawingWheels.qml:378
 msgctxt "DrawingWheels|"
 msgid "File menu"
-msgstr ""
+msgstr "Menú de fitxer"
 
 #: activities/drawing_wheels/DrawingWheels.qml:390
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
-msgstr ""
+msgstr "Roda i engranatge"
 
 #: activities/drawing_wheels/DrawingWheels.qml:414
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Piano composition"
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
-msgstr "Composició per a piano"
+msgstr "Mida i posició del llapis"
 
 #: activities/drawing_wheels/DrawingWheels.qml:426
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font selector"
 msgctxt "DrawingWheels|"
 msgid "Color selector"
-msgstr "Selector de lletra"
+msgstr "Selector de color"
 
 #: activities/drawing_wheels/DrawingWheels.qml:453
-#, fuzzy
-#| msgctxt "OptionsRow|"
-#| msgid "Undo"
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Desfés"
@@ -7086,56 +7079,44 @@ msgstr "Desfés"
 #: activities/drawing_wheels/DrawingWheels.qml:465
 msgctxt "DrawingWheels|"
 msgid "Redo"
-msgstr ""
+msgstr "Refés"
 
 #: activities/drawing_wheels/DrawingWheels.qml:499
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
-msgstr ""
+msgstr "Atura el dibuix"
 
 #: activities/drawing_wheels/DrawingWheels.qml:499
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
-msgstr ""
+msgstr "Inicia el dibuix"
 
 #: activities/drawing_wheels/DrawingWheels.qml:532
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
-msgstr ""
+msgstr "Mostra la roda i l'engranatge"
 
 #: activities/drawing_wheels/DrawingWheels.qml:532
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
-msgstr ""
+msgstr "Oculta la roda i l'engranatge"
 
 #: activities/drawing_wheels/DrawingWheels.qml:691
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Desa la imatge"
 
 #: activities/drawing_wheels/DrawingWheels.qml:706
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Open an image"
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Obre una imatge"
 
 #: activities/drawing_wheels/DrawingWheels.qml:735
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Create a new image"
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Crea una imatge nova"
 
 #: activities/drawing_wheels/DrawingWheels.qml:754
-#, fuzzy
-#| msgctxt "BackgroundColorSelector|"
-#| msgid "Background color"
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Color de fons"
@@ -7143,25 +7124,20 @@ msgstr "Color de fons"
 #: activities/drawing_wheels/DrawingWheels.qml:835
 msgctxt "DrawingWheels|"
 msgid "Wheel"
-msgstr ""
+msgstr "Roda"
 
 #: activities/drawing_wheels/DrawingWheels.qml:902
 msgctxt "DrawingWheels|"
 msgid "Gear"
-msgstr ""
+msgstr "Engranatge"
 
 #: activities/drawing_wheels/DrawingWheels.qml:965
-#, fuzzy, qt-format
-#| msgctxt "SignalGenerator|"
-#| msgid "%1 s"
+#, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
-msgstr "%1 s"
+msgstr "%1 dents"
 
 #: activities/drawing_wheels/DrawingWheels.qml:983
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Velocitat"
@@ -7169,25 +7145,19 @@ msgstr "Velocitat"
 #: activities/drawing_wheels/DrawingWheels.qml:999
 msgctxt "DrawingWheels|"
 msgid "Slow"
-msgstr ""
+msgstr "Lenta"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1019
 msgctxt "DrawingWheels|"
 msgid "Fast"
-msgstr ""
+msgstr "Ràpida"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1062
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font size"
 msgctxt "DrawingWheels|"
 msgid "Pen size"
-msgstr "Mida de la lletra"
+msgstr "Mida del llapis"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1099
-#, fuzzy
-#| msgctxt "ToolsPanel|"
-#| msgid "Opacity"
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Opacitat"
@@ -7195,44 +7165,29 @@ msgstr "Opacitat"
 #: activities/drawing_wheels/DrawingWheels.qml:1142
 msgctxt "DrawingWheels|"
 msgid "Offset"
-msgstr ""
+msgstr "Decalatge"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1180
-#, fuzzy
-#| msgctxt "IntroMessage|"
-#| msgid "Start"
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
-msgstr "Inicia"
+msgstr "Dent d'inici"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1360
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "You did not save this image. Do you want to close this activity?"
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "No has desat aquesta imatge. Vols tancar aquesta activitat?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1361
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "Do you want to erase this image?"
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Vols esborrar aquesta imatge?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1362
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Sí"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1363
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "No"
@@ -7830,13 +7785,6 @@ msgid "Chichén Itzá"
 msgstr "Chichén Itzá"
 
 #: activities/explore_monuments/resource/board/board1.qml:20
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
-#| "the Yucatan Peninsula in Mexico, between Valladolid and Merida. It was "
-#| "established before the period of Christopher Colombus and probably served "
-#| "as the religion center of Yucatan for a while."
 msgctxt "board1|"
 msgid ""
 "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
@@ -9022,8 +8970,9 @@ msgstr "Fes clic al lloc on es troba la piràmide indicada."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "Ciutat Prohibida"
 
+# skip-rule: barb-uns
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
 msgid ""
@@ -9037,12 +8986,21 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
+"La Ciutat Prohibida, situada al cor de Pequín, Xina, és un magnífic complex "
+"de palaus imperials que va servir com a llar dels emperadors xinesos i el "
+"centre polític de la nació durant gairebé 500 anys, des de la dinastia Ming "
+"(1368-1644) fins al final de la dinastia Qing (1644–1912). Construïda entre "
+"1406 i 1420, aquesta obra mestra arquitectònica abasta 180 acres (uns "
+"700.000 metres quadrats) i compta amb més de 980 edificis conservats amb "
+"8.700 habitacions, mostrant el disseny tradicional de palau xinès. Envoltada "
+"d'un fossat i un mur enorme, la Ciutat Prohibida era inaccessible per al "
+"públic en general, simbolitzant el poder imperial i l'exclusivitat."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "Gran Buda de Leshan"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -9057,16 +9015,23 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
+"El Gran Buda de Leshan, situat a la província de Sichuan, Xina, és una "
+"estàtua colossal tallada en un penya-segat a la confluència dels rius Min, "
+"Dadu i Qingyi. Amb 71 metres d'altura, és l'estàtua premoderna més alta del "
+"món i patrimoni de la humanitat per la UNESCO. Construïda durant la dinastia "
+"Tang (713–803 dC), l'estàtua representa Maitreya, el Buda del futur, i va "
+"ser creada per a calmar les aigües turbulentes que amenacen el trànsit de "
+"vaixells locals. Dissenyada enginyosament, l'estàtua inclou un sistema de "
+"drenatge ocult per a evitar l'erosió. La seva expressió serena i la seva "
+"artesania intricada el converteixen en un símbol d'assoliment espiritual i "
+"artístic."
 
 # Nota: <https://ca.wikipedia.org/wiki/Mysore_%28ciutat%29>
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Palau de Mysore"
+msgstr "Palau de Potala"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -9081,12 +9046,22 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
+"El Palau de Potala, situat al turó vermell de Lhasa, Tibet, és un símbol "
+"icònic de la cultura tibetana i un lloc declarat patrimoni de la humanitat "
+"per la UNESCO. Originalment construït al segle VII i ampliat al segle XVII, "
+"va servir com a residència d'hivern dels Dalai Lames i el centre de la "
+"governança tibetana. Amb 13 pisos d'alçada i més de 1.000 habitacions, el "
+"palau combina una arquitectura tibetana intricada, murals vibrants i "
+"relíquies sagrades. Es divideix en el Palau Blanc, les àrees administratives "
+"de l'habitatge, i el Palau Roig, dedicat als estudis religiosos i la "
+"pregària. El Palau de Potala és un testimoni del llegat espiritual i "
+"històric del Tibet."
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "Exèrcit de guerrers de terracota"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -9098,12 +9073,18 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
+"L'Exèrcit de guerrers de terracota és una col·lecció de milers de soldats "
+"d'argila de mida natural, cavalls i carros enterrats amb el primer emperador "
+"de la Xina, Qin Shi Huang, per acompanyar-lo en el més enllà. Descobertes el "
+"1974 prop de Xi'an, les figures es remunten aproximadament al 210 aC i són "
+"famoses pels seus detalls increïbles, amb cada guerrer dissenyat de manera "
+"única per a representar els rangs i rols diversos d'un exèrcit xinès antic."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr ""
+msgstr "Pagodes del Sol i la Lluna"
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -9118,16 +9099,23 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
+"Les pagodes del Sol i la Lluna, situades a Guilin, Xina, són torres bessones "
+"icòniques que simbolitzen el patrimoni cultural i espiritual de la ciutat. "
+"Construïdes originalment durant la dinastia Tang, van ser reconstruïdes al "
+"segle XX com a llocs emblemàtics del llac Shanhu. La pagoda del Sol, de 41 "
+"metres d'alçada, és una estructura de bronze, la més alta del seu tipus al "
+"món, mentre que la pagoda de la Lluna, de 35 metres, està construïda amb "
+"rajoles vidriades. Aquestes pagodes representen l'harmonia del yin i el yang "
+"i estan connectades per un túnel de vidre submarí. Il·luminades a la nit, "
+"són atraccions populars que mostren l'arquitectura tradicional xinesa i "
+"l'enginy modern."
 
 # Nota: <https://ca.wikipedia.org/wiki/Torre_Eiffel>
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Torre Eiffel"
+msgstr "Torres de Diaolou"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -9142,19 +9130,24 @@ msgid ""
 "UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
 "towers remain, offering insight into this unique architectural heritage."
 msgstr ""
+"Les Torres de Diaolou, que es troben a Kaiping, província de Guangdong, "
+"Xina, són estructures fortificades de diversos pisos construïdes des de "
+"finals del segle XIX fins a principis del XX per a protegir-se contra els "
+"bandits i les inundacions. Barrejant estils arquitectònics occidentals com "
+"el romànic i el barroc amb elements xinesos tradicionals, reflecteixen la "
+"riquesa i la influència dels emigrants xinesos a l'estranger. Construïdes "
+"amb formigó armat, aquestes torres simbolitzen un període de transició "
+"cultural i econòmica a la Xina rural. Designades com patrimoni de la "
+"humanitat per la UNESCO el 2007, es conserven al voltant de 1.800 de les "
+"3.000 torres originals, que ofereixen una visió d'aquest patrimoni "
+"arquitectònic únic."
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Monuments de l'Índia"
+msgstr "Monuments de la Xina"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Fes clic al lloc on es troba el monument indicat."
@@ -9163,7 +9156,7 @@ msgstr "Fes clic al lloc on es troba el monument indicat."
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "Panteó"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -9180,12 +9173,23 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
+"El Panteó a Roma, Itàlia, és un temple antic icònic construït al voltant de "
+"l'any 126 dC durant el regnat de l'emperador Adrià, en el lloc d'estructures "
+"anteriors encarregades per Marc Agripa. Reconegut per la seva brillantor "
+"arquitectònica, presenta un sostre enorme de cúpula amb un òcul central, "
+"simbolitzant el cel, i això permet que la llum natural il·lumini l'interior. "
+"Dedicat originalment a tots els déus romans, es va convertir en una església "
+"cristiana, coneguda com la Basílica de Santa Maria i els Màrtirs (Santa "
+"Maria ad Martyres), el 609 dC. La seva cúpula, la més gran del món, mostra "
+"una enginyeria i simetria notables, inspirant els arquitectes durant segles. "
+"Les proporcions harmonioses i el significat històric del Panteó el "
+"converteixen en una obra mestra atemporal de l'arquitectura clàssica."
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "Duomo de Milà"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -9200,16 +9204,23 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
+"El Duomo de Milà, també conegut com la catedral de Milà, és una obra mestra "
+"icònica del gòtic situada al cor de Milà, Itàlia. Construïda al llarg de "
+"gairebé sis segles, és una de les catedrals més grans del món i un símbol "
+"del patrimoni artístic i cultural de Milà. La seva façana intricada està "
+"adornada amb innombrables estàtues, agulles i gàrgoles, reflectint la "
+"grandesa de l'arquitectura gòtica. Els visitants poden explorar els seus "
+"interiors impressionants, amb vitralls bells i detalls intricats de marbre, "
+"o ascendir al terrat a on hi ha vistes impressionants de la ciutat i els "
+"Alps. El Duomo és un testimoni de la rica història i brillantor "
+"arquitectònica d'Itàlia."
 
 # Nota: <https://en.wikipedia.org/wiki/Worms_Cathedral>
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Catedral de Worms"
+msgstr "Catedral de Florència"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -9225,15 +9236,22 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
+"La Catedral de Florència, coneguda oficialment com la Cattedrale di Santa "
+"Maria del Fiore, és una obra mestra de l'arquitectura gòtica i renaixentista "
+"situada a Florència, Itàlia. Acabada el 1436, és famosa per la seva gran "
+"cúpula de teules vermelles dissenyada per Filippo Brunelleschi, que segueix "
+"sent una meravella de l'enginyeria i un símbol de la ciutat. La façana "
+"intricada de marbre de la catedral, afegida al segle XIX, complementa els "
+"seus interiors decorats amb riquesa i tresors artístics. Juntament amb el "
+"Campanile de Giotto i el Baptisteri de Sant Joan, forma part del patrimoni "
+"de la humanitat de la UNESCO, que atrau milions de visitants anualment pel "
+"seu significat històric, cultural i arquitectònic."
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "La torre de Hanoi"
+msgstr "Torre de Pisa"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -9248,12 +9266,22 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
+"La Torre inclinada de Pisa, situada a la ciutat italiana de Pisa, és una "
+"meravella arquitectònica de renom mundial. Construïda com el campanar "
+"independent de la catedral de la ciutat, és famós per la seva inclinació no "
+"desitjada, causada per sòls de fonament inestable. Iniciada el 1173, la "
+"construcció de la torre va durar gairebé 200 anys, durant els quals es van "
+"fer esforços per a estabilitzar la seva inclinació. S'eleva uns 56 metres "
+"(183 peus), el disseny romànic de la torre presenta vuit pisos, incloent-hi "
+"una cambra de campana, adornada amb columnes i arcs tallats intricadament. "
+"Reconeguda com a patrimoni de la humanitat per la UNESCO, continua sent un "
+"símbol de resiliència i enginy."
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr ""
+msgstr "Basílica de Sant Marc"
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -9269,12 +9297,23 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
+"La Basílica de Sant Marc, situada a Venècia, Itàlia, és una obra mestra "
+"icònica de l'arquitectura bizantina i un dels llocs més emblemàtics de la "
+"ciutat. Construïda originalment el 828 per a allotjar les relíquies de Sant "
+"Marc Evangelista, va ser reconstruïda en la seva forma actual al segle XI. "
+"Coneguda pel seu disseny opulent, la basílica presenta una barreja "
+"d'influències orientals i occidentals, evidents en les seves cinc cúpules, "
+"mosaics intricats i façana ornamentada adornada amb estàtues i talles. "
+"L'interior està decorat ricament amb mosaics d'or i terres de marbre, "
+"mostrant la riquesa i el poder de la República Veneciana. Adjacent a la "
+"plaça de Sant Marc, segueix sent un símbol del patrimoni històric, cultural "
+"i religiós de Venècia."
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr ""
+msgstr "Pompeia"
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -9290,31 +9329,32 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
+"Pompeia era una antiga ciutat romana situada prop de l'actual Nàpols, "
+"Itàlia, famosament conservada després de ser enterrada per l'erupció del "
+"Vesuvi el 79 dC. L'erupció va desencadenar una combinació mortal de cendres, "
+"pedra tosca i fluxos piroclàstics, que van envoltar la ciutat i els seus "
+"habitants, mantenint edificis, artefactes i fins i tot restes humanes amb un "
+"detall increïble. Les excavacions de Pompeia han proporcionat informació "
+"valuosa sobre la vida romana diària, l'arquitectura i la societat, revelant "
+"una ciutat amb carrers ben planificats, cases, banys públics i temples. El "
+"lloc és ara patrimoni de la humanitat per la UNESCO i continua sent un dels "
+"descobriments arqueològics més importants de la història."
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Monuments de l'Índia"
+msgstr "Monuments d'Itàlia"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Fes clic al lloc on es troba el monument indicat."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Combinat"
+msgstr "Castell de Himeji"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -9327,12 +9367,20 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
+"Himeji-jo és el millor exemple supervivent de l'arquitectura japonesa de "
+"castells de principis del segle XVII, que comprèn 83 edificis amb sistemes "
+"de defensa i dispositius de protecció enginyosos que daten del començament "
+"del període Shogun. Es tracta d'una obra mestra de la construcció en fusta, "
+"combinant la funció amb l'atractiu estètic, tant en la seva aparença elegant "
+"unificada per les parets de terra arrebossades blanques com en la subtilesa "
+"de les relacions entre les masses edificables i les capes múltiples de "
+"sostres."
 
 #: activities/explore_monuments/resource/board/board9.qml:28
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr ""
+msgstr "Parc Commemoratiu de la Pau d'Hiroshima"
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -9348,12 +9396,23 @@ msgid ""
 "a solemn space for reflection, honoring the lives lost and advocating for "
 "global peace."
 msgstr ""
+"El Parc Commemoratiu de la Pau d'Hiroshima és un símbol de pau i un "
+"recordatori de les devastadores conseqüències de la guerra. Situat a "
+"Hiroshima, Japó, el parc commemora les víctimes del bombardeig atòmic el 6 "
+"d'agost de 1945. El parc compta amb diversos monuments, incloent-hi la "
+"icònica cúpula de la bomba atòmica, que va ser un edifici governamental i "
+"ara és patrimoni de la humanitat per la UNESCO. El parc també alberga el "
+"Museu Memorial de la Pau d'Hiroshima, que educa els visitants sobre els "
+"esdeveniments que envolten el bombardeig i promou un missatge de pau, no-"
+"violència i la importància del desarmament nuclear. Serveix com un espai "
+"solemne de reflexió, honorant les vides perdudes i advocant per la pau "
+"global."
 
 #: activities/explore_monuments/resource/board/board9.qml:39
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr ""
+msgstr "Temple de Fuji Sengen d'Arakura"
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -9369,12 +9428,23 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
+"El santuari va ser fundat el 705 per a consagrar la deïtat del lloc. Després "
+"de la gran erupció del Fuji el 807, l'emperador va destinar un enviat "
+"imperial a aquest santuari per a realitzar un ritual per a aturar l'erupció. "
+"Es diu que durant el període dels Estats Combatents, quan Takeda Nobutora, "
+"el pare del famós senyor de la guerra Takeda Shingen, va lluitar amb la "
+"família Hojo, va establir un campament aquí, va pregar per la victòria i va "
+"guanyar la batalla. Després va dedicar la seva espasa a aquest santuari. "
+"Avui, els habitants locals i els de lluny visiten el santuari per a allunyar-"
+"se del mal, per a pregar per la felicitat familiar i el part segur. A la "
+"primavera, els arbres de flor de cirerer floreixen i les multituds es "
+"reuneixen per a gaudir de la vista impressionant del mont Fuji."
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr ""
+msgstr "Castell Shuri d'Okinawa"
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -9390,19 +9460,25 @@ msgid ""
 "much of the castle was lost in a fire in 2019, but efforts to restore it are "
 "ongoing, reflecting its enduring importance to Okinawa's heritage."
 msgstr ""
+"El castell de Shuri, situat a Naha, Okinawa, Japó, és patrimoni de la "
+"humanitat de la UNESCO i un símbol de la rica història cultural del Regne de "
+"Ryūkyū. Construït originalment al segle XIV, el castell va servir com a "
+"centre polític, econòmic i cultural del regne durant segles. Reconegut per "
+"la seva fusió distintiva d'estils arquitectònics xinesos i japonesos, el "
+"castell de Shuri compta amb estructures lacades de vermelló, decoracions "
+"ornamentades i una posició dominant al cim d'un turó. Tot i que va ser "
+"destruït durant la Segona Guerra Mundial, va ser reconstruït meticulosament "
+"i es va convertir en una atracció turística clau. Tràgicament, gran part del "
+"castell es va perdre en un incendi el 2019, però els esforços per restaurar-"
+"lo estan en curs, reflectint la seva importància duradora per al patrimoni "
+"d'Okinawa."
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Monuments de França"
+msgstr "Monuments del Japó"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Fes clic al lloc on es troba el monument indicat."
@@ -15482,12 +15558,9 @@ msgstr "Nombre a trobar entre l'1 i el 5."
 
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Number to find between 0 and 20."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
-msgstr "Nombre a trobar entre el 0 i el 20."
+msgstr "Nombre decimal a trobar entre el 0 i el 4."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"
@@ -16022,12 +16095,9 @@ msgid "Division required."
 msgstr "Es requereix dividir."
 
 #: activities/guess24/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "Joc de memòria amb totes les operacions"
+msgstr "Es requereixen tots els operadors."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -18225,11 +18295,6 @@ msgstr ""
 "mentre l'ensenyava secretament a l'institut."
 
 #: activities/louis-braille/louis_braille_data.js:52
-#, fuzzy
-#| msgctxt "louis_braille_data|"
-#| msgid ""
-#| "He revised and extended braille to include mathematics, symbols, "
-#| "punctuations and music notations."
 msgctxt "louis_braille_data|"
 msgid ""
 "He revised and extended braille to include mathematics, symbols, punctuation "
@@ -18267,12 +18332,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "El barret del mag"
+msgstr "El barret del mag (resta)"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -18364,12 +18426,9 @@ msgstr "%1x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "El barret del mag"
+msgstr "El barret del mag (suma)"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -20201,7 +20260,7 @@ msgstr "Espai entre les lletres"
 #: activities/menu/ConfigurationItem.qml:445
 msgctxt "ConfigurationItem|"
 msgid "Teacher's server config"
-msgstr ""
+msgstr "Configuració del servidor del professorat"
 
 #: activities/menu/ConfigurationItem.qml:653
 msgctxt "ConfigurationItem|"
@@ -20300,7 +20359,7 @@ msgstr "Vocabulari"
 #: activities/menu/Menu.qml:211
 msgctxt "Menu|"
 msgid "GCompris is not connected to teacher's server."
-msgstr ""
+msgstr "El GCompris no està connectat al servidor del professorat."
 
 #: activities/menu/Menu.qml:212
 msgctxt "Menu|"
@@ -20308,22 +20367,26 @@ msgid ""
 "GCompris is connected to teacher's server, but the password entered for "
 "selected user is wrong."
 msgstr ""
+"El GCompris està connectat al servidor del professorat, però la contrasenya "
+"de l'usuari seleccionat és incorrecta."
 
 #: activities/menu/Menu.qml:213
 msgctxt "Menu|"
 msgid ""
 "GCompris is connected to teacher's server, and the user is authenticated."
 msgstr ""
+"El GCompris està connectat al servidor del professorat, i l'usuari està "
+"autenticat."
 
 #: activities/menu/Menu.qml:214
 msgctxt "Menu|"
 msgid "GCompris has lost the connection to teacher's server."
-msgstr ""
+msgstr "El GCompris ha perdut la connexió amb el servidor del professorat."
 
 #: activities/menu/Menu.qml:215
 msgctxt "Menu|"
 msgid "GCompris has been disconnected from teacher's server."
-msgstr ""
+msgstr "El GCompris s'ha desconnectat del servidor del professorat."
 
 #: activities/menu/Menu.qml:216
 msgctxt "Menu|"
@@ -20331,6 +20394,8 @@ msgid ""
 "GCompris is connected to teacher's server, but the user is not yet "
 "authenticated."
 msgstr ""
+"El GCompris està connectat al servidor del professorat, però l'usuari encara "
+"no està autenticat."
 
 #: activities/menu/Menu.qml:677
 msgctxt "Menu|"
@@ -20354,25 +20419,22 @@ msgstr "Configuració de l'activitat"
 #: activities/menu/ServerConfigPage.qml:61
 msgctxt "ServerConfigPage|"
 msgid "Teacher's server settings"
-msgstr ""
+msgstr "Configuració del servidor del professorat"
 
 #: activities/menu/ServerConfigPage.qml:111
 msgctxt "ServerConfigPage|"
 msgid "Teacher's identifier"
-msgstr ""
+msgstr "Identificador del professor/a"
 
 #: activities/menu/ServerConfigPage.qml:142
 msgctxt "ServerConfigPage|"
 msgid "Server port"
-msgstr ""
+msgstr "Port del servidor"
 
 #: activities/menu/ServerConfigPage.qml:177
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "ServerConfigPage|"
 msgid "Server port must be a number between 0 and 65535."
-msgstr "Endevina un número entre l'1 i el %1."
+msgstr "El port del servidor ha de ser un número entre 0 i 65535."
 
 #. Activity title
 #: activities/mining/ActivityInfo.qml:15
@@ -20962,24 +21024,21 @@ msgstr "Fins a 24 elements en múltiples línies."
 
 #. Activity title
 #: activities/multiple_choice_questions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication."
 msgctxt "ActivityInfo|"
 msgid "Multiple-choice questions"
-msgstr "Multiplicar."
+msgstr "Preguntes d'elecció múltiple"
 
 #. Help title
 #: activities/multiple_choice_questions/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "A generic activity for multiple-choice questions."
-msgstr ""
+msgstr "Una activitat genèrica de preguntes d'elecció múltiple."
 
 #. Help goal
 #: activities/multiple_choice_questions/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Answer questions sent by the teacher."
-msgstr ""
+msgstr "Respon les preguntes enviades pel professor/a."
 
 #. Help manual
 #: activities/multiple_choice_questions/ActivityInfo.qml:24
@@ -20990,71 +21049,61 @@ msgid ""
 "For some questions, after validating the answer, a feedback text panel will "
 "be displayed: click anywhere to close this panel after reading it."
 msgstr ""
+"Fes clic a una resposta per a seleccionar-la i, a continuació, prem el botó "
+"D'acord per a validar. Algunes preguntes requereixen una resposta única, "
+"altres preguntes requereixen respostes múltiples. Per a algunes preguntes, "
+"després de validar la resposta, es mostrarà una subfinestra de text de "
+"comentari: fes clic a qualsevol lloc per tancar aquesta subfinestra després "
+"de llegir-la."
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate through the answers"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: navigate through the answer list"
-msgstr "Fletxes: per a navegar a través de les respostes"
+msgstr "Fletxes amunt i avall: navegació a través de la llista de respostes"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select or deselect a circle"
 msgctxt "ActivityInfo|"
 msgid "Space: select or deselect the highlighted answer"
-msgstr "Espai: per a seleccionar o desseleccionar un cercle"
+msgstr "Espai: selecciona o desselecciona la resposta ressaltada"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
-msgstr "Retorn: per a validar la resposta quan el botó «OK» sigui visible"
+msgstr ""
+"Retorn: per a validar la resposta o tancar la subfinestra de text de "
+"comentari"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find the next number."
 msgctxt "Data|"
 msgid "Find the correct answer."
-msgstr "Troba el nombre següent."
+msgstr "Troba la resposta correcta."
 
 # Nota: http://encycolorpedia.es/b7410e
 # https://en.wikipedia.org/wiki/Rust_(color)
 #: activities/multiple_choice_questions/resource/1/Data.qml:17
-#, fuzzy
-#| msgctxt "GraduatedLineRead|"
-#| msgid "Find the requested number."
 msgctxt "Data|"
 msgid "What is the first number?"
-msgstr "Trobeu el nombre requerit."
+msgstr "Què és el primer número?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:26
 msgctxt "Data|"
 msgid "What is a color?"
-msgstr ""
+msgstr "Què és un color?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:40
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "Data|"
 msgid "What are the first two numbers?"
-msgstr "Practiqueu la suma de números."
+msgstr "Què són els dos primers números?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:49
 msgctxt "Data|"
 msgid "What are animals?"
-msgstr ""
+msgstr "Què són els animals?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:63
 msgctxt "Data|"
 msgid "Answers always in order, select the first one"
-msgstr ""
+msgstr "Respostes sempre en ordre, selecciona la primera"
 
 # Nota: https://ca.wikipedia.org/wiki/Marro_de_nou
 #. Activity title
@@ -25512,9 +25561,6 @@ msgid "Gradient Tools"
 msgstr "Eines de degradat"
 
 #: activities/sketch/PaletteSelector.qml:148
-#, fuzzy
-#| msgctxt "ColorsPanel|"
-#| msgid "Palettes"
 msgctxt "PaletteSelector|"
 msgid "Palettes"
 msgstr "Paletes"
@@ -27915,31 +27961,6 @@ msgstr "Taules de restar."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In a vertical subtraction, numbers are written one below the other. They "
-#| "need to be lined-up properly, starting from the column on the right-hand "
-#| "side. The top number is called the minuend: it is the amount that we are "
-#| "starting with, that another number is being subtracted from to get the "
-#| "difference. The number below is called the subtrahend: it is the amount "
-#| "to substract from the minuend to get the difference. The result is "
-#| "written on the bottom line. To solve the subtraction, start by "
-#| "subtracting the bottom number of the first column from the top number of "
-#| "the first column (on the right-hand side), and write the result on the "
-#| "bottom line of the same column. If the top number is smaller than the "
-#| "bottom number, you can borrow from the minuend on the next column: for "
-#| "example, if you add 10 units to the top number, you need to remove one "
-#| "unit from the top number of the next column. This is called the borrowing "
-#| "by regrouping method. To do that in this activity, click on the empty "
-#| "rectangle on the left of the top number, select 1, and on the next column "
-#| "click on the empty rectangle on the right of the top number and select "
-#| "-1. Then write the result of the column on the bottom line, and do the "
-#| "same on the next columns until the operation is finished. Once you have "
-#| "found the result, click on the OK button to validate your answer. In some "
-#| "levels, you will be need to write the given operation before solving it; "
-#| "in this case, click on the Ready button when the operation is written "
-#| "correctly and then solve it."
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -27964,27 +27985,27 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
-"En una resta vertical, els números s'escriuen un sota de l'altre. Han "
-"d'estar ben alineats, començant per la columna de la dreta. El número "
+"En una resta vertical, els nombres s'escriuen un sota de l'altre. Han "
+"d'estar ben alineats, començant per la columna de la dreta. El nombre "
 "superior s'anomena minuend: és la quantitat amb la qual comencem, de la qual "
-"restarem un altre número per obtenir la diferència. El nombre següent "
+"restarem un altre nombre per obtenir la diferència. El nombre següent "
 "s'anomena subtrahend: és la quantitat a restar del minuend per a obtenir la "
 "diferència. El resultat s'escriu a la línia inferior. Per a resoldre la "
-"resta, comenceu restant el número inferior de la primera columna del número "
-"superior de la primera columna (al costat dret), i escriviu el resultat a la "
-"línia inferior de la mateixa columna. Si el número superior és més petit que "
-"el número inferior, podeu demanar prestat del minuend de la columna següent: "
-"per exemple, si afegiu 10 unitats al número superior, haureu d'eliminar una "
-"unitat del número superior de la columna següent. Això s'anomena mètode de "
-"portar-ne per reagrupament. Per a fer-ho en aquesta activitat, feu clic al "
-"rectangle buit a l'esquerra del número superior, seleccioneu 1, i a la "
-"columna següent feu clic al rectangle buit a la dreta del número superior i "
-"seleccioneu -1. Després escriviu el resultat de la columna a la línia "
-"inferior, i feu el mateix a les columnes següents fins que l'operació hagi "
-"acabat. Un cop trobeu el resultat, feu clic al botó D'acord per a validar la "
-"resposta. En alguns nivells, haureu d'escriure l'operació indicada abans de "
-"resoldre-la; en aquest cas, feu clic al botó Preparat quan l'operació s'hagi "
-"escrit correctament i després resoleu-la."
+"resta, comença restant el nombre inferior de la primera columna del nombre "
+"superior de la primera columna (al costat dret), i escriu el resultat a la "
+"línia inferior de la mateixa columna. Si el nombre superior és més petit que "
+"el nombre inferior, pots manllevar del minuend de la columna següent: per "
+"exemple, si afegeixes 10 unitats al nombre superior, hauràs d'eliminar una "
+"unitat del nombre superior de la columna següent. Això s'anomena mètode de "
+"portar-ne per reagrupament. Per a fer-ho en aquesta activitat, fes clic al "
+"rectangle buit a l'esquerra del nombre superior, selecciona 1, i a la "
+"columna següent fes clic al rectangle buit a la dreta del nombre superior i "
+"selecciona -1. Després escriu el resultat de la columna a la línia inferior, "
+"i fes el mateix a les columnes següents fins que l'operació hagi acabat. Un "
+"cop trobis el resultat, fes clic al botó «OK» per a validar la resposta. En "
+"alguns nivells, hauràs d'escriure l'operació indicada abans de resoldre-la; "
+"en aquest cas, fes clic al botó «Preparat» quan l'operació s'hagi escrit "
+"correctament i després resol-la."
 
 #: activities/vertical_subtraction/resource/1/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
@@ -28076,20 +28097,14 @@ msgid "Solve: %1"
 msgstr "Resol: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:99
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own addition and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own addition and solve it."
-msgstr "Escriviu la vostra pròpia suma i resoleu-la."
+msgstr "Escriu la teva pròpia suma i resol-la."
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:100
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own subtraction and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own subtraction and solve it."
-msgstr "Escriviu la vostra pròpia resta i resoleu-la."
+msgstr "Escriu la teva pròpia resta i resol-la."
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:426
 msgctxt "VerticalSubtraction|"
@@ -28099,7 +28114,7 @@ msgstr "Preparat"
 #: activities/vertical_subtraction/VerticalSubtraction.qml:464
 msgctxt "VerticalSubtraction|"
 msgid "The result should not be a negative number."
-msgstr ""
+msgstr "El resultat no pot ser un nombre negatiu."
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
@@ -28119,31 +28134,6 @@ msgstr ""
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In a vertical subtraction, numbers are written one below the other. They "
-#| "need to be lined-up properly, starting from the column on the right-hand "
-#| "side. The top number is called the minuend: it is the amount that we are "
-#| "starting with, that another number is being subtracted from to get the "
-#| "difference. The number below is called the subtrahend: it is the amount "
-#| "to substract from the minuend to get the difference. The result is "
-#| "written on the bottom line. To solve the subtraction, start by "
-#| "subtracting the bottom number of the first column from the top number of "
-#| "the first column (on the right-hand side), and write the result on the "
-#| "bottom line of the same column. If the top number is smaller than the "
-#| "bottom number, you can borrow from the subtrahend on the next column: for "
-#| "example, if you add 10 units to the top number, you need to add one unit "
-#| "to the bottom number of the next column. This is called the borrowing by "
-#| "compensation method. To do that in this activity, click on the empty "
-#| "rectangle on the left of the top number, select 1, and on the next column "
-#| "click on the empty rectangle on the right of the bottom number and select "
-#| "+1. Then write the result of the column on the bottom line, and do the "
-#| "same on the next columns until the operation is finished. Once you have "
-#| "found the result, click on the OK button to validate your answer. In some "
-#| "levels, you will be need to write the given operation before solving it; "
-#| "in this case, click on the Ready button when the operation is written "
-#| "correctly and then solve it."
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -28168,39 +28158,39 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
-"En una resta vertical, els números s'escriuen un sota de l'altre. Han "
-"d'estar ben alineats, començant per la columna de la dreta. El número "
+"En una resta vertical, els nombres s'escriuen un sota de l'altre. Han "
+"d'estar ben alineats, començant per la columna de la dreta. El nombre "
 "superior s'anomena minuend: és la quantitat amb la qual comencem, de la qual "
-"restarem un altre número per obtenir la diferència. El nombre següent "
+"restarem un altre nombre per obtenir la diferència. El nombre següent "
 "s'anomena subtrahend: és la quantitat a restar del minuend per a obtenir la "
 "diferència. El resultat s'escriu a la línia inferior. Per a resoldre la "
-"resta, comenceu restant el número inferior de la primera columna del número "
-"superior de la primera columna (al costat dret), i escriviu el resultat a la "
-"línia inferior de la mateixa columna. Si el número superior és més petit que "
-"el número inferior, podeu demanar prestat del subtrahend de la columna "
-"següent: per exemple, si afegiu 10 unitats al número superior, haureu "
-"d'afegir una unitat del número inferior de la columna següent. Això "
-"s'anomena mètode de portar-ne per compensació. Per a fer-ho en aquesta "
-"activitat, feu clic al rectangle buit a l'esquerra del número superior, "
-"seleccioneu 1, i a la columna següent feu clic al rectangle buit a la dreta "
-"del número superior i seleccioneu +1. Després escriviu el resultat de la "
-"columna a la línia inferior, i feu el mateix a les columnes següents fins "
-"que l'operació hagi acabat. Un cop trobeu el resultat, feu clic al botó "
-"D'acord per a validar la resposta. En alguns nivells, haureu d'escriure "
-"l'operació indicada abans de resoldre-la; en aquest cas, feu clic al botó "
-"Preparat quan l'operació s'hagi escrit correctament i després resoleu-la. Si "
-"el número superior és més petit que el número inferior, podeu demanar "
-"prestat del subtrahend a la columna següent: per exemple, si afegiu 10 "
-"unitats al número superior, heu d'afegir una unitat al número inferior de la "
-"columna següent. Això s'anomena préstec per mètode de compensació. Per fer-"
-"ho en aquesta activitat, feu clic al rectangle buit a l'esquerra del número "
-"superior, seleccioneu 1, i a la columna següent feu clic al rectangle buit a "
-"la dreta del número inferior i seleccioneu +1. Després escriu el resultat de "
-"la columna a la línia inferior, i fes el mateix a les següents columnes fins "
-"que l'operació hagi acabat. Un cop trobat el resultat, feu clic al botó "
-"D'acord per validar la resposta. En alguns nivells, haureu d'escriure "
-"l'operació donada abans de resoldre-la; en aquest cas, feu clic al botó "
-"Prepara quan l'operació s'escriu correctament i després resoleu-la."
+"resta, comença restant el nombre inferior de la primera columna del nombre "
+"superior de la primera columna (al costat dret), i escriu el resultat a la "
+"línia inferior de la mateixa columna. Si el nombre superior és més petit que "
+"el nombre inferior, pots manllevar del subtrahend de la columna següent: per "
+"exemple, si afegeixes 10 unitats al nombre superior, hauràs d'afegir una "
+"unitat del nombre inferior de la columna següent. Això s'anomena mètode de "
+"portar-ne per compensació. Per a fer-ho en aquesta activitat, fes clic al "
+"rectangle buit a l'esquerra del nombre superior, selecciona 1, i a la "
+"columna següent fes clic al rectangle buit a la dreta del nombre superior i "
+"selecciona +1. Després escriu el resultat de la columna a la línia inferior, "
+"i fes el mateix a les columnes següents fins que l'operació hagi acabat. Un "
+"cop trobis el resultat, fes clic al botó D'acord per a validar la resposta. "
+"En alguns nivells, hauràs d'escriure l'operació indicada abans de resoldre-"
+"la; en aquest cas, fes clic al botó Preparat quan l'operació s'hagi escrit "
+"correctament i després resol-la. Si el nombre superior és més petit que el "
+"nombre inferior, pots demanar prestat del subtrahend a la columna següent: "
+"per exemple, si afegeixes 10 unitats al nombre superior, has d'afegir una "
+"unitat al nombre inferior de la columna següent. Això s'anomena préstec per "
+"mètode de compensació. Per fer-ho en aquesta activitat, fes clic al "
+"rectangle buit a l'esquerra del nombre superior, selecciona 1, i a la "
+"columna següent fes clic al rectangle buit a la dreta del nombre inferior i "
+"selecciona +1. Després escriu el resultat de la columna a la línia inferior, "
+"i fes el mateix a les següents columnes fins que l'operació hagi acabat. Un "
+"cop trobat el resultat, fes clic al botó D'acord per validar la resposta. En "
+"alguns nivells, hauràs d'escriure l'operació donada abans de resoldre-la; en "
+"aquest cas, fes clic al botó Prepara quan l'operació s'escriu correctament i "
+"després resol-la."
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15
@@ -28375,22 +28365,16 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Escriviu la paraula completa mentre cau, abans que arribi a terra."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Kannada and Tamil"
-msgstr "S'han afegit les traduccions per al lituà"
+msgstr "S'han afegit les traduccions per al kanarès i el tàmil"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgctxt "ChangeLog|"
 msgid "New command-line option to set the locale (--locale locale)"
 msgstr ""
-"Opció nova de la línia d'ordres per a canviar el renderitzador (--renderer "
-"renderitzador)"
+"Opció nova de la línia d'ordres per a definir la configuració regional (--"
+"locale configuració_regional)"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
@@ -28398,6 +28382,8 @@ msgid ""
 "New command-line option to show/hide the Home button (--hide-home-button/--"
 "show-home-button)"
 msgstr ""
+"Opció nova de la línia d'ordres per a mostrar/ocultar el botó Inici (--hide-"
+"home-button/--show-home-button)"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:39 core/ChangeLog.qml:45
 #: core/ChangeLog.qml:54 core/ChangeLog.qml:60 core/ChangeLog.qml:65
@@ -29167,12 +29153,9 @@ msgid "No data found for %1."
 msgstr "No s'han trobat les dades per a %1."
 
 #: core/GCCreationHandler.qml:185
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr "S'ha suprimit %1 amb èxit!"
+msgstr "El fitxer s'ha suprimit correctament!"
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -29181,12 +29164,9 @@ msgid "OK"
 msgstr "D'acord"
 
 #: core/GCCreationHandler.qml:193
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
-msgstr "No s'ha pogut suprimir %1!"
+msgstr "No s'ha pogut suprimir el fitxer!"
 
 #: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
@@ -29241,7 +29221,7 @@ msgstr "Suprimeix"
 #: core/GCCreationHandler.qml:429
 msgctxt "GCCreationHandler|"
 msgid "Open folder"
-msgstr ""
+msgstr "Obre una carpeta"
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
@@ -29370,22 +29350,19 @@ msgstr ""
 "s'utilitza l'opció --launch."
 
 #: core/main.cpp:146
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid "Specify the activity when starting GCompris."
 msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
-msgstr "Especifica l'activitat en iniciar el GCompris."
+msgstr "Especifica la configuració regional en iniciar el GCompris."
 
 #: core/main.cpp:150
 msgctxt "QObject|"
 msgid "Hide the Home button in the bar."
-msgstr ""
+msgstr "Oculta el botó Inici a la barra."
 
 #: core/main.cpp:154
 msgctxt "QObject|"
 msgid "Show the Home button in the bar (default)."
-msgstr ""
+msgstr "Mostra el botó Inici a la barra (predeterminat)."
 
 #: core/main.qml:238
 msgctxt "main|"
@@ -29476,47 +29453,36 @@ msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "El GCompris ha estat actualitzat! Aquests són els nous canvis:<br/>"
 
 #: core/main.qml:509
-#, fuzzy, qt-format
-#| msgctxt "Sketch|"
-#| msgid "Do you want to erase this image?"
+#, qt-format
 msgctxt "main|"
 msgid "Do you want to connect to server %1?"
-msgstr "Vols esborrar aquesta imatge?"
+msgstr "Vols connectar amb el servidor %1?"
 
 #: core/main.qml:530
 #, qt-format
 msgctxt "main|"
 msgid "Password rejected by server %1"
-msgstr ""
+msgstr "Contrasenya rebutjada pel servidor %1"
 
 #: core/main.qml:531 core/main.qml:550 core/main.qml:625
-#, fuzzy
-#| msgctxt "Balancebox|"
-#| msgid "OK"
 msgctxt "main|"
 msgid "OK"
 msgstr "D'acord"
 
 #: core/main.qml:546
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "main|"
 msgid "Select your username"
-msgstr "Trieu el vostre mode"
+msgstr "Selecciona el teu usuari"
 
 #: core/main.qml:556
 msgctxt "main|"
 msgid "Please select your username in the list or cancel."
-msgstr ""
+msgstr "Selecciona el teu usuari de la llista o cancel·la."
 
 #: core/main.qml:623
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "main|"
 msgid "Enter your password"
-msgstr "Retorn: per a validar la resposta"
+msgstr "Introdueix la contrasenya"
 
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"
