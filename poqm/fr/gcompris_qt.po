@@ -6882,6 +6882,15 @@ msgid ""
 "file (vector format), along with a PNG file (pixel format). Only the SVG "
 "file can be opened again from the activity."
 msgstr ""
+"Réalise de magnifiques dessins en faisant tourner l'engrenage dans la roue "
+"dentée avec le stylo choisi. Sélectionne la taille de la roue, la taille de "
+"l'engrenage, les paramètres du stylo et la couleur dans les panneaux "
+"contextuels, puis appuie sur le bouton de lecture pour faire tourner "
+"l'engrenage. Tu peux utiliser le menu Fichier pour enregistrer ton image, "
+"ouvrir une image précédemment enregistrée ou créer une nouvelle image avec "
+"la couleur d'arrière-plan sélectionnée. L'enregistrement d'une image se fera "
+"dans un fichier SVG (format vectoriel), ainsi que dans un fichier PNG "
+"(format pixel). Seul le fichier SVG peut être rouvert à partir de l'activité."
 
 #: activities/drawing_wheels/ActivityInfo.qml:29
 #: activities/sketch/ActivityInfo.qml:28

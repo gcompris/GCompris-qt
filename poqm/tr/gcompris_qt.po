@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-12-23 12:13+0300\n"
+"PO-Revision-Date: 2025-12-24 11:26+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -6655,16 +6655,6 @@ msgstr ""
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Make beautiful drawings by rolling the gear in the cogwheel with the "
-#| "chosen pen. Select a wheel size, a gear size, pen's settings and color "
-#| "from the popup panels, and press the play button to roll the gear. You "
-#| "can use the file menu to save your image, open a previously saved image, "
-#| "or create a new image with selected background color. Saving an image "
-#| "will save it in an SVG file (vector format), along with a PNG file (pixel "
-#| "format). Only the SVG file can be opened again from the activity.<br><br>"
 msgctxt "ActivityInfo|"
 msgid ""
 "Make beautiful drawings by rolling the gear in the cogwheel with the chosen "
@@ -6681,7 +6671,7 @@ msgstr ""
 "resmini kaydedebilir, önceden kaydedilmiş bir resmi açabilir veya seçilen "
 "arka plan rengiyle yeni bir resim oluşturabilirsin. Bir resmi kaydetmek, onu "
 "bir SVG dosyası (vektör biçim) ve bir PNG dosyası (piksel biçim) olarak "
-"kaydeder. Etkinlikten yalnızca SVG dosyası yeniden açılabilir.<br><br>"
+"kaydeder. Etkinlikten yalnızca SVG dosyası yeniden açılabilir."
 
 #: activities/drawing_wheels/ActivityInfo.qml:29
 #: activities/sketch/ActivityInfo.qml:28
@@ -17885,7 +17875,7 @@ msgstr "Katsayılarla 10.000’e kadar kalan yıldızları hesapla."
 #, qt-format
 msgctxt "StarsBar|"
 msgid "%1x"
-msgstr "%1x"
+msgstr "%1×"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15

@@ -9,6 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Qt-Contexts: true\n"
 "X-Generator: Poedit 3.8\n"
 
@@ -660,12 +661,9 @@ msgid "Questions"
 msgstr "კითხვები"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:36
-#, fuzzy
-#| msgctxt "FractionsFindEditor|"
-#| msgid "Static numerator "
 msgctxt "FractionsFindEditor|"
 msgid "Static numerator"
-msgstr "სტატიკური მრიცხველი "
+msgstr "სტატიკური მრიცხველი"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:37
 msgctxt "FractionsFindEditor|"

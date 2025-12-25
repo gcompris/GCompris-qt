@@ -4,16 +4,16 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-23 11:17+0200\n"
-"PO-Revision-Date: 2025-12-23 13:09+0100\n"
+"PO-Revision-Date: 2025-12-24 12:30+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 25.12.0\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
-"%100==4 ? 3 : 0);\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100>=3 && n"
+"%100<=4 ? 2 : 3);\n"
+"X-Generator: Poedit 3.8\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
 #: server/activities/binary_bulb/ActivityEditor.qml:12
@@ -22,25 +22,11 @@ msgstr ""
 #: server/activities/learn_digits/ActivityEditor.qml:13
 #: server/activities/learn_subtractions/ActivityEditor.qml:14
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:13
-#, fuzzy
-#| msgctxt ""
-#| "server/activities/adjacent_numbers/ActivityEditor.qml:13 server/"
-#| "activities/binary_bulb/ActivityEditor.qml:12 server/activities/"
-#| "fractions_create/ActivityEditor.qml:12 server/activities/learn_additions/"
-#| "ActivityEditor.qml:14 server/activities/learn_digits/ActivityEditor."
-#| "qml:13 server/activities/learn_subtractions/ActivityEditor.qml:14 server/"
-#| "activities/multiple_choice_questions/ActivityEditor.qml:13"
-#| msgid "Rules to create a valid dataset:"
 msgctxt "ActivityEditor|"
 msgid "Rules to create a valid dataset:"
 msgstr "Pravila za ustvarjanje veljavnega nabora podatkov:"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:15
-#, fuzzy
-#| msgid ""
-#| "If \"Random start number\" is selected, the number of sublevels will be "
-#| "the minimum between the \"Sublevels\" value and the result of: (\"Maximum "
-#| "start number\" - \"Minimum start number\") / \"Step between numbers\" + 1."
 msgctxt "ActivityEditor|"
 msgid ""
 "If \"Random start number\" is selected, the number of sublevels will be the "
@@ -52,11 +38,6 @@ msgstr ""
 "število« - »Najmanjše začetno število«) / »Korak med števili« + 1."
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:17
-#, fuzzy
-#| msgid ""
-#| "If \"Random start number\" is not selected, the \"Start numbers\" list "
-#| "must contain only numbers, and each of them will be used as start number "
-#| "for a sublevel."
 msgctxt "ActivityEditor|"
 msgid ""
 "If \"Random start number\" is not selected, the \"Start numbers\" list must "
@@ -68,14 +49,6 @@ msgstr ""
 "začetna številka za podraven."
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:19
-#, fuzzy
-#| msgid ""
-#| "\"Position of missing numbers\" must contain a list of numbers "
-#| "corresponding to the index of numbers to find. Index numbers start from 0 "
-#| "(the first number of the sequence), and must not be greater than "
-#| "\"Sequence length\" - 1. Also, the length of the list can not be greater "
-#| "than \"Sequence length\" - 2, to always have at least 2 visible numbers "
-#| "in the sequence."
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Position of missing numbers\" must contain a list of numbers corresponding "
@@ -91,106 +64,72 @@ msgstr ""
 "sta v zaporedju vedno vidni vsaj 2 številki."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:36
-#, fuzzy
-#| msgid "Tiles:"
 msgctxt "AdjacentNumbersDataDisplay|"
 msgid "Tiles:"
 msgstr "Ploščice:"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:60
-#, fuzzy
-#| msgctxt ""
-#| "server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:60"
-#| msgid "Answer:"
 msgctxt "AdjacentNumbersDataDisplay|"
 msgid "Answer:"
 msgstr "Odgovor:"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:28
-#, fuzzy
-#| msgid "Random start numbers"
 msgctxt "AdjacentNumbersEditor|"
 msgid "Random start numbers"
 msgstr "Naključne začetne številke"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:29
-#, fuzzy
-#| msgctxt "server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:29"
-#| msgid "Sublevels"
 msgctxt "AdjacentNumbersEditor|"
 msgid "Sublevels"
 msgstr "Podravni"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:30
-#, fuzzy
-#| msgid "Start numbers"
 msgctxt "AdjacentNumbersEditor|"
 msgid "Start numbers"
-msgstr "Začetne številke"
+msgstr "Začetna števila"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:31
-#, fuzzy
-#| msgid "Minimum start number"
 msgctxt "AdjacentNumbersEditor|"
 msgid "Minimum start number"
-msgstr "Minimalna začetna številka"
+msgstr "Minimalno začetno število"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:32
-#, fuzzy
-#| msgid "Maximum start number"
 msgctxt "AdjacentNumbersEditor|"
 msgid "Maximum start number"
-msgstr "Maksimalna začetna številka"
+msgstr "Maksimalna začetna števila"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:33
-#, fuzzy
-#| msgid "Step between numbers"
 msgctxt "AdjacentNumbersEditor|"
 msgid "Step between numbers"
-msgstr "Korak med številkami"
+msgstr "Korak med števili"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:34
-#, fuzzy
-#| msgid "Sequence length"
 msgctxt "AdjacentNumbersEditor|"
 msgid "Sequence length"
 msgstr "Dolžina zaporedja"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:35
-#, fuzzy
-#| msgid "Position of missing numbers"
 msgctxt "AdjacentNumbersEditor|"
 msgid "Position of missing numbers"
-msgstr "Položaj manjkajočih številk"
+msgstr "Položaj manjkajočih števil"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:36
-#, fuzzy
-#| msgid "Proposed numbers"
 msgctxt "AdjacentNumbersEditor|"
 msgid "Proposed numbers"
-msgstr "Predlagane številke"
+msgstr "Predlagana števila"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:98
-#, fuzzy
-#| msgctxt "server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:98"
-#| msgid "Dataset is empty."
 msgctxt "AdjacentNumbersEditor|"
 msgid "Dataset is empty."
 msgstr "Nabor podatkov je prazen."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:100
-#, fuzzy
-#| msgid "\"Start numbers\" must contain only numbers, and not be empty."
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Start numbers\" must contain only numbers, and not be empty."
 msgstr ""
-"»Začetne številke« morajo vsebovati samo številke in ne smejo biti prazne."
+"»Začetna števila« morajo vsebovati samo številke in ne smejo biti prazne."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:102
-#, fuzzy
-#| msgid ""
-#| "\"Position of missing numbers\" must contain only numbers, and not be "
-#| "empty."
 msgctxt "AdjacentNumbersEditor|"
 msgid ""
 "\"Position of missing numbers\" must contain only numbers, and not be empty."
@@ -199,65 +138,40 @@ msgstr ""
 "prazen."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:104
-#, fuzzy
-#| msgid "\"Position of missing numbers\" contains too much numbers."
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Position of missing numbers\" contains too much numbers."
 msgstr "\"Položaj manjkajočih števil\" vsebuje preveč števil."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:106
-#, fuzzy
-#| msgid "\"Position of missing numbers\" contains invalid numbers."
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Position of missing numbers\" contains invalid numbers."
 msgstr "\"Položaj manjkajočih števil\" vsebuje neveljavne številke."
 
 #: server/activities/algebra_by/AlgebraDataDisplay.qml:19
-#, fuzzy
-#| msgid "timeout"
 msgctxt "AlgebraDataDisplay|"
 msgid "timeout"
 msgstr "časovna omejitev"
 
 #. %1 is an operation, %2 the result. Example: "2 x 5 = 10"
 #: server/activities/algebra_by/AlgebraDataDisplay.qml:22
-#, fuzzy, qt-format
-#| msgctxt "server/activities/algebra_by/AlgebraDataDisplay.qml:22"
-#| msgid "%1 = %2"
+#, qt-format
 msgctxt "AlgebraDataDisplay|"
 msgid "%1 = %2"
 msgstr "%1 = %2"
 
 #. %1 is the answer. Example: "Answer: 10"
 #: server/activities/algebra_by/AlgebraDataDisplay.qml:24
-#, fuzzy, qt-format
-#| msgctxt "server/activities/algebra_by/AlgebraDataDisplay.qml:24"
-#| msgid "Answer: %1"
+#, qt-format
 msgctxt "AlgebraDataDisplay|"
 msgid "Answer: %1"
 msgstr "Odgovor: %1"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:25
-#, fuzzy
-#| msgctxt ""
-#| "server/activities/adjacent_numbers/ActivityEditor.qml:13 server/"
-#| "activities/binary_bulb/ActivityEditor.qml:12 server/activities/"
-#| "fractions_create/ActivityEditor.qml:12 server/activities/learn_additions/"
-#| "ActivityEditor.qml:14 server/activities/learn_digits/ActivityEditor."
-#| "qml:13 server/activities/learn_subtractions/ActivityEditor.qml:14 server/"
-#| "activities/multiple_choice_questions/ActivityEditor.qml:13"
-#| msgid "Rules to create a valid dataset:"
 msgctxt "AlgebraEditor|"
 msgid "Rules to create a valid dataset:"
 msgstr "Pravila za ustvarjanje veljavnega nabora podatkov:"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:27
-#, fuzzy
-#| msgid ""
-#| "When \"Random operands\" is selected, if \"Result value limit\" is more "
-#| "than 0 it defines the maximum allowed for the result of each operation. "
-#| "It must be large enough to generate enough questions for the given number "
-#| "of sublevels using the minimum and maximum operand values."
 msgctxt "AlgebraEditor|"
 msgid ""
 "When \"Random operands\" is selected, if \"Result value limit\" is more than "
@@ -271,10 +185,6 @@ msgstr ""
 "število podravni z uporabo najmanjše in največje vrednosti operandov."
 
 #: server/activities/algebra_by/AlgebraEditor.qml:29
-#, fuzzy
-#| msgid ""
-#| "If \"Random operands\" is not selected, the sublevel list on the right "
-#| "side must not be empty."
 msgctxt "AlgebraEditor|"
 msgid ""
 "If \"Random operands\" is not selected, the sublevel list on the right side "
@@ -284,77 +194,47 @@ msgstr ""
 "sme biti prazen."
 
 #: server/activities/algebra_by/AlgebraEditor.qml:33
-#, fuzzy
-#| msgctxt "server/activities/algebra_by/AlgebraEditor.qml:33"
-#| msgid "Random operands"
 msgctxt "AlgebraEditor|"
 msgid "Random operands"
 msgstr "Naključni operandi"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:34
 #: server/activities/algebra_by/AlgebraEditor.qml:39
-#, fuzzy
-#| msgctxt "server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:29"
-#| msgid "Sublevels"
 msgctxt "AlgebraEditor|"
 msgid "Sublevels"
 msgstr "Podravni"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:35
-#, fuzzy
-#| msgctxt "server/activities/algebra_by/AlgebraEditor.qml:35"
-#| msgid "Minimum operand value"
 msgctxt "AlgebraEditor|"
 msgid "Minimum operand value"
 msgstr "Najmanjša vrednost operanda"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:36
-#, fuzzy
-#| msgctxt "server/activities/algebra_by/AlgebraEditor.qml:36"
-#| msgid "Maximum operand value"
 msgctxt "AlgebraEditor|"
 msgid "Maximum operand value"
 msgstr "Najvišja vrednost operanda"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:37
-#, fuzzy
-#| msgctxt "server/activities/algebra_by/AlgebraEditor.qml:37"
-#| msgid "Result value limit"
 msgctxt "AlgebraEditor|"
 msgid "Result value limit"
 msgstr "Omejitev vrednosti rezultata"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:38
-#, fuzzy
-#| msgctxt "server/activities/algebra_by/AlgebraEditor.qml:38"
-#| msgid "Shuffle"
 msgctxt "AlgebraEditor|"
 msgid "Shuffle"
 msgstr "Premešaj"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:44
-#, fuzzy
-#| msgctxt "server/activities/algebra_by/AlgebraEditor.qml:44"
-#| msgid "First operand"
 msgctxt "AlgebraEditor|"
 msgid "First operand"
 msgstr "Prvi operand"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:45
-#, fuzzy
-#| msgctxt "server/activities/algebra_by/AlgebraEditor.qml:45"
-#| msgid "Second operand"
 msgctxt "AlgebraEditor|"
 msgid "Second operand"
 msgstr "Drugi operand"
 
 #: server/activities/algebra_div/ActivityEditor.qml:16
-#, fuzzy
-#| msgid ""
-#| "When \"Random operands\" is selected, the right side operand is always "
-#| "between minimum and maximum values. The left side operand is generated by "
-#| "multiplying the right side operand by another number between minimum and "
-#| "maximum values."
 msgctxt "ActivityEditor|"
 msgid ""
 "When \"Random operands\" is selected, the right side operand is always "
@@ -362,15 +242,11 @@ msgid ""
 "multiplying the right side operand by another number between minimum and "
 "maximum values."
 msgstr ""
-"Ko je izbran \"Naključni operandi\", je desni operand vedno med najmanjšo in "
-"največjo vrednostjo. Levi operand se generira z množenjem desnega operanda z "
-"drugim številom med najmanjšo in največjo vrednostjo."
+"Ko so izbrani \"Naključni operandi\", je desni operand vedno med najmanjšo "
+"in največjo vrednostjo. Levi operand se generira z množenjem desnega "
+"operanda z drugim številom med najmanjšo in največjo vrednostjo."
 
 #: server/activities/algebra_div/ActivityEditor.qml:18
-#, fuzzy
-#| msgid ""
-#| "If \"Random operands\" is not selected, for each sublevel you must make "
-#| "sure that the \"First operand\" is a multiple of the \"Second operand\"."
 msgctxt "ActivityEditor|"
 msgid ""
 "If \"Random operands\" is not selected, for each sublevel you must make sure "
@@ -380,75 +256,47 @@ msgstr ""
 "zagotoviti, da je »Prvi operand« večkratnik »Drugega operanda«."
 
 #: server/activities/algebra_div/ActivityEditor.qml:23
-#, fuzzy
-#| msgctxt "server/activities/algebra_by/AlgebraEditor.qml:33"
-#| msgid "Random operands"
 msgctxt "ActivityEditor|"
 msgid "Random operands"
 msgstr "Naključni operandi"
 
 #: server/activities/algebra_div/ActivityEditor.qml:24
 #: server/activities/algebra_div/ActivityEditor.qml:29
-#, fuzzy
-#| msgctxt "server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:29"
-#| msgid "Sublevels"
 msgctxt "ActivityEditor|"
 msgid "Sublevels"
 msgstr "Podravni"
 
 #: server/activities/algebra_div/ActivityEditor.qml:25
-#, fuzzy
-#| msgctxt "server/activities/algebra_by/AlgebraEditor.qml:35"
-#| msgid "Minimum operand value"
 msgctxt "ActivityEditor|"
 msgid "Minimum operand value"
 msgstr "Najmanjša vrednost operanda"
 
 #: server/activities/algebra_div/ActivityEditor.qml:26
-#, fuzzy
-#| msgctxt "server/activities/algebra_by/AlgebraEditor.qml:36"
-#| msgid "Maximum operand value"
 msgctxt "ActivityEditor|"
 msgid "Maximum operand value"
 msgstr "Najvišja vrednost operanda"
 
 #: server/activities/algebra_div/ActivityEditor.qml:27
-#, fuzzy
-#| msgctxt "server/activities/algebra_by/AlgebraEditor.qml:37"
-#| msgid "Result value limit"
 msgctxt "ActivityEditor|"
 msgid "Result value limit"
 msgstr "Omejitev vrednosti rezultata"
 
 #: server/activities/algebra_div/ActivityEditor.qml:28
-#, fuzzy
-#| msgctxt "server/activities/algebra_by/AlgebraEditor.qml:38"
-#| msgid "Shuffle"
 msgctxt "ActivityEditor|"
 msgid "Shuffle"
 msgstr "Premešaj"
 
 #: server/activities/algebra_div/ActivityEditor.qml:34
-#, fuzzy
-#| msgctxt "server/activities/algebra_by/AlgebraEditor.qml:44"
-#| msgid "First operand"
 msgctxt "ActivityEditor|"
 msgid "First operand"
 msgstr "Prvi operand"
 
 #: server/activities/algebra_div/ActivityEditor.qml:35
-#, fuzzy
-#| msgctxt "server/activities/algebra_by/AlgebraEditor.qml:45"
-#| msgid "Second operand"
 msgctxt "ActivityEditor|"
 msgid "Second operand"
 msgstr "Drugi operand"
 
 #: server/activities/algebra_minus/ActivityEditor.qml:16
-#, fuzzy
-#| msgid ""
-#| "If \"Random operands\" is not selected, for each sublevel you must make "
-#| "sure that the \"First operand\" is greater than the \"Second operand\"."
 msgctxt "ActivityEditor|"
 msgid ""
 "If \"Random operands\" is not selected, for each sublevel you must make sure "
@@ -458,11 +306,6 @@ msgstr ""
 "zagotoviti, da je »Prvi operand« večji od »Drugega operanda«."
 
 #: server/activities/binary_bulb/ActivityEditor.qml:14
-#, fuzzy
-#| msgid ""
-#| "If \"Random numbers\" is not selected, \"Numbers to find\" must contain a "
-#| "list of integer numbers. Each number must be between 0 and the maximum "
-#| "number which can be represented with the given \"Bulb count\"."
 msgctxt "ActivityEditor|"
 msgid ""
 "If \"Random numbers\" is not selected, \"Numbers to find\" must contain a "
@@ -474,18 +317,11 @@ msgstr ""
 "največjim številom, ki ga je mogoče predstaviti z danim »Število žarnic«."
 
 #: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:28
-#, fuzzy
-#| msgctxt "server/activities/binary_bulb/BinaryBulbDataDisplay.qml:28"
-#| msgid "Expected:"
 msgctxt "BinaryBulbDataDisplay|"
 msgid "Expected:"
 msgstr "Pričakovano:"
 
 #: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:34
-#, fuzzy
-#| msgctxt ""
-#| "server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:60"
-#| msgid "Answer:"
 msgctxt "BinaryBulbDataDisplay|"
 msgid "Answer:"
 msgstr "Odgovor:"
@@ -493,82 +329,59 @@ msgstr "Odgovor:"
 #. %1 is the numerical value, %2 is the binary value. Example: "5 (101)"
 #: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:46
 #: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:55
-#, fuzzy, qt-format
-#| msgid "%1 (%2)"
+#, qt-format
 msgctxt "BinaryBulbDataDisplay|"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:28
-#, fuzzy
-#| msgid "Random numbers"
 msgctxt "BinaryBulbEditor|"
 msgid "Random numbers"
 msgstr "Naključna števila"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:29
-#, fuzzy
-#| msgctxt "server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:29"
-#| msgid "Sublevels"
 msgctxt "BinaryBulbEditor|"
 msgid "Sublevels"
 msgstr "Podravni"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:30
-#, fuzzy
-#| msgid "Numbers to find"
 msgctxt "BinaryBulbEditor|"
 msgid "Numbers to find"
 msgstr "Številke za iskanje"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:31
-#, fuzzy
-#| msgid "Shuffle questions"
 msgctxt "BinaryBulbEditor|"
 msgid "Shuffle questions"
 msgstr "Premešaj vprašanja"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:32
-#, fuzzy
-#| msgid "Bulb count"
 msgctxt "BinaryBulbEditor|"
 msgid "Bulb count"
 msgstr "Število žarnic"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:33
-#, fuzzy
-#| msgid "Display the current result"
 msgctxt "BinaryBulbEditor|"
 msgid "Display the current result"
 msgstr "Prikaži trenutni rezultat"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:34
-#, fuzzy
-#| msgid "Display the bulb values"
 msgctxt "BinaryBulbEditor|"
 msgid "Display the bulb values"
 msgstr "Prikaži vrednosti žarnic"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:87
-#, fuzzy
-#| msgctxt "server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:98"
-#| msgid "Dataset is empty."
 msgctxt "BinaryBulbEditor|"
 msgid "Dataset is empty."
 msgstr "Nabor podatkov je prazen."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:101
-#, fuzzy, qt-format
-#| msgid "\"Numbers to find\" for level %1 must not be empty."
+#, qt-format
 msgctxt "BinaryBulbEditor|"
 msgid "\"Numbers to find\" for level %1 must not be empty."
 msgstr "»Števila za iskanje« za raven %1 ne smejo biti prazna."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:115
-#, fuzzy, qt-format
-#| msgid ""
-#| "These values are invalid for level %1: %2. The values must be integer "
-#| "numbers between 0 and %3."
+#, qt-format
 msgctxt "BinaryBulbEditor|"
 msgid ""
 "These values are invalid for level %1: %2. The values must be integer "
@@ -578,258 +391,184 @@ msgstr ""
 "števila med 0 in %3."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:119
-#, fuzzy, qt-format
-#| msgctxt "server/activities/binary_bulb/BinaryBulbEditor.qml:119"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "BinaryBulbEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Naslednje napake je treba odpraviti:<ul>%1</ul>"
 
 #: server/activities/clockgame/ClockGameDataDisplay.qml:30
-#, fuzzy
-#| msgctxt "server/activities/binary_bulb/BinaryBulbDataDisplay.qml:28"
-#| msgid "Expected:"
 msgctxt "ClockGameDataDisplay|"
 msgid "Expected:"
 msgstr "Pričakovano:"
 
 #: server/activities/clockgame/ClockGameDataDisplay.qml:36
-#, fuzzy
-#| msgctxt ""
-#| "server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:60"
-#| msgid "Answer:"
 msgctxt "ClockGameDataDisplay|"
 msgid "Answer:"
 msgstr "Odgovor:"
 
 #: server/activities/clockgame/ClockgameEditor.qml:27
-#, fuzzy
-#| msgid "Exercise count"
 msgctxt "ClockgameEditor|"
 msgid "Exercise count"
 msgstr "Število vaj"
 
 #: server/activities/clockgame/ClockgameEditor.qml:28
-#, fuzzy
-#| msgid "Find minutes"
 msgctxt "ClockgameEditor|"
 msgid "Find minutes"
 msgstr "Poišči minute"
 
 #: server/activities/clockgame/ClockgameEditor.qml:29
-#, fuzzy
-#| msgid "Find seconds"
 msgctxt "ClockgameEditor|"
 msgid "Find seconds"
 msgstr "Poišči sekunde"
 
 #: server/activities/clockgame/ClockgameEditor.qml:30
-#, fuzzy
-#| msgid "Display hours numbers"
 msgctxt "ClockgameEditor|"
 msgid "Display hours numbers"
 msgstr "Prikaži število ur"
 
 #: server/activities/clockgame/ClockgameEditor.qml:31
-#, fuzzy
-#| msgid "Display hours marks"
 msgctxt "ClockgameEditor|"
 msgid "Display hours marks"
 msgstr "Prikaži oznake ur"
 
 #: server/activities/clockgame/ClockgameEditor.qml:32
-#, fuzzy
-#| msgid "Grey/white background between each hour"
 msgctxt "ClockgameEditor|"
 msgid "Grey/white background between each hour"
 msgstr "Sivo/belo ozadje med posameznimi urami"
 
 #: server/activities/clockgame/ClockgameEditor.qml:33
-#, fuzzy
-#| msgid "Display minutes numbers"
 msgctxt "ClockgameEditor|"
 msgid "Display minutes numbers"
 msgstr "Prikaži število minut"
 
 #: server/activities/clockgame/ClockgameEditor.qml:34
-#, fuzzy
-#| msgid "Hide the Hint button in the bar (which gives the current time)"
 msgctxt "ClockgameEditor|"
 msgid "Hide the Hint button in the bar (which gives the current time)"
 msgstr "Skrij gumb Namig v vrstici (ki prikazuje trenutni čas)"
 
 #: server/activities/clockgame/ClockgameEditor.qml:35
-#, fuzzy
-#| msgid "Fixed hour"
 msgctxt "ClockgameEditor|"
 msgid "Fixed hour"
-msgstr "Fiksna ura"
+msgstr "Popravljena ura"
 
 #: server/activities/clockgame/ClockgameEditor.qml:36
 #: server/activities/clockgame/ClockgameEditor.qml:38
 #: server/activities/clockgame/ClockgameEditor.qml:40
-#, fuzzy
-#| msgid "Value"
 msgctxt "ClockgameEditor|"
 msgid "Value"
 msgstr "Vrednost"
 
 #: server/activities/clockgame/ClockgameEditor.qml:37
-#, fuzzy
-#| msgid "Fixed minutes"
 msgctxt "ClockgameEditor|"
 msgid "Fixed minutes"
-msgstr "Fiksne minute"
+msgstr "Popravljene minute"
 
 #: server/activities/clockgame/ClockgameEditor.qml:39
-#, fuzzy
-#| msgid "Fixed seconds"
 msgctxt "ClockgameEditor|"
 msgid "Fixed seconds"
-msgstr "Fiksne sekunde"
+msgstr "Popravljene sekunde"
 
 #: server/activities/comparator/ComparatorDataDisplay.qml:30
-#, fuzzy
-#| msgid "Result:"
 msgctxt "ComparatorDataDisplay|"
 msgid "Result:"
 msgstr "Rezultat:"
 
 #: server/activities/comparator/ComparatorEditor.qml:29
-#, fuzzy
-#| msgctxt "server/activities/algebra_by/AlgebraEditor.qml:38"
-#| msgid "Shuffle"
 msgctxt "ComparatorEditor|"
 msgid "Shuffle"
 msgstr "Premešaj"
 
 #: server/activities/comparator/ComparatorEditor.qml:30
-#, fuzzy
-#| msgctxt "server/activities/comparator/ComparatorEditor.qml:30"
-#| msgid "Questions"
 msgctxt "ComparatorEditor|"
 msgid "Questions"
 msgstr "Vprašanja"
 
 #: server/activities/comparator/ComparatorEditor.qml:36
-#, fuzzy
-#| msgid "Left number"
 msgctxt "ComparatorEditor|"
 msgid "Left number"
 msgstr "Levo število"
 
 #: server/activities/comparator/ComparatorEditor.qml:37
-#, fuzzy
-#| msgid "Right number"
 msgctxt "ComparatorEditor|"
 msgid "Right number"
-msgstr "Desna številka"
+msgstr "Desna število"
 
 #: server/activities/comparator/ComparatorEditor.qml:109
-#, fuzzy
-#| msgctxt "server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:98"
-#| msgid "Dataset is empty."
 msgctxt "ComparatorEditor|"
 msgid "Dataset is empty."
 msgstr "Nabor podatkov je prazen."
 
 #: server/activities/comparator/ComparatorEditor.qml:119
-#, fuzzy, qt-format
-#| msgctxt "server/activities/comparator/ComparatorEditor.qml:119"
-#| msgid "Level %1 must not be empty."
+#, qt-format
 msgctxt "ComparatorEditor|"
 msgid "Level %1 must not be empty."
 msgstr "Raven %1 ne sme biti prazna."
 
 #: server/activities/comparator/ComparatorEditor.qml:126
-#, fuzzy, qt-format
-#| msgid "\"Left number\" in Question %1 of Level %2 must contain a number."
+#, qt-format
 msgctxt "ComparatorEditor|"
 msgid "\"Left number\" in Question %1 of Level %2 must contain a number."
 msgstr "»Levo število« v vprašanju %1 ravni %2 mora vsebovati število."
 
 #: server/activities/comparator/ComparatorEditor.qml:130
-#, fuzzy, qt-format
-#| msgid "\"Right number\" in Question %1 of Level %2 must contain a number."
+#, qt-format
 msgctxt "ComparatorEditor|"
 msgid "\"Right number\" in Question %1 of Level %2 must contain a number."
 msgstr "»Desno število« v vprašanju %1 ravni %2 mora vsebovati število."
 
 #: server/activities/comparator/ComparatorEditor.qml:136
-#, fuzzy, qt-format
-#| msgctxt "server/activities/binary_bulb/BinaryBulbEditor.qml:119"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "ComparatorEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Naslednje napake je treba odpraviti:<ul>%1</ul>"
 
 #: server/activities/DailyReport.qml:33
-#, fuzzy
-#| msgctxt "server/activities/DailyReport.qml:33"
-#| msgid "All groups"
 msgctxt "DailyReport|"
 msgid "All groups"
 msgstr "Vse skupine"
 
 #. Group name first, then Date range, with a space between them. Example: "Group Name 01/07/2025-08/07/2025"
 #: server/activities/DailyReport.qml:126
-#, fuzzy, qt-format
-#| msgid "%1 %2"
+#, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %2"
 msgstr "%1 %2"
 
 #: server/activities/DailyReport.qml:130
-#, fuzzy
-#| msgctxt "server/activities/DailyReport.qml:130"
-#| msgid "Calendar"
 msgctxt "DailyReport|"
 msgid "Calendar"
 msgstr "Koledar"
 
 #: server/activities/DailyReport.qml:185
-#, fuzzy
-#| msgctxt "server/activities/DailyReport.qml:185"
-#| msgid "Count"
 msgctxt "DailyReport|"
 msgid "Count"
 msgstr "Število"
 
 #: server/activities/DailyReport.qml:195
-#, fuzzy
-#| msgid "Time"
 msgctxt "DailyReport|"
 msgid "Time"
 msgstr "Čas"
 
 #: server/activities/DailyReport.qml:205
-#, fuzzy
-#| msgid "Ratio"
 msgctxt "DailyReport|"
 msgid "Ratio"
 msgstr "Razmerje"
 
 #. Number of result lines
 #: server/activities/DailyReport.qml:217
-#, fuzzy, qt-format
-#| msgctxt "server/activities/DailyReport.qml:217"
-#| msgid "Lines: %1"
+#, qt-format
 msgctxt "DailyReport|"
 msgid "Lines: %1"
 msgstr "Vrste: %1"
 
 #. Success ratio, example: "50 %"
 #: server/activities/DailyReport.qml:316
-#, fuzzy, qt-format
-#| msgid "%1 %"
+#, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %"
 msgstr "%1 %"
 
 #: server/activities/fractions_create/ActivityEditor.qml:14
-#, fuzzy
-#| msgid ""
-#| "\"Instruction\" must contain some text telling the fraction to represent."
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Instruction\" must contain some text telling the fraction to represent."
@@ -837,237 +576,158 @@ msgstr ""
 "»Navodilo« mora vsebovati besedilo, ki navaja, da naj ulomek predstavlja."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:29
-#, fuzzy
-#| msgctxt "server/activities/algebra_by/AlgebraEditor.qml:38"
-#| msgid "Shuffle"
 msgctxt "FractionsCreateEditor|"
 msgid "Shuffle"
 msgstr "Premešaj"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:30
-#, fuzzy
-#| msgctxt "server/activities/comparator/ComparatorEditor.qml:30"
-#| msgid "Questions"
 msgctxt "FractionsCreateEditor|"
 msgid "Questions"
 msgstr "Vprašanja"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:36
-#, fuzzy
-#| msgctxt "server/activities/fractions_create/FractionsCreateEditor.qml:36"
-#| msgid "Numerator"
 msgctxt "FractionsCreateEditor|"
 msgid "Numerator"
 msgstr "Števec"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:37
-#, fuzzy
-#| msgctxt "server/activities/fractions_create/FractionsCreateEditor.qml:37"
-#| msgid "Denominator"
 msgctxt "FractionsCreateEditor|"
 msgid "Denominator"
 msgstr "Imenovalec"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:38
-#, fuzzy
-#| msgid "Instruction"
 msgctxt "FractionsCreateEditor|"
 msgid "Instruction"
 msgstr "Navodilo"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:130
-#, fuzzy
-#| msgctxt "server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:98"
-#| msgid "Dataset is empty."
 msgctxt "FractionsCreateEditor|"
 msgid "Dataset is empty."
 msgstr "Nabor podatkov je prazen."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:140
-#, fuzzy, qt-format
-#| msgctxt "server/activities/comparator/ComparatorEditor.qml:119"
-#| msgid "Level %1 must not be empty."
+#, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "Level %1 must not be empty."
 msgstr "Raven %1 ne sme biti prazna."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:146
-#, fuzzy, qt-format
-#| msgid "\"Instruction\" of Question %1 from Level %2 must not be empty."
+#, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "\"Instruction\" of Question %1 from Level %2 must not be empty."
 msgstr "\"Navodilo\" vprašanja %1 z ravni %2 ne sme biti prazno."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:152
-#, fuzzy, qt-format
-#| msgctxt "server/activities/binary_bulb/BinaryBulbEditor.qml:119"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "Naslednje napake je treba odpraviti:<ul>%1</ul>"
+msgstr "Naslednje napake je treba popraviti:<ul>%1</ul>"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:160
-#, fuzzy
-#| msgctxt "server/activities/fractions_create/FractionsCreateEditor.qml:160"
-#| msgid "Rectangle"
 msgctxt "FractionsCreateEditor|"
 msgid "Rectangle"
 msgstr "Pravokotnik"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:161
-#, fuzzy
-#| msgctxt "server/activities/fractions_create/FractionsCreateEditor.qml:161"
-#| msgid "Circle"
 msgctxt "FractionsCreateEditor|"
 msgid "Circle"
 msgstr "Krog"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:164
-#, fuzzy
-#| msgctxt "server/activities/fractions_create/FractionsCreateEditor.qml:164"
-#| msgid "Chart Type"
 msgctxt "FractionsCreateEditor|"
 msgid "Chart Type"
 msgstr "Vrsta grafikona"
 
 #: server/activities/fractions_find/FractionsFindDataDisplay.qml:26
-#, fuzzy
-#| msgctxt "server/activities/binary_bulb/BinaryBulbDataDisplay.qml:28"
-#| msgid "Expected:"
 msgctxt "FractionsFindDataDisplay|"
 msgid "Expected:"
 msgstr "Pričakovano:"
 
 #: server/activities/fractions_find/FractionsFindDataDisplay.qml:60
-#, fuzzy
-#| msgctxt ""
-#| "server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:60"
-#| msgid "Answer:"
 msgctxt "FractionsFindDataDisplay|"
 msgid "Answer:"
 msgstr "Odgovor:"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:29
-#, fuzzy
-#| msgctxt "server/activities/algebra_by/AlgebraEditor.qml:38"
-#| msgid "Shuffle"
 msgctxt "FractionsFindEditor|"
 msgid "Shuffle"
 msgstr "Premešaj"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:30
-#, fuzzy
-#| msgctxt "server/activities/comparator/ComparatorEditor.qml:30"
-#| msgid "Questions"
 msgctxt "FractionsFindEditor|"
 msgid "Questions"
 msgstr "Vprašanja"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:36
-#, fuzzy
-#| msgid "Static numerator"
 msgctxt "FractionsFindEditor|"
 msgid "Static numerator"
 msgstr "Statični števec"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:37
-#, fuzzy
-#| msgid "Static denominator"
 msgctxt "FractionsFindEditor|"
 msgid "Static denominator"
 msgstr "Statični imenovalec"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:38
-#, fuzzy
-#| msgctxt "server/activities/fractions_create/FractionsCreateEditor.qml:36"
-#| msgid "Numerator"
 msgctxt "FractionsFindEditor|"
 msgid "Numerator"
 msgstr "Števec"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:39
-#, fuzzy
-#| msgctxt "server/activities/fractions_create/FractionsCreateEditor.qml:37"
-#| msgid "Denominator"
 msgctxt "FractionsFindEditor|"
 msgid "Denominator"
 msgstr "Imenovalec"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:40
-#, fuzzy
-#| msgid "Maximum of units"
 msgctxt "FractionsFindEditor|"
 msgid "Maximum of units"
 msgstr "Največ enot"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:41
-#, fuzzy
-#| msgid "Random fraction"
 msgctxt "FractionsFindEditor|"
 msgid "Random fraction"
 msgstr "Naključni ulomek"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:159
-#, fuzzy
-#| msgctxt "server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:98"
-#| msgid "Dataset is empty."
 msgctxt "FractionsFindEditor|"
 msgid "Dataset is empty."
 msgstr "Nabor podatkov je prazen."
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:169
-#, fuzzy, qt-format
-#| msgctxt "server/activities/comparator/ComparatorEditor.qml:119"
-#| msgid "Level %1 must not be empty."
+#, qt-format
 msgctxt "FractionsFindEditor|"
 msgid "Level %1 must not be empty."
 msgstr "Raven %1 ne sme biti prazna."
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:173
-#, fuzzy, qt-format
-#| msgctxt "server/activities/binary_bulb/BinaryBulbEditor.qml:119"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "FractionsFindEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Naslednje napake je treba odpraviti:<ul>%1</ul>"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:181
-#, fuzzy
-#| msgctxt "server/activities/fractions_create/FractionsCreateEditor.qml:160"
-#| msgid "Rectangle"
 msgctxt "FractionsFindEditor|"
 msgid "Rectangle"
 msgstr "Pravokotnik"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:182
-#, fuzzy
-#| msgctxt "server/activities/fractions_create/FractionsCreateEditor.qml:161"
-#| msgid "Circle"
 msgctxt "FractionsFindEditor|"
 msgid "Circle"
 msgstr "Krog"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:185
-#, fuzzy
-#| msgctxt "server/activities/fractions_create/FractionsCreateEditor.qml:164"
-#| msgid "Chart Type"
 msgctxt "FractionsFindEditor|"
 msgid "Chart Type"
 msgstr "Vrsta grafikona"
 
 #. %1 is number of hints displayed. Example: "Hints: 1"
 #: server/activities/guess24/Guess24DataDisplay.qml:79
-#, fuzzy, qt-format
-#| msgid "Hints: %1"
+#, qt-format
 msgctxt "Guess24DataDisplay|"
 msgid "Hints: %1"
 msgstr "Namigi: %1"
 
 #: server/activities/learn_additions/ActivityEditor.qml:16
-#, fuzzy
-#| msgid ""
-#| "\"Additions\" must contain a list of additions which results are between "
-#| "0 and 9."
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Additions\" must contain a list of additions which results are between 0 "
@@ -1078,9 +738,6 @@ msgstr ""
 
 #: server/activities/learn_additions/ActivityEditor.qml:18
 #: server/activities/learn_subtractions/ActivityEditor.qml:18
-#, fuzzy
-#| msgid ""
-#| "\"Number of circles\" can not be smaller than the largest result to find."
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Number of circles\" can not be smaller than the largest result to find."
@@ -1089,198 +746,130 @@ msgstr ""
 "treba najti."
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:28
-#, fuzzy
-#| msgctxt "server/activities/algebra_by/AlgebraEditor.qml:38"
-#| msgid "Shuffle"
 msgctxt "LearnDecimalsEditor|"
 msgid "Shuffle"
 msgstr "Premešaj"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:29
-#, fuzzy
-#| msgctxt "server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:29"
-#| msgid "Sublevels"
 msgctxt "LearnDecimalsEditor|"
 msgid "Sublevels"
 msgstr "Podravni"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:39
-#, fuzzy
-#| msgctxt "server/activities/learn_decimals/LearnDecimalsEditor.qml:39"
-#| msgid "Fixed Number"
 msgctxt "LearnDecimalsEditor|"
 msgid "Fixed Number"
 msgstr "Fiksno število"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:40
-#, fuzzy
-#| msgctxt "server/activities/learn_decimals/LearnDecimalsEditor.qml:40"
-#| msgid "Minimum Value"
 msgctxt "LearnDecimalsEditor|"
 msgid "Minimum Value"
 msgstr "Najmanjša vrednost"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:41
-#, fuzzy
-#| msgctxt "server/activities/learn_decimals/LearnDecimalsEditor.qml:41"
-#| msgid "Maximum Value"
 msgctxt "LearnDecimalsEditor|"
 msgid "Maximum Value"
 msgstr "Najvišja vrednost"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:140
-#, fuzzy
-#| msgctxt "server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:98"
-#| msgid "Dataset is empty."
 msgctxt "LearnDecimalsEditor|"
 msgid "Dataset is empty."
 msgstr "Nabor podatkov je prazen."
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:150
-#, fuzzy, qt-format
-#| msgctxt "server/activities/comparator/ComparatorEditor.qml:119"
-#| msgid "Level %1 must not be empty."
+#, qt-format
 msgctxt "LearnDecimalsEditor|"
 msgid "Level %1 must not be empty."
 msgstr "Raven %1 ne sme biti prazna."
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:154
-#, fuzzy, qt-format
-#| msgctxt "server/activities/binary_bulb/BinaryBulbEditor.qml:119"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "LearnDecimalsEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Naslednje napake je treba odpraviti:<ul>%1</ul>"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:162
-#, fuzzy
-#| msgctxt "server/activities/learn_decimals/LearnDecimalsEditor.qml:162"
-#| msgid "Random"
 msgctxt "LearnDecimalsEditor|"
 msgid "Random"
 msgstr "Naključno"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:163
-#, fuzzy
-#| msgctxt "server/activities/learn_decimals/LearnDecimalsEditor.qml:163"
-#| msgid "Fixed"
 msgctxt "LearnDecimalsEditor|"
 msgid "Fixed"
 msgstr "Fiksno"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:168
-#, fuzzy
-#| msgctxt "server/activities/learn_decimals/LearnDecimalsEditor.qml:168"
-#| msgid "Mode"
 msgctxt "LearnDecimalsEditor|"
 msgid "Mode"
 msgstr "Način"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:29
-#, fuzzy
-#| msgctxt "server/activities/algebra_by/AlgebraEditor.qml:38"
-#| msgid "Shuffle"
 msgctxt "DecimalAdditionEditor|"
 msgid "Shuffle"
 msgstr "Premešaj"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:30
-#, fuzzy
-#| msgctxt "server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:29"
-#| msgid "Sublevels"
 msgctxt "DecimalAdditionEditor|"
 msgid "Sublevels"
 msgstr "Podravni"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:41
-#, fuzzy
-#| msgid "First Number"
 msgctxt "DecimalAdditionEditor|"
 msgid "First Number"
 msgstr "Prvo število"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:42
-#, fuzzy
-#| msgid "Second Number"
 msgctxt "DecimalAdditionEditor|"
 msgid "Second Number"
 msgstr "Drugo število"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:43
-#, fuzzy
-#| msgctxt "server/activities/learn_decimals/LearnDecimalsEditor.qml:40"
-#| msgid "Minimum Value"
 msgctxt "DecimalAdditionEditor|"
 msgid "Minimum Value"
 msgstr "Najmanjša vrednost"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:44
-#, fuzzy
-#| msgctxt "server/activities/learn_decimals/LearnDecimalsEditor.qml:41"
-#| msgid "Maximum Value"
 msgctxt "DecimalAdditionEditor|"
 msgid "Maximum Value"
 msgstr "Najvišja vrednost"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:182
-#, fuzzy
-#| msgctxt "server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:98"
-#| msgid "Dataset is empty."
 msgctxt "DecimalAdditionEditor|"
 msgid "Dataset is empty."
 msgstr "Nabor podatkov je prazen."
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:192
-#, fuzzy, qt-format
-#| msgctxt "server/activities/comparator/ComparatorEditor.qml:119"
-#| msgid "Level %1 must not be empty."
+#, qt-format
 msgctxt "DecimalAdditionEditor|"
 msgid "Level %1 must not be empty."
 msgstr "Raven %1 ne sme biti prazna."
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:196
-#, fuzzy, qt-format
-#| msgctxt "server/activities/binary_bulb/BinaryBulbEditor.qml:119"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "DecimalAdditionEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Naslednje napake je treba odpraviti:<ul>%1</ul>"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:204
-#, fuzzy
-#| msgctxt "server/activities/learn_decimals/LearnDecimalsEditor.qml:162"
-#| msgid "Random"
 msgctxt "DecimalAdditionEditor|"
 msgid "Random"
 msgstr "Naključno"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:205
-#, fuzzy
-#| msgctxt "server/activities/learn_decimals/LearnDecimalsEditor.qml:163"
-#| msgid "Fixed"
 msgctxt "DecimalAdditionEditor|"
 msgid "Fixed"
 msgstr "Fiksno"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:210
-#, fuzzy
-#| msgctxt "server/activities/learn_decimals/LearnDecimalsEditor.qml:168"
-#| msgid "Mode"
 msgctxt "DecimalAdditionEditor|"
 msgid "Mode"
 msgstr "Način"
 
 #: server/activities/learn_digits/ActivityEditor.qml:15
-#, fuzzy
-#| msgid "\"Numbers\" must contain a list of numbers between 0 and 9."
 msgctxt "ActivityEditor|"
 msgid "\"Numbers\" must contain a list of numbers between 0 and 9."
 msgstr "\"Številke\" morajo vsebovati seznam števil med 0 in 9."
 
 #: server/activities/learn_digits/ActivityEditor.qml:17
-#, fuzzy
-#| msgid ""
-#| "\"Number of circles\" can not be smaller than the largest number to find."
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Number of circles\" can not be smaller than the largest number to find."
@@ -1290,49 +879,34 @@ msgstr ""
 
 #. %1 is an operation, %2 the result. Example: "2 x 5 = 10"
 #: server/activities/learn_digits/LearnDigitsDataDisplay.qml:24
-#, fuzzy, qt-format
-#| msgctxt "server/activities/algebra_by/AlgebraDataDisplay.qml:22"
-#| msgid "%1 = %2"
+#, qt-format
 msgctxt "LearnDigitsDataDisplay|"
 msgid "%1 = %2"
 msgstr "%1 = %2"
 
 #. %1 is the answer. Example: "Answer: 10"
 #: server/activities/learn_digits/LearnDigitsDataDisplay.qml:27
-#, fuzzy, qt-format
-#| msgctxt "server/activities/algebra_by/AlgebraDataDisplay.qml:24"
-#| msgid "Answer: %1"
+#, qt-format
 msgctxt "LearnDigitsDataDisplay|"
 msgid "Answer: %1"
 msgstr "Odgovor: %1"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:32
-#, fuzzy
-#| msgid "Number of circles"
 msgctxt "LearnDigitsEditor|"
 msgid "Number of circles"
 msgstr "Število krogov"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:33
-#, fuzzy
-#| msgid "Random order"
 msgctxt "LearnDigitsEditor|"
 msgid "Random order"
 msgstr "Naključni vrstni red"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:99
-#, fuzzy
-#| msgctxt "server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:98"
-#| msgid "Dataset is empty."
 msgctxt "LearnDigitsEditor|"
 msgid "Dataset is empty."
 msgstr "Nabor podatkov je prazen."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:101
-#, fuzzy
-#| msgid ""
-#| "\"Numbers\" must only contain integer numbers between 0 and 9, and must "
-#| "not be empty."
 msgctxt "LearnDigitsEditor|"
 msgid ""
 "\"Numbers\" must only contain integer numbers between 0 and 9, and must not "
@@ -1342,10 +916,6 @@ msgstr ""
 "prazne."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:103
-#, fuzzy
-#| msgid ""
-#| "\"Additions\" must only contain additions which results are integer "
-#| "numbers between 0 and 9, and must not be empty."
 msgctxt "LearnDigitsEditor|"
 msgid ""
 "\"Additions\" must only contain additions which results are integer numbers "
@@ -1355,10 +925,6 @@ msgstr ""
 "števila med 0 in 9, in ne smejo biti prazne."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:105
-#, fuzzy
-#| msgid ""
-#| "\"Subtractions\" must only contain subtractions which results are integer "
-#| "numbers between 0 and 9, and must not be empty."
 msgctxt "LearnDigitsEditor|"
 msgid ""
 "\"Subtractions\" must only contain subtractions which results are integer "
@@ -1368,55 +934,36 @@ msgstr ""
 "števila med 0 in 9, in ne smejo biti prazne."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:161
-#, fuzzy
-#| msgid "Numbers"
 msgctxt "LearnDigitsEditor|"
 msgid "Numbers"
 msgstr "Številke"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:163
-#, fuzzy
-#| msgid "Additions"
 msgctxt "LearnDigitsEditor|"
 msgid "Additions"
 msgstr "Seštevanja"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:165
-#, fuzzy
-#| msgid "Subtractions"
 msgctxt "LearnDigitsEditor|"
 msgid "Subtractions"
 msgstr "Odštevanja"
 
 #: server/activities/learn_quantities/ActivityEditor.qml:24
-#, fuzzy
-#| msgctxt "server/activities/learn_decimals/LearnDecimalsEditor.qml:39"
-#| msgid "Fixed Number"
 msgctxt "ActivityEditor|"
 msgid "Fixed Number"
 msgstr "Fiksno število"
 
 #: server/activities/learn_quantities/ActivityEditor.qml:25
-#, fuzzy
-#| msgctxt "server/activities/learn_decimals/LearnDecimalsEditor.qml:40"
-#| msgid "Minimum Value"
 msgctxt "ActivityEditor|"
 msgid "Minimum Value"
 msgstr "Najmanjša vrednost"
 
 #: server/activities/learn_quantities/ActivityEditor.qml:26
-#, fuzzy
-#| msgctxt "server/activities/learn_decimals/LearnDecimalsEditor.qml:41"
-#| msgid "Maximum Value"
 msgctxt "ActivityEditor|"
 msgid "Maximum Value"
 msgstr "Najvišja vrednost"
 
 #: server/activities/learn_subtractions/ActivityEditor.qml:16
-#, fuzzy
-#| msgid ""
-#| "\"Subtractions\" must contain a list of subtractions which results are "
-#| "between 0 and 9."
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Subtractions\" must contain a list of subtractions which results are "
@@ -1426,47 +973,35 @@ msgstr ""
 "in 9."
 
 #: server/activities/LineReport.qml:65
-#, fuzzy
-#| msgid "Back"
 msgctxt "LineReport|"
 msgid "Back"
 msgstr "Nazaj"
 
 #: server/activities/LineReport.qml:71
-#, fuzzy
-#| msgid "Refresh"
 msgctxt "LineReport|"
 msgid "Refresh"
 msgstr "Osveži"
 
 #: server/activities/LineReport.qml:77
-#, fuzzy, qt-format
-#| msgctxt "server/activities/DailyReport.qml:217"
-#| msgid "Lines: %1"
+#, qt-format
 msgctxt "LineReport|"
 msgid "Lines: %1"
 msgstr "Vrste: %1"
 
 #: server/activities/LineReport.qml:227
-#, fuzzy, qt-format
-#| msgid "Level: <b>%1</b>"
+#, qt-format
 msgctxt "LineReport|"
 msgid "Level: <b>%1</b>"
 msgstr "Raven: <b>%1</b>"
 
 #. Result duration in seconds. Example: "Duration: 25s"
 #: server/activities/LineReport.qml:243 server/activities/LineReport.qml:253
-#, fuzzy, qt-format
-#| msgid "Duration: %1s"
+#, qt-format
 msgctxt "LineReport|"
 msgid "Duration: %1s"
 msgstr "Trajanje: %1s"
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:15
-#, fuzzy
-#| msgid ""
-#| "In \"Single answer\" mode, users can select only one answer. In "
-#| "\"Multiple answers\" mode, they can select multiple answers."
 msgctxt "ActivityEditor|"
 msgid ""
 "In \"Single answer\" mode, users can select only one answer. In \"Multiple "
@@ -1476,10 +1011,6 @@ msgstr ""
 "»Več odgovorov« lahko izberejo več odgovorov."
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:17
-#, fuzzy
-#| msgid ""
-#| "All entries in the \"Correct answers\" list must also be present in the "
-#| "\"Answers\" list."
 msgctxt "ActivityEditor|"
 msgid ""
 "All entries in the \"Correct answers\" list must also be present in the "
@@ -1489,11 +1020,6 @@ msgstr ""
 "seznamu »Odgovori«."
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:19
-#, fuzzy
-#| msgid ""
-#| "\"Correct answer text\" and \"Wrong answer text\" are optional messages "
-#| "displayed after users validate their answer. You can leave those empty if "
-#| "you want."
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Correct answer text\" and \"Wrong answer text\" are optional messages "
@@ -1505,136 +1031,96 @@ msgstr ""
 "pustite prazni, če želite."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:27
-#, fuzzy
-#| msgid "Question:"
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Question:"
 msgstr "Vprašanje:"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:33
-#, fuzzy
-#| msgctxt ""
-#| "server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:60"
-#| msgid "Answer:"
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Answer:"
 msgstr "Odgovor:"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:39
-#, fuzzy
-#| msgctxt "server/activities/binary_bulb/BinaryBulbDataDisplay.qml:28"
-#| msgid "Expected:"
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Expected:"
 msgstr "Pričakovano:"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:45
-#, fuzzy
-#| msgid "Proposed:"
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Proposed:"
 msgstr "Predlagano:"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:29
-#, fuzzy
-#| msgctxt "server/activities/algebra_by/AlgebraEditor.qml:38"
-#| msgid "Shuffle"
 msgctxt "MultipleChoiceEditor|"
 msgid "Shuffle"
 msgstr "Premešaj"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:30
-#, fuzzy
-#| msgctxt "server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:29"
-#| msgid "Sublevels"
 msgctxt "MultipleChoiceEditor|"
 msgid "Sublevels"
 msgstr "Podravni"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:36
-#, fuzzy
-#| msgid "Shuffle answers"
 msgctxt "MultipleChoiceEditor|"
 msgid "Shuffle answers"
 msgstr "Premešaj odgovore"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:37
-#, fuzzy
-#| msgid "Question"
 msgctxt "MultipleChoiceEditor|"
 msgid "Question"
 msgstr "Vprašanje"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:38
-#, fuzzy
-#| msgid "Answers"
 msgctxt "MultipleChoiceEditor|"
 msgid "Answers"
 msgstr "Odgovori"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:39
-#, fuzzy
-#| msgid "Correct answers"
 msgctxt "MultipleChoiceEditor|"
 msgid "Correct answers"
 msgstr "Pravilni odgovori"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:40
-#, fuzzy
-#| msgid "Correct answer text"
 msgctxt "MultipleChoiceEditor|"
 msgid "Correct answer text"
 msgstr "Besedilo pravilnega odgovora"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:41
-#, fuzzy
-#| msgid "Wrong answer text"
 msgctxt "MultipleChoiceEditor|"
 msgid "Wrong answer text"
 msgstr "Besedilo napačnega odgovora"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:121
-#, fuzzy
-#| msgctxt "server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:98"
-#| msgid "Dataset is empty."
 msgctxt "MultipleChoiceEditor|"
 msgid "Dataset is empty."
 msgstr "Nabor podatkov je prazen."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:131
-#, fuzzy, qt-format
-#| msgctxt "server/activities/comparator/ComparatorEditor.qml:119"
-#| msgid "Level %1 must not be empty."
+#, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "Level %1 must not be empty."
 msgstr "Raven %1 ne sme biti prazna."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:138
-#, fuzzy, qt-format
-#| msgid "\"Question\" in Sublevel %1 of Level %2 must not be empty."
+#, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Question\" in Sublevel %1 of Level %2 must not be empty."
 msgstr "»Vprašanje« v podravni %1 ravni %2 ne sme biti prazno."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:143
-#, fuzzy, qt-format
-#| msgid "\"Answers\" in Sublevel %1 of Level %2 must not be empty."
+#, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Answers\" in Sublevel %1 of Level %2 must not be empty."
 msgstr "»Odgovori« v podravni %1 ravni %2 ne smejo biti prazni."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:148
-#, fuzzy, qt-format
-#| msgid "\"Correct answers\" in Sublevel %1 of Level %2 must not be empty."
+#, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Correct answers\" in Sublevel %1 of Level %2 must not be empty."
 msgstr "»Pravilni odgovori« v podravni %1 ravni %2 ne smejo biti prazni."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:155
-#, fuzzy, qt-format
-#| msgid ""
-#| "In Sublevel %1 of Level %2, the correct answer \"%3\" is not in the "
-#| "\"Answers\" list."
+#, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid ""
 "In Sublevel %1 of Level %2, the correct answer \"%3\" is not in the \"Answers"
@@ -1643,184 +1129,129 @@ msgstr ""
 "V podravni %1 ravni %2 pravilnega odgovora »%3« ni na seznamu »Odgovorov«."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:163
-#, fuzzy, qt-format
-#| msgctxt "server/activities/binary_bulb/BinaryBulbEditor.qml:119"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Naslednje napake je treba odpraviti:<ul>%1</ul>"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:171
-#, fuzzy
-#| msgid "Single answer"
 msgctxt "MultipleChoiceEditor|"
 msgid "Single answer"
 msgstr "En sam odgovor"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:172
-#, fuzzy
-#| msgid "Multiple answers"
 msgctxt "MultipleChoiceEditor|"
 msgid "Multiple answers"
 msgstr "Več odgovorov"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:177
-#, fuzzy
-#| msgctxt "server/activities/learn_decimals/LearnDecimalsEditor.qml:168"
-#| msgid "Mode"
 msgctxt "MultipleChoiceEditor|"
 msgid "Mode"
 msgstr "Način"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:29
-#, fuzzy
-#| msgctxt "server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:29"
-#| msgid "Sublevels"
 msgctxt "VerticalEditor|"
 msgid "Sublevels"
 msgstr "Podravni"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:31
-#, fuzzy
-#| msgid "Number of digits"
 msgctxt "VerticalEditor|"
 msgid "Number of digits"
 msgstr "Število števk"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:33
-#, fuzzy
-#| msgid "Number of lines"
 msgctxt "VerticalEditor|"
 msgid "Number of lines"
 msgstr "Število vrstic"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:34
-#, fuzzy
-#| msgid "With carry"
 msgctxt "VerticalEditor|"
 msgid "With carry"
 msgstr "S prenosom"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:35
-#, fuzzy
-#| msgid "Already laid"
 msgctxt "VerticalEditor|"
 msgid "Already laid"
 msgstr "Že položeno"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:36
-#, fuzzy
-#| msgid "Write your operation"
 msgctxt "VerticalEditor|"
 msgid "Write your operation"
 msgstr "Zapiši svojo operacijo"
 
 #: server/components/CalendarPane.qml:77
-#, fuzzy
-#| msgctxt "server/activities/DailyReport.qml:130"
-#| msgid "Calendar"
 msgctxt "CalendarPane|"
 msgid "Calendar"
 msgstr "Koledar"
 
 #: server/components/CheckUserEditDelegate.qml:34
-#, fuzzy
-#| msgid "Edit pupil"
 msgctxt "CheckUserEditDelegate|"
 msgid "Edit pupil"
 msgstr "Uredi učenca"
 
 #: server/components/EditorBox.qml:84
-#, fuzzy
-#| msgid "Add"
 msgctxt "EditorBox|"
 msgid "Add"
 msgstr "Dodaj"
 
 #: server/components/EditorBox.qml:95
-#, fuzzy
-#| msgid "Remove"
 msgctxt "EditorBox|"
 msgid "Remove"
 msgstr "Odstrani"
 
 #: server/components/EditorBox.qml:107
-#, fuzzy
-#| msgid "Move up"
 msgctxt "EditorBox|"
 msgid "Move up"
 msgstr "Premakni gor"
 
 #: server/components/EditorBox.qml:118
-#, fuzzy
-#| msgid "Move down"
 msgctxt "EditorBox|"
 msgid "Move down"
 msgstr "Premakni dol"
 
 #: server/components/FieldEdit.qml:318
-#, fuzzy
-#| msgid "Add an entry"
 msgctxt "FieldEdit|"
 msgid "Add an entry"
 msgstr "Dodaj vnos"
 
 #: server/components/FieldEdit.qml:330
-#, fuzzy
-#| msgid "Remove last entry"
 msgctxt "FieldEdit|"
 msgid "Remove last entry"
 msgstr "Odstrani zadnji vnos"
 
 #: server/components/FoldDown.qml:138
-#, fuzzy
-#| msgid "Filter list"
 msgctxt "FoldDown|"
 msgid "Filter list"
 msgstr "Filtriraj seznam"
 
 #: server/components/OkCancelButtons.qml:19
-#, fuzzy
-#| msgid "OK"
 msgctxt "OkCancelButtons|"
 msgid "OK"
 msgstr "V redu"
 
 #: server/components/OkCancelButtons.qml:20
-#, fuzzy
-#| msgid "Cancel"
 msgctxt "OkCancelButtons|"
 msgid "Cancel"
 msgstr "Prekliči"
 
 #: server/components/RadioGroupEditDelegate.qml:60
-#, fuzzy
-#| msgctxt "server/components/RadioGroupEditDelegate.qml:60"
-#| msgid "Edit group"
 msgctxt "RadioGroupEditDelegate|"
 msgid "Edit group"
 msgstr "Uredi skupino"
 
 #: server/components/RadioGroupEditDelegate.qml:72
-#, fuzzy
-#| msgid "Delete group"
 msgctxt "RadioGroupEditDelegate|"
 msgid "Delete group"
 msgstr "Izbriši skupino"
 
 #: server/components/ServerLanguageList.qml:32
-#, fuzzy
-#| msgid "Your system default"
 msgctxt "ServerLanguageList|"
 msgid "Your system default"
 msgstr "Privzeta nastavitev sistema"
 
 #: server/controllers/database-controller.cpp:83
 #: server/controllers/database-controller.cpp:89
-#, fuzzy, qt-format
-#| msgid ""
-#| "File %1\n"
-#| "Error SQL: %2"
+#, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid ""
 "File %1\n"
@@ -1828,349 +1259,258 @@ msgid ""
 msgstr "Datoteka %1 Napaka SQL: %2"
 
 #: server/controllers/database-controller.cpp:125
-#, fuzzy
-#| msgid "Table teacher_ could not be updated to current version."
 msgctxt "controllers::DatabaseController|"
 msgid "Table teacher_ could not be updated to current version."
 msgstr "Tabele teacher_ ni bilo mogoče posodobiti na trenutno različico."
 
 #: server/controllers/database-controller.cpp:351
-#, fuzzy
-#| msgid "Error creating teacher."
 msgctxt "controllers::DatabaseController|"
 msgid "Error creating teacher."
 msgstr "Napaka pri ustvarjanju učitelja."
 
 #: server/controllers/database-controller.cpp:373
-#, fuzzy
-#| msgid "Wrong password."
 msgctxt "controllers::DatabaseController|"
 msgid "Wrong password."
 msgstr "Napačno geslo."
 
 #: server/controllers/database-controller.cpp:417
-#, fuzzy, qt-format
-#| msgid "Group <b>%1</b> already exists."
+#, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> already exists."
 msgstr "Skupina <b>%1</b> že obstaja."
 
 #: server/controllers/database-controller.cpp:438
-#, fuzzy, qt-format
-#| msgid "Group <b>%1</b> could not be updated to <b>%2</b>."
+#, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be updated to <b>%2</b>."
 msgstr "Skupine <b>%1</b> ni bilo mogoče posodobiti na <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:456
-#, fuzzy, qt-format
-#| msgid "Group <b>%1</b> could not be deleted from table group_."
+#, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_."
 msgstr "Skupine <b>%1</b> ni bilo mogoče izbrisati iz tabele group_."
 
 #: server/controllers/database-controller.cpp:459
-#, fuzzy, qt-format
-#| msgid "Group <b>%1</b> could not be deleted from table group_user_."
+#, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_user_."
 msgstr "Skupine <b>%1</b> ni bilo mogoče izbrisati iz tabele group_user_."
 
 #: server/controllers/database-controller.cpp:483
-#, fuzzy, qt-format
-#| msgid "Pupil login <b>%1</b> already exists or password is empty."
+#, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Pupil login <b>%1</b> already exists or password is empty."
 msgstr "Prijava učenca <b>%1</b> že obstaja ali pa je geslo prazno."
 
 #: server/controllers/database-controller.cpp:502
-#, fuzzy, qt-format
-#| msgid "<b>%1</b> could not be updated to <b>%2</b>."
+#, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "<b>%1</b> could not be updated to <b>%2</b>."
 msgstr "<b>%1</b> ni bilo mogoče posodobiti na <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:522
-#, fuzzy, qt-format
-#| msgid "User <b>%1</b> could not be deleted from table user_."
+#, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table user_."
 msgstr "Uporabnika <b>%1</b> ni bilo mogoče izbrisati iz tabele user_."
 
 #: server/controllers/database-controller.cpp:527
-#, fuzzy, qt-format
-#| msgid "User <b>%1</b> could not be deleted from table result_."
+#, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table result_."
 msgstr "Uporabnika <b>%1</b> ni bilo mogoče izbrisati iz tabele result_."
 
 #: server/controllers/database-controller.cpp:542
-#, fuzzy, qt-format
-#| msgid "User <b>%1</b> could not be deleted from table group_user_."
+#, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table group_user_."
 msgstr "Uporabnika <b>%1</b> ni bilo mogoče izbrisati iz tabele group_user_."
 
 #: server/controllers/database-controller.cpp:557
-#, fuzzy, qt-format
-#| msgid "User <b>%1</b> already exists in group <b>%2</b>."
+#, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> already exists in group <b>%2</b>."
 msgstr "Uporabnika <b>%1</b> že obstaja v skupini <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:572
-#, fuzzy, qt-format
-#| msgid "User <b>%1</b> group <b>%2</b> couldn't be deleted."
+#, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> group <b>%2</b> couldn't be deleted."
 msgstr "Uporabnika <b>%1</b> skupine <b>%2</b> ni bilo mogoče izbrisati."
 
 #: server/controllers/database-controller.cpp:607
-#, fuzzy, qt-format
-#| msgid "Result could not be added for user <b>%1</b>"
+#, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Result could not be added for user <b>%1</b>"
 msgstr "Rezultata ni bilo mogoče dodati za uporabnika <b>%1</b>"
 
 #: server/controllers/database-controller.cpp:619
-#, fuzzy, qt-format
-#| msgid "Error inserting activity: %1"
+#, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Error inserting activity: %1"
 msgstr "Napaka pri vstavljanju dejavnosti: %1"
 
 #: server/controllers/database-controller.cpp:665
-#, fuzzy, qt-format
-#| msgid "Dataset <b>%1</b> already exists."
+#, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> already exists."
 msgstr "Nabor podatkov <b>%1</b> že obstaja."
 
 #: server/controllers/database-controller.cpp:682
-#, fuzzy, qt-format
-#| msgid "Dataset <b>%1</b> could not be updated to <b>%2</b>."
+#, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> could not be updated to <b>%2</b>."
 msgstr "Nabora podatkov <b>%1</b> ni bilo mogoče posodobiti na <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:697
-#, fuzzy, qt-format
-#| msgid "Dataset <b>%1</b> couldn't be deleted."
+#, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> couldn't be deleted."
 msgstr "Nabora podatkov <b>%1</b> ni bilo mogoče izbrisati."
 
 #: server/controllers/network-controller.cpp:46
-#, fuzzy, qt-format
-#| msgid "Unable to start the server: %1."
+#, qt-format
 msgctxt "controllers::NetworkController|"
 msgid "Unable to start the server: %1."
 msgstr "Strežnika ni mogoče zagnati: %1."
 
 #: server/dialogs/CreateDbDialog.qml:19
-#, fuzzy
-#| msgid "You are about to create a new GCompris database."
 msgctxt "CreateDbDialog|"
 msgid "You are about to create a new GCompris database."
 msgstr "Nameravate ustvariti novo zbirko podatkov GCompris."
 
 #: server/dialogs/CreateDbDialog.qml:39
-#, fuzzy
-#| msgctxt "server/dialogs/CreateDbDialog.qml:39"
-#| msgid "Database file"
 msgctxt "CreateDbDialog|"
 msgid "Database file"
 msgstr "Datoteka zbirke podatkov"
 
 #: server/dialogs/CreateDbDialog.qml:41
-#, fuzzy
-#| msgid "created in:"
 msgctxt "CreateDbDialog|"
 msgid "created in:"
 msgstr "ustvarjeno v:"
 
 #: server/dialogs/CreateDbDialog.qml:65
-#, fuzzy
-#| msgid "New database creation"
 msgctxt "CreateDbDialog|"
 msgid "New database creation"
 msgstr "Ustvarjanje nove zbirke podatkov"
 
 #: server/dialogs/CreateDbDialog.qml:93
-#, fuzzy
-#| msgctxt "server/dialogs/CreateDbDialog.qml:93"
-#| msgid "Teacher login"
 msgctxt "CreateDbDialog|"
 msgid "Teacher login"
 msgstr "Prijava učitelja"
 
 #: server/dialogs/CreateDbDialog.qml:113
-#, fuzzy
-#| msgctxt "server/dialogs/CreateDbDialog.qml:113"
-#| msgid "Password"
 msgctxt "CreateDbDialog|"
 msgid "Password"
 msgstr "Geslo"
 
 #: server/dialogs/CreateDbDialog.qml:129
-#, fuzzy
-#| msgid "Encrypted database (enabled by default)"
 msgctxt "CreateDbDialog|"
 msgid "Encrypted database (enabled by default)"
 msgstr "Šifrirana zbirka podatkov (privzeto omogočeno)"
 
 #: server/dialogs/DatasetEditorDialog.qml:52
-#, fuzzy
-#| msgctxt "server/dialogs/DatasetEditorDialog.qml:52"
-#| msgid "Create dataset"
 msgctxt "DatasetEditorDialog|"
 msgid "Create dataset"
 msgstr "Ustvari nabor podatkov"
 
 #: server/dialogs/DatasetEditorDialog.qml:62
-#, fuzzy
-#| msgctxt "server/dialogs/DatasetEditorDialog.qml:62"
-#| msgid "Update dataset"
 msgctxt "DatasetEditorDialog|"
 msgid "Update dataset"
 msgstr "Posodobi nabor podatkov"
 
 #: server/dialogs/DatasetEditorDialog.qml:76
-#, fuzzy
-#| msgid "Dataset name is empty"
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name is empty"
 msgstr "Ime nabora podatkov je prazno"
 
 #: server/dialogs/DatasetEditorDialog.qml:83
-#, fuzzy
-#| msgid "Difficulty should be between 1 and 6"
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty should be between 1 and 6"
 msgstr "Težavnost mora biti med 1 in 6"
 
 #: server/dialogs/DatasetEditorDialog.qml:236
-#, fuzzy
-#| msgid "INVALID DATASET"
 msgctxt "DatasetEditorDialog|"
 msgid "INVALID DATASET"
 msgstr "NEVELJAVEN NABOR PODATKOV"
 
 #: server/dialogs/DatasetEditorDialog.qml:339
-#, fuzzy
-#| msgid "Editor"
 msgctxt "DatasetEditorDialog|"
 msgid "Editor"
 msgstr "Urejevalnik"
 
 #: server/dialogs/DatasetEditorDialog.qml:342
-#, fuzzy
-#| msgid "Raw JSON"
 msgctxt "DatasetEditorDialog|"
 msgid "Raw JSON"
 msgstr "Surovi JSON"
 
 #: server/dialogs/DatasetEditorDialog.qml:372
-#, fuzzy
-#| msgid "Activity name"
 msgctxt "DatasetEditorDialog|"
 msgid "Activity name"
 msgstr "Ime dejavnosti"
 
 #: server/dialogs/DatasetEditorDialog.qml:386
-#, fuzzy
-#| msgid "Dataset name"
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name"
 msgstr "Ime nabora podatkov"
 
 #: server/dialogs/DatasetEditorDialog.qml:400
-#, fuzzy
-#| msgid "Goal"
 msgctxt "DatasetEditorDialog|"
 msgid "Goal"
 msgstr "Cilj"
 
 #: server/dialogs/DatasetEditorDialog.qml:414
-#, fuzzy
-#| msgid "Difficulty"
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty"
 msgstr "Težavnost"
 
 #: server/dialogs/DatasetEditorDialog.qml:512
-#, fuzzy
-#| msgid "Instructions"
 msgctxt "DatasetEditorDialog|"
 msgid "Instructions"
 msgstr "Navodila"
 
 #: server/dialogs/DatasetEditorDialog.qml:518
-#, fuzzy
-#| msgid "No specific instructions for this editor."
 msgctxt "DatasetEditorDialog|"
 msgid "No specific instructions for this editor."
 msgstr "Za ta urejevalnik ni posebnih navodil."
 
 #: server/dialogs/ErrorDialog.qml:46
-#, fuzzy
-#| msgid "Information"
 msgctxt "ErrorDialog|"
 msgid "Information"
 msgstr "Informacije"
 
 #: server/dialogs/ExportPupilsDialog.qml:79
-#, fuzzy
-#| msgid "Export pupils to CSV file"
 msgctxt "ExportPupilsDialog|"
 msgid "Export pupils to CSV file"
 msgstr "Izvozi učence v datoteko CSV"
 
 #: server/dialogs/ExportPupilsDialog.qml:121
-#, fuzzy
-#| msgid "Save file"
 msgctxt "ExportPupilsDialog|"
 msgid "Save file"
 msgstr "Shrani datoteko"
 
 #: server/dialogs/ExportPupilsDialog.qml:131
-#, fuzzy
-#| msgctxt "server/dialogs/ExportPupilsDialog.qml:131"
-#| msgid "Pupils"
 msgctxt "ExportPupilsDialog|"
 msgid "Pupils"
 msgstr "Učenci"
 
 #: server/dialogs/GroupDialog.qml:114
-#, fuzzy
-#| msgctxt "server/dialogs/GroupDialog.qml:114"
-#| msgid "Name"
 msgctxt "GroupDialog|"
 msgid "Name"
 msgstr "Ime"
 
 #: server/dialogs/GroupDialog.qml:128
-#, fuzzy
-#| msgctxt "server/dialogs/GroupDialog.qml:128"
-#| msgid "Description"
 msgctxt "GroupDialog|"
 msgid "Description"
 msgstr "Opis"
 
 #: server/dialogs/ImportPupilsDialog.qml:70
-#, fuzzy
-#| msgid "Import pupils from CSV file"
 msgctxt "ImportPupilsDialog|"
 msgid "Import pupils from CSV file"
 msgstr "Uvozi učence iz datoteke CSV"
 
 #: server/dialogs/ImportPupilsDialog.qml:88
-#, fuzzy
-#| msgid ""
-#| "Format: name;groups;password\n"
-#| "Example:\n"
-#| "Patrick Dummy;group 1;1234\n"
-#| "Patricia Brown;group 1,group 2;4321\n"
 msgctxt "ImportPupilsDialog|"
 msgid ""
 "Format: name;groups;password\n"
@@ -2179,80 +1519,56 @@ msgid ""
 "Patricia Brown;group 1,group 2;4321\n"
 msgstr ""
 "Format: name;groups;password\n"
-"Example:\n"
+"Primer:\n"
 "Patrick Dummy;group 1;1234\n"
 "Patricia Brown;group 1,group 2;4321\n"
 
 #: server/dialogs/ImportPupilsDialog.qml:94
-#, fuzzy
-#| msgid "Add CSV file"
 msgctxt "ImportPupilsDialog|"
 msgid "Add CSV file"
 msgstr "Dodaj datoteko CSV"
 
 #: server/dialogs/ImportPupilsDialog.qml:141
-#, fuzzy
-#| msgctxt "server/dialogs/ImportPupilsDialog.qml:141"
-#| msgid "Import pupils"
 msgctxt "ImportPupilsDialog|"
 msgid "Import pupils"
 msgstr "Uvozi učence"
 
 #: server/dialogs/PupilDialog.qml:59
-#, fuzzy
-#| msgid "Pupil's name is empty"
 msgctxt "PupilDialog|"
 msgid "Pupil's name is empty"
 msgstr "Ime učenca je prazno"
 
 #: server/dialogs/PupilDialog.qml:153
-#, fuzzy
-#| msgid "Pupil's name"
 msgctxt "PupilDialog|"
 msgid "Pupil's name"
 msgstr "Ime učenca"
 
 #: server/dialogs/PupilDialog.qml:166
-#, fuzzy
-#| msgctxt "server/dialogs/CreateDbDialog.qml:113"
-#| msgid "Password"
 msgctxt "PupilDialog|"
 msgid "Password"
 msgstr "Geslo"
 
 #: server/dialogs/PupilDialog.qml:217
-#, fuzzy
-#| msgid "Password images:"
 msgctxt "PupilDialog|"
 msgid "Password images:"
 msgstr "Slike gesel:"
 
 #: server/dialogs/PupilDialog.qml:252
-#, fuzzy
-#| msgctxt "server/dialogs/PupilDialog.qml:252"
-#| msgid "Groups"
 msgctxt "PupilDialog|"
 msgid "Groups"
 msgstr "Skupine"
 
 #: server/dialogs/PupilsToGroupsDialog.qml:87
-#, fuzzy
-#| msgid "Select the groups to add these pupils to:"
 msgctxt "PupilsToGroupsDialog|"
 msgid "Select the groups to add these pupils to:"
 msgstr "Izberite skupine, v katere želite dodati te učence:"
 
 #: server/dialogs/PupilsToGroupsDialog.qml:88
-#, fuzzy
-#| msgid "Select the groups from which to remove these pupils:"
 msgctxt "PupilsToGroupsDialog|"
 msgid "Select the groups from which to remove these pupils:"
 msgstr "Izberite skupine, iz katerih želite odstraniti te učence:"
 
 #: server/dialogs/RemoveDatasetDialog.qml:70
-#, fuzzy
-#| msgid ""
-#| "Are you sure you want to delete the following dataset from the database?"
 msgctxt "RemoveDatasetDialog|"
 msgid ""
 "Are you sure you want to delete the following dataset from the database?"
@@ -2261,9 +1577,6 @@ msgstr ""
 "podatkov?"
 
 #: server/dialogs/RemovePupilsDialog.qml:76
-#, fuzzy
-#| msgid ""
-#| "Are you sure you want to remove the following pupils from the database ?"
 msgctxt "RemovePupilsDialog|"
 msgid ""
 "Are you sure you want to remove the following pupils from the database ?"
@@ -2271,25 +1584,17 @@ msgstr ""
 "Ali ste prepričani, da želite odstraniti naslednje učence iz baze podatkov?"
 
 #: server/dialogs/SendDatasetDialog.qml:93
-#, fuzzy
-#| msgid "Do you want to send the dataset to selected pupils?"
 msgctxt "SendDatasetDialog|"
 msgid "Do you want to send the dataset to selected pupils?"
 msgstr "Ali želite poslati nabor podatkov izbranim učencem?"
 
 #: server/dialogs/SendDatasetDialog.qml:94
-#, fuzzy
-#| msgid "Are you sure you want to remove the dataset from selected pupils?"
 msgctxt "SendDatasetDialog|"
 msgid "Are you sure you want to remove the dataset from selected pupils?"
 msgstr ""
 "Ali ste prepričani, da želite odstraniti nabor podatkov izbranim učencem?"
 
 #: server/dialogs/SendDatasetDialog.qml:95
-#, fuzzy
-#| msgid ""
-#| "Are you sure you want to remove all the existing datasets from selected "
-#| "pupils?"
 msgctxt "SendDatasetDialog|"
 msgid ""
 "Are you sure you want to remove all the existing datasets from selected "
@@ -2299,1019 +1604,707 @@ msgstr ""
 "izbranim učencem?"
 
 #: server/dialogs/SendDatasetDialog.qml:129
-#, fuzzy
-#| msgctxt "server/dialogs/ExportPupilsDialog.qml:131"
-#| msgid "Pupils"
 msgctxt "SendDatasetDialog|"
 msgid "Pupils"
 msgstr "Učenci"
 
 #: server/dialogs/SqlLineDialog.qml:19
-#, fuzzy
-#| msgid "Line details"
 msgctxt "SqlLineDialog|"
 msgid "Line details"
 msgstr "Podrobnosti o vrstici"
 
 #: server/dialogs/SqlLineDialog.qml:151
-#, fuzzy
-#| msgid "<"
 msgctxt "SqlLineDialog|"
 msgid "<"
 msgstr "<"
 
 #: server/dialogs/SqlLineDialog.qml:175
-#, fuzzy
-#| msgid ">"
 msgctxt "SqlLineDialog|"
 msgid ">"
 msgstr ">"
 
 #: server/dialogs/SqlLineDialog.qml:191
-#, fuzzy
-#| msgid "Close"
 msgctxt "SqlLineDialog|"
 msgid "Close"
 msgstr "Zapri"
 
 #: server/Main.qml:48
-#, fuzzy
-#| msgctxt "server/Main.qml:48"
-#| msgid "GCompris Teachers Tool"
 msgctxt "Main|"
 msgid "GCompris Teachers Tool"
 msgstr "Orodje za učitelje GCompris"
 
 #: server/panels/NavigationPanel.qml:70
-#, fuzzy
-#| msgctxt "server/panels/NavigationPanel.qml:70"
-#| msgid "Login"
 msgctxt "NavigationPanel|"
 msgid "Login"
 msgstr "Prijava"
 
 #: server/panels/NavigationPanel.qml:78
-#, fuzzy
-#| msgid "Pupils and Groups"
 msgctxt "NavigationPanel|"
 msgid "Pupils and Groups"
 msgstr "Učenci in skupine"
 
 #: server/panels/NavigationPanel.qml:86
-#, fuzzy
-#| msgctxt "server/panels/NavigationPanel.qml:86"
-#| msgid "Connect devices"
 msgctxt "NavigationPanel|"
 msgid "Connect devices"
 msgstr "Poveži naprave"
 
 #: server/panels/NavigationPanel.qml:94
-#, fuzzy
-#| msgctxt "server/panels/NavigationPanel.qml:94"
-#| msgid "Activities"
 msgctxt "NavigationPanel|"
 msgid "Activities"
 msgstr "Dejavnosti"
 
 #: server/panels/NavigationPanel.qml:102
-#, fuzzy
-#| msgctxt "server/panels/NavigationPanel.qml:102"
-#| msgid "Datasets"
 msgctxt "NavigationPanel|"
 msgid "Datasets"
 msgstr "Nabori podatkov"
 
 #: server/panels/NavigationPanel.qml:110
-#, fuzzy
-#| msgid "Charts"
 msgctxt "NavigationPanel|"
 msgid "Charts"
 msgstr "Grafikoni"
 
 #: server/panels/NavigationPanel.qml:118
-#, fuzzy
-#| msgid "Settings"
 msgctxt "NavigationPanel|"
 msgid "Settings"
 msgstr "Nastavitve"
 
 #: server/panels/NavigationPanel.qml:126
-#, fuzzy
-#| msgid "Development (WIP)"
 msgctxt "NavigationPanel|"
 msgid "Development (WIP)"
-msgstr "Razvoj (v teku)"
+msgstr "Razvoj (v delu)"
 
 #: server/panels/SelectorPanel.qml:51
-#, fuzzy
-#| msgctxt "server/dialogs/PupilDialog.qml:252"
-#| msgid "Groups"
 msgctxt "SelectorPanel|"
 msgid "Groups"
 msgstr "Skupine"
 
 #: server/panels/SelectorPanel.qml:71
-#, fuzzy
-#| msgctxt "server/dialogs/ExportPupilsDialog.qml:131"
-#| msgid "Pupils"
 msgctxt "SelectorPanel|"
 msgid "Pupils"
 msgstr "Učenci"
 
 #: server/panels/SelectorPanel.qml:87
-#, fuzzy
-#| msgctxt "server/panels/NavigationPanel.qml:94"
-#| msgid "Activities"
 msgctxt "SelectorPanel|"
 msgid "Activities"
 msgstr "Dejavnosti"
 
 #: server/singletons/Master.qml:32
-#, fuzzy
-#| msgid "User ID"
 msgctxt "Master|"
 msgid "User ID"
 msgstr "ID uporabnika"
 
 #: server/singletons/Master.qml:33
-#, fuzzy
-#| msgctxt "server/dialogs/GroupDialog.qml:114"
-#| msgid "Name"
 msgctxt "Master|"
 msgid "Name"
 msgstr "Ime"
 
 #: server/singletons/Master.qml:34
-#, fuzzy
-#| msgid "Names"
 msgctxt "Master|"
 msgid "Names"
 msgstr "Imena"
 
 #: server/singletons/Master.qml:35
-#, fuzzy
-#| msgctxt "server/dialogs/CreateDbDialog.qml:113"
-#| msgid "Password"
 msgctxt "Master|"
 msgid "Password"
 msgstr "Geslo"
 
 #: server/singletons/Master.qml:36
-#, fuzzy
-#| msgid "Users IDs"
 msgctxt "Master|"
 msgid "Users IDs"
 msgstr "ID-ji uporabnikov"
 
 #: server/singletons/Master.qml:37
-#, fuzzy
-#| msgid "Activity Id"
 msgctxt "Master|"
 msgid "Activity Id"
 msgstr "ID dejavnosti"
 
 #: server/singletons/Master.qml:38
-#, fuzzy
-#| msgid "Activity"
 msgctxt "Master|"
 msgid "Activity"
 msgstr "Dejavnost"
 
 #: server/singletons/Master.qml:39
-#, fuzzy
-#| msgid "Group"
 msgctxt "Master|"
 msgid "Group"
 msgstr "Skupina"
 
 #: server/singletons/Master.qml:40
-#, fuzzy
-#| msgctxt "server/dialogs/GroupDialog.qml:128"
-#| msgid "Description"
 msgctxt "Master|"
 msgid "Description"
 msgstr "Opis"
 
 #: server/singletons/Master.qml:41
-#, fuzzy
-#| msgctxt "server/dialogs/PupilDialog.qml:252"
-#| msgid "Groups"
 msgctxt "Master|"
 msgid "Groups"
 msgstr "Skupine"
 
 #: server/singletons/Master.qml:42
-#, fuzzy
-#| msgid "Groups IDs"
 msgctxt "Master|"
 msgid "Groups IDs"
 msgstr "ID-ji skupin"
 
 #: server/singletons/Master.qml:43 server/singletons/Master.qml:47
-#, fuzzy
-#| msgid "Date"
 msgctxt "Master|"
 msgid "Date"
 msgstr "Datum"
 
 #: server/singletons/Master.qml:44 server/singletons/Master.qml:49
-#, fuzzy
-#| msgid "Success"
 msgctxt "Master|"
 msgid "Success"
 msgstr "Uspeh"
 
 #: server/singletons/Master.qml:45
-#, fuzzy
-#| msgid "Duration"
 msgctxt "Master|"
 msgid "Duration"
 msgstr "Trajanje"
 
 #: server/singletons/Master.qml:46
-#, fuzzy
-#| msgid "Data"
 msgctxt "Master|"
 msgid "Data"
 msgstr "Podatki"
 
 #: server/singletons/Master.qml:48
-#, fuzzy
-#| msgctxt "server/activities/DailyReport.qml:185"
-#| msgid "Count"
 msgctxt "Master|"
 msgid "Count"
 msgstr "Število"
 
 #: server/singletons/Master.qml:50
-#, fuzzy
-#| msgid "Failed"
 msgctxt "Master|"
 msgid "Failed"
 msgstr "Neuspešno"
 
 #: server/singletons/Master.qml:51
-#, fuzzy
-#| msgid "Success ratio"
 msgctxt "Master|"
 msgid "Success ratio"
 msgstr "Razmerje uspešnosti"
 
 #: server/views/ChartsView.qml:97
-#, fuzzy
-#| msgctxt "server/panels/NavigationPanel.qml:94"
-#| msgid "Activities"
 msgctxt "ChartsView|"
 msgid "Activities"
 msgstr "Dejavnosti"
 
 #: server/views/ChartsView.qml:101
-#, fuzzy
-#| msgctxt "server/dialogs/ExportPupilsDialog.qml:131"
-#| msgid "Pupils"
 msgctxt "ChartsView|"
 msgid "Pupils"
 msgstr "Učenci"
 
 #: server/views/datas/AllData.qml:69
-#, fuzzy
-#| msgid "Available requests"
 msgctxt "AllData|"
 msgid "Available requests"
 msgstr "Razpoložljive zahteve"
 
 #: server/views/datas/AllData.qml:77
-#, fuzzy
-#| msgid "All users activities"
 msgctxt "AllData|"
 msgid "All users activities"
 msgstr "Vse dejavnosti uporabnikov"
 
 #: server/views/datas/AllData.qml:77
-#, fuzzy
-#| msgid "Pupils activities"
 msgctxt "AllData|"
 msgid "Pupils activities"
 msgstr "Dejavnosti učencev"
 
 #: server/views/datas/AllData.qml:77
-#, fuzzy
-#| msgctxt "server/activities/DailyReport.qml:33"
-#| msgid "All groups"
 msgctxt "AllData|"
 msgid "All groups"
 msgstr "Vse skupine"
 
 #: server/views/datas/AllData.qml:77
-#, fuzzy
-#| msgid "Failed activities"
 msgctxt "AllData|"
 msgid "Failed activities"
 msgstr "Neuspešne dejavnosti"
 
 #: server/views/datas/AllData.qml:78
-#, fuzzy
-#| msgid "User's groups"
 msgctxt "AllData|"
 msgid "User's groups"
 msgstr "Skupine uporabnikov"
 
 #: server/views/datas/AllData.qml:78
-#, fuzzy
-#| msgid "Group's users"
 msgctxt "AllData|"
 msgid "Group's users"
 msgstr "Uporabniki skupine"
 
 #: server/views/datas/AllData.qml:78
-#, fuzzy
-#| msgid "Daily activities"
 msgctxt "AllData|"
 msgid "Daily activities"
 msgstr "Dnevne dejavnosti"
 
 #: server/views/datas/AllData.qml:78
-#, fuzzy
-#| msgid "Daily ratios"
 msgctxt "AllData|"
 msgid "Daily ratios"
 msgstr "Dnevna razmerja"
 
 #. Number of lines
 #: server/views/datas/AllData.qml:90
-#, fuzzy, qt-format
-#| msgid "%1 lines"
+#, qt-format
 msgctxt "AllData|"
 msgid "%1 lines"
 msgstr "%1 vrstic"
 
 #: server/views/datas/DuplicateData.qml:175
-#, fuzzy
-#| msgid "Commands"
 msgctxt "DuplicateData|"
 msgid "Commands"
 msgstr "Ukazi"
 
 #: server/views/datas/DuplicateData.qml:188
-#, fuzzy
-#| msgid "Random date"
 msgctxt "DuplicateData|"
 msgid "Random date"
 msgstr "Naključni datum"
 
 #: server/views/datas/DuplicateData.qml:195
-#, fuzzy
-#| msgid "Duplicate"
 msgctxt "DuplicateData|"
 msgid "Duplicate"
 msgstr "Podvoji"
 
 #: server/views/datas/DuplicateData.qml:199
-#, fuzzy
-#| msgid "You are about to duplicate datas"
 msgctxt "DuplicateData|"
 msgid "You are about to duplicate datas"
 msgstr "Podvojili boste podatke"
 
 #: server/views/datas/DuplicateData.qml:199
 #: server/views/datas/DuplicateData.qml:212
-#, fuzzy
-#| msgid "No action now"
 msgctxt "DuplicateData|"
 msgid "No action now"
 msgstr "Trenutno ni dejanja"
 
 #: server/views/datas/DuplicateData.qml:208
-#, fuzzy
-#| msgid "Delete"
 msgctxt "DuplicateData|"
 msgid "Delete"
 msgstr "Izbriši"
 
 #: server/views/datas/DuplicateData.qml:212
-#, fuzzy
-#| msgid "You are about to delete datas"
 msgctxt "DuplicateData|"
 msgid "You are about to delete datas"
 msgstr "Izbrisali boste podatke"
 
 #: server/views/datas/DuplicateData.qml:230
-#, fuzzy
-#| msgid "Copy to"
 msgctxt "DuplicateData|"
 msgid "Copy to"
 msgstr "Kopiraj v"
 
 #: server/views/DatasetsView.qml:49
-#, fuzzy
-#| msgctxt "server/panels/NavigationPanel.qml:94"
-#| msgid "Activities"
 msgctxt "DatasetsView|"
 msgid "Activities"
 msgstr "Dejavnosti"
 
 #: server/views/DatasetsView.qml:69
-#, fuzzy
-#| msgctxt "server/panels/NavigationPanel.qml:102"
-#| msgid "Datasets"
 msgctxt "DatasetsView|"
 msgid "Datasets"
 msgstr "Nabori podatkov"
 
 #: server/views/DatasetsView.qml:101
-#, fuzzy
-#| msgid "Datasets management"
 msgctxt "DatasetsView|"
 msgid "Datasets management"
 msgstr "Upravljanje naborov podatkov"
 
 #: server/views/DatasetsView.qml:118
-#, fuzzy
-#| msgctxt "server/dialogs/DatasetEditorDialog.qml:52"
-#| msgid "Create dataset"
 msgctxt "DatasetsView|"
 msgid "Create dataset"
 msgstr "Ustvari nabor podatkov"
 
 #: server/views/DatasetsView.qml:126
-#, fuzzy
-#| msgctxt "server/dialogs/DatasetEditorDialog.qml:62"
-#| msgid "Update dataset"
 msgctxt "DatasetsView|"
 msgid "Update dataset"
 msgstr "Posodobi nabor podatkov"
 
 #: server/views/DatasetsView.qml:134
-#, fuzzy
-#| msgid "Send dataset to clients"
 msgctxt "DatasetsView|"
 msgid "Send dataset to clients"
 msgstr "Pošlji nabor podatkov strankam"
 
 #: server/views/DatasetsView.qml:152
-#, fuzzy
-#| msgid "Remove dataset from clients"
 msgctxt "DatasetsView|"
 msgid "Remove dataset from clients"
 msgstr "Odstrani nabor podatkov od strank"
 
 #: server/views/DatasetsView.qml:176
-#, fuzzy
-#| msgid "Remove all datasets from clients"
 msgctxt "DatasetsView|"
 msgid "Remove all datasets from clients"
 msgstr "Odstrani vse nabore podatkov od strank"
 
 #: server/views/DatasetsView.qml:185
-#, fuzzy
-#| msgid "Delete dataset"
 msgctxt "DatasetsView|"
 msgid "Delete dataset"
 msgstr "Izbriši nabor podatkov"
 
 #: server/views/DevelopmentView.qml:43
-#, fuzzy
-#| msgid "Edit data"
 msgctxt "DevelopmentView|"
 msgid "Edit data"
 msgstr "Uredi podatke"
 
 #: server/views/DevelopmentView.qml:47
-#, fuzzy
-#| msgid "All requests"
 msgctxt "DevelopmentView|"
 msgid "All requests"
 msgstr "Vse zahteve"
 
 #: server/views/DevicesView.qml:52
-#, fuzzy
-#| msgid "Not connected"
 msgctxt "DevicesView|"
 msgid "Not connected"
 msgstr "Ni povezano"
 
 #: server/views/DevicesView.qml:54
-#, fuzzy
-#| msgid "Bad password input"
 msgctxt "DevicesView|"
 msgid "Bad password input"
 msgstr "Vnos napačnega gesla"
 
 #: server/views/DevicesView.qml:56
-#, fuzzy
-#| msgid "Logged"
 msgctxt "DevicesView|"
 msgid "Logged"
 msgstr "Zabeleženo"
 
 #: server/views/DevicesView.qml:58
-#, fuzzy
-#| msgid "Connection lost"
 msgctxt "DevicesView|"
 msgid "Connection lost"
 msgstr "Povezava prekinjena"
 
 #: server/views/DevicesView.qml:60
-#, fuzzy
-#| msgid "Disconnected"
 msgctxt "DevicesView|"
 msgid "Disconnected"
 msgstr "Prekinjena povezava"
 
 #: server/views/DevicesView.qml:62
-#, fuzzy
-#| msgid "Unknown connection status"
 msgctxt "DevicesView|"
 msgid "Unknown connection status"
 msgstr "Neznano stanje povezave"
 
 #: server/views/DevicesView.qml:84
-#, fuzzy
-#| msgctxt "server/dialogs/PupilDialog.qml:252"
-#| msgid "Groups"
 msgctxt "DevicesView|"
 msgid "Groups"
 msgstr "Skupine"
 
 #: server/views/DevicesView.qml:100
-#, fuzzy
-#| msgctxt "server/dialogs/ExportPupilsDialog.qml:131"
-#| msgid "Pupils"
 msgctxt "DevicesView|"
 msgid "Pupils"
 msgstr "Učenci"
 
 #: server/views/DevicesView.qml:134
-#, fuzzy
-#| msgid "Network"
 msgctxt "DevicesView|"
 msgid "Network"
 msgstr "Omrežje"
 
 #: server/views/DevicesView.qml:157
-#, fuzzy
-#| msgctxt "server/panels/NavigationPanel.qml:86"
-#| msgid "Connect devices"
 msgctxt "DevicesView|"
 msgid "Connect devices"
 msgstr "Poveži naprave"
 
 #: server/views/DevicesView.qml:170
-#, fuzzy
-#| msgid "Send login list"
 msgctxt "DevicesView|"
 msgid "Send login list"
 msgstr "Pošlji seznam prijav"
 
 #: server/views/DevicesView.qml:195
-#, fuzzy
-#| msgid "Disconnect selected pupils"
 msgctxt "DevicesView|"
 msgid "Disconnect selected pupils"
 msgstr "Prekini povezavo z izbranimi učenci"
 
 #: server/views/DevicesView.qml:212
-#, fuzzy
-#| msgid "Disconnect everybody"
 msgctxt "DevicesView|"
 msgid "Disconnect everybody"
 msgstr "Prekini povezavo z vsemi"
 
 #: server/views/DevicesView.qml:228
-#, fuzzy
-#| msgid "Server ID:"
 msgctxt "DevicesView|"
 msgid "Server ID:"
 msgstr "ID strežnika:"
 
 #: server/views/DevicesView.qml:235
-#, fuzzy
-#| msgid "Teacher port:"
 msgctxt "DevicesView|"
 msgid "Teacher port:"
 msgstr "Vrata učitelja:"
 
 #: server/views/DevicesView.qml:242
-#, fuzzy
-#| msgid "Connected:"
 msgctxt "DevicesView|"
 msgid "Connected:"
 msgstr "Povezano:"
 
 #: server/views/DevicesView.qml:249
-#, fuzzy
-#| msgid "Logged:"
 msgctxt "DevicesView|"
 msgid "Logged:"
 msgstr "Zabeleženo:"
 
 #: server/views/DevicesView.qml:256
-#, fuzzy
-#| msgid "Data received:"
 msgctxt "DevicesView|"
 msgid "Data received:"
 msgstr "Prejeti podatki:"
 
 #: server/views/DevicesView.qml:284
-#, fuzzy
-#| msgid "Network logs"
 msgctxt "DevicesView|"
 msgid "Network logs"
 msgstr "Dnevniki omrežja"
 
 #: server/views/DevicesView.qml:296
-#, fuzzy
-#| msgid "Clear logs"
 msgctxt "DevicesView|"
 msgid "Clear logs"
 msgstr "Počisti dnevnike"
 
 #: server/views/DevicesView.qml:316
-#, fuzzy, qt-format
-#| msgid "Server already running on port %1"
+#, qt-format
 msgctxt "DevicesView|"
 msgid "Server already running on port %1"
 msgstr "Strežnik že deluje na vratih %1"
 
 #: server/views/LoginView.qml:44
-#, fuzzy
-#| msgid "Incorrect password"
 msgctxt "LoginView|"
 msgid "Incorrect password"
 msgstr "Napačno geslo"
 
 #: server/views/LoginView.qml:48
-#, fuzzy
-#| msgid "GCompris-teachers is already running on this computer"
 msgctxt "LoginView|"
 msgid "GCompris-teachers is already running on this computer"
 msgstr "GCompris-teachers že deluje na tem računalniku"
 
 #: server/views/LoginView.qml:49
-#, fuzzy
-#| msgid "Only data browsing is permitted"
 msgctxt "LoginView|"
 msgid "Only data browsing is permitted"
 msgstr "Dovoljeno je samo brskanje po podatkih"
 
 #: server/views/LoginView.qml:92
-#, fuzzy
-#| msgctxt "server/dialogs/CreateDbDialog.qml:93"
-#| msgid "Teacher login"
 msgctxt "LoginView|"
 msgid "Teacher login"
 msgstr "Prijava učitelja"
 
 #: server/views/LoginView.qml:113
-#, fuzzy
-#| msgctxt "server/dialogs/CreateDbDialog.qml:113"
-#| msgid "Password"
 msgctxt "LoginView|"
 msgid "Password"
 msgstr "Geslo"
 
 #: server/views/LoginView.qml:131
-#, fuzzy
-#| msgctxt "server/panels/NavigationPanel.qml:70"
-#| msgid "Login"
 msgctxt "LoginView|"
 msgid "Login"
 msgstr "Prijava"
 
 #: server/views/LoginView.qml:140
-#, fuzzy
-#| msgid "Create teacher database"
 msgctxt "LoginView|"
 msgid "Create teacher database"
 msgstr "Ustvari bazo podatkov učiteljev"
 
 #: server/views/LoginView.qml:161
-#, fuzzy
-#| msgid "Database file:"
 msgctxt "LoginView|"
 msgid "Database file:"
 msgstr "Datoteka baze podatkov:"
 
 #: server/views/LoginView.qml:174
-#, fuzzy
-#| msgctxt "server/Main.qml:48"
-#| msgid "GCompris Teachers Tool"
 msgctxt "LoginView|"
 msgid "GCompris Teachers Tool"
 msgstr "Orodje za učitelje GCompris"
 
 #: server/views/ManagePupilsView.qml:34 server/views/ManagePupilsView.qml:147
-#, fuzzy
-#| msgid "Add a group"
 msgctxt "ManagePupilsView|"
 msgid "Add a group"
 msgstr "Dodaj skupino"
 
 #: server/views/ManagePupilsView.qml:44
-#, fuzzy
-#| msgid "Are you sure you want to remove this group?"
 msgctxt "ManagePupilsView|"
 msgid "Are you sure you want to remove this group?"
 msgstr "Ali ste prepričani, da želite odstraniti to skupino?"
 
 #: server/views/ManagePupilsView.qml:45
-#, fuzzy
-#| msgid "Pupils will not be removed."
 msgctxt "ManagePupilsView|"
 msgid "Pupils will not be removed."
 msgstr "Učenci ne bodo odstranjeni."
 
 #: server/views/ManagePupilsView.qml:52
-#, fuzzy
-#| msgctxt "server/components/RadioGroupEditDelegate.qml:60"
-#| msgid "Edit group"
 msgctxt "ManagePupilsView|"
 msgid "Edit group"
 msgstr "Uredi skupino"
 
 #: server/views/ManagePupilsView.qml:68 server/views/ManagePupilsView.qml:204
-#, fuzzy
-#| msgid "Add a pupil"
 msgctxt "ManagePupilsView|"
 msgid "Add a pupil"
 msgstr "Dodaj učenca"
 
 #: server/views/ManagePupilsView.qml:74
-#, fuzzy
-#| msgid "Edit pupil's name and groups"
 msgctxt "ManagePupilsView|"
 msgid "Edit pupil's name and groups"
 msgstr "Uredi ime učenca in skupine"
 
 #: server/views/ManagePupilsView.qml:122
-#, fuzzy
-#| msgctxt "server/dialogs/PupilDialog.qml:252"
-#| msgid "Groups"
 msgctxt "ManagePupilsView|"
 msgid "Groups"
 msgstr "Skupine"
 
 #: server/views/ManagePupilsView.qml:157
-#, fuzzy
-#| msgid "Pupils and groups"
 msgctxt "ManagePupilsView|"
 msgid "Pupils and groups"
 msgstr "Učenci in skupine"
 
 #: server/views/ManagePupilsView.qml:186
-#, fuzzy
-#| msgid "Pupils management"
 msgctxt "ManagePupilsView|"
 msgid "Pupils management"
 msgstr "Upravljanje učencev"
 
 #: server/views/ManagePupilsView.qml:212
-#, fuzzy
-#| msgid "Add to groups"
 msgctxt "ManagePupilsView|"
 msgid "Add to groups"
 msgstr "Dodaj v skupine"
 
 #: server/views/ManagePupilsView.qml:220
-#, fuzzy
-#| msgid "Remove from groups"
 msgctxt "ManagePupilsView|"
 msgid "Remove from groups"
 msgstr "Odstrani iz skupin"
 
 #: server/views/ManagePupilsView.qml:228
-#, fuzzy
-#| msgid "Export pupils"
 msgctxt "ManagePupilsView|"
 msgid "Export pupils"
 msgstr "Izvozi učence"
 
 #: server/views/ManagePupilsView.qml:235
-#, fuzzy
-#| msgctxt "server/dialogs/ImportPupilsDialog.qml:141"
-#| msgid "Import pupils"
 msgctxt "ManagePupilsView|"
 msgid "Import pupils"
 msgstr "Uvozi učence"
 
 #: server/views/ManagePupilsView.qml:243
-#, fuzzy
-#| msgid "Remove pupils"
 msgctxt "ManagePupilsView|"
 msgid "Remove pupils"
 msgstr "Odstrani učence"
 
 #: server/views/SettingsView.qml:65
-#, fuzzy
-#| msgid "Menu panel"
 msgctxt "SettingsView|"
 msgid "Menu panel"
 msgstr "Menijska plošča"
 
 #: server/views/SettingsView.qml:66
-#, fuzzy
-#| msgid "Left"
 msgctxt "SettingsView|"
 msgid "Left"
 msgstr "Levo"
 
 #: server/views/SettingsView.qml:66
-#, fuzzy
-#| msgid "Right"
 msgctxt "SettingsView|"
 msgid "Right"
 msgstr "Desno"
 
 #: server/views/SettingsView.qml:77
-#, fuzzy
-#| msgid "Font size"
 msgctxt "SettingsView|"
 msgid "Font size"
 msgstr "Velikost pisave"
 
 #: server/views/SettingsView.qml:87
-#, fuzzy
-#| msgid "Theme"
 msgctxt "SettingsView|"
 msgid "Theme"
 msgstr "Tema"
 
 #: server/views/SettingsView.qml:88
-#, fuzzy
-#| msgid "Dark"
 msgctxt "SettingsView|"
 msgid "Dark"
-msgstr "Temno"
+msgstr "Temna"
 
 #: server/views/SettingsView.qml:88
-#, fuzzy
-#| msgid "Light"
 msgctxt "SettingsView|"
 msgid "Light"
-msgstr "Svetlo"
+msgstr "Svetla"
 
 #: server/views/SettingsView.qml:103
-#, fuzzy
-#| msgid "Language selector"
 msgctxt "SettingsView|"
 msgid "Language selector"
 msgstr "Izbirnik jezika"
 
 #: server/views/SettingsView.qml:138
-#, fuzzy
-#| msgid "Server ID"
 msgctxt "SettingsView|"
 msgid "Server ID"
 msgstr "ID strežnika"
 
 #: server/views/SettingsView.qml:160
-#, fuzzy
-#| msgid "Port"
 msgctxt "SettingsView|"
 msgid "Port"
 msgstr "Vrata"
 
 #. next line will display if the server is running or already running
 #: server/views/SettingsView.qml:178
-#, fuzzy
-#| msgid "Server is"
 msgctxt "SettingsView|"
 msgid "Server is"
-msgstr "Strežnik"
+msgstr "Strežnik je"
 
 #: server/views/SettingsView.qml:179
-#, fuzzy
-#| msgid "Running"
 msgctxt "SettingsView|"
 msgid "Running"
 msgstr "Teče"
 
 #: server/views/SettingsView.qml:179
-#, fuzzy, qt-format
-#| msgid "Already running on port %1"
+#, qt-format
 msgctxt "SettingsView|"
 msgid "Already running on port %1"
 msgstr "Že deluje na vratih %1"
 
 #: server/views/SettingsView.qml:187
-#, fuzzy
-#| msgid "Host name"
 msgctxt "SettingsView|"
 msgid "Host name"
 msgstr "Ime ​​gostitelja"
 
 #: server/views/SettingsView.qml:194
-#, fuzzy
-#| msgid "Server IP"
 msgctxt "SettingsView|"
 msgid "Server IP"
 msgstr "IP strežnika"
 
 #: server/views/SettingsView.qml:201
-#, fuzzy
-#| msgid "Broadcast IPs"
 msgctxt "SettingsView|"
 msgid "Broadcast IPs"
 msgstr "IP-ji za oddajanje"
 
 #: server/views/SettingsView.qml:208
-#, fuzzy
-#| msgid "Netmask"
 msgctxt "SettingsView|"
 msgid "Netmask"
 msgstr "Omrežna maska"
 
 #: server/views/SettingsView.qml:213
-#, fuzzy
-#| msgid "MAC address"
 msgctxt "SettingsView|"
 msgid "MAC address"
 msgstr "Naslov MAC"
 
 #: server/views/SettingsView.qml:220
-#, fuzzy
-#| msgid "GCompris version"
 msgctxt "SettingsView|"
 msgid "GCompris version"
 msgstr "Različica GCompris"
 
 #: server/views/SettingsView.qml:227
-#, fuzzy
-#| msgid "Qt version"
 msgctxt "SettingsView|"
 msgid "Qt version"
 msgstr "Različica Qt"
 
 #: server/views/SettingsView.qml:240
-#, fuzzy
-#| msgctxt "server/dialogs/CreateDbDialog.qml:93"
-#| msgid "Teacher login"
 msgctxt "SettingsView|"
 msgid "Teacher login"
 msgstr "Prijava učitelja"
 
 #: server/views/SettingsView.qml:248
-#, fuzzy
-#| msgctxt "server/dialogs/CreateDbDialog.qml:39"
-#| msgid "Database file"
 msgctxt "SettingsView|"
 msgid "Database file"
 msgstr "Datoteka zbirke podatkov"
 
 #: server/views/SettingsView.qml:255
-#, fuzzy
-#| msgid "Encrypted database"
 msgctxt "SettingsView|"
 msgid "Encrypted database"
 msgstr "Šifrirana baza podatkov"
 
 #: server/views/SettingsView.qml:256
-#, fuzzy
-#| msgid "Yes"
 msgctxt "SettingsView|"
 msgid "Yes"
 msgstr "Da"
 
 #: server/views/SettingsView.qml:256
-#, fuzzy
-#| msgid "No"
 msgctxt "SettingsView|"
 msgid "No"
 msgstr "Ne"
 
 #: server/views/SettingsView.qml:261
-#, fuzzy
-#| msgctxt "server/dialogs/ExportPupilsDialog.qml:131"
-#| msgid "Pupils"
 msgctxt "SettingsView|"
 msgid "Pupils"
 msgstr "Učenci"
 
 #: server/views/SettingsView.qml:267
-#, fuzzy
-#| msgctxt "server/dialogs/PupilDialog.qml:252"
-#| msgid "Groups"
 msgctxt "SettingsView|"
 msgid "Groups"
 msgstr "Skupine"
 
 #: server/views/SettingsView.qml:280
-#, fuzzy
-#| msgid "Pupils connected"
 msgctxt "SettingsView|"
 msgid "Pupils connected"
 msgstr "Povezani učenci"
 
 #: server/views/SettingsView.qml:287
-#, fuzzy
-#| msgid "Pupils logged"
 msgctxt "SettingsView|"
 msgid "Pupils logged"
 msgstr "Prijavljeni učenci"
 
 #: server/views/SettingsView.qml:294
-#, fuzzy
-#| msgid "Activities data received"
 msgctxt "SettingsView|"
 msgid "Activities data received"
 msgstr "Prejeti podatki o dejavnostih"
