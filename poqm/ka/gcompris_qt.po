@@ -76,47 +76,39 @@ msgstr "იპოვეთ მოთხოვნილი რიცხვებ�
 
 #. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the previous numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n previous number(s)."
 msgid_plural "Find the %n previous number(s)."
-msgstr[0] "იპოვეთ წინა რიცხვები."
-msgstr[1] "იპოვეთ წინა რიცხვები."
+msgstr[0] "იპოვეთ %n წინა რიცხვი."
+msgstr[1] "იპოვეთ %n წინა რიცხვი."
 
 #. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:60
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the next numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n next number(s)."
 msgid_plural "Find the %n next number(s)."
-msgstr[0] "იპოვეთ შემდეგი რიცხვები."
-msgstr[1] "იპოვეთ შემდეგი რიცხვები."
+msgstr[0] "იპოვეთ %n შემდეგი რიცხვი."
+msgstr[1] "იპოვეთ %n შემდეგი რიცხვი."
 
 #. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:64
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the in-between numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n in-between number(s)"
 msgid_plural "Find the %n in-between number(s)"
-msgstr[0] "იპოვეთ შუალედური რიცხვები."
-msgstr[1] "იპოვეთ შუალედური რიცხვები."
+msgstr[0] "იპოვეთ %n რიცხვი შუალედიდან"
+msgstr[1] "იპოვეთ %n რიცხვი შუალედიდან"
 
 #. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:68
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the missing numbers"
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n missing numbers"
 msgid_plural "Find the %n missing numbers"
-msgstr[0] "იპოვეთ ნაკლული რიცხვები"
-msgstr[1] "იპოვეთ ნაკლული რიცხვები"
+msgstr[0] "იპოვეთ %n ნაკლული რიცხვი"
+msgstr[1] "იპოვეთ %n ნაკლული რიცხვი"
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
 msgctxt "Data|"
@@ -2888,42 +2880,45 @@ msgstr "რა არის %1-ის ორობითი წარმოდ�
 #: activities/binary_bulb/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 3 (with counter and with values visible)."
-msgstr ""
+msgstr "დათვალეთ სამამდე (ხილული მთვლელით და მნიშვნელობებით)."
 
 #: activities/binary_bulb/resource/2/Data.qml:13
+#, fuzzy
 msgctxt "Data|"
 msgid "Count up to 3 (without counter and with values visible)."
-msgstr ""
+msgstr "დათვალეთ სამამდე (უხილავი მთვლელით და ხილული მნიშვნელობებით)."
 
 #: activities/binary_bulb/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (with counter and with values visible)."
-msgstr ""
+msgstr "დათვალეთ თხუთმეტამდე (ხილული მთვლელით და მნიშვნელობებით)."
 
 #: activities/binary_bulb/resource/4/Data.qml:13
+#, fuzzy
 msgctxt "Data|"
 msgid "Count up to 15 (without counter and with values visible)."
-msgstr ""
+msgstr "დათვალეთ თხუთმეტამდე (უხილავი მთვლელით და ხილული მნიშვნელობებით)."
 
 #: activities/binary_bulb/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (with counter and with values visible)."
-msgstr ""
+msgstr "დათვალეთ 255-მდე (ხილული მთვლელით და მნიშვნელობებით)."
 
 #: activities/binary_bulb/resource/6/Data.qml:13
+#, fuzzy
 msgctxt "Data|"
 msgid "Count up to 255 (without counter and with values visible)."
-msgstr ""
+msgstr "დათვალეთ 255-მდე (უხილავი მთვლელით და ხილული მნიშვნელობებით)."
 
 #: activities/binary_bulb/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (without counter and without values visible)."
-msgstr ""
+msgstr "დათვალეთ თხუთმეტამდე (უხილავი მთვლელით და მნიშვნელობებით)."
 
 #: activities/binary_bulb/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (without counter and without values visible)."
-msgstr ""
+msgstr "დათვალეთ 255-მდე (უხილავი მთვლელით და მნიშვნელობებით)."
 
 #: activities/binary_bulb/resource/tutorial4.qml:31
 msgctxt "tutorial4|"
@@ -5734,12 +5729,9 @@ msgstr "ციფრული ელექტროობა"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "ციფრული ლოგიკური სქემის შექმნა და სიმულაცია"
+msgstr "ციფრული ლოგიკური წრედის შექმნა და სიმულაცია."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -6396,12 +6388,10 @@ msgstr ""
 
 #: activities/drawing_wheels/ActivityConfig.qml:29
 #: activities/sketch/ActivityConfig.qml:29
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 19."
+#, qt-format
 msgctxt "ActivityConfig|"
 msgid "Number of undo: %1"
-msgstr "რიცხვები 1-დან 19-მდე."
+msgstr "გაუქმების რაოდენობა: %1"
 
 #: activities/drawing_wheels/ActivityConfig.qml:44
 #: activities/sketch/ActivityConfig.qml:44
@@ -6413,12 +6403,9 @@ msgstr ""
 
 #. Activity title
 #: activities/drawing_wheels/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "BrushToolPanel|"
-#| msgid "Drawing Tools"
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
-msgstr "ხატვის ხელსაწყოები"
+msgstr "ბორბლების ხატვა"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
@@ -6428,12 +6415,11 @@ msgstr ""
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr "გაიგეთ ზოგიერთი ციფრული ხატვის ხელსაწყოს შესახებ."
+msgstr ""
+"აღმოაჩინეთ ჰიპოტროქოიდები და გამოიყენეთ ისინი ციფრული სახატავი ხელსაწყოს "
+"სახით."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
@@ -6475,90 +6461,70 @@ msgstr "Ctrl + O: გამოსახულების გახსნა"
 #: activities/drawing_wheels/DrawingWheels.qml:378
 msgctxt "DrawingWheels|"
 msgid "File menu"
-msgstr ""
+msgstr "ფაილის მენიუ"
 
 #: activities/drawing_wheels/DrawingWheels.qml:390
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
-msgstr ""
+msgstr "ბორბალი და გადაცემათა კოლოფი"
 
 #: activities/drawing_wheels/DrawingWheels.qml:414
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Piano composition"
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
-msgstr "კომპოზიცია პიანინოზე"
+msgstr "ფანქრის ზომა და პოზიცია"
 
 #: activities/drawing_wheels/DrawingWheels.qml:426
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font selector"
 msgctxt "DrawingWheels|"
 msgid "Color selector"
-msgstr "ფონტის ამრჩევი"
+msgstr "ფერის ამრჩევი"
 
 #: activities/drawing_wheels/DrawingWheels.qml:453
-#, fuzzy
-#| msgctxt "OptionsRow|"
-#| msgid "Undo"
 msgctxt "DrawingWheels|"
 msgid "Undo"
-msgstr "დაბრუნება"
+msgstr "გაუქმება"
 
 #: activities/drawing_wheels/DrawingWheels.qml:465
+#, fuzzy
 msgctxt "DrawingWheels|"
 msgid "Redo"
-msgstr ""
+msgstr "გამეორება"
 
 #: activities/drawing_wheels/DrawingWheels.qml:499
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
-msgstr ""
+msgstr "ხატვის შეწყვეტა"
 
 #: activities/drawing_wheels/DrawingWheels.qml:499
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
-msgstr ""
+msgstr "ხატვის დაწყება"
 
 #: activities/drawing_wheels/DrawingWheels.qml:532
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
-msgstr ""
+msgstr "ბორბლისა და გადაცემათა კოლოფის ჩვენება"
 
 #: activities/drawing_wheels/DrawingWheels.qml:532
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
-msgstr ""
+msgstr "ბორბლისა და გადაცემათა კოლოფის დამალვა"
 
 #: activities/drawing_wheels/DrawingWheels.qml:691
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "თქვენი გამოსახულების შენახვა"
 
 #: activities/drawing_wheels/DrawingWheels.qml:706
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Open an image"
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "გამოსახულების გახსნა"
 
 #: activities/drawing_wheels/DrawingWheels.qml:735
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Create a new image"
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "ახალი გამოსახულების შექმნა"
 
 #: activities/drawing_wheels/DrawingWheels.qml:754
-#, fuzzy
-#| msgctxt "BackgroundColorSelector|"
-#| msgid "Background color"
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "ფონის ფერი"
@@ -6566,51 +6532,42 @@ msgstr "ფონის ფერი"
 #: activities/drawing_wheels/DrawingWheels.qml:835
 msgctxt "DrawingWheels|"
 msgid "Wheel"
-msgstr ""
+msgstr "ბორბალი"
 
 #: activities/drawing_wheels/DrawingWheels.qml:902
 msgctxt "DrawingWheels|"
 msgid "Gear"
-msgstr ""
+msgstr "გადაცემათა კოლოფი"
 
 #: activities/drawing_wheels/DrawingWheels.qml:965
-#, fuzzy, qt-format
-#| msgctxt "SignalGenerator|"
-#| msgid "%1 s"
+#, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
-msgstr "%1 წმ"
+msgstr "%1 კბილანა"
 
 #: activities/drawing_wheels/DrawingWheels.qml:983
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "სიჩქარე"
 
 #: activities/drawing_wheels/DrawingWheels.qml:999
+#, fuzzy
 msgctxt "DrawingWheels|"
 msgid "Slow"
-msgstr ""
+msgstr "ნელი"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1019
+#, fuzzy
 msgctxt "DrawingWheels|"
 msgid "Fast"
-msgstr ""
+msgstr "ჩქარი"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1062
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font size"
 msgctxt "DrawingWheels|"
 msgid "Pen size"
-msgstr "ფონტის ზომა"
+msgstr "ფანქრის ზომა"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1099
-#, fuzzy
-#| msgctxt "ToolsPanel|"
-#| msgid "Opacity"
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "გაუმჭირვალობა"
@@ -6618,44 +6575,29 @@ msgstr "გაუმჭირვალობა"
 #: activities/drawing_wheels/DrawingWheels.qml:1142
 msgctxt "DrawingWheels|"
 msgid "Offset"
-msgstr ""
+msgstr "წანაცვლება"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1180
-#, fuzzy
-#| msgctxt "IntroMessage|"
-#| msgid "Start"
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
-msgstr "დაწყება"
+msgstr "საწყისი კბილი"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1360
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "You did not save this image. Do you want to close this activity?"
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "გამოსახულება არ შეგინახავთ. გნებავთ, დახუროთ ეს აქტივობა?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1361
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "Do you want to erase this image?"
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "გნებავთ ამ გამოსახულების წაშლა?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1362
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "დიახ"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1363
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "არა"
@@ -8081,7 +8023,7 @@ msgstr "დააწკაპუნეთ მოცემული პირა�
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "აკრძალული ქალაქი"
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8101,7 +8043,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "ბუდას ძეგლი ლეშანში"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8119,12 +8061,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "მისორის სასახლე"
+msgstr "პოტალას სასახლე"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8144,7 +8083,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "ტერაკოტას არმია"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8161,7 +8100,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr ""
+msgstr "მზისა და მთვარის პაგოდები"
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8179,12 +8118,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "ეიფელის კოშკი"
+msgstr "დიაოლოუს კოშკები"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8201,17 +8137,11 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "ინდოეთის ძეგლები"
+msgstr "ჩინეთის ძეგლები"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "დააწკაპუნეთ თითოეული ძეგლის მდებარეობაზე."
@@ -8220,7 +8150,7 @@ msgstr "დააწკაპუნეთ თითოეული ძეგლ�
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "პანთეონი"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8242,7 +8172,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "მილანის საკათედრო ტაძარი"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8260,12 +8190,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "ჭიების ტაძარი"
+msgstr "ფლორენციის საკათედრო ტაძარი"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8284,12 +8211,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "ჰანოის კოშკები"
+msgstr "პიზის კოშკი"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8330,7 +8254,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr ""
+msgstr "პომპეი"
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -8348,29 +8272,20 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "ინდოეთის ძეგლები"
+msgstr "იტალიის ძეგლები"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "დააწკაპუნეთ თითოეული ძეგლის მდებარეობაზე."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "სხვადასხვა რეგისტრი"
+msgstr "ჰიმეძის ციხესიმაგრე"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -8388,7 +8303,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr ""
+msgstr "ჰიროშიმას მშვიდობის მემორიალის პარკი"
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -8409,7 +8324,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr ""
+msgstr "არაკურა ფუჯი სენგენის ტაძარი"
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -8430,7 +8345,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr ""
+msgstr "ოკინავას შურის ციხესიმაგრე"
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -8448,17 +8363,11 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "საფრანგეთის ძეგლები"
+msgstr "იაპონიის ძეგლები"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "დააწკაპუნეთ თითოეული ძეგლის მდებარეობაზე."
@@ -14348,12 +14257,9 @@ msgstr "საპოვნელი რიცხვი შუალედიდ�
 
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Number to find between 0 and 20."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
-msgstr "საპოვნელი რიცხვი შუალედიდან 0-20."
+msgstr "ათობითი რიცხვი შუალედიდან 0-4."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"
@@ -14854,12 +14760,9 @@ msgid "Division required."
 msgstr "აუცილებელია გაყოფა."
 
 #: activities/guess24/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "ყველა ოპერაციის მეხსიერების თამაში"
+msgstr "ყველა ოპერატორი აუცილებელია."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -16900,11 +16803,6 @@ msgstr ""
 "და საიდუმლოდ უწყობდა ხელს მის გავრცელებას ინსტიტუტში სწავლებისას."
 
 #: activities/louis-braille/louis_braille_data.js:52
-#, fuzzy
-#| msgctxt "louis_braille_data|"
-#| msgid ""
-#| "He revised and extended braille to include mathematics, symbols, "
-#| "punctuations and music notations."
 msgctxt "louis_braille_data|"
 msgid ""
 "He revised and extended braille to include mathematics, symbols, punctuation "
@@ -16940,12 +16838,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "ჯადოქრის ქუდი"
+msgstr "ჯადოქრის ქუდი (გამოკლება)"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -17033,12 +16928,9 @@ msgstr "%1x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "ჯადოქრის ქუდი"
+msgstr "ჯადოქრის ქუდი (მიმატება)"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -18777,7 +18669,7 @@ msgstr "დაშორება ფონტის სიმბლოებს 
 #: activities/menu/ConfigurationItem.qml:445
 msgctxt "ConfigurationItem|"
 msgid "Teacher's server config"
-msgstr ""
+msgstr "მასწავლებლის სერვერის მორგება"
 
 #: activities/menu/ConfigurationItem.qml:653
 msgctxt "ConfigurationItem|"
@@ -18874,7 +18766,7 @@ msgstr "ლექსიკონი"
 #: activities/menu/Menu.qml:211
 msgctxt "Menu|"
 msgid "GCompris is not connected to teacher's server."
-msgstr ""
+msgstr "GCompris არაა დაკავშირებული მასწავლებლის სერვერთან."
 
 #: activities/menu/Menu.qml:212
 msgctxt "Menu|"
@@ -18882,22 +18774,25 @@ msgid ""
 "GCompris is connected to teacher's server, but the password entered for "
 "selected user is wrong."
 msgstr ""
+"GCompris დაკავშირებულია მასწავლებლის სერვერთან, მაგრამ არჩეული სერვერისთვის "
+"შეყვანილი პაროლი არასწორია."
 
 #: activities/menu/Menu.qml:213
 msgctxt "Menu|"
 msgid ""
 "GCompris is connected to teacher's server, and the user is authenticated."
 msgstr ""
+"GCompris დაკავშირებულია მასწავლებლის სერვერთან და მომხმარებელი ავტორიზებულია."
 
 #: activities/menu/Menu.qml:214
 msgctxt "Menu|"
 msgid "GCompris has lost the connection to teacher's server."
-msgstr ""
+msgstr "GCompris-მა დაკარგა კავშირი მასწავლებლის სერვერთან."
 
 #: activities/menu/Menu.qml:215
 msgctxt "Menu|"
 msgid "GCompris has been disconnected from teacher's server."
-msgstr ""
+msgstr "GCompris გათიშულია მასწავლებლის სერვერიდან."
 
 #: activities/menu/Menu.qml:216
 msgctxt "Menu|"
@@ -18905,6 +18800,8 @@ msgid ""
 "GCompris is connected to teacher's server, but the user is not yet "
 "authenticated."
 msgstr ""
+"GCompris დაკავშირებულია მასწავლებლის სერვერთან, მაგრამ მომხმარებელს "
+"ავთენტიკაცია ჯერ არ გაუვლია."
 
 #: activities/menu/Menu.qml:677
 msgctxt "Menu|"
@@ -18928,25 +18825,22 @@ msgstr "აქტივობის მორგება"
 #: activities/menu/ServerConfigPage.qml:61
 msgctxt "ServerConfigPage|"
 msgid "Teacher's server settings"
-msgstr ""
+msgstr "მასწავლებლის სერვერის მორგება"
 
 #: activities/menu/ServerConfigPage.qml:111
 msgctxt "ServerConfigPage|"
 msgid "Teacher's identifier"
-msgstr ""
+msgstr "მასწავლებლის იდენტიფიკატორი"
 
 #: activities/menu/ServerConfigPage.qml:142
 msgctxt "ServerConfigPage|"
 msgid "Server port"
-msgstr ""
+msgstr "სერვერის პორტი"
 
 #: activities/menu/ServerConfigPage.qml:177
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "ServerConfigPage|"
 msgid "Server port must be a number between 0 and 65535."
-msgstr "გამოიცანით რიცხვი შუალედიდან 1-%1."
+msgstr "სერვერის პორტი უნდა იყოს რიცხვი შუალედიდან 0-65535."
 
 #. Activity title
 #: activities/mining/ActivityInfo.qml:15
@@ -19480,24 +19374,21 @@ msgstr "24 ელემენტამდე ერთზე მეტ ხაზ
 
 #. Activity title
 #: activities/multiple_choice_questions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication."
 msgctxt "ActivityInfo|"
 msgid "Multiple-choice questions"
-msgstr "გამრავლება."
+msgstr "მრავალპასუხიანი კითხვები"
 
 #. Help title
 #: activities/multiple_choice_questions/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "A generic activity for multiple-choice questions."
-msgstr ""
+msgstr "ზოგადი აქტივობა მრავალარჩევნიანი კითხვებისთვის."
 
 #. Help goal
 #: activities/multiple_choice_questions/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Answer questions sent by the teacher."
-msgstr ""
+msgstr "უპასუხეთ მასწავლებლის მიერ გამოგზავნილ კითხვებს."
 
 #. Help manual
 #: activities/multiple_choice_questions/ActivityInfo.qml:24
@@ -19510,44 +19401,30 @@ msgid ""
 msgstr ""
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate through the answers"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: navigate through the answer list"
-msgstr "ისრები: ნავიგაცია პანელებში"
+msgstr "ისრები ზემოთ და ქვემოთ: ნავიგაცია პასუხების სიაში"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select or deselect a circle"
 msgctxt "ActivityInfo|"
 msgid "Space: select or deselect the highlighted answer"
-msgstr "ჰარე: მონიშნეთ ან მოხსენით მონიშვნა წრეს"
+msgstr "ჰარე: მონიშნეთ ან მოხსენით მონიშვნა გამოკვეთილ პასუხს"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
-msgstr "შეყვანა: გადაამოწმეთ თქვენი პასუხი, როცა ღილაკი 'დიახ' ხილულია"
+msgstr ""
+"შეყვანა: გადაამოწმეთ თქვენი პასუხი, ან დახურეთ უკუკავშირის ტექსტის პანელი"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find the next number."
 msgctxt "Data|"
 msgid "Find the correct answer."
-msgstr "იპოვეთ შემდეგი რიცხვი."
+msgstr "იპოვეთ სწორი პასუხი."
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:17
-#, fuzzy
-#| msgctxt "GraduatedLineRead|"
-#| msgid "Find the requested number."
 msgctxt "Data|"
 msgid "What is the first number?"
-msgstr "იპოვეთ მოთხოვნილი რიცხვი."
+msgstr "რომელია პირველი რიცხვი?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:26
 msgctxt "Data|"
@@ -19555,22 +19432,19 @@ msgid "What is a color?"
 msgstr ""
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:40
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "Data|"
 msgid "What are the first two numbers?"
-msgstr "ივარჯიშეთ რიცხვების მიმატებაში."
+msgstr "რომელია პირველი ორი რიცხვი?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:49
 msgctxt "Data|"
 msgid "What are animals?"
-msgstr ""
+msgstr "რა არიან ცხოველები?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:63
 msgctxt "Data|"
 msgid "Answers always in order, select the first one"
-msgstr ""
+msgstr "უპასუხეთ ყოველთვის რიგში. აირჩიეთ პირველი"
 
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
@@ -23555,9 +23429,6 @@ msgid "Gradient Tools"
 msgstr "გრადიენტის ხელსაწყები"
 
 #: activities/sketch/PaletteSelector.qml:148
-#, fuzzy
-#| msgctxt "ColorsPanel|"
-#| msgid "Palettes"
 msgctxt "PaletteSelector|"
 msgid "Palettes"
 msgstr "პალიტრები"
@@ -25906,17 +25777,11 @@ msgid "Solve: %1"
 msgstr "ამოხსნა: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:99
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own addition and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own addition and solve it."
 msgstr "დაწერეთ თქვენი საკუთარი მიმატება და ამოხსენით ის."
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:100
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own subtraction and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own subtraction and solve it."
 msgstr "დაწერთ თქვენი გამოკლება და ამოხსენით ის."
@@ -25929,7 +25794,7 @@ msgstr "მზადაა"
 #: activities/vertical_subtraction/VerticalSubtraction.qml:464
 msgctxt "VerticalSubtraction|"
 msgid "The result should not be a negative number."
-msgstr ""
+msgstr "შედეგი უარყოფითი რიცხვი არ უნდა იყოს."
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
@@ -26115,22 +25980,15 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "აკრიფეთ სრული სიტყვა, სანამ ის დაბლა დავარდება, მისი ვარდნისას."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Kannada and Tamil"
-msgstr "დაემატა თარგმანი ლატვიურისთვის"
+msgstr "დაემატა თარგმანი კანადისთვის და ტამილურისთვის"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgctxt "ChangeLog|"
 msgid "New command-line option to set the locale (--locale locale)"
 msgstr ""
-"ახალი ბრძანების სტრიქონის პარამეტრი რენდერერის გადასართველად (--renderer "
-"renderer)"
+"ახალი ბრძანების სტრიქონის პარამეტრი ლოკალის დასაყენებლად (--locale ლოკალი)"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
@@ -26138,6 +25996,8 @@ msgid ""
 "New command-line option to show/hide the Home button (--hide-home-button/--"
 "show-home-button)"
 msgstr ""
+"ახალი ბრძანების სტრიქონის პარამეტრი საწყისზე გადასვლის ღილაკის საჩვენებლად/"
+"დასამალად (--hide-home-button/--show-home-button)"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:39 core/ChangeLog.qml:45
 #: core/ChangeLog.qml:54 core/ChangeLog.qml:60 core/ChangeLog.qml:65
@@ -26324,6 +26184,8 @@ msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
 "activity"
 msgstr ""
+"დამატებითი დონე ძაბვის წყაროს მარყუჟის სასწავლებლად ანალოგურ ელექტროობის "
+"აქტივობაში"
 
 #: core/ChangeLog.qml:143
 msgctxt "ChangeLog|"
@@ -26850,12 +26712,9 @@ msgid "No data found for %1."
 msgstr "%1-სთვის მონაცემები ვერ ვიპოვე."
 
 #: core/GCCreationHandler.qml:185
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr "%1 წარმატებით წაიშალა!"
+msgstr "ფაილი წარმატებით წაიშალა!"
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -26864,12 +26723,9 @@ msgid "OK"
 msgstr "დიახ"
 
 #: core/GCCreationHandler.qml:193
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
-msgstr "%1-ის წაშლა შეუძლებელია!"
+msgstr "ფაილის წაშლა შეუძლებელია!"
 
 #: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
@@ -26924,7 +26780,7 @@ msgstr "წაშლა"
 #: core/GCCreationHandler.qml:429
 msgctxt "GCCreationHandler|"
 msgid "Open folder"
-msgstr ""
+msgstr "საქაღალდის გახსნა"
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
@@ -27043,22 +26899,19 @@ msgstr ""
 "იყენებთ პარამეტრს --launch."
 
 #: core/main.cpp:146
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid "Specify the activity when starting GCompris."
 msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
-msgstr "მიუთითეთ აქტივობა GComris-ის გაშვებისას."
+msgstr "მიუთითეთ ლოკალი GCompris-ის გაშვებისას."
 
 #: core/main.cpp:150
 msgctxt "QObject|"
 msgid "Hide the Home button in the bar."
-msgstr ""
+msgstr "საწყისზე გადასვლის ღილაკის დამალვა პანელიდან."
 
 #: core/main.cpp:154
 msgctxt "QObject|"
 msgid "Show the Home button in the bar (default)."
-msgstr ""
+msgstr "საწყისზე გადასვლის ღილაკის ჩვენება პანელზე (ნაგულისხმევი)."
 
 #: core/main.qml:238
 msgctxt "main|"
@@ -27149,47 +27002,36 @@ msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris განახლდა! აი, რა ცვლილებებია მასში.<br/>"
 
 #: core/main.qml:509
-#, fuzzy, qt-format
-#| msgctxt "Sketch|"
-#| msgid "Do you want to erase this image?"
+#, qt-format
 msgctxt "main|"
 msgid "Do you want to connect to server %1?"
-msgstr "გნებავთ ამ გამოსახულების წაშლა?"
+msgstr "გნებავთ მიუერთდეთ სერვერს %1?"
 
 #: core/main.qml:530
 #, qt-format
 msgctxt "main|"
 msgid "Password rejected by server %1"
-msgstr ""
+msgstr "პაროლი უარყოფილია სერვერის %1 მიერ"
 
 #: core/main.qml:531 core/main.qml:550 core/main.qml:625
-#, fuzzy
-#| msgctxt "Balancebox|"
-#| msgid "OK"
 msgctxt "main|"
 msgid "OK"
 msgstr "დიახ"
 
 #: core/main.qml:546
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "main|"
 msgid "Select your username"
-msgstr "აირჩიეთ თქვენი რეჟიმი"
+msgstr "აირჩიეთ თქვენი მომმხარებლის სახელი"
 
 #: core/main.qml:556
 msgctxt "main|"
 msgid "Please select your username in the list or cancel."
-msgstr ""
+msgstr "აირჩიეთ თქვენი მომხმარებლის სახელი სიიდან, ან გააუქმეთ."
 
 #: core/main.qml:623
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "main|"
 msgid "Enter your password"
-msgstr "შეყვანა: გადაამოწმეთ თქვენი პასუხი"
+msgstr "შეიყვანეთ თქვენი პაროლი"
 
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"

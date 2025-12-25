@@ -74,13 +74,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->10 червня 2025 року</date>
+>4 лютого 2026 року</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->25.1.1</releaseinfo>
+>26.0</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -122,7 +122,7 @@ for example 'xx.yy.zz'
 >GPLv3</ulink
 >.</para>
 <para
->&gcompris; можна встановити у таких операційних системах: &GNU;/&Linux;, &BSD;, MacOSX, &Windows;, Android. Для забезпечення працездатності програми потрібна відеокартка із апаратним прискоренням обробки просторових об’єктів у форматі <emphasis
+>&gcompris; можна встановити у таких операційних системах: &GNU;/&Linux;, &BSD;, &macOS;, &Windows;, Android. Для забезпечення працездатності програми потрібна відеокартка із апаратним прискоренням обробки просторових об’єктів у форматі <emphasis
 >OpenGL 2.1</emphasis
 > або новішого. Обов’язковою є можливість показу 32-бітових кольорів.</para>
 </sect1>
@@ -131,11 +131,11 @@ for example 'xx.yy.zz'
 <title
 >Встановлення</title>
 <para
->Програмне забезпечення постачається у декількох форматах. Вам слід виконати настанови, що відповідають вашому випадку. </para>
+>Програмне забезпечення постачається у декількох форматах. Вам слід виконати настанови, що відповідають вашому випадку.</para>
 <itemizedlist>
 <listitem
 ><para
->&GNU;/&Linux;: скористайтеся пакунками, створеними для вашого дистрибутива &GNU;/&Linux;. Якщо для вашого дистрибутива &Linux; немає пакунка &gcompris;, будь ласка, зв’яжіться із авторами дистрибутива і попросіть їх включити пакунок &gcompris; до відповідного дистрибутива &Linux;.</para
+>&GNU;/&Linux;: скористайтеся пакунками, створеними для вашого дистрибутива &GNU;/&Linux;. Якщо для вашого дистрибутива &Linux; немає пакунка &gcompris;, будь ласка, зв’яжіться із авторами дистрибутива і попросіть їх включити пакунок &gcompris;.</para
 ></listitem>
 <listitem
 ><para
@@ -143,11 +143,11 @@ for example 'xx.yy.zz'
 ></listitem>
 <listitem
 ><para
->MacOSX: постачається у форматі класичного засобу для встановлення.</para
+>&macOS;: постачається у форматі класичного засобу для встановлення.</para
 ></listitem>
 <listitem
 ><para
->Android: розповсюджується за допомогою F-Droid та Google Play Store. Також можна скористатися файлом apk.</para
+>Android: розповсюджується за допомогою F-Droid та Google Play Store. Також можна скористатися файлом APK.</para
 ></listitem>
 </itemizedlist>
 </sect1>
@@ -189,7 +189,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="difficulty1.svg" format="SVG"/></imageobject
+><imagedata fileref="difficulty1.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
 ></inlinemediaobject
 >1, 2 або 3 жовтих зірочки — для дітей віком від 2 до 6 років.</para
 ></listitem
@@ -198,7 +198,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="difficulty4.svg" format="SVG"/></imageobject
+><imagedata fileref="difficulty4.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
 ></inlinemediaobject
 >1, 2 або 3 червоних зірочки — для дітей, старших за 6 років.</para
 ></listitem
@@ -212,7 +212,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_home.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_home.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Хатка — полишити поточну вправу, повернутися до попереднього меню.</para
 ></listitem
@@ -221,7 +221,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_ok.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > «Гаразд» — підтвердити відповідь. У деяких вправах не передбачено автоматичної перевірки того, чи було завершено виконання вправи. У таких випадках слід натискати цю піктограму. Також можна скористатися клавішею &Enter; на клавіатурі комп’ютера.</para
 ></listitem
@@ -230,7 +230,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_hint.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Лампа — показати підказку до вправи. За допомогою підказки можна допомогти дитині у деяких вправах, надавши настанови для визначення правильної відповіді.</para
 ></listitem>
@@ -238,11 +238,11 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_previous.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_previous.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject>
 <inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_next.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_next.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Стрілки — показує поточний рівень. Натисніть одну зі стрілок, щоб вибрати інший рівень. Загалом, у вправ є декілька рівнів, кількість яких залежить від вправи. У &gcompris; можна переходити до наступного рівня, навіть якщо не завершено вправляння на попередньому рівні.</para
 ></listitem
@@ -251,7 +251,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_repeat.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_repeat.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Губи — попросити &gcompris; повторити питання.</para
 ></listitem
@@ -260,7 +260,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_help.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_help.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Знак питання — показати панель із довідкою. Іноді, вправа може бути надто складною, щоб усі її аспекти можна було описати на панелі опису. У цьому випадку за допомогою цієї кнопки можна отримати доступ до додаткової інформації.</para
 ></listitem
@@ -269,7 +269,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Відкрутка з ключем — меню налаштувань. Налаштування зберігаються у сховищі користувача (теці) з назвою <filename
 >.config/gcompris/gcompris-qt.conf</filename
@@ -280,15 +280,15 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_activity_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> Пункт списку — показує меню параметрів вправи. Тут передбачено дві вкладки. Перша, «Набір даних», уможливлює вибір рівнів вправ, залежно від мети, а друга, «Параметри», надає змогу оновити налаштування вправи, якщо такі доступні. </para
+> Пункт списку — показує меню параметрів вправи. Тут передбачено дві вкладки. Перша, «Набір даних», уможливлює вибір рівнів вправ, залежно від мети, а друга, «Параметри», надає змогу оновити налаштування вправи, якщо такі доступні.</para
 ></listitem>
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_about.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_about.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Велика «G» — інформаційна панель щодо &gcompris;, містить список основних учасників розробки та дані щодо версії програмного забезпечення.</para
 ></listitem
@@ -297,7 +297,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_exit.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Символ живлення — вийти з &gcompris;. З цією ж метою ви можете скористатися клавіатурним скороченням <keycombo action="simul"
 >&Ctrl;<keycap
@@ -321,7 +321,7 @@ for example 'xx.yy.zz'
 ><command
 >gcompris --enable-kioskmode</command
 ></userinput
-> : вимикає кнопки <guiicon
+>: вимикає кнопки <guiicon
 >Вийти</guiicon
 > і <guiicon
 >Налаштування</guiicon
@@ -334,7 +334,7 @@ for example 'xx.yy.zz'
 ><command
 >gcompris --disable-kioskmode</command
 ></userinput
-> : вмикає кнопки <guiicon
+>: вмикає кнопки <guiicon
 >Вийти</guiicon
 > і <guiicon
 >Налаштування</guiicon
@@ -438,7 +438,7 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; можна інтернаціоналізувати. Програму перекладено понад 35 мовами. Якщо ви хочете перевірити, чи є доступною певна мова, ви можете запустити &gcompris; і вибрати відповідну мову зі списку у налаштуваннях.</para>
 <para
->Майте на увазі, для показу повідомлень деякими мовами потрібні відповідні шрифти. </para
+>Майте на увазі, для показу повідомлень деякими мовами потрібні відповідні шрифти.</para
 > 
 <para
 >Якщо підтримки потрібної вам мови ще не передбачено, ви можете допомогти розробникам і додати переклад відповідною мовою. Якщо хочете допомогти, зв’яжіться із <ulink url="https://l10n.kde.org/teams"
@@ -554,19 +554,19 @@ for example 'xx.yy.zz'
 <entry
 >--launch вправа</entry>
 <entry
->Вказати вправу, яку слід розпочати після запуску GCompris.</entry>
+>Вказати вправу, яку слід розпочати після запуску &gcompris;.</entry>
 </row>
 <row>
 <entry
 >--start-level рівень</entry>
 <entry
->Вказати рівень, на якому слід розпочати вправу, яку вказано параметром --launch під час запуску GCompris. Буде проігноровано, якщо не вказано параметр --launch або якщо вказано некоректний рівень.</entry>
+>Вказати рівень, на якому слід розпочати вправу, яку вказано параметром --launch під час запуску &gcompris;. Буде проігноровано, якщо не вказано параметр --launch або якщо вказано некоректний рівень.</entry>
 </row>
 <row>
 <entry
 >--difficulty {значення|min-max}</entry>
 <entry
->Для поточного сеансу примусово визначити складність вправ GCompris або вказаним значенням або значеннями між min і max. Значення має бути цілим числом від 1 до 6, а якщо задано формат min-max, значення min має бути меншим за max. Якщо ці умови не буде виконано, GCompris не запуститься.</entry>
+>Для поточного сеансу примусово визначити складність вправ &gcompris; або вказаним значенням або значеннями між min і max. Значення має бути цілим числом від 1 до 6, а якщо задано формат min-max, значення min має бути меншим за max. Якщо ці умови не буде виконано, &gcompris; не запуститься.</entry>
 </row>
 <row>
 <entry
@@ -588,22 +588,39 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>--show-home-button</entry>
+<entry
+>Показувати кнопку «Домівка» на панелі (типовий варіант).</entry>
+</row>
+<row>
+<entry
+>--hide-home-button</entry>
+<entry
+>Приховати кнопку «Домівка» на панелі.</entry>
+</row>
+<row>
+<entry
 >--renderer={обробник}</entry>
 <entry
->Вказати засіб обробки графіки. «opengl» та «software» доступні на усіх платформах. У Windows ви можете скористатися «direct3d11» або «direct3d12» (якщо програму було зібрано з Qt
->=6.6). У MacOS ви можете скористатися «metal».</entry>
+>Вказати засіб обробки графіки. «opengl» та «software» доступні на усіх платформах. У Windows ви можете скористатися «direct3d11» або «direct3d12» (якщо програму було зібрано з Qt≥6.6). У &macOS; ви можете скористатися «metal».</entry>
 </row>
 <row>
 <entry
 >--software-renderer</entry>
 <entry
->Використовувати програмну обробку замість openGL (має працювати з будь-якими графічними картками). Застаріле, скористайтеся натомість --renderer=software.</entry>
+>Використовувати програмну обробку замість OpenGL (має працювати з будь-якими графічними картками). Застаріле, скористайтеся натомість --renderer=software.</entry>
 </row>
 <row>
 <entry
 >--opengl-renderer</entry>
 <entry
->Використовувати засоби обробки openGL замість програмних (швидше і з ширшим спектром графічних ефектів, але може призвести до аварійного завершення програми на деяких графічних картках). Застаріле, скористайтеся натомість --renderer=opengl.</entry>
+>Використовувати засоби обробки OpenGL замість програмних (швидше і з ширшим спектром графічних ефектів, але може призвести до аварійного завершення програми на деяких графічних картках). Застаріле, скористайтеся натомість --renderer=opengl.</entry>
+</row>
+<row>
+<entry
+>--locale=локаль</entry>
+<entry
+>Запустити &gcompris; із використанням вказаної локалі.</entry>
 </row>
 </tbody>
 </tgroup>
