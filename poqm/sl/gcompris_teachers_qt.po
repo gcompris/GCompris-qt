@@ -1,17 +1,19 @@
+# SPDX-FileCopyrightText: 2025 Matjaž Jeran <matjaz.jeran@amis.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
-"Language-Team: \n"
-"Language: ka\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-23 11:17+0200\n"
+"PO-Revision-Date: 2025-12-24 12:30+0100\n"
+"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
+"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Qt-Contexts: true\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100>=3 && n"
+"%100<=4 ? 2 : 3);\n"
 "X-Generator: Poedit 3.8\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
 #: server/activities/binary_bulb/ActivityEditor.qml:12
@@ -22,7 +24,7 @@ msgstr ""
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:13
 msgctxt "ActivityEditor|"
 msgid "Rules to create a valid dataset:"
-msgstr "წესები ახალი მონაცემთა ნაკრების შესაქმნელად:"
+msgstr "Pravila za ustvarjanje veljavnega nabora podatkov:"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
@@ -31,10 +33,9 @@ msgid ""
 "minimum between the \"Sublevels\" value and the result of: (\"Maximum start "
 "number\" - \"Minimum start number\") / \"Step between numbers\" + 1."
 msgstr ""
-"თუ არჩეულია \"შემთხვევითი საწყისი რიცხვი\", ქვედონეების რაოდენობა იქნება "
-"\"ქვედონეების\" მნიშვნელობასა და (\"მაქსიმალური საწყისი რიცხვი\" - "
-"\"მინიმალური საწყისი რიცხვი\") / \"ნაბიჯი რიცხვების შორის\" +1 მნიშვნელობას "
-"შორის უმცირესი."
+"Če je izbrana možnost »Naključno začetno število«, bo število podravni "
+"najmanjše med vrednostjo »Podravni« in rezultatom: (»Največje začetno "
+"število« - »Najmanjše začetno število«) / »Korak med števili« + 1."
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
@@ -43,9 +44,9 @@ msgid ""
 "contain only numbers, and each of them will be used as start number for a "
 "sublevel."
 msgstr ""
-"თუ \"შემთხვევითი საწყისი რიცხვი\" არჩეული არაა, \"საწყისი რიცხვების სია\" "
-"უნდა შეიცავდეს, მხოლოდ, რიცხვებს და თითოეული მათგანი ქვედონის საწყის ნომრად "
-"იქნება გამოყენებული."
+"Če možnost »Naključna začetna številka« ni izbrana, mora seznam »Začetne "
+"številke« vsebovati samo številke, vsaka od njih pa bo uporabljena kot "
+"začetna številka za podraven."
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:19
 msgctxt "ActivityEditor|"
@@ -56,101 +57,100 @@ msgid ""
 "1. Also, the length of the list can not be greater than \"Sequence length\" "
 "- 2, to always have at least 2 visible numbers in the sequence."
 msgstr ""
-"\"ნაკლული რიცხვების მდებარეობა\" უნდა შეიცავდეს რიცხვების სიას, რომელიც "
-"საპოვნელი რიცხვების ინდექსს შეესაბამება. ინდექსის რიცხვები იწყება 0-დან "
-"(მიმდევრობის პირველი რიცხვიდან) და არ უნდა იყოს \"მიმდევრობის სიგრძე\" - 1-"
-"ზე მეტი. ასევე, სიის სიგრძე არ შეიძლება, \"მიმდევრობის სიგრძე\" -2-ზე მეტი "
-"იყოს, რომ მიმდევრობაში, სულ ცოტა, 2 ხილული რიცხვი გვქონდეს."
+"»Položaj manjkajočih številk« mora vsebovati seznam številk, ki ustrezajo "
+"indeksu številk, ki jih je treba najti. Indeksne številke se začnejo od 0 "
+"(prva številka zaporedja) in ne smejo biti večje od »Dolžina zaporedja« - 1. "
+"Prav tako dolžina seznama ne sme biti večja od »Dolžina zaporedja« - 2, da "
+"sta v zaporedju vedno vidni vsaj 2 številki."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:36
 msgctxt "AdjacentNumbersDataDisplay|"
 msgid "Tiles:"
-msgstr "ფილები:"
+msgstr "Ploščice:"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:60
 msgctxt "AdjacentNumbersDataDisplay|"
 msgid "Answer:"
-msgstr "პასუხი:"
+msgstr "Odgovor:"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:28
 msgctxt "AdjacentNumbersEditor|"
 msgid "Random start numbers"
-msgstr "შემთხვევით საწყისი რიცხვები"
+msgstr "Naključne začetne številke"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:29
 msgctxt "AdjacentNumbersEditor|"
 msgid "Sublevels"
-msgstr "ქვედონეები"
+msgstr "Podravni"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:30
 msgctxt "AdjacentNumbersEditor|"
 msgid "Start numbers"
-msgstr "საწყისი რიცხვები"
+msgstr "Začetna števila"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:31
 msgctxt "AdjacentNumbersEditor|"
 msgid "Minimum start number"
-msgstr "მინიმალური საწყისი რიცხვი"
+msgstr "Minimalno začetno število"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:32
 msgctxt "AdjacentNumbersEditor|"
 msgid "Maximum start number"
-msgstr "მაქსიმალური საწყისი რიცხვი"
+msgstr "Maksimalna začetna števila"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:33
 msgctxt "AdjacentNumbersEditor|"
 msgid "Step between numbers"
-msgstr "ბიჯი რიცხვებს შორის"
+msgstr "Korak med števili"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:34
 msgctxt "AdjacentNumbersEditor|"
 msgid "Sequence length"
-msgstr "თანმიმდევრობის სიგრძე"
+msgstr "Dolžina zaporedja"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:35
 msgctxt "AdjacentNumbersEditor|"
 msgid "Position of missing numbers"
-msgstr "ნაკლული რიცხვების მდებარეობა"
+msgstr "Položaj manjkajočih števil"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:36
 msgctxt "AdjacentNumbersEditor|"
 msgid "Proposed numbers"
-msgstr "შემოთავაზებული რიცხვები"
+msgstr "Predlagana števila"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:98
 msgctxt "AdjacentNumbersEditor|"
 msgid "Dataset is empty."
-msgstr "მონაცემთა ნაკრები ცარიელია."
+msgstr "Nabor podatkov je prazen."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:100
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Start numbers\" must contain only numbers, and not be empty."
 msgstr ""
-"\"საწყისი რიცხვები\", მხოლოდ, რიცხვების უნდა შეიცავდეს და ცარიელი არ უნდა "
-"იყოს."
+"»Začetna števila« morajo vsebovati samo številke in ne smejo biti prazne."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:102
 msgctxt "AdjacentNumbersEditor|"
 msgid ""
 "\"Position of missing numbers\" must contain only numbers, and not be empty."
 msgstr ""
-"\"ნაკლული რიცხვების მდებარეობა\", მხოლოდ, რიცხვების უნდა შეიცავდეს და "
-"ცარიელი არ უნდა იყოს."
+"\"Položaj manjkajočih števil\" mora vsebovati samo številke in ne sme biti "
+"prazen."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:104
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Position of missing numbers\" contains too much numbers."
-msgstr "\"ნაკლული რიცხვების მდებარეობა\" მეტისმეტად ბევრ რიცხვს შეიცავს."
+msgstr "\"Položaj manjkajočih števil\" vsebuje preveč števil."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:106
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Position of missing numbers\" contains invalid numbers."
-msgstr "\"ნაკლული რიცხვების მდებარეობა\" არასწორ რიცხვებს შეიცავს."
+msgstr "\"Položaj manjkajočih števil\" vsebuje neveljavne številke."
 
 #: server/activities/algebra_by/AlgebraDataDisplay.qml:19
 msgctxt "AlgebraDataDisplay|"
 msgid "timeout"
-msgstr "მოლოდინის ვადა ამოიწურა"
+msgstr "časovna omejitev"
 
 #. %1 is an operation, %2 the result. Example: "2 x 5 = 10"
 #: server/activities/algebra_by/AlgebraDataDisplay.qml:22
@@ -164,12 +164,12 @@ msgstr "%1 = %2"
 #, qt-format
 msgctxt "AlgebraDataDisplay|"
 msgid "Answer: %1"
-msgstr "პასუხი: %1"
+msgstr "Odgovor: %1"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:25
 msgctxt "AlgebraEditor|"
 msgid "Rules to create a valid dataset:"
-msgstr "წესები ახალი მონაცემთა ნაკრების შესაქმნელად:"
+msgstr "Pravila za ustvarjanje veljavnega nabora podatkov:"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:27
 msgctxt "AlgebraEditor|"
@@ -179,11 +179,10 @@ msgid ""
 "be large enough to generate enough questions for the given number of "
 "sublevels using the minimum and maximum operand values."
 msgstr ""
-"როცა არჩეულია \"შემთხვევითი ოპერანდები\", თუ \"შედეგის მნიშვნელობის ზღვარი\" "
-"0-ზე მეტია, ის განსაზღვრავს თითოეული ოპერაციის შედეგის დასაშვებ მაქსიმუმს. "
-"ის საკმარისად დიდი უნდა იყოს, რომ მოხდეს საკმარისი კითხვების გენერაცია "
-"მითითებული ქვედონეების რაოდენობისთვის მინიმალური და მაქსიმალური ოპერანდის "
-"მნიშვნელობების გამოყენებით."
+"Ko so izbrani \"Naključni operandi\", če je \"Omejitev vrednosti rezultata\" "
+"večja od 0, to določa največjo dovoljeno vrednost za rezultat vsake "
+"operacije. Mora biti dovolj velika, da ustvari dovolj vprašanj za dano "
+"število podravni z uporabo najmanjše in največje vrednosti operandov."
 
 #: server/activities/algebra_by/AlgebraEditor.qml:29
 msgctxt "AlgebraEditor|"
@@ -191,49 +190,49 @@ msgid ""
 "If \"Random operands\" is not selected, the sublevel list on the right side "
 "must not be empty."
 msgstr ""
-"თუ \"შემთხვევითი ოპერანდები\" არჩეული არაა, ქვედონეების სია მარჯვენა მხარეს "
-"ცარიელი არ უნდა იყოს."
+"Če \"Naključni operandi\" niso izbrani, seznam podravni na desni strani ne "
+"sme biti prazen."
 
 #: server/activities/algebra_by/AlgebraEditor.qml:33
 msgctxt "AlgebraEditor|"
 msgid "Random operands"
-msgstr "შემთხვევითი ოპერანდები"
+msgstr "Naključni operandi"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:34
 #: server/activities/algebra_by/AlgebraEditor.qml:39
 msgctxt "AlgebraEditor|"
 msgid "Sublevels"
-msgstr "ქვედონეები"
+msgstr "Podravni"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:35
 msgctxt "AlgebraEditor|"
 msgid "Minimum operand value"
-msgstr "მინიმალური ოპერანდის მნიშვნელობა"
+msgstr "Najmanjša vrednost operanda"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:36
 msgctxt "AlgebraEditor|"
 msgid "Maximum operand value"
-msgstr "მაქსიმალური ოპერანდის მნიშვნელობა"
+msgstr "Najvišja vrednost operanda"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:37
 msgctxt "AlgebraEditor|"
 msgid "Result value limit"
-msgstr "შედეგის მნიშვნელობის ზღვარი"
+msgstr "Omejitev vrednosti rezultata"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:38
 msgctxt "AlgebraEditor|"
 msgid "Shuffle"
-msgstr "შემთხვევით"
+msgstr "Premešaj"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:44
 msgctxt "AlgebraEditor|"
 msgid "First operand"
-msgstr "პირველი ოპერანდი"
+msgstr "Prvi operand"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:45
 msgctxt "AlgebraEditor|"
 msgid "Second operand"
-msgstr "მეორე ოპერანდი"
+msgstr "Drugi operand"
 
 #: server/activities/algebra_div/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
@@ -243,10 +242,9 @@ msgid ""
 "multiplying the right side operand by another number between minimum and "
 "maximum values."
 msgstr ""
-"როცა არჩეულია \"შემთხვევითი ოპერანდები\", მარჯვენა მხრის ოპერანდი ყოველთვის "
-"მინიმალურ და მაქსიმალურ მნიშვნელობებს შორისაა. მარცხენა მხრის ოპერანდის "
-"გენერაცია მარჯვენა მხრის ოპერანდის მინიმალურ და მაქსიმალურ მნიშვნელობებს "
-"შორის აღებული რიცხვზე გამრავლებით ხდება."
+"Ko so izbrani \"Naključni operandi\", je desni operand vedno med najmanjšo "
+"in največjo vrednostjo. Levi operand se generira z množenjem desnega "
+"operanda z drugim številom med najmanjšo in največjo vrednostjo."
 
 #: server/activities/algebra_div/ActivityEditor.qml:18
 msgctxt "ActivityEditor|"
@@ -254,49 +252,49 @@ msgid ""
 "If \"Random operands\" is not selected, for each sublevel you must make sure "
 "that the \"First operand\" is a multiple of the \"Second operand\"."
 msgstr ""
-"თუ \"შემთხვევითი ოპერანდები\" არჩეული არაა, თითოეული ქვედონისთვის უნდა "
-"დარწმუნდეთ, რომ \"პირველი ოპერანდი\" \"მეორე ოპერანდის\" ჯერადია."
+"Če možnost »Naključni operandi« ni izbrana, morate za vsako podraven "
+"zagotoviti, da je »Prvi operand« večkratnik »Drugega operanda«."
 
 #: server/activities/algebra_div/ActivityEditor.qml:23
 msgctxt "ActivityEditor|"
 msgid "Random operands"
-msgstr "შემთხვევითი ოპერანდები"
+msgstr "Naključni operandi"
 
 #: server/activities/algebra_div/ActivityEditor.qml:24
 #: server/activities/algebra_div/ActivityEditor.qml:29
 msgctxt "ActivityEditor|"
 msgid "Sublevels"
-msgstr "ქვედონეები"
+msgstr "Podravni"
 
 #: server/activities/algebra_div/ActivityEditor.qml:25
 msgctxt "ActivityEditor|"
 msgid "Minimum operand value"
-msgstr "მინიმალური ოპერანდის მნიშვნელობა"
+msgstr "Najmanjša vrednost operanda"
 
 #: server/activities/algebra_div/ActivityEditor.qml:26
 msgctxt "ActivityEditor|"
 msgid "Maximum operand value"
-msgstr "მაქსიმალური ოპერანდის მნიშვნელობა"
+msgstr "Najvišja vrednost operanda"
 
 #: server/activities/algebra_div/ActivityEditor.qml:27
 msgctxt "ActivityEditor|"
 msgid "Result value limit"
-msgstr "შედეგის მნიშვნელობის ზღვარი"
+msgstr "Omejitev vrednosti rezultata"
 
 #: server/activities/algebra_div/ActivityEditor.qml:28
 msgctxt "ActivityEditor|"
 msgid "Shuffle"
-msgstr "შემთხვევით"
+msgstr "Premešaj"
 
 #: server/activities/algebra_div/ActivityEditor.qml:34
 msgctxt "ActivityEditor|"
 msgid "First operand"
-msgstr "პირველი ოპერანდი"
+msgstr "Prvi operand"
 
 #: server/activities/algebra_div/ActivityEditor.qml:35
 msgctxt "ActivityEditor|"
 msgid "Second operand"
-msgstr "მეორე ოპერანდი"
+msgstr "Drugi operand"
 
 #: server/activities/algebra_minus/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
@@ -304,8 +302,8 @@ msgid ""
 "If \"Random operands\" is not selected, for each sublevel you must make sure "
 "that the \"First operand\" is greater than the \"Second operand\"."
 msgstr ""
-"თუ \"შემთხვევითი ოპერანდები\" არჩეული არაა, თითოეული ქვედონისთვის უნდა "
-"დარწმუნდეთ, რომ \"პირველი ოპერანდი\" \"მეორე ოპერანდზე\" მეტია."
+"Če možnost »Naključni operandi« ni izbrana, morate za vsako podraven "
+"zagotoviti, da je »Prvi operand« večji od »Drugega operanda«."
 
 #: server/activities/binary_bulb/ActivityEditor.qml:14
 msgctxt "ActivityEditor|"
@@ -314,19 +312,19 @@ msgid ""
 "list of integer numbers. Each number must be between 0 and the maximum "
 "number which can be represented with the given \"Bulb count\"."
 msgstr ""
-"თუ \"შემთხვევითი რიცხვები\" არჩეული არაა, \"საპოვნელი რიცხვი\" მთელი "
-"რიცხვების სიას უნდა შეიცავდეს. თითოეული რიცხვი უნდა იყოს 0-სა და მაქსიმალურ "
-"რიცხვს შორის, რომელიც \"ნათურების რაოდენობის\" მნიშვნელობითაა მითითებული."
+"Če možnost »Naključna števila« ni izbrana, mora možnost »Številke za "
+"iskanje« vsebovati seznam celih števil. Vsako število mora biti med 0 in "
+"največjim številom, ki ga je mogoče predstaviti z danim »Število žarnic«."
 
 #: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:28
 msgctxt "BinaryBulbDataDisplay|"
 msgid "Expected:"
-msgstr "მოსალოდნელი:"
+msgstr "Pričakovano:"
 
 #: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:34
 msgctxt "BinaryBulbDataDisplay|"
 msgid "Answer:"
-msgstr "პასუხი:"
+msgstr "Odgovor:"
 
 #. %1 is the numerical value, %2 is the binary value. Example: "5 (101)"
 #: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:46
@@ -339,48 +337,48 @@ msgstr "%1 (%2)"
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:28
 msgctxt "BinaryBulbEditor|"
 msgid "Random numbers"
-msgstr "შემთხვევითი რიცხვები"
+msgstr "Naključna števila"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:29
 msgctxt "BinaryBulbEditor|"
 msgid "Sublevels"
-msgstr "ქვედონეები"
+msgstr "Podravni"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:30
 msgctxt "BinaryBulbEditor|"
 msgid "Numbers to find"
-msgstr "საპოვნი რიცხვები"
+msgstr "Številke za iskanje"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:31
 msgctxt "BinaryBulbEditor|"
 msgid "Shuffle questions"
-msgstr "კითხვების შერევა"
+msgstr "Premešaj vprašanja"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:32
 msgctxt "BinaryBulbEditor|"
 msgid "Bulb count"
-msgstr "ნათურების რაოდენობა"
+msgstr "Število žarnic"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:33
 msgctxt "BinaryBulbEditor|"
 msgid "Display the current result"
-msgstr "მიმდინარე შედეგის ჩვენება"
+msgstr "Prikaži trenutni rezultat"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:34
 msgctxt "BinaryBulbEditor|"
 msgid "Display the bulb values"
-msgstr "ნათურის მნიშვნელობების ჩვენება"
+msgstr "Prikaži vrednosti žarnic"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:87
 msgctxt "BinaryBulbEditor|"
 msgid "Dataset is empty."
-msgstr "მონაცემთა ნაკრები ცარიელია."
+msgstr "Nabor podatkov je prazen."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:101
 #, qt-format
 msgctxt "BinaryBulbEditor|"
 msgid "\"Numbers to find\" for level %1 must not be empty."
-msgstr "\"საპოვნელი რიცხვები\" დონისთვის %1 ცარიელი არ უნდა იყოს."
+msgstr "»Števila za iskanje« za raven %1 ne smejo biti prazna."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:115
 #, qt-format
@@ -389,145 +387,145 @@ msgid ""
 "These values are invalid for level %1: %2. The values must be integer "
 "numbers between 0 and %3."
 msgstr ""
-"ეს რიცხვები არასწორია დონისთვის %1: %2. მნიშვნელობები უნდა იყოს მთელი "
-"რიცხვები შუალედიდან 0-%3."
+"Te vrednosti niso veljavne za raven %1: %2. Vrednosti morajo biti cela "
+"števila med 0 in %3."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:119
 #, qt-format
 msgctxt "BinaryBulbEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "საჭიროა შემდეგი შეცდომების გასწორება:<ul>%1</ul>"
+msgstr "Naslednje napake je treba odpraviti:<ul>%1</ul>"
 
 #: server/activities/clockgame/ClockGameDataDisplay.qml:30
 msgctxt "ClockGameDataDisplay|"
 msgid "Expected:"
-msgstr "მოსალოდნელი:"
+msgstr "Pričakovano:"
 
 #: server/activities/clockgame/ClockGameDataDisplay.qml:36
 msgctxt "ClockGameDataDisplay|"
 msgid "Answer:"
-msgstr "პასუხი:"
+msgstr "Odgovor:"
 
 #: server/activities/clockgame/ClockgameEditor.qml:27
 msgctxt "ClockgameEditor|"
 msgid "Exercise count"
-msgstr "სავარჯიშოების რაოდენობა"
+msgstr "Število vaj"
 
 #: server/activities/clockgame/ClockgameEditor.qml:28
 msgctxt "ClockgameEditor|"
 msgid "Find minutes"
-msgstr "წუთების პოვნა"
+msgstr "Poišči minute"
 
 #: server/activities/clockgame/ClockgameEditor.qml:29
 msgctxt "ClockgameEditor|"
 msgid "Find seconds"
-msgstr "წამების პოვნა"
+msgstr "Poišči sekunde"
 
 #: server/activities/clockgame/ClockgameEditor.qml:30
 msgctxt "ClockgameEditor|"
 msgid "Display hours numbers"
-msgstr "საათების ნომრების ჩვენება"
+msgstr "Prikaži število ur"
 
 #: server/activities/clockgame/ClockgameEditor.qml:31
 msgctxt "ClockgameEditor|"
 msgid "Display hours marks"
-msgstr "საათების ნიშნის ჩვენება"
+msgstr "Prikaži oznake ur"
 
 #: server/activities/clockgame/ClockgameEditor.qml:32
 msgctxt "ClockgameEditor|"
 msgid "Grey/white background between each hour"
-msgstr "ნაცრისფერი/თეთრი ფონი თითოეულ საათს შორის"
+msgstr "Sivo/belo ozadje med posameznimi urami"
 
 #: server/activities/clockgame/ClockgameEditor.qml:33
 msgctxt "ClockgameEditor|"
 msgid "Display minutes numbers"
-msgstr "წუთების ნომრების ჩვენება"
+msgstr "Prikaži število minut"
 
 #: server/activities/clockgame/ClockgameEditor.qml:34
 msgctxt "ClockgameEditor|"
 msgid "Hide the Hint button in the bar (which gives the current time)"
-msgstr "მინიშნებების ღილაკის დამალვა პანელზე (რომელიც მიმდინარე დროს გაძლევთ)"
+msgstr "Skrij gumb Namig v vrstici (ki prikazuje trenutni čas)"
 
 #: server/activities/clockgame/ClockgameEditor.qml:35
 msgctxt "ClockgameEditor|"
 msgid "Fixed hour"
-msgstr "ფიქსირებული საათი"
+msgstr "Popravljena ura"
 
 #: server/activities/clockgame/ClockgameEditor.qml:36
 #: server/activities/clockgame/ClockgameEditor.qml:38
 #: server/activities/clockgame/ClockgameEditor.qml:40
 msgctxt "ClockgameEditor|"
 msgid "Value"
-msgstr "მნიშვნელობა"
+msgstr "Vrednost"
 
 #: server/activities/clockgame/ClockgameEditor.qml:37
 msgctxt "ClockgameEditor|"
 msgid "Fixed minutes"
-msgstr "ფიქსირებული წუთი"
+msgstr "Popravljene minute"
 
 #: server/activities/clockgame/ClockgameEditor.qml:39
 msgctxt "ClockgameEditor|"
 msgid "Fixed seconds"
-msgstr "ფიქსირებული წამი"
+msgstr "Popravljene sekunde"
 
 #: server/activities/comparator/ComparatorDataDisplay.qml:30
 msgctxt "ComparatorDataDisplay|"
 msgid "Result:"
-msgstr "შედეგი:"
+msgstr "Rezultat:"
 
 #: server/activities/comparator/ComparatorEditor.qml:29
 msgctxt "ComparatorEditor|"
 msgid "Shuffle"
-msgstr "შემთხვევით"
+msgstr "Premešaj"
 
 #: server/activities/comparator/ComparatorEditor.qml:30
 msgctxt "ComparatorEditor|"
 msgid "Questions"
-msgstr "კითხვები"
+msgstr "Vprašanja"
 
 #: server/activities/comparator/ComparatorEditor.qml:36
 msgctxt "ComparatorEditor|"
 msgid "Left number"
-msgstr "მარცხენა რიცხვი"
+msgstr "Levo število"
 
 #: server/activities/comparator/ComparatorEditor.qml:37
 msgctxt "ComparatorEditor|"
 msgid "Right number"
-msgstr "მარჯვენა რიცხვი"
+msgstr "Desna število"
 
 #: server/activities/comparator/ComparatorEditor.qml:109
 msgctxt "ComparatorEditor|"
 msgid "Dataset is empty."
-msgstr "მონაცემთა ნაკრები ცარიელია."
+msgstr "Nabor podatkov je prazen."
 
 #: server/activities/comparator/ComparatorEditor.qml:119
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "Level %1 must not be empty."
-msgstr "დონე %1 ცარიელი არ უნდა იყოს."
+msgstr "Raven %1 ne sme biti prazna."
 
 #: server/activities/comparator/ComparatorEditor.qml:126
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "\"Left number\" in Question %1 of Level %2 must contain a number."
-msgstr "\"მარცხენა რიცხვი\" %2 დონის %1 კითხვაში რიცხვს უნდა შეიცავდეს."
+msgstr "»Levo število« v vprašanju %1 ravni %2 mora vsebovati število."
 
 #: server/activities/comparator/ComparatorEditor.qml:130
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "\"Right number\" in Question %1 of Level %2 must contain a number."
-msgstr "\"მარჯვენა რიცხვი\" %2 დონის %1 კითხვაში რიცხვს უნდა შეიცავდეს."
+msgstr "»Desno število« v vprašanju %1 ravni %2 mora vsebovati število."
 
 #: server/activities/comparator/ComparatorEditor.qml:136
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "საჭიროა შემდეგი შეცდომების გასწორება:<ul>%1</ul>"
+msgstr "Naslednje napake je treba odpraviti:<ul>%1</ul>"
 
 #: server/activities/DailyReport.qml:33
 msgctxt "DailyReport|"
 msgid "All groups"
-msgstr "ყველა ჯგუფი"
+msgstr "Vse skupine"
 
 #. Group name first, then Date range, with a space between them. Example: "Group Name 01/07/2025-08/07/2025"
 #: server/activities/DailyReport.qml:126
@@ -539,29 +537,29 @@ msgstr "%1 %2"
 #: server/activities/DailyReport.qml:130
 msgctxt "DailyReport|"
 msgid "Calendar"
-msgstr "კალენდარი"
+msgstr "Koledar"
 
 #: server/activities/DailyReport.qml:185
 msgctxt "DailyReport|"
 msgid "Count"
-msgstr "რაოდენობა"
+msgstr "Število"
 
 #: server/activities/DailyReport.qml:195
 msgctxt "DailyReport|"
 msgid "Time"
-msgstr "დრო"
+msgstr "Čas"
 
 #: server/activities/DailyReport.qml:205
 msgctxt "DailyReport|"
 msgid "Ratio"
-msgstr "პროპორციები"
+msgstr "Razmerje"
 
 #. Number of result lines
 #: server/activities/DailyReport.qml:217
 #, qt-format
 msgctxt "DailyReport|"
 msgid "Lines: %1"
-msgstr "ხაზები: %1"
+msgstr "Vrste: %1"
 
 #. Success ratio, example: "50 %"
 #: server/activities/DailyReport.qml:316
@@ -575,159 +573,159 @@ msgctxt "ActivityEditor|"
 msgid ""
 "\"Instruction\" must contain some text telling the fraction to represent."
 msgstr ""
-"\"ინსტრუქცია\" უნდა შეიცავდეს ტექსტს რომელიც წილადის წარმოდგენას აღწერს."
+"»Navodilo« mora vsebovati besedilo, ki navaja, da naj ulomek predstavlja."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:29
 msgctxt "FractionsCreateEditor|"
 msgid "Shuffle"
-msgstr "შემთხვევით"
+msgstr "Premešaj"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:30
 msgctxt "FractionsCreateEditor|"
 msgid "Questions"
-msgstr "კითხვები"
+msgstr "Vprašanja"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:36
 msgctxt "FractionsCreateEditor|"
 msgid "Numerator"
-msgstr "მრიცხველი"
+msgstr "Števec"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:37
 msgctxt "FractionsCreateEditor|"
 msgid "Denominator"
-msgstr "მნიშვნელი"
+msgstr "Imenovalec"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:38
 msgctxt "FractionsCreateEditor|"
 msgid "Instruction"
-msgstr "ინსტრუქცია"
+msgstr "Navodilo"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:130
 msgctxt "FractionsCreateEditor|"
 msgid "Dataset is empty."
-msgstr "მონაცემთა ნაკრები ცარიელია."
+msgstr "Nabor podatkov je prazen."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:140
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "Level %1 must not be empty."
-msgstr "დონე %1 ცარიელი არ უნდა იყოს."
+msgstr "Raven %1 ne sme biti prazna."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:146
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "\"Instruction\" of Question %1 from Level %2 must not be empty."
-msgstr "\"ინსტრუქცია\" %2 დონის %1 ქვედონეზე არ შეიძლება, ცარიელი იყოს."
+msgstr "\"Navodilo\" vprašanja %1 z ravni %2 ne sme biti prazno."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:152
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "საჭიროა შემდეგი შეცდომების გასწორება:<ul>%1</ul>"
+msgstr "Naslednje napake je treba popraviti:<ul>%1</ul>"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:160
 msgctxt "FractionsCreateEditor|"
 msgid "Rectangle"
-msgstr "მართკუთხედი"
+msgstr "Pravokotnik"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:161
 msgctxt "FractionsCreateEditor|"
 msgid "Circle"
-msgstr "წრე"
+msgstr "Krog"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:164
 msgctxt "FractionsCreateEditor|"
 msgid "Chart Type"
-msgstr "დიაგრამის ტიპი"
+msgstr "Vrsta grafikona"
 
 #: server/activities/fractions_find/FractionsFindDataDisplay.qml:26
 msgctxt "FractionsFindDataDisplay|"
 msgid "Expected:"
-msgstr "მოსალოდნელი:"
+msgstr "Pričakovano:"
 
 #: server/activities/fractions_find/FractionsFindDataDisplay.qml:60
 msgctxt "FractionsFindDataDisplay|"
 msgid "Answer:"
-msgstr "პასუხი:"
+msgstr "Odgovor:"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:29
 msgctxt "FractionsFindEditor|"
 msgid "Shuffle"
-msgstr "შემთხვევით"
+msgstr "Premešaj"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:30
 msgctxt "FractionsFindEditor|"
 msgid "Questions"
-msgstr "კითხვები"
+msgstr "Vprašanja"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:36
 msgctxt "FractionsFindEditor|"
 msgid "Static numerator"
-msgstr "სტატიკური მრიცხველი"
+msgstr "Statični števec"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:37
 msgctxt "FractionsFindEditor|"
 msgid "Static denominator"
-msgstr "სტატიკური მნიშვნელი"
+msgstr "Statični imenovalec"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:38
 msgctxt "FractionsFindEditor|"
 msgid "Numerator"
-msgstr "მრიცხველი"
+msgstr "Števec"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:39
 msgctxt "FractionsFindEditor|"
 msgid "Denominator"
-msgstr "მნიშვნელი"
+msgstr "Imenovalec"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:40
 msgctxt "FractionsFindEditor|"
 msgid "Maximum of units"
-msgstr "ერთეულების მაქსიმალური რაოდენობა"
+msgstr "Največ enot"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:41
 msgctxt "FractionsFindEditor|"
 msgid "Random fraction"
-msgstr "შემთხვევითი წილადი"
+msgstr "Naključni ulomek"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:159
 msgctxt "FractionsFindEditor|"
 msgid "Dataset is empty."
-msgstr "მონაცემთა ნაკრები ცარიელია."
+msgstr "Nabor podatkov je prazen."
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:169
 #, qt-format
 msgctxt "FractionsFindEditor|"
 msgid "Level %1 must not be empty."
-msgstr "დონე %1 ცარიელი არ უნდა იყოს."
+msgstr "Raven %1 ne sme biti prazna."
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:173
 #, qt-format
 msgctxt "FractionsFindEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "საჭიროა შემდეგი შეცდომების გასწორება:<ul>%1</ul>"
+msgstr "Naslednje napake je treba odpraviti:<ul>%1</ul>"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:181
 msgctxt "FractionsFindEditor|"
 msgid "Rectangle"
-msgstr "მართკუთხედი"
+msgstr "Pravokotnik"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:182
 msgctxt "FractionsFindEditor|"
 msgid "Circle"
-msgstr "წრე"
+msgstr "Krog"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:185
 msgctxt "FractionsFindEditor|"
 msgid "Chart Type"
-msgstr "დიაგრამის ტიპი"
+msgstr "Vrsta grafikona"
 
 #. %1 is number of hints displayed. Example: "Hints: 1"
 #: server/activities/guess24/Guess24DataDisplay.qml:79
 #, qt-format
 msgctxt "Guess24DataDisplay|"
 msgid "Hints: %1"
-msgstr "მინიშნებები: %1"
+msgstr "Namigi: %1"
 
 #: server/activities/learn_additions/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
@@ -735,8 +733,8 @@ msgid ""
 "\"Additions\" must contain a list of additions which results are between 0 "
 "and 9."
 msgstr ""
-"\"მიმატებები\" უნდა შეიცავდეს მიმატებების სიას, რომლის შედეგიც არის "
-"შუალედიდან 0-9."
+"\"Seštevanja\" morajo vsebovati seznam seštevanj, katerih rezultati so med 0 "
+"in 9."
 
 #: server/activities/learn_additions/ActivityEditor.qml:18
 #: server/activities/learn_subtractions/ActivityEditor.qml:18
@@ -744,138 +742,140 @@ msgctxt "ActivityEditor|"
 msgid ""
 "\"Number of circles\" can not be smaller than the largest result to find."
 msgstr ""
-"\"წრეების რაოდენობა\" არ შეიძლება, უდიდეს საპოვნელ შედეგზე ნაკლები იყოს."
+"\"Število krogov\" ne sme biti manjše od največjega rezultata, ki ga je "
+"treba najti."
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:28
 msgctxt "LearnDecimalsEditor|"
 msgid "Shuffle"
-msgstr "შემთხვევით"
+msgstr "Premešaj"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:29
 msgctxt "LearnDecimalsEditor|"
 msgid "Sublevels"
-msgstr "ქვედონეები"
+msgstr "Podravni"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:39
 msgctxt "LearnDecimalsEditor|"
 msgid "Fixed Number"
-msgstr "ფიქსირებული რიცხვი"
+msgstr "Fiksno število"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:40
 msgctxt "LearnDecimalsEditor|"
 msgid "Minimum Value"
-msgstr "მინიმალური მნიშვნელობა"
+msgstr "Najmanjša vrednost"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:41
 msgctxt "LearnDecimalsEditor|"
 msgid "Maximum Value"
-msgstr "მაქსიმალური მნიშვნელობა"
+msgstr "Najvišja vrednost"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:140
 msgctxt "LearnDecimalsEditor|"
 msgid "Dataset is empty."
-msgstr "მონაცემთა ნაკრები ცარიელია."
+msgstr "Nabor podatkov je prazen."
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:150
 #, qt-format
 msgctxt "LearnDecimalsEditor|"
 msgid "Level %1 must not be empty."
-msgstr "დონე %1 ცარიელი არ უნდა იყოს."
+msgstr "Raven %1 ne sme biti prazna."
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:154
 #, qt-format
 msgctxt "LearnDecimalsEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "საჭიროა შემდეგი შეცდომების გასწორება:<ul>%1</ul>"
+msgstr "Naslednje napake je treba odpraviti:<ul>%1</ul>"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:162
 msgctxt "LearnDecimalsEditor|"
 msgid "Random"
-msgstr "შემთხვევითი"
+msgstr "Naključno"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:163
 msgctxt "LearnDecimalsEditor|"
 msgid "Fixed"
-msgstr "ფიქსირებული"
+msgstr "Fiksno"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:168
 msgctxt "LearnDecimalsEditor|"
 msgid "Mode"
-msgstr "რეჟიმი"
+msgstr "Način"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:29
 msgctxt "DecimalAdditionEditor|"
 msgid "Shuffle"
-msgstr "შემთხვევით"
+msgstr "Premešaj"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:30
 msgctxt "DecimalAdditionEditor|"
 msgid "Sublevels"
-msgstr "ქვედონეები"
+msgstr "Podravni"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:41
 msgctxt "DecimalAdditionEditor|"
 msgid "First Number"
-msgstr "პირველი რიცხვი"
+msgstr "Prvo število"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:42
 msgctxt "DecimalAdditionEditor|"
 msgid "Second Number"
-msgstr "მეორე რიცხვი"
+msgstr "Drugo število"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:43
 msgctxt "DecimalAdditionEditor|"
 msgid "Minimum Value"
-msgstr "მინიმალური მნიშვნელობა"
+msgstr "Najmanjša vrednost"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:44
 msgctxt "DecimalAdditionEditor|"
 msgid "Maximum Value"
-msgstr "მაქსიმალური მნიშვნელობა"
+msgstr "Najvišja vrednost"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:182
 msgctxt "DecimalAdditionEditor|"
 msgid "Dataset is empty."
-msgstr "მონაცემთა ნაკრები ცარიელია."
+msgstr "Nabor podatkov je prazen."
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:192
 #, qt-format
 msgctxt "DecimalAdditionEditor|"
 msgid "Level %1 must not be empty."
-msgstr "დონე %1 ცარიელი არ უნდა იყოს."
+msgstr "Raven %1 ne sme biti prazna."
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:196
 #, qt-format
 msgctxt "DecimalAdditionEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "საჭიროა შემდეგი შეცდომების გასწორება:<ul>%1</ul>"
+msgstr "Naslednje napake je treba odpraviti:<ul>%1</ul>"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:204
 msgctxt "DecimalAdditionEditor|"
 msgid "Random"
-msgstr "შემთხვევითი"
+msgstr "Naključno"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:205
 msgctxt "DecimalAdditionEditor|"
 msgid "Fixed"
-msgstr "ფიქსირებული"
+msgstr "Fiksno"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:210
 msgctxt "DecimalAdditionEditor|"
 msgid "Mode"
-msgstr "რეჟიმი"
+msgstr "Način"
 
 #: server/activities/learn_digits/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
 msgid "\"Numbers\" must contain a list of numbers between 0 and 9."
-msgstr "\"რიცხვები\" უნდა შეიცავდეს რიცხვების სიას შუალედიდან 0-9."
+msgstr "\"Številke\" morajo vsebovati seznam števil med 0 in 9."
 
 #: server/activities/learn_digits/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Number of circles\" can not be smaller than the largest number to find."
 msgstr ""
-"\"წრეების რაოდენობა\" არ შეიძლება, უდიდეს საპოვნელ რიცხვზე ნაკლები იყოს."
+"»Število krogov« ne sme biti manjše od največjega števila, ki ga je treba "
+"najti."
 
 #. %1 is an operation, %2 the result. Example: "2 x 5 = 10"
 #: server/activities/learn_digits/LearnDigitsDataDisplay.qml:24
@@ -889,22 +889,22 @@ msgstr "%1 = %2"
 #, qt-format
 msgctxt "LearnDigitsDataDisplay|"
 msgid "Answer: %1"
-msgstr "პასუხი: %1"
+msgstr "Odgovor: %1"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:32
 msgctxt "LearnDigitsEditor|"
 msgid "Number of circles"
-msgstr "წრეების რაოდენობა"
+msgstr "Število krogov"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:33
 msgctxt "LearnDigitsEditor|"
 msgid "Random order"
-msgstr "შემთხვევითი მიმდევრობა"
+msgstr "Naključni vrstni red"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:99
 msgctxt "LearnDigitsEditor|"
 msgid "Dataset is empty."
-msgstr "მონაცემთა ნაკრები ცარიელია."
+msgstr "Nabor podatkov je prazen."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:101
 msgctxt "LearnDigitsEditor|"
@@ -912,8 +912,8 @@ msgid ""
 "\"Numbers\" must only contain integer numbers between 0 and 9, and must not "
 "be empty."
 msgstr ""
-"\"რიცხვები\" უნდა შეიცავდეს, მხოლოდ, მთელ რიცხვებს, შუალედიდან 0-9 და არ "
-"უნდა იყოს ცარიელი."
+"»Številke« morajo vsebovati samo cela števila med 0 in 9 in ne smejo biti "
+"prazne."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:103
 msgctxt "LearnDigitsEditor|"
@@ -921,8 +921,8 @@ msgid ""
 "\"Additions\" must only contain additions which results are integer numbers "
 "between 0 and 9, and must not be empty."
 msgstr ""
-"\"დამატებები\", მხოლოდ, მიმატებებს უნდა შეიცავდეს, რომლის შედეგიც მთელი "
-"რიცხვებია შუალედიდან 0-9 და არ უნდა იყოს ცარიელი."
+"»Seštevanja« morajo vsebovati samo seštevanja, katerih rezultati so cela "
+"števila med 0 in 9, in ne smejo biti prazne."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:105
 msgctxt "LearnDigitsEditor|"
@@ -930,38 +930,38 @@ msgid ""
 "\"Subtractions\" must only contain subtractions which results are integer "
 "numbers between 0 and 9, and must not be empty."
 msgstr ""
-"\"გამოკლებები\", მხოლოდ, გამოკლებებს უნდა შეიცავდეს, რომლის შედეგიც მთელი "
-"რიცხვებია შუალედიდან 0-9 და არ უნდა იყოს ცარიელი."
+"»Odštevanja« morajo vsebovati samo odštevanja, katerih rezultati so cela "
+"števila med 0 in 9, in ne smejo biti prazne."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:161
 msgctxt "LearnDigitsEditor|"
 msgid "Numbers"
-msgstr "რიცხვები"
+msgstr "Številke"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:163
 msgctxt "LearnDigitsEditor|"
 msgid "Additions"
-msgstr "დამატებები"
+msgstr "Seštevanja"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:165
 msgctxt "LearnDigitsEditor|"
 msgid "Subtractions"
-msgstr "გამოკლებები"
+msgstr "Odštevanja"
 
 #: server/activities/learn_quantities/ActivityEditor.qml:24
 msgctxt "ActivityEditor|"
 msgid "Fixed Number"
-msgstr "ფიქსირებული რიცხვი"
+msgstr "Fiksno število"
 
 #: server/activities/learn_quantities/ActivityEditor.qml:25
 msgctxt "ActivityEditor|"
 msgid "Minimum Value"
-msgstr "მინიმალური მნიშვნელობა"
+msgstr "Najmanjša vrednost"
 
 #: server/activities/learn_quantities/ActivityEditor.qml:26
 msgctxt "ActivityEditor|"
 msgid "Maximum Value"
-msgstr "მაქსიმალური მნიშვნელობა"
+msgstr "Najvišja vrednost"
 
 #: server/activities/learn_subtractions/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
@@ -969,37 +969,37 @@ msgid ""
 "\"Subtractions\" must contain a list of subtractions which results are "
 "between 0 and 9."
 msgstr ""
-"\"გამოკლებები\" უნდა შეიცავდეს გამოკლებების სიას, რომლის შედეგებიც არის "
-"შუალედიდან 0-9."
+"»Odštevanja« morajo vsebovati seznam odštevanj, katerih rezultati so med 0 "
+"in 9."
 
 #: server/activities/LineReport.qml:65
 msgctxt "LineReport|"
 msgid "Back"
-msgstr "უკან"
+msgstr "Nazaj"
 
 #: server/activities/LineReport.qml:71
 msgctxt "LineReport|"
 msgid "Refresh"
-msgstr "განახლება"
+msgstr "Osveži"
 
 #: server/activities/LineReport.qml:77
 #, qt-format
 msgctxt "LineReport|"
 msgid "Lines: %1"
-msgstr "ხაზები: %1"
+msgstr "Vrste: %1"
 
 #: server/activities/LineReport.qml:227
 #, qt-format
 msgctxt "LineReport|"
 msgid "Level: <b>%1</b>"
-msgstr "დონე: <b>%1</b>"
+msgstr "Raven: <b>%1</b>"
 
 #. Result duration in seconds. Example: "Duration: 25s"
 #: server/activities/LineReport.qml:243 server/activities/LineReport.qml:253
 #, qt-format
 msgctxt "LineReport|"
 msgid "Duration: %1s"
-msgstr "ხანგრძლივობა: %1წმ"
+msgstr "Trajanje: %1s"
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
@@ -1007,8 +1007,8 @@ msgid ""
 "In \"Single answer\" mode, users can select only one answer. In \"Multiple "
 "answers\" mode, they can select multiple answers."
 msgstr ""
-"\"ერთი პასუხის\" რეჟიმში მომხმარებლებს, მხოლოდ, ერთი პასუხის არჩევა "
-"შეუძლიათ. \"ერთზე მეტი პასუხის\" რეჟიმში კი - ბევრის."
+"V načinu »En odgovor« lahko uporabniki izberejo samo en odgovor. V načinu "
+"»Več odgovorov« lahko izberejo več odgovorov."
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
@@ -1016,8 +1016,8 @@ msgid ""
 "All entries in the \"Correct answers\" list must also be present in the "
 "\"Answers\" list."
 msgstr ""
-"\"სწორი პასუხების\" სიის ყველა ჩანაწერი ასევე უნდა არსებობდეს \"პასუხების\" "
-"სიაშიც."
+"Vsi vnosi na seznamu »Pravilni odgovori« morajo biti prisotni tudi na "
+"seznamu »Odgovori«."
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:19
 msgctxt "ActivityEditor|"
@@ -1026,98 +1026,98 @@ msgid ""
 "displayed after users validate their answer. You can leave those empty if "
 "you want."
 msgstr ""
-"\"სწორი პასუხის ტექსტი\" და \"არასწორი პასუხის ტექსტი\" არის არასავალდებულო "
-"შეტყობინებები, რომლებიც გამოჩნდება მომხმარებლების პასუხის დადასტურების "
-"შემდეგ. თუ გსურთ, შეგიძლიათ დატოვოთ ისინი ცარიელი."
+"»Pravilno besedilo odgovora« in »Napačno besedilo odgovora« sta izbirni "
+"sporočili, ki se prikažeta, ko uporabniki potrdijo svoj odgovor. Polji lahko "
+"pustite prazni, če želite."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:27
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Question:"
-msgstr "კითხვა:"
+msgstr "Vprašanje:"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:33
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Answer:"
-msgstr "პასუხი:"
+msgstr "Odgovor:"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:39
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Expected:"
-msgstr "მოსალოდნელი:"
+msgstr "Pričakovano:"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:45
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Proposed:"
-msgstr "შემოთავაზებული:"
+msgstr "Predlagano:"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:29
 msgctxt "MultipleChoiceEditor|"
 msgid "Shuffle"
-msgstr "შემთხვევით"
+msgstr "Premešaj"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:30
 msgctxt "MultipleChoiceEditor|"
 msgid "Sublevels"
-msgstr "ქვედონეები"
+msgstr "Podravni"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:36
 msgctxt "MultipleChoiceEditor|"
 msgid "Shuffle answers"
-msgstr "პასუხების შერევა"
+msgstr "Premešaj odgovore"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:37
 msgctxt "MultipleChoiceEditor|"
 msgid "Question"
-msgstr "კითხვა"
+msgstr "Vprašanje"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:38
 msgctxt "MultipleChoiceEditor|"
 msgid "Answers"
-msgstr "პასუხები"
+msgstr "Odgovori"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:39
 msgctxt "MultipleChoiceEditor|"
 msgid "Correct answers"
-msgstr "სწორი პასუხები"
+msgstr "Pravilni odgovori"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:40
 msgctxt "MultipleChoiceEditor|"
 msgid "Correct answer text"
-msgstr "სწორი პასუხის ტექსტი"
+msgstr "Besedilo pravilnega odgovora"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:41
 msgctxt "MultipleChoiceEditor|"
 msgid "Wrong answer text"
-msgstr "არასწორი პასუხის ტექსტი"
+msgstr "Besedilo napačnega odgovora"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:121
 msgctxt "MultipleChoiceEditor|"
 msgid "Dataset is empty."
-msgstr "მონაცემთა ნაკრები ცარიელია."
+msgstr "Nabor podatkov je prazen."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:131
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "Level %1 must not be empty."
-msgstr "დონე %1 ცარიელი არ უნდა იყოს."
+msgstr "Raven %1 ne sme biti prazna."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:138
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Question\" in Sublevel %1 of Level %2 must not be empty."
-msgstr "\"კითხვა\" %2 დონის %1 ქვედონეზე არ შეიძლება, ცარიელი იყოს."
+msgstr "»Vprašanje« v podravni %1 ravni %2 ne sme biti prazno."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:143
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Answers\" in Sublevel %1 of Level %2 must not be empty."
-msgstr "\"პასუხები\" %2 დონის %1 ქვედონეზე არ შეიძლება, ცარიელი იყოს."
+msgstr "»Odgovori« v podravni %1 ravni %2 ne smejo biti prazni."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:148
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Correct answers\" in Sublevel %1 of Level %2 must not be empty."
-msgstr "\"სწორი პასუხები\" %2 დონის %1 ქვედონეზე არ შეიძლება, ცარიელი იყოს."
+msgstr "»Pravilni odgovori« v podravni %1 ravni %2 ne smejo biti prazni."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:155
 #, qt-format
@@ -1125,128 +1125,129 @@ msgctxt "MultipleChoiceEditor|"
 msgid ""
 "In Sublevel %1 of Level %2, the correct answer \"%3\" is not in the \"Answers"
 "\" list."
-msgstr "%2 დონის %1 ქვედონეზე სწორი პასუხი \"%3\" პასუხების სიაში არაა."
+msgstr ""
+"V podravni %1 ravni %2 pravilnega odgovora »%3« ni na seznamu »Odgovorov«."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:163
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "საჭიროა შემდეგი შეცდომების გასწორება:<ul>%1</ul>"
+msgstr "Naslednje napake je treba odpraviti:<ul>%1</ul>"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:171
 msgctxt "MultipleChoiceEditor|"
 msgid "Single answer"
-msgstr "ერთი პასუხი"
+msgstr "En sam odgovor"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:172
 msgctxt "MultipleChoiceEditor|"
 msgid "Multiple answers"
-msgstr "ერთზე მეტი პასუხი"
+msgstr "Več odgovorov"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:177
 msgctxt "MultipleChoiceEditor|"
 msgid "Mode"
-msgstr "რეჟიმი"
+msgstr "Način"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:29
 msgctxt "VerticalEditor|"
 msgid "Sublevels"
-msgstr "ქვედონეები"
+msgstr "Podravni"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:31
 msgctxt "VerticalEditor|"
 msgid "Number of digits"
-msgstr "ციფრების რაოდენობა"
+msgstr "Število števk"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:33
 msgctxt "VerticalEditor|"
 msgid "Number of lines"
-msgstr "ხაზების რაოდენობა"
+msgstr "Število vrstic"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:34
 msgctxt "VerticalEditor|"
 msgid "With carry"
-msgstr "გადატანით"
+msgstr "S prenosom"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:35
 msgctxt "VerticalEditor|"
 msgid "Already laid"
-msgstr "უკვე დაწვა"
+msgstr "Že položeno"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:36
 msgctxt "VerticalEditor|"
 msgid "Write your operation"
-msgstr "დაწერეთ თქვენი ოპერაცია"
+msgstr "Zapiši svojo operacijo"
 
 #: server/components/CalendarPane.qml:77
 msgctxt "CalendarPane|"
 msgid "Calendar"
-msgstr "კალენდარი"
+msgstr "Koledar"
 
 #: server/components/CheckUserEditDelegate.qml:34
 msgctxt "CheckUserEditDelegate|"
 msgid "Edit pupil"
-msgstr "მოსწავლის ჩასწორება"
+msgstr "Uredi učenca"
 
 #: server/components/EditorBox.qml:84
 msgctxt "EditorBox|"
 msgid "Add"
-msgstr "დამატება"
+msgstr "Dodaj"
 
 #: server/components/EditorBox.qml:95
 msgctxt "EditorBox|"
 msgid "Remove"
-msgstr "წაშლა"
+msgstr "Odstrani"
 
 #: server/components/EditorBox.qml:107
 msgctxt "EditorBox|"
 msgid "Move up"
-msgstr "აწევა"
+msgstr "Premakni gor"
 
 #: server/components/EditorBox.qml:118
 msgctxt "EditorBox|"
 msgid "Move down"
-msgstr "ჩამოწევა"
+msgstr "Premakni dol"
 
 #: server/components/FieldEdit.qml:318
 msgctxt "FieldEdit|"
 msgid "Add an entry"
-msgstr "ელემენტის დამატება"
+msgstr "Dodaj vnos"
 
 #: server/components/FieldEdit.qml:330
 msgctxt "FieldEdit|"
 msgid "Remove last entry"
-msgstr "ბოლო ჩანაწერის წაშლა"
+msgstr "Odstrani zadnji vnos"
 
 #: server/components/FoldDown.qml:138
 msgctxt "FoldDown|"
 msgid "Filter list"
-msgstr "სიის გაფილტვრა"
+msgstr "Filtriraj seznam"
 
 #: server/components/OkCancelButtons.qml:19
 msgctxt "OkCancelButtons|"
 msgid "OK"
-msgstr "დიახ"
+msgstr "V redu"
 
 #: server/components/OkCancelButtons.qml:20
 msgctxt "OkCancelButtons|"
 msgid "Cancel"
-msgstr "გაუქმება"
+msgstr "Prekliči"
 
 #: server/components/RadioGroupEditDelegate.qml:60
 msgctxt "RadioGroupEditDelegate|"
 msgid "Edit group"
-msgstr "ჯგუფის ჩასწორება"
+msgstr "Uredi skupino"
 
 #: server/components/RadioGroupEditDelegate.qml:72
 msgctxt "RadioGroupEditDelegate|"
 msgid "Delete group"
-msgstr "ჯგუფის წაშლა"
+msgstr "Izbriši skupino"
 
 #: server/components/ServerLanguageList.qml:32
 msgctxt "ServerLanguageList|"
 msgid "Your system default"
-msgstr "თქვენი სისტემის ნაგულისხმევი"
+msgstr "Privzeta nastavitev sistema"
 
 #: server/controllers/database-controller.cpp:83
 #: server/controllers/database-controller.cpp:89
@@ -1255,263 +1256,259 @@ msgctxt "controllers::DatabaseController|"
 msgid ""
 "File %1\n"
 "Error SQL: %2"
-msgstr ""
-"ფაილი %1\n"
-"შეცდომის SQL: %2"
+msgstr "Datoteka %1 Napaka SQL: %2"
 
 #: server/controllers/database-controller.cpp:125
 msgctxt "controllers::DatabaseController|"
 msgid "Table teacher_ could not be updated to current version."
-msgstr "ცხრილის teacher_ მიმდინარე ვერსიამდე განახლება შეუძლებელია."
+msgstr "Tabele teacher_ ni bilo mogoče posodobiti na trenutno različico."
 
 #: server/controllers/database-controller.cpp:351
 msgctxt "controllers::DatabaseController|"
 msgid "Error creating teacher."
-msgstr "მასწავლებლის შექმნის შეცდომა."
+msgstr "Napaka pri ustvarjanju učitelja."
 
 #: server/controllers/database-controller.cpp:373
 msgctxt "controllers::DatabaseController|"
 msgid "Wrong password."
-msgstr "არასწორი პაროლი."
+msgstr "Napačno geslo."
 
 #: server/controllers/database-controller.cpp:417
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> already exists."
-msgstr "ჯგუფი <b>%1</b> უკვე არსებობს."
+msgstr "Skupina <b>%1</b> že obstaja."
 
 #: server/controllers/database-controller.cpp:438
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be updated to <b>%2</b>."
-msgstr "ჯგუფის <b>%1</b> განახლება შეუძლებელია ვერსიამდე <b>%2</b>."
+msgstr "Skupine <b>%1</b> ni bilo mogoče posodobiti na <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:456
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_."
-msgstr "ჯგუფის <b>%1</b> წაშლა შეუძლებელია ცხრილიდან group_."
+msgstr "Skupine <b>%1</b> ni bilo mogoče izbrisati iz tabele group_."
 
 #: server/controllers/database-controller.cpp:459
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_user_."
-msgstr "ჯგუფის <b>%1</b> წაშლა შეუძლებელია ცხრილიდან group_user_."
+msgstr "Skupine <b>%1</b> ni bilo mogoče izbrisati iz tabele group_user_."
 
 #: server/controllers/database-controller.cpp:483
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Pupil login <b>%1</b> already exists or password is empty."
-msgstr ""
-"მოსწავლის მომხმარებლის სახელი <b>%1</b> უკვე არსებობს, ან პაროლი ცარიელია."
+msgstr "Prijava učenca <b>%1</b> že obstaja ali pa je geslo prazno."
 
 #: server/controllers/database-controller.cpp:502
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "<b>%1</b> could not be updated to <b>%2</b>."
-msgstr "<b>%1</b>-ის განახლება შეუძლებელია ვერსიამდე <b>%2</b>."
+msgstr "<b>%1</b> ni bilo mogoče posodobiti na <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:522
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table user_."
-msgstr "მომხმარებლის <b>%1</b> წაშლა შეუძლებელია ცხრილიდან user_."
+msgstr "Uporabnika <b>%1</b> ni bilo mogoče izbrisati iz tabele user_."
 
 #: server/controllers/database-controller.cpp:527
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table result_."
-msgstr "მომხმარებლის <b>%1</b> წაშლა შეუძლებელია ცხრილიდან result_."
+msgstr "Uporabnika <b>%1</b> ni bilo mogoče izbrisati iz tabele result_."
 
 #: server/controllers/database-controller.cpp:542
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table group_user_."
-msgstr "მომხმარებლის <b>%1</b> წაშლა შეუძლებელია ცხრილიდან group_user_."
+msgstr "Uporabnika <b>%1</b> ni bilo mogoče izbrisati iz tabele group_user_."
 
 #: server/controllers/database-controller.cpp:557
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> already exists in group <b>%2</b>."
-msgstr "მომხმარებელი <b>%1</b> უკვე არსებობს ჯგუფში <b>%2</b>."
+msgstr "Uporabnika <b>%1</b> že obstaja v skupini <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:572
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> group <b>%2</b> couldn't be deleted."
-msgstr "მომხმარებლის <b>%1</b> წაშლა ჯგუფიდან <b>%2</b> შეუძლებელია."
+msgstr "Uporabnika <b>%1</b> skupine <b>%2</b> ni bilo mogoče izbrisati."
 
 #: server/controllers/database-controller.cpp:607
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Result could not be added for user <b>%1</b>"
-msgstr "შედეგის დამატება შეუძლებელია მომხმარებლისთვის <b>%1</b>"
+msgstr "Rezultata ni bilo mogoče dodati za uporabnika <b>%1</b>"
 
 #: server/controllers/database-controller.cpp:619
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Error inserting activity: %1"
-msgstr "აქტივობის ჩასმის შეცდომა: %1"
+msgstr "Napaka pri vstavljanju dejavnosti: %1"
 
 #: server/controllers/database-controller.cpp:665
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> already exists."
-msgstr "მონაცემთა ნაკრები <b>%1</b> უკვე არსებობს."
+msgstr "Nabor podatkov <b>%1</b> že obstaja."
 
 #: server/controllers/database-controller.cpp:682
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> could not be updated to <b>%2</b>."
-msgstr ""
-"მონაცემთა ნაკრების <b>%1</b> განახლება ვერსიამდე <b>%2</b> შეუძლებელია."
+msgstr "Nabora podatkov <b>%1</b> ni bilo mogoče posodobiti na <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:697
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> couldn't be deleted."
-msgstr "მონაცემთა ნაკრების <b>%1</b> წაშლა შეუძლებელია."
+msgstr "Nabora podatkov <b>%1</b> ni bilo mogoče izbrisati."
 
 #: server/controllers/network-controller.cpp:46
 #, qt-format
 msgctxt "controllers::NetworkController|"
 msgid "Unable to start the server: %1."
-msgstr "სერვერის გაშვების შეცდომა: %1."
+msgstr "Strežnika ni mogoče zagnati: %1."
 
 #: server/dialogs/CreateDbDialog.qml:19
 msgctxt "CreateDbDialog|"
 msgid "You are about to create a new GCompris database."
-msgstr "აპირებთ GCompris-ის ახალი მონაცემთა ბაზის შექმნას."
+msgstr "Nameravate ustvariti novo zbirko podatkov GCompris."
 
 #: server/dialogs/CreateDbDialog.qml:39
 msgctxt "CreateDbDialog|"
 msgid "Database file"
-msgstr "მონაცემთა ბაზის ფაილი"
+msgstr "Datoteka zbirke podatkov"
 
 #: server/dialogs/CreateDbDialog.qml:41
 msgctxt "CreateDbDialog|"
 msgid "created in:"
-msgstr "შეიქმნა სად:"
+msgstr "ustvarjeno v:"
 
 #: server/dialogs/CreateDbDialog.qml:65
 msgctxt "CreateDbDialog|"
 msgid "New database creation"
-msgstr "ახალი მონაცემთა ბაზის შექმნა"
+msgstr "Ustvarjanje nove zbirke podatkov"
 
 #: server/dialogs/CreateDbDialog.qml:93
 msgctxt "CreateDbDialog|"
 msgid "Teacher login"
-msgstr "მასწავლებლის შესვლა"
+msgstr "Prijava učitelja"
 
 #: server/dialogs/CreateDbDialog.qml:113
 msgctxt "CreateDbDialog|"
 msgid "Password"
-msgstr "პაროლი"
+msgstr "Geslo"
 
 #: server/dialogs/CreateDbDialog.qml:129
 msgctxt "CreateDbDialog|"
 msgid "Encrypted database (enabled by default)"
-msgstr "დაშიფრული მონაცემთა ბაზა (ნაგულისხმევად ჩართულია)"
+msgstr "Šifrirana zbirka podatkov (privzeto omogočeno)"
 
 #: server/dialogs/DatasetEditorDialog.qml:52
 msgctxt "DatasetEditorDialog|"
 msgid "Create dataset"
-msgstr "მონაცემთა ნაკრების შექმნა"
+msgstr "Ustvari nabor podatkov"
 
 #: server/dialogs/DatasetEditorDialog.qml:62
 msgctxt "DatasetEditorDialog|"
 msgid "Update dataset"
-msgstr "მონაცემთა ნაკრების განახლება"
+msgstr "Posodobi nabor podatkov"
 
 #: server/dialogs/DatasetEditorDialog.qml:76
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name is empty"
-msgstr "მონაცემთა ნაკრების სახელი ცარიელია"
+msgstr "Ime nabora podatkov je prazno"
 
 #: server/dialogs/DatasetEditorDialog.qml:83
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty should be between 1 and 6"
-msgstr "სირთულე უნდა იყოს შუალედიდან 1-6"
+msgstr "Težavnost mora biti med 1 in 6"
 
 #: server/dialogs/DatasetEditorDialog.qml:236
 msgctxt "DatasetEditorDialog|"
 msgid "INVALID DATASET"
-msgstr "არასწორი მონაცემთა ნაკრები"
+msgstr "NEVELJAVEN NABOR PODATKOV"
 
 #: server/dialogs/DatasetEditorDialog.qml:339
 msgctxt "DatasetEditorDialog|"
 msgid "Editor"
-msgstr "რედაქტორი"
+msgstr "Urejevalnik"
 
 #: server/dialogs/DatasetEditorDialog.qml:342
 msgctxt "DatasetEditorDialog|"
 msgid "Raw JSON"
-msgstr "დაუმუშავებელი JSON"
+msgstr "Surovi JSON"
 
 #: server/dialogs/DatasetEditorDialog.qml:372
 msgctxt "DatasetEditorDialog|"
 msgid "Activity name"
-msgstr "აქტივობის სახელი"
+msgstr "Ime dejavnosti"
 
 #: server/dialogs/DatasetEditorDialog.qml:386
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name"
-msgstr "მონაცემთა ნაკრების სახელი"
+msgstr "Ime nabora podatkov"
 
 #: server/dialogs/DatasetEditorDialog.qml:400
 msgctxt "DatasetEditorDialog|"
 msgid "Goal"
-msgstr "მიზანი"
+msgstr "Cilj"
 
 #: server/dialogs/DatasetEditorDialog.qml:414
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty"
-msgstr "სირთულე"
+msgstr "Težavnost"
 
 #: server/dialogs/DatasetEditorDialog.qml:512
 msgctxt "DatasetEditorDialog|"
 msgid "Instructions"
-msgstr "ინსტრუქციები"
+msgstr "Navodila"
 
 #: server/dialogs/DatasetEditorDialog.qml:518
 msgctxt "DatasetEditorDialog|"
 msgid "No specific instructions for this editor."
-msgstr "კონკრეტული ინსტრუქციების გარეშე ამ რედაქტორისთვის."
+msgstr "Za ta urejevalnik ni posebnih navodil."
 
 #: server/dialogs/ErrorDialog.qml:46
 msgctxt "ErrorDialog|"
 msgid "Information"
-msgstr "ინფორმაცია"
+msgstr "Informacije"
 
 #: server/dialogs/ExportPupilsDialog.qml:79
 msgctxt "ExportPupilsDialog|"
 msgid "Export pupils to CSV file"
-msgstr "მოსწავლეების გატანა CSV ფაილში"
+msgstr "Izvozi učence v datoteko CSV"
 
 #: server/dialogs/ExportPupilsDialog.qml:121
 msgctxt "ExportPupilsDialog|"
 msgid "Save file"
-msgstr "ფაილის შენახვა"
+msgstr "Shrani datoteko"
 
 #: server/dialogs/ExportPupilsDialog.qml:131
 msgctxt "ExportPupilsDialog|"
 msgid "Pupils"
-msgstr "მოსწავლეები"
+msgstr "Učenci"
 
 #: server/dialogs/GroupDialog.qml:114
 msgctxt "GroupDialog|"
 msgid "Name"
-msgstr "სახელი"
+msgstr "Ime"
 
 #: server/dialogs/GroupDialog.qml:128
 msgctxt "GroupDialog|"
 msgid "Description"
-msgstr "აღწერა"
+msgstr "Opis"
 
 #: server/dialogs/ImportPupilsDialog.qml:70
 msgctxt "ImportPupilsDialog|"
 msgid "Import pupils from CSV file"
-msgstr "მოსწავლეების შემოტანა CSV ფაილიდან"
+msgstr "Uvozi učence iz datoteke CSV"
 
 #: server/dialogs/ImportPupilsDialog.qml:88
 msgctxt "ImportPupilsDialog|"
@@ -1521,83 +1518,81 @@ msgid ""
 "Patrick Dummy;group 1;1234\n"
 "Patricia Brown;group 1,group 2;4321\n"
 msgstr ""
-"ფორმატი: სახელი;ჯგუფები;პაროლი\n"
-"მაგალითად:\n"
+"Format: name;groups;password\n"
+"Primer:\n"
 "Patrick Dummy;group 1;1234\n"
 "Patricia Brown;group 1,group 2;4321\n"
 
 #: server/dialogs/ImportPupilsDialog.qml:94
 msgctxt "ImportPupilsDialog|"
 msgid "Add CSV file"
-msgstr "CSV ფაილის დამატება"
+msgstr "Dodaj datoteko CSV"
 
 #: server/dialogs/ImportPupilsDialog.qml:141
 msgctxt "ImportPupilsDialog|"
 msgid "Import pupils"
-msgstr "მოსწავლეების შემოტანა"
+msgstr "Uvozi učence"
 
 #: server/dialogs/PupilDialog.qml:59
 msgctxt "PupilDialog|"
 msgid "Pupil's name is empty"
-msgstr "მოსწავლის სახელი ცარიელია"
+msgstr "Ime učenca je prazno"
 
 #: server/dialogs/PupilDialog.qml:153
 msgctxt "PupilDialog|"
 msgid "Pupil's name"
-msgstr "მოსწავლის სახელი"
+msgstr "Ime učenca"
 
 #: server/dialogs/PupilDialog.qml:166
 msgctxt "PupilDialog|"
 msgid "Password"
-msgstr "პაროლი"
+msgstr "Geslo"
 
 #: server/dialogs/PupilDialog.qml:217
 msgctxt "PupilDialog|"
 msgid "Password images:"
-msgstr "პაროლის სურათები:"
+msgstr "Slike gesel:"
 
 #: server/dialogs/PupilDialog.qml:252
 msgctxt "PupilDialog|"
 msgid "Groups"
-msgstr "ჯგუფები"
+msgstr "Skupine"
 
 #: server/dialogs/PupilsToGroupsDialog.qml:87
 msgctxt "PupilsToGroupsDialog|"
 msgid "Select the groups to add these pupils to:"
-msgstr "აირჩიეთ ჯგუფები ამ მოსწავლეების ჩასამატებლად:"
+msgstr "Izberite skupine, v katere želite dodati te učence:"
 
 #: server/dialogs/PupilsToGroupsDialog.qml:88
 msgctxt "PupilsToGroupsDialog|"
 msgid "Select the groups from which to remove these pupils:"
-msgstr "აირჩიეთ ჯგუფები ამ მოსწავლეების წასაშლელად:"
+msgstr "Izberite skupine, iz katerih želite odstraniti te učence:"
 
 #: server/dialogs/RemoveDatasetDialog.qml:70
 msgctxt "RemoveDatasetDialog|"
 msgid ""
 "Are you sure you want to delete the following dataset from the database?"
 msgstr ""
-"დარწმუნებული ბრძანდებით, რომ გნებავთ, წაშალოთ შემდეგი მონაცემთა ნაკრები "
-"მონაცემთა ბაზიდან?"
+"Ali ste prepričani, da želite izbrisati naslednji nabor podatkov iz baze "
+"podatkov?"
 
 #: server/dialogs/RemovePupilsDialog.qml:76
 msgctxt "RemovePupilsDialog|"
 msgid ""
 "Are you sure you want to remove the following pupils from the database ?"
 msgstr ""
-"დარწმუნებული ბრძანდებით, რომ გნებავთ, წაშალოთ შემდეგი მოსწავლეები მონაცემთა "
-"ბაზიდან?"
+"Ali ste prepričani, da želite odstraniti naslednje učence iz baze podatkov?"
 
 #: server/dialogs/SendDatasetDialog.qml:93
 msgctxt "SendDatasetDialog|"
 msgid "Do you want to send the dataset to selected pupils?"
-msgstr "გნებავთ მონაცემთა ნაკრების გაგზავნა მონიშნული მოსწავლეებისთვის?"
+msgstr "Ali želite poslati nabor podatkov izbranim učencem?"
 
 #: server/dialogs/SendDatasetDialog.qml:94
 msgctxt "SendDatasetDialog|"
 msgid "Are you sure you want to remove the dataset from selected pupils?"
 msgstr ""
-"დარწმუნებული ბრძანდებით, რომ გნებავთ, წაშალოთ მონაცემთა ნაკრები მონიშნული "
-"მოსწავლეებიდან?"
+"Ali ste prepričani, da želite odstraniti nabor podatkov izbranim učencem?"
 
 #: server/dialogs/SendDatasetDialog.qml:95
 msgctxt "SendDatasetDialog|"
@@ -1605,18 +1600,18 @@ msgid ""
 "Are you sure you want to remove all the existing datasets from selected "
 "pupils?"
 msgstr ""
-"დარწმუნებული ბრძანდებით, რომ გნებავთ, წაშალოთ ყველა არსებული მონაცემთა "
-"ნაკრები მონიშნული მოსწავლეებიდან?"
+"Ali ste prepričani, da želite odstraniti vse obstoječe nabore podatkov "
+"izbranim učencem?"
 
 #: server/dialogs/SendDatasetDialog.qml:129
 msgctxt "SendDatasetDialog|"
 msgid "Pupils"
-msgstr "მოსწავლეები"
+msgstr "Učenci"
 
 #: server/dialogs/SqlLineDialog.qml:19
 msgctxt "SqlLineDialog|"
 msgid "Line details"
-msgstr "ხაზის დეტალები"
+msgstr "Podrobnosti o vrstici"
 
 #: server/dialogs/SqlLineDialog.qml:151
 msgctxt "SqlLineDialog|"
@@ -1631,685 +1626,1101 @@ msgstr ">"
 #: server/dialogs/SqlLineDialog.qml:191
 msgctxt "SqlLineDialog|"
 msgid "Close"
-msgstr "დახურვა"
+msgstr "Zapri"
 
 #: server/Main.qml:48
 msgctxt "Main|"
 msgid "GCompris Teachers Tool"
-msgstr "GCompris-ის ხელსაწყო მასწავლებლებისთვის"
+msgstr "Orodje za učitelje GCompris"
 
 #: server/panels/NavigationPanel.qml:70
 msgctxt "NavigationPanel|"
 msgid "Login"
-msgstr "შესვლა"
+msgstr "Prijava"
 
 #: server/panels/NavigationPanel.qml:78
 msgctxt "NavigationPanel|"
 msgid "Pupils and Groups"
-msgstr "მოსწავლეები და ჯგუფები"
+msgstr "Učenci in skupine"
 
 #: server/panels/NavigationPanel.qml:86
 msgctxt "NavigationPanel|"
 msgid "Connect devices"
-msgstr "მოწყობილობების დაკავშირება"
+msgstr "Poveži naprave"
 
 #: server/panels/NavigationPanel.qml:94
 msgctxt "NavigationPanel|"
 msgid "Activities"
-msgstr "აქტივობები"
+msgstr "Dejavnosti"
 
 #: server/panels/NavigationPanel.qml:102
 msgctxt "NavigationPanel|"
 msgid "Datasets"
-msgstr "მონაცემების ნაკრებები"
+msgstr "Nabori podatkov"
 
 #: server/panels/NavigationPanel.qml:110
 msgctxt "NavigationPanel|"
 msgid "Charts"
-msgstr "დიაგრამები"
+msgstr "Grafikoni"
 
 #: server/panels/NavigationPanel.qml:118
 msgctxt "NavigationPanel|"
 msgid "Settings"
-msgstr "მორგება"
+msgstr "Nastavitve"
 
 #: server/panels/NavigationPanel.qml:126
 msgctxt "NavigationPanel|"
 msgid "Development (WIP)"
-msgstr "განვითარება (WIP)"
+msgstr "Razvoj (v delu)"
 
 #: server/panels/SelectorPanel.qml:51
 msgctxt "SelectorPanel|"
 msgid "Groups"
-msgstr "ჯგუფები"
+msgstr "Skupine"
 
 #: server/panels/SelectorPanel.qml:71
 msgctxt "SelectorPanel|"
 msgid "Pupils"
-msgstr "მოსწავლეები"
+msgstr "Učenci"
 
 #: server/panels/SelectorPanel.qml:87
 msgctxt "SelectorPanel|"
 msgid "Activities"
-msgstr "აქტივობები"
+msgstr "Dejavnosti"
 
 #: server/singletons/Master.qml:32
 msgctxt "Master|"
 msgid "User ID"
-msgstr "მომხმარებლის ID"
+msgstr "ID uporabnika"
 
 #: server/singletons/Master.qml:33
 msgctxt "Master|"
 msgid "Name"
-msgstr "სახელი"
+msgstr "Ime"
 
 #: server/singletons/Master.qml:34
 msgctxt "Master|"
 msgid "Names"
-msgstr "სახელები"
+msgstr "Imena"
 
 #: server/singletons/Master.qml:35
 msgctxt "Master|"
 msgid "Password"
-msgstr "პაროლი"
+msgstr "Geslo"
 
 #: server/singletons/Master.qml:36
 msgctxt "Master|"
 msgid "Users IDs"
-msgstr "მომხმარებლის ID-ები"
+msgstr "ID-ji uporabnikov"
 
 #: server/singletons/Master.qml:37
 msgctxt "Master|"
 msgid "Activity Id"
-msgstr "აქტივობის ID"
+msgstr "ID dejavnosti"
 
 #: server/singletons/Master.qml:38
 msgctxt "Master|"
 msgid "Activity"
-msgstr "აქტივობა"
+msgstr "Dejavnost"
 
 #: server/singletons/Master.qml:39
 msgctxt "Master|"
 msgid "Group"
-msgstr "ჯგუფი"
+msgstr "Skupina"
 
 #: server/singletons/Master.qml:40
 msgctxt "Master|"
 msgid "Description"
-msgstr "აღწერა"
+msgstr "Opis"
 
 #: server/singletons/Master.qml:41
 msgctxt "Master|"
 msgid "Groups"
-msgstr "ჯგუფები"
+msgstr "Skupine"
 
 #: server/singletons/Master.qml:42
 msgctxt "Master|"
 msgid "Groups IDs"
-msgstr "ჯგუფების ID-ები"
+msgstr "ID-ji skupin"
 
 #: server/singletons/Master.qml:43 server/singletons/Master.qml:47
 msgctxt "Master|"
 msgid "Date"
-msgstr "თარიღი"
+msgstr "Datum"
 
 #: server/singletons/Master.qml:44 server/singletons/Master.qml:49
 msgctxt "Master|"
 msgid "Success"
-msgstr "წარმატება"
+msgstr "Uspeh"
 
 #: server/singletons/Master.qml:45
 msgctxt "Master|"
 msgid "Duration"
-msgstr "ხანგრძლივობა"
+msgstr "Trajanje"
 
 #: server/singletons/Master.qml:46
 msgctxt "Master|"
 msgid "Data"
-msgstr "მონაცემები"
+msgstr "Podatki"
 
 #: server/singletons/Master.qml:48
 msgctxt "Master|"
 msgid "Count"
-msgstr "რაოდენობა"
+msgstr "Število"
 
 #: server/singletons/Master.qml:50
 msgctxt "Master|"
 msgid "Failed"
-msgstr "ჩავარდა"
+msgstr "Neuspešno"
 
 #: server/singletons/Master.qml:51
 msgctxt "Master|"
 msgid "Success ratio"
-msgstr "წარმატების ფარდობა"
+msgstr "Razmerje uspešnosti"
 
 #: server/views/ChartsView.qml:97
 msgctxt "ChartsView|"
 msgid "Activities"
-msgstr "აქტივობები"
+msgstr "Dejavnosti"
 
 #: server/views/ChartsView.qml:101
 msgctxt "ChartsView|"
 msgid "Pupils"
-msgstr "მოსწავლეები"
+msgstr "Učenci"
 
 #: server/views/datas/AllData.qml:69
 msgctxt "AllData|"
 msgid "Available requests"
-msgstr "ხელმისაწვდომი მოთხოვნები"
+msgstr "Razpoložljive zahteve"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "All users activities"
-msgstr "ყველა მომხმარებლის აქტივობა"
+msgstr "Vse dejavnosti uporabnikov"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "Pupils activities"
-msgstr "მოსწავლის აქტივობები"
+msgstr "Dejavnosti učencev"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "All groups"
-msgstr "ყველა ჯგუფი"
+msgstr "Vse skupine"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "Failed activities"
-msgstr "ჩავარდნილი აქტივობები"
+msgstr "Neuspešne dejavnosti"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "User's groups"
-msgstr "მომხმარებლის ჯგუფები"
+msgstr "Skupine uporabnikov"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "Group's users"
-msgstr "ჯგუფის მომხმარებლები"
+msgstr "Uporabniki skupine"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "Daily activities"
-msgstr "ყოველდღიური აქტივობები"
+msgstr "Dnevne dejavnosti"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "Daily ratios"
-msgstr "დღიური ფარდობები"
+msgstr "Dnevna razmerja"
 
 #. Number of lines
 #: server/views/datas/AllData.qml:90
 #, qt-format
 msgctxt "AllData|"
 msgid "%1 lines"
-msgstr "%1 ხაზი"
+msgstr "%1 vrstic"
 
 #: server/views/datas/DuplicateData.qml:175
 msgctxt "DuplicateData|"
 msgid "Commands"
-msgstr "ბრძანებები"
+msgstr "Ukazi"
 
 #: server/views/datas/DuplicateData.qml:188
 msgctxt "DuplicateData|"
 msgid "Random date"
-msgstr "შემთხვევითი თარიღი"
+msgstr "Naključni datum"
 
 #: server/views/datas/DuplicateData.qml:195
 msgctxt "DuplicateData|"
 msgid "Duplicate"
-msgstr "დუბლირება"
+msgstr "Podvoji"
 
 #: server/views/datas/DuplicateData.qml:199
 msgctxt "DuplicateData|"
 msgid "You are about to duplicate datas"
-msgstr "აპირებთ მონაცემების დუბლირებას"
+msgstr "Podvojili boste podatke"
 
 #: server/views/datas/DuplicateData.qml:199
 #: server/views/datas/DuplicateData.qml:212
 msgctxt "DuplicateData|"
 msgid "No action now"
-msgstr "ქმედების გარეშე"
+msgstr "Trenutno ni dejanja"
 
 #: server/views/datas/DuplicateData.qml:208
 msgctxt "DuplicateData|"
 msgid "Delete"
-msgstr "წაშლა"
+msgstr "Izbriši"
 
 #: server/views/datas/DuplicateData.qml:212
 msgctxt "DuplicateData|"
 msgid "You are about to delete datas"
-msgstr "აპირებთ მონაცემების წაშლას"
+msgstr "Izbrisali boste podatke"
 
 #: server/views/datas/DuplicateData.qml:230
 msgctxt "DuplicateData|"
 msgid "Copy to"
-msgstr "კოპირება სად"
+msgstr "Kopiraj v"
 
 #: server/views/DatasetsView.qml:49
 msgctxt "DatasetsView|"
 msgid "Activities"
-msgstr "აქტივობები"
+msgstr "Dejavnosti"
 
 #: server/views/DatasetsView.qml:69
 msgctxt "DatasetsView|"
 msgid "Datasets"
-msgstr "მონაცემების ნაკრებები"
+msgstr "Nabori podatkov"
 
 #: server/views/DatasetsView.qml:101
 msgctxt "DatasetsView|"
 msgid "Datasets management"
-msgstr "მონაცემების ნაკრების მართვა"
+msgstr "Upravljanje naborov podatkov"
 
 #: server/views/DatasetsView.qml:118
 msgctxt "DatasetsView|"
 msgid "Create dataset"
-msgstr "მონაცემთა ნაკრების შექმნა"
+msgstr "Ustvari nabor podatkov"
 
 #: server/views/DatasetsView.qml:126
 msgctxt "DatasetsView|"
 msgid "Update dataset"
-msgstr "მონაცემთა ნაკრების განახლება"
+msgstr "Posodobi nabor podatkov"
 
 #: server/views/DatasetsView.qml:134
 msgctxt "DatasetsView|"
 msgid "Send dataset to clients"
-msgstr "მონაცემთა ნაკრების გაგზავნა კლიენტებთან"
+msgstr "Pošlji nabor podatkov strankam"
 
 #: server/views/DatasetsView.qml:152
 msgctxt "DatasetsView|"
 msgid "Remove dataset from clients"
-msgstr "მონაცემთა ნაკრების წაშლა კლიენტებიდან"
+msgstr "Odstrani nabor podatkov od strank"
 
 #: server/views/DatasetsView.qml:176
 msgctxt "DatasetsView|"
 msgid "Remove all datasets from clients"
-msgstr "ყველა მონაცემთა ნაკრების წაშლა კლიენტებიდან"
+msgstr "Odstrani vse nabore podatkov od strank"
 
 #: server/views/DatasetsView.qml:185
 msgctxt "DatasetsView|"
 msgid "Delete dataset"
-msgstr "მონაცემთა ნაკრების წაშლა"
+msgstr "Izbriši nabor podatkov"
 
 #: server/views/DevelopmentView.qml:43
 msgctxt "DevelopmentView|"
 msgid "Edit data"
-msgstr "მონაცემების ჩასწორება"
+msgstr "Uredi podatke"
 
 #: server/views/DevelopmentView.qml:47
 msgctxt "DevelopmentView|"
 msgid "All requests"
-msgstr "ყველა მოთხოვნა"
+msgstr "Vse zahteve"
 
 #: server/views/DevicesView.qml:52
 msgctxt "DevicesView|"
 msgid "Not connected"
-msgstr "დაკავშირებული არაა"
+msgstr "Ni povezano"
 
 #: server/views/DevicesView.qml:54
 msgctxt "DevicesView|"
 msgid "Bad password input"
-msgstr "შეყვანილია არასწორი პაროლი"
+msgstr "Vnos napačnega gesla"
 
 #: server/views/DevicesView.qml:56
 msgctxt "DevicesView|"
 msgid "Logged"
-msgstr "შესული"
+msgstr "Zabeleženo"
 
 #: server/views/DevicesView.qml:58
 msgctxt "DevicesView|"
 msgid "Connection lost"
-msgstr "კავშირი დაკარგულია"
+msgstr "Povezava prekinjena"
 
 #: server/views/DevicesView.qml:60
 msgctxt "DevicesView|"
 msgid "Disconnected"
-msgstr "გათიშულია"
+msgstr "Prekinjena povezava"
 
 #: server/views/DevicesView.qml:62
 msgctxt "DevicesView|"
 msgid "Unknown connection status"
-msgstr "კავშირის უცნობი სტატუსი"
+msgstr "Neznano stanje povezave"
 
 #: server/views/DevicesView.qml:84
 msgctxt "DevicesView|"
 msgid "Groups"
-msgstr "ჯგუფები"
+msgstr "Skupine"
 
 #: server/views/DevicesView.qml:100
 msgctxt "DevicesView|"
 msgid "Pupils"
-msgstr "მოსწავლეები"
+msgstr "Učenci"
 
 #: server/views/DevicesView.qml:134
 msgctxt "DevicesView|"
 msgid "Network"
-msgstr "ქსელი"
+msgstr "Omrežje"
 
 #: server/views/DevicesView.qml:157
 msgctxt "DevicesView|"
 msgid "Connect devices"
-msgstr "მოწყობილობების დაკავშირება"
+msgstr "Poveži naprave"
 
 #: server/views/DevicesView.qml:170
 msgctxt "DevicesView|"
 msgid "Send login list"
-msgstr "შესვლების სიის გაგზავნა"
+msgstr "Pošlji seznam prijav"
 
 #: server/views/DevicesView.qml:195
 msgctxt "DevicesView|"
 msgid "Disconnect selected pupils"
-msgstr "მონიშნული მოსწავლეების გათისვა"
+msgstr "Prekini povezavo z izbranimi učenci"
 
 #: server/views/DevicesView.qml:212
 msgctxt "DevicesView|"
 msgid "Disconnect everybody"
-msgstr "ყველას გათიშვა"
+msgstr "Prekini povezavo z vsemi"
 
 #: server/views/DevicesView.qml:228
 msgctxt "DevicesView|"
 msgid "Server ID:"
-msgstr "სერვერის ID:"
+msgstr "ID strežnika:"
 
 #: server/views/DevicesView.qml:235
 msgctxt "DevicesView|"
 msgid "Teacher port:"
-msgstr "მასწავლებლის პორტი:"
+msgstr "Vrata učitelja:"
 
 #: server/views/DevicesView.qml:242
 msgctxt "DevicesView|"
 msgid "Connected:"
-msgstr "დაკავშირებულია:"
+msgstr "Povezano:"
 
 #: server/views/DevicesView.qml:249
 msgctxt "DevicesView|"
 msgid "Logged:"
-msgstr "შესული ბრძანდებით, როგორც:"
+msgstr "Zabeleženo:"
 
 #: server/views/DevicesView.qml:256
 msgctxt "DevicesView|"
 msgid "Data received:"
-msgstr "მიღებული მონაცემები:"
+msgstr "Prejeti podatki:"
 
 #: server/views/DevicesView.qml:284
 msgctxt "DevicesView|"
 msgid "Network logs"
-msgstr "ქსელის ჟურნალი"
+msgstr "Dnevniki omrežja"
 
 #: server/views/DevicesView.qml:296
 msgctxt "DevicesView|"
 msgid "Clear logs"
-msgstr "ჟურნალის გასუფთავება"
+msgstr "Počisti dnevnike"
 
 #: server/views/DevicesView.qml:316
 #, qt-format
 msgctxt "DevicesView|"
 msgid "Server already running on port %1"
-msgstr "სერვერი უკვე გაშვებულია პორტზე %1"
+msgstr "Strežnik že deluje na vratih %1"
 
 #: server/views/LoginView.qml:44
 msgctxt "LoginView|"
 msgid "Incorrect password"
-msgstr "არასწორი პაროლი"
+msgstr "Napačno geslo"
 
 #: server/views/LoginView.qml:48
 msgctxt "LoginView|"
 msgid "GCompris-teachers is already running on this computer"
-msgstr "GCompris-teachers უკვე გაშვებულია ამ კომპიუტერზე"
+msgstr "GCompris-teachers že deluje na tem računalniku"
 
 #: server/views/LoginView.qml:49
 msgctxt "LoginView|"
 msgid "Only data browsing is permitted"
-msgstr "დაშვებულია, მხოლოდ, მონაცემების დათვალიერება"
+msgstr "Dovoljeno je samo brskanje po podatkih"
 
 #: server/views/LoginView.qml:92
 msgctxt "LoginView|"
 msgid "Teacher login"
-msgstr "მასწავლებლის შესვლა"
+msgstr "Prijava učitelja"
 
 #: server/views/LoginView.qml:113
 msgctxt "LoginView|"
 msgid "Password"
-msgstr "პაროლი"
+msgstr "Geslo"
 
 #: server/views/LoginView.qml:131
 msgctxt "LoginView|"
 msgid "Login"
-msgstr "შესვლა"
+msgstr "Prijava"
 
 #: server/views/LoginView.qml:140
 msgctxt "LoginView|"
 msgid "Create teacher database"
-msgstr "მასწავლებლის მონაცემთა ბაზის შექმნა"
+msgstr "Ustvari bazo podatkov učiteljev"
 
 #: server/views/LoginView.qml:161
 msgctxt "LoginView|"
 msgid "Database file:"
-msgstr "მონაცემთა ბაზის ფაილი:"
+msgstr "Datoteka baze podatkov:"
 
 #: server/views/LoginView.qml:174
 msgctxt "LoginView|"
 msgid "GCompris Teachers Tool"
-msgstr "GCompris-ის ხელსაწყო მასწავლებლებისთვის"
+msgstr "Orodje za učitelje GCompris"
 
 #: server/views/ManagePupilsView.qml:34 server/views/ManagePupilsView.qml:147
 msgctxt "ManagePupilsView|"
 msgid "Add a group"
-msgstr "ჯგუფის დამატება"
+msgstr "Dodaj skupino"
 
 #: server/views/ManagePupilsView.qml:44
 msgctxt "ManagePupilsView|"
 msgid "Are you sure you want to remove this group?"
-msgstr "მართლა გნებავთ ამ ჯგუფის წაშლა?"
+msgstr "Ali ste prepričani, da želite odstraniti to skupino?"
 
 #: server/views/ManagePupilsView.qml:45
 msgctxt "ManagePupilsView|"
 msgid "Pupils will not be removed."
-msgstr "მოსწავლეები არ წაიშლება."
+msgstr "Učenci ne bodo odstranjeni."
 
 #: server/views/ManagePupilsView.qml:52
 msgctxt "ManagePupilsView|"
 msgid "Edit group"
-msgstr "ჯგუფის ჩასწორება"
+msgstr "Uredi skupino"
 
 #: server/views/ManagePupilsView.qml:68 server/views/ManagePupilsView.qml:204
 msgctxt "ManagePupilsView|"
 msgid "Add a pupil"
-msgstr "მოსწავლის დამატება"
+msgstr "Dodaj učenca"
 
 #: server/views/ManagePupilsView.qml:74
 msgctxt "ManagePupilsView|"
 msgid "Edit pupil's name and groups"
-msgstr "მოსწავლის სახელისა და ჯგუფების ჩასწორება"
+msgstr "Uredi ime učenca in skupine"
 
 #: server/views/ManagePupilsView.qml:122
 msgctxt "ManagePupilsView|"
 msgid "Groups"
-msgstr "ჯგუფები"
+msgstr "Skupine"
 
 #: server/views/ManagePupilsView.qml:157
 msgctxt "ManagePupilsView|"
 msgid "Pupils and groups"
-msgstr "მოსწავლეები და ჯგუფები"
+msgstr "Učenci in skupine"
 
 #: server/views/ManagePupilsView.qml:186
 msgctxt "ManagePupilsView|"
 msgid "Pupils management"
-msgstr "მოსწავლეების მართვა"
+msgstr "Upravljanje učencev"
 
 #: server/views/ManagePupilsView.qml:212
 msgctxt "ManagePupilsView|"
 msgid "Add to groups"
-msgstr "ჯგუფებში ჩამატება"
+msgstr "Dodaj v skupine"
 
 #: server/views/ManagePupilsView.qml:220
 msgctxt "ManagePupilsView|"
 msgid "Remove from groups"
-msgstr "ჯგუფებიდან წაშლა"
+msgstr "Odstrani iz skupin"
 
 #: server/views/ManagePupilsView.qml:228
 msgctxt "ManagePupilsView|"
 msgid "Export pupils"
-msgstr "მოსწავლეების გატანა ფაილში"
+msgstr "Izvozi učence"
 
 #: server/views/ManagePupilsView.qml:235
 msgctxt "ManagePupilsView|"
 msgid "Import pupils"
-msgstr "მოსწავლეების შემოტანა"
+msgstr "Uvozi učence"
 
 #: server/views/ManagePupilsView.qml:243
 msgctxt "ManagePupilsView|"
 msgid "Remove pupils"
-msgstr "მოსწავლეების წაშლა"
+msgstr "Odstrani učence"
 
 #: server/views/SettingsView.qml:65
 msgctxt "SettingsView|"
 msgid "Menu panel"
-msgstr "მენიუს პანელი"
+msgstr "Menijska plošča"
 
 #: server/views/SettingsView.qml:66
 msgctxt "SettingsView|"
 msgid "Left"
-msgstr "მარცხენა"
+msgstr "Levo"
 
 #: server/views/SettingsView.qml:66
 msgctxt "SettingsView|"
 msgid "Right"
-msgstr "მარჯვენა"
+msgstr "Desno"
 
 #: server/views/SettingsView.qml:77
 msgctxt "SettingsView|"
 msgid "Font size"
-msgstr "ფონტის ზომა"
+msgstr "Velikost pisave"
 
 #: server/views/SettingsView.qml:87
 msgctxt "SettingsView|"
 msgid "Theme"
-msgstr "თემა"
+msgstr "Tema"
 
 #: server/views/SettingsView.qml:88
 msgctxt "SettingsView|"
 msgid "Dark"
-msgstr "მუქი"
+msgstr "Temna"
 
 #: server/views/SettingsView.qml:88
 msgctxt "SettingsView|"
 msgid "Light"
-msgstr "ღია"
+msgstr "Svetla"
 
 #: server/views/SettingsView.qml:103
 msgctxt "SettingsView|"
 msgid "Language selector"
-msgstr "ენის ამრჩევი"
+msgstr "Izbirnik jezika"
 
 #: server/views/SettingsView.qml:138
 msgctxt "SettingsView|"
 msgid "Server ID"
-msgstr "სერვერის ID"
+msgstr "ID strežnika"
 
 #: server/views/SettingsView.qml:160
 msgctxt "SettingsView|"
 msgid "Port"
-msgstr "პორტი"
+msgstr "Vrata"
 
 #. next line will display if the server is running or already running
 #: server/views/SettingsView.qml:178
 msgctxt "SettingsView|"
 msgid "Server is"
-msgstr "სერვერი არის"
+msgstr "Strežnik je"
 
 #: server/views/SettingsView.qml:179
 msgctxt "SettingsView|"
 msgid "Running"
-msgstr "გაშვებულია"
+msgstr "Teče"
 
 #: server/views/SettingsView.qml:179
 #, qt-format
 msgctxt "SettingsView|"
 msgid "Already running on port %1"
-msgstr "უკვე გაშვებულია პორტზე %1"
+msgstr "Že deluje na vratih %1"
 
 #: server/views/SettingsView.qml:187
 msgctxt "SettingsView|"
 msgid "Host name"
-msgstr "ჰოსტის სახელი"
+msgstr "Ime ​​gostitelja"
 
 #: server/views/SettingsView.qml:194
 msgctxt "SettingsView|"
 msgid "Server IP"
-msgstr "სერვერის IP"
+msgstr "IP strežnika"
 
 #: server/views/SettingsView.qml:201
 msgctxt "SettingsView|"
 msgid "Broadcast IPs"
-msgstr "სამაუწყებლო IP-ები"
+msgstr "IP-ji za oddajanje"
 
 #: server/views/SettingsView.qml:208
 msgctxt "SettingsView|"
 msgid "Netmask"
-msgstr "ქსელის ნიღაბი"
+msgstr "Omrežna maska"
 
 #: server/views/SettingsView.qml:213
 msgctxt "SettingsView|"
 msgid "MAC address"
-msgstr "MAC მისამართი"
+msgstr "Naslov MAC"
 
 #: server/views/SettingsView.qml:220
 msgctxt "SettingsView|"
 msgid "GCompris version"
-msgstr "GCompris-ის ვერსია"
+msgstr "Različica GCompris"
 
 #: server/views/SettingsView.qml:227
 msgctxt "SettingsView|"
 msgid "Qt version"
-msgstr "Qt-ის ვერსია"
+msgstr "Različica Qt"
 
 #: server/views/SettingsView.qml:240
 msgctxt "SettingsView|"
 msgid "Teacher login"
-msgstr "მასწავლებლის შესვლა"
+msgstr "Prijava učitelja"
 
 #: server/views/SettingsView.qml:248
 msgctxt "SettingsView|"
 msgid "Database file"
-msgstr "მონაცემთა ბაზის ფაილი"
+msgstr "Datoteka zbirke podatkov"
 
 #: server/views/SettingsView.qml:255
 msgctxt "SettingsView|"
 msgid "Encrypted database"
-msgstr "დაშიფრული მონაცემთა ბაზა"
+msgstr "Šifrirana baza podatkov"
 
 #: server/views/SettingsView.qml:256
 msgctxt "SettingsView|"
 msgid "Yes"
-msgstr "დიახ"
+msgstr "Da"
 
 #: server/views/SettingsView.qml:256
 msgctxt "SettingsView|"
 msgid "No"
-msgstr "არა"
+msgstr "Ne"
 
 #: server/views/SettingsView.qml:261
 msgctxt "SettingsView|"
 msgid "Pupils"
-msgstr "მოსწავლეები"
+msgstr "Učenci"
 
 #: server/views/SettingsView.qml:267
 msgctxt "SettingsView|"
 msgid "Groups"
-msgstr "ჯგუფები"
+msgstr "Skupine"
 
 #: server/views/SettingsView.qml:280
 msgctxt "SettingsView|"
 msgid "Pupils connected"
-msgstr "დაკავშირებული მოსწავლეები"
+msgstr "Povezani učenci"
 
 #: server/views/SettingsView.qml:287
 msgctxt "SettingsView|"
 msgid "Pupils logged"
-msgstr "შესული მოსწავლეები"
+msgstr "Prijavljeni učenci"
 
 #: server/views/SettingsView.qml:294
 msgctxt "SettingsView|"
 msgid "Activities data received"
-msgstr "მიღებული აქტივობის მონაცემები"
+msgstr "Prejeti podatki o dejavnostih"
+
+#~ msgctxt "server/activities/algebra_by/AlgebraEditor.qml:25"
+#~ msgid "Rules to create a valid dataset:"
+#~ msgstr "Pravila za ustvarjanje veljavnega nabora podatkov:"
+
+#~ msgctxt ""
+#~ "server/activities/algebra_by/AlgebraEditor.qml:34 server/activities/"
+#~ "algebra_by/AlgebraEditor.qml:39"
+#~ msgid "Sublevels"
+#~ msgstr "Podravni"
+
+#~ msgctxt "server/activities/algebra_div/ActivityEditor.qml:23"
+#~ msgid "Random operands"
+#~ msgstr "Naključni operandi"
+
+#~ msgctxt ""
+#~ "server/activities/algebra_div/ActivityEditor.qml:24 server/activities/"
+#~ "algebra_div/ActivityEditor.qml:29"
+#~ msgid "Sublevels"
+#~ msgstr "Podravni"
+
+#~ msgctxt "server/activities/algebra_div/ActivityEditor.qml:25"
+#~ msgid "Minimum operand value"
+#~ msgstr "Najmanjša vrednost operanda"
+
+#~ msgctxt "server/activities/algebra_div/ActivityEditor.qml:26"
+#~ msgid "Maximum operand value"
+#~ msgstr "Največja vrednost operanda"
+
+#~ msgctxt "server/activities/algebra_div/ActivityEditor.qml:27"
+#~ msgid "Result value limit"
+#~ msgstr "Omejitev vrednosti rezultata"
+
+#~ msgctxt "server/activities/algebra_div/ActivityEditor.qml:28"
+#~ msgid "Shuffle"
+#~ msgstr "Premešaj"
+
+#~ msgctxt "server/activities/algebra_div/ActivityEditor.qml:34"
+#~ msgid "First operand"
+#~ msgstr "Prvi operand"
+
+#~ msgctxt "server/activities/algebra_div/ActivityEditor.qml:35"
+#~ msgid "Second operand"
+#~ msgstr "Drugi operand"
+
+#~ msgctxt "server/activities/binary_bulb/BinaryBulbDataDisplay.qml:34"
+#~ msgid "Answer:"
+#~ msgstr "Odgovor:"
+
+#~ msgctxt "server/activities/binary_bulb/BinaryBulbEditor.qml:29"
+#~ msgid "Sublevels"
+#~ msgstr "Podravni"
+
+#~ msgctxt "server/activities/binary_bulb/BinaryBulbEditor.qml:87"
+#~ msgid "Dataset is empty."
+#~ msgstr "Nabor podatkov je prazen."
+
+#~ msgctxt "server/activities/clockgame/ClockGameDataDisplay.qml:30"
+#~ msgid "Expected:"
+#~ msgstr "Pričakovano:"
+
+#~ msgctxt "server/activities/clockgame/ClockGameDataDisplay.qml:36"
+#~ msgid "Answer:"
+#~ msgstr "Odgovor:"
+
+#~ msgctxt "server/activities/comparator/ComparatorEditor.qml:29"
+#~ msgid "Shuffle"
+#~ msgstr "Premešaj"
+
+#~ msgctxt "server/activities/comparator/ComparatorEditor.qml:109"
+#~ msgid "Dataset is empty."
+#~ msgstr "Nabor podatkov je prazen."
+
+#~ msgctxt "server/activities/comparator/ComparatorEditor.qml:136"
+#~ msgid "The following errors need to be fixed:<ul>%1</ul>"
+#~ msgstr "Naslednje napake je treba odpraviti:<ul>%1</ul>"
+
+#~ msgctxt "server/activities/fractions_create/FractionsCreateEditor.qml:29"
+#~ msgid "Shuffle"
+#~ msgstr "Premešaj"
+
+#~ msgctxt "server/activities/fractions_create/FractionsCreateEditor.qml:30"
+#~ msgid "Questions"
+#~ msgstr "Vprašanja"
+
+#~ msgctxt "server/activities/fractions_create/FractionsCreateEditor.qml:130"
+#~ msgid "Dataset is empty."
+#~ msgstr "Nabor podatkov je prazen."
+
+#~ msgctxt "server/activities/fractions_create/FractionsCreateEditor.qml:140"
+#~ msgid "Level %1 must not be empty."
+#~ msgstr "Raven %1 ne sme biti prazna."
+
+#~ msgctxt "server/activities/fractions_create/FractionsCreateEditor.qml:152"
+#~ msgid "The following errors need to be fixed:<ul>%1</ul>"
+#~ msgstr "Naslednje napake je treba odpraviti:<ul>%1</ul>"
+
+#~ msgctxt "server/activities/fractions_find/FractionsFindDataDisplay.qml:26"
+#~ msgid "Expected:"
+#~ msgstr "Pričakovano:"
+
+#~ msgctxt "server/activities/fractions_find/FractionsFindDataDisplay.qml:60"
+#~ msgid "Answer:"
+#~ msgstr "Odgovor:"
+
+#~ msgctxt "server/activities/fractions_find/FractionsFindEditor.qml:29"
+#~ msgid "Shuffle"
+#~ msgstr "Premešaj"
+
+#~ msgctxt "server/activities/fractions_find/FractionsFindEditor.qml:30"
+#~ msgid "Questions"
+#~ msgstr "Vprašanja"
+
+#~ msgctxt "server/activities/fractions_find/FractionsFindEditor.qml:38"
+#~ msgid "Numerator"
+#~ msgstr "Števec"
+
+#~ msgctxt "server/activities/fractions_find/FractionsFindEditor.qml:39"
+#~ msgid "Denominator"
+#~ msgstr "Imenovalec"
+
+#~ msgctxt "server/activities/fractions_find/FractionsFindEditor.qml:159"
+#~ msgid "Dataset is empty."
+#~ msgstr "Nabor podatkov je prazen."
+
+#~ msgctxt "server/activities/fractions_find/FractionsFindEditor.qml:169"
+#~ msgid "Level %1 must not be empty."
+#~ msgstr "Raven %1 ne sme biti prazna."
+
+#~ msgctxt "server/activities/fractions_find/FractionsFindEditor.qml:173"
+#~ msgid "The following errors need to be fixed:<ul>%1</ul>"
+#~ msgstr "Naslednje napake je treba odpraviti:<ul>%1</ul>"
+
+#~ msgctxt "server/activities/fractions_find/FractionsFindEditor.qml:181"
+#~ msgid "Rectangle"
+#~ msgstr "Pravokotnik"
+
+#~ msgctxt "server/activities/fractions_find/FractionsFindEditor.qml:182"
+#~ msgid "Circle"
+#~ msgstr "Krog"
+
+#~ msgctxt "server/activities/fractions_find/FractionsFindEditor.qml:185"
+#~ msgid "Chart Type"
+#~ msgstr "Vrsta grafikona"
+
+#~ msgctxt "server/activities/learn_decimals/LearnDecimalsEditor.qml:28"
+#~ msgid "Shuffle"
+#~ msgstr "Premešaj"
+
+#~ msgctxt "server/activities/learn_decimals/LearnDecimalsEditor.qml:29"
+#~ msgid "Sublevels"
+#~ msgstr "Podravni"
+
+#~ msgctxt "server/activities/learn_decimals/LearnDecimalsEditor.qml:140"
+#~ msgid "Dataset is empty."
+#~ msgstr "Nabor podatkov je prazen."
+
+#~ msgctxt "server/activities/learn_decimals/LearnDecimalsEditor.qml:150"
+#~ msgid "Level %1 must not be empty."
+#~ msgstr "Raven %1 ne sme biti prazna."
+
+#~ msgctxt "server/activities/learn_decimals/LearnDecimalsEditor.qml:154"
+#~ msgid "The following errors need to be fixed:<ul>%1</ul>"
+#~ msgstr "Naslednje napake je treba odpraviti:<ul>%1</ul>"
+
+#~ msgctxt ""
+#~ "server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:29"
+#~ msgid "Shuffle"
+#~ msgstr "Premešaj"
+
+#~ msgctxt ""
+#~ "server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:30"
+#~ msgid "Sublevels"
+#~ msgstr "Podravni"
+
+#~ msgctxt ""
+#~ "server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:43"
+#~ msgid "Minimum Value"
+#~ msgstr "Najmanjša vrednost"
+
+#~ msgctxt ""
+#~ "server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:44"
+#~ msgid "Maximum Value"
+#~ msgstr "Najvišja vrednost"
+
+#~ msgctxt ""
+#~ "server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:182"
+#~ msgid "Dataset is empty."
+#~ msgstr "Nabor podatkov je prazen."
+
+#~ msgctxt ""
+#~ "server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:192"
+#~ msgid "Level %1 must not be empty."
+#~ msgstr "Raven %1 ne sme biti prazna."
+
+#~ msgctxt ""
+#~ "server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:196"
+#~ msgid "The following errors need to be fixed:<ul>%1</ul>"
+#~ msgstr "Naslednje napake je treba odpraviti:<ul>%1</ul>"
+
+#~ msgctxt ""
+#~ "server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:204"
+#~ msgid "Random"
+#~ msgstr "Naključno"
+
+#~ msgctxt ""
+#~ "server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:205"
+#~ msgid "Fixed"
+#~ msgstr "Fiksno"
+
+#~ msgctxt ""
+#~ "server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:210"
+#~ msgid "Mode"
+#~ msgstr "Način"
+
+#~ msgctxt "server/activities/learn_digits/LearnDigitsDataDisplay.qml:24"
+#~ msgid "%1 = %2"
+#~ msgstr "%1 = %2"
+
+#~ msgctxt "server/activities/learn_digits/LearnDigitsDataDisplay.qml:27"
+#~ msgid "Answer: %1"
+#~ msgstr "Odgovor: %1"
+
+#~ msgctxt "server/activities/learn_digits/LearnDigitsEditor.qml:99"
+#~ msgid "Dataset is empty."
+#~ msgstr "Nabor podatkov je prazen."
+
+#~ msgctxt "server/activities/learn_quantities/ActivityEditor.qml:24"
+#~ msgid "Fixed Number"
+#~ msgstr "Fiksno število"
+
+#~ msgctxt "server/activities/learn_quantities/ActivityEditor.qml:25"
+#~ msgid "Minimum Value"
+#~ msgstr "Najmanjša vrednost"
+
+#~ msgctxt "server/activities/learn_quantities/ActivityEditor.qml:26"
+#~ msgid "Maximum Value"
+#~ msgstr "Najvišja vrednost"
+
+#~ msgctxt "server/activities/LineReport.qml:77"
+#~ msgid "Lines: %1"
+#~ msgstr "Vrstic: %1"
+
+#~ msgctxt ""
+#~ "server/activities/multiple_choice_questions/MultipleChoiceDataDisplay."
+#~ "qml:33"
+#~ msgid "Answer:"
+#~ msgstr "Odgovor:"
+
+#~ msgctxt ""
+#~ "server/activities/multiple_choice_questions/MultipleChoiceDataDisplay."
+#~ "qml:39"
+#~ msgid "Expected:"
+#~ msgstr "Pričakovano:"
+
+#~ msgctxt ""
+#~ "server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:29"
+#~ msgid "Shuffle"
+#~ msgstr "Premešaj"
+
+#~ msgctxt ""
+#~ "server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:30"
+#~ msgid "Sublevels"
+#~ msgstr "Podravni"
+
+#~ msgctxt ""
+#~ "server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:121"
+#~ msgid "Dataset is empty."
+#~ msgstr "Nabor podatkov je prazen."
+
+#~ msgctxt ""
+#~ "server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:131"
+#~ msgid "Level %1 must not be empty."
+#~ msgstr "Nivo %1 ne sme biti prazna."
+
+#~ msgctxt ""
+#~ "server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:163"
+#~ msgid "The following errors need to be fixed:<ul>%1</ul>"
+#~ msgstr "Naslednje napake je treba odpraviti:<ul>%1</ul>"
+
+#~ msgctxt ""
+#~ "server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:177"
+#~ msgid "Mode"
+#~ msgstr "Način"
+
+#~ msgctxt "server/activities/vertical_subtraction/VerticalEditor.qml:29"
+#~ msgid "Sublevels"
+#~ msgstr "Podravni"
+
+#~ msgctxt "server/components/CalendarPane.qml:77"
+#~ msgid "Calendar"
+#~ msgstr "Koledar"
+
+#~ msgctxt "server/dialogs/PupilDialog.qml:166"
+#~ msgid "Password"
+#~ msgstr "Geslo"
+
+#~ msgctxt "server/dialogs/SendDatasetDialog.qml:129"
+#~ msgid "Pupils"
+#~ msgstr "Učenci"
+
+#~ msgctxt "server/panels/SelectorPanel.qml:51"
+#~ msgid "Groups"
+#~ msgstr "Skupine"
+
+#~ msgctxt "server/panels/SelectorPanel.qml:71"
+#~ msgid "Pupils"
+#~ msgstr "Učenci"
+
+#~ msgctxt "server/panels/SelectorPanel.qml:87"
+#~ msgid "Activities"
+#~ msgstr "Dejavnosti"
+
+#~ msgctxt "server/singletons/Master.qml:33"
+#~ msgid "Name"
+#~ msgstr "Ime"
+
+#~ msgctxt "server/singletons/Master.qml:35"
+#~ msgid "Password"
+#~ msgstr "Geslo"
+
+#~ msgctxt "server/singletons/Master.qml:40"
+#~ msgid "Description"
+#~ msgstr "Opis"
+
+#~ msgctxt "server/singletons/Master.qml:41"
+#~ msgid "Groups"
+#~ msgstr "Skupine"
+
+#~ msgctxt "server/singletons/Master.qml:48"
+#~ msgid "Count"
+#~ msgstr "Število"
+
+#~ msgctxt "server/views/ChartsView.qml:97"
+#~ msgid "Activities"
+#~ msgstr "Dejavnosti"
+
+#~ msgctxt "server/views/ChartsView.qml:101"
+#~ msgid "Pupils"
+#~ msgstr "Učenci"
+
+#~ msgctxt "server/views/datas/AllData.qml:77"
+#~ msgid "All groups"
+#~ msgstr "Vse skupine"
+
+#~ msgctxt "server/views/DatasetsView.qml:49"
+#~ msgid "Activities"
+#~ msgstr "Dejavnosti"
+
+#~ msgctxt "server/views/DatasetsView.qml:69"
+#~ msgid "Datasets"
+#~ msgstr "Nabori podatkov"
+
+#~ msgctxt "server/views/DatasetsView.qml:118"
+#~ msgid "Create dataset"
+#~ msgstr "Ustvari nabor podatkov"
+
+#~ msgctxt "server/views/DatasetsView.qml:126"
+#~ msgid "Update dataset"
+#~ msgstr "Posodobi nabor podatkov"
+
+#~ msgctxt "server/views/DevicesView.qml:84"
+#~ msgid "Groups"
+#~ msgstr "Skupine"
+
+#~ msgctxt "server/views/DevicesView.qml:100"
+#~ msgid "Pupils"
+#~ msgstr "Učenci"
+
+#~ msgctxt "server/views/DevicesView.qml:157"
+#~ msgid "Connect devices"
+#~ msgstr "Poveži naprave"
+
+#~ msgctxt "server/views/LoginView.qml:92"
+#~ msgid "Teacher login"
+#~ msgstr "Prijava učitelja"
+
+#~ msgctxt "server/views/LoginView.qml:113"
+#~ msgid "Password"
+#~ msgstr "Geslo"
+
+#~ msgctxt "server/views/LoginView.qml:131"
+#~ msgid "Login"
+#~ msgstr "Prijava"
+
+#~ msgctxt "server/views/LoginView.qml:174"
+#~ msgid "GCompris Teachers Tool"
+#~ msgstr "Orodje GCompris Teachers"
+
+#~ msgctxt "server/views/ManagePupilsView.qml:52"
+#~ msgid "Edit group"
+#~ msgstr "Uredi skupino"
+
+#~ msgctxt "server/views/ManagePupilsView.qml:122"
+#~ msgid "Groups"
+#~ msgstr "Skupine"
+
+#~ msgctxt "server/views/ManagePupilsView.qml:235"
+#~ msgid "Import pupils"
+#~ msgstr "Uvozi učence"
+
+#~ msgctxt "server/views/SettingsView.qml:240"
+#~ msgid "Teacher login"
+#~ msgstr "Prijava učitelja"
+
+#~ msgctxt "server/views/SettingsView.qml:248"
+#~ msgid "Database file"
+#~ msgstr "Datoteka baze podatkov"
+
+#~ msgctxt "server/views/SettingsView.qml:261"
+#~ msgid "Pupils"
+#~ msgstr "Učenci"
+
+#~ msgctxt "server/views/SettingsView.qml:267"
+#~ msgid "Groups"
+#~ msgstr "Skupine"
