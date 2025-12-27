@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-12-24 17:18+0200\n"
+"PO-Revision-Date: 2025-12-26 19:04+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -313,6 +313,10 @@ msgid ""
 "list of integer numbers. Each number must be between 0 and the maximum "
 "number which can be represented with the given \"Bulb count\"."
 msgstr ""
+"Якщо пункт «Випадкові числа» не позначено, поле «Числа для пошуку» має "
+"містити список цілих чисел. Кожне число має бути в діапазоні від 0 до "
+"максимального числа, яке можна представити за допомогою заданої «Кількості "
+"лампочок»."
 
 #: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:28
 msgctxt "BinaryBulbDataDisplay|"
@@ -345,7 +349,7 @@ msgstr "Підрівні"
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:30
 msgctxt "BinaryBulbEditor|"
 msgid "Numbers to find"
-msgstr ""
+msgstr "Числа для пошуку"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:31
 msgctxt "BinaryBulbEditor|"
@@ -355,7 +359,7 @@ msgstr "Перемішати питання"
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:32
 msgctxt "BinaryBulbEditor|"
 msgid "Bulb count"
-msgstr ""
+msgstr "Кількість лампочок"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:33
 msgctxt "BinaryBulbEditor|"
@@ -365,7 +369,7 @@ msgstr "Показати поточний результат"
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:34
 msgctxt "BinaryBulbEditor|"
 msgid "Display the bulb values"
-msgstr ""
+msgstr "Показувати значення лампочок"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:87
 msgctxt "BinaryBulbEditor|"
@@ -376,7 +380,7 @@ msgstr "Набір даних є порожнім."
 #, qt-format
 msgctxt "BinaryBulbEditor|"
 msgid "\"Numbers to find\" for level %1 must not be empty."
-msgstr ""
+msgstr "Поле «Числа для пошуку» для рівня %1 має бути непорожнім."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:115
 #, qt-format
@@ -385,6 +389,8 @@ msgid ""
 "These values are invalid for level %1: %2. The values must be integer "
 "numbers between 0 and %3."
 msgstr ""
+"Ці значення є некоректними для рівня %1: %2. Значення мають бути числами у "
+"діапазоні від 0 до %3."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:119
 #, qt-format
@@ -405,7 +411,7 @@ msgstr "Відповідь:"
 #: server/activities/clockgame/ClockgameEditor.qml:27
 msgctxt "ClockgameEditor|"
 msgid "Exercise count"
-msgstr ""
+msgstr "Кількість вправ"
 
 #: server/activities/clockgame/ClockgameEditor.qml:28
 msgctxt "ClockgameEditor|"
@@ -430,7 +436,7 @@ msgstr "Показувати позначки годин"
 #: server/activities/clockgame/ClockgameEditor.qml:32
 msgctxt "ClockgameEditor|"
 msgid "Grey/white background between each hour"
-msgstr ""
+msgstr "Сіре/Біле тло між годинами"
 
 #: server/activities/clockgame/ClockgameEditor.qml:33
 msgctxt "ClockgameEditor|"
@@ -440,7 +446,7 @@ msgstr "Показувати числа хвилин"
 #: server/activities/clockgame/ClockgameEditor.qml:34
 msgctxt "ClockgameEditor|"
 msgid "Hide the Hint button in the bar (which gives the current time)"
-msgstr ""
+msgstr "Приховати кнопку «Підказка» на панелі (де подано поточний час)"
 
 #: server/activities/clockgame/ClockgameEditor.qml:35
 msgctxt "ClockgameEditor|"
@@ -498,19 +504,19 @@ msgstr "Набір даних є порожнім."
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "Level %1 must not be empty."
-msgstr ""
+msgstr "Рівень %1 має бути непорожнім."
 
 #: server/activities/comparator/ComparatorEditor.qml:126
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "\"Left number\" in Question %1 of Level %2 must contain a number."
-msgstr ""
+msgstr "Поле «Ліве число» у питанні %1 рівня %2 має містити число."
 
 #: server/activities/comparator/ComparatorEditor.qml:130
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "\"Right number\" in Question %1 of Level %2 must contain a number."
-msgstr ""
+msgstr "Поле «Праве число» у питанні %1 рівня %2 має містити число."
 
 #: server/activities/comparator/ComparatorEditor.qml:136
 #, qt-format
@@ -569,6 +575,8 @@ msgctxt "ActivityEditor|"
 msgid ""
 "\"Instruction\" must contain some text telling the fraction to represent."
 msgstr ""
+"У полі «Настанови» має міститися якийсь текст, який надаватиме пояснення "
+"щодо представлення дробу."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:29
 msgctxt "FractionsCreateEditor|"
@@ -604,13 +612,13 @@ msgstr "Набір даних є порожнім."
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "Level %1 must not be empty."
-msgstr ""
+msgstr "Рівень %1 має бути непорожнім."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:146
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "\"Instruction\" of Question %1 from Level %2 must not be empty."
-msgstr ""
+msgstr "«Настанови» щодо питання %1 з рівня %2 мають бути непорожніми."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:152
 #, qt-format
@@ -681,7 +689,7 @@ msgstr "Максимальна кількість модулів"
 #: server/activities/fractions_find/FractionsFindEditor.qml:41
 msgctxt "FractionsFindEditor|"
 msgid "Random fraction"
-msgstr ""
+msgstr "Випадковий дріб"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:159
 msgctxt "FractionsFindEditor|"
@@ -728,6 +736,8 @@ msgid ""
 "\"Additions\" must contain a list of additions which results are between 0 "
 "and 9."
 msgstr ""
+"Поле додавання «Додавання» має містити список додавань, результатом яких є "
+"число від 0 до 9."
 
 #: server/activities/learn_additions/ActivityEditor.qml:18
 #: server/activities/learn_subtractions/ActivityEditor.qml:18
@@ -735,6 +745,8 @@ msgctxt "ActivityEditor|"
 msgid ""
 "\"Number of circles\" can not be smaller than the largest result to find."
 msgstr ""
+"«Кількість кіл» не може бути меншою за найбільший з результатів, які слід "
+"знайти."
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:28
 msgctxt "LearnDecimalsEditor|"
@@ -858,13 +870,14 @@ msgstr "Режим"
 #: server/activities/learn_digits/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
 msgid "\"Numbers\" must contain a list of numbers between 0 and 9."
-msgstr ""
+msgstr "Поле «Числа» має містити список чисел від 0 до 9."
 
 #: server/activities/learn_digits/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Number of circles\" can not be smaller than the largest number to find."
 msgstr ""
+"«Кількість кіл» не може бути меншою за найбільше з чисел, які слід знайти."
 
 #. %1 is an operation, %2 the result. Example: "2 x 5 = 10"
 #: server/activities/learn_digits/LearnDigitsDataDisplay.qml:24
@@ -901,6 +914,7 @@ msgid ""
 "\"Numbers\" must only contain integer numbers between 0 and 9, and must not "
 "be empty."
 msgstr ""
+"Поле «Числа» може містити лише цілі числа від 0 до 9, і має бути непорожнім."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:103
 msgctxt "LearnDigitsEditor|"
@@ -908,6 +922,8 @@ msgid ""
 "\"Additions\" must only contain additions which results are integer numbers "
 "between 0 and 9, and must not be empty."
 msgstr ""
+"Поле «Додавання» може містити додавання, результатом яких можуть бути лише "
+"цілі числа від 0 до 9, і має бути непорожнім."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:105
 msgctxt "LearnDigitsEditor|"
@@ -915,6 +931,8 @@ msgid ""
 "\"Subtractions\" must only contain subtractions which results are integer "
 "numbers between 0 and 9, and must not be empty."
 msgstr ""
+"Поле «Віднімання» може містити віднімання, результатом яких можуть бути лише "
+"цілі числа від 0 до 9, і має бути непорожнім."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:161
 msgctxt "LearnDigitsEditor|"
@@ -952,6 +970,8 @@ msgid ""
 "\"Subtractions\" must contain a list of subtractions which results are "
 "between 0 and 9."
 msgstr ""
+"Поле «Віднімання» має містити віднімання, результатом яких є цілі числа від "
+"0 до 9."
 
 #: server/activities/LineReport.qml:65
 msgctxt "LineReport|"
@@ -988,6 +1008,8 @@ msgid ""
 "In \"Single answer\" mode, users can select only one answer. In \"Multiple "
 "answers\" mode, they can select multiple answers."
 msgstr ""
+"У режимі «Єдина відповідь» користувачі можуть вибирати лише одну відповідь. "
+"У режимі «Декілька відповідей» можна вибирати декілька відповідей."
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
@@ -995,6 +1017,8 @@ msgid ""
 "All entries in the \"Correct answers\" list must also be present in the "
 "\"Answers\" list."
 msgstr ""
+"Усі записи у списку «Правильні відповіді» мають бути частиною списку "
+"«Відповіді»."
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:19
 msgctxt "ActivityEditor|"
@@ -1003,6 +1027,9 @@ msgid ""
 "displayed after users validate their answer. You can leave those empty if "
 "you want."
 msgstr ""
+"«Текст правильної відповіді» та «Текст неправильної відповіді» мають містити "
+"повідомлення, які буде показано після перевірки відповіді користувачем. "
+"Можете не заповнювати ці поля."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:27
 msgctxt "MultipleChoiceDataDisplay|"
@@ -1037,7 +1064,7 @@ msgstr "Підрівні"
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:36
 msgctxt "MultipleChoiceEditor|"
 msgid "Shuffle answers"
-msgstr ""
+msgstr "Перемішати відповіді"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:37
 msgctxt "MultipleChoiceEditor|"
@@ -1057,7 +1084,7 @@ msgstr "Правильних відповідей"
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:40
 msgctxt "MultipleChoiceEditor|"
 msgid "Correct answer text"
-msgstr ""
+msgstr "Текст правильної відповіді"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:41
 msgctxt "MultipleChoiceEditor|"
@@ -1079,19 +1106,20 @@ msgstr "Рівень %1 має бути непорожнім."
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Question\" in Sublevel %1 of Level %2 must not be empty."
-msgstr ""
+msgstr "Поле «Питання» на підрівні %1 рівня %2 має бути непорожнім."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:143
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Answers\" in Sublevel %1 of Level %2 must not be empty."
-msgstr ""
+msgstr "Поле «Відповіді» на підрівні %1 рівня %2 має бути непорожнім."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:148
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Correct answers\" in Sublevel %1 of Level %2 must not be empty."
 msgstr ""
+"Поле «Правильні відповіді» на підрівні %1 рівня %2 має бути непорожнім."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:155
 #, qt-format
@@ -1100,6 +1128,7 @@ msgid ""
 "In Sublevel %1 of Level %2, the correct answer \"%3\" is not in the \"Answers"
 "\" list."
 msgstr ""
+"На підрівні %1 рівня %2 правильної відповіді «%3» немає у списку «Відповіді»."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:163
 #, qt-format
@@ -1140,17 +1169,17 @@ msgstr "Кількість рядків"
 #: server/activities/vertical_subtraction/VerticalEditor.qml:34
 msgctxt "VerticalEditor|"
 msgid "With carry"
-msgstr ""
+msgstr "З перенесенням"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:35
 msgctxt "VerticalEditor|"
 msgid "Already laid"
-msgstr ""
+msgstr "Вже викладено"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:36
 msgctxt "VerticalEditor|"
 msgid "Write your operation"
-msgstr ""
+msgstr "Запишіть вашу операцію"
 
 #: server/components/CalendarPane.qml:77
 msgctxt "CalendarPane|"
@@ -1160,7 +1189,7 @@ msgstr "Календар"
 #: server/components/CheckUserEditDelegate.qml:34
 msgctxt "CheckUserEditDelegate|"
 msgid "Edit pupil"
-msgstr ""
+msgstr "Редагувати учня"
 
 #: server/components/EditorBox.qml:84
 msgctxt "EditorBox|"
@@ -1170,7 +1199,7 @@ msgstr "Додати"
 #: server/components/EditorBox.qml:95
 msgctxt "EditorBox|"
 msgid "Remove"
-msgstr ""
+msgstr "Вилучити"
 
 #: server/components/EditorBox.qml:107
 msgctxt "EditorBox|"
@@ -1190,12 +1219,12 @@ msgstr "Додати елемент"
 #: server/components/FieldEdit.qml:330
 msgctxt "FieldEdit|"
 msgid "Remove last entry"
-msgstr ""
+msgstr "Вилучити останній запис"
 
 #: server/components/FoldDown.qml:138
 msgctxt "FoldDown|"
 msgid "Filter list"
-msgstr ""
+msgstr "Список фільтрів"
 
 #: server/components/OkCancelButtons.qml:19
 msgctxt "OkCancelButtons|"
@@ -1230,16 +1259,18 @@ msgid ""
 "File %1\n"
 "Error SQL: %2"
 msgstr ""
+"Файл %1\n"
+"Помилка SQL: %2"
 
 #: server/controllers/database-controller.cpp:125
 msgctxt "controllers::DatabaseController|"
 msgid "Table teacher_ could not be updated to current version."
-msgstr ""
+msgstr "У поточній версії teacher_ таблиці не можна оновлювати."
 
 #: server/controllers/database-controller.cpp:351
 msgctxt "controllers::DatabaseController|"
 msgid "Error creating teacher."
-msgstr ""
+msgstr "Помилка під час спроби створити запис вчителя."
 
 #: server/controllers/database-controller.cpp:373
 msgctxt "controllers::DatabaseController|"
@@ -1250,108 +1281,108 @@ msgstr "Помилковий пароль."
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> already exists."
-msgstr ""
+msgstr "Група з назвою <b>%1</b> вже існує."
 
 #: server/controllers/database-controller.cpp:438
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be updated to <b>%2</b>."
-msgstr ""
+msgstr "Групу <b>%1</b> не вдалося оновити до <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:456
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_."
-msgstr ""
+msgstr "Групу <b>%1</b> не вдалося вилучити з group_ таблиці."
 
 #: server/controllers/database-controller.cpp:459
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_user_."
-msgstr ""
+msgstr "Групу <b>%1</b> не вдалося вилучити з group_user_ таблиці."
 
 #: server/controllers/database-controller.cpp:483
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Pupil login <b>%1</b> already exists or password is empty."
-msgstr ""
+msgstr "Обліковий запис учня <b>%1</b> вже існує або пароль є порожнім."
 
 #: server/controllers/database-controller.cpp:502
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "<b>%1</b> could not be updated to <b>%2</b>."
-msgstr ""
+msgstr "<b>%1</b> не вдалося оновити до <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:522
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table user_."
-msgstr ""
+msgstr "Запис користувача <b>%1</b> не вдалося вилучити з user_ таблиці."
 
 #: server/controllers/database-controller.cpp:527
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table result_."
-msgstr ""
+msgstr "Запис користувача <b>%1</b> не вдалося вилучити з result_ таблиці."
 
 #: server/controllers/database-controller.cpp:542
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table group_user_."
-msgstr ""
+msgstr "Запис користувача <b>%1</b> не вдалося вилучити з group_user_ таблиці."
 
 #: server/controllers/database-controller.cpp:557
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> already exists in group <b>%2</b>."
-msgstr ""
+msgstr "Запис користувача <b>%1</b> вже існує у групі <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:572
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> group <b>%2</b> couldn't be deleted."
-msgstr ""
+msgstr "Не вдалося вилучити запис користувача <b>%1</b> групи <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:607
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Result could not be added for user <b>%1</b>"
-msgstr ""
+msgstr "Не вдалося додати результат для користувача <b>%1</b>"
 
 #: server/controllers/database-controller.cpp:619
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Error inserting activity: %1"
-msgstr ""
+msgstr "Помилка під час спроби вставити вправу: %1"
 
 #: server/controllers/database-controller.cpp:665
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> already exists."
-msgstr ""
+msgstr "Набір даних <b>%1</b> вже існує."
 
 #: server/controllers/database-controller.cpp:682
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> could not be updated to <b>%2</b>."
-msgstr ""
+msgstr "Набір даних <b>%1</b> не вдалося оновити до <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:697
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> couldn't be deleted."
-msgstr ""
+msgstr "Не вдалося вилучити набір даних <b>%1</b>."
 
 #: server/controllers/network-controller.cpp:46
 #, qt-format
 msgctxt "controllers::NetworkController|"
 msgid "Unable to start the server: %1."
-msgstr ""
+msgstr "Не вдалося запустити сервер: %1."
 
 #: server/dialogs/CreateDbDialog.qml:19
 msgctxt "CreateDbDialog|"
 msgid "You are about to create a new GCompris database."
-msgstr ""
+msgstr "Зараз ви створите нову базу даних GCompris."
 
 #: server/dialogs/CreateDbDialog.qml:39
 msgctxt "CreateDbDialog|"
@@ -1361,17 +1392,17 @@ msgstr "Файл бази даних"
 #: server/dialogs/CreateDbDialog.qml:41
 msgctxt "CreateDbDialog|"
 msgid "created in:"
-msgstr ""
+msgstr "створено:"
 
 #: server/dialogs/CreateDbDialog.qml:65
 msgctxt "CreateDbDialog|"
 msgid "New database creation"
-msgstr ""
+msgstr "Створення бази даних"
 
 #: server/dialogs/CreateDbDialog.qml:93
 msgctxt "CreateDbDialog|"
 msgid "Teacher login"
-msgstr ""
+msgstr "Обліковий запис вчителя"
 
 #: server/dialogs/CreateDbDialog.qml:113
 msgctxt "CreateDbDialog|"
@@ -1381,12 +1412,12 @@ msgstr "Пароль"
 #: server/dialogs/CreateDbDialog.qml:129
 msgctxt "CreateDbDialog|"
 msgid "Encrypted database (enabled by default)"
-msgstr ""
+msgstr "Зашифрована база даних (типово увімкнено)"
 
 #: server/dialogs/DatasetEditorDialog.qml:52
 msgctxt "DatasetEditorDialog|"
 msgid "Create dataset"
-msgstr ""
+msgstr "Створити набір даних"
 
 #: server/dialogs/DatasetEditorDialog.qml:62
 msgctxt "DatasetEditorDialog|"
@@ -1416,7 +1447,7 @@ msgstr "Редактор"
 #: server/dialogs/DatasetEditorDialog.qml:342
 msgctxt "DatasetEditorDialog|"
 msgid "Raw JSON"
-msgstr ""
+msgstr "Простий JSON"
 
 #: server/dialogs/DatasetEditorDialog.qml:372
 msgctxt "DatasetEditorDialog|"
@@ -1456,7 +1487,7 @@ msgstr "Відомості"
 #: server/dialogs/ExportPupilsDialog.qml:79
 msgctxt "ExportPupilsDialog|"
 msgid "Export pupils to CSV file"
-msgstr ""
+msgstr "Експортувати записи учнів до файла CSV"
 
 #: server/dialogs/ExportPupilsDialog.qml:121
 msgctxt "ExportPupilsDialog|"
@@ -1481,7 +1512,7 @@ msgstr "Опис"
 #: server/dialogs/ImportPupilsDialog.qml:70
 msgctxt "ImportPupilsDialog|"
 msgid "Import pupils from CSV file"
-msgstr ""
+msgstr "Імпортувати записи учнів з файла CSV"
 
 #: server/dialogs/ImportPupilsDialog.qml:88
 msgctxt "ImportPupilsDialog|"
@@ -1491,26 +1522,30 @@ msgid ""
 "Patrick Dummy;group 1;1234\n"
 "Patricia Brown;group 1,group 2;4321\n"
 msgstr ""
+"Формат: ім'я;групи;пароль\n"
+"Приклад:\n"
+"Patrick Dummy;group 1;1234\n"
+"Patricia Brown;group 1,group 2;4321\n"
 
 #: server/dialogs/ImportPupilsDialog.qml:94
 msgctxt "ImportPupilsDialog|"
 msgid "Add CSV file"
-msgstr ""
+msgstr "Додати файл CSV"
 
 #: server/dialogs/ImportPupilsDialog.qml:141
 msgctxt "ImportPupilsDialog|"
 msgid "Import pupils"
-msgstr ""
+msgstr "Імпорт учнів"
 
 #: server/dialogs/PupilDialog.qml:59
 msgctxt "PupilDialog|"
 msgid "Pupil's name is empty"
-msgstr ""
+msgstr "Ім'я учня є порожнім"
 
 #: server/dialogs/PupilDialog.qml:153
 msgctxt "PupilDialog|"
 msgid "Pupil's name"
-msgstr ""
+msgstr "Ім'я учня"
 
 #: server/dialogs/PupilDialog.qml:166
 msgctxt "PupilDialog|"
@@ -1520,7 +1555,7 @@ msgstr "Пароль"
 #: server/dialogs/PupilDialog.qml:217
 msgctxt "PupilDialog|"
 msgid "Password images:"
-msgstr ""
+msgstr "Зображення пароля:"
 
 #: server/dialogs/PupilDialog.qml:252
 msgctxt "PupilDialog|"
@@ -1530,34 +1565,34 @@ msgstr "Групи"
 #: server/dialogs/PupilsToGroupsDialog.qml:87
 msgctxt "PupilsToGroupsDialog|"
 msgid "Select the groups to add these pupils to:"
-msgstr ""
+msgstr "Виберіть групи, до яких буде додано ці записи учнів:"
 
 #: server/dialogs/PupilsToGroupsDialog.qml:88
 msgctxt "PupilsToGroupsDialog|"
 msgid "Select the groups from which to remove these pupils:"
-msgstr ""
+msgstr "Виберіть групи, з яких слід вилучити ці записи учнів:"
 
 #: server/dialogs/RemoveDatasetDialog.qml:70
 msgctxt "RemoveDatasetDialog|"
 msgid ""
 "Are you sure you want to delete the following dataset from the database?"
-msgstr ""
+msgstr "Ви справді бажаєте вилучити наведений набір даних з бази даних?"
 
 #: server/dialogs/RemovePupilsDialog.qml:76
 msgctxt "RemovePupilsDialog|"
 msgid ""
 "Are you sure you want to remove the following pupils from the database ?"
-msgstr ""
+msgstr "Ви справді бажаєте вилучити наведені записи учнів з бази даних?"
 
 #: server/dialogs/SendDatasetDialog.qml:93
 msgctxt "SendDatasetDialog|"
 msgid "Do you want to send the dataset to selected pupils?"
-msgstr ""
+msgstr "Хочете надіслати набір даних вибраним учням?"
 
 #: server/dialogs/SendDatasetDialog.qml:94
 msgctxt "SendDatasetDialog|"
 msgid "Are you sure you want to remove the dataset from selected pupils?"
-msgstr ""
+msgstr "Ви справді бажаєте вилучити набір даних з вибраних записів учнів?"
 
 #: server/dialogs/SendDatasetDialog.qml:95
 msgctxt "SendDatasetDialog|"
@@ -1565,6 +1600,7 @@ msgid ""
 "Are you sure you want to remove all the existing datasets from selected "
 "pupils?"
 msgstr ""
+"Ви справді бажаєте вилучити усі наявні набори даних з вибраних записів учнів?"
 
 #: server/dialogs/SendDatasetDialog.qml:129
 msgctxt "SendDatasetDialog|"
@@ -1594,7 +1630,7 @@ msgstr "Закрити"
 #: server/Main.qml:48
 msgctxt "Main|"
 msgid "GCompris Teachers Tool"
-msgstr ""
+msgstr "Інструмент GCompris для вчителів"
 
 #: server/panels/NavigationPanel.qml:70
 msgctxt "NavigationPanel|"
@@ -1644,7 +1680,7 @@ msgstr "Групи"
 #: server/panels/SelectorPanel.qml:71
 msgctxt "SelectorPanel|"
 msgid "Pupils"
-msgstr ""
+msgstr "Учні"
 
 #: server/panels/SelectorPanel.qml:87
 msgctxt "SelectorPanel|"
@@ -1749,22 +1785,22 @@ msgstr "Вправи"
 #: server/views/ChartsView.qml:101
 msgctxt "ChartsView|"
 msgid "Pupils"
-msgstr ""
+msgstr "Учні"
 
 #: server/views/datas/AllData.qml:69
 msgctxt "AllData|"
 msgid "Available requests"
-msgstr ""
+msgstr "Доступні запити"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "All users activities"
-msgstr ""
+msgstr "Усі вправи користувачів"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "Pupils activities"
-msgstr ""
+msgstr "Вправи учнів"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
@@ -1774,7 +1810,7 @@ msgstr "Усі групи"
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "Failed activities"
-msgstr ""
+msgstr "Вправи з помилками"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
@@ -1821,7 +1857,7 @@ msgstr "Здублювати"
 #: server/views/datas/DuplicateData.qml:199
 msgctxt "DuplicateData|"
 msgid "You are about to duplicate datas"
-msgstr ""
+msgstr "Зараз буде створено дублікат даних"
 
 #: server/views/datas/DuplicateData.qml:199
 #: server/views/datas/DuplicateData.qml:212
@@ -1837,7 +1873,7 @@ msgstr "Вилучити"
 #: server/views/datas/DuplicateData.qml:212
 msgctxt "DuplicateData|"
 msgid "You are about to delete datas"
-msgstr ""
+msgstr "Зараз буде вилучено дані"
 
 #: server/views/datas/DuplicateData.qml:230
 msgctxt "DuplicateData|"
@@ -1857,37 +1893,37 @@ msgstr "Бази даних"
 #: server/views/DatasetsView.qml:101
 msgctxt "DatasetsView|"
 msgid "Datasets management"
-msgstr ""
+msgstr "Керування наборами даних"
 
 #: server/views/DatasetsView.qml:118
 msgctxt "DatasetsView|"
 msgid "Create dataset"
-msgstr ""
+msgstr "Створити набір даних"
 
 #: server/views/DatasetsView.qml:126
 msgctxt "DatasetsView|"
 msgid "Update dataset"
-msgstr ""
+msgstr "Оновити набір даних"
 
 #: server/views/DatasetsView.qml:134
 msgctxt "DatasetsView|"
 msgid "Send dataset to clients"
-msgstr ""
+msgstr "Надіслати набір даних клієнтам"
 
 #: server/views/DatasetsView.qml:152
 msgctxt "DatasetsView|"
 msgid "Remove dataset from clients"
-msgstr ""
+msgstr "Вилучити набір даних для клієнтів"
 
 #: server/views/DatasetsView.qml:176
 msgctxt "DatasetsView|"
 msgid "Remove all datasets from clients"
-msgstr ""
+msgstr "Вилучити усі набори даних для клієнтів"
 
 #: server/views/DatasetsView.qml:185
 msgctxt "DatasetsView|"
 msgid "Delete dataset"
-msgstr ""
+msgstr "Вилучити набір даних"
 
 #: server/views/DevelopmentView.qml:43
 msgctxt "DevelopmentView|"
@@ -1897,7 +1933,7 @@ msgstr "Редагувати дані"
 #: server/views/DevelopmentView.qml:47
 msgctxt "DevelopmentView|"
 msgid "All requests"
-msgstr ""
+msgstr "Усі запити"
 
 #: server/views/DevicesView.qml:52
 msgctxt "DevicesView|"
@@ -1927,7 +1963,7 @@ msgstr "Від'єднано"
 #: server/views/DevicesView.qml:62
 msgctxt "DevicesView|"
 msgid "Unknown connection status"
-msgstr ""
+msgstr "Невідомий стан з'єднання"
 
 #: server/views/DevicesView.qml:84
 msgctxt "DevicesView|"
@@ -1937,7 +1973,7 @@ msgstr "Групи"
 #: server/views/DevicesView.qml:100
 msgctxt "DevicesView|"
 msgid "Pupils"
-msgstr ""
+msgstr "Учні"
 
 #: server/views/DevicesView.qml:134
 msgctxt "DevicesView|"
@@ -1952,27 +1988,27 @@ msgstr "Встановлення з'єднання з пристроями"
 #: server/views/DevicesView.qml:170
 msgctxt "DevicesView|"
 msgid "Send login list"
-msgstr ""
+msgstr "Надіслати список входів"
 
 #: server/views/DevicesView.qml:195
 msgctxt "DevicesView|"
 msgid "Disconnect selected pupils"
-msgstr ""
+msgstr "Від'єднати вибраних учнів"
 
 #: server/views/DevicesView.qml:212
 msgctxt "DevicesView|"
 msgid "Disconnect everybody"
-msgstr ""
+msgstr "Від'єднати усіх"
 
 #: server/views/DevicesView.qml:228
 msgctxt "DevicesView|"
 msgid "Server ID:"
-msgstr ""
+msgstr "Ідентифікатор сервера:"
 
 #: server/views/DevicesView.qml:235
 msgctxt "DevicesView|"
 msgid "Teacher port:"
-msgstr ""
+msgstr "Порт вчителя:"
 
 #: server/views/DevicesView.qml:242
 msgctxt "DevicesView|"
@@ -1982,7 +2018,7 @@ msgstr "З'єднано:"
 #: server/views/DevicesView.qml:249
 msgctxt "DevicesView|"
 msgid "Logged:"
-msgstr ""
+msgstr "Здійснено вхід:"
 
 #: server/views/DevicesView.qml:256
 msgctxt "DevicesView|"
@@ -2003,7 +2039,7 @@ msgstr "Очистити журнали"
 #, qt-format
 msgctxt "DevicesView|"
 msgid "Server already running on port %1"
-msgstr ""
+msgstr "Сервер вже запущено на порту %1"
 
 #: server/views/LoginView.qml:44
 msgctxt "LoginView|"
@@ -2013,17 +2049,17 @@ msgstr "Помилковий пароль"
 #: server/views/LoginView.qml:48
 msgctxt "LoginView|"
 msgid "GCompris-teachers is already running on this computer"
-msgstr ""
+msgstr "На цьому комп'ютері вже запущено GCompris-teachers"
 
 #: server/views/LoginView.qml:49
 msgctxt "LoginView|"
 msgid "Only data browsing is permitted"
-msgstr ""
+msgstr "Дозволено лише навігацію даними"
 
 #: server/views/LoginView.qml:92
 msgctxt "LoginView|"
 msgid "Teacher login"
-msgstr ""
+msgstr "Обліковий запис вчителя"
 
 #: server/views/LoginView.qml:113
 msgctxt "LoginView|"
@@ -2048,7 +2084,7 @@ msgstr "Файл бази даних:"
 #: server/views/LoginView.qml:174
 msgctxt "LoginView|"
 msgid "GCompris Teachers Tool"
-msgstr ""
+msgstr "Інструмент GCompris для вчителів"
 
 #: server/views/ManagePupilsView.qml:34 server/views/ManagePupilsView.qml:147
 msgctxt "ManagePupilsView|"
@@ -2058,12 +2094,12 @@ msgstr "Додати групу"
 #: server/views/ManagePupilsView.qml:44
 msgctxt "ManagePupilsView|"
 msgid "Are you sure you want to remove this group?"
-msgstr ""
+msgstr "Ви справді хочете вилучити цю групу?"
 
 #: server/views/ManagePupilsView.qml:45
 msgctxt "ManagePupilsView|"
 msgid "Pupils will not be removed."
-msgstr ""
+msgstr "Записи учнів не буде вилучено"
 
 #: server/views/ManagePupilsView.qml:52
 msgctxt "ManagePupilsView|"
@@ -2073,12 +2109,12 @@ msgstr "Редагувати групу"
 #: server/views/ManagePupilsView.qml:68 server/views/ManagePupilsView.qml:204
 msgctxt "ManagePupilsView|"
 msgid "Add a pupil"
-msgstr ""
+msgstr "Додати запис учня"
 
 #: server/views/ManagePupilsView.qml:74
 msgctxt "ManagePupilsView|"
 msgid "Edit pupil's name and groups"
-msgstr ""
+msgstr "Редагувати ім'я і групи учня"
 
 #: server/views/ManagePupilsView.qml:122
 msgctxt "ManagePupilsView|"
@@ -2088,12 +2124,12 @@ msgstr "Групи"
 #: server/views/ManagePupilsView.qml:157
 msgctxt "ManagePupilsView|"
 msgid "Pupils and groups"
-msgstr ""
+msgstr "Учні і групи"
 
 #: server/views/ManagePupilsView.qml:186
 msgctxt "ManagePupilsView|"
 msgid "Pupils management"
-msgstr ""
+msgstr "Керування записами учнів"
 
 #: server/views/ManagePupilsView.qml:212
 msgctxt "ManagePupilsView|"
@@ -2103,22 +2139,22 @@ msgstr "Додати до груп"
 #: server/views/ManagePupilsView.qml:220
 msgctxt "ManagePupilsView|"
 msgid "Remove from groups"
-msgstr ""
+msgstr "Вилучити з груп"
 
 #: server/views/ManagePupilsView.qml:228
 msgctxt "ManagePupilsView|"
 msgid "Export pupils"
-msgstr ""
+msgstr "Експортувати записи учнів"
 
 #: server/views/ManagePupilsView.qml:235
 msgctxt "ManagePupilsView|"
 msgid "Import pupils"
-msgstr ""
+msgstr "Імпортувати записи учнів"
 
 #: server/views/ManagePupilsView.qml:243
 msgctxt "ManagePupilsView|"
 msgid "Remove pupils"
-msgstr ""
+msgstr "Вилучити записи учнів"
 
 #: server/views/SettingsView.qml:65
 msgctxt "SettingsView|"
@@ -2163,7 +2199,7 @@ msgstr "Вибір мови"
 #: server/views/SettingsView.qml:138
 msgctxt "SettingsView|"
 msgid "Server ID"
-msgstr ""
+msgstr "Ідентифікатор сервера"
 
 #: server/views/SettingsView.qml:160
 msgctxt "SettingsView|"
@@ -2185,7 +2221,7 @@ msgstr "Запущено"
 #, qt-format
 msgctxt "SettingsView|"
 msgid "Already running on port %1"
-msgstr ""
+msgstr "Вже запущено на порту %1"
 
 #: server/views/SettingsView.qml:187
 msgctxt "SettingsView|"
@@ -2200,7 +2236,7 @@ msgstr "IP сервера"
 #: server/views/SettingsView.qml:201
 msgctxt "SettingsView|"
 msgid "Broadcast IPs"
-msgstr ""
+msgstr "IP-адреси трансляції"
 
 #: server/views/SettingsView.qml:208
 msgctxt "SettingsView|"
@@ -2215,7 +2251,7 @@ msgstr "MAC-адреса"
 #: server/views/SettingsView.qml:220
 msgctxt "SettingsView|"
 msgid "GCompris version"
-msgstr ""
+msgstr "Версія GCompris"
 
 #: server/views/SettingsView.qml:227
 msgctxt "SettingsView|"
@@ -2225,7 +2261,7 @@ msgstr "Версія Qt"
 #: server/views/SettingsView.qml:240
 msgctxt "SettingsView|"
 msgid "Teacher login"
-msgstr ""
+msgstr "Обліковий запис вчителя"
 
 #: server/views/SettingsView.qml:248
 msgctxt "SettingsView|"
@@ -2235,7 +2271,7 @@ msgstr "Файл бази даних"
 #: server/views/SettingsView.qml:255
 msgctxt "SettingsView|"
 msgid "Encrypted database"
-msgstr ""
+msgstr "Зашифрована база даних"
 
 #: server/views/SettingsView.qml:256
 msgctxt "SettingsView|"

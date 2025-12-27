@@ -60,13 +60,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->2025-06-10</date>
+>2026-02-04</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->25.1.1</releaseinfo>
+>26.0</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -108,20 +108,20 @@ for example 'xx.yy.zz'
 >GPLv3 licentie</ulink
 >.</para>
 <para
->&gcompris; is beschikbaar op de volgende besturingssystemen: &GNU;/&Linux;, &BSD;, MacOSX, &Windows; en Android. Het vereist een 3D kaart met ondersteuning voor <emphasis
+>&gcompris; is beschikbaar op de volgende besturingssystemen: &GNU;/&Linux;, &BSD;, &macOS;, &Windows; en Android. Het vereist een 3D kaart met ondersteuning voor <emphasis
 >OpenGL 2.1</emphasis
-> of hoger. 32 bits kleurdiepte is verplicht</para>
+> of hoger. 32 bits kleurdiepte is verplicht.</para>
 </sect1>
 
 <sect1 id="installation">
 <title
 >Installatie</title>
 <para
->De software wordt in verschillende vormen geleverd. Volg het proces behorende bij uw omgeving. </para>
+>De software wordt in verschillende vormen geleverd. Volg het proces behorende bij uw omgeving.</para>
 <itemizedlist>
 <listitem
 ><para
->&GNU;/&Linux;: gebruik de pakketten geleverd door uw &GNU;/&Linux; distributie. Als &gcompris; niet als pakket in uw &Linux; distributie zit, neem dan contact met ze op om te vragen &gcompris; op te nemen in uw &Linux; distributie.</para
+>&GNU;/&Linux;: gebruik de pakketten geleverd door uw &GNU;/&Linux; distributie. Als &gcompris; niet als pakket in uw &Linux; distributie zit, neem dan contact met ze op om te vragen &gcompris; op te nemen.</para
 ></listitem>
 <listitem
 ><para
@@ -129,11 +129,11 @@ for example 'xx.yy.zz'
 ></listitem>
 <listitem
 ><para
->MacOSX: geleverd onder een klassiek installatieprogramma.</para
+>&macOS;: geleverd onder een klassiek installatieprogramma.</para
 ></listitem>
 <listitem
 ><para
->Android: geleverd door de F-Droid store of Google Play Store. Apk bestand is ook beschikbaar.</para
+>Android: geleverd door de F-Droid store of Google Play Store. APK bestand is ook beschikbaar.</para
 ></listitem>
 </itemizedlist>
 </sect1>
@@ -164,7 +164,7 @@ for example 'xx.yy.zz'
 </screenshot>
 
 <para
->Elk pictogram stelt een activiteit voor. Bij elk daarvan vindt u kleinere pictogrammen die extra informatie over die activiteit geven. Een gewone klik op het pictogram zal u naar het activiteit of een menu met activiteiten leiden. Er zijn 8 groepen (categorieën) van activiteiten, die bovenaan of links (alleen als uw oriëntatie portret is) geplaatst zijn. Als voorbeeld, er is een groep "Bord spellen", met daarin bord spellen, zoals schaken, boter kaas en eieren of vier op een rij.</para>
+>Elk pictogram stelt een activiteit voor. Bij elk daarvan vindt u kleinere pictogrammen die extra informatie over die activiteit geven. Een gewone klik op het pictogram zal u naar het activiteit of een menu met activiteiten leiden. Er zijn 8 groepen (categorieën) van activiteiten, die bovenaan of links (alleen als uw oriëntatie portret is) geplaatst zijn. Als voorbeeld, er is een groep "Bordspellen", met daarin bordspellen, zoals schaken, boter kaas en eieren of vier op een rij.</para>
 <para
 >Sommige categorieën hebben subcategorieën om de activiteiten beter te filteren. Voor rekenactiviteiten hebben we drie subcategorieën: tellen, rekenen en maten.</para>
 <para
@@ -175,18 +175,18 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="difficulty1.svg" format="SVG"/></imageobject
+><imagedata fileref="difficulty1.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
 ></inlinemediaobject
->1, 2 of 3 gele sterren -voor 2 tot 6 jaar oud.</para
+>1, 2 of 3 gele sterren — voor 2 tot 6 jaar oud.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="difficulty4.svg" format="SVG"/></imageobject
+><imagedata fileref="difficulty4.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
 ></inlinemediaobject
->1, 2 of 3 rode sterren - ouder dan 6 jaar.</para
+>1, 2 of 3 rode sterren — ouder dan 6 jaar.</para
 ></listitem
 > 
 </itemizedlist>
@@ -198,66 +198,66 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_home.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_home.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> Thuis - Verlaat de huidige activiteit, ga terug naar het vorige menu.</para
+> Thuis — Verlaat de huidige activiteit, ga terug naar het vorige menu.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_ok.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> "OK" - Controleert en bevestigt uw antwoord. Sommige activiteiten detecteren niet automatisch dat een kind de taak heeft volbracht. In dat geval moet u op dit pictogram klikken. U kunt de &Enter;-toets op uw toetsenbord gebruiken.</para
+> “OK” - Controleert en bevestigt uw antwoord. Sommige activiteiten detecteren niet automatisch dat een kind de taak heeft volbracht. In dat geval moet u op dit pictogram klikken. U kunt de &Enter;-toets op uw toetsenbord gebruiken.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_hint.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> Licht - toon een tip voor de activiteit. We kunnen de kinderen bij sommige activiteiten helpen om ze bij het zoeken van de antwoorden te begeleiden.</para
+> Licht — toon een tip voor de activiteit. We kunnen de kinderen bij sommige activiteiten helpen om ze bij het zoeken van de antwoorden te begeleiden.</para
 ></listitem>
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_previous.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_previous.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject>
 <inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_next.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_next.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> Pijlen - Toont het huidige niveau. Klik op een van de pijlen om een ander niveau te selecteren. Meestal heeft een activiteit meerdere niveaus waarbij het aantal niveaus afhankelijk is van de activiteit. In &gcompris;, het is mogelijk om naar het volgende niveau te gaan terwijl het huidige niveau nog niet compleet is.</para
+> Pijlen — Toont het huidige niveau. Klik op een van de pijlen om een ander niveau te selecteren. Meestal heeft een activiteit meerdere niveaus waarbij het aantal niveaus afhankelijk is van de activiteit. In &gcompris;, het is mogelijk om naar het volgende niveau te gaan terwijl het huidige niveau nog niet compleet is.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_repeat.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_repeat.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> Lippen - Vraagt aan &gcompris; om de vraag te herhalen.</para
+> Lippen — Vraagt aan &gcompris; om de vraag te herhalen.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_help.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_help.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> Vraagteken - Toont het help-dialoogvenster. Soms is een activiteit te ingewikkeld om gemakkelijk in de omschrijvings-tekst te beschrijven. In dat geval geeft deze functie toegang tot extra informatie.</para
+> Vraagteken — Toont het help-dialoogvenster. Soms is een activiteit te ingewikkeld om gemakkelijk in de omschrijvings-tekst te beschrijven. In dat geval geeft deze functie toegang tot extra informatie.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> Gereedschapskist - Configuratie menu. DE configuratie wordt bewaart in de repository (map) van de gebruiker onder de naam <filename
+> Gereedschapskist — Configuratie menu. DE configuratie wordt bewaart in de repository (map) van de gebruiker onder de naam <filename
 >.config/gcompris/gcompris-qt.conf</filename
 >. Dit is een tekstbestand dat u handmatig kan bewerken.</para
 ></listitem
@@ -266,30 +266,30 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_activity_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> Element in lijst - toon het instellingenmenu van de activiteit. Er zijn hier twee mogelijke tabbladen. De eerste, "Gegevensset", biedt het kiezen van de niveaus van de activiteiten afhankelijk van verschillende doelen en de tweede, "Opties", biedt het bijwerken van de configuratie van de activiteit indien beschikbaar. </para
+> Element in lijst — toon het instellingenmenu van de activiteit. Er zijn hier twee mogelijke tabbladen. De eerste, "Gegevensset", biedt het kiezen van de niveaus van de activiteiten afhankelijk van verschillende doelen en de tweede, "Opties", biedt het bijwerken van de configuratie van de activiteit indien beschikbaar.</para
 ></listitem>
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_about.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_about.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> Hoofdletter "G" - Informatievenster over &gcompris;, geeft informatie over de hoofdontwikkelaars en de versie van de software.</para
+> Hoofdletter “G” — Informatievenster over &gcompris;, geeft informatie over de hoofdontwikkelaars en de versie van de software.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_exit.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> Power - Stopt &gcompris;. u kunt ook de sneltoets op uw toetsenbord <keycombo action="simul"
+> Power — Stop &gcompris;. u kunt ook de sneltoets op uw toetsenbord <keycombo action="simul"
 >&Ctrl;<keycap
 >Q</keycap
 ></keycombo
-> gebruiken</para
+> gebruiken.</para
 ></listitem
 > 
 </itemizedlist>
@@ -307,7 +307,7 @@ for example 'xx.yy.zz'
 ><command
 >gcompris --enable-kioskmode</command
 ></userinput
-> : de knoppen <guiicon
+>: de knoppen <guiicon
 >Afsluiten</guiicon
 > en <guiicon
 >Configuratie</guiicon
@@ -320,7 +320,7 @@ for example 'xx.yy.zz'
 ><command
 >gcompris --disable-kioskmode</command
 ></userinput
-> : de knoppen <guiicon
+>: de knoppen <guiicon
 >Afsluiten</guiicon
 > en <guiicon
 >Configuratie</guiicon
@@ -332,7 +332,7 @@ for example 'xx.yy.zz'
 ><command
 >gcompris -f</command
 ></userinput
-> : &gcompris; uitvoeren in modus volledig scherm</para
+>: &gcompris; uitvoeren in modus volledig scherm</para
 ></listitem
 > 
 <listitem
@@ -341,7 +341,7 @@ for example 'xx.yy.zz'
 ><command
 >gcompris -C</command
 ></userinput
-> : schakel de cursor uit (modus aanraakscherm)</para
+>: schakel de cursor uit (modus aanraakscherm)</para
 ></listitem
 > 
 </itemizedlist>
@@ -409,7 +409,7 @@ for example 'xx.yy.zz'
 ></keycombo
 ></entry>
 <entry
->De werkbalk aan of uit zetten.</entry>
+>De werkbalk tonen of verbergen.</entry>
 </row>
 </tbody>
 </tgroup>
@@ -424,7 +424,7 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; is geïnternationaliseerd en is beschikbaar in meer dan 35 talen. Als u wilt controleren of uw taal beschikbaar is, dan kunt u &gcompris; starten en uw taal selecteren in het configuratievenster.</para>
 <para
->Wees voorzichtig, sommige talen hebben specifieke lettertypes nodig om op de juiste manier te worden getoond. </para
+>Wees voorzichtig, sommige talen hebben specifieke lettertypes nodig om op de juiste manier te worden getoond.</para
 > 
 <para
 >Als &gcompris; nog niet naar uw taal is vertaald, dan kunt u aan de software bijdragen en een vertaling naar uw taal toevoegen. Als u geïnteresseerd bent, dan kunt contact opnemen met het <ulink url="https://l10n.kde.org/teams"
@@ -451,14 +451,14 @@ for example 'xx.yy.zz'
 >Voor meerdere activiteiten kunt u verschillende gegevenssets in de configuratie kiezen. Elk heeft een specifiek doel die beschreven is.</para>
 <screenshot>
 <screeninfo
->Gegevensset van activiteit "De voorwerpen tellen"</screeninfo>
+>Gegevensset van activiteit “De voorwerpen tellen”</screeninfo>
   <mediaobject>
     <imageobject>
       <imagedata fileref="dataset.png" format="PNG"/>
     </imageobject>
     <textobject>
       <phrase
->Gegevensset van activiteit "De voorwerpen tellen"</phrase>
+>Gegevensset van activiteit “De voorwerpen tellen”</phrase>
     </textobject>
   </mediaobject>
 </screenshot>
@@ -467,14 +467,14 @@ for example 'xx.yy.zz'
 >U kunt de opties kiezen voor deze activiteit.</para>
 <screenshot>
 <screeninfo
->Modus van activiteit "De voorwerpen tellen" selecteren</screeninfo>
+>Modus van activiteit “De voorwerpen tellen” selecteren</screeninfo>
   <mediaobject>
     <imageobject>
       <imagedata fileref="activity-config.png" format="PNG"/>
     </imageobject>
     <textobject>
       <phrase
->Modus van activiteit "De voorwerpen tellen" selecteren</phrase>
+>Modus van activiteit "De voorwerpen tellen” selecteren</phrase>
     </textobject>
   </mediaobject>
 </screenshot>
@@ -482,9 +482,9 @@ for example 'xx.yy.zz'
 
 <sect1 id="console-switches">
 <title
->Switches op de opdrachtregel</title>
+>Consoleparameters</title>
 <para
->&gcompris; uitvoeren vanaf een console met een opdrachtregel met de optie --help zal alle parameters tonen die geaccepteerd worden:</para>
+>&gcompris; uitvoeren vanaf een console met een opdrachtregel met de optie “--help” zal alle parameters tonen die geaccepteerd worden:</para>
 <informaltable>
 <tgroup cols="2">
 <tbody>
@@ -540,19 +540,19 @@ for example 'xx.yy.zz'
 <entry
 >--launch activity</entry>
 <entry
->De activiteit specificeren bij starten van GCompris.</entry>
+>De activiteit specificeren bij starten van &gcompris;.</entry>
 </row>
 <row>
 <entry
 >--start-level spelniveau</entry>
 <entry
->Het niveau specificeren waarop de activiteit begint gespecificeerd door de optie --launch bij opstarten van GCompris. Genegeerd indien geen optie --launch of als het gespecificeerde niveau ongeldig is.</entry>
+>Het niveau specificeren waarop de activiteit begint gespecificeerd door de optie “--launch” bij opstarten van &gcompris;. Genegeerd indien geen optie “--launch” of als het gespecificeerde niveau ongeldig is.</entry>
 </row>
 <row>
 <entry
 >--moeilijkheidsgraad {waarde|min-max}</entry>
 <entry
->Voor de sessie, dwing de moeilijkheidsgraden van activiteiten van GCompris af om ofwel de waarde te hebben of tussen min en max waarden. De waarden moeten liggen tussen 1 en 6, en als het de vorm min-max is, moet de min-waarde lager zijn dan de max-waarde. Als dat niet het geval is zal GCompris niet starten.</entry>
+>Voor de sessie, dwing de moeilijkheidsgraden van activiteiten van &gcompris; af om ofwel de waarde te hebben of tussen min en max waarden. De waarden moeten liggen tussen 1 en 6, en als het de vorm min-max is, moet de min-waarde lager zijn dan de max-waarde. Als dat niet het geval is zal &gcompris; niet starten.</entry>
 </row>
 <row>
 <entry
@@ -574,22 +574,40 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>--show-home-button</entry>
+<entry
+>Toon de knop Home in de balk (standaard).</entry>
+</row>
+<row>
+<entry
+>--hide-home-button</entry>
+<entry
+>Verberg de knop Home in de balk.</entry>
+</row>
+<row>
+<entry
 >--renderer={renderer}</entry>
 <entry
->Specificeer welke grafische renderer te gebruiken. Op alle platforms zijn opengl en software beschikbaar. Op Windows kunt u direct3d11 of direct3d12 gebruiken (als het is gecompileerd met Qt
->=6.6). Op MacOS kunt u metal gebruiken.</entry>
+>Specificeer welke grafische renderer te gebruiken. Op alle platforms zijn “opengl” en software beschikbaar. Op Windows kunt u “direct3d11” of “direct3d12” gebruiken (als het is gecompileerd met Qt 
+>= 6.6). Op &macOS; kunt u “metal” gebruiken.</entry>
 </row>
 <row>
 <entry
 >--software-renderer</entry>
 <entry
->Software renderer gebruiken in plaats van openGL (zou met elke grafische kaart moeten werken). Afgekeurd, in plaats daarvan --renderer=software gebruiken.</entry>
+>Software renderer gebruiken in plaats van OpenGL (zou met elke grafische kaart moeten werken). Afgekeurd, in plaats daarvan “--renderer=software” gebruiken.</entry>
 </row>
 <row>
 <entry
 >--opengl-renderer</entry>
 <entry
->Renderen met openGL gebruiken in plaats van software (sneller en meer grafische effecten maar kan crashen bij sommige grafische kaarten). Afgekeurd, in plaats daarvan --renderer=opengl gebruiken.</entry>
+>Renderen met OpenGL gebruiken in plaats van software (sneller en meer grafische effecten maar kan crashen bij sommige grafische kaarten). Afgekeurd, in plaats daarvan “--renderer=opengl” gebruiken.</entry>
+</row>
+<row>
+<entry
+>--locale=taalcode</entry>
+<entry
+>&gcompris; uitvoeren met de gespecificeerde taalcode.</entry>
 </row>
 </tbody>
 </tgroup>
@@ -612,7 +630,7 @@ for example 'xx.yy.zz'
 <title
 >Voorbeeld in &GNU;/&Linux;</title>
 <para
->Creëert een startmenu en configureert de commandoregel parameters.  Hier is een voorbeeld dat &gcompris; in kiosk mode beeldvullend opstart, zonder configuratieknop en zonder cursor:</para
+>Creëert een startmenu en configureert de commandoregel parameters. Hier is een voorbeeld dat &gcompris; in kiosk mode beeldvullend opstart, zonder configuratieknop en zonder cursor:</para
 > 
 <para
 ><userinput
@@ -633,7 +651,7 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; </para>
 <para
->Programma copyright 2000-2025 Timothée Giet en anderen </para>
+>Programma copyright © 2000-2025 Timothée Giet en anderen </para>
 
 &meld.fouten;&vertaling.freek; &underFDL; &underGPL; </chapter>
 
