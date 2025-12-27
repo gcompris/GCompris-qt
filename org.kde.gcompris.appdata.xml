@@ -248,6 +248,7 @@
     <p xml:lang="zh-TW">下方您可以看到該類別的遊戲清單。</p>
     <ul>
       <li>computer discovery: keyboard, mouse, different mouse gestures, etc.</li>
+      <li xml:lang="ar">استكشاف الحاسوب: لوحة المفاتيح والفأرة ومختلف إيماءات الفأرة وغيرها.</li>
       <li xml:lang="bg">запознаване с компютъра: клавиатура, мишка, различни жестове с мишката и др.</li>
       <li xml:lang="ca">descobrir l'ordinador: teclat, ratolí, diferents gestos del ratolí, etc.</li>
       <li xml:lang="ca-valencia">descobrir l'ordinador: teclat, ratolí, diferents gestos del ratolí, etc.</li>
@@ -261,6 +262,7 @@
       <li xml:lang="zh-CN">计算机启蒙：键盘、鼠标、鼠标手势等。</li>
       <li>arithmetic: table memory, enumeration, mirror image, balance
     the scale, change giving, etc.</li>
+      <li xml:lang="ar">الحساب: جدول الضرب والعدّ وصورة المرآة وموازنة كفّتا الميزان وإعطاء الباقي وغيرها.</li>
       <li xml:lang="bg">аритметика: броене, смятане, създаване на огледално изображение, теглене с везни, боравене с пари и др.</li>
       <li xml:lang="ca">aritmètica: memoritzar la taula, enumeració, imatge al mirall, equilibrar la balança, donar el canvi, etc.</li>
       <li xml:lang="ca-valencia">aritmètica: memoritzar la taula, enumeració, imatge a l'espill, equilibrar la balança, donar el canvi, etc.</li>
@@ -273,6 +275,7 @@
       <li xml:lang="uk">Арифметика: запам’ятовування таблиць, нумерація, віддзеркалення, балансування масштабу, обчислення решти…</li>
       <li xml:lang="zh-CN">数学基础：乘法表记忆、识数、图形镜像、天平配平、找零等。</li>
       <li>science: the canal lock, color mixing, gravity concept, etc.</li>
+      <li xml:lang="ar">العلوم: قفل القناة ومزج الألوان ومفهوم الجاذبيّة وغيرها.</li>
       <li xml:lang="bg">наука: принципи на управление на шлюз, смесване на цветовете, гравитация и др.</li>
       <li xml:lang="ca">ciència: blocar el canal, mescla de colors, el concepte de la gravetat, etc.</li>
       <li xml:lang="ca-valencia">ciència: blocar el canal, mescla de colors, el concepte de la gravetat, etc.</li>
@@ -285,6 +288,7 @@
       <li xml:lang="uk">Наука: шлюзування, змішування кольорів, поняття тяжіння…</li>
       <li xml:lang="zh-CN">科学基础：船闸、颜色混合、重力概念等。</li>
       <li>games: memory, connect 4, tic tac toe, sudoku, hanoi tower, etc.</li>
+      <li xml:lang="ar">الألعاب: الذاكرة و«وصّل 4» و"إكس-أُو" و«سودوكو»، وبرج هانوي وغيرها.</li>
       <li xml:lang="bg">игри: памет, свържете 4, морски шах, судоку, кулата на Ханой и др.</li>
       <li xml:lang="ca">jocs: memòria, connecta 4, tres en ratlla, sudoku, torre de Hanoi, etc.</li>
       <li xml:lang="ca-valencia">jocs: memòria, connecta 4, tres en ratlla, sudoku, torre de Hanoi, etc.</li>
@@ -297,6 +301,7 @@
       <li xml:lang="uk">Ігри: запам’ятовування, чотири-у-рядок, хрестики-нулики, судоку, ханойські вежі…</li>
       <li xml:lang="zh-CN">智力游戏：速记、四子棋、井子棋、数独、汉诺塔等。</li>
       <li>reading: reading practice, etc.</li>
+      <li xml:lang="ar">القراءة: ممارسة القراءة وغيرها.</li>
       <li xml:lang="bg">четене: упражнения за четене и др.</li>
       <li xml:lang="ca">Lectura: pràctica de lectura, etc.</li>
       <li xml:lang="ca-valencia">Lectura: pràctica de lectura, etc.</li>
@@ -310,6 +315,7 @@
       <li xml:lang="zh-CN">阅读训练：阅读练习等。</li>
       <li>other: learn to tell time, the braille system, maze, music
     instruments, etc.</li>
+      <li xml:lang="ar">أخرى: تعلّم قراءة الوقت ونظام «بريل» وألغاز متاهات والآلات الموسيقيّة وغيرها.</li>
       <li xml:lang="bg">други: запознаване с часовника, брайловата система, лабиринт, музикални инструменти и прочие</li>
       <li xml:lang="ca">altres: aprendre a dir l'hora, el sistema braille, laberints, instruments musicals, etc.</li>
       <li xml:lang="ca-valencia">altres: aprendre a dir l'hora, el sistema braille, laberints, instruments musicals, etc.</li>
