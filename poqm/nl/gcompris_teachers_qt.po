@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-12-24 16:44+0100\n"
+"PO-Revision-Date: 2025-12-26 12:40+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -423,7 +423,7 @@ msgstr "Zoek minuten"
 #: server/activities/clockgame/ClockgameEditor.qml:29
 msgctxt "ClockgameEditor|"
 msgid "Find seconds"
-msgstr ""
+msgstr "Zoek seconden"
 
 #: server/activities/clockgame/ClockgameEditor.qml:30
 msgctxt "ClockgameEditor|"
@@ -513,12 +513,14 @@ msgstr "Niveau %1 mag niet leeg zijn."
 msgctxt "ComparatorEditor|"
 msgid "\"Left number\" in Question %1 of Level %2 must contain a number."
 msgstr ""
+"Het veld \"Linker getal\" in vraag %1 van niveau %2 moet een getal bevatten."
 
 #: server/activities/comparator/ComparatorEditor.qml:130
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "\"Right number\" in Question %1 of Level %2 must contain a number."
 msgstr ""
+"Het \"Rechter getal\" in vraag %1 van niveau %2 moet een getal bevatten."
 
 #: server/activities/comparator/ComparatorEditor.qml:136
 #, qt-format
@@ -536,7 +538,7 @@ msgstr "Alle groepen"
 #, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %2"
-msgstr ""
+msgstr "%1 %2"
 
 #: server/activities/DailyReport.qml:130
 msgctxt "DailyReport|"
@@ -948,7 +950,7 @@ msgstr "Optellingen"
 #: server/activities/learn_digits/LearnDigitsEditor.qml:165
 msgctxt "LearnDigitsEditor|"
 msgid "Subtractions"
-msgstr ""
+msgstr "Aftrekkingen"
 
 #: server/activities/learn_quantities/ActivityEditor.qml:24
 msgctxt "ActivityEditor|"
@@ -971,6 +973,8 @@ msgid ""
 "\"Subtractions\" must contain a list of subtractions which results are "
 "between 0 and 9."
 msgstr ""
+"\"Aftrekkingen\" moet een lijst bevatten van aftrekkingen waarvan de "
+"uitkomst tussen 0 en 9 ligt."
 
 #: server/activities/LineReport.qml:65
 msgctxt "LineReport|"
@@ -992,7 +996,7 @@ msgstr "Regels: %1"
 #, qt-format
 msgctxt "LineReport|"
 msgid "Level: <b>%1</b>"
-msgstr ""
+msgstr "Niveau: <b>%1</b>"
 
 #. Result duration in seconds. Example: "Duration: 25s"
 #: server/activities/LineReport.qml:243 server/activities/LineReport.qml:253
@@ -1007,6 +1011,9 @@ msgid ""
 "In \"Single answer\" mode, users can select only one answer. In \"Multiple "
 "answers\" mode, they can select multiple answers."
 msgstr ""
+"In de modus \"Enkel antwoord\" kunnen gebruikers slechts één antwoord "
+"selecteren. In de modus \"Meerdere antwoorden\" kunnen ze meerdere "
+"antwoorden selecteren."
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
@@ -1014,6 +1021,8 @@ msgid ""
 "All entries in the \"Correct answers\" list must also be present in the "
 "\"Answers\" list."
 msgstr ""
+"Alle items in de lijst \"Correcte antwoorden\" moeten ook in de lijst "
+"\"Antwoorden\" voorkomen."
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:19
 msgctxt "ActivityEditor|"
@@ -1022,6 +1031,9 @@ msgid ""
 "displayed after users validate their answer. You can leave those empty if "
 "you want."
 msgstr ""
+"\"Tekst voor Correct antwoord\" en \"Tekst voor Onjuist antwoord\" zijn "
+"optionele berichten die worden weergegeven nadat gebruikers hun antwoord "
+"hebben bevestigd. U kunt deze leeg laten als u dat wilt."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:27
 msgctxt "MultipleChoiceDataDisplay|"
@@ -1041,7 +1053,7 @@ msgstr "Verwacht:"
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:45
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Proposed:"
-msgstr ""
+msgstr "Voorgesteld:"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:29
 msgctxt "MultipleChoiceEditor|"
@@ -1056,7 +1068,7 @@ msgstr "Subniveaus"
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:36
 msgctxt "MultipleChoiceEditor|"
 msgid "Shuffle answers"
-msgstr ""
+msgstr "Antwoorden schudden"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:37
 msgctxt "MultipleChoiceEditor|"
@@ -1066,22 +1078,22 @@ msgstr "Vraag"
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:38
 msgctxt "MultipleChoiceEditor|"
 msgid "Answers"
-msgstr ""
+msgstr "Antwoorden"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:39
 msgctxt "MultipleChoiceEditor|"
 msgid "Correct answers"
-msgstr "Juiste antwoorden"
+msgstr "Correcte antwoorden"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:40
 msgctxt "MultipleChoiceEditor|"
 msgid "Correct answer text"
-msgstr ""
+msgstr "Tekst voor Correct antwoord"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:41
 msgctxt "MultipleChoiceEditor|"
 msgid "Wrong answer text"
-msgstr ""
+msgstr "Tekst voor Onjuist antwoord"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:121
 msgctxt "MultipleChoiceEditor|"
@@ -1098,19 +1110,22 @@ msgstr "Niveau %1 mag niet leeg zijn."
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Question\" in Sublevel %1 of Level %2 must not be empty."
-msgstr ""
+msgstr "Het veld \"Vraag\" in subniveau %1 van niveau %2 mag niet leeg zijn."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:143
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Answers\" in Sublevel %1 of Level %2 must not be empty."
 msgstr ""
+"Het veld \"Antwoorden\" in subniveau %1 van niveau %2 mag niet leeg zijn."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:148
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Correct answers\" in Sublevel %1 of Level %2 must not be empty."
 msgstr ""
+"De velden \"Correcte antwoorden\" in subniveau %1 van niveau %2 mogen niet "
+"leeg zijn."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:155
 #, qt-format
@@ -1119,6 +1134,8 @@ msgid ""
 "In Sublevel %1 of Level %2, the correct answer \"%3\" is not in the \"Answers"
 "\" list."
 msgstr ""
+"In subniveau %1 van niveau %2 staat het juiste antwoord \"%3\" niet in de "
+"lijst \"Antwoorden\"."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:163
 #, qt-format
@@ -1129,12 +1146,12 @@ msgstr "De volgende fouten moeten gerepareerd worden:<ul>%1</ul>"
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:171
 msgctxt "MultipleChoiceEditor|"
 msgid "Single answer"
-msgstr ""
+msgstr "Enkel antwoord"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:172
 msgctxt "MultipleChoiceEditor|"
 msgid "Multiple answers"
-msgstr ""
+msgstr "Meerdere antwoorden"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:177
 msgctxt "MultipleChoiceEditor|"
@@ -1159,17 +1176,17 @@ msgstr "Aantal regels:"
 #: server/activities/vertical_subtraction/VerticalEditor.qml:34
 msgctxt "VerticalEditor|"
 msgid "With carry"
-msgstr ""
+msgstr "Met overdracht"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:35
 msgctxt "VerticalEditor|"
 msgid "Already laid"
-msgstr ""
+msgstr "Al neergelegd"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:36
 msgctxt "VerticalEditor|"
 msgid "Write your operation"
-msgstr ""
+msgstr "Schrijf uw bewerking"
 
 #: server/components/CalendarPane.qml:77
 msgctxt "CalendarPane|"
@@ -1179,7 +1196,7 @@ msgstr "Agenda"
 #: server/components/CheckUserEditDelegate.qml:34
 msgctxt "CheckUserEditDelegate|"
 msgid "Edit pupil"
-msgstr ""
+msgstr "Leerling bewerken"
 
 #: server/components/EditorBox.qml:84
 msgctxt "EditorBox|"
@@ -1204,17 +1221,17 @@ msgstr "Omlaag verplaatsen"
 #: server/components/FieldEdit.qml:318
 msgctxt "FieldEdit|"
 msgid "Add an entry"
-msgstr ""
+msgstr "Een item toevoegen"
 
 #: server/components/FieldEdit.qml:330
 msgctxt "FieldEdit|"
 msgid "Remove last entry"
-msgstr ""
+msgstr "Laatste item verwijderen"
 
 #: server/components/FoldDown.qml:138
 msgctxt "FoldDown|"
 msgid "Filter list"
-msgstr ""
+msgstr "Lijst filteren"
 
 #: server/components/OkCancelButtons.qml:19
 msgctxt "OkCancelButtons|"
@@ -1249,16 +1266,18 @@ msgid ""
 "File %1\n"
 "Error SQL: %2"
 msgstr ""
+"Bestand %1\n"
+"Foute SQL: %2"
 
 #: server/controllers/database-controller.cpp:125
 msgctxt "controllers::DatabaseController|"
 msgid "Table teacher_ could not be updated to current version."
-msgstr ""
+msgstr "Tabel docent_ kon niet bijgewerkt worden tot de huidige versie."
 
 #: server/controllers/database-controller.cpp:351
 msgctxt "controllers::DatabaseController|"
 msgid "Error creating teacher."
-msgstr ""
+msgstr "Fout bij het aanmaken van docent."
 
 #: server/controllers/database-controller.cpp:373
 msgctxt "controllers::DatabaseController|"
@@ -1269,128 +1288,130 @@ msgstr "Fout wachtwoord."
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> already exists."
-msgstr ""
+msgstr "Groep <b>%1</b> bestaat al."
 
 #: server/controllers/database-controller.cpp:438
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be updated to <b>%2</b>."
-msgstr ""
+msgstr "Groep <b>%1</b> kon niet worden bijgewerkt tot <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:456
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_."
-msgstr ""
+msgstr "Groep <b>%1</b> kon niet worden verwijderd uit de tabel groep_."
 
 #: server/controllers/database-controller.cpp:459
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_user_."
 msgstr ""
+"Groep <b>%1</b> kon niet worden verwijderd uit de tabel groep_gebruiker."
 
 #: server/controllers/database-controller.cpp:483
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Pupil login <b>%1</b> already exists or password is empty."
-msgstr ""
+msgstr "Aanmelding leerling <b>%1</b> bestaat al of wachtwoord is leeg."
 
 #: server/controllers/database-controller.cpp:502
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "<b>%1</b> could not be updated to <b>%2</b>."
-msgstr ""
+msgstr "<b>%1</b> kon niet worden bijgewerkt tot <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:522
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table user_."
-msgstr ""
+msgstr "Gebruiker <b>%1</b> kon niet verwijderd worden uit tabel gebruiker_."
 
 #: server/controllers/database-controller.cpp:527
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table result_."
-msgstr ""
+msgstr "Gebruiker <b>%1</b> kon niet verwijderd worden uit tabel resultaat_."
 
 #: server/controllers/database-controller.cpp:542
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table group_user_."
 msgstr ""
+"Gebruiker <b>%1</b> kon niet worden verwijderd uit de tabel groep_gebruiker_."
 
 #: server/controllers/database-controller.cpp:557
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> already exists in group <b>%2</b>."
-msgstr ""
+msgstr "Gebruiker <b>%1</b> bestaat al in groep <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:572
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> group <b>%2</b> couldn't be deleted."
-msgstr ""
+msgstr "Gebruiker <b>%1</b> groep <b>%2</b> kon niet verwijderd worden."
 
 #: server/controllers/database-controller.cpp:607
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Result could not be added for user <b>%1</b>"
-msgstr ""
+msgstr "Resultaat kon niet worden toegevoegd voor gebruiker <b>%1</b>"
 
 #: server/controllers/database-controller.cpp:619
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Error inserting activity: %1"
-msgstr ""
+msgstr "Fout bij invoegen activiteit: %1"
 
 #: server/controllers/database-controller.cpp:665
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> already exists."
-msgstr ""
+msgstr "Gegevensset <b>%1</b> bestaat al."
 
 #: server/controllers/database-controller.cpp:682
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> could not be updated to <b>%2</b>."
-msgstr ""
+msgstr "Gegevensset <b>%1</b> kon niet bijgewerkt worden tot <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:697
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> couldn't be deleted."
-msgstr ""
+msgstr "Gegevensset <b>%1</b> kon niet verwijderd worden."
 
 #: server/controllers/network-controller.cpp:46
 #, qt-format
 msgctxt "controllers::NetworkController|"
 msgid "Unable to start the server: %1."
-msgstr ""
+msgstr "Starten lukt niet van server: %1"
 
 #: server/dialogs/CreateDbDialog.qml:19
 msgctxt "CreateDbDialog|"
 msgid "You are about to create a new GCompris database."
-msgstr ""
+msgstr "U staat op het punt om een nieuwe GCompris-database aan te maken."
 
 #: server/dialogs/CreateDbDialog.qml:39
 msgctxt "CreateDbDialog|"
 msgid "Database file"
-msgstr ""
+msgstr "Databasebestand"
 
 #: server/dialogs/CreateDbDialog.qml:41
 msgctxt "CreateDbDialog|"
 msgid "created in:"
-msgstr ""
+msgstr "aangemaakt in:"
 
 #: server/dialogs/CreateDbDialog.qml:65
 msgctxt "CreateDbDialog|"
 msgid "New database creation"
-msgstr ""
+msgstr "Aanmaken van nieuwe database"
 
 #: server/dialogs/CreateDbDialog.qml:93
 msgctxt "CreateDbDialog|"
 msgid "Teacher login"
-msgstr ""
+msgstr "Aanmelden van docent"
 
 #: server/dialogs/CreateDbDialog.qml:113
 msgctxt "CreateDbDialog|"
@@ -1400,32 +1421,32 @@ msgstr "Wachtwoord"
 #: server/dialogs/CreateDbDialog.qml:129
 msgctxt "CreateDbDialog|"
 msgid "Encrypted database (enabled by default)"
-msgstr ""
+msgstr "Versleutelde database (standaard ingeschakeld)"
 
 #: server/dialogs/DatasetEditorDialog.qml:52
 msgctxt "DatasetEditorDialog|"
 msgid "Create dataset"
-msgstr ""
+msgstr "Gegevensset aanmaken"
 
 #: server/dialogs/DatasetEditorDialog.qml:62
 msgctxt "DatasetEditorDialog|"
 msgid "Update dataset"
-msgstr ""
+msgstr "Gegevensset bijwerken"
 
 #: server/dialogs/DatasetEditorDialog.qml:76
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name is empty"
-msgstr ""
+msgstr "Naam van gegevensset is leeg"
 
 #: server/dialogs/DatasetEditorDialog.qml:83
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty should be between 1 and 6"
-msgstr ""
+msgstr "Moeilijkheidsgraad moet liggen tussen 1 en 6"
 
 #: server/dialogs/DatasetEditorDialog.qml:236
 msgctxt "DatasetEditorDialog|"
 msgid "INVALID DATASET"
-msgstr ""
+msgstr "ONGELDIGE GEGEVENSSET"
 
 #: server/dialogs/DatasetEditorDialog.qml:339
 msgctxt "DatasetEditorDialog|"
@@ -1435,7 +1456,7 @@ msgstr "Bewerker"
 #: server/dialogs/DatasetEditorDialog.qml:342
 msgctxt "DatasetEditorDialog|"
 msgid "Raw JSON"
-msgstr ""
+msgstr "Ruwe JSON"
 
 #: server/dialogs/DatasetEditorDialog.qml:372
 msgctxt "DatasetEditorDialog|"
@@ -1465,7 +1486,7 @@ msgstr "Instructies"
 #: server/dialogs/DatasetEditorDialog.qml:518
 msgctxt "DatasetEditorDialog|"
 msgid "No specific instructions for this editor."
-msgstr ""
+msgstr "Geen specifieke instructies voor deze bewerker."
 
 #: server/dialogs/ErrorDialog.qml:46
 msgctxt "ErrorDialog|"
@@ -1475,7 +1496,7 @@ msgstr "Informatie"
 #: server/dialogs/ExportPupilsDialog.qml:79
 msgctxt "ExportPupilsDialog|"
 msgid "Export pupils to CSV file"
-msgstr ""
+msgstr "Leerlingen naar CSV-bestand exporteren"
 
 #: server/dialogs/ExportPupilsDialog.qml:121
 msgctxt "ExportPupilsDialog|"
@@ -1500,7 +1521,7 @@ msgstr "Beschrijving"
 #: server/dialogs/ImportPupilsDialog.qml:70
 msgctxt "ImportPupilsDialog|"
 msgid "Import pupils from CSV file"
-msgstr ""
+msgstr "Leerlingen uit CSV-bestand importeren"
 
 #: server/dialogs/ImportPupilsDialog.qml:88
 msgctxt "ImportPupilsDialog|"
@@ -1510,26 +1531,30 @@ msgid ""
 "Patrick Dummy;group 1;1234\n"
 "Patricia Brown;group 1,group 2;4321\n"
 msgstr ""
+"Formaat: naam;groepen;wachtwoord\n"
+"Voorbeeld:\n"
+"Patrick Dummy;groep 1;1234\n"
+"Patricia Brown;groep 1,groep 2;4321\n"
 
 #: server/dialogs/ImportPupilsDialog.qml:94
 msgctxt "ImportPupilsDialog|"
 msgid "Add CSV file"
-msgstr ""
+msgstr "CSV-bestand toevoegen"
 
 #: server/dialogs/ImportPupilsDialog.qml:141
 msgctxt "ImportPupilsDialog|"
 msgid "Import pupils"
-msgstr ""
+msgstr "Leerlingen importeren"
 
 #: server/dialogs/PupilDialog.qml:59
 msgctxt "PupilDialog|"
 msgid "Pupil's name is empty"
-msgstr ""
+msgstr "Naam van leerling is leeg"
 
 #: server/dialogs/PupilDialog.qml:153
 msgctxt "PupilDialog|"
 msgid "Pupil's name"
-msgstr ""
+msgstr "Naam van leerling"
 
 #: server/dialogs/PupilDialog.qml:166
 msgctxt "PupilDialog|"
@@ -1539,7 +1564,7 @@ msgstr "Wachtwoord"
 #: server/dialogs/PupilDialog.qml:217
 msgctxt "PupilDialog|"
 msgid "Password images:"
-msgstr ""
+msgstr "Wachtwoordafbeeldingen:"
 
 #: server/dialogs/PupilDialog.qml:252
 msgctxt "PupilDialog|"
@@ -1549,34 +1574,34 @@ msgstr "Groepen"
 #: server/dialogs/PupilsToGroupsDialog.qml:87
 msgctxt "PupilsToGroupsDialog|"
 msgid "Select the groups to add these pupils to:"
-msgstr ""
+msgstr "Selecteer de groepen om deze leerlingen aan toe te voegen:"
 
 #: server/dialogs/PupilsToGroupsDialog.qml:88
 msgctxt "PupilsToGroupsDialog|"
 msgid "Select the groups from which to remove these pupils:"
-msgstr ""
+msgstr "Selecteer de groepen om deze leerlingen uit te verwijderen:"
 
 #: server/dialogs/RemoveDatasetDialog.qml:70
 msgctxt "RemoveDatasetDialog|"
 msgid ""
 "Are you sure you want to delete the following dataset from the database?"
-msgstr ""
+msgstr "Wilt u de volgende gegevensset uit de database verwijderen?"
 
 #: server/dialogs/RemovePupilsDialog.qml:76
 msgctxt "RemovePupilsDialog|"
 msgid ""
 "Are you sure you want to remove the following pupils from the database ?"
-msgstr ""
+msgstr "Wilt u de volgende leerlingen uit de database verwijderen?"
 
 #: server/dialogs/SendDatasetDialog.qml:93
 msgctxt "SendDatasetDialog|"
 msgid "Do you want to send the dataset to selected pupils?"
-msgstr ""
+msgstr "Wilt u de gegevensset naar de geselecteerde leerlingen verzenden?"
 
 #: server/dialogs/SendDatasetDialog.qml:94
 msgctxt "SendDatasetDialog|"
 msgid "Are you sure you want to remove the dataset from selected pupils?"
-msgstr ""
+msgstr "Wilt u de gegevensset verwijderen uit de geselecteerde leerlingen?"
 
 #: server/dialogs/SendDatasetDialog.qml:95
 msgctxt "SendDatasetDialog|"
@@ -1584,6 +1609,8 @@ msgid ""
 "Are you sure you want to remove all the existing datasets from selected "
 "pupils?"
 msgstr ""
+"Wilt u alle bestaande gegevenssets verwijderen uit de geselecteerde "
+"leerlingen?"
 
 #: server/dialogs/SendDatasetDialog.qml:129
 msgctxt "SendDatasetDialog|"
@@ -1593,17 +1620,17 @@ msgstr "Leerlingen"
 #: server/dialogs/SqlLineDialog.qml:19
 msgctxt "SqlLineDialog|"
 msgid "Line details"
-msgstr ""
+msgstr "Details van regels"
 
 #: server/dialogs/SqlLineDialog.qml:151
 msgctxt "SqlLineDialog|"
 msgid "<"
-msgstr ""
+msgstr "<"
 
 #: server/dialogs/SqlLineDialog.qml:175
 msgctxt "SqlLineDialog|"
 msgid ">"
-msgstr ""
+msgstr ">"
 
 #: server/dialogs/SqlLineDialog.qml:191
 msgctxt "SqlLineDialog|"
@@ -1613,7 +1640,7 @@ msgstr "Sluiten"
 #: server/Main.qml:48
 msgctxt "Main|"
 msgid "GCompris Teachers Tool"
-msgstr ""
+msgstr "Hulpmiddel voor docenten van GCompris"
 
 #: server/panels/NavigationPanel.qml:70
 msgctxt "NavigationPanel|"
@@ -1623,7 +1650,7 @@ msgstr "Aanmelden"
 #: server/panels/NavigationPanel.qml:78
 msgctxt "NavigationPanel|"
 msgid "Pupils and Groups"
-msgstr ""
+msgstr "Leerlingen en groepen"
 
 #: server/panels/NavigationPanel.qml:86
 msgctxt "NavigationPanel|"
@@ -1653,7 +1680,7 @@ msgstr "Instellingen"
 #: server/panels/NavigationPanel.qml:126
 msgctxt "NavigationPanel|"
 msgid "Development (WIP)"
-msgstr ""
+msgstr "Ontwikkeling (WIP)"
 
 #: server/panels/SelectorPanel.qml:51
 msgctxt "SelectorPanel|"
@@ -1693,12 +1720,12 @@ msgstr "Wachtwoord"
 #: server/singletons/Master.qml:36
 msgctxt "Master|"
 msgid "Users IDs"
-msgstr ""
+msgstr "Gebruikers-id's"
 
 #: server/singletons/Master.qml:37
 msgctxt "Master|"
 msgid "Activity Id"
-msgstr ""
+msgstr "Activiteit-id"
 
 #: server/singletons/Master.qml:38
 msgctxt "Master|"
@@ -1723,7 +1750,7 @@ msgstr "Groepen"
 #: server/singletons/Master.qml:42
 msgctxt "Master|"
 msgid "Groups IDs"
-msgstr ""
+msgstr "Groepen-id's"
 
 #: server/singletons/Master.qml:43 server/singletons/Master.qml:47
 msgctxt "Master|"
@@ -1758,7 +1785,7 @@ msgstr "Mislukt"
 #: server/singletons/Master.qml:51
 msgctxt "Master|"
 msgid "Success ratio"
-msgstr ""
+msgstr "Succesverhouding"
 
 #: server/views/ChartsView.qml:97
 msgctxt "ChartsView|"
@@ -1773,17 +1800,17 @@ msgstr "Leerlingen"
 #: server/views/datas/AllData.qml:69
 msgctxt "AllData|"
 msgid "Available requests"
-msgstr ""
+msgstr "Beschikbare verzoeken"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "All users activities"
-msgstr ""
+msgstr "Alle gebruikersactiviteiten"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "Pupils activities"
-msgstr ""
+msgstr "Leerlingenactiviteiten"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
@@ -1793,27 +1820,27 @@ msgstr "Alle groepen"
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "Failed activities"
-msgstr ""
+msgstr "Mislukte activiteiten"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "User's groups"
-msgstr ""
+msgstr "Gebruikersgroepen"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "Group's users"
-msgstr ""
+msgstr "Gebruikers van groepen"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "Daily activities"
-msgstr ""
+msgstr "Dagelijkse activiteiten"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "Daily ratios"
-msgstr ""
+msgstr "Dagelijkse verhoudingen"
 
 #. Number of lines
 #: server/views/datas/AllData.qml:90
@@ -1830,7 +1857,7 @@ msgstr "Commando's"
 #: server/views/datas/DuplicateData.qml:188
 msgctxt "DuplicateData|"
 msgid "Random date"
-msgstr ""
+msgstr "Willekeurige datum"
 
 #: server/views/datas/DuplicateData.qml:195
 msgctxt "DuplicateData|"
@@ -1840,13 +1867,13 @@ msgstr "Dupliceren"
 #: server/views/datas/DuplicateData.qml:199
 msgctxt "DuplicateData|"
 msgid "You are about to duplicate datas"
-msgstr ""
+msgstr "U staat op het punt gegevens te dupliceren"
 
 #: server/views/datas/DuplicateData.qml:199
 #: server/views/datas/DuplicateData.qml:212
 msgctxt "DuplicateData|"
 msgid "No action now"
-msgstr ""
+msgstr "Nu geen actie"
 
 #: server/views/datas/DuplicateData.qml:208
 msgctxt "DuplicateData|"
@@ -1856,7 +1883,7 @@ msgstr "Verwijderen"
 #: server/views/datas/DuplicateData.qml:212
 msgctxt "DuplicateData|"
 msgid "You are about to delete datas"
-msgstr ""
+msgstr "U staat op het punt gegevens te verwijderen"
 
 #: server/views/datas/DuplicateData.qml:230
 msgctxt "DuplicateData|"
@@ -1876,37 +1903,37 @@ msgstr "Gegevenssets"
 #: server/views/DatasetsView.qml:101
 msgctxt "DatasetsView|"
 msgid "Datasets management"
-msgstr ""
+msgstr "Beheer van gegevenssets"
 
 #: server/views/DatasetsView.qml:118
 msgctxt "DatasetsView|"
 msgid "Create dataset"
-msgstr ""
+msgstr "Gegevensset aanmaken"
 
 #: server/views/DatasetsView.qml:126
 msgctxt "DatasetsView|"
 msgid "Update dataset"
-msgstr ""
+msgstr "Gegevensset bijwerken"
 
 #: server/views/DatasetsView.qml:134
 msgctxt "DatasetsView|"
 msgid "Send dataset to clients"
-msgstr ""
+msgstr "Verzend gegevensset naar clients"
 
 #: server/views/DatasetsView.qml:152
 msgctxt "DatasetsView|"
 msgid "Remove dataset from clients"
-msgstr ""
+msgstr "Gegevensset uit clients verwijderen"
 
 #: server/views/DatasetsView.qml:176
 msgctxt "DatasetsView|"
 msgid "Remove all datasets from clients"
-msgstr ""
+msgstr "Alle gegevensset uit clients verwijderen"
 
 #: server/views/DatasetsView.qml:185
 msgctxt "DatasetsView|"
 msgid "Delete dataset"
-msgstr ""
+msgstr "Gegevensset verwijderen"
 
 #: server/views/DevelopmentView.qml:43
 msgctxt "DevelopmentView|"
@@ -1916,7 +1943,7 @@ msgstr "Gegevens bewerken"
 #: server/views/DevelopmentView.qml:47
 msgctxt "DevelopmentView|"
 msgid "All requests"
-msgstr ""
+msgstr "Alle verzoeken"
 
 #: server/views/DevicesView.qml:52
 msgctxt "DevicesView|"
@@ -1926,12 +1953,12 @@ msgstr "Niet verbonden"
 #: server/views/DevicesView.qml:54
 msgctxt "DevicesView|"
 msgid "Bad password input"
-msgstr ""
+msgstr "Verkeerde invoer van wachtwoord"
 
 #: server/views/DevicesView.qml:56
 msgctxt "DevicesView|"
 msgid "Logged"
-msgstr ""
+msgstr "Gelogd"
 
 #: server/views/DevicesView.qml:58
 msgctxt "DevicesView|"
@@ -1946,7 +1973,7 @@ msgstr "Verbinding verbroken"
 #: server/views/DevicesView.qml:62
 msgctxt "DevicesView|"
 msgid "Unknown connection status"
-msgstr ""
+msgstr "Onbekende status van verbinding"
 
 #: server/views/DevicesView.qml:84
 msgctxt "DevicesView|"
@@ -1971,27 +1998,27 @@ msgstr "Apparaten verbinden"
 #: server/views/DevicesView.qml:170
 msgctxt "DevicesView|"
 msgid "Send login list"
-msgstr ""
+msgstr "Lijst met aanmeldingen verzenden"
 
 #: server/views/DevicesView.qml:195
 msgctxt "DevicesView|"
 msgid "Disconnect selected pupils"
-msgstr ""
+msgstr "Van geselecteerde leerlingen verbinding verbreken"
 
 #: server/views/DevicesView.qml:212
 msgctxt "DevicesView|"
 msgid "Disconnect everybody"
-msgstr ""
+msgstr "van iedereen verbinding verbreken"
 
 #: server/views/DevicesView.qml:228
 msgctxt "DevicesView|"
 msgid "Server ID:"
-msgstr ""
+msgstr "Server-id:"
 
 #: server/views/DevicesView.qml:235
 msgctxt "DevicesView|"
 msgid "Teacher port:"
-msgstr ""
+msgstr "Poort van docent:"
 
 #: server/views/DevicesView.qml:242
 msgctxt "DevicesView|"
@@ -2001,28 +2028,28 @@ msgstr "Verbonden:"
 #: server/views/DevicesView.qml:249
 msgctxt "DevicesView|"
 msgid "Logged:"
-msgstr ""
+msgstr "Gelogd:"
 
 #: server/views/DevicesView.qml:256
 msgctxt "DevicesView|"
 msgid "Data received:"
-msgstr ""
+msgstr "Ontvangen gegevens:"
 
 #: server/views/DevicesView.qml:284
 msgctxt "DevicesView|"
 msgid "Network logs"
-msgstr ""
+msgstr "Netwerklogs"
 
 #: server/views/DevicesView.qml:296
 msgctxt "DevicesView|"
 msgid "Clear logs"
-msgstr ""
+msgstr "Logs wissen"
 
 #: server/views/DevicesView.qml:316
 #, qt-format
 msgctxt "DevicesView|"
 msgid "Server already running on port %1"
-msgstr ""
+msgstr "Server is al actief op poort %1"
 
 #: server/views/LoginView.qml:44
 msgctxt "LoginView|"
@@ -2032,17 +2059,17 @@ msgstr "Onjuist antwoord"
 #: server/views/LoginView.qml:48
 msgctxt "LoginView|"
 msgid "GCompris-teachers is already running on this computer"
-msgstr ""
+msgstr "GCompris-docenten is al actief op deze computer"
 
 #: server/views/LoginView.qml:49
 msgctxt "LoginView|"
 msgid "Only data browsing is permitted"
-msgstr ""
+msgstr "Alleen bladeren in gegevens is toegestaan"
 
 #: server/views/LoginView.qml:92
 msgctxt "LoginView|"
 msgid "Teacher login"
-msgstr ""
+msgstr "Aanmelden van docent"
 
 #: server/views/LoginView.qml:113
 msgctxt "LoginView|"
@@ -2057,32 +2084,32 @@ msgstr "Aanmelden"
 #: server/views/LoginView.qml:140
 msgctxt "LoginView|"
 msgid "Create teacher database"
-msgstr ""
+msgstr "Docentdatabase aanmaken"
 
 #: server/views/LoginView.qml:161
 msgctxt "LoginView|"
 msgid "Database file:"
-msgstr ""
+msgstr "Databasebestand:"
 
 #: server/views/LoginView.qml:174
 msgctxt "LoginView|"
 msgid "GCompris Teachers Tool"
-msgstr ""
+msgstr "Hulpmiddel voor docenten van GCompris"
 
 #: server/views/ManagePupilsView.qml:34 server/views/ManagePupilsView.qml:147
 msgctxt "ManagePupilsView|"
 msgid "Add a group"
-msgstr ""
+msgstr "Een groep toevoegen"
 
 #: server/views/ManagePupilsView.qml:44
 msgctxt "ManagePupilsView|"
 msgid "Are you sure you want to remove this group?"
-msgstr ""
+msgstr "Wilt u deze groep verwijderen?"
 
 #: server/views/ManagePupilsView.qml:45
 msgctxt "ManagePupilsView|"
 msgid "Pupils will not be removed."
-msgstr ""
+msgstr "Leerlingen zullen niet verwijderd worden."
 
 #: server/views/ManagePupilsView.qml:52
 msgctxt "ManagePupilsView|"
@@ -2092,12 +2119,12 @@ msgstr "Groep bewerken"
 #: server/views/ManagePupilsView.qml:68 server/views/ManagePupilsView.qml:204
 msgctxt "ManagePupilsView|"
 msgid "Add a pupil"
-msgstr ""
+msgstr "Een leerling toevoegen"
 
 #: server/views/ManagePupilsView.qml:74
 msgctxt "ManagePupilsView|"
 msgid "Edit pupil's name and groups"
-msgstr ""
+msgstr "Naam en groepen van leerling bewerken"
 
 #: server/views/ManagePupilsView.qml:122
 msgctxt "ManagePupilsView|"
@@ -2107,42 +2134,42 @@ msgstr "Groepen"
 #: server/views/ManagePupilsView.qml:157
 msgctxt "ManagePupilsView|"
 msgid "Pupils and groups"
-msgstr ""
+msgstr "Leerlingen en groepen"
 
 #: server/views/ManagePupilsView.qml:186
 msgctxt "ManagePupilsView|"
 msgid "Pupils management"
-msgstr ""
+msgstr "Beheer van leerlingen"
 
 #: server/views/ManagePupilsView.qml:212
 msgctxt "ManagePupilsView|"
 msgid "Add to groups"
-msgstr ""
+msgstr "Aan groepen toevoegen"
 
 #: server/views/ManagePupilsView.qml:220
 msgctxt "ManagePupilsView|"
 msgid "Remove from groups"
-msgstr ""
+msgstr "Uit groepen verwijderen"
 
 #: server/views/ManagePupilsView.qml:228
 msgctxt "ManagePupilsView|"
 msgid "Export pupils"
-msgstr ""
+msgstr "Leerlingen exporteren"
 
 #: server/views/ManagePupilsView.qml:235
 msgctxt "ManagePupilsView|"
 msgid "Import pupils"
-msgstr ""
+msgstr "Leerlingen importeren"
 
 #: server/views/ManagePupilsView.qml:243
 msgctxt "ManagePupilsView|"
 msgid "Remove pupils"
-msgstr ""
+msgstr "Leerlingen verwijderen"
 
 #: server/views/SettingsView.qml:65
 msgctxt "SettingsView|"
 msgid "Menu panel"
-msgstr ""
+msgstr "Menupaneel"
 
 #: server/views/SettingsView.qml:66
 msgctxt "SettingsView|"
@@ -2182,7 +2209,7 @@ msgstr "Taal selectie"
 #: server/views/SettingsView.qml:138
 msgctxt "SettingsView|"
 msgid "Server ID"
-msgstr ""
+msgstr "Server-id"
 
 #: server/views/SettingsView.qml:160
 msgctxt "SettingsView|"
@@ -2193,7 +2220,7 @@ msgstr "Poort"
 #: server/views/SettingsView.qml:178
 msgctxt "SettingsView|"
 msgid "Server is"
-msgstr ""
+msgstr "Server is"
 
 #: server/views/SettingsView.qml:179
 msgctxt "SettingsView|"
@@ -2204,7 +2231,7 @@ msgstr "Actief"
 #, qt-format
 msgctxt "SettingsView|"
 msgid "Already running on port %1"
-msgstr ""
+msgstr "Is al actief op poort %1"
 
 #: server/views/SettingsView.qml:187
 msgctxt "SettingsView|"
@@ -2214,12 +2241,12 @@ msgstr "Hostnaam"
 #: server/views/SettingsView.qml:194
 msgctxt "SettingsView|"
 msgid "Server IP"
-msgstr ""
+msgstr "Server-IP"
 
 #: server/views/SettingsView.qml:201
 msgctxt "SettingsView|"
 msgid "Broadcast IPs"
-msgstr ""
+msgstr "Broadcast-IP's"
 
 #: server/views/SettingsView.qml:208
 msgctxt "SettingsView|"
@@ -2234,7 +2261,7 @@ msgstr "MAC-adres"
 #: server/views/SettingsView.qml:220
 msgctxt "SettingsView|"
 msgid "GCompris version"
-msgstr ""
+msgstr "Versie van GCompris"
 
 #: server/views/SettingsView.qml:227
 msgctxt "SettingsView|"
@@ -2244,17 +2271,17 @@ msgstr "Qt-versie"
 #: server/views/SettingsView.qml:240
 msgctxt "SettingsView|"
 msgid "Teacher login"
-msgstr ""
+msgstr "Aanmelden van docent"
 
 #: server/views/SettingsView.qml:248
 msgctxt "SettingsView|"
 msgid "Database file"
-msgstr ""
+msgstr "Databasebestand"
 
 #: server/views/SettingsView.qml:255
 msgctxt "SettingsView|"
 msgid "Encrypted database"
-msgstr ""
+msgstr "Versleutelde database"
 
 #: server/views/SettingsView.qml:256
 msgctxt "SettingsView|"
@@ -2279,14 +2306,14 @@ msgstr "Groepen"
 #: server/views/SettingsView.qml:280
 msgctxt "SettingsView|"
 msgid "Pupils connected"
-msgstr ""
+msgstr "Verbonden leerlingen"
 
 #: server/views/SettingsView.qml:287
 msgctxt "SettingsView|"
 msgid "Pupils logged"
-msgstr ""
+msgstr "Aangemelde leerlingen"
 
 #: server/views/SettingsView.qml:294
 msgctxt "SettingsView|"
 msgid "Activities data received"
-msgstr ""
+msgstr "Ontvangen gegevens van activiteiten"

@@ -60,13 +60,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->2025-06-10</date>
+>2026-02-04</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->25.1.1</releaseinfo>
+>26.0</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -175,7 +175,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="difficulty1.svg" format="SVG"/></imageobject
+><imagedata fileref="difficulty1.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
 ></inlinemediaobject
 >1, 2 of 3 gele sterren — voor 2 tot 6 jaar oud.</para
 ></listitem
@@ -184,7 +184,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="difficulty4.svg" format="SVG"/></imageobject
+><imagedata fileref="difficulty4.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
 ></inlinemediaobject
 >1, 2 of 3 rode sterren — ouder dan 6 jaar.</para
 ></listitem
@@ -198,7 +198,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_home.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_home.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Thuis — Verlaat de huidige activiteit, ga terug naar het vorige menu.</para
 ></listitem
@@ -207,7 +207,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_ok.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > “OK” — Controleert en bevestigt uw antwoord. Sommige activiteiten detecteren niet automatisch dat een kind de taak heeft volbracht. In dat geval moet u op dit pictogram klikken. U kunt de &Enter;-toets op uw toetsenbord gebruiken.</para
 ></listitem
@@ -216,7 +216,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_hint.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Licht — toon een tip voor de activiteit. We kunnen de kinderen bij sommige activiteiten helpen om ze bij het zoeken van de antwoorden te begeleiden.</para
 ></listitem>
@@ -224,11 +224,11 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_previous.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_previous.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject>
 <inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_next.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_next.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Pijlen — Toont het huidige niveau. Klik op een van de pijlen om een ander niveau te selecteren. Meestal heeft een activiteit meerdere niveaus waarbij het aantal niveaus afhankelijk is van de activiteit. In &gcompris;, het is mogelijk om naar het volgende niveau te gaan terwijl het huidige niveau nog niet compleet is.</para
 ></listitem
@@ -237,7 +237,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_repeat.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_repeat.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Lippen — Vraagt aan &gcompris; om de vraag te herhalen.</para
 ></listitem
@@ -246,7 +246,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_help.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_help.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Vraagteken — Toont het help-dialoogvenster. Soms is een activiteit te ingewikkeld om gemakkelijk in de omschrijvings-tekst te beschrijven. In dat geval geeft deze functie toegang tot extra informatie.</para
 ></listitem
@@ -255,7 +255,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Gereedschapskist — Configuratie menu. DE configuratie wordt bewaart in de repository (map) van de gebruiker onder de naam <filename
 >.config/gcompris/gcompris-qt.conf</filename
@@ -266,7 +266,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_activity_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Element in lijst — toon het instellingenmenu van de activiteit. Er zijn hier twee mogelijke tabbladen. De eerste, "Gegevensset", biedt het kiezen van de niveaus van de activiteiten afhankelijk van verschillende doelen en de tweede, "Opties", biedt het bijwerken van de configuratie van de activiteit indien beschikbaar.</para
 ></listitem>
@@ -274,7 +274,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_about.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_about.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Hoofdletter “G” — Informatievenster over &gcompris;, geeft informatie over de hoofdontwikkelaars en de versie van de software.</para
 ></listitem
@@ -283,7 +283,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_exit.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Power — Stopt &gcompris;. u kunt ook de sneltoets op uw toetsenbord <keycombo action="simul"
 >&Ctrl;<keycap
@@ -571,6 +571,18 @@ for example 'xx.yy.zz'
 >--disable-kioskmode</entry>
 <entry
 >De kioskmodus uitschakelen (standaard).</entry>
+</row>
+<row>
+<entry
+>--show-home-button</entry>
+<entry
+>Toon de knop Home in de balk (standaard).</entry>
+</row>
+<row>
+<entry
+>--hide-home-button</entry>
+<entry
+>Verberg de knop Home in de balk.</entry>
 </row>
 <row>
 <entry
