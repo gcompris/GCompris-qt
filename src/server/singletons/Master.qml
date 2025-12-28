@@ -28,6 +28,11 @@ Item {
     property bool trace: false
     property int groupFilterId: -1     // contains selected group id
 
+    property string locale: "system"
+    onLocaleChanged: {
+        ApplicationInfo.switchLocale(locale)
+    }
+
     readonly property var columnsLabel: ({
         "user_id": qsTr("User ID"),
         "user_name": qsTr("Name"),
