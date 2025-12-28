@@ -31,7 +31,7 @@ Column {
     property int currentYear: new Date().getFullYear()
     property int currentDay: new Date().getDate()
     property alias collapseButton: collapseButton
-    property var locale: Qt.locale()
+    property var locale: Qt.locale(Master.locale)
     property string startDate: ""
     property string endDate: ""
     property string lastDate: ""

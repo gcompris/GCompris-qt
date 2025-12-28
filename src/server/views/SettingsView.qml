@@ -111,7 +111,7 @@ Item {
                     textRole: "text"
                     valueRole: "locale"
                     onSelectIndex: (selectedIndex) => {
-                        serverSettings.locale = valueAt(selectedIndex);
+                        Master.locale = language.valueAt(language.currentIndex);
                         // We need to restore the current index because after setting the locale
                         // the retranslation of the engine resets the value to 0
                         language.currentIndex = indexOfValue(serverSettings.locale)

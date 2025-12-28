@@ -76,9 +76,9 @@ Window {
         onDarkThemeChanged: Style.isDarkTheme = darkTheme
         property int textSize: 16
         onTextSizeChanged: Style.textSize = textSize
-        property string locale: "system"
-
-        onLocaleChanged: ApplicationInfo.switchLocale(locale)
+        property string locale: Master.locale
+        // Initialize locale in Master at startup
+        onLocaleChanged: Master.locale = locale
     }
 
     Row {
