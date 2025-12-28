@@ -33,7 +33,6 @@ Popup {
             Master.createTeacher(login.text, password.text, crypted.checked)
             Master.initialize()
             navigationBar.enabled = true
-            topBanner.visible = true
             navigationBar.startNavigation(navigationBar.pupilsView)
         }
         errorDialog.message = [ qsTr("Database file") +

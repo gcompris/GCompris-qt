@@ -78,9 +78,9 @@ int main(int argc, char *argv[])
     QSettings config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + "/gcompris/" + GCOMPRIS_TEACHERS_APPLICATION_NAME + ".conf",
                      QSettings::IniFormat);
     QString locale = config.value("locale", GC_DEFAULT_LOCALE).toString();
-    ApplicationInfo::getInstance()->switchLocale(QStringLiteral("gcompris_qt"), locale);
     // Load translations
-    ApplicationInfo::getInstance()->switchLocale(QStringLiteral("gcompris_teachers_qt"), locale);
+    ApplicationInfo::getInstance()->switchLocale(QStringLiteral("gcompris_teachers_qt"), locale, false);
+    ApplicationInfo::getInstance()->switchLocale(QStringLiteral("gcompris_qt"), locale);
 
     // Set global font
     qint32 fontId = QFontDatabase::addApplicationFont(":/gcompris/src/server/resource/fa-solid-900.ttf");

@@ -128,7 +128,7 @@ Item {
                     Component.onCompleted: {
                         currentIndex = indexOfValue(serverSettings.locale);
                     }
-               }
+                }
             }
 
             Rectangle {

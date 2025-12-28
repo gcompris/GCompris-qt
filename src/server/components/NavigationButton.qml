@@ -14,7 +14,7 @@ import "../singletons"
 Item {
     id: navigationButton
     property alias iconCharacter: textIcon.text
-    property alias description: textDescription.text
+    property string description: textDescription.text
     property bool selected: false
 
     signal navigationButtonClicked()
@@ -68,7 +68,7 @@ Item {
             color: textIcon.color
             font.pixelSize: Style.textSize
             fontSizeMode: Text.FixedSize
-            text: "SET ME!!"
+            text: navigationButton.description
         }
     }
 }

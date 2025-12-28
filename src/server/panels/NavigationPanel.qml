@@ -31,12 +31,12 @@ Item {
     width: enabled ? buttons.width : 0
     clip: true
 
+    property string currentText: buttons.children[lastIndex + 1].description
     function changeTo(index) {
         buttons.children[lastIndex + 1].selected = false
         lastIndex = index
         buttons.children[lastIndex + 1].selected = true
         mainStack.currentIndex = lastIndex
-        topBanner.text = buttons.children[lastIndex + 1].description
     }
 
     function startNavigation(button) {
