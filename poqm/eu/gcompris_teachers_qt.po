@@ -1,0 +1,2280 @@
+# Translation for gcompris_teachers_qt.po to Euskara/Basque (eu).
+# Copyright (C) 2025 This file is copyright:
+# This file is distributed under the same license as the original file.
+# SPDX-FileCopyrightText: 2025 KDE euskaratzeko proiektuaren arduraduna <xalba@ni.eus>
+#
+# Translators:
+# SPDX-FileCopyrightText: 2025 Iñigo Salvador Azurmendi <xalba@ni.eus>
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2025-12-26 19:50+0100\n"
+"Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
+"Language-Team: Basque <kde-i18n-eu@kde.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Qt-Contexts: true\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 25.12.0\n"
+
+#: server/activities/adjacent_numbers/ActivityEditor.qml:13
+#: server/activities/binary_bulb/ActivityEditor.qml:12
+#: server/activities/fractions_create/ActivityEditor.qml:12
+#: server/activities/learn_additions/ActivityEditor.qml:14
+#: server/activities/learn_digits/ActivityEditor.qml:13
+#: server/activities/learn_subtractions/ActivityEditor.qml:14
+#: server/activities/multiple_choice_questions/ActivityEditor.qml:13
+msgctxt "ActivityEditor|"
+msgid "Rules to create a valid dataset:"
+msgstr "Datu-multzo baliodun bat sortzeko arauak:"
+
+#: server/activities/adjacent_numbers/ActivityEditor.qml:15
+msgctxt "ActivityEditor|"
+msgid ""
+"If \"Random start number\" is selected, the number of sublevels will be the "
+"minimum between the \"Sublevels\" value and the result of: (\"Maximum start "
+"number\" - \"Minimum start number\") / \"Step between numbers\" + 1."
+msgstr ""
+
+#: server/activities/adjacent_numbers/ActivityEditor.qml:17
+msgctxt "ActivityEditor|"
+msgid ""
+"If \"Random start number\" is not selected, the \"Start numbers\" list must "
+"contain only numbers, and each of them will be used as start number for a "
+"sublevel."
+msgstr ""
+
+#: server/activities/adjacent_numbers/ActivityEditor.qml:19
+msgctxt "ActivityEditor|"
+msgid ""
+"\"Position of missing numbers\" must contain a list of numbers corresponding "
+"to the index of numbers to find. Index numbers start from 0 (the first "
+"number of the sequence), and must not be greater than \"Sequence length\" - "
+"1. Also, the length of the list can not be greater than \"Sequence length\" "
+"- 2, to always have at least 2 visible numbers in the sequence."
+msgstr ""
+
+#: server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:36
+msgctxt "AdjacentNumbersDataDisplay|"
+msgid "Tiles:"
+msgstr "Fitxak:"
+
+#: server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:60
+msgctxt "AdjacentNumbersDataDisplay|"
+msgid "Answer:"
+msgstr "Erantzuna:"
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:28
+msgctxt "AdjacentNumbersEditor|"
+msgid "Random start numbers"
+msgstr "Ausazko hasierako zenbakiak"
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:29
+msgctxt "AdjacentNumbersEditor|"
+msgid "Sublevels"
+msgstr "Azpimailak"
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:30
+msgctxt "AdjacentNumbersEditor|"
+msgid "Start numbers"
+msgstr "Hasierako zenbakiak"
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:31
+msgctxt "AdjacentNumbersEditor|"
+msgid "Minimum start number"
+msgstr "Gutxieneko hasierako zenbakia"
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:32
+msgctxt "AdjacentNumbersEditor|"
+msgid "Maximum start number"
+msgstr "Gehienezko hasierako zenbakia"
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:33
+msgctxt "AdjacentNumbersEditor|"
+msgid "Step between numbers"
+msgstr "Zenbakien arteko urratsa"
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:34
+msgctxt "AdjacentNumbersEditor|"
+msgid "Sequence length"
+msgstr "Sekuentziaren luzera"
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:35
+msgctxt "AdjacentNumbersEditor|"
+msgid "Position of missing numbers"
+msgstr "Falta diren zenbakien kokapena"
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:36
+msgctxt "AdjacentNumbersEditor|"
+msgid "Proposed numbers"
+msgstr "Proposatutako zenbakiak"
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:98
+msgctxt "AdjacentNumbersEditor|"
+msgid "Dataset is empty."
+msgstr "Datu-multzoa hutsik dago."
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:100
+msgctxt "AdjacentNumbersEditor|"
+msgid "\"Start numbers\" must contain only numbers, and not be empty."
+msgstr ""
+"\"Hasierako zenbakiak\" zenbakiak bakarrik izan behar ditu,  eta ez da "
+"hutsik egon behar."
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:102
+msgctxt "AdjacentNumbersEditor|"
+msgid ""
+"\"Position of missing numbers\" must contain only numbers, and not be empty."
+msgstr ""
+"\"Falta diren zenbakien kokapena\"k zenbakiak bakarrik izan behar ditu,  eta "
+"ez da hutsik egon behar."
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:104
+msgctxt "AdjacentNumbersEditor|"
+msgid "\"Position of missing numbers\" contains too much numbers."
+msgstr "\"Falta diren zenbakien kokapena\"k zenbaki gehiegi ditu."
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:106
+msgctxt "AdjacentNumbersEditor|"
+msgid "\"Position of missing numbers\" contains invalid numbers."
+msgstr "\"Falta diren zenbakien kokapena\"k zenbaki baliogabeak ditu."
+
+#: server/activities/algebra_by/AlgebraDataDisplay.qml:19
+msgctxt "AlgebraDataDisplay|"
+msgid "timeout"
+msgstr "Denbora-muga"
+
+#. %1 is an operation, %2 the result. Example: "2 x 5 = 10"
+#: server/activities/algebra_by/AlgebraDataDisplay.qml:22
+#, qt-format
+msgctxt "AlgebraDataDisplay|"
+msgid "%1 = %2"
+msgstr "%1 = %2"
+
+#. %1 is the answer. Example: "Answer: 10"
+#: server/activities/algebra_by/AlgebraDataDisplay.qml:24
+#, qt-format
+msgctxt "AlgebraDataDisplay|"
+msgid "Answer: %1"
+msgstr "Erantzuna: %1"
+
+#: server/activities/algebra_by/AlgebraEditor.qml:25
+msgctxt "AlgebraEditor|"
+msgid "Rules to create a valid dataset:"
+msgstr "Datu-multzo baliodun bat sortzeko arauak:"
+
+#: server/activities/algebra_by/AlgebraEditor.qml:27
+msgctxt "AlgebraEditor|"
+msgid ""
+"When \"Random operands\" is selected, if \"Result value limit\" is more than "
+"0 it defines the maximum allowed for the result of each operation. It must "
+"be large enough to generate enough questions for the given number of "
+"sublevels using the minimum and maximum operand values."
+msgstr ""
+
+#: server/activities/algebra_by/AlgebraEditor.qml:29
+msgctxt "AlgebraEditor|"
+msgid ""
+"If \"Random operands\" is not selected, the sublevel list on the right side "
+"must not be empty."
+msgstr ""
+
+#: server/activities/algebra_by/AlgebraEditor.qml:33
+msgctxt "AlgebraEditor|"
+msgid "Random operands"
+msgstr "Ausazko eragingaiak"
+
+#: server/activities/algebra_by/AlgebraEditor.qml:34
+#: server/activities/algebra_by/AlgebraEditor.qml:39
+msgctxt "AlgebraEditor|"
+msgid "Sublevels"
+msgstr "Azpimailak"
+
+#: server/activities/algebra_by/AlgebraEditor.qml:35
+msgctxt "AlgebraEditor|"
+msgid "Minimum operand value"
+msgstr "Eragingaiaren gutxieneko balioa"
+
+#: server/activities/algebra_by/AlgebraEditor.qml:36
+msgctxt "AlgebraEditor|"
+msgid "Maximum operand value"
+msgstr "Eragingaiaren gehienezko balioa"
+
+#: server/activities/algebra_by/AlgebraEditor.qml:37
+msgctxt "AlgebraEditor|"
+msgid "Result value limit"
+msgstr "Emaitzaren balio muga"
+
+#: server/activities/algebra_by/AlgebraEditor.qml:38
+msgctxt "AlgebraEditor|"
+msgid "Shuffle"
+msgstr "Nahastu"
+
+#: server/activities/algebra_by/AlgebraEditor.qml:44
+msgctxt "AlgebraEditor|"
+msgid "First operand"
+msgstr "Lehenengo eragingaia"
+
+#: server/activities/algebra_by/AlgebraEditor.qml:45
+msgctxt "AlgebraEditor|"
+msgid "Second operand"
+msgstr "Bigarren eragingaia"
+
+#: server/activities/algebra_div/ActivityEditor.qml:16
+msgctxt "ActivityEditor|"
+msgid ""
+"When \"Random operands\" is selected, the right side operand is always "
+"between minimum and maximum values. The left side operand is generated by "
+"multiplying the right side operand by another number between minimum and "
+"maximum values."
+msgstr ""
+
+#: server/activities/algebra_div/ActivityEditor.qml:18
+msgctxt "ActivityEditor|"
+msgid ""
+"If \"Random operands\" is not selected, for each sublevel you must make sure "
+"that the \"First operand\" is a multiple of the \"Second operand\"."
+msgstr ""
+
+#: server/activities/algebra_div/ActivityEditor.qml:23
+msgctxt "ActivityEditor|"
+msgid "Random operands"
+msgstr "Ausazko eragingaiak"
+
+#: server/activities/algebra_div/ActivityEditor.qml:24
+#: server/activities/algebra_div/ActivityEditor.qml:29
+msgctxt "ActivityEditor|"
+msgid "Sublevels"
+msgstr "Azpimailak"
+
+#: server/activities/algebra_div/ActivityEditor.qml:25
+msgctxt "ActivityEditor|"
+msgid "Minimum operand value"
+msgstr "Eragingaiaren gutxieneko balioa"
+
+#: server/activities/algebra_div/ActivityEditor.qml:26
+msgctxt "ActivityEditor|"
+msgid "Maximum operand value"
+msgstr "Eragingaiaren gehienezko balioa"
+
+#: server/activities/algebra_div/ActivityEditor.qml:27
+msgctxt "ActivityEditor|"
+msgid "Result value limit"
+msgstr "Emaitzaren balio muga"
+
+#: server/activities/algebra_div/ActivityEditor.qml:28
+msgctxt "ActivityEditor|"
+msgid "Shuffle"
+msgstr "Nahastu"
+
+#: server/activities/algebra_div/ActivityEditor.qml:34
+msgctxt "ActivityEditor|"
+msgid "First operand"
+msgstr "Lehenengo eragingaia"
+
+#: server/activities/algebra_div/ActivityEditor.qml:35
+msgctxt "ActivityEditor|"
+msgid "Second operand"
+msgstr "Bigarren eragingaia"
+
+#: server/activities/algebra_minus/ActivityEditor.qml:16
+msgctxt "ActivityEditor|"
+msgid ""
+"If \"Random operands\" is not selected, for each sublevel you must make sure "
+"that the \"First operand\" is greater than the \"Second operand\"."
+msgstr ""
+
+#: server/activities/binary_bulb/ActivityEditor.qml:14
+msgctxt "ActivityEditor|"
+msgid ""
+"If \"Random numbers\" is not selected, \"Numbers to find\" must contain a "
+"list of integer numbers. Each number must be between 0 and the maximum "
+"number which can be represented with the given \"Bulb count\"."
+msgstr ""
+
+#: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:28
+msgctxt "BinaryBulbDataDisplay|"
+msgid "Expected:"
+msgstr "Espero zena:"
+
+#: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:34
+msgctxt "BinaryBulbDataDisplay|"
+msgid "Answer:"
+msgstr "Erantzuna:"
+
+#. %1 is the numerical value, %2 is the binary value. Example: "5 (101)"
+#: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:46
+#: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:55
+#, qt-format
+msgctxt "BinaryBulbDataDisplay|"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:28
+msgctxt "BinaryBulbEditor|"
+msgid "Random numbers"
+msgstr "Ausazko zenbakiak"
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:29
+msgctxt "BinaryBulbEditor|"
+msgid "Sublevels"
+msgstr "Azpimailak"
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:30
+msgctxt "BinaryBulbEditor|"
+msgid "Numbers to find"
+msgstr "Aurkitu beharreko zenbakiak"
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:31
+msgctxt "BinaryBulbEditor|"
+msgid "Shuffle questions"
+msgstr "Nahastu galderak"
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:32
+msgctxt "BinaryBulbEditor|"
+msgid "Bulb count"
+msgstr "Bonbilla kopurua"
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:33
+msgctxt "BinaryBulbEditor|"
+msgid "Display the current result"
+msgstr "Erakutsi uneko emaitza"
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:34
+msgctxt "BinaryBulbEditor|"
+msgid "Display the bulb values"
+msgstr "Erakutsi bonbillen balioak"
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:87
+msgctxt "BinaryBulbEditor|"
+msgid "Dataset is empty."
+msgstr "Datu-multzoa hutsik dago."
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:101
+#, qt-format
+msgctxt "BinaryBulbEditor|"
+msgid "\"Numbers to find\" for level %1 must not be empty."
+msgstr "\"Aurkitu beharreko zenbakiak\" %1 mailan ez da hutsik egon behar."
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:115
+#, qt-format
+msgctxt "BinaryBulbEditor|"
+msgid ""
+"These values are invalid for level %1: %2. The values must be integer "
+"numbers between 0 and %3."
+msgstr ""
+"Balio hauek %1 mailarako baliogabeak dira: %2. Balioak 0 eta %3 arteko "
+"zenbaki osoak izan behar dira."
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:119
+#, qt-format
+msgctxt "BinaryBulbEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr "Ondoko erroreak zuzendu behar dira:<ul>%1</ul>"
+
+#: server/activities/clockgame/ClockGameDataDisplay.qml:30
+msgctxt "ClockGameDataDisplay|"
+msgid "Expected:"
+msgstr "Espero zena:"
+
+#: server/activities/clockgame/ClockGameDataDisplay.qml:36
+msgctxt "ClockGameDataDisplay|"
+msgid "Answer:"
+msgstr "Erantzuna:"
+
+#: server/activities/clockgame/ClockgameEditor.qml:27
+msgctxt "ClockgameEditor|"
+msgid "Exercise count"
+msgstr "Ariketa kopurua"
+
+#: server/activities/clockgame/ClockgameEditor.qml:28
+msgctxt "ClockgameEditor|"
+msgid "Find minutes"
+msgstr "Aurkitu minutuak"
+
+#: server/activities/clockgame/ClockgameEditor.qml:29
+msgctxt "ClockgameEditor|"
+msgid "Find seconds"
+msgstr "Aurkitu segundoak"
+
+#: server/activities/clockgame/ClockgameEditor.qml:30
+msgctxt "ClockgameEditor|"
+msgid "Display hours numbers"
+msgstr ""
+
+#: server/activities/clockgame/ClockgameEditor.qml:31
+msgctxt "ClockgameEditor|"
+msgid "Display hours marks"
+msgstr ""
+
+#: server/activities/clockgame/ClockgameEditor.qml:32
+msgctxt "ClockgameEditor|"
+msgid "Grey/white background between each hour"
+msgstr ""
+
+#: server/activities/clockgame/ClockgameEditor.qml:33
+msgctxt "ClockgameEditor|"
+msgid "Display minutes numbers"
+msgstr ""
+
+#: server/activities/clockgame/ClockgameEditor.qml:34
+msgctxt "ClockgameEditor|"
+msgid "Hide the Hint button in the bar (which gives the current time)"
+msgstr ""
+
+#: server/activities/clockgame/ClockgameEditor.qml:35
+msgctxt "ClockgameEditor|"
+msgid "Fixed hour"
+msgstr "Ordu finkoa"
+
+#: server/activities/clockgame/ClockgameEditor.qml:36
+#: server/activities/clockgame/ClockgameEditor.qml:38
+#: server/activities/clockgame/ClockgameEditor.qml:40
+msgctxt "ClockgameEditor|"
+msgid "Value"
+msgstr "Balioa"
+
+#: server/activities/clockgame/ClockgameEditor.qml:37
+msgctxt "ClockgameEditor|"
+msgid "Fixed minutes"
+msgstr "Minutu finkoak"
+
+#: server/activities/clockgame/ClockgameEditor.qml:39
+msgctxt "ClockgameEditor|"
+msgid "Fixed seconds"
+msgstr "Segundo finkoak"
+
+#: server/activities/comparator/ComparatorDataDisplay.qml:30
+msgctxt "ComparatorDataDisplay|"
+msgid "Result:"
+msgstr "Emaitza:"
+
+#: server/activities/comparator/ComparatorEditor.qml:29
+msgctxt "ComparatorEditor|"
+msgid "Shuffle"
+msgstr "Nahastu"
+
+#: server/activities/comparator/ComparatorEditor.qml:30
+msgctxt "ComparatorEditor|"
+msgid "Questions"
+msgstr "Galderak"
+
+#: server/activities/comparator/ComparatorEditor.qml:36
+msgctxt "ComparatorEditor|"
+msgid "Left number"
+msgstr "Ezkerreko zenbakia"
+
+#: server/activities/comparator/ComparatorEditor.qml:37
+msgctxt "ComparatorEditor|"
+msgid "Right number"
+msgstr "Eskuineko zenbakia"
+
+#: server/activities/comparator/ComparatorEditor.qml:109
+msgctxt "ComparatorEditor|"
+msgid "Dataset is empty."
+msgstr "Datu-multzoa hutsik dago."
+
+#: server/activities/comparator/ComparatorEditor.qml:119
+#, qt-format
+msgctxt "ComparatorEditor|"
+msgid "Level %1 must not be empty."
+msgstr "%1 maila ez da hutsik egon behar."
+
+#: server/activities/comparator/ComparatorEditor.qml:126
+#, qt-format
+msgctxt "ComparatorEditor|"
+msgid "\"Left number\" in Question %1 of Level %2 must contain a number."
+msgstr ""
+"%2 mailako %1 galderako \"Ezkerreko zenbakia\"k zenbaki bat izan behar du."
+
+#: server/activities/comparator/ComparatorEditor.qml:130
+#, qt-format
+msgctxt "ComparatorEditor|"
+msgid "\"Right number\" in Question %1 of Level %2 must contain a number."
+msgstr ""
+"%2 mailako %1 galderako \"Eskuineko zenbakia\"k zenbaki bat izan behar du."
+
+#: server/activities/comparator/ComparatorEditor.qml:136
+#, qt-format
+msgctxt "ComparatorEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr "Ondoko erroreak zuzendu behar dira:<ul>%1</ul>"
+
+#: server/activities/DailyReport.qml:33
+msgctxt "DailyReport|"
+msgid "All groups"
+msgstr "Talde guztiak"
+
+#. Group name first, then Date range, with a space between them. Example: "Group Name 01/07/2025-08/07/2025"
+#: server/activities/DailyReport.qml:126
+#, qt-format
+msgctxt "DailyReport|"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: server/activities/DailyReport.qml:130
+msgctxt "DailyReport|"
+msgid "Calendar"
+msgstr "Egutegia"
+
+#: server/activities/DailyReport.qml:185
+msgctxt "DailyReport|"
+msgid "Count"
+msgstr "Kopurua"
+
+#: server/activities/DailyReport.qml:195
+msgctxt "DailyReport|"
+msgid "Time"
+msgstr "Ordua"
+
+#: server/activities/DailyReport.qml:205
+#, fuzzy
+msgctxt "DailyReport|"
+msgid "Ratio"
+msgstr "E&rlazioa:"
+
+#. Number of result lines
+#: server/activities/DailyReport.qml:217
+#, fuzzy, qt-format
+msgctxt "DailyReport|"
+msgid "Lines: %1"
+msgstr "Lerroak"
+
+#. Success ratio, example: "50 %"
+#: server/activities/DailyReport.qml:316
+#, qt-format
+msgctxt "DailyReport|"
+msgid "%1 %"
+msgstr "%%1"
+
+#: server/activities/fractions_create/ActivityEditor.qml:14
+msgctxt "ActivityEditor|"
+msgid ""
+"\"Instruction\" must contain some text telling the fraction to represent."
+msgstr ""
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:29
+msgctxt "FractionsCreateEditor|"
+msgid "Shuffle"
+msgstr "Nahastu"
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:30
+msgctxt "FractionsCreateEditor|"
+msgid "Questions"
+msgstr "Galderak"
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:36
+msgctxt "FractionsCreateEditor|"
+msgid "Numerator"
+msgstr "Zenbakitzailea"
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:37
+msgctxt "FractionsCreateEditor|"
+msgid "Denominator"
+msgstr "Izendatzailea"
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:38
+msgctxt "FractionsCreateEditor|"
+msgid "Instruction"
+msgstr "Agindua"
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:130
+msgctxt "FractionsCreateEditor|"
+msgid "Dataset is empty."
+msgstr "Datu-multzoa hutsik dago."
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:140
+#, qt-format
+msgctxt "FractionsCreateEditor|"
+msgid "Level %1 must not be empty."
+msgstr "%1 maila ez da hutsik egon behar."
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:146
+#, qt-format
+msgctxt "FractionsCreateEditor|"
+msgid "\"Instruction\" of Question %1 from Level %2 must not be empty."
+msgstr "%2 mailako %1 galderaren \"Agindua\" ez du hutsik egon behar."
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:152
+#, qt-format
+msgctxt "FractionsCreateEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr "Ondoko erroreak zuzendu behar dira:<ul>%1</ul>"
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:160
+msgctxt "FractionsCreateEditor|"
+msgid "Rectangle"
+msgstr "Laukizuzena"
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:161
+msgctxt "FractionsCreateEditor|"
+msgid "Circle"
+msgstr "Zirkulua"
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:164
+msgctxt "FractionsCreateEditor|"
+msgid "Chart Type"
+msgstr "Diagrama mota"
+
+#: server/activities/fractions_find/FractionsFindDataDisplay.qml:26
+msgctxt "FractionsFindDataDisplay|"
+msgid "Expected:"
+msgstr "Espero zena:"
+
+#: server/activities/fractions_find/FractionsFindDataDisplay.qml:60
+msgctxt "FractionsFindDataDisplay|"
+msgid "Answer:"
+msgstr "Erantzuna:"
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:29
+msgctxt "FractionsFindEditor|"
+msgid "Shuffle"
+msgstr "Nahastu"
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:30
+msgctxt "FractionsFindEditor|"
+msgid "Questions"
+msgstr "Galderak"
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:36
+msgctxt "FractionsFindEditor|"
+msgid "Static numerator"
+msgstr "Zenbakitzaile estatikoa"
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:37
+msgctxt "FractionsFindEditor|"
+msgid "Static denominator"
+msgstr "Izendatzaile estatikoa"
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:38
+msgctxt "FractionsFindEditor|"
+msgid "Numerator"
+msgstr "Zenbakitzailea"
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:39
+msgctxt "FractionsFindEditor|"
+msgid "Denominator"
+msgstr "Izendatzailea"
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:40
+msgctxt "FractionsFindEditor|"
+msgid "Maximum of units"
+msgstr ""
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:41
+msgctxt "FractionsFindEditor|"
+msgid "Random fraction"
+msgstr "Ausazko zatikia"
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:159
+msgctxt "FractionsFindEditor|"
+msgid "Dataset is empty."
+msgstr "Datu-multzoa hutsik dago."
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:169
+#, qt-format
+msgctxt "FractionsFindEditor|"
+msgid "Level %1 must not be empty."
+msgstr "%1 maila ez da hutsik egon behar."
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:173
+#, qt-format
+msgctxt "FractionsFindEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr "Ondoko erroreak zuzendu behar dira:<ul>%1</ul>"
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:181
+msgctxt "FractionsFindEditor|"
+msgid "Rectangle"
+msgstr "Laukizuzena"
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:182
+msgctxt "FractionsFindEditor|"
+msgid "Circle"
+msgstr "Zirkulua"
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:185
+msgctxt "FractionsFindEditor|"
+msgid "Chart Type"
+msgstr "Diagrama mota"
+
+#. %1 is number of hints displayed. Example: "Hints: 1"
+#: server/activities/guess24/Guess24DataDisplay.qml:79
+#, qt-format
+msgctxt "Guess24DataDisplay|"
+msgid "Hints: %1"
+msgstr "Argibideak: %1"
+
+#: server/activities/learn_additions/ActivityEditor.qml:16
+msgctxt "ActivityEditor|"
+msgid ""
+"\"Additions\" must contain a list of additions which results are between 0 "
+"and 9."
+msgstr ""
+
+#: server/activities/learn_additions/ActivityEditor.qml:18
+#: server/activities/learn_subtractions/ActivityEditor.qml:18
+msgctxt "ActivityEditor|"
+msgid ""
+"\"Number of circles\" can not be smaller than the largest result to find."
+msgstr ""
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:28
+msgctxt "LearnDecimalsEditor|"
+msgid "Shuffle"
+msgstr "Nahastu"
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:29
+msgctxt "LearnDecimalsEditor|"
+msgid "Sublevels"
+msgstr "Azpimailak"
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:39
+msgctxt "LearnDecimalsEditor|"
+msgid "Fixed Number"
+msgstr "Zenbaki finkoa"
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:40
+msgctxt "LearnDecimalsEditor|"
+msgid "Minimum Value"
+msgstr "Gutxieneko balioa"
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:41
+msgctxt "LearnDecimalsEditor|"
+msgid "Maximum Value"
+msgstr "Gehienezko balioa"
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:140
+msgctxt "LearnDecimalsEditor|"
+msgid "Dataset is empty."
+msgstr "Datu-multzoa hutsik dago."
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:150
+#, qt-format
+msgctxt "LearnDecimalsEditor|"
+msgid "Level %1 must not be empty."
+msgstr "%1 maila ez da hutsik egon behar."
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:154
+#, qt-format
+msgctxt "LearnDecimalsEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr "Ondoko erroreak zuzendu behar dira:<ul>%1</ul>"
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:162
+msgctxt "LearnDecimalsEditor|"
+msgid "Random"
+msgstr "Ausazkoa"
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:163
+msgctxt "LearnDecimalsEditor|"
+msgid "Fixed"
+msgstr "Finkoa"
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:168
+msgctxt "LearnDecimalsEditor|"
+msgid "Mode"
+msgstr "Modua"
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:29
+msgctxt "DecimalAdditionEditor|"
+msgid "Shuffle"
+msgstr "Nahastu"
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:30
+msgctxt "DecimalAdditionEditor|"
+msgid "Sublevels"
+msgstr "Azpimailak"
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:41
+msgctxt "DecimalAdditionEditor|"
+msgid "First Number"
+msgstr "Lehen zenbakia"
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:42
+msgctxt "DecimalAdditionEditor|"
+msgid "Second Number"
+msgstr "Bigarren zenbakia"
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:43
+msgctxt "DecimalAdditionEditor|"
+msgid "Minimum Value"
+msgstr "Gutxieneko balioa"
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:44
+msgctxt "DecimalAdditionEditor|"
+msgid "Maximum Value"
+msgstr "Gehienezko balioa"
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:182
+msgctxt "DecimalAdditionEditor|"
+msgid "Dataset is empty."
+msgstr "Datu-multzoa hutsik dago."
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:192
+#, qt-format
+msgctxt "DecimalAdditionEditor|"
+msgid "Level %1 must not be empty."
+msgstr "%1 maila ez da hutsik egon behar."
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:196
+#, qt-format
+msgctxt "DecimalAdditionEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr "Ondoko erroreak zuzendu behar dira:<ul>%1</ul>"
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:204
+msgctxt "DecimalAdditionEditor|"
+msgid "Random"
+msgstr "Ausazkoa"
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:205
+msgctxt "DecimalAdditionEditor|"
+msgid "Fixed"
+msgstr "Finkoa"
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:210
+msgctxt "DecimalAdditionEditor|"
+msgid "Mode"
+msgstr "Modua"
+
+#: server/activities/learn_digits/ActivityEditor.qml:15
+msgctxt "ActivityEditor|"
+msgid "\"Numbers\" must contain a list of numbers between 0 and 9."
+msgstr "\"Zenbakiak\" 0 eta 9 arteko zenbaki-zerrenda bat izan behar du."
+
+#: server/activities/learn_digits/ActivityEditor.qml:17
+msgctxt "ActivityEditor|"
+msgid ""
+"\"Number of circles\" can not be smaller than the largest number to find."
+msgstr ""
+
+#. %1 is an operation, %2 the result. Example: "2 x 5 = 10"
+#: server/activities/learn_digits/LearnDigitsDataDisplay.qml:24
+#, qt-format
+msgctxt "LearnDigitsDataDisplay|"
+msgid "%1 = %2"
+msgstr "%1 = %2"
+
+#. %1 is the answer. Example: "Answer: 10"
+#: server/activities/learn_digits/LearnDigitsDataDisplay.qml:27
+#, qt-format
+msgctxt "LearnDigitsDataDisplay|"
+msgid "Answer: %1"
+msgstr "Erantzuna: %1"
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:32
+msgctxt "LearnDigitsEditor|"
+msgid "Number of circles"
+msgstr "Zirkulu kopurua"
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:33
+msgctxt "LearnDigitsEditor|"
+msgid "Random order"
+msgstr "Ausazko ordena"
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:99
+msgctxt "LearnDigitsEditor|"
+msgid "Dataset is empty."
+msgstr "Datu-multzoa hutsik dago."
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:101
+msgctxt "LearnDigitsEditor|"
+msgid ""
+"\"Numbers\" must only contain integer numbers between 0 and 9, and must not "
+"be empty."
+msgstr ""
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:103
+msgctxt "LearnDigitsEditor|"
+msgid ""
+"\"Additions\" must only contain additions which results are integer numbers "
+"between 0 and 9, and must not be empty."
+msgstr ""
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:105
+msgctxt "LearnDigitsEditor|"
+msgid ""
+"\"Subtractions\" must only contain subtractions which results are integer "
+"numbers between 0 and 9, and must not be empty."
+msgstr ""
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:161
+msgctxt "LearnDigitsEditor|"
+msgid "Numbers"
+msgstr "Zenbakiak"
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:163
+msgctxt "LearnDigitsEditor|"
+msgid "Additions"
+msgstr "Batuketak"
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:165
+msgctxt "LearnDigitsEditor|"
+msgid "Subtractions"
+msgstr "Kenketak"
+
+#: server/activities/learn_quantities/ActivityEditor.qml:24
+msgctxt "ActivityEditor|"
+msgid "Fixed Number"
+msgstr "Zenbaki finkoa"
+
+#: server/activities/learn_quantities/ActivityEditor.qml:25
+msgctxt "ActivityEditor|"
+msgid "Minimum Value"
+msgstr "Gutxieneko balioa"
+
+#: server/activities/learn_quantities/ActivityEditor.qml:26
+msgctxt "ActivityEditor|"
+msgid "Maximum Value"
+msgstr "Gehienezko balioa"
+
+#: server/activities/learn_subtractions/ActivityEditor.qml:16
+msgctxt "ActivityEditor|"
+msgid ""
+"\"Subtractions\" must contain a list of subtractions which results are "
+"between 0 and 9."
+msgstr ""
+
+#: server/activities/LineReport.qml:65
+msgctxt "LineReport|"
+msgid "Back"
+msgstr "Atzera"
+
+#: server/activities/LineReport.qml:71
+msgctxt "LineReport|"
+msgid "Refresh"
+msgstr "Berritu"
+
+#: server/activities/LineReport.qml:77
+#, fuzzy, qt-format
+msgctxt "LineReport|"
+msgid "Lines: %1"
+msgstr "Lerroak"
+
+#: server/activities/LineReport.qml:227
+#, qt-format
+msgctxt "LineReport|"
+msgid "Level: <b>%1</b>"
+msgstr "Maila: <b>%1</b>"
+
+#. Result duration in seconds. Example: "Duration: 25s"
+#: server/activities/LineReport.qml:243 server/activities/LineReport.qml:253
+#, qt-format
+msgctxt "LineReport|"
+msgid "Duration: %1s"
+msgstr "Iraupena: %1s"
+
+#: server/activities/multiple_choice_questions/ActivityEditor.qml:15
+msgctxt "ActivityEditor|"
+msgid ""
+"In \"Single answer\" mode, users can select only one answer. In \"Multiple "
+"answers\" mode, they can select multiple answers."
+msgstr ""
+
+#: server/activities/multiple_choice_questions/ActivityEditor.qml:17
+msgctxt "ActivityEditor|"
+msgid ""
+"All entries in the \"Correct answers\" list must also be present in the "
+"\"Answers\" list."
+msgstr ""
+
+#: server/activities/multiple_choice_questions/ActivityEditor.qml:19
+msgctxt "ActivityEditor|"
+msgid ""
+"\"Correct answer text\" and \"Wrong answer text\" are optional messages "
+"displayed after users validate their answer. You can leave those empty if "
+"you want."
+msgstr ""
+
+#: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:27
+msgctxt "MultipleChoiceDataDisplay|"
+msgid "Question:"
+msgstr "Galdera:"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:33
+msgctxt "MultipleChoiceDataDisplay|"
+msgid "Answer:"
+msgstr "Erantzuna:"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:39
+msgctxt "MultipleChoiceDataDisplay|"
+msgid "Expected:"
+msgstr "Espero zena:"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:45
+msgctxt "MultipleChoiceDataDisplay|"
+msgid "Proposed:"
+msgstr "Proposatua:"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:29
+msgctxt "MultipleChoiceEditor|"
+msgid "Shuffle"
+msgstr "Nahastu"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:30
+msgctxt "MultipleChoiceEditor|"
+msgid "Sublevels"
+msgstr "Azpimailak"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:36
+msgctxt "MultipleChoiceEditor|"
+msgid "Shuffle answers"
+msgstr "Nahastu erantzunak"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:37
+msgctxt "MultipleChoiceEditor|"
+msgid "Question"
+msgstr "Galdera"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:38
+msgctxt "MultipleChoiceEditor|"
+msgid "Answers"
+msgstr "Erantzunak"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:39
+msgctxt "MultipleChoiceEditor|"
+msgid "Correct answers"
+msgstr "Erantzun zuzenak"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:40
+msgctxt "MultipleChoiceEditor|"
+msgid "Correct answer text"
+msgstr "Erantzun zuzenaren testua"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:41
+msgctxt "MultipleChoiceEditor|"
+msgid "Wrong answer text"
+msgstr "Erantzun okerraren testua"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:121
+msgctxt "MultipleChoiceEditor|"
+msgid "Dataset is empty."
+msgstr "Datu-multzoa hutsik dago."
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:131
+#, qt-format
+msgctxt "MultipleChoiceEditor|"
+msgid "Level %1 must not be empty."
+msgstr "%1 maila ez da hutsik egon behar."
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:138
+#, qt-format
+msgctxt "MultipleChoiceEditor|"
+msgid "\"Question\" in Sublevel %1 of Level %2 must not be empty."
+msgstr ""
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:143
+#, qt-format
+msgctxt "MultipleChoiceEditor|"
+msgid "\"Answers\" in Sublevel %1 of Level %2 must not be empty."
+msgstr ""
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:148
+#, qt-format
+msgctxt "MultipleChoiceEditor|"
+msgid "\"Correct answers\" in Sublevel %1 of Level %2 must not be empty."
+msgstr ""
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:155
+#, qt-format
+msgctxt "MultipleChoiceEditor|"
+msgid ""
+"In Sublevel %1 of Level %2, the correct answer \"%3\" is not in the \"Answers"
+"\" list."
+msgstr ""
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:163
+#, qt-format
+msgctxt "MultipleChoiceEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr "Ondoko erroreak zuzendu behar dira:<ul>%1</ul>"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:171
+msgctxt "MultipleChoiceEditor|"
+msgid "Single answer"
+msgstr "Erantzun bakarra"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:172
+msgctxt "MultipleChoiceEditor|"
+msgid "Multiple answers"
+msgstr "Erantzun anizkoitzak"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:177
+msgctxt "MultipleChoiceEditor|"
+msgid "Mode"
+msgstr "Modua"
+
+#: server/activities/vertical_subtraction/VerticalEditor.qml:29
+msgctxt "VerticalEditor|"
+msgid "Sublevels"
+msgstr "Azpimailak"
+
+#: server/activities/vertical_subtraction/VerticalEditor.qml:31
+msgctxt "VerticalEditor|"
+msgid "Number of digits"
+msgstr "Digitu kopurua"
+
+#: server/activities/vertical_subtraction/VerticalEditor.qml:33
+msgctxt "VerticalEditor|"
+msgid "Number of lines"
+msgstr "Lerro kopurua"
+
+#: server/activities/vertical_subtraction/VerticalEditor.qml:34
+msgctxt "VerticalEditor|"
+msgid "With carry"
+msgstr ""
+
+#: server/activities/vertical_subtraction/VerticalEditor.qml:35
+msgctxt "VerticalEditor|"
+msgid "Already laid"
+msgstr ""
+
+#: server/activities/vertical_subtraction/VerticalEditor.qml:36
+msgctxt "VerticalEditor|"
+msgid "Write your operation"
+msgstr "Idatzi zure eragiketa"
+
+#: server/components/CalendarPane.qml:77
+msgctxt "CalendarPane|"
+msgid "Calendar"
+msgstr "Egutegia"
+
+#: server/components/CheckUserEditDelegate.qml:34
+msgctxt "CheckUserEditDelegate|"
+msgid "Edit pupil"
+msgstr "Editatu ikaslea"
+
+#: server/components/EditorBox.qml:84
+msgctxt "EditorBox|"
+msgid "Add"
+msgstr "Gehitu"
+
+#: server/components/EditorBox.qml:95
+msgctxt "EditorBox|"
+msgid "Remove"
+msgstr "Kendu"
+
+#: server/components/EditorBox.qml:107
+msgctxt "EditorBox|"
+msgid "Move up"
+msgstr "Eraman gora"
+
+#: server/components/EditorBox.qml:118
+msgctxt "EditorBox|"
+msgid "Move down"
+msgstr "Eraman behera"
+
+#: server/components/FieldEdit.qml:318
+msgctxt "FieldEdit|"
+msgid "Add an entry"
+msgstr "Gehitu sarrera"
+
+#: server/components/FieldEdit.qml:330
+msgctxt "FieldEdit|"
+msgid "Remove last entry"
+msgstr "Kendu azken sarrera"
+
+#: server/components/FoldDown.qml:138
+msgctxt "FoldDown|"
+msgid "Filter list"
+msgstr ""
+
+#: server/components/OkCancelButtons.qml:19
+msgctxt "OkCancelButtons|"
+msgid "OK"
+msgstr "Ados"
+
+#: server/components/OkCancelButtons.qml:20
+msgctxt "OkCancelButtons|"
+msgid "Cancel"
+msgstr "Ezeztatu"
+
+#: server/components/RadioGroupEditDelegate.qml:60
+msgctxt "RadioGroupEditDelegate|"
+msgid "Edit group"
+msgstr "Editatu taldea"
+
+#: server/components/RadioGroupEditDelegate.qml:72
+msgctxt "RadioGroupEditDelegate|"
+msgid "Delete group"
+msgstr "Ezabatu taldea"
+
+#: server/components/ServerLanguageList.qml:32
+msgctxt "ServerLanguageList|"
+msgid "Your system default"
+msgstr "Zure sistemako lehenetsia"
+
+#: server/controllers/database-controller.cpp:83
+#: server/controllers/database-controller.cpp:89
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid ""
+"File %1\n"
+"Error SQL: %2"
+msgstr ""
+"Fitxategia %1\n"
+"SQL errorea: %2"
+
+#: server/controllers/database-controller.cpp:125
+msgctxt "controllers::DatabaseController|"
+msgid "Table teacher_ could not be updated to current version."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:351
+msgctxt "controllers::DatabaseController|"
+msgid "Error creating teacher."
+msgstr "Irakaslea sortzeko errorea."
+
+#: server/controllers/database-controller.cpp:373
+msgctxt "controllers::DatabaseController|"
+msgid "Wrong password."
+msgstr "Pasahitz okerra."
+
+#: server/controllers/database-controller.cpp:417
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Group <b>%1</b> already exists."
+msgstr "<b>%1</b> taldea jada badago."
+
+#: server/controllers/database-controller.cpp:438
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Group <b>%1</b> could not be updated to <b>%2</b>."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:456
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Group <b>%1</b> could not be deleted from table group_."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:459
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Group <b>%1</b> could not be deleted from table group_user_."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:483
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Pupil login <b>%1</b> already exists or password is empty."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:502
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "<b>%1</b> could not be updated to <b>%2</b>."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:522
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "User <b>%1</b> could not be deleted from table user_."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:527
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "User <b>%1</b> could not be deleted from table result_."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:542
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "User <b>%1</b> could not be deleted from table group_user_."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:557
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "User <b>%1</b> already exists in group <b>%2</b>."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:572
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "User <b>%1</b> group <b>%2</b> couldn't be deleted."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:607
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Result could not be added for user <b>%1</b>"
+msgstr ""
+
+#: server/controllers/database-controller.cpp:619
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Error inserting activity: %1"
+msgstr ""
+
+#: server/controllers/database-controller.cpp:665
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Dataset <b>%1</b> already exists."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:682
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Dataset <b>%1</b> could not be updated to <b>%2</b>."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:697
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Dataset <b>%1</b> couldn't be deleted."
+msgstr ""
+
+#: server/controllers/network-controller.cpp:46
+#, qt-format
+msgctxt "controllers::NetworkController|"
+msgid "Unable to start the server: %1."
+msgstr "Ezin da zerbitzaria abiarazi: %1."
+
+#: server/dialogs/CreateDbDialog.qml:19
+msgctxt "CreateDbDialog|"
+msgid "You are about to create a new GCompris database."
+msgstr "GCompris datu-base berri bat sortzera zoaz."
+
+#: server/dialogs/CreateDbDialog.qml:39
+msgctxt "CreateDbDialog|"
+msgid "Database file"
+msgstr "Datu-base fitxategia"
+
+#: server/dialogs/CreateDbDialog.qml:41
+msgctxt "CreateDbDialog|"
+msgid "created in:"
+msgstr ""
+
+#: server/dialogs/CreateDbDialog.qml:65
+msgctxt "CreateDbDialog|"
+msgid "New database creation"
+msgstr "Datu-base berri sorrera"
+
+#: server/dialogs/CreateDbDialog.qml:93
+msgctxt "CreateDbDialog|"
+msgid "Teacher login"
+msgstr ""
+
+#: server/dialogs/CreateDbDialog.qml:113
+msgctxt "CreateDbDialog|"
+msgid "Password"
+msgstr "Pasahitza"
+
+#: server/dialogs/CreateDbDialog.qml:129
+msgctxt "CreateDbDialog|"
+msgid "Encrypted database (enabled by default)"
+msgstr "Zifratutako datu-basea (gaituta era lehenetsian)"
+
+#: server/dialogs/DatasetEditorDialog.qml:52
+msgctxt "DatasetEditorDialog|"
+msgid "Create dataset"
+msgstr "Sortu datu-multzoa"
+
+#: server/dialogs/DatasetEditorDialog.qml:62
+msgctxt "DatasetEditorDialog|"
+msgid "Update dataset"
+msgstr "Eguneratu datu-multzoa"
+
+#: server/dialogs/DatasetEditorDialog.qml:76
+msgctxt "DatasetEditorDialog|"
+msgid "Dataset name is empty"
+msgstr "Datu-multzoaren izena hutsik dago"
+
+#: server/dialogs/DatasetEditorDialog.qml:83
+msgctxt "DatasetEditorDialog|"
+msgid "Difficulty should be between 1 and 6"
+msgstr "Zailtasuna 1 eta 6 bitartekoa izan beharko litzateke"
+
+#: server/dialogs/DatasetEditorDialog.qml:236
+msgctxt "DatasetEditorDialog|"
+msgid "INVALID DATASET"
+msgstr "DATU-MULTZO BALIOGABEA"
+
+#: server/dialogs/DatasetEditorDialog.qml:339
+msgctxt "DatasetEditorDialog|"
+msgid "Editor"
+msgstr "Editorea"
+
+#: server/dialogs/DatasetEditorDialog.qml:342
+msgctxt "DatasetEditorDialog|"
+msgid "Raw JSON"
+msgstr "JSON gordina"
+
+#: server/dialogs/DatasetEditorDialog.qml:372
+msgctxt "DatasetEditorDialog|"
+msgid "Activity name"
+msgstr "Jarduera izena"
+
+#: server/dialogs/DatasetEditorDialog.qml:386
+msgctxt "DatasetEditorDialog|"
+msgid "Dataset name"
+msgstr "Datu-multzoaren izena"
+
+#: server/dialogs/DatasetEditorDialog.qml:400
+msgctxt "DatasetEditorDialog|"
+msgid "Goal"
+msgstr "Helburua"
+
+#: server/dialogs/DatasetEditorDialog.qml:414
+msgctxt "DatasetEditorDialog|"
+msgid "Difficulty"
+msgstr "Zailtasuna"
+
+#: server/dialogs/DatasetEditorDialog.qml:512
+#, fuzzy
+msgctxt "DatasetEditorDialog|"
+msgid "Instructions"
+msgstr "Instrukzioak"
+
+#: server/dialogs/DatasetEditorDialog.qml:518
+msgctxt "DatasetEditorDialog|"
+msgid "No specific instructions for this editor."
+msgstr ""
+
+#: server/dialogs/ErrorDialog.qml:46
+msgctxt "ErrorDialog|"
+msgid "Information"
+msgstr "Informazioa"
+
+#: server/dialogs/ExportPupilsDialog.qml:79
+msgctxt "ExportPupilsDialog|"
+msgid "Export pupils to CSV file"
+msgstr "Esportatu ikasleak CSV fitxategira"
+
+#: server/dialogs/ExportPupilsDialog.qml:121
+msgctxt "ExportPupilsDialog|"
+msgid "Save file"
+msgstr "Gorde fitxategia"
+
+#: server/dialogs/ExportPupilsDialog.qml:131
+msgctxt "ExportPupilsDialog|"
+msgid "Pupils"
+msgstr "Ikasleak"
+
+#: server/dialogs/GroupDialog.qml:114
+msgctxt "GroupDialog|"
+msgid "Name"
+msgstr "Izena"
+
+#: server/dialogs/GroupDialog.qml:128
+msgctxt "GroupDialog|"
+msgid "Description"
+msgstr "Deskribapena"
+
+#: server/dialogs/ImportPupilsDialog.qml:70
+msgctxt "ImportPupilsDialog|"
+msgid "Import pupils from CSV file"
+msgstr "Inportatu ikasleak CSV fitxategitik"
+
+#: server/dialogs/ImportPupilsDialog.qml:88
+msgctxt "ImportPupilsDialog|"
+msgid ""
+"Format: name;groups;password\n"
+"Example:\n"
+"Patrick Dummy;group 1;1234\n"
+"Patricia Brown;group 1,group 2;4321\n"
+msgstr ""
+"Formatua: izena;taldeak;pasahitza\n"
+"Adibidea:\n"
+"Patxi Gezurrezko;taldea 1;1234\n"
+"Pantxika Gaztainaga;taldea 1,taldea 2;4321\n"
+
+#: server/dialogs/ImportPupilsDialog.qml:94
+msgctxt "ImportPupilsDialog|"
+msgid "Add CSV file"
+msgstr "Gehitu CSV fitxategia"
+
+#: server/dialogs/ImportPupilsDialog.qml:141
+msgctxt "ImportPupilsDialog|"
+msgid "Import pupils"
+msgstr "Inportatu ikasleak"
+
+#: server/dialogs/PupilDialog.qml:59
+msgctxt "PupilDialog|"
+msgid "Pupil's name is empty"
+msgstr "Ikaslearen izena hutsik dago"
+
+#: server/dialogs/PupilDialog.qml:153
+msgctxt "PupilDialog|"
+msgid "Pupil's name"
+msgstr "Ikaslearen izena"
+
+#: server/dialogs/PupilDialog.qml:166
+msgctxt "PupilDialog|"
+msgid "Password"
+msgstr "Pasahitza"
+
+#: server/dialogs/PupilDialog.qml:217
+msgctxt "PupilDialog|"
+msgid "Password images:"
+msgstr "Pasahitzen irudiak:"
+
+#: server/dialogs/PupilDialog.qml:252
+msgctxt "PupilDialog|"
+msgid "Groups"
+msgstr "Taldeak"
+
+#: server/dialogs/PupilsToGroupsDialog.qml:87
+msgctxt "PupilsToGroupsDialog|"
+msgid "Select the groups to add these pupils to:"
+msgstr "Hautatu ikasle hauek gehitzeko taldeak:"
+
+#: server/dialogs/PupilsToGroupsDialog.qml:88
+msgctxt "PupilsToGroupsDialog|"
+msgid "Select the groups from which to remove these pupils:"
+msgstr "Hautatu ikasle hauek kentzeko taldeak:"
+
+#: server/dialogs/RemoveDatasetDialog.qml:70
+msgctxt "RemoveDatasetDialog|"
+msgid ""
+"Are you sure you want to delete the following dataset from the database?"
+msgstr ""
+
+#: server/dialogs/RemovePupilsDialog.qml:76
+msgctxt "RemovePupilsDialog|"
+msgid ""
+"Are you sure you want to remove the following pupils from the database ?"
+msgstr ""
+
+#: server/dialogs/SendDatasetDialog.qml:93
+msgctxt "SendDatasetDialog|"
+msgid "Do you want to send the dataset to selected pupils?"
+msgstr ""
+
+#: server/dialogs/SendDatasetDialog.qml:94
+msgctxt "SendDatasetDialog|"
+msgid "Are you sure you want to remove the dataset from selected pupils?"
+msgstr ""
+
+#: server/dialogs/SendDatasetDialog.qml:95
+msgctxt "SendDatasetDialog|"
+msgid ""
+"Are you sure you want to remove all the existing datasets from selected "
+"pupils?"
+msgstr ""
+
+#: server/dialogs/SendDatasetDialog.qml:129
+msgctxt "SendDatasetDialog|"
+msgid "Pupils"
+msgstr "Ikasleak"
+
+#: server/dialogs/SqlLineDialog.qml:19
+msgctxt "SqlLineDialog|"
+msgid "Line details"
+msgstr ""
+
+#: server/dialogs/SqlLineDialog.qml:151
+msgctxt "SqlLineDialog|"
+msgid "<"
+msgstr "<"
+
+#: server/dialogs/SqlLineDialog.qml:175
+msgctxt "SqlLineDialog|"
+msgid ">"
+msgstr ">"
+
+#: server/dialogs/SqlLineDialog.qml:191
+msgctxt "SqlLineDialog|"
+msgid "Close"
+msgstr "Itxi"
+
+#: server/Main.qml:48
+msgctxt "Main|"
+msgid "GCompris Teachers Tool"
+msgstr "GCompris Irakasleentzako tresna"
+
+#: server/panels/NavigationPanel.qml:70
+#, fuzzy
+msgctxt "NavigationPanel|"
+msgid "Login"
+msgstr "Saio-hasi"
+
+#: server/panels/NavigationPanel.qml:78
+msgctxt "NavigationPanel|"
+msgid "Pupils and Groups"
+msgstr "Ikasleak eta taldeak"
+
+#: server/panels/NavigationPanel.qml:86
+msgctxt "NavigationPanel|"
+msgid "Connect devices"
+msgstr "Konektatu gailuak"
+
+#: server/panels/NavigationPanel.qml:94
+msgctxt "NavigationPanel|"
+msgid "Activities"
+msgstr "Jarduerak"
+
+#: server/panels/NavigationPanel.qml:102
+msgctxt "NavigationPanel|"
+msgid "Datasets"
+msgstr "Datu-multzoak"
+
+#: server/panels/NavigationPanel.qml:110
+msgctxt "NavigationPanel|"
+msgid "Charts"
+msgstr "Diagramak"
+
+#: server/panels/NavigationPanel.qml:118
+msgctxt "NavigationPanel|"
+msgid "Settings"
+msgstr "Ezarpenak"
+
+#: server/panels/NavigationPanel.qml:126
+msgctxt "NavigationPanel|"
+msgid "Development (WIP)"
+msgstr "Garapena (WIP)"
+
+#: server/panels/SelectorPanel.qml:51
+msgctxt "SelectorPanel|"
+msgid "Groups"
+msgstr "Taldeak"
+
+#: server/panels/SelectorPanel.qml:71
+msgctxt "SelectorPanel|"
+msgid "Pupils"
+msgstr "Ikasleak"
+
+#: server/panels/SelectorPanel.qml:87
+msgctxt "SelectorPanel|"
+msgid "Activities"
+msgstr "Jarduerak"
+
+#: server/singletons/Master.qml:32
+msgctxt "Master|"
+msgid "User ID"
+msgstr "Erabiltzaile IDa"
+
+#: server/singletons/Master.qml:33
+msgctxt "Master|"
+msgid "Name"
+msgstr "Izena"
+
+#: server/singletons/Master.qml:34
+msgctxt "Master|"
+msgid "Names"
+msgstr "Izenak"
+
+#: server/singletons/Master.qml:35
+msgctxt "Master|"
+msgid "Password"
+msgstr "Pasahitza"
+
+#: server/singletons/Master.qml:36
+msgctxt "Master|"
+msgid "Users IDs"
+msgstr "Erabiltzaile IDak"
+
+#: server/singletons/Master.qml:37
+msgctxt "Master|"
+msgid "Activity Id"
+msgstr "Jarduera IDa"
+
+#: server/singletons/Master.qml:38
+msgctxt "Master|"
+msgid "Activity"
+msgstr "Jarduera"
+
+#: server/singletons/Master.qml:39
+msgctxt "Master|"
+msgid "Group"
+msgstr "Taldea"
+
+#: server/singletons/Master.qml:40
+msgctxt "Master|"
+msgid "Description"
+msgstr "Deskribapena"
+
+#: server/singletons/Master.qml:41
+msgctxt "Master|"
+msgid "Groups"
+msgstr "Taldeak"
+
+#: server/singletons/Master.qml:42
+msgctxt "Master|"
+msgid "Groups IDs"
+msgstr "Talde IDak"
+
+#: server/singletons/Master.qml:43 server/singletons/Master.qml:47
+msgctxt "Master|"
+msgid "Date"
+msgstr "Data"
+
+#: server/singletons/Master.qml:44 server/singletons/Master.qml:49
+msgctxt "Master|"
+msgid "Success"
+msgstr "Arrakasta"
+
+#: server/singletons/Master.qml:45
+msgctxt "Master|"
+msgid "Duration"
+msgstr "Iraupena"
+
+#: server/singletons/Master.qml:46
+msgctxt "Master|"
+msgid "Data"
+msgstr "Datuak"
+
+#: server/singletons/Master.qml:48
+msgctxt "Master|"
+msgid "Count"
+msgstr "Kopurua"
+
+#: server/singletons/Master.qml:50
+msgctxt "Master|"
+msgid "Failed"
+msgstr "Huts egin du"
+
+#: server/singletons/Master.qml:51
+msgctxt "Master|"
+msgid "Success ratio"
+msgstr ""
+
+#: server/views/ChartsView.qml:97
+msgctxt "ChartsView|"
+msgid "Activities"
+msgstr "Jarduerak"
+
+#: server/views/ChartsView.qml:101
+msgctxt "ChartsView|"
+msgid "Pupils"
+msgstr "Ikasleak"
+
+#: server/views/datas/AllData.qml:69
+msgctxt "AllData|"
+msgid "Available requests"
+msgstr ""
+
+#: server/views/datas/AllData.qml:77
+msgctxt "AllData|"
+msgid "All users activities"
+msgstr "Erabiltzaile guztien jarduerak"
+
+#: server/views/datas/AllData.qml:77
+msgctxt "AllData|"
+msgid "Pupils activities"
+msgstr "Ikasleen jarduerak"
+
+#: server/views/datas/AllData.qml:77
+#, fuzzy
+msgctxt "AllData|"
+msgid "All groups"
+msgstr "Talde guztiak"
+
+#: server/views/datas/AllData.qml:77
+msgctxt "AllData|"
+msgid "Failed activities"
+msgstr ""
+
+#: server/views/datas/AllData.qml:78
+msgctxt "AllData|"
+msgid "User's groups"
+msgstr ""
+
+#: server/views/datas/AllData.qml:78
+msgctxt "AllData|"
+msgid "Group's users"
+msgstr ""
+
+#: server/views/datas/AllData.qml:78
+msgctxt "AllData|"
+msgid "Daily activities"
+msgstr ""
+
+#: server/views/datas/AllData.qml:78
+msgctxt "AllData|"
+msgid "Daily ratios"
+msgstr ""
+
+#. Number of lines
+#: server/views/datas/AllData.qml:90
+#, fuzzy, qt-format
+msgctxt "AllData|"
+msgid "%1 lines"
+msgstr "%1 lerro"
+
+#: server/views/datas/DuplicateData.qml:175
+#, fuzzy
+msgctxt "DuplicateData|"
+msgid "Commands"
+msgstr "Komandoak"
+
+#: server/views/datas/DuplicateData.qml:188
+msgctxt "DuplicateData|"
+msgid "Random date"
+msgstr ""
+
+#: server/views/datas/DuplicateData.qml:195
+#, fuzzy
+msgctxt "DuplicateData|"
+msgid "Duplicate"
+msgstr "Bikoiztu"
+
+#: server/views/datas/DuplicateData.qml:199
+msgctxt "DuplicateData|"
+msgid "You are about to duplicate datas"
+msgstr ""
+
+#: server/views/datas/DuplicateData.qml:199
+#: server/views/datas/DuplicateData.qml:212
+msgctxt "DuplicateData|"
+msgid "No action now"
+msgstr ""
+
+#: server/views/datas/DuplicateData.qml:208
+#, fuzzy
+msgctxt "DuplicateData|"
+msgid "Delete"
+msgstr "Ezabatu"
+
+#: server/views/datas/DuplicateData.qml:212
+msgctxt "DuplicateData|"
+msgid "You are about to delete datas"
+msgstr ""
+
+#: server/views/datas/DuplicateData.qml:230
+#, fuzzy
+msgctxt "DuplicateData|"
+msgid "Copy to"
+msgstr "Kopiatu hona"
+
+#: server/views/DatasetsView.qml:49
+#, fuzzy
+msgctxt "DatasetsView|"
+msgid "Activities"
+msgstr "Jarduerak"
+
+#: server/views/DatasetsView.qml:69
+msgctxt "DatasetsView|"
+msgid "Datasets"
+msgstr ""
+
+#: server/views/DatasetsView.qml:101
+msgctxt "DatasetsView|"
+msgid "Datasets management"
+msgstr ""
+
+#: server/views/DatasetsView.qml:118
+msgctxt "DatasetsView|"
+msgid "Create dataset"
+msgstr ""
+
+#: server/views/DatasetsView.qml:126
+msgctxt "DatasetsView|"
+msgid "Update dataset"
+msgstr ""
+
+#: server/views/DatasetsView.qml:134
+msgctxt "DatasetsView|"
+msgid "Send dataset to clients"
+msgstr ""
+
+#: server/views/DatasetsView.qml:152
+msgctxt "DatasetsView|"
+msgid "Remove dataset from clients"
+msgstr ""
+
+#: server/views/DatasetsView.qml:176
+msgctxt "DatasetsView|"
+msgid "Remove all datasets from clients"
+msgstr ""
+
+#: server/views/DatasetsView.qml:185
+msgctxt "DatasetsView|"
+msgid "Delete dataset"
+msgstr ""
+
+#: server/views/DevelopmentView.qml:43
+#, fuzzy
+msgctxt "DevelopmentView|"
+msgid "Edit data"
+msgstr "Editatu datuak..."
+
+#: server/views/DevelopmentView.qml:47
+msgctxt "DevelopmentView|"
+msgid "All requests"
+msgstr ""
+
+#: server/views/DevicesView.qml:52
+#, fuzzy
+msgctxt "DevicesView|"
+msgid "Not connected"
+msgstr "Konektatu gabe"
+
+#: server/views/DevicesView.qml:54
+msgctxt "DevicesView|"
+msgid "Bad password input"
+msgstr ""
+
+#: server/views/DevicesView.qml:56
+msgctxt "DevicesView|"
+msgid "Logged"
+msgstr ""
+
+#: server/views/DevicesView.qml:58
+#, fuzzy
+msgctxt "DevicesView|"
+msgid "Connection lost"
+msgstr "Konexioa galdu da"
+
+#: server/views/DevicesView.qml:60
+#, fuzzy
+msgctxt "DevicesView|"
+msgid "Disconnected"
+msgstr "Deskonektatuta"
+
+#: server/views/DevicesView.qml:62
+msgctxt "DevicesView|"
+msgid "Unknown connection status"
+msgstr ""
+
+#: server/views/DevicesView.qml:84
+#, fuzzy
+msgctxt "DevicesView|"
+msgid "Groups"
+msgstr "Taldeak"
+
+#: server/views/DevicesView.qml:100
+#, fuzzy
+msgctxt "DevicesView|"
+msgid "Pupils"
+msgstr "Ikasleak"
+
+#: server/views/DevicesView.qml:134
+#, fuzzy
+msgctxt "DevicesView|"
+msgid "Network"
+msgstr "Sarea"
+
+#: server/views/DevicesView.qml:157
+msgctxt "DevicesView|"
+msgid "Connect devices"
+msgstr ""
+
+#: server/views/DevicesView.qml:170
+msgctxt "DevicesView|"
+msgid "Send login list"
+msgstr ""
+
+#: server/views/DevicesView.qml:195
+msgctxt "DevicesView|"
+msgid "Disconnect selected pupils"
+msgstr ""
+
+#: server/views/DevicesView.qml:212
+msgctxt "DevicesView|"
+msgid "Disconnect everybody"
+msgstr ""
+
+#: server/views/DevicesView.qml:228
+msgctxt "DevicesView|"
+msgid "Server ID:"
+msgstr "Zerbitzari IDa:"
+
+#: server/views/DevicesView.qml:235
+msgctxt "DevicesView|"
+msgid "Teacher port:"
+msgstr ""
+
+#: server/views/DevicesView.qml:242
+msgctxt "DevicesView|"
+msgid "Connected:"
+msgstr "Konektatuta:"
+
+#: server/views/DevicesView.qml:249
+msgctxt "DevicesView|"
+msgid "Logged:"
+msgstr ""
+
+#: server/views/DevicesView.qml:256
+msgctxt "DevicesView|"
+msgid "Data received:"
+msgstr ""
+
+#: server/views/DevicesView.qml:284
+msgctxt "DevicesView|"
+msgid "Network logs"
+msgstr ""
+
+#: server/views/DevicesView.qml:296
+msgctxt "DevicesView|"
+msgid "Clear logs"
+msgstr ""
+
+#: server/views/DevicesView.qml:316
+#, qt-format
+msgctxt "DevicesView|"
+msgid "Server already running on port %1"
+msgstr ""
+
+#: server/views/LoginView.qml:44
+msgctxt "LoginView|"
+msgid "Incorrect password"
+msgstr "Pasahitza okerra"
+
+#: server/views/LoginView.qml:48
+msgctxt "LoginView|"
+msgid "GCompris-teachers is already running on this computer"
+msgstr ""
+
+#: server/views/LoginView.qml:49
+msgctxt "LoginView|"
+msgid "Only data browsing is permitted"
+msgstr ""
+
+#: server/views/LoginView.qml:92
+msgctxt "LoginView|"
+msgid "Teacher login"
+msgstr ""
+
+#: server/views/LoginView.qml:113
+msgctxt "LoginView|"
+msgid "Password"
+msgstr "Pasahitza"
+
+#: server/views/LoginView.qml:131
+#, fuzzy
+msgctxt "LoginView|"
+msgid "Login"
+msgstr "Saio-hasi"
+
+#: server/views/LoginView.qml:140
+msgctxt "LoginView|"
+msgid "Create teacher database"
+msgstr "Sortu irakaslearen datu-basea"
+
+#: server/views/LoginView.qml:161
+msgctxt "LoginView|"
+msgid "Database file:"
+msgstr "Datu-base fitxategia:"
+
+#: server/views/LoginView.qml:174
+msgctxt "LoginView|"
+msgid "GCompris Teachers Tool"
+msgstr "GCompris Irakasleentzako tresna"
+
+#: server/views/ManagePupilsView.qml:34 server/views/ManagePupilsView.qml:147
+msgctxt "ManagePupilsView|"
+msgid "Add a group"
+msgstr "Gehitu talde bat"
+
+#: server/views/ManagePupilsView.qml:44
+msgctxt "ManagePupilsView|"
+msgid "Are you sure you want to remove this group?"
+msgstr "Ziur zaude talde hau kendu nahi duzula?"
+
+#: server/views/ManagePupilsView.qml:45
+msgctxt "ManagePupilsView|"
+msgid "Pupils will not be removed."
+msgstr "Ikasleak ez dira kenduko."
+
+#: server/views/ManagePupilsView.qml:52
+msgctxt "ManagePupilsView|"
+msgid "Edit group"
+msgstr "Editatu taldea"
+
+#: server/views/ManagePupilsView.qml:68 server/views/ManagePupilsView.qml:204
+msgctxt "ManagePupilsView|"
+msgid "Add a pupil"
+msgstr "Gehitu ikasle bat"
+
+#: server/views/ManagePupilsView.qml:74
+msgctxt "ManagePupilsView|"
+msgid "Edit pupil's name and groups"
+msgstr "Editatu ikaslearen izena eta taldeak"
+
+#: server/views/ManagePupilsView.qml:122
+msgctxt "ManagePupilsView|"
+msgid "Groups"
+msgstr "Taldeak"
+
+#: server/views/ManagePupilsView.qml:157
+msgctxt "ManagePupilsView|"
+msgid "Pupils and groups"
+msgstr "Ikasleak eta taldeak"
+
+#: server/views/ManagePupilsView.qml:186
+msgctxt "ManagePupilsView|"
+msgid "Pupils management"
+msgstr "Ikasle-kudeaketa"
+
+#: server/views/ManagePupilsView.qml:212
+msgctxt "ManagePupilsView|"
+msgid "Add to groups"
+msgstr "Gehitu taldeetara"
+
+#: server/views/ManagePupilsView.qml:220
+msgctxt "ManagePupilsView|"
+msgid "Remove from groups"
+msgstr "Kendu taldeetatik"
+
+#: server/views/ManagePupilsView.qml:228
+msgctxt "ManagePupilsView|"
+msgid "Export pupils"
+msgstr "Esportatu ikasleak"
+
+#: server/views/ManagePupilsView.qml:235
+msgctxt "ManagePupilsView|"
+msgid "Import pupils"
+msgstr "Inportatu ikasleak"
+
+#: server/views/ManagePupilsView.qml:243
+msgctxt "ManagePupilsView|"
+msgid "Remove pupils"
+msgstr "Kendu ikasleak"
+
+#: server/views/SettingsView.qml:65
+msgctxt "SettingsView|"
+msgid "Menu panel"
+msgstr "Menuko panela"
+
+#: server/views/SettingsView.qml:66
+msgctxt "SettingsView|"
+msgid "Left"
+msgstr "Ezkerrean"
+
+#: server/views/SettingsView.qml:66
+msgctxt "SettingsView|"
+msgid "Right"
+msgstr "Eskuinean"
+
+#: server/views/SettingsView.qml:77
+msgctxt "SettingsView|"
+msgid "Font size"
+msgstr "Letra-tipoaren neurria"
+
+#: server/views/SettingsView.qml:87
+msgctxt "SettingsView|"
+msgid "Theme"
+msgstr "Gaia"
+
+#: server/views/SettingsView.qml:88
+msgctxt "SettingsView|"
+msgid "Dark"
+msgstr "Iluna"
+
+#: server/views/SettingsView.qml:88
+msgctxt "SettingsView|"
+msgid "Light"
+msgstr "Argia"
+
+#: server/views/SettingsView.qml:103
+msgctxt "SettingsView|"
+msgid "Language selector"
+msgstr "Hizkuntza hautatzailea"
+
+#: server/views/SettingsView.qml:138
+msgctxt "SettingsView|"
+msgid "Server ID"
+msgstr "Zerbitzari IDa"
+
+#: server/views/SettingsView.qml:160
+msgctxt "SettingsView|"
+msgid "Port"
+msgstr "Ataka"
+
+#. next line will display if the server is running or already running
+#: server/views/SettingsView.qml:178
+msgctxt "SettingsView|"
+msgid "Server is"
+msgstr "Zerbitzaria"
+
+#: server/views/SettingsView.qml:179
+msgctxt "SettingsView|"
+msgid "Running"
+msgstr "Exekutatzen ari da"
+
+#: server/views/SettingsView.qml:179
+#, qt-format
+msgctxt "SettingsView|"
+msgid "Already running on port %1"
+msgstr "%1 atakan dagoeneko martxan"
+
+#: server/views/SettingsView.qml:187
+msgctxt "SettingsView|"
+msgid "Host name"
+msgstr "Ostalari-izena"
+
+#: server/views/SettingsView.qml:194
+msgctxt "SettingsView|"
+msgid "Server IP"
+msgstr "Zerbitzariaren IP"
+
+#: server/views/SettingsView.qml:201
+msgctxt "SettingsView|"
+msgid "Broadcast IPs"
+msgstr ""
+
+#: server/views/SettingsView.qml:208
+msgctxt "SettingsView|"
+msgid "Netmask"
+msgstr "Sare-maskara"
+
+#: server/views/SettingsView.qml:213
+msgctxt "SettingsView|"
+msgid "MAC address"
+msgstr "MAC helbidea"
+
+#: server/views/SettingsView.qml:220
+msgctxt "SettingsView|"
+msgid "GCompris version"
+msgstr "GCompris bertsioa"
+
+#: server/views/SettingsView.qml:227
+msgctxt "SettingsView|"
+msgid "Qt version"
+msgstr "Qt bertsioa"
+
+#: server/views/SettingsView.qml:240
+msgctxt "SettingsView|"
+msgid "Teacher login"
+msgstr ""
+
+#: server/views/SettingsView.qml:248
+msgctxt "SettingsView|"
+msgid "Database file"
+msgstr "Datu-base fitxategia"
+
+#: server/views/SettingsView.qml:255
+msgctxt "SettingsView|"
+msgid "Encrypted database"
+msgstr "Zifratutako datu-basea"
+
+#: server/views/SettingsView.qml:256
+msgctxt "SettingsView|"
+msgid "Yes"
+msgstr "Bai"
+
+#: server/views/SettingsView.qml:256
+msgctxt "SettingsView|"
+msgid "No"
+msgstr "Ez"
+
+#: server/views/SettingsView.qml:261
+msgctxt "SettingsView|"
+msgid "Pupils"
+msgstr "Ikasleak"
+
+#: server/views/SettingsView.qml:267
+msgctxt "SettingsView|"
+msgid "Groups"
+msgstr "Taldeak"
+
+#: server/views/SettingsView.qml:280
+msgctxt "SettingsView|"
+msgid "Pupils connected"
+msgstr ""
+
+#: server/views/SettingsView.qml:287
+msgctxt "SettingsView|"
+msgid "Pupils logged"
+msgstr ""
+
+#: server/views/SettingsView.qml:294
+msgctxt "SettingsView|"
+msgid "Activities data received"
+msgstr ""

@@ -2883,7 +2883,6 @@ msgid "Count up to 3 (with counter and with values visible)."
 msgstr "დათვალეთ სამამდე (ხილული მთვლელით და მნიშვნელობებით)."
 
 #: activities/binary_bulb/resource/2/Data.qml:13
-#, fuzzy
 msgctxt "Data|"
 msgid "Count up to 3 (without counter and with values visible)."
 msgstr "დათვალეთ სამამდე (უხილავი მთვლელით და ხილული მნიშვნელობებით)."
@@ -2894,7 +2893,6 @@ msgid "Count up to 15 (with counter and with values visible)."
 msgstr "დათვალეთ თხუთმეტამდე (ხილული მთვლელით და მნიშვნელობებით)."
 
 #: activities/binary_bulb/resource/4/Data.qml:13
-#, fuzzy
 msgctxt "Data|"
 msgid "Count up to 15 (without counter and with values visible)."
 msgstr "დათვალეთ თხუთმეტამდე (უხილავი მთვლელით და ხილული მნიშვნელობებით)."
@@ -2905,7 +2903,6 @@ msgid "Count up to 255 (with counter and with values visible)."
 msgstr "დათვალეთ 255-მდე (ხილული მთვლელით და მნიშვნელობებით)."
 
 #: activities/binary_bulb/resource/6/Data.qml:13
-#, fuzzy
 msgctxt "Data|"
 msgid "Count up to 255 (without counter and with values visible)."
 msgstr "დათვალეთ 255-მდე (უხილავი მთვლელით და ხილული მნიშვნელობებით)."
@@ -6484,7 +6481,6 @@ msgid "Undo"
 msgstr "გაუქმება"
 
 #: activities/drawing_wheels/DrawingWheels.qml:465
-#, fuzzy
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "გამეორება"
@@ -6551,13 +6547,11 @@ msgid "Speed"
 msgstr "სიჩქარე"
 
 #: activities/drawing_wheels/DrawingWheels.qml:999
-#, fuzzy
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr "ნელი"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1019
-#, fuzzy
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr "ჩქარი"
@@ -19429,7 +19423,7 @@ msgstr "რომელია პირველი რიცხვი?"
 #: activities/multiple_choice_questions/resource/1/Data.qml:26
 msgctxt "Data|"
 msgid "What is a color?"
-msgstr ""
+msgstr "რა არის ფერი?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:40
 msgctxt "Data|"
