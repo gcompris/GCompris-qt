@@ -31,5 +31,18 @@ QtObject {
     property var languages: [
             { "text": qsTr("Your system default"), "locale": "system" },
             { "text": "American English", "locale": "en_US.UTF-8" },
+            { "text": "العربية", "locale": "ar_AR.UTF-8" },
+            { "text": "български", "locale": "bg_BG.UTF-8" },
+            { "text": "Català", "locale": "ca_ES.UTF-8" },
+            { "text": "Valencian", "locale": "ca@valencia_ES.UTF-8" },
+            { "text": "Español", "locale": "es_ES.UTF-8" },
+            { "text": "Euskara", "locale": "eu_ES.UTF-8" },
+            { "text": "Français", "locale": "fr_FR.UTF-8" },
+            { "text": "ქართული", "locale": "ka_GE.UTF-8" },
+            { "text": "Nederlands", "locale": "nl_NL.UTF-8" },
+            { "text": "Português do Brasil", "locale": "pt_BR.UTF-8" },
+            { "text": "Slovenski", "locale": "sl_SI.UTF-8" },
+            { "text": "Türkçe", "locale": "tr_TR.UTF-8" },
+            { "text": "Українська", "locale": "uk_UA.UTF-8" }
         ]
 }
