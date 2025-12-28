@@ -97,7 +97,7 @@ Item {
 
     ChartView {
         anchors.fill: parent
-        title: "Daily activities chart"
+        title: qsTr("Daily activities chart")
         legend.alignment: Qt.AlignBottom
         antialiasing: true
         backgroundRoundness: 0
