@@ -31,7 +31,6 @@ Item {
             if(Master.checkTeacher(login.text, password.text)) {
                 console.warn(login.text, "logged in.")
                 navigationBar.enabled = true
-                topBanner.visible = true
 //                navigationBar.startNavigation(navigationBar.pupilsView)
                 navigationBar.startNavigation(navigationBar.deviceView)
 //                navigationBar.startNavigation(navigationBar.activitiesView)
@@ -171,7 +170,6 @@ Item {
     }
 
     Component.onCompleted: {
-        topBanner.text = qsTr("GCompris Teachers Tool");
         login.forceActiveFocus();
     }
 }

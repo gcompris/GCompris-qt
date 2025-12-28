@@ -398,11 +398,15 @@ QString ApplicationInfo::loadTranslation(const QString &applicationName, const Q
 void ApplicationInfo::switchLocale(const QString &locale)
 {
     for (const auto &[applicationName, translator] : m_translators) {
-        switchLocale(applicationName, locale);
+        switchLocale(applicationName, locale, false);
+    }
+
+    if (m_engine) {
+        m_engine->retranslate();
     }
 }
 
-void ApplicationInfo::switchLocale(const QString &application, const QString &locale)
+void ApplicationInfo::switchLocale(const QString &application, const QString &locale, bool forceRetranslate)
 {
     // Remove previous translation
     QCoreApplication::removeTranslator(&m_translators[application]);
@@ -410,7 +414,7 @@ void ApplicationInfo::switchLocale(const QString &application, const QString &lo
     // Apply translation
     QCoreApplication::installTranslator(&m_translators[application]);
 
-    if (m_engine) {
+    if (forceRetranslate && m_engine) {
         m_engine->retranslate();
     }
 }

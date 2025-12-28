@@ -93,6 +93,7 @@ Window {
 
             TopPanel {
                 id: topBanner
+                text: navigationBar.currentText
             }
 
             TabContainer {

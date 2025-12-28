@@ -294,7 +294,7 @@ public:
      * The locale will be fetched from ApplicationSettings if not passed in parameter
      */
     Q_INVOKABLE void switchLocale(const QString &locale = ApplicationSettings::getInstance()->locale());
-    void switchLocale(const QString &application, const QString &locale);
+    void switchLocale(const QString &application, const QString &locale, bool forceRetranslate = true);
     QStringList supportedLocales();
 
     static QString GCVersion() { return VERSION; }
