@@ -253,6 +253,7 @@
       <li xml:lang="ca">descobrir l'ordinador: teclat, ratolí, diferents gestos del ratolí, etc.</li>
       <li xml:lang="ca-valencia">descobrir l'ordinador: teclat, ratolí, diferents gestos del ratolí, etc.</li>
       <li xml:lang="es">descubrimiento del ordenador: teclado, ratón, distintos gestos con el ratón, etc.</li>
+      <li xml:lang="eu">ordenagailua ezagutzea: teklatua, sagua, saguaren keinu ezberdinak, etab.</li>
       <li xml:lang="fr">découverte de l'ordinateur : clavier, souris, mouvements de la souris…</li>
       <li xml:lang="ka">კომპიუტერის გაცნობა: კლავიატურა, თაგუნა, თაგუნას ჟესტები და ა.შ.</li>
       <li xml:lang="nl">ontdekken van de computer: toetsenbord, muis, verschillende muisbewegingen, etc.</li>
@@ -267,6 +268,7 @@
       <li xml:lang="ca">aritmètica: memoritzar la taula, enumeració, imatge al mirall, equilibrar la balança, donar el canvi, etc.</li>
       <li xml:lang="ca-valencia">aritmètica: memoritzar la taula, enumeració, imatge a l'espill, equilibrar la balança, donar el canvi, etc.</li>
       <li xml:lang="es">aritmética: memorización de tablas, enumeración, imagen especular, equilibrar la balanza, devolver cambios, etc.</li>
+      <li xml:lang="eu">aritmetika: taulak oroitzea, zenbaketa, irudi ispilatua, balantza orekatu, diru xehea itzultzea, etab.</li>
       <li xml:lang="fr">arithmétique : apprentissage des tables d'opérations mathématiques, l'énumération, de symétrie d'image, équilibrage de la balance, rendre la monnaie…</li>
       <li xml:lang="ka">არითმეტიკა: ცხრილის დამახსოვრება, ჩამონათვალები, გამოსახულების ანარეკლი, სასწორის გასწორება, ხურდის დაბრუნება და ა.შ.</li>
       <li xml:lang="nl">rekenen: tafels oefenen, reeksen, afbeelding spiegelen, de schaal in evenwicht brengen, wisselgeld geven, etc.</li>
@@ -280,6 +282,7 @@
       <li xml:lang="ca">ciència: blocar el canal, mescla de colors, el concepte de la gravetat, etc.</li>
       <li xml:lang="ca-valencia">ciència: blocar el canal, mescla de colors, el concepte de la gravetat, etc.</li>
       <li xml:lang="es">ciencia: la esclusa de un canal, mezcla de colores, concepto de gravedad, etc.</li>
+      <li xml:lang="eu">zientzia: ubidearen uhatea, koloreak nahastea, grabitate kontzeptua, etab.</li>
       <li xml:lang="fr">science : fonctionnement d'une écluse, mélange des couleurs, concept de la gravité…</li>
       <li xml:lang="ka">მეცნიერება: არხის ჩაკეტვა, ფერების შერევა, წარმოდგენა მიზიდულობაზე და ა.შ.</li>
       <li xml:lang="nl">natuurkunde: de sluizen bedienen, mengen van kleuren, concept van zwaartekracht, etc.</li>
@@ -293,6 +296,7 @@
       <li xml:lang="ca">jocs: memòria, connecta 4, tres en ratlla, sudoku, torre de Hanoi, etc.</li>
       <li xml:lang="ca-valencia">jocs: memòria, connecta 4, tres en ratlla, sudoku, torre de Hanoi, etc.</li>
       <li xml:lang="es">juegos: memoria, conectar 4, tres en raya, sudoku, torres de hanoi, etc.</li>
+      <li xml:lang="eu">jokoak: oroimena, 4 konektatu, artzain-jokoa, sudoku, hanoi dorrea, etab.</li>
       <li xml:lang="fr">jeux : trouve les paires, puissance 4, morpion, sudoku, la tour d'Hanoï…</li>
       <li xml:lang="ka">თამაშები: მეხსიერება, ოთხის შეერთება, სუდოკუ, ჰანოის კოშკი და ა.შ.</li>
       <li xml:lang="nl">spellen: geheugenspel, vier op een rij, boter kaas en eieren, sudoku, torens van hanoi, etc.</li>
@@ -306,6 +310,7 @@
       <li xml:lang="ca">Lectura: pràctica de lectura, etc.</li>
       <li xml:lang="ca-valencia">Lectura: pràctica de lectura, etc.</li>
       <li xml:lang="es">lectura: prácticas de lectura, etc.</li>
+      <li xml:lang="eu">irakurketa: irakurtzen trebatzea, etab.</li>
       <li xml:lang="fr">lecture : entraînement à la lecture…</li>
       <li xml:lang="ka">წაკითხვა: კითხვაში მეცადინეობა და ა.შ.</li>
       <li xml:lang="nl">lezen: lees oefening, etc.</li>
@@ -320,6 +325,7 @@
       <li xml:lang="ca">altres: aprendre a dir l'hora, el sistema braille, laberints, instruments musicals, etc.</li>
       <li xml:lang="ca-valencia">altres: aprendre a dir l'hora, el sistema braille, laberints, instruments musicals, etc.</li>
       <li xml:lang="es">otras: aprender a decir la hora, el sistema braille, laberintos, instrumentos musicales, etc.</li>
+      <li xml:lang="eu">bestelakoak: ikasi ordua esaten, braille sistema, labirintoa, musika-tresnak, etab.</li>
       <li xml:lang="fr">autre : apprendre à dire l'heure, le système braille, le labyrinthe, les instruments de musique…</li>
       <li xml:lang="ka">სხვები: ისწავლეთ საათის თქმა, ბრაილის სისტემა, მეიზი, მუსიკალური ინსტრუმენტები და ა.შ.</li>
       <li xml:lang="nl">overig: leren klokkijken, het braille-systeem, doolhof, muziekinstrumenten, etc.</li>
