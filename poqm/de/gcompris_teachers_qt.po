@@ -1707,6 +1707,16 @@ msgctxt "Master|"
 msgid "Success ratio"
 msgstr ""
 
+#: server/views/charts/ActivitiesChart.qml:100
+msgctxt "ActivitiesChart|"
+msgid "Daily activities chart"
+msgstr ""
+
+#: server/views/charts/PupilsChart.qml:98
+msgctxt "PupilsChart|"
+msgid "User activities chart"
+msgstr ""
+
 #: server/views/ChartsView.qml:97
 msgctxt "ChartsView|"
 msgid "Activities"

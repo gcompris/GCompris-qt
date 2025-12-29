@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-22 00:38+0000\n"
-"PO-Revision-Date: 2025-01-05 10:58+0100\n"
+"PO-Revision-Date: 2025-12-26 11:56+0100\n"
 "Last-Translator: Envel Kervoas <envelkervoas@free.fr>\n"
 "Language-Team: Breton <kde-i18n-doc@kde.org>\n"
 "Language: br\n"
@@ -366,7 +366,7 @@ msgstr "Desk penaos e tro an elektronek daouredel ha sav da amredad dit-te."
 #: activities/drawing_wheels/ActivityInfo.qml:22
 #, kde-format
 msgid "Roll the gear in the cogwheel to draw."
-msgstr ""
+msgstr "Lak a rod dantek da dreiñ er rodaoueg evit tresañ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"
 #: activities/drawletters/ActivityInfo.qml:18
@@ -959,7 +959,7 @@ msgstr "Lak pep elfenn er memes lec'h evel war ar skouer."
 #: activities/multiple_choice_questions/ActivityInfo.qml:19
 #, kde-format
 msgid "Answer the questions."
-msgstr ""
+msgstr "Respont d'ar goulennoù."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
 #: activities/nine_men_morris/ActivityInfo.qml:18
@@ -1378,11 +1378,11 @@ msgstr ""
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr "Bizskriv ar gerioù gant da glavier a-raok ma vo tizhet al leur gante."
 
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "Lak amañ en displegadenn an testenn evit mouezh an digoradur."
-
 #~ msgid "play checkers against the computer"
 #~ msgstr "C'hoari damez a-enep an urzhiataer"
+
+#~ msgid "put here in comment the text for the intro voice"
+#~ msgstr "Lak amañ en displegadenn an testenn evit mouezh an digoradur."
 
 #~ msgid ""
 #~ "Change the planets' gravitational force by moving the sliders up and "

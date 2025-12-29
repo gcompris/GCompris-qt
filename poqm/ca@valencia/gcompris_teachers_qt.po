@@ -1787,6 +1787,22 @@ msgctxt "Master|"
 msgid "Success ratio"
 msgstr "Relació d'èxit"
 
+#: server/views/charts/ActivitiesChart.qml:100
+#, fuzzy
+#| msgctxt "AllData|"
+#| msgid "Daily activities"
+msgctxt "ActivitiesChart|"
+msgid "Daily activities chart"
+msgstr "Activitats diàries"
+
+#: server/views/charts/PupilsChart.qml:98
+#, fuzzy
+#| msgctxt "AllData|"
+#| msgid "All users activities"
+msgctxt "PupilsChart|"
+msgid "User activities chart"
+msgstr "Totes les activitats dels usuaris"
+
 #: server/views/ChartsView.qml:97
 msgctxt "ChartsView|"
 msgid "Activities"

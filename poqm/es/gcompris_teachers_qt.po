@@ -1,14 +1,14 @@
-# Spanish translations for gcompris_teachers.po package.
+# Spanish translations for gcompris_teachers_qt.po package.
 # Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the gcompris package.
 #
 # SPDX-FileCopyrightText: 2025 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
-"Project-Id-Version: gcompris_teachers\n"
+"Project-Id-Version: gcompris_teachers_qt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-23 00:32+0100\n"
-"PO-Revision-Date: 2025-12-23 00:55+0100\n"
+"PO-Revision-Date: 2025-12-29 00:49+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -185,6 +185,11 @@ msgid ""
 "be large enough to generate enough questions for the given number of "
 "sublevels using the minimum and maximum operand values."
 msgstr ""
+"Al seleccionar «Operandos aleatorios», si el valor de «Límite de valor del "
+"resultado» es mayor que 0, define el resultado máximo permitido para cada "
+"operación. Debe ser lo suficientemente grande como para generar suficientes "
+"preguntas para el número de subniveles indicado usando los valores mínimo y "
+"máximo de los operandos."
 
 #: server/activities/algebra_by/AlgebraEditor.qml:29
 msgctxt "AlgebraEditor|"
@@ -192,6 +197,8 @@ msgid ""
 "If \"Random operands\" is not selected, the sublevel list on the right side "
 "must not be empty."
 msgstr ""
+"Si «Operadores aleatorios» no está seleccionado, la lista de subniveles del "
+"lado derecho no debe estar vacía."
 
 #: server/activities/algebra_by/AlgebraEditor.qml:33
 msgctxt "AlgebraEditor|"
@@ -646,12 +653,9 @@ msgid "Questions"
 msgstr "Preguntas"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:36
-#, fuzzy
-#| msgctxt "FractionsFindEditor|"
-#| msgid "Static numerator "
 msgctxt "FractionsFindEditor|"
 msgid "Static numerator"
-msgstr "Numerador estático "
+msgstr "Numerador estático"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:37
 msgctxt "FractionsFindEditor|"
@@ -1231,7 +1235,7 @@ msgstr ""
 #: server/controllers/database-controller.cpp:125
 msgctxt "controllers::DatabaseController|"
 msgid "Table teacher_ could not be updated to current version."
-msgstr ""
+msgstr "No se ha podido actualizar la tabla «teacher_» a la versión actual."
 
 #: server/controllers/database-controller.cpp:351
 msgctxt "controllers::DatabaseController|"
@@ -1259,61 +1263,63 @@ msgstr "El grupo <b>%1</b> no se puede actualizar a <b>%2</b>."
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_."
-msgstr ""
+msgstr "No se ha podido borrar el grupo <b>%1</b> de la tabla «group_»."
 
 #: server/controllers/database-controller.cpp:459
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_user_."
-msgstr ""
+msgstr "No se ha podido borrar el grupo <b>%1</b> de la tabla «group_user_»."
 
 #: server/controllers/database-controller.cpp:483
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Pupil login <b>%1</b> already exists or password is empty."
 msgstr ""
+"El inicio de sesión del alumno <b>%1</b> ya existe o la contraseña está en "
+"blanco."
 
 #: server/controllers/database-controller.cpp:502
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "<b>%1</b> could not be updated to <b>%2</b>."
-msgstr ""
+msgstr "No se ha podido actualizar <b>%1</b> a <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:522
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table user_."
-msgstr ""
+msgstr "No se ha podido borrar el usuario <b>%1</b> de la tabla «user_»."
 
 #: server/controllers/database-controller.cpp:527
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table result_."
-msgstr ""
+msgstr "No se ha podido borrar el usuario <b>%1</b> de la tabla «result_»."
 
 #: server/controllers/database-controller.cpp:542
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table group_user_."
-msgstr ""
+msgstr "No se ha podido borrar el usuario <b>%1</b> de la tabla «group_user_»."
 
 #: server/controllers/database-controller.cpp:557
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> already exists in group <b>%2</b>."
-msgstr ""
+msgstr "El usuario <b>%1</b> ya existe en el grupo <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:572
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> group <b>%2</b> couldn't be deleted."
-msgstr ""
+msgstr "No se ha podido borrar grupo <b>%2</b> del usuario <b>%1</b>."
 
 #: server/controllers/database-controller.cpp:607
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Result could not be added for user <b>%1</b>"
-msgstr ""
+msgstr "No se ha podido añadir el resultado del usuario <b>%1</b>"
 
 #: server/controllers/database-controller.cpp:619
 #, qt-format
@@ -1331,24 +1337,24 @@ msgstr "El conjunto de datos <b>%1</b> ya existe."
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> could not be updated to <b>%2</b>."
-msgstr ""
+msgstr "El conjunto de datos <b>%1</b> no se puede actualizar a <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:697
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> couldn't be deleted."
-msgstr ""
+msgstr "El conjunto de datos <b>%1</b> no se puede borrar."
 
 #: server/controllers/network-controller.cpp:46
 #, qt-format
 msgctxt "controllers::NetworkController|"
 msgid "Unable to start the server: %1."
-msgstr ""
+msgstr "No se ha podido iniciar el servidor: %1."
 
 #: server/dialogs/CreateDbDialog.qml:19
 msgctxt "CreateDbDialog|"
 msgid "You are about to create a new GCompris database."
-msgstr ""
+msgstr "Está a punto de crear una nueva base de datos de GCompris."
 
 #: server/dialogs/CreateDbDialog.qml:39
 msgctxt "CreateDbDialog|"
@@ -1363,7 +1369,7 @@ msgstr "creado en:"
 #: server/dialogs/CreateDbDialog.qml:65
 msgctxt "CreateDbDialog|"
 msgid "New database creation"
-msgstr ""
+msgstr "Creación de nueva base de datos"
 
 #: server/dialogs/CreateDbDialog.qml:93
 msgctxt "CreateDbDialog|"
@@ -1403,7 +1409,7 @@ msgstr "La dificultad debe estar entre 1 y 6"
 #: server/dialogs/DatasetEditorDialog.qml:236
 msgctxt "DatasetEditorDialog|"
 msgid "INVALID DATASET"
-msgstr ""
+msgstr "Conjunto de datos no válido"
 
 #: server/dialogs/DatasetEditorDialog.qml:339
 msgctxt "DatasetEditorDialog|"
@@ -1443,7 +1449,7 @@ msgstr "Instrucciones"
 #: server/dialogs/DatasetEditorDialog.qml:518
 msgctxt "DatasetEditorDialog|"
 msgid "No specific instructions for this editor."
-msgstr ""
+msgstr "No hay instrucciones específicas para este editor."
 
 #: server/dialogs/ErrorDialog.qml:46
 msgctxt "ErrorDialog|"
@@ -1488,6 +1494,10 @@ msgid ""
 "Patrick Dummy;group 1;1234\n"
 "Patricia Brown;group 1,group 2;4321\n"
 msgstr ""
+"Formato: nombre;grupos;contraseña\n"
+"Ejemplo:\n"
+"Patricio Rubio;grupo 1;1234\n"
+"Patricia Moreno;grupo 1,grupo 2;4321\n"
 
 #: server/dialogs/ImportPupilsDialog.qml:94
 msgctxt "ImportPupilsDialog|"
@@ -1527,34 +1537,39 @@ msgstr "Grupos"
 #: server/dialogs/PupilsToGroupsDialog.qml:87
 msgctxt "PupilsToGroupsDialog|"
 msgid "Select the groups to add these pupils to:"
-msgstr ""
+msgstr "Seleccione los grupos a los que se van a añadir estos alumnos:"
 
 #: server/dialogs/PupilsToGroupsDialog.qml:88
 msgctxt "PupilsToGroupsDialog|"
 msgid "Select the groups from which to remove these pupils:"
-msgstr ""
+msgstr "Seleccione los grupos de los que se deben eliminar estos alumnos:"
 
 #: server/dialogs/RemoveDatasetDialog.qml:70
 msgctxt "RemoveDatasetDialog|"
 msgid ""
 "Are you sure you want to delete the following dataset from the database?"
 msgstr ""
+"¿Seguro que quiere eliminar los siguientes conjuntos de datos de la base de "
+"datos?"
 
 #: server/dialogs/RemovePupilsDialog.qml:76
 msgctxt "RemovePupilsDialog|"
 msgid ""
 "Are you sure you want to remove the following pupils from the database ?"
 msgstr ""
+"¿Seguro que quiere eliminar los siguientes alumnos de la base de datos?"
 
 #: server/dialogs/SendDatasetDialog.qml:93
 msgctxt "SendDatasetDialog|"
 msgid "Do you want to send the dataset to selected pupils?"
-msgstr ""
+msgstr "¿Quiere enviar los conjuntos de datos a los alumnos seleccionados?"
 
 #: server/dialogs/SendDatasetDialog.qml:94
 msgctxt "SendDatasetDialog|"
 msgid "Are you sure you want to remove the dataset from selected pupils?"
 msgstr ""
+"¿Seguro que quiere eliminar los conjuntos de datos de los alumnos "
+"seleccionados?"
 
 #: server/dialogs/SendDatasetDialog.qml:95
 msgctxt "SendDatasetDialog|"
@@ -1562,6 +1577,8 @@ msgid ""
 "Are you sure you want to remove all the existing datasets from selected "
 "pupils?"
 msgstr ""
+"¿Seguro que quiere eliminar todos los conjuntos de datos existentes de los "
+"alumnos seleccionados?"
 
 #: server/dialogs/SendDatasetDialog.qml:129
 msgctxt "SendDatasetDialog|"
@@ -1711,7 +1728,7 @@ msgstr "Fecha"
 #: server/singletons/Master.qml:44 server/singletons/Master.qml:49
 msgctxt "Master|"
 msgid "Success"
-msgstr ""
+msgstr "Éxito"
 
 #: server/singletons/Master.qml:45
 msgctxt "Master|"
@@ -1731,12 +1748,28 @@ msgstr "Contador"
 #: server/singletons/Master.qml:50
 msgctxt "Master|"
 msgid "Failed"
-msgstr ""
+msgstr "Ha fallado"
 
 #: server/singletons/Master.qml:51
 msgctxt "Master|"
 msgid "Success ratio"
 msgstr "Tasa de éxito"
+
+#: server/views/charts/ActivitiesChart.qml:100
+#, fuzzy
+#| msgctxt "AllData|"
+#| msgid "Daily activities"
+msgctxt "ActivitiesChart|"
+msgid "Daily activities chart"
+msgstr "Actividades diarias"
+
+#: server/views/charts/PupilsChart.qml:98
+#, fuzzy
+#| msgctxt "AllData|"
+#| msgid "All users activities"
+msgctxt "PupilsChart|"
+msgid "User activities chart"
+msgstr "Todas las actividades de los usuarios"
 
 #: server/views/ChartsView.qml:97
 msgctxt "ChartsView|"
@@ -1791,7 +1824,7 @@ msgstr "Actividades diarias"
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "Daily ratios"
-msgstr ""
+msgstr "Proporciones diarias"
 
 #. Number of lines
 #: server/views/datas/AllData.qml:90
@@ -1818,13 +1851,13 @@ msgstr "Duplicar"
 #: server/views/datas/DuplicateData.qml:199
 msgctxt "DuplicateData|"
 msgid "You are about to duplicate datas"
-msgstr ""
+msgstr "Está a punto de duplicar datos"
 
 #: server/views/datas/DuplicateData.qml:199
 #: server/views/datas/DuplicateData.qml:212
 msgctxt "DuplicateData|"
 msgid "No action now"
-msgstr ""
+msgstr "Ninguna acción ahora"
 
 #: server/views/datas/DuplicateData.qml:208
 msgctxt "DuplicateData|"
@@ -1834,7 +1867,7 @@ msgstr "Borrar"
 #: server/views/datas/DuplicateData.qml:212
 msgctxt "DuplicateData|"
 msgid "You are about to delete datas"
-msgstr ""
+msgstr "Está a punto de borrar datos"
 
 #: server/views/datas/DuplicateData.qml:230
 msgctxt "DuplicateData|"
@@ -1894,7 +1927,7 @@ msgstr "Editar datos"
 #: server/views/DevelopmentView.qml:47
 msgctxt "DevelopmentView|"
 msgid "All requests"
-msgstr ""
+msgstr "Todas las peticiones"
 
 #: server/views/DevicesView.qml:52
 msgctxt "DevicesView|"
@@ -2000,7 +2033,7 @@ msgstr "Borrar registros"
 #, qt-format
 msgctxt "DevicesView|"
 msgid "Server already running on port %1"
-msgstr ""
+msgstr "El servidor ya se está ejecutando en el puerto %1"
 
 #: server/views/LoginView.qml:44
 msgctxt "LoginView|"
@@ -2010,7 +2043,7 @@ msgstr "Contraseña incorrecta"
 #: server/views/LoginView.qml:48
 msgctxt "LoginView|"
 msgid "GCompris-teachers is already running on this computer"
-msgstr ""
+msgstr "GCompris-teachers ya se está ejecutando en este equipo"
 
 #: server/views/LoginView.qml:49
 msgctxt "LoginView|"
@@ -2171,23 +2204,23 @@ msgstr "Puerto"
 #: server/views/SettingsView.qml:178
 msgctxt "SettingsView|"
 msgid "Server is"
-msgstr ""
+msgstr "El servidor está"
 
 #: server/views/SettingsView.qml:179
 msgctxt "SettingsView|"
 msgid "Running"
-msgstr ""
+msgstr "En ejecución"
 
 #: server/views/SettingsView.qml:179
 #, qt-format
 msgctxt "SettingsView|"
 msgid "Already running on port %1"
-msgstr ""
+msgstr "Ya se está ejecutando en el puerto %1"
 
 #: server/views/SettingsView.qml:187
 msgctxt "SettingsView|"
 msgid "Host name"
-msgstr ""
+msgstr "Nombre de máquina"
 
 #: server/views/SettingsView.qml:194
 msgctxt "SettingsView|"
@@ -2197,7 +2230,7 @@ msgstr "IP del servidor"
 #: server/views/SettingsView.qml:201
 msgctxt "SettingsView|"
 msgid "Broadcast IPs"
-msgstr ""
+msgstr "IP de transmisión"
 
 #: server/views/SettingsView.qml:208
 msgctxt "SettingsView|"

@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 25.12.0\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
@@ -1733,6 +1733,22 @@ msgstr "Huts egin du"
 msgctxt "Master|"
 msgid "Success ratio"
 msgstr ""
+
+#: server/views/charts/ActivitiesChart.qml:100
+#, fuzzy
+#| msgctxt "AllData|"
+#| msgid "Pupils activities"
+msgctxt "ActivitiesChart|"
+msgid "Daily activities chart"
+msgstr "Ikasleen jarduerak"
+
+#: server/views/charts/PupilsChart.qml:98
+#, fuzzy
+#| msgctxt "AllData|"
+#| msgid "All users activities"
+msgctxt "PupilsChart|"
+msgid "User activities chart"
+msgstr "Erabiltzaile guztien jarduerak"
 
 #: server/views/ChartsView.qml:97
 msgctxt "ChartsView|"
