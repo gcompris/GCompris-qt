@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: Igor Dobrača <igor.dobraca@gmail.com>\n"
+"Last-Translator: Igor Dobrača <igor.dobraca@skole.hr>\n"
 "Language-Team: Croatian <kde-i18n-doc@kde.org>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.8\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -77,51 +77,43 @@ msgstr "Pronađi tražene brojeve i povuci ga na odgovarajuće mjesto."
 
 #. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the previous numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n previous number(s)."
 msgid_plural "Find the %n previous number(s)."
-msgstr[0] "Pronađi prethodni broj (prethodnik)."
-msgstr[1] "Pronađi prethodni broj (prethodnik)."
-msgstr[2] "Pronađi prethodni broj (prethodnik)."
+msgstr[0] "Pronađi %n prethodnik."
+msgstr[1] "Pronađi %n prethodnika."
+msgstr[2] "Pronađi %nprethodnika."
 
 #. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:60
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the next numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n next number(s)."
 msgid_plural "Find the %n next number(s)."
-msgstr[0] "Pronađi sljedeće brojeve (sljedbenike)."
-msgstr[1] "Pronađi sljedeće brojeve (sljedbenike)."
-msgstr[2] "Pronađi sljedeće brojeve (sljedbenike)."
+msgstr[0] "Pronađi %n sljedbenik."
+msgstr[1] "Pronađi %n sljedbenika."
+msgstr[2] "Pronađi %n sljedbenika."
 
 #. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:64
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the in-between numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n in-between number(s)"
 msgid_plural "Find the %n in-between number(s)"
-msgstr[0] "Pronađi brojeve između dva broja."
-msgstr[1] "Pronađi brojeve između dva broja."
-msgstr[2] "Pronađi brojeve između dva broja."
+msgstr[0] "Pronađi %n broj između dva broja."
+msgstr[1] "Pronađi %n broja između dva broja."
+msgstr[2] "Pronađi %n brojeva između dva broja."
 
 #. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:68
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the missing numbers"
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n missing numbers"
 msgid_plural "Find the %n missing numbers"
-msgstr[0] "Pronađi brojeve koji nedostaju"
-msgstr[1] "Pronađi brojeve koji nedostaju"
-msgstr[2] "Pronađi brojeve koji nedostaju"
+msgstr[0] "Pronađi %n broj koji nedostaju"
+msgstr[1] "Pronađi %n broja koji nedostaju"
+msgstr[2] "Pronađi %n brojeva koji nedostaju"
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
 msgctxt "Data|"
@@ -2945,42 +2937,42 @@ msgstr "Kakav je binarni prikaz broja %1?"
 #: activities/binary_bulb/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 3 (with counter and with values visible)."
-msgstr ""
+msgstr "Broji do 3 (s brojačem i vidljivim vrijednostima)."
 
 #: activities/binary_bulb/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 3 (without counter and with values visible)."
-msgstr ""
+msgstr "Broji do 3 (bez brojača i s vidljivim vrijednostima)."
 
 #: activities/binary_bulb/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (with counter and with values visible)."
-msgstr ""
+msgstr "Broji do 15 (s brojačem i vidljivim vrijednostima)."
 
 #: activities/binary_bulb/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (without counter and with values visible)."
-msgstr ""
+msgstr "Broji do 15 (bez brojača i s vidljivim vrijednostima)."
 
 #: activities/binary_bulb/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (with counter and with values visible)."
-msgstr ""
+msgstr "Broji do 255 (s brojačem i vidljivim vrijednostima)."
 
 #: activities/binary_bulb/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (without counter and with values visible)."
-msgstr ""
+msgstr "Broji do 255 (bez brojača i s vidljivim vrijednostima)."
 
 #: activities/binary_bulb/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (without counter and without values visible)."
-msgstr ""
+msgstr "Broji do 15 (bez brojača i bez vidljivih vrijednosti)."
 
 #: activities/binary_bulb/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (without counter and without values visible)."
-msgstr ""
+msgstr "Broji do 255 (bez brojača i bez vidljivih vrijednosti)."
 
 #: activities/binary_bulb/resource/tutorial4.qml:31
 msgctxt "tutorial4|"
@@ -5941,12 +5933,9 @@ msgstr "Digitalni sklopovi"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "Složi i simuliraj digitalnu električnu shemu"
+msgstr "Složi i simuliraj digitalnu električnu shemu."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -6661,12 +6650,10 @@ msgstr ""
 
 #: activities/drawing_wheels/ActivityConfig.qml:29
 #: activities/sketch/ActivityConfig.qml:29
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 19."
+#, qt-format
 msgctxt "ActivityConfig|"
 msgid "Number of undo: %1"
-msgstr "Brojevi od 1 do 19."
+msgstr "Broj poništavanja: %1"
 
 #: activities/drawing_wheels/ActivityConfig.qml:44
 #: activities/sketch/ActivityConfig.qml:44
@@ -6675,33 +6662,26 @@ msgid ""
 "Warning: setting the number of undo too high can make the application crash "
 "if your device doesn't have enough memory."
 msgstr ""
+"Upozorenje: postavljanje prevelikog broja poništavanja može uzrokovati pad "
+"aplikacije ako vaš uređaj nema dovoljno memorije."
 
 #. Activity title
 #: activities/drawing_wheels/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "BrushToolPanel|"
-#| msgid "Drawing Tools"
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
-msgstr "Alati za crtanje"
+msgstr "Crtanje zupčanicima"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Touch the numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Roll the gear in the cogwheel to draw."
-msgstr "Dodirni brojeve u točnom redoslijedu."
+msgstr "Za crtanje pokreni zupčanik."
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr "Saznaj više o nekim alatima za digitalno slikanje."
+msgstr "Otkrij hipotrohoide i koristi ih kao digitalne alate za crtanje."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
@@ -6715,6 +6695,13 @@ msgid ""
 "file (vector format), along with a PNG file (pixel format). Only the SVG "
 "file can be opened again from the activity."
 msgstr ""
+"Napravi prekrasne crteže tako da pomoću odabrane olovke okrećeš zupčanik "
+"postavljen u unutrašnjost drugog zupčanika. Odaberi veličinu svakog "
+"zupčanika, olovku i njezinu boju, te pritisni tipku za pokretanje zupčanika. "
+"Možeš koristiti izbornik Datoteka za spremanje crteža, učitavanje "
+"spremljenog crteža ili stvaranje novog crteža s odabranom bojom pozadine. "
+"Crtež će se spremiti u SVG datoteku (vektorski format) i PNG datoteku "
+"(piksel format). Samo SVG datoteka može se ponovno učitati u ovu aktivnost."
 
 #: activities/drawing_wheels/ActivityInfo.qml:29
 #: activities/sketch/ActivityInfo.qml:28
@@ -6743,33 +6730,24 @@ msgstr "Ctrl + O: učitaj sliku"
 #: activities/drawing_wheels/DrawingWheels.qml:378
 msgctxt "DrawingWheels|"
 msgid "File menu"
-msgstr ""
+msgstr "Datoteka"
 
 #: activities/drawing_wheels/DrawingWheels.qml:390
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
-msgstr ""
+msgstr "Zupčanik i unutarnji zupčanik"
 
 #: activities/drawing_wheels/DrawingWheels.qml:414
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Piano composition"
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
-msgstr "Klavirska kompozicija"
+msgstr "Veličina i položaj olovke"
 
 #: activities/drawing_wheels/DrawingWheels.qml:426
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font selector"
 msgctxt "DrawingWheels|"
 msgid "Color selector"
-msgstr "Odabir fonta"
+msgstr "Odabir boje"
 
 #: activities/drawing_wheels/DrawingWheels.qml:453
-#, fuzzy
-#| msgctxt "OptionsRow|"
-#| msgid "Undo"
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Poništi"
@@ -6777,56 +6755,44 @@ msgstr "Poništi"
 #: activities/drawing_wheels/DrawingWheels.qml:465
 msgctxt "DrawingWheels|"
 msgid "Redo"
-msgstr ""
+msgstr "Ponovi"
 
 #: activities/drawing_wheels/DrawingWheels.qml:499
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
-msgstr ""
+msgstr "Zaustavi crtanje"
 
 #: activities/drawing_wheels/DrawingWheels.qml:499
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
-msgstr ""
+msgstr "Započni crtanje"
 
 #: activities/drawing_wheels/DrawingWheels.qml:532
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
-msgstr ""
+msgstr "Prikaži zupčanike"
 
 #: activities/drawing_wheels/DrawingWheels.qml:532
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
-msgstr ""
+msgstr "Sakrij zupčanike"
 
 #: activities/drawing_wheels/DrawingWheels.qml:691
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
-msgstr "Spremi sliku"
+msgstr "Spremi crtež"
 
 #: activities/drawing_wheels/DrawingWheels.qml:706
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Open an image"
 msgctxt "DrawingWheels|"
 msgid "Open an image"
-msgstr "Učitaj sliku"
+msgstr "Učitaj crtež"
 
 #: activities/drawing_wheels/DrawingWheels.qml:735
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Create a new image"
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
-msgstr "Stvori novu sliku"
+msgstr "Stvori novi crtež"
 
 #: activities/drawing_wheels/DrawingWheels.qml:754
-#, fuzzy
-#| msgctxt "BackgroundColorSelector|"
-#| msgid "Background color"
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Boja pozadine"
@@ -6834,25 +6800,20 @@ msgstr "Boja pozadine"
 #: activities/drawing_wheels/DrawingWheels.qml:835
 msgctxt "DrawingWheels|"
 msgid "Wheel"
-msgstr ""
+msgstr "Zupčanik"
 
 #: activities/drawing_wheels/DrawingWheels.qml:902
 msgctxt "DrawingWheels|"
 msgid "Gear"
-msgstr ""
+msgstr "Unutarnji zupčanik"
 
 #: activities/drawing_wheels/DrawingWheels.qml:965
-#, fuzzy, qt-format
-#| msgctxt "SignalGenerator|"
-#| msgid "%1 s"
+#, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
-msgstr "%1 s"
+msgstr "%1 šiljka"
 
 #: activities/drawing_wheels/DrawingWheels.qml:983
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Brzina"
@@ -6860,25 +6821,19 @@ msgstr "Brzina"
 #: activities/drawing_wheels/DrawingWheels.qml:999
 msgctxt "DrawingWheels|"
 msgid "Slow"
-msgstr ""
+msgstr "Sporo"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1019
 msgctxt "DrawingWheels|"
 msgid "Fast"
-msgstr ""
+msgstr "Brzo"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1062
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font size"
 msgctxt "DrawingWheels|"
 msgid "Pen size"
-msgstr "Veličina fonta"
+msgstr "Veličina olovke"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1099
-#, fuzzy
-#| msgctxt "ToolsPanel|"
-#| msgid "Opacity"
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Neprozirnost"
@@ -6886,44 +6841,29 @@ msgstr "Neprozirnost"
 #: activities/drawing_wheels/DrawingWheels.qml:1142
 msgctxt "DrawingWheels|"
 msgid "Offset"
-msgstr ""
+msgstr "Pomak"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1180
-#, fuzzy
-#| msgctxt "IntroMessage|"
-#| msgid "Start"
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
-msgstr "Start"
+msgstr "Početni zubac"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1360
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "You did not save this image. Do you want to close this activity?"
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
-msgstr "Nisi spremio ovu sliku. Želiš li uistinu zatvoriti ovu aktivnost?"
+msgstr "Nisi spremio crtež. Želiš li uistinu zatvoriti ovu aktivnost?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1361
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "Do you want to erase this image?"
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
-msgstr "Želiš li obrisati ovu sliku?"
+msgstr "Želiš li obrisati crtež?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1362
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Da"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1363
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "Ne"
@@ -7508,13 +7448,6 @@ msgid "Chichén Itzá"
 msgstr "Chichén Itzá"
 
 #: activities/explore_monuments/resource/board/board1.qml:20
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
-#| "the Yucatan Peninsula in Mexico, between Valladolid and Merida. It was "
-#| "established before the period of Christopher Colombus and probably served "
-#| "as the religion center of Yucatan for a while."
 msgctxt "board1|"
 msgid ""
 "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
@@ -8614,7 +8547,7 @@ msgstr "Klikni na lokaciju zadane piramide."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "Zabranjeni grad"
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8629,12 +8562,21 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
+"Zabranjeni grad, smješten u srcu Pekinga u Kini, veličanstveni je carski "
+"palačni kompleks koji je služio kao dom kineskim carevima i političko "
+"središte nacije gotovo 500 godina, od dinastije Ming (1368.–1644.) do kraja "
+"dinastije Qing (1644.–1912.). Izgrađen između 1406. i 1420. godine, ovo "
+"prostrano arhitektonsko remek-djelo prostire se na više od 100 hektara i "
+"sadrži više od 980 sačuvanih zgrada s 8.700 soba, prikazujući tradicionalni "
+"kineski palačni dizajn. Okružen opkopom i masivnim zidom, Zabranjeni grad "
+"nekada je bio nedostupan široj javnosti, simbolizirajući carsku moć i "
+"ekskluzivnost."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "Leshan divovski Buddha"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8649,15 +8591,20 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
+"Leshan divovski Buda, smješten u provinciji Sichuan u Kini, golemi je kip "
+"urezan u liticu na ušću rijeka Min, Dadu i Qingyi. Visok 71 metar (233 "
+"stope), najviši je predmoderni kip na svijetu i UNESCO-va svjetska baština. "
+"Izgrađen tijekom dinastije Tang (713.–803. n.e.), kip predstavlja Maitreyu, "
+"Buddhu budućnosti, i stvoren je kako bi smirio nemirne vode koje su "
+"ugrožavale lokalni brodski promet. Genijalno dizajniran, kip uključuje "
+"skriveni sustav odvodnje za sprječavanje erozije. Njegov miran izraz i "
+"složena izrada čine ga simbolom duhovnog i umjetničkog postignuća."
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Palača Mysore"
+msgstr "Palača Potala"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8672,12 +8619,21 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
+"Palača Potala, smještena na Crvenom brdu u Lhasi, Tibet, ikonični je simbol "
+"tibetanske kulture i UNESCO-va svjetska baština. Izvorno izgrađen u 7. "
+"stoljeću, a proširen u 17. stoljeću, služio je kao zimska rezidencija Dalaj "
+"Lama i središte tibetanske uprave. Palača se uzdiže 13 katova i ima više od "
+"1.000 soba, a kombinira složenu tibetansku arhitekturu, živopisne murale i "
+"svete relikvije. Podijeljena je na Bijelu palaču, u kojoj se nalaze "
+"administrativni prostori, i Crvenu palaču, posvećenu vjerskim studijama i "
+"molitvi. Palača Potala stoji kao svjedočanstvo duhovne i povijesne baštine "
+"Tibeta."
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "Terakotna vojska"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8689,12 +8645,18 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
+"Terakotna vojska je zbirka tisuća vojnika od gline, konja i kočija u "
+"prirodnoj veličini, pokopanih s prvim kineskim carem, Qin Shi Huangom, kako "
+"bi ga pratili u zagrobnom životu. Otkrivene 1974. godine blizu Xi'ana, "
+"figure datiraju otprilike iz 210. pr. Kr. i slave se zbog nevjerojatnih "
+"detalja, pri čemu je svaki ratnik jedinstveno izrađen kako bi prikazao "
+"raznolike činove i uloge drevne kineske vojske."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr ""
+msgstr "Pagode Sunca i Mjeseca"
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8709,15 +8671,21 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
+"Pagode Sunca i Mjeseca, smještene u Guilinu u Kini, ikonične su blizanke "
+"koje simboliziraju kulturnu i duhovnu baštinu grada. Izvorno izgrađeni "
+"tijekom dinastije Tang, obnovljeni su u 20. stoljeću kao upečatljivi "
+"orijentiri na jezeru Shanhu. Pagoda Sunca, visoka 41 metar, brončana je "
+"građevina — najviša te vrste na svijetu — dok je Pagoda Mjeseca, visoka 35 "
+"metara, izgrađena od glaziranih pločica. Ove pagode predstavljaju sklad jina "
+"i janga i povezane su podvodnim staklenim tunelom. Osvijetljene noću, "
+"popularne su atrakcije koje prikazuju tradicionalnu kinesku arhitekturu i "
+"modernu domišljatost."
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Eiffelov toranj"
+msgstr "Diaolou toranj"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8732,28 +8700,31 @@ msgid ""
 "UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
 "towers remain, offering insight into this unique architectural heritage."
 msgstr ""
+"Diaolou kule, koje se nalaze u Kaipingu, provincija Guangdong, Kina, su "
+"utvrđene višekatne građevine izgrađene od kraja 19. do početka 20. stoljeća "
+"radi zaštite od razbojnika i poplava. Spajajući zapadne arhitektonske "
+"stilove poput romanike i baroka s tradicionalnim kineskim elementima, "
+"odražavaju bogatstvo i utjecaj kineskih emigranata iz inozemstva. Izgrađeni "
+"od armiranog betona, ovi tornjevi simboliziraju razdoblje kulturne i "
+"gospodarske tranzicije u ruralnoj Kini. Proglašen UNESCO-vom svjetskom "
+"baštinom 2007. godine, oko 1.800 od izvornih 3.000 tornjeva ostalo je, "
+"pružajući uvid u ovu jedinstvenu arhitektonsku baštinu."
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Spomenici Indije"
+msgstr "Spomenici Kine"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
-msgstr "Klikni na mjesto zadanog spomenika."
+msgstr "Klikni na lokaciju zadanog spomenika."
 
 #: activities/explore_monuments/resource/board/board8.qml:17
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "Panteon"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8770,12 +8741,23 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
+"Panteon u Rimu, Italija, ikonični je drevni hram izgrađen oko 126. godine "
+"nove ere za vrijeme vladavine cara Hadrijana, na mjestu ranijih građevina "
+"koje je naručio Marko Agripa. Poznat po svojoj arhitektonskoj briljantnosti, "
+"ima masivni kupolasti krov s centralnim okulusom, koji simbolizira nebo, "
+"dopuštajući prirodnom svjetlu da osvijetli unutrašnjost. Izvorno posvećena "
+"svim rimskim bogovima, kasnije je 609. godine pretvorena u kršćansku crkvu, "
+"poznatu kao Bazilika sv. Marije i mučenika (Santa Maria ad Martyres). "
+"Njegova kupola, najveća nearmirana betonska kupola na svijetu, pokazuje "
+"izvanredno inženjerstvo i simetriju, nadahnjujući arhitekte stoljećima. "
+"Skladne proporcije i povijesni značaj Panteona čine ga bezvremenskim remek-"
+"djelom klasične arhitekture."
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "Duomo Di Milano"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8790,15 +8772,21 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
+"Duomo di Milano, poznat i kao Milanska katedrala, ikonično je gotičko remek-"
+"djelo smješteno u srcu Milana, Italija. Izgrađena gotovo šest stoljeća, "
+"jedna je od najvećih katedrala na svijetu i simbol umjetničke i kulturne "
+"baštine Milana. Njegova složena fasada ukrašena je bezbrojnim kipovima, "
+"tornjevima i gargojlima, odražavajući veličanstvenost gotičke arhitekture. "
+"Posjetitelji mogu istražiti njegove zadivljujuće interijere, s prekrasnim "
+"vitražima i složenim mramornim detaljima, ili se popeti na krov s "
+"zadivljujućim pogledom na grad i Alpe. Duomo stoji kao svjedočanstvo bogate "
+"talijanske povijesti i arhitektonske briljantnosti."
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Worms Cathedral"
+msgstr "Katedrala u Firenci"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8814,15 +8802,22 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
+"Firentinska katedrala, službeno poznata kao Cattedrale di Santa Maria del "
+"Fiore, poznato je remek-djelo gotičke i renesansne arhitekture smješteno u "
+"Firenci, Italija. Dovršena 1436. godine, poznata je po masivnoj kupoli "
+"obloženoj crvenim pločicama koju je dizajnirao Filippo Brunelleschi, a koja "
+"i danas ostaje inženjersko čudo i simbol grada. Složena mramorna fasada "
+"katedrale, dodana u 19. stoljeću, nadopunjuje njezin bogato ukrašeni "
+"interijer i umjetničke dragocjenosti. Zajedno s Giottovom kampanilom i "
+"krstionicom sv. Ivana, dio je UNESCO-ve svjetske baštine, privlačeći "
+"milijune posjetitelja godišnje zbog svoje povijesne, kulturne i "
+"arhitektonske važnosti."
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Hanojski toranj"
+msgstr "Kosi toranj u Pisi"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8837,12 +8832,20 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
+"Kosi toranj u Pisi, smješten u talijanskom gradu Pisi, svjetski je poznato "
+"arhitektonsko čudo. Izgrađena kao samostojeći zvonik gradske katedrale, "
+"poznata je po nenamjernom nagibu, uzrokovanom nestabilnim temeljnim tlom. "
+"Izgradnja tornja započela je 1173. godine, a trajala je gotovo 200 godina, "
+"tijekom kojih su se nastojali stabilizirati njezin nagib. Visok otprilike 56 "
+"metara (183 stope), toranj ima romanički dizajn s osam katova, uključujući "
+"zvoniku, ukrašenu bogato rezbarenim stupovima i lukovima. Priznata kao "
+"UNESCO-va svjetska baština, ostaje simbol otpornosti i domišljatosti."
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr ""
+msgstr "Bazilika svetog Marka"
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -8858,12 +8861,22 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
+"Bazilika svetog Marka, smještena u Veneciji, Italija, ikonično je remek-"
+"djelo bizantske arhitekture i jedna od najpoznatijih znamenitosti grada. "
+"Izvorno izgrađena 828. godine za čuvanje relikvija svetog Marka Evanđelista, "
+"obnovljena je u sadašnjem obliku u 11. stoljeću. Poznata po raskošnom "
+"dizajnu, bazilika karakterizira spoj istočnih i zapadnih utjecaja, što se "
+"vidi u njezinih pet kupola, složenim mozaicima i raskošnom pročelju "
+"ukrašenom kipovima i rezbarijama. Unutrašnjost je bogato ukrašena zlatnim "
+"mozaicima i mramornim podovima, što pokazuje bogatstvo i moć Mletačke "
+"Republike. Uz Trg sv. Marka, ostaje simbol povijesne, kulturne i vjerske "
+"baštine Venecije."
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr ""
+msgstr "Pompeji"
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -8879,31 +8892,32 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
+"Pompeji su bili antički rimski grad smješten blizu današnjeg Napulja u "
+"Italiji, poznat po očuvanju nakon što ga je zatrpala erupcija Vezuva 79. "
+"godine. Erupcija je oslobodila smrtonosnu kombinaciju pepela, plovućca i "
+"piroklastičnih tokova, koja je progutala grad i njegove stanovnike, "
+"sačuvavši zgrade, artefakte, pa čak i ljudske ostatke u nevjerojatnim "
+"detaljima. Iskopavanja Pompeja pružila su vrijedne uvide u svakodnevni "
+"rimski život, arhitekturu i društvo, otkrivajući grad s dobro planiranim "
+"ulicama, kućama, javnim kupalištima i hramovima. Lokalitet je danas UNESCO-"
+"va svjetska baština i ostaje jedno od najvažnijih arheoloških otkrića u "
+"povijesti."
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Spomenici Indije"
+msgstr "Spomenici Italije"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
-msgstr "Klikni na mjesto zadanog spomenika."
+msgstr "Klikni na lokaciju zadanog spomenika."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Mješovita slova"
+msgstr "Dvorac Himeji"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -8916,12 +8930,19 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
+"Himeji-jo je najljepši sačuvani primjer arhitekture japanskih dvoraca ranog "
+"17. stoljeća, koji se sastoji od 83 zgrade s visoko razvijenim obrambenim "
+"sustavima i domišljatim zaštitnim uređajima koji datiraju s početka "
+"šogunskog razdoblja. To je remek-djelo gradnje od drva, koje spaja funkciju "
+"s estetskim privlačnošću, kako u elegantnom izgledu ujedinjenom bijelim "
+"žbukanim zemljanim zidovima, tako i u suptilnosti odnosa između masa zgrada "
+"i višestrukih slojeva krova."
 
 #: activities/explore_monuments/resource/board/board9.qml:28
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr ""
+msgstr "Memorijalni park mira u Hirošimi"
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -8937,12 +8958,21 @@ msgid ""
 "a solemn space for reflection, honoring the lives lost and advocating for "
 "global peace."
 msgstr ""
+"Memorijalni park mira u Hirošimi simbol je mira i podsjetnik na razorne "
+"posljedice rata. Smješten u Hirošimi, Japan, park obilježava žrtve atomskog "
+"bombardiranja 6. kolovoza 1945. Park sadrži nekoliko spomenika, uključujući "
+"ikonični Atomski bombni kupolu, koja je nekoć bila vladina zgrada, a sada je "
+"UNESCO-va svjetska baština. U parku se također nalazi Muzej mira u Hirošimi, "
+"koji posjetitelje educira o događajima vezanim uz bombardiranje i promiče "
+"poruku mira, nenasilja i važnosti nuklearnog razoružanja. Služi kao svečani "
+"prostor za razmišljanje, odajući počast izgubljenim životima i zagovarajući "
+"globalni mir."
 
 #: activities/explore_monuments/resource/board/board9.qml:39
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr ""
+msgstr "Svetište Arakura Fuji Sengen"
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -8958,12 +8988,22 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
+"Svetište je osnovano 705. godine kako bi se posvetilo božanstvo tog mjesta. "
+"Nakon velike erupcije planine Fuji 807. godine, car je poslao carskog "
+"izaslanika u ovo svetište da obavi ritual zaustavljanja erupcije. Priča se "
+"da je tijekom razdoblja Zaraćenih država, kada je Takeda Nobutora, otac "
+"poznatog vojskovođe Takede Shingena, ratovao s obitelji Hojo, ovdje postavio "
+"logor, molio za pobjedu i pobijedio u bitci. Zatim je svoj mač posvetio tom "
+"svetištu. Danas lokalno stanovništvo i oni iz daljine posjećuju svetište "
+"kako bi otjerali zlo, molili se za obiteljsku sreću i siguran porod. U "
+"proljeće cvjetaju stabla trešnje, a mnoštvo se okuplja kako bi uživali u "
+"zadivljujućem pogledu na planinu Fuji."
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr ""
+msgstr "Dvorac Okinawa Shuri"
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -8979,22 +9019,26 @@ msgid ""
 "much of the castle was lost in a fire in 2019, but efforts to restore it are "
 "ongoing, reflecting its enduring importance to Okinawa's heritage."
 msgstr ""
+"Dvorac Shuri, smješten u Nahi, Okinawa, Japan, UNESCO-va je svjetska baština "
+"i simbol bogate kulturne povijesti Kraljevstva Ryukyu. Izvorno izgrađen u "
+"14. stoljeću, dvorac je stoljećima služio kao političko, gospodarsko i "
+"kulturno središte kraljevstva. Poznat po svojoj prepoznatljivoj fuziji "
+"kineskog i japanskog arhitektonskog stila, dvorac Shuri ima građevine s "
+"crvenim lakom, raskošne dekoracije i impozantan položaj na vrhu brda. Iako "
+"je uništen tijekom Drugog svjetskog rata, pomno je obnovljen i postao je "
+"glavna turistička atrakcija. Nažalost, velik dio dvorca izgubljen je u "
+"požaru 2019. godine, ali napori na njegovoj obnovi i dalje traju, što "
+"odražava njegovu trajnu važnost za baštinu Okinawe."
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Spomenici Francuske"
+msgstr "Spomenici Japana"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
-msgstr "Klikni na mjesto zadanog spomenika."
+msgstr "Klikni na lokaciju zadanog spomenika."
 
 #. Activity title
 #: activities/explore_world_animals/ActivityInfo.qml:19
@@ -14992,12 +15036,9 @@ msgstr "Pronađi broj između 1 i 5."
 
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Number to find between 0 and 20."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
-msgstr "Pronađi broj između 0 i 20."
+msgstr "Decimalni broj koji treba pronaći između 0 i 4."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"
@@ -15528,12 +15569,9 @@ msgid "Division required."
 msgstr "Operacija dijeljenja je obavezna."
 
 #: activities/guess24/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "Igra pamćenja svih operacija"
+msgstr "Svi operateri su potrebni."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -17702,17 +17740,12 @@ msgstr ""
 "je potajno predavao na Institutu."
 
 #: activities/louis-braille/louis_braille_data.js:52
-#, fuzzy
-#| msgctxt "louis_braille_data|"
-#| msgid ""
-#| "He revised and extended braille to include mathematics, symbols, "
-#| "punctuations and music notations."
 msgctxt "louis_braille_data|"
 msgid ""
 "He revised and extended braille to include mathematics, symbols, punctuation "
 "and music notations."
 msgstr ""
-"Revidirao je i proširio brajicu kako bi uključio matematiku, simbole, "
+"Revidirao je i proširio brajicu kako bi uključivala matematiku, simbole, "
 "interpunkcijske znakove i notne zapise."
 
 #: activities/louis-braille/louis_braille_data.js:57
@@ -17744,12 +17777,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "Čarobnjakov šešir"
+msgstr "Čarobnjakov šešir (oduzimanje)"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -17840,12 +17870,9 @@ msgstr "%1x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "Čarobnjakov šešir"
+msgstr "Čarobnjakov šešir (zbrajanje)"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -19650,7 +19677,7 @@ msgstr "Razmak slova fonta"
 #: activities/menu/ConfigurationItem.qml:445
 msgctxt "ConfigurationItem|"
 msgid "Teacher's server config"
-msgstr ""
+msgstr "Konfiguracija učiteljskog poslužitelja"
 
 #: activities/menu/ConfigurationItem.qml:653
 msgctxt "ConfigurationItem|"
@@ -19748,7 +19775,7 @@ msgstr "Rječnik"
 #: activities/menu/Menu.qml:211
 msgctxt "Menu|"
 msgid "GCompris is not connected to teacher's server."
-msgstr ""
+msgstr "GCompris nije povezan na učiteljev poslužitelj."
 
 #: activities/menu/Menu.qml:212
 msgctxt "Menu|"
@@ -19756,22 +19783,25 @@ msgid ""
 "GCompris is connected to teacher's server, but the password entered for "
 "selected user is wrong."
 msgstr ""
+"GCompris je povezan na učiteljev poslužitelj, ali unesena lozinka za "
+"odabranog korisnika je netočna."
 
 #: activities/menu/Menu.qml:213
 msgctxt "Menu|"
 msgid ""
 "GCompris is connected to teacher's server, and the user is authenticated."
 msgstr ""
+"GCompris je povezan s učiteljevim poslužiteljem ikorisnik je autentificiran."
 
 #: activities/menu/Menu.qml:214
 msgctxt "Menu|"
 msgid "GCompris has lost the connection to teacher's server."
-msgstr ""
+msgstr "GCompris je izgubio vezu s učiteljevim poslužiteljem."
 
 #: activities/menu/Menu.qml:215
 msgctxt "Menu|"
 msgid "GCompris has been disconnected from teacher's server."
-msgstr ""
+msgstr "GCompris je odspojen s učiteljskog poslužitelja."
 
 #: activities/menu/Menu.qml:216
 msgctxt "Menu|"
@@ -19779,6 +19809,8 @@ msgid ""
 "GCompris is connected to teacher's server, but the user is not yet "
 "authenticated."
 msgstr ""
+"GCompris je povezan s učiteljskim poslužiteljem, ali korisnik još nije "
+"autentificiran."
 
 #: activities/menu/Menu.qml:677
 msgctxt "Menu|"
@@ -19802,25 +19834,22 @@ msgstr "Postavke aktivnosti"
 #: activities/menu/ServerConfigPage.qml:61
 msgctxt "ServerConfigPage|"
 msgid "Teacher's server settings"
-msgstr ""
+msgstr "Postavke učiteljskog poslužitelja"
 
 #: activities/menu/ServerConfigPage.qml:111
 msgctxt "ServerConfigPage|"
 msgid "Teacher's identifier"
-msgstr ""
+msgstr "Identifikator učitelja"
 
 #: activities/menu/ServerConfigPage.qml:142
 msgctxt "ServerConfigPage|"
 msgid "Server port"
-msgstr ""
+msgstr "Port poslužitelja"
 
 #: activities/menu/ServerConfigPage.qml:177
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "ServerConfigPage|"
 msgid "Server port must be a number between 0 and 65535."
-msgstr "Pogodi broj između 1 i %1."
+msgstr "Server port mora imati biti broj između 0 i 65535."
 
 #. Activity title
 #: activities/mining/ActivityInfo.qml:15
@@ -20398,24 +20427,21 @@ msgstr "Do 24 predmeta, u više redaka."
 
 #. Activity title
 #: activities/multiple_choice_questions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication."
 msgctxt "ActivityInfo|"
 msgid "Multiple-choice questions"
-msgstr "Množenje."
+msgstr "Pitanja s višestrukim izborom"
 
 #. Help title
 #: activities/multiple_choice_questions/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "A generic activity for multiple-choice questions."
-msgstr ""
+msgstr "Generička aktivnost za pitanja s višestrukim izborom."
 
 #. Help goal
 #: activities/multiple_choice_questions/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Answer questions sent by the teacher."
-msgstr ""
+msgstr "Odgovaraj na pitanja koja je poslao učitelj."
 
 #. Help manual
 #: activities/multiple_choice_questions/ActivityInfo.qml:24
@@ -20426,69 +20452,55 @@ msgid ""
 "For some questions, after validating the answer, a feedback text panel will "
 "be displayed: click anywhere to close this panel after reading it."
 msgstr ""
+"Klikni na odgovor da ga odabereš, zatim pritisni gumb U redu za provjeru. "
+"Neka pitanja zahtijevaju jedan odgovor, dok druga zahtijevaju više odgovora. "
+"Za neka pitanja, nakon provjere odgovora, prikazat će se prozor s povratnom "
+"informacijom: klikni bilo gdje kako bi ga zatvorio nakon čitanja."
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate through the answers"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: navigate through the answer list"
-msgstr "Strelice: kretanje kroz odgovore"
+msgstr "Strelice gore i dolje: navigacija kroz popis odgovora"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select or deselect a circle"
 msgctxt "ActivityInfo|"
 msgid "Space: select or deselect the highlighted answer"
-msgstr "Razmaknica: odaberi ili poništi odabir kruga"
+msgstr "Razmaknica: odaberi ili ukloni označeni odgovor"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
-msgstr "Enter: potvrdi odgovor kada se prikaže gumb \"U redu\""
+msgstr "Enter: potvrdi odgovor ili zatvori prozor s povratnom informacijom"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find the next number."
 msgctxt "Data|"
 msgid "Find the correct answer."
-msgstr "Pronađi sljedeći broj."
+msgstr "Pronađi točan odgovor."
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:17
-#, fuzzy
-#| msgctxt "GraduatedLineRead|"
-#| msgid "Find the requested number."
 msgctxt "Data|"
 msgid "What is the first number?"
-msgstr "Pronađi traženi broj."
+msgstr "Koji je prvi broj?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:26
 msgctxt "Data|"
 msgid "What is a color?"
-msgstr ""
+msgstr "Što je boja?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:40
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "Data|"
 msgid "What are the first two numbers?"
-msgstr "Vježbaj zbrajanje brojeva."
+msgstr "Koja su prva dva broja?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:49
 msgctxt "Data|"
 msgid "What are animals?"
-msgstr ""
+msgstr "Što su životinje?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:63
 msgctxt "Data|"
 msgid "Answers always in order, select the first one"
-msgstr ""
+msgstr "Odgovaraj uvijek redoslijedom, odaberi prvi"
 
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
@@ -24832,9 +24844,6 @@ msgid "Gradient Tools"
 msgstr "Alati za nijansiranje"
 
 #: activities/sketch/PaletteSelector.qml:148
-#, fuzzy
-#| msgctxt "ColorsPanel|"
-#| msgid "Palettes"
 msgctxt "PaletteSelector|"
 msgid "Palettes"
 msgstr "Palete"
@@ -27200,31 +27209,6 @@ msgstr "Tablica oduzimanja."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In a vertical subtraction, numbers are written one below the other. They "
-#| "need to be lined-up properly, starting from the column on the right-hand "
-#| "side. The top number is called the minuend: it is the amount that we are "
-#| "starting with, that another number is being subtracted from to get the "
-#| "difference. The number below is called the subtrahend: it is the amount "
-#| "to substract from the minuend to get the difference. The result is "
-#| "written on the bottom line. To solve the subtraction, start by "
-#| "subtracting the bottom number of the first column from the top number of "
-#| "the first column (on the right-hand side), and write the result on the "
-#| "bottom line of the same column. If the top number is smaller than the "
-#| "bottom number, you can borrow from the minuend on the next column: for "
-#| "example, if you add 10 units to the top number, you need to remove one "
-#| "unit from the top number of the next column. This is called the borrowing "
-#| "by regrouping method. To do that in this activity, click on the empty "
-#| "rectangle on the left of the top number, select 1, and on the next column "
-#| "click on the empty rectangle on the right of the top number and select "
-#| "-1. Then write the result of the column on the bottom line, and do the "
-#| "same on the next columns until the operation is finished. Once you have "
-#| "found the result, click on the OK button to validate your answer. In some "
-#| "levels, you will be need to write the given operation before solving it; "
-#| "in this case, click on the Ready button when the operation is written "
-#| "correctly and then solve it."
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -27359,17 +27343,11 @@ msgid "Solve: %1"
 msgstr "Riješi: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:99
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own addition and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own addition and solve it."
 msgstr "Napiši svoj zadatak zbrajanja i riješi ga."
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:100
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own subtraction and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own subtraction and solve it."
 msgstr "Napiši svoj zadatak oduzimanja i riješi ga."
@@ -27382,7 +27360,7 @@ msgstr "Spreman sam"
 #: activities/vertical_subtraction/VerticalSubtraction.qml:464
 msgctxt "VerticalSubtraction|"
 msgid "The result should not be a negative number."
-msgstr ""
+msgstr "Rezultat ne bi trebao biti negativan broj."
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
@@ -27400,31 +27378,6 @@ msgstr "Nauči rješavati okomito oduzimanje, metodom posuđivanja kompenzacijom
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In a vertical subtraction, numbers are written one below the other. They "
-#| "need to be lined-up properly, starting from the column on the right-hand "
-#| "side. The top number is called the minuend: it is the amount that we are "
-#| "starting with, that another number is being subtracted from to get the "
-#| "difference. The number below is called the subtrahend: it is the amount "
-#| "to substract from the minuend to get the difference. The result is "
-#| "written on the bottom line. To solve the subtraction, start by "
-#| "subtracting the bottom number of the first column from the top number of "
-#| "the first column (on the right-hand side), and write the result on the "
-#| "bottom line of the same column. If the top number is smaller than the "
-#| "bottom number, you can borrow from the subtrahend on the next column: for "
-#| "example, if you add 10 units to the top number, you need to add one unit "
-#| "to the bottom number of the next column. This is called the borrowing by "
-#| "compensation method. To do that in this activity, click on the empty "
-#| "rectangle on the left of the top number, select 1, and on the next column "
-#| "click on the empty rectangle on the right of the bottom number and select "
-#| "+1. Then write the result of the column on the bottom line, and do the "
-#| "same on the next columns until the operation is finished. Once you have "
-#| "found the result, click on the OK button to validate your answer. In some "
-#| "levels, you will be need to write the given operation before solving it; "
-#| "in this case, click on the Ready button when the operation is written "
-#| "correctly and then solve it."
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -27636,21 +27589,16 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Upišite cijelu riječ dok pada, prije nego što dotakne tlo."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Kannada and Tamil"
-msgstr "Dodan latvijski prijevod"
+msgstr "Dodan kannadski i tamilski prijevod"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgctxt "ChangeLog|"
 msgid "New command-line option to set the locale (--locale locale)"
 msgstr ""
-"Nova opcija naredbenog retka za promjenu renderiranja (--renderer renderer)"
+"Nova opcija naredbenog retka za postavljanje lokalnih postavki (--locale "
+"locale)"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
@@ -27658,6 +27606,8 @@ msgid ""
 "New command-line option to show/hide the Home button (--hide-home-button/--"
 "show-home-button)"
 msgstr ""
+"Nova opcija naredbenog retka za prikaz/skrivanje Home gumba (--hide-home-"
+"button/--show-home-button)"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:39 core/ChangeLog.qml:45
 #: core/ChangeLog.qml:54 core/ChangeLog.qml:60 core/ChangeLog.qml:65
@@ -28220,7 +28170,7 @@ msgstr "<b>Veliko hvala razvojnom timu:</b> %1"
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "<b>A big thanks to the translation team:</b> %1"
-msgstr "<b>Veliko hvala prevoditelju:</b> %1"
+msgstr "<b>Za hrvatski prijevod zaslužan je</b> %1"
 
 #: core/DialogActivityConfig.qml:84
 #, qt-format
@@ -28402,12 +28352,9 @@ msgid "No data found for %1."
 msgstr "Za %1 nisu pronađeni podaci."
 
 #: core/GCCreationHandler.qml:185
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr "%1 uspješno izbrisan!"
+msgstr "Datoteka uspješno izbrisana!"
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -28416,12 +28363,9 @@ msgid "OK"
 msgstr "U redu"
 
 #: core/GCCreationHandler.qml:193
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
-msgstr "Nije moguće izbrisati %1!"
+msgstr "Ne mogu izbrisati datoteku!"
 
 #: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
@@ -28476,7 +28420,7 @@ msgstr "Obriši"
 #: core/GCCreationHandler.qml:429
 msgctxt "GCCreationHandler|"
 msgid "Open folder"
-msgstr ""
+msgstr "Otvori mapu"
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
@@ -28602,22 +28546,19 @@ msgstr ""
 "koristi i opcija --launch."
 
 #: core/main.cpp:146
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid "Specify the activity when starting GCompris."
 msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
-msgstr "Odaberi aktivnost prilikom pokretanja GComprisa."
+msgstr "Zadaj lokalne postavke prilikom pokretanja GComprisa."
 
 #: core/main.cpp:150
 msgctxt "QObject|"
 msgid "Hide the Home button in the bar."
-msgstr ""
+msgstr "Sakrij Home gumb u traci."
 
 #: core/main.cpp:154
 msgctxt "QObject|"
 msgid "Show the Home button in the bar (default)."
-msgstr ""
+msgstr "Prikaži Home gumb u traci (zadano)."
 
 #: core/main.qml:238
 msgctxt "main|"
@@ -28708,47 +28649,36 @@ msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris je ažuriran! Evo novih promjena:<br/>"
 
 #: core/main.qml:509
-#, fuzzy, qt-format
-#| msgctxt "Sketch|"
-#| msgid "Do you want to erase this image?"
+#, qt-format
 msgctxt "main|"
 msgid "Do you want to connect to server %1?"
-msgstr "Želiš li obrisati ovu sliku?"
+msgstr "Želiš li se spojiti na poslužitelj %1?"
 
 #: core/main.qml:530
 #, qt-format
 msgctxt "main|"
 msgid "Password rejected by server %1"
-msgstr ""
+msgstr "Lozinka odbijena od strane poslužitelja %1"
 
 #: core/main.qml:531 core/main.qml:550 core/main.qml:625
-#, fuzzy
-#| msgctxt "Balancebox|"
-#| msgid "OK"
 msgctxt "main|"
 msgid "OK"
 msgstr "U redu"
 
 #: core/main.qml:546
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "main|"
 msgid "Select your username"
-msgstr "Odaberi način rada"
+msgstr "Odaberi tvoje korisničko ime"
 
 #: core/main.qml:556
 msgctxt "main|"
 msgid "Please select your username in the list or cancel."
-msgstr ""
+msgstr "Molim odaberi tvoje korisničko ime na popisu ili otkaži."
 
 #: core/main.qml:623
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "main|"
 msgid "Enter your password"
-msgstr "Enter: potvrđuješ odgovor"
+msgstr "Unesi tvoju lozinku"
 
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"
