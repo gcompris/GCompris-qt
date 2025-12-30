@@ -128,6 +128,7 @@ namespace controllers {
 
         QTcpServer *tcpServer;
         QHash<QTcpSocket *, UserData *> usersMap;
+        QHash<QTcpSocket *, QByteArray> socketBuffers;
         QUdpSocket *udpSocket;
 
         int socketCount_;

@@ -92,6 +92,7 @@ private:
     int _port;
     bool _connected;
     bool _wait4pong;
+    int missedPongs;
 
     QTcpSocket *tcpSocket;
     QUdpSocket *udpSocket;
