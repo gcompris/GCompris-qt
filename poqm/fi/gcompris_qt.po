@@ -8931,7 +8931,7 @@ msgstr "Napsauta sijaintia, josta annettu pyramidi löytyy."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "Kielletty kaupunki"
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8946,12 +8946,21 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
+"Pekingissä Kiinassa sijaitseva Kielletty kaupunki on mahtava keisarillinen "
+"palatsikompleksi, joka toimi Kiinan keisarien kotina ja kansakunnan "
+"poliittisena keskuksena lähes 500 vuotta Ming-dynastiasta (1368–1644) Qing-"
+"dynastian loppuun (1644–1912). Vuosien 1406 ja 1420 välillä rakennettu "
+"valtava arkkitehtoninen mestariteos ulottuu 73 hehtaarin alueelle, jolla 980 "
+"säilyneessä rakennuksessa on 8 700 perinteistä kiinalaista "
+"palatsisuunnittelua edustavaa huonetta. Vallihaudan ja paksun muurin "
+"ympäröimä Kielletty kaupunki oli pitkään suljettu tavalliselta kansalta ja "
+"symboloi keisarin valtaa ja sulkeutuneisuutta."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "Leshanin jättiläisbuddha"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8966,15 +8975,21 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
+"Sitšuanin provinssissa Kiinassa Min-, Dadu- ja Qingyijokien yhtymäkohdassa "
+"sijaitseva Leshanin jättiläisbuddha on kallioon kaiverrettu kolossaalinen "
+"patsas. 71 metrin korkuisena se on maailman korkein esimodernin ajan patsas "
+"ja siksi Unescon maailmanperintökohde. Se rakennettiin Tang-dynastian (713–"
+"803) aikana, ilmentää Maitreyaa – tulevaa Buddhaa – ja luotiin rauhoittamaan "
+"paikallista laivaliikennettä uhannutta levotonta jokea. Nerokkaasti "
+"suunniteltu patsas sisältää piilotetun salaojituksen torjumaan eroosiota. "
+"Sen tyyni ilme ja taidokas työn jälki tekevät siitä hengen ja taiteen "
+"saavutusten symbolin."
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Mysoren palatsi"
+msgstr "Potalan palatsi"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8994,7 +9009,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "Terrakotta-armeija"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -9006,12 +9021,18 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
+"Terrakotta-armeija on Kiinan ensimmäisen keisarin Qin Shi Huangin "
+"kuolemanjälkeisen elämän seuraksi haudattu tuhansien luonnollisen kokoisten "
+"savisotilaiden, -hevosten ja -vankkurien kokoelma. Se löydettiin läheltä "
+"Xi’ania vuonna 1974. Patsaat ovat arviolta vuodelta 210 eaa. Niitä on "
+"ylistetty uskomattomasta yksityiskohtaisuudesta: kukin soturi on oma "
+"yksilönsä omine sotilasarvoineen ja rooleineen Kiinan armeijassa."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr ""
+msgstr "Auringon ja kuun pagodit"
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -9026,15 +9047,21 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
+"Guilinissa Kiinassa sijaitsevat Auringon ja kuun pagodit ovat kaupungin "
+"kulttuurista ja henkistä perintöä symboloiva ikoninen kaksoistorni. Alkuaan "
+"ne rakennettiin Tang-dynastian aikana, mutta 1900-luvulla ne rekonstruoitiin "
+"Shanhujärven näyttäviksi maamerkeiksi. 41-metrinen Auringon pagodi on "
+"lajissaan maailman korkein pronssirakennelma, kun taas 35-metrinen Kuun "
+"pagodi koostuu lasitetuista laatoista. Pagodit ilmentävät jinin ja jangin "
+"harmoniaa, ja niitä yhdistää vedenalainen lasitunneli. Yöllä ne valaistaan, "
+"ja ne ovat suosittu Kiinan perinteistä arkkitehtuuria ja nykyaikaista "
+"nerokkuutta esittelevä nähtävyys."
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Eiffelin torni"
+msgstr "Diaoloun tornit"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -9051,26 +9078,20 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Intian nähtävyydet"
+msgstr "Kiinan muistomerkit"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
-msgstr "Napsauta paikkaa, missä annettu nähtävyys sijaitsee."
+msgstr "Napsauta paikkaa, missä annettu muistomerkki sijaitsee."
 
 #: activities/explore_monuments/resource/board/board8.qml:17
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "Pantheon"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -9092,7 +9113,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "Duomo Di Milano"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -9107,15 +9128,22 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
+"Milanon tuomiokirkko tai katedraali, Duomo di Milano, on Milanossa Italiassa "
+"sijaitseva goottilaisen arkkitehtuurin ikoninen mestariteos. Sitä "
+"rakennettiin yli kuusisataa vuotta. Se on yksi maailman suurimmista "
+"katedraaleista ja Milanon taiteellisen ja kulttuurisen perinnön vertauskuva. "
+"Sen taidokasta julkisivua koristavat lukemattomat goottilaisen "
+"arkkitehtuurin mahtipontisuutta heijastelevat patsaat, koristetornit ja "
+"gargoilit. Sisätiloissa kävijät voivat ihailla sen kauniita "
+"lasimaalausikkunoita ja marmorin taidokkaita yksityiskohtia tai nousta "
+"katolle ihailemaan näkymää kaupunkiin ja Alpeille. Duomo seisoo todisteena "
+"Italian rikkaasta historiallisesta ja arkkitehtonisesta loistosta."
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Wormsin katedraali"
+msgstr "Firenzen katedraali"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -9131,15 +9159,22 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
+"Firenzen katedraali eli virallisesti Cattedrale di Santa Maria del Fiore on "
+"goottilaisen ja renessanssiarkkitehtuurin tunnettu mestariteos. Se sijaitsee "
+"Firenzessä Italiassa ja valmistui vuonna 1436. Se tunnetaan Filippo "
+"Brunelleschin suunnittelemasta massiivisesta punatiilisestä kupolistaan, "
+"joka on säilynyt insinööritaidon ihmeenä ja kaupungin tunnuskuvana. "
+"Katedraalin taidokas 1800-luvulla lisätty marmorijulkisivu täydentää sen "
+"runsaasti koristellut sisätilat ja taideaarteet. Se muodostaa yhdessä "
+"Giotton Campanilen ja Pyhän Johanneksen kastekappelin kanssa Unescon "
+"maailmanperintökohteen, jossa sen historiallisen, kulttuurisen ja "
+"arkkitehtonisen merkityksen vuoksi vierailee vuosittain miljoonia ihmisiä."
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Hanoin tornit"
+msgstr "Pisan kalteva torni"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -9154,12 +9189,21 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
+"Italiassa Pisan kaupungissa sijaitseva kalteva torni on maailmanlaajuisesti "
+"tunnettu arkkitehtoninen ihme. Se rakennettiin kaupungin katedraalin "
+"vapaasti seisovaksi kellotorniksi, mutta tunnetaan tahattomasta, epävakaan "
+"perustan aiheuttamasta vinoudestaan. Tornin vuonna 1173 alkaneet "
+"rakennustyöt kestivät lähes 200 vuotta, minä aikana kaltevuutta yritettiin "
+"useamman kerran korjata. Romaanistyylisessä noin 56-metrisessä tornissa on "
+"kahdeksan taidokkain kaiverretuin pylväin ja kaarin koristeltua kerrosta ja "
+"kellohuoneen. Torni on Unescon maailmanperintökohde sekä inhimillisen "
+"sitkeyden ja kekseliäisyyden vertauskuva."
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr ""
+msgstr "Pyhän Markuksen basilika"
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -9175,12 +9219,23 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
+"Pyhän Markuksen basilika Venetsiassa Italiassa on bysanttilaisen "
+"arkkitehtuurin ikoninen mestariteos ja yksi kaupungin tunnetuimpia "
+"maamerkkejä. Alkuaan se rakennettiin vuonna 828 evankelista Markuksen "
+"pyhäinjäännöksille ja uudelleen nykyiseen muotoonsa 1000-luvulla. Muhkeista "
+"muodoistaan tunnettu basilika sekoittaa itäisiä ja läntisiä vaikutteita "
+"viidessä kupolissaan, taidokkaissa mosaiikeissaan sekä julkisivun "
+"koristeellisissa patsaissa ja kaiverruksissa. Runsain kultamosaiikein ja "
+"marmorilattioin koristellut sisätilat todistavat Venetsian tasavallan "
+"rikkautta ja mahtia. Se sijaitsee Pyhän Markuksen torin laidalla ja on "
+"säilynyt todisteena Venetsian historiallisesta, kulttuurisesta ja "
+"uskonnollisesta perinnöstä."
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr ""
+msgstr "Pompeji"
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -9196,31 +9251,32 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
+"Pompeiji oli muinainen roomalainen kaupunki lähellä nykyajan Napolia "
+"Italiassa, joka hautautui Vesuviusvuoren purkauksessa vuonna 79. Purkaus "
+"nostatti kuolettavan tuhkan, hohkakiven ja pyroklastisen virtauksen "
+"yhdistelmän, joka peitti kaupungin asukkaineen säilyttäen rakennukset, "
+"esineet ja uskomattomassa tarkkuudessa jopa ihmisjäänteet. Pompeijin "
+"kaivaukset ovat tarjonneet arvokasta tietoa Rooman arkielämästä, "
+"arkkitehtuurista ja yhteiskunnasta paljastamalla sen hyvin suunnitellut "
+"kadut, kodit, julkiset kylpylät ja temppelit. Paikka on nykyään Unescon "
+"maailmanperintökohde ja yhä yksi historian tärkeimmistä arkeologisista "
+"löydöistä."
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Intian nähtävyydet"
+msgstr "Italian muistomerkit"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
-msgstr "Napsauta paikkaa, missä annettu nähtävyys sijaitsee."
+msgstr "Napsauta paikkaa, missä annettu muistomerkki sijaitsee."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Sekatapaus"
+msgstr "Himejin linna"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -9238,7 +9294,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr ""
+msgstr "Hiroshiman rauhanmuistomerkin puisto"
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -9259,7 +9315,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr ""
+msgstr "Fuji Sengenin pyhäkkö Arakurassa"
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -9275,12 +9331,22 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
+"Pyhäkkö perustettiin vuonna 705 suojelemaan paikan pyhyyttä. Fujivuoren "
+"vuoden 807 suuren purkauksen jälkeen keisari lähetti pyhäkköön lähettiläänsä "
+"suorittamaan rituaalin purkauksen pysäyttämiseksi. Taistelevien "
+"läänitysvaltioiden kaudella sanotaan Takeda Nobutoran, kuuluisan sotaherran "
+"Takeda Shingenin isän taistelussa Hojon sukua vastaan perustaneen "
+"pyhäkköönleirinsä ja rukoilleen voittoa, jonka sittemmin taistelussa sai. "
+"Hän omisti pyhäkölle miekkansa. Nykyään läheltä ja kaukaa saapuneet vieraat "
+"torjuvat pyhäkössä pahaa, rukoilevat perheilleen onnea ja turvallista "
+"synnytystä. Keväisin kirsikankukat kukkiessa ihmiset kerääntyvät nauttimaan "
+"mykistävästä näköalasta Fujivuorelle."
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr ""
+msgstr "Shurin linna Okinawassa"
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -9298,12 +9364,9 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Ranskan nähtävyydet"
+msgstr "Japanin muistomerkit"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
 #, fuzzy
