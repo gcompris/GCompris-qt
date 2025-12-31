@@ -1,11 +1,19 @@
 msgid ""
 msgstr ""
+"Project-Id-Version: gcompris-teacher\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2025-12-30 10:16+0200\n"
+"PO-Revision-Date: 2025-12-30 11:02+0200\n"
+"Last-Translator: Yannis Kas\n"
+"Language-Team: Greek <kde-i18n-el@kde.org>\n"
+"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 3.8\n"
+"X-Language: el\n"
 "X-Qt-Contexts: true\n"
-"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n < 11 ? "
-"3 : 4\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
 #: server/activities/binary_bulb/ActivityEditor.qml:12
@@ -16,7 +24,7 @@ msgstr ""
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:13
 msgctxt "ActivityEditor|"
 msgid "Rules to create a valid dataset:"
-msgstr ""
+msgstr "Κανόνες για τη δημιουργία ενός έγκυρου συνόλου δεδομένων:"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
@@ -25,6 +33,10 @@ msgid ""
 "minimum between the \"Sublevels\" value and the result of: (\"Maximum start "
 "number\" - \"Minimum start number\") / \"Step between numbers\" + 1."
 msgstr ""
+"Αν είναι επιλεγμένο το \"Τυχαίος αριθμός έναρξης\", ο αριθμός των "
+"υποεπιπέδων θα είναι ο ελάχιστος μεταξύ της τιμής \"Υποεπίπεδα\" και του "
+"αποτελέσματος του: (\"Μέγιστος αριθμός έναρξης\" - \"Ελάχιστος αριθμός "
+"έναρξης\") / \"Βήμα μεταξύ αριθμών\" + 1."
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
@@ -33,6 +45,9 @@ msgid ""
 "contain only numbers, and each of them will be used as start number for a "
 "sublevel."
 msgstr ""
+"Αν το \"Τυχαίος αριθμός έναρξης\" δεν είναι επιλεγμένο, η λίστα \"Αριθμοί "
+"έναρξης\" πρέπει να περιέχει μόνο αριθμούς, και καθένας από αυτούς θα "
+"χρησιμοποιηθεί ως αριθμός έναρξης για ένα υποεπίπεδο."
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:19
 msgctxt "ActivityEditor|"
@@ -43,111 +58,122 @@ msgid ""
 "1. Also, the length of the list can not be greater than \"Sequence length\" "
 "- 2, to always have at least 2 visible numbers in the sequence."
 msgstr ""
+"Η \"Θέση των αριθμών που λείπουν\" πρέπει να περιέχει μια λίστα αριθμών που "
+"αντιστοιχούν στον δείκτη των αριθμών που πρέπει να βρεθούν. Οι αριθμοί "
+"δείκτη ξεκινούν από το 0 (ο πρώτος αριθμός της ακολουθίας) και δεν πρέπει να "
+"είναι μεγαλύτεροι από \"Μήκος ακολουθίας\" - 1. Επίσης, το μήκος της λίστας "
+"δεν μπορεί να είναι μεγαλύτερο από \"Μήκος ακολουθίας\" - 2, ώστε να "
+"υπάρχουν πάντα τουλάχιστον 2 ορατοί αριθμοί στην ακολουθία."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:36
 msgctxt "AdjacentNumbersDataDisplay|"
 msgid "Tiles:"
-msgstr ""
+msgstr "Πλακίδια:"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:60
 msgctxt "AdjacentNumbersDataDisplay|"
 msgid "Answer:"
-msgstr ""
+msgstr "Απάντηση:"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:28
 msgctxt "AdjacentNumbersEditor|"
 msgid "Random start numbers"
-msgstr ""
+msgstr "Τυχαίοι αριθμοί έναρξης"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:29
 msgctxt "AdjacentNumbersEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Υποεπίπεδα"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:30
 msgctxt "AdjacentNumbersEditor|"
 msgid "Start numbers"
-msgstr ""
+msgstr "Αριθμοί έναρξης"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:31
 msgctxt "AdjacentNumbersEditor|"
 msgid "Minimum start number"
-msgstr ""
+msgstr "Ελάχιστος αριθμός έναρξης"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:32
 msgctxt "AdjacentNumbersEditor|"
 msgid "Maximum start number"
-msgstr ""
+msgstr "Μέγιστος αριθμός έναρξης"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:33
 msgctxt "AdjacentNumbersEditor|"
 msgid "Step between numbers"
-msgstr ""
+msgstr "Βήμα μεταξύ αριθμών"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:34
 msgctxt "AdjacentNumbersEditor|"
 msgid "Sequence length"
-msgstr ""
+msgstr "Μήκος ακολουθίας"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:35
 msgctxt "AdjacentNumbersEditor|"
 msgid "Position of missing numbers"
-msgstr ""
+msgstr "Θέση των αριθμών που λείπουν"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:36
 msgctxt "AdjacentNumbersEditor|"
 msgid "Proposed numbers"
-msgstr ""
+msgstr "Προτεινόμενοι αριθμοί"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:98
 msgctxt "AdjacentNumbersEditor|"
 msgid "Dataset is empty."
-msgstr ""
+msgstr "Το σύνολο δεδομένων είναι κενό."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:100
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Start numbers\" must contain only numbers, and not be empty."
 msgstr ""
+"Οι \"Αριθμοί έναρξης\" πρέπει να περιέχουν μόνο αριθμούς και να μην είναι "
+"κενό."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:102
 msgctxt "AdjacentNumbersEditor|"
 msgid ""
 "\"Position of missing numbers\" must contain only numbers, and not be empty."
 msgstr ""
+"Η \"Θέση των αριθμών που λείπουν\" πρέπει να περιέχει μόνο αριθμούς και να "
+"μην είναι κενό."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:104
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Position of missing numbers\" contains too much numbers."
 msgstr ""
+"Η \"Θέση των αριθμών που λείπουν\" περιέχει υπερβολικά πολλούς αριθμούς."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:106
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Position of missing numbers\" contains invalid numbers."
-msgstr ""
+msgstr "Η \"Θέση των αριθμών που λείπουν\" περιέχει μη έγκυρους αριθμούς."
 
 #: server/activities/algebra_by/AlgebraDataDisplay.qml:19
 msgctxt "AlgebraDataDisplay|"
 msgid "timeout"
-msgstr ""
+msgstr "χρονικό όριο"
 
 #. %1 is an operation, %2 the result. Example: "2 x 5 = 10"
 #: server/activities/algebra_by/AlgebraDataDisplay.qml:22
 #, qt-format
 msgctxt "AlgebraDataDisplay|"
 msgid "%1 = %2"
-msgstr ""
+msgstr "%1 = %2"
 
 #. %1 is the answer. Example: "Answer: 10"
 #: server/activities/algebra_by/AlgebraDataDisplay.qml:24
 #, qt-format
 msgctxt "AlgebraDataDisplay|"
 msgid "Answer: %1"
-msgstr ""
+msgstr "Απάντηση: %1"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:25
 msgctxt "AlgebraEditor|"
 msgid "Rules to create a valid dataset:"
-msgstr ""
+msgstr "Κανόνες για τη δημιουργία ενός έγκυρου συνόλου δεδομένων:"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:27
 msgctxt "AlgebraEditor|"
@@ -157,6 +183,11 @@ msgid ""
 "be large enough to generate enough questions for the given number of "
 "sublevels using the minimum and maximum operand values."
 msgstr ""
+"Όταν είναι επιλεγμένο το \"Τυχαίοι τελεστές\", αν το \"Όριο τιμής "
+"αποτελέσματος\" είναι μεγαλύτερο από 0, ορίζει το μέγιστο επιτρεπόμενο για "
+"το αποτέλεσμα κάθε πράξης. Πρέπει να είναι αρκετά μεγάλο, ώστε να "
+"δημιουργήσει αρκετές ερωτήσεις για τον δεδομένο αριθμό υποεπιπέδων "
+"χρησιμοποιώντας τις ελάχιστες και μέγιστες τιμές τελεστών."
 
 #: server/activities/algebra_by/AlgebraEditor.qml:29
 msgctxt "AlgebraEditor|"
@@ -164,47 +195,49 @@ msgid ""
 "If \"Random operands\" is not selected, the sublevel list on the right side "
 "must not be empty."
 msgstr ""
+"Αν το \"Τυχαίοι τελεστές\" δεν είναι επιλεγμένο, η λίστα υποεπιπέδων στη "
+"δεξιά πλευρά δεν πρέπει να είναι κενή."
 
 #: server/activities/algebra_by/AlgebraEditor.qml:33
 msgctxt "AlgebraEditor|"
 msgid "Random operands"
-msgstr ""
+msgstr "Τυχαίοι τελεστές"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:34
 #: server/activities/algebra_by/AlgebraEditor.qml:39
 msgctxt "AlgebraEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Υποεπίπεδα"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:35
 msgctxt "AlgebraEditor|"
 msgid "Minimum operand value"
-msgstr ""
+msgstr "Ελάχιστη τιμή τελεστή"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:36
 msgctxt "AlgebraEditor|"
 msgid "Maximum operand value"
-msgstr ""
+msgstr "Μέγιστη τιμή τελεστή"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:37
 msgctxt "AlgebraEditor|"
 msgid "Result value limit"
-msgstr ""
+msgstr "Όριο τιμής αποτελέσματος"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:38
 msgctxt "AlgebraEditor|"
 msgid "Shuffle"
-msgstr ""
+msgstr "Ανάμειξη"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:44
 msgctxt "AlgebraEditor|"
 msgid "First operand"
-msgstr ""
+msgstr "Πρώτος τελεστής"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:45
 msgctxt "AlgebraEditor|"
 msgid "Second operand"
-msgstr ""
+msgstr "Δεύτερος τελεστής"
 
 #: server/activities/algebra_div/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
@@ -214,6 +247,10 @@ msgid ""
 "multiplying the right side operand by another number between minimum and "
 "maximum values."
 msgstr ""
+"Όταν είναι επιλεγμένο το \"Τυχαίοι τελεστές\", ο δεξιός τελεστής είναι πάντα "
+"μεταξύ των ελάχιστων και μέγιστων τιμών. Ο αριστερός τελεστής δημιουργείται "
+"πολλαπλασιάζοντας τον δεξιό τελεστή με έναν άλλο αριθμό μεταξύ των ελάχιστων "
+"και μέγιστων τιμών."
 
 #: server/activities/algebra_div/ActivityEditor.qml:18
 msgctxt "ActivityEditor|"
@@ -221,47 +258,50 @@ msgid ""
 "If \"Random operands\" is not selected, for each sublevel you must make sure "
 "that the \"First operand\" is a multiple of the \"Second operand\"."
 msgstr ""
+"Αν το \"Τυχαίοι τελεστές\" δεν είναι επιλεγμένο, για κάθε υποεπίπεδο πρέπει "
+"να βεβαιωθείτε ότι ο \"Πρώτος τελεστής\" είναι πολλαπλάσιο του \"Δεύτερου "
+"τελεστή\"."
 
 #: server/activities/algebra_div/ActivityEditor.qml:23
 msgctxt "ActivityEditor|"
 msgid "Random operands"
-msgstr ""
+msgstr "Τυχαίοι τελεστές"
 
 #: server/activities/algebra_div/ActivityEditor.qml:24
 #: server/activities/algebra_div/ActivityEditor.qml:29
 msgctxt "ActivityEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Υποεπίπεδα"
 
 #: server/activities/algebra_div/ActivityEditor.qml:25
 msgctxt "ActivityEditor|"
 msgid "Minimum operand value"
-msgstr ""
+msgstr "Ελάχιστη τιμή τελεστή"
 
 #: server/activities/algebra_div/ActivityEditor.qml:26
 msgctxt "ActivityEditor|"
 msgid "Maximum operand value"
-msgstr ""
+msgstr "Μέγιστη τιμή τελεστή"
 
 #: server/activities/algebra_div/ActivityEditor.qml:27
 msgctxt "ActivityEditor|"
 msgid "Result value limit"
-msgstr ""
+msgstr "Όριο τιμής αποτελέσματος"
 
 #: server/activities/algebra_div/ActivityEditor.qml:28
 msgctxt "ActivityEditor|"
 msgid "Shuffle"
-msgstr ""
+msgstr "Ανάμειξη"
 
 #: server/activities/algebra_div/ActivityEditor.qml:34
 msgctxt "ActivityEditor|"
 msgid "First operand"
-msgstr ""
+msgstr "Πρώτος τελεστής"
 
 #: server/activities/algebra_div/ActivityEditor.qml:35
 msgctxt "ActivityEditor|"
 msgid "Second operand"
-msgstr ""
+msgstr "Δεύτερος τελεστής"
 
 #: server/activities/algebra_minus/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
@@ -269,6 +309,9 @@ msgid ""
 "If \"Random operands\" is not selected, for each sublevel you must make sure "
 "that the \"First operand\" is greater than the \"Second operand\"."
 msgstr ""
+"Αν το \"Τυχαίοι τελεστές\" δεν είναι επιλεγμένο, για κάθε υποεπίπεδο πρέπει "
+"να βεβαιωθείτε ότι ο \"Πρώτος τελεστής\" είναι μεγαλύτερος από τον \"Δεύτερο "
+"τελεστή\"."
 
 #: server/activities/binary_bulb/ActivityEditor.qml:14
 msgctxt "ActivityEditor|"
@@ -277,16 +320,20 @@ msgid ""
 "list of integer numbers. Each number must be between 0 and the maximum "
 "number which can be represented with the given \"Bulb count\"."
 msgstr ""
+"Αν το \"Τυχαίοι αριθμοί\" δεν είναι επιλεγμένο, το \"Αριθμοί προς εύρεση\" "
+"πρέπει να περιέχει μια λίστα ακεραίων αριθμών. Κάθε αριθμός πρέπει να είναι "
+"μεταξύ 0 και ο μέγιστος αριθμός που μπορεί να αναπαρασταθεί με τον δεδομένο "
+"\"Αριθμό λαμπτήρων\"."
 
 #: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:28
 msgctxt "BinaryBulbDataDisplay|"
 msgid "Expected:"
-msgstr ""
+msgstr "Αναμενόμενο:"
 
 #: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:34
 msgctxt "BinaryBulbDataDisplay|"
 msgid "Answer:"
-msgstr ""
+msgstr "Απάντηση:"
 
 #. %1 is the numerical value, %2 is the binary value. Example: "5 (101)"
 #: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:46
@@ -294,53 +341,53 @@ msgstr ""
 #, qt-format
 msgctxt "BinaryBulbDataDisplay|"
 msgid "%1 (%2)"
-msgstr ""
+msgstr "%1 (%2)"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:28
 msgctxt "BinaryBulbEditor|"
 msgid "Random numbers"
-msgstr ""
+msgstr "Τυχαίοι αριθμοί"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:29
 msgctxt "BinaryBulbEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Υποεπίπεδα"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:30
 msgctxt "BinaryBulbEditor|"
 msgid "Numbers to find"
-msgstr ""
+msgstr "Αριθμοί προς εύρεση"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:31
 msgctxt "BinaryBulbEditor|"
 msgid "Shuffle questions"
-msgstr ""
+msgstr "Ανάμειξη ερωτήσεων"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:32
 msgctxt "BinaryBulbEditor|"
 msgid "Bulb count"
-msgstr ""
+msgstr "Αριθμός λαμπτήρων"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:33
 msgctxt "BinaryBulbEditor|"
 msgid "Display the current result"
-msgstr ""
+msgstr "Εμφάνιση τρέχοντος αποτελέσματος"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:34
 msgctxt "BinaryBulbEditor|"
 msgid "Display the bulb values"
-msgstr ""
+msgstr "Εμφάνιση τιμών λαμπτήρων"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:87
 msgctxt "BinaryBulbEditor|"
 msgid "Dataset is empty."
-msgstr ""
+msgstr "Το σύνολο δεδομένων είναι κενό."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:101
 #, qt-format
 msgctxt "BinaryBulbEditor|"
 msgid "\"Numbers to find\" for level %1 must not be empty."
-msgstr ""
+msgstr "Το \"Αριθμοί προς εύρεση\" για το επίπεδο %1 δεν πρέπει να είναι κενό."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:115
 #, qt-format
@@ -349,342 +396,352 @@ msgid ""
 "These values are invalid for level %1: %2. The values must be integer "
 "numbers between 0 and %3."
 msgstr ""
+"Αυτές οι τιμές είναι άκυρες για το επίπεδο %1: %2. Οι τιμές πρέπει να είναι "
+"ακέραιοι αριθμοί μεταξύ 0 και %3."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:119
 #, qt-format
 msgctxt "BinaryBulbEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Πρέπει να διορθωθούν τα ακόλουθα σφάλματα:<ul>%1</ul>"
 
 #: server/activities/clockgame/ClockGameDataDisplay.qml:30
 msgctxt "ClockGameDataDisplay|"
 msgid "Expected:"
-msgstr ""
+msgstr "Αναμενόμενο:"
 
 #: server/activities/clockgame/ClockGameDataDisplay.qml:36
 msgctxt "ClockGameDataDisplay|"
 msgid "Answer:"
-msgstr ""
+msgstr "Απάντηση:"
 
 #: server/activities/clockgame/ClockgameEditor.qml:27
 msgctxt "ClockgameEditor|"
 msgid "Exercise count"
-msgstr ""
+msgstr "Αριθμός ασκήσεων"
 
 #: server/activities/clockgame/ClockgameEditor.qml:28
 msgctxt "ClockgameEditor|"
 msgid "Find minutes"
-msgstr ""
+msgstr "Εύρεση λεπτών"
 
 #: server/activities/clockgame/ClockgameEditor.qml:29
 msgctxt "ClockgameEditor|"
 msgid "Find seconds"
-msgstr ""
+msgstr "Εύρεση δευτερολέπτων"
 
 #: server/activities/clockgame/ClockgameEditor.qml:30
 msgctxt "ClockgameEditor|"
 msgid "Display hours numbers"
-msgstr ""
+msgstr "Εμφάνιση αριθμών ωρών"
 
 #: server/activities/clockgame/ClockgameEditor.qml:31
 msgctxt "ClockgameEditor|"
 msgid "Display hours marks"
-msgstr ""
+msgstr "Εμφάνιση δεικτών ωρών"
 
 #: server/activities/clockgame/ClockgameEditor.qml:32
 msgctxt "ClockgameEditor|"
 msgid "Grey/white background between each hour"
-msgstr ""
+msgstr "Γκρι/λευκό φόντο μεταξύ κάθε ώρας"
 
 #: server/activities/clockgame/ClockgameEditor.qml:33
 msgctxt "ClockgameEditor|"
 msgid "Display minutes numbers"
-msgstr ""
+msgstr "Εμφάνιση αριθμών λεπτών"
 
 #: server/activities/clockgame/ClockgameEditor.qml:34
 msgctxt "ClockgameEditor|"
 msgid "Hide the Hint button in the bar (which gives the current time)"
 msgstr ""
+"Απόκρυψη του κουμπιού Υπόδειξης στη γραμμή (που δίνει την τρέχουσα ώρα)"
 
 #: server/activities/clockgame/ClockgameEditor.qml:35
 msgctxt "ClockgameEditor|"
 msgid "Fixed hour"
-msgstr ""
+msgstr "Σταθερή ώρα"
 
 #: server/activities/clockgame/ClockgameEditor.qml:36
 #: server/activities/clockgame/ClockgameEditor.qml:38
 #: server/activities/clockgame/ClockgameEditor.qml:40
 msgctxt "ClockgameEditor|"
 msgid "Value"
-msgstr ""
+msgstr "Τιμή"
 
 #: server/activities/clockgame/ClockgameEditor.qml:37
 msgctxt "ClockgameEditor|"
 msgid "Fixed minutes"
-msgstr ""
+msgstr "Σταθερά λεπτά"
 
 #: server/activities/clockgame/ClockgameEditor.qml:39
 msgctxt "ClockgameEditor|"
 msgid "Fixed seconds"
-msgstr ""
+msgstr "Σταθερά δευτερόλεπτα"
 
 #: server/activities/comparator/ComparatorDataDisplay.qml:30
 msgctxt "ComparatorDataDisplay|"
 msgid "Result:"
-msgstr ""
+msgstr "Αποτέλεσμα:"
 
 #: server/activities/comparator/ComparatorEditor.qml:29
 msgctxt "ComparatorEditor|"
 msgid "Shuffle"
-msgstr ""
+msgstr "Ανάμειξη"
 
 #: server/activities/comparator/ComparatorEditor.qml:30
 msgctxt "ComparatorEditor|"
 msgid "Questions"
-msgstr ""
+msgstr "Ερωτήσεις"
 
 #: server/activities/comparator/ComparatorEditor.qml:36
 msgctxt "ComparatorEditor|"
 msgid "Left number"
-msgstr ""
+msgstr "Αριστερός αριθμός"
 
 #: server/activities/comparator/ComparatorEditor.qml:37
 msgctxt "ComparatorEditor|"
 msgid "Right number"
-msgstr ""
+msgstr "Δεξιός αριθμός"
 
 #: server/activities/comparator/ComparatorEditor.qml:109
 msgctxt "ComparatorEditor|"
 msgid "Dataset is empty."
-msgstr ""
+msgstr "Το σύνολο δεδομένων είναι κενό."
 
 #: server/activities/comparator/ComparatorEditor.qml:119
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "Level %1 must not be empty."
-msgstr ""
+msgstr "Το Επίπεδο %1 δεν πρέπει να είναι κενό."
 
 #: server/activities/comparator/ComparatorEditor.qml:126
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "\"Left number\" in Question %1 of Level %2 must contain a number."
 msgstr ""
+"Ο \"Αριστερός αριθμός\" στην Ερώτηση %1 του Επιπέδου %2 πρέπει να περιέχει "
+"έναν αριθμό."
 
 #: server/activities/comparator/ComparatorEditor.qml:130
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "\"Right number\" in Question %1 of Level %2 must contain a number."
 msgstr ""
+"Ο \"Δεξιός αριθμός\" στην Ερώτηση %1 του Επιπέδου %2 πρέπει να περιέχει έναν "
+"αριθμό."
 
 #: server/activities/comparator/ComparatorEditor.qml:136
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Πρέπει να διορθωθούν τα ακόλουθα σφάλματα:<ul>%1</ul>"
 
 #: server/activities/DailyReport.qml:33
 msgctxt "DailyReport|"
 msgid "All groups"
-msgstr ""
+msgstr "Όλες οι ομάδες"
 
 #. Group name first, then Date range, with a space between them. Example: "Group Name 01/07/2025-08/07/2025"
 #: server/activities/DailyReport.qml:126
 #, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %2"
-msgstr ""
+msgstr "%1 %2"
 
 #: server/activities/DailyReport.qml:130
 msgctxt "DailyReport|"
 msgid "Calendar"
-msgstr ""
+msgstr "Ημερολόγιο"
 
 #: server/activities/DailyReport.qml:185
 msgctxt "DailyReport|"
 msgid "Count"
-msgstr ""
+msgstr "Μέτρηση"
 
 #: server/activities/DailyReport.qml:195
 msgctxt "DailyReport|"
 msgid "Time"
-msgstr ""
+msgstr "Χρόνος"
 
 #: server/activities/DailyReport.qml:205
 msgctxt "DailyReport|"
 msgid "Ratio"
-msgstr ""
+msgstr "Αναλογία"
 
 #. Number of result lines
 #: server/activities/DailyReport.qml:217
 #, qt-format
 msgctxt "DailyReport|"
 msgid "Lines: %1"
-msgstr ""
+msgstr "Γραμμές: %1"
 
 #. Success ratio, example: "50 %"
 #: server/activities/DailyReport.qml:316
 #, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %"
-msgstr ""
+msgstr "%1 %"
 
 #: server/activities/fractions_create/ActivityEditor.qml:14
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Instruction\" must contain some text telling the fraction to represent."
 msgstr ""
+"Η \"Οδηγία\" πρέπει να περιέχει κάποιο κείμενο που να περιγράφει το κλάσμα "
+"προς αναπαράσταση."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:29
 msgctxt "FractionsCreateEditor|"
 msgid "Shuffle"
-msgstr ""
+msgstr "Ανάδευση"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:30
 msgctxt "FractionsCreateEditor|"
 msgid "Questions"
-msgstr ""
+msgstr "Ερωτήσεις"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:36
 msgctxt "FractionsCreateEditor|"
 msgid "Numerator"
-msgstr ""
+msgstr "Αριθμητής"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:37
 msgctxt "FractionsCreateEditor|"
 msgid "Denominator"
-msgstr ""
+msgstr "Παρονομαστής"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:38
 msgctxt "FractionsCreateEditor|"
 msgid "Instruction"
-msgstr ""
+msgstr "Οδηγία"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:130
 msgctxt "FractionsCreateEditor|"
 msgid "Dataset is empty."
-msgstr ""
+msgstr "Το σύνολο δεδομένων είναι κενό."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:140
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "Level %1 must not be empty."
-msgstr ""
+msgstr "Το Επίπεδο %1 δεν πρέπει να είναι κενό."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:146
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "\"Instruction\" of Question %1 from Level %2 must not be empty."
 msgstr ""
+"Η \"Οδηγία\" της Ερώτησης %1 από το Επίπεδο %2 δεν πρέπει να είναι κενή."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:152
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Πρέπει να διορθωθούν τα ακόλουθα σφάλματα:<ul>%1</ul>"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:160
 msgctxt "FractionsCreateEditor|"
 msgid "Rectangle"
-msgstr ""
+msgstr "Ορθογώνιο"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:161
 msgctxt "FractionsCreateEditor|"
 msgid "Circle"
-msgstr ""
+msgstr "Κύκλος"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:164
 msgctxt "FractionsCreateEditor|"
 msgid "Chart Type"
-msgstr ""
+msgstr "Τύπος Γραφήματος"
 
 #: server/activities/fractions_find/FractionsFindDataDisplay.qml:26
 msgctxt "FractionsFindDataDisplay|"
 msgid "Expected:"
-msgstr ""
+msgstr "Αναμενόμενο:"
 
 #: server/activities/fractions_find/FractionsFindDataDisplay.qml:60
 msgctxt "FractionsFindDataDisplay|"
 msgid "Answer:"
-msgstr ""
+msgstr "Απάντηση:"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:29
 msgctxt "FractionsFindEditor|"
 msgid "Shuffle"
-msgstr ""
+msgstr "Ανάδευση"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:30
 msgctxt "FractionsFindEditor|"
 msgid "Questions"
-msgstr ""
+msgstr "Ερωτήσεις"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:36
 msgctxt "FractionsFindEditor|"
 msgid "Static numerator"
-msgstr ""
+msgstr "Σταθερός αριθμητής"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:37
 msgctxt "FractionsFindEditor|"
 msgid "Static denominator"
-msgstr ""
+msgstr "Σταθερός παρονομαστής"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:38
 msgctxt "FractionsFindEditor|"
 msgid "Numerator"
-msgstr ""
+msgstr "Αριθμητής"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:39
 msgctxt "FractionsFindEditor|"
 msgid "Denominator"
-msgstr ""
+msgstr "Παρονομαστής"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:40
 msgctxt "FractionsFindEditor|"
 msgid "Maximum of units"
-msgstr ""
+msgstr "Μέγιστο μονάδων"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:41
 msgctxt "FractionsFindEditor|"
 msgid "Random fraction"
-msgstr ""
+msgstr "Τυχαίο κλάσμα"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:159
 msgctxt "FractionsFindEditor|"
 msgid "Dataset is empty."
-msgstr ""
+msgstr "Το σύνολο δεδομένων είναι κενό."
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:169
 #, qt-format
 msgctxt "FractionsFindEditor|"
 msgid "Level %1 must not be empty."
-msgstr ""
+msgstr "Το Επίπεδο %1 δεν πρέπει να είναι κενό."
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:173
 #, qt-format
 msgctxt "FractionsFindEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Πρέπει να διορθωθούν τα ακόλουθα σφάλματα:<ul>%1</ul>"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:181
 msgctxt "FractionsFindEditor|"
 msgid "Rectangle"
-msgstr ""
+msgstr "Ορθογώνιο"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:182
 msgctxt "FractionsFindEditor|"
 msgid "Circle"
-msgstr ""
+msgstr "Κύκλος"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:185
 msgctxt "FractionsFindEditor|"
 msgid "Chart Type"
-msgstr ""
+msgstr "Τύπος Γραφήματος"
 
 #. %1 is number of hints displayed. Example: "Hints: 1"
 #: server/activities/guess24/Guess24DataDisplay.qml:79
 #, qt-format
 msgctxt "Guess24DataDisplay|"
 msgid "Hints: %1"
-msgstr ""
+msgstr "Υπόδειξη: %1"
 
 #: server/activities/learn_additions/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
@@ -692,6 +749,8 @@ msgid ""
 "\"Additions\" must contain a list of additions which results are between 0 "
 "and 9."
 msgstr ""
+"Οι \"Προσθέσεις\" πρέπει να περιέχουν μια λίστα προσθέσεων των οποίων τα "
+"αποτελέσματα είναι μεταξύ 0 και 9."
 
 #: server/activities/learn_additions/ActivityEditor.qml:18
 #: server/activities/learn_subtractions/ActivityEditor.qml:18
@@ -699,165 +758,169 @@ msgctxt "ActivityEditor|"
 msgid ""
 "\"Number of circles\" can not be smaller than the largest result to find."
 msgstr ""
+"Ο \"Αριθμός κύκλων\" δεν μπορεί να είναι μικρότερος από το μεγαλύτερο "
+"αποτέλεσμα προς εύρεση."
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:28
 msgctxt "LearnDecimalsEditor|"
 msgid "Shuffle"
-msgstr ""
+msgstr "Τυχαία σειρά"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:29
 msgctxt "LearnDecimalsEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Υποεπίπεδα"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:39
 msgctxt "LearnDecimalsEditor|"
 msgid "Fixed Number"
-msgstr ""
+msgstr "Σταθερός Αριθμός"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:40
 msgctxt "LearnDecimalsEditor|"
 msgid "Minimum Value"
-msgstr ""
+msgstr "Ελάχιστη Τιμή"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:41
 msgctxt "LearnDecimalsEditor|"
 msgid "Maximum Value"
-msgstr ""
+msgstr "Μέγιστη Τιμή"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:140
 msgctxt "LearnDecimalsEditor|"
 msgid "Dataset is empty."
-msgstr ""
+msgstr "Το σύνολο δεδομένων είναι κενό."
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:150
 #, qt-format
 msgctxt "LearnDecimalsEditor|"
 msgid "Level %1 must not be empty."
-msgstr ""
+msgstr "Το Επίπεδο %1 δεν πρέπει να είναι κενό."
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:154
 #, qt-format
 msgctxt "LearnDecimalsEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Τα παρακάτω σφάλματα πρέπει να διορθωθούν:<ul>%1</ul>"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:162
 msgctxt "LearnDecimalsEditor|"
 msgid "Random"
-msgstr ""
+msgstr "Τυχαία"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:163
 msgctxt "LearnDecimalsEditor|"
 msgid "Fixed"
-msgstr ""
+msgstr "Σταθερό"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:168
 msgctxt "LearnDecimalsEditor|"
 msgid "Mode"
-msgstr ""
+msgstr "Λειτουργία"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:29
 msgctxt "DecimalAdditionEditor|"
 msgid "Shuffle"
-msgstr ""
+msgstr "Τυχαία σειρά"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:30
 msgctxt "DecimalAdditionEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Υποεπίπεδα"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:41
 msgctxt "DecimalAdditionEditor|"
 msgid "First Number"
-msgstr ""
+msgstr "Πρώτος Αριθμός"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:42
 msgctxt "DecimalAdditionEditor|"
 msgid "Second Number"
-msgstr ""
+msgstr "Δεύτερος Αριθμός"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:43
 msgctxt "DecimalAdditionEditor|"
 msgid "Minimum Value"
-msgstr ""
+msgstr "Ελάχιστη Τιμή"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:44
 msgctxt "DecimalAdditionEditor|"
 msgid "Maximum Value"
-msgstr ""
+msgstr "Μέγιστη Τιμή"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:182
 msgctxt "DecimalAdditionEditor|"
 msgid "Dataset is empty."
-msgstr ""
+msgstr "Το σύνολο δεδομένων είναι κενό."
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:192
 #, qt-format
 msgctxt "DecimalAdditionEditor|"
 msgid "Level %1 must not be empty."
-msgstr ""
+msgstr "Το Επίπεδο %1 δεν πρέπει να είναι κενό."
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:196
 #, qt-format
 msgctxt "DecimalAdditionEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Τα παρακάτω σφάλματα πρέπει να διορθωθούν:<ul>%1</ul>"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:204
 msgctxt "DecimalAdditionEditor|"
 msgid "Random"
-msgstr ""
+msgstr "Τυχαία"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:205
 msgctxt "DecimalAdditionEditor|"
 msgid "Fixed"
-msgstr ""
+msgstr "Σταθερό"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:210
 msgctxt "DecimalAdditionEditor|"
 msgid "Mode"
-msgstr ""
+msgstr "Λειτουργία"
 
 #: server/activities/learn_digits/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
 msgid "\"Numbers\" must contain a list of numbers between 0 and 9."
-msgstr ""
+msgstr "Οι \"Αριθμοί\" πρέπει να περιέχουν μια λίστα αριθμών μεταξύ 0 και 9."
 
 #: server/activities/learn_digits/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Number of circles\" can not be smaller than the largest number to find."
 msgstr ""
+"Ο \"Αριθμός κύκλων\" δεν μπορεί να είναι μικρότερος από τον μεγαλύτερο "
+"αριθμό προς εύρεση."
 
 #. %1 is an operation, %2 the result. Example: "2 x 5 = 10"
 #: server/activities/learn_digits/LearnDigitsDataDisplay.qml:24
 #, qt-format
 msgctxt "LearnDigitsDataDisplay|"
 msgid "%1 = %2"
-msgstr ""
+msgstr "%1 = %2"
 
 #. %1 is the answer. Example: "Answer: 10"
 #: server/activities/learn_digits/LearnDigitsDataDisplay.qml:27
 #, qt-format
 msgctxt "LearnDigitsDataDisplay|"
 msgid "Answer: %1"
-msgstr ""
+msgstr "Απάντηση: %1"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:32
 msgctxt "LearnDigitsEditor|"
 msgid "Number of circles"
-msgstr ""
+msgstr "Αριθμός κύκλων"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:33
 msgctxt "LearnDigitsEditor|"
 msgid "Random order"
-msgstr ""
+msgstr "Τυχαία σειρά"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:99
 msgctxt "LearnDigitsEditor|"
 msgid "Dataset is empty."
-msgstr ""
+msgstr "Το σύνολο δεδομένων είναι κενό."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:101
 msgctxt "LearnDigitsEditor|"
@@ -865,6 +928,8 @@ msgid ""
 "\"Numbers\" must only contain integer numbers between 0 and 9, and must not "
 "be empty."
 msgstr ""
+"Οι \"Αριθμοί\" πρέπει να περιέχουν μόνο ακέραιους αριθμούς μεταξύ 0 και 9, "
+"και δεν πρέπει να είναι κενό."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:103
 msgctxt "LearnDigitsEditor|"
@@ -872,6 +937,9 @@ msgid ""
 "\"Additions\" must only contain additions which results are integer numbers "
 "between 0 and 9, and must not be empty."
 msgstr ""
+"Οι \"Προσθέσεις\" πρέπει να περιέχουν μόνο προσθέσεις των οποίων τα "
+"αποτελέσματα είναι ακέραιοι αριθμοί μεταξύ 0 και 9, και δεν πρέπει να είναι "
+"κενό."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:105
 msgctxt "LearnDigitsEditor|"
@@ -879,36 +947,39 @@ msgid ""
 "\"Subtractions\" must only contain subtractions which results are integer "
 "numbers between 0 and 9, and must not be empty."
 msgstr ""
+"Οι \"Αφαιρέσεις\" πρέπει να περιέχουν μόνο αφαιρέσεις των οποίων τα "
+"αποτελέσματα είναι ακέραιοι αριθμοί μεταξύ 0 και 9, και δεν πρέπει να είναι "
+"κενό."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:161
 msgctxt "LearnDigitsEditor|"
 msgid "Numbers"
-msgstr ""
+msgstr "Αριθμοί"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:163
 msgctxt "LearnDigitsEditor|"
 msgid "Additions"
-msgstr ""
+msgstr "Προσθέσεις"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:165
 msgctxt "LearnDigitsEditor|"
 msgid "Subtractions"
-msgstr ""
+msgstr "Αφαιρέσεις"
 
 #: server/activities/learn_quantities/ActivityEditor.qml:24
 msgctxt "ActivityEditor|"
 msgid "Fixed Number"
-msgstr ""
+msgstr "Σταθερός Αριθμός"
 
 #: server/activities/learn_quantities/ActivityEditor.qml:25
 msgctxt "ActivityEditor|"
 msgid "Minimum Value"
-msgstr ""
+msgstr "Ελάχιστη Τιμή"
 
 #: server/activities/learn_quantities/ActivityEditor.qml:26
 msgctxt "ActivityEditor|"
 msgid "Maximum Value"
-msgstr ""
+msgstr "Μέγιστη Τιμή"
 
 #: server/activities/learn_subtractions/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
@@ -916,35 +987,37 @@ msgid ""
 "\"Subtractions\" must contain a list of subtractions which results are "
 "between 0 and 9."
 msgstr ""
+"Οι \"Αφαιρέσεις\" πρέπει να περιέχουν μια λίστα αφαιρέσεων των οποίων τα "
+"αποτελέσματα είναι μεταξύ 0 και 9."
 
 #: server/activities/LineReport.qml:65
 msgctxt "LineReport|"
 msgid "Back"
-msgstr ""
+msgstr "Πίσω"
 
 #: server/activities/LineReport.qml:71
 msgctxt "LineReport|"
 msgid "Refresh"
-msgstr ""
+msgstr "Ανανέωση"
 
 #: server/activities/LineReport.qml:77
 #, qt-format
 msgctxt "LineReport|"
 msgid "Lines: %1"
-msgstr ""
+msgstr "Γραμμές: %1"
 
 #: server/activities/LineReport.qml:227
 #, qt-format
 msgctxt "LineReport|"
 msgid "Level: <b>%1</b>"
-msgstr ""
+msgstr "Επίπεδο: <b>%1</b>"
 
 #. Result duration in seconds. Example: "Duration: 25s"
 #: server/activities/LineReport.qml:243 server/activities/LineReport.qml:253
 #, qt-format
 msgctxt "LineReport|"
 msgid "Duration: %1s"
-msgstr ""
+msgstr "Διάρκεια: %1s"
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
@@ -952,6 +1025,9 @@ msgid ""
 "In \"Single answer\" mode, users can select only one answer. In \"Multiple "
 "answers\" mode, they can select multiple answers."
 msgstr ""
+"Στη λειτουργία \"Μία απάντηση\", οι χρήστες μπορούν να επιλέξουν μόνο μία "
+"απάντηση. Στη λειτουργία \"Πολλές απαντήσεις\", μπορούν να επιλέξουν "
+"πολλαπλές απαντήσεις."
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
@@ -959,6 +1035,8 @@ msgid ""
 "All entries in the \"Correct answers\" list must also be present in the "
 "\"Answers\" list."
 msgstr ""
+"Όλες οι καταχωρήσεις στη λίστα \"Σωστές απαντήσεις\" πρέπει επίσης να "
+"υπάρχουν στη λίστα \"Απαντήσεις\"."
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:19
 msgctxt "ActivityEditor|"
@@ -967,95 +1045,103 @@ msgid ""
 "displayed after users validate their answer. You can leave those empty if "
 "you want."
 msgstr ""
+"Το \"Κείμενο σωστής απάντησης\" και το \"Κείμενο λάθος απάντησης\" είναι "
+"προαιρετικά μηνύματα που εμφανίζονται αφού οι χρήστες επικυρώσουν την "
+"απάντησή τους. Μπορείτε να τα αφήσετε κενά αν θέλετε."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:27
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Question:"
-msgstr ""
+msgstr "Ερώτηση:"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:33
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Answer:"
-msgstr ""
+msgstr "Απάντηση:"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:39
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Expected:"
-msgstr ""
+msgstr "Αναμενόμενη:"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:45
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Proposed:"
-msgstr ""
+msgstr "Προτεινόμενη:"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:29
 msgctxt "MultipleChoiceEditor|"
 msgid "Shuffle"
-msgstr ""
+msgstr "Ανάδευση"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:30
 msgctxt "MultipleChoiceEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Υποεπίπεδα"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:36
 msgctxt "MultipleChoiceEditor|"
 msgid "Shuffle answers"
-msgstr ""
+msgstr "Ανάδευση απαντήσεων"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:37
 msgctxt "MultipleChoiceEditor|"
 msgid "Question"
-msgstr ""
+msgstr "Ερώτηση"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:38
 msgctxt "MultipleChoiceEditor|"
 msgid "Answers"
-msgstr ""
+msgstr "Απαντήσεις"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:39
 msgctxt "MultipleChoiceEditor|"
 msgid "Correct answers"
-msgstr ""
+msgstr "Σωστές απαντήσεις"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:40
 msgctxt "MultipleChoiceEditor|"
 msgid "Correct answer text"
-msgstr ""
+msgstr "Κείμενο σωστής απάντησης"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:41
 msgctxt "MultipleChoiceEditor|"
 msgid "Wrong answer text"
-msgstr ""
+msgstr "Κείμενο λάθος απάντησης"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:121
 msgctxt "MultipleChoiceEditor|"
 msgid "Dataset is empty."
-msgstr ""
+msgstr "Το σύνολο δεδομένων είναι κενό."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:131
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "Level %1 must not be empty."
-msgstr ""
+msgstr "Το Επίπεδο %1 δεν πρέπει να είναι κενό."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:138
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Question\" in Sublevel %1 of Level %2 must not be empty."
 msgstr ""
+"Η \"Ερώτηση\" στο Υποεπίπεδο %1 του Επιπέδου %2 δεν πρέπει να είναι κενή."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:143
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Answers\" in Sublevel %1 of Level %2 must not be empty."
 msgstr ""
+"Οι \"Απαντήσεις\" στο Υποεπίπεδο %1 του Επιπέδου %2 δεν πρέπει να είναι "
+"κενές."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:148
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Correct answers\" in Sublevel %1 of Level %2 must not be empty."
 msgstr ""
+"Οι \"Σωστές απαντήσεις\" στο Υποεπίπεδο %1 του Επιπέδου %2 δεν πρέπει να "
+"είναι κενές."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:155
 #, qt-format
@@ -1064,127 +1150,129 @@ msgid ""
 "In Sublevel %1 of Level %2, the correct answer \"%3\" is not in the \"Answers"
 "\" list."
 msgstr ""
+"Στο Υποεπίπεδο %1 του Επιπέδου %2, η σωστή απάντηση \"%3\" δεν βρίσκεται στη "
+"λίστα \"Απαντήσεις\"."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:163
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Πρέπει να διορθωθούν τα ακόλουθα σφάλματα:<ul>%1</ul>"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:171
 msgctxt "MultipleChoiceEditor|"
 msgid "Single answer"
-msgstr ""
+msgstr "Μία απάντηση"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:172
 msgctxt "MultipleChoiceEditor|"
 msgid "Multiple answers"
-msgstr ""
+msgstr "Πολλές απαντήσεις"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:177
 msgctxt "MultipleChoiceEditor|"
 msgid "Mode"
-msgstr ""
+msgstr "Λειτουργία"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:29
 msgctxt "VerticalEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Υποεπίπεδα"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:31
 msgctxt "VerticalEditor|"
 msgid "Number of digits"
-msgstr ""
+msgstr "Αριθμός ψηφίων"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:33
 msgctxt "VerticalEditor|"
 msgid "Number of lines"
-msgstr ""
+msgstr "Αριθμός γραμμών"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:34
 msgctxt "VerticalEditor|"
 msgid "With carry"
-msgstr ""
+msgstr "Με κρατούμενο"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:35
 msgctxt "VerticalEditor|"
 msgid "Already laid"
-msgstr ""
+msgstr "Ήδη τοποθετημένο"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:36
 msgctxt "VerticalEditor|"
 msgid "Write your operation"
-msgstr ""
+msgstr "Γράψτε την πράξη σας"
 
 #: server/components/CalendarPane.qml:77
 msgctxt "CalendarPane|"
 msgid "Calendar"
-msgstr ""
+msgstr "Ημερολόγιο"
 
 #: server/components/CheckUserEditDelegate.qml:34
 msgctxt "CheckUserEditDelegate|"
 msgid "Edit pupil"
-msgstr ""
+msgstr "Επεξεργασία μαθητή"
 
 #: server/components/EditorBox.qml:84
 msgctxt "EditorBox|"
 msgid "Add"
-msgstr ""
+msgstr "Προσθήκη"
 
 #: server/components/EditorBox.qml:95
 msgctxt "EditorBox|"
 msgid "Remove"
-msgstr ""
+msgstr "Αφαίρεση"
 
 #: server/components/EditorBox.qml:107
 msgctxt "EditorBox|"
 msgid "Move up"
-msgstr ""
+msgstr "Μετακίνηση πάνω"
 
 #: server/components/EditorBox.qml:118
 msgctxt "EditorBox|"
 msgid "Move down"
-msgstr ""
+msgstr "Μετακίνηση κάτω"
 
 #: server/components/FieldEdit.qml:318
 msgctxt "FieldEdit|"
 msgid "Add an entry"
-msgstr ""
+msgstr "Προσθήκη καταχώρησης"
 
 #: server/components/FieldEdit.qml:330
 msgctxt "FieldEdit|"
 msgid "Remove last entry"
-msgstr ""
+msgstr "Αφαίρεση τελευταίας καταχώρησης"
 
 #: server/components/FoldDown.qml:138
 msgctxt "FoldDown|"
 msgid "Filter list"
-msgstr ""
+msgstr "Φιλτράρισμα λίστας"
 
 #: server/components/OkCancelButtons.qml:19
 msgctxt "OkCancelButtons|"
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: server/components/OkCancelButtons.qml:20
 msgctxt "OkCancelButtons|"
 msgid "Cancel"
-msgstr ""
+msgstr "Ακύρωση"
 
 #: server/components/RadioGroupEditDelegate.qml:60
 msgctxt "RadioGroupEditDelegate|"
 msgid "Edit group"
-msgstr ""
+msgstr "Επεξεργασία ομάδας"
 
 #: server/components/RadioGroupEditDelegate.qml:72
 msgctxt "RadioGroupEditDelegate|"
 msgid "Delete group"
-msgstr ""
+msgstr "Διαγραφή ομάδας"
 
 #: server/components/ServerLanguageList.qml:32
 msgctxt "ServerLanguageList|"
 msgid "Your system default"
-msgstr ""
+msgstr "Προεπιλογή συστήματος"
 
 #: server/controllers/database-controller.cpp:83
 #: server/controllers/database-controller.cpp:89
@@ -1194,258 +1282,262 @@ msgid ""
 "File %1\n"
 "Error SQL: %2"
 msgstr ""
+"Αρχείο %1\n"
+"Σφάλμα SQL: %2"
 
 #: server/controllers/database-controller.cpp:125
 msgctxt "controllers::DatabaseController|"
 msgid "Table teacher_ could not be updated to current version."
-msgstr ""
+msgstr "Ο πίνακας teacher_ δεν μπόρεσε να ενημερωθεί στην τρέχουσα έκδοση."
 
 #: server/controllers/database-controller.cpp:351
 msgctxt "controllers::DatabaseController|"
 msgid "Error creating teacher."
-msgstr ""
+msgstr "Σφάλμα κατά τη δημιουργία του teacher."
 
 #: server/controllers/database-controller.cpp:373
 msgctxt "controllers::DatabaseController|"
 msgid "Wrong password."
-msgstr ""
+msgstr "Λάθος κωδικός πρόσβασης."
 
 #: server/controllers/database-controller.cpp:417
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> already exists."
-msgstr ""
+msgstr "Η ομάδα <b>%1</b> υπάρχει ήδη."
 
 #: server/controllers/database-controller.cpp:438
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be updated to <b>%2</b>."
-msgstr ""
+msgstr "Η ομάδα <b>%1</b> δεν μπόρεσε να ενημερωθεί σε <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:456
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_."
-msgstr ""
+msgstr "Η ομάδα <b>%1</b> δεν μπόρεσε να διαγραφεί από τον πίνακα group_."
 
 #: server/controllers/database-controller.cpp:459
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_user_."
-msgstr ""
+msgstr "Η ομάδα <b>%1</b> δεν μπόρεσε να διαγραφεί από τον πίνακα group_user_."
 
 #: server/controllers/database-controller.cpp:483
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Pupil login <b>%1</b> already exists or password is empty."
 msgstr ""
+"Η σύνδεση μαθητή <b>%1</b> υπάρχει ήδη ή ο κωδικός πρόσβασης είναι κενός."
 
 #: server/controllers/database-controller.cpp:502
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "<b>%1</b> could not be updated to <b>%2</b>."
-msgstr ""
+msgstr "Το <b>%1</b> δεν μπόρεσε να ενημερωθεί σε <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:522
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table user_."
-msgstr ""
+msgstr "Ο χρήστης <b>%1</b> δεν μπόρεσε να διαγραφεί από τον πίνακα user_."
 
 #: server/controllers/database-controller.cpp:527
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table result_."
-msgstr ""
+msgstr "Ο χρήστης <b>%1</b> δεν μπόρεσε να διαγραφεί από τον πίνακα result_."
 
 #: server/controllers/database-controller.cpp:542
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table group_user_."
 msgstr ""
+"Ο χρήστης <b>%1</b> δεν μπόρεσε να διαγραφεί από τον πίνακα group_user_."
 
 #: server/controllers/database-controller.cpp:557
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> already exists in group <b>%2</b>."
-msgstr ""
+msgstr "Ο χρήστης <b>%1</b> υπάρχει ήδη στην ομάδα <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:572
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> group <b>%2</b> couldn't be deleted."
-msgstr ""
+msgstr "Η ομάδα χρήστη <b>%1</b> <b>%2</b> δεν μπόρεσε να διαγραφεί."
 
 #: server/controllers/database-controller.cpp:607
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Result could not be added for user <b>%1</b>"
-msgstr ""
+msgstr "Το αποτέλεσμα δεν μπόρεσε να προστεθεί για τον χρήστη <b>%1</b>"
 
 #: server/controllers/database-controller.cpp:619
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Error inserting activity: %1"
-msgstr ""
+msgstr "Σφάλμα κατά την εισαγωγή δραστηριότητας: %1"
 
 #: server/controllers/database-controller.cpp:665
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> already exists."
-msgstr ""
+msgstr "Το σύνολο δεδομένων <b>%1</b> υπάρχει ήδη."
 
 #: server/controllers/database-controller.cpp:682
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> could not be updated to <b>%2</b>."
-msgstr ""
+msgstr "Το σύνολο δεδομένων <b>%1</b> δεν μπόρεσε να ενημερωθεί σε <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:697
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> couldn't be deleted."
-msgstr ""
+msgstr "Το σύνολο δεδομένων <b>%1</b> δεν μπόρεσε να διαγραφεί."
 
 #: server/controllers/network-controller.cpp:46
 #, qt-format
 msgctxt "controllers::NetworkController|"
 msgid "Unable to start the server: %1."
-msgstr ""
+msgstr "Αδύνατη η εκκίνηση του διακομιστή: %1."
 
 #: server/dialogs/CreateDbDialog.qml:19
 msgctxt "CreateDbDialog|"
 msgid "You are about to create a new GCompris database."
-msgstr ""
+msgstr "Πρόκειται να δημιουργήσετε μια νέα βάση δεδομένων GCompris."
 
 #: server/dialogs/CreateDbDialog.qml:39
 msgctxt "CreateDbDialog|"
 msgid "Database file"
-msgstr ""
+msgstr "Αρχείο βάσης δεδομένων"
 
 #: server/dialogs/CreateDbDialog.qml:41
 msgctxt "CreateDbDialog|"
 msgid "created in:"
-msgstr ""
+msgstr "δημιουργήθηκε σε:"
 
 #: server/dialogs/CreateDbDialog.qml:65
 msgctxt "CreateDbDialog|"
 msgid "New database creation"
-msgstr ""
+msgstr "Δημιουργία νέας βάσης δεδομένων"
 
 #: server/dialogs/CreateDbDialog.qml:93
 msgctxt "CreateDbDialog|"
 msgid "Teacher login"
-msgstr ""
+msgstr "Σύνδεση καθηγητή"
 
 #: server/dialogs/CreateDbDialog.qml:113
 msgctxt "CreateDbDialog|"
 msgid "Password"
-msgstr ""
+msgstr "Κωδικός πρόσβασης"
 
 #: server/dialogs/CreateDbDialog.qml:129
 msgctxt "CreateDbDialog|"
 msgid "Encrypted database (enabled by default)"
-msgstr ""
+msgstr "Κρυπτογραφημένη βάση δεδομένων (ενεργοποιημένη από προεπιλογή)"
 
 #: server/dialogs/DatasetEditorDialog.qml:52
 msgctxt "DatasetEditorDialog|"
 msgid "Create dataset"
-msgstr ""
+msgstr "Δημιουργία συνόλου δεδομένων"
 
 #: server/dialogs/DatasetEditorDialog.qml:62
 msgctxt "DatasetEditorDialog|"
 msgid "Update dataset"
-msgstr ""
+msgstr "Ενημέρωση συνόλου δεδομένων"
 
 #: server/dialogs/DatasetEditorDialog.qml:76
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name is empty"
-msgstr ""
+msgstr "Το όνομα του συνόλου δεδομένων είναι κενό"
 
 #: server/dialogs/DatasetEditorDialog.qml:83
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty should be between 1 and 6"
-msgstr ""
+msgstr "Η δυσκολία πρέπει να είναι μεταξύ 1 και 6"
 
 #: server/dialogs/DatasetEditorDialog.qml:236
 msgctxt "DatasetEditorDialog|"
 msgid "INVALID DATASET"
-msgstr ""
+msgstr "ΜΗ ΕΓΚΥΡΟ ΣΥΝΟΛΟ ΔΕΔΟΜΕΝΩΝ"
 
 #: server/dialogs/DatasetEditorDialog.qml:339
 msgctxt "DatasetEditorDialog|"
 msgid "Editor"
-msgstr ""
+msgstr "Επεξεργαστής"
 
 #: server/dialogs/DatasetEditorDialog.qml:342
 msgctxt "DatasetEditorDialog|"
 msgid "Raw JSON"
-msgstr ""
+msgstr "Ακατέργαστο JSON"
 
 #: server/dialogs/DatasetEditorDialog.qml:372
 msgctxt "DatasetEditorDialog|"
 msgid "Activity name"
-msgstr ""
+msgstr "Όνομα δραστηριότητας"
 
 #: server/dialogs/DatasetEditorDialog.qml:386
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name"
-msgstr ""
+msgstr "Όνομα συνόλου δεδομένων"
 
 #: server/dialogs/DatasetEditorDialog.qml:400
 msgctxt "DatasetEditorDialog|"
 msgid "Goal"
-msgstr ""
+msgstr "Στόχος"
 
 #: server/dialogs/DatasetEditorDialog.qml:414
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty"
-msgstr ""
+msgstr "Δυσκολία"
 
 #: server/dialogs/DatasetEditorDialog.qml:512
 msgctxt "DatasetEditorDialog|"
 msgid "Instructions"
-msgstr ""
+msgstr "Οδηγίες"
 
 #: server/dialogs/DatasetEditorDialog.qml:518
 msgctxt "DatasetEditorDialog|"
 msgid "No specific instructions for this editor."
-msgstr ""
+msgstr "Δεν υπάρχουν συγκεκριμένες οδηγίες για αυτόν τον επεξεργαστή."
 
 #: server/dialogs/ErrorDialog.qml:46
 msgctxt "ErrorDialog|"
 msgid "Information"
-msgstr ""
+msgstr "Πληροφορίες"
 
 #: server/dialogs/ExportPupilsDialog.qml:79
 msgctxt "ExportPupilsDialog|"
 msgid "Export pupils to CSV file"
-msgstr ""
+msgstr "Εξαγωγή μαθητών σε αρχείο CSV"
 
 #: server/dialogs/ExportPupilsDialog.qml:121
 msgctxt "ExportPupilsDialog|"
 msgid "Save file"
-msgstr ""
+msgstr "Αποθήκευση αρχείου"
 
 #: server/dialogs/ExportPupilsDialog.qml:131
 msgctxt "ExportPupilsDialog|"
 msgid "Pupils"
-msgstr ""
+msgstr "Μαθητές"
 
 #: server/dialogs/GroupDialog.qml:114
 msgctxt "GroupDialog|"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 #: server/dialogs/GroupDialog.qml:128
 msgctxt "GroupDialog|"
 msgid "Description"
-msgstr ""
+msgstr "Περιγραφή"
 
 #: server/dialogs/ImportPupilsDialog.qml:70
 msgctxt "ImportPupilsDialog|"
 msgid "Import pupils from CSV file"
-msgstr ""
+msgstr "Εισαγωγή μαθητών από αρχείο CSV"
 
 #: server/dialogs/ImportPupilsDialog.qml:88
 msgctxt "ImportPupilsDialog|"
@@ -1455,73 +1547,83 @@ msgid ""
 "Patrick Dummy;group 1;1234\n"
 "Patricia Brown;group 1,group 2;4321\n"
 msgstr ""
+"Μορφή: όνομα;ομάδες;κωδικός πρόσβασης\n"
+"Παράδειγμα:\n"
+"Patrick Dummy;ομάδα 1;1234\n"
+"Patricia Brown;ομάδα 1,ομάδα 2;4321\n"
 
 #: server/dialogs/ImportPupilsDialog.qml:94
 msgctxt "ImportPupilsDialog|"
 msgid "Add CSV file"
-msgstr ""
+msgstr "Προσθήκη αρχείου CSV"
 
 #: server/dialogs/ImportPupilsDialog.qml:141
 msgctxt "ImportPupilsDialog|"
 msgid "Import pupils"
-msgstr ""
+msgstr "Εισαγωγή μαθητών"
 
 #: server/dialogs/PupilDialog.qml:59
 msgctxt "PupilDialog|"
 msgid "Pupil's name is empty"
-msgstr ""
+msgstr "Το όνομα του μαθητή είναι κενό"
 
 #: server/dialogs/PupilDialog.qml:153
 msgctxt "PupilDialog|"
 msgid "Pupil's name"
-msgstr ""
+msgstr "Όνομα μαθητή"
 
 #: server/dialogs/PupilDialog.qml:166
 msgctxt "PupilDialog|"
 msgid "Password"
-msgstr ""
+msgstr "Κωδικός πρόσβασης"
 
 #: server/dialogs/PupilDialog.qml:217
 msgctxt "PupilDialog|"
 msgid "Password images:"
-msgstr ""
+msgstr "Εικόνες κωδικού πρόσβασης:"
 
 #: server/dialogs/PupilDialog.qml:252
 msgctxt "PupilDialog|"
 msgid "Groups"
-msgstr ""
+msgstr "Ομάδες"
 
 #: server/dialogs/PupilsToGroupsDialog.qml:87
 msgctxt "PupilsToGroupsDialog|"
 msgid "Select the groups to add these pupils to:"
-msgstr ""
+msgstr "Επιλέξτε τις ομάδες στις οποίες θα προστεθούν αυτοί οι μαθητές:"
 
 #: server/dialogs/PupilsToGroupsDialog.qml:88
 msgctxt "PupilsToGroupsDialog|"
 msgid "Select the groups from which to remove these pupils:"
-msgstr ""
+msgstr "Επιλέξτε τις ομάδες από τις οποίες θα αφαιρεθούν αυτοί οι μαθητές:"
 
 #: server/dialogs/RemoveDatasetDialog.qml:70
 msgctxt "RemoveDatasetDialog|"
 msgid ""
 "Are you sure you want to delete the following dataset from the database?"
 msgstr ""
+"Είστε σίγουροι ότι θέλετε να διαγράψετε το ακόλουθο σύνολο δεδομένων από τη "
+"βάση δεδομένων;"
 
 #: server/dialogs/RemovePupilsDialog.qml:76
 msgctxt "RemovePupilsDialog|"
 msgid ""
 "Are you sure you want to remove the following pupils from the database ?"
 msgstr ""
+"Είστε σίγουροι ότι θέλετε να αφαιρέσετε τους ακόλουθους μαθητές από τη βάση "
+"δεδομένων;"
 
 #: server/dialogs/SendDatasetDialog.qml:93
 msgctxt "SendDatasetDialog|"
 msgid "Do you want to send the dataset to selected pupils?"
-msgstr ""
+msgstr "Θέλετε να στείλετε το σύνολο δεδομένων στους επιλεγμένους μαθητές;"
 
 #: server/dialogs/SendDatasetDialog.qml:94
 msgctxt "SendDatasetDialog|"
 msgid "Are you sure you want to remove the dataset from selected pupils?"
 msgstr ""
+"Είστε σίγουροι ότι θέλετε να αφαιρέσετε το σύνολο δεδομένων από τους "
+"επιλεγμένους μαθητές;"
 
 #: server/dialogs/SendDatasetDialog.qml:95
 msgctxt "SendDatasetDialog|"
@@ -1529,709 +1631,711 @@ msgid ""
 "Are you sure you want to remove all the existing datasets from selected "
 "pupils?"
 msgstr ""
+"Είστε σίγουροι ότι θέλετε να αφαιρέσετε όλα τα υπάρχοντα σύνολα δεδομένων "
+"από τους επιλεγμένους μαθητές;"
 
 #: server/dialogs/SendDatasetDialog.qml:129
 msgctxt "SendDatasetDialog|"
 msgid "Pupils"
-msgstr ""
+msgstr "Μαθητές"
 
 #: server/dialogs/SqlLineDialog.qml:19
 msgctxt "SqlLineDialog|"
 msgid "Line details"
-msgstr ""
+msgstr "Λεπτομέρειες γραμμής"
 
 #: server/dialogs/SqlLineDialog.qml:151
 msgctxt "SqlLineDialog|"
 msgid "<"
-msgstr ""
+msgstr "<"
 
 #: server/dialogs/SqlLineDialog.qml:175
 msgctxt "SqlLineDialog|"
 msgid ">"
-msgstr ""
+msgstr ">"
 
 #: server/dialogs/SqlLineDialog.qml:191
 msgctxt "SqlLineDialog|"
 msgid "Close"
-msgstr ""
+msgstr "Κλείσιμο"
 
 #: server/Main.qml:48
 msgctxt "Main|"
 msgid "GCompris Teachers Tool"
-msgstr ""
+msgstr "Εργαλείο Εκπαιδευτικών GCompris"
 
 #: server/panels/NavigationPanel.qml:70
 msgctxt "NavigationPanel|"
 msgid "Login"
-msgstr ""
+msgstr "Σύνδεση"
 
 #: server/panels/NavigationPanel.qml:78
 msgctxt "NavigationPanel|"
 msgid "Pupils and Groups"
-msgstr ""
+msgstr "Μαθητές και Ομάδες"
 
 #: server/panels/NavigationPanel.qml:86
 msgctxt "NavigationPanel|"
 msgid "Connect devices"
-msgstr ""
+msgstr "Σύνδεση συσκευών"
 
 #: server/panels/NavigationPanel.qml:94
 msgctxt "NavigationPanel|"
 msgid "Activities"
-msgstr ""
+msgstr "Δραστηριότητες"
 
 #: server/panels/NavigationPanel.qml:102
 msgctxt "NavigationPanel|"
 msgid "Datasets"
-msgstr ""
+msgstr "Σύνολα δεδομένων"
 
 #: server/panels/NavigationPanel.qml:110
 msgctxt "NavigationPanel|"
 msgid "Charts"
-msgstr ""
+msgstr "Γραφήματα"
 
 #: server/panels/NavigationPanel.qml:118
 msgctxt "NavigationPanel|"
 msgid "Settings"
-msgstr ""
+msgstr "Ρυθμίσεις"
 
 #: server/panels/NavigationPanel.qml:126
 msgctxt "NavigationPanel|"
 msgid "Development (WIP)"
-msgstr ""
+msgstr "Ανάπτυξη (Σε εξέλιξη)"
 
 #: server/panels/SelectorPanel.qml:51
 msgctxt "SelectorPanel|"
 msgid "Groups"
-msgstr ""
+msgstr "Ομάδες"
 
 #: server/panels/SelectorPanel.qml:71
 msgctxt "SelectorPanel|"
 msgid "Pupils"
-msgstr ""
+msgstr "Μαθητές"
 
 #: server/panels/SelectorPanel.qml:87
 msgctxt "SelectorPanel|"
 msgid "Activities"
-msgstr ""
+msgstr "Δραστηριότητες"
 
 #: server/singletons/Master.qml:32
 msgctxt "Master|"
 msgid "User ID"
-msgstr ""
+msgstr "Αναγνωριστικό χρήστη"
 
 #: server/singletons/Master.qml:33
 msgctxt "Master|"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 #: server/singletons/Master.qml:34
 msgctxt "Master|"
 msgid "Names"
-msgstr ""
+msgstr "Ονόματα"
 
 #: server/singletons/Master.qml:35
 msgctxt "Master|"
 msgid "Password"
-msgstr ""
+msgstr "Κωδικός πρόσβασης"
 
 #: server/singletons/Master.qml:36
 msgctxt "Master|"
 msgid "Users IDs"
-msgstr ""
+msgstr "Αναγνωριστικά χρηστών"
 
 #: server/singletons/Master.qml:37
 msgctxt "Master|"
 msgid "Activity Id"
-msgstr ""
+msgstr "Αναγνωριστικό δραστηριότητας"
 
 #: server/singletons/Master.qml:38
 msgctxt "Master|"
 msgid "Activity"
-msgstr ""
+msgstr "Δραστηριότητα"
 
 #: server/singletons/Master.qml:39
 msgctxt "Master|"
 msgid "Group"
-msgstr ""
+msgstr "Ομάδα"
 
 #: server/singletons/Master.qml:40
 msgctxt "Master|"
 msgid "Description"
-msgstr ""
+msgstr "Περιγραφή"
 
 #: server/singletons/Master.qml:41
 msgctxt "Master|"
 msgid "Groups"
-msgstr ""
+msgstr "Ομάδες"
 
 #: server/singletons/Master.qml:42
 msgctxt "Master|"
 msgid "Groups IDs"
-msgstr ""
+msgstr "Αναγνωριστικά ομάδων"
 
 #: server/singletons/Master.qml:43 server/singletons/Master.qml:47
 msgctxt "Master|"
 msgid "Date"
-msgstr ""
+msgstr "Ημερομηνία"
 
 #: server/singletons/Master.qml:44 server/singletons/Master.qml:49
 msgctxt "Master|"
 msgid "Success"
-msgstr ""
+msgstr "Επιτυχία"
 
 #: server/singletons/Master.qml:45
 msgctxt "Master|"
 msgid "Duration"
-msgstr ""
+msgstr "Διάρκεια"
 
 #: server/singletons/Master.qml:46
 msgctxt "Master|"
 msgid "Data"
-msgstr ""
+msgstr "Δεδομένα"
 
 #: server/singletons/Master.qml:48
 msgctxt "Master|"
 msgid "Count"
-msgstr ""
+msgstr "Πλήθος"
 
 #: server/singletons/Master.qml:50
 msgctxt "Master|"
 msgid "Failed"
-msgstr ""
+msgstr "Αποτυχία"
 
 #: server/singletons/Master.qml:51
 msgctxt "Master|"
 msgid "Success ratio"
-msgstr ""
+msgstr "Ποσοστό επιτυχίας"
 
 #: server/views/ChartsView.qml:97
 msgctxt "ChartsView|"
 msgid "Activities"
-msgstr ""
+msgstr "Δραστηριότητες"
 
 #: server/views/ChartsView.qml:101
 msgctxt "ChartsView|"
 msgid "Pupils"
-msgstr ""
+msgstr "Μαθητές"
 
 #: server/views/datas/AllData.qml:69
 msgctxt "AllData|"
 msgid "Available requests"
-msgstr ""
+msgstr "Διαθέσιμα αιτήματα"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "All users activities"
-msgstr ""
+msgstr "Δραστηριότητες όλων των χρηστών"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "Pupils activities"
-msgstr ""
+msgstr "Δραστηριότητες μαθητών"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "All groups"
-msgstr ""
+msgstr "Όλες οι ομάδες"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "Failed activities"
-msgstr ""
+msgstr "Αποτυχημένες δραστηριότητες"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "User's groups"
-msgstr ""
+msgstr "Ομάδες χρήστη"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "Group's users"
-msgstr ""
+msgstr "Χρήστες ομάδας"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "Daily activities"
-msgstr ""
+msgstr "Καθημερινές δραστηριότητες"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "Daily ratios"
-msgstr ""
+msgstr "Καθημερινές αναλογίες"
 
 #. Number of lines
 #: server/views/datas/AllData.qml:90
 #, qt-format
 msgctxt "AllData|"
 msgid "%1 lines"
-msgstr ""
+msgstr "%1 γραμμές"
 
 #: server/views/datas/DuplicateData.qml:175
 msgctxt "DuplicateData|"
 msgid "Commands"
-msgstr ""
+msgstr "Εντολές"
 
 #: server/views/datas/DuplicateData.qml:188
 msgctxt "DuplicateData|"
 msgid "Random date"
-msgstr ""
+msgstr "Τυχαία ημερομηνία"
 
 #: server/views/datas/DuplicateData.qml:195
 msgctxt "DuplicateData|"
 msgid "Duplicate"
-msgstr ""
+msgstr "Διπλότυπο"
 
 #: server/views/datas/DuplicateData.qml:199
 msgctxt "DuplicateData|"
 msgid "You are about to duplicate datas"
-msgstr ""
+msgstr "Πρόκειται να διπλασιάσετε δεδομένα"
 
 #: server/views/datas/DuplicateData.qml:199
 #: server/views/datas/DuplicateData.qml:212
 msgctxt "DuplicateData|"
 msgid "No action now"
-msgstr ""
+msgstr "Καμία ενέργεια τώρα"
 
 #: server/views/datas/DuplicateData.qml:208
 msgctxt "DuplicateData|"
 msgid "Delete"
-msgstr ""
+msgstr "Διαγραφή"
 
 #: server/views/datas/DuplicateData.qml:212
 msgctxt "DuplicateData|"
 msgid "You are about to delete datas"
-msgstr ""
+msgstr "Πρόκειται να διαγράψετε δεδομένα"
 
 #: server/views/datas/DuplicateData.qml:230
 msgctxt "DuplicateData|"
 msgid "Copy to"
-msgstr ""
+msgstr "Αντιγραφή σε"
 
 #: server/views/DatasetsView.qml:49
 msgctxt "DatasetsView|"
 msgid "Activities"
-msgstr ""
+msgstr "Δραστηριότητες"
 
 #: server/views/DatasetsView.qml:69
 msgctxt "DatasetsView|"
 msgid "Datasets"
-msgstr ""
+msgstr "Σύνολα δεδομένων"
 
 #: server/views/DatasetsView.qml:101
 msgctxt "DatasetsView|"
 msgid "Datasets management"
-msgstr ""
+msgstr "Διαχείριση συνόλων δεδομένων"
 
 #: server/views/DatasetsView.qml:118
 msgctxt "DatasetsView|"
 msgid "Create dataset"
-msgstr ""
+msgstr "Δημιουργία συνόλου δεδομένων"
 
 #: server/views/DatasetsView.qml:126
 msgctxt "DatasetsView|"
 msgid "Update dataset"
-msgstr ""
+msgstr "Ενημέρωση συνόλου δεδομένων"
 
 #: server/views/DatasetsView.qml:134
 msgctxt "DatasetsView|"
 msgid "Send dataset to clients"
-msgstr ""
+msgstr "Αποστολή συνόλου δεδομένων σε πελάτες"
 
 #: server/views/DatasetsView.qml:152
 msgctxt "DatasetsView|"
 msgid "Remove dataset from clients"
-msgstr ""
+msgstr "Αφαίρεση συνόλου δεδομένων από πελάτες"
 
 #: server/views/DatasetsView.qml:176
 msgctxt "DatasetsView|"
 msgid "Remove all datasets from clients"
-msgstr ""
+msgstr "Αφαίρεση όλων των συνόλων δεδομένων από πελάτες"
 
 #: server/views/DatasetsView.qml:185
 msgctxt "DatasetsView|"
 msgid "Delete dataset"
-msgstr ""
+msgstr "Διαγραφή συνόλου δεδομένων"
 
 #: server/views/DevelopmentView.qml:43
 msgctxt "DevelopmentView|"
 msgid "Edit data"
-msgstr ""
+msgstr "Επεξεργασία δεδομένων"
 
 #: server/views/DevelopmentView.qml:47
 msgctxt "DevelopmentView|"
 msgid "All requests"
-msgstr ""
+msgstr "Όλα τα αιτήματα"
 
 #: server/views/DevicesView.qml:52
 msgctxt "DevicesView|"
 msgid "Not connected"
-msgstr ""
+msgstr "Δεν είναι συνδεδεμένο"
 
 #: server/views/DevicesView.qml:54
 msgctxt "DevicesView|"
 msgid "Bad password input"
-msgstr ""
+msgstr "Λανθασμένη εισαγωγή κωδικού πρόσβασης"
 
 #: server/views/DevicesView.qml:56
 msgctxt "DevicesView|"
 msgid "Logged"
-msgstr ""
+msgstr "Συνδεδεμένος"
 
 #: server/views/DevicesView.qml:58
 msgctxt "DevicesView|"
 msgid "Connection lost"
-msgstr ""
+msgstr "Η σύνδεση χάθηκε"
 
 #: server/views/DevicesView.qml:60
 msgctxt "DevicesView|"
 msgid "Disconnected"
-msgstr ""
+msgstr "Αποσυνδέθηκε"
 
 #: server/views/DevicesView.qml:62
 msgctxt "DevicesView|"
 msgid "Unknown connection status"
-msgstr ""
+msgstr "Άγνωστη κατάσταση σύνδεσης"
 
 #: server/views/DevicesView.qml:84
 msgctxt "DevicesView|"
 msgid "Groups"
-msgstr ""
+msgstr "Ομάδες"
 
 #: server/views/DevicesView.qml:100
 msgctxt "DevicesView|"
 msgid "Pupils"
-msgstr ""
+msgstr "Μαθητές"
 
 #: server/views/DevicesView.qml:134
 msgctxt "DevicesView|"
 msgid "Network"
-msgstr ""
+msgstr "Δίκτυο"
 
 #: server/views/DevicesView.qml:157
 msgctxt "DevicesView|"
 msgid "Connect devices"
-msgstr ""
+msgstr "Σύνδεση συσκευών"
 
 #: server/views/DevicesView.qml:170
 msgctxt "DevicesView|"
 msgid "Send login list"
-msgstr ""
+msgstr "Αποστολή λίστας σύνδεσης"
 
 #: server/views/DevicesView.qml:195
 msgctxt "DevicesView|"
 msgid "Disconnect selected pupils"
-msgstr ""
+msgstr "Αποσύνδεση επιλεγμένων μαθητών"
 
 #: server/views/DevicesView.qml:212
 msgctxt "DevicesView|"
 msgid "Disconnect everybody"
-msgstr ""
+msgstr "Αποσύνδεση όλων"
 
 #: server/views/DevicesView.qml:228
 msgctxt "DevicesView|"
 msgid "Server ID:"
-msgstr ""
+msgstr "Αναγνωριστικό διακομιστή:"
 
 #: server/views/DevicesView.qml:235
 msgctxt "DevicesView|"
 msgid "Teacher port:"
-msgstr ""
+msgstr "Θύρα δασκάλου:"
 
 #: server/views/DevicesView.qml:242
 msgctxt "DevicesView|"
 msgid "Connected:"
-msgstr ""
+msgstr "Συνδεδεμένοι:"
 
 #: server/views/DevicesView.qml:249
 msgctxt "DevicesView|"
 msgid "Logged:"
-msgstr ""
+msgstr "Συνδεδεμένοι:"
 
 #: server/views/DevicesView.qml:256
 msgctxt "DevicesView|"
 msgid "Data received:"
-msgstr ""
+msgstr "Λήφθηκαν δεδομένα:"
 
 #: server/views/DevicesView.qml:284
 msgctxt "DevicesView|"
 msgid "Network logs"
-msgstr ""
+msgstr "Καταγραφές δικτύου"
 
 #: server/views/DevicesView.qml:296
 msgctxt "DevicesView|"
 msgid "Clear logs"
-msgstr ""
+msgstr "Εκκαθάριση καταγραφών"
 
 #: server/views/DevicesView.qml:316
 #, qt-format
 msgctxt "DevicesView|"
 msgid "Server already running on port %1"
-msgstr ""
+msgstr "Ο διακομιστής εκτελείται ήδη στη θύρα %1"
 
 #: server/views/LoginView.qml:44
 msgctxt "LoginView|"
 msgid "Incorrect password"
-msgstr ""
+msgstr "Λανθασμένος κωδικός πρόσβασης"
 
 #: server/views/LoginView.qml:48
 msgctxt "LoginView|"
 msgid "GCompris-teachers is already running on this computer"
-msgstr ""
+msgstr "Το GCompris-teachers εκτελείται ήδη σε αυτόν τον υπολογιστή"
 
 #: server/views/LoginView.qml:49
 msgctxt "LoginView|"
 msgid "Only data browsing is permitted"
-msgstr ""
+msgstr "Επιτρέπεται μόνο η περιήγηση δεδομένων"
 
 #: server/views/LoginView.qml:92
 msgctxt "LoginView|"
 msgid "Teacher login"
-msgstr ""
+msgstr "Σύνδεση εκπαιδευτικού"
 
 #: server/views/LoginView.qml:113
 msgctxt "LoginView|"
 msgid "Password"
-msgstr ""
+msgstr "Κωδικός πρόσβασης"
 
 #: server/views/LoginView.qml:131
 msgctxt "LoginView|"
 msgid "Login"
-msgstr ""
+msgstr "Σύνδεση"
 
 #: server/views/LoginView.qml:140
 msgctxt "LoginView|"
 msgid "Create teacher database"
-msgstr ""
+msgstr "Δημιουργία βάσης δεδομένων εκπαιδευτικού"
 
 #: server/views/LoginView.qml:161
 msgctxt "LoginView|"
 msgid "Database file:"
-msgstr ""
+msgstr "Αρχείο βάσης δεδομένων:"
 
 #: server/views/LoginView.qml:174
 msgctxt "LoginView|"
 msgid "GCompris Teachers Tool"
-msgstr ""
+msgstr "Εργαλείο Εκπαιδευτικών GCompris"
 
 #: server/views/ManagePupilsView.qml:34 server/views/ManagePupilsView.qml:147
 msgctxt "ManagePupilsView|"
 msgid "Add a group"
-msgstr ""
+msgstr "Προσθήκη ομάδας"
 
 #: server/views/ManagePupilsView.qml:44
 msgctxt "ManagePupilsView|"
 msgid "Are you sure you want to remove this group?"
-msgstr ""
+msgstr "Είστε σίγουροι ότι θέλετε να αφαιρέσετε αυτήν την ομάδα;"
 
 #: server/views/ManagePupilsView.qml:45
 msgctxt "ManagePupilsView|"
 msgid "Pupils will not be removed."
-msgstr ""
+msgstr "Οι μαθητές δεν θα αφαιρεθούν."
 
 #: server/views/ManagePupilsView.qml:52
 msgctxt "ManagePupilsView|"
 msgid "Edit group"
-msgstr ""
+msgstr "Επεξεργασία ομάδας"
 
 #: server/views/ManagePupilsView.qml:68 server/views/ManagePupilsView.qml:204
 msgctxt "ManagePupilsView|"
 msgid "Add a pupil"
-msgstr ""
+msgstr "Προσθήκη μαθητή"
 
 #: server/views/ManagePupilsView.qml:74
 msgctxt "ManagePupilsView|"
 msgid "Edit pupil's name and groups"
-msgstr ""
+msgstr "Επεξεργασία ονόματος και ομάδων μαθητή"
 
 #: server/views/ManagePupilsView.qml:122
 msgctxt "ManagePupilsView|"
 msgid "Groups"
-msgstr ""
+msgstr "Ομάδες"
 
 #: server/views/ManagePupilsView.qml:157
 msgctxt "ManagePupilsView|"
 msgid "Pupils and groups"
-msgstr ""
+msgstr "Μαθητές και ομάδες"
 
 #: server/views/ManagePupilsView.qml:186
 msgctxt "ManagePupilsView|"
 msgid "Pupils management"
-msgstr ""
+msgstr "Διαχείριση μαθητών"
 
 #: server/views/ManagePupilsView.qml:212
 msgctxt "ManagePupilsView|"
 msgid "Add to groups"
-msgstr ""
+msgstr "Προσθήκη σε ομάδες"
 
 #: server/views/ManagePupilsView.qml:220
 msgctxt "ManagePupilsView|"
 msgid "Remove from groups"
-msgstr ""
+msgstr "Αφαίρεση από ομάδες"
 
 #: server/views/ManagePupilsView.qml:228
 msgctxt "ManagePupilsView|"
 msgid "Export pupils"
-msgstr ""
+msgstr "Εξαγωγή μαθητών"
 
 #: server/views/ManagePupilsView.qml:235
 msgctxt "ManagePupilsView|"
 msgid "Import pupils"
-msgstr ""
+msgstr "Εισαγωγή μαθητών"
 
 #: server/views/ManagePupilsView.qml:243
 msgctxt "ManagePupilsView|"
 msgid "Remove pupils"
-msgstr ""
+msgstr "Αφαίρεση μαθητών"
 
 #: server/views/SettingsView.qml:65
 msgctxt "SettingsView|"
 msgid "Menu panel"
-msgstr ""
+msgstr "Πίνακας μενού"
 
 #: server/views/SettingsView.qml:66
 msgctxt "SettingsView|"
 msgid "Left"
-msgstr ""
+msgstr "Αριστερά"
 
 #: server/views/SettingsView.qml:66
 msgctxt "SettingsView|"
 msgid "Right"
-msgstr ""
+msgstr "Δεξιά"
 
 #: server/views/SettingsView.qml:77
 msgctxt "SettingsView|"
 msgid "Font size"
-msgstr ""
+msgstr "Μέγεθος γραμματοσειράς"
 
 #: server/views/SettingsView.qml:87
 msgctxt "SettingsView|"
 msgid "Theme"
-msgstr ""
+msgstr "Θέμα"
 
 #: server/views/SettingsView.qml:88
 msgctxt "SettingsView|"
 msgid "Dark"
-msgstr ""
+msgstr "Σκοτεινό"
 
 #: server/views/SettingsView.qml:88
 msgctxt "SettingsView|"
 msgid "Light"
-msgstr ""
+msgstr "Φωτεινό"
 
 #: server/views/SettingsView.qml:103
 msgctxt "SettingsView|"
 msgid "Language selector"
-msgstr ""
+msgstr "Επιλογέας γλώσσας"
 
 #: server/views/SettingsView.qml:138
 msgctxt "SettingsView|"
 msgid "Server ID"
-msgstr ""
+msgstr "Αναγνωριστικό διακομιστή"
 
 #: server/views/SettingsView.qml:160
 msgctxt "SettingsView|"
 msgid "Port"
-msgstr ""
+msgstr "Θύρα"
 
 #. next line will display if the server is running or already running
 #: server/views/SettingsView.qml:178
 msgctxt "SettingsView|"
 msgid "Server is"
-msgstr ""
+msgstr "Ο διακομιστής είναι"
 
 #: server/views/SettingsView.qml:179
 msgctxt "SettingsView|"
 msgid "Running"
-msgstr ""
+msgstr "Σε λειτουργία"
 
 #: server/views/SettingsView.qml:179
 #, qt-format
 msgctxt "SettingsView|"
 msgid "Already running on port %1"
-msgstr ""
+msgstr "Ήδη σε λειτουργία στη θύρα %1"
 
 #: server/views/SettingsView.qml:187
 msgctxt "SettingsView|"
 msgid "Host name"
-msgstr ""
+msgstr "Όνομα κεντρικού υπολογιστή"
 
 #: server/views/SettingsView.qml:194
 msgctxt "SettingsView|"
 msgid "Server IP"
-msgstr ""
+msgstr "Διεύθυνση IP διακομιστή"
 
 #: server/views/SettingsView.qml:201
 msgctxt "SettingsView|"
 msgid "Broadcast IPs"
-msgstr ""
+msgstr "Διευθύνσεις IP μετάδοσης"
 
 #: server/views/SettingsView.qml:208
 msgctxt "SettingsView|"
 msgid "Netmask"
-msgstr ""
+msgstr "Μάσκα δικτύου"
 
 #: server/views/SettingsView.qml:213
 msgctxt "SettingsView|"
 msgid "MAC address"
-msgstr ""
+msgstr "Διεύθυνση MAC"
 
 #: server/views/SettingsView.qml:220
 msgctxt "SettingsView|"
 msgid "GCompris version"
-msgstr ""
+msgstr "Έκδοση GCompris"
 
 #: server/views/SettingsView.qml:227
 msgctxt "SettingsView|"
 msgid "Qt version"
-msgstr ""
+msgstr "Έκδοση Qt"
 
 #: server/views/SettingsView.qml:240
 msgctxt "SettingsView|"
 msgid "Teacher login"
-msgstr ""
+msgstr "Σύνδεση δασκάλου"
 
 #: server/views/SettingsView.qml:248
 msgctxt "SettingsView|"
 msgid "Database file"
-msgstr ""
+msgstr "Αρχείο βάσης δεδομένων"
 
 #: server/views/SettingsView.qml:255
 msgctxt "SettingsView|"
 msgid "Encrypted database"
-msgstr ""
+msgstr "Κρυπτογραφημένη βάση δεδομένων"
 
 #: server/views/SettingsView.qml:256
 msgctxt "SettingsView|"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #: server/views/SettingsView.qml:256
 msgctxt "SettingsView|"
 msgid "No"
-msgstr ""
+msgstr "Όχι"
 
 #: server/views/SettingsView.qml:261
 msgctxt "SettingsView|"
 msgid "Pupils"
-msgstr ""
+msgstr "Μαθητές"
 
 #: server/views/SettingsView.qml:267
 msgctxt "SettingsView|"
 msgid "Groups"
-msgstr ""
+msgstr "Ομάδες"
 
 #: server/views/SettingsView.qml:280
 msgctxt "SettingsView|"
 msgid "Pupils connected"
-msgstr ""
+msgstr "Συνδεδεμένοι μαθητές"
 
 #: server/views/SettingsView.qml:287
 msgctxt "SettingsView|"
 msgid "Pupils logged"
-msgstr ""
+msgstr "Συνδεδεμένοι μαθητές"
 
 #: server/views/SettingsView.qml:294
 msgctxt "SettingsView|"
 msgid "Activities data received"
-msgstr ""
+msgstr "Ληφθέντα δεδομένα δραστηριοτήτων"

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-12-15 08:52+0200\n"
+"PO-Revision-Date: 2025-12-30 11:23+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 25.08.3\n"
+"X-Generator: Lokalize 25.12.0\n"
 "X-Qt-Contexts: true\n"
 "X-Poedit-Bookmarks: -1,2919,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
@@ -81,55 +81,47 @@ msgstr "לאתר את המספרים המבוקשים ולגרור אותם למ
 
 #. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the previous numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n previous number(s)."
 msgid_plural "Find the %n previous number(s)."
-msgstr[0] "לאתר את המספרים הקודמים."
-msgstr[1] "לאתר את המספרים הקודמים."
-msgstr[2] "לאתר את המספרים הקודמים."
-msgstr[3] "לאתר את המספרים הקודמים."
+msgstr[0] "למצוא את המספר הקודם."
+msgstr[1] "למצוא את %n המספרים הקודמים."
+msgstr[2] "למצוא את %n המספרים הקודמים."
+msgstr[3] "למצוא את %n המספרים הקודמים."
 
 #. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:60
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the next numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n next number(s)."
 msgid_plural "Find the %n next number(s)."
-msgstr[0] "לאתר את המספרים הבאים."
-msgstr[1] "לאתר את המספרים הבאים."
-msgstr[2] "לאתר את המספרים הבאים."
-msgstr[3] "לאתר את המספרים הבאים."
+msgstr[0] "למצוא את המספר הבא."
+msgstr[1] "למצוא את שני המספרים הבאים."
+msgstr[2] "למצוא את %n המספרים הבאים."
+msgstr[3] "למצוא את %n המספרים הבאים."
 
 #. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:64
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the in-between numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n in-between number(s)"
 msgid_plural "Find the %n in-between number(s)"
-msgstr[0] "לאתר את המספרים שבין לבין."
-msgstr[1] "לאתר את המספרים שבין לבין."
-msgstr[2] "לאתר את המספרים שבין לבין."
-msgstr[3] "לאתר את המספרים שבין לבין."
+msgstr[0] "למצוא את המספר שבין לבין"
+msgstr[1] "למצוא את שני המספרים שבין לבין"
+msgstr[2] "למצוא את %n המספרים שבין לבין"
+msgstr[3] "למצוא את %n המספרים שבין לבין"
 
 #. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:68
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n missing numbers"
 msgid_plural "Find the %n missing numbers"
-msgstr[0] "למצוא את שני המספרים."
-msgstr[1] "למצוא את שני המספרים."
-msgstr[2] "למצוא את שני המספרים."
-msgstr[3] "למצוא את שני המספרים."
+msgstr[0] "למצוא את המספר החסר"
+msgstr[1] "למצוא את שני המספרים החסרים"
+msgstr[2] "למצוא את %n המספרים החסרים"
+msgstr[3] "למצוא את %n המספרים החסרים"
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
 msgctxt "Data|"
@@ -2886,42 +2878,42 @@ msgstr "מהו הייצוג הבינרי של %1 ?"
 #: activities/binary_bulb/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 3 (with counter and with values visible)."
-msgstr ""
+msgstr "ספירה עד 3 (כאשר המונה והערכים גלויים)."
 
 #: activities/binary_bulb/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 3 (without counter and with values visible)."
-msgstr ""
+msgstr "ספירה עד 3 (כאשר המונה מוסתר והערכים גלויים)."
 
 #: activities/binary_bulb/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (with counter and with values visible)."
-msgstr ""
+msgstr "ספירה עד 15 (כאשר המונה והערכים גלויים)."
 
 #: activities/binary_bulb/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (without counter and with values visible)."
-msgstr ""
+msgstr "ספירה עד 15 (כאשר המונה מוסתר והערכים גלויים)."
 
 #: activities/binary_bulb/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (with counter and with values visible)."
-msgstr ""
+msgstr "ספירה עד 255 (כאשר המונה והערכים גלויים)."
 
 #: activities/binary_bulb/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (without counter and with values visible)."
-msgstr ""
+msgstr "ספירה עד 255 (כאשר המונה מוסתר והערכים גלויים)."
 
 #: activities/binary_bulb/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (without counter and without values visible)."
-msgstr ""
+msgstr "ספירה עד 15 (כאשר המונה והערכים מוסתרים)."
 
 #: activities/binary_bulb/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (without counter and without values visible)."
-msgstr ""
+msgstr "ספירה עד 255 (כאשר המונה והערכים מוסתרים)."
 
 #: activities/binary_bulb/resource/tutorial4.qml:31
 msgctxt "tutorial4|"
@@ -6520,6 +6512,12 @@ msgid ""
 "file (vector format), along with a PNG file (pixel format). Only the SVG "
 "file can be opened again from the activity."
 msgstr ""
+"יצירת ציורים מהממים על ידי סיבוב גלגל השיניים עם העט הנבחר. אפשר לבחור גודל "
+"גלגל, הגדרות עט וצבע מהלוחות הצצים וללחוץ על כפתור ההפעלה כדי לסובב את גלגל "
+"השיניים. אפשר להשתמש בתפריט הקובץ כדי לשמור את התמונה שלך, לפתוח תמונה "
+"שנשמרה בעבר או ליצור תמונה חדשה עם צבע רקע מסוים. השמירה תשמור את התמונה "
+"בתסדיר SVG (תבנית וקטורית), לצד קובץ PNG (תבנית עם פיקסלים). אפשר לפתוח רק "
+"את קובץ ה־SVG שוב מתו הפעילות."
 
 #: activities/drawing_wheels/ActivityInfo.qml:29
 #: activities/sketch/ActivityInfo.qml:28
@@ -19251,7 +19249,7 @@ msgstr "ריווח אותיות הגופן"
 #: activities/menu/ConfigurationItem.qml:445
 msgctxt "ConfigurationItem|"
 msgid "Teacher's server config"
-msgstr ""
+msgstr "הגדרות שרת מורה"
 
 #: activities/menu/ConfigurationItem.qml:653
 msgctxt "ConfigurationItem|"
@@ -19348,37 +19346,37 @@ msgstr "אוצר מילים"
 #: activities/menu/Menu.qml:211
 msgctxt "Menu|"
 msgid "GCompris is not connected to teacher's server."
-msgstr ""
+msgstr "ג׳יקומפרי לא מחובר לשרת מורה."
 
 #: activities/menu/Menu.qml:212
 msgctxt "Menu|"
 msgid ""
 "GCompris is connected to teacher's server, but the password entered for "
 "selected user is wrong."
-msgstr ""
+msgstr "ג׳יקומפרי מחובר לשרת מורה, אבל הסיסמה שהוקלדה למשתמש הנבחר שגויה."
 
 #: activities/menu/Menu.qml:213
 msgctxt "Menu|"
 msgid ""
 "GCompris is connected to teacher's server, and the user is authenticated."
-msgstr ""
+msgstr "ג׳יקומפרי מחובר לשרת מורה והמשתמש מאומת."
 
 #: activities/menu/Menu.qml:214
 msgctxt "Menu|"
 msgid "GCompris has lost the connection to teacher's server."
-msgstr ""
+msgstr "ג׳יקומפרי איבד את החיבור לשרת המורה."
 
 #: activities/menu/Menu.qml:215
 msgctxt "Menu|"
 msgid "GCompris has been disconnected from teacher's server."
-msgstr ""
+msgstr "ג׳יקומפרי נותק משרת המורה."
 
 #: activities/menu/Menu.qml:216
 msgctxt "Menu|"
 msgid ""
 "GCompris is connected to teacher's server, but the user is not yet "
 "authenticated."
-msgstr ""
+msgstr "ג׳יקומפרי מחובר לשרת מורה אבל המשתמש לא מאומת עדיין."
 
 #: activities/menu/Menu.qml:677
 msgctxt "Menu|"
@@ -19402,25 +19400,22 @@ msgstr "הגדרות הפעילות"
 #: activities/menu/ServerConfigPage.qml:61
 msgctxt "ServerConfigPage|"
 msgid "Teacher's server settings"
-msgstr ""
+msgstr "הגדרות שרת מורה"
 
 #: activities/menu/ServerConfigPage.qml:111
 msgctxt "ServerConfigPage|"
 msgid "Teacher's identifier"
-msgstr ""
+msgstr "מזהה מורה"
 
 #: activities/menu/ServerConfigPage.qml:142
 msgctxt "ServerConfigPage|"
 msgid "Server port"
-msgstr ""
+msgstr "פתחת שרת"
 
 #: activities/menu/ServerConfigPage.qml:177
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "ServerConfigPage|"
 msgid "Server port must be a number between 0 and 65535."
-msgstr "לנחש מספר בין 1 ל %1."
+msgstr "פתחת השרת חייבת להיות מספר בין 0 ל־65535."
 
 #. Activity title
 #: activities/mining/ActivityInfo.qml:15
@@ -19986,24 +19981,21 @@ msgstr "עד 24 פריטים, על מספר קווים."
 
 #. Activity title
 #: activities/multiple_choice_questions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication."
 msgctxt "ActivityInfo|"
 msgid "Multiple-choice questions"
-msgstr "כפל."
+msgstr "שאלות רבות בחירה"
 
 #. Help title
 #: activities/multiple_choice_questions/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "A generic activity for multiple-choice questions."
-msgstr ""
+msgstr "פעילות כללית לשאלות רבות בחירה."
 
 #. Help goal
 #: activities/multiple_choice_questions/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Answer questions sent by the teacher."
-msgstr ""
+msgstr "לענות על שאלות שניתנו על ידי המורה."
 
 #. Help manual
 #: activities/multiple_choice_questions/ActivityInfo.qml:24
@@ -20014,22 +20006,20 @@ msgid ""
 "For some questions, after validating the answer, a feedback text panel will "
 "be displayed: click anywhere to close this panel after reading it."
 msgstr ""
+"יש ללחוץ על תשובה כדי לבחור אותה, ואז ללחוץ על כפתור OK כדי לאמת אותה. חלק "
+"מהשאלות דורשות תשובה בודדה, שאלות אחרות מגוון תשובות. לחלק מהשאלות, לאחר "
+"אימות התשובה, יופיע לוח משוב מילולי: יש ללחוץ בכל מקום מחוץ לו לאחר שקראת "
+"אותו כדי לסגור אותו."
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate through the answers"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: navigate through the answer list"
-msgstr "חיצים: לנווט בין התשובות"
+msgstr "חיצים למעלה ומלטה: לנווט בין התשובות ברשימה"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select or deselect a circle"
 msgctxt "ActivityInfo|"
 msgid "Space: select or deselect the highlighted answer"
-msgstr "רווח: לבחור או לבטל בחירה של עיגול"
+msgstr "רווח: לבחור או לבטל בחירה של תשובה מודגשת"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:28
 #, fuzzy
@@ -20040,43 +20030,34 @@ msgid "Enter: validate your answer, or close the feedback text panel"
 msgstr "Enter: לאשר את התשובה שלך כאשר כפתור האישור מופיע"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find the next number."
 msgctxt "Data|"
 msgid "Find the correct answer."
-msgstr "לאתר את המספר הבא."
+msgstr "למצוא את התשובה הנכונה."
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:17
-#, fuzzy
-#| msgctxt "GraduatedLineRead|"
-#| msgid "Find the requested number."
 msgctxt "Data|"
 msgid "What is the first number?"
-msgstr "יש לאתר את המספר המבוקש."
+msgstr "מה המספר הראשון?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:26
 msgctxt "Data|"
 msgid "What is a color?"
-msgstr ""
+msgstr "מה זה צבע?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:40
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "Data|"
 msgid "What are the first two numbers?"
-msgstr "להתאמן בחיבור של מספרים."
+msgstr "מה הם שני המספרים הראשונים?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:49
 msgctxt "Data|"
 msgid "What are animals?"
-msgstr ""
+msgstr "מה הן חיות?"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:63
 msgctxt "Data|"
 msgid "Answers always in order, select the first one"
-msgstr ""
+msgstr "התשובות תמיד מסודרות, יש לבחור את הראשונה מביניהן"
 
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
@@ -26793,20 +26774,14 @@ msgid "Solve: %1"
 msgstr "לפתור: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:99
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own addition and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own addition and solve it."
 msgstr "לכתוב תרגיל חיבור משלך ולפתור אותו."
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:100
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own subtraction and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own subtraction and solve it."
-msgstr "לכתוב חיסור משלך ולפתור אותו."
+msgstr "לכתוב תרגיל חיסור משלך ולפתור אותו."
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:426
 msgctxt "VerticalSubtraction|"
@@ -26816,7 +26791,7 @@ msgstr "בהמתנה"
 #: activities/vertical_subtraction/VerticalSubtraction.qml:464
 msgctxt "VerticalSubtraction|"
 msgid "The result should not be a negative number."
-msgstr ""
+msgstr "התוצאה לא אמורה להיות מספר שלילי."
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
@@ -28106,23 +28081,18 @@ msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "הידד, ג׳יקומפרי עודכן! אלו השינויים החדשים:<br/>"
 
 #: core/main.qml:509
-#, fuzzy, qt-format
-#| msgctxt "Sketch|"
-#| msgid "Do you want to erase this image?"
+#, qt-format
 msgctxt "main|"
 msgid "Do you want to connect to server %1?"
-msgstr "למחוק את התמונה הזאת?"
+msgstr "להתחבר לשרת %1?"
 
 #: core/main.qml:530
 #, qt-format
 msgctxt "main|"
 msgid "Password rejected by server %1"
-msgstr ""
+msgstr "הסיסמה נדחתה על ידי השרת %1"
 
 #: core/main.qml:531 core/main.qml:550 core/main.qml:625
-#, fuzzy
-#| msgctxt "Balancebox|"
-#| msgid "OK"
 msgctxt "main|"
 msgid "OK"
 msgstr "אישור"
@@ -28138,15 +28108,12 @@ msgstr "לבחור את המצב"
 #: core/main.qml:556
 msgctxt "main|"
 msgid "Please select your username in the list or cancel."
-msgstr ""
+msgstr "נא לבחור את שם המשתמש שלך מהרשימה או לבטל."
 
 #: core/main.qml:623
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "main|"
 msgid "Enter your password"
-msgstr "‏Enter: לאשר את התשובה שלך"
+msgstr "למלא את הסיסמה שלך"
 
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"
