@@ -116,12 +116,28 @@ namespace controllers {
 
     void NetworkController::sendJson(QTcpSocket *tcpSocket, QJsonObject &obj)
     {
-        QJsonDocument jsonDoc;
-        jsonDoc.setObject(obj);
-        QByteArray message = jsonDoc.toJson(QJsonDocument::Compact);
-        qint64 messageSize = message.size();
-        //    qWarning() << message;
-        tcpSocket->write(message.constData(), messageSize);
+        //keep at the moment to be able to compare
+        // QJsonDocument jsonDoc;
+        // jsonDoc.setObject(obj);
+        // QByteArray message = jsonDoc.toJson(QJsonDocument::Compact);
+        // qint64 messageSize = message.size();
+        // //    qWarning() << message;
+        // tcpSocket->write(message.constData(), messageSize);
+
+        QJsonDocument jsonDoc(obj);
+        // block contains the message size then the message contact
+        QByteArray block;
+        QDataStream out(&block, QIODevice::WriteOnly);
+        out.setVersion(QDataStream::Qt_5_15); // Set QDatastral version to ensure compatibility
+        // The first fout octets are reserved for the message size (they can handle messages until 5Gbytes
+        out << (quint32)0;
+        // Append obj after its size
+        block.append(jsonDoc.toJson(QJsonDocument::Compact));
+        // set the actual message size in the first four octet
+        out.device()->seek(0);
+        out << (quint32)(block.size() - sizeof(quint32));
+        // sent obj plus its size
+        tcpSocket->write(block);
     }
 
 
@@ -130,138 +146,97 @@ namespace controllers {
         QTcpSocket *clientConnection = qobject_cast<QTcpSocket *>(sender());
         if (!clientConnection) return;
 
+        // If no client in buffer initialise socketbuffer
         if (!socketBuffers.contains(clientConnection)) {
             socketBuffers.insert(clientConnection, QByteArray());
         }
 
+        // add received data to buffer
         socketBuffers[clientConnection].append(clientConnection->readAll());
         QByteArray &buffer = socketBuffers[clientConnection];
 
-        while (!buffer.isEmpty()) {
-            QJsonParseError parseError;
-            QJsonDocument jsonDoc = QJsonDocument::fromJson(buffer, &parseError);
+        //loop until there is not enough data to read the message size
+        while (buffer.size() >= (int)sizeof(quint32)) {
 
-            if (parseError.error == QJsonParseError::NoError) {
-                QJsonObject obj = jsonDoc.object();
+            QDataStream in(buffer);
+            in.setVersion(QDataStream::Qt_5_15);
 
-                if (obj.contains("aType")) {
-                    switch (obj["aType"].toInt()) {
-                    case netconst::LOGIN_LIST:
-                        if (obj["content"].isArray()) {
-                            QStringList logins;
-                            const auto &jsonArray = obj["content"].toArray();
-                            for (int i = 0; i < jsonArray.size(); i++) {
-                                logins << jsonArray[i].toString();
-                            }
-                        }
-                        break;
+            quint32 blockSize;
+            in >> blockSize;
 
-                    case netconst::LOGIN_REPLY:
-                        if (obj["content"].isObject()) {
-                            const auto &jsonObject = obj["content"].toObject();
-                            QString login = jsonObject["login"].toString();
-                            QString password = jsonObject["password"].toString();
-                            Q_EMIT checkUserPassword(login, password);
-                        }
-                        break;
-
-                    case netconst::ACTIVITY_DATA:
-                        if (obj["activity"].isString() && obj["content"].isObject()) {
-                            QString activityName = obj["activity"].toString();
-                            QJsonDocument jsonDocData;
-                            jsonDocData.setObject(obj["content"].toObject());
-                            QString activityData = jsonDocData.toJson(QJsonDocument::Compact);
-
-                            if (usersMap.contains(clientConnection)) {
-                                Q_EMIT addDataToUser(usersMap.value(clientConnection)->getUserId(),
-                                                     activityName, activityData);
-                                dataCount_++;
-                                Q_EMIT dataCountChanged();
-                            }
-                        }
-                        break;
-
-                    case netconst::PING:
-                        pong(clientConnection);
-                        break;
-
-                    default:
-                        qDebug() << "Unknown message type:" << obj["aType"].toInt();
-                    }
-                }
-
-                if (usersMap.contains(clientConnection)) {
-                    usersMap.value(clientConnection)->recordTimeStamp();
-                }
-
-                if (parseError.offset > 0) {
-                    buffer.remove(0, parseError.offset);
-                } else {
-                    buffer.clear();
-                }
+            //Warn if to many data must be allocated
+            if (blockSize > 10 * 1024 * 1024) { // Limite arbitraire de 10 Mo
+                qWarning() << "Message too big! Disconnect for security reason.";
+                clientConnection->disconnectFromHost();
+                return;
             }
-            else if (parseError.error == QJsonParseError::UnterminatedObject ||
-                     parseError.error == QJsonParseError::UnterminatedArray ||
-                     parseError.error == QJsonParseError::UnterminatedString) {
+
+            // If message is not totally read, escape the loop to wait for the following message
+            if ((quint32)buffer.size() < (sizeof(quint32) + blockSize)) {
                 break;
             }
-            else {
-                qWarning() << "JSON parse error:" << parseError.errorString();
 
-                int nextBrace = buffer.indexOf('{', 1);
-                if (nextBrace > 0) {
-                    buffer.remove(0, nextBrace);
-                } else {
-                    buffer.clear();
+            // If the loop has not been escaped, the message is complete
+            QByteArray jsonData = buffer.mid(sizeof(quint32), blockSize);
+
+            // Capture message by removing size
+            buffer.remove(0, sizeof(quint32) + blockSize);
+
+            // Json parsing
+            QJsonDocument jsonDoc = QJsonDocument::fromJson(jsonData);
+            if (jsonDoc.isNull()) {
+                qWarning() << "JSON format error after complete reception.";
+                continue;
+            }
+
+            QJsonObject obj = jsonDoc.object();
+
+            // Process messages according to their type (aType)
+            if (obj.contains("aType")) {
+                int messageType = obj["aType"].toInt();
+
+                switch (messageType) {
+                case netconst::LOGIN_REPLY:
+                    if (obj["content"].isObject()) {
+                        const auto &jsonObject = obj["content"].toObject();
+                        QString login = jsonObject["login"].toString();
+                        QString password = jsonObject["password"].toString();
+                        Q_EMIT checkUserPassword(login, password);
+                    }
+                    break;
+
+                case netconst::ACTIVITY_DATA:
+                    if (obj["activity"].isString() && obj["content"].isObject()) {
+                        QString activityName = obj["activity"].toString();
+                        QJsonDocument jsonDocData(obj["content"].toObject());
+                        QString activityData = jsonDocData.toJson(QJsonDocument::Compact);
+
+                        if (usersMap.contains(clientConnection)) {
+                            Q_EMIT addDataToUser(usersMap.value(clientConnection)->getUserId(),
+                                                 activityName, activityData);
+                            dataCount_++;
+                            Q_EMIT dataCountChanged();
+                        }
+                    }
+                    break;
+
+                case netconst::PING:
+                    pong(clientConnection);
+                    break;
+
+                default:
+                    qDebug() << "Received message type unknown :" << messageType;
+                }
+
+                // update timestamp to avoid timeout
+                if (usersMap.contains(clientConnection)) {
+                    usersMap.value(clientConnection)->recordTimeStamp();
                 }
             }
         }
     }
 
-    // void NetworkController::slotReadyRead()
-    // {
-    //     QTcpSocket *clientConnection = qobject_cast<QTcpSocket *>(sender());
-    //     QByteArray message = clientConnection->readAll();
-    //     // qWarning() << "NetworkController::slotReadyRead()" << message;
-    //     QJsonDocument jsonDoc = QJsonDocument::fromJson(message);
-    //     QJsonObject obj = jsonDoc.object();
-    //     if (obj.contains("aType")) {
-    //         switch (obj["aType"].toInt()) {
-    //         case netconst::LOGIN_LIST:
-    //             if (obj["content"].isArray()) {
-    //                 QStringList logins;
-    //                 const auto &jsonArray = obj["content"].toArray();
-    //                 for (int i = 0; i < jsonArray.size(); i++) {
-    //                     logins << jsonArray[i].toString();
-    //                 }
-    //             }
-    //             break;
-    //         case netconst::LOGIN_REPLY:
-    //             if (obj["content"].isObject()) {
-    //                 const auto &jsonObject = obj["content"].toObject();
-    //                 QString login = jsonObject["login"].toString();
-    //                 QString password = jsonObject["password"].toString();
-    //                 Q_EMIT checkUserPassword(login, password);
-    //             }
-    //             break;
-    //         case netconst::ACTIVITY_DATA:
-    //             if (obj["activity"].isString() && obj["content"].isObject()) {
-    //                 QString activityName = obj["activity"].toString();
-    //                 QJsonDocument jsonDocData;
-    //                 jsonDocData.setObject(obj["content"].toObject());
-    //                 QString activityData = jsonDocData.toJson(QJsonDocument::Compact);
-    //                 Q_EMIT addDataToUser(usersMap.value(clientConnection)->getUserId(), activityName, activityData);
-    //                 dataCount_++;
-    //                 Q_EMIT dataCountChanged();
-    //             }
-    //             break;
-    //         case netconst::PING:
-    //             pong(clientConnection);
-    //             break;
-    //         }
-    //         usersMap.value(clientConnection)->recordTimeStamp();
-    //     }
-    // }
+
 
     void NetworkController::pong(QTcpSocket *tcpSocket)
     {

@@ -158,17 +158,27 @@ void ClientNetworkMessages::sendLoginMessage(const QString &newLogin, const QStr
 
 void ClientNetworkMessages::sendMessage(const QByteArray &message)
 {
-    qint64 messageSize = message.size();
-    tcpSocket->write(message.constData(), messageSize);
-    //    qWarning() << message;
+    //prepare the block
+    QByteArray block;
+    // uses QDatastream to make the communication more robust
+    // out will write the serialized data to block
+    QDataStream out(&block, QIODevice::WriteOnly);
+    // set QDataStream to Qt_5_15 to ensure comptability
+    out.setVersion(QDataStream::Qt_5_15);
+    // write message size to at the beginning of the block
+    out << (quint32)message.size();
+    block.append(message);
+    tcpSocket->write(block);
 }
 
 void ClientNetworkMessages::sendNextMessage()
-{ // Send next message in queue
+{
+    //Send next message in queue
     if (tcpSocket->state() != QAbstractSocket::ConnectedState)
         return;
     sendMessage(messageQueue.takeFirst());
     _wait4pong = false;
+
 }
 
 QByteArray ClientNetworkMessages::prepareMessage(QJsonObject &obj)
@@ -236,39 +246,7 @@ void ClientNetworkMessages::ping()
     }
 }
 
-// void ClientNetworkMessages::ping()
-// {
-//     if (status == netconst::CONNECTION_LOST) {
-//         _wait4pong = false;
-//         if (login != "")
-//             connectToServer(ipServer); // Try to reconnect
-//         else {
-//             disconnectFromServer();
-//         }
-//         return;
-//     }
-//     if (_wait4pong) {
-//         status = netconst::CONNECTION_LOST;
-//         Q_EMIT statusChanged();
-//         _wait4pong = false;
-//         pingTimer.setInterval(netconst::WAIT_DELAY);
-//         //        qWarning() << "Connection lost, client side";
-//         return;
-//     }
-//     if ((!messageQueue.isEmpty()) && (status == netconst::CONNECTED)) {
-//         sendNextMessage();
-//         if (messageQueue.isEmpty())
-//             pingTimer.setInterval(netconst::PING_DELAY);
-//         else
-//             pingTimer.setInterval(netconst::PURGE_DELAY);
-//     }
-//     else {
-//         QJsonObject obj { { "aType", netconst::PING } };
-//         sendMessage(prepareMessage(obj));
-//         _wait4pong = true;
-//         //        qWarning() << "Ping";
-//     }
-// }
+
 
 void ClientNetworkMessages::sendActivityData(const QString &activity,
                                              const QJsonObject &data)
@@ -284,154 +262,101 @@ int ClientNetworkMessages::connectionStatus()
     return static_cast<netconst::ConnectionStatus>(status);
 }
 
-
-
 void ClientNetworkMessages::readFromSocket()
 {
     QTcpSocket *clientConnection = qobject_cast<QTcpSocket *>(sender());
 
     tcpBuffer.append(clientConnection->readAll());
 
-    while (!tcpBuffer.isEmpty()) {
-        QJsonParseError parseError;
-        QJsonDocument jsonDoc = QJsonDocument::fromJson(tcpBuffer, &parseError);
+    //Loop as lon as the data is longer than 4 octets
+    while (tcpBuffer.size() >= (int)sizeof(quint32)) {
+        // Use QDataStream for robust reading
+        QDataStream in(tcpBuffer);
+        in.setVersion(QDataStream::Qt_5_15);
 
-        if (parseError.error == QJsonParseError::NoError) {
-            QJsonObject obj = jsonDoc.object();
+        quint32 blockSize;
+        in >> blockSize;
 
-            if (obj.contains("aType")) {
-                switch (obj["aType"].toInt()) {
-                case netconst::LOGIN_LIST:
-                    if (obj["content"].isArray()) {
-                        QStringList logins;
-                        for (int i = 0; i < obj["content"].toArray().size(); i++) {
-                            logins << obj["content"].toArray()[i].toString();
-                        }
-                        Q_EMIT loginListReceived(logins);
-                    }
-                    break;
-                case netconst::LOGIN_ACCEPT:
-                    if (obj["content"].isObject()) {
-                        bool accepted = obj["content"].toObject()["accepted"].toBool();
-                        userId = obj["content"].toObject()["user_id"].toInt();
-                        qWarning() << "Login accepted:" << accepted << ", user ID:" << userId;
-                        if (!accepted) {
-                            login = "";
-                            password = "";
-                            Q_EMIT passwordRejected();
-                            status = netconst::BAD_PASSWORD_INPUT;
-                        }
-                        else {
-                            status = netconst::CONNECTED;
-                        }
-                        Q_EMIT statusChanged();
-                    }
-                    break;
-                case netconst::DISCONNECT:
-                    disconnectFromServer();
-                    forgetUser();
-                    break;
-                case netconst::DATASET_CREATION:
-                    ActivityInfoTree::getInstance()->createDataset(obj["content"].toObject());
-                    break;
-                case netconst::DATASET_REMOVE:
-                    ActivityInfoTree::getInstance()->removeDataset(obj["content"].toObject());
-                    break;
-                case netconst::DATASET_REMOVE_ALL:
-                    ActivityInfoTree::getInstance()->removeAllLocalDatasets();
-                    break;
-                case netconst::PONG:
-                    _wait4pong = false;
-                    missedPongs = 0;
-                    qDebug() << "PONG received, connection healthy";
-                    break;
-                default:
-                    qDebug() << "Received unknown message" << obj["aType"].toInt();
-                }
-            }
-
-            if (parseError.offset > 0) {
-                tcpBuffer.remove(0, parseError.offset);
-            } else {
-                tcpBuffer.clear();
-            }
+        //warning if message length read more than 10 M0
+        if (blockSize > 10 * 1024 * 1024) { // 10 Mo
+            qWarning() << "Message too big! Disconnecting for security.";
+            disconnectFromServer();
+            return;
         }
-        else if (parseError.error == QJsonParseError::UnterminatedObject ||
-                 parseError.error == QJsonParseError::UnterminatedArray ||
-                 parseError.error == QJsonParseError::UnterminatedString) {
-            qDebug() << "JSON incomplete, waiting for more data...";
+
+        // If message is not terminated wait for next read signal
+        if ((quint32)tcpBuffer.size() < (sizeof(quint32) + blockSize)) {
             break;
         }
-        else {
-            qWarning() << "JSON parse error:" << parseError.errorString()
-            << "at offset" << parseError.offset;
-            qWarning() << "Buffer content (first 100 bytes):" << tcpBuffer.left(100);
 
-            int nextBrace = tcpBuffer.indexOf('{', 1);
-            if (nextBrace > 0) {
-                qWarning() << "Skipping" << nextBrace << "corrupted bytes";
-                tcpBuffer.remove(0, nextBrace);
-            } else {
-                qWarning() << "Clearing entire buffer";
-                tcpBuffer.clear();
+        // message is correct, raed json
+        QByteArray jsonData = tcpBuffer.mid(sizeof(quint32), blockSize);
+
+        // remove message length then extract buffer
+        tcpBuffer.remove(0, sizeof(quint32) + blockSize);
+
+        // Parsing JSON
+        QJsonParseError parseError;
+        QJsonDocument jsonDoc = QJsonDocument::fromJson(jsonData, &parseError);
+
+        if (parseError.error != QJsonParseError::NoError) {
+            qWarning() << "JSON parse error:" << parseError.errorString();
+            continue;
+        }
+
+        QJsonObject obj = jsonDoc.object();
+
+        if (obj.contains("aType")) {
+            switch (obj["aType"].toInt()) {
+            case netconst::LOGIN_LIST:
+                if (obj["content"].isArray()) {
+                    QStringList logins;
+                    for (int i = 0; i < obj["content"].toArray().size(); i++) {
+                        logins << obj["content"].toArray()[i].toString();
+                    }
+                    Q_EMIT loginListReceived(logins);
+                }
+                break;
+            case netconst::LOGIN_ACCEPT:
+                if (obj["content"].isObject()) {
+                    bool accepted = obj["content"].toObject()["accepted"].toBool();
+                    userId = obj["content"].toObject()["user_id"].toInt();
+                    qWarning() << "Login accepted:" << accepted << ", user ID:" << userId;
+                    if (!accepted) {
+                        login = "";
+                        password = "";
+                        Q_EMIT passwordRejected();
+                        status = netconst::BAD_PASSWORD_INPUT;
+                    }
+                    else {
+                        status = netconst::CONNECTED;
+                    }
+                    Q_EMIT statusChanged();
+                }
+                break;
+            case netconst::DISCONNECT:
+                disconnectFromServer();
+                forgetUser();
+                break;
+            case netconst::DATASET_CREATION:
+                ActivityInfoTree::getInstance()->createDataset(obj["content"].toObject());
+                break;
+            case netconst::DATASET_REMOVE:
+                ActivityInfoTree::getInstance()->removeDataset(obj["content"].toObject());
+                break;
+            case netconst::DATASET_REMOVE_ALL:
+                ActivityInfoTree::getInstance()->removeAllLocalDatasets();
+                break;
+            case netconst::PONG:
+                _wait4pong = false;
+                missedPongs = 0;
+                qDebug() << "PONG received, connection healthy";
+                break;
+            default:
+                qDebug() << "Received unknown message" << obj["aType"].toInt();
             }
         }
     }
 }
 
-// void ClientNetworkMessages::readFromSocket()
-// {
-//     QTcpSocket *clientConnection = qobject_cast<QTcpSocket *>(sender());
-//     QByteArray message = clientConnection->readAll();
-//     qWarning() << message;
-//     QJsonDocument jsonDoc = QJsonDocument::fromJson(message);
-//     QJsonObject obj = jsonDoc.object();
-//     if (obj.contains("aType")) {
-//         switch (obj["aType"].toInt()) {
-//         case netconst::LOGIN_LIST:
-//             if (obj["content"].isArray()) {
-//                 QStringList logins;
-//                 for (int i = 0; i < obj["content"].toArray().size(); i++) {
-//                     logins << obj["content"].toArray()[i].toString();
-//                 }
-//                 Q_EMIT loginListReceived(logins);
-//             }
-//             break;
-//         case netconst::LOGIN_ACCEPT:
-//             if (obj["content"].isObject()) {
-//                 bool accepted = obj["content"].toObject()["accepted"].toBool();
-//                 userId = obj["content"].toObject()["user_id"].toInt();
-//                 qWarning() << "Login accepted:" << accepted << ", user ID:" << userId;
-//                 if (!accepted) {
-//                     login = "";
-//                     password = "";
-//                     Q_EMIT passwordRejected();
-//                     status = netconst::BAD_PASSWORD_INPUT;
-//                 }
-//                 else {
-//                     status = netconst::CONNECTED;
-//                 }
-//                 Q_EMIT statusChanged();
-//             }
-//             break;
-//         case netconst::DISCONNECT:
-//             disconnectFromServer();
-//             forgetUser();
-//             break;
-//         case netconst::DATASET_CREATION:
-//             ActivityInfoTree::getInstance()->createDataset(obj["content"].toObject());
-//             break;
-//         case netconst::DATASET_REMOVE:
-//             ActivityInfoTree::getInstance()->removeDataset(obj["content"].toObject());
-//             break;
-//         case netconst::DATASET_REMOVE_ALL:
-//             ActivityInfoTree::getInstance()->removeAllLocalDatasets();
-//             break;
-//         case netconst::PONG:
-//             _wait4pong = false;
-//             break;
-//         default:
-//             qDebug() << "Received unknown message" << obj["aType"].toInt();
-//         }
-//     }
-// }
+
