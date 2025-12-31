@@ -17,10 +17,10 @@
 
 ClientNetworkMessages::ClientNetworkMessages() :
     QObject(),
-    tcpSocket(new QTcpSocket(this)),
-    udpSocket(new QUdpSocket(this)),
     _connected(false),
     _wait4pong(false),
+    tcpSocket(new QTcpSocket(this)),
+    udpSocket(new QUdpSocket(this)),
     status(netconst::NOT_CONNECTED),
     pingTimer(this)
 {
