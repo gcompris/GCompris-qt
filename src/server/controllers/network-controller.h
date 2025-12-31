@@ -30,7 +30,7 @@ namespace controllers {
         explicit UserData(QTcpSocket *aSocket);
 
         void setUserId(int id) { userId = id; }
-        const int getUserId() { return userId; }
+        int getUserId() { return userId; }
         void setUserName(const QString &name) { userName = name; }
         const QString &getUserName() { return userName; }
         QTcpSocket *getSocket() { return socket; }
