@@ -1945,7 +1945,7 @@ msgstr "Mettre à jour le jeu de données"
 #: server/views/DatasetsView.qml:134
 msgctxt "DatasetsView|"
 msgid "Send dataset to clients"
-msgstr "Envoyer le jeu de données des clients"
+msgstr "Envoyer le jeu de données aux élèves"
 
 #: server/views/DatasetsView.qml:152
 msgctxt "DatasetsView|"
@@ -2025,7 +2025,7 @@ msgstr "Connecter les appareils"
 #: server/views/DevicesView.qml:170
 msgctxt "DevicesView|"
 msgid "Send login list"
-msgstr "Envoyer la liste des comptes"
+msgstr "Envoyer la liste des élèves"
 
 #: server/views/DevicesView.qml:195
 msgctxt "DevicesView|"
@@ -2035,7 +2035,7 @@ msgstr "Déconnecter les élèves sélectionnés"
 #: server/views/DevicesView.qml:212
 msgctxt "DevicesView|"
 msgid "Disconnect everybody"
-msgstr "Déconnecter tout le monde"
+msgstr "Déconnecter tous les élèves"
 
 #: server/views/DevicesView.qml:228
 msgctxt "DevicesView|"
