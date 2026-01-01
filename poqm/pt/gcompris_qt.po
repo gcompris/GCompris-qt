@@ -8500,7 +8500,7 @@ msgid ""
 "The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
 "temperature."
 msgstr ""
-"O rato faz 'óinc'. Os porcos esfregam-se na lama, principalmente para "
+"O porco faz 'óinc'. Os porcos esfregam-se na lama, principalmente para "
 "controlar a sua temperatura corporal."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
