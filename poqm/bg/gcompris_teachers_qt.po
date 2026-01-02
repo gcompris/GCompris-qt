@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2025 Mincho Kondarev <mkondarev@yahoo.de>
+# SPDX-FileCopyrightText: 2025, 2026 Mincho Kondarev <mkondarev@yahoo.de>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-12-24 08:33+0100\n"
+"PO-Revision-Date: 2026-01-01 19:50+0100\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -1785,20 +1785,14 @@ msgid "Success ratio"
 msgstr "Коефициент на успех"
 
 #: server/views/charts/ActivitiesChart.qml:100
-#, fuzzy
-#| msgctxt "AllData|"
-#| msgid "Daily activities"
 msgctxt "ActivitiesChart|"
 msgid "Daily activities chart"
-msgstr "Ежедневни дейности"
+msgstr "Графика на ежедневни дейности"
 
 #: server/views/charts/PupilsChart.qml:98
-#, fuzzy
-#| msgctxt "AllData|"
-#| msgid "All users activities"
 msgctxt "PupilsChart|"
 msgid "User activities chart"
-msgstr "Всички потребителски дейности"
+msgstr "Графика на потребителски дейности"
 
 #: server/views/ChartsView.qml:97
 msgctxt "ChartsView|"
