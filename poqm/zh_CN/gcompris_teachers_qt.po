@@ -65,73 +65,73 @@ msgstr ""
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:28
 msgctxt "AdjacentNumbersEditor|"
 msgid "Random start numbers"
-msgstr ""
+msgstr "随机起始数字"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:29
 msgctxt "AdjacentNumbersEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "子级"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:30
 msgctxt "AdjacentNumbersEditor|"
 msgid "Start numbers"
-msgstr ""
+msgstr "起始数值"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:31
 msgctxt "AdjacentNumbersEditor|"
 msgid "Minimum start number"
-msgstr ""
+msgstr "最小起始数字"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:32
 msgctxt "AdjacentNumbersEditor|"
 msgid "Maximum start number"
-msgstr ""
+msgstr "最大起始数字"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:33
 msgctxt "AdjacentNumbersEditor|"
 msgid "Step between numbers"
-msgstr ""
+msgstr "数字间隔步长"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:34
 msgctxt "AdjacentNumbersEditor|"
 msgid "Sequence length"
-msgstr ""
+msgstr "序列长度"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:35
 msgctxt "AdjacentNumbersEditor|"
 msgid "Position of missing numbers"
-msgstr ""
+msgstr "缺失数字位置"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:36
 msgctxt "AdjacentNumbersEditor|"
 msgid "Proposed numbers"
-msgstr ""
+msgstr "提出的数字"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:98
 msgctxt "AdjacentNumbersEditor|"
 msgid "Dataset is empty."
-msgstr ""
+msgstr "数据集为空。"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:100
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Start numbers\" must contain only numbers, and not be empty."
-msgstr ""
+msgstr "“起始数字”只能包含数字且不得为空。"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:102
 msgctxt "AdjacentNumbersEditor|"
 msgid ""
 "\"Position of missing numbers\" must contain only numbers, and not be empty."
-msgstr ""
+msgstr "“缺失数字位置”只能包含数字且不得为空。"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:104
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Position of missing numbers\" contains too much numbers."
-msgstr ""
+msgstr "“缺失数字位置”项包含太多数字。"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:106
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Position of missing numbers\" contains invalid numbers."
-msgstr ""
+msgstr "“缺失数字位置”包含无效数字。"
 
 #: server/activities/algebra_by/AlgebraDataDisplay.qml:19
 msgctxt "AlgebraDataDisplay|"
