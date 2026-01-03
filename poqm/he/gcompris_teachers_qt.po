@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-12-30 18:21+0200\n"
+"PO-Revision-Date: 2026-01-01 09:17+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -361,7 +361,7 @@ msgstr ""
 #, qt-format
 msgctxt "BinaryBulbEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "השגיאות הבאות דורשות תיקון:<ul>%1</ul>"
 
 #: server/activities/clockgame/ClockGameDataDisplay.qml:30
 msgctxt "ClockGameDataDisplay|"
@@ -381,12 +381,12 @@ msgstr ""
 #: server/activities/clockgame/ClockgameEditor.qml:28
 msgctxt "ClockgameEditor|"
 msgid "Find minutes"
-msgstr ""
+msgstr "איתור דקות"
 
 #: server/activities/clockgame/ClockgameEditor.qml:29
 msgctxt "ClockgameEditor|"
 msgid "Find seconds"
-msgstr ""
+msgstr "איתור שניות"
 
 #: server/activities/clockgame/ClockgameEditor.qml:30
 msgctxt "ClockgameEditor|"
@@ -587,12 +587,12 @@ msgstr ""
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "השגיאות הבאות דורשות תיקון:<ul>%1</ul>"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:160
 msgctxt "FractionsCreateEditor|"
 msgid "Rectangle"
-msgstr ""
+msgstr "מרובע"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:161
 msgctxt "FractionsCreateEditor|"
@@ -698,14 +698,14 @@ msgctxt "ActivityEditor|"
 msgid ""
 "\"Additions\" must contain a list of additions which results are between 0 "
 "and 9."
-msgstr ""
+msgstr "„חיבורים” אמור להכיל רשימה של תוספות שהתוצאות שלהן הן בין 0 ל־9."
 
 #: server/activities/learn_additions/ActivityEditor.qml:18
 #: server/activities/learn_subtractions/ActivityEditor.qml:18
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Number of circles\" can not be smaller than the largest result to find."
-msgstr ""
+msgstr "„כמות העיגולים” לא יכולה להיות קטנה מהתוצאה הגדולה ביותר לאיתור."
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:28
 msgctxt "LearnDecimalsEditor|"
@@ -835,7 +835,7 @@ msgstr "„מספרים” חייב להכיל רשימת מספרים בין 0 
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Number of circles\" can not be smaller than the largest number to find."
-msgstr ""
+msgstr "„כמות העיגולים” לא יכולה להיות קטנה מהמספר הגדול ביותר לאיתור."
 
 #. %1 is an operation, %2 the result. Example: "2 x 5 = 10"
 #: server/activities/learn_digits/LearnDigitsDataDisplay.qml:24
@@ -854,7 +854,7 @@ msgstr "תשובה: %1"
 #: server/activities/learn_digits/LearnDigitsEditor.qml:32
 msgctxt "LearnDigitsEditor|"
 msgid "Number of circles"
-msgstr ""
+msgstr "כמות העיגולים"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:33
 msgctxt "LearnDigitsEditor|"
@@ -1050,19 +1050,19 @@ msgstr "רמה %1 לא יכולה להיות ריקה."
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Question\" in Sublevel %1 of Level %2 must not be empty."
-msgstr ""
+msgstr "„שאלה” בתת־שלב %1 של השלב %2 לא יכולה להיות ריקה."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:143
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Answers\" in Sublevel %1 of Level %2 must not be empty."
-msgstr ""
+msgstr "„תשובות” בתת־שלב %1 של השלב %2 לא יכולות להיות ריקות."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:148
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Correct answers\" in Sublevel %1 of Level %2 must not be empty."
-msgstr ""
+msgstr "„התשובות הנכונות” בתת־שלב %1 של השלב %2 לא יכולות להיות ריקות."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:155
 #, qt-format
@@ -1071,12 +1071,13 @@ msgid ""
 "In Sublevel %1 of Level %2, the correct answer \"%3\" is not in the \"Answers"
 "\" list."
 msgstr ""
+"בתת־שלב %1 של השלב %2, התשובה הנכונה היא „%3” אינה מופיעה ברשימת ה„תשובות”."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:163
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "השגיאות הבאות דורשות תיקון:<ul>%1</ul>"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:171
 msgctxt "MultipleChoiceEditor|"
@@ -1247,37 +1248,37 @@ msgstr "לא ניתן למחוק את הקבוצה <b>%1</b> מהטבלה group_
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Pupil login <b>%1</b> already exists or password is empty."
-msgstr ""
+msgstr "פרטי הכניסה של התלמיד/ה <b>%1</b> כבר קיימים או שהסיסמה ריקה."
 
 #: server/controllers/database-controller.cpp:502
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "<b>%1</b> could not be updated to <b>%2</b>."
-msgstr ""
+msgstr "לא ניתן לעדכן את <b>%1</b> ל־<b>%2</b>."
 
 #: server/controllers/database-controller.cpp:522
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table user_."
-msgstr ""
+msgstr "לא ניתן למחוק את המשתמש <b>%1</b> מהטבלה user_‎."
 
 #: server/controllers/database-controller.cpp:527
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table result_."
-msgstr ""
+msgstr "לא ניתן למחוק את המשתמש <b>%1</b> מהטבלה result_‎."
 
 #: server/controllers/database-controller.cpp:542
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table group_user_."
-msgstr ""
+msgstr "לא ניתן למחוק את המשתמש <b>%1</b> מהטבלה group_user_‎."
 
 #: server/controllers/database-controller.cpp:557
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> already exists in group <b>%2</b>."
-msgstr ""
+msgstr "המשתמש <b>%1</b> כבר קיים בקבוצה <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:572
 #, qt-format
@@ -1301,7 +1302,7 @@ msgstr "שגיאה בהוספת פעילות: %1"
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> already exists."
-msgstr ""
+msgstr "סדרת הנתונים <b>%1</b> כבר קיימת."
 
 #: server/controllers/database-controller.cpp:682
 #, qt-format
