@@ -1,18 +1,18 @@
-# SPDX-FileCopyrightText: 2025 Yaron Shahrabani <sh.yaron@gmail.com>
+# SPDX-FileCopyrightText: 2026 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-01-03 16:18+0200\n"
-"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: צוות התרגום של KDE ישראל\n"
-"Language: he\n"
+"PO-Revision-Date: 2026-01-03 14:42+0100\n"
+"Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
+"Language-Team: pl\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 25.08.2\n"
 "X-Qt-Contexts: true\n"
-"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
-"n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 25.12.0\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
 #: server/activities/binary_bulb/ActivityEditor.qml:12
@@ -23,7 +23,7 @@ msgstr ""
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:13
 msgctxt "ActivityEditor|"
 msgid "Rules to create a valid dataset:"
-msgstr "כללים ליצירת סדרת נתונים תקפה:"
+msgstr "Zasady tworzenia prawidłowego zestawu danych:"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
@@ -32,6 +32,9 @@ msgid ""
 "minimum between the \"Sublevels\" value and the result of: (\"Maximum start "
 "number\" - \"Minimum start number\") / \"Step between numbers\" + 1."
 msgstr ""
+"Po zaznaczeniu \"Losowa liczba początkowa\", liczba podpoziomów będzie "
+"minimum z wartości \"Podpoziomów\" i wyniku: (\"Największa liczba początkowa"
+"\" - \"Najmniejsza liczba początkowa\") / \"Krok pomiędzy liczbami\" + 1."
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
@@ -40,6 +43,9 @@ msgid ""
 "contain only numbers, and each of them will be used as start number for a "
 "sublevel."
 msgstr ""
+"Gdy \"Losowa liczba początkowa\" nie jest zaznaczona, to lista \"Liczb "
+"początkowych\" może zawierać tylko liczby, a każda z nich zostanie użyta "
+"jako liczba początkowa dla podpoziomu."
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:19
 msgctxt "ActivityEditor|"
@@ -50,92 +56,99 @@ msgid ""
 "1. Also, the length of the list can not be greater than \"Sequence length\" "
 "- 2, to always have at least 2 visible numbers in the sequence."
 msgstr ""
+"\"Położenie brakujących liczb\" musi zawierać listę liczb odpowiadających "
+"indeksowi liczb od znalezienia. Liczby indeksu zaczynają się od 0 (pierwsza "
+"liczba w ciągu) i nie mogą być większe niż \"Długość ciągu\" - 1. Długość "
+"listy nie może być też większa niż \"Długość ciągu\" - 2, aby zawsze mieć 2 "
+"widoczne liczby w ciągu."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:36
 msgctxt "AdjacentNumbersDataDisplay|"
 msgid "Tiles:"
-msgstr "אריחים:"
+msgstr "Kafelki:"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:60
 msgctxt "AdjacentNumbersDataDisplay|"
 msgid "Answer:"
-msgstr "תשובה:"
+msgstr "Odpowiedź:"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:28
 msgctxt "AdjacentNumbersEditor|"
 msgid "Random start numbers"
-msgstr "מספרי התחלה אקראיים"
+msgstr "Losowe liczby początkowe"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:29
 msgctxt "AdjacentNumbersEditor|"
 msgid "Sublevels"
-msgstr "תת־שלבים"
+msgstr "Podpoziomy"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:30
 msgctxt "AdjacentNumbersEditor|"
 msgid "Start numbers"
-msgstr "מספרי התחלה"
+msgstr "Liczby początkowe"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:31
 msgctxt "AdjacentNumbersEditor|"
 msgid "Minimum start number"
-msgstr "מספר ההתחלה המזערי"
+msgstr "Najmniejsza liczba początkowa"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:32
 msgctxt "AdjacentNumbersEditor|"
 msgid "Maximum start number"
-msgstr "מספר ההתחלה המרבי"
+msgstr "Największa liczba początkowa"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:33
 msgctxt "AdjacentNumbersEditor|"
 msgid "Step between numbers"
-msgstr "הפרש בין המספרים"
+msgstr "Krok pomiędzy liczbami"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:34
 msgctxt "AdjacentNumbersEditor|"
 msgid "Sequence length"
-msgstr "אורך רצף"
+msgstr "Długość ciągu"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:35
 msgctxt "AdjacentNumbersEditor|"
 msgid "Position of missing numbers"
-msgstr "מקום המספרים החסרים"
+msgstr "Położenie brakujących liczb"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:36
 msgctxt "AdjacentNumbersEditor|"
 msgid "Proposed numbers"
-msgstr "מספרים מוצעים"
+msgstr "Proponowane liczby"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:98
 msgctxt "AdjacentNumbersEditor|"
 msgid "Dataset is empty."
-msgstr "סדרת הנתונים ריקה."
+msgstr "Zestaw danych jest pusty."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:100
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Start numbers\" must contain only numbers, and not be empty."
-msgstr "„מספרי התחלה” חייב להכיל מספרים בלבד, ולא יכול להיות ריק."
+msgstr "\"Liczby początkowe\" mogą zawierać tylko liczby i nie mogą być puste."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:102
 msgctxt "AdjacentNumbersEditor|"
 msgid ""
 "\"Position of missing numbers\" must contain only numbers, and not be empty."
-msgstr "„מקום המספרים החסרים” חייב להכיל מספרים בלבד, ולא יכול להיות ריק."
+msgstr ""
+"\"Położenia brakujących liczb\" mogą zawierać tylko liczby i nie mogą być "
+"puste."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:104
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Position of missing numbers\" contains too much numbers."
-msgstr "„מקום המספרים החסרים” מכיל יותר מדי מספרים."
+msgstr "\\\"Położenie brakujących liczb\\\" zawiera zbyt wiele liczb."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:106
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Position of missing numbers\" contains invalid numbers."
-msgstr "„מקום המספרים החסרים” מכיל מספרים שגויים."
+msgstr "\\\"Położenie brakujących liczb\\\" zawiera nieprawidłowe liczby."
 
 #: server/activities/algebra_by/AlgebraDataDisplay.qml:19
 msgctxt "AlgebraDataDisplay|"
 msgid "timeout"
-msgstr "תום זמן המתנה"
+msgstr "przekroczenie czasu"
 
 #. %1 is an operation, %2 the result. Example: "2 x 5 = 10"
 #: server/activities/algebra_by/AlgebraDataDisplay.qml:22
@@ -149,12 +162,12 @@ msgstr "%1 = %2"
 #, qt-format
 msgctxt "AlgebraDataDisplay|"
 msgid "Answer: %1"
-msgstr "תשובה: %1"
+msgstr "Odpowiedź: %1"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:25
 msgctxt "AlgebraEditor|"
 msgid "Rules to create a valid dataset:"
-msgstr "כללים ליצירת סדרת נתונים תקפה:"
+msgstr "Zasady tworzenia prawidłowego zestawu danych:"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:27
 msgctxt "AlgebraEditor|"
@@ -164,6 +177,11 @@ msgid ""
 "be large enough to generate enough questions for the given number of "
 "sublevels using the minimum and maximum operand values."
 msgstr ""
+"Po zaznaczeniu \"Losowe operatory\", jeśli \"Ograniczenie wartości wyniku\" "
+"jest większe niż 0, to określa ono największy dopuszczalny wynik działania. "
+"Musi ono być wystarczająco duże, aby wytworzyć wystarczająco dużo pytań dla "
+"danej liczby podpoziomów przy użyciu minimalnych i maksymalnych wartości "
+"operandów."
 
 #: server/activities/algebra_by/AlgebraEditor.qml:29
 msgctxt "AlgebraEditor|"
@@ -171,47 +189,49 @@ msgid ""
 "If \"Random operands\" is not selected, the sublevel list on the right side "
 "must not be empty."
 msgstr ""
+"Gdy \"Losowe operatory\" nie są zaznaczone, to lista podpoziomów po prawej "
+"stronie nie może być pusta."
 
 #: server/activities/algebra_by/AlgebraEditor.qml:33
 msgctxt "AlgebraEditor|"
 msgid "Random operands"
-msgstr ""
+msgstr "Losowe operandy"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:34
 #: server/activities/algebra_by/AlgebraEditor.qml:39
 msgctxt "AlgebraEditor|"
 msgid "Sublevels"
-msgstr "תת־שלבים"
+msgstr "Podpoziomy"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:35
 msgctxt "AlgebraEditor|"
 msgid "Minimum operand value"
-msgstr ""
+msgstr "Najmniejsza wartość operandu"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:36
 msgctxt "AlgebraEditor|"
 msgid "Maximum operand value"
-msgstr ""
+msgstr "Największa wartość operandu"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:37
 msgctxt "AlgebraEditor|"
 msgid "Result value limit"
-msgstr ""
+msgstr "Ograniczenie wartości wyniku"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:38
 msgctxt "AlgebraEditor|"
 msgid "Shuffle"
-msgstr "ערבוב"
+msgstr "Wymieszaj"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:44
 msgctxt "AlgebraEditor|"
 msgid "First operand"
-msgstr ""
+msgstr "Pierwszy operand"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:45
 msgctxt "AlgebraEditor|"
 msgid "Second operand"
-msgstr ""
+msgstr "Drugi operand"
 
 #: server/activities/algebra_div/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
@@ -221,6 +241,10 @@ msgid ""
 "multiplying the right side operand by another number between minimum and "
 "maximum values."
 msgstr ""
+"Po zaznaczeniu \"Losowe operatory\", prawy operand jest zawsze pomiędzy "
+"wartością minimalną a maksymalną. Lewy operand jest tworzony z mnożenia "
+"operandu po prawej przez inną liczbę pomiędzy wartością minimalną a "
+"maksymalną."
 
 #: server/activities/algebra_div/ActivityEditor.qml:18
 msgctxt "ActivityEditor|"
@@ -228,47 +252,50 @@ msgid ""
 "If \"Random operands\" is not selected, for each sublevel you must make sure "
 "that the \"First operand\" is a multiple of the \"Second operand\"."
 msgstr ""
+"Gdy \"Losowe operatory\" nie są zaznaczone, dla każdego podpoziomu musisz "
+"upewnić się, że \"Pierwszy operand\" jest wielokrotnością \"Drugiego operandu"
+"\"."
 
 #: server/activities/algebra_div/ActivityEditor.qml:23
 msgctxt "ActivityEditor|"
 msgid "Random operands"
-msgstr ""
+msgstr "Losowe operandy"
 
 #: server/activities/algebra_div/ActivityEditor.qml:24
 #: server/activities/algebra_div/ActivityEditor.qml:29
 msgctxt "ActivityEditor|"
 msgid "Sublevels"
-msgstr "תת־שלבים"
+msgstr "Podpoziomy"
 
 #: server/activities/algebra_div/ActivityEditor.qml:25
 msgctxt "ActivityEditor|"
 msgid "Minimum operand value"
-msgstr ""
+msgstr "Najmniejsza wartość operandu"
 
 #: server/activities/algebra_div/ActivityEditor.qml:26
 msgctxt "ActivityEditor|"
 msgid "Maximum operand value"
-msgstr ""
+msgstr "Największa wartość operandu"
 
 #: server/activities/algebra_div/ActivityEditor.qml:27
 msgctxt "ActivityEditor|"
 msgid "Result value limit"
-msgstr "מגבלת ערך תוצאה"
+msgstr "Ograniczenie wartości wyniku"
 
 #: server/activities/algebra_div/ActivityEditor.qml:28
 msgctxt "ActivityEditor|"
 msgid "Shuffle"
-msgstr "ערבוב"
+msgstr "Wymieszaj"
 
 #: server/activities/algebra_div/ActivityEditor.qml:34
 msgctxt "ActivityEditor|"
 msgid "First operand"
-msgstr ""
+msgstr "Pierwszy operand"
 
 #: server/activities/algebra_div/ActivityEditor.qml:35
 msgctxt "ActivityEditor|"
 msgid "Second operand"
-msgstr ""
+msgstr "Drugi operand"
 
 #: server/activities/algebra_minus/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
@@ -276,6 +303,8 @@ msgid ""
 "If \"Random operands\" is not selected, for each sublevel you must make sure "
 "that the \"First operand\" is greater than the \"Second operand\"."
 msgstr ""
+"Gdy \"Losowe operatory\" nie są zaznaczone, dla każdego podpoziomu musisz "
+"upewnić się, że \"Pierwszy operand\" jest większy od \"Drugiego operandu\"."
 
 #: server/activities/binary_bulb/ActivityEditor.qml:14
 msgctxt "ActivityEditor|"
@@ -284,16 +313,20 @@ msgid ""
 "list of integer numbers. Each number must be between 0 and the maximum "
 "number which can be represented with the given \"Bulb count\"."
 msgstr ""
+"Gdy \"Losowe liczby\" nie jest zaznaczone, to \"Liczby do znalezienia\" "
+"muszą zawierać listę liczb całkowitych. Każda liczba musi być z zakresu 0 "
+"oraz największej liczby, która może być przedstawiona przy użyciu danej "
+"\"Liczby żarówki\"."
 
 #: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:28
 msgctxt "BinaryBulbDataDisplay|"
 msgid "Expected:"
-msgstr "מצופה:"
+msgstr "Oczekiwane:"
 
 #: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:34
 msgctxt "BinaryBulbDataDisplay|"
 msgid "Answer:"
-msgstr "תשובה:"
+msgstr "Odpowiedź:"
 
 #. %1 is the numerical value, %2 is the binary value. Example: "5 (101)"
 #: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:46
@@ -306,48 +339,48 @@ msgstr "%1 (%2)"
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:28
 msgctxt "BinaryBulbEditor|"
 msgid "Random numbers"
-msgstr "מספרים אקראיים"
+msgstr "Losowe liczby"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:29
 msgctxt "BinaryBulbEditor|"
 msgid "Sublevels"
-msgstr "תת־שלבים"
+msgstr "Podpoziomy"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:30
 msgctxt "BinaryBulbEditor|"
 msgid "Numbers to find"
-msgstr "מספרים למצוא"
+msgstr "Liczby do znalezienia"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:31
 msgctxt "BinaryBulbEditor|"
 msgid "Shuffle questions"
-msgstr "ערבוב שאלות"
+msgstr "Wymieszaj pytania"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:32
 msgctxt "BinaryBulbEditor|"
 msgid "Bulb count"
-msgstr "כמות נורות"
+msgstr "Liczba żarówek"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:33
 msgctxt "BinaryBulbEditor|"
 msgid "Display the current result"
-msgstr "הצגת התוצאה הנוכחית"
+msgstr "Wyświetl bieżący wynik"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:34
 msgctxt "BinaryBulbEditor|"
 msgid "Display the bulb values"
-msgstr "הצגת ערכי הנורות"
+msgstr "Wyświetl wartości żarówek"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:87
 msgctxt "BinaryBulbEditor|"
 msgid "Dataset is empty."
-msgstr "סדרת הנתונים ריקה."
+msgstr "Zestaw danych jest pusty."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:101
 #, qt-format
 msgctxt "BinaryBulbEditor|"
 msgid "\"Numbers to find\" for level %1 must not be empty."
-msgstr ""
+msgstr "\"Liczby do znalezienia\" dla poziomu %1 nie mogą być puste."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:115
 #, qt-format
@@ -356,145 +389,145 @@ msgid ""
 "These values are invalid for level %1: %2. The values must be integer "
 "numbers between 0 and %3."
 msgstr ""
-"הערכים האלה שגויים לשלב %1: %2. הערכים חייבים להיות מספרים שלמים וחיוביים "
-"בין 0 ל־%3."
+"Te wartości są nieprawidłowe dla poziomu %1: %2. Wartości muszą być liczbami "
+"całkowitymi spomiędzy 0 oraz %3."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:119
 #, qt-format
 msgctxt "BinaryBulbEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "השגיאות הבאות דורשות תיקון:<ul>%1</ul>"
+msgstr "Następujące błędy muszą zostać naprawione:<ul>%1</ul>"
 
 #: server/activities/clockgame/ClockGameDataDisplay.qml:30
 msgctxt "ClockGameDataDisplay|"
 msgid "Expected:"
-msgstr "מצופה:"
+msgstr "Oczekiwane:"
 
 #: server/activities/clockgame/ClockGameDataDisplay.qml:36
 msgctxt "ClockGameDataDisplay|"
 msgid "Answer:"
-msgstr "תשובה:"
+msgstr "Odpowiedź:"
 
 #: server/activities/clockgame/ClockgameEditor.qml:27
 msgctxt "ClockgameEditor|"
 msgid "Exercise count"
-msgstr "כמות תרגולים"
+msgstr "Liczba ćwiczeń"
 
 #: server/activities/clockgame/ClockgameEditor.qml:28
 msgctxt "ClockgameEditor|"
 msgid "Find minutes"
-msgstr "איתור דקות"
+msgstr "Znajdź minuty"
 
 #: server/activities/clockgame/ClockgameEditor.qml:29
 msgctxt "ClockgameEditor|"
 msgid "Find seconds"
-msgstr "איתור שניות"
+msgstr "Znajdź sekundy"
 
 #: server/activities/clockgame/ClockgameEditor.qml:30
 msgctxt "ClockgameEditor|"
 msgid "Display hours numbers"
-msgstr "הצגת מספרי שעות"
+msgstr "Wyświetl liczby godzin"
 
 #: server/activities/clockgame/ClockgameEditor.qml:31
 msgctxt "ClockgameEditor|"
 msgid "Display hours marks"
-msgstr "הצגת סימוני שעות"
+msgstr "Wyświetl znaczniki godzin"
 
 #: server/activities/clockgame/ClockgameEditor.qml:32
 msgctxt "ClockgameEditor|"
 msgid "Grey/white background between each hour"
-msgstr "רקע אפור/שחור מתחלף בין השעות"
+msgstr "Szare/białe tło pomiędzy każdą godziną"
 
 #: server/activities/clockgame/ClockgameEditor.qml:33
 msgctxt "ClockgameEditor|"
 msgid "Display minutes numbers"
-msgstr "הצגת מספרי שעות"
+msgstr "Wyświetl liczby minut"
 
 #: server/activities/clockgame/ClockgameEditor.qml:34
 msgctxt "ClockgameEditor|"
 msgid "Hide the Hint button in the bar (which gives the current time)"
-msgstr "הסתרת כפתור הרמז מהסרגל (מה שמספק את השעה הנוכחית)"
+msgstr "Ukryj przycisk Podpowiedzi na pasku (który podaje aktualny czas)"
 
 #: server/activities/clockgame/ClockgameEditor.qml:35
 msgctxt "ClockgameEditor|"
 msgid "Fixed hour"
-msgstr "שעה קבועה"
+msgstr "Stała godzina"
 
 #: server/activities/clockgame/ClockgameEditor.qml:36
 #: server/activities/clockgame/ClockgameEditor.qml:38
 #: server/activities/clockgame/ClockgameEditor.qml:40
 msgctxt "ClockgameEditor|"
 msgid "Value"
-msgstr "ערך"
+msgstr "Wartość"
 
 #: server/activities/clockgame/ClockgameEditor.qml:37
 msgctxt "ClockgameEditor|"
 msgid "Fixed minutes"
-msgstr "דקות קבועות"
+msgstr "Stałe minuty"
 
 #: server/activities/clockgame/ClockgameEditor.qml:39
 msgctxt "ClockgameEditor|"
 msgid "Fixed seconds"
-msgstr "שניות קבועות"
+msgstr "Stałe sekundy"
 
 #: server/activities/comparator/ComparatorDataDisplay.qml:30
 msgctxt "ComparatorDataDisplay|"
 msgid "Result:"
-msgstr "תוצאה:"
+msgstr "Wynik:"
 
 #: server/activities/comparator/ComparatorEditor.qml:29
 msgctxt "ComparatorEditor|"
 msgid "Shuffle"
-msgstr "ערבוב"
+msgstr "Wymieszaj"
 
 #: server/activities/comparator/ComparatorEditor.qml:30
 msgctxt "ComparatorEditor|"
 msgid "Questions"
-msgstr "שאלות"
+msgstr "Pytania"
 
 #: server/activities/comparator/ComparatorEditor.qml:36
 msgctxt "ComparatorEditor|"
 msgid "Left number"
-msgstr "מספר שמאלי"
+msgstr "Lewa liczba"
 
 #: server/activities/comparator/ComparatorEditor.qml:37
 msgctxt "ComparatorEditor|"
 msgid "Right number"
-msgstr "מספר ימני"
+msgstr "Prawa liczba"
 
 #: server/activities/comparator/ComparatorEditor.qml:109
 msgctxt "ComparatorEditor|"
 msgid "Dataset is empty."
-msgstr "סדרת הנתונים ריקה."
+msgstr "Zestaw danych jest pusty."
 
 #: server/activities/comparator/ComparatorEditor.qml:119
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "Level %1 must not be empty."
-msgstr "רמה %1 לא יכולה להיות ריקה."
+msgstr "Poziom %1 nie może być pusty."
 
 #: server/activities/comparator/ComparatorEditor.qml:126
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "\"Left number\" in Question %1 of Level %2 must contain a number."
-msgstr ""
+msgstr "\\\"Lewa liczba\\\" w Pytaniu %1 Poziomu %2 musi zawierać liczbę."
 
 #: server/activities/comparator/ComparatorEditor.qml:130
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "\"Right number\" in Question %1 of Level %2 must contain a number."
-msgstr ""
+msgstr "\\\"Prawa liczba\\\" w Pytaniu %1 Poziomu %2 musi zawierać liczbę."
 
 #: server/activities/comparator/ComparatorEditor.qml:136
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "השגיאות הבאות דורשות תיקון:<ul>%1</ul>"
+msgstr "Następujące błędy muszą zostać naprawione:<ul>%1</ul>"
 
 #: server/activities/DailyReport.qml:33
 msgctxt "DailyReport|"
 msgid "All groups"
-msgstr "כל הקבוצות"
+msgstr "Wszystkie grupy"
 
 #. Group name first, then Date range, with a space between them. Example: "Group Name 01/07/2025-08/07/2025"
 #: server/activities/DailyReport.qml:126
@@ -506,29 +539,29 @@ msgstr "%1 %2"
 #: server/activities/DailyReport.qml:130
 msgctxt "DailyReport|"
 msgid "Calendar"
-msgstr "לוח שנה"
+msgstr "Kalendarz"
 
 #: server/activities/DailyReport.qml:185
 msgctxt "DailyReport|"
 msgid "Count"
-msgstr "כמות"
+msgstr "Liczba"
 
 #: server/activities/DailyReport.qml:195
 msgctxt "DailyReport|"
 msgid "Time"
-msgstr "זמן"
+msgstr "Czas"
 
 #: server/activities/DailyReport.qml:205
 msgctxt "DailyReport|"
 msgid "Ratio"
-msgstr "יחס"
+msgstr "Stosunek"
 
 #. Number of result lines
 #: server/activities/DailyReport.qml:217
 #, qt-format
 msgctxt "DailyReport|"
 msgid "Lines: %1"
-msgstr "שורות: %1"
+msgstr "Linie: %1"
 
 #. Success ratio, example: "50 %"
 #: server/activities/DailyReport.qml:316
@@ -541,303 +574,308 @@ msgstr "%1 %"
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Instruction\" must contain some text telling the fraction to represent."
-msgstr ""
+msgstr "\"Instrukcja\" może zawierać tekst mówiący o ułamku do przedstawienia."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:29
 msgctxt "FractionsCreateEditor|"
 msgid "Shuffle"
-msgstr "ערבוב"
+msgstr "Wymieszaj"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:30
 msgctxt "FractionsCreateEditor|"
 msgid "Questions"
-msgstr "שאלות"
+msgstr "Pytania"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:36
 msgctxt "FractionsCreateEditor|"
 msgid "Numerator"
-msgstr "מונה"
+msgstr "Licznik"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:37
 msgctxt "FractionsCreateEditor|"
 msgid "Denominator"
-msgstr "מכנה"
+msgstr "Mianownik"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:38
 msgctxt "FractionsCreateEditor|"
 msgid "Instruction"
-msgstr "הנחיה"
+msgstr "Instrukcja"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:130
 msgctxt "FractionsCreateEditor|"
 msgid "Dataset is empty."
-msgstr "סדרת הנתונים ריקה."
+msgstr "Zestaw danych jest pusty."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:140
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "Level %1 must not be empty."
-msgstr "רמה %1 לא יכולה להיות ריקה."
+msgstr "Poziom %1 nie może być pusty."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:146
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "\"Instruction\" of Question %1 from Level %2 must not be empty."
-msgstr ""
+msgstr "\\\"Instrukcja\\\" Pytania %1 z Poziomu %2 nie może być pusta."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:152
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "השגיאות הבאות דורשות תיקון:<ul>%1</ul>"
+msgstr "Następujące błędy muszą zostać naprawione:<ul>%1</ul>"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:160
 msgctxt "FractionsCreateEditor|"
 msgid "Rectangle"
-msgstr "מרובע"
+msgstr "Prostokąt"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:161
 msgctxt "FractionsCreateEditor|"
 msgid "Circle"
-msgstr "עיגול"
+msgstr "Okrąg"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:164
 msgctxt "FractionsCreateEditor|"
 msgid "Chart Type"
-msgstr "סוג תרשים"
+msgstr "Rodzaj wykresu"
 
 #: server/activities/fractions_find/FractionsFindDataDisplay.qml:26
 msgctxt "FractionsFindDataDisplay|"
 msgid "Expected:"
-msgstr "מצופה:"
+msgstr "Oczekiwane:"
 
 #: server/activities/fractions_find/FractionsFindDataDisplay.qml:60
 msgctxt "FractionsFindDataDisplay|"
 msgid "Answer:"
-msgstr "תשובה:"
+msgstr "Odpowiedź:"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:29
 msgctxt "FractionsFindEditor|"
 msgid "Shuffle"
-msgstr "ערבוב"
+msgstr "Wymieszaj"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:30
 msgctxt "FractionsFindEditor|"
 msgid "Questions"
-msgstr "שאלות"
+msgstr "Pytania"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:36
 msgctxt "FractionsFindEditor|"
 msgid "Static numerator"
-msgstr "מונה קבוע"
+msgstr "Stały licznik"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:37
 msgctxt "FractionsFindEditor|"
 msgid "Static denominator"
-msgstr "מכנה קבוע"
+msgstr "Stały mianownik"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:38
 msgctxt "FractionsFindEditor|"
 msgid "Numerator"
-msgstr "מונה"
+msgstr "Licznik"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:39
 msgctxt "FractionsFindEditor|"
 msgid "Denominator"
-msgstr "מכנה"
+msgstr "Mianownik"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:40
 msgctxt "FractionsFindEditor|"
 msgid "Maximum of units"
-msgstr ""
+msgstr "Maksimum jednostek"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:41
 msgctxt "FractionsFindEditor|"
 msgid "Random fraction"
-msgstr "שבר אקראי"
+msgstr "Losowy ułamek"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:159
 msgctxt "FractionsFindEditor|"
 msgid "Dataset is empty."
-msgstr "סדרת הנתונים ריקה."
+msgstr "Zestaw danych jest pusty."
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:169
 #, qt-format
 msgctxt "FractionsFindEditor|"
 msgid "Level %1 must not be empty."
-msgstr "רמה %1 לא יכולה להיות ריקה."
+msgstr "Poziom %1 nie może być pusty."
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:173
 #, qt-format
 msgctxt "FractionsFindEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "השגיאות הבאות דורשות תיקון:<ul>%1</ul>"
+msgstr "Następujące błędy muszą zostać naprawione:<ul>%1</ul>"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:181
 msgctxt "FractionsFindEditor|"
 msgid "Rectangle"
-msgstr "מרובע"
+msgstr "Prostokąt"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:182
 msgctxt "FractionsFindEditor|"
 msgid "Circle"
-msgstr "עיגול"
+msgstr "Okrąg"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:185
 msgctxt "FractionsFindEditor|"
 msgid "Chart Type"
-msgstr "סוג תרשים"
+msgstr "Rodzaj wykresu"
 
 #. %1 is number of hints displayed. Example: "Hints: 1"
 #: server/activities/guess24/Guess24DataDisplay.qml:79
 #, qt-format
 msgctxt "Guess24DataDisplay|"
 msgid "Hints: %1"
-msgstr "רמזים: %1"
+msgstr "Podpowiedzi: %1"
 
 #: server/activities/learn_additions/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Additions\" must contain a list of additions which results are between 0 "
 "and 9."
-msgstr "„חיבורים” אמור להכיל רשימה של תוספות שהתוצאות שלהן הן בין 0 ל־9."
+msgstr ""
+"\"Dodawania\" mogą zawierać listę dodawań, których wyniki znajdują pomiędzy "
+"0 a 9."
 
 #: server/activities/learn_additions/ActivityEditor.qml:18
 #: server/activities/learn_subtractions/ActivityEditor.qml:18
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Number of circles\" can not be smaller than the largest result to find."
-msgstr "„כמות העיגולים” לא יכולה להיות קטנה מהתוצאה הגדולה ביותר לאיתור."
+msgstr ""
+"\"Liczba okręgów\" nie może być mniejsza niż największy wynik do znalezienia."
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:28
 msgctxt "LearnDecimalsEditor|"
 msgid "Shuffle"
-msgstr "ערבוב"
+msgstr "Wymieszaj"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:29
 msgctxt "LearnDecimalsEditor|"
 msgid "Sublevels"
-msgstr "תת־שלבים"
+msgstr "Podpoziomy"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:39
 msgctxt "LearnDecimalsEditor|"
 msgid "Fixed Number"
-msgstr "מספר קבוע"
+msgstr "Stała liczba"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:40
 msgctxt "LearnDecimalsEditor|"
 msgid "Minimum Value"
-msgstr "ערך מזערי"
+msgstr "Wartość minimalna"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:41
 msgctxt "LearnDecimalsEditor|"
 msgid "Maximum Value"
-msgstr "ערך מרבי"
+msgstr "Wartość maksymalna"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:140
 msgctxt "LearnDecimalsEditor|"
 msgid "Dataset is empty."
-msgstr "סדרת הנתונים ריקה."
+msgstr "Zestaw danych jest pusty."
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:150
 #, qt-format
 msgctxt "LearnDecimalsEditor|"
 msgid "Level %1 must not be empty."
-msgstr "רמה %1 לא יכולה להיות ריקה."
+msgstr "Poziom %1 nie może być pusty."
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:154
 #, qt-format
 msgctxt "LearnDecimalsEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "השגיאות הבאות דורשות תיקון:<ul>%1</ul>"
+msgstr "Następujące błędy muszą zostać naprawione:<ul>%1</ul>"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:162
 msgctxt "LearnDecimalsEditor|"
 msgid "Random"
-msgstr "אקראי"
+msgstr "Losowy"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:163
 msgctxt "LearnDecimalsEditor|"
 msgid "Fixed"
-msgstr "קבוע"
+msgstr "Stały"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:168
 msgctxt "LearnDecimalsEditor|"
 msgid "Mode"
-msgstr "מצב"
+msgstr "Tryb"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:29
 msgctxt "DecimalAdditionEditor|"
 msgid "Shuffle"
-msgstr "ערבוב"
+msgstr "Wymieszaj"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:30
 msgctxt "DecimalAdditionEditor|"
 msgid "Sublevels"
-msgstr "תת־שלבים"
+msgstr "Podpoziomy"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:41
 msgctxt "DecimalAdditionEditor|"
 msgid "First Number"
-msgstr "מספר ראשון"
+msgstr "Pierwsza liczba"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:42
 msgctxt "DecimalAdditionEditor|"
 msgid "Second Number"
-msgstr "מספר שני"
+msgstr "Druga liczba"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:43
 msgctxt "DecimalAdditionEditor|"
 msgid "Minimum Value"
-msgstr "ערך מזערי"
+msgstr "Wartość minimalna"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:44
 msgctxt "DecimalAdditionEditor|"
 msgid "Maximum Value"
-msgstr "ערך מרבי"
+msgstr "Wartość maksymalna"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:182
 msgctxt "DecimalAdditionEditor|"
 msgid "Dataset is empty."
-msgstr "סדרת הנתונים ריקה."
+msgstr "Zestaw danych jest pusty."
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:192
 #, qt-format
 msgctxt "DecimalAdditionEditor|"
 msgid "Level %1 must not be empty."
-msgstr "רמה %1 לא יכולה להיות ריקה."
+msgstr "Poziom %1 nie może być pusty."
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:196
 #, qt-format
 msgctxt "DecimalAdditionEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "השגיאות הבאות דורשות תיקון:<ul>%1</ul>"
+msgstr "Następujące błędy muszą zostać naprawione:<ul>%1</ul>"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:204
 msgctxt "DecimalAdditionEditor|"
 msgid "Random"
-msgstr "אקראי"
+msgstr "Losowy"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:205
 msgctxt "DecimalAdditionEditor|"
 msgid "Fixed"
-msgstr "קבוע"
+msgstr "Stały"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:210
 msgctxt "DecimalAdditionEditor|"
 msgid "Mode"
-msgstr "מצב"
+msgstr "Tryb"
 
 #: server/activities/learn_digits/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
 msgid "\"Numbers\" must contain a list of numbers between 0 and 9."
-msgstr "„מספרים” חייב להכיל רשימת מספרים בין 0 ל־9."
+msgstr "\\\"Liczby\\\" muszą zawierać listę liczb od 0 do 9."
 
 #: server/activities/learn_digits/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Number of circles\" can not be smaller than the largest number to find."
-msgstr "„כמות העיגולים” לא יכולה להיות קטנה מהמספר הגדול ביותר לאיתור."
+msgstr ""
+"\"Liczba okręgów\" nie może być mniejsza niż największa liczba do "
+"znalezienia."
 
 #. %1 is an operation, %2 the result. Example: "2 x 5 = 10"
 #: server/activities/learn_digits/LearnDigitsDataDisplay.qml:24
@@ -851,22 +889,22 @@ msgstr "%1 = %2"
 #, qt-format
 msgctxt "LearnDigitsDataDisplay|"
 msgid "Answer: %1"
-msgstr "תשובה: %1"
+msgstr "Odpowiedź: %1"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:32
 msgctxt "LearnDigitsEditor|"
 msgid "Number of circles"
-msgstr "כמות העיגולים"
+msgstr "Liczba okręgów"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:33
 msgctxt "LearnDigitsEditor|"
 msgid "Random order"
-msgstr "סדר אקראי"
+msgstr "Losowa kolejność"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:99
 msgctxt "LearnDigitsEditor|"
 msgid "Dataset is empty."
-msgstr "סדרת הנתונים ריקה."
+msgstr "Zestaw danych jest pusty."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:101
 msgctxt "LearnDigitsEditor|"
@@ -874,7 +912,8 @@ msgid ""
 "\"Numbers\" must only contain integer numbers between 0 and 9, and must not "
 "be empty."
 msgstr ""
-"„מספרים” חייבים להכיל רק מספרים שלמים וחיוביים בין 0 ל־9, ואסור שיהיו ריקים."
+"\"Liczby\" mogą zawierać tylko liczby całkowite pomiędzy 0 a 9 i nie mogą "
+"być puste."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:103
 msgctxt "LearnDigitsEditor|"
@@ -882,6 +921,8 @@ msgid ""
 "\"Additions\" must only contain additions which results are integer numbers "
 "between 0 and 9, and must not be empty."
 msgstr ""
+"\"Dodawania\" mogą zawierać tylko dodawania, których wyniki są liczbami "
+"całkowitymi pomiędzy 0 a 9 i nie mogą być puste."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:105
 msgctxt "LearnDigitsEditor|"
@@ -889,36 +930,38 @@ msgid ""
 "\"Subtractions\" must only contain subtractions which results are integer "
 "numbers between 0 and 9, and must not be empty."
 msgstr ""
+"\"Odejmowania\" mogą zawierać tylko odejmowania, których wyniki są liczbami "
+"całkowitymi pomiędzy 0 a 9 i nie mogą być puste."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:161
 msgctxt "LearnDigitsEditor|"
 msgid "Numbers"
-msgstr "מספרים"
+msgstr "Liczby"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:163
 msgctxt "LearnDigitsEditor|"
 msgid "Additions"
-msgstr "חיבורים"
+msgstr "Dodawania"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:165
 msgctxt "LearnDigitsEditor|"
 msgid "Subtractions"
-msgstr "חיסורים"
+msgstr "Odejmowania"
 
 #: server/activities/learn_quantities/ActivityEditor.qml:24
 msgctxt "ActivityEditor|"
 msgid "Fixed Number"
-msgstr "מספר קבוע"
+msgstr "Stała liczba"
 
 #: server/activities/learn_quantities/ActivityEditor.qml:25
 msgctxt "ActivityEditor|"
 msgid "Minimum Value"
-msgstr "ערך מזערי"
+msgstr "Wartość minimalna"
 
 #: server/activities/learn_quantities/ActivityEditor.qml:26
 msgctxt "ActivityEditor|"
 msgid "Maximum Value"
-msgstr "ערך מרבי"
+msgstr "Wartość maksymalna"
 
 #: server/activities/learn_subtractions/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
@@ -926,35 +969,37 @@ msgid ""
 "\"Subtractions\" must contain a list of subtractions which results are "
 "between 0 and 9."
 msgstr ""
+"\"Odejmowania\" mogą zawierać listę odejmowań, których wyniki znajdują "
+"pomiędzy 0 a 9."
 
 #: server/activities/LineReport.qml:65
 msgctxt "LineReport|"
 msgid "Back"
-msgstr "חזרה"
+msgstr "Wstecz"
 
 #: server/activities/LineReport.qml:71
 msgctxt "LineReport|"
 msgid "Refresh"
-msgstr "ריענון"
+msgstr "Odśwież"
 
 #: server/activities/LineReport.qml:77
 #, qt-format
 msgctxt "LineReport|"
 msgid "Lines: %1"
-msgstr "שורות: %1"
+msgstr "Linie: %1"
 
 #: server/activities/LineReport.qml:227
 #, qt-format
 msgctxt "LineReport|"
 msgid "Level: <b>%1</b>"
-msgstr "שלב: <b>%1</b>"
+msgstr "Poziom: <b>%1</b>"
 
 #. Result duration in seconds. Example: "Duration: 25s"
 #: server/activities/LineReport.qml:243 server/activities/LineReport.qml:253
 #, qt-format
 msgctxt "LineReport|"
 msgid "Duration: %1s"
-msgstr "משך: %1 שנ׳"
+msgstr "Czas trwania: %1s"
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
@@ -962,6 +1007,9 @@ msgid ""
 "In \"Single answer\" mode, users can select only one answer. In \"Multiple "
 "answers\" mode, they can select multiple answers."
 msgstr ""
+"W trybie \"Pojedynczej odpowiedzi\" użytkownik może wybrać tylko jedną "
+"odpowiedź. W trybie \"Wielu odpowiedzi\" użytkownik może wybrać wiele "
+"odpowiedzi."
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
@@ -969,6 +1017,8 @@ msgid ""
 "All entries in the \"Correct answers\" list must also be present in the "
 "\"Answers\" list."
 msgstr ""
+"Wszystkie wpisy na liście \"Poprawnych odpowiedzi\" muszą także znajdować "
+"się na liście \"Odpowiedzi\"."
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:19
 msgctxt "ActivityEditor|"
@@ -977,95 +1027,99 @@ msgid ""
 "displayed after users validate their answer. You can leave those empty if "
 "you want."
 msgstr ""
+"\"Tekst poprawnej odpowiedzi\" oraz \"Tekst niepoprawnej odpowiedzi\" są "
+"dobrowolnymi wiadomościami wyświetlanymi po tym jak użytkownik sprawdzi "
+"swoje odpowiedzi. Mogą one pozostać pustymi, jeśli chcesz."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:27
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Question:"
-msgstr "שאלה:"
+msgstr "Pytanie:"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:33
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Answer:"
-msgstr "תשובה:"
+msgstr "Odpowiedź:"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:39
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Expected:"
-msgstr "מצופה:"
+msgstr "Oczekiwane:"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:45
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Proposed:"
-msgstr "מוצע:"
+msgstr "Proponowane:"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:29
 msgctxt "MultipleChoiceEditor|"
 msgid "Shuffle"
-msgstr "ערבוב"
+msgstr "Wymieszaj"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:30
 msgctxt "MultipleChoiceEditor|"
 msgid "Sublevels"
-msgstr "תת־שלבים"
+msgstr "Podpoziomy"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:36
 msgctxt "MultipleChoiceEditor|"
 msgid "Shuffle answers"
-msgstr "ערבוב תשובות"
+msgstr "Wymieszaj odpowiedzi"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:37
 msgctxt "MultipleChoiceEditor|"
 msgid "Question"
-msgstr "שאלה"
+msgstr "Pytanie"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:38
 msgctxt "MultipleChoiceEditor|"
 msgid "Answers"
-msgstr "תשובות"
+msgstr "Odpowiedzi"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:39
 msgctxt "MultipleChoiceEditor|"
 msgid "Correct answers"
-msgstr "תשובות נכונות"
+msgstr "Poprawne odpowiedzi"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:40
 msgctxt "MultipleChoiceEditor|"
 msgid "Correct answer text"
-msgstr "טקסט תשובה נכונה"
+msgstr "Tekst poprawnej odpowiedzi"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:41
 msgctxt "MultipleChoiceEditor|"
 msgid "Wrong answer text"
-msgstr "טקסט תשובה שגויה"
+msgstr "Tekst niepoprawnej odpowiedzi"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:121
 msgctxt "MultipleChoiceEditor|"
 msgid "Dataset is empty."
-msgstr "סדרת הנתונים ריקה."
+msgstr "Zestaw danych jest pusty."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:131
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "Level %1 must not be empty."
-msgstr "רמה %1 לא יכולה להיות ריקה."
+msgstr "Poziom %1 nie może być pusty."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:138
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Question\" in Sublevel %1 of Level %2 must not be empty."
-msgstr "„שאלה” בתת־שלב %1 של השלב %2 לא יכולה להיות ריקה."
+msgstr "\\\"Pytanie\\\" w Podpoziomie %1 Poziomu %2 nie może być puste."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:143
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Answers\" in Sublevel %1 of Level %2 must not be empty."
-msgstr "„תשובות” בתת־שלב %1 של השלב %2 לא יכולות להיות ריקות."
+msgstr "\\\"Odpowiedzi\\\" w Podpoziomie %1 Poziomu %2 nie mogą być puste."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:148
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Correct answers\" in Sublevel %1 of Level %2 must not be empty."
-msgstr "„התשובות הנכונות” בתת־שלב %1 של השלב %2 לא יכולות להיות ריקות."
+msgstr ""
+"\\\"Poprawne odpowiedzi\\\" w Podpoziomie %1 Poziomu %2 nie mogą być puste."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:155
 #, qt-format
@@ -1074,128 +1128,129 @@ msgid ""
 "In Sublevel %1 of Level %2, the correct answer \"%3\" is not in the \"Answers"
 "\" list."
 msgstr ""
-"בתת־שלב %1 של השלב %2, התשובה הנכונה היא „%3” אינה מופיעה ברשימת ה„תשובות”."
+"W podpoziomie %1 poziomu %2, poprawna odpowiedź \"%3\" nie znajduje się na "
+"liście \"Odpowiedzi\"."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:163
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "השגיאות הבאות דורשות תיקון:<ul>%1</ul>"
+msgstr "Następujące błędy muszą zostać naprawione:<ul>%1</ul>"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:171
 msgctxt "MultipleChoiceEditor|"
 msgid "Single answer"
-msgstr "תשובה יחידה"
+msgstr "Pojedyncza odpowiedź"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:172
 msgctxt "MultipleChoiceEditor|"
 msgid "Multiple answers"
-msgstr "מגוון תשובות"
+msgstr "Wiele odpowiedzi"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:177
 msgctxt "MultipleChoiceEditor|"
 msgid "Mode"
-msgstr "מצב"
+msgstr "Tryb"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:29
 msgctxt "VerticalEditor|"
 msgid "Sublevels"
-msgstr "תת־שלבים"
+msgstr "Podpoziomy"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:31
 msgctxt "VerticalEditor|"
 msgid "Number of digits"
-msgstr "מספר הספרות"
+msgstr "Liczba cyfr"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:33
 msgctxt "VerticalEditor|"
 msgid "Number of lines"
-msgstr "מספר השורות"
+msgstr "Liczba linii"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:34
 msgctxt "VerticalEditor|"
 msgid "With carry"
-msgstr ""
+msgstr "Z przeniesieniem"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:35
 msgctxt "VerticalEditor|"
 msgid "Already laid"
-msgstr ""
+msgstr "Już ułożone"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:36
 msgctxt "VerticalEditor|"
 msgid "Write your operation"
-msgstr ""
+msgstr "Napisz swoje działanie"
 
 #: server/components/CalendarPane.qml:77
 msgctxt "CalendarPane|"
 msgid "Calendar"
-msgstr "לוח שנה"
+msgstr "Kalendarz"
 
 #: server/components/CheckUserEditDelegate.qml:34
 msgctxt "CheckUserEditDelegate|"
 msgid "Edit pupil"
-msgstr "עריכת תלמיד/ה"
+msgstr "Edytuj ucznia"
 
 #: server/components/EditorBox.qml:84
 msgctxt "EditorBox|"
 msgid "Add"
-msgstr "הוספה"
+msgstr "Dodaj"
 
 #: server/components/EditorBox.qml:95
 msgctxt "EditorBox|"
 msgid "Remove"
-msgstr "הסרה"
+msgstr "Usuń"
 
 #: server/components/EditorBox.qml:107
 msgctxt "EditorBox|"
 msgid "Move up"
-msgstr "העלאה למעלה"
+msgstr "Przenieś w górę"
 
 #: server/components/EditorBox.qml:118
 msgctxt "EditorBox|"
 msgid "Move down"
-msgstr "הורדה למטה"
+msgstr "Przenieś w dół"
 
 #: server/components/FieldEdit.qml:318
 msgctxt "FieldEdit|"
 msgid "Add an entry"
-msgstr "הוספת רשומה"
+msgstr "Dodaj wpis"
 
 #: server/components/FieldEdit.qml:330
 msgctxt "FieldEdit|"
 msgid "Remove last entry"
-msgstr "הסרת הרשומה האחרונה"
+msgstr "Usuń ostatni wpis"
 
 #: server/components/FoldDown.qml:138
 msgctxt "FoldDown|"
 msgid "Filter list"
-msgstr "סינון רשימה"
+msgstr "Filtruj listę"
 
 #: server/components/OkCancelButtons.qml:19
 msgctxt "OkCancelButtons|"
 msgid "OK"
-msgstr "אישור"
+msgstr "OK"
 
 #: server/components/OkCancelButtons.qml:20
 msgctxt "OkCancelButtons|"
 msgid "Cancel"
-msgstr "ביטול"
+msgstr "Anuluj"
 
 #: server/components/RadioGroupEditDelegate.qml:60
 msgctxt "RadioGroupEditDelegate|"
 msgid "Edit group"
-msgstr "עריכת קבוצה"
+msgstr "Edytuj grupę"
 
 #: server/components/RadioGroupEditDelegate.qml:72
 msgctxt "RadioGroupEditDelegate|"
 msgid "Delete group"
-msgstr "מחיקת קבוצה"
+msgstr "Usuń grupę"
 
 #: server/components/ServerLanguageList.qml:32
 msgctxt "ServerLanguageList|"
 msgid "Your system default"
-msgstr "לפי המערכת"
+msgstr "Domyślne ustawienia systemu"
 
 #: server/controllers/database-controller.cpp:83
 #: server/controllers/database-controller.cpp:89
@@ -1205,260 +1260,260 @@ msgid ""
 "File %1\n"
 "Error SQL: %2"
 msgstr ""
-"קובץ %1\n"
-"שגיאת SQL‏: %2"
+"Plik %1\n"
+"Błąd SQL: %2"
 
 #: server/controllers/database-controller.cpp:125
 msgctxt "controllers::DatabaseController|"
 msgid "Table teacher_ could not be updated to current version."
-msgstr "לא ניתן לעדכן את הטבלה teacher_‎ לגרסה הנוכחית."
+msgstr "Tabela teacher_ nie mogła zostać zaktualizowana do bieżącej wersji."
 
 #: server/controllers/database-controller.cpp:351
 msgctxt "controllers::DatabaseController|"
 msgid "Error creating teacher."
-msgstr "שגיאה ביצירת מורה."
+msgstr "Błąd tworzenia nauczyciela."
 
 #: server/controllers/database-controller.cpp:373
 msgctxt "controllers::DatabaseController|"
 msgid "Wrong password."
-msgstr "סיסמה שגויה."
+msgstr "Nieprawidłowe hasło."
 
 #: server/controllers/database-controller.cpp:417
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> already exists."
-msgstr "הקבוצה <b>%1</b> כבר קיימת."
+msgstr "Grupa <b>%1</b> już istnieje."
 
 #: server/controllers/database-controller.cpp:438
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be updated to <b>%2</b>."
-msgstr "לא ניתן לעדכן את הקבוצה <b>%1</b> לכדי <b>%2</b>."
+msgstr "Grupa <b>%1</b> nie mogła zostać zaktualizowana do <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:456
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_."
-msgstr "לא ניתן למחוק את הקבוצה <b>%1</b> מהטבלה group_‎."
+msgstr "Grupa <b>%1</b> nie mogła zostać usunięta z tabeli group_."
 
 #: server/controllers/database-controller.cpp:459
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_user_."
-msgstr "לא ניתן למחוק את הקבוצה <b>%1</b> מהטבלה group_user_‎."
+msgstr "Grupy <b>%1</b> nie można usunąć z tabeli group_user_."
 
 #: server/controllers/database-controller.cpp:483
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Pupil login <b>%1</b> already exists or password is empty."
-msgstr "פרטי הכניסה של התלמיד/ה <b>%1</b> כבר קיימים או שהסיסמה ריקה."
+msgstr "Login ucznia <b>%1</b> już istnieje lub hasło jest puste."
 
 #: server/controllers/database-controller.cpp:502
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "<b>%1</b> could not be updated to <b>%2</b>."
-msgstr "לא ניתן לעדכן את <b>%1</b> ל־<b>%2</b>."
+msgstr "<b>%1</b> nie mogło zostać zaktualizowane do <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:522
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table user_."
-msgstr "לא ניתן למחוק את המשתמש <b>%1</b> מהטבלה user_‎."
+msgstr "Użytkownik <b>%1</b> nie mógł zostać usunięty z tabeli user_."
 
 #: server/controllers/database-controller.cpp:527
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table result_."
-msgstr "לא ניתן למחוק את המשתמש <b>%1</b> מהטבלה result_‎."
+msgstr "Użytkownik <b>%1</b> nie mógł zostać usunięty z tabeli result_."
 
 #: server/controllers/database-controller.cpp:542
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table group_user_."
-msgstr "לא ניתן למחוק את המשתמש <b>%1</b> מהטבלה group_user_‎."
+msgstr "Użytkownik <b>%1</b> nie można usunąć z tabeli group_user_."
 
 #: server/controllers/database-controller.cpp:557
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> already exists in group <b>%2</b>."
-msgstr "המשתמש <b>%1</b> כבר קיים בקבוצה <b>%2</b>."
+msgstr "Użytkownik <b>%1</b> już istnieje w grupie <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:572
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> group <b>%2</b> couldn't be deleted."
-msgstr ""
+msgstr "Grupa <b>%2</b> użytkownika <b>%1</b> nie mogła zostać usunięta."
 
 #: server/controllers/database-controller.cpp:607
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Result could not be added for user <b>%1</b>"
-msgstr "לא ניתן להוסיף תוצאה למשתמש <b>%1</b>"
+msgstr "Wynik nie mógł zostać dodany dla użytkownika <b>%1</b>"
 
 #: server/controllers/database-controller.cpp:619
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Error inserting activity: %1"
-msgstr "שגיאה בהוספת פעילות: %1"
+msgstr "Błąd wstawiania aktywności: %1"
 
 #: server/controllers/database-controller.cpp:665
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> already exists."
-msgstr "סדרת הנתונים <b>%1</b> כבר קיימת."
+msgstr "Zestaw danych <b>%1</b> już istnieje."
 
 #: server/controllers/database-controller.cpp:682
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> could not be updated to <b>%2</b>."
-msgstr "לא ניתן לעדכן את סדרת הנתונים <b>%1</b> לכדי <b>%2</b>."
+msgstr "Zestaw danych <b>%1</b> nie mógł zostać zaktualizowany do <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:697
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> couldn't be deleted."
-msgstr "לא ניתן למחוק את סדרת הנתונים <b>%1</b>."
+msgstr "Nie można usunąć zestawu danych <b>%1</b>."
 
 #: server/controllers/network-controller.cpp:46
 #, qt-format
 msgctxt "controllers::NetworkController|"
 msgid "Unable to start the server: %1."
-msgstr "לא ניתן להפעיל את השרת: %1."
+msgstr "Nie można uruchomić serwera: %1."
 
 #: server/dialogs/CreateDbDialog.qml:19
 msgctxt "CreateDbDialog|"
 msgid "You are about to create a new GCompris database."
-msgstr "הפעולה הזאת תיצור מסד נתונים חדש של ג׳יקומפרי."
+msgstr "Zamierzasz utworzyć nową bazę danych GCompris."
 
 #: server/dialogs/CreateDbDialog.qml:39
 msgctxt "CreateDbDialog|"
 msgid "Database file"
-msgstr "קובץ מסד נתונים"
+msgstr "Plik bazy danych"
 
 #: server/dialogs/CreateDbDialog.qml:41
 msgctxt "CreateDbDialog|"
 msgid "created in:"
-msgstr ""
+msgstr "utworzony w:"
 
 #: server/dialogs/CreateDbDialog.qml:65
 msgctxt "CreateDbDialog|"
 msgid "New database creation"
-msgstr "יצירת מסד נתונים חדש"
+msgstr "Tworzenie nowej bazy danych"
 
 #: server/dialogs/CreateDbDialog.qml:93
 msgctxt "CreateDbDialog|"
 msgid "Teacher login"
-msgstr "כניסת מורה"
+msgstr "Login nauczyciela"
 
 #: server/dialogs/CreateDbDialog.qml:113
 msgctxt "CreateDbDialog|"
 msgid "Password"
-msgstr "סיסמה"
+msgstr "Hasło"
 
 #: server/dialogs/CreateDbDialog.qml:129
 msgctxt "CreateDbDialog|"
 msgid "Encrypted database (enabled by default)"
-msgstr "מסד נתונים מוצפן (פעיל כברירת מחדל)"
+msgstr "Zaszyfrowana baza danych (domyślnie włączona)"
 
 #: server/dialogs/DatasetEditorDialog.qml:52
 msgctxt "DatasetEditorDialog|"
 msgid "Create dataset"
-msgstr "יצירת סדרת נתונים"
+msgstr "Utwórz zestaw danych"
 
 #: server/dialogs/DatasetEditorDialog.qml:62
 msgctxt "DatasetEditorDialog|"
 msgid "Update dataset"
-msgstr "עדכון סדרת נתונים"
+msgstr "Aktualizuj zestaw danych"
 
 #: server/dialogs/DatasetEditorDialog.qml:76
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name is empty"
-msgstr "שם סדרת הנתונים ריק"
+msgstr "Nazwa zestawu danych jest pusta"
 
 #: server/dialogs/DatasetEditorDialog.qml:83
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty should be between 1 and 6"
-msgstr "דרגת הקושי צריכה להיות בין 1 ל־6"
+msgstr "Trudność powinna być pomiędzy 1 a 6"
 
 #: server/dialogs/DatasetEditorDialog.qml:236
 msgctxt "DatasetEditorDialog|"
 msgid "INVALID DATASET"
-msgstr "סדרת נתונים שגויה"
+msgstr "NIEPRAWIDŁOWY ZESTAW DANYCH"
 
 #: server/dialogs/DatasetEditorDialog.qml:339
 msgctxt "DatasetEditorDialog|"
 msgid "Editor"
-msgstr "עורך"
+msgstr "Edytor"
 
 #: server/dialogs/DatasetEditorDialog.qml:342
 msgctxt "DatasetEditorDialog|"
 msgid "Raw JSON"
-msgstr "JSON גולמי"
+msgstr "Surowy JSON"
 
 #: server/dialogs/DatasetEditorDialog.qml:372
 msgctxt "DatasetEditorDialog|"
 msgid "Activity name"
-msgstr "שם הפעילות"
+msgstr "Nazwa aktywności"
 
 #: server/dialogs/DatasetEditorDialog.qml:386
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name"
-msgstr "שם סדרת נתונים"
+msgstr "Nazwa zestawu danych"
 
 #: server/dialogs/DatasetEditorDialog.qml:400
 msgctxt "DatasetEditorDialog|"
 msgid "Goal"
-msgstr "יעד"
+msgstr "Cel"
 
 #: server/dialogs/DatasetEditorDialog.qml:414
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty"
-msgstr "קושי"
+msgstr "Trudność"
 
 #: server/dialogs/DatasetEditorDialog.qml:512
 msgctxt "DatasetEditorDialog|"
 msgid "Instructions"
-msgstr "הנחיות"
+msgstr "Instrukcje"
 
 #: server/dialogs/DatasetEditorDialog.qml:518
 msgctxt "DatasetEditorDialog|"
 msgid "No specific instructions for this editor."
-msgstr "אין הנחיות נקודתיות לעורך הזה."
+msgstr "Brak szczegółowych instrukcji dla tego edytora."
 
 #: server/dialogs/ErrorDialog.qml:46
 msgctxt "ErrorDialog|"
 msgid "Information"
-msgstr "פרטים"
+msgstr "Informacja"
 
 #: server/dialogs/ExportPupilsDialog.qml:79
 msgctxt "ExportPupilsDialog|"
 msgid "Export pupils to CSV file"
-msgstr "ייצוא תלמידים לקובץ CSV"
+msgstr "Eksportuj uczniów do pliku CSV"
 
 #: server/dialogs/ExportPupilsDialog.qml:121
 msgctxt "ExportPupilsDialog|"
 msgid "Save file"
-msgstr "שמירת קובץ"
+msgstr "Zapisz plik"
 
 #: server/dialogs/ExportPupilsDialog.qml:131
 msgctxt "ExportPupilsDialog|"
 msgid "Pupils"
-msgstr "תלמידים"
+msgstr "Uczniowie"
 
 #: server/dialogs/GroupDialog.qml:114
 msgctxt "GroupDialog|"
 msgid "Name"
-msgstr "שם"
+msgstr "Nazwa"
 
 #: server/dialogs/GroupDialog.qml:128
 msgctxt "GroupDialog|"
 msgid "Description"
-msgstr "תיאור"
+msgstr "Opis"
 
 #: server/dialogs/ImportPupilsDialog.qml:70
 msgctxt "ImportPupilsDialog|"
 msgid "Import pupils from CSV file"
-msgstr "ייבוא תלמידים מקובץ CSV"
+msgstr "Importuj uczniów z pliku CSV"
 
 #: server/dialogs/ImportPupilsDialog.qml:88
 msgctxt "ImportPupilsDialog|"
@@ -1468,94 +1523,96 @@ msgid ""
 "Patrick Dummy;group 1;1234\n"
 "Patricia Brown;group 1,group 2;4321\n"
 msgstr ""
-"תבנית: שם;קבוצות;סיסמה\n"
-"למשל:\n"
-"אלעד מדומה;קבוצה 1;1234\n"
-"ירדן בן־יוסף;קבוצה 1,קבוצה 2;4321\n"
+"Format: nazwa;grupy;hasło\n"
+"Przykład:\n"
+"Patryk Fikcyjny;grupa 1;1234\n"
+"Patrycja Brązowa;grupa 1,grupa 2;4321\n"
 
 #: server/dialogs/ImportPupilsDialog.qml:94
 msgctxt "ImportPupilsDialog|"
 msgid "Add CSV file"
-msgstr "הוספת קובץ CSV"
+msgstr "Dodaj plik CSV"
 
 #: server/dialogs/ImportPupilsDialog.qml:141
 msgctxt "ImportPupilsDialog|"
 msgid "Import pupils"
-msgstr "ייבוא תלמידים"
+msgstr "Importuj uczniów"
 
 #: server/dialogs/PupilDialog.qml:59
 msgctxt "PupilDialog|"
 msgid "Pupil's name is empty"
-msgstr "שם התלמיד/ה ריק"
+msgstr "Nazwa ucznia jest pusta"
 
 #: server/dialogs/PupilDialog.qml:153
 msgctxt "PupilDialog|"
 msgid "Pupil's name"
-msgstr "שם התלמיד/ה"
+msgstr "Nazwa ucznia"
 
 #: server/dialogs/PupilDialog.qml:166
 msgctxt "PupilDialog|"
 msgid "Password"
-msgstr "סיסמה"
+msgstr "Hasło"
 
 #: server/dialogs/PupilDialog.qml:217
 msgctxt "PupilDialog|"
 msgid "Password images:"
-msgstr "תמונות סיסמה:"
+msgstr "Obrazy hasła:"
 
 #: server/dialogs/PupilDialog.qml:252
 msgctxt "PupilDialog|"
 msgid "Groups"
-msgstr "קבוצות"
+msgstr "Grupy"
 
 #: server/dialogs/PupilsToGroupsDialog.qml:87
 msgctxt "PupilsToGroupsDialog|"
 msgid "Select the groups to add these pupils to:"
-msgstr "נא לבחור קבוצות אליהן להוסיף את התלמידים הבאים:"
+msgstr "Wybierz grupy, do których dodać tych uczniów:"
 
 #: server/dialogs/PupilsToGroupsDialog.qml:88
 msgctxt "PupilsToGroupsDialog|"
 msgid "Select the groups from which to remove these pupils:"
-msgstr "נא לבחור קבוצות מהן להסיר את התלמידים הבאים:"
+msgstr "Wybierz grupy, z których usunąć tych uczniów:"
 
 #: server/dialogs/RemoveDatasetDialog.qml:70
 msgctxt "RemoveDatasetDialog|"
 msgid ""
 "Are you sure you want to delete the following dataset from the database?"
-msgstr "למחוק את סדרת הנתונים הבאה ממסד הנתונים?"
+msgstr "Czy na pewno chcesz usunąć następujący zestaw danych z bazy danych?"
 
 #: server/dialogs/RemovePupilsDialog.qml:76
 msgctxt "RemovePupilsDialog|"
 msgid ""
 "Are you sure you want to remove the following pupils from the database ?"
-msgstr "להסיר את התלמידים הבאים ממסד הנתונים?"
+msgstr "Czy na pewno chcesz usunąć następujących uczniów z bazy danych?"
 
 #: server/dialogs/SendDatasetDialog.qml:93
 msgctxt "SendDatasetDialog|"
 msgid "Do you want to send the dataset to selected pupils?"
-msgstr "לשלוח את סדרת התונים לתלמידים הנבחרים?"
+msgstr "Czy chcesz wysłać zestaw danych do wybranych uczniów?"
 
 #: server/dialogs/SendDatasetDialog.qml:94
 msgctxt "SendDatasetDialog|"
 msgid "Are you sure you want to remove the dataset from selected pupils?"
-msgstr "להסיר את סדרת הנתונים מהתלמידים הנבחרים?"
+msgstr "Czy na pewno chcesz usunąć zestaw danych od wybranych uczniów?"
 
 #: server/dialogs/SendDatasetDialog.qml:95
 msgctxt "SendDatasetDialog|"
 msgid ""
 "Are you sure you want to remove all the existing datasets from selected "
 "pupils?"
-msgstr "להסיר את כל סדרות הנתונים הקיימות מהתלמידים הנבחרים?"
+msgstr ""
+"Czy na pewno chcesz usunąć wszystkie istniejące zestawy danych od wybranych "
+"uczniów?"
 
 #: server/dialogs/SendDatasetDialog.qml:129
 msgctxt "SendDatasetDialog|"
 msgid "Pupils"
-msgstr "תלמידים"
+msgstr "Uczniowie"
 
 #: server/dialogs/SqlLineDialog.qml:19
 msgctxt "SqlLineDialog|"
 msgid "Line details"
-msgstr "פרטי שורה"
+msgstr "Szczegóły linii"
 
 #: server/dialogs/SqlLineDialog.qml:151
 msgctxt "SqlLineDialog|"
@@ -1570,685 +1627,685 @@ msgstr ">"
 #: server/dialogs/SqlLineDialog.qml:191
 msgctxt "SqlLineDialog|"
 msgid "Close"
-msgstr "סגירה"
+msgstr "Zamknij"
 
 #: server/Main.qml:48
 msgctxt "Main|"
 msgid "GCompris Teachers Tool"
-msgstr "כלי המורים של ג׳יקומפרי"
+msgstr "Narzędzie Nauczycieli GCompris"
 
 #: server/panels/NavigationPanel.qml:70
 msgctxt "NavigationPanel|"
 msgid "Login"
-msgstr "כניסה"
+msgstr "Logowanie"
 
 #: server/panels/NavigationPanel.qml:78
 msgctxt "NavigationPanel|"
 msgid "Pupils and Groups"
-msgstr "תלמידים וקבוצות"
+msgstr "Uczniowie i Grupy"
 
 #: server/panels/NavigationPanel.qml:86
 msgctxt "NavigationPanel|"
 msgid "Connect devices"
-msgstr "חיבור מכשירים"
+msgstr "Połącz urządzenia"
 
 #: server/panels/NavigationPanel.qml:94
 msgctxt "NavigationPanel|"
 msgid "Activities"
-msgstr "פעילויות"
+msgstr "Aktywności"
 
 #: server/panels/NavigationPanel.qml:102
 msgctxt "NavigationPanel|"
 msgid "Datasets"
-msgstr "סדרות נתונים"
+msgstr "Zestawy danych"
 
 #: server/panels/NavigationPanel.qml:110
 msgctxt "NavigationPanel|"
 msgid "Charts"
-msgstr "תרשימים"
+msgstr "Wykresy"
 
 #: server/panels/NavigationPanel.qml:118
 msgctxt "NavigationPanel|"
 msgid "Settings"
-msgstr "הגדרות"
+msgstr "Ustawienia"
 
 #: server/panels/NavigationPanel.qml:126
 msgctxt "NavigationPanel|"
 msgid "Development (WIP)"
-msgstr "פיתוח (בטיפול)"
+msgstr "Rozwój (W trakcie)"
 
 #: server/panels/SelectorPanel.qml:51
 msgctxt "SelectorPanel|"
 msgid "Groups"
-msgstr "קבוצות"
+msgstr "Grupy"
 
 #: server/panels/SelectorPanel.qml:71
 msgctxt "SelectorPanel|"
 msgid "Pupils"
-msgstr "תלמידים"
+msgstr "Uczniowie"
 
 #: server/panels/SelectorPanel.qml:87
 msgctxt "SelectorPanel|"
 msgid "Activities"
-msgstr "פעילויות"
+msgstr "Aktywności"
 
 #: server/singletons/Master.qml:32
 msgctxt "Master|"
 msgid "User ID"
-msgstr "מזהה משתמש"
+msgstr "ID użytkownika"
 
 #: server/singletons/Master.qml:33
 msgctxt "Master|"
 msgid "Name"
-msgstr "שם"
+msgstr "Nazwa"
 
 #: server/singletons/Master.qml:34
 msgctxt "Master|"
 msgid "Names"
-msgstr "שמות"
+msgstr "Nazwy"
 
 #: server/singletons/Master.qml:35
 msgctxt "Master|"
 msgid "Password"
-msgstr "סיסמה"
+msgstr "Hasło"
 
 #: server/singletons/Master.qml:36
 msgctxt "Master|"
 msgid "Users IDs"
-msgstr "מזהי משתמשים"
+msgstr "ID użytkowników"
 
 #: server/singletons/Master.qml:37
 msgctxt "Master|"
 msgid "Activity Id"
-msgstr "מזהה פעילות"
+msgstr "ID aktywności"
 
 #: server/singletons/Master.qml:38
 msgctxt "Master|"
 msgid "Activity"
-msgstr "פעילות"
+msgstr "Aktywność"
 
 #: server/singletons/Master.qml:39
 msgctxt "Master|"
 msgid "Group"
-msgstr "קבוצה"
+msgstr "Grupa"
 
 #: server/singletons/Master.qml:40
 msgctxt "Master|"
 msgid "Description"
-msgstr "תיאור"
+msgstr "Opis"
 
 #: server/singletons/Master.qml:41
 msgctxt "Master|"
 msgid "Groups"
-msgstr "קבוצות"
+msgstr "Grupy"
 
 #: server/singletons/Master.qml:42
 msgctxt "Master|"
 msgid "Groups IDs"
-msgstr "מזהי קבוצות"
+msgstr "ID grup"
 
 #: server/singletons/Master.qml:43 server/singletons/Master.qml:47
 msgctxt "Master|"
 msgid "Date"
-msgstr "תאריך"
+msgstr "Data"
 
 #: server/singletons/Master.qml:44 server/singletons/Master.qml:49
 msgctxt "Master|"
 msgid "Success"
-msgstr "הצליח"
+msgstr "Sukces"
 
 #: server/singletons/Master.qml:45
 msgctxt "Master|"
 msgid "Duration"
-msgstr "משך"
+msgstr "Czas trwania"
 
 #: server/singletons/Master.qml:46
 msgctxt "Master|"
 msgid "Data"
-msgstr "נתונים"
+msgstr "Dane"
 
 #: server/singletons/Master.qml:48
 msgctxt "Master|"
 msgid "Count"
-msgstr "כמות"
+msgstr "Liczba"
 
 #: server/singletons/Master.qml:50
 msgctxt "Master|"
 msgid "Failed"
-msgstr "נכשל"
+msgstr "Nieudane"
 
 #: server/singletons/Master.qml:51
 msgctxt "Master|"
 msgid "Success ratio"
-msgstr "יחס הצלחה"
+msgstr "Stosunek sukcesów"
 
 #: server/views/ChartsView.qml:97
 msgctxt "ChartsView|"
 msgid "Activities"
-msgstr "פעילויות"
+msgstr "Aktywności"
 
 #: server/views/ChartsView.qml:101
 msgctxt "ChartsView|"
 msgid "Pupils"
-msgstr "תלמידים"
+msgstr "Uczniowie"
 
 #: server/views/datas/AllData.qml:69
 msgctxt "AllData|"
 msgid "Available requests"
-msgstr "בקשות זמינות"
+msgstr "Dostępne żądania"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "All users activities"
-msgstr "כל פעילויות המשתמשים"
+msgstr "Aktywności wszystkich użytkowników"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "Pupils activities"
-msgstr "פעילויות תלמידים"
+msgstr "Aktywności uczniów"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "All groups"
-msgstr "כל הקבוצות"
+msgstr "Wszystkie grupy"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "Failed activities"
-msgstr "פעילויות שכשלו"
+msgstr "Nieudane aktywności"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "User's groups"
-msgstr "קבוצות המשתמש"
+msgstr "Grupy użytkownika"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "Group's users"
-msgstr "משתמשי הקבוצה"
+msgstr "Użytkownicy grupy"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "Daily activities"
-msgstr "פעילויות יומיות"
+msgstr "Dzienne aktywności"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "Daily ratios"
-msgstr "יחסים יומיים"
+msgstr "Dzienne stosunki"
 
 #. Number of lines
 #: server/views/datas/AllData.qml:90
 #, qt-format
 msgctxt "AllData|"
 msgid "%1 lines"
-msgstr "%1 שורות"
+msgstr "%1 linii"
 
 #: server/views/datas/DuplicateData.qml:175
 msgctxt "DuplicateData|"
 msgid "Commands"
-msgstr "פקודות"
+msgstr "Polecenia"
 
 #: server/views/datas/DuplicateData.qml:188
 msgctxt "DuplicateData|"
 msgid "Random date"
-msgstr "תאריך אקראי"
+msgstr "Losowa data"
 
 #: server/views/datas/DuplicateData.qml:195
 msgctxt "DuplicateData|"
 msgid "Duplicate"
-msgstr "שכפול"
+msgstr "Powiel"
 
 #: server/views/datas/DuplicateData.qml:199
 msgctxt "DuplicateData|"
 msgid "You are about to duplicate datas"
-msgstr "הפעולה הזאת תשכפל את הנתונים"
+msgstr "Zamierzasz powielić dane"
 
 #: server/views/datas/DuplicateData.qml:199
 #: server/views/datas/DuplicateData.qml:212
 msgctxt "DuplicateData|"
 msgid "No action now"
-msgstr "אין פעולה כרגע"
+msgstr "Brak działania teraz"
 
 #: server/views/datas/DuplicateData.qml:208
 msgctxt "DuplicateData|"
 msgid "Delete"
-msgstr "מחיקה"
+msgstr "Usuń"
 
 #: server/views/datas/DuplicateData.qml:212
 msgctxt "DuplicateData|"
 msgid "You are about to delete datas"
-msgstr "הפעולה הזאת תמחק את הנתונים"
+msgstr "Zamierzasz usunąć dane"
 
 #: server/views/datas/DuplicateData.qml:230
 msgctxt "DuplicateData|"
 msgid "Copy to"
-msgstr "העתקה אל"
+msgstr "Kopiuj do"
 
 #: server/views/DatasetsView.qml:49
 msgctxt "DatasetsView|"
 msgid "Activities"
-msgstr "פעילויות"
+msgstr "Aktywności"
 
 #: server/views/DatasetsView.qml:69
 msgctxt "DatasetsView|"
 msgid "Datasets"
-msgstr "סדרות נתונים"
+msgstr "Zestawy danych"
 
 #: server/views/DatasetsView.qml:101
 msgctxt "DatasetsView|"
 msgid "Datasets management"
-msgstr "ניהול סדרות נתונים"
+msgstr "Zarządzanie zestawami danych"
 
 #: server/views/DatasetsView.qml:118
 msgctxt "DatasetsView|"
 msgid "Create dataset"
-msgstr "יצירת סדרת נתונים"
+msgstr "Utwórz zestaw danych"
 
 #: server/views/DatasetsView.qml:126
 msgctxt "DatasetsView|"
 msgid "Update dataset"
-msgstr "עדכון סדרת נתונים"
+msgstr "Aktualizuj zestaw danych"
 
 #: server/views/DatasetsView.qml:134
 msgctxt "DatasetsView|"
 msgid "Send dataset to clients"
-msgstr "שליחת סדרת נתונים ללקוחות"
+msgstr "Wyślij zestaw danych do klientów"
 
 #: server/views/DatasetsView.qml:152
 msgctxt "DatasetsView|"
 msgid "Remove dataset from clients"
-msgstr "הסרת סדרת נתונים מלקוחות"
+msgstr "Usuń zestaw danych od klientów"
 
 #: server/views/DatasetsView.qml:176
 msgctxt "DatasetsView|"
 msgid "Remove all datasets from clients"
-msgstr "הסרת סדרות הנתונים מלקוחות"
+msgstr "Usuń wszystkie zestawy danych od klientów"
 
 #: server/views/DatasetsView.qml:185
 msgctxt "DatasetsView|"
 msgid "Delete dataset"
-msgstr "מחיקת סדרת נתונים"
+msgstr "Usuń zestaw danych"
 
 #: server/views/DevelopmentView.qml:43
 msgctxt "DevelopmentView|"
 msgid "Edit data"
-msgstr "עריכת נתונים"
+msgstr "Edytuj dane"
 
 #: server/views/DevelopmentView.qml:47
 msgctxt "DevelopmentView|"
 msgid "All requests"
-msgstr "כל הבקשות"
+msgstr "Wszystkie żądania"
 
 #: server/views/DevicesView.qml:52
 msgctxt "DevicesView|"
 msgid "Not connected"
-msgstr "לא מחובר"
+msgstr "Nie połączony"
 
 #: server/views/DevicesView.qml:54
 msgctxt "DevicesView|"
 msgid "Bad password input"
-msgstr "קלט סיסמה שגוי"
+msgstr "Nieprawidłowe wprowadzenie hasła"
 
 #: server/views/DevicesView.qml:56
 msgctxt "DevicesView|"
 msgid "Logged"
-msgstr "נכנסת למערכת"
+msgstr "Zalogowany"
 
 #: server/views/DevicesView.qml:58
 msgctxt "DevicesView|"
 msgid "Connection lost"
-msgstr "החיבור נקטע"
+msgstr "Utracono połączenie"
 
 #: server/views/DevicesView.qml:60
 msgctxt "DevicesView|"
 msgid "Disconnected"
-msgstr "מנותק"
+msgstr "Rozłączony"
 
 #: server/views/DevicesView.qml:62
 msgctxt "DevicesView|"
 msgid "Unknown connection status"
-msgstr "מצב החיבור לא ידוע"
+msgstr "Nieznany status połączenia"
 
 #: server/views/DevicesView.qml:84
 msgctxt "DevicesView|"
 msgid "Groups"
-msgstr "קבוצות"
+msgstr "Grupy"
 
 #: server/views/DevicesView.qml:100
 msgctxt "DevicesView|"
 msgid "Pupils"
-msgstr "תלמידים"
+msgstr "Uczniowie"
 
 #: server/views/DevicesView.qml:134
 msgctxt "DevicesView|"
 msgid "Network"
-msgstr "רשת"
+msgstr "Sieć"
 
 #: server/views/DevicesView.qml:157
 msgctxt "DevicesView|"
 msgid "Connect devices"
-msgstr "חיבור מכשירים"
+msgstr "Połącz urządzenia"
 
 #: server/views/DevicesView.qml:170
 msgctxt "DevicesView|"
 msgid "Send login list"
-msgstr "שליחת רשימת כניסה למערכת"
+msgstr "Wyślij listę logowania"
 
 #: server/views/DevicesView.qml:195
 msgctxt "DevicesView|"
 msgid "Disconnect selected pupils"
-msgstr "ניתוק התלמידים הנבחרים"
+msgstr "Rozłącz wybranych uczniów"
 
 #: server/views/DevicesView.qml:212
 msgctxt "DevicesView|"
 msgid "Disconnect everybody"
-msgstr "לנתק את כולם"
+msgstr "Rozłącz wszystkich"
 
 #: server/views/DevicesView.qml:228
 msgctxt "DevicesView|"
 msgid "Server ID:"
-msgstr "מזהה שרת:"
+msgstr "ID serwera:"
 
 #: server/views/DevicesView.qml:235
 msgctxt "DevicesView|"
 msgid "Teacher port:"
-msgstr "פתחת מורה:"
+msgstr "Port nauczyciela:"
 
 #: server/views/DevicesView.qml:242
 msgctxt "DevicesView|"
 msgid "Connected:"
-msgstr "מחובר:"
+msgstr "Połączeni:"
 
 #: server/views/DevicesView.qml:249
 msgctxt "DevicesView|"
 msgid "Logged:"
-msgstr "נכנסת למערכת:"
+msgstr "Zalogowani:"
 
 #: server/views/DevicesView.qml:256
 msgctxt "DevicesView|"
 msgid "Data received:"
-msgstr "נתונים שהתקבלו:"
+msgstr "Odebrane dane:"
 
 #: server/views/DevicesView.qml:284
 msgctxt "DevicesView|"
 msgid "Network logs"
-msgstr "יומני רשת"
+msgstr "Logi sieciowe"
 
 #: server/views/DevicesView.qml:296
 msgctxt "DevicesView|"
 msgid "Clear logs"
-msgstr "פינוי יומנים"
+msgstr "Wyczyść logi"
 
 #: server/views/DevicesView.qml:316
 #, qt-format
 msgctxt "DevicesView|"
 msgid "Server already running on port %1"
-msgstr "השרת כבר פועל דרך פתחה %1"
+msgstr "Serwer już działa na porcie %1"
 
 #: server/views/LoginView.qml:44
 msgctxt "LoginView|"
 msgid "Incorrect password"
-msgstr "סיסמה שגויה"
+msgstr "Nieprawidłowe hasło"
 
 #: server/views/LoginView.qml:48
 msgctxt "LoginView|"
 msgid "GCompris-teachers is already running on this computer"
-msgstr "ג׳יקומפרי למורים כבר פועל במחשב הזה"
+msgstr "GCompris-teachers już działa na tym komputerze"
 
 #: server/views/LoginView.qml:49
 msgctxt "LoginView|"
 msgid "Only data browsing is permitted"
-msgstr "מותר רק עיון בנתונים"
+msgstr "Dozwolone jest tylko przeglądanie danych"
 
 #: server/views/LoginView.qml:92
 msgctxt "LoginView|"
 msgid "Teacher login"
-msgstr "כניסת מורה"
+msgstr "Login nauczyciela"
 
 #: server/views/LoginView.qml:113
 msgctxt "LoginView|"
 msgid "Password"
-msgstr "סיסמה"
+msgstr "Hasło"
 
 #: server/views/LoginView.qml:131
 msgctxt "LoginView|"
 msgid "Login"
-msgstr "כניסה"
+msgstr "Logowanie"
 
 #: server/views/LoginView.qml:140
 msgctxt "LoginView|"
 msgid "Create teacher database"
-msgstr "יצירת מסד נתוני מורה"
+msgstr "Utwórz bazę danych nauczyciela"
 
 #: server/views/LoginView.qml:161
 msgctxt "LoginView|"
 msgid "Database file:"
-msgstr "קובץ מסד נתונים:"
+msgstr "Plik bazy danych:"
 
 #: server/views/LoginView.qml:174
 msgctxt "LoginView|"
 msgid "GCompris Teachers Tool"
-msgstr "כלי המורים של ג׳יקומפרי"
+msgstr "Narzędzie Nauczycieli GCompris"
 
 #: server/views/ManagePupilsView.qml:34 server/views/ManagePupilsView.qml:147
 msgctxt "ManagePupilsView|"
 msgid "Add a group"
-msgstr "הוספת קבוצה"
+msgstr "Dodaj grupę"
 
 #: server/views/ManagePupilsView.qml:44
 msgctxt "ManagePupilsView|"
 msgid "Are you sure you want to remove this group?"
-msgstr "להסיר את הקבוצה הזאת?"
+msgstr "Czy na pewno chcesz usunąć tę grupę?"
 
 #: server/views/ManagePupilsView.qml:45
 msgctxt "ManagePupilsView|"
 msgid "Pupils will not be removed."
-msgstr "לא יוסרו תלמידים."
+msgstr "Uczniowie nie zostaną usunięci."
 
 #: server/views/ManagePupilsView.qml:52
 msgctxt "ManagePupilsView|"
 msgid "Edit group"
-msgstr "עריכת קבוצה"
+msgstr "Edytuj grupę"
 
 #: server/views/ManagePupilsView.qml:68 server/views/ManagePupilsView.qml:204
 msgctxt "ManagePupilsView|"
 msgid "Add a pupil"
-msgstr "הוספת תלמיד/ה"
+msgstr "Dodaj ucznia"
 
 #: server/views/ManagePupilsView.qml:74
 msgctxt "ManagePupilsView|"
 msgid "Edit pupil's name and groups"
-msgstr "עריכת שמות וקבוצות התלמידים"
+msgstr "Edytuj nazwę ucznia i grupy"
 
 #: server/views/ManagePupilsView.qml:122
 msgctxt "ManagePupilsView|"
 msgid "Groups"
-msgstr "קבוצות"
+msgstr "Grupy"
 
 #: server/views/ManagePupilsView.qml:157
 msgctxt "ManagePupilsView|"
 msgid "Pupils and groups"
-msgstr "תלמידים וקבוצות"
+msgstr "Uczniowie i grupy"
 
 #: server/views/ManagePupilsView.qml:186
 msgctxt "ManagePupilsView|"
 msgid "Pupils management"
-msgstr "ניהול תלמידים"
+msgstr "Zarządzanie uczniami"
 
 #: server/views/ManagePupilsView.qml:212
 msgctxt "ManagePupilsView|"
 msgid "Add to groups"
-msgstr "הוספה לקבוצות"
+msgstr "Dodaj do grup"
 
 #: server/views/ManagePupilsView.qml:220
 msgctxt "ManagePupilsView|"
 msgid "Remove from groups"
-msgstr "הסרה מקבוצות"
+msgstr "Usuń z grup"
 
 #: server/views/ManagePupilsView.qml:228
 msgctxt "ManagePupilsView|"
 msgid "Export pupils"
-msgstr "ייצוא תלמידים"
+msgstr "Wyeksportuj uczniów"
 
 #: server/views/ManagePupilsView.qml:235
 msgctxt "ManagePupilsView|"
 msgid "Import pupils"
-msgstr "ייבוא תלמידים"
+msgstr "Zaimportuj uczniów"
 
 #: server/views/ManagePupilsView.qml:243
 msgctxt "ManagePupilsView|"
 msgid "Remove pupils"
-msgstr "הסרת תלמידים"
+msgstr "Usuń uczniów"
 
 #: server/views/SettingsView.qml:65
 msgctxt "SettingsView|"
 msgid "Menu panel"
-msgstr "לוח תפריט"
+msgstr "Panel menu"
 
 #: server/views/SettingsView.qml:66
 msgctxt "SettingsView|"
 msgid "Left"
-msgstr "שמאל"
+msgstr "Lewy"
 
 #: server/views/SettingsView.qml:66
 msgctxt "SettingsView|"
 msgid "Right"
-msgstr "ימין"
+msgstr "Prawy"
 
 #: server/views/SettingsView.qml:77
 msgctxt "SettingsView|"
 msgid "Font size"
-msgstr "גודל כתב"
+msgstr "Rozmiar czcionki"
 
 #: server/views/SettingsView.qml:87
 msgctxt "SettingsView|"
 msgid "Theme"
-msgstr "ערכת עיצוב"
+msgstr "Wygląd"
 
 #: server/views/SettingsView.qml:88
 msgctxt "SettingsView|"
 msgid "Dark"
-msgstr "כהה"
+msgstr "Ciemny"
 
 #: server/views/SettingsView.qml:88
 msgctxt "SettingsView|"
 msgid "Light"
-msgstr "בהירה"
+msgstr "Jasny"
 
 #: server/views/SettingsView.qml:103
 msgctxt "SettingsView|"
 msgid "Language selector"
-msgstr "בורר שפה"
+msgstr "Selektor języka"
 
 #: server/views/SettingsView.qml:138
 msgctxt "SettingsView|"
 msgid "Server ID"
-msgstr "מזהה שרת"
+msgstr "ID serwera"
 
 #: server/views/SettingsView.qml:160
 msgctxt "SettingsView|"
 msgid "Port"
-msgstr "פתחה"
+msgstr "Port"
 
 #. next line will display if the server is running or already running
 #: server/views/SettingsView.qml:178
 msgctxt "SettingsView|"
 msgid "Server is"
-msgstr "השרת"
+msgstr "Serwer jest"
 
 #: server/views/SettingsView.qml:179
 msgctxt "SettingsView|"
 msgid "Running"
-msgstr "פעיל"
+msgstr "Uruchomiony"
 
 #: server/views/SettingsView.qml:179
 #, qt-format
 msgctxt "SettingsView|"
 msgid "Already running on port %1"
-msgstr "כבר פועל דרך פתחה %1"
+msgstr "Już działa na porcie %1"
 
 #: server/views/SettingsView.qml:187
 msgctxt "SettingsView|"
 msgid "Host name"
-msgstr "שם מארח"
+msgstr "Nazwa hosta"
 
 #: server/views/SettingsView.qml:194
 msgctxt "SettingsView|"
 msgid "Server IP"
-msgstr "ה־IP של השרת"
+msgstr "IP serwera"
 
 #: server/views/SettingsView.qml:201
 msgctxt "SettingsView|"
 msgid "Broadcast IPs"
-msgstr "כתובות IP לשידור"
+msgstr "IP rozgłoszeniowe"
 
 #: server/views/SettingsView.qml:208
 msgctxt "SettingsView|"
 msgid "Netmask"
-msgstr "מסכת רשת"
+msgstr "Maska sieciowa"
 
 #: server/views/SettingsView.qml:213
 msgctxt "SettingsView|"
 msgid "MAC address"
-msgstr "כתובת חומרה/MAC"
+msgstr "Adres MAC"
 
 #: server/views/SettingsView.qml:220
 msgctxt "SettingsView|"
 msgid "GCompris version"
-msgstr "גרסת ג׳יקומפרי"
+msgstr "Wersja GCompris"
 
 #: server/views/SettingsView.qml:227
 msgctxt "SettingsView|"
 msgid "Qt version"
-msgstr "גרסת Qt"
+msgstr "Wersja Qt"
 
 #: server/views/SettingsView.qml:240
 msgctxt "SettingsView|"
 msgid "Teacher login"
-msgstr "כניסת מורה"
+msgstr "Login nauczyciela"
 
 #: server/views/SettingsView.qml:248
 msgctxt "SettingsView|"
 msgid "Database file"
-msgstr "קובץ מסד נתונים"
+msgstr "Plik bazy danych"
 
 #: server/views/SettingsView.qml:255
 msgctxt "SettingsView|"
 msgid "Encrypted database"
-msgstr "מסד נתונים מוצפן"
+msgstr "Zaszyfrowana baza danych"
 
 #: server/views/SettingsView.qml:256
 msgctxt "SettingsView|"
 msgid "Yes"
-msgstr "כן"
+msgstr "Tak"
 
 #: server/views/SettingsView.qml:256
 msgctxt "SettingsView|"
 msgid "No"
-msgstr "לא"
+msgstr "Nie"
 
 #: server/views/SettingsView.qml:261
 msgctxt "SettingsView|"
 msgid "Pupils"
-msgstr "תלמידים"
+msgstr "Uczniowie"
 
 #: server/views/SettingsView.qml:267
 msgctxt "SettingsView|"
 msgid "Groups"
-msgstr "קבוצות"
+msgstr "Grupy"
 
 #: server/views/SettingsView.qml:280
 msgctxt "SettingsView|"
 msgid "Pupils connected"
-msgstr "תלמידים מחוברים"
+msgstr "Połączeni uczniowie"
 
 #: server/views/SettingsView.qml:287
 msgctxt "SettingsView|"
 msgid "Pupils logged"
-msgstr "תלמידים שנכנסו"
+msgstr "Zalogowani uczniowie"
 
 #: server/views/SettingsView.qml:294
 msgctxt "SettingsView|"
 msgid "Activities data received"
-msgstr "נתוני הפעילויות התקבלו"
+msgstr "Odebrane dane aktywności"
