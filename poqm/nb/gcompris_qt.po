@@ -18920,8 +18920,6 @@ msgstr ""
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:9
 #, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the coral butterfly"
 msgctxt "Data|"
 msgid "Find the correct answer."
 msgstr "Finn den korallrøde sommerfuglen"
