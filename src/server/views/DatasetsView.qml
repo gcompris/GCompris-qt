@@ -51,7 +51,8 @@ Item {
                 indexKey: "activity_id"
                 nameKey: "activity_title"
                 checkKey: "activity_checked"
-                delegateName: "radio"
+                delegateName: "radioActivity"
+
                 filterVisible: true
                 collapsable: false
                 onSelectionClicked: (modelId) => {
