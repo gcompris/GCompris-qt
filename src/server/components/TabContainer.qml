@@ -22,6 +22,7 @@ Item {
         }
         if(currentItem) {
             currentItem.visible = true;
+            currentItem.forceActiveFocus();
         }
     }
 }
