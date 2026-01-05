@@ -108,11 +108,22 @@ Item {
                     id: language
                     model: settingsView.languages
                     width: mainColumn.infoWidth
-                    activeFocusOnTab: true
-                    focus: true
                     textRole: "text"
                     valueRole: "locale"
-                    onCurrentIndexChanged: serverSettings.locale = valueAt(currentIndex);
+                    onSelectIndex: (selectedIndex) => {
+                        serverSettings.locale = valueAt(selectedIndex);
+                        // We need to restore the current index because after setting the locale
+                        // the retranslation of the engine resets the value to 0
+                        language.currentIndex = indexOfValue(serverSettings.locale)
+                    }
+
+                    onCheckedChanged: {
+                        if(checked) {
+                            scrollInfos.interactive = false;
+                        } else {
+                            scrollInfos.interactive = true;
+                        }
+                    }
 
                     Component.onCompleted: {
                         currentIndex = indexOfValue(serverSettings.locale);

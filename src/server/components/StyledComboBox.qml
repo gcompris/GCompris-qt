@@ -15,10 +15,9 @@ AbstractButton {
     height: Style.controlSize
     text: menuList.currentItem ? menuList.currentItem.text : ""
     opacity: enabled ? 1 : 0.3
+    focus: true
 
     // For now, supports model as list of number/string or list of objects with key-value pairs to define text and role.
-    readonly property Item rootItem: Window.contentItem
-    property int maxHeight: Window.height
     property alias model: menuList.model
     property alias currentIndex: menuList.currentIndex
     property alias currentText: button.text
@@ -26,6 +25,8 @@ AbstractButton {
     // Properties and functions usable only if model is a list of objects with key-value pairs.
     property string textRole: ""
     property string valueRole: ""
+
+    signal selectIndex(int index)
 
     function textAt(index_) {
         return model[index_][textRole];
@@ -46,24 +47,34 @@ AbstractButton {
         return valueIndex;
     }
 
-
     Keys.onPressed: (event) => {
         if(event.key == Qt.Key_Enter || event.key == Qt.Key_Return || event.key == Qt.Key_Space) {
             event.accepted = true;
-            button.checked = !button.checked;
+            if(listPopup.opened) {
+                button.selectIndex(menuList.currentIndex);
+                hideMenu();
+            } else {
+                showMenu();
+            }
         } else if(event.key == Qt.Key_Down) {
             event.accepted = true;
             menuList.incrementCurrentIndex();
+            if(!listPopup.opened) {
+               button.selectIndex(menuList.currentIndex);
+            }
         } else if(event.key == Qt.Key_Up) {
             event.accepted = true;
             menuList.decrementCurrentIndex();
+            if(!listPopup.opened) {
+                button.selectIndex(menuList.currentIndex);
+            }
         }
     }
 
     onCheckedChanged: {
         if(checked) {
             showMenu();
-        } else {
+        } else if(listPopup.opened) {
             hideMenu();
         }
     }
@@ -78,27 +89,43 @@ AbstractButton {
         checked = !checked;
     }
 
-    function hideMenu() {
-        menuContainer.visible = false;
-        menuContainer.parent = button;
-        menuContainer.x = 0;
-        menuContainer.y = 0;
-        menuContainer.z = 0;
+    onVisibleChanged: {
+        if(listPopup.opened) {
+            listPopup.close();
+        }
     }
 
-    function showMenu() {
-        var buttonGlobalPosition = button.mapToItem(rootItem, 0, 0);
-        var minY = 0;
-        var maxY = rootItem.height - Style.margins - menuList.height;
-        var menuGlobalY = Math.max(minY, Math.min(buttonGlobalPosition.y, maxY));
-        menuContainer.parent = Window.contentItem;
-        for(var i=0; i < Window.contentItem.children.length; i++) {
-            var itemZ = Window.contentItem.children[i].z
-            menuContainer.z = Math.max(menuContainer.z, itemZ);
+    // Used to detect window resize to auto-close the popup
+    readonly property int windowWidth: Window.width
+    readonly property int windowHeight: Window.height
+    onWindowWidthChanged: {
+        if(listPopup.opened) {
+            listPopup.close();
         }
-        menuContainer.y = menuGlobalY;
-        menuContainer.x = buttonGlobalPosition.x;
-        menuContainer.visible = true;
+    }
+    onWindowHeightChanged: {
+        if(listPopup.opened) {
+            listPopup.close();
+        }
+    }
+
+    // Need an intermediate property since actual menuList height is always 0 while the popup is closed.
+    property int listHeight: Math.min(menuList.contentHeight, Window.height - 2 * Style.defaultBorderWidth)
+
+    function showMenu() {
+        var popupHeight = Math.min(Window.height, listHeight + 2 * Style.defaultBorderWidth);
+        var buttonGlobalPosition = button.mapToItem(Window.contentItem, 0, 0);
+        var minY = 0;
+        var maxY = Window.height - popupHeight;
+        var adjustedY = Math.max(minY, Math.min(buttonGlobalPosition.y, maxY));
+        listPopup.height = popupHeight;
+        listPopup.y = adjustedY;
+        listPopup.x = buttonGlobalPosition.x;
+        listPopup.open();
+    }
+
+    function hideMenu() {
+        listPopup.close();
     }
 
     background: Rectangle {
@@ -137,24 +164,37 @@ AbstractButton {
         sourceSize.width: width
     }
 
-    Rectangle {
-        id: menuContainer
-        visible: false
+    Popup {
+        id: listPopup
+        parent: Overlay.overlay
         width: button.width
-        height: visible ? menuList.height + 2 * Style.defaultBorderWidth : 0
-        color: Style.selectedPalette.base
-        border.color: Style.selectedPalette.accent
-        border.width: Style.defaultBorderWidth
+        height: 1
+        x: 0
+        y: 0
+        modal: false
+        padding: 0
+
+        onClosed: {
+            button.checked = false;
+        }
+
+        background: Rectangle {
+            color: Style.selectedPalette.base
+            border.color: Style.selectedPalette.accent
+            border.width: Style.defaultBorderWidth
+        }
 
         ListView {
             id: menuList
             x: Style.defaultBorderWidth
             y: Style.defaultBorderWidth
-            contentHeight: contentItem.childrenRect.height
-            width: parent.width - 2 * Style.defaultBorderWidth
-            height: menuContainer.visible ? Math.min(contentHeight, button.maxHeight) : 0
+            contentHeight: Style.controlSize * model.length
+            width: button.width - 2 * Style.defaultBorderWidth
+            height: button.listHeight
             clip: true
             keyNavigationEnabled: false
+            boundsBehavior: Flickable.StopAtBounds
+
             delegate: Rectangle {
                 id: menuItem
                 width: menuList.width
@@ -181,8 +221,8 @@ AbstractButton {
                     horizontalAlignment: Text.AlignLeft
                     text: menuItem.text
                     color: menuItem.index === menuList.currentIndex || listItemClick.pressed ?
-                        Style.selectedPalette.highlightedText :
-                        Style.selectedPalette.text
+                    Style.selectedPalette.highlightedText :
+                    Style.selectedPalette.text
                 }
 
                 MouseArea {
@@ -191,7 +231,8 @@ AbstractButton {
                     hoverEnabled: true
                     onClicked: {
                         menuList.currentIndex = menuItem.index;
-                        button.checked = false;
+                        button.selectIndex(menuList.currentIndex);
+                        listPopup.close();
                     }
                 }
             }
