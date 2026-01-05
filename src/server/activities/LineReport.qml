@@ -113,7 +113,7 @@ Item {
             anchors.verticalCenter: parent.verticalCenter
             anchors.right: parent.right
             font.bold: true
-            text: new Date(lineReport.dayFilter).toLocaleDateString(Qt.locale())
+            text: new Date(lineReport.dayFilter).toLocaleDateString(Qt.locale(Master.locale))
         }
     }
 
