@@ -283,7 +283,7 @@ Column {
                             width: dateButton.width
                             anchors.verticalCenter: parent.verticalCenter
                             color: dailyLine.textColor
-                            text: new Date(result_day).toLocaleDateString(Qt.locale())
+                            text: new Date(result_day).toLocaleDateString(Qt.locale(Master.locale))
                         }
                         DefaultLabel {
                             width: activityNameButton.width
