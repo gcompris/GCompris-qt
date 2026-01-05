@@ -48,8 +48,6 @@ Item {
                                      , qsTr("Only data browsing is permitted")]
                 errorDialog.open()
             }
-            dashboardView.enabled = false
-            mainStack.children[mainStack.currentIndex].focus = true
         } else {
             console.warn("Database", databaseFile, "doesn't exist in", userDataPath)
         }
