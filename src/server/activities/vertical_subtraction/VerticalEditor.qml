@@ -56,10 +56,15 @@ DatasetEditorBase {
                 readonly property bool doItYourself: currentModel && currentModel.get(fieldsColumn.modelIndex) ?
                     currentModel.get(fieldsColumn.modelIndex).doItYourself : false
 
+                property string lastWithCarry: "true" // both init with default value from the prototype
+                property string lastAlreadyLaid: "true"
+
                 onDoItYourselfChanged: {
                     if(doItYourself) {
-                        withCarryField.value = false;
-                        alreadyLaidField.value = false;
+                        lastWithCarry = withCarryField.value;
+                        lastAlreadyLaid = alreadyLaidField.value;
+                        withCarryField.value = "false";
+                        alreadyLaidField.value = "false";
                     } else {
                         withCarryField.value = lastWithCarry;
                         alreadyLaidField.value = lastAlreadyLaid;
