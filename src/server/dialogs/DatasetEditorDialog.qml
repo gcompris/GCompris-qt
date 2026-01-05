@@ -36,7 +36,7 @@ Popup {
     property alias difficulty: difficultySelector.currentIndex
     property alias dataset_Content: datasetContent.text
     property var currentActivity: null
-    property string currentActivityTitle: currentActivity ? currentActivity.activity_title : ""
+    property string currentActivityTitle
     property string noEditorPath: `${Master.activityBaseUrl}/NoEditor.qml`
 
     parent: Overlay.overlay
@@ -48,6 +48,8 @@ Popup {
     function openDataEditor(activity, selectedDataset) {
         activityIndex = activity
         currentActivity = Master.findObjectInModel(Master.allActivitiesModel, function(item) { return item.activity_id === activityIndex })
+        currentActivityTitle = Master.allActivities[currentActivity["activity_name"]].title
+
         if (selectedDataset === undefined) {
             label = qsTr("Create dataset")
             addMode = true
@@ -68,6 +70,7 @@ Popup {
             difficultySelector.currentIndex = selectedDataset.dataset_difficulty - 1 // index is difficulty - 1
             dataset_Content = selectedDataset.dataset_content
         }
+
         open()
     }
 
