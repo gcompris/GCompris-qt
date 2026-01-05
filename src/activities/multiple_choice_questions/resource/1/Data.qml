@@ -5,8 +5,9 @@
  */
 import core 1.0
 
+// This is only a test dataset, not used in the application to show how it works.
 Data {
-    objective: qsTr("Find the correct answer.")
+    objective: "Find the correct answer."
     difficulty: 1
     data: [
         {
@@ -14,7 +15,7 @@ Data {
             "subLevels": [
             {
                 "shuffleAnswers": true,
-                "question": qsTr("What is the first number?"),
+                "question": "What is the first number?",
                 "answers": ["1", "2", "cat"],
                 "correctAnswers": ["1"],
                 "correctAnswerText": "Yes, 1 is the first number",
@@ -23,7 +24,7 @@ Data {
             },
             {
                 "shuffleAnswers": false,
-                "question": qsTr("What is a color?"),
+                "question": "What is a color?",
                 "answers": ["yellow", "12", "cat"],
                 "correctAnswers": ["yellow"],
                 "correctAnswerText": "Yellow is a color.",
@@ -37,7 +38,7 @@ Data {
             "subLevels": [
             {
                 "shuffleAnswers": true,
-                "question": qsTr("What are the first two numbers?"),
+                "question": "What are the first two numbers?",
                 "answers": ["1", "2", "cat"],
                 "correctAnswers": ["1", "2"],
                 "correctAnswerText": "Yes, there are two correct answers!",
@@ -46,7 +47,7 @@ Data {
             },
             {
                 "shuffleAnswers": true,
-                "question": qsTr("What are animals?"),
+                "question": "What are animals?",
                 "answers": ["1", "2", "cat"],
                 "correctAnswers": ["cat"],
                 "correctAnswerText": "Yes, cat is an animal!",
@@ -60,7 +61,7 @@ Data {
             "subLevels": [
             {
                 "shuffleAnswers": false,
-                "question": qsTr("Answers always in order, select the first one"),
+                "question": "Answers always in order, select the first one",
                 "answers": ["1", "2", "cat"],
                 "correctAnswers": ["1"],
                 "mode": "oneAnswer"
