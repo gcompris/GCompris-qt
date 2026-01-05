@@ -13,32 +13,32 @@ import QtQuick
 
 QtObject {
 
-    readonly property Palette darkPalette: Palette {
-        accent: "#4a4a4a"
-        alternateBase: "#292929"
-        base: "#383838"
-        button: "#747474" // actually used for scrollbars
-        light: "#4a4a4a"
-        text: "#C0C0C0"
-        highlightedText: "#f2f2f2"
-        highlight: "#53728E"
-        window: "#7f7f7f"
+    readonly property QtObject darkPalette: QtObject {
+        readonly property color accent: "#4a4a4a"
+        readonly property color alternateBase: "#292929"
+        readonly property color base: "#383838"
+        readonly property color button: "#747474" // actually used for scrollbars
+        readonly property color light: "#4a4a4a"
+        readonly property color text: "#C0C0C0"
+        readonly property color highlightedText: "#f2f2f2"
+        readonly property color highlight: "#53728E"
+        readonly property color window: "#7f7f7f"
     }
 
-    readonly property Palette lightPalette: Palette {
-        accent: "#d0d0d0"
-        alternateBase: "#f4f4f4"
-        base: "#e4e4e4"
-        button: "#949494" // actually used for scrollbars
-        light: "#f2f2f2"
-        text: "#373737"
-        highlightedText: "#080808"
-        highlight: "#55a1ef"
-        window: "#7f7f7f"
+    readonly property QtObject lightPalette: QtObject {
+        readonly property color accent: "#d0d0d0"
+        readonly property color alternateBase: "#f4f4f4"
+        readonly property color base: "#e4e4e4"
+        readonly property color button: "#949494" // actually used for scrollbars
+        readonly property color light: "#f2f2f2"
+        readonly property color text: "#373737"
+        readonly property color highlightedText: "#080808"
+        readonly property color highlight: "#55a1ef"
+        readonly property color window: "#7f7f7f"
     }
 
     property bool isDarkTheme: true
-    readonly property Palette selectedPalette: isDarkTheme ? darkPalette : lightPalette
+    readonly property QtObject selectedPalette: isDarkTheme ? darkPalette : lightPalette
     // used to load icons depending on selected theme
     readonly property string themePrefix: isDarkTheme ? "dark_" : "light_"
 
