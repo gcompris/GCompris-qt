@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-22 00:38+0000\n"
-"PO-Revision-Date: 2025-12-18 09:25+0100\n"
+"PO-Revision-Date: 2025-12-23 09:35+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -966,7 +966,7 @@ msgstr "Posiziona ogni elemento nello stesso posto come nell'esempio."
 #: activities/multiple_choice_questions/ActivityInfo.qml:19
 #, kde-format
 msgid "Answer the questions."
-msgstr ""
+msgstr "Rispondi alle domande."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
 #: activities/nine_men_morris/ActivityInfo.qml:18

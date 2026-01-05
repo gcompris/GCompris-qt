@@ -84,8 +84,6 @@ msgstr "Finn tala som manglar, og dra dei dit dei høyrer heime."
 #. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:56
 #, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the previous numbers."
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n previous number(s)."
 msgid_plural "Find the %n previous number(s)."
@@ -95,8 +93,6 @@ msgstr[1] "Finn tala som kjem før."
 #. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:60
 #, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the next numbers."
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n next number(s)."
 msgid_plural "Find the %n next number(s)."
@@ -106,8 +102,6 @@ msgstr[1] "Finn tala som kjem etterpå."
 #. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:64
 #, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the in-between numbers."
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n in-between number(s)"
 msgid_plural "Find the %n in-between number(s)"
@@ -117,8 +111,6 @@ msgstr[1] "Finn tala som skal stå i midten."
 #. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:68
 #, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the missing numbers."
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n missing numbers"
 msgid_plural "Find the %n missing numbers"
@@ -19882,8 +19874,6 @@ msgstr ""
 # Vert brukt både til instruksjonar i datasett-innstillingane, derfor utan avsluttande punktum
 #: activities/menu/ServerConfigPage.qml:177
 #, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "ServerConfigPage|"
 msgid "Server port must be a number between 0 and 65535."
 msgstr "Gjett eit hemmeleg tal frå 1 til %1"
@@ -20478,8 +20468,6 @@ msgstr "Opptil 24 gjenstandar, på fleire linjer"
 #. Activity title
 #: activities/multiple_choice_questions/ActivityInfo.qml:16
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication."
 msgctxt "ActivityInfo|"
 msgid "Multiple-choice questions"
 msgstr "Kunna multiplikasjon."
@@ -20508,40 +20496,30 @@ msgstr ""
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:26
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate through the answers"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: navigate through the answer list"
 msgstr "Piltastar: Bla gjennom svara"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:27
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select or deselect a circle"
 msgctxt "ActivityInfo|"
 msgid "Space: select or deselect the highlighted answer"
 msgstr "Mellomrom: Marker eller fjern markering av sirkel"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:28
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
 msgstr "Enter: Sjå om svaret er rett (når «OK»-knappen er synleg)"
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:9
 #, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find the next number."
 msgctxt "Data|"
 msgid "Find the correct answer."
 msgstr "Finn talet som kjem etterpå."
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:17
 #, fuzzy
-#| msgctxt "GraduatedLineRead|"
-#| msgid "Find the requested number."
 msgctxt "Data|"
 msgid "What is the first number?"
 msgstr "Finn rett tal."
@@ -20553,8 +20531,6 @@ msgstr ""
 
 #: activities/multiple_choice_questions/resource/1/Data.qml:40
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "Data|"
 msgid "What are the first two numbers?"
 msgstr "Øv på å leggja til."
@@ -28810,8 +28786,6 @@ msgstr ""
 
 #: core/main.qml:546
 #, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "main|"
 msgid "Select your username"
 msgstr "Vel modus"
@@ -28823,8 +28797,6 @@ msgstr ""
 
 #: core/main.qml:623
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "main|"
 msgid "Enter your password"
 msgstr "Enter: Sjå om svaret er rett"
@@ -28854,11 +28826,3 @@ msgstr "Lukk"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Start"
-
-#~ msgctxt "Data|"
-#~ msgid "Find the previous number."
-#~ msgstr "Finn talet som kjem før."
-
-#~ msgctxt "Data|"
-#~ msgid "Find the in-between number."
-#~ msgstr "Finn talet som skal stå i midten."
