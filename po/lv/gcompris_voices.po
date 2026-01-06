@@ -1,14 +1,14 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the gcompris package.
 #
-# SPDX-FileCopyrightText: 2024 Toms Trasūns <toms.trasuns@posteo.net>
+# SPDX-FileCopyrightText: 2024, 2025 Toms Trasūns <toms.trasuns@posteo.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-22 00:38+0000\n"
-"PO-Revision-Date: 2024-12-16 16:49+0200\n"
-"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
+"PO-Revision-Date: 2025-12-24 16:20+0200\n"
+"Last-Translator: Toms Trasūns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Lokalize 24.08.3\n"
+"X-Generator: Lokalize 25.12.0\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
 #: activities/adjacent_numbers/ActivityInfo.qml:17
@@ -353,7 +353,7 @@ msgstr "Mācies, kā strādā digitālā elektronika un izveido savu ķēdi."
 #: activities/drawing_wheels/ActivityInfo.qml:22
 #, kde-format
 msgid "Roll the gear in the cogwheel to draw."
-msgstr ""
+msgstr "Lai zīmētu, ripini zobratu."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"
 #: activities/drawletters/ActivityInfo.qml:18
@@ -940,7 +940,7 @@ msgstr "Novieto katru vienumu tajā pašā vietā, kur tas atradās paraugā."
 #: activities/multiple_choice_questions/ActivityInfo.qml:19
 #, kde-format
 msgid "Answer the questions."
-msgstr ""
+msgstr "Atbildi uz jautājumiem."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
 #: activities/nine_men_morris/ActivityInfo.qml:18

@@ -20063,45 +20063,6 @@ msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
 msgstr "Enter: potvrdit odpověď (pokud je vidět tlačítko OK)"
 
-#: activities/multiple_choice_questions/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find the next number."
-msgctxt "Data|"
-msgid "Find the correct answer."
-msgstr "Najdi následující číslo."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:17
-#, fuzzy
-#| msgctxt "GraduatedLineRead|"
-#| msgid "Find the requested number."
-msgctxt "Data|"
-msgid "What is the first number?"
-msgstr "Najdi požadované číslo."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:26
-msgctxt "Data|"
-msgid "What is a color?"
-msgstr ""
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:40
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
-msgctxt "Data|"
-msgid "What are the first two numbers?"
-msgstr "Procvič si sčítání čísel."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:49
-msgctxt "Data|"
-msgid "What are animals?"
-msgstr ""
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:63
-msgctxt "Data|"
-msgid "Answers always in order, select the first one"
-msgstr ""
-
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -28216,6 +28177,27 @@ msgstr "Přeskočit"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Spustit"
+
+#, fuzzy
+#~| msgctxt "Data|"
+#~| msgid "Find the next number."
+#~ msgctxt "Data|"
+#~ msgid "Find the correct answer."
+#~ msgstr "Najdi následující číslo."
+
+#, fuzzy
+#~| msgctxt "GraduatedLineRead|"
+#~| msgid "Find the requested number."
+#~ msgctxt "Data|"
+#~ msgid "What is the first number?"
+#~ msgstr "Najdi požadované číslo."
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Practice the addition of numbers."
+#~ msgctxt "Data|"
+#~ msgid "What are the first two numbers?"
+#~ msgstr "Procvič si sčítání čísel."
 
 #~ msgctxt "Data|"
 #~ msgid "Find the previous number."

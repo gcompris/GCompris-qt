@@ -20041,36 +20041,6 @@ msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
 msgstr "مفتاح الإدخال: تأكيد إجابتك، أو إغلاق لوحة نص الملاحظات"
 
-#: activities/multiple_choice_questions/resource/1/Data.qml:9
-msgctxt "Data|"
-msgid "Find the correct answer."
-msgstr "جِد الإجابة الصحيحة."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:17
-msgctxt "Data|"
-msgid "What is the first number?"
-msgstr "ما هو العدد الأول؟"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:26
-msgctxt "Data|"
-msgid "What is a color?"
-msgstr "ما هو اللون؟"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:40
-msgctxt "Data|"
-msgid "What are the first two numbers?"
-msgstr "ما هما أول عددين؟"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:49
-msgctxt "Data|"
-msgid "What are animals?"
-msgstr "ما هي الحيوانات؟"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:63
-msgctxt "Data|"
-msgid "Answers always in order, select the first one"
-msgstr "الإجابات دائماً مرتبة، اختر الأولى"
-
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -28081,6 +28051,30 @@ msgstr "تخطّى"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "ابدأ"
+
+#~ msgctxt "Data|"
+#~ msgid "Find the correct answer."
+#~ msgstr "جِد الإجابة الصحيحة."
+
+#~ msgctxt "Data|"
+#~ msgid "What is the first number?"
+#~ msgstr "ما هو العدد الأول؟"
+
+#~ msgctxt "Data|"
+#~ msgid "What is a color?"
+#~ msgstr "ما هو اللون؟"
+
+#~ msgctxt "Data|"
+#~ msgid "What are the first two numbers?"
+#~ msgstr "ما هما أول عددين؟"
+
+#~ msgctxt "Data|"
+#~ msgid "What are animals?"
+#~ msgstr "ما هي الحيوانات؟"
+
+#~ msgctxt "Data|"
+#~ msgid "Answers always in order, select the first one"
+#~ msgstr "الإجابات دائماً مرتبة، اختر الأولى"
 
 #~ msgctxt "Data|"
 #~ msgid "Find the previous number."

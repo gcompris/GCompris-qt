@@ -2202,114 +2202,114 @@ msgctxt "SettingsView|"
 msgid "Language selector"
 msgstr "Dil seçicisi"
 
-#: server/views/SettingsView.qml:138
+#: server/views/SettingsView.qml:149
 msgctxt "SettingsView|"
 msgid "Server ID"
 msgstr "Sunucu kimliği"
 
-#: server/views/SettingsView.qml:160
+#: server/views/SettingsView.qml:171
 msgctxt "SettingsView|"
 msgid "Port"
 msgstr "Kapı"
 
 #. next line will display if the server is running or already running
-#: server/views/SettingsView.qml:178
+#: server/views/SettingsView.qml:189
 msgctxt "SettingsView|"
 msgid "Server is"
 msgstr "Sunucu"
 
-#: server/views/SettingsView.qml:179
+#: server/views/SettingsView.qml:190
 msgctxt "SettingsView|"
 msgid "Running"
 msgstr "çalışıyor"
 
-#: server/views/SettingsView.qml:179
+#: server/views/SettingsView.qml:190
 #, qt-format
 msgctxt "SettingsView|"
 msgid "Already running on port %1"
 msgstr "halihazırda %1. kapıda çalışıyor"
 
-#: server/views/SettingsView.qml:187
+#: server/views/SettingsView.qml:198
 msgctxt "SettingsView|"
 msgid "Host name"
 msgstr "Makine adı"
 
-#: server/views/SettingsView.qml:194
+#: server/views/SettingsView.qml:205
 msgctxt "SettingsView|"
 msgid "Server IP"
 msgstr "Sunucu IP’si"
 
-#: server/views/SettingsView.qml:201
+#: server/views/SettingsView.qml:212
 msgctxt "SettingsView|"
 msgid "Broadcast IPs"
 msgstr "Yayın IP’si"
 
-#: server/views/SettingsView.qml:208
+#: server/views/SettingsView.qml:219
 msgctxt "SettingsView|"
 msgid "Netmask"
 msgstr "Ağ maskesi"
 
-#: server/views/SettingsView.qml:213
+#: server/views/SettingsView.qml:224
 msgctxt "SettingsView|"
 msgid "MAC address"
 msgstr "MAC adresi"
 
-#: server/views/SettingsView.qml:220
+#: server/views/SettingsView.qml:231
 msgctxt "SettingsView|"
 msgid "GCompris version"
 msgstr "GCompris sürümü"
 
-#: server/views/SettingsView.qml:227
+#: server/views/SettingsView.qml:238
 msgctxt "SettingsView|"
 msgid "Qt version"
 msgstr "Qt sürümü"
 
-#: server/views/SettingsView.qml:240
+#: server/views/SettingsView.qml:251
 msgctxt "SettingsView|"
 msgid "Teacher login"
 msgstr "Öğretmen oturumu aç"
 
-#: server/views/SettingsView.qml:248
+#: server/views/SettingsView.qml:259
 msgctxt "SettingsView|"
 msgid "Database file"
 msgstr "Veri tabanı dosyası"
 
-#: server/views/SettingsView.qml:255
+#: server/views/SettingsView.qml:266
 msgctxt "SettingsView|"
 msgid "Encrypted database"
 msgstr "Şifreli veri tabanı"
 
-#: server/views/SettingsView.qml:256
+#: server/views/SettingsView.qml:267
 msgctxt "SettingsView|"
 msgid "Yes"
 msgstr "Evet"
 
-#: server/views/SettingsView.qml:256
+#: server/views/SettingsView.qml:267
 msgctxt "SettingsView|"
 msgid "No"
 msgstr "Hayır"
 
-#: server/views/SettingsView.qml:261
+#: server/views/SettingsView.qml:272
 msgctxt "SettingsView|"
 msgid "Pupils"
 msgstr "Öğrenciler"
 
-#: server/views/SettingsView.qml:267
+#: server/views/SettingsView.qml:278
 msgctxt "SettingsView|"
 msgid "Groups"
 msgstr "Gruplar"
 
-#: server/views/SettingsView.qml:280
+#: server/views/SettingsView.qml:291
 msgctxt "SettingsView|"
 msgid "Pupils connected"
 msgstr "Bağlı öğrenciler"
 
-#: server/views/SettingsView.qml:287
+#: server/views/SettingsView.qml:298
 msgctxt "SettingsView|"
 msgid "Pupils logged"
 msgstr "Günlüklü öğrenciler"
 
-#: server/views/SettingsView.qml:294
+#: server/views/SettingsView.qml:305
 msgctxt "SettingsView|"
 msgid "Activities data received"
 msgstr "Etkinlikler verisi alındı"

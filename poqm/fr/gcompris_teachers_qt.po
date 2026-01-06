@@ -2233,114 +2233,114 @@ msgctxt "SettingsView|"
 msgid "Language selector"
 msgstr "Sélection de langue"
 
-#: server/views/SettingsView.qml:138
+#: server/views/SettingsView.qml:149
 msgctxt "SettingsView|"
 msgid "Server ID"
 msgstr "Identifiant du serveur"
 
-#: server/views/SettingsView.qml:160
+#: server/views/SettingsView.qml:171
 msgctxt "SettingsView|"
 msgid "Port"
 msgstr "Port"
 
 #. next line will display if the server is running or already running
-#: server/views/SettingsView.qml:178
+#: server/views/SettingsView.qml:189
 msgctxt "SettingsView|"
 msgid "Server is"
 msgstr "Le serveur est"
 
-#: server/views/SettingsView.qml:179
+#: server/views/SettingsView.qml:190
 msgctxt "SettingsView|"
 msgid "Running"
 msgstr "démarré"
 
-#: server/views/SettingsView.qml:179
+#: server/views/SettingsView.qml:190
 #, qt-format
 msgctxt "SettingsView|"
 msgid "Already running on port %1"
 msgstr "déjà démarré sur le port %1"
 
-#: server/views/SettingsView.qml:187
+#: server/views/SettingsView.qml:198
 msgctxt "SettingsView|"
 msgid "Host name"
 msgstr "Nom d'hôte"
 
-#: server/views/SettingsView.qml:194
+#: server/views/SettingsView.qml:205
 msgctxt "SettingsView|"
 msgid "Server IP"
 msgstr "IP du serveur"
 
-#: server/views/SettingsView.qml:201
+#: server/views/SettingsView.qml:212
 msgctxt "SettingsView|"
 msgid "Broadcast IPs"
 msgstr "IPs de diffusion"
 
-#: server/views/SettingsView.qml:208
+#: server/views/SettingsView.qml:219
 msgctxt "SettingsView|"
 msgid "Netmask"
 msgstr "Masque réseau"
 
-#: server/views/SettingsView.qml:213
+#: server/views/SettingsView.qml:224
 msgctxt "SettingsView|"
 msgid "MAC address"
 msgstr "Adresse MAC"
 
-#: server/views/SettingsView.qml:220
+#: server/views/SettingsView.qml:231
 msgctxt "SettingsView|"
 msgid "GCompris version"
 msgstr "Version de GCompris"
 
-#: server/views/SettingsView.qml:227
+#: server/views/SettingsView.qml:238
 msgctxt "SettingsView|"
 msgid "Qt version"
 msgstr "Version Qt"
 
-#: server/views/SettingsView.qml:240
+#: server/views/SettingsView.qml:251
 msgctxt "SettingsView|"
 msgid "Teacher login"
 msgstr "Identifiant de l'enseignant"
 
-#: server/views/SettingsView.qml:248
+#: server/views/SettingsView.qml:259
 msgctxt "SettingsView|"
 msgid "Database file"
 msgstr "Fichier de base de données"
 
-#: server/views/SettingsView.qml:255
+#: server/views/SettingsView.qml:266
 msgctxt "SettingsView|"
 msgid "Encrypted database"
 msgstr "Base de données chiffrée"
 
-#: server/views/SettingsView.qml:256
+#: server/views/SettingsView.qml:267
 msgctxt "SettingsView|"
 msgid "Yes"
 msgstr "Oui"
 
-#: server/views/SettingsView.qml:256
+#: server/views/SettingsView.qml:267
 msgctxt "SettingsView|"
 msgid "No"
 msgstr "Non"
 
-#: server/views/SettingsView.qml:261
+#: server/views/SettingsView.qml:272
 msgctxt "SettingsView|"
 msgid "Pupils"
 msgstr "Élèves"
 
-#: server/views/SettingsView.qml:267
+#: server/views/SettingsView.qml:278
 msgctxt "SettingsView|"
 msgid "Groups"
 msgstr "Groupes"
 
-#: server/views/SettingsView.qml:280
+#: server/views/SettingsView.qml:291
 msgctxt "SettingsView|"
 msgid "Pupils connected"
 msgstr "Élèves connectés"
 
-#: server/views/SettingsView.qml:287
+#: server/views/SettingsView.qml:298
 msgctxt "SettingsView|"
 msgid "Pupils logged"
 msgstr "Élèves identifiés"
 
-#: server/views/SettingsView.qml:294
+#: server/views/SettingsView.qml:305
 msgctxt "SettingsView|"
 msgid "Activities data received"
 msgstr "Données des activités reçues"

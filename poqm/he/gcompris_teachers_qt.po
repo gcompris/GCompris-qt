@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-01-03 16:18+0200\n"
+"PO-Revision-Date: 2026-01-05 12:55+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -50,6 +50,10 @@ msgid ""
 "1. Also, the length of the list can not be greater than \"Sequence length\" "
 "- 2, to always have at least 2 visible numbers in the sequence."
 msgstr ""
+"„מקום המספרים החסרים” חייב להכיל רשימה של מספרים שמתאימים למפתח של מספרים "
+"למציאה. מספרי מפתח מתחילים מ־0 (המספר הראשון ברצף), והם לא יכולים להיות "
+"גדולים מ„אורך רצף” - 1. כמו כן, אורך הרשימה לא יכול לעלות על „אורך רצף” - 2, "
+"כדי שתמיד יהיו שני מספרים גלויים ברצף."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:36
 msgctxt "AdjacentNumbersDataDisplay|"
@@ -171,11 +175,12 @@ msgid ""
 "If \"Random operands\" is not selected, the sublevel list on the right side "
 "must not be empty."
 msgstr ""
+"אם „איברים אקראיים” לא נבחרים, רשימת תת־השלבים משמאל לא יכולה להיות ריקה."
 
 #: server/activities/algebra_by/AlgebraEditor.qml:33
 msgctxt "AlgebraEditor|"
 msgid "Random operands"
-msgstr ""
+msgstr "איברים אקראיים"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:34
 #: server/activities/algebra_by/AlgebraEditor.qml:39
@@ -186,17 +191,17 @@ msgstr "תת־שלבים"
 #: server/activities/algebra_by/AlgebraEditor.qml:35
 msgctxt "AlgebraEditor|"
 msgid "Minimum operand value"
-msgstr ""
+msgstr "ערך איבר מזערי"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:36
 msgctxt "AlgebraEditor|"
 msgid "Maximum operand value"
-msgstr ""
+msgstr "ערך איבר מרבי"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:37
 msgctxt "AlgebraEditor|"
 msgid "Result value limit"
-msgstr ""
+msgstr "מגבלת ערך תוצאה"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:38
 msgctxt "AlgebraEditor|"
@@ -206,12 +211,12 @@ msgstr "ערבוב"
 #: server/activities/algebra_by/AlgebraEditor.qml:44
 msgctxt "AlgebraEditor|"
 msgid "First operand"
-msgstr ""
+msgstr "איבר ראשון"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:45
 msgctxt "AlgebraEditor|"
 msgid "Second operand"
-msgstr ""
+msgstr "איבר שני"
 
 #: server/activities/algebra_div/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
@@ -228,11 +233,13 @@ msgid ""
 "If \"Random operands\" is not selected, for each sublevel you must make sure "
 "that the \"First operand\" is a multiple of the \"Second operand\"."
 msgstr ""
+"אם לא נבחרו „איברים אקראיים”, יש לוודא שבכל תת־שלב ה„איבר הראשון” הוא כפולה "
+"של ה„איבר השני”."
 
 #: server/activities/algebra_div/ActivityEditor.qml:23
 msgctxt "ActivityEditor|"
 msgid "Random operands"
-msgstr ""
+msgstr "איברים אקראיים"
 
 #: server/activities/algebra_div/ActivityEditor.qml:24
 #: server/activities/algebra_div/ActivityEditor.qml:29
@@ -243,12 +250,12 @@ msgstr "תת־שלבים"
 #: server/activities/algebra_div/ActivityEditor.qml:25
 msgctxt "ActivityEditor|"
 msgid "Minimum operand value"
-msgstr ""
+msgstr "ערך איבר מזערי"
 
 #: server/activities/algebra_div/ActivityEditor.qml:26
 msgctxt "ActivityEditor|"
 msgid "Maximum operand value"
-msgstr ""
+msgstr "ערך איבר מרבי"
 
 #: server/activities/algebra_div/ActivityEditor.qml:27
 msgctxt "ActivityEditor|"
@@ -263,12 +270,12 @@ msgstr "ערבוב"
 #: server/activities/algebra_div/ActivityEditor.qml:34
 msgctxt "ActivityEditor|"
 msgid "First operand"
-msgstr ""
+msgstr "איבר ראשון"
 
 #: server/activities/algebra_div/ActivityEditor.qml:35
 msgctxt "ActivityEditor|"
 msgid "Second operand"
-msgstr ""
+msgstr "איבר שני"
 
 #: server/activities/algebra_minus/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
@@ -276,6 +283,8 @@ msgid ""
 "If \"Random operands\" is not selected, for each sublevel you must make sure "
 "that the \"First operand\" is greater than the \"Second operand\"."
 msgstr ""
+"אם לא נבחרו „איברים אקראיים”, יש לוודא שבכל תת־שלב ה„איבר הראשון” גדול "
+"מה„איבר השני”."
 
 #: server/activities/binary_bulb/ActivityEditor.qml:14
 msgctxt "ActivityEditor|"
@@ -347,7 +356,7 @@ msgstr "סדרת הנתונים ריקה."
 #, qt-format
 msgctxt "BinaryBulbEditor|"
 msgid "\"Numbers to find\" for level %1 must not be empty."
-msgstr ""
+msgstr "„מספרים למציאה” לשלב %1 לא יכולים להיות ריקים."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:115
 #, qt-format
@@ -477,13 +486,13 @@ msgstr "רמה %1 לא יכולה להיות ריקה."
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "\"Left number\" in Question %1 of Level %2 must contain a number."
-msgstr ""
+msgstr "„מספר שמאלי” בשאלה %1 בשלב %2 חייב להכיל מספר."
 
 #: server/activities/comparator/ComparatorEditor.qml:130
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "\"Right number\" in Question %1 of Level %2 must contain a number."
-msgstr ""
+msgstr "„מספר ימני” בשאלה %1 בשלב %2 חייב להכיל מספר."
 
 #: server/activities/comparator/ComparatorEditor.qml:136
 #, qt-format
@@ -541,7 +550,7 @@ msgstr "%1 %"
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Instruction\" must contain some text telling the fraction to represent."
-msgstr ""
+msgstr "„הנחיה” חייבת להכיל טקסט שמסבירה על השבר שצריך לייצג."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:29
 msgctxt "FractionsCreateEditor|"
@@ -583,7 +592,7 @@ msgstr "רמה %1 לא יכולה להיות ריקה."
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "\"Instruction\" of Question %1 from Level %2 must not be empty."
-msgstr ""
+msgstr "„הנחיה” לשאלה %1 משלב %2 לא יכולה להיות ריקה."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:152
 #, qt-format
@@ -969,6 +978,8 @@ msgid ""
 "All entries in the \"Correct answers\" list must also be present in the "
 "\"Answers\" list."
 msgstr ""
+"כל הרשומות תחת רשימת „התשובות הנכונות” חייבות להיות קיימות גם ברשימת "
+"ה„תשובות”."
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:19
 msgctxt "ActivityEditor|"
@@ -977,6 +988,8 @@ msgid ""
 "displayed after users validate their answer. You can leave those empty if "
 "you want."
 msgstr ""
+"„טקסט התשובה הנכונה” ו„טקסט התשובה השגויה” הן הודעות רשות שמוצגות לאחר "
+"שמשתמשים בודקים את התשובות שלהם. אפשר להשאיר אותן ריקות."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:27
 msgctxt "MultipleChoiceDataDisplay|"
@@ -1115,7 +1128,7 @@ msgstr "מספר השורות"
 #: server/activities/vertical_subtraction/VerticalEditor.qml:34
 msgctxt "VerticalEditor|"
 msgid "With carry"
-msgstr ""
+msgstr "עם שארית"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:35
 msgctxt "VerticalEditor|"
@@ -1125,7 +1138,7 @@ msgstr ""
 #: server/activities/vertical_subtraction/VerticalEditor.qml:36
 msgctxt "VerticalEditor|"
 msgid "Write your operation"
-msgstr ""
+msgstr "לכתוב את הפעולה שלך"
 
 #: server/components/CalendarPane.qml:77
 msgctxt "CalendarPane|"
@@ -1287,7 +1300,7 @@ msgstr "המשתמש <b>%1</b> כבר קיים בקבוצה <b>%2</b>."
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> group <b>%2</b> couldn't be deleted."
-msgstr ""
+msgstr "לא ניתן למחוק את המשתמש <b>%1</b> מקבוצה <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:607
 #, qt-format
@@ -1338,7 +1351,7 @@ msgstr "קובץ מסד נתונים"
 #: server/dialogs/CreateDbDialog.qml:41
 msgctxt "CreateDbDialog|"
 msgid "created in:"
-msgstr ""
+msgstr "נוצרה ב־:"
 
 #: server/dialogs/CreateDbDialog.qml:65
 msgctxt "CreateDbDialog|"
@@ -2151,114 +2164,114 @@ msgctxt "SettingsView|"
 msgid "Language selector"
 msgstr "בורר שפה"
 
-#: server/views/SettingsView.qml:138
+#: server/views/SettingsView.qml:149
 msgctxt "SettingsView|"
 msgid "Server ID"
 msgstr "מזהה שרת"
 
-#: server/views/SettingsView.qml:160
+#: server/views/SettingsView.qml:171
 msgctxt "SettingsView|"
 msgid "Port"
 msgstr "פתחה"
 
 #. next line will display if the server is running or already running
-#: server/views/SettingsView.qml:178
+#: server/views/SettingsView.qml:189
 msgctxt "SettingsView|"
 msgid "Server is"
 msgstr "השרת"
 
-#: server/views/SettingsView.qml:179
+#: server/views/SettingsView.qml:190
 msgctxt "SettingsView|"
 msgid "Running"
 msgstr "פעיל"
 
-#: server/views/SettingsView.qml:179
+#: server/views/SettingsView.qml:190
 #, qt-format
 msgctxt "SettingsView|"
 msgid "Already running on port %1"
 msgstr "כבר פועל דרך פתחה %1"
 
-#: server/views/SettingsView.qml:187
+#: server/views/SettingsView.qml:198
 msgctxt "SettingsView|"
 msgid "Host name"
 msgstr "שם מארח"
 
-#: server/views/SettingsView.qml:194
+#: server/views/SettingsView.qml:205
 msgctxt "SettingsView|"
 msgid "Server IP"
 msgstr "ה־IP של השרת"
 
-#: server/views/SettingsView.qml:201
+#: server/views/SettingsView.qml:212
 msgctxt "SettingsView|"
 msgid "Broadcast IPs"
 msgstr "כתובות IP לשידור"
 
-#: server/views/SettingsView.qml:208
+#: server/views/SettingsView.qml:219
 msgctxt "SettingsView|"
 msgid "Netmask"
 msgstr "מסכת רשת"
 
-#: server/views/SettingsView.qml:213
+#: server/views/SettingsView.qml:224
 msgctxt "SettingsView|"
 msgid "MAC address"
 msgstr "כתובת חומרה/MAC"
 
-#: server/views/SettingsView.qml:220
+#: server/views/SettingsView.qml:231
 msgctxt "SettingsView|"
 msgid "GCompris version"
 msgstr "גרסת ג׳יקומפרי"
 
-#: server/views/SettingsView.qml:227
+#: server/views/SettingsView.qml:238
 msgctxt "SettingsView|"
 msgid "Qt version"
 msgstr "גרסת Qt"
 
-#: server/views/SettingsView.qml:240
+#: server/views/SettingsView.qml:251
 msgctxt "SettingsView|"
 msgid "Teacher login"
 msgstr "כניסת מורה"
 
-#: server/views/SettingsView.qml:248
+#: server/views/SettingsView.qml:259
 msgctxt "SettingsView|"
 msgid "Database file"
 msgstr "קובץ מסד נתונים"
 
-#: server/views/SettingsView.qml:255
+#: server/views/SettingsView.qml:266
 msgctxt "SettingsView|"
 msgid "Encrypted database"
 msgstr "מסד נתונים מוצפן"
 
-#: server/views/SettingsView.qml:256
+#: server/views/SettingsView.qml:267
 msgctxt "SettingsView|"
 msgid "Yes"
 msgstr "כן"
 
-#: server/views/SettingsView.qml:256
+#: server/views/SettingsView.qml:267
 msgctxt "SettingsView|"
 msgid "No"
 msgstr "לא"
 
-#: server/views/SettingsView.qml:261
+#: server/views/SettingsView.qml:272
 msgctxt "SettingsView|"
 msgid "Pupils"
 msgstr "תלמידים"
 
-#: server/views/SettingsView.qml:267
+#: server/views/SettingsView.qml:278
 msgctxt "SettingsView|"
 msgid "Groups"
 msgstr "קבוצות"
 
-#: server/views/SettingsView.qml:280
+#: server/views/SettingsView.qml:291
 msgctxt "SettingsView|"
 msgid "Pupils connected"
 msgstr "תלמידים מחוברים"
 
-#: server/views/SettingsView.qml:287
+#: server/views/SettingsView.qml:298
 msgctxt "SettingsView|"
 msgid "Pupils logged"
 msgstr "תלמידים שנכנסו"
 
-#: server/views/SettingsView.qml:294
+#: server/views/SettingsView.qml:305
 msgctxt "SettingsView|"
 msgid "Activities data received"
 msgstr "נתוני הפעילויות התקבלו"

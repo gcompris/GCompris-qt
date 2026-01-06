@@ -20719,45 +20719,6 @@ msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
 msgstr "Enter: patvirtink savo atsakymą, kai pasirodo OK mygtukas."
 
-#: activities/multiple_choice_questions/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find the next number."
-msgctxt "Data|"
-msgid "Find the correct answer."
-msgstr "Rask paskutinįjį skaičių."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:17
-#, fuzzy
-#| msgctxt "GraduatedLineRead|"
-#| msgid "Find the requested number."
-msgctxt "Data|"
-msgid "What is the first number?"
-msgstr "Įvesk tinkamą skaičių."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:26
-msgctxt "Data|"
-msgid "What is a color?"
-msgstr ""
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:40
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
-msgctxt "Data|"
-msgid "What are the first two numbers?"
-msgstr "Mokytis sudėti skaičius."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:49
-msgctxt "Data|"
-msgid "What are animals?"
-msgstr ""
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:63
-msgctxt "Data|"
-msgid "Answers always in order, select the first one"
-msgstr ""
-
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -29263,6 +29224,27 @@ msgstr "Praleisti"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Pradėti"
+
+#, fuzzy
+#~| msgctxt "Data|"
+#~| msgid "Find the next number."
+#~ msgctxt "Data|"
+#~ msgid "Find the correct answer."
+#~ msgstr "Rask paskutinįjį skaičių."
+
+#, fuzzy
+#~| msgctxt "GraduatedLineRead|"
+#~| msgid "Find the requested number."
+#~ msgctxt "Data|"
+#~ msgid "What is the first number?"
+#~ msgstr "Įvesk tinkamą skaičių."
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Practice the addition of numbers."
+#~ msgctxt "Data|"
+#~ msgid "What are the first two numbers?"
+#~ msgstr "Mokytis sudėti skaičius."
 
 #~ msgctxt "Data|"
 #~ msgid "Find the previous number."

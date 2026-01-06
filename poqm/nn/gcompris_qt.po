@@ -20512,39 +20512,6 @@ msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
 msgstr "Enter: Sjå om svaret er rett (når «OK»-knappen er synleg)"
 
-#: activities/multiple_choice_questions/resource/1/Data.qml:9
-#, fuzzy
-msgctxt "Data|"
-msgid "Find the correct answer."
-msgstr "Finn talet som kjem etterpå."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:17
-#, fuzzy
-msgctxt "Data|"
-msgid "What is the first number?"
-msgstr "Finn rett tal."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:26
-msgctxt "Data|"
-msgid "What is a color?"
-msgstr ""
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:40
-#, fuzzy
-msgctxt "Data|"
-msgid "What are the first two numbers?"
-msgstr "Øv på å leggja til."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:49
-msgctxt "Data|"
-msgid "What are animals?"
-msgstr ""
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:63
-msgctxt "Data|"
-msgid "Answers always in order, select the first one"
-msgstr ""
-
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -28826,3 +28793,18 @@ msgstr "Lukk"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Start"
+
+#, fuzzy
+#~ msgctxt "Data|"
+#~ msgid "Find the correct answer."
+#~ msgstr "Finn talet som kjem etterpå."
+
+#, fuzzy
+#~ msgctxt "Data|"
+#~ msgid "What is the first number?"
+#~ msgstr "Finn rett tal."
+
+#, fuzzy
+#~ msgctxt "Data|"
+#~ msgid "What are the first two numbers?"
+#~ msgstr "Øv på å leggja til."

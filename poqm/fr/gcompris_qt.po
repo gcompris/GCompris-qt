@@ -20940,37 +20940,6 @@ msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
 msgstr "Entrée : valider ta réponse ou fermer le panneau de messages"
 
-#: activities/multiple_choice_questions/resource/1/Data.qml:9
-msgctxt "Data|"
-msgid "Find the correct answer."
-msgstr "Trouve la bonne réponse."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:17
-msgctxt "Data|"
-msgid "What is the first number?"
-msgstr "Quel est le premier chiffre ?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:26
-msgctxt "Data|"
-msgid "What is a color?"
-msgstr "Qu'est ce qui est une couleur ?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:40
-msgctxt "Data|"
-msgid "What are the first two numbers?"
-msgstr "Quels sont les deux premiers chiffres ?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:49
-msgctxt "Data|"
-msgid "What are animals?"
-msgstr "Lesquels sont des animaux ?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:63
-msgctxt "Data|"
-msgid "Answers always in order, select the first one"
-msgstr ""
-"Les réponses sont toujours classées dans l'ordre, sélectionne la première."
-
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -29419,6 +29388,31 @@ msgstr "Ignorer"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Démarrer"
+
+#~ msgctxt "Data|"
+#~ msgid "Find the correct answer."
+#~ msgstr "Trouve la bonne réponse."
+
+#~ msgctxt "Data|"
+#~ msgid "What is the first number?"
+#~ msgstr "Quel est le premier chiffre ?"
+
+#~ msgctxt "Data|"
+#~ msgid "What is a color?"
+#~ msgstr "Qu'est ce qui est une couleur ?"
+
+#~ msgctxt "Data|"
+#~ msgid "What are the first two numbers?"
+#~ msgstr "Quels sont les deux premiers chiffres ?"
+
+#~ msgctxt "Data|"
+#~ msgid "What are animals?"
+#~ msgstr "Lesquels sont des animaux ?"
+
+#~ msgctxt "Data|"
+#~ msgid "Answers always in order, select the first one"
+#~ msgstr ""
+#~ "Les réponses sont toujours classées dans l'ordre, sélectionne la première."
 
 #~ msgctxt "Data|"
 #~ msgid "Find the previous number."
