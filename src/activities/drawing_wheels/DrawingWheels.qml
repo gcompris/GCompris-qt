@@ -109,6 +109,8 @@ ActivityBase {
 
         ListModel { id: gearsModel }
 
+        Keys.onEscapePressed: requestHome();
+
         Keys.onPressed: (event) => {
             if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_Z)) {
                 Activity.undoAction()
@@ -122,7 +124,26 @@ ActivityBase {
             } else if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_O)) {
                 Activity.openImageDialog();
                 event.accepted = true;
+            } else if((event.modifiers === Qt.ControlModifier && event.key === Qt.Key_W)) {
+                requestHome();
+                event.accepted = true;
             }
+        }
+
+        Keys.onReleased: (event) => {
+            if(event.key === Qt.Key_Back) {
+                requestHome();
+                event.accepted = true;
+            }
+        }
+
+        function requestHome() {
+            if (!items.isFileSaved) {
+                items.actionAfter = "home"
+                newImageDialog.active = true
+                return
+            }
+            activity.home()
         }
 
         GCSoundEffect {
@@ -1431,12 +1452,7 @@ ActivityBase {
                 activity.displayDialog(dialogActivityConfig)
             }
             onHomeClicked: {
-                if (!items.isFileSaved) {
-                    items.actionAfter = "home"
-                    newImageDialog.active = true
-                    return
-                }
-                activity.home()
+                activityBackground.requestHome()
             }
         }
 
