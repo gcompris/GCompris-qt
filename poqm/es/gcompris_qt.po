@@ -20777,36 +20777,6 @@ msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
 msgstr "Intro: validar la respuesta o cerrar el panel de texto informativo"
 
-#: activities/multiple_choice_questions/resource/1/Data.qml:9
-msgctxt "Data|"
-msgid "Find the correct answer."
-msgstr "Encuentra la respuesta correcta."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:17
-msgctxt "Data|"
-msgid "What is the first number?"
-msgstr "¿Cuál es el primer número?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:26
-msgctxt "Data|"
-msgid "What is a color?"
-msgstr "¿Cuál es un color?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:40
-msgctxt "Data|"
-msgid "What are the first two numbers?"
-msgstr "¿Cuáles son los dos primeros números?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:49
-msgctxt "Data|"
-msgid "What are animals?"
-msgstr "¿Cuáles son animales?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:63
-msgctxt "Data|"
-msgid "Answers always in order, select the first one"
-msgstr "Responde siempre en orden, selecciona la primera"
-
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -29139,3 +29109,27 @@ msgstr "Omitir"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Iniciar"
+
+#~ msgctxt "Data|"
+#~ msgid "Find the correct answer."
+#~ msgstr "Encuentra la respuesta correcta."
+
+#~ msgctxt "Data|"
+#~ msgid "What is the first number?"
+#~ msgstr "¿Cuál es el primer número?"
+
+#~ msgctxt "Data|"
+#~ msgid "What is a color?"
+#~ msgstr "¿Cuál es un color?"
+
+#~ msgctxt "Data|"
+#~ msgid "What are the first two numbers?"
+#~ msgstr "¿Cuáles son los dos primeros números?"
+
+#~ msgctxt "Data|"
+#~ msgid "What are animals?"
+#~ msgstr "¿Cuáles son animales?"
+
+#~ msgctxt "Data|"
+#~ msgid "Answers always in order, select the first one"
+#~ msgstr "Responde siempre en orden, selecciona la primera"

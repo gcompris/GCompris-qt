@@ -1,25 +1,26 @@
-# SPDX-FileCopyrightText: 2020, 2021, 2024 Alois Spitzbart <spitz234@hotmail.com>
-# Manuel <manu@dreivierteleins.de> 2014.
 # SPDX-FileCopyrightText: 2000 Gerhard Dieringer <GDieringer@compuserve.com>
 # SPDX-FileCopyrightText: 2001 Martin Herweg <m.herweg@gmx.de>
 # SPDX-FileCopyrightText: 2003-2007 Ronny Standtke <Ronny.Standtke@gmx.net>
 # SPDX-FileCopyrightText: 2005 Hendrik Richter <hendrikr@gnome.org>
+# SPDX-FileCopyrightText: 2009-2012, 2014 Christian Kirbach <christian.kirbach@gmail.com>
 # SPDX-FileCopyrightText: 2009, 2010, 2011 Mario Blättermann <mario.blaettermann@gmail.com>
-# Christian Kirbach <christian.kirbach@gmail.com>, 2009-2012, 2014.
 # SPDX-FileCopyrightText: 2012 Wolfgang Stöggl <c72578@yahoo.de>
+# SPDX-FileCopyrightText: 2014 Manuel <manu@dreivierteleins.de>
 # SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021 Burkhard Lück <lueck@hube-lueck.de>
 # SPDX-FileCopyrightText: 2015, 2016 Holger Kaelberer <holger.k@elberer.de>
 # SPDX-FileCopyrightText: 2015, 2016, 2020, 2021, 2022, 2023 Frederik Schwarzer <schwarzer@kde.org>
 # SPDX-FileCopyrightText: 2019 Daniel Schlep <info@danielschlep.de>
 # SPDX-FileCopyrightText: 2020 Christian Buhtz <c.buhtz@posteo.jp>
+# SPDX-FileCopyrightText: 2020, 2021, 2024 Alois Spitzbart <spitz234@hotmail.com>
 # SPDX-FileCopyrightText: 2023 Lars Vogdt <lars@linux-schulserver.de>
-# Claudia und Emmanuel Charruau, 2015.
+# SPDX-FileCopyrightText: 2025, 2026 Philipp Kiemle <l10n.daphipz@fastmail.de>
+# SPDX-FileCopyrightText: 2015 Claudia und Emmanuel Charruau
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-06-16 10:03+0200\n"
-"Last-Translator: Alois Spitzbart <spitz234@hotmail.com>\n"
+"PO-Revision-Date: 2026-01-02 10:47+0100\n"
+"Last-Translator: Philipp Kiemle <l10n.daphipz@fastmail.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +28,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 24.05.0\n"
+"X-Generator: Lokalize 25.08.3\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -147,44 +148,29 @@ msgstr[0] "Finde beide Zahlen."
 msgstr[1] "Finde beide Zahlen."
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 1 and 10."
-msgstr "Zahlen zwischen %1 und %2."
+msgstr "Finde Zahlen zwischen 1 und 10."
 
 #: activities/adjacent_numbers/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 20."
-msgstr "Zahlen zwischen %1 und %2."
+msgstr "Finde Zahlen zwischen 0 und 20."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 100."
-msgstr "Zahlen zwischen %1 und %2."
+msgstr "Finde Zahlen zwischen 0 und 100."
 
 #: activities/adjacent_numbers/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between -10 and -1."
-msgstr "Zahlen zwischen %1 und %2."
+msgstr "Finde Zahlen zwischen −10 und −1."
 
 #: activities/adjacent_numbers/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
-msgstr "Zahlen zwischen %1 und %2."
+msgstr "Finde Zahlen zwischen −10 und 10."
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -993,12 +979,9 @@ msgid "Learn multiplication table of 10."
 msgstr "Multiplikationstabelle mit 10."
 
 #: activities/algebra_by/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
-msgstr "Multiplikationstabellen von 1 bis 10."
+msgstr "Übe Multiplikationstabellen von 1 bis 10."
 
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -2272,8 +2255,8 @@ msgid ""
 "Provide audio-visual feedback when using the mouse to help discovering its "
 "usage for young children."
 msgstr ""
-"Audio-Visuelles Feedback anbieten, wenn die Maus benutzt wird, um deren "
-"Benutzung für junge Kinder zu vereinfachen."
+"Audiovisuelles Feedback bei Nutzung der Maus, um jungen Kindern das Erlernen "
+"der Bedienung zu vereinfachen."
 
 #. Help prerequisite
 #: activities/baby_mouse/ActivityInfo.qml:21
@@ -2373,12 +2356,9 @@ msgstr "Spiele den Ton des Buchstaben, wenn er getippt wird."
 
 #. Activity title
 #: activities/baby_wordprocessor/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "A baby word processor"
 msgctxt "ActivityInfo|"
 msgid "My first word processor"
-msgstr "Eine einfache Textverarbeitung"
+msgstr "Mein erstes Textverarbeitungsprogramm"
 
 #. Help title
 #: activities/baby_wordprocessor/ActivityInfo.qml:17
@@ -3480,7 +3460,7 @@ msgstr "Lies die Anweisungen und wähle das richtige Datum im Kalender."
 #: activities/calendar/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn how to use a calendar."
-msgstr "Lerne einen Kalender zu benutzen."
+msgstr "Lerne, wie man einen Kalender verwendet."
 
 #. Help prerequisite
 #: activities/calendar/ActivityInfo.qml:22
@@ -3843,8 +3823,8 @@ msgid ""
 "the different types of water locks available."
 msgstr ""
 "Dein Ziel ist es, Tux durch die Schleuse zu bringen, um die Holzstämme "
-"einzusammeln, während du verschiedene Arten von verfügbaren Wassertoren "
-"benutzt."
+"einzusammeln, indem du verschiedene Arten von verfügbaren Wassertoren "
+"verwendest."
 
 #: activities/canal_lock/CanalLock.qml:77
 msgctxt "CanalLock|"
@@ -6187,7 +6167,7 @@ msgstr "Vincent van Gogh, Nachtcafé - 1888"
 #: activities/details/resource/board/board8_0.qml:14
 msgctxt "board8_0|"
 msgid "Vincent van Gogh, Portrait of Pere Tanguy 1887-8"
-msgstr "Vincent van Gogh, Porträt von Pere Tanguy 1887-88"
+msgstr "Vincent van Gogh, Porträt von Pere Tanguy 1887–88"
 
 #: activities/details/resource/board/board9_0.qml:14
 msgctxt "board9_0|"
@@ -6431,14 +6411,6 @@ msgid "NOT A"
 msgstr "NOT A"
 
 #: activities/digital_electricity/components/One.qml:20
-#, fuzzy
-#| msgctxt "One|"
-#| msgid ""
-#| "Digital circuits work with only two states: 0 and 1. This allows to "
-#| "operate mathematical operations such as additions, subtractions... It is "
-#| "the basics of computer technics. In reality, 0 is often the "
-#| "representation of a voltage nearly equal to ground voltage and 1 is the "
-#| "representation of the supply voltage of a circuit."
 msgctxt "One|"
 msgid ""
 "Digital circuits work with only two states: 0 and 1. It is the basics of "
@@ -6446,11 +6418,10 @@ msgid ""
 "nearly equal to ground voltage and 1 is the representation of the supply "
 "voltage of a circuit."
 msgstr ""
-"Digitale Schaltkreise arbeiten mit nur zwei Zuständen: 0 und 1. Das erlaubt "
-"es, mathematische Operationen durchzuführen, wie Additionen, "
-"Subtraktionen... Dies sind die Grundlagen der Computertechnik. In der "
-"Realität ist 0 oft ein Repräsentant für eine Spannung nahe der Erdung  und 1 "
-"ein Repräsentant für eine Versorgungsspannung eines Schaltkreises."
+"Digitale Schaltkreise arbeiten mit nur zwei Zuständen: 0 und 1. Sie sind die "
+"Grundlage der Computertechnik. In der Realität ist 0 oft ein Repräsentant "
+"für eine Spannung nahe der Erdung und 1 ein Repräsentant für die "
+"Versorgungsspannung eines Schaltkreises."
 
 #: activities/digital_electricity/components/OrGate.qml:21
 msgctxt "OrGate|"
@@ -6525,14 +6496,6 @@ msgid "A XOR B"
 msgstr "A XOR B"
 
 #: activities/digital_electricity/components/Zero.qml:20
-#, fuzzy
-#| msgctxt "Zero|"
-#| msgid ""
-#| "Digital circuits work with only two states: 0 and 1. This allows to "
-#| "operate mathematical operations such as additions, subtractions... It is "
-#| "the basics of computer technics. In reality, 0 is often the "
-#| "representation of a voltage nearly equal to ground voltage and 1 is the "
-#| "representation of the supply voltage of a circuit."
 msgctxt "Zero|"
 msgid ""
 "Digital circuits work with only two states: 0 and 1. It is the basics of "
@@ -6540,11 +6503,10 @@ msgid ""
 "nearly equal to ground voltage and 1 is the representation of the supply "
 "voltage of a circuit."
 msgstr ""
-"Digitale Schaltkreise arbeiten mit nur zwei Zuständen: 0 und 1. Das erlaubt "
-"es, mathematische Operationen durchzuführen, wie Additionen oder "
-"Subtraktionen... Dies ist die Grundlagen der Computertechnik. In der "
-"Realität ist 0 oft ein Repräsentant für eine Spannung nahe der Erdung und 1 "
-"ein Repräsentant für eine Versorgungsspannung eines Schaltkreises."
+"Digitale Schaltkreise arbeiten mit nur zwei Zuständen: 0 und 1. Sie sind die "
+"Grundlage der Computertechnik. In der Realität ist 0 oft ein Repräsentant "
+"für eine Spannung nahe der Erdung und 1 ein Repräsentant für die "
+"Versorgungsspannung eines Schaltkreises."
 
 #: activities/digital_electricity/DigitalElectricity.qml:248
 msgctxt "DigitalElectricity|"
@@ -7113,9 +7075,6 @@ msgid "Color selector"
 msgstr "Schriftauswahl"
 
 #: activities/drawing_wheels/DrawingWheels.qml:453
-#, fuzzy
-#| msgctxt "OptionsRow|"
-#| msgid "Undo"
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Rückgängig"
@@ -7149,12 +7108,9 @@ msgid "Hide wheel and gear"
 msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:691
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
-msgstr "Wähle Deinen Modus"
+msgstr "Speichere dein Bild"
 
 #: activities/drawing_wheels/DrawingWheels.qml:706
 #, fuzzy
@@ -7165,20 +7121,14 @@ msgid "Open an image"
 msgstr "Viele neue Bilder"
 
 #: activities/drawing_wheels/DrawingWheels.qml:735
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
-msgstr "Viele neue Bilder"
+msgstr "Erstelle ein neues Bild"
 
 #: activities/drawing_wheels/DrawingWheels.qml:754
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "DrawingWheels|"
 msgid "Background color"
-msgstr "Hintergrund"
+msgstr "Hintergrundfarbe"
 
 #: activities/drawing_wheels/DrawingWheels.qml:835
 msgctxt "DrawingWheels|"
@@ -7199,9 +7149,6 @@ msgid "%1 spikes"
 msgstr "%1 s"
 
 #: activities/drawing_wheels/DrawingWheels.qml:983
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Geschwindigkeit"
@@ -7217,12 +7164,9 @@ msgid "Fast"
 msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:1062
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font size"
 msgctxt "DrawingWheels|"
 msgid "Pen size"
-msgstr "Schriftgröße"
+msgstr "Stiftgröße"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1099
 msgctxt "DrawingWheels|"
@@ -7259,17 +7203,11 @@ msgid "Do you want to erase this image?"
 msgstr "Möchtest Du sie jetzt herunterladen?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1362
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Ja"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1363
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "Nein"
@@ -7594,7 +7532,7 @@ msgstr "Entdecke Tiere auf dem Bauernhof"
 msgctxt "ActivityInfo|"
 msgid "Learn about farm animals, what sounds they make, and interesting facts."
 msgstr ""
-"Lerne etwas über Tiere auf dem Bauernhof, was für Geräusche sie machen und "
+"Lerne etwas über Tiere auf dem Bauernhof, welche Geräusche sie machen und "
 "weitere interessante Fakten."
 
 #. Help goal
@@ -9050,7 +8988,7 @@ msgstr "Klicke auf den Ort, an dem die angegeben Pyramide steht."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "Verbotene Stadt"
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -9070,7 +9008,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "Großer Buddha von Leshan"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -9113,7 +9051,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "Terrakotta-Armee"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -9130,7 +9068,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr ""
+msgstr "Sonnen- und Mondpagoden"
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -9189,7 +9127,7 @@ msgstr "Klicke auf den Ort, an dem das Denkmal steht."
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "Das Pantheon"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -9211,7 +9149,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "Dom zu Mailand"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -9253,12 +9191,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Die Türme von Hanoi"
+msgstr "Schiefer Turm von Pisa"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -9278,7 +9213,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr ""
+msgstr "Markusdom"
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -9299,7 +9234,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr ""
+msgstr "Pompeii"
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -9357,7 +9292,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr ""
+msgstr "Friedenspark Hiroshima"
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -9378,7 +9313,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr ""
+msgstr "Arakura-Fuji-Sengen-Schrein"
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -15132,11 +15067,12 @@ msgid ""
 "you can do like with a mouse or swipe anywhere in the direction you want to "
 "move and tap to swallow the numbers."
 msgstr ""
-"Wenn du eine Tastatur hast, kannst du die Pfeiltasten und die Leertaste "
-"benutzen, um eine Zahl zu schlucken. Mit einer Maus kannst du auf den Block "
-"neben der Zahl klicken um die Zahl zu schlucken. Mit einem Touchscreen "
-"kannst du entweder neben den Block klicken oder den Block in die gewünschte "
-"Richtung ziehen."
+"Wenn du eine Tastatur hast, kannst du die Pfeiltasten verwenden, um dich zu "
+"bewegen und die Leertaste nutzen, um eine Zahl zu schlucken. Mit einer Maus "
+"kannst du auf den Block neben dir klicken, um  dich zu bewegen. Mit einem "
+"erneuten Klick kannst du die Zahl schlucken. Mit einem Touchscreen kannst du "
+"es entweder wie mit einer Maus machen, oder den Block in die gewünschte "
+"Richtung ziehen und tippen, um die Zahlen zu schlucken."
 
 #: activities/gnumch-equality/ActivityInfo.qml:27
 #: activities/gnumch-factors/ActivityInfo.qml:27
@@ -15427,22 +15363,19 @@ msgstr ""
 #: activities/graduated_line_read/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Read a graduated line"
-msgstr ""
+msgstr "Lese eine Skala ab"
 
 #. Help title
 #: activities/graduated_line_read/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Read values on a graduated line."
-msgstr ""
+msgstr "Lese Werte auf einer Skala ab."
 
 #. Help goal
 #: activities/graduated_line_read/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn to read a graduated line."
-msgstr "Lerne den Wasserkreislauf."
+msgstr "Lerne, eine Skala abzulesen."
 
 #. Help prerequisite
 #: activities/graduated_line_read/ActivityInfo.qml:21
@@ -15461,6 +15394,8 @@ msgid ""
 "Use the number pad or your keyboard to enter the value corresponding to the "
 "given spot on the graduated line."
 msgstr ""
+"Nutze den Ziffernblock oder die Tastatur, um den Wert einzugeben, der der "
+"markierten Position auf der Skala entspricht."
 
 #: activities/graduated_line_read/ActivityInfo.qml:25
 #, fuzzy
@@ -15593,22 +15528,19 @@ msgstr "Zahlen zwischen %1 und %2."
 #: activities/graduated_line_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use a graduated line"
-msgstr ""
+msgstr "Verwende eine Skala"
 
 #. Help title
 #: activities/graduated_line_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Place values on a graduated line."
-msgstr ""
+msgstr "Platziere Werte auf einer Skala."
 
 #. Help goal
 #: activities/graduated_line_use/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to use a calendar."
 msgctxt "ActivityInfo|"
 msgid "Learn to use a graduated line."
-msgstr "Lerne einen Kalender zu benutzen."
+msgstr "Lerne, eine Skala zu verwenden."
 
 #. Help manual
 #: activities/graduated_line_use/ActivityInfo.qml:23
@@ -15617,6 +15549,8 @@ msgid ""
 "Use the arrows to move the cursor to the position corresponding to the given "
 "value on the graduated line."
 msgstr ""
+"Nutze die Pfeiltasten, um den Cursor an die Position zu verschieben, die dem "
+"markierten Wert auf der Skala entspricht."
 
 #: activities/graduated_line_use/ActivityInfo.qml:25
 #, fuzzy
@@ -15629,7 +15563,7 @@ msgstr "Pfeiltasten links und rechts: Bewegt das Raumschiff"
 #: activities/graduated_line_use/GraduatedLineUse.qml:10
 msgctxt "GraduatedLineUse|"
 msgid "Place the given number on the graduated line."
-msgstr ""
+msgstr "Platziere die Zahl auf der Skala."
 
 #: activities/graduated_line_use/resource/1/Data.qml:21
 #, fuzzy
@@ -15765,12 +15699,9 @@ msgid "Backspace: select the previous word"
 msgstr "Rücktaste: Löscht die letzte Zahl in deiner Eingabe"
 
 #: activities/grammar_analysis/grammar_analysis.js:401
-#, fuzzy
-#| msgctxt "Admin|"
-#| msgid "empty"
 msgctxt "grammar_analysis|"
 msgid "Empty"
-msgstr "leer"
+msgstr "Leer"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:26
 msgctxt "GrammarAnalysis|"
@@ -17129,7 +17060,7 @@ msgstr "Schwerkraft: %1"
 #: activities/land_safe/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "The spaceship translates when you use the direction keys."
-msgstr "Das Raumschiff setzt über, wenn du die Richtungstasten benutzt."
+msgstr "Das Raumschiff setzt über, wenn du die Richtungstasten verwendest."
 
 #: activities/land_safe/resource/1/Data.qml:17
 #: activities/land_safe/resource/2/Data.qml:17
@@ -17189,7 +17120,7 @@ msgstr "Erde"
 #: activities/land_safe/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "The spaceship rotates when you use the direction keys."
-msgstr "Das Raumschiff rotiert, wenn du die Richtungstasten benutzt."
+msgstr "Das Raumschiff rotiert, wenn du die Richtungstasten verwendest."
 
 #: activities/land_safe/resource/2/Data.qml:24
 msgctxt "Data|"
@@ -20802,12 +20733,9 @@ msgstr "Finde die fehlenden Buchstaben, um das Wort zu vervollständigen"
 
 #. Help goal
 #: activities/missing-letter/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the alphabetical order."
 msgctxt "ActivityInfo|"
 msgid "Learn to spell words."
-msgstr "Lerne die alphabetische Reihenfolge."
+msgstr "Lerne, Wörter zu buchstabieren."
 
 #. Help prerequisite
 #: activities/missing-letter/ActivityInfo.qml:23
@@ -21323,45 +21251,6 @@ msgstr "Leertaste: Kreis aus- oder abwählen"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
 msgstr "Eingabetaste: Überprüfe deine Antwort wenn der Knopf OK sichtbar ist"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
-msgctxt "Data|"
-msgid "Find the correct answer."
-msgstr "Finde beide Zahlen."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:17
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the rust butterfly"
-msgctxt "Data|"
-msgid "What is the first number?"
-msgstr "Finde den rostbraunen Schmetterling"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:26
-msgctxt "Data|"
-msgid "What is a color?"
-msgstr ""
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:40
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
-msgctxt "Data|"
-msgid "What are the first two numbers?"
-msgstr "Übe das Addieren von Zahlen."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:49
-msgctxt "Data|"
-msgid "What are animals?"
-msgstr ""
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:63
-msgctxt "Data|"
-msgid "Answers always in order, select the first one"
-msgstr ""
 
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
@@ -22317,77 +22206,77 @@ msgstr ""
 #: activities/paintings/resource/board/board11_0.qml:14
 msgctxt "board11_0|"
 msgid "Katsushika Hokusa, Poppies - 1833-1834"
-msgstr "Katsushika Hokusa, Mohn - 1833-1834"
+msgstr "Katsushika Hokusa, Mohn – 1833–1834"
 
 #: activities/paintings/resource/board/board12_0.qml:14
 msgctxt "board12_0|"
 msgid "Katsushika Hokusai, Kazusa sea Route - 1830."
-msgstr "Katsushika Hokusai, Kazusa-Seeweg - 1830."
+msgstr "Katsushika Hokusai, Kazusa-Seeweg – 1830."
 
 #: activities/paintings/resource/board/board13_0.qml:14
 msgctxt "board13_0|"
 msgid "Michelangelo, Pieta - 1499"
-msgstr "Michelangelo, Pieta - 1499"
+msgstr "Michelangelo, Pieta – 1499"
 
 #: activities/paintings/resource/board/board14_0.qml:14
 msgctxt "board14_0|"
 msgid "Leonardo da Vinci, Mona Lisa - 1503-19"
-msgstr "Leonardo da Vinci, Mona Lisa - 1503-19"
+msgstr "Leonardo da Vinci, Mona Lisa – 1503–19"
 
 #: activities/paintings/resource/board/board15_0.qml:14
 msgctxt "board15_0|"
 msgid "Giovanni Bellini, La Pala di Pesaro - 1475-85"
-msgstr "Giovanni Bellini, La Pala di Pesaro - 1475-85"
+msgstr "Giovanni Bellini, La Pala di Pesaro – 1475–85"
 
 #: activities/paintings/resource/board/board16_0.qml:14
 msgctxt "board16_0|"
 msgid "Albrecht Dürer, Lion - 1494"
-msgstr "Albrecht Dürer, Löwe - 1494"
+msgstr "Albrecht Dürer, Löwe – 1494"
 
 #: activities/paintings/resource/board/board17_0.qml:14
 msgctxt "board17_0|"
 msgid "Pieter Brugel, The Harvesters - 1565"
-msgstr "Pieter Brueghel: Ernte - 1565"
+msgstr "Pieter Brueghel: Die Kornernte – 1565"
 
 #: activities/paintings/resource/board/board18_0.qml:14
 msgctxt "board18_0|"
 msgid "Pierre-Auguste Renoir, Girls At The Piano - 1892"
-msgstr "Pierre-Auguste Renoir, Junge Mädchen am Klavier - 1892"
+msgstr "Pierre-Auguste Renoir, Junge Mädchen am Klavier – 1892"
 
 #: activities/paintings/resource/board/board19_0.qml:14
 msgctxt "board19_0|"
 msgid "Wassily Kandinsky, Composition VIII - 1923"
-msgstr "Wassily Kandinsky, Composition VIII - 1923"
+msgstr "Wassily Kandinsky, Composition VIII – 1923"
 
 #: activities/paintings/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
 msgid "Pierre-Auguste Renoir, Bal du moulin de la Galette - 1876"
-msgstr "Pierre-Auguste Renoir, Tanz im Moulin de la Galette - 1876"
+msgstr "Pierre-Auguste Renoir, Tanz im Moulin de la Galette – 1876"
 
 #: activities/paintings/resource/board/board20_0.qml:14
 msgctxt "board20_0|"
 msgid "Bazille, The Ramparts at Aigues-Mortes - 1867"
-msgstr "Frédéric Bazille, Die Festung Aigues-Mortes - 1867"
+msgstr "Frédéric Bazille, Die Festung Aigues-Mortes – 1867"
 
 #: activities/paintings/resource/board/board21_0.qml:14
 msgctxt "board21_0|"
 msgid "Mary Cassatt, Summertime - 1894"
-msgstr "Mary Cassatt, Sommer - 1894"
+msgstr "Mary Cassatt, Sommerzeit – 1894"
 
 #: activities/paintings/resource/board/board22_0.qml:14
 msgctxt "board22_0|"
 msgid "Vincent Van Gogh, Village Street in Auvers - 1890"
-msgstr "Vincent Van Gogh, Hütten in Auvers - 1890"
+msgstr "Vincent Van Gogh, Hütten in Auvers – 1890"
 
 #: activities/paintings/resource/board/board2_0.qml:14
 msgctxt "board2_0|"
 msgid "Giuseppe Arcimboldo, Spring - 1573"
-msgstr "Giuseppe Arcimboldo, Frühling - 1573"
+msgstr "Giuseppe Arcimboldo, Frühling – 1573"
 
 #: activities/paintings/resource/board/board3_0.qml:14
 msgctxt "board3_0|"
 msgid "Giuseppe Arcimboldo, The Librarian - 1566"
-msgstr "Giuseppe Arcimboldo, Der Bibliothekar - 1566"
+msgstr "Giuseppe Arcimboldo, Der Bibliothekar – 1566"
 
 #: activities/paintings/resource/board/board4_0.qml:14
 msgctxt "board4_0|"
@@ -22402,22 +22291,22 @@ msgstr "Katsushika Hokusai, Frau, die einen Fächer hält"
 #: activities/paintings/resource/board/board6_0.qml:14
 msgctxt "board6_0|"
 msgid "Katsushika Hokusai, Ejiri in Suruga Province - 1830-1833"
-msgstr "Katsushika Hokusai, Ejiri in der Provinz Suruga - 1830-1833"
+msgstr "Katsushika Hokusai, Ejiri in der Provinz Suruga – 1830–1833"
 
 #: activities/paintings/resource/board/board7_0.qml:14
 msgctxt "board7_0|"
 msgid "Katsushika Hokusai, The Great Wave off Kanagawa - 1823-1829"
-msgstr "Katsushika Hokusai, Die große Welle vor Kanagawa - 1823-1829"
+msgstr "Katsushika Hokusai, Die große Welle vor Kanagawa – 1823–1829"
 
 #: activities/paintings/resource/board/board8_0.qml:14
 msgctxt "board8_0|"
 msgid "Utagawa Hiroshige, The Benzaiten Shrine at Inokashira in Snow - 1760-70"
-msgstr "Utagawa Hiroshige, Benzaiten-Schrein in Inokashira im Schnee - 1760-70"
+msgstr "Utagawa Hiroshige, Benzaiten-Schrein in Inokashira im Schnee – 1760–70"
 
 #: activities/paintings/resource/board/board9_0.qml:14
 msgctxt "board9_0|"
 msgid "Utagawa Hiroshige, Horse-mackerel and Prawn - 1840"
-msgstr "Utagawa Hiroshige, Stöcker und Garnele - 1840"
+msgstr "Utagawa Hiroshige, Stöcker und Garnele – 1840"
 
 #. Activity title
 #: activities/path_decoding/ActivityInfo.qml:14
@@ -22430,7 +22319,7 @@ msgstr "Pfad verstehen"
 #: activities/path_decoding_relative/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Follow the given directions to help Tux reach the target."
-msgstr "Folge den Anweisungen und hilf Tux das Ziel zu erreichen."
+msgstr "Folge den Anweisungen und hilf Tux, das Ziel zu erreichen."
 
 #. Help goal
 #: activities/path_decoding/ActivityInfo.qml:19
@@ -24981,7 +24870,7 @@ msgid ""
 "perception of how \"heavy\" an object is. \n"
 " Drop weights on the left side to balance the scales."
 msgstr ""
-"Das Kilogramm ist eine Masseneinheit, eine Eigenschaft die beschreibt wie "
+"Das Kilogramm ist eine Masseneinheit – eine Eigenschaft, die beschreibt, wie "
 "schwer ein Gegenstand ist.\n"
 "Stelle Gewichte auf der linken Seite zusammen, um die Waage auszugleichen."
 
@@ -25015,7 +24904,7 @@ msgid ""
 " Drop weights on the left side to balance the scales."
 msgstr ""
 "Das Symbol „kg“ hinter einer Zahl bedeutet Kilogramm.Das Kilogramm ist eine "
-"Masseneinheit, eine Eigenschaft die beschreibt wie schwer ein Gegenstand "
+"Masseneinheit – eine Eigenschaft, die beschreibt, wie schwer ein Gegenstand "
 "ist.\n"
 "Stelle Gewichte auf der linken Seite zusammen, um die Waage auszugleichen."
 
@@ -25133,8 +25022,8 @@ msgid ""
 "an object is. This unit is used in the USA."
 msgstr ""
 "Das Symbol „lb“ hinter einer Zahl bedeutet Pfund. Das Pfund ist eine "
-"Masseneinheit, eine Eigenschaft, die beschreibt, wie schwer ein Gegenstand "
-"ist. Diese Einheit wird in den USA benutzt."
+"Masseneinheit – eine Eigenschaft, die beschreibt, wie schwer ein Gegenstand "
+"ist. Diese Einheit wird in den USA verwendet."
 
 #: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:84
 #: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:91
@@ -25825,12 +25714,9 @@ msgid "Reset palette"
 msgstr ""
 
 #: activities/sketch/ColorSelector.qml:214
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "ColorSelector|"
 msgid "Selected Color"
-msgstr "Ausgewählt"
+msgstr "Ausgewählte Farbe"
 
 #. Color hue
 #: activities/sketch/ColorSelector.qml:239
@@ -25906,12 +25792,9 @@ msgid "Background image"
 msgstr "Hintergrund"
 
 #: activities/sketch/FilesPanel.qml:148
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Create a new image"
-msgstr "Viele neue Bilder"
+msgstr "Erstelle ein neues Bild"
 
 #. Rectangle or Square radius size
 #: activities/sketch/GeometryTool.qml:23
@@ -25990,9 +25873,6 @@ msgid "Type your text here"
 msgstr ""
 
 #: activities/sketch/ToolsPanel.qml:255
-#, fuzzy
-#| msgctxt "category_tools|"
-#| msgid "Tools"
 msgctxt "ToolsPanel|"
 msgid "Tools"
 msgstr "Werkzeuge"
@@ -26005,17 +25885,14 @@ msgstr ""
 #: activities/sketch/ToolsPanel.qml:484
 msgctxt "ToolsPanel|"
 msgid "Opacity"
-msgstr ""
+msgstr "Deckkraft"
 
 #: activities/sketch/ToolsPanel.qml:507
 msgctxt "ToolsPanel|"
 msgid "Size"
-msgstr ""
+msgstr "Größe"
 
 #: activities/sketch/ToolsPanel.qml:527
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "Geschwindigkeit"
@@ -26023,7 +25900,7 @@ msgstr "Geschwindigkeit"
 #: activities/sketch/ToolsPanel.qml:547
 msgctxt "ToolsPanel|"
 msgid "Density"
-msgstr ""
+msgstr "Dichte"
 
 #: activities/sketch/ToolsPanel.qml:567
 #, fuzzy
@@ -27683,21 +27560,15 @@ msgstr "Lies im Hilfemenü die Beschreibung der Tastatursteuerung."
 
 #. Activity title
 #: activities/sudoku/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Calcudoku"
 msgctxt "ActivityInfo|"
 msgid "Sudoku"
-msgstr "Calcudoku"
+msgstr "Sudoku"
 
 #. Help title
 #: activities/sudoku/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Solve the Calcudoku."
 msgctxt "ActivityInfo|"
 msgid "Solve the Sudoku."
-msgstr "Ein Calcudoku lösen."
+msgstr "Ein Sudoku lösen."
 
 #. Help goal
 #: activities/sudoku/ActivityInfo.qml:20
@@ -27991,12 +27862,9 @@ msgstr ""
 "angezeigt. Korrigiere die Fehler und drücke dann erneut die OK-Taste."
 
 #: activities/tens_complement_calculate/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "2 pairs to make from 4 numbers."
 msgctxt "Data|"
 msgid "1 pair to make from 3 numbers."
-msgstr "2 Paare aus 4 Zahlen machen."
+msgstr "1 Paar aus 3 Zahlen machen."
 
 #: activities/tens_complement_calculate/resource/2/Data.qml:9
 #: activities/tens_complement_swap/resource/2/Data.qml:9
@@ -28024,12 +27892,9 @@ msgstr "Lerne, das Zehnerkomplement zu finden."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 10 and additions."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and addition."
-msgstr "Zahlen von 1 bis 10 und Additionen."
+msgstr "Zahlen von 1 bis 10 und Addition."
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
@@ -28095,12 +27960,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 30 and additions."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and addition."
-msgstr "Zahlen von 1 bis 30 und Additionen."
+msgstr "Zahlen von 1 bis 30 und Addition."
 
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
@@ -28148,12 +28010,9 @@ msgstr "Lerne eine praktische Anwendung des Zehnerkomplements."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 50 and additions."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and addition."
-msgstr "Zahlen von 1 bis 50 und Additionen."
+msgstr "Zahlen von 1 bis 50 und Addition."
 
 #. Help manual
 #: activities/tens_complement_use/ActivityInfo.qml:23
@@ -28269,12 +28128,9 @@ msgstr "Übe das Addieren."
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
-msgstr "Baue den gegebenen Turm nach."
+msgstr "Löse die gegebene Additionsaufgabe."
 
 #. Help goal
 #: activities/vertical_addition/ActivityInfo.qml:20
@@ -28463,12 +28319,9 @@ msgstr "Subtraktion mit 1, 2 und 3."
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Learn subtraction table of 1."
 msgctxt "Data|"
 msgid "Write your own subtraction and solve it."
-msgstr "Subtraktionstabelle mit 1."
+msgstr "Schreibe deine eigene Subtraktion und löse sie."
 
 #: activities/vertical_subtraction/resource/2/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
@@ -28547,24 +28400,19 @@ msgstr ""
 #: activities/vertical_subtraction/subtraction.js:79
 msgctxt "subtraction|"
 msgid "Solve:"
-msgstr ""
+msgstr "Löse:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
 #: activities/vertical_subtraction/subtraction.js:190
-#, fuzzy, qt-format
-#| msgctxt "BackgroundMusicList|"
-#| msgid "Title: %1"
+#, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
-msgstr "Titel: %1"
+msgstr "Löse: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:99
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Learn subtraction table of 1."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own addition and solve it."
-msgstr "Subtraktionstabelle mit 1."
+msgstr "Schreibe deine eigene Addition und löse sie."
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:100
 #, fuzzy
@@ -28575,12 +28423,9 @@ msgid "Write your own subtraction and solve it."
 msgstr "Subtraktionstabelle mit 1."
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:426
-#, fuzzy
-#| msgctxt "ReadyButton|"
-#| msgid "I am Ready"
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
-msgstr "Los geht's!"
+msgstr "Bereit"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:464
 msgctxt "VerticalSubtraction|"
@@ -28649,12 +28494,9 @@ msgstr ""
 
 #. Help goal
 #: activities/watercycle/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn about the water cycle."
-msgstr "Lerne den Wasserkreislauf."
+msgstr "Lerne den Wasserkreislauf kennen."
 
 #. Help manual
 #: activities/watercycle/ActivityInfo.qml:23
@@ -29118,7 +28960,7 @@ msgid ""
 "Finnish...)."
 msgstr ""
 "Übersetzung für viele Sprachen aktualisiert (Bretonisch, Brasilianisches "
-"Portugiesisch, Finnisch...)."
+"Portugiesisch, Finnisch …)."
 
 #: core/ChangeLog.qml:159
 msgctxt "ChangeLog|"
@@ -29565,7 +29407,7 @@ msgstr "Bilder"
 #: core/DownloadDialog.qml:208
 msgctxt "DownloadDialog|"
 msgid "Downloading..."
-msgstr "Herunterladen ..."
+msgstr "Wird heruntergeladen …"
 
 #. Run this task in background
 #: core/DownloadDialog.qml:238
@@ -29654,9 +29496,6 @@ msgstr "%1 wurde erfolgreich gelöscht."
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
-#, fuzzy
-#| msgctxt "Hangman|"
-#| msgid "OK"
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr "OK"
@@ -29725,7 +29564,7 @@ msgstr "Löschen"
 #: core/GCCreationHandler.qml:429
 msgctxt "GCCreationHandler|"
 msgid "Open folder"
-msgstr ""
+msgstr "Ordner öffnen"
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
@@ -29917,7 +29756,7 @@ msgstr ""
 #: core/main.qml:274
 msgctxt "main|"
 msgid "Apply"
-msgstr ""
+msgstr "Anwenden"
 
 #: core/main.qml:275 core/main.qml:551 core/main.qml:626
 #, fuzzy
@@ -29935,7 +29774,7 @@ msgstr "Willkommen zu GCompris"
 #: core/main.qml:361
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
-msgstr "Du benutzt GCompris zum ersten Mal."
+msgstr "Du verwendest GCompris zum ersten Mal."
 
 #: core/main.qml:362
 #, fuzzy
@@ -29984,9 +29823,6 @@ msgid "Password rejected by server %1"
 msgstr ""
 
 #: core/main.qml:531 core/main.qml:550 core/main.qml:625
-#, fuzzy
-#| msgctxt "Hangman|"
-#| msgid "OK"
 msgctxt "main|"
 msgid "OK"
 msgstr "OK"
@@ -30036,6 +29872,27 @@ msgstr "Überspringen"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Start"
+
+#, fuzzy
+#~| msgctxt "Data|"
+#~| msgid "Find both numbers."
+#~ msgctxt "Data|"
+#~ msgid "Find the correct answer."
+#~ msgstr "Finde beide Zahlen."
+
+#, fuzzy
+#~| msgctxt "advanced_colors|"
+#~| msgid "Find the rust butterfly"
+#~ msgctxt "Data|"
+#~ msgid "What is the first number?"
+#~ msgstr "Finde den rostbraunen Schmetterling"
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Practice the addition of numbers."
+#~ msgctxt "Data|"
+#~ msgid "What are the first two numbers?"
+#~ msgstr "Übe das Addieren von Zahlen."
 
 #, fuzzy
 #~| msgctxt "Data|"

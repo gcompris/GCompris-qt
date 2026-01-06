@@ -21069,45 +21069,6 @@ msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
 msgstr "Enter: OLDU (OK) düyməsi göründükdə cavabınızı doğrulayın"
 
-#: activities/multiple_choice_questions/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
-msgctxt "Data|"
-msgid "Find the correct answer."
-msgstr "Hər iki sayları tap."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:17
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the rust butterfly"
-msgctxt "Data|"
-msgid "What is the first number?"
-msgstr "Pas rəngli kəpənəyi tapın"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:26
-msgctxt "Data|"
-msgid "What is a color?"
-msgstr ""
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:40
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
-msgctxt "Data|"
-msgid "What are the first two numbers?"
-msgstr "Toplanma əməlini şalışın."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:49
-msgctxt "Data|"
-msgid "What are animals?"
-msgstr ""
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:63
-msgctxt "Data|"
-msgid "Answers always in order, select the first one"
-msgstr ""
-
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -29655,6 +29616,27 @@ msgstr "Ötürün"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Başladın"
+
+#, fuzzy
+#~| msgctxt "Data|"
+#~| msgid "Find both numbers."
+#~ msgctxt "Data|"
+#~ msgid "Find the correct answer."
+#~ msgstr "Hər iki sayları tap."
+
+#, fuzzy
+#~| msgctxt "advanced_colors|"
+#~| msgid "Find the rust butterfly"
+#~ msgctxt "Data|"
+#~ msgid "What is the first number?"
+#~ msgstr "Pas rəngli kəpənəyi tapın"
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Practice the addition of numbers."
+#~ msgctxt "Data|"
+#~ msgid "What are the first two numbers?"
+#~ msgstr "Toplanma əməlini şalışın."
 
 #, fuzzy
 #~| msgctxt "Data|"

@@ -19410,36 +19410,6 @@ msgid "Enter: validate your answer, or close the feedback text panel"
 msgstr ""
 "შეყვანა: გადაამოწმეთ თქვენი პასუხი, ან დახურეთ უკუკავშირის ტექსტის პანელი"
 
-#: activities/multiple_choice_questions/resource/1/Data.qml:9
-msgctxt "Data|"
-msgid "Find the correct answer."
-msgstr "იპოვეთ სწორი პასუხი."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:17
-msgctxt "Data|"
-msgid "What is the first number?"
-msgstr "რომელია პირველი რიცხვი?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:26
-msgctxt "Data|"
-msgid "What is a color?"
-msgstr "რა არის ფერი?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:40
-msgctxt "Data|"
-msgid "What are the first two numbers?"
-msgstr "რომელია პირველი ორი რიცხვი?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:49
-msgctxt "Data|"
-msgid "What are animals?"
-msgstr "რა არიან ცხოველები?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:63
-msgctxt "Data|"
-msgid "Answers always in order, select the first one"
-msgstr "უპასუხეთ ყოველთვის რიგში. აირჩიეთ პირველი"
-
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -27051,6 +27021,30 @@ msgstr "გამოტოვება"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "დაწყება"
+
+#~ msgctxt "Data|"
+#~ msgid "Find the correct answer."
+#~ msgstr "იპოვეთ სწორი პასუხი."
+
+#~ msgctxt "Data|"
+#~ msgid "What is the first number?"
+#~ msgstr "რომელია პირველი რიცხვი?"
+
+#~ msgctxt "Data|"
+#~ msgid "What is a color?"
+#~ msgstr "რა არის ფერი?"
+
+#~ msgctxt "Data|"
+#~ msgid "What are the first two numbers?"
+#~ msgstr "რომელია პირველი ორი რიცხვი?"
+
+#~ msgctxt "Data|"
+#~ msgid "What are animals?"
+#~ msgstr "რა არიან ცხოველები?"
+
+#~ msgctxt "Data|"
+#~ msgid "Answers always in order, select the first one"
+#~ msgstr "უპასუხეთ ყოველთვის რიგში. აირჩიეთ პირველი"
 
 #~ msgctxt "Data|"
 #~ msgid "Find the previous number."

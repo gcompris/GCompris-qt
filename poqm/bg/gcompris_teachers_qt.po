@@ -2203,114 +2203,114 @@ msgctxt "SettingsView|"
 msgid "Language selector"
 msgstr "Избор на език"
 
-#: server/views/SettingsView.qml:138
+#: server/views/SettingsView.qml:149
 msgctxt "SettingsView|"
 msgid "Server ID"
 msgstr "Идентификатор на сървъра"
 
-#: server/views/SettingsView.qml:160
+#: server/views/SettingsView.qml:171
 msgctxt "SettingsView|"
 msgid "Port"
 msgstr "Порт"
 
 #. next line will display if the server is running or already running
-#: server/views/SettingsView.qml:178
+#: server/views/SettingsView.qml:189
 msgctxt "SettingsView|"
 msgid "Server is"
 msgstr "Сървърът е"
 
-#: server/views/SettingsView.qml:179
+#: server/views/SettingsView.qml:190
 msgctxt "SettingsView|"
 msgid "Running"
 msgstr "Изпълнява се"
 
-#: server/views/SettingsView.qml:179
+#: server/views/SettingsView.qml:190
 #, qt-format
 msgctxt "SettingsView|"
 msgid "Already running on port %1"
 msgstr "Вече работи на порт %1"
 
-#: server/views/SettingsView.qml:187
+#: server/views/SettingsView.qml:198
 msgctxt "SettingsView|"
 msgid "Host name"
 msgstr "Име на хост"
 
-#: server/views/SettingsView.qml:194
+#: server/views/SettingsView.qml:205
 msgctxt "SettingsView|"
 msgid "Server IP"
 msgstr "IP адрес на сървъра"
 
-#: server/views/SettingsView.qml:201
+#: server/views/SettingsView.qml:212
 msgctxt "SettingsView|"
 msgid "Broadcast IPs"
 msgstr "Излъчване на IP адреси"
 
-#: server/views/SettingsView.qml:208
+#: server/views/SettingsView.qml:219
 msgctxt "SettingsView|"
 msgid "Netmask"
 msgstr "Маска на мрежата"
 
-#: server/views/SettingsView.qml:213
+#: server/views/SettingsView.qml:224
 msgctxt "SettingsView|"
 msgid "MAC address"
 msgstr "MAC адрес"
 
-#: server/views/SettingsView.qml:220
+#: server/views/SettingsView.qml:231
 msgctxt "SettingsView|"
 msgid "GCompris version"
 msgstr "Версия на GCompris"
 
-#: server/views/SettingsView.qml:227
+#: server/views/SettingsView.qml:238
 msgctxt "SettingsView|"
 msgid "Qt version"
 msgstr "Версия на Qt"
 
-#: server/views/SettingsView.qml:240
+#: server/views/SettingsView.qml:251
 msgctxt "SettingsView|"
 msgid "Teacher login"
 msgstr "Вход за учители"
 
-#: server/views/SettingsView.qml:248
+#: server/views/SettingsView.qml:259
 msgctxt "SettingsView|"
 msgid "Database file"
 msgstr "Файл с база данни"
 
-#: server/views/SettingsView.qml:255
+#: server/views/SettingsView.qml:266
 msgctxt "SettingsView|"
 msgid "Encrypted database"
 msgstr "Криптирана база данни"
 
-#: server/views/SettingsView.qml:256
+#: server/views/SettingsView.qml:267
 msgctxt "SettingsView|"
 msgid "Yes"
 msgstr "Да"
 
-#: server/views/SettingsView.qml:256
+#: server/views/SettingsView.qml:267
 msgctxt "SettingsView|"
 msgid "No"
 msgstr "Не"
 
-#: server/views/SettingsView.qml:261
+#: server/views/SettingsView.qml:272
 msgctxt "SettingsView|"
 msgid "Pupils"
 msgstr "Ученици"
 
-#: server/views/SettingsView.qml:267
+#: server/views/SettingsView.qml:278
 msgctxt "SettingsView|"
 msgid "Groups"
 msgstr "Групи"
 
-#: server/views/SettingsView.qml:280
+#: server/views/SettingsView.qml:291
 msgctxt "SettingsView|"
 msgid "Pupils connected"
 msgstr "Учениците са свързани"
 
-#: server/views/SettingsView.qml:287
+#: server/views/SettingsView.qml:298
 msgctxt "SettingsView|"
 msgid "Pupils logged"
 msgstr "Учениците са влезли в системата"
 
-#: server/views/SettingsView.qml:294
+#: server/views/SettingsView.qml:305
 msgctxt "SettingsView|"
 msgid "Activities data received"
 msgstr "Получени данни за дейностите"

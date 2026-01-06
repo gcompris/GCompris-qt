@@ -20818,37 +20818,6 @@ msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
 msgstr "Enter: valida sua resposta ou fecha o painel de texto de feedback"
 
-#: activities/multiple_choice_questions/resource/1/Data.qml:9
-msgctxt "Data|"
-msgid "Find the correct answer."
-msgstr "Encontre a resposta correta."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:17
-msgctxt "Data|"
-msgid "What is the first number?"
-msgstr "Qual é o primeiro número?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:26
-msgctxt "Data|"
-msgid "What is a color?"
-msgstr "Qual é uma cor?"
-
-# Help title
-#: activities/multiple_choice_questions/resource/1/Data.qml:40
-msgctxt "Data|"
-msgid "What are the first two numbers?"
-msgstr "Quais são os dois primeiros números?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:49
-msgctxt "Data|"
-msgid "What are animals?"
-msgstr "Quais são animais?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:63
-msgctxt "Data|"
-msgid "Answers always in order, select the first one"
-msgstr "As respostas devem estar sempre em ordem; selecione a primeira"
-
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -29173,6 +29142,31 @@ msgstr "Pular"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Iniciar"
+
+#~ msgctxt "Data|"
+#~ msgid "Find the correct answer."
+#~ msgstr "Encontre a resposta correta."
+
+#~ msgctxt "Data|"
+#~ msgid "What is the first number?"
+#~ msgstr "Qual é o primeiro número?"
+
+#~ msgctxt "Data|"
+#~ msgid "What is a color?"
+#~ msgstr "Qual é uma cor?"
+
+# Help title
+#~ msgctxt "Data|"
+#~ msgid "What are the first two numbers?"
+#~ msgstr "Quais são os dois primeiros números?"
+
+#~ msgctxt "Data|"
+#~ msgid "What are animals?"
+#~ msgstr "Quais são animais?"
+
+#~ msgctxt "Data|"
+#~ msgid "Answers always in order, select the first one"
+#~ msgstr "As respostas devem estar sempre em ordem; selecione a primeira"
 
 #~ msgctxt "Data|"
 #~ msgid "Find the previous number."

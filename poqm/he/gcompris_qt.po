@@ -20029,36 +20029,6 @@ msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
 msgstr "Enter: לאשר את התשובה שלך כאשר כפתור האישור מופיע"
 
-#: activities/multiple_choice_questions/resource/1/Data.qml:9
-msgctxt "Data|"
-msgid "Find the correct answer."
-msgstr "למצוא את התשובה הנכונה."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:17
-msgctxt "Data|"
-msgid "What is the first number?"
-msgstr "מה המספר הראשון?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:26
-msgctxt "Data|"
-msgid "What is a color?"
-msgstr "מה זה צבע?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:40
-msgctxt "Data|"
-msgid "What are the first two numbers?"
-msgstr "מה הם שני המספרים הראשונים?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:49
-msgctxt "Data|"
-msgid "What are animals?"
-msgstr "מה הן חיות?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:63
-msgctxt "Data|"
-msgid "Answers always in order, select the first one"
-msgstr "התשובות תמיד מסודרות, יש לבחור את הראשונה מביניהן"
-
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -28139,6 +28109,30 @@ msgstr "לדלג"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "להתחיל"
+
+#~ msgctxt "Data|"
+#~ msgid "Find the correct answer."
+#~ msgstr "למצוא את התשובה הנכונה."
+
+#~ msgctxt "Data|"
+#~ msgid "What is the first number?"
+#~ msgstr "מה המספר הראשון?"
+
+#~ msgctxt "Data|"
+#~ msgid "What is a color?"
+#~ msgstr "מה זה צבע?"
+
+#~ msgctxt "Data|"
+#~ msgid "What are the first two numbers?"
+#~ msgstr "מה הם שני המספרים הראשונים?"
+
+#~ msgctxt "Data|"
+#~ msgid "What are animals?"
+#~ msgstr "מה הן חיות?"
+
+#~ msgctxt "Data|"
+#~ msgid "Answers always in order, select the first one"
+#~ msgstr "התשובות תמיד מסודרות, יש לבחור את הראשונה מביניהן"
 
 #~ msgctxt "Data|"
 #~ msgid "Find the previous number."

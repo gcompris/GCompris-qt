@@ -20822,37 +20822,6 @@ msgid "Enter: validate your answer, or close the feedback text panel"
 msgstr ""
 "Invio: convalida la tua risposta o chiudi il pannello di testo di riscontro"
 
-#: activities/multiple_choice_questions/resource/1/Data.qml:9
-msgctxt "Data|"
-msgid "Find the correct answer."
-msgstr "Trova la risposta corretta."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:17
-msgctxt "Data|"
-msgid "What is the first number?"
-msgstr "Qual è il primo numero?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:26
-msgctxt "Data|"
-msgid "What is a color?"
-msgstr "Cos'è un colore?"
-
-# Anche "Esercizi con l'addizione"
-#: activities/multiple_choice_questions/resource/1/Data.qml:40
-msgctxt "Data|"
-msgid "What are the first two numbers?"
-msgstr "Quali sono i primi due numeri?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:49
-msgctxt "Data|"
-msgid "What are animals?"
-msgstr "Cosa sono gli animali?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:63
-msgctxt "Data|"
-msgid "Answers always in order, select the first one"
-msgstr "Risposte sempre in ordine, seleziona la prima"
-
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -29189,6 +29158,31 @@ msgstr "Salta"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Inizia"
+
+#~ msgctxt "Data|"
+#~ msgid "Find the correct answer."
+#~ msgstr "Trova la risposta corretta."
+
+#~ msgctxt "Data|"
+#~ msgid "What is the first number?"
+#~ msgstr "Qual è il primo numero?"
+
+#~ msgctxt "Data|"
+#~ msgid "What is a color?"
+#~ msgstr "Cos'è un colore?"
+
+# Anche "Esercizi con l'addizione"
+#~ msgctxt "Data|"
+#~ msgid "What are the first two numbers?"
+#~ msgstr "Quali sono i primi due numeri?"
+
+#~ msgctxt "Data|"
+#~ msgid "What are animals?"
+#~ msgstr "Cosa sono gli animali?"
+
+#~ msgctxt "Data|"
+#~ msgid "Answers always in order, select the first one"
+#~ msgstr "Risposte sempre in ordine, seleziona la prima"
 
 #~ msgctxt "Data|"
 #~ msgid "Find the previous number."

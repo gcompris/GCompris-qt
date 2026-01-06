@@ -20610,36 +20610,6 @@ msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
 msgstr "Enter: потвърдете отговора си или затворете панела за обратна връзка"
 
-#: activities/multiple_choice_questions/resource/1/Data.qml:9
-msgctxt "Data|"
-msgid "Find the correct answer."
-msgstr "Намерете правилния отговор."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:17
-msgctxt "Data|"
-msgid "What is the first number?"
-msgstr "Кое е първото число?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:26
-msgctxt "Data|"
-msgid "What is a color?"
-msgstr "Какво е цвят?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:40
-msgctxt "Data|"
-msgid "What are the first two numbers?"
-msgstr "Кои са първите две числа?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:49
-msgctxt "Data|"
-msgid "What are animals?"
-msgstr "Какво представляват животните?"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:63
-msgctxt "Data|"
-msgid "Answers always in order, select the first one"
-msgstr "Отговорите винаги са подредени, изберете първия"
-
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -28927,6 +28897,30 @@ msgstr "Пропусни"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Старт"
+
+#~ msgctxt "Data|"
+#~ msgid "Find the correct answer."
+#~ msgstr "Намерете правилния отговор."
+
+#~ msgctxt "Data|"
+#~ msgid "What is the first number?"
+#~ msgstr "Кое е първото число?"
+
+#~ msgctxt "Data|"
+#~ msgid "What is a color?"
+#~ msgstr "Какво е цвят?"
+
+#~ msgctxt "Data|"
+#~ msgid "What are the first two numbers?"
+#~ msgstr "Кои са първите две числа?"
+
+#~ msgctxt "Data|"
+#~ msgid "What are animals?"
+#~ msgstr "Какво представляват животните?"
+
+#~ msgctxt "Data|"
+#~ msgid "Answers always in order, select the first one"
+#~ msgstr "Отговорите винаги са подредени, изберете първия"
 
 #~ msgctxt "Data|"
 #~ msgid "Find the previous number."

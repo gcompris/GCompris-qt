@@ -20490,45 +20490,6 @@ msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
 msgstr "Enter: validate your answer when the OK button is visible"
 
-#: activities/multiple_choice_questions/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find the next number."
-msgctxt "Data|"
-msgid "Find the correct answer."
-msgstr "Find the next number."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:17
-#, fuzzy
-#| msgctxt "GraduatedLineRead|"
-#| msgid "Find the requested number."
-msgctxt "Data|"
-msgid "What is the first number?"
-msgstr "Find the requested number."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:26
-msgctxt "Data|"
-msgid "What is a color?"
-msgstr ""
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:40
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
-msgctxt "Data|"
-msgid "What are the first two numbers?"
-msgstr "Practice the addition of numbers."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:49
-msgctxt "Data|"
-msgid "What are animals?"
-msgstr ""
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:63
-msgctxt "Data|"
-msgid "Answers always in order, select the first one"
-msgstr ""
-
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -28760,6 +28721,27 @@ msgstr "Skip"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Start"
+
+#, fuzzy
+#~| msgctxt "Data|"
+#~| msgid "Find the next number."
+#~ msgctxt "Data|"
+#~ msgid "Find the correct answer."
+#~ msgstr "Find the next number."
+
+#, fuzzy
+#~| msgctxt "GraduatedLineRead|"
+#~| msgid "Find the requested number."
+#~ msgctxt "Data|"
+#~ msgid "What is the first number?"
+#~ msgstr "Find the requested number."
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Practice the addition of numbers."
+#~ msgctxt "Data|"
+#~ msgid "What are the first two numbers?"
+#~ msgstr "Practice the addition of numbers."
 
 #~ msgctxt "Data|"
 #~ msgid "Find the previous number."

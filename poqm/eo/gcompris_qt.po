@@ -20507,45 +20507,6 @@ msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
 msgstr "Enigu: konfirmu vian respondon kiam la Bone-butono estas videbla"
 
-#: activities/multiple_choice_questions/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find the next number."
-msgctxt "Data|"
-msgid "Find the correct answer."
-msgstr "Trovu la sekvan numeron."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:17
-#, fuzzy
-#| msgctxt "GraduatedLineRead|"
-#| msgid "Find the requested number."
-msgctxt "Data|"
-msgid "What is the first number?"
-msgstr "Trovu la petitan numeron."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:26
-msgctxt "Data|"
-msgid "What is a color?"
-msgstr ""
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:40
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
-msgctxt "Data|"
-msgid "What are the first two numbers?"
-msgstr "Ekzercu la aldonon de nombroj."
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:49
-msgctxt "Data|"
-msgid "What are animals?"
-msgstr ""
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:63
-msgctxt "Data|"
-msgid "Answers always in order, select the first one"
-msgstr ""
-
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -28709,6 +28670,27 @@ msgstr "Salti"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Komenci"
+
+#, fuzzy
+#~| msgctxt "Data|"
+#~| msgid "Find the next number."
+#~ msgctxt "Data|"
+#~ msgid "Find the correct answer."
+#~ msgstr "Trovu la sekvan numeron."
+
+#, fuzzy
+#~| msgctxt "GraduatedLineRead|"
+#~| msgid "Find the requested number."
+#~ msgctxt "Data|"
+#~ msgid "What is the first number?"
+#~ msgstr "Trovu la petitan numeron."
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Practice the addition of numbers."
+#~ msgctxt "Data|"
+#~ msgid "What are the first two numbers?"
+#~ msgstr "Ekzercu la aldonon de nombroj."
 
 #~ msgctxt "Data|"
 #~ msgid "Find the previous number."

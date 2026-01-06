@@ -19099,45 +19099,6 @@ msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
 msgstr ""
 
-#: activities/multiple_choice_questions/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
-msgctxt "Data|"
-msgid "Find the correct answer."
-msgstr "1 ਪ੍ਰਾਈਮ ਨੰਬਰ ਨਹੀਂ ਹੈ।"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:17
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
-msgctxt "Data|"
-msgid "What is the first number?"
-msgstr "1 ਪ੍ਰਾਈਮ ਨੰਬਰ ਨਹੀਂ ਹੈ।"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:26
-msgctxt "Data|"
-msgid "What is a color?"
-msgstr ""
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:40
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
-msgctxt "Data|"
-msgid "What are the first two numbers?"
-msgstr "1 ਪ੍ਰਾਈਮ ਨੰਬਰ ਨਹੀਂ ਹੈ।"
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:49
-msgctxt "Data|"
-msgid "What are animals?"
-msgstr ""
-
-#: activities/multiple_choice_questions/resource/1/Data.qml:63
-msgctxt "Data|"
-msgid "Answers always in order, select the first one"
-msgstr ""
-
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -26787,6 +26748,27 @@ msgstr "ਛੱਡੋ"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr " ਸ਼਼ੁਰੂ ਕਰੋ"
+
+#, fuzzy
+#~| msgctxt "Warning|"
+#~| msgid "1 is not a prime number."
+#~ msgctxt "Data|"
+#~ msgid "Find the correct answer."
+#~ msgstr "1 ਪ੍ਰਾਈਮ ਨੰਬਰ ਨਹੀਂ ਹੈ।"
+
+#, fuzzy
+#~| msgctxt "Warning|"
+#~| msgid "1 is not a prime number."
+#~ msgctxt "Data|"
+#~ msgid "What is the first number?"
+#~ msgstr "1 ਪ੍ਰਾਈਮ ਨੰਬਰ ਨਹੀਂ ਹੈ।"
+
+#, fuzzy
+#~| msgctxt "Warning|"
+#~| msgid "1 is not a prime number."
+#~ msgctxt "Data|"
+#~ msgid "What are the first two numbers?"
+#~ msgstr "1 ਪ੍ਰਾਈਮ ਨੰਬਰ ਨਹੀਂ ਹੈ।"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
