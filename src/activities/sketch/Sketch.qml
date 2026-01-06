@@ -148,7 +148,14 @@ ActivityBase {
             } else if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_O)) {
                 Activity.openImageDialog();
                 event.accepted = true;
-            } else if((event.modifiers === Qt.ControlModifier && event.key === Qt.Key_W) || event.key === Qt.Key_Back) {
+            } else if((event.modifiers === Qt.ControlModifier && event.key === Qt.Key_W)) {
+                requestHome();
+                event.accepted = true;
+            }
+        }
+
+        Keys.onReleased: (event) => {
+            if(event.key === Qt.Key_Back) {
                 requestHome();
                 event.accepted = true;
             }
