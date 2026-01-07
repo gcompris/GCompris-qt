@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-03-26 17:13+0100\n"
+"PO-Revision-Date: 2026-01-06 14:45+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: sv\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 24.12.0\n"
+"X-Generator: Lokalize 25.08.3\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -77,47 +77,39 @@ msgstr "Finn de begärda talen och dra dem till motsvarande ställe."
 
 #. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the previous numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n previous number(s)."
 msgid_plural "Find the %n previous number(s)."
-msgstr[0] "Finn de föregående talen."
-msgstr[1] "Finn de föregående talen."
+msgstr[0] "Finn %n föregående tal."
+msgstr[1] "Finn de %n föregående talen."
 
 #. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:60
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the next numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n next number(s)."
 msgid_plural "Find the %n next number(s)."
-msgstr[0] "Finn de nästa talen."
-msgstr[1] "Finn de nästa talen."
+msgstr[0] "Finn %n nästa tal."
+msgstr[1] "Finn de %n nästa talen."
 
 #. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:64
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the in-between numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n in-between number(s)"
 msgid_plural "Find the %n in-between number(s)"
-msgstr[0] "Finn de mellanliggande talen."
-msgstr[1] "Finn de mellanliggande talen."
+msgstr[0] "Finn %n mellanliggande tal."
+msgstr[1] "Finn de %n mellanliggande talen."
 
 #. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:68
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n missing numbers"
 msgid_plural "Find the %n missing numbers"
-msgstr[0] "Finn båda talen."
-msgstr[1] "Finn båda talen."
+msgstr[0] "Finn %n saknat tal"
+msgstr[1] "Finn de %n saknade talen"
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
 msgctxt "Data|"
@@ -5925,12 +5917,9 @@ msgstr "Digital elektricitet"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "Skapa och simulera en digital logikkrets"
+msgstr "Skapa och simulera en digital logikkrets."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -6677,12 +6666,10 @@ msgstr ""
 
 #: activities/drawing_wheels/ActivityConfig.qml:29
 #: activities/sketch/ActivityConfig.qml:29
-#, fuzzy, qt-format
-#| msgctxt "guessnumber|"
-#| msgid "Number found!"
+#, qt-format
 msgctxt "ActivityConfig|"
 msgid "Number of undo: %1"
-msgstr "Talet är funnet!"
+msgstr ""
 
 #: activities/drawing_wheels/ActivityConfig.qml:44
 #: activities/sketch/ActivityConfig.qml:44
@@ -6694,30 +6681,21 @@ msgstr ""
 
 #. Activity title
 #: activities/drawing_wheels/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "BrushToolPanel|"
-#| msgid "Drawing Tools"
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
-msgstr "Ritverktyg"
+msgstr ""
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Touch the numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Roll the gear in the cogwheel to draw."
-msgstr "Rör vid talen i rätt ordning."
+msgstr "Rulla kuggarna i kugghjulet för att rita."
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr "Lär dig om några digitala målningsverktyg."
+msgstr ""
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
@@ -6756,193 +6734,143 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ctrl + O: öppna en bild"
 
-#: activities/drawing_wheels/DrawingWheels.qml:378
+#: activities/drawing_wheels/DrawingWheels.qml:399
 msgctxt "DrawingWheels|"
 msgid "File menu"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:390
+#: activities/drawing_wheels/DrawingWheels.qml:411
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:414
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Piano composition"
+#: activities/drawing_wheels/DrawingWheels.qml:435
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
-msgstr "Pianokomposition"
+msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:426
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font selector"
+#: activities/drawing_wheels/DrawingWheels.qml:447
 msgctxt "DrawingWheels|"
 msgid "Color selector"
-msgstr "Teckensnittsväljare"
+msgstr "Färgväljare"
 
-#: activities/drawing_wheels/DrawingWheels.qml:453
-#, fuzzy
-#| msgctxt "OptionsRow|"
-#| msgid "Undo"
+#: activities/drawing_wheels/DrawingWheels.qml:474
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Ångra"
 
-#: activities/drawing_wheels/DrawingWheels.qml:465
-#, fuzzy
-#| msgctxt "Checkers|"
-#| msgid "Redo"
+#: activities/drawing_wheels/DrawingWheels.qml:486
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "Gör om"
 
-#: activities/drawing_wheels/DrawingWheels.qml:499
+#: activities/drawing_wheels/DrawingWheels.qml:520
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:499
+#: activities/drawing_wheels/DrawingWheels.qml:520
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:532
+#: activities/drawing_wheels/DrawingWheels.qml:553
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:532
+#: activities/drawing_wheels/DrawingWheels.qml:553
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:691
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
+#: activities/drawing_wheels/DrawingWheels.qml:712
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Spara din bild"
 
-#: activities/drawing_wheels/DrawingWheels.qml:706
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Open an image"
+#: activities/drawing_wheels/DrawingWheels.qml:727
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Öppna en bild"
 
-#: activities/drawing_wheels/DrawingWheels.qml:735
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Create a new image"
+#: activities/drawing_wheels/DrawingWheels.qml:756
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Skapa en ny bild"
 
-#: activities/drawing_wheels/DrawingWheels.qml:754
-#, fuzzy
-#| msgctxt "BackgroundColorSelector|"
-#| msgid "Background color"
+#: activities/drawing_wheels/DrawingWheels.qml:775
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Bakgrundsfärg"
 
-#: activities/drawing_wheels/DrawingWheels.qml:835
+#: activities/drawing_wheels/DrawingWheels.qml:856
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:902
+#: activities/drawing_wheels/DrawingWheels.qml:923
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:965
-#, fuzzy, qt-format
-#| msgctxt "SignalGenerator|"
-#| msgid "%1 s"
+#: activities/drawing_wheels/DrawingWheels.qml:986
+#, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
-msgstr "%1 s"
+msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:983
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
+#: activities/drawing_wheels/DrawingWheels.qml:1004
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Hastighet"
 
-#: activities/drawing_wheels/DrawingWheels.qml:999
+#: activities/drawing_wheels/DrawingWheels.qml:1020
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1019
+#: activities/drawing_wheels/DrawingWheels.qml:1040
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1062
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font size"
+#: activities/drawing_wheels/DrawingWheels.qml:1083
 msgctxt "DrawingWheels|"
 msgid "Pen size"
-msgstr "Teckenstorlek"
+msgstr "Pennstorlek"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1099
-#, fuzzy
-#| msgctxt "ToolsPanel|"
-#| msgid "Opacity"
+#: activities/drawing_wheels/DrawingWheels.qml:1120
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Ogenomskinlighet"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1142
+#: activities/drawing_wheels/DrawingWheels.qml:1163
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1180
-#, fuzzy
-#| msgctxt "IntroMessage|"
-#| msgid "Start"
+#: activities/drawing_wheels/DrawingWheels.qml:1201
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
-msgstr "Starta"
+msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1360
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "You did not save this image. Do you want to close this activity?"
+#: activities/drawing_wheels/DrawingWheels.qml:1381
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Du har inte sparat bilden. Vill du stänga aktiviteten?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1361
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "Do you want to erase this image?"
+#: activities/drawing_wheels/DrawingWheels.qml:1382
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Vill du radera bilden?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1362
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
+#: activities/drawing_wheels/DrawingWheels.qml:1383
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Ja"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1363
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
+#: activities/drawing_wheels/DrawingWheels.qml:1384
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "Nej"
@@ -7528,13 +7456,6 @@ msgid "Chichén Itzá"
 msgstr "Chichén Itzá"
 
 #: activities/explore_monuments/resource/board/board1.qml:20
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
-#| "the Yucatan Peninsula in Mexico, between Valladolid and Merida. It was "
-#| "established before the period of Christopher Colombus and probably served "
-#| "as the religion center of Yucatan for a while."
 msgctxt "board1|"
 msgid ""
 "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
@@ -7544,7 +7465,7 @@ msgid ""
 msgstr ""
 "Chichen Itza, som betyder “vid Itza-källans mynning”, är en Mayastad på "
 "Yucatanhalvön i Mexico, mellan Valladolid och Merida. Den grundades innan "
-"Christopher Colombus tid och fungerade troligen som det religiösa centret på "
+"Christopher Columbus tid och fungerade troligen som det religiösa centret på "
 "Yucatan under en period."
 
 #: activities/explore_monuments/resource/board/board1.qml:30
@@ -8682,12 +8603,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Mysorepalatset"
+msgstr "Potalapalatset"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8742,12 +8660,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Eiffeltornet"
+msgstr "Diaolou-tornen"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8764,17 +8679,11 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Indiens monument"
+msgstr "Kinas monument"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Klicka på platsen för det angivna monumentet."
@@ -8823,12 +8732,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Worms katedral"
+msgstr "Katedralen i Florens"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8847,12 +8753,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Tornen i Hanoi"
+msgstr "Lutande tornet i Pisa"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8911,29 +8814,20 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Indiens monument"
+msgstr "Italiens monument"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Klicka på platsen för det angivna monumentet."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Blandade bokstäver"
+msgstr "Himeji slott"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -9011,17 +8905,11 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Frankrikes monument"
+msgstr "Japans monument"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Klicka på platsen för det angivna monumentet."
@@ -15028,12 +14916,9 @@ msgstr "Tal att hitta mellan 1 och 5."
 
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Number to find between 0 and 20."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
-msgstr "Tal att hitta mellan 0 och 20."
+msgstr "Decimaltal att hitta mellan 0 och 4."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"
@@ -15559,12 +15444,9 @@ msgid "Division required."
 msgstr "Division behövs."
 
 #: activities/guess24/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "Minnesspel med alla räknesätt"
+msgstr "Alla räknesätt krävs."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -17739,11 +17621,6 @@ msgstr ""
 "hemlighet lära ut den på institutet."
 
 #: activities/louis-braille/louis_braille_data.js:52
-#, fuzzy
-#| msgctxt "louis_braille_data|"
-#| msgid ""
-#| "He revised and extended braille to include mathematics, symbols, "
-#| "punctuations and music notations."
 msgctxt "louis_braille_data|"
 msgid ""
 "He revised and extended braille to include mathematics, symbols, punctuation "
@@ -17782,12 +17659,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "Den magiska hatten"
+msgstr "Den magiska hatten (subtraktion)"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -17879,12 +17753,9 @@ msgstr "%1 gånger"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "Den magiska hatten"
+msgstr "Den magiska hatten (addition)"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -19861,12 +19732,9 @@ msgid "Server port"
 msgstr ""
 
 #: activities/menu/ServerConfigPage.qml:177
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "ServerConfigPage|"
 msgid "Server port must be a number between 0 and 65535."
-msgstr "Gissa ett tal mellan 1 och %1."
+msgstr ""
 
 #. Activity title
 #: activities/mining/ActivityInfo.qml:15
@@ -20448,12 +20316,9 @@ msgstr "Upp till 24 föremål, på flera rader."
 
 #. Activity title
 #: activities/multiple_choice_questions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication."
 msgctxt "ActivityInfo|"
 msgid "Multiple-choice questions"
-msgstr "Multiplikation."
+msgstr "Flervalsfrågor"
 
 #. Help title
 #: activities/multiple_choice_questions/ActivityInfo.qml:18
@@ -20478,28 +20343,19 @@ msgid ""
 msgstr ""
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate through the answers"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: navigate through the answer list"
-msgstr "Pilar: navigera mellan svaren"
+msgstr ""
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select or deselect a circle"
 msgctxt "ActivityInfo|"
 msgid "Space: select or deselect the highlighted answer"
-msgstr "Mellanslag: markera eller avmarkera en cirkel"
+msgstr ""
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
-msgstr "Enter: kontrollera svaret när Ok-knappen är synlig"
+msgstr ""
 
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
@@ -24845,29 +24701,26 @@ msgid "Gradient Tools"
 msgstr "Toningsverktyg"
 
 #: activities/sketch/PaletteSelector.qml:148
-#, fuzzy
-#| msgctxt "ColorsPanel|"
-#| msgid "Palettes"
 msgctxt "PaletteSelector|"
 msgid "Palettes"
 msgstr "Paletter"
 
-#: activities/sketch/Sketch.qml:677
+#: activities/sketch/Sketch.qml:684
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Du har inte sparat bilden. Vill du stänga aktiviteten?"
 
-#: activities/sketch/Sketch.qml:678
+#: activities/sketch/Sketch.qml:685
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "Vill du radera bilden?"
 
-#: activities/sketch/Sketch.qml:679
+#: activities/sketch/Sketch.qml:686
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Ja"
 
-#: activities/sketch/Sketch.qml:680
+#: activities/sketch/Sketch.qml:687
 msgctxt "Sketch|"
 msgid "No"
 msgstr "Nej"
@@ -27203,31 +27056,6 @@ msgstr "Subtraktionstabeller."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In a vertical subtraction, numbers are written one below the other. They "
-#| "need to be lined-up properly, starting from the column on the right-hand "
-#| "side. The top number is called the minuend: it is the amount that we are "
-#| "starting with, that another number is being subtracted from to get the "
-#| "difference. The number below is called the subtrahend: it is the amount "
-#| "to substract from the minuend to get the difference. The result is "
-#| "written on the bottom line. To solve the subtraction, start by "
-#| "subtracting the bottom number of the first column from the top number of "
-#| "the first column (on the right-hand side), and write the result on the "
-#| "bottom line of the same column. If the top number is smaller than the "
-#| "bottom number, you can borrow from the minuend on the next column: for "
-#| "example, if you add 10 units to the top number, you need to remove one "
-#| "unit from the top number of the next column. This is called the borrowing "
-#| "by regrouping method. To do that in this activity, click on the empty "
-#| "rectangle on the left of the top number, select 1, and on the next column "
-#| "click on the empty rectangle on the right of the top number and select "
-#| "-1. Then write the result of the column on the bottom line, and do the "
-#| "same on the next columns until the operation is finished. Once you have "
-#| "found the result, click on the OK button to validate your answer. In some "
-#| "levels, you will be need to write the given operation before solving it; "
-#| "in this case, click on the Ready button when the operation is written "
-#| "correctly and then solve it."
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -27363,17 +27191,11 @@ msgid "Solve: %1"
 msgstr "Beräkna: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:99
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own addition and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own addition and solve it."
 msgstr "Skriv en egen addition och beräkna den."
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:100
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own subtraction and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own subtraction and solve it."
 msgstr "Skriv en egen subtraktion och beräkna den."
@@ -27406,31 +27228,6 @@ msgstr ""
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In a vertical subtraction, numbers are written one below the other. They "
-#| "need to be lined-up properly, starting from the column on the right-hand "
-#| "side. The top number is called the minuend: it is the amount that we are "
-#| "starting with, that another number is being subtracted from to get the "
-#| "difference. The number below is called the subtrahend: it is the amount "
-#| "to substract from the minuend to get the difference. The result is "
-#| "written on the bottom line. To solve the subtraction, start by "
-#| "subtracting the bottom number of the first column from the top number of "
-#| "the first column (on the right-hand side), and write the result on the "
-#| "bottom line of the same column. If the top number is smaller than the "
-#| "bottom number, you can borrow from the subtrahend on the next column: for "
-#| "example, if you add 10 units to the top number, you need to add one unit "
-#| "to the bottom number of the next column. This is called the borrowing by "
-#| "compensation method. To do that in this activity, click on the empty "
-#| "rectangle on the left of the top number, select 1, and on the next column "
-#| "click on the empty rectangle on the right of the bottom number and select "
-#| "+1. Then write the result of the column on the bottom line, and do the "
-#| "same on the next columns until the operation is finished. Once you have "
-#| "found the result, click on the OK button to validate your answer. In some "
-#| "levels, you will be need to write the given operation before solving it; "
-#| "in this case, click on the Ready button when the operation is written "
-#| "correctly and then solve it."
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -27644,21 +27441,14 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Skriv hela ordet under tiden det faller, innan det når marken."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Kannada and Tamil"
-msgstr "Översättning tillagd för lettiska"
+msgstr "Översättning tillagd för Kanaresiska och Tamilska"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgctxt "ChangeLog|"
 msgid "New command-line option to set the locale (--locale locale)"
 msgstr ""
-"Nya kommandoradsväljare för att byta återgivning (--renderer återgivning)"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
@@ -28422,12 +28212,9 @@ msgid "No data found for %1."
 msgstr "Ingen data hittades för %1."
 
 #: core/GCCreationHandler.qml:185
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr "%1 borttaget med lyckat resultat."
+msgstr ""
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -28436,12 +28223,9 @@ msgid "OK"
 msgstr "Ok"
 
 #: core/GCCreationHandler.qml:193
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
-msgstr "Kan inte ta bort %1."
+msgstr "Kan inte ta bort filen."
 
 #: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
@@ -28622,12 +28406,9 @@ msgstr ""
 "--launch specificeras."
 
 #: core/main.cpp:146
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid "Specify the activity when starting GCompris."
 msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
-msgstr "Ange aktivitet när GCompris startas."
+msgstr "Ange platsinställning när GCompris startas."
 
 #: core/main.cpp:150
 msgctxt "QObject|"
@@ -28728,12 +28509,10 @@ msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris har uppdaterats. Här är de nya ändringarna:<br/>"
 
 #: core/main.qml:509
-#, fuzzy, qt-format
-#| msgctxt "main|"
-#| msgid "Do you want to download it now?"
+#, qt-format
 msgctxt "main|"
 msgid "Do you want to connect to server %1?"
-msgstr "Vill du ladda ner den nu?"
+msgstr "Vill du ansluta till servern %1?"
 
 #: core/main.qml:530
 #, qt-format
@@ -28742,20 +28521,14 @@ msgid "Password rejected by server %1"
 msgstr ""
 
 #: core/main.qml:531 core/main.qml:550 core/main.qml:625
-#, fuzzy
-#| msgctxt "Balancebox|"
-#| msgid "OK"
 msgctxt "main|"
 msgid "OK"
 msgstr "Ok"
 
 #: core/main.qml:546
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "main|"
 msgid "Select your username"
-msgstr "Välj sätt"
+msgstr "Välj användarnamn"
 
 #: core/main.qml:556
 msgctxt "main|"
@@ -28763,12 +28536,9 @@ msgid "Please select your username in the list or cancel."
 msgstr ""
 
 #: core/main.qml:623
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "main|"
 msgid "Enter your password"
-msgstr "Enter: kontrollera svaret"
+msgstr "Ange lösenord"
 
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"

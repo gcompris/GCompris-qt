@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2024 Toms Trasuns <toms.trasuns@posteo.net>
+# SPDX-FileCopyrightText: 2024, 2025 Toms Trasuns <toms.trasuns@posteo.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-12-16 16:48+0200\n"
-"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
+"PO-Revision-Date: 2025-12-24 16:20+0200\n"
+"Last-Translator: Toms Trasūns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
@@ -13,7 +13,7 @@ msgstr ""
 "2);\n"
 "X-Language: lv\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 24.08.3\n"
+"X-Generator: Lokalize 25.12.0\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -56,13 +56,13 @@ msgstr "Pārbaudīt atbildes"
 #: activities/adjacent_numbers/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find the adjacent numbers"
-msgstr "Atrodi blakus esošos numurus"
+msgstr "Atrodi blakus esošos skaitļus"
 
 #. Help title
 #: activities/adjacent_numbers/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the missing adjacent numbers."
-msgstr "Atrodi trūkstošos blakus esošos numurus."
+msgstr "Atrodi trūkstošos blakus esošos skaitļus."
 
 #. Help goal
 #: activities/adjacent_numbers/ActivityInfo.qml:19
@@ -78,51 +78,43 @@ msgstr "Atrodi prasītos skaitļus un ievelc tos savās vietās."
 
 #. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the previous numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n previous number(s)."
 msgid_plural "Find the %n previous number(s)."
-msgstr[0] "Atrodi iepriekšējo skaitļus."
-msgstr[1] "Atrodi iepriekšējo skaitļus."
-msgstr[2] "Atrodi iepriekšējo skaitļus."
+msgstr[0] "Atrodi iepriekšējo %n skaitli."
+msgstr[1] "Atrodi iepriekšējos %n skaitļus."
+msgstr[2] "Atrodi iepriekšējos %n skaitļus."
 
 #. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:60
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the next numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n next number(s)."
 msgid_plural "Find the %n next number(s)."
-msgstr[0] "Atrodi nākamos skaitļus."
-msgstr[1] "Atrodi nākamos skaitļus."
-msgstr[2] "Atrodi nākamos skaitļus."
+msgstr[0] "Atrodi nākamo %n skaitli."
+msgstr[1] "Atrodi nākamos %n skaitļus."
+msgstr[2] "Atrodi nākamos %n skaitļus."
 
 #. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:64
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the in-between numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n in-between number(s)"
 msgid_plural "Find the %n in-between number(s)"
-msgstr[0] "Atrodi vidējos skaitļus."
-msgstr[1] "Atrodi vidējos skaitļus."
-msgstr[2] "Atrodi vidējos skaitļus."
+msgstr[0] "Atrodi %n vidējos skaitļus."
+msgstr[1] "Atrodi %n vidējos skaitļus."
+msgstr[2] "Atrodi %n vidējos skaitļus."
 
 #. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:68
-#, fuzzy, qt-format
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n missing numbers"
 msgid_plural "Find the %n missing numbers"
-msgstr[0] "Atņemšanas atmiņas spēle"
-msgstr[1] "Atņemšanas atmiņas spēle"
-msgstr[2] "Atņemšanas atmiņas spēle"
+msgstr[0] "Atrodi %n trūkstošos skaitļus"
+msgstr[1] "Atrodi %n trūkstošos skaitļus"
+msgstr[2] "Atrodi %n trūkstošos skaitļus"
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
 msgctxt "Data|"
@@ -341,7 +333,7 @@ msgstr "Bultas: navigācija"
 #: activities/money_cents/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select an item"
-msgstr "Atstarpes taustiņā vai „Enter“: atlasiet vienumu"
+msgstr "Atstarpes taustiņš vai „Enter“: atlasa elementu"
 
 #. Look at https://gcompris.net/wiki/Advanced_color_translation to see all the advanced colors Color #FF7F50
 #. ----------
@@ -1550,8 +1542,8 @@ msgid ""
 "To connect two terminals, click on the first terminal, then on the second "
 "terminal. To deselect a terminal, click on any empty area."
 msgstr ""
-"Lai savienotu divu terminālus, spied uz pirmā termināla un pēc tam uz otra "
-"termināla. Lai noņemtu atlasi, spied tukšā vietā."
+"Lai savienotu divu termināļus, spied uz pirmā termināla, bet pēc tam uz otra "
+"termināļa. Lai noņemtu atlasi, spied tukšā vietā."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -1768,7 +1760,7 @@ msgid ""
 "circuit."
 msgstr ""
 "Ceļš, pa kuru plūst strāva, saucas par ķēdi. Elektroiekārtas var strādāt "
-"tikai slēgtā ķēdē. Lai savienotu ierīces un izveidotu ķēdi, izmanto vadus."
+"tikai slēgtā ķēdē. Ierīču savienošanai un ķēdes izveidošanai izmanto vadus."
 
 #: activities/analog_electricity/TutorialDataset.qml:103
 msgctxt "TutorialDataset|"
@@ -1776,8 +1768,8 @@ msgid ""
 "For a detailed description of battery and bulb, click on those and then "
 "click on the info button."
 msgstr ""
-"Lai uzzinātu vairāk par bateriju un spuldzi, spiediet uz tām pēc tam uz "
-"informācijas pogas."
+"Lai uzzinātu vairāk par baterijas un spuldzes darbību, atlasi to, bet pēc "
+"tam spied uz informācijas pogas."
 
 #: activities/analog_electricity/TutorialDataset.qml:104
 msgctxt "TutorialDataset|"
@@ -1785,8 +1777,8 @@ msgid ""
 "Turn on the bulb using the provided battery. To connect two terminals, click "
 "on a terminal, then on a second terminal."
 msgstr ""
-"Ieslēdz spuldzi, izmantojot sniegto bateriju. Lai savienotu divus galus, "
-"spied uz viena gala, bet pēc tam uz otra gala."
+"Ieslēdz gaismu, izmantojot bateriju. Lai savienotu divas savienojuma vietas, "
+"spied uz vienas no šīm vietām, bet pēc tam uz otras."
 
 #: activities/analog_electricity/TutorialDataset.qml:117
 msgctxt "TutorialDataset|"
@@ -1804,9 +1796,9 @@ msgid ""
 "are shorted, then those batteries create a voltage source loop and they "
 "cannot act as a voltage source for the circuit."
 msgstr ""
-"Ja dažu bateriju veidu abi termināļi tiek savienoti kopā vai ķēdē ir "
-"īssavienojums, tad veidojas bateriju avota sprieguma cilpa un tās nevar "
-"darboties kā strāvas avots ķēdei."
+"Ja bateriju abi termināļi tiek savienoti kopā vai ķēdē izveidojas "
+"īssavienojums, tad veidojas bateriju avota sprieguma cilpa un tās ķēdē nevar "
+"darboties kā strāvas avots."
 
 #: activities/analog_electricity/TutorialDataset.qml:119
 msgctxt "TutorialDataset|"
@@ -1823,8 +1815,8 @@ msgid ""
 "Or, if two batteries are forming a closed circuit together, it creates a "
 "voltage source loop."
 msgstr ""
-"Vai, ja divas baterijas kopā veido slēgtu ķēdi, tas izveido sprieguma avota "
-"cilpu."
+"Vai ja divas baterijas kopā veido slēgtu ķēdi, tad rodas sprieguma avota "
+"cilpa."
 
 #: activities/analog_electricity/TutorialDataset.qml:120
 msgctxt "TutorialDataset|"
@@ -1833,7 +1825,7 @@ msgid ""
 "warning box to make it disappear and click on the OK button."
 msgstr ""
 "Izveido sprieguma avota cilpu ar sniegtajām baterijām. Pēc tam klikšķini uz "
-"brīdinājuma lauciņa, lai tas izzustu, un tad uz „Labi“ pogas."
+"brīdinājuma lauciņa, lai tas izzustu, bet tad uz „Labi“ pogas."
 
 #: activities/analog_electricity/TutorialDataset.qml:133
 msgctxt "TutorialDataset|"
@@ -1849,13 +1841,13 @@ msgid ""
 "the connected wires."
 msgstr ""
 "Lai šajā aktivitātē salabotu salauztu spuldzi, atvieno to no ķēdes un "
-"noklikšķini uz tās. Neaizmirsti noņemt dzēšanas pogu pēc savienojuma vadu "
-"atvienošanas."
+"noklikšķini uz tās. Neaizmirsti pēc savienojuma vadu atvienošanas noņemt "
+"dzēšanas pogu."
 
 #: activities/analog_electricity/TutorialDataset.qml:135
 msgctxt "TutorialDataset|"
 msgid "Break the bulb by connecting it with the two batteries."
-msgstr "Salauz spuldzi, to pievienojot divām baterijām."
+msgstr "Salauz spuldzi, to savienojot ar divām baterijām."
 
 #: activities/analog_electricity/TutorialDataset.qml:148
 msgctxt "TutorialDataset|"
@@ -1866,7 +1858,7 @@ msgstr "Slēdzis var savienot vai atvienot strāvas ceļu vai ķēdi."
 #: activities/analog_electricity/TutorialDataset.qml:149
 msgctxt "TutorialDataset|"
 msgid "You can click on the switch to open and close it."
-msgstr "Vari spiest uz slēdža, lai to atvērtu vai aizvērtu."
+msgstr "Spied uz slēdža, lai to atvērtu vai aizvērtu."
 
 #: activities/analog_electricity/TutorialDataset.qml:150
 msgctxt "TutorialDataset|"
@@ -1883,7 +1875,7 @@ msgid ""
 "A simple connector can be used to connect several wires in an electrical "
 "circuit."
 msgstr ""
-"Vienkāršu savienotāju varat izmantot vairāku elektriskās ķēdes vadu "
+"Vienkāršu savienotāju var izmantot vairāku elektriskās ķēdes vadu "
 "savienošanai."
 
 #: activities/analog_electricity/TutorialDataset.qml:164
@@ -1892,8 +1884,8 @@ msgid ""
 "Create a circuit so that one bulb should be always lit and the other should "
 "be lit only when the switch is on."
 msgstr ""
-"Izveido ķēdi, lai viena spuldze vienmēr būtu ieslēgta, bet otra ieslēgtos "
-"tikai pēc slēdža ieslēgšanas."
+"Izveido ķēdi, lai viena spuldze vienmēr degtu, bet otra degtu tikai pēc "
+"slēdža ieslēgšanas."
 
 #: activities/analog_electricity/TutorialDataset.qml:177
 msgctxt "TutorialDataset|"
@@ -1920,7 +1912,7 @@ msgid ""
 "circuit. It is like a \"push\" or \"pull\" for electric charge."
 msgstr ""
 "Spriegums jeb elektrības potenciālu starpība ir tas, kas rada ķēdē strāvu. "
-"Tā ir kā lokomotīves elektriskajam lādiņam."
+"Tā ir kā lokomotīve elektriskajam lādiņam."
 
 #: activities/analog_electricity/TutorialDataset.qml:180
 msgctxt "TutorialDataset|"
@@ -1934,7 +1926,7 @@ msgstr ""
 #: activities/analog_electricity/TutorialDataset.qml:181
 msgctxt "TutorialDataset|"
 msgid "Light the bulb and observe the displayed values."
-msgstr "Iededzini gaismu un apskaties parādītās vērtības."
+msgstr "Ieslēdz spuldzi un apskaties parādītās vērtības."
 
 #: activities/analog_electricity/TutorialDataset.qml:194
 msgctxt "TutorialDataset|"
@@ -1960,17 +1952,17 @@ msgctxt "TutorialDataset|"
 msgid ""
 "Light the bulb so that the bulb glows with 5V using the provided components."
 msgstr ""
-"Iededzini spuldzi, lai tā spīdētu ar 5 V, izmantojot sniegtās sastāvdaļas."
+"Ieslēdz spuldzi, lai tā spīdētu ar 5 V, izmantojot sniegtās sastāvdaļas."
 
 #: activities/analog_electricity/TutorialDataset.qml:209
 msgctxt "TutorialDataset|"
 msgid "A rheostat is used to vary resistance in an electrical circuit."
-msgstr "Lai mainītu elektriskās ķēdes pretestību, izmanto reostatu."
+msgstr "Elektriskās ķēdes pretestību maina ar reostatu."
 
 #: activities/analog_electricity/TutorialDataset.qml:210
 msgctxt "TutorialDataset|"
 msgid "You can change the rheostat value by dragging its slider."
-msgstr "Reostata vērtību vari mainīt, velkot tās slīdni."
+msgstr "Reostata vērtību var mainīt, velkot tās slīdni."
 
 #: activities/analog_electricity/TutorialDataset.qml:211
 msgctxt "TutorialDataset|"
@@ -1978,8 +1970,8 @@ msgid ""
 "Connect the bulb to the appropriate terminals of the rheostat so that the "
 "light intensity of the bulb can be changed while dragging the slider."
 msgstr ""
-"Savienojiet spuldzi ar atbilstošajiem reostata termināļiem, lai spuldzes "
-"gaismas intensitāti varētu mainīt, pavelkot slīdni."
+"Savieno spuldzi ar atbilstošajiem reostata termināļiem, lai spuldzes gaismas "
+"intensitāti varētu mainīt, pavelkot slīdni."
 
 #: activities/analog_electricity/TutorialDataset.qml:224
 msgctxt "TutorialDataset|"
@@ -1996,7 +1988,7 @@ msgid ""
 "Connect the bulb to the appropriate terminals of the rheostat so that the "
 "slider cannot change the light intensity of the bulb."
 msgstr ""
-"Pievienojiet spuldzi pie atbilstošā reostata termināļa, lai slīdnis nevarētu "
+"Pievieno spuldzi pie atbilstošā reostata termināļa, lai slīdnis nevarētu "
 "mainīt spuldzes intensitāti."
 
 #: activities/analog_electricity/TutorialDataset.qml:238
@@ -2006,8 +1998,8 @@ msgid ""
 "slider so that the voltage drop in the bulb should be 10V. Note that the "
 "bulb intensity should vary while dragging the slider."
 msgstr ""
-"Savieno spuldzi ar atbilstošajiem reostata termināļiem un iestatiet slīdni "
-"tā, lai spuldzes spriegums rādītu 10 V. Ievēro, ka spuldzes intensitātei ir "
+"Savieno spuldzi ar atbilstošajiem reostata termināļiem un pabīdi slīdni tā, "
+"lai spuldzes spriegums rādītu 10 V. Ievēro, ka spuldzes intensitātei ir "
 "jāmainās, kad kustini slīdni."
 
 #: activities/analog_electricity/TutorialDataset.qml:251
@@ -2039,7 +2031,7 @@ msgid ""
 "activity, you can click on the broken red LED after disconnecting from the "
 "circuit to repair it."
 msgstr ""
-"Elektroenerģija, kas pārsniedz noteiktu limitu, var salauzt LED. Šajā "
+"Elektroenerģija, kas pārsniedz noteiktu limitu, var sabojāt LED. Šajā "
 "aktivitātē varat noklikšķināt uz salauztas LED, kas ir atslēgta no strāvas, "
 "lai to salabotu."
 
@@ -2069,7 +2061,7 @@ msgstr ""
 #: activities/analog_electricity/TutorialDataset.qml:269
 msgctxt "TutorialDataset|"
 msgid "Light the red LED using the provided components."
-msgstr "Iededzini sarkano LED, izmantojot sniegtos komponentus."
+msgstr "Ieslēdz sarkano LED gaismu, izmantojot sniegtos komponentus."
 
 #: activities/analog_electricity/TutorialDataset.qml:282
 msgctxt "TutorialDataset|"
@@ -2090,7 +2082,7 @@ msgstr "Mana pirmā tastatūra"
 #: activities/baby_keyboard/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "A simple activity to discover the keyboard."
-msgstr "Vienkārša aktivitāte, lai izpētītu tastatūru."
+msgstr "Vienkārša aktivitāte tastatūras izpētei."
 
 #. Help goal
 #: activities/baby_keyboard/ActivityInfo.qml:20
@@ -2136,7 +2128,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Provide audio-visual feedback when using the mouse to help discovering its "
 "usage for young children."
-msgstr "Audiovizuāla atgriezeniskā saite palīdz bērnam mācīties lietot peli."
+msgstr "Audiovizuāla atgriezeniskā saite palīdz bērnam apgūt peles lietošanu."
 
 #. Help prerequisite
 #: activities/baby_mouse/ActivityInfo.qml:21
@@ -2570,7 +2562,7 @@ msgid ""
 "value of the contact button. It is not possible to set a value more than "
 "once on a map."
 msgstr ""
-"Kontakts: pievienot/noņemt kontakta pogu. Ar numuru rīku varat izvēlēties "
+"Kontakts: pievienot/noņemt kontakta pogu. Skaitļu izvēlnē vari izvēlēties "
 "kontakta pogu vērtību. Nav iespējams vienu vērtību kartē norādīt vairāk par "
 "vienu reizi."
 
@@ -2907,9 +2899,8 @@ msgid ""
 "2⁷=128."
 msgstr ""
 "Katrs bits pievieno papildu vērtību atbilstoši kāpināšanai ar divi no labās "
-"uz kreiso pusi: 1. bits → 2⁰=1, 2. bits → 2¹=2 , 3. bits → 2²=4 , 4. bits → "
-"2³=8 , 5. bits → 2⁴=16 , 6. bits → 2⁵=32 , 7. bits → 2⁶=64 , 8. bits → "
-"2⁷=128."
+"uz kreiso pusi: 1. bits → 2⁰=1, 2. bits → 2¹=2, 3. bits → 2²=4, 4. bits → "
+"2³=8, 5. bits → 2⁴=16, 6. bits → 2⁵=32, 7. bits → 2⁶=64, 8. bits → 2⁷=128."
 
 #: activities/binary_bulb/BinaryBulb.qml:115
 msgctxt "BinaryBulb|"
@@ -2939,42 +2930,42 @@ msgstr "Pārveido skaitli %1 binārā formā!"
 #: activities/binary_bulb/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 3 (with counter and with values visible)."
-msgstr ""
+msgstr "Skaiti līdz trīs (ar redzamu skaitītāju un vērtībām)."
 
 #: activities/binary_bulb/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 3 (without counter and with values visible)."
-msgstr ""
+msgstr "Skaiti līdz trīs (bez skaitītāja, bet ar redzamām vērtībām)."
 
 #: activities/binary_bulb/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (with counter and with values visible)."
-msgstr ""
+msgstr "Skaiti līdz 15 (ar redzamu skaitītāju un vērtībām)."
 
 #: activities/binary_bulb/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (without counter and with values visible)."
-msgstr ""
+msgstr "Skaiti līdz 15 (bez skaitītāja, bet ar redzamām vērtībām)."
 
 #: activities/binary_bulb/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (with counter and with values visible)."
-msgstr ""
+msgstr "Skaiti līdz 255 (ar redzamu skaitītāju un vērtībām)."
 
 #: activities/binary_bulb/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (without counter and with values visible)."
-msgstr ""
+msgstr "Skaiti līdz 255 (bez skaitītāja, bet ar redzamām vērtībām)."
 
 #: activities/binary_bulb/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (without counter and without values visible)."
-msgstr ""
+msgstr "Skaiti līdz 15 (bez skaitītāja un bez redzamām vērtībām)."
 
 #: activities/binary_bulb/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (without counter and without values visible)."
-msgstr ""
+msgstr "Skaiti līdz 255 (bez skaitītāja un bez redzamām vērtībām)."
 
 #: activities/binary_bulb/resource/tutorial4.qml:31
 msgctxt "tutorial4|"
@@ -3013,8 +3004,8 @@ msgid ""
 "characters to use as a reference. Each level teaches a set of 10 characters."
 msgstr ""
 "Ekrānam ir 3 sadaļas — interaktīva Braila šūna, instrukcija, kas saka "
-"atkārtojamo rakstzīmi, bet augšā Braila rakstzīmes atsaucei. Katrs līmenis "
-"iemāta kopu ar 10 rakstzīmēm."
+"atkārtojamo rakstzīmi, bet augšā Braila rakstzīmju atgādne. Katrs līmenis "
+"iemāca kopu ar 10 rakstzīmēm."
 
 #: activities/braille_alphabets/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
@@ -3046,7 +3037,7 @@ msgstr "Atstarpe: atver vai aizver Braila raksta diagrammu"
 #: activities/braille_alphabets/braille_alphabets.js:83
 msgctxt "braille_alphabets|"
 msgid "Now it's a little bit harder without the reference."
-msgstr "Tas ir nedaudz grūtāk bez atsauces."
+msgstr "Bez atgādnes tas ir grūtāk."
 
 #: activities/braille_alphabets/braille_alphabets.js:48
 msgctxt "braille_alphabets|"
@@ -3082,7 +3073,8 @@ msgid ""
 "The braille system is a method that is used by blind people to read and "
 "write."
 msgstr ""
-"Braila raksts ir sistēma, kuru akli cilvēki izmanto rakstīšanai un lasīšanai."
+"Braila raksts ir sistēma, kuru neredzīgi un vājredzīgi cilvēki izmanto "
+"rakstīšanai un lasīšanai."
 
 #: activities/braille_alphabets/FirstScreen.qml:67
 msgctxt "FirstScreen|"
@@ -3188,8 +3180,8 @@ msgid ""
 "Create the braille cells for the letters on the banner. Check the braille "
 "chart by clicking on the blue braille cell icon if you need some help."
 msgstr ""
-"Izveidot Braila šūnas burtiem karodziņā. Apskaties Braila diagrammu, "
-"klikšķinot uz zilās Braila šūnas ikonas, ja vajadzīga palīdzība."
+"Izveidot Braila šūnas burtiem karodziņā. Ja vajadzīga palīdzība, apskati "
+"Braila diagrammu, klikšķinot uz zilās Braila šūnas ikonas."
 
 #. Activity title - the game is the KenKen but we cannot use KenKen as it is a trademark name
 #: activities/calcudoku/ActivityInfo.qml:14
@@ -3778,7 +3770,7 @@ msgstr "Dzīvnieki"
 #: activities/categorization/resource/board/category_animals.qml:95
 msgctxt "category_animals|"
 msgid "Place the ANIMALS to the right and other objects to the left"
-msgstr "Novieto DZĪVNIEKUS labajā pusē, bet pārējos objektus kreisajā"
+msgstr "Novieto DZĪVNIEKUS labajā pusē, bet pārējos attēlus kreisajā"
 
 #: activities/categorization/resource/board/category_birds.qml:19
 msgctxt "category_birds|"
@@ -3796,7 +3788,7 @@ msgstr "Putni"
 #: activities/categorization/resource/board/category_birds.qml:95
 msgctxt "category_birds|"
 msgid "Place the BIRDS to the right and other objects to the left"
-msgstr "Novieto PUTNUS labajā pusē, bet pārējos objektus kreisajā"
+msgstr "Novieto PUTNUS labajā pusē, bet pārējos attēlus kreisajā"
 
 #: activities/categorization/resource/board/category_colors.qml:19
 msgctxt "category_colors|"
@@ -3887,7 +3879,7 @@ msgstr "Zivis"
 #: activities/categorization/resource/board/category_fishes.qml:69
 msgctxt "category_fishes|"
 msgid "Place the FISHES to the right and other objects to the left"
-msgstr "Novieto ZIVIS labajā pusē, bet pārējos objektus kreisajā"
+msgstr "Novieto ZIVIS labajā pusē, bet pārējos attēlus kreisajā"
 
 #: activities/categorization/resource/board/category_flowers.qml:18
 msgctxt "category_flowers|"
@@ -3905,7 +3897,7 @@ msgstr "Puķes"
 #: activities/categorization/resource/board/category_flowers.qml:94
 msgctxt "category_flowers|"
 msgid "Place the FLOWERS to the right and other objects to the left"
-msgstr "Novieto PUĶES labajā pusē, bet pārējos objektus kreisajā"
+msgstr "Novieto PUĶES labajā pusē, bet pārējos attēlus kreisajā"
 
 #: activities/categorization/resource/board/category_food.qml:19
 msgctxt "category_food|"
@@ -3920,7 +3912,7 @@ msgstr "Ēdiens"
 #: activities/categorization/resource/board/category_food.qml:68
 msgctxt "category_food|"
 msgid "Place the FOOD ITEMS to the right and other objects to the left"
-msgstr "Novieto PĀRTIKU labajā pusē, bet pārējos objektus kreisajā"
+msgstr "Novieto PĀRTIKU labajā pusē, bet pārējos attēlus kreisajā"
 
 #: activities/categorization/resource/board/category_fruits.qml:19
 msgctxt "category_fruits|"
@@ -3937,7 +3929,7 @@ msgstr "Augļi"
 #: activities/categorization/resource/board/category_fruits.qml:86
 msgctxt "category_fruits|"
 msgid "Place the FRUITS to the right and other objects to the left"
-msgstr "Novieto AUGĻUS labajā pusē, bet pārējos objektus kreisajā"
+msgstr "Novieto AUGĻUS labajā pusē, bet pārējos attēlus kreisajā"
 
 #: activities/categorization/resource/board/category_household_goods.qml:19
 msgctxt "category_household_goods|"
@@ -3961,7 +3953,7 @@ msgstr "Mājsaimniecības preces"
 msgctxt "category_household_goods|"
 msgid "Place the HOUSEHOLD GOODS to the right and other objects to the left"
 msgstr ""
-"Novieto MĀJSAIMNIECĪBAS PRECES labajā pusē, bet pārējos objektus kreisajā"
+"Novieto MĀJSAIMNIECĪBAS PRECES labajā pusē, bet pārējos attēlus kreisajā"
 
 #: activities/categorization/resource/board/category_insects.qml:19
 msgctxt "category_insects|"
@@ -3976,7 +3968,7 @@ msgstr "Kukaiņi"
 #: activities/categorization/resource/board/category_insects.qml:68
 msgctxt "category_insects|"
 msgid "Place the INSECTS to the right and other objects to the left"
-msgstr "Novieto KUKAIŅUS labajā pusē, bet pārējos objektus kreisajā"
+msgstr "Novieto KUKAIŅUS labajā pusē, bet pārējos attēlus kreisajā"
 
 #: activities/categorization/resource/board/category_living_beings.qml:19
 msgctxt "category_living_beings|"
@@ -3992,7 +3984,7 @@ msgstr "Dzīvas būtnes"
 #: activities/categorization/resource/board/category_living_beings.qml:77
 msgctxt "category_living_beings|"
 msgid "Place the living beings to the right and other objects to the left"
-msgstr "Novieto dzīvās būtnes labajā pusē, bet pārējos objektus kreisajā"
+msgstr "Novieto dzīvās būtnes labajā pusē, bet pārējos attēlus kreisajā"
 
 #: activities/categorization/resource/board/category_monuments.qml:19
 msgctxt "category_monuments|"
@@ -4007,7 +3999,7 @@ msgstr "Pieminekļi"
 #: activities/categorization/resource/board/category_monuments.qml:68
 msgctxt "category_monuments|"
 msgid "Place the MONUMENTS to the right and other objects to the left"
-msgstr "Novieto PIEINEKĻUS labajā pusē, bet pārējos objektus kreisajā"
+msgstr "Novieto PIEMINEKĻUS labajā pusē, bet pārējos attēlus kreisajā"
 
 #: activities/categorization/resource/board/category_nature.qml:19
 msgctxt "category_nature|"
@@ -4024,7 +4016,7 @@ msgstr "Daba"
 #: activities/categorization/resource/board/category_nature.qml:86
 msgctxt "category_nature|"
 msgid "Place the NATURE images to the right and other objects to the left"
-msgstr "Novieto attēlus ar DABU labajā pusē, bet pārējos objektus kreisajā"
+msgstr "Novieto attēlus ar DABU labajā pusē, bet pārējos attēlus kreisajā"
 
 #: activities/categorization/resource/board/category_numbers.qml:19
 msgctxt "category_numbers|"
@@ -4036,7 +4028,7 @@ msgstr "Skaitļi"
 #: activities/categorization/resource/board/category_numbers.qml:41
 msgctxt "category_numbers|"
 msgid "Place the NUMBERS to the right and other objects to the left"
-msgstr "Novieto SKAITĻUS labajā pusē, bet pārējos objektus kreisajā"
+msgstr "Novieto SKAITĻUS labajā pusē, bet pārējos attēlus kreisajā"
 
 #: activities/categorization/resource/board/category_odd_even.qml:20
 msgctxt "category_odd_even|"
@@ -4070,8 +4062,7 @@ msgctxt "category_renewable|"
 msgid ""
 "Place the RENEWABLE energy sources to the right and other objects to the left"
 msgstr ""
-"Novieto ATJAUNĪGOS enerģijas avotus labajā pusē, bet pārējos objektus "
-"kreisajā"
+"Novieto ATJAUNĪGOS enerģijas avotus labajā pusē, bet pārējos attēlus kreisajā"
 
 #: activities/categorization/resource/board/category_shapes.qml:21
 msgctxt "category_shapes|"
@@ -4222,7 +4213,7 @@ msgstr "Rīki"
 #: activities/categorization/resource/board/category_tools.qml:104
 msgctxt "category_tools|"
 msgid "Place the TOOLS to the right and other objects to the left"
-msgstr "Novieto RĪKUS labajā pusē, bet pārējos objektus kreisajā"
+msgstr "Novieto RĪKUS labajā pusē, bet pārējos attēlus kreisajā"
 
 #: activities/categorization/resource/board/category_transports.qml:19
 msgctxt "category_transports|"
@@ -4242,8 +4233,7 @@ msgstr "Transports"
 msgctxt "category_transports|"
 msgid ""
 "Place the MEANS OF TRANSPORTATION to the right and other objects to the left"
-msgstr ""
-"Novieto TRANSPORTA LĪDZEKĻUS labajā pusē, bet pārējos objektus kreisajā"
+msgstr "Novieto TRANSPORTA LĪDZEKĻUS labajā pusē, bet pārējos attēlus kreisajā"
 
 #: activities/categorization/resource/board/category_vegetables.qml:19
 msgctxt "category_vegetables|"
@@ -4258,7 +4248,7 @@ msgstr "Dārzeņi"
 #: activities/categorization/resource/board/category_vegetables.qml:68
 msgctxt "category_vegetables|"
 msgid "Place the VEGETABLES to the right and other objects to the left"
-msgstr "Novieto DĀRZEŅUS labajā pusē, bet pārējos objektus kreisajā"
+msgstr "Novieto DĀRZEŅUS labajā pusē, bet pārējos attēlus kreisajā"
 
 #. Activity title
 #: activities/checkers/ActivityInfo.qml:15
@@ -4660,7 +4650,7 @@ msgstr "Mācies atpazīt stāsta hronoloģiju."
 #: activities/ordering_chronology/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tell a short story."
-msgstr "Izstāsti īsu stāstu."
+msgstr "Proti izstāsti īsu stāstu."
 
 #. Help manual
 #: activities/chronos/ActivityInfo.qml:28
@@ -5167,7 +5157,7 @@ msgid ""
 "Learn units of time (hours, minutes and seconds). Set the time on an analog "
 "clock."
 msgstr ""
-"Mācies laika mērvienības  (stundas, minūtes un sekundes). Iestati laiku "
+"Mācies laika mērvienības  (stundas, minūtes un sekundes). Norādi laiku "
 "analogā pulkstenī."
 
 #. Help prerequisite
@@ -5183,7 +5173,7 @@ msgid ""
 "Set the clock to the given time. Drag the different hands to control their "
 "respective unit."
 msgstr ""
-"Iestati pulkstenī doto laiku. Velc atšķirīgos rādītājus, lai kontrolētu to "
+"Norādi pulkstenī doto laiku. Velc atšķirīgos rādītājus, lai kontrolētu to "
 "mērvienību."
 
 #: activities/clockgame/ActivityInfo.qml:25
@@ -5198,7 +5188,7 @@ msgstr ""
 #: activities/clockgame/Clockgame.qml:124
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
-msgstr "Iestati pulksteni uz:"
+msgstr "Norādi pulkstenī:"
 
 #: activities/clockgame/Clockgame.qml:127
 #, qt-format
@@ -5410,7 +5400,7 @@ msgid ""
 "the + and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
 "Maini krāsu, pārvietojot slīdņus uz kabatas baterijām vai klikšķinot uz + un "
-"− pogām. Pēc tam spied uz „Labi“ pogas, lai pārbaudītu atbildi."
+"− pogām. Pēc tam pārbaudi atbildi, spiežot uz „Labi“ pogas."
 
 #: activities/color_mix_light/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -5751,7 +5741,7 @@ msgstr "Spēlē ar vārdiem ar pieciem burtiem."
 #: activities/details/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Find the details"
-msgstr "Atrodi sīkumus"
+msgstr "Atrodi detaļas"
 
 #. Help title
 #: activities/details/ActivityInfo.qml:20
@@ -5909,12 +5899,9 @@ msgstr "Digitālā elektrība"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "Izveido un simulē digitālo loģisko shēmu"
+msgstr "Izveido un simulē digitālo loģisko shēmu."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -5935,7 +5922,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Drag electrical components from the side bar and drop them in the working "
 "area."
-msgstr "Velc elektroniskās sastāvdaļas no sānu joslas un tās nomet darba zonā."
+msgstr "Velc elektroniskās daļas no sānu joslas un nomet tās darba zonā."
 
 #: activities/digital_electricity/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -5943,8 +5930,8 @@ msgid ""
 "To connect two terminals with a wire, click on a first terminal, then on a "
 "second terminal."
 msgstr ""
-"Lai savienotu divus terminālus ar vadu, klikšķini sākumā uz pirmā termināla, "
-"bet pēc tam uz otrā termināla."
+"Lai savienotu divus termināļus ar vadu, klikšķini sākumā uz pirmā termināļa, "
+"bet pēc tam uz otrā termināļa."
 
 #: activities/digital_electricity/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -6167,7 +6154,7 @@ msgstr ""
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"
-msgstr "%1 s"
+msgstr "%1 sek."
 
 #: activities/digital_electricity/components/Switch.qml:21
 msgctxt "Switch|"
@@ -6177,7 +6164,7 @@ msgid ""
 "off, then the connection inside the switch is broken and the current can not "
 "flow through it."
 msgstr ""
-"Slēdzi izmanto, lai savienotu vai atvienotu divus terminālus. Ja slēdzis ir "
+"Slēdzi izmanto, lai savienotu vai atvienotu divus termināļus. Ja slēdzis ir "
 "ieslēgts, strāva var plūst cauri slēdzim, bet, ja slēdzis ir izslēgts, tad "
 "savienojums slēdža iekšpusē ir pārtraukts un strāva nevar caur to plūst."
 
@@ -6237,32 +6224,32 @@ msgstr "Digitālā gaisma"
 #: activities/digital_electricity/TutorialDataset.qml:40
 msgctxt "TutorialDataset|"
 msgid "AND gate"
-msgstr "AND vārti"
+msgstr "AND (UN) vārti"
 
 #: activities/digital_electricity/TutorialDataset.qml:47
 msgctxt "TutorialDataset|"
 msgid "OR gate"
-msgstr "OR vārti"
+msgstr "OR (VAI) vārti"
 
 #: activities/digital_electricity/TutorialDataset.qml:54
 msgctxt "TutorialDataset|"
 msgid "NOT gate"
-msgstr "NOT vārti"
+msgstr "NOT (NE) vārti"
 
 #: activities/digital_electricity/TutorialDataset.qml:61
 msgctxt "TutorialDataset|"
 msgid "XOR gate"
-msgstr "XOR vārti"
+msgstr "XOR (Izslēdzošie VAI) vārti"
 
 #: activities/digital_electricity/TutorialDataset.qml:68
 msgctxt "TutorialDataset|"
 msgid "NAND gate"
-msgstr "NAND vārti"
+msgstr "NAND (NE-UN) vārti"
 
 #: activities/digital_electricity/TutorialDataset.qml:75
 msgctxt "TutorialDataset|"
 msgid "NOR gate"
-msgstr "NOR vārti"
+msgstr "NOR (NE-VAI) vārti"
 
 #: activities/digital_electricity/TutorialDataset.qml:89
 msgctxt "TutorialDataset|"
@@ -6293,7 +6280,7 @@ msgstr "BCD skaitītājs"
 msgctxt "TutorialDataset|"
 msgid ""
 "The digital light glows when its terminal is connected with an input of 1."
-msgstr "Digitālā gaisma deg, ja termināls ir savienots ar ievadi 1."
+msgstr "Digitālā gaisma deg, ja terminālis ir savienots ar ievadi 1."
 
 #: activities/digital_electricity/TutorialDataset.qml:145
 #: activities/digital_electricity/TutorialDataset.qml:202
@@ -6307,7 +6294,7 @@ msgid ""
 "To connect two terminals, click on a first terminal, then on a second "
 "terminal."
 msgstr ""
-"Lai savienotu divus terminālus, spied sākumā uz pirmā termināla, bet pēc tam "
+"Lai savienotu divus termināļus, spied sākumā uz pirmā termināļa, bet pēc tam "
 "uz otrā."
 
 #: activities/digital_electricity/TutorialDataset.qml:159
@@ -6315,29 +6302,32 @@ msgctxt "TutorialDataset|"
 msgid ""
 "The AND gate produces an output of 1 when both of its input terminals are of "
 "value 1."
-msgstr "AND vārti veido izvadi 1, kad abi ievades termināļi ir vērtība 1."
+msgstr "AND (UN) vārti veido izvadi 1, kad abu ievades termināļu vērtība ir 1."
 
 #: activities/digital_electricity/TutorialDataset.qml:160
 msgctxt "TutorialDataset|"
 msgid "Turn on the digital light using an AND gate and the provided inputs."
-msgstr "Ieslēdz digitālo gaismu, izmantojot AND vārtus un sniegtās ievades."
+msgstr ""
+"Ieslēdz digitālo gaismu, izmantojot AND (UN) vārtus un sniegtās ievades."
 
 #: activities/digital_electricity/TutorialDataset.qml:173
 msgctxt "TutorialDataset|"
 msgid ""
 "The OR gate produces an output of 1 when at least one of its input terminals "
 "is of value 1."
-msgstr "OR vārti rada izvadi 1, ja vismaz viens no ievades termināliem ir 1."
+msgstr ""
+"OR (VAI) vārti rada izvadi 1, ja vismaz viens no ievades termināļiem ir 1."
 
 #: activities/digital_electricity/TutorialDataset.qml:174
 msgctxt "TutorialDataset|"
 msgid "Turn on the digital light using an OR gate and the provided inputs."
-msgstr "Ieslēdz digitālo gaismu, izmantojot OR vārtus un sniegtās ievades."
+msgstr ""
+"Ieslēdz digitālo gaismu, izmantojot OR (VAI) vārtus un sniegtās ievades."
 
 #: activities/digital_electricity/TutorialDataset.qml:187
 msgctxt "TutorialDataset|"
 msgid "You can draw multiple wires from the output terminal of a component."
-msgstr "Varat zīmēt vairākus vadus, no komponentes termināļu izvadēm."
+msgstr "No vienas komponentes izvades vari zīmēt vairākus vadus."
 
 #: activities/digital_electricity/TutorialDataset.qml:188
 msgctxt "TutorialDataset|"
@@ -6348,13 +6338,14 @@ msgstr "Ieslēdz digitālo gaismu, izmantojot sniegtās komponentes."
 msgctxt "TutorialDataset|"
 msgid ""
 "The NOT gate takes a single binary input and flips the value in the output."
-msgstr "NOT vārti izmanto vienu bināro ievadi un izvada pretēju vērtību."
+msgstr "NOT (NE) vārti izmanto vienu bināro ievadi un izvada pretēju vērtību."
 
 #: activities/digital_electricity/TutorialDataset.qml:215
 msgctxt "TutorialDataset|"
 msgid "The NAND gate takes two binary inputs and produces one binary output."
 msgstr ""
-"NAND vārti izmanto divas binārās ievades un izvada vienu bināro izvadi."
+"NAND (NE-UN) vārti izmanto divas binārās ievades un izvada vienu bināro "
+"izvadi."
 
 #: activities/digital_electricity/TutorialDataset.qml:216
 msgctxt "TutorialDataset|"
@@ -6362,8 +6353,8 @@ msgid ""
 "The output of the NAND gate is zero if both of its inputs are 1. Else, the "
 "output is one."
 msgstr ""
-"NAND vārtu izvade ir nulle, ja abas izvades ir 1. Pretējā gadījumā izvade ir "
-"viens."
+"NAND (NE-UN) vārtu izvade ir nulle, ja abas izvades ir 1. Pretējā gadījumā "
+"izvade ir viens."
 
 #: activities/digital_electricity/TutorialDataset.qml:217
 msgctxt "TutorialDataset|"
@@ -6371,13 +6362,13 @@ msgid ""
 "For a more detailed description about the NAND gate, select it and click on "
 "the info button."
 msgstr ""
-"Lai iegūtu sīkāku aprakstu par NAND vārtiem, atlasi tos un spied uz "
+"Lai uzzinātu vairāk par NAND (NE-UN) vārtiem, atlasi tos un spied uz "
 "informācijas pogas."
 
 #: activities/digital_electricity/TutorialDataset.qml:218
 msgctxt "TutorialDataset|"
 msgid "Light the bulb using the provided NAND gate."
-msgstr "Ieslēdz spuldzi, izmantojot sniegtos NAND vārtus."
+msgstr "Ieslēdz spuldzi, izmantojot sniegtos NAND (NE-UN) vārtus."
 
 #: activities/digital_electricity/TutorialDataset.qml:234
 #: activities/digital_electricity/TutorialDataset.qml:386
@@ -6387,8 +6378,8 @@ msgid ""
 "Create a circuit using the provided components so that the bulb glows only "
 "when both of the switches are turned on."
 msgstr ""
-"Izveido ķēdi, izmantojot sniegtās komponentes, lai spuldze spīdētu tikai "
-"tad, kad ir ieslēgti abi slēdži."
+"Izveido tādi ķēdi no sniegtajām komponentēm, lai spuldze spīdētu tikai tad, "
+"kad ir ieslēgti abi slēdži."
 
 #: activities/digital_electricity/TutorialDataset.qml:250
 #: activities/digital_electricity/TutorialDataset.qml:402
@@ -6397,8 +6388,8 @@ msgid ""
 "Create a circuit using the provided components so that the bulb glows when "
 "either of the switch is turned on."
 msgstr ""
-"Izveido ķēdi, izmantojot sniegtās komponentes, lai spuldze spīdētu, kad kāds "
-"no slēdžiem ir ieslēgts."
+"Izveido ķēdi no sniegtajām komponentēm, lai spuldze spīdētu, kad kāds no "
+"slēdžiem ir ieslēgts."
 
 #: activities/digital_electricity/TutorialDataset.qml:266
 msgctxt "TutorialDataset|"
@@ -6406,8 +6397,8 @@ msgid ""
 "Light the bulb using the three switches so that the bulb glows only if all "
 "the three switches are turned on."
 msgstr ""
-"Ieslēdz spuldzi, izmantojot trīs slēdžus, lai spuldze spīdētu tikai tad, ja "
-"ir ieslēgti visi trīs slēdži."
+"Izveido ķēdi ar trīs slēdžiem, lai spuldze spīdētu tikai tad, ja ir ieslēgti "
+"visi trīs no tiem."
 
 #: activities/digital_electricity/TutorialDataset.qml:282
 msgctxt "TutorialDataset|"
@@ -6415,8 +6406,8 @@ msgid ""
 "Light the bulb using the three switches so that the bulb glows if any of the "
 "switches are turned on."
 msgstr ""
-"Ieslēdz spuldzi, izmantojot trīs slēdžos tā, lai spuldze spīdētu tad, ja ir "
-"ieslēgts jebkurš no slēdžiem."
+"Izveido ķēdi ar trīs slēdžiem, lai spuldze spīdētu, ja ir ieslēgts jebkurš "
+"no trim slēdžiem."
 
 #: activities/digital_electricity/TutorialDataset.qml:295
 msgctxt "TutorialDataset|"
@@ -6427,7 +6418,9 @@ msgstr ""
 #: activities/digital_electricity/TutorialDataset.qml:308
 msgctxt "TutorialDataset|"
 msgid "The XOR Gate takes two binary inputs and produces one binary output."
-msgstr "XOR vārti izmanto divas binārās ievades un izvada vienu bināro izvadi."
+msgstr ""
+"XOR (izslēdzošā VAI) vārti izmanto divas binārās ievades un izvada vienu "
+"bināro izvadi."
 
 #: activities/digital_electricity/TutorialDataset.qml:309
 msgctxt "TutorialDataset|"
@@ -6435,7 +6428,7 @@ msgid ""
 "The output of the XOR gate is one if the number of 1 in the input is odd. "
 "Else, the output is zero."
 msgstr ""
-"XOR vārtu izvade ir viens, ja 1 ievažu skaits ir nepāra. Pretējā gadījumā "
+"XOR vārtu izvade ir viens, ja „1“ ievažu skaits ir nepāra. Pretējā gadījumā "
 "izvade ir nulle."
 
 #: activities/digital_electricity/TutorialDataset.qml:310
@@ -6449,7 +6442,7 @@ msgid ""
 "Light the bulb using the two switches so that the bulb glows when one of the "
 "switch is on and the other is off."
 msgstr ""
-"Ieslēdz spuldzi, izmantojot divus slēdžus, lai spuldze spīdētu, kad viens no "
+"Izveido ķēdi no diviem slēdžiem, lai spuldze spīdētu tikai tad, kad viens no "
 "slēdžiem ir ieslēgts, bet otrs ir izslēgts."
 
 #: activities/digital_electricity/TutorialDataset.qml:342
@@ -6467,8 +6460,8 @@ msgid ""
 "A NOR gate takes 2 binary inputs and outputs 1 if both of them are 0, "
 "otherwise produces an output of 0."
 msgstr ""
-"NOR vārti izmanto 2 binārās ievades un izvada 1, ja abas ir 0, bet pretējā "
-"gadījumā izvade ir 0."
+"NOR (NE-VAI) vārti izmanto divas binārās ievades un izvada 1, ja abas ir 0. "
+"Pretējā gadījumā izvade ir 0."
 
 #: activities/digital_electricity/TutorialDataset.qml:356
 msgctxt "TutorialDataset|"
@@ -6476,13 +6469,13 @@ msgid ""
 "For a more detailed description about the NOR gate, select it and click on "
 "the info button."
 msgstr ""
-"Lai iegūtu sīkāku aprakstu par NOR vārtiem, atlasiet tos un spiediet uz "
+"Lai uzzinātu vairāk par NOR (NE-VAI) vārtiem, atlasi tos un spiediet uz "
 "informācijas pogas."
 
 #: activities/digital_electricity/TutorialDataset.qml:357
 msgctxt "TutorialDataset|"
 msgid "Light the bulb using the provided NOR gate."
-msgstr "Ieslēdz spuldzi, izmantojot sniegtos NOR vārtus."
+msgstr "Ieslēdz spuldzi, izmantojot sniegtos NOR (NE-VAI) vārtus."
 
 #: activities/digital_electricity/TutorialDataset.qml:370
 msgctxt "TutorialDataset|"
@@ -6499,8 +6492,8 @@ msgid ""
 "Create a circuit using the provided components so that the bulb glows only "
 "when both of the switches are turned off."
 msgstr ""
-"Izveido shēmu, izmantojot sniegtās komponentes, lai spuldze spīdētu tikai "
-"tad, kad abi slēdži ir izslēgti."
+"Izveido ķēdi no sniegtajām komponentēm, lai spuldze spīdētu tikai tad, kad "
+"abi slēdži ir izslēgti."
 
 #: activities/digital_electricity/TutorialDataset.qml:434
 msgctxt "TutorialDataset|"
@@ -6509,8 +6502,8 @@ msgid ""
 "first switch is turned ON, or if both the second and the third switches are "
 "turned on."
 msgstr ""
-"Ieslēdz spuldzi, izmantojot sniegtās komponentes, lai spuldze spīdētu tikai "
-"tad, kad pirms slēdzis ir ieslēgts, vai tad, kad ir ieslēgts reizē otrais un "
+"Izveido ķēdi no sniegtajām komponentēm, lai spuldze spīdētu tikai tad, kad "
+"pirmais slēdzis ir ieslēgts, vai tad, kad ir ieslēgts reizē otrais un "
 "trešais slēdzis."
 
 #: activities/digital_electricity/TutorialDataset.qml:447
@@ -6528,8 +6521,8 @@ msgid ""
 "Create a circuit using the provided components so that the bulb glows when "
 "either of the switches are turned on."
 msgstr ""
-"Izveidot shēmu, izmantojot sniegtās komponentes, lai spuldze spīdētu, kad "
-"kāds no slēdžiem ir ieslēgts."
+"Izveidot ķēdi no sniegtajām komponentēm, lai spuldze spīdētu, kad kāds no "
+"slēdžiem ir ieslēgts."
 
 #: activities/digital_electricity/TutorialDataset.qml:495
 msgctxt "TutorialDataset|"
@@ -6537,8 +6530,8 @@ msgid ""
 "Create a circuit using the provided components so that the bulb glows when "
 "at least one of the switches is turned off."
 msgstr ""
-"Izmanto shēmu, izmantojot sniegtās komponentes, lai spuldze spīdētu, kad "
-"vismaz viens no slēdžiem ir ieslēgts."
+"Izmanto shēmu no sniegtajām komponentēm, lai spuldze spīdētu, kad vismaz "
+"viens no slēdžiem ir ieslēgts."
 
 #: activities/digital_electricity/TutorialDataset.qml:511
 msgctxt "TutorialDataset|"
@@ -6558,8 +6551,8 @@ msgid ""
 "the output of the first switch is less than or equal to the output of the "
 "second switch."
 msgstr ""
-"Izveido shēmu, izmantojot sniegtās komponentes, lai spuldze spīdētu, kad "
-"pirmā slēdža izvade ir mazāka vai vienāda par otrā slēdža izvadi."
+"Izveido ķēdi no sniegtajām komponentēm, lai spuldze spīdētu, kad pirmā "
+"slēdža izvade ir mazāka vai vienāda par otrā slēdža izvadi."
 
 #: activities/digital_electricity/TutorialDataset.qml:525
 msgctxt "TutorialDataset|"
@@ -6572,8 +6565,8 @@ msgid ""
 "It takes 4 bits as input represented in the binary coded decimal (BCD) "
 "format and converts the BCD number into a seven segment code."
 msgstr ""
-"Ir vajadzīgi 4 biti kā ievade, kas reprezentēta bināri kodētā decimālā (BCD) "
-"formātā, BCD skaitli tiek pārveidoti septiņu segmentu kodā."
+"Ievadei ir nepieciešami 4 biti, kas ir reprezentēti bināri kodētā decimālā "
+"(BCD) formātā un BCD skaitli pārveido septiņu segmentu kodā."
 
 #: activities/digital_electricity/TutorialDataset.qml:527
 msgctxt "TutorialDataset|"
@@ -6581,8 +6574,8 @@ msgid ""
 "The output of the converter is connected to the seven segment display, to "
 "view the value of the input provided."
 msgstr ""
-"Pārveidotāja izvade ir savienota ar septiņu segmentu displejam, lai "
-"apskatītu sniegtās ievades vērtību."
+"Pārveidotāja izvade ir savienota ar septiņu segmentu displeju, lai parādītu "
+"sniegtās ievades vērtību."
 
 #: activities/digital_electricity/TutorialDataset.qml:528
 msgctxt "TutorialDataset|"
@@ -6597,8 +6590,8 @@ msgid ""
 "default is 1 second, but it can be changed between 0.25 and 2s."
 msgstr ""
 "Signālu ģeneratoru kreisajā pusē izmanto, lai pārmaiņus noteiktā periodā, ko "
-"nosaka ievade, ģenerētu signālu 0 un 1. Laika periods pēc noklusējuma ir 1 "
-"sekunde, tomēr to var mainīt starp 0,25 un 2 sekundēm."
+"nosaka ievade, ģenerētu signālu 0 un 1. Laika periods pēc noklusējuma ir "
+"viena sekunde, tomēr to var mainīt starp 0,25 un 2 sekundēm."
 
 #: activities/digital_electricity/TutorialDataset.qml:542
 msgctxt "TutorialDataset|"
@@ -6625,18 +6618,16 @@ msgid ""
 "either the first switch is on and the second switch is off, or when the "
 "first switch is off and the second switch is on."
 msgstr ""
-"Ieslēdz spuldzi, izmantojot abus slēdžus, lai spuldze spīdētu tikai tad, kad "
-"ir ieslēgts pirmais slēdzis, bet izslēgts otrais slēdzis, vai tad, kad "
-"pirmais slēdzis ir izslēgts, bet otrais slēdzis ir ieslēgts."
+"Izmanto abus slēdžus, lai spuldze spīdētu tikai tad, kad ir ieslēgts pirmais "
+"slēdzis, bet izslēgts otrais slēdzis, vai tad, kad pirmais slēdzis ir "
+"izslēgts, bet otrais slēdzis ir ieslēgts."
 
 #: activities/drawing_wheels/ActivityConfig.qml:29
 #: activities/sketch/ActivityConfig.qml:29
-#, fuzzy, qt-format
-#| msgctxt "ActivityInfo|"
-#| msgid "Number"
+#, qt-format
 msgctxt "ActivityConfig|"
 msgid "Number of undo: %1"
-msgstr "Skaitlis"
+msgstr "Atsaukšanu skaits: %1"
 
 #: activities/drawing_wheels/ActivityConfig.qml:44
 #: activities/sketch/ActivityConfig.qml:44
@@ -6645,30 +6636,26 @@ msgid ""
 "Warning: setting the number of undo too high can make the application crash "
 "if your device doesn't have enough memory."
 msgstr ""
+"Uzmanību: pārāk augsta atsaukšanu skaita norādīšana var likt programmai "
+"avarēt, ierīcei pietrūkstot brīvai atmiņai."
 
 #. Activity title
 #: activities/drawing_wheels/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "BrushToolPanel|"
-#| msgid "Drawing Tools"
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
-msgstr "Zīmēšanas rīks"
+msgstr "Zīmēšanas riteņi"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Roll the gear in the cogwheel to draw."
-msgstr ""
+msgstr "Lai zīmētu, ripini zobratu."
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr "Apgūsti dažādus digitālās zīmēšanas rīkus."
+msgstr "Atklāj hipotrohoīdas un tās izmanto kā digitālas zīmēšanas rīkus."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
@@ -6682,6 +6669,13 @@ msgid ""
 "file (vector format), along with a PNG file (pixel format). Only the SVG "
 "file can be opened again from the activity."
 msgstr ""
+"Zīmē skaistus attēlus ar zobrata un zīmuļa palīdzību. Paneļos atlasi riteņa "
+"izmēru, zobrata izmēru, zīmuļa iestatījumu un krāsu, tad spied uz animācijas "
+"atskaņošanas pogas, lai liktu zobratam riņķot. Vari izmantot datnes izvēlni, "
+"lai attēlu saglabātu, atvērtu iepriekš saglabātu attēlu vai izveidotu jaunu "
+"attēlu ar izvēlēto fona krāsu. Attēla saglabāšana to saglabās SVG datnē "
+"(vektorgrafikas formātā) kopā ar PNG datni (rastra grafikas formātā). No šīs "
+"aktivitātes atkārtoti iespējams atvērt tikai SVG datni."
 
 #: activities/drawing_wheels/ActivityInfo.qml:29
 #: activities/sketch/ActivityInfo.qml:28
@@ -6707,190 +6701,145 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "„Ctrl“ + O: atver attēlu"
 
-#: activities/drawing_wheels/DrawingWheels.qml:378
+#: activities/drawing_wheels/DrawingWheels.qml:399
 msgctxt "DrawingWheels|"
 msgid "File menu"
-msgstr ""
+msgstr "Datnes izvēlne"
 
-#: activities/drawing_wheels/DrawingWheels.qml:390
+#: activities/drawing_wheels/DrawingWheels.qml:411
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
-msgstr ""
+msgstr "Ritenis un zobrats"
 
-#: activities/drawing_wheels/DrawingWheels.qml:414
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Piano composition"
+#: activities/drawing_wheels/DrawingWheels.qml:435
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
-msgstr "Klavieru kompozīcija"
+msgstr "Zīmuļa izmērs un novietojums"
 
-#: activities/drawing_wheels/DrawingWheels.qml:426
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font selector"
+#: activities/drawing_wheels/DrawingWheels.qml:447
 msgctxt "DrawingWheels|"
 msgid "Color selector"
-msgstr "Fonta atlasītājs"
+msgstr "Krāsas atlasītājs"
 
-#: activities/drawing_wheels/DrawingWheels.qml:453
-#, fuzzy
-#| msgctxt "OptionsRow|"
-#| msgid "Undo"
+#: activities/drawing_wheels/DrawingWheels.qml:474
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Atsaukt"
 
-#: activities/drawing_wheels/DrawingWheels.qml:465
+#: activities/drawing_wheels/DrawingWheels.qml:486
 msgctxt "DrawingWheels|"
 msgid "Redo"
-msgstr ""
+msgstr "Atatsaukt"
 
-#: activities/drawing_wheels/DrawingWheels.qml:499
+#: activities/drawing_wheels/DrawingWheels.qml:520
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
-msgstr ""
+msgstr "Beigt zīmēt"
 
-#: activities/drawing_wheels/DrawingWheels.qml:499
+#: activities/drawing_wheels/DrawingWheels.qml:520
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
-msgstr ""
+msgstr "Sākt zīmēt"
 
-#: activities/drawing_wheels/DrawingWheels.qml:532
+#: activities/drawing_wheels/DrawingWheels.qml:553
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
-msgstr ""
+msgstr "Rādīt riteni un zobratu"
 
-#: activities/drawing_wheels/DrawingWheels.qml:532
+#: activities/drawing_wheels/DrawingWheels.qml:553
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
-msgstr ""
+msgstr "Slēpt riteni un zobratu"
 
-#: activities/drawing_wheels/DrawingWheels.qml:691
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
+#: activities/drawing_wheels/DrawingWheels.qml:712
 msgctxt "DrawingWheels|"
 msgid "Save your image"
-msgstr "Saglabā savu zīmējumu"
+msgstr "Saglabāt zīmējumu"
 
-#: activities/drawing_wheels/DrawingWheels.qml:706
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Open an image"
+#: activities/drawing_wheels/DrawingWheels.qml:727
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Atvērt zīmējumu"
 
-#: activities/drawing_wheels/DrawingWheels.qml:735
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Create a new image"
+#: activities/drawing_wheels/DrawingWheels.qml:756
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
-msgstr "Izveidot jaunu attēlu"
+msgstr "Izveidot jaunu zīmējumu"
 
-#: activities/drawing_wheels/DrawingWheels.qml:754
-#, fuzzy
-#| msgctxt "BackgroundColorSelector|"
-#| msgid "Background color"
+#: activities/drawing_wheels/DrawingWheels.qml:775
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Fona krāsa"
 
-#: activities/drawing_wheels/DrawingWheels.qml:835
+#: activities/drawing_wheels/DrawingWheels.qml:856
 msgctxt "DrawingWheels|"
 msgid "Wheel"
-msgstr ""
+msgstr "Ritenis"
 
-#: activities/drawing_wheels/DrawingWheels.qml:902
+#: activities/drawing_wheels/DrawingWheels.qml:923
 msgctxt "DrawingWheels|"
 msgid "Gear"
-msgstr ""
+msgstr "Zobrats"
 
-#: activities/drawing_wheels/DrawingWheels.qml:965
-#, fuzzy, qt-format
-#| msgctxt "SignalGenerator|"
-#| msgid "%1 s"
+#: activities/drawing_wheels/DrawingWheels.qml:986
+#, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
-msgstr "%1 s"
+msgstr "%1 redzes"
 
-#: activities/drawing_wheels/DrawingWheels.qml:983
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
+#: activities/drawing_wheels/DrawingWheels.qml:1004
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Ātrums"
 
-#: activities/drawing_wheels/DrawingWheels.qml:999
+#: activities/drawing_wheels/DrawingWheels.qml:1020
 msgctxt "DrawingWheels|"
 msgid "Slow"
-msgstr ""
+msgstr "Lēns"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1019
+#: activities/drawing_wheels/DrawingWheels.qml:1040
 msgctxt "DrawingWheels|"
 msgid "Fast"
-msgstr ""
+msgstr "Ātrus"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1062
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font size"
+#: activities/drawing_wheels/DrawingWheels.qml:1083
 msgctxt "DrawingWheels|"
 msgid "Pen size"
-msgstr "Fonta izmērs"
+msgstr "Zīmuļa izmērs"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1099
-#, fuzzy
-#| msgctxt "ToolsPanel|"
-#| msgid "Opacity"
+#: activities/drawing_wheels/DrawingWheels.qml:1120
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Necaurspīdība"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1142
+#: activities/drawing_wheels/DrawingWheels.qml:1163
 msgctxt "DrawingWheels|"
 msgid "Offset"
-msgstr ""
+msgstr "Nobīde"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1180
-#, fuzzy
-#| msgctxt "IntroMessage|"
-#| msgid "Start"
+#: activities/drawing_wheels/DrawingWheels.qml:1201
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
-msgstr "Sākt"
+msgstr "Sākuma zobs"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1360
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "You did not save this image. Do you want to close this activity?"
+#: activities/drawing_wheels/DrawingWheels.qml:1381
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
-msgstr "Tu vēl nesaglabāji zīmējumu. Vai vēlies aizvērt šo aktivitāti?"
+msgstr ""
+"Tavs zīmējums vēl nav saglabāts. Vai vēlies iziet no aktivitātes bez "
+"saglabāšanas?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1361
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "Do you want to erase this image?"
+#: activities/drawing_wheels/DrawingWheels.qml:1382
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Vai vēlies dzēst šo zīmējumu?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1362
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
+#: activities/drawing_wheels/DrawingWheels.qml:1383
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Jā"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1363
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
+#: activities/drawing_wheels/DrawingWheels.qml:1384
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "Nē"
@@ -7456,7 +7405,7 @@ msgid ""
 "Learn about various monuments from around the world and remember their "
 "location."
 msgstr ""
-"Uzzini par dažādiem pieminekļiem visā pasaulē un atceries to atrašanās vietu."
+"Uzzini par dažādiem pieminekļiem pasaulē un iegaumē to atrašanās vietu."
 
 #. Help prerequisite
 #: activities/explore_monuments/ActivityInfo.qml:22
@@ -7471,8 +7420,8 @@ msgid ""
 "Click on the spots to learn about the monuments and then locate them on the "
 "map."
 msgstr ""
-"Spied uz attiecīgās vietas, lai uzzinātu par pieminekļiem un tad tos atrodi "
-"kartē."
+"Spied uz attiecīgās vietas, lai uzzinātu par pieminekli , bet pēc tam "
+"pieminekļus atrodi kartē."
 
 #: activities/explore_monuments/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -7486,13 +7435,6 @@ msgid "Chichén Itzá"
 msgstr "Čičenica"
 
 #: activities/explore_monuments/resource/board/board1.qml:20
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
-#| "the Yucatan Peninsula in Mexico, between Valladolid and Merida. It was "
-#| "established before the period of Christopher Colombus and probably served "
-#| "as the religion center of Yucatan for a while."
 msgctxt "board1|"
 msgid ""
 "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
@@ -7500,8 +7442,8 @@ msgid ""
 "established before the period of Christopher Columbus and probably served as "
 "the religion center of Yucatan for a while."
 msgstr ""
-"Čičenica nozīmē „Icas strauta izteka“ un bija seno maiju pilsēta Jukatanas "
-"pussalā Meksikā starp Valjadolidu un Meridu. Tā tika dibināta pirms "
+"Čičenica nozīmē „Icas strauta izteka“. Tā bija seno maiju pilsēta Jukatanas "
+"pussalā Meksikā starp Valjadolidu un Meridu. Pilsēta tika dibināta pirms "
 "Kristofera Kolumba ierašanās laika un visdrīzāk kalpoja arī par Jukatanas "
 "reliģisko centru."
 
@@ -7522,9 +7464,9 @@ msgid ""
 "arena the Classical world had yet seen."
 msgstr ""
 "Kolizejs ir viena no mūsdienās atpazīstamākajām celtnēm Romā. Tā ir būvēta "
-"pirms 2000 gadu un, neskatoties uz gadsimtiem, kuros pamesto celtni "
-"izlaupīja, lai tās materiālus izmantotu citām ēkām, Kolizejs joprojām ir "
-"atpazīstams antīko laiku stadions. Tas bija pirmais pastāvīgais amfiteātris "
+"pirms 2000 gadiem un, neskatoties uz to, ka gadsimtu gaitā pamestā celtne ir "
+"izlaupīta, lai tās materiālus izmantotu citām ēkām, Kolizejs joprojām ir "
+"labi zināms antīko laiku stadions. Tas bija pirmais pastāvīgais amfiteātris "
 "Romā, kā arī iespaidīgākā arēna, kādu antīkā pasaule bija redzējusi."
 
 #: activities/explore_monuments/resource/board/board1.qml:41
@@ -7541,8 +7483,8 @@ msgid ""
 "become a cultural icon of both Rio de Janeiro and Brazil."
 msgstr ""
 "Kristus Pestītājs ir „Art Deco“ stila statuja Brazīlijas pilsētā "
-"Riodežaneiro, kurā ir attēlots Jēzus Kristus. Tas ir kristietības simbols "
-"visā pasaulē, kā arī Riodežaneiro un Brazīlijas kultūras simbols."
+"Riodežaneiro, kurā ir attēlots Jēzus Kristus. Tas visā pasaulē ir "
+"kristietības simbols, kā arī ir Riodežaneiro un Brazīlijas kultūras simbols."
 
 #: activities/explore_monuments/resource/board/board1.qml:52
 #: activities/explore_monuments/resource/board/board1.qml:55
@@ -7560,8 +7502,8 @@ msgid ""
 msgstr ""
 "Lielais Ķīnas mūris 1987. gadā tika ievietots UNESCO pasaules mantojuma "
 "sarakstā. Tas kā milzīgs pūķis stiepjas augšup un lejup pāri tuksnešiem, "
-"pļavām, kalniem un līdzenumiem. Šīs celtnes garums ir 21196 kilometri un tā "
-"stiepjas no Ķīnas austrumiem uz rietumiem."
+"pļavām, kalniem un līdzenumiem. Šīs celtnes garums ir 21196 kilometri, "
+"stiepjoties no Ķīnas austrumiem uz rietumiem."
 
 #: activities/explore_monuments/resource/board/board1.qml:63
 #: activities/explore_monuments/resource/board/board1.qml:66
@@ -7584,7 +7526,7 @@ msgstr ""
 "tropisku kalna mežu vidū. Tas droši vien ir bijis visiespaidīgākais urbānais "
 "veidojums Inku impērijā tās varenības uzplaukumā. Cietokšņa milzīgās sienas, "
 "terases un rampas izskatās kā dabīgi izcirstas viengabalainās klinšu "
-"nogāzēs. Maču Pikču novietojums Andu kalnu austrumu nogāzē iekļauj Amazones "
+"nogāzēs. Maču Pikču atrodas Andu kalnu austrumu nogāzē un ieskauj Amazones "
 "augšējo baseinu ar tās daudzveidīgo floru un faunu."
 
 #: activities/explore_monuments/resource/board/board1.qml:74
@@ -7605,8 +7547,8 @@ msgstr ""
 "Petra ir vēsturiska un arheoloģiska pilsēta Jordānijā — Maānas muhāfazā. Tā "
 "ir slavena ar klintī izcirstu arhitektūru un ūdensvadu sistēmu. Tiek lēsts, "
 "ka pilsētu dibināja 312. gadā pirms mūsu ēras kā Arābu Nabatejas "
-"galvaspilsētu. Šobrīd tā ir Jordānas simbols un tūristu visapmeklētākā vieta "
-"valstī."
+"galvaspilsētu. Šobrīd tā ir Jordānijas simbols un tūristu visapmeklētākā "
+"vieta valstī."
 
 #: activities/explore_monuments/resource/board/board1.qml:85
 msgctxt "board1|"
@@ -7700,9 +7642,9 @@ msgstr ""
 "Indijas vārti ir viens no unikālākajiem vēsturiskajiem pieminekļiem Indijā "
 "un atrodas Mumbajā. Milzīgā struktūra ir celta 1924. gadā. Tā atrodas "
 "Velingtona dambja galā Kolābas rajonā un paceļas virs Arābijas jūras malā "
-"esošās Mumbajas ostas. Indijas vārti ir piemineklis, kas apzīmē Indijas "
-"galvenās ostas un ir svarīgs tūrisma objekts cilvēkiem, kuri Indijā viesojas "
-"pirmo reizi."
+"esošās Mumbajas ostas. Indijas vārti ir piemineklis, kas piemin Indijas "
+"galvenās ostas, un ir svarīgs apskates objekts cilvēkiem, kuri Indijā "
+"viesojas pirmo reizi."
 
 #: activities/explore_monuments/resource/board/board2.qml:51
 #: activities/explore_monuments/resource/board/board2.qml:54
@@ -7719,8 +7661,8 @@ msgid ""
 "relics of the Buddha. It was crowned by the chatra, a parasol-like structure "
 "symbolizing high rank, which was intended to honor and shelter the relics."
 msgstr ""
-"Lielā stūpa sančos ir vecākā akmens struktūra Indijā. Sākotnēji tās "
-"celtniecību 3. gadsimtā p. m. ē. pasūtīja Ašoka Lielais. Tās kodols ir "
+"Lielā stūpa Sančos ir vecākā akmens struktūra Indijā. Sākotnēji tās "
+"celtniecību 3. gadsimtā p.m.ē. pasūtīja Ašoka Lielais. Tās kodols ir "
 "vienkāršs puslodes formas ķieģeļu struktūra, kas ir uzbūvēta pāri Budas "
 "reliktiem. Puslodes kodolam kā kronis ir uzbūvēta čatra — saulessargu "
 "atgādinoša struktūra, kas simbolizē augstu nozīmīgumu un kuras mērķis bija "
@@ -7748,8 +7690,8 @@ msgstr ""
 "alas atrodas Indijas Mahārāštras štatā. Alas satur gleznojumus un klintī "
 "izcirstas skulptūras, starp kurām ir vieni no labākajiem senās indiešu "
 "mākslas paraugiem — tie ir īpaši ekspresīvi gleznojumi, kas caur žestiem, "
-"pozām un formu parāda emocijas. Kopš 1983. gada alas ir UNESCO Pasaules "
-"mantojuma sarakstā."
+"pozām un formām parāda emocijas. Kopš 1983. gada alas ir iekļautas UNESCO "
+"Pasaules mantojuma sarakstā."
 
 #: activities/explore_monuments/resource/board/board2.qml:73
 #: activities/explore_monuments/resource/board/board2.qml:76
@@ -7764,7 +7706,7 @@ msgid ""
 "dedicated to the Sun god. Shaped like a giant chariot, the temple is known "
 "for the exquisite stone carvings that cover the entire structure."
 msgstr ""
-"Konarkas Saules templis (reizēm arī Konarakas) ir 13. gadsimta Hindu "
+"Konarkas (reizēm arī Konarakas) Saules templis ir 13. gadsimta Hindu "
 "templis, kas veltīts Saules dievam. Tā forma ir veidota, lai atveidotu "
 "milzīgus kaujas ratus, bet visu struktūru klāj izsmalcināti akmens grebumi."
 
@@ -7782,10 +7724,10 @@ msgid ""
 "the heart of the city of Mysore. The palace was initially built by the "
 "Wodeyar kings in the 14th century."
 msgstr ""
-"Maisūru pils jeb Maisūru maharadžas pils ir viena no lielākajiem un "
-"iespaidīgākajiem pieminekļiem Indijā. Tā ir pazīstama arī kā „Amba Vilas“. "
-"Šī pils atrodas Maisūru pilsētas centrā un sākotnēji to uzcēla Vodejaru "
-"karaļi 14. gadsimtā."
+"Maisūru pils jeb Maisūru maharadžas pils ir viens no lielākajiem un "
+"iespaidīgākajiem pieminekļiem Indijā. Tā ir pazīstama arī ar nosaukumu „Amba "
+"Vilas“. Šī pils atrodas Maisūru pilsētas centrā un sākotnēji to uzcēla "
+"Vodejaru karaļi 14. gadsimtā."
 
 #: activities/explore_monuments/resource/board/board2.qml:95
 #: activities/explore_monuments/resource/board/board2.qml:98
@@ -7802,11 +7744,11 @@ msgid ""
 "become synonymous with the monument. The Charminar is a massive and "
 "impressive structure with four minarets."
 msgstr ""
-"Čarmināra Haidarābādu pilsētā 1591. gadā uzbūvēja šahs Muhammads Kuli "
-"Kutabs. Viņš uzbūvēja Čarmināru, lai atzīmētu mēra beigšanos Haidarābādu "
-"pilsētā. Kopš Čarmināras uzbūvēšanas Haidarābādu pilsēta ir kļuvusi gandrīz "
-"par šī pieminekļa sinonīmu. Čarminārs ir milzīga un iespaidīga būve ar "
-"četriem minaretiem."
+"Haidarābādu pilsētā esošo Čarmināru 1591. gadā uzbūvēja šahs Muhammads Kuli "
+"Kutabs. Viņš uzbūvēja šo būvi, lai atzīmētu mēra beigšanos Haidarābādu "
+"pilsētā. Kopš Čarmināras uzbūvēšanas pilsēta ir kļuvusi gandrīz par šī "
+"pieminekļa sinonīmu. Čarminārs ir milzīga un iespaidīga būve ar četriem "
+"minaretiem."
 
 #: activities/explore_monuments/resource/board/board2.qml:106
 #: activities/explore_monuments/resource/board/board2.qml:109
@@ -7823,9 +7765,9 @@ msgid ""
 "Memorial hall was built with white Makrana marbles."
 msgstr ""
 "Viktorijas memoriāls ir uzbūvēts, lai pieminētu Britu impērijas ziedu laikus "
-"Indijā. Tas reprezentē Kolkatas arhitektūras augstāko punktu un apvieno "
-"labāko no britu un mogulu arhitektūras. Viktorijas memoriāls ir būvēts no "
-"Makrānas marmora."
+"Indijā. Tas reprezentē Kolkatas arhitektūras augstākos sasniegumus un "
+"apvieno labāko no britu un mogulu arhitektūras. Viktorijas memoriāls ir "
+"būvēts no Makrānas marmora."
 
 #: activities/explore_monuments/resource/board/board2.qml:117
 #: activities/explore_monuments/resource/board/board2.qml:120
@@ -7842,9 +7784,9 @@ msgid ""
 "Rongali Bihu festival in the Ahom capital of Rangpur."
 msgstr ""
 "Rongora ir divu stāvu ēka, kas kādreiz kalpoja kā karalisks sporta paviljons "
-"Ahomas karaļiem un dižciltīgajiem, kuri vēroja bifeļu cīņas un citus tā "
-"laika sporta veidus „Rupahi Pathar“ — īpaši Rongali Bihu festivālā Ahomas "
-"galvaspilsētā Rangpurā."
+"Ahomas karaļiem un dižciltīgajiem, kuri „Rupahi Pathar“ laukumā vēroja "
+"bifeļu cīņas un citus tā laika sporta veidus. Šīs cīņas parasti notika "
+"Rongali Bihu festivālā Ahomas galvaspilsētā Rangpurā."
 
 #: activities/explore_monuments/resource/board/board2.qml:128
 #: activities/explore_monuments/resource/board/board2.qml:131
@@ -7895,10 +7837,10 @@ msgid ""
 "water and can only be accessed at low tide."
 msgstr ""
 "Monsenmišela ir klinšaina ūdeņu apskalota sala Normandijā pie Kuenonas upes "
-"ietekas un netālu no Avranšas pilsētas. Salas augstākais punkts ir abatijas "
+"ietekas netālu no Avranšas pilsētas. Salas augstākais punkts ir abatijas "
 "zvana torņa smaile 170 metru virs jūras līmeņa. Šobrīd uz salas dzīvo mazāk "
-"nekā 50 cilvēku. Monsenmišela unikalitāte slēpjas faktā, ka to no visām "
-"pusēm apskalo ūdens, bet sala pieejama ir tikai bēguma laikā."
+"nekā 50 cilvēku. Monsenmišelas unikalitāte slēpjas faktā, ka to no visām "
+"pusēm apskalo ūdens un tā ir pieejama tikai bēguma laikā."
 
 #: activities/explore_monuments/resource/board/board3.qml:29
 #: activities/explore_monuments/resource/board/board3.qml:32
@@ -7916,7 +7858,7 @@ msgid ""
 "spur that towers above the River Aude, southeast of the new town."
 msgstr ""
 "Pateicoties vairāk nekā četriem miljoniem apmeklētāju katru gadu, Karkasona "
-"ir starp prestižākajām tūrisma galamērķiem Francijā līdz ar Monsenmišelu un "
+"ir starp prestižākajiem tūrisma galamērķiem Francijā līdz ar Monsenmišelu un "
 "Parīzes Dievmātes katedrāli. Kopš 1997. gada Karkasona ir ievietota UNESCO "
 "Pasaules mantojuma sarakstā un ir spilgta viduslaiku arhitektūras "
 "reprezentācija, kas sev vietu ir atradusi uz klintīm un paceļas virs Odas "
@@ -7938,12 +7880,12 @@ msgid ""
 "Site since 1991. The Mecca for tourists in the Champagne region welcomes "
 "1500000 visitors every year."
 msgstr ""
-"Reimsas Dievmātes katedrāle ir neparasta būve — tā ir veidota, lai varētu "
-"uzņemt milzīgu cilvēku skaitu un šīs katedrāles gigantiskās dimensijas "
-"ietver 6650 m2 laukumu un 122 m garumu. Šī būve ir gotiskās arhitektūras "
-"meistardarbs un Francijas karaļu kronēšanas vieta, kā arī kopš 1991. gada ir "
-"ievietota UNESCO Pasaules mantojuma sarakstā. Šī tūrisma meka Šampaņas "
-"reģionā katru gadu uzņem 1500000 apmeklētāju."
+"Reimsas Dievmātes katedrāle ir neparasta būve — tā ir projektēta, lai varētu "
+"uzņemt milzīgu cilvēku skaitu. Šīs gigantiskās katedrāles laukums ir 6650 "
+"m2, bet garums — 122 m . Šī būve ir gotiskās arhitektūras meistardarbs un "
+"Francijas karaļu kronēšanas vieta, kā arī kopš 1991. gada ir ievietota "
+"UNESCO Pasaules mantojuma sarakstā. Šī tūrisma meka Šampaņas reģionā katru "
+"gadu uzņem 1500000 apmeklētāju."
 
 #: activities/explore_monuments/resource/board/board3.qml:51
 #: activities/explore_monuments/resource/board/board3.qml:54
@@ -7963,8 +7905,8 @@ msgstr ""
 "Gāras tilts ir būvēts īsi pirms kristiešu ēras, lai ļautu Nīmas akveduktam "
 "(kas ir gandrīz 50 km garš) šķērsot Gardonas upi. Romiešu arhitekti un "
 "hidroinženieri, kuri projektēja šo gandrīz 50 metru augsto tiltu trijos "
-"līmeņos — garākais no tiem ir 275 metrus garš —, ir radījuši gan tehnisku, "
-"gan māksliniecisku meistardarbu."
+"līmeņos — garākais no tiem ir 275 metrus garš —, ir radījuši "
+"inženiertehnisku un māksliniecisku meistardarbu."
 
 #: activities/explore_monuments/resource/board/board3.qml:62
 #: activities/explore_monuments/resource/board/board3.qml:65
@@ -8001,9 +7943,9 @@ msgid ""
 "just a castle: it is the dream of a king, transformed into reality."
 msgstr ""
 "Prestižā, majestātiskā, kolosālā, ekstravagantā — vai ar šiem īpašības "
-"vārdiem pietiek, lai pilnībā aprakstītu grezno Šamboru? Lielāko muižu Luāras "
-"ielejā ir tiešām pilna ar pārsteigumiem tiem, kuriem ir veicies to izpētīt. "
-"Šis ievērojamais arhitektūras paraugs noteikti ir kaut kas daudz vairāk par "
+"vārdiem pietiek, lai pilnībā aprakstītu grezno Šamboru? Lielākā muiža Luāras "
+"ielejā ir pilna ar pārsteigumiem tiem, kuriem ir veicies to izpētīt. Šis "
+"ievērojamais arhitektūras paraugs noteikti ir kaut kas daudz vairāk par "
 "vienkārši pili — tas ir karaļa sapnis, kas ir kļuvis par realitāti."
 
 #: activities/explore_monuments/resource/board/board3.qml:84
@@ -8022,8 +7964,8 @@ msgid ""
 "“houses on the river, churches on the houses, rocks on the churches, castle "
 "on the rock”."
 msgstr ""
-"Braucot par ceļu no Kaoras virziena acu priekšā, bīstami karājoties pret "
-"klinti Alzu kanjonā, ieraugām Rokamadūru. Tas ir viens no slavenākajiem "
+"Braucot par ceļu no Kaoras virziena acu priekšā, bīstami karājoties no "
+"klints Alzu kanjonā, ieraugām Rokamadūru. Tas ir viens no slavenākajiem "
 "ciematiem — tas šķietami apgāž gravitācijas likumus. Galvu reibinošo Ticības "
 "citadeli visvieglāk dažos vārdos izsaka vecs vietējo ļaužu teiciens: „Mājas "
 "uz upes, baznīcas uz mājām, klintis uz baznīcām, pils uz klints.“"
@@ -8044,7 +7986,7 @@ msgid ""
 msgstr ""
 "Aviņonas galvenais apskates objekts ir Pāvestu pils. Tā ir milzīga pils ar "
 "ļoti lielu vēsturisku, reliģisku un arhitektūras nozīmi. Tā ir viena no "
-"lielākajām un svarīgākajām viduslaiku gotiskajām ēkām Eiropā."
+"lielākajām un svarīgākajām viduslaiku gotiskajām celtnēm Eiropā."
 
 #: activities/explore_monuments/resource/board/board3.qml:106
 #: activities/explore_monuments/resource/board/board3.qml:109
@@ -8083,7 +8025,7 @@ msgid ""
 msgstr ""
 "Šo pasaulslaveno tērauda torni uzbūvēja Parīzē notiekošajai Vispasaules "
 "izstādei 1889. gadā, atzīmējot Franču revolūcijas simtgadi. Tā inaugurācijas "
-"laikā šis bija pasaulē augstākais piemineklis."
+"laikā Eifeļa tornis bija pasaulē augstākā celtne."
 
 #: activities/explore_monuments/resource/board/board3.qml:130
 msgctxt "board3|"
@@ -8132,7 +8074,10 @@ msgid ""
 "The Trier Imperial Baths are a large Roman bath complex in Trier, Germany. "
 "It is designated as part of the Roman Monuments, Cathedral of St. Peter and "
 "Church of Our Lady in Trier UNESCO World Heritage Site."
-msgstr "Trīrē esošās romiešu pirtis ir liels piršu komplekss Trīrē. Vācijā"
+msgstr ""
+"Trīrē esošās romiešu pirtis ir liels pirtu komplekss Trīrē, Vācijā. Tās ir "
+"daļa no romiešu pieminekļiem kopā ar Svētā Pētera katedrāli un Trīres "
+"Dievmātes baznīcu un veido vienotu UNESCO pasaules mantojuma vietu."
 
 #: activities/explore_monuments/resource/board/board4.qml:40
 #: activities/explore_monuments/resource/board/board4.qml:43
@@ -8150,12 +8095,12 @@ msgid ""
 "the Prussian monarchs. It is regarded as one of the most famous landmarks in "
 "Europe."
 msgstr ""
-"Brandenburgas vārti ir vienīgā saglabājušies Berlīnes vārti pie ieejas "
-"pilsētā. Tie simbolizē Austrumberlīnas un Rietumberlīnes atkalapvienošanos. "
-"Šo pieminekli uzcēla 18. gadsimtā un tas kalpo kā ieeja „Unter den Linden“ "
-"bulvārī, kurā augošās liepas kādreiz aizveda tieši uz Prūsijas monarhu pili. "
-"Brandenburgas vārti ir atzīti par vienu slavenākajiem vēsturiskajiem "
-"pieminekļiem Eiropā."
+"Brandenburgas vārti ir vienīgie līdz mūsu dienām apskatāmie Berlīnes vārti "
+"pie ieejas pilsētā. Tie simbolizē Austrumberlīnas un Rietumberlīnes "
+"atkalapvienošanos. Šo pieminekli uzcēla 18. gadsimtā, un tas kalpo kā ieeja "
+"„Unter den Linden“ bulvārī, kurā augošās liepas kādreiz aizveda tieši uz "
+"Prūsijas monarhu pili. Brandenburgas vārti ir atzīti par vienu slavenākajiem "
+"vēsturiskajiem pieminekļiem Eiropā."
 
 #: activities/explore_monuments/resource/board/board4.qml:51
 #: activities/explore_monuments/resource/board/board4.qml:54
@@ -8173,8 +8118,8 @@ msgid ""
 msgstr ""
 "Berlīnes doms ir viena no lielākajām baznīcām pilsētā. Tā kalpo par svarīgu "
 "Vācijas protestantu baznīcas centru. Tās teritorijai stiepjoties tālu aiz "
-"draudzes un Berlīnes robežām, šī katedrāle pievilina tūkstošiem apmeklētāju "
-"no Vācijas un ārzemēm ik gadu."
+"draudzes un Berlīnes robežām, šī katedrāle ik gadu pievilina tūkstošiem "
+"apmeklētāju no Vācijas un ārzemēm."
 
 #: activities/explore_monuments/resource/board/board4.qml:62
 #: activities/explore_monuments/resource/board/board4.qml:65
@@ -8190,8 +8135,9 @@ msgid ""
 "symbolized the powerful dynasty of its founder, Friedrich Franz II."
 msgstr ""
 "Šis romantiskais pasaku cietoksnis ar daudzajiem torņiem, kupoliem un "
-"spārniem spoguļojas Šverīnes ezera ūdeņos. Šīs pils celtniecību pabeidz 1857."
-"gadā un tā simbolizē tās dibinātāja Frīdriha Franča II dinastijas spēku."
+"spārniem spoguļojas Šverīnes ezera ūdeņos. Šīs pils celtniecību pabeidza "
+"1857.gadā un tā simbolizē tās dibinātāja Frīdriha Franča II dinastijas "
+"varenību."
 
 #: activities/explore_monuments/resource/board/board4.qml:73
 #: activities/explore_monuments/resource/board/board4.qml:76
@@ -8207,10 +8153,10 @@ msgid ""
 "built a settlement inside the roofless ruin. In the 12th century, the apse "
 "was converted into a tower to accommodate the Archbishop of Trier."
 msgstr ""
-"„Aula Palatina“ jeb Konstantīna bazilika ir Romas imperatora troņa zāle līdz "
-"pilsētu iznīcināja ģermāņu ciltis. Iebrucēji bez jumta palikušajās cietokšņa "
-"drupās uzbūvēja nometni. 12. gadsimtā apsīdu pārbūvēja par torni, lai tajā "
-"varētu uzņemt Trīres arhibīskapu."
+"„Aula Palatina“ jeb Konstantīna bazilika bija Romas imperatora troņa zāle "
+"līdz pilsētu iznīcināja ģermāņu ciltis. Iebrucēji bez jumta palikušajās "
+"cietokšņa drupās uzbūvēja nometni. 12. gadsimtā apsīdu pārbūvēja par torni, "
+"lai tajā varētu uzņemt Trīres arhibīskapu."
 
 #: activities/explore_monuments/resource/board/board4.qml:84
 #: activities/explore_monuments/resource/board/board4.qml:87
@@ -8228,8 +8174,8 @@ msgid ""
 msgstr ""
 "Vormsas katedrāle („Wormser Dom“), ko dēvē arī par Svētā Pētera katedrāli, "
 "ir romāniska katedrāle Vācijas pilsētas Vormsas centrā. Šo smilšakmens "
-"celtni ar īpatnējiem koniskiem torņiem uzcēla vairākos posmos divpadsmitā "
-"gadsimta laikā, pabeidzt 1181. gadā."
+"celtni ar īpatnējiem koniskiem torņiem uzcēla vairākos posmos divpadsmitajā "
+"gadsimtā, pabeidzot 1181. gadā."
 
 #: activities/explore_monuments/resource/board/board4.qml:97
 msgctxt "board4|"
@@ -8282,12 +8228,12 @@ msgid ""
 "rises eerily from the bottom of the canyon floor."
 msgstr ""
 "Stoiskās sarkanās Dešejas kanjona drupas Arizonas ziemeļaustrumos ir reizē "
-"daļā Nacionālo parku dienesta un navahu tautas, ko par nacionālo pieminekli "
-"pasludināja 1931. gadā. Šajā vietā 84000 akru lielajā parkā ir saglabātas "
-"daudz svarīgas seno Amerikas pamatiedzīvotāju apmetnes. Tāpat arī Dešejas "
-"kanjonā iespējams redzēt dažādus Ziemeļamerika dienvidrietumu ģeoloģiskos "
-"veidojumus, starp kuriem ir Zirnekļu akmens — 240 metru augsta smilšakmens "
-"smaile, kas ērmīgi paceļas virs kanjona dziļumiem."
+"daļa no Nacionālo parku dienesta un navahu tautas teritorijas, ko par "
+"nacionālo pieminekli pasludināja 1931. gadā. Šajā vietā 84000 akru lielajā "
+"parkā ir saglabātas daudz svarīgas seno Amerikas pamatiedzīvotāju apmetnes. "
+"Tāpat arī Dešejas kanjonā iespējams redzēt dažādus Ziemeļamerika "
+"dienvidrietumu ģeoloģiskos veidojumus, starp kuriem ir Zirnekļu akmens — 240 "
+"metru augsta smilšakmens smaile, kas ērmīgi paceļas virs kanjona dzīlēm."
 
 #: activities/explore_monuments/resource/board/board5.qml:40
 #: activities/explore_monuments/resource/board/board5.qml:43
@@ -8304,10 +8250,10 @@ msgid ""
 "the star-shaped Castillo also is the oldest masonry fort in the country."
 msgstr ""
 "Svētā Marka pili, kas aizņem 20 akru lielu platību Floridas štata pilsētā "
-"Sentaugustīnā, pabeidza kā pilsētu aizsargājošu fortu 1695. gadā, kad "
+"Sentaugustīnā, pabeidza 1695. gadā kā pilsētu aizsargājošu fortu, kad "
 "Florida vēl piederēja Spānijai. Tā ir veidota zvaigznes formā no reti "
-"sastopama gliemežkaļķakmens un ir arī vecākais mūrētais forts Amerikas "
-"Savienotajās Valstīs."
+"sastopama gliemežkaļķakmens un ir vecākais mūra forts Amerikas Savienotajās "
+"Valstīs."
 
 #: activities/explore_monuments/resource/board/board5.qml:51
 #: activities/explore_monuments/resource/board/board5.qml:54
@@ -8326,8 +8272,8 @@ msgid ""
 msgstr ""
 "Šis apaļais smilšakmens forts Manhetenas salas apakšā ir par aptuveni 15 "
 "gadiem vecāks par Elisas salu un kalpoja kā pirmas ASV imigrācijas punkts. "
-"Klintonas pils (nps.gov/cacl) sākotnēji būvēja kā fortu, lai aizsargātu "
-"Ņujorku pret britu invāziju kara laikā 1812. gadā, bet 1946. gadā to "
+"Klintonas pili (nps.gov/cacl) sākotnēji būvēja 1812. gadā kā fortu, lai "
+"aizsargātu Ņujorku pret britu iebrukumiem kara laikā, bet 1946. gadā to "
 "pasludināja par nacionālas nozīmes pieminekli."
 
 #: activities/explore_monuments/resource/board/board5.qml:62
@@ -8369,9 +8315,9 @@ msgid ""
 "arguably his most famous speech, the Gettysburg Address."
 msgstr ""
 "Būvēts no balta akmens ar 36 ikoniskām kolonnām, Linkolna memoriāls ir viena "
-"no pazīstamākajām būvēm Amerikas Savienotajās Valstīs. Memoriāls atrodas "
+"no pazīstamākajām celtnēm Amerikas Savienotajās Valstīs. Memoriāls atrodas "
 "Nacionālās alejas rietumu galā Rietumpotomakas parkā. Tas ir neoklasicisma "
-"arhitektūras paraugs. Tajā ir atrodama viena 19 pēdu augsta Abrahama "
+"arhitektūras paraugs. Tajā ir atrodama viena 5,8 metru augsta Abrahama "
 "Linkolna statuja, kurā slavenais valstsvīrs ir attēlots domīgā pozā, bet to "
 "no vienas puses ieskauj Linkolna otrās ievēlēšanas uzrunas vārdi, bet otrā "
 "pusē iegravēta, iespējams, viņa slavenākā runā — Getisburgas uzruna."
@@ -8395,7 +8341,7 @@ msgstr ""
 "Rašmoras kalns simbolizē demokrātiju un ir veltīts Džordža Vašingtona "
 "atcerei, Amerikas Savienoto Valstu dzimšanai, attīstībai un ideāliem. "
 "Rašmoras kalns simbolizē nācijas varenību caur tās līderiem. Šī elpu "
-"aizraujošā skulptūra attēl četru Amerikas prezidentu sejas, simbolizējot "
+"aizraujošā skulptūra attēlo četru Amerikas prezidentu sejas, simbolizējot "
 "valsts bagāto vēsturi, nelokāmo apņemšanos un ilgstošos sasniegumus."
 
 #: activities/explore_monuments/resource/board/board5.qml:95
@@ -8418,17 +8364,16 @@ msgid ""
 "free tours of the Keet Seel and Betatakin cliff dwellings. The Inscription "
 "House site, further west, is currently closed to public access."
 msgstr ""
-"Navahu nacionālais piemineklis ir nacionālais piemineklis, kas atrodas "
-"Navahu tautas teritorijas ziemeļrietumu daļā — Arizonas štata ziemeļu daļā — "
-"un tika izveidots, lai aizsargātu trīs labi saglabājušās senču pueblo "
-"iedzīvotāju klinšu mājvietas: Kitsīlu (Kitsʼiil), Bitatahkinu (Bitátʼahkin) "
-"un Uzrakstu namu (Tsʼah Biiʼ Kin). Piemineklis atrodas augstu Šonto "
-"plakankalnē, no kuras paveras skats uz Cegi kanjona sistēmu uz rietumiem no "
-"Kajentas, Arizonā. Tajā atrodas apmeklētāju centrs ar muzeju, divas īsas "
-"takas līdz kalna virsotnei, divi nelieli kempingi un piknika vieta. "
-"Reindžeri vada apmeklētājus bezmaksas ekskursijās pa Kitsīlu un Bitahkinas "
-"klinšu mājokļiem. Vistālāk uz rietumiem esošā viet — uzrakstu nams — šobrīd "
-"apmeklētājiem ir slēgts."
+"Navahu nacionālais piemineklis atrodas Navahu tautas teritorijas "
+"ziemeļrietumu daļā — Arizonas štata ziemeļu daļā — un tika izveidots, lai "
+"aizsargātu trīs labi saglabājušās senču pueblo iedzīvotāju klinšu mājvietas: "
+"Kitsīlu (Kitsʼiil), Bitatahkinu (Bitátʼahkin) un Uzrakstu namu (Tsʼah Biiʼ "
+"Kin). Piemineklis atrodas augstu Šonto plakankalnē, no kuras paveras skats "
+"uz Cegi kanjona sistēmu uz rietumiem no Kajentas, Arizonā. Tajā atrodas "
+"apmeklētāju centrs ar muzeju, divas īsas takas līdz kalna virsotnei, divi "
+"nelieli kempingi un piknika vieta. Reindžeri vada apmeklētājus bezmaksas "
+"ekskursijās pa Kitsīlu un Bitahkinas klinšu mājokļiem. Vistālāk uz rietumiem "
+"esošā vieta — uzrakstu nams — šobrīd apmeklētājiem ir slēgts."
 
 #: activities/explore_monuments/resource/board/board5.qml:106
 #: activities/explore_monuments/resource/board/board5.qml:109
@@ -8446,7 +8391,7 @@ msgid ""
 msgstr ""
 "Iespējams, Brīvības statuja ir vispazīstamākais piemineklis un Amerikas "
 "Savienoto Valstu simbols, kas atrodas uz mazas saliņas Ņujorkā. Šī statuja "
-"bija dāvana no cilvēkiem Francijā un veltīta 1886. gada oktobrim."
+"bija dāvana no cilvēkiem Francijā un pasniegta 1886. gada oktobrī."
 
 #: activities/explore_monuments/resource/board/board5.qml:117
 #: activities/explore_monuments/resource/board/board5.qml:120
@@ -8463,11 +8408,11 @@ msgid ""
 "exhibits offer perspectives on U.S. history, particularly the divisions "
 "between North and South that eventually resulted in the war."
 msgstr ""
-"Sākotnēji 1812. gadā kā aizsardzības nocietinājums būvētais forts bija pirmā "
-"vieta, kur okeāna nocietinājuma Čārlstonas ostā Dienvidkarolīnā tika izšauti "
-"pirmie Amerikas Pilsoņu kara šāvieni. Samteras fortā atrodamas vairākas "
-"izstādes, kas sniedz pārskatu par ASV vēsturi — jo īpaši par dalījumu starp "
-"ziemeļiem un dienvidiem, kura rezultātā sākās karš."
+"Sākotnēji 1812. gadā kā aizsardzības nocietinājums būvētais forts Čārlstonas "
+"ostā Dienvidkarolīnā bija pirmā vieta, kurā tika izšauti pirmie Amerikas "
+"Pilsoņu kara šāvieni. Samteras fortā atrodamas vairākas izstādes, kas sniedz "
+"pārskatu par ASV vēsturi — jo īpaši par dalījumu starp ziemeļiem un "
+"dienvidiem, kura rezultātā sākās karš."
 
 #: activities/explore_monuments/resource/board/board5.qml:130
 msgctxt "board5|"
@@ -8498,14 +8443,14 @@ msgid ""
 "stone have been used in the construction. The height of the pyramid is "
 "approximately 139 meters making it the highest pyramid of Egypt."
 msgstr ""
-"Heopsa piramīda, ko dēvē arī par Lielo piramīdu jeb Hufu piramīdu, tiek "
-"uzskatītu par vecākiem no visiem antīkās pasaules Septiņiem pasaules "
-"brīnumiem. Tā ir arī lielākā no visām trim Gīzas piramīdām. Tā atrodas Gīzas "
-"nekropolē Ēģiptē. Šīs piramīdas būvniecība sākās Ēģiptes faraona Hufu laikā, "
-"bet pēc tam to turpināja viņa dēls Hafre, bet beigās pabeidza Menkaure. "
-"Heopsa piramīdas būvniecība aizņēma gandrīz 20 gadu un tai vajadzēja "
-"aptuveni 2 miljonus akmens bloku. Piramīdas augstums ir aptuveni 139 metri, "
-"padarot to par augstāko piramīdu Ēģiptē."
+"Heopsa piramīda, ko dēvē arī par Lielo piramīdu vai Hufu piramīdu, tiek "
+"uzskatītu par vecāko no visiem antīkās pasaules Septiņiem pasaules "
+"brīnumiem. Tā ir arī lielākā no visām trim Gīzas piramīdām. Heopsa piramīda "
+"atrodas Gīzas nekropolē Ēģiptē. Šīs piramīdas būvniecība sākās Ēģiptes "
+"faraona Hufu laikā, bet pēc tam to turpināja viņa dēls Hafre, bet beigās "
+"pabeidza Menkaure. Heopsa piramīdas būvniecība aizņēma gandrīz 20 gadu un "
+"tai vajadzēja aptuveni 2 miljonus akmens bloku. Piramīdas augstums ir "
+"aptuveni 139 metri, padarot to par augstāko piramīdu Ēģiptē."
 
 #: activities/explore_monuments/resource/board/board6.qml:28
 #: activities/explore_monuments/resource/board/board6.qml:31
@@ -8525,9 +8470,9 @@ msgid ""
 "Pyramid is the only pyramid in Egypt of which the outer casing of polished "
 "limestone is still largely intact."
 msgstr ""
-"Dahšūrā atrodamā Izliektā piramīda ir faraona Sneferu otrā uzceltā piramīda. "
-"Dīvainā kārtā šī patiesā piramīda no tuksneša paceļas 55 grādu leņķī, bet "
-"tad pēkšņi mainās uz lēzenāku 43 grādu leņķi. Viena no teorijām ir tāda, ka, "
+"Dahšūrā atrodamā Izliektā piramīda ir faraona Sneferu uzceltā otrā piramīda. "
+"Dīvainā kārtā šī īstā piramīda no tuksneša paceļas 55 grādu leņķī, bet tad "
+"pēkšņi mainās uz lēzenāku 43 grādu leņķi. Viena no teorijām ir tāda, ka, "
 "iespējams, piramīdas sākotnējais stāvums radīja pārāk lielu svaru uz "
 "iekšējiem kambariem un ejām, piespiežot celtniekus kādā no celtniecības "
 "stadijām izvēlēties lēzenāku leņķi. Mūsdienās Izliektā piramīda ir vienīgā "
@@ -8552,7 +8497,7 @@ msgid ""
 "true pyramid."
 msgstr ""
 "Piecu jūdžu attālumā no Sakaras Ēģiptē slejas torni atgādinošā Maidumas "
-"piramīda, kas mūsdienās vāji atgādina tipisku piramīdu. Šī piramīda, "
+"piramīda, kas mūsdienās īsti neatgādina tipisku piramīdu. Šī piramīda, "
 "visticamāk, ir būvēta 4. dinastijas faraona Sneferu valdīšanas laikā, tomēr "
 "daži zinātnieki domā, ka tās celtniecību varētu būt uzsācis Sneferu "
 "priekštecis — Huni. Kādā brīdī celtniecības laikā piramīdas pakāpieni tika "
@@ -8576,11 +8521,11 @@ msgid ""
 "el-heram el-watwaat meaning the Bat Pyramid."
 msgstr ""
 "Sarkanā piramīda bija viens no labākajiem un veiksmīgākajiem antīkās Ēģiptes "
-"faraona Sneferu centieniem uzbūvēt piramīdu ar visā pasaulē līdzenākajām "
-"virsmām. Šīs piramīdas augstums ir 104 metri, padarot to par ceturto "
-"augstāko piramīdu Ēģiptē. Sarkanā piramīda ir celta no sarkanā kaļķakmens, "
-"no kā arī ir ieguvusi savu nosaukumu. Ēģiptes vietējie cilvēki to sauc par "
-"„el-heram el-watwaat“, kas nozīmē Sikspārņu piramīda."
+"faraona Sneferu centieniem uzbūvēt piramīdu ar līdzenākajām virsmām. Šīs "
+"piramīdas augstums ir 104 metri, padarot to par ceturto augstāko piramīdu "
+"Ēģiptē. Sarkanā piramīda ir celta no sarkanā kaļķakmens, no kā arī ir "
+"ieguvusi savu nosaukumu. Ēģiptes vietējie cilvēki to sauc par „el-heram el-"
+"watwaat“, kas nozīmē Sikspārņu piramīda."
 
 #: activities/explore_monuments/resource/board/board6.qml:63
 msgctxt "board6|"
@@ -8596,7 +8541,7 @@ msgstr "Spied uz norādītās piramīdas atrašanās vietas."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "Aizliegtā pilsēta"
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8611,12 +8556,21 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
+"Aizliegtā pilsēta atrodas Pekinā, Ķīnā. Tā gandrīz 500 gadu, sākot no Minu "
+"dinastijas (1368—1644) līdz Cjinu dinastijai (1644—1912) kalpoja kā Ķīnas "
+"imperatoru pils komplekss un kādreizējais tautas politiskais centrs. Šis "
+"arhitektūras meistardarbs ir celts laikposmā no 1406. līdz 1420. gadam. "
+"Aizliegtās pilsētas izmērs ir 720 000 m2, tajā atrodas 980 labi saglabājušos "
+"celtņu un kopā ir 8700 istabu, kurās redzams ķīniešu tradicionālais piļu "
+"dizains. Aizliegtā pilsēta, ko aptver aizsarggrāvis un milzīgs mūris, ir "
+"impērijas varas un nepieejamības simbols — senos laikos parastiem cilvēkiem "
+"tajā ienākt bija aizliegts."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "Lešaņas lielā Buda"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8631,15 +8585,22 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
+"Lešaņas lielā Buda atrodas Šičuaņas provincē un ir milzīga klintī izkalta "
+"statuja Miņas, Dadu un Cjuidzjina upju sateces vietā. Tā ir 71 metru augsta "
+"un līdz ar to augstākā statuja pasaulē no statujām, kas ir celtas pirms "
+"modernajiem laikiem, kā arī ir iekļauta UNESCO Pasaules mantojuma sarakstā. "
+"Lešaņas lielā Buda ir celta Taņu dinastijas (713—803 m.ē.) laikā un attēlo "
+"Maitreju — nākotnes Budu. Tai esot jānomierina nemierīgi ūdeņi, kas apdraud "
+"vietējo laivu satiksmi. Statuja ir ļoti pārdomāti veidota un satur slēptu "
+"ūdens novadīšanas sistēmu, lai novērstu tās eroziju. Budas mierīgā sejas "
+"izteiksme un tās amatnieku prasmīgais darbs šo statuju padara par garīgu un "
+"māksliniecisku sasniegumu."
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Maisūru pils"
+msgstr "Potalas pils"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8654,12 +8615,22 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
+"Potalas pils slejas Lhasas sarkanajā kalnā Tibetā. Tā ir Tibetas kultūras "
+"ikona un ir ievietota UNESCO Pasaules mantojuma sarakstā. Sākotnēji tā ir "
+"celta septītajā gadsimtā, bet vēlāk, 17. gadsimtā, tā ir pārbūvēta. Potalas "
+"pils agrāk kalpoja par dalailamu ziemas rezidenci un Tibetas pārvaldības "
+"centru. Šī celtne ir 13 stāvu augsta un tajā ir vairāk nekā 1000 istabu, tā "
+"apvieno sarežģīto tibetiešu arhitektūru, spilgtus sienu gleznojumus un "
+"svētas relikvijas. Potalas pils ir sadalīta Baltajā pilī, kurā atrodas "
+"administratīvās telpas, un Sarkanajā pilī, kas ir paredzēta reliģiskai "
+"pētniecībai un lūgšanām. Potalas pils ir Tibetas garīgais un vēsturiskais "
+"mantojums."
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "Terakotas armija"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8671,12 +8642,18 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
+"Terakotas armija ir tūkstošiem patiesa lieluma māla karavīru, zirgu un "
+"kaujas ratu kolekcija, kas aprakta kopā ar Ķīnas pirmo imperatoru Ciņu "
+"Šihuandi, lai viņu pavadītu pēcnāves dzīvē. To 1974. gadā atrada pie "
+"Sjiaņas. Māla figūras tika izveidotas aptuveni 210 gadā pirms mūsu ēras un "
+"pārsteidz ar savu detalizētību — katrs karavīrs ir unikāls un tā izskats "
+"reprezentē savu dienesta pakāpi un lomu ķīniešu armijā."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr ""
+msgstr "Saules un Mēness stūpas"
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8691,15 +8668,21 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
+"Saules un Mēness pagodas atrodas Guiliņas pilsētā Ķīnā. Tās ir ikoniski "
+"dvīņu torņi, kas simbolizē pilsētas kulturālo un garīgo mantojumu. Šīs "
+"celtnes uzbūvēja Tanu dinastijas laikā, bet 20. gadsimtā tās tika "
+"rekonstruētas un paceļas pāri Šaņhu ezeram. Saules pagoda ir 41 metru gara "
+"bronzas celtne — augstākā šāda veida celtne pasaulē, bet Mēness pagoda ir 35 "
+"metrus augsta un būvēta no glazētām flīzēm. Šīs pagodas reprezentē jiņ un "
+"jaņ harmoniju un ir savienotas ar zem ūdens esošu tuneli. Mūsdienās abas "
+"tūristu iecienītās celtnes naktī izgaismo, izrādot ķīniešu tradicionālo "
+"arhitektūru un moderno atjautību."
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Eifeļa tornis"
+msgstr "Sargtorņi"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8714,19 +8697,22 @@ msgid ""
 "UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
 "towers remain, offering insight into this unique architectural heritage."
 msgstr ""
+"Sargtorņi, kas atrodas Kaipinā, Guandunas provincē Ķīnā, ir nocietinātas "
+"vairāku stāvu celtnes, kas būvētas 19. gadsimta beigās un 20. gadsimta "
+"sākumā aizsardzībai pret bandītiem un plūdiem. Šie torņi apvieno Eiropiešu "
+"arhitektūras stilus, piemēram, romāniku un baroku, ar ķīniešu "
+"tradicionālajiem elementiem, atspoguļojot ķīniešu emigrantu bagātību un "
+"ietekmi. Šie torņi ir būvēti no dzelzsbetona, simbolizējot Ķīnas lauku "
+"kulturālo un ekonomisko pāreju. 2007. gadā atlikušie 1800 torņi no "
+"sākotnējiem 3000  tika iekļauti UNESCO Pasaules mantojuma sarakstā, "
+"piedāvājot ieskatu unikālajā arhitektūras mantojumā."
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Indijas pieminekļi"
+msgstr "Ķīnas pieminekļi"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Spied uz dotā pieminekļa atrašanās vietas."
@@ -8735,7 +8721,7 @@ msgstr "Spied uz dotā pieminekļa atrašanās vietas."
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "Panteons"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8752,12 +8738,25 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
+"Panteons Romā, Itālijā, ir slavens antīko laiku templis, ko mūsu ēras 126. "
+"gadā imperatora Adriāna valdīšanas laikā cēla romieši vietā, kurā iepriekš "
+"templi bija sācis celt imperators Markuss Agripa. Šī celtne ir slavena ar "
+"savas arhitektūras ģenialitāti, piemēram, milzīgo kupolveidīgo jumtu ar "
+"centrālo gaismas atveri, kas simbolizē debesis un ļauj dabīgajai gaismai "
+"izgaismot ēkas iekšpusi. Sākotnēji šis templis bija veltīts visiem romiešu "
+"dieviem, bet vēlāk, mūsu ēras 609. gadā, to tas tika pārveidots par "
+"kristiešu baznīcu un nosaukts par Svētās Marijas un mocekļu baziliku (Santa "
+"Maria ad Martyres). Celtnes kupols ir lielākais kupols pasaulē, kas nav "
+"veidots no dzelzsbetona, demonstrējot tā veidotāju inženierprasmes radīt "
+"simetriju, kas ir iedvesmojusi arhitektus gadsimtiem ilgi. Panteona "
+"harmoniskās proporcijas un vēsturiskā nozīme to padara par mūžīgu klasiskās "
+"arhitektūras meistardarbu."
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "Milānas Doms"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8772,15 +8771,22 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
+"Milānas Doms jeb Milānas katedrāle ir slavens gotikas meistardarbs, kas "
+"atrodas Milānas centrā Itālijā. Doma būvdarbi notika gandrīz sešus "
+"gadsimtus. Tā ir viena no lielākajām katedrālēm pasaulē un Milānas mākslas "
+"un kultūras mantojuma simbols. Katedrāles sarežģītā fasāde ir rotāta ar "
+"neskaitāmām statujām, smailēm un gargulām, atspoguļojot gotiskās "
+"arhitektūras grandiozumu. Apmeklētāji var izpētīt tās elpu aizraujošo "
+"interjeru ar skaistiem iekrāsoties stikla logiem un izsmalcinātām marmora "
+"detaļām vai arī pacelties uz jumta un redzēt brīnišķīgu pilsētas un netālu "
+"esošo Alpu kalnu skatu. Doms ir testaments Itālijas bagātajai vēsturei un "
+"arhitektūras sasniegumiem."
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Vormsas katedrāle"
+msgstr "Florences katedrāle"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8796,15 +8802,22 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
+"Florences katedrāle, kas itāļu valodā saucas „Cattedrale di Santa Maria del "
+"Fiore“ ir pazīstams gotiskās un renesanses arhitektūras meistardarbs un "
+"atrodas Florencē, Itālijā. Katedrāles būvniecība tika pabeigta 1436. gadā. "
+"Tā ir slavena ar savu milzīgo un sarkanām flīzēm klāto kupolu, ko "
+"projektējis Filipo Brunelleski. Florences katedrāle ir kļuvusi par pilsētas "
+"simbolu. Celtnes izsmalcinātā marmora fasāde, kas tai tika pievienota "
+"19. gadsimtā, papildina bagātīgi dekorēto interjeru un tās mākslinieciskos "
+"dārgumus. Tā kopā ar Džoto zvanu torni un Svētā Jāņa baptistēriju veido "
+"UNESCO pasaules mantojuma vietu, lai ar savu vēsturisko, kulturālo un "
+"arhitektūras nozīmi katru gadu pie sevis pulcētu tūkstošiem apmeklētāju."
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Hanojas tornis"
+msgstr "Pizas tornis"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8819,12 +8832,21 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
+"Pizas tornis atrodas Itālijas pilsētā Pizā un ir visā pasaulē pazīstams "
+"arhitektūras brīnums. Brīvi stāvošā zvanu torņa būvniecība notika katedrāles "
+"vajadzībām, bet tas slavens kļuva, jo nestabilās augsnes dēļ nejauši sāka "
+"svērties uz vieniem sāniem. Šī torņa celtniecība sākās 1173. gadā un ilga "
+"gandrīz 200 gadu — šajā laikā notika centieni stabilizēt torņa slīpumu. "
+"Pizas tornis ir 56 metrus augsts, bet tā romānikas stila dizains ar "
+"izgrebtām kolonnām un arkām ietver astoņus stāvus, kuru starpā ir zvanu "
+"tornis. Tas ir atzīts par UNESCO Pasaules mantojuma objektu un kļuvis par "
+"cilvēku nepadošanās un atjautības simbolu."
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr ""
+msgstr "Svētā Marka bazilika"
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -8840,12 +8862,22 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
+"Venēcijā, Itālijā, esošā Svētā Marka bazilika ir ievērojams bizantiskās "
+"arhitektūras meistardarbs un viens no pilsētas slavenākajiem objektiem. "
+"Bazilika sākotnēji tika būvēta 828. gadā, lai glabātu Evaņģēlista Marka "
+"relikvijas, bet pašreizējā formā tika pārbūvēta 11. gadsimtā. Tā ir "
+"pazīstama ar savu pārbagāto izskatu, kas sevī apvieno Austrumu un Rietumu "
+"ietekmi, par ko liecina tās pieci kupoli, greznās mozaīkas un ornamentālā "
+"fasāde ar statujām un kalumiem. Tās interjers ir bagātīgi dekorēts ar zelta "
+"mozaīkām un marmora grīdām, atspoguļojot Venēcijas Republikas bagātību un "
+"varenību. Bazilika atrodas blakus Svētā Marka laukumam un veido daļu no "
+"Venēcijas vēsturiskā, kulturālā un reliģiskā mantojuma."
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr ""
+msgstr "Pompeji"
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -8861,31 +8893,32 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
+"Pompeji bija Senās Romas pilsēta, kas atradās netālu no mūsdienu Neapoles, "
+"Itālijā. Šī pilsēta ievērību guva pēc tam, kad tika apraksta Vezuva vulkāna "
+"izvirdumā mūsu ēras 79. gadā. Izvirduma laikā pilsēta saskārās ar nāvējošu "
+"pelnu, pumeka un piroklasitsko materiālu plūsmu, kas apklāja pilsētu līdz ar "
+"tās iedzīvotājiem, tādējādi neticami precīzi saglabājot tā laika ēkas, "
+"objektus un pat cilvēku atliekas. Pompeju arheoloģiskie izrakumi ir snieguši "
+"nenovērtējamu ieskatu romiešu ikdienas dzīvē, arhitektūrā un sabiedrībā, "
+"atklājot pilsētu ar rūpīgi izplānotām ielām, mājām, publiskajām pirtīm un "
+"tempļiem. Šī vieta ir iekļauta UNESCO Pasaules mantojuma sarakstā un ir "
+"viens no visu laiku svarīgākajiem arhitektūras atklājumiem."
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Indijas pieminekļi"
+msgstr "Itālijas pieminekļi"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Spied uz dotā pieminekļa atrašanās vietas."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Jaukts reģistrs"
+msgstr "Himedži pils"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -8898,12 +8931,19 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
+"Himedži pils ir labākais mūsdienās vēl apskatāmais 17. gadsimta japāņu piļu "
+"arhitektūras paraugs. Šo pils kompleksu veido 83 ēkas ar attīstītu "
+"aizsardzības sistēmu un atjautīgām aizsardzības iekārtām, kas nāk vēl no "
+"šogunu laikiem. Šī pils ir koka konstrukcijas meistardarbs un sevī apvieno "
+"arhitektonisku pievilcību un funkcionalitāti. Tās eleganto ārieni vieno "
+"smalkās attiecības starp pils māla sienām ar balto apmetumu un daudzajiem "
+"jumta slāņiem."
 
 #: activities/explore_monuments/resource/board/board9.qml:28
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr ""
+msgstr "Hirošimas miera memoriāls"
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -8919,12 +8959,22 @@ msgid ""
 "a solemn space for reflection, honoring the lives lost and advocating for "
 "global peace."
 msgstr ""
+"Hirošimas miera memoriāls ir atgādinājums par karu izraisīto postu un miera "
+"simbols. Tas atrodas Hirošimā, Japānā, un ir veidots kā atceres vieta "
+"1945. gada 6. augusta atombumbas upuriem. Parkā atrodas vairāki pieminekļi, "
+"starp kuriem ir pazīstamais Bumbas kupols — kādreizēja valdības ēka, kas "
+"šobrīd ir iekļauta UNESCO Pasaules mantojuma sarakstā. Šajā parkā atrodas "
+"arī Hirošimas miera memoriāla muzejs, kura mērķis ir tā apmeklētājus "
+"izglītot par notikumiem ap pilsētas bombardēšanu un informēt par miera, "
+"vardarbības izbeigšanas un atomieroču iznīcināšanas nozīmi. Šī vieta kalpo "
+"par nopietnu pārdomu vietu, kurā izteikt cieņu zaudētajām dzīvībām un "
+"atbalstīt mieru visā pasaulē."
 
 #: activities/explore_monuments/resource/board/board9.qml:39
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr ""
+msgstr "Fudži Arakuro deklarācijas svētnīca"
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -8940,12 +8990,22 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
+"Šī svētnīca tika izveidota 705. gadā, lai svētītu šīs vietas dievību. Pēc "
+"tam, kad 807. gadā notika Fudži kalna izvirdums, imperators uz šo svētnīcu "
+"nosūtīja īpašu vēstnieku, lai ar rituāla palīdzību izvirdumu apturētu. "
+"Leģenda vēsta, ka Karojošu valstu periodā, kad Takeda Nobutora, slavenā "
+"militārista Takedas Šingena tēvs, karoja ar Hodžo klanu, viņš šajā vietā "
+"esot izveidojis apmetni un lūdzies pēc uzvaras, kas to arī esot nesusi. Pēc "
+"tam Nobutura šai vietai esot veltījis savu zobenu. Mūsdienās tuvu un tālu "
+"dzīvojošie apmeklē šo svētnīcu, lai aizsargātos no ļaunuma, lūgtu laimi "
+"ģimenei un vieglas dzemdības. Pavasarī šajā vietā uzzied ķiršu koki, kas "
+"aicina daudzu cilvēkus priecāties par skaisto Fudži kalna skatu."
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr ""
+msgstr "Šuri pils Okinavā"
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -8961,19 +9021,24 @@ msgid ""
 "much of the castle was lost in a fire in 2019, but efforts to restore it are "
 "ongoing, reflecting its enduring importance to Okinawa's heritage."
 msgstr ""
+"Šuri pils atrodas Nahā, Okinavā, Japānā un ir iekļauta UNESCO Pasaules "
+"mantojuma sarakstā kā Rjūkjū Karalistes bagātās kultūras simbols. Pils "
+"pirmsākumi ir meklējumi 14. gadsimtā, kad tā daudzus gadsimtus kalpoja par "
+"karalistes politisko, ekonomisko un kulturālo centru. Šuri pils ar "
+"sarkanajām struktūrām un krāšņajām dekorācijām ir pazīstama ar to, ka "
+"apvieno ķīniešu un japāņu arhitektūras stilus un atrodas iespaidīgā vietā "
+"kalna smailē. Lai gan celtni Otrā pasaules kara laikā iznīcināja, tā ir "
+"rūpīgi rekonstruēta un kļuvusi par tūristu iecienītu vietu. 2019. gadsimtā "
+"pils saskārās ar vēl vienu traģēdiju, kad lielu tās daļu izpostīja "
+"ugunsgrēks, bet arī šoreiz tiek pieliktas lielas pūles, lai to atjaunotu, tā "
+"atspoguļojot Šuri pils lielo nozīmi Okinavas mantojumā."
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Francijas pieminekļi"
+msgstr "Japānas pieminekļi"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Spied uz dotā pieminekļa atrašanās vietas."
@@ -9431,8 +9496,8 @@ msgid ""
 "narrative poem or story. Typical instruments include bagpipes, fiddles, "
 "flutes, harps, and accordions."
 msgstr ""
-"Tautas mūzika šajā reģionā saucas par ķeltu mūziku. Bieži tās sastāvdaļa ir "
-"kāds stāstījums vai dzejolis. Starp tipiskiem instrumentiem ķeltu mūzikā ir "
+"Tautas mūzika šajā reģionā saucas par ķeltu mūziku. Bieži tās daļa ir kāds "
+"stāstījums vai dzejolis. Starp tipiskiem instrumentiem ķeltu mūzikā ir "
 "dūdas, vijoles, arfas un akordeoni."
 
 #: activities/explore_world_music/resource/board/board1.qml:80
@@ -9449,7 +9514,7 @@ msgid ""
 "special techniques to sing operas."
 msgstr ""
 "Itālija ir slavena ar savām operām. Opera ir muzikāls teātris, kurā aktieri "
-"rāda stāstu, tēlojot un dziedot. Operas dziedātāji ir gan sievietes, gan "
+"stāsta stāstu, tēlojot un dziedot. Operas dziedātāji ir gan sievietes, gan "
 "vīrieši, kuriem, lai dziedātu operā, ir jāapgūst noteiktas tehnikas."
 
 #: activities/explore_world_music/resource/board/board1.qml:92
@@ -9464,8 +9529,8 @@ msgid ""
 "Europe is the home of classical music. Famous composers like Bach, "
 "Beethoven, and Mozart forever changed music history."
 msgstr ""
-"Eiropa ir mājvieta klasiskajai mūzikai. Mūzikas vēsturi ir mainījuši slaveni "
-"komponisti, piemēram, Bahs, Bēthovens un Mocarts."
+"Eiropa ir mājvieta klasiskajai mūzikai. Slaveni Eiropas komponisti ir "
+"mainījuši mūzikas vēsturisko gaitu, piemēram, Bahs, Bēthovens un Mocarts."
 
 #: activities/explore_world_music/resource/board/board1.qml:104
 #: activities/explore_world_music/resource/board/board1.qml:108
@@ -9574,7 +9639,7 @@ msgstr "?"
 #, qt-format
 msgctxt "Family|"
 msgid "Select one of the pairs corresponding to: %1"
-msgstr "Atlasi vienu no pāriem, kas atbilst: %1"
+msgstr "Norādi divus cilvēkus, starp kuriem viens otram ir: %1"
 
 #: activities/family/FamilyDataset.qml:95
 #: activities/family/FamilyDataset.qml:96
@@ -9752,13 +9817,13 @@ msgstr "Norādi uz radiniekiem"
 #: activities/family_find_relative/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Select two people which have the given relationship."
-msgstr "Atlasi divus cilvēkus, kurām ir šādas attiecības"
+msgstr "Atlasi divus cilvēkus, kuriem ir šādas attiecības"
 
 #. Help prerequisite
 #: activities/family_find_relative/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Reading, moving and clicking with the mouse."
-msgstr "Lasīšana, pārvietošana un klikšķināšana ar peli"
+msgstr "Lasīšana, peles pārvietošana un klikšķināšana"
 
 #. Help manual
 #: activities/family_find_relative/ActivityInfo.qml:24
@@ -9769,10 +9834,10 @@ msgid ""
 "are marked with a ring on the link.\n"
 "Click on a pair of family members which have the given relationship."
 msgstr ""
-"Ir redzams ģimenes koks ar instrukcijām.\n"
+"Redzams ģimenes koks ar instrukcijām.\n"
 "Apļi ir saistīti ar līnijām, norādot uz attiecībām. Starp precētiem pāriem "
 "ir gredzeni.\n"
-"Spied uz ģimenes locekļa pāri, starp kuru ir norādītās attiecības."
+"Spied uz ģimenes locekļiem, starp kuriem ir norādītās attiecības."
 
 #. Activity title
 #: activities/fifteen/ActivityInfo.qml:15
@@ -9784,7 +9849,7 @@ msgstr "Spēle „Piecpadsmit“"
 #: activities/fifteen/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Move each item to recreate the image."
-msgstr "Pārvieto katru vienumu, lai no jauna izveidot attēlu."
+msgstr "Pārvieto katru objektu, lai no jauna izveidot attēlu."
 
 #. Help goal
 #: activities/fifteen/ActivityInfo.qml:20
@@ -10504,7 +10569,7 @@ msgstr "Tabulators: pārslēdzas starp frīzes rediģēšanu un modeļa apskati"
 #: activities/frieze/Frieze.qml:287
 msgctxt "Frieze|"
 msgid "I am Ready"
-msgstr "Esmu gatavs"
+msgstr "Sākam"
 
 #: activities/frieze/resource/1/Data.qml:28
 msgctxt "Data|"
@@ -10664,7 +10729,7 @@ msgstr "Mācies atrast un novietot valstu reģionus."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the regions to their correct location to complete the map."
-msgstr "Velc un nomet reģionus pareizajās vietās, lai pabeigtu karti."
+msgstr "Aizpildi karti, velkot un nomet reģionus pareizajās vietās."
 
 #: activities/geo-country/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -10994,7 +11059,7 @@ msgstr "Konektikuta"
 #: activities/geo-country/resource/board/board11_0.qml:15
 msgctxt "board11_0|"
 msgid "Regions of Italy"
-msgstr "Itālija reģioni"
+msgstr "Itālijas reģioni"
 
 #. Region of Italy: Liguria
 #: activities/geo-country/resource/board/board11_0.qml:24
@@ -13463,7 +13528,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the map pieces to their correct location to complete the map."
-msgstr "Velc un nomet kartes gabaliņus savās vietās, lai pabeigtu karti."
+msgstr "Aizpildi karti, velkot un nometot kartes gabaliņus pareizajās vietās."
 
 #: activities/geography/resource/board/board10_0.qml:15
 msgctxt "board10_0|"
@@ -14865,18 +14930,18 @@ msgid ""
 "over. So 8 isn't a multiple of 5, nor is 23. Only 5, 10, 15, 20, 25 ... are "
 "multiples (or families or steps) of 5."
 msgstr ""
-"Skaitļa reizinājumi ir visi skaitļi, kas ir vienādi oriģinālā skaitļa "
-"reizināšanai ar citu skaitli. Piemēram, 24, 36, 48 un 60 ir 12 reizinājumi. "
-"Savukārt skaitlis 25 nav 12 reizinājums, jo nav tāda skaitļa, ko varētu "
-"reizināt ar 12, lai iegūtu 25. Ja kāds skaitlis ir otrā skaitļa dalītājs, "
-"tad šis otrais skaitlis ir pirmā skaitļa reizinājums. Vari iedomāties, ka "
-"reizinājumi ir ģimenes, bet dalītāji ir cilvēki šajās ģimenēs. Dalītājam 5 "
-"ir vecāki 10, vecvecāki 15, vecvecvecāki 20, vecvecvecāki 25 un tā katrs "
-"nākamais solis pa pieci vairāk ir vēl viens „vec-“! Tomēr skaitlis 5 "
-"nepieder pie 8 vai 23 ģimenes, jo nekādā veidā to nevari ievietot skaitlī 8 "
-"vai 23 tā, lai nekas nepaliktu pāri. Līdz ar to 8 un 23 nav 5 reizinājums. "
-"Bet 5 reizinājumi ir tikai 5, 10, 15, 20, 25 un tā tālāk katrs nākamais, kas "
-"ir par 5 lielāks."
+"Skaitļa reizinājumi ir visi skaitļi, kas ir vienādi ar sākotnējo skaitli pēc "
+"noteikta tā reizinājuma skaita. Piemēram, 24, 36, 48 un 60 ir 12 "
+"reizinājumi. Savukārt skaitlis 25 nav 12 reizinājums, jo nav tāda skaitļa, "
+"ko varētu reizināt ar 12, lai iegūtu 25. Ja kāds skaitlis ir otrā skaitļa "
+"dalītājs, tad šis otrais skaitlis ir pirmā skaitļa reizinājums. Vari "
+"iedomāties, ka reizinājumi ir ģimenes, bet dalītāji ir cilvēki šajās "
+"ģimenēs. Dalītājam 5 ir vecāki 10, vecvecāki 15, vecvecvecāki 20, "
+"vecvecvecāki 25 un tā katrs nākamais solis pa pieci vairāk ir vēl viens "
+"„vec-“! Tomēr skaitlis 5 nepieder pie 8 vai 23 ģimenes, jo nekādā veidā to "
+"nevari ievietot skaitlī 8 vai 23 tā, lai nekas nepaliktu pāri. Līdz ar to 8 "
+"un 23 nav 5 reizinājums. Bet 5 reizinājumi ir tikai 5, 10, 15, 20, 25 un tā "
+"tālāk katrs nākamais, kas ir par 5 lielāks."
 
 #. Activity title
 #: activities/gnumch-primes/ActivityInfo.qml:15
@@ -14894,7 +14959,7 @@ msgstr "Aizved skaitļu ēdāju pie visiem pirmskaitļiem."
 #: activities/gnumch-primes/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn about prime numbers."
-msgstr "Mācies par pirmskaitļiem."
+msgstr "Apgūsti pirmskaitļus."
 
 #. Help manual
 #: activities/gnumch-primes/ActivityInfo.qml:23
@@ -14913,7 +14978,7 @@ msgstr ""
 "iztēloties kā ļoti mazas ģimenes: tajās vienlaicīgi var dzīvot tikai divi "
 "cilvēki! Tikai viņi paši un 1. Tajās nav iespējams ievietot nevienu citu "
 "skaitli tā, lai nekas nepaliktu pāri. 5 ir viens no šiem vientuļajiem "
-"skaitļiem (tikai 5 × 1 = 5), bet 6 ģimenē dzīvo arī 2 un 3(6 × 1 = 6, 2 × 3 "
+"skaitļiem (tikai 5 × 1 = 5), bet 6 ģimenē dzīvo arī 2 un 3 (6 × 1 = 6, 2 × 3 "
 "= 6). Līdz ar to 6 nav pirmskaitlis."
 
 #. Activity title
@@ -14989,12 +15054,9 @@ msgstr "Jāatrod skaitlis starp 1 un 5."
 
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Number to find between 0 and 20."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
-msgstr "Jāatrod skaitlis starp 0 un 20."
+msgstr "Jāatrod skaitlis starp 0 un 4."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"
@@ -15180,7 +15242,7 @@ msgid ""
 "Space: assign the selected class to the selected word and then select the "
 "next word"
 msgstr ""
-"Atstarpe: piešķir norādīto vārdšķiru atlasītajam vārdam un pēc tam atlasa "
+"Atstarpe: piešķir norādīto vārdšķiru atlasītajam vārdam, bet pēc tam atlasa "
 "nākamo vārdu"
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
@@ -15202,7 +15264,7 @@ msgstr "Gramatiskā analīze"
 #: activities/grammar_analysis/GrammarAnalysis.qml:27
 msgctxt "GrammarAnalysis|"
 msgid "Learn to identify grammatical classes."
-msgstr "Mācies atšķirt vārdšķiras"
+msgstr "Mācies atšķirt vārdšķiras."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:28
 msgctxt "GrammarAnalysis|"
@@ -15257,7 +15319,7 @@ msgstr "Vārdšķiras"
 #: activities/grammar_classes/GrammarClasses.qml:16
 msgctxt "GrammarClasses|"
 msgid "Learn to identify grammatical classes."
-msgstr "Mācies atšķirt vārdšķiras"
+msgstr "Mācies atšķirt vārdšķiras."
 
 #: activities/grammar_classes/GrammarClasses.qml:17
 msgctxt "GrammarClasses|"
@@ -15491,7 +15553,7 @@ msgstr "„Tab“ taustiņš: pārslēdzas starp skaitļiem un operatoriem"
 #: activities/guess24/Guess24.qml:135
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr "Izmanto četrus skaitļus ar dotajiem operatoriem, lai atrastu 24."
+msgstr "Izmanto četrus skaitļus ar dotajiem operatoriem, lai iegūtu 24."
 
 #: activities/guess24/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -15519,12 +15581,9 @@ msgid "Division required."
 msgstr "Nepieciešama dalīšana."
 
 #: activities/guess24/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "Visu aritmētisko darbību atmiņas spēle"
+msgstr "Jāizmanto visi operatori."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -15550,7 +15609,7 @@ msgstr "Nav atlasīts"
 #: activities/guesscount/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Guesscount"
-msgstr "Minējumu skaits"
+msgstr "Atminamais skaitlis"
 
 #. Help title
 #: activities/guesscount/ActivityInfo.qml:21
@@ -15600,7 +15659,7 @@ msgstr "rezultāts nav vesels skaitlis"
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
-msgstr "Minējumu skaits: %1"
+msgstr "Atminamais skaitlis: %1Minējumu skaits"
 
 #: activities/guesscount/OperandRow.qml:38
 msgctxt "OperandRow|"
@@ -15891,7 +15950,7 @@ msgstr ""
 "priesteriem izdotos salikt šo torni, tad pasaule beigtos. Līdz ar to šo "
 "spēli dēvē arī par „Brahmas torņa mīklu“. Nav skaidri zināms, vai Luka pats "
 "izdomāja šo leģendu, vai arī to kaut kur noklausījās un viņam tā "
-"iepatikusies. (avots „Vikipēdija“: https://en.wikipedia.org/wiki/"
+"iepatikusies. (avots ir Vikipēdija: https://en.wikipedia.org/wiki/"
 "Tower_of_hanoi)"
 
 #: activities/hanoi_real/HanoiReal.qml:75
@@ -15944,7 +16003,7 @@ msgstr "Attēla nosaukums"
 #: activities/imagename/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Drag and Drop each item above its name."
-msgstr "Velc un nomet katru vienumu virs tā nosaukuma."
+msgstr "Velc un nomet katru objektu virs tā nosaukuma."
 
 #. Help goal
 #: activities/imagename/ActivityInfo.qml:23
@@ -15970,8 +16029,8 @@ msgid ""
 "Drag each image from the side to the corresponding name in the main area. "
 "Click on the OK button to check your answer."
 msgstr ""
-"Velc katru attēlu no malas līdz pareizajam nosaukumam galvenajā zonā. Spied "
-"uz pogas „Labi“, lai pārbaudītu atbildi."
+"Velc katru attēlu no malas līdz pareizajam nosaukumam galvenajā zonā. Lai "
+"pārbaudītu atbildi, spied uz „Labi“ pogas."
 
 #: activities/imagename/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
@@ -16316,7 +16375,7 @@ msgstr "Atrodi kastaņetes"
 #: activities/instruments/instruments.js:193
 msgctxt "instruments|"
 msgid "Find the cymbal"
-msgstr "Atrodi zvārguļus"
+msgstr "Atrodi šķīvjus"
 
 #: activities/instruments/instruments.js:198
 msgctxt "instruments|"
@@ -16332,7 +16391,7 @@ msgstr "Atrodi harmonikas"
 #: activities/instruments/instruments.js:254
 msgctxt "instruments|"
 msgid "Find the horn"
-msgstr "Atrodi ragu"
+msgstr "Atrodi mežragu"
 
 #: activities/instruments/instruments.js:226
 #: activities/instruments/instruments.js:259
@@ -16372,7 +16431,7 @@ msgstr "Atrodi tamburīnu"
 #: activities/instruments/instruments.js:292
 msgctxt "instruments|"
 msgid "Find the tuba"
-msgstr "Atrodi tūbu"
+msgstr "Atrodi tubu"
 
 #. Activity title
 #: activities/land_safe/ActivityInfo.qml:15
@@ -16894,7 +16953,7 @@ msgstr "Parādi daudzumu: %1"
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
-msgstr "Ievadi rezultātu: %1"
+msgstr "Ieraksti rezultātu: %1"
 
 #: activities/learn_decimals/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -16938,9 +16997,9 @@ msgid ""
 "area. Repeat these steps until the number of dropped bars corresponds to the "
 "result of the addition, and click on the OK button to validate your answer."
 msgstr ""
-"Ekrānā ir parādīta divu decimālskaitļu saskaitīšanas darbība. Vel bultu, lai "
-"atlasītu daļu no vienību joslas un velc atlasīto joslas daļu uz tukšu zonu. "
-"Atkārto šos soļus līdz nomestu joslu skaits atbilst saskaitīšanas "
+"Ekrānā ir parādīta divu decimālskaitļu saskaitīšanas darbība. Velc bultu, "
+"lai atlasītu daļu no vienību joslas un velc atlasīto joslas daļu uz tukšu "
+"zonu. Atkārto šos soļus līdz nomestu joslu skaits atbilst saskaitīšanas "
 "rezultātam, pēc tam klikšķini uz „Labi“ pogas, lai atbildi pārbaudītu."
 
 #: activities/learn_decimals_additions/ActivityInfo.qml:23
@@ -16994,7 +17053,7 @@ msgstr ""
 #: activities/learn_decimals_additions/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Add decimal numbers up to 1."
-msgstr "Decimālskaitļu saskaitīšana līdz 1."
+msgstr "Saskaiti decimālskaitļus līdz 1."
 
 #: activities/learn_decimals_additions/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -17010,7 +17069,7 @@ msgstr "Saskaiti decimālskaitļus līdz 5."
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Subtraction with decimal numbers"
-msgstr "Atņem ar decimālskaitļiem"
+msgstr "Atņemšana ar decimālskaitļiem"
 
 #. Help title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:16
@@ -17051,8 +17110,8 @@ msgid ""
 "full unit, and each square in it represents one tenth of this unit."
 msgstr ""
 "Ekrānā redzama atņemšana ar diviem skaitļiem. Zem tā ir redzama josla ar "
-"reprezentētu atņemšanas pirmo locekli. Viens josla norāda uz pilnu vienību, "
-"bet katrs kvadrāts uz vienības desmito daļu."
+"reprezentētu atņemšanas pirmo locekli. Viena vesela josla norāda uz pilnu "
+"vienību, bet katrs joslas kvadrāts uz vienības desmito daļu."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:20
 msgctxt "Learn_decimals_subtractions|"
@@ -17229,8 +17288,8 @@ msgid ""
 msgstr ""
 "Pieprasīts daudzums. Velc bultu, lai atlasītu apelsīnu skaitu un velc "
 "atlasītos apelsīnus uz tukšu zonu. Atkārto šos soļus līdz nomesto apelsīnu "
-"skaits ir atbilstošs pieprasītajam daudzumam. Pēc tam klikšķini uz „Labi“ "
-"pogas, lai pārbaudītu atbildi."
+"skaits ir atbilstošs pieprasītajam daudzumam. Pēc tam pārbaudi atbildi, "
+"klikšķinot uz „Labi“ pogas."
 
 #: activities/learn_quantities/Learn_quantities.qml:16
 msgctxt "Learn_quantities|"
@@ -17449,7 +17508,7 @@ msgstr "Mazie burti"
 #: activities/letter-in-word/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Letter in which word"
-msgstr "Burts kurā vārdā"
+msgstr "Kurā vārdā ir burts"
 
 #. Help title
 #: activities/letter-in-word/ActivityInfo.qml:17
@@ -17622,7 +17681,7 @@ msgid ""
 msgstr ""
 "Izlasi Luija Braila biogrāfiju un Braila raksta izveidošanas vēsturi. Spied "
 "uz pogām atpakaļ un tālāk, lai pārvietotos starp stāsta lapām. Beigās "
-"izkārto secību hronoloģiskā kārtībā."
+"izkārto notikumus hronoloģiskā secībā."
 
 #: activities/louis-braille/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -17654,8 +17713,8 @@ msgid ""
 "At the age of three, Louis became blind due to a severe infection that "
 "spread to his left eye."
 msgstr ""
-"Trīs gadu vecumā Luijs zaudēja redzi, jo nopietna infekcija izplatījās arī "
-"uz viņa kreiso aci."
+"Trīs gadu vecumā Luijs zaudēja redzi, jo no savainotās acs infekcija "
+"izplatījās arī uz viņa kreiso aci."
 
 #: activities/louis-braille/louis_braille_data.js:27
 msgctxt "louis_braille_data|"
@@ -17686,7 +17745,8 @@ msgstr ""
 #: activities/louis-braille/louis_braille_data.js:42
 msgctxt "louis_braille_data|"
 msgid "Louis trimmed Barbier's 12 dots into 6 and invented the braille system."
-msgstr "Luijs samazināja Barbjē 12 punktus līdz 6 un izveidoja Braila sistēmu."
+msgstr ""
+"Luijs samazināja Barbjē 12 punktus līdz sešiem un izveidoja Braila sistēmu."
 
 #: activities/louis-braille/louis_braille_data.js:47
 msgctxt "louis_braille_data|"
@@ -17698,11 +17758,6 @@ msgstr ""
 "slepeni tās mācot institūtā."
 
 #: activities/louis-braille/louis_braille_data.js:52
-#, fuzzy
-#| msgctxt "louis_braille_data|"
-#| msgid ""
-#| "He revised and extended braille to include mathematics, symbols, "
-#| "punctuations and music notations."
 msgctxt "louis_braille_data|"
 msgid ""
 "He revised and extended braille to include mathematics, symbols, punctuation "
@@ -17718,7 +17773,7 @@ msgid ""
 "is erected to honor him."
 msgstr ""
 "Luijs Brails nomira no tuberkulozes. Viņš ir apglabāts Parīzes panteonā. "
-"Viņa piemiņai ir uzstādīts piemineklis."
+"Izgudrotāja piemiņai ir uzstādīts piemineklis."
 
 #: activities/louis-braille/louis_braille_data.js:62
 msgctxt "louis_braille_data|"
@@ -17740,12 +17795,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "Burvju cepure"
+msgstr "Burvju cepure (atņemšana)"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -17783,7 +17835,7 @@ msgstr ""
 #: activities/magic-hat-minus/MagicHat.qml:255
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
-msgstr "Klikšķini uz cepures, lai sāktu spēli"
+msgstr "Lai sāktu spēli, klikšķini uz cepures!"
 
 #: activities/magic-hat-minus/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -17837,12 +17889,9 @@ msgstr "%1x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "Burvju cepure"
+msgstr "Burvju cepure (saskaitīšana)"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -18134,8 +18183,8 @@ msgid ""
 "xylophone's bars. You can listen again the sound sequence by clicking on the "
 "repeat button."
 msgstr ""
-"Noklausies skaņu secību un to atkārto, klikšķinot uz ksilofona kauliņiem. "
-"Melodiju var noklausīties vēlreiz, klikšķinot uz atkārtošanas pogas."
+"Noklausies skaņu secību un to atkārto, klikšķinot uz ksilofona plāksnītēm. "
+"Melodiju vari noklausīties vēlreiz, klikšķinot uz atkārtošanas pogas."
 
 #: activities/melody/Melody.qml:338
 msgctxt "Melody|"
@@ -19060,7 +19109,7 @@ msgstr "Apgriez kartiņas, lai atrastu reizināšanai atbilstošo rezultātu."
 #: activities/memory-sound-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Audio memory game against Tux"
-msgstr "Audio atmiņas spēle pret Tuksu"
+msgstr "Dzirdes atmiņas spēle pret Tuksu"
 
 #. Help title
 #: activities/memory-sound-tux/ActivityInfo.qml:17
@@ -19073,7 +19122,7 @@ msgstr "Apgriez kartiņas, lai atrastu skaņas pārus, spēlējot pret Tuksu."
 #: activities/memory-sound/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Train your audio memory."
-msgstr "Trenē savu audio atmiņu."
+msgstr "Trenē savu dzirdes atmiņu."
 
 #. Help manual
 #: activities/memory-sound-tux/ActivityInfo.qml:23
@@ -19096,7 +19145,7 @@ msgstr ""
 #: activities/memory-sound/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Audio memory game"
-msgstr "Audio atmiņas spēle"
+msgstr "Dzirdes atmiņas spēle"
 
 #. Help title
 #: activities/memory-sound/ActivityInfo.qml:17
@@ -19363,8 +19412,8 @@ msgid ""
 "At the bottom of the screen is the GCompris control bar. Notice that you can "
 "hide or show the bar by touching its anchor."
 msgstr ""
-"Atlasi ikonu, lai atvērtu aktivitāti vai parādītu aktivitāšu sarakstu "
-"kategorijā.\n"
+"Atlasi ikonu, lai atvērtu aktivitāti vai parādītu kategorijā esošo "
+"aktivitāšu sarakstu.\n"
 "Ekrāna apakšā ir „GCompris“ vadības josla. Joslu var paslēpt vai parādīt, "
 "pieskaroties tās enkuram."
 
@@ -19374,9 +19423,8 @@ msgid ""
 "The following icons are displayed:\n"
 "(note that each icon is displayed only if available in the current activity)"
 msgstr ""
-"Redzamas ir šādas ikonas:\n"
-"(ievērojiet, ka ikona ir redzama tikai tad, ja tā ir pieejama attiecīgajā "
-"aktivitātē)"
+"Programma izmanto ir šādas ikonas:\n"
+"(ikona ir redzama tikai tad, ja tā ir pieejama attiecīgajā aktivitātē)"
 
 #: activities/menu/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -19547,17 +19595,17 @@ msgstr "Lejupielādēt"
 #: activities/menu/ConfigurationItem.qml:172
 msgctxt "ConfigurationItem|"
 msgid "Enable audio voices"
-msgstr "Ieslēgt audio balsis"
+msgstr "Ieslēgt skaņas balsis"
 
 #: activities/menu/ConfigurationItem.qml:182
 msgctxt "ConfigurationItem|"
 msgid "Enable audio effects"
-msgstr "Ieslēgt audio efektus"
+msgstr "Ieslēgt skaņas efektus"
 
 #: activities/menu/ConfigurationItem.qml:191
 msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
-msgstr "Audio efektu skaļums"
+msgstr "Skaņas efektu skaļums"
 
 #: activities/menu/ConfigurationItem.qml:211
 msgctxt "ConfigurationItem|"
@@ -19659,7 +19707,7 @@ msgstr "Atstarpes starp burtiem"
 #: activities/menu/ConfigurationItem.qml:445
 msgctxt "ConfigurationItem|"
 msgid "Teacher's server config"
-msgstr ""
+msgstr "Skolotāja servera konfigurācija"
 
 #: activities/menu/ConfigurationItem.qml:653
 msgctxt "ConfigurationItem|"
@@ -19758,7 +19806,7 @@ msgstr "Vārdu krājums"
 #: activities/menu/Menu.qml:211
 msgctxt "Menu|"
 msgid "GCompris is not connected to teacher's server."
-msgstr ""
+msgstr "„GCompris“ nav savienots ar skolotāja serveri."
 
 #: activities/menu/Menu.qml:212
 msgctxt "Menu|"
@@ -19766,22 +19814,25 @@ msgid ""
 "GCompris is connected to teacher's server, but the password entered for "
 "selected user is wrong."
 msgstr ""
+"„GCompris“ ir savienots ar skolotāja serveri, bet ir ievadīta nepareiza "
+"lietotāja parole."
 
 #: activities/menu/Menu.qml:213
 msgctxt "Menu|"
 msgid ""
 "GCompris is connected to teacher's server, and the user is authenticated."
 msgstr ""
+"„GCompris“ ir savienots ar skolotāja serveri un lietotājs ir autentificēts."
 
 #: activities/menu/Menu.qml:214
 msgctxt "Menu|"
 msgid "GCompris has lost the connection to teacher's server."
-msgstr ""
+msgstr "„GCompris“ pazaudēja savienojumu ar skolotāja serveri."
 
 #: activities/menu/Menu.qml:215
 msgctxt "Menu|"
 msgid "GCompris has been disconnected from teacher's server."
-msgstr ""
+msgstr "„GCompris“ ir atvienots no skolotāja servera."
 
 #: activities/menu/Menu.qml:216
 msgctxt "Menu|"
@@ -19789,6 +19840,8 @@ msgid ""
 "GCompris is connected to teacher's server, but the user is not yet "
 "authenticated."
 msgstr ""
+"„GCompris“ ir savienots ar skolotāja serveri, bet lietotājs vēl nav "
+"autentificējies."
 
 #: activities/menu/Menu.qml:677
 msgctxt "Menu|"
@@ -19796,7 +19849,7 @@ msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
 "that activity."
 msgstr ""
-"Pievieno te savas iecienītākās aktivitātes, klikšķinot uz saules ikonas pie "
+"Pievieno savas iecienītākās aktivitātes, klikšķinot uz saules ikonas pie "
 "attiecīgās aktivitātes."
 
 #: activities/menu/Menu.qml:824
@@ -19812,25 +19865,22 @@ msgstr "Aktivitātes iestatījumi"
 #: activities/menu/ServerConfigPage.qml:61
 msgctxt "ServerConfigPage|"
 msgid "Teacher's server settings"
-msgstr ""
+msgstr "Skolotāja servera iestatījumi"
 
 #: activities/menu/ServerConfigPage.qml:111
 msgctxt "ServerConfigPage|"
 msgid "Teacher's identifier"
-msgstr ""
+msgstr "Skolotāja identifikators"
 
 #: activities/menu/ServerConfigPage.qml:142
 msgctxt "ServerConfigPage|"
 msgid "Server port"
-msgstr ""
+msgstr "Servera ports"
 
 #: activities/menu/ServerConfigPage.qml:177
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "ServerConfigPage|"
 msgid "Server port must be a number between 0 and 65535."
-msgstr "Uzmini skaitli starp 1 un %1."
+msgstr "Servera portam jābūt skaitlim starp 0 un 65535."
 
 #. Activity title
 #: activities/mining/ActivityInfo.qml:15
@@ -20240,8 +20290,8 @@ msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
-"Morzes kodu izstrādāja Semjuels Morze. Tas metode teksta informācijas "
-"nodošanai un darbojas kā toņu, gaismu vai klikšķu sērija."
+"Morzes kodu izstrādāja Semjuels Morze. Tas ir metode teksta informācijas "
+"nodošanai un darbojas kā toņu, gaismu vai klikšķu virkne."
 
 #: activities/morse_code/FirstScreen.qml:66
 msgctxt "FirstScreen|"
@@ -20258,7 +20308,7 @@ msgstr ""
 "cipars) vai procedurālā zīme, ko reprezentē unikāla punktu un līniju secība. "
 "Līnijas ilgums ir trīs reizes garāks nekā punkta ilgums. Lai palielinātu "
 "komunikācijas ātrumu, kods ir izstrādāts tā, lai visbiežākajiem burtiem būtu "
-"īsākās punktu un līniju sekvences.\n"
+"īsākās punktu un līniju virknes.\n"
 "Piemēram, angļu valodā biežākais burts ir „E“, kura pierakstam ir īsākais "
 "kods — viens punkts."
 
@@ -20350,13 +20400,13 @@ msgstr "Pārveido ziņojumu par vārdu."
 #: activities/mosaic/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Rebuild the mosaic"
-msgstr "Atveido mozaīku"
+msgstr "Atkārto mozaīku"
 
 #. Help title
 #: activities/mosaic/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Put each item at the same place as in the given example."
-msgstr "Novieto katru vienumu tajā pašā vietā, kur tas atradās paraugā."
+msgstr "Novieto katru elementu tajā pašā vietā, kur tas atradās paraugā."
 
 #. Help goal
 #: activities/mosaic/ActivityInfo.qml:20
@@ -20371,7 +20421,7 @@ msgid ""
 "First select an item from the list, and then click on a spot of the mosaic "
 "to place the item."
 msgstr ""
-"Vispirms atlasi vienumu sarakstā, bet pēc tam klikšķini uz vietas mozaīkā, "
+"Vispirms atlasi elementu sarakstā, bet pēc tam klikšķini uz vietas mozaīkā, "
 "lai to novietotu."
 
 #: activities/mosaic/ActivityInfo.qml:25
@@ -20382,12 +20432,12 @@ msgstr "Bultiņas: pārvietoties pa laukumu"
 #: activities/mosaic/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select or place an item"
-msgstr "Atstarpes vai „Eneter“ taustiņš: atlasi vai novieto vienumu"
+msgstr "Atstarpes vai „Enter“ taustiņš: atlasi vai novieto vienumu"
 
 #: activities/mosaic/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the item list and the mosaic"
-msgstr "Tabulators: pārvietojies starp vienumu sarakstu un mozaīku"
+msgstr "„Tab“ taustiņš: pārvietojies starp vienumu sarakstu un mozaīku"
 
 #: activities/mosaic/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -20411,24 +20461,21 @@ msgstr "Līdz 24 vienumiem vienā līnijā."
 
 #. Activity title
 #: activities/multiple_choice_questions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication."
 msgctxt "ActivityInfo|"
 msgid "Multiple-choice questions"
-msgstr "Reizināšana."
+msgstr "Jautājumi ar atbilžu variantiem"
 
 #. Help title
 #: activities/multiple_choice_questions/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "A generic activity for multiple-choice questions."
-msgstr ""
+msgstr "Vispārīga aktivitāte jautājumiem ar atbilžu variantiem."
 
 #. Help goal
 #: activities/multiple_choice_questions/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Answer questions sent by the teacher."
-msgstr ""
+msgstr "Atbildi uz skolotāja nosūtītajiem jautājumiem."
 
 #. Help manual
 #: activities/multiple_choice_questions/ActivityInfo.qml:24
@@ -20439,31 +20486,28 @@ msgid ""
 "For some questions, after validating the answer, a feedback text panel will "
 "be displayed: click anywhere to close this panel after reading it."
 msgstr ""
+"Klikšķini uz atbildes, lai to atlasītu, bet tad to apstiprini ar klikšķi uz "
+"„Labi“ pogas. Dažiem jautājumiem ir tikai viena pareiza atbilde, bet citiem "
+"— vairākas. Dažiem jautājumiem pēc atbildes apstiprināšanas parādīsies "
+"atgriezeniskās saites panelis: izlasi to un klikšķini jebkur, lai to "
+"aizvērtu."
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate through the answers"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: navigate through the answer list"
-msgstr "Bultas: navigācija starp atbildēm"
+msgstr "Augšup un lejup bultas: navigācija starp atbildēm"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select or deselect a circle"
 msgctxt "ActivityInfo|"
 msgid "Space: select or deselect the highlighted answer"
-msgstr "Atstarpe: atlasi apli vai noņem atlasi"
+msgstr "Atstarpe: izceltās atbildes atlase vai atlases noņemšana"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
 msgstr ""
-"„Enter“ taustiņš: pārbaudiet savu atbildi, kad ir redzams „Labi“ taustiņš"
+"„Enter“ taustiņš: atbildes iesniegšana vai atgriezeniskās saites teksta "
+"paneļa aizvēršana"
 
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
@@ -20563,8 +20607,8 @@ msgid ""
 "there. Green color spots indicates where you can move."
 msgstr ""
 "Pēc visu kauliņu novietošanas tu un Tukss pēc kārtas tos pārvieto. Klikšķini "
-"uz kāda no saviem kauliņiem un pēc tam uz blakus esoša brīva laukuma, lai to "
-"pārvietotu uz šo vietu. Zaļie krāsainie lauciņi norāda uz vietu, kur vari "
+"uz kāda no saviem kauliņiem, bet pēc tam uz blakus esoša brīva laukuma, lai "
+"to pārvietotu uz šo vietu. Zaļie krāsainie lauciņi norāda uz vietu, kur vari "
 "kauliņu pārvietot."
 
 #: activities/nine_men_morris/NineMenMorris.qml:360
@@ -20582,7 +20626,7 @@ msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
 "win the game."
 msgstr ""
-"Ja tev izdodas radīt situāciju, kad datoram trūkst gājienu vai paliek mazāk "
+"Ja tev izdodas radīt situāciju, kurā datoram trūkst gājienu vai paliek mazāk "
 "par trim kauliņiem, tad tu uzvari."
 
 #. Activity title
@@ -20640,8 +20684,8 @@ msgid ""
 "Identify the notes, play them on the piano keyboard, and achieve a score of "
 "100% to complete the level."
 msgstr ""
-"Atpazīsti notis, spēlē tās ar klavierēm un iegūsti 100% punktu, lai pabeigtu "
-"šo līmeni."
+"Atpazīsti notis, spēlē tās ar klavierēm un, lai pabeigtu šo līmeni, iegūsti "
+"100% punktu."
 
 #: activities/note_names/NoteNames.qml:201
 #, qt-format
@@ -21048,12 +21092,12 @@ msgstr "Velc un nomet dilstošā secībā."
 #: activities/ordering_numbers/ordering.js:68
 msgctxt "ordering|"
 msgid "Drag and drop the letters in alphabetical order."
-msgstr "Velc un nomet alfabētiskā secībā."
+msgstr "Velc un nomet burtus alfabētiskā secībā."
 
 #: activities/ordering_numbers/ordering.js:69
 msgctxt "ordering|"
 msgid "Drag and drop the letters in reverse alphabetical order."
-msgstr "Velc un nomet apgrieztā alfabētiskā secībā."
+msgstr "Velc un nomet burtus apgrieztā alfabētiskā secībā."
 
 #: activities/ordering_numbers/ordering.js:70
 msgctxt "ordering|"
@@ -22081,8 +22125,8 @@ msgstr ""
 msgctxt "piano_composition|"
 msgid "Each black key has two names: flat and sharp. Flat notes have ♭ sign."
 msgstr ""
-"Katram tumšajam taustiņam ir divi nosaukumu: bemola un diēza. Bemola notīm "
-"ir ♭ zīme."
+"Katram tumšajam taustiņam ir divi nosaukumu: bemola un diēza. Notīm ar "
+"bemolu ir ♭ zīmīte."
 
 #: activities/piano_composition/piano_composition.js:36
 msgctxt "piano_composition|"
@@ -22101,8 +22145,8 @@ msgid ""
 "to enter it to the staff."
 msgstr ""
 "Pauzes ir kā notis, bet to laikā ir klusums. Klikšķini uz pauzes simbola, "
-"lai norādītu pauzes ilgumu un pēc tam klikšķini uz pievienošanas pogas, lai "
-"to ierakstītu."
+"lai norādītu pauzes ilgumu, bet pēc tam klikšķini uz pievienošanas pogas, "
+"lai to ierakstītu."
 
 #: activities/piano_composition/piano_composition.js:42
 msgctxt "piano_composition|"
@@ -22414,7 +22458,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Understand how the piano keyboard can play music as written on the musical "
 "staff."
-msgstr "Izproti, kā ar klavierēm spēlē mūziku, kas uzrakstīta nošu lapā."
+msgstr "Izproti, kā ar klavierēm spēlē nošu lapā rakstītu mūziku."
 
 #. Help prerequisite
 #: activities/play_piano/ActivityInfo.qml:26
@@ -22429,8 +22473,8 @@ msgid ""
 "Some notes are played on the staff. Click on the keyboard keys matching the "
 "notes on the staff."
 msgstr ""
-"Skan dažas notis no nošu līnijas. Spied uz klaviatūras taustiņus, kas "
-"atbilst šīm notīm."
+"Skan notis uz nošu līnijas. Spied uz klaviatūras taustiņus, kas atbilst šīm "
+"notīm."
 
 #: activities/play_piano/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -22503,8 +22547,8 @@ msgid ""
 "If not, you must try again."
 msgstr ""
 "Uzmanīgi noklausies atskaņoto ritmu. Pēc tam spied uz bungām un mēģini šo "
-"ritmu atkārtot. Ja nospiedīsi pareizu skaitu, atskanēs cits ritms. Ja "
-"neizdodas, mēģini atkal."
+"ritmu atkārtot. Ja nospiedīsi pareizi, atskanēs jauns ritms. Ja neizdodas — "
+"mēģini atkal."
 
 #: activities/play_rhythm/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -22512,8 +22556,8 @@ msgid ""
 "Odd levels display a vertical line on the staff following the rhythm: click "
 "on the drum when the line is in the middle of the notes."
 msgstr ""
-"Nepāra līmeņos nošu rakstā redzama vertikāla, kas seko ritmam. Klikšķini uz "
-"bungām, kad līnija ir pa vidu notij."
+"Nepāra līmeņos nošu rakstā redzama vertikāla līnija, kas seko ritmam. "
+"Klikšķini uz bungām, kad līnija ir pa vidu notij."
 
 #: activities/play_rhythm/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -22523,8 +22567,8 @@ msgid ""
 "metronome to hear the quarter notes as reference."
 msgstr ""
 "Pāra līmeņi ir grūtāki, jo tajos nav vertikālās līnijas. Tev ir jālasa nošu "
-"garumi jāspēlē atbilstošs ritms. Tāpat arī vari klikšķināt uz metronoma, lai "
-"palīdzībai dzirdētu ceturtdaļnotis."
+"garumi un jāsit atbilstošs ritms. Tāpat arī vari klikšķināt uz metronoma, "
+"lai palīdzībai dzirdētu ceturtdaļnotis."
 
 #: activities/play_rhythm/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -23090,8 +23134,9 @@ msgid ""
 "<font color=\"#373737\">Check if the word<br/></font><b><font color=\"#315AAA"
 "\">%1</font></b><br/><font color=\"#373737\">is displayed</font>"
 msgstr ""
-"<font color=\"#373737\">Pārbaudi, vai vārds<br/></font><b><font color="
-"\"#315AAA\">%1</font></b><br/><font color=\"#373737\">ir parādīts</font>"
+"<font color=\"#373737\">Apskaties, vai sarakstā parādīsies vārds:<br/></"
+"font><b><font color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\"></"
+"font>"
 
 #: activities/readingh/Readingh.qml:366
 msgctxt "Readingh|"
@@ -23505,7 +23550,7 @@ msgid ""
 " The 4 and the 9 units are built using differences:\n"
 "IV (5 – 1) and IX (10 – 1)."
 msgstr ""
-"Visus mazos ciparus, izņemot 4 un 9 veido I un V summas:\n"
+"Visus ciparus, izņemot 4 un 9 veido I un V summas:\n"
 "I, II, III, V, VI, VII, VIII.\n"
 " Tikmēr 4 un 9 veido ar atņemšanu:\n"
 "IV (5−1) un IX (10−1)."
@@ -23916,8 +23961,7 @@ msgid ""
 "perception of how \"heavy\" an object is. \n"
 " Drop weights on the left side to balance the scales."
 msgstr ""
-"Kilograms ir mērvienība īpašībai, kas norāda uz uztveri, cik „smags“ ir "
-"objekts. \n"
+"Kilograms ir mērvienība, kas apzīmē objekta svaru. \n"
 " Nomet atsvarus svaru kreisajā pusē, lai tie būtu līdzsvarā."
 
 #: activities/scalesboard_weight/resource/4/Data.qml:84
@@ -23949,8 +23993,8 @@ msgid ""
 "\"heavy\" an object is. \n"
 " Drop weights on the left side to balance the scales."
 msgstr ""
-"Simbols „kg“ skaitļa beigās nozīmē kilogramus. Kilograms ir mērvienība "
-"īpašībai, kas norāda uz uztveri, cik „smags“ ir objekts. \n"
+"Simbols „kg“ skaitļa beigās nozīmē kilogramus. Kilograms ir mērvienība, kas "
+"apzīmē objekta svaru. \n"
 " Nomet atsvarus svaru kreisajā pusē, lai tie būtu līdzsvarā. "
 
 #: activities/scalesboard_weight/resource/6/Data.qml:44
@@ -24065,8 +24109,8 @@ msgid ""
 "mass, a property which corresponds to the common perception of how \"heavy\" "
 "an object is. This unit is used in the USA."
 msgstr ""
-"Simbols „lb“ skaitļa beigās nozīmē mārciņu. Mārciņa ir mērvienība īpašībai, "
-"kas norāda uz uztveri, cik „smags“ ir objekts, Šo mērvienību izmanto ASV."
+"Simbols „lb“ skaitļa beigās nozīmē mārciņu. Mārciņa apzīmē objekta svaru. Šo "
+"mērvienību izmanto ASV."
 
 #: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:84
 #: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:91
@@ -24319,7 +24363,7 @@ msgid ""
 "and 1 sister, so that they all have the same amount. Her sister already has "
 "some pieces of candy."
 msgstr ""
-"Māra vēlas sadalīt 12 konfektes vienādās daļās starp viņas 4 brāļiem un 1 "
+"Laine vēlas sadalīt 12 konfektes vienādās daļās starp viņas 4 brāļiem un 1 "
 "māsu, lai visiem būtu vienāds skaits. Viņas māsai jau ir dažas konfektes."
 
 #: activities/share/resource/1/Data.qml:206
@@ -24805,29 +24849,26 @@ msgid "Gradient Tools"
 msgstr "Gradienta rīks"
 
 #: activities/sketch/PaletteSelector.qml:148
-#, fuzzy
-#| msgctxt "ColorsPanel|"
-#| msgid "Palettes"
 msgctxt "PaletteSelector|"
 msgid "Palettes"
 msgstr "Paletes"
 
-#: activities/sketch/Sketch.qml:677
+#: activities/sketch/Sketch.qml:684
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Tu vēl nesaglabāji zīmējumu. Vai vēlies aizvērt šo aktivitāti?"
 
-#: activities/sketch/Sketch.qml:678
+#: activities/sketch/Sketch.qml:685
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "Vai vēlies dzēst šo zīmējumu?"
 
-#: activities/sketch/Sketch.qml:679
+#: activities/sketch/Sketch.qml:686
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Jā"
 
-#: activities/sketch/Sketch.qml:680
+#: activities/sketch/Sketch.qml:687
 msgctxt "Sketch|"
 msgid "No"
 msgstr "Nē"
@@ -26396,14 +26437,14 @@ msgstr ""
 #: activities/submarine/Submarine.qml:139
 msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
-msgstr "Ātrum palielināšana vai samazināšana ar motoru."
+msgstr "Ātrumu palielini vai samazini ar motoru."
 
 #: activities/submarine/Submarine.qml:142
 msgctxt "Submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
 "velocity."
-msgstr "Spied + pogu, lai palielinātu ātrumu, bet − pogu, lai to samazinātu."
+msgstr "=Spied + pogu, lai palielinātu ātrumu, bet − pogu, lai to samazinātu."
 
 #: activities/submarine/Submarine.qml:149
 msgctxt "Submarine|"
@@ -26449,7 +26490,7 @@ msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
 "submarine."
 msgstr ""
-"Vadības paneļa labajā pusē esošā vienība pārvalda zemūdenes niršanas plaknes"
+"Vadības paneļa labajā pusē esošā vienība pārvalda zemūdenes niršanas plaknes."
 
 #: activities/submarine/Submarine.qml:171
 msgctxt "Submarine|"
@@ -26645,7 +26686,7 @@ msgid ""
 "Check the activity 'Baby Puzzle' for a simpler introduction to tangram."
 msgstr ""
 "Pārvieto gabaliņu, to velkot. Uz vienumiem, kas to atbalsta, parādās "
-"simetriska poga. Velc pagriešanas pogu vai vel ap atlasīto gabalu, lai to "
+"simetrijas poga. Velc pagriešanas pogu vai velc ap atlasīto gabalu, lai to "
 "pagrieztu. Aplūkot aktivitāti „Vienkārša puzle“, lai iepazītos ar trangrama "
 "pamata pamācību."
 
@@ -26804,10 +26845,10 @@ msgid ""
 "corresponding lines. To correct the errors, click on the wrong numbers to "
 "remove them and repeat the previous steps."
 msgstr ""
-"Pēc visu rindu pabeigšanas spied „Labi“ pogu, lai pārbaudītu atbildes. Ja "
+"Pēc visu rindu pabeigšanas pārbaudi atbildi, spiežot uz „Labi“ pogas. Ja "
 "kāda no atbildēm nav pareiza, attiecīgajā rindiņā parādīsies krusta ikona. "
-"Lai izlabotu kļūdas, spied uz nepareizajiem skaitļiem, lai tos noņemtu, un "
-"atkārto iepriekšējos soļus."
+"Lai izlabotu kļūdas, spied uz nepareizajiem skaitļiem, kas tos noņemts, bet "
+"tad atkārto iepriekšējos soļus."
 
 #. Help manual
 #: activities/tens_complement_find/ActivityInfo.qml:23
@@ -27160,31 +27201,6 @@ msgstr "Atņemšanas tabulas."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In a vertical subtraction, numbers are written one below the other. They "
-#| "need to be lined-up properly, starting from the column on the right-hand "
-#| "side. The top number is called the minuend: it is the amount that we are "
-#| "starting with, that another number is being subtracted from to get the "
-#| "difference. The number below is called the subtrahend: it is the amount "
-#| "to substract from the minuend to get the difference. The result is "
-#| "written on the bottom line. To solve the subtraction, start by "
-#| "subtracting the bottom number of the first column from the top number of "
-#| "the first column (on the right-hand side), and write the result on the "
-#| "bottom line of the same column. If the top number is smaller than the "
-#| "bottom number, you can borrow from the minuend on the next column: for "
-#| "example, if you add 10 units to the top number, you need to remove one "
-#| "unit from the top number of the next column. This is called the borrowing "
-#| "by regrouping method. To do that in this activity, click on the empty "
-#| "rectangle on the left of the top number, select 1, and on the next column "
-#| "click on the empty rectangle on the right of the top number and select "
-#| "-1. Then write the result of the column on the bottom line, and do the "
-#| "same on the next columns until the operation is finished. Once you have "
-#| "found the result, click on the OK button to validate your answer. In some "
-#| "levels, you will be need to write the given operation before solving it; "
-#| "in this case, click on the Ready button when the operation is written "
-#| "correctly and then solve it."
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -27215,7 +27231,7 @@ msgstr ""
 "skaitli, lai iegūtu starpību. Apakšā esošo skaitli sauc par mazinātāju — tas "
 "ir daudzums, par kādu samazinās mazināmais, aprēķinot starpību. Rezultātu "
 "raksta apakšējā rindā zem līnijas. Atņemšanu sāc, atņemot apakšējo ciparu no "
-"augšējā pirmajā stabiņā (stabiņš labajā pusē), Rezultātā iegūto ciparu "
+"augšējā pirmajā stabiņā (stabiņš labajā pusē). Rezultātā iegūto ciparu "
 "raksti tajā pašā stabiņā zem līnijas. Ja augšējais cipars ir mazāks par "
 "apakšējo, vari aizņemties no mazināmā nākamajā kolonnā. Piemēram, ja "
 "pieskaiti 10 vienību augšējam ciparam, tev ir jānoņem viena vienība no "
@@ -27321,17 +27337,11 @@ msgid "Solve: %1"
 msgstr "Atrisini: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:99
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own addition and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own addition and solve it."
 msgstr "Uzraksti savu saskaitīšanas darbību un to atrisini."
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:100
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own subtraction and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own subtraction and solve it."
 msgstr "Pieraksti savu atņemšanas darbību un to atrisini."
@@ -27344,7 +27354,7 @@ msgstr "Gatavs"
 #: activities/vertical_subtraction/VerticalSubtraction.qml:464
 msgctxt "VerticalSubtraction|"
 msgid "The result should not be a negative number."
-msgstr ""
+msgstr "Rezultāts nevar būt negatīvs skaitlis."
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
@@ -27362,31 +27372,6 @@ msgstr "Mācies atņemt rakstos, izmantojot aizņemšanās un kompensācijas met
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In a vertical subtraction, numbers are written one below the other. They "
-#| "need to be lined-up properly, starting from the column on the right-hand "
-#| "side. The top number is called the minuend: it is the amount that we are "
-#| "starting with, that another number is being subtracted from to get the "
-#| "difference. The number below is called the subtrahend: it is the amount "
-#| "to substract from the minuend to get the difference. The result is "
-#| "written on the bottom line. To solve the subtraction, start by "
-#| "subtracting the bottom number of the first column from the top number of "
-#| "the first column (on the right-hand side), and write the result on the "
-#| "bottom line of the same column. If the top number is smaller than the "
-#| "bottom number, you can borrow from the subtrahend on the next column: for "
-#| "example, if you add 10 units to the top number, you need to add one unit "
-#| "to the bottom number of the next column. This is called the borrowing by "
-#| "compensation method. To do that in this activity, click on the empty "
-#| "rectangle on the left of the top number, select 1, and on the next column "
-#| "click on the empty rectangle on the right of the bottom number and select "
-#| "+1. Then write the result of the column on the bottom line, and do the "
-#| "same on the next columns until the operation is finished. Once you have "
-#| "found the result, click on the OK button to validate your answer. In some "
-#| "levels, you will be need to write the given operation before solving it; "
-#| "in this case, click on the Ready button when the operation is written "
-#| "correctly and then solve it."
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -27418,7 +27403,7 @@ msgstr ""
 "skaitli sauc par mazinātāju — tas ir daudzums, par kādu samazinās "
 "mazināmais, aprēķinot starpību. Rezultātu raksta apakšējā rindā zem līnijas. "
 "Atņemšanu sāc, atņemot apakšējo ciparu no augšējā pirmajā stabiņā (stabiņš "
-"labajā pusē), Rezultātā iegūto ciparu raksti tajā pašā stabiņā zem līnijas. "
+"labajā pusē). Rezultātā iegūto ciparu raksti tajā pašā stabiņā zem līnijas. "
 "Ja augšējais cipars ir mazāks par apakšējo, vari aizņemties no mazināmā "
 "nākamajā kolonnā. Piemēram, ja pieskaiti 10 vienību augšējam ciparam, tev ir "
 "jānoņem viena vienība no nākamajā stabiņā esošā cipara. To sauc par "
@@ -27597,21 +27582,14 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Ieraksti krītošo vārdu pirms tas sasniedz zemi."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Kannada and Tamil"
-msgstr "Pievienots latviešu valodas tulkojums"
+msgstr "Pievienots kannadi un tamilu valodas tulkojums"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgctxt "ChangeLog|"
 msgid "New command-line option to set the locale (--locale locale)"
-msgstr ""
-"Jauna komandrindas opcija, lai pārslēgtu atveidotāju (--renderer atveidotājs)"
+msgstr "Jauna komandrindas opcija lokāles iestatīšanai (--locale lokāle)"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
@@ -27619,6 +27597,8 @@ msgid ""
 "New command-line option to show/hide the Home button (--hide-home-button/--"
 "show-home-button)"
 msgstr ""
+"Jauna komandrindas opcija māju pogas parādīšanai/paslēpšanai (--hide-home-"
+"button/--show-home-button)"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:39 core/ChangeLog.qml:45
 #: core/ChangeLog.qml:54 core/ChangeLog.qml:60 core/ChangeLog.qml:65
@@ -27654,8 +27634,8 @@ msgid ""
 "Automatic application of new language when changing it in the menu (no need "
 "to restart GCompris)"
 msgstr ""
-"Automātiska jaunas valodas pielietošana, mainot izvēlni (nav nepieciešamas "
-"pārstartēt „GCompris“)"
+"Automātiska jaunas valodas pielietošana, to nomainot izvēlnē (nav "
+"nepieciešams pārstartēt „GCompris“)"
 
 #: core/ChangeLog.qml:49
 msgctxt "ChangeLog|"
@@ -28080,8 +28060,8 @@ msgid ""
 "please visit <a href='https://gcompris.net/donate-en.html'>https://gcompris."
 "net/donate-en.html</a>."
 msgstr ""
-"Varat sniegt finansiālu atbalstu <b>„GCompris“</b> veidošanai, apmeklējiet "
-"<a href='https://gcompris.net/donate-en.html'>https://gcompris.net/donate-en."
+"Varat sniegt finansiālu atbalstu <b>„GCompris“</b> veidošanai, apmeklējot <a "
+"href='https://gcompris.net/donate-en.html'>https://gcompris.net/donate-en."
 "html</a>."
 
 #: core/DialogAbout.qml:72
@@ -28369,12 +28349,9 @@ msgid "No data found for %1."
 msgstr "Nav atrasti %1 dati."
 
 #: core/GCCreationHandler.qml:185
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr "%1 ir izdzēsts!"
+msgstr "Datne ir izdzēsta!"
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -28383,12 +28360,9 @@ msgid "OK"
 msgstr "Labi"
 
 #: core/GCCreationHandler.qml:193
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
-msgstr "Neizdodas dzēst %1!"
+msgstr "Datni izdzēst neizdodas!"
 
 #: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
@@ -28443,7 +28417,7 @@ msgstr "Dzēst"
 #: core/GCCreationHandler.qml:429
 msgctxt "GCCreationHandler|"
 msgid "Open folder"
-msgstr ""
+msgstr "Atvērt mapi"
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
@@ -28571,22 +28545,19 @@ msgstr ""
 "„--launch“ parametrs."
 
 #: core/main.cpp:146
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid "Specify the activity when starting GCompris."
 msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
-msgstr "Norādīt aktivitāti, ar kuru sākt „GCompris“."
+msgstr "Norādiet lokāli, ar kuru sākt „GCompris“."
 
 #: core/main.cpp:150
 msgctxt "QObject|"
 msgid "Hide the Home button in the bar."
-msgstr ""
+msgstr "Paslēpt māju pogu izvēļņu joslā."
 
 #: core/main.cpp:154
 msgctxt "QObject|"
 msgid "Show the Home button in the bar (default)."
-msgstr ""
+msgstr "Paslēpt māju pogu izvēļņu joslā (noklusējums)."
 
 #: core/main.qml:238
 msgctxt "main|"
@@ -28674,55 +28645,44 @@ msgstr "Pašreizējā valoda ir %1 (%2)."
 #: core/main.qml:398
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
-msgstr "„GCompris“ ir atjaunināts! Te ir jaunākās izmaiņas:<br/>"
+msgstr "„GCompris“ ir atjaunināts! Šīs ir jaunākās izmaiņas:<br/>"
 
 #: core/main.qml:509
-#, fuzzy, qt-format
-#| msgctxt "Sketch|"
-#| msgid "Do you want to erase this image?"
+#, qt-format
 msgctxt "main|"
 msgid "Do you want to connect to server %1?"
-msgstr "Vai vēlies dzēst šo zīmējumu?"
+msgstr "Vai vēlaties savienoties ar serveri „%1“?"
 
 #: core/main.qml:530
 #, qt-format
 msgctxt "main|"
 msgid "Password rejected by server %1"
-msgstr ""
+msgstr "Serveris „%1“ noraidīja paroli"
 
 #: core/main.qml:531 core/main.qml:550 core/main.qml:625
-#, fuzzy
-#| msgctxt "Balancebox|"
-#| msgid "OK"
 msgctxt "main|"
 msgid "OK"
 msgstr "Labi"
 
 #: core/main.qml:546
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "main|"
 msgid "Select your username"
-msgstr "Atlasi režīmu"
+msgstr "Atlasiet savu lietotājvārdu"
 
 #: core/main.qml:556
 msgctxt "main|"
 msgid "Please select your username in the list or cancel."
-msgstr ""
+msgstr "Atlasiet lietotājvārda no saraksta vai atceliet."
 
 #: core/main.qml:623
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "main|"
 msgid "Enter your password"
-msgstr "„Enter“: apstiprināt atbildi"
+msgstr "Ierakstiet savu paroli"
 
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"
 msgid "I am Ready"
-msgstr "Esmu gatavs"
+msgstr "Sākam"
 
 #: core/Tutorial.qml:139
 msgctxt "Tutorial|"
@@ -28744,26 +28704,35 @@ msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Sākt"
 
-#, fuzzy
 #~| msgctxt "Data|"
 #~| msgid "Find the next number."
 #~ msgctxt "Data|"
 #~ msgid "Find the correct answer."
-#~ msgstr "Atrodi nākamo skaitli."
+#~ msgstr "Atrodi pareizo atbildi."
 
-#, fuzzy
 #~| msgctxt "GraduatedLineRead|"
 #~| msgid "Find the requested number."
 #~ msgctxt "Data|"
 #~ msgid "What is the first number?"
-#~ msgstr "Atrodi prasību skaitli."
+#~ msgstr "Kāds ir pirmais skaitlis?"
 
-#, fuzzy
+#~ msgctxt "Data|"
+#~ msgid "What is a color?"
+#~ msgstr "Kas šī ir par krāsu?"
+
 #~| msgctxt "ActivityInfo|"
 #~| msgid "Practice the addition of numbers."
 #~ msgctxt "Data|"
 #~ msgid "What are the first two numbers?"
-#~ msgstr "Trenējies saskaitīt skaitļus."
+#~ msgstr "Kādi ir pirmie divi skaitļi?"
+
+#~ msgctxt "Data|"
+#~ msgid "What are animals?"
+#~ msgstr "Kas šie ir par dzīvniekiem?"
+
+#~ msgctxt "Data|"
+#~ msgid "Answers always in order, select the first one"
+#~ msgstr "Atbildes vienmēr ir secībā, atlasi pirmo"
 
 #~ msgctxt "Data|"
 #~ msgid "Find the previous number."
@@ -28776,6 +28745,65 @@ msgstr "Sākt"
 #~ msgctxt "Data|"
 #~ msgid "Find the missing numbers."
 #~ msgstr "Atrodi trūkstošos skaitļus."
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid ""
+#~| "Select tools and colors from the foldable panels and draw images.<br><br>"
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Select wheel, gear, pen's position and color from the foldable panels and "
+#~ "start the gear.<br><br>"
+#~ msgstr "Atlasi rīkus un krāsas no sakļaujamiem paneļiem un zīmē.<br><br>"
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Ctrl + S: save the image"
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Ctrl + D: save the drawing"
+#~ msgstr "„Ctrl“ + S: saglabā zīmējumu"
+
+#, fuzzy
+#~| msgctxt "FilesPanel|"
+#~| msgid "Save your image"
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Save vector image (SVG)"
+#~ msgstr "Saglabā savu zīmējumu"
+
+#, fuzzy
+#~| msgid ""
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ msgstr ""
+#~ "MIME-Version: 1.0\n"
+#~ "Content-Type: text/plain; charset=UTF-8\n"
+#~ "Content-Transfer-Encoding: 8bit\n"
+#~ "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+#~ "2);\n"
+#~ "X-Language: lv\n"
+#~ "X-Qt-Contexts: true\n"
+
+#, fuzzy
+#~| msgctxt "category_colors|"
+#~| msgid "Colors"
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Color"
+#~ msgstr "Krāsas"
+
+#, fuzzy
+#~| msgctxt "board9_0|"
+#~| msgid "Districto Federal"
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Distance to center"
+#~ msgstr "Federālais distrikts"
+
+#~ msgctxt "ColorsPanel|"
+#~ msgid "Palettes"
+#~ msgstr "Paletes"
+
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr "Kāda ir %1 izteiksme binārā formā?"
 
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Grammatical analysis"
@@ -28796,13 +28824,6 @@ msgstr "Sākt"
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Leave the box blank if no class matches."
 #~ msgstr "Ja neviena neatbilst, atstāj lauciņu tukšu."
-
-#, fuzzy
-#~| msgctxt "BinaryBulb|"
-#~| msgid "What is the binary representation of %1?"
-#~ msgctxt "Frieze|"
-#~ msgid "What is the binary representation of %1?"
-#~ msgstr "Pārveido skaitli %1 binārā formā!"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "<b>Keyboard controls:"
@@ -29909,19 +29930,6 @@ msgstr "Sākt"
 #~ msgctxt "board4_1|"
 #~ msgid "Aviation"
 #~ msgstr "Saskaitīšana"
-
-#, fuzzy
-#~| msgid ""
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ msgstr ""
-#~ "MIME-Version: 1.0\n"
-#~ "Content-Type: text/plain; charset=UTF-8\n"
-#~ "Content-Transfer-Encoding: 8bit\n"
-#~ "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
-#~ "2);\n"
-#~ "X-Language: lv\n"
-#~ "X-Qt-Contexts: true\n"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Train your audio memory and remove all the violinists Tux."

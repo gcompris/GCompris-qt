@@ -6643,17 +6643,17 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ctrl + O: ഒരു ചിത്രം തുറക്കുക"
 
-#: activities/drawing_wheels/DrawingWheels.qml:378
+#: activities/drawing_wheels/DrawingWheels.qml:399
 msgctxt "DrawingWheels|"
 msgid "File menu"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:390
+#: activities/drawing_wheels/DrawingWheels.qml:411
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:414
+#: activities/drawing_wheels/DrawingWheels.qml:435
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Piano composition"
@@ -6661,7 +6661,7 @@ msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr "പിയാനോ കമ്പോസിഷൻ"
 
-#: activities/drawing_wheels/DrawingWheels.qml:426
+#: activities/drawing_wheels/DrawingWheels.qml:447
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font selector"
@@ -6669,7 +6669,7 @@ msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr "ഫോണ്ട് തിരഞ്ഞെടുക്കുക"
 
-#: activities/drawing_wheels/DrawingWheels.qml:453
+#: activities/drawing_wheels/DrawingWheels.qml:474
 #, fuzzy
 #| msgctxt "OptionsRow|"
 #| msgid "Undo"
@@ -6677,7 +6677,7 @@ msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "അൺഡു"
 
-#: activities/drawing_wheels/DrawingWheels.qml:465
+#: activities/drawing_wheels/DrawingWheels.qml:486
 #, fuzzy
 #| msgctxt "Checkers|"
 #| msgid "Redo"
@@ -6685,27 +6685,27 @@ msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "Redo"
 
-#: activities/drawing_wheels/DrawingWheels.qml:499
+#: activities/drawing_wheels/DrawingWheels.qml:520
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:499
+#: activities/drawing_wheels/DrawingWheels.qml:520
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:532
+#: activities/drawing_wheels/DrawingWheels.qml:553
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:532
+#: activities/drawing_wheels/DrawingWheels.qml:553
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:691
+#: activities/drawing_wheels/DrawingWheels.qml:712
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Save your image"
@@ -6713,7 +6713,7 @@ msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "ചിത്രം സേവ് ചെയ്യുക"
 
-#: activities/drawing_wheels/DrawingWheels.qml:706
+#: activities/drawing_wheels/DrawingWheels.qml:727
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Open an image"
@@ -6721,7 +6721,7 @@ msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "ചിത്രം തുറക്കുക"
 
-#: activities/drawing_wheels/DrawingWheels.qml:735
+#: activities/drawing_wheels/DrawingWheels.qml:756
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Create a new image"
@@ -6729,7 +6729,7 @@ msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "പുതിയ ചിത്രം വരക്കുക"
 
-#: activities/drawing_wheels/DrawingWheels.qml:754
+#: activities/drawing_wheels/DrawingWheels.qml:775
 #, fuzzy
 #| msgctxt "BackgroundColorSelector|"
 #| msgid "Background color"
@@ -6737,17 +6737,17 @@ msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "പശ്ചാത്തല നിറം"
 
-#: activities/drawing_wheels/DrawingWheels.qml:835
+#: activities/drawing_wheels/DrawingWheels.qml:856
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:902
+#: activities/drawing_wheels/DrawingWheels.qml:923
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:965
+#: activities/drawing_wheels/DrawingWheels.qml:986
 #, fuzzy, qt-format
 #| msgctxt "SignalGenerator|"
 #| msgid "%1 s"
@@ -6755,7 +6755,7 @@ msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 s"
 
-#: activities/drawing_wheels/DrawingWheels.qml:983
+#: activities/drawing_wheels/DrawingWheels.qml:1004
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Speed"
@@ -6763,17 +6763,17 @@ msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "വേഗത"
 
-#: activities/drawing_wheels/DrawingWheels.qml:999
+#: activities/drawing_wheels/DrawingWheels.qml:1020
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1019
+#: activities/drawing_wheels/DrawingWheels.qml:1040
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1062
+#: activities/drawing_wheels/DrawingWheels.qml:1083
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font size"
@@ -6781,7 +6781,7 @@ msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "ഫോണ്ട് വലിപ്പം"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1099
+#: activities/drawing_wheels/DrawingWheels.qml:1120
 #, fuzzy
 #| msgctxt "ToolsPanel|"
 #| msgid "Opacity"
@@ -6789,12 +6789,12 @@ msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "അതാര്യത"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1142
+#: activities/drawing_wheels/DrawingWheels.qml:1163
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1180
+#: activities/drawing_wheels/DrawingWheels.qml:1201
 #, fuzzy
 #| msgctxt "IntroMessage|"
 #| msgid "Start"
@@ -6802,7 +6802,7 @@ msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "തുടങ്ങാം"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1360
+#: activities/drawing_wheels/DrawingWheels.qml:1381
 #, fuzzy
 #| msgctxt "Sketch|"
 #| msgid "You did not save this image. Do you want to close this activity?"
@@ -6810,7 +6810,7 @@ msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "നിങ്ങളുടെ ചിത്രം സേവ് ചെയ്തിട്ടില്ല. ഈ പ്രവർത്തനം നിർത്തണമോ?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1361
+#: activities/drawing_wheels/DrawingWheels.qml:1382
 #, fuzzy
 #| msgctxt "Sketch|"
 #| msgid "Do you want to erase this image?"
@@ -6818,7 +6818,7 @@ msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "ഈ ചിത്രം മായിക്കണമോ?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1362
+#: activities/drawing_wheels/DrawingWheels.qml:1383
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -6826,7 +6826,7 @@ msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "വേണം"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1363
+#: activities/drawing_wheels/DrawingWheels.qml:1384
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -24611,22 +24611,22 @@ msgctxt "PaletteSelector|"
 msgid "Palettes"
 msgstr "പാലറ്റുകൾ"
 
-#: activities/sketch/Sketch.qml:677
+#: activities/sketch/Sketch.qml:684
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "നിങ്ങളുടെ ചിത്രം സേവ് ചെയ്തിട്ടില്ല. ഈ പ്രവർത്തനം നിർത്തണമോ?"
 
-#: activities/sketch/Sketch.qml:678
+#: activities/sketch/Sketch.qml:685
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "ഈ ചിത്രം മായിക്കണമോ?"
 
-#: activities/sketch/Sketch.qml:679
+#: activities/sketch/Sketch.qml:686
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "വേണം"
 
-#: activities/sketch/Sketch.qml:680
+#: activities/sketch/Sketch.qml:687
 msgctxt "Sketch|"
 msgid "No"
 msgstr "വേണ്ട"

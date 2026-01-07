@@ -1380,97 +1380,97 @@ msgctxt "CreateDbDialog|"
 msgid "You are about to create a new GCompris database."
 msgstr "Nameravate ustvariti novo zbirko podatkov GCompris."
 
-#: server/dialogs/CreateDbDialog.qml:39
+#: server/dialogs/CreateDbDialog.qml:38
 msgctxt "CreateDbDialog|"
 msgid "Database file"
 msgstr "Datoteka zbirke podatkov"
 
-#: server/dialogs/CreateDbDialog.qml:41
+#: server/dialogs/CreateDbDialog.qml:40
 msgctxt "CreateDbDialog|"
 msgid "created in:"
 msgstr "ustvarjeno v:"
 
-#: server/dialogs/CreateDbDialog.qml:65
+#: server/dialogs/CreateDbDialog.qml:64
 msgctxt "CreateDbDialog|"
 msgid "New database creation"
 msgstr "Ustvarjanje nove zbirke podatkov"
 
-#: server/dialogs/CreateDbDialog.qml:93
+#: server/dialogs/CreateDbDialog.qml:92
 msgctxt "CreateDbDialog|"
 msgid "Teacher login"
 msgstr "Prijava učitelja"
 
-#: server/dialogs/CreateDbDialog.qml:113
+#: server/dialogs/CreateDbDialog.qml:112
 msgctxt "CreateDbDialog|"
 msgid "Password"
 msgstr "Geslo"
 
-#: server/dialogs/CreateDbDialog.qml:129
+#: server/dialogs/CreateDbDialog.qml:128
 msgctxt "CreateDbDialog|"
 msgid "Encrypted database (enabled by default)"
 msgstr "Šifrirana zbirka podatkov (privzeto omogočeno)"
 
-#: server/dialogs/DatasetEditorDialog.qml:52
+#: server/dialogs/DatasetEditorDialog.qml:54
 msgctxt "DatasetEditorDialog|"
 msgid "Create dataset"
 msgstr "Ustvari nabor podatkov"
 
-#: server/dialogs/DatasetEditorDialog.qml:62
+#: server/dialogs/DatasetEditorDialog.qml:64
 msgctxt "DatasetEditorDialog|"
 msgid "Update dataset"
 msgstr "Posodobi nabor podatkov"
 
-#: server/dialogs/DatasetEditorDialog.qml:76
+#: server/dialogs/DatasetEditorDialog.qml:79
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name is empty"
 msgstr "Ime nabora podatkov je prazno"
 
-#: server/dialogs/DatasetEditorDialog.qml:83
+#: server/dialogs/DatasetEditorDialog.qml:86
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty should be between 1 and 6"
 msgstr "Težavnost mora biti med 1 in 6"
 
-#: server/dialogs/DatasetEditorDialog.qml:236
+#: server/dialogs/DatasetEditorDialog.qml:239
 msgctxt "DatasetEditorDialog|"
 msgid "INVALID DATASET"
 msgstr "NEVELJAVEN NABOR PODATKOV"
 
-#: server/dialogs/DatasetEditorDialog.qml:339
+#: server/dialogs/DatasetEditorDialog.qml:342
 msgctxt "DatasetEditorDialog|"
 msgid "Editor"
 msgstr "Urejevalnik"
 
-#: server/dialogs/DatasetEditorDialog.qml:342
+#: server/dialogs/DatasetEditorDialog.qml:345
 msgctxt "DatasetEditorDialog|"
 msgid "Raw JSON"
 msgstr "Surovi JSON"
 
-#: server/dialogs/DatasetEditorDialog.qml:372
+#: server/dialogs/DatasetEditorDialog.qml:375
 msgctxt "DatasetEditorDialog|"
 msgid "Activity name"
 msgstr "Ime dejavnosti"
 
-#: server/dialogs/DatasetEditorDialog.qml:386
+#: server/dialogs/DatasetEditorDialog.qml:389
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name"
 msgstr "Ime nabora podatkov"
 
-#: server/dialogs/DatasetEditorDialog.qml:400
+#: server/dialogs/DatasetEditorDialog.qml:403
 msgctxt "DatasetEditorDialog|"
 msgid "Goal"
 msgstr "Cilj"
 
-#: server/dialogs/DatasetEditorDialog.qml:414
+#: server/dialogs/DatasetEditorDialog.qml:417
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty"
 msgstr "Težavnost"
 
-#: server/dialogs/DatasetEditorDialog.qml:512
+#: server/dialogs/DatasetEditorDialog.qml:515
 msgctxt "DatasetEditorDialog|"
 msgid "Instructions"
 msgstr "Navodila"
 
-#: server/dialogs/DatasetEditorDialog.qml:518
+#: server/dialogs/DatasetEditorDialog.qml:521
 msgctxt "DatasetEditorDialog|"
 msgid "No specific instructions for this editor."
 msgstr "Za ta urejevalnik ni posebnih navodil."
@@ -1688,92 +1688,92 @@ msgctxt "SelectorPanel|"
 msgid "Activities"
 msgstr "Dejavnosti"
 
-#: server/singletons/Master.qml:32
+#: server/singletons/Master.qml:37
 msgctxt "Master|"
 msgid "User ID"
 msgstr "ID uporabnika"
 
-#: server/singletons/Master.qml:33
+#: server/singletons/Master.qml:38
 msgctxt "Master|"
 msgid "Name"
 msgstr "Ime"
 
-#: server/singletons/Master.qml:34
+#: server/singletons/Master.qml:39
 msgctxt "Master|"
 msgid "Names"
 msgstr "Imena"
 
-#: server/singletons/Master.qml:35
+#: server/singletons/Master.qml:40
 msgctxt "Master|"
 msgid "Password"
 msgstr "Geslo"
 
-#: server/singletons/Master.qml:36
+#: server/singletons/Master.qml:41
 msgctxt "Master|"
 msgid "Users IDs"
 msgstr "ID-ji uporabnikov"
 
-#: server/singletons/Master.qml:37
+#: server/singletons/Master.qml:42
 msgctxt "Master|"
 msgid "Activity Id"
 msgstr "ID dejavnosti"
 
-#: server/singletons/Master.qml:38
+#: server/singletons/Master.qml:43
 msgctxt "Master|"
 msgid "Activity"
 msgstr "Dejavnost"
 
-#: server/singletons/Master.qml:39
+#: server/singletons/Master.qml:44
 msgctxt "Master|"
 msgid "Group"
 msgstr "Skupina"
 
-#: server/singletons/Master.qml:40
+#: server/singletons/Master.qml:45
 msgctxt "Master|"
 msgid "Description"
 msgstr "Opis"
 
-#: server/singletons/Master.qml:41
+#: server/singletons/Master.qml:46
 msgctxt "Master|"
 msgid "Groups"
 msgstr "Skupine"
 
-#: server/singletons/Master.qml:42
+#: server/singletons/Master.qml:47
 msgctxt "Master|"
 msgid "Groups IDs"
 msgstr "ID-ji skupin"
 
-#: server/singletons/Master.qml:43 server/singletons/Master.qml:47
+#: server/singletons/Master.qml:48 server/singletons/Master.qml:52
 msgctxt "Master|"
 msgid "Date"
 msgstr "Datum"
 
-#: server/singletons/Master.qml:44 server/singletons/Master.qml:49
+#: server/singletons/Master.qml:49 server/singletons/Master.qml:54
 msgctxt "Master|"
 msgid "Success"
 msgstr "Uspeh"
 
-#: server/singletons/Master.qml:45
+#: server/singletons/Master.qml:50
 msgctxt "Master|"
 msgid "Duration"
 msgstr "Trajanje"
 
-#: server/singletons/Master.qml:46
+#: server/singletons/Master.qml:51
 msgctxt "Master|"
 msgid "Data"
 msgstr "Podatki"
 
-#: server/singletons/Master.qml:48
+#: server/singletons/Master.qml:53
 msgctxt "Master|"
 msgid "Count"
 msgstr "Število"
 
-#: server/singletons/Master.qml:50
+#: server/singletons/Master.qml:55
 msgctxt "Master|"
 msgid "Failed"
 msgstr "Neuspešno"
 
-#: server/singletons/Master.qml:51
+#: server/singletons/Master.qml:56
 msgctxt "Master|"
 msgid "Success ratio"
 msgstr "Razmerje uspešnosti"
@@ -1886,42 +1886,42 @@ msgctxt "DatasetsView|"
 msgid "Activities"
 msgstr "Dejavnosti"
 
-#: server/views/DatasetsView.qml:69
+#: server/views/DatasetsView.qml:70
 msgctxt "DatasetsView|"
 msgid "Datasets"
 msgstr "Nabori podatkov"
 
-#: server/views/DatasetsView.qml:101
+#: server/views/DatasetsView.qml:102
 msgctxt "DatasetsView|"
 msgid "Datasets management"
 msgstr "Upravljanje naborov podatkov"
 
-#: server/views/DatasetsView.qml:118
+#: server/views/DatasetsView.qml:119
 msgctxt "DatasetsView|"
 msgid "Create dataset"
 msgstr "Ustvari nabor podatkov"
 
-#: server/views/DatasetsView.qml:126
+#: server/views/DatasetsView.qml:127
 msgctxt "DatasetsView|"
 msgid "Update dataset"
 msgstr "Posodobi nabor podatkov"
 
-#: server/views/DatasetsView.qml:134
+#: server/views/DatasetsView.qml:135
 msgctxt "DatasetsView|"
 msgid "Send dataset to clients"
 msgstr "Pošlji nabor podatkov strankam"
 
-#: server/views/DatasetsView.qml:152
+#: server/views/DatasetsView.qml:153
 msgctxt "DatasetsView|"
 msgid "Remove dataset from clients"
 msgstr "Odstrani nabor podatkov od strank"
 
-#: server/views/DatasetsView.qml:176
+#: server/views/DatasetsView.qml:177
 msgctxt "DatasetsView|"
 msgid "Remove all datasets from clients"
 msgstr "Odstrani vse nabore podatkov od strank"
 
-#: server/views/DatasetsView.qml:185
+#: server/views/DatasetsView.qml:186
 msgctxt "DatasetsView|"
 msgid "Delete dataset"
 msgstr "Izbriši nabor podatkov"
@@ -2042,50 +2042,45 @@ msgctxt "DevicesView|"
 msgid "Server already running on port %1"
 msgstr "Strežnik že deluje na vratih %1"
 
-#: server/views/LoginView.qml:44
+#: server/views/LoginView.qml:43
 msgctxt "LoginView|"
 msgid "Incorrect password"
 msgstr "Napačno geslo"
 
-#: server/views/LoginView.qml:48
+#: server/views/LoginView.qml:47
 msgctxt "LoginView|"
 msgid "GCompris-teachers is already running on this computer"
 msgstr "GCompris-teachers že deluje na tem računalniku"
 
-#: server/views/LoginView.qml:49
+#: server/views/LoginView.qml:48
 msgctxt "LoginView|"
 msgid "Only data browsing is permitted"
 msgstr "Dovoljeno je samo brskanje po podatkih"
 
-#: server/views/LoginView.qml:92
+#: server/views/LoginView.qml:89
 msgctxt "LoginView|"
 msgid "Teacher login"
 msgstr "Prijava učitelja"
 
-#: server/views/LoginView.qml:113
+#: server/views/LoginView.qml:110
 msgctxt "LoginView|"
 msgid "Password"
 msgstr "Geslo"
 
-#: server/views/LoginView.qml:131
+#: server/views/LoginView.qml:128
 msgctxt "LoginView|"
 msgid "Login"
 msgstr "Prijava"
 
-#: server/views/LoginView.qml:140
+#: server/views/LoginView.qml:137
 msgctxt "LoginView|"
 msgid "Create teacher database"
 msgstr "Ustvari bazo podatkov učiteljev"
 
-#: server/views/LoginView.qml:161
+#: server/views/LoginView.qml:158
 msgctxt "LoginView|"
 msgid "Database file:"
 msgstr "Datoteka baze podatkov:"
-
-#: server/views/LoginView.qml:174
-msgctxt "LoginView|"
-msgid "GCompris Teachers Tool"
-msgstr "Orodje za učitelje GCompris"
 
 #: server/views/ManagePupilsView.qml:34 server/views/ManagePupilsView.qml:147
 msgctxt "ManagePupilsView|"
@@ -2308,6 +2303,10 @@ msgstr "Prijavljeni učenci"
 msgctxt "SettingsView|"
 msgid "Activities data received"
 msgstr "Prejeti podatki o dejavnostih"
+
+#~ msgctxt "LoginView|"
+#~ msgid "GCompris Teachers Tool"
+#~ msgstr "Orodje za učitelje GCompris"
 
 #~ msgctxt "server/activities/algebra_by/AlgebraEditor.qml:25"
 #~ msgid "Rules to create a valid dataset:"
