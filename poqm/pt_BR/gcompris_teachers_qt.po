@@ -1394,97 +1394,97 @@ msgctxt "CreateDbDialog|"
 msgid "You are about to create a new GCompris database."
 msgstr "Você está prestes a criar um novo banco de dados GCompris."
 
-#: server/dialogs/CreateDbDialog.qml:39
+#: server/dialogs/CreateDbDialog.qml:38
 msgctxt "CreateDbDialog|"
 msgid "Database file"
 msgstr "Arquivo de banco de dados"
 
-#: server/dialogs/CreateDbDialog.qml:41
+#: server/dialogs/CreateDbDialog.qml:40
 msgctxt "CreateDbDialog|"
 msgid "created in:"
 msgstr "criado em:"
 
-#: server/dialogs/CreateDbDialog.qml:65
+#: server/dialogs/CreateDbDialog.qml:64
 msgctxt "CreateDbDialog|"
 msgid "New database creation"
 msgstr "Criação de novo banco de dados"
 
-#: server/dialogs/CreateDbDialog.qml:93
+#: server/dialogs/CreateDbDialog.qml:92
 msgctxt "CreateDbDialog|"
 msgid "Teacher login"
 msgstr "Login do professor"
 
-#: server/dialogs/CreateDbDialog.qml:113
+#: server/dialogs/CreateDbDialog.qml:112
 msgctxt "CreateDbDialog|"
 msgid "Password"
 msgstr "Senha"
 
-#: server/dialogs/CreateDbDialog.qml:129
+#: server/dialogs/CreateDbDialog.qml:128
 msgctxt "CreateDbDialog|"
 msgid "Encrypted database (enabled by default)"
 msgstr "Banco de dados criptografado (ativado por padrão)"
 
-#: server/dialogs/DatasetEditorDialog.qml:52
+#: server/dialogs/DatasetEditorDialog.qml:54
 msgctxt "DatasetEditorDialog|"
 msgid "Create dataset"
 msgstr "Criar conjunto de dados"
 
-#: server/dialogs/DatasetEditorDialog.qml:62
+#: server/dialogs/DatasetEditorDialog.qml:64
 msgctxt "DatasetEditorDialog|"
 msgid "Update dataset"
 msgstr "Atualizar conjunto de dados"
 
-#: server/dialogs/DatasetEditorDialog.qml:76
+#: server/dialogs/DatasetEditorDialog.qml:79
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name is empty"
 msgstr "O nome do conjunto de dados está vazio"
 
-#: server/dialogs/DatasetEditorDialog.qml:83
+#: server/dialogs/DatasetEditorDialog.qml:86
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty should be between 1 and 6"
 msgstr "A dificuldade deve estar entre 1 e 6"
 
-#: server/dialogs/DatasetEditorDialog.qml:236
+#: server/dialogs/DatasetEditorDialog.qml:239
 msgctxt "DatasetEditorDialog|"
 msgid "INVALID DATASET"
 msgstr "CONJUNTO DE DADOS INVÁLIDO"
 
-#: server/dialogs/DatasetEditorDialog.qml:339
+#: server/dialogs/DatasetEditorDialog.qml:342
 msgctxt "DatasetEditorDialog|"
 msgid "Editor"
 msgstr "Editor"
 
-#: server/dialogs/DatasetEditorDialog.qml:342
+#: server/dialogs/DatasetEditorDialog.qml:345
 msgctxt "DatasetEditorDialog|"
 msgid "Raw JSON"
 msgstr "Raw JSON"
 
-#: server/dialogs/DatasetEditorDialog.qml:372
+#: server/dialogs/DatasetEditorDialog.qml:375
 msgctxt "DatasetEditorDialog|"
 msgid "Activity name"
 msgstr "Nome da atividade"
 
-#: server/dialogs/DatasetEditorDialog.qml:386
+#: server/dialogs/DatasetEditorDialog.qml:389
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name"
 msgstr "Nome do conjunto de dados"
 
-#: server/dialogs/DatasetEditorDialog.qml:400
+#: server/dialogs/DatasetEditorDialog.qml:403
 msgctxt "DatasetEditorDialog|"
 msgid "Goal"
 msgstr "Objetivo"
 
-#: server/dialogs/DatasetEditorDialog.qml:414
+#: server/dialogs/DatasetEditorDialog.qml:417
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty"
 msgstr "Dificuldade"
 
-#: server/dialogs/DatasetEditorDialog.qml:512
+#: server/dialogs/DatasetEditorDialog.qml:515
 msgctxt "DatasetEditorDialog|"
 msgid "Instructions"
 msgstr "Instruções"
 
-#: server/dialogs/DatasetEditorDialog.qml:518
+#: server/dialogs/DatasetEditorDialog.qml:521
 msgctxt "DatasetEditorDialog|"
 msgid "No specific instructions for this editor."
 msgstr "Não há instruções específicas para este editor."
@@ -1703,92 +1703,92 @@ msgctxt "SelectorPanel|"
 msgid "Activities"
 msgstr "Atividades"
 
-#: server/singletons/Master.qml:32
+#: server/singletons/Master.qml:37
 msgctxt "Master|"
 msgid "User ID"
 msgstr "ID do usuário"
 
-#: server/singletons/Master.qml:33
+#: server/singletons/Master.qml:38
 msgctxt "Master|"
 msgid "Name"
 msgstr "Nome"
 
-#: server/singletons/Master.qml:34
+#: server/singletons/Master.qml:39
 msgctxt "Master|"
 msgid "Names"
 msgstr "Nomes"
 
-#: server/singletons/Master.qml:35
+#: server/singletons/Master.qml:40
 msgctxt "Master|"
 msgid "Password"
 msgstr "Senha"
 
-#: server/singletons/Master.qml:36
+#: server/singletons/Master.qml:41
 msgctxt "Master|"
 msgid "Users IDs"
 msgstr "IDs dos usuários"
 
-#: server/singletons/Master.qml:37
+#: server/singletons/Master.qml:42
 msgctxt "Master|"
 msgid "Activity Id"
 msgstr "ID da atividade"
 
-#: server/singletons/Master.qml:38
+#: server/singletons/Master.qml:43
 msgctxt "Master|"
 msgid "Activity"
 msgstr "Atividade"
 
-#: server/singletons/Master.qml:39
+#: server/singletons/Master.qml:44
 msgctxt "Master|"
 msgid "Group"
 msgstr "Grupo"
 
-#: server/singletons/Master.qml:40
+#: server/singletons/Master.qml:45
 msgctxt "Master|"
 msgid "Description"
 msgstr "Descrição"
 
-#: server/singletons/Master.qml:41
+#: server/singletons/Master.qml:46
 msgctxt "Master|"
 msgid "Groups"
 msgstr "Grupos"
 
-#: server/singletons/Master.qml:42
+#: server/singletons/Master.qml:47
 msgctxt "Master|"
 msgid "Groups IDs"
 msgstr "IDs dos grupos"
 
-#: server/singletons/Master.qml:43 server/singletons/Master.qml:47
+#: server/singletons/Master.qml:48 server/singletons/Master.qml:52
 msgctxt "Master|"
 msgid "Date"
 msgstr "Data"
 
-#: server/singletons/Master.qml:44 server/singletons/Master.qml:49
+#: server/singletons/Master.qml:49 server/singletons/Master.qml:54
 msgctxt "Master|"
 msgid "Success"
 msgstr "Sucesso"
 
-#: server/singletons/Master.qml:45
+#: server/singletons/Master.qml:50
 msgctxt "Master|"
 msgid "Duration"
 msgstr "Duração"
 
-#: server/singletons/Master.qml:46
+#: server/singletons/Master.qml:51
 msgctxt "Master|"
 msgid "Data"
 msgstr "Dados"
 
-#: server/singletons/Master.qml:48
+#: server/singletons/Master.qml:53
 msgctxt "Master|"
 msgid "Count"
 msgstr "Contagem"
 
-#: server/singletons/Master.qml:50
+#: server/singletons/Master.qml:55
 msgctxt "Master|"
 msgid "Failed"
 msgstr "Falha"
 
-#: server/singletons/Master.qml:51
+#: server/singletons/Master.qml:56
 msgctxt "Master|"
 msgid "Success ratio"
 msgstr "Taxa de sucesso"
@@ -1911,42 +1911,42 @@ msgctxt "DatasetsView|"
 msgid "Activities"
 msgstr "Atividades"
 
-#: server/views/DatasetsView.qml:69
+#: server/views/DatasetsView.qml:70
 msgctxt "DatasetsView|"
 msgid "Datasets"
 msgstr "Conjuntos de dados"
 
-#: server/views/DatasetsView.qml:101
+#: server/views/DatasetsView.qml:102
 msgctxt "DatasetsView|"
 msgid "Datasets management"
 msgstr "Gerenciamento de conjuntos de dados"
 
-#: server/views/DatasetsView.qml:118
+#: server/views/DatasetsView.qml:119
 msgctxt "DatasetsView|"
 msgid "Create dataset"
 msgstr "Criar conjunto de dados"
 
-#: server/views/DatasetsView.qml:126
+#: server/views/DatasetsView.qml:127
 msgctxt "DatasetsView|"
 msgid "Update dataset"
 msgstr "Atualizar conjunto de dados"
 
-#: server/views/DatasetsView.qml:134
+#: server/views/DatasetsView.qml:135
 msgctxt "DatasetsView|"
 msgid "Send dataset to clients"
 msgstr "Enviar conjunto de dados para clientes"
 
-#: server/views/DatasetsView.qml:152
+#: server/views/DatasetsView.qml:153
 msgctxt "DatasetsView|"
 msgid "Remove dataset from clients"
 msgstr "Remover conjunto de dados dos clientes"
 
-#: server/views/DatasetsView.qml:176
+#: server/views/DatasetsView.qml:177
 msgctxt "DatasetsView|"
 msgid "Remove all datasets from clients"
 msgstr "Remover todos os conjuntos de dados dos clientes"
 
-#: server/views/DatasetsView.qml:185
+#: server/views/DatasetsView.qml:186
 msgctxt "DatasetsView|"
 msgid "Delete dataset"
 msgstr "Excluir conjunto de dados"
@@ -2067,50 +2067,45 @@ msgctxt "DevicesView|"
 msgid "Server already running on port %1"
 msgstr "Servidor já em execução na porta %1"
 
-#: server/views/LoginView.qml:44
+#: server/views/LoginView.qml:43
 msgctxt "LoginView|"
 msgid "Incorrect password"
 msgstr "Senha incorreta"
 
-#: server/views/LoginView.qml:48
+#: server/views/LoginView.qml:47
 msgctxt "LoginView|"
 msgid "GCompris-teachers is already running on this computer"
 msgstr "O GCompris-teachers já está em execução neste computador"
 
-#: server/views/LoginView.qml:49
+#: server/views/LoginView.qml:48
 msgctxt "LoginView|"
 msgid "Only data browsing is permitted"
 msgstr "Somente a navegação de dados é permitida"
 
-#: server/views/LoginView.qml:92
+#: server/views/LoginView.qml:89
 msgctxt "LoginView|"
 msgid "Teacher login"
 msgstr "Login do professor"
 
-#: server/views/LoginView.qml:113
+#: server/views/LoginView.qml:110
 msgctxt "LoginView|"
 msgid "Password"
 msgstr "Senha"
 
-#: server/views/LoginView.qml:131
+#: server/views/LoginView.qml:128
 msgctxt "LoginView|"
 msgid "Login"
 msgstr "Login"
 
-#: server/views/LoginView.qml:140
+#: server/views/LoginView.qml:137
 msgctxt "LoginView|"
 msgid "Create teacher database"
 msgstr "Criar banco de dados do professor"
 
-#: server/views/LoginView.qml:161
+#: server/views/LoginView.qml:158
 msgctxt "LoginView|"
 msgid "Database file:"
 msgstr "Arquivo de banco de dados:"
-
-#: server/views/LoginView.qml:174
-msgctxt "LoginView|"
-msgid "GCompris Teachers Tool"
-msgstr "Ferramenta do Professor do GCompris"
 
 #: server/views/ManagePupilsView.qml:34 server/views/ManagePupilsView.qml:147
 msgctxt "ManagePupilsView|"
@@ -2333,3 +2328,7 @@ msgstr "Alunos logados"
 msgctxt "SettingsView|"
 msgid "Activities data received"
 msgstr "Dados de atividades recebidos"
+
+#~ msgctxt "LoginView|"
+#~ msgid "GCompris Teachers Tool"
+#~ msgstr "Ferramenta do Professor do GCompris"
