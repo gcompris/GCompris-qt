@@ -128,7 +128,7 @@
     <p xml:lang="ka">GCompris მაღალი ხარისხის სასწავლო პროგრამების ნაკრებია, რომელიც 2-10 ასაკის ბავშვებისთვის დიდი რაოდენობით აქტივობებს შეიცავს.</p>
     <p xml:lang="ko">GCompris는 다양한 2세에서 10세 사이의 아동용 활동이 들어 있는 고품질의 교육용 소프트웨어 제품군입니다.</p>
     <p xml:lang="lt">Gcompris yra kokybiškas mokomųjų (edukacinių) programų rinkinys turintis daugybę pamokėlių 3 - 12 metų vaikams.</p>
-    <p xml:lang="lv">„GCompris“ ir kvalitatīvu izglītojošu spēļu komplekts, kas piedāvā dažādas nodarbības bērniem no divu līdz desmit gadu vecumam.</p>
+    <p xml:lang="lv">„GCompris“ ir kvalitatīvu izglītojošu spēļu komplekts, kas satur dažādas nodarbības bērniem no divu līdz desmit gadu vecumam.</p>
     <p xml:lang="mk">Жикомпри е висококвалитетен образовен софтвер, кој вклучува голем број активности за деца на возраст од 2 до 10 години.</p>
     <p xml:lang="ml">2 മുതൽ 10 വയസ്സുവരെയുള്ള കുട്ടികൾക്ക് വേണ്ടിയുള്ള വിവിധ പ്രവർത്തനങ്ങൾ അടങ്ങിയിട്ടുള്ള വളരെ ഗുണനിലവാരമുള്ള ഒരു വിദ്യാഭ്യാസ സോഫ്റ്റ്‍വെയർ ആണ് ജികോംപ്രി.</p>
     <p xml:lang="nl">GCompris is een educatief softwarepakket van hoge kwaliteit, inclusief een groot aantal activiteiten voor kinderen van 2 tot 10 jaar.</p>
@@ -226,7 +226,7 @@
     <p xml:lang="ka">ქვემოთ იპოვით კატეგორიების სიას ზოგიერთი აქტივობებით, რომლებიც ამ კატეგორიას ეკუთვნის.</p>
     <p xml:lang="ko">아래에서 분류 목록과 해당 분류의 활동을 찾을 수 있습니다.</p>
     <p xml:lang="lt">Žemiau rasite pamokėlių kategorijų sąrašą bei kelių pamokėlių pavadinimus.</p>
-    <p xml:lang="lv">Tālāk redzēsi kategoriju sarakstu ar dažām no šajā kategorijā atrodamajām spēlēm.</p>
+    <p xml:lang="lv">Šis ir saraksts ar dažām attiecīgajās kategorijās atrodamajām aktivitātēm.</p>
     <p xml:lang="mk">Подолу можете да најдете список на категории со некои активности достапни во таа категорија.</p>
     <p xml:lang="ml">ലഭ്യമായ കുറച്ചു പ്രവർത്തനങ്ങളോടുകൂടിയുള്ള വിഭാഗങ്ങളുടെ ഒരു പട്ടിക താഴെ കൊടുത്തിരിക്കുന്നു.</p>
     <p xml:lang="nl">Hieronder vindt u een lijst met categorieën met enige van de activiteiten beschikbaar in die categorie.</p>
@@ -261,6 +261,7 @@
       <li xml:lang="hr">upoznaj računalo: tipkovnica, miš, različiti pokreti mišem, itd.</li>
       <li xml:lang="it">scoperta del computer: tastiera, mouse, vari gesti con il mouse, ecc.</li>
       <li xml:lang="ka">კომპიუტერის გაცნობა: კლავიატურა, თაგუნა, თაგუნას ჟესტები და ა.შ.</li>
+      <li xml:lang="lv">dators: tastatūra, pele, dažādi žesti ar peli u.c.</li>
       <li xml:lang="nl">ontdekken van de computer: toetsenbord, muis, verschillende muisbewegingen, etc.</li>
       <li xml:lang="pl">odkrywanie komputera: klawiatura, mysz, różne ruchy myszą, itp.</li>
       <li xml:lang="pt-BR">conhecendo o computador: teclado, mouse, diferentes movimentações com o mouse, etc.</li>
@@ -282,6 +283,7 @@
       <li xml:lang="hr">aritmetika: tablica množenja, nabrajanje, zrcalna slika, uravnoteženje vage, vraćanje ostatka, itd.</li>
       <li xml:lang="it">aritmetica: tabelline, enumerazione, immagine speculare, allineare la bilancia, dare il resto, ecc.</li>
       <li xml:lang="ka">არითმეტიკა: ცხრილის დამახსოვრება, ჩამონათვალები, გამოსახულების ანარეკლი, სასწორის გასწორება, ხურდის დაბრუნება და ა.შ.</li>
+      <li xml:lang="lv">aritmētika: atmiņas tabula, skaitīšana, spoguļattēls, svaru līdzsvarošana, atlikuma izdošana u.c.</li>
       <li xml:lang="nl">rekenen: tafels oefenen, reeksen, afbeelding spiegelen, de schaal in evenwicht brengen, wisselgeld geven, etc.</li>
       <li xml:lang="pl">arytmetyka: tablice pamięciowe, wyliczanie, obraz lustrzany, wyrównoważanie wagi, wydawanie reszty, itp.</li>
       <li xml:lang="pt-BR">matemática: memória matemática, enumeração, imagens espelhadas, balanceamento de escalas, moedas e troco, etc.</li>
@@ -302,6 +304,7 @@
       <li xml:lang="hr">znanost: sustav brana, miješanje boja, koncept gravitacije, itd.</li>
       <li xml:lang="it">scienza: la chiusa del canale, miscelazione dei colori, il concetto di gravità, ecc.</li>
       <li xml:lang="ka">მეცნიერება: არხის ჩაკეტვა, ფერების შერევა, წარმოდგენა მიზიდულობაზე და ა.შ.</li>
+      <li xml:lang="lv">zinātne: kanāla slūžas, krāsu jaukšana, gravitācija u.c.</li>
       <li xml:lang="nl">natuurkunde: de sluizen bedienen, mengen van kleuren, concept van zwaartekracht, etc.</li>
       <li xml:lang="pl">nauka: śluza na kanale, mieszanie barw, poczucie grawitacji, itp.</li>
       <li xml:lang="pt-BR">ciência: comporta de canal, mistura de cores, conceito de gravidade, etc.</li>
@@ -322,6 +325,7 @@
       <li xml:lang="hr">igrice: igra pamćenja, 4 u nizu, križić-kružić, sudoku, Hanojski tornjevi, itd.</li>
       <li xml:lang="it">giochi: memory, forza 4, filetto, sudoku, torre di hanoi, ecc.</li>
       <li xml:lang="ka">თამაშები: მეხსიერება, ოთხის შეერთება, სუდოკუ, ჰანოის კოშკი და ა.შ.</li>
+      <li xml:lang="lv">spēles: atmiņa, četri rindā, krustiņi un nullītes, sudoku, Hanojas tornis u.c.</li>
       <li xml:lang="nl">spellen: geheugenspel, vier op een rij, boter kaas en eieren, sudoku, torens van hanoi, etc.</li>
       <li xml:lang="pl">gry: na pamięć, łączenie czwórek, tic tac toe, sudoku, wieża hanoi, itp.</li>
       <li xml:lang="pt-BR">jogos: memória, ligue 4, jogo da velha, sudoku, torre de Hanói, etc.</li>
@@ -342,6 +346,7 @@
       <li xml:lang="hr">čitanje: vježbanje čitanja, itd.</li>
       <li xml:lang="it">lettura: esercitare la lettura, ecc.</li>
       <li xml:lang="ka">წაკითხვა: კითხვაში მეცადინეობა და ა.შ.</li>
+      <li xml:lang="lv">lasīšana: lasīšanas vingrinājumi u.c.</li>
       <li xml:lang="nl">lezen: lees oefening, etc.</li>
       <li xml:lang="pl">czytanie: nauka czytania, itp.</li>
       <li xml:lang="pt-BR">leitura: prática de leitura, etc.</li>
@@ -363,6 +368,7 @@
       <li xml:lang="hr">ostalo: nauči odrediti vrijeme, Brailleovo pismo, labirint, glazbeni instrumenti, itd.</li>
       <li xml:lang="it">altro: impara a leggere l'ora, il sistema braille, labirinto, strumenti musicali, ecc.</li>
       <li xml:lang="ka">სხვები: ისწავლეთ საათის თქმა, ბრაილის სისტემა, მეიზი, მუსიკალური ინსტრუმენტები და ა.შ.</li>
+      <li xml:lang="lv">citas: pateikt laiku, Braila raksts, labirints, mūzikas instrumenti u.c.</li>
       <li xml:lang="nl">overig: leren klokkijken, het braille-systeem, doolhof, muziekinstrumenten, etc.</li>
       <li xml:lang="pl">inne: naucz się godzin na zegarze, systemu brajla, labiryntów, instrumentów muzycznych, itp.</li>
       <li xml:lang="pt-BR">outros: aprendendo a ver as horas, o sistema Braille, labirintos, instrumentos musicais, etc.</li>
