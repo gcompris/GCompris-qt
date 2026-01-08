@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-01-05 12:55+0200\n"
+"PO-Revision-Date: 2026-01-07 11:29+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -32,6 +32,8 @@ msgid ""
 "minimum between the \"Sublevels\" value and the result of: (\"Maximum start "
 "number\" - \"Minimum start number\") / \"Step between numbers\" + 1."
 msgstr ""
+"אם בחרת ב„מספר התחלה אקראי”, מספר תת־השלבים יהיה המזערי מבין הערך „תת־שלבים” "
+"והתוצאה של („מספר התחלה מרבי” - „מספר התחלה מזערי”) / „הפרש בין המספרים” + 1"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
@@ -168,6 +170,9 @@ msgid ""
 "be large enough to generate enough questions for the given number of "
 "sublevels using the minimum and maximum operand values."
 msgstr ""
+"כאשר בחרת ב„אברים אקראיים”, אם „גבול ערך תוצאה” עולה על 0 הוא מגדיר את "
+"התוצאה המרבית המורשית של כל פעולה. הערך חייב להיות גדול מספיק כדי ליצור "
+"מספיק שאלות למספר תת־השלבים הנתון באמצעות ערכי האברים המזערי והמרבי."
 
 #: server/activities/algebra_by/AlgebraEditor.qml:29
 msgctxt "AlgebraEditor|"
@@ -709,7 +714,7 @@ msgctxt "ActivityEditor|"
 msgid ""
 "\"Additions\" must contain a list of additions which results are between 0 "
 "and 9."
-msgstr "„חיבורים” אמור להכיל רשימה של תוספות שהתוצאות שלהן הן בין 0 ל־9."
+msgstr "„חיבורים” אמור להכיל רשימה של חיבורים שהתוצאות שלהן הן בין 0 ל־9."
 
 #: server/activities/learn_additions/ActivityEditor.qml:18
 #: server/activities/learn_subtractions/ActivityEditor.qml:18
@@ -891,6 +896,8 @@ msgid ""
 "\"Additions\" must only contain additions which results are integer numbers "
 "between 0 and 9, and must not be empty."
 msgstr ""
+"„חיבורים” חייבים להכיל רק חיבורים שהתוצאות שלהם הן מספרים שלמים וחיוביים בין "
+"0 ל־9, ואסור שיהיו ריקים."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:105
 msgctxt "LearnDigitsEditor|"
@@ -898,6 +905,8 @@ msgid ""
 "\"Subtractions\" must only contain subtractions which results are integer "
 "numbers between 0 and 9, and must not be empty."
 msgstr ""
+"„חיסורים” חייבים להכיל רק חיסורים שהתוצאות שלהם הן מספרים שלמים וחיוביים בין "
+"0 ל־9, ואסור שיהיו ריקים."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:161
 msgctxt "LearnDigitsEditor|"
@@ -934,7 +943,7 @@ msgctxt "ActivityEditor|"
 msgid ""
 "\"Subtractions\" must contain a list of subtractions which results are "
 "between 0 and 9."
-msgstr ""
+msgstr "„חיסורים” אמור להכיל רשימה של חיסורים שהתוצאות שלהן הן בין 0 ל־9."
 
 #: server/activities/LineReport.qml:65
 msgctxt "LineReport|"
@@ -971,6 +980,8 @@ msgid ""
 "In \"Single answer\" mode, users can select only one answer. In \"Multiple "
 "answers\" mode, they can select multiple answers."
 msgstr ""
+"מצב „תשובה יחידה”, המשתמשים יוכלו לבחור תשובה אחת בלבד. במצב „רב תשובות”, הם "
+"יכולים לבחור יותר מתשובה אחת."
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"

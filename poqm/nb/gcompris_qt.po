@@ -26402,8 +26402,3 @@ msgstr ""
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr ""
-
-#, fuzzy
-#~ msgctxt "Data|"
-#~ msgid "Find the correct answer."
-#~ msgstr "Finn den korallrøde sommerfuglen"

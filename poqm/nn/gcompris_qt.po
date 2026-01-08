@@ -28793,18 +28793,3 @@ msgstr "Lukk"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Start"
-
-#, fuzzy
-#~ msgctxt "Data|"
-#~ msgid "Find the correct answer."
-#~ msgstr "Finn talet som kjem etterpå."
-
-#, fuzzy
-#~ msgctxt "Data|"
-#~ msgid "What is the first number?"
-#~ msgstr "Finn rett tal."
-
-#, fuzzy
-#~ msgctxt "Data|"
-#~ msgid "What are the first two numbers?"
-#~ msgstr "Øv på å leggja til."
