@@ -149,7 +149,7 @@ AbstractButton {
             rightMargin: Style.controlSize + Style.smallMargins * 2
         }
         horizontalAlignment: Text.AlignLeft
-        fontSizeMode: Text.VerticalFit
+        fontSizeMode: Text.HorizontalFit
     }
 
     Image {
