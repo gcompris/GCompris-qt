@@ -116,7 +116,8 @@ Item {
                 ViewButton {
                     width: splitDatasetView.bigButtonWidth
                     height: splitDatasetView.bigButtonHeight
-                    text: "\uf234 " + qsTr("Create dataset")
+                    icon.source: "qrc:/gcompris/src/server/resource/icons/plus.svg"
+                    text: qsTr("Create dataset")
                     enabled: datasetsView.selectedActivity != -1
                     onClicked: datasetEditor.openDataEditor(datasetsView.selectedActivity, undefined)
                 }
@@ -124,7 +125,8 @@ Item {
                 ViewButton {
                     width: splitDatasetView.bigButtonWidth
                     height: splitDatasetView.bigButtonHeight
-                    text: "\uf07c " + qsTr("Update dataset")
+                    icon.source: "qrc:/gcompris/src/server/resource/icons/edit.svg"
+                    text: qsTr("Update dataset")
                     enabled: datasetsView.selectedDataset != -1
                     onClicked: datasetEditor.openDataEditor(datasetsView.selectedActivity, Master.getDataset(datasetsView.selectedDataset))
                 }
@@ -132,7 +134,8 @@ Item {
                 ViewButton {
                     width: splitDatasetView.bigButtonWidth
                     height: splitDatasetView.bigButtonHeight
-                    text: "\uf2f6 " + qsTr("Send dataset to clients")
+                    icon.source: "qrc:/gcompris/src/server/resource/icons/send-to.svg"
+                    text: qsTr("Send dataset to clients")
                     enabled: datasetsView.selectedDataset != -1
                     onClicked: {
                         var dataset = Master.getDataset(datasetsView.selectedDataset)
@@ -150,7 +153,8 @@ Item {
                 ViewButton {
                     width: splitDatasetView.bigButtonWidth
                     height: splitDatasetView.bigButtonHeight
-                    text: "\uf506 " + qsTr("Remove dataset from clients")
+                    icon.source: "qrc:/gcompris/src/server/resource/icons/remove-from.svg"
+                    text: qsTr("Remove dataset from clients")
                     enabled: datasetsView.selectedDataset != -1
                     onClicked: {
                         var dataset = Master.getDataset(datasetsView.selectedDataset)
@@ -174,7 +178,8 @@ Item {
                 ViewButton {
                     width: splitDatasetView.bigButtonWidth
                     height: splitDatasetView.bigButtonHeight
-                    text: "\uf65d " + qsTr("Remove all datasets from clients")
+                    icon.source: "qrc:/gcompris/src/server/resource/icons/remove-all-from.svg"
+                    text: qsTr("Remove all datasets from clients")
                     onClicked: {
                         sendDatasetDialog.openDatasetDialog({}, SendDatasetDialog.MessageType.RemoveAll)
                     }
@@ -183,7 +188,8 @@ Item {
                 ViewButton {
                     width: splitDatasetView.bigButtonWidth
                     height: splitDatasetView.bigButtonHeight
-                    text: "\uf0c7 " + qsTr("Delete dataset")
+                    icon.source: "qrc:/gcompris/src/server/resource/icons/minus.svg"
+                    text: qsTr("Delete dataset")
                     enabled: datasetsView.selectedDataset != -1
                     onClicked: removeDatasetDialog.open()
                 }

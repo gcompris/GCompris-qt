@@ -20,7 +20,6 @@ Column {
     property alias resultModel: resultModel
     property string sort: ""        // sort column
     property string order: ""       // ascending + or descending -
-    property var arrows: ({ "": "", "+": "\uf0d7", "-": "\uf0d8" })
 
     function executeRequest() {
         sort = order = ""
@@ -144,77 +143,71 @@ Column {
             height: parent.height
 
             property int minSectionWidth: Math.min(width / 14, Style.controlSize * 2)
-            property int defaultNameWidth: width / 5 - 6 // -6 for the StyledSplitView handle
-            property int defaultNumberWidth: width / 10 - 6
+            property int defaultNameWidth: width * 0.2 - 6 // -6 for the StyledSplitView handle
+            property int defaultNumberWidth: width * 0.1 - 6
 
-            SmallButton {
+            ColumnHeader {
                 id: userNameButton
                 SplitView.minimumWidth: sectionsSplit.minSectionWidth
                 SplitView.preferredWidth: sectionsSplit.defaultNameWidth
-                neutralBorderWidth: 0
-                text: Master.columnsLabel["user_name"] +
-                    ((dailyReport.sort === "user_name") ?
-                        " " + dailyReport.arrows[dailyReport.order] : "")
+                text: Master.columnsLabel["user_name"]
+                arrow: dailyReport.sort === "user_name" ? dailyReport.order : ""
+                toolTipOnHover: true
                 onClicked: dailyReport.sortTable("user_name")
             }
-            SmallButton {
+            ColumnHeader {
                 id: dateButton
                 SplitView.minimumWidth: sectionsSplit.minSectionWidth
                 SplitView.preferredWidth: sectionsSplit.defaultNameWidth
-                neutralBorderWidth: 0
-                text: Master.columnsLabel["result_day"] +
-                    ((dailyReport.sort === "result_day") ?
-                        " " + dailyReport.arrows[dailyReport.order] : "")
+                text: Master.columnsLabel["result_day"]
+                arrow: dailyReport.sort === "result_day" ? dailyReport.order : ""
+                toolTipOnHover: true
                 onClicked: dailyReport.sortTable("result_day")
             }
-            SmallButton {
+            ColumnHeader {
                 id: activityNameButton
                 SplitView.minimumWidth: sectionsSplit.minSectionWidth
                 SplitView.preferredWidth: sectionsSplit.defaultNameWidth
-                neutralBorderWidth: 0
-                text: Master.columnsLabel["activity_name"] +
-                    ((dailyReport.sort === "activity_name") ?
-                        " " + dailyReport.arrows[dailyReport.order] : "")
+                text: Master.columnsLabel["activity_name"]
+                arrow: dailyReport.sort === "activity_name" ? dailyReport.order : ""
+                toolTipOnHover: true
                 onClicked: dailyReport.sortTable("activity_name")
             }
-            SmallButton {
+            ColumnHeader {
                 id: activityCountButton
                 SplitView.minimumWidth: sectionsSplit.minSectionWidth
                 SplitView.preferredWidth: sectionsSplit.defaultNumberWidth
-                neutralBorderWidth: 0
-                text: qsTr("Count") +
-                    ((dailyReport.sort === "count_activity") ?
-                        " " + dailyReport.arrows[dailyReport.order] : "")
+                text: qsTr("Count")
+                arrow: dailyReport.sort === "count_activity" ? dailyReport.order : ""
+                toolTipOnHover: true
                 onClicked: dailyReport.sortTable("count_activity")
             }
-            SmallButton {
+            ColumnHeader {
                 id: timeButton
                 SplitView.minimumWidth: sectionsSplit.minSectionWidth
                 SplitView.preferredWidth: sectionsSplit.defaultNumberWidth
-                neutralBorderWidth: 0
-                text: qsTr("Time") +
-                    ((dailyReport.sort === "sum_duration") ?
-                        " " + dailyReport.arrows[dailyReport.order] : "")
+                text: qsTr("Time")
+                arrow: dailyReport.sort === "sum_duration" ? dailyReport.order : ""
+                toolTipOnHover: true
                 onClicked: dailyReport.sortTable("sum_duration")
             }
-            SmallButton {
+            ColumnHeader {
                 id: successRatioButton
                 SplitView.minimumWidth: sectionsSplit.minSectionWidth
                 SplitView.preferredWidth: sectionsSplit.defaultNumberWidth
-                neutralBorderWidth: 0
-                text: qsTr("Ratio") +
-                    ((dailyReport.sort === "success_ratio") ?
-                        " " + dailyReport.arrows[dailyReport.order] : "")
+                text: qsTr("Ratio")
+                arrow: dailyReport.sort === "success_ratio" ? dailyReport.order : ""
+                toolTipOnHover: true
                 onClicked: dailyReport.sortTable("success_ratio")
             }
-            SmallButton {
+            ColumnHeader {
                 id: linesButton
                 SplitView.minimumWidth: sectionsSplit.minSectionWidth
                 SplitView.preferredWidth: sectionsSplit.defaultNumberWidth
                 SplitView.fillWidth: true
-                neutralBorderWidth: 0
                 //: Number of result lines
                 text: qsTr("Lines: %1").arg(resultModel.count)
+                toolTipOnHover: true
             }
         }
     }

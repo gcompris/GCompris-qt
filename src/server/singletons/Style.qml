@@ -54,6 +54,9 @@ QtObject {
     readonly property int controlSize: lineHeight
     readonly property int bigControlSize: controlSize * 2
 
+    readonly property int iconSize: controlSize - margins - smallMargins
+    readonly property int bigIconSize: bigControlSize - bigMargins
+
     property int textSize: 16 // can be edited in settings
     readonly property int mediumTextSize: textSize * 1.5
     readonly property int bigTextSize: textSize * 2

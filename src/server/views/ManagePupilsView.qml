@@ -144,7 +144,8 @@ Item {
                     width: splitManagePupils.bigButtonWidth
                     height: splitManagePupils.bigButtonHeight
                     anchors.centerIn: parent
-                    text: "\uf067 " + qsTr("Add a group")
+                    icon.source: "qrc:/gcompris/src/server/resource/icons/plus.svg"
+                    text: qsTr("Add a group")
                     onClicked: managePupilsView.addGroupDialog();
                 }
             }
@@ -201,7 +202,8 @@ Item {
                     id: addPupilButton
                     width: splitManagePupils.bigButtonWidth
                     height: splitManagePupils.bigButtonHeight
-                    text: "\uf234 " + qsTr("Add a pupil")
+                    icon.source: "qrc:/gcompris/src/server/resource/icons/user-add.svg"
+                    text: qsTr("Add a pupil")
                     onClicked: managePupilsView.addPupilDialog()
                 }
 
@@ -209,7 +211,8 @@ Item {
                     width: splitManagePupils.bigButtonWidth
                     height: splitManagePupils.bigButtonHeight
                     enabled: pupilPane.childGroup.checkState != Qt.Unchecked // disable if nothing selected
-                    text: "\uf07c " + qsTr("Add to groups")
+                    icon.source: "qrc:/gcompris/src/server/resource/icons/group-add-to.svg"
+                    text: qsTr("Add to groups")
                     onClicked: managePupilsView.addPupilsToGroupsDialog()
                 }
 
@@ -217,7 +220,8 @@ Item {
                     width: splitManagePupils.bigButtonWidth
                     height: splitManagePupils.bigButtonHeight
                     enabled: pupilPane.childGroup.checkState != Qt.Unchecked // disable if nothing selected
-                    text: "\uf0c7 " + qsTr("Remove from groups")
+                    icon.source: "qrc:/gcompris/src/server/resource/icons/group-remove-from.svg"
+                    text: qsTr("Remove from groups")
                     onClicked: managePupilsView.removePupilsFromGroupsDialog()
                 }
 
@@ -225,14 +229,16 @@ Item {
                     width: splitManagePupils.bigButtonWidth
                     height: splitManagePupils.bigButtonHeight
                     enabled: pupilPane.childGroup.checkState != Qt.Unchecked // disable if nothing selected
-                    text: "\uf0c7 " + qsTr("Export pupils")
+                    icon.source: "qrc:/gcompris/src/server/resource/icons/export.svg"
+                    text: qsTr("Export pupils")
                     onClicked: exportPupilsDialog.open()
                 }
 
                 ViewButton {
                     width: splitManagePupils.bigButtonWidth
                     height: splitManagePupils.bigButtonHeight
-                    text:  "\uf235 " + qsTr("Import pupils")
+                    icon.source: "qrc:/gcompris/src/server/resource/icons/import.svg"
+                    text: qsTr("Import pupils")
                     onClicked: importPupilsDialog.open()
                 }
 
@@ -240,7 +246,8 @@ Item {
                     width: splitManagePupils.bigButtonWidth
                     height: splitManagePupils.bigButtonHeight
                     enabled: pupilPane.childGroup.checkState != Qt.Unchecked // disable if nothing selected
-                    text: "\uf503 " + qsTr("Remove pupils")
+                    icon.source: "qrc:/gcompris/src/server/resource/icons/user-delete.svg"
+                    text: qsTr("Remove pupils")
                     onClicked: removePupilsDialog.open()
                 }
             }

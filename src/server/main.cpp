@@ -18,7 +18,6 @@
 #include "ApplicationSettings.h"
 #include "ActivityInfoTree.h"
 
-#include <QFontDatabase>
 #include <QResource>
 // #include <config.h>
 
@@ -81,12 +80,6 @@ int main(int argc, char *argv[])
     // Load translations
     ApplicationInfo::getInstance()->switchLocale(QStringLiteral("gcompris_teachers_qt"), locale, false);
     ApplicationInfo::getInstance()->switchLocale(QStringLiteral("gcompris_qt"), locale);
-
-    // Set global font
-    qint32 fontId = QFontDatabase::addApplicationFont(":/gcompris/src/server/resource/fa-solid-900.ttf");
-    QStringList fontList = QFontDatabase::applicationFontFamilies(fontId);
-    QString family = fontList.first();
-    QGuiApplication::setFont(QFont(family));
 
     // Create the engine and Main qml object
     QQmlApplicationEngine engine;

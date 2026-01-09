@@ -20,13 +20,16 @@ Button {
     hoverEnabled: enabled
     height: Style.lineHeight
     width: height
+    padding: 0
+    icon.width: Style.iconSize
+    icon.height: Style.iconSize
+    icon.color: smallButton.hovered || smallButton.checked ?
+        Style.selectedPalette.highlightedText : Style.selectedPalette.text
 
     opacity: enabled ? 1 : 0.5
 
     property bool toolTipOnHover: false
     property alias toolTipText: styledToolTip.text
-
-    property int neutralBorderWidth: 1
 
     onHoveredChanged: {
         if(!toolTipOnHover) {
@@ -39,18 +42,6 @@ Button {
         }
     }
 
-    contentItem: Text {
-        anchors.fill: smallButton.background
-        anchors.margins: 2
-        text: smallButton.text
-        horizontalAlignment: Text.AlignHCenter
-        verticalAlignment: Text.AlignVCenter
-        font.pixelSize: Style.textSize
-        elide: Text.ElideRight
-        color: smallButton.hovered || smallButton.checked ?
-            Style.selectedPalette.highlightedText : Style.selectedPalette.text
-    }
-
     background: Rectangle {
         anchors.fill: parent
         anchors.margins: Style.tinyMargins
@@ -59,8 +50,7 @@ Button {
             Style.selectedPalette.alternateBase)
         border.color: smallButton.enabled && (smallButton.visualFocus || smallButton.hovered) ?
             Style.selectedPalette.text : Style.selectedPalette.accent
-        border.width: smallButton.enabled && (smallButton.visualFocus || smallButton.hovered) ? 2 :
-                        smallButton.neutralBorderWidth
+        border.width: smallButton.enabled && (smallButton.visualFocus || smallButton.hovered) ? 2 : 1
     }
 
     StyledToolTip {

@@ -79,7 +79,7 @@ Item {
 
             SmallButton {        // Add button
                 enabled: editorToolBar.addEnabled
-                text: "\uf067"
+                icon.source: "qrc:/gcompris/src/server/resource/icons/plus.svg"
                 toolTipOnHover: true
                 toolTipText: qsTr("Add")
                 onClicked: {
@@ -90,7 +90,7 @@ Item {
 
             SmallButton {        // Remove button
                 enabled: editorToolBar.removeEnabled
-                text: "\uf068"
+                icon.source: "qrc:/gcompris/src/server/resource/icons/minus.svg"
                 toolTipOnHover: true
                 toolTipText: qsTr("Remove")
                 onClicked: {
@@ -102,7 +102,7 @@ Item {
 
             SmallButton {        // Move up button
                 enabled: editorToolBar.upEnabled
-                text: "\uf077"
+                icon.source: "qrc:/gcompris/src/server/resource/icons/up.svg"
                 toolTipOnHover: true
                 toolTipText: qsTr("Move up")
                 onClicked: {
@@ -113,7 +113,8 @@ Item {
 
             SmallButton {        // Move down button
                 enabled: editorToolBar.downEnabled
-                text: "\uf078"
+                icon.source: "qrc:/gcompris/src/server/resource/icons/up.svg"
+                rotation: 180
                 toolTipOnHover: true
                 toolTipText: qsTr("Move down")
                 onClicked: {

@@ -148,7 +148,8 @@ Popup {
             }
 
             SmallButton {
-                text: qsTr("<")
+                icon.source: "qrc:/gcompris/src/server/resource/icons/up.svg"
+                rotation: 270
                 enabled: sqlLineDialog.lineIndex > 0
                 onClicked: {
                     if(sqlLineDialog.lineIndex > 0) {
@@ -172,7 +173,8 @@ Popup {
             }
 
             SmallButton {
-                text: qsTr(">")
+                icon.source: "qrc:/gcompris/src/server/resource/icons/up.svg"
+                rotation: 90
                 enabled: sqlLineDialog.parentModel ? sqlLineDialog.lineIndex < sqlLineDialog.parentModel.count - 1 : false
                 onClicked: {
                     if(sqlLineDialog.lineIndex < sqlLineDialog.parentModel.count - 1) {

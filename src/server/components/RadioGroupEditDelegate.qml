@@ -54,7 +54,7 @@ Control {
             anchors.right: deleteGroup.left
             anchors.rightMargin: Style.smallMargins
             hoverEnabled: true
-            text: "\uf304"
+            icon.source: "qrc:/gcompris/src/server/resource/icons/edit.svg"
             onClicked: managePupilsView.editGroupDialog(index, group_name, group_id, group_description)
             toolTipOnHover: true
             toolTipText: qsTr("Edit group")
@@ -66,7 +66,7 @@ Control {
             anchors.right: parent.right
             anchors.rightMargin: Style.margins
             hoverEnabled: true
-            text: "\uf1f8"
+            icon.source: "qrc:/gcompris/src/server/resource/icons/delete.svg"
             onClicked: managePupilsView.removeGroupDialog(index, group_name, group_id, group_description)
             toolTipOnHover: true
             toolTipText: qsTr("Delete group")

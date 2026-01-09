@@ -16,5 +16,6 @@ SmallButton {
     width: visible ? height : 0
     checkable: true
     checked: true
-    text: checked ? "\uf0d7" : "\uf0d9"
+    icon.source: "qrc:/gcompris/src/server/resource/icons/dark_dropdownArrow.svg"
+    rotation: checked ? 0 : 90
 }

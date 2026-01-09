@@ -28,7 +28,7 @@ Control {
         anchors.leftMargin: Style.margins
         hoverEnabled: true
         // visible: checkUserEditDelegate.hovered || editPupil.hovered // No reason to make it visible only on hover if there's always space for it...
-        text: "\uf304"
+        icon.source: "qrc:/gcompris/src/server/resource/icons/edit.svg"
         onClicked: managePupilsView.editPupilDialog(index, user_name, user_id, user_password, groups_name, groups_id)
         toolTipOnHover: true
         toolTipText: qsTr("Edit pupil")

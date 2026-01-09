@@ -26,8 +26,6 @@ Button {
     property bool toolTipOnHover: false
     property alias toolTipText: styledToolTip.text
 
-    property int neutralBorderWidth: 1
-
     onHoveredChanged: {
         if(!toolTipOnHover) {
             return;
@@ -59,8 +57,7 @@ Button {
             Style.selectedPalette.alternateBase)
         border.color: smallButton.enabled && (smallButton.visualFocus || smallButton.hovered) ?
             Style.selectedPalette.text : Style.selectedPalette.accent
-        border.width: smallButton.enabled && (smallButton.visualFocus || smallButton.hovered) ? 2 :
-                        smallButton.neutralBorderWidth
+        border.width: smallButton.enabled && (smallButton.visualFocus || smallButton.hovered) ? 2 : 1
     }
 
     StyledToolTip {
