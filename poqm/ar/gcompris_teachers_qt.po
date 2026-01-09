@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2025 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
+# SPDX-FileCopyrightText: 2025, 2026 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-12-25 10:09+0400\n"
+"PO-Revision-Date: 2026-01-07 18:48+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -1760,20 +1760,14 @@ msgid "Success ratio"
 msgstr "نسبة النجاح"
 
 #: server/views/charts/ActivitiesChart.qml:100
-#, fuzzy
-#| msgctxt "AllData|"
-#| msgid "Daily activities"
 msgctxt "ActivitiesChart|"
 msgid "Daily activities chart"
-msgstr "الأنشطة اليومية"
+msgstr "مخطط الأنشطة اليومية"
 
 #: server/views/charts/PupilsChart.qml:98
-#, fuzzy
-#| msgctxt "AllData|"
-#| msgid "All users activities"
 msgctxt "PupilsChart|"
 msgid "User activities chart"
-msgstr "أنشطة جميع المستخدمين"
+msgstr "مخطط أنشطة المستخدم"
 
 #: server/views/ChartsView.qml:97
 msgctxt "ChartsView|"
