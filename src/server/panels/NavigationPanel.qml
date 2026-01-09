@@ -31,11 +31,11 @@ Item {
     width: enabled ? buttons.width : 0
     clip: true
 
-    property string currentText: buttons.children[lastIndex + 1].description
+    property string currentText: buttons.children[lastIndex + 1].text
     function changeTo(index) {
-        buttons.children[lastIndex + 1].selected = false
+        buttons.children[lastIndex + 1].checked = false
         lastIndex = index
-        buttons.children[lastIndex + 1].selected = true
+        buttons.children[lastIndex + 1].checked = true
         mainStack.currentIndex = lastIndex
     }
 
@@ -43,7 +43,7 @@ Item {
         if(!enabled) {
             return;
         } else {
-            button.navigationButtonClicked();
+            button.clicked();
         }
     }
 
@@ -57,76 +57,76 @@ Item {
             width: childrenRect.width
 
             NavigationButton {
-                iconCharacter: "\uf0c9"
-                description: ""
+                icon.source: "qrc:/gcompris/src/server/resource/icons/menu.svg"
+                text: ""
                 isCollapsed: navigationPanel.isCollapsed
-                panelWidth: navigationPanel.width
-                onNavigationButtonClicked: navigationPanel.isCollapsed = !navigationPanel.isCollapsed
+                panelWidth: buttons.width
+                onClicked: navigationPanel.isCollapsed = !navigationPanel.isCollapsed
             }
             NavigationButton {
                 id: loginButton
                 visible: false // disabled for now, until we support teacher logout and relogin
-                iconCharacter: "\uf015"
-                description: qsTr("Login")
+                icon.source: "qrc:/gcompris/src/server/resource/icons/login.svg"
+                text: qsTr("Login")
                 isCollapsed: navigationPanel.isCollapsed
-                panelWidth: navigationPanel.width
-                onNavigationButtonClicked: navigationPanel.changeTo(0)
+                panelWidth: buttons.width
+                onClicked: navigationPanel.changeTo(0)
             }
             NavigationButton {
                 id: pupilsView
-                iconCharacter: "\uf0c0"
-                description: qsTr("Pupils and Groups")
+                icon.source: "qrc:/gcompris/src/server/resource/icons/users.svg"
+                text: qsTr("Pupils and Groups")
                 isCollapsed: navigationPanel.isCollapsed
-                panelWidth: navigationPanel.width
-                onNavigationButtonClicked: navigationPanel.changeTo(1)
+                panelWidth: buttons.width
+                onClicked: navigationPanel.changeTo(1)
             }
             NavigationButton {
                 id: deviceView
-                iconCharacter: "\uf1e6"
-                description: qsTr("Connect devices")
+                icon.source: "qrc:/gcompris/src/server/resource/icons/connect.svg"
+                text: qsTr("Connect devices")
                 isCollapsed: navigationPanel.isCollapsed
-                panelWidth: navigationPanel.width
-                onNavigationButtonClicked: navigationPanel.changeTo(2)
+                panelWidth: buttons.width
+                onClicked: navigationPanel.changeTo(2)
             }
             NavigationButton {
                 id: activitiesView
-                iconCharacter: "\uf03a"
-                description: qsTr("Activities")
+                icon.source: "qrc:/gcompris/src/server/resource/icons/list.svg"
+                text: qsTr("Activities")
                 isCollapsed: navigationPanel.isCollapsed
-                panelWidth: navigationPanel.width
-                onNavigationButtonClicked: navigationPanel.changeTo(3)
+                panelWidth: buttons.width
+                onClicked: navigationPanel.changeTo(3)
             }
             NavigationButton {
                 id: datasetsView
-                iconCharacter: "\uf15c"
-                description: qsTr("Datasets")
+                icon.source: "qrc:/gcompris/src/server/resource/icons/dataset.svg"
+                text: qsTr("Datasets")
                 isCollapsed: navigationPanel.isCollapsed
-                panelWidth: navigationPanel.width
-                onNavigationButtonClicked: navigationPanel.changeTo(4)
+                panelWidth: buttons.width
+                onClicked: navigationPanel.changeTo(4)
             }
             NavigationButton {
                 id: chartsView
-                iconCharacter: "\uf681"
-                description: qsTr("Charts")
+                icon.source: "qrc:/gcompris/src/server/resource/icons/graph.svg"
+                text: qsTr("Charts")
                 isCollapsed: navigationPanel.isCollapsed
-                panelWidth: navigationPanel.width
-                onNavigationButtonClicked: navigationPanel.changeTo(5)
+                panelWidth: buttons.width
+                onClicked: navigationPanel.changeTo(5)
             }
             NavigationButton {
                 id: settingsView
-                iconCharacter: "\uf0ad"
-                description: qsTr("Settings")
+                icon.source: "qrc:/gcompris/src/server/resource/icons/settings.svg"
+                text: qsTr("Settings")
                 isCollapsed: navigationPanel.isCollapsed
-                panelWidth: navigationPanel.width
-                onNavigationButtonClicked: navigationPanel.changeTo(6)
+                panelWidth: buttons.width
+                onClicked: navigationPanel.changeTo(6)
             }
             NavigationButton {
                 id: devView
-                iconCharacter: "\uf188"
-                description: qsTr("Development (WIP)")
+                icon.source: "qrc:/gcompris/src/server/resource/icons/debug.svg"
+                text: qsTr("Development (WIP)")
                 isCollapsed: navigationPanel.isCollapsed
-                panelWidth: navigationPanel.width
-                onNavigationButtonClicked: navigationPanel.changeTo(7)
+                panelWidth: buttons.width
+                onClicked: navigationPanel.changeTo(7)
             }
         }
     }

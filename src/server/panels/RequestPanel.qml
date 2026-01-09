@@ -26,7 +26,6 @@ Item {
     property bool dynamicRoles: false
     property string sort: ""
     property string order: ""
-    property var arrows: ({ "": "", "+": "\uf0d7", "-": "\uf0d8" })
 
     ListModel { id: linesModel }
 
@@ -86,8 +85,9 @@ Item {
             Repeater {
                 id: sectionButtons
                 model: requestPanel.actualColumns
-                delegate: SmallButton {
-                    text: Master.columnsLabel[modelData] + ((sort === modelData) ? " " + arrows[order] : "")
+                delegate: ColumnHeader {
+                    text: Master.columnsLabel[modelData]
+                    arrow: requestPanel.sort === modelData ? requestPanel.order : ""
                     SplitView.minimumWidth: Master.columnsSize[modelData] * 0.5
                     SplitView.preferredWidth: Master.columnsSize[modelData]
                     toolTipOnHover: true

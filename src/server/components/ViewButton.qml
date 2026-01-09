@@ -15,7 +15,7 @@ import QtQuick.Controls.Basic
 
 import "../singletons"
 
-Button {
+AbstractButton {
     id: button
     width: button.defaultWidth
     height: button.defaultHeight
@@ -24,24 +24,51 @@ Button {
     property int defaultHeight: Style.bigControlSize
 
     opacity: enabled ? 1 : 0.5
-    contentItem: Text {
-        anchors.fill: button.background
-        anchors.margins: Style.margins
-        text: button.text
-        horizontalAlignment: Text.AlignHCenter
-        verticalAlignment: Text.AlignVCenter
-        font.pixelSize: Style.textSize
-        fontSizeMode: Text.Fit
-        wrapMode: Text.Wrap
-        elide: Text.ElideRight
-        color: button.enabled && (button.pressed || button.hovered) ?
-            Style.selectedPalette.highlightedText :
-            Style.selectedPalette.text
+
+    Row {
+        id: buttonRow
+        width: button.width - Style.bigMargins
+        height: button.height - Style.margins
+        anchors.centerIn: parent
+        spacing: Style.tinyMargins
+
+        Button {
+            id: iconButton
+            visible: icon.source != ""
+            width: Style.controlSize
+            height: width
+            padding: 0
+            enabled: false
+            activeFocusOnTab: false
+            icon.source: button.icon.source
+            icon.color: textDescription.color
+            icon.width: Style.controlSize
+            icon.height: Style.controlSize
+            anchors.verticalCenter: parent.verticalCenter
+
+            background: Item {}
+        }
+
+        DefaultLabel {
+            id: textDescription
+            height: buttonRow.height
+            width: buttonRow.width - (iconButton.visible ? iconButton.width + buttonRow.spacing : 0)
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            color: button.enabled && (button.pressed || button.hovered) ?
+                Style.selectedPalette.highlightedText :
+                Style.selectedPalette.text
+            font.pixelSize: Style.textSize
+            fontSizeMode: Text.Fit
+            wrapMode: Text.WordWrap
+            elide: Text.ElideRight
+            text: button.text
+        }
     }
 
     background: Rectangle {
-        implicitWidth: button.width
-        implicitHeight: button.height
+        width: button.width
+        height: button.height
         radius: Style.defaultRadius
         color: button.pressed ? Style.selectedPalette.highlight :
             (button.enabled && button.hovered ? Style.selectedPalette.accent :

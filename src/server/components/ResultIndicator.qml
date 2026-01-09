@@ -9,29 +9,24 @@
  */
 
 import QtQuick
+import QtQuick.Controls.Basic
 
 import "../singletons"
 
-Rectangle {
+Button {
     id: resultIndicator
     anchors.verticalCenter: parent.verticalCenter
-    height: Style.lineHeight - Style.margins
+    height: Style.lineHeight - Style.smallMargins
     width: height
-    radius: height
-    border.width: Style.defaultBorderWidth
-    border.color: Style.selectedPalette.text
-    color: "transparent"
+    padding: 0
+    enabled: false
+    icon.height: height
+    icon.width: height
+    icon.source: resultSuccess ? "qrc:/gcompris/src/server/resource/icons/check-good.svg" :
+        "qrc:/gcompris/src/server/resource/icons/check-bad.svg"
+    icon.color: Style.selectedPalette.text
 
     required property bool resultSuccess
 
-    Text {
-        anchors.fill: parent
-        anchors.margins: Style.defaultBorderWidth * 3
-        verticalAlignment: Text.AlignVCenter
-        horizontalAlignment: Text.AlignHCenter
-        font.pixelSize: height
-        fontSizeMode: Text.Fit
-        color: Style.selectedPalette.text
-        text: resultSuccess ? "\uf00c" : "\uf00d"
-    }
+    background: Item {}
 }

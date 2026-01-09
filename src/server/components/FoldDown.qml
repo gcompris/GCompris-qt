@@ -57,7 +57,7 @@ Item {
             id: clearButton
             visible: childGroup.exclusive
             anchors.left: parent.left
-            text: "\uf068"
+            icon.source: "qrc:/gcompris/src/server/resource/icons/minus.svg"
             enabled: collapseButton.checked && ((childGroup.checkedButton != null) || (!childGroup.exclusive))
             onClicked: {    // Uncheck all buttons
                 if (childGroup.exclusive) {
@@ -126,7 +126,7 @@ Item {
             width: visible ? height : 0
             visible: foldDown.filterVisible
             checkable: true
-            text: "\uf0b0"
+            icon.source: "qrc:/gcompris/src/server/resource/icons/filter.svg"
             onCheckedChanged: {
                 if(!checked) {
                     foldDownFilter.text = "";

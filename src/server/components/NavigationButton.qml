@@ -1,24 +1,22 @@
 /* GCompris - NavigationButton.qml
  *
  * SPDX-FileCopyrightText: 2021 Emmanuel Charruau <echarruau@gmail.com>
+ * SPDX-FileCopyrightText: 2026 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Emmanuel Charruau <echarruau@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
+import QtQuick.Controls.Basic
 
 import "../singletons"
 
-Item {
+AbstractButton {
     id: navigationButton
-    property alias iconCharacter: textIcon.text
-    property string description: textDescription.text
-    property bool selected: false
-
-    signal navigationButtonClicked()
-
+    checkable: true
     height: Style.bigControlSize
     width: isCollapsed ? Style.bigControlSize : buttonRow.width + Style.margins
 
@@ -29,18 +27,10 @@ Item {
         id: background
         width: navigationButton.panelWidth
         height: Style.bigControlSize
-        color: navigationButton.selected ? Style.selectedPalette.highlight :
+        color: navigationButton.checked ? Style.selectedPalette.highlight :
             (mouseArea.containsMouse ? Style.selectedPalette.accent : Style.selectedPalette.alternateBase)
-
-        MouseArea {
-            id: mouseArea
-            anchors.fill: parent
-            cursorShape: Qt.PointingHandCursor
-            hoverEnabled: true
-            onClicked: {
-                navigationButton.navigationButtonClicked()
-            }
-        }
+        border.width: navigationButton.activeFocus ? Style.defaultBorderWidth : 0
+        border.color: Style.selectedPalette.text
     }
 
     Row {
@@ -48,27 +38,41 @@ Item {
         opacity: enabled ? 1 : 0.5
         width: childrenRect.width
         height: childrenRect.height
-        Text {
-            id: textIcon
+        spacing: Style.smallMargins
+
+        Button {
+            id: iconButton
             width: Style.bigControlSize
             height: Style.bigControlSize
-            font.pixelSize: height * 0.5
-            color: navigationButton.selected || mouseArea.containsMouse ?
-            Style.selectedPalette.highlightedText :
-            Style.selectedPalette.text
-            text: "\uf11a"
-            verticalAlignment: Text.AlignVCenter
-            horizontalAlignment: Text.AlignHCenter
+            padding: 0
+            activeFocusOnTab: false
+            icon.source: navigationButton.icon.source
+            icon.color: textDescription.color
+            icon.width: Style.bigIconSize
+            icon.height: Style.bigIconSize
+
+            background: Item {}
         }
 
         DefaultLabel {
             id: textDescription
             height: Style.bigControlSize
             horizontalAlignment: Text.AlignLeft
-            color: textIcon.color
+            color: navigationButton.checked || mouseArea.containsMouse ?
+                Style.selectedPalette.highlightedText :
+                Style.selectedPalette.text
             font.pixelSize: Style.textSize
             fontSizeMode: Text.FixedSize
-            text: navigationButton.description
+            text: navigationButton.text
+        }
+    }
+
+    MouseArea {
+        id: mouseArea
+        anchors.fill: background
+        hoverEnabled: true
+        onClicked: {
+            navigationButton.clicked()
         }
     }
 }

@@ -160,7 +160,7 @@ AbstractButton {
             margins: Style.smallMargins
         }
         width: height
-        source: "../resource/icons/" + Style.themePrefix + "dropdownArrow.svg"
+        source: "qrc:/gcompris/src/server/resource/icons/" + Style.themePrefix + "dropdownArrow.svg"
         sourceSize.width: width
     }
 

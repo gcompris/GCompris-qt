@@ -80,7 +80,7 @@ Item {
         }
 
         SmallButton {
-            text: "\uf021"
+            icon.source: "qrc:/gcompris/src/server/resource/icons/reload.svg"
             anchors.verticalCenter: parent.verticalCenter
             onClicked: reqView.executeRequest()
         }

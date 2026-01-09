@@ -111,7 +111,8 @@ Column {
                     id: leftButton
                     width: Style.controlSize
                     height: Style.controlSize
-                    text: "<"
+                    icon.source: "qrc:/gcompris/src/server/resource/icons/dark_dropdownArrow.svg"
+                    rotation: 90
                     onClicked: {
                         if(--calendarPane.currentMonth < 0) {
                             calendarPane.currentMonth = 11;
@@ -120,7 +121,7 @@ Column {
                     }
                 }
 
-                SmallButton {
+                SmallButtonText {
                     height: Style.controlSize
                     width: parent.width - leftButton.width * 2
                     text: calendarPane.capitalizeFirstLetter(calendarPane.locale.monthName(monthGrid.month, Locale.LongFormat)) + " " + monthGrid.year
@@ -145,7 +146,8 @@ Column {
                     id: rightButton
                     width: Style.controlSize
                     height: Style.controlSize
-                    text: ">"
+                    icon.source: "qrc:/gcompris/src/server/resource/icons/dark_dropdownArrow.svg"
+                    rotation: 270
                     enabled: (String(calendarPane.currentYear) + ('00'+ (calendarPane.currentMonth + 1)).slice(-2)) < calendarPane.lastDate.slice(0,6)
                     onClicked: {
                         if(++calendarPane.currentMonth > 11) {

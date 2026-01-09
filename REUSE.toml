@@ -5306,15 +5306,8 @@ SPDX-License-Identifier = "CC-BY-SA-4.0"
 [[annotations]]
 path = "src/server/resource/**.svg"
 precedence = "aggregate"
-SPDX-FileCopyrightText = "2024 Timothée Giet"
+SPDX-FileCopyrightText = "2024-2026 Timothée Giet"
 SPDX-License-Identifier = "CC-BY-SA-4.0"
-
-[[annotations]]
-path = "src/server/resource/fa-solid-900.ttf"
-precedence = "aggregate"
-SPDX-FileCopyrightText = "2024 Font Awesome by Dave Gandy"
-SPDX-License-Identifier = "OFL-1.1"
-SPDX-FileComment = "https://fontawesome.com"
 
 [[annotations]]
 path = "tests/core/Contents.test"

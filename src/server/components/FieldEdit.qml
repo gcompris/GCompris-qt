@@ -204,7 +204,7 @@ Item  {
             property alias text: inputField.text
             SmallButton {
                 id: popupButton
-                text: "\uf044"
+                icon.source: "qrc:/gcompris/src/server/resource/icons/edit.svg"
                 onClicked: stringsPopup.open()
             }
             UnderlinedTextInput {
@@ -312,7 +312,7 @@ Item  {
                     anchors.left: parent.left
 
                     SmallButton {
-                        text: "\uf067"
+                        icon.source: "qrc:/gcompris/src/server/resource/icons/plus.svg"
                         enabled: (stringModel.count < 11)
                         toolTipOnHover: true
                         toolTipText: qsTr("Add an entry")
@@ -324,7 +324,7 @@ Item  {
                     }
 
                     SmallButton {
-                        text: "\uf068"
+                        icon.source: "qrc:/gcompris/src/server/resource/icons/minus.svg"
                         enabled: (stringModel.count > 0)
                         toolTipOnHover: true
                         toolTipText: qsTr("Remove last entry")

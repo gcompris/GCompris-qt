@@ -291,7 +291,7 @@ Item {
                     height: parent.height
                     anchors.top: parent.top
                     anchors.right: parent.right
-                    text: "\uf1f8"
+                    icon.source: "qrc:/gcompris/src/server/resource/icons/delete.svg"
                     toolTipOnHover: true
                     toolTipText: qsTr("Clear logs")
                     onClicked: logPanel.clearLog()
