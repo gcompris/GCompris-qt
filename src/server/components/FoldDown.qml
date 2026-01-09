@@ -135,7 +135,7 @@ Item {
                 }
             }
             toolTipOnHover: true
-            toolTipText: qsTr("Filter list")
+            toolTipText: qsTr("Filter list", "@action")
         }
 
         DefaultLabel {

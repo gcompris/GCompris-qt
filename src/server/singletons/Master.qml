@@ -39,7 +39,7 @@ Item {
         "users_name": qsTr("Names"),
         "user_password": qsTr("Password"),
         "users_id": qsTr("Users IDs"),
-        "activity_id": qsTr("Activity Id"),
+        "activity_id": qsTr("Activity ID"),
         "activity_name": qsTr("Activity"),
         "group_name": qsTr("Group"),
         "group_description": qsTr("Description"),

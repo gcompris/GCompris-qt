@@ -209,7 +209,7 @@ Item {
                     enabled: reqView.count ? true : false
                     opacity: reqView.count ? 1.0 : 0.5
                     onClicked: {
-                        errorDialog.message = [qsTr("You are about to delete datas"), qsTr("No action now")]
+                        errorDialog.message = [qsTr("You are about to delete data"), qsTr("No action now")]
                         errorDialog.open()
 //                            deleteData()
                     }

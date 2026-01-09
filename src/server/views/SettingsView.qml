@@ -185,9 +185,8 @@ Item {
             InformationLine {
                 labelWidth: labelArea.width
                 infoText.width: infoText.implicitWidth
-                //: next line will display if the server is running or already running
-                label: qsTr("Server is")
-                info: serverRunning ? qsTr("Running") : qsTr("Already running on port %1").arg(serverSettings.port)
+                label: qsTr("Server status")
+                info: serverRunning ? qsTr("Running", "As in 'The server is running'") : qsTr("Already running on port %1", "As in 'The Server is already running on port %1'").arg(serverSettings.port)
                 showResult: true
                 resultSuccess: serverRunning
             }
