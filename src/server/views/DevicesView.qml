@@ -51,7 +51,7 @@ Item {
         case NetConst.NOT_CONNECTED:
             return qsTr("Not connected")
         case NetConst.BAD_PASSWORD_INPUT:
-            return qsTr("Bad password input")
+            return qsTr("Incorrect password")
         case NetConst.CONNECTED:
             return qsTr("Logged")
         case NetConst.CONNECTION_LOST:
