@@ -531,47 +531,47 @@ msgctxt "ComparatorEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Les erreurs suivantes doivent être corrigées :<ul>%1</ul>"
 
-#: server/activities/DailyReport.qml:33
+#: server/activities/DailyReport.qml:32
 msgctxt "DailyReport|"
 msgid "All groups"
 msgstr "Tous les groupes"
 
 #. Group name first, then Date range, with a space between them. Example: "Group Name 01/07/2025-08/07/2025"
-#: server/activities/DailyReport.qml:126
+#: server/activities/DailyReport.qml:125
 #, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: server/activities/DailyReport.qml:130
+#: server/activities/DailyReport.qml:129
 msgctxt "DailyReport|"
 msgid "Calendar"
 msgstr "Calendrier"
 
-#: server/activities/DailyReport.qml:185
+#: server/activities/DailyReport.qml:180
 msgctxt "DailyReport|"
 msgid "Count"
 msgstr "Compte"
 
-#: server/activities/DailyReport.qml:195
+#: server/activities/DailyReport.qml:189
 msgctxt "DailyReport|"
 msgid "Time"
 msgstr "Temps"
 
-#: server/activities/DailyReport.qml:205
+#: server/activities/DailyReport.qml:198
 msgctxt "DailyReport|"
 msgid "Ratio"
 msgstr "Ratio"
 
 #. Number of result lines
-#: server/activities/DailyReport.qml:217
+#: server/activities/DailyReport.qml:209
 #, qt-format
 msgctxt "DailyReport|"
 msgid "Lines: %1"
 msgstr "Lignes : %1"
 
 #. Success ratio, example: "50 %"
-#: server/activities/DailyReport.qml:316
+#: server/activities/DailyReport.qml:309
 #, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %"
@@ -1220,7 +1220,7 @@ msgctxt "EditorBox|"
 msgid "Move up"
 msgstr "Monter"
 
-#: server/components/EditorBox.qml:118
+#: server/components/EditorBox.qml:119
 msgctxt "EditorBox|"
 msgid "Move down"
 msgstr "Descendre"
@@ -1633,17 +1633,7 @@ msgctxt "SqlLineDialog|"
 msgid "Line details"
 msgstr "Détails de la ligne"
 
-#: server/dialogs/SqlLineDialog.qml:151
-msgctxt "SqlLineDialog|"
-msgid "<"
-msgstr "<"
-
-#: server/dialogs/SqlLineDialog.qml:175
-msgctxt "SqlLineDialog|"
-msgid ">"
-msgstr ">"
-
-#: server/dialogs/SqlLineDialog.qml:191
+#: server/dialogs/SqlLineDialog.qml:193
 msgctxt "SqlLineDialog|"
 msgid "Close"
 msgstr "Fermer"
@@ -1916,32 +1906,32 @@ msgctxt "DatasetsView|"
 msgid "Datasets management"
 msgstr "Gestion des jeux de données"
 
-#: server/views/DatasetsView.qml:119
+#: server/views/DatasetsView.qml:120
 msgctxt "DatasetsView|"
 msgid "Create dataset"
 msgstr "Créer le jeu de données"
 
-#: server/views/DatasetsView.qml:127
+#: server/views/DatasetsView.qml:129
 msgctxt "DatasetsView|"
 msgid "Update dataset"
 msgstr "Mettre à jour le jeu de données"
 
-#: server/views/DatasetsView.qml:135
+#: server/views/DatasetsView.qml:138
 msgctxt "DatasetsView|"
 msgid "Send dataset to clients"
 msgstr "Envoyer le jeu de données aux élèves"
 
-#: server/views/DatasetsView.qml:153
+#: server/views/DatasetsView.qml:157
 msgctxt "DatasetsView|"
 msgid "Remove dataset from clients"
 msgstr "Retirer le jeu de données des clients"
 
-#: server/views/DatasetsView.qml:177
+#: server/views/DatasetsView.qml:182
 msgctxt "DatasetsView|"
 msgid "Remove all datasets from clients"
 msgstr "Retirer tous les jeux de données des clients"
 
-#: server/views/DatasetsView.qml:186
+#: server/views/DatasetsView.qml:192
 msgctxt "DatasetsView|"
 msgid "Delete dataset"
 msgstr "Supprimer un jeu de données"
@@ -2102,7 +2092,7 @@ msgctxt "LoginView|"
 msgid "Database file:"
 msgstr "Fichier de base de données :"
 
-#: server/views/ManagePupilsView.qml:34 server/views/ManagePupilsView.qml:147
+#: server/views/ManagePupilsView.qml:34 server/views/ManagePupilsView.qml:148
 msgctxt "ManagePupilsView|"
 msgid "Add a group"
 msgstr "Ajouter un groupe"
@@ -2122,7 +2112,7 @@ msgctxt "ManagePupilsView|"
 msgid "Edit group"
 msgstr "Modifier le groupe"
 
-#: server/views/ManagePupilsView.qml:68 server/views/ManagePupilsView.qml:204
+#: server/views/ManagePupilsView.qml:68 server/views/ManagePupilsView.qml:206
 msgctxt "ManagePupilsView|"
 msgid "Add a pupil"
 msgstr "Ajouter un élève"
@@ -2137,37 +2127,37 @@ msgctxt "ManagePupilsView|"
 msgid "Groups"
 msgstr "Groupes"
 
-#: server/views/ManagePupilsView.qml:157
+#: server/views/ManagePupilsView.qml:158
 msgctxt "ManagePupilsView|"
 msgid "Pupils and groups"
 msgstr "Élèves et groupes"
 
-#: server/views/ManagePupilsView.qml:186
+#: server/views/ManagePupilsView.qml:187
 msgctxt "ManagePupilsView|"
 msgid "Pupils management"
 msgstr "Gestion des élèves"
 
-#: server/views/ManagePupilsView.qml:212
+#: server/views/ManagePupilsView.qml:215
 msgctxt "ManagePupilsView|"
 msgid "Add to groups"
 msgstr "Ajouter aux groupes"
 
-#: server/views/ManagePupilsView.qml:220
+#: server/views/ManagePupilsView.qml:224
 msgctxt "ManagePupilsView|"
 msgid "Remove from groups"
 msgstr "Retirer des groupes"
 
-#: server/views/ManagePupilsView.qml:228
+#: server/views/ManagePupilsView.qml:233
 msgctxt "ManagePupilsView|"
 msgid "Export pupils"
 msgstr "Exporter des élèves"
 
-#: server/views/ManagePupilsView.qml:235
+#: server/views/ManagePupilsView.qml:241
 msgctxt "ManagePupilsView|"
 msgid "Import pupils"
 msgstr "Importer des élèves"
 
-#: server/views/ManagePupilsView.qml:243
+#: server/views/ManagePupilsView.qml:250
 msgctxt "ManagePupilsView|"
 msgid "Remove pupils"
 msgstr "Retirer des élèves"
@@ -2323,6 +2313,14 @@ msgstr "Élèves identifiés"
 msgctxt "SettingsView|"
 msgid "Activities data received"
 msgstr "Données des activités reçues"
+
+#~ msgctxt "SqlLineDialog|"
+#~ msgid "<"
+#~ msgstr "<"
+
+#~ msgctxt "SqlLineDialog|"
+#~ msgid ">"
+#~ msgstr ">"
 
 #~ msgctxt "LoginView|"
 #~ msgid "GCompris Teachers Tool"

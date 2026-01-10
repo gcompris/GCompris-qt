@@ -1,16 +1,16 @@
 # Translation of gcompris_voices.po to Catalan
-# Copyright (C) 2017-2025 This_file_is_part_of_KDE
+# Copyright (C) 2017-2026 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# SPDX-FileCopyrightText: 2017, 2019, 2021, 2022, 2023, 2024, 2025 Josep M. Ferrer <txemaq@gmail.com>
+# SPDX-FileCopyrightText: 2017, 2019, 2021, 2022, 2023, 2024, 2025, 2026 Josep M. Ferrer <txemaq@gmail.com>
 # SPDX-FileCopyrightText: 2017, 2018, 2019, 2020, 2021 Antoni Bella Pérez <antonibella5@yahoo.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-23 02:37+0000\n"
-"PO-Revision-Date: 2025-12-23 08:50+0100\n"
+"PO-Revision-Date: 2026-01-09 11:34+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -856,7 +856,7 @@ msgstr ""
 #: activities/memory-case-association/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the upper case card with its lower case pair."
-msgstr "Emparella la targeta en majúscules amb el seu parell en minúscules."
+msgstr "Aparella la targeta en majúscules amb el seu parell en minúscules."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-enumerate"
 #: activities/memory-enumerate/ActivityInfo.qml:18
@@ -920,7 +920,7 @@ msgstr "Fes clic sobre una targeta i troba el seu doble."
 #: activities/memory-wordnumber/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the numeric with the word."
-msgstr "Emparella el numèric amb la paraula."
+msgstr "Aparella el numèric amb la paraula."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mining"
 #: activities/mining/ActivityInfo.qml:18

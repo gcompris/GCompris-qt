@@ -523,47 +523,47 @@ msgctxt "ComparatorEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Jānovērš šīs kļūdas:<ul>%1</ul>"
 
-#: server/activities/DailyReport.qml:33
+#: server/activities/DailyReport.qml:32
 msgctxt "DailyReport|"
 msgid "All groups"
 msgstr "Visas grupas"
 
 #. Group name first, then Date range, with a space between them. Example: "Group Name 01/07/2025-08/07/2025"
-#: server/activities/DailyReport.qml:126
+#: server/activities/DailyReport.qml:125
 #, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: server/activities/DailyReport.qml:130
+#: server/activities/DailyReport.qml:129
 msgctxt "DailyReport|"
 msgid "Calendar"
 msgstr "Kalendārs"
 
-#: server/activities/DailyReport.qml:185
+#: server/activities/DailyReport.qml:180
 msgctxt "DailyReport|"
 msgid "Count"
 msgstr "Skaits"
 
-#: server/activities/DailyReport.qml:195
+#: server/activities/DailyReport.qml:189
 msgctxt "DailyReport|"
 msgid "Time"
 msgstr "Laiks"
 
-#: server/activities/DailyReport.qml:205
+#: server/activities/DailyReport.qml:198
 msgctxt "DailyReport|"
 msgid "Ratio"
 msgstr "Attiecība"
 
 #. Number of result lines
-#: server/activities/DailyReport.qml:217
+#: server/activities/DailyReport.qml:209
 #, qt-format
 msgctxt "DailyReport|"
 msgid "Lines: %1"
 msgstr "Rindas: %1"
 
 #. Success ratio, example: "50 %"
-#: server/activities/DailyReport.qml:316
+#: server/activities/DailyReport.qml:309
 #, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %"
@@ -1201,7 +1201,7 @@ msgctxt "EditorBox|"
 msgid "Move up"
 msgstr "Pārvietot augšup"
 
-#: server/components/EditorBox.qml:118
+#: server/components/EditorBox.qml:119
 msgctxt "EditorBox|"
 msgid "Move down"
 msgstr "Pārvietot lejup"
@@ -1606,17 +1606,7 @@ msgctxt "SqlLineDialog|"
 msgid "Line details"
 msgstr "Rindas informācija"
 
-#: server/dialogs/SqlLineDialog.qml:151
-msgctxt "SqlLineDialog|"
-msgid "<"
-msgstr "<"
-
-#: server/dialogs/SqlLineDialog.qml:175
-msgctxt "SqlLineDialog|"
-msgid ">"
-msgstr ">"
-
-#: server/dialogs/SqlLineDialog.qml:191
+#: server/dialogs/SqlLineDialog.qml:193
 msgctxt "SqlLineDialog|"
 msgid "Close"
 msgstr "Aizvērt"
@@ -1889,32 +1879,32 @@ msgctxt "DatasetsView|"
 msgid "Datasets management"
 msgstr "Datu kopu pārvaldība"
 
-#: server/views/DatasetsView.qml:119
+#: server/views/DatasetsView.qml:120
 msgctxt "DatasetsView|"
 msgid "Create dataset"
 msgstr "Izveidot datu kopu"
 
-#: server/views/DatasetsView.qml:127
+#: server/views/DatasetsView.qml:129
 msgctxt "DatasetsView|"
 msgid "Update dataset"
 msgstr "Atjaunināt datu kopu"
 
-#: server/views/DatasetsView.qml:135
+#: server/views/DatasetsView.qml:138
 msgctxt "DatasetsView|"
 msgid "Send dataset to clients"
 msgstr "Sūtīt datu kopas klientiem"
 
-#: server/views/DatasetsView.qml:153
+#: server/views/DatasetsView.qml:157
 msgctxt "DatasetsView|"
 msgid "Remove dataset from clients"
 msgstr "Noņemt no klientiem datu kopas"
 
-#: server/views/DatasetsView.qml:177
+#: server/views/DatasetsView.qml:182
 msgctxt "DatasetsView|"
 msgid "Remove all datasets from clients"
 msgstr "Noņemt no klientiem visas datu kopas"
 
-#: server/views/DatasetsView.qml:186
+#: server/views/DatasetsView.qml:192
 msgctxt "DatasetsView|"
 msgid "Delete dataset"
 msgstr "Dzēst datu kopas"
@@ -2075,7 +2065,7 @@ msgctxt "LoginView|"
 msgid "Database file:"
 msgstr "Datubāzes datne:"
 
-#: server/views/ManagePupilsView.qml:34 server/views/ManagePupilsView.qml:147
+#: server/views/ManagePupilsView.qml:34 server/views/ManagePupilsView.qml:148
 msgctxt "ManagePupilsView|"
 msgid "Add a group"
 msgstr "Pievienot grupu"
@@ -2095,7 +2085,7 @@ msgctxt "ManagePupilsView|"
 msgid "Edit group"
 msgstr "Rediģēt grupu"
 
-#: server/views/ManagePupilsView.qml:68 server/views/ManagePupilsView.qml:204
+#: server/views/ManagePupilsView.qml:68 server/views/ManagePupilsView.qml:206
 msgctxt "ManagePupilsView|"
 msgid "Add a pupil"
 msgstr "Pievienot skolēnu"
@@ -2110,37 +2100,37 @@ msgctxt "ManagePupilsView|"
 msgid "Groups"
 msgstr "Grupas"
 
-#: server/views/ManagePupilsView.qml:157
+#: server/views/ManagePupilsView.qml:158
 msgctxt "ManagePupilsView|"
 msgid "Pupils and groups"
 msgstr "Skolēni un grupas"
 
-#: server/views/ManagePupilsView.qml:186
+#: server/views/ManagePupilsView.qml:187
 msgctxt "ManagePupilsView|"
 msgid "Pupils management"
 msgstr "Skolēnu pārvaldība"
 
-#: server/views/ManagePupilsView.qml:212
+#: server/views/ManagePupilsView.qml:215
 msgctxt "ManagePupilsView|"
 msgid "Add to groups"
 msgstr "Pievienot grupām"
 
-#: server/views/ManagePupilsView.qml:220
+#: server/views/ManagePupilsView.qml:224
 msgctxt "ManagePupilsView|"
 msgid "Remove from groups"
 msgstr "Noņemt no grupām"
 
-#: server/views/ManagePupilsView.qml:228
+#: server/views/ManagePupilsView.qml:233
 msgctxt "ManagePupilsView|"
 msgid "Export pupils"
 msgstr "Eksportēt skolēnus"
 
-#: server/views/ManagePupilsView.qml:235
+#: server/views/ManagePupilsView.qml:241
 msgctxt "ManagePupilsView|"
 msgid "Import pupils"
 msgstr "Importēt skolēnus"
 
-#: server/views/ManagePupilsView.qml:243
+#: server/views/ManagePupilsView.qml:250
 msgctxt "ManagePupilsView|"
 msgid "Remove pupils"
 msgstr "Noņemt skolēnus"
@@ -2296,6 +2286,14 @@ msgstr "Ierakstījušies skolēni"
 msgctxt "SettingsView|"
 msgid "Activities data received"
 msgstr "Saņemti aktivitāšu dati"
+
+#~ msgctxt "SqlLineDialog|"
+#~ msgid "<"
+#~ msgstr "<"
+
+#~ msgctxt "SqlLineDialog|"
+#~ msgid ">"
+#~ msgstr ">"
 
 #, fuzzy
 #~| msgctxt "AllData|"
