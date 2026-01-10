@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-10-10 11:34+0300\n"
+"PO-Revision-Date: 2026-01-09 18:05+0300\n"
 "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -164,54 +164,46 @@ msgstr "Знайдзіце загаданыя лікі і перацягніце
 
 #. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the previous numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n previous number(s)."
 msgid_plural "Find the %n previous number(s)."
-msgstr[0] "Знайдзіце папярэднія лікі."
-msgstr[1] "Знайдзіце папярэднія лікі."
-msgstr[2] "Знайдзіце папярэднія лікі."
+msgstr[0] "Знайдзіце %n папярэдні лік."
+msgstr[1] "Знайдзіце %n папярэднія лікі."
+msgstr[2] "Знайдзіце %n папярэдніх лікаў."
 msgstr[3] "Знайдзіце папярэднія лікі."
 
 #. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:60
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the next numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n next number(s)."
 msgid_plural "Find the %n next number(s)."
-msgstr[0] "Знайдзіце наступныя лікі."
-msgstr[1] "Знайдзіце наступныя лікі."
-msgstr[2] "Знайдзіце наступныя лікі."
+msgstr[0] "Знайдзіце %n наступны лік."
+msgstr[1] "Знайдзіце %n наступныя лікі."
+msgstr[2] "Знайдзіце %n наступных лікі."
 msgstr[3] "Знайдзіце наступныя лікі."
 
 #. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:64
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the in-between numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n in-between number(s)"
 msgid_plural "Find the %n in-between number(s)"
-msgstr[0] "Знайдзіце лікі па-сярэдзіне."
-msgstr[1] "Знайдзіце лікі па-сярэдзіне."
-msgstr[2] "Знайдзіце лікі па-сярэдзіне."
+msgstr[0] "Знайдзіце %n лік у прамежку."
+msgstr[1] "Знайдзіце %n лікі ў прамежку."
+msgstr[2] "Знайдзіце %n лікаў у прамежку."
 msgstr[3] "Знайдзіце лікі па-сярэдзіне."
 
 #. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:68
-#, fuzzy, qt-format
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n missing numbers"
 msgid_plural "Find the %n missing numbers"
-msgstr[0] "Дзяленне лікаў"
-msgstr[1] "Дзяленне лікаў"
-msgstr[2] "Дзяленне лікаў"
+msgstr[0] "Знайдзіце %n адсутны лік."
+msgstr[1] "Знайдзіце %n адсутныя лікі."
+msgstr[2] "Знайдзіце %n адсутных лікаў."
 msgstr[3] "Дзяленне лікаў"
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
@@ -2786,7 +2778,7 @@ msgstr ""
 #: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
 msgid "OK"
-msgstr ""
+msgstr "Добра"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
 msgctxt "balanceboxeditor|"
@@ -6779,12 +6771,10 @@ msgstr ""
 
 #: activities/drawing_wheels/ActivityConfig.qml:29
 #: activities/sketch/ActivityConfig.qml:29
-#, fuzzy, qt-format
-#| msgctxt "guessnumber|"
-#| msgid "Number found!"
+#, qt-format
 msgctxt "ActivityConfig|"
 msgid "Number of undo: %1"
-msgstr "Правільны лік!"
+msgstr "Колькасць скасаванняў: %1"
 
 #: activities/drawing_wheels/ActivityConfig.qml:44
 #: activities/sketch/ActivityConfig.qml:44
@@ -6796,30 +6786,23 @@ msgstr ""
 
 #. Activity title
 #: activities/drawing_wheels/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw letters"
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
-msgstr "Маляванне літар"
+msgstr "Малюючыя шасцярэнькі"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Touch the numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Roll the gear in the cogwheel to draw."
-msgstr "Выберыце лікі ў слушным парадку."
+msgstr "Малюйце, паварочваючы шасцярэнькі."
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr "Даведайцеся пра некаторыя прылады лічбавага выяўленчага мастацтва."
+msgstr ""
+"Даведайцеся пра гіпатрохоіды і выкарыстоўвайце іх як прылады для лічбавага "
+"малявання."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
@@ -6869,33 +6852,21 @@ msgid "Wheel and gear"
 msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:435
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Piano composition"
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
-msgstr "Кампазіцыя на піяніна"
+msgstr "Памер і пазіцыя алоўка"
 
 #: activities/drawing_wheels/DrawingWheels.qml:447
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font selector"
 msgctxt "DrawingWheels|"
 msgid "Color selector"
-msgstr "Выбар шрыфту"
+msgstr "Выбар колеру"
 
 #: activities/drawing_wheels/DrawingWheels.qml:474
-#, fuzzy
-#| msgctxt "OptionsRow|"
-#| msgid "Undo"
 msgctxt "DrawingWheels|"
 msgid "Undo"
-msgstr "Адмяніць"
+msgstr "Скасаваць"
 
 #: activities/drawing_wheels/DrawingWheels.qml:486
-#, fuzzy
-#| msgctxt "Checkers|"
-#| msgid "Redo"
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "Паўтарыць"
@@ -6921,33 +6892,21 @@ msgid "Hide wheel and gear"
 msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:712
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Захавайце вашую выяву"
 
 #: activities/drawing_wheels/DrawingWheels.qml:727
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Open an image"
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Адкрыць выяву"
 
 #: activities/drawing_wheels/DrawingWheels.qml:756
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Create a new image"
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Стварыце новую выяву"
 
 #: activities/drawing_wheels/DrawingWheels.qml:775
-#, fuzzy
-#| msgctxt "BackgroundColorSelector|"
-#| msgid "Background color"
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Колер фону"
@@ -6963,17 +6922,12 @@ msgid "Gear"
 msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:986
-#, fuzzy, qt-format
-#| msgctxt "SignalGenerator|"
-#| msgid "%1 s"
+#, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
-msgstr "%1 с"
+msgstr "%1 зубцоў"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1004
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Хуткасць"
@@ -6989,12 +6943,9 @@ msgid "Fast"
 msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:1083
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font size"
 msgctxt "DrawingWheels|"
 msgid "Pen size"
-msgstr "Памер шрыфту"
+msgstr "Памер асадкі"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1120
 msgctxt "DrawingWheels|"
@@ -7007,41 +6958,26 @@ msgid "Offset"
 msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:1201
-#, fuzzy
-#| msgctxt "IntroMessage|"
-#| msgid "Start"
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
-msgstr "Пачаць"
+msgstr "Пачатковы зубец"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1381
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "You did not save this image. Do you want to close this activity?"
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
-msgstr "Вы не захавалі выяву. Вы жадаеце закрыць практыкаванне?"
+msgstr "Вы не захавалі выяву. Ці жадаеце закрыць практыкаванне?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1382
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "Do you want to erase this image?"
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Вы жадаеце сцерці гэтую выяву?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1383
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Так"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1384
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "Не"
@@ -7646,13 +7582,6 @@ msgid "Chichén Itzá"
 msgstr "Чычэн-Іца"
 
 #: activities/explore_monuments/resource/board/board1.qml:20
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
-#| "the Yucatan Peninsula in Mexico, between Valladolid and Merida. It was "
-#| "established before the period of Christopher Colombus and probably served "
-#| "as the religion center of Yucatan for a while."
 msgctxt "board1|"
 msgid ""
 "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
@@ -7660,7 +7589,7 @@ msgid ""
 "established before the period of Christopher Columbus and probably served as "
 "the religion center of Yucatan for a while."
 msgstr ""
-"\"Чычэн-Іца\", што азначае: \"ў гарлавіны калодзежу Іца\", - горад Мая на "
+"Чычэн-Іца, што азначае: \"ў гарлавіны калодзежу Іца\", - горад Мая на "
 "паўвыспе Юкатан у Мексіцы, што паміж Вальядалід і Мерыдай. Ён быў заснаваны "
 "перад эпохай Крыстафэра Калумба і магчыма пэўны час быў рэлігійным цэнтрам "
 "Юкатан."
@@ -8924,7 +8853,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:42
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "сабор Санта-Марыя-дэль-Ф’ёрэ"
+msgstr "Сабор Санта-Марыя-дэль-Ф’ёрэ"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -15106,12 +15035,9 @@ msgstr "Знайсці лік паміж 1 і 5."
 
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Number to find between 0 and 20."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
-msgstr "Знайсці лік паміж 0 і 20."
+msgstr "Дзсятковы лік для пошуку паміж 0 і 4."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"
@@ -17752,11 +17678,6 @@ msgstr ""
 "метад, таемна выкладаючы яго ў інстытуце."
 
 #: activities/louis-braille/louis_braille_data.js:52
-#, fuzzy
-#| msgctxt "louis_braille_data|"
-#| msgid ""
-#| "He revised and extended braille to include mathematics, symbols, "
-#| "punctuations and music notations."
 msgctxt "louis_braille_data|"
 msgid ""
 "He revised and extended braille to include mathematics, symbols, punctuation "
@@ -19863,12 +19784,9 @@ msgid "Server port"
 msgstr ""
 
 #: activities/menu/ServerConfigPage.qml:177
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "ServerConfigPage|"
 msgid "Server port must be a number between 0 and 65535."
-msgstr "Адгадайце лічбу паміж 1 і %1."
+msgstr "Порт серверу мусіць мець значэнне ад 0 да 65535."
 
 #. Activity title
 #: activities/mining/ActivityInfo.qml:15
@@ -20440,12 +20358,9 @@ msgstr "Да 24 элементаў у некалькі радкоў."
 
 #. Activity title
 #: activities/multiple_choice_questions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication."
 msgctxt "ActivityInfo|"
 msgid "Multiple-choice questions"
-msgstr "Множанне."
+msgstr "Пытанні з множнымі варыянтамі адказаў"
 
 #. Help title
 #: activities/multiple_choice_questions/ActivityInfo.qml:18
@@ -20470,28 +20385,20 @@ msgid ""
 msgstr ""
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate through the answers"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: navigate through the answer list"
-msgstr "Стрэлкі: навігацыя па адказах"
+msgstr "Стрэлкі ўверх і ўніз: навігацыя па спісе адказаў"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select or deselect a circle"
 msgctxt "ActivityInfo|"
 msgid "Space: select or deselect the highlighted answer"
-msgstr "Прагал: выбраць ці скінуць выбар кола"
+msgstr "Прагал: выбраць ці скасаваць вылучаны адказ"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
-msgstr "Увод: праверыць ваш адказ, калі даступная кнопка ОК"
+msgstr ""
+"Увод: праверыць ваш адказ, ці закрыць тэкставую панэль зваротнай сувязі"
 
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
@@ -20580,50 +20487,34 @@ msgstr ""
 "фішак на дошцы."
 
 #: activities/nine_men_morris/NineMenMorris.qml:356
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "After all the pieces are placed, you and Tux will take turns to move "
-#| "them. Click on one of your pieces, and then on an adjacent empty spot to "
-#| "move it there. Green color spots indicates where you can move."
 msgctxt "NineMenMorris|"
 msgid ""
 "After all the pieces are placed, you and Tux will take turns to move them. "
 "Click on one of your pieces, and then on an adjacent empty spot to move it "
 "there. Green color spots indicates where you can move."
 msgstr ""
-"Пасля таго як усе фішкі размешчаныя, Вы з Туксам будзеце па чарзе імі "
-"хадзіць. Пстрыкніце па якой-небудзь Вашай фішцы, а затым - па суседнім "
+"Пасля таго як усе фішкі размешчаныя, Вы з Туксам будзеце па чарзе іх "
+"перасоўваць. Пстрыкніце па якой-небудзь Вашай фішцы, а затым - па суседнім "
 "вольным месцы для перасоўвання фішкі ў гэтае месца. Пазнакі зялёнага колеру "
-"падказваюць мажлівыя хады."
+"падказваюць магчымыя хады."
 
 #: activities/nine_men_morris/NineMenMorris.qml:360
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
-#| "moved to any vacant spot on the board."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
 "moved to any vacant spot on the board."
 msgstr ""
-"Калі Вы засталіся з трыма фішкамі, то Вашыя фішкі набываюць мажлівасць "
-"\"лятаць\" і могуць ставіцца на любое вольнае месца на дошцы."
+"Калі Вы засталіся з трыма фішкамі, то яны набываюць здольнасць \"лятаць\" і "
+"могуць ставіцца на любое вольнае месца на дошцы."
 
 #: activities/nine_men_morris/NineMenMorris.qml:364
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you immobilize the computer or leave it with less than 3 pieces, then "
-#| "you win the game."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
 "win the game."
 msgstr ""
-"Калі Вы паралізуеце кампутара ці пакінеце яму менш за тры фішкі, то Вы "
-"перамагаеце."
+"Калі Вы пазбавіце кампутара магчымасці зрабіць ход ці пакінеце яму менш за "
+"тры фішкі, то Вы перамагаеце ў гульні."
 
 #. Activity title
 #: activities/nine_men_morris_2players/ActivityInfo.qml:15
@@ -22863,17 +22754,11 @@ msgstr ""
 "яго позірку."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:545
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgctxt "ProgrammingMaze|"
 msgid "<b>2. Turn left:</b> Turns Tux to the left."
-msgstr "<b>2. Павярнуць налева</b> Паварочвае Тукса налева."
+msgstr "<b>2. Павярнуць налева:</b> Паварочвае Тукса налева."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:546
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgctxt "ProgrammingMaze|"
 msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgstr "<b>3. Павярнуць направа:</b> Паварочвае Тукса направа."
@@ -22884,26 +22769,18 @@ msgid "Main Function:"
 msgstr "Галоўная функцыя:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:551
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "The execution of the code starts here."
 msgctxt "ProgrammingMaze|"
 msgid "The execution of the code starts here."
-msgstr "Выкананне коду пачынаецца адсюль."
+msgstr "Выконванне коду пачынаецца адсюль."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:552
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-Click on any instruction in the <b>instruction area</b> to add it to the "
-#| "<b>Main Function</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-Click on any instruction in the <b>instruction area</b> to add it to the "
 "<b>Main Function</b>."
 msgstr ""
 "Пстрыкніце па любой інструкцыі ў <b>зоне інструкцый</b>, каб дадаць яе ў "
-"<b>праграму</b>."
+"<b>Галоўную функцыю</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:553
 #, fuzzy

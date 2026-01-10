@@ -524,47 +524,47 @@ msgctxt "ComparatorEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Слід виправити такі помилки:<ul>%1</ul>"
 
-#: server/activities/DailyReport.qml:33
+#: server/activities/DailyReport.qml:32
 msgctxt "DailyReport|"
 msgid "All groups"
 msgstr "Усі групи"
 
 #. Group name first, then Date range, with a space between them. Example: "Group Name 01/07/2025-08/07/2025"
-#: server/activities/DailyReport.qml:126
+#: server/activities/DailyReport.qml:125
 #, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: server/activities/DailyReport.qml:130
+#: server/activities/DailyReport.qml:129
 msgctxt "DailyReport|"
 msgid "Calendar"
 msgstr "Календар"
 
-#: server/activities/DailyReport.qml:185
+#: server/activities/DailyReport.qml:180
 msgctxt "DailyReport|"
 msgid "Count"
 msgstr "Лічильник"
 
-#: server/activities/DailyReport.qml:195
+#: server/activities/DailyReport.qml:189
 msgctxt "DailyReport|"
 msgid "Time"
 msgstr "Час"
 
-#: server/activities/DailyReport.qml:205
+#: server/activities/DailyReport.qml:198
 msgctxt "DailyReport|"
 msgid "Ratio"
 msgstr "Частка"
 
 #. Number of result lines
-#: server/activities/DailyReport.qml:217
+#: server/activities/DailyReport.qml:209
 #, qt-format
 msgctxt "DailyReport|"
 msgid "Lines: %1"
 msgstr "Рядки: %1"
 
 #. Success ratio, example: "50 %"
-#: server/activities/DailyReport.qml:316
+#: server/activities/DailyReport.qml:309
 #, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %"
@@ -1206,7 +1206,7 @@ msgctxt "EditorBox|"
 msgid "Move up"
 msgstr "Пересунути вище"
 
-#: server/components/EditorBox.qml:118
+#: server/components/EditorBox.qml:119
 msgctxt "EditorBox|"
 msgid "Move down"
 msgstr "Пересунути нижче"
@@ -1222,7 +1222,10 @@ msgid "Remove last entry"
 msgstr "Вилучити останній запис"
 
 #: server/components/FoldDown.qml:138
-msgctxt "FoldDown|"
+#, fuzzy
+#| msgctxt "FoldDown|"
+#| msgid "Filter list"
+msgctxt "FoldDown|@action"
 msgid "Filter list"
 msgstr "Список фільтрів"
 
@@ -1612,17 +1615,7 @@ msgctxt "SqlLineDialog|"
 msgid "Line details"
 msgstr "Параметри рядка"
 
-#: server/dialogs/SqlLineDialog.qml:151
-msgctxt "SqlLineDialog|"
-msgid "<"
-msgstr "<"
-
-#: server/dialogs/SqlLineDialog.qml:175
-msgctxt "SqlLineDialog|"
-msgid ">"
-msgstr ">"
-
-#: server/dialogs/SqlLineDialog.qml:191
+#: server/dialogs/SqlLineDialog.qml:193
 msgctxt "SqlLineDialog|"
 msgid "Close"
 msgstr "Закрити"
@@ -1713,8 +1706,11 @@ msgid "Users IDs"
 msgstr "Ідентифікатори користувачів"
 
 #: server/singletons/Master.qml:42
+#, fuzzy
+#| msgctxt "Master|"
+#| msgid "Activity Id"
 msgctxt "Master|"
-msgid "Activity Id"
+msgid "Activity ID"
 msgstr "Ідентифікатор дії"
 
 #: server/singletons/Master.qml:43
@@ -1881,8 +1877,11 @@ msgid "Delete"
 msgstr "Вилучити"
 
 #: server/views/datas/DuplicateData.qml:212
+#, fuzzy
+#| msgctxt "DuplicateData|"
+#| msgid "You are about to delete datas"
 msgctxt "DuplicateData|"
-msgid "You are about to delete datas"
+msgid "You are about to delete data"
 msgstr "Зараз буде вилучено дані"
 
 #: server/views/datas/DuplicateData.qml:230
@@ -1905,32 +1904,32 @@ msgctxt "DatasetsView|"
 msgid "Datasets management"
 msgstr "Керування наборами даних"
 
-#: server/views/DatasetsView.qml:119
+#: server/views/DatasetsView.qml:120
 msgctxt "DatasetsView|"
 msgid "Create dataset"
 msgstr "Створити набір даних"
 
-#: server/views/DatasetsView.qml:127
+#: server/views/DatasetsView.qml:129
 msgctxt "DatasetsView|"
 msgid "Update dataset"
 msgstr "Оновити набір даних"
 
-#: server/views/DatasetsView.qml:135
+#: server/views/DatasetsView.qml:138
 msgctxt "DatasetsView|"
 msgid "Send dataset to clients"
 msgstr "Надіслати набір даних клієнтам"
 
-#: server/views/DatasetsView.qml:153
+#: server/views/DatasetsView.qml:157
 msgctxt "DatasetsView|"
 msgid "Remove dataset from clients"
 msgstr "Вилучити набір даних для клієнтів"
 
-#: server/views/DatasetsView.qml:177
+#: server/views/DatasetsView.qml:182
 msgctxt "DatasetsView|"
 msgid "Remove all datasets from clients"
 msgstr "Вилучити усі набори даних для клієнтів"
 
-#: server/views/DatasetsView.qml:186
+#: server/views/DatasetsView.qml:192
 msgctxt "DatasetsView|"
 msgid "Delete dataset"
 msgstr "Вилучити набір даних"
@@ -1951,9 +1950,12 @@ msgid "Not connected"
 msgstr "Не з'єднано"
 
 #: server/views/DevicesView.qml:54
+#, fuzzy
+#| msgctxt "LoginView|"
+#| msgid "Incorrect password"
 msgctxt "DevicesView|"
-msgid "Bad password input"
-msgstr "Введення помилкового пароля"
+msgid "Incorrect password"
+msgstr "Помилковий пароль"
 
 #: server/views/DevicesView.qml:56
 msgctxt "DevicesView|"
@@ -2091,7 +2093,7 @@ msgctxt "LoginView|"
 msgid "Database file:"
 msgstr "Файл бази даних:"
 
-#: server/views/ManagePupilsView.qml:34 server/views/ManagePupilsView.qml:147
+#: server/views/ManagePupilsView.qml:34 server/views/ManagePupilsView.qml:148
 msgctxt "ManagePupilsView|"
 msgid "Add a group"
 msgstr "Додати групу"
@@ -2111,7 +2113,7 @@ msgctxt "ManagePupilsView|"
 msgid "Edit group"
 msgstr "Редагувати групу"
 
-#: server/views/ManagePupilsView.qml:68 server/views/ManagePupilsView.qml:204
+#: server/views/ManagePupilsView.qml:68 server/views/ManagePupilsView.qml:206
 msgctxt "ManagePupilsView|"
 msgid "Add a pupil"
 msgstr "Додати запис учня"
@@ -2126,37 +2128,37 @@ msgctxt "ManagePupilsView|"
 msgid "Groups"
 msgstr "Групи"
 
-#: server/views/ManagePupilsView.qml:157
+#: server/views/ManagePupilsView.qml:158
 msgctxt "ManagePupilsView|"
 msgid "Pupils and groups"
 msgstr "Учні і групи"
 
-#: server/views/ManagePupilsView.qml:186
+#: server/views/ManagePupilsView.qml:187
 msgctxt "ManagePupilsView|"
 msgid "Pupils management"
 msgstr "Керування записами учнів"
 
-#: server/views/ManagePupilsView.qml:212
+#: server/views/ManagePupilsView.qml:215
 msgctxt "ManagePupilsView|"
 msgid "Add to groups"
 msgstr "Додати до груп"
 
-#: server/views/ManagePupilsView.qml:220
+#: server/views/ManagePupilsView.qml:224
 msgctxt "ManagePupilsView|"
 msgid "Remove from groups"
 msgstr "Вилучити з груп"
 
-#: server/views/ManagePupilsView.qml:228
+#: server/views/ManagePupilsView.qml:233
 msgctxt "ManagePupilsView|"
 msgid "Export pupils"
 msgstr "Експортувати записи учнів"
 
-#: server/views/ManagePupilsView.qml:235
+#: server/views/ManagePupilsView.qml:241
 msgctxt "ManagePupilsView|"
 msgid "Import pupils"
 msgstr "Імпортувати записи учнів"
 
-#: server/views/ManagePupilsView.qml:243
+#: server/views/ManagePupilsView.qml:250
 msgctxt "ManagePupilsView|"
 msgid "Remove pupils"
 msgstr "Вилучити записи учнів"
@@ -2211,107 +2213,126 @@ msgctxt "SettingsView|"
 msgid "Port"
 msgstr "Порт"
 
-#. next line will display if the server is running or already running
-#: server/views/SettingsView.qml:189
+#: server/views/SettingsView.qml:188
+#, fuzzy
+#| msgctxt "SettingsView|"
+#| msgid "Server is"
 msgctxt "SettingsView|"
-msgid "Server is"
+msgid "Server status"
 msgstr "Сервер"
 
-#: server/views/SettingsView.qml:190
-msgctxt "SettingsView|"
+#: server/views/SettingsView.qml:189
+#, fuzzy
+#| msgctxt "SettingsView|"
+#| msgid "Running"
+msgctxt "SettingsView|As in 'The server is running'"
 msgid "Running"
 msgstr "Запущено"
 
-#: server/views/SettingsView.qml:190
-#, qt-format
-msgctxt "SettingsView|"
+#: server/views/SettingsView.qml:189
+#, fuzzy, qt-format
+#| msgctxt "SettingsView|"
+#| msgid "Already running on port %1"
+msgctxt "SettingsView|As in 'The Server is already running on port %1'"
 msgid "Already running on port %1"
 msgstr "Вже запущено на порту %1"
 
-#: server/views/SettingsView.qml:198
+#: server/views/SettingsView.qml:197
 msgctxt "SettingsView|"
 msgid "Host name"
 msgstr "Назва вузла"
 
-#: server/views/SettingsView.qml:205
+#: server/views/SettingsView.qml:204
 msgctxt "SettingsView|"
 msgid "Server IP"
 msgstr "IP сервера"
 
-#: server/views/SettingsView.qml:212
+#: server/views/SettingsView.qml:211
 msgctxt "SettingsView|"
 msgid "Broadcast IPs"
 msgstr "IP-адреси трансляції"
 
-#: server/views/SettingsView.qml:219
+#: server/views/SettingsView.qml:218
 msgctxt "SettingsView|"
 msgid "Netmask"
 msgstr "Маска мережі"
 
-#: server/views/SettingsView.qml:224
+#: server/views/SettingsView.qml:223
 msgctxt "SettingsView|"
 msgid "MAC address"
 msgstr "MAC-адреса"
 
-#: server/views/SettingsView.qml:231
+#: server/views/SettingsView.qml:230
 msgctxt "SettingsView|"
 msgid "GCompris version"
 msgstr "Версія GCompris"
 
-#: server/views/SettingsView.qml:238
+#: server/views/SettingsView.qml:237
 msgctxt "SettingsView|"
 msgid "Qt version"
 msgstr "Версія Qt"
 
-#: server/views/SettingsView.qml:251
+#: server/views/SettingsView.qml:250
 msgctxt "SettingsView|"
 msgid "Teacher login"
 msgstr "Обліковий запис вчителя"
 
-#: server/views/SettingsView.qml:259
+#: server/views/SettingsView.qml:258
 msgctxt "SettingsView|"
 msgid "Database file"
 msgstr "Файл бази даних"
 
-#: server/views/SettingsView.qml:266
+#: server/views/SettingsView.qml:265
 msgctxt "SettingsView|"
 msgid "Encrypted database"
 msgstr "Зашифрована база даних"
 
-#: server/views/SettingsView.qml:267
+#: server/views/SettingsView.qml:266
 msgctxt "SettingsView|"
 msgid "Yes"
 msgstr "Так"
 
-#: server/views/SettingsView.qml:267
+#: server/views/SettingsView.qml:266
 msgctxt "SettingsView|"
 msgid "No"
 msgstr "Ні"
 
-#: server/views/SettingsView.qml:272
+#: server/views/SettingsView.qml:271
 msgctxt "SettingsView|"
 msgid "Pupils"
 msgstr "Учні"
 
-#: server/views/SettingsView.qml:278
+#: server/views/SettingsView.qml:277
 msgctxt "SettingsView|"
 msgid "Groups"
 msgstr "Групи"
 
-#: server/views/SettingsView.qml:291
+#: server/views/SettingsView.qml:290
 msgctxt "SettingsView|"
 msgid "Pupils connected"
 msgstr "З'єднані учні"
 
-#: server/views/SettingsView.qml:298
+#: server/views/SettingsView.qml:297
 msgctxt "SettingsView|"
 msgid "Pupils logged"
 msgstr "Учні у системі"
 
-#: server/views/SettingsView.qml:305
+#: server/views/SettingsView.qml:304
 msgctxt "SettingsView|"
 msgid "Activities data received"
 msgstr "Отримано даних вправ"
+
+#~ msgctxt "SqlLineDialog|"
+#~ msgid "<"
+#~ msgstr "<"
+
+#~ msgctxt "SqlLineDialog|"
+#~ msgid ">"
+#~ msgstr ">"
+
+#~ msgctxt "DevicesView|"
+#~ msgid "Bad password input"
+#~ msgstr "Введення помилкового пароля"
 
 #~ msgctxt "LoginView|"
 #~ msgid "GCompris Teachers Tool"
