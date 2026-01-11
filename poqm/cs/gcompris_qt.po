@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-01-22 17:22+0100\n"
+"PO-Revision-Date: 2025-12-23 00:57+0100\n"
 "Last-Translator: Jan Papez (honyczek) <honyczek@centrum.cz>\n"
 "Language-Team: Czech <kde-i18n-cs@kde.org>\n"
 "Language: cs\n"
@@ -5880,9 +5880,6 @@ msgstr "Digitální elektřina"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
 msgstr "Vytvoř a simuluj digitální logický obvod."
@@ -6602,12 +6599,10 @@ msgstr ""
 
 #: activities/drawing_wheels/ActivityConfig.qml:29
 #: activities/sketch/ActivityConfig.qml:29
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 19."
+#, qt-format
 msgctxt "ActivityConfig|"
 msgid "Number of undo: %1"
-msgstr "Číslice od 1 do 9."
+msgstr "Počet kroků zpět: %1"
 
 #: activities/drawing_wheels/ActivityConfig.qml:44
 #: activities/sketch/ActivityConfig.qml:44
@@ -6616,30 +6611,27 @@ msgid ""
 "Warning: setting the number of undo too high can make the application crash "
 "if your device doesn't have enough memory."
 msgstr ""
+"Upozornění: Nastavení příliš vysokého počtu kroků zpět může v případě "
+"nedostatku paměti ve vašem zařízení způsobit pád aplikace."
 
 #. Activity title
 #: activities/drawing_wheels/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "BrushToolPanel|"
-#| msgid "Drawing Tools"
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
-msgstr "Nástroje pro kresbu"
+msgstr "Nástroje kolečka"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Roll the gear in the cogwheel to draw."
-msgstr ""
+msgstr "Pro kreslení otáčej ozubením uvnitř ozubeného kolečka."
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr "Nauč se něco o digitálních kreslicích nástrojích."
+msgstr ""
+"Objevuj hypotrochoidy a používej je jako digitální nástroje pro malování."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
@@ -6681,33 +6673,24 @@ msgstr "Ctrl + O: Otevřít obrázek"
 #: activities/drawing_wheels/DrawingWheels.qml:399
 msgctxt "DrawingWheels|"
 msgid "File menu"
-msgstr ""
+msgstr "Nabídka souboru"
 
 #: activities/drawing_wheels/DrawingWheels.qml:411
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
-msgstr ""
+msgstr "Kolečko a ozubení"
 
 #: activities/drawing_wheels/DrawingWheels.qml:435
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Piano composition"
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
-msgstr "Skládej na pianu"
+msgstr "Velikost a pozice tužky"
 
 #: activities/drawing_wheels/DrawingWheels.qml:447
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font selector"
 msgctxt "DrawingWheels|"
 msgid "Color selector"
-msgstr "Volba písma"
+msgstr "Výběr barvy"
 
 #: activities/drawing_wheels/DrawingWheels.qml:474
-#, fuzzy
-#| msgctxt "OptionsRow|"
-#| msgid "Undo"
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Zpět"
@@ -6715,56 +6698,44 @@ msgstr "Zpět"
 #: activities/drawing_wheels/DrawingWheels.qml:486
 msgctxt "DrawingWheels|"
 msgid "Redo"
-msgstr ""
+msgstr "Znovu"
 
 #: activities/drawing_wheels/DrawingWheels.qml:520
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
-msgstr ""
+msgstr "Ukončit kreslení"
 
 #: activities/drawing_wheels/DrawingWheels.qml:520
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
-msgstr ""
+msgstr "Začít kreslení"
 
 #: activities/drawing_wheels/DrawingWheels.qml:553
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
-msgstr ""
+msgstr "Zobrazit kolečko a ozubení"
 
 #: activities/drawing_wheels/DrawingWheels.qml:553
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
-msgstr ""
+msgstr "Skrýt kolečko a ozubení"
 
 #: activities/drawing_wheels/DrawingWheels.qml:712
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
-msgstr "Uložte si obrázek"
+msgstr "Uložit si obrázek"
 
 #: activities/drawing_wheels/DrawingWheels.qml:727
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Open an image"
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Otevřít obrázek"
 
 #: activities/drawing_wheels/DrawingWheels.qml:756
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Create a new image"
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Vytvořit nový obrázek"
 
 #: activities/drawing_wheels/DrawingWheels.qml:775
-#, fuzzy
-#| msgctxt "BackgroundColorSelector|"
-#| msgid "Background color"
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Barva pozadí"
@@ -6772,25 +6743,20 @@ msgstr "Barva pozadí"
 #: activities/drawing_wheels/DrawingWheels.qml:856
 msgctxt "DrawingWheels|"
 msgid "Wheel"
-msgstr ""
+msgstr "Kolečko"
 
 #: activities/drawing_wheels/DrawingWheels.qml:923
 msgctxt "DrawingWheels|"
 msgid "Gear"
-msgstr ""
+msgstr "Ozubené kolečko"
 
 #: activities/drawing_wheels/DrawingWheels.qml:986
-#, fuzzy, qt-format
-#| msgctxt "SignalGenerator|"
-#| msgid "%1 s"
+#, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
-msgstr "%1 s"
+msgstr "%1 paprsků"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1004
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Rychlost"
@@ -6798,25 +6764,19 @@ msgstr "Rychlost"
 #: activities/drawing_wheels/DrawingWheels.qml:1020
 msgctxt "DrawingWheels|"
 msgid "Slow"
-msgstr ""
+msgstr "Pomalu"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1040
 msgctxt "DrawingWheels|"
 msgid "Fast"
-msgstr ""
+msgstr "Rychle"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1083
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font size"
 msgctxt "DrawingWheels|"
 msgid "Pen size"
-msgstr "Velikost písma"
+msgstr "Velikost pera"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1120
-#, fuzzy
-#| msgctxt "ToolsPanel|"
-#| msgid "Opacity"
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Krytí"
@@ -6824,44 +6784,29 @@ msgstr "Krytí"
 #: activities/drawing_wheels/DrawingWheels.qml:1163
 msgctxt "DrawingWheels|"
 msgid "Offset"
-msgstr ""
+msgstr "Posun"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1201
-#, fuzzy
-#| msgctxt "IntroMessage|"
-#| msgid "Start"
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
-msgstr "Spustit"
+msgstr "Počáteční zub"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1381
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "You did not save this image. Do you want to close this activity?"
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Tento obrázek jste neuložili. Chcete tuto aktivitu zavřít?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1382
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "Do you want to erase this image?"
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Chcete tento obrázek odstranit?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1383
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Ano"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1384
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "Ne"
@@ -7452,13 +7397,6 @@ msgid "Chichén Itzá"
 msgstr "Chichén Itzá"
 
 #: activities/explore_monuments/resource/board/board1.qml:20
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
-#| "the Yucatan Peninsula in Mexico, between Valladolid and Merida. It was "
-#| "established before the period of Christopher Colombus and probably served "
-#| "as the religion center of Yucatan for a while."
 msgctxt "board1|"
 msgid ""
 "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
@@ -7469,7 +7407,7 @@ msgstr ""
 "Chichen Itza, což znamená „u ústí studny Itza“, je mayské město na "
 "poloostrově Yucatán v Mexiku mezi Valladolidem a Meridou. Město bylo "
 "založeno před obdobím Kryštofa Colomba a pravděpodobně na chvíli sloužilo "
-"jako náboženské centrum."
+"jako náboženské centrum Yucatanu."
 
 #: activities/explore_monuments/resource/board/board1.qml:30
 #: activities/explore_monuments/resource/board/board1.qml:33
@@ -8362,7 +8300,7 @@ msgstr "Klikni na umístění dané památky."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "Zakázané město"
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8382,7 +8320,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "Lešanský Buddha"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8400,12 +8338,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Palác Mysore"
+msgstr "Palác Potala"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8425,7 +8360,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "Terakotová armáda"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8442,7 +8377,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr ""
+msgstr "Pagody Slunce a Měsíce"
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8460,12 +8395,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Eiffelova věž"
+msgstr "Věže Diaolou"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8482,17 +8414,11 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Indické památky"
+msgstr "Čínské památky"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Klikni na umístění dané památky."
@@ -8501,7 +8427,7 @@ msgstr "Klikni na umístění dané památky."
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "Pantheon"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8523,7 +8449,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "Milánský dóm"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8541,12 +8467,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Katedrála ve Worms"
+msgstr "Katedrála ve Florencii"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8565,12 +8488,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Hanojská věž"
+msgstr "Šikmá věž v Pise"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8590,7 +8510,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr ""
+msgstr "Bazilika svatého Marka"
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -8611,7 +8531,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr ""
+msgstr "Pompeje"
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -8629,29 +8549,20 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Indické památky"
+msgstr "Italské památky"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Klikni na umístění dané památky."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Velká + malá písmena"
+msgstr "Hrad Himedži"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -8669,7 +8580,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr ""
+msgstr "Památník míru v Hirošimě"
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -8690,7 +8601,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr ""
+msgstr "Svatyně Arakura Fuji Sengen"
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -8711,7 +8622,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr ""
+msgstr "Hrad Šuri Okinawa"
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -8729,17 +8640,11 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Francouzské památky"
+msgstr "Japonské památky"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Klikni na umístění dané památky."
@@ -14737,12 +14642,9 @@ msgstr "Najdi číslo mezi 1 a 5."
 
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Number to find between 0 and 20."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
-msgstr "Najdi číslo mezi 0 a 20."
+msgstr "Najdi desetinné číslo mezi 0 a 4."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"
@@ -15265,12 +15167,9 @@ msgid "Division required."
 msgstr "Je potřeba dělení."
 
 #: activities/guess24/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "Pexeso se všemi operacemi"
+msgstr "Jsou vyžadovány všechny operátory."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -17438,18 +17337,13 @@ msgid ""
 msgstr "Po promoci se stal učitelem a začal metodu tajně učit v Institutu."
 
 #: activities/louis-braille/louis_braille_data.js:52
-#, fuzzy
-#| msgctxt "louis_braille_data|"
-#| msgid ""
-#| "He revised and extended braille to include mathematics, symbols, "
-#| "punctuations and music notations."
 msgctxt "louis_braille_data|"
 msgid ""
 "He revised and extended braille to include mathematics, symbols, punctuation "
 "and music notations."
 msgstr ""
-"Později rozšířil Braillovo písmo o symboly, matematická znaménka, "
-"interpunkci a hudební zápis."
+"Revidoval a rozšířil Braillovo písmo o matematiku, symboly, interpunkci a "
+"hudební zápis."
 
 #: activities/louis-braille/louis_braille_data.js:57
 msgctxt "louis_braille_data|"
@@ -17480,12 +17374,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "Magický klobouk"
+msgstr "Magický klobouk (odčítání)"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -17576,12 +17467,9 @@ msgstr "%1x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "Magický klobouk"
+msgstr "Magický klobouk (sčítání)"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -24483,9 +24371,6 @@ msgid "Gradient Tools"
 msgstr "Nástroje pro přechody"
 
 #: activities/sketch/PaletteSelector.qml:148
-#, fuzzy
-#| msgctxt "ColorsPanel|"
-#| msgid "Palettes"
 msgctxt "PaletteSelector|"
 msgid "Palettes"
 msgstr "Palety"
@@ -27168,22 +27053,15 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Napiš celé padající slovo dřív, než spadnou na zem."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Kannada and Tamil"
-msgstr "Přidán překlad pro Lotyštinu"
+msgstr "Přidán překlad pro kannadštinu a tamilštinu"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgctxt "ChangeLog|"
 msgid "New command-line option to set the locale (--locale locale)"
 msgstr ""
-"Nová volba příkazového řádku pro přepnutí vykreslovače (--renderer "
-"vykreslovač)"
+"Nová volba příkazového řádku pro nastavení lokality (--locale lokalita)"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
@@ -27191,6 +27069,8 @@ msgid ""
 "New command-line option to show/hide the Home button (--hide-home-button/--"
 "show-home-button)"
 msgstr ""
+"Nová volba příkazového řádku pro zobrazení/skrytí tlačítka Domů (--hide-home-"
+"button/--show-home-button)"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:39 core/ChangeLog.qml:45
 #: core/ChangeLog.qml:54 core/ChangeLog.qml:60 core/ChangeLog.qml:65
@@ -27936,12 +27816,9 @@ msgid "No data found for %1."
 msgstr "Data nenalezena pro %1."
 
 #: core/GCCreationHandler.qml:185
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr "%1 úspěšně smazán!"
+msgstr "Soubor byl úspěšně smazán!"
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -27950,12 +27827,9 @@ msgid "OK"
 msgstr "OK"
 
 #: core/GCCreationHandler.qml:193
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
-msgstr "Nelze smazat %1!"
+msgstr "Soubor nelze smazat!"
 
 #: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
@@ -28010,7 +27884,7 @@ msgstr "Smazat"
 #: core/GCCreationHandler.qml:429
 msgctxt "GCCreationHandler|"
 msgid "Open folder"
-msgstr ""
+msgstr "Otevřít složku"
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
@@ -28137,22 +28011,19 @@ msgstr ""
 "když je zadána volba --launch."
 
 #: core/main.cpp:146
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid "Specify the activity when starting GCompris."
 msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
-msgstr "Zadání aktivity při spuštění GCompris."
+msgstr "Zadání umístění při spuštění GCompris."
 
 #: core/main.cpp:150
 msgctxt "QObject|"
 msgid "Hide the Home button in the bar."
-msgstr ""
+msgstr "Skrýt tlačítko Domů v panelu."
 
 #: core/main.cpp:154
 msgctxt "QObject|"
 msgid "Show the Home button in the bar (default)."
-msgstr ""
+msgstr "Zobrazit tlačítko Domů v panelu."
 
 #: core/main.qml:238
 msgctxt "main|"
@@ -28257,9 +28128,6 @@ msgid "Password rejected by server %1"
 msgstr ""
 
 #: core/main.qml:531 core/main.qml:550 core/main.qml:625
-#, fuzzy
-#| msgctxt "Balancebox|"
-#| msgid "OK"
 msgctxt "main|"
 msgid "OK"
 msgstr "OK"

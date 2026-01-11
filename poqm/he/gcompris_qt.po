@@ -1,11 +1,11 @@
 # Amihay Gal <Amihaygal@gmail.com>, 2019.
 # ami.g <amihaygal@gmail.com>, 2020, 2021, 2023.
-# SPDX-FileCopyrightText: 2024, 2025 Yaron Shahrabani <sh.yaron@gmail.com>
+# SPDX-FileCopyrightText: 2024, 2025, 2026 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-12-30 11:23+0200\n"
+"PO-Revision-Date: 2026-01-10 21:35+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 25.12.0\n"
+"X-Generator: Lokalize 25.12.1\n"
 "X-Qt-Contexts: true\n"
 "X-Poedit-Bookmarks: -1,2919,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
@@ -5765,12 +5765,9 @@ msgstr "חשמל דיגיטלי"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "יצירה והדמייה של מעגל דיגיטלי לוגי"
+msgstr "יצירה והדמיה של מעגל דיגיטלי לוגי."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -6458,12 +6455,10 @@ msgstr ""
 
 #: activities/drawing_wheels/ActivityConfig.qml:29
 #: activities/sketch/ActivityConfig.qml:29
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 19."
+#, qt-format
 msgctxt "ActivityConfig|"
 msgid "Number of undo: %1"
-msgstr "מספרים מ־0 עד 19."
+msgstr "כמות ההסגות: %1"
 
 #: activities/drawing_wheels/ActivityConfig.qml:44
 #: activities/sketch/ActivityConfig.qml:44
@@ -6472,33 +6467,26 @@ msgid ""
 "Warning: setting the number of undo too high can make the application crash "
 "if your device doesn't have enough memory."
 msgstr ""
+"אזהרה: הגדרת כמות ההסגות למספר גבוה מדי עלולה להוביל לקריסת היישום אם למכשיר "
+"אין מספיק זיכרון."
 
 #. Activity title
 #: activities/drawing_wheels/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "BrushToolPanel|"
-#| msgid "Drawing Tools"
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
-msgstr "כלי איור"
+msgstr "גלגלי איור"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Touch the numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Roll the gear in the cogwheel to draw."
-msgstr "לגעת במספרים בסדר הנכון."
+msgstr "יש לגלגל את גלגל השיניים כדי לצייר."
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr "מידע נוסף על כלי איור דיגיטליים"
+msgstr "להיחשף להיפוטרוכואידים ולהשתמש בהם ככלי ציור דיגיטליים."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
@@ -6546,90 +6534,69 @@ msgstr "Ctrl + O: פתיחת תמונה"
 #: activities/drawing_wheels/DrawingWheels.qml:399
 msgctxt "DrawingWheels|"
 msgid "File menu"
-msgstr ""
+msgstr "תפריט קובץ"
 
 #: activities/drawing_wheels/DrawingWheels.qml:411
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
-msgstr ""
+msgstr "גלגל וגלגל שיניים"
 
 #: activities/drawing_wheels/DrawingWheels.qml:435
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Piano composition"
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
-msgstr "הלחנה בפסנתר"
+msgstr "גודל ומקום עיפרון"
 
 #: activities/drawing_wheels/DrawingWheels.qml:447
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font selector"
 msgctxt "DrawingWheels|"
 msgid "Color selector"
-msgstr "בורר גוֹפָנים"
+msgstr "בורר צבעים"
 
 #: activities/drawing_wheels/DrawingWheels.qml:474
-#, fuzzy
-#| msgctxt "OptionsRow|"
-#| msgid "Undo"
 msgctxt "DrawingWheels|"
 msgid "Undo"
-msgstr "לבטל"
+msgstr "הסגה"
 
 #: activities/drawing_wheels/DrawingWheels.qml:486
 msgctxt "DrawingWheels|"
 msgid "Redo"
-msgstr ""
+msgstr "ביצוע מחדש"
 
 #: activities/drawing_wheels/DrawingWheels.qml:520
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
-msgstr ""
+msgstr "הפסקת איור"
 
 #: activities/drawing_wheels/DrawingWheels.qml:520
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
-msgstr ""
+msgstr "התחלת איור"
 
 #: activities/drawing_wheels/DrawingWheels.qml:553
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
-msgstr ""
+msgstr "הצגת גלגל וגלגל שיניים"
 
 #: activities/drawing_wheels/DrawingWheels.qml:553
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
-msgstr ""
+msgstr "הסתרת גלגל וגלגל שיניים"
 
 #: activities/drawing_wheels/DrawingWheels.qml:712
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
-msgstr "שמירת התמונה שלך"
+msgstr "שמירת תמונה וקטורית (SVG)"
 
 #: activities/drawing_wheels/DrawingWheels.qml:727
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Open an image"
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "פתיחת תמונה"
 
 #: activities/drawing_wheels/DrawingWheels.qml:756
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Create a new image"
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "יצירת תמונה חדשה"
 
 #: activities/drawing_wheels/DrawingWheels.qml:775
-#, fuzzy
-#| msgctxt "BackgroundColorSelector|"
-#| msgid "Background color"
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "צבע רקע"
@@ -6637,25 +6604,20 @@ msgstr "צבע רקע"
 #: activities/drawing_wheels/DrawingWheels.qml:856
 msgctxt "DrawingWheels|"
 msgid "Wheel"
-msgstr ""
+msgstr "גלגל"
 
 #: activities/drawing_wheels/DrawingWheels.qml:923
 msgctxt "DrawingWheels|"
 msgid "Gear"
-msgstr ""
+msgstr "גלגל שיניים"
 
 #: activities/drawing_wheels/DrawingWheels.qml:986
-#, fuzzy, qt-format
-#| msgctxt "SignalGenerator|"
-#| msgid "%1 s"
+#, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
-msgstr "%1 שנ׳"
+msgstr "%1 שיניים"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1004
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "מהירות"
@@ -6663,25 +6625,19 @@ msgstr "מהירות"
 #: activities/drawing_wheels/DrawingWheels.qml:1020
 msgctxt "DrawingWheels|"
 msgid "Slow"
-msgstr ""
+msgstr "לאט"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1040
 msgctxt "DrawingWheels|"
 msgid "Fast"
-msgstr ""
+msgstr "מהר"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1083
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font size"
 msgctxt "DrawingWheels|"
 msgid "Pen size"
-msgstr "גודל הכתב"
+msgstr "גודל עט"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1120
-#, fuzzy
-#| msgctxt "ToolsPanel|"
-#| msgid "Opacity"
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "אטימות"
@@ -6689,44 +6645,29 @@ msgstr "אטימות"
 #: activities/drawing_wheels/DrawingWheels.qml:1163
 msgctxt "DrawingWheels|"
 msgid "Offset"
-msgstr ""
+msgstr "היסט"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1201
-#, fuzzy
-#| msgctxt "IntroMessage|"
-#| msgid "Start"
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
-msgstr "להתחיל"
+msgstr "שן התחלתית"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1381
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "You did not save this image. Do you want to close this activity?"
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "לא שמרת את התמונה הזאת. לסגור את הפעילות הזאת?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1382
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "Do you want to erase this image?"
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "למחוק את התמונה הזאת?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1383
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "כן"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1384
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "לא"
@@ -7295,13 +7236,6 @@ msgid "Chichén Itzá"
 msgstr "צ׳יצֵ׳ן איצָה"
 
 #: activities/explore_monuments/resource/board/board1.qml:20
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
-#| "the Yucatan Peninsula in Mexico, between Valladolid and Merida. It was "
-#| "established before the period of Christopher Colombus and probably served "
-#| "as the religion center of Yucatan for a while."
 msgctxt "board1|"
 msgid ""
 "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
@@ -8354,7 +8288,7 @@ msgstr "להקיש על המיקום של הפירמידה."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "העיר האסורה"
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8369,12 +8303,18 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
+"העיר האסורה, ממוקמת בליבה של בייג׳ין שבסין היא ארמון מלכותי ששימש בית "
+"לשליטים הסינים והמרכז הפוליטי של האומה במשך למעלה מ־500 שנה, החל משושלת מינג "
+"(1369-1644) ועד שושלת צ׳ינג (1644-1912). נבנה בין 1406 ל־1420, יצירת האומנות "
+"רחבת הידיים הזאת משתרעת על פני 728.5 דונמים וטומנת בחובה 980 בניינים שהשתמרו "
+"בהם 8,700 חדרים, שדוגלים בעיצוב הסיני המפואר. העיר, שמוקפת בתעלת מגן ובחומה, "
+"הייתה בעבר בלתי נגישה לקהל הרחב, כסמל לכוח ובלעדיות השליטים."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "פסל בודהה הענק של לֶשָׁאן"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8389,15 +8329,19 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
+"פסל הבודהה הענק של לֶשָׁאן, נמצא במחוז סיצ׳ואן שבסין, הוא פסל עצום ממדים שסותת "
+"במצוק בהשראת הנהרות, מין, דאדו וצ׳ינגי. משתרע לגובה של 71 מטרים, זה הפסל "
+"הטרום מודרני הגבוה ביותר בעולם ואתר מורשת של UNESCO. נבנה במהלך שושלת טאנג "
+"(713-803 לספירה), הפסל ציין את מאיטריה, הבודהה של העתיק, ונוצר כדי להשקיט את "
+"המים הגועשים שמאיימים על תנועת הסירות המקומיות. בזכות תכנון מתוחכם, הפסל "
+"כולל מערכת שפכים נסתרת כדי למנוע שחיקה. ההבעה הרגועה ומלאכת היד המדוקדקת "
+"הופכים אותו לסמל של הישג רוחני ואומנותי."
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "ארמון מיסורה"
+msgstr "ארמון פוטאלה"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8412,12 +8356,19 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
+"ארמון פוטאלה, שניצב לו על ההר האדום בלהסה, טיבט, הוא סמל בולט של התרבות "
+"הטיבטית ואת מורשת עולמית של אונסק״ו. במקור הוא נבנה במאה השביעית והורחב במאה "
+"ה־17, הוא שימש כמגורי החורף של הדלאי לאמות ומרכז השלטון הטיבטי. מתנשא לגובה "
+"של 13 קומות עם למעלה מ־1,000 חדרים, הארמון משלב אדריכלות טיבטית מורכבת, "
+"ציורי קיר מלאי חיים ושרידים מקודשים. הוא מחולק לארמון הלבן, אזורי מגורים "
+"מנהליים, ולארמון האדום, שמיועד ללימודי דת ותפילות. ארמון פוטאלה מהווה עדות "
+"למורשת הרוחנית וההיסטורית של טיבט."
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "צבא הטרקוטה"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8429,12 +8380,17 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
+"צבא הטרקוטה הוא אוסף של אלפי חיילים, סוסים ומרכבות חימר שנקברו עם הקיסר "
+"הראשון של סין, צ׳ין שה-חואנג, כדי ללוות אותו לחיים שאחרי המוות. האתר התגלה ב־"
+"1974 ליד שי-אן, הדמויות מתוארכות ל־210 לפנה״ס ומסקרנות עקב הפרטים המדוקדקים "
+"שלהם, כל אחת מהלוחמים גולף במיוחד כדי לציין את הדרגות השונות של צבא סיני "
+"קדום."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr ""
+msgstr "פגודות השמש והירח"
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8449,15 +8405,20 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
+"פגודות השמש והירח (Sun and Moon Pagodas), הממוקמות בעיר גְווֵיְלִין שבסין, הן "
+"צמד מגדלים בולטים המסמלים את המורשת התרבותית והרוחנית של העיר. הן נבנו במקור "
+"בתקופת שושלת טאנג, ושוקמו במאה ה־20 כציוני דרך סמליים על אגם שאנהו. פגודת "
+"השמש, המתנשאת לגובה 41 מטרים, היא מבנה ברונזה – הגבוה מסוגו בעולם – ואילו "
+"פגודת הירח, בגובה 35 מטרים, בנויה מאריחי זיגוג. פגודות אלו מייצגות את "
+"ההרמוניה של היין והיאנג ומחוברות ביניהן באמצעות מנהרת זכוכית תת־ימית. כשהן "
+"מוארות בלילה, הן מהוות מוקד משיכה נפוץ המציג אדריכלות סינית מסורתית וכושר "
+"המצאה מודרני."
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "מגדל אייפל"
+msgstr "מגדל דיאולואי"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8472,28 +8433,30 @@ msgid ""
 "UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
 "towers remain, offering insight into this unique architectural heritage."
 msgstr ""
+"מגדלי הדיאולואו, שנמצאים במחוז גואנגדונג שבקאיפינג, סין, הם מבני שמירה "
+"מבוצרים רבי־קומות שנבנו מסוף המאה ה־19 ועד תחילת המאה ה־20 כדי להגן מפני "
+"שודדים ושיטפונות. הם משקפים את עושרם והשפעתם של מהגרים סינים מחו״ל ששבו "
+"לאזור, ובנייתם משלבת סגנונות מערביים כמו רומנסק ובארוק עם אדריכלות סינית "
+"מסורתית. המגדלים, שנבנו בעיקר מבטון מזוין, מסמלים תקופה של מעבר תרבותי "
+"וכלכלי בסין הכפרית. המגדלים והכפרים בקאיפינג הוכרזו כאתר מורשת עולמית של "
+"אונסק״ו בשנת 2007, כ־1,800 מתוך 3,000 המגדלים המקוריים עומדים על תילם "
+"ומספקים תובנות בנוגע למורשת האדריכלית הייחודית הזאת."
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "אתרי המורשת של הודו"
+msgstr "אתרי המורשת של סין"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
-msgstr "ללחוץ על מקום אתר המורשת הנתון."
+msgstr "נא ללחוץ על מקום אתר המורשת הנתון."
 
 #: activities/explore_monuments/resource/board/board8.qml:17
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "הפנתאון"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8510,12 +8473,21 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
+"הפנתאון ברומא שבאיטליה הוא מקדש סמלי שנבנה סביב 126 לספירה במהלך שלטונו של "
+"הקיסר אדריאנוס, מבוסס על חורבות של מבנים קדומים יותר שהוקמו על ידי מרקוס "
+"אגריפה. ידוע בזכות הגאונות האדריכלית שלו, בעל גג כיפתי עצום עם פתח עגול "
+"במרכזו, שמסמל את גן העדן ומספק תאורה טבעית לחלל הפנימי. במקור הוקדש לכל "
+"האלים הרומאיים, לאחר מכן הוסב לכנסייה נוצרית, שזכתה לשם „כנסיית מרים הקדושה "
+"של הקדושים המעונים” (Santa Maria ad Martyres), ב־609 לספירה. הכיפה שלו, כיפת "
+"הבטון הלא מחוזקת הגדולה בעולם, מציגה הנדסה וסימטריה עוצרי נשימה שסיפקו השראה "
+"לאדריכלים במשך מאות שנים. היחסים ההרמוניים של הפנתאון כמו גם חשיבותו "
+"ההיסטורית הופכים אותו ליצירת מופת על־זמנית של אדריכלות קלסית."
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "קתדרלת מילאנו"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8530,15 +8502,20 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
+"קתדרלת מילאנו, הידועה גם בשם הדואומו של מילאנו, היא יצירת מופת גותית סמלית "
+"הממוקמת בלב מילאנו, איטליה. המבנה, שנבנה במשך כמעט שש מאות שנה, הוא אחת "
+"הקתדרלות הגדולות בעולם וסמל למורשת האמנותית והתרבותית של מילאנו. החזית "
+"המורכבת שלו מעוטרת באינספור פסלים, צריחים ומרזבי גרגוילים, המשקפים את הפאר "
+"של האדריכלות הגותית. המבקרים יכולים לחקור את מתחם הפנים המדהים שלו, הכולל "
+"חלונות ויטראז׳ יפהפיים ופרטי שיש מורכבים, או לעלות לגג לכדי לצפות בנוף עוצר "
+"נשימה על העיר ועל האלפים. הקתדרלה מהווה עדות להיסטוריה העשירה של איטליה "
+"ולמצוינות האדריכלית שלה."
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "קתדרלת התולעים"
+msgstr "קתדרלת סנטה מריה דל פיורה"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8554,15 +8531,20 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
+"קתדרלת פירנצה, הידועה באופן רשמי בשם קתדרלת סנטה מריה דל פיורה, היא יצירת "
+"מופת מפורסמת של ארכיטקטורה גותית ומתקופת הרנסאנס שנמצאת בפירנצה, איטליה. "
+"בנייתה הושלמה ב־1436, היא מפורסמת בזכות כיפת האריחים האדומות הענקית שלה "
+"שעוצבה על ידי פיליפו ברונלסקי, שנותרה פלא הנדסי וסמל של העיר. חזית השיש "
+"המורכבת, נוספה במאה ה־19 והיא משלימה את החלל הפנימי עם העיצוב העשיר והאוצרות "
+"האומנותיים. יחד עם קמפנילה די ג׳וטו והבפטיסריום של פירנצה, היא מהווה חלק "
+"מאתר מורשת עולמי של אונסק״ו, היא מושכת אליה מיליוני מבקרים מדי שנה בשל "
+"חשיבותה ההיסטורית, התרבותית והאדריכלית."
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "המגדל של האנוי"
+msgstr "המגדל הנטוי של פיזה"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8577,12 +8559,19 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
+"מגדל פיזה (באיטלקית: Torre di Pisa), שנמצא בעיר פיזה שבאיטליה, הוא פלא "
+"אדריכלי בעל שם עולמי. הוא נבנה כמגדל פעמונים (קמפנילה) עצמאי עבור קתדרלת "
+"העיר, ומפורסם בזכות נטייתו הבלתי מכוונת, שנגרמה על ידי אדמת יסודות בלתי "
+"יציבה. בנייתו של המגדל החלה בשנת 1173 ונמשכה קרוב ל־200 שנה, ובמהלכה נעשו "
+"ניסיונות לייצב את נטייתו. המגדל מתנשא לגובה של כ־56 מטרים, ועיצובו הרומנסקי "
+"כולל שמונה קומות, בהן תא פעמונים, המעוטרות בעמודים ובקשתות מגולפים בקפדנות. "
+"המגדל הוכרז כאתר מורשת עולמית של אונסק״ו ונותר סמל לחוסן ולכושר המצאה אנושי."
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr ""
+msgstr "בזיליקת סן מרקו"
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -8598,12 +8587,20 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
+"בזיליקת סן מרקו, נמצאת בוונציה שבאיטליה, היא יצירת מופת של ארכיטקטורה "
+"ביזנטית ואחת מנקודות הציון המפורסמות ביותר של העיר. נבנתה במקור ב־828 למטרת "
+"אכלוס השרידים של מרקוס הקדוש האוונגליסט, היא נבנתה מחדש בצורתה הנוכחית במאה "
+"ה־11. ידועה בזכות עיצובה העשיר, הבזיליקה שאבה השראה מעורבת בין מזרח למערב, "
+"כפי שניתן להבחין בזכות חמשת הכיפות שלה, הפסיפסים המדויקים והחזית המפוארת "
+"שמקושטת בפסלים וגילופים. החלל הפנימי מעוצב באופן עשיר ברצפות פסיפס מוזהבות "
+"ושיש, שמסמלים את העושר ועוצמה של רפובליקת ונציה. בסמוך לכיכר סן מרקו, היא "
+"נותרה סמל למורשת ההיסטורית, התרבותית והדתית של ונציה."
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr ""
+msgstr "פומפיי"
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -8619,31 +8616,31 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
+"פומפיי הייתה עיר רומית עתיקה השוכנת ליד נאפולי של ימינו, באיטליה, והיא "
+"מפורסמת בכך שנשתמרה לאחר שנקברה תחת התפרצות הר הגעש וזוב בשנת 79 לספירה. "
+"ההתפרצות שחררה שילוב קטלני של אפר, אבן ספוג (פומיס) וזרמים פירוקלסטיים "
+"(תערובת קטלנית של גזים לוהטים, אפר וסלעים שגולשת במהירות במורד הר געש), אשר "
+"כיסו את העיר ואת תושביה, ושימרו בניינים, חפצים ואף שרידי אדם בפירוט מדהים. "
+"החפירות בפומפיי סיפקו תובנות חשובות על חיי היומיום הרומיים, האדריכלות "
+"והחברה, וחשפו עיר עם רחובות מתוכננים היטב, בתים, בתי מרחץ ציבוריים ומקדשים. "
+"האתר הוא כיום אתר מורשת עולמית של אונסק״ו ונשאר אחת התגליות הארכאולוגיות "
+"החשובות ביותר בהיסטוריה."
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "אתרי המורשת של הודו"
+msgstr "אתרי המורשת של איטליה"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
-msgstr "ללחוץ על מקום אתר המורשת הנתון."
+msgstr "נא ללחוץ על מקום אתר המורשת הנתון."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "שתיהן"
+msgstr "טירת הימג׳י"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -8656,12 +8653,20 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
+"טירת הימג׳י (Himeji-jo), המכונה גם „טירת האנפה הלבנה” בשל צבעה הלבן הבוהק, "
+"היא הדוגמה השמורה הטובה ביותר לאדריכלות טירות יפנית מראשית המאה ה־17. הטירה, "
+"המשתרעת על פני שטח נרחב, כוללת 83 מבנים המצוידים במערכות הגנה מפותחות ביותר "
+"ובאמצעי מיגון גאוניים, שתחילתם בתקופת השוגונות. זוהי יצירת מופת של בנייה "
+"בעץ, המשלבת פונקציונליות עם משיכה אסתטית. יופיה ניכר הן במראהּ האלגנטי, שאוחד "
+"באמצעות קירות עפר מטויחים לבן, והן בעדינות היחסים בין גושי המבנים לשכבות הגג "
+"המרובות. טירת הימג׳י הוכרה כאתר מורשת עולמית של אונסק״ו בשנת 1993, והיא "
+"מסמלת את הפאר האדריכלי ואת ההיסטוריה העשירה של יפן."
 
 #: activities/explore_monuments/resource/board/board9.qml:28
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr ""
+msgstr "פארק השלום בהירושימה"
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -8677,12 +8682,20 @@ msgid ""
 "a solemn space for reflection, honoring the lives lost and advocating for "
 "global peace."
 msgstr ""
+"פארק השלום בהירושימה הוא סמל של שלום ותזכורת להשלכות ההרסניות של מלחמה. "
+"הפארק, הממוקם בהירושימה שביפן, מנציח את קורבנות הטלת פצצת האטום ב־6 באוגוסט "
+"1945. הפארק כולל מספר אנדרטאות, בהן כיפת פצצת האטום (מוכרת גם כ„כיפת "
+"גנבאקו”, ביפנית: 原爆ドーム), שהייתה בעבר מבנה ממשלתי וכיום ניצבת כאתר מורשת "
+"עולמית של אונסק״ו. הפארק מאכלס גם את מוזיאון השלום של הירושימה, שמחנך מבקרים "
+"על האירועים סביב ההפצצה ומקדם מסר של שלום, אי־אלימות וחשיבות הפירוק מנשק "
+"גרעיני. הוא משמש כמרחב טקסי להרהור, המכבד את החיים שקופחו ופועל למען שלום "
+"עולמי."
 
 #: activities/explore_monuments/resource/board/board9.qml:39
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr ""
+msgstr "מקדש אראקורה פוג׳י סנגן"
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -8698,12 +8711,19 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
+"המקדש נוסד בשנת 705 כדי לשכן את אלוהות המקום. בעקבות ההתפרצות הגדולה של הר "
+"פוג׳י בשנת 807, שלח הקיסר שליח מטעמו למקדש הזה לבצע טקס לעצירת ההתפרצות. "
+"מסופר כי בתקופת המדינות הלוחמות, כאשר טאקֵדַה נובּוטורׁה, אביו של איש הצבא "
+"המפורסם טאקדה שִׁינְגֵן, נלחם נגד משפחת הוג׳ו, הוא הקים כאן מחנה, התפלל לניצחון "
+"וזכה בקרב. לאחר מכן הוא הקדיש את חרבו למקדש הזה. כיום, מקומיים ואנשים מרחוק "
+"מבקרים במקדש כדי להדוף רוע, להתפלל לאושר משפחתי ולידה בטוחה. באביב פורחים "
+"עצי הדובדבן וקהל רב מתאסף כדי ליהנות מהנוף המרהיב של הר פוג׳י."
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr ""
+msgstr "מצודת שורי באוקינאווה"
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -8719,22 +8739,24 @@ msgid ""
 "much of the castle was lost in a fire in 2019, but efforts to restore it are "
 "ongoing, reflecting its enduring importance to Okinawa's heritage."
 msgstr ""
+"מצודת שורי, שנמצאת בעיר נהה, במחוז אוקינאווה שביפן, היא אתר מורשת עולמית של "
+"אונסק״ו וסמל להיסטוריה התרבותית העשירה של ממלכת ריוקו. המצודה, נבנתה במקור "
+"במאה ה־14, שירתה כמרכז הפוליטי, התרבותי והחברתי של הממלכה במשך עשרות שנים. "
+"ידועה בזכות השילוב הייחודי בין הסגנון האדריכלי הסיני ליפני, העיטורים "
+"המהודרים ומקום התצפית הייחודי שלה. על אף שנחרבה במהלך מלחמת העולם השנייה, "
+"היא נבנתה בקפדנות מחדש והפכה ליעד תיירותי מוביל. למרבה הצער, רוב המצודה עלתה "
+"באש עקב שריפה שפרצה במקום ב־2019, אך עדיין נעשים מאמצים לשחזורה, מה שמעיד על "
+"חשיבותה העליונה במורשת של אוקינאווה."
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "אתרי המורשת של צרפת"
+msgstr "אתרי המורשת של יפן"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
-msgstr "ללחוץ על מקום אתר המורשת הנתון."
+msgstr "נא ללחוץ על מקום אתר המורשת הנתון."
 
 #. Activity title
 #: activities/explore_world_animals/ActivityInfo.qml:19
@@ -14697,12 +14719,9 @@ msgstr "המספר לאיתור הוא בין 1 ל־5."
 
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Number to find between 0 and 20."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
-msgstr "המספר לאיתור הוא בין 0 ל־20."
+msgstr "המספר העשרוני לאיתור הוא בין 0 ל־4."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"
@@ -15212,12 +15231,9 @@ msgid "Division required."
 msgstr "צריך חילוק."
 
 #: activities/guess24/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "משחק זיכרון: כל הפעולות (חיבור, חיסור, כפל וחילוק)"
+msgstr "כל הפעולות נחוצות."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -17350,18 +17366,13 @@ msgstr ""
 "בחשאי במכון."
 
 #: activities/louis-braille/louis_braille_data.js:52
-#, fuzzy
-#| msgctxt "louis_braille_data|"
-#| msgid ""
-#| "He revised and extended braille to include mathematics, symbols, "
-#| "punctuations and music notations."
 msgctxt "louis_braille_data|"
 msgid ""
 "He revised and extended braille to include mathematics, symbols, punctuation "
 "and music notations."
 msgstr ""
-"הוא תיקן והרחיב את הברייל כדי שיכלול סימנים מתמטיקאים, סמלים, סימני פיסוק "
-"ותווי מוסיקה."
+"הוא תיקן והרחיב את כתב הברייל כך שיכלול סימנים מתמטיים, סמלים, סימני פיסוק "
+"ותווי מוזיקה."
 
 #: activities/louis-braille/louis_braille_data.js:57
 msgctxt "louis_braille_data|"
@@ -17390,12 +17401,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "כובע קסמים"
+msgstr "כובע הקסמים (חיסור)"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -17486,12 +17494,9 @@ msgstr "%1x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "כובע קסמים"
+msgstr "כובע הקסמים (חיבור)"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -20022,12 +20027,9 @@ msgid "Space: select or deselect the highlighted answer"
 msgstr "רווח: לבחור או לבטל בחירה של תשובה מודגשת"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
-msgstr "Enter: לאשר את התשובה שלך כאשר כפתור האישור מופיע"
+msgstr "‏Enter: לאשר את התשובה שלך או לסגור את לוח המשוב המילולי"
 
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
@@ -24264,9 +24266,6 @@ msgid "Gradient Tools"
 msgstr "כלי מדרגים"
 
 #: activities/sketch/PaletteSelector.qml:148
-#, fuzzy
-#| msgctxt "ColorsPanel|"
-#| msgid "Palettes"
 msgctxt "PaletteSelector|"
 msgid "Palettes"
 msgstr "לוחות צבעים"
@@ -26589,31 +26588,6 @@ msgstr "טבלאות חיסור."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In a vertical subtraction, numbers are written one below the other. They "
-#| "need to be lined-up properly, starting from the column on the right-hand "
-#| "side. The top number is called the minuend: it is the amount that we are "
-#| "starting with, that another number is being subtracted from to get the "
-#| "difference. The number below is called the subtrahend: it is the amount "
-#| "to substract from the minuend to get the difference. The result is "
-#| "written on the bottom line. To solve the subtraction, start by "
-#| "subtracting the bottom number of the first column from the top number of "
-#| "the first column (on the right-hand side), and write the result on the "
-#| "bottom line of the same column. If the top number is smaller than the "
-#| "bottom number, you can borrow from the minuend on the next column: for "
-#| "example, if you add 10 units to the top number, you need to remove one "
-#| "unit from the top number of the next column. This is called the borrowing "
-#| "by regrouping method. To do that in this activity, click on the empty "
-#| "rectangle on the left of the top number, select 1, and on the next column "
-#| "click on the empty rectangle on the right of the top number and select "
-#| "-1. Then write the result of the column on the bottom line, and do the "
-#| "same on the next columns until the operation is finished. Once you have "
-#| "found the result, click on the OK button to validate your answer. In some "
-#| "levels, you will be need to write the given operation before solving it; "
-#| "in this case, click on the Ready button when the operation is written "
-#| "correctly and then solve it."
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -26779,31 +26753,6 @@ msgstr "לימוד פתרון חיסור במאונך, עם שיטת הפריט�
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In a vertical subtraction, numbers are written one below the other. They "
-#| "need to be lined-up properly, starting from the column on the right-hand "
-#| "side. The top number is called the minuend: it is the amount that we are "
-#| "starting with, that another number is being subtracted from to get the "
-#| "difference. The number below is called the subtrahend: it is the amount "
-#| "to substract from the minuend to get the difference. The result is "
-#| "written on the bottom line. To solve the subtraction, start by "
-#| "subtracting the bottom number of the first column from the top number of "
-#| "the first column (on the right-hand side), and write the result on the "
-#| "bottom line of the same column. If the top number is smaller than the "
-#| "bottom number, you can borrow from the subtrahend on the next column: for "
-#| "example, if you add 10 units to the top number, you need to add one unit "
-#| "to the bottom number of the next column. This is called the borrowing by "
-#| "compensation method. To do that in this activity, click on the empty "
-#| "rectangle on the left of the top number, select 1, and on the next column "
-#| "click on the empty rectangle on the right of the bottom number and select "
-#| "+1. Then write the result of the column on the bottom line, and do the "
-#| "same on the next columns until the operation is finished. Once you have "
-#| "found the result, click on the OK button to validate your answer. In some "
-#| "levels, you will be need to write the given operation before solving it; "
-#| "in this case, click on the Ready button when the operation is written "
-#| "correctly and then solve it."
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -27004,21 +26953,14 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "להקליד את המילים לפני שהן מגיעות לקרקע."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Kannada and Tamil"
-msgstr "נוסף תרגום ללטבית"
+msgstr "נוסף תרגום לקאנדה ולטמילית"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgctxt "ChangeLog|"
 msgid "New command-line option to set the locale (--locale locale)"
-msgstr ""
-"אפשרות חדשה בשורת הפקודות להחליף את מעבד התצוגה (‎--rendererer renderer)"
+msgstr "אפשרות חדשה בשורת הפקודות להחליף את השפה (‎--locale locale)"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
@@ -27026,6 +26968,8 @@ msgid ""
 "New command-line option to show/hide the Home button (--hide-home-button/--"
 "show-home-button)"
 msgstr ""
+"אפשרויות שורת פקודות חדשה להצגת/הסתרת כפתור הבית (‎--hide-home-button/--show-"
+"home-button)"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:39 core/ChangeLog.qml:45
 #: core/ChangeLog.qml:54 core/ChangeLog.qml:60 core/ChangeLog.qml:65
@@ -27752,12 +27696,9 @@ msgid "No data found for %1."
 msgstr "לא נמצאו נתונים עבור %1."
 
 #: core/GCCreationHandler.qml:185
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr "%1 נמחק בהצלחה!"
+msgstr "הקובץ נמחק בהצלחה!"
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -27766,12 +27707,9 @@ msgid "OK"
 msgstr "אישור"
 
 #: core/GCCreationHandler.qml:193
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
-msgstr "לא ניתן למחוק את %1!"
+msgstr "לא ניתן למחוק את הקובץ!"
 
 #: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
@@ -27826,7 +27764,7 @@ msgstr "למחוק"
 #: core/GCCreationHandler.qml:429
 msgctxt "GCCreationHandler|"
 msgid "Open folder"
-msgstr ""
+msgstr "פתיחת תיקייה"
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
@@ -27948,22 +27886,19 @@ msgid ""
 msgstr "לציין באיזו רמה להתחיל את הפעילות. אפשר להשתמש בזה רק עם ‎--launch."
 
 #: core/main.cpp:146
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid "Specify the activity when starting GCompris."
 msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
-msgstr "לציין את הפעילות עם הפעלת ג׳יקומפרי."
+msgstr "לציין את השפה עם הפעלת ג׳יקומפרי."
 
 #: core/main.cpp:150
 msgctxt "QObject|"
 msgid "Hide the Home button in the bar."
-msgstr ""
+msgstr "הסתרת כפתור הבית מהסרגל."
 
 #: core/main.cpp:154
 msgctxt "QObject|"
 msgid "Show the Home button in the bar (default)."
-msgstr ""
+msgstr "הצגת כפתור הבית בסרגל (ברירת מחדל)."
 
 #: core/main.qml:238
 msgctxt "main|"
@@ -28068,12 +28003,9 @@ msgid "OK"
 msgstr "אישור"
 
 #: core/main.qml:546
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "main|"
 msgid "Select your username"
-msgstr "לבחור את המצב"
+msgstr "לבחור את שם המשתמש שלך"
 
 #: core/main.qml:556
 msgctxt "main|"

@@ -2300,15 +2300,3 @@ msgstr "Alumnes amb inici de sessió"
 msgctxt "SettingsView|"
 msgid "Activities data received"
 msgstr "Dades d'activitats rebudes"
-
-#~ msgctxt "SqlLineDialog|"
-#~ msgid "<"
-#~ msgstr "<"
-
-#~ msgctxt "SqlLineDialog|"
-#~ msgid ">"
-#~ msgstr ">"
-
-#~ msgctxt "LoginView|"
-#~ msgid "GCompris Teachers Tool"
-#~ msgstr "Eina del professorat del GCompris"
