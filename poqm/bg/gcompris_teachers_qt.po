@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-01-01 19:50+0100\n"
+"PO-Revision-Date: 2026-01-10 22:24+0100\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -1223,9 +1223,6 @@ msgid "Remove last entry"
 msgstr "Премахване на последния запис"
 
 #: server/components/FoldDown.qml:138
-#, fuzzy
-#| msgctxt "FoldDown|"
-#| msgid "Filter list"
 msgctxt "FoldDown|@action"
 msgid "Filter list"
 msgstr "Списък с филтри"
@@ -1713,12 +1710,9 @@ msgid "Users IDs"
 msgstr "Потребителски идентификатори"
 
 #: server/singletons/Master.qml:42
-#, fuzzy
-#| msgctxt "Master|"
-#| msgid "Activity Id"
 msgctxt "Master|"
 msgid "Activity ID"
-msgstr "Идентификатор на активността"
+msgstr "Идентификатор на занятието"
 
 #: server/singletons/Master.qml:43
 msgctxt "Master|"
@@ -1884,9 +1878,6 @@ msgid "Delete"
 msgstr "Изтриване"
 
 #: server/views/datas/DuplicateData.qml:212
-#, fuzzy
-#| msgctxt "DuplicateData|"
-#| msgid "You are about to delete datas"
 msgctxt "DuplicateData|"
 msgid "You are about to delete data"
 msgstr "На път сте да изтриете данни"
@@ -1957,9 +1948,6 @@ msgid "Not connected"
 msgstr "Няма връзка"
 
 #: server/views/DevicesView.qml:54
-#, fuzzy
-#| msgctxt "LoginView|"
-#| msgid "Incorrect password"
 msgctxt "DevicesView|"
 msgid "Incorrect password"
 msgstr "Неправилна парола"
@@ -2221,28 +2209,20 @@ msgid "Port"
 msgstr "Порт"
 
 #: server/views/SettingsView.qml:188
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Server is"
 msgctxt "SettingsView|"
 msgid "Server status"
-msgstr "Сървърът е"
+msgstr "Състояние на сървъра"
 
 #: server/views/SettingsView.qml:189
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Running"
 msgctxt "SettingsView|As in 'The server is running'"
 msgid "Running"
 msgstr "Изпълнява се"
 
 #: server/views/SettingsView.qml:189
-#, fuzzy, qt-format
-#| msgctxt "SettingsView|"
-#| msgid "Already running on port %1"
+#, qt-format
 msgctxt "SettingsView|As in 'The Server is already running on port %1'"
 msgid "Already running on port %1"
-msgstr "Вече работи на порт %1"
+msgstr "Вече се изпълнява на порт %1"
 
 #: server/views/SettingsView.qml:197
 msgctxt "SettingsView|"

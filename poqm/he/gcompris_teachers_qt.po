@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2025 Yaron Shahrabani <sh.yaron@gmail.com>
+# SPDX-FileCopyrightText: 2025, 2026 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-01-07 11:29+0200\n"
+"PO-Revision-Date: 2026-01-10 13:29+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -12,7 +12,7 @@ msgstr ""
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 25.12.0\n"
+"X-Generator: Lokalize 25.12.1\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
 #: server/activities/binary_bulb/ActivityEditor.qml:12
@@ -42,6 +42,8 @@ msgid ""
 "contain only numbers, and each of them will be used as start number for a "
 "sublevel."
 msgstr ""
+"אם „מספר התחלתי אקראי” לא סומן, רשימת „מספרי התחלה” חייב להכיל מספרים בלבד, "
+"וכל אחד מהם ישמש כמספר התחלה לתת־שלב."
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:19
 msgctxt "ActivityEditor|"
@@ -298,6 +300,9 @@ msgid ""
 "list of integer numbers. Each number must be between 0 and the maximum "
 "number which can be represented with the given \"Bulb count\"."
 msgstr ""
+"אם „מספרים אקראיים” לא נבחר, „מספרים למציאה” חייבים להכיל רשימה של מספרים "
+"שלמים וחיוביים. כל מספר חייב להיות בין 0 והמספר המרבי שניתן לייצג עם „כמות "
+"נורות” שסופקה."
 
 #: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:28
 msgctxt "BinaryBulbDataDisplay|"
@@ -1192,9 +1197,6 @@ msgid "Remove last entry"
 msgstr "הסרת הרשומה האחרונה"
 
 #: server/components/FoldDown.qml:138
-#, fuzzy
-#| msgctxt "FoldDown|"
-#| msgid "Filter list"
 msgctxt "FoldDown|@action"
 msgid "Filter list"
 msgstr "סינון רשימה"
@@ -1675,9 +1677,6 @@ msgid "Users IDs"
 msgstr "מזהי משתמשים"
 
 #: server/singletons/Master.qml:42
-#, fuzzy
-#| msgctxt "Master|"
-#| msgid "Activity Id"
 msgctxt "Master|"
 msgid "Activity ID"
 msgstr "מזהה פעילות"
@@ -1846,9 +1845,6 @@ msgid "Delete"
 msgstr "מחיקה"
 
 #: server/views/datas/DuplicateData.qml:212
-#, fuzzy
-#| msgctxt "DuplicateData|"
-#| msgid "You are about to delete datas"
 msgctxt "DuplicateData|"
 msgid "You are about to delete data"
 msgstr "הפעולה הזאת תמחק את הנתונים"
@@ -1919,9 +1915,6 @@ msgid "Not connected"
 msgstr "לא מחובר"
 
 #: server/views/DevicesView.qml:54
-#, fuzzy
-#| msgctxt "LoginView|"
-#| msgid "Incorrect password"
 msgctxt "DevicesView|"
 msgid "Incorrect password"
 msgstr "סיסמה שגויה"
@@ -2183,25 +2176,17 @@ msgid "Port"
 msgstr "פתחה"
 
 #: server/views/SettingsView.qml:188
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Server is"
 msgctxt "SettingsView|"
 msgid "Server status"
-msgstr "השרת"
+msgstr "מצב השרת"
 
 #: server/views/SettingsView.qml:189
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Running"
 msgctxt "SettingsView|As in 'The server is running'"
 msgid "Running"
 msgstr "פעיל"
 
 #: server/views/SettingsView.qml:189
-#, fuzzy, qt-format
-#| msgctxt "SettingsView|"
-#| msgid "Already running on port %1"
+#, qt-format
 msgctxt "SettingsView|As in 'The Server is already running on port %1'"
 msgid "Already running on port %1"
 msgstr "כבר פועל דרך פתחה %1"

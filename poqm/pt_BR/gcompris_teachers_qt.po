@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 2025 Marcus Gama <marcus.gama@gmail.com>
+# SPDX-FileCopyrightText: 2025, 2026 Marcus Gama <marcus.gama@gmail.com>
 # SPDX-FileCopyrightText: 2025 Guilherme Marçal Silva <guimarcalsilva@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-12-28 23:27-0300\n"
-"Last-Translator: Guilherme Marçal Silva <guimarcalsilva@gmail.com>\n"
+"PO-Revision-Date: 2026-01-10 07:09-0300\n"
+"Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -1232,9 +1232,6 @@ msgid "Remove last entry"
 msgstr "Remover última entrada"
 
 #: server/components/FoldDown.qml:138
-#, fuzzy
-#| msgctxt "FoldDown|"
-#| msgid "Filter list"
 msgctxt "FoldDown|@action"
 msgid "Filter list"
 msgstr "Filtrar lista"
@@ -1722,9 +1719,6 @@ msgid "Users IDs"
 msgstr "IDs dos usuários"
 
 #: server/singletons/Master.qml:42
-#, fuzzy
-#| msgctxt "Master|"
-#| msgid "Activity Id"
 msgctxt "Master|"
 msgid "Activity ID"
 msgstr "ID da atividade"
@@ -1893,9 +1887,6 @@ msgid "Delete"
 msgstr "Excluir"
 
 #: server/views/datas/DuplicateData.qml:212
-#, fuzzy
-#| msgctxt "DuplicateData|"
-#| msgid "You are about to delete datas"
 msgctxt "DuplicateData|"
 msgid "You are about to delete data"
 msgstr "Você está prestes a excluir dados"
@@ -1966,9 +1957,6 @@ msgid "Not connected"
 msgstr "Não conectado"
 
 #: server/views/DevicesView.qml:54
-#, fuzzy
-#| msgctxt "LoginView|"
-#| msgid "Incorrect password"
 msgctxt "DevicesView|"
 msgid "Incorrect password"
 msgstr "Senha incorreta"
@@ -2230,28 +2218,20 @@ msgid "Port"
 msgstr "Porta"
 
 #: server/views/SettingsView.qml:188
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Server is"
 msgctxt "SettingsView|"
 msgid "Server status"
-msgstr "O servidor está"
+msgstr "Status do servidor"
 
 #: server/views/SettingsView.qml:189
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Running"
 msgctxt "SettingsView|As in 'The server is running'"
 msgid "Running"
 msgstr "Em execução"
 
 #: server/views/SettingsView.qml:189
-#, fuzzy, qt-format
-#| msgctxt "SettingsView|"
-#| msgid "Already running on port %1"
+#, qt-format
 msgctxt "SettingsView|As in 'The Server is already running on port %1'"
 msgid "Already running on port %1"
-msgstr "Já em execução na porta %1"
+msgstr "Já está em execução na porta %1"
 
 #: server/views/SettingsView.qml:197
 msgctxt "SettingsView|"

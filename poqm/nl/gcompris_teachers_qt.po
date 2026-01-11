@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2025 Freek de Kruijf <freekdekruijf@kde.nl>
+# SPDX-FileCopyrightText: 2025, 2026 Freek de Kruijf <freekdekruijf@kde.nl>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-12-29 12:13+0100\n"
+"PO-Revision-Date: 2026-01-10 12:27+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -1229,9 +1229,6 @@ msgid "Remove last entry"
 msgstr "Laatste item verwijderen"
 
 #: server/components/FoldDown.qml:138
-#, fuzzy
-#| msgctxt "FoldDown|"
-#| msgid "Filter list"
 msgctxt "FoldDown|@action"
 msgid "Filter list"
 msgstr "Lijst filteren"
@@ -1716,9 +1713,6 @@ msgid "Users IDs"
 msgstr "Gebruikers-id's"
 
 #: server/singletons/Master.qml:42
-#, fuzzy
-#| msgctxt "Master|"
-#| msgid "Activity Id"
 msgctxt "Master|"
 msgid "Activity ID"
 msgstr "Activiteit-id"
@@ -1887,9 +1881,6 @@ msgid "Delete"
 msgstr "Verwijderen"
 
 #: server/views/datas/DuplicateData.qml:212
-#, fuzzy
-#| msgctxt "DuplicateData|"
-#| msgid "You are about to delete datas"
 msgctxt "DuplicateData|"
 msgid "You are about to delete data"
 msgstr "U staat op het punt gegevens te verwijderen"
@@ -1960,12 +1951,9 @@ msgid "Not connected"
 msgstr "Niet verbonden"
 
 #: server/views/DevicesView.qml:54
-#, fuzzy
-#| msgctxt "LoginView|"
-#| msgid "Incorrect password"
 msgctxt "DevicesView|"
 msgid "Incorrect password"
-msgstr "Onjuist antwoord"
+msgstr "Onjuist wachtwoord"
 
 #: server/views/DevicesView.qml:56
 msgctxt "DevicesView|"
@@ -2224,25 +2212,17 @@ msgid "Port"
 msgstr "Poort"
 
 #: server/views/SettingsView.qml:188
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Server is"
 msgctxt "SettingsView|"
 msgid "Server status"
-msgstr "Server is"
+msgstr "Serverstatus"
 
 #: server/views/SettingsView.qml:189
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Running"
 msgctxt "SettingsView|As in 'The server is running'"
 msgid "Running"
 msgstr "Actief"
 
 #: server/views/SettingsView.qml:189
-#, fuzzy, qt-format
-#| msgctxt "SettingsView|"
-#| msgid "Already running on port %1"
+#, qt-format
 msgctxt "SettingsView|As in 'The Server is already running on port %1'"
 msgid "Already running on port %1"
 msgstr "Is al actief op poort %1"

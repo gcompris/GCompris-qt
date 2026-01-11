@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2025 Emir SARI <emir_sari@icloud.com>
+# SPDX-FileCopyrightText: 2025, 2026 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-12-29 11:08+0300\n"
-"Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
+"PO-Revision-Date: 2026-01-10 21:32+0300\n"
+"Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -1213,9 +1213,6 @@ msgid "Remove last entry"
 msgstr "Son girdiyi kaldır"
 
 #: server/components/FoldDown.qml:138
-#, fuzzy
-#| msgctxt "FoldDown|"
-#| msgid "Filter list"
 msgctxt "FoldDown|@action"
 msgid "Filter list"
 msgstr "Listeyi süz"
@@ -1486,7 +1483,7 @@ msgstr "Öğrencileri CSV dosyasına dışa aktar"
 #: server/dialogs/ExportPupilsDialog.qml:121
 msgctxt "ExportPupilsDialog|"
 msgid "Save file"
-msgstr "Dosyayı kaydet"
+msgstr "Dosyayı Kaydet"
 
 #: server/dialogs/ExportPupilsDialog.qml:131
 msgctxt "ExportPupilsDialog|"
@@ -1524,12 +1521,12 @@ msgstr ""
 #: server/dialogs/ImportPupilsDialog.qml:94
 msgctxt "ImportPupilsDialog|"
 msgid "Add CSV file"
-msgstr "CSV dosyası ekle"
+msgstr "CSV Dosyası Ekle"
 
 #: server/dialogs/ImportPupilsDialog.qml:141
 msgctxt "ImportPupilsDialog|"
 msgid "Import pupils"
-msgstr "Öğrenciler içe aktar"
+msgstr "Öğrenciler İçe Aktar"
 
 #: server/dialogs/PupilDialog.qml:59
 msgctxt "PupilDialog|"
@@ -1624,17 +1621,17 @@ msgstr "GCompris Öğretmenler Aracı"
 #: server/panels/NavigationPanel.qml:70
 msgctxt "NavigationPanel|"
 msgid "Login"
-msgstr "Oturum aç"
+msgstr "Oturum Aç"
 
 #: server/panels/NavigationPanel.qml:78
 msgctxt "NavigationPanel|"
 msgid "Pupils and Groups"
-msgstr "Öğrenciler ve gruplar"
+msgstr "Öğrenciler ve Gruplar"
 
 #: server/panels/NavigationPanel.qml:86
 msgctxt "NavigationPanel|"
 msgid "Connect devices"
-msgstr "Aygıtlar bağla"
+msgstr "Aygıtlar Bağla"
 
 #: server/panels/NavigationPanel.qml:94
 msgctxt "NavigationPanel|"
@@ -1644,7 +1641,7 @@ msgstr "Etkinlikler"
 #: server/panels/NavigationPanel.qml:102
 msgctxt "NavigationPanel|"
 msgid "Datasets"
-msgstr "Veri kümeleri"
+msgstr "Veri Kümeleri"
 
 #: server/panels/NavigationPanel.qml:110
 msgctxt "NavigationPanel|"
@@ -1659,7 +1656,7 @@ msgstr "Ayarlar"
 #: server/panels/NavigationPanel.qml:126
 msgctxt "NavigationPanel|"
 msgid "Development (WIP)"
-msgstr "Geliştirme (Yapım aşamasında)"
+msgstr "Geliştirme (Yapılıyor)"
 
 #: server/panels/SelectorPanel.qml:51
 msgctxt "SelectorPanel|"
@@ -1702,9 +1699,6 @@ msgid "Users IDs"
 msgstr "Kullanıcı kimlikleri"
 
 #: server/singletons/Master.qml:42
-#, fuzzy
-#| msgctxt "Master|"
-#| msgid "Activity Id"
 msgctxt "Master|"
 msgid "Activity ID"
 msgstr "Etkinlik kimliği"
@@ -1873,12 +1867,9 @@ msgid "Delete"
 msgstr "Sil"
 
 #: server/views/datas/DuplicateData.qml:212
-#, fuzzy
-#| msgctxt "DuplicateData|"
-#| msgid "You are about to delete datas"
 msgctxt "DuplicateData|"
 msgid "You are about to delete data"
-msgstr "Verileri silmek üzeresiniz"
+msgstr "Veri silmek üzeresiniz"
 
 #: server/views/datas/DuplicateData.qml:230
 msgctxt "DuplicateData|"
@@ -1898,32 +1889,32 @@ msgstr "Veri kümeleri"
 #: server/views/DatasetsView.qml:102
 msgctxt "DatasetsView|"
 msgid "Datasets management"
-msgstr "Veri kümeleri yönetimi"
+msgstr "Veri Kümeleri Yönetimi"
 
 #: server/views/DatasetsView.qml:120
 msgctxt "DatasetsView|"
 msgid "Create dataset"
-msgstr "Veri kümesi oluştur"
+msgstr "Veri Kümesi Oluştur"
 
 #: server/views/DatasetsView.qml:129
 msgctxt "DatasetsView|"
 msgid "Update dataset"
-msgstr "Veri kümesini güncelle"
+msgstr "Veri Kümesini Güncelle"
 
 #: server/views/DatasetsView.qml:138
 msgctxt "DatasetsView|"
 msgid "Send dataset to clients"
-msgstr "İstemcilere veri kümesini gönder"
+msgstr "İstemcilere Gönder"
 
 #: server/views/DatasetsView.qml:157
 msgctxt "DatasetsView|"
 msgid "Remove dataset from clients"
-msgstr "İstemcilerden veri kümesini kaldır"
+msgstr "İstemcilerden Kaldır"
 
 #: server/views/DatasetsView.qml:182
 msgctxt "DatasetsView|"
 msgid "Remove all datasets from clients"
-msgstr "İstemcilerden tüm veri kümelerini kaldır"
+msgstr "Tüm İstemcilerden Kaldır"
 
 #: server/views/DatasetsView.qml:192
 msgctxt "DatasetsView|"
@@ -1946,9 +1937,6 @@ msgid "Not connected"
 msgstr "Bağlı değil"
 
 #: server/views/DevicesView.qml:54
-#, fuzzy
-#| msgctxt "LoginView|"
-#| msgid "Incorrect password"
 msgctxt "DevicesView|"
 msgid "Incorrect password"
 msgstr "Yanlış parola"
@@ -1991,22 +1979,22 @@ msgstr "Ağ"
 #: server/views/DevicesView.qml:157
 msgctxt "DevicesView|"
 msgid "Connect devices"
-msgstr "Aygıtlar bağla"
+msgstr "Aygıtlar Bağla"
 
 #: server/views/DevicesView.qml:170
 msgctxt "DevicesView|"
 msgid "Send login list"
-msgstr "Oturum açma listesini gönder"
+msgstr "Oturum Açma Listesini Gönder"
 
 #: server/views/DevicesView.qml:195
 msgctxt "DevicesView|"
 msgid "Disconnect selected pupils"
-msgstr "Seçili öğrencilerin bağlantısını kes"
+msgstr "Seçili Öğrencilerin Bağlantısını Kes"
 
 #: server/views/DevicesView.qml:212
 msgctxt "DevicesView|"
 msgid "Disconnect everybody"
-msgstr "Herkesin bağlantısını kes"
+msgstr "Herkesin Bağlantısını Kes"
 
 #: server/views/DevicesView.qml:228
 msgctxt "DevicesView|"
@@ -2036,7 +2024,7 @@ msgstr "Alınan veri:"
 #: server/views/DevicesView.qml:284
 msgctxt "DevicesView|"
 msgid "Network logs"
-msgstr "Ağ günlükleri"
+msgstr "Ağ Günlükleri"
 
 #: server/views/DevicesView.qml:296
 msgctxt "DevicesView|"
@@ -2092,7 +2080,7 @@ msgstr "Veri tabanı dosyası:"
 #: server/views/ManagePupilsView.qml:34 server/views/ManagePupilsView.qml:148
 msgctxt "ManagePupilsView|"
 msgid "Add a group"
-msgstr "Grup ekle"
+msgstr "Grup Ekle"
 
 #: server/views/ManagePupilsView.qml:44
 msgctxt "ManagePupilsView|"
@@ -2112,7 +2100,7 @@ msgstr "Grubu düzenle"
 #: server/views/ManagePupilsView.qml:68 server/views/ManagePupilsView.qml:206
 msgctxt "ManagePupilsView|"
 msgid "Add a pupil"
-msgstr "Öğrenci ekle"
+msgstr "Öğrenci Ekle"
 
 #: server/views/ManagePupilsView.qml:74
 msgctxt "ManagePupilsView|"
@@ -2127,42 +2115,42 @@ msgstr "Gruplar"
 #: server/views/ManagePupilsView.qml:158
 msgctxt "ManagePupilsView|"
 msgid "Pupils and groups"
-msgstr "Öğrenciler ve gruplar"
+msgstr "Öğrenciler ve Gruplar"
 
 #: server/views/ManagePupilsView.qml:187
 msgctxt "ManagePupilsView|"
 msgid "Pupils management"
-msgstr "Öğrenciler yönetimi"
+msgstr "Öğrenciler Yönetimi"
 
 #: server/views/ManagePupilsView.qml:215
 msgctxt "ManagePupilsView|"
 msgid "Add to groups"
-msgstr "Gruplara ekle"
+msgstr "Gruplara Ekle"
 
 #: server/views/ManagePupilsView.qml:224
 msgctxt "ManagePupilsView|"
 msgid "Remove from groups"
-msgstr "Gruplardan kaldır"
+msgstr "Gruplardan Kaldır"
 
 #: server/views/ManagePupilsView.qml:233
 msgctxt "ManagePupilsView|"
 msgid "Export pupils"
-msgstr "Öğrencileri dışa aktar"
+msgstr "Öğrencileri Dışa Aktar"
 
 #: server/views/ManagePupilsView.qml:241
 msgctxt "ManagePupilsView|"
 msgid "Import pupils"
-msgstr "Öğrenciler içe aktar"
+msgstr "Öğrenciler İçe aktar"
 
 #: server/views/ManagePupilsView.qml:250
 msgctxt "ManagePupilsView|"
 msgid "Remove pupils"
-msgstr "Öğrencileri kaldır"
+msgstr "Öğrencileri Kaldır"
 
 #: server/views/SettingsView.qml:65
 msgctxt "SettingsView|"
 msgid "Menu panel"
-msgstr "Menü paneli"
+msgstr "Menü Paneli"
 
 #: server/views/SettingsView.qml:66
 msgctxt "SettingsView|"
@@ -2177,7 +2165,7 @@ msgstr "Sağ"
 #: server/views/SettingsView.qml:77
 msgctxt "SettingsView|"
 msgid "Font size"
-msgstr "Yazıtipi puntosu"
+msgstr "Yazıtipi Puntosu"
 
 #: server/views/SettingsView.qml:87
 msgctxt "SettingsView|"
@@ -2202,7 +2190,7 @@ msgstr "Dil seçicisi"
 #: server/views/SettingsView.qml:149
 msgctxt "SettingsView|"
 msgid "Server ID"
-msgstr "Sunucu kimliği"
+msgstr "Sunucu Kimliği"
 
 #: server/views/SettingsView.qml:171
 msgctxt "SettingsView|"
@@ -2210,33 +2198,25 @@ msgid "Port"
 msgstr "Kapı"
 
 #: server/views/SettingsView.qml:188
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Server is"
 msgctxt "SettingsView|"
 msgid "Server status"
-msgstr "Sunucu"
+msgstr "Sunucu durumu"
 
 #: server/views/SettingsView.qml:189
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Running"
 msgctxt "SettingsView|As in 'The server is running'"
 msgid "Running"
-msgstr "çalışıyor"
+msgstr "Çalışıyor"
 
 #: server/views/SettingsView.qml:189
-#, fuzzy, qt-format
-#| msgctxt "SettingsView|"
-#| msgid "Already running on port %1"
+#, qt-format
 msgctxt "SettingsView|As in 'The Server is already running on port %1'"
 msgid "Already running on port %1"
-msgstr "halihazırda %1. kapıda çalışıyor"
+msgstr "Halihazırda %1. kapıda çalışıyor"
 
 #: server/views/SettingsView.qml:197
 msgctxt "SettingsView|"
 msgid "Host name"
-msgstr "Makine adı"
+msgstr "Makine Adı"
 
 #: server/views/SettingsView.qml:204
 msgctxt "SettingsView|"
@@ -2251,37 +2231,37 @@ msgstr "Yayın IP’si"
 #: server/views/SettingsView.qml:218
 msgctxt "SettingsView|"
 msgid "Netmask"
-msgstr "Ağ maskesi"
+msgstr "Ağ Maskesi"
 
 #: server/views/SettingsView.qml:223
 msgctxt "SettingsView|"
 msgid "MAC address"
-msgstr "MAC adresi"
+msgstr "MAC Adresi"
 
 #: server/views/SettingsView.qml:230
 msgctxt "SettingsView|"
 msgid "GCompris version"
-msgstr "GCompris sürümü"
+msgstr "GCompris Sürümü"
 
 #: server/views/SettingsView.qml:237
 msgctxt "SettingsView|"
 msgid "Qt version"
-msgstr "Qt sürümü"
+msgstr "Qt Sürümü"
 
 #: server/views/SettingsView.qml:250
 msgctxt "SettingsView|"
 msgid "Teacher login"
-msgstr "Öğretmen oturumu aç"
+msgstr "Öğretmen Oturumu Aç"
 
 #: server/views/SettingsView.qml:258
 msgctxt "SettingsView|"
 msgid "Database file"
-msgstr "Veri tabanı dosyası"
+msgstr "Veri Tabanı Dosyası"
 
 #: server/views/SettingsView.qml:265
 msgctxt "SettingsView|"
 msgid "Encrypted database"
-msgstr "Şifreli veri tabanı"
+msgstr "Şifreli Veri Tabanı"
 
 #: server/views/SettingsView.qml:266
 msgctxt "SettingsView|"
@@ -2306,30 +2286,14 @@ msgstr "Gruplar"
 #: server/views/SettingsView.qml:290
 msgctxt "SettingsView|"
 msgid "Pupils connected"
-msgstr "Bağlı öğrenciler"
+msgstr "Bağlı Öğrenciler"
 
 #: server/views/SettingsView.qml:297
 msgctxt "SettingsView|"
 msgid "Pupils logged"
-msgstr "Günlüklü öğrenciler"
+msgstr "Günlüklenen Öğrenciler"
 
 #: server/views/SettingsView.qml:304
 msgctxt "SettingsView|"
 msgid "Activities data received"
-msgstr "Etkinlikler verisi alındı"
-
-#~ msgctxt "SqlLineDialog|"
-#~ msgid "<"
-#~ msgstr "<"
-
-#~ msgctxt "SqlLineDialog|"
-#~ msgid ">"
-#~ msgstr ">"
-
-#~ msgctxt "DevicesView|"
-#~ msgid "Bad password input"
-#~ msgstr "Hatalı parola girişi"
-
-#~ msgctxt "LoginView|"
-#~ msgid "GCompris Teachers Tool"
-#~ msgstr "GCompris Öğretmeler Aracı"
+msgstr "Alınan Etkinlik Verisi"

@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-23 11:17+0200\n"
-"PO-Revision-Date: 2025-12-29 06:51+0100\n"
+"PO-Revision-Date: 2026-01-10 08:41+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -1220,9 +1220,6 @@ msgid "Remove last entry"
 msgstr "Odstrani zadnji vnos"
 
 #: server/components/FoldDown.qml:138
-#, fuzzy
-#| msgctxt "FoldDown|"
-#| msgid "Filter list"
 msgctxt "FoldDown|@action"
 msgid "Filter list"
 msgstr "Filtriraj seznam"
@@ -1707,9 +1704,6 @@ msgid "Users IDs"
 msgstr "ID-ji uporabnikov"
 
 #: server/singletons/Master.qml:42
-#, fuzzy
-#| msgctxt "Master|"
-#| msgid "Activity Id"
 msgctxt "Master|"
 msgid "Activity ID"
 msgstr "ID dejavnosti"
@@ -1878,12 +1872,9 @@ msgid "Delete"
 msgstr "Izbriši"
 
 #: server/views/datas/DuplicateData.qml:212
-#, fuzzy
-#| msgctxt "DuplicateData|"
-#| msgid "You are about to delete datas"
 msgctxt "DuplicateData|"
 msgid "You are about to delete data"
-msgstr "Izbrisali boste podatke"
+msgstr "Nameravate izbrisati podatke"
 
 #: server/views/datas/DuplicateData.qml:230
 msgctxt "DuplicateData|"
@@ -1951,9 +1942,6 @@ msgid "Not connected"
 msgstr "Ni povezano"
 
 #: server/views/DevicesView.qml:54
-#, fuzzy
-#| msgctxt "LoginView|"
-#| msgid "Incorrect password"
 msgctxt "DevicesView|"
 msgid "Incorrect password"
 msgstr "Napačno geslo"
@@ -2215,25 +2203,17 @@ msgid "Port"
 msgstr "Vrata"
 
 #: server/views/SettingsView.qml:188
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Server is"
 msgctxt "SettingsView|"
 msgid "Server status"
-msgstr "Strežnik je"
+msgstr "Stanje strežnika"
 
 #: server/views/SettingsView.qml:189
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Running"
 msgctxt "SettingsView|As in 'The server is running'"
 msgid "Running"
 msgstr "Teče"
 
 #: server/views/SettingsView.qml:189
-#, fuzzy, qt-format
-#| msgctxt "SettingsView|"
-#| msgid "Already running on port %1"
+#, qt-format
 msgctxt "SettingsView|As in 'The Server is already running on port %1'"
 msgid "Already running on port %1"
 msgstr "Že deluje na vratih %1"

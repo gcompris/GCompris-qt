@@ -1219,9 +1219,6 @@ msgid "Remove last entry"
 msgstr "ბოლო ჩანაწერის წაშლა"
 
 #: server/components/FoldDown.qml:138
-#, fuzzy
-#| msgctxt "FoldDown|"
-#| msgid "Filter list"
 msgctxt "FoldDown|@action"
 msgid "Filter list"
 msgstr "სიის გაფილტვრა"
@@ -1712,9 +1709,6 @@ msgid "Users IDs"
 msgstr "მომხმარებლის ID-ები"
 
 #: server/singletons/Master.qml:42
-#, fuzzy
-#| msgctxt "Master|"
-#| msgid "Activity Id"
 msgctxt "Master|"
 msgid "Activity ID"
 msgstr "აქტივობის ID"
@@ -1883,9 +1877,6 @@ msgid "Delete"
 msgstr "წაშლა"
 
 #: server/views/datas/DuplicateData.qml:212
-#, fuzzy
-#| msgctxt "DuplicateData|"
-#| msgid "You are about to delete datas"
 msgctxt "DuplicateData|"
 msgid "You are about to delete data"
 msgstr "აპირებთ მონაცემების წაშლას"
@@ -1956,9 +1947,6 @@ msgid "Not connected"
 msgstr "დაკავშირებული არაა"
 
 #: server/views/DevicesView.qml:54
-#, fuzzy
-#| msgctxt "LoginView|"
-#| msgid "Incorrect password"
 msgctxt "DevicesView|"
 msgid "Incorrect password"
 msgstr "არასწორი პაროლი"
@@ -2220,25 +2208,17 @@ msgid "Port"
 msgstr "პორტი"
 
 #: server/views/SettingsView.qml:188
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Server is"
 msgctxt "SettingsView|"
 msgid "Server status"
-msgstr "სერვერი არის"
+msgstr "სერვერის სტატუსი"
 
 #: server/views/SettingsView.qml:189
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Running"
 msgctxt "SettingsView|As in 'The server is running'"
 msgid "Running"
 msgstr "გაშვებულია"
 
 #: server/views/SettingsView.qml:189
-#, fuzzy, qt-format
-#| msgctxt "SettingsView|"
-#| msgid "Already running on port %1"
+#, qt-format
 msgctxt "SettingsView|As in 'The Server is already running on port %1'"
 msgid "Already running on port %1"
 msgstr "უკვე გაშვებულია პორტზე %1"

@@ -1,14 +1,14 @@
 # Spanish translations for gcompris_teachers_qt.po package.
-# Copyright (C) 2025 This file is copyright:
+# Copyright (C) 2025-2026 This file is copyright:
 # This file is distributed under the same license as the gcompris package.
 #
-# SPDX-FileCopyrightText: 2025 Eloy Cuadra <ecuadra@eloihr.net>
+# SPDX-FileCopyrightText: 2025, 2026 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_teachers_qt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-23 00:32+0100\n"
-"PO-Revision-Date: 2025-12-30 01:19+0100\n"
+"PO-Revision-Date: 2026-01-11 00:25+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -1233,9 +1233,6 @@ msgid "Remove last entry"
 msgstr "Eliminar la última entrada"
 
 #: server/components/FoldDown.qml:138
-#, fuzzy
-#| msgctxt "FoldDown|"
-#| msgid "Filter list"
 msgctxt "FoldDown|@action"
 msgid "Filter list"
 msgstr "Filtrar lista"
@@ -1725,9 +1722,6 @@ msgid "Users IDs"
 msgstr "ID de los usuarios"
 
 #: server/singletons/Master.qml:42
-#, fuzzy
-#| msgctxt "Master|"
-#| msgid "Activity Id"
 msgctxt "Master|"
 msgid "Activity ID"
 msgstr "ID de la actividad"
@@ -1896,9 +1890,6 @@ msgid "Delete"
 msgstr "Borrar"
 
 #: server/views/datas/DuplicateData.qml:212
-#, fuzzy
-#| msgctxt "DuplicateData|"
-#| msgid "You are about to delete datas"
 msgctxt "DuplicateData|"
 msgid "You are about to delete data"
 msgstr "Está a punto de borrar datos"
@@ -1969,9 +1960,6 @@ msgid "Not connected"
 msgstr "No conectado"
 
 #: server/views/DevicesView.qml:54
-#, fuzzy
-#| msgctxt "LoginView|"
-#| msgid "Incorrect password"
 msgctxt "DevicesView|"
 msgid "Incorrect password"
 msgstr "Contraseña incorrecta"
@@ -2233,25 +2221,17 @@ msgid "Port"
 msgstr "Puerto"
 
 #: server/views/SettingsView.qml:188
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Server is"
 msgctxt "SettingsView|"
 msgid "Server status"
-msgstr "El servidor está"
+msgstr "Estado del servidor"
 
 #: server/views/SettingsView.qml:189
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Running"
 msgctxt "SettingsView|As in 'The server is running'"
 msgid "Running"
 msgstr "En ejecución"
 
 #: server/views/SettingsView.qml:189
-#, fuzzy, qt-format
-#| msgctxt "SettingsView|"
-#| msgid "Already running on port %1"
+#, qt-format
 msgctxt "SettingsView|As in 'The Server is already running on port %1'"
 msgid "Already running on port %1"
 msgstr "Ya se está ejecutando en el puerto %1"
@@ -2340,19 +2320,3 @@ msgstr "Alumnos con sesión iniciada"
 msgctxt "SettingsView|"
 msgid "Activities data received"
 msgstr "Datos de actividades recibidos"
-
-#~ msgctxt "SqlLineDialog|"
-#~ msgid "<"
-#~ msgstr "<"
-
-#~ msgctxt "SqlLineDialog|"
-#~ msgid ">"
-#~ msgstr ">"
-
-#~ msgctxt "DevicesView|"
-#~ msgid "Bad password input"
-#~ msgstr "Contraseña incorrecta"
-
-#~ msgctxt "LoginView|"
-#~ msgid "GCompris Teachers Tool"
-#~ msgstr "Herramienta del profesor de GCompris"
