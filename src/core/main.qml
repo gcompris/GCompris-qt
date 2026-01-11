@@ -605,7 +605,7 @@ Window {
         }
         ButtonGroup {
             id: exclusiveGroup
-            onClicked: {
+            onClicked: (button) => {
                 if (button) chooseLogin.chosenLogin = button.text;
             }
         }
