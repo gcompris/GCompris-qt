@@ -91,7 +91,7 @@ private:
     QString _host;
     int _port;
     bool _connected;
-    bool _wait4pong;
+    int _missedPongs;
 
     QTcpSocket *tcpSocket;
     QUdpSocket *udpSocket;

@@ -499,7 +499,7 @@ Window {
             if(pageView.depth !== 1 || requestAlreadyInProgress) {
                 return
             }
-            if (clientNetworkMessages.connectionStatus() !== NetConst.NOT_CONNECTED) {
+            if (clientNetworkMessages.connectionStatus() === NetConst.CONNECTED || clientNetworkMessages.connectionStatus() === NetConst.ALREADY_CONNECTED) {
                 return
             }
             requestAlreadyInProgress = true;
