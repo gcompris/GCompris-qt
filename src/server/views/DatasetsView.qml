@@ -37,29 +37,22 @@ Item {
         property int bigButtonHeight: Math.min(height / (buttonsColumn.children.length + 3) - Style.margins, Style.bigControlSize)
         property int preferredSplitWidth: bigButtonWidth + Style.bigMargins
 
-        Column {  // Activities list
+        FoldDown { // Activities list
+            id: activityPane
             SplitView.preferredWidth: splitDatasetView.preferredSplitWidth
             SplitView.minimumWidth: splitDatasetView.bigButtonWidth
-            height: parent.height
-
-            FoldDown {
-                id: activityPane
-                width: parent.width
-                height: parent.height
-                title: qsTr("Activities")
-                foldModel: Master.activityModel
-                indexKey: "activity_id"
-                nameKey: "activity_title"
-                checkKey: "activity_checked"
-                delegateName: "radioActivity"
-
-                filterVisible: true
-                collapsable: false
-                onSelectionClicked: (modelId) => {
-                    datasetsView.selectedActivity = modelId
-                    datasetsView.selectedDataset = -1
-                    Master.filterDatasets(datasetsView.selectedActivity, false)
-                }
+            title: qsTr("Activities")
+            foldModel: Master.activityModel
+            indexKey: "activity_id"
+            nameKey: "activity_title"
+            checkKey: "activity_checked"
+            delegateName: "radioActivity"
+            filterVisible: true
+            collapsable: false
+            onSelectionClicked: (modelId) => {
+                datasetsView.selectedActivity = modelId
+                datasetsView.selectedDataset = -1
+                Master.filterDatasets(datasetsView.selectedActivity, false)
             }
         }
 
