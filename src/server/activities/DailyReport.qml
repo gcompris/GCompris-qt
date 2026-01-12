@@ -25,8 +25,8 @@ Column {
         sort = order = ""
         resultModel.clear()
         headerTitle.groupTitle = ""
-        if (groupId !== -1) {
-            var group = Master.findObjectInModel(Master.groupModel, function(item) { return item.group_id === groupId })
+        if (Master.groupFilterId !== -1) {
+            var group = Master.findObjectInModel(Master.groupModel, function(item) { return item.group_id === Master.groupFilterId })
             headerTitle.groupTitle = group.group_name
         } else
             headerTitle.groupTitle = qsTr("All groups")
@@ -37,8 +37,8 @@ Column {
         var clauses = []
         clauses.push(`result_.activity_id=activity_.activity_id`)
         if (userList.length === 0) {
-            if (groupId !== -1)
-                clauses.push(`result_.user_id IN (SELECT user_id FROM group_user_ WHERE group_id=${groupId})`)
+            if (Master.groupFilterId !== -1)
+                clauses.push(`result_.user_id IN (SELECT user_id FROM group_user_ WHERE group_id=${Master.groupFilterId})`)
         } else {
             clauses.push(`result_.user_id in (` + userList.join(",") + `)`)
         }

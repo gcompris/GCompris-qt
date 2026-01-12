@@ -32,6 +32,9 @@ Item {
     property alias foldDownFilter: foldDownFilter
     property alias filterButton: filterButton
     property alias childGroup: childGroup
+    // Used to trigger selectionClicked() even if it's not visible,
+    // useful especially when changing locale to refresh Dataset view if an activity was selected
+    property bool clickOnClear: false
 
     enabled: activated
     visible: activated
@@ -42,11 +45,17 @@ Item {
         id: childGroup
         exclusive: foldDown.delegateName.includes("radio")
 
-        onCheckedButtonChanged: {
-            if(!checkedButton) {
-                currentChecked = -1;
-                selectionClicked(-1, false);
+        onCheckStateChanged: {
+            if(checkState === Qt.Unchecked) {
+                clearSelection();
             }
+        }
+    }
+
+    function clearSelection() {
+        currentChecked = -1;
+        if(visible || clickOnClear) {
+            selectionClicked(-1, false);
         }
     }
 
@@ -65,15 +74,13 @@ Item {
             visible: childGroup.exclusive
             anchors.left: parent.left
             icon.source: "qrc:/gcompris/src/server/resource/icons/minus.svg"
-            enabled: collapseButton.checked && ((childGroup.checkedButton != null) || (!childGroup.exclusive))
+            enabled: collapseButton.checked && childGroup.checkState != Qt.Unchecked
+            // hoverEnabled: true
+            // onHoveredChanged: console.log("checked: " + foldDown.currentChecked)
             onClicked: {    // Uncheck all buttons
-                if (childGroup.exclusive) {
-                    childGroup.checkedButton = null
-                    foldDown.currentChecked = -1
-                    foldDown.selectionClicked( -1, checked)
+                for(var i = 0; i < childGroup.buttons.length; i++) {
+                    foldDown.foldModel.setProperty(i, foldDown.checkKey, false);
                 }
-                for (var i = 0; i < childGroup.buttons.length; i++)
-                    foldDown.foldModel.setProperty(i, foldDown.checkKey, false)
             }
         }
 

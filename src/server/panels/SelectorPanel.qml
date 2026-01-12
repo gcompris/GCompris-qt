@@ -31,7 +31,7 @@ Column {
     function removePupils()     { splitter.removeItem(pupilPane) }
     function removeActivities() { splitter.removeItem(activityPane) }
 
-    ListModel { id: selectorUserModel }
+    // ListModel { id: selectorUserModel }
     ListModel { id: selectorActivityModel }
 
     CalendarPane {
@@ -62,14 +62,13 @@ Column {
             SplitView.fillHeight: selectorPanel.withGroups && (!selectorPanel.withActivities && !selectorPanel.withPupils)
             onSelectionClicked: (modelId) => {
                 Master.groupFilterId = modelId
-                Master.filterUsers(selectorUserModel, false)
             }
         }
 
         FoldDown {
             id: pupilPane
             title: qsTr("Pupils")
-            foldModel: selectorUserModel
+            foldModel: Master.filteredUserModel
             indexKey: "user_id"
             nameKey: "user_name"
             checkKey: "user_checked"

@@ -18,12 +18,7 @@ AbstractButton {
     height: Style.controlSize
     implicitWidth: label.implicitWidth + controlImage.width + Style.margins
     opacity: enabled ? 1 : 0.5
-
-    onClicked: {
-        if(!checked) {
-            checked = !checked;
-        }
-    }
+    checkable: true
 
     Row {
         id: controlRow
