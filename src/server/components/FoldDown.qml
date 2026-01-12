@@ -75,8 +75,6 @@ Item {
             anchors.left: parent.left
             icon.source: "qrc:/gcompris/src/server/resource/icons/minus.svg"
             enabled: collapseButton.checked && childGroup.checkState != Qt.Unchecked
-            // hoverEnabled: true
-            // onHoveredChanged: console.log("checked: " + foldDown.currentChecked)
             onClicked: {    // Uncheck all buttons
                 for(var i = 0; i < childGroup.buttons.length; i++) {
                     foldDown.foldModel.setProperty(i, foldDown.checkKey, false);
