@@ -29455,29 +29455,3 @@ msgstr "Omet"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Inicia"
-
-#~ msgctxt "Data|"
-#~ msgid "Find the correct answer."
-#~ msgstr "Troba la resposta correcta."
-
-# Nota: http://encycolorpedia.es/b7410e
-# https://en.wikipedia.org/wiki/Rust_(color)
-#~ msgctxt "Data|"
-#~ msgid "What is the first number?"
-#~ msgstr "Què és el primer número?"
-
-#~ msgctxt "Data|"
-#~ msgid "What is a color?"
-#~ msgstr "Què és un color?"
-
-#~ msgctxt "Data|"
-#~ msgid "What are the first two numbers?"
-#~ msgstr "Què són els dos primers números?"
-
-#~ msgctxt "Data|"
-#~ msgid "What are animals?"
-#~ msgstr "Què són els animals?"
-
-#~ msgctxt "Data|"
-#~ msgid "Answers always in order, select the first one"
-#~ msgstr "Respostes sempre en ordre, tria la primera"
