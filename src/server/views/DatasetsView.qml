@@ -51,7 +51,6 @@ Item {
             collapsable: false
             onSelectionClicked: (modelId) => {
                 datasetsView.selectedActivity = modelId
-                datasetsView.selectedDataset = -1
                 Master.filterDatasets(datasetsView.selectedActivity, false)
             }
         }

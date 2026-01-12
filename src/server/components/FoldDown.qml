@@ -41,6 +41,13 @@ Item {
     ButtonGroup {
         id: childGroup
         exclusive: foldDown.delegateName.includes("radio")
+
+        onCheckedButtonChanged: {
+            if(!checkedButton) {
+                currentChecked = -1;
+                selectionClicked(-1, false);
+            }
+        }
     }
 
     // Folddown header
