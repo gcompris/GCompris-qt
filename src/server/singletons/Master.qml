@@ -31,6 +31,9 @@ Item {
     property string locale: "system"
     onLocaleChanged: {
         ApplicationInfo.switchLocale(locale)
+        loadAllActivities(activityModel);
+        loadAllActivities(allActivitiesModel);
+        loadActivitiesWithData(activityWithDataModel);
     }
 
     readonly property var columnsLabel: ({
