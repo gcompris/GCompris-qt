@@ -128,8 +128,9 @@ Item {
                 collapsable: false
                 delegateName: "radioGroupEdit"
                 onSelectionClicked: (modelId) => {
-                    Master.groupFilterId = modelId;
-                    Master.filterUsers(Master.filteredUserModel, false);
+                    if(visible) {
+                        Master.setGroupFilterId(modelId);
+                    }
                 }
             }
 

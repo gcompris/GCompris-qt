@@ -90,8 +90,9 @@ Item {
             filterVisible: false
             collapsable: false
             onSelectionClicked: (modelId) => {
-                Master.groupFilterId = modelId
-                Master.filterUsers(Master.filteredUserModel, false)
+                if(visible) {
+                    Master.setGroupFilterId(modelId);
+                }
             }
         }
 

@@ -109,6 +109,12 @@ Item {
     ListModel { id: tmpModel }              // Used for temporary requests inside functions
 
 //// Groups functions
+
+    function setGroupFilterId(modelId) {
+        groupFilterId = modelId;
+        filterUsers(filteredUserModel, false);
+    }
+
     function loadGroups() {
         modelFromRequest(groupModel, "SELECT * FROM _group_users ORDER BY group_name"
                          , { group_checked: false }

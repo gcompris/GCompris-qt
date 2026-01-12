@@ -31,12 +31,12 @@ Control {
         text: group_name
         checked: group_checked
         ButtonGroup.group: childGroup
-        onClicked: {
-            if (currentChecked !== -1)
-                foldModel.setProperty(currentChecked, checkKey, false)
-            foldModel.setProperty(index, checkKey, true)
-            selectionClicked(foldModel.get(index)[indexKey], checked)
-            currentChecked = index
+        onCheckedChanged: {
+            foldDown.foldModel.setProperty(index, checkKey, checked);
+            if(checked) {
+                foldDown.currentChecked = index;
+                selectionClicked(foldDown.foldModel.get(index)[indexKey], checked);
+            }
         }
     }
 

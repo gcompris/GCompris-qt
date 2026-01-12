@@ -30,13 +30,13 @@ Control {
         text: eval(nameKey)         // In these cases, eval is safe because no code injection is possible
         checked: eval(checkKey)     // Eval's parameter is an internal column name
         ButtonGroup.group: childGroup
-        onClicked: {
-            if(currentChecked !== -1) {
-                foldModel.setProperty(currentChecked, checkKey, false);
+        onCheckedChanged: {
+            foldDown.foldModel.setProperty(index, checkKey, checked);
+            if(checked) {
+                foldDown.currentChecked = index;
+                if(visible)
+                    selectionClicked(foldDown.foldModel.get(index)[indexKey], checked);
             }
-            foldModel.setProperty(index, checkKey, true);
-            selectionClicked(foldModel.get(index)[indexKey], checked);
-            currentChecked = index;
         }
     }
 }

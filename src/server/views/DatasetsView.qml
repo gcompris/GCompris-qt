@@ -49,6 +49,7 @@ Item {
             delegateName: "radioActivity"
             filterVisible: true
             collapsable: false
+            clickOnClear: true
             onSelectionClicked: (modelId) => {
                 datasetsView.selectedActivity = modelId
                 Master.filterDatasets(datasetsView.selectedActivity, false)
