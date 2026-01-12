@@ -24,7 +24,7 @@ Item {
     property alias datasetsView: datasetsView
     property alias chartsView: chartsView
     property alias settingsView: settingsView
-    property alias devView: devView
+    //property alias devView: devView
     property alias loginButton: loginButton
 
     height: parent.height
@@ -120,14 +120,14 @@ Item {
                 panelWidth: buttons.width
                 onClicked: navigationPanel.changeTo(6)
             }
-            NavigationButton {
+            /*NavigationButton {
                 id: devView
                 icon.source: "qrc:/gcompris/src/server/resource/icons/debug.svg"
                 text: qsTr("Development (WIP)")
                 isCollapsed: navigationPanel.isCollapsed
                 panelWidth: buttons.width
                 onClicked: navigationPanel.changeTo(7)
-            }
+            }*/
         }
     }
 }
