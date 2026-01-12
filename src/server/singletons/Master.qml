@@ -684,6 +684,7 @@ Item {
         loadAllActivities(allActivitiesModel)
         loadActivitiesWithData(activityWithDataModel)
         loadDatasets()
+        filterDatasets(-1, false)
     }
 
     Component.onCompleted: {
