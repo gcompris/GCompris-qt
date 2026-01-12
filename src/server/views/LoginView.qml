@@ -116,7 +116,7 @@ Item {
             width: 320
             activeFocusOnTab: true
             echoMode: TextInput.Password
-            defaultText: serverSettings.lastLogin // TODO: set empty default text...
+            defaultText: ""
         }
 
         Row {

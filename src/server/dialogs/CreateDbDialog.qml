@@ -100,10 +100,6 @@ Popup {
             activeFocusOnTab: true
             focus: true
             defaultText: serverSettings.lastLogin
-//             onTextChanged: {
-// //                serverSettings.lastLogin = text
-//                 createDbDialog.message.text = ""
-//             }
         }
 
         DefaultLabel {
@@ -119,7 +115,7 @@ Popup {
             width: parent.width
             activeFocusOnTab: true
             echoMode: TextInput.Password
-            defaultText: serverSettings.lastLogin
+            defaultText: ""
         }
 
         StyledCheckBox {
