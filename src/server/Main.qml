@@ -120,9 +120,6 @@ Window {
                 SettingsView {
                     visible: false
                 }
-                DevelopmentView {
-                    visible: false
-                }
                 clip: true
                 focus: true
 
