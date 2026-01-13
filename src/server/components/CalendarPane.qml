@@ -224,6 +224,11 @@ Column {
                             hoverEnabled: true
                             onClicked: (mouse)=> {
                                 var dateCopy = dateStr
+                                if(dateCopy == startDate && dateCopy == endDate && dateCopy != "") {
+                                    startDate = endDate = "";
+                                    calendarChanged();
+                                    return
+                                }
                                 if(dateStr > lastDate) {
                                     dateCopy = lastDate;
                                 }
