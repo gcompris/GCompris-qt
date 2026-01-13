@@ -1224,7 +1224,7 @@ msgctxt "FieldEdit|"
 msgid "Remove last entry"
 msgstr "Elimina l'última entrada"
 
-#: server/components/FoldDown.qml:138
+#: server/components/FoldDown.qml:150
 msgctxt "FoldDown|@action"
 msgid "Filter list"
 msgstr "Filtra la llista"
@@ -1409,12 +1409,12 @@ msgctxt "CreateDbDialog|"
 msgid "Teacher login"
 msgstr "Inici de sessió del professor/a"
 
-#: server/dialogs/CreateDbDialog.qml:112
+#: server/dialogs/CreateDbDialog.qml:108
 msgctxt "CreateDbDialog|"
 msgid "Password"
 msgstr "Contrasenya"
 
-#: server/dialogs/CreateDbDialog.qml:128
+#: server/dialogs/CreateDbDialog.qml:124
 msgctxt "CreateDbDialog|"
 msgid "Encrypted database (enabled by default)"
 msgstr "Base de dades encriptada (activada de manera predeterminada)"
@@ -1665,112 +1665,107 @@ msgctxt "NavigationPanel|"
 msgid "Settings"
 msgstr "Configuració"
 
-#: server/panels/NavigationPanel.qml:126
-msgctxt "NavigationPanel|"
-msgid "Development (WIP)"
-msgstr "Desenvolupament (WIP)"
-
 #: server/panels/SelectorPanel.qml:51
 msgctxt "SelectorPanel|"
 msgid "Groups"
 msgstr "Grups"
 
-#: server/panels/SelectorPanel.qml:71
+#: server/panels/SelectorPanel.qml:70
 msgctxt "SelectorPanel|"
 msgid "Pupils"
 msgstr "Alumnes"
 
-#: server/panels/SelectorPanel.qml:87
+#: server/panels/SelectorPanel.qml:86
 msgctxt "SelectorPanel|"
 msgid "Activities"
 msgstr "Activitats"
 
-#: server/singletons/Master.qml:37
+#: server/singletons/Master.qml:40
 msgctxt "Master|"
 msgid "User ID"
 msgstr "ID de l'usuari"
 
-#: server/singletons/Master.qml:38
+#: server/singletons/Master.qml:41
 msgctxt "Master|"
 msgid "Name"
 msgstr "Nom"
 
-#: server/singletons/Master.qml:39
+#: server/singletons/Master.qml:42
 msgctxt "Master|"
 msgid "Names"
 msgstr "Noms"
 
-#: server/singletons/Master.qml:40
+#: server/singletons/Master.qml:43
 msgctxt "Master|"
 msgid "Password"
 msgstr "Contrasenya"
 
-#: server/singletons/Master.qml:41
+#: server/singletons/Master.qml:44
 msgctxt "Master|"
 msgid "Users IDs"
 msgstr "ID dels usuaris"
 
-#: server/singletons/Master.qml:42
+#: server/singletons/Master.qml:45
 msgctxt "Master|"
 msgid "Activity ID"
 msgstr "ID d'activitat"
 
-#: server/singletons/Master.qml:43
+#: server/singletons/Master.qml:46
 msgctxt "Master|"
 msgid "Activity"
 msgstr "Activitat"
 
-#: server/singletons/Master.qml:44
+#: server/singletons/Master.qml:47
 msgctxt "Master|"
 msgid "Group"
 msgstr "Grup"
 
-#: server/singletons/Master.qml:45
+#: server/singletons/Master.qml:48
 msgctxt "Master|"
 msgid "Description"
 msgstr "Descripció"
 
-#: server/singletons/Master.qml:46
+#: server/singletons/Master.qml:49
 msgctxt "Master|"
 msgid "Groups"
 msgstr "Grups"
 
-#: server/singletons/Master.qml:47
+#: server/singletons/Master.qml:50
 msgctxt "Master|"
 msgid "Groups IDs"
 msgstr "ID dels grups"
 
-#: server/singletons/Master.qml:48 server/singletons/Master.qml:52
+#: server/singletons/Master.qml:51 server/singletons/Master.qml:55
 msgctxt "Master|"
 msgid "Date"
 msgstr "Data"
 
-#: server/singletons/Master.qml:49 server/singletons/Master.qml:54
+#: server/singletons/Master.qml:52 server/singletons/Master.qml:57
 msgctxt "Master|"
 msgid "Success"
 msgstr "Correcte"
 
-#: server/singletons/Master.qml:50
+#: server/singletons/Master.qml:53
 msgctxt "Master|"
 msgid "Duration"
 msgstr "Durada"
 
-#: server/singletons/Master.qml:51
+#: server/singletons/Master.qml:54
 msgctxt "Master|"
 msgid "Data"
 msgstr "Dades"
 
-#: server/singletons/Master.qml:53
+#: server/singletons/Master.qml:56
 msgctxt "Master|"
 msgid "Count"
 msgstr "Comptador"
 
-#: server/singletons/Master.qml:55
+#: server/singletons/Master.qml:58
 msgctxt "Master|"
 msgid "Failed"
 msgstr "Ha fallat"
 
-#: server/singletons/Master.qml:56
+#: server/singletons/Master.qml:59
 msgctxt "Master|"
 msgid "Success ratio"
 msgstr "Relació d'èxit"
@@ -1888,47 +1883,47 @@ msgctxt "DuplicateData|"
 msgid "Copy to"
 msgstr "Copia a"
 
-#: server/views/DatasetsView.qml:49
+#: server/views/DatasetsView.qml:44
 msgctxt "DatasetsView|"
 msgid "Activities"
 msgstr "Activitats"
 
-#: server/views/DatasetsView.qml:70
+#: server/views/DatasetsView.qml:63
 msgctxt "DatasetsView|"
 msgid "Datasets"
 msgstr "Conjunts de dades"
 
-#: server/views/DatasetsView.qml:102
+#: server/views/DatasetsView.qml:95
 msgctxt "DatasetsView|"
 msgid "Datasets management"
 msgstr "Gestió de conjunts de dades"
 
-#: server/views/DatasetsView.qml:120
+#: server/views/DatasetsView.qml:113
 msgctxt "DatasetsView|"
 msgid "Create dataset"
 msgstr "Crea un conjunt de dades"
 
-#: server/views/DatasetsView.qml:129
+#: server/views/DatasetsView.qml:122
 msgctxt "DatasetsView|"
 msgid "Update dataset"
 msgstr "Actualitza el conjunt de dades"
 
-#: server/views/DatasetsView.qml:138
+#: server/views/DatasetsView.qml:131
 msgctxt "DatasetsView|"
 msgid "Send dataset to clients"
 msgstr "Envia el conjunt de dades als clients"
 
-#: server/views/DatasetsView.qml:157
+#: server/views/DatasetsView.qml:150
 msgctxt "DatasetsView|"
 msgid "Remove dataset from clients"
 msgstr "Elimina el conjunt de dades dels clients"
 
-#: server/views/DatasetsView.qml:182
+#: server/views/DatasetsView.qml:175
 msgctxt "DatasetsView|"
 msgid "Remove all datasets from clients"
 msgstr "Elimina tots els conjunts de dades dels clients"
 
-#: server/views/DatasetsView.qml:192
+#: server/views/DatasetsView.qml:185
 msgctxt "DatasetsView|"
 msgid "Delete dataset"
 msgstr "Suprimeix el conjunt de dades"
@@ -1978,72 +1973,72 @@ msgctxt "DevicesView|"
 msgid "Groups"
 msgstr "Grups"
 
-#: server/views/DevicesView.qml:100
+#: server/views/DevicesView.qml:101
 msgctxt "DevicesView|"
 msgid "Pupils"
 msgstr "Alumnes"
 
-#: server/views/DevicesView.qml:134
+#: server/views/DevicesView.qml:135
 msgctxt "DevicesView|"
 msgid "Network"
 msgstr "Xarxa"
 
-#: server/views/DevicesView.qml:157
+#: server/views/DevicesView.qml:158
 msgctxt "DevicesView|"
 msgid "Connect devices"
 msgstr "Connecta dispositius"
 
-#: server/views/DevicesView.qml:170
+#: server/views/DevicesView.qml:171
 msgctxt "DevicesView|"
 msgid "Send login list"
 msgstr "Envia la llista d'inici de sessió"
 
-#: server/views/DevicesView.qml:195
+#: server/views/DevicesView.qml:196
 msgctxt "DevicesView|"
 msgid "Disconnect selected pupils"
 msgstr "Desconnecta els alumnes seleccionats"
 
-#: server/views/DevicesView.qml:212
+#: server/views/DevicesView.qml:213
 msgctxt "DevicesView|"
 msgid "Disconnect everybody"
 msgstr "Desconnecta tothom"
 
-#: server/views/DevicesView.qml:228
+#: server/views/DevicesView.qml:229
 msgctxt "DevicesView|"
 msgid "Server ID:"
 msgstr "ID del servidor:"
 
-#: server/views/DevicesView.qml:235
+#: server/views/DevicesView.qml:236
 msgctxt "DevicesView|"
 msgid "Teacher port:"
 msgstr "Port del professor/a:"
 
-#: server/views/DevicesView.qml:242
+#: server/views/DevicesView.qml:243
 msgctxt "DevicesView|"
 msgid "Connected:"
 msgstr "Connectat:"
 
-#: server/views/DevicesView.qml:249
+#: server/views/DevicesView.qml:250
 msgctxt "DevicesView|"
 msgid "Logged:"
 msgstr "Sessió iniciada:"
 
-#: server/views/DevicesView.qml:256
+#: server/views/DevicesView.qml:257
 msgctxt "DevicesView|"
 msgid "Data received:"
 msgstr "Dades rebudes:"
 
-#: server/views/DevicesView.qml:284
+#: server/views/DevicesView.qml:285
 msgctxt "DevicesView|"
 msgid "Network logs"
 msgstr "Registres de xarxa"
 
-#: server/views/DevicesView.qml:296
+#: server/views/DevicesView.qml:297
 msgctxt "DevicesView|"
 msgid "Clear logs"
 msgstr "Neteja els registres"
 
-#: server/views/DevicesView.qml:316
+#: server/views/DevicesView.qml:317
 #, qt-format
 msgctxt "DevicesView|"
 msgid "Server already running on port %1"
@@ -2089,7 +2084,7 @@ msgctxt "LoginView|"
 msgid "Database file:"
 msgstr "Fitxer de base de dades:"
 
-#: server/views/ManagePupilsView.qml:34 server/views/ManagePupilsView.qml:148
+#: server/views/ManagePupilsView.qml:34 server/views/ManagePupilsView.qml:149
 msgctxt "ManagePupilsView|"
 msgid "Add a group"
 msgstr "Afegeix un grup"
@@ -2109,7 +2104,7 @@ msgctxt "ManagePupilsView|"
 msgid "Edit group"
 msgstr "Edita el grup"
 
-#: server/views/ManagePupilsView.qml:68 server/views/ManagePupilsView.qml:206
+#: server/views/ManagePupilsView.qml:68 server/views/ManagePupilsView.qml:207
 msgctxt "ManagePupilsView|"
 msgid "Add a pupil"
 msgstr "Afegeix un alumne"
@@ -2124,37 +2119,37 @@ msgctxt "ManagePupilsView|"
 msgid "Groups"
 msgstr "Grups"
 
-#: server/views/ManagePupilsView.qml:158
+#: server/views/ManagePupilsView.qml:159
 msgctxt "ManagePupilsView|"
 msgid "Pupils and groups"
 msgstr "Alumnes i grups"
 
-#: server/views/ManagePupilsView.qml:187
+#: server/views/ManagePupilsView.qml:188
 msgctxt "ManagePupilsView|"
 msgid "Pupils management"
 msgstr "Gestió d'alumnes"
 
-#: server/views/ManagePupilsView.qml:215
+#: server/views/ManagePupilsView.qml:216
 msgctxt "ManagePupilsView|"
 msgid "Add to groups"
 msgstr "Afegeix a grups"
 
-#: server/views/ManagePupilsView.qml:224
+#: server/views/ManagePupilsView.qml:225
 msgctxt "ManagePupilsView|"
 msgid "Remove from groups"
 msgstr "Elimina de grups"
 
-#: server/views/ManagePupilsView.qml:233
+#: server/views/ManagePupilsView.qml:234
 msgctxt "ManagePupilsView|"
 msgid "Export pupils"
 msgstr "Exporta alumnes"
 
-#: server/views/ManagePupilsView.qml:241
+#: server/views/ManagePupilsView.qml:242
 msgctxt "ManagePupilsView|"
 msgid "Import pupils"
 msgstr "Importa alumnes"
 
-#: server/views/ManagePupilsView.qml:250
+#: server/views/ManagePupilsView.qml:251
 msgctxt "ManagePupilsView|"
 msgid "Remove pupils"
 msgstr "Elimina alumnes"
@@ -2309,6 +2304,10 @@ msgstr "Alumnes amb inici de sessió"
 msgctxt "SettingsView|"
 msgid "Activities data received"
 msgstr "Dades d'activitats rebudes"
+
+#~ msgctxt "NavigationPanel|"
+#~ msgid "Development (WIP)"
+#~ msgstr "Desenvolupament (WIP)"
 
 #~ msgctxt "SqlLineDialog|"
 #~ msgid "<"
