@@ -22,11 +22,12 @@ Column {
     property string order: ""       // ascending + or descending -
 
     function executeRequest() {
+        var groupFilterId = Master.groupFilterId
         sort = order = ""
         resultModel.clear()
         headerTitle.groupTitle = ""
-        if (Master.groupFilterId !== -1) {
-            var group = Master.findObjectInModel(Master.groupModel, function(item) { return item.group_id === Master.groupFilterId })
+        if (groupFilterId !== -1) {
+            var group = Master.findObjectInModel(Master.groupModel, function(item) { return item.group_id === groupFilterId })
             headerTitle.groupTitle = group.group_name
         } else
             headerTitle.groupTitle = qsTr("All groups")
@@ -37,14 +38,16 @@ Column {
         var clauses = []
         clauses.push(`result_.activity_id=activity_.activity_id`)
         if (userList.length === 0) {
-            if (Master.groupFilterId !== -1)
-                clauses.push(`result_.user_id IN (SELECT user_id FROM group_user_ WHERE group_id=${Master.groupFilterId})`)
+            if(groupFilterId !== -1) {
+                clauses.push(`result_.user_id IN (SELECT user_id FROM group_user_ WHERE group_id=${groupFilterId})`)
+            }
         } else {
             clauses.push(`result_.user_id in (` + userList.join(",") + `)`)
         }
         clauses.push(`result_.user_id=user_.user_id`)
-        if (activityList.length !== 0)
+        if (activityList.length !== 0) {
             clauses.push(`result_.activity_id in (` + activityList.join(",") + `)`)
+        }
 
         var start = selector.calendar.strDateToSql('20240101')       // Beginning of time for GCompris-Teachers. Nothing older.
         var end = selector.calendar.strDateToSql(new Date().toLocaleString(selector.calendar.locale, 'yyyyMMdd'))
@@ -54,8 +57,9 @@ Column {
         }
         start = start.replace(' 00:00:00', '')
         end = end.replace(' 00:00:00', '')
-        if (selector.calendar.startDate !== "")
+        if (selector.calendar.startDate !== "") {
             clauses.push(`result_day BETWEEN '${start}' AND '${end}'`)
+        }
 
         var request = `SELECT result_.user_id, result_.activity_id, activity_name, user_.user_name
         , date(result_datetime) AS result_day, count(result_.activity_id) AS count_activity

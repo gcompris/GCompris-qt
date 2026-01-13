@@ -47,7 +47,6 @@ Control {
         }
         onClicked: {
             selectionClicked(foldModel.get(index)[indexKey], checked);
-            currentChecked = index;
         }
     }
 

@@ -31,7 +31,6 @@ Column {
     function removePupils()     { splitter.removeItem(pupilPane) }
     function removeActivities() { splitter.removeItem(activityPane) }
 
-    // ListModel { id: selectorUserModel }
     ListModel { id: selectorActivityModel }
 
     CalendarPane {

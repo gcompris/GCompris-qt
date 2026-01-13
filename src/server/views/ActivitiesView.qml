@@ -26,10 +26,49 @@ Item {
 
     property alias selector: selector
     property alias calendar: selector.calendar
-    property int groupId: Master.groupFilterId
     property var userList: []
     property var activityList: []
-    property string activityName: ""
+
+    onVisibleChanged: {
+        if(visible) {
+            initView();
+        }
+    }
+
+    function initView() {
+        // activityList is always kept for convenience, as activities result are not displayed anyway if there is none for selected group/users
+        initUserList();
+
+        updateActivityPaneModel();
+
+        dailyReport.executeRequest();
+    }
+
+    function updateActivityPaneModel() {
+        if(Master.groupFilterId === -1 && userList.length === 0) {
+            Master.loadActivitiesWithData(selector.activityPane.foldModel, activityList, true)
+        } else if(userList.length === 0) {
+            Master.loadGroupActivities(selector.activityPane.foldModel, Master.groupFilterId, activityList, true)
+        } else  {
+            Master.loadUserActivities(selector.activityPane.foldModel, userList, activityList, true)
+        }
+    }
+
+    function initUserList() {
+        // user list should be cleared every time when changing group
+        userList = [];
+        var pupilPaneCount = Master.filteredUserModel.count;
+        if(selector.pupilPane.currentChecked === -2) {
+            Master.foldDownToList(selector.pupilPane, activitiesView.userList, -2, true)
+        } else {
+            for(var i = 0; i < pupilPaneCount; i++) {
+                var model_data = Master.filteredUserModel.get(i);
+                if(model_data["user_checked"] === true) {
+                    Master.foldDownToList(selector.pupilPane, activitiesView.userList, model_data["user_id"], true);
+                }
+            }
+        }
+    }
 
     StyledSplitView {
         id: splitActivitiesView
@@ -52,43 +91,38 @@ Item {
             calendar.onCalendarChanged: dailyReport.executeRequest()
 
             groupPane.onSelectionClicked: (modelId, checked) => {
-                if (pageStack.depth > 1)
-                    pageStack.pop()
-                activitiesView.groupId = modelId
-                activitiesView.userList = []
-                activitiesView.activityList = []
-                activitiesView.activityName = ""
-                pupilPane.currentChecked = -1
-                if (activitiesView.groupId === -1) {
-                    Master.unCheckModel(Master.groupModel, "group_checked")
-                    Master.loadActivitiesWithData(activityPane.foldModel)
-                } else {
-                    Master.filterUsers(pupilPane.foldModel, false)
-                    Master.loadGroupActivities(activityPane.foldModel, activitiesView.groupId)
+                if(!visible) {
+                    return;
                 }
-                dailyReport.executeRequest()
+                if (pageStack.depth > 1) {
+                    pageStack.pop();
+                }
+                Master.setGroupFilterId(modelId);
+                activitiesView.initView()
+                dailyReport.executeRequest();
             }
 
             pupilPane.onSelectionClicked: (modelId, checked) => {
-                if (pageStack.depth > 1)
-                    pageStack.pop()
-                Master.foldDownToList(pupilPane, activitiesView.userList, modelId, checked)
-                activitiesView.activityName = ""
-                activityPane.currentChecked = -1
-                if (activitiesView.userList.length === 0) {
-                    Master.loadActivitiesWithData(activityPane.foldModel)
-                    activityList = []
-                } else {
-                    Master.loadUserActivities(activityPane.foldModel, userList, activityList, true)
+                if(!visible) {
+                    return;
                 }
-                dailyReport.executeRequest()
+                if (pageStack.depth > 1) {
+                    pageStack.pop();
+                }
+                Master.foldDownToList(pupilPane, activitiesView.userList, modelId, checked);
+                activitiesView.updateActivityPaneModel();
+                dailyReport.executeRequest();
             }
 
             activityPane.onSelectionClicked: (modelId, checked) => {
-                if (pageStack.depth > 1)
-                    pageStack.pop()
-                Master.foldDownToList(activityPane, activitiesView.activityList, modelId, checked)
-                dailyReport.executeRequest()
+                if(!visible) {
+                    return;
+                }
+                if (pageStack.depth > 1) {
+                    pageStack.pop();
+                }
+                Master.foldDownToList(activityPane, activitiesView.activityList, modelId, checked);
+                dailyReport.executeRequest();
             }
         }
 
