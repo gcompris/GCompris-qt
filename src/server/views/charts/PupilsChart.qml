@@ -22,14 +22,21 @@ Item {
     visible: false
 
     function executeRequest() {
-        if (!databaseController.isDatabaseLoaded())
-            return
+        mySeries.axisX.clear();
+        mySeries.axisX.categories = [""]; // needs not be empty to properly clear visually
+        mySeries.clear();
+        mySeries.axisY.min = 0;
+        mySeries.axisY.max = 1;
+        mySeries.visible = false;
+
+        if (!databaseController.isDatabaseLoaded() || userList.length === 0) {
+            return;
+        }
 
 //        console.warn(userList)
         var clauses = []
         clauses.push(`user_.user_id=result_.user_id`)
-        if (userList.length !== 0)
-            clauses.push(`user_.user_id in (` + userList.join(",") + `)`)
+        clauses.push(`user_.user_id in (` + userList.join(",") + `)`)
 
         var start = calendar.strDateToSql('20240101')       // Beginning of time for GCompris-Teachers. Nothing older.
         var end = calendar.strDateToSql(new Date().toLocaleString(calendar.locale, 'yyyyMMdd'))
@@ -48,8 +55,6 @@ Item {
 
         var jsonModel = JSON.parse(databaseController.selectToJson(request))
 
-        mySeries.axisX.clear()
-        mySeries.clear()
         var spots = {}
         for (var i = 0; i < jsonModel.length; i++) {
             if (!spots.hasOwnProperty(jsonModel[i].result_day))     // Create a spot for this day, if it doesn't exist
@@ -84,7 +89,6 @@ Item {
             max = Math.max(max, colMax)
         }
         mySeries.axisX.categories = Object.keys(spots).sort()       // Set axis
-        mySeries.axisY.min = 0
         mySeries.axisY.max = (Math.floor(max / 10) + 1) * 10
     }
 
