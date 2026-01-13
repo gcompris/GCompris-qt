@@ -32,6 +32,35 @@ Item {
             usersChartStack.pop()
     }
 
+    onVisibleChanged: {
+        if(visible) {
+            initView();
+        }
+    }
+
+    function initView() {
+        chartsView.popStacks()
+        // pupils chart need to init activityList with current selection
+        initUserList();
+        selector.refreshCurrentResults();
+    }
+
+    function initUserList() {
+        // user list should be cleared every time when changing group
+        userList = [];
+        var pupilPaneCount = Master.filteredUserModel.count;
+        if(selector.pupilPane.currentChecked === -2) {
+            Master.foldDownToList(selector.pupilPane, chartsView.userList, -1, false)
+        } else {
+            for(var i = 0; i < pupilPaneCount; i++) {
+                var model_data = Master.filteredUserModel.get(i);
+                if(model_data["user_checked"] === true) {
+                    Master.foldDownToList(selector.pupilPane, chartsView.userList, model_data["user_id"], true);
+                }
+            }
+        }
+    }
+
     StyledSplitView {
         id: chartsSplitView
         anchors.fill: parent
@@ -55,21 +84,31 @@ Item {
 
             calendar.onCalendarChanged: chartsContainer.children[bar.currentIndex].currentItem.executeRequest()
 
-            groupPane.onSelectionClicked: {
-                chartsView.popStacks()
-                Master.foldDownToList(pupilPane, chartsView.userList, -1, false)
+            groupPane.onSelectionClicked: (modelId) => {
+                if(!visible) {
+                    return;
+                }
+                chartsView.popStacks();
+                Master.setGroupFilterId(modelId);
+                Master.foldDownToList(pupilPane, chartsView.userList, -1, false);
                 chartsContainer.children[bar.currentIndex].currentItem.executeRequest();
             }
 
             pupilPane.onSelectionClicked: (modelId, checked) => {
+                if(!visible) {
+                    return;
+                }
                 chartsView.popStacks()
                 Master.foldDownToList(pupilPane, chartsView.userList, modelId, checked)
                 chartsContainer.children[bar.currentIndex].currentItem.executeRequest();
             }
 
             activityPane.onSelectionClicked: (modelId, checked) => {
-                chartsView.popStacks()
-                Master.foldDownToList(activityPane, chartsView.activityList, modelId, checked)
+                if(!visible) {
+                    return;
+                }
+                chartsView.popStacks();
+                Master.foldDownToList(activityPane, chartsView.activityList, modelId, checked);
                 chartsContainer.children[bar.currentIndex].currentItem.executeRequest();
             }
             function refreshCurrentResults() {
@@ -95,11 +134,17 @@ Item {
 
                 StyledTabButton {
                     text: qsTr("Activities")
-                    onClicked: bar.currentIndex = 0;
+                    onClicked: {
+                        bar.currentIndex = 0;
+                        selector.refreshCurrentResults();
+                    }
                 }
                 StyledTabButton {
                     text: qsTr("Pupils")
-                    onClicked: bar.currentIndex = 1;
+                    onClicked: {
+                        bar.currentIndex = 1;
+                        selector.refreshCurrentResults();
+                    }
                 }
             }
 
