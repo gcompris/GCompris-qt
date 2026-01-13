@@ -33,7 +33,6 @@ Control {
         onCheckedChanged: {
             foldDown.foldModel.setProperty(index, checkKey, checked);
             if(checked) {
-                foldDown.currentChecked = index;
                 if(visible)
                     selectionClicked(foldDown.foldModel.get(index)[indexKey], checked);
             }

@@ -26,7 +26,9 @@ Item {
     property bool activated: true
     property bool filterVisible: true
     property bool collapsable: true
-    property int currentChecked: -1
+    // currentChecked binding should not be breaked, as it allows to keep buttons state between views accurately
+    property int currentChecked: childGroup.checkState === Qt.Unchecked ? -1 :
+        (!childGroup.exclusive && childGroup.checkState === Qt.Checked ? -2 : 0) // -1 is none, -2 is all, 0 is something
     property string titleKey: nameKey
     property string delegateName: "check"
     property alias foldDownFilter: foldDownFilter
@@ -46,14 +48,13 @@ Item {
         exclusive: foldDown.delegateName.includes("radio")
 
         onCheckStateChanged: {
-            if(checkState === Qt.Unchecked) {
+            if(checkState === Qt.Unchecked && foldDown.clickOnClear) {
                 clearSelection();
             }
         }
     }
 
     function clearSelection() {
-        currentChecked = -1;
         if(visible || clickOnClear) {
             selectionClicked(-1, false);
         }
@@ -79,6 +80,7 @@ Item {
                 for(var i = 0; i < childGroup.buttons.length; i++) {
                     foldDown.foldModel.setProperty(i, foldDown.checkKey, false);
                 }
+                foldDown.clearSelection();
             }
         }
 
@@ -91,7 +93,6 @@ Item {
             enabled: foldDownFilter.text === ""
             linkedGroup: childGroup
             onClicked: {
-                foldDown.currentChecked = parentBox.checked ? -2 : -1 // -2 = all checked, -1 = none
                 foldDown.selectionClicked(foldDown.currentChecked, checked)
             }
         }

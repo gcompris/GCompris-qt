@@ -465,14 +465,14 @@ Item {
         for (var i = 0; i < model.count; i++) {
             var activity = model.get(i)
             activity.activity_title = allActivities[activity.activity_name].title
-            if (keepSelection)
-                if (activityList.includes(activity.activity_id))                 // Check if it was already checked
-                    activity.activity_checked = true
+            if (keepSelection && activityList.includes(activity.activity_id)) {    // Check if it was already checked
+                activity.activity_checked = true
+            }
         }
         listModelSort(model, (a, b) => (a.activity_title.localeCompare(b.activity_title)))
     }
 
-    function loadActivitiesWithData(model) {
+    function loadActivitiesWithData(model, activityList = [], keepSelection = false) { // model, array, bool
         var clauses = []
         clauses.push(`activity_.activity_id=result_.activity_id`)
         modelFromRequest(model, `SELECT DISTINCT result_.activity_id, activity_name
@@ -483,17 +483,25 @@ Item {
         for (var i = 0; i < model.count; i++) {
             var activity = model.get(i)
             activity.activity_title = allActivities[activity.activity_name].title
+            if (keepSelection && activityList.includes(activity.activity_id)) {    // Check if it was already checked
+                activity.activity_checked = true
+            }
         }
         listModelSort(model, (a, b) => (a.activity_title.localeCompare(b.activity_title)))
 
     }
 
-    function loadGroupActivities(model, groupId) {
+    function loadGroupActivities(model, groupId, activityList = [], keepSelection = false) { // model, int, array, bool
         modelFromRequest(model, `SELECT * FROM _group_activity_result WHERE group_id=${groupId}`
                          , { activity_checked: false, activity_title: "" }
                          )
-        for (var i = 0; i < model.count; i++)
-            model.setProperty(i, "activity_title", allActivities[model.get(i).activity_name].title)
+        for (var i = 0; i < model.count; i++) {
+            var activity = model.get(i)
+            activity.activity_title = allActivities[activity.activity_name].title
+            if (keepSelection && activityList.includes(activity.activity_id)) {    // Check if it was already checked
+                activity.activity_checked = true
+            }
+        }
         listModelSort(model, (a, b) => (a.activity_title.localeCompare(b.activity_title)))
     }
 
