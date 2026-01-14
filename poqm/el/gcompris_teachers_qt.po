@@ -536,47 +536,47 @@ msgctxt "ComparatorEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Πρέπει να διορθωθούν τα ακόλουθα σφάλματα:<ul>%1</ul>"
 
-#: server/activities/DailyReport.qml:32
+#: server/activities/DailyReport.qml:33
 msgctxt "DailyReport|"
 msgid "All groups"
 msgstr "Όλες οι ομάδες"
 
 #. Group name first, then Date range, with a space between them. Example: "Group Name 01/07/2025-08/07/2025"
-#: server/activities/DailyReport.qml:125
+#: server/activities/DailyReport.qml:129
 #, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: server/activities/DailyReport.qml:129
+#: server/activities/DailyReport.qml:133
 msgctxt "DailyReport|"
 msgid "Calendar"
 msgstr "Ημερολόγιο"
 
-#: server/activities/DailyReport.qml:180
+#: server/activities/DailyReport.qml:184
 msgctxt "DailyReport|"
 msgid "Count"
 msgstr "Μέτρηση"
 
-#: server/activities/DailyReport.qml:189
+#: server/activities/DailyReport.qml:193
 msgctxt "DailyReport|"
 msgid "Time"
 msgstr "Χρόνος"
 
-#: server/activities/DailyReport.qml:198
+#: server/activities/DailyReport.qml:202
 msgctxt "DailyReport|"
 msgid "Ratio"
 msgstr "Αναλογία"
 
 #. Number of result lines
-#: server/activities/DailyReport.qml:209
+#: server/activities/DailyReport.qml:213
 #, qt-format
 msgctxt "DailyReport|"
 msgid "Lines: %1"
 msgstr "Γραμμές: %1"
 
 #. Success ratio, example: "50 %"
-#: server/activities/DailyReport.qml:309
+#: server/activities/DailyReport.qml:313
 #, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %"
@@ -1244,7 +1244,7 @@ msgctxt "FieldEdit|"
 msgid "Remove last entry"
 msgstr "Αφαίρεση τελευταίας καταχώρησης"
 
-#: server/components/FoldDown.qml:150
+#: server/components/FoldDown.qml:151
 #, fuzzy
 #| msgctxt "FoldDown|"
 #| msgid "Filter list"
@@ -1262,12 +1262,12 @@ msgctxt "OkCancelButtons|"
 msgid "Cancel"
 msgstr "Ακύρωση"
 
-#: server/components/RadioGroupEditDelegate.qml:60
+#: server/components/RadioGroupEditDelegate.qml:59
 msgctxt "RadioGroupEditDelegate|"
 msgid "Edit group"
 msgstr "Επεξεργασία ομάδας"
 
-#: server/components/RadioGroupEditDelegate.qml:72
+#: server/components/RadioGroupEditDelegate.qml:71
 msgctxt "RadioGroupEditDelegate|"
 msgid "Delete group"
 msgstr "Διαγραφή ομάδας"
@@ -1692,17 +1692,17 @@ msgctxt "NavigationPanel|"
 msgid "Settings"
 msgstr "Ρυθμίσεις"
 
-#: server/panels/SelectorPanel.qml:51
+#: server/panels/SelectorPanel.qml:50
 msgctxt "SelectorPanel|"
 msgid "Groups"
 msgstr "Ομάδες"
 
-#: server/panels/SelectorPanel.qml:70
+#: server/panels/SelectorPanel.qml:69
 msgctxt "SelectorPanel|"
 msgid "Pupils"
 msgstr "Μαθητές"
 
-#: server/panels/SelectorPanel.qml:86
+#: server/panels/SelectorPanel.qml:85
 msgctxt "SelectorPanel|"
 msgid "Activities"
 msgstr "Δραστηριότητες"
@@ -1800,7 +1800,7 @@ msgctxt "Master|"
 msgid "Success ratio"
 msgstr "Ποσοστό επιτυχίας"
 
-#: server/views/charts/ActivitiesChart.qml:100
+#: server/views/charts/ActivitiesChart.qml:104
 #, fuzzy
 #| msgctxt "AllData|"
 #| msgid "Daily activities"
@@ -1808,7 +1808,7 @@ msgctxt "ActivitiesChart|"
 msgid "Daily activities chart"
 msgstr "Καθημερινές δραστηριότητες"
 
-#: server/views/charts/PupilsChart.qml:98
+#: server/views/charts/PupilsChart.qml:102
 #, fuzzy
 #| msgctxt "AllData|"
 #| msgid "All users activities"
@@ -1816,12 +1816,12 @@ msgctxt "PupilsChart|"
 msgid "User activities chart"
 msgstr "Δραστηριότητες όλων των χρηστών"
 
-#: server/views/ChartsView.qml:97
+#: server/views/ChartsView.qml:136
 msgctxt "ChartsView|"
 msgid "Activities"
 msgstr "Δραστηριότητες"
 
-#: server/views/ChartsView.qml:101
+#: server/views/ChartsView.qml:143
 msgctxt "ChartsView|"
 msgid "Pupils"
 msgstr "Μαθητές"

@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-01-09 15:29+0100\n"
+"PO-Revision-Date: 2026-01-13 12:02+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -76,47 +76,39 @@ msgstr ""
 
 #. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the previous numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n previous number(s)."
 msgid_plural "Find the %n previous number(s)."
-msgstr[0] "Trova le previe numeros."
-msgstr[1] "Trova le previe numeros."
+msgstr[0] "Trova le previe %n numero(s)."
+msgstr[1] "Trova le previe %n numero(s)."
 
 #. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:60
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the next numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n next number(s)."
 msgid_plural "Find the %n next number(s)."
-msgstr[0] "Trova le proxime numeros."
-msgstr[1] "Trova le proxime numeros."
+msgstr[0] "Trova le proxime %n numero(s)."
+msgstr[1] "Trova le proxime %n numero(s)."
 
 #. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:64
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the in-between numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n in-between number(s)"
 msgid_plural "Find the %n in-between number(s)"
-msgstr[0] "Trova le numeros inter medie."
-msgstr[1] "Trova le numeros inter medie."
+msgstr[0] "Trova le %n numero(s) inter medie."
+msgstr[1] "Trova le %n numero(s) inter medie."
 
 #. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:68
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the missing numbers"
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n missing numbers"
 msgid_plural "Find the %n missing numbers"
-msgstr[0] "Trova le numeros mancante"
-msgstr[1] "Trova le numeros mancante"
+msgstr[0] "Trova le %n numeros mancante"
+msgstr[1] "Trova le %n numeros mancante"
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
 msgctxt "Data|"
@@ -6094,12 +6086,9 @@ msgstr ""
 
 #. Activity title
 #: activities/drawing_wheels/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "BrushToolPanel|"
-#| msgid "Drawing Tools"
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
-msgstr "Instrumento de Designar"
+msgstr "Rotas de Designar"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
@@ -6161,12 +6150,9 @@ msgid "Wheel and gear"
 msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:435
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Piano composition"
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
-msgstr "Composition de piano"
+msgstr "Grandor e Position de stilo"
 
 #: activities/drawing_wheels/DrawingWheels.qml:447
 msgctxt "DrawingWheels|"
@@ -6270,12 +6256,9 @@ msgid "Offset"
 msgstr "Displaciamento"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1201
-#, fuzzy
-#| msgctxt "IntroMessage|"
-#| msgid "Start"
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
-msgstr "Initia"
+msgstr "Initia dente"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1381
 msgctxt "DrawingWheels|"
@@ -13875,12 +13858,9 @@ msgstr ""
 
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Decimal numbers with a pie."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
-msgstr "Numeros decimal con un torta."
+msgstr "Numero decimal a trovar inter 0 e 4."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"
@@ -18899,12 +18879,9 @@ msgstr ""
 
 #. Activity title
 #: activities/multiple_choice_questions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication."
 msgctxt "ActivityInfo|"
 msgid "Multiple-choice questions"
-msgstr "Multiplication."
+msgstr "Demandas de Selection-multiple ."
 
 #. Help title
 #: activities/multiple_choice_questions/ActivityInfo.qml:18
@@ -18939,12 +18916,11 @@ msgid "Space: select or deselect the highlighted answer"
 msgstr ""
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
-msgstr "Enter: valida tu responsa quando le button de OK es visibile"
+msgstr ""
+"Enter: valida tu responsa , o claude le pannello de texto de responsa "
+"(feedback) "
 
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
@@ -26395,13 +26371,13 @@ msgstr "GCompris ha essite actualiste! Hic il ha le nove cambiamentos:<br/>"
 #, qt-format
 msgctxt "main|"
 msgid "Do you want to connect to server %1?"
-msgstr ""
+msgstr "Tu vole connecter a servitor %1?"
 
 #: core/main.qml:530
 #, qt-format
 msgctxt "main|"
 msgid "Password rejected by server %1"
-msgstr ""
+msgstr "Contrasigno refusate per servitor %1"
 
 #: core/main.qml:531 core/main.qml:550 core/main.qml:625
 msgctxt "main|"
@@ -26411,12 +26387,12 @@ msgstr "OK"
 #: core/main.qml:546
 msgctxt "main|"
 msgid "Select your username"
-msgstr ""
+msgstr "Selige tu nomine de usator"
 
 #: core/main.qml:556
 msgctxt "main|"
 msgid "Please select your username in the list or cancel."
-msgstr ""
+msgstr "Pro favor tu selige tu nomine de liosta o cancella."
 
 #: core/main.qml:623
 msgctxt "main|"
