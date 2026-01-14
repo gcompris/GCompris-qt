@@ -534,47 +534,47 @@ msgctxt "ComparatorEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Ondoko erroreak zuzendu behar dira:<ul>%1</ul>"
 
-#: server/activities/DailyReport.qml:32
+#: server/activities/DailyReport.qml:33
 msgctxt "DailyReport|"
 msgid "All groups"
 msgstr "Talde guztiak"
 
 #. Group name first, then Date range, with a space between them. Example: "Group Name 01/07/2025-08/07/2025"
-#: server/activities/DailyReport.qml:125
+#: server/activities/DailyReport.qml:129
 #, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: server/activities/DailyReport.qml:129
+#: server/activities/DailyReport.qml:133
 msgctxt "DailyReport|"
 msgid "Calendar"
 msgstr "Egutegia"
 
-#: server/activities/DailyReport.qml:180
+#: server/activities/DailyReport.qml:184
 msgctxt "DailyReport|"
 msgid "Count"
 msgstr "Kopurua"
 
-#: server/activities/DailyReport.qml:189
+#: server/activities/DailyReport.qml:193
 msgctxt "DailyReport|"
 msgid "Time"
 msgstr "Ordua"
 
-#: server/activities/DailyReport.qml:198
+#: server/activities/DailyReport.qml:202
 msgctxt "DailyReport|"
 msgid "Ratio"
 msgstr "Proportzioa"
 
 #. Number of result lines
-#: server/activities/DailyReport.qml:209
+#: server/activities/DailyReport.qml:213
 #, qt-format
 msgctxt "DailyReport|"
 msgid "Lines: %1"
 msgstr "Lerroak: %1"
 
 #. Success ratio, example: "50 %"
-#: server/activities/DailyReport.qml:309
+#: server/activities/DailyReport.qml:313
 #, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %"
@@ -1233,7 +1233,7 @@ msgctxt "FieldEdit|"
 msgid "Remove last entry"
 msgstr "Kendu azken sarrera"
 
-#: server/components/FoldDown.qml:150
+#: server/components/FoldDown.qml:151
 msgctxt "FoldDown|"
 msgid "Filter list"
 msgstr "Iragazi zerrenda"
@@ -1248,12 +1248,12 @@ msgctxt "OkCancelButtons|"
 msgid "Cancel"
 msgstr "Ezeztatu"
 
-#: server/components/RadioGroupEditDelegate.qml:60
+#: server/components/RadioGroupEditDelegate.qml:59
 msgctxt "RadioGroupEditDelegate|"
 msgid "Edit group"
 msgstr "Editatu taldea"
 
-#: server/components/RadioGroupEditDelegate.qml:72
+#: server/components/RadioGroupEditDelegate.qml:71
 msgctxt "RadioGroupEditDelegate|"
 msgid "Delete group"
 msgstr "Ezabatu taldea"
@@ -1670,17 +1670,17 @@ msgctxt "NavigationPanel|"
 msgid "Settings"
 msgstr "Ezarpenak"
 
-#: server/panels/SelectorPanel.qml:51
+#: server/panels/SelectorPanel.qml:50
 msgctxt "SelectorPanel|"
 msgid "Groups"
 msgstr "Taldeak"
 
-#: server/panels/SelectorPanel.qml:70
+#: server/panels/SelectorPanel.qml:69
 msgctxt "SelectorPanel|"
 msgid "Pupils"
 msgstr "Ikasleak"
 
-#: server/panels/SelectorPanel.qml:86
+#: server/panels/SelectorPanel.qml:85
 msgctxt "SelectorPanel|"
 msgid "Activities"
 msgstr "Jarduerak"
@@ -1775,12 +1775,12 @@ msgctxt "Master|"
 msgid "Success ratio"
 msgstr "Arrakasta-proportzioa"
 
-#: server/views/ChartsView.qml:97
+#: server/views/ChartsView.qml:136
 msgctxt "ChartsView|"
 msgid "Activities"
 msgstr "Jarduerak"
 
-#: server/views/ChartsView.qml:101
+#: server/views/ChartsView.qml:143
 msgctxt "ChartsView|"
 msgid "Pupils"
 msgstr "Ikasleak"
