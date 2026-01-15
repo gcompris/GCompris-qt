@@ -2297,7 +2297,3 @@ msgstr "Alumnes amb inici de sessió"
 msgctxt "SettingsView|"
 msgid "Activities data received"
 msgstr "Dades d'activitats rebudes"
-
-#~ msgctxt "NavigationPanel|"
-#~ msgid "Development (WIP)"
-#~ msgstr "Desenvolupament (WIP)"

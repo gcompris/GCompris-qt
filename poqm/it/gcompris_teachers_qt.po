@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2025 Vincenzo Reale <smart2128vr@gmail.com>
+# SPDX-FileCopyrightText: 2025, 2026 Vincenzo Reale <smart2128vr@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-12-29 18:27+0100\n"
+"PO-Revision-Date: 2026-01-13 09:56+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.12.0\n"
+"X-Generator: Lokalize 25.12.1\n"
 "X-Qt-Contexts: true\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
@@ -1425,7 +1425,7 @@ msgstr "Banca dati cifrata (abilitato per impostazione predefinita)"
 #: server/dialogs/DatasetEditorDialog.qml:54
 msgctxt "DatasetEditorDialog|"
 msgid "Create dataset"
-msgstr "Crea insieme di dati"
+msgstr "Crea un insieme di dati"
 
 #: server/dialogs/DatasetEditorDialog.qml:64
 msgctxt "DatasetEditorDialog|"
@@ -1644,7 +1644,7 @@ msgstr "Alunni e gruppi"
 #: server/panels/NavigationPanel.qml:86
 msgctxt "NavigationPanel|"
 msgid "Connect devices"
-msgstr "Connettere i dispositivi"
+msgstr "Connetti i dispositivi"
 
 #: server/panels/NavigationPanel.qml:94
 msgctxt "NavigationPanel|"
@@ -1892,7 +1892,7 @@ msgstr "Gestione degli insiemi di dati"
 #: server/views/DatasetsView.qml:113
 msgctxt "DatasetsView|"
 msgid "Create dataset"
-msgstr "Crea insieme di dati"
+msgstr "Crea un insieme di dati"
 
 #: server/views/DatasetsView.qml:122
 msgctxt "DatasetsView|"
@@ -1907,7 +1907,7 @@ msgstr "Invia l'insieme di dati ai client"
 #: server/views/DatasetsView.qml:150
 msgctxt "DatasetsView|"
 msgid "Remove dataset from clients"
-msgstr "Rimuovere l'insieme di dati dai client"
+msgstr "Rimuovi l'insieme di dati dai client"
 
 #: server/views/DatasetsView.qml:175
 msgctxt "DatasetsView|"
@@ -1977,7 +1977,7 @@ msgstr "Rete"
 #: server/views/DevicesView.qml:158
 msgctxt "DevicesView|"
 msgid "Connect devices"
-msgstr "Connettere i dispositivi"
+msgstr "Connetti i dispositivi"
 
 #: server/views/DevicesView.qml:171
 msgctxt "DevicesView|"
@@ -2007,12 +2007,12 @@ msgstr "Porta dell'insegnante:"
 #: server/views/DevicesView.qml:243
 msgctxt "DevicesView|"
 msgid "Connected:"
-msgstr "Connesso:"
+msgstr "Connessi:"
 
 #: server/views/DevicesView.qml:250
 msgctxt "DevicesView|"
 msgid "Logged:"
-msgstr "Registrato:"
+msgstr "Registrati:"
 
 #: server/views/DevicesView.qml:257
 msgctxt "DevicesView|"
