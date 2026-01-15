@@ -1,14 +1,14 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the gcompris package.
 #
-# Besnik Bleta <besnik@programeshqip.org>, 2020,2021,2022,2023, 2024.
+# Besnik Bleta <besnik@programeshqip.org>, 2020,2021,2022,2023, 2024,2026.
 # Falënderime Dashamir Hoxhës për një numër sugjerimesh të vlefshme <dashohoxha@gmail.com>, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-12-28 21:08+0200\n"
+"PO-Revision-Date: 2026-01-13 23:33+0200\n"
 "Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
 "Language-Team: Albanian <kde-i18n-doc@kde.org>\n"
 "Language: sq\n"
@@ -82,47 +82,39 @@ msgstr "Gjeni numrat e kërkuar dhe tërhiqini te vendi përkatës."
 
 #. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the previous numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n previous number(s)."
 msgid_plural "Find the %n previous number(s)."
-msgstr[0] "Gjeni numrat e mëparshëm."
-msgstr[1] "Gjeni numrat e mëparshëm."
+msgstr[0] "Gjeni numrin e mëparshëm."
+msgstr[1] "Gjeni %n numrat e mëparshëm."
 
 #. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:60
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the next numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n next number(s)."
 msgid_plural "Find the %n next number(s)."
-msgstr[0] "Gjeni numrat pasues."
-msgstr[1] "Gjeni numrat pasues."
+msgstr[0] "Gjeni numrin pasues."
+msgstr[1] "Gjeni %n numrat pasues."
 
 #. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:64
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the in-between numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n in-between number(s)"
 msgid_plural "Find the %n in-between number(s)"
-msgstr[0] "Gjeni numrat në mes."
-msgstr[1] "Gjeni numrat në mes."
+msgstr[0] "Gjeni numrin e ndërmjetëm."
+msgstr[1] "Gjeni %n numrat e ndërmjetëm."
 
 #. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:68
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the missing numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n missing numbers"
 msgid_plural "Find the %n missing numbers"
-msgstr[0] "Gjeni numrat që mungojnë."
-msgstr[1] "Gjeni numrat që mungojnë."
+msgstr[0] "Gjeni numrin që mungon"
+msgstr[1] "Gjeni %n numrat që mungojnë"
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
 msgctxt "Data|"
@@ -478,7 +470,7 @@ msgstr "Gjeni fluturën ngjyrë qitro"
 #: activities/advanced_colors/advanced_colors.js:134
 msgctxt "advanced_colors|"
 msgid "Find the turquoise butterfly"
-msgstr "Gjeni fluturën turkuaz"
+msgstr "Gjeni fluturën ngjyrë blu të gjelbër"
 
 #. Color #73B881
 #: activities/advanced_colors/advanced_colors.js:141
@@ -1808,7 +1800,7 @@ msgid ""
 "When connecting two terminals which are not supposed to be connected, it "
 "creates a short circuit (also called short) in the electrical circuit."
 msgstr ""
-"Kur lidhen dy pole që nuk duhen lidhur me njëri-tjetrin, te qarku elektrik "
+"Kur lidhen dy pole që s’duhen lidhur me njëri-tjetrin, te qarku elektrik "
 "krijohet një qark i shkurtër (i quajtur edhe “në të shkurtër”)."
 
 #: activities/analog_electricity/TutorialDataset.qml:118
@@ -2895,10 +2887,6 @@ msgstr ""
 "sistemi dhjetor. Kur ta keni bërë, shtypni OK."
 
 #: activities/binary_bulb/BinaryBulb.qml:95
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "This activity teaches how to convert decimal numbers to binary numbers."
 msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr ""
@@ -2906,12 +2894,6 @@ msgstr ""
 "numra dyorë."
 
 #: activities/binary_bulb/BinaryBulb.qml:99
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Computers use transistors to count and transistors have only two states, "
-#| "0 and 1. Mathematically, these states are represented by 0 and 1, which "
-#| "makes up the binary system of numeration."
 msgctxt "BinaryBulb|"
 msgid ""
 "Computers use transistors to count and transistors have only two states, 0 "
@@ -2923,20 +2905,12 @@ msgstr ""
 "1, mbi të cilat ngrihet sistemi dyor i numërimit."
 
 #: activities/binary_bulb/BinaryBulb.qml:103
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr ""
 "Te veprimtaria, 0 dhe 1 simulohen përmes llambash, të ndezura ose të fikura."
 
 #: activities/binary_bulb/BinaryBulb.qml:107
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Binary system uses these numbers very efficiently, allowing to count from "
-#| "0 to 255 with 8 bits only."
 msgctxt "BinaryBulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
@@ -2946,13 +2920,6 @@ msgstr ""
 "numërohet nga 0 deri në 255 vetëm me 8 elementë."
 
 #: activities/binary_bulb/BinaryBulb.qml:111
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Each bit adds a progressive value, corresponding to the powers of 2, "
-#| "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → "
-#| "2²=4 , bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit "
-#| "8 → 2⁷=128."
 msgctxt "BinaryBulb|"
 msgid ""
 "Each bit adds a progressive value, corresponding to the powers of 2, "
@@ -2966,9 +2933,6 @@ msgstr ""
 "elementi 7 → 2⁶=64 , elementi 8 → 2⁷=128."
 
 #: activities/binary_bulb/BinaryBulb.qml:115
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr ""
@@ -2976,26 +2940,18 @@ msgstr ""
 "1-shit."
 
 #: activities/binary_bulb/BinaryBulb.qml:119
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 "
-#| "is equal to binary 101."
 msgctxt "BinaryBulb|"
 msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
 "equal to binary 101."
 msgstr ""
-"Elementët përkatës për to vendosen si 1, të tjerët vendosen 0. 5 dhjetore "
+"Elementët përkatës për to vendosen si 1, të tjerët vendosen 0. 5-a dhjetore "
 "është e njëvlershme me dyorin 101."
 
 #: activities/binary_bulb/BinaryBulb.qml:123
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "This image will help you to compute bits' value."
 msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
-msgstr "Kjo figurë do t’ju ndihmojë të llogaritni vlerën e elementëve."
+msgstr "Kjo figurë do t’ju ndihmojë të njehsoni vlerën e elementëve."
 
 #: activities/binary_bulb/BinaryBulb.qml:171
 #, qt-format
@@ -3006,42 +2962,42 @@ msgstr "Cila është paraqitja dyore e %1?"
 #: activities/binary_bulb/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 3 (with counter and with values visible)."
-msgstr ""
+msgstr "Numëroni deri në 3 (me numëratorin dhe me vlerat të dukshme)."
 
 #: activities/binary_bulb/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 3 (without counter and with values visible)."
-msgstr ""
+msgstr "Numëroni deri në 3 (pa numëratorin dhe me vlerat të dukshme)."
 
 #: activities/binary_bulb/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (with counter and with values visible)."
-msgstr ""
+msgstr "Numëroni deri në 15 (me numëratorin dhe me vlerat të dukshme)."
 
 #: activities/binary_bulb/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (without counter and with values visible)."
-msgstr ""
+msgstr "Numëroni deri në 15 (pa numëratorin dhe me vlerat të dukshme)."
 
 #: activities/binary_bulb/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (with counter and with values visible)."
-msgstr ""
+msgstr "Numëroni deri në 255 (me numëratorin dhe me vlerat të dukshme)."
 
 #: activities/binary_bulb/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (without counter and with values visible)."
-msgstr ""
+msgstr "Numëroni deri në 255 (pa numëratorin dhe me vlerat të dukshme)."
 
 #: activities/binary_bulb/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (without counter and without values visible)."
-msgstr ""
+msgstr "Numëroni deri në 15 (pa numëratorin dhe pa vlerat të dukshme)."
 
 #: activities/binary_bulb/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (without counter and without values visible)."
-msgstr ""
+msgstr "Numëroni deri në 255 (pa numëratorin dhe pa vlerat të dukshme)."
 
 #: activities/binary_bulb/resource/tutorial4.qml:31
 msgctxt "tutorial4|"
@@ -5023,7 +4979,7 @@ msgstr "Aviacion"
 #: activities/chronos/resource/board/board6_1.qml:39
 msgctxt "board6_1|"
 msgid "1947 Chuck Yeager breaks the sound-barrier"
-msgstr "1947, Çuk Jegër kalon murin zanor"
+msgstr "1947, Çak Jegër kalon murin zanor"
 
 #: activities/chronos/resource/board/board6_1.qml:47
 msgctxt "board6_1|"
@@ -5885,7 +5841,7 @@ msgstr "Tërhiqni dhe Lini forma te vendet përkatëse."
 #: activities/paintings/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Develop observation and spatial visualization skills."
-msgstr "Zhvilloni aftësi vëzhguese dhe vizualizimi pamor."
+msgstr "Zhvilloni aftësi vëzhguese dhe vizualizimi hapësinor."
 
 #. Help manual
 #: activities/details/ActivityInfo.qml:26
@@ -6032,12 +5988,9 @@ msgstr "Elektricitet dixhital"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "Krijoni dhe simuloni një qark dixhital logjik"
+msgstr "Krijoni dhe simuloni një qark dixhital logjik."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -6784,12 +6737,10 @@ msgstr ""
 
 #: activities/drawing_wheels/ActivityConfig.qml:29
 #: activities/sketch/ActivityConfig.qml:29
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 19."
+#, qt-format
 msgctxt "ActivityConfig|"
 msgid "Number of undo: %1"
-msgstr "Numra nga 1 deri në 19."
+msgstr "Numër zhbërjesh: %1"
 
 #: activities/drawing_wheels/ActivityConfig.qml:44
 #: activities/sketch/ActivityConfig.qml:44
@@ -6798,30 +6749,26 @@ msgid ""
 "Warning: setting the number of undo too high can make the application crash "
 "if your device doesn't have enough memory."
 msgstr ""
+"Kujdes: vënia e numrit të zhbërjeve shumë të madh mund ta bëjë aplikacionin "
+"të vithiset, nëse pajisja juaj s’ka kujtesë të mjaftë."
 
 #. Activity title
 #: activities/drawing_wheels/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "BrushToolPanel|"
-#| msgid "Drawing Tools"
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
-msgstr "Mjete Vizatimi"
+msgstr "Rrota që vizatojnë"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Roll the gear in the cogwheel to draw."
-msgstr ""
+msgstr "Që të vizatohet, rrotulloni ingranazhin te rrota e dhëmbëzuar."
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr "Mësoni rreth disa mjetesh vizatimi dixhital."
+msgstr "Njihuni me hipotrohoidet dhe përdorini si mjete vizatimi dixhital."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
@@ -6835,6 +6782,15 @@ msgid ""
 "file (vector format), along with a PNG file (pixel format). Only the SVG "
 "file can be opened again from the activity."
 msgstr ""
+"Bëni vizatime të hijshme duke rrotulluar ingranazhin brenda rrotës së "
+"dhëmbëzuar me penën e zgjedhur. Përzgjidhni madhësinë e rrotës, një madhësi "
+"ingranazhi, parametra të penës dhe ngjyrën, te kuadratet flluskë, mandej "
+"shtypni butonin e luajtjes që të rrotullohet ingranazhi. Mund të përdorni "
+"menunë e kartelave që të ruani figurën tuaj, të hapni një figurë të ruajtur "
+"më parë, ose të krijoni një figurë të re me ngjyrën e përzgjedhur si sfond. "
+"Ruajtja e një figure do ta ruajë atë si një kartelë SVG (format vektorial), "
+"tok me një kartelë PNG (format piksel). Nga veprimtaria mund të rihapet "
+"vetëm kartela SVG."
 
 #: activities/drawing_wheels/ActivityInfo.qml:29
 #: activities/sketch/ActivityInfo.qml:28
@@ -6863,33 +6819,24 @@ msgstr "Tastet Ctrl + O: hapni një figurë"
 #: activities/drawing_wheels/DrawingWheels.qml:399
 msgctxt "DrawingWheels|"
 msgid "File menu"
-msgstr ""
+msgstr "Menu kartelash"
 
 #: activities/drawing_wheels/DrawingWheels.qml:411
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
-msgstr ""
+msgstr "Rrotë dhe ingranazh"
 
 #: activities/drawing_wheels/DrawingWheels.qml:435
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Piano composition"
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
-msgstr "Kompozim në piano"
+msgstr "Madhësi dhe pozicion lapsi"
 
 #: activities/drawing_wheels/DrawingWheels.qml:447
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font selector"
 msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr "Përzgjedhës shkronjash"
 
 #: activities/drawing_wheels/DrawingWheels.qml:474
-#, fuzzy
-#| msgctxt "OptionsRow|"
-#| msgid "Undo"
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Zhbëje"
@@ -6897,56 +6844,44 @@ msgstr "Zhbëje"
 #: activities/drawing_wheels/DrawingWheels.qml:486
 msgctxt "DrawingWheels|"
 msgid "Redo"
-msgstr ""
+msgstr "Ribëje"
 
 #: activities/drawing_wheels/DrawingWheels.qml:520
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
-msgstr ""
+msgstr "Ndal së vizatuari"
 
 #: activities/drawing_wheels/DrawingWheels.qml:520
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
-msgstr ""
+msgstr "Fillo së vizatuari"
 
 #: activities/drawing_wheels/DrawingWheels.qml:553
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
-msgstr ""
+msgstr "Shfaq rrotën dhe ingranazhin"
 
 #: activities/drawing_wheels/DrawingWheels.qml:553
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
-msgstr ""
+msgstr "Fshih rrotën dhe ingranazhin"
 
 #: activities/drawing_wheels/DrawingWheels.qml:712
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Ruani figurën tuaj"
 
 #: activities/drawing_wheels/DrawingWheels.qml:727
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Open an image"
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Hapni një figurë"
 
 #: activities/drawing_wheels/DrawingWheels.qml:756
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Create a new image"
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Krijoni një figurë të re"
 
 #: activities/drawing_wheels/DrawingWheels.qml:775
-#, fuzzy
-#| msgctxt "BackgroundColorSelector|"
-#| msgid "Background color"
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Ngjyrë sfondi"
@@ -6954,25 +6889,20 @@ msgstr "Ngjyrë sfondi"
 #: activities/drawing_wheels/DrawingWheels.qml:856
 msgctxt "DrawingWheels|"
 msgid "Wheel"
-msgstr ""
+msgstr "Rrotë"
 
 #: activities/drawing_wheels/DrawingWheels.qml:923
 msgctxt "DrawingWheels|"
 msgid "Gear"
-msgstr ""
+msgstr "Ingranazh"
 
 #: activities/drawing_wheels/DrawingWheels.qml:986
-#, fuzzy, qt-format
-#| msgctxt "SignalGenerator|"
-#| msgid "%1 s"
+#, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
-msgstr "%1 s"
+msgstr "%1 tela"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1004
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Shpejtësi"
@@ -6980,25 +6910,19 @@ msgstr "Shpejtësi"
 #: activities/drawing_wheels/DrawingWheels.qml:1020
 msgctxt "DrawingWheels|"
 msgid "Slow"
-msgstr ""
+msgstr "E ngadaltë"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1040
 msgctxt "DrawingWheels|"
 msgid "Fast"
-msgstr ""
+msgstr "E shpejtë"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1083
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font size"
 msgctxt "DrawingWheels|"
 msgid "Pen size"
-msgstr "Madhësi shkronjash"
+msgstr "Madhësi pene"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1120
-#, fuzzy
-#| msgctxt "ToolsPanel|"
-#| msgid "Opacity"
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Patejdukshmëri"
@@ -7006,44 +6930,29 @@ msgstr "Patejdukshmëri"
 #: activities/drawing_wheels/DrawingWheels.qml:1163
 msgctxt "DrawingWheels|"
 msgid "Offset"
-msgstr ""
+msgstr "Shmangie"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1201
-#, fuzzy
-#| msgctxt "IntroMessage|"
-#| msgid "Start"
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
-msgstr "Fillimi"
+msgstr "Dhëmb fillimi"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1381
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "You did not save this image. Do you want to close this activity?"
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "S’e ruajtët këtë figurë. Doni të mbyllet kjo veprimtari?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1382
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "Do you want to erase this image?"
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Doni të fshihet kjo figurë?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1383
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Po"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1384
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "Jo"
@@ -7635,13 +7544,6 @@ msgid "Chichén Itzá"
 msgstr "Çiçen Ixa"
 
 #: activities/explore_monuments/resource/board/board1.qml:20
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
-#| "the Yucatan Peninsula in Mexico, between Valladolid and Merida. It was "
-#| "established before the period of Christopher Colombus and probably served "
-#| "as the religion center of Yucatan for a while."
 msgctxt "board1|"
 msgid ""
 "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
@@ -7651,8 +7553,8 @@ msgid ""
 msgstr ""
 "Çiçen Ixa, që do të thotë “në gojën e pusit Ixa”, është një qytet i kulturës "
 "së Majave në Gadishullin Jukatan në Meksikë, mes Valladolidit dhe Meridas. "
-"Qe ndërtuar para periudhës së Kristofor Kolombit dhe gjasat janë të ketë "
-"qenë qendra fetare e Jukatanit për ca kohë."
+"Qe ndërtuar para periudhës së Kristofor Kolombit dhe gjasat janë që për ca "
+"kohë të ketë shërbyes si qendra fetare e Jukatanit."
 
 #: activities/explore_monuments/resource/board/board1.qml:30
 #: activities/explore_monuments/resource/board/board1.qml:33
@@ -7870,7 +7772,7 @@ msgid ""
 "symbolizing high rank, which was intended to honor and shelter the relics."
 msgstr ""
 "Stupa e Madhe në Sançi është struktura e gurtë më e lashtë në Indi dhe qe "
-"porositur nga perandori Ashoka i Madh në shekullin e III p.e.s.. Bërthama e "
+"porositur nga perandori Ashoka i Madh në shekullin e III p.e.r.. Bërthama e "
 "saj qe një strukturë e thjeshtë gjysmësferë prej tullash, ngritur mbi "
 "lipsanin e Budës. Objekti kurorëzohet nga çatra, një strukturë e ngjashme me "
 "një çadër dielli, e cila simbolizon rang të lartë, që qe menduar të nderojë "
@@ -7894,7 +7796,7 @@ msgid ""
 "Heritage Site."
 msgstr ""
 "Shpellat e Axhantës janë rreth 29 monumente budiste, shpella të hapura në "
-"shkëmb, që vijnë prej shekullit II p.e.s. deri në 480 e.s. në distriktin e "
+"shkëmb, që vijnë prej shekullit II p.e.r. deri në 480 e.r. në distriktin e "
 "Aurangabadit, shteti Maharashtra i Indisë. Shpellat përmbajnë vizatime dhe "
 "skulptura të gdhendura në shkëmb, të përshkruara si mes shembujve më të mirë "
 "të mbetur deri sot të artit indian, veçanërisht vizatimet shprehëse që "
@@ -8131,7 +8033,7 @@ msgid ""
 "Antiquity. Modified many times, it was finally renovated during the 19th "
 "century."
 msgstr ""
-"Ky amfiteatër romak daton që në shekullin e parë p.e.s dhe qe skena e "
+"Ky amfiteatër romak daton që në shekullin e parë p.e.r. dhe qe skena e "
 "betejave të gladiatorëve dhe garave me qerre gjatë Antikitetit. Ndryshuar "
 "shumë herë, u rinovua më së fundi gjatë shekullit IX."
 
@@ -8384,9 +8286,9 @@ msgid ""
 "throughout the twelfth century and mostly completed by 1181."
 msgstr ""
 "Katedralja e Vormsit , e njohur edhe Katedralja e Shën Pjetrit, është një "
-"katedrale në stil romanesk në qytetin gjerman të Vormsit. Një strukturë "
-"shkëmbi ranor me kulla dalluese konike, Katedralja e Vormsit u ndërtua në "
-"faza përgjatë shekullit XII dhe pjesa dërrmuese pat mbaruar më 1181-shin."
+"katedrale në stil roman në qytetin gjerman të Vormsit. Një strukturë shkëmbi "
+"ranor me kulla dalluese konike, Katedralja e Vormsit u ndërtua në faza "
+"përgjatë shekullit XII dhe pjesa dërrmuese pat mbaruar më 1181-shin."
 
 #: activities/explore_monuments/resource/board/board4.qml:97
 msgctxt "board4|"
@@ -8761,7 +8663,7 @@ msgstr "Klikoni mbi vendndodhjen e piramidës së dhënë."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "Qyteti i Ndaluar"
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8776,12 +8678,21 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
+"Qyteti i Ndaluar, i gjendur në zemër të Pekinit, Kinë, është një kompleks "
+"madhështor pallatesh që shërbeu si banesë e perandorëve kinezë dhe qendra "
+"politike e kombit për afër 500 vjet, nga dinastia Ming (1368–1644) e deri në "
+"fundin e dinastisë Qing (1644–1912). Ndërtuar mes viteve 1406 dhe 1420, kjo "
+"kryevepër arkitekturore tejshtrihet në gati 73 hektarë dhe përmban mbi 980 "
+"ndërtesa të ruajtura, me 8700 dhoma, që shpalosin arkitekturën tradicionale "
+"kineze të pallatit. I qarkuar nga një hendek dhe mur masiv, Qyteti i Ndaluar "
+"dikur qe i padepërtueshëm nga publiku i rëndomtë, duke simbolizuar fuqinë "
+"dhe ekskluzivitetin perandorak."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "Buda Gjigant i Leshan-it"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8796,15 +8707,22 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
+"Buda Gjigant i Leshan-it, i gjendur në provincën Sishuan, Kinë, është një "
+"shtatore kolosale e gdhendur në një shkëmb në bashkimin e lumenjve Min, Dadu "
+"dhe Kingyi. 71 metra (233 këmbë) e lartë, është shtatorja më e lartë "
+"paramoderne në botë dhe një Objekt Trashëgime Botërore UNESCO. E krijuar "
+"gjatë Dinastisë Tang (713–803 AD), shtatorja përfaqëson Maitrejan, Budën e "
+"së ardhmes dhe qe krijuar për të qetësuar ujërat e rrëmbyera që qenë bërë "
+"kërcënim për trafikun e lundrave të zonës. Konceptuar në mënyrë gjeniale, "
+"shtatorja përmban një sistem të fshehur kullimi, për të penguar gërryerjen. "
+"Shprehja e paqtë e tij dhe mjeshtëria e ndërlikuar e bëjnë një simbol "
+"spiritual dhe arritje artistike."
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Pallati Misore"
+msgstr "Pallati Potala"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8819,12 +8737,21 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
+"Pallati Potala, i ngritur mbi Kodrën e Kuqe në Lasa, Tibet, është një simbol "
+"ikonë i kulturës Tibetase dhe një Objekt i Trashëgimisë Botërore UNESCO. "
+"Ngritur fillimisht në shekullin e 7-të dhe zgjeruar në shekullin e 17-të, "
+"shërbente si vendbanim dimëror i Dalai Lama-ve dhe qendër e qeverisjes së "
+"Tibetit. I lartë 13 kate me mbi 1000 dhoma, pallati ndërthur arkitekturë të "
+"ndërlikuar tibetase, piktura murale vibrante dhe relike të shenjta. Ndahet "
+"në Pallatin e Bardhë, që përmban zonat administrative dhe Pallatin e Kuqe, "
+"kushtuar studimeve fetare dhe lutjeve. Pallati Potala qëndron si një "
+"testament i traditës spirituale dhe historike të Tibet-it."
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "Ushtria prej Qeramike"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8836,12 +8763,19 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
+"Ushtria prej Qeramike është një koleksion prej mijëra ushtarësh, kuajsh dhe "
+"karrosh balte në madhësi natyrale të varrosur tok me perandorin e parë të "
+"Kinës, Qin Shi Huang, për ta shoqëruar atë në jetën e përtejme. Të zbuluara "
+"më 1974-në pranë Xi'an-it, figurat shkojnë pas në kohë afërsish në 210 para "
+"erës së re dhe pëlqehen për hollësitë e tyre të pabesueshme, me çdo luftëtar "
+"të punuar në mënyrë unike për të përfaqësuar rangjet dhe rolet e ndryshme të "
+"një ushtrie të lashtë kineze."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr ""
+msgstr "Pagodat Dielli dhe Hëna"
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8856,15 +8790,22 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
+"Pagodat Dielli dhe Hëna, të gjendura në Guilin, Kinë, janë kulla binjake "
+"ikonë, që simbolizojnë trashëgiminë kulturore dhe shpirtërore të qytetit. "
+"Ndërtuar fillimisht gjatë Dinastisë Tang, u rindërtuan në shekullin e 20-të "
+"si një simbole mbresëlënëse në liqenin Shanhu. Pagoda Dielli, 41 metra e "
+"lartë, është një strukturë bronzi—më e lartë në botë për llojin e vet—teksa "
+"Pagoda Hëna, prej 35 metrash, është ndërtuar prej pllakash majolike. Këto "
+"pagoda përfaqësojnë harmoninë e yin-it dhe yang-ut dhe lidhen me një tunel "
+"të qelqtë nënujor. Të ndriçuara gjatë natës, janë një vend popullor vizitash "
+"që shërben si shembull i arkitekturës tradicionale kineze dhe gjenisë "
+"moderne."
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Kulla Eifel"
+msgstr "Kullat Diaolu"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8879,19 +8820,23 @@ msgid ""
 "UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
 "towers remain, offering insight into this unique architectural heritage."
 msgstr ""
+"Kullat Diaolu, që gjenden në Kaiping, Provinca Guangdong, Kinë, janë "
+"struktura të fortifikuara shumëkatëshe të ndërtuara nga fundi i shekullit "
+"XIX e deri në fillimet e XX, si mbrojtje nga banditë dhe përmbytje. Duke "
+"shkrirë stile arkitekturorë perëndimorë, si romani dhe baroku me elementë "
+"tradicionalë kinezë, ato pasqyrojnë pasurinë dhe ndikimin e emigrantëve "
+"kinezë të përtejdetit. Të ndërtuara me betonarme, këto kulla simbolizojnë "
+"një periudhë tranzicioni kulturor dhe ekonomik të Kinës rurale. Klasifikuar "
+"si Objekt Trashëgimie Botërore UNESCO më 2007-n,mbeten rreth 1800 nga 3000 "
+"kullat origjinale, duke dhënë një ide mbi këtë trashëgimi unike "
+"arkitekturore."
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Monumente të Indisë"
+msgstr "Monumente të Kinës"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Klikoni mbi vendndodhjen e monumentit të dhënë."
@@ -8900,7 +8845,7 @@ msgstr "Klikoni mbi vendndodhjen e monumentit të dhënë."
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "Panteoni"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8917,12 +8862,24 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
+"Panteoni në Romë, Itali, është një tempull ikonë i lashtësisë, i ndërtuar "
+"rreth vitit 126 p.e.r., gjatë mbretërimit të perandorit Hadrian, në vendin e "
+"strukturave më të hershme të ngritura me kontribut të Mark Agripës. E shquar "
+"për shkëlqimin e vet arkitekturor, përmban një kube masive për tavan, me një "
+"të çarë qendrore, që simbolizon qiejt, e cila lejon dritën natyrore të "
+"ndriçojë pjesën e brendshme. Fillimisht kushtuar krejt perëndive romake, më "
+"pas u shndërrua në një kishë të krishterësh, e njohur si Bazilika e Shën "
+"Mërisë dhe Martirëve, në 609 p.e.s. Kubeja e tij, më e madhja në botë jo "
+"prej betonarmeje, shfaq shkallë të dalluara aftësish inxhinierike dhe "
+"simetrie, duke frymëzuar arkitektë për shekuj të tërë. Përpjesëtimet "
+"harmonike të Panteonit dhe domethënia e tij historike e bëjnë një kryevepër "
+"të përjetshme të arkitekturës klasike."
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "Duomo-ja e Milanos"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8937,15 +8894,23 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
+"Duomo-ja e Milanos, e njohur edhe si Katedralja e Milanos, është një "
+"kryevepër gotike simbol, e gjendur në zemër të Milanos, Itali. E ndërtuar "
+"përgjatë gati gjashtë shekujsh, është një nga katedralet më të mëdha në botë "
+"dhe një ikonë e trashëgimisë artistike dhe kulturore të Milanos. Fasada e "
+"ndërlikuar e saj është e hijeshuar me shtatore, shtiza dhe ullukë me gogolë "
+"të gdhendur të panumërt, duke pasqyruar madhështinë e arkitekturës gotike. "
+"Vizitorët mund të eksplorojnë pjesët e brendshme mbresëlënëse, me dritaret e "
+"hijshme xhami të ngjyrosur dhe hollësi të ndërlikuara mermeri, ose të "
+"ngjiten në çati, për pamje madhështore të qytetit dhe Alpeve. Duomo-ja "
+"mbetet një dëshmi e historisë së pasur dhe shkëlqimit arkitekturor të "
+"Italisë."
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Katedralja e Vormsit"
+msgstr "Katedralja e Firences"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8961,15 +8926,22 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
+"Katedralja e Firences, e njohur zyrtarisht nën emrin Katedralja Santa Maria "
+"del Fiore, është një kryevepër e njohur e arkitekturës gotike dhe të "
+"Rilindjes, e gjendur në Firence, Itali. E përfunduar më 1436-n, është e "
+"mirënjohur për kubenë e vet shumë të madhe të mbuluar me tjegulla të kuqe, e "
+"projektuar nga Filippo Brunelleschi, që mbetet një mrekulli ndërtimi dhe një "
+"simbol i qytetit. Fasada në mermer e punuar hollë e katedrales, e shtuar në "
+"shekullin XIX, plotëson pjesën e brendshme të zbukuruar me bollëk dhe "
+"thesaret e saj artistike. Me Kambanoren e Xhotos dhe Pagëzimoren e Shën "
+"Janit, ajo bën pjesë në Trashëgiminë Botërore të UNESCO-s dhe tërheq çdo vit "
+"miliona vizitorë, për rëndësinë historike, kulturore dhe arkitekturore."
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Kulla e Hanoit"
+msgstr "Kulla e Anuar e Pizës"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8984,12 +8956,22 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
+"Kulla e Anuar e Pizës, e gjendur në qytetin italian Piza, është një mrekulli "
+"arkitekturore e njohur anembanë. E ndërtuar si kambanore më vete për "
+"katedralen e qytetit, është e famshme për animin e padashur të saj, "
+"shkaktuar nga truall i paqëndrueshëm themelesh. I filluar më 1173, ndërtimi "
+"i kullës u shtri në gati 200 vjet, gjatë të cilëve u bënë përpjekje për të "
+"stabilizuar animin e saj. E lartë afërsisht 56 metra (183 këmbë), stili "
+"roman i kullës përfshin tetë kate, fut këtu një vend për kambanën, stolisur "
+"me shtylla dhe harqe të gdhendura në mënyrë të ndërlikuar. Klasifikuar si "
+"Objekt Trashëgimie Botërore UNESCO, mbetet një simbol i pathyeshmërisë dhe "
+"inteligjencës."
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr ""
+msgstr "Bazilika e Shën Markut"
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -9005,12 +8987,23 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
+"Bazilika e Shën Markut, që gjendet në Venecia, Itali, është një kryevepër "
+"emblemë e arkitekturës bizantine dhe një nga monumentet më të njohur të "
+"qytetit. E ndërtuar fillimisht më 828-n, për të strehuar eshtrat e Shën Mark "
+"Ungjillorit, në formën e saj të tanishme është ndërtuar në shekullin e XI. E "
+"njohur për stilin e vet të pasur, bazilika përfaqëson një përzierje "
+"ndikimesh lindore dhe perëndimore, e dukshme te pesë kubetë, mozaikët e saj "
+"të ndërlikuar dhe fasada e zbukuruar me shtatore dhe gdhendje. Pjesa e "
+"brendshme është e zbukuruar pa kursim me mozaikë të artë dhe dysheme të "
+"mermerta, duke dëshmuar pasurinë dhe fuqinë e Republikës së Venedikut. "
+"Ngjitur me sheshin e Shën Markut, mbetet një simbol i trashëgimisë "
+"historike, kulturore dhe fetare të Venecias."
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr ""
+msgstr "Pompei"
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -9026,31 +9019,32 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
+"Pompei qe një qytet i lashtë romak i gjendur pranë Napolit të sotëm, Itali, "
+"i famshëm për ruajtjen nga prishja, pas varrosjes së tij nga shpërthimi i "
+"Malit të Vezuvit më 79 p.e.r. Shpërthimi çliroi një ndërthurje vdekjeprurëse "
+"hiri, shkume deti dhe rrëkesh piroklastike, të cilat përmbytën qytetin dhe "
+"banorët e tij, duke ruajtur ndërtesa, sende dhe madje skelete njerëzish me "
+"hollësi të pabesueshme. Gërmimet në Pompei kanë dhënë pamje të çmuara mbi "
+"jetën e përditshme romake, arkitekturën dhe shoqërinë, të cilat shpërfaqin "
+"një qytet me rrugë, shtëpi, banja publike dhe tempuj të planifikuar mirë. "
+"Vendi tanimë është Objekt i Trashëgimisë Botërore UNESCO dhe mbetet një nga "
+"zbulimet më të rëndësishme arkeologjike në histori."
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Monumente të Indisë"
+msgstr "Monumente të Italisë"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Klikoni mbi vendndodhjen e monumentit të dhënë."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Të përziera"
+msgstr "Kështjella Himexhi"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -9063,12 +9057,20 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
+"Himezhi-zho është shembulli më i bukur i mbijetuar i arkitekturës së "
+"kështjellave japoneze të fillimeve të shekullit të 17-të, i cili përbëhet "
+"nga 83 ndërtesa me sisteme mjaft të sofistikuar dhe pajisje gjeniale "
+"mbrojtjeje që i takojnë fillimit të periudhës Shogun. Përbën një kryevepër "
+"ndërtimi në dru, që ndërthur anët funksionale me estetikë tërheqëse, si në "
+"pamjen e vet elegante të njësuar nga mure të bardhë allçie, ashtu edhe në "
+"marrëdhënien e hollë mes masave të ndërtesave dhe shtresave të shumta për "
+"çati."
 
 #: activities/explore_monuments/resource/board/board9.qml:28
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr ""
+msgstr "Parku Përkujtimor i Paqes në Hiroshima"
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -9084,12 +9086,22 @@ msgid ""
 "a solemn space for reflection, honoring the lives lost and advocating for "
 "global peace."
 msgstr ""
+"Parku Përkujtimor i Paqes në Hiroshima është një simbol i paqes dhe një "
+"kujtesë e pasojave shkatërruese të luftës. I gjendur në Hiroshima, Japoni, "
+"parku përkujton viktimat e bombardimit atomik më 6 gusht  1945. Parku "
+"përmban disa monumente, përfshi Kubenë ikonë të Bombës Atomike, që dikur qe "
+"ndërtesë qeveritare dhe tani përbën një Objekt Trashëgimie Botërore UNESCO. "
+"Parku strehon gjithashtu Muzeun Përkujtimor të Paqes në Hiroshima, i cili u "
+"mëson vizitorëve ngjarjet që përreth bombardimit dhe promovon një mesazh "
+"paqeje, kundër dhunës dhe rëndësinë e çarmatimit bërthamor. Shërben si një "
+"hapësirë solemne përsiatjeje, që nderon jetët e humbura dhe bën thirrje për "
+"paqe mbarëbotërore."
 
 #: activities/explore_monuments/resource/board/board9.qml:39
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr ""
+msgstr "Shenjtërorja Arakura Fuji Sengen"
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -9105,12 +9117,22 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
+"Shenjtërorja u themelua më 705 për të adhuruar perëndinë e vendit. Pas "
+"shpërthimit të madh të Malit Fuxhi më 807-n, perandori dërgoi një emisar "
+"perandorak te kjo shenjtërore që të kryente një ritual për ndaljen e "
+"shpërthimit. Thuhet se gjatë periudhës së Mbretërive Luftuese, kur Takeda "
+"Nobutora, i ati i luftëtarit të njohur Takeda Shingen, u ndesh me familjen "
+"Hozho, fushoi këtu, u lut për fitore dhe fitoi betejën. Ai mandej i kushtoi "
+"shenjtërores shpatën e tij. Sot, vendasit dhe ata nga larg e vizitojnë "
+"shenjtëroren për të trembur djallin, për t’u lutur për lumturi familjare dhe "
+"për lindje pa andralla. Në pranverë, lulëzojnë pemët e qershive dhe mblidhen "
+"turma për të shijuar pamjen mahnitëse të Malit Fuxhi."
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr ""
+msgstr "Kështjella Shuri në Okinaua"
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -9126,19 +9148,25 @@ msgid ""
 "much of the castle was lost in a fire in 2019, but efforts to restore it are "
 "ongoing, reflecting its enduring importance to Okinawa's heritage."
 msgstr ""
+"Kështjella e Shurit, që gjendet në Naha, Okinaua, Japoni, është një Objekt i "
+"Trashëgimisë Botërore UNESCO dhe simbolizon historinë e pasur kulturore të "
+"mbretërisë Ryukyu. E ngritur në fillim të shekullit XIV, kështjella përgjatë "
+"shekujve ka qenë qendra politike, ekonomike dhe kulturore e mbretërisë. E "
+"njohur për përzierjen e vet karakteristike të stileve arkitekturore kineze "
+"dhe japoneze, kështjella e Shuri-t karakterizohet nga struktura me ngjyrë të "
+"kuqe të lyera me llak, nga zbukurimet e ndërlikuara dhe nga pozicioni i saj "
+"mbizotërues në majë të një kodre. Edhe pse qe shkatërruar gjatë Luftës së "
+"Dytë Botërore, e rindërtuan me imtësi dhe është shndërruar në një simbol "
+"turistik të shquar. Mjerisht, një pjesë e madhe e kështjellës u shkatërrua "
+"nga një zjarr më 2019-n, por përpjekjet për ta restauruar vazhdojnë, duke "
+"pasqyruar kështu rëndësinë e pashlyeshme për trashëgiminë e Okinauas."
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Monumente të Francës"
+msgstr "Monumente të Japonisë"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Klikoni mbi vendndodhjen e monumentit të dhënë."
@@ -9961,7 +9989,7 @@ msgstr "Lëvizni çdo objekt për të rikrijuar figurën."
 #: activities/traffic/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and spatial visualization skills."
-msgstr "Zhvilloni aftësi parashikimi dhe vizualizimi pamor."
+msgstr "Zhvilloni aftësi parashikimi dhe vizualizimi hapësinor."
 
 #. Help manual
 #: activities/fifteen/ActivityInfo.qml:23
@@ -10599,22 +10627,22 @@ msgstr "Gjeni numëruesin (me një katror)."
 #: activities/fractions_find/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Find denominator (with a pie)."
-msgstr "Gjeni emërtuesin (me një byrek)."
+msgstr "Gjeni emëruesin (me një byrek)."
 
 #: activities/fractions_find/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Find denominator (with a square)."
-msgstr "Gjeni emërtuesin (me një katror)."
+msgstr "Gjeni emëruesin (me një katror)."
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a pie)."
-msgstr "Gjeni numëruesin dhe emërtuesin (me një byrek)."
+msgstr "Gjeni numëruesin dhe emëruesin (me një byrek)."
 
 #: activities/fractions_find/resource/6/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a square)."
-msgstr "Gjeni numëruesin dhe emërtuesin (me një katror)."
+msgstr "Gjeni numëruesin dhe emëruesin (me një katror)."
 
 #. Activity title
 #: activities/frieze/ActivityInfo.qml:14
@@ -12210,19 +12238,19 @@ msgstr "Overnjë-Ron-Alps"
 #: activities/geo-country/resource/board/board1_0.qml:67
 msgctxt "board1_0|"
 msgid "Centre-Val de Loire"
-msgstr "Sontrë-Val de Luar"
+msgstr "Sontrë-Val dë Luar"
 
 #. Region of France: Pays de la Loire
 #: activities/geo-country/resource/board/board1_0.qml:75
 msgctxt "board1_0|"
 msgid "Pays de la Loire"
-msgstr "Pei de la Luar"
+msgstr "Pei dë la Luar"
 
 #. Region of France: Île-de-France
 #: activities/geo-country/resource/board/board1_0.qml:83
 msgctxt "board1_0|"
 msgid "Île-de-France"
-msgstr "Il-de-Frons"
+msgstr "Il-dë-Frons"
 
 #. Region of France: Brittany
 #: activities/geo-country/resource/board/board1_0.qml:91
@@ -14141,7 +14169,7 @@ msgstr "Argjentinë"
 #: activities/geography/resource/board/board5_0.qml:15
 msgctxt "board5_0|"
 msgid "Western Europe"
-msgstr "Europë Perëndimore"
+msgstr "Evropë Perëndimore"
 
 #: activities/geography/resource/board/board5_0.qml:24
 msgctxt "board5_0|"
@@ -14231,7 +14259,7 @@ msgstr "Austri"
 #: activities/geography/resource/board/board6_0.qml:15
 msgctxt "board6_0|"
 msgid "Eastern Europe"
-msgstr "Europë Lindore"
+msgstr "Evropë Lindore"
 
 #: activities/geography/resource/board/board6_0.qml:24
 msgctxt "board6_0|"
@@ -15171,12 +15199,9 @@ msgstr "Numra për t’u gjetur mes 1 dhe 5."
 
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Number to find between 0 and 20."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
-msgstr "Numra për t’u gjetur mes 0 dhe 20."
+msgstr "Numër dhjetor t’u gjetur mes 0 dhe 4."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"
@@ -15378,36 +15403,21 @@ msgid "Empty"
 msgstr "I zbrazët"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Grammatical analysis"
 msgctxt "GrammarAnalysis|"
 msgid "Grammatical analysis"
 msgstr "Analizë gramatikore"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "GrammarAnalysis|"
 msgid "Learn to identify grammatical classes."
 msgstr "Mësoni të identifikoni klasa gramatikore."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:28
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid ""
-#| "Find all the words corresponding to the requested grammatical classes."
 msgctxt "GrammarAnalysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr "Gjeni krejt fjalët që përkojnë me klasat gramatikore të domosdoshme."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a grammatical class from the list, then select the box under a "
-#| "word and assign it the class."
 msgctxt "GrammarAnalysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
@@ -15417,9 +15427,6 @@ msgstr ""
 "fjalën dhe caktojini klasën."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Leave the box blank if no class matches."
 msgctxt "GrammarAnalysis|"
 msgid "Leave the box blank if no class matches."
 msgstr "Nëse s’ka përkime, lëreni kutinë të zbrazët."
@@ -15451,35 +15458,21 @@ msgid "Leave the box blank if the class doesn't match."
 msgstr "Nëse klasa nuk përkon, lëreni kutinë të zbrazët."
 
 #: activities/grammar_classes/GrammarClasses.qml:15
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Grammatical classes"
 msgctxt "GrammarClasses|"
 msgid "Grammatical classes"
 msgstr "Klasa gramatikore"
 
 #: activities/grammar_classes/GrammarClasses.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "GrammarClasses|"
 msgid "Learn to identify grammatical classes."
 msgstr "Mësoni të identifikoni klasa gramatikore."
 
 #: activities/grammar_classes/GrammarClasses.qml:17
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Find all the words corresponding to the requested grammatical class."
 msgctxt "GrammarClasses|"
 msgid "Find all the words corresponding to the requested grammatical class."
 msgstr "Gjeni krejt fjalët që i përkojnë klasës së caktuar gramatikore."
 
 #: activities/grammar_classes/GrammarClasses.qml:18
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid ""
-#| "Select the grammatical class from the list, then select the box under a "
-#| "word and assign it the class."
 msgctxt "GrammarClasses|"
 msgid ""
 "Select the grammatical class from the list, then select the box under a word "
@@ -15489,9 +15482,6 @@ msgstr ""
 "një fjalë dhe caktojini klasën."
 
 #: activities/grammar_classes/GrammarClasses.qml:19
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Leave the box blank if the class doesn't match."
 msgctxt "GrammarClasses|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr "Nëse klasa s’përkon, lëreni kutinë të zbrazët."
@@ -15744,12 +15734,9 @@ msgid "Division required."
 msgstr "Lypset pjesëtim."
 
 #: activities/guess24/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "Krejt lojërat për kujtesë veprimesh"
+msgstr "Janë të domosdoshëm krejt operatorët."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -16115,8 +16102,8 @@ msgstr ""
 "pushim me lëvizjen e një grupi prej 64 disqeve sipas rregullave të puzzle-it "
 "Kulla e Hanoit. Sipas legjendës, botës do t’i vinte fundi, kur priftërinjtë "
 "të kishin mbaruar punë. Ndaj njihet edhe si puzzle-i i Kullës së Brahmës. "
-"S’është e qartë nëse e shpiku Lucas-këtë legjendë apo u frymëzua prej saj. "
-"(burimi Wikipedia: https://en.wikipedia.org/wiki/Tower_of_hanoi)"
+"S’është e qartë nëse e shpiku Lucas-i këtë legjendë, apo u frymëzua prej "
+"saj. (burimi Wikipedia: https://en.wikipedia.org/wiki/Tower_of_hanoi)"
 
 #: activities/hanoi_real/HanoiReal.qml:75
 msgctxt "HanoiReal|"
@@ -17082,11 +17069,6 @@ msgstr ""
 "vlerësohet përgjigja juaj."
 
 #: activities/learn_decimals/Learn_decimals.qml:30
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A decimal number is displayed. The bar with the arrow represents a full "
-#| "unit, and each square in it represents one tenth of this unit."
 msgctxt "Learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
@@ -17096,13 +17078,6 @@ msgstr ""
 "plotë dhe çdo katror në të përfaqëson një të dhjetën e njësisë."
 
 #: activities/learn_decimals/Learn_decimals.qml:34
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a part of the bar, and drag the selected part of "
-#| "the bar to the empty area. Repeat these steps until the number of dropped "
-#| "bars corresponds to the displayed decimal number. Then click on the OK "
-#| "button to validate your answer."
 msgctxt "Learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -17210,12 +17185,6 @@ msgid "Numbers: type the result"
 msgstr "Numra: shtypni përfundimin"
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "An addition with two decimal numbers is displayed. The bar with the arrow "
-#| "represents a full unit, and each square in it represents one tenth of "
-#| "this unit."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "An addition with two decimal numbers is displayed. The bar with the arrow "
@@ -17227,13 +17196,6 @@ msgstr ""
 "njësie."
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a part of the bar, and drag the selected part of "
-#| "the bar to the empty area. Repeat these steps until the number of dropped "
-#| "bars corresponds to the result of the addition, and click on the OK "
-#| "button to validate your answer."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -17247,11 +17209,6 @@ msgstr ""
 "mandej klikoni mbi butonin OK, që të vlerësohet përgjigja juaj."
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:24
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -17312,12 +17269,6 @@ msgstr ""
 "numrin e dytë dhe të paraqitni përfundimin e veprimit"
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A subtraction with two decimal numbers is displayed. Below it, the first "
-#| "number from the subtraction is represented with bars. One bar represents "
-#| "a full unit, and each square in it represents one tenth of this unit."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "A subtraction with two decimal numbers is displayed. Below it, the first "
@@ -17329,11 +17280,6 @@ msgstr ""
 "katror në të përfaqëson një të dhjetën e kësaj njësie."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Click on the squares to subtract them and display the result of the "
-#| "operation, and click on the OK button to validate your answer."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
@@ -17343,11 +17289,6 @@ msgstr ""
 "mandej klikoni mbi butonin OK që të vlerësohet përgjigja juaj."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:24
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -17516,22 +17457,11 @@ msgstr ""
 "së kërkuar. Mandej klikoni mbi butonin OK që të vlerësohet përgjigja juaj."
 
 #: activities/learn_quantities/Learn_quantities.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgctxt "Learn_quantities|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr "Kërkohet një sasi. Shigjeta lejon të përzgjidhen deri në 10 portokaj."
 
 #: activities/learn_quantities/Learn_quantities.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a number of oranges, and drag the selected "
-#| "oranges to the empty area. Repeat these steps until the number of oranges "
-#| "corresponds to the requested quantity. Then click on the OK button to "
-#| "validate your answer."
 msgctxt "Learn_quantities|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "
@@ -18000,11 +17930,6 @@ msgstr ""
 "jepte fshehtas mësim në Institut."
 
 #: activities/louis-braille/louis_braille_data.js:52
-#, fuzzy
-#| msgctxt "louis_braille_data|"
-#| msgid ""
-#| "He revised and extended braille to include mathematics, symbols, "
-#| "punctuations and music notations."
 msgctxt "louis_braille_data|"
 msgid ""
 "He revised and extended braille to include mathematics, symbols, punctuation "
@@ -18042,12 +17967,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "Kapela e magjistarit"
+msgstr "Kapela e magjistarit (zbritje)"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -18138,12 +18060,9 @@ msgstr "%1x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "Kapela e magjistarit"
+msgstr "Kapela e magjistarit (mbledhje)"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -18237,7 +18156,7 @@ msgstr "Ndihmojeni Tux-in që të dalë nga ky labirint."
 #: activities/mazerelative/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop spatial visualization and pathfinding skills."
-msgstr "Zhvilloni aftësi vizualizimi pamor dhe gjetjeje rruge."
+msgstr "Zhvilloni aftësi vizualizimi hapësinor dhe gjetjeje rruge."
 
 #. Help manual
 #: activities/maze/ActivityInfo.qml:23
@@ -18321,7 +18240,8 @@ msgstr "Udhëhiqeni Tux-in që të dalë nga labirinti i padukshëm."
 #: activities/mazeinvisible/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop spatial visualization, pathfinding and visual memory skills."
-msgstr "Zhvilloni aftësi vizualizimi pamor, gjetjeje rruge dhe kujtese pamore."
+msgstr ""
+"Zhvilloni aftësi vizualizimi hapësinor, gjetjeje rruge dhe kujtese pamore."
 
 #. Help manual
 #: activities/mazeinvisible/ActivityInfo.qml:23
@@ -18335,8 +18255,8 @@ msgstr ""
 "Përdorni tastet shigjetë ose fërkoni ekranin që të shpini Tux-in te dera. "
 "Përdorni ikonën e labirintit, ose tastin e hapësirës, që të kaloni nga "
 "mënyra e dukshme në atë të padukshme, ose anasjelltas. Mënyra e dukshme "
-"thjesht ju jep një tregim të pozicionit tuaj, si një hartë. Nuk e lëvizni "
-"dot Tux-in nën mënyrën e dukshme."
+"thjesht ju jep një tregim të pozicionit tuaj, si një hartë. S’e lëvizni dot "
+"Tux-in nën mënyrën e dukshme."
 
 #: activities/mazeinvisible/ActivityInfo.qml:24
 #: activities/mazerelative/ActivityInfo.qml:25
@@ -19976,7 +19896,7 @@ msgstr "Hapësirë shkronjash"
 #: activities/menu/ConfigurationItem.qml:445
 msgctxt "ConfigurationItem|"
 msgid "Teacher's server config"
-msgstr ""
+msgstr "Formësim shërbyesi mësuesi"
 
 #: activities/menu/ConfigurationItem.qml:653
 msgctxt "ConfigurationItem|"
@@ -20075,7 +19995,7 @@ msgstr "Fjalor"
 #: activities/menu/Menu.qml:211
 msgctxt "Menu|"
 msgid "GCompris is not connected to teacher's server."
-msgstr ""
+msgstr "GCompris-ja s’është i lidhur te shërbyesi i mësuesit."
 
 #: activities/menu/Menu.qml:212
 msgctxt "Menu|"
@@ -20083,22 +20003,26 @@ msgid ""
 "GCompris is connected to teacher's server, but the password entered for "
 "selected user is wrong."
 msgstr ""
+"GCompris-ja është lidhur me shërbyesin e mësuesit, por fjalëkalimi i dhënë "
+"për përdoruesin e përzgjedhur është gabim."
 
 #: activities/menu/Menu.qml:213
 msgctxt "Menu|"
 msgid ""
 "GCompris is connected to teacher's server, and the user is authenticated."
 msgstr ""
+"GCompris-ja është lidhur me shërbyesin e mësuesit dhe përdoruesi ka bërë "
+"mirëfilltësimin."
 
 #: activities/menu/Menu.qml:214
 msgctxt "Menu|"
 msgid "GCompris has lost the connection to teacher's server."
-msgstr ""
+msgstr "GCompris-ja humbi lidhjen me shërbyesin e mësuesit."
 
 #: activities/menu/Menu.qml:215
 msgctxt "Menu|"
 msgid "GCompris has been disconnected from teacher's server."
-msgstr ""
+msgstr "GCompris-ja është shkëputur nga shërbyesi i mësuesit."
 
 #: activities/menu/Menu.qml:216
 msgctxt "Menu|"
@@ -20106,6 +20030,8 @@ msgid ""
 "GCompris is connected to teacher's server, but the user is not yet "
 "authenticated."
 msgstr ""
+"GCompris-ja është lidhur me shërbyesin e mësuesit, por përdoruesi s’ka bërë "
+"ende mirëfilltësimin."
 
 #: activities/menu/Menu.qml:677
 msgctxt "Menu|"
@@ -20129,25 +20055,22 @@ msgstr "Rregullime Veprimtarie"
 #: activities/menu/ServerConfigPage.qml:61
 msgctxt "ServerConfigPage|"
 msgid "Teacher's server settings"
-msgstr ""
+msgstr "Rregullime shërbyesi mësuesi"
 
 #: activities/menu/ServerConfigPage.qml:111
 msgctxt "ServerConfigPage|"
 msgid "Teacher's identifier"
-msgstr ""
+msgstr "Identifikues i mësuesit"
 
 #: activities/menu/ServerConfigPage.qml:142
 msgctxt "ServerConfigPage|"
 msgid "Server port"
-msgstr ""
+msgstr "Portë shërbyesi"
 
 #: activities/menu/ServerConfigPage.qml:177
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "ServerConfigPage|"
 msgid "Server port must be a number between 0 and 65535."
-msgstr "Hamendësoni një numër mes 1-shit dhe %1."
+msgstr "Porta e shërbyesit duhet të jetë një numër mes 0 dhe 65535-s."
 
 #. Activity title
 #: activities/mining/ActivityInfo.qml:15
@@ -20736,24 +20659,21 @@ msgstr "Deri në 24 elemente, në disa rreshta."
 
 #. Activity title
 #: activities/multiple_choice_questions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication."
 msgctxt "ActivityInfo|"
 msgid "Multiple-choice questions"
-msgstr "Shumëzim."
+msgstr "Pyetje me disa mundësi zgjedhjeje"
 
 #. Help title
 #: activities/multiple_choice_questions/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "A generic activity for multiple-choice questions."
-msgstr ""
+msgstr "Një veprimtari e thjeshtë për pyetje me disa mundësi zgjedhjeje."
 
 #. Help goal
 #: activities/multiple_choice_questions/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Answer questions sent by the teacher."
-msgstr ""
+msgstr "Përgjigjuni pyetjeve të dërguara nga mësuesi."
 
 #. Help manual
 #: activities/multiple_choice_questions/ActivityInfo.qml:24
@@ -20764,31 +20684,28 @@ msgid ""
 "For some questions, after validating the answer, a feedback text panel will "
 "be displayed: click anywhere to close this panel after reading it."
 msgstr ""
+"Që ta përzgjidhni, klikoni mbi një përgjigje, mandej shtypni butonin OK që "
+"të jepet. Disa pyetje duan vetëm një përgjigje, pyetje të tjera duan disa "
+"përgjigje. Për disa pyetje, pas dhënies së përgjigjesh, do të shfaqet një "
+"panel teksti vlerësimi: për ta mbyllur këtë panel pas leximit, klikoni kudo "
+"qoftë."
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate through the answers"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: navigate through the answer list"
-msgstr "Tastet shigjetë: lëvizni nëpër përgjigjet"
+msgstr "Tastet shigjetë Sipër dhe Poshtë: lëvizni nëpër listën e përgjigjeve"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select or deselect a circle"
 msgctxt "ActivityInfo|"
 msgid "Space: select or deselect the highlighted answer"
-msgstr "Tasti Space: përzgjidhi ose shpërzgjidhni një qark"
+msgstr "Tasti Space: përzgjidhi ose shpërzgjidhni përgjigjen e theksuar"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
 msgstr ""
-"Tasti Enter: vlerësoni përgjigjen tuaj, kur të jetë i dukshëm butoni OK"
+"Tasti Enter: vlerësoni përgjigjen tuaj, ose mbyllni panelin e tekstit të "
+"përshtypjeve"
 
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
@@ -20862,11 +20779,6 @@ msgid "Try again"
 msgstr "Riprovoni"
 
 #: activities/nine_men_morris/NineMenMorris.qml:348
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "You and Tux start with 9 pieces each, and take turns to place your pieces "
-#| "on the empty spots of the board (by clicking on the spots)."
 msgctxt "NineMenMorris|"
 msgid ""
 "You and Tux start with 9 pieces each, and take turns to place your pieces on "
@@ -20876,12 +20788,6 @@ msgstr ""
 "pazëna te fusha, një herë njëri, një herë tjetri (duke klikuar mbi vendet)."
 
 #: activities/nine_men_morris/NineMenMorris.qml:352
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
-#| "remove it. Pieces of formed mill can not be removed unless no other "
-#| "pieces are left on the board."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
@@ -20893,12 +20799,6 @@ msgstr ""
 "mos pastë mbetur më gur në fushë."
 
 #: activities/nine_men_morris/NineMenMorris.qml:356
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "After all the pieces are placed, you and Tux will take turns to move "
-#| "them. Click on one of your pieces, and then on an adjacent empty spot to "
-#| "move it there. Green color spots indicates where you can move."
 msgctxt "NineMenMorris|"
 msgid ""
 "After all the pieces are placed, you and Tux will take turns to move them. "
@@ -20911,11 +20811,6 @@ msgstr ""
 "tregojnë se ku mund të lëvizni."
 
 #: activities/nine_men_morris/NineMenMorris.qml:360
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
-#| "moved to any vacant spot on the board."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
@@ -20925,11 +20820,6 @@ msgstr ""
 "vendosen në çfarëdo vendi të zbrazët në fushë."
 
 #: activities/nine_men_morris/NineMenMorris.qml:364
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you immobilize the computer or leave it with less than 3 pieces, then "
-#| "you win the game."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
@@ -21147,7 +21037,7 @@ msgctxt "NumbersOddEven|"
 msgid ""
 "Odd numbers are numbers which do not leave a remainder of 0 when divided by "
 "2."
-msgstr "Numrat tek janë numra që nuk japin një mbetje 0, kur pjesëtohen me 2."
+msgstr "Numrat tek janë numra që s’japin një mbetje 0, kur pjesëtohen me 2."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:63
 #: activities/numbers-odd-even/NumbersOddEven.qml:67
@@ -21604,7 +21494,6 @@ msgstr ""
 
 #: activities/oware/ActivityInfo.qml:23
 #: activities/oware_2players/ActivityInfo.qml:23
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid ""
 "Players take turns moving the seeds. On each turn, a player chooses one of "
@@ -21618,8 +21507,9 @@ msgstr ""
 "Lojtarët lëvizin farat një herë njëri, një herë tjetri. Në çdo radhë, një "
 "lojtar zgjedh një nga gjashtë foletë që ka nën kontroll. Lojtari i heq krejt "
 "farat prej asaj foleje dhe i shpërndan ato, në një proces që quhet mbjellje, "
-"në foletë vijuese (në kah kundërorar). Foleja nga fillohet është përherë e "
-"zbrazët; nëse përmbante 12 (ose më shumë) fara, ajo anashkalohet dhe fara e "
+"në foletë vijuese (në kah kundërorar). Nuk vihen fara te foletë e pikëve, as "
+"te foleja prej nga u mor fara. Foleja nga fillohet është përherë e zbrazët; "
+"nëse përmbante 12 (ose më shumë) fara, ajo anashkalohet dhe fara e "
 "dymbëdhjetë vendoset në folenë pasuese."
 
 #: activities/oware/ActivityInfo.qml:24
@@ -21642,7 +21532,7 @@ msgstr ""
 "radhës së tij. Kjo sjell përherë kapje të farave në folenë përkatëse dhe "
 "mundet edhe më tepër: nëse fara para të fundit shpuri një fole të "
 "kundërshtarit në dy ose tre fara, edhe këto kapen, e me radhë, deri sa "
-"mbërrihet në një fole që nuk përmban dy ose tre fara, ose që s’i përket "
+"mbërrihet në një fole që s’përmban dy ose tre fara, ose që s’i përket "
 "kundërshtarit. Farat e kapura vendosen te foleja e pikëve të lojtarit. Por, "
 "nëse një lëvizje do të sillte kapjen e krejt farave të një kundërshtari, "
 "kapja falet, ngaqë kjo do ta pengonte kundërshtarin të vazhdojë lojën dhe "
@@ -21860,7 +21750,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "The directions are absolute, they do not depend on the current orientation "
 "of Tux."
-msgstr "Drejtimet janë absolute, nuk varen nga orientimi aktual i Tux-it."
+msgstr "Drejtimet janë absolute, s’varen nga orientimi aktual i Tux-it."
 
 #: activities/path_decoding/resource/1/Data.qml:13
 #: activities/path_decoding/resource/2/Data.qml:13
@@ -22064,7 +21954,7 @@ msgstr ""
 "themelore të muzikës, por rreth kompozimit muzikor ka shumë më tepër për të "
 "eksploruar. Nëse ju pëlqen kjo veprimtari, por dëshironi mjete më të "
 "thelluara, provoni të shkarkoni Minuet (https://minuet.kde.org/), një "
-"software me burim të hapët, për edukim muzikor, ose MuseScore (https://"
+"program me burim të hapët, për edukim muzikor, ose MuseScore (https://"
 "musescore.org), një mjet me burim të hapët për shkrim muzike."
 
 #. Help prerequisite
@@ -23233,19 +23123,11 @@ msgid "Loop"
 msgstr "Qerthull"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:542
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Instruction Area:"
 msgctxt "ProgrammingMaze|"
 msgid "Instruction Area:"
 msgstr "Zonë Udhëzimesh:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:543
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "There are 3 instructions which you can use to code and lead Tux to the "
-#| "fish:"
 msgctxt "ProgrammingMaze|"
 msgid ""
 "There are 3 instructions which you can use to code and lead Tux to the fish:"
@@ -23254,11 +23136,6 @@ msgstr ""
 "peshku:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:544
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
-#| "facing."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
@@ -23268,43 +23145,26 @@ msgstr ""
 "përballë."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:545
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgctxt "ProgrammingMaze|"
 msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgstr "<b>2. Kthehu majtas:</b> E kthen Tux-in majtas."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:546
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgctxt "ProgrammingMaze|"
 msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgstr "<b>2. Kthehu djathtas:</b> E kthen Tux-in djathtas."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:550
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Main Function:"
 msgctxt "ProgrammingMaze|"
 msgid "Main Function:"
 msgstr "Funksioni Kryesor:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:551
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "The execution of the code starts here."
 msgctxt "ProgrammingMaze|"
 msgid "The execution of the code starts here."
 msgstr "Ekzekutimi i kodit nis këtu."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:552
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-Click on any instruction in the <b>instruction area</b> to add it to the "
-#| "<b>Main Function</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-Click on any instruction in the <b>instruction area</b> to add it to the "
@@ -23314,11 +23174,6 @@ msgstr ""
 "<b>Funksioni Kryesor</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:553
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-The instructions will execute in order until there's none left, or until "
-#| "a dead-end, or when Tux reaches the fish."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-The instructions will execute in order until there's none left, or until a "
@@ -23329,19 +23184,11 @@ msgstr ""
 "peshku."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:563
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Procedure:"
 msgctxt "ProgrammingMaze|"
 msgid "Procedure:"
 msgstr "Procedurë:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:564
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>Procedure</b> is a reusable set of instructions which can be <b>used "
-#| "in the code by calling it where needed</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
@@ -23351,12 +23198,6 @@ msgstr ""
 "<b>përdoret te kodi duke e thirrur kur duhet</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:565
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main "
-#| "Function area</b> to add your code, click on the <b>Procedure</b> or "
-#| "<b>Main Function</b> label."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
@@ -23368,19 +23209,11 @@ msgstr ""
 "<b>Procedurë</b> ose <b>Funksion Kryesor</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:575
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Loop:"
 msgctxt "ProgrammingMaze|"
 msgid "Loop:"
 msgstr "Qerthull:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:576
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
-#| "the number of times defined by the number inside it</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
@@ -23390,21 +23223,15 @@ msgstr ""
 "herë sa përcaktohet nga numri brenda tij</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:577
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
-#| "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</"
-#| "b> label."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
 "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
 "label."
 msgstr ""
-"- Që të <b>kaloni</b> nga <b>zona e Procedurës</b> te <b>zona e Funksionit "
+"- Që të <b>kaloni</b> nga <b>zona e Qerthullit</b> te <b>zona e Funksionit "
 "Kryesor</b> dhe anasjelltas, për të shtuar kod tuajin, klikoni mbi etiketën "
-"<b>Procedurë</b> ose <b>Funksion Kryesor</b>."
+"<b>Qerthull</b> ose <b>Funksion Kryesor</b>."
 
 #: activities/programmingMaze/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -23768,8 +23595,8 @@ msgstr ""
 "energjia elektrike s’mund të depozitohet, prandaj duhet prodhuar kur duhet. "
 "Prandaj është i domosdoshëm një sistem i sofistikuar kontrolli për të "
 "garantuar që prodhimi i energjisë elektrike përputhet në shkallë shumë të "
-"madhe me kërkesën. Nëse kërkesa dhe oferta nuk janë në baraspeshë, sistemet "
-"e prodhimit dhe pajisjet e transmetimit mund të ndalin funksionimin, gjë që, "
+"madhe me kërkesën. Nëse kërkesa dhe oferta s’janë në baraspeshë, sistemet e "
+"prodhimit dhe pajisjet e transmetimit mund të ndalin funksionimin, gjë që, "
 "në rastin më të keq mund të shpjerë në një ndërprerje rajonale të rëndë të "
 "energjisë."
 
@@ -25283,9 +25110,6 @@ msgid "Gradient Tools"
 msgstr "Mjete Gradientësh"
 
 #: activities/sketch/PaletteSelector.qml:148
-#, fuzzy
-#| msgctxt "ColorsPanel|"
-#| msgid "Palettes"
 msgctxt "PaletteSelector|"
 msgid "Palettes"
 msgstr "Paleta"
@@ -26877,19 +26701,11 @@ msgid "Right Ballast Tank"
 msgstr "Rezervuari i Djathtë i Balastit"
 
 #: activities/submarine/Submarine.qml:133
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Move the submarine to the other side of the screen."
 msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "Shpjereni nëndetësen në anën tjetër të ekranit."
 
 #: activities/submarine/Submarine.qml:136
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The leftmost item in the control panel is the engine of the submarine, "
-#| "indicating the current speed of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
@@ -26899,50 +26715,31 @@ msgstr ""
 "nëndetëses, me shpejtësinë aktuale të nëndetëses të shfaqur."
 
 #: activities/submarine/Submarine.qml:139
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Increase or decrease the velocity of the submarine using the engine."
 msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr "Rritni ose ulni shpejtësinë e nëndetëses duke përdorur motorin."
 
 #: activities/submarine/Submarine.qml:142
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Press the + button to increase the velocity, or the - button to decrease "
-#| "the velocity."
 msgctxt "Submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
 "velocity."
 msgstr ""
-"Që të rritni shpejtësinë, shtypni butonin +, ose që ta ulni shpejtësinë "
+"Që të rritni shpejtësinë, shtypni butonin +, ose që ta ulni shpejtësinë, "
 "shtypni butonin - ."
 
 #: activities/submarine/Submarine.qml:149
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The item next to the engine is the ballast tank."
 msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "Objekti në krah të motorit është depozita e balastit."
 
 #: activities/submarine/Submarine.qml:152
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The ballast tanks are used to float or dive under water."
 msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr ""
 "Depozitat e balastit përdoren për të pluskuar, ose për t’u zhytur nën ujë."
 
 #: activities/submarine/Submarine.qml:155
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "If the ballast tanks are empty, the submarine will float. If the ballast "
-#| "tanks are full of water, the submarine will dive underwater."
 msgctxt "Submarine|"
 msgid ""
 "If the ballast tanks are empty, the submarine will float. If the ballast "
@@ -26952,27 +26749,15 @@ msgstr ""
 "depozitat e balastit janë plot me ujë, nëndetësja do të zhytet në thellësi."
 
 #: activities/submarine/Submarine.qml:158
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Turning the upper valve on or off will alternatively allow or stop the "
-#| "water from filling in the ballast tank, thus allowing it to dive "
-#| "underwater."
 msgctxt "Submarine|"
 msgid ""
 "Turning the upper valve on or off will alternatively allow or stop the water "
 "from filling in the ballast tank, thus allowing it to dive underwater."
 msgstr ""
-"Duke hapur ose mbyllur valvulën e sipërmes, lejoni ose ndalni mbushjen me "
-"ujë të depozitës së balastit, duke lejuar kështu zhytjen nën ujë."
+"Duke hapur ose mbyllur valvulën e sipërme, lejoni ose ndalni mbushjen me ujë "
+"të depozitës së balastit, duke lejuar kështu zhytjen nën ujë."
 
 #: activities/submarine/Submarine.qml:161
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Turning the lower valve on or off will alternatively allow or stop the "
-#| "water from flushing out the ballast tank, thus allowing it to float on "
-#| "the surface of the water."
 msgctxt "Submarine|"
 msgid ""
 "Turning the lower valve on or off will alternatively allow or stop the water "
@@ -26984,25 +26769,15 @@ msgstr ""
 "ujit."
 
 #: activities/submarine/Submarine.qml:168
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The rightmost item in the control panel controls the diving planes of the "
-#| "submarine"
 msgctxt "Submarine|"
 msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
 "submarine."
 msgstr ""
 "Objekti i skajshëm i djathtë te paneli i kontrollit kontrollon planet "
-"zhytjes së nëndetëses"
+"zhytjes së nëndetëses."
 
 #: activities/submarine/Submarine.qml:171
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The diving planes in a submarine are used to control the depth of the "
-#| "submarine accurately once it is underwater."
 msgctxt "Submarine|"
 msgid ""
 "The diving planes in a submarine are used to control the depth of the "
@@ -27012,25 +26787,15 @@ msgstr ""
 "thellësinë e nëndetëses pasi kjo të jetë nën ujë."
 
 #: activities/submarine/Submarine.qml:174
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Once the submarine is moving underwater, increasing or decreasing the "
-#| "angle of the planes will increase and decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "Once the submarine is moving underwater, increasing or decreasing the angle "
 "of the planes will increase and decrease the depth of the submarine."
 msgstr ""
 "Pasi nëndetësja të lëvizë nën ujë, zmadhimi ose zvogëlimi i këndit të "
-"planeve do të rrisë ose ulë thellësinë e nëndetëses."
+"planeve do të rritë ose ulë thellësinë e nëndetëses."
 
 #: activities/submarine/Submarine.qml:177
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The + button will increase the depth of the submarine, while the - button "
-#| "will decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "The + button will increase the depth of the submarine, while the - button "
@@ -27040,17 +26805,11 @@ msgstr ""
 "thellësinë e nëndetëses."
 
 #: activities/submarine/Submarine.qml:180
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Grab the crown to open the gate."
 msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "Përlani kurorën, që të hapet porta."
 
 #: activities/submarine/Submarine.qml:183
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Check out the help menu for the keyboard controls."
 msgctxt "Submarine|"
 msgid "Check out the help menu for the keyboard controls."
 msgstr "Për kontroll përmes tastierës, shihni menunë e ndihmës."
@@ -27205,8 +26964,8 @@ msgid ""
 "Develop skills in spatial visualization, memorizing positions, and "
 "reproducing models."
 msgstr ""
-"Zhvilloni aftësi në vizualizim pamor, mbajtje mend pozicionesh dhe riprodhim "
-"modelesh."
+"Zhvilloni aftësi në vizualizim hapësinor, mbajtje mend pozicionesh dhe "
+"riprodhim modelesh."
 
 #. Help manual
 #: activities/tangram/ActivityInfo.qml:24
@@ -27655,10 +27414,9 @@ msgid "Write your own addition and solve it."
 msgstr "Shkruani mbledhjen tuaj dhe kryejeni."
 
 #: activities/vertical_addition/resource/2/Data.qml:12
-#, fuzzy
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines, without carry."
-msgstr "Shkruani dhe bëni mbledhjen, 2 shifra, 3 rreshta."
+msgstr ""
 
 #: activities/vertical_addition/resource/3/Data.qml:12
 msgctxt "Data|"
@@ -27715,6 +27473,7 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by regrouping "
 "method."
 msgstr ""
+"Mësoni të bëni zbritje vertikale, me marrje hua sipas metodës së rigrupimit."
 
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:22
@@ -27752,10 +27511,9 @@ msgstr ""
 
 #: activities/vertical_subtraction/resource/1/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
-#, fuzzy
 msgctxt "Data|"
 msgid "Solve subtraction, 2 digits, 2 lines, without carry."
-msgstr "Bëni zbritjen, 3 ose 4 shifra, 2 rreshta."
+msgstr ""
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
@@ -27777,10 +27535,9 @@ msgstr "Shkruani zbritjen tuaj dhe kryejeni."
 
 #: activities/vertical_subtraction/resource/2/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
-#, fuzzy
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 2 lines, without carry."
-msgstr "Shkruani dhe bëni zbritjen, 3 ose 4 shifra, 2 rreshta."
+msgstr ""
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
@@ -27842,17 +27599,11 @@ msgid "Solve: %1"
 msgstr "Kryejeni: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:99
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own addition and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own addition and solve it."
 msgstr "Shkruani mbledhjen tuaj dhe kryejeni."
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:100
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own subtraction and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own subtraction and solve it."
 msgstr "Shkruani zbritjen tuaj dhe kryejeni."
@@ -27865,13 +27616,13 @@ msgstr "Gati"
 #: activities/vertical_subtraction/VerticalSubtraction.qml:464
 msgctxt "VerticalSubtraction|"
 msgid "The result should not be a negative number."
-msgstr ""
+msgstr "Përfundimi s’duhet të jetë një numër negativ."
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
-msgstr "Zbritje vertikale (konpensim)"
+msgstr "Zbritje vertikale (kompensim)"
 
 #. Help goal
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:20
@@ -27880,6 +27631,7 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by compensation "
 "method."
 msgstr ""
+"Mësoni të bëni zbritje vertikale, me marrje hua sipas metodës së kompensimit."
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
@@ -28076,22 +27828,14 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Shtypni fjalën e plotë, teksa ajo bie, përpara se të mbërrijë përdhe."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Kannada and Tamil"
-msgstr "U shtua përkthim për letonishten"
+msgstr "U shtua përkthim për kannada-n dhe tamilishten"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgctxt "ChangeLog|"
 msgid "New command-line option to set the locale (--locale locale)"
-msgstr ""
-"Mundësi e re rreshti urdhrash për të ndërruar vizatuesin (--renderer "
-"vizatues)"
+msgstr "Mundësi e re rreshti urdhrash për caktim vendoreje (--locale vendore)"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
@@ -28099,6 +27843,8 @@ msgid ""
 "New command-line option to show/hide the Home button (--hide-home-button/--"
 "show-home-button)"
 msgstr ""
+"Mundësi e re për rresht urdhrash për shfaqje/fshehje të butonit Shtëpi (--"
+"hide-home-button/--show-home-button)"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:39 core/ChangeLog.qml:45
 #: core/ChangeLog.qml:54 core/ChangeLog.qml:60 core/ChangeLog.qml:65
@@ -28840,7 +28586,8 @@ msgstr "URL-ja %1 s’ekziston."
 #, qt-format
 msgctxt "QObject|"
 msgid "Checksum of downloaded file does not match: %1"
-msgstr "Checksum-i i kartelës së shkarkuar nuk përputhet: %1"
+msgstr ""
+"Shuma e kontrollit e llogaritur për kartelën e shkarkuar s’përputhet: %1"
 
 #: core/DownloadManager.cpp:768
 #, qt-format
@@ -28855,12 +28602,9 @@ msgid "No data found for %1."
 msgstr "S’u gjetën të dhëna për %1."
 
 #: core/GCCreationHandler.qml:185
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr "%1 u fshi me sukses!"
+msgstr "Kartela u fshi me sukses!"
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -28869,12 +28613,9 @@ msgid "OK"
 msgstr "OK"
 
 #: core/GCCreationHandler.qml:193
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
-msgstr "S’arrihet të fshihet %1!"
+msgstr "S’arrihet të fshihet kartela!"
 
 #: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
@@ -28929,7 +28670,7 @@ msgstr "Fshije"
 #: core/GCCreationHandler.qml:429
 msgctxt "GCCreationHandler|"
 msgid "Open folder"
-msgstr ""
+msgstr "Hape dosjen"
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
@@ -29035,7 +28776,7 @@ msgstr "Përcaktoni veprimtarinë kur niset GCompris."
 #: core/main.cpp:134
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
-msgstr ""
+msgstr "Paraqet në ekran krejt veprimtaritë e gatshme."
 
 #: core/main.cpp:138
 msgctxt "QObject|"
@@ -29057,22 +28798,19 @@ msgstr ""
 "përdoret mundësia --launch."
 
 #: core/main.cpp:146
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid "Specify the activity when starting GCompris."
 msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
-msgstr "Përcaktoni veprimtarinë kur niset GCompris."
+msgstr "Përcaktoni vendoren kur niset GCompris."
 
 #: core/main.cpp:150
 msgctxt "QObject|"
 msgid "Hide the Home button in the bar."
-msgstr ""
+msgstr "Fshihe butoni Shtëpia, te shtylla."
 
 #: core/main.cpp:154
 msgctxt "QObject|"
 msgid "Show the Home button in the bar (default)."
-msgstr ""
+msgstr "Shfaqe butonin Shtëpia, te shtylla (parazgjedhje)."
 
 #: core/main.qml:238
 msgctxt "main|"
@@ -29163,47 +28901,37 @@ msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris-ja u përditësua! Ja ndryshimet e reja:<br/>"
 
 #: core/main.qml:509
-#, fuzzy, qt-format
-#| msgctxt "Sketch|"
-#| msgid "Do you want to erase this image?"
+#, qt-format
 msgctxt "main|"
 msgid "Do you want to connect to server %1?"
-msgstr "Doni të fshihet kjo figurë?"
+msgstr "Doni të lidhet me shërbyesin %1?"
 
 #: core/main.qml:530
 #, qt-format
 msgctxt "main|"
 msgid "Password rejected by server %1"
-msgstr ""
+msgstr "Fjalëkalimi u hodh poshtë nga shërbyesi %1"
 
 #: core/main.qml:531 core/main.qml:550 core/main.qml:625
-#, fuzzy
-#| msgctxt "Balancebox|"
-#| msgid "OK"
 msgctxt "main|"
 msgid "OK"
 msgstr "OK"
 
 #: core/main.qml:546
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "main|"
 msgid "Select your username"
-msgstr "Përzgjidhni mënyrën tuaj"
+msgstr "Përzgjidhni emrin tuaj të përdoruesit"
 
 #: core/main.qml:556
 msgctxt "main|"
 msgid "Please select your username in the list or cancel."
 msgstr ""
+"Ju lutemi, përzgjidhni te lista emrin tuaj të përdoruesit, ose anulojeni."
 
 #: core/main.qml:623
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "main|"
 msgid "Enter your password"
-msgstr "Tasti Enter: shihni vlefshmërinë e përgjigjes tuaj"
+msgstr "Jepni fjalëkalimin tuaj"
 
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"
@@ -29229,127 +28957,3 @@ msgstr "Anashkaloje"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Fillo"
-
-#, fuzzy
-#~| msgctxt "Data|"
-#~| msgid "Find the next number."
-#~ msgctxt "Data|"
-#~ msgid "Find the correct answer."
-#~ msgstr "Gjeni numrin pasues."
-
-#, fuzzy
-#~| msgctxt "GraduatedLineRead|"
-#~| msgid "Find the requested number."
-#~ msgctxt "Data|"
-#~ msgid "What is the first number?"
-#~ msgstr "Gjeni numrin e kërkuar."
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Practice the addition of numbers."
-#~ msgctxt "Data|"
-#~ msgid "What are the first two numbers?"
-#~ msgstr "Ushtrohuni në mbledhjen e numrave."
-
-#~ msgctxt "Data|"
-#~ msgid "Find the previous number."
-#~ msgstr "Gjeni numrin e mëparshëm."
-
-#~ msgctxt "Data|"
-#~ msgid "Find the in-between number."
-#~ msgstr "Gjeni numrat mes tyre."
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid ""
-#~| "Select tools and colors from the foldable panels and draw images.<br><br>"
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Select wheel, gear, pen's position and color from the foldable panels and "
-#~ "start the gear.<br><br>"
-#~ msgstr ""
-#~ "Përzgjidhni mjete dhe ngjyra prej paneleve që palosen dhe vizatoni figura."
-#~ "<br><br>"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Ctrl + S: save the image"
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Ctrl + D: save the drawing"
-#~ msgstr "Tastet Ctrl + S: ruani figurën"
-
-#, fuzzy
-#~| msgctxt "FilesPanel|"
-#~| msgid "Save your image"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save vector image (SVG)"
-#~ msgstr "Ruani figurën tuaj"
-
-# Copyright (C) YEAR This file is copyright:
-# This file is distributed under the same license as the gcompris package.
-#
-# Besnik Bleta <besnik@programeshqip.org>, 2020,2021,2022,2023, 2024.
-# Falënderime Dashamir Hoxhës për një numër sugjerimesh të vlefshme <dashohoxha@gmail.com>, 2021.
-#
-#, fuzzy
-#~| msgid ""
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ msgstr ""
-#~ "Project-Id-Version: \n"
-#~ "POT-Creation-Date: \n"
-#~ "PO-Revision-Date: 2024-12-28 21:08+0200\n"
-#~ "Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
-#~ "Language-Team: Albanian <kde-i18n-doc@kde.org>\n"
-#~ "Language: sq\n"
-#~ "MIME-Version: 1.0\n"
-#~ "Content-Type: text/plain; charset=UTF-8\n"
-#~ "Content-Transfer-Encoding: 8bit\n"
-#~ "Plural-Forms: nplurals=2; plural=n != 1;\n"
-#~ "X-Qt-Contexts: true\n"
-#~ "X-Generator: Poedit 3.2.2\n"
-
-#, fuzzy
-#~| msgctxt "category_colors|"
-#~| msgid "Colors"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Color"
-#~ msgstr "Ngjyra"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "Districto Federal"
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Distance to center"
-#~ msgstr "Distrito Federal"
-
-#~ msgctxt "ColorsPanel|"
-#~ msgid "Palettes"
-#~ msgstr "Paleta"
-
-#, fuzzy
-#~| msgctxt "BinaryBulb|"
-#~| msgid "What is the binary representation of %1?"
-#~ msgctxt "Frieze|"
-#~ msgid "What is the binary representation of %1?"
-#~ msgstr "Cila është paraqitja dyore e %1?"
-
-#~ msgctxt "grammar_analysis|"
-#~ msgid "Grammatical analysis"
-#~ msgstr "Analizë gramatikore"
-
-#~ msgctxt "grammar_analysis|"
-#~ msgid "Learn to identify grammatical classes."
-#~ msgstr "Mësoni të identifikoni klasa gramatikore."
-
-#~ msgctxt "grammar_analysis|"
-#~ msgid ""
-#~ "Select a grammatical class from the list, then select the box under a "
-#~ "word and assign it the class."
-#~ msgstr ""
-#~ "Përzgjidhni klasën gramatikore nga lista, mandej përzgjidhni kutizën nën "
-#~ "një fjalë dhe caktojini klasën."
-
-#~ msgctxt "grammar_analysis|"
-#~ msgid "Leave the box blank if no class matches."
-#~ msgstr "Nëse s’ka përkime, lëreni kutinë të zbrazët."

@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Vincenzo Reale <smart2128vr@gmail.com>
+# SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026 Vincenzo Reale <smart2128vr@gmail.com>
 # Paolo Gibellini <p.gibellini@gmail.com>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2025-12-25 09:15+0100\n"
+"PO-Revision-Date: 2026-01-06 09:59+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -3821,7 +3821,7 @@ msgctxt "CategoryReview|"
 msgid ""
 "Place the majority category images to the right and other images to the left"
 msgstr ""
-"Posiziona la maggioranza degli elementi delle categorie destra e le altre "
+"Posiziona la maggioranza degli elementi delle categorie a destra e le altre "
 "immagini a sinistra"
 
 #: activities/categorization/resource/1/Data.qml:13
@@ -7712,7 +7712,7 @@ msgstr ""
 "foresta tropicale di montagna, in un ambiente di straordinaria bellezza. Era "
 "probabilmente la più incredibile creazione urbana dell'impero Inca al suo "
 "massimo splendore; le sue mura giganti, le terrazze e le rampe sembrano come "
-"scolpiti naturalmente nelle continue scarpate di roccia. L'ambiente "
+"scolpite naturalmente nelle continue scarpate di roccia. L'ambiente "
 "naturale, sulle pendici orientali delle Ande, comprende l'alto bacino del "
 "Rio delle Amazzoni con la sua rigogliosa diversità di flora e fauna."
 
@@ -8950,7 +8950,7 @@ msgstr ""
 "simboleggia il cielo, consentendo alla luce naturale di illuminare "
 "l'interno. Originariamente dedicato a tutte le divinità romane, fu in "
 "seguito convertito in una chiesa cristiana, nota come Basilica di Santa "
-"Maria e dei Martiri, nel 609 d.C. La sua cupola, la più grande cupola in "
+"Maria ad Martyres, nel 609 d.C. La sua cupola, la più grande cupola in "
 "cemento non armato al mondo, mostra una notevole ingegneria e simmetria, "
 "ispirando architetti per secoli. Le proporzioni armoniose del Pantheon e il "
 "suo significato storico lo rendono un capolavoro senza tempo "

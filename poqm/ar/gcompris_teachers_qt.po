@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-01-07 18:48+0400\n"
+"PO-Revision-Date: 2026-01-14 08:35+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -1204,9 +1204,6 @@ msgid "Remove last entry"
 msgstr "إزالة المدخلة الأخيرة"
 
 #: server/components/FoldDown.qml:151
-#, fuzzy
-#| msgctxt "FoldDown|"
-#| msgid "Filter list"
 msgctxt "FoldDown|@action"
 msgid "Filter list"
 msgstr "تصفية القائمة"
@@ -1683,9 +1680,6 @@ msgid "Users IDs"
 msgstr "معرفات المستخدمين"
 
 #: server/singletons/Master.qml:45
-#, fuzzy
-#| msgctxt "Master|"
-#| msgid "Activity Id"
 msgctxt "Master|"
 msgid "Activity ID"
 msgstr "معرف النشاط"
@@ -1854,12 +1848,9 @@ msgid "Delete"
 msgstr "احذف"
 
 #: server/views/datas/DuplicateData.qml:212
-#, fuzzy
-#| msgctxt "DuplicateData|"
-#| msgid "You are about to delete datas"
 msgctxt "DuplicateData|"
 msgid "You are about to delete data"
-msgstr "أنت بصدد حذف البيانات"
+msgstr "أنت بصدد حذف بيانات"
 
 #: server/views/datas/DuplicateData.qml:230
 msgctxt "DuplicateData|"
@@ -1927,9 +1918,6 @@ msgid "Not connected"
 msgstr "غير متّصل"
 
 #: server/views/DevicesView.qml:54
-#, fuzzy
-#| msgctxt "LoginView|"
-#| msgid "Incorrect password"
 msgctxt "DevicesView|"
 msgid "Incorrect password"
 msgstr "كلمة سر غير صحيحة"
@@ -2191,28 +2179,20 @@ msgid "Port"
 msgstr "المنفذ"
 
 #: server/views/SettingsView.qml:188
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Server is"
 msgctxt "SettingsView|"
 msgid "Server status"
-msgstr "الخادم"
+msgstr "حالة الخادم"
 
 #: server/views/SettingsView.qml:189
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Running"
 msgctxt "SettingsView|As in 'The server is running'"
 msgid "Running"
 msgstr "يعمل"
 
 #: server/views/SettingsView.qml:189
-#, fuzzy, qt-format
-#| msgctxt "SettingsView|"
-#| msgid "Already running on port %1"
+#, qt-format
 msgctxt "SettingsView|As in 'The Server is already running on port %1'"
 msgid "Already running on port %1"
-msgstr "يعمل بالفعل على المنفذ %1"
+msgstr "الخادم يعمل فعلًا على المنفذ %1"
 
 #: server/views/SettingsView.qml:197
 msgctxt "SettingsView|"
