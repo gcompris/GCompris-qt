@@ -143,5 +143,5 @@ DialogBackground {
         qsTr("<b>A big thanks to the translation team:</b> %1")
         .arg(translators) +
 
-        "<br/><center><b>" + "Copyright 2000-2025 Timothée Giet and Others" + "</b></center>" + "<br/>"
+        "<br/><center><b>" + "Copyright 2000-2026 Timothée Giet and Others" + "</b></center>" + "<br/>"
 }
