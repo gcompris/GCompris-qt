@@ -267,6 +267,7 @@
       <li xml:lang="pl">odkrywanie komputera: klawiatura, mysz, różne ruchy myszą, itp.</li>
       <li xml:lang="pt-BR">conhecendo o computador: teclado, mouse, diferentes movimentações com o mouse, etc.</li>
       <li xml:lang="sl">odkrivanje računalnika: tipkovnica, miška, različne kretnje miške itd.</li>
+      <li xml:lang="sq">njohje me kompjuterin: tastierë, mi, gjeste të ndryshme të miut, etj.</li>
       <li xml:lang="sv">upptäcka datorn: tangentbord, mus, olika musgester, etc.</li>
       <li xml:lang="uk">Знайомство з комп’ютером: клавіатура, миша, керування мишею…</li>
       <li xml:lang="zh-CN">计算机启蒙：键盘、鼠标、鼠标手势等。</li>
@@ -290,6 +291,7 @@
       <li xml:lang="pl">arytmetyka: tablice pamięciowe, wyliczanie, obraz lustrzany, wyrównoważanie wagi, wydawanie reszty, itp.</li>
       <li xml:lang="pt-BR">matemática: memória matemática, enumeração, imagens espelhadas, balanceamento de escalas, moedas e troco, etc.</li>
       <li xml:lang="sl">aritmetika: tabelarni spomin, štetje, zrcalna slika, uravnoteženje tehtnice, vračanje drobiža itd.</li>
+      <li xml:lang="sq">aritmetikë: kujtesë tabelash, numërim, pasqyrim figurash, baraspeshim peshoreje, dhënie kusuri, etj.</li>
       <li xml:lang="sv">aritmetik: tabellminne, uppräkning, spegelbild, balansera vågen, ge växel, etc.</li>
       <li xml:lang="uk">Арифметика: запам’ятовування таблиць, нумерація, віддзеркалення, балансування масштабу, обчислення решти…</li>
       <li xml:lang="zh-CN">数学基础：乘法表记忆、识数、图形镜像、天平配平、找零等。</li>
@@ -312,6 +314,7 @@
       <li xml:lang="pl">nauka: śluza na kanale, mieszanie barw, poczucie grawitacji, itp.</li>
       <li xml:lang="pt-BR">ciência: comporta de canal, mistura de cores, conceito de gravidade, etc.</li>
       <li xml:lang="sl">znanost: zapornica kanala, mešanje barv, koncept težnosti, itd.</li>
+      <li xml:lang="sq">shkencë: bllokim kanali, përzierje ngjyra, koncepti i rëndesës, etj.</li>
       <li xml:lang="sv">vetenskap: kanalslussen, färgblandning, gravitationskonceptet, etc.</li>
       <li xml:lang="uk">Наука: шлюзування, змішування кольорів, поняття тяжіння…</li>
       <li xml:lang="zh-CN">科学基础：船闸、颜色混合、重力概念等。</li>
@@ -334,6 +337,7 @@
       <li xml:lang="pl">gry: na pamięć, łączenie czwórek, tic tac toe, sudoku, wieża hanoi, itp.</li>
       <li xml:lang="pt-BR">jogos: memória, ligue 4, jogo da velha, sudoku, torre de Hanói, etc.</li>
       <li xml:lang="sl">igre: spomin, štiri v vrsto, križci in krožci, sudoku, Hanojski stolpi, itd.</li>
+      <li xml:lang="sq">lojëra: kujtesë, lidhni 4, tik tak to, sudoku, kullë Hanoi, etj.</li>
       <li xml:lang="sv">spel: memory, koppla 4, tre-i-rad, sudoku, tornen i Hanoi, etc.</li>
       <li xml:lang="uk">Ігри: запам’ятовування, чотири-у-рядок, хрестики-нулики, судоку, ханойські вежі…</li>
       <li xml:lang="zh-CN">智力游戏：速记、四子棋、井子棋、数独、汉诺塔等。</li>
@@ -356,6 +360,7 @@
       <li xml:lang="pl">czytanie: nauka czytania, itp.</li>
       <li xml:lang="pt-BR">leitura: prática de leitura, etc.</li>
       <li xml:lang="sl">branje: bralna vaja, itd.</li>
+      <li xml:lang="sq">lexim: ushtrim të lexuari, etj.</li>
       <li xml:lang="sv">läsning: läsningsövning, etc.</li>
       <li xml:lang="uk">Читання: вправи із читання…</li>
       <li xml:lang="zh-CN">阅读训练：阅读练习等。</li>
@@ -379,6 +384,7 @@
       <li xml:lang="pl">inne: naucz się godzin na zegarze, systemu brajla, labiryntów, instrumentów muzycznych, itp.</li>
       <li xml:lang="pt-BR">outros: aprendendo a ver as horas, o sistema Braille, labirintos, instrumentos musicais, etc.</li>
       <li xml:lang="sl">ostalo: prepoznavanje časa, brajica, blodnjak, glasbila, itd.</li>
+      <li xml:lang="sq">të tjera: mësoni si të tregoni orën, sistemi Braj, maze, vegla muzikore, etj.</li>
       <li xml:lang="sv">annat: lära sig klockan, punktskrift, labyrint, musikinstrument, etc.</li>
       <li xml:lang="uk">Інше: навчання позначенням часу, система Брайля, лабіринти, музичні інструменти…</li>
       <li xml:lang="zh-CN">其他活动：时间识别、盲文、迷宫、乐器等。</li>
