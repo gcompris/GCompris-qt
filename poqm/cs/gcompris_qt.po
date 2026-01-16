@@ -80,50 +80,50 @@ msgstr "Najdi požadovaná čísla a přetáhni je na odpovídající místo."
 #. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:56
 #, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the previous numbers."
+#| msgctxt "GraduatedLineRead|"
+#| msgid "Find the requested number."
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n previous number(s)."
 msgid_plural "Find the %n previous number(s)."
-msgstr[0] "Najdi předcházející číslo."
-msgstr[1] "Najdi předcházející číslo."
-msgstr[2] "Najdi předcházející číslo."
+msgstr[0] "Najdi požadované číslo."
+msgstr[1] "Najdi požadované číslo."
+msgstr[2] "Najdi požadované číslo."
 
 #. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:60
 #, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the next numbers."
+#| msgctxt "ActivityInfo|"
+#| msgid "Find the adjacent numbers"
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n next number(s)."
 msgid_plural "Find the %n next number(s)."
-msgstr[0] "Najdi následující čísla."
-msgstr[1] "Najdi následující čísla."
-msgstr[2] "Najdi následující čísla."
+msgstr[0] "Najdi následující čísla"
+msgstr[1] "Najdi následující čísla"
+msgstr[2] "Najdi následující čísla"
 
 #. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:64
 #, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the in-between numbers."
+#| msgctxt "ActivityInfo|"
+#| msgid "Find the adjacent numbers"
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n in-between number(s)"
 msgid_plural "Find the %n in-between number(s)"
-msgstr[0] "Najdi vynechané číslo."
-msgstr[1] "Najdi vynechané číslo."
-msgstr[2] "Najdi vynechané číslo."
+msgstr[0] "Najdi následující čísla"
+msgstr[1] "Najdi následující čísla"
+msgstr[2] "Najdi následující čísla"
 
 #. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:68
 #, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the missing numbers."
+#| msgctxt "ActivityInfo|"
+#| msgid "Find the missing adjacent numbers."
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n missing numbers"
 msgid_plural "Find the %n missing numbers"
-msgstr[0] "Najdi chybějící čísla."
-msgstr[1] "Najdi chybějící čísla."
-msgstr[2] "Najdi chybějící čísla."
+msgstr[0] "Najdi chybějící následující čísla."
+msgstr[1] "Najdi chybějící následující čísla."
+msgstr[2] "Najdi chybějící následující čísla."
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
 msgctxt "Data|"
@@ -28115,7 +28115,7 @@ msgstr "GCompris byl aktualizován! Zde jsou nové změny:<br/>"
 
 #: core/main.qml:509
 #, fuzzy, qt-format
-#| msgctxt "Sketch|"
+#| msgctxt "DrawingWheels|"
 #| msgid "Do you want to erase this image?"
 msgctxt "main|"
 msgid "Do you want to connect to server %1?"
@@ -28177,32 +28177,3 @@ msgstr "Přeskočit"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Spustit"
-
-#, fuzzy
-#~| msgctxt "Data|"
-#~| msgid "Find the next number."
-#~ msgctxt "Data|"
-#~ msgid "Find the correct answer."
-#~ msgstr "Najdi následující číslo."
-
-#, fuzzy
-#~| msgctxt "GraduatedLineRead|"
-#~| msgid "Find the requested number."
-#~ msgctxt "Data|"
-#~ msgid "What is the first number?"
-#~ msgstr "Najdi požadované číslo."
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Practice the addition of numbers."
-#~ msgctxt "Data|"
-#~ msgid "What are the first two numbers?"
-#~ msgstr "Procvič si sčítání čísel."
-
-#~ msgctxt "Data|"
-#~ msgid "Find the previous number."
-#~ msgstr "Najdi předcházející číslo."
-
-#~ msgctxt "Data|"
-#~ msgid "Find the in-between number."
-#~ msgstr "Najdi vynechané číslo."
