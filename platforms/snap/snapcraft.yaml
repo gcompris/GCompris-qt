@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2023-2025 Scarlett Moore <sgmoore@kde.org>
+# SPDX-FileCopyrightText: 2023-2026 Scarlett Moore <sgmoore@kde.org>
 #
 # SPDX-License-Identifier: CC0-1.0
 ---
@@ -40,7 +40,12 @@ parts:
   qml-box2d:
     source: https://github.com/qml-box2d/qml-box2d.git
     plugin: cmake
+    build-snaps:
+      - kde-qt6-core24-sdk/latest/beta
+      - kf6-core24-sdk/latest/beta
     build-packages:
+      - libduktape207
+      - libxkbcommon0
       - cmake
       - libpulse0
     stage-packages:
@@ -59,6 +64,9 @@ parts:
     parse-info:
       - usr/share/metainfo/org.kde.gcompris.appdata.xml
     plugin: cmake
+    build-snaps:
+      - kde-qt6-core24-sdk/latest/beta
+      - kf6-core24-sdk/latest/beta
     build-packages:
       - cmake
       - libssl-dev

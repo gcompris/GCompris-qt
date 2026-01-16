@@ -13,3 +13,4 @@ include:
       - /gitlab-templates/json-validation.yml
       - /gitlab-templates/cppcheck.yml
       - /gitlab-templates/documentation.yml
+      - /gitlab-templates/snap-snapcraft-lxd.yml
