@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024, 2025 Giovanni Sora <g.sora@tiscali.it>
+# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024, 2025, 2026 Giovanni Sora <g.sora@tiscali.it>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-05-09 18:56+0200\n"
+"PO-Revision-Date: 2026-01-15 12:16+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -76,46 +76,38 @@ msgstr ""
 
 #. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the previous numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n previous number(s)."
 msgid_plural "Find the %n previous number(s)."
-msgstr[0] "Trova le previe numeros."
+msgstr[0] "Trova le previe %n numero(s)."
 msgstr[1] "Trova le previe numeros."
 
 #. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:60
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the next numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n next number(s)."
 msgid_plural "Find the %n next number(s)."
-msgstr[0] "Trova le proxime numeros."
+msgstr[0] "Trova le proxime %n numero(s)."
 msgstr[1] "Trova le proxime numeros."
 
 #. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:64
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the in-between numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n in-between number(s)"
 msgid_plural "Find the %n in-between number(s)"
-msgstr[0] "Trova le numeros inter medie."
+msgstr[0] "Trova le %n numero(s) inter medie."
 msgstr[1] "Trova le numeros inter medie."
 
 #. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:68
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the missing numbers"
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n missing numbers"
 msgid_plural "Find the %n missing numbers"
-msgstr[0] "Trova le numeros mancante"
+msgstr[0] "Trova le %n numeros mancante"
 msgstr[1] "Trova le numeros mancante"
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
@@ -4352,7 +4344,7 @@ msgstr "Inverno"
 #: activities/chronos/resource/board/board3_0.qml:15
 msgctxt "board3_0|"
 msgid "Gardening"
-msgstr ""
+msgstr "Jardinage"
 
 #: activities/chronos/resource/board/board3_0.qml:46
 msgctxt "board3_0|"
@@ -6094,12 +6086,9 @@ msgstr ""
 
 #. Activity title
 #: activities/drawing_wheels/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "BrushToolPanel|"
-#| msgid "Drawing Tools"
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
-msgstr "Instrumento de Designar"
+msgstr "Rotas de Designar"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
@@ -6161,25 +6150,16 @@ msgid "Wheel and gear"
 msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:435
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Piano composition"
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
-msgstr "Composition de piano"
+msgstr "Grandor e Position de stilo"
 
 #: activities/drawing_wheels/DrawingWheels.qml:447
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font selector"
 msgctxt "DrawingWheels|"
 msgid "Color selector"
-msgstr "Selector de font"
+msgstr "Selector de color"
 
 #: activities/drawing_wheels/DrawingWheels.qml:474
-#, fuzzy
-#| msgctxt "OptionsRow|"
-#| msgid "Undo"
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Annulla"
@@ -6187,7 +6167,7 @@ msgstr "Annulla"
 #: activities/drawing_wheels/DrawingWheels.qml:486
 msgctxt "DrawingWheels|"
 msgid "Redo"
-msgstr ""
+msgstr "Reface"
 
 #: activities/drawing_wheels/DrawingWheels.qml:520
 msgctxt "DrawingWheels|"
@@ -6225,9 +6205,6 @@ msgid "Create a new image"
 msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:775
-#, fuzzy
-#| msgctxt "BackgroundColorSelector|"
-#| msgid "Background color"
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Color de fundo"
@@ -6235,7 +6212,7 @@ msgstr "Color de fundo"
 #: activities/drawing_wheels/DrawingWheels.qml:856
 msgctxt "DrawingWheels|"
 msgid "Wheel"
-msgstr ""
+msgstr "Rota"
 
 #: activities/drawing_wheels/DrawingWheels.qml:923
 msgctxt "DrawingWheels|"
@@ -6243,17 +6220,12 @@ msgid "Gear"
 msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:986
-#, fuzzy, qt-format
-#| msgctxt "SignalGenerator|"
-#| msgid "%1 s"
+#, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
-msgstr "%1 s"
+msgstr "%1 spikes"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1004
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Velocitate"
@@ -6261,25 +6233,19 @@ msgstr "Velocitate"
 #: activities/drawing_wheels/DrawingWheels.qml:1020
 msgctxt "DrawingWheels|"
 msgid "Slow"
-msgstr ""
+msgstr "Lente"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1040
 msgctxt "DrawingWheels|"
 msgid "Fast"
-msgstr ""
+msgstr "Rapide"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1083
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font size"
 msgctxt "DrawingWheels|"
 msgid "Pen size"
-msgstr "Dimension de font"
+msgstr "Grandor de penna"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1120
-#, fuzzy
-#| msgctxt "ToolsPanel|"
-#| msgid "Opacity"
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Opacitate"
@@ -6287,15 +6253,12 @@ msgstr "Opacitate"
 #: activities/drawing_wheels/DrawingWheels.qml:1163
 msgctxt "DrawingWheels|"
 msgid "Offset"
-msgstr ""
+msgstr "Displaciamento"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1201
-#, fuzzy
-#| msgctxt "IntroMessage|"
-#| msgid "Start"
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
-msgstr "Initia"
+msgstr "Initia dente"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1381
 msgctxt "DrawingWheels|"
@@ -6308,17 +6271,11 @@ msgid "Do you want to erase this image?"
 msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:1383
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Si"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1384
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "No"
@@ -13901,12 +13858,9 @@ msgstr ""
 
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Decimal numbers with a pie."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
-msgstr "Numeros decimal con un torta."
+msgstr "Numero decimal a trovar inter 0 e 4."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"
@@ -16436,12 +16390,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Vertical subtraction"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "Subtraction vertical."
+msgstr "Le cappelllo magico (subtraction)"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -18282,7 +18233,7 @@ msgstr "Logic"
 #: activities/menu/Menu.qml:117
 msgctxt "Menu|"
 msgid "Fine Arts"
-msgstr ""
+msgstr "Belle Artes"
 
 #: activities/menu/Menu.qml:118
 msgctxt "Menu|"
@@ -18928,12 +18879,9 @@ msgstr ""
 
 #. Activity title
 #: activities/multiple_choice_questions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication."
 msgctxt "ActivityInfo|"
 msgid "Multiple-choice questions"
-msgstr "Multiplication."
+msgstr "Demandas de Selection-multiple ."
 
 #. Help title
 #: activities/multiple_choice_questions/ActivityInfo.qml:18
@@ -18968,12 +18916,11 @@ msgid "Space: select or deselect the highlighted answer"
 msgstr ""
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
-msgstr "Enter: valida tu responsa quando le button de OK es visibile"
+msgstr ""
+"Enter: valida tu responsa , o claude le pannello de texto de responsa "
+"(feedback) "
 
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
@@ -22896,9 +22843,6 @@ msgid "Gradient Tools"
 msgstr ""
 
 #: activities/sketch/PaletteSelector.qml:148
-#, fuzzy
-#| msgctxt "ColorsPanel|"
-#| msgid "Palettes"
 msgctxt "PaletteSelector|"
 msgid "Palettes"
 msgstr "Palettas"
@@ -24233,7 +24177,7 @@ msgstr ""
 #: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Assessment"
-msgstr ""
+msgstr "Evalutation"
 
 #: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
@@ -26141,12 +26085,9 @@ msgid "No data found for %1."
 msgstr ""
 
 #: core/GCCreationHandler.qml:185
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "Saved successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr "Salveguardate con successo!"
+msgstr "File delite con successo!"
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -26212,7 +26153,7 @@ msgstr "Dele"
 #: core/GCCreationHandler.qml:429
 msgctxt "GCCreationHandler|"
 msgid "Open folder"
-msgstr ""
+msgstr "Aperi dossier"
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
@@ -26430,18 +26371,15 @@ msgstr "GCompris ha essite actualiste! Hic il ha le nove cambiamentos:<br/>"
 #, qt-format
 msgctxt "main|"
 msgid "Do you want to connect to server %1?"
-msgstr ""
+msgstr "Tu vole connecter a servitor %1?"
 
 #: core/main.qml:530
 #, qt-format
 msgctxt "main|"
 msgid "Password rejected by server %1"
-msgstr ""
+msgstr "Contrasigno refusate per servitor %1"
 
 #: core/main.qml:531 core/main.qml:550 core/main.qml:625
-#, fuzzy
-#| msgctxt "Balancebox|"
-#| msgid "OK"
 msgctxt "main|"
 msgid "OK"
 msgstr "OK"
@@ -26449,20 +26387,17 @@ msgstr "OK"
 #: core/main.qml:546
 msgctxt "main|"
 msgid "Select your username"
-msgstr ""
+msgstr "Selige tu nomine de usator"
 
 #: core/main.qml:556
 msgctxt "main|"
 msgid "Please select your username in the list or cancel."
-msgstr ""
+msgstr "Pro favor tu selige tu nomine de liosta o cancella."
 
 #: core/main.qml:623
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "main|"
 msgid "Enter your password"
-msgstr "Enter: valida tu responsa"
+msgstr "Entra tu contrasigno"
 
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"
