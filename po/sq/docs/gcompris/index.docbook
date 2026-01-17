@@ -9,7 +9,7 @@
 ><!-- replace kmyapplication here
                                             do *not* replace kappname-->
   <!ENTITY % addindex "IGNORE">
-  <!ENTITY % Albanian "INCLUDE"
+  <!ENTITY % English "INCLUDE"
 > <!-- ONLY If you are writing non-English
                                      original documentation, change
                                      the language here -->
@@ -21,7 +21,7 @@
 
 <bookinfo>
 <title
->Doracaku i Administrimit të &gcompris;</title>
+>Doracaku i Administrimit të &gcompris;-së</title>
 
 <authorgroup>
 <author>
@@ -51,11 +51,11 @@
 
 <othercredit role="translator"
 ><surname
->Besnik Bleta</surname
+>Ekipi ipërkthimit në shqip të&kde;-së</surname
 ><affiliation
 ><address
 ><email
->besnik@programeshqip.org</email
+>kde-i18n-sq@kde.org</email
 ></address
 ></affiliation
 ><contrib
@@ -72,13 +72,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->06.06.2023</date>
+>4.02.2026</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->3.3</releaseinfo>
+>26.0</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -110,7 +110,7 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; është një suitë e pasur programesh edukative, e cila përmban një gamë të gjerë veprimtarish.</para>
 <para
->Ofron veprimtari të larmishme të mbulojnë një sërë fushash. Në temat përfshihen lexim dhe shtypje në tastierë, aritmetikë, gjeografi, shkenca dhe tema të tjera. Është menduar të përdoret si në shtëpi, ashtu edhe në shkollë.</para>
+>Ofron veprimtari të larmishme që synohet të mbulojnë një sërë fushash. Në temat përfshihen lexim dhe shtypje në tastierë, aritmetikë, gjeografi, shkenca dhe tema të tjera. Është menduar të përdoret si në shtëpi, ashtu edhe në shkollë.</para>
 <para
 >Qëllimi i &gcompris;-së është të ofrojë veprimtari lojcake, por gjithmonë edukative.</para>
 <para
@@ -120,16 +120,16 @@ for example 'xx.yy.zz'
 >licencën GPLv3</ulink
 >.</para>
 <para
->&gcompris; is available on the following operating systems: &GNU;/&Linux;, &BSD;, MacOSX, &Windows;, Android. It requires a 3D card with support of <emphasis
+>&gcompris;-ja mund të kihet për sistemet vijuese operative: &GNU;/&Linux;, &BSD;, MacOSX, &Windows;, Android. Lyp një kartë grafike 3D me mbulim të <emphasis
 >OpenGL 2.1</emphasis
-> or higher. 32 bits color depth mandatory.</para>
+>, ose më sipër. Thellësi ngjyre 32 bite e detyrueshme.</para>
 </sect1>
 
 <sect1 id="installation">
 <title
 >Instalim</title>
 <para
->Software-i jepet në disa forma. Ndiqni procesin, sipas rastit tuaj. </para>
+>Software-i jepet në disa forma. Ndiqni procesin, sipas rastit tuaj.</para>
 <itemizedlist>
 <listitem
 ><para
@@ -145,7 +145,7 @@ for example 'xx.yy.zz'
 ></listitem>
 <listitem
 ><para
->Android: shpërndarë përmes shitore F-Droid, ose Google Play Store. Mund të kihet edhe si kartelë apk.</para
+>Android: shpërndarë përmes shitores F-Droid, ose Google Play Store. Mund të kihet edhe si kartelë apk.</para
 ></listitem>
 </itemizedlist>
 </sect1>
@@ -163,7 +163,7 @@ for example 'xx.yy.zz'
 >Kur nisni programin, &gcompris;-ja shfaq një ndërfaqe grafike e cila paraqet listën e veprimtarive, me një panel kontrollesh poshtë në fund.</para>
 <screenshot>
 <screeninfo
->Ja një foto ekrani e Dritares Kryesore të &gcompris;-së</screeninfo>
+>Ja një foto ekrani e dritares kryesore të &gcompris;-së</screeninfo>
   <mediaobject>
     <imageobject>
       <imagedata fileref="gcompris-main-menu.png" format="PNG"/>
@@ -176,7 +176,7 @@ for example 'xx.yy.zz'
 </screenshot>
 
 <para
->Çdo ikonë përfaqëson një veprimtari. Përreth secilës do të gjeni ikona të vogla të cilat japin informacion shtesë mbi veprimtarinë. Një klikim i thjeshtë mbi ikonën do t’ju shpjerë te një veprimtari, ose te një menu veprimtarish. Ka 8 ndarje (kategori) veprimtarish, të cilat vendosen në krye, ose majtas (vetëm nëse orientimi juaj i ekranit është portret). Për shembull, ka një ndarje “Lojëra me fushë”, e cila përfshin lojëra që duan një fushë, b.f., shah, tik-tak, ose katërsh.</para>
+>Secila ikonë përfaqëson një veprimtari. Përreth secilës do të gjeni ikona të vogla, të cilat japin informacion shtesë mbi veprimtarinë. Një klikim i thjeshtë mbi ikonën do t’ju shpjerë te një veprimtari, ose te një menu veprimtarish. Ka 8 ndarje (kategori) veprimtarish, të cilat vendosen në krye, ose majtas (vetëm nëse orientimi juaj i ekranit është portret). Për shembull, ka një ndarje “Lojëra Me Fushë”, e cila përfshin lojëra që duan një fushë, b.f., Shah, Tik-Tak-To, ose Katërsh.</para>
 <para
 >Disa kategori përmbajnë nënkategori, për të filtruar më mirë veprimtaritë. Për veprimtari matematikore, kemi tre nënkategori: numërim, aritmetikë dhe matje.</para>
 <para
@@ -187,7 +187,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="difficulty1.svg" format="SVG"/></imageobject
+><imagedata fileref="difficulty1.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
 ></inlinemediaobject
 >1, 2 ose 3 yje të verdhë - për 2 deri 6 vjeç.</para
 ></listitem
@@ -196,7 +196,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="difficulty4.svg" format="SVG"/></imageobject
+><imagedata fileref="difficulty4.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
 ></inlinemediaobject
 >1, 2 ose 3 yje të kuq - më të mëdhenj se 6 vjeç.</para
 ></listitem
@@ -210,25 +210,25 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_home.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_home.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> Shtëpi - Braktiset veprimtaria e çastit, kthehet te menuja e mëparshme.</para
+> Shtëpi - Braktiset veprimtaria e çastit, bëhet kthim te menuja e mëparshme.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_ok.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> “OK” - Shihni vlefshmërinë e përgjigjes tuaj, ripohojeni atë. Disa veprimtari nuk e pikasin automatikisht nëse fëmija e ka plotësuar apo jo një hap. Në rast të tilla, duhet të klikoni mbi këtë ikonë. Mundeni edhe të përdorni tastin &Enter; në tastierën tuaj.</para
+> “OK” - Shihni vlefshmërinë e përgjigjes tuaj, ripohojeni atë. Disa veprimtari s’pikasin automatikisht nëse fëmija e ka plotësuar apo jo një hap. Në raste të tilla, duhet të klikoni mbi këtë ikonë. Mundeni edhe të përdorni tastin &Enter; në tastierën tuaj.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_hint.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Dritë - Shfaqni një ndihmëz për veprimtarinë. Mund të ndihmoni fëmijët në disa veprimtari, për t’i drejtuar të gjejnë përgjigjet.</para
 ></listitem>
@@ -236,11 +236,11 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_previous.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_previous.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject>
 <inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_next.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_next.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Shigjeta - Shfaqet niveli i tanishëm. Klikoni mbi një nga shigjetat për të përzgjedhur një shkallë tjetër. Në përgjithësi, veprimtaritë ofrojnë disa nivele, numri i të cilave varet nga veprimtaria. Në &gcompris;, është e mundur të kalohet në nivelin pasues pa qenë plotësuar niveli i çastit.</para
 ></listitem
@@ -249,16 +249,16 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_repeat.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_repeat.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> Buzët - Kërkojini &gcompris;-së të përsëritë pyetjen.</para
+> Buzë - Kërkojini &gcompris;-së të përsëritë pyetjen.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_help.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_help.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Pikëpyetje - Shfaqni kuadratin e dialogut të ndihmës. Ndonjëherë, një veprimtari mund të jetë shumë e ndërlikuar për t’u përshkruar thjeshtë te fusha e përshkrimit. Në këtë rast, ky funksion jep mundësi për informacion shtesë.</para
 ></listitem
@@ -267,7 +267,7 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > Panel - Menu formësimesh. Formësimi ruhet te depoja (dosja) e përdoruesit, nën emrin <filename
 >.config/gcompris/gcompris-qt.conf</filename
@@ -278,15 +278,15 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_activity_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> Zë liste - Shfaqni menunë e rregullimeve për veprimtarinë. Këtu ka dy skeda të mundshme. Njëra, “Grup të dhënash”, lejon të zgjidhen nivelet e veprimtarive, në varësi të disa objektivave dhe, e dyta, “Mundësi” lejon të përditësohet formësimi i veprimtarisë, kur mundet. </para
+> Zë liste - Shfaqni menunë e rregullimeve për veprimtarinë. Këtu ka dy skeda të mundshme. Njëra, “Grup të dhënash”, lejon të zgjidhen nivelet e veprimtarive, në varësi të disa objektivave dhe, e dyta, “Mundësi”, lejon të përditësohet formësimi i veprimtarisë, kur mundet.</para
 ></listitem>
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_about.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_about.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
 > “G” e madhe -Kuadrat informacionesh mbi &gcompris;, paraqet kontribuesit kryesorë dhe versionin e software-it.</para
 ></listitem
@@ -295,9 +295,9 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_exit.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> Ndezje - Mbyllni &gcompris;-në. Mundeni edhe të përdorni te tastiera juaj shkurtoren <keycombo action="simul"
+> Ndezje/Fikje - Mbyllni &gcompris;-në. Mundeni edhe të përdorni te tastiera juaj shkurtoren <keycombo action="simul"
 >&Ctrl;<keycap
 >Q</keycap
 ></keycombo
@@ -401,7 +401,7 @@ for example 'xx.yy.zz'
 ></keycombo
 ></entry>
 <entry
->Kalo në/dil nga mënyra “sa krejt ekrani”.</entry>
+>Kaloni në/dilni nga mënyra “sa krejt ekrani”.</entry>
 </row>
 <row>
 <entry
@@ -421,7 +421,7 @@ for example 'xx.yy.zz'
 ></keycombo
 ></entry>
 <entry
->Shfaqni ose Fshihni shtyllën e kontrollit.</entry>
+>Shfaqni ose fshihni shtyllën e kontrollit.</entry>
 </row>
 </tbody>
 </tgroup>
@@ -434,9 +434,9 @@ for example 'xx.yy.zz'
 <title
 >Shënime mbi Ndërkombëtarizime</title>
 <para
->&gcompris;-ja është e ndërkombëtarizuar dhe gati në më tepër se 35 gjuhë. Nëse doni të shihni a është gati në gjuhën tuaj, mund të nisni &gcompris;-në dhe të përzgjidhni gjuhën tuaj te mundësia e formësimit.</para>
+>&gcompris;-ja është e ndërkombëtarizuar dhe e gatshme në më tepër se 35 gjuhë. Nëse doni të shihni a është gati në gjuhën tuaj, mund të nisni &gcompris;-në dhe të përzgjidhni gjuhën tuaj te mundësia e formësimit.</para>
 <para
->Kini kujdes, disa gjuhëve u duhen shkronja të caktuara, për t’u shfaqur saktë. </para
+>Kini kujdes, disa gjuhëve u duhen shkronja të caktuara, për t’u shfaqur saktë.</para
 > 
 <para
 >Nëse gjuha juaj nuk mbulohet, mund të jepni ndihmesë te software-i dhe të shtoni përkthimin në gjuhën tuaj. Nëse interesoheni, mund të lidheni me <ulink url="https://l10n.kde.org/teams"
@@ -576,7 +576,7 @@ for example 'xx.yy.zz'
 <entry
 >--enable-kioskmode</entry>
 <entry
->Aktivizoni mënyrën kioskë (fsheh butonat Mbylle dhe Formësim).</entry>
+>Aktivizoni mënyrën kioskë (fsheh butonat “Mbylle” dhe “Formësim”).</entry>
 </row>
 <row>
 <entry
@@ -586,15 +586,40 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>--show-home-button</entry>
+<entry
+>Shfaqe butonin Shtëpia, te shtylla (parazgjedhje).</entry>
+</row>
+<row>
+<entry
+>--hide-home-button</entry>
+<entry
+>Fshihe butoni Shtëpia, te shtylla.</entry>
+</row>
+<row>
+<entry
+>--renderer={renderer}</entry>
+<entry
+>Përcaktoni cili vizatues grafik të përdoret. Për krejt platformat janë të gatshëm ai “opengl” dhe ai “software”. Në Windows, mund të përdorni direct3d11 ose direct3d12 (nëse qe montuar me Qt
+>=6.6). Në MacOS, mund të përdorni metal.</entry>
+</row>
+<row>
+<entry
 >--software-renderer</entry>
 <entry
->Përdor vizatues të software-it, në vend se openGL (duhet të punojë me çfarëdo karte grafike).</entry>
+>Përdor vizatues “software”, në vend se openGL (duhet të punojë me çfarëdo karte grafike). Nxjerrë nga përdorimi, në vend të kësaj përdorni --renderer=software.</entry>
 </row>
 <row>
 <entry
 >--opengl-renderer</entry>
 <entry
->Përdor vizatues openGL, në vend se atë “software” (më i shpejtë dhe më tepër efekte grafike, por me disa karta grafike mund të vithiset).</entry>
+>Përdor vizatues openGL, në vend se të software-it (më i shpejtë dhe më tepër efekte grafike, por me disa karta grafike mund të vithiset). Nxjerrë nga përdorimi, në vend të kësaj përdorni --renderer=opengl.</entry>
+</row>
+<row>
+<entry
+>--locale=vendore</entry>
+<entry
+>Xhirojeni &gcompris;-në me tinguj të aktivizuar.</entry>
 </row>
 </tbody>
 </tgroup>
@@ -617,7 +642,7 @@ for example 'xx.yy.zz'
 <title
 >Shembull për &GNU;/&Linux;</title>
 <para
->Krijoni një nisës aplikacioni dhe formësoni parametrat e rreshtit të urdhrave. Ja një shembull në të cilin &gcompris;-ja xhirohet nën mënyrën kioskë dhe sa krejt ekrani, pa buton Formësimi dhe kursor:</para
+>Krijoni një nisës aplikacioni dhe formësoni parametrat e rreshtit të urdhrave. Ja një shembull, në të cilin &gcompris;-ja xhirohet nën mënyrën kioskë dhe sa krejt ekrani, pa buton Formësimi dhe kursor:</para
 > 
 <para
 ><userinput
@@ -638,11 +663,11 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; </para>
 <para
->Të drejta kopjimi programi 2000-2023 Timothée Giet dhe të tjerë </para>
+>Të drejta kopjimi programi 2000-2025 Timothée Giet dhe të tjerë </para>
 
 <para
->Besniq Bleta<email
->besnik@programeshqip.org</email
+>Përkthimi në shqip : ekipi i përkthimit në shqip tëKDE-së<email
+>kde-i18n-sq@kde.org</email
 ></para
 > &underFDL; &underGPL; </chapter>
 
