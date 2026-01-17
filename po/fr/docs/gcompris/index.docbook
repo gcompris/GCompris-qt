@@ -72,7 +72,7 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->2026-02-04</date>
+>04-02-2026</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
@@ -600,20 +600,19 @@ for example 'xx.yy.zz'
 <entry
 >--renderer={renderer}</entry>
 <entry
->Spécifie le moteur de rendu graphique à utiliser. Sur toutes les plateformes, opengl et le rendu logiciel sont disponibles. Sous Windows, vous pouvez utiliser direct3d11 ou direct3d12 (si GCompris a été compilé avec Qt
->=6.6). Sur &macOS;, vous pouvez utiliser metal.</entry>
+>Spécifie le moteur de rendu graphique à utiliser. Sur toutes les plate-formes, « OpenGL » et le rendu logiciel sont disponibles. Sous Windows, vous pouvez utiliser « direct3d11 » ou « direct3d12 » (Si GCompris a été compilé avec une version de Q au moins 6.6). Sur &macOS;, vous pouvez utiliser « Metal ».</entry>
 </row>
 <row>
 <entry
 >--software-renderer</entry>
 <entry
->Utilise le mode de rendu logiciel à la place du mode OpenGL (cela devrait fonctionner avec n'importe quelle carte graphique). Utiliser --renderer=software de préférence, cette option sera supprimée.</entry>
+>Utilise le mode de rendu logiciel à la place du mode OpenGL (Cela devrait fonctionner avec n'importe quelle carte graphique). Déconseillé. Veuillez utiliser « --renderer=software » à la place.</entry>
 </row>
 <row>
 <entry
 >--opengl-renderer</entry>
 <entry
->Utilise le mode de rendu avec OpenGL à la place du mode de rendu logiciel (plus rapide et avec des effets graphiques mais peut ne pas fonctionner sur certaines cartes graphiques). Utiliser --renderer=opengl de préférence, cette option sera supprimée.</entry>
+>Utilise le mode de rendu avec OpenGL à la place du mode de rendu logiciel (Plus rapide et avec des effets graphiques mais peut ne pas fonctionner sur certaines cartes graphiques). Déconseillé. Veuillez utiliser « --renderer=opengl » à la place.</entry>
 </row>
 <row>
 <entry
@@ -663,10 +662,10 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; </para>
 <para
->Licence du programme pour 2000 - 2025 : Timothée Giet et autres </para>
+>Licence du programme pour 2000 - 2025 par Timothée Giet et autres personnes </para>
 
 <para
->Traduction française : l'équipe de traduction francophone de KDE <email
+>Traduction française par l'équipe de traduction francophone de KDE <email
 >kde-francophone@kde.org</email
 ></para
 > &underFDL; &underGPL; </chapter>

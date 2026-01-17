@@ -1,0 +1,689 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       Git -->
+  <!ENTITY gcompris "<application
+>GCompris</application
+>">
+  <!ENTITY kappname "&gcompris;"
+><!-- replace kmyapplication here
+                                            do *not* replace kappname-->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Lithuanian "INCLUDE"
+> <!-- ONLY If you are writing non-English
+                                     original documentation, change
+                                     the language here -->
+
+  <!-- Do not define any other entities; instead, use the entities
+       from entities/general.entities and en/user.entities. -->
+]>
+<book id="gcompris" lang="&language;">
+
+<bookinfo>
+<title
+>&gcompris; administravimo vadovas</title>
+
+<authorgroup>
+<author>
+<personname
+><firstname
+>Johnny</firstname
+> <surname
+>Jazeix</surname
+> </personname>
+</author>
+<author>
+<personname
+><firstname
+>Timothée</firstname
+> <surname
+>Giet</surname
+> </personname>
+</author>
+
+<othercredit role="developer">
+<othername
+>&gcompris; komanda</othername>
+<contrib
+>Kūrėjai</contrib>
+</othercredit
+> 
+
+<othercredit role="translator"
+><firstname
+>Rolandas</firstname
+> <surname
+>Jakštys</surname
+><affiliation
+><address
+><email
+>rolandas@jakstys.lt</email
+></address
+></affiliation
+><contrib
+>Vertėjas</contrib
+></othercredit
+> 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Date of the documentation
+Don't forget to include this last date.
+Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
+-->
+<date
+>2026 vasario 4 d.</date>
+
+<!--version information of the application and kde this documentation is valid for.
+for example 'xx.yy.zz'
+-->
+<releaseinfo
+>26.0</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>&gcompris; yra daugelio pamokėlių edukacinė programinė įranga. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>švietimas</keyword>
+<keyword
+>mokiniai</keyword>
+<keyword
+>pamokėlės (žaidimai)</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="administration-handbook">
+<title
+>Administravimo vadovas</title>
+
+<sect1 id="introduction">
+<title
+>Įvadas</title>
+<para
+>&gcompris; – tai turtinga edukacinė programų sistema, su daugybe pamokėlių.</para>
+<para
+>&gcompris; siūlo pamokėles įvairioms sritims: skaitymui, rašymui, aritmetikai, geografijai, gamtos mokslams ir kitoms. Galima naudoti namuose ar mokykloje.</para>
+<para
+>„&gcompris;“ tikslas – teikti žaismingas, bet visada edukacines veiklas, vadinsime jas pamokėlėmis.</para>
+<para
+>&gcompris; yra &kde; projekto dalis ir platinamas pagal <ulink url="https://www.gnu.org/licenses/agpl-3.0.html"
+>AGPLv3 licenciją</ulink
+>. Visa &gcompris; programa, išskyrus pamokėlę apie analoginę elektrą, platinama pagal <ulink url="https://www.gnu.org/licenses/gpl.html"
+>GPLv3 licenciją</ulink
+>.</para>
+<para
+>&gcompris; veikia šiose operacinėse sistemose: &GNU;/&Linux;, &BSD;, &macOS;, &Windows;, Android. Reikalinga 3D vaizdo plokštė su <emphasis
+>OpenGL 2.1</emphasis
+> arba naujesne versija. Privalomas 32 bitų spalvų gylis.</para>
+</sect1>
+
+<sect1 id="installation">
+<title
+>Diegimas</title>
+<para
+>Programinė įranga platinama keliais būdais. Pasirinkite jums tinkamiausią.</para>
+<itemizedlist>
+<listitem
+><para
+>&GNU;/&Linux; – naudokite paketus, pateikiamus jūsų &GNU;/&Linux; distribucijoje. Jei &gcompris; nėra įtrauktas į jūsų &Linux; distribuciją, susisiekite su jos kūrėjais ir paprašykite įtraukti &gcompris;.</para
+></listitem>
+<listitem
+><para
+>&Windows;: platinama naudojant klasikinę „Windows“ diegimo programą arba per Microsoft Store.</para
+></listitem>
+<listitem
+><para
+>„&macOS;: platinama su klasikiniu diegimo failu.</para
+></listitem>
+<listitem
+><para
+>Android: platinama per F‑Droid arba Google Play parduotuvę. Taip pat galima atsisiųsti APK failą.</para
+></listitem>
+</itemizedlist>
+</sect1>
+
+<sect1 id="user-interface">
+<title
+>Vartotojo sąsaja</title>
+<para
+>Sąsaja sukurta taip, kad ja naudotis būtų lengva ir mažiems vaikams.  &gcompris; valdomas pele. Daugumoje pamokėlių taip pat galima naršyti klaviatūra.</para>
+
+<sect2 id="main-window">
+<title
+>Pagrindinis langas</title>
+<para
+>Paleidus programą, „&gcompris;“ rodo grafinę sąsają, kurioje pateikiamas pamokėlių sąrašas su valdymo juosta apačioje.</para>
+<screenshot>
+<screeninfo
+>Čia &gcompris; pagrindinio lango ekrano kopija</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="gcompris-main-menu.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>&gcompris; pagrindinis langas</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+
+<para
+>Kiekviena piktograma žymi pamokėlę. Kiekvienoje piktogramoje matysite mažas piktogramas, kurios suteikia papildomos informacijos apie pamokėlę. Spustelėjimas ant piktogramos nukreips jus į pamokėlę arba pamokėlių meniu. Yra 8 pamokėlių skyriai (kategorijos), kurie yra viršuje (arba kairėje, jei jūsų ekrano orientacija yra vertikali). Pavyzdžiui, yra skyrius „Stalo žaidimai“, kuriame yra stalo žaidimai, tokie kaip šachmatai, kryžiukai-nuliukai arba „Keturi eilėje“.</para>
+<para
+>Kai kurios kategorijos turi subkategorijas, kad būtų galima geriau filtruoti pamokėles. Matematikos pamokėlėms turime tris subkategorijas: skaičiavimas iš eilės, aritmetika ir matavimo priemonės.</para>
+<para
+>Žvaigždutės nurodo amžiaus grupę, kuriai skirta kiekviena pamokėlė:</para
+> 
+<itemizedlist>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="difficulty1.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
+></inlinemediaobject
+>1, 2 arba 3 geltonos žvaigždutės –3–6 metų vaikams.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="difficulty4.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
+></inlinemediaobject
+>1, 2 arba 3 raudonos žvaigždutės – vyresniems nei 6 metų vaikams.</para
+></listitem
+> 
+</itemizedlist>
+
+<para
+>Ekrano apačioje – &gcompris; valdymo juosta. Piktogramos (rodomos tik jei jos yra pamokėlėje):</para>
+<itemizedlist>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_home.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Namukas — grįžti į ankstesnį meniu iš dabartinės pamokėlės.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_ok.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> „OK“ – Patvirtinti savo atsakymą. Kai kurios veiklos automatiškai neaptinka, ar mokinys atliko užduotį. Tokiu atveju turite spustelėti šią piktogramą. Taip pat galite naudoti klaviatūros klavišą „&Enter;“.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_hint.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Lemputė – rodyti užuominą. Padeda vaikams įveikti užduotis kai kuriose pamokėlėse.</para
+></listitem>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_previous.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject>
+<inlinemediaobject
+><imageobject
+><imagedata fileref="bar_next.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Rodyklės – rodomas dabartinis lygis. Spustelėkite rodyklę, kad pereitumėte į kitą lygį. Pamokėlės gali turėti kelis lygius. Dabartinio lygio baigti nebūtina, kad pereitumėte į kitą.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_repeat.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Lūpos – paprašyti, kad &gcompris; pakartotų klausimą.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_help.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Klaustukas – rodyti pagalbos langą. Kartais pamokėlė gali būti per sudėtinga, kad ją būtų galima lengvai aprašyti aprašymo lauke. Tokiu atveju ši funkcija suteikia papildomos informacijos.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Įrankis — konfigūracijos meniu. Konfigūracija išsaugoma vartotojo kataloge pavadinimu <filename
+>.config/gcompris/gcompris-qt.conf</filename
+>. Tai tekstinis failas, kurį galima redaguoti rankiniu būdu.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_activity_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Sąrašo elementas – rodyti pamokėlės nustatymų meniu. Skiltyje „Duomenų rinkinys“ galite pasirinkti lygius pagal tikslus, o skiltyje „Nustatymai“ – atnaujinti pamokėlės nustatymus, jei tai įmanoma.</para
+></listitem>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_about.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Didžioji „G“ – langas su informacija apie &gcompris;, pagrindiniai kūrėjai ir versija.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_exit.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Mygtukas „Maitinimas“ – uždaryti &gcompris;. Galima naudoti klaviatūros kombinaciją <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+>.</para
+></listitem
+> 
+</itemizedlist>
+</sect2>
+
+<sect2 id="kiosk-mode">
+<title
+>Kiosko režimas</title>
+<para
+>Kai žaidžiate &gcompris; su mažais vaikais, galite išjungti kai kurias parinktis:</para>
+<itemizedlist>
+<listitem
+><para
+><userinput
+><command
+>gcompris --enable-kioskmode</command
+></userinput
+>: neaktyvūs <guiicon
+>Uždaryti</guiicon
+> ir <guiicon
+>Nustatymai</guiicon
+> mygtukai.</para
+></listitem
+> 
+<listitem
+><para
+><userinput
+><command
+>gcompris --disable-kioskmode</command
+></userinput
+>: aktyvūs <guiicon
+>Uždaryti</guiicon
+> ir <guiicon
+>Nustatymai</guiicon
+> mygtukus.</para
+></listitem>
+<listitem
+><para
+><userinput
+><command
+>gcompris -f</command
+></userinput
+>: paleidžia &gcompris; viso ekrano režimu.</para
+></listitem
+> 
+<listitem
+><para
+><userinput
+><command
+>gcompris -C</command
+></userinput
+>: išjungia žymeklį (liečiamo ekrano režimas).</para
+></listitem
+> 
+</itemizedlist>
+<para
+>Šias parinktis, žinoma, galima derinti.</para>
+</sect2>
+
+<sect2 id="keyboard-shortcuts">
+<title
+>Spartieji klavišai</title>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>Spartusis klavišas</entry>
+<entry
+>Veiksmas</entry>
+</row>
+<row>
+<entry
+>&Esc; arba <keycombo action="simul"
+>&Ctrl;<keycap
+>W</keycap
+></keycombo
+></entry>
+<entry
+>Baigti dabartinę pamokėlę ar dialogą ir grįžti į pagrindinį meniu.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></entry>
+<entry
+>Išeiti iš „&gcompris;“ be papildomo įspėjimo.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>F</keycap
+></keycombo
+></entry>
+<entry
+>Įjungti / išjungti viso ekrano režimą.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>M</keycap
+></keycombo
+></entry>
+<entry
+>Nutildyti / įjungti garsą.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>B</keycap
+></keycombo
+></entry>
+<entry
+>Rodyti arba slėpti valdymo juostą.</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</sect2>
+
+</sect1>
+
+<sect1 id="internationalization">
+<title
+>Pastabos apie tarptautiškumą</title>
+<para
+>&gcompris; yra lokalizuotas ir prieinamas daugiau nei 35 kalbomis. Jei norite patikrinti, ar jūsų kalba yra, paleiskite &gcompris; ir ieškokite savo kalbos nustatymuose.</para>
+<para
+>Būkite atsargūs – kai kurioms kalboms, kad jos būtų rodomos teisingai, reikia specialių šriftų.</para
+> 
+<para
+>Jei jūsų kalba nepalaikoma, galite prisidėti prie programinės įrangos kūrimo ir paruošti vertimą į savo kalbą. Jeigu susidomėjote, susisiekite su &kde; projekto <ulink url="https://l10n.kde.org/teams"
+>vertimų komanda</ulink
+> jūsų kalbai. Galite patikrinti savo kalbos vertimo lygį <ulink url="https://l10n.kde.org/"
+>&kde; vertimų svetainėje</ulink
+>.</para>
+</sect1>
+
+<sect1 id="learning-language">
+<title
+>Kalbų mokymasis</title>
+<para
+>Žaiskite &gcompris; užsienio kalba, kurios mokotės. Konfigūracijos meniu pasirinkite kalbą. Nepamirškite atsisiųsti šiai kalbai skirtų papildomų garso modulių.</para>
+</sect1>
+
+<sect1 id="customizing-activities">
+<title
+>Pamokėlių pritaikymas</title>
+<para
+>Kai kurias pamokėles galite koreguoti naudodami jose esantį nustatymų mygtuką. Pavyzdžiui, galite nustatyti lokalę kai kuriose tekstinėse veiklose (pvz., žodžių žaidime) arba nustatyti, kad būtų rodomi tikri automobilių vaizdai, o ne užpildyti stačiakampiai (eismas).</para>
+
+<para
+>Kai kurioms pamokėlėms konfigūracijoje galite pasirinkti duomenų rinkinius, kuriuos naudosite. Kiekvienas rinkinys aprašytas.</para>
+<screenshot>
+<screeninfo
+>Pamokėlės „Suskaičiuok elementus“ duomenų rinkinys</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="dataset.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Pamokėlės „Suskaičiuok elementus“ duomenų rinkinys</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+
+<para
+>Šiai pamokėlei galite pasirinkti parinktis.</para>
+<screenshot>
+<screeninfo
+>Pasirinkti pamokėlės „Suskaičiuok elementus“ režimą</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="activity-config.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Pasirinkti pamokėlės „Suskaičiuok elementus“ režimą</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</sect1>
+
+<sect1 id="console-switches">
+<title
+>Konsolės parametrai</title>
+<para
+>Paleidus &gcompris; iš komandinės eilutės su parinktimi „--help“, bus parodyti visi galimi parametrai:</para>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>-f, --fullscreen</entry>
+<entry
+>Paleisti &gcompris; viso ekrano režimu.</entry>
+</row>
+<row>
+<entry
+>-w, --window</entry>
+<entry
+>Paleisti &gcompris; lange.</entry>
+</row>
+<row>
+<entry
+>-s, --sound</entry>
+<entry
+>Paleisti &gcompris; su garsu.</entry>
+</row>
+<row>
+<entry
+>-m, --mute</entry>
+<entry
+>Paleisti &gcompris; be garso.</entry>
+</row>
+<row>
+<entry
+>-c, --cursor</entry>
+<entry
+>Paleisti &gcompris; su numatytuoju sistemos žymekliu.</entry>
+</row>
+<row>
+<entry
+>-C, --nocursor</entry>
+<entry
+>Paleisti &gcompris; be žymeklio (lietimui skirto ekrano režimu)</entry>
+</row>
+<row>
+<entry
+>-v, --version</entry>
+<entry
+>Atspausdinti &gcompris; versiją;.</entry>
+</row>
+<row>
+<entry
+>-l, --list-activities</entry>
+<entry
+>Išvesti visų pamokėlių ID į standartinę išvestį.</entry>
+</row>
+<row>
+<entry
+>--launch pamokėlėsID</entry>
+<entry
+>Paleisti &gcompris; tik su nurodyta pamokėle.</entry>
+</row>
+<row>
+<entry
+>--start-level lygis</entry>
+<entry
+>Nurodyti lygį, nuo kurio paleisti pamokėlę, nurodytą parinktimi „--launch“, paleidžiant &gcompris;. Jei parinktis „--launch“ nenaudojama arba nurodytas lygis yra neteisingas, ši parinktis ignoruojama.</entry>
+</row>
+<row>
+<entry
+>--difficulty {reikšmė|min-max}</entry>
+<entry
+>Sesijos metu rodomos tik &gcompris; pamokėlės su nustatytu lygiu: arba konkretus, arba intervalas nuo min iki max reikšmės. Reikšmės turi būti tarp 1 ir 6; jei naudojamas intervalas (min–max), minimali reikšmė turi būti mažesnė už maksimalią. Jei to nesilaikoma, &gcompris; nebus paleistas.</entry>
+</row>
+<row>
+<entry
+>--export-activities-as-sql</entry>
+<entry
+>Eksportuoti pamokėles į SQL.</entry>
+</row>
+<row>
+<entry
+>--enable-kioskmode</entry>
+<entry
+>Įjungti kiosko režimą (paslepiami mygtukai „Baigti“, „Įrankiai“ ir „Pamokėlės nustatymai“).</entry>
+</row>
+<row>
+<entry
+>--disable-kioskmode</entry>
+<entry
+>Išjungti kiosko režimą (numatytasis).</entry>
+</row>
+<row>
+<entry
+>--show-home-button</entry>
+<entry
+>Rodyti namuko mygtuką įrankių juostoje (numatytasis).</entry>
+</row>
+<row>
+<entry
+>--hide-home-button</entry>
+<entry
+>Paslėpti namuko mygtuką įrankių juostoje.</entry>
+</row>
+<row>
+<entry
+>--renderer={renderer}</entry>
+<entry
+>Nurodykite, kurį grafinį atvaizdavimo įrankį naudoti. Visose platformose galima naudoti „opengl“ ir programinę įrangą. „Windows“ sistemoje galite naudoti „direct3d11“ arba „direct3d12“ (jei jis buvo kompiliuotas naudojant Qt ≥ 6.6). „&macOS;“ sistemoje galite naudoti „metal“.</entry>
+</row>
+<row>
+<entry
+>--software-renderer</entry>
+<entry
+>Naudoti programinį atvaizdavimo įrankį vietoj OpenGL (turėtų veikti su bet kuria grafine kortele). Nebepalaikoma, vietoj to naudoti „--renderer=software“.</entry>
+</row>
+<row>
+<entry
+>--opengl-renderer</entry>
+<entry
+>Naudoti OpenGL vietoje programinio (greičiau ir daugiau grafinių efektų, bet gali pakibti su kai kuriomis grafikos plokštėmis). Nebenaudojama, naudokite „--renderer=opengl“.</entry>
+</row>
+<row>
+<entry
+>--locale=lokalė</entry>
+<entry
+>Paleisti &gcompris; su nurodyta lokale.</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+
+<sect2 id="windows-example">
+<title
+>&Windows; Pavyzdys</title>
+<para
+>Šias parinktis galite pridėti darbalaukio piktogramos savybėse. Čia pateiktas pavyzdys, kuris paleidžia &gcompris; kiosko režimu, visame ekrane, be konfigūracijos mygtuko ir be pelės žymeklio:</para>
+<para
+><userinput
+><command
+>"C:\Program Files\GCompris-Qt\bin\GCompris.exe" --enable-kioskmode -f -C</command
+></userinput
+></para>
+</sect2>
+
+<sect2 id="gnu-linux-example">
+<title
+>&GNU;/&Linux; Pavyzdys</title>
+<para
+>Sukurkite programos paleidimo priemonę ir sukonfigūruokite komandinės eilutės parametrus. Pateikiame pavyzdį, kuriame „&gcompris;“ paleidžiamas kiosk režimu visame ekrane be konfigūravimo mygtuko ir žymeklio:</para
+> 
+<para
+><userinput
+><command
+>gcompris-qt --enable-kioskmode -f -C</command
+></userinput
+></para>
+</sect2>
+
+</sect1>
+
+</chapter>
+<chapter id="credits">
+
+<title
+>Autoriai ir licencija</title>
+
+<para
+>&gcompris; </para>
+<para
+>Programos autorių teisės © 2000–2025 Timothée Giet ir kiti </para>
+
+<para
+>Vertimas GCompris-teachers : Rolandas Jakštys<email
+>rolandas@jakstys.lt</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->
