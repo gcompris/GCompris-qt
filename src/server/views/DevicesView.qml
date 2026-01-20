@@ -169,6 +169,7 @@ Item {
                     width: networkColumn.bigButtonWidth
                     height: networkColumn.bigButtonHeight
                     text: qsTr("Send login list")
+                    enabled: pupilPane.currentChecked != -1
 
                     onClicked: {
                         var usersList = [];         // selected users
@@ -183,8 +184,6 @@ Item {
                         }
                         if (usersList.length > 0)
                             networkController.sendLoginList(usersList);
-                        else
-                            networkController.sendLoginList(usersAll);
                     }
                 }
 
@@ -194,6 +193,7 @@ Item {
                     width: networkColumn.bigButtonWidth
                     height: networkColumn.bigButtonHeight
                     text: qsTr("Disconnect selected pupils")
+                    enabled: pupilPane.currentChecked != -1
 
                     onClicked: {
                         var usersList = [];
