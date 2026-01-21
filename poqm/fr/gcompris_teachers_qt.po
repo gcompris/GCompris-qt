@@ -2024,7 +2024,7 @@ msgctxt "DevicesView|"
 msgid "Send login list"
 msgstr "Envoyer la liste des élèves"
 
-#: server/views/DevicesView.qml:196
+#: server/views/DevicesView.qml:195
 msgctxt "DevicesView|"
 msgid "Disconnect selected pupils"
 msgstr "Déconnecter les élèves sélectionnés"

@@ -1995,7 +1995,7 @@ msgctxt "DevicesView|"
 msgid "Send login list"
 msgstr "Lijst met aanmeldingen verzenden"
 
-#: server/views/DevicesView.qml:196
+#: server/views/DevicesView.qml:195
 msgctxt "DevicesView|"
 msgid "Disconnect selected pupils"
 msgstr "Van geselecteerde leerlingen verbinding verbreken"

@@ -2035,7 +2035,7 @@ msgctxt "DevicesView|"
 msgid "Send login list"
 msgstr "Αποστολή λίστας σύνδεσης"
 
-#: server/views/DevicesView.qml:196
+#: server/views/DevicesView.qml:195
 msgctxt "DevicesView|"
 msgid "Disconnect selected pupils"
 msgstr "Αποσύνδεση επιλεγμένων μαθητών"

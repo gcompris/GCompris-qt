@@ -14,13 +14,14 @@
 # SPDX-FileCopyrightText: 2020, 2021, 2024 Alois Spitzbart <spitz234@hotmail.com>
 # SPDX-FileCopyrightText: 2023 Lars Vogdt <lars@linux-schulserver.de>
 # SPDX-FileCopyrightText: 2025, 2026 Philipp Kiemle <l10n.daphipz@fastmail.de>
+# SPDX-FileCopyrightText: 2026 Alexander Becker <alex-at-kde-l10n-de@freenet.de>
 # SPDX-FileCopyrightText: 2015 Claudia und Emmanuel Charruau
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-01-02 10:47+0100\n"
-"Last-Translator: Philipp Kiemle <l10n.daphipz@fastmail.de>\n"
+"PO-Revision-Date: 2026-01-17 14:21+0100\n"
+"Last-Translator: Alexander Becker <alex-at-kde-l10n-de@freenet.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +29,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 25.08.3\n"
+"X-Generator: Lokalize 25.12.1\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -69,30 +70,21 @@ msgstr "Überprüfe Antworten"
 
 #. Activity title
 #: activities/adjacent_numbers/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "ActivityInfo|"
 msgid "Find the adjacent numbers"
-msgstr "Finde beide Zahlen."
+msgstr "Finde die benachbarten Zahlen"
 
 #. Help title
 #: activities/adjacent_numbers/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "ActivityInfo|"
 msgid "Find the missing adjacent numbers."
-msgstr "Finde beide Zahlen."
+msgstr "Finde die fehlenden benachbarten Zahlen."
 
 #. Help goal
 #: activities/adjacent_numbers/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn to order numbers."
-msgstr "Lerne Primzahlen."
+msgstr "Lerne, Zahlen zu ordnen."
 
 #. Help manual
 #: activities/adjacent_numbers/ActivityInfo.qml:22
@@ -2193,12 +2185,9 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_keyboard/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Baby keyboard"
 msgctxt "ActivityInfo|"
 msgid "My first keyboard"
-msgstr "Einfache Tastatur"
+msgstr "Meine erste Tastatur"
 
 #. Help title
 #: activities/baby_keyboard/ActivityInfo.qml:17
@@ -2234,12 +2223,9 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_mouse/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move the mouse"
 msgctxt "ActivityInfo|"
 msgid "My first mouse"
-msgstr "Bewege die Maus"
+msgstr "Meine erste Maus"
 
 #. Help title
 #: activities/baby_mouse/ActivityInfo.qml:16
@@ -2317,12 +2303,9 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_tangram/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Complete the puzzle"
 msgctxt "ActivityInfo|"
 msgid "Simple puzzle"
-msgstr "Vervollständige das Puzzle"
+msgstr "Einfaches Puzzle"
 
 #. Help title
 #: activities/baby_tangram/ActivityInfo.qml:17
@@ -2358,22 +2341,19 @@ msgstr "Spiele den Ton des Buchstaben, wenn er getippt wird."
 #: activities/baby_wordprocessor/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "My first word processor"
-msgstr "Mein erstes Textverarbeitungsprogramm"
+msgstr "Mein erstes Textverarbeitungs-Programm"
 
 #. Help title
 #: activities/baby_wordprocessor/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Write your first texts."
-msgstr ""
+msgstr "Schreibe deine ersten Texte."
 
 #. Help goal
 #: activities/baby_wordprocessor/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice algebraic calculations with four operators."
 msgctxt "ActivityInfo|"
 msgid "Learn to write a text using a word processor."
-msgstr "Übe die algebraische Berechnungen mit vier Operatoren."
+msgstr "Lerne, Texte mithilfe eines Textverarbeitungsprogramms zu schreiben."
 
 #. Help manual
 #: activities/baby_wordprocessor/ActivityInfo.qml:23
@@ -2433,7 +2413,7 @@ msgstr "Strg + Z: Rückgängig"
 #: activities/baby_wordprocessor/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Shift + Z: redo"
-msgstr "Strg + Umschalttaste + Z: Wiederherstellen"
+msgstr "Strg + Umschalt + Z: Wiederherstellen"
 
 #: activities/baby_wordprocessor/BabyWordprocessor.qml:90
 msgctxt "BabyWordprocessor|"
@@ -2512,12 +2492,9 @@ msgstr "Vervollständige das Puzzle"
 
 #. Help title
 #: activities/babyshapes/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the shapes on their respective targets."
 msgctxt "ActivityInfo|"
 msgid "Drag and drop the shapes on their respective targets."
-msgstr "Ziehe die Gegenstände auf das passende Ziel."
+msgstr "Ziehe die Formen und lege sie auf die passenden Ziele."
 
 #. Help goal
 #: activities/babyshapes/ActivityInfo.qml:24
@@ -2809,9 +2786,6 @@ msgstr ""
 "keine Benutzerebene geladen!"
 
 #: activities/balancebox/Balancebox.qml:72
-#, fuzzy
-#| msgctxt "Hangman|"
-#| msgid "OK"
 msgctxt "Balancebox|"
 msgid "OK"
 msgstr "OK"
@@ -2868,12 +2842,9 @@ msgstr ""
 
 #. Help goal
 #: activities/ballcatch/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find your left and right hands"
 msgctxt "ActivityInfo|"
 msgid "Synchronize left and right hands movements."
-msgstr "Finde die linken und die rechten Hände"
+msgstr "Synchronisiere Bewegungen der linken und der rechten Hand."
 
 #. Help manual
 #: activities/ballcatch/ActivityInfo.qml:23
@@ -4601,12 +4572,9 @@ msgstr "Entdecke die Brailleschrift"
 #. Help goal
 #: activities/chess/ActivityInfo.qml:20
 #: activities/chess_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn to play chess."
-msgstr "Lerne den Wasserkreislauf."
+msgstr "Lerne, Schach zu spielen."
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:24
@@ -4784,21 +4752,15 @@ msgstr "Schach-Endspiele"
 
 #. Help title
 #: activities/chess_partyend/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play the end of the chess game against Tux."
 msgctxt "ActivityInfo|"
 msgid "Play the end of a chess game against Tux."
-msgstr "Spiele Schach-Endspiele gegen den Tux."
+msgstr "Spiele das Ende einer Schachpartie gegen Tux."
 
 #. Help goal
 #: activities/chess_partyend/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "End of chess game"
 msgctxt "ActivityInfo|"
 msgid "Finish a chess game."
-msgstr "Schach-Endspiele"
+msgstr "Schließe eine Schachpartie ab."
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess_partyend/ActivityInfo.qml:24
@@ -6963,12 +6925,10 @@ msgstr ""
 
 #: activities/drawing_wheels/ActivityConfig.qml:29
 #: activities/sketch/ActivityConfig.qml:29
-#, fuzzy, qt-format
-#| msgctxt "guessnumber|"
-#| msgid "Number found!"
+#, qt-format
 msgctxt "ActivityConfig|"
 msgid "Number of undo: %1"
-msgstr "Zahl gefunden"
+msgstr "Anzahl von Rückgängig-Schritten: %1"
 
 #: activities/drawing_wheels/ActivityConfig.qml:44
 #: activities/sketch/ActivityConfig.qml:44
@@ -6977,33 +6937,27 @@ msgid ""
 "Warning: setting the number of undo too high can make the application crash "
 "if your device doesn't have enough memory."
 msgstr ""
+"Achtung: Wenn die Anzahl von Rückgängig-Schritten zu groß festgelegt wird "
+"und dein Gerät nicht genug Arbeitsspeicher hat, kann die Anwendung abstürzen."
 
 #. Activity title
 #: activities/drawing_wheels/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw letters"
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
-msgstr "Buchstaben malen"
+msgstr "Zeichnende Räder"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Touch the numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Roll the gear in the cogwheel to draw."
-msgstr "Klicke die Zahlen in der richtigen Reihenfolge an."
+msgstr "Rolle das Zahnrad im Kammrad, um zu zeichnen."
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about multiples and factors."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr "Lerne Vielfache und Faktoren"
+msgstr ""
+"Entdecke die Hypotrochoiden und verwende sie als digitales Malwerkzeug."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
@@ -7017,62 +6971,60 @@ msgid ""
 "file (vector format), along with a PNG file (pixel format). Only the SVG "
 "file can be opened again from the activity."
 msgstr ""
+"Erstelle mit dem ausgewählten Stift schöne Zeichnungen, indem du das Zahnrad "
+"im Kammrad rollen lässt. Wähle in den aufklappenden Seitenleisten Kamm- und "
+"Zahnradgrößen aus, lege Stifteinstellungen und -Farben fest und drücke "
+"„Zeichnen starten“-Knopf, um das Zahnrad ins Rollen zu bringen. Du kannst "
+"das Dateimenü verwenden, um deine Zeichnung zu speichern oder eine vorher "
+"gespeicherte zu öffnen. Außerdem kannst du im Dateimenü eine neue Zeichnung "
+"mit der ausgewählten Hintergrundfarbe anlegen. Beim Speichern einer "
+"Zeichnung wird diese in einer SVG-Datei (Vektorformat) und zusätzlich in "
+"einer PNG-Datei (Pixelformat) gespeichert. Nur die SVG-Datei kann in dieser "
+"Aktivität wieder geöffnet werden."
 
 #: activities/drawing_wheels/ActivityInfo.qml:29
 #: activities/sketch/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + Z: undo"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
-msgstr "Strg + Z: Rückgängig"
+msgstr "Strg + Z: Letzte Aktion rückgängig machen"
 
 #: activities/drawing_wheels/ActivityInfo.qml:30
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
-msgstr ""
+msgstr "Strg + Y: Letzte Aktion wiederherstellen"
 
 #: activities/drawing_wheels/ActivityInfo.qml:31
 #: activities/sketch/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + A: select all the text"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
-msgstr "Strg + A: Auswahl des ganzen Textes"
+msgstr "Strg + S: Bild speichern"
 
 #: activities/drawing_wheels/ActivityInfo.qml:32
 #: activities/sketch/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
-msgstr ""
+msgstr "Strg + O: Ein Bild öffnen"
 
 #: activities/drawing_wheels/DrawingWheels.qml:399
 msgctxt "DrawingWheels|"
 msgid "File menu"
-msgstr ""
+msgstr "Dateimenü"
 
 #: activities/drawing_wheels/DrawingWheels.qml:411
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
-msgstr ""
+msgstr "Kammrad und Zahnrad"
 
 #: activities/drawing_wheels/DrawingWheels.qml:435
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Piano composition"
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
-msgstr "Komponieren am Piano"
+msgstr "Stiftgröße und -Position"
 
 #: activities/drawing_wheels/DrawingWheels.qml:447
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font selector"
 msgctxt "DrawingWheels|"
 msgid "Color selector"
-msgstr "Schriftauswahl"
+msgstr "Farbwähler"
 
 #: activities/drawing_wheels/DrawingWheels.qml:474
 msgctxt "DrawingWheels|"
@@ -7080,9 +7032,6 @@ msgid "Undo"
 msgstr "Rückgängig"
 
 #: activities/drawing_wheels/DrawingWheels.qml:486
-#, fuzzy
-#| msgctxt "Checkers|"
-#| msgid "Redo"
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "Wiederherstellen"
@@ -7090,22 +7039,22 @@ msgstr "Wiederherstellen"
 #: activities/drawing_wheels/DrawingWheels.qml:520
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
-msgstr ""
+msgstr "Zeichnen anhalten"
 
 #: activities/drawing_wheels/DrawingWheels.qml:520
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
-msgstr ""
+msgstr "Zeichnen starten"
 
 #: activities/drawing_wheels/DrawingWheels.qml:553
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
-msgstr ""
+msgstr "Zahn- und Kammrad anzeigen"
 
 #: activities/drawing_wheels/DrawingWheels.qml:553
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
-msgstr ""
+msgstr "Zahn- und Kammrad ausblenden"
 
 #: activities/drawing_wheels/DrawingWheels.qml:712
 msgctxt "DrawingWheels|"
@@ -7113,17 +7062,14 @@ msgid "Save your image"
 msgstr "Speichere dein Bild"
 
 #: activities/drawing_wheels/DrawingWheels.qml:727
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "DrawingWheels|"
 msgid "Open an image"
-msgstr "Viele neue Bilder"
+msgstr "Ein Bild öffnen"
 
 #: activities/drawing_wheels/DrawingWheels.qml:756
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
-msgstr "Erstelle ein neues Bild"
+msgstr "Ein neues Bild erstellen"
 
 #: activities/drawing_wheels/DrawingWheels.qml:775
 msgctxt "DrawingWheels|"
@@ -7133,20 +7079,18 @@ msgstr "Hintergrundfarbe"
 #: activities/drawing_wheels/DrawingWheels.qml:856
 msgctxt "DrawingWheels|"
 msgid "Wheel"
-msgstr ""
+msgstr "Kammrad"
 
 #: activities/drawing_wheels/DrawingWheels.qml:923
 msgctxt "DrawingWheels|"
 msgid "Gear"
-msgstr ""
+msgstr "Zahnrad"
 
 #: activities/drawing_wheels/DrawingWheels.qml:986
-#, fuzzy, qt-format
-#| msgctxt "SignalGenerator|"
-#| msgid "%1 s"
+#, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
-msgstr "%1 s"
+msgstr "%1 Spitzen"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1004
 msgctxt "DrawingWheels|"
@@ -7156,12 +7100,12 @@ msgstr "Geschwindigkeit"
 #: activities/drawing_wheels/DrawingWheels.qml:1020
 msgctxt "DrawingWheels|"
 msgid "Slow"
-msgstr ""
+msgstr "Langsam"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1040
 msgctxt "DrawingWheels|"
 msgid "Fast"
-msgstr ""
+msgstr "Schnell"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1083
 msgctxt "DrawingWheels|"
@@ -7171,36 +7115,28 @@ msgstr "Stiftgröße"
 #: activities/drawing_wheels/DrawingWheels.qml:1120
 msgctxt "DrawingWheels|"
 msgid "Opacity"
-msgstr ""
+msgstr "Deckkraft"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1163
 msgctxt "DrawingWheels|"
 msgid "Offset"
-msgstr ""
+msgstr "Versatz"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1201
-#, fuzzy
-#| msgctxt "IntroMessage|"
-#| msgid "Start"
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
-msgstr "Start"
+msgstr "Startzahn"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1381
-#, fuzzy
-#| msgctxt "Piano_composition|"
-#| msgid "You have not selected any note. Do you want to erase all the notes?"
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
-msgstr "Du hast keine Note ausgewählt. Möchtest du alle Noten löschen?"
+msgstr ""
+"Du hast dieses Bild nicht gespeichert. Möchtest du diese Aktivität schließen?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1382
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Do you want to download it now?"
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
-msgstr "Möchtest Du sie jetzt herunterladen?"
+msgstr "Möchtest du dieses Bild löschen?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1383
 msgctxt "DrawingWheels|"
@@ -7256,12 +7192,9 @@ msgstr "Verbinde die Punkte, um Zahlen von 0 bis 9 zu malen."
 
 #. Help goal
 #: activities/drawnumbers/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning how to draw numbers in a funny way."
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw numbers in a fun way."
-msgstr "Lerne spielerisch verschiedene Zahlen zu malen."
+msgstr "Lerne spielerisch, Zahlen zu malen."
 
 #. Help manual
 #: activities/drawnumbers/ActivityInfo.qml:23
@@ -10865,25 +10798,19 @@ msgstr "Finde Zähler und Nenner (mit einem Quadrat)."
 #: activities/frieze/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Frieze"
-msgstr ""
+msgstr "Fries"
 
 #. Help title
 #: activities/frieze/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Reproduce and complete the frieze."
-msgstr "Baue den gegebenen Turm nach."
+msgstr "Baue den Fries nach und vervollständige ihn."
 
 #. Help goal
 #: activities/frieze/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "algorithm"
 msgctxt "ActivityInfo|"
 msgid "Learn algorithms."
-msgstr "Algorithmus"
+msgstr "Lerne Algorithmen kennen."
 
 #. Help manual
 #: activities/frieze/ActivityInfo.qml:22
@@ -10892,51 +10819,37 @@ msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
 "frieze or to reproduce it after you've memorized it."
 msgstr ""
+"Baue den oben gezeigten Fries nach. In einigen Spielstufen musst du den "
+"Fries vervollständigen oder nachbauen, nachdem du ihn dir gemerkt hast."
 
 #: activities/frieze/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: select a symbol button"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
-msgstr "Links- und Rechtspfeil: Wähle ein Symbol aus"
+msgstr "Links- und Rechtspfeil: Wähle einen Spielstein aus"
 
 #: activities/frieze/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select an item"
 msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
-msgstr "Leertaste: Auswahl eines Elements"
+msgstr "Leertaste: Ausgewählten Spielstein zum Fries hinzufügen"
 
 #: activities/frieze/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace or Delete: undo"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
-msgstr "Rücktaste oder Löschtaste: Zurücknehmen"
+msgstr "Rücktaste oder Löschtaste: Letzten Spielstein aus dem Fries entfernen"
 
 #: activities/frieze/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
-msgstr "Eingabetaste: Überprüfe deine Antwort"
+msgstr "Eingabetaste: Antwort überprüfen"
 
 #: activities/frieze/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: switch between invisible and visible modes"
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
-msgstr "Leertaste: Wechselt zwischen unsichtbarem und sichtbarem Modus"
+msgstr ""
+"Tabulator: Zwischen dem Bearbeiten des Frieses und der Betrachtung des "
+"Modells wechseln"
 
 #: activities/frieze/Frieze.qml:287
-#, fuzzy
-#| msgctxt "ReadyButton|"
-#| msgid "I am Ready"
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Los geht's!"
@@ -10944,7 +10857,7 @@ msgstr "Los geht's!"
 #: activities/frieze/resource/1/Data.qml:28
 msgctxt "Data|"
 msgid "Copy this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "Kopiere diesen Fries: 2 Formen mit verschiedenen Farben/Zeichen."
 
 #: activities/frieze/resource/1/Data.qml:31
 #: activities/frieze/resource/4/Data.qml:17
@@ -10952,7 +10865,7 @@ msgstr ""
 #: activities/frieze/resource/7/Data.qml:17
 msgctxt "Data|"
 msgid "Copy this frieze."
-msgstr ""
+msgstr "Kopiere diesen Fries."
 
 #: activities/frieze/resource/10/Data.qml:14
 msgctxt "Data|"
@@ -10960,6 +10873,8 @@ msgid ""
 "Remember and copy this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"Merke dir diesen Fries: jede Kombination von Formen, Farben/Zeichen und "
+"Größen. Kopiere ihn anschließend."
 
 #: activities/frieze/resource/10/Data.qml:17
 #: activities/frieze/resource/12/Data.qml:16
@@ -10967,7 +10882,7 @@ msgstr ""
 #: activities/frieze/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Remember and copy this frieze."
-msgstr ""
+msgstr "Merke dir diesen Fries und kopiere ihn."
 
 #: activities/frieze/resource/11/Data.qml:13
 msgctxt "Data|"
@@ -10975,6 +10890,8 @@ msgid ""
 "Copy and complete this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Kopiere und vervollständige diesen Fries: zwischen 4 und 7 Strukturen, jede "
+"Kombination von Formen, Farben/Zeichen und Größen."
 
 #: activities/frieze/resource/11/Data.qml:16
 #: activities/frieze/resource/13/Data.qml:16
@@ -10984,7 +10901,7 @@ msgstr ""
 #: activities/frieze/resource/9/Data.qml:17
 msgctxt "Data|"
 msgid "Copy and complete this frieze."
-msgstr ""
+msgstr "Kopiere und vervollständige diesen Fries."
 
 #: activities/frieze/resource/12/Data.qml:13
 msgctxt "Data|"
@@ -10992,6 +10909,8 @@ msgid ""
 "Remember and copy this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Merke dir diesen Fries: zwischen 4 und 7 Strukturen, jede Kombination von "
+"Formen, Farben/Zeichen und Größen. Kopiere ihn anschließend."
 
 #: activities/frieze/resource/13/Data.qml:13
 msgctxt "Data|"
@@ -10999,6 +10918,8 @@ msgid ""
 "Copy and complete this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Kopiere und vervollständige diesen Fries: zwischen 6 und 8 Strukturen, jede "
+"Kombination von Formen, Farben/Zeichen und Größen."
 
 #: activities/frieze/resource/14/Data.qml:13
 msgctxt "Data|"
@@ -11006,21 +10927,28 @@ msgid ""
 "Remember and copy this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Merke dir diesen Fries: zwischen 6 und 8 Strukturen, jede Kombination von "
+"Formen, Farben/Zeichen und Größen. Kopiere ihn anschließend."
 
 #: activities/frieze/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Copy and complete this frieze: 2 shapes with different colors/signs."
 msgstr ""
+"Kopiere und vervollständige diesen Fries: 2 Formen mit verschiedenen Farben/"
+"Zeichen."
 
 #: activities/frieze/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Remember and copy this frieze: 2 shapes with different colors/signs."
 msgstr ""
+"Merke dir diesen Fries: 2 Formen mit verschiedenen Farben/Zeichen. Kopiere "
+"ihn anschließend."
 
 #: activities/frieze/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: 3 or 4 shapes with different colors/signs."
 msgstr ""
+"Kopiere diesen Fries: 3 oder 4 Formen mit verschiedenen Farben/Zeichen."
 
 #: activities/frieze/resource/5/Data.qml:14
 msgctxt "Data|"
@@ -11028,6 +10956,8 @@ msgid ""
 "Copy this frieze: 3 or 4 shapes with 2 sizes and potentially same colors/"
 "signs."
 msgstr ""
+"Kopiere diesen Fries: 3 oder 4 Formen in 2 Größen und möglicherweise mit "
+"gleichen Farben/Zeichen."
 
 #: activities/frieze/resource/6/Data.qml:14
 msgctxt "Data|"
@@ -11035,6 +10965,8 @@ msgid ""
 "Copy and complete this frieze: 3 or 4 shapes with 2 sizes and potentially "
 "same colors/signs."
 msgstr ""
+"Kopiere und vervollständige diesen Fries: 3 oder 4 Formen in 2 Größen und "
+"möglicherweise mit gleichen Farben/Zeichen."
 
 #: activities/frieze/resource/7/Data.qml:14
 msgctxt "Data|"
@@ -11042,6 +10974,8 @@ msgid ""
 "Copy this frieze: patterns between 12 and 15, any combination of shapes, "
 "colors/signs and sizes."
 msgstr ""
+"Kopiere diesen Fries: zwischen 12 und 15 Strukturen, jede Kombination von "
+"Formen, Farben/Zeichen und Größen."
 
 #: activities/frieze/resource/8/Data.qml:14
 msgctxt "Data|"
@@ -11049,6 +10983,8 @@ msgid ""
 "Copy and complete this frieze: patterns between 10 and 12, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
+"Kopiere und vervollständige diesen Fries: zwischen 10 und 12 Strukturen, "
+"jede Kombination von Formen, Farben/Zeichen und Größen."
 
 #: activities/frieze/resource/9/Data.qml:14
 msgctxt "Data|"
@@ -11056,6 +10992,8 @@ msgid ""
 "Copy and complete this frieze: patterns between 16 and 20, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
+"Kopiere und vervollständige diesen Fries: zwischen 16 und 20 Strukturen, "
+"jede Kombination von Formen, Farben/Zeichen und Größen."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -15423,12 +15361,9 @@ msgstr "Zahlen: Gib deine Antwort ein"
 
 #: activities/graduated_line_read/ActivityInfo.qml:28
 #: activities/graduated_line_use/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
-msgstr "Leertaste oder Eingabetaste: Antwort überprüfen"
+msgstr "Leertaste oder Eingabetaste: Deine Antwort überprüfen"
 
 #: activities/graduated_line_read/graduated_line_read.js:125
 msgctxt "graduated_line_read|"
@@ -15996,12 +15931,9 @@ msgid "Operator keys (+, -, *, /): select operator"
 msgstr ""
 
 #: activities/guess24/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace or Delete: undo"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: cancel last operation"
-msgstr "Rücktaste oder Löschtaste: Zurücknehmen"
+msgstr "Rücktaste oder Löschtaste: Letzte Operation rückgängig machen"
 
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -16805,7 +16737,7 @@ msgstr "Finde die Harfe"
 #: activities/instruments/instruments.js:124
 msgctxt "instruments|"
 msgid "Find the piano"
-msgstr "Finde das Piano"
+msgstr "Finde das Klavier"
 
 #: activities/instruments/instruments.js:40
 #: activities/instruments/instruments.js:87
@@ -17841,7 +17773,7 @@ msgstr "Mengen lernen"
 #: activities/learn_quantities/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Learn to represent a quantity of objects."
-msgstr "Lerne, eine Menge von Objekten darzustellen."
+msgstr "Lerne, wie man eine Anzahl von Objekten darstellt."
 
 #. Help goal
 #: activities/learn_quantities/ActivityInfo.qml:19
@@ -19808,13 +19740,13 @@ msgid ""
 "remember where a sound is, while you search for its twin. When you flip the "
 "twins, they both disappear."
 msgstr ""
-"Jede Karte spielt einen Klang, wenn du sie umdrehst, und jede Karte hat eine "
-"zweite Karte mit mit genau demselben Klang. Klicke auf eine Karte, um den "
-"versteckten Klang zu hören, und versuche,die Karte mit dem gleichen Klang zu "
-"finden. Du kannst nur zwei Karten auf einmal umdrehen, also musst du die den "
-"Klang der Karten merken, während du nach der Karte mit dem gleichem Klang "
-"suchst. Wenn Du die zusammengehörenden Karten umdrehst, verschwinden sie "
-"beide."
+"Jede Karte spielt einen Klang, wenn du sie umdrehst. Außerdem hat jede Karte "
+"eine zweite Karte mit genau demselben Klang. Klicke auf eine Karte, um den "
+"versteckten Klang zu hören. Versuche dann, die Karte mit dem gleichen Klang "
+"zu finden. Du kannst nur zwei Karten auf einmal umdrehen. Deswegen musst du "
+"dir den Klang der Karten merken, während du nach der Karte mit dem gleichem "
+"Klang suchst. Wenn Du die zusammengehörenden Karten umdrehst, verschwinden "
+"sie beide."
 
 #. Activity title
 #: activities/memory-sound/ActivityInfo.qml:15
@@ -20537,8 +20469,8 @@ msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
 "that activity."
 msgstr ""
-"Sammle hier Deine Lieblingsaktivitäten indem Du die Sonne im oberen rechten "
-"Eck jeder Aktivität anklickst."
+"Sammle hier deine Lieblingsaktivitäten, indem Du die Sonne im oberen rechten "
+"Eck der Aktivität anklickst."
 
 #: activities/menu/Menu.qml:824
 msgctxt "Menu|"
@@ -21417,8 +21349,8 @@ msgid ""
 "for the 'Play Piano' and 'Piano Composition' activities."
 msgstr ""
 "Zum Entwickeln eines guten Verständnisses von Position und Benennung von "
-"Noten. Zur Vorbereitung für die Aktivitäten Spielen am Piano und Komponieren "
-"am Piano."
+"Noten. Zur Vorbereitung für die Aktivitäten „Spielen am Klavier“ und "
+"„Komponieren am Klavier“."
 
 #. Help manual
 #: activities/note_names/ActivityInfo.qml:26
@@ -22542,7 +22474,7 @@ msgstr "Klicke auf die Unterschiede zwischen den beiden Bildern."
 #: activities/piano_composition/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Piano composition"
-msgstr "Komponieren am Piano"
+msgstr "Komponieren am Klavier"
 
 #. Help title
 #: activities/piano_composition/ActivityInfo.qml:18
@@ -22551,7 +22483,8 @@ msgid ""
 "Learn how the piano keyboard works, and how notes are written on a musical "
 "staff."
 msgstr ""
-"Lerne, wie die Pianotasten funktionieren und wie Noten aufgeschrieben werden"
+"Lerne, wie die Klaviertasten funktionieren und wie Noten in einem "
+"Notensystem aufgeschrieben werden."
 
 #. Help goal
 #: activities/piano_composition/ActivityInfo.qml:21
@@ -22566,12 +22499,12 @@ msgid ""
 "notation tool."
 msgstr ""
 "Entwickle ein Verständnis für Musikkomposition und steigere dein Interesse "
-"am Musikmachen mit einer Pianotastatur. Diese Aktivität deckt viele "
-"grundlegende Aspekte der Musik ab, aber es gibt viel mehr bzgl. der "
-"Musikkomposition zu erleben. Wenn du diese Aktivität magst, aber ein "
-"fortgeschrittenes Werkzeug wünschst, lade Minuet (https://minuet.kde.org/) - "
-"eine Open-Source-Software für die Musikerziehung - oder MuseScore (https://"
-"musescore.org) - ein Open-Source-Werkzeug für die Musiknotation - herunter."
+"am Musikmachen mit einer Klaviatur. Diese Aktivität deckt viele grundlegende "
+"Aspekte der Musik ab, aber es gibt viel mehr bzgl. der Musikkomposition zu "
+"erleben. Wenn du diese Aktivität magst, aber ein fortgeschrittenes Werkzeug "
+"wünschst, lade Minuet (https://minuet.kde.org/) - eine Open-Source-Software "
+"für die Musikerziehung oder MuseScore (https://musescore.org) - ein Open-"
+"Source-Werkzeug für die Musiknotation - herunter."
 
 #. Help prerequisite
 #: activities/piano_composition/ActivityInfo.qml:23
@@ -22911,7 +22844,7 @@ msgstr "Achtelpause"
 #: activities/piano_composition/OptionsRow.qml:28
 msgctxt "OptionsRow|"
 msgid "Piano"
-msgstr "Piano"
+msgstr "Klavier"
 
 #: activities/piano_composition/OptionsRow.qml:28
 msgctxt "OptionsRow|"
@@ -23295,7 +23228,7 @@ msgstr "Noten farblos darstellen."
 #: activities/play_piano/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Play piano"
-msgstr "Spielen am Piano"
+msgstr "Spielen am Klavier"
 
 #. Help title
 #: activities/play_piano/ActivityInfo.qml:21
@@ -23313,8 +23246,8 @@ msgid ""
 "Understand how the piano keyboard can play music as written on the musical "
 "staff."
 msgstr ""
-"Verstehe, wie man auf den Pianotasten Musik erzeugt, die auf den Notenlinien "
-"geschrieben steht."
+"Verstehe, wie man auf den Klaviertasten Musik erzeugt, die auf den "
+"Notenlinien geschrieben steht."
 
 #. Help prerequisite
 #: activities/play_piano/ActivityInfo.qml:26
@@ -23349,7 +23282,7 @@ msgstr "Rücktaste oder Löschtaste: Zurücknehmen"
 #: activities/play_piano/PlayPiano.qml:189
 msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
-msgstr "Klicke auf die Pianotasten, die zu den vorgegebenen Noten passen."
+msgstr "Klicke auf die Klaviertasten, die zu den vorgegebenen Noten passen."
 
 #: activities/play_piano/PlayPiano.qml:322
 msgctxt "PlayPiano|"
@@ -23379,12 +23312,9 @@ msgstr "Rhythmus spielen"
 
 #. Help title
 #: activities/play_rhythm/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to follow a rhythm accurately."
 msgctxt "ActivityInfo|"
 msgid "Follow the rhythm accurately."
-msgstr "Lerne, einem Rhythmus genau zu folgen."
+msgstr "Folge genau dem Rhythmus."
 
 #. Help goal
 #: activities/play_rhythm/ActivityInfo.qml:24
@@ -24348,17 +24278,12 @@ msgstr "Lerne den Wasserkreislauf."
 
 #. Help goal
 #: activities/roman_numerals/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn how to read roman numerals and do the conversion to and from arabic "
-#| "numerals."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to read and write Roman numerals and convert them to Arabic numerals."
 msgstr ""
-"Lerne, wie du römische Ziffern liest und wie du sie in und aus arabischen "
-"Ziffern umrechnest."
+"Lerne, römische Ziffern zu lesen und zu schreiben. Lerne außerdem, wie du "
+"sie in arabische Ziffern umrechnest."
 
 #. Help manual
 #: activities/roman_numerals/ActivityInfo.qml:23
@@ -27888,7 +27813,7 @@ msgstr "Finde das Zehnerkomplement jeder Zahl."
 #: activities/tens_complement_find/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to find ten's complement."
-msgstr "Lerne, das Zehnerkomplement zu finden."
+msgstr "Lerne, wie man das Zehnerkomplement findet."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
@@ -28395,7 +28320,7 @@ msgstr "Subtraktion mit 1, 2 und 3."
 #: activities/vertical_subtraction/subtraction.js:79
 msgctxt "subtraction|"
 msgid "Write:"
-msgstr ""
+msgstr "Schreibe:"
 
 #: activities/vertical_subtraction/subtraction.js:79
 msgctxt "subtraction|"
@@ -28415,12 +28340,9 @@ msgid "Write your own addition and solve it."
 msgstr "Schreibe deine eigene Addition und löse sie."
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:100
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Learn subtraction table of 1."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own subtraction and solve it."
-msgstr "Subtraktionstabelle mit 1."
+msgstr "Schreibe deine eigene Subtraktion und löse sie."
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:426
 msgctxt "VerticalSubtraction|"
@@ -28632,12 +28554,9 @@ msgstr "Gib die fallenden Wörter ein, bevor sie den Boden erreichen."
 
 #. Help goal
 #: activities/wordsgame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice division equality."
 msgctxt "ActivityInfo|"
 msgid "Practice using a keyboard."
-msgstr "Übe Divisionsgleichheit."
+msgstr "Übe die Verwendung einer Tastatur."
 
 #. Help prerequisite
 #: activities/wordsgame/ActivityInfo.qml:22
@@ -28999,8 +28918,8 @@ msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
 "Composition)."
 msgstr ""
-"Laden/Speichern der Kreationen (Eine einfache Textverarbeitung, Kugelkiste, "
-"Piano Komposition)"
+"Laden/Speichern der Kreationen (Eine einfache Textverarbeitung, "
+"„Kugelkiste“, „Komponieren am Klavier“)"
 
 #: core/ChangeLog.qml:165
 msgctxt "ChangeLog|"
@@ -29078,7 +28997,7 @@ msgstr "Version %1:"
 #: core/core.js:221
 msgctxt "core|"
 msgid "Missing sound files!"
-msgstr "Fehlende Tondateien!"
+msgstr "Tondateien fehlen!"
 
 #: core/core.js:222
 msgctxt "core|"
@@ -29238,16 +29157,7 @@ msgstr ""
 "(severity) „Wishlist“ versehen."
 
 #: core/DialogAbout.qml:105
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid ""
-#| "You do not have to be a software developer to be a member of the KDE "
-#| "team. You can join the national teams that translate program interfaces. "
-#| "You can provide graphics, themes, sounds, and improved documentation. You "
-#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
-#| "projects in which you can participate.<br /><br />If you need more "
-#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
-#| "provide you with what you need."
+#, qt-format
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
@@ -29258,14 +29168,13 @@ msgid ""
 "documentation, then a visit to <a href=\"%2\">%2</a> will provide you with "
 "what you need."
 msgstr ""
-"Sie brauchen kein Programmierer zu sein, um ein Mitglied des KDE-Teams zu "
-"werden. Sie können den nationalen Gruppen beitreten, die Programmoberflächen "
-"übersetzen. Sie können Grafik, Design, Klänge oder verbesserte Dokumentation "
-"beitragen. Entscheiden Sie selbst.<br /><br />Besuchen Sie bitte <a href="
-"\"%1\">%1</a>, um Information über Projekte zu erhalten, an denen Sie sich "
-"beteiligen können.<br /><br />Wenn Sie mehr Information oder Dokumentation "
-"benötigen, besuchen Sie <a href=\"%2\">%2</a>. Dort finden Sie, was Sie "
-"brauchen."
+"Sie müssen kein Programmierer sein, um Mitglied des KDE-Teams zu werden. Sie "
+"können den Sprachgruppen beitreten, die Programmoberflächen übersetzen. Sie "
+"können Grafiken, Designs, Klänge oder verbesserte Dokumentation beitragen. "
+"Entscheiden Sie selbst!<br /><br />Besuchen Sie bitte <a href=\"%1\">%1</a>, "
+"um Informationen über Projekte zu erhalten, an denen Sie sich beteiligen "
+"können.<br /><br />Wenn Sie mehr Informationen oder Dokumentation benötigen, "
+"besuchen Sie <a href=\"%2\">%2</a>. Dort finden Sie, was Sie brauchen."
 
 #: core/DialogAbout.qml:122
 #, qt-format
@@ -29487,12 +29396,9 @@ msgid "No data found for %1."
 msgstr ""
 
 #: core/GCCreationHandler.qml:185
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr "%1 wurde erfolgreich gelöscht."
+msgstr "Datei wurde erfolgreich gelöscht."
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -29501,12 +29407,9 @@ msgid "OK"
 msgstr "OK"
 
 #: core/GCCreationHandler.qml:193
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
-msgstr "%1 kann nicht gelöscht werden"
+msgstr "Datei kann nicht gelöscht werden."
 
 #: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
@@ -29759,9 +29662,6 @@ msgid "Apply"
 msgstr "Anwenden"
 
 #: core/main.qml:275 core/main.qml:551 core/main.qml:626
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "Cancel"
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Abbrechen"
@@ -29828,25 +29728,19 @@ msgid "OK"
 msgstr "OK"
 
 #: core/main.qml:546
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "main|"
 msgid "Select your username"
-msgstr "Wähle Deinen Modus"
+msgstr "Wähle deinen Benutzernamen"
 
 #: core/main.qml:556
 msgctxt "main|"
 msgid "Please select your username in the list or cancel."
-msgstr ""
+msgstr "Bitte wähle deinen Benutzernamen aus der Liste aus oder brich ab."
 
 #: core/main.qml:623
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "main|"
 msgid "Enter your password"
-msgstr "Eingabetaste: Überprüfe deine Antwort"
+msgstr "Gib dein Passwort ein"
 
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"

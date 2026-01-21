@@ -1959,7 +1959,7 @@ msgctxt "DevicesView|"
 msgid "Send login list"
 msgstr "שליחת רשימת כניסה למערכת"
 
-#: server/views/DevicesView.qml:196
+#: server/views/DevicesView.qml:195
 msgctxt "DevicesView|"
 msgid "Disconnect selected pupils"
 msgstr "ניתוק התלמידים הנבחרים"

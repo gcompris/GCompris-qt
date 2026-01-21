@@ -1981,7 +1981,7 @@ msgctxt "DevicesView|"
 msgid "Send login list"
 msgstr "Oturum Açma Listesini Gönder"
 
-#: server/views/DevicesView.qml:196
+#: server/views/DevicesView.qml:195
 msgctxt "DevicesView|"
 msgid "Disconnect selected pupils"
 msgstr "Seçili Öğrencilerin Bağlantısını Kes"
