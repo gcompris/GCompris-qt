@@ -1976,7 +1976,7 @@ msgctxt "DevicesView|"
 msgid "Send login list"
 msgstr "Pošlji seznam prijav"
 
-#: server/views/DevicesView.qml:196
+#: server/views/DevicesView.qml:195
 msgctxt "DevicesView|"
 msgid "Disconnect selected pupils"
 msgstr "Prekini povezavo z izbranimi učenci"

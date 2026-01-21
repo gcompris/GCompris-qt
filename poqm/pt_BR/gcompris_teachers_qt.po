@@ -1990,7 +1990,7 @@ msgctxt "DevicesView|"
 msgid "Send login list"
 msgstr "Enviar lista de login"
 
-#: server/views/DevicesView.qml:196
+#: server/views/DevicesView.qml:195
 msgctxt "DevicesView|"
 msgid "Disconnect selected pupils"
 msgstr "Desconectar alunos selecionados"

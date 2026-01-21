@@ -1984,7 +1984,7 @@ msgctxt "DevicesView|"
 msgid "Send login list"
 msgstr "Invia l'elenco degli accessi"
 
-#: server/views/DevicesView.qml:196
+#: server/views/DevicesView.qml:195
 msgctxt "DevicesView|"
 msgid "Disconnect selected pupils"
 msgstr "Disconnetti gli alunni selezionati"

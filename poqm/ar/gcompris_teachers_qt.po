@@ -1957,7 +1957,7 @@ msgctxt "DevicesView|"
 msgid "Send login list"
 msgstr "أرسل قائمة الولوج"
 
-#: server/views/DevicesView.qml:196
+#: server/views/DevicesView.qml:195
 msgctxt "DevicesView|"
 msgid "Disconnect selected pupils"
 msgstr "قطع اتصال التلاميذ المختارين"

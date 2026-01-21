@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-01-30 17:25+0200\n"
+"PO-Revision-Date: 2026-01-20 17:50+0100\n"
 "Last-Translator: Antonis Geralis <capoiosct@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
 "Language: el\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.8\n"
 "X-Language: el\n"
 "X-Qt-Contexts: true\n"
 
@@ -80,47 +80,39 @@ msgstr ""
 
 #. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the previous numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n previous number(s)."
 msgid_plural "Find the %n previous number(s)."
-msgstr[0] "Βρες τους προηγούμενους αριθμούς."
-msgstr[1] "Βρες τους προηγούμενους αριθμούς."
+msgstr[0] "Βρείτε τον/τους προηγούμενο/-ους αριθμό/-ούς %n."
+msgstr[1] "Βρείτε τον/τους προηγούμενο/-ους αριθμό/-ούς %n."
 
 #. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:60
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the next numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n next number(s)."
 msgid_plural "Find the %n next number(s)."
-msgstr[0] "Βρες τους επόμενους αριθμούς."
-msgstr[1] "Βρες τους επόμενους αριθμούς."
+msgstr[0] "Βρείτε τον/τους επόμενο/ους αριθμό/ους %n."
+msgstr[1] "Βρείτε τον/τους επόμενο/ους αριθμό/ους %n."
 
 #. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:64
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the in-between numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n in-between number(s)"
 msgid_plural "Find the %n in-between number(s)"
-msgstr[0] "Βρες τους ενδιάμεσους αριθμούς."
-msgstr[1] "Βρες τους ενδιάμεσους αριθμούς."
+msgstr[0] "Βρείτε τον αριθμό ή τους αριθμούς που βρίσκονται μεταξύ του %n"
+msgstr[1] "Βρείτε τον αριθμό ή τους αριθμούς που βρίσκονται μεταξύ του %n"
 
 #. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:68
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the missing numbers"
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n missing numbers"
 msgid_plural "Find the %n missing numbers"
-msgstr[0] "Βρες τον αριθμό που λείπει."
-msgstr[1] "Βρες τον αριθμό που λείπει."
+msgstr[0] "Βρείτε τους %n αριθμούς που λείπουν"
+msgstr[1] "Βρείτε τους %n αριθμούς που λείπουν"
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
 msgctxt "Data|"
@@ -1244,17 +1236,17 @@ msgstr "Εκμάθηση πίνακα πρόσθεσης του 10."
 #: activities/algebra_plus/resource/11/Data.qml:13
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "Πρόσθεση δεκαδικών αριθμών μέχρι το 10."
+msgstr "Προσθέσεις με αριθμούς έως το 10."
 
 #: activities/algebra_plus/resource/12/Data.qml:13
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "Πρόσθεση δεκαδικών αριθμών μέχρι το 15."
+msgstr "Προσθέσεις με αριθμούς έως το 15."
 
 #: activities/algebra_plus/resource/13/Data.qml:13
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr "Πρόσθεσε αστέρια μέχρι 100."
+msgstr "Προσθέσεις με αριθμούς έως το 100."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -2916,10 +2908,6 @@ msgstr ""
 "προσπάθεια πάτησε το OK."
 
 #: activities/binary_bulb/BinaryBulb.qml:95
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "This activity teaches how to convert decimal numbers to binary numbers."
 msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr ""
@@ -2927,12 +2915,6 @@ msgstr ""
 "στο δυαδικό σύστημα αρίθμησης."
 
 #: activities/binary_bulb/BinaryBulb.qml:99
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Computers use transistors to count and transistors have only two states, "
-#| "0 and 1. Mathematically, these states are represented by 0 and 1, which "
-#| "makes up the binary system of numeration."
 msgctxt "BinaryBulb|"
 msgid ""
 "Computers use transistors to count and transistors have only two states, 0 "
@@ -2944,9 +2926,6 @@ msgstr ""
 "συνθέτουν το δυαδικό σύστημα αρίθμησης."
 
 #: activities/binary_bulb/BinaryBulb.qml:103
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr ""
@@ -2954,11 +2933,6 @@ msgstr ""
 "ενεργοποιήσεις ή να απενεργοποιήσεις."
 
 #: activities/binary_bulb/BinaryBulb.qml:107
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Binary system uses these numbers very efficiently, allowing to count from "
-#| "0 to 255 with 8 bits only."
 msgctxt "BinaryBulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
@@ -2969,13 +2943,6 @@ msgstr ""
 "8 δυαδικά ψηφία."
 
 #: activities/binary_bulb/BinaryBulb.qml:111
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Each bit adds a progressive value, corresponding to the powers of 2, "
-#| "ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → "
-#| "2²=4 , bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit "
-#| "8 → 2⁷=128."
 msgctxt "BinaryBulb|"
 msgid ""
 "Each bit adds a progressive value, corresponding to the powers of 2, "
@@ -2989,21 +2956,12 @@ msgstr ""
 "7 → 2⁶=64 , ψηφίο 8 → 2⁷=128."
 
 #: activities/binary_bulb/BinaryBulb.qml:115
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr ""
-"Για να μετατρέψεις τον αριθμό 6 του δεκαδικού συστήματος σε αντίστοιχο του "
-"δυαδικού, πρόσθεσε 4 και 1."
+"Για να μετατραπεί ένα δεκαδικό 5 σε δυαδική τιμή, προστίθενται το 1 και το 4."
 
 #: activities/binary_bulb/BinaryBulb.qml:119
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 "
-#| "is equal to binary 101."
 msgctxt "BinaryBulb|"
 msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
@@ -3013,9 +2971,6 @@ msgstr ""
 "δεκαδικού συστήματος είναι ίσος με τον αριθμό 101 του δυαδικού."
 
 #: activities/binary_bulb/BinaryBulb.qml:123
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid "This image will help you to compute bits' value."
 msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Αυτή η εικόνα θα σε βοηθήσει να υπολογίσεις την αξία των bits."
@@ -3030,42 +2985,42 @@ msgstr ""
 #: activities/binary_bulb/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 3 (with counter and with values visible)."
-msgstr ""
+msgstr "Μετρήστε μέχρι το 3 (με μετρητή και με ορατές τιμές)."
 
 #: activities/binary_bulb/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 3 (without counter and with values visible)."
-msgstr ""
+msgstr "Μετρήστε μέχρι το 3 (χωρίς μετρητή και με ορατές τιμές)."
 
 #: activities/binary_bulb/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (with counter and with values visible)."
-msgstr ""
+msgstr "Μετρήστε μέχρι το 15 (με μετρητή και με ορατές τιμές)."
 
 #: activities/binary_bulb/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (without counter and with values visible)."
-msgstr ""
+msgstr "Μετρήστε μέχρι το 15 (χωρίς μετρητή και με ορατές τιμές)."
 
 #: activities/binary_bulb/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (with counter and with values visible)."
-msgstr ""
+msgstr "Μετρήστε μέχρι το 255 (με μετρητή και με ορατές τιμές)."
 
 #: activities/binary_bulb/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (without counter and with values visible)."
-msgstr ""
+msgstr "Μετρήστε μέχρι το 255 (χωρίς μετρητή και με ορατές τιμές)."
 
 #: activities/binary_bulb/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (without counter and without values visible)."
-msgstr ""
+msgstr "Μετρήστε μέχρι το 15 (χωρίς μετρητή και χωρίς ορατές τιμές)."
 
 #: activities/binary_bulb/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (without counter and without values visible)."
-msgstr ""
+msgstr "Μετρήστε μέχρι το 255 (χωρίς μετρητή και χωρίς ορατές τιμές)."
 
 #: activities/binary_bulb/resource/tutorial4.qml:31
 msgctxt "tutorial4|"
@@ -6099,12 +6054,9 @@ msgstr "Ψηφιακός ηλεκτρισμός"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "Δημιουργία και προσομοίωση ενός ψηφιακού ηλεκτρικού κυκλώματος."
+msgstr "Δημιουργήστε και προσομοιώστε ένα ψηφιακό λογικό κύκλωμα."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -6865,12 +6817,10 @@ msgstr ""
 
 #: activities/drawing_wheels/ActivityConfig.qml:29
 #: activities/sketch/ActivityConfig.qml:29
-#, fuzzy, qt-format
-#| msgctxt "guessnumber|"
-#| msgid "Number found!"
+#, qt-format
 msgctxt "ActivityConfig|"
 msgid "Number of undo: %1"
-msgstr "Βρήκες τον αριθμό!"
+msgstr "Αριθμός αναίρεσης: %1"
 
 #: activities/drawing_wheels/ActivityConfig.qml:44
 #: activities/sketch/ActivityConfig.qml:44
@@ -6879,33 +6829,28 @@ msgid ""
 "Warning: setting the number of undo too high can make the application crash "
 "if your device doesn't have enough memory."
 msgstr ""
+"Προειδοποίηση: Αν ορίσετε πολύ υψηλό αριθμό αναίρεσης, η εφαρμογή μπορεί να "
+"διακοπεί αν η συσκευή σας δεν έχει αρκετή μνήμη."
 
 #. Activity title
 #: activities/drawing_wheels/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "BrushToolPanel|"
-#| msgid "Drawing Tools"
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
-msgstr "Εργαλεία σχεδίασης"
+msgstr "Τροχοί σχεδίασης"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Touch the numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Roll the gear in the cogwheel to draw."
-msgstr "Άγγιξε τους αριθμούς με τη σωστή σειρά."
+msgstr "Γυρίστε το γρανάζι στον οδοντωτό τροχό για να σχεδιάσετε."
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr "Μάθε για ορισμένα ψηφιακά εργαλεία ζωγραφικής."
+msgstr ""
+"Ανακαλύψτε τα υποτροχοειδή (γεωμετρικές καμπύλες) και χρησιμοποιήστε τα ως "
+"ψηφιακά εργαλεία ζωγραφικής."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
@@ -6919,6 +6864,16 @@ msgid ""
 "file (vector format), along with a PNG file (pixel format). Only the SVG "
 "file can be opened again from the activity."
 msgstr ""
+"Δημιουργήστε όμορφα σχέδια περιστρέφοντας το γρανάζι με το επιλεγμένο στυλό. "
+"Επιλέξτε το μέγεθος του τροχού, το μέγεθος του γραναζιού, τις ρυθμίσεις του "
+"στυλό και το χρώμα από τα αναδυόμενα παράθυρα και πατήστε το κουμπί "
+"αναπαραγωγής για να περιστρέψετε το γρανάζι. Μπορείτε να χρησιμοποιήσετε το "
+"μενού αρχείων για να αποθηκεύσετε την εικόνα σας, να ανοίξετε μια εικόνα που "
+"αποθηκεύσατε προηγουμένως, ή να δημιουργήσετε μια νέα εικόνα με επιλεγμένο "
+"χρώμα φόντου. Η αποθήκευση εικόνας θα την αποθηκεύσει σε ένα αρχείο SVG "
+"(μορφή διανυσματικών γραφικών), μαζί με ένα αρχείο PNG (μορφή "
+"εικονοστοιχείων). Μόνο το αρχείο SVG μπορεί να ανοιχτεί ξανά από τη "
+"δραστηριότητα."
 
 #: activities/drawing_wheels/ActivityInfo.qml:29
 #: activities/sketch/ActivityInfo.qml:28
@@ -6947,41 +6902,29 @@ msgstr "Ctrl + O: Άνοιγμα εικόνας"
 #: activities/drawing_wheels/DrawingWheels.qml:399
 msgctxt "DrawingWheels|"
 msgid "File menu"
-msgstr ""
+msgstr "Αρχείο"
 
 #: activities/drawing_wheels/DrawingWheels.qml:411
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
-msgstr ""
+msgstr "Τροχός και γρανάζι"
 
 #: activities/drawing_wheels/DrawingWheels.qml:435
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Piano composition"
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
-msgstr "Σύνθεση στο πιάνο"
+msgstr "Μέγεθος και θέση του μολυβιού"
 
 #: activities/drawing_wheels/DrawingWheels.qml:447
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font selector"
 msgctxt "DrawingWheels|"
 msgid "Color selector"
-msgstr "Επιλογή γραμματοσειράς"
+msgstr "Επιλογέας χρώματος"
 
 #: activities/drawing_wheels/DrawingWheels.qml:474
-#, fuzzy
-#| msgctxt "OptionsRow|"
-#| msgid "Undo"
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Αναίρεση"
 
 #: activities/drawing_wheels/DrawingWheels.qml:486
-#, fuzzy
-#| msgctxt "Checkers|"
-#| msgid "Redo"
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "Ακύρωση αναίρεσης"
@@ -6989,51 +6932,39 @@ msgstr "Ακύρωση αναίρεσης"
 #: activities/drawing_wheels/DrawingWheels.qml:520
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
-msgstr ""
+msgstr "Διακοπή σχεδίασης"
 
 #: activities/drawing_wheels/DrawingWheels.qml:520
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
-msgstr ""
+msgstr "Εκκίνηση σχεδίασης"
 
 #: activities/drawing_wheels/DrawingWheels.qml:553
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
-msgstr ""
+msgstr "Εμφάνιση τροχού και γραναζιού"
 
 #: activities/drawing_wheels/DrawingWheels.qml:553
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
-msgstr ""
+msgstr "Απόκρυψη τροχού και γραναζιού"
 
 #: activities/drawing_wheels/DrawingWheels.qml:712
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Αποθήκευση εικόνας"
 
 #: activities/drawing_wheels/DrawingWheels.qml:727
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Open an image"
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Άνοιγμα εικόνας"
 
 #: activities/drawing_wheels/DrawingWheels.qml:756
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Create a new image"
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Δημιουργία νέας εικόνας"
 
 #: activities/drawing_wheels/DrawingWheels.qml:775
-#, fuzzy
-#| msgctxt "BackgroundColorSelector|"
-#| msgid "Background color"
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Χρώμα παρασκηνίου"
@@ -7041,25 +6972,20 @@ msgstr "Χρώμα παρασκηνίου"
 #: activities/drawing_wheels/DrawingWheels.qml:856
 msgctxt "DrawingWheels|"
 msgid "Wheel"
-msgstr ""
+msgstr "Τροχός"
 
 #: activities/drawing_wheels/DrawingWheels.qml:923
 msgctxt "DrawingWheels|"
 msgid "Gear"
-msgstr ""
+msgstr "Γρανάζι"
 
 #: activities/drawing_wheels/DrawingWheels.qml:986
-#, fuzzy, qt-format
-#| msgctxt "SignalGenerator|"
-#| msgid "%1 s"
+#, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
-msgstr "%1 δ."
+msgstr "%1 δόντια"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1004
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Ταχύτητα"
@@ -7067,25 +6993,19 @@ msgstr "Ταχύτητα"
 #: activities/drawing_wheels/DrawingWheels.qml:1020
 msgctxt "DrawingWheels|"
 msgid "Slow"
-msgstr ""
+msgstr "Αργά"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1040
 msgctxt "DrawingWheels|"
 msgid "Fast"
-msgstr ""
+msgstr "Γρήγορα"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1083
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font size"
 msgctxt "DrawingWheels|"
 msgid "Pen size"
-msgstr "Μέγεθος γραμματοσειράς"
+msgstr "Μέγεθος στυλό"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1120
-#, fuzzy
-#| msgctxt "ToolsPanel|"
-#| msgid "Opacity"
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Διαφάνεια"
@@ -7093,45 +7013,30 @@ msgstr "Διαφάνεια"
 #: activities/drawing_wheels/DrawingWheels.qml:1163
 msgctxt "DrawingWheels|"
 msgid "Offset"
-msgstr ""
+msgstr "Αντιστάθμιση"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1201
-#, fuzzy
-#| msgctxt "IntroMessage|"
-#| msgid "Start"
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
-msgstr "Έναρξη"
+msgstr "Έναρξη οδοντοστοιχίας"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1381
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "You did not save this image. Do you want to close this activity?"
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 "Δεν έχεις αποθηκεύσει την εικόνα. Θέλεις να κλείσεις αυτή τη δραστηριότητα;"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1382
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "Do you want to erase this image?"
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Θέλεις να διαγράψεις αυτή την εικόνα;"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1383
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Ναι"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1384
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "Όχι"
@@ -7755,13 +7660,6 @@ msgid "Chichén Itzá"
 msgstr "Τσιτσέν Ίτζα, Μεξικό"
 
 #: activities/explore_monuments/resource/board/board1.qml:20
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
-#| "the Yucatan Peninsula in Mexico, between Valladolid and Merida. It was "
-#| "established before the period of Christopher Colombus and probably served "
-#| "as the religion center of Yucatan for a while."
 msgctxt "board1|"
 msgid ""
 "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
@@ -7769,11 +7667,10 @@ msgid ""
 "established before the period of Christopher Columbus and probably served as "
 "the religion center of Yucatan for a while."
 msgstr ""
-"Η Τσιτσέν Ίτζα, που σημαίνει \"στο στόμιο του πηγαδιού του λαού Ίτζα\", "
-"είναι μια πόλη των Μάγιας στη χερσόνησο του Γιουκατάν στο Μεξικό, μεταξύ "
-"Βαγιαδολίδ και Μερίντα. Πρόκειται για μια προκολομβιανή πόλη που ιδρύθηκε "
-"τον 7ο μ.Χ. αι. και πιθανότατα λειτούργησε ως θρησκευτικό κέντρο του "
-"Γιουκατάν για μικρό χρονικό διάστημα."
+"Το Chichen Itza, που σημαίνει «στο στόμιο του πηγαδιού Itza», είναι μια πόλη "
+"των Μάγια στην χερσόνησο Γιουκατάν του Μεξικού, μεταξύ Βαγιαδολίδ και "
+"Μέριδα. Ιδρύθηκε πριν από την εποχή του Χριστόφορου Κολόμβου και πιθανότατα "
+"χρησίμευσε ως θρησκευτικό κέντρο του Γιουκατάν για κάποιο διάστημα."
 
 #: activities/explore_monuments/resource/board/board1.qml:30
 #: activities/explore_monuments/resource/board/board1.qml:33
@@ -8907,7 +8804,7 @@ msgstr "Κάνε κλικ στην τοποθεσία όπου βρίσκετα�
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "Απαγορευμένη Πόλη"
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8922,12 +8819,22 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
+"Η Απαγορευμένη Πόλη, που βρίσκεται στην καρδιά του Πεκίνου της Κίνας, είναι "
+"ένα μεγαλοπρεπές συγκρότημα αυτοκρατορικών ανακτόρων που χρησίμευσε ως "
+"κατοικία των κινέζων αυτοκρατόρων και πολιτικό κέντρο της χώρας για σχεδόν "
+"500 χρόνια, από τη δυναστεία των Μινγκ (1368-1644) έως το τέλος της "
+"δυναστείας των Τσινγκ (1644-1912). Χτισμένο μεταξύ 1406 και 1420, αυτό το "
+"εκτεταμένο αρχιτεκτονικό αριστούργημα εκτείνεται σε 180 στρέμματα και "
+"διαθέτει πάνω από 980 διατηρημένα κτίρια με 8.700 δωμάτια, παρουσιάζοντας "
+"τον παραδοσιακό κινεζικό σχεδιασμό των παλατιών. Περιτριγυρισμένη από τάφρο "
+"και ένα τεράστιο τείχος, η Απαγορευμένη Πόλη ήταν κάποτε απρόσιτη στο ευρύ "
+"κοινό, συμβολίζοντας την αυτοκρατορική εξουσία και την αποκλειστικότητα."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "Ο γιγάντιος Βούδας του Λέσαν"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8942,15 +8849,23 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
+"Ο Γίγαντας Βούδας του Λέσαν, που βρίσκεται στην επαρχία Σιτσουάν της Κίνας, "
+"είναι ένα κολοσσιαίο άγαλμα σκαλισμένο σε ένα βράχο στη συμβολή των ποταμών "
+"Μιν, Νταντού και Τσινγκί. Με ύψος 71 μέτρα (233 πόδια), είναι το ψηλότερο "
+"προ-μοντέρνο άγαλμα στον κόσμο και αποτελεί Μνημείο Παγκόσμιας Κληρονομιάς "
+"της UNESCO. Χτισμένο κατά τη διάρκεια της δυναστείας των Τανγκ (713-803 μ."
+"Χ.), το άγαλμα αναπαριστά τον Μαϊτρέγια, τον Βούδα του μέλλοντος, και "
+"δημιουργήθηκε για να ηρεμήσει τα ταραγμένα νερά που απειλούσαν την τοπική "
+"ναυσιπλοΐα. Έξυπνα σχεδιασμένο, το άγαλμα περιλαμβάνει ένα κρυφό σύστημα "
+"αποστράγγισης για την πρόληψη της διάβρωσης. Η γαλήνια έκφρασή του και η "
+"περίπλοκη τεχνική κατασκευής του το καθιστούν σύμβολο πνευματικής και "
+"καλλιτεχνικής επιτυχίας."
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Το παλάτι του Μαϊσόρ"
+msgstr "Παλάτι της Potala"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8965,12 +8880,22 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
+"Το Παλάτι Ποτάλα, που βρίσκεται στο Κόκκινο Λόφο στη Λάσα του Θιβέτ, είναι "
+"ένα εμβληματικό σύμβολο της θιβετιανής κουλτούρας και μνημείο παγκόσμιας "
+"κληρονομιάς της UNESCO. Χτίστηκε τον 7ο αιώνα, ενώ τον 17ο αιώνα προστέθηκαν "
+"στην αρχική κατασκευή αρκετές επεκτάσεις. Χρησίμευε ως χειμερινή κατοικία "
+"των Δαλάι Λάμα και κέντρο της θιβετιανής διακυβέρνησης. Με ύψος 13 ορόφων "
+"και με πάνω από 1.000 δωμάτια, το παλάτι συνδυάζει περίπλοκη θιβετιανή "
+"αρχιτεκτονική, ζωντανές τοιχογραφίες και ιερά κειμήλια. Χωρίζεται στο Λευκό "
+"Παλάτι, που στεγάζει διοικητικούς χώρους, και στο Κόκκινο Παλάτι, αφιερωμένο "
+"στις θρησκευτικές σπουδές και την προσευχή. Το Παλάτι Ποτάλα αποτελεί "
+"μνημείο της πνευματικής και ιστορικής κληρονομιάς του Θιβέτ."
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "Στρατός από τερακότα"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8982,12 +8907,19 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
+"Ο Στρατός από Τερακότα είναι μια συλλογή χιλιάδων πήλινων στρατιωτών, αλόγων "
+"και αρμάτων σε φυσικό μέγεθος, που θάφτηκαν μαζί με τον πρώτο αυτοκράτορα "
+"της Κίνας, Qin Shi Huang, για να τον συνοδεύσουν στη μετά θάνατον ζωή. "
+"Ανακαλύφθηκαν το 1974 κοντά στο Xi'an, χρονολογούνται περίπου στο 210 π.Χ. "
+"και είναι διάσημα για τις απίστευτες λεπτομέρειές τους, με κάθε πολεμιστή να "
+"είναι μοναδικά κατασκευασμένος ώστε να αντιπροσωπεύει τις διαφορετικές "
+"τάξεις και ρόλους ενός αρχαίου κινεζικού στρατού."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr ""
+msgstr "Παγόδες Ήλιου και Σελήνης"
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -9002,15 +8934,23 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
+"Οι Παγόδες του Ήλιου και της Σελήνης, που βρίσκονται στο Γκουιλίν της Κίνας, "
+"είναι δύο εμβληματικοί δίδυμοι πύργοι που συμβολίζουν την πολιτιστική και "
+"πνευματική κληρονομιά της πόλης. Χτισμένες αρχικά κατά τη διάρκεια της "
+"δυναστείας των Τανγκ, ανακατασκευάστηκαν τον 20ό αιώνα ως εντυπωσιακά "
+"ορόσημα στη λίμνη Σανχού. Η Παγόδα του Ήλιου, με ύψος 41 μέτρα, είναι μια "
+"χάλκινη κατασκευή —η ψηλότερη του είδους της στον κόσμο— ενώ η Παγόδα της "
+"Σελήνης, με ύψος 35 μέτρα, είναι κατασκευασμένη από γυαλισμένα πλακάκια. "
+"Αυτές οι παγόδες συμβολίζουν την αρμονία του γιν και του γιανγκ και "
+"συνδέονται με ένα υποβρύχιο γυάλινο τούνελ. Φωτισμένες τη νύχτα, αποτελούν "
+"δημοφιλείς τουριστικούς προορισμούς που αναδεικνύουν την παραδοσιακή "
+"κινεζική αρχιτεκτονική και τη σύγχρονη ευρηματικότητα."
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Πύργος του Άιφελ"
+msgstr "Πύργοι Diaolou"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -9025,28 +8965,33 @@ msgid ""
 "UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
 "towers remain, offering insight into this unique architectural heritage."
 msgstr ""
+"Οι πύργοι Diaolou, που βρίσκονται στην Kaiping, στην επαρχία Guangdong της "
+"Κίνας, είναι οχυρωμένα πολυώροφα κτίρια που χτίστηκαν από τα τέλη του 19ου "
+"έως τις αρχές του 20ού αιώνα για προστασία από ληστές και πλημμύρες. "
+"Συνδυάζοντας δυτικά αρχιτεκτονικά στυλ, όπως το ρωμανικό και το μπαρόκ, με "
+"παραδοσιακά κινεζικά στοιχεία, αντανακλούν τον πλούτο και την επιρροή των "
+"κινέζων μεταναστών στο εξωτερικό. Κατασκευασμένοι από οπλισμένο σκυρόδεμα, "
+"αυτοί οι πύργοι συμβολίζουν μια περίοδο πολιτιστικής και οικονομικής "
+"μετάβασης στην αγροτική Κίνα. Ανακηρυγμένοι το 2007 ως Μνημείο Παγκόσμιας "
+"Κληρονομιάς της UNESCO, περίπου 1.800 από τους 3.000 αρχικούς πύργους "
+"παραμένουν, προσφέροντας μια εικόνα αυτής της μοναδικής αρχιτεκτονικής "
+"κληρονομιάς."
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Μνημεία της Ινδίας"
+msgstr "Μνημεία της Κίνας"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
-msgstr "Κάνε κλικ στην τοποθεσία που βρίσκεται το συγκεκριμένο μνημείο."
+msgstr "Κάντε κλικ στην τοποθεσία του συγκεκριμένου μνημείου."
 
 #: activities/explore_monuments/resource/board/board8.qml:17
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "Το Πάνθεον"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -9063,12 +9008,24 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
+"Το Πάνθεον στη Ρώμη της Ιταλίας είναι ένας εμβληματικός αρχαίος ναός που "
+"χτίστηκε γύρω στο 126 μ.Χ. κατά τη διάρκεια της βασιλείας του αυτοκράτορα "
+"Αδριανού, στη θέση παλαιότερων κτιρίων που είχε αναθέσει ο Μάρκος Αγρίππας. "
+"Φημισμένο για την αρχιτεκτονική του μεγαλοπρέπεια, διαθέτει μια τεράστια "
+"θολωτή οροφή με κεντρικό οπή, που συμβολίζει τον ουρανό και επιτρέπει στο "
+"φυσικό φως να φωτίζει το εσωτερικό. Αρχικά αφιερωμένο σε όλους τους "
+"ρωμαϊκούς θεούς, μετατράπηκε αργότερα σε χριστιανική εκκλησία, γνωστή ως "
+"Βασιλική της Αγίας Μαρίας και των Μαρτύρων (Santa Maria ad Martyres), το 609 "
+"μ.Χ. Ο θόλος του, ο μεγαλύτερος θόλος από μη οπλισμένο σκυρόδεμα στον κόσμο, "
+"παρουσιάζει αξιοσημείωτη μηχανική και συμμετρία, εμπνέοντας αρχιτέκτονες για "
+"αιώνες. Οι αρμονικές αναλογίες και η ιστορική σημασία του Πάνθεον το "
+"καθιστούν ένα διαχρονικό αριστούργημα της κλασικής αρχιτεκτονικής."
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "Καθεδρικός ναός του Μιλάνου"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -9083,15 +9040,24 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
+"Ο καθεδρικός ναός του Μιλάνου, γνωστός και ως Duomo di Milano, είναι ένα "
+"εμβληματικό γοτθικό αριστούργημα που βρίσκεται στην καρδιά του Μιλάνου, στην "
+"Ιταλία. Χτισμένος σε διάστημα σχεδόν έξι αιώνων, είναι ένας από τους "
+"μεγαλύτερους καθεδρικούς ναούς στον κόσμο και σύμβολο της καλλιτεχνικής και "
+"πολιτιστικής κληρονομιάς του Μιλάνου. Η περίτεχνη πρόσοψή του είναι "
+"διακοσμημένη με αμέτρητα αγάλματα, κωδωνοστάσια και γκαργκόιλ, που "
+"αντανακλούν το μεγαλείο της γοτθικής αρχιτεκτονικής. Οι επισκέπτες μπορούν "
+"να εξερευνήσουν το εντυπωσιακό εσωτερικό του, με τα όμορφα βιτρό παράθυρα "
+"και τις περίπλοκες μαρμάρινες λεπτομέρειες, ή να ανέβουν στην οροφή για να "
+"απολαύσουν την εκπληκτική θέα της πόλης και των Άλπεων. Ο καθεδρικός ναός "
+"αποτελεί μνημείο της πλούσιας ιστορίας και της αρχιτεκτονικής μεγαλοπρέπειας "
+"της Ιταλίας."
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Καθεδρικός ναός της Βορμς"
+msgstr "Καθεδρικός ναός της Φλωρεντίας"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -9107,15 +9073,24 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
+"Ο καθεδρικός ναός της Φλωρεντίας, επίσημα γνωστός ως Cattedrale di Santa "
+"Maria del Fiore, είναι ένα φημισμένο αριστούργημα γοτθικής και "
+"αναγεννησιακής αρχιτεκτονικής που βρίσκεται στη Φλωρεντία της Ιταλίας. "
+"Ολοκληρώθηκε το 1436 και είναι διάσημος για τον τεράστιο κόκκινο τρούλο του, "
+"που σχεδιάστηκε από τον Filippo Brunelleschi και παραμένει ένα θαύμα της "
+"μηχανικής και σύμβολο της πόλης. Η περίτεχνη μαρμάρινη πρόσοψη του "
+"καθεδρικού ναού, που προστέθηκε τον 19ο αιώνα, συμπληρώνει το πλούσια "
+"διακοσμημένο εσωτερικό και τους καλλιτεχνικούς θησαυρούς του. Μαζί με το "
+"Campanile του Giotto και το Βαπτιστήριο του Αγίου Ιωάννη, αποτελεί μέρος του "
+"Μνημείου Παγκόσμιας Κληρονομιάς της UNESCO, προσελκύοντας εκατομμύρια "
+"επισκέπτες κάθε χρόνο για την ιστορική, πολιτιστική και αρχιτεκτονική του "
+"σημασία."
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Πύργος του Ανόι"
+msgstr "Πύργος της Πίζας"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -9130,12 +9105,22 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
+"Ο Πύργος της Πίζας, που βρίσκεται στην ιταλική πόλη της Πίζας, είναι ένα "
+"παγκοσμίως γνωστό αρχιτεκτονικό θαύμα. Χτισμένος ως ανεξάρτητο καμπαναριό "
+"για τον καθεδρικό ναό της πόλης, είναι διάσημος για την ακούσια κλίση του, "
+"που προκλήθηκε από το ασταθές έδαφος των θεμελίων. Η κατασκευή του πύργου "
+"ξεκίνησε το 1173 και διήρκεσε σχεδόν 200 χρόνια, κατά τη διάρκεια των οποίων "
+"έγιναν προσπάθειες για τη σταθεροποίηση της κλίσης του. Με ύψος περίπου 56 "
+"μέτρα (183 πόδια), ο πύργος έχει ρωμαϊκό σχεδιασμό και διαθέτει οκτώ "
+"ορόφους, συμπεριλαμβανομένου ενός καμπαναριού, διακοσμημένο με περίτεχνα "
+"σκαλισμένες κολόνες και καμάρες. Αναγνωρισμένος ως Μνημείο Παγκόσμιας "
+"Κληρονομιάς της UNESCO, παραμένει σύμβολο ανθεκτικότητας και ευρηματικότητας."
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr ""
+msgstr "Βασιλική του Αγίου Μάρκου"
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -9151,12 +9136,24 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
+"Η Βασιλική του Αγίου Μάρκου, που βρίσκεται στη Βενετία της Ιταλίας, είναι "
+"ένα εμβληματικό αριστούργημα της βυζαντινής αρχιτεκτονικής και ένα από τα "
+"πιο διάσημα αξιοθέατα της πόλης. Χτισμένη αρχικά το 828 για να στεγάσει τα "
+"λείψανα του Ευαγγελιστή Αγίου Μάρκου, ανακατασκευάστηκε στη σημερινή της "
+"μορφή τον 11ο αιώνα. Γνωστή για τον πολυτελή σχεδιασμό της, η βασιλική "
+"συνδυάζει ανατολικές και δυτικές επιρροές, που είναι εμφανείς στους πέντε "
+"τρούλους, τα περίτεχνα μωσαϊκά και την περίτεχνη πρόσοψη που κοσμείται με "
+"αγάλματα και γλυπτά. Το εσωτερικό είναι πλούσια διακοσμημένο με χρυσά "
+"μωσαϊκά και μαρμάρινα δάπεδα, αναδεικνύοντας τον πλούτο και τη δύναμη της "
+"Βενετικής Δημοκρατίας. Δίπλα στην πλατεία του Αγίου Μάρκου, παραμένει "
+"σύμβολο της ιστορικής, πολιτιστικής και θρησκευτικής κληρονομιάς της "
+"Βενετίας."
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr ""
+msgstr "Πομπηία"
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -9172,31 +9169,33 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
+"Η Πομπηία ήταν μια αρχαία ρωμαϊκή πόλη που βρισκόταν κοντά στη σημερινή "
+"Νάπολη της Ιταλίας και είναι γνωστή για την εξαιρετική της διατήρηση μετά "
+"την καταστροφή της από την έκρηξη του Βεζούβιου το 79 μ.Χ. Η έκρηξη "
+"προκάλεσε έναν θανατηφόρο συνδυασμό τέφρας, ελαφρόπετρας και πυροκλαστικών "
+"ροών, που κατέκλυσαν την πόλη και τους κατοίκους της, διατηρώντας κτίρια, "
+"αντικείμενα και ακόμη και ανθρώπινα λείψανα με απίστευτη λεπτομέρεια. Οι "
+"ανασκαφές στην Πομπηία προσφέρουν πολύτιμες πληροφορίες για την καθημερινή "
+"ζωή, την αρχιτεκτονική και την κοινωνία των Ρωμαίων, αποκαλύπτοντας μια πόλη "
+"με καλά σχεδιασμένους δρόμους, σπίτια, δημόσια λουτρά και ναούς. Ο χώρος "
+"είναι πλέον Μνημείο Παγκόσμιας Κληρονομιάς της UNESCO και παραμένει μία από "
+"τις σημαντικότερες αρχαιολογικές ανακαλύψεις στην ιστορία."
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Μνημεία της Ινδίας"
+msgstr "Μνημεία της Ιταλίας"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
-msgstr "Κάνε κλικ στην τοποθεσία που βρίσκεται το συγκεκριμένο μνημείο."
+msgstr "Κάντε κλικ στην τοποθεσία του συγκεκριμένου μνημείου."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Μεικτή περίπτωση"
+msgstr "Κάστρο Himeji"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -9209,12 +9208,20 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
+"Το Himeji-jo είναι το καλύτερο σωζόμενο παράδειγμα ιαπωνικής αρχιτεκτονικής "
+"κάστρου των αρχών του 17ου αιώνα, αποτελούμενο από 83 κτίρια με εξελιγμένα "
+"συστήματα άμυνας και ευφυείς μηχανισμούς προστασίας που χρονολογούνται από "
+"τις αρχές της περιόδου Σογκούν. Πρόκειται για ένα αριστούργημα ξύλινης "
+"κατασκευής, που συνδυάζει τη λειτουργικότητα με την αισθητική, τόσο στην "
+"κομψή του εμφάνιση, που ενοποιείται από τους λευκούς επιχρισμένους τοίχους "
+"από πηλό, όσο και στη λεπτότητα των σχέσεων μεταξύ των όγκων των κτιρίων και "
+"των πολλαπλών στρωμάτων της στέγης."
 
 #: activities/explore_monuments/resource/board/board9.qml:28
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr ""
+msgstr "Πάρκο Ειρήνης της Χιροσίμα"
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -9230,12 +9237,23 @@ msgid ""
 "a solemn space for reflection, honoring the lives lost and advocating for "
 "global peace."
 msgstr ""
+"Το Πάρκο Ειρήνης της Χιροσίμα είναι ένα σύμβολο ειρήνης και μια υπενθύμιση "
+"των καταστροφικών συνεπειών του πολέμου. Βρίσκεται στη Χιροσίμα της Ιαπωνίας "
+"και τιμά τη μνήμη των θυμάτων της ατομικής βόμβας που έπεσε στις 6 Αυγούστου "
+"1945. Στο πάρκο υπάρχουν διάφορα μνημεία, μεταξύ των οποίων και ο "
+"εμβληματικός Θόλος της Ατομικής Βόμβας, που κάποτε ήταν κυβερνητικό κτίριο "
+"και σήμερα αποτελεί Μνημείο Παγκόσμιας Κληρονομιάς της UNESCO. Στο πάρκο "
+"βρίσκεται επίσης το Μουσείο Ειρήνης της Χιροσίμα, το οποίο ενημερώνει τους "
+"επισκέπτες για τα γεγονότα που περιβάλλουν τη βομβιστική επίθεση και προωθεί "
+"ένα μήνυμα ειρήνης, μη βίας και σημασίας του πυρηνικού αφοπλισμού. Αποτελεί "
+"έναν χώρο περισυλλογής, όπου τιμάται η μνήμη των θυμάτων και προωθείται η "
+"παγκόσμια ειρήνη."
 
 #: activities/explore_monuments/resource/board/board9.qml:39
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr ""
+msgstr "Ιερό Αρακούρα Φούτζι Σένγκεν"
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -9251,12 +9269,24 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
+"Το ιερό ιδρύθηκε το 705 για να στεγάσει τη θεότητα του τόπου. Μετά τη μεγάλη "
+"έκρηξη του όρους Φούτζι το 807, ο αυτοκράτορας έστειλε έναν αυτοκρατορικό "
+"απεσταλμένο σε αυτό το ιερό για να τελέσει ένα τελετουργικό με σκοπό να "
+"σταματήσει η έκρηξη. Λέγεται ότι κατά τη διάρκεια της περιόδου των Πολεμικών "
+"Κρατών, όταν ο Τακέντα Νομπουτόρα, πατέρας του διάσημου πολέμαρχου Τακέντα "
+"Σινγκέν, πολεμούσε με την οικογένεια Χότζο, έστησε εδώ το στρατόπεδό του, "
+"προσευχήθηκε για τη νίκη και κέρδισε τη μάχη. Στη συνέχεια, αφιέρωσε το "
+"σπαθί του σε αυτό το ιερό. Σήμερα, ντόπιοι και επισκέπτες από μακριά "
+"επισκέπτονται το ιερό για να αποτρέψουν το κακό, να προσευχηθούν για την "
+"ευτυχία της οικογένειας και τον ασφαλή τοκετό. Την άνοιξη, τα κερασιά "
+"ανθίζουν και πλήθη συγκεντρώνονται για να απολαύσουν την εκπληκτική θέα του "
+"όρους Φούτζι."
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr ""
+msgstr "Κάστρο Σούρι της Οκινάουα"
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -9272,22 +9302,29 @@ msgid ""
 "much of the castle was lost in a fire in 2019, but efforts to restore it are "
 "ongoing, reflecting its enduring importance to Okinawa's heritage."
 msgstr ""
+"Το Κάστρο Σούρι, που βρίσκεται στη Νάχα της Οκινάουα, Ιαπωνία, είναι μνημείο "
+"παγκόσμιας κληρονομιάς της UNESCO και σύμβολο της πλούσιας πολιτιστικής "
+"ιστορίας του Βασιλείου Ρюкю. Χτισμένο αρχικά τον 14ο αιώνα, το κάστρο υπήρξε "
+"για αιώνες το πολιτικό, οικονομικό και πολιτιστικό κέντρο του βασιλείου. "
+"Φημισμένο για τη χαρακτηριστική συγχώνευση των κινεζικών και ιαπωνικών "
+"αρχιτεκτονικών στυλ, το Κάστρο Σούρι διαθέτει βερμιλιόν λακαρισμένες "
+"κατασκευές, περίτεχνα διακοσμητικά στοιχεία και μια επιβλητική θέση στην "
+"κορυφή ενός λόφου. Αν και καταστράφηκε κατά τη διάρκεια του Β' Παγκοσμίου "
+"Πολέμου, ανακατασκευάστηκε με μεγάλη προσοχή και έγινε ένα σημαντικό "
+"τουριστικό αξιοθέατο. Δυστυχώς, μεγάλο μέρος του κάστρου καταστράφηκε σε μια "
+"πυρκαγιά το 2019, αλλά οι προσπάθειες για την αποκατάστασή του συνεχίζονται, "
+"αντανακλώντας τη διαχρονική σημασία του για την πολιτιστική κληρονομιά της "
+"Οκινάουα."
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Μνημεία της Γαλλίας"
+msgstr "Μνημεία της Ιαπωνίας"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
-msgstr "Κάνε κλικ στην τοποθεσία που βρίσκεται το συγκεκριμένο μνημείο."
+msgstr "Κάντε κλικ στην τοποθεσία του συγκεκριμένου μνημείου."
 
 #. Activity title
 #: activities/explore_world_animals/ActivityInfo.qml:19
@@ -15382,12 +15419,9 @@ msgstr "Αριθμός που θα πρέπει να βρεθεί μεταξύ 0
 
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Number to find between 0 and 20."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
-msgstr "Αριθμός που θα πρέπει να βρεθεί μεταξύ 0 και 20."
+msgstr "Δεκαδικός αριθμός που πρέπει να βρεθεί μεταξύ 0 και 4."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"
@@ -15591,36 +15625,21 @@ msgid "Empty"
 msgstr "Kενό"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Grammatical analysis"
 msgctxt "GrammarAnalysis|"
 msgid "Grammatical analysis"
 msgstr "Μέρη του λόγου 2"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "GrammarAnalysis|"
 msgid "Learn to identify grammatical classes."
 msgstr "Μάθε να αναγνωρίζεις τα μέρη του λόγου."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:28
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid ""
-#| "Find all the words corresponding to the requested grammatical classes."
 msgctxt "GrammarAnalysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr "Βρες όλες τις λέξεις που αντιστοιχούν στα ζητούμενα μέρη του λόγου."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a grammatical class from the list, then select the box under a "
-#| "word and assign it the class."
 msgctxt "GrammarAnalysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
@@ -15630,9 +15649,6 @@ msgstr ""
 "κάτω από μια λέξη για να κάνεις την αντιστοίχιση."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Leave the box blank if no class matches."
 msgctxt "GrammarAnalysis|"
 msgid "Leave the box blank if no class matches."
 msgstr "Άφησε το πεδίο κενό εάν δεν ταιριάζει κανένα μέρος του λόγου."
@@ -15665,35 +15681,21 @@ msgid "Leave the box blank if the class doesn't match."
 msgstr "Άφησε το πεδίο κενό εάν το μέρος του λόγου δεν ταιριάζει."
 
 #: activities/grammar_classes/GrammarClasses.qml:15
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Grammatical classes"
 msgctxt "GrammarClasses|"
 msgid "Grammatical classes"
 msgstr "Μέρη του λόγου 1"
 
 #: activities/grammar_classes/GrammarClasses.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "GrammarClasses|"
 msgid "Learn to identify grammatical classes."
 msgstr "Μάθε να αναγνωρίζεις τα μέρη του λόγου."
 
 #: activities/grammar_classes/GrammarClasses.qml:17
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Find all the words corresponding to the requested grammatical class."
 msgctxt "GrammarClasses|"
 msgid "Find all the words corresponding to the requested grammatical class."
 msgstr "Βρες όλες τις λέξεις που αντιστοιχούν στο ζητούμενο μέρος του λόγου."
 
 #: activities/grammar_classes/GrammarClasses.qml:18
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid ""
-#| "Select the grammatical class from the list, then select the box under a "
-#| "word and assign it the class."
 msgctxt "GrammarClasses|"
 msgid ""
 "Select the grammatical class from the list, then select the box under a word "
@@ -15703,9 +15705,6 @@ msgstr ""
 "κάτω από μια λέξη για να κάνεις την αντιστοίχιση."
 
 #: activities/grammar_classes/GrammarClasses.qml:19
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Leave the box blank if the class doesn't match."
 msgctxt "GrammarClasses|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr "Άφησε το πεδίο κενό εάν το μέρος του λόγου δεν ταιριάζει."
@@ -15959,12 +15958,9 @@ msgid "Division required."
 msgstr "Απαιτείται διαίρεση."
 
 #: activities/guess24/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "Αριθμητικές πράξεις"
+msgstr "Απαιτούνται όλοι οι τελεστές."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -16442,7 +16438,7 @@ msgstr "ιστιοπλοϊκό"
 #: activities/imagename/resource/board/board1_0.qml:75
 msgctxt "board1_0|"
 msgid "lamp"
-msgstr "φωτιστικό"
+msgstr "λάμπα"
 
 #: activities/imagename/resource/board/board1_0.qml:83
 msgctxt "board1_0|"
@@ -16627,7 +16623,7 @@ msgstr "ιστιοπλοϊκό"
 #: activities/imagename/resource/board/board7_0.qml:82
 msgctxt "board7_0|"
 msgid "bulb"
-msgstr "λάμπα"
+msgstr "φωτιστικό"
 
 #: activities/imagename/resource/board/board7_0.qml:90
 msgctxt "board7_0|"
@@ -17306,11 +17302,6 @@ msgstr ""
 "ελέγξεις την απάντησή σου."
 
 #: activities/learn_decimals/Learn_decimals.qml:30
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A decimal number is displayed. The bar with the arrow represents a full "
-#| "unit, and each square in it represents one tenth of this unit."
 msgctxt "Learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
@@ -17321,13 +17312,6 @@ msgstr ""
 "μονάδας."
 
 #: activities/learn_decimals/Learn_decimals.qml:34
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a part of the bar, and drag the selected part of "
-#| "the bar to the empty area. Repeat these steps until the number of dropped "
-#| "bars corresponds to the displayed decimal number. Then click on the OK "
-#| "button to validate your answer."
 msgctxt "Learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -17435,12 +17419,6 @@ msgid "Numbers: type the result"
 msgstr "Αριθμοί: γράψε το αποτέλεσμα"
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "An addition with two decimal numbers is displayed. The bar with the arrow "
-#| "represents a full unit, and each square in it represents one tenth of "
-#| "this unit."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "An addition with two decimal numbers is displayed. The bar with the arrow "
@@ -17452,13 +17430,6 @@ msgstr ""
 "δέκατο της μονάδας."
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a part of the bar, and drag the selected part of "
-#| "the bar to the empty area. Repeat these steps until the number of dropped "
-#| "bars corresponds to the result of the addition, and click on the OK "
-#| "button to validate your answer."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -17472,11 +17443,6 @@ msgstr ""
 "πλήκτρο OK για να ελέγξεις την απάντησή σου."
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:24
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -17537,12 +17503,6 @@ msgstr ""
 "πράξης"
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A subtraction with two decimal numbers is displayed. Below it, the first "
-#| "number from the subtraction is represented with bars. One bar represents "
-#| "a full unit, and each square in it represents one tenth of this unit."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "A subtraction with two decimal numbers is displayed. Below it, the first "
@@ -17554,11 +17514,6 @@ msgstr ""
 "μονάδα και κάθε τετράγωνο στη μπάρα αναπαριστά ένα δέκατο της μονάδας."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Click on the squares to subtract them and display the result of the "
-#| "operation, and click on the OK button to validate your answer."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
@@ -17570,11 +17525,6 @@ msgstr ""
 "πράξης. Κάνε κλικ στο OK για να ελέγξεις την απάντησή σου."
 
 #: activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:24
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "Learn_decimals_subtractions|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -17744,22 +17694,12 @@ msgstr ""
 "για να ελέγξεις την απάντησή σου."
 
 #: activities/learn_quantities/Learn_quantities.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgctxt "Learn_quantities|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
-msgstr "Ζητείται μια ποσότητα. Με το βέλος επιλέγονται μέχρι 10 πορτοκάλια."
+msgstr ""
+"Ζητείται μια ποσότητα. Το βέλος επιτρέπει την επιλογή έως και 10 πορτοκαλιών."
 
 #: activities/learn_quantities/Learn_quantities.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a number of oranges, and drag the selected "
-#| "oranges to the empty area. Repeat these steps until the number of oranges "
-#| "corresponds to the requested quantity. Then click on the OK button to "
-#| "validate your answer."
 msgctxt "Learn_quantities|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "
@@ -18234,18 +18174,13 @@ msgstr ""
 "ενώ τη δίδαξε μυστικά στο Ινστιτούτο."
 
 #: activities/louis-braille/louis_braille_data.js:52
-#, fuzzy
-#| msgctxt "louis_braille_data|"
-#| msgid ""
-#| "He revised and extended braille to include mathematics, symbols, "
-#| "punctuations and music notations."
 msgctxt "louis_braille_data|"
 msgid ""
 "He revised and extended braille to include mathematics, symbols, punctuation "
 "and music notations."
 msgstr ""
-"Αναθεώρησε και επέκτεινε το σύστημα Μπράιγ για να συμπεριλάβει μαθηματικά "
-"σύμβολα, σημεία στίξης και τη μουσική σημειογραφία."
+"Αναθεώρησε και επέκτεινε τη γραφή Μπράιγ για να συμπεριλάβει μαθηματικά, "
+"σύμβολα, σημεία στίξης και μουσικές σημειώσεις."
 
 #: activities/louis-braille/louis_braille_data.js:57
 msgctxt "louis_braille_data|"
@@ -18276,12 +18211,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "Μαγικό καπέλο (+, -)"
+msgstr "Το καπέλο του μάγου (αφαίρεση)"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -18374,12 +18306,9 @@ msgstr "%1x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "Μαγικό καπέλο (+, -)"
+msgstr "Το καπέλο του μάγου (πρόσθεση)"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -18417,45 +18346,45 @@ msgstr ""
 #: activities/magic-hat-plus/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Add stars up to 3."
-msgstr "Πρόσθεσε αστέρια μέχρι 3."
+msgstr "Πρόσθεσε μέχρι 3 αστέρια."
 
 #: activities/magic-hat-plus/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Add stars up to 4."
-msgstr "Πρόσθεσε αστέρια μέχρι 5."
+msgstr "Πρόσθεσε μέχρι 4 αστέρια."
 
 #: activities/magic-hat-plus/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Add stars up to 5."
-msgstr "Πρόσθεσε αστέρια μέχρι 5."
+msgstr "Πρόσθεσε μέχρι 5 αστέρια."
 
 #: activities/magic-hat-plus/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Add stars up to 10."
-msgstr "Πρόσθεσε αστέρια μέχρι 10."
+msgstr "Πρόσθεσε μέχρι 10 αστέρια."
 
 #: activities/magic-hat-plus/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Add stars up to 30."
-msgstr "Πρόσθεσε αστέρια μέχρι 30."
+msgstr "Πρόσθεσε μέχρι 30 αστέρια."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
 #: activities/magic-hat-plus/resource/6/Data.qml:14
 msgctxt "Data|"
 msgid "Add stars up to 100 with coefficients."
-msgstr "Πρόσθεσε αστέρια μέχρι 100 με συντελεστές."
+msgstr "Πρόσθεσε μέχρι 100 αστέρια με συντελεστές."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
 #: activities/magic-hat-plus/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "Add stars up to 1000 with coefficients."
-msgstr "Πρόσθεσε αστέρια μέχρι 1000 με συντελεστές."
+msgstr "Πρόσθεσε μέχρι 1000  αστέρια με συντελεστές."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
 #: activities/magic-hat-plus/resource/8/Data.qml:14
 msgctxt "Data|"
 msgid "Add stars up to 10000 with coefficients."
-msgstr "Πρόσθεσε αστέρια μέχρι 10000 με συντελεστές."
+msgstr "Πρόσθεσε μέχρι 10000 αστέρια με συντελεστές."
 
 #. Activity title
 #: activities/maze/ActivityInfo.qml:15
@@ -20216,7 +20145,7 @@ msgstr "Αραίωση γραμματοσειράς"
 #: activities/menu/ConfigurationItem.qml:445
 msgctxt "ConfigurationItem|"
 msgid "Teacher's server config"
-msgstr ""
+msgstr "Διαμόρφωση διακομιστή εκπαιδευτικού"
 
 #: activities/menu/ConfigurationItem.qml:653
 msgctxt "ConfigurationItem|"
@@ -20315,7 +20244,7 @@ msgstr "Λεξιλόγιο"
 #: activities/menu/Menu.qml:211
 msgctxt "Menu|"
 msgid "GCompris is not connected to teacher's server."
-msgstr ""
+msgstr "Το GCompris δεν είναι συνδεδεμένο με τον διακομιστή του εκπαιδευτικού."
 
 #: activities/menu/Menu.qml:212
 msgctxt "Menu|"
@@ -20323,22 +20252,26 @@ msgid ""
 "GCompris is connected to teacher's server, but the password entered for "
 "selected user is wrong."
 msgstr ""
+"Το GCompris είναι συνδεδεμένο με τον διακομιστή του εκπαιδευτικού, αλλά ο "
+"κωδικός πρόσβασης που εισήχθη για τον επιλεγμένο χρήστη είναι λανθασμένος."
 
 #: activities/menu/Menu.qml:213
 msgctxt "Menu|"
 msgid ""
 "GCompris is connected to teacher's server, and the user is authenticated."
 msgstr ""
+"Το GCompris συνδέεται με τον διακομιστή του εκπαιδευτικού και ο χρήστης "
+"πιστοποιείται."
 
 #: activities/menu/Menu.qml:214
 msgctxt "Menu|"
 msgid "GCompris has lost the connection to teacher's server."
-msgstr ""
+msgstr "Το GCompris έχασε τη σύνδεση με τον διακομιστή του δασκάλου."
 
 #: activities/menu/Menu.qml:215
 msgctxt "Menu|"
 msgid "GCompris has been disconnected from teacher's server."
-msgstr ""
+msgstr "Το GCompris αποσυνδέθηκε από τον διακομιστή του εκπαιδευτικού."
 
 #: activities/menu/Menu.qml:216
 msgctxt "Menu|"
@@ -20346,6 +20279,8 @@ msgid ""
 "GCompris is connected to teacher's server, but the user is not yet "
 "authenticated."
 msgstr ""
+"Το GCompris είναι συνδεδεμένο με τον διακομιστή του εκπαιδευτικού, αλλά ο "
+"χρήστης δεν έχει ακόμη πιστοποιηθεί."
 
 #: activities/menu/Menu.qml:677
 msgctxt "Menu|"
@@ -20369,25 +20304,22 @@ msgstr "Ρυθμίσεις δραστηριότητας"
 #: activities/menu/ServerConfigPage.qml:61
 msgctxt "ServerConfigPage|"
 msgid "Teacher's server settings"
-msgstr ""
+msgstr "Ρυθμίσεις διακομιστή εκπαιδευτικού"
 
 #: activities/menu/ServerConfigPage.qml:111
 msgctxt "ServerConfigPage|"
 msgid "Teacher's identifier"
-msgstr ""
+msgstr "Αναγνωριστικό εκπαιδευτικού"
 
 #: activities/menu/ServerConfigPage.qml:142
 msgctxt "ServerConfigPage|"
 msgid "Server port"
-msgstr ""
+msgstr "Θύρα διακομιστή"
 
 #: activities/menu/ServerConfigPage.qml:177
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "ServerConfigPage|"
 msgid "Server port must be a number between 0 and 65535."
-msgstr "Μαντεύω έναν αριθμό μεταξύ του 1 και του %1."
+msgstr "Η θύρα του διακομιστή πρέπει να είναι ένας αριθμός μεταξύ 0 και 65535."
 
 #. Activity title
 #: activities/mining/ActivityInfo.qml:15
@@ -20679,7 +20611,7 @@ msgstr ""
 #: activities/money_cents/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Amount up to 10 units."
-msgstr "Συνολικό πόσο μέχρι 10€."
+msgstr "Ποσό έως 10 μονάδες."
 
 #: activities/money/resource/2/Data.qml:14
 #: activities/money_back/resource/2/Data.qml:14
@@ -20687,7 +20619,7 @@ msgstr "Συνολικό πόσο μέχρι 10€."
 #: activities/money_cents/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Amount up to 100 units."
-msgstr "Συνολικό πόσο μέχρι 100€."
+msgstr "Ποσό έως 100 μονάδες."
 
 #: activities/money/resource/3/Data.qml:14
 #: activities/money_back/resource/3/Data.qml:14
@@ -20695,7 +20627,7 @@ msgstr "Συνολικό πόσο μέχρι 100€."
 #: activities/money_cents/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Amount up to 1000 units."
-msgstr "Συνολικό πόσο μέχρι 1000€."
+msgstr "Ποσό έως 1000 μονάδες."
 
 #. Activity title
 #: activities/money_back/ActivityInfo.qml:15
@@ -20986,24 +20918,21 @@ msgstr "Ως 24 αντικείμενα σε πολλές σειρές."
 
 #. Activity title
 #: activities/multiple_choice_questions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication."
 msgctxt "ActivityInfo|"
 msgid "Multiple-choice questions"
-msgstr "Πολλαπλασιασμός."
+msgstr "Ερωτήσεις πολλαπλής επιλογής"
 
 #. Help title
 #: activities/multiple_choice_questions/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "A generic activity for multiple-choice questions."
-msgstr ""
+msgstr "Μια γενική δραστηριότητα για ερωτήσεις πολλαπλής επιλογής."
 
 #. Help goal
 #: activities/multiple_choice_questions/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Answer questions sent by the teacher."
-msgstr ""
+msgstr "Απαντήστε στις ερωτήσεις που σας έστειλε ο δάσκαλος."
 
 #. Help manual
 #: activities/multiple_choice_questions/ActivityInfo.qml:24
@@ -21014,30 +20943,27 @@ msgid ""
 "For some questions, after validating the answer, a feedback text panel will "
 "be displayed: click anywhere to close this panel after reading it."
 msgstr ""
+"Κάντε κλικ σε μια απάντηση για να την επιλέξετε και, στη συνέχεια, πατήστε "
+"το κουμπί OK για να την επικυρώσετε. Ορισμένες ερωτήσεις απαιτούν μία μόνο "
+"απάντηση, ενώ άλλες απαιτούν πολλαπλές απαντήσεις. Για ορισμένες ερωτήσεις, "
+"μετά την επικύρωση της απάντησης, θα εμφανιστεί ένα πλαίσιο με σχόλια: κάντε "
+"κλικ οπουδήποτε για να κλείσετε αυτό το πλαίσιο μετά την ανάγνωσή του."
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate through the answers"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: navigate through the answer list"
-msgstr "Βελάκια: Περιήγηση στις απαντήσεις."
+msgstr "Βέλη πάνω και κάτω: Περιήγηση στη λίστα απαντήσεων"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select or deselect a circle"
 msgctxt "ActivityInfo|"
 msgid "Space: select or deselect the highlighted answer"
-msgstr "Μπάρα διαστήματος: Επιλογή η αποεπιλογή ενός κύκλου."
+msgstr "Μπάρα διαστήματος: Επιλέξτε ή αποεπιλέξτε την επισημασμένη απάντηση"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
-msgstr "Enter: Έλεγχος της απάντησης όταν το πλήκτρο ΟΚ είναι ορατό."
+msgstr ""
+"Enter: Επικυρώστε την απάντησή σας ή κλείστε το πλαίσιο κειμένου σχολίων"
 
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
@@ -21111,11 +21037,6 @@ msgid "Try again"
 msgstr "Ξαναπροσπάθησε"
 
 #: activities/nine_men_morris/NineMenMorris.qml:348
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "You and Tux start with 9 pieces each, and take turns to place your pieces "
-#| "on the empty spots of the board (by clicking on the spots)."
 msgctxt "NineMenMorris|"
 msgid ""
 "You and Tux start with 9 pieces each, and take turns to place your pieces on "
@@ -21125,12 +21046,6 @@ msgstr ""
 "στις κενές θέσεις του πίνακα, κάνοντας κλικ σε καθεμιά από αυτές."
 
 #: activities/nine_men_morris/NineMenMorris.qml:352
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
-#| "remove it. Pieces of formed mill can not be removed unless no other "
-#| "pieces are left on the board."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
@@ -21143,12 +21058,6 @@ msgstr ""
 "ελεύθερα πιόνια στον πίνακα."
 
 #: activities/nine_men_morris/NineMenMorris.qml:356
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "After all the pieces are placed, you and Tux will take turns to move "
-#| "them. Click on one of your pieces, and then on an adjacent empty spot to "
-#| "move it there. Green color spots indicates where you can move."
 msgctxt "NineMenMorris|"
 msgid ""
 "After all the pieces are placed, you and Tux will take turns to move them. "
@@ -21161,11 +21070,6 @@ msgstr ""
 "σου δείχνει ότι εκεί μπορείς να μετακινήσεις ένα πιόνι."
 
 #: activities/nine_men_morris/NineMenMorris.qml:360
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
-#| "moved to any vacant spot on the board."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
@@ -21175,11 +21079,6 @@ msgstr ""
 "μπορείς να τα τοποθετήσεις σε οποιαδήποτε κενή θέση του πίνακα."
 
 #: activities/nine_men_morris/NineMenMorris.qml:364
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you immobilize the computer or leave it with less than 3 pieces, then "
-#| "you win the game."
 msgctxt "NineMenMorris|"
 msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
@@ -23507,32 +23406,19 @@ msgid "Loop"
 msgstr "Βρόχος"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:542
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Instruction Area:"
 msgctxt "ProgrammingMaze|"
 msgid "Instruction Area:"
 msgstr "Περιοχή εντολών:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:543
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "There are 3 instructions which you can use to code and lead Tux to the "
-#| "fish:"
 msgctxt "ProgrammingMaze|"
 msgid ""
 "There are 3 instructions which you can use to code and lead Tux to the fish:"
 msgstr ""
-"Υπάρχουν τρεις εντολές που μπορείς να χρησιμοποιήσεις για να δημιουργήσεις "
+"Υπάρχουν 3 εντολές που μπορείς να χρησιμοποιήσεις για να δημιουργήσεις "
 "κώδικα που θα οδηγήσει τον Tux στο ψάρι:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:544
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
-#| "facing."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
@@ -23542,43 +23428,26 @@ msgstr ""
 "κατεύθυνση που κοιτάζει."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:545
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgctxt "ProgrammingMaze|"
 msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgstr "<b>2. Στροφή αριστερά:</b> Περιστρέφει τον Tux προς τα αριστερά."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:546
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgctxt "ProgrammingMaze|"
 msgid "<b>3. Turn right:</b> Turns Tux to the right."
-msgstr "<b>2. Στροφή δεξιά:</b> Περιστρέφει τον Tux προς τα δεξιά."
+msgstr "<b>3. Στροφή δεξιά:</b> Περιστρέφει τον Tux προς τα δεξιά."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:550
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Main Function:"
 msgctxt "ProgrammingMaze|"
 msgid "Main Function:"
 msgstr "Κώδικας:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:551
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "The execution of the code starts here."
 msgctxt "ProgrammingMaze|"
 msgid "The execution of the code starts here."
 msgstr "Η εκτέλεση του κώδικα ξεκινά εδώ."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:552
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-Click on any instruction in the <b>instruction area</b> to add it to the "
-#| "<b>Main Function</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-Click on any instruction in the <b>instruction area</b> to add it to the "
@@ -23588,11 +23457,6 @@ msgstr ""
 "προσθέσεις στον <b>κώδικα</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:553
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-The instructions will execute in order until there's none left, or until "
-#| "a dead-end, or when Tux reaches the fish."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-The instructions will execute in order until there's none left, or until a "
@@ -23602,34 +23466,20 @@ msgstr ""
 "ή μέχρις ότου ο Tux πιάσει το ψάρι."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:563
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Procedure:"
 msgctxt "ProgrammingMaze|"
 msgid "Procedure:"
 msgstr "Διαδικασία:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:564
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>Procedure</b> is a reusable set of instructions which can be <b>used "
-#| "in the code by calling it where needed</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
 "the code by calling it where needed</b>."
 msgstr ""
 "<b>Διαδικασία</b> είναι ένα επαναχρησιμοποιήσιμο σύνολο εντολών που μπορεί "
-"να <b>χρησιμοποιείται στον κώδικα καλώντας τη όποτε είναι απαραίτητο</b>."
+"να <b>χρησιμοποιείται στον κώδικα καλώντας την όποτε είναι απαραίτητο</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:565
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main "
-#| "Function area</b> to add your code, click on the <b>Procedure</b> or "
-#| "<b>Main Function</b> label."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
@@ -23637,23 +23487,15 @@ msgid ""
 "Function</b> label."
 msgstr ""
 "- Για να γίνει <b>αλλαγή</b> μεταξύ της <b>περιοχής της διαδικασίας</b> και "
-"της <b>περιοχής του κώδικα</b> για να μπορείς να προσθέσεις κώδικα, πίεσε "
+"της <b>περιοχής του κώδικα</b>, ώστε να μπορείς να προσθέσεις κώδικα, πίεσε "
 "στην ετικέτα <b>Διαδικασία</b> ή <b>Κώδικας</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:575
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Loop:"
 msgctxt "ProgrammingMaze|"
 msgid "Loop:"
 msgstr "Βρόχος:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:576
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
-#| "the number of times defined by the number inside it</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
@@ -23663,20 +23505,14 @@ msgstr ""
 "συνεχώς τόσες φορές όσες έχει οριστεί από τον αριθμό μέσα στην ακολουθία</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:577
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
-#| "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</"
-#| "b> label."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
 "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
 "label."
 msgstr ""
-"-Για να γίνει <b>αλλαγή</b> μεταξύ της <b>περιοχής του βρόχου</b> και της "
-"<b>περιοχής του κώδικα</b> για να μπορείς να προσθέσεις κώδικα, πίεσε στην "
+"- Για να γίνει <b>αλλαγή</b> μεταξύ της <b>περιοχής του βρόχου</b> και της "
+"<b>περιοχής του κώδικα</b>, ώστε να μπορείς να προσθέσεις κώδικα, πίεσε στην "
 "ετικέτα <b>Βρόχος</b> ή <b>Κώδικας</b>."
 
 #: activities/programmingMaze/resource/1/Data.qml:14
@@ -25558,9 +25394,6 @@ msgid "Gradient Tools"
 msgstr "Εργαλεία διαβάθμισης"
 
 #: activities/sketch/PaletteSelector.qml:148
-#, fuzzy
-#| msgctxt "ColorsPanel|"
-#| msgid "Palettes"
 msgctxt "PaletteSelector|"
 msgid "Palettes"
 msgstr "Παλέτες"
@@ -27182,19 +27015,11 @@ msgid "Right Ballast Tank"
 msgstr "Δεξιά δεξαμενή πρόσθετου βάρους"
 
 #: activities/submarine/Submarine.qml:133
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Move the submarine to the other side of the screen."
 msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "Οδήγησε το υποβρύχιο στην άλλη πλευρά της οθόνης."
 
 #: activities/submarine/Submarine.qml:136
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The leftmost item in the control panel is the engine of the submarine, "
-#| "indicating the current speed of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
@@ -27204,19 +27029,11 @@ msgstr ""
 "υποβρυχίου."
 
 #: activities/submarine/Submarine.qml:139
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Increase or decrease the velocity of the submarine using the engine."
 msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr "Αύξησε ή μείωσε την ταχύτητα του υποβρυχίου χρησιμοποιώντας τη μηχανή."
 
 #: activities/submarine/Submarine.qml:142
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Press the + button to increase the velocity, or the - button to decrease "
-#| "the velocity."
 msgctxt "Submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
@@ -27225,17 +27042,11 @@ msgstr ""
 "Πάτησε το κουμπί + για να αυξήσεις την ταχύτητα, ή το - για να τη μειώσεις."
 
 #: activities/submarine/Submarine.qml:149
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The item next to the engine is the ballast tank."
 msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "Το αντικείμενο δίπλα στον κινητήρα είναι η δεξαμενή πρόσθετου βάρους."
 
 #: activities/submarine/Submarine.qml:152
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The ballast tanks are used to float or dive under water."
 msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr ""
@@ -27243,11 +27054,6 @@ msgstr ""
 "ανάδυση του υποβρυχίου."
 
 #: activities/submarine/Submarine.qml:155
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "If the ballast tanks are empty, the submarine will float. If the ballast "
-#| "tanks are full of water, the submarine will dive underwater."
 msgctxt "Submarine|"
 msgid ""
 "If the ballast tanks are empty, the submarine will float. If the ballast "
@@ -27257,12 +27063,6 @@ msgstr ""
 "όταν είναι γεμάτες νερό το υποβρύχιο καταδύεται."
 
 #: activities/submarine/Submarine.qml:158
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Turning the upper valve on or off will alternatively allow or stop the "
-#| "water from filling in the ballast tank, thus allowing it to dive "
-#| "underwater."
 msgctxt "Submarine|"
 msgid ""
 "Turning the upper valve on or off will alternatively allow or stop the water "
@@ -27273,12 +27073,6 @@ msgstr ""
 "να καταδυθεί."
 
 #: activities/submarine/Submarine.qml:161
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Turning the lower valve on or off will alternatively allow or stop the "
-#| "water from flushing out the ballast tank, thus allowing it to float on "
-#| "the surface of the water."
 msgctxt "Submarine|"
 msgid ""
 "Turning the lower valve on or off will alternatively allow or stop the water "
@@ -27290,11 +27084,6 @@ msgstr ""
 "στο υποβρύχιο να επιπλέει στην επιφάνεια."
 
 #: activities/submarine/Submarine.qml:168
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The rightmost item in the control panel controls the diving planes of the "
-#| "submarine"
 msgctxt "Submarine|"
 msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
@@ -27304,11 +27093,6 @@ msgstr ""
 "κατάδυσης του υποβρυχίου."
 
 #: activities/submarine/Submarine.qml:171
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The diving planes in a submarine are used to control the depth of the "
-#| "submarine accurately once it is underwater."
 msgctxt "Submarine|"
 msgid ""
 "The diving planes in a submarine are used to control the depth of the "
@@ -27318,11 +27102,6 @@ msgstr ""
 "υποβρυχίου όταν βρίσκεται κάτω από το νερό."
 
 #: activities/submarine/Submarine.qml:174
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Once the submarine is moving underwater, increasing or decreasing the "
-#| "angle of the planes will increase and decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "Once the submarine is moving underwater, increasing or decreasing the angle "
@@ -27333,11 +27112,6 @@ msgstr ""
 "υποβρύχιο."
 
 #: activities/submarine/Submarine.qml:177
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The + button will increase the depth of the submarine, while the - button "
-#| "will decrease the depth of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "The + button will increase the depth of the submarine, while the - button "
@@ -27346,17 +27120,11 @@ msgstr ""
 "Το κουμπί + αυξάνει το βάθος του υποβρυχίου, ενώ το κουμπί - το μειώνει."
 
 #: activities/submarine/Submarine.qml:180
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Grab the crown to open the gate."
 msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "Πιάσε το στέμμα για να ανοίξει η πύλη."
 
 #: activities/submarine/Submarine.qml:183
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Check out the help menu for the keyboard controls."
 msgctxt "Submarine|"
 msgid "Check out the help menu for the keyboard controls."
 msgstr "Δες το μενού βοήθειας για τα χειριστήρια."
@@ -28062,31 +27830,6 @@ msgstr "Πίνακες αφαίρεσης."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In a vertical subtraction, numbers are written one below the other. They "
-#| "need to be lined-up properly, starting from the column on the right-hand "
-#| "side. The top number is called the minuend: it is the amount that we are "
-#| "starting with, that another number is being subtracted from to get the "
-#| "difference. The number below is called the subtrahend: it is the amount "
-#| "to substract from the minuend to get the difference. The result is "
-#| "written on the bottom line. To solve the subtraction, start by "
-#| "subtracting the bottom number of the first column from the top number of "
-#| "the first column (on the right-hand side), and write the result on the "
-#| "bottom line of the same column. If the top number is smaller than the "
-#| "bottom number, you can borrow from the minuend on the next column: for "
-#| "example, if you add 10 units to the top number, you need to remove one "
-#| "unit from the top number of the next column. This is called the borrowing "
-#| "by regrouping method. To do that in this activity, click on the empty "
-#| "rectangle on the left of the top number, select 1, and on the next column "
-#| "click on the empty rectangle on the right of the top number and select "
-#| "-1. Then write the result of the column on the bottom line, and do the "
-#| "same on the next columns until the operation is finished. Once you have "
-#| "found the result, click on the OK button to validate your answer. In some "
-#| "levels, you will be need to write the given operation before solving it; "
-#| "in this case, click on the Ready button when the operation is written "
-#| "correctly and then solve it."
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -28236,20 +27979,14 @@ msgid "Solve: %1"
 msgstr "Λύση: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:99
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own addition and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own addition and solve it."
-msgstr "Γράψε τη δική σου πρόσθεση και λύσε την."
+msgstr "Γράψτε τη δική σας πρόσθεση και λύστε την."
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:100
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own subtraction and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own subtraction and solve it."
-msgstr "Γράψε τη δική σου αφαίρεση και λύσε την."
+msgstr "Γράψτε τη δική σας αφαίρεση και λύστε την."
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:426
 msgctxt "VerticalSubtraction|"
@@ -28259,7 +27996,7 @@ msgstr "Έτοιμος"
 #: activities/vertical_subtraction/VerticalSubtraction.qml:464
 msgctxt "VerticalSubtraction|"
 msgid "The result should not be a negative number."
-msgstr ""
+msgstr "Το αποτέλεσμα δεν πρέπει να είναι αρνητικός αριθμός."
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
@@ -28278,31 +28015,6 @@ msgstr ""
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In a vertical subtraction, numbers are written one below the other. They "
-#| "need to be lined-up properly, starting from the column on the right-hand "
-#| "side. The top number is called the minuend: it is the amount that we are "
-#| "starting with, that another number is being subtracted from to get the "
-#| "difference. The number below is called the subtrahend: it is the amount "
-#| "to substract from the minuend to get the difference. The result is "
-#| "written on the bottom line. To solve the subtraction, start by "
-#| "subtracting the bottom number of the first column from the top number of "
-#| "the first column (on the right-hand side), and write the result on the "
-#| "bottom line of the same column. If the top number is smaller than the "
-#| "bottom number, you can borrow from the subtrahend on the next column: for "
-#| "example, if you add 10 units to the top number, you need to add one unit "
-#| "to the bottom number of the next column. This is called the borrowing by "
-#| "compensation method. To do that in this activity, click on the empty "
-#| "rectangle on the left of the top number, select 1, and on the next column "
-#| "click on the empty rectangle on the right of the bottom number and select "
-#| "+1. Then write the result of the column on the bottom line, and do the "
-#| "same on the next columns until the operation is finished. Once you have "
-#| "found the result, click on the OK button to validate your answer. In some "
-#| "levels, you will be need to write the given operation before solving it; "
-#| "in this case, click on the Ready button when the operation is written "
-#| "correctly and then solve it."
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -28522,22 +28234,16 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Πληκτρολόγησε τη λέξη πριν αυτή πέσει στο έδαφος."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Kannada and Tamil"
-msgstr "Προστέθηκαν μεταφράσεις για τα Λετονικά."
+msgstr "Προστέθηκε μετάφραση για τις γλώσσες Κανάντα και Ταμίλ."
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgctxt "ChangeLog|"
 msgid "New command-line option to set the locale (--locale locale)"
 msgstr ""
-"Νέα επιλογή γραμμής εντολών για να αλλάξετε τη μηχανή απόδοσης (--renderer "
-"renderer)"
+"Νέα επιλογή γραμμής εντολών για τη ρύθμιση της τοπικής ρύθμισης (--locale "
+"locale)"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
@@ -28545,6 +28251,8 @@ msgid ""
 "New command-line option to show/hide the Home button (--hide-home-button/--"
 "show-home-button)"
 msgstr ""
+"Νέα επιλογή γραμμής εντολών για την εμφάνιση/απόκρυψη του κουμπιού 'Αρχική "
+"σελίδα' (--hide-home-button/--show-home-button)"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:39 core/ChangeLog.qml:45
 #: core/ChangeLog.qml:54 core/ChangeLog.qml:60 core/ChangeLog.qml:65
@@ -29314,12 +29022,9 @@ msgid "No data found for %1."
 msgstr "Δεν βρέθηκαν δεδομένα για το %1."
 
 #: core/GCCreationHandler.qml:185
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr "%1 διαγράφηκε με επιτυχία!"
+msgstr "Το αρχείο διαγράφηκε με επιτυχία!"
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -29328,12 +29033,9 @@ msgid "OK"
 msgstr "ΟΚ"
 
 #: core/GCCreationHandler.qml:193
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
-msgstr "Αδυναμία διαγραφής του %1!"
+msgstr "Δεν είναι δυνατή η διαγραφή του αρχείου!"
 
 #: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
@@ -29388,7 +29090,7 @@ msgstr "Διαγραφή"
 #: core/GCCreationHandler.qml:429
 msgctxt "GCCreationHandler|"
 msgid "Open folder"
-msgstr ""
+msgstr "Άνοιγμα φακέλου"
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
@@ -29516,22 +29218,19 @@ msgstr ""
 "όταν έχει γίνει η επιλογή --launch."
 
 #: core/main.cpp:146
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid "Specify the activity when starting GCompris."
 msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
-msgstr "Καθορίστε τη δραστηριότητα κατά την εκκίνηση του GCompris."
+msgstr "Καθορίστε τη γλώσσα κατά την εκκίνηση του GCompris."
 
 #: core/main.cpp:150
 msgctxt "QObject|"
 msgid "Hide the Home button in the bar."
-msgstr ""
+msgstr "Απόκρυψη του κουμπιού 'Αρχική σελίδα' στη γραμμή."
 
 #: core/main.cpp:154
 msgctxt "QObject|"
 msgid "Show the Home button in the bar (default)."
-msgstr ""
+msgstr "Εμφάνιση του κουμπιού 'Αρχική σελίδα' στη γραμμή (προεπιλογή)."
 
 #: core/main.qml:238
 msgctxt "main|"
@@ -29623,47 +29322,36 @@ msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "Το GCompris ενημερώθηκε. Εδώ είναι οι αλλαγές που έγιναν:<br/>"
 
 #: core/main.qml:509
-#, fuzzy, qt-format
-#| msgctxt "main|"
-#| msgid "Do you want to download it now?"
+#, qt-format
 msgctxt "main|"
 msgid "Do you want to connect to server %1?"
-msgstr "Θέλεις να τις κατεβάσεις τώρα;"
+msgstr "Θέλετε να συνδεθείτε στον διακομιστή %1;"
 
 #: core/main.qml:530
 #, qt-format
 msgctxt "main|"
 msgid "Password rejected by server %1"
-msgstr ""
+msgstr "Ο κωδικός πρόσβασης απορρίφθηκε από τον διακομιστή %1"
 
 #: core/main.qml:531 core/main.qml:550 core/main.qml:625
-#, fuzzy
-#| msgctxt "Balancebox|"
-#| msgid "OK"
 msgctxt "main|"
 msgid "OK"
 msgstr "ΟΚ"
 
 #: core/main.qml:546
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "main|"
 msgid "Select your username"
-msgstr "Επίλεξε λειτουργία"
+msgstr "Επιλέξτε το όνομα χρήστη σας"
 
 #: core/main.qml:556
 msgctxt "main|"
 msgid "Please select your username in the list or cancel."
-msgstr ""
+msgstr "Επιλέξτε το δικό σας όνομα χρήστη από τη λίστα ή ακυρώστε."
 
 #: core/main.qml:623
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "main|"
 msgid "Enter your password"
-msgstr "Πλήκτρο Enter: Έλεγχος της απάντησης"
+msgstr "Εισάγετε τον κωδικό πρόσβασής σας"
 
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"
@@ -29690,26 +29378,29 @@ msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Έναρξη"
 
-#, fuzzy
-#~| msgctxt "Data|"
-#~| msgid "Find the next number."
 #~ msgctxt "Data|"
 #~ msgid "Find the correct answer."
-#~ msgstr "Βρες τον επόμενο αριθμό."
+#~ msgstr "Βρες τη σωστή απάντηση."
 
-#, fuzzy
-#~| msgctxt "GraduatedLineRead|"
-#~| msgid "Find the requested number."
 #~ msgctxt "Data|"
 #~ msgid "What is the first number?"
-#~ msgstr "Βρες τον ζητούμενο αριθμό."
+#~ msgstr "Ποιος είναι ο πρώτος αριθμός;"
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Practice the addition of numbers."
+#~ msgctxt "Data|"
+#~ msgid "What is a color?"
+#~ msgstr "Τι είναι το χρώμα;"
+
 #~ msgctxt "Data|"
 #~ msgid "What are the first two numbers?"
-#~ msgstr "Εξάσκηση στην πρόσθεση."
+#~ msgstr "Ποιοι είναι οι δύο πρώτοι αριθμοί;"
+
+#~ msgctxt "Data|"
+#~ msgid "What are animals?"
+#~ msgstr "Τι είναι τα ζώα;"
+
+#~ msgctxt "Data|"
+#~ msgid "Answers always in order, select the first one"
+#~ msgstr "Οι απαντήσεις είναι πάντα σε σειρά, επιλέξτε την πρώτη"
 
 #~ msgctxt "Data|"
 #~ msgid "Find the previous number."
@@ -29742,6 +29433,14 @@ msgstr "Έναρξη"
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Leave the box blank if no class matches."
 #~ msgstr "Άφησε το πεδίο κενό εάν δεν ταιριάζει κανένα μέρος του λόγου."
+
+#, fuzzy
+#~| msgctxt "BinaryBulb|"
+#~| msgid "What is the binary representation of %1?"
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr ""
+#~ "Ποια είναι η αναπαράσταση του αριθμού %1 στο δυαδικό σύστημα αρίθμησης;"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
