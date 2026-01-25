@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-22 00:38+0000\n"
-"PO-Revision-Date: 2025-03-22 16:47+0200\n"
+"PO-Revision-Date: 2026-01-12 10:13+0200\n"
 "Last-Translator: Rolandas Jakštys <rolandas@jakstys.lt>\n"
 "Language-Team: Lithuanian <kde-i18n-doc@kde.org>\n"
 "Language: lt\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.8\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
 #: activities/adjacent_numbers/ActivityInfo.qml:17
@@ -347,7 +347,7 @@ msgstr ""
 #: activities/drawing_wheels/ActivityInfo.qml:22
 #, kde-format
 msgid "Roll the gear in the cogwheel to draw."
-msgstr ""
+msgstr "Suk krumpliaratį ir sukurk geometrinius raštus."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"
 #: activities/drawletters/ActivityInfo.qml:18
@@ -927,7 +927,7 @@ msgstr ""
 #: activities/multiple_choice_questions/ActivityInfo.qml:19
 #, kde-format
 msgid "Answer the questions."
-msgstr ""
+msgstr "Atsakyk į klausimus."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
 #: activities/nine_men_morris/ActivityInfo.qml:18
