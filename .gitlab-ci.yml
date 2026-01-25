@@ -12,4 +12,3 @@ include:
       - /gitlab-templates/xml-lint.yml
       - /gitlab-templates/json-validation.yml
       - /gitlab-templates/cppcheck.yml
-      - /gitlab-templates/documentation.yml
