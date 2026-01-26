@@ -294,7 +294,7 @@ Item {
             InformationLine {
                 labelWidth: labelArea.width
                 infoText.width: infoText.implicitWidth
-                label: qsTr("Pupils logged")
+                label: qsTr("Pupils logged in")
                 info: (networkController) ? networkController.loggedCount : 0
             }
 

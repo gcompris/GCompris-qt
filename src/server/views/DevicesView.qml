@@ -53,7 +53,7 @@ Item {
         case NetConst.BAD_PASSWORD_INPUT:
             return qsTr("Incorrect password")
         case NetConst.CONNECTED:
-            return qsTr("Logged")
+            return qsTr("Logged in")
         case NetConst.CONNECTION_LOST:
             return qsTr("Connection lost")
         case NetConst.DISCONNECTED:
@@ -247,7 +247,7 @@ Item {
                     labelWidth: buttonsColumn.labelWidth
                     infoWidth: buttonsColumn.labelWidth
                     anchors.horizontalCenter: parent.horizontalCenter
-                    label: qsTr("Logged:")
+                    label: qsTr("Logged in:")
                     info: (networkController) ? networkController.loggedCount : 0
                 }
                 InformationLine {
