@@ -30,7 +30,7 @@ namespace controllers {
 
     public:
         explicit DatabaseController(QObject *parent = nullptr);
-        ~DatabaseController();
+        ~DatabaseController() = default;
 
         Q_PROPERTY(bool isCrypted MEMBER dbEncrypted NOTIFY cryptedChanged);
         Q_INVOKABLE bool isDatabaseLoaded();
@@ -80,7 +80,7 @@ namespace controllers {
         void cryptedChanged();
 
     private:
-        void triggerDBError(QSqlError sqlError, const QString &);
+        void triggerDBError(const QSqlError &sqlError, const QString &);
         bool initialise(const QString &databaseFile);
         QString sqliteVersion() const;
         bool createTable(const QString &sqlStatement, const QString &table) const;

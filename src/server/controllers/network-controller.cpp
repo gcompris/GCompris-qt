@@ -77,8 +77,7 @@ namespace controllers {
     {
         QList<QTcpSocket *> sockets = usersMap.keys();
         // qDebug() << "NetworkController::checkTimeout()" << sockets.size();
-        for (int i = 0; i < sockets.size(); i++) { // Loop on sockets to check for connection lost
-            QTcpSocket *socket = sockets.at(i);
+        for (QTcpSocket *socket: sockets) { // Loop on sockets to check for connection lost
             qDebug() << usersMap.value(socket)->delaySinceTimeStamp() << netconst::WAIT_DELAY;
             if (usersMap.value(socket)->delaySinceTimeStamp() > netconst::WAIT_DELAY) { // Time out, remove socket
                 sendNetLog(QString("Connection lost with: %1").arg(usersMap.value(socket)->getUserName()));
@@ -178,8 +177,8 @@ namespace controllers {
                     if (obj["content"].isArray()) {
                         QStringList logins;
                         const auto &jsonArray = obj["content"].toArray();
-                        for (int i = 0; i < jsonArray.size(); i++) {
-                            logins << jsonArray[i].toString();
+                        for (const auto &login: jsonArray) {
+                            logins << login.toString();
                         }
                     }
                     break;
@@ -268,8 +267,8 @@ namespace controllers {
     { // Opened sockets, but not logged
         QJsonObject obj { { "aType", netconst::DISCONNECT } };
         QList<QTcpSocket *> sockets = usersMap.keys();
-        for (int i = 0; i < sockets.size(); i++) {
-            sendJson(sockets.at(i), obj);
+        for (QTcpSocket *socket: sockets) {
+            sendJson(socket, obj);
         }
         Q_EMIT socketCountChanged();
     }
@@ -368,23 +367,23 @@ namespace controllers {
         QList<QHostAddress> addresses = QNetworkInterface::allAddresses();
 
         if (!addresses.isEmpty()) {
-            for (int i = 0; i < addresses.size(); i++) {
+            for (const QHostAddress &address: addresses) {
                 // Ignore local host
-                if (addresses[i] == QHostAddress::LocalHost)
+                if (address == QHostAddress::LocalHost)
                     continue;
 
                 // Ignore non-ipv4 addresses
-                if (!addresses[i].toIPv4Address())
+                if (!address.toIPv4Address())
                     continue;
 
-                QString ip = addresses[i].toString();
+                QString ip = address.toString();
                 if (ip.isEmpty())
                     continue;
                 ip.replace(ip.lastIndexOf('.'), 5, ".255");
 
                 bool foundMatch = false;
-                for (int j = 0; j < possibleMatches.size(); j++) {
-                    if (ip == possibleMatches[j]) {
+                for (const QString &possibleMatch: possibleMatches) {
+                    if (ip == possibleMatch) {
                         foundMatch = true;
                         break;
                     }
@@ -406,18 +405,15 @@ namespace controllers {
         QStringList localMacAddresses;
         QStringList localNetmasks;
         QList<QHostAddress> hostList = QHostInfo::fromName(localhostname).addresses();
-        for (int i = 0; i < hostList.size(); i++) {
-            const QHostAddress &address = hostList[i];
+        for (const QHostAddress &address: hostList) {
             if (address.protocol() == QAbstractSocket::IPv4Protocol && address.isLoopback() == false) {
                 localhostIPs << address.toString();
             }
         }
         QList<QNetworkInterface> all = QNetworkInterface::allInterfaces();
-        for (int i = 0; i < all.size(); i++) {
-            const QNetworkInterface &networkInterface = all[i];
+        for (const QNetworkInterface &networkInterface: all) {
             QList<QNetworkAddressEntry> allEntries = networkInterface.addressEntries();
-            for (int j = 0; j < allEntries.size(); j++) {
-                const QNetworkAddressEntry &entry = allEntries[j];
+            for (const QNetworkAddressEntry &entry: allEntries) {
                 if (localhostIPs.contains(entry.ip().toString())) {
                     localMacAddresses << networkInterface.hardwareAddress();
                     localNetmasks << entry.netmask().toString();

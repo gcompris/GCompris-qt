@@ -58,10 +58,6 @@ namespace controllers {
                      << "groups_name";
     }
 
-    DatabaseController::~DatabaseController()
-    {
-    }
-
     bool DatabaseController::sqlCommands(const QString &sqlFile)
     {
         File sql;
@@ -74,8 +70,8 @@ namespace controllers {
             qWarning() << "Processing:" << sqlFile;
             script.replace(QRegularExpression("^--.*$"), ""); // remove commented lines
             QStringList requests = script.split(";");
-            for (int i = 0; i < requests.size(); i++) {
-                QString req = requests.at(i).simplified();
+            for (const QString &request: requests) {
+                QString req = request.simplified();
                 if (!req.isEmpty()) {
                     if (query.prepare(req)) {
                         qWarning() << req;
@@ -171,11 +167,11 @@ namespace controllers {
     }
 
     
-    void handleErrors(const char *where)
+    static void handleErrors(const char *where)
     {
         qDebug() << "An error occurred in" << where;
         while(unsigned long errCode = ERR_get_error()) {
-            char *err = ERR_error_string(errCode, NULL);
+            char *err = ERR_error_string(errCode, nullptr);
             qDebug() << "OpenSSL error:" << err << errCode;
         }
     }
@@ -191,17 +187,17 @@ namespace controllers {
         unsigned char* cipherText = (unsigned char*)cipherData.data();
         unsigned char* plainText = (unsigned char*) malloc(cipherTextLength + AES_BLOCK_SIZE);
 
-        EVP_CIPHER_CTX *ctx = NULL;
+        EVP_CIPHER_CTX *ctx = nullptr;
         int len = 0, plaintext_len = 0;
 
         /* Create and initialise the context */
-        if(!(ctx = EVP_CIPHER_CTX_new())) {
+        if(ctx = EVP_CIPHER_CTX_new(); !ctx) {
             handleErrors("EVP_CIPHER_CTX_new");
         }
 
-        EVP_CIPHER *cipher = EVP_CIPHER_fetch(NULL, AES_ENCRYPTION, NULL);
+        EVP_CIPHER *cipher = EVP_CIPHER_fetch(nullptr, AES_ENCRYPTION, nullptr);
         /* Initialise the decryption operation. */
-        if(!EVP_DecryptInit_ex2(ctx, cipher, teacherPasswordKeyAsSha, INITIALIZATION_VECTOR, NULL)) {
+        if(!EVP_DecryptInit_ex2(ctx, cipher, teacherPasswordKeyAsSha, INITIALIZATION_VECTOR, nullptr)) {
             handleErrors("EVP_DecryptInit_ex2");
         }
 
@@ -249,18 +245,18 @@ namespace controllers {
         unsigned char* cipherText = (unsigned char*) malloc(cipherLength);
         unsigned char* plainText = (unsigned char*)plainData.data();
 
-        EVP_CIPHER_CTX *ctx = NULL;
+        EVP_CIPHER_CTX *ctx = nullptr;
         int len = 0, ciphertext_len = 0;
 
         /* Create and initialise the context */
-        if(!(ctx = EVP_CIPHER_CTX_new())) {
+        if(ctx = EVP_CIPHER_CTX_new(); !ctx) {
             handleErrors("EVP_CIPHER_CTX_new");
         }
 
-        EVP_CIPHER *cipher = EVP_CIPHER_fetch(NULL, AES_ENCRYPTION, NULL);
+        EVP_CIPHER *cipher = EVP_CIPHER_fetch(nullptr, AES_ENCRYPTION, nullptr);
 
         /* Initialise the encryption operation. */
-        if(1 != EVP_EncryptInit_ex2(ctx, cipher, teacherPasswordKeyAsSha, INITIALIZATION_VECTOR, NULL)) {
+        if(1 != EVP_EncryptInit_ex2(ctx, cipher, teacherPasswordKeyAsSha, INITIALIZATION_VECTOR, nullptr)) {
             handleErrors("EVP_EncryptInit_ex2");
         }
 
@@ -386,7 +382,7 @@ namespace controllers {
         }
     }
 
-    void DatabaseController::triggerDBError(QSqlError sqlError, const QString &message)
+    void DatabaseController::triggerDBError(const QSqlError &sqlError, const QString &message)
     {
         //    if (sqlError.nativeErrorCode().toInt() != SQLITE_CONSTRAINT)
         //        message = tr("Sql error type: %1").arg(sqlError.nativeErrorCode());
@@ -870,7 +866,7 @@ namespace controllers {
         QStringList out;
         QString lastElementOfPreviousList;
         for(int i = 0; i < splittedBySeparator.size(); ++ i) {
-            QStringList list = splittedBySeparator[i];
+            const QStringList &list = splittedBySeparator[i];
             for(int j = 0 ; j < list.size(); ++ j) {
                 QString atomicElement = list[j];
                 if(i != 0 && j == 0) {
