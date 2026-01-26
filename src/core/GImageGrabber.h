@@ -105,8 +105,8 @@ private:
     int m_redoSize = 0;
 
     void pushToUndo(const QSharedPointer<QQuickItemGrabResult>&);
-    void setUndoSize(const int&);
-    void setRedoSize(const int&);
+    void setUndoSize(const qsizetype&);
+    void setRedoSize(const qsizetype&);
 
     QSharedPointer<QQuickItemGrabResult> grabbedResult;
     QList<QSharedPointer<QQuickItemGrabResult>> undoList;

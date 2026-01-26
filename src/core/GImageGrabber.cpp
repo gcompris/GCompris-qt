@@ -52,7 +52,7 @@ int GImageGrabber::undoSize() const
     return m_undoSize;
 }
 
-void GImageGrabber::setUndoSize(const int &listSize)
+void GImageGrabber::setUndoSize(const qsizetype &listSize)
 {
     m_undoSize = listSize;
     Q_EMIT undoSizeChanged();
@@ -63,7 +63,7 @@ int GImageGrabber::redoSize() const
     return m_redoSize;
 }
 
-void GImageGrabber::setRedoSize(const int &listSize)
+void GImageGrabber::setRedoSize(const qsizetype &listSize)
 {
     m_redoSize = listSize;
     Q_EMIT redoSizeChanged();
