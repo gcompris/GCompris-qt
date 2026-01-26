@@ -130,6 +130,7 @@ Popup {
             buttonsWidth:(parent.width - Style.margins) * 0.5
             onCancelled: createDbDialog.close()
             onValidated: createDatabaseFile()
+            okButtonEnabled: login.text.length > 0 && password.text.length > 0
         }
     }
 }

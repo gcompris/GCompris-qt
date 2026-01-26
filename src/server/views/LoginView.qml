@@ -136,7 +136,7 @@ Item {
                 activeFocusOnTab: true
                 text: qsTr("Create teacher database")
                 opacity: enabled ? 1.0 : 0.3
-                enabled: (!Master.fileExists(userDataPath + "/" + databaseFile)) && (login.text.length > 3)
+                enabled: (!Master.fileExists(userDataPath + "/" + databaseFile))
                 onClicked: createDb.open()
             }
         }
