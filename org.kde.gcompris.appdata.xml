@@ -262,6 +262,7 @@
       <li xml:lang="hr">upoznaj računalo: tipkovnica, miš, različiti pokreti mišem, itd.</li>
       <li xml:lang="it">scoperta del computer: tastiera, mouse, vari gesti con il mouse, ecc.</li>
       <li xml:lang="ka">კომპიუტერის გაცნობა: კლავიატურა, თაგუნა, თაგუნას ჟესტები და ა.შ.</li>
+      <li xml:lang="lt">kompiuterio pažinimas: klaviatūra, pelė, įvairūs pelės gestai ir kt.</li>
       <li xml:lang="lv">dators: tastatūra, pele, dažādi žesti ar peli u.c.</li>
       <li xml:lang="nl">ontdekken van de computer: toetsenbord, muis, verschillende muisbewegingen, etc.</li>
       <li xml:lang="pl">odkrywanie komputera: klawiatura, mysz, różne ruchy myszą, itp.</li>
@@ -286,6 +287,7 @@
       <li xml:lang="hr">aritmetika: tablica množenja, nabrajanje, zrcalna slika, uravnoteženje vage, vraćanje ostatka, itd.</li>
       <li xml:lang="it">aritmetica: tabelline, enumerazione, immagine speculare, allineare la bilancia, dare il resto, ecc.</li>
       <li xml:lang="ka">არითმეტიკა: ცხრილის დამახსოვრება, ჩამონათვალები, გამოსახულების ანარეკლი, სასწორის გასწორება, ხურდის დაბრუნება და ა.შ.</li>
+      <li xml:lang="lt">aritmetika: daugybos lentelė, skaičiavimas iš eilės, sudėtis ir atimtis, subalansuok svarstykles, suskaičiuok grąžą ir kt.</li>
       <li xml:lang="lv">aritmētika: atmiņas tabula, skaitīšana, spoguļattēls, svaru līdzsvarošana, atlikuma izdošana u.c.</li>
       <li xml:lang="nl">rekenen: tafels oefenen, reeksen, afbeelding spiegelen, de schaal in evenwicht brengen, wisselgeld geven, etc.</li>
       <li xml:lang="pl">arytmetyka: tablice pamięciowe, wyliczanie, obraz lustrzany, wyrównoważanie wagi, wydawanie reszty, itp.</li>
@@ -309,6 +311,7 @@
       <li xml:lang="hr">znanost: sustav brana, miješanje boja, koncept gravitacije, itd.</li>
       <li xml:lang="it">scienza: la chiusa del canale, miscelazione dei colori, il concetto di gravità, ecc.</li>
       <li xml:lang="ka">მეცნიერება: არხის ჩაკეტვა, ფერების შერევა, წარმოდგენა მიზიდულობაზე და ა.შ.</li>
+      <li xml:lang="lt">mokslas: kanalų šliuzai, spalvų maišymas, elektros grandinė, gravitacija ir kt.</li>
       <li xml:lang="lv">zinātne: kanāla slūžas, krāsu jaukšana, gravitācija u.c.</li>
       <li xml:lang="nl">natuurkunde: de sluizen bedienen, mengen van kleuren, concept van zwaartekracht, etc.</li>
       <li xml:lang="pl">nauka: śluza na kanale, mieszanie barw, poczucie grawitacji, itp.</li>
@@ -332,6 +335,7 @@
       <li xml:lang="hr">igrice: igra pamćenja, 4 u nizu, križić-kružić, sudoku, Hanojski tornjevi, itd.</li>
       <li xml:lang="it">giochi: memory, forza 4, filetto, sudoku, torre di hanoi, ecc.</li>
       <li xml:lang="ka">თამაშები: მეხსიერება, ოთხის შეერთება, სუდოკუ, ჰანოის კოშკი და ა.შ.</li>
+      <li xml:lang="lt">žaidimai: šachmatai, atminties lavinimas, sujunk 4, tic tac toe, Sudoku ir kt.</li>
       <li xml:lang="lv">spēles: atmiņa, četri rindā, krustiņi un nullītes, sudoku, Hanojas tornis u.c.</li>
       <li xml:lang="nl">spellen: geheugenspel, vier op een rij, boter kaas en eieren, sudoku, torens van hanoi, etc.</li>
       <li xml:lang="pl">gry: na pamięć, łączenie czwórek, tic tac toe, sudoku, wieża hanoi, itp.</li>
@@ -355,6 +359,7 @@
       <li xml:lang="hr">čitanje: vježbanje čitanja, itd.</li>
       <li xml:lang="it">lettura: esercitare la lettura, ecc.</li>
       <li xml:lang="ka">წაკითხვა: კითხვაში მეცადინეობა და ა.შ.</li>
+      <li xml:lang="lt">skaitymas: mokymasis skaityti ir kt.</li>
       <li xml:lang="lv">lasīšana: lasīšanas vingrinājumi u.c.</li>
       <li xml:lang="nl">lezen: lees oefening, etc.</li>
       <li xml:lang="pl">czytanie: nauka czytania, itp.</li>
@@ -379,6 +384,7 @@
       <li xml:lang="hr">ostalo: nauči odrediti vrijeme, Brailleovo pismo, labirint, glazbeni instrumenti, itd.</li>
       <li xml:lang="it">altro: impara a leggere l'ora, il sistema braille, labirinto, strumenti musicali, ecc.</li>
       <li xml:lang="ka">სხვები: ისწავლეთ საათის თქმა, ბრაილის სისტემა, მეიზი, მუსიკალური ინსტრუმენტები და ა.შ.</li>
+      <li xml:lang="lt">kita: laikrodžio bei laiko pažinimas, Brailio raštas, labirintas, muzikos instrumentai ir kt.</li>
       <li xml:lang="lv">citas: pateikt laiku, Braila raksts, labirints, mūzikas instrumenti u.c.</li>
       <li xml:lang="nl">overig: leren klokkijken, het braille-systeem, doolhof, muziekinstrumenten, etc.</li>
       <li xml:lang="pl">inne: naucz się godzin na zegarze, systemu brajla, labiryntów, instrumentów muzycznych, itp.</li>
