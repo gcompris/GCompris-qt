@@ -1,7 +1,7 @@
 # Translation for gcompris_qt.po to Euskara/Basque (eu).
 # Copyright (C) 2018-2025 This file is copyright:
 # This file is distributed under the same license as the GCompris package.
-# SPDX-FileCopyrightText: 2023, 2024, 2025 KDE euskaratzeko proiektuaren arduraduna <xalba@ni.eus>
+# SPDX-FileCopyrightText: 2023, 2024, 2025, 2026 KDE euskaratzeko proiektuaren arduraduna <xalba@ni.eus>
 #
 # Translators:
 # Alexander Gabilondo <alexgabe@irakasle.net>, 2018, 2019, 2022.
@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2018-11-30 13:03+0000\n"
-"PO-Revision-Date: 2025-12-27 09:41+0100\n"
+"PO-Revision-Date: 2026-01-25 14:09+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.12.0\n"
+"X-Generator: Lokalize 25.12.1\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -7513,7 +7513,7 @@ msgid ""
 "established before the period of Christopher Columbus and probably served as "
 "the religion center of Yucatan for a while."
 msgstr ""
-"Chichen Itza, \"Itza putzuaren ahoan\" esan nahi du, Mexikoko Yucatán "
+"Chichen Itza, “Itza putzuaren ahoan” esan nahi du, Mexikoko Yucatán "
 "penintsulako hiri Maia bat, Valladolid eta Merida artean. Kristobal Kolonen "
 "garaiaren aurretik ezarri zen eta ziurrenik Yucatáneko erlijio-zentroa izan "
 "zen denbora batez."
@@ -8034,7 +8034,7 @@ msgstr ""
 "arroilaren labarretik zintzilik. Europako herri ezagunenetako bat, "
 "Rocamadour-rek antza grabitate legeen kontra jokatzen du. Fedearen gotorleku "
 "zorabiagarria hobekien laburbiltzen duena bertako esaera zahar bat da: "
-"\"etxeak ibaian, elizak etxeetan, arrokak elizetan, gaztelua arrokan\"."
+"“etxeak ibaian, elizak etxeetan, arrokak elizetan, gaztelua arrokan”."
 
 #: activities/explore_monuments/resource/board/board3.qml:95
 #: activities/explore_monuments/resource/board/board3.qml:98

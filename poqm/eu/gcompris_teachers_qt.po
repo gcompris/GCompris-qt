@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-01-01 19:12+0100\n"
+"PO-Revision-Date: 2026-01-25 15:02+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.12.0\n"
+"X-Generator: Lokalize 25.12.1\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
 #: server/activities/binary_bulb/ActivityEditor.qml:12
@@ -1234,9 +1234,6 @@ msgid "Remove last entry"
 msgstr "Kendu azken sarrera"
 
 #: server/components/FoldDown.qml:151
-#, fuzzy
-#| msgctxt "FoldDown|"
-#| msgid "Filter list"
 msgctxt "FoldDown|@action"
 msgid "Filter list"
 msgstr "Iragazi zerrenda"
@@ -1714,9 +1711,6 @@ msgid "Users IDs"
 msgstr "Erabiltzaile IDak"
 
 #: server/singletons/Master.qml:45
-#, fuzzy
-#| msgctxt "Master|"
-#| msgid "Activity Id"
 msgctxt "Master|"
 msgid "Activity ID"
 msgstr "Jarduera IDa"
@@ -1885,12 +1879,9 @@ msgid "Delete"
 msgstr "Ezabatu"
 
 #: server/views/datas/DuplicateData.qml:212
-#, fuzzy
-#| msgctxt "DuplicateData|"
-#| msgid "You are about to delete datas"
 msgctxt "DuplicateData|"
 msgid "You are about to delete data"
-msgstr "Datu-multzoa ezabatzera zoaz"
+msgstr "Datuak ezabatzera zoaz"
 
 #: server/views/datas/DuplicateData.qml:230
 msgctxt "DuplicateData|"
@@ -1958,12 +1949,9 @@ msgid "Not connected"
 msgstr "Konektatu gabe"
 
 #: server/views/DevicesView.qml:54
-#, fuzzy
-#| msgctxt "LoginView|"
-#| msgid "Incorrect password"
 msgctxt "DevicesView|"
 msgid "Incorrect password"
-msgstr "Pasahitza okerra"
+msgstr "Pasahitz okerra"
 
 #: server/views/DevicesView.qml:56
 msgctxt "DevicesView|"
@@ -2222,28 +2210,20 @@ msgid "Port"
 msgstr "Ataka"
 
 #: server/views/SettingsView.qml:188
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Server is"
 msgctxt "SettingsView|"
 msgid "Server status"
-msgstr "Zerbitzaria"
+msgstr "Zerbitzariaren egoera"
 
 #: server/views/SettingsView.qml:189
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Running"
 msgctxt "SettingsView|As in 'The server is running'"
 msgid "Running"
-msgstr "Exekutatzen ari da"
+msgstr "Martxan dago"
 
 #: server/views/SettingsView.qml:189
-#, fuzzy, qt-format
-#| msgctxt "SettingsView|"
-#| msgid "Already running on port %1"
+#, qt-format
 msgctxt "SettingsView|As in 'The Server is already running on port %1'"
 msgid "Already running on port %1"
-msgstr "%1 atakan dagoeneko martxan"
+msgstr "Dagoeneko martxan dago %1 atakan"
 
 #: server/views/SettingsView.qml:197
 msgctxt "SettingsView|"
