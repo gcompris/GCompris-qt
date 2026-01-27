@@ -1169,12 +1169,12 @@ msgctxt "FoldDown|@action"
 msgid "Filter list"
 msgstr ""
 
-#: server/components/OkCancelButtons.qml:19
+#: server/components/OkCancelButtons.qml:21
 msgctxt "OkCancelButtons|"
 msgid "OK"
 msgstr ""
 
-#: server/components/OkCancelButtons.qml:20
+#: server/components/OkCancelButtons.qml:22
 msgctxt "OkCancelButtons|"
 msgid "Cancel"
 msgstr ""
@@ -1878,7 +1878,7 @@ msgstr ""
 
 #: server/views/DevicesView.qml:56
 msgctxt "DevicesView|"
-msgid "Logged"
+msgid "Logged in"
 msgstr ""
 
 #: server/views/DevicesView.qml:58
@@ -1948,7 +1948,7 @@ msgstr ""
 
 #: server/views/DevicesView.qml:250
 msgctxt "DevicesView|"
-msgid "Logged:"
+msgid "Logged in:"
 msgstr ""
 
 #: server/views/DevicesView.qml:257
@@ -2225,7 +2225,7 @@ msgstr ""
 
 #: server/views/SettingsView.qml:297
 msgctxt "SettingsView|"
-msgid "Pupils logged"
+msgid "Pupils logged in"
 msgstr ""
 
 #: server/views/SettingsView.qml:304

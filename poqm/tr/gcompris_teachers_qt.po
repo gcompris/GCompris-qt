@@ -1217,12 +1217,12 @@ msgctxt "FoldDown|@action"
 msgid "Filter list"
 msgstr "Listeyi süz"
 
-#: server/components/OkCancelButtons.qml:19
+#: server/components/OkCancelButtons.qml:21
 msgctxt "OkCancelButtons|"
 msgid "OK"
 msgstr "Tamam"
 
-#: server/components/OkCancelButtons.qml:20
+#: server/components/OkCancelButtons.qml:22
 msgctxt "OkCancelButtons|"
 msgid "Cancel"
 msgstr "İptal"
@@ -1937,8 +1937,11 @@ msgid "Incorrect password"
 msgstr "Yanlış parola"
 
 #: server/views/DevicesView.qml:56
+#, fuzzy
+#| msgctxt "DevicesView|"
+#| msgid "Logged"
 msgctxt "DevicesView|"
-msgid "Logged"
+msgid "Logged in"
 msgstr "Günlüklendi"
 
 #: server/views/DevicesView.qml:58
@@ -2007,8 +2010,11 @@ msgid "Connected:"
 msgstr "Bağlı:"
 
 #: server/views/DevicesView.qml:250
+#, fuzzy
+#| msgctxt "DevicesView|"
+#| msgid "Logged:"
 msgctxt "DevicesView|"
-msgid "Logged:"
+msgid "Logged in:"
 msgstr "Günlüklü:"
 
 #: server/views/DevicesView.qml:257
@@ -2284,8 +2290,11 @@ msgid "Pupils connected"
 msgstr "Bağlı Öğrenciler"
 
 #: server/views/SettingsView.qml:297
+#, fuzzy
+#| msgctxt "SettingsView|"
+#| msgid "Pupils logged"
 msgctxt "SettingsView|"
-msgid "Pupils logged"
+msgid "Pupils logged in"
 msgstr "Günlüklenen Öğrenciler"
 
 #: server/views/SettingsView.qml:304

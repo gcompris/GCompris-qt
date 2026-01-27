@@ -1227,12 +1227,12 @@ msgctxt "FoldDown|@action"
 msgid "Filter list"
 msgstr "Списък с филтри"
 
-#: server/components/OkCancelButtons.qml:19
+#: server/components/OkCancelButtons.qml:21
 msgctxt "OkCancelButtons|"
 msgid "OK"
 msgstr "Добре"
 
-#: server/components/OkCancelButtons.qml:20
+#: server/components/OkCancelButtons.qml:22
 msgctxt "OkCancelButtons|"
 msgid "Cancel"
 msgstr "Отказ"
@@ -1948,8 +1948,11 @@ msgid "Incorrect password"
 msgstr "Неправилна парола"
 
 #: server/views/DevicesView.qml:56
+#, fuzzy
+#| msgctxt "DevicesView|"
+#| msgid "Logged"
 msgctxt "DevicesView|"
-msgid "Logged"
+msgid "Logged in"
 msgstr "Вписан"
 
 #: server/views/DevicesView.qml:58
@@ -2018,8 +2021,11 @@ msgid "Connected:"
 msgstr "Свързани:"
 
 #: server/views/DevicesView.qml:250
+#, fuzzy
+#| msgctxt "DevicesView|"
+#| msgid "Logged:"
 msgctxt "DevicesView|"
-msgid "Logged:"
+msgid "Logged in:"
 msgstr "Записано:"
 
 #: server/views/DevicesView.qml:257
@@ -2295,8 +2301,11 @@ msgid "Pupils connected"
 msgstr "Учениците са свързани"
 
 #: server/views/SettingsView.qml:297
+#, fuzzy
+#| msgctxt "SettingsView|"
+#| msgid "Pupils logged"
 msgctxt "SettingsView|"
-msgid "Pupils logged"
+msgid "Pupils logged in"
 msgstr "Учениците са влезли в системата"
 
 #: server/views/SettingsView.qml:304

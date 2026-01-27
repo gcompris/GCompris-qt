@@ -1224,12 +1224,12 @@ msgctxt "FoldDown|@action"
 msgid "Filter list"
 msgstr "Filtriraj seznam"
 
-#: server/components/OkCancelButtons.qml:19
+#: server/components/OkCancelButtons.qml:21
 msgctxt "OkCancelButtons|"
 msgid "OK"
 msgstr "V redu"
 
-#: server/components/OkCancelButtons.qml:20
+#: server/components/OkCancelButtons.qml:22
 msgctxt "OkCancelButtons|"
 msgid "Cancel"
 msgstr "Prekliči"
@@ -1942,8 +1942,11 @@ msgid "Incorrect password"
 msgstr "Napačno geslo"
 
 #: server/views/DevicesView.qml:56
+#, fuzzy
+#| msgctxt "DevicesView|"
+#| msgid "Logged"
 msgctxt "DevicesView|"
-msgid "Logged"
+msgid "Logged in"
 msgstr "Zabeleženo"
 
 #: server/views/DevicesView.qml:58
@@ -2012,8 +2015,11 @@ msgid "Connected:"
 msgstr "Povezano:"
 
 #: server/views/DevicesView.qml:250
+#, fuzzy
+#| msgctxt "DevicesView|"
+#| msgid "Logged:"
 msgctxt "DevicesView|"
-msgid "Logged:"
+msgid "Logged in:"
 msgstr "Zabeleženo:"
 
 #: server/views/DevicesView.qml:257
@@ -2289,8 +2295,11 @@ msgid "Pupils connected"
 msgstr "Povezani učenci"
 
 #: server/views/SettingsView.qml:297
+#, fuzzy
+#| msgctxt "SettingsView|"
+#| msgid "Pupils logged"
 msgctxt "SettingsView|"
-msgid "Pupils logged"
+msgid "Pupils logged in"
 msgstr "Prijavljeni učenci"
 
 #: server/views/SettingsView.qml:304
