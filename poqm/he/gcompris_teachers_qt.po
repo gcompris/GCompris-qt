@@ -1201,12 +1201,12 @@ msgctxt "FoldDown|"
 msgid "Filter list"
 msgstr "סינון רשימה"
 
-#: server/components/OkCancelButtons.qml:19
+#: server/components/OkCancelButtons.qml:21
 msgctxt "OkCancelButtons|"
 msgid "OK"
 msgstr "אישור"
 
-#: server/components/OkCancelButtons.qml:20
+#: server/components/OkCancelButtons.qml:22
 msgctxt "OkCancelButtons|"
 msgid "Cancel"
 msgstr "ביטול"

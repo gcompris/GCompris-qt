@@ -1237,12 +1237,12 @@ msgctxt "FoldDown|"
 msgid "Filter list"
 msgstr "Filtrar lista"
 
-#: server/components/OkCancelButtons.qml:19
+#: server/components/OkCancelButtons.qml:21
 msgctxt "OkCancelButtons|"
 msgid "OK"
 msgstr "Aceptar"
 
-#: server/components/OkCancelButtons.qml:20
+#: server/components/OkCancelButtons.qml:22
 msgctxt "OkCancelButtons|"
 msgid "Cancel"
 msgstr "Cancelar"
