@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-01-10 12:27+0100\n"
+"PO-Revision-Date: 2026-01-27 18:26+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.12.0\n"
+"X-Generator: Lokalize 25.12.1\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
 #: server/activities/binary_bulb/ActivityEditor.qml:12
@@ -1258,8 +1258,8 @@ msgctxt "ServerLanguageList|"
 msgid "Your system default"
 msgstr "Uw systeemstandaard"
 
-#: server/controllers/database-controller.cpp:83
-#: server/controllers/database-controller.cpp:89
+#: server/controllers/database-controller.cpp:79
+#: server/controllers/database-controller.cpp:85
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid ""
@@ -1269,114 +1269,114 @@ msgstr ""
 "Bestand %1\n"
 "Foute SQL: %2"
 
-#: server/controllers/database-controller.cpp:125
+#: server/controllers/database-controller.cpp:121
 msgctxt "controllers::DatabaseController|"
 msgid "Table teacher_ could not be updated to current version."
 msgstr "Tabel docent_ kon niet bijgewerkt worden tot de huidige versie."
 
-#: server/controllers/database-controller.cpp:351
+#: server/controllers/database-controller.cpp:347
 msgctxt "controllers::DatabaseController|"
 msgid "Error creating teacher."
 msgstr "Fout bij het aanmaken van docent."
 
-#: server/controllers/database-controller.cpp:373
+#: server/controllers/database-controller.cpp:369
 msgctxt "controllers::DatabaseController|"
 msgid "Wrong password."
 msgstr "Fout wachtwoord."
 
-#: server/controllers/database-controller.cpp:417
+#: server/controllers/database-controller.cpp:413
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> already exists."
 msgstr "Groep <b>%1</b> bestaat al."
 
-#: server/controllers/database-controller.cpp:438
+#: server/controllers/database-controller.cpp:434
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be updated to <b>%2</b>."
 msgstr "Groep <b>%1</b> kon niet worden bijgewerkt tot <b>%2</b>."
 
-#: server/controllers/database-controller.cpp:456
+#: server/controllers/database-controller.cpp:452
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_."
 msgstr "Groep <b>%1</b> kon niet worden verwijderd uit de tabel groep_."
 
-#: server/controllers/database-controller.cpp:459
+#: server/controllers/database-controller.cpp:455
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_user_."
 msgstr ""
 "Groep <b>%1</b> kon niet worden verwijderd uit de tabel groep_gebruiker."
 
-#: server/controllers/database-controller.cpp:483
+#: server/controllers/database-controller.cpp:479
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Pupil login <b>%1</b> already exists or password is empty."
 msgstr "Aanmelding leerling <b>%1</b> bestaat al of wachtwoord is leeg."
 
-#: server/controllers/database-controller.cpp:502
+#: server/controllers/database-controller.cpp:498
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "<b>%1</b> could not be updated to <b>%2</b>."
 msgstr "<b>%1</b> kon niet worden bijgewerkt tot <b>%2</b>."
 
-#: server/controllers/database-controller.cpp:522
+#: server/controllers/database-controller.cpp:518
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table user_."
 msgstr "Gebruiker <b>%1</b> kon niet verwijderd worden uit tabel gebruiker_."
 
-#: server/controllers/database-controller.cpp:527
+#: server/controllers/database-controller.cpp:523
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table result_."
 msgstr "Gebruiker <b>%1</b> kon niet verwijderd worden uit tabel resultaat_."
 
-#: server/controllers/database-controller.cpp:542
+#: server/controllers/database-controller.cpp:538
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table group_user_."
 msgstr ""
 "Gebruiker <b>%1</b> kon niet worden verwijderd uit de tabel groep_gebruiker_."
 
-#: server/controllers/database-controller.cpp:557
+#: server/controllers/database-controller.cpp:553
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> already exists in group <b>%2</b>."
 msgstr "Gebruiker <b>%1</b> bestaat al in groep <b>%2</b>."
 
-#: server/controllers/database-controller.cpp:572
+#: server/controllers/database-controller.cpp:568
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> group <b>%2</b> couldn't be deleted."
 msgstr "Gebruiker <b>%1</b> groep <b>%2</b> kon niet verwijderd worden."
 
-#: server/controllers/database-controller.cpp:607
+#: server/controllers/database-controller.cpp:603
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Result could not be added for user <b>%1</b>"
 msgstr "Resultaat kon niet worden toegevoegd voor gebruiker <b>%1</b>"
 
-#: server/controllers/database-controller.cpp:619
+#: server/controllers/database-controller.cpp:615
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Error inserting activity: %1"
 msgstr "Fout bij invoegen activiteit: %1"
 
-#: server/controllers/database-controller.cpp:665
+#: server/controllers/database-controller.cpp:661
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> already exists."
 msgstr "Gegevensset <b>%1</b> bestaat al."
 
-#: server/controllers/database-controller.cpp:682
+#: server/controllers/database-controller.cpp:678
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> could not be updated to <b>%2</b>."
 msgstr "Gegevensset <b>%1</b> kon niet bijgewerkt worden tot <b>%2</b>."
 
-#: server/controllers/database-controller.cpp:697
+#: server/controllers/database-controller.cpp:693
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> couldn't be deleted."
@@ -1951,12 +1951,9 @@ msgid "Incorrect password"
 msgstr "Onjuist wachtwoord"
 
 #: server/views/DevicesView.qml:56
-#, fuzzy
-#| msgctxt "DevicesView|"
-#| msgid "Logged"
 msgctxt "DevicesView|"
 msgid "Logged in"
-msgstr "Gelogd"
+msgstr "Aangemeld"
 
 #: server/views/DevicesView.qml:58
 msgctxt "DevicesView|"
@@ -2024,12 +2021,9 @@ msgid "Connected:"
 msgstr "Verbonden:"
 
 #: server/views/DevicesView.qml:250
-#, fuzzy
-#| msgctxt "DevicesView|"
-#| msgid "Logged:"
 msgctxt "DevicesView|"
 msgid "Logged in:"
-msgstr "Gelogd:"
+msgstr "Aangemeld:"
 
 #: server/views/DevicesView.qml:257
 msgctxt "DevicesView|"
@@ -2304,9 +2298,6 @@ msgid "Pupils connected"
 msgstr "Verbonden leerlingen"
 
 #: server/views/SettingsView.qml:297
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Pupils logged"
 msgctxt "SettingsView|"
 msgid "Pupils logged in"
 msgstr "Aangemelde leerlingen"

@@ -1236,9 +1236,6 @@ msgid "Remove last entry"
 msgstr "Retirer la dernière entrée"
 
 #: server/components/FoldDown.qml:151
-#, fuzzy
-#| msgctxt "FoldDown|"
-#| msgid "Filter list"
 msgctxt "FoldDown|@action"
 msgid "Filter list"
 msgstr "Filtrer la liste"
@@ -1268,8 +1265,8 @@ msgctxt "ServerLanguageList|"
 msgid "Your system default"
 msgstr "Langue par défaut du système"
 
-#: server/controllers/database-controller.cpp:83
-#: server/controllers/database-controller.cpp:89
+#: server/controllers/database-controller.cpp:79
+#: server/controllers/database-controller.cpp:85
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid ""
@@ -1279,113 +1276,113 @@ msgstr ""
 "Fichier %1\n"
 "Erreur SQL : %2"
 
-#: server/controllers/database-controller.cpp:125
+#: server/controllers/database-controller.cpp:121
 msgctxt "controllers::DatabaseController|"
 msgid "Table teacher_ could not be updated to current version."
 msgstr "Impossible de mettre à jour la table teacher_ à la version actuelle."
 
-#: server/controllers/database-controller.cpp:351
+#: server/controllers/database-controller.cpp:347
 msgctxt "controllers::DatabaseController|"
 msgid "Error creating teacher."
 msgstr "Erreur lors de la création de l'enseignant."
 
-#: server/controllers/database-controller.cpp:373
+#: server/controllers/database-controller.cpp:369
 msgctxt "controllers::DatabaseController|"
 msgid "Wrong password."
 msgstr "Mot de passe incorrect."
 
-#: server/controllers/database-controller.cpp:417
+#: server/controllers/database-controller.cpp:413
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> already exists."
 msgstr "Le groupe <b>%1</b> existe déjà."
 
-#: server/controllers/database-controller.cpp:438
+#: server/controllers/database-controller.cpp:434
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be updated to <b>%2</b>."
 msgstr "Impossible de mettre à jour le groupe <b>%1</b> vers <b>%2</b>."
 
-#: server/controllers/database-controller.cpp:456
+#: server/controllers/database-controller.cpp:452
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_."
 msgstr "Impossible de supprimer le groupe <b>%1</b> de la table group_."
 
-#: server/controllers/database-controller.cpp:459
+#: server/controllers/database-controller.cpp:455
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_user_."
 msgstr "Impossible de supprimer le groupe <b>%1</b> de la table group_user_."
 
-#: server/controllers/database-controller.cpp:483
+#: server/controllers/database-controller.cpp:479
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Pupil login <b>%1</b> already exists or password is empty."
 msgstr ""
 "L'identifiant de l'élève <b>%1</b> existe déjà ou le mot de passe est vide."
 
-#: server/controllers/database-controller.cpp:502
+#: server/controllers/database-controller.cpp:498
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "<b>%1</b> could not be updated to <b>%2</b>."
 msgstr "Impossible de mettre à jour <b>%1</b> vers <b>%2</b>."
 
-#: server/controllers/database-controller.cpp:522
+#: server/controllers/database-controller.cpp:518
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table user_."
 msgstr "Impossible de supprimer l'élève <b>%1</b> de la table user_"
 
-#: server/controllers/database-controller.cpp:527
+#: server/controllers/database-controller.cpp:523
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table result_."
 msgstr "Impossible de supprimer l'élève <b>%1</b> de la table result_."
 
-#: server/controllers/database-controller.cpp:542
+#: server/controllers/database-controller.cpp:538
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table group_user_."
 msgstr "Impossible de supprimer l'élève <b>%1</b> de la table group_user_."
 
-#: server/controllers/database-controller.cpp:557
+#: server/controllers/database-controller.cpp:553
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> already exists in group <b>%2</b>."
 msgstr "L'élève <b>%1</b> appartient déjà au groupe <b>%2</b>."
 
-#: server/controllers/database-controller.cpp:572
+#: server/controllers/database-controller.cpp:568
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> group <b>%2</b> couldn't be deleted."
 msgstr "Impossible de supprimer l'élève <b>%1</b> du groupe <b>%2</b>."
 
-#: server/controllers/database-controller.cpp:607
+#: server/controllers/database-controller.cpp:603
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Result could not be added for user <b>%1</b>"
 msgstr "Impossible d'ajouter les résultats pour l'élève <b>%1</b>"
 
-#: server/controllers/database-controller.cpp:619
+#: server/controllers/database-controller.cpp:615
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Error inserting activity: %1"
 msgstr "Erreur lors de l'insertion de l'activité : %1"
 
-#: server/controllers/database-controller.cpp:665
+#: server/controllers/database-controller.cpp:661
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> already exists."
 msgstr "La base de données <b>%1</b> existe déjà."
 
-#: server/controllers/database-controller.cpp:682
+#: server/controllers/database-controller.cpp:678
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> could not be updated to <b>%2</b>."
 msgstr "Impossible de mettre à jour le jeu de données <b>%1</b> : <b>%2</b>."
 
-#: server/controllers/database-controller.cpp:697
+#: server/controllers/database-controller.cpp:693
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> couldn't be deleted."
@@ -1722,9 +1719,6 @@ msgid "Users IDs"
 msgstr "Identifiant des utilisateurs"
 
 #: server/singletons/Master.qml:45
-#, fuzzy
-#| msgctxt "Master|"
-#| msgid "Activity Id"
 msgctxt "Master|"
 msgid "Activity ID"
 msgstr "Identifiant de l'activité"
@@ -1790,20 +1784,14 @@ msgid "Success ratio"
 msgstr "Ratio de réussite"
 
 #: server/views/charts/ActivitiesChart.qml:104
-#, fuzzy
-#| msgctxt "AllData|"
-#| msgid "Daily activities"
 msgctxt "ActivitiesChart|"
 msgid "Daily activities chart"
-msgstr "Activités quotidiennes"
+msgstr "Graphique d'activités quotidiennes"
 
 #: server/views/charts/PupilsChart.qml:102
-#, fuzzy
-#| msgctxt "AllData|"
-#| msgid "All users activities"
 msgctxt "PupilsChart|"
 msgid "User activities chart"
-msgstr "Toutes les activités de tous les utilisateurs"
+msgstr "Graphique d'activités de l'utilisateur"
 
 #: server/views/ChartsView.qml:136
 msgctxt "ChartsView|"
@@ -1899,9 +1887,6 @@ msgid "Delete"
 msgstr "Supprimer"
 
 #: server/views/datas/DuplicateData.qml:212
-#, fuzzy
-#| msgctxt "DuplicateData|"
-#| msgid "You are about to delete datas"
 msgctxt "DuplicateData|"
 msgid "You are about to delete data"
 msgstr "Vous êtes sur le point de supprimer les données"
@@ -1972,9 +1957,6 @@ msgid "Not connected"
 msgstr "Non connecté"
 
 #: server/views/DevicesView.qml:54
-#, fuzzy
-#| msgctxt "LoginView|"
-#| msgid "Incorrect password"
 msgctxt "DevicesView|"
 msgid "Incorrect password"
 msgstr "Mot de passe invalide"
@@ -2242,25 +2224,17 @@ msgid "Port"
 msgstr "Port"
 
 #: server/views/SettingsView.qml:188
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Server is"
 msgctxt "SettingsView|"
 msgid "Server status"
-msgstr "Le serveur est"
+msgstr "Etat du serveur"
 
 #: server/views/SettingsView.qml:189
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Running"
 msgctxt "SettingsView|As in 'The server is running'"
 msgid "Running"
 msgstr "démarré"
 
 #: server/views/SettingsView.qml:189
-#, fuzzy, qt-format
-#| msgctxt "SettingsView|"
-#| msgid "Already running on port %1"
+#, qt-format
 msgctxt "SettingsView|As in 'The Server is already running on port %1'"
 msgid "Already running on port %1"
 msgstr "déjà démarré sur le port %1"

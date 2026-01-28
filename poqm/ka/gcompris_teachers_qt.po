@@ -1248,8 +1248,8 @@ msgctxt "ServerLanguageList|"
 msgid "Your system default"
 msgstr "თქვენი სისტემის ნაგულისხმევი"
 
-#: server/controllers/database-controller.cpp:83
-#: server/controllers/database-controller.cpp:89
+#: server/controllers/database-controller.cpp:79
+#: server/controllers/database-controller.cpp:85
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid ""
@@ -1259,114 +1259,114 @@ msgstr ""
 "ფაილი %1\n"
 "შეცდომის SQL: %2"
 
-#: server/controllers/database-controller.cpp:125
+#: server/controllers/database-controller.cpp:121
 msgctxt "controllers::DatabaseController|"
 msgid "Table teacher_ could not be updated to current version."
 msgstr "ცხრილის teacher_ მიმდინარე ვერსიამდე განახლება შეუძლებელია."
 
-#: server/controllers/database-controller.cpp:351
+#: server/controllers/database-controller.cpp:347
 msgctxt "controllers::DatabaseController|"
 msgid "Error creating teacher."
 msgstr "მასწავლებლის შექმნის შეცდომა."
 
-#: server/controllers/database-controller.cpp:373
+#: server/controllers/database-controller.cpp:369
 msgctxt "controllers::DatabaseController|"
 msgid "Wrong password."
 msgstr "არასწორი პაროლი."
 
-#: server/controllers/database-controller.cpp:417
+#: server/controllers/database-controller.cpp:413
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> already exists."
 msgstr "ჯგუფი <b>%1</b> უკვე არსებობს."
 
-#: server/controllers/database-controller.cpp:438
+#: server/controllers/database-controller.cpp:434
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be updated to <b>%2</b>."
 msgstr "ჯგუფის <b>%1</b> განახლება შეუძლებელია ვერსიამდე <b>%2</b>."
 
-#: server/controllers/database-controller.cpp:456
+#: server/controllers/database-controller.cpp:452
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_."
 msgstr "ჯგუფის <b>%1</b> წაშლა შეუძლებელია ცხრილიდან group_."
 
-#: server/controllers/database-controller.cpp:459
+#: server/controllers/database-controller.cpp:455
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_user_."
 msgstr "ჯგუფის <b>%1</b> წაშლა შეუძლებელია ცხრილიდან group_user_."
 
-#: server/controllers/database-controller.cpp:483
+#: server/controllers/database-controller.cpp:479
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Pupil login <b>%1</b> already exists or password is empty."
 msgstr ""
 "მოსწავლის მომხმარებლის სახელი <b>%1</b> უკვე არსებობს, ან პაროლი ცარიელია."
 
-#: server/controllers/database-controller.cpp:502
+#: server/controllers/database-controller.cpp:498
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "<b>%1</b> could not be updated to <b>%2</b>."
 msgstr "<b>%1</b>-ის განახლება შეუძლებელია ვერსიამდე <b>%2</b>."
 
-#: server/controllers/database-controller.cpp:522
+#: server/controllers/database-controller.cpp:518
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table user_."
 msgstr "მომხმარებლის <b>%1</b> წაშლა შეუძლებელია ცხრილიდან user_."
 
-#: server/controllers/database-controller.cpp:527
+#: server/controllers/database-controller.cpp:523
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table result_."
 msgstr "მომხმარებლის <b>%1</b> წაშლა შეუძლებელია ცხრილიდან result_."
 
-#: server/controllers/database-controller.cpp:542
+#: server/controllers/database-controller.cpp:538
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table group_user_."
 msgstr "მომხმარებლის <b>%1</b> წაშლა შეუძლებელია ცხრილიდან group_user_."
 
-#: server/controllers/database-controller.cpp:557
+#: server/controllers/database-controller.cpp:553
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> already exists in group <b>%2</b>."
 msgstr "მომხმარებელი <b>%1</b> უკვე არსებობს ჯგუფში <b>%2</b>."
 
-#: server/controllers/database-controller.cpp:572
+#: server/controllers/database-controller.cpp:568
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> group <b>%2</b> couldn't be deleted."
 msgstr "მომხმარებლის <b>%1</b> წაშლა ჯგუფიდან <b>%2</b> შეუძლებელია."
 
-#: server/controllers/database-controller.cpp:607
+#: server/controllers/database-controller.cpp:603
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Result could not be added for user <b>%1</b>"
 msgstr "შედეგის დამატება შეუძლებელია მომხმარებლისთვის <b>%1</b>"
 
-#: server/controllers/database-controller.cpp:619
+#: server/controllers/database-controller.cpp:615
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Error inserting activity: %1"
 msgstr "აქტივობის ჩასმის შეცდომა: %1"
 
-#: server/controllers/database-controller.cpp:665
+#: server/controllers/database-controller.cpp:661
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> already exists."
 msgstr "მონაცემთა ნაკრები <b>%1</b> უკვე არსებობს."
 
-#: server/controllers/database-controller.cpp:682
+#: server/controllers/database-controller.cpp:678
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> could not be updated to <b>%2</b>."
 msgstr ""
 "მონაცემთა ნაკრების <b>%1</b> განახლება ვერსიამდე <b>%2</b> შეუძლებელია."
 
-#: server/controllers/database-controller.cpp:697
+#: server/controllers/database-controller.cpp:693
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> couldn't be deleted."
@@ -1947,9 +1947,6 @@ msgid "Incorrect password"
 msgstr "არასწორი პაროლი"
 
 #: server/views/DevicesView.qml:56
-#, fuzzy
-#| msgctxt "DevicesView|"
-#| msgid "Logged"
 msgctxt "DevicesView|"
 msgid "Logged in"
 msgstr "შესული"
@@ -2020,9 +2017,6 @@ msgid "Connected:"
 msgstr "დაკავშირებულია:"
 
 #: server/views/DevicesView.qml:250
-#, fuzzy
-#| msgctxt "DevicesView|"
-#| msgid "Logged:"
 msgctxt "DevicesView|"
 msgid "Logged in:"
 msgstr "შესული ბრძანდებით, როგორც:"
@@ -2300,9 +2294,6 @@ msgid "Pupils connected"
 msgstr "მოსწავლეები დაკავშირებულია"
 
 #: server/views/SettingsView.qml:297
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Pupils logged"
 msgctxt "SettingsView|"
 msgid "Pupils logged in"
 msgstr "შესული მოსწავლეები"

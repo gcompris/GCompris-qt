@@ -1259,8 +1259,8 @@ msgctxt "ServerLanguageList|"
 msgid "Your system default"
 msgstr "Predefinita del tuo sistema"
 
-#: server/controllers/database-controller.cpp:83
-#: server/controllers/database-controller.cpp:89
+#: server/controllers/database-controller.cpp:79
+#: server/controllers/database-controller.cpp:85
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid ""
@@ -1270,112 +1270,112 @@ msgstr ""
 "File %1\n"
 "Errore SQL: %2"
 
-#: server/controllers/database-controller.cpp:125
+#: server/controllers/database-controller.cpp:121
 msgctxt "controllers::DatabaseController|"
 msgid "Table teacher_ could not be updated to current version."
 msgstr "La tabella teacher_ non può essere aggiornata alla versione attuale."
 
-#: server/controllers/database-controller.cpp:351
+#: server/controllers/database-controller.cpp:347
 msgctxt "controllers::DatabaseController|"
 msgid "Error creating teacher."
 msgstr "Errore durante la creazione dell'insegnante."
 
-#: server/controllers/database-controller.cpp:373
+#: server/controllers/database-controller.cpp:369
 msgctxt "controllers::DatabaseController|"
 msgid "Wrong password."
 msgstr "Password errata."
 
-#: server/controllers/database-controller.cpp:417
+#: server/controllers/database-controller.cpp:413
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> already exists."
 msgstr "Il gruppo <b>%1</b> esiste già."
 
-#: server/controllers/database-controller.cpp:438
+#: server/controllers/database-controller.cpp:434
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be updated to <b>%2</b>."
 msgstr "Il gruppo <b>%1</b> non può essere aggiornato a <b>%2</b>."
 
-#: server/controllers/database-controller.cpp:456
+#: server/controllers/database-controller.cpp:452
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_."
 msgstr "Impossibile eliminare il gruppo <b>%1</b> dalla tabella group_."
 
-#: server/controllers/database-controller.cpp:459
+#: server/controllers/database-controller.cpp:455
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_user_."
 msgstr "Impossibile eliminare il gruppo <b>%1</b> dalla tabella group_user_."
 
-#: server/controllers/database-controller.cpp:483
+#: server/controllers/database-controller.cpp:479
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Pupil login <b>%1</b> already exists or password is empty."
 msgstr "L'accesso studente <b>%1</b> esiste già o la password è vuota."
 
-#: server/controllers/database-controller.cpp:502
+#: server/controllers/database-controller.cpp:498
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "<b>%1</b> could not be updated to <b>%2</b>."
 msgstr "<b>%1</b> non può essere aggiornato a <b>%2</b>."
 
-#: server/controllers/database-controller.cpp:522
+#: server/controllers/database-controller.cpp:518
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table user_."
 msgstr "L'utente <b>%1</b> non può essere eliminato dalla tabella user_."
 
-#: server/controllers/database-controller.cpp:527
+#: server/controllers/database-controller.cpp:523
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table result_."
 msgstr "L'utente <b>%1</b> non può essere eliminato dalla tabella result_."
 
-#: server/controllers/database-controller.cpp:542
+#: server/controllers/database-controller.cpp:538
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table group_user_."
 msgstr "Impossibile eliminare l'utente <b>%1</b> dalla tabella group_user_."
 
-#: server/controllers/database-controller.cpp:557
+#: server/controllers/database-controller.cpp:553
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> already exists in group <b>%2</b>."
 msgstr "L'utente <b>%1</b> esiste già nel gruppo <b>%2</b>."
 
-#: server/controllers/database-controller.cpp:572
+#: server/controllers/database-controller.cpp:568
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> group <b>%2</b> couldn't be deleted."
 msgstr "Impossibile eliminare l'utente <b>%1</b> del gruppo <b>%2</b>."
 
-#: server/controllers/database-controller.cpp:607
+#: server/controllers/database-controller.cpp:603
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Result could not be added for user <b>%1</b>"
 msgstr "Impossibile aggiungere il risultato per l'utente <b>%1</b>"
 
-#: server/controllers/database-controller.cpp:619
+#: server/controllers/database-controller.cpp:615
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Error inserting activity: %1"
 msgstr "Errore durante l'inserimento dell'attività: %1"
 
-#: server/controllers/database-controller.cpp:665
+#: server/controllers/database-controller.cpp:661
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> already exists."
 msgstr "L'insieme di dati <b>%1</b> esiste già."
 
-#: server/controllers/database-controller.cpp:682
+#: server/controllers/database-controller.cpp:678
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> could not be updated to <b>%2</b>."
 msgstr "Impossibile aggiornare l'insieme di dati <b>%1</b> a <b>%2</b>."
 
-#: server/controllers/database-controller.cpp:697
+#: server/controllers/database-controller.cpp:693
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> couldn't be deleted."

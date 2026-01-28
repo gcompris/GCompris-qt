@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
-"PO-Revision-Date: 2026-01-10 12:46+0100\n"
+"PO-Revision-Date: 2026-01-27 09:23+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -1254,8 +1254,8 @@ msgctxt "ServerLanguageList|"
 msgid "Your system default"
 msgstr "Predeterminat del sistema"
 
-#: server/controllers/database-controller.cpp:83
-#: server/controllers/database-controller.cpp:89
+#: server/controllers/database-controller.cpp:79
+#: server/controllers/database-controller.cpp:85
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid ""
@@ -1265,46 +1265,46 @@ msgstr ""
 "Fitxer %1\n"
 "Error SQL: %2"
 
-#: server/controllers/database-controller.cpp:125
+#: server/controllers/database-controller.cpp:121
 msgctxt "controllers::DatabaseController|"
 msgid "Table teacher_ could not be updated to current version."
 msgstr "No s'ha pogut actualitzar la taula «teacher_» a la versió actual."
 
-#: server/controllers/database-controller.cpp:351
+#: server/controllers/database-controller.cpp:347
 msgctxt "controllers::DatabaseController|"
 msgid "Error creating teacher."
 msgstr "S'ha produït un error en crear el professor/a."
 
-#: server/controllers/database-controller.cpp:373
+#: server/controllers/database-controller.cpp:369
 msgctxt "controllers::DatabaseController|"
 msgid "Wrong password."
 msgstr "Contrasenya errònia."
 
-#: server/controllers/database-controller.cpp:417
+#: server/controllers/database-controller.cpp:413
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> already exists."
 msgstr "El grup <b>%1</b> ja existeix."
 
-#: server/controllers/database-controller.cpp:438
+#: server/controllers/database-controller.cpp:434
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be updated to <b>%2</b>."
 msgstr "El grup <b>%1</b> no s'ha pogut actualitzar a <b>%2</b>."
 
-#: server/controllers/database-controller.cpp:456
+#: server/controllers/database-controller.cpp:452
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_."
 msgstr "El grup <b>%1</b> no s'ha pogut suprimir de la taula «group_»."
 
-#: server/controllers/database-controller.cpp:459
+#: server/controllers/database-controller.cpp:455
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_user_."
 msgstr "El grup <b>%1</b> no s'ha pogut suprimir de la taula «group_user_»."
 
-#: server/controllers/database-controller.cpp:483
+#: server/controllers/database-controller.cpp:479
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Pupil login <b>%1</b> already exists or password is empty."
@@ -1312,67 +1312,67 @@ msgstr ""
 "L'inici de sessió de l'alumne <b>%1</b> ja existeix o la contrasenya està "
 "buida."
 
-#: server/controllers/database-controller.cpp:502
+#: server/controllers/database-controller.cpp:498
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "<b>%1</b> could not be updated to <b>%2</b>."
 msgstr "<b>%1</b> no s'ha pogut actualitzar a <b>%2</b>."
 
-#: server/controllers/database-controller.cpp:522
+#: server/controllers/database-controller.cpp:518
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table user_."
 msgstr "L'usuari <b>%1</b> no s'ha pogut suprimir de la taula «user_»."
 
-#: server/controllers/database-controller.cpp:527
+#: server/controllers/database-controller.cpp:523
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table result_."
 msgstr "L'usuari <b>%1</b> no s'ha pogut suprimir de la taula «result_»."
 
-#: server/controllers/database-controller.cpp:542
+#: server/controllers/database-controller.cpp:538
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table group_user_."
 msgstr "L'usuari <b>%1</b> no s'ha pogut suprimir de la taula «group_user_»."
 
-#: server/controllers/database-controller.cpp:557
+#: server/controllers/database-controller.cpp:553
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> already exists in group <b>%2</b>."
 msgstr "L'usuari <b>%1</b> ja existeix al grup <b>%2</b>."
 
-#: server/controllers/database-controller.cpp:572
+#: server/controllers/database-controller.cpp:568
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> group <b>%2</b> couldn't be deleted."
 msgstr "L'usuari <b>%1</b> grup <b>%2</b> no s'ha pogut suprimir."
 
-#: server/controllers/database-controller.cpp:607
+#: server/controllers/database-controller.cpp:603
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Result could not be added for user <b>%1</b>"
 msgstr "No s'ha pogut afegir el resultat a l'usuari <b>%1</b>"
 
-#: server/controllers/database-controller.cpp:619
+#: server/controllers/database-controller.cpp:615
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Error inserting activity: %1"
 msgstr "Error en inserir l'activitat: %1"
 
-#: server/controllers/database-controller.cpp:665
+#: server/controllers/database-controller.cpp:661
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> already exists."
 msgstr "El conjunt de dades <b>%1</b> ja existeix."
 
-#: server/controllers/database-controller.cpp:682
+#: server/controllers/database-controller.cpp:678
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> could not be updated to <b>%2</b>."
 msgstr "El conjunt de dades <b>%1</b> no s'ha pogut actualitzar a <b>%2</b>."
 
-#: server/controllers/database-controller.cpp:697
+#: server/controllers/database-controller.cpp:693
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> couldn't be deleted."
@@ -1949,9 +1949,6 @@ msgid "Incorrect password"
 msgstr "Contrasenya incorrecta"
 
 #: server/views/DevicesView.qml:56
-#, fuzzy
-#| msgctxt "DevicesView|"
-#| msgid "Logged"
 msgctxt "DevicesView|"
 msgid "Logged in"
 msgstr "Sessió iniciada"
@@ -2022,9 +2019,6 @@ msgid "Connected:"
 msgstr "Connectat:"
 
 #: server/views/DevicesView.qml:250
-#, fuzzy
-#| msgctxt "DevicesView|"
-#| msgid "Logged:"
 msgctxt "DevicesView|"
 msgid "Logged in:"
 msgstr "Sessió iniciada:"
@@ -2302,12 +2296,9 @@ msgid "Pupils connected"
 msgstr "Alumnes connectats"
 
 #: server/views/SettingsView.qml:297
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Pupils logged"
 msgctxt "SettingsView|"
 msgid "Pupils logged in"
-msgstr "Alumnes amb inici de sessió"
+msgstr "Alumnes amb sessió iniciada"
 
 #: server/views/SettingsView.qml:304
 msgctxt "SettingsView|"
