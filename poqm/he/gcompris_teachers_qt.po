@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-01-10 13:29+0200\n"
+"PO-Revision-Date: 2026-01-27 21:34+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -233,6 +233,8 @@ msgid ""
 "multiplying the right side operand by another number between minimum and "
 "maximum values."
 msgstr ""
+"כאשר „אברים אקראיים”, האבר בצד הימני הוא תמיד בין הערך המזערי והמרבי. האבר "
+"בצד השמאלי נוצר על ידי הכפלת האבר הימני במספר נוסף בין הערך המזערי למרבי."
 
 #: server/activities/algebra_div/ActivityEditor.qml:18
 msgctxt "ActivityEditor|"
