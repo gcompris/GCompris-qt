@@ -2541,7 +2541,7 @@ msgstr ""
 #: activities/babyshapes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "The dog is provided by Andre Connes and released under the GPL"
-msgstr "Andre Connes ha proporcionat el gos i l'ha alliberat davall la GPL"
+msgstr "Andre Connes ha proporcionat el gos i l'ha distribuït segons la GPL"
 
 #: activities/babyshapes/resource/board/board1_0.qml:14
 msgctxt "board1_0|"

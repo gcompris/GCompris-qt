@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-id\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-05-01 16:41+0700\n"
+"PO-Revision-Date: 2026-01-25 09:44\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian\n"
 "Language: id\n"
@@ -36,8 +36,8 @@ msgstr ""
 "X-Crowdin-Project: gcompris-id\n"
 "X-Crowdin-Project-ID: 481873\n"
 "X-Crowdin-Language: id\n"
-"X-Crowdin-File: /gcompris-id/25.1/gcompris_qt.po\n"
-"X-Crowdin-File-ID: 130\n"
+"X-Crowdin-File: /gcompris-id/26.0/gcompris_qt.po\n"
+"X-Crowdin-File-ID: 142\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -5071,7 +5071,7 @@ msgstr "Mobil"
 #: activities/chronos/resource/board/board6_3.qml:39
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
-msgstr "1898 Renault voiturette"
+msgstr "1898 Renault Voiturette"
 
 #: activities/chronos/resource/board/board6_3.qml:47
 msgctxt "board6_3|"
@@ -5172,7 +5172,7 @@ msgstr "Mengenali huruf besar."
 #: activities/number_sequence/ActivityConfig.qml:24
 msgctxt "ActivityConfig|"
 msgid "Manual"
-msgstr "Manual"
+msgstr "Petunjuk"
 
 #: activities/clickanddraw/ActivityConfig.qml:32
 #: activities/drawletters/ActivityConfig.qml:32
@@ -6044,12 +6044,9 @@ msgstr "Listrik Digital"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital electric schema."
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "Membuat dan mensimulasikan skema listrik digital."
+msgstr "Membuat dan menyimulasikan sirkuit logika digital."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -6361,12 +6358,12 @@ msgstr ""
 #: activities/digital_electricity/DigitalElectricity.qml:248
 msgctxt "DigitalElectricity|"
 msgid "Input"
-msgstr "Input"
+msgstr "Masukan"
 
 #: activities/digital_electricity/DigitalElectricity.qml:266
 msgctxt "DigitalElectricity|"
 msgid "Output"
-msgstr "Output"
+msgstr "Luaran"
 
 #: activities/digital_electricity/TutorialDataset.qml:19
 msgctxt "TutorialDataset|"
@@ -7702,7 +7699,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board1.qml:44
 msgctxt "board1|"
 msgid "Christ the Redeemer"
-msgstr "Christ the Redeemer"
+msgstr "Kristus Sang Penebus"
 
 #: activities/explore_monuments/resource/board/board1.qml:42
 msgctxt "board1|"
@@ -7719,7 +7716,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board1.qml:55
 msgctxt "board1|"
 msgid "The Great Wall of China"
-msgstr "The Great Wall of China"
+msgstr "Tembok Besar China"
 
 #: activities/explore_monuments/resource/board/board1.qml:53
 msgctxt "board1|"
@@ -7815,7 +7812,7 @@ msgstr "Klik sesuai lokasi di mana monumen yang tersebut berada."
 #: activities/explore_monuments/resource/board/board2.qml:21
 msgctxt "board2|"
 msgid "Golden Temple"
-msgstr "Golden Temple"
+msgstr "Kuil Emas"
 
 #: activities/explore_monuments/resource/board/board2.qml:19
 msgctxt "board2|"
@@ -7855,7 +7852,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board2.qml:43
 msgctxt "board2|"
 msgid "Gateway of India"
-msgstr "Gateway of India"
+msgstr "Gapura India"
 
 #: activities/explore_monuments/resource/board/board2.qml:41
 msgctxt "board2|"
@@ -7878,7 +7875,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board2.qml:54
 msgctxt "board2|"
 msgid "Great Stupa"
-msgstr "Great Stupa"
+msgstr "Stupa Agung"
 
 #: activities/explore_monuments/resource/board/board2.qml:52
 msgctxt "board2|"
@@ -7900,7 +7897,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board2.qml:65
 msgctxt "board2|"
 msgid "Ajanta Caves"
-msgstr "Ajanta Caves"
+msgstr "Gua Ajanta"
 
 #: activities/explore_monuments/resource/board/board2.qml:63
 msgctxt "board2|"
@@ -7925,7 +7922,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board2.qml:76
 msgctxt "board2|"
 msgid "Konark Sun Temple"
-msgstr "Konark Sun Temple"
+msgstr "Candi Konark Sun"
 
 #: activities/explore_monuments/resource/board/board2.qml:74
 msgctxt "board2|"
@@ -7943,7 +7940,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board2.qml:87
 msgctxt "board2|"
 msgid "Mysore Palace"
-msgstr "Mysore Palace"
+msgstr "Istana Mysore"
 
 #: activities/explore_monuments/resource/board/board2.qml:85
 msgctxt "board2|"
@@ -8022,7 +8019,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board2.qml:131
 msgctxt "board2|"
 msgid "Qutub Minar"
-msgstr "Qutub Minar"
+msgstr "Menara Qutub"
 
 #: activities/explore_monuments/resource/board/board2.qml:129
 msgctxt "board2|"
@@ -8144,7 +8141,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board3.qml:65
 msgctxt "board3|"
 msgid "Arles Amphitheatre"
-msgstr "Arles Amphitheatre"
+msgstr "Amfiteater Arles"
 
 #: activities/explore_monuments/resource/board/board3.qml:63
 msgctxt "board3|"
@@ -8162,7 +8159,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board3.qml:76
 msgctxt "board3|"
 msgid "Château de Chambord"
-msgstr "Château de Chambord"
+msgstr "Istana Puri Chambord"
 
 #: activities/explore_monuments/resource/board/board3.qml:74
 msgctxt "board3|"
@@ -8300,7 +8297,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board4.qml:32
 msgctxt "board4|"
 msgid "Trier Imperial Baths"
-msgstr "Trier Imperial Baths"
+msgstr "Pemandian Kekaisaran Trier"
 
 #: activities/explore_monuments/resource/board/board4.qml:30
 msgctxt "board4|"
@@ -8452,7 +8449,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board5.qml:32
 msgctxt "board5|"
 msgid "Canyon de Chelly"
-msgstr "Canyon de Chelly"
+msgstr "Ngarai Chelly"
 
 #: activities/explore_monuments/resource/board/board5.qml:30
 msgctxt "board5|"
@@ -8478,7 +8475,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board5.qml:43
 msgctxt "board5|"
 msgid "Castillo de San Marcos"
-msgstr "Castillo de San Marcos"
+msgstr "Kastil San Marcos"
 
 #: activities/explore_monuments/resource/board/board5.qml:41
 msgctxt "board5|"
@@ -8540,7 +8537,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board5.qml:76
 msgctxt "board5|"
 msgid "Lincoln Memorial"
-msgstr "Lincoln Memorial"
+msgstr "Tugu Lincoln"
 
 #: activities/explore_monuments/resource/board/board5.qml:74
 msgctxt "board5|"
@@ -8787,7 +8784,7 @@ msgstr "Klik pada lokasi di mana piramida yang disebutkan itu berada."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "Kota Terlarang"
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8802,12 +8799,21 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
+"Kota Terlarang, yang terletak di jantung kota Beijing, Tiongkok, adalah "
+"kompleks istana kekaisaran yang megah yang berfungsi sebagai rumah kaisar "
+"Tiongkok dan pusat politik bangsa selama hampir 500 tahun, dari dinasti Ming "
+"(1368–1644) hingga akhir dinasti Qing (1644–1912). Dibangun antara 1406 dan "
+"1420, mahakarya arsitektur yang luas ini mencakup 180 hektar dan memiliki "
+"lebih dari 980 bangunan yang diawetkan dengan 8.700 kamar, menampilkan "
+"desain megah tradisional Cina. Dikelilingi oleh parit dan dinding besar, "
+"Kota Terlarang pernah tidak dapat diakses oleh masyarakat umum, melambangkan "
+"kekuatan kekaisaran dan eksklusivitas."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "Buddha Raksasa Leshan"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8822,15 +8828,21 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
+"Patung Buddha Raksasa Leshan, yang terletak di Provinsi Sichuan, Tiongkok, "
+"adalah patung kolosal yang diukir di tebing di pertemuan sungai Min, Dadu, "
+"dan Qingyi. Dengan tinggi 71 meter (233 kaki), patung ini merupakan patung "
+"pra-modern tertinggi di dunia dan Situs Warisan Dunia UNESCO. Dibangun "
+"selama Dinasti Tang (713–803 M), patung ini mewakili Maitreya, Buddha masa "
+"depan, dan diciptakan untuk menenangkan air yang bergejolak yang mengancam "
+"lalu lintas perahu setempat. Dengan desain yang cerdik, patung ini mencakup "
+"sistem drainase tersembunyi untuk mencegah erosi. Ekspresi tenangnya dan "
+"pengerjaan yang rumit menjadikannya simbol pencapaian spiritual dan artistik."
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Mysore Palace"
+msgstr "Istana Potala"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8845,12 +8857,21 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
+"Istana Potala, bertengger di Red Hill di Lhasa, Tibet, adalah simbol ikonik "
+"budaya Tibet dan Situs Warisan Dunia UNESCO. Awalnya dibangun pada abad "
+"ketujuh dan diperluas pada abad ketujuh belas, ia berfungsi sebagai kediaman "
+"musim dingin Dalai Lama dan pusat pemerintahan Tibet. Meningkat 13 lantai "
+"tinggi dengan lebih dari 1.000 kamar, istana ini menggabungkan arsitektur "
+"Tibet yang rumit, mural yang semarak, dan peninggalan suci. Hal ini dibagi "
+"menjadi Istana Putih, perumahan administrasi, dan Istana Merah, "
+"didedikasikan untuk studi agama dan doa. Istana Potala berdiri sebagai bukti "
+"warisan spiritual dan sejarah Tibet."
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "Tentara Terakota"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8862,12 +8883,18 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
+"Tentara Terracotta adalah kumpulan ribuan tentara tanah liat seukuran "
+"manusia, kuda, dan kereta yang dimakamkan bersama kaisar pertama China, Qin "
+"Shi Huang, untuk menemaninya di akhirat. Ditemukan pada tahun 1974 di dekat "
+"Xi'an, angka-angka tanggal kembali ke sekitar 210 SM dan dirayakan untuk "
+"detail yang luar biasa mereka, dengan masing-masing prajurit unik dibuat "
+"untuk mewakili jajaran beragam dan peran tentara Cina kuno."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr ""
+msgstr "Pagoda Matahari dan Bulan"
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8882,15 +8909,21 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
+"Pagoda Matahari dan Bulan, yang terletak di Guilin, Cina, adalah menara "
+"kembar ikonik yang melambangkan warisan budaya dan spiritual kota. Awalnya "
+"dibangun selama Dinasti Tang, mereka direkonstruksi pada abad kedua puluh "
+"sebagai landmark yang mencolok di Danau Shanhu. Pagoda Matahari, berdiri "
+"setinggi 41 meter, adalah struktur perunggu — yang tertinggi dari jenisnya "
+"di dunia — sementara Pagoda Bulan, pada 35 meter, dibangun dari ubin "
+"mengkilap. Pagoda ini mewakili harmoni yin dan yang dan dihubungkan oleh "
+"terowongan kaca bawah air. Diterangi di malam hari, mereka adalah atraksi "
+"populer yang menampilkan arsitektur tradisional Cina dan kecerdikan modern."
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Menara Eiffel"
+msgstr "Menara Diaolou"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8905,28 +8938,32 @@ msgid ""
 "UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
 "towers remain, offering insight into this unique architectural heritage."
 msgstr ""
+"Menara Diaolou, yang ditemukan di Kaiping, Provinsi Guangdong, Tiongkok, "
+"adalah struktur bertingkat yang dibentengi yang dibangun dari akhir abad "
+"ke-19 hingga awal abad ke-20 untuk melindungi dari bandit dan banjir. "
+"Memadukan gaya arsitektur Barat seperti Romanesque dan Baroque dengan elemen "
+"tradisional Tiongkok, menara ini mencerminkan kekayaan dan pengaruh emigran "
+"Tiongkok di luar negeri. Dibangun dengan beton bertulang, menara-menara ini "
+"melambangkan periode transisi budaya dan ekonomi di pedesaan Tiongkok. "
+"Ditetapkan sebagai Situs Warisan Dunia UNESCO pada tahun 2007, sekitar 1.800 "
+"dari 3.000 menara asli tetap ada, menawarkan wawasan tentang warisan "
+"arsitektur yang unik ini."
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Monumen India"
+msgstr "Monumen Tiongkok"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
-msgstr "Klik sesuai lokasi di mana monumen yang tersebut berada."
+msgstr "Klik pada lokasi monumen yang diberikan."
 
 #: activities/explore_monuments/resource/board/board8.qml:17
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "Pantheon"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8943,12 +8980,23 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
+"Pantheon di Roma, Italia, adalah kuil kuno ikonik yang dibangun sekitar 126 "
+"M pada masa pemerintahan Kaisar Hadrian, di situs bangunan sebelumnya yang "
+"ditugaskan oleh Marcus Agrippa. Terkenal karena kecemerlangan arsitekturnya, "
+"bangunan ini memiliki atap kubah besar dengan oculus tengah, melambangkan "
+"surga, yang memungkinkan cahaya alami menerangi interior. Awalnya "
+"didedikasikan untuk semua dewa Romawi, kemudian diubah menjadi gereja "
+"Kristen, yang dikenal sebagai Basilika St. Mary dan Martir (Santa Maria ad "
+"Martyres), pada tahun 609 M. Kubahnya, kubah beton tanpa tulangan terbesar "
+"di dunia, menampilkan teknik dan simetri yang luar biasa, menginspirasi "
+"arsitek selama berabad-abad. Proporsi harmonis dan signifikansi sejarah "
+"Pantheon menjadikannya mahakarya arsitektur klasik yang abadi."
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "Katedral Milan"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8963,15 +9011,22 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
+"Duomo di Milano, juga dikenal sebagai Katedral Milan, adalah mahakarya Gotik "
+"ikonik yang terletak di jantung kota Milan, Italia. Dibangun selama hampir "
+"enam abad, ini adalah salah satu katedral terbesar di dunia dan simbol "
+"warisan seni dan budaya Milan. Fasadnya yang rumit dihiasi dengan patung, "
+"menara, dan gargoyle yang tak terhitung jumlahnya, mencerminkan kemegahan "
+"arsitektur Gotik. Pengunjung dapat menjelajahi interiornya yang menakjubkan, "
+"menampilkan jendela kaca patri yang indah dan detail marmer yang rumit, atau "
+"naik ke atap untuk pemandangan kota dan Pegunungan Alpen yang menakjubkan. "
+"Duomo berdiri sebagai bukti sejarah yang kaya dan kecemerlangan arsitektur "
+"Italia."
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Katedral Worms"
+msgstr "Katedral Florence"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8987,15 +9042,22 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
+"Katedral Florence, secara resmi dikenal sebagai Cattedrale di Santa Maria "
+"del Fiore, adalah mahakarya arsitektur Gotik dan Renaisans yang terkenal "
+"yang terletak di Florence, Italia. Selesai pada tahun 1436, katedral ini "
+"terkenal dengan kubah ubin merah besar yang dirancang oleh Filippo "
+"Brunelleschi, yang tetap menjadi keajaiban teknik dan simbol kota. Fasad "
+"marmer katedral yang rumit, ditambahkan pada abad ke-19, melengkapi "
+"interiornya yang didekorasi dengan kaya dan harta karun artistik. Bersama "
+"dengan Campanile Giotto dan Baptistery of St. John, katedral ini merupakan "
+"bagian dari Situs Warisan Dunia UNESCO, menarik jutaan pengunjung setiap "
+"tahun karena signifikansi sejarah, budaya, dan arsitekturnya."
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Menara Hanoi"
+msgstr "Menara Miring Pisa"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -9010,12 +9072,22 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
+"Menara Miring Pisa, yang terletak di kota Pisa, Italia, adalah keajaiban "
+"arsitektur yang terkenal secara global. Dibangun sebagai menara lonceng yang "
+"berdiri sendiri untuk katedral kota, menara ini terkenal dengan "
+"kemiringannya yang tidak disengaja, yang disebabkan oleh tanah fondasi yang "
+"tidak stabil. Dimulai pada tahun 1173, pembangunan menara berlangsung hampir "
+"200 tahun, di mana upaya dilakukan untuk menstabilkan kemiringannya. Berdiri "
+"setinggi kurang lebih 56 meter (183 kaki), desain Romanesque menara ini "
+"memiliki delapan lantai, termasuk ruang lonceng, dihiasi dengan kolom dan "
+"lengkungan yang diukir dengan rumit. Diakui sebagai Situs Warisan Dunia "
+"UNESCO, menara ini tetap menjadi simbol ketahanan dan kecerdikan."
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr ""
+msgstr "Basilika Santo Markus"
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -9031,12 +9103,23 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
+"Basilika Santo Markus, yang terletak di Venesia, Italia, adalah mahakarya "
+"arsitektur Bizantium yang ikonik dan salah satu landmark paling terkenal di "
+"kota ini. Awalnya dibangun pada tahun 828 untuk menampung relik Santo Markus "
+"Penginjil, basilika ini dibangun kembali dalam bentuknya yang sekarang pada "
+"abad ke-11. Dikenal karena desainnya yang mewah, basilika ini menampilkan "
+"perpaduan pengaruh Timur dan Barat, terlihat pada kelima kubahnya, mosaik "
+"yang rumit, dan fasad penuh hiasan yang dihiasi dengan patung dan ukiran. "
+"Interiornya dihiasi dengan mewah dengan mosaik emas dan lantai marmer, "
+"menampilkan kekayaan dan kekuatan Republik Venesia. Berdekatan dengan "
+"Lapangan Santo Markus, basilika ini tetap menjadi simbol warisan sejarah, "
+"budaya, dan kepercayaan Venesia."
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr ""
+msgstr "Pompeii"
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -9052,31 +9135,33 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
+"Pompeii adalah kota Romawi kuno yang terletak di dekat Napoli modern, "
+"Italia, yang terkenal terawat setelah terkubur oleh letusan Gunung Vesuvius "
+"pada tahun 79 M. Letusan tersebut melepaskan kombinasi mematikan dari abu, "
+"batu apung, dan aliran piroklastik, yang menelan kota dan penduduknya, "
+"mengawetkan bangunan, artefak, dan bahkan sisa-sisa manusia dalam detail "
+"yang luar biasa. Penggalian Pompeii telah memberikan wawasan berharga "
+"tentang kehidupan sehari-hari orang Romawi, arsitektur, dan masyarakat, "
+"mengungkapkan sebuah kota dengan jalan-jalan, rumah, pemandian umum, dan "
+"kuil yang terencana dengan baik. Situs ini sekarang menjadi Situs Warisan "
+"Dunia UNESCO dan tetap menjadi salah satu penemuan arkeologi terpenting "
+"dalam sejarah."
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Monumen India"
+msgstr "Monumen Italia"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
-msgstr "Klik sesuai lokasi di mana monumen yang tersebut berada."
+msgstr "Klik pada lokasi monumen yang diberikan."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Huruf Campuran"
+msgstr "Istana Himeji"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -9089,12 +9174,19 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
+"Istana Himeji adalah contoh terbaik dari arsitektur istana Jepang awal abad "
+"ke-17 yang masih ada, terdiri dari 83 bangunan dengan sistem pertahanan yang "
+"sangat maju dan perangkat perlindungan yang cerdik yang berasal dari awal "
+"periode Shogun. Ini adalah mahakarya konstruksi kayu, menggabungkan fungsi "
+"dengan daya tarik estetika, baik dalam penampilan elegannya yang disatukan "
+"oleh dinding tanah plester putih maupun dalam kehalusan hubungan antara "
+"massa bangunan dan lapisan atap ganda."
 
 #: activities/explore_monuments/resource/board/board9.qml:28
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr ""
+msgstr "Taman Peringatan Perdamaian Hiroshima"
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -9110,12 +9202,22 @@ msgid ""
 "a solemn space for reflection, honoring the lives lost and advocating for "
 "global peace."
 msgstr ""
+"Taman Peringatan Perdamaian Hiroshima adalah simbol perdamaian dan pengingat "
+"akan konsekuensi perang yang menghancurkan. Terletak di Hiroshima, Jepang, "
+"taman ini memperingati para korban bom atom pada 6 Agustus 1945. Taman ini "
+"menampilkan beberapa monumen, termasuk Kubah Bom Atom yang ikonik, yang "
+"dulunya merupakan gedung pemerintah dan sekarang berdiri sebagai Situs "
+"Warisan Dunia UNESCO. Taman ini juga menampung Museum Peringatan Perdamaian "
+"Hiroshima, yang mengedukasi pengunjung tentang peristiwa seputar pemboman "
+"dan mempromosikan pesan perdamaian, nir-kekerasan, dan pentingnya pelucutan "
+"senjata nuklir. Ini berfungsi sebagai ruang khidmat untuk refleksi, "
+"menghormati nyawa yang hilang dan mengadvokasi perdamaian global."
 
 #: activities/explore_monuments/resource/board/board9.qml:39
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr ""
+msgstr "Kuil Arakura Fuji Sengen"
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -9131,12 +9233,23 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
+"Kuil ini didirikan pada tahun 705 untuk mengabadikan dewa situs tersebut. "
+"Setelah letusan besar Gunung Fuji pada tahun 807, kaisar mengirim utusan "
+"kekaisaran ke kuil ini untuk melakukan ritual guna menghentikan letusan. "
+"Dikatakan bahwa selama Periode Negara Berperang, ketika Takeda Nobutora, "
+"ayah dari panglima perang terkenal Takeda Shingen, berperang dengan Keluarga "
+"Hojo, ia mendirikan kemah di sini, berdoa untuk kemenangan, dan memenangkan "
+"pertempuran. Ia kemudian mempersembahkan pedangnya ke kuil ini. Hari ini, "
+"penduduk setempat dan mereka yang datang dari jauh mengunjungi kuil untuk "
+"menangkal kejahatan, berdoa untuk kebahagiaan keluarga, dan persalinan yang "
+"aman. Di musim semi, pohon sakura mekar dan orang banyak berkumpul untuk "
+"menikmati pemandangan Gunung Fuji yang menakjubkan."
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr ""
+msgstr "Istana Shuri Okinawa"
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -9154,20 +9267,14 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Monument Prancis"
+msgstr "Monumen Jepang"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
-msgstr "Klik sesuai lokasi di mana monumen yang tersebut berada."
+msgstr "Klik pada lokasi monumen yang diberikan."
 
 #. Activity title
 #: activities/explore_world_animals/ActivityInfo.qml:19
@@ -10651,7 +10758,7 @@ msgstr "Temukan pembilang dan penyebut (dengan persegi panajng)."
 #: activities/frieze/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Frieze"
-msgstr "Frieze"
+msgstr "Pias"
 
 #. Help title
 #: activities/frieze/ActivityInfo.qml:16
@@ -11216,7 +11323,7 @@ msgstr "Piedmont"
 #: activities/geo-country/resource/board/board11_0.qml:38
 msgctxt "board11_0|"
 msgid "Aosta Valley"
-msgstr "Aosta Valley"
+msgstr "Lembah Aosta"
 
 #. Region of Italy: Lombardy
 #: activities/geo-country/resource/board/board11_0.qml:45
@@ -11312,7 +11419,7 @@ msgstr "Calabria"
 #: activities/geo-country/resource/board/board11_0.qml:150
 msgctxt "board11_0|"
 msgid "Sicily"
-msgstr "Sicily"
+msgstr "Sisilia"
 
 #. Region of Italy: Sardinia
 #: activities/geo-country/resource/board/board11_0.qml:157
@@ -12067,7 +12174,7 @@ msgstr "Dzūkija"
 #: activities/geo-country/resource/board/board17_0.qml:38
 msgctxt "board17_0|"
 msgid "Lithuania Minor"
-msgstr "Lithuania Minor"
+msgstr "Lituania Kecil"
 
 #. Cultural region of Lithuania: Samogitia
 #: activities/geo-country/resource/board/board17_0.qml:45
@@ -12102,7 +12209,7 @@ msgstr "Madrid"
 #: activities/geo-country/resource/board/board18_0.qml:36
 msgctxt "board18_0|"
 msgid "Galicia"
-msgstr "Galicia"
+msgstr "Galisia"
 
 #. Autonomous communities of Spain: Castile and León
 #: activities/geo-country/resource/board/board18_0.qml:43
@@ -12120,7 +12227,7 @@ msgstr "Castilla-La Mancha"
 #: activities/geo-country/resource/board/board18_0.qml:57
 msgctxt "board18_0|"
 msgid "Catalonia"
-msgstr "Catalonia"
+msgstr "Katalonia"
 
 #. Autonomous communities of Spain: Aragon
 #: activities/geo-country/resource/board/board18_0.qml:64
@@ -12209,7 +12316,7 @@ msgstr "Wilayah di Prancis"
 #: activities/geo-country/resource/board/board1_0.qml:27
 msgctxt "board1_0|"
 msgid "Corsica"
-msgstr "Corsica"
+msgstr "Korsika"
 
 #. Region of France: Nouvelle-Aquitaine
 #: activities/geo-country/resource/board/board1_0.qml:35
@@ -12221,7 +12328,7 @@ msgstr "Nouvelle-Aquitaine"
 #: activities/geo-country/resource/board/board1_0.qml:43
 msgctxt "board1_0|"
 msgid "Occitanie"
-msgstr "Occitanie"
+msgstr "Occitania"
 
 #. Region of France: Provence-Alpes-Côte d'Azur
 #: activities/geo-country/resource/board/board1_0.qml:51
@@ -12263,7 +12370,7 @@ msgstr "Brittany"
 #: activities/geo-country/resource/board/board1_0.qml:99
 msgctxt "board1_0|"
 msgid "Normandy"
-msgstr "Normandy"
+msgstr "Normandia"
 
 #. Region of France: Hauts de France
 #: activities/geo-country/resource/board/board1_0.qml:107
@@ -12334,7 +12441,7 @@ msgstr "Rhine-Westphalia Utara"
 #: activities/geo-country/resource/board/board2_0.qml:73
 msgctxt "board2_0|"
 msgid "Lower Saxony"
-msgstr "Lower Saxony"
+msgstr "Sachsen Hilir"
 
 #. State of Germany: Mecklenburg-Vorpommern
 #: activities/geo-country/resource/board/board2_0.qml:80
@@ -12501,7 +12608,7 @@ msgstr "Corrientes"
 #: activities/geo-country/resource/board/board3_0.qml:150
 msgctxt "board3_0|"
 msgid "Córdoba"
-msgstr "Córdoba"
+msgstr "Kordoba"
 
 #. Province of Argentina: Chubut
 #: activities/geo-country/resource/board/board3_0.qml:157
@@ -13769,7 +13876,7 @@ msgstr "Myanmar"
 #: activities/geography/resource/board/board12_0.qml:46
 msgctxt "board12_0|"
 msgid "Thailand"
-msgstr "Thailand"
+msgstr "Tailan"
 
 #: activities/geography/resource/board/board12_0.qml:53
 msgctxt "board12_0|"
@@ -14725,7 +14832,7 @@ msgstr "Palestina"
 #: activities/geography/resource/board/board9_0.qml:103
 msgctxt "board9_0|"
 msgid "Lebanon"
-msgstr "Lebanon"
+msgstr "Libanon"
 
 #: activities/geography/resource/board/board9_0.qml:110
 msgctxt "board9_0|"
@@ -15239,12 +15346,12 @@ msgstr "Temukan untuk angka antara 0 dan 1 000."
 #: activities/graduated_line_read/resource/8/Data.qml:9
 msgctxt "Data|"
 msgid "Number to find between 0 and 10 000."
-msgstr "Number to find between 0 and 10 000."
+msgstr "Temukan angka antara 0 dan 10.000."
 
 #: activities/graduated_line_read/resource/9/Data.qml:9
 msgctxt "Data|"
 msgid "Number to find between 0 and 1 000 000."
-msgstr "Number to find between 0 and 1 000 000."
+msgstr "Temukan angka antara 0 dan 1.000.000."
 
 #. Activity title
 #: activities/graduated_line_use/ActivityInfo.qml:14
@@ -15737,12 +15844,9 @@ msgid "Division required."
 msgstr "Diperlukan pembagian."
 
 #: activities/guess24/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "Semua operasi permainan ingatan"
+msgstr "Semua operator diperlukan."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -17978,12 +18082,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "Topi pesulap"
+msgstr "Topi pesulap (pengurangan)"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -18078,12 +18179,9 @@ msgstr "%1x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "Topi pesulap"
+msgstr "Topi pesulap (penjumlahan)"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -28756,7 +28854,7 @@ msgstr "%1 Berhasil dihapus!"
 #: core/GCCreationHandler.qml:253
 msgctxt "GCCreationHandler|"
 msgid "OK"
-msgstr "OK"
+msgstr "OKE"
 
 #: core/GCCreationHandler.qml:193
 #, fuzzy
