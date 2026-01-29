@@ -9,20 +9,19 @@ msgstr ""
 "Project-Id-Version: gcompris-id\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-23 02:37+0000\n"
-"PO-Revision-Date: 2025-04-30 02:01\n"
-"Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
+"PO-Revision-Date: 2026-01-25 09:44\n"
+"Last-Translator: \n"
 "Language-Team: Indonesian\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 21.12.3\n"
 "X-Crowdin-Project: gcompris-id\n"
 "X-Crowdin-Project-ID: 481873\n"
 "X-Crowdin-Language: id\n"
-"X-Crowdin-File: /gcompris-id/25.1/gcompris_voices.po\n"
-"X-Crowdin-File-ID: 132\n"
+"X-Crowdin-File: /gcompris-id/2.0/gcompris_voices.po\n"
+"X-Crowdin-File-ID: 47\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
 #: activities/adjacent_numbers/ActivityInfo.qml:17
@@ -43,8 +42,8 @@ msgid ""
 "Multiply the two numbers together and type in your answer before the balloon "
 "lands in the water"
 msgstr ""
-"Lipat gandakan dua angka menjadi satu jawaban dan ketik jawabanmu sebelum "
-"balon mendarat di air"
+"Kalikan dua angka menjadi satu jawaban dan ketik jawabanmu sebelum balon "
+"mendarat di air"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_div"
 #: activities/algebra_div/ActivityInfo.qml:18
@@ -88,7 +87,10 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "align4"
 #: activities/align4/ActivityInfo.qml:18
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Click on the column where you wish your token to fall and try to align 4 "
+#| "tokens before Tux."
 msgid ""
 "Click on the column where you wish your token to fall and try to align 4 "
 "tokens before Tux."
@@ -140,7 +142,7 @@ msgid ""
 "orientation by clicking on the arrows."
 msgstr ""
 "Pindahkan setiap potongan teka-teki, untuk menyelesaikan teka-teki. Kamu "
-"dapat mengubah orientasinya dengan mengklik tanda panah."
+"bisa mengubah orientasinya dengan mengklik tanda panah."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_wordprocessor"
 #: activities/baby_wordprocessor/ActivityInfo.qml:18
@@ -258,7 +260,7 @@ msgstr "Mainkan halma melawan Tux"
 #: activities/checkers_2players/ActivityInfo.qml:18
 #, kde-format
 msgid "play checkers with your friend"
-msgstr "Mainkan halma dengan temanmu"
+msgstr "Mainkan checkers dengan temanmu"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess"
 #: activities/chess/ActivityInfo.qml:18
@@ -298,7 +300,7 @@ msgid ""
 "Click on the required letter. You can listen to it again by clicking on the "
 "mouth."
 msgstr ""
-"Klik pada huruf yang dikehendaki. Kamu dapat mendengarkan ulang dengan "
+"Klik pada huruf yang dikehendaki. Kamu bisa mendengarkan ulang dengan "
 "mengklik ikon mulut."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "clickanddraw"
@@ -323,13 +325,13 @@ msgstr "Seret dan lepas jarum jam untuk menampilkan waktu yang diinginkan"
 #: activities/color_mix/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the color by moving the sliders on the tubes of paint"
-msgstr "Cocokkan warna dengan memindah penggeser pada tabung cat"
+msgstr "Cocokkan warna dengan memindah slider pada tabung cat"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "color_mix_light"
 #: activities/color_mix_light/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the color by moving the sliders on the torches"
-msgstr "Cocokkan warna dengan memindah penggeser pada senter"
+msgstr "Cocokkan warna dengan memindah slider pada senter"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "colors"
 #: activities/colors/ActivityInfo.qml:18
@@ -608,8 +610,8 @@ msgstr ""
 msgid ""
 "Move the spaceship to avoid hitting the planets and reach the space station."
 msgstr ""
-"Pindahkan pesawat ruang angkasa untuk agar tidak menabrak planet dan "
-"mencapai stasiun ruang angkasa."
+"Pindahkan pesawat ruang angkasa agar tidak menabrak planet dan mencapai "
+"stasiun ruang angkasa."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guess24"
 #: activities/guess24/ActivityInfo.qml:17
@@ -925,7 +927,7 @@ msgid ""
 "cursor next to this sparkle and use the mousewheel or the zoom gesture to "
 "zoom in."
 msgstr ""
-"Lihatlah dinding batu, kamu dapat melihat kilauan di salah satu tempat. "
+"Lihatlah dinding batu, kamu bisa melihat kilauan di salah satu tempat. "
 "Gerakkan kursor ke kilauan tersebut dengan menggunakan roda mouse atau "
 "gerakan zoom untuk memperbesar."
 
@@ -1143,9 +1145,7 @@ msgstr "Atur instruksi dan lintasi jalur yang benar untuk meraih ikan."
 #: activities/railroad/ActivityInfo.qml:20
 #, kde-format
 msgid "Observe the train and then click on the items to set up a similar train"
-msgstr ""
-"Amati bentuk kereta sebelum kereta kemudian klik pada gerbong atau lokomotif "
-"untuk menyiapkan kereta yang sama."
+msgstr "Amati kereta lalu klik objek untuk menyiapkan kereta serupa"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "readingh"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "readingv"
@@ -1259,8 +1259,8 @@ msgid ""
 "Drive the submarine to the right end of the screen without colliding with "
 "any objects"
 msgstr ""
-"Kendalikan  kapal selam ke ujung kanan layar tanpa bertabrakan dengan benda "
-"apa pun."
+"Kendalikan kapal selam ke ujung kanan layar tanpa bertabrakan dengan benda "
+"apa pun"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "sudoku"
 #: activities/sudoku/ActivityInfo.qml:18
