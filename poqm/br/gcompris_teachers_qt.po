@@ -1,17 +1,22 @@
-# SPDX-FileCopyrightText: 2026 Alexander Becker <alex-at-kde-l10n-de@freenet.de>
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the gcompris package.
+#
+#
+# KERVOAS <envelkervoas@free.fr>, 2026.
 msgid ""
 msgstr ""
-"Project-Id-Version: gcompris_teachers\n"
-"PO-Revision-Date: 2026-01-29 19:37+0100\n"
-"Last-Translator: Alexander Becker <alex-at-kde-l10n-de@freenet.de>\n"
-"Language-Team: German <kde-i18n-de@kde.org>\n"
-"Language: de\n"
+"Project-Id-Version: gcompris\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2025-12-23 02:49+0000\n"
+"PO-Revision-Date: 2026-01-29 14:26+0100\n"
+"Last-Translator: Kervoas <envelkervoas@free.fr>\n"
+"Language-Team: Breton <kde-i18n-doc@kde.org>\n"
+"Language: br\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.12.1\n"
-"X-Qt-Contexts: true\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
 #: server/activities/binary_bulb/ActivityEditor.qml:12
@@ -22,7 +27,7 @@ msgstr ""
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:13
 msgctxt "ActivityEditor|"
 msgid "Rules to create a valid dataset:"
-msgstr "Regeln zur Erstellung eines gültigen Datensatzes:"
+msgstr "Reolennoù evit krouiñ un teskad roadennoù reizh :"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
@@ -31,10 +36,9 @@ msgid ""
 "minimum between the \"Sublevels\" value and the result of: (\"Maximum start "
 "number\" - \"Minimum start number\") / \"Step between numbers\" + 1."
 msgstr ""
-"Wenn „Zufällige Anfangszahlen“ aktiviert ist, ist die Anzahl der Unterstufen "
-"entweder der „Unterstufen“-Wert oder das Ergebnis der folgenden Rechnung: "
-"(„Maximale Anfangszahl“ − „Minimale Anfangszahl“) ÷ „Abstand zwischen "
-"Zahlen“ + 1. Der kleinere Wert wird verwendet."
+"Pa vez dibabet \"Niver-kregiñ dre zegouezh\" e vo niver izelañ an isliveoù "
+"etre talvoud an \"Isliveoù\" ha disoc'h ar jedadenn-mañ: (\"Niver-kregiñ "
+"uhelañ\"-\"Niver-kregiñ izelañ\")/\"Pazenn etre an niveroù\" + 1."
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
@@ -43,9 +47,9 @@ msgid ""
 "contain only numbers, and each of them will be used as start number for a "
 "sublevel."
 msgstr ""
-"Wenn „Zufällige Anfangszahlen“ nicht aktiviert ist, darf die „Anfangszahlen“-"
-"Liste nur Zahlen enthalten. Jede davon wird als Anfangszahl für eine "
-"Unterstufe verwendet."
+"Pa ne vez ket dibabet \"Niver-kregiñ dre zegouezh\" eo ret kaout nemet "
+"niveroù e roll an \"Niveroù-kregiñ\", ha pep hini anezhe a dalvezo da niver-"
+"kregiñ un islive."
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:19
 msgctxt "ActivityEditor|"
@@ -56,100 +60,100 @@ msgid ""
 "1. Also, the length of the list can not be greater than \"Sequence length\" "
 "- 2, to always have at least 2 visible numbers in the sequence."
 msgstr ""
-"„Position der fehlenden Zahlen“ muss eine Liste der Indizes der zu suchenden "
-"Zahlen enthalten. Indexzahlen beginnen bei 0, dabei zeigt die Indexzahl 0 "
-"auf das erste Element in der Folge. Die Indexzahl darf nicht größer als "
-"„Länger der Folge“ − 1 sein. Außerdem darf die Länge der „Position der "
-"fehlenden Zahlen“-Liste nicht größer als „Länger der Folge“ − 2 sein, damit "
-"die Folge mindestens 2 sichtbare Zahlen enthält."
+"\"Lec'hiadur an niveroù a vank\" a rank kaout ur roll eus an niveroù a glot "
+"gant meneger an niveroù da gavout. Niveroù ar meneger a grog gant 0 (kentañ "
+"niver ar sekañs) ha n'hall ket bezañ uheloc'h eget \"Hirder ar sekañs\" - 1. "
+"Hirder ar roll n'hall ket kennebeut bezañ brasoc'h eget \"Hirder ar sekañs\" "
+"-2, evit kaout atav 2 niver war-wel er sekañs da nebeutañ."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:36
 msgctxt "AdjacentNumbersDataDisplay|"
 msgid "Tiles:"
-msgstr "Kacheln:"
+msgstr "Tuellennoù :"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:60
 msgctxt "AdjacentNumbersDataDisplay|"
 msgid "Answer:"
-msgstr "Antwort:"
+msgstr "Respont :"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:28
 msgctxt "AdjacentNumbersEditor|"
 msgid "Random start numbers"
-msgstr "Zufällige Anfangszahlen"
+msgstr "Niveroù-kregiñ dre zegouezh"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:29
 msgctxt "AdjacentNumbersEditor|"
 msgid "Sublevels"
-msgstr "Unterstufen"
+msgstr "Isliveoù "
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:30
 msgctxt "AdjacentNumbersEditor|"
 msgid "Start numbers"
-msgstr "Anfangszahlen"
+msgstr "Niveroù-kregiñ"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:31
 msgctxt "AdjacentNumbersEditor|"
 msgid "Minimum start number"
-msgstr "Minimale Anfangszahl"
+msgstr "Niver-kregiñ izelañ"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:32
 msgctxt "AdjacentNumbersEditor|"
 msgid "Maximum start number"
-msgstr "Maximale Anfangszahl"
+msgstr "Niver-kregiñ uhelañ"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:33
 msgctxt "AdjacentNumbersEditor|"
 msgid "Step between numbers"
-msgstr "Abstand zwischen Zahlen"
+msgstr "Pazenn etre an niveroù"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:34
 msgctxt "AdjacentNumbersEditor|"
 msgid "Sequence length"
-msgstr "Länge der Folge"
+msgstr "Hirder ar sekañs"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:35
 msgctxt "AdjacentNumbersEditor|"
 msgid "Position of missing numbers"
-msgstr "Position der fehlenden Zahlen"
+msgstr "Lec'hiadur an niveroù a vank"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:36
 msgctxt "AdjacentNumbersEditor|"
 msgid "Proposed numbers"
-msgstr "Vorgeschlagene Zahlen"
+msgstr "Niveroù kinniget"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:98
 msgctxt "AdjacentNumbersEditor|"
 msgid "Dataset is empty."
-msgstr "Datensatz ist leer."
+msgstr "Goullo eo an teskad roadennoù."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:100
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Start numbers\" must contain only numbers, and not be empty."
-msgstr "„Anfangszahlen“ darf nicht leer sein und darf nur Zahlen enthalten."
+msgstr ""
+"Ret eo da\"Niveroù-kregiñ\" kaout niveroù hepken ha n'hall ket bezañ goullo."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:102
 msgctxt "AdjacentNumbersEditor|"
 msgid ""
 "\"Position of missing numbers\" must contain only numbers, and not be empty."
 msgstr ""
-"„Position der fehlenden Zahlen“ darf nicht leer sein und darf nur Zahlen "
-"enthalten."
+"\"Lec'hiadur an niveroù a vank\" n'en deus nemet niveroù ha n'hall ket bezañ "
+"goullo."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:104
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Position of missing numbers\" contains too much numbers."
-msgstr "„Position der fehlenden Zahlen“ enthält zu viele Zahlen."
+msgstr "Re a niveroù zo e-barzh \"Lec'hiadur an niveroù a vank\"."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:106
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Position of missing numbers\" contains invalid numbers."
-msgstr "„Position der fehlenden Zahlen“ enthält ungültige Zahlen."
+msgstr "Niveroù direizh zo e-barzh \"Lec'hiadur an niveroù a vank\"."
 
 #: server/activities/algebra_by/AlgebraDataDisplay.qml:19
 msgctxt "AlgebraDataDisplay|"
 msgid "timeout"
-msgstr "Zeitüberschreitung"
+msgstr "Echu eo an amzer."
 
 #. %1 is an operation, %2 the result. Example: "2 x 5 = 10"
 #: server/activities/algebra_by/AlgebraDataDisplay.qml:22
@@ -163,12 +167,12 @@ msgstr "%1 = %2"
 #, qt-format
 msgctxt "AlgebraDataDisplay|"
 msgid "Answer: %1"
-msgstr "Antwort: %1"
+msgstr "Respont : %1"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:25
 msgctxt "AlgebraEditor|"
 msgid "Rules to create a valid dataset:"
-msgstr "Regeln zur Erstellung eines gültigen Datensatzes:"
+msgstr "Reolennoù evit krouiñ un teskad roadennoù reizh :"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:27
 msgctxt "AlgebraEditor|"
@@ -178,11 +182,11 @@ msgid ""
 "be large enough to generate enough questions for the given number of "
 "sublevels using the minimum and maximum operand values."
 msgstr ""
-"„Ergebnisgrenzwert“ größer 0 definiert das erlaubte Maximum für das Ergebnis "
-"jeder Operation, wenn „Zufällige Operanden“ aktiviert ist. "
-"„Ergebnisgrenzwert“ muss groß genug gewählt werden, damit genug Fragen für "
-"die gegebene Anzahl von Unterstufen und unter Verwendung des minimalen und "
-"maximalen Werts von Operanden erzeugt werden können."
+"Pa vez dibabet \"Oberantennoù dre zegouezh\", ma 'z eo \"Bevenn talvoud an "
+"disoc'h\" brasoc'h eget 0 e termen an niver uhelañ aotreet evit disoc'h pep "
+"jedadenn. Rankout a ra bezañ bras a-walc'h evit sevel trawalc'h goulennoù "
+"evit an niver a liveoù kinniget a ra gant talvoudoù izelañ hag uhelañ an "
+"oberantennoù."
 
 #: server/activities/algebra_by/AlgebraEditor.qml:29
 msgctxt "AlgebraEditor|"
@@ -190,49 +194,49 @@ msgid ""
 "If \"Random operands\" is not selected, the sublevel list on the right side "
 "must not be empty."
 msgstr ""
-"Wenn „Zufällige Operanden“ nicht aktiviert ist, darf die Unterstufenliste "
-"auf der rechten Seite nicht leer sein."
+"Pa ne vez ket dibabet \"Oberantennoù dre zegouezh\" eo ret da roll al liveoù "
+"war un tu-dehou nompas bezañ goullo."
 
 #: server/activities/algebra_by/AlgebraEditor.qml:33
 msgctxt "AlgebraEditor|"
 msgid "Random operands"
-msgstr "Zufällige Operanden"
+msgstr "Oberantennoù dre zegouezh"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:34
 #: server/activities/algebra_by/AlgebraEditor.qml:39
 msgctxt "AlgebraEditor|"
 msgid "Sublevels"
-msgstr "Unterstufen"
+msgstr "Isliveoù"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:35
 msgctxt "AlgebraEditor|"
 msgid "Minimum operand value"
-msgstr "Minimaler Wert des Operanden"
+msgstr "Talvoud izelañ an oberantenn"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:36
 msgctxt "AlgebraEditor|"
 msgid "Maximum operand value"
-msgstr "Maximaler Wert des Operanden"
+msgstr "Talvoud uhelañ an oberantenn"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:37
 msgctxt "AlgebraEditor|"
 msgid "Result value limit"
-msgstr "Ergebnisgrenzwert"
+msgstr "Bevenn talvoud an disoc'h"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:38
 msgctxt "AlgebraEditor|"
 msgid "Shuffle"
-msgstr "Mischen"
+msgstr "Meskañ"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:44
 msgctxt "AlgebraEditor|"
 msgid "First operand"
-msgstr "Erster Operand"
+msgstr "Oberantenn kentañ"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:45
 msgctxt "AlgebraEditor|"
 msgid "Second operand"
-msgstr "Zweiter Operand"
+msgstr "Eil oberantenn"
 
 #: server/activities/algebra_div/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
@@ -242,10 +246,10 @@ msgid ""
 "multiplying the right side operand by another number between minimum and "
 "maximum values."
 msgstr ""
-"Wenn „Zufällige Operanden“ aktiviert ist, liegt der rechte Operand immer "
-"zwischen dem minimalen und maximalen Wert. Der linke Operand wird durch "
-"Multiplikation des rechten Operanden mit einer Zahl berechnet, die zwischen "
-"dem Minimum und Maximum liegt."
+"Pa vez dibabet \"Oberantennoù dre zegouezh\" e vez atav oberantenn an tu-"
+"dehou etre an talvoudoù izelañ hag uhelañ. Krouet e vez oberantenn an tu-"
+"kleiz en ul lieskementiñ oberantenn an tu-dehou gant un niver all etre an "
+"talvoudoù izelañ hag uhelañ."
 
 #: server/activities/algebra_div/ActivityEditor.qml:18
 msgctxt "ActivityEditor|"
@@ -253,50 +257,49 @@ msgid ""
 "If \"Random operands\" is not selected, for each sublevel you must make sure "
 "that the \"First operand\" is a multiple of the \"Second operand\"."
 msgstr ""
-"Wenn „Zufällige Operanden“ nicht aktiviert ist, müssen Sie für jede "
-"Unterstufe sicherstellen, dass „Erster Operand“ ein Vielfaches des „Zweiter "
-"Operand“-Eintrags ist."
+"Pa ne vez ket dibabet \"Oberantennoù dre zegouezh\" eo dav diwall e vo an "
+"\"Oberantenn kentañ\" ul lieskement eus an \"Eil oberantenn\"."
 
 #: server/activities/algebra_div/ActivityEditor.qml:23
 msgctxt "ActivityEditor|"
 msgid "Random operands"
-msgstr "Zufällige Operanden"
+msgstr "Oberantennoù dre zegouezh"
 
 #: server/activities/algebra_div/ActivityEditor.qml:24
 #: server/activities/algebra_div/ActivityEditor.qml:29
 msgctxt "ActivityEditor|"
 msgid "Sublevels"
-msgstr "Unterstufen"
+msgstr "Isliveoù"
 
 #: server/activities/algebra_div/ActivityEditor.qml:25
 msgctxt "ActivityEditor|"
 msgid "Minimum operand value"
-msgstr "Minimaler Wert des Operanden"
+msgstr "Talvoud izelañ an oberantenn"
 
 #: server/activities/algebra_div/ActivityEditor.qml:26
 msgctxt "ActivityEditor|"
 msgid "Maximum operand value"
-msgstr "Maximaler Wert des Operanden"
+msgstr "Talvoud uhelañ an oberantenn"
 
 #: server/activities/algebra_div/ActivityEditor.qml:27
 msgctxt "ActivityEditor|"
 msgid "Result value limit"
-msgstr "Ergebnisgrenzwert"
+msgstr "Bevenn talvoud an disoc'h"
 
 #: server/activities/algebra_div/ActivityEditor.qml:28
 msgctxt "ActivityEditor|"
 msgid "Shuffle"
-msgstr "Mischen"
+msgstr "Meskañ"
 
 #: server/activities/algebra_div/ActivityEditor.qml:34
 msgctxt "ActivityEditor|"
 msgid "First operand"
-msgstr "Erster Operand"
+msgstr "Oberantenn gentañ"
 
 #: server/activities/algebra_div/ActivityEditor.qml:35
 msgctxt "ActivityEditor|"
 msgid "Second operand"
-msgstr "Zweiter Operand"
+msgstr "Eil oberantenn"
 
 #: server/activities/algebra_minus/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
@@ -304,9 +307,8 @@ msgid ""
 "If \"Random operands\" is not selected, for each sublevel you must make sure "
 "that the \"First operand\" is greater than the \"Second operand\"."
 msgstr ""
-"Wenn „Zufällige Operanden“ nicht aktiviert ist, müssen Sie für jede "
-"Unterstufe sicherstellen, dass „Erster Operand“ größer als „Zweiter Operand“ "
-"ist."
+"Pa ne vez ket dibabet \"Oberantennoù dre zegouezh\" eo ret diwall mat e vo "
+"brasoc'h an \"Oberantenn gentañ\" eget an \"Eil oberantenn\"."
 
 #: server/activities/binary_bulb/ActivityEditor.qml:14
 msgctxt "ActivityEditor|"
@@ -315,20 +317,19 @@ msgid ""
 "list of integer numbers. Each number must be between 0 and the maximum "
 "number which can be represented with the given \"Bulb count\"."
 msgstr ""
-"Wenn „Zufallszahlen“ nicht aktiviert ist, muss „Zu suchende Zahlen“ eine "
-"Liste der Ganzzahlen enthalten. Jede Zahl muss zwischen 0 und dem Maximum "
-"liegen. Das Maximum kann durch die gegebene „Lampenanzahl“ repräsentiert "
-"werden."
+"Pa ne vez ket dibabet \"Niveroù dre zegouezh\" eo ret da \"Niveroù da gavout"
+"\" kaout ur roll niveroù anterin. Pep niver a rank bezañ etre 0 hag an niver "
+"uhelañ da vezañ eztaolet e-barzh \"Kont ar c'hlogorennoù\" kinniget."
 
 #: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:28
 msgctxt "BinaryBulbDataDisplay|"
 msgid "Expected:"
-msgstr "Erwartet:"
+msgstr "Gortozet :"
 
 #: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:34
 msgctxt "BinaryBulbDataDisplay|"
 msgid "Answer:"
-msgstr "Antwort:"
+msgstr "Respont :"
 
 #. %1 is the numerical value, %2 is the binary value. Example: "5 (101)"
 #: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:46
@@ -341,48 +342,48 @@ msgstr "%1 (%2)"
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:28
 msgctxt "BinaryBulbEditor|"
 msgid "Random numbers"
-msgstr "Zufallszahlen"
+msgstr "Niveroù dre zegouezh"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:29
 msgctxt "BinaryBulbEditor|"
 msgid "Sublevels"
-msgstr "Unterstufen"
+msgstr "Isliveoù"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:30
 msgctxt "BinaryBulbEditor|"
 msgid "Numbers to find"
-msgstr "Zu suchende Zahlen"
+msgstr "Niveroù da gavout"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:31
 msgctxt "BinaryBulbEditor|"
 msgid "Shuffle questions"
-msgstr "Fragen mischen"
+msgstr "Meskañ ar goulennoù"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:32
 msgctxt "BinaryBulbEditor|"
 msgid "Bulb count"
-msgstr "Lampenanzahl"
+msgstr "Kont ar c'hlogorennoù-tredan"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:33
 msgctxt "BinaryBulbEditor|"
 msgid "Display the current result"
-msgstr "Das aktuelle Ergebnis anzeigen"
+msgstr "Diskouez an disoc'h war-implij"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:34
 msgctxt "BinaryBulbEditor|"
 msgid "Display the bulb values"
-msgstr "Die Lampenwerte anzeigen"
+msgstr "Diskouez talvoudoù ar c'hlogorennoù-tredan"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:87
 msgctxt "BinaryBulbEditor|"
 msgid "Dataset is empty."
-msgstr "Datensatz ist leer."
+msgstr "Goullo eo an teskad roadennoù."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:101
 #, qt-format
 msgctxt "BinaryBulbEditor|"
 msgid "\"Numbers to find\" for level %1 must not be empty."
-msgstr "„Zu suchende Zahlen“ für Stufe %1 darf nicht leer sein."
+msgstr "Arabat d'an \"Niveroù da gavout\" evit al live %1 bezañ goullo."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:115
 #, qt-format
@@ -391,346 +392,348 @@ msgid ""
 "These values are invalid for level %1: %2. The values must be integer "
 "numbers between 0 and %3."
 msgstr ""
-"Diese Werte sind für Stufe %1 ungültig: %2. Die Werte müssen Ganzzahlen "
-"zwischen 0 und %3 sein."
+"Direizh eo an disoc'hoù-mañ evit al live %1: %2. Dav eo d'an talvoudoù bezañ "
+"niveroù anterin etre 0 ha %3."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:119
 #, qt-format
 msgctxt "BinaryBulbEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "Folgende Fehler müssen behoben werden:<ul>%1</ul>"
+msgstr "Ret eo mennañ ar fazioù da heul:<ul>%1</ul>"
 
 #: server/activities/clockgame/ClockGameDataDisplay.qml:30
 msgctxt "ClockGameDataDisplay|"
 msgid "Expected:"
-msgstr "Erwartet:"
+msgstr "Gortozet :"
 
 #: server/activities/clockgame/ClockGameDataDisplay.qml:36
 msgctxt "ClockGameDataDisplay|"
 msgid "Answer:"
-msgstr "Antwort:"
+msgstr "Respont :"
 
 #: server/activities/clockgame/ClockgameEditor.qml:27
 msgctxt "ClockgameEditor|"
 msgid "Exercise count"
-msgstr "Übungsanzahl"
+msgstr "Kont ar boelladenn"
 
 #: server/activities/clockgame/ClockgameEditor.qml:28
 msgctxt "ClockgameEditor|"
 msgid "Find minutes"
-msgstr "Finde Minuten"
+msgstr "Kavout ar munutennoù"
 
 #: server/activities/clockgame/ClockgameEditor.qml:29
 msgctxt "ClockgameEditor|"
 msgid "Find seconds"
-msgstr "Finde Sekunden"
+msgstr "Kavout an eilennoù"
 
 #: server/activities/clockgame/ClockgameEditor.qml:30
 msgctxt "ClockgameEditor|"
 msgid "Display hours numbers"
-msgstr "Stundenzahlen anzeigen"
+msgstr "Diskouez niveroù an eurioù"
 
 #: server/activities/clockgame/ClockgameEditor.qml:31
 msgctxt "ClockgameEditor|"
 msgid "Display hours marks"
-msgstr "Stundenmarkierungen anzeigen"
+msgstr "Diskouez merkoù an eurioù"
 
 #: server/activities/clockgame/ClockgameEditor.qml:32
 msgctxt "ClockgameEditor|"
 msgid "Grey/white background between each hour"
-msgstr "Grauer/weißer Hintergrund zwischen jeder Stunde"
+msgstr "Leur a-dreñv gris/gwenn etre pep eur"
 
 #: server/activities/clockgame/ClockgameEditor.qml:33
 msgctxt "ClockgameEditor|"
 msgid "Display minutes numbers"
-msgstr "Minutenzahlen anzeigen"
+msgstr "Diskouez niveroù ar munutennoù"
 
 #: server/activities/clockgame/ClockgameEditor.qml:34
 msgctxt "ClockgameEditor|"
 msgid "Hide the Hint button in the bar (which gives the current time)"
 msgstr ""
-"Den Tipp-Knopf in der Leiste, der die aktuelle Zeit anzeigt, ausblenden"
+"Kuzhat bouton an Titouriñ er varrenn (an hini a ro ar c'houlz a-vremañ)"
 
 #: server/activities/clockgame/ClockgameEditor.qml:35
 msgctxt "ClockgameEditor|"
 msgid "Fixed hour"
-msgstr "Feste Stunden"
+msgstr "Eur divizet"
 
 #: server/activities/clockgame/ClockgameEditor.qml:36
 #: server/activities/clockgame/ClockgameEditor.qml:38
 #: server/activities/clockgame/ClockgameEditor.qml:40
 msgctxt "ClockgameEditor|"
 msgid "Value"
-msgstr "Wert"
+msgstr "Talvoud"
 
 #: server/activities/clockgame/ClockgameEditor.qml:37
 msgctxt "ClockgameEditor|"
 msgid "Fixed minutes"
-msgstr "Feste Minuten"
+msgstr "Munutennoù divizet "
 
 #: server/activities/clockgame/ClockgameEditor.qml:39
 msgctxt "ClockgameEditor|"
 msgid "Fixed seconds"
-msgstr "Feste Sekunden"
+msgstr "Eilennoù divizet"
 
 #: server/activities/comparator/ComparatorDataDisplay.qml:30
 msgctxt "ComparatorDataDisplay|"
 msgid "Result:"
-msgstr "Ergebnis:"
+msgstr "Disoc'h :"
 
 #: server/activities/comparator/ComparatorEditor.qml:29
 msgctxt "ComparatorEditor|"
 msgid "Shuffle"
-msgstr "Mischen"
+msgstr "Meskañ"
 
 #: server/activities/comparator/ComparatorEditor.qml:30
 msgctxt "ComparatorEditor|"
 msgid "Questions"
-msgstr "Fragen"
+msgstr "Goulennoù"
 
 #: server/activities/comparator/ComparatorEditor.qml:36
 msgctxt "ComparatorEditor|"
 msgid "Left number"
-msgstr "Linke Zahl"
+msgstr "Niver a-gleiz"
 
 #: server/activities/comparator/ComparatorEditor.qml:37
 msgctxt "ComparatorEditor|"
 msgid "Right number"
-msgstr "Rechte Zahl"
+msgstr "Niver a-zehou"
 
 #: server/activities/comparator/ComparatorEditor.qml:109
 msgctxt "ComparatorEditor|"
 msgid "Dataset is empty."
-msgstr "Datensatz ist leer."
+msgstr "Goullo eo an teskad roadennoù."
 
 #: server/activities/comparator/ComparatorEditor.qml:119
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "Level %1 must not be empty."
-msgstr "Stufe %1 darf nicht leer sein."
+msgstr "N'hall ket al live %1 bezañ goullo."
 
 #: server/activities/comparator/ComparatorEditor.qml:126
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "\"Left number\" in Question %1 of Level %2 must contain a number."
-msgstr "„Linke Zahl“ in Frage %1 der Stufe %2 muss eine Zahl enthalten."
+msgstr "Dav eo da \"Niver a-gleiz\" er Goulenn %1 al live %2 kaout un niver."
 
 #: server/activities/comparator/ComparatorEditor.qml:130
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "\"Right number\" in Question %1 of Level %2 must contain a number."
-msgstr "„Rechte Zahl“ in Frage %1 der Stufe %2 muss eine Zahl enthalten."
+msgstr "Da eo da \"Niver a-zehou\" er goulenn %1 al live %2 kaout un niver."
 
 #: server/activities/comparator/ComparatorEditor.qml:136
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "Folgende Fehler müssen behoben werden:<ul>%1</ul>"
+msgstr "Ret eo reizhañ ar fazioù da heul:<ul>%1</ul>"
 
 #: server/activities/DailyReport.qml:33
 msgctxt "DailyReport|"
 msgid "All groups"
-msgstr "Alle Gruppen"
+msgstr "Holl strolladoù"
 
 #. Group name first, then Date range, with a space between them. Example: "Group Name 01/07/2025-08/07/2025"
 #: server/activities/DailyReport.qml:129
 #, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %2"
-msgstr "%1 %2"
+msgstr "%1 %2"
 
 #: server/activities/DailyReport.qml:133
 msgctxt "DailyReport|"
 msgid "Calendar"
-msgstr "Kalender"
+msgstr "Deiziataer"
 
 #: server/activities/DailyReport.qml:184
 msgctxt "DailyReport|"
 msgid "Count"
-msgstr "Anzahl"
+msgstr "Kont"
 
 #: server/activities/DailyReport.qml:193
 msgctxt "DailyReport|"
 msgid "Time"
-msgstr "Zeit"
+msgstr "Amzer"
 
 #: server/activities/DailyReport.qml:202
 msgctxt "DailyReport|"
 msgid "Ratio"
-msgstr "Quote"
+msgstr "Feur"
 
 #. Number of result lines
 #: server/activities/DailyReport.qml:213
 #, qt-format
 msgctxt "DailyReport|"
 msgid "Lines: %1"
-msgstr "Zeilen: %1"
+msgstr "Linennoù : %1"
 
 #. Success ratio, example: "50 %"
 #: server/activities/DailyReport.qml:313
 #, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %"
-msgstr "%1 %"
+msgstr "%1 %"
 
 #: server/activities/fractions_create/ActivityEditor.qml:14
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Instruction\" must contain some text telling the fraction to represent."
 msgstr ""
-"„Anweisung“ muss textuell beschreiben, welcher Bruch dargestellt werden soll."
+"\"Urzhioù\" a rank kaout un destenn bennak o lavarout peseurt kevrenn "
+"ezteurel."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:29
 msgctxt "FractionsCreateEditor|"
 msgid "Shuffle"
-msgstr "Mischen"
+msgstr "Meskañ"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:30
 msgctxt "FractionsCreateEditor|"
 msgid "Questions"
-msgstr "Fragen"
+msgstr "Goulennoù"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:36
 msgctxt "FractionsCreateEditor|"
 msgid "Numerator"
-msgstr "Zähler"
+msgstr "Niverer"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:37
 msgctxt "FractionsCreateEditor|"
 msgid "Denominator"
-msgstr "Nenner"
+msgstr "Anver"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:38
 msgctxt "FractionsCreateEditor|"
 msgid "Instruction"
-msgstr "Anweisung"
+msgstr "Titour"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:130
 msgctxt "FractionsCreateEditor|"
 msgid "Dataset is empty."
-msgstr "Datensatz ist leer."
+msgstr "Goullo eo an teskad roadennoù."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:140
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "Level %1 must not be empty."
-msgstr "Stufe %1 darf nicht leer sein."
+msgstr "Arabat eo d'al live %1 bezañ goullo."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:146
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "\"Instruction\" of Question %1 from Level %2 must not be empty."
-msgstr "„Anweisung“ zur Frage %1 der Stufe %2 darf nicht leer sein."
+msgstr ""
+"Arabat eo d'an \"Titouroù\" evit ar goulenn %1 eus al live %2 bezañ goullo."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:152
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "Folgende Fehler müssen behoben werden:<ul>%1</ul>"
+msgstr "Ret eo mennañ ar fazioù da heul : <ul>%1</ul>"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:160
 msgctxt "FractionsCreateEditor|"
 msgid "Rectangle"
-msgstr "Rechteck"
+msgstr "Hirgarrezenn"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:161
 msgctxt "FractionsCreateEditor|"
 msgid "Circle"
-msgstr "Kreis"
+msgstr "Kelc'h"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:164
 msgctxt "FractionsCreateEditor|"
 msgid "Chart Type"
-msgstr "Diagrammtyp"
+msgstr "Rummad ar graf"
 
 #: server/activities/fractions_find/FractionsFindDataDisplay.qml:26
 msgctxt "FractionsFindDataDisplay|"
 msgid "Expected:"
-msgstr "Erwartet:"
+msgstr "Gortozet :"
 
 #: server/activities/fractions_find/FractionsFindDataDisplay.qml:60
 msgctxt "FractionsFindDataDisplay|"
 msgid "Answer:"
-msgstr "Antwort:"
+msgstr "Respont :"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:29
 msgctxt "FractionsFindEditor|"
 msgid "Shuffle"
-msgstr "Mischen"
+msgstr "Meskañ"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:30
 msgctxt "FractionsFindEditor|"
 msgid "Questions"
-msgstr "Fragen"
+msgstr "Goulennoù"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:36
 msgctxt "FractionsFindEditor|"
 msgid "Static numerator"
-msgstr "Fester Zähler"
+msgstr "Niverer statek"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:37
 msgctxt "FractionsFindEditor|"
 msgid "Static denominator"
-msgstr "Fester Nenner"
+msgstr "Anver statek"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:38
 msgctxt "FractionsFindEditor|"
 msgid "Numerator"
-msgstr "Zähler"
+msgstr "Niverer"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:39
 msgctxt "FractionsFindEditor|"
 msgid "Denominator"
-msgstr "Nenner"
+msgstr "Anver"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:40
 msgctxt "FractionsFindEditor|"
 msgid "Maximum of units"
-msgstr "Maximale Elementanzahl"
+msgstr "Niver brasañ an unanennoù"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:41
 msgctxt "FractionsFindEditor|"
 msgid "Random fraction"
-msgstr "Zufallsbrüche"
+msgstr "Kevrenn dre zegouezh"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:159
 msgctxt "FractionsFindEditor|"
 msgid "Dataset is empty."
-msgstr "Datensatz ist leer."
+msgstr "Goullo eo an teskad roadennoù."
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:169
 #, qt-format
 msgctxt "FractionsFindEditor|"
 msgid "Level %1 must not be empty."
-msgstr "Stufe %1 darf nicht leer sein."
+msgstr "Arabat eo d'al livez %1 bezañ goullo."
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:173
 #, qt-format
 msgctxt "FractionsFindEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "Folgende Fehler müssen behoben werden:<ul>%1</ul>"
+msgstr "Ret eo mennañ ar fazioù da heul : <ul>%1</ul>"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:181
 msgctxt "FractionsFindEditor|"
 msgid "Rectangle"
-msgstr "Rechteck"
+msgstr "Hirgarrezenn"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:182
 msgctxt "FractionsFindEditor|"
 msgid "Circle"
-msgstr "Kreis"
+msgstr "Kelc'h"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:185
 msgctxt "FractionsFindEditor|"
 msgid "Chart Type"
-msgstr "Diagrammtyp"
+msgstr "Rummad ar graf"
 
 #. %1 is number of hints displayed. Example: "Hints: 1"
 #: server/activities/guess24/Guess24DataDisplay.qml:79
 #, qt-format
 msgctxt "Guess24DataDisplay|"
 msgid "Hints: %1"
-msgstr "Tipps: %1"
+msgstr "Titouroù: %1"
 
 #: server/activities/learn_additions/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
@@ -738,8 +741,8 @@ msgid ""
 "\"Additions\" must contain a list of additions which results are between 0 "
 "and 9."
 msgstr ""
-"„Additionen“ muss eine Liste von Additionen mit Ergebnissen zwischen 0 und 9 "
-"enthalten."
+"Ret eo da \"Sammadurioù\" kaout ur roll sammadurioù gant disoc'hoù etre 0 ha "
+"9."
 
 #: server/activities/learn_additions/ActivityEditor.qml:18
 #: server/activities/learn_subtractions/ActivityEditor.qml:18
@@ -747,138 +750,140 @@ msgctxt "ActivityEditor|"
 msgid ""
 "\"Number of circles\" can not be smaller than the largest result to find."
 msgstr ""
-"„Kreisanzahl“ darf nicht kleiner als das größte zu bestimmende Ergebnis sein."
+"\"Niver ar c'helc'hioù\" n'hall ket bezañ izeloc'h eget an disoc'h brasañ da "
+"gavout."
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:28
 msgctxt "LearnDecimalsEditor|"
 msgid "Shuffle"
-msgstr "Mischen"
+msgstr "Meskañ"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:29
 msgctxt "LearnDecimalsEditor|"
 msgid "Sublevels"
-msgstr "Unterstufen"
+msgstr "Isliveoù"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:39
 msgctxt "LearnDecimalsEditor|"
 msgid "Fixed Number"
-msgstr "Feste Zahl"
+msgstr "Niver divizet"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:40
 msgctxt "LearnDecimalsEditor|"
 msgid "Minimum Value"
-msgstr "Minimaler Wert"
+msgstr "Talvout izelañ"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:41
 msgctxt "LearnDecimalsEditor|"
 msgid "Maximum Value"
-msgstr "Maximaler Wert"
+msgstr "Talvoud uhelañ"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:140
 msgctxt "LearnDecimalsEditor|"
 msgid "Dataset is empty."
-msgstr "Datensatz ist leer."
+msgstr "Goullo eo an teskad roadennoù."
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:150
 #, qt-format
 msgctxt "LearnDecimalsEditor|"
 msgid "Level %1 must not be empty."
-msgstr "Stufe %1 darf nicht leer sein."
+msgstr "Arabat eo d'al live %1 bezañ goullo."
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:154
 #, qt-format
 msgctxt "LearnDecimalsEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "Folgende Fehler müssen behoben werden:<ul>%1</ul>"
+msgstr "Ret eo mennañ ar fazioù da heul : <ul>%1</ul>"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:162
 msgctxt "LearnDecimalsEditor|"
 msgid "Random"
-msgstr "Zufällig"
+msgstr "Dre zegouezh"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:163
 msgctxt "LearnDecimalsEditor|"
 msgid "Fixed"
-msgstr "Fest"
+msgstr "Divizet"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:168
 msgctxt "LearnDecimalsEditor|"
 msgid "Mode"
-msgstr "Modus"
+msgstr "Mod"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:29
 msgctxt "DecimalAdditionEditor|"
 msgid "Shuffle"
-msgstr "Mischen"
+msgstr "Meskañ"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:30
 msgctxt "DecimalAdditionEditor|"
 msgid "Sublevels"
-msgstr "Unterstufen"
+msgstr "Isliveoù"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:41
 msgctxt "DecimalAdditionEditor|"
 msgid "First Number"
-msgstr "Erste Zahl"
+msgstr "Niver kentañ"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:42
 msgctxt "DecimalAdditionEditor|"
 msgid "Second Number"
-msgstr "Zweite Zahl"
+msgstr "Eil niver"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:43
 msgctxt "DecimalAdditionEditor|"
 msgid "Minimum Value"
-msgstr "Minimaler Wert"
+msgstr "Talvoud izelañ"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:44
 msgctxt "DecimalAdditionEditor|"
 msgid "Maximum Value"
-msgstr "Maximaler Wert"
+msgstr "Talvoud uhelañ"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:182
 msgctxt "DecimalAdditionEditor|"
 msgid "Dataset is empty."
-msgstr "Datensatz ist leer."
+msgstr "Goullo eo an teskad roadennoù."
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:192
 #, qt-format
 msgctxt "DecimalAdditionEditor|"
 msgid "Level %1 must not be empty."
-msgstr "Stufe %1 darf nicht leer sein."
+msgstr "Arabat eo d'al live %1 bezañ goullo."
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:196
 #, qt-format
 msgctxt "DecimalAdditionEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "Folgende Fehler müssen behoben werden:<ul>%1</ul>"
+msgstr "Ret eo mennañ ar fazioù da heul : <ul>%1</ul>"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:204
 msgctxt "DecimalAdditionEditor|"
 msgid "Random"
-msgstr "Zufällig"
+msgstr "Dre zegouezh"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:205
 msgctxt "DecimalAdditionEditor|"
 msgid "Fixed"
-msgstr "Fest"
+msgstr "Divizet"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:210
 msgctxt "DecimalAdditionEditor|"
 msgid "Mode"
-msgstr "Modus"
+msgstr "Mod"
 
 #: server/activities/learn_digits/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
 msgid "\"Numbers\" must contain a list of numbers between 0 and 9."
-msgstr "„Zahlen“ muss eine Liste von Zahlen zwischen 0 und 9 enthalten."
+msgstr "Ret eo da \"Niveroù\" kaout ur roll niveroù etre 0 ha 9."
 
 #: server/activities/learn_digits/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Number of circles\" can not be smaller than the largest number to find."
 msgstr ""
-"„Kreisanzahl“ darf nicht kleiner als die größte zu bestimmende Zahl sein."
+"Arabat eo da \"Niver ar c'helc'hioù\" bezañ izeloc'h eget an niver brasañ da "
+"gavout."
 
 #. %1 is an operation, %2 the result. Example: "2 x 5 = 10"
 #: server/activities/learn_digits/LearnDigitsDataDisplay.qml:24
@@ -892,22 +897,22 @@ msgstr "%1 = %2"
 #, qt-format
 msgctxt "LearnDigitsDataDisplay|"
 msgid "Answer: %1"
-msgstr "Antwort: %1"
+msgstr "Respont : %1"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:32
 msgctxt "LearnDigitsEditor|"
 msgid "Number of circles"
-msgstr "Kreisanzahl"
+msgstr "Niver ar c'helc'hioù"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:33
 msgctxt "LearnDigitsEditor|"
 msgid "Random order"
-msgstr "Zufällige Reihenfolge"
+msgstr "Urzh dre zegouezh"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:99
 msgctxt "LearnDigitsEditor|"
 msgid "Dataset is empty."
-msgstr "Datensatz ist leer."
+msgstr "Goullo eo an teskad roadennoù."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:101
 msgctxt "LearnDigitsEditor|"
@@ -915,8 +920,8 @@ msgid ""
 "\"Numbers\" must only contain integer numbers between 0 and 9, and must not "
 "be empty."
 msgstr ""
-"„Zahlen“ darf nicht leer sein und darf nur Ganzzahlen zwischen 0 und 9 "
-"enthalten."
+"Ret eo da \"Niveroù\" kaout niveroù anterin hepken etre 0 ha 0, ha n'hall "
+"ket bezañ goullo."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:103
 msgctxt "LearnDigitsEditor|"
@@ -924,8 +929,8 @@ msgid ""
 "\"Additions\" must only contain additions which results are integer numbers "
 "between 0 and 9, and must not be empty."
 msgstr ""
-"„Additionen“ darf nicht leer sein und darf nur Additionen mit ganzzahligen "
-"Ergebnissen zwischen 0 und 9 enthalten."
+"Ret eo da \"Sammadurioù\" kaout hepken sammadurioù o disoc'hoù gant niveroù "
+"anterin etre 0 ha 9, ha n'hall ket bezañ goullo."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:105
 msgctxt "LearnDigitsEditor|"
@@ -933,38 +938,38 @@ msgid ""
 "\"Subtractions\" must only contain subtractions which results are integer "
 "numbers between 0 and 9, and must not be empty."
 msgstr ""
-"„Subtraktionen“ darf nicht leer sein und darf nur Subtraktionen mit "
-"ganzzahligen Ergebnissen zwischen 0 und 9 enthalten."
+"Ret eo da \"Lamadurioù\" kaout hepken lamadurioù o disoc'hoù gant niveroù "
+"anterin etre 0 ha 9, ha n'hall ket bezañ goullo."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:161
 msgctxt "LearnDigitsEditor|"
 msgid "Numbers"
-msgstr "Zahlen"
+msgstr "Niveroù"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:163
 msgctxt "LearnDigitsEditor|"
 msgid "Additions"
-msgstr "Additionen"
+msgstr "Sammadurioù"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:165
 msgctxt "LearnDigitsEditor|"
 msgid "Subtractions"
-msgstr "Subtraktionen"
+msgstr "Lamadurioù"
 
 #: server/activities/learn_quantities/ActivityEditor.qml:24
 msgctxt "ActivityEditor|"
 msgid "Fixed Number"
-msgstr "Feste Zahl"
+msgstr "Niver divizet"
 
 #: server/activities/learn_quantities/ActivityEditor.qml:25
 msgctxt "ActivityEditor|"
 msgid "Minimum Value"
-msgstr "Minimaler Wert"
+msgstr "Talvoud izelañ"
 
 #: server/activities/learn_quantities/ActivityEditor.qml:26
 msgctxt "ActivityEditor|"
 msgid "Maximum Value"
-msgstr "Maximaler Wert"
+msgstr "Talvoud uhelañ"
 
 #: server/activities/learn_subtractions/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
@@ -972,37 +977,36 @@ msgid ""
 "\"Subtractions\" must contain a list of subtractions which results are "
 "between 0 and 9."
 msgstr ""
-"„Subtraktionen“ muss eine Liste von Subtraktionen mit Ergebnissen zwischen 0 "
-"und 9 enthalten."
+"Ret eo da \"Lamadurioù\" kaout ur roll lamadurioù gant disoc'hoù etre 0 ha 9."
 
 #: server/activities/LineReport.qml:65
 msgctxt "LineReport|"
 msgid "Back"
-msgstr "Zurück"
+msgstr "Distro"
 
 #: server/activities/LineReport.qml:71
 msgctxt "LineReport|"
 msgid "Refresh"
-msgstr "Aktualisieren"
+msgstr "Freskaat"
 
 #: server/activities/LineReport.qml:77
 #, qt-format
 msgctxt "LineReport|"
 msgid "Lines: %1"
-msgstr "Zeilen: %1"
+msgstr "Linennoù : %1"
 
 #: server/activities/LineReport.qml:227
 #, qt-format
 msgctxt "LineReport|"
 msgid "Level: <b>%1</b>"
-msgstr "Stufe: <b>%1</b>"
+msgstr "Live: <b>%1</b>"
 
 #. Result duration in seconds. Example: "Duration: 25s"
 #: server/activities/LineReport.qml:243 server/activities/LineReport.qml:253
 #, qt-format
 msgctxt "LineReport|"
 msgid "Duration: %1s"
-msgstr "Dauer: %1 s"
+msgstr "Padelezh : %1s"
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
@@ -1010,8 +1014,8 @@ msgid ""
 "In \"Single answer\" mode, users can select only one answer. In \"Multiple "
 "answers\" mode, they can select multiple answers."
 msgstr ""
-"Im „Einzelantwort“-Modus können Benutzer nur eine Antwort auswählen. Im "
-"„Mehrfachantworten“-Modus können sie mehrere Antworten auswählen."
+"Er mod \"Ur respont hepken\" e rank an implijerien dibab ur respont hepken. "
+"Er mod \"Respontoù liesseurt\" e c'hallont dibab meur a respont."
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
@@ -1019,8 +1023,8 @@ msgid ""
 "All entries in the \"Correct answers\" list must also be present in the "
 "\"Answers\" list."
 msgstr ""
-"Alle Einträge in der „Richtige Antworten“-Liste müssen auch in der "
-"„Antworten“-Liste vorhanden sein."
+"Ret eo d'an holl  ginnigoù e roll ar \"Respontoù reizh\" bezañ ivez e roll "
+"ar \"Respontoù\"."
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:19
 msgctxt "ActivityEditor|"
@@ -1029,99 +1033,98 @@ msgid ""
 "displayed after users validate their answer. You can leave those empty if "
 "you want."
 msgstr ""
-"„Text zur richtigen Antwort“ und „Text zur falschen Antwort“ sind optionale "
-"Meldungen, die nach der Überprüfung der Antworten durch Benutzer angezeigt "
-"werden. Diese können auch leer gelassen werden."
+"Kemennadennoù diret eo \"Testenn an respont reizh\" ha \"Testenn ar respont "
+"faos\" a c'heller diskouez ur wech kadarnaet o respontoù gant an "
+"implijerien. Bez' e c'haller lezel anezhe goullo hervez ar c'hoant."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:27
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Question:"
-msgstr "Frage:"
+msgstr "Goulenn :"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:33
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Answer:"
-msgstr "Antwort:"
+msgstr "Respont :"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:39
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Expected:"
-msgstr "Erwartet:"
+msgstr "Gortozet :"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:45
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Proposed:"
-msgstr "Vorgeschlagen:"
+msgstr "Kinniget :"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:29
 msgctxt "MultipleChoiceEditor|"
 msgid "Shuffle"
-msgstr "Mischen"
+msgstr "Meskañ"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:30
 msgctxt "MultipleChoiceEditor|"
 msgid "Sublevels"
-msgstr "Unterstufen"
+msgstr "Isliveoù"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:36
 msgctxt "MultipleChoiceEditor|"
 msgid "Shuffle answers"
-msgstr "Antworten mischen"
+msgstr "Meskañ ar respontoù"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:37
 msgctxt "MultipleChoiceEditor|"
 msgid "Question"
-msgstr "Frage"
+msgstr "Goulenn"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:38
 msgctxt "MultipleChoiceEditor|"
 msgid "Answers"
-msgstr "Antworten"
+msgstr "Respontoù"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:39
 msgctxt "MultipleChoiceEditor|"
 msgid "Correct answers"
-msgstr "Richtige Antworten"
+msgstr "Respontoù reizh"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:40
 msgctxt "MultipleChoiceEditor|"
 msgid "Correct answer text"
-msgstr "Text zur richtigen Antwort"
+msgstr "Testenn ar respont reizh"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:41
 msgctxt "MultipleChoiceEditor|"
 msgid "Wrong answer text"
-msgstr "Text zur falschen Antwort"
+msgstr "Testenn ar respont faos"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:121
 msgctxt "MultipleChoiceEditor|"
 msgid "Dataset is empty."
-msgstr "Datensatz ist leer."
+msgstr "Goullo eo an teskad roadennoù."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:131
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "Level %1 must not be empty."
-msgstr "Stufe %1 darf nicht leer sein."
+msgstr "Arabat eo d'al live %1 bezañ goullo."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:138
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Question\" in Sublevel %1 of Level %2 must not be empty."
-msgstr "„Frage“ in Unterstufe %1 der Stufe %2 darf nicht leer sein."
+msgstr "Arabat eo da \"Goulennoù\" en islive %1 al live %2 bezañ goullo."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:143
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Answers\" in Sublevel %1 of Level %2 must not be empty."
-msgstr "„Antworten“ in Unterstufe %1 der Stufe %2 darf nicht leer sein."
+msgstr "Arabat eo da \"Respontoù\" en islive %1 al live %2 bezañ goullo."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:148
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Correct answers\" in Sublevel %1 of Level %2 must not be empty."
-msgstr ""
-"„Richtige Antworten“ in Unterstufe %1 der Stufe %2 darf nicht leer sein."
+msgstr "Arabat eo da \"Respontoù reizh\" en islive %1 al live %2 bezañ goullo."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:155
 #, qt-format
@@ -1130,104 +1133,104 @@ msgid ""
 "In Sublevel %1 of Level %2, the correct answer \"%3\" is not in the \"Answers"
 "\" list."
 msgstr ""
-"In Unterstufe %1 der Stufe %2 ist die richtige Antwort „%3“ nicht in der "
-"„Antworten“-Liste."
+"En islive %1 al live %2, ne gaver ket ar respont reizh \"%3\" e roll ar "
+"\"Respontoù\"."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:163
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "Folgende Fehler müssen behoben werden:<ul>%1</ul>"
+msgstr "Ret eo mennañ ar fazioù-mañ : <ul>%1</ul>"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:171
 msgctxt "MultipleChoiceEditor|"
 msgid "Single answer"
-msgstr "Einzelantwort"
+msgstr "Ur respont hepken"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:172
 msgctxt "MultipleChoiceEditor|"
 msgid "Multiple answers"
-msgstr "Mehrfachantworten"
+msgstr "Respontoù liesseurt"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:177
 msgctxt "MultipleChoiceEditor|"
 msgid "Mode"
-msgstr "Modus"
+msgstr "Mod"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:29
 msgctxt "VerticalEditor|"
 msgid "Sublevels"
-msgstr "Unterstufen"
+msgstr "Isliveoù"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:31
 msgctxt "VerticalEditor|"
 msgid "Number of digits"
-msgstr "Ziffernanzahl"
+msgstr "Niver a sifroù"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:33
 msgctxt "VerticalEditor|"
 msgid "Number of lines"
-msgstr "Zeilenanzahl"
+msgstr "Niver al linennoù"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:34
 msgctxt "VerticalEditor|"
 msgid "With carry"
-msgstr "Mit Übertrag"
+msgstr "Gant an dalc'h"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:35
 msgctxt "VerticalEditor|"
 msgid "Already laid"
-msgstr "Bereits gelegt"
+msgstr "Plaset dija"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:36
 msgctxt "VerticalEditor|"
 msgid "Write your operation"
-msgstr "Schreiben Sie Ihre Operation"
+msgstr "Skriv ar jedadenn"
 
 #: server/components/CalendarPane.qml:77
 msgctxt "CalendarPane|"
 msgid "Calendar"
-msgstr "Kalender"
+msgstr "Deiziataer"
 
 #: server/components/CheckUserEditDelegate.qml:34
 msgctxt "CheckUserEditDelegate|"
 msgid "Edit pupil"
-msgstr "Schüler bearbeiten"
+msgstr "Embann ur skoliad"
 
 #: server/components/EditorBox.qml:84
 msgctxt "EditorBox|"
 msgid "Add"
-msgstr "Hinzufügen"
+msgstr "Ouzhpennañ"
 
 #: server/components/EditorBox.qml:95
 msgctxt "EditorBox|"
 msgid "Remove"
-msgstr "Entfernen"
+msgstr "Lemel"
 
 #: server/components/EditorBox.qml:107
 msgctxt "EditorBox|"
 msgid "Move up"
-msgstr "Nach oben"
+msgstr "Sevel"
 
 #: server/components/EditorBox.qml:119
 msgctxt "EditorBox|"
 msgid "Move down"
-msgstr "Nach unten"
+msgstr "Diskenn"
 
 #: server/components/FieldEdit.qml:318
 msgctxt "FieldEdit|"
 msgid "Add an entry"
-msgstr "Einen Eintrag hinzufügen"
+msgstr "Ouzhpennañ ur c'hinnig"
 
 #: server/components/FieldEdit.qml:330
 msgctxt "FieldEdit|"
 msgid "Remove last entry"
-msgstr "Letzten Eintrag entfernen"
+msgstr "Lemel ar c'hinnig diwezhañ"
 
 #: server/components/FoldDown.qml:151
 msgctxt "FoldDown|@action"
 msgid "Filter list"
-msgstr "Liste filtern"
+msgstr "Sil ar roll"
 
 #: server/components/OkCancelButtons.qml:21
 msgctxt "OkCancelButtons|"
@@ -1237,22 +1240,22 @@ msgstr "OK"
 #: server/components/OkCancelButtons.qml:22
 msgctxt "OkCancelButtons|"
 msgid "Cancel"
-msgstr "Abbrechen"
+msgstr "Nullañ"
 
 #: server/components/RadioGroupEditDelegate.qml:59
 msgctxt "RadioGroupEditDelegate|"
 msgid "Edit group"
-msgstr "Gruppe bearbeiten"
+msgstr "Embann ur strollad"
 
 #: server/components/RadioGroupEditDelegate.qml:71
 msgctxt "RadioGroupEditDelegate|"
 msgid "Delete group"
-msgstr "Gruppe löschen"
+msgstr "Lemel ur strollad"
 
 #: server/components/ServerLanguageList.qml:32
 msgctxt "ServerLanguageList|"
 msgid "Your system default"
-msgstr "Ihre Systemvoreinstellung"
+msgstr "Ar reizhiad dre ziouer"
 
 #: server/controllers/database-controller.cpp:79
 #: server/controllers/database-controller.cpp:85
@@ -1262,266 +1265,264 @@ msgid ""
 "File %1\n"
 "Error SQL: %2"
 msgstr ""
-"Datei %1\n"
-"SQL-Fehler: %2"
+"File %1\n"
+"Error SQL: %2"
 
 #: server/controllers/database-controller.cpp:121
 msgctxt "controllers::DatabaseController|"
 msgid "Table teacher_ could not be updated to current version."
-msgstr ""
-"Die Tabelle „teacher_“ kann nicht zu aktueller Version aktualisiert werden."
+msgstr "N'eo ket bet adnevesaet taolenn ar c'helenner evit ar stumm o treiñ."
 
 #: server/controllers/database-controller.cpp:347
 msgctxt "controllers::DatabaseController|"
 msgid "Error creating teacher."
-msgstr "Fehler beim Erstellen des Lehrers."
+msgstr "Fazi o krouiñ ar c'helenner."
 
 #: server/controllers/database-controller.cpp:369
 msgctxt "controllers::DatabaseController|"
 msgid "Wrong password."
-msgstr "Falsches Passwort."
+msgstr "Ger-tremen faos."
 
 #: server/controllers/database-controller.cpp:413
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> already exists."
-msgstr "Gruppe <b>%1</b> existiert bereits."
+msgstr "Bez' ez eus dija eus ar strollad <b>%1</b>."
 
 #: server/controllers/database-controller.cpp:434
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be updated to <b>%2</b>."
-msgstr "Gruppe <b>%1</b> kann nicht zu <b>%2</b> aktualisiert werden."
+msgstr "N'eo ket bet posupl hizivaat ar strollad <b>%1</b> da <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:452
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_."
-msgstr "Gruppe <b>%1</b> kann nicht aus der Tabelle „group_“ gelöscht werden."
+msgstr "N'eo ket bet lamet ar strollad  <b>%1</b> eus taolenn ar strollad."
 
 #: server/controllers/database-controller.cpp:455
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_user_."
-msgstr ""
-"Gruppe <b>%1</b> kann nicht aus der Tabelle „group_user_“ gelöscht werden."
+msgstr "N'eo ket bet lamet ar strollad <b>%1</b> eus taolenn an implijer."
 
 #: server/controllers/database-controller.cpp:479
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Pupil login <b>%1</b> already exists or password is empty."
 msgstr ""
-"Entweder existiert die Schüleranmeldung <b>%1</b> bereits oder das Passwort "
-"ist leer."
+"Bez' ez eus dija eus login an implijer <b>%1</b> pe goullo eo ar ger-tremen."
 
 #: server/controllers/database-controller.cpp:498
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "<b>%1</b> could not be updated to <b>%2</b>."
-msgstr "<b>%1</b> kann nicht zu <b>%2</b> aktualisiert werden."
+msgstr "N'eo ket bet posupl hizivaat <b>%1</b> da <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:518
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table user_."
-msgstr "Benutzer <b>%1</b> kann nicht aus der Tabelle „user_“ gelöscht werden."
+msgstr "N'eo ket lamet an implijer  <b>%1</b>  eus an taolenn an implijer."
 
 #: server/controllers/database-controller.cpp:523
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table result_."
-msgstr ""
-"Benutzer <b>%1</b> kann nicht aus der Tabelle „result_“ gelöscht werden."
+msgstr "N'eo ket lamet an implijer  <b>%1</b>  eus taolenn an disoc'h."
 
 #: server/controllers/database-controller.cpp:538
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table group_user_."
 msgstr ""
-"Benutzer <b>%1</b> kann nicht aus der Tabelle „group_user_“ gelöscht werden."
+"N'eo ket lamet an implijer  <b>%1</b>  eus an taolenn strollad an implijer."
 
 #: server/controllers/database-controller.cpp:553
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> already exists in group <b>%2</b>."
-msgstr "Benutzer <b>%1</b> existiert bereits in Gruppe <b>%2</b>."
+msgstr "Bez' ez eus dija deus an implijer <b>%1</b> er strollad <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:568
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> group <b>%2</b> couldn't be deleted."
-msgstr "Benutzer <b>%1</b> Gruppe <b>%2</b> kann nicht gelöscht werden."
+msgstr "N'eo ket bet lamet an implijer <b>%1</b> strollad <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:603
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Result could not be added for user <b>%1</b>"
-msgstr "Ergebnis kann nicht hinzugefügt werden für Benutzer <b>%1</b>"
+msgstr "Ne oa ket tu da ouzhpennañ an disoc'h evit an implijer <b>%1</b>"
 
 #: server/controllers/database-controller.cpp:615
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Error inserting activity: %1"
-msgstr "Fehler beim Einfügen der Aktivität: %1"
+msgstr "Fazi oc'h enlakaat an obererezh : %1"
 
 #: server/controllers/database-controller.cpp:661
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> already exists."
-msgstr "Datensatz <b>%1</b> existiert bereits."
+msgstr "Bez' ez eus eus an diaz roadennoù  <b>%1</b> dija."
 
 #: server/controllers/database-controller.cpp:678
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> could not be updated to <b>%2</b>."
-msgstr "Datensatz <b>%1</b> kann nicht zu <b>%2</b> aktualisiert werden."
+msgstr ""
+"N'eo ket bet posupl hizivaat an diaes roadennoù eus ar stumm <b>%1</b> d'ar "
+"stumm <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:693
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> couldn't be deleted."
-msgstr "Datensatz <b>%1</b> kann nicht gelöscht werden."
+msgstr "N'eo ket bet lemel an diaz roadennoù <b>%1</b>."
 
 #: server/controllers/network-controller.cpp:46
 #, qt-format
 msgctxt "controllers::NetworkController|"
 msgid "Unable to start the server: %1."
-msgstr "Server kann nicht gestartet werden: %1."
+msgstr "Dibosupl loc'hañ ar servijour : %1"
 
 #: server/dialogs/CreateDbDialog.qml:19
 msgctxt "CreateDbDialog|"
 msgid "You are about to create a new GCompris database."
-msgstr "Sie erstellen gerade eine neue GCompris-Datenbank."
+msgstr "Un teskad roadennoù nevez a vo krouet evit GCompris ganeoc'h."
 
 #: server/dialogs/CreateDbDialog.qml:38
 msgctxt "CreateDbDialog|"
 msgid "Database file"
-msgstr "Datenbankdatei"
+msgstr "Restr an teskad roadennoù"
 
 #: server/dialogs/CreateDbDialog.qml:40
 msgctxt "CreateDbDialog|"
 msgid "created in:"
-msgstr "erstellt unter:"
+msgstr "krouet e-barzh :"
 
 #: server/dialogs/CreateDbDialog.qml:64
 msgctxt "CreateDbDialog|"
 msgid "New database creation"
-msgstr "Erstellung neuer Datenbank"
+msgstr "Krouiñ un teskad roadennoù nevez"
 
 #: server/dialogs/CreateDbDialog.qml:92
 msgctxt "CreateDbDialog|"
 msgid "Teacher login"
-msgstr "Lehreranmeldung"
+msgstr "Login ar c'helenner"
 
 #: server/dialogs/CreateDbDialog.qml:108
 msgctxt "CreateDbDialog|"
 msgid "Password"
-msgstr "Passwort"
+msgstr "Ger-tremen"
 
 #: server/dialogs/CreateDbDialog.qml:124
 msgctxt "CreateDbDialog|"
 msgid "Encrypted database (enabled by default)"
-msgstr "Verschlüsselte Datenbank (standardmäßig aktiviert)"
+msgstr "Diaz roadennoù sifret (aotreet dre ziouer)"
 
 #: server/dialogs/DatasetEditorDialog.qml:54
 msgctxt "DatasetEditorDialog|"
 msgid "Create dataset"
-msgstr "Datensatz erstellen"
+msgstr "Krouiñ un teskad roadennoù"
 
 #: server/dialogs/DatasetEditorDialog.qml:64
 msgctxt "DatasetEditorDialog|"
 msgid "Update dataset"
-msgstr "Datensatz aktualisieren"
+msgstr "Hizivaat an teskad roadennoù"
 
 #: server/dialogs/DatasetEditorDialog.qml:79
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name is empty"
-msgstr "Name des Datensatzes ist leer"
+msgstr "Goullo eo anv an teskad roadennoù"
 
 #: server/dialogs/DatasetEditorDialog.qml:86
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty should be between 1 and 6"
-msgstr "Schwierigkeitsgrad sollte zwischen 1 und 6 liegen"
+msgstr "Etre 1 ha 6 e rankje bezañ an diaester"
 
 #: server/dialogs/DatasetEditorDialog.qml:239
 msgctxt "DatasetEditorDialog|"
 msgid "INVALID DATASET"
-msgstr "UNGÜLTIGER DATENSATZ"
+msgstr "TESKAD ROADENNOÙ DIREIZH"
 
 #: server/dialogs/DatasetEditorDialog.qml:342
 msgctxt "DatasetEditorDialog|"
 msgid "Editor"
-msgstr "Editor"
+msgstr "Embanner"
 
 #: server/dialogs/DatasetEditorDialog.qml:345
 msgctxt "DatasetEditorDialog|"
 msgid "Raw JSON"
-msgstr "Rohes JSON"
+msgstr "JSON kriz"
 
 #: server/dialogs/DatasetEditorDialog.qml:375
 msgctxt "DatasetEditorDialog|"
 msgid "Activity name"
-msgstr "Name der Aktivität"
+msgstr "Anv an obererezh"
 
 #: server/dialogs/DatasetEditorDialog.qml:389
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name"
-msgstr "Name des Datensatzes"
+msgstr "Anv an teskad roadennoù"
 
 #: server/dialogs/DatasetEditorDialog.qml:403
 msgctxt "DatasetEditorDialog|"
 msgid "Goal"
-msgstr "Ziel"
+msgstr "Pal"
 
 #: server/dialogs/DatasetEditorDialog.qml:417
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty"
-msgstr "Schwierigkeitsgrad"
+msgstr "Diaester"
 
 #: server/dialogs/DatasetEditorDialog.qml:515
 msgctxt "DatasetEditorDialog|"
 msgid "Instructions"
-msgstr "Anweisungen"
+msgstr "Titouroù"
 
 #: server/dialogs/DatasetEditorDialog.qml:521
 msgctxt "DatasetEditorDialog|"
 msgid "No specific instructions for this editor."
-msgstr "Keine speziellen Anweisungen für diesen Editor."
+msgstr "Titour resis ebet evit an embanner-mañ"
 
 #: server/dialogs/ErrorDialog.qml:46
 msgctxt "ErrorDialog|"
 msgid "Information"
-msgstr "Information"
+msgstr "Titour"
 
 #: server/dialogs/ExportPupilsDialog.qml:79
 msgctxt "ExportPupilsDialog|"
 msgid "Export pupils to CSV file"
-msgstr "Schüler in CSV-Datei exportieren"
+msgstr "Ezporzhiañ skolidi diwar ur restr CSV"
 
 #: server/dialogs/ExportPupilsDialog.qml:121
 msgctxt "ExportPupilsDialog|"
 msgid "Save file"
-msgstr "Datei speichern"
+msgstr "Saveteiñ ar restr"
 
 #: server/dialogs/ExportPupilsDialog.qml:131
 msgctxt "ExportPupilsDialog|"
 msgid "Pupils"
-msgstr "Schüler"
+msgstr "Skolidi"
 
 #: server/dialogs/GroupDialog.qml:114
 msgctxt "GroupDialog|"
 msgid "Name"
-msgstr "Name"
+msgstr "Anv"
 
 #: server/dialogs/GroupDialog.qml:128
 msgctxt "GroupDialog|"
 msgid "Description"
-msgstr "Beschreibung"
+msgstr "Deskrivadenn"
 
 #: server/dialogs/ImportPupilsDialog.qml:70
 msgctxt "ImportPupilsDialog|"
 msgid "Import pupils from CSV file"
-msgstr "Schüler aus CSV-Datei importieren"
+msgstr "Enporzhiañ skolidi diwar ur restr CSV"
 
 #: server/dialogs/ImportPupilsDialog.qml:88
 msgctxt "ImportPupilsDialog|"
@@ -1531,82 +1532,84 @@ msgid ""
 "Patrick Dummy;group 1;1234\n"
 "Patricia Brown;group 1,group 2;4321\n"
 msgstr ""
-"Format: Name;Gruppen;Passwort\n"
-"Beispiel:\n"
-"Heidi Musterfrau;Gruppe 1;1234\n"
-"Peter Mustermann;Gruppe 1,Gruppe 2;4321\n"
+"Patrom : anv ; strolladoù ; ger-tremen\n"
+"Skouer:\n"
+"Padrig Deskard ; strollad 1 ; 1234\n"
+"Enora ar Rouz ; strollad 1, strollad 2 ; 4321\n"
 
 #: server/dialogs/ImportPupilsDialog.qml:94
 msgctxt "ImportPupilsDialog|"
 msgid "Add CSV file"
-msgstr "CSV-Datei hinzufügen"
+msgstr "Ouzhpennañ ur rest CSV"
 
 #: server/dialogs/ImportPupilsDialog.qml:141
 msgctxt "ImportPupilsDialog|"
 msgid "Import pupils"
-msgstr "Schüler importieren"
+msgstr "Enporzhiañ skolidi"
 
 #: server/dialogs/PupilDialog.qml:59
 msgctxt "PupilDialog|"
 msgid "Pupil's name is empty"
-msgstr "Schülername ist leer"
+msgstr "Goullo eo anv ar skoliad"
 
 #: server/dialogs/PupilDialog.qml:153
 msgctxt "PupilDialog|"
 msgid "Pupil's name"
-msgstr "Schülername"
+msgstr "Anv ar skoliad"
 
 #: server/dialogs/PupilDialog.qml:166
 msgctxt "PupilDialog|"
 msgid "Password"
-msgstr "Passwort"
+msgstr "Ger-tremen"
 
 #: server/dialogs/PupilDialog.qml:217
 msgctxt "PupilDialog|"
 msgid "Password images:"
-msgstr "Passwort-Bilder:"
+msgstr "Skeudennoù ar gerioù-tremen :"
 
 #: server/dialogs/PupilDialog.qml:252
 msgctxt "PupilDialog|"
 msgid "Groups"
-msgstr "Gruppen"
+msgstr "Strolladoù"
 
 #: server/dialogs/PupilsToGroupsDialog.qml:87
 msgctxt "PupilsToGroupsDialog|"
 msgid "Select the groups to add these pupils to:"
-msgstr ""
-"Wählen Sie die Gruppen aus, zu denen diese Schüler hinzugefügt werden sollen:"
+msgstr "Dibab ar strolladoù evit ouzhpennañ ar skolidi enne :"
 
 #: server/dialogs/PupilsToGroupsDialog.qml:88
 msgctxt "PupilsToGroupsDialog|"
 msgid "Select the groups from which to remove these pupils:"
-msgstr ""
-"Wählen Sie die Gruppen aus, aus denen diese Schüler entfernt werden sollen:"
+msgstr "Dibab ar strolladoù evit lemel ar skolidi-mañ dioute :"
 
 #: server/dialogs/RemoveDatasetDialog.qml:70
 msgctxt "RemoveDatasetDialog|"
 msgid ""
 "Are you sure you want to delete the following dataset from the database?"
 msgstr ""
-"Möchten Sie den folgenden Datensatz wirklich aus der Datenbank löschen?"
+"Sur oc'h ho peus c'hoant lemel an teskad roadennoù-mañ eus an diaz "
+"roadennoù ?"
 
 #: server/dialogs/RemovePupilsDialog.qml:76
 msgctxt "RemovePupilsDialog|"
 msgid ""
 "Are you sure you want to remove the following pupils from the database ?"
 msgstr ""
-"Möchten Sie die folgenden Schüler wirklich aus der Datenbank entfernen?"
+"Sur oc'h ho peus c'hoant da lemel ar skolidi-mañ eus an diaz roadennoù ?"
 
 #: server/dialogs/SendDatasetDialog.qml:93
 msgctxt "SendDatasetDialog|"
 msgid "Do you want to send the dataset to selected pupils?"
-msgstr "Möchten Sie den Datensatz zu ausgewählten Schülern senden?"
+msgstr ""
+"Ha fellout a ra deoc'h kas an teskad roadennoù d'ar skolidi dibabet "
+"ganeoc'h ?"
 
 #: server/dialogs/SendDatasetDialog.qml:94
 msgctxt "SendDatasetDialog|"
 msgid "Are you sure you want to remove the dataset from selected pupils?"
 msgstr ""
-"Möchten Sie den Datensatz wirklich von ausgewählten Schülern entfernen?"
+"Sur oc'h ho peus c'hoant da lemel an teskad roadennoù diwar ar skolidi "
+"dibabet ?"
 
 #: server/dialogs/SendDatasetDialog.qml:95
 msgctxt "SendDatasetDialog|"
@@ -1614,701 +1617,709 @@ msgid ""
 "Are you sure you want to remove all the existing datasets from selected "
 "pupils?"
 msgstr ""
-"Möchten Sie alle existierenden Datensätze wirklich von ausgewählten Schülern "
-"löschen?"
+"Sur oc'h ho peus c'hoant da lemel ar skolidi dibabet diouzh an teskad "
+"roadennoù ?"
 
 #: server/dialogs/SendDatasetDialog.qml:129
 msgctxt "SendDatasetDialog|"
 msgid "Pupils"
-msgstr "Schüler"
+msgstr "Skolidi"
 
 #: server/dialogs/SqlLineDialog.qml:19
 msgctxt "SqlLineDialog|"
 msgid "Line details"
-msgstr "Zeilendetails"
+msgstr "Munudoù al linenn"
 
 #: server/dialogs/SqlLineDialog.qml:193
 msgctxt "SqlLineDialog|"
 msgid "Close"
-msgstr "Schließen"
+msgstr "Serriñ"
 
 #: server/Main.qml:48
 msgctxt "Main|"
 msgid "GCompris Teachers Tool"
-msgstr "GCompris-Dienstprogramm für Lehrer"
+msgstr "Ardivink GCompris evit ar gelennerien"
 
 #: server/panels/NavigationPanel.qml:70
 msgctxt "NavigationPanel|"
 msgid "Login"
-msgstr "Anmeldung"
+msgstr "Login"
 
 #: server/panels/NavigationPanel.qml:78
 msgctxt "NavigationPanel|"
 msgid "Pupils and Groups"
-msgstr "Schüler und Gruppen"
+msgstr "Skolidi ha Strolladoù"
 
 #: server/panels/NavigationPanel.qml:86
 msgctxt "NavigationPanel|"
 msgid "Connect devices"
-msgstr "Geräte verbinden"
+msgstr "Kevreañ ardivinkoù"
 
 #: server/panels/NavigationPanel.qml:94
 msgctxt "NavigationPanel|"
 msgid "Activities"
-msgstr "Aktivitäten"
+msgstr "Obererezhioù"
 
 #: server/panels/NavigationPanel.qml:102
 msgctxt "NavigationPanel|"
 msgid "Datasets"
-msgstr "Datensätze"
+msgstr "Teskadoù roadennoù"
 
 #: server/panels/NavigationPanel.qml:110
 msgctxt "NavigationPanel|"
 msgid "Charts"
-msgstr "Diagramme"
+msgstr "Grafoù"
 
 #: server/panels/NavigationPanel.qml:118
 msgctxt "NavigationPanel|"
 msgid "Settings"
-msgstr "Einstellungen"
+msgstr "Dibarzhioù"
 
 #: server/panels/SelectorPanel.qml:50
 msgctxt "SelectorPanel|"
 msgid "Groups"
-msgstr "Gruppen"
+msgstr "Strolladoù"
 
 #: server/panels/SelectorPanel.qml:69
 msgctxt "SelectorPanel|"
 msgid "Pupils"
-msgstr "Schüler"
+msgstr "Skolidi"
 
 #: server/panels/SelectorPanel.qml:85
 msgctxt "SelectorPanel|"
 msgid "Activities"
-msgstr "Aktivitäten"
+msgstr "Obererezhioù"
 
 #: server/singletons/Master.qml:40
 msgctxt "Master|"
 msgid "User ID"
-msgstr "Benutzerkennung"
+msgstr "Identelezh an implijer"
 
 #: server/singletons/Master.qml:41
 msgctxt "Master|"
 msgid "Name"
-msgstr "Name"
+msgstr "Anv"
 
 #: server/singletons/Master.qml:42
 msgctxt "Master|"
 msgid "Names"
-msgstr "Namen"
+msgstr "Anvioù"
 
 #: server/singletons/Master.qml:43
 msgctxt "Master|"
 msgid "Password"
-msgstr "Passwort"
+msgstr "Ger-tremen"
 
 #: server/singletons/Master.qml:44
 msgctxt "Master|"
 msgid "Users IDs"
-msgstr "Benutzerkennungen"
+msgstr "Identelezhioù an implijerien"
 
 #: server/singletons/Master.qml:45
 msgctxt "Master|"
 msgid "Activity ID"
-msgstr "Aktivitätskennung"
+msgstr "Identelezh an obererezh"
 
 #: server/singletons/Master.qml:46
 msgctxt "Master|"
 msgid "Activity"
-msgstr "Aktivität"
+msgstr "Obererezh"
 
 #: server/singletons/Master.qml:47
 msgctxt "Master|"
 msgid "Group"
-msgstr "Gruppe"
+msgstr "Strollad"
 
 #: server/singletons/Master.qml:48
 msgctxt "Master|"
 msgid "Description"
-msgstr "Beschreibung"
+msgstr "Deskrivadenn"
 
 #: server/singletons/Master.qml:49
 msgctxt "Master|"
 msgid "Groups"
-msgstr "Gruppen"
+msgstr "Strolladoù"
 
 #: server/singletons/Master.qml:50
 msgctxt "Master|"
 msgid "Groups IDs"
-msgstr "Gruppenkennungen"
+msgstr "Identelezhioù ar strolladoù"
 
 #: server/singletons/Master.qml:51 server/singletons/Master.qml:55
 msgctxt "Master|"
 msgid "Date"
-msgstr "Datum"
+msgstr "Deiziad"
 
 #: server/singletons/Master.qml:52 server/singletons/Master.qml:57
 msgctxt "Master|"
 msgid "Success"
-msgstr "Erfolg"
+msgstr "Berzh"
 
 #: server/singletons/Master.qml:53
 msgctxt "Master|"
 msgid "Duration"
-msgstr "Dauer"
+msgstr "Padelezh"
 
 #: server/singletons/Master.qml:54
 msgctxt "Master|"
 msgid "Data"
-msgstr "Daten"
+msgstr "Roadennoù"
 
 #: server/singletons/Master.qml:56
 msgctxt "Master|"
 msgid "Count"
-msgstr "Anzahl"
+msgstr "Kont"
 
 #: server/singletons/Master.qml:58
 msgctxt "Master|"
 msgid "Failed"
-msgstr "Fehlgeschlagen"
+msgstr "C'hwitet"
 
 #: server/singletons/Master.qml:59
 msgctxt "Master|"
 msgid "Success ratio"
-msgstr "Erfolgsquote"
+msgstr "Feur ar berzh"
 
 #: server/views/charts/ActivitiesChart.qml:104
 msgctxt "ActivitiesChart|"
 msgid "Daily activities chart"
-msgstr "Diagramm der täglichen Aktivitäten"
+msgstr "Graf pemdeziek an obererezhioù"
 
 #: server/views/charts/PupilsChart.qml:102
 msgctxt "PupilsChart|"
 msgid "User activities chart"
-msgstr "Diagramm der Benutzeraktivitäten"
+msgstr "Graf obererezhioù an implijer"
 
 #: server/views/ChartsView.qml:136
 msgctxt "ChartsView|"
 msgid "Activities"
-msgstr "Aktivitäten"
+msgstr "Obererezhioù"
 
 #: server/views/ChartsView.qml:143
 msgctxt "ChartsView|"
 msgid "Pupils"
-msgstr "Schüler"
+msgstr "Skolidi"
 
 #: server/views/datas/AllData.qml:69
 msgctxt "AllData|"
 msgid "Available requests"
-msgstr "Verfügbare Anfragen"
+msgstr "Reketoù a c'heller kaout"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "All users activities"
-msgstr "Aktivitäten aller Benutzer"
+msgstr "Holl obererezhioù an implijerien"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "Pupils activities"
-msgstr "Aktivitäten der Schüler"
+msgstr "Obererezhioù ar skolidi"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "All groups"
-msgstr "Alle Gruppen"
+msgstr "An holl strolladoù"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "Failed activities"
-msgstr "Fehlgeschlagene Aktivitäten"
+msgstr "Obererezhioù c'hwitet"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "User's groups"
-msgstr "Gruppen des Benutzers"
+msgstr "Strolladoù an implijer"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "Group's users"
-msgstr "Benutzer der Gruppe"
+msgstr "Implijerien ar strollad"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "Daily activities"
-msgstr "Tägliche Aktivitäten"
+msgstr "Obererezhioù pemdeziek"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "Daily ratios"
-msgstr "Tägliche Quoten"
+msgstr "Feurioù pemdeziek"
 
 #. Number of lines
 #: server/views/datas/AllData.qml:90
 #, qt-format
 msgctxt "AllData|"
 msgid "%1 lines"
-msgstr "%1 Zeilen"
+msgstr "%1 a linenn"
 
 #: server/views/datas/DuplicateData.qml:175
 msgctxt "DuplicateData|"
 msgid "Commands"
-msgstr "Befehle"
+msgstr "Urzhioù-dibab"
 
 #: server/views/datas/DuplicateData.qml:188
 msgctxt "DuplicateData|"
 msgid "Random date"
-msgstr "Zufälliges Datum"
+msgstr "Deiziad dre zegouezh"
 
 #: server/views/datas/DuplicateData.qml:195
 msgctxt "DuplicateData|"
 msgid "Duplicate"
-msgstr "Duplizieren"
+msgstr "Eilañ"
 
 #: server/views/datas/DuplicateData.qml:199
 msgctxt "DuplicateData|"
 msgid "You are about to duplicate datas"
-msgstr "Sie sind dabei, Daten zu duplizieren"
+msgstr "Emaoc'h o vont da eilañ roadennoù"
 
 #: server/views/datas/DuplicateData.qml:199
 #: server/views/datas/DuplicateData.qml:212
 msgctxt "DuplicateData|"
 msgid "No action now"
-msgstr "Zurzeit keine Aktion"
+msgstr "Ober ebet evit ar poent"
 
 #: server/views/datas/DuplicateData.qml:208
 msgctxt "DuplicateData|"
 msgid "Delete"
-msgstr "Löschen"
+msgstr "Lemel"
 
 #: server/views/datas/DuplicateData.qml:212
 msgctxt "DuplicateData|"
 msgid "You are about to delete data"
-msgstr "Sie sind dabei, Daten zu löschen"
+msgstr "Emaoc'h o vont da lemel roadennoù"
 
 #: server/views/datas/DuplicateData.qml:230
 msgctxt "DuplicateData|"
 msgid "Copy to"
-msgstr "Kopieren nach"
+msgstr "Eilañ da"
 
 #: server/views/DatasetsView.qml:44
 msgctxt "DatasetsView|"
 msgid "Activities"
-msgstr "Aktivitäten"
+msgstr "Obererezhioù"
 
 #: server/views/DatasetsView.qml:63
 msgctxt "DatasetsView|"
 msgid "Datasets"
-msgstr "Datensätze"
+msgstr "Teskadoù roadennoù"
 
 #: server/views/DatasetsView.qml:95
 msgctxt "DatasetsView|"
 msgid "Datasets management"
-msgstr "Datensatzverwaltung"
+msgstr "Merañ an teskadoù data"
 
 #: server/views/DatasetsView.qml:113
 msgctxt "DatasetsView|"
 msgid "Create dataset"
-msgstr "Datensatz erstellen"
+msgstr "Krouiñ un teskad roadennoù"
 
 #: server/views/DatasetsView.qml:122
 msgctxt "DatasetsView|"
 msgid "Update dataset"
-msgstr "Datensatz aktualisieren"
+msgstr "Hizivaat an teskad roadennoù"
 
 #: server/views/DatasetsView.qml:131
 msgctxt "DatasetsView|"
 msgid "Send dataset to clients"
-msgstr "Datensatz zu Clients senden"
+msgstr "Kas an teskad roadennoù d'ar pratikoù"
 
 #: server/views/DatasetsView.qml:150
 msgctxt "DatasetsView|"
 msgid "Remove dataset from clients"
-msgstr "Datensatz von Clients entfernen"
+msgstr "Lemel an teskad roadennoù d'ar pratikoù"
 
 #: server/views/DatasetsView.qml:175
 msgctxt "DatasetsView|"
 msgid "Remove all datasets from clients"
-msgstr "Alle Datensätze von Clients entfernen"
+msgstr "Lemel an holl deskadoù data d'ar pratikoù"
 
 #: server/views/DatasetsView.qml:185
 msgctxt "DatasetsView|"
 msgid "Delete dataset"
-msgstr "Datensatz löschen"
+msgstr "Lemel un teskad roadennoù"
 
 #: server/views/DevelopmentView.qml:43
 msgctxt "DevelopmentView|"
 msgid "Edit data"
-msgstr "Daten bearbeiten"
+msgstr "Embann un teskad roadennoù"
 
 #: server/views/DevelopmentView.qml:47
 msgctxt "DevelopmentView|"
 msgid "All requests"
-msgstr "Alle Anfragen"
+msgstr "Holl reketoù"
 
 #: server/views/DevicesView.qml:52
 msgctxt "DevicesView|"
 msgid "Not connected"
-msgstr "Nicht verbunden"
+msgstr "Nann-kevreet"
 
 #: server/views/DevicesView.qml:54
 msgctxt "DevicesView|"
 msgid "Incorrect password"
-msgstr "Falsches Passwort"
+msgstr "Ger-tremen faos"
 
 #: server/views/DevicesView.qml:56
+#, fuzzy
+#| msgctxt "DevicesView|"
+#| msgid "Logged"
 msgctxt "DevicesView|"
 msgid "Logged in"
-msgstr "Angemeldet"
+msgstr "Kevreet"
 
 #: server/views/DevicesView.qml:58
 msgctxt "DevicesView|"
 msgid "Connection lost"
-msgstr "Verbindung abgebrochen"
+msgstr "Kevreañ kollet"
 
 #: server/views/DevicesView.qml:60
 msgctxt "DevicesView|"
 msgid "Disconnected"
-msgstr "Getrennt"
+msgstr "Digevreet"
 
 #: server/views/DevicesView.qml:62
 msgctxt "DevicesView|"
 msgid "Unknown connection status"
-msgstr "Verbindungsstatus unbekannt"
+msgstr "Statud ar c'hevreañ dianavezet"
 
 #: server/views/DevicesView.qml:84
 msgctxt "DevicesView|"
 msgid "Groups"
-msgstr "Gruppen"
+msgstr "Strolladoù"
 
 #: server/views/DevicesView.qml:101
 msgctxt "DevicesView|"
 msgid "Pupils"
-msgstr "Schüler"
+msgstr "Skolidi"
 
 #: server/views/DevicesView.qml:135
 msgctxt "DevicesView|"
 msgid "Network"
-msgstr "Netzwerk"
+msgstr "Kenrouedad"
 
 #: server/views/DevicesView.qml:158
 msgctxt "DevicesView|"
 msgid "Connect devices"
-msgstr "Geräte verbinden"
+msgstr "Kevreañ ardivinkoù"
 
 #: server/views/DevicesView.qml:171
 msgctxt "DevicesView|"
 msgid "Send login list"
-msgstr "Anmeldeliste senden"
+msgstr "Kas roll al loginoù"
 
 #: server/views/DevicesView.qml:195
 msgctxt "DevicesView|"
 msgid "Disconnect selected pupils"
-msgstr "Verbindung zu ausgewählten Schülern trennen"
+msgstr "Digevreañ skolidi dibabet"
 
 #: server/views/DevicesView.qml:213
 msgctxt "DevicesView|"
 msgid "Disconnect everybody"
-msgstr "Alle Verbindungen trennen"
+msgstr "Digevreañ an holl"
 
 #: server/views/DevicesView.qml:229
 msgctxt "DevicesView|"
 msgid "Server ID:"
-msgstr "Serverkennung"
+msgstr "Identelezh ar servijour :"
 
 #: server/views/DevicesView.qml:236
 msgctxt "DevicesView|"
 msgid "Teacher port:"
-msgstr "Lehrer-Port:"
+msgstr "Porzh ar c'helenner :"
 
 #: server/views/DevicesView.qml:243
 msgctxt "DevicesView|"
 msgid "Connected:"
-msgstr "Verbunden:"
+msgstr "Kevreet :"
 
 #: server/views/DevicesView.qml:250
+#, fuzzy
+#| msgctxt "DevicesView|"
+#| msgid "Logged:"
 msgctxt "DevicesView|"
 msgid "Logged in:"
-msgstr "Angemeldet:"
+msgstr "Kevreet :"
 
 #: server/views/DevicesView.qml:257
 msgctxt "DevicesView|"
 msgid "Data received:"
-msgstr "Daten empfangen:"
+msgstr "Data resevet :"
 
 #: server/views/DevicesView.qml:285
 msgctxt "DevicesView|"
 msgid "Network logs"
-msgstr "Netzwerkprotokolle"
+msgstr "Rolloù-istor ar c'henrouedad"
 
 #: server/views/DevicesView.qml:297
 msgctxt "DevicesView|"
 msgid "Clear logs"
-msgstr "Protokolle leeren"
+msgstr "Goullonderiñ ar rolloù-istor"
 
 #: server/views/DevicesView.qml:317
 #, qt-format
 msgctxt "DevicesView|"
 msgid "Server already running on port %1"
-msgstr "Server wird bereits auf Port %1 ausgeführt"
+msgstr "Servijour war ober dija war ar porzh%1"
 
 #: server/views/LoginView.qml:43
 msgctxt "LoginView|"
 msgid "Incorrect password"
-msgstr "Falsches Passwort"
+msgstr "Ger-tremen faos"
 
 #: server/views/LoginView.qml:47
 msgctxt "LoginView|"
 msgid "GCompris-teachers is already running on this computer"
-msgstr ""
-"GCompris-Dienstprogramm für Lehrer wird bereits auf diesem Rechner ausgeführt"
+msgstr "Emañ GCompris-teachers war ober dija war an urzhiataer-mañ."
 
 #: server/views/LoginView.qml:48
 msgctxt "LoginView|"
 msgid "Only data browsing is permitted"
-msgstr "Nur das Durchsuchen der Daten ist erlaubt"
+msgstr "Furchal aotreet er roadennoù hepken"
 
 #: server/views/LoginView.qml:89
 msgctxt "LoginView|"
 msgid "Teacher login"
-msgstr "Lehreranmeldung"
+msgstr "Login ar c'helenner"
 
 #: server/views/LoginView.qml:110
 msgctxt "LoginView|"
 msgid "Password"
-msgstr "Passwort"
+msgstr "Ger-tremen"
 
 #: server/views/LoginView.qml:128
 msgctxt "LoginView|"
 msgid "Login"
-msgstr "Anmeldung"
+msgstr "Login"
 
 #: server/views/LoginView.qml:137
 msgctxt "LoginView|"
 msgid "Create teacher database"
-msgstr "Lehrerdatenbank erstellen"
+msgstr "Krouiñ teskad roadennoù ar c'helenner"
 
 #: server/views/LoginView.qml:158
 msgctxt "LoginView|"
 msgid "Database file:"
-msgstr "Datenbankdatei:"
+msgstr "Restr an teskad roadennoù :"
 
 #: server/views/ManagePupilsView.qml:34 server/views/ManagePupilsView.qml:149
 msgctxt "ManagePupilsView|"
 msgid "Add a group"
-msgstr "Eine Gruppe hinzufügen"
+msgstr "Ouzhpennañ ur strollad"
 
 #: server/views/ManagePupilsView.qml:44
 msgctxt "ManagePupilsView|"
 msgid "Are you sure you want to remove this group?"
-msgstr "Möchten Sie diese Gruppe wirklich entfernen?"
+msgstr "Sur oc'h ho peus c'hoant lemel ar strollad-mañ ?"
 
 #: server/views/ManagePupilsView.qml:45
 msgctxt "ManagePupilsView|"
 msgid "Pupils will not be removed."
-msgstr "Schüler werden nicht entfernt."
+msgstr "Ne vo ket lamet ar skolidi."
 
 #: server/views/ManagePupilsView.qml:52
 msgctxt "ManagePupilsView|"
 msgid "Edit group"
-msgstr "Gruppe bearbeiten"
+msgstr "Embann ur strollad"
 
 #: server/views/ManagePupilsView.qml:68 server/views/ManagePupilsView.qml:207
 msgctxt "ManagePupilsView|"
 msgid "Add a pupil"
-msgstr "Einen Schüler hinzufügen"
+msgstr "Ouzhpennañ ur skoliad"
 
 #: server/views/ManagePupilsView.qml:74
 msgctxt "ManagePupilsView|"
 msgid "Edit pupil's name and groups"
-msgstr "Schülernamen und Gruppen bearbeiten"
+msgstr "Embann anv ha strolladoù ar skoliad"
 
 #: server/views/ManagePupilsView.qml:122
 msgctxt "ManagePupilsView|"
 msgid "Groups"
-msgstr "Gruppen"
+msgstr "Strolladoù"
 
 #: server/views/ManagePupilsView.qml:159
 msgctxt "ManagePupilsView|"
 msgid "Pupils and groups"
-msgstr "Schüler und Gruppen"
+msgstr "Skolidi ha strolladoù"
 
 #: server/views/ManagePupilsView.qml:188
 msgctxt "ManagePupilsView|"
 msgid "Pupils management"
-msgstr "Schülerverwaltung"
+msgstr "Merañ ar skolidi"
 
 #: server/views/ManagePupilsView.qml:216
 msgctxt "ManagePupilsView|"
 msgid "Add to groups"
-msgstr "Zu Gruppen hinzufügen"
+msgstr "Ouzhpennañ d'ar strolladoù"
 
 #: server/views/ManagePupilsView.qml:225
 msgctxt "ManagePupilsView|"
 msgid "Remove from groups"
-msgstr "Aus Gruppen entfernen"
+msgstr "Lemel diouzh ar strolladoù"
 
 #: server/views/ManagePupilsView.qml:234
 msgctxt "ManagePupilsView|"
 msgid "Export pupils"
-msgstr "Schüler exportieren"
+msgstr "Ezporzhiañ skolidi"
 
 #: server/views/ManagePupilsView.qml:242
 msgctxt "ManagePupilsView|"
 msgid "Import pupils"
-msgstr "Schüler importieren"
+msgstr "Enporzhiañ  skolidi"
 
 #: server/views/ManagePupilsView.qml:251
 msgctxt "ManagePupilsView|"
 msgid "Remove pupils"
-msgstr "Schüler entfernen"
+msgstr "Lemel skolidi"
 
 #: server/views/SettingsView.qml:65
 msgctxt "SettingsView|"
 msgid "Menu panel"
-msgstr "Menüleiste"
+msgstr "Skramm an dibaboù"
 
 #: server/views/SettingsView.qml:66
 msgctxt "SettingsView|"
 msgid "Left"
-msgstr "Links"
+msgstr "A-gleiz"
 
 #: server/views/SettingsView.qml:66
 msgctxt "SettingsView|"
 msgid "Right"
-msgstr "Rechts"
+msgstr "A-zehou"
 
 #: server/views/SettingsView.qml:77
 msgctxt "SettingsView|"
 msgid "Font size"
-msgstr "Schriftgröße"
+msgstr "Ment an nodrezh"
 
 #: server/views/SettingsView.qml:87
 msgctxt "SettingsView|"
 msgid "Theme"
-msgstr "Design"
+msgstr "Tem"
 
 #: server/views/SettingsView.qml:88
 msgctxt "SettingsView|"
 msgid "Dark"
-msgstr "Dunkel"
+msgstr "Teñval"
 
 #: server/views/SettingsView.qml:88
 msgctxt "SettingsView|"
 msgid "Light"
-msgstr "Hell"
+msgstr "Sklaer"
 
 #: server/views/SettingsView.qml:103
 msgctxt "SettingsView|"
 msgid "Language selector"
-msgstr "Sprachauswahl"
+msgstr "Dibaber ar yezhoù"
 
 #: server/views/SettingsView.qml:149
 msgctxt "SettingsView|"
 msgid "Server ID"
-msgstr "Serverkennung"
+msgstr "Identelezh ar servijour"
 
 #: server/views/SettingsView.qml:171
 msgctxt "SettingsView|"
 msgid "Port"
-msgstr "Port"
+msgstr "Porzh"
 
 #: server/views/SettingsView.qml:188
 msgctxt "SettingsView|"
 msgid "Server status"
-msgstr "Serverstatus"
+msgstr "Statud ar servijour"
 
 #: server/views/SettingsView.qml:189
 msgctxt "SettingsView|As in 'The server is running'"
 msgid "Running"
-msgstr "Wird ausgeführt"
+msgstr "War ober"
 
 #: server/views/SettingsView.qml:189
 #, qt-format
 msgctxt "SettingsView|As in 'The Server is already running on port %1'"
 msgid "Already running on port %1"
-msgstr "Wird bereits auf Port %1 ausgeführt"
+msgstr "War ober dija war ar porzh %1"
 
 #: server/views/SettingsView.qml:197
 msgctxt "SettingsView|"
 msgid "Host name"
-msgstr "Rechnername"
+msgstr "Anv ar c'houviad"
 
 #: server/views/SettingsView.qml:204
 msgctxt "SettingsView|"
 msgid "Server IP"
-msgstr "Server-IP"
+msgstr "IP ar servijour"
 
 #: server/views/SettingsView.qml:211
 msgctxt "SettingsView|"
 msgid "Broadcast IPs"
-msgstr "Broadcast-IPs"
+msgstr "Skignañ an IPoù"
 
 #: server/views/SettingsView.qml:218
 msgctxt "SettingsView|"
 msgid "Netmask"
-msgstr "Netzwerkmaske"
+msgstr "Maskl ar c'henrouedad"
 
 #: server/views/SettingsView.qml:223
 msgctxt "SettingsView|"
 msgid "MAC address"
-msgstr "MAC-Adresse"
+msgstr "Chomlec'h MAC"
 
 #: server/views/SettingsView.qml:230
 msgctxt "SettingsView|"
 msgid "GCompris version"
-msgstr "GCompris-Version"
+msgstr "Stumm GCompris"
 
 #: server/views/SettingsView.qml:237
 msgctxt "SettingsView|"
 msgid "Qt version"
-msgstr "Qt-Version"
+msgstr "Stumm Qt"
 
 #: server/views/SettingsView.qml:250
 msgctxt "SettingsView|"
 msgid "Teacher login"
-msgstr "Lehreranmeldung"
+msgstr "Login ar c'helenner"
 
 #: server/views/SettingsView.qml:258
 msgctxt "SettingsView|"
 msgid "Database file"
-msgstr "Datenbankdatei"
+msgstr "Restr an teskadoù roadennoù"
 
 #: server/views/SettingsView.qml:265
 msgctxt "SettingsView|"
 msgid "Encrypted database"
-msgstr "Verschlüsselte Datenbank"
+msgstr "Diaz roadennoù sifret"
 
 #: server/views/SettingsView.qml:266
 msgctxt "SettingsView|"
 msgid "Yes"
-msgstr "Ja"
+msgstr "Ya"
 
 #: server/views/SettingsView.qml:266
 msgctxt "SettingsView|"
 msgid "No"
-msgstr "Nein"
+msgstr "Ket"
 
 #: server/views/SettingsView.qml:271
 msgctxt "SettingsView|"
 msgid "Pupils"
-msgstr "Schüler"
+msgstr "Skolidi"
 
 #: server/views/SettingsView.qml:277
 msgctxt "SettingsView|"
 msgid "Groups"
-msgstr "Gruppen"
+msgstr "Strolladoù"
 
 #: server/views/SettingsView.qml:290
 msgctxt "SettingsView|"
 msgid "Pupils connected"
-msgstr "Schüler verbunden"
+msgstr "Skolidi gevreet"
 
 #: server/views/SettingsView.qml:297
+#, fuzzy
+#| msgctxt "SettingsView|"
+#| msgid "Pupils logged"
 msgctxt "SettingsView|"
 msgid "Pupils logged in"
-msgstr "Schüler angemeldet"
+msgstr "Skolidi kevreet"
 
 #: server/views/SettingsView.qml:304
 msgctxt "SettingsView|"
 msgid "Activities data received"
-msgstr "Aktivitätsdaten empfangen"
+msgstr "Data an obererezhioù resevet"
