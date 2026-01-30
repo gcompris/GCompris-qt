@@ -80,47 +80,39 @@ msgstr "İstenen sayıları bul ve onları karşılık gelen alana sürükle."
 
 #. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the previous numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n previous number(s)."
 msgid_plural "Find the %n previous number(s)."
-msgstr[0] "Önceki sayıları bul."
-msgstr[1] "Önceki sayıları bul."
+msgstr[0] "Önceki %n sayıyı bul."
+msgstr[1] "Önceki %n sayıyı bul."
 
 #. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:60
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the next numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n next number(s)."
 msgid_plural "Find the %n next number(s)."
-msgstr[0] "Sonraki sayıları bul."
-msgstr[1] "Sonraki sayıları bul."
+msgstr[0] "Sonraki %n sayıyı bul."
+msgstr[1] "Sonraki %n sayıyı bul."
 
 #. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:64
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the in-between numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n in-between number(s)"
 msgid_plural "Find the %n in-between number(s)"
-msgstr[0] "Aralardaki sayıları bul."
-msgstr[1] "Aralardaki sayıları bul."
+msgstr[0] "Aralardaki %n sayıyı bul."
+msgstr[1] "Aralardaki %n sayıyı bul."
 
 #. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:68
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the missing numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n missing numbers"
 msgid_plural "Find the %n missing numbers"
-msgstr[0] "Eksik sayıları bul."
-msgstr[1] "Eksik sayıları bul."
+msgstr[0] "Eksik %n sayıyı bul."
+msgstr[1] "Eksik %n sayıyı bul."
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
 msgctxt "Data|"
@@ -2955,42 +2947,42 @@ msgstr "%1 ikili sistemde neyi temsil eder?"
 #: activities/binary_bulb/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 3 (with counter and with values visible)."
-msgstr ""
+msgstr "3’e kadar say (sayaç ve değerler görünür olarak)."
 
 #: activities/binary_bulb/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 3 (without counter and with values visible)."
-msgstr ""
+msgstr "3’e kadar say (sayaç görünür olmadan ve değerler görünür olarak)."
 
 #: activities/binary_bulb/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (with counter and with values visible)."
-msgstr ""
+msgstr "15’e kadar say (sayaç ve değerler görünür olarak)."
 
 #: activities/binary_bulb/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (without counter and with values visible)."
-msgstr ""
+msgstr "15’e kadar say (sayaç görünür olmadan ve değerler görünür olarak)."
 
 #: activities/binary_bulb/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (with counter and with values visible)."
-msgstr ""
+msgstr "255’e kadar say (sayaç ve değerler görünür olarak)."
 
 #: activities/binary_bulb/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (without counter and with values visible)."
-msgstr ""
+msgstr "255’e kadar say (sayaç görünür olmadan ve değerler görünür olarak)."
 
 #: activities/binary_bulb/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 15 (without counter and without values visible)."
-msgstr ""
+msgstr "15’e kadar say (sayaç ve değerler görünür olmadan)."
 
 #: activities/binary_bulb/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "Count up to 255 (without counter and without values visible)."
-msgstr ""
+msgstr "255’e kadar say (sayaç ve değerler görünür olmadan)."
 
 #: activities/binary_bulb/resource/tutorial4.qml:31
 msgctxt "tutorial4|"
@@ -5712,7 +5704,7 @@ msgid ""
 "happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;"
 "shape;shirt;study"
 msgstr ""
-"mutlu;çocuk;beyaz;elma;kahverengi;gerçek;taze;yeşil;at;otel;ev;kağıt;şekil;"
+"mutlu;çocuk;beyaz;elma;kahverengi;gerçek;taze;yeşil;at;otel;ev;kâğıt;şekil;"
 "gömlek;çalışma"
 
 #: activities/crane/resource/1/Data.qml:13
@@ -5822,7 +5814,7 @@ msgstr "Chenonceau Şatosu Manzarası, Indre–et–Loire, Fransa."
 #: activities/details/resource/board/board17_0.qml:14
 msgctxt "board17_0|"
 msgid "Windmill in Sønderho, Fanø, Denmark"
-msgstr "Sønderho Rüzgar Gülü, Fanø, Denmark"
+msgstr "Sønderho Yel Değirmeni, Fanø, Denmark"
 
 #: activities/details/resource/board/board18_0.qml:14
 msgctxt "board18_0|"
@@ -5901,12 +5893,9 @@ msgstr "Sayısal elektrik"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "Sayısal mantık devresi oluştur ve buna öykün"
+msgstr "Sayısal mantık devresi oluştur ve buna öykün."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -6630,12 +6619,10 @@ msgstr ""
 
 #: activities/drawing_wheels/ActivityConfig.qml:29
 #: activities/sketch/ActivityConfig.qml:29
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 19."
+#, qt-format
 msgctxt "ActivityConfig|"
 msgid "Number of undo: %1"
-msgstr "1’den 19’a kadar sayılar."
+msgstr "Geri alma sayısı: %1"
 
 #: activities/drawing_wheels/ActivityConfig.qml:44
 #: activities/sketch/ActivityConfig.qml:44
@@ -6644,30 +6631,27 @@ msgid ""
 "Warning: setting the number of undo too high can make the application crash "
 "if your device doesn't have enough memory."
 msgstr ""
+"Uyarı: Aygıtınızda yeterli bellek yoksa geri alma sayısını çok yüksek yapmak "
+"uygulamanın çökmesine neden olabilir."
 
 #. Activity title
 #: activities/drawing_wheels/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "BrushToolPanel|"
-#| msgid "Drawing Tools"
 msgctxt "ActivityInfo|"
 msgid "Drawing wheels"
-msgstr "Çizim Araçları"
+msgstr "Çizim çarkı"
 
 #. Help title
 #: activities/drawing_wheels/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Roll the gear in the cogwheel to draw."
-msgstr ""
+msgstr "Dişli çarktaki dişliyi döndürerek çizim yap."
 
 #. Help goal
 #: activities/drawing_wheels/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
-msgstr "Sayısal boyama araçları hakkında bilgi edin."
+msgstr ""
+"İç teker eğrilerini keşfet ve onları dijital resim araçları olarak kullan."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
@@ -6716,33 +6700,24 @@ msgstr "Kontrol+0: Bir görsel aç"
 #: activities/drawing_wheels/DrawingWheels.qml:399
 msgctxt "DrawingWheels|"
 msgid "File menu"
-msgstr ""
+msgstr "Dosya menüsü"
 
 #: activities/drawing_wheels/DrawingWheels.qml:411
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
-msgstr ""
+msgstr "Tekerlek ve dişli çark"
 
 #: activities/drawing_wheels/DrawingWheels.qml:435
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Piano composition"
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
-msgstr "Piyano kompozisyonu"
+msgstr "Kalem boyutu ve konumu"
 
 #: activities/drawing_wheels/DrawingWheels.qml:447
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font selector"
 msgctxt "DrawingWheels|"
 msgid "Color selector"
-msgstr "Yazıtipi seçicisi"
+msgstr "Renk seçicisi"
 
 #: activities/drawing_wheels/DrawingWheels.qml:474
-#, fuzzy
-#| msgctxt "OptionsRow|"
-#| msgid "Undo"
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Geri al"
@@ -6750,56 +6725,44 @@ msgstr "Geri al"
 #: activities/drawing_wheels/DrawingWheels.qml:486
 msgctxt "DrawingWheels|"
 msgid "Redo"
-msgstr ""
+msgstr "Yinele"
 
 #: activities/drawing_wheels/DrawingWheels.qml:520
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
-msgstr ""
+msgstr "Çizmeyi durdur"
 
 #: activities/drawing_wheels/DrawingWheels.qml:520
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
-msgstr ""
+msgstr "Çizmeyi başlat"
 
 #: activities/drawing_wheels/DrawingWheels.qml:553
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
-msgstr ""
+msgstr "Tekerleği ve dişli çarkı göster"
 
 #: activities/drawing_wheels/DrawingWheels.qml:553
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
-msgstr ""
+msgstr "Tekerleği ve dişli çarkı gizle"
 
 #: activities/drawing_wheels/DrawingWheels.qml:712
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Görselini kaydet"
 
 #: activities/drawing_wheels/DrawingWheels.qml:727
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Open an image"
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Görsel aç"
 
 #: activities/drawing_wheels/DrawingWheels.qml:756
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Create a new image"
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Yeni görsel oluştur"
 
 #: activities/drawing_wheels/DrawingWheels.qml:775
-#, fuzzy
-#| msgctxt "BackgroundColorSelector|"
-#| msgid "Background color"
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Arka plan rengi"
@@ -6807,25 +6770,20 @@ msgstr "Arka plan rengi"
 #: activities/drawing_wheels/DrawingWheels.qml:856
 msgctxt "DrawingWheels|"
 msgid "Wheel"
-msgstr ""
+msgstr "Tekerlek"
 
 #: activities/drawing_wheels/DrawingWheels.qml:923
 msgctxt "DrawingWheels|"
 msgid "Gear"
-msgstr ""
+msgstr "Dişli çark"
 
 #: activities/drawing_wheels/DrawingWheels.qml:986
-#, fuzzy, qt-format
-#| msgctxt "SignalGenerator|"
-#| msgid "%1 s"
+#, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
-msgstr "%1 s"
+msgstr "%1 sivri uç"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1004
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Hız"
@@ -6833,25 +6791,19 @@ msgstr "Hız"
 #: activities/drawing_wheels/DrawingWheels.qml:1020
 msgctxt "DrawingWheels|"
 msgid "Slow"
-msgstr ""
+msgstr "Yavaş"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1040
 msgctxt "DrawingWheels|"
 msgid "Fast"
-msgstr ""
+msgstr "Hızlı"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1083
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font size"
 msgctxt "DrawingWheels|"
 msgid "Pen size"
-msgstr "Yazıtipi boyutu"
+msgstr "Kalem büyüklüğü"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1120
-#, fuzzy
-#| msgctxt "ToolsPanel|"
-#| msgid "Opacity"
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Matlık"
@@ -6859,44 +6811,29 @@ msgstr "Matlık"
 #: activities/drawing_wheels/DrawingWheels.qml:1163
 msgctxt "DrawingWheels|"
 msgid "Offset"
-msgstr ""
+msgstr "Ofset"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1201
-#, fuzzy
-#| msgctxt "IntroMessage|"
-#| msgid "Start"
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
-msgstr "Başlat"
+msgstr "Dişi başlat"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1381
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "You did not save this image. Do you want to close this activity?"
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Bu görseli kaydetmedin. Bu etkinliği kapatmak mı istiyorsun?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1382
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "Do you want to erase this image?"
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Bu görseli silmek mi istiyorsun?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1383
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Evet"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1384
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "Hayır"
@@ -7496,13 +7433,6 @@ msgid "Chichén Itzá"
 msgstr "Chichén–Itzá"
 
 #: activities/explore_monuments/resource/board/board1.qml:20
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
-#| "the Yucatan Peninsula in Mexico, between Valladolid and Merida. It was "
-#| "established before the period of Christopher Colombus and probably served "
-#| "as the religion center of Yucatan for a while."
 msgctxt "board1|"
 msgid ""
 "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
@@ -7511,8 +7441,8 @@ msgid ""
 "the religion center of Yucatan for a while."
 msgstr ""
 "“Itza kuyusunun ağzında” anlamına gelen Chichen Itza, Meksika’daki Yucatan "
-"Yarımadası’nda, Valladolid ve Merida arasında bir Maya şehridir. Christopher "
-"Colombus döneminden önce kurulmuş ve muhtemelen bir süre Yucatan’ın din "
+"Yarımadası’nda, Valladolid ve Merida arasında bir Maya şehridir. Kristof "
+"Kolomb döneminden önce kurulmuş ve muhtemelen bir süre Yucatan’ın din "
 "merkezi olarak hizmet vermiştir."
 
 #: activities/explore_monuments/resource/board/board1.qml:30
@@ -8609,7 +8539,7 @@ msgstr "Verilen piramidin bulunduğu yere tıkla."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "Yasak Şehir"
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8624,12 +8554,21 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
+"Pekin, Çin’in kalbinde yer alan Yasak Şehir, Ming hanedanlığından (1368–"
+"1644) Çing hanedanlığının (1644–1912) sonuna kadar yaklaşık 500 yıl boyunca "
+"Çin imparatorlarının evi ve ulusun siyasi merkezi olarak hizmet vermiş "
+"muhteşem bir imparatorluk sarayı kompleksidir. 1406 ve 1420 yılları arasında "
+"yapılan bu geniş mimari şaheser, 180 dönümlük bir alana yayılmakta ve "
+"geleneksel Çin saray tasarımını sergileyen 8.700 odalı 980’den fazla "
+"korunmuş bina içermektedir. Bir hendek ve devasa bir duvarla çevrili olan "
+"Yasak Şehir, bir zamanlar halkın erişimine kapalıydı ve imparatorluğun "
+"gücünü ve ayrıcalığını simgeliyordu."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "Büyük Lışan Budası"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8644,15 +8583,22 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
+"Çin’in Siçuan Eyaletinde bulunan Büyük Lışan Budası, Min, Dadu ve Çingyi "
+"ırmaklarının birleştiği yerde bir uçurumun içine oyulmuş devasa bir "
+"heykeldir. 71 metre (233 ayak) uzunluğuyla dünyanın en uzun çağdaş dönem "
+"öncesi heykelidir ve UNESCO Dünya Mirası Listesi’nde yer almaktadır. Tang "
+"Hanedanlığı (MS 713–803) döneminde yapılan heykel, geleceğin Buda’sı "
+"Maitreya’yı temsil etmektedir ve yerel tekne trafiğini tehdit eden "
+"çalkantılı suları sakinleştirmek için yapılmıştır. Ustaca tasarlanmış olan "
+"heykel, erozyonu önlemek için gizli bir drenaj sistemi içermektedir. "
+"Heykelin dingin ifadesi ve karmaşık işçiliği onu ruhani ve sanatsal "
+"başarının sembolü haline getirmektedir."
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Mysore Sarayı"
+msgstr "Potala Sarayı"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8667,12 +8613,21 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
+"Tibet’in Lasa kentindeki Kızıl Tepe üzerinde yer alan Potala Sarayı, Tibet "
+"kültürünün simgesel bir sembolüdür ve UNESCO Dünya Mirası Listesi’nde yer "
+"almaktadır. Aslen 7. yüzyılda yapılan ve 17. yüzyılda genişletilen saray, "
+"Dalai Lamaların kışlık ikametgâhı ve Tibet yönetiminin merkezi olarak hizmet "
+"vermiştir. 13 kat yükselen ve 1.000’den fazla odası bulunan saray, karmaşık "
+"Tibet mimarisini, canlı duvar resimlerini ve kutsal emanetleri bir araya "
+"getirmektedir. İdari alanları barındıran Beyaz Saray ile dini çalışmalara ve "
+"ibadetlere adanmış Kırmızı Saray olarak ikiye ayrılmıştır. Potala Sarayı, "
+"Tibet’in ruhani ve tarihi mirasının bir kanıtı olarak ayaktadır."
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "Toprak Askerler"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8684,12 +8639,19 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
+"Toprak Askerler, Çin’in ilk imparatoru Çin Şi Huang’a öbür dünyada eşlik "
+"etmek üzere onunla birlikte gömülen binlerce gerçek boyutlu kil asker, at ve "
+"savaş arabasından oluşan bir koleksiyondur. 1974 yılında Şi’an yakınlarında "
+"keşfedilen figürler yaklaşık M.Ö. 210 yılına tarihlenmektedir ve her bir "
+"savaşçının antik bir Çin ordusunun çeşitli rütbelerini ve rollerini temsil "
+"edecek şekilde benzersiz bir şekilde işlendiği inanılmaz ayrıntılarıyla "
+"ünlüdür."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr ""
+msgstr "Güneş ve Ay Pagodaları"
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8704,15 +8666,21 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
+"Çin’in Guilin kentinde bulunan Güneş ve Ay Pagodaları, kentin kültürel ve "
+"ruhani mirasını simgeleyen ikiz kulelerdir. Aslen Tang Hanedanlığı döneminde "
+"inşa edilen bu yapılar, 20. yüzyılda Şanhu Gölü üzerinde çarpıcı birer simge "
+"olarak yeniden yapılmıştır. Güneş Pagodası 41 metre yüksekliğiyle bronz bir "
+"yapıdır ve türünün dünyadaki en yüksek örneğidir. 35 metrelik Ay Pagodası "
+"ise sırlı çinilerden inşa edilmiştir. Bu pagodalar yin ve yang uyumunu "
+"temsil etmekte ve bir su altı cam tüneli ile birbirine bağlanmaktadır. "
+"Geceleri aydınlatılan bu yapılar, geleneksel Çin mimarisini ve çağdaş "
+"yaratıcılığı sergileyen popüler cazibe merkezleridir."
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Eyfel Kulesi"
+msgstr "Diaolou Kuleleri"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8727,19 +8695,22 @@ msgid ""
 "UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
 "towers remain, offering insight into this unique architectural heritage."
 msgstr ""
+"Çin’in Guangdong Eyaleti, Kaiping kentinde bulunan Diaolou Kuleleri, 19. "
+"yüzyılın sonlarından 20. yüzyılın başlarına kadar haydutlara ve sellere "
+"karşı korunmak amacıyla yapılmış çok katlı müstahkem yapılardır. Romanesk ve "
+"Barok gibi Batı mimari tarzlarını geleneksel Çin unsurlarıyla harmanlayan bu "
+"yapılar, denizaşırı Çinli göçmenlerin zenginliğini ve etkisini "
+"yansıtmaktadır. Betonarme olarak inşa edilen bu kuleler, Çin’in kırsal "
+"kesimindeki kültürel ve ekonomik geçiş dönemini simgelemektedir. 2007’de "
+"UNESCO Dünya Mirası Listesi’ne alınan özgün 3.000 kuleden geriye kalan "
+"yaklaşık 1.800 tanesi, bu eşsiz mimari mirasa ışık tutmaktadır."
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Hindistan’ın Anıtları"
+msgstr "Çin’in Anıtları"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Verilen anıtın bulunduğu yere tıkla."
@@ -8748,7 +8719,7 @@ msgstr "Verilen anıtın bulunduğu yere tıkla."
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "Panteon"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8765,12 +8736,24 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
+"İtalya’nın Roma kentindeki Panteon, MS 126 yılında İmparator Hadrianus "
+"döneminde, Marcus Agrippa tarafından yaptırılan daha önceki yapıların yerine "
+"yapılmış simgesel bir antik tapınaktır. Mimari parlaklığıyla tanınan "
+"tapınak, doğal ışığın iç mekanı aydınlatmasına izin veren, cenneti "
+"simgeleyen merkezi bir göz deliğine sahip devasa bir kubbeli çatıya "
+"sahiptir. Başlangıçta tüm Roma tanrılarına adanmış olan yapı, daha sonra MS "
+"609 yılında Aziz Meryem ve Şehitler Bazilikası (Santa Maria ad Martyres) "
+"olarak bilinen bir Hıristiyan kilisesine dönüştürülmüştür. Dünyanın en büyük "
+"betonarme kubbesi olan kubbesi, yüzyıllar boyunca mimarlara ilham veren "
+"olağanüstü bir mühendislik ve simetri sergiler. Panteon’un uyumlu oranları "
+"ve tarihi önemi, onu klasik mimarinin zamansız bir başyapıtı haline "
+"getirmektedir."
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "Milano Katedrali"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8785,15 +8768,22 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
+"Milano Katedrali olarak da bilinen Duomo di Milano, İtalya’nın Milano "
+"kentinin kalbinde yer alan ikonik bir Gotik başyapıttır. Yaklaşık altı "
+"yüzyıl boyunca inşa edilen katedral, dünyanın en büyük katedrallerinden "
+"biridir ve Milano’nun sanatsal ve kültürel mirasının bir sembolüdür. "
+"Karmaşık cephesi Gotik mimarinin ihtişamını yansıtan sayısız heykel, kule ve "
+"gargoyle ile süslenmiştir. Ziyaretçiler, güzel vitray pencereler ve karmaşık "
+"mermer detaylar içeren çarpıcı iç mekanlarını keşfedebilir veya şehrin ve "
+"Alpler’in nefes kesici manzarasını görmek için çatıya çıkabilirler. Duomo, "
+"İtalya’nın zengin tarihinin ve mimari parlaklığının bir kanıtı olarak "
+"durmaktadır."
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Worms Katedrali"
+msgstr "Floransa Katedrali"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8809,15 +8799,22 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
+"Resmi adıyla Cattedrale di Santa Maria del Fiore olarak bilinen Floransa "
+"Katedrali, İtalya’nın Floransa kentinde bulunan Gotik ve Rönesans "
+"mimarisinin ünlü bir başyapıtıdır. 1436 yılında tamamlanan katedral, Filippo "
+"Brunelleschi tarafından tasarlanan, bir mühendislik harikası ve şehrin "
+"sembolü olmaya devam eden kırmızı kiremitli devasa kubbesiyle ünlüdür. "
+"Katedralin 19. yüzyılda eklenen karmaşık mermer cephesi, zengin bir şekilde "
+"dekore edilmiş iç mekanını ve sanatsal hazinelerini tamamlamaktadır. "
+"Giotto’nun Campanile’si ve Aziz John Vaftizhanesi ile birlikte UNESCO Dünya "
+"Mirası Listesi’nin bir parçasını oluşturan katedral, tarihi, kültürel ve "
+"mimari önemi nedeniyle her yıl milyonlarca ziyaretçi çekmektedir."
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Hanoi Kulesi"
+msgstr "Pisa Kulesi"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8832,12 +8829,21 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
+"İtalya’nın Pisa kentinde bulunan Pisa Kulesi, dünyaca ünlü bir mimari "
+"harikadır. Şehrin katedrali için bağımsız bir çan kulesi olarak inşa edilen "
+"kule, dengesiz temel toprağının neden olduğu istenmeyen eğimiyle ünlüdür. "
+"Yapımına 1173 yılında başlanan kulenin inşası yaklaşık 200 yıl sürmüş ve bu "
+"süre zarfında eğimini dengelemek için çaba sarf edilmiştir. Yaklaşık 56 "
+"metre (183 feet) uzunluğundaki kulenin Romanesk tasarımı, karmaşık oyma "
+"sütunlar ve kemerlerle süslenmiş bir çan odası da dahil olmak üzere sekiz "
+"kata sahiptir. UNESCO Dünya Mirası Listesi’nde yer alan kule, dayanıklılık "
+"ve yaratıcılığın sembolü olmayı sürdürmektedir."
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr ""
+msgstr "Aziz Markos Bazilikası"
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -8853,12 +8859,23 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
+"İtalya’nın Venedik kentinde bulunan Aziz Mark Bazilikası, Bizans mimarisinin "
+"simgesel bir başyapıtı ve kentin en ünlü simgelerinden biridir. İlk olarak "
+"828 yılında Evangelist Aziz Markos’un kutsal emanetlerini barındırmak üzere "
+"inşa edilen bazilika, 11. yüzyılda bugünkü haliyle yeniden inşa edilmiştir. "
+"Gösterişli tasarımıyla tanınan bazilika, beş kubbesi, karmaşık mozaikleri ve "
+"heykeller ve oymalarla süslenmiş süslü cephesiyle Doğu ve Batı etkilerinin "
+"bir karışımına sahiptir. Altın mozaikler ve mermer zeminlerle zengin bir "
+"şekilde dekore edilmiş olan iç mekân, Venedik Cumhuriyeti’nin zenginliğini "
+"ve gücünü gözler önüne sermektedir. Aziz Markos Meydanı’na bitişik olan "
+"yapı, Venedik’in tarihi, kültürel ve dini mirasının bir sembolü olmayı "
+"sürdürmektedir."
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr ""
+msgstr "Pompeii"
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -8874,31 +8891,32 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
+"Pompeii, günümüz İtalya’sının Napoli kenti yakınlarında bulunan ve MS 79 "
+"yılında Vezüv Yanardağı’nın patlamasıyla sulara gömüldükten sonra günümüze "
+"kadar korunmuş olan antik bir Roma kentidir. Patlama, kül, sünger taşı ve "
+"piroklastik akıntıların ölümcül bir kombinasyonunu ortaya çıkarmış, bu da "
+"şehri ve sakinlerini yutarak binaları, eserleri ve hatta insan kalıntılarını "
+"inanılmaz ayrıntılarla korumuştur. Pompeii kazıları günlük Roma yaşamı, "
+"mimarisi ve toplumu hakkında değerli bilgiler sağlamış, iyi planlanmış "
+"sokakları, evleri, hamamları ve tapınakları olan bir şehri ortaya "
+"çıkarmıştır. Günümüzde UNESCO Dünya Mirası Listesi’nde yer alan Pompeii, "
+"tarihin en önemli arkeolojik keşiflerinden biri olmayı sürdürmektedir."
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Hindistan’ın Anıtları"
+msgstr "İtalya’nın Anıtları"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Verilen anıtın bulunduğu yere tıkla."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Karışık Harf"
+msgstr "Himeji Kalesi"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -8911,12 +8929,18 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
+"Himeji-jo, Şogun döneminin başlangıcından kalma son derece gelişmiş savunma "
+"sistemleri ve ustalıklı koruma aygıtlarına sahip 83 binadan oluşan 17. "
+"yüzyıl başı Japon kale mimarisinin günümüze ulaşan en iyi örneğidir. Hem "
+"beyaz sıvalı toprak duvarlarla birleştirilmiş zarif görünümü hem de bina "
+"kütleleri ve çoklu çatı katmanları arasındaki ilişkilerin inceliği ile "
+"işlevi estetik çekicilikle birleştiren ahşap bir yapı şaheseridir."
 
 #: activities/explore_monuments/resource/board/board9.qml:28
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr ""
+msgstr "Hiroşima Barış Anıtı Parkı"
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -8932,12 +8956,22 @@ msgid ""
 "a solemn space for reflection, honoring the lives lost and advocating for "
 "global peace."
 msgstr ""
+"Hiroşima Barış Anıtı Parkı, barışın bir sembolü ve savaşın yıkıcı "
+"sonuçlarının bir hatırlatıcısıdır. Japonya’nın Hiroşima kentinde yer alan "
+"park, 6 Ağustos 1945’teki atom bombası saldırısının kurbanlarını anmaktadır. "
+"Parkta, bir zamanlar hükümet binası olan ve şu anda UNESCO Dünya Mirası "
+"Listesi’nde yer alan simgesel Atom Bombası Kubbesi de içerilmek üzere "
+"çeşitli anıtlar bulunmaktadır. Park aynı zamanda ziyaretçileri bombalamayı "
+"çevreleyen olaylar hakkında eğiten ve barış, şiddetsizlik ve nükleer "
+"silahsızlanmanın önemi mesajını veren Hiroşima Barış Anıtı Müzesi’ne de ev "
+"sahipliği yapmaktadır. Kaybedilen hayatları onurlandıran ve küresel barışı "
+"savunan ciddi bir düşünme alanı olarak hizmet vermektedir."
 
 #: activities/explore_monuments/resource/board/board9.qml:39
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr ""
+msgstr "Arakura Fuji Sengen Tapınağı"
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -8953,12 +8987,22 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
+"Tapınak, 705 yılında bölgenin tanrısını kutsamak için kurulmuştur. Fuji "
+"Dağı’nın 807’deki büyük patlamasının ardından imparator, patlamayı durdurmak "
+"için bir ritüel gerçekleştirmek üzere bu tapınağa bir imparatorluk elçisi "
+"göndermiştir. Savaşan Devletler Dönemi’nde, ünlü bir savaş lordu olan Takeda "
+"Şingen’in babası Takeda Nobutora’nın Hojo Ailesi ile savaşırken burada kamp "
+"kurduğu, zafer için dua ettiği ve savaşı kazandığı söylenir. Daha sonra "
+"kılıcını bu tapınağa adamıştır. Bugün, yerel halk ve uzaklardan gelenler "
+"kötülüklerden korunmak, aile mutluluğu ve güvenli doğum için dua etmek üzere "
+"tapınağı ziyaret etmektedir. İlkbaharda kiraz ağaçları çiçek açar ve Fuji "
+"Dağı’nın muhteşem manzarasının tadını çıkarmak için kalabalıklar toplanır."
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr ""
+msgstr "Okinava Şuri Kalesi"
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -8974,19 +9018,24 @@ msgid ""
 "much of the castle was lost in a fire in 2019, but efforts to restore it are "
 "ongoing, reflecting its enduring importance to Okinawa's heritage."
 msgstr ""
+"Naha, Okinava, Japonya’da bulunan Şuri Kalesi, UNESCO Dünya Mirası "
+"Listesi’nde yer almaktadır ve Ryukyu Krallığı’nın zengin kültürel tarihinin "
+"bir sembolüdür. Aslen 14. yüzyılda inşa edilen kale, yüzyıllar boyunca "
+"krallığın siyasi, ekonomik ve kültürel merkezi olarak hizmet vermiştir. Çin "
+"ve Japon mimari tarzlarının kendine özgü birleşimiyle tanınan Şuri Kalesi, "
+"kırmızı lake yapılara, süslü dekorasyonlara ve tepeye hakim bir konuma "
+"sahiptir. Dünya Savaşı sırasında yıkılmış olmasına rağmen, titizlikle "
+"yeniden yapılmış ve önemli bir turistik cazibe merkezi haline gelmiştir. "
+"Trajik bir şekilde, kalenin büyük bir kısmı 2019 yılında çıkan bir yangında "
+"kayboldu, ancak Okinava’nın mirası için kalıcı önemini yansıtan kaleyi "
+"restore etme çabaları sürüyor."
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Fransa’nın Anıtları"
+msgstr "Japonya’nın Anıtları"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Verilen anıtın bulunduğu yere tıkla."
@@ -11425,13 +11474,13 @@ msgstr "İç Moğolistan"
 #: activities/geo-country/resource/board/board14_0.qml:45
 msgctxt "board14_0|"
 msgid "Ningxia"
-msgstr "Ningşia"
+msgstr "Ninşia"
 
 #. Province of China: Heilongjiang
 #: activities/geo-country/resource/board/board14_0.qml:52
 msgctxt "board14_0|"
 msgid "Heilongjiang"
-msgstr "Heilongcang"
+msgstr "Heiloncien"
 
 #. Province of China: Jilin
 #: activities/geo-country/resource/board/board14_0.qml:59
@@ -11443,7 +11492,7 @@ msgstr "Cilin"
 #: activities/geo-country/resource/board/board14_0.qml:66
 msgctxt "board14_0|"
 msgid "Liaoning"
-msgstr "Liaoning"
+msgstr "Liaonin"
 
 #. Province of China: Tianjin
 #: activities/geo-country/resource/board/board14_0.qml:73
@@ -11461,7 +11510,7 @@ msgstr "Pekin"
 #: activities/geo-country/resource/board/board14_0.qml:87
 msgctxt "board14_0|"
 msgid "Shandong"
-msgstr "Şandong"
+msgstr "Şandon"
 
 #. Province of China: Shanxi
 #: activities/geo-country/resource/board/board14_0.qml:94
@@ -11527,13 +11576,13 @@ msgstr "Hubei"
 #: activities/geo-country/resource/board/board14_0.qml:164
 msgctxt "board14_0|"
 msgid "Shanghai"
-msgstr "Şanghay"
+msgstr "Şanhay"
 
 #. Province of China: Zhejiang
 #: activities/geo-country/resource/board/board14_0.qml:171
 msgctxt "board14_0|"
 msgid "Zhejiang"
-msgstr "Jıcieng"
+msgstr "Jıcien"
 
 #. Province of China: Fujian
 #: activities/geo-country/resource/board/board14_0.qml:178
@@ -15004,12 +15053,9 @@ msgstr "1 ve 5 arasında bulunacak sayı."
 
 #: activities/graduated_line_read/resource/10/Data.qml:9
 #: activities/graduated_line_use/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Number to find between 0 and 20."
 msgctxt "Data|"
 msgid "Decimal number to find between 0 and 4."
-msgstr "0 ve 20 arasında bulunacak sayı."
+msgstr "0 ve 4 arasında bulunacak ondalık sayı."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
 msgctxt "Data|"
@@ -15229,7 +15275,7 @@ msgid ""
 "and assign it the class."
 msgstr ""
 "Listeden bir dilbilgisi sınıfı seç, ardından bir sözcüğün altındaki kutuyu "
-"seç ve sınıfı ona ata."
+"seç ve sınıfı ona ata"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:30
 msgctxt "GrammarAnalysis|"
@@ -15534,12 +15580,9 @@ msgid "Division required."
 msgstr "Bölme gerekiyor."
 
 #: activities/guess24/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "Tüm işlemler bellek oyunu"
+msgstr "Tüm işleçler gerekli."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -17706,11 +17749,6 @@ msgstr ""
 "kendi yöntemini geliştirdi."
 
 #: activities/louis-braille/louis_braille_data.js:52
-#, fuzzy
-#| msgctxt "louis_braille_data|"
-#| msgid ""
-#| "He revised and extended braille to include mathematics, symbols, "
-#| "punctuations and music notations."
 msgctxt "louis_braille_data|"
 msgid ""
 "He revised and extended braille to include mathematics, symbols, punctuation "
@@ -17748,12 +17786,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "Sihirbaz şapkası"
+msgstr "Sihirbaz şapkası (çıkarma)"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -17844,12 +17879,9 @@ msgstr "%1×"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "Sihirbaz şapkası"
+msgstr "Sihirbaz şapkası (toplama)"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -19627,7 +19659,7 @@ msgstr "Yazıtipi seçicisi"
 #: activities/menu/ConfigurationItem.qml:378
 msgctxt "ConfigurationItem|"
 msgid "Font size"
-msgstr "Yazıtipi boyutu"
+msgstr "Yazıtipi puntosu"
 
 #: activities/menu/ConfigurationItem.qml:397
 #: activities/menu/ConfigurationItem.qml:430
@@ -19648,7 +19680,7 @@ msgstr "Yazıtipi harf boşluklandırması"
 #: activities/menu/ConfigurationItem.qml:445
 msgctxt "ConfigurationItem|"
 msgid "Teacher's server config"
-msgstr ""
+msgstr "Öğretmenin sunucu yapılandırması"
 
 #: activities/menu/ConfigurationItem.qml:653
 msgctxt "ConfigurationItem|"
@@ -19747,7 +19779,7 @@ msgstr "Söz Dağarcığı"
 #: activities/menu/Menu.qml:211
 msgctxt "Menu|"
 msgid "GCompris is not connected to teacher's server."
-msgstr ""
+msgstr "GCompris öğretmenin sunucusuna bağlı değil."
 
 #: activities/menu/Menu.qml:212
 msgctxt "Menu|"
@@ -19755,22 +19787,25 @@ msgid ""
 "GCompris is connected to teacher's server, but the password entered for "
 "selected user is wrong."
 msgstr ""
+"GCompris öğretmenin sunucusuna bağlı; ancak seçili kullanıcı için girilen "
+"parola yanlış."
 
 #: activities/menu/Menu.qml:213
 msgctxt "Menu|"
 msgid ""
 "GCompris is connected to teacher's server, and the user is authenticated."
 msgstr ""
+"GCompris öğretmenin sunucusuna bağlı ve kullanıcının kimliği doğrulanmış."
 
 #: activities/menu/Menu.qml:214
 msgctxt "Menu|"
 msgid "GCompris has lost the connection to teacher's server."
-msgstr ""
+msgstr "GCompris öğretmen sunucusuna olan bağlantısı koptu."
 
 #: activities/menu/Menu.qml:215
 msgctxt "Menu|"
 msgid "GCompris has been disconnected from teacher's server."
-msgstr ""
+msgstr "GCompris öğretmen sunucusuna olan bağlantı kapatıldı."
 
 #: activities/menu/Menu.qml:216
 msgctxt "Menu|"
@@ -19778,6 +19813,8 @@ msgid ""
 "GCompris is connected to teacher's server, but the user is not yet "
 "authenticated."
 msgstr ""
+"GCompris öğretmenin sunucusuna bağlı; ancak kullanıcı henüz kimliğini "
+"doğrulamamış."
 
 #: activities/menu/Menu.qml:677
 msgctxt "Menu|"
@@ -19801,25 +19838,22 @@ msgstr "Etkinlik Ayarları"
 #: activities/menu/ServerConfigPage.qml:61
 msgctxt "ServerConfigPage|"
 msgid "Teacher's server settings"
-msgstr ""
+msgstr "Öğretmenin sunucusu ayarları"
 
 #: activities/menu/ServerConfigPage.qml:111
 msgctxt "ServerConfigPage|"
 msgid "Teacher's identifier"
-msgstr ""
+msgstr "Öğretmenin tanımlayıcısı"
 
 #: activities/menu/ServerConfigPage.qml:142
 msgctxt "ServerConfigPage|"
 msgid "Server port"
-msgstr ""
+msgstr "Sunucu kapısı"
 
 #: activities/menu/ServerConfigPage.qml:177
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "ServerConfigPage|"
 msgid "Server port must be a number between 0 and 65535."
-msgstr "1 ile %1 arasında bir sayı tahmin et."
+msgstr "Sunucu kapısı 0 ile 65535 arasında bir numara olmalıdır."
 
 #. Activity title
 #: activities/mining/ActivityInfo.qml:15
@@ -20050,8 +20084,8 @@ msgid ""
 "pay. If you want to remove a coin or a note, click or tap on it on the upper "
 "screen area."
 msgstr ""
-"Ödemek için ekranın alt bölümündeki madeni veya kağıt paraya tıkla veya "
-"ekrana dokun. Madeni parayı veya kağıt parayı kaldırmak için üstüne tıkla "
+"Ödemek için ekranın alt bölümündeki madeni veya kâğıt paraya tıkla veya "
+"ekrana dokun. Madeni parayı veya kâğıt parayı kaldırmak için üstüne tıkla "
 "veya dokun."
 
 #: activities/money/ActivityInfo.qml:26
@@ -20076,8 +20110,8 @@ msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
 "you want to remove a coin or a note, click on it on the upper screen area."
 msgstr ""
-"Ödemek için ekranın altındaki bozuk veya kağıt paralara tıkla. Bir bozuk "
-"para veya banknot (kağıt para) çıkarmak istiyorsan ekranın üst kısmında "
+"Ödemek için ekranın altındaki bozuk veya kâğıt paralara tıkla. Bir bozuk "
+"para veya banknot (kâğıt para) çıkarmak istiyorsan ekranın üst kısmında "
 "paranın üzerine tıkla."
 
 #: activities/money/money.js:179
@@ -20172,8 +20206,8 @@ msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
 "you want to remove a coin or a note, click on it on the upper screen area."
 msgstr ""
-"Ödemek için ekranın alt bölümündeki bozuk veya kağıt paraya tıkla. Bozuk "
-"veya kağıt parayı kaldırmak için üstüne tıkla."
+"Ödemek için ekranın alt bölümündeki bozuk veya kâğıt paraya tıkla. Bozuk "
+"veya kâğıt parayı kaldırmak için üstüne tıkla."
 
 #. Activity title
 #: activities/morse_code/ActivityInfo.qml:18
@@ -20396,24 +20430,21 @@ msgstr "Birden çok satırda 24 adede kadar öge."
 
 #. Activity title
 #: activities/multiple_choice_questions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication."
 msgctxt "ActivityInfo|"
 msgid "Multiple-choice questions"
-msgstr "Çarpma işlemi."
+msgstr "Çoktan seçmeli sorular"
 
 #. Help title
 #: activities/multiple_choice_questions/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "A generic activity for multiple-choice questions."
-msgstr ""
+msgstr "Çoktan seçmeli sorular için genel bir etkinlik."
 
 #. Help goal
 #: activities/multiple_choice_questions/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Answer questions sent by the teacher."
-msgstr ""
+msgstr "Öğretmen tarafından gönderilen soruları yanıtla."
 
 #. Help manual
 #: activities/multiple_choice_questions/ActivityInfo.qml:24
@@ -20424,30 +20455,26 @@ msgid ""
 "For some questions, after validating the answer, a feedback text panel will "
 "be displayed: click anywhere to close this panel after reading it."
 msgstr ""
+"Bir yanıtı seçmek için üzerine tıkla, ardından onaylamak için OK düğmesine "
+"bas. Bazı sorular tek yanıt gerektirirken, diğerleri birden fazla yanıt "
+"gerekir. Bazı sorular için yanıtı onayladıktan sonra bir geri bildirim metni "
+"paneli görüntülenir: okuduktan sonra bu paneli kapatmak için herhangi bir "
+"yere tıkla."
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate through the answers"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: navigate through the answer list"
-msgstr "Oklar: Yanıtlar arasında dolaş"
+msgstr "Aşağı ve yukarı oklar: Yanıtlar arasında dolaş"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select or deselect a circle"
 msgctxt "ActivityInfo|"
 msgid "Space: select or deselect the highlighted answer"
-msgstr "Boşluk: Bir daire seç veya seçimini kaldır"
+msgstr "Boşluk: Vurgulanan yanıtı seç veya seçimini kaldır"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
-msgstr "Giriş: OK düğmesi göründüğünde yanıtını doğrula"
+msgstr "Giriş: Yanıtını doğrula veya geri bildirim metin panelini kapat"
 
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
@@ -23242,7 +23269,7 @@ msgid ""
 "To win you must switch on all the consumers while all the producers are up."
 msgstr ""
 "Tüm elektrik sistemini yeniden etkinleştirmek için farklı etkin ögelere "
-"tıkla: Güneş, bulut, baraj, güneş dizilimi, rüzgar çiftliği ve "
+"tıkla: Güneş, bulut, baraj, güneş dizilimi, rüzgâr çiftliği ve "
 "transformatörler. Sistem yeniden açıldığında ve Tux evindeyken, onun için "
 "ışığı aç. Kazanmak için tüm üreticiler çalışırken, tüm tüketicileri de "
 "devreye sokmalısın."
@@ -23263,7 +23290,7 @@ msgid ""
 "and transformers, in order to reactivate the entire electrical system."
 msgstr ""
 "Tüm elektrik sistemini yeniden etkinleştirmek için güneş, bulut, baraj, "
-"güneş panelleri, rüzgar çiftliği ve transformatörler gibi farklı etkin "
+"güneş panelleri, rüzgâr çiftliği ve transformatörler gibi farklı etkin "
 "elementlere tıkla."
 
 #: activities/renewable_energy/RenewableEnergy.qml:279
@@ -24803,9 +24830,6 @@ msgid "Gradient Tools"
 msgstr "Gradyan Araçları"
 
 #: activities/sketch/PaletteSelector.qml:148
-#, fuzzy
-#| msgctxt "ColorsPanel|"
-#| msgid "Palettes"
 msgctxt "PaletteSelector|"
 msgid "Palettes"
 msgstr "Paletler"
@@ -27176,31 +27200,6 @@ msgstr "Çıkarma tablosu"
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In a vertical subtraction, numbers are written one below the other. They "
-#| "need to be lined-up properly, starting from the column on the right-hand "
-#| "side. The top number is called the minuend: it is the amount that we are "
-#| "starting with, that another number is being subtracted from to get the "
-#| "difference. The number below is called the subtrahend: it is the amount "
-#| "to substract from the minuend to get the difference. The result is "
-#| "written on the bottom line. To solve the subtraction, start by "
-#| "subtracting the bottom number of the first column from the top number of "
-#| "the first column (on the right-hand side), and write the result on the "
-#| "bottom line of the same column. If the top number is smaller than the "
-#| "bottom number, you can borrow from the minuend on the next column: for "
-#| "example, if you add 10 units to the top number, you need to remove one "
-#| "unit from the top number of the next column. This is called the borrowing "
-#| "by regrouping method. To do that in this activity, click on the empty "
-#| "rectangle on the left of the top number, select 1, and on the next column "
-#| "click on the empty rectangle on the right of the top number and select "
-#| "-1. Then write the result of the column on the bottom line, and do the "
-#| "same on the next columns until the operation is finished. Once you have "
-#| "found the result, click on the OK button to validate your answer. In some "
-#| "levels, you will be need to write the given operation before solving it; "
-#| "in this case, click on the Ready button when the operation is written "
-#| "correctly and then solve it."
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -27333,20 +27332,14 @@ msgid "Solve: %1"
 msgstr "Çöz: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:99
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own addition and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own addition and solve it."
-msgstr "Kendi toplamanı yaz ve yap."
+msgstr "Kendi toplamanı yaz ve onu yap."
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:100
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own subtraction and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own subtraction and solve it."
-msgstr "Kendi çıkarmanı yaz ve yap."
+msgstr "Kendi çıkarmanı yaz ve onu yap."
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:426
 msgctxt "VerticalSubtraction|"
@@ -27356,7 +27349,7 @@ msgstr "Hazır"
 #: activities/vertical_subtraction/VerticalSubtraction.qml:464
 msgctxt "VerticalSubtraction|"
 msgid "The result should not be a negative number."
-msgstr ""
+msgstr "Sonuç negatif bir sayı olmamalı."
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
@@ -27374,31 +27367,6 @@ msgstr "Dengeleme yöntemi ile dikey çıkarmaları yapmayı öğren."
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In a vertical subtraction, numbers are written one below the other. They "
-#| "need to be lined-up properly, starting from the column on the right-hand "
-#| "side. The top number is called the minuend: it is the amount that we are "
-#| "starting with, that another number is being subtracted from to get the "
-#| "difference. The number below is called the subtrahend: it is the amount "
-#| "to substract from the minuend to get the difference. The result is "
-#| "written on the bottom line. To solve the subtraction, start by "
-#| "subtracting the bottom number of the first column from the top number of "
-#| "the first column (on the right-hand side), and write the result on the "
-#| "bottom line of the same column. If the top number is smaller than the "
-#| "bottom number, you can borrow from the subtrahend on the next column: for "
-#| "example, if you add 10 units to the top number, you need to add one unit "
-#| "to the bottom number of the next column. This is called the borrowing by "
-#| "compensation method. To do that in this activity, click on the empty "
-#| "rectangle on the left of the top number, select 1, and on the next column "
-#| "click on the empty rectangle on the right of the bottom number and select "
-#| "+1. Then write the result of the column on the bottom line, and do the "
-#| "same on the next columns until the operation is finished. Once you have "
-#| "found the result, click on the OK button to validate your answer. In some "
-#| "levels, you will be need to write the given operation before solving it; "
-#| "in this case, click on the Ready button when the operation is written "
-#| "correctly and then solve it."
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -27606,21 +27574,15 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Sözcüğün tamamını yere düşmeden önce yaz."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Kannada and Tamil"
-msgstr "Letonca çeviri eklendi"
+msgstr "Kannada ve Tamil çevirileri eklendi"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgctxt "ChangeLog|"
 msgid "New command-line option to set the locale (--locale locale)"
 msgstr ""
-"Sunucuyu değiştirmek için yeni komut satırı seçeneği (--renderer sunucu)"
+"Yerel ayarı değiştirmek için yeni komut satırı seçeneği (--locale yerel ayar)"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
@@ -27628,6 +27590,8 @@ msgid ""
 "New command-line option to show/hide the Home button (--hide-home-button/--"
 "show-home-button)"
 msgstr ""
+"Ana Sayfa düğmesini göstermek/gizlemek için yeni komut satırı seçeneği (--"
+"hide-home-button/--show-home-button)"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:39 core/ChangeLog.qml:45
 #: core/ChangeLog.qml:54 core/ChangeLog.qml:60 core/ChangeLog.qml:65
@@ -28384,12 +28348,9 @@ msgid "No data found for %1."
 msgstr "%1 için veri bulunamadı."
 
 #: core/GCCreationHandler.qml:185
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr "%1 başarıyla silindi!"
+msgstr "Dosya başarıyla silindi!"
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -28398,12 +28359,9 @@ msgid "OK"
 msgstr "Tamam"
 
 #: core/GCCreationHandler.qml:193
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
-msgstr "%1 silinemiyor!"
+msgstr "Dosya silinemiyor!"
 
 #: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
@@ -28458,7 +28416,7 @@ msgstr "Sil"
 #: core/GCCreationHandler.qml:429
 msgctxt "GCCreationHandler|"
 msgid "Open folder"
-msgstr ""
+msgstr "Klasör aç"
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
@@ -28585,22 +28543,19 @@ msgstr ""
 "seçeneği kullanldığında kullanılır."
 
 #: core/main.cpp:146
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid "Specify the activity when starting GCompris."
 msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
-msgstr "GCompris’i başlatırken etkinliği belirt."
+msgstr "GCompris’i başlatırken kullanılacak yerel ayarı belirt."
 
 #: core/main.cpp:150
 msgctxt "QObject|"
 msgid "Hide the Home button in the bar."
-msgstr ""
+msgstr "Çubuktaki ana sayfa düğmesini gizle."
 
 #: core/main.cpp:154
 msgctxt "QObject|"
 msgid "Show the Home button in the bar (default)."
-msgstr ""
+msgstr "Çubuktaki ana sayfa düğmesini göster."
 
 #: core/main.qml:238
 msgctxt "main|"
@@ -28692,47 +28647,36 @@ msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris güncellendi! İşte yeniliklerin bir listesi: <br/>"
 
 #: core/main.qml:509
-#, fuzzy, qt-format
-#| msgctxt "Sketch|"
-#| msgid "Do you want to erase this image?"
+#, qt-format
 msgctxt "main|"
 msgid "Do you want to connect to server %1?"
-msgstr "Bu görseli silmek mi istiyorsun?"
+msgstr "%1 sunucusuna bağlanmak istiyor musun?"
 
 #: core/main.qml:530
 #, qt-format
 msgctxt "main|"
 msgid "Password rejected by server %1"
-msgstr ""
+msgstr "Parola %1 sunucusu tarafından reddedildi."
 
 #: core/main.qml:531 core/main.qml:550 core/main.qml:625
-#, fuzzy
-#| msgctxt "Balancebox|"
-#| msgid "OK"
 msgctxt "main|"
 msgid "OK"
 msgstr "Tamam"
 
 #: core/main.qml:546
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "main|"
 msgid "Select your username"
-msgstr "Kip seç"
+msgstr "Kullanıcı adını seç seç"
 
 #: core/main.qml:556
 msgctxt "main|"
 msgid "Please select your username in the list or cancel."
-msgstr ""
+msgstr "Listeden kullanıcı adını seç veya iptal et."
 
 #: core/main.qml:623
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "main|"
 msgid "Enter your password"
-msgstr "Giriş: Yanıtını doğrula"
+msgstr "Parolanı gir"
 
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"
@@ -28759,26 +28703,29 @@ msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Başlat"
 
-#, fuzzy
-#~| msgctxt "Data|"
-#~| msgid "Find the next number."
 #~ msgctxt "Data|"
 #~ msgid "Find the correct answer."
-#~ msgstr "Sonraki sayıyı bul."
+#~ msgstr "Doğru yanıtı bul."
 
-#, fuzzy
-#~| msgctxt "GraduatedLineRead|"
-#~| msgid "Find the requested number."
 #~ msgctxt "Data|"
 #~ msgid "What is the first number?"
-#~ msgstr "İstenen sayıyı bul."
+#~ msgstr "İlk sayı ne?"
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Practice the addition of numbers."
+#~ msgctxt "Data|"
+#~ msgid "What is a color?"
+#~ msgstr "Renk nedir?"
+
 #~ msgctxt "Data|"
 #~ msgid "What are the first two numbers?"
-#~ msgstr "Toplama işlemi üzerine alıştırma yap."
+#~ msgstr "İlk iki sayı ne?"
+
+#~ msgctxt "Data|"
+#~ msgid "What are animals?"
+#~ msgstr "Hayvan nedir?"
+
+#~ msgctxt "Data|"
+#~ msgid "Answers always in order, select the first one"
+#~ msgstr "Her zaman sıralı olarak yanıtla, ilkini seç"
 
 #~ msgctxt "Data|"
 #~ msgid "Find the previous number."
@@ -28787,6 +28734,75 @@ msgstr "Başlat"
 #~ msgctxt "Data|"
 #~ msgid "Find the in-between number."
 #~ msgstr "Arasındaki sayıyı bul."
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid ""
+#~| "Select tools and colors from the foldable panels and draw images.<br><br>"
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Select wheel, gear, pen's position and color from the foldable panels and "
+#~ "start the gear.<br><br>"
+#~ msgstr ""
+#~ "Katlanabilir panellerden araçlar ve renkler seç ve görseller çiz.<br><br>"
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Ctrl + S: save the image"
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Ctrl + D: save the drawing"
+#~ msgstr "Kontrol + S: Görseli kaydet"
+
+#, fuzzy
+#~| msgctxt "FilesPanel|"
+#~| msgid "Save your image"
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Save vector image (SVG)"
+#~ msgstr "Görselini kaydet"
+
+# Ozge <ozgebarbaros@gmail.com>.
+# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025 Emir SARI <emir_sari@icloud.com>
+# Volkan Gezer <volkangezer@gmail.com>, 2017, 2021.
+# Filiz Alver <filizalvr@gmail.com>, 2019, 2020.
+#, fuzzy
+#~| msgid ""
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ msgstr ""
+#~ "Project-Id-Version: \n"
+#~ "POT-Creation-Date: \n"
+#~ "PO-Revision-Date: 2025-12-01 10:55+0300\n"
+#~ "Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
+#~ "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
+#~ "Language: tr\n"
+#~ "MIME-Version: 1.0\n"
+#~ "Content-Type: text/plain; charset=UTF-8\n"
+#~ "Content-Transfer-Encoding: 8bit\n"
+#~ "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+#~ "X-Generator: Lokalize 25.08.2\n"
+#~ "X-Qt-Contexts: true\n"
+
+#, fuzzy
+#~| msgctxt "category_colors|"
+#~| msgid "Colors"
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Color"
+#~ msgstr "Renkler"
+
+#, fuzzy
+#~| msgctxt "board9_0|"
+#~| msgid "Districto Federal"
+#~ msgctxt "DrawingWheels|"
+#~ msgid "Distance to center"
+#~ msgstr "Districto Federal"
+
+#~ msgctxt "ColorsPanel|"
+#~ msgid "Palettes"
+#~ msgstr "Paletler"
+
+#~ msgctxt "Frieze|"
+#~ msgid "What is the binary representation of %1?"
+#~ msgstr "%1 ikili sistemde nasıl gösterilir?"
 
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Grammatical analysis"
@@ -28807,7 +28823,3 @@ msgstr "Başlat"
 #~ msgctxt "grammar_analysis|"
 #~ msgid "Leave the box blank if no class matches."
 #~ msgstr "Eşleşen sınıf yoksa kutuyu boş bırak."
-
-#~ msgctxt "Frieze|"
-#~ msgid "What is the binary representation of %1?"
-#~ msgstr "%1 ikili sistemde nasıl gösterilir?"

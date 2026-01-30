@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_teachers\n"
-"PO-Revision-Date: 2026-01-10 16:15+0100\n"
+"PO-Revision-Date: 2026-01-26 19:48+0100\n"
 "Last-Translator: Alexander Becker <alex-at-kde-l10n-de@freenet.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -22,7 +22,7 @@ msgstr ""
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:13
 msgctxt "ActivityEditor|"
 msgid "Rules to create a valid dataset:"
-msgstr ""
+msgstr "Regeln zur Erstellung eines gültigen Datensatzes:"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
@@ -31,6 +31,10 @@ msgid ""
 "minimum between the \"Sublevels\" value and the result of: (\"Maximum start "
 "number\" - \"Minimum start number\") / \"Step between numbers\" + 1."
 msgstr ""
+"Wenn „Zufällige Anfangszahlen“ aktiviert ist, ist die Anzahl der Unterstufen "
+"entweder der „Unterstufen“-Wert oder das Ergebnis der folgenden Rechnung: "
+"(„Maximale Anfangszahl“ − „Minimale Anfangszahl“) ÷ „Abstand zwischen "
+"Zahlen“ + 1. Der kleinere Wert wird verwendet."
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
@@ -39,6 +43,9 @@ msgid ""
 "contain only numbers, and each of them will be used as start number for a "
 "sublevel."
 msgstr ""
+"Wenn „Zufällige Anfangszahlen“ nicht aktiviert ist, darf die „Anfangszahlen“-"
+"Liste nur Zahlen enthalten. Jede davon wird als Anfangszahl für eine "
+"Unterstufe verwendet."
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:19
 msgctxt "ActivityEditor|"
@@ -49,11 +56,17 @@ msgid ""
 "1. Also, the length of the list can not be greater than \"Sequence length\" "
 "- 2, to always have at least 2 visible numbers in the sequence."
 msgstr ""
+"„Position der fehlenden Zahlen“ muss eine Liste der Indizes der zu suchenden "
+"Zahlen enthalten. Indexzahlen beginnen bei 0, dabei zeigt die Indexzahl 0 "
+"auf das erste Element in der Folge. Die Indexzahl darf nicht größer als "
+"„Länger der Folge“ − 1 sein. Außerdem darf die Länge der „Position der "
+"fehlenden Zahlen“-Liste nicht größer als „Länger der Folge“ − 2 sein, damit "
+"die Folge mindestens 2 sichtbare Zahlen enthält."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:36
 msgctxt "AdjacentNumbersDataDisplay|"
 msgid "Tiles:"
-msgstr ""
+msgstr "Kacheln:"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:60
 msgctxt "AdjacentNumbersDataDisplay|"
@@ -63,47 +76,47 @@ msgstr "Antwort:"
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:28
 msgctxt "AdjacentNumbersEditor|"
 msgid "Random start numbers"
-msgstr ""
+msgstr "Zufällige Anfangszahlen"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:29
 msgctxt "AdjacentNumbersEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Unterstufen"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:30
 msgctxt "AdjacentNumbersEditor|"
 msgid "Start numbers"
-msgstr ""
+msgstr "Anfangszahlen"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:31
 msgctxt "AdjacentNumbersEditor|"
 msgid "Minimum start number"
-msgstr ""
+msgstr "Minimale Anfangszahl"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:32
 msgctxt "AdjacentNumbersEditor|"
 msgid "Maximum start number"
-msgstr ""
+msgstr "Maximale Anfangszahl"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:33
 msgctxt "AdjacentNumbersEditor|"
 msgid "Step between numbers"
-msgstr ""
+msgstr "Abstand zwischen Zahlen"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:34
 msgctxt "AdjacentNumbersEditor|"
 msgid "Sequence length"
-msgstr ""
+msgstr "Länge der Folge"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:35
 msgctxt "AdjacentNumbersEditor|"
 msgid "Position of missing numbers"
-msgstr ""
+msgstr "Position der fehlenden Zahlen"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:36
 msgctxt "AdjacentNumbersEditor|"
 msgid "Proposed numbers"
-msgstr ""
+msgstr "Vorgeschlagene Zahlen"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:98
 msgctxt "AdjacentNumbersEditor|"
@@ -113,23 +126,25 @@ msgstr "Datensatz ist leer."
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:100
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Start numbers\" must contain only numbers, and not be empty."
-msgstr ""
+msgstr "„Anfangszahlen“ darf nicht leer sein und darf nur Zahlen enthalten."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:102
 msgctxt "AdjacentNumbersEditor|"
 msgid ""
 "\"Position of missing numbers\" must contain only numbers, and not be empty."
 msgstr ""
+"„Position der fehlenden Zahlen“ darf nicht leer sein und darf nur Zahlen "
+"enthalten."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:104
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Position of missing numbers\" contains too much numbers."
-msgstr ""
+msgstr "„Position der fehlenden Zahlen“ enthält zu viele Zahlen."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:106
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Position of missing numbers\" contains invalid numbers."
-msgstr ""
+msgstr "„Position der fehlenden Zahlen“ enthält ungültige Zahlen."
 
 #: server/activities/algebra_by/AlgebraDataDisplay.qml:19
 msgctxt "AlgebraDataDisplay|"
@@ -141,7 +156,7 @@ msgstr "Zeitüberschreitung"
 #, qt-format
 msgctxt "AlgebraDataDisplay|"
 msgid "%1 = %2"
-msgstr ""
+msgstr "%1 = %2"
 
 #. %1 is the answer. Example: "Answer: 10"
 #: server/activities/algebra_by/AlgebraDataDisplay.qml:24
@@ -153,7 +168,7 @@ msgstr "Antwort: %1"
 #: server/activities/algebra_by/AlgebraEditor.qml:25
 msgctxt "AlgebraEditor|"
 msgid "Rules to create a valid dataset:"
-msgstr ""
+msgstr "Regeln zur Erstellung eines gültigen Datensatzes:"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:27
 msgctxt "AlgebraEditor|"
@@ -163,6 +178,11 @@ msgid ""
 "be large enough to generate enough questions for the given number of "
 "sublevels using the minimum and maximum operand values."
 msgstr ""
+"„Ergebnisgrenzwert“ größer 0 definiert das erlaubte Maximum für das Ergebnis "
+"jeder Operation, wenn „Zufällige Operanden“ aktiviert ist. "
+"„Ergebnisgrenzwert“ muss groß genug gewählt werden, damit genug Fragen für "
+"die gegebene Anzahl von Unterstufen und unter Verwendung des minimalen und "
+"maximalen Werts von Operanden erzeugt werden können."
 
 #: server/activities/algebra_by/AlgebraEditor.qml:29
 msgctxt "AlgebraEditor|"
@@ -170,47 +190,49 @@ msgid ""
 "If \"Random operands\" is not selected, the sublevel list on the right side "
 "must not be empty."
 msgstr ""
+"Wenn „Zufällige Operanden“ nicht aktiviert ist, darf die Unterstufenliste "
+"auf der rechten Seite nicht leer sein."
 
 #: server/activities/algebra_by/AlgebraEditor.qml:33
 msgctxt "AlgebraEditor|"
 msgid "Random operands"
-msgstr ""
+msgstr "Zufällige Operanden"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:34
 #: server/activities/algebra_by/AlgebraEditor.qml:39
 msgctxt "AlgebraEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Unterstufen"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:35
 msgctxt "AlgebraEditor|"
 msgid "Minimum operand value"
-msgstr ""
+msgstr "Minimaler Wert des Operanden"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:36
 msgctxt "AlgebraEditor|"
 msgid "Maximum operand value"
-msgstr ""
+msgstr "Maximaler Wert des Operanden"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:37
 msgctxt "AlgebraEditor|"
 msgid "Result value limit"
-msgstr ""
+msgstr "Ergebnisgrenzwert"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:38
 msgctxt "AlgebraEditor|"
 msgid "Shuffle"
-msgstr ""
+msgstr "Mischen"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:44
 msgctxt "AlgebraEditor|"
 msgid "First operand"
-msgstr ""
+msgstr "Erster Operand"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:45
 msgctxt "AlgebraEditor|"
 msgid "Second operand"
-msgstr ""
+msgstr "Zweiter Operand"
 
 #: server/activities/algebra_div/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
@@ -220,6 +242,10 @@ msgid ""
 "multiplying the right side operand by another number between minimum and "
 "maximum values."
 msgstr ""
+"Wenn „Zufällige Operanden“ aktiviert ist, liegt der rechte Operand immer "
+"zwischen dem minimalen und maximalen Wert. Der linke Operand wird durch "
+"Multiplikation des rechten Operanden mit einer Zahl berechnet, die zwischen "
+"dem Minimum und Maximum liegt."
 
 #: server/activities/algebra_div/ActivityEditor.qml:18
 msgctxt "ActivityEditor|"
@@ -227,47 +253,50 @@ msgid ""
 "If \"Random operands\" is not selected, for each sublevel you must make sure "
 "that the \"First operand\" is a multiple of the \"Second operand\"."
 msgstr ""
+"Wenn „Zufällige Operanden“ nicht aktiviert ist, müssen Sie für jede "
+"Unterstufe sicherstellen, dass „Erster Operand“ ein Vielfaches des „Zweiter "
+"Operand“-Eintrags ist."
 
 #: server/activities/algebra_div/ActivityEditor.qml:23
 msgctxt "ActivityEditor|"
 msgid "Random operands"
-msgstr ""
+msgstr "Zufällige Operanden"
 
 #: server/activities/algebra_div/ActivityEditor.qml:24
 #: server/activities/algebra_div/ActivityEditor.qml:29
 msgctxt "ActivityEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Unterstufen"
 
 #: server/activities/algebra_div/ActivityEditor.qml:25
 msgctxt "ActivityEditor|"
 msgid "Minimum operand value"
-msgstr ""
+msgstr "Minimaler Wert des Operanden"
 
 #: server/activities/algebra_div/ActivityEditor.qml:26
 msgctxt "ActivityEditor|"
 msgid "Maximum operand value"
-msgstr ""
+msgstr "Maximaler Wert des Operanden"
 
 #: server/activities/algebra_div/ActivityEditor.qml:27
 msgctxt "ActivityEditor|"
 msgid "Result value limit"
-msgstr ""
+msgstr "Ergebnisgrenzwert"
 
 #: server/activities/algebra_div/ActivityEditor.qml:28
 msgctxt "ActivityEditor|"
 msgid "Shuffle"
-msgstr ""
+msgstr "Mischen"
 
 #: server/activities/algebra_div/ActivityEditor.qml:34
 msgctxt "ActivityEditor|"
 msgid "First operand"
-msgstr ""
+msgstr "Erster Operand"
 
 #: server/activities/algebra_div/ActivityEditor.qml:35
 msgctxt "ActivityEditor|"
 msgid "Second operand"
-msgstr ""
+msgstr "Zweiter Operand"
 
 #: server/activities/algebra_minus/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
@@ -275,6 +304,9 @@ msgid ""
 "If \"Random operands\" is not selected, for each sublevel you must make sure "
 "that the \"First operand\" is greater than the \"Second operand\"."
 msgstr ""
+"Wenn „Zufällige Operanden“ nicht aktiviert ist, müssen Sie für jede "
+"Unterstufe sicherstellen, dass „Erster Operand“ größer als „Zweiter Operand“ "
+"ist."
 
 #: server/activities/binary_bulb/ActivityEditor.qml:14
 msgctxt "ActivityEditor|"
@@ -283,6 +315,10 @@ msgid ""
 "list of integer numbers. Each number must be between 0 and the maximum "
 "number which can be represented with the given \"Bulb count\"."
 msgstr ""
+"Wenn „Zufallszahlen“ nicht aktiviert ist, muss „Zu suchende Zahlen“ eine "
+"Liste der Ganzzahlen enthalten. Jede Zahl muss zwischen 0 und dem Maximum "
+"liegen. Das Maximum kann durch die gegebene „Lampenanzahl“ repräsentiert "
+"werden."
 
 #: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:28
 msgctxt "BinaryBulbDataDisplay|"
@@ -300,42 +336,42 @@ msgstr "Antwort:"
 #, qt-format
 msgctxt "BinaryBulbDataDisplay|"
 msgid "%1 (%2)"
-msgstr ""
+msgstr "%1 (%2)"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:28
 msgctxt "BinaryBulbEditor|"
 msgid "Random numbers"
-msgstr ""
+msgstr "Zufallszahlen"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:29
 msgctxt "BinaryBulbEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Unterstufen"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:30
 msgctxt "BinaryBulbEditor|"
 msgid "Numbers to find"
-msgstr ""
+msgstr "Zu suchende Zahlen"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:31
 msgctxt "BinaryBulbEditor|"
 msgid "Shuffle questions"
-msgstr ""
+msgstr "Fragen mischen"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:32
 msgctxt "BinaryBulbEditor|"
 msgid "Bulb count"
-msgstr ""
+msgstr "Lampenanzahl"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:33
 msgctxt "BinaryBulbEditor|"
 msgid "Display the current result"
-msgstr ""
+msgstr "Das aktuelle Ergebnis anzeigen"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:34
 msgctxt "BinaryBulbEditor|"
 msgid "Display the bulb values"
-msgstr ""
+msgstr "Die Lampenwerte anzeigen"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:87
 msgctxt "BinaryBulbEditor|"
@@ -346,7 +382,7 @@ msgstr "Datensatz ist leer."
 #, qt-format
 msgctxt "BinaryBulbEditor|"
 msgid "\"Numbers to find\" for level %1 must not be empty."
-msgstr ""
+msgstr "„Zu suchende Zahlen“ für Stufe %1 darf nicht leer sein."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:115
 #, qt-format
@@ -355,12 +391,14 @@ msgid ""
 "These values are invalid for level %1: %2. The values must be integer "
 "numbers between 0 and %3."
 msgstr ""
+"Diese Werte sind für Stufe %1 ungültig: %2. Die Werte müssen Ganzzahlen "
+"zwischen 0 und %3 sein."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:119
 #, qt-format
 msgctxt "BinaryBulbEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Folgende Fehler müssen behoben werden:<ul>%1</ul>"
 
 #: server/activities/clockgame/ClockGameDataDisplay.qml:30
 msgctxt "ClockGameDataDisplay|"
@@ -375,47 +413,48 @@ msgstr "Antwort:"
 #: server/activities/clockgame/ClockgameEditor.qml:27
 msgctxt "ClockgameEditor|"
 msgid "Exercise count"
-msgstr ""
+msgstr "Übungsanzahl"
 
 #: server/activities/clockgame/ClockgameEditor.qml:28
 msgctxt "ClockgameEditor|"
 msgid "Find minutes"
-msgstr ""
+msgstr "Finde Minuten"
 
 #: server/activities/clockgame/ClockgameEditor.qml:29
 msgctxt "ClockgameEditor|"
 msgid "Find seconds"
-msgstr ""
+msgstr "Finde Sekunden"
 
 #: server/activities/clockgame/ClockgameEditor.qml:30
 msgctxt "ClockgameEditor|"
 msgid "Display hours numbers"
-msgstr ""
+msgstr "Stundenzahlen anzeigen"
 
 #: server/activities/clockgame/ClockgameEditor.qml:31
 msgctxt "ClockgameEditor|"
 msgid "Display hours marks"
-msgstr ""
+msgstr "Stundenmarkierungen anzeigen"
 
 #: server/activities/clockgame/ClockgameEditor.qml:32
 msgctxt "ClockgameEditor|"
 msgid "Grey/white background between each hour"
-msgstr ""
+msgstr "Grauer/weißer Hintergrund zwischen jeder Stunde"
 
 #: server/activities/clockgame/ClockgameEditor.qml:33
 msgctxt "ClockgameEditor|"
 msgid "Display minutes numbers"
-msgstr ""
+msgstr "Minutenzahlen anzeigen"
 
 #: server/activities/clockgame/ClockgameEditor.qml:34
 msgctxt "ClockgameEditor|"
 msgid "Hide the Hint button in the bar (which gives the current time)"
 msgstr ""
+"Den Tipp-Knopf in der Leiste, der die aktuelle Zeit anzeigt, ausblenden"
 
 #: server/activities/clockgame/ClockgameEditor.qml:35
 msgctxt "ClockgameEditor|"
 msgid "Fixed hour"
-msgstr ""
+msgstr "Feste Stunden"
 
 #: server/activities/clockgame/ClockgameEditor.qml:36
 #: server/activities/clockgame/ClockgameEditor.qml:38
@@ -427,12 +466,12 @@ msgstr "Wert"
 #: server/activities/clockgame/ClockgameEditor.qml:37
 msgctxt "ClockgameEditor|"
 msgid "Fixed minutes"
-msgstr ""
+msgstr "Feste Minuten"
 
 #: server/activities/clockgame/ClockgameEditor.qml:39
 msgctxt "ClockgameEditor|"
 msgid "Fixed seconds"
-msgstr ""
+msgstr "Feste Sekunden"
 
 #: server/activities/comparator/ComparatorDataDisplay.qml:30
 msgctxt "ComparatorDataDisplay|"
@@ -442,7 +481,7 @@ msgstr "Ergebnis:"
 #: server/activities/comparator/ComparatorEditor.qml:29
 msgctxt "ComparatorEditor|"
 msgid "Shuffle"
-msgstr ""
+msgstr "Mischen"
 
 #: server/activities/comparator/ComparatorEditor.qml:30
 msgctxt "ComparatorEditor|"
@@ -452,12 +491,12 @@ msgstr "Fragen"
 #: server/activities/comparator/ComparatorEditor.qml:36
 msgctxt "ComparatorEditor|"
 msgid "Left number"
-msgstr ""
+msgstr "Linke Zahl"
 
 #: server/activities/comparator/ComparatorEditor.qml:37
 msgctxt "ComparatorEditor|"
 msgid "Right number"
-msgstr ""
+msgstr "Rechte Zahl"
 
 #: server/activities/comparator/ComparatorEditor.qml:109
 msgctxt "ComparatorEditor|"
@@ -468,25 +507,25 @@ msgstr "Datensatz ist leer."
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "Level %1 must not be empty."
-msgstr ""
+msgstr "Stufe %1 darf nicht leer sein."
 
 #: server/activities/comparator/ComparatorEditor.qml:126
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "\"Left number\" in Question %1 of Level %2 must contain a number."
-msgstr ""
+msgstr "„Linke Zahl“ in Frage %1 der Stufe %2 muss eine Zahl enthalten."
 
 #: server/activities/comparator/ComparatorEditor.qml:130
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "\"Right number\" in Question %1 of Level %2 must contain a number."
-msgstr ""
+msgstr "„Rechte Zahl“ in Frage %1 der Stufe %2 muss eine Zahl enthalten."
 
 #: server/activities/comparator/ComparatorEditor.qml:136
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Folgende Fehler müssen behoben werden:<ul>%1</ul>"
 
 #: server/activities/DailyReport.qml:33
 msgctxt "DailyReport|"
@@ -498,7 +537,7 @@ msgstr "Alle Gruppen"
 #, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %2"
-msgstr ""
+msgstr "%1 %2"
 
 #: server/activities/DailyReport.qml:133
 msgctxt "DailyReport|"
@@ -518,47 +557,48 @@ msgstr "Zeit"
 #: server/activities/DailyReport.qml:202
 msgctxt "DailyReport|"
 msgid "Ratio"
-msgstr ""
+msgstr "Quote"
 
 #. Number of result lines
 #: server/activities/DailyReport.qml:213
 #, qt-format
 msgctxt "DailyReport|"
 msgid "Lines: %1"
-msgstr ""
+msgstr "Zeilen: %1"
 
 #. Success ratio, example: "50 %"
 #: server/activities/DailyReport.qml:313
 #, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %"
-msgstr ""
+msgstr "%1 %"
 
 #: server/activities/fractions_create/ActivityEditor.qml:14
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Instruction\" must contain some text telling the fraction to represent."
 msgstr ""
+"„Anweisung“ muss textuell beschreiben, welcher Bruch dargestellt werden soll."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:29
 msgctxt "FractionsCreateEditor|"
 msgid "Shuffle"
-msgstr ""
+msgstr "Mischen"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:30
 msgctxt "FractionsCreateEditor|"
 msgid "Questions"
-msgstr ""
+msgstr "Fragen"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:36
 msgctxt "FractionsCreateEditor|"
 msgid "Numerator"
-msgstr ""
+msgstr "Zähler"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:37
 msgctxt "FractionsCreateEditor|"
 msgid "Denominator"
-msgstr ""
+msgstr "Nenner"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:38
 msgctxt "FractionsCreateEditor|"
@@ -574,19 +614,19 @@ msgstr "Datensatz ist leer."
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "Level %1 must not be empty."
-msgstr ""
+msgstr "Stufe %1 darf nicht leer sein."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:146
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "\"Instruction\" of Question %1 from Level %2 must not be empty."
-msgstr ""
+msgstr "„Anweisung“ zur Frage %1 der Stufe %2 darf nicht leer sein."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:152
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Folgende Fehler müssen behoben werden:<ul>%1</ul>"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:160
 msgctxt "FractionsCreateEditor|"
@@ -616,7 +656,7 @@ msgstr "Antwort:"
 #: server/activities/fractions_find/FractionsFindEditor.qml:29
 msgctxt "FractionsFindEditor|"
 msgid "Shuffle"
-msgstr ""
+msgstr "Mischen"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:30
 msgctxt "FractionsFindEditor|"
@@ -626,32 +666,32 @@ msgstr "Fragen"
 #: server/activities/fractions_find/FractionsFindEditor.qml:36
 msgctxt "FractionsFindEditor|"
 msgid "Static numerator"
-msgstr ""
+msgstr "Fester Zähler"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:37
 msgctxt "FractionsFindEditor|"
 msgid "Static denominator"
-msgstr ""
+msgstr "Fester Nenner"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:38
 msgctxt "FractionsFindEditor|"
 msgid "Numerator"
-msgstr ""
+msgstr "Zähler"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:39
 msgctxt "FractionsFindEditor|"
 msgid "Denominator"
-msgstr ""
+msgstr "Nenner"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:40
 msgctxt "FractionsFindEditor|"
 msgid "Maximum of units"
-msgstr ""
+msgstr "Maximale Elementanzahl"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:41
 msgctxt "FractionsFindEditor|"
 msgid "Random fraction"
-msgstr ""
+msgstr "Zufallsbrüche"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:159
 msgctxt "FractionsFindEditor|"
@@ -662,13 +702,13 @@ msgstr "Datensatz ist leer."
 #, qt-format
 msgctxt "FractionsFindEditor|"
 msgid "Level %1 must not be empty."
-msgstr ""
+msgstr "Stufe %1 darf nicht leer sein."
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:173
 #, qt-format
 msgctxt "FractionsFindEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Folgende Fehler müssen behoben werden:<ul>%1</ul>"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:181
 msgctxt "FractionsFindEditor|"
@@ -698,6 +738,8 @@ msgid ""
 "\"Additions\" must contain a list of additions which results are between 0 "
 "and 9."
 msgstr ""
+"„Additionen“ muss eine Liste von Additionen mit Ergebnissen zwischen 0 und 9 "
+"enthalten."
 
 #: server/activities/learn_additions/ActivityEditor.qml:18
 #: server/activities/learn_subtractions/ActivityEditor.qml:18
@@ -705,21 +747,22 @@ msgctxt "ActivityEditor|"
 msgid ""
 "\"Number of circles\" can not be smaller than the largest result to find."
 msgstr ""
+"„Kreisanzahl“ darf nicht kleiner als das größte zu bestimmende Ergebnis sein."
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:28
 msgctxt "LearnDecimalsEditor|"
 msgid "Shuffle"
-msgstr ""
+msgstr "Mischen"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:29
 msgctxt "LearnDecimalsEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Unterstufen"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:39
 msgctxt "LearnDecimalsEditor|"
 msgid "Fixed Number"
-msgstr ""
+msgstr "Feste Zahl"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:40
 msgctxt "LearnDecimalsEditor|"
@@ -740,13 +783,13 @@ msgstr "Datensatz ist leer."
 #, qt-format
 msgctxt "LearnDecimalsEditor|"
 msgid "Level %1 must not be empty."
-msgstr ""
+msgstr "Stufe %1 darf nicht leer sein."
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:154
 #, qt-format
 msgctxt "LearnDecimalsEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Folgende Fehler müssen behoben werden:<ul>%1</ul>"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:162
 msgctxt "LearnDecimalsEditor|"
@@ -766,12 +809,12 @@ msgstr "Modus"
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:29
 msgctxt "DecimalAdditionEditor|"
 msgid "Shuffle"
-msgstr ""
+msgstr "Mischen"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:30
 msgctxt "DecimalAdditionEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Unterstufen"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:41
 msgctxt "DecimalAdditionEditor|"
@@ -802,13 +845,13 @@ msgstr "Datensatz ist leer."
 #, qt-format
 msgctxt "DecimalAdditionEditor|"
 msgid "Level %1 must not be empty."
-msgstr ""
+msgstr "Stufe %1 darf nicht leer sein."
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:196
 #, qt-format
 msgctxt "DecimalAdditionEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Folgende Fehler müssen behoben werden:<ul>%1</ul>"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:204
 msgctxt "DecimalAdditionEditor|"
@@ -828,32 +871,33 @@ msgstr "Modus"
 #: server/activities/learn_digits/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
 msgid "\"Numbers\" must contain a list of numbers between 0 and 9."
-msgstr ""
+msgstr "„Zahlen“ muss eine Liste von Zahlen zwischen 0 und 9 enthalten."
 
 #: server/activities/learn_digits/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Number of circles\" can not be smaller than the largest number to find."
 msgstr ""
+"„Kreisanzahl“ darf nicht kleiner als die größte zu bestimmende Zahl sein."
 
 #. %1 is an operation, %2 the result. Example: "2 x 5 = 10"
 #: server/activities/learn_digits/LearnDigitsDataDisplay.qml:24
 #, qt-format
 msgctxt "LearnDigitsDataDisplay|"
 msgid "%1 = %2"
-msgstr ""
+msgstr "%1 = %2"
 
 #. %1 is the answer. Example: "Answer: 10"
 #: server/activities/learn_digits/LearnDigitsDataDisplay.qml:27
 #, qt-format
 msgctxt "LearnDigitsDataDisplay|"
 msgid "Answer: %1"
-msgstr ""
+msgstr "Antwort: %1"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:32
 msgctxt "LearnDigitsEditor|"
 msgid "Number of circles"
-msgstr ""
+msgstr "Kreisanzahl"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:33
 msgctxt "LearnDigitsEditor|"
@@ -871,6 +915,8 @@ msgid ""
 "\"Numbers\" must only contain integer numbers between 0 and 9, and must not "
 "be empty."
 msgstr ""
+"„Zahlen“ darf nicht leer sein und darf nur Ganzzahlen zwischen 0 und 9 "
+"enthalten."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:103
 msgctxt "LearnDigitsEditor|"
@@ -878,6 +924,8 @@ msgid ""
 "\"Additions\" must only contain additions which results are integer numbers "
 "between 0 and 9, and must not be empty."
 msgstr ""
+"„Additionen“ darf nicht leer sein und darf nur Additionen mit ganzzahligen "
+"Ergebnissen zwischen 0 und 9 enthalten."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:105
 msgctxt "LearnDigitsEditor|"
@@ -885,6 +933,8 @@ msgid ""
 "\"Subtractions\" must only contain subtractions which results are integer "
 "numbers between 0 and 9, and must not be empty."
 msgstr ""
+"„Subtraktionen“ darf nicht leer sein und darf nur Subtraktionen mit "
+"ganzzahligen Ergebnissen zwischen 0 und 9 enthalten."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:161
 msgctxt "LearnDigitsEditor|"
@@ -894,17 +944,17 @@ msgstr "Zahlen"
 #: server/activities/learn_digits/LearnDigitsEditor.qml:163
 msgctxt "LearnDigitsEditor|"
 msgid "Additions"
-msgstr ""
+msgstr "Additionen"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:165
 msgctxt "LearnDigitsEditor|"
 msgid "Subtractions"
-msgstr ""
+msgstr "Subtraktionen"
 
 #: server/activities/learn_quantities/ActivityEditor.qml:24
 msgctxt "ActivityEditor|"
 msgid "Fixed Number"
-msgstr ""
+msgstr "Feste Zahl"
 
 #: server/activities/learn_quantities/ActivityEditor.qml:25
 msgctxt "ActivityEditor|"
@@ -922,6 +972,8 @@ msgid ""
 "\"Subtractions\" must contain a list of subtractions which results are "
 "between 0 and 9."
 msgstr ""
+"„Subtraktionen“ muss eine Liste von Subtraktionen mit Ergebnissen zwischen 0 "
+"und 9 enthalten."
 
 #: server/activities/LineReport.qml:65
 msgctxt "LineReport|"
@@ -937,13 +989,13 @@ msgstr "Aktualisieren"
 #, qt-format
 msgctxt "LineReport|"
 msgid "Lines: %1"
-msgstr ""
+msgstr "Zeilen: %1"
 
 #: server/activities/LineReport.qml:227
 #, qt-format
 msgctxt "LineReport|"
 msgid "Level: <b>%1</b>"
-msgstr ""
+msgstr "Stufe: <b>%1</b>"
 
 #. Result duration in seconds. Example: "Duration: 25s"
 #: server/activities/LineReport.qml:243 server/activities/LineReport.qml:253
@@ -958,6 +1010,8 @@ msgid ""
 "In \"Single answer\" mode, users can select only one answer. In \"Multiple "
 "answers\" mode, they can select multiple answers."
 msgstr ""
+"Im „Einzelantwort“-Modus können Benutzer nur eine Antwort auswählen. Im "
+"„Mehrfachantworten“-Modus können sie mehrere Antworten auswählen."
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
@@ -965,6 +1019,8 @@ msgid ""
 "All entries in the \"Correct answers\" list must also be present in the "
 "\"Answers\" list."
 msgstr ""
+"Alle Einträge in der „Richtige Antworten“-Liste müssen auch in der "
+"„Antworten“-Liste vorhanden sein."
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:19
 msgctxt "ActivityEditor|"
@@ -973,6 +1029,9 @@ msgid ""
 "displayed after users validate their answer. You can leave those empty if "
 "you want."
 msgstr ""
+"„Text zur richtigen Antwort“ und „Text zur falschen Antwort“ sind optionale "
+"Meldungen, die nach der Überprüfung der Antworten durch Benutzer angezeigt "
+"werden. Diese können auch leer gelassen werden."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:27
 msgctxt "MultipleChoiceDataDisplay|"
@@ -997,17 +1056,17 @@ msgstr "Vorgeschlagen:"
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:29
 msgctxt "MultipleChoiceEditor|"
 msgid "Shuffle"
-msgstr ""
+msgstr "Mischen"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:30
 msgctxt "MultipleChoiceEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Unterstufen"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:36
 msgctxt "MultipleChoiceEditor|"
 msgid "Shuffle answers"
-msgstr ""
+msgstr "Antworten mischen"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:37
 msgctxt "MultipleChoiceEditor|"
@@ -1027,12 +1086,12 @@ msgstr "Richtige Antworten"
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:40
 msgctxt "MultipleChoiceEditor|"
 msgid "Correct answer text"
-msgstr ""
+msgstr "Text zur richtigen Antwort"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:41
 msgctxt "MultipleChoiceEditor|"
 msgid "Wrong answer text"
-msgstr ""
+msgstr "Text zur falschen Antwort"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:121
 msgctxt "MultipleChoiceEditor|"
@@ -1043,25 +1102,26 @@ msgstr "Datensatz ist leer."
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "Level %1 must not be empty."
-msgstr ""
+msgstr "Stufe %1 darf nicht leer sein."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:138
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Question\" in Sublevel %1 of Level %2 must not be empty."
-msgstr ""
+msgstr "„Frage“ in Unterstufe %1 der Stufe %2 darf nicht leer sein."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:143
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Answers\" in Sublevel %1 of Level %2 must not be empty."
-msgstr ""
+msgstr "„Antworten“ in Unterstufe %1 der Stufe %2 darf nicht leer sein."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:148
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Correct answers\" in Sublevel %1 of Level %2 must not be empty."
 msgstr ""
+"„Richtige Antworten“ in Unterstufe %1 der Stufe %2 darf nicht leer sein."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:155
 #, qt-format
@@ -1070,22 +1130,24 @@ msgid ""
 "In Sublevel %1 of Level %2, the correct answer \"%3\" is not in the \"Answers"
 "\" list."
 msgstr ""
+"In Unterstufe %1 der Stufe %2 ist die richtige Antwort „%3“ nicht in der "
+"„Antworten“-Liste."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:163
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Folgende Fehler müssen behoben werden:<ul>%1</ul>"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:171
 msgctxt "MultipleChoiceEditor|"
 msgid "Single answer"
-msgstr ""
+msgstr "Einzelantwort"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:172
 msgctxt "MultipleChoiceEditor|"
 msgid "Multiple answers"
-msgstr ""
+msgstr "Mehrfachantworten"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:177
 msgctxt "MultipleChoiceEditor|"
@@ -1095,7 +1157,7 @@ msgstr "Modus"
 #: server/activities/vertical_subtraction/VerticalEditor.qml:29
 msgctxt "VerticalEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Unterstufen"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:31
 msgctxt "VerticalEditor|"
@@ -1110,17 +1172,17 @@ msgstr "Zeilenanzahl"
 #: server/activities/vertical_subtraction/VerticalEditor.qml:34
 msgctxt "VerticalEditor|"
 msgid "With carry"
-msgstr ""
+msgstr "Mit Übertrag"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:35
 msgctxt "VerticalEditor|"
 msgid "Already laid"
-msgstr ""
+msgstr "Bereits gelegt"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:36
 msgctxt "VerticalEditor|"
 msgid "Write your operation"
-msgstr ""
+msgstr "Schreiben Sie Ihre Operation"
 
 #: server/components/CalendarPane.qml:77
 msgctxt "CalendarPane|"
@@ -1190,7 +1252,7 @@ msgstr "Gruppe löschen"
 #: server/components/ServerLanguageList.qml:32
 msgctxt "ServerLanguageList|"
 msgid "Your system default"
-msgstr ""
+msgstr "Ihre Systemvoreinstellung"
 
 #: server/controllers/database-controller.cpp:83
 #: server/controllers/database-controller.cpp:89
@@ -1200,16 +1262,19 @@ msgid ""
 "File %1\n"
 "Error SQL: %2"
 msgstr ""
+"Datei %1\n"
+"SQL-Fehler: %2"
 
 #: server/controllers/database-controller.cpp:125
 msgctxt "controllers::DatabaseController|"
 msgid "Table teacher_ could not be updated to current version."
 msgstr ""
+"Die Tabelle „teacher_“ kann nicht zu aktueller Version aktualisiert werden."
 
 #: server/controllers/database-controller.cpp:351
 msgctxt "controllers::DatabaseController|"
 msgid "Error creating teacher."
-msgstr ""
+msgstr "Fehler beim Erstellen des Lehrers."
 
 #: server/controllers/database-controller.cpp:373
 msgctxt "controllers::DatabaseController|"
@@ -1220,79 +1285,84 @@ msgstr "Falsches Passwort."
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> already exists."
-msgstr ""
+msgstr "Gruppe <b>%1</b> existiert bereits."
 
 #: server/controllers/database-controller.cpp:438
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be updated to <b>%2</b>."
-msgstr ""
+msgstr "Gruppe <b>%1</b> kann nicht zu <b>%2</b> aktualisiert werden."
 
 #: server/controllers/database-controller.cpp:456
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_."
-msgstr ""
+msgstr "Gruppe <b>%1</b> kann nicht aus der Tabelle „group_“ gelöscht werden."
 
 #: server/controllers/database-controller.cpp:459
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_user_."
 msgstr ""
+"Gruppe <b>%1</b> kann nicht aus der Tabelle „group_user_“ gelöscht werden."
 
 #: server/controllers/database-controller.cpp:483
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Pupil login <b>%1</b> already exists or password is empty."
 msgstr ""
+"Entweder existiert die Schüleranmeldung <b>%1</b> bereits oder das Passwort "
+"ist leer."
 
 #: server/controllers/database-controller.cpp:502
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "<b>%1</b> could not be updated to <b>%2</b>."
-msgstr ""
+msgstr "<b>%1</b> kann nicht zu <b>%2</b> aktualisiert werden."
 
 #: server/controllers/database-controller.cpp:522
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table user_."
-msgstr ""
+msgstr "Benutzer <b>%1</b> kann nicht aus der Tabelle „user_“ gelöscht werden."
 
 #: server/controllers/database-controller.cpp:527
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table result_."
 msgstr ""
+"Benutzer <b>%1</b> kann nicht aus der Tabelle „result_“ gelöscht werden."
 
 #: server/controllers/database-controller.cpp:542
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table group_user_."
 msgstr ""
+"Benutzer <b>%1</b> kann nicht aus der Tabelle „group_user_“ gelöscht werden."
 
 #: server/controllers/database-controller.cpp:557
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> already exists in group <b>%2</b>."
-msgstr ""
+msgstr "Benutzer <b>%1</b> existiert bereits in Gruppe <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:572
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> group <b>%2</b> couldn't be deleted."
-msgstr ""
+msgstr "Benutzer <b>%1</b> Gruppe <b>%2</b> kann nicht gelöscht werden."
 
 #: server/controllers/database-controller.cpp:607
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Result could not be added for user <b>%1</b>"
-msgstr ""
+msgstr "Ergebnis kann nicht hinzugefügt werden für Benutzer <b>%1</b>"
 
 #: server/controllers/database-controller.cpp:619
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Error inserting activity: %1"
-msgstr ""
+msgstr "Fehler beim Einfügen der Aktivität: %1"
 
 #: server/controllers/database-controller.cpp:665
 #, qt-format
@@ -1304,13 +1374,13 @@ msgstr "Datensatz <b>%1</b> existiert bereits."
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> could not be updated to <b>%2</b>."
-msgstr ""
+msgstr "Datensatz <b>%1</b> kann nicht zu <b>%2</b> aktualisiert werden."
 
 #: server/controllers/database-controller.cpp:697
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> couldn't be deleted."
-msgstr ""
+msgstr "Datensatz <b>%1</b> kann nicht gelöscht werden."
 
 #: server/controllers/network-controller.cpp:46
 #, qt-format
@@ -1321,7 +1391,7 @@ msgstr "Server kann nicht gestartet werden: %1."
 #: server/dialogs/CreateDbDialog.qml:19
 msgctxt "CreateDbDialog|"
 msgid "You are about to create a new GCompris database."
-msgstr ""
+msgstr "Sie erstellen gerade eine neue GCompris-Datenbank."
 
 #: server/dialogs/CreateDbDialog.qml:38
 msgctxt "CreateDbDialog|"
@@ -1331,12 +1401,12 @@ msgstr "Datenbankdatei"
 #: server/dialogs/CreateDbDialog.qml:40
 msgctxt "CreateDbDialog|"
 msgid "created in:"
-msgstr ""
+msgstr "erstellt unter:"
 
 #: server/dialogs/CreateDbDialog.qml:64
 msgctxt "CreateDbDialog|"
 msgid "New database creation"
-msgstr ""
+msgstr "Erstellung neuer Datenbank"
 
 #: server/dialogs/CreateDbDialog.qml:92
 msgctxt "CreateDbDialog|"
@@ -1366,17 +1436,17 @@ msgstr "Datensatz aktualisieren"
 #: server/dialogs/DatasetEditorDialog.qml:79
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name is empty"
-msgstr ""
+msgstr "Name des Datensatzes ist leer"
 
 #: server/dialogs/DatasetEditorDialog.qml:86
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty should be between 1 and 6"
-msgstr ""
+msgstr "Schwierigkeitsgrad sollte zwischen 1 und 6 liegen"
 
 #: server/dialogs/DatasetEditorDialog.qml:239
 msgctxt "DatasetEditorDialog|"
 msgid "INVALID DATASET"
-msgstr ""
+msgstr "UNGÜLTIGER DATENSATZ"
 
 #: server/dialogs/DatasetEditorDialog.qml:342
 msgctxt "DatasetEditorDialog|"
@@ -1386,7 +1456,7 @@ msgstr "Editor"
 #: server/dialogs/DatasetEditorDialog.qml:345
 msgctxt "DatasetEditorDialog|"
 msgid "Raw JSON"
-msgstr ""
+msgstr "Rohes JSON"
 
 #: server/dialogs/DatasetEditorDialog.qml:375
 msgctxt "DatasetEditorDialog|"
@@ -1416,12 +1486,12 @@ msgstr "Anweisungen"
 #: server/dialogs/DatasetEditorDialog.qml:521
 msgctxt "DatasetEditorDialog|"
 msgid "No specific instructions for this editor."
-msgstr ""
+msgstr "Keine speziellen Anweisungen für diesen Editor."
 
 #: server/dialogs/ErrorDialog.qml:46
 msgctxt "ErrorDialog|"
 msgid "Information"
-msgstr "Informationen"
+msgstr "Information"
 
 #: server/dialogs/ExportPupilsDialog.qml:79
 msgctxt "ExportPupilsDialog|"
@@ -1461,6 +1531,10 @@ msgid ""
 "Patrick Dummy;group 1;1234\n"
 "Patricia Brown;group 1,group 2;4321\n"
 msgstr ""
+"Format: Name;Gruppen;Passwort\n"
+"Beispiel:\n"
+"Heidi Musterfrau;Gruppe 1;1234\n"
+"Peter Mustermann;Gruppe 1,Gruppe 2;4321\n"
 
 #: server/dialogs/ImportPupilsDialog.qml:94
 msgctxt "ImportPupilsDialog|"
@@ -1490,7 +1564,7 @@ msgstr "Passwort"
 #: server/dialogs/PupilDialog.qml:217
 msgctxt "PupilDialog|"
 msgid "Password images:"
-msgstr ""
+msgstr "Passwort-Bilder:"
 
 #: server/dialogs/PupilDialog.qml:252
 msgctxt "PupilDialog|"
@@ -1501,33 +1575,38 @@ msgstr "Gruppen"
 msgctxt "PupilsToGroupsDialog|"
 msgid "Select the groups to add these pupils to:"
 msgstr ""
+"Wählen Sie die Gruppen aus, zu denen diese Schüler hinzugefügt werden sollen:"
 
 #: server/dialogs/PupilsToGroupsDialog.qml:88
 msgctxt "PupilsToGroupsDialog|"
 msgid "Select the groups from which to remove these pupils:"
 msgstr ""
+"Wählen Sie die Gruppen aus, aus denen diese Schüler entfernt werden sollen:"
 
 #: server/dialogs/RemoveDatasetDialog.qml:70
 msgctxt "RemoveDatasetDialog|"
 msgid ""
 "Are you sure you want to delete the following dataset from the database?"
 msgstr ""
+"Möchten Sie den folgenden Datensatz wirklich aus der Datenbank löschen?"
 
 #: server/dialogs/RemovePupilsDialog.qml:76
 msgctxt "RemovePupilsDialog|"
 msgid ""
 "Are you sure you want to remove the following pupils from the database ?"
 msgstr ""
+"Möchten Sie die folgenden Schüler wirklich aus der Datenbank entfernen?"
 
 #: server/dialogs/SendDatasetDialog.qml:93
 msgctxt "SendDatasetDialog|"
 msgid "Do you want to send the dataset to selected pupils?"
-msgstr ""
+msgstr "Möchten Sie den Datensatz zu ausgewählten Schülern senden?"
 
 #: server/dialogs/SendDatasetDialog.qml:94
 msgctxt "SendDatasetDialog|"
 msgid "Are you sure you want to remove the dataset from selected pupils?"
 msgstr ""
+"Möchten Sie den Datensatz wirklich von ausgewählten Schülern entfernen?"
 
 #: server/dialogs/SendDatasetDialog.qml:95
 msgctxt "SendDatasetDialog|"
@@ -1535,6 +1614,8 @@ msgid ""
 "Are you sure you want to remove all the existing datasets from selected "
 "pupils?"
 msgstr ""
+"Möchten Sie alle existierenden Datensätze wirklich von ausgewählten Schülern "
+"löschen?"
 
 #: server/dialogs/SendDatasetDialog.qml:129
 msgctxt "SendDatasetDialog|"
@@ -1544,7 +1625,7 @@ msgstr "Schüler"
 #: server/dialogs/SqlLineDialog.qml:19
 msgctxt "SqlLineDialog|"
 msgid "Line details"
-msgstr ""
+msgstr "Zeilendetails"
 
 #: server/dialogs/SqlLineDialog.qml:193
 msgctxt "SqlLineDialog|"
@@ -1554,7 +1635,7 @@ msgstr "Schließen"
 #: server/Main.qml:48
 msgctxt "Main|"
 msgid "GCompris Teachers Tool"
-msgstr ""
+msgstr "GCompris-Dienstprogramm für Lehrer"
 
 #: server/panels/NavigationPanel.qml:70
 msgctxt "NavigationPanel|"
@@ -1749,7 +1830,7 @@ msgstr "Tägliche Aktivitäten"
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "Daily ratios"
-msgstr ""
+msgstr "Tägliche Quoten"
 
 #. Number of lines
 #: server/views/datas/AllData.qml:90
@@ -1782,7 +1863,7 @@ msgstr "Sie sind dabei, Daten zu duplizieren"
 #: server/views/datas/DuplicateData.qml:212
 msgctxt "DuplicateData|"
 msgid "No action now"
-msgstr ""
+msgstr "Zurzeit keine Aktion"
 
 #: server/views/datas/DuplicateData.qml:208
 msgctxt "DuplicateData|"
@@ -1852,7 +1933,7 @@ msgstr "Daten bearbeiten"
 #: server/views/DevelopmentView.qml:47
 msgctxt "DevelopmentView|"
 msgid "All requests"
-msgstr ""
+msgstr "Alle Anfragen"
 
 #: server/views/DevicesView.qml:52
 msgctxt "DevicesView|"
@@ -1862,12 +1943,12 @@ msgstr "Nicht verbunden"
 #: server/views/DevicesView.qml:54
 msgctxt "DevicesView|"
 msgid "Bad password input"
-msgstr ""
+msgstr "Falsche Passworteingabe"
 
 #: server/views/DevicesView.qml:56
 msgctxt "DevicesView|"
 msgid "Logged"
-msgstr ""
+msgstr "Angemeldet"
 
 #: server/views/DevicesView.qml:58
 msgctxt "DevicesView|"
@@ -1912,12 +1993,12 @@ msgstr "Anmeldeliste senden"
 #: server/views/DevicesView.qml:195
 msgctxt "DevicesView|"
 msgid "Disconnect selected pupils"
-msgstr ""
+msgstr "Verbindung zu ausgewählten Schülern trennen"
 
 #: server/views/DevicesView.qml:213
 msgctxt "DevicesView|"
 msgid "Disconnect everybody"
-msgstr ""
+msgstr "Alle Verbindungen trennen"
 
 #: server/views/DevicesView.qml:229
 msgctxt "DevicesView|"
@@ -1927,7 +2008,7 @@ msgstr "Serverkennung"
 #: server/views/DevicesView.qml:236
 msgctxt "DevicesView|"
 msgid "Teacher port:"
-msgstr ""
+msgstr "Lehrer-Port:"
 
 #: server/views/DevicesView.qml:243
 msgctxt "DevicesView|"
@@ -1937,7 +2018,7 @@ msgstr "Verbunden:"
 #: server/views/DevicesView.qml:250
 msgctxt "DevicesView|"
 msgid "Logged:"
-msgstr ""
+msgstr "Angemeldet:"
 
 #: server/views/DevicesView.qml:257
 msgctxt "DevicesView|"
@@ -1968,12 +2049,13 @@ msgstr "Falsches Passwort"
 #: server/views/LoginView.qml:47
 msgctxt "LoginView|"
 msgid "GCompris-teachers is already running on this computer"
-msgstr "GCompris-Lehrer wird bereits auf diesem Rechner ausgeführt"
+msgstr ""
+"GCompris-Dienstprogramm für Lehrer wird bereits auf diesem Rechner ausgeführt"
 
 #: server/views/LoginView.qml:48
 msgctxt "LoginView|"
 msgid "Only data browsing is permitted"
-msgstr "Nur Durchsuchen der Daten ist erlaubt"
+msgstr "Nur das Durchsuchen der Daten ist erlaubt"
 
 #: server/views/LoginView.qml:89
 msgctxt "LoginView|"
@@ -2215,7 +2297,7 @@ msgstr "Schüler verbunden"
 #: server/views/SettingsView.qml:298
 msgctxt "SettingsView|"
 msgid "Pupils logged"
-msgstr ""
+msgstr "Schüler angemeldet"
 
 #: server/views/SettingsView.qml:305
 msgctxt "SettingsView|"

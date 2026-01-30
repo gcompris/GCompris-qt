@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2025 Mincho Kondarev <mkondarev@yahoo.de>
+# SPDX-FileCopyrightText: 2025, 2026 Mincho Kondarev <mkondarev@yahoo.de>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-12-24 00:59+0100\n"
+"PO-Revision-Date: 2026-01-29 22:49+0100\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.12.0\n"
+"X-Generator: Lokalize 26.03.70\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
 #: server/activities/binary_bulb/ActivityEditor.qml:12
@@ -2283,7 +2283,7 @@ msgstr "Групи"
 #: server/views/SettingsView.qml:291
 msgctxt "SettingsView|"
 msgid "Pupils connected"
-msgstr "Учениците са свързани"
+msgstr "Свързани ученици"
 
 #: server/views/SettingsView.qml:298
 msgctxt "SettingsView|"

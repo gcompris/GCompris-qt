@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris 5\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-01-01 21:42+0100\n"
-"Last-Translator: Envel Kervoas <envelkervoas@free.fr>\n"
+"PO-Revision-Date: 2026-01-27 18:13+0100\n"
+"Last-Translator: Kervoas <envelkervoas@free.fr>\n"
 "Language-Team: Breton <kde-i18n-doc@kde.org>\n"
 "Language: br\n"
 "MIME-Version: 1.0\n"
@@ -1559,9 +1559,9 @@ msgid ""
 "For repairing a broken bulb or LED, click on it after disconnecting it from "
 "the circuit. The simulation is updated in real time by any user action."
 msgstr ""
-"Evit gallout repariñ ur glogorenn-dredan pe ul lutig LED, klikañ warni pe "
+"Evit gallout mennañ ur glogorenn-dredan pe ul lutig LED, klikañ warni pe "
 "warnañ goude bezañ  bezañ digevreet anezhi pe anezhañ diouzh an amredad. Pep "
-"tra graet a vez patromet diouzhtu war ar skramm."
+"tra graet a vez hizivaet diouzhtu war ar skramm."
 
 #: activities/analog_electricity/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -3746,7 +3746,7 @@ msgid ""
 "set' to download the full word image set. Click on the cross or on 'Never "
 "show this dialog again' to play with the demo version."
 msgstr ""
-"Mankout a ra dit skeudennoù evit an obererezh-mañ. Klik war 'Adnevesaat ar "
+"Mankout a ra dit skeudennoù evit an obererezh-mañ. Klik war 'Hizivaat ar "
 "skeudennoù' evit kaout an dafar klok. Klik war ar groaz evit kenderc'hel "
 "gant ar stumm diskouez nemetken pe war 'Arabat diskouez ar c'hinnig-mañ ken' "
 "ma ne fell ket dit gwelout ar c'hinnig-mañ adarre."
@@ -5969,7 +5969,7 @@ msgstr ""
 #: activities/digital_electricity/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "The simulation is updated in real time by any user action."
-msgstr "Pep tra graet a vez patromet diouzhtu war ar skramm."
+msgstr "Pep tra graet a vez hizivaet diouzhtu war ar skramm."
 
 #: activities/digital_electricity/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -15609,7 +15609,7 @@ msgstr "Implij ar pevar niver gant an arouezioù jediñ kinniget evit kaout 24."
 #: activities/guess24/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside numbers and operators"
-msgstr "Biroù: merdeiñ e-touez niveroù hag arouezioù jediñ"
+msgstr "operBiroù: merdeiñ e-touez niveroù hag arouezioù jediñ"
 
 #: activities/guess24/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -19670,7 +19670,7 @@ msgstr "Dibaber ar yezhoù"
 #: activities/menu/ConfigurationItem.qml:116
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
-msgstr "Aotreañ dre ziouer ar pellgargañ/adnevesaat evit ar perzhioù diavaez"
+msgstr "Aotreañ dre ziouer ar pellgargañ/hizivaat evit ar perzhioù diavaez"
 
 #: activities/menu/ConfigurationItem.qml:146
 msgctxt "ConfigurationItem|"
@@ -19680,7 +19680,7 @@ msgstr "Mouezhioù ar yezh dibabet"
 #: activities/menu/ConfigurationItem.qml:155
 msgctxt "ConfigurationItem|"
 msgid "Check for updates"
-msgstr "Klask adnevesaat"
+msgstr "Klask hizivaat"
 
 #: activities/menu/ConfigurationItem.qml:156
 msgctxt "ConfigurationItem|"
@@ -27309,7 +27309,7 @@ msgstr "Diskoulm ar sammadenn, 4 sifr, 2 linenn."
 #: activities/vertical_subtraction/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
-msgstr "Pleustr war al lemel"
+msgstr "Pleustr war al lemel a-blom"
 
 #. Help title
 #: activities/vertical_subtraction/ActivityInfo.qml:17
@@ -27923,7 +27923,7 @@ msgstr "Ouzhpennet eo bet an droidigezh evit ar Azerbaijani"
 #: core/ChangeLog.qml:131
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
-msgstr "Kartennoù nevez hag adnevesaet evit an obererezhioù geografiezh"
+msgstr "Kartennoù nevez hag hizivaat evit an obererezhioù geografiezh"
 
 #: core/ChangeLog.qml:132
 msgctxt "ChangeLog|"
@@ -27999,7 +27999,7 @@ msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
 "Finnish...)."
 msgstr ""
-"Adnevesaet eo bet an droidigezh evit meur a yezh (Brezhoneg, Portugaleg bro-"
+"Hizivaet eo bet an droidigezh evit meur a yezh (Brezhoneg, Portugaleg bro-"
 "Vrazil, Finneg...)."
 
 #: core/ChangeLog.qml:159
@@ -28440,7 +28440,7 @@ msgstr "Fazi gant ar pellgargañ (kod: %1): %2"
 msgctxt "DownloadDialog|"
 msgid "Your download finished successfully. The data files are now available."
 msgstr ""
-"Berzh zo bet gant da bellgargañ. Restroù ar roadennoù a c'heller implijout "
+"Berzh zo bet gant ar pellgargañ. Restroù ar roadennoù a c'heller implijout "
 "bremañ."
 
 #: core/DownloadDialog.qml:360
@@ -28716,8 +28716,8 @@ msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
 msgstr ""
-"Ha fellout a ra dit pellgargañ dre ziouer ar perzhioù diavaez pa vez loc'het "
-"GCompris?"
+"Ha fellout a ra dit pellgargañ dre ziouer pe hizivaat ar perzhioù diavaez pa "
+"vez loc'het GCompris?"
 
 #: core/main.qml:240
 msgctxt "main|"
