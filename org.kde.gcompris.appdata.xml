@@ -82,7 +82,6 @@
   <summary xml:lang="hr">Obrazovna igra za djecu</summary>
   <summary xml:lang="hu">Oktató játékcsomag gyerekeknek</summary>
   <summary xml:lang="ia">Joco de Instruction  per infantes</summary>
-  <summary xml:lang="id">Permainan pendidikan untuk anak</summary>
   <summary xml:lang="it">Gioco didattico per bambini</summary>
   <summary xml:lang="ka">საგანმანათლებლო თამაში ბავშვებისთვის</summary>
   <summary xml:lang="lt">Lavinamųjų pamokėlių bei žaidimų rinkinys vaikams nuo 3 iki 12</summary>
@@ -221,7 +220,7 @@
     <p xml:lang="hi">नीचे आप उस श्रेणी में उपलब्ध कुछ गतिविधियों के साथ श्रेणियों की एक सूची पा सकते हैं।</p>
     <p xml:lang="hr">Niže možeš pronaći popis kategorija s nekim od dostupnih aktivnosti u svakoj od njih.</p>
     <p xml:lang="hu">Lentebb néhány tevékenység listáját találod melyek egy-egy ilyen kategóriában elérhetőek.</p>
-    <p xml:lang="id">Di bawah ini kamu dapat menemukan daftar kategori dengan beberapa kegiatan yang tersedia di dalam setiap kategori tersebut.</p>
+    <p xml:lang="id">Di bawah ini kamu bisa menemukan daftar kategori dengan beberapa kegiatan yang tersedia di dalam setiap kategori tersebut.</p>
     <p xml:lang="it">Di seguito puoi trovare un elenco di categorie con alcune delle attività disponibili per categoria.</p>
     <p xml:lang="ka">ქვემოთ იპოვით კატეგორიების სიას ზოგიერთი აქტივობებით, რომლებიც ამ კატეგორიას ეკუთვნის.</p>
     <p xml:lang="ko">아래에서 분류 목록과 해당 분류의 활동을 찾을 수 있습니다.</p>
@@ -432,7 +431,7 @@
     <p xml:lang="hi">वर्तमान में जी कॉम्पप्रस १०० गतिविधियों से अधिक प्रदान करता है और अधिक विकसित किए जा रहे हैं। जी कॉम्पप्रस मुफ्त सॉफ्टवेयर है, इसका मतलब है कि आप इसे अपनी आवश्यकताओं के अनुसार अनुकूलित कर सकते हैं, इसमें सुधार कर सकते हैं, और सबसे महत्वपूर्ण बात, इसे हर जगह बच्चों के साथ साझा कर सकते हैं।</p>
     <p xml:lang="hr">Trenutačno GCompris nudi više od 100 aktivnosti, ali i dalje razvijamo nove. GCompris je besplatan softver, što znači da ga možeš prilagoditi svojim potrebama, poboljšati i, što je najvažnije, podijeliti s djecom posvuda.</p>
     <p xml:lang="hu">Jelenleg a GCompris több mint 100 féle tevékenységet kínál és több is fejlesztés alatt áll. A Gcompris ingyenes szoftver, amely azt jelenti, kedvedre átalakíthatod, fejlesztheted, és a legfontosabb: megoszthatod bármely gyerekkel.</p>
-    <p xml:lang="id">Saat ini GCompris menawarkan lebih dari 100 aktivitas dan masih banyak lagi yang sedang dikembangkan. GCompris adalah perangkat lunak bebas, itu berarti kamu dapat menyesuaikannya dengan kebutuhanmu sendiri, memperbaikinya dan yang terpenting, bagikan dengan anak-anak di mana-mana.</p>
+    <p xml:lang="id">Saat ini GCompris menawarkan lebih dari 100 kegiatan dan masih banyak lagi yang sedang dikembangkan. GCompris adalah perangkat lunak bebas, itu berarti kamu bisa menyesuaikannya dengan kebutuhanmu sendiri, memperbaikinya dan yang terpenting, bagikan kepada anak-anak di mana-mana.</p>
     <p xml:lang="it">Attualmente GCompris offre più di 100 attività e altre sono in fase di sviluppo. GCompris è software libero, che significa che puoi adattarlo alle tue necessità, migliorarlo e, cosa più importante, condividerlo con tutti i bambini.</p>
     <p xml:lang="ka">ამჟამად GCompris 100-ზე მეტი აქტივობისგან შედგება და კიდევ ბევრი ემატება. GCompris უფასო პროგრამაა, რაც ნიშნავს, რომ შეგიძლიათ, ის საკუთარ მოთხოვნებს მოარგოთ, გაუმჯობესოთ და რაც მთავარია, ბავშვებს გაუზიაროთ.</p>
     <p xml:lang="ko">GCompris에는 100개 이상의 활동이 들어 있으며 더 많은 활동을 개발하고 있습니다. GCompris는 자유 소프트웨어이며, 필요에 따라서 활동을 개선할 수 있으며 전 세계의 사람들과 공유할 수 있습니다.</p>
@@ -533,7 +532,7 @@
       <caption xml:lang="hi">"अपरकेस अक्षर पर क्लिक करें" क्रिया</caption>
       <caption xml:lang="hr">Aktivnost "Klikni na veliko slovo"</caption>
       <caption xml:lang="hu">"Kattints egy nagybetűre" a  tevékenységekhez!</caption>
-      <caption xml:lang="id">Aktivitas "Klik pada huruf kapital"</caption>
+      <caption xml:lang="id">Kegiatan "Klik pada huruf kapital"</caption>
       <caption xml:lang="it">Attività «Fai clic su una lettera maiuscola»</caption>
       <caption xml:lang="ka">აქტივობა "დააწკაპუნეთ დიდ ასოზე"</caption>
       <caption xml:lang="ko">"대문자 클릭하기" 활동</caption>
@@ -583,7 +582,7 @@
       <caption xml:lang="hi">घड़ी सीखें</caption>
       <caption xml:lang="hr">Aktivnost "Upoznaj sat"</caption>
       <caption xml:lang="hu">"Óratanulás" tevékenység</caption>
-      <caption xml:lang="id">Aktivitas "Mengenal Jam"</caption>
+      <caption xml:lang="id">Kegiatan "Mengenal Jam"</caption>
       <caption xml:lang="it">Attività «Impara l'orologio»</caption>
       <caption xml:lang="ka">აქტივობა "საათის ცნობა"</caption>
       <caption xml:lang="ko">"시계 익히기" 활동</caption>
@@ -633,7 +632,7 @@
       <caption xml:lang="hi">पेंट के रंग मिलाएं</caption>
       <caption xml:lang="hr">Aktivnost "Miješanje boja"</caption>
       <caption xml:lang="hu">"Színkeverés" tevékenység</caption>
-      <caption xml:lang="id">Aktivitas "Mencampur warna cat"</caption>
+      <caption xml:lang="id">Kegiatan "Mencampur warna cat"</caption>
       <caption xml:lang="it">Attività «Miscela la vernice colorata»</caption>
       <caption xml:lang="ka">აქტივობა "სახატავი ფერების შერევა"</caption>
       <caption xml:lang="ko">"물감 색 섞기" 활동</caption>
@@ -683,7 +682,7 @@
       <caption xml:lang="hi">रंगों की गतिविधि</caption>
       <caption xml:lang="hr">Aktivnost "Boje"</caption>
       <caption xml:lang="hu">"Színek" tevékenység</caption>
-      <caption xml:lang="id">Aktivitas "Mengenal warna"</caption>
+      <caption xml:lang="id">Kegiatan "Mengenal warna"</caption>
       <caption xml:lang="it">Attività «Colori»</caption>
       <caption xml:lang="ka">აქტივობა "ფერები"</caption>
       <caption xml:lang="ko">"색깔" 활동</caption>
@@ -734,7 +733,7 @@
       <caption xml:lang="hi">वैसा ही बनाएँ गतिविधि</caption>
       <caption xml:lang="hr">Aktivnost "Dupliciraj model"</caption>
       <caption xml:lang="hu">"Építsd fel ugyanazt" tevékenység</caption>
-      <caption xml:lang="id">Aktivitas "Bangun model yang sama"</caption>
+      <caption xml:lang="id">Kegiatan "Bangun model yang sama"</caption>
       <caption xml:lang="it">Attività «Costruisci lo stesso modello»</caption>
       <caption xml:lang="ka">აქტივობა "ააგეთ იგივე მოდელი"</caption>
       <caption xml:lang="ko">"같은 모델 만들기" 활동</caption>
@@ -784,7 +783,7 @@
       <caption xml:lang="hi">सामान गिनने की गतिविधि</caption>
       <caption xml:lang="hr">Aktivnost "Prebroji predmete"</caption>
       <caption xml:lang="hu">"Számold meg a tárgyakat!" tevékenység</caption>
-      <caption xml:lang="id">Aktivitas "Menghitung benda"</caption>
+      <caption xml:lang="id">Kegiatan "Menghitung benda"</caption>
       <caption xml:lang="it">Attività «Conta gli oggetti»</caption>
       <caption xml:lang="ka">აქტივობა "დაითვალეთ ელემენტები"</caption>
       <caption xml:lang="ko">"물건 개수 세기" 활동</caption>
@@ -834,7 +833,7 @@
       <caption xml:lang="hi">पंद्रह खेलों की गतिविधि</caption>
       <caption xml:lang="hr">Aktivnost "Igra 15"</caption>
       <caption xml:lang="hu">"A 15-ös játék" tevékenység</caption>
-      <caption xml:lang="id">Aktivitas "Permainan lima belas"</caption>
+      <caption xml:lang="id">Kegiatan "Permainan lima belas"</caption>
       <caption xml:lang="it">Attività «Il gioco del quindici»</caption>
       <caption xml:lang="ka">აქტივობა "თამაში 15"</caption>
       <caption xml:lang="ko">"15 게임" 활동</caption>
@@ -884,7 +883,7 @@
       <caption xml:lang="hi">षटकोण गतिविधि</caption>
       <caption xml:lang="hr">Aktivnost "Šesterokut"</caption>
       <caption xml:lang="hu">"Hexagon" tevékenység</caption>
-      <caption xml:lang="id">Aktivitas "Segi enam"</caption>
+      <caption xml:lang="id">Kegiatan "Segi enam"</caption>
       <caption xml:lang="it">Attività «Esagono»</caption>
       <caption xml:lang="ka">აქტივობა "ექვსკუთხედი"</caption>
       <caption xml:lang="ko">"육각형" 활동</caption>
@@ -934,7 +933,7 @@
       <caption xml:lang="hi">तराजू बराबर करने की गतिविधि</caption>
       <caption xml:lang="hr">Aktivnost "Uravnotežite vagu"</caption>
       <caption xml:lang="hu">"Hozd egyensúlyba a mérleget!" tevékenység</caption>
-      <caption xml:lang="id">Aktivitas "Seimbangkan timbangan"</caption>
+      <caption xml:lang="id">Kegiatan "Seimbangkan timbangan"</caption>
       <caption xml:lang="it">Attività «Allinea correttamente i piatti della bilancia»</caption>
       <caption xml:lang="ka">აქტივობა "დააბალანსეთ სასწორი"</caption>
       <caption xml:lang="ko">"저울 균형 맞추기" 활동</caption>
@@ -984,7 +983,7 @@
       <caption xml:lang="hi">"शतरंज खेल की समाप्ति" क्रिया</caption>
       <caption xml:lang="hr">Aktivnost "Dovrši šahovsku partiju"</caption>
       <caption xml:lang="hu">"Adj mattot!" tevékenység</caption>
-      <caption xml:lang="id">Aktivitas "Akhir dari permainan catur"</caption>
+      <caption xml:lang="id">Kegiatan "Akhir dari permainan catur"</caption>
       <caption xml:lang="it">Attività «Fine della partita a scacchi»</caption>
       <caption xml:lang="ka">აქტივობა "ჭადრაკის თამაშის დასრულება"</caption>
       <caption xml:lang="ko">"체스 게임" 활동</caption>
@@ -1034,7 +1033,7 @@
       <caption xml:lang="hi">"स्लाइडिंग-ब्लॉक पहेली खेल" क्रिया</caption>
       <caption xml:lang="hr">Aktivnost "Klizna slagalica"</caption>
       <caption xml:lang="hu">"Tologatós kirakó" tevékenység</caption>
-      <caption xml:lang="id">Aktivitas "Permainan teka-teki menggeser balok"</caption>
+      <caption xml:lang="id">Kegiatan "Permainan teka-teki menggeser balok"</caption>
       <caption xml:lang="it">Attività «Un rompicapo con blocchi scorrevoli»</caption>
       <caption xml:lang="ka">აქტივობა "სასრიალო ფილებიანი პაზლი"</caption>
       <caption xml:lang="ko">"블록 밀기 퍼즐 게임" 활동</caption>
