@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-01-25 15:02+0100\n"
+"PO-Revision-Date: 2026-01-31 22:18+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -1954,9 +1954,6 @@ msgid "Incorrect password"
 msgstr "Pasahitz okerra"
 
 #: server/views/DevicesView.qml:56
-#, fuzzy
-#| msgctxt "DevicesView|"
-#| msgid "Logged"
 msgctxt "DevicesView|"
 msgid "Logged in"
 msgstr "Saioa hasita"
@@ -2027,9 +2024,6 @@ msgid "Connected:"
 msgstr "Konektatuta:"
 
 #: server/views/DevicesView.qml:250
-#, fuzzy
-#| msgctxt "DevicesView|"
-#| msgid "Logged:"
 msgctxt "DevicesView|"
 msgid "Logged in:"
 msgstr "Saioa hasita:"
@@ -2307,12 +2301,9 @@ msgid "Pupils connected"
 msgstr "Ikasle konektatuta"
 
 #: server/views/SettingsView.qml:297
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Pupils logged"
 msgctxt "SettingsView|"
 msgid "Pupils logged in"
-msgstr "Ikasle saioa hasita"
+msgstr "Ikasleak saioa hasita"
 
 #: server/views/SettingsView.qml:304
 msgctxt "SettingsView|"

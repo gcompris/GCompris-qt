@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2018-11-30 13:03+0000\n"
-"PO-Revision-Date: 2026-01-25 14:09+0100\n"
+"PO-Revision-Date: 2026-01-31 23:20+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -74,7 +74,7 @@ msgstr "Aurkitu falta diren alboko zenbakiak."
 #: activities/adjacent_numbers/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to order numbers."
-msgstr "Ikasi zenbakiak ordenan jartzen."
+msgstr "Zenbakiak ordenan jartzen ikastea."
 
 #. Help manual
 #: activities/adjacent_numbers/ActivityInfo.qml:22
@@ -159,7 +159,7 @@ msgstr "Aukeratu kolore egokiko tximeleta."
 #: activities/advanced_colors/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize unusual colors."
-msgstr "Ikasi ezohiko koloreak ezagutzen."
+msgstr "Ezohiko koloreak ezagutzen ikastea."
 
 #. Help prerequisite
 #: activities/advanced_colors/ActivityInfo.qml:22
@@ -880,7 +880,7 @@ msgstr "Trebatu biderketa eragiketak egiten."
 #: activities/algebra_by/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to multiply numbers within a limited period of time."
-msgstr "Ikasi denbora tarte mugatuan zenbakiak biderkatzen."
+msgstr "Denbora tarte mugatuan zenbakiak biderkatzen ikastea."
 
 #. Help prerequisite
 #: activities/algebra_by/ActivityInfo.qml:22
@@ -942,12 +942,12 @@ msgstr "Sartu: baliozkotu zure erantzuna"
 #: activities/algebra_by/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Learn multiplication table of 1."
-msgstr "Ikasi 1en biderkatzeko taula."
+msgstr "1en biderkatzeko taula ikastea."
 
 #: activities/algebra_by/resource/10/Data.qml:13
 msgctxt "Data|"
 msgid "Learn multiplication table of 10."
-msgstr "Ikasi 10en biderkatzeko taula."
+msgstr "10en biderkatzeko taula ikastea."
 
 #: activities/algebra_by/resource/11/Data.qml:13
 msgctxt "Data|"
@@ -957,42 +957,42 @@ msgstr "Trebatu biderketa taulekin 1etik 10era."
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Learn multiplication table of 2."
-msgstr "Ikasi 2ren biderkatzeko taula."
+msgstr "2ren biderkatzeko taula ikastea."
 
 #: activities/algebra_by/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Learn multiplication table of 3."
-msgstr "Ikasi 3ren biderkatzeko taula."
+msgstr "3ren biderkatzeko taula ikastea."
 
 #: activities/algebra_by/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Learn multiplication table of 4."
-msgstr "Ikasi 4ren biderkatzeko taula."
+msgstr "4ren biderkatzeko taula ikastea."
 
 #: activities/algebra_by/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Learn multiplication table of 5."
-msgstr "Ikasi 5en biderkatzeko taula."
+msgstr "5en biderkatzeko taula ikastea."
 
 #: activities/algebra_by/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Learn multiplication table of 6."
-msgstr "Ikasi 6ren biderkatzeko taula."
+msgstr "6ren biderkatzeko taula ikastea."
 
 #: activities/algebra_by/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "Learn multiplication table of 7."
-msgstr "Ikasi 7ren biderkatzeko taula."
+msgstr "7ren biderkatzeko taula ikastea."
 
 #: activities/algebra_by/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "Learn multiplication table of 8."
-msgstr "Ikasi 8ren biderkatzeko taula."
+msgstr "8ren biderkatzeko taula ikastea."
 
 #: activities/algebra_by/resource/9/Data.qml:13
 msgctxt "Data|"
 msgid "Learn multiplication table of 9."
-msgstr "Ikasi 9ren biderkatzeko taula."
+msgstr "9ren biderkatzeko taula ikastea."
 
 #. Activity title
 #: activities/algebra_div/ActivityInfo.qml:15
@@ -1034,12 +1034,12 @@ msgstr ""
 #: activities/algebra_div/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Learn division table of 1."
-msgstr "Ikasi 1ekin zatitzeko taula."
+msgstr "1ekin zatitzeko taula ikastea."
 
 #: activities/algebra_div/resource/10/Data.qml:13
 msgctxt "Data|"
 msgid "Learn division table of 10."
-msgstr "Ikasi 10ekin zatitzeko taula."
+msgstr "10ekin zatitzeko taula ikastea."
 
 #: activities/algebra_div/resource/11/Data.qml:13
 msgctxt "Data|"
@@ -1049,42 +1049,42 @@ msgstr "Trebatu zatiketa taulekin 1etik 10era."
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Learn division table of 2."
-msgstr "Ikasi 2rekin zatitzeko taula."
+msgstr "2rekin zatitzeko taula ikastea."
 
 #: activities/algebra_div/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Learn division table of 3."
-msgstr "Ikasi 3rekin zatitzeko taula."
+msgstr "3rekin zatitzeko taula ikastea."
 
 #: activities/algebra_div/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Learn division table of 4."
-msgstr "Ikasi 4rekin zatitzeko taula."
+msgstr "4rekin zatitzeko taula ikastea."
 
 #: activities/algebra_div/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Learn division table of 5."
-msgstr "Ikasi 5ekin zatitzeko taula."
+msgstr "5ekin zatitzeko taula ikastea."
 
 #: activities/algebra_div/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Learn division table of 6."
-msgstr "Ikasi 6rekin zatitzeko taula."
+msgstr "6rekin zatitzeko taula ikastea."
 
 #: activities/algebra_div/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "Learn division table of 7."
-msgstr "Ikasi 7rekin zatitzeko taula."
+msgstr "7rekin zatitzeko taula ikastea."
 
 #: activities/algebra_div/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "Learn division table of 8."
-msgstr "Ikasi 8rekin zatitzeko taula."
+msgstr "8rekin zatitzeko taula ikastea."
 
 #: activities/algebra_div/resource/9/Data.qml:13
 msgctxt "Data|"
 msgid "Learn division table of 9."
-msgstr "Ikasi 9rekin zatitzeko taula."
+msgstr "9rekin zatitzeko taula ikastea."
 
 #. Activity title
 #: activities/algebra_minus/ActivityInfo.qml:15
@@ -1104,7 +1104,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to find the difference between two numbers within a limited period of "
 "time."
-msgstr "Ikasi bi zenbakiren arteko kenketa denbora tarte mugatuan egiten."
+msgstr "Bi zenbakiren arteko kenketa denbora tarte mugatuan egiten ikastea."
 
 #. Help prerequisite
 #: activities/algebra_minus/ActivityInfo.qml:22
@@ -1128,12 +1128,12 @@ msgstr ""
 #: activities/algebra_minus/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Learn subtraction table of 1."
-msgstr "Ikasi 1en kentzeko taula."
+msgstr "1en kentzeko taula ikastea."
 
 #: activities/algebra_minus/resource/10/Data.qml:13
 msgctxt "Data|"
 msgid "Learn subtraction table of 10."
-msgstr "Ikasi 10en kentzeko taula."
+msgstr "10en kentzeko taula ikastea."
 
 #: activities/algebra_minus/resource/11/Data.qml:13
 msgctxt "Data|"
@@ -1153,42 +1153,42 @@ msgstr "Kenketak 100 arteko zenbakiekin."
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Learn subtraction table of 2."
-msgstr "Ikasi 2ren kenketa taula."
+msgstr "2ren kenketa taula ikastea."
 
 #: activities/algebra_minus/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Learn subtraction table of 3."
-msgstr "Ikasi 3ren kentzeko taula."
+msgstr "3ren kentzeko taula ikastea."
 
 #: activities/algebra_minus/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Learn subtraction table of 4."
-msgstr "Ikasi 4ren kentzeko taula."
+msgstr "4ren kentzeko taula ikastea."
 
 #: activities/algebra_minus/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Learn subtraction table of 5."
-msgstr "Ikasi 5en kentzeko taula."
+msgstr "5en kentzeko taula ikastea."
 
 #: activities/algebra_minus/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Learn subtraction table of 6."
-msgstr "Ikasi 6ren kentzeko taula."
+msgstr "6ren kentzeko taula ikastea."
 
 #: activities/algebra_minus/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "Learn subtraction table of 7."
-msgstr "Ikasi 7ren kentzeko taula."
+msgstr "7ren kentzeko taula ikastea."
 
 #: activities/algebra_minus/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "Learn subtraction table of 8."
-msgstr "Ikasi 8ren kentzeko taula."
+msgstr "8ren kentzeko taula ikastea."
 
 #: activities/algebra_minus/resource/9/Data.qml:13
 msgctxt "Data|"
 msgid "Learn subtraction table of 9."
-msgstr "Ikasi 9ren kentzeko taula."
+msgstr "9ren kentzeko taula ikastea."
 
 #. Activity title
 #: activities/algebra_plus/ActivityInfo.qml:15
@@ -1206,7 +1206,7 @@ msgstr "Trebatu zenbakien arteko batuketak egiten."
 #: activities/algebra_plus/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to find the sum of two numbers within a limited period of time."
-msgstr "Ikasi bi zenbakiren arteko batuketa denbora tarte mugatuan egiten."
+msgstr "Bi zenbakiren arteko batuketa denbora tarte mugatuan egiten ikastea."
 
 #. Help prerequisite
 #: activities/algebra_plus/ActivityInfo.qml:22
@@ -1230,12 +1230,12 @@ msgstr ""
 #: activities/algebra_plus/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 1."
-msgstr "Ikasi 1en gehitzeko taula."
+msgstr "1en gehitzeko taula ikastea."
 
 #: activities/algebra_plus/resource/10/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 10."
-msgstr "Ikasi 10en gehitzeko taula."
+msgstr "10en gehitzeko taula ikastea."
 
 #: activities/algebra_plus/resource/11/Data.qml:13
 msgctxt "Data|"
@@ -1255,42 +1255,42 @@ msgstr "Emaitza 100 artekoa duten batuketak."
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 2."
-msgstr "Ikasi 2ren gehitzeko taula."
+msgstr "2ren gehitzeko taula ikastea."
 
 #: activities/algebra_plus/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 3."
-msgstr "Ikasi 3ren gehitzeko taula."
+msgstr "3ren gehitzeko taula ikastea."
 
 #: activities/algebra_plus/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 4."
-msgstr "Ikasi 4ren gehitzeko taula."
+msgstr "4ren gehitzeko taula ikastea."
 
 #: activities/algebra_plus/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 5."
-msgstr "Ikasi 5en gehitzeko taula."
+msgstr "5en gehitzeko taula ikastea."
 
 #: activities/algebra_plus/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 6."
-msgstr "Ikasi 6ren gehitzeko taula."
+msgstr "6ren gehitzeko taula ikastea."
 
 #: activities/algebra_plus/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 7."
-msgstr "Ikasi 7ren gehitzeko taula."
+msgstr "7ren gehitzeko taula ikastea."
 
 #: activities/algebra_plus/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 8."
-msgstr "Ikasi 8ren gehitzeko taula."
+msgstr "8ren gehitzeko taula ikastea."
 
 #: activities/algebra_plus/resource/9/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 9."
-msgstr "Ikasi 9ren gehitzeko taula."
+msgstr "9ren gehitzeko taula ikastea."
 
 #. Activity title
 #: activities/algorithm/ActivityInfo.qml:15
@@ -1425,7 +1425,7 @@ msgstr "Mugitu helikopteroa, hodeiak alfabetoaren ordenari jarraituz hartzeko."
 #: activities/ordering_alphabets/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Learn the alphabetical order."
-msgstr "Ikasi hurrenkera alfabetikoa."
+msgstr "Hurrenkera alfabetikoa ikastea."
 
 #. Help prerequisite
 #: activities/alphabet-sequence/ActivityInfo.qml:22
@@ -2230,7 +2230,7 @@ msgstr "Parekatu objektuak haien formekin."
 #: activities/baby_tangram/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to match an object with its shape."
-msgstr "Ikasi objektu bat haren formarekin parekatzen."
+msgstr "Objektu bat haren formarekin parekatzen ikastea."
 
 #. Help manual
 #: activities/baby_tangram/ActivityInfo.qml:24
@@ -2263,7 +2263,7 @@ msgstr "Idatzi zure lehenengo testua."
 #: activities/baby_wordprocessor/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to write a text using a word processor."
-msgstr "Ikasi testu bat idazten testu-prozesatzaile bat erabiliz."
+msgstr "Testu-prozesatzaile bat erabiliz testu bat idazten ikastea."
 
 #. Help manual
 #: activities/baby_wordprocessor/ActivityInfo.qml:23
@@ -2409,7 +2409,7 @@ msgstr "Arrastatu eta jaregin formak dagozkien jomugetan."
 #: activities/babyshapes/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Learn to match geometric shapes."
-msgstr "Ikasi forma geometrikoak parekatzen."
+msgstr "Forma geometrikoak parekatzen ikastea."
 
 #. Help manual
 #: activities/babyshapes/ActivityInfo.qml:27
@@ -3023,7 +3023,7 @@ msgstr "Ezagutu braille sistema"
 #: activities/braille_alphabets/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Learn and memorize the braille system."
-msgstr "Ikasi eta memorizatu braille sistema."
+msgstr "Braille sistema ikastea eta memorizatzea."
 
 #. Help goal
 #: activities/braille_alphabets/ActivityInfo.qml:20
@@ -3319,7 +3319,7 @@ msgstr "Irakurri jarraibideak eta aukeratu data zuzena egutegian."
 #: activities/calendar/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn how to use a calendar."
-msgstr "Ikasi egutegi bat erabiltzen."
+msgstr "Egutegi bat erabiltzen  ikastea."
 
 #. Help prerequisite
 #: activities/calendar/ActivityInfo.qml:22
@@ -4433,7 +4433,7 @@ msgstr "Ezagutu eta praktikatu xakea."
 #: activities/chess_2players/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to play chess."
-msgstr "Ikasi xakean jokatzen."
+msgstr "Xakean jokatzen ikastea."
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:24
@@ -4669,7 +4669,7 @@ msgstr "Arrastatu eta jaregin elementuak ipuina antolatzeko."
 #: activities/chronos/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize the chronology of a story."
-msgstr "Ikasi istorio baten kronologia antzematen."
+msgstr "Istorio baten kronologia antzematen ikastea."
 
 #. Help prerequisite
 #: activities/chronos/ActivityInfo.qml:26
@@ -5178,7 +5178,7 @@ msgstr "Erlojua ezagutzea"
 #: activities/clockgame/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Learn how to tell the time on an analog clock."
-msgstr "Ikasi erloju analogiko bateko orduak esaten."
+msgstr "Erloju analogiko bateko orduak esaten ikastea."
 
 #. Help goal
 #: activities/clockgame/ActivityInfo.qml:20
@@ -5568,7 +5568,7 @@ msgstr "Konparatu zenbakiak eta hautatu dagokien zeinua."
 #: activities/comparator/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Learn how to compare number values."
-msgstr "Ikasi zenbakizko balioak nola konparatu."
+msgstr "Zenbakizko balioak nola konparatu ikastea."
 
 #. Help manual
 #: activities/comparator/ActivityInfo.qml:25
@@ -7203,7 +7203,8 @@ msgid ""
 "Learn to associate animal sounds with the animal name and what the animal "
 "looks like."
 msgstr ""
-"Ikasi animalien soinuak animalien izenekin eta animalien itxurarekin lotzen."
+"Animalien soinuak animalien izenekin eta animalien itxurarekin lotzen "
+"ikastea."
 
 #. Help manual
 #: activities/explore_farm_animals/ActivityInfo.qml:23
@@ -7476,7 +7477,7 @@ msgid ""
 "Learn about various monuments from around the world and remember their "
 "location."
 msgstr ""
-"Ikasi mundu osoko hainbat monumenturi buruz eta gogoratu haien kokapena."
+"Mundu osoko hainbat monumenturi buruz ikastea eta haien kokapena gogoratzea."
 
 #. Help prerequisite
 #: activities/explore_monuments/ActivityInfo.qml:22
@@ -9134,8 +9135,8 @@ msgid ""
 "Learn about various wild animals from around the world and remember where "
 "they live."
 msgstr ""
-"Ikasi mundu osoko hainbat animalia basatiei buruzkoak eta gogoratu non bizi "
-"diren."
+"Mundu osoko hainbat animalia basatiei buruzkoak ikastea eta non bizi diren "
+"gogoratzea."
 
 #. Help manual
 #: activities/explore_world_animals/ActivityInfo.qml:27
@@ -9436,7 +9437,7 @@ msgstr "Munduko musika esploratu"
 #: activities/explore_world_music/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Learn about the music of the world."
-msgstr "Ikasi munduko musikari buruz."
+msgstr "Munduko musikari buruz ikastea."
 
 #. Help goal
 #: activities/explore_world_music/ActivityInfo.qml:20
@@ -9672,7 +9673,7 @@ msgid ""
 "Learn the relationships in a family, according to the lineal system used in "
 "most Western societies."
 msgstr ""
-"Ikasi familiako senideen arteko erlazioak, mendebaldeko gizarte "
+"Familiako senideen arteko erlazioak ikastea, mendebaldeko gizarte "
 "gehientsuenetan erabiltzen den sistema linealari jarraituz."
 
 #. Help prerequisite
@@ -9961,7 +9962,7 @@ msgstr "Aurkitu data zuzena eta aukeratu ezazu egutegian."
 #: activities/find_the_day/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn how to count days and find a date on a calendar."
-msgstr "Ikasi egunak zenbatzen eta aurkitu data bat egutegian."
+msgstr "Egunak zenbatzen ikastea eta data bat egutegian aurkitzea."
 
 #. Help prerequisite
 #: activities/find_the_day/ActivityInfo.qml:22
@@ -10614,8 +10615,8 @@ msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
 "frieze or to reproduce it after you've memorized it."
 msgstr ""
-"Goiko frisoa kopiatu. Maila batzuetan, frisoa osatu beharko duzu edo hura "
-"buruz ikasi ondoren kopia bat egin beharko duzu."
+"Goiko frisoa berregitea. Maila batzuetan, memorizatu ondoren, frisoa osatu "
+"edo berregin beharko duzu."
 
 #: activities/frieze/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -14918,7 +14919,7 @@ msgstr ""
 #: activities/gnumch-multiples/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn about multiples and factors."
-msgstr "Ikasi multiploei eta faktoreei buruz."
+msgstr "Multiploei eta faktoreei buruz ikastea."
 
 #. Help manual
 #: activities/gnumch-factors/ActivityInfo.qml:23
@@ -15044,7 +15045,7 @@ msgstr "Gidatu zenbaki-jalea zenbaki lehen guztietara."
 #: activities/gnumch-primes/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn about prime numbers."
-msgstr "Ikasi zenbaki lehenei buruz."
+msgstr "Zenbaki lehenei buruz ikastea."
 
 #. Help manual
 #: activities/gnumch-primes/ActivityInfo.qml:23
@@ -15199,7 +15200,7 @@ msgstr "Ipini balioak graduatutako lerro batean."
 #: activities/graduated_line_use/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to use a graduated line."
-msgstr "Ikasi graduatutako lerro bat erabiltzen."
+msgstr "Graduatutako lerro bat erabiltzen ikastea."
 
 #. Help manual
 #: activities/graduated_line_use/ActivityInfo.qml:23
@@ -16923,7 +16924,7 @@ msgstr "garraioa"
 #: activities/learn_additions/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Learn addition"
-msgstr "Ikasi batzen"
+msgstr "Batzen ikastea"
 
 #. Help title
 #: activities/learn_additions/ActivityInfo.qml:17
@@ -17084,7 +17085,8 @@ msgid ""
 "Learn addition with decimal numbers by manipulating their visual "
 "representation."
 msgstr ""
-"Zenbaki hamartarrekin batzen ikasi haien ikusizko irudikapena manipulatuz."
+"Zenbaki hamartarrekin, haien ikusizko irudikapena manipulatuz, batzen "
+"ikastea."
 
 #. Help manual
 #: activities/learn_decimals_additions/ActivityInfo.qml:22
@@ -17443,19 +17445,19 @@ msgstr "20 eta 50 artean."
 #: activities/learn_subtractions/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction"
-msgstr "Ikasi kenketak egiten"
+msgstr "Kenketa egiten ikastea"
 
 #. Help title
 #: activities/learn_subtractions/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction with small numbers."
-msgstr "Kenketa egiten ikasi zenbaki txikiak erabiliz."
+msgstr "Zenbaki txikiak erabiliz kenketa egiten ikastea."
 
 #. Help goal
 #: activities/learn_subtractions/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction by counting their result."
-msgstr "Kenketa egiten ikasi haien emaitzak zenbatuz."
+msgstr "Kenketa egiten ikastea, haien emaitza zenbatuz."
 
 #. Help manual
 #: activities/learn_subtractions/ActivityInfo.qml:23
@@ -20005,8 +20007,8 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to use the mousewheel or the zoom / pinch gesture to zoom in and out."
 msgstr ""
-"Ikasi saguaren gurpila edo zooma erabiltzen / atximur keinua zooma "
-"hurbiltzeko eta urruntzeko."
+"Saguaren gurpila edo zooma erabiltzen / atximur keinua zooma hurbiltzeko eta "
+"urruntzeko erabiltzen ikastea."
 
 #. Help prerequisite
 #: activities/mining/ActivityInfo.qml:22
@@ -20772,7 +20774,7 @@ msgstr "Izendatu nota hori"
 #: activities/note_names/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn the names of the notes, in bass and treble clef."
-msgstr "Ikasi noten izenak, fa eta sol klabean."
+msgstr "Noten izenak ikastea, Fa eta Sol klabean."
 
 #. Help goal
 #: activities/note_names/ActivityInfo.qml:23
@@ -21843,8 +21845,8 @@ msgid ""
 "Learn how the piano keyboard works, and how notes are written on a musical "
 "staff."
 msgstr ""
-"Ikasi pianoko teklatua nola dabilen, eta notak pentagrama batean nola "
-"idazten diren."
+"Pianoko teklatua nola dabilen, eta notak pentagrama batean nola idazten "
+"diren  ikastea."
 
 #. Help goal
 #: activities/piano_composition/ActivityInfo.qml:21
@@ -23428,7 +23430,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "Learn about an electrical system based on renewable energy."
 msgstr ""
-"Ikasi energia berriztagarrietan oinarritutako elektrizitate-sistemei buruz."
+"Energia berriztagarrietan oinarritutako elektrizitate-sistemei buruz ikastea."
 
 #. Help manual
 #: activities/renewable_energy/ActivityInfo.qml:22
@@ -23479,8 +23481,8 @@ msgstr ""
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
-"Ikasi energia berriztagarrietan oinarritutako elektrizitate sistemei buruz. "
-"Gozatu."
+"Energia berriztagarrietan oinarritutako elektrizitate-sistemei buruz "
+"ikastea. Gozatu."
 
 #: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
@@ -24871,7 +24873,7 @@ msgstr "Erabili margotzeko tresna digitalak irudiak marrazteko."
 #: activities/sketch/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Learn about some digital painting tools."
-msgstr "Ikasi marrazteko tresna digital batzuei buruz."
+msgstr "Marrazteko tresna digital batzuk ikastea."
 
 #. Help manual
 #: activities/sketch/ActivityInfo.qml:26
@@ -25316,7 +25318,7 @@ msgid ""
 "astronomy, try downloading KStars (https://edu.kde.org/kstars/) or "
 "Stellarium (https://stellarium.org/) which are astronomy Free Software."
 msgstr ""
-"Ikasi eguzki-sistemari buruzko informazioa. Astronomiaz gehiago ikasi nahi "
+"Eguzki-sistemari buruzko informazioa ikastea. Astronomiaz gehiago ikasi nahi "
 "baduzu, saia zaitez KStars (https://edu.kde.org/kstars/) edo Stellarium "
 "(https://stellarium.org/) zama-jaisten, biak dira astronomiako software "
 "askeak."
@@ -26507,7 +26509,7 @@ msgstr "Gidatu urpeko ontzia helmugaraino."
 #: activities/submarine/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn how to control a submarine."
-msgstr "Ikasi urpeko ontzi bat kontrolatzen."
+msgstr "Urpeko ontzi bat kontrolatzen ikastea."
 
 #. Help prerequisite
 #: activities/submarine/ActivityInfo.qml:22
@@ -27022,7 +27024,7 @@ msgstr "Aurkitu zenbaki bakoitzaren hamarrerako osagarria."
 #: activities/tens_complement_find/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to find ten's complement."
-msgstr "Ikasi hamarrerako osagarria aurkitzen."
+msgstr "Hamarrerako osagarria aurkitzen ikastea."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
@@ -27089,8 +27091,8 @@ msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation."
 msgstr ""
-"Ikasi hamarrerako osagarria, eragiketa bateko zenbakien hurrenkera "
-"optimizatzeko erabiltzen."
+"Hamarrerako osagarria eragiketa bateko zenbakien hurrenkera optimizatzeko "
+"erabiltzen ikastea."
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
@@ -27141,7 +27143,7 @@ msgstr "Erabili hamarrerako osagarria eragiketa sinplifikatzeko."
 #: activities/tens_complement_use/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn a practical use of ten's complement."
-msgstr "Ikasi hamarrerako osagarriaren erabilera praktiko bat."
+msgstr "Hamarrerako osagarriaren erabilera praktiko bat ikastea."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
